@@ -1,0 +1,5539 @@
+1
+00:00:44,179 --> 00:00:45,179
+Merhaba arkadaşlar.
+
+2
+00:00:47,179 --> 00:00:48,179
+Merhaba hocam.
+
+3
+00:00:51,179 --> 00:00:53,179
+Katılım içinde biraz bekleyelim.
+
+4
+00:01:05,331 --> 00:01:07,331
+Buradan da paylaşımı yapayım.
+
+5
+00:01:11,603 --> 00:01:29,843
+İkran geldi. Tamam. Bugün bu haftaki konulara başlamadan şöyle bir sınav sorularını bir üzerinden geçmek istedim. Ondan sonra da dersimize geçeriz.
+
+6
+00:01:45,299 --> 00:01:51,299
+navları birinci oturumu okudum. İkinci oturumu da okuyorum.
+
+7
+00:01:51,299 --> 00:01:58,299
+bir işte hani kopya kontrol için kodları benzerlik analizinden geçirindik.
+
+8
+00:01:58,299 --> 00:02:02,299
+onunla ilgili bir ufak tefek şey var. Onlara bir detaylı bakmak istiyorum.
+
+9
+00:02:02,299 --> 00:02:05,299
+O yüzden hani notlarınızı henüz daha girmedim sisteme.
+
+10
+00:02:05,299 --> 00:02:14,300
+İnşallah bu hafta son itibariyle notları girmiş olurum diye kendime bir hedef koydum.
+
+11
+00:02:14,300 --> 00:02:17,000
+Sizinle de paylaşmış olayım.
+
+12
+00:02:19,360 --> 00:02:20,200
+Peki.
+
+13
+00:02:21,680 --> 00:02:26,359
+Şimdi o zaman en azından birinci kısımdaki soruların bir üzerinden geçelim.
+
+14
+00:02:27,320 --> 00:02:30,020
+Hocam siz başlamadan çok ufak bir soru sorabilir miyim?
+
+15
+00:02:30,480 --> 00:02:30,840
+Sor.
+
+16
+00:02:31,759 --> 00:02:38,039
+Ben sınav esnasında artık elimiz o kadar alışmış ki sadece tekst dosyası olarak yükleyecektik ya kodu.
+
+17
+00:02:38,039 --> 00:02:42,640
+O teksti bir klasörün içerisine koyup o zipi yüklemeye çalıştım.
+
+18
+00:02:42,640 --> 00:02:45,119
+Çok büyük bir problem olur mu?
+
+19
+00:02:46,119 --> 00:02:50,899
+Olmadı diyelim ama yönergeleri iyi okumanızı hep istiyoruz.
+
+20
+00:02:51,920 --> 00:02:55,300
+Yönergeleri biraz daha dikkatli okursanız daha iyi olur.
+
+21
+00:02:56,039 --> 00:02:57,520
+Neyse ki finalimiz yüz yüze.
+
+22
+00:02:58,779 --> 00:03:00,919
+Henüz daha o konuda bir değişiklik olmadı.
+
+23
+00:03:01,779 --> 00:03:05,939
+Bir de haftaya biliyorsunuz tam seçimin ertesi günü oluyor.
+
+24
+00:03:06,060 --> 00:03:07,200
+14 Mayıs'ta seçim var.
+
+25
+00:03:07,279 --> 00:03:10,600
+15 Mayıs'ta normal okullar tatil.
+
+26
+00:03:10,599 --> 00:03:14,659
+klasik zaten hani okullarda seçimleri yapıldığı için.
+
+27
+00:03:15,499 --> 00:03:17,199
+Üniversitelerde bir şey söz konusu değil.
+
+28
+00:03:17,379 --> 00:03:19,619
+Olursa bakarız ama çok büyük bir ihtimalle olmaz.
+
+29
+00:03:19,779 --> 00:03:20,879
+Zaten de online yapıyoruz.
+
+30
+00:03:21,039 --> 00:03:24,019
+Bu şekilde devam ederiz diye düşünüyorum.
+
+31
+00:03:24,759 --> 00:03:26,599
+Şimdi tamam mı?
+
+32
+00:03:26,659 --> 00:03:26,979
+Oldu mu?
+
+33
+00:03:27,119 --> 00:03:27,459
+Bitti mi?
+
+34
+00:03:27,739 --> 00:03:27,959
+Peki.
+
+35
+00:03:29,699 --> 00:03:35,219
+İlk sorumuz bir yarı kod parçası daha doğrusu bir iki tane döngü, while döngüsü verilmiş.
+
+36
+00:03:35,219 --> 00:03:44,380
+n eşittir 20 değeri için acaba ekrana ne yazar diyoruz. Şimdi burada yapılması gereken n eşittir 20 ile başladık.
+
+37
+00:03:44,380 --> 00:03:50,480
+Yani 20'den ama sıfırdan büyüklük mü? Evet. O zaman ne yapacak? Siteye n mod 2'yi push edecek.
+
+38
+00:03:50,639 --> 00:03:57,719
+Yani stack, şuraya bir stack yapalım. Tabii bu şey olduğu için çizlesek çiziyor mu?
+
+39
+00:03:57,719 --> 00:03:59,559
+şöyle yapalım.
+
+40
+00:04:00,499 --> 00:04:01,880
+Şöyle bir sitemiz var.
+
+41
+00:04:02,520 --> 00:04:06,079
+Ondan sonra 20 mod 2 0 gelecek.
+
+42
+00:04:06,300 --> 00:04:07,960
+0'ı siteye push ettim.
+
+43
+00:04:08,559 --> 00:04:10,740
+Ondan sonra n eşittir n bölü 2 yaptı.
+
+44
+00:04:10,919 --> 00:04:12,399
+Yani n eşittir 20 idi.
+
+45
+00:04:13,300 --> 00:04:15,059
+Şöyle onu çizdik.
+
+46
+00:04:15,160 --> 00:04:17,039
+n eşittir 10 haline getirdik.
+
+47
+00:04:17,539 --> 00:04:18,559
+Ondan sonra geldik.
+
+48
+00:04:18,619 --> 00:04:20,600
+n eşittir hala 0'dan büyük.
+
+49
+00:04:20,600 --> 00:04:21,859
+Modunu aldık.
+
+50
+00:04:21,979 --> 00:04:22,779
+0 geldi.
+
+51
+00:04:23,020 --> 00:04:24,079
+Siteye push ettik.
+
+52
+00:04:24,259 --> 00:04:25,300
+2'ye böldük.
+
+53
+00:04:25,999 --> 00:04:26,600
+5 oldu.
+
+54
+00:04:26,600 --> 00:04:56,579
+oldu ondan sonra 5 mod 2 den 1 geldi 1'i siteye push ettik 2'ye böldük 2 kaldı sonra 2 büyüktür 0'dan 2 mod 2 den 0 geldi bunu siteye push ettik 2'ye böldük 1 kaldı her zaman olduğu gibi stack yetmedi overflow olmasınca azıcık büyüttüm ondan sonra 1 mod 2 den 1 geldi
+
+55
+00:04:56,600 --> 00:05:09,600
+1 bölü 2, 1, 0 oldu. 1 bölü 2'den 0 geldi. Ondan sonra en büyüktür 0 şartı bozulduğu için buradan çıktı.
+
+56
+00:05:09,600 --> 00:05:15,600
+Yani stakeimiz şu şekilde oluştu. Ondan sonra stack boş olmadığı sürece print pop stack diyor.
+
+57
+00:05:15,600 --> 00:05:22,600
+Ne yapacak? Biri yazdıracak. Bunu pop etti. Sonra bunu pop edip yazdıracak. Bunu pop edip yazdıracak.
+
+58
+00:05:22,599 --> 00:05:26,699
+1, 0, 1, ondan sonra da 0 ve 0 yazdırıyor.
+
+59
+00:05:26,699 --> 00:05:35,059
+Şimdi bu kısımda herhalde %95 falan herkes bunu yapmıştı diye hatırlıyorum.
+
+60
+00:05:35,199 --> 00:05:38,459
+Ufak tefek, birkaç, iki üç tane galiba yanlış gördüm.
+
+61
+00:05:40,439 --> 00:05:42,699
+Şimdi gel gelin burada ne yapıyor bu program?
+
+62
+00:05:43,411 --> 00:06:06,731
+Şimdi bu program ne yapıyor da? Şöyle sıkıntılar var. İkiye bölüyor yazan var. Ondan sonra işte binary conversion yazan var. Niye böyle binary conversion İngilizce yazıyor onu bilmiyorum. Ondan sonra işte verilen sayının 20 sayısının ikilik tabandaki karşılığını bulur diyen var.
+
+63
+00:06:06,731 --> 00:06:36,711
+tam olarak tam doğru cevap şu işte verilen değerin ikilik düzendeki karşılığını ekrana yazdırır değil mi print var orada bir de bulur kelimesi aslında benim için tam yeterli değil bulur ve yazdırır demeniz gerekiyor çünkü bulup da ne yapıyor rafa mı kaldırıyor öyle bir şey yok bu nedenle de yazdırır kelimesini ekleyenlere tam puan ama eklemeyenlere 7 puan olacak şekilde bir değerlendiriyor.
+
+64
+00:06:36,731 --> 00:06:58,671
+yazdırma yazmayanlardan bir puan gitti. Haberiniz olsun. Bu böyle. Zor muydu bu soru? Çok kolaydı. Bakın mesela ben kaç dakikada çözdüm. Tahmini süre 5 dakika. Bir de yaza yaza, çize çize yapmama rağmen 4 dakika sürmemiştir diye düşünüyorum. Herhalde 3 dakika mı sürdü? Öyle bir şey oldu. Şöyle de kronometre de tutmadık.
+
+65
+00:06:58,671 --> 00:07:12,551
+geldik ikinci soruya. Bu niye kaymıyor? Çünkü mouse'u tekrardan geçirmemiz lazım. En çok hata yapılan soru buydu. Neden bunda çok hata yapılmış? Açıkçası anlayamadım.
+
+66
+00:07:14,591 --> 00:07:27,551
+Şimdi bakın kuyrukta başlangıçta sırasıyla 5, 2, 1, 4 sayıları bulunmaktadır. Hemen şuraya çiz bir kuyruk. 5, 2, 1 ve 4 sayıların kuyruğa koymuşuz.
+
+67
+00:07:27,551 --> 00:07:33,992
+böyle verilmiş zaten bu. Sonra işlem sonunda bir şey yazdırılır. Acaba ne yazdırılır? Buna bakacağız.
+
+68
+00:07:34,952 --> 00:07:42,331
+Ne yapıyor? Kuyruk boş olmadığı sürece dequeue ettiklerini siteye push ediyor. Hoppa hemen bir tane stack.
+
+69
+00:07:43,371 --> 00:07:50,812
+Şuraya isteğimizi yaptık. Dequeue etti. Kuyruk biliyorsunuz first in first out. Böyle çalışıyor.
+
+70
+00:07:50,811 --> 00:08:12,071
+stack de first in, last out şeklinde çalışıyor. 5'i aldı, siteye push etti. Ondan sonra de queue etti, 2'yi aldı, siteye push etti. Ondan sonra 1'i de queue etti, siteye push etti. 4'ü de queue etti, siteye push etti. Tamam, şurası bitti.
+
+71
+00:08:12,072 --> 00:08:27,072
+Şimdi kuyruğumuz burada. Bir daha slip yazmamak için tekrardan yazayım. Stack boş olmadığı sürece pop et ve kuyruğa ekle.
+
+72
+00:08:27,072 --> 00:08:33,072
+Şimdi pop etti ne geldi? 4. 4'ü aldı, kuyruğa enkü etti.
+
+73
+00:08:33,072 --> 00:09:01,212
+first in first out yani kuyruğun başı burası. Sonra bunu şey yaptık. Biri pop etti, kuyruğa enküuladı. İki pop etti, kuyruğa enküuladı. Beşi pop etti, kuyruğa enküuladı. Ne oldu? Kuyrukta 4, 1, 2, 5 sırasıyla bunu oluşturmuş oldu. Sonra üçüncü vayla geliyor. Kuyruk boş olmadığı sonucu print dekü. Ekranda ne yazılacak? Önce 4'ü dekü edecek. Sonra biri.
+
+74
+00:09:01,212 --> 00:09:09,452
+2'yi, en son olarak da 5'i de queue edecek. Ekranda biz ne göreceğiz? 4, 1, 2, 5.
+
+75
+00:09:09,872 --> 00:09:13,732
+Nedense burada 5, 2, 1, 4 görürüz diyen çok fazla cevap vardı.
+
+76
+00:09:14,471 --> 00:09:22,051
+Açıkçası herhalde bir şekilde heyecandan mı, hızdan mı, çabuk yapayım derken mi böyle bir şeyler oldu bilemiyorum.
+
+77
+00:09:22,691 --> 00:09:26,232
+Ama nihayetinde en çok hata yapılan soru galiba buydu.
+
+78
+00:09:26,772 --> 00:09:28,691
+Ama çok basit değil mi bu da?
+
+79
+00:09:28,691 --> 00:09:32,852
+Bakın anlatarak bile 2,5 dakika sürdü.
+
+80
+00:09:34,591 --> 00:09:36,072
+Var mı problem?
+
+81
+00:09:36,811 --> 00:09:38,272
+Zaten sizler yapmışsınızdır.
+
+82
+00:09:38,772 --> 00:09:39,811
+Derse katıldığınız için.
+
+83
+00:09:40,628 --> 00:09:43,187
+Üçüncü soru.
+
+84
+00:09:44,427 --> 00:09:49,527
+Bir linked listedeki son düğüm olmadığı, hemen altını kırmızıyla çizelim.
+
+85
+00:09:49,527 --> 00:09:52,527
+Son düğüm olmadığı bilinen bir x düğümü için.
+
+86
+00:09:53,107 --> 00:09:54,487
+Neden son düğüm olmadığı bilinen?
+
+87
+00:09:54,607 --> 00:09:57,048
+Çünkü x'in next'ine x'in next'in next'i diyoruz.
+
+88
+00:09:57,148 --> 00:10:02,487
+Yani bir hata oluşmasın diye, bir exception oluşmasın diye son düğüm olmadığı bilinen diyoruz.
+
+89
+00:10:02,907 --> 00:10:03,667
+Şimdi ne yapıyormuş?
+
+90
+00:10:03,847 --> 00:10:05,007
+x next'i alıyormuş.
+
+91
+00:10:05,007 --> 00:10:10,747
+X next'in next'ine gösterecek şekilde bağlıyormuş.
+
+92
+00:10:10,867 --> 00:10:11,507
+Şimdi bu X.
+
+93
+00:10:13,007 --> 00:10:15,427
+Ondan sonra bu X'in next'i.
+
+94
+00:10:17,968 --> 00:10:20,507
+Ondan sonra bunun bir de next'i var.
+
+95
+00:10:22,567 --> 00:10:23,267
+Şu şekilde.
+
+96
+00:10:24,168 --> 00:10:26,668
+Buradan da böyle gidiyor olabilir fark etmez.
+
+97
+00:10:26,727 --> 00:10:27,527
+Şimdi X burada.
+
+98
+00:10:28,247 --> 00:10:30,848
+X'in next'i, X'in next'inin next'i diyor.
+
+99
+00:10:30,848 --> 00:10:33,047
+Yani bunu al diyor, bunu kopar.
+
+100
+00:10:33,047 --> 00:10:36,128
+ama bunun next'inin next'ine git bağla.
+
+101
+00:10:38,227 --> 00:10:45,507
+Bu mürekkep güzelmiş. Yanarlı dönerli bir şey buldum. Neyse tekrar geri gelelim.
+
+102
+00:10:46,527 --> 00:10:56,007
+Ne yapmış oldu? Şuradaki x'in gösterdiği düğümü listeden çıkartmış, kaldırmış oldu.
+
+103
+00:10:56,007 --> 00:11:01,227
+Bu cümleyi yazmanız yeterli. Burada yapılan en çok hata x'i siler.
+
+104
+00:11:03,047 --> 00:11:09,747
+X'i siler mi? Hayır, silmez. Zafer neye kesin dedim. Kaçırdım ben.
+
+105
+00:11:10,808 --> 00:11:13,187
+Hocam yapmışsın, hatırladınız ya. Ben de kesin.
+
+106
+00:11:14,628 --> 00:11:25,607
+Tamam, evet. Dediğim gibi burada da şey yani X'i siler diyenler çok büyük bir hataya girmişler. Evet, [öğrenci].
+
+107
+00:11:26,167 --> 00:11:32,067
+Hocam bir şey soracağım. Burada X'in next'inin next'i artık X next olsun demiyor mu?
+
+108
+00:11:33,047 --> 00:11:43,208
+Yani burada bir atama hani eşittirin sağındaki, solundaki olsun. Hani şimdi biz dedik ki x'in next'i next next olsun dedik ki tam tersi değil mi?
+
+109
+00:11:43,887 --> 00:11:44,607
+Nasıl yani? Bu ne?
+
+110
+00:11:46,007 --> 00:11:52,607
+x'in next'inin next'i en sağdaki evet o hani x şu an onu gösteriyor. x'in pointerı onu gösteriyor.
+
+111
+00:11:52,607 --> 00:11:53,628
+x'in next'i ne? Burası değil mi?
+
+112
+00:11:53,907 --> 00:11:54,208
+Aynen.
+
+113
+00:11:54,208 --> 00:11:55,667
+Bu yap diyorum işte.
+
+114
+00:11:56,848 --> 00:11:59,568
+Yok x'in next'inin next'i şu an onu gösteriyor.
+
+115
+00:11:59,568 --> 00:12:04,668
+O artık onu değil de bir soldakini göstersin demiyor mu?
+
+116
+00:12:04,967 --> 00:12:08,747
+Hayır x'in next'i x'in next'inin next'ini göstersin diyor
+
+117
+00:12:08,747 --> 00:12:11,488
+O yüzden de x'in next'i diye bir şey
+
+118
+00:12:11,488 --> 00:12:14,508
+Şurası artık yok güncellendi
+
+119
+00:12:14,508 --> 00:12:17,827
+Yani buradaki düğme erişemiyorsun artık
+
+120
+00:12:17,827 --> 00:12:19,747
+Bu düğümü yok ettin
+
+121
+00:12:19,747 --> 00:12:20,788
+Daha doğrusu yok etmedin
+
+122
+00:12:20,788 --> 00:12:26,208
+Bu düğme liste üzerinden next next diyerek gidememeyi sağladın
+
+123
+00:12:26,208 --> 00:12:27,888
+Çünkü bu arada gitti
+
+124
+00:12:27,887 --> 00:12:35,767
+Bunun neksi de hala burayı gösteriyor bak. Bunda bir sıkıntı yok. Ama ben buraya erişemiyorum ki. Tamam.
+
+125
+00:12:36,348 --> 00:12:40,547
+Ben atama gibi falan düşünmüşüm büyük ihtimalle. Sonra da bu yanlış olabilir benim yani.
+
+126
+00:12:41,107 --> 00:12:44,647
+Valla şimdi tek tek istiyorsan açalım bakalım ama.
+
+127
+00:12:44,927 --> 00:12:49,927
+Yok yok yani sadece atama gibi düşündüm ben büyük ihtimalle. Hatta şu anda öyle düşündüğüm için büyük ihtimalle zaten yanlış.
+
+128
+00:12:49,928 --> 00:13:11,808
+Okey. Burada dediğim gibi en sık yapılan hata x'i siler oldu. x silmez. x falan sildiği yok. x'in gösterdiği yani x'den sonra gelen düğümü listeden kaldırır yeterlidir. Bazı arkadaşlar chat GPT'ye falan yazdı herhalde. Çünkü böyle bir paragraf açıklama yazan var.
+
+129
+00:13:12,307 --> 00:13:38,507
+işte x'in next'e bir linked listede bilmem neyi gösterir. Onun gösterdiğinin bir sonraki düğümde listedeki iki sonrasını gösterir. Böyle bir işlem yapıldığında aradaki bilmem ne bir şey olur. Hatta bazıları da işte bu tamam ama iyi bir yöntem değildir. Derste de hani anlattık ya. Dersi dinliyorum, izliyorum. Onları göstermek istiyorsunuz. Güzel bir şey. O arkadaşlar da işte bunu free etmek lazım.
+
+130
+00:13:38,507 --> 00:13:48,147
+önce free edelim ondan sonra temp olarak öbür tarafa tekrar bağlayalım falan diye böyle bir soruyu uzun genişletenler var ama maalesef soru 5 puan.
+
+131
+00:13:49,168 --> 00:13:53,047
+Yani hani bunları yazmanız 6-7 puan vermeme sebebiyet vermiyor kusura bakmayın.
+
+132
+00:13:53,627 --> 00:13:54,427
+Bu şekilde.
+
+133
+00:13:55,147 --> 00:13:59,028
+Çok basit bir soruydu ama işte şeytan ayrıntıda gizlidir.
+
+134
+00:13:59,028 --> 00:14:03,467
+Ulan burada bir şey var mı acaba diye düşünmüş olabilirsiniz diye.
+
+135
+00:14:03,467 --> 00:14:17,187
+Bu da böyle.
+
+136
+00:14:18,227 --> 00:14:20,367
+Şimdi dördüncü soru.
+
+137
+00:14:21,267 --> 00:14:22,447
+Bir heap ağacı veriliyor.
+
+138
+00:14:22,447 --> 00:14:31,827
+En büyük elemanın silinip ağacın tekrar heapify edilmesi işleminde hangi sayılar karşılaştırma işlemine girer?
+
+139
+00:14:31,827 --> 00:14:40,267
+Burada da yine hatalar çoktu. Bence çok kolay bir soruydu ama heap ağacı mı oturmadı?
+
+140
+00:14:40,267 --> 00:14:47,707
+Heapify mı oturmadı? Şimdi biz bunu nasıl edeceğiz? Burada bakıyoruz ağaca. 38 tepede, 37-35 aşağıda.
+
+141
+00:14:48,247 --> 00:14:53,067
+Onun çocukları bundan küçük, bunun çocukları bundan küçük. Burada bir max heap var.
+
+142
+00:14:54,627 --> 00:14:59,827
+Onu bir kere görüyorum. Burada max heap olduğunu biliyorum. Böyle bir kontrol etmekte fayda var.
+
+143
+00:14:59,827 --> 00:15:06,307
+Şimdi max heapten ben maksimum elemanı nasıl silerim? Bunu alırım. En son elemanla yer değiştiririm ve en son elemanın bağını koparırım.
+
+144
+00:15:06,847 --> 00:15:13,927
+Yani ben buraya gider 38'i yazarım. Buraya da gelir 19'u yazarım. Burada herhangi bir karşılaştırma yapmıyorum.
+
+145
+00:15:14,867 --> 00:15:23,447
+Değil mi? Soruda ne soruyor? Yapılan karşılaştırma işlemlerine girer diye soruyor. Onu da şöyle highlight edelim.
+
+146
+00:15:27,475 --> 00:15:55,415
+Tamam. Onu da çizdik. Tamam. Şimdi burada herhangi bir karşılaştırma yapmadık. 38'i buraya gittik ve şuradaki bağı kopardık. Yani heap size'ı biraz azalttık. Böylece artık heap'im 10 değeriyle bitiyor. Ama şimdi 19 bozdu. İşi bozdu. Biliyorum bozduğunu. Şimdi burada hangi sayılarla karşılaştırma yapacağım? 19 sayısı... Ay bu güzel değilmiş.
+
+147
+00:15:57,475 --> 00:16:00,575
+19'u alacağım.
+
+148
+00:16:01,856 --> 00:16:04,656
+Bir kere 37 ile 35 ile karşılaştıracağım.
+
+149
+00:16:06,615 --> 00:16:07,376
+Değil mi?
+
+150
+00:16:07,996 --> 00:16:09,856
+Bunları karşılaştırmaya girmek zorunda.
+
+151
+00:16:09,935 --> 00:16:11,115
+19, 37, 35.
+
+152
+00:16:11,856 --> 00:16:14,355
+Sonra en büyükleri 37 ya.
+
+153
+00:16:14,475 --> 00:16:15,656
+37 yukarı çıkacak.
+
+154
+00:16:17,915 --> 00:16:19,475
+Max ipi garanti etmek için.
+
+155
+00:16:19,656 --> 00:16:23,575
+19 aşağı inecek.
+
+156
+00:16:23,675 --> 00:16:24,595
+Şöyle karalayalım.
+
+157
+00:16:25,196 --> 00:16:25,355
+Evet.
+
+158
+00:16:25,595 --> 00:16:25,795
+Şimdi.
+
+159
+00:16:27,475 --> 00:16:31,836
+alt ağaçta heap, heap, heap, heap, aya devam ediyor, kontrola devam ediyor olmam lazım.
+
+160
+00:16:32,295 --> 00:16:34,115
+19'un zaten girdiğini söylemiştim.
+
+161
+00:16:34,236 --> 00:16:35,435
+Tekrar yazmama gerek yok.
+
+162
+00:16:35,575 --> 00:16:38,175
+34 ve 36 ile kontrol et.
+
+163
+00:16:38,295 --> 00:16:40,196
+Ay 34 dedim 24 yazdım.
+
+164
+00:16:40,836 --> 00:16:42,255
+34 ve 36.
+
+165
+00:16:43,615 --> 00:16:45,975
+Bunlarla da karşılaştırmam.
+
+166
+00:16:45,975 --> 00:16:50,876
+Ve maksimum 36 olduğu için 36'yı yukarıya çıkartmam lazım.
+
+167
+00:16:51,736 --> 00:16:53,355
+19'u da aşağıya indirmem lazım.
+
+168
+00:16:53,355 --> 00:16:58,755
+Sonra 19'u 14 ve 17 ile karşılaştırmam lazım.
+
+169
+00:16:59,395 --> 00:17:05,035
+O zaman 14 ve 17 de karşılaştırmaya dahil olacak rakamlar.
+
+170
+00:17:05,855 --> 00:17:07,095
+Tekrar yazmıyorum.
+
+171
+00:17:07,815 --> 00:17:09,195
+Ve ne oldu?
+
+172
+00:17:11,836 --> 00:17:12,196
+Ne oldu?
+
+173
+00:17:13,196 --> 00:17:13,615
+Söyleyin.
+
+174
+00:17:15,495 --> 00:17:16,855
+Yer değiştiriyor mu?
+
+175
+00:17:17,655 --> 00:17:18,275
+Değiştirmiyor.
+
+176
+00:17:18,435 --> 00:17:21,955
+O zaman daha alttakilerle bir karşılaştırma yapmama gerek yok.
+
+177
+00:17:22,595 --> 00:17:22,875
+Bitti.
+
+178
+00:17:23,355 --> 00:17:29,855
+kaç tane sayı karşılaştırmaya dahil oluyormuş? 7. Bu kadar.
+
+179
+00:17:29,855 --> 00:17:41,356
+Burada heap if i'ı yapamayıp alakası alakası bir sürü sayıyla karşılaştıranlar, yanlış tarafa attığı için yanlış sayılarla karşılaştıranlar var.
+
+180
+00:17:41,356 --> 00:17:46,356
+Burada da ortalama yani 50-50 gibi bir oran vardı açıkçası.
+
+181
+00:17:46,355 --> 00:17:55,655
+büyük bir ihtimalle heap ağaçlarının konusu iyi oturmamış olabilir. Eğer varsa bir problem lütfen o dersleri tekrar izleyin.
+
+182
+00:17:56,215 --> 00:18:05,275
+Sadece beni izlemeyin, şey de izleyin. Youtube'da bir sürü, yani aynı konunun 50 tane varyantını bulursunuz. Onlara da bir bakın.
+
+183
+00:18:06,055 --> 00:18:08,695
+Peki, var mı bir şey burada heap ağacında?
+
+184
+00:18:08,696 --> 00:18:11,516
+Burada da yine
+
+185
+00:18:11,516 --> 00:18:13,615
+Bir şey söylemeyeyim.
+
+186
+00:18:13,955 --> 00:18:18,875
+Bu soruda sadece karşılaştırılan sayıları sormuştu da.
+
+187
+00:18:19,076 --> 00:18:22,535
+Yani o yüzden işlemleri yazmasak olur muydu?
+
+188
+00:18:23,416 --> 00:18:23,796
+Olur.
+
+189
+00:18:24,436 --> 00:18:26,576
+İşlem yazanların benim için bir şey yok.
+
+190
+00:18:26,716 --> 00:18:29,576
+İşlem yazanlar şöyle, işimi zorlaştırıyor.
+
+191
+00:18:29,675 --> 00:18:35,955
+Oturup tek tek ne yapmış, bunu karşılaştırmaya sokmuş mu, sokmamış mu diye cümlelerin içinden onları seçip çıkartmam gerekiyor.
+
+192
+00:18:35,955 --> 00:18:39,435
+Yani sadece sıyaları versek sıkıntı değil değil mi?
+
+193
+00:18:39,776 --> 00:18:41,035
+Tamam teşekkürler hocam
+
+194
+00:18:41,035 --> 00:18:45,495
+Sizden beklentimiz sadece bu sorunun cevabı sırasıyla söyleyeyim
+
+195
+00:18:45,495 --> 00:18:49,815
+14, 17, 19, 34, 35, 36, 37 bitti
+
+196
+00:18:49,815 --> 00:18:51,916
+Bu kadar
+
+197
+00:18:51,916 --> 00:19:00,815
+Ama ya da sırasıyla vermek istiyorsanız 19, 37, 35, 34, 36, 14, 17 ters sırada da yazabilirsiniz hiç sorun değil
+
+198
+00:19:00,815 --> 00:19:03,115
+Yeter ki fazla sayı yazmayın
+
+199
+00:19:03,115 --> 00:19:07,336
+Hani gidip de işte 15-16 ile bilmem ne ile karşılaştırmayın.
+
+200
+00:19:07,496 --> 00:19:13,595
+Ya da sağ tarafa gitmesi gerekiyor gibi gösterip de işte 25 ile 23 ile bilmem ne ile karşılaştırmayın.
+
+201
+00:19:14,035 --> 00:19:16,576
+Ya da bütün ağacın geri kalan hepsiyle karşılaştırmayın.
+
+202
+00:19:17,095 --> 00:19:18,595
+Yani bunlar yapılan hatalar.
+
+203
+00:19:19,476 --> 00:19:20,315
+Teşekkür ederim hocam.
+
+204
+00:19:20,796 --> 00:19:21,515
+Rica ederim.
+
+205
+00:19:22,735 --> 00:19:24,515
+Peki geldik beşinci soruya.
+
+206
+00:19:25,875 --> 00:19:40,475
+Bunlar rastgele olduğu için sizde farklı farklı sıralarda çıktı. Ona bir şey yapamıyoruz. Ama siz onları zaten aranızda hallediyorsunuz diye düşünüyorum. Değil mi? Sıkıntı yaşamıyorsunuz o konuda.
+
+207
+00:19:40,475 --> 00:19:50,675
+Peki. Şimdi recursive bir fonksiyon var ama base condition yok. Hadi ne olur?
+
+208
+00:19:50,675 --> 00:19:54,255
+1. Fonksiyon çalışmaz.
+
+209
+00:19:55,735 --> 00:19:56,555
+Yok çalışır.
+
+210
+00:19:56,795 --> 00:19:57,615
+Niye çalışmasın ki?
+
+211
+00:19:58,755 --> 00:20:00,275
+Çalışmasına gelecek bir durum değil.
+
+212
+00:20:01,855 --> 00:20:04,135
+Tüm koşullar sağlanana kadar devam eder.
+
+213
+00:20:05,255 --> 00:20:05,716
+Ne demek?
+
+214
+00:20:07,835 --> 00:20:09,335
+Bu koşul ne zaman sağlanacak?
+
+215
+00:20:09,435 --> 00:20:11,135
+Çünkü base condition zaten yok.
+
+216
+00:20:11,736 --> 00:20:13,096
+Olmayan şeyi nasıl sağlayacağız?
+
+217
+00:20:13,895 --> 00:20:15,655
+O zaman böyle bir devam söz konusu değil.
+
+218
+00:20:16,835 --> 00:20:17,995
+Değerleme hatası verir.
+
+219
+00:20:18,255 --> 00:20:19,155
+Hayır vermez.
+
+220
+00:20:19,155 --> 00:20:30,175
+vermesini gerektirecek. Yani derleme zamanında ortaya çıkan herhangi bir hata yok. Bir çalışma zamanı hatası var. O yüzden bu da değil.
+
+221
+00:20:32,395 --> 00:20:38,995
+Hemen şöyle kayalım. Probleme bağlı olarak base condition tanımlanmayabilir. Böyle bir şey olamaz.
+
+222
+00:20:38,995 --> 00:20:49,715
+hatta üstüne basa basa öz yinelemenin kesilmesi, durması için mutlaka bir temel yerinizin olması gerektiğini defalar yüzlerine basa basa söylemiştik.
+
+223
+00:20:50,135 --> 00:20:52,895
+O zaman base condition mutlaka tanımlı olması lazım.
+
+224
+00:20:53,495 --> 00:20:54,175
+Onu da sildik.
+
+225
+00:20:54,295 --> 00:20:55,095
+Ne kaldı geriye?
+
+226
+00:20:55,675 --> 00:20:56,915
+Hemen kırmızıyla alalım.
+
+227
+00:20:57,055 --> 00:20:58,075
+D şıkkı kaldı.
+
+228
+00:20:58,735 --> 00:21:00,335
+Sonsuz çalışma durumu olur.
+
+229
+00:21:00,455 --> 00:21:01,495
+Yani sonsuz döngü aslında.
+
+230
+00:21:01,675 --> 00:21:02,595
+Hani sonsuza kadar gider.
+
+231
+00:21:03,095 --> 00:21:04,115
+Bunun sonunda ne olur?
+
+232
+00:21:04,115 --> 00:21:05,235
+Stack over flow olur.
+
+233
+00:21:05,236 --> 00:21:19,056
+ve function cost denis şişip patlayacağı için bir şekilde patlayıp duracak çalışması ama sonuçta teorikte sonsuz çalışma bir sonuç olacaktır.
+
+234
+00:21:19,056 --> 00:21:28,596
+Şıkların içinde verilen soruya en uygun ya da en mantıklı, en güzel karşılayan cevap D şıkkı olarak görünüyor.
+
+235
+00:21:28,595 --> 00:21:30,675
+Peki
+
+236
+00:21:30,675 --> 00:21:40,495
+Peki burada hata var mıydı? Hata yapan varsa bir iki kişi falandır. Bu da en çok yapılan sorulardan biriydi.
+
+237
+00:21:42,175 --> 00:21:51,855
+Altıncı soru. Single link list yapısı kullanılarak oluşturulan bir queue. Bir yapısında queue var ve single link list yapılmış.
+
+238
+00:21:51,855 --> 00:22:02,655
+Peki ilk eklenen eleman için bir adres bilgisi saklanırken en son eklenen eleman için ekstra bir adres bilgisi saklanmıyor.
+
+239
+00:22:02,655 --> 00:22:04,236
+Peki.
+
+240
+00:22:09,055 --> 00:22:10,175
+Şimdi.
+
+241
+00:22:12,316 --> 00:22:13,935
+Şöyle çizelim.
+
+242
+00:22:15,115 --> 00:22:16,096
+İlk başta null.
+
+243
+00:22:16,555 --> 00:22:17,816
+İlk elemanı ekledim.
+
+244
+00:22:18,935 --> 00:22:19,935
+Ve null'a gitti.
+
+245
+00:22:21,515 --> 00:22:21,695
+Tamam.
+
+246
+00:22:21,855 --> 00:22:24,395
+bununla ilgili
+
+247
+00:22:24,395 --> 00:22:26,096
+şunun teşhisiyle çizseydim
+
+248
+00:22:26,096 --> 00:22:28,596
+kırmızıyla
+
+249
+00:22:28,596 --> 00:22:32,155
+şunun bilgisini tutuyoruz
+
+250
+00:22:32,155 --> 00:22:35,035
+sonra
+
+251
+00:22:35,035 --> 00:22:37,635
+son eklenen için
+
+252
+00:22:37,635 --> 00:22:41,795
+ekstra olarak bir adres bilgisi saklamıyoruz
+
+253
+00:22:41,795 --> 00:22:43,475
+peki
+
+254
+00:22:43,475 --> 00:22:45,975
+şimdi buna ikinci elemanı eklemek istiyorum
+
+255
+00:22:45,975 --> 00:22:49,135
+ikinci elemanı eklemek için ne yapmam lazım
+
+256
+00:22:49,135 --> 00:22:54,736
+Bunun next'ini null görene kadar gidip oraya yeni bir eleman oluşturup eklemem lazım.
+
+257
+00:22:54,736 --> 00:22:56,695
+Yani bunu biliyorum. Kırmızıyı biliyorum.
+
+258
+00:22:57,335 --> 00:23:07,175
+Kırmızının next'i null olana kadar gidip oraya yeni bir tane eleman ekleyip null'ı oraya bağlamam ve bunun next'ini de burası olarak bir yeni eleman olarak güncellemem gerekiyor.
+
+259
+00:23:08,175 --> 00:23:13,155
+First burası. First'i biliyorum. First'i gösteren bir pointer'ım var.
+
+260
+00:23:13,335 --> 00:23:18,375
+Ona da head diyebilirsiniz zaten. Single link list'teki head diyebilirsiniz. Bu.
+
+261
+00:23:19,135 --> 00:23:25,135
+Peki bir eleman daha eklediğimde ne olacak? Şöyleydi ikinci eleman buradaydı.
+
+262
+00:23:26,996 --> 00:23:39,996
+bu da nala gidiyordu. Şimdi onu çizmeyeyim. Bu nal görene kadar next, next, next gidip yeni bir elemanı yaratıp, bunun next'ini nal değil de bu yeni elemandır diye güncelleyip bunu nala bağlamanız gerekiyor.
+
+263
+00:23:39,996 --> 00:23:54,996
+Bir tane yaptığınızda yine next, next, next, next diye gitmeniz, bağlamanız, nala getirmeniz gerekiyor. Neyi biliyorum ben? Sadece head'i biliyorum ya da first'i biliyorum. Başka hiçbir şey yok elimde. Başka bir herhangi bir bilgi saklamıyorum.
+
+264
+00:23:54,996 --> 00:24:01,056
+Bu durumda en kötü durum senaryosunda zaman karmaşıklığı nQ için ne oluyor?
+
+265
+00:24:02,095 --> 00:24:05,095
+n tane elemanı next next next diye geçmek zorundayım.
+
+266
+00:24:05,676 --> 00:24:08,655
+Hemen yapıştır buraya büyük O n.
+
+267
+00:24:11,315 --> 00:24:11,555
+Tamam.
+
+268
+00:24:12,775 --> 00:24:14,516
+DQ çok kolay.
+
+269
+00:24:15,016 --> 00:24:16,036
+Zaten bunu biliyorum.
+
+270
+00:24:16,935 --> 00:24:19,716
+Bunu alırım değerini geçici bir değişkene.
+
+271
+00:24:19,716 --> 00:24:22,836
+Bunu da next'dedir diye güncellerim kırmızıyı.
+
+272
+00:24:22,836 --> 00:24:52,815
+yani sabit işlem yaparım iki tane işlem yaparım olur biter bir de istiyorsanız free edersiniz üç işlem o zaman de queue için en kötü durumda ne olursa olsun pointer'ını bildiğim için O1 şöyle bir en kötü durum zaman karmaşıklığı tanımlanabilir burada da en sık yapılan hata bunları ters yazmak O1'e ON yazmak herhalde bu ilk eklenen eleman konusunda belki hızlı çözeyim
+
+273
+00:24:52,815 --> 00:25:05,475
+derken bir yanlış anlaşma olmuş olabilir. Ama anlattığı bir şekilde gördüğünüz gibi olan en temel en standart queue yapısı with single league list olacak şekilde soru da verilmiş.
+
+274
+00:25:07,475 --> 00:25:08,975
+Yedinci soru.
+
+275
+00:25:11,216 --> 00:25:16,356
+Tamamı aynı sayıdan oluşan en elemanlı bir dizi.
+
+276
+00:25:16,356 --> 00:25:17,856
+Allah! Soruya bak.
+
+277
+00:25:18,415 --> 00:25:20,115
+Elemanımız olsun 3.
+
+278
+00:25:25,844 --> 00:25:27,844
+Böyle bir dizi veriliyor. n elemanla.
+
+279
+00:25:27,844 --> 00:25:30,844
+Dimin? Şurayı da n yazayım.
+
+280
+00:25:30,844 --> 00:25:34,844
+Birinci eleman, ikinci eleman. Böyle gidiyor.
+
+281
+00:25:34,844 --> 00:25:37,844
+Birden n'e doğru verilmiş bir eleman.
+
+282
+00:25:37,844 --> 00:25:41,844
+Şimdi ben bunu selection sort ile sıralarsam ne yaparım?
+
+283
+00:25:41,844 --> 00:25:45,844
+Ne kadar karmaşıklıkta işlem yapmak zorunda kalırım.
+
+284
+00:25:45,844 --> 00:25:48,844
+Selection sort'u hatırlayalım.
+
+285
+00:25:48,844 --> 00:26:02,283
+bir döngüde kalanların içindeki minimumu ya da maksimumu bulup o adımın sonunda dizinin ilgili gözüyle yer değiştiriyor.
+
+286
+00:26:03,003 --> 00:26:10,364
+Sonra bir adımda bir azaltıyor boyutu ve kalanların içindeki minimumu bulup ikinci sıraya kalanların içindeki, üçüncü sıraya gibi gidiyor.
+
+287
+00:26:10,364 --> 00:26:14,403
+Yani n çarpı n'lik iki tane iç içe döngü.
+
+288
+00:26:14,403 --> 00:26:23,583
+Tabii ki n² bölü 2 artı c şeklinde bunu tanımlayabiliriz ama karmaşıklık mertebesi olarak buraya O n² ya da n² yazabilirsiniz.
+
+289
+00:26:25,143 --> 00:26:26,123
+Böyle n² yazalım.
+
+290
+00:26:26,783 --> 00:26:34,543
+Bunu yapmak zorundasınız çünkü selection sort körlemesine bunu en kötü durumda da olsa en iyi durumda da olsa her zaman n² karmaşıklık da yapıyor.
+
+291
+00:26:36,183 --> 00:26:43,943
+Peki ben şimdi bu verilen diziyi insertion sort ile sıralarsam ne olacak?
+
+292
+00:26:43,943 --> 00:26:59,704
+insertion sortla ne yapacak? Bunu bakacak, karşılaştıracak. Hepsiyle birer kere karşılaştıracak ve hiçbir şekilde yer değiştirmemesi gerektiğini karar verip hepsinin aynı sayıdan olmuşmasının nedeniyle şöyle altını bir daha çizelim.
+
+293
+00:26:59,943 --> 00:27:13,564
+Bir taneyi alacak, n-1 tane ile karşılaştıracak ve duracak. Yapması gereken herhangi bir değişiklik ve ilerleme bir iterasyona gerek olmadığını görecek ve duracak.
+
+294
+00:27:13,564 --> 00:27:20,163
+O yüzden de sadece n tane karmaşıklık, n tane karşılaştırma ya da n-1 karşılaştırma yeterli olacak.
+
+295
+00:27:20,803 --> 00:27:27,964
+n mertebesinde yani lineal mertebede bir karmaşıklıkla bu sıralama işlemini insertion sort gerçekleştirecek.
+
+296
+00:27:27,964 --> 00:27:35,444
+Burada hemen herkes hata yapanların hepsi tamamı aynı sayıdan oluşanı galiba tam okumadı.
+
+297
+00:27:35,564 --> 00:27:37,304
+O yüzden ikisine de n kare yazıp geçti.
+
+298
+00:27:37,303 --> 00:27:43,603
+ama n² selection sort olmak zorunda çünkü körlemesine devam ediyor.
+
+299
+00:27:44,763 --> 00:27:48,523
+Ama n insertion sort sadece bir iterasyonda n taneye bakacak.
+
+300
+00:27:49,003 --> 00:27:53,403
+Hepsi aynı olduğu için hiçbir şekilde yer değiştirmeyip sonuç budur diye işi bitirecek.
+
+301
+00:27:53,403 --> 00:28:01,403
+Bu da sortlarımızdan ilk dersten konuştuğumuz karmaşıklığa bağlama sorusu.
+
+302
+00:28:01,403 --> 00:28:03,403
+8. soru
+
+303
+00:28:03,403 --> 00:28:09,403
+bir dairesel linkli liste veri yapısının önüne
+
+304
+00:28:09,403 --> 00:28:13,403
+dairesel bir linkli liste yapalım
+
+305
+00:28:13,403 --> 00:28:16,403
+şuradan başlasın
+
+306
+00:28:18,403 --> 00:28:20,403
+birbirini göstersin
+
+307
+00:28:25,587 --> 00:28:53,848
+böyle. Değil mi? Son yok. Null yok. Teddy gösteriyor. Teddy de kırmızıyla çizmiş olayım. Böyle. Şimdi ben bunun önüne yeni bir eleman eklemek istiyorum. Ne yapmam lazım? Yeni elemanı şurada başka bir renk bulalım. Turuncu ile yapalım. Yeni bir elemanı şurada oluşturmam lazım.
+
+308
+00:28:59,220 --> 00:29:18,220
+ondan sonra yapmam gereken bunun next'ini buna bağlamak. Sabit işlem yeterli olacak.
+
+309
+00:29:21,460 --> 00:29:33,699
+Yani burada en kötü durum olsa da olmasa da nihayetinde bu circular linked listleri yapısı olduğu için büyük o notasyonla da sabit sayıda işlem yeterli olacak.
+
+310
+00:29:38,420 --> 00:30:03,979
+Sıradaki soru, o soru mu? Ha yok bu o soru değil. Binary search tree sorumuz vardı ya birkaç lerin olacağını, o değilmiş. Şimdi elimizde bir binary search tree var. Bu binary search tree'ye eleman eklemek istiyoruz ama yine en kötü durumda eleman eklemek istiyoruz. Binary search tree'nin en kötü durumu ne? Linkli liste hali değil mi?
+
+311
+00:30:03,979 --> 00:30:11,379
+hep mesela bu 2, bu 4, bu 6, bu 8 böyle gidiyor.
+
+312
+00:30:11,379 --> 00:30:12,460
+Tık tık tık tık tık.
+
+313
+00:30:12,839 --> 00:30:17,999
+O yüzden de bunun en kötü durumu linkli liste olacak.
+
+314
+00:30:18,199 --> 00:30:20,079
+Linkli liste haline gelmiş hali olacak.
+
+315
+00:30:20,219 --> 00:30:22,299
+O zaman linkli listede de işte n olacak.
+
+316
+00:30:23,539 --> 00:30:30,780
+Ve en kötü durumda yine büyük o anotasyonunda bir eleman eklemenin binary search tree'ye karmaşıklığı
+
+317
+00:30:30,780 --> 00:30:33,739
+en kötü durumların tekrar altını çiziyorum.
+
+318
+00:30:33,979 --> 00:30:50,059
+O n olacaktır. Ortalamada login evet ama sonuçta burada özellikle en kötü durumun olduğunu söylüyoruz. Yani linked list haline gelmiş hali. O yüzden de n mertebesinde yani o n karmaşıklıkta olacaktır.
+
+319
+00:30:50,059 --> 00:31:12,960
+Sıradaki soru aslında sıradaki iki soru ikisi bir arada tabii hanginize hangi sırada çıktı bilmiyorum ama bizim sıralamamızda yani yazarken ilk önce bir, üç, beş, iki, dört oluşabilir mi şeklinde bir soru var.
+
+320
+00:31:12,960 --> 00:31:17,820
+Oluşur mu oluşmaz mı neden oluşmuyor ya da neden oluşuyor onu yazmanızı söylemenizi istiyoruz.
+
+321
+00:31:17,820 --> 00:31:27,640
+şimdi baktığımızda bir random fonksiyonumuz var. Random fonksiyonu ya 0 veriyor ya 1 veriyor.
+
+322
+00:31:28,600 --> 00:31:29,739
+Şuradan kırmızıma geri geleyim.
+
+323
+00:31:31,820 --> 00:31:35,559
+O zaman şurası ya 0 ya da 1 oluyor.
+
+324
+00:31:36,860 --> 00:31:38,820
+Yani bu ya true oluyor ya false oluyor.
+
+325
+00:31:40,000 --> 00:31:40,199
+Tamam.
+
+326
+00:31:41,379 --> 00:31:44,660
+Eğer 1 gelirse yazdıracak.
+
+327
+00:31:44,660 --> 00:31:45,440
+Tamam.
+
+328
+00:31:45,439 --> 00:32:13,699
+Eğer 0 gelirse siteye push edeceğim. Bu şekilde bir yapı ve i eşittir 1'den 5'e. Şimdi i eşittir 1. Diyelim ki buradan 1 geldi. 1'e çık diye yazdırdı. Tamam. Sonra i eşittir 2 oldu. Bu random'dan diyelim ki 0 geldi ve gelen sayıyı siteye push etti. Ne? i'yi. 2.
+
+329
+00:32:13,699 --> 00:32:43,640
+2 ondan sonra geldi i eşittir 3 oldu diyelim ki 0 geldi pardon 1 geldi olsun 1 3 5'i oluşturmaya çalışıyorum o zaman 3'ü print etti sonra i eşittir 4 oldu diyelim ki bu sefer yine 0 geldi push stack yaptı 4'ü siteye push etti sonra bir daha geldi
+
+330
+00:32:43,640 --> 00:33:09,380
+iyi eşittir 5 oldu. Random'dan da diyelim ki yine şey geldi, bir geldi, true geldi, print etti. 1, 3, 5. Yani rastgele tabii olur olmaz, gelebilir gelemez ayrı bir şey ama sonuçta bu çıktı oluşabilir mi, oluşamaz mı ona bakıyorum. Şimdi 1, 3, 5 çıktısı oluşabilir. Buraya kadar kısmı kararlı karar da oluşabilir. Tamam.
+
+331
+00:33:09,379 --> 00:33:16,519
+sonrasında kodun kalanı şu alt sayfaya geçmiş ben de diyorum kodun geri kalanı nerede
+
+332
+00:33:16,519 --> 00:33:20,899
+stack boş olmadığı sürece pop stack yap ve print ettir
+
+333
+00:33:20,899 --> 00:33:25,079
+şimdi bu i'nin birden n'e doğru gittiğini unutmadan
+
+334
+00:33:25,471 --> 00:33:33,231
+mutlaka 1, 3, 5 geldiğinde bunlar yazdırılabilir. Ama 2 ve 4 mutlaka siteye bu sırayla push edilmelidir.
+
+335
+00:33:33,751 --> 00:33:40,411
+Ve pop stack yapıp print ettiğimde bunlar ancak 4 ve 2 olarak yazdırılabilir.
+
+336
+00:33:41,871 --> 00:33:47,351
+Tamam, 4 ve 2 olarak yazdırılabilir. Ama soruda ne diyor? 1, 3, 5, 2, 4 diyor.
+
+337
+00:33:47,351 --> 00:33:48,591
+2, 4
+
+338
+00:33:48,591 --> 00:33:50,231
+2 ve 4
+
+339
+00:33:50,231 --> 00:33:52,031
+pop stack yüzünden
+
+340
+00:33:52,031 --> 00:33:54,171
+çift sayıların
+
+341
+00:33:54,171 --> 00:33:55,451
+siteye atılması
+
+342
+00:33:55,451 --> 00:33:58,731
+ve küçükten büyüğe doğru siteye basılması
+
+343
+00:33:58,731 --> 00:34:01,091
+iyi eşittir 1'den 5'e gittiğinden dolayı
+
+344
+00:34:01,091 --> 00:34:02,991
+2, 4, 6 neyse
+
+345
+00:34:02,991 --> 00:34:05,131
+ya da işte o kadar
+
+346
+00:34:05,131 --> 00:34:08,351
+olabilecek en fazla zaten 5'e kadar olduğu için 2 ve 4
+
+347
+00:34:08,351 --> 00:34:11,631
+bu sayılar bu şekilde siteye basılmalıdır
+
+348
+00:34:11,631 --> 00:34:13,531
+başka şansı yoktur basılabilir
+
+349
+00:34:13,531 --> 00:34:15,371
+o da denk gelirse
+
+350
+00:34:15,371 --> 00:34:23,711
+ve pop ederek yazdırdığım için de mutlaka çift sayıların ters sırada yazdırılmaları gerekir.
+
+351
+00:34:23,811 --> 00:34:25,931
+Yani büyükten küçüğe yazdırılmaları gerekir.
+
+352
+00:34:26,651 --> 00:34:31,531
+Küçükten büyüğe yazdırılan bir çift sayı çıktısı kesinlikle o oluşamaz.
+
+353
+00:34:32,811 --> 00:34:34,071
+Tamam? Sebebi de bu.
+
+354
+00:34:35,211 --> 00:34:44,071
+Yani tekleri direkt yazdırmamız, çiftleri de siteye push ettiğimiz için küçükten büyüğe pop ederek yazdırırken mutlaka büyükten küçüğe yazdırılmaları.
+
+355
+00:34:44,071 --> 00:34:47,692
+bu şekilde bir iki cümle yazsanız yeterli olacaktır.
+
+356
+00:34:48,111 --> 00:34:55,631
+Tabi burada oluşabilir çünkü rastgele falan filan diyen arkadaşlar var ama hayır öyle bir şey söz konusu değil.
+
+357
+00:34:56,391 --> 00:35:01,391
+Rastgele de olsa gördüğünüz gibi aslında tek sayılar print ediliyor, çift sayılar siteye basılıyor bu kadar yani.
+
+358
+00:35:01,391 --> 00:35:07,031
+Buradaki olan olay bu ve en sonunda da çift sayıları stackten pop ederek yazdırıyoruz.
+
+359
+00:35:08,071 --> 00:35:09,571
+Özetle buradaki çıktı oluşamaz.
+
+360
+00:35:10,031 --> 00:35:11,291
+Sebebi de işte bu stack mod.
+
+361
+00:35:14,071 --> 00:35:43,711
+sonra 11. soruda bu sefer de aynı soruyu 1, 3, 5, 2, 4 diyorduk ya orada da 1, 3, 5, 4, 2 oluşur mu diye soruyoruz ve aynı yukarıdaki şey 1, 3, 5 zaten trend edilebilir olabilir çıktı da oluşabilir siteye baktığımızda da siteye 2 ve 4 böyle push edilmiş olabilir bunlar da pop edilerek trend edildiğinde en son da
+
+362
+00:35:43,711 --> 00:35:44,471
+şuradan
+
+363
+00:35:44,471 --> 00:35:47,771
+şuraya
+
+364
+00:35:47,771 --> 00:35:49,531
+1, 3, 5, 4, 2 olarak
+
+365
+00:35:49,531 --> 00:35:51,411
+hop ederek yazın
+
+366
+00:35:51,411 --> 00:35:52,331
+o zaman bu çıktı
+
+367
+00:35:52,331 --> 00:35:53,771
+evet oluşabilir
+
+368
+00:35:53,771 --> 00:35:56,311
+yani stackteki ters sıralama yüzünden oluşabilir
+
+369
+00:35:56,311 --> 00:35:56,891
+aynı şey
+
+370
+00:35:56,891 --> 00:35:58,971
+burada bazı arkadaşlar
+
+371
+00:35:58,971 --> 00:36:00,551
+hocam aynı soru bir daha geldi
+
+372
+00:36:00,551 --> 00:36:03,351
+nasıl oluyor bir hata mı var falan diye yazmışlar
+
+373
+00:36:03,351 --> 00:36:04,871
+ama aynı soru değil
+
+374
+00:36:04,871 --> 00:36:06,511
+azıcık dikkat lazım
+
+375
+00:36:06,511 --> 00:36:09,891
+kimine 1, 3, 5, 4, 2 önce gelmiştir
+
+376
+00:36:09,891 --> 00:36:11,391
+kimine sonra gelmiştir
+
+377
+00:36:11,391 --> 00:36:12,891
+burada çok samimiyetle
+
+378
+00:36:12,891 --> 00:36:19,291
+aa hocam şimdi anladım ben geçen öbür soruyu yanlış yapmışım tüh diyen arkadaşlar da var.
+
+379
+00:36:19,951 --> 00:36:21,171
+Oluyor ne yapalım.
+
+380
+00:36:21,912 --> 00:36:22,891
+Sınav heyecanı.
+
+381
+00:36:25,071 --> 00:36:30,832
+Peki 11. soru da tamam diye düşünüyorum.
+
+382
+00:36:30,912 --> 00:36:31,791
+12. soru.
+
+383
+00:36:32,352 --> 00:36:35,251
+Şimdi elimizde bir sırasız AN dizisi var.
+
+384
+00:36:35,251 --> 00:36:42,291
+Hemen bunun sırasız bir AN ve sıralı bir BM dizisi var.
+
+385
+00:36:42,891 --> 00:36:46,651
+a n ve b m. Bunların da altını çizelim.
+
+386
+00:36:47,091 --> 00:36:51,391
+Ve n değerinin m değerinden çok daha büyük olduğunu biliyormuşuz.
+
+387
+00:36:51,451 --> 00:36:52,511
+İyi çok güzel. Aferin mi de?
+
+388
+00:36:52,751 --> 00:36:54,992
+n büyüktür büyüktür m.
+
+389
+00:36:56,451 --> 00:36:59,151
+Çok büyük anlamında iki tane büyüktür kullanıyorsunuz.
+
+390
+00:37:01,451 --> 00:37:04,591
+C'deki shift operatörü değil. Yanlış anlaşma olmasın.
+
+391
+00:37:04,591 --> 00:37:05,651
+Peki.
+
+392
+00:37:05,651 --> 00:37:13,091
+ve bu dizideki ortak elemanları bulmak için bir algoritma tasarlamanızı istiyoruz.
+
+393
+00:37:13,451 --> 00:37:18,631
+Burada tabii ki şey dememişiz, efektif bir algoritma dememişiz.
+
+394
+00:37:19,123 --> 00:37:28,143
+Ama çoğunluk onun efektif bir algoritma olması gerektiğini, bir tasarım yapıyorsam onun efektif olması, algoritma tasarım ilkelerine uygun olması gerektiğini biliyor.
+
+395
+00:37:29,044 --> 00:37:36,603
+Ama burada direkt hocam işte iki for döngüsüyle pat, küt, n'e m'lik ararım diyenler var.
+
+396
+00:37:37,403 --> 00:37:42,363
+Ya da işte n değeri m'den çok büyük olduğu için m'i zaten göz ardı etmiş olurum.
+
+397
+00:37:42,363 --> 00:37:45,163
+n mertebede bir karmaşıklıkla ararım.
+
+398
+00:37:45,443 --> 00:37:48,544
+Böyle iki döngü de yaparım ama zaten nm olmaz.
+
+399
+00:37:48,703 --> 00:37:51,443
+m çok küçük, n yeterlidir diyenler var.
+
+400
+00:37:54,223 --> 00:37:56,903
+Buradaki anahtar kelime aramam.
+
+401
+00:37:57,903 --> 00:38:01,024
+Sonuçta iki tane dizi var ve ortak eleman bulmaya çalışıyoruz.
+
+402
+00:38:01,024 --> 00:38:03,543
+O zaman bir dizideki elemanları diğerinde aramam lazım.
+
+403
+00:38:04,083 --> 00:38:06,524
+Şimdi m sayısı küçük ama n sayısı büyük.
+
+404
+00:38:06,523 --> 00:38:24,143
+yani m kere n içinde linear search yapabilirim ya da buradaki m'in küçük olmasından ve sıralı olmasından dolayı burada binary search yapabilirim.
+
+405
+00:38:24,143 --> 00:38:27,523
+m'lik bir dizide binary search yapmak ne demektir? log m'dir.
+
+406
+00:38:27,524 --> 00:38:55,204
+değil mi? Ve bunu a n dizisindeki bütün elemanlar için birer kere yapalım. Yani n kere. n tane logem yapabileceğim iyi çözümlerden bir tanesi olacaktır. Şimdi n kere n mi daha iyi? Şuradaki gibi. Yoksa n kere logem mi daha iyi? Tabii ki n logem daha iyi. O yüzden de hani ben tasarım olarak burada en hızlı temiz kolay çözüm.
+
+407
+00:38:55,203 --> 00:39:17,303
+A dizisindeki bütün elemanları B dizisinde binary search ile ararım dediği O log m mertebede de büyük o notasyonunda bir karmaşıklığı vardır diye şuraya da şunu yazarım şöyle O n log m diye ve sorudan kaç puanlı bu 5 artı 2 7 puanımı mis gibi alırım.
+
+408
+00:39:19,083 --> 00:39:20,043
+Bu da bu kadar.
+
+409
+00:39:23,423 --> 00:39:23,983
+Tamam.
+
+410
+00:39:31,315 --> 00:39:45,656
+13. soru. Şimdi aşağıda sayı değerleri harflerle maskelenmiş olarak ağacın ikili arama ağacı olduğu biliniyor. Binary search tree. Çok güzel. Şimdi sıralamada A düğümünden büyük ilk değer.
+
+411
+00:39:52,656 --> 00:39:55,615
+Bakalım. Burası.
+
+412
+00:39:55,615 --> 00:40:00,675
+bundan daha büyük ilk değeri arıyorum.
+
+413
+00:40:00,675 --> 00:40:01,315
+İlk değer.
+
+414
+00:40:02,215 --> 00:40:05,615
+Şimdi buradaki en büyük tufağı herkes hemen tak C yazmış.
+
+415
+00:40:06,496 --> 00:40:08,935
+Ama bu bir binary search tree.
+
+416
+00:40:09,315 --> 00:40:09,955
+Unutmayalım.
+
+417
+00:40:10,515 --> 00:40:11,815
+Şimdi buradaki değer A.
+
+418
+00:40:12,275 --> 00:40:16,295
+C evet A'dan büyük ama A'dan büyük ilk değer değil.
+
+419
+00:40:16,975 --> 00:40:23,275
+O zaman sağdaki ağacın soldaki en gidebildiğin çocuğuna gitmen lazım.
+
+420
+00:40:23,275 --> 00:40:39,176
+Çünkü F, C'den küçük, J'de F'den küçük ama hepsi de A'dan daha büyük. Şuradaki alt ağacın soru bunu soruyor. En küçük elemanın hangisidir diye soruyor. Evet.
+
+421
+00:40:39,176 --> 00:40:53,496
+Hocam ben anlaşılır bir şekilde ikisini de hani yazdım. A'dan büyük en küçük değer J işte A'dan sonraki gelen arama ağacında C'dir falan gibi ikisini de yazdım. Görmüşsünüzdür belki de.
+
+422
+00:40:53,856 --> 00:41:07,396
+Gördüm. Çünkü şöyle bazen hani sizin ifade ettiğiniz şeyler böyle işte bunu ifade ettim falan gibi bir karşılık alabiliyoruz. O yüzden ikisini de yazayım. Zaten oradan doğruyu siz çekersiniz diye.
+
+423
+00:41:07,395 --> 00:41:13,475
+Ama direkt sorunun cevabı olarak yazdım. A'dan büyük ihtiyaç C'dir falan gibi yazdım.
+
+424
+00:41:13,995 --> 00:41:14,475
+Tamam.
+
+425
+00:41:15,095 --> 00:41:18,215
+Biliyorum. Onda bir şey yok. Tamam. Puan verdim de.
+
+426
+00:41:18,635 --> 00:41:19,655
+Sağ olun hocam.
+
+427
+00:41:19,735 --> 00:41:26,215
+Şey gibi oluyor. Yoksa o zaman bütün hepsini yazayım. B, C, D, S diyeyim. Herhangi bir tanesi yazayım.
+
+428
+00:41:26,915 --> 00:41:27,415
+Geçmecim.
+
+429
+00:41:27,415 --> 00:41:30,575
+İçinde bir doğru cevap var. Ona gidiyor.
+
+430
+00:41:30,935 --> 00:41:34,995
+Yani şurada şu tupaya çok fazla düşen olmuş. Buna direkt C yazan.
+
+431
+00:41:34,996 --> 00:41:42,575
+Ama buradaki soru A'dan büyük ilk değeri soruyor. Binary search tree olduğu için evet bu bundan büyük ama tekrar hatırlatıyorum bundan küçük değerler de var.
+
+432
+00:41:43,435 --> 00:41:52,295
+A'dan büyük bundan küçük. Yani demek ki A'dan sonraki bir büyük sıradaki ikinci büyük değer yani A'yı takip eden ancak J düğümünde yer alabilir.
+
+433
+00:41:53,256 --> 00:41:58,655
+Buraya böyle güzel bir jandarmanın J'sini yazanlar çat diye iki puanı aldılar.
+
+434
+00:41:58,655 --> 00:42:28,435
+sonra artık soru kendini tekrar ediyor aslına bakarsanız sıralamada B düğümünden büyük ilk değer B düğümün şurası düzgün çizmeye çalışıyorum da B düğümünden büyük ilk değer demek ki B'nin sağına doğru gideceğiz tamam sağının en soluna gideceğiz aslına bakarsanız ama
+
+435
+00:42:28,435 --> 00:42:38,435
+sağının en solu yok. Burası kör. Burası boş. O zaman E'dir. Burada E'yi yapanlar çoğunluktaydı.
+
+436
+00:42:41,435 --> 00:42:48,435
+Başka? 3, ha 15. Ben bunları 13, 14, 15'i yerim de size hepsini bir soruda sorduk tabii.
+
+437
+00:42:49,435 --> 00:42:57,676
+Çok da parça pinçik olmasın diye. C düğümünden büyük ilk değer. Hemen aynısı aynı muhabbet.
+
+438
+00:42:57,676 --> 00:43:23,295
+C düğümü burada. C'den büyük sağ tarafındaki en küçük eleman. Sağ alt ağaçtaki tık tık tık tık. Şöyle çizdiğimiz sağ alt ağaçtaki en küçük eleman ne? K. O zaman C'den büyük ilk değer G değildir. Burada da yine birinci ışıkta tufaya düşenlerin hepsi burada da tufaya düşmüştü. Burada da G yazmışlardı.
+
+439
+00:43:23,295 --> 00:43:29,695
+bunu da sağ olarak yazanlar 2 puanı daha ceplerine attılar.
+
+440
+00:43:31,795 --> 00:43:42,115
+ağacın yüksekliğini soruyor. Ağacın yüksekliğine bakalım. En dipteki çocuğa gidiyoruz. 1, 2, 3, 4. Ağacın yüksekliği 4.
+
+441
+00:43:44,015 --> 00:43:57,115
+Burada çok sıkıntı yoktu. Ve son sorumuz. Neydi? Ağacın mevcut yüksekliğini bozmadan kaç tane eleman daha ekleyebilirim?
+
+442
+00:43:57,115 --> 00:44:25,115
+Burada yine baya hata vardı. Şöyle, şuraya bir, buraya iki, buraya üç tane eklediğinizde bu seviye doluyor. Tamam mı? Yani bu seviyeyi doldurmak için üç tane. Şimdi geldik, şuraya şöyle şu yuvarlaklarını da çizeyim. Tamam mı? Bu seviye tamamen doldu. Ama ağacın mevcut yüksekliği dört ya, onu bozmadan. O zaman buraya iki tane daha.
+
+443
+00:44:25,115 --> 00:44:27,255
+bu da 2 tane daha.
+
+444
+00:44:30,176 --> 00:44:34,595
+Yani 2, 4, 6, 8, 10, 12, 14.
+
+445
+00:44:35,235 --> 00:44:36,855
+Bir de bu 15 tane daha.
+
+446
+00:44:39,135 --> 00:44:40,935
+Son seviyeyi doldurmak için.
+
+447
+00:44:41,596 --> 00:44:43,755
+3, 15.
+
+448
+00:44:46,755 --> 00:44:48,315
+Eşittir. Ne oldu? 18.
+
+449
+00:44:49,055 --> 00:44:51,236
+Hemen şuraya 18 yazanlar.
+
+450
+00:44:52,775 --> 00:44:53,656
+2 puanı daha.
+
+451
+00:44:53,656 --> 00:44:55,416
+hoppa cebe attılar.
+
+452
+00:44:57,115 --> 00:44:59,755
+Toplam birinci kısmın puanı 70'ti.
+
+453
+00:44:59,916 --> 00:45:01,395
+70 alan var mı? Yok.
+
+454
+00:45:01,995 --> 00:45:04,556
+Ama 68 alan var galiba.
+
+455
+00:45:05,255 --> 00:45:06,916
+Not ortalaması da bayağı bir yüksek.
+
+456
+00:45:07,056 --> 00:45:08,156
+50 küsurlerde galiba.
+
+457
+00:45:08,976 --> 00:45:09,516
+Maşallah.
+
+458
+00:45:10,236 --> 00:45:10,956
+İyi yapmışsınız.
+
+459
+00:45:13,255 --> 00:45:14,535
+Kolay mıydı?
+
+460
+00:45:14,935 --> 00:45:16,096
+Yoksa başka bir
+
+461
+00:45:16,096 --> 00:45:18,755
+biz çok iyi çalıştık hocam durumunu var.
+
+462
+00:45:20,836 --> 00:45:22,096
+Yorum alayım bakın.
+
+463
+00:45:23,656 --> 00:45:25,115
+Herhalde her ikisi de hocam
+
+464
+00:45:25,115 --> 00:45:26,956
+Güzel
+
+465
+00:45:26,956 --> 00:45:31,276
+Bu dönem biraz bizden oldu diyebiliriz arkadaşlar
+
+466
+00:45:31,276 --> 00:45:33,255
+Yani
+
+467
+00:45:33,255 --> 00:45:36,956
+Her şey böyle
+
+468
+00:45:36,956 --> 00:45:40,975
+Bırakın gitsinler şeklinde ilerlediği için
+
+469
+00:45:40,975 --> 00:45:42,756
+Madem öyle bizde bırakalım
+
+470
+00:45:42,756 --> 00:45:43,855
+Sizde yapın
+
+471
+00:45:43,855 --> 00:45:45,376
+Soruları çözün şeklinde oldu
+
+472
+00:45:45,376 --> 00:45:48,016
+Diğer kısımda da kod vardı
+
+473
+00:45:48,016 --> 00:45:48,855
+Linkli liste
+
+474
+00:45:48,855 --> 00:45:51,555
+Eğer linkli listeyle alakalı azıcık kod yazdıysanız
+
+475
+00:45:51,555 --> 00:45:55,016
+Zaten o soruyu da çok rahatlıkla yaparsınız.
+
+476
+00:45:55,695 --> 00:45:57,695
+Evet dersi takip eden azıcık dikkat eden.
+
+477
+00:45:58,016 --> 00:46:01,075
+Çünkü bu sorularda azıcık bazen böyle ufak pefek trikler olabiliyor.
+
+478
+00:46:01,075 --> 00:46:02,516
+İşte şu şey gibi.
+
+479
+00:46:03,975 --> 00:46:08,415
+İşte en kötü durum gibi ya da buradaki işte C'den büyük ilk değer.
+
+480
+00:46:08,695 --> 00:46:11,775
+Yani burada direkt tak G'ye yapıştırmayacaksın da bir düşüneceksin.
+
+481
+00:46:12,315 --> 00:46:16,475
+Ya burada acaba C'den büyük bir sonraki büyük değer hangisidir?
+
+482
+00:46:16,895 --> 00:46:19,435
+Ağacın, alt ağacın en küçük elemanı.
+
+483
+00:46:19,435 --> 00:46:23,376
+hatta burada BST eleman ekleme silmede bunları tartışmıştık.
+
+484
+00:46:23,816 --> 00:46:25,295
+Bunlar eklediğinizde yeterli oluyor.
+
+485
+00:46:25,656 --> 00:46:26,516
+Evet [öğrenci].
+
+486
+00:46:26,935 --> 00:46:35,516
+Hocam bu kod kısmında ben süreyi yetiştiremedim de kodun çalışıp çalışmadığına bile bakamadım.
+
+487
+00:46:35,516 --> 00:46:39,896
+Belli bir yere kadar ilerledim ama sizin herhangi bir şekilde puan verme durumunuz var mı?
+
+488
+00:46:39,935 --> 00:46:41,775
+Yoksa çalışmıyorsa direkt sıfır verip.
+
+489
+00:46:42,116 --> 00:46:44,016
+Çalışmıyorsa direkt sıfır vermiyoruz canım.
+
+490
+00:46:45,295 --> 00:46:46,876
+Zaten soruda da biz ne diyoruz?
+
+491
+00:46:46,876 --> 00:46:50,816
+İlk önce algoritmanızı, veri yapılarınızı düzgün tasarlayın.
+
+492
+00:46:51,676 --> 00:46:54,176
+Sonrasında kodunuzu güzelleştirin diyoruz ya.
+
+493
+00:46:55,376 --> 00:46:57,096
+Bir genel yapısına bakacağım.
+
+494
+00:46:57,695 --> 00:46:58,295
+Ondan sonra.
+
+495
+00:46:58,476 --> 00:47:02,195
+Tabii çalışmıyorsa tam puan alamazsın ama sıfır da almazsın yani.
+
+496
+00:47:02,215 --> 00:47:04,215
+Yok kesinlikle zaten tam puan değil de.
+
+497
+00:47:04,215 --> 00:47:12,516
+Tam böyle ucunda böyle bir çıkmaza girip, çalışıyor mu çalışmıyor mu süre bitiyor şeklinde not defterini yapıştırıp öyle bir şey oldu.
+
+498
+00:47:13,176 --> 00:47:16,176
+Son anda böyle bir hata verdi ama hatayı bulamadım.
+
+499
+00:47:16,175 --> 00:47:19,175
+Ama çok ilerlemiştim hani sonuna kadar gittiğimi biliyorum
+
+500
+00:47:19,175 --> 00:47:22,895
+Süre bir türlü şey olmadı böyle süre bir de stres yaratıyor biraz
+
+501
+00:47:22,895 --> 00:47:25,515
+Bu hani bir haftalık ödevler kadar rahat yapamıyoruz
+
+502
+00:47:25,515 --> 00:47:28,695
+Sanırım 50 dakikaydı yanlış hatırlamıyorsam süre
+
+503
+00:47:29,204 --> 00:47:45,384
+tam böyle şey oldu hani stres anında falan çalışıyorum çalışmıyorum falan derken hiç yoktan yollayayım deyip inşallah yani siz de zaten görüp vereceğinizi biliyoruz hani notumuzu. O yüzden teşekkür ediyorum ben tekrardan.
+
+504
+00:47:47,023 --> 00:47:56,023
+Peki, şimdi ne oluyor ya herkes çıkıyor mu? Bir ara vereyim. Aradan sonra devam edelim tamam mı?
+
+505
+00:47:56,023 --> 00:47:56,923
+Hocam bir şey sorun mu?
+
+506
+00:47:57,723 --> 00:47:58,283
+Sor.
+
+507
+00:47:58,283 --> 00:48:03,663
+Finanların kesin yüz yüze yapılacağı öyle mi hocam? Çünkü uçak beledi alacağım da
+
+508
+00:48:03,663 --> 00:48:10,704
+Valla şu ana kadar hala yüz yüze yapılmayacak diye bir şey ortaya çıkmadı
+
+509
+00:48:10,704 --> 00:48:14,503
+Yüz yüze yapılacak diye karar verildi
+
+510
+00:48:14,503 --> 00:48:20,163
+Bu kararı değiştiren, bu kararı ezen herhangi bir şey şu ana kadar söz konusu değil
+
+511
+00:48:20,163 --> 00:48:24,064
+Hocam çünkü pahalı da 9-10 bin lira bir uçak beledi var o yüzden
+
+512
+00:48:24,064 --> 00:48:25,843
+Ne yapıyorsun? Nereden geliyorsun ya?
+
+513
+00:48:28,283 --> 00:48:29,523
+Rusya'da
+
+514
+00:48:29,523 --> 00:48:35,263
+Valla ne diyeyim bir şey diyemeyeceğim yani
+
+515
+00:48:35,263 --> 00:48:42,483
+Diyorsan ki ara sınavda iyi yaptım şey yaptım sınava finale girmeden de geçerim
+
+516
+00:48:42,483 --> 00:48:44,263
+Finale girmeyince F0 gelmiyor mu canım?
+
+517
+00:48:44,503 --> 00:48:45,843
+F0 gelmiyor FF geliyor
+
+518
+00:48:45,843 --> 00:48:47,103
+Ha tamam
+
+519
+00:48:47,103 --> 00:48:54,083
+Evet finale girmeyince FF oluyorsun belki bütünlemeye girmeyi tercih edersin o yüzden dedim
+
+520
+00:48:54,083 --> 00:48:56,403
+Ben de niye kalıyorum diyorum be
+
+521
+00:48:56,403 --> 00:49:15,443
+O eskiden de eskiden mesela geçme notu 40 ya atıyorum böyle dönem içinde şey alıp çok yüksek alıp böyle 80-90 ortalama yapıp ondan sonra hani onun %60'ını aldığında bile 40'ın üzerinde kalıp geçebiliyordunuz.
+
+522
+00:49:15,443 --> 00:49:17,564
+finale girmeden ders geçebiliyordunuz.
+
+523
+00:49:18,623 --> 00:49:21,443
+Fakat sonra da onu kaldırıldı, değişti senato kararıyla.
+
+524
+00:49:21,443 --> 00:49:26,884
+Ve şey artık finale, yani yıl sonu değerlendirmesine girmek zorundasınız.
+
+525
+00:49:26,983 --> 00:49:28,843
+Girmezseniz F F alıyorsunuz.
+
+526
+00:49:28,924 --> 00:49:30,263
+O şekilde kalıyorsunuz.
+
+527
+00:49:31,663 --> 00:49:32,303
+Tamam.
+
+528
+00:49:32,583 --> 00:49:33,503
+O zaman 10 dakika ara.
+
+529
+00:49:33,823 --> 00:49:35,383
+10 dakika sonra görüşüyoruz.
+
+530
+00:49:36,463 --> 00:49:37,823
+Saattan 2 gibi başlıyorum.
+
+531
+01:01:27,956 --> 01:01:29,995
+ekranı paylaşamadım.
+
+532
+01:01:32,055 --> 01:01:32,815
+Şuydu değil mi?
+
+533
+01:01:34,936 --> 01:01:35,635
+Oldu gibi.
+
+534
+01:01:36,756 --> 01:01:38,315
+Geldi değil mi? Geldi. Tamam.
+
+535
+01:01:39,315 --> 01:01:39,916
+Evet.
+
+536
+01:01:41,395 --> 01:01:42,035
+Şimdi
+
+537
+01:01:42,035 --> 01:01:49,235
+8. soruda tek günlük cycle list'i başa eleman eklemede ON olmaz mı?
+
+538
+01:01:49,235 --> 01:01:52,775
+Araya eleman eklemek ON olur da başa eleman eklemek çok kolay bir şekilde.
+
+539
+01:01:52,935 --> 01:01:57,456
+Last'ı head pointer olarak tutarak O1 yapabilirsin.
+
+540
+01:01:57,456 --> 01:02:13,075
+yani başa ve sona ekleme O1, araya eleman ekleme ON olacak şekilde. İnternete yaz, circular linked list insertion diye zaten orada örneklerden hemen anlayacaksın. Çok basit bahsetmiştik diye hatırlıyorum.
+
+541
+01:02:14,996 --> 01:02:18,375
+Onun dışında cevapları da verdik. Tamam.
+
+542
+01:02:18,375 --> 01:02:18,875
+Tamam.
+
+543
+01:02:20,555 --> 01:02:23,415
+O şey linked listenin oturup kodunu yazmayacağım.
+
+544
+01:02:23,575 --> 01:02:25,115
+O kadar uzun vaktimiz yok.
+
+545
+01:02:25,215 --> 01:02:35,715
+Yani dediğim gibi öncesinde zaten linked listeyle alakalı kod yazdıysanız çok hızlı bir şekilde, rahat bir şekilde soruyu çözmüşsünüzdür diye düşünüyorum.
+
+546
+01:02:35,875 --> 01:02:36,915
+Çok zor bir soru değildi.
+
+547
+01:02:37,015 --> 01:02:39,036
+Peki gelelim şimdi konumuza.
+
+548
+01:02:40,855 --> 01:02:42,335
+Sesim açık değil mi bu arada?
+
+549
+01:02:42,335 --> 01:02:42,855
+Tamam.
+
+550
+01:02:42,856 --> 01:02:48,976
+Bu haftaki konumuz yeni bir veri yapısı, graphlar.
+
+551
+01:02:49,836 --> 01:02:54,956
+Graph aynı zamanda Türkçe'de çizge olarak da isimlendiriliyor.
+
+552
+01:02:56,296 --> 01:02:58,976
+Çizgeler tam Türkçesi.
+
+553
+01:02:59,896 --> 01:03:10,735
+Ama biz yine literatürde genellikle herkes graph kelimesini İngilizce'de de graph şeklinde yazıldığı için kullandığından dolayı graph olarak kullanmaya devam edeceğiz.
+
+554
+01:03:10,735 --> 01:03:12,676
+Bu şekilde ifade edeceğiz.
+
+555
+01:03:12,855 --> 01:03:28,315
+Şimdi nedir graf? Tanımını yapalım önce. Graf veri yapısı nasıl bir veri yapısıdır? Birbirine bağlı elemanlar kümesine graf adı verilir. Bitti. Ne kadar güzel değil mi?
+
+556
+01:03:28,316 --> 01:03:30,335
+tanımımız aslında bu kadar.
+
+557
+01:03:30,555 --> 01:03:44,836
+Ama biraz daha genişletilmiş bir tanım istiyorsanız eğer bir soyut matematik nesnesi olarak birbirine bağlı elemanlardan oluşan kümeye graph adı verilir diyebiliriz.
+
+558
+01:03:44,836 --> 01:03:50,036
+Yani aslında bir oluşum, bir birliktelik ifadesi başka hiçbir şey değil.
+
+559
+01:03:50,036 --> 01:03:59,816
+birbiriyle ilişki içinde olan, birbiriyle etkileşen her türlü varlık bizim için bir graf oluşturur.
+
+560
+01:04:00,616 --> 01:04:06,676
+Tabi bu graf veri yapısını biz de sıklıkla bilgisayar bilimlerinde kullanıyoruz.
+
+561
+01:04:06,676 --> 01:04:13,056
+Ama tabi graf esasen matematiğin ana çalışma alanlarından bir tanesi.
+
+562
+01:04:13,055 --> 01:04:20,435
+ve öyle çok da yeni de sayılmaz, yüzyıllardır üzerinde çalışılan bir alan.
+
+563
+01:04:20,435 --> 01:04:32,515
+Hatta graf teorisi, graf teori olarak geçer ve grafları kullanarak ya da graflar üzerinde yapılan bütün işlemler matematikte temel yani ana çalışma alanlarından birisi.
+
+564
+01:04:32,695 --> 01:04:36,635
+Hani ana bilim dalı gibi düşünebilirsiniz. O şekilde bir yapıya sahip.
+
+565
+01:04:37,095 --> 01:04:38,815
+Peki ne dedik?
+
+566
+01:04:39,335 --> 01:04:42,835
+Graflar aslında birbirine bağlı elemanlar kümesidir.
+
+567
+01:04:42,835 --> 01:04:49,195
+başka herhangi bir şey değildir. Mesela grafik olarak gösterecek olursam şöyle bir elemanım olsun.
+
+568
+01:04:50,775 --> 01:04:57,815
+Şöyle başka bir elemanım olsun. Şurada başka bir tane olsun. Şurada başka bir tane. Şurada başka bir tane. Şurada da şurada olsun.
+
+569
+01:04:57,815 --> 01:05:04,375
+Şöyle başka bir tane bir eleman. Bu bununla bağlı olsun. Bu bununla bağlı olsun. Bu bununla bağlı olsun.
+
+570
+01:05:06,215 --> 01:05:12,315
+Ondan sonra ne bileyim bu bununla bağlı olsun. Şu şununla bağlı olsun.
+
+571
+01:05:12,835 --> 01:05:15,315
+Ondan sonra başka ne olsun?
+
+572
+01:05:16,115 --> 01:05:17,475
+Bu bunda bir daha bağlı olsun.
+
+573
+01:05:19,075 --> 01:05:19,335
+Bunun
+
+574
+01:05:19,335 --> 01:05:22,675
+şu şöyle birbirine bağlı.
+
+575
+01:05:22,755 --> 01:05:24,535
+Bu bir de böyle kendine bağlı olsun.
+
+576
+01:05:25,715 --> 01:05:52,035
+bu şekilde. Bir şekilde, yani benim burada 1, 2, 3, 4, 5, 6 tane elemanım var. Ve bu 6 eleman arasında bir ilişki var. Ki işte A diyelim. A elemanıyla B elemanı arasında iki farklı ilişki var. B ile C elemanın arasında bir ilişki var. Ya da A'dan B'ye, B'den C'ye erişilebiliyor. Bunun ilişkisi üzerinden bunu da başka bir ilişki üzerinden devam edebiliyorum gibi gibi gibi.
+
+577
+01:05:52,035 --> 01:05:56,976
+birbiriyle bağlı elemanlardan oluşan kümeye graph adını veriyoruz.
+
+578
+01:05:57,095 --> 01:06:00,416
+Öyleyse graph'ı oluşturan aslında iki tane temel kavram var.
+
+579
+01:06:00,655 --> 01:06:05,155
+Birisi benim elemanlarım ki onlara vertex ya da düğüm adını veriyoruz.
+
+580
+01:06:05,635 --> 01:06:07,576
+Vertex İngilizcesi vertices.
+
+581
+01:06:08,155 --> 01:06:12,116
+O yüzden de V yani büyük V notasyonunu kullanıyoruz.
+
+582
+01:06:13,116 --> 01:06:14,056
+Düğüm sayısı nedir?
+
+583
+01:06:14,056 --> 01:06:17,775
+1, 2, 3, 4, 5, 6 mesela buradaki örnekte.
+
+584
+01:06:17,775 --> 01:06:30,595
+onu da şöyle hani mutlak değer pipeleri içinde hani kümenin eleman sayısı anlamında eleman ya da düğüm sayısı olarak ifade ediyoruz.
+
+585
+01:06:30,755 --> 01:06:37,155
+Peki buradaki bağlantıları yani ilişkileri sağlayan yapılara parçalara ne isim veriyoruz?
+
+586
+01:06:37,335 --> 01:06:39,375
+Onlara da kenar adını veriyoruz.
+
+587
+01:06:39,875 --> 01:06:42,815
+Kenar Türkçesi yine İngilizcesi edge.
+
+588
+01:06:43,135 --> 01:06:45,855
+Edge olduğu için de e ile bunları ifade ediyoruz.
+
+589
+01:06:45,855 --> 01:06:51,976
+O zaman ben bir G grafını ifade ederken aslında şunu yazıyorum.
+
+590
+01:06:52,156 --> 01:06:54,635
+G parantez içinde de VE.
+
+591
+01:06:54,835 --> 01:06:55,555
+Bu ne demektir?
+
+592
+01:06:55,976 --> 01:07:01,076
+Vertexler ve edge'lerden tanımlı bir grup, bir veri grubu.
+
+593
+01:07:01,275 --> 01:07:04,756
+Bu benim grafımdır diye bunu ifade etmiş oluyorum.
+
+594
+01:07:04,756 --> 01:07:11,756
+Bu nedenle de vertexler ve edge'ler üzerinden her türlü tanımımı yaptığım için
+
+595
+01:07:11,756 --> 01:07:20,756
+bir graf algoritmasını işliyorken karmaşıklık analizini yapacaksam ya da karmaşıklığını ifade edeceksem
+
+596
+01:07:20,756 --> 01:07:34,676
+doğal olarak n gibi değerleri değil, vertex ve edge sayılarını yani ve e sayılarını ya da değişkenlerini kullanarak karmaşıklığımı ifade etmem gerekir.
+
+597
+01:07:35,436 --> 01:07:38,695
+Yani büyük O ve e diye bir ifade gördük.
+
+598
+01:07:38,695 --> 01:07:47,515
+Bu ne demektir? Bu bir graf algoritması ve graftaki işte grafın düğüm ve kenar sayılarının çarpımı mertebesinde bir karmaşıklar sahiptir.
+
+599
+01:07:47,515 --> 01:07:53,595
+İşte kenar sayısı çarpı düğüm sayısı çarpı kenar sayısı olarak bunu okumam gerekir.
+
+600
+01:07:55,615 --> 01:08:00,955
+Şimdi graflar çok yaygın olarak hayatın her tarafında üzerinde kullanılan
+
+601
+01:08:04,436 --> 01:08:06,436
+Teh, iyi günler.
+
+602
+01:08:10,356 --> 01:08:12,576
+ekranla ilgili problem yaşıyorum.
+
+603
+01:08:20,115 --> 01:08:20,715
+Neyse.
+
+604
+01:08:21,515 --> 01:08:22,735
+Şimdi geldi.
+
+605
+01:08:25,056 --> 01:08:25,775
+Örnek.
+
+606
+01:08:27,135 --> 01:08:27,735
+İstanbul.
+
+607
+01:08:27,995 --> 01:08:30,515
+İstanbul'un metro haritasına açık bakıyorsunuz.
+
+608
+01:08:31,015 --> 01:08:32,515
+Ve şöyle bir yapı görüyorsunuz.
+
+609
+01:08:32,775 --> 01:08:33,855
+İşte kabaca.
+
+610
+01:08:34,175 --> 01:08:36,755
+Şöyle Avrupa yakası.
+
+611
+01:08:37,615 --> 01:08:38,815
+İşte böyle Anadolu yakası.
+
+612
+01:08:38,995 --> 01:08:40,615
+Hatta şurada şey de var.
+
+613
+01:08:40,675 --> 01:08:41,536
+Haliç var şöyle.
+
+614
+01:08:43,175 --> 01:08:43,435
+Değil mi?
+
+615
+01:08:43,435 --> 01:08:44,515
+Burada köprüler.
+
+616
+01:08:44,716 --> 01:08:46,376
+Mesela burada bir hat başlıyor.
+
+617
+01:08:47,015 --> 01:08:47,715
+Böyle geliyor.
+
+618
+01:08:50,115 --> 01:08:52,696
+Şöyle buraya doğru böyle devam ediyor.
+
+619
+01:08:53,215 --> 01:08:54,415
+Burada başka bir hat var.
+
+620
+01:08:54,696 --> 01:08:55,375
+Böyle gelmiş.
+
+621
+01:08:56,215 --> 01:08:58,175
+Bunlar böyle noktalar ve birbirine bağlı.
+
+622
+01:09:00,035 --> 01:09:02,035
+Sonra işte bir marmaray hattı var.
+
+623
+01:09:02,156 --> 01:09:03,456
+Mesela buradan böyle gelmiş.
+
+624
+01:09:04,375 --> 01:09:06,355
+Buraya böyle deniz altından bağlanmış.
+
+625
+01:09:07,075 --> 01:09:11,115
+Burada işte Kadıköy ne bileyim ya da üstü kadar bir aktarma noktası.
+
+626
+01:09:11,796 --> 01:09:13,656
+Orada başka düğümler var.
+
+627
+01:09:13,656 --> 01:09:18,656
+Yani aslında her bir durak, istasyon bir şey.
+
+628
+01:09:18,655 --> 01:09:21,075
+vertex yani bir kenar
+
+629
+01:09:21,075 --> 01:09:22,375
+ondan sonra
+
+630
+01:09:22,375 --> 01:09:24,495
+aralarındaki bağlantı
+
+631
+01:09:24,495 --> 01:09:27,135
+düğüm aralarındaki bağlantılar
+
+632
+01:09:27,135 --> 01:09:28,875
+yani raylarla gidilen yollarda
+
+633
+01:09:28,875 --> 01:09:30,495
+birer kenar olacak şekilde
+
+634
+01:09:30,495 --> 01:09:33,095
+kesişen istasyonlarda
+
+635
+01:09:33,095 --> 01:09:34,215
+aktarma noktada o şekilde
+
+636
+01:09:34,215 --> 01:09:36,655
+İstanbul raylı sistemleri
+
+637
+01:09:36,655 --> 01:09:38,836
+ya da Amerikan eyaletleri çok
+
+638
+01:09:38,836 --> 01:09:40,715
+hani standart bir graf olduğu için
+
+639
+01:09:40,715 --> 01:09:42,535
+hep kullanılır sınır
+
+640
+01:09:42,535 --> 01:09:44,555
+komşulukları ya da bizim ülkemizdeki
+
+641
+01:09:44,555 --> 01:09:46,476
+illerimizin sınır komşulukları işte
+
+642
+01:09:46,476 --> 01:09:48,615
+mesela Trakya'yı çizelim
+
+643
+01:09:48,656 --> 01:09:54,435
+Kabaca şöyle işte yapı çizmeye çalışayım.
+
+644
+01:09:54,636 --> 01:09:56,376
+Şöyle kabaca biraz değişik oldu.
+
+645
+01:09:56,696 --> 01:09:57,535
+Neyse idare edin.
+
+646
+01:09:57,956 --> 01:09:58,636
+Şimdi şurası ne?
+
+647
+01:09:58,715 --> 01:09:59,656
+Edirne değil mi?
+
+648
+01:10:00,376 --> 01:10:02,296
+Ondan sonra şurada Tekirdağ var.
+
+649
+01:10:02,476 --> 01:10:03,575
+Şurada Kırklareli var.
+
+650
+01:10:03,776 --> 01:10:05,215
+Ondan sonra şurada da İstanbul var.
+
+651
+01:10:05,215 --> 01:10:11,276
+Şimdi ben aslında buradaki illerin merkezlerini, Edirne'nin merkezini şuraya şöyle bir düğüm olarak çizsem.
+
+652
+01:10:11,755 --> 01:10:13,715
+Kırklareli'nin merkezini buraya çizsem.
+
+653
+01:10:14,196 --> 01:10:16,156
+Tekirdağ'ın merkezini buraya çizsem.
+
+654
+01:10:16,615 --> 01:10:19,255
+Ve İstanbul'un merkezini de şuraya çizsem.
+
+655
+01:10:19,875 --> 01:10:20,156
+Ne oldu?
+
+656
+01:10:20,296 --> 01:10:20,715
+Dört tane.
+
+657
+01:10:20,875 --> 01:10:21,855
+Çanakkale'yi unuttuk.
+
+658
+01:10:22,035 --> 01:10:22,976
+Şurada da Çanakkale var.
+
+659
+01:10:24,016 --> 01:10:24,215
+Değil mi?
+
+660
+01:10:24,715 --> 01:10:26,035
+Çanakkale'yi de buraya çizsem.
+
+661
+01:10:26,135 --> 01:10:27,656
+Şimdi bunların sınır komşulukları.
+
+662
+01:10:27,735 --> 01:10:30,895
+Mesela Çanakkale ile Edirne sınır komşusu.
+
+663
+01:10:31,375 --> 01:10:34,315
+Çanakkale ile Tekirdağ'ın sınır komşuluğu yok.
+
+664
+01:10:34,435 --> 01:10:35,496
+Çünkü arada Keşan var.
+
+665
+01:10:35,575 --> 01:10:36,535
+Keşan Edirne'ye bağlı.
+
+666
+01:10:37,115 --> 01:10:39,375
+Edirne Kırklareli ile sınır komşusu.
+
+667
+01:10:40,776 --> 01:10:42,996
+Kırklareli Tekirdağ ile sınır komşusu.
+
+668
+01:10:42,995 --> 01:10:43,795
+böyle.
+
+669
+01:10:48,015 --> 01:10:50,475
+Tekirdağ'da Edirne'yle sınır komşusu.
+
+670
+01:10:53,275 --> 01:10:55,695
+Kırklareli İstanbul'la sınır komşusu.
+
+671
+01:10:55,835 --> 01:10:57,595
+Tekirdağ İstanbul'la sınır komşusu.
+
+672
+01:10:58,255 --> 01:10:59,895
+Alın size bir tane
+
+673
+01:10:59,895 --> 01:11:01,095
+şey grafı.
+
+674
+01:11:01,515 --> 01:11:03,395
+Sınır komşulukları grafı.
+
+675
+01:11:03,855 --> 01:11:05,695
+Yani ben İstanbul'dan
+
+676
+01:11:05,695 --> 01:11:07,235
+çıkarak, şurası İstanbul,
+
+677
+01:11:07,935 --> 01:11:09,255
+şurası Kırklareli,
+
+678
+01:11:10,255 --> 01:11:10,955
+şurası Edirne,
+
+679
+01:11:10,955 --> 01:11:13,015
+Burası Tekirdağ
+
+680
+01:11:13,015 --> 01:11:14,196
+Burası da Çanakkale
+
+681
+01:11:14,196 --> 01:11:16,815
+Acaba İstanbul'dan çıkarak
+
+682
+01:11:16,815 --> 01:11:18,976
+Çanakkale'ye gidebiliyor muyum?
+
+683
+01:11:19,476 --> 01:11:20,575
+Gidebiliyorum. Nasıl giderim?
+
+684
+01:11:20,655 --> 01:11:22,635
+Mesela İstanbul'dan çıkarım Kırklareli'ne giderim
+
+685
+01:11:22,635 --> 01:11:24,075
+Kırklareli'nden çıkar Edirne'ye
+
+686
+01:11:24,075 --> 01:11:25,495
+Edirne'den çıkar Çanakkale'ye
+
+687
+01:11:25,495 --> 01:11:28,056
+Böyle dolaşarak gidebilirim
+
+688
+01:11:28,056 --> 01:11:30,595
+Ya da İstanbul'dan Tekirdağ, Tekirdağ'dan Edirne'ye
+
+689
+01:11:30,595 --> 01:11:31,196
+Çanakkale
+
+690
+01:11:31,196 --> 01:11:33,115
+Burada neye göre karar vereceğim?
+
+691
+01:11:33,336 --> 01:11:35,476
+Buradaki kenarların aslında bir şekilde
+
+692
+01:11:35,476 --> 01:11:37,795
+Değerleri olacak. Mesela bunlar
+
+693
+01:11:37,795 --> 01:11:38,995
+Kilometreler olabilir
+
+694
+01:11:38,995 --> 01:11:41,235
+İstanbul'la Kırklareli arası
+
+695
+01:11:41,235 --> 01:11:42,335
+işte 150 km.
+
+696
+01:11:43,535 --> 01:11:44,955
+Kırklareli ile Edirne
+
+697
+01:11:44,955 --> 01:11:46,455
+arası 100 km.
+
+698
+01:11:47,715 --> 01:11:48,915
+Edirne ile Çanakkale
+
+699
+01:11:48,915 --> 01:11:50,415
+arası 20 km.
+
+700
+01:11:51,955 --> 01:11:52,875
+Tekirdağ ile
+
+701
+01:11:52,875 --> 01:11:54,575
+Edirne arası 50 km.
+
+702
+01:11:55,815 --> 01:11:57,035
+İstanbul ile Tekirdağ
+
+703
+01:11:57,035 --> 01:11:58,915
+arası da ne olsun 70 km.
+
+704
+01:12:00,135 --> 01:12:00,715
+Tamam.
+
+705
+01:12:01,716 --> 01:12:17,355
+Bunlar da kenarlarımızın değerleri, ağırlıkları oluverdiği. Ben böyle bir sınır komşuluğu grafı üzerinde mesela acaba İstanbul'dan en kısa olarak Çanakkale'ye nasıl gidebilirim diye bir soru sorabilir ve bunun cevabını graf algoritmalarıyla çözüp bulabilirim.
+
+706
+01:12:17,355 --> 01:12:28,175
+Bu yoldan gitsem 150, 250, 270 kilometre yol yapacağım. O yol da kötüdür. Çatalca'nın içinden gider. Neyse, kötüdür dediğim çoğu tek şerittir.
+
+707
+01:12:28,175 --> 01:12:39,896
+İstanbul'dan Tekirdağ otobanla giderim. Tekirdağ'dan Edirne zaten sahil yolu, çiftçilerit, duble yol. Burası da duble yol ve 70, 50 daha, 120, 140 kilometre yol.
+
+708
+01:12:41,775 --> 01:12:46,155
+40'da 50'da Tekirdağ'ın arasını yazmadık. O da galiba bir 80-90 kilometre var.
+
+709
+01:12:46,735 --> 01:12:50,375
+Burada şöyle 80 yazayım. Acaba böyle mi gitsem, şöyle mi gitsem, böyle mi gitsem.
+
+710
+01:12:50,455 --> 01:12:57,975
+En sonunda ben İstanbul'dan çıkıp Çanakkale'ye gideceksem bu komşuluktaki graf üzerinden verilen sınır komşulukluğu graf üzerinde
+
+711
+01:12:57,975 --> 01:13:05,175
+bir algoritma çalıştırdığımda en uz yuz yolun ya da en kısa yolun 140 km'lik bir yol olduğunu bulabiliyorum.
+
+712
+01:13:05,175 --> 01:13:09,995
+Başka protein protein etkileşim ağları, bioinformatikte çok kullanılıyor.
+
+713
+01:13:10,915 --> 01:13:16,436
+Bu aminoasitler ve onları birbirleriyle nasıl etkileştiklerini gösteren bir graft,
+
+714
+01:13:16,576 --> 01:13:23,835
+her bir aminoasit bir düğüm ve onların aralarındaki bağlantılar, protein oluşturduğlarında da graft haline gelmeleri gibi.
+
+715
+01:13:23,835 --> 01:13:28,035
+ya da bir tıklama bağlantıları.
+
+716
+01:13:28,195 --> 01:13:29,375
+Mesela bilim konuları var.
+
+717
+01:13:30,095 --> 01:13:38,255
+İşte bilgisayar bilimleri bir yerde, matematik bir yerde, biyokimya bir yerde, ne bileyim kimya bir yerde, biyoloji bir yerde, bioinformatik bir yerde.
+
+718
+01:13:38,255 --> 01:13:43,675
+Belli konular aslında merkez ve birçok diğer konuyla alakalı.
+
+719
+01:13:43,775 --> 01:13:50,255
+Bunların alakaları buna tıkladığınızda öbür konuya, öbür konuya tıkladığınızda öbür konuya eleşebiliyorsunuz gibi bir graph oluşturulabilir.
+
+720
+01:13:50,256 --> 01:13:58,175
+oluşturulabilir. Ya da işte Facebook arkadaşlarınızın oluşturduğu bağlantılar. Yani siz bir düğümsünüz.
+
+721
+01:14:00,995 --> 01:14:10,495
+Şöyle. Ve sizin arkadaşlarınız da var. İki tane arkadaşınız var. Ve siz onlarla bağlısınız. Tamam.
+
+722
+01:14:11,555 --> 01:14:18,296
+Aynı zamanda işte bu kişinin de üç tane arkadaşı var. Ve onlar da bu, bu ve bu.
+
+723
+01:14:18,296 --> 01:14:30,195
+işte bunun iki tane arkadaşı var hem bu hem bu ya da işte bir de sizin de arkadaş oldu şöyle geliyor gibi gibi bunu çoğaltabilirsiniz.
+
+724
+01:14:30,436 --> 01:14:39,256
+Sonrasında işte kim kim ne arkadaş falan gibi ya da kim kime ne kadar yakın gibi bazı problemleri burada çözebilirsiniz.
+
+725
+01:14:40,156 --> 01:14:43,516
+Grafların günlük hayatta çok fazla kullanım alanı var.
+
+726
+01:14:44,355 --> 01:14:47,236
+İşte mesela örneğini verdim haritalarda çok kullanılıyor.
+
+727
+01:14:47,235 --> 01:15:00,815
+Şimdi iki tane kampüt var. Bir tanesi Beşiktaş'ta, biri Davutpaşa'da. Acaba ben Davutpaşa ile Beşiktaş arasında en az mesafeyi giderek hangi yolu izlemeliyim? En az mesafeyi kat edecek şekilde. Kilometresi en düşük oldu.
+
+728
+01:15:01,395 --> 01:15:11,255
+Short is bad dediğimiz bir problem aslında bunu çözmemiz gerek. Ya da Beşiktaş-Davutpaşa arasında yolların kapasitelerini ve trafiği göz önüne alarak acaba en hızlı yol hangisidir?
+
+729
+01:15:11,255 --> 01:15:13,495
+Bu da max to low problemi mesela.
+
+730
+01:15:14,576 --> 01:15:22,475
+En hızlı akışı sağlayan congestionlardan kaçarak gidebileceğim en hızlı yolu veren başka bir problem.
+
+731
+01:15:22,655 --> 01:15:28,835
+Aynı graf üzerinde ama farklı bir problemi çözen farklı bir algoritma kullanmam gerekebilir.
+
+732
+01:15:29,395 --> 01:15:45,115
+arama motorları web içeriğinde bir sayfadan bir sayfaya linklerle biliyorsunuz bağlıyız. Yani her bir sayfa, her bir resource, bir düğüm. Bunların arasında bir link tıklayarak anchorla gitme tanımlanmış durumdaysa onlar da birer kenar oluşturuyor.
+
+733
+01:15:45,115 --> 01:16:09,256
+ve bu sayede işte hani mesela siz bir sorgu yazdığınızda sorgun içindeki anahtar kelimeler acaba hangi düğümlerde var ya da o anahtar kelimelerden yola çıkarak hangi başka komşu düğümlere erişebiliyorum ilişkili olabilecek bunları kullanarak araba motorları ve arama algoritmaları, araba motoru optimizasyon algoritmaları gerçekleştiriliyor.
+
+734
+01:16:09,256 --> 01:16:15,375
+Elektronik devrelerde de graflar sıklıkla kullanılıyor.
+
+735
+01:16:15,596 --> 01:16:17,776
+İşte en basitinden elimizde bir devre var.
+
+736
+01:16:18,675 --> 01:16:20,776
+Acaba bu devrenin içinde kısa devre var mı?
+
+737
+01:16:20,956 --> 01:16:23,916
+Yani bir shortcut oluyor mu? Short circuit olmuyor mu?
+
+738
+01:16:23,916 --> 01:16:26,276
+Bunun analizini yapmak için graflar kullanılıyor.
+
+739
+01:16:26,355 --> 01:16:28,315
+Her bir devre elemanı bir düğüm.
+
+740
+01:16:28,736 --> 01:16:39,196
+Aralarındaki telli ya da lehimli fiziksel bağlantıları da kenarlar olacak şekilde modelleyerek bunu rahatlıkla tespit edebiliyorsunuz.
+
+741
+01:16:39,256 --> 01:16:42,516
+ya da diyelim ki siz bunu bir PCB haline getireceksiniz.
+
+742
+01:16:43,135 --> 01:16:44,836
+Printed Circuit Board yapacaksınız.
+
+743
+01:16:45,016 --> 01:16:46,836
+Acaba kaç katmana ihtiyacınız var?
+
+744
+01:16:46,836 --> 01:16:48,735
+Yani bunları çaprazlamam gerekiyor mu?
+
+745
+01:16:48,936 --> 01:16:54,215
+Yoksa çaprazlamadan iki boyutlu düzlemde bu şeyi gerçekleştirebilir miyim?
+
+746
+01:16:54,296 --> 01:16:55,355
+Bağlantı ağını.
+
+747
+01:16:55,776 --> 01:16:58,595
+Yoksa illa ki ekstra bir katmana ihtiyaç duyar mıyım?
+
+748
+01:16:58,995 --> 01:17:03,035
+Bu gibi soruların cevabını bulmak için de yine grafları kullanabilirsiniz.
+
+749
+01:17:03,035 --> 01:17:29,035
+Zaman planlaması yaparken ya da tarife, uçuş tarifesi, uçakta nedir, otobüs tarifesi gibi ya da öğretmen ders kurs atamaları gibi birbiriyle bağlı olan işlerin sırası belirli verilen kısıtlar altında mesela en kısa sürede nasıl tamamlanır gibi bir soruyu çözmek için zaman planlaması, tarife planlaması yapmak için de graflar kullanılır.
+
+750
+01:17:29,035 --> 01:17:36,955
+birbirine bağlantılı işler yine şey düğümler olacak şekilde modellenerek graf algoritmalarıyla çözülebilir.
+
+751
+01:17:37,895 --> 01:17:42,235
+Başka işte ticarette ya da e-ticarette kullanılabilir.
+
+752
+01:17:42,715 --> 01:17:46,256
+Birliktelik analizlerinde sıklıkla yine graf algoritmaları kullanılır.
+
+753
+01:17:46,976 --> 01:17:52,235
+Alıcı satıcı ürün ağlarının oluşturulması ilişkilerin ortaya çıkartılmasında yine kullanılabilir.
+
+754
+01:17:53,256 --> 01:17:56,635
+Eşleştirme problemlerinde graf sıklıkla kullanılır.
+
+755
+01:17:56,635 --> 01:18:06,275
+mesela öğrenciler var ya da stajlar var. Bunları eşleştirmemiz gerekiyor. Yani her öğrenci için en uygun stajın bulunması gibi ya da en uygun kulübün bulunması gibi.
+
+756
+01:18:06,275 --> 01:18:16,215
+En önemli kısıtlar altında bu eşleştirmelerin yapılması için de grafları kullanabiliriz. Bilgisayar ağları zaten A dediğimizde de her bir node düğüm zaten.
+
+757
+01:18:17,455 --> 01:18:26,315
+Ondan sonra bunlar birbirine bir şekilde bir network ile bağlı fiziksel olarak. Kablolu kablosu fark etmez ama sonuçta bir sinyal haberleşmesi var.
+
+758
+01:18:26,635 --> 01:18:44,575
+aralarında. İşte mesela bir kaynaktaki paketler bir hedefe hangi yoldan nasıl gitsinler ki en hızlı ulaşsınlar. Aynı haritadaki Beşiktaş, Davutpaşa problemi gibi bilgisayar ağlarında da direkt olarak graf algoritmalarıyla routing algoritmaları çözülüyor.
+
+759
+01:18:46,335 --> 01:18:56,515
+Yine farkında değiliz ama derleyicilerimizin içinde de graflar var ve graf algoritmalarını kullanarak derleme işlemlerini sıklıkla gerçekleştirip kullanıyorlar.
+
+760
+01:18:56,635 --> 01:19:04,255
+graf algoritmalarını sıklıkla. Diyelim ki sizin işte kodunuz var, kodunuzun modülleri var, fonksiyonlarınız var mesela.
+
+761
+01:19:04,255 --> 01:19:13,135
+Bunların arasında statik çağrılar olabilir, hani direkt böyle görünen ya da nesne yönelik olarak dinamik duruma göre çağrılar oluşabilir.
+
+762
+01:19:13,595 --> 01:19:19,795
+O zaman bunlar için acaba statik dinamik çağrılar ve bunlar için gerekli kaynak ayırımları nasıl modellenmelidir?
+
+763
+01:19:19,795 --> 01:19:21,415
+mesela bellek alokasyonları.
+
+764
+01:19:21,895 --> 01:19:28,675
+Bununla alakalı da yine derleyiciler graf algoritmalarını kullanarak, grafları kullanarak bu modellemeyi yaparlar.
+
+765
+01:19:29,203 --> 01:19:35,203
+network sosyal ağlar, social networks dan bahsettim aslında facebook arkadaşlarında.
+
+766
+01:19:35,203 --> 01:19:47,203
+işte bir sosyal ağdaki anomalinin tespiti yani olağan dışı bir bağlantının tespit edilmesi ya da işte bir konu var bir hashtag.
+
+767
+01:19:47,203 --> 01:19:54,203
+acaba bu nereden çıktı? yani bunu kim başlattı? bu kanaatin önderi kimdir?
+
+768
+01:19:54,203 --> 01:20:10,424
+influencerı kimdir gibi analizlerin yapılması ya da işte bir birlikte hareket eden bot ya da troll dediğimiz bir hesap avının bulunması ve o sosyal ağ içinde işaretlenmesi.
+
+769
+01:20:10,424 --> 01:20:21,403
+Bakın bunlar böyle böyle böyle bir sap komponent oluşturuyor ve bunlar bot avını oluşturuyor şeklindeki analizlerin ve sonuçların elde edilmesi de yine grafları kullanarak,
+
+770
+01:20:21,403 --> 01:20:25,103
+graf algoritmalarıyla çözdüğümüz problemler.
+
+771
+01:20:25,623 --> 01:20:28,303
+Lafı uzatıyor gibiyim ama niye bunu yapıyorum?
+
+772
+01:20:28,423 --> 01:20:33,564
+Çünkü graflar bilgisayar bilimlerinde o kadar yaygın kullanıma sahip ki
+
+773
+01:20:33,564 --> 01:20:42,783
+ve neredeyse pek çok problemin, pek çok gündelik hayat probleminin içinde çözülmesi için mutlaka kullanılması gereken veri yapıları.
+
+774
+01:20:42,784 --> 01:20:52,224
+Bu yüzden örneklerle birlikte çok fazla alanda, çok alakasız bile görülen alanlarda aslında temelde graf kullandığımızı söylemek istedim.
+
+775
+01:20:53,184 --> 01:20:57,663
+Peki şimdi grafların tabii matematik olduğuna göre kendine has bir dili var.
+
+776
+01:20:58,104 --> 01:21:04,284
+Bir ikisini zaten gördük. Bir tanesi vertisti düğüm, diğeri de edge'di, bu da kenar.
+
+777
+01:21:05,284 --> 01:21:12,224
+Vertis nedir? Grafı oluşturan birimler de hatırlarsak, işte şuradaki noktalarımı yani düğümlerimi böyle işaretliyorum.
+
+778
+01:21:12,223 --> 01:21:22,983
+Bunları genellikle 0'dan V-1'e olacak şekilde V tane düğümümüz varsa 0'dan başlayıp V-1'e işte burada mesela 13 düğümlü bir grafımız var.
+
+779
+01:21:23,363 --> 01:21:26,643
+0'dan başlamışız 12'ye kadar bunları numaralandırmışız.
+
+780
+01:21:26,743 --> 01:21:29,623
+Bu şekilde göstermeyi kullanmayı tercih ediyoruz.
+
+781
+01:21:29,783 --> 01:21:35,303
+Algoritmalarda da hani bize bir şekilde bunları takip etmek için kolaylık sağlıyor.
+
+782
+01:21:36,443 --> 01:21:40,843
+Kenarlarımızda bu düğümleri birbiriyle kenetleyen bir araya getiren bağlantılar.
+
+783
+01:21:40,843 --> 01:21:46,623
+İşte burada mesela sıfırla bir bağlı, sıfırla iki bağlı, sıfırla altı bağlı, sıfırla beş bağlı.
+
+784
+01:21:47,144 --> 01:21:48,623
+Sıfırdan dört tane çıkıyor yani.
+
+785
+01:21:48,784 --> 01:21:50,064
+Aslında öyle de düşünebilirsiniz.
+
+786
+01:21:50,224 --> 01:21:51,023
+Derecesi dört.
+
+787
+01:21:51,724 --> 01:21:53,364
+Derecelerine falan birazdan bakacağız.
+
+788
+01:21:55,564 --> 01:21:56,123
+Peki.
+
+789
+01:21:56,364 --> 01:21:58,524
+Bunun notasyonu da şu şekilde gösteriyoruz.
+
+790
+01:21:59,183 --> 01:22:07,163
+Sıfırla V-1 arasında adreslerken kenarları da şu şekilde ifade ediyoruz.
+
+791
+01:22:07,284 --> 01:22:08,543
+Mesela V-W.
+
+792
+01:22:08,743 --> 01:22:09,203
+Bu ne demek?
+
+793
+01:22:09,203 --> 01:22:12,903
+V düğümü ile W düğümü arasında bir kenar var.
+
+794
+01:22:13,043 --> 01:22:16,584
+Yani bunlar aslında birbiriyle bağlantılı demek.
+
+795
+01:22:17,183 --> 01:22:24,924
+Yani ben şöyle bir grafı mesela en basitinden bir yerde tutacaksam, depolayacaksam ne yapmam lazım?
+
+796
+01:22:25,463 --> 01:22:27,663
+Mesela toplamda kaç tane düğüm var?
+
+797
+01:22:28,444 --> 01:22:28,763
+13.
+
+798
+01:22:30,144 --> 01:22:31,343
+Bunu yazmam lazım.
+
+799
+01:22:31,343 --> 01:22:37,004
+Sonra 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13.
+
+800
+01:22:37,103 --> 01:22:38,623
+Şansa bak 13 tane de kenar var.
+
+801
+01:22:39,203 --> 01:22:46,483
+13 tane düğüm var, 13 tane kenar var diye bir yerde tutmam lazım. Toplam düğüm ve kenar sayımı bilmeliyim.
+
+802
+01:22:47,064 --> 01:23:02,603
+Onunla beraber ne yapmam lazım? Mesela 0, 1. Sonra 0 ile 2. 0 ile 6. 0 ile 5. 0 ile 6. Böyle tekst dosyasına yazdım.
+
+803
+01:23:02,603 --> 01:23:21,643
+artık ben şunu görüyorum bu grafta 13 tane kenar var 13 tane düğüm var 0 ile 12 arasında düğümleri görmem gerekiyor ve toplamda 13 tane satırdan oluşması gerekiyor geri kalanın yani 0 1, 0 2, 0 5, 0 6 bu ne demek 0 1'e bağlıdır 0 2'ye bağlıdır 0 5'e bağlıdır
+
+804
+01:23:21,904 --> 01:23:34,143
+4, 6'ya bağlıdır, 3, 5'e bağlıdır, 3, 4'e bağlıdır, 7, 8'e bağlıdır şeklinde. Bu benim grafımı bir şekilde bir yerde tutmam ve saklamam için kullandığım temel gösteri.
+
+805
+01:23:37,143 --> 01:23:47,084
+Bu graflarda önemli olan şey ne? Birimlerimizin yani düğümlerimizin kenarlarla birbiriyle bağlantılı yapılar oluşturması.
+
+806
+01:23:47,084 --> 01:24:08,344
+O yüzden de ister ben bunu bu şekilde çizerim. İster burada gördüğünüz şekilde çizerim. İkisi de 1'e 1 aynı gösterim. Bakın 0 burada da 1'e 2'ye 5'e ve 6'ya bağlıydı. Burada da 1'e 2'ye 5'e ve 6'ya bağlı.
+
+807
+01:24:08,343 --> 01:24:35,344
+9, 10, 11, 12 şurada şöyleydi onun aynısını alıp mesela şunun içine yazmışım şuradaki boşluğa taşımışım ama bağlı değiller 7, 8 şurada şöyle kenardaydı dikine böyle yana almışım yani şey önemli değil düzlem üzerinde grafı nasıl gösterdiğinizin aslında hiçbir önemi yok bu ikisi de birebir denk graf var yani bununla bu bildiğine eşit görüyorsunuz
+
+808
+01:24:35,343 --> 01:24:41,483
+aynı sayıda düğüm var, aynı sayıda kenar var ve aynı sayıda aynı bağlantılara sahipler.
+
+809
+01:24:41,483 --> 01:24:45,203
+Bu nedenle de bunlar aslında aynı graflardır.
+
+810
+01:24:45,403 --> 01:24:47,323
+Sadece iki farklı çizime sahiplerdir.
+
+811
+01:24:48,723 --> 01:24:54,063
+Graflarda bir düğüm kendine bir kenar içerebilir.
+
+812
+01:24:54,283 --> 01:25:01,003
+Eğer kendine bir bağlantı içeriyorsa buna self-look yani kendine bağlantı adını veriyoruz.
+
+813
+01:25:01,003 --> 01:25:20,084
+ve yine iki tane düğüm arasında birden fazla kenar varsa ya da daha bir matematik ifadeyle aynı düğüm çiftini birbirine bağlayan kenarlar varsa buna paralel kenarlar adı verilir ve buradaki grafa da multigraf adı verilir.
+
+814
+01:25:20,243 --> 01:25:24,523
+Multigraf diye bir şey duyarsanız anlayın ki paralel kenarlara sahip bir graftan bahsediyoruz.
+
+815
+01:25:25,124 --> 01:25:30,064
+Sıfırlığın düğüm ile birinci düğüm arasında tek bir kenar yok birden fazla kenar var.
+
+816
+01:25:31,003 --> 01:25:43,843
+tabi bunlar ağırlıksız olduğunda çok bir anlam ifade etmiyor ama ağırlıklandırıldığında belki işte mesela hani Anadolu yakası, Avrupa yakası birinci köprü, ikinci köprü, üçüncü köprü yolu gibi düşünebilirsiniz mesela.
+
+817
+01:25:44,563 --> 01:25:48,483
+Teme, en basit gibi. O yüzden bunlar multigraf olarak da biliniyorlar.
+
+818
+01:25:48,483 --> 01:26:00,363
+Eğer bir grafta kendine bağlantı yoksa ve paralel kenar da yoksa yani bu da bu da doğruysa o zaman biz buna simple graft adını veririz.
+
+819
+01:26:00,363 --> 01:26:06,843
+basit graf bu kadar ki bu ders kapsamında da aslında en çok kullanacağımız graflar hep simple graflar olacak.
+
+820
+01:26:07,623 --> 01:26:20,463
+Simple graf kendine döngü kapalı kenar içermeyen, çevrim içermeyen ve paralel kenarda içermeyen graflara verilen özel bir isimlendir.
+
+821
+01:26:22,283 --> 01:26:29,763
+Devam edelim. Pet kavramı var. Pet yol demek, patika demek zaten biliyorsunuz Türkçede de.
+
+822
+01:26:29,764 --> 01:26:44,704
+kenarlarla birden fazla kenarla bağlanmış bir ya da birden fazla kenarla bağlanmış olan düğümlerin oluşturduğu silsile dizilim zincire pet adı veriliyor.
+
+823
+01:26:44,704 --> 01:26:48,963
+Eğer bu bir simple pet ise o zaman tekrarlayan düğüm yoktur.
+
+824
+01:26:49,103 --> 01:26:49,883
+Yani tekrarlamıyor.
+
+825
+01:26:49,963 --> 01:26:50,484
+Hepsi farklı.
+
+826
+01:26:50,624 --> 01:26:56,043
+Teki düğümlerden oluşan bir patikanız varsa yolunuz buna simple pet adını veriyor.
+
+827
+01:26:56,183 --> 01:26:57,004
+Şimdi buraya bakalım.
+
+828
+01:26:57,003 --> 01:27:04,343
+mesela ben şuradaki düğümden başlayacağım ve şuradaki düğüme gitmek isteyeceğim.
+
+829
+01:27:05,183 --> 01:27:07,623
+Diyorum ki ben buradan böyle gideceğim.
+
+830
+01:27:09,108 --> 01:27:10,968
+Sonra buradan bu düğme gideceğim.
+
+831
+01:27:11,387 --> 01:27:12,187
+Sonra bu düğme.
+
+832
+01:27:12,608 --> 01:27:13,887
+Sonra da bu düğme erişeceğim.
+
+833
+01:27:14,048 --> 01:27:14,387
+Ne oldu?
+
+834
+01:27:15,028 --> 01:27:16,267
+Bir kenar geçtim.
+
+835
+01:27:16,687 --> 01:27:17,868
+İki kenar geçtim.
+
+836
+01:27:18,167 --> 01:27:19,247
+Üç kenar geçtim.
+
+837
+01:27:19,568 --> 01:27:20,507
+Dört kenar geçtim.
+
+838
+01:27:20,927 --> 01:27:23,887
+O zaman bu patikanın bu yolun uzunluğu dörttür.
+
+839
+01:27:24,847 --> 01:27:25,567
+Başka bir yol.
+
+840
+01:27:26,028 --> 01:27:26,448
+Ne bileyim.
+
+841
+01:27:27,087 --> 01:27:29,967
+Aynı iki düğüm arasında bambaşka bir yol çizebilirdim.
+
+842
+01:27:29,967 --> 01:27:30,288
+Bir.
+
+843
+01:27:31,227 --> 01:27:32,047
+İki.
+
+844
+01:27:32,547 --> 01:27:33,587
+Kendime bir daha geldim.
+
+845
+01:27:33,747 --> 01:27:34,108
+Üç.
+
+846
+01:27:34,687 --> 01:27:35,028
+Dört.
+
+847
+01:27:35,227 --> 01:27:35,687
+Beş.
+
+848
+01:27:35,948 --> 01:27:36,427
+Altı.
+
+849
+01:27:36,427 --> 01:27:39,407
+6'lık bir pratika çizdim ama kendime bir daha döndüm.
+
+850
+01:27:39,788 --> 01:27:48,267
+Ya da 1, 2, 3, 4, 5, 6, 7, 8, 9.
+
+851
+01:27:49,027 --> 01:27:52,008
+Bambaşka bir yoldan da aynı şekilde aynı düğme eriştim.
+
+852
+01:27:52,008 --> 01:27:53,847
+Ama bambaşka bir yol.
+
+853
+01:27:54,008 --> 01:27:57,188
+9 uzunluğunda yeni bir yol tanımlamış oldum.
+
+854
+01:27:57,688 --> 01:27:58,747
+Bunlara yol adı veriyor.
+
+855
+01:27:58,907 --> 01:28:02,027
+Bir kaynaktan bir hedefe giden toplam kenarlar.
+
+856
+01:28:02,447 --> 01:28:05,288
+Ya da kenarlarla bağlanmış düğümler zinciri.
+
+857
+01:28:06,047 --> 01:28:18,108
+Eğer ilk ve son düğümünüz aynıysa yolunuzda, diyelim ki şuradan başladınız ve dediniz ki ben böyle gideceğim, bu düğme gideceğim, bu düğme gideceğim, bu düğme gideceğim, bu düğme döneceğim.
+
+858
+01:28:19,807 --> 01:28:22,008
+Başlangıç ve bitiş düğümleri aynı oldu.
+
+859
+01:28:22,008 --> 01:28:33,227
+O zaman da buna cycle yani çevrim ya da kapalı yol adını veriyoruz.
+
+860
+01:28:33,227 --> 01:28:44,407
+Eğer yine tekrarlayan düğüm ya da kenar yoksa çevriminizde bu çevriminize simple cycle, basit çevrim, temel çevrim adını da veririz.
+
+861
+01:28:44,467 --> 01:28:49,267
+Tabii ki başlangıçla sonun aynı olması lazım ki cycle olsun onu unutmayın.
+
+862
+01:28:49,927 --> 01:28:54,107
+Başlangıç son düğüm haricinde tekrarlayan düğüm ya da kenar yoksa diyoruz.
+
+863
+01:28:54,108 --> 01:28:57,567
+uzunlukları da
+
+864
+01:28:57,567 --> 01:28:58,548
+lenght dediğimiz
+
+865
+01:28:58,548 --> 01:29:01,728
+düğümün ya da çevrimin
+
+866
+01:29:01,728 --> 01:29:03,347
+pardon yolun ya da çevrimin
+
+867
+01:29:03,347 --> 01:29:07,847
+toplam geçtiğimiz
+
+868
+01:29:07,847 --> 01:29:09,427
+kenar sayısı
+
+869
+01:29:09,427 --> 01:29:11,727
+içerideki kenar sayısına da uzunluk
+
+870
+01:29:11,727 --> 01:29:13,527
+ya da lenght adını veriyoruz.
+
+871
+01:29:15,048 --> 01:29:15,247
+Şimdi
+
+872
+01:29:15,247 --> 01:29:16,667
+grafımızda
+
+873
+01:29:16,667 --> 01:29:19,587
+verilen iki düğüm arasında
+
+874
+01:29:19,587 --> 01:29:21,548
+bir yol varsa o zaman
+
+875
+01:29:21,548 --> 01:29:23,608
+bu iki düğüm birbirine bağlanır. Örneğin
+
+876
+01:29:23,608 --> 01:29:25,908
+şu düğüm ile bu düğüm
+
+877
+01:29:25,908 --> 01:29:27,848
+aralarında bir yol var.
+
+878
+01:29:28,068 --> 01:29:28,828
+Hatta iki yol var.
+
+879
+01:29:30,128 --> 01:29:32,128
+Bunlar birbirine bağlıdır.
+
+880
+01:29:32,227 --> 01:29:32,787
+Connected.
+
+881
+01:29:33,507 --> 01:29:35,807
+Ama bu iki düğüm
+
+882
+01:29:35,807 --> 01:29:37,548
+arasında bir yol yoksa
+
+883
+01:29:37,548 --> 01:29:39,408
+örneğin şu düğüm ile
+
+884
+01:29:39,408 --> 01:29:41,828
+şu düğüm seçildi grafta
+
+885
+01:29:41,828 --> 01:29:43,768
+bunların arasında herhangi
+
+886
+01:29:43,768 --> 01:29:45,688
+bir yol yok. O zaman bunlar
+
+887
+01:29:45,688 --> 01:29:47,768
+not connected. Yani birbirine bağlı
+
+888
+01:29:47,768 --> 01:29:49,328
+olmayan düğümlerdir.
+
+889
+01:29:50,247 --> 01:29:51,727
+Birbirine bağlı düğümlerden
+
+890
+01:29:51,727 --> 01:29:53,608
+oluşan parçaya komponent
+
+891
+01:29:53,608 --> 01:29:55,987
+adı verilir. Şurada bir komponentim
+
+892
+01:29:55,987 --> 01:29:57,807
+var. Burada başka büyük bir
+
+893
+01:29:57,807 --> 01:29:59,787
+komponentim var. Burada da başka bir komponent
+
+894
+01:29:59,787 --> 01:30:01,507
+var. Tamam. Bunlara da
+
+895
+01:30:01,507 --> 01:30:03,787
+connected komponentler. Çünkü aynı içinde
+
+896
+01:30:03,787 --> 01:30:05,727
+bu komponent içindeki
+
+897
+01:30:05,727 --> 01:30:07,727
+bütün düğümler birbiriyle bir şekilde bağlı.
+
+898
+01:30:07,867 --> 01:30:10,167
+Bir düğümden başkasına erişebiliyorsunuz.
+
+899
+01:30:10,767 --> 01:30:12,127
+Belki cycle ile erişiyorsunuz.
+
+900
+01:30:12,207 --> 01:30:13,887
+Belki pet ile erişiyorsunuz ama bir şekilde
+
+901
+01:30:13,887 --> 01:30:14,427
+erişiyorsunuz.
+
+902
+01:30:15,667 --> 01:30:17,667
+Buradaki grafta bir,
+
+903
+01:30:17,667 --> 01:30:19,707
+iki, üç tane connected
+
+904
+01:30:19,707 --> 01:30:21,927
+komponent var. Demek ki bir graf
+
+905
+01:30:21,927 --> 01:30:23,847
+birbirine bağlı olmayan
+
+906
+01:30:23,847 --> 01:30:25,267
+yani not connected olan
+
+907
+01:30:25,267 --> 01:30:27,907
+en tane connected komponentten
+
+908
+01:30:27,907 --> 01:30:29,927
+oluşabilir. Gayet doğaldır.
+
+909
+01:30:31,007 --> 01:30:31,747
+Ama genellikle
+
+910
+01:30:31,747 --> 01:30:33,707
+biz ayrı connected komponentler yerine
+
+911
+01:30:34,287 --> 01:30:35,747
+tek bir komponentten
+
+912
+01:30:35,747 --> 01:30:37,567
+oluşan graflarla genelde çalışmayı
+
+913
+01:30:37,567 --> 01:30:38,687
+tercih edeceğiz.
+
+914
+01:30:39,467 --> 01:30:40,287
+Efendim?
+
+915
+01:30:41,307 --> 01:30:42,347
+Hocam bu
+
+916
+01:30:42,347 --> 01:30:44,787
+birbirine bağlı olan
+
+917
+01:30:44,787 --> 01:30:47,567
+kümeler bir graf mı yoksa
+
+918
+01:30:47,567 --> 01:30:49,427
+bu gördüğümüz üç komponent mi?
+
+919
+01:30:49,427 --> 01:30:52,007
+bir graf ediyor. Bu 3 komponentin
+
+920
+01:30:52,007 --> 01:30:53,467
+tamamı bir graf ediyor.
+
+921
+01:30:54,187 --> 01:30:55,587
+Çünkü ben bunu mesela şöyle
+
+922
+01:30:55,587 --> 01:30:57,807
+tanımlamam diyeyim. Burada kaç tane
+
+923
+01:30:57,807 --> 01:30:59,027
+düğüm var toplamda?
+
+924
+01:31:00,607 --> 01:31:01,287
+Sayan var mı?
+
+925
+01:31:01,767 --> 01:31:03,107
+Diyelim 25.
+
+926
+01:31:03,827 --> 01:31:05,767
+Tamam. Kaç tane kenar
+
+927
+01:31:05,767 --> 01:31:07,327
+var? Diyelim 18.
+
+928
+01:31:08,083 --> 01:31:19,083
+Ondan sonra yazmaya başlamışım. 0, 1'e bağlı. 0, 3'e bağlı. 1, 5'e bağlı. 18 tane A'ya yazmışım.
+
+929
+01:31:19,083 --> 01:31:29,083
+Ama mesela, şu diyelim ki kaç olsun? 6 olsun. Bu da 12 olsun. 6-12 hiçbir yerde yok.
+
+930
+01:31:29,083 --> 01:31:34,083
+Tamam? Onlar o zaman birbirine bağlı değil. Yani not conic.
+
+931
+01:31:34,083 --> 01:31:38,083
+birbirine bağlı olan her bir parçaca komponent adını veriyoruz.
+
+932
+01:31:39,184 --> 01:31:48,343
+Bütün komponentler, verilen bütün komponentler bir işte grup halinde hepsine birden de burada şekilde gördüğünüz kutunun içindekilere de graph adını veriyoruz.
+
+933
+01:31:48,523 --> 01:31:50,043
+Bu graphda üç tane komponent var.
+
+934
+01:31:50,844 --> 01:31:53,944
+O zaman şöyle bir söylem doğru olur değil mi?
+
+935
+01:31:54,003 --> 01:31:56,863
+Bir graphda iki düğün birbirine bağlı olmayabilir.
+
+936
+01:31:57,903 --> 01:32:00,203
+Olmayabilir işte olmadı bak gördüğün gibi.
+
+937
+01:32:00,624 --> 01:32:01,223
+Tamam hocam.
+
+938
+01:32:01,223 --> 01:32:02,703
+Yani şöyle düşün
+
+939
+01:32:02,703 --> 01:32:07,963
+Nasıl anlatayım
+
+940
+01:32:07,963 --> 01:32:10,764
+Marmaray'ın olmadığı durumu düşünelim
+
+941
+01:32:10,764 --> 01:32:13,203
+Anadolu yakasındaki metrolarla
+
+942
+01:32:13,203 --> 01:32:14,823
+Avrupa yakasındaki metrolar
+
+943
+01:32:14,823 --> 01:32:17,423
+Birbirine bağlı mıydı? Değildi değil mi?
+
+944
+01:32:18,043 --> 01:32:19,543
+İki tane ayrı komponent vardı
+
+945
+01:32:19,543 --> 01:32:20,984
+Ama sonuçta o bizim
+
+946
+01:32:20,984 --> 01:32:23,283
+Metro grafımızı oluşturuyor
+
+947
+01:32:23,283 --> 01:32:25,203
+Böyle okuyabiliriz
+
+948
+01:32:25,203 --> 01:32:27,283
+Dediğim gibi biz genellikle
+
+949
+01:32:27,283 --> 01:32:29,563
+Tek komponentle çalışacağız
+
+950
+01:32:29,563 --> 01:32:32,783
+yani öyle ayrık komponentlerimiz pek olmayacak ama olabilir.
+
+951
+01:32:33,443 --> 01:32:35,563
+Hani şaşırmayın diye söylüyorum.
+
+952
+01:32:36,863 --> 01:32:39,883
+Şimdi graflarımız temelde dört tip.
+
+953
+01:32:41,063 --> 01:32:45,703
+Bir deminden beri üzerinde durduğumuz yönsüz graflarımız olabilir.
+
+954
+01:32:45,943 --> 01:32:46,743
+Undirected.
+
+955
+01:32:46,743 --> 01:32:54,703
+Burada önemli olan sadece iki tane verilen düğümün bir kenar vasıtasıyla birbiriyle bağlı halde olmasıdır.
+
+956
+01:32:54,703 --> 01:33:06,743
+Eğer bu bağlantıda yön önemli hale geliyorsa buna da yönlü graph ya da directed graph ya da kısaca digraph adını veriyorum.
+
+957
+01:33:06,743 --> 01:33:20,804
+Mesela şöyle bir ok çizdim. Şöyle bir ok çizdim. Ya da böyle bir ok var. Şurada da başka yapalım. Şöyle yapalım. Şöyle yapalım. Buna da böyle yapalım. Tamam.
+
+958
+01:33:20,804 --> 01:33:44,384
+Burada ne oldu? Artık mesela şu komponentin üzerinde çalışalım. Ben 9'dan başlayıp 10'a gidebiliyorum. Burada yön önemli hale geldi. 9'dan başlayıp 11'e gidebiliyorum. 9'dan başlayıp 12'ye gidebiliyorum. Ya da 9'dan 12'ye, 12'den 11'e gidebiliyorum. Ama 10'dan başlayıp 9'a gidemiyorum. 11'den 9'a gidemiyorum. Artık bunlar yönlü.
+
+959
+01:33:44,384 --> 01:34:00,464
+demek ki yönsüz bir grafta belki 7-8 diye bir kenar yazmam yeterliyken bir daha 8 ve 7 yazmama gerek yokken
+
+960
+01:34:00,464 --> 01:34:05,544
+directed bir graf olduğunda bunun yönünü mutlaka net bir şekilde söylemeliyim.
+
+961
+01:34:05,543 --> 01:34:14,543
+Eğer böyleyse o zaman benim kenar sıram bu olmamalı, bu olmalı. 8'den 7'ye şeklinde bunu okumam gerektir.
+
+962
+01:34:14,943 --> 01:34:20,303
+Bir implementasyonu da göre yönünü başlangıç bitiş mi yaparsanız bitiş başlangıç mı şey kalmış ama
+
+963
+01:34:20,303 --> 01:34:31,403
+Nihayetinde kenarlarınızda yön olabilir ya da olmayabilir. Bu da undirective graph yapınızı oluşturur.
+
+964
+01:34:31,403 --> 01:34:58,803
+bir yandan da bu kenarların değerleri olabilir aldığı değerler biz bunlara da kenar ağırlığı edge weight adını veriyoruz ve bu yönlü ve yönsüz graflar kenar ağırlıklı da olabilir kenar ağırlıksız da olabilir yani yönlü mü yönsüz mü ağırlıklı mı ağırlıksız mı buna göre dört tane kombinasyon ortaya çıkıyor
+
+965
+01:34:58,804 --> 01:35:04,363
+kenar ağırlıksız yönsüz graf ya da kısaca andarik graf
+
+966
+01:35:04,363 --> 01:35:07,244
+kenar ağırlıksız yönlü graf
+
+967
+01:35:08,083 --> 01:35:18,083
+kenar ağırlıklı yönsüz graf, kenar ağırlıklı yönlü graf ve bu şekilde toplam 4 farklı graf tipimiz var.
+
+968
+01:35:18,983 --> 01:35:24,004
+Kenar ağırlıklı yönsüz graf ne demektir?
+
+969
+01:35:24,383 --> 01:35:29,023
+Mesela bunun maaliyeti, bağlama maaliyeti ya da kilometresi gibi okuyabilirsiniz.
+
+970
+01:35:29,184 --> 01:35:33,303
+0'dan 6'ya gitmek ya da 6'dan 0'a gitmek 5 kilometredir.
+
+971
+01:35:33,303 --> 01:36:03,083
+Ama eğer aralarındaki yollar farklıysa şurada çizelim onu da mesela şöyle olsun. Mesela buradan buraya gitmek 8 km ama buradan buraya dönmek 5 km. Ne oldu? O zaman 0'dan 1'e 8 ile giderken 8 km yolla gidebilirken 1'den 0'a 5 ağırlıkla gitmeye.
+
+972
+01:36:03,303 --> 01:36:23,403
+başladım. Burada ne oldu? Hem kenar ağırlığı hem yön var. Gördüğünüz gibi iki düğüm arasında gidişle dönüş maliyetleri aynı olmayabilir. İşte tıpkı İstanbul'daki trafik gibi. Köprünün bir tarafı açık öbür tarafı hep kapalı. Akşam sabah shift ediyor. İşte o şekilde bir yapı karşımıza çıkıyor.
+
+973
+01:36:23,403 --> 01:36:45,083
+bir iki tane daha tanım yapayım. Birincisi çevrimli ya da çevrimsiz graph. Aslında cycle'lardan biliyoruz. Kapalı döngü içermeyen yani cycle içermeyen graflara acyclic çevrim içermeyen graf adını veriyoruz.
+
+974
+01:36:45,083 --> 01:36:56,323
+Hatta şurada söylediğim 5 tane şart doğruysa bu asaykalık grafımız aynı zamanda bir ağaç oluşturur.
+
+975
+01:36:56,444 --> 01:36:57,764
+Ağaç veri yapısını oluşturur.
+
+976
+01:36:57,884 --> 01:36:58,223
+Nedir?
+
+977
+01:36:59,024 --> 01:37:00,643
+V-1 tane kenar olacak.
+
+978
+01:37:01,024 --> 01:37:01,604
+Ne demek bu?
+
+979
+01:37:02,264 --> 01:37:05,003
+Düğüm sayısından bir eksik kenarı olacak.
+
+980
+01:37:05,664 --> 01:37:06,723
+Döngü olmayacak.
+
+981
+01:37:06,723 --> 01:37:10,323
+Ve bileşenlerin hepsi birbirine bağlı olacak.
+
+982
+01:37:10,563 --> 01:37:12,183
+Ayrı komponentler olmayacak.
+
+983
+01:37:12,183 --> 01:37:21,903
+herhangi bir kenarı kaldırmak bu yapıyı ikiye bölecek. İki bağımsız yapı haline dönüştürecek. İki komponente dönüştürecek.
+
+984
+01:37:22,863 --> 01:37:32,423
+Çevrimsiz olacak. Herhangi bir kenar eklemek burada çevrim oluşturacak. Ve her bir kenar çiftini basit bir yol bağlayacak.
+
+985
+01:37:32,423 --> 01:37:41,244
+Simple path birbirine bağlayacak. Eğer bu beş şart bir arada doğruysa önceki haftalarda gördüğümüz ağaç veri yapısını oluşturacak.
+
+986
+01:37:41,244 --> 01:38:05,684
+demek ki ağaçlar aslında grafların özel bir haliymiş. Şuradaki 5 şartı sağlayan graflara ağaç adını veriyormuşuz. Daha da özelleştirip işte en fazla 2 çocuğu olabilir, 2 bağlantı, 2 kenar çıkabilir falan dediğimizde de binary tree ile evet tanımlıyormuşuz. O zaman ağaçlar da aslında birer grafmiş. Daha genel hali graflar. Bunu unutmamamız gerekiyor.
+
+987
+01:38:05,683 --> 01:38:07,643
+Mesela şuradaki yapıya bakalım
+
+988
+01:38:07,643 --> 01:38:12,483
+Bütün düğümler birbirine bağlı
+
+989
+01:38:12,483 --> 01:38:14,363
+Yani tek bir bileşenden oluşuyor
+
+990
+01:38:14,363 --> 01:38:18,503
+Toplamda 19 tane düğüm var, 18 tane kenar var
+
+991
+01:38:18,503 --> 01:38:21,123
+Hiçbir kapalı döngü içermiyor
+
+992
+01:38:21,123 --> 01:38:25,143
+Şu doğru, bütün bileşenler birbirine bağlı
+
+993
+01:38:25,143 --> 01:38:29,463
+Herhangi bir kenarı kaldırmak demek iki tane bileşen oluşması demek
+
+994
+01:38:29,463 --> 01:38:33,103
+Burada mesela şunu kaldırsam bu tek kalır, bunu kaldırsam bu tek kalır
+
+995
+01:38:33,103 --> 01:38:37,423
+ya da şunu kaldırsam burada böyle bir grup oluşur, burada bir komponent oluşur gibi.
+
+996
+01:38:37,563 --> 01:38:38,003
+Bu da doğru.
+
+997
+01:38:39,063 --> 01:38:43,743
+Herhangi bir çevrim burada yok ama bir kenar eklediğimde o zaman bir cycle oluşturuyor.
+
+998
+01:38:43,823 --> 01:38:46,563
+Mesela şunu ekledim, hoppa burada kapalı bir cycle oluştu.
+
+999
+01:38:47,003 --> 01:38:49,763
+Gördüğünüz gibi ya da bunu ekledim, burada kapalı bir cycle oluştu.
+
+1000
+01:38:50,843 --> 01:38:54,443
+Ve her bir kenar çifti basit bir yolla birbirine bağlı.
+
+1001
+01:38:54,603 --> 01:38:55,043
+O da doğru.
+
+1002
+01:38:55,143 --> 01:38:56,783
+Şu kırmızıları çizmediğimi düşünün.
+
+1003
+01:38:57,903 --> 01:38:59,123
+O da doğru.
+
+1004
+01:38:59,123 --> 01:39:05,203
+o zaman diyebiliriz ki buradaki graf özel olarak bir tree'dir.
+
+1005
+01:39:08,435 --> 01:39:36,975
+bu şekilde. Trilerin de aslında birer graf olduğunu söylemiş olalım. Bir diğer kavram graflarda yoğunluk. Buna da density, graf density adını veriyoruz. Kabaca, yani çok en basit tabiriyle kenarlara bağlı olan düğümlerin kenar sayısına olan oranına grafın yoğunluğu adını veriyoruz.
+
+1006
+01:39:36,975 --> 01:39:40,055
+ve iki tane temel tanı, alt tanımı var.
+
+1007
+01:39:40,476 --> 01:39:44,375
+Bir graphın yoğunluğu ya seyrektir ya da yoğundur.
+
+1008
+01:39:44,476 --> 01:39:46,315
+Peki biz buna neye göre karar vereceğiz?
+
+1009
+01:39:46,895 --> 01:39:49,315
+Düğüm kenar oranına göre karar vereceğiz.
+
+1010
+01:39:49,815 --> 01:39:54,995
+Genellikle log V üzeri 3.2 gibi bir şeyi var.
+
+1011
+01:39:55,335 --> 01:39:57,735
+Kat sayısı genel olarak literatürde kabul ediliyor.
+
+1012
+01:39:57,735 --> 01:39:59,955
+Çok oraya takılmaya gerek yok.
+
+1013
+01:40:00,215 --> 01:40:02,915
+Hani yok kardeşim ben 5 kat diye aldım da diyebilirsiniz.
+
+1014
+01:40:02,915 --> 01:40:10,175
+Ama şu daha iyi bir ayrım olacak
+
+1015
+01:40:10,175 --> 01:40:14,715
+Bağlantıları oranla çok daha az sayıda kenar
+
+1016
+01:40:14,715 --> 01:40:21,736
+Olabilecek bağlantıları oranla çok daha az sayıda kenar içeren graflara sparse graf ya da seyrek graf adını veriyoruz
+
+1017
+01:40:21,736 --> 01:40:26,255
+Yine olabilecek bağlantı sayısından az sayıda eksik kenarı varsa
+
+1018
+01:40:26,255 --> 01:40:30,195
+Bunlara da dense yani yoğun graflar adını veriyoruz
+
+1019
+01:40:30,195 --> 01:40:31,195
+mesela iki tane graf vermişiz burada kitaptan aldım tabi bunu da ve ikisinde de elli tane düğüm var elli tane nokta var soldaki grafta toplam iki yüz tane kenar var gördüğünüz gibi böyle hani şuralar biraz yoğun gibi gözükse de nihayetinde seyrek bir graftan bahsediyoruz elli tane düğümde toplam sadece iki yüz tane graf var kenar var sağdakine baktığımızda yine elli tane düğümde
+
+1020
+01:41:00,195 --> 01:41:09,855
+düğümümüz var ama bu 50 tane düğüm arasında 1000 tane bağlantı var. Karanlanmış böyle, karman çorman gözüküyor görselleştirdiğimizde.
+
+1021
+01:41:10,595 --> 01:41:19,395
+İşte bu da mesela işte bir protein ağı gibi bir yapı. Bu metro ağı gibi bir yapı. Hatta şurası bakın Marmaray.
+
+1022
+01:41:20,335 --> 01:41:29,895
+Üsküdar'la Sirgeci arası gibi ama bu arkadaşlık ilişkisi gibi bir yapı Facebook'taki. Çok yoğun, daha fazla sayıda.
+
+1023
+01:41:30,195 --> 01:41:59,915
+kenarı var. Bunlara yoğun graf adını veriyoruz. Bunlara da seyrek graf. Diyeceksiniz kat sayısı ne? Dediğim gibi işte log v üzeri 3.2 yu kat sayı söyleniyor literatürde ama bu uygulamadan uygulamaya da değişebiliyor. O yüzden olabilecekleri oranla çok azsa seyrek diyoruz. Çok fazlaysa yoğun diyoruz. Genellikle yine bizim üzerinde en çok çalıştığımız problemler aslında en azından bu ders kapsamında yine sparse graflarda olacak oluyor.
+
+1024
+01:42:00,195 --> 01:42:10,275
+ama işte bir bot ağı tespiti falan ya da bir kanaat önderi tespiti yapacaksanız o zaman bu tip ağlarla aslında çalışıyor oluyorsunuz.
+
+1025
+01:42:10,656 --> 01:42:13,355
+Algoritmalar da ona göre tabii ki biraz daha farklılaşıyor.
+
+1026
+01:42:23,828 --> 01:42:31,427
+Bir de matematiksel son bir tanım daha vereyim graflarla alakalı. Sonra da bir ara vereyim.
+
+1027
+01:42:32,147 --> 01:42:40,207
+Bir partlık graflar, iki parçalı graflar. Şimdi bunun tabii tanımı biraz okuması zor. O yüzden iki tane ayrı tanım yaz vermeye çalıştım.
+
+1028
+01:42:41,668 --> 01:42:43,008
+Wikipedia'dan bunlarda.
+
+1029
+01:42:43,008 --> 01:43:01,908
+Şimdi düğümleri her kenar, şurada gördüğünüz kenar, iki kümede de birer bitiş ucuna sahip olacak şekilde iki ayrı kümeye ayrılabiliyorsa bu graflara iki parçalı graf ya da bir partik graf adı veriliyor.
+
+1030
+01:43:01,908 --> 01:43:06,168
+Bu biraz daha karışık bir tanım. Şöyle okursak biraz daha güzel oluyor.
+
+1031
+01:43:06,168 --> 01:43:16,668
+Düğümleri U ve V şeklinde iki ayrık ve birbirinden bağımsız kümeye ayrılabilen örnekteki kırmızı ve siyah kümeler gibi
+
+1032
+01:43:16,668 --> 01:43:28,747
+ve her bir kenarı U kümesindeki bir düğümü V kümesindeki bir düğme bağlayan graflara iki parçalı graf adı veriliyor.
+
+1033
+01:43:28,747 --> 01:43:32,768
+Burada mesela bir düğüm kümesi kırmızı bir diğer düğüm kümesi siyah.
+
+1034
+01:43:32,767 --> 01:43:46,767
+en temelinden mesela Wikipedia'ya girip bakarsanız orada daha böyle mavili, gri, benden daha iyi açıklanmış parçaları okuyabilirsiniz.
+
+1035
+01:43:47,967 --> 01:43:50,827
+Eksternal referansları da vereyim.
+
+1036
+01:43:52,027 --> 01:44:00,747
+Bir partik graflarda iki parçalı graflar yine algoritmalarda, graf algoritmalarında önemli olduğu için bunun da tanımını vermek istedim.
+
+1037
+01:44:00,747 --> 01:44:10,147
+Şimdi bir ara verelim yine ve 45 desek 55 geçe devam edelim 10 dakika ara
+
+1038
+01:55:35,731 --> 01:55:36,611
+Tamam edelim.
+
+1039
+01:55:41,235 --> 01:55:59,475
+Şimdi geldik. Grafları nasıl temsil edeceğiz, nasıl göstereceğiz? Biraz önce hızlıca hani kenar sayısı, düğüm sayısı ya da düğüm sayısı, kenar sayısı ve sonra da bağlı olan kenarlar ve varsa onun ağırlıkları şeklinde listeleyebilirsiniz dedim.
+
+1040
+01:55:59,475 --> 01:56:05,475
+Yani mesela bir dosyada falan saklamanız gerekiyorsa, okumanız, yazmanız gerekiyorsa böyle saklayabilirsiniz ama
+
+1041
+01:56:05,475 --> 01:56:11,756
+Acaba biz bunları veri yapısı olarak bellekte nasıl tutmalıyız ya da nasıl bir oluşumla göstermeliyiz?
+
+1042
+01:56:12,215 --> 01:56:15,935
+Hangisi daha avantajlıdır? Ne gibi alternatifleri vardır? Şimdi onlara bakalım.
+
+1043
+01:56:16,735 --> 01:56:21,235
+Temelde dört farklı graf gösterimi var ama ben birinden bahsetmeyeceğim bile.
+
+1044
+01:56:21,235 --> 01:56:24,655
+O yüzden üç farklı graf gösterimini size göstereceğim.
+
+1045
+01:56:25,055 --> 01:56:29,235
+Ki bunların da içinden bir tanesini hiç kullanmıyorum bile. O yüzden ikiye düştü. Hadi iyisiniz.
+
+1046
+01:56:29,235 --> 01:56:41,375
+şanslısınız. Graf gösteriminde bahsedeceğim üç başlık komşuluk listesi, kenar listesi ve komşuluk matrisi olacak.
+
+1047
+01:56:41,375 --> 01:56:59,075
+Şimdi önce kenar listesinden başlayalım. Kenar listesi şu demek. Bütün kenarları listeleyelim ve kenarların düğümlerini ya da kenar listesinde hangi düğümlerin
+
+1048
+01:56:59,075 --> 01:57:24,795
+yer aldığını tutalım. Bu genellikle çok tercih edilen bir gösterim değil. Çünkü mesela en basitinden bir komşuluk bulmak için bütün kenarları gezmemiz gerekiyor. Hele bir de dense bir graftan bahsediyorsanız çok kullanışlı bir hale gelmiyor. O yüzden de kenar listesi çok literatürde de tercih edilen bir gösterim değil.
+
+1049
+01:57:24,795 --> 01:57:29,395
+O yüzden onun üzerini hemen şöyle kırmızıyla çizelim.
+
+1050
+01:57:30,895 --> 01:57:32,695
+O yüzden bahsetmeyeceğiz bile.
+
+1051
+01:57:33,495 --> 01:57:36,515
+Şimdi geldik geriye kalan iki tane temel gösterime.
+
+1052
+01:57:36,615 --> 01:57:38,995
+Bir tanesi komşuluk listesi gösterimi.
+
+1053
+01:57:39,155 --> 01:57:51,295
+Özellikle de elimizde seyrek yani spars graflarımız varsa bunlar da çok işe yarayan ve mekan karmaşıklığımızı da yer gereksinimizde oldukça azaltan bir gösterim.
+
+1054
+01:57:51,295 --> 01:58:18,456
+Bunun alternatifi de komşuluk matrisi gösterimi. Bunun da dezavantajı fazla yer kaplaması. Şimdi bunların neler olduklarından bahsedelim. Şuradan başlayalım. Diyelim ki solda verilen bir graf var. Dediğim gibi bu tamamen bir parazi temsil. Ben bunu böyle çizdim ama siz tepe taklakta çizebilirdiniz. Biri böyle getirip yukarı alabilirdiniz. Dördü bu tarafa, üçünün içine.
+
+1055
+01:58:18,456 --> 01:58:22,036
+hiç fark etmez. Gösterimin nereden nasıl durduğunun bir önemi yok.
+
+1056
+01:58:22,735 --> 01:58:26,435
+Şimdi bu yönlü bir graf mı? Hayır değil.
+
+1057
+01:58:26,816 --> 01:58:31,616
+Çünkü herhangi bir ok işareti görmüyorum kenarların uçlarında, sonlarında.
+
+1058
+01:58:33,256 --> 01:58:35,635
+Kenar ağırlıklı bir graf mı? Hayır değil.
+
+1059
+01:58:35,836 --> 01:58:37,875
+Kenar ağırlıklı bir graf olmadığını görüyorum.
+
+1060
+01:58:38,015 --> 01:58:41,556
+O zaman kenar ağırlıksız, yönsüz bir graftan bahsediyoruz.
+
+1061
+01:58:41,556 --> 01:58:45,696
+Yapacağım şey şudur. Komşuluk listesi gösteriminde.
+
+1062
+01:58:45,695 --> 01:58:53,115
+bir tane dizi hatta bunu da listeyle yapabilirsiniz fark etmez link listeyle de yapabilirsiniz ya da dinamik diziyle de yapabilirsiniz.
+
+1063
+01:58:53,715 --> 01:59:02,275
+Beş tane nodum var sıfırdan dörde yapmam gerekirdi ama okuması daha kolay olsun diye birden beşe birden ene olsun diye böyle yazdım.
+
+1064
+01:59:02,635 --> 01:59:08,575
+Bir dizi ve bunların her bir gözü benim bir tane düğmüme karşılık geliyor.
+
+1065
+01:59:08,695 --> 01:59:14,215
+Ha eğer siz bu düğümün içine mesela isminiz misminiz bir şeyinizi tutacaksanız bunun içinde stackla tutarsınız o benim için.
+
+1066
+01:59:14,215 --> 01:59:18,855
+fark ettik. Bizim için şu anda sadece birinci, ikinci, üçüncü, dördüncü, beşinci düğümlerin olması önemli.
+
+1067
+01:59:19,775 --> 01:59:26,835
+Burada sadece her bir düğümün komşuları kimlerdir? Bunları da birer linkli liste kullanarak tutuyoruz.
+
+1068
+01:59:27,275 --> 01:59:32,295
+Şimdi mesela bir, birden ben nereye gidebiliyorum? İkiye gidebiliyorum. Birden beşe gidebiliyorum.
+
+1069
+01:59:32,295 --> 01:59:38,075
+O zaman ben bir numaralı gözden hemen bir linkli liste, tamam mı? Heady bu.
+
+1070
+01:59:38,075 --> 01:59:39,055
+is
+
+1071
+01:59:39,667 --> 02:00:08,047
+2'yi göstersin, 2'de 5'i göstersin. Sıra önemli mi? Hayır değil. Ama genellikle gezme sırasıyla küçükten büyüye olacak şekilde yapabilirsiniz. Sonra 2. 2'den 1'e gidebiliyorum. Yönsüz ya. 2'den 5'e gidebiliyorum. 2'den 4'e gidebiliyorum. 2'den 3'e gidebiliyorum. O zaman ben 2 ile başlayan bir linked listede 1, 5, 3 ve 4 düğümlerini arka arkaya. Hiç ön dediğim gibi sırasında bir önemi yok.
+
+1072
+02:00:08,047 --> 02:00:20,047
+tutarım. Şuradaki bölü işareti null. Bundan sonra yok. Burada bitiyor. Başka bir devam eden eleman yok anlamına geliyor.
+
+1073
+02:00:20,047 --> 02:00:30,047
+Üçüncüye baktığımda ikiye ve dörde gidebiliyorum. Dördüncüye baktığımda ikiye, üçe, beşe gidebiliyorum. Bunları da burada gösterdim.
+
+1074
+02:00:30,047 --> 02:00:32,327
+5'e baktığımda da 4, 1, 2.
+
+1075
+02:00:32,927 --> 02:00:35,447
+Şimdi bu neden spars graflar için uygun?
+
+1076
+02:00:35,927 --> 02:00:38,587
+Spars graflarda kenar sayısı az.
+
+1077
+02:00:38,707 --> 02:00:39,207
+Ne demek bu?
+
+1078
+02:00:39,287 --> 02:00:40,287
+Komşu sayısı az.
+
+1079
+02:00:40,387 --> 02:00:44,987
+Komşu sayısı azsa ben buradaki linkli listelerimin uzunlukları kısa olacak demektir.
+
+1080
+02:00:46,167 --> 02:00:52,227
+Kısa olacak demek de ben bir şeyi araya ararken çok fazla sayıda elemana bakmak zorunda kalmayacağım.
+
+1081
+02:00:52,227 --> 02:00:56,767
+Daha az sayıda elemanı sorgulayarak hani ON bile o samlının her birinin karmaşıklığı.
+
+1082
+02:00:56,767 --> 02:01:21,807
+toplamda O ve E şeklinde bir karmaşıkla gidiyor olacak. Alternatifi, yani bu komşuluk listesi gösterim, şuraya L yazalım. Alternatif de matriz gösterimi. Matriz gösteriminde de her satır ve her sütun bir düğümümü gösterecek. Yani 5 tane düğümüm var ya, buraya 1, 2, 3, 4, 5. kolonlar ya da sütunlar, 1, 2, 3, 4, 5. satırları yazdım.
+
+1083
+02:01:21,807 --> 02:01:23,748
+Şöyle bir diagonal
+
+1084
+02:01:23,748 --> 02:01:25,288
+Diagonallerim sıfır
+
+1085
+02:01:25,288 --> 02:01:29,187
+Neden? Çünkü bunların hiçbiri kendine self loop içermiyor
+
+1086
+02:01:29,187 --> 02:01:31,348
+O yüzden burası direkt olarak sıfır
+
+1087
+02:01:31,348 --> 02:01:33,108
+Ve bir yönsüz graf
+
+1088
+02:01:33,108 --> 02:01:36,047
+Yani biliyorum ki aslında bu matriz simetrik bir matriz
+
+1089
+02:01:36,047 --> 02:01:39,167
+Ve eğer aralarında bir bağlantı varsa
+
+1090
+02:01:39,167 --> 02:01:41,108
+Bu göze bir yazarım
+
+1091
+02:01:41,108 --> 02:01:43,068
+Bağlantı yoksa sıfır yazarım
+
+1092
+02:01:43,068 --> 02:01:43,708
+Şimdi bakalım
+
+1093
+02:01:43,708 --> 02:01:45,867
+Birden ikiye bir bağlantı var
+
+1094
+02:01:45,867 --> 02:01:48,108
+Birden ikiye
+
+1095
+02:01:48,108 --> 02:01:49,548
+Bir yazdım
+
+1096
+02:01:49,547 --> 02:02:12,347
+Aynı zamanda simetrik olduğu için ne demektir bu? 2'den 1'e de bir bağlantı var onu da yaz. Başka işte 1'den 5'e var. O zaman 5'den de 1'e var. 2'den 3'e var. 3'den 2'ye var. 2'den 4'e var. 4'den 2'ye var. 2'den 5'e var. 5'den 2'ye var.
+
+1097
+02:02:12,347 --> 02:02:13,947
+simetrik.
+
+1098
+02:02:14,407 --> 02:02:16,987
+3'ten 4'e, 4'ten 3'e bağlantı var.
+
+1099
+02:02:17,307 --> 02:02:21,207
+4'ten 5'e, 5'ten de 4'e bağlantı var.
+
+1100
+02:02:21,747 --> 02:02:22,287
+Şimdi ne oldu?
+
+1101
+02:02:23,187 --> 02:02:32,487
+Benim V tane düğümüm varken bir anda V çarpı V yani V karelik bir yer ihtiyacı, matiz ihtiyacı oluştu.
+
+1102
+02:02:32,487 --> 02:02:33,727
+Ha hocam V kare bölü 2.
+
+1103
+02:02:34,367 --> 02:02:35,247
+Çünkü yönsüz.
+
+1104
+02:02:35,987 --> 02:02:40,927
+Evet ama yönlü olsaydı o zaman bir anda V kare tekrardan ihtiyacım olacaktı.
+
+1105
+02:02:40,927 --> 02:02:46,647
+Bu şekilde temel iki tane gösterimiz var grafları temsil etmek için.
+
+1106
+02:02:46,847 --> 02:02:49,447
+Genellikle daha çok şunu tercih ediyoruz.
+
+1107
+02:02:49,687 --> 02:02:55,227
+Bu B kare mertebesinde yer ihtiyacı olduğu için.
+
+1108
+02:02:59,604 --> 02:03:27,003
+yönlü bir graf olduğundaysa mesela solda verdiğimiz yönlü graf örneğine bakalım. Bu sefer mesela birden ikiye bağlantı var ama ikiden bire yok. Bir önceki slide'a geldiğimde mesela ben birden ikiye bir bağlantı görüyordum. İkiden de bire bir bağlantı görüyordum. Çünkü yönsüzdü bu graflar. Ama buraya geldiğimde birden ikiye bir bağlantı var. Şurası.
+
+1109
+02:03:27,003 --> 02:03:30,883
+Ayrıca birden dörde bir bağlantı var.
+
+1110
+02:03:30,883 --> 02:03:31,364
+O da bu.
+
+1111
+02:03:31,743 --> 02:03:34,223
+Yani birden ikiye komşuluk var.
+
+1112
+02:03:34,343 --> 02:03:35,784
+Birden dörde komşuluk var.
+
+1113
+02:03:35,903 --> 02:03:40,163
+Ya da birin komşuları ikidir, dörttür diye oksam daha doğru.
+
+1114
+02:03:40,863 --> 02:03:42,383
+İkiden sadece beşe var.
+
+1115
+02:03:43,523 --> 02:03:43,863
+Şurası.
+
+1116
+02:03:45,104 --> 02:03:47,604
+Üçten beşe ve altıya var.
+
+1117
+02:03:47,723 --> 02:03:48,784
+Ya da altıya ve beşe var.
+
+1118
+02:03:48,883 --> 02:03:49,583
+Sürekli önemli değil.
+
+1119
+02:03:50,144 --> 02:03:52,523
+Dördün komşuları sadece iki.
+
+1120
+02:03:53,104 --> 02:03:54,083
+Sadece tek bir ok çıkıyor.
+
+1121
+02:03:55,023 --> 02:03:56,703
+Beşin komşuları sadece dört.
+
+1122
+02:03:57,003 --> 02:04:03,723
+6'nın komşuları garibim sadece kendisi bakın burada da self loop oluşturmuş oldum kendine komşu
+
+1123
+02:04:03,723 --> 02:04:17,464
+şimdi bu durumda kendine bir bağlantı varsa o zaman burası artık 0 değil dikkat edin 6'dan 6'ya 1 görüyorum yani 6'dan 6'ya bir bağlantı var diye görüyorum
+
+1124
+02:04:17,464 --> 02:04:20,624
+ve artık bu simetrik bir matriz değil.
+
+1125
+02:04:22,523 --> 02:04:25,284
+Birden ikiye bağlantı var ama ikiden bire bağlantı yok.
+
+1126
+02:04:25,483 --> 02:04:27,303
+Birden ikiye bağlantı var.
+
+1127
+02:04:27,764 --> 02:04:29,883
+İkiden bire bağlantı yok.
+
+1128
+02:04:30,324 --> 02:04:34,243
+Bunu da genellikle satırdan sütuna şeklinde okumayı tercih ederiz.
+
+1129
+02:04:34,964 --> 02:04:35,264
+Bu kadar.
+
+1130
+02:04:36,523 --> 02:04:42,504
+Yönlü de olsa, yönsüz de olsa hem komşuluk listesini hem de komşuluk matrizini kullanabilirsiniz.
+
+1131
+02:04:42,504 --> 02:04:44,663
+Yeter ki kim kime bağlı.
+
+1132
+02:04:44,663 --> 02:04:48,403
+yani kim kimin komşusu bunu bütün düğümler için bir liste halinde.
+
+1133
+02:04:48,824 --> 02:04:54,863
+Linked listelerin Linked Listesi ya da bir dinamik dizilerde tutulan Linked Listeler halinde tutun.
+
+1134
+02:04:55,464 --> 02:05:03,703
+Bir diğer gösterim de daha statik matriz kullanmak ama tabii ki o her zaman için daha çok fazla yer kaplayacak matriz.
+
+1135
+02:05:04,623 --> 02:05:08,143
+Tabii matriz kullanmak hep mi kötü? Hayır.
+
+1136
+02:05:08,404 --> 02:05:10,143
+Mesela diyelim ki şunu arıyorum.
+
+1137
+02:05:10,143 --> 02:05:16,643
+verilen iki düğüm arasında bağlantı var mı yok mu?
+
+1138
+02:05:17,263 --> 02:05:22,083
+Şimdi bunu yapmak için mesela burada şey diyelim bir ile beş arasında bağlantı var mı yok mu?
+
+1139
+02:05:22,083 --> 02:05:23,303
+Bunu bulmaya çalışıyorum.
+
+1140
+02:05:24,083 --> 02:05:25,043
+Ne yapmam lazım?
+
+1141
+02:05:26,743 --> 02:05:35,104
+V'nin işte beşin mesela beş hangilerinin komşuluğunda var?
+
+1142
+02:05:35,104 --> 02:05:41,124
+o zaman 5'in komşul derecesine bağlı olacak şekilde bir arama yapmam gerekiyor.
+
+1143
+02:05:41,303 --> 02:05:49,163
+Şöyle ki mesela 5'e kimler geliyor? 5'e 2 geliyor, 5'e 3 geliyor değil mi? Bunları biliyor olmam lazım.
+
+1144
+02:05:49,844 --> 02:05:55,383
+Ondan sonra 2'ye kimler geliyor? 2'ye 1 geliyor, 2'ye 4 geliyor.
+
+1145
+02:05:55,383 --> 02:06:13,083
+Yani 1'den 2'ye, 2'den 5'e gidebiliyorum. Buradaki derecesi kadar bir yavaşlıkta sorgulayıp bütün komşularını, o düğümün komşularını taramam gerekiyor. Ama matrisi de ne yapacağım? Matrisi de aslında çok daha hızlı bir şekilde bu işi yapabilirim.
+
+1146
+02:06:13,083 --> 02:06:38,184
+daha basit bir örnek verelim hani ikili örnek vermiş olmayayım. Acaba 3 ile 5 birbirine bağlı mı? Şu düğümle şu düğüm birbirine bağlı mı diye bir şey sorguluyorum. Ne yapacağım? Normalde burada 3'ten 5'e bir bağlantı var mı yok mu? Yani matrisin 3,5 adresi dolu mu değil mi? Buna bakacağım. Direkt O1.
+
+1147
+02:06:38,184 --> 02:06:51,243
+Ama eğer komşuluk listesi gösterimi kullanıyorsam 3'ün bütün komşularına teker teker sona kadar nal görene kadar bakmam lazım.
+
+1148
+02:06:51,404 --> 02:06:54,943
+O yüzden de derece V şeklinde üstünü çizdim.
+
+1149
+02:06:55,439 --> 02:07:04,939
+derece V şeklinde bir karmaşıklığa sahip olacaktır. Yani bazı problemlerde tabii ki matriz kullanmak sizi çok hızlandıracaktır.
+
+1150
+02:07:04,939 --> 02:07:14,439
+Bazı problemlerde de yavaşlatıyor olabilir ya da çok daha fazla yer ihtiyacı doğuruyor olabilir.
+
+1151
+02:07:14,439 --> 02:07:15,439
+Çok teşekkür ederim.
+
+1152
+02:07:21,492 --> 02:07:31,651
+Peki, devam edelim. Nereden devam ediyoruz? Şuradan devam ediyoruz. Karşılaştırmadan.
+
+1153
+02:07:34,071 --> 02:07:46,711
+Şimdi kenar listesi hiç bahsetmedim bile. Kenar sayısı kadar doğal olarak yer kaplıyor. Bir kenar eklemek ucuz. Çünkü listeye yeni bir kenar ekliyorsunuz.
+
+1154
+02:07:46,711 --> 02:07:52,131
+ama bir W düğümü ile V düğümü birbirine komşu mu?
+
+1155
+02:07:52,271 --> 02:07:56,971
+Bunu sorgulamak için bir önceki slide'da bahsettiğim şey için bütün kenarları gezmeniz gerekiyor.
+
+1156
+02:07:57,931 --> 02:08:01,251
+Yoğun bir matrisinizde varsa bütün kenarları gezmeniz gerekecek.
+
+1157
+02:08:01,371 --> 02:08:02,751
+Sorgu biraz daha maliyetli.
+
+1158
+02:08:02,751 --> 02:08:11,451
+Ya da bir verilen düğümün bütün komşularını gezmek istediğinizde yine bütün kenarları tekrar eliniz mahkum gezmek zorunda kalacaksınız.
+
+1159
+02:08:11,551 --> 02:08:13,212
+Çünkü şunu sorgulamanız da gerekecek.
+
+1160
+02:08:13,611 --> 02:08:16,532
+O yüzden de bu da E karmaşıklıklı olacak.
+
+1161
+02:08:16,711 --> 02:08:18,371
+çok fazla tercih edin.
+
+1162
+02:08:18,471 --> 02:08:20,411
+Hatta kullanmayan bir gösteri.
+
+1163
+02:08:20,951 --> 02:08:24,131
+Peki, komşuluk maddesi V kare yer kaplayacak.
+
+1164
+02:08:24,131 --> 02:08:26,891
+Ama liste E artı V kadar yer kaplayacak.
+
+1165
+02:08:27,011 --> 02:08:32,391
+Çünkü kenar sayısı artı düğüm sayısı kadar node ihtiyacınız olacak.
+
+1166
+02:08:33,391 --> 02:08:40,911
+Kenar eklemenin maliyeti burada komşuluk listesinde de, komşuluk maddesinde de aynı, sabit.
+
+1167
+02:08:40,911 --> 02:08:51,791
+Tabii komşuluk matrisinin sabit satır ve sütundan oluştuğunu unutmayalım.
+
+1168
+02:08:51,791 --> 02:08:53,151
+Şöyle çizelim.
+
+1169
+02:08:57,951 --> 02:09:04,271
+Buradakiler arasında mesela 2'den 3'e yeni bir bağlantı kurgulandı gibi düşünmeniz lazım.
+
+1170
+02:09:04,271 --> 02:09:21,591
+ya da komşuluk listesi gösteriminde ikinci gözde buna yeni eleman başına ekleyebilirsiniz ve yeni bir komşu eklemiş olursunuz. Sabit karmaşıklık da ekleyebilirsiniz.
+
+1171
+02:09:22,151 --> 02:09:33,852
+Komşuluk sorgulaması maddesi de çok hızlı demiştik ama burada o düğümün derecesi kadar yani toplam sahip olduğu komşu sayısı kadar olmak zorunda. Link listesinin uzunluğun kadar olmak zorunda demiştik.
+
+1172
+02:09:34,271 --> 02:09:45,471
+bir V'nin bütün komşularını gezmek için komşuluk maddesinde yine V kadar gerekirken burada sadece komşu sayısı kadar bir gezinti kurgulamanız yeterli olacak.
+
+1173
+02:09:45,471 --> 02:10:02,592
+Yani verilen bir düğümün bütün komşuları için bir şey yap dediğinizde komşuluk listesini kullanmak çok daha faydalı ya da daha düşük karmaşıklıklı çözümler oluşturmanızı sağlayacaktır.
+
+1174
+02:10:02,591 --> 02:10:11,051
+Bu nedenle de genellikle komşuluk listesi kullanımını, gösterimini komşuluk matrisi gösteriminden daha fazla kullanıyoruz.
+
+1175
+02:10:13,391 --> 02:10:20,131
+Şimdi gelelim yine ağaç ve graf arasındaki sıkı ilişkiden de bahsetmiştik hatırlarsınız.
+
+1176
+02:10:20,971 --> 02:10:24,151
+Bir verilen grafı efendim.
+
+1177
+02:10:25,331 --> 02:10:30,311
+Hocam hani komşuluk listesini matrise tercih ediyoruz ya peki bunun yönlü ve yönsüz farkı var mı?
+
+1178
+02:10:30,311 --> 02:10:33,571
+mesela yönlü de matris daha iyi ya da yönsüz de liste daha iyi gibi.
+
+1179
+02:10:34,311 --> 02:10:39,871
+Yok. Hiç bir önemi yok. Zaten genellikle de yönlü matrisler, yönlü graflarla çalışıyoruz.
+
+1180
+02:10:40,971 --> 02:10:48,992
+Gerçek hayat problemlerinde. Sadece hani bağlantı var yok şeklinde bir yapıdan söz ediyorsak yönsüz grafları kullanıyoruz.
+
+1181
+02:10:49,911 --> 02:10:58,171
+Daha çok yönlü graflarla da çalıştığımız için komşuluk listesi daha da avantajlı hale geliyor aslına bakarsanız.
+
+1182
+02:10:58,992 --> 02:10:59,671
+Tamamdır. Sağ olun.
+
+1183
+02:10:59,671 --> 02:11:05,351
+Yani daha da azalıyor komşu sayınız aslında. Çünkü yönlü bağlantılar daha da az sayıda oluyor.
+
+1184
+02:11:06,251 --> 02:11:15,671
+Yönsüz olduğunda evet daha fazla sayıda düğümünüz olacak. Ama dediğim gibi hani bir çok fazla o problemlerden...
+
+1185
+02:11:16,243 --> 02:11:38,463
+o problemlerle çok fazla çalışılmıyor. İki, her halükarda bir komşuluk sayısıyla çalışmak toplam düğüm sayısıyla çalışmaktan çok daha faydalıdır. Facebook'u düşünün. Toplam düğüm sayısı kaç? Milyarlar mertebesinde. Ama bir seçilen düğümün komşu sayısı kaç? Sizin arkadaş sayısı kadar. Olsun olsun birkaç bin mertebesinde.
+
+1186
+02:11:38,463 --> 02:11:43,323
+Yani ben milyarlarla mı çalışayım bir algoritmada, binlerle mi çalışayım?
+
+1187
+02:11:43,383 --> 02:11:45,203
+Tabii ki binlerle çalışmayı tercih ederim.
+
+1188
+02:11:45,643 --> 02:11:48,303
+O yüzden hani bu gösterimleri tercih ediyoruz.
+
+1189
+02:11:49,223 --> 02:11:54,243
+Bir protein anındaki bilmem ne ilişkilerini, bağımslarını falan bulmaya çalışalım gibi.
+
+1190
+02:11:55,063 --> 02:12:00,023
+Amaç dediğim gibi komşu sayısı, düğümün komşu sayısı her zaman çok daha avantajlı olacaktır.
+
+1191
+02:12:00,443 --> 02:12:01,883
+O yüzden de tercih sebebidir.
+
+1192
+02:12:03,943 --> 02:12:06,563
+Ağaçlarla sıkı ilişki içinde graflar demiştik.
+
+1193
+02:12:06,563 --> 02:12:09,223
+hatta ağaçlar grafların özel hali demiştik.
+
+1194
+02:12:09,383 --> 02:12:14,703
+Şimdi bir verilen graf için özel bir ağaç tanımı yapmak istiyorum.
+
+1195
+02:12:14,903 --> 02:12:20,343
+Buna da asgari tarama ağacı ya da asgari örtme ağacı tam Türkçesi.
+
+1196
+02:12:20,904 --> 02:12:22,483
+İkisi de kullanılabiliyor.
+
+1197
+02:12:22,604 --> 02:12:29,003
+Tarayan ağaç, minimum tarayan ağaç ya da minimum örten ağaç gibi farklı şeyler bulabiliriz tanımlar.
+
+1198
+02:12:29,003 --> 02:12:31,784
+Ama bunun İngilizce tam fiil karşılığı span.
+
+1199
+02:12:31,784 --> 02:12:38,864
+Spend'de böyle yayılım, örtme, kaplama gibi bir anlama geliyor biliyorsunuz.
+
+1200
+02:12:39,483 --> 02:12:42,904
+Minimum spanning tree aslında yani bahsettiğimiz konu.
+
+1201
+02:12:43,364 --> 02:12:51,904
+Nasıl bir problem ya da bu nasıl ne demek minimum spanning tree bir verilen graf için askeri yayılma ağaç ne demek?
+
+1202
+02:12:52,023 --> 02:12:54,243
+Askeri örten ağaç ne demek? O probleme bakalım.
+
+1203
+02:12:54,803 --> 02:12:56,644
+Yine gerçek hayattan bir örnek vereceğim.
+
+1204
+02:12:57,104 --> 02:13:00,583
+Şimdi diyelim ki sizin bir köyünüz var. Bir köyün muhtarısınız.
+
+1205
+02:13:01,784 --> 02:13:07,644
+ve muhtar olarak sorumluluğunuz köydeki bütün evleri birbirine bağlamak.
+
+1206
+02:13:08,184 --> 02:13:13,523
+Belediye gibi yolsuz elektrik getirmeniz gerekiyor ve sorumluluğunuz şu, bütün evler birbiriyle bağlı olacak.
+
+1207
+02:13:16,943 --> 02:13:23,604
+Bir yol parçası sadece ve sadece iki tane evi birbirine bağlayabiliyor.
+
+1208
+02:13:23,604 --> 02:13:26,383
+Hani böyle çizecek olursak
+
+1209
+02:13:26,383 --> 02:13:28,484
+Diyelim şurada bir ev var
+
+1210
+02:13:28,484 --> 02:13:31,923
+Şurada bir ev var
+
+1211
+02:13:31,923 --> 02:13:33,764
+Hani şey yapamıyorsunuz
+
+1212
+02:13:33,764 --> 02:13:35,383
+Şöyle bir yol yapayım da
+
+1213
+02:13:35,383 --> 02:13:37,344
+Şuradan da şöyle vereyim
+
+1214
+02:13:37,344 --> 02:13:38,303
+Diyemiyorsunuz
+
+1215
+02:13:38,303 --> 02:13:39,824
+Bu böyle bir şey olamaz
+
+1216
+02:13:39,824 --> 02:13:41,863
+Demek ki mutlaka ben
+
+1217
+02:13:41,863 --> 02:13:44,264
+Uçları yani düğümleri
+
+1218
+02:13:44,264 --> 02:13:47,023
+Bu şekilde verilmiş olan düğümleri
+
+1219
+02:13:47,023 --> 02:13:50,684
+Birbirine bağlamam gerekecek
+
+1220
+02:13:50,684 --> 02:13:51,464
+Tamam mı?
+
+1221
+02:13:51,784 --> 02:13:52,764
+Hatta şöyle
+
+1222
+02:13:52,763 --> 02:14:16,983
+diyelim ki böyle olabilir ama ben bir muhtarım ve benim kısıtlı bir bütçem var. Kafama göre herkesi birbirine bağlayayım desem bütün evler birbirine bağlansın. İşte bunu da buraya böyle bir daha bağlıyım. Hani Ali dayıyı Hikmet amcaya bağlayayım. Ne bileyim Ayşe teyzeyi Hikmet amcaya bir daha şuradan bağlayayım.
+
+1223
+02:14:16,983 --> 02:14:44,983
+bunu şöyle yapayım buna buna bağlayayım. Bir evden en eksi bir tane kalan bütün evlere bağlantı yapayım. Çok güzel de her bir yolun bir maliyeti var ya da bir tamir masrafı var. Bir şey var yani. O zaman bunların hepsinin birer kenar ağırlığı var. Şöyle yine mesela basit olsun diye dört tane çizelim. Dediğim gibi ben şunu yapabilirim.
+
+1224
+02:14:44,983 --> 02:14:55,223
+Ali Dayı'dan Ayşe'den Banu'ya, Ayşe'den Cemile'ye, Ayşe'den Defne'ye.
+
+1225
+02:14:56,163 --> 02:15:06,623
+Aynı zamanda Banu'dan Defne'ye, şeyden neydi bu? ABC Cemre miydi? Ondan Defne'ye kim kaldı? Bir bu kaldı.
+
+1226
+02:15:07,623 --> 02:15:09,463
+Buradan da buraya.
+
+1227
+02:15:10,355 --> 02:15:16,055
+Ne yaptık? Ben hangi evden çıkarsam çıkayım diğer bütün komşularıma yarışabiliyorum.
+
+1228
+02:15:16,175 --> 02:15:18,975
+Oh çok güzel ama işte hepsinin bir maliyeti var.
+
+1229
+02:15:19,835 --> 02:15:21,855
+Mesela bu iki yol birbirine diyeyim yakın.
+
+1230
+02:15:22,515 --> 02:15:27,296
+Bunu asfalt yapmanın ya da işte bakımını yapmanın maliyeti 3 birim.
+
+1231
+02:15:28,015 --> 02:15:29,335
+Bunun maliyeti 5 birim.
+
+1232
+02:15:29,915 --> 02:15:31,276
+Bunun maliyeti 1 birim.
+
+1233
+02:15:31,835 --> 02:15:33,696
+Bunun maliyeti kaç olsun?
+
+1234
+02:15:34,696 --> 02:15:35,415
+8 birim.
+
+1235
+02:15:35,415 --> 02:15:38,435
+ondan sonra belki bunun
+
+1236
+02:15:38,435 --> 02:15:40,755
+maliyeti böyle çok uzun çizdik ya
+
+1237
+02:15:40,755 --> 02:15:42,735
+hadi ters olsun
+
+1238
+02:15:42,735 --> 02:15:43,775
+tezat 2 birim
+
+1239
+02:15:43,775 --> 02:15:45,815
+şunun da maliyeti
+
+1240
+02:15:45,815 --> 02:15:48,115
+kaç olsun 4 olsun
+
+1241
+02:15:48,115 --> 02:15:49,876
+4 birim tamam
+
+1242
+02:15:49,876 --> 02:15:52,695
+şimdi ne yaptı muhtar bu bütün yolları
+
+1243
+02:15:52,695 --> 02:15:54,256
+yaptı yaptı etti de
+
+1244
+02:15:54,256 --> 02:15:55,735
+şimdi kaç para harcadı
+
+1245
+02:15:55,735 --> 02:15:58,735
+8 11 12
+
+1246
+02:15:58,735 --> 02:16:00,076
+14
+
+1247
+02:16:00,076 --> 02:16:02,995
+19 23 birim para harcadı
+
+1248
+02:16:02,995 --> 02:16:04,855
+toplamda
+
+1249
+02:16:04,855 --> 02:16:06,936
+bütün yolları herkes mutlu
+
+1250
+02:16:06,936 --> 02:16:08,216
+herkes şey
+
+1251
+02:16:08,216 --> 02:16:09,736
+ama
+
+1252
+02:16:09,736 --> 02:16:12,256
+baktığımızda
+
+1253
+02:16:12,256 --> 02:16:14,896
+baya bir masraf
+
+1254
+02:16:14,896 --> 02:16:16,536
+yapmak zorunda kaldı ama
+
+1255
+02:16:16,536 --> 02:16:18,016
+muhtar olarak hedefim şu
+
+1256
+02:16:18,016 --> 02:16:20,735
+bütün evleri birbirine
+
+1257
+02:16:20,735 --> 02:16:22,975
+bağlayacağım yani ben bir evden
+
+1258
+02:16:22,975 --> 02:16:24,735
+çıktığımda bir şekilde
+
+1259
+02:16:24,735 --> 02:16:26,756
+köydeki bütün evlere erişebileceğim
+
+1260
+02:16:26,756 --> 02:16:28,616
+ve bunun için benim
+
+1261
+02:16:28,616 --> 02:16:30,716
+toplam harcayacağım yol masrafı
+
+1262
+02:16:30,716 --> 02:16:32,936
+en az olacak yani minimum
+
+1263
+02:16:32,936 --> 02:16:35,216
+yayılımla minimum harcamayla
+
+1264
+02:16:35,216 --> 02:16:37,016
+bütün noktaları
+
+1265
+02:16:37,016 --> 02:16:38,995
+bütün düğümleri kapsayan
+
+1266
+02:16:38,995 --> 02:16:40,756
+bir yol ağını
+
+1267
+02:16:40,756 --> 02:16:43,135
+oluşturmak istiyorum. Şimdi buradaki örneğe
+
+1268
+02:16:43,135 --> 02:16:44,135
+baktığımda mesela
+
+1269
+02:16:44,135 --> 02:16:46,256
+şöyle çözsem
+
+1270
+02:16:46,256 --> 02:16:48,315
+şuraya bir kopyasını alalım
+
+1271
+02:16:48,315 --> 02:16:51,396
+1 2 3 4 tane
+
+1272
+02:16:51,396 --> 02:16:52,616
+düğüm var. Mesela bu
+
+1273
+02:16:52,616 --> 02:16:55,216
+ikisini bir bağlasam sadece bir birim
+
+1274
+02:16:55,216 --> 02:16:57,055
+harcama yaparım. Şu
+
+1275
+02:16:57,055 --> 02:16:58,455
+ikisini de bağlasam
+
+1276
+02:16:58,455 --> 02:17:00,955
+toplam 3 birim bağlama yapmış
+
+1277
+02:17:00,955 --> 02:17:03,076
+oldum. Şu anda 3 tane
+
+1278
+02:17:03,076 --> 02:17:04,335
+düğüm birbirine bağlı.
+
+1279
+02:17:04,915 --> 02:17:06,716
+Ve şunu da bağlasam
+
+1280
+02:17:06,716 --> 02:17:08,076
+3
+
+1281
+02:17:08,076 --> 02:17:10,036
+1
+
+1282
+02:17:10,036 --> 02:17:11,635
+ve 2
+
+1283
+02:17:11,635 --> 02:17:14,915
+Çizgiler beni deli ediyor.
+
+1284
+02:17:18,415 --> 02:17:21,016
+Şuraya çizeyim bir daha. Çizmeye çalışayım.
+
+1285
+02:17:24,055 --> 02:17:25,855
+Şurada bir düğüm
+
+1286
+02:17:25,855 --> 02:17:27,615
+Şurada bir düğüm vardı.
+
+1287
+02:17:28,216 --> 02:17:30,796
+Şunu şuna bağlamanın maliyeti 3'tü.
+
+1288
+02:17:30,955 --> 02:17:33,855
+Ondan sonra bunu buna bağlamanın maliyeti 1 idi.
+
+1289
+02:17:34,855 --> 02:17:40,935
+Ve bunu da buna bağlamanın maliyeti 2 idi.
+
+1290
+02:17:41,835 --> 02:17:42,075
+Değil mi?
+
+1291
+02:17:44,815 --> 02:17:45,655
+2.
+
+1292
+02:17:45,975 --> 02:17:46,295
+Tamam.
+
+1293
+02:17:46,615 --> 02:17:47,555
+Şimdi baktığımızda.
+
+1294
+02:17:49,195 --> 02:17:52,635
+Şimdi Ayşe çıkıp Banu'ya gidebiliyor.
+
+1295
+02:17:53,455 --> 02:17:56,315
+Ayşe çıkıp Banu üzerinden Cemre'ye gidebiliyor.
+
+1296
+02:17:56,835 --> 02:17:59,375
+Ayşe çıkıp Banu üzerinden Defne'ye gidebiliyor.
+
+1297
+02:17:59,375 --> 02:18:01,695
+Banu Ayşe'ye zaten gidebiliyor.
+
+1298
+02:18:01,855 --> 02:18:03,275
+Defne'ye zaten gidebiliyor.
+
+1299
+02:18:03,395 --> 02:18:04,595
+Cemre'ye zaten gidebiliyor.
+
+1300
+02:18:04,975 --> 02:18:06,395
+En şanslısı Banu çıktı burada.
+
+1301
+02:18:08,175 --> 02:18:11,955
+Cemre Banu'ya gidebiliyor.
+
+1302
+02:18:12,095 --> 02:18:13,455
+Banu'dan Ayşe'ye gidebiliyor.
+
+1303
+02:18:13,575 --> 02:18:15,015
+Banu'dan Defne'ye gidebiliyor.
+
+1304
+02:18:15,475 --> 02:18:17,235
+Ya da Defne Banu'ya gidebiliyor.
+
+1305
+02:18:17,355 --> 02:18:20,615
+Defne Banu'dan Ayşe'ye gidebiliyor.
+
+1306
+02:18:21,095 --> 02:18:24,575
+Defne Banu'dan Cemre'ye gidebiliyor.
+
+1307
+02:18:24,655 --> 02:18:26,955
+Gördüğünüz gibi dört tane evim vardı.
+
+1308
+02:18:26,955 --> 02:18:34,775
+Ve toplamda sadece 3, 4, 6 birim masraf yaparak bütün evleri birbirine bağladım.
+
+1309
+02:18:35,395 --> 02:18:36,495
+Tutumlu muhtar.
+
+1310
+02:18:36,695 --> 02:18:37,155
+Afiyet olsun.
+
+1311
+02:18:37,235 --> 02:18:37,475
+Bravo.
+
+1312
+02:18:38,375 --> 02:18:47,775
+Yapabileceği en ucuz asfaltı atarak, yolları bağlayarak bütün 4 tane köy evini de birbirine bağlamış oldu.
+
+1313
+02:18:48,275 --> 02:18:56,235
+Peki şimdi burada 4 tane varken ben burada da özellikle de 1, 2, 8 gibi bariz rakamlar verdiğimde bunu yapmak biraz daha kolay.
+
+1314
+02:18:56,235 --> 02:18:57,695
+tabii bakarak ama
+
+1315
+02:18:57,695 --> 02:19:00,395
+sizin köyde varsa
+
+1316
+02:19:00,395 --> 02:19:02,275
+100 ev ne yapacaksınız? Nasıl
+
+1317
+02:19:02,275 --> 02:19:04,335
+bağlayacaksınız? Ve bunların hepsinin aralarındaki
+
+1318
+02:19:04,335 --> 02:19:06,235
+kenar bağlantılarının ağırlıklarını biliyor
+
+1319
+02:19:06,235 --> 02:19:08,195
+olmanız yani masraflarını biliyor olmanız lazım.
+
+1320
+02:19:08,895 --> 02:19:09,775
+Böyle verilmiş olsun.
+
+1321
+02:19:10,515 --> 02:19:23,735
+hangi kombinasyon acaba sizin için en ucuz maliyetli toplam yol ağını oluşturacaktır? Bunu nasıl bulacaksınız? İşte bu problemin çözümü minimum spanning tree probleminden geçiyor.
+
+1322
+02:19:25,215 --> 02:19:28,315
+Çözüm şu, çözümü de vermiş olayım.
+
+1323
+02:19:28,315 --> 02:19:46,376
+bir minimum spanning tree probleminde köyü yönsüz bir graf olarak modellerim. Benim için yön yok çünkü evlerin birbirine bağlı olması ya da olmaması önemli. O zaman bir GVE grafı oluşturacağım.
+
+1324
+02:19:46,376 --> 02:20:00,335
+ve her bir UV elemanıdır. Bu euro işareti gibi görünüyor ama onu siz elemanıdır diyor okuyun. Şu yani. Şuradaki elemanıdır. Onu şey bilmemizi nasıl bulamamışım.
+
+1325
+02:20:01,335 --> 02:20:10,155
+E kenarı için yani bütün kenarların içindeki her bir UV için bir WUV yani ağırlık değeri atayın. İşte bakın burada görünüyor.
+
+1326
+02:20:10,155 --> 02:20:16,696
+her bir bu köyde kaç tane ev var? 1, 2, 3, 4, 5, 6, 7, 8, 9 tane evim var.
+
+1327
+02:20:22,164 --> 02:20:24,164
+ne güzel 9 yazdı ya.
+
+1328
+02:20:24,164 --> 02:20:35,164
+ve 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14 tane yapabileceğim yol var.
+
+1329
+02:20:35,164 --> 02:20:37,164
+yol adayı var.
+
+1330
+02:20:37,164 --> 02:20:43,164
+yani ben A'la B'yi bağlayabiliyorum, o coğrafya uygun ve 11'e mal oluyor.
+
+1331
+02:20:43,164 --> 02:20:47,164
+B'le D'yi bağlayabiliyorum, o arası uygun ve 8'e mal oluyor.
+
+1332
+02:20:47,164 --> 02:21:09,344
+Ama mesela B ile E'yi direkt bağlayamıyormuşum. Neden? Arada dağ varmış ya da göl varmış. Öyle düşünün. Öyle bir coğrafyada oturuyoruz ki mesela hadi maviyi de alayım. Şuradan mesela şurada deniz ya da göl var. Şöyle bir göl varmış. O yüzden bunları böyle bağlayamıyorum.
+
+1333
+02:21:09,344 --> 02:21:16,024
+ya da burada da yine başka bir su birikintisi göl var o yüzden D ile F'yi bağlayamıyorum.
+
+1334
+02:21:16,544 --> 02:21:21,204
+Böyleymiş coğrafya o yüzden onların arasında herhangi bir bağlantı koyamam.
+
+1335
+02:21:21,943 --> 02:21:27,424
+Elimde böyle 14 tane kenar var 9 tane de birbirine bağlamam gereken düğün var yani ev var.
+
+1336
+02:21:27,424 --> 02:21:37,564
+Ne yapacağım öyle bir T ağaç tree'nin T'si alt kümesi olacak E'nin.
+
+1337
+02:21:37,564 --> 02:21:41,664
+en kötü durumda kendisine de eşit olabilir.
+
+1338
+02:21:41,903 --> 02:21:43,524
+Yani kendisi olan alt kinesi de olabilir.
+
+1339
+02:21:44,403 --> 02:21:53,104
+Bütün düğümleri bu T kenar network'ü birbirine bağlasın ya da tarasın ya da bunları örtsün
+
+1340
+02:21:53,104 --> 02:21:59,003
+ve bunun içinde toplam UV elemanıdır.
+
+1341
+02:21:59,104 --> 02:22:03,983
+T ağacından oluşan WUV değerlerinin toplamı minimum olsun.
+
+1342
+02:22:03,983 --> 02:22:13,604
+yani bunu asgari ağacın toplam ağırlığını en az en asgari değerde tutacak olan alt kümeyi bulmamız gerekecek.
+
+1343
+02:22:14,164 --> 02:22:18,564
+Şimdi ben burada 14'ün kaç tane kenar bağlamam gerekiyor?
+
+1344
+02:22:18,683 --> 02:22:21,483
+1, 2, 3, 4, 5, 6, 7, 8.
+
+1345
+02:22:21,824 --> 02:22:22,064
+Neden?
+
+1346
+02:22:22,424 --> 02:22:26,763
+V-1, 9-1, 8 tane kenar seçmem gerekiyor.
+
+1347
+02:22:26,763 --> 02:22:34,464
+öyle bir sihirli 8 kenar seçeceğim ki bu bütün 9 tane düğümü birbirine bağlayacak ve toplam maliyeti de minimum olacak.
+
+1348
+02:22:34,664 --> 02:22:38,524
+Yani WT minimum toplam UV eleman T W olacak.
+
+1349
+02:22:40,964 --> 02:22:44,583
+14 tane de şey var, kenar var.
+
+1350
+02:22:45,203 --> 02:22:50,244
+Yani hani 14'ün 8'li kombinasyonu tane olasılığım var.
+
+1351
+02:22:51,123 --> 02:22:53,063
+14'ün 8'li kombinasyonu kaç yapıyor?
+
+1352
+02:22:59,731 --> 02:23:26,431
+hesaplarsınız. Tamam mı? Bu kadar olası alt küme yani T bulabilirim. Ve bunların bir tanesi ya da birkaç tanesi toplamda en az ağırlığa yani en az toplam kenar ağırlığına sahip. İşte bütün örten ağaçlar içinde, bütün spanning tree'ler içinde ağırlıklarının toplamı en az olan ağaca,
+
+1353
+02:23:26,431 --> 02:23:36,431
+muhtarın en az para harcadığı yol ağına minimum spending tree yani asgari tarama ağacı adını veriyoruz.
+
+1354
+02:23:37,931 --> 02:23:38,772
+Evet.
+
+1355
+02:23:42,311 --> 02:23:44,831
+Minimum spending tree adını veriyoruz dedik.
+
+1356
+02:23:46,092 --> 02:23:49,451
+Bu hafta o zaman burada bir duralım artık.
+
+1357
+02:23:50,451 --> 02:23:51,631
+Daha fazla devam etmeyeyim.
+
+1358
+02:23:52,011 --> 02:23:53,931
+Minimum spending tree nasıl bulabiliriz?
+
+1359
+02:23:53,931 --> 02:23:55,531
+Önce bir jenerik yol düşüneceğiz.
+
+1360
+02:23:55,531 --> 02:24:03,412
+ondan sonra yine daha efektif acaba çözümler ya da farklı çözüm yaklaşımları getirebilir miyiz? Bunlara da bakacağız.
+
+1361
+02:24:03,871 --> 02:24:07,831
+Önümüzdeki haftada minimum spanky konusunu işlemiş olalım.
+
+1362
+02:24:09,851 --> 02:24:10,751
+3.300 ne ya?
+
+1363
+02:24:12,231 --> 02:24:12,791
+Ha şey mi?
+
+1364
+02:24:13,191 --> 02:24:14,371
+14.8'i söz o.
+
+1365
+02:24:14,371 --> 02:24:20,291
+İşte o kadarın içinde bir ya da iki ya da üç ya da bilmiyorum biraz daha fazla da olabilir.
+
+1366
+02:24:21,051 --> 02:24:25,412
+Ağaç toplamda minimum ağırlığa sahip olacak ama hangisi acaba?
+
+1367
+02:24:25,531 --> 02:24:34,131
+İşte onu bulma. Acaba hangi alt küme benim için en güzel alt küme? Minimum spelling eden tree oluşturuyor. Minimum ağırlık spelling diye oluşturuyor.
+
+1368
+02:24:34,531 --> 02:24:50,051
+Onu bulma problemini de haftaya beraber çözeceğiz. Bu hafta ödev haftası. Bir ödev de vereceğiz. Yani yine yarın hazır olursunuz. Okey?
+
+1369
+02:24:50,051 --> 02:24:55,912
+Hocam odevleri siz mi kontrol ediyorsunuz yoksa aşistanlar mı oluyor?
+
+1370
+02:24:55,931 --> 02:24:57,611
+Aşistan arkadaşlarımız kontrol ediyor.
+
+1371
+02:24:58,331 --> 02:25:01,971
+Hocam bir de vizy sonuçları ne zaman sisteme girersiniz?
+
+1372
+02:25:02,751 --> 02:25:09,071
+Valla dediğim gibi dersin başında şeyleri bitti de oturum birdekilerin hepsini okudum.
+
+1373
+02:25:09,071 --> 02:25:16,871
+Şimdi oturum birde şey gibi değil bu test gibi olmadığı için tek tek herkes de farklı yazdığı için bütün cevaplarınızı tek tek okumam gerekiyor.
+
+1374
+02:25:17,371 --> 02:25:19,631
+Ve tek tek notlandırmam gerekiyor sistemde.
+
+1375
+02:25:20,051 --> 02:25:26,391
+yani kağıtta çok daha hızlı yapabildiğimiz bir işi online'da çok daha yavaş yapabiliyoruz maalesef bu ders kapsamında.
+
+1376
+02:25:27,231 --> 02:25:31,231
+Birinci oturum bitti. İkinci oturumada baktım. Genel olarak baktım.
+
+1377
+02:25:31,671 --> 02:25:35,271
+Ama tek tek hepsini tekrar bir gözden geçirmem gerekiyor.
+
+1378
+02:25:36,171 --> 02:25:43,991
+İkincileri daha bitirmedim. Bu hafta sonuna kadar hedefim bitirip en geç bu hafta sonunda sisteme notlarınızı girmek.
+
+1379
+02:25:44,771 --> 02:25:45,391
+Hedefim bu.
+
+1380
+02:25:46,071 --> 02:25:48,411
+Hocam ödev sonuçları ne zaman açıklanır?
+
+1381
+02:25:48,411 --> 02:25:59,991
+Ödev sonuçlarını arkadaşlar kendi AVS'lerinde genellikle bir tablo ya da bir drive linki olarak paylaşıyorlar. Onların duyurularını takip etmeniz daha doğru olacaktır, daha iyi olacaktır.
+
+1382
+02:26:00,771 --> 02:26:01,631
+Teşekkürler.
+
+1383
+02:26:01,631 --> 02:26:17,091
+Rica ederim. İşte böyle bu şekilde arkadaşlar ödevimizi de hatırlatmış olalım ve bir yandan ya bu hafta en geç önümüzdeki haftaya kadar da yapacağınız dönem projesinin de tanımını sizlerle paylaşmış olacağız.
+
+1384
+02:26:17,092 --> 02:26:30,392
+dördüncü olarak onu da unutmamış olalım. Peki o zaman bu haftalık bu kadar. Ödevde başarılar ve iyi haftalar diliyorum. Hoşçakalın.
+
+1385
+02:26:31,571 --> 02:26:32,731
+Sağ olun hocam. İyi günler.

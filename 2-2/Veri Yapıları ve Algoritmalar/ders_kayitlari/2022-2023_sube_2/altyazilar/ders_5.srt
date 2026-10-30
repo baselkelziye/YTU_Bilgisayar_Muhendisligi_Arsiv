@@ -1,0 +1,3947 @@
+1
+00:03:37,812 --> 00:04:03,152
+Hoşgeldiniz arkadaşlar. Saat 1-5 geçe kadar bekliyoruz biliyorsunuz bağlantılar sorunsuz bir şekilde sağlansın diye. Öncelikle güzel bir hafta diliyorum hepinize. Şu an yaklaşık 30 kişi civarındayız. Muhtemelen önümüzdeki 5 dakika içerisinde de aramıza katılanlar olacaktır. Biz yavaş yavaş başlayalım zamanı verimli kullanmak adına.
+
+2
+00:04:03,152 --> 00:04:09,892
+Bu hafta recursion ile ilgili bazı örnekler çözeceğiz birlikte.
+
+3
+00:04:10,411 --> 00:04:17,451
+Aynı zamanda linkli liste yapısını bir veri yapısı olarak sizlerle paylaşacağım, anlatacağım.
+
+4
+00:04:17,451 --> 00:04:22,572
+Artı, eksi yönleri neler, nerelerde kullanıyoruz? Bunlardan bahsetmeye çalışacağım.
+
+5
+00:04:23,371 --> 00:04:25,431
+Ekranımı paylaşayım.
+
+6
+00:04:25,431 --> 00:04:37,431
+tabi bu arada yorum yapmak isteyen olursa sorusu an olursa onu da chat üzerinden ya da söz isteyerek gerçekleştirebiliriz.
+
+7
+00:04:37,531 --> 00:04:41,172
+Şimdi özellikle bu kısmı göstermek istiyorum.
+
+8
+00:04:41,331 --> 00:04:44,471
+Burada bir arkadaşınız bana mail attı.
+
+9
+00:04:44,931 --> 00:04:45,951
+Ona da teşekkür ediyorum.
+
+10
+00:04:46,511 --> 00:04:47,871
+Bir hatadan bahsetti.
+
+11
+00:04:48,651 --> 00:04:53,571
+Bu algoritmada bu hatırlarsanız asal sayı bulma algoritmasıydı.
+
+12
+00:04:53,571 --> 00:05:02,611
+iki tane farklı bakış açısını anlatırken ikisinin kombini burada kalmış değişiklik yaparken onu düzeltmek istiyorum.
+
+13
+00:05:02,611 --> 00:05:14,331
+O hata da şu üzerinde göstereyim. Şuradaki kontrol ü eşit mi x'e kontrolü aslında teknik olarak x'e olmaması lazım çünkü zaten x'in kare kökünü alıyoruz.
+
+14
+00:05:14,891 --> 00:05:23,551
+Yani kare köke kadar gitmemiz lazım. ü eşit sınır mı ya da sınır artı bir mi diye de bakabilirdik ama daha net anlaşıldı.
+
+15
+00:05:23,571 --> 00:05:34,291
+çalışması açısından buraya x mod ı eğer sıfırdan farklı ise o zaman bu bir prime number'dır.
+
+16
+00:05:34,651 --> 00:05:40,331
+D ise bu bir prime number değildir. Kontrolü yaparak gerekli düzeltmeleri yapabilirsiniz.
+
+17
+00:05:41,011 --> 00:05:48,711
+Aynı zamanda şurada yaradan eşittir ifadesi de küçük olarak kalacak.
+
+18
+00:05:48,711 --> 00:06:08,251
+Bu şekilde yaptığımız zaman sorunsuz bir şekilde çalışıyor olması gerekiyor. Daha önceki versiyon aslında kare köküne kadar değil sayının kendisine kadar gittiğimiz versiyonu dikkate alarak çizdiğimiz akış diagramı idi.
+
+19
+00:06:08,251 --> 00:06:16,491
+Ama tabii oynamalar yapıyoruz, yeni versiyonu anlatıyoruz vs. I eşittir X olarak kalmış onu düzeltmiş olmak istiyorum.
+
+20
+00:06:16,491 --> 00:06:32,111
+Bunun dışında gösterdiğimiz akış diagramlarında ya da kodlarda herhangi bir tespitiniz olursa benimle paylaşırsanız her zaman geri dönüp gerekli düzeltmeleri yaparız.
+
+21
+00:06:32,111 --> 00:06:35,191
+Şimdi biz kendi konumuza geri dönelim.
+
+22
+00:06:39,891 --> 00:06:46,231
+Recursion ve iteration'ı karşılaşıyorduk. Problemleri recursif ya da iteratif olarak çözüyoruz demiştik.
+
+23
+00:06:46,231 --> 00:06:56,291
+geçen hafta aralarındaki farkı anlatmıştık ve örnekler üzerinden ilerlemeye başlamıştık ki faktoryal örneğini vermiştik.
+
+24
+00:06:56,951 --> 00:07:10,672
+Burada base condition olarak durma noktası olarak belirlediğimiz işte n'in 1'e eşit ve birden büyük olma durumunda daha doğrusu birden küçük olma durumunda 1 döndürdüğünü
+
+25
+00:07:10,672 --> 00:07:21,752
+onun dışındaki senaryolarda fonksiyonun kendi kendini çağırdığını ve her çarpım değerini de bir sonraki turda yukarı çarparak geri gönderdiğini söylemiştik.
+
+26
+00:07:23,192 --> 00:07:25,011
+Recursive fonksiyonlar
+
+27
+00:07:25,427 --> 00:07:39,747
+hangi noktaya bellekteki dönüleceğini stack üzerinde saklıyorlar. O yüzden recursion ne kadar derine inerse, öz yinelemeli fonksiyon diyoruz Türkçede, ne kadar fazla kendi kendini çağırırsa fonksiyon,
+
+28
+00:07:39,747 --> 00:07:50,188
+steyin belirli bir bellekte alanı var. O alan her çağırdığında dolduğu için günün sonunda stack overflow oluşma durumu var.
+
+29
+00:07:50,567 --> 00:07:54,108
+Hatta bununla ilgili bir web sitesi de var biliyorsunuz, birçok problemi konuşuldu.
+
+30
+00:07:54,108 --> 00:08:09,308
+Stack Overflow siteyin alabileceğinden daha fazla veri ile doldurulmaya çalışması durumunda bir hata üretmesi ve sonuçta segmentation fault ile sonuçlanması programımızın.
+
+31
+00:08:09,308 --> 00:08:18,188
+Bu anlamda da stack boyutunuzun ne olduğunu yapacağımız özellikle recursive işlerde bilmeniz önemli.
+
+32
+00:08:20,368 --> 00:08:23,648
+Nerelerde işimize yarayabileceğinden de bahsetmiştik.
+
+33
+00:08:24,108 --> 00:08:36,048
+işte tree, graph algoritmaları, backtracking algoritmaları vs. bunların örneklerini hem bu dersin içerisinde hem de önümüzdeki sene algoritmalarımızın içerisinde görüyor olacaksınız.
+
+34
+00:08:36,048 --> 00:08:47,008
+Şimdi link listeye geçmeden önce hemen bir sayfa ekleyeyim buraya. Evet şimdi burada birkaç problemi ele alacağız recursion ile ilgili.
+
+35
+00:08:49,688 --> 00:08:52,948
+Recursive problemler diye başlığımıza atalım.
+
+36
+00:08:56,467 --> 00:09:19,327
+Bunlardan bir tanesi iki sayının birbiriyle çarpılması problemi. Buradaki amacımız problemin recursif olarak çözülmesinin verimliliğini aktarmak değil aslında size. Bir problemi recursif olarak nasıl ele alırsınız, nasıl tasarlarsınız bunu gösterecek örnek problemler paylaşacağım bugün.
+
+37
+00:09:19,327 --> 00:09:31,127
+Yoksa bu problemde aslında iki sayıyı birbiriyle çarparken teknik olarak zaten iki sayıyı doğrudan çarpma işlemiyle çarpıyoruz.
+
+38
+00:09:31,127 --> 00:09:38,947
+Örneğin x5, y'nin 3 olduğu durumda sonucumuz 15 olması gerekecek.
+
+39
+00:09:38,947 --> 00:09:51,667
+işte diyelim ki x'in 50 olduğu durumda y'nin de 5 olduğu durumda sonucumuzun 250 olması gerekecek.
+
+40
+00:09:53,808 --> 00:09:57,267
+Şöyle yazalım problemimizin de ne olduğunu.
+
+41
+00:09:58,487 --> 00:10:00,368
+Product of two numbers diyelim.
+
+42
+00:10:04,724 --> 00:10:15,883
+Şimdi iki sayının çarpma işlemi aslında bu iki sayıdan bir tanesinin diğeri kadar kendisiyle toplanması sonucu oluşan değeri bize veriyor.
+
+43
+00:10:15,983 --> 00:10:22,923
+Yani örneğin x5, y3, 3 defa 5'i 5 artı 5 artı 5 diye topladığınızda 15 50 ediyorsunuz.
+
+44
+00:10:22,923 --> 00:10:31,683
+Aynı şekilde alttaki örnekte de 50 sayısını 5 defa topladığınızda 250 değerini elde etmiş oluyorsunuz.
+
+45
+00:10:31,683 --> 00:10:44,224
+Buradaki recursive yaklaşımda her adımda aslında işte for döngüsüyle de bunu yapabilirsiniz ama bunu recursive olarak yapsaydık nasıl bir durumla karşılaşırdık, nasıl tasarlamamız gerekirdi.
+
+46
+00:10:44,224 --> 00:10:56,944
+Bunun şimdi kod parçasını yazacağız. Burada büyük daha doğrusu küçük olan kadar adımda toplama işlemini gerçekleştirmek daha akıllıca.
+
+47
+00:10:56,943 --> 00:11:05,003
+5 defa 50'yi toplamak yerine 50 defa 5'i toplamak aslında çok mantıklı olmayacaktır.
+
+48
+00:11:05,183 --> 00:11:15,283
+Bu nedenle küçük büyük kontrol yapıp ilgili iki sayı arasında küçüğe göre recursif olarak fonksiyonu çağırmak da akıllıca olacaktır.
+
+49
+00:11:15,283 --> 00:11:16,023
+Hemen yazalım.
+
+50
+00:11:16,023 --> 00:11:28,243
+bir product isimli bir fonksiyonumuz olsun int x ve int y'de gönderdiğimiz iki tane parametre olsun.
+
+51
+00:11:28,243 --> 00:11:35,463
+Bu noktada if x y'den küçük mü diye bir kontrol koyalım.
+
+52
+00:11:35,463 --> 00:11:50,023
+Eğer öyleyse return product yx olarak yerlerini değiştirerek yazalım.
+
+53
+00:11:50,023 --> 00:11:57,724
+Tabi bu biraz önce söylediğim verimliliği sağlamak için yaptığımız bir işlem.
+
+54
+00:11:57,724 --> 00:12:07,344
+ama asıl işlem yani burada işte y defa x'i toplama işlemi şu şekilde gerçekleşiyor.
+
+55
+00:12:07,344 --> 00:12:20,423
+As if y farklı olduğu sürece sıfır diyoruz ve return burada her adımda x'i toplayacağımızı biliyoruz.
+
+56
+00:12:20,423 --> 00:12:30,043
+x artı diyoruz ve şimdi bu fonksiyonu kendini çağırdığı noktaya geliyoruz.
+
+57
+00:12:30,183 --> 00:12:31,243
+Product diyoruz.
+
+58
+00:12:31,884 --> 00:12:34,483
+Çünkü her çağırdığında bir toplama yapacak.
+
+59
+00:12:35,543 --> 00:12:37,283
+x'i gönderiyoruz.
+
+60
+00:12:37,743 --> 00:12:39,084
+Çünkü onu toplayacağız.
+
+61
+00:12:40,483 --> 00:12:42,823
+Ve y-1'i gönderiyoruz.
+
+62
+00:12:42,823 --> 00:12:53,403
+Bu da bize en sonunda y'nin her kendini çağrında bir azaldığında sıfıra kadar ilerleyeceğini gösteriyor.
+
+63
+00:12:53,403 --> 00:12:58,003
+Örneğin 50 ile başladınız, 55 gönderdiniz diyelim.
+
+64
+00:12:59,023 --> 00:13:04,163
+Her taraf bakıyor y sıfırdan farklı mı? Evet farklı, 5.
+
+65
+00:13:04,383 --> 00:13:08,303
+Sonra bu sefer 50 artı 54 gönderiyor.
+
+66
+00:13:09,063 --> 00:13:11,643
+Yani şöyle oluyor yan tarafa başka bir renkle yazalım.
+
+67
+00:13:12,823 --> 00:13:34,763
+50 artı product 54 gönderiyor. Sonra bir sonraki turda bu sefer 50 artı 50 product 53 gönderiyor. Bu böyle devam ediyor.
+
+68
+00:13:34,763 --> 00:13:55,823
+En sonunda buradaki değer şu 3 değeri 0'a geldiği zaman fonksiyon kendini çağırmayı bırakıyor ve doğrudan as diyelim return 0 değerini bize döndürüyor.
+
+69
+00:13:55,823 --> 00:14:01,923
+Çünkü zaten son adıma geldiğimizde herhangi bir ekleme çıkarma yapmayacağız.
+
+70
+00:14:05,172 --> 00:14:19,491
+Evet, bir problemde, iki sayıyı çarpma probleminde bunu çarpma kullanmadan sadece toplama kullanarak ve recursive olarak ele alsaydık nasıl yapmamız gerektiğini görüyorsunuz.
+
+71
+00:14:19,491 --> 00:14:32,871
+Olmazsa olmazımız, şurada bir base condition'ımız var. Şurada bir fonksiyonun kendini çağırdığı yer var.
+
+72
+00:14:32,871 --> 00:14:39,091
+şöyle yazalım, base condition, ve self call.
+
+73
+00:14:42,676 --> 00:14:52,855
+ve şurada da şu gördüğünüz noktada da her turda bir artı işlemiyle değeri bir üst fonksiyona aktarıyoruz.
+
+74
+00:14:53,035 --> 00:14:59,715
+En alttan bir 50 geliyor. O 50 bir sonraki 50'ye ekleniyor. Bu şekilde 250'ye kadar gitmiş oluyoruz.
+
+75
+00:14:59,776 --> 00:15:00,856
+Buraya kadar soru soru var mı?
+
+76
+00:15:08,052 --> 00:15:10,292
+Peki, o zaman ikinci örneğe geçebiliriz.
+
+77
+00:15:15,635 --> 00:15:16,635
+şöyle yapalım.
+
+78
+00:15:19,635 --> 00:15:20,635
+ikinci örnekte
+
+79
+00:15:28,628 --> 00:15:36,068
+yine basit bir örnekle devam ediyor olacağız. Bu sefer verilen bir sayının dijitlerini topluyor olacağız.
+
+80
+00:15:38,487 --> 00:15:53,427
+Yani 1234, 1 artı 2 artı 3 artı 4'ten 10 değerini elde ediyor olmamız gerekiyor. Bunu yapmak için yine dediğim gibi iteratif yaklaşım kullanılabilir.
+
+81
+00:15:53,427 --> 00:16:09,087
+Ama bizim amacımız problemleri recursif çözmemiz gerekseydi nasıl tasarlarız bunu açıkçası birlikte anlamaya çalışmak ve bunu tasarlamak bizim için önemli olan.
+
+82
+00:16:09,947 --> 00:16:13,348
+Şimdi bununla ilgili problemi de şöyle yazalım.
+
+83
+00:16:39,539 --> 00:17:07,659
+Evet. Şimdi burada int sum of digits diyelim. Bir tane sayının kendisini göndermem teknik olarak yetecek olması lazım. Bir önceki örnekte iki tane farklı parametre vardı ve ikisini de kullanacağımız için bu noktada
+
+84
+00:17:07,659 --> 00:17:33,639
+ikisini birden pas etmiştik. Bir sayı gönderdik. Bu sayının 1234'ün rakamlarının toplamını bulmaya çalışıyoruz. Durma noktası olarak n'in sıfıra eşit olma koşulunu belirliyorum. Bu koşulda sıfır döndüreceğim. Bir de bunun else kulu var.
+
+85
+00:17:33,639 --> 00:17:39,779
+else yazmayıp doğrudan true koluna girmezse zaten bir sonraki stebe geçeceği için kod.
+
+86
+00:17:39,779 --> 00:18:00,579
+Return yazıyorum ve n mod 10 artı sum of digits deyip buraya bir parametre pas etmem gerekiyor.
+
+87
+00:18:00,580 --> 00:18:10,160
+şuradan geri alalım şunu. Şöyle yapalım ve burayı sonlandırayım. Buraya parametre olarak ne pas etmeliyim?
+
+88
+00:18:12,580 --> 00:18:15,340
+n bölü 10. n bölü 10. Teşekkür ederim.
+
+89
+00:18:18,932 --> 00:18:28,932
+Burada yapmak istediğim şey her turda elimdeki rakamın birler basamanın değerini alıp toplama eklemek.
+
+90
+00:18:29,732 --> 00:18:36,291
+Önce 1234'ü gönderdim. 1234'ün modunu aldığımda ona göre 4 değerini alacağım.
+
+91
+00:18:36,291 --> 00:18:42,211
+doğal olarak 4 artı sum of digits
+
+92
+00:18:46,003 --> 00:19:05,264
+n bölü 10 dediğinizde 1234'ü tam sayı bölmesi yaptığınızda 123'ü göndermiş olacaksınız. Bir sonraki adımda 4 artı bu sefer 123'ün modunu aldığınızda ona göre 3 olacak elinizde. sum of digits
+
+93
+00:19:07,988 --> 00:19:27,467
+12 olacak. Bir sonraki turda 4 artı 3 artı 2 sum of digits. Burada başka kontrollerle başka base condition da yazabilirsiniz. İlla benim yazdığım gibi olmak zorunda değil. Farklı şeyler de olabilir.
+
+94
+00:19:27,467 --> 00:19:44,047
+1 dediğinizde 4 artı 3 artı 2 artı 1. En son sum of digits artık 1 bölü 10 yaptığınızda sıfır değeri elde edeceğiniz için sıfır gidecek.
+
+95
+00:19:44,047 --> 00:19:52,767
+Sıfır gittiğinde de bize sıfır dönecek buradan ve bunlar yukarı doğru iletildiklerinde sıfır artı 1 artı 2 artı 3 artı 4 olacak.
+
+96
+00:19:52,767 --> 00:20:14,967
+Şunu hatırlatmakta fayda var. Recursion dediğiniz zaman stackteki prensip LIFO'dur. Last in, first out'dur. O yüzden first in aynı zamanda last out'dur. Bu da ne demek?
+
+97
+00:20:14,967 --> 00:20:31,927
+siz oraya işte 1234 değerini gönderdiğinizde en aşağıya inene kadar bu devam edecek ve sırayla yukarı doğru değerleri elde ediyorsunuz anlamına gelecektir.
+
+98
+00:20:32,107 --> 00:20:40,327
+Çağırma sırasına bağlı olarak çünkü her turda en aşağıya kadar gitmeniz gerekiyor base condition'e kadar.
+
+99
+00:20:40,327 --> 00:20:48,947
+Base Condition'dan 0 dönecek sonra işte 1 dönecek sonra 2 dönecek şeklinde düşünebilirsiniz.
+
+100
+00:20:50,067 --> 00:20:51,407
+Buraya kadar sorusu olan var mı?
+
+101
+00:20:58,675 --> 00:21:00,775
+Peki, o zaman devam edelim.
+
+102
+00:21:12,948 --> 00:21:28,147
+üçüncü problemimize gelelim. Ne varmış listede bakayım. Tamam o zaman şöyle yapalım. Bir tane değişik bir örnek olsun.
+
+103
+00:22:26,740 --> 00:22:32,120
+Evet, sanırım şu örnek üzerinden ilerlememiz mantıklı olabilir.
+
+104
+00:22:43,508 --> 00:22:52,067
+Şimdi verilen bir sayının palindrom özelliği taşıyıp taşımadığını bulmak istiyoruz.
+
+105
+00:22:52,167 --> 00:23:03,407
+Palindrom özelliği ne demek? Tersten yazıldığında da stringin ya da sayının aynı düz haliyle aynı ifadeyi vermesi olarak biliyoruz.
+
+106
+00:23:03,407 --> 00:23:13,407
+İşte 2002'yi tersten yazdığımızda böyle ama 1234'ü tersten yazdığımızda 4321 ile karşılaşıyorsunuz.
+
+107
+00:23:13,508 --> 00:23:23,908
+Burada önemli olan şey şu, sizin bu verilen sayının palindrom özellik taşıyıp taşımadığını bulmanız.
+
+108
+00:23:24,287 --> 00:23:26,688
+Bunu iteratif olarak yine söylediğim gibi yapabilirsiniz.
+
+109
+00:23:26,908 --> 00:23:29,348
+İlla 4 basamaklı olmak zorunda değil.
+
+110
+00:23:29,908 --> 00:23:32,987
+İşte 3 basamaklı bir sayı da palindrom özelliği taşıyabilir.
+
+111
+00:23:33,868 --> 00:23:36,467
+Ya da daha uzun bir sayı da palindrom özelliği taşıyabilir.
+
+112
+00:23:36,467 --> 00:23:47,267
+İşte 5, 7, 6, 7, 5 şeklindeki bir sayıda yine palindrom özelliği taşıyabilir.
+
+113
+00:23:52,564 --> 00:24:21,963
+bu da node palindrom diyelim. Aynı şey tabii ne diyelim şurada da geçerli mesela ABV string dediğinizde bu da bir palindrom özelliği taşıyor. Ama işte baba yazdığınızda bu bir palindrom özelliği taşımıyor.
+
+114
+00:24:21,963 --> 00:24:26,284
+yeni duyanlar için özellikle söylüyorum.
+
+115
+00:24:26,383 --> 00:24:30,943
+Çünkü çoğunuz aslında bunu zaten daha önce gördünüz ve bu problemi çözdünüz.
+
+116
+00:24:31,924 --> 00:24:34,883
+Şimdi sizden isteyeyim saat 13.25.
+
+117
+00:24:36,223 --> 00:24:43,763
+Bir 3-4 dakika içerisinde bu problemi recursif olarak çözmeye çalışmanız.
+
+118
+00:24:43,763 --> 00:24:49,983
+Bir kağıt kalem alıp acaba bu problemi recursif olarak çözebiliyor musunuz?
+
+119
+00:24:50,023 --> 00:24:50,383
+Bir bakalım.
+
+120
+00:24:50,383 --> 00:24:53,064
+Evet size 3-4 dakika veriyorum.
+
+121
+00:28:34,324 --> 00:28:38,583
+Evet arkadaşlar, bir çözüm geliştirebilen oldu mu?
+
+122
+00:28:59,827 --> 00:29:05,827
+O zaman isterseniz çözümle devam edelim. Yorum yapmak istemiyorsunuz.
+
+123
+00:29:06,867 --> 00:29:15,967
+Şimdi öncelikle bir tane TMP değer belirliyorum. Ve stratejimi şu şekilde kuracağım.
+
+124
+00:29:15,967 --> 00:29:23,327
+Ben bunu şu yönde zaten biliyorum değerinin ne olduğunu.
+
+125
+00:29:23,327 --> 00:29:31,047
+sağdan sola doğru hareket etseydim de aynı değeri elde ediyor muydum?
+
+126
+00:29:31,047 --> 00:29:32,747
+Buna bakacağım.
+
+127
+00:29:33,168 --> 00:29:37,127
+Burada C'nin bir özelliğinden faydalanacağım.
+
+128
+00:29:37,987 --> 00:29:43,627
+Statik olarak tanımlayacağım değişkenimin ismini ve tipini.
+
+129
+00:29:43,627 --> 00:29:55,147
+tipi statik tanımladığımda fonksiyona her çağırdığımızda bu değer kaldığı yerden değerini artırmaya devam edecek.
+
+130
+00:29:55,247 --> 00:29:56,747
+Her seferinde sıfırlanmayacak.
+
+131
+00:29:57,127 --> 00:29:59,227
+Biliyorsunuz statik keyword'ı bu işe yarıyordu.
+
+132
+00:29:59,747 --> 00:30:04,868
+Fonksiyon her çağrıldığında değer nerede kaldıysa o noktadan itibaren devam ediyordu.
+
+133
+00:30:04,868 --> 00:30:17,008
+numbrım sıfırdan farklı olduğu sürece bir parantez açacağım.
+
+134
+00:30:17,008 --> 00:30:19,188
+tmp diyeceğim.
+
+135
+00:30:21,188 --> 00:30:25,908
+number mod 10 diyeceğim.
+
+136
+00:30:26,628 --> 00:30:30,027
+Böylece ilgili değeri alacağım.
+
+137
+00:30:30,607 --> 00:30:33,008
+Sonra sum eşittir.
+
+138
+00:30:33,008 --> 00:30:43,287
+sum çarpı 10 artı tmp diyeceğim.
+
+139
+00:30:43,287 --> 00:31:01,287
+Ve sonra da reverse number bölü 10 diyerek fonksiyonun kendi kendini çağırmasını sağlayacağım.
+
+140
+00:31:01,287 --> 00:31:27,708
+sağlayacağım. Elsine'de return sum diyeceğim. Bu noktada şöyle bir şeyle karşılaşıyoruz. İlk etapta işte 2002 sayısını ele alalım. 2002 sayısının reverse fonksiyonuna döndürdüm. Gönderdim özür dilerim. Gönderdiğimde ilk yapacağı işlem number 0'dan farklı mı diye bakacak.
+
+141
+00:31:27,707 --> 00:31:33,427
+number 0'dan farklıysa burada mod 10'unu alıyorduk hatırlarsanız.
+
+142
+00:31:33,427 --> 00:31:35,047
+Mod 10'u aldığımızda 2'yi alacağız.
+
+143
+00:31:35,947 --> 00:31:43,267
+2'yi aldıktan sonra sum 0 zaten 0 çarpı 10 artı 2 diyeceğiz.
+
+144
+00:31:43,827 --> 00:31:46,847
+Sum'ın yeni değeri 2 olacak.
+
+145
+00:31:48,067 --> 00:31:49,927
+Ve fonksiyon kendini çağıracak.
+
+146
+00:31:50,047 --> 00:31:57,627
+Bu sefer kendini çağırırken fonksiyon reverse 200 değerini pas etmiş olacağız.
+
+147
+00:31:57,707 --> 00:32:04,887
+200 değerine pas ettikten sonra bu sefer number 0'dan farklı mı diye bakacağız.
+
+148
+00:32:04,887 --> 00:32:10,487
+Farklı. Farklı olduğu için tekrar if'in true koluna gireceğiz.
+
+149
+00:32:11,107 --> 00:32:16,907
+Bu sefer TMP'nin değeri modu aldığımız için 0 olacak.
+
+150
+00:32:18,767 --> 00:32:21,507
+Bir önceki turdan sum'un değeri 2 idi.
+
+151
+00:32:21,507 --> 00:32:27,927
+2x10'dan sum'ın yeni değeri 20 artı 0 olacak.
+
+152
+00:32:28,207 --> 00:32:31,027
+Sum'ın yeni değeri 20 olacak.
+
+153
+00:32:32,907 --> 00:32:39,207
+Bir sonraki turda bu sefer reverse'e 20 değerini göndereceğiz.
+
+154
+00:32:39,207 --> 00:32:45,367
+20 değerini gönderdiğimizde yine modunu aldığımızda 0 değeri gelecek tmp'ye.
+
+155
+00:32:45,367 --> 00:32:53,207
+sum bu sefer 20 çarpı 10'dan dolayı 200 olacak.
+
+156
+00:32:53,807 --> 00:32:55,187
+Üzerine artı 0 gelecek.
+
+157
+00:32:55,407 --> 00:32:57,647
+Yeni değeri sum'ın 200 olacak.
+
+158
+00:32:57,647 --> 00:32:58,327
+Son olarak
+
+159
+00:32:58,784 --> 00:33:08,124
+reverse 2'yi gönderdik. Çünkü 10'a bölerek gönderiyoruz. Bu sefer tmp değerimiz 2 olacak.
+
+160
+00:33:09,683 --> 00:33:15,663
+sum değerimiz de 200 çarpı 10'dan 2000 artı 2 olacak 2002.
+
+161
+00:33:17,503 --> 00:33:23,423
+Tabii son olarak reverse 2 bölü 10 yani 0'ı göndermemiz gerekiyor.
+
+162
+00:33:23,423 --> 00:33:37,183
+0'ı gönderdiğimizde de bize number 0'dan farklılıyor. Hayır değil o zaman return sum diyeceğiz. Sum'ın değeri 2002 olduğu için 2002 değerine dönecek. Buradan yapmamız gerekiyor.
+
+163
+00:33:49,107 --> 00:33:52,667
+Orijinal sayıyla sam'ı karşılaştıracağız.
+
+164
+00:33:52,667 --> 00:33:54,088
+Teşekkür ederim.
+
+165
+00:33:54,447 --> 00:33:54,927
+[öğrenci].
+
+166
+00:33:55,607 --> 00:34:05,068
+Arkadaşınızın söylediği gibi bu sayının tersini alıp değerini hesaplayan bir recursif fonksiyon.
+
+167
+00:34:05,327 --> 00:34:11,687
+Ana fonksiyonu da yapmamız gereken şey buradan sonda dönen sayı ile orijinal sayı aynı mı?
+
+168
+00:34:11,687 --> 00:34:26,367
+aynı ise palindrom değil ise palindrom değil diyerek ana programda problemimizin çözümünü ekrana yazdıracak kodları yazıyor olacağız.
+
+169
+00:34:27,207 --> 00:34:32,627
+Sorusu olan var mıdır bu yeni recursive problemimizle ilgili?
+
+170
+00:34:37,108 --> 00:34:40,627
+Peki, o zaman devam edelim.
+
+171
+00:34:46,579 --> 00:34:59,960
+Şimdi başka bir örneğimiz var mı diye bakıyorum. Evet bir tane daha var. Recursive problem. 4 yazalım.
+
+172
+00:35:03,572 --> 00:35:23,252
+Burada da aslında bilinen bir problemi yine recursive olarak çözseydik nasıl bir kurgu yapmamız gerekirdi onu ele alalım istedim. Bu da bir sayının asal sayı olup olmadığını recursive bir yaklaşımda buluyor olsaydık nasıl bir şey yazabilirdik bir ona bakalım.
+
+173
+00:35:23,252 --> 00:35:28,811
+int diyelim is prime diyelim.
+
+174
+00:35:28,811 --> 00:35:36,191
+Buraya int n sayı gönderelim ve şöyle yapalım.
+
+175
+00:35:38,031 --> 00:35:39,891
+int i diyelim.
+
+176
+00:35:43,171 --> 00:35:50,912
+Ve base case'mizde if küçük eşit iki olarak belirleyelim.
+
+177
+00:35:50,912 --> 00:35:53,691
+return diyelim.
+
+178
+00:35:58,132 --> 00:35:59,771
+n, iki ise
+
+179
+00:35:59,771 --> 00:36:03,572
+bir döndürelim.
+
+180
+00:36:05,191 --> 00:36:11,191
+Değil ise sıfır döndürelim. Bu yazım şeklini biliyor olmanız gerekiyor C programlama dilinden.
+
+181
+00:36:12,871 --> 00:36:14,632
+Bir sonraki adımda if
+
+182
+00:36:14,632 --> 00:36:17,711
+mod diyelim
+
+183
+00:36:17,711 --> 00:36:20,132
+y diyelim
+
+184
+00:36:20,132 --> 00:36:22,351
+sıfıra eşit mi diye kontrol edelim.
+
+185
+00:36:24,351 --> 00:36:26,211
+Eğer sıfıra eşitse
+
+186
+00:36:26,211 --> 00:36:33,251
+yani bölünebiliyorsa o zaman otomatik olarak bu sayı prime değildir. Return 0 diyelim.
+
+187
+00:36:35,312 --> 00:36:36,191
+As yazmayayım.
+
+188
+00:36:39,956 --> 00:36:41,615
+i çarpı i yazayım.
+
+189
+00:36:43,956 --> 00:36:44,995
+Yüklenmeliyim.
+
+190
+00:36:47,896 --> 00:36:49,155
+Eğer böyleyse de
+
+191
+00:36:49,155 --> 00:36:51,555
+return 1.
+
+192
+00:36:58,228 --> 00:37:03,608
+Buraya kadar olan yazımda fonksiyonu kendi kendine çağırmadık.
+
+193
+00:37:05,827 --> 00:37:09,568
+Burada genel olarak base conditionlarımızı yazdık.
+
+194
+00:37:10,047 --> 00:37:11,807
+Ama bir de kendi kendine çağırmamız gerekiyor.
+
+195
+00:37:11,807 --> 00:37:22,007
+Son olarak return diyorum, is prime diyorum ve bir parantez açıp kapıyorum.
+
+196
+00:37:22,007 --> 00:37:32,467
+son olarak da is prime isimli fonksiyonumun noktaladığını gösteren süslü parantezi koyuyorum.
+
+197
+00:37:33,387 --> 00:37:37,747
+Buraya parametre olarak ne göndermeliyim kendi kendini çağırdığında?
+
+198
+00:37:44,532 --> 00:38:05,491
+Teşekkürler Hüsamettin. Chatten yazdı. n i artı bir. Peki, şimdi nasıl işliyor bu iş? Bir de buna bakalım. Diyelim ki kaç olsun? 11 olsun. 11 sayısına bakacağız.
+
+199
+00:38:07,311 --> 00:38:13,071
+Şuraya ana fonksiyonundan is prime'ı çağırdığımızda ilk değer olarak ne göndermeliyiz?
+
+200
+00:38:14,532 --> 00:38:16,132
+i'nin olduğu yere
+
+201
+00:38:20,148 --> 00:38:37,588
+3 değil, 2 olması gerekiyor. Tabi bu kodun bu şekilde yazılmış olduğunu varsayarsak 2 ile başlamamız gerekiyor. Eğer kod farklı bir şekilde dizayn edilirse 3'ten de başlatabiliriz. Neden olduğuna gelelim.
+
+202
+00:38:37,588 --> 00:38:53,447
+n işte 11 seçildi diyelim bu örnekte bu doğrudan 2 olarak gönderdiğimiz bir değer bu 11 ise her türda değişebilir bu kullanıcının girdiği değer 2 sabit bir değer
+
+203
+00:38:53,447 --> 00:39:06,588
+başlıyoruz 11 küçük eşit 2 mi diye hayır değil sonra 11 mod 2 diyoruz 2'ye bölünüp bölünmediğini kontrol etmemiz gerekiyor
+
+204
+00:39:06,587 --> 00:39:10,027
+3 dersek 2'ye bölüp bölünmediğini kontrol etmemiş oluruz.
+
+205
+00:39:10,427 --> 00:39:12,347
+11 mod 2 dediğimizde sıfıra eşit mi?
+
+206
+00:39:12,807 --> 00:39:13,127
+Değil.
+
+207
+00:39:14,047 --> 00:39:17,027
+Olmadığı için otomatikman true kolunu geçtik.
+
+208
+00:39:17,867 --> 00:39:18,987
+Bir sonraki if'e geçtik.
+
+209
+00:39:19,687 --> 00:39:22,247
+Artık buraya else if yazmamıza gerek yok çünkü return'ler var.
+
+210
+00:39:23,107 --> 00:39:25,688
+i çarpı i büyük mü end'e bakıyoruz.
+
+211
+00:39:25,787 --> 00:39:28,567
+2 çarpı 2 büyük mü 11'den?
+
+212
+00:39:28,648 --> 00:39:29,127
+Hayır değil.
+
+213
+00:39:29,127 --> 00:39:32,127
+O zaman o if'i de atladık.
+
+214
+00:39:32,648 --> 00:39:33,747
+Is prime'ı çağırıyoruz.
+
+215
+00:39:33,747 --> 00:39:39,967
+is prime önce ilk adımda 11'e 2 ile çağrılmaya başlanmıştı.
+
+216
+00:39:40,707 --> 00:39:46,387
+Şimdi bir sonraki turda 11'e 3 ile çağrıldı.
+
+217
+00:39:47,527 --> 00:39:52,987
+11'e 3 ile çağırdığımızda 11 küçük eşit 2 mi diye baktık? Hayır değil.
+
+218
+00:39:53,487 --> 00:39:56,427
+11 mod 3 sıfıra eşit mi? Hayır değil.
+
+219
+00:39:57,207 --> 00:40:01,027
+3 çarpı 3 enden büyük mü? Hayır değil.
+
+220
+00:40:01,027 --> 00:40:26,587
+O zaman yine sondaki return'e gittik ve is prime dedik. Bu sefer on bir dört dedik. On bir dört dediğimiz noktada return, pardon özür dilerim, if n küçük eşit iki dediğimiz noktada n hala on bir doğal olarak çünkü zaten ikinin altında bir değer ya da iki eşit bir değer girmedik.
+
+221
+00:40:26,587 --> 00:40:55,187
+11 mod 4'e baktık. 4 herhangi bir şekilde sıfıra eşit olmadığı için modu. 4 çarpı 4 büyük mü 11'den diye baktık. Evet büyük. O zaman return 1 döndü. Şurada olduğu gibi. Biz de dönen değerden dolayı bu verilen sayının bir asal sayı olduğunu bulmuş olduk ve bunun karşılığı ana programda ilgili cümleyi, ifadeyi ekrana yazdırabiliyoruz.
+
+222
+00:40:55,187 --> 00:41:05,907
+Tabi buraya is prime 12, 2 gönderseydik o zaman daha ilk adımda hangi ife girmiş olacaktı?
+
+223
+00:41:05,907 --> 00:41:13,887
+Şu ife girecekti, oradan return 0 değerini döndürecekti ve fonksiyon sadece bir kez çağrılmış olacaktı.
+
+224
+00:41:13,967 --> 00:41:24,707
+Kendi kendini çağırmaya gerek kalmadan aslında sonlanmış olacaktı ve sayının asal sayı olmadığını ifade etmiş olacaktı.
+
+225
+00:41:25,187 --> 00:41:54,567
+Tabi bu çözüm bütün sayıların kontrolü demek. Kare köke kadar olan bütün sayıların. Biz bunun daha sofistike versiyonunu iteratif çözümümüzde yapmıştık. İstenirse o sofistike versiyonlar da recursive yaklaşım ile implement edilip hani buradaki gibi tek tek bütün rakamlara bakmak gibi değil ama daha az sayıda karşılaştırma yapılarak bu problemin recursive olarak da daha efektif çözülmesi sağlanılabilir.
+
+226
+00:41:55,187 --> 00:42:04,187
+işte i artı iki şeklinde ilerleyebilirsiniz vesaire. Böyle şeyler yapma ihtimalinizde söz konusu i kontrolü ikiye bölünebiliyor mu diye yaparsınız.
+
+227
+00:42:04,907 --> 00:42:10,267
+Bölünemiyorsa ondan sonrakileri üç, beş, yedi şeklinde ilerleyebilirsiniz.
+
+228
+00:42:10,907 --> 00:42:16,007
+İşte dörde ya da altıya bakmanıza gerek kalmadan böyle bir dizayn tasarım yapma şansınız da var.
+
+229
+00:42:16,007 --> 00:42:17,407
+Evet.
+
+230
+00:42:18,931 --> 00:42:22,231
+sorusu olan var mı? Şuraya kadar.
+
+231
+00:42:24,711 --> 00:42:29,151
+Palindrom kısmında hocam, Lasting First Data göre şey yapmamıştık.
+
+232
+00:42:29,312 --> 00:42:34,631
+Sıfır olduğunda direkt sum'ı gönderdiğimizde en baştan sıfırdan geriye toplanması gerekmiyor muydu?
+
+233
+00:42:37,931 --> 00:42:43,491
+Sıfırdan geriye doğru toplanması gerekmiyor muydu derken, 2002'den bahsediyoruz değil mi?
+
+234
+00:42:43,491 --> 00:42:53,171
+Evet yani en son 0 oluyorsa eğer sayı 0 ise return sum dedik ya orada return 0. Gerçi sum zaten 0 değeri aldığı için aynı sonuç oluyor.
+
+235
+00:42:53,171 --> 00:42:59,011
+Evet evet. Aynen öyle. Statik int olarak tanımlamamız aslında burada key noktaydı.
+
+236
+00:43:02,591 --> 00:43:12,131
+Evet. Bu örneği de verdik. Şimdi bir ara vermeden önce bugünkü recursion ile ilgili olarak
+
+237
+00:43:12,131 --> 00:43:17,971
+size bir alıştırma olsun diye bir problem vereceğim. Şöyle yapalım.
+
+238
+00:43:21,651 --> 00:43:22,451
+Recursion.
+
+239
+00:43:25,111 --> 00:43:26,711
+5 diyelim.
+
+240
+00:43:29,211 --> 00:43:31,251
+Şimdi burada size bir dizi veriliyor.
+
+241
+00:43:39,155 --> 00:43:57,315
+Bu dizideki elemanları kullanarak bu dizinin R'li ki R3 olarak verildiğini düşündüğünüzde bu dizinin elemanlarının üçlü kombinasyonunun hepsini ekrana yazdırmanız sizden bekleniyor. Nedir?
+
+242
+00:43:57,315 --> 00:44:16,595
+1, 2, 3, 1, 2, 4, 1, 2, 5, 2, 3, 4, 2, 3, 5, 3, 4, 5. Sanırım hepsini yazdık değil mi?
+
+243
+00:44:16,595 --> 00:44:40,115
+Bunu tabi farklı şekillerde de yapabilirsiniz ama bunu recursive olarak çözebilecek fonksiyonu tasarlamanız ve bunun C kodunu yazmanız size bu anlamda bir recursive probleme dair bir antrenman yapmanızı mümkün kılacaktır.
+
+244
+00:44:40,115 --> 00:44:45,395
+O yüzden bu problemle uğraşırken en elemanlı bir dizden bahsediyoruz.
+
+245
+00:44:46,595 --> 00:44:51,175
+Tabii dizin elemanları distinct yani unique yani tekrar etmiyor.
+
+246
+00:44:52,555 --> 00:44:57,175
+Tabii tekrar etme durumu için de çözüm üretebilirsiniz.
+
+247
+00:44:57,935 --> 00:45:03,795
+Ama hani ilk etapta kolay olsun diye tekrar etmeyen sayılar olsun diyelim.
+
+248
+00:45:03,795 --> 00:45:06,455
+Tabii bu 1, 2, 3, 4, 5 olmak zorunda değil.
+
+249
+00:45:06,735 --> 00:45:12,395
+5, 7, 12, 28, 92, 89 da olabilir.
+
+250
+00:45:12,995 --> 00:45:16,415
+İşte burada R2 olabilir örnek veriyorum.
+
+251
+00:45:16,595 --> 00:45:26,355
+ya da R4 olabilir. Önemli olan bunların parametrik olarak verildiği bir örnek için çözüm üretmeniz.
+
+252
+00:45:27,775 --> 00:45:34,335
+Bunu bir alıştırma olarak lütfen değerlendirin ve yaparsanız size katkı sağlayacaktır.
+
+253
+00:45:35,235 --> 00:45:44,555
+Şimdi bir ara vereceğiz. Saat 13.46, 13.56'da kaldığımız yerden devam ediyor olacağız. Teşekkür ediyorum.
+
+254
+00:55:06,739 --> 00:55:36,719
+Evet arkadaşlar, yeniden merhaba. 10 dakikalık aradan sonra birlikteyiz, beraberiz. Recursive fonksiyonları bitirdik. En azından bir problemi recursive olarak nasıl hesaplayabileceğiniz konusunda artık bir fikriniz var. Bir base condition'a ihtiyacınız var. Durma noktası. Kendi kendine çağıran bir fonksiyon. Bu fonksiyonla bir parametre aktarımı var. Bu parametre aktarımı mutlaka o parametrenin azaltılarak
+
+255
+00:55:36,739 --> 00:55:40,760
+ya da o parametreyle ilgili bir işlem yapılarak olduğunu da biliyorsunuz.
+
+256
+00:55:40,979 --> 00:55:46,420
+Parametrenin kendisine aktarmak base condition kontrolü için yeterli değil.
+
+257
+00:55:46,580 --> 00:55:48,299
+Parametreyi değiştirmeniz bekleniyor.
+
+258
+00:55:49,059 --> 00:55:54,159
+Bu arttırmak ya da azaltmak yönünde olabilir tasarımınıza bağlı olarak ama genelde azaltmak yönünde oluyor.
+
+259
+00:55:54,680 --> 00:55:58,359
+Bir bir azaltmak olabilir, ona bölerek indirgemek olabilir.
+
+260
+00:55:58,359 --> 00:56:19,359
+olabilir. Bazı noktalarda daha fazla işlem yapmanız ya da doğrudan işlem yaparken ilgili çağırdığınız self-call yaptığınız fonksiyonu toplama ya da çarpma işlemi yaparak da gerçekleştirebiliyorsunuz.
+
+261
+00:56:20,359 --> 00:56:27,739
+Eğer recursive function ile ilgili sorunuz yoksa yeni konumuz linked listelere geçelim istiyorum.
+
+262
+00:56:28,359 --> 00:56:32,159
+sorusu olan, yorumu olan, bilgi almak isteyen.
+
+263
+00:56:34,779 --> 00:56:37,659
+Peki, devam edelim o zaman. Ekran paylaşayım.
+
+264
+00:56:43,219 --> 00:56:58,579
+Evet, şimdi linkli liste konusu. Bildiğiniz temel veri yapısı aslında. Çok pardon bir görüntüde bir sorun oldu.
+
+265
+00:57:17,427 --> 00:57:18,427
+ve Altyazı M.
+
+266
+00:57:55,155 --> 00:57:57,155
+Arkadaşlar bir saniyen üzere çağrıcam.
+
+267
+01:00:17,460 --> 01:00:24,639
+Evet, beklettiğim için özür dilerim. Sorun çözüldü. Şu anda görebiliyorsunuz diye tahmin ediyorum.
+
+268
+01:00:27,899 --> 01:00:35,019
+[öğrenci], örneği bir daha sormuşsun. Dersin sonunda ya da ikinci dersin sonunda tekrar örneği paylaşacağım.
+
+269
+01:00:35,140 --> 01:00:42,519
+Şimdi bu konuya geçiş yaptığımız için bu konuyla ilerleyelim. Sonra örneği alıştırma için verdiğim örneği tekrar açacağım.
+
+270
+01:00:42,519 --> 01:01:08,559
+Şimdi linkli listelerden bahsediyorduk. Bizim için önemli veri yapıları demiştik. Bunlardan bir tanesi de linkli liste. Bugüne kadar bildiğiniz temel veri yapısı olan diziyi kullandığınız, dizi doğrudan adresine erişim yapabildiğiniz aynı tipteki verileri kesintisiz bir şekilde arka arkaya saklama yeteneğini sahip olan bir veri yapısı.
+
+271
+01:01:08,559 --> 01:01:13,279
+tabi bu veri yapısı bize birçok kolaylık sağlıyor.
+
+272
+01:01:14,439 --> 01:01:19,299
+İşte verilerin doğrudan erişilebilir olmasını mümkün kılıyor adresini vererek.
+
+273
+01:01:20,079 --> 01:01:22,779
+Diğer veriler üzerinden gitmek zorunda değilsiniz.
+
+274
+01:01:23,479 --> 01:01:25,040
+İstediğiniz veriyi çekebiliyorsunuz.
+
+275
+01:01:25,099 --> 01:01:28,400
+Ama tabi bazı dezavantajları da var.
+
+276
+01:01:28,400 --> 01:01:28,779
+Nedir?
+
+277
+01:01:30,019 --> 01:01:36,180
+Büyük bir veriyle çalışıyorsanız, arka arkaya kesintisiz bellekte yer yok ise
+
+278
+01:01:36,180 --> 01:01:44,640
+bu büyük veri grubunu belleğe parça parça çekmek için sizin özel bazı işlemler yapmanız gerekiyor.
+
+279
+01:01:44,640 --> 01:02:00,860
+Bu noktada link liste size belleğin bir tane bile boş alanı varsa herhangi bir noktada tek bir elemanı oraya konumlandırarak karışık bir şekilde efektif kullanımını sağlıyor.
+
+280
+01:02:00,859 --> 01:02:07,639
+bir bakıma diziyi dağıtık bir şekilde saklamanıza imkan sağlıyor.
+
+281
+01:02:08,639 --> 01:02:11,839
+Tabii bu önemli bir artı.
+
+282
+01:02:12,059 --> 01:02:21,359
+Aynı zamanda insert, delete gibi işlemler dizide biraz daha uzun sürede gerçekleşiyor.
+
+283
+01:02:21,359 --> 01:02:26,499
+Bunun temel sebebi araya bir eleman alacaksanız diğer elemanları kaydırmanız gerekiyor.
+
+284
+01:02:26,579 --> 01:02:30,379
+Ya da aradan bir eleman silecekseniz diğer elemanları sildikten sonra kaydırmanız gerekiyor.
+
+285
+01:02:30,379 --> 01:02:32,239
+Bunlar önemli dezavantajlar.
+
+286
+01:02:33,379 --> 01:02:39,779
+Burada berlekte şöyle highlight ederek de göstereyim.
+
+287
+01:02:43,699 --> 01:02:45,239
+Şöyle yapalım.
+
+288
+01:02:59,476 --> 01:03:06,535
+Şurada görmüş olduğunuz bellekte 1000 adresinde bir integer eleman yer aldığını varsayın.
+
+289
+01:03:07,055 --> 01:03:08,535
+A dizisinin sıfırıncı gözünde.
+
+290
+01:03:09,236 --> 01:03:12,875
+1004 adresinde 5 elemanı var A'nın birinci gözünde.
+
+291
+01:03:12,875 --> 01:03:19,195
+Bu şekilde belleği arka arkaya kaç tane eleman varsa o elemanlar yerleşecek şekilde.
+
+292
+01:03:19,675 --> 01:03:23,715
+Contiguous memory usage dediğimiz bu keyword önemli.
+
+293
+01:03:23,715 --> 01:03:33,915
+dizi size böyle bir kullanımı garanti ediyor ve bellekte kesintisiz olarak elemanınıza arka arka yarışabiliyorsunuz.
+
+294
+01:03:33,915 --> 01:03:44,516
+Öte yandan bir linkli liste yapısını konuştuğumuzda linkli listenin bir başlangıç elemanının adresine sahip oluyorsunuz
+
+295
+01:03:44,516 --> 01:03:50,215
+ve her eleman kendinden sonraki elemanı işaret edecek bir adrese sahip oluyor.
+
+296
+01:03:50,215 --> 01:03:52,675
+temelde
+
+297
+01:03:52,675 --> 01:03:54,975
+berleğin şu noktasında
+
+298
+01:03:54,975 --> 01:03:56,215
+yer alan bir ilk eleman
+
+299
+01:03:56,215 --> 01:03:58,855
+ileride şu noktasında yer alan ikinci bir eleman
+
+300
+01:03:58,855 --> 01:04:00,995
+olabilir yani arka arkaya olma zorunlulukları yok
+
+301
+01:04:00,995 --> 01:04:02,115
+bu yüzden de
+
+302
+01:04:02,115 --> 01:04:04,535
+bir elemandan sonra hangi elemanın
+
+303
+01:04:04,535 --> 01:04:06,855
+geldiği bilgisini mutlaka linkli listede
+
+304
+01:04:06,855 --> 01:04:08,735
+tutmanız gerekiyor çünkü berlekte
+
+305
+01:04:08,735 --> 01:04:10,215
+diğer elemanın adresini bilmeden
+
+306
+01:04:10,215 --> 01:04:12,735
+o listeye sıralı bir şekilde erişme
+
+307
+01:04:12,735 --> 01:04:14,575
+şansınız yok o yüzden hem
+
+308
+01:04:14,575 --> 01:04:16,476
+elemanın değerini istiyorsunuz
+
+309
+01:04:16,476 --> 01:04:18,075
+hem de o elemanın
+
+310
+01:04:18,075 --> 01:04:23,215
+takibindeki gelen elemanın adresini saklamanız gerekiyor.
+
+311
+01:04:23,815 --> 01:04:27,455
+Bu tabii bir dezavantaj olarak bize geri deniyor.
+
+312
+01:04:28,135 --> 01:04:33,156
+Biz normalde tek bir bilgi saklayacakken bir de adres bilgisi saklamak zorunda kalıyoruz link listede
+
+313
+01:04:33,156 --> 01:04:35,375
+ve bu ereğe göre bir handikap yaratıyor.
+
+314
+01:04:36,775 --> 01:04:43,836
+İşte bir beşi gösteriyor, beş üçü gösteriyor, üç ikiyi gösteriyor, en son iki dördü gösteriyor.
+
+315
+01:04:43,836 --> 01:04:52,836
+4 son eleman olduğunu gösterdiği nal adresi sayesinde biz anlayabiliyoruz.
+
+316
+01:04:53,516 --> 01:05:04,416
+Yani dizinin ya da listenin son elemanı nalı gösterecek şekilde o dizinin sonuna geldiğimizi sağlaması gerekiyor.
+
+317
+01:05:05,156 --> 01:05:08,095
+Bu listeyi oluştururken mutlaka buna dikkat etmek gerekiyor.
+
+318
+01:05:08,095 --> 01:05:13,875
+Eğer bir başka adres görürseniz bu da o adrese gideceksiniz demektir.
+
+319
+01:05:14,255 --> 01:05:22,615
+Ve null pointer kullanmadığınız sürece de bu sizin diğer elemanlara atlayarak devam etmeniz anlamına gelir ki bu listenin hiçbir zaman bitmeyeceği demektir.
+
+320
+01:05:23,056 --> 01:05:29,315
+O yüzden bir linkli listenin sonlandığını null karakteri daha önce kullanıyorduk.
+
+321
+01:05:29,395 --> 01:05:31,416
+Burada da null pointer üzerinden anlıyoruz.
+
+322
+01:05:31,416 --> 01:05:40,796
+Çünkü adres eğer sıfırı gösteriyorsa o zaman diyoruz ki bu ilgili listenin dizinin son elemanı bu noktada duracağız.
+
+323
+01:05:41,236 --> 01:05:47,656
+Şimdi dedik ki listenin head yani baş elemanının adresini mutlaka bilmemiz lazım.
+
+324
+01:05:48,375 --> 01:05:56,216
+Ki o ilgili elemandan diğer elemanların arkasından devam edip bu liste üzerinde ilgili elemanlara erişelim.
+
+325
+01:05:56,215 --> 01:06:02,575
+zaman zaman bazı örnekler için son elemanın adresi de tutulur.
+
+326
+01:06:03,015 --> 01:06:05,955
+Bunun bazı faydaları vardır.
+
+327
+01:06:06,495 --> 01:06:08,295
+Bunları yeri geldiği zaman konuşacağız.
+
+328
+01:06:08,295 --> 01:06:21,715
+Bu son elemanın ismi de tail yani kuyruk olarak gelir ve kuyruğun sonundaki elemanın ne olduğunu bizim için ifade eder.
+
+329
+01:06:21,715 --> 01:06:29,115
+Bu sayede de sondaki elemana ulaşmak için bütün elemanlar üzerinden geçmek zorunda kalmayız.
+
+330
+01:06:29,175 --> 01:06:36,735
+Çünkü bir linkli listede bir milyon tane eleman varsa o zaman bu linkli liste üzerindeki en sondaki elemana ulaşmak için
+
+331
+01:06:36,735 --> 01:06:42,335
+mutlaka o bir milyon tane elemanı ziyaret edip son elemana ulaşabilirsiniz.
+
+332
+01:06:43,035 --> 01:06:47,615
+Dizide ise doğrudan son elemanın adresini verip o elemana erişebiliyordunuz.
+
+333
+01:06:47,715 --> 01:06:49,195
+Aradaki en önemli farklılık bu.
+
+334
+01:06:49,196 --> 01:06:55,895
+Bunu bazı uygulamalar için kolaylaştırmak adına dediğim gibi son elemanın adresi de saklanabilir.
+
+335
+01:06:56,755 --> 01:06:58,735
+Linkli liste türleri var.
+
+336
+01:06:59,572 --> 01:07:08,771
+single linked list dediğimiz yapıda tek bir yönde ilerleyebilirsiniz ve tek bir yöndeki elemanların adres bilgisini saklarsınız.
+
+337
+01:07:09,412 --> 01:07:25,451
+double linked list dediğimizde her iki yönde de ileri ya da geri hareket etmenizi sağlayan bir tane daha bir önceki elemanın adres bilgisini sakladığınız bir yapıdır ve bir bilgi daha tutarsınız.
+
+338
+01:07:25,451 --> 01:07:34,091
+Bu tabi ekstradan bir maliyet demek ama aynı zamanda ileri geri gezmenizi kolaylaştırabilecek bir aslında katkı sağlar.
+
+339
+01:07:34,591 --> 01:07:44,371
+Circular Linked List'te son elemandan yine başa dönebildiğiniz bir yapı oluşturduğunuzda buna da Circular Linked List diyoruz.
+
+340
+01:07:44,831 --> 01:07:52,252
+Circular Linked List'te aynı zamanda tek yönde de kurgulamış olabilirsiniz.
+
+341
+01:07:52,252 --> 01:08:00,072
+ya da double linked list gibi iki yönde de hareket edebildiğiniz bir circular linked list de oluşturma şansınız mevcut.
+
+342
+01:08:03,412 --> 01:08:14,191
+Burada tabii şu gördüğünüz yapıda elemanların farklı farklı noktalara yerleştiğini gösteren bir yapı.
+
+343
+01:08:14,652 --> 01:08:20,932
+Bu sayede diyelim ki bir milyon elemanınız var ve bir milyon tane arka arkaya gelen boşluk yok.
+
+344
+01:08:22,252 --> 01:08:32,252
+elemanlarınızı uygun boşluklara yerleştirerek dağıtık bir şekilde memori çok daha verimli kullanacak şekilde konumlandırabiliyorsunuz.
+
+345
+01:08:32,252 --> 01:08:36,252
+Bu da linkli listenin bize getirdiği en önemli avantaj.
+
+346
+01:08:42,068 --> 01:08:52,448
+Şimdi linkli liste yapısını oluştururken farklı yöntemler kullanılabiliyor.
+
+347
+01:08:52,448 --> 01:09:19,347
+genellikle işte C programlama dili ve benzer uzaylık taşıyan programlama dillerinde bir structure yapısı üzerinden hem ilgili dizide yer alacak listede yer alacak elemanın değeri hem de o elemanın hangi elemanı gösterdiğini tutan bir adres bilgisi structure yapısına konumlandırılıyor.
+
+348
+01:09:25,268 --> 01:09:37,587
+Burkan'ın bir sorusu olmuş. A dizisinde B fonksiyonu parametre olarak verdiğimizi düşünürsek, A dizisinin kaç elemanlı olduğunu fonksiyon içerisinde bulmak için node pointer'ı bulundana kadar for döndürülebilir mi?
+
+349
+01:09:40,728 --> 01:09:43,208
+Burkan bunu sesli olarak solma şansın var mı?
+
+350
+01:09:45,567 --> 01:09:55,207
+Hocam ben şimdi fonksiyona dizi atamak istiyorum. İçeride kullanacağım diziyi. Ama diziyi kullanırken kaç elemanlı olduğunu fonksiyon bilmiyor.
+
+351
+01:09:55,268 --> 01:09:56,548
+Tamam
+
+352
+01:09:56,548 --> 01:10:00,087
+Fonksiyon içerisinde dizinin kaç elemanlı olduğunu bulmam gerekiyor
+
+353
+01:10:00,087 --> 01:10:03,488
+Tamam, dizinin sonunda null pointer'ı mı var?
+
+354
+01:10:04,187 --> 01:10:13,708
+Yok işte, biraz önce gösterdiniz ya null pointer, sonraki adres, sonraki adres, yani null pointer ise o zaman dizi bitti demektir gibi bir şey söylediniz, doğru mu?
+
+355
+01:10:13,708 --> 01:10:18,268
+Evet, öyle söyledim, şunu şöyle ifade edelim
+
+356
+01:10:18,268 --> 01:10:26,128
+Bu noktada linked listdeki elemanlarımız değerleri ve bir sonraki elemanın adresiyle birlikte saklanırlar demiştim.
+
+357
+01:10:26,507 --> 01:10:33,407
+En son elemanında null pointer ile adresi göstermesi lazım ki onun son elemanı olduğunu anlayalım dedim.
+
+358
+01:10:34,007 --> 01:10:44,028
+Ancak burada linked listdeki eleman sayısını normal şartlarda tutuyor muyuz tutmuyor muyuz konusu duruma göre değişkenlik gösterebilir.
+
+359
+01:10:44,028 --> 01:10:48,147
+İşte ben bunu bulabilir miyim diye dedim null pointer'a erişirsem eğer.
+
+360
+01:10:48,268 --> 01:10:50,808
+Null pointer'e erişene kadar kaç eleman bulduysam?
+
+361
+01:10:50,808 --> 01:10:53,587
+Varsınız sayıdılabilirsiniz tabii ki. Bunda hiçbir sakınca yok.
+
+362
+01:10:53,907 --> 01:10:56,068
+O zaman bulabilirim. Tamam hocam, teşekkür ederim.
+
+363
+01:10:56,068 --> 01:10:56,867
+Rica ederim.
+
+364
+01:10:58,407 --> 01:11:09,268
+Şimdi dedik ki structure yapısı kullanıyoruz dedik. Bu bilinen ve en çok karşılaşacağımız kullanım şekli.
+
+365
+01:11:09,628 --> 01:11:15,268
+Ama bir linked list oluşturmak için sadece structure yapısı kullanmayız.
+
+366
+01:11:15,268 --> 01:11:32,028
+Bazen iki dizi kullanırız. Bazen iki kolonlu ya da iki satırlı bir matriz kullanırız. Bunlar da linkli liste implemente etmek için bize yardımcı olabilirler. Nedir? Eleman bir diyelim.
+
+367
+01:11:32,808 --> 01:11:39,208
+İşte beşinci adresi göstersin. Burada üç olsun, burada yedi olsun, burada altı olsun, burada beş olsun.
+
+368
+01:11:39,208 --> 01:11:52,668
+Birinci eleman beşinci adresi gösteriyorsa o zaman bir sonraki eleman bu olacak demektir. Beş değerinden iki numaralı adresi gösteriyorsa o zaman iki numaralı adresi buraya gidecek demektir.
+
+369
+01:11:52,667 --> 01:12:14,907
+Bu şekilde de sizin iki tane dizi kullanarak birinde elemanların değerlerini diğerinde de o elemandan sonra gelen elemanın dizinin hangi gözünde olduğunu saklayarak linkli liste yapısını oluşturabilirsiniz.
+
+370
+01:12:14,907 --> 01:12:24,307
+bir dizi elemanları saklar diğer dizide o elemanların birbirlerine göre erişim sıralarını saklayacaktır.
+
+371
+01:12:25,307 --> 01:12:29,327
+Fakat çok sık bunu kullanmayız.
+
+372
+01:12:29,827 --> 01:12:37,687
+Çünkü zaten diziyi tutmama sebebimiz arka arkaya yeterince alanımız olmamasından kaynaklıdır.
+
+373
+01:12:38,368 --> 01:12:43,507
+İki tane dizi kullanarak linkli liste yapmaya çalışmak o anlamda çok manalı olmayabilir.
+
+374
+01:12:43,507 --> 01:12:52,287
+matris'te de dediğim gibi aynı yapıyı oluşturabiliyorsunuz. Şimdi gelelim biz en çok kullanılan ve verimli olan yönteme.
+
+375
+01:12:54,287 --> 01:13:01,927
+Burada struct node bir tane düğüm oluşturuyorsunuz. Bunun ismini başka bir şeyle verebilirsiniz.
+
+376
+01:13:02,847 --> 01:13:08,767
+Ve bir değer saklayacağınız bir value alanı var. Bunun tipini ne saklıyorsanız o şekilde belirleyebilirsiniz.
+
+377
+01:13:08,768 --> 01:13:11,228
+Burada illa integer olmak zorunda değil.
+
+378
+01:13:12,128 --> 01:13:16,368
+Bir linked listede başka bir structure yapısı da olabilir.
+
+379
+01:13:16,527 --> 01:13:20,788
+Yani her bir düğümünüzde bir öğrencinin bilgilerini de saklıyor olabilirsiniz.
+
+380
+01:13:21,387 --> 01:13:22,768
+O yüzden buradaki value temsilidir.
+
+381
+01:13:23,891 --> 01:13:30,931
+Bir kesinli sayı saklayabilirsiniz, bir isim saklayabilirsiniz, öğrenciye ait bilgiler, kişiye ait bilgiler, her şey olabilir.
+
+382
+01:13:31,891 --> 01:13:40,531
+Ama önemli olan kısım, o düğümün bir sonraki düğümü işaret ettiği adres bilgisini sakladığı ifadedir.
+
+383
+01:13:41,251 --> 01:13:43,931
+Genellikle type def ifadesini burada kullanamazsınız.
+
+384
+01:13:44,051 --> 01:13:46,812
+Çünkü type definition önce tanımlanması gerekir.
+
+385
+01:13:47,271 --> 01:13:53,631
+Tanımlamadan kendisine self-referencing yaptığınız kullanım şekli bu şekildedir.
+
+386
+01:13:53,891 --> 01:14:05,092
+İlgili node tipini başa yazarsınız ve saklamak istediğiniz adres için pointer oluşturmanız gerektiği için yıldız ilgili ismi yazarsınız.
+
+387
+01:14:05,092 --> 01:14:11,311
+Buraya diyelim ki ihtiyaç olsaydı şöyle bir şey de yapabilirdiniz.
+
+388
+01:14:11,311 --> 01:14:19,031
+struct, node, yield, double linked list yapsaydınız.
+
+389
+01:14:19,911 --> 01:14:24,691
+O zaman previous'u işaret edecek olan bir başka adres daha eklemeniz gerekiyordu.
+
+390
+01:14:24,691 --> 01:14:41,151
+Bu da şu demek, siz tek bir değer saklayacakken buna ek olarak iki tane daha adres bilgisi demeniz ki bu da boyutunuzun sakladığınız bilgi miktarının büyümesi anlamına geliyor ki bu linked listenin önemli handikaplarından bir tanesi.
+
+391
+01:14:41,311 --> 01:14:52,691
+Tabii bir başlangıç nodunuz olması gerekiyor. Head node dediğimiz. Bu size nereden başlayacağınızı gösteren bir node.
+
+392
+01:14:52,691 --> 01:15:05,591
+Bir create node isimli fonksiyon burada yer alıyor. Burada her adımda yeni bir düğüm oluşturulacağı zaman çağrılan bir fonksiyon bu.
+
+393
+01:15:05,591 --> 01:15:16,611
+çağrıldığı zaman ne yapıyor? Önce bir tanımlama var. Bu tipte bir alan yaratabilmeniz için önce bu tipte bir değişken tanımlamanız gerekiyor.
+
+394
+01:15:16,611 --> 01:15:29,571
+Struct node yıldız P. Daha sonra malloc ya da calloc fonksiyonu ile node'un büyüklüğü kadar, işte burada daha önce söyledim belki bir öğrencinin bilgilerini de saklayabilirsiniz.
+
+395
+01:15:29,572 --> 01:15:32,231
+o zaman o büyüklükte bir alan açıyorsunuz.
+
+396
+01:15:32,311 --> 01:15:37,151
+Yani burada data dediğimizde sadece tek bir değer değil birden fazla bilgi de saklanabilir.
+
+397
+01:15:38,052 --> 01:15:44,832
+Bu alanı açmaya çalıştığınızda eğer size null değeri dönmüyorsa o zaman bir sorun yok.
+
+398
+01:15:45,552 --> 01:15:48,192
+Siz doğrudan yeri açıyorsunuz ve return P ediyorsunuz.
+
+399
+01:15:48,192 --> 01:15:59,311
+nal değeri dönerse o zaman anlayın ki burada bir element için dahi yer kalmamış, yer açılamıyor ve benlek dolu.
+
+400
+01:15:59,951 --> 01:16:07,352
+O zaman zaten ekleyeceğiniz bir tane element için yer açamadığınızdan dolayı kullanıcıya hata vermeniz gerekiyor.
+
+401
+01:16:07,811 --> 01:16:08,772
+Dizide bu nasıldır?
+
+402
+01:16:09,332 --> 01:16:12,511
+Dizide siz genelde kullanıcıdan bir boyut alırsınız.
+
+403
+01:16:12,511 --> 01:16:15,311
+İşte bu bir milyon olabilir, bin olabilir, yüz bin olabilir.
+
+404
+01:16:15,311 --> 01:16:24,472
+Bunu yine dinamik bellek ayırma yöntemiyle kullanıcıdan bu bilgiyi aldıktan sonra runtime'da açmayı deneyebilirsiniz.
+
+405
+01:16:24,472 --> 01:16:33,112
+Ama oradaki sıkıntı o kadar arka arkaya alan aynı anda bellekte bulunmuyor olabilir.
+
+406
+01:16:34,151 --> 01:16:43,832
+Bunun neticesinde siz belki 999 bin tane değerle iş yapabilecekken yeni eleman geldiğinde artık durma noktasındayken
+
+407
+01:16:43,832 --> 01:16:47,712
+bir milyonluk alan olmadığı için hiçbir iş yapamaz noktaya geliyorsunuz.
+
+408
+01:16:48,052 --> 01:16:53,652
+Doğrudan dizi ile direct access ile çalışmak istediğinizde.
+
+409
+01:16:53,852 --> 01:17:01,531
+Bu nedenle genelde linked listede tek bir eleman için herhangi bir işlem yapılamadığında
+
+410
+01:17:01,531 --> 01:17:07,531
+bir önlem alınması gerektiği ortaya çıkar ve bununla ilgili belki yeni bir bellek alanı ayrılması,
+
+411
+01:17:07,731 --> 01:17:10,992
+yeni bir bellek alanı boşaltılması planlaması da yapılır.
+
+412
+01:17:10,991 --> 01:17:21,811
+Ama günün sonunda create node isimli fonksiyonumuz bizim için tek bir eleman için yer ayırma işleminden sorumlu olan
+
+413
+01:17:22,515 --> 01:17:32,896
+ve return p dediğimiz için doğal olarak tipi de struct node yıldız olarak buraya konumlandırılmış durumda.
+
+414
+01:17:33,635 --> 01:17:34,896
+Buraya kadar sorusu olan var mı?
+
+415
+01:17:42,707 --> 01:17:43,987
+Peki, devam ediyorum.
+
+416
+01:17:46,467 --> 01:17:53,527
+Şimdi, öncelikle konsantrasyonumuzu print list isimli metoda verelim.
+
+417
+01:17:53,527 --> 01:18:03,987
+Burada yaptığım şey aslında biraz önce arkadaşınızın bahsettiği en sondaki elemana erişirken kaç tane eleman üzerinden geçiyoruz.
+
+418
+01:18:04,367 --> 01:18:07,287
+Onu da hesaplayabileceğimiz aslında bir fonksiyon.
+
+419
+01:18:07,287 --> 01:18:15,127
+Print list'in yaptığı şey linked list'e yer alan tüm elemanların değerlerini ekrana yazdırmak.
+
+420
+01:18:15,127 --> 01:18:24,367
+Öncelikle bu fonksiyona başlangıç düğümünün adresini gönderiyoruz.
+
+421
+01:18:26,347 --> 01:18:34,428
+For döngüsünde p değişkenine başlangıç adresini atıyoruz.
+
+422
+01:18:34,427 --> 01:18:57,687
+P naldan farklı olduğu sürece yani son elemana ulaşmadığımız sürece P'nin gösterdiği adresi her türde alıp P'ye atayarak her adımda P'nin içeriğini ekrana yazdıracak for döngüsünü bu şekilde oluşturmuş olduk.
+
+423
+01:18:57,687 --> 01:19:07,707
+Farkı ne? Daha önce hep böyle bir sayılar vardı. İşte n'e kadar gidiyorduk. Her turda genelde i eşittir, i artı 1 yazıyorduk.
+
+424
+01:19:08,307 --> 01:19:13,087
+Buradaki fark şu. Tabi bunu while'da da yapabilirsiniz. Herhangi bir sorun yok.
+
+425
+01:19:14,227 --> 01:19:17,847
+For dönemisi içine p'nin başlangıç değerini head olarak atadık.
+
+426
+01:19:18,407 --> 01:19:23,027
+p'nin aldan farklı olduğu sürece yani son elemana ulaşmadığımız sürece devam ediyoruz.
+
+427
+01:19:23,027 --> 01:19:32,807
+ve her turda bir sonraki elemanın adresini yeni p'imiz olarak belirliyoruz ve o adresteki elemanın değerini de her turda ekrana yazdırmış oluyoruz.
+
+428
+01:19:32,888 --> 01:19:43,047
+Burada bor içerisinde bir counter koysak bu listede kaç tane eleman olduğunu da otomatik olarak bulabiliyor olacağız.
+
+429
+01:19:44,868 --> 01:19:46,327
+Buraya kadar sorusu olan var mı?
+
+430
+01:19:50,452 --> 01:19:52,011
+Hocam ben bir şey sorabilir miyim?
+
+431
+01:19:52,411 --> 01:19:52,632
+Tabii.
+
+432
+01:19:53,591 --> 01:20:02,631
+Bu p-i kendimiz manuel mi yazmamız lazım yoksa otomatik bulabilir miyiz? Yani biz dizinin boyutu kadar mı attıralım?
+
+433
+01:20:04,211 --> 01:20:12,431
+Mesela uin8 tanımladıysam ben her bir seferinde o kadar mı ileriye götüreceğim yoksa bunu yani size of'la falan yapabilir miyiz?
+
+434
+01:20:12,431 --> 01:20:18,811
+Şöyle kısaca söyleyeyim. Siz bir structure tanımladığınızda, struct node dediğimiz burada,
+
+435
+01:20:18,811 --> 01:20:21,491
+o structure'ın hemen geri dönelim.
+
+436
+01:20:22,111 --> 01:20:26,632
+Buradaki boyutu neyse bir eleman için o boyut kadar ilerler.
+
+437
+01:20:28,971 --> 01:20:30,551
+Dizide de bu böyledir.
+
+438
+01:20:31,391 --> 01:20:35,511
+Diğer taraftaki pnx dediğiniz zaman da onun gösterdiği adrese gider.
+
+439
+01:20:35,611 --> 01:20:39,151
+Örneğin burada 30 byte'lık bir bilgi saklıyorsunuz.
+
+440
+01:20:39,571 --> 01:20:42,111
+Hepsinde doğal olarak 30 byte'lık bir bilgi saklıyorsunuz.
+
+441
+01:20:42,111 --> 01:20:47,571
+Ama bu 30 byte belleğin üst kısmında, öteki 30 byte de şu noktada.
+
+442
+01:20:47,571 --> 01:21:00,672
+Normalde C programlama dili burada gördüğü adrese siz pnext dediğiniz zaman otomatik olarak p'yi oraya set eder ve bir sonraki elemanın burayı gösterdiğini bildiği için
+
+443
+01:21:00,672 --> 01:21:15,151
+siz pnext'i p'ye atadığınızda o adresin başlangıcından itibaren değer olarak ne varsa bu pvalue olabilir, pöğrenci adı, pöğrenci soyadı, pöğrenci notu şeklinde
+
+444
+01:21:15,151 --> 01:21:26,271
+struct'a ne tanımladıysanız o ilgili adresten o structure'ın içerisindeki elemanların değerine kadar hepsini otomatik olarak yazdırabilirsiniz.
+
+445
+01:21:26,391 --> 01:21:28,551
+Herhangi bir size of vesaireyle uğraşmanıza gerek yok.
+
+446
+01:21:29,791 --> 01:21:31,111
+Sağ olun hocam, teşekkürler.
+
+447
+01:21:32,172 --> 01:21:32,611
+Rica ederim.
+
+448
+01:21:32,611 --> 01:21:41,211
+Şimdi burada insert operation'a geçmeden önce şunu hatırlatmakta fayda var.
+
+449
+01:21:41,331 --> 01:21:42,231
+Şöyle de yazalım.
+
+450
+01:21:42,231 --> 01:21:50,892
+bir kere bu print list üzerinde aslında bir liste üzerine traverse ediyorsunuz. Yani geziyorsunuz.
+
+451
+01:21:52,312 --> 01:22:00,612
+Traverse ederken bir search da yapabilirsiniz. Yani ilgilenemen var mı yok mu diye de bakabilirsiniz.
+
+452
+01:22:01,472 --> 01:22:04,032
+Bir update yapmanız da beklenebilir bir linked listede.
+
+453
+01:22:04,032 --> 01:22:10,692
+doğal olarak traverse ederken, gezerken şimdi biraz sonra göreceğiz.
+
+454
+01:22:11,392 --> 01:22:18,472
+Insert ve delete de olası işlemlerimizden diğer iki tanesi.
+
+455
+01:22:18,472 --> 01:22:26,112
+Şimdi traverse ederken burada olduğu gibi herhangi bir şekilde elemanlara bakıp ilerlediğiniz için
+
+456
+01:22:26,112 --> 01:22:39,112
+aynı zamanda bir if kontrolü koyarak o elemanın aradığınız elemanı bulup olmadığını hızlı bir şekilde şuraya bir iki satır kod ekleyerek search operation'ı tamamlamış olursunuz.
+
+457
+01:22:40,072 --> 01:22:47,312
+Yine göndereceğiniz bu print list ismini değiştirelim bir fonksiyon işte update isimli bir fonksiyon olsun.
+
+458
+01:22:47,312 --> 01:22:54,432
+Buraya bir eleman daha gönderip ilgili elemanı bulup onun değerini update edebilirsiniz.
+
+459
+01:22:54,431 --> 01:23:00,471
+ya da işte elemanın ne olduğunu gönderip aynı zamanda değiştirilecek bilginin ne olduğunu da gönderebilirsiniz.
+
+460
+01:23:00,911 --> 01:23:02,291
+Bu sefer 3 parametre gönderebilirsiniz.
+
+461
+01:23:02,452 --> 01:23:07,491
+Yani search ve update'in aslında Traverse'deki yaptığınız şuradaki kod parçasından hemen hemen hiçbir farkı yok.
+
+462
+01:23:07,491 --> 01:23:13,971
+Bir iki tane ufak eklemeyle search ve update'i linked liste üzerinde yapmak aslında kolay.
+
+463
+01:23:13,971 --> 01:23:33,531
+Peki search ve update'in bizim için array'e kıyasla linked list üzerine implement ettiğimizde olumlu mu olumsuz mu daha efektif mi daha az verimli mi olduğunu sorsam array mi daha verimli yoksa linked liste mi?
+
+464
+01:23:34,571 --> 01:23:36,631
+Array daha verimli direkt ulaşıyoruz.
+
+465
+01:23:36,631 --> 01:23:47,631
+Evet. RR'ye daha verimli. Direkt ulaşıyoruz. Adresi söylüyoruz. Direct Access imkanımız var. Link listedeki sıkıntı...
+
+466
+01:23:47,891 --> 01:24:04,591
+o elemanın kaçıncı eleman olduğunu bilmediğiniz için tüm elemanları gezmeniz gerekiyor. O eleman sonda da olabilir, başta da olabilir, ortada da olabilir. O yüzden search ve update maliyeti linked listenin ereğe göre daha fazla.
+
+467
+01:24:05,511 --> 01:24:17,131
+Bu yüzden zaten küçük boyutlu verilerle çalışıyorsak o zaman çok da linked listeyi tercih etmemiz için bir motivasyonumuz kalmıyor.
+
+468
+01:24:17,131 --> 01:24:29,311
+Bizim en büyük motivasyonumuz özellikle büyük boyutlu verilerde ve insert delete işleminin çok fazla olduğu operasyonlarda linked liste ön plana çıkmaya başlıyor.
+
+469
+01:24:30,131 --> 01:24:31,511
+Gelelim insert operation'a.
+
+470
+01:24:32,351 --> 01:24:37,472
+Şimdi insert operation için burada öncelikle şöyle gösterelim.
+
+471
+01:24:40,671 --> 01:24:45,671
+3, 5, 9'dan oluşan bir linked listeniz var.
+
+472
+01:24:45,671 --> 01:24:48,651
+3-5'e bağlı, 5-9'a bağlı.
+
+473
+01:24:48,732 --> 01:24:51,031
+3'den sonra 5 geliyor, 5'den sonra 9 geliyor.
+
+474
+01:24:52,112 --> 01:24:57,411
+Head de doğal olarak 3'ü işaret ediyor.
+
+475
+01:24:57,411 --> 01:25:00,711
+Yani head'e baktığınızda 1000 adresini gösteriyor.
+
+476
+01:25:01,612 --> 01:25:02,811
+Şunlar adres bilgileri.
+
+477
+01:25:05,332 --> 01:25:08,531
+Burada gördükleriniz yine şu bir adres bilgisi.
+
+478
+01:25:09,291 --> 01:25:10,472
+Yine bu bir adres bilgisi.
+
+479
+01:25:12,051 --> 01:25:14,211
+Şurada gördükleriniz de bir adres bilgisi aslında.
+
+480
+01:25:19,507 --> 01:25:24,827
+Ama şu bir sakladığınız bilgi.
+
+481
+01:25:26,087 --> 01:25:31,928
+Peki buraya yeni elemanlar gelebilir ve bir insert işlemi gerçekleşebilir.
+
+482
+01:25:32,067 --> 01:25:33,587
+Kaç case'imiz var ona bakalım.
+
+483
+01:25:34,727 --> 01:25:35,747
+Bir en başa gelebilir.
+
+484
+01:25:36,487 --> 01:25:39,727
+Yani head'in 2'yi göstermesi beklenebilir.
+
+485
+01:25:41,007 --> 01:25:42,087
+Bir araya gelebilir.
+
+486
+01:25:44,087 --> 01:25:44,928
+4.
+
+487
+01:25:45,867 --> 01:25:47,407
+Bir de en sona gelebilir.
+
+488
+01:25:48,067 --> 01:25:48,348
+12.
+
+489
+01:25:48,348 --> 01:25:52,528
+Zaten biz de burada 3 tane case'i inceliyoruz ekranda.
+
+490
+01:25:53,327 --> 01:26:11,028
+Baktığınızda 2 geldiği zaman yani ilk elemandan küçük head'in göstermesi gereken yeni bir eleman geldiği zaman liste şu şekilde değiştiriyor kendini.
+
+491
+01:26:11,948 --> 01:26:14,627
+Head artık yeni gelen elemanı gösteriyor.
+
+492
+01:26:14,627 --> 01:26:17,067
+yeni gelen eleman da
+
+493
+01:26:17,067 --> 01:26:19,548
+head'in gösterdiği elemanı gösteriyor
+
+494
+01:26:19,548 --> 01:26:21,487
+yani head'deki
+
+495
+01:26:21,487 --> 01:26:22,747
+bilgi bin değerini
+
+496
+01:26:22,747 --> 01:26:25,707
+yeni elemanın oluşturduğumuzda
+
+497
+01:26:25,707 --> 01:26:27,347
+null olan adres bölgesine
+
+498
+01:26:27,347 --> 01:26:27,767
+yazıyorum
+
+499
+01:26:27,767 --> 01:26:31,787
+head'in bulunduğu bölgeye de
+
+500
+01:26:31,787 --> 01:26:33,347
+yeni elemanımın
+
+501
+01:26:34,267 --> 01:26:35,327
+konumlandığı adresi
+
+502
+01:26:35,327 --> 01:26:37,467
+yazıyorum yeni elemanım 1700'de konumlanmış
+
+503
+01:26:37,467 --> 01:26:39,287
+o zaman diyorum ki head 1700'ü gösterecek
+
+504
+01:26:39,287 --> 01:26:40,647
+buradaki 1000'i alıyorum
+
+505
+01:26:40,647 --> 01:26:42,507
+onu da
+
+506
+01:26:42,507 --> 01:26:48,948
+2'nin göstermesi gereken elemanın adres bilgisine update ediyorum.
+
+507
+01:26:49,868 --> 01:26:51,548
+2 bu şekilde konumlanmış oluyor.
+
+508
+01:26:52,347 --> 01:26:57,408
+4 gelseydi o zaman 2 geldikten sonra da gelebilir.
+
+509
+01:26:57,487 --> 01:26:58,168
+Çok önemli değil.
+
+510
+01:26:58,287 --> 01:26:59,188
+Araya gelecek çünkü.
+
+511
+01:27:00,107 --> 01:27:05,427
+Yaptığım şey 4'ün yerleşmesi gereken konumu ilk başta bulmak.
+
+512
+01:27:05,607 --> 01:27:07,007
+O zaman başlıyorum head'den.
+
+513
+01:27:07,507 --> 01:27:08,228
+2'ye gidiyorum.
+
+514
+01:27:09,228 --> 01:27:10,147
+4 2'den büyük.
+
+515
+01:27:10,147 --> 01:27:12,048
+O zaman yoluma devam ediyorum.
+
+516
+01:27:12,507 --> 01:27:14,827
+3'e geliyorum. 4, 3'ten büyük.
+
+517
+01:27:15,747 --> 01:27:16,387
+5'e geliyorum.
+
+518
+01:27:17,408 --> 01:27:18,387
+4, 5'ten büyük değil.
+
+519
+01:27:19,048 --> 01:27:21,067
+Artık demek ki ben yerleşeceğim noktayı buldum.
+
+520
+01:27:23,287 --> 01:27:24,967
+Yerleşeceğim noktayı bulduğumda
+
+521
+01:27:24,967 --> 01:27:27,467
+yeni yarattığım eleman var.
+
+522
+01:27:27,888 --> 01:27:29,888
+4, 1450 adresine yerleşmiş.
+
+523
+01:27:31,267 --> 01:27:33,187
+İlk gösterdiği adres null.
+
+524
+01:27:35,187 --> 01:27:36,427
+O zaman diyorum ki
+
+525
+01:27:36,427 --> 01:27:38,147
+şu zinciri kırmam lazım.
+
+526
+01:27:38,767 --> 01:27:39,347
+Gösterelim.
+
+527
+01:27:39,347 --> 01:27:43,228
+şu zinciri kıracağım
+
+528
+01:27:43,228 --> 01:27:44,387
+yeni bir zincir oluşturacağım.
+
+529
+01:27:46,127 --> 01:27:47,647
+O da şu şekilde gerçekleşiyor.
+
+530
+01:27:49,247 --> 01:27:51,007
+Diyorum ki artık 3'üm
+
+531
+01:27:51,007 --> 01:27:53,147
+1200'ü değil
+
+532
+01:27:53,147 --> 01:27:54,627
+yeni gelen
+
+533
+01:27:54,627 --> 01:27:57,228
+araya yerleşecek elemanı 1450'yi
+
+534
+01:27:57,228 --> 01:27:59,448
+göstersin. 1450'deki
+
+535
+01:27:59,448 --> 01:28:01,767
+elemanım da 3'ü gösterdiği
+
+536
+01:28:01,767 --> 01:28:03,207
+1200'ü göstersin deyip
+
+537
+01:28:03,207 --> 01:28:04,527
+1200'ü buraya yazıyorum.
+
+538
+01:28:05,567 --> 01:28:06,207
+Ve böylece
+
+539
+01:28:06,207 --> 01:28:10,187
+3, 4'ü, 4'te 5'i gösteriyor.
+
+540
+01:28:11,147 --> 01:28:13,308
+Farkındaysanız bu dizi uzayıp gitseydi
+
+541
+01:28:13,308 --> 01:28:20,267
+biz insert operation için sadece 3 tane işlem yapmış oluyoruz.
+
+542
+01:28:20,267 --> 01:28:22,267
+Aradaki linki kırıp
+
+543
+01:28:22,267 --> 01:28:26,987
+ilgili önceki elemanın adresini yeni elemana
+
+544
+01:28:26,987 --> 01:28:29,907
+elemanın adresine ona möp ettik.
+
+545
+01:28:30,747 --> 01:28:34,448
+Yeni elemanın gösterdiği eleman adresini de
+
+546
+01:28:34,448 --> 01:28:36,647
+3'ün gösterdiği
+
+547
+01:28:36,647 --> 01:28:38,088
+adrese map ederek
+
+548
+01:28:38,088 --> 01:28:41,067
+işleni, insert operation'ı
+
+549
+01:28:41,067 --> 01:28:42,368
+hiçbir şeyi kaydırmadan,
+
+550
+01:28:42,728 --> 01:28:44,567
+hiçbir şeyin yerini değiştirmeden çok hızlı bir şekilde
+
+551
+01:28:44,567 --> 01:28:45,828
+yapmış olduk.
+
+552
+01:28:46,427 --> 01:28:48,627
+Gelelim son kezimize. Elemanın gelmesi
+
+553
+01:28:48,627 --> 01:28:50,828
+ve sona ekranmesi. 12 geldi.
+
+554
+01:28:50,948 --> 01:28:52,707
+2'den büyük, 3'den büyük,
+
+555
+01:28:53,048 --> 01:28:54,907
+4'dan büyük, 5'den büyük
+
+556
+01:28:54,907 --> 01:28:55,808
+ve 9'dan büyük.
+
+557
+01:28:56,847 --> 01:28:59,188
+9'dan büyük artık başka eleman yok.
+
+558
+01:28:59,507 --> 01:29:00,907
+Sona geldik. Demek ki son
+
+559
+01:29:00,907 --> 01:29:02,468
+kontrolümüzü de yapmamız lazım. Çünkü
+
+560
+01:29:02,467 --> 01:29:04,687
+büyük olduğu sürece devam ediyoruz.
+
+561
+01:29:05,127 --> 01:29:06,707
+Ama başka eleman yok. O zaman
+
+562
+01:29:06,707 --> 01:29:08,547
+demek ki nala
+
+563
+01:29:08,547 --> 01:29:10,487
+gelip gelmediğinde kontrol etmemiz gerekiyor.
+
+564
+01:29:10,867 --> 01:29:12,747
+O zaman diyoruz ki benim son elemanım
+
+565
+01:29:12,747 --> 01:29:13,587
+9 değil artık.
+
+566
+01:29:14,420 --> 01:29:20,420
+Benim son elemanım yeni gelen elemanın adresi 1300. Buradaki nalla 1300 yapıyorum.
+
+567
+01:29:20,420 --> 01:29:30,420
+Ve yeni gelen elemanımı zaten gösterdiği adres olarak nal olarak işaret ettiğim için herhangi bir şey yapmadan böyle bırakmış oluyorum.
+
+568
+01:29:30,420 --> 01:29:37,420
+Bu gördüğünüz işte bütün o 3 tane farklı senaryo linked liste yeni bir eleman ekleme senaryoları.
+
+569
+01:29:37,420 --> 01:29:40,420
+Buraya kadar sorusu olan var mı?
+
+570
+01:29:47,667 --> 01:29:50,628
+Peki, o zaman bunun akış diagramına geçelim.
+
+571
+01:29:53,707 --> 01:30:02,187
+Şimdi, bir linked liste de insert operation'ı implement ediyor olsaydık ve bunu akış diagramı ile ifade ediyor olsaydık, nasıl yapacaktık?
+
+572
+01:30:03,667 --> 01:30:13,887
+Öncelikle bize bir eleman yer ayırmak için bir p değeri, bir de ona atayacağımız değer veriliyor.
+
+573
+01:30:13,887 --> 01:30:35,187
+yani hangi değeri düğüm olarak listeye eklemek istiyoruz. Value'yu pvalue'ya atıyoruz. Kullanıcından aldığımız değeri yarattığımız düğümün değerine atıyoruz. Sonra ilk yapmamız gereken şey bu dizi boş mu? Kontrolü yapmak.
+
+574
+01:30:35,188 --> 01:30:41,068
+Çünkü head eğer nalı gösteriyorsa yapacağımız işlem ona göre olacak.
+
+575
+01:30:41,767 --> 01:30:44,748
+Diyelim 2, 3, 5 biraz önce konuştuk.
+
+576
+01:30:45,127 --> 01:30:46,188
+Hiç elimizde liste yok.
+
+577
+01:30:46,728 --> 01:30:50,428
+Listeyi bir diziden linkli listeye dönüştürüyoruz.
+
+578
+01:30:50,508 --> 01:31:01,828
+Yani nasıl diyelim elimizde 2, 3, 5, 7, 9'dan oluşan şöyle yapalım bir dizi var.
+
+579
+01:31:01,827 --> 01:31:07,147
+problem de şu bu diziyi alıp linked list'e oluşturmamız bekleniyor.
+
+580
+01:31:07,147 --> 01:31:11,787
+O zaman tek tek elemanları alıyoruz ve ilk başladığımız noktada 2 oluyor.
+
+581
+01:31:13,227 --> 01:31:17,967
+Sonra bu adres olarak nereyi gösteriyorsa arkasından 3 geliyor.
+
+582
+01:31:18,987 --> 01:31:24,087
+Bu şekilde bir diziden yeni bir linked liste oluşturma işlemini devam ettiriyoruz.
+
+583
+01:31:24,547 --> 01:31:31,227
+Doğal olarak ilk 2 geldiği için ve bir elimizde de herhangi bir başka eleman olmadığı için head null'ı gösteriyor.
+
+584
+01:31:31,227 --> 01:31:33,627
+head artık P'yi gösterecek.
+
+585
+01:31:34,327 --> 01:31:35,107
+Bu da olduğum gibi.
+
+586
+01:31:36,627 --> 01:31:42,127
+Çünkü benim artık biliyorum ki şöyle göstereyim bir head'im var.
+
+587
+01:31:44,087 --> 01:31:47,927
+Bu head'imin göstereceği adreste ilk başta ne oldu?
+
+588
+01:31:48,047 --> 01:31:50,227
+Yeni eleman geldiği zaman artık 2'yi gösterecek.
+
+589
+01:31:50,227 --> 01:31:57,647
+Ve doğal olarak head value'ya da value'yu atayarak bu işlemi tamamlamış oluyorum.
+
+590
+01:31:57,647 --> 01:32:03,248
+tabi 2'yi yerleştirdikten sonra bir 3 geliyor olabilir.
+
+591
+01:32:03,427 --> 01:32:04,867
+Yani artık elimde bir head var.
+
+592
+01:32:05,507 --> 01:32:06,187
+Head null değil.
+
+593
+01:32:06,787 --> 01:32:08,067
+O zaman false column'a gidiyorum.
+
+594
+01:32:08,867 --> 01:32:15,987
+False column'a gittiğim zaman p value, head'in gösterdiği value'dan küçük mü diye bakıyorum.
+
+595
+01:32:15,987 --> 01:32:26,787
+Eğer 1 gelirse, burada olan örnekte olduğu gibi, o zaman 1 geldiğinde artık head 1'i gösterecek.
+
+596
+01:32:26,787 --> 01:32:31,028
+bir de ikiyi gösterilecek burası da kırılacak anlamına geliyor.
+
+597
+01:32:31,627 --> 01:32:39,467
+İşte bu senaryo bizim burada false kolunda pardon true kolunda gerçekleştirdiğimiz senaryo.
+
+598
+01:32:40,108 --> 01:32:44,547
+P value head value'dan küçük mü?
+
+599
+01:32:44,888 --> 01:32:46,667
+Yani bir ikiden küçük mü? Evet küçük.
+
+600
+01:32:46,667 --> 01:32:56,667
+O zaman diyoruz ki biz bu noktada artık P next'e hede atayalım.
+
+601
+01:32:56,787 --> 01:33:18,047
+çok kalmıyorum. Şunu seçelim. Pnext'e head'e atayalım. Head'e de P'yi atayalım. Yani burada ne yapmış oluyoruz? Head'i yeni gelen P'yi göstermesini sağlıyoruz. Pnext'in de head'in gösterdiği elemanı göstermesini sağlamış oluyoruz.
+
+602
+01:33:18,047 --> 01:33:21,647
+Buraya kadar sorusu olan var mı?
+
+603
+01:33:22,607 --> 01:33:27,267
+İlk eleman olarak yerleştirseydik, head now kontrolü yapsaydık ne yapacağız?
+
+604
+01:33:28,827 --> 01:33:35,867
+Head yani ilk elemanımız varsa ama gelen eleman ilk elemandan küçük değere sahipse ne yapacağız bunu gördük.
+
+605
+01:33:40,787 --> 01:33:42,247
+Hocam. Evet.
+
+606
+01:33:43,248 --> 01:33:55,847
+If'in true kısmında head'e pay'i atadıktan sonra head'in value'suna tekrar value atamamıza gerek var mı? Zaten if'e gelmeden önce o işlemi yapmadık mı? Yani pay'in value'suna value atamak yeterli değil mi?
+
+607
+01:33:57,187 --> 01:33:58,247
+Şu kısım mı?
+
+608
+01:33:59,427 --> 01:33:59,827
+Evet.
+
+609
+01:34:01,827 --> 01:34:02,587
+Bakalım.
+
+610
+01:34:02,587 --> 01:34:28,687
+Burada genelde tek tek elemanlar structure yapısında atandığı için pyeh'de atadığımız nokta adres aktarımını value aktarımını da aşağıdaki satır temsil ediyor. Daha açık anlaşılması için yazıyoruz bunu. Kodlama yaparken bunu olması gerektiği gibi siz yazabilirsiniz. Buradaki adres ve değer atamanın ayrı adımlarla gerçekleştirmeyi göstermek için yaptığımız bir iş.
+
+611
+01:34:29,968 --> 01:34:31,267
+Anladım. Teşekkürler.
+
+612
+01:34:31,267 --> 01:34:32,547
+Rica ederim.
+
+613
+01:34:32,587 --> 01:34:45,968
+Şimdi gelelim bizim için önemli olan eleman geldiğinde biraz önceki gibi işte 5 geldiğinde nereye yerleşecek, 7 geldiğinde ya da araya bir eleman girecek mi? O kısmı konuşmaya.
+
+614
+01:34:45,968 --> 01:34:55,688
+İkinci yani FOS koluna girdik. Buradan geliyoruz. Şu 2-3 aralığına yerleşecek kod parçası da yani daha doğrusu akış değerli gamındaki adımlar da burada.
+
+615
+01:34:55,688 --> 01:35:12,148
+Ama şu anda 40 dakikamızı doldurduk. 14.36 bir 10 dakika ara verelim. 14.46'da kaldığımız yerden sorularınız olursa da onları da konuşarak insert operation ile yolumuza devam edelim. 10 dakika sonra görüşmek üzere.
+
+616
+01:45:12,916 --> 01:45:14,916
+Evet arkadaşlar yeniden merhaba.
+
+617
+01:45:16,515 --> 01:45:18,515
+Son bölüme giriyoruz.
+
+618
+01:45:18,515 --> 01:45:19,715
+Bugünkü.
+
+619
+01:45:21,216 --> 01:45:27,315
+En son linked liste de insert operation'da kalmıştık. Ekranı paylaşayım tekrar sizinle.
+
+620
+01:45:29,416 --> 01:45:35,516
+Şimdi akış değerlendirmemine geri döneceğiz ama yapmak istediğimiz şey
+
+621
+01:45:37,215 --> 01:45:41,916
+linki şurada görmüş olduğunuz linki kırıp yeni gelen eleman için
+
+622
+01:45:41,916 --> 01:46:02,636
+bir önceki elemanın adresini yeni gelen eleman ile güncellemek, bir önceki elemanın adresini alıp yeni gelen elemanın sonraki elemanı gösterebilmesi için next kısmına yerleştirmek.
+
+623
+01:46:02,635 --> 01:46:15,075
+Bu nedenle burada yapacağımız operasyon için hem o an bulunan adres bilgisini hem de bir önceki adres bilgisinin ne olduğunu elimizde tutmamız gerekiyor.
+
+624
+01:46:16,155 --> 01:46:28,855
+Bunun için de p-value, head value'dan küçük değilse yani genel eleman 5 örneğin 2'den büyük, 1'den devam edelim, 1'den büyük, 2'den büyük, 3'den büyük.
+
+625
+01:46:28,855 --> 01:46:33,135
+bizim ilk kontrolümüz 1 ile ilgili.
+
+626
+01:46:33,355 --> 01:46:34,735
+Büyükse false colon'a gidiyoruz.
+
+627
+01:46:34,735 --> 01:46:41,615
+O zaman diyoruz ki biz burada bir iteratif bir şekilde elemanlar üzerinde tek tek ilerleyeceğiz.
+
+628
+01:46:43,435 --> 01:46:52,435
+O andaki yani bir önceki adresi kaybetmemek için head'in adres bilgisini prev isimli değişkene atıyoruz.
+
+629
+01:46:52,435 --> 01:46:58,895
+head'in next bilgisini de current isimli bir başka değişkene atıyoruz.
+
+630
+01:46:59,495 --> 01:47:06,675
+Böylece bir önceki adres ise o anda bulunduğunuz adres bilgisinin ayrı ayrı ikisini tutma görevini gerçekleştirmiş oluyoruz.
+
+631
+01:47:07,416 --> 01:47:10,175
+Current null'dan farklı olduğu sürece bu ne demek?
+
+632
+01:47:10,175 --> 01:47:13,735
+Son elemana gelmediğimiz sürece.
+
+633
+01:47:13,735 --> 01:47:27,576
+ve current value, pay value'dan küçük olduğu sürece bir başka de işte pay value, current value'dan büyük olduğu sürece yola devam etsin.
+
+634
+01:47:27,576 --> 01:47:36,156
+Ne demek bu? 5 değeri geldi. 1'den büyük mü? Evet. 2'den büyük mü? Evet. 3'den büyük mü? Evet. En son null var. Nala geldik, orada çık.
+
+635
+01:47:37,475 --> 01:47:42,175
+Eğer diyelim ki 5'i de yerleştirelim şuraya.
+
+636
+01:47:46,195 --> 01:47:48,275
+Bu değerlensin, bu eleman da son olsun.
+
+637
+01:47:48,916 --> 01:47:58,835
+4 gelirse, o zaman 4, önce 1'den büyük, sonra 2'den büyük, 3'den büyük, 5'den büyük olmadığı için o zaman işte bu araya girecek demektir.
+
+638
+01:47:59,435 --> 01:48:01,715
+Bu koşulda bozulacak demektir.
+
+639
+01:48:02,275 --> 01:48:08,755
+Büyük olduğu sürece, diyoruz ki, bir adım ilerlediğimizde current previous olacak.
+
+640
+01:48:10,495 --> 01:48:13,876
+Yeni current'da current next olacak.
+
+641
+01:48:13,876 --> 01:48:22,136
+Yani şuraya dönecek olursanız işte her adımda ilerlediğinizde işte 1200 değeri vardı burada.
+
+642
+01:48:22,815 --> 01:48:27,635
+Burada da işte diyelim ki 1500 değeri vardı.
+
+643
+01:48:28,355 --> 01:48:29,995
+Siz her türde ilerliyorsunuz.
+
+644
+01:48:29,995 --> 01:48:34,636
+İşte 8 geleceğini varsayarsanız 3'den büyük mü 8? Evet büyük.
+
+645
+01:48:35,075 --> 01:48:41,815
+İşte o sırada previews olarak 1200'ü tutarken körıntı olarak da 1500'ü tutuyor olacaksınız.
+
+646
+01:48:41,815 --> 01:48:49,315
+ve bu her iki değeri sakladığınız için işiniz çok daha kolaylaşıyor olacak ve işlemi gerçekleştiriyor olacaksınız.
+
+647
+01:48:50,916 --> 01:48:56,115
+Bu şart sağlandığı sürece current'ı previous'ı atadık, current next'de current'ı atadık.
+
+648
+01:48:56,276 --> 01:49:02,655
+Çıktığımız noktada previous next'te p'yi, p next'te de current'ı atadık.
+
+649
+01:49:02,736 --> 01:49:03,236
+Bu ne demek?
+
+650
+01:49:04,155 --> 01:49:05,435
+Previous next neresidir?
+
+651
+01:49:05,835 --> 01:49:06,535
+Şu kısımdır.
+
+652
+01:49:07,255 --> 01:49:09,236
+Buraya p'nin adresini atadım.
+
+653
+01:49:09,236 --> 01:49:10,736
+p'nin adresi 1450.
+
+654
+01:49:11,155 --> 01:49:11,615
+Geldim.
+
+655
+01:49:11,815 --> 01:49:33,755
+previous next'te pn adresini atadım. Pnxt'de de yani şu yeni gelen elemanım next'ine de current'ı atadım. Current'ım neydi? 1200'dü. 1200 değerini buraya atadığım zaman otomatik olarak bunu buraya bağlamış oldum.
+
+656
+01:49:33,755 --> 01:49:45,916
+Burası tamamlandığı an itibariyle false column'daki işim bitmiş oldu ve buradan stop noktasına kadar gelmiş oldum.
+
+657
+01:49:45,916 --> 01:50:00,916
+Evet gördüğünüz gibi insert operasyonu link liste üzerinde birden fazla case'i göz önünde bulundurduğumuzda buradaki head null'a eşitme kontrolü,
+
+658
+01:50:00,916 --> 01:50:08,296
+işte head nala eşit değilse gelen eleman headden küçük mü? Küçükse hemen değişim.
+
+659
+01:50:08,296 --> 01:50:29,796
+Küçük değilse de uygun yeri bulana kadar devam edecek bir iterasyon başlatmak ve bu iterasyonda da bir önceki adresi ve bir o anda bulunan adresi gösterecek iki tane değişken üzerinden bu işi yönetmek gerektiğini bu akış diagramında görüyoruz.
+
+660
+01:50:29,795 --> 01:50:32,375
+Insert operasyon ile ilgili sorusu olan var mı?
+
+661
+01:50:44,404 --> 01:50:51,663
+Peki, linked list günümüzde gerçek hayat uygulamalarında aslında birçok noktada kullanılıyor.
+
+662
+01:50:52,443 --> 01:50:59,123
+Kısaca delete operasyonuna geçmeden önce onlardan bir bahsedersek belki aklınıza daha da iyi konumlanabilir.
+
+663
+01:50:59,963 --> 01:51:08,203
+Gerek web browserlarda ileri geri hareketlerinizi sayfalar arasındaki gezinmeyi sağlamak için,
+
+664
+01:51:08,203 --> 01:51:14,323
+gerek image viewer'larda bile telefonunuzdaki resimler arasında ileri geri gezinmek için.
+
+665
+01:51:14,323 --> 01:51:21,624
+Keza şarkı uygulamalarında bir sonraki şarkıyı dinlemek, bir önceki şarkıya dönmek için.
+
+666
+01:51:22,503 --> 01:51:24,404
+Bu yapı kullanılıyor.
+
+667
+01:51:25,063 --> 01:51:35,363
+Bunun ötesinde işletim sistemlerinde uygulamalar arasında alt tab basarak geçiş yapmanızı sağlamak,
+
+668
+01:51:35,363 --> 01:51:40,483
+sırayla ilgili uygulamaya atlamak, sonra circle'ları bir şekilde tekrar başlık uygulamaya dönmek.
+
+669
+01:51:40,483 --> 01:51:46,203
+Bunlar hep linked listenin kullanıldığı aslında örnekler.
+
+670
+01:51:46,863 --> 01:51:55,603
+O yüzden gerçekten probleminize bağlı olarak linked liste günümüzde çokça noktada işimize yarıyor.
+
+671
+01:51:55,603 --> 01:52:11,843
+ve bu raddaki ilgili hangi operasyonlar yürütülecekse ki genelde insert, update, delete, search işlemleri dizide olduğu gibi burada da implemente ediliyor.
+
+672
+01:52:12,223 --> 01:52:16,943
+Gelelim şimdi delete operasyonuna.
+
+673
+01:52:16,944 --> 01:52:33,463
+lead operasyonu da hastama karsanız mevcut bir linki kopartmak anlamına geliyor ve o linki koparttığınız zaman bir önceki elemanla bir sonraki elemanı bağlamak gibi de düşünebilirsiniz.
+
+674
+01:52:33,463 --> 01:52:45,963
+Burada işte bir head gene yani ilk elemana adres bilgisini saklayan bir tane elemanımız adres değişkenimiz var.
+
+675
+01:52:45,963 --> 01:52:50,503
+O 5'i gösteriyor, 5 dokusu gösteriyor, 9'da 11'i gösteriyor.
+
+676
+01:52:50,603 --> 01:52:51,243
+Neler olabilir?
+
+677
+01:52:52,484 --> 01:52:54,003
+İlk elemanın silinmesi olabilir.
+
+678
+01:52:54,904 --> 01:52:59,183
+O zaman head ilk elemanı değil, ikinci elemanı göstermeli.
+
+679
+01:53:00,723 --> 01:53:04,323
+İkinci elemanın silinmesi olabilir, yani ortadaki bir elemanın silinmesi olabilir.
+
+680
+01:53:04,323 --> 01:53:12,383
+O zaman ilk eleman artık ikinci elemanı değil, ikinci elemanın gösterdiği 1200 adresini göstermesi gerekebilir.
+
+681
+01:53:13,043 --> 01:53:14,303
+O elemanı sildiğinizde.
+
+682
+01:53:14,303 --> 01:53:27,083
+ya da ortadan bir eleman silmiyorsanız, en sondan bir eleman siliyorsanız, son elemanı silip bir önceki elemanın nalı göstermesini sağlamanız gerekiyor.
+
+683
+01:53:27,083 --> 01:53:35,463
+Keyesleriniz bunlar. Peki bir elemanı sildiğiniz zaman mutlaka yapmanız gereken bellek yönetimi için işlem nedir?
+
+684
+01:53:44,564 --> 01:53:46,663
+Free komutuyla boşalmak.
+
+685
+01:53:47,064 --> 01:53:51,024
+Evet, Free komutuyla ilgili alanı boşalmak.
+
+686
+01:53:51,484 --> 01:53:53,404
+Tabi oradaki bilgileri kullandıktan sonra.
+
+687
+01:53:53,404 --> 01:54:04,443
+Yani buradaki silme işlemi yapılırken aslında teknik olarak zinciri kırıp farklı bir şekilde bağlıyoruz.
+
+688
+01:54:04,443 --> 01:54:15,723
+bu bağlamayı yaptıktan sonra boşa çıkan elemanı da free ile C programının dilinden bahsediyorsak mutlaka o alanı boşaltmak gerekir.
+
+689
+01:54:15,723 --> 01:54:22,303
+Çünkü o alandaki ne kadar boyutta bir düğümde bilgi var onu bilmiyoruz.
+
+690
+01:54:22,323 --> 01:54:24,223
+Onu boşaltmak her zaman bir avantaj sağlar.
+
+691
+01:54:24,723 --> 01:54:29,284
+Hele gömülü sistemlerde çalışıyorsanız bir elemanı temizlediğiniz zaman bile bir berlek alanı kazanıyorsunuz.
+
+692
+01:54:29,283 --> 01:54:40,883
+tabi Java tarafında bu garbage kolektörle yönetiliyor ama C tarafına geldiğinizde bu programcının geliştiricinin sorumluluğunda o yüzden bunu unutmamak gerekiyor.
+
+693
+01:54:40,883 --> 01:54:52,023
+Şimdi gelelim bu operasyonu kabaca konuştuk. İlk eleman silinebilir dedik. Ortadan bir eleman silinebilir dedik. Bir de sondan bir eleman silinebilir dedik. Neler oluyor bir bakalım.
+
+694
+01:54:52,023 --> 01:55:20,903
+çok özür dilerim şunu geri alayım şu bizim silmeyi düşündüğümüz değer tabi silmeyi düşündüğümüz değer listede olmayabilir bu arada seçeneklerden biri de bu hatta biz bir değer silmek istediğimiz durumda liste boş olabilir bu da bir durum yani sonuçta bunlar hep gerçek hayat senaryolarında karşımıza çıkabilir o yüzden ilk kontrolümüz head null'a eşit mi değil
+
+695
+01:55:20,903 --> 01:55:23,564
+head nala eşitse zaten listede eleman yoktur.
+
+696
+01:55:24,003 --> 01:55:25,503
+O zaman kullanıcıya dememiz gerekiyor.
+
+697
+01:55:25,663 --> 01:55:28,503
+Listede silinmesi için zaten uygun bir eleman yok.
+
+698
+01:55:28,683 --> 01:55:29,243
+Liste boş.
+
+699
+01:55:29,843 --> 01:55:31,703
+Bunu bir kere yapmamız gerekiyor.
+
+700
+01:55:32,403 --> 01:55:36,443
+Head nala eşit değilse yani head en azından bir elemanı gösteriyorsa
+
+701
+01:55:36,443 --> 01:55:43,303
+o elemanın değerine bizim silmek istediğimiz ilgili değer eşleşiyor.
+
+702
+01:55:43,363 --> 01:55:43,783
+Bakıyoruz.
+
+703
+01:55:44,683 --> 01:55:46,283
+Eğer eşleşiyorsa true koluna gidiyoruz.
+
+704
+01:55:46,283 --> 01:55:56,963
+O zaman biz onu silmek istiyorsak TMP temporary bir alana head adresini atıyoruz.
+
+705
+01:55:56,963 --> 01:56:11,523
+Head'in gösterdiği alana da head next alanını aktarıyoruz ve free TMP diyerek head'in gösterdiği adresi aslında boşaltmış oluyoruz.
+
+706
+01:56:11,663 --> 01:56:13,483
+Yani doğrudan o elemanı silmiş oluyoruz.
+
+707
+01:56:13,483 --> 01:56:16,823
+Tabi bu şu demek
+
+708
+01:56:16,823 --> 01:56:23,903
+heading next'i şurada gördüğünüz bin değerini de gösteriyor olabilir.
+
+709
+01:56:24,623 --> 01:56:27,023
+Bu bini head'e almamız gerekiyor.
+
+710
+01:56:29,084 --> 01:56:31,864
+Bu arada tmp'ye head'i almamızın sebebi de
+
+711
+01:56:31,864 --> 01:56:35,523
+daha sonra onu free ile temizleyebilmek.
+
+712
+01:56:35,944 --> 01:56:36,944
+O alanı boşaltabilmek.
+
+713
+01:56:36,944 --> 01:56:39,623
+Çünkü o adresi ben bir yere saklamazsam
+
+714
+01:56:39,623 --> 01:56:51,023
+head'in gösterdiği adresi doğal olarak şurada görmüş olduğunuz 5 değerini silme ihtimalim yani bellekten kaldırma ihtimalim ortadan kalkar.
+
+715
+01:56:51,023 --> 01:57:01,403
+O yüzden önce onun adresini yani işte buradaki 600 adresini tmp'ye alıyorum sonra 600 adresini boşalt diyorum.
+
+716
+01:57:01,403 --> 01:57:29,763
+Bu arada bu elemanı silmek istediğim için de artık head'in 5'i değil şuradaki 9'u yani 1000 diyelim şuraya 1000 adresini göstermesini istediğim için 5'i siliyorsam eğer şöyle olacaksa bunu siliyorsam yaptığım şey
+
+717
+01:57:31,403 --> 01:57:33,443
+head next'i head'e atamak.
+
+718
+01:57:34,144 --> 01:57:42,043
+Head next'de şu 1000 değeri, 1000 değerine head'e atadığım zaman head doğrudan 9'u gösterecek hale geliyor.
+
+719
+01:57:42,416 --> 01:57:50,416
+Yani ilk elemanı sileceksem böyle bir işlem adımlarından geçmem gerekiyor.
+
+720
+01:57:52,416 --> 01:57:55,416
+Gelelim false goal'una.
+
+721
+01:57:55,416 --> 01:58:05,416
+Yani aradığım eleman, silmek istediğim eleman ilk eleman değilse o zaman benim için artık bir döngü başlaması gerekiyor.
+
+722
+01:58:05,416 --> 01:58:07,416
+Şurada görmüş olduğunuz.
+
+723
+01:58:07,416 --> 01:58:16,436
+Çünkü 5'ten sonra aradığım eleman 9 mu, 11 mi, varsa 13 mü, 15 mi bunların arkasında neler var bilmiyorum.
+
+724
+01:58:16,996 --> 01:58:18,636
+O yüzden de bir döngüye girmem gerekiyor.
+
+725
+01:58:18,735 --> 01:58:22,636
+Tek bir if kontrolüyle devam etmem mümkün değil.
+
+726
+01:58:23,695 --> 01:58:26,875
+Yine aynı ihtiyacım sürüyor.
+
+727
+01:58:26,875 --> 01:58:38,495
+bir önceki ve o anda bulunduğum adres bilgisine ihtiyacım olduğu için rev değişkenimi head'in gösterdiği elemanı atıyorum.
+
+728
+01:58:39,695 --> 01:58:43,636
+current değişimi de head next'in gösterdiği elemanı atıyorum.
+
+729
+01:58:44,316 --> 01:58:45,115
+Yani nedir?
+
+730
+01:58:45,615 --> 01:58:50,716
+5'i sildiysen eğer artık 1000'i gösteriyorsa benim head'im,
+
+731
+01:58:50,716 --> 01:58:53,136
+1000 değerini preview'sa atıyorum,
+
+732
+01:58:53,136 --> 01:58:57,676
+head next'imde 1200, 1200 değerinde current'ı atıyorum.
+
+733
+01:58:58,875 --> 01:59:00,456
+Bundan sonra başlıyorum kontrole.
+
+734
+01:59:01,155 --> 01:59:14,596
+Current null'dan farklıysa yani listenin sonuna geldim mi gelmedim mi ve aradığım değer listedeki elemanın değeriyle tutuyorum.
+
+735
+01:59:15,296 --> 01:59:17,235
+Tutmadığı sürece yoluma devam edeceğim demektir.
+
+736
+01:59:20,692 --> 01:59:34,032
+ve bu noktada biz yine bir önceki insertion'da olduğu gibi current'ı alıyoruz, preview'sı atıyoruz, current next'ı alıyoruz, current'ı atıyoruz.
+
+737
+01:59:34,652 --> 01:59:43,931
+Burada bir kritik nokta var. Eğer listem sırasız bir listeyse, bunu hiç konuşmadık.
+
+738
+01:59:44,331 --> 01:59:49,751
+Yani nasıl sırada diziler var, sırasız diziler var, linked listede sorted veya unsorted olabilir.
+
+739
+01:59:49,751 --> 02:00:13,732
+Yani şu ana kadar sanki sıralıymış gibi bir intiba oluşmuş olabilir örneklerden dolayı ama öyle olmak zorunda değil. Şuradaki kontrol sırasız bir listemin olduğunu varsayarak yapılmış bir kontrol. Ama eğer sorted bir link listim varsa o zaman buraya küçüktür işareti koymam ve çıktıktan sonra bu kontrolü yapmam.
+
+740
+02:00:13,731 --> 02:00:21,251
+ilgili değeri bulup bulmadığımı, silip silmediğimi bana silip silmeyeceğimi söyleyecektir.
+
+741
+02:00:21,891 --> 02:00:22,951
+Buna da dikkat etmek lazım.
+
+742
+02:00:22,951 --> 02:00:31,631
+Çünkü eğer o silmem gereken elemanı geçtiysam ve listesi sıralıysa o zaman geri kalanlara bakmama gerek yok.
+
+743
+02:00:32,131 --> 02:00:39,371
+Aynı şey dizilerde arama yaptığımızda da geçerli, sıralı ve sırasız olmama durumuna bağlı olarak.
+
+744
+02:00:40,471 --> 02:00:41,631
+Sonra buradan çıkıyorum.
+
+745
+02:00:42,851 --> 02:00:43,371
+Döngüden.
+
+746
+02:00:43,732 --> 02:00:52,052
+elemanı buldum ya da bulmadım bunu bilmiyorum. İki tane case'im var. Ya sonuna geldim çıktım eleman dizide yoktu ya da elemanı buldum çıktım.
+
+747
+02:00:52,852 --> 02:00:59,272
+current null'a eşitse o zaman diyorum ki ben sonuna gelmişimdir not found mesajını ekrana yazdım.
+
+748
+02:01:00,192 --> 02:01:10,052
+current null'a eşit değilse o zaman ben demek ki bir yerde durdum elemanı buldum ama adresi onu göstermiyor.
+
+749
+02:01:10,052 --> 02:01:16,492
+yaptığım şey current'ın next'ini previous'ın next'ine atamak.
+
+750
+02:01:18,232 --> 02:01:27,052
+Yani nedir? Şu an current'tayım. Current'ın next'i 1200'ü gösteriyor. Bu değeri alıp previous'ın next'ine atamak.
+
+751
+02:01:27,992 --> 02:01:34,091
+Dolayısıyla 9'u siliyorsan 5200'ü gösterecek ve 11'e bağlanacak anlamına geliyor.
+
+752
+02:01:34,091 --> 02:01:47,311
+sonra işte burası alan küçük olduğu için bir tablet ekranında yazdığım için 2'yi şuradaki 2 ile birleştiriyorum ve delete operation'ımı tamamlıyorum.
+
+753
+02:01:48,211 --> 02:01:51,231
+Burada da current'ı bu sefer free yapmamız gerekmiyor mu?
+
+754
+02:01:53,331 --> 02:02:00,491
+Doğru söylüyor olabilirsin bir bakalım. Evet bunu yapmamız gerekiyor. Nerede yaparız o zaman sorayım eğer cevap verebilir misin?
+
+755
+02:02:00,492 --> 02:02:08,831
+hemen o birden girdik, körnüt eşit eşit null false'a çıktık. Prevnext'i, körnüt next'i aldığımız yerden sonra şurası.
+
+756
+02:02:08,831 --> 02:02:19,552
+Evet doğru. Burada bu değiştiği yaptıktan sonra bizim için boşa çıkan yer şu eleman. O zaman ben free olarak ne yazsam oraya uygun olur?
+
+757
+02:02:23,796 --> 02:02:25,796
+Free-Corrent.
+
+758
+02:02:25,796 --> 02:02:52,155
+Free-Corrent. Tamam. Teşekkür ederim [öğrenci]. Free-Corrent yaptığım zaman o anda aslında dokuzu taşıyan düğümümü boşa havale etmiş olacağım ve onun kapladığı yeri de kullanım için diğer uygulamaların hizmetini açmış olacağım. Bu şekilde teşekkürler hatırlatmak için [öğrenci].
+
+759
+02:02:53,796 --> 02:02:57,856
+Delete operasyonu ile ilgili sorusu olan var mı link listelerde?
+
+760
+02:02:59,196 --> 02:03:05,855
+Hocam ben head'in içerisinde hem value hem de adres mi tutuluyor sadece adres mi tutuluyor?
+
+761
+02:03:06,715 --> 02:03:09,275
+Genellikle head'de sadece adres tutuluyor.
+
+762
+02:03:09,915 --> 02:03:13,696
+O zaman şu dördüncü adımda head'in value'sunu kontrol ettik ya.
+
+763
+02:03:14,595 --> 02:03:16,755
+Bakalım yanlış bir şey söylemiş olmayayım.
+
+764
+02:03:19,035 --> 02:03:22,336
+Şu if'in olduğu şurada mı?
+
+765
+02:03:22,595 --> 02:03:22,955
+Evet.
+
+766
+02:03:22,955 --> 02:03:25,356
+Bunu şöyle düşünebilirsiniz.
+
+767
+02:03:25,496 --> 02:03:26,796
+Bu bir kafa karıştı yaratıyor.
+
+768
+02:03:26,875 --> 02:03:27,995
+Haklısın bu soruyu sordun.
+
+769
+02:03:28,056 --> 02:03:28,456
+Niye oldu?
+
+770
+02:03:29,096 --> 02:03:30,056
+Bunun sebebi şu.
+
+771
+02:03:31,435 --> 02:03:34,056
+Head'in gösterdiği adresin value'suna bakıyoruz biz.
+
+772
+02:03:35,575 --> 02:03:36,096
+Bu o demek.
+
+773
+02:03:38,156 --> 02:03:38,836
+Anladım.
+
+774
+02:03:39,516 --> 02:03:43,336
+O yüzden sanki head'in value'su varmış gibi gözüküyor burada.
+
+775
+02:03:43,336 --> 02:03:49,175
+Ama biz bu adresin gösterdiği kısımdaki value değerine bakıyoruz.
+
+776
+02:03:49,175 --> 02:03:56,375
+Anladım. O durumda aşağıda set ederken headin next tree var gibi görünüyor.
+
+777
+02:03:56,375 --> 02:04:13,115
+Evet aynen öyle. Yani o tamamen hani oraya P yazmıyoruz. Head bir adres, P de bir adres ama P aynı zamanda o adresin değerlerini de saklıyor. Biz headin üzerinden dolaylı olarak o değerlere ulaşmış oluyoruz.
+
+778
+02:04:13,615 --> 02:04:14,695
+Anladım. Teşekkür ederim.
+
+779
+02:04:15,255 --> 02:04:15,715
+Rica ederim.
+
+780
+02:04:15,715 --> 02:04:30,715
+başka soru sormak isteyen, anlaşılmayan, insert ve delete her ikisi içinde olabilir ya da update, search, linkli liste üzerine gezinme, free, previous, current.
+
+781
+02:04:37,235 --> 02:04:48,036
+Peki, yani özellikle soru var mı diye sorduktan sonra sizden bir ses gelmeyince uzun bir boşluk olmaması için yoluma devam ediyorum.
+
+782
+02:04:48,935 --> 02:05:03,175
+Aslında tekrardan şu biraz önceki true false'un true kolu için soracağım da, head'in içerisinde şu TMP'yi attık ya, sadece head'in next'i eşittir şeklinde sadece set etsek olmaz mıydı?
+
+783
+02:05:03,175 --> 02:05:06,795
+head'i head'in next'ine set etseydik.
+
+784
+02:05:07,255 --> 02:05:07,735
+Şurası mı?
+
+785
+02:05:08,075 --> 02:05:09,955
+Evet, value tutmuyor ya kendi içinde.
+
+786
+02:05:11,235 --> 02:05:13,255
+Neyi nereye set etseydik tam duyamadım.
+
+787
+02:05:13,255 --> 02:05:17,775
+Yani temp değişkenini hiç oluşturmadan head'in next'i deseydik olmaz mıydı?
+
+788
+02:05:18,015 --> 02:05:25,315
+Şimdi şöyle, şurası olmasaydı ben head'in gösterdiği adresi bir yerde saklamayacaktım temporary bir alanda.
+
+789
+02:05:25,916 --> 02:05:30,115
+Head'in next'ine head'e atadığım anda da head'in ilk değerini kaybetmiş olacaktım.
+
+790
+02:05:30,115 --> 02:05:33,495
+Evet.
+
+791
+02:05:35,575 --> 02:05:45,195
+Bu headin ilk değerini kaybetmemem lazım çünkü headin gösterdiği 5 numara 5 değerine sahip elemanı silmek istiyorum.
+
+792
+02:05:46,275 --> 02:05:52,275
+Eğer ben bunu silmek gibi bir kaygım olmasaydı o zaman şunu yapmama gerek yoktu.
+
+793
+02:05:53,375 --> 02:05:53,915
+Şimdi anladım.
+
+794
+02:05:54,115 --> 02:05:54,275
+Tamam.
+
+795
+02:05:54,515 --> 02:05:55,195
+Sağ olun.
+
+796
+02:05:55,755 --> 02:05:56,255
+Rica ederim.
+
+797
+02:05:56,255 --> 02:06:10,755
+Peki o zaman dediğim gibi linked listede search, update, insert ve delete operasyonlarını bu mantıkla yapabilirsiniz.
+
+798
+02:06:10,755 --> 02:06:21,295
+Tabi bu single linked list, bunun double linked listi var, circular linked listi var, circular double linked list var.
+
+799
+02:06:21,295 --> 02:06:24,195
+buralarda bu implementasyon birazcık değişiyor.
+
+800
+02:06:24,815 --> 02:06:28,075
+Çünkü burada tek yönde gidiyorsunuz.
+
+801
+02:06:28,416 --> 02:06:32,195
+İleri geri hareket etme şansınız single linked list'te yok.
+
+802
+02:06:32,775 --> 02:06:34,895
+Sadece ileri yönünde hareket ediyorsunuz.
+
+803
+02:06:34,956 --> 02:06:36,875
+Dezavantajlı single list'in bu.
+
+804
+02:06:38,735 --> 02:06:41,375
+Yani tek bir yönde hareket etmenizi mümkün kılıyor.
+
+805
+02:06:41,855 --> 02:06:50,355
+Örneğin bir önceki şarkıyı dinlemek istediğinizde bir önceki şarkıya gidebilmek için o şarkının bulunduğu konumu saklıyor uygulama.
+
+806
+02:06:50,355 --> 02:06:53,495
+single linked list'te böyle bir imkanınız yok.
+
+807
+02:06:53,956 --> 02:06:55,755
+Aynı şey browser için de geçerli.
+
+808
+02:06:56,795 --> 02:07:01,456
+Fakat double linked list'te de daha fazla bilgi saklamanız gerekiyor.
+
+809
+02:07:01,615 --> 02:07:02,835
+En azından adres bilgisi.
+
+810
+02:07:02,835 --> 02:07:17,655
+Bu arada value değerine bağlı olarak adres bilgisi sakladığınızda sakladığınız eleman miktarı bir diziyle kıyasladığınızda iki katına, üç katına çıkmıyor aslında teknik olarak.
+
+811
+02:07:17,655 --> 02:07:45,015
+Çünkü eğer değer saklıyorsanız bir tane değer öyle gözüküyor olabilir ama value tarafında daha fazla boyutta bir işte 30 byte, 40 byte, 50 byte'lık bir bilgi saklıyorsanız adres olarak normalde 40 byte saklayacakken dizide işte 8 byte'lık bir adres ya da 4 byte'lık bir adres olduğunda 44 byte'a 2 tane adres bilgisi saklıyorsanız 48 byte'a çıkıyorsunuz.
+
+812
+02:07:45,015 --> 02:07:54,036
+E tabi 4 byte olsaydı sakladığınız bilginin boyutu o zaman adres bilgisi 4 byte, önceki adres bilgisi 4 byte o zaman 3 katına çıkmış gibi olabilirdiniz.
+
+813
+02:07:54,036 --> 02:08:05,536
+Fakat her seferinde sakladığınız bilgi miktarı değişkenlik gösterdiği için double linked list de saklıyorsunuz demek 3 kat bilgi saklıyorsunuz anlamına gelmiyor.
+
+814
+02:08:05,676 --> 02:08:11,756
+Sadece 2 tane daha adres bilgisi ek olarak saklıyorsunuz anlamına geliyor.
+
+815
+02:08:11,755 --> 02:08:24,795
+hesap kitap yaparken de buna dikkat etmekte fayda var. Evet, şimdi linkli liste türlerine bir bakalım. Bir soru var.
+
+816
+02:08:25,555 --> 02:08:31,775
+Aramayı bir subroutine olarak implemente etseydik diye operasyonları ifade etmek daha kolay olmaz mıydı?
+
+817
+02:08:31,775 --> 02:08:36,375
+Necid'in sorusu. Yani yapılabilir.
+
+818
+02:08:37,108 --> 02:09:02,187
+İlla böyle bir çözüm olacak diye bir aslında zorunluluk yok. Ama hani implementasyona bir bakmak lazım. Hani mantıklı mı değil mi diye. Çünkü burada silme ve eklemenin dinamikleri biraz birbirinden farklı. O nedenle aradaki şöyle göstereyim. Şu kısım çok benziyor. Evet.
+
+819
+02:09:02,187 --> 02:09:31,328
+Evet bunu bir fonksiyon olarak bir rutin olarak reusable hale getirebilirsiniz. Ona bir itirazım yok. Ama diğer kısımlar birbirinden biraz daha farklı. Mutlaka tekrar edilebilir bir kod parçası var bunların içinde. Çünkü sonuç itibariyle linked liste üzerinde geziyoruz. Ve belli bir koşula göre geziyoruz. Bu anlamda belli bir modifikasyon yapılabilir diye cevap vermiş olayım chatten gelen soruya.
+
+820
+02:09:32,187 --> 02:09:46,648
+Burada türleri konuşmuştuk. Single linked list'te bir eleman, bir son iki elemanı, o eleman bir son ikini ve nal görene kadar yazıyorsunuz.
+
+821
+02:09:46,648 --> 02:09:56,527
+Bu elemanlara erişmek için de birbirlerinin üzerine geçmek zorundasınız. Ve geri dönüşümüz yok. Son elemanın da nalı gösterdiğini biliyoruz.
+
+822
+02:09:56,527 --> 02:10:06,527
+Double linked list'e geldiğimizde bu sefer dediğim gibi iki adres birisi bir değer veya bir data tutuyorsunuz.
+
+823
+02:10:07,087 --> 02:10:13,267
+İlk eleman nalı gösteriyor preview'su, son elemanın next'i nalı gösteriyor.
+
+824
+02:10:14,267 --> 02:10:15,328
+Double linked list'te.
+
+825
+02:10:16,527 --> 02:10:26,247
+Head ilk elemanı gösteriyor ve bu şekilde siz elemanlar arası ileri geri hareket edebiliyorsunuz.
+
+826
+02:10:26,247 --> 02:10:28,347
+Burada bir şey silecek olsaydınız ne olurdu?
+
+827
+02:10:29,127 --> 02:10:31,207
+Diyelim ki şunu sileceksiniz şu elemanı.
+
+828
+02:10:32,307 --> 02:10:35,627
+O zaman bu sefer birden fazla işiniz var.
+
+829
+02:10:42,612 --> 02:10:44,291
+elemanın
+
+830
+02:10:44,291 --> 02:10:44,812
+previni
+
+831
+02:10:44,812 --> 02:10:47,311
+o elemanın
+
+832
+02:10:47,311 --> 02:10:49,671
+previnin bağlı olduğu
+
+833
+02:10:49,671 --> 02:10:52,032
+işte datanın
+
+834
+02:10:52,032 --> 02:10:54,291
+next'ine atayacak
+
+835
+02:10:54,291 --> 02:10:55,532
+şekilde güncellemeniz
+
+836
+02:10:55,532 --> 02:10:58,231
+previous elemanın
+
+837
+02:10:58,231 --> 02:11:00,431
+bağlı olduğu elemanın next'ine
+
+838
+02:11:00,431 --> 02:11:02,431
+de current next'in
+
+839
+02:11:02,431 --> 02:11:04,591
+bağlı olduğu elemana
+
+840
+02:11:04,591 --> 02:11:06,751
+atayacak şekilde bir güncelleme
+
+841
+02:11:06,751 --> 02:11:08,591
+yapmamız lazım. Yani iş biraz daha karışıyor.
+
+842
+02:11:09,931 --> 02:11:10,551
+Çok zor
+
+843
+02:11:10,551 --> 02:11:12,231
+değil. Bu insert
+
+844
+02:11:12,231 --> 02:11:21,991
+Delete, Update, Search işlerini Double Linked List'te yapmanızı, kendi kendinizi çözmeye çalışmanızı tavsiye ederim.
+
+845
+02:11:22,851 --> 02:11:25,851
+Bir alıştırma olarak da bunu öneririm.
+
+846
+02:11:27,051 --> 02:11:30,811
+Konuyu anlamanız açısından size müthiş fayda sağlayacaktır.
+
+847
+02:11:30,911 --> 02:11:35,351
+Biraz daha zordur ama oldukça yararlı olacaktır.
+
+848
+02:11:36,371 --> 02:11:40,511
+Double Linked List'in yani bir silme operasyonu da böyle çalışıyor.
+
+849
+02:11:40,511 --> 02:11:43,491
+Insert ettiğinizde de araya bir eleman gelecek.
+
+850
+02:11:44,251 --> 02:11:51,051
+Onun işte burada previewsına bir önceki elemanın next'i işaret edecek.
+
+851
+02:11:52,491 --> 02:11:58,832
+Onun next'i de bir sonraki elemanın previewsına denk gelecek şekilde işaretlemeler yapılıyor.
+
+852
+02:12:00,051 --> 02:12:03,991
+Evet, [öğrenci] yine ilk elemanın adresini gösteriyor.
+
+853
+02:12:04,832 --> 02:12:08,671
+Her zaman Head'in ilk elemanın adresini gösterdiğini unutmayın.
+
+854
+02:12:08,671 --> 02:12:11,191
+tail varsa o da son elemanın
+
+855
+02:12:11,191 --> 02:12:12,311
+adresini gösteriyor.
+
+856
+02:12:13,731 --> 02:12:14,771
+Adres demek
+
+857
+02:12:14,771 --> 02:12:17,231
+previous ya da next demek değil. O elemanın
+
+858
+02:12:17,231 --> 02:12:19,031
+bulunduğu adres demek.
+
+859
+02:12:19,651 --> 02:12:20,871
+Yani bir eleman
+
+860
+02:12:20,871 --> 02:12:22,811
+head dediğinizde head adresi gösteriyor
+
+861
+02:12:22,811 --> 02:12:24,591
+dediğinizde bu eleman 300'de bulunuyor.
+
+862
+02:12:26,231 --> 02:12:26,871
+Previous ise
+
+863
+02:12:26,871 --> 02:12:28,091
+now. Next ise
+
+864
+02:12:28,091 --> 02:12:30,731
+bulunan ikinci elemanın adresi neyse
+
+865
+02:12:30,731 --> 02:12:32,411
+onu gösteriyor. Mantık bu.
+
+866
+02:12:33,911 --> 02:12:34,231
+Yani
+
+867
+02:12:34,231 --> 02:12:36,851
+next ile preview birbirleriyle
+
+868
+02:12:36,851 --> 02:12:38,431
+arasında ilişki gösterdik ama
+
+869
+02:12:38,431 --> 02:12:41,391
+önemli olan o itemlerin
+
+870
+02:12:41,391 --> 02:12:42,472
+adresini göstermesi.
+
+871
+02:12:43,732 --> 02:12:44,491
+Gelelim
+
+872
+02:12:44,491 --> 02:12:46,171
+Sorgular Linked List'e. Bu da
+
+873
+02:12:46,171 --> 02:12:49,031
+işletim sistemi seviyesinde de
+
+874
+02:12:49,031 --> 02:12:50,112
+kullanılan
+
+875
+02:12:50,112 --> 02:12:52,352
+özellikle
+
+876
+02:12:52,352 --> 02:12:54,291
+proses scheduling
+
+877
+02:12:54,291 --> 02:12:56,231
+yapısında kullanılan
+
+878
+02:12:56,231 --> 02:12:58,571
+bir
+
+879
+02:12:58,571 --> 02:13:00,011
+aslında örnek.
+
+880
+02:13:01,632 --> 02:13:02,791
+Burada prosesler var.
+
+881
+02:13:03,731 --> 02:13:03,871
+Ve
+
+882
+02:13:03,871 --> 02:13:05,832
+her proses
+
+883
+02:13:05,832 --> 02:13:08,251
+işlemciden bir süre alıyor.
+
+884
+02:13:08,431 --> 02:13:10,891
+o süre bittiğinde
+
+885
+02:13:10,891 --> 02:13:12,371
+donduruyor işini.
+
+886
+02:13:13,051 --> 02:13:15,091
+Bir sonraki scheduler bir sonraki
+
+887
+02:13:15,091 --> 02:13:16,931
+prosesi seçiyor. Sonra bir
+
+888
+02:13:16,931 --> 02:13:19,231
+sonrakini seçiyor. Doğal olarak
+
+889
+02:13:19,231 --> 02:13:20,991
+bir yerden sonra listedeki
+
+890
+02:13:20,991 --> 02:13:23,091
+proses bittiğinde başa dönmek gerekiyor ki
+
+891
+02:13:23,091 --> 02:13:24,612
+ilk proses tekrar hizmet olsun.
+
+892
+02:13:25,191 --> 02:13:27,191
+İşte o zaman sorukları linked list kullanmak
+
+893
+02:13:27,191 --> 02:13:29,191
+bizim işimizi
+
+894
+02:13:29,191 --> 02:13:30,151
+çok kolaylaştırıyor.
+
+895
+02:13:31,031 --> 02:13:31,471
+Burada
+
+896
+02:13:31,471 --> 02:13:35,391
+sadece farklı olarak single linked listten
+
+897
+02:13:35,391 --> 02:13:37,311
+nextler
+
+898
+02:13:37,311 --> 02:13:38,832
+bir son iki elemanı gösteriyor.
+
+899
+02:13:39,612 --> 02:13:41,251
+Son elemanın next'i null
+
+900
+02:13:41,251 --> 02:13:43,692
+gösterecekken ilk elemanın
+
+901
+02:13:43,692 --> 02:13:44,891
+adresini gösteriyor.
+
+902
+02:13:45,531 --> 02:13:47,751
+Yani son elemanın next'iyle
+
+903
+02:13:47,751 --> 02:13:49,131
+aslında head'in
+
+904
+02:13:49,131 --> 02:13:50,751
+gösterdiği adres aynı.
+
+905
+02:13:52,151 --> 02:13:53,871
+Son eleman da 500'ü gösteriyor.
+
+906
+02:13:54,431 --> 02:13:55,671
+Head de 500'ü gösteriyor.
+
+907
+02:13:57,451 --> 02:13:57,832
+Aradaki
+
+908
+02:13:57,832 --> 02:14:01,832
+single linked liste fark bu.
+
+909
+02:14:03,231 --> 02:14:03,751
+Circular
+
+910
+02:14:03,751 --> 02:14:05,711
+double linked liste geldiğimiz
+
+911
+02:14:05,711 --> 02:14:07,531
+zamanda bu
+
+912
+02:14:07,531 --> 02:14:09,911
+yukarıda konuştuğumuz double linked liste
+
+913
+02:14:09,911 --> 02:14:12,311
+ek olarak heading gösterdiği
+
+914
+02:14:12,311 --> 02:14:13,891
+adrese siz
+
+915
+02:14:13,891 --> 02:14:15,871
+aynı
+
+916
+02:14:15,871 --> 02:14:17,871
+zamanda son elemanın adresini
+
+917
+02:14:17,871 --> 02:14:19,551
+heading gösterecek şekilde
+
+918
+02:14:19,551 --> 02:14:21,391
+ayarlıyorsunuz.
+
+919
+02:14:22,331 --> 02:14:22,531
+Ve
+
+920
+02:14:22,531 --> 02:14:25,791
+ilk elemanın adresi de son
+
+921
+02:14:25,791 --> 02:14:28,011
+elemanın adresini yani 900'ü gösterecek
+
+922
+02:14:28,011 --> 02:14:29,151
+şekilde prev kısmına
+
+923
+02:14:29,151 --> 02:14:31,251
+konumlandırmanız gerekiyor.
+
+924
+02:14:32,311 --> 02:14:32,731
+Bunlar
+
+925
+02:14:32,731 --> 02:14:35,951
+aslında en çok kullanılan
+
+926
+02:14:35,951 --> 02:14:37,771
+Linked List
+
+927
+02:14:37,771 --> 02:14:39,552
+türleri. Bunlarla ilgili
+
+928
+02:14:39,552 --> 02:14:40,371
+sorusu olan var mı?
+
+929
+02:14:44,756 --> 02:15:02,235
+circular listelerde listenin bittiğini nasıl anlarız? Head me referansımız olmalı. Burada listenin bittiğini kısmını [öğrenci] eğer case'in kafanda varsa, sesli olarak da paylaşma imkanı varsa söyleyebilir misin?
+
+930
+02:15:02,235 --> 02:15:12,436
+Hocam mesela bir eleman arıyoruz ve birinci elemandan başladık. Sonuncu elemana geldiğimizde hala bulamadıysak başa mı dönecek bu?
+
+931
+02:15:12,436 --> 02:15:20,895
+Bu da bir case çünkü özellikle single linked list'e null'a kadar kontrol yapıyorduk.
+
+932
+02:15:21,535 --> 02:15:29,215
+Burada da aslında head'in referansımız olmalı ipucuyu da veriyor burada.
+
+933
+02:15:30,116 --> 02:15:36,436
+Senin de söylediğin gibi adresler unique olduğu için aynı alanda başka birini saklama imkanımız olmadığı için
+
+934
+02:15:36,436 --> 02:15:45,956
+eleman head'in adresini gösterene kadar yani current next head olana kadar bu aramaya devam etmemiz gerekir.
+
+935
+02:15:47,196 --> 02:16:03,395
+Bu da yine farklı türdeki linked listlerde çalışırsanız nelerle karşılaşabileceğinizi size gösteren, yaptığınız tasarımda bazı değişiklikler mutlaka gerektiğini gösteren güzel bir örnekle.
+
+936
+02:16:03,395 --> 02:16:04,395
+Teşekkür ediyorum soru için.
+
+937
+02:16:05,715 --> 02:16:06,516
+Başka sorusu var.
+
+938
+02:16:11,923 --> 02:16:24,483
+Şimdi önümüzdeki konumuz stack. Bu hafta siteye geçmeyeceğiz. Ama linked listeyle ilgili de şöyle bir özet yapacağız.
+
+939
+02:16:25,103 --> 02:16:32,463
+Linked listenin avantajları neler, dezavantajları neler, hangi application'larda kullanılıyor günümüzdeki biraz daha zorleklerden var.
+
+940
+02:16:32,463 --> 02:16:39,783
+Bunları size not alıyor olacağım. Tablet üzerinde sunum notların içerisine de ekliyor olacağım.
+
+941
+02:16:39,783 --> 02:16:43,223
+ve siz videoları izlediğiniz zaman onlara
+
+942
+02:16:49,203 --> 02:17:05,823
+Hatta önümüzdeki haftalarda ağaçlara geçtiğimizde in order, pre order bu şekilde ağacı gezdiğinizde bu yapıdan nasıl faydalanıyorsunuz? Linked liste yapısından onlara bakacağız.
+
+943
+02:17:05,823 --> 02:17:14,923
+İleride depth first search, breadth first search bir graf üzerinde gezme işlemi yaptığınızda linked listelerden nasıl faydalanıyorsunuz?
+
+944
+02:17:14,923 --> 02:17:27,263
+Bunları gerek ilerleyen derste ve dönemlerde gerekse de yazacağın notlar içerisinde detay bilgiler buluyor olacaksınız.
+
+945
+02:17:29,103 --> 02:17:34,863
+Sorunuz yoksa bugün zaten biraz da önden gidiyoruz konularda.
+
+946
+02:17:34,863 --> 02:17:46,163
+Bugünü bu şekilde tamamlayıp önümüzdeki hafta kaldığımız yerden bu bahsettiğim link liste avantaj ve dezavantajları ve gerçek hayat kullanımlarını anlatacağım.
+
+947
+02:17:46,683 --> 02:17:48,003
+Sorunuz varsa yanıtlayacağım.
+
+948
+02:17:48,604 --> 02:17:51,503
+Hemen ardından stack ve queue'ye geçeceğiz.
+
+949
+02:17:52,843 --> 02:17:57,983
+Burada yığın ve kuyruk ve nerelerde kullanıldığı bunları göreceksiniz.
+
+950
+02:17:58,104 --> 02:17:59,303
+Yeni veri yapılarını tanıyacağız.
+
+951
+02:18:00,523 --> 02:18:02,843
+Benim anlatacaklarım bugünlük bu kadar.
+
+952
+02:18:02,843 --> 02:18:31,463
+arkadaşlar. Özür diliyorum. Akmamış'e geldi. Bir soru vardı. [öğrenci]'nın sorusuyla hemen oraya dönelim. Ödevi bir hatırlatır mısınız? Ödev değil de alıştırmayı bir hatırlatır mısınız demişti. Alıştırma şu. Bir dizi veriliyor. Bu dizide en tane eleman var. Bu elemanlar unique tekrar etmiyorlar. Bu elemanların R kombinasyonunda üçlü, ikili, dörtlü, R ne verildiyse ekrana bütün kombinasyonların basılmasını sağlayacak
+
+953
+02:18:31,463 --> 02:18:40,823
+recursive kodun yazılmasını size önermiştim bu problemi çözmenizi, algoritmik olarak kodunu yazmanızı önermiştim.
+
+954
+02:18:41,183 --> 02:18:43,983
+Alıştırma ödevi buydu. Bunu da hatırlatmış olayım.
+
+955
+02:18:48,180 --> 02:18:52,859
+Tamam hocam. Yani sadece bu ekrandakiler değil, hepsinin çıkması lazım herhalde.
+
+956
+02:18:53,859 --> 02:18:59,560
+Sadece bu ekrandakiler derken, yani şöyle, 1, 2, 3, 4, 5'in üçlü kombinasyonlarında sadece bunlar var orada değil mi?
+
+957
+02:19:00,419 --> 02:19:05,899
+Mesela 1, 2, pardon 1, 3, 4, 1, 3, 5, 1, 4, 5.
+
+958
+02:19:06,239 --> 02:19:13,479
+Evet evet, tabii tabii. Aynen öyle. Yani bu benim, çok doğru söylüyorsun, onları da yazalım. Yanlış bir anlaşılmaya sebebiyet ver misin?
+
+959
+02:19:13,479 --> 02:19:23,680
+1, 3, 4, 1, 3, 5, 2, 4, 5, 4, 5, başka kaldı mı?
+
+960
+02:19:26,180 --> 02:19:30,239
+1, 2, 3, 1, 2, 4, 1, 4, 5 var hocam.
+
+961
+02:19:30,639 --> 02:19:32,860
+4 ve 5 ile başlayanlar olmayacak mı hocam?
+
+962
+02:19:33,979 --> 02:19:38,540
+4 ve 5 ile başlayanlar 1, 4, 5, 2, 4, 5 ve 3, 4, 5 var zaten.
+
+963
+02:19:40,159 --> 02:19:40,699
+Değil mi?
+
+964
+02:19:40,700 --> 02:19:44,560
+Burada sıralı olacak değil mi hocam yani?
+
+965
+02:19:45,580 --> 02:19:47,260
+4-5-1 gibi kombinasyonlar
+
+966
+02:19:47,260 --> 02:19:49,599
+Sıralı olma zorunluluğu yok.
+
+967
+02:19:51,120 --> 02:19:55,019
+Önemli olan o kombinasyonların ekrana yazılması.
+
+968
+02:19:55,120 --> 02:19:56,040
+Şu an bir şey unuttuk mu?
+
+969
+02:19:57,919 --> 02:20:02,559
+Mesela 1-2-3 yazdırırsak 3-2-1'de yazdırılması gerekiyor mu?
+
+970
+02:20:02,999 --> 02:20:04,819
+Hayır yazdırılması gerekmiyor.
+
+971
+02:20:04,919 --> 02:20:08,480
+Çünkü önemli olan o kombinasyonda 1-2-3
+
+972
+02:20:08,479 --> 02:20:12,259
+yani üçlü kombinasyonları yazdırmamız önemli.
+
+973
+02:20:16,084 --> 02:20:17,483
+Sağ olun hocam, teşekkür ederim.
+
+974
+02:20:18,123 --> 02:20:20,283
+Mücevher derim, ben teşekkür ederim hatırlatma için.
+
+975
+02:20:20,643 --> 02:20:23,883
+4 ile başlayan, 5 ile başlayan şekilde de yeni olacak herhalde.
+
+976
+02:20:25,363 --> 02:20:30,063
+4-1-2, 4-1-3.
+
+977
+02:20:30,483 --> 02:20:32,823
+Şimdi yanlış da söylemeyeyim bu konuda.
+
+978
+02:20:33,483 --> 02:20:34,803
+Şimdi bir kontrolümü daha yapayım.
+
+979
+02:20:35,344 --> 02:20:38,023
+Bu örneğin başıma gittiği için size söyledim de.
+
+980
+02:20:38,023 --> 02:20:41,043
+Şimdi bir kontrol yapayım.
+
+981
+02:20:41,043 --> 02:20:47,763
+4-1-2 yaptığımızda zaten 1-2-4 ile aynı şey mi?
+
+982
+02:20:47,883 --> 02:20:51,503
+Aynı şey oluyor ama şimdi sorunun soruluşuna da bir daha bakmak istiyorum.
+
+983
+02:20:51,503 --> 02:20:55,503
+Örneğin.
+
+984
+02:21:10,131 --> 02:21:12,951
+Tamam hocam. 1-2-4 olduğu için 4-2-2 yok.
+
+985
+02:21:13,891 --> 02:21:16,651
+Benim bildiğim öyleydi. Bir kontrol ediyorum. Evet, yok.
+
+986
+02:21:19,271 --> 02:21:25,731
+Peki, o zaman teşekkür ediyorum. Katılmanız için güzel bir hafta diliyorum hepinize. Önümüzdeki hafta görüşmek dileğiyle. Hoşçakalın arkadaşlar.
+
+987
+02:21:27,351 --> 02:21:28,131
+Görüşürüz hocam.

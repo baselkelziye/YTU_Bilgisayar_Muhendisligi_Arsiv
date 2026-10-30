@@ -1,0 +1,3443 @@
+1
+00:08:24,947 --> 00:08:52,347
+Hoşgeldiniz arkadaşlar. Beşinci haftaya. Veri Yapıları ve Algoritmalar dersinde. Stack veri yapısı üzerinden bu hafta devam ediyor olacağız. Hemen arkasından kuyruğa geçeceğiz. Hepinize güzel bir hafta diliyorum. Umarım keyifli bir ders olur. Sorularınız olursa lütfen arada sormaktan çekinmeyin. Ufak bir duyurum olacak. Bu hafta ödev vereceğimizi paylaşmıştık sizinle.
+
+2
+00:08:52,347 --> 00:09:18,907
+Bir aksilik olmazsa ödevinizi yarın gün içerisinde açıklamış olacağız. Link listeyle ilgili bir ödev olacak. Bir değişiklik olmazsa sorularınız olursa yine ödevle ilgili ilerleyen günlerde gerek araştırma görevsi arkadaşlarımıza gerekse bize sorularınızı aktarabilirsiniz ama çok karmaşık bir ödev değil aslında zevkli bir ödev olacağım tahmin ediyorum.
+
+3
+00:09:18,907 --> 00:09:24,407
+Fakat biraz planlama gerektiren bir ödev olacak. Umarım keyifle yaparsınız.
+
+4
+00:09:25,227 --> 00:09:32,367
+Derste başlamadan önce söz almak isteyen, görüş belirtmek isteyen varsa söz verebilirim.
+
+5
+00:09:32,848 --> 00:09:35,827
+Ya da sorusu olan varsa yanıtlayabilirim. Evet, Emircan.
+
+6
+00:09:36,607 --> 00:09:44,547
+Hocam, çok pardon. Ödevi yaparken acaba herhangi bir C-versiyonu kullanmamız gerekiyor mu?
+
+7
+00:09:44,547 --> 00:09:46,888
+Yani C-11, C-99 ya spesifik olarak.
+
+8
+00:09:46,887 --> 00:10:01,207
+Bununla ilgili, dokumentasyonla ilgili ve kullanacağınız yazılımla ilgili duyuru yapılacak. Ya ayrı bir duyuru olarak sizinle dokümanı paylaşacağız ya da ödevin içerisinde yer alacak. Gerekli cevabı orada bulacaksınız.
+
+9
+00:10:01,727 --> 00:10:02,507
+Sağ olun hocam, sağ olun.
+
+10
+00:10:03,707 --> 00:10:04,307
+Evet [öğrenci].
+
+11
+00:10:06,887 --> 00:10:10,567
+Hocam, ödev nereden bayılışılacak diye soracaktım da.
+
+12
+00:10:10,567 --> 00:10:22,507
+Evet onu da bir kez daha hatırlatalım. Ödevler her zaman olduğu gibi bu dönem boyunca online Yıldız.Eri.tr adresi üzerinden paylaşılacak. Oradan ulaşabilirsiniz.
+
+13
+00:10:23,047 --> 00:10:24,287
+Tamam teşekkür ederim hocam.
+
+14
+00:10:24,427 --> 00:10:24,927
+Rica ederim.
+
+15
+00:10:28,107 --> 00:10:30,467
+Başka sorusu ya da görüşü olan var mı?
+
+16
+00:10:33,347 --> 00:10:37,327
+Peki o zaman isterseniz başlayalım ben ekran paylaşımını yapayım.
+
+17
+00:10:43,988 --> 00:10:59,988
+Yine bu hafta 40 dakikalık sessionler halinde yaklaşık olarak devam ediyor olacağız. 3 session yapacağız. Sorularınız olursa lütfen zamanında sormaktan çekinmeyin.
+
+18
+00:10:59,988 --> 00:11:10,988
+Stack veri yapısını konuşuyorduk geçtiğimiz hafta. Türkçe karşılığı yığın hem temel fonksiyonlarını, metotlarını konuştuk.
+
+19
+00:11:10,988 --> 00:11:16,348
+hem stack ile ilgili çözülebilecek problemlerden bahsettik.
+
+20
+00:11:17,068 --> 00:11:21,607
+Dikkat edilmesi gereken noktaları konuşmuştuk ama hala söyleyeceklerimiz var.
+
+21
+00:11:22,127 --> 00:11:29,708
+Bir hem hızlıca toparlama yapmak adına hem de yeni bazı bilgiler eklemek adına bu slide'dan başlayalım isterseniz.
+
+22
+00:11:31,328 --> 00:11:40,447
+Özellikle function call ve recursion dediğimiz zaman ilk aklımıza gelen yapı stack yapısı hatta stack overflow ifadesi de buradan geliyor.
+
+23
+00:11:40,988 --> 00:11:46,447
+Memori'nin belli bir alanı stack bölgesi olarak kullanılıyor ve bunun bir kısıtı var.
+
+24
+00:11:47,627 --> 00:12:07,708
+Ne kadar fazla iç içe fonksiyonu çağırırsanız belli bir süre sonra o stack yapısının doğma olasılığı ortaya çıkıyor ve doğduğunda da stack overflow hatası aldığınızı ve bunun sonucunda da programınızın turn-nate ettiğini kiminiz deneyimlemişsinizdir, kiminiz de ilerleyen zamanlarda mutlaka karşılaşacaksınızdır.
+
+25
+00:12:07,708 --> 00:12:31,547
+Tabii stack veri yapısı last in first out ya da first in last out mantığıyla çalışıyor ki bu şu demek size gelen sırayla hizmet vermiyorsunuz size gelen sıranın tam tersi yönünde bir hizmet veriyorsunuz demek buna uygun problemler bu nedenle stack veri yapısıyla aslında kurgulanmalı ve burada stack yapısı kullanılmalı.
+
+26
+00:12:31,547 --> 00:12:35,867
+Bunun için de undo redo operationları gözümüze çarpıyor.
+
+27
+00:12:37,007 --> 00:12:50,348
+Orada en son yaptığınız işlemi geri aldığınızda tekrar sildiğiniz bir kelimeyi yerine koymak için ya da yaptığınız bir aksiyonu tekrar kullanabilmek için burada stack yapısı en uygunu gözüküyor.
+
+28
+00:12:50,348 --> 00:12:59,348
+Gene expression evaluation dediğimiz aritmetik expressionlarda stack yapısından faydalanıyoruz ki geçen hafta infix postfix dönüşümünü konuştuk.
+
+29
+00:12:59,348 --> 00:13:08,387
+ve bir compiler değerleyici de nasıl hareket ettiğini birlikte adım adım değerlendirmiştik.
+
+30
+00:13:08,467 --> 00:13:09,588
+Pop push işlemlerini.
+
+31
+00:13:10,228 --> 00:13:14,027
+Keza browser historisinde aynı yapı mümkün.
+
+32
+00:13:15,088 --> 00:13:21,728
+En son erişmiş olduğumuz adres, en güncel adres olduğu için site'in top noktasında konumlanıyor.
+
+33
+00:13:21,727 --> 00:13:40,047
+parantezlerin ya da benzer sintakstaki ikili kullanımların dengeli kullanıp kullanılmadığını, uygun sırayla kullanıp kullanılmadığını bir bilgisayarın insan normalde gözle bakarken analitik olarak çözümleyebilmesi için stack yapısı tercih ediliyor.
+
+34
+00:13:40,047 --> 00:13:55,047
+Bir de ilerleyen hatta önümüzdeki sene diyelim göreceğiniz backtracking algoritmalarında özellikle bu labirent çözümlerinde gittiğiniz yolun...
+
+35
+00:13:55,988 --> 00:14:25,967
+bir çıkmaz sokak olduğunda oradan bir adım geriye adım atmanız gerektiğinde yeni bir yol tercih edeceğiniz zaman özellikle burada da çok sık bu stack yapısından faydalanıyoruz. Çünkü en son kaldığınız noktaya geri dönüyorsunuz. Siteye basmış olduğunuz. Oradan gidiyorsunuz. Orada da başarılı olamazsınız. Ondan önceki noktaya geri dönüyorsunuz. Bu mantıkla aslında birçok labirent çözümünü sorunsuz bir şekilde, kolay bir şekilde formunuzu edebiliyorsunuz.
+
+36
+00:14:25,988 --> 00:14:39,668
+Gerçek hayat duygulamalarına baktığınızda bu bir kitaplıktaki kitapların en alta koyduğunuz kitabın en son erişilmesi gibi gerçek hayatta işte bulaşıklar yıkanırken tabakların dizilmesi gibi birçok örnekte karşımıza çıkıyor.
+
+37
+00:14:40,348 --> 00:14:47,168
+Bilgisayar tarafında neler var? Text editorler, biraz önce Andu, Widoo'dan bahsettik, web browserlar, browser history'den bahsettik.
+
+38
+00:14:47,168 --> 00:14:57,168
+Call log en son aranan numaranın en üstte yer alması gibi uzunca bir süre önce aranmış bir numaranın en altta yer alması gibi çok doğal süreçler bunlar.
+
+39
+00:14:57,168 --> 00:15:09,568
+Keza e-maillerde, keza resimlerde, telefonun üstteki bütün bu güncel verinin en yukarıda olması mantığı aslında stack ile hayatta gerçekleşiyor genellikle.
+
+40
+00:15:09,568 --> 00:15:13,447
+Notification'lar için de aynı şeyi rahatlıkla söyleyebiliriz.
+
+41
+00:15:14,087 --> 00:15:17,307
+Herhangi bir download historisi için de aynı şeyi söyleyebilirsiniz.
+
+42
+00:15:17,468 --> 00:15:23,928
+Bunun gibi birçok gerçek hayat uygulamasını, stack veri yapısını kullanarak ki abstract data type olarak geçer.
+
+43
+00:15:24,447 --> 00:15:32,068
+Abstract data type dediğimiz zaman da soyut bir veri tipi olarak karşımıza çıkıyor.
+
+44
+00:15:32,068 --> 00:15:36,228
+Bu şekilde en sık kullandığımız yapılardan bir tanesi.
+
+45
+00:15:36,227 --> 00:15:49,227
+Avantajları neler? Kolay gerçeklenebilir bir yapı. Veriye O1 karmaşıklık zamanında pop ve push metotlarıyla ulaşabiliyorsunuz.
+
+46
+00:15:49,227 --> 00:15:57,087
+Ama aradan bir veri çekme şansınız yok. Bu nedenle random access özelliği olmadığı için bir dezavantaj olarak gözüküyor.
+
+47
+00:15:57,087 --> 00:16:10,467
+Function call mimarisini oluştururken çok hani birebir oturan bir yapı ve aslında recursive function'ların çağrılmasını da kolay hale getiriyor.
+
+48
+00:16:10,887 --> 00:16:15,467
+Backtracking problemlerini çok rahat çözülebilir hale getiriyor.
+
+49
+00:16:15,467 --> 00:16:19,627
+Compiler design noktasında çok sık kullandığımız bir yapı.
+
+50
+00:16:20,267 --> 00:16:23,667
+Keza undo, redo, operation'lar da karşımıza çıkıyor.
+
+51
+00:16:23,727 --> 00:16:25,747
+Peki nerede sıkıntılar var?
+
+52
+00:16:25,747 --> 00:16:31,547
+overflow ve underflow problemleri var. Yani stack dolabilir. Bunu iyi yönetmeniz gerekiyor. Ya da
+
+53
+00:16:31,547 --> 00:16:36,488
+sitenin içinde hiçbir şey kalmayabilir ki aslında o zaman siteyi verimli kullanmıyorsunuz demektir.
+
+54
+00:16:36,488 --> 00:16:48,147
+Bu da çok istediğimiz bir durum değil. Bazı sorting ya da searching yaklaşımları için stackten faydalanmak aslında çok da makul bir yaklaşım değil.
+
+55
+00:16:48,767 --> 00:16:52,787
+Daha çok insert, delete operasyonlarının söz konusu olduğu yapılar içinde kullanıyoruz.
+
+56
+00:16:52,788 --> 00:16:56,407
+Bir de bunu memory den bileceksiniz.
+
+57
+00:16:57,028 --> 00:17:02,467
+Dynamic memory allocation yaptığınızda heap bölgesi siteye göre çok daha geniş.
+
+58
+00:17:02,467 --> 00:17:14,008
+O nedenle stack yapısı oluşturulan genelde alanlar belirli bir kapasiteye sahipler, limitli bir kapasiteye sahipler.
+
+59
+00:17:14,107 --> 00:17:19,748
+O yüzden genellikle bu gözetilerek problemlerin formüze edilmesi öneriliyor.
+
+60
+00:17:23,443 --> 00:17:51,704
+Gelelim bazı stack ile çözülebilecek alternatif problemlere. Bunları bugün birlikte bir şöyle değerlendirsek güzel olur diye düşünüyorum. Bunların içerisinde özellikle karşımıza çıkabilecek bir sonraki en büyük elemanın, yani bir elemandan sonra gelen en büyük elemanın, ne olduğu ilk gelen en büyük elemanın bu problemin çözülmesi.
+
+61
+00:17:51,704 --> 00:18:16,183
+infix to prefix dönüşümü, biz daha önce infix to postfix dönüşümünü görmüştük ki bunlar arasındaki bütün dönüşümler aslında dikkate değer ve bir stayin ekstra bir alan kullanılmadan terse döndürülmesi problemini nasıl aşarız ekstra bir space kompleksisi yaratmadan bunları bugün şöyle bir hızlıca konuşalım istiyorum.
+
+62
+00:18:16,183 --> 00:18:20,283
+İkinci problemden başlayalım aslında.
+
+63
+00:18:21,623 --> 00:18:22,563
+Infix to prefix.
+
+64
+00:18:24,143 --> 00:18:27,543
+Nedir? Şöyle bir bakalım. Bir tane şuradan bir örnek yazayım size.
+
+65
+00:18:29,423 --> 00:18:33,943
+Örneğin inputumuz şöyle olsun.
+
+66
+00:18:34,203 --> 00:18:38,563
+A çarpı B artı C bölü D olsun.
+
+67
+00:18:39,363 --> 00:18:40,664
+Bu bir infix gösterim.
+
+68
+00:18:41,103 --> 00:18:45,903
+Output'ta da prefix gösterim olsun istiyoruz.
+
+69
+00:18:46,183 --> 00:18:55,683
+ne yazmam gerekir? Bunu prefikse dönüştürdüğümde bana chat üzerinden de yazabilirsiniz ya da sözlü olarak da söyleyebilirsiniz.
+
+70
+00:18:56,583 --> 00:18:58,003
+Tabii şu an gözle bakıyorsunuz.
+
+71
+00:19:09,587 --> 00:19:20,087
+Evet bir cevap geldi. Yıl şöyle hemen yazayım cevabı. Artı Yıldız AB bölü CD.
+
+72
+00:19:21,367 --> 00:19:38,087
+Şimdi bu doğru mudur? Birlikte bir değerlendirelim. İlk yapılması gereken işler aslında AB, sonra CD, sonra bunların ikisinin toplanması gerekiyor.
+
+73
+00:19:39,587 --> 00:19:59,547
+Burada da gördüğünüz gibi önce HB'yi yaptık, sonra CD'yi yaptık, sonra da bu iki işlemden gelen sonucu birbirleriyle topladık.
+
+74
+00:19:59,547 --> 00:20:08,128
+Peki siz bunu bir stack yapısı kullanarak çözmek isteseydiniz nasıl yapabilirdiniz?
+
+75
+00:20:09,587 --> 00:20:12,707
+Hatta daha küçük bir örnek yazayım size.
+
+76
+00:20:14,388 --> 00:20:17,287
+A artı B çarpı C var.
+
+77
+00:20:18,827 --> 00:20:21,827
+Bunu ifade etmek istiyorsunuz.
+
+78
+00:20:22,147 --> 00:20:23,467
+Şöyle yazabiliriz herhalde.
+
+79
+00:20:25,888 --> 00:20:26,467
+Bu şekilde.
+
+80
+00:20:27,608 --> 00:20:32,227
+Bu dönüşümü biz elle ve gözle yaptık şu anda sol tarafta.
+
+81
+00:20:32,467 --> 00:20:39,507
+Sağ taraftaki örnek için bunu formülize etmek isteseydik, kaba bir algoritma tasarlamak isteseydik,
+
+82
+00:20:39,587 --> 00:20:41,927
+nereden başlamak makul olurdu.
+
+83
+00:20:59,700 --> 00:21:01,700
+bir şey.
+
+84
+00:21:05,140 --> 00:21:21,140
+şurada bu ifadeyi gördüğünüz infiks ifadesini tersten yazdığınızı varsaysaydınız şu şekilde yazılmış olsaydı.
+
+85
+00:21:26,867 --> 00:21:28,867
+Buradan nasıl ilerlerdiniz?
+
+86
+00:21:30,867 --> 00:21:34,867
+Öncelik sırası yapardık. Neşat biraz daha açabilir misin söylediğini?
+
+87
+00:21:42,420 --> 00:21:50,420
+Şu anda infix gösterimi tamamen tersten yazdım. Bundan sonraki adımda nasıl ilerleyebileyim?
+
+88
+00:21:53,715 --> 00:22:22,875
+en yüksek öncelikli işlem siteyine en üstünde yaramız gerekiyor. Doğru ama şimdi burada bizim yapmak istediğimiz şey şu anda bu tersten yazdığımız ifadeyi aslında hala bir infix notation olduğu için sadece infix notasyonunu terse çevirdik. Bunu postfix'e dönüştürürüz. Postfix'e dönüştürdüğümüz zaman C, B, yıldız, A artı halini alır.
+
+89
+00:22:23,715 --> 00:22:25,515
+Sonra ne yapabiliriz?
+
+90
+00:22:28,455 --> 00:22:29,995
+Birinci adım burası olsun.
+
+91
+00:22:31,175 --> 00:22:33,695
+İkinci adım infix to postfix conversion olsun.
+
+92
+00:22:33,695 --> 00:22:36,436
+Önce reverse ettik infix expression'ı.
+
+93
+00:22:37,675 --> 00:22:38,475
+Reverse.
+
+94
+00:22:40,236 --> 00:22:43,635
+Sonra infix to postfix.
+
+95
+00:22:53,748 --> 00:23:17,807
+Tekrar reverse. Evet, teşekkürler [öğrenci]. Tekrar reverse kullanarak yazdığımızda artı A çarpı B C dediğimizde aslında 3 temel adımda inflix to prefix dönüşümünü gerçekleştirmiş olduk.
+
+96
+00:23:17,807 --> 00:23:41,807
+Bunun gibi diğer prefix to infix, postfix to infix ya da prefix to postfix gibi dönüşümleri aynı bakış açısını kullanarak ifadeyi ters yüz ederek belirli kurallar çerçevesinde aslında kendi aralarını dönüştürebiliyorsunuz.
+
+97
+00:23:41,807 --> 00:23:51,887
+Yalnız burada kritik olan bir nokta var. Bu kritik olan noktayı aslında bu örnekte görmedik. Bu kritik olan noktayı şöyle ben size yazayım.
+
+98
+00:23:51,887 --> 00:23:55,887
+Bu ifadeyi...
+
+99
+00:23:59,635 --> 00:24:01,215
+Hocam bir şey sorabilir miyim?
+
+100
+00:24:01,895 --> 00:24:02,096
+Tabii.
+
+101
+00:24:03,075 --> 00:24:08,695
+Şey, ilk başta tersine çevirdik ya, ben onu hani neden gerekli olduğunu tam olarak anlamadım.
+
+102
+00:24:09,516 --> 00:24:24,635
+Tersine çevirdiğimiz zaman bizim aslında ilk sonradan yapmamız gereken işlemleri öne almış olduk ve postfix haline dönüştürme işleminin için araya bir converter gibi bir yapı oluşturduk.
+
+103
+00:24:24,635 --> 00:24:33,536
+tersine dönüştürdüğümüzde postfix'e tekrar çevirdiğimizde oluşan yapı olması gereken yapının tam tersi halini aldı.
+
+104
+00:24:33,536 --> 00:24:42,255
+Eğer A artı B çarpı C ile başlasaydık ve dönüştürseydik birebir prefiks yapısını elde edemeyecektik.
+
+105
+00:24:42,576 --> 00:24:44,755
+İsterseniz bunu denerseniz görürsünüz.
+
+106
+00:24:44,755 --> 00:25:01,595
+Burada birebir prefiks yapısını bu koşulda olması gerekli sırayla elde edilmemiz için reverse işlemini uygulamamız gerekiyor ki önce C çarpı B işlemi gerçekleşsin sonra artı A işlemi gerçekleşsin.
+
+107
+00:25:02,555 --> 00:25:07,676
+Yani sadece bu örneğe özel bir şey o değil mi hocam? Yani orada çarpı işlemi öncelikli olduğu için onu baş almak.
+
+108
+00:25:07,676 --> 00:25:25,516
+Hayır bu örneğe özel değil. Bu herhangi bir verilen input, infix bir expression için önce reverse işlemini yapıyorsunuz. Sonra postfix'e dönüştürüyorsunuz. Sonra tekrar bir reverse işlemi yapıyorsunuz. Infix'i prefixe çevirme adımları bu.
+
+109
+00:25:25,515 --> 00:25:38,515
+Doğrudan reverse almadan infix to postfix yapıp onun reverse'ünü alırsanız o zaman prefix halini elde edemiyorsunuz.
+
+110
+00:25:39,095 --> 00:25:48,155
+Denersiniz önce infix to postfix yapın sonra reverse'ü alın göreceksiniz ki buradaki ifadenin aynısını elde edemiyorsunuz.
+
+111
+00:25:49,455 --> 00:25:50,775
+Tamam hocam teşekkürler.
+
+112
+00:25:50,775 --> 00:25:51,795
+Rica ederim.
+
+113
+00:25:52,775 --> 00:25:54,775
+Bir örnek yazdım.
+
+114
+00:25:55,515 --> 00:26:01,755
+Bunu da infix to prefix yapmak isteseydik ve reversunu almak isteseydik.
+
+115
+00:26:03,635 --> 00:26:08,135
+Dikkat etmemiz gereken bir önceki örneğe göre farklılık ne olacaktı?
+
+116
+00:26:09,095 --> 00:26:10,076
+Cevaplarabilir miyim?
+
+117
+00:26:10,356 --> 00:26:10,895
+Tabi lütfen.
+
+118
+00:26:11,815 --> 00:26:16,815
+Reversunu aldıktan sonra parantezleri ayrıca kendi içinde reverse etmek gerekiyor.
+
+119
+00:26:17,375 --> 00:26:21,875
+Yani kapa parantezde aç parantez, aç parantezde kapa parantez yapmamız gerekiyor.
+
+120
+00:26:22,915 --> 00:26:23,936
+Teşekkür ederim.
+
+121
+00:26:27,508 --> 00:26:49,907
+[öğrenci] arkadaşımızın söylediği gibi burada parantezle ilgili bir çalışma yapıyorsanız reverse işlemlerinde aç parantez ve kapa parantezin tersi yönde bir işleme tabi tutulması gerektiğini unutmuyorsunuz. Tabi ufak bazı başka detaylar da var. Infix to prefix'e baktığınızda bunu göreceksiniz.
+
+122
+00:26:49,907 --> 00:26:57,947
+Normalde biz işlem yaparken aldığımız operatörün eşit ya da büyük olması durumunda bir aksiyon alıyorduk.
+
+123
+00:26:58,447 --> 00:27:03,408
+Burada bu işlemleri yaparken sadece büyük olması durumunu gözeterek yapmamız gerekecek.
+
+124
+00:27:03,408 --> 00:27:12,588
+Ben tüm detayı vermek için değil, burada bakış açısının nasıl oluşturulması gerektiğini anlatmak için bu örneği sizlerle paylaştım.
+
+125
+00:27:12,587 --> 00:27:22,887
+O yüzden infix to prefix dönüşümü için bir araştırma yapıp şöyle bir akışı bir daha incelerseniz sizin açınızdan da faydalı olacağını düşünüyorum.
+
+126
+00:27:23,887 --> 00:27:29,107
+Infix to postfix'ten daha zahmetli bir iş prefix'e dönüştürmek.
+
+127
+00:27:29,107 --> 00:27:38,127
+O yüzden de zaten genelde compiler yapısı postfix üzerinden ilerleyecek şekilde kurgulanıyor ve öyle çalıştırılıyor.
+
+128
+00:27:38,127 --> 00:27:43,627
+prefiks biraz daha maliyetli bir bize durumu oluşturmuş oluyor.
+
+129
+00:27:44,487 --> 00:27:53,767
+Şimdi bu örneklerle ilgili dönüşümlerle ilgili isterseniz birkaç farklı durumu birlikte el alalım.
+
+130
+00:27:53,767 --> 00:27:54,927
+Şöyle yapalım.
+
+131
+00:27:56,107 --> 00:27:58,867
+Biraz da antrenman olur yapılması noktasında.
+
+132
+00:27:58,868 --> 00:28:11,988
+Ben genel olarak bir bilgiye sahip olduğunuzu düşünüyorum ama yine de vaktimiz varken örnek üzerinden gitmekte de bir sakınca yok.
+
+133
+00:28:12,908 --> 00:28:16,368
+Burası infix, burası prefix, burası da postfix olsun.
+
+134
+00:28:20,627 --> 00:28:31,827
+Bu noktada biraz daha zor bir karışık bir örnekle başlayalım. A bölü B, C, A.
+
+135
+00:28:41,428 --> 00:28:45,507
+A çarpı C hatta şunun aralarını biraz daha açalım.
+
+136
+00:28:55,923 --> 00:29:17,264
+Evet şimdi buradaki şapka işareti üstsel bir ifade ve aralarında üstsel ifade en yüksek önceliğe sahip olan parantezden sonra işlem. O yüzden öncelikli olarak aslında onu değerlendiriyor olmamız gerekiyor. Şurada BC prefiksini koyuyoruz. Sonrasında bir A'ya bölüm var.
+
+137
+00:29:17,264 --> 00:29:22,204
+D ile E'nin çarpımı var.
+
+138
+00:29:23,383 --> 00:29:25,383
+A ile C'nin çarpımı var.
+
+139
+00:29:27,083 --> 00:29:30,403
+Sonra da aslında artı ve eksiler var.
+
+140
+00:29:30,403 --> 00:29:35,563
+O artı ve eksiler de önce burada B üzeri C'yi yaptık.
+
+141
+00:29:36,203 --> 00:29:37,364
+A'ya böldük.
+
+142
+00:29:37,964 --> 00:29:39,504
+Sonra onlarla topladık.
+
+143
+00:29:40,043 --> 00:29:41,964
+Ondan sonra da eksi işaretini koyduk.
+
+144
+00:29:42,464 --> 00:29:45,163
+Yani adımlar şu şekilde gerçekleşiyor.
+
+145
+00:29:45,163 --> 00:30:05,483
+önce bunu yaptık sonra şunu yaptık sonra şu sonra şu bundan sonra bu ikisinin toplanması ve en sonunda da bu sonuçtan ac'nin çıkartılması.
+
+146
+00:30:05,483 --> 00:30:29,483
+gelelim bunu postfix olarak ifade etmeye. B çarpı C daha doğrusu B üzeri C sonra bu sonucu A'ya bölüyoruz. D ile E'yi çarptık. A ile C'yi çarptık. Sonra topladık.
+
+147
+00:30:29,483 --> 00:30:33,743
+özür dilerim şunu düzelteyim
+
+148
+00:30:39,412 --> 00:31:00,131
+A ile C'yi çarptık. Burada bir toplama vardı çıkan sonuçta. Burada bir çıkarma var. Adım adım ilerleyelim. Önce B üzeri C, sonra A'ya bölüyoruz bu sonucu. Sonra D ile E'yi çarpıyoruz. Bunları birbiriyle topluyoruz.
+
+149
+00:31:00,131 --> 00:31:07,871
+AC çarpımı ve en sonunda bu sonucu önceki sonuçtan çıkartılması.
+
+150
+00:31:10,691 --> 00:31:15,092
+Tabii yani bir örnek daha yazayım buraya.
+
+151
+00:31:15,391 --> 00:31:17,691
+Onu da siz antrenman olarak yaparsınız.
+
+152
+00:31:17,691 --> 00:31:20,451
+şöyle ki
+
+153
+00:31:20,451 --> 00:31:24,011
+A üzeri B
+
+154
+00:31:24,011 --> 00:31:26,171
+çarpı
+
+155
+00:31:26,171 --> 00:31:27,351
+C
+
+156
+00:31:27,351 --> 00:31:29,331
+eksi D
+
+157
+00:31:29,331 --> 00:31:30,751
+artı E
+
+158
+00:31:30,751 --> 00:31:32,651
+bölü F
+
+159
+00:31:32,651 --> 00:31:34,611
+bölü
+
+160
+00:31:34,611 --> 00:31:37,291
+G artı H
+
+161
+00:31:37,291 --> 00:31:42,211
+bir tane daha örnek olsun diye şunu da ezeyim
+
+162
+00:31:42,211 --> 00:31:42,952
+A
+
+163
+00:31:42,952 --> 00:31:45,011
+eksi B bölü
+
+164
+00:31:45,011 --> 00:31:46,471
+C
+
+165
+00:31:46,471 --> 00:31:49,671
+çarpı D üzeri
+
+166
+00:31:49,671 --> 00:31:57,191
+bunların prefiks ve postfiks dönüşümlerini yaparsanız
+
+167
+00:31:57,191 --> 00:32:01,171
+önümüzdeki hafta isterseniz üzerinden geçebiliriz.
+
+168
+00:32:01,772 --> 00:32:03,831
+Doğru yapıp yapmadığınızı kontrol etmek adına.
+
+169
+00:32:05,051 --> 00:32:08,971
+Bu örnekleri birkaç tane yaparsanız daha iyi oturacaktır.
+
+170
+00:32:08,971 --> 00:32:15,971
+En azından sistematiğin ne olduğunu kavramınız açısından fayda sağlayacaktır diye söyleyebilirim.
+
+171
+00:32:16,471 --> 00:32:23,231
+Evet şimdi bir sonraki örneğimiz için şurada bir problem vardı.
+
+172
+00:32:23,711 --> 00:32:29,351
+Reverse a stack without using extra space in on demiştik.
+
+173
+00:32:29,351 --> 00:32:37,351
+Yani şu gördüğünüz ifade bizim için bir siteyin dönüştürülmesi işlemini.
+
+174
+00:32:40,692 --> 00:32:42,692
+ifade ediyor.
+
+175
+00:32:44,692 --> 00:32:46,692
+Şöyle anlatalım.
+
+176
+00:32:57,203 --> 00:32:59,203
+Bu siteyi reverse etmek istiyorsunuz.
+
+177
+00:32:59,203 --> 00:33:06,203
+Reverse etmek istediğinizde geçen hafta gösterdiğimiz yaklaşımlardan bir tanesi ekstra bir alan kullanıp
+
+178
+00:33:06,203 --> 00:33:18,203
+4, 3, 2, 1 olarak buradan pop ile buraya push yaparak bunları adım adım gerçekleştiriyorsunuz.
+
+179
+00:33:18,203 --> 00:33:21,203
+Burada bir extra space'dan bahsediyoruz.
+
+180
+00:33:21,203 --> 00:33:33,983
+ve bir O n'lik yani n'lik bir alan ayırarak bu işi sorunsuz bir şekilde O bir karmaşıklıkla gerçekleştirebiliyorsunuz.
+
+181
+00:33:33,983 --> 00:33:53,123
+Peki bu extra space'i kullanmadan size verilen bu birinci stack olsaydı acaba nasıl bir yapı kullanarak ekstra alan kullanmadan bu dönüşümü gerçekleştirebilirsiniz?
+
+182
+00:33:53,123 --> 00:34:03,123
+Hatta extra stack veriliyor demeyelim. 1, 2, 3, 4 var elinizde. Siz bunu dönüştürmek istiyorsunuz.
+
+183
+00:34:03,983 --> 00:34:08,343
+ve ekstra bir alan kullanmayacaksınız. Ne yaparsınız?
+
+184
+00:34:23,380 --> 00:34:26,899
+Her şeyi kullanmak serbest. Farklı veri yapıları da kullanabilirsiniz.
+
+185
+00:34:26,899 --> 00:34:30,659
+Eee hocam şey eee söyleyebilir miyim?
+
+186
+00:34:30,659 --> 00:34:31,779
+Tabii.
+
+187
+00:34:31,779 --> 00:34:37,939
+Eee eğer ilk baştaki ya ben ilk hali için söyleyecektim aslında şey, stedizlik ya burada.
+
+188
+00:34:37,939 --> 00:34:38,939
+Hı hı.
+
+189
+00:34:38,939 --> 00:34:45,060
+Ben stack implement ederken şey yapmıştım geçen hafta. Bir top bir de max tutuyoruz strakta.
+
+190
+00:34:45,060 --> 00:34:46,060
+Hı hı.
+
+191
+00:34:46,060 --> 00:34:50,140
+Topun değerini sıfırı alırsam bu sefer baştan almaya başlar diye düşündüm de.
+
+192
+00:34:50,140 --> 00:35:10,140
+hani mesela şimdi top normalde en yukarıyı gösteriyor ya bir de bizim max değerimiz var. Ben top ve max değerini zaten tutuyorum. Max hani stackten ekar eleman olduğu belli zaten. Topu eğer sıfırdan başlatırsam bu sefer baştan eleman çekmeye başlar yani eksilterek gidersem.
+
+193
+00:35:10,139 --> 00:35:31,839
+Ama stack yapısında şöyle bir şey var Emrican, stack yapısında hani senin düşündüğün gibi biz o site'in en alt noktasındaki bilgiye sahip değiliz aslında, sadece top yani stack pointer olarak bizim en üst noktadaki elemana erişme hakkımız var, normal bir array yapısıyla kurduğumuzda site'in alt taraflara erişme şansımız yok
+
+194
+00:35:31,839 --> 00:35:47,999
+O yüzden o söylediğin evet teknik olarak yapılabilir bir şey ama stack veri yapısı söz konusuysa biz sadece top elemana erişebiliyoruz. Oradan yola çıkarak düşünürsek daha belki farklı bir çözüm üretebiliriz.
+
+195
+00:35:50,079 --> 00:35:51,380
+Evet [öğrenci]?
+
+196
+00:35:52,519 --> 00:36:00,639
+Double link list ile yaparsak BNOT'taki max ve revlerin değiştirerek.
+
+197
+00:36:00,639 --> 00:36:17,799
+Evet. Teşekkür ederim. Buradaki key nokta aslında bizim için linkli liste yapısından faydalanmak. Hatırlarsanız linkli listeyi Ere ile de implement edebiliriz demiştik. Linkli listeyi de implement edebiliriz demiştik.
+
+198
+00:36:17,799 --> 00:36:20,199
+İşte bir eleman geldi 1'e.
+
+199
+00:36:21,299 --> 00:36:25,019
+İşte yerleştirdiniz ilk elemanı head orayı gösteriyor.
+
+200
+00:36:26,139 --> 00:36:29,139
+Diyelim bu elemanı gösteriyor.
+
+201
+00:36:29,279 --> 00:36:30,460
+Sonra 2 geldi.
+
+202
+00:36:31,419 --> 00:36:32,659
+2 en tepede olacak.
+
+203
+00:36:32,880 --> 00:36:34,540
+Bu sefer 1'e bağlanacak.
+
+204
+00:36:34,699 --> 00:36:35,600
+İşte 3 geldi.
+
+205
+00:36:37,400 --> 00:36:38,900
+Sonra 4 geldi.
+
+206
+00:36:42,739 --> 00:37:00,059
+Şimdi sizin yapmanız gereken şey linked list kullanarak stack yapısını implement ettiyseniz bunu reverse etmek için ekstra bir alan kullanmadan birbirleri üzerinden aslında bunu yapabilirsiniz. Nedir?
+
+207
+00:37:00,859 --> 00:37:07,219
+Son elemanı görene kadar ilerleyebilirsiniz. Null değerini görene kadar. Şurada null değeri olsun.
+
+208
+00:37:07,219 --> 00:37:14,459
+Buraya geldiğinizde artık her aslında son elemanı görene kadar bir koşul olarak düşünün bunu.
+
+209
+00:37:14,459 --> 00:37:35,339
+Her adım attığınızda budaki elemanı yukarı adresle bağlarken şu elemanın bir önceki adresini bu şekilde gösterdiğinizde dönüştürerek her seferinde gittiğiniz adımda aşağıya doğru bir yapı oluşturuyorsunuz.
+
+210
+00:37:35,339 --> 00:37:55,799
+Yani bu ne demek? Siz head'den başladınız, baktınız, bir sonraki elemanın adresini gördünüz, o elemanın previewsuna 4 elemanın adresini yazdınız. Böylece previews 4 elemanını gösterdi.
+
+211
+00:37:55,799 --> 00:38:17,639
+Bir sonraki elemana gittiğinizde 2'nin previews elemanına 3'ün next'ini yazdınız. Böylece bu previews artık 3'ü gösterdi. Sonra 1'in previewsuna 2'nin next'ini yazdınız. Böylece ne olmuş oldu? 1 artık 2'yi göstermiş olduk.
+
+212
+00:38:17,640 --> 00:38:26,379
+Bu sayede siz her adımda ilgili linki ters yönde çevirerek bağlamış oldunuz.
+
+213
+00:38:26,379 --> 00:38:35,059
+Bu da sizin herhangi bir ekstra alan kullanmanıza gerek kalmadan aslında yapıyı oluşturmanıza mümkün kıldı.
+
+214
+00:38:35,059 --> 00:38:59,079
+Bundan sonra da en son noktada yapmanız gereken şey artık head'in burada ulaştığınız null pointer'e sahip olan bir elemanının adresi neyse işte bin ise gidip head'e bin değerini yazmanız. Böylece artık head 4'ü değil bin değerini gösterecek hale geldi.
+
+215
+00:38:59,079 --> 00:39:23,939
+Yani demek ki ihtiyaca göre, elinizdeki kaynağa göre farklı veri yapılarını kullanarak bazen space kompleksliği düşürüp işlem kompleksliği, time kompleksliği yükseltebiliyorsunuz ya da bazen tam tersi time kompleksliği düşürüp ekstra space kullanarak kendinize avantaj sağlama şansına sahip oluyorsunuz.
+
+216
+00:39:23,939 --> 00:39:32,219
+Bu da bir başka değişik bir problemdi. Bunu da bir bakış açısı olarak sizlerle paylaşmak istedim. Buraya kadar sorusu olan var mı?
+
+217
+00:39:38,835 --> 00:40:08,815
+Peki, bu örnekle güzel bir örnek. Bu örnekle de alıştırma olarak uğraşmak isteyenler varsa çalışıp takıldıkları noktaları bana iletebilirler. Yani verilen bir linked listenin ekstra bir alan kullanılmadan dönüştürülmesine yönelik stackteki yapı kullanılarak bir çözüm üretmeye çalışırsanız size en azından ilerleyen zamanlar için bir katkı.
+
+218
+00:40:08,835 --> 00:40:12,935
+ve stankı sağlayacaktır. Pratiklik anlamında faydalı olacağını düşünüyorum.
+
+219
+00:40:14,255 --> 00:40:21,595
+Peki o zaman burayı da tamamladığımıza göre artık yavaş yavaş kuyruk yapısına geçebiliriz.
+
+220
+00:40:21,595 --> 00:40:27,715
+Q olarak adlandırdığımız kuyruk yapısı yine bir abstract veri yapısı.
+
+221
+00:40:28,655 --> 00:40:38,215
+Buradaki kullanılan temel mantık first in first out mantığı, stay in tam tersi bir yapı.
+
+222
+00:40:38,215 --> 00:40:49,475
+ilk gelen ilk hizmeti alır mantığı. Bugün günümüzde birçok aslında noktada kuyruk yapısını kullanıyoruz.
+
+223
+00:40:49,855 --> 00:40:55,375
+Örneğin bir otobüs bekliyorken ilk sıraya giren otobüse ilk binen kişi oluyor.
+
+224
+00:40:56,375 --> 00:41:02,535
+Gerçi tabii günlük hayatımızda farklı örneklerle karşılaştığımız manzaralar olabiliyor ama normalde bu bekleniyor.
+
+225
+00:41:02,535 --> 00:41:08,675
+bankaya gittiğinizde yine ilk gidenin ilk hizmeti alması bekleniyor.
+
+226
+00:41:09,016 --> 00:41:11,915
+Fakat orada tabi önceliklendirilmiş kuyruklar var.
+
+227
+00:41:12,055 --> 00:41:18,755
+İşte 65 yaş üstü için ya da bankanın öncelikli müşterileri için bazı mekanizmalar var.
+
+228
+00:41:18,995 --> 00:41:21,696
+Bunu ilerleyen zamanlarda konuşuyor olacağız.
+
+229
+00:41:22,696 --> 00:41:29,815
+Kaynak paylaşımında tek bir kaynak var ve bunu kullanan birden fazla kişi varsa yine sıraya girmesi gerekiyor.
+
+230
+00:41:29,815 --> 00:41:37,655
+Örneğin printer ortak bir kullanımdaysa farklı bilgisayarlardan print isteği geldiğinde bunlar sırayla basılıyor.
+
+231
+00:41:38,315 --> 00:41:47,276
+Siz ikinci, üçüncü sıradaysanız öndeki kişinin elli tane sayfası varsa sıraya girmiş o elli sayfanın çıkmasını beklemeniz gerekiyor.
+
+232
+00:41:47,276 --> 00:42:05,436
+Günün sonunda bugün günlük hayatta birçok noktada bu kaynakların talep eden kişiler tarafından hakkaniyetli bir şekilde paylaşılması adına bu first in first out mantığını, kuyruk yapısını çokça görüyoruz.
+
+233
+00:42:05,435 --> 00:42:08,555
+Mesela network paketleri keza aynı şekilde öyle.
+
+234
+00:42:08,935 --> 00:42:17,395
+Router ve Switch'e paketler geldiğinde Router ve Switch gelen sıraya göre paketlerin forward edilmesini sağlıyor.
+
+235
+00:42:17,975 --> 00:42:24,495
+İşletim sisteminde proseslerin yine geldiği sırayla hizmet alması sağlanıyor.
+
+236
+00:42:24,495 --> 00:42:34,215
+Bunu bilgisayar bilimlerine ait birçok noktada ve günlük hayatta görüyoruz ve sıklıkla kullanıyoruz.
+
+237
+00:42:34,215 --> 00:42:52,715
+Şimdi tabi yığından farklı olarak burada tek bir top isimli bir pointerımız yok. Kuyruğun başı ve sonunu işaret eden iki tane farklı pointerımız var. Bir tanesi front diye de rear olarak adlandırılıyor.
+
+238
+00:42:52,715 --> 00:43:03,855
+İşte kuyruğun başındaki eleman burada gördüğünüz gibi A ise hemen arkasından B gelmiş, hemen arkasından C gelmiş, hemen arkasından D gelmiş.
+
+239
+00:43:03,855 --> 00:43:11,275
+Front bir sonraki işleme girecek, bir sonraki kaynağı kullanacak olan elemanı gösterirken,
+
+240
+00:43:11,276 --> 00:43:23,436
+Rear ise kuyruğa en son katılmış olan ve bir sonra katılması olası elemanın nereye yerleşeceğini takip edebilmemiz için bize yardım eden diğer pointer.
+
+241
+00:43:23,436 --> 00:43:25,436
+Tabii kuyruklar...
+
+242
+00:43:25,695 --> 00:43:51,956
+tek tip değil. Bizim şu anda konuştuğumuz kuyruk, standart bir kuyruk yapısı ama circular queue dediğimiz bir yapı circular linked list olduğu gibi bir alanın daha verimli kullanılması için işte kuyruktan eleman ayrıldıkça o elemanın yerini yeni gelen elemanlar alabilmesini sağlayan bir yapı bize sunuyor.
+
+243
+00:43:51,956 --> 00:44:16,615
+Priority Queue dediğinizde biraz önce bahsettiğimiz bankada olduğu gibi öncelik değeri en yüksek bekleyen elemanın kuyruğun en başına yerleşmesi şeklinde bir hizmet alımı sağlanabiliyor ki burada genellikle Priority Queue heap veri yapısı, heap data structure'ı kullanılarak implement ediliyor.
+
+244
+00:44:16,615 --> 00:44:27,295
+bir de bunlara ek olarak double ended queue dediğimiz onu da ilerleyen derslerde konuşacağımız bir başka yapıyla daha karşılaşıyoruz.
+
+245
+00:44:27,295 --> 00:44:35,155
+Şimdi burada sol tarafta örnek üzerinden yani şurada işaret edeyim.
+
+246
+00:44:36,075 --> 00:44:46,535
+Şurada gördüğünüz boş bir dizi üzerinden bakarsak burada kuyruk boş iken front ve rear'ın en baş noktayı bu sıfır olabilir.
+
+247
+00:44:46,615 --> 00:44:54,635
+eksi bir olabilir. Biraz sonra konuşuyor olacağız detayını. En baş noktayı gösterdiğini, bir ikisinin de aynı yeri ifade ettiğini göreceksiniz.
+
+248
+00:44:55,435 --> 00:45:01,795
+Daha sonra eleman geldikçe ki bunlara işlem olarak stack'da pop push işlemleri diyorduk.
+
+249
+00:45:01,795 --> 00:45:13,835
+Burada da nQ ve dQ isimlerini veriyor olacağız. nQ bir elemanın kuyruğa eklenmesi, dQ da bir elemanın kuyruktan hizmet alarak çıkması anlamına geliyor.
+
+250
+00:45:13,835 --> 00:45:29,276
+Bir nQ işlemi nQA dediğimizde buraya bir A isimli eleman yerleşiyor. Front hala buraya gösteriyor ama rear artık biri göstermeye başlıyor çünkü artık ilk alana bir tane eleman yerleşmiş.
+
+251
+00:45:30,056 --> 00:45:38,095
+Bundan sonra gelecek elemanlar rear'in gösterdiği noktaya yerleşecek şekilde devam ediyorlar.
+
+252
+00:45:38,095 --> 00:45:47,595
+Front ise ilk dequeue işlemi ne zaman gerçekleşecekse bizim için onun nereden olması gerekeceğini tutan bir diğer pointer.
+
+253
+00:45:47,595 --> 00:46:01,495
+İşte burada A'nın arkasından B gelmiş nQC demişiz, nQD demişiz artık rear en son boş olan bir sonraki boş olan noktayı gösteriyor.
+
+254
+00:46:01,975 --> 00:46:05,895
+Hala bir eleman çıkmadığı için front hala A'yı gösteriyor.
+
+255
+00:46:05,895 --> 00:46:14,615
+A burada dequeue işlemiyle dequeue dendiğinde ilk çıkacak eleman ki dequeue dendikten sonra A çıkıyor.
+
+256
+00:46:15,255 --> 00:46:16,375
+Burası artık boşalıyor.
+
+257
+00:46:17,595 --> 00:46:18,715
+Boşalmaktan kasıt.
+
+258
+00:46:19,195 --> 00:46:22,856
+Orada hala A yazıyor olabilir ama front artık B'yi gösteriyor.
+
+259
+00:46:23,576 --> 00:46:25,695
+Rear ise işte buradaki boş alanı gösteriyor.
+
+260
+00:46:26,175 --> 00:46:29,375
+Bundan sonra bir dequeue işlemi yapılırsa B'de boşalacak.
+
+261
+00:46:29,375 --> 00:46:31,515
+Bir dequeue daha yapılırsa C'de çıkacak.
+
+262
+00:46:31,636 --> 00:46:33,416
+Bir dequeue daha yapılırsa D'de çıkacak.
+
+263
+00:46:33,416 --> 00:46:49,815
+ve front ve rear yine yan yana en azından şöyle diyelim yan yana demeyelim de burada front şurası olduğu için D çıktıktan sonra hala D'yi gösterecek şekilde bu boş olanı gösterecek şekilde konumlanıyor.
+
+264
+00:46:49,815 --> 00:46:58,755
+Genel olarak pointerlerin front ve rear'in işleme mantığı nQ ve dQ'dan sonra bu şekilde. Buraya kadar sorusu olan var mı?
+
+265
+00:47:07,476 --> 00:47:18,495
+Peki, şimdi burada front ve rear kaydırılarak ve mümkünse bir circular queue oluşturularak bu alan çok daha verimli kullanılıyor.
+
+266
+00:47:19,095 --> 00:47:28,715
+Aslında şurada bir örnek daha var. Bu noktada A queue'dan çıkartıldıktan sonra B, C'de queue'nun başına kaydırılabilir.
+
+267
+00:47:28,715 --> 00:47:31,195
+Böyle örnekler de var.
+
+268
+00:47:31,955 --> 00:47:40,855
+Ama bu bizim için her queue'dan bir eleman çıktığında queue'nun yeniden düzenlenmesi gibi bir ekstra iş ve ekstra bir yük demek.
+
+269
+00:47:41,476 --> 00:47:42,955
+O yüzden bu çok tercih edilmiyor.
+
+270
+00:47:43,455 --> 00:47:50,736
+Yani bir eleman çıktığında B'yi kaydıralım, C'yi kaydıralım, D'yi kaydıralım derseniz aslında ekstradan bir iş yapmış oluyorsunuz ki
+
+271
+00:47:50,735 --> 00:47:55,715
+hatırlarsanız linked listeyi de array'de insert ve delete yaparken
+
+272
+00:47:55,715 --> 00:47:59,335
+array'e göre tercih etmemizin sebebi linked listeyi buydu.
+
+273
+00:47:59,335 --> 00:48:05,955
+Bütün elemanları bir eleman çıktığında ya da geldiğinde yerlerini değiştirmeden maintain edelim diye düşünmüştük.
+
+274
+00:48:06,615 --> 00:48:11,795
+Bu doğrultuda kaydırarak bu işi yapmak çok da akıllıca değil.
+
+275
+00:48:12,336 --> 00:48:18,935
+O yüzden genelde pointer'lar üzerinden ve circular queue'lar üzerinden bu yapının implement edilmesi tercih ediliyor.
+
+276
+00:48:18,935 --> 00:48:29,056
+Evet şimdi saat 13.45 oldu. Bir ara verelim. Saat 13.55'de kaldığımız yerden devam edelim. Teşekkürler arkadaşlar. Görüşmek üzere.
+
+277
+00:58:30,132 --> 00:58:35,431
+Arkadaşlar yeniden merhaba. Kaldığımız yerden devam edelim. Hemen ekranımı paylaşıyorum.
+
+278
+00:58:38,211 --> 00:58:53,632
+Kuyrukları konuşuyorduk. Kuyrukları konuşurken şunu söylemekte fayda var. Kuyruklar da stackte olduğu gibi hem diziler aracılığıyla hem de linked list aracılığıyla implemente edilebiliyorlar.
+
+279
+00:58:53,632 --> 00:58:55,951
+Bu ekranda da onu görüyorsunuz.
+
+280
+00:58:56,451 --> 00:59:04,791
+Aslında hem circular queue'yu hem de linked liste ile implement edilen normal queue'yu da konuşuyor olacağız.
+
+281
+00:59:05,411 --> 00:59:07,771
+Öncelikle isterseniz linked list tarafına bir bakalım.
+
+282
+00:59:07,911 --> 00:59:09,091
+Buradaki kritik nokta şu.
+
+283
+00:59:09,611 --> 00:59:11,551
+Biraz önce dizi üzerinde görmüştük zaten.
+
+284
+00:59:12,892 --> 00:59:16,251
+Bizim bir front pointer'ımız vardı.
+
+285
+00:59:16,992 --> 00:59:21,091
+Linked listenin başlangıç noktasını tuttuğunu söyleyebiliriz.
+
+286
+00:59:21,091 --> 00:59:30,231
+Bir de daha önce de bahsetmiştik tail aslında kuyruğun son noktası linked listenin son noktasını zaman zaman tutabiliriz demiştik.
+
+287
+00:59:30,231 --> 00:59:43,451
+Burada da implementasyon da en sonda yer alan linked listenin elemanının adresini tutarak rear pointer ile linked list üzerinde kuyruğu kolaylıkla implemente edebiliyoruz.
+
+288
+00:59:43,451 --> 00:59:56,492
+eleman geldiği zaman baştaki işte front noktasında daha doğrusu eleman alınmak istediği zaman front noktasında en baştaki elemanı alıyoruz.
+
+289
+00:59:56,492 --> 01:00:10,251
+Burada A'ydı mesela artık front B'yi göstermeye başlıyor. Yeni bir eleman geldiğinde de rear noktası F'i gösterirken yeni elemanı yaratıyoruz ve artık rear olarak yeni elemanın adresini işaretliyoruz.
+
+290
+01:00:10,251 --> 01:00:15,911
+ve bu şekilde linked list üzerinden kuyruk yapısını implemente etmiş oluyoruz.
+
+291
+01:00:16,231 --> 01:00:18,751
+Gelelim Circular Q tarafına.
+
+292
+01:00:20,451 --> 01:00:26,631
+Circular Q tarafına geldiğinizde işte A, B, C, D, N, Q ile yerleşmiş olsun.
+
+293
+01:00:27,451 --> 01:00:30,611
+Sonra işte D, Q gelsin, A ayrılsın.
+
+294
+01:00:31,291 --> 01:00:39,072
+Sonra B, C, D varken listede E, F gelsin N, Q ile yerleşsin.
+
+295
+01:00:39,072 --> 01:00:47,592
+ve burada yeni eleman geldiğinde ki bu yeni eleman G, circular bir queue da en başa yerleşebiliyor olacak.
+
+296
+01:00:47,792 --> 01:00:54,032
+Bunun en önemli avantajı bizim diziyi çok daha verimli bir şekilde kullanıyor olmamız.
+
+297
+01:00:54,032 --> 01:01:04,712
+Tabii şöyle bir durum oluyor, normalde diziyi kullanırken front, rear'dan küçük ilk etapta gözüküyor.
+
+298
+01:01:04,712 --> 01:01:18,172
+Ama circular queue kullandığınızda başa dönme durumu söz konusu olduğu için rear artık fronttan daha küçük bir pozisyona gelebiliyor.
+
+299
+01:01:18,172 --> 01:01:29,732
+O zaman hangi noktada bu queue'nun dolduğunu, hangi noktada tamamen boş olduğunu belirlemek biraz daha sofistike bir çözüm gerektiriyor.
+
+300
+01:01:30,251 --> 01:01:33,172
+Buna dikkat ederek çözümümüzü oluşturmak gerekiyor.
+
+301
+01:01:33,171 --> 01:01:36,071
+bunu da biraz sonra konuşuyor olacağız.
+
+302
+01:01:36,651 --> 01:01:42,951
+Burada eleman şu anda gördüğünüz gibi rear ve front birbirlerinin yan yana oldukları için
+
+303
+01:01:42,951 --> 01:01:48,431
+burada herhangi bir yeni elemana ekleme şansımız söz konusu değil.
+
+304
+01:01:49,352 --> 01:01:50,191
+Çünkü queue dolu.
+
+305
+01:01:50,971 --> 01:01:56,191
+Ama buradan B'yi çıkarttığımız anda de queue ettiğimiz zaman front artık C'yi gösterecek.
+
+306
+01:01:56,191 --> 01:01:58,031
+Ve burası boşalmış olacak.
+
+307
+01:01:58,031 --> 01:02:05,391
+o zaman frontlar arasında bir gene mesafe açılacağı için boş olan kaldığını anlayabiliyor olacağız.
+
+308
+01:02:05,492 --> 01:02:07,891
+Bunun analitik çözümünü de birazdan değerlendiriyor olacağız.
+
+309
+01:02:08,431 --> 01:02:10,371
+Gelelim kuyrukla ilgili operasyonlara.
+
+310
+01:02:11,291 --> 01:02:14,651
+Doğal olarak kuyruğun boş olup olmadığını bilmemiz lazım.
+
+311
+01:02:15,251 --> 01:02:20,911
+Çünkü kuyruk boşsa oradan bir dekiu işlemi gerçekleşecekse bunu yapmamız uygun olmayacaktır.
+
+312
+01:02:20,911 --> 01:02:24,871
+Hata üretmemiz ya da kullanıcıyı bilgilendirmemiz gerekir.
+
+313
+01:02:25,460 --> 01:02:35,639
+isful, kuyruk dolu ama siz kuyruğa eleman eklemek istiyorsunuz, nq yapmak istiyorsunuz. Yine bir hata, yine bir kullanıcıyı bilgilendirme durumunu söz konusu olacaktır.
+
+314
+01:02:36,220 --> 01:02:43,099
+nq bahsettiğim gibi bir tane eleman gönderiyoruz ve kuyruğa o elemanı yerleştirme işlemini yapıyor.
+
+315
+01:02:43,099 --> 01:02:55,759
+dequeue kuyruktan bir tane elemanın boşaltılması durumu. Initialize queue da queue'nun ilklendirilmesi adımını gerçekleştiren fonksiyon ya da metot olarak karşımıza çıkıyor.
+
+316
+01:02:57,039 --> 01:03:09,539
+Gelelim bu metotların genel olarak bir dizayn edilmesine ve bu dikkat edilmesi gereken noktaları konuşmaya.
+
+317
+01:03:09,539 --> 01:03:11,739
+Önce izan t ile başlayalım.
+
+318
+01:03:13,099 --> 01:03:29,540
+size 0'a eşit ise diyoruz ki bu q boştur. Bu bu şekilde ifade edilebilirken yan tarafa geçtiğimizde şunu görüyoruz.
+
+319
+01:03:29,540 --> 01:03:39,640
+Front eksi 1'e eşitken q boştur. İki tane farklı implementasyondan bahsediyoruz.
+
+320
+01:03:39,640 --> 01:03:48,799
+keza doluluk durumuna baktığınızda ki burada circular queue üzerine çalışmıyoruz şu anda normal queue üzerinde bu implementasyonları yapıyoruz.
+
+321
+01:03:49,680 --> 01:03:57,799
+Eğer size max-1 ise o zaman diyoruz ki bu doludur return 1 yapsın değilse dolu değildir.
+
+322
+01:03:58,480 --> 01:04:09,079
+Rear max-1'i gösteriyorsa en sona kadar gitmişizdir o zaman bu queue doludur diyoruz.
+
+323
+01:04:09,640 --> 01:04:12,799
+sanırım buraya kadar nettir diye tahmin ediyorum.
+
+324
+01:04:13,500 --> 01:04:16,120
+Gelelim nQ ve dQ işlemlerine.
+
+325
+01:04:16,879 --> 01:04:20,519
+nQ dediğiniz zaman bir eleman eklemekten bahsediyoruz.
+
+326
+01:04:21,220 --> 01:04:24,659
+O zaman buraya bir değer göndermemiz gerekiyor.
+
+327
+01:04:24,659 --> 01:04:28,540
+Bir eleman ekleyeceğimiz zaman Q dolu mu ona bakmamız gerekiyor.
+
+328
+01:04:29,559 --> 01:04:30,019
+Bakıyoruz.
+
+329
+01:04:31,000 --> 01:04:37,599
+Eğer return 1 geldiyse buradan, o zaman true koluna girecek ve return 0 döndüreceği için
+
+330
+01:04:37,599 --> 01:04:41,260
+enq'dan 0 döndüğünde elemanı ekleyememişiz demektir.
+
+331
+01:04:41,879 --> 01:04:45,200
+Eğer is full'dan return 0 dönerse else konuna gideriz.
+
+332
+01:04:45,200 --> 01:04:55,540
+O zaman rear'ı 1 arttırıyoruz ve rear'ın gösterdiği yere value'yu yerleştiriyoruz.
+
+333
+01:04:56,139 --> 01:04:59,639
+Sonra da return 1 diyerek işlemimizi tamamlıyoruz.
+
+334
+01:05:00,139 --> 01:05:04,060
+Tabi burada hep konuştuğumuz şey bu implementasyonun nasıl yapıldığına bağlı.
+
+335
+01:05:04,059 --> 01:05:16,399
+Rear nereyi gösterecek? İşte enqueue'da rear'ı önce arttırdık sonra yerleştirdik. İmplementasyon buna göre yapılmış. Farklı şekilde de yapılabilirdi.
+
+336
+01:05:17,619 --> 01:05:33,399
+DQ tarafına gelelim. DQ tarafında kuyruktan bir eleman alınacak. Alınan eleman bu x değişkenin adresine atanacak çünkü buradaki int aynası tek de olduğu gibi bu işin başarıyla yapılıp yapılacak.
+
+337
+01:05:34,059 --> 01:05:35,159
+bulmadığını bana gösteriyor.
+
+338
+01:05:36,159 --> 01:05:41,959
+isempty'yi önce çağırıyoruz çünkü boş ise kuyruk oradan bir eleman değeri alamayacağız anlamına geliyor.
+
+339
+01:05:42,539 --> 01:05:48,019
+O zaman da return 1 döndüreceği için true koluna gelecek ve return 0 döndürecektir.
+
+340
+01:05:48,539 --> 01:05:49,899
+deq başarısız olacaktır.
+
+341
+01:05:49,899 --> 01:05:55,759
+Eğer isempty bize 0 döndürürse o zaman biliyoruz ki empty değildir.
+
+342
+01:05:56,279 --> 01:06:03,759
+Değil ise else koluna gideceğiz ve front'un bulunduğu değeri alacağız.
+
+343
+01:06:04,059 --> 01:06:08,619
+Front'un gösterdiği de gösterdiği yerdeki elemanın değerini alacağız.
+
+344
+01:06:09,459 --> 01:06:10,319
+Q'ya koyacağız.
+
+345
+01:06:11,239 --> 01:06:13,199
+Daha doğrusu yanlış ifade ettim.
+
+346
+01:06:13,559 --> 01:06:15,679
+Q'daki o gözdeki değeri alacağız.
+
+347
+01:06:16,128 --> 01:06:32,148
+x'e koyacağız, x'in adresine ve front'u bir arttıracağız. Bunun ikisini bir yerde yapıyorum. Çünkü hatırlarsanız, increment operatörü sonra geliyorsa, o zaman yani front art artı ise önce front'un değerini al kullan, sonra front'u bir arttır demek.
+
+348
+01:06:32,687 --> 01:06:40,567
+Artı artı front olsaydı, önce değeri bir arttır, sonra kullan anlamına geliyordu. Burada önce değeri kullanıyoruz, sonra bir arttırıyoruz.
+
+349
+01:06:40,567 --> 01:06:46,467
+ve başarıyla sonuçlandırdığımızda return 1 ifadesini döndürmüş oluyoruz.
+
+350
+01:06:46,467 --> 01:06:48,467
+Şimdi şurada...
+
+351
+01:07:05,204 --> 01:07:26,464
+u boşken ikisinin de eksi bir değerini gösterdiğini kabul edebiliriz. Bir eleman geldi. Enq dedik. A değerini enq'da buraya yerleştirdik. Bu şartlarda front ve rear nereyi gösteriyor olacak.
+
+352
+01:07:38,291 --> 01:07:50,132
+[öğrenci]'nın bir sorusu varmış. En başta queue için yine struct tanımlamamız gerekiyor mu? Evet, yine queue için bir struct yapısı oluşturabilirsiniz.
+
+353
+01:07:50,132 --> 01:07:59,491
+Ama burada şu anda bunu dizi üzerinden implemente ettiğimiz için böyle bir şeye ihtiyaç duymadık.
+
+354
+01:08:00,031 --> 01:08:07,591
+Ama bunu dizi olarak implemente etmiyorsanız o zaman bir structure yapısı oluşturmanız gerekiyor [öğrenci].
+
+355
+01:08:08,291 --> 01:08:11,211
+linked list kullanımında özellikle buna dikkat etmek gerekiyor.
+
+356
+01:08:12,111 --> 01:08:13,472
+Evet sorumu tekrar ediyorum.
+
+357
+01:08:14,251 --> 01:08:15,972
+A enqueue edildi.
+
+358
+01:08:16,891 --> 01:08:19,372
+Rear ve frontun değeri ne olacak?
+
+359
+01:08:33,108 --> 01:08:39,767
+Front A'yı gösterecek, rear'da bir fazlasını gösterecek. Enq demiştiniz değil mi hocam?
+
+360
+01:08:39,767 --> 01:08:42,727
+Enq ediyoruz, enq A dedik.
+
+361
+01:08:44,827 --> 01:08:51,667
+Tamam, front 0'ı gösteriyor, artık eksi 1'den başlıyorsa, rear'da 1'i gösteriyor.
+
+362
+01:08:53,628 --> 01:08:54,128
+Öyle midir?
+
+363
+01:08:56,647 --> 01:08:59,108
+Evet, şey, gerekmeyecek yani bunun için galiba öyle.
+
+364
+01:09:00,727 --> 01:09:02,528
+Rear kaçı gösteriyor demiştin?
+
+365
+01:09:03,108 --> 01:09:05,968
+Rear 1'i gösteriyor demiştim.
+
+366
+01:09:07,328 --> 01:09:13,047
+Ha şey şu anki pardon pardon şu anki uygulamaya göre şu anki koda göre 0'ı gösteriyor çünkü arttırıp şey yapıyoruz.
+
+367
+01:09:13,847 --> 01:09:14,067
+Tamam.
+
+368
+01:09:15,067 --> 01:09:22,868
+Yani Rear 0 olduğunu varsa yasak 1, 2, 3 dersek Rear burayı gösterecek doğru mu?
+
+369
+01:09:24,487 --> 01:09:25,868
+Evet.
+
+370
+01:09:27,027 --> 01:09:28,907
+Peki Front kaçı gösterecek?
+
+371
+01:09:28,907 --> 01:09:33,767
+O da sıfırı gösterecek çünkü DQ ederken A'yı çıkarmamız gerekiyor.
+
+372
+01:09:34,847 --> 01:09:37,487
+Bunu burada mı tutacağız yoksa şurada mı tutacağız?
+
+373
+01:09:42,739 --> 01:09:48,660
+ilk kullanıp arttırıyorduk. Front plasmasy kullanıp arttırıyorduk.
+
+374
+01:09:49,999 --> 01:09:56,719
+Öyle ama şöyle bir şey var. Burada şimdi ilk başlangıçta front ve rear x1 dedik ya.
+
+375
+01:09:57,559 --> 01:10:09,859
+Şunu duruyorlar. Pardon. Şunu geri alalım. Bu noktada biz front ile ilgili bir işlem yapmadıysak front x1 olarak kalmaz mı A'yı koyduğumuzda?
+
+376
+01:10:10,459 --> 01:10:11,639
+Aynen doğru.
+
+377
+01:10:12,739 --> 01:10:19,219
+O zaman bizim bir şey yapmamız gerekir mi? Frontla ilgili bir iş yapacağımız zaman.
+
+378
+01:10:21,580 --> 01:10:29,879
+Çünkü şu anda biz front'u dequeue desek şu anda q'dan a çıkartılır mı? Şu andaki kodlara göre.
+
+379
+01:10:31,039 --> 01:10:32,960
+Şu andaki kodlara göre çıkartmaması lazım.
+
+380
+01:10:33,859 --> 01:10:36,239
+Şu andaki kodlara göre çıkartılmaz değil mi?
+
+381
+01:10:36,659 --> 01:10:36,939
+Aynen.
+
+382
+01:10:36,939 --> 01:10:49,719
+Tamam. Demek ki burada implementasyonun nasıl olduğu ve ihtiyarların ne şekilde alınması gerektiği oldukça önemli. Buradaki problemi nasıl çözebiliriz?
+
+383
+01:11:01,779 --> 01:11:03,020
+bir kere olan var mıdır?
+
+384
+01:11:08,435 --> 01:11:28,315
+frontu eksi bir set ettiğimiz noktada, rear'da eksi bir olarak set edildiği noktada. Ben nqa dediğimde, elemanı yerleştirdiğimde şu anda buradaki kodlara göre benim frontum değişmiyor, rear'ım sıfırı gösteriyor.
+
+385
+01:11:31,764 --> 01:11:44,083
+rear, şurada da frontum duruyor. Bir sonraki aşamada dequeue ettiğimde dequeue-1 etmeye çalışacağım.
+
+386
+01:11:46,224 --> 01:11:52,803
+Hocam, kontrolü rear üzerinden yapsak. Efendim? Kontrolü rear üzerinden yapsak.
+
+387
+01:11:53,043 --> 01:11:56,703
+Hangi kontrolü? If içerisindeki front eşit eşit x1.
+
+388
+01:11:57,203 --> 01:12:01,283
+If içerisindeki front eşit. Ha şurada mı? Evet.
+
+389
+01:12:01,764 --> 01:12:03,844
+Front eşittir ne yazmalıyım?
+
+390
+01:12:04,844 --> 01:12:08,503
+J eşit eşit x1 deyip kontrolü o şekilde yapsak.
+
+391
+01:12:09,203 --> 01:12:09,923
+Yazalım.
+
+392
+01:12:11,503 --> 01:12:12,484
+Bakış açısıdır.
+
+393
+01:12:20,692 --> 01:12:28,192
+at rear-1 yapsak. Ben bu durumda dequeue etmek istediğim zaman doğru elemanı dequeue edebilir miyim?
+
+394
+01:12:43,859 --> 01:12:46,359
+Şimdi ben de queue dediğimde
+
+395
+01:12:46,999 --> 01:12:49,499
+burada front eksi birse
+
+396
+01:12:50,199 --> 01:12:51,800
+şurada görmüş olduğunuz
+
+397
+01:12:52,059 --> 01:12:54,859
+queue eksi birden eleman çekmeye çalışacağım.
+
+398
+01:12:55,119 --> 01:12:57,939
+Aslında benim queue sıfırdan eleman çekmem gerekiyor.
+
+399
+01:13:00,499 --> 01:13:01,780
+Hocam ya
+
+400
+01:13:02,040 --> 01:13:03,819
+plus plus front diyeceğiz.
+
+401
+01:13:04,079 --> 01:13:05,099
+Hı hı.
+
+402
+01:13:05,099 --> 01:13:06,639
+Seçeneklerden biri.
+
+403
+01:13:06,899 --> 01:13:07,659
+Veya
+
+404
+01:13:07,919 --> 01:13:10,479
+e queue ederken frontu da değiştireceğiz.
+
+405
+01:13:10,479 --> 01:13:12,019
+Yani rear plus plus diyoruz ya.
+
+406
+01:13:12,280 --> 01:13:12,919
+Hı hı.
+
+407
+01:13:12,919 --> 01:13:20,439
+orada front'u da plus plus dememiz gerekiyor ki biz şey olmasın yani eksi bir kalmasın orada enkü yaptığımız zaman.
+
+408
+01:13:20,439 --> 01:13:32,339
+Evet şimdi bir kere dikkat edilmesi gereken nokta bu front'a artı artı front yani front artı artı yerine artı artı front dediğimizde bu problemi ilk adımda çözüyormuşuz gibi bunu da buraya getiriyoruz.
+
+409
+01:13:32,999 --> 01:13:34,919
+Peki şimdi devam edelim.
+
+410
+01:13:36,040 --> 01:13:38,979
+Enkü B'ye gelsin.
+
+411
+01:13:38,979 --> 01:13:54,419
+Bir saniye hocam. Artı artı front dediğimizde o aşamaya geçiyor belki ama izenti çeki aynı anda hem de izenti çeki rear ile mi yapacağız? İkisini beraber mi kullanıyoruz?
+
+412
+01:13:55,339 --> 01:13:56,359
+Hangi kontrolü?
+
+413
+01:13:58,499 --> 01:14:03,800
+Yani normalde de queue kontrolünde izenti kontrolümüz var.
+
+414
+01:14:03,799 --> 01:14:12,639
+Bu front ile yaparsak gene ters dönecekti. O zaman hem rear ile kontrol ediyoruz hem de artar ki front noktası.
+
+415
+01:14:13,059 --> 01:14:31,179
+Şimdi şöyle bir kere buradaki kontrolle ilgili bir bakacağız şuradaki kontrolü söylüyorsunuz. Buraya bir bakacağız. Bu aslında biraz önceki sorduğumuz problemi çözmek için sadece bir fikirdi. O hala tam yerine oturmuş bir fikir değil.
+
+416
+01:14:31,179 --> 01:14:35,179
+Ama bir sonraki eleman geldiğinde ne olacağını da görmenizi istediğim için
+
+417
+01:14:35,179 --> 01:14:38,319
+Şimdi front da rear 0'ı gösteriyor.
+
+418
+01:14:39,480 --> 01:14:41,379
+A bir tane daha B geldi.
+
+419
+01:14:44,040 --> 01:14:44,900
+Enqueue ettim.
+
+420
+01:14:45,020 --> 01:14:48,959
+Enqueue ettiğim zaman front burayı gösterecek.
+
+421
+01:14:50,020 --> 01:14:52,580
+Rear da artık burayı gösterecek.
+
+422
+01:14:54,580 --> 01:14:57,899
+Şimdi buradan bir tane dequeue yaptığımızda
+
+423
+01:14:57,899 --> 01:15:01,699
+DQ işlemi olsun.
+
+424
+01:15:02,639 --> 01:15:06,019
+DQ yaptığımız zaman artı artı front diyeceğim.
+
+425
+01:15:06,879 --> 01:15:08,539
+Artı artı front dediğim zaman
+
+426
+01:15:08,539 --> 01:15:11,699
+buraya gelecek.
+
+427
+01:15:12,959 --> 01:15:13,339
+Doğru mu?
+
+428
+01:15:13,919 --> 01:15:15,919
+Onun içerisindeki elemanı boşaltacağım.
+
+429
+01:15:18,679 --> 01:15:21,499
+Benim boşaltmam gereken eleman bu mu?
+
+430
+01:15:22,339 --> 01:15:22,919
+Yoksa bu mu?
+
+431
+01:15:28,275 --> 01:15:29,575
+A'yı boşaltmamız lazım.
+
+432
+01:15:29,975 --> 01:15:32,915
+A'yı boşaltmamız lazım. Artı artı front dediğimiz zaman ne oldu?
+
+433
+01:15:36,256 --> 01:15:40,076
+B'yi boşaltmak için bir hamle oluştu. Doğru değil mi?
+
+434
+01:15:40,515 --> 01:15:40,915
+Doğru.
+
+435
+01:15:41,415 --> 01:15:44,335
+Tamam. Demek ki bu bize bir çözüm olmuyor arkadaşlar.
+
+436
+01:15:48,787 --> 01:15:49,787
+O yüzden
+
+437
+01:15:52,387 --> 01:15:54,387
+Şurayı şöyle yapıyoruz.
+
+438
+01:15:55,987 --> 01:15:57,387
+Şu kısmı
+
+439
+01:15:59,187 --> 01:16:00,187
+siliyoruz.
+
+440
+01:16:01,387 --> 01:16:02,187
+Ve
+
+441
+01:16:04,387 --> 01:16:05,388
+front
+
+442
+01:16:06,187 --> 01:16:08,187
+artı artıya geri döndürüyoruz.
+
+443
+01:16:09,087 --> 01:16:11,587
+Şu kısmı da siliyoruz.
+
+444
+01:16:13,388 --> 01:16:14,987
+Ve front
+
+445
+01:16:15,787 --> 01:16:17,987
+eşit eşit eksili ediyoruz.
+
+446
+01:16:18,787 --> 01:16:22,587
+Sanırım problemimizin ne olduğu daha iyi anlaşılmıştır.
+
+447
+01:16:27,956 --> 01:16:35,956
+Şimdi sizden isteğim buradaki problemi nasıl çözeriz?
+
+448
+01:16:39,699 --> 01:16:47,279
+nQ sırasında ilk seferde bir izempti çeki yapıp nQ durumunda frontu mu artırmamız gerekiyor acaba?
+
+449
+01:16:47,279 --> 01:16:58,899
+Ben şöyle bir şey rica edeceğim. Fikirleri konuşmadan önce saat 14.13, bir 5 dakika buradaki nQ ve dQ yapıldığı zaman bir sıkıntı var mı?
+
+450
+01:16:59,699 --> 01:17:08,919
+İlk başlangıç noktası nerelere olması gerekiyor? Şuraya dikkat çekmek istiyorum. Bunları bir kontrol etmenizi istiyorum ve problemi nasıl çözebileceğimiz konusunda
+
+451
+01:17:08,919 --> 01:17:13,799
+birazcık kağıt kalemle durumu değerlendirmenizi rica ediyorum.
+
+452
+01:22:00,243 --> 01:22:02,743
+Evet arkadaşlar, fikri olan var mı?
+
+453
+01:22:10,771 --> 01:22:11,531
+Evet, Emircan.
+
+454
+01:22:13,331 --> 01:22:37,571
+Hocam, benim aklıma şu geldi. Front'u ve rear'ı sıfırdan başlatalım. Rear sıfırsa bu iz empty anlamına gelsin. Hani bu if çeker, rear sıfır için yapalım. Biz full'e de rear eşit eşittir, max, eksi bir yerine max diyelim.
+
+455
+01:22:37,571 --> 01:22:40,511
+Bu da şöyle olacak
+
+456
+01:22:40,511 --> 01:22:48,071
+İlk olarak şeyde nq yaparken diyelim ekleyeceğiz ya
+
+457
+01:22:48,071 --> 01:22:52,771
+Q'yı reşittir value yaptıktan sonra rier++ diyelim
+
+458
+01:22:52,771 --> 01:22:54,672
+Bu rier biri gösterecek
+
+459
+01:22:54,672 --> 01:22:55,611
+Peki
+
+460
+01:22:59,507 --> 01:23:09,507
+Bundan sonra işte böyle yavaş yavaş giderken hani son elemanı ekledik diyelim ki, rear bundan sonra max-1'e değil, max'a eşit olacak.
+
+461
+01:23:09,507 --> 01:23:18,507
+Out of bound olacak yani, eriğin dışına çıkmış olacak, max-1 olmadığı için. Oradan da eriğin dolu olduğunu anlayacağız. Front'u değiştirmemize gerek kalmıyor.
+
+462
+01:23:18,507 --> 01:23:24,507
+Eğer böyle yaparsak o şey, deque'yi değiştirmemize gerek kalmıyor. Front'u sadece sıfırdan başlatmış oluyoruz.
+
+463
+01:23:24,507 --> 01:23:30,848
+Ben kendi kağıt kalemimde oldu ama bir denesek belki olabilir. Belki bir hata vardır.
+
+464
+01:23:31,667 --> 01:23:45,167
+Tamam. Bir fikir. [öğrenci] is empty için front eşit eşit rear'ı önermiş. [öğrenci] mikrofonundan müsaitsen bunu sen de anlatabilir misin?
+
+465
+01:23:45,167 --> 01:24:01,567
+İkisi de gene eksi birden başladığımız durumda herhangi bir nQ yapılmadığında ikisi de eksi bir olduğundan boş dönüşülecek. Herhangi bir element A'yı eklediğiniz zaman rear burada sıfırı gösteriyor.
+
+466
+01:24:01,567 --> 01:24:09,567
+NTE eksi bir gösterdiği için empty durumu eksi bir eşitliğe sıfır olduğundan sıfır döndürecek.
+
+467
+01:24:09,908 --> 01:24:10,507
+Doğru.
+
+468
+01:24:10,507 --> 01:24:20,448
+Ama şunu soracağım, dq etmek istediğimiz zaman normalde fronttaki elemanı alıyoruz ya
+
+469
+01:24:20,448 --> 01:24:30,427
+Biz a'yı koyduğumuz zaman nqa dediğimizde front hala eksi bir olacak ya
+
+470
+01:24:30,427 --> 01:24:33,188
+Artı artı frontla onu çözüyoruz
+
+471
+01:24:33,188 --> 01:24:38,668
+Artı artı frontla, tamam. Peki şimdi o zaman teşekkür ediyorum fikirleriniz için arkadaşlar
+
+472
+01:24:38,667 --> 01:24:42,567
+Onun yerine şunu da kolaylıkla yapabiliriz.
+
+473
+01:24:43,387 --> 01:24:48,867
+Yani bunlar hepsi denenip kontrollerden sonra olabilecek fikirler.
+
+474
+01:24:49,647 --> 01:24:53,767
+Size üzerinden yani size şurada şöyle göstereyim.
+
+475
+01:24:55,827 --> 01:24:58,527
+Size üzerinden oluşturulan bir is empty vardı.
+
+476
+01:24:58,527 --> 01:25:28,507
+Burada size değerini kontrol ederek şurada her enqueue ettiğimizde else çıktıktan sonra size eşittir size artı bir yazıp burada da eleman ekledikten sonra size eşittir size eksi bir yaparak da aynı aslında sistematiği şuradaki is full kontrolünde size eşit bir max eksi bir mi diye devam ettirelim.
+
+477
+01:25:28,528 --> 01:25:54,308
+yapabiliriz. İşte nqa dedik. Rear burayı gösterdi diyelim. Size'mız da 1 oldu. Bir sonraki eleman geldiği zaman otomatik olarak front artı artı dediğimizde burada frontu da ya işte sıfırdan başlatacağız ya da artı artı front diyeceğiz. Dq dediğimizde şöyle yapalım.
+
+478
+01:25:58,771 --> 01:26:14,431
+eq dediğimizde bize front şurayı gösterecek ve elemanı dışarı alacağız. Elemanı dışarı aldığımızı size artık bir azaldığı için sıfırı gösterecek. Tekrar eleman ekleyelim. Bu sefer nq b diyelim.
+
+479
+01:26:14,431 --> 01:26:33,651
+B buraya yerleşecek doğal olarak. Burada dikkat edilmesi gereken bir nokta var. Biz burada bir elemanı çıkarttığımızda size bir eksilttiğimiz zaman doğal olarak burada bir kontrol ile yapmamız gerekiyor.
+
+480
+01:26:33,651 --> 01:26:43,771
+Çünkü rear burada daha doğrusu front işlemini gerçekleştirdiğimizde dekür dediğimizde A'yı buradan çıkarttık. Front buraya geldi. Rear buraya geldi.
+
+481
+01:26:43,771 --> 01:27:00,771
+şu an buradalar. Bir sonraki adımda size x1 dediğimiz zaman empty olduğunda eğer empty durumu söz konusuysa bizim mutlaka tekrar front ile rear'ı buradaki konumlarına tekrar set etmemiz gerekiyor.
+
+482
+01:27:00,771 --> 01:27:13,751
+Buna dikkat etmemiz gerekiyor. Şimdi gelelim bir sonraki adımda bu işin circular queue yapısı üzerinde implemente edildiği zaman nasıl gerçekleştirildi?
+
+483
+01:27:13,771 --> 01:27:19,731
+bir önce anlattığımız normalde normal bir queue implementasyonuydu ama çok sık kullanılan bir yapı değil.
+
+484
+01:27:20,271 --> 01:27:25,731
+Çünkü sebebi şu size üzerinden ve maksimum bir değer üzerinden kontrol ediliyor.
+
+485
+01:27:25,731 --> 01:27:32,611
+Yani herhangi bir rotasyon söz konusu değil. Böyle olduğunda da boşu boşuna yer kaybı gerçekleşmiş oluyor.
+
+486
+01:27:33,011 --> 01:27:38,891
+Asıl bizim için anlamlı olan kullanım circular queue implementasyonu.
+
+487
+01:27:38,891 --> 01:27:55,991
+Şimdi öncelikle burada işte ABC'de buraya yerleşmiş olsun diyelim. Şöyle yapalım. ABC ondan sonra D'nin var olduğunu bilelim.
+
+488
+01:27:55,991 --> 01:28:23,411
+Şimdi A'yı de queue ettim. A'yı de queue ettiğim zaman buradaki A'yı çıkartmış oldum. Sonra B'yi de queue ettim. Buradaki B'yi çıkartmış oldum. Sonra nQE geldi. nQF geldi. Sonra de queue C geldi. Burayı da çıkarttım.
+
+489
+01:28:23,411 --> 01:28:35,911
+Bu sırada benim şurada görmüş olduğunuz pointer'larım da bir yandan ilerleyecek tabii onları da buraya çizelim.
+
+490
+01:28:37,352 --> 01:28:45,451
+İşte önce ABC vardı. A'nın burada olduğunu düşünüyorsak front noktası burası olsun.
+
+491
+01:28:46,451 --> 01:28:51,191
+C'nin de burası olduğunu hatta şöyle yapalım.
+
+492
+01:28:51,191 --> 01:29:09,231
+D'nin de burası olduğunu düşünürsek rear'da burayı göstersin. Burada ilerletiyoruz. Önce front A'yı çıkarttığımız için buraya geldi, B'ye geldi. Sonra C'yi, B'yi çıkarttığımız için front buraya geldi.
+
+493
+01:29:09,231 --> 01:29:36,951
+frontta rear yan yana var C ve D var şimdi yeni bir nQ geldi e rear'ı bir arttırıp buraya koyduk sonra F geldi rear'ım burayı gösterir oldu rear'ım burayı gösterdiği noktada sırada C'yi deq ettim C'yi deq ettim zaman artık buraya front geldi şunu silelim
+
+494
+01:29:41,235 --> 01:29:43,235
+Şöyle yapalım.
+
+495
+01:29:48,884 --> 01:30:13,903
+frontun burayı gösteriyor. Rearum da F'yi gösteriyor. Yani şu T anında Q'da D, E, F var. Çünkü C'yi çıkartmıştım. En son en Q, E geldi. Şimdi en Q, G'ye geldiğinde Rearum'ın artık nereye dönmesi gerekiyor? Bu noktaya dönmesi gerekiyor. G'de buraya geliyor.
+
+496
+01:30:13,903 --> 01:30:19,463
+Şunu da şöyle silelim.
+
+497
+01:30:20,463 --> 01:30:27,343
+Ve artık sizin queue'nuz D, E, F ve G'den oluşuyor.
+
+498
+01:30:29,023 --> 01:30:35,663
+Şimdi bu noktada, bu circular queue implementasyonunda
+
+499
+01:30:35,663 --> 01:30:46,343
+Front ve Rear'ın hangi pozisyonu alması lazım ki biz bu queue dolu diyelim.
+
+500
+01:30:54,387 --> 01:30:57,027
+aynı indekse gelirlerse.
+
+501
+01:30:58,467 --> 01:31:02,348
+Aynı indekse gelirlerse demeyelim de arkalı önlü olurlarsa.
+
+502
+01:31:02,348 --> 01:31:03,567
+Arkalı önlü de olabilir, evet.
+
+503
+01:31:03,808 --> 01:31:19,707
+Arkalı önlü olurlarsa. İki tane koşul var aslında. Bir, ilk başta başlangıç koşulunu kontrol etmemiz gerekiyor. Bir de ilerleyen turlarda artık front rear arasında öyle bir ilişki olacak ki arkalı önlü pozisyona geldikleri zaman böyle bir durumdan bahsediyor olacağız.
+
+504
+01:31:19,707 --> 01:31:27,207
+Şimdi gelelim circular queue implementasyonunda aslında biraz önce görmediğimiz initial queue metoduna.
+
+505
+01:31:27,327 --> 01:31:32,347
+Initial queue metodu der ki front'a eksi bir var, rear'a da eksi bir var.
+
+506
+01:31:34,288 --> 01:31:43,307
+Is empty ise front eksi bir'e eşit mi diye kontrol eder, eksi bir'e eşit ise der ki o zaman bu queue empty pozisyonunda der.
+
+507
+01:31:43,307 --> 01:31:51,787
+Peki Q'nun empty pozisyonunda olma durumu sadece başlangıç anı mıdır? Hayır değildir.
+
+508
+01:31:51,787 --> 01:32:01,307
+Mesela şu anda burada D'yi çıkartırsanız, E'yi çıkartırsanız, F'yi çıkartırsanız, G'yi çıkartırsanız aslında Q empty durumuna gelir.
+
+509
+01:32:02,687 --> 01:32:08,287
+Bu noktada front değerinin eksi bire set edilmesi gerekir ki bu durum yakalanabilsin.
+
+510
+01:32:08,767 --> 01:32:09,827
+Biraz sonra da bunu yapacağız.
+
+511
+01:32:09,827 --> 01:32:20,567
+Yani eğer en son noktada çıkardığınız eleman son eleman ise mutlaka sizin front değerini de eksi vere set etmeniz gerekir.
+
+512
+01:32:21,467 --> 01:32:22,567
+Devam edelim.
+
+513
+01:32:23,967 --> 01:32:30,787
+Şimdi is full dedik iki tane durumun dolu olma durumundan bahsediyoruz.
+
+514
+01:32:31,787 --> 01:32:33,887
+İki farklı koşuldan bahsediyoruz.
+
+515
+01:32:34,027 --> 01:32:35,287
+Q'nun dolu olma koşuldan.
+
+516
+01:32:35,747 --> 01:32:39,127
+Bir tanesi front rear artı bir eşitme.
+
+517
+01:32:39,127 --> 01:32:59,947
+Yani şurada gördüğünüz durum. Nerede? Şurada. Şurada gördüğünüz durum. Eğer böyle bir durum varsa o zaman full olma durumundan bahsediyoruz. Bir de hangi bir durum oluşma söz konusu olabilir? Bana söyleyebilir misiniz? Şuradaki case ne tür bir durumda oluşabilir?
+
+518
+01:33:07,891 --> 01:33:18,491
+Hocam, rear galiba ereğin sonunda şu anda. Ama frontta şey, başa dönmüş. Yani artı ara aslında ama döndüğü zaman rear şey, aslında artı bir gibi.
+
+519
+01:33:19,051 --> 01:33:34,411
+Evet. Öyle bir durum olmuş ki, A, B, C, D, E, F enqueue edilmiş. Hiç şu ana kadar, yani bu ilerleyen turlarda da olabilir ama front burayı gösteriyor, rear da burayı gösteriyor.
+
+520
+01:33:34,411 --> 01:33:37,251
+İkinci özel durum da bu.
+
+521
+01:33:42,195 --> 01:33:50,195
+Bu ikisi söz konusuysa birinden biri, o yüzden V A var. O zaman diyoruz ki bu circular queue de queue doludur.
+
+522
+01:33:53,076 --> 01:33:58,476
+hiç durmadan eleman geldiyse, sona kadar gidildiyse o zaman front başta kalacaktır.
+
+523
+01:33:58,695 --> 01:34:00,576
+Rear da en sona kadar gitmiş olacaktır.
+
+524
+01:34:00,955 --> 01:34:03,336
+Bu durumu bu şekilde kontrol ettik diyelim.
+
+525
+01:34:05,235 --> 01:34:06,456
+Buraya kadar sorusu olan var mı?
+
+526
+01:34:12,979 --> 01:34:37,959
+Peki. Şimdi devam edelim. Gelelim nQ işlemine. nQ işlemine doğal olarak bir tane eleman gönderdik. Full mü diye kontrol ettik. Diyelim ki full değil. Burada bir iki işlem yapmamız söz konusu. O işlemler neler?
+
+527
+01:34:37,959 --> 01:34:41,959
+if front eksi vere eşitme.
+
+528
+01:34:44,959 --> 01:34:46,779
+Bunu hangi keyiz için yapıyoruz?
+
+529
+01:34:55,572 --> 01:35:03,891
+İlk kez enqueue yapacağımız zaman bunu yapıyoruz. Yani A'yı buraya enqueue ediyoruz şu anda.
+
+530
+01:35:07,796 --> 01:35:23,855
+Sonra diyoruz ki rear eşit, rear artı bir modülünü alıyoruz size'a göre. Niye? Çünkü en sona gitmiş olabilir. En sona gittiyse biz size'a göre modülünü aldığımızda tekrar başa dönecek demektir.
+
+531
+01:35:26,056 --> 01:35:34,855
+Rear'ı eksi birlemiştik. Eksi bir ilk etapta artı bir daha sıfır edecek. Sıfır modüler size sıfır da yer alacak. Rear buraya konumlanacak.
+
+532
+01:35:34,855 --> 01:36:02,035
+konumlanacak. Front da buraya konumlandı. Yani ilk elemanı eklerken front'ı ve rear'ı buraya konumlandırdık. Sonra Q, rear'a da elemanı koyduk. Yani A'yı yerleştirdik. İlk elemanı koyduk. İkinci eleman gelsin. NQ, B diyelim. B'yi yerleştirdik. NQ, B dediğimiz zaman ilk kontrolümüz full mü? Değil. Front eksi bir eşit mi? Değil.
+
+533
+01:36:02,035 --> 01:36:13,376
+Rear, Rear artı bir, sıfırdı, sıfır artı bir, bir, bir modüler size, biri gösterecek. Rear'da artık, şunu silelim.
+
+534
+01:36:19,604 --> 01:36:29,723
+şöyle göstereyim. Rear burayı gösterecek. Front da burayı gösterecek. Ve elemanı da Rear'ın gösterdiği yere ekleyeceğiz.
+
+535
+01:36:29,723 --> 01:36:44,083
+Devam edelim. C'ye geldi, D'ye geldi. İşte burası 0'dı, burası 1'di, burası 2'di, burası 3'dü. En son 3 artı 1, 4.
+
+536
+01:36:44,083 --> 01:37:11,004
+4 size'da 4 olduğunu düşünürseniz modüler aratmetikten 0 gelecek. Bir sonraki eleman A'nın üzerine yerleşecek teknik olarak. Normalde orası boşaldıysa. Ki şu anki hali şöyle. Rear burada. Front da en başta. Şu an nQ A, nQ B, nQ C, nQ D dedik. Front 0'ı gösteriyor. Rear da 3'ü gösteriyor.
+
+537
+01:37:11,003 --> 01:37:23,703
+Şu an nqe dediğimiz zaman is full dediğimizde bir önceki sayfada hatırlarsanız front eşit eşit rear artı bir mi diye kontrol edecek ki değil.
+
+538
+01:37:24,743 --> 01:37:38,203
+Front sıfır ve rear size eksi bir mi? Evet. 4 eksi birden 3. O zaman is full'dan true dönecek ve herhangi bir işlemi başarıyla tamamlayamadığı için return sıfır diyecek ve nq işlemi başarısız olacak.
+
+539
+01:37:38,203 --> 01:37:41,324
+Çünkü şu anda queue dolu.
+
+540
+01:37:42,563 --> 01:37:44,523
+Peki dequeue'ya gelelim.
+
+541
+01:37:46,083 --> 01:37:47,943
+Dequeue'da bir is empty kontrolümüz var.
+
+542
+01:37:48,863 --> 01:37:58,583
+Sonra bir front'a, front'un gösterdiği yerden bir eleman alıyoruz.
+
+543
+01:37:59,203 --> 01:38:02,343
+Sonra da kontrol yapıyoruz front tree ve eşit mi diye.
+
+544
+01:38:03,284 --> 01:38:05,063
+Şimdi buradan dequeue dedik.
+
+545
+01:38:05,923 --> 01:38:07,243
+Şöyle yapalım.
+
+546
+01:38:07,243 --> 01:38:09,303
+DQ dediğimizde
+
+547
+01:38:09,303 --> 01:38:13,703
+NQ, A, B, C, D dedik hepsini yerleştirdik.
+
+548
+01:38:13,784 --> 01:38:14,824
+DQ dediğimizde
+
+549
+01:38:14,824 --> 01:38:18,223
+frontun olduğu yerdeki elemanı X'e aldı.
+
+550
+01:38:18,904 --> 01:38:21,383
+Burası aslında teknik olarak boşaldı.
+
+551
+01:38:22,563 --> 01:38:23,443
+Şöyle de silelim.
+
+552
+01:38:27,252 --> 01:38:31,051
+Bu noktada front, rear'e eşit mi diye kontrol edeceğiz.
+
+553
+01:38:33,551 --> 01:38:35,752
+Ki front, rear'e eşit değil.
+
+554
+01:38:37,012 --> 01:38:43,371
+Sonra eğer öyle değilse else diyeceğiz front, front artı bir modüler size diyeceğiz.
+
+555
+01:38:43,971 --> 01:38:46,391
+Dediğimiz zaman front artık
+
+556
+01:38:51,188 --> 01:38:52,247
+Burayı gösterecek.
+
+557
+01:38:53,867 --> 01:38:56,387
+Ve teknik olarak burası boşalmış olacak.
+
+558
+01:38:58,148 --> 01:39:14,608
+Eğer nqe gelirse, nqe geldiğinde buradaki üst taraftaki nq işlemleri gerçekleştiğinde is full return sıfır döndürdüğü için else koluna gideceğiz.
+
+559
+01:39:14,608 --> 01:39:22,667
+ve doğal olarak rear en başa gelecek. Şuradakini silelim. Bu oku.
+
+560
+01:39:25,167 --> 01:39:34,927
+Rear, özür dilerim şu kırmızıyla yapalım. Rear burayı gösterecek. E'yi de buraya yerleştireceğiz.
+
+561
+01:39:34,927 --> 01:39:56,408
+bir daha nq gelirse nq f gelirse o zaman buradaki kontrolümüzde is full'de front eşit eşit rear artı bir koşulundan dolayı is full true döndürecek ve biz yine buraya bir eleman ekleyemeyeceğiz.
+
+562
+01:40:00,564 --> 01:40:02,123
+Buraya kadar sorusu olan var mı?
+
+563
+01:40:07,604 --> 01:40:18,803
+Peki geriye bir tek cevaplanmamış kısım kaldı. Front eşit eşit rear kontrolü yapıyoruz DQ'da.
+
+564
+01:40:20,692 --> 01:40:26,051
+Bu hangi senaryo durumunda oluşur?
+
+565
+01:40:38,804 --> 01:40:39,804
+Emircan?
+
+566
+01:40:41,804 --> 01:41:01,804
+Hocam şöyle diyelim ki, front ilerledi şu anki halinde düşünüyorum. D'yi çıkardık diyelim, E'ye geldik. E hala ERA'yla sıkıntı yok. Frontta şey oldu, hani o çıkardığımız an front re-reaction olmadığı için O if bloğuna girmedi, D'yi çıkardığımız anda.
+
+567
+01:41:01,804 --> 01:41:10,484
+da front artı bir modüler size aldığımız zaman sıfıra geldi. Bir daha DQ yaptığımız zaman front'u çıkardım ben hani E'yi çıkardım.
+
+568
+01:41:10,484 --> 01:41:23,283
+Aşağıdaki Fblue ama diyor ki hani front rear'e eşit yani eleman çıkarmışım ya artık boş. Az önce dediniz ya şeyi hani boş olduğunu anlamak için front'un eksi birine bakıyoruz ama bunu ekstra ayarlamamız lazım diye bazı durumlarda.
+
+569
+01:41:23,283 --> 01:41:37,484
+O durumu ayarlıyor işte hani boş oluyor ama işlem yapılmıştı o işlemden geri dönüldü hani artık bir daha şey yok hiç eleman yok bir daha eksi bir eşit diyor ki şey yaptığımız zaman boş olduğunu anlayalım.
+
+570
+01:41:37,484 --> 01:41:52,283
+Tamam eksi bir eşitlemesiyle ilgili söylediğin şey çok doğru boş olduğunu anlamamız için yapıyor içerisini ama senin anlattığın case'den çok burada gözüken bir case var front on rear'e eşit olma durumunu gösteren şu an slide'da var.
+
+571
+01:41:52,283 --> 01:41:54,103
+Tak, tak to do deyim.
+
+572
+01:41:55,043 --> 01:41:55,823
+Bakayım.
+
+573
+01:42:03,475 --> 01:42:05,475
+Burada ne olmuş?
+
+574
+01:42:05,475 --> 01:42:18,475
+Ya R'ye şey ol hani circular link listeyiz ya şu an link istiyorum pardon, Q'deyiz ya. Front'u ileri almaktansa tekrar sıfırdan başlatsın ki en baştan başlayalım diye herhalde. Onu kastediyorsanız.
+
+575
+01:42:18,475 --> 01:42:22,475
+Şunu kastediyorum. Buraya nQA dedim ya.
+
+576
+01:42:22,475 --> 01:42:23,475
+Aynen.
+
+577
+01:42:23,475 --> 01:42:29,475
+nQA dediğim zaman benim rear'ım bir ilerledi mi?
+
+578
+01:42:29,475 --> 01:42:30,475
+Evet.
+
+579
+01:42:30,475 --> 01:42:42,975
+Tamam. Front'um da aynı şekilde bu noktayı gösteriyormuş şu anda. İkisi de bu noktayı gösterdiğinde dequeue ettiğim zaman rear'ım bu noktayı yani rear'la front'um aynı anda bu noktayı gösterecek değil mi?
+
+580
+01:42:43,575 --> 01:42:43,915
+Aynen.
+
+581
+01:42:44,575 --> 01:42:58,016
+İkisi de aynı noktayı gösterebileceği bu case oluştuğunda diyoruz ki o zaman bu queue boşalmıştır. Sen front ve rear'ı al şuraya set et tekrar eski haline. Bunun amacı bu.
+
+582
+01:42:58,855 --> 01:42:59,415
+Tamam.
+
+583
+01:43:00,475 --> 01:43:18,496
+Şimdi biraz süremizle 5 dakika aşmışız. 14.39, 14.50'ye kadar bir ara verelim. Bu son kısmı bir daha üzerinden geçip toparlayalım. Sorularınız varsa yanıtlayayım. Circle Q implementation'ı ondan sonra tamamlayalım.
+
+584
+01:54:13,460 --> 01:54:20,420
+Evet, yeniden merhaba arkadaşlar. Kaldığımız yerden devam edelim. Hemen ekran paylaşayım.
+
+585
+01:54:22,999 --> 01:54:32,899
+Şimdi en son şu noktada kalmıştık. Front ve rear'ın eşit olduğu durumu kontrol ediyorduk. Şurada görmüş olduğunuz.
+
+586
+01:54:33,899 --> 01:54:38,539
+Buna neden ihtiyaç duyuyoruz demiştik. Şu case için ihtiyaç duyuyoruz.
+
+587
+01:54:38,539 --> 01:54:55,540
+nQ A dediğinizde yani kuyruk boşken şuradan örnek olarak verelim A dediğinizde şu noktada front eksi 1 ise onu 0'a set ediyorduk.
+
+588
+01:54:56,659 --> 01:55:05,860
+Ve rear'da 0 olduğu için 0 artı 1'den 1 modüler sayısından o da 1 olduğu için pardon 0 olduğu için
+
+589
+01:55:05,859 --> 01:55:09,979
+çünkü eksi bir artı bir daha sıfır, sıfır modular size'dan sıfır gelecek.
+
+590
+01:55:11,959 --> 01:55:15,539
+Q'ya ilk eleman eklendiğinde ikisi de sıfırı gösteriyor.
+
+591
+01:55:16,439 --> 01:55:24,960
+Ve burada eğer bir de Q işlemi gerçekleşirse o zaman şurada görmüş olduğunuz case oluşuyor.
+
+592
+01:55:25,599 --> 01:55:31,479
+Buradan A alınıyor ve front rear'e eşit olduğu için ikisi tekrar eksi bir'e set ediliyor.
+
+593
+01:55:31,479 --> 01:55:43,379
+Aslında ilk eleman eklendikten sonra hemen kuyruk tekrar boşaltılırsa oluşan bu case özel olarak kontrol edilmiş oluyor.
+
+594
+01:55:43,579 --> 01:55:51,820
+Nasıl yukarıda ilk eleman eklenirken front eksi birden sıfıra set ediliyorsa bir tek o case için çalışıyorsa bu durum.
+
+595
+01:55:51,820 --> 01:56:07,879
+Burada da ilk eleman eklendikten sonra hemen başka bir eleman eklemeden deque işlemi yapılıyorsa ya da A eklediniz, B eklediniz, C eklediniz, oradaki elemanları eklediniz, devam ettiniz.
+
+596
+01:56:07,879 --> 01:56:21,700
+Hemen arkasından B, C, D, E geldi. Burada front ve rear birbirlerinden açılıyorlar ve rear frontun arkasına dönüyor ve ikinci case olarak da bu durum kontrol ediliyor.
+
+597
+01:56:21,820 --> 01:56:34,960
+Böyle bir durum oluştuğunda da dizinin dolduğu anlaşılıyor ve dolduğu anlaşıldığı zaman da is full tarafında return değere 1 döndürülerek işlem sonuçlandırılmış oluyor.
+
+598
+01:56:35,320 --> 01:56:48,079
+Demek ki initial queue tarafında circular queue implementasyonunda front varier eksi 1, is empty control'ü front'un eksi 1 olması durumunda return 1 döndürüyor.
+
+599
+01:56:48,079 --> 01:57:00,739
+is full iki türlü söz konusu olabiliyor. Birinde front rear'dan bir büyük ise değer olarak diğerinde de eleman eklediniz ve hiç eleman çıkarmadınız.
+
+600
+01:57:01,460 --> 01:57:08,799
+Bütün dizi doldu. O zaman front sıfırı gösteriyor. Rear'da size eksi biri gösteriyor. Bu iki kez için kontrol yapıyorsunuz.
+
+601
+01:57:08,799 --> 01:57:12,299
+İkisinden biri varsa dizi doludur diyorsunuz.
+
+602
+01:57:12,299 --> 01:57:22,439
+enqueue yaparken ilk eleman ekliyorsanız front'u 0'a set ediyorsunuz. Rear'da bu işlem sonunda 0'a set ediliyor. Aynı yeri gösteriyorlar.
+
+603
+01:57:23,260 --> 01:57:37,239
+Dekue yapıyorsanız da eğer ilk elemanı ekledikten sonra hemen çıkartıyorsanız ve başka elemanı eklemediyseniz o zaman yeniden front ve rear'ın eksibere dönmesini sağlıyorsunuz.
+
+604
+01:57:37,239 --> 01:57:53,060
+Modüler aritmetiği kullanma sebebimiz de front ve rear en sona geldiklerinde tekrar başa dönebilmeleri için bu modülasyon aritmetiğinden faydalanmak için kullandığımız matematiksel yapı.
+
+605
+01:57:53,719 --> 01:57:55,359
+Buraya kadar sorusu olan var mıdır?
+
+606
+01:58:02,676 --> 01:58:18,035
+Peki, o zaman devam edelim. Gelelim stack ile queue'yu şöyle bir genel karşılaştırmaya. Çalışma prensipleri açısından stack, last in, first out, queue, first in, first out mantığını kullanır.
+
+607
+01:58:18,035 --> 01:58:39,495
+Structure olarak bir stack yapısına eleman ekleme ve silme işlemi tek bir noktadan gerçekleşirken kuyruk tarafında bir taraftan elemanı eklersiniz diğer taraftan elemanı silip alırsınız.
+
+608
+01:58:39,495 --> 01:58:46,196
+İki farklı noktadan bu işin gerçekleştiğini siteye göre farklılık gösterdiğini söyleyebiliriz.
+
+609
+01:58:46,196 --> 01:58:52,295
+Stack için tek bir pointer, kuyruk için iki pointer'dan faydalanırsınız.
+
+610
+01:58:53,396 --> 01:59:00,335
+Bir tarafta push ve pop operasyonları vardır, diğer taraftaki operasyonların ismi ekleme ve silmenin nQ ve dQ'dur.
+
+611
+01:59:00,335 --> 01:59:07,955
+Stain herhangi bir farklı bir varyasyonu yoktur.
+
+612
+01:59:09,055 --> 01:59:17,336
+Ama queue tarafına, kuyruk tarafına baktığınızda normal queue'dan farklı olarak circular queue, priority queue, double ended queue gibi
+
+613
+01:59:17,336 --> 01:59:25,436
+varyantlarını günümüzde çok sık kullandığımız bir aslında veri yapısından bahsediyoruz.
+
+614
+01:59:25,435 --> 01:59:29,435
+Q o anlamda siteye göre daha çeşitlilik arz eder.
+
+615
+01:59:31,035 --> 01:59:43,435
+Siz de fark edeceksiniz, stack'te çok daha rahat yaptığımız işleri kuyruk tarafında biraz daha dikkatli ve özenli yapmazsak problemlerin oluşabileceğini,
+
+616
+01:59:43,435 --> 01:59:58,135
+özellikle iki tane pointer'ın birbirlerine göre konumlarının ne kadar kritik olduğunu ve belli ekstra kontrollere ihtiyaç duyulduğunu bugünkü yapıları tartışırken yine gözlemlemiş olduk.
+
+617
+01:59:58,875 --> 02:00:04,295
+Kuyruk bu anlamda biraz daha kompleks bir yapıya sahip olduğunu söyleyebiliriz.
+
+618
+02:00:04,955 --> 02:00:07,775
+Yine stack ve queue özelinde sorusu olan var mıdır?
+
+619
+02:00:15,731 --> 02:00:21,132
+Peki. Burada da bir soru yok. O zaman devam edelim.
+
+620
+02:00:23,651 --> 02:00:27,671
+Şimdi şöyle bir şey yapalım. Örnek olsun.
+
+621
+02:00:30,671 --> 02:00:35,351
+Stack and queue questions diyelim.
+
+622
+02:00:45,876 --> 02:00:48,235
+İki stack kullanarak
+
+623
+02:00:48,235 --> 02:00:51,435
+bir
+
+624
+02:00:51,435 --> 02:00:53,235
+queue
+
+625
+02:00:53,235 --> 02:00:58,836
+implemente etmeniz sizden istenseydi.
+
+626
+02:01:04,148 --> 02:01:19,148
+bir soru varmış. Ona bakalım. Arka planında dizi kullanılması durumunda aslında rastgele erişim de söz konusu. Bunu neden tanımlamıyoruz? Necat sorunu anlayamadım.
+
+627
+02:01:24,627 --> 02:01:26,507
+Ortabın biraz sesi de hocam.
+
+628
+02:01:27,127 --> 02:01:27,608
+Önemli değil.
+
+629
+02:01:29,287 --> 02:01:34,487
+Aslında dizi olduğu zaman bir stack pointer ile stack'e aslında istediğimiz yerine erişebiliriz.
+
+630
+02:01:34,647 --> 02:01:37,907
+Dizi olması durumunda veya kuyrukta da yine pointer ile...
+
+631
+02:01:37,907 --> 02:01:39,987
+Onu netleştireyim.
+
+632
+02:01:40,588 --> 02:01:47,107
+Stack ve Q dizi kullandığımız için sanki istediğimiz yerine erişebiliriz gibi gösterse de
+
+633
+02:01:47,107 --> 02:01:49,587
+kağıt üstündeki implementasyon.
+
+634
+02:01:50,147 --> 02:01:54,048
+Sadece pop ve push yapabildiğiniz için, size tanımlı olan bu fonksiyonlar olduğu için
+
+635
+02:01:54,048 --> 02:01:59,367
+o dizinin herhangi bir gözüne başka bir fonksiyonla erişme şansınız yok.
+
+636
+02:02:01,168 --> 02:02:02,808
+Ya şöyle düşünelim.
+
+637
+02:02:02,947 --> 02:02:05,547
+En basit mesela işlemcilerde de stake var.
+
+638
+02:02:05,947 --> 02:02:08,367
+Ve bir bellek alanı üzerinde.
+
+639
+02:02:08,927 --> 02:02:10,947
+Ve stake pointerıyla aslında bakarsanız
+
+640
+02:02:10,947 --> 02:02:13,468
+stake pointerını değiştirerek
+
+641
+02:02:13,468 --> 02:02:15,727
+siteğin istediğimiz bölgesine de erişebiliyoruz.
+
+642
+02:02:15,727 --> 02:02:16,287
+Tabii.
+
+643
+02:02:18,087 --> 02:02:20,007
+Artı bir bölgesine de erişebiliyoruz.
+
+644
+02:02:20,067 --> 02:02:20,287
+Doğru.
+
+645
+02:02:20,287 --> 02:02:23,348
+istediğimiz değeri de set edebiliyoruz
+
+646
+02:02:23,348 --> 02:02:25,668
+stake point'a ve oraya erişebiliyoruz.
+
+647
+02:02:25,727 --> 02:02:28,008
+Daha sonra tekrar eski haline getirebiliyoruz.
+
+648
+02:02:28,488 --> 02:02:29,507
+Şimdi orası
+
+649
+02:02:29,507 --> 02:02:31,827
+birazcık tartışmalı
+
+650
+02:02:31,827 --> 02:02:32,848
+bir ifade. Şu yüzden
+
+651
+02:02:32,848 --> 02:02:35,547
+bizim normalde bize verilen
+
+652
+02:02:35,547 --> 02:02:37,087
+stake implementasyonunda
+
+653
+02:02:37,087 --> 02:02:39,327
+kurallar dahilinde sadece
+
+654
+02:02:39,327 --> 02:02:41,668
+pop ve push işlemi yapabildiğimiz için
+
+655
+02:02:41,668 --> 02:02:43,087
+stake'in en üstüne,
+
+656
+02:02:43,267 --> 02:02:45,627
+huyrukta da en başına ve en sonuna
+
+657
+02:02:45,627 --> 02:02:47,447
+erişebilme yani pointer'lar
+
+658
+02:02:47,447 --> 02:02:48,907
+bazında erişebilme hakkımız var.
+
+659
+02:02:49,327 --> 02:02:53,488
+Özel bir kez de bu tanımlandıysa tabii ki olabilir ama normalde böyle bir şey söz konusu değil.
+
+660
+02:02:57,716 --> 02:03:01,595
+Özetle bize sorulan sorularda aslında bu erişimizin olmayacağını düşüneceğiz.
+
+661
+02:03:01,595 --> 02:03:25,075
+Evet, evet, tabii, tabii. Yani o zaman zaten siteyi istediğimiz yerine erişebildiğimizi varsayarsak, stack veri yapısından bahsetmemize gerek kalmaz. O zaman aynı mantığı dizide uygularız. Sadece o diziye özel stack gibi davranan fonksiyonlar yazabiliriz. Bu yapılabilir. Bu olmaz diye bir şey yok.
+
+662
+02:03:25,075 --> 02:03:30,675
+ama stackten bahsediyorsak bir random access zaten dezavantajlarını da söyledik mümkün değil.
+
+663
+02:03:34,163 --> 02:03:51,963
+O zaman sırayı da bozma ihtimalimiz olur. Mesela kuyruk için de aynı şey geçerli. Aradan birine. O yüzden priority queue dediğimiz zaman mesela öncelikli bir eleman geldiğinde queue'nun yeniden dizayn edilmesi, gelen elemanın en tepeye yerleştirilmesi için ayrı fonksiyonlar tanımlıyoruz.
+
+664
+02:03:51,963 --> 02:04:03,103
+Keep structure da bunun için var. Aynen cevap şudur. Siz sadece bu fonksiyonları, metotları kullanarak kuyruk ve yığında işlem yapabiliyor olacaksınız.
+
+665
+02:04:08,724 --> 02:04:09,863
+[öğrenci]?
+
+666
+02:04:12,383 --> 02:04:26,904
+Arkadaşın sorusuna cevap olarak şey yapıyorum da, abstrak veri yapısı olduğu için orada nasıl kullanılacağı, hangi metotların yapılacağı, orada belirtildiği için abstrak veri yapısına uygun olarak implement etmenler kullanılmıyor.
+
+667
+02:04:26,904 --> 02:04:39,424
+Doğru zaten o yüzden hani kısıtları olan bir yapı ama normalde zaten o berleğin o bölgesine adresle ulaşmak istediğimizde herhangi bir kısıt yok teknik olarak.
+
+668
+02:04:44,916 --> 02:05:04,936
+Evet, o zaman devam edelim. Soru şu olacak. İki stack kullanarak bir queue implementi etmeniz istenseydi nasıl bir yaklaşım uygulardınız? İki stack'iniz var. Evet, Raif.
+
+669
+02:05:04,936 --> 02:05:32,695
+Hocam soldaki siteye A diyelim sağdakine B diyelim yeni bir eleman geldiğinde her zaman A'ya puş ederiz bizden bir eleman istendiğinde bütün A'daki elemanları sırasıyla B'ye atıp son elemanı çıkartırız yani isteyen metoda ya da sonuca döneriz
+
+670
+02:05:32,695 --> 02:05:38,475
+Sonra hepsini tekrar A'ya aynı sırayla geri alırız. Yeni eleman geldikçe içine ekleriz.
+
+671
+02:05:39,135 --> 02:05:42,655
+Teşekkür ederim. Gayet hızlı ve güzel bir özet oldu.
+
+672
+02:05:45,655 --> 02:05:49,835
+Şimdi birlikte de konuşalım arkadaşınızın anlattığını.
+
+673
+02:05:49,835 --> 02:05:56,555
+Şimdi Q'nun belirli fonksiyonları var demiştik. Bunlardan bir tanesi ve en temel olduğunu NQ.
+
+674
+02:05:57,655 --> 02:05:59,615
+Diğeri de DQ'ydü.
+
+675
+02:05:59,615 --> 02:06:04,055
+iki tane stack tanımladık.
+
+676
+02:06:06,755 --> 02:06:18,975
+nQ işlemi geldiğinde aslında teknik olarak push işlemi yapacağız ve push A diyelim A stay'ine elemanları basıyor olacağız.
+
+677
+02:06:19,615 --> 02:06:22,755
+Burada herhangi bir sorun yok. 5 geldi, 6 geldi, 7 geldi.
+
+678
+02:06:22,755 --> 02:06:36,455
+DQ geldiğinde bu sefer tabii elimizdeki sıradaki çıkartacağımız eleman aslında ilk koyduğumuz eleman olduğu için en alttaki elemana erişmemiz gerekiyor.
+
+679
+02:06:36,455 --> 02:06:41,575
+En alttaki elemana erişebilmek için en son elemana kadar pop A diyeceğiz.
+
+680
+02:06:43,276 --> 02:06:47,435
+O sırada pop A dedikten sonra push B diyeceğiz.
+
+681
+02:06:49,035 --> 02:06:50,455
+Bu şekilde devam ediyor olacak.
+
+682
+02:06:50,456 --> 02:06:59,856
+En son noktada pop A dediğimiz buradaki 5 elemanı kuyruktan çıkan eleman olacak.
+
+683
+02:07:04,307 --> 02:07:20,648
+Sonra tekrar yapmamız gereken şey, tabi burada farklı bir yaklaşım da benimsenebilir. İki siteyi dengeli kullanmak şeklinde de burada bir çözüm de üretilebilir.
+
+684
+02:07:20,648 --> 02:07:27,827
+Ama ben çok böyle brute force yani doğrudan ilk akla gelebilecek çözümü söylüyorum.
+
+685
+02:07:27,827 --> 02:07:43,767
+Tekrar pop B uç A denilerek geriye kalan elemanlar buraya konduktan sonra tekrar işte 6 bu tarafa gelecek, 7 buraya gelecek şekilde konumlandırırlar.
+
+686
+02:07:43,767 --> 02:07:51,607
+NQ olarak bir eleman yeni bir eleman geldiğinde tekrar buraya eklenerek oluşur.
+
+687
+02:07:51,607 --> 02:07:55,607
+yeni bir deque geldiğinde bütün elemanlar bu tarafa alınır.
+
+688
+02:07:56,467 --> 02:07:59,807
+En son eleman pop edildikten sonra ekrana yazdırılır.
+
+689
+02:08:00,528 --> 02:08:10,488
+Sonra bu taraftaki tüm elemanlar tekrar pop push mantığıyla bu siteye eklenerek işlem tamamlanır.
+
+690
+02:08:11,627 --> 02:08:16,187
+Aynısını queue'yu yani şöyle diyelim.
+
+691
+02:08:18,267 --> 02:08:19,967
+Bir sayfa daha açalım.
+
+692
+02:08:21,607 --> 02:08:24,107
+bir queue'nuz olsun.
+
+693
+02:08:31,764 --> 02:08:35,264
+stack implemente etmek istiyorsunuz queue'yu kullanarak.
+
+694
+02:08:36,603 --> 02:08:41,644
+Tek bir queue ile yapabilir misiniz? Birden fazla queue'ya ihtiyacınız olur mu? Nasıl ilerlersiniz?
+
+695
+02:08:51,988 --> 02:08:55,887
+Bakalım. Emir [öğrenci] sana söz vereyim.
+
+696
+02:08:57,567 --> 02:09:01,607
+Hocam benim fikrim şey, rear tutuyoruz ya.
+
+697
+02:09:02,667 --> 02:09:03,267
+Neyi tutuyoruz?
+
+698
+02:09:03,507 --> 02:09:03,948
+Rear.
+
+699
+02:09:04,328 --> 02:09:04,667
+Evet.
+
+700
+02:09:05,267 --> 02:09:13,287
+Rear'dan hem içeri atma hem de çıkarma işlemi yaparsak stack oluyor sanırım yani benim aklımda öyle bir şey var.
+
+701
+02:09:13,287 --> 02:09:16,887
+Ama rear'ın sayısıyla biraz ilgilenmemiz lazım galiba.
+
+702
+02:09:16,887 --> 02:09:36,867
+Şimdi şöyle diyelim mesela bir push geldi. Stack tarafında push'u implemente etmek istiyoruz değil mi? Evet. Push A diyelim. A geldiğinde ben buraya A'yı ne ile koymuş olacağım? NQ ile koymuş olacağım.
+
+703
+02:09:36,867 --> 02:10:01,527
+Peki sonra push B geldi. Push B'yi de koydum. Yine enq. B geldi. Evet şimdi böyle C'yi koydum. C'yi, D'yi koydum. Ve rear artık D'yi gösteriyor. Front'um da A'yı gösteriyor. Bir pop gelse.
+
+704
+02:10:01,528 --> 02:10:05,788
+hop işte şöyle diyelim.
+
+705
+02:10:07,248 --> 02:10:08,708
+Nasıl ilerlemem gerekir?
+
+706
+02:10:13,716 --> 02:10:18,755
+Ya şimdi bir de az önce arkadaşım belirttiği şey var ya abstract, binary yapısı bize verilen şey var.
+
+707
+02:10:19,455 --> 02:10:21,415
+Hani o yüzden rear'dan çıkarayım diyemiyorum çok.
+
+708
+02:10:21,575 --> 02:10:22,976
+Hani çünkü queue yapısı belli.
+
+709
+02:10:23,096 --> 02:10:24,636
+Hani frontdan çıkarma ayarlığı olabilir.
+
+710
+02:10:26,435 --> 02:10:29,755
+Ya front to rear'e eşit deyip belki bir şey yapabiliriz.
+
+711
+02:10:29,976 --> 02:10:31,816
+Hani öyle bir şey olabilir ama.
+
+712
+02:10:32,435 --> 02:10:33,335
+Yok, öyle de olmuyor.
+
+713
+02:10:34,415 --> 02:10:34,695
+Tamam.
+
+714
+02:10:35,136 --> 02:10:36,335
+Bir fikir alalım.
+
+715
+02:10:36,575 --> 02:10:37,675
+Raif et kaldırdı.
+
+716
+02:10:37,675 --> 02:10:37,755
+Tamam.
+
+717
+02:10:46,547 --> 02:11:00,647
+Aif sesim geliyor mu? Pardon hocam, mikrofonu açmadan konuşmuşum. Yeni eleman geldiğinde queue'ya normal atarız. Bizden eleman istendiğinde en baştaki elemanları en sona göndeririz.
+
+718
+02:11:00,647 --> 02:11:14,047
+Ta ki bir eleman kalana kadar. Onu istenen noktaya göndeririz. Yeni eleman geldikçe, istendikçe bütün elemanları en sona atarak baştaki tek elemanı gönderebiliriz.
+
+719
+02:11:14,047 --> 02:11:18,588
+Şimdi tam anlayamadım bir orayı hızlıca geçmeyelim adımını gidelim.
+
+720
+02:11:18,608 --> 02:11:24,428
+Örnekle anlatayım isterseniz şu ABCD'yi push olarak Q'ya koyduk.
+
+721
+02:11:24,428 --> 02:11:31,047
+Yani yaparken de nQ ABCD komutlarından faydalandık push dendiği zaman onu çağırdık.
+
+722
+02:11:31,228 --> 02:11:31,388
+Evet.
+
+723
+02:11:31,988 --> 02:11:34,888
+Şimdi pop edilmek istendiği bir şey.
+
+724
+02:11:35,427 --> 02:11:40,467
+Pop edilmek istendiği zaman da bizim dışarı çıkarmamız gereken şey aslında nedir?
+
+725
+02:11:40,847 --> 02:11:41,448
+D'dir değil mi?
+
+726
+02:11:41,967 --> 02:11:42,287
+Evet.
+
+727
+02:11:42,967 --> 02:11:43,187
+Tamam.
+
+728
+02:11:43,187 --> 02:11:45,068
+Son gelen elemanı çıkartacağız.
+
+729
+02:11:45,287 --> 02:11:45,507
+Evet.
+
+730
+02:11:46,228 --> 02:11:47,228
+Ben de şöyle diyorum.
+
+731
+02:11:47,388 --> 02:11:48,427
+A'yı en sona atarız.
+
+732
+02:11:48,507 --> 02:11:49,367
+B, C, D, A.
+
+733
+02:11:49,927 --> 02:11:51,247
+Sonra B'yi sona atarız.
+
+734
+02:11:51,367 --> 02:11:52,988
+C, D, A, B şeklinde.
+
+735
+02:11:53,527 --> 02:11:55,588
+Yani Q'yu ters çeviririz.
+
+736
+02:11:55,667 --> 02:11:57,467
+Sadece bir elemanı hariç.
+
+737
+02:11:58,747 --> 02:12:01,128
+D'yi pop ederiz.
+
+738
+02:12:01,728 --> 02:12:05,167
+Sonra yeni eleman geldiğinde aynı şekilde ekleyebilir oluruz.
+
+739
+02:12:05,167 --> 02:12:08,967
+Zaten sıralama D, A, B, C şekline dönüşmüş olacak.
+
+740
+02:12:09,507 --> 02:12:13,128
+Peki bu noktada bizim ekstra bir Q kullanmamız gerekir mi?
+
+741
+02:12:13,187 --> 02:12:19,187
+Belki temp variable yeterli olabilir bilmiyorum. Orada emin değilim.
+
+742
+02:12:19,327 --> 02:12:21,547
+Baca problem şey olmaz mı burada?
+
+743
+02:12:21,547 --> 02:12:36,567
+Bir saniye çok özür dilerim Emircan. Şimdi şöyle arkadaşınızın söylediği mantığı ele alacak olursak ben Q'dan hop geldiğinde ne diyelim burada?
+
+744
+02:12:36,567 --> 02:12:39,927
+şöyle diyelim.
+
+745
+02:12:42,807 --> 02:12:44,727
+Yanlış olmasın.
+
+746
+02:12:46,107 --> 02:12:49,007
+Rear'ı en sonunda tutuyoruz.
+
+747
+02:12:52,467 --> 02:12:53,187
+Deku.
+
+748
+02:12:55,188 --> 02:12:59,227
+Deku dediğimizde
+
+749
+02:13:00,372 --> 02:13:01,091
+ve
+
+750
+02:13:42,771 --> 02:13:48,971
+Burada bir tam kafamda oturtamadığım bir durum oldu. Niye bu şekilde yapamıyoruz?
+
+751
+02:13:49,051 --> 02:13:57,291
+Raif, ben senin söylediğini terse çeviririz, yaparız diye düşündüm ama ben bir şey atlıyorum sanırım gözümden kaçırıyorum.
+
+752
+02:13:57,631 --> 02:13:58,911
+Söylediğini tekrar edebilir misin?
+
+753
+02:13:59,532 --> 02:14:06,831
+Şöyle düşündüm hocam. A'yı en sona atıyoruz, B'yi onun sonuna, C'yi onun sonuna atıyoruz, D'ye en başa geldiğinde,
+
+754
+02:14:06,831 --> 02:14:28,352
+length'in bir eksiği kadar daha. Şöyle mi yapıyoruz? D'yi atmayacağız. Peki. Bir tane yani eleman sayısından bir eksiğine kadar bu işlemi gerçekleştireceğiz. Şimdi D'yi çıkartacağız. Zaten liste ABC oldu. Yani son gelen eleman başa geçmiş oldu. Pardon. Ters mi söyledim?
+
+755
+02:14:28,351 --> 02:14:41,691
+Sanki senin söylediğin gibi yani A'yı en sona koymak gerekiyor. D'nin bir öncesindeki elemanı D, C, B, A şeklinde yapmak gerekiyor. Yanılıyor muyum? Şöyle demek istiyorsun herhalde.
+
+756
+02:14:44,791 --> 02:14:55,171
+Ben bir daha düzeltmek için tekrar rotate etmemesi için diyordum aslında. Böyle olunca çıktıktan sonra pop ettikten sonra bir daha tersine çevirmek gerekecek muhtemelen.
+
+757
+02:14:58,352 --> 02:15:03,432
+Buna bir bakmak istiyorum. Bundan emin olamadım.
+
+758
+02:15:07,923 --> 02:15:28,463
+Yani push yaptığımız işlemde nQ olarak buraya elemanları Q'ya yerleştirdikten sonra hop ederken normalde benim buradan A'yı değil, yok pardon A'yı ilk etapta alıyor olmam lazım değil mi?
+
+759
+02:15:29,463 --> 02:15:30,223
+B'yi değil miydi?
+
+760
+02:15:31,123 --> 02:15:37,823
+Hayır şimdi şöyle, A'yı Q'ya koydum, B'yi koydum, C'yi koydum, D'yi koydum.
+
+761
+02:15:37,923 --> 02:15:38,684
+D'yi alacağım.
+
+762
+02:15:38,684 --> 02:15:39,344
+Evet özür dilerim.
+
+763
+02:15:39,403 --> 02:15:40,464
+A'yı diyorum yalnız söyledim.
+
+764
+02:15:41,124 --> 02:15:41,683
+Şöyle yapayım.
+
+765
+02:15:43,063 --> 02:15:43,824
+D'yi alacağım.
+
+766
+02:15:45,203 --> 02:15:53,703
+D'yi alabilmem için benim D'yi ilk konuma konumlandırmam gerekiyor Q'da.
+
+767
+02:15:53,703 --> 02:15:58,104
+O yüzden de önce şunu yapmam gerekiyor.
+
+768
+02:15:58,223 --> 02:15:58,324
+Tamam.
+
+769
+02:15:59,023 --> 02:15:59,944
+Şöyle olacak.
+
+770
+02:16:01,883 --> 02:16:02,684
+DQ edeceğim.
+
+771
+02:16:04,324 --> 02:16:04,723
+Q'ya.
+
+772
+02:16:05,843 --> 02:16:06,303
+DQ.
+
+773
+02:16:06,303 --> 02:16:14,003
+a'yı buraya getirdim, b'yi buraya getirdim, c'yi buraya getirdim.
+
+774
+02:16:14,003 --> 02:16:27,263
+Ki bunları dq ederken aynı zamanda diğer tarafa dq a derken nq b tarafına koymam gerekiyor.
+
+775
+02:16:29,144 --> 02:16:31,743
+Şuna a diyelim, buna da b diyelim.
+
+776
+02:16:31,743 --> 02:16:41,923
+A'dan dequeue ettiklerimi B'ye enqueue ediyorum ve son elemanımı dequeue ettiğimde ekrana yazdırıyorum.
+
+777
+02:16:41,923 --> 02:16:49,563
+D çıkmış oluyor. Ondan sonra tekrar A, B, C'yi buraya konumlandırıyorum.
+
+778
+02:16:51,183 --> 02:16:58,504
+Yeni bir hop işlemi geldiğinde yine aynı şekilde A'yı buraya, B'yi buraya koyuyorum.
+
+779
+02:16:59,483 --> 02:17:01,504
+Sonra C'yi ekrana yazdırıyorum.
+
+780
+02:17:01,743 --> 02:17:27,864
+yapılması gereken şey bu. Yani sizin push işleminde doğrudan enqueue yapabiliyorsunuz. Pop işlemi yapacağınız zaman front pointer'ını kullandığınız için A'yı dequeue ediyorsunuz. Sonra buraya enqueue ediyorsunuz. B'yi dequeue ediyorsunuz. Sonra buraya enqueue ediyorsunuz.
+
+781
+02:17:27,864 --> 02:17:46,423
+C'yi deque ediyorsunuz. Buraya enque ediyorsunuz. D'yi alıyorsunuz. En son eleman olduğu için D'yi bastırıyorsunuz dışarı. Pop ettiğiniz eleman D oluyor. Mantık bu şekilde işliyor. Ama sanırım senin söylediğin böyle değildir Ayf.
+
+782
+02:17:46,423 --> 02:17:59,463
+Evet hocam benim söylediğim böyle değildi. Muhtemelen de çalışmayacak çünkü ben sonuna en queue ettiğimizde en sona gideceğini düşündüm ama en queue ettiğimizde hep en başa gelmiş olacak zaten.
+
+783
+02:17:59,463 --> 02:18:04,463
+Evet buradaki sıkıntı şundan kaynaklanıyor. Benim de ilk etapta oturtamama sebebim oydu.
+
+784
+02:18:04,463 --> 02:18:12,763
+Burada sadece nQ ve dQ kullanma zorunluluğumuz olduğu için push ve popları implemente ederken
+
+785
+02:18:12,763 --> 02:18:18,043
+o yüzden front ve rear ile ilgili ekstra bir şey yapamıyoruz.
+
+786
+02:18:18,923 --> 02:18:20,823
+Q'nun formunu bozamıyoruz.
+
+787
+02:18:20,823 --> 02:18:28,683
+O nedenle bir stack implementasyonu için iki tane Q, bir Q implementasyonu için iki tane stack kullanıyoruz ki
+
+788
+02:18:28,683 --> 02:18:41,263
+elimizdeki hazır nq'de queue ya da push pop metotlarını elemanları birinden diğerine transfer ederek implemente edelim.
+
+789
+02:18:41,907 --> 02:19:01,168
+Tek bir işlem için push yaparken nq'yu kullanabiliyoruz. O 1 time'da gerçekleşiyor. Ama pop yapmak istediğimiz zaman dq ve nq'ları yapmak zorunda kalıyoruz. Onun maliyeti bize o en karmaşıklığında oluyor ki aslında bunu yapmak normalde çok akıllıcı değil.
+
+790
+02:19:01,168 --> 02:19:04,288
+Fakat bunun çeşitli örnekleri var.
+
+791
+02:19:04,867 --> 02:19:16,647
+Bir stack implementasyonu için iki queue kullanılması, bir queue implementasyonu için iki stack kullanılması problemine sıklıkla literatürde karşılaşabilirsiniz.
+
+792
+02:19:16,907 --> 02:19:22,327
+O yüzden buna göz atarsanız bu iki tane örneğe çok faydalı olacaktır.
+
+793
+02:19:23,407 --> 02:19:25,948
+Yine de anlaşılmadıysa bu kısmı tekrar anlatabilirim.
+
+794
+02:19:25,948 --> 02:19:28,007
+Soru sormak isteyen varsa...
+
+795
+02:19:28,007 --> 02:19:29,147
+Ben bir şey eklemek istiyorum.
+
+796
+02:19:29,147 --> 02:19:40,647
+Size bilgisini tuttuğumuz durumda circular queue'de, size-1 kadar dqnq yaptığımızda tek bir queue'de halledebiliyoruz.
+
+797
+02:19:42,227 --> 02:19:46,527
+Bakalım. Belki benim dikkatimden kaçmıştır.
+
+798
+02:19:56,819 --> 02:20:04,539
+Şimdi bu AQ'su, bu da BQ'su. Biz burada yapmak istediğimiz şey şudur.
+
+799
+02:20:06,179 --> 02:20:08,660
+İkinci bir queue kullanmadan onu söylüyorum.
+
+800
+02:20:08,959 --> 02:20:14,539
+Evet evet, onu şimdi birlikte yapacağız. Aslında normalde tek queue'da bir stay implemente etmek istiyoruz.
+
+801
+02:20:14,779 --> 02:20:24,539
+Push A dediğimizde, stack yapısında bize bir A elemanı geliyor ve bunu nQ A diyerek bu Q'ya ekliyoruz.
+
+802
+02:20:24,539 --> 02:20:34,599
+sonra B geldi, sonra C geldi, sonra D geldi, buraya kadar sorun yok. Pop geldiğinde şu anda Octay'dı değil mi? Evet.
+
+803
+02:20:35,399 --> 02:20:46,000
+Octay arkadaşımızın bir fikri var diyor ki ikinci bir queue'ya gerek yok, tek bir queue'da aslında yapabiliriz. Şu anda front burayı gösteriyor, rear'da burayı gösteriyor, yazalım. Evet dinliyorum Octay.
+
+804
+02:20:46,000 --> 02:21:05,019
+size bilgisi varsa circular queue'da size eksi bir kadar döngü yapacağız her bir seferinde. DQ ve nQ yapacak. A'yı DQ yapacak. nQ yapacağız. D'nin arkasına geçmiş olacak. Daha sonra Q'ya DQ dediğimizde B'yi verecek. nQ diyeceğiz.
+
+805
+02:21:05,019 --> 02:21:06,279
+Tamam sanırım şöyle.
+
+806
+02:21:06,279 --> 02:21:07,739
+Tekrar belinin arkasına geçeceğiz.
+
+807
+02:21:08,260 --> 02:21:12,779
+Şimdi pop geldi. Pop geldiği zaman aslında bizim D'yi çıkartmamız gerekiyor.
+
+808
+02:21:12,779 --> 02:21:17,099
+Ama orada arkadaşınız diyor ki A'yı önce deque eder.
+
+809
+02:21:18,220 --> 02:21:21,279
+Sonra A'yı enque ederim tekrar.
+
+810
+02:21:21,400 --> 02:21:22,459
+Buraya enque ederim diyor.
+
+811
+02:21:23,279 --> 02:21:24,360
+Sonra B'yi alırım.
+
+812
+02:21:26,239 --> 02:21:28,139
+Deque edip enque ederim.
+
+813
+02:21:28,760 --> 02:21:29,419
+C'yi alırım.
+
+814
+02:21:30,360 --> 02:21:33,419
+Deque edip enque ederim.
+
+815
+02:21:34,139 --> 02:21:34,939
+Şunları da silelim.
+
+816
+02:21:36,279 --> 02:21:53,220
+ikinci bir queue kullanmam. En son size-1, size-1x'ini kullanarak D'ye geldiğimi anlarım. Bunu dışarı dequeue ettiğimde pop işi biter. Değil mi? Evet.
+
+817
+02:21:56,219 --> 02:22:05,359
+Ve gene bir sonraki popta da aynı işlem yapacağım için A'yı geri atar, B'yi çıkartmayacak. Bu sefer C'yi stack üstünden vermiş gibi işlem yapmış olacak.
+
+818
+02:22:05,359 --> 02:22:15,459
+Rear buraya geldi. Şimdi yeni Rear. Frontta en son yapılan hamledan sonra şuraya geldi değil mi? Evet.
+
+819
+02:22:16,459 --> 02:22:27,679
+Bu mantıklı gözüküyor. [öğrenci] buna bir bakmak istiyorum. Yani bir atladığımız bir şey var mı ama şu an için sanki yapılabilir gözüküyor.
+
+820
+02:22:29,199 --> 02:22:34,739
+Buna bir bakayım bir sonraki derste hani bunun adını koyalım olabilir mi olamaz mı diyeyim.
+
+821
+02:22:35,359 --> 02:22:38,159
+Teşekkür ediyorum bu bakış açısında paylaştığım için.
+
+822
+02:22:40,959 --> 02:22:42,479
+Başka sorusu olan var mı?
+
+823
+02:22:45,747 --> 02:22:46,747
+Emircan?
+
+824
+02:22:46,747 --> 02:22:55,247
+Hocam şey, [öğrenci] arkadaşın söylediği galiba buna benziyordu. Hani sormuştunuz ya mantıklı değil.
+
+825
+02:22:55,247 --> 02:22:56,247
+Evet buna benziyordu, doğru.
+
+826
+02:22:56,247 --> 02:23:15,747
+Front D'ye geliyor sanırım nQ ediyor. Sonra tekrar A'ya geliyor. Böyleydi. Ben orada şeyi soracaktım sadece. Q'nun tam size belli değil ya şu an. Acaba yeteri kadar size olur mu sürekli nQ, dQ? Gerçi aynı şey olmuyor. Ama ilk dQ ederken eleman şeyi olmayabilir.
+
+827
+02:23:15,747 --> 02:23:18,527
+Yani 4 elemanlı bir ereği düşünün.
+
+828
+02:23:19,527 --> 02:23:20,687
+A, B, C, D dolu.
+
+829
+02:23:21,207 --> 02:23:22,487
+Tekrar enkişe edelim dediniz ya.
+
+830
+02:23:23,567 --> 02:23:26,527
+4 elemanlı ereği ise bu sefer yerim olmamış olacak mantıken.
+
+831
+02:23:26,527 --> 02:23:31,428
+Evet şimdi istisnai durumlardan biri bu doğru haklı bir söylem.
+
+832
+02:23:31,507 --> 02:23:32,367
+Yani şunu söylüyorsun.
+
+833
+02:23:33,008 --> 02:23:33,928
+Hatta şöyle yapalım.
+
+834
+02:23:35,947 --> 02:23:37,328
+Şurayı sileyim.
+
+835
+02:23:43,956 --> 02:24:08,716
+A, B, C olsun. Burası da boş olsun. Ben bunu şu anda push ederek bunları koydum. Frontum. Burayı göstereyim.
+
+836
+02:24:08,716 --> 02:24:10,435
+D'de olsa daha iyi olur hocam.
+
+837
+02:24:10,876 --> 02:24:12,695
+Rear da burayı gösteriyor. Tamam D'de olsun.
+
+838
+02:24:14,535 --> 02:24:18,435
+C'de çünkü circular link liste belki çözülebilir de bir kere boş olduğu zaman.
+
+839
+02:24:18,516 --> 02:24:20,336
+D olduğu zaman çözülemiyor sanki.
+
+840
+02:24:22,755 --> 02:24:24,115
+Circular link list diyorum yine pardon.
+
+841
+02:24:27,775 --> 02:24:29,176
+Şurayı da rear yapalım.
+
+842
+02:24:32,115 --> 02:24:35,555
+Bunu normal bir Q olarak mı düşündün Emircan?
+
+843
+02:24:35,555 --> 02:24:47,275
+Ama aynen bir dakika bu sefer dolu olsa evet olmayabilir mantıksız olabilir C'den olsa belki circular queue'den çözebilirdik onu evet düşünsem daha iyi birazdan
+
+844
+02:24:47,275 --> 02:24:50,155
+Bu case'de circular queue olduğunu varsayalım
+
+845
+02:24:50,155 --> 02:24:51,036
+Tamam
+
+846
+02:24:51,036 --> 02:24:55,355
+Arkadaşının söylediği gibi A'yı dequeue ettiğim zaman
+
+847
+02:24:55,355 --> 02:25:02,355
+A'yı dequeue ettiğimde onu tekrar D'nin sonrasını enqueue etme şansım var doğru mu?
+
+848
+02:25:02,835 --> 02:25:03,375
+Doğru
+
+849
+02:25:03,375 --> 02:25:05,536
+Aynı şeyi B için de yapabilirim
+
+850
+02:25:05,536 --> 02:25:08,275
+hatta buradaki D'yi kaldırdığımda
+
+851
+02:25:12,819 --> 02:25:35,619
+Burası front, burası da rear olduğunu varsayarsak A'yı buraya koyabilirim. Sonra B'yi bunun üzerine yazabilirim. Bunu yapma şansım var. Evet, şimdi oturdu kafam. Evet, şimdi sanki yani senin kafandaki sorun da çözülmüş oluyor. Evet, evet. Tamam, peki. Başka sorusu olan var mı?
+
+852
+02:25:35,619 --> 02:25:48,680
+Yani burada tekrar ediyorum yapmaya çalıştığımız iki örnekte de birinde stackleri kullanarak queue implement etmeye çalıştık stack fonksiyonlarıyla.
+
+853
+02:25:48,680 --> 02:25:55,180
+Burada da queue fonksiyonlarını kullanarak stack implement etmeye çalışıyoruz.
+
+854
+02:25:56,639 --> 02:26:01,299
+O yüzden bu gerçekten beyin jimnastiği yapmak adına faydalı iki örnek.
+
+855
+02:26:01,299 --> 02:26:08,660
+Bunun üzerine sorunuz olursa ya da haftaya kadar bakıp ben şurayı anlamadım derseniz tekrar üzerinden geçebiliriz.
+
+856
+02:26:10,779 --> 02:26:15,959
+Genel olarak bugün anlattığımız kuyrukla ilgili herhangi bir sorusu olan var mı?
+
+857
+02:26:22,100 --> 02:26:51,199
+Peki, o zaman bu haftalık bu kadar. Queue'da da bir noktaya kadar geldik. Önümüzdeki hafta Queue'la ve stack'le ilgili birkaç tane daha örnek çözeceğiz. Her ikisini de kapatıp artık yavaş yavaş ağaçlara doğru geçiyor olacağız. Yarın bir ödev paylaşacağımızı tekrar hatırlatmış olayım. Ödevle ilgili detayları da online.yıldız.tr üzerinden takip edebilirsiniz. Derse katılımınız için, aynı zamanda katkılarınız için teşekkür ediyorum.
+
+858
+02:26:51,199 --> 02:26:53,799
+Umarım faydalı olmuştur.
+
+859
+02:26:54,139 --> 02:26:55,299
+Güzel bir hafta diliyorum hepinize.
+
+860
+02:26:55,379 --> 02:26:56,379
+Görüşmek üzere arkadaşlar.
+
+861
+02:26:56,499 --> 02:26:56,939
+Hoşçakalın.

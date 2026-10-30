@@ -1,0 +1,4231 @@
+1
+00:00:36,595 --> 00:00:48,635
+Evet, merhaba arkadaşlar. Derse hoş geldiniz. 14. hafta Veri Yapıları ve Algoritmalar'da son dersimizi, dönemin son dersini sizlerle gerçekleştireceğiz.
+
+2
+00:00:48,635 --> 00:01:03,755
+Evet, bugünkü konumuz sıralama algoritmaları. Ama sıralama algoritmalarını biraz daha farklı bir öküş açısıyla ele almak istiyorum.
+
+3
+00:01:03,755 --> 00:01:25,776
+farklı mantıklarla sıralama yapılabilir mi? Bunlarla alakalı birkaç algoritmadan bahsedeceğim sizlere. Daha sonra da sıralama algoritmaları nasıl karşılaştırılır? Hangi durumda neyi kullanacağımıza nasıl karar verebiliriz? Bunlarla ilgili birkaç sözler söyledikten sonra dersi tamamlayacağız.
+
+4
+00:01:25,776 --> 00:01:28,656
+dönemi de tamamlamış olacağız teorik açıdan.
+
+5
+00:01:29,695 --> 00:01:32,195
+Tabii ki öde ve finaller devam ediyor.
+
+6
+00:01:32,336 --> 00:01:34,015
+Proje henüz daha devam ediyor.
+
+7
+00:01:35,695 --> 00:01:38,116
+Ayrıca bir mazeres sınavında olacak.
+
+8
+00:01:38,656 --> 00:01:39,695
+Yarın saat dörtte.
+
+9
+00:01:41,896 --> 00:01:44,896
+Bunun da bilgisi zaten sadece tek bir öğrenci girecek.
+
+10
+00:01:45,116 --> 00:01:46,856
+Onu da kayıt altına almış olalım.
+
+11
+00:01:47,475 --> 00:01:48,515
+Şimdi problem şu.
+
+12
+00:01:48,655 --> 00:01:53,396
+Sıralamak istiyoruz ama hiçbir karşılaştırma yapmadan sıralamak istiyoruz.
+
+13
+00:01:53,396 --> 00:01:54,396
+Ne demek bu?
+
+14
+00:01:54,536 --> 00:01:55,676
+If kullanmayacağım.
+
+15
+00:01:55,776 --> 00:02:01,456
+Diyelim ki öyle bir mimaride çalışıyorum ki bu mimaride karşılaştırma yapmak çok maliyette.
+
+16
+00:02:02,295 --> 00:02:11,756
+Peki o zaman ben acaba herhangi bir şekilde bir acaba şundan büyük mü küçük mü gibi bir karşılaştırma yapmadan sıralama yapabilir miyim?
+
+17
+00:02:11,816 --> 00:02:16,816
+Verilen bir diziyi örneğin tam sayılardan oluşan bir diziyi sıralayabilir miyim sıralayamaz mıyım?
+
+18
+00:02:17,335 --> 00:02:18,256
+Çözümü var.
+
+19
+00:02:18,875 --> 00:02:21,475
+Tabii ki düşününce her şeye bir çözüm bulunuyor.
+
+20
+00:02:21,475 --> 00:02:33,435
+aslında saymayla sıralama ya da lineer sıralama, doğrusal sıralama, sayarak doğrusal sıralama gibi farklı farklı isimlerle bu çözümü görebilirsiniz.
+
+21
+00:02:33,435 --> 00:02:38,635
+Ama biz buna counting sort ya da sorting by counting adını veriyoruz.
+
+22
+00:02:39,575 --> 00:02:47,456
+Hemen şöyle çok basit de olsa tahtada olsa akış diagramlarıyla güzel güzel anlatırdım ama
+
+23
+00:02:47,456 --> 00:02:53,536
+bu şekilde uzaktan olunca sunum üzerinden Fisodokod'la anlatmak biraz daha rahat olabiliyor.
+
+24
+00:02:54,135 --> 00:03:10,375
+Şimdi gördüğünüz gibi bu kodda ya daha doğrusu Fisodokod'da toplamda 1, 2, 3 ve 4 tane for döngüsü görüyoruz.
+
+25
+00:03:10,375 --> 00:03:15,075
+Ama bu döngülerin hiçbirinin içinde herhangi bir şekilde bir karşılaştırma yapıldı.
+
+26
+00:03:15,075 --> 00:03:26,795
+İşte counting sort hiçbir karşılaştırma yapmadan sadece elemanları sayarak elemanların aslında anahtar değerlerini sayarak gerçekleştirdiğimiz bir sıralama işlemi.
+
+27
+00:03:26,875 --> 00:03:29,235
+Peki nasıl yapacağız? Hızlıca kodun üzerinden geçelim.
+
+28
+00:03:29,615 --> 00:03:33,456
+Şimdi diyelim ki elimde k farklı değer var.
+
+29
+00:03:36,036 --> 00:03:42,575
+Yani ta unique benzersiz elemandan oluşan bir dizi tanımına verilmiş durumda.
+
+30
+00:03:42,575 --> 00:03:46,795
+Ben ilk olarak bir count dizisi oluştururum.
+
+31
+00:03:46,875 --> 00:03:49,816
+Yani her birinden kaç tane olduğunu saymak için
+
+32
+00:03:49,816 --> 00:03:54,515
+Yani bu değerden kaç tane var diye saymak için bir count dizisi oluştururum.
+
+33
+00:03:54,515 --> 00:03:55,415
+C diyoruz buna.
+
+34
+00:03:55,816 --> 00:03:58,855
+Ve bunların hepsini ilk değer olarak doğal olarak sıfırladım.
+
+35
+00:03:59,635 --> 00:04:07,695
+Yani ilk for döngüsünde şöyle OK karmaşıklıkta bir sıfırlama işlemi gerçekleştirdim.
+
+36
+00:04:07,756 --> 00:04:10,135
+Ondan sonra teker teker sayarım.
+
+37
+00:04:10,756 --> 00:04:12,255
+Kaç tane elemanım var benim?
+
+38
+00:04:12,255 --> 00:04:13,255
+n tane elemanım var. Şöyle dizinin jinci elemanı özellikle n'leri j ile k'ları da i ile iteratör olacak şekilde ayırdım. Her bir dizinin ilgili indisini gözüne artık neresiyse orası bir arttırıyor. Yani mesela diyelim ki benim dizim bir
+
+39
+00:04:36,660 --> 00:05:06,219
+ya da karışık olsun şöyle 3, 5, 2, 2, 3, 1, 4 şeklinde falan verilmiş olsun. Şimdi ne yapacak? Git diyor, 3. gözü 1 arttır. 5. gözü 1 arttır. Burada altı göz gibi yapmışız. 2. gözü 1 arttır. 2. gözü 1 daha arttır. 3. gözü 1 daha arttır. 1. gözü 1 arttır. 4. gözü 1 arttır şeklinde.
+
+40
+00:05:06,660 --> 00:05:14,719
+Yani aslında ben birinci değerden bir tane var, ikinci değerden iki tane, üçüncü değerden iki tane, dördüncü değerden bir tane, beşinci değerden bir tane var şeklinde.
+
+41
+00:05:14,899 --> 00:05:19,759
+Bunların hepsini şurada o enlik bir döngü ile saymış olduk.
+
+42
+00:05:21,399 --> 00:05:34,459
+Peki. Şimdi ben her bir teki değerden kaçer tane olduğunu saydım ama acaba bunlar gerçekte bu dizide yani sıralanmış dizide nerede durması?
+
+43
+00:05:34,459 --> 00:05:36,259
+Bu da şu demek aslında
+
+44
+00:05:36,259 --> 00:05:39,059
+Benden küçük kaç tane değer var
+
+45
+00:05:39,059 --> 00:05:41,859
+Ya da ben kaç taneden daha büyüğüm
+
+46
+00:05:41,859 --> 00:05:43,359
+Şeklinde bunu okuyabilirsiniz
+
+47
+00:05:43,359 --> 00:05:45,899
+O zaman yine birden k'ya kadar
+
+48
+00:05:45,899 --> 00:05:47,420
+Yani tekil değer sayısı kadar
+
+49
+00:05:47,420 --> 00:05:48,899
+Fakat sıfırdan değil de birden
+
+50
+00:05:48,899 --> 00:05:50,179
+Bir sonrakinden başlıyorum
+
+51
+00:05:50,179 --> 00:05:53,479
+Her birini bir öncekiyle toplarım
+
+52
+00:05:53,479 --> 00:05:54,600
+Yani burası bir
+
+53
+00:05:54,600 --> 00:05:57,139
+Bir artı iki burası üç
+
+54
+00:05:57,139 --> 00:06:02,219
+Üç artı iki beş
+
+55
+00:06:02,219 --> 00:06:09,059
+5 artı 1 6, 6 artı 1 7 şekline getiririm buradaki diziyi.
+
+56
+00:06:09,919 --> 00:06:12,479
+Şimdi bu ne demek oluyor aslında? Şu demek oluyor.
+
+57
+00:06:13,059 --> 00:06:20,160
+Birinci benzersiz karakterim ya da sayım yani buradaki göze gelen birinci değer 1 mesela.
+
+58
+00:06:21,240 --> 00:06:23,859
+Aslında dizide birinci sırada olması lazım.
+
+59
+00:06:24,999 --> 00:06:30,660
+Ondan sonraki işte toplam kaç tane varsa 3'den başlayarak yerleşmesi lazım.
+
+60
+00:06:30,660 --> 00:06:38,240
+5'den 6'dan 7'den başlayacak yerleşmesi lazım şeklinde bunları gerçek pozisyonları olacak şekilde değiştiriyor.
+
+61
+00:06:40,160 --> 00:06:44,560
+Sonra her birini şurada niye 3 olduğunu anlayacaksınız.
+
+62
+00:06:44,740 --> 00:06:46,620
+Burada bir azaltarak devam edeceğiz.
+
+63
+00:06:47,199 --> 00:06:54,639
+Her birini bir azaltarak ekstra bir çıktı dizisine yerleştirmeye başlayalım.
+
+64
+00:06:54,639 --> 00:07:22,799
+ne yapıyor burada bakın a j'nin yine n-1'den 0'a kadar olacak şekilde tersten gidiyorum oradaki gözün bir azına buradaki girdedeki değeri yazıyorum yani ne yapmış oldum ben işte mesela 7'den başladım şurada tamam 7. 6. göze gittim 1 2 3 4 5 6
+
+65
+00:07:22,799 --> 00:07:43,480
+Buradaki değer ne? 4 değil mi? İşte bu ilgili göze 4 değerini git ilgili göze yaz şeklinde buradakini tamamlamış oluyor. Yani özetle burada bir tane 1 ondan sonra iki tane 2
+
+66
+00:07:43,479 --> 00:07:47,479
+aralardaki çizgileri çizeyelim.
+
+67
+00:07:47,479 --> 00:07:48,939
+2 tane 3
+
+68
+00:07:52,755 --> 00:08:20,135
+bir tane 4 bir tane de 5 olacak şekilde hani ben bir şuradan 0. indisten başlıyorum. Bu birinci ve ikinci indislerde yer alıyor. Bu işte üçüncü ve dördüncü indislerde yer alıyor. Bu beşinci indiste yer alıyor. Bu altıncı indiste yer alıyor şeklinde herkesin yerini aldığı daha doğrusu yerde durması gerektiğini artımlı olarak bir dizide tuttuğum bir yöntem.
+
+69
+00:08:20,135 --> 00:08:33,895
+Tabi burada şuraya da baktığımızda burada bir OK'lık döngü daha var ve sonucu oluşturmak için tersten n'den sıfıra doğru, n-1'den sıfıra doğru giden yine O n'lik bir döngü daha var.
+
+70
+00:08:33,895 --> 00:08:48,755
+Yani aslında ben burada n artı şu algoritmaya baktığımda K artı n artı K artı n gibi bir karmaşıklıkla baş başayım.
+
+71
+00:08:48,755 --> 00:09:03,876
+O 2n artı k. İki kat sayısını boş verdiğimde toplamda O n artı k'lık yani gördüğünüz gibi aslında lineer olacak şekilde bir karmaşıklar sahip bir sıralama yapabiliyorum.
+
+72
+00:09:03,876 --> 00:09:13,336
+A çok iyi o zaman ben her şeyi bununla sıralayayım. Niye enlogenlerle uğraşayım diyecek olabilirsiniz ama burada gördüğünüz gibi aslında çok fazla da yer kaybınız var.
+
+73
+00:09:13,336 --> 00:09:17,395
+bir kere k'lık bir count dizisine ihtiyaç duyuyorsunuz.
+
+74
+00:09:17,836 --> 00:09:22,476
+Yani tekil eleman sayısı kadar bir sayaç dizisine ihtiyaç duyuyorsunuz.
+
+75
+00:09:22,476 --> 00:09:26,736
+Artı burada diziyi üstünde oluşturamazsınız, ezemezsiniz.
+
+76
+00:09:27,276 --> 00:09:30,296
+Farklı bir yerde çıktığı oluşturmak zorundasınız.
+
+77
+00:09:30,876 --> 00:09:35,315
+Yani girdi kadar aynen boyutta bir çıktı alanına da ihtiyaç duyarsınız.
+
+78
+00:09:35,855 --> 00:09:39,336
+Lineer zamanda çalışıyorum ama çok fazla yer kaybediyorum.
+
+79
+00:09:39,755 --> 00:09:41,796
+Bu şekilde fakat ne kazandım?
+
+80
+00:09:41,955 --> 00:09:43,296
+Hiçbir if kullanmadım.
+
+81
+00:09:43,335 --> 00:09:47,855
+diyelim ki bu mimarda if kullanmak çok maliyetliydi.
+
+82
+00:09:48,235 --> 00:10:01,135
+Bir şekilde sadece dönerek ve sayarak ben hangi elemanın kaç tane olduğunu ve kaç tane indis yer kaplaması gerektiğini, kaçıncı indisden başlayarak kaç tane yer kaplaması gerektiğini daha tıkla takip edebiliyorum.
+
+83
+00:10:01,135 --> 00:10:03,135
+Yani özetle...
+
+84
+00:10:03,135 --> 00:10:07,455
+Dönü ifadenin kendisi bir kontrol değil mi hocam?
+
+85
+00:10:08,055 --> 00:10:10,615
+Orkun kendisi bir if ifade sonuçu içermiyor mu?
+
+86
+00:10:11,195 --> 00:10:12,375
+Bir saniye duyamıyorum.
+
+87
+00:10:13,336 --> 00:10:14,235
+Bir daha alabilir miyim?
+
+88
+00:10:14,776 --> 00:10:15,595
+Sesim geliyor mu hocam?
+
+89
+00:10:16,336 --> 00:10:16,716
+Evet.
+
+90
+00:10:17,755 --> 00:10:22,136
+Bord öngüsünü kendisi bir ifadesi içermiyor mu sonuç olarak?
+
+91
+00:10:23,955 --> 00:10:25,155
+Neyi içermiyor mu?
+
+92
+00:10:26,076 --> 00:10:28,216
+Şimdi en iyisi yazayım hocam.
+
+93
+00:10:29,595 --> 00:10:30,395
+Tamam bir yaz bakalım.
+
+94
+00:10:30,516 --> 00:10:31,856
+Çünkü ses çok kesik geliyor.
+
+95
+00:10:32,996 --> 00:10:34,416
+Dışarıdan da ezan sesi geliyor.
+
+96
+00:10:34,496 --> 00:10:35,276
+O yüzden duyamıyorum.
+
+97
+00:10:35,395 --> 00:10:35,836
+Kusura bakma.
+
+98
+00:10:35,895 --> 00:10:36,955
+O yüzden kulaklarım tıkalı.
+
+99
+00:10:37,796 --> 00:10:39,735
+Geçen haftadan anca bu kadar iyileştim.
+
+100
+00:10:39,735 --> 00:10:59,315
+ben fikri özetle burada hani size tekrar aktarayım. Sizin elinizde sıralanacak bir dizi var. Bu dizideki tüm elemanlar için aslında işlediğimiz o andaki elemanlar bord öngülür bir if ifadesi içeriyor. Nasıl yani? Ben yanlış mı görüyorum?
+
+101
+00:11:05,683 --> 00:11:07,683
+Nerede if var?
+
+102
+00:11:07,683 --> 00:11:20,683
+Burada atama yapıyor, porun içinde. Burada sayıyor. Burada toplamlı sayı döndürüyor. Ondan sonra burada da her bir indisi de olması gerektiği yeri çıktı dizisine yazdırıyor.
+
+103
+00:11:24,532 --> 00:11:26,532
+Döngüler bir kontrol üc.
+
+104
+00:11:30,035 --> 00:11:41,035
+Tamam canım, o kadarını artık onu bir döngü olarak sayıyoruz. Oradakini bir if olarak ayrı değerlendirmiyoruz.
+
+105
+00:11:41,035 --> 00:11:44,035
+Burada herhangi bir şekilde if kullanmadan yaptığından bahsettim ben.
+
+106
+00:11:44,035 --> 00:11:50,035
+Yoksa for döngüsünün bitiş koşulunu kontrolden bahsediyorsan şey olabilir.
+
+107
+00:11:50,035 --> 00:11:57,035
+Ama nihayetinde adım sayısı belli olduğu için belki de farklı şekillerde o mimari for döngüsünde kurguluyor olabilir.
+
+108
+00:11:57,035 --> 00:11:59,515
+Bu arada slide'ı da güzel bir şekilde çizdim.
+
+109
+00:11:59,995 --> 00:12:02,396
+Özetle yaptığımız şey şu dediğim gibi tekrar.
+
+110
+00:12:02,596 --> 00:12:08,175
+İşlediğimiz o anda çalıştığımız elemandan daha küçük kaç tane toplam eleman sayısı bunu buluyoruz.
+
+111
+00:12:08,556 --> 00:12:11,995
+Bunların hepsini bir count tablosuna bir diziye kaydediyoruz.
+
+112
+00:12:11,995 --> 00:12:22,716
+Ve buradaki sayılar aslında sıralamak istediğim yani çıktı dizisinde bu sayıların gerideki sayıların hangi konumlarda durması gerektiğini bize gösteriyor.
+
+113
+00:12:22,915 --> 00:12:26,555
+Örneğin bir elemandan küçük 10 tane eleman varsa bu ne demektir?
+
+114
+00:12:26,556 --> 00:12:30,995
+Aslında bu eleman 11. gözde durmalı demektir. Aslında tam olarak yaptığımız şey bu.
+
+115
+00:12:31,716 --> 00:12:35,375
+Ve işte dediğim gibi yeni bir diziye kopyalama ihtiyacımız var.
+
+116
+00:12:35,455 --> 00:12:36,635
+İndis adreslerine göre.
+
+117
+00:12:37,095 --> 00:12:42,556
+Bunu kopyalama işlemini gerçekleştirecek bir döngüyle, bir lineer döngüyle çıktığı oluşturabiliyoruz.
+
+118
+00:12:42,556 --> 00:12:51,375
+Yani O2n artı k şeklinde bir karmaşıklıkla sıralamayı yapabiliyoruz.
+
+119
+00:12:51,375 --> 00:13:02,615
+Şimdi bunu biraz daha basit hale getirmek için bir alternatif versiyonunu da söylemek istiyorum. Bu da comparison count. Ne oldu? If geri geldi.
+
+120
+00:13:03,235 --> 00:13:13,175
+Sebebi de şu. Biraz önce dedim ya hangi pozisyonunu buluyoruz? Aslında yaptığımız şey şu.
+
+121
+00:13:13,175 --> 00:13:29,175
+her bir buradaki mantıkta yaptığımız şey şu her bir iterasyonda acaba dizinin geri kalan kısmında ben kaç kişiden daha büyüğüm ve kaç kişi benden daha büyüğüm aslında bunları sayıyoruz.
+
+122
+00:13:29,175 --> 00:13:43,375
+bunu ikisinin aynı anda saydığımızda işaretlediğimizde sayaç dizisini tek bir karşılaştırmayla minimum karşılaştırma diyebileceğim tek bir karşılaştırma sayısı bir ip kullanarak burada gerçekleştirebiliriz.
+
+123
+00:13:43,375 --> 00:13:52,315
+Tabi burada sıfırdan n-2'ye kadar burada da i artı birden n-1'e kadar yani bir üçgen sarama söz konusu.
+
+124
+00:13:52,315 --> 00:13:59,735
+ne yapıyor bu? Yine buradaki comparison counting sort yani işin içine tekrardan karşılaştırmayı sokarsak nasıl yapıyor?
+
+125
+00:13:59,735 --> 00:14:08,935
+Yine bir count dizisini sıfırlıyoruz. Ondan sonra şurada gördüğünüz gibi her bir elemanı, şöyle diziyi çizelim.
+
+126
+00:14:11,455 --> 00:14:21,715
+Şöyle dizimiz olsun. Bunu alıyorum. Kalan elemanlarla karşılaştırıyorum. Kaç tanesinden daha büyüğüm, kaç tanesinden daha küçüğüm diye
+
+127
+00:14:21,715 --> 00:14:24,315
+aslında sayaçları güncelliyorum.
+
+128
+00:14:24,895 --> 00:14:33,695
+Eğer ben diğerlerinden daha küçüksem küçük olanın sayacını bir arttırıyorum.
+
+129
+00:14:33,695 --> 00:14:41,295
+Eğer ben daha büyüksem, şurada karşılaştırdığım eleman daha büyükse, beni kendi sayacımı bir arttırıyorum.
+
+130
+00:14:41,415 --> 00:14:45,775
+Yani neyi sayıyorum ben? Ben şu kadar kalandan daha büyüğüm.
+
+131
+00:14:46,535 --> 00:14:51,655
+Sonrasında bunu azaltarak gidiyorsunuz. Bu da benden sonrakilerden şu kadarından büyüğüm.
+
+132
+00:14:51,715 --> 00:14:53,115
+şu kadarından küçüğüm şeklinde.
+
+133
+00:14:53,535 --> 00:14:59,435
+F azaltı azaltı gittiğinizde en son n-2, bu da n-1, sıfırdan başladığı için dizi.
+
+134
+00:14:59,435 --> 00:15:08,835
+En son şu elemanla da son elemanı karşılaştırıp, buradaki iki elemanı karşılaştırıp, bundan büyük mü, küçük mü de saydırabilirsiniz.
+
+135
+00:15:08,995 --> 00:15:21,595
+Sonra yaptığımız şey tekrardan bir, işte burada S demişiz buna, çıktı dizisini oluşturmak ve çıktı dizisinin ilgili gözüne direkt olarak girdi'deki değeri atamak.
+
+136
+00:15:21,744 --> 00:15:26,104
+Örneği üzerinden göstereyim. Çok daha basit, çok daha anlaşılır olsun.
+
+137
+00:15:26,104 --> 00:15:28,463
+Dizimi şu şekilde verilmiş olsun.
+
+138
+00:15:28,463 --> 00:15:32,943
+62, 31, 84, 96, 19, 47.
+
+139
+00:15:32,943 --> 00:15:37,103
+İlk başta countlarımızı, gördüğünüz gibi sıfırladık.
+
+140
+00:15:37,103 --> 00:15:41,063
+Yani şu init dediğimiz alanda bütün countlar sıfır.
+
+141
+00:15:41,063 --> 00:15:45,303
+İlgili initleri olduğu için hepsini alt alta yazmaya gayret edelim.
+
+142
+00:15:45,303 --> 00:15:48,183
+Şimdi i eşittir 0.
+
+143
+00:15:48,183 --> 00:15:50,424
+0'dan n-2'ye kadar gidecekti.
+
+144
+00:15:50,424 --> 00:15:55,723
+Yani şuradan başlayıp şuraya kadar gidecek.
+
+145
+00:15:56,223 --> 00:15:57,284
+Burası en eksi bir ya.
+
+146
+00:15:57,883 --> 00:15:58,903
+Şimdi ne yapıyor?
+
+147
+00:15:59,523 --> 00:15:59,924
+Bakıyor.
+
+148
+00:16:00,264 --> 00:16:00,824
+62.
+
+149
+00:16:01,184 --> 00:16:02,764
+31 ile karşılaştırdı.
+
+150
+00:16:03,543 --> 00:16:04,124
+62.
+
+151
+00:16:04,523 --> 00:16:07,563
+31'den daha küçük mü?
+
+152
+00:16:08,843 --> 00:16:09,223
+Hayır.
+
+153
+00:16:09,623 --> 00:16:10,063
+Daha büyük.
+
+154
+00:16:10,203 --> 00:16:12,424
+O zaman kendi sayıcını bir arttırdı.
+
+155
+00:16:12,903 --> 00:16:15,424
+Yani 62 dedi ki 31'den büyüktür.
+
+156
+00:16:16,063 --> 00:16:17,043
+Şuraya bir yazdı.
+
+157
+00:16:17,824 --> 00:16:20,403
+62'yi 84 ile karşılaştırdı.
+
+158
+00:16:20,964 --> 00:16:22,104
+84 daha büyük.
+
+159
+00:16:22,264 --> 00:16:23,543
+O zaman buraya 1 yazdı.
+
+160
+00:16:24,764 --> 00:16:26,904
+62'yi 96 ile karşılaştırdı.
+
+161
+00:16:26,983 --> 00:16:28,063
+96 daha büyük.
+
+162
+00:16:28,404 --> 00:16:29,244
+Buraya 1 yazdı.
+
+163
+00:16:30,004 --> 00:16:32,123
+62'yi 19 ile karşılaştırdı.
+
+164
+00:16:32,703 --> 00:16:36,383
+19 daha küçük yani 62 büyük olduğu için bunu 2 yazdı.
+
+165
+00:16:37,383 --> 00:16:40,023
+Sonra 62'yi 47 ile karşılaştırdı.
+
+166
+00:16:40,504 --> 00:16:43,824
+62 daha büyük olduğu için sayacını 3 olarak güncelledi.
+
+167
+00:16:44,023 --> 00:16:50,023
+Şimdi ilk iterasyonda şuradaki döngüdeki ilk iyi eşittir 0 için.
+
+168
+00:16:50,424 --> 00:16:54,224
+İçteki döngü bir tur döndüğünde ne olmuş oldu?
+
+169
+00:16:54,544 --> 00:16:58,663
+Benim count dizim 3-0-1-1-0-0 şeklinde oluştu.
+
+170
+00:16:58,784 --> 00:16:59,464
+Ne demek istedi?
+
+171
+00:17:00,004 --> 00:17:03,883
+62 sayısı sonrakilerden 3 tanesinden daha büyüktür.
+
+172
+00:17:04,623 --> 00:17:06,383
+84 bundan daha büyük.
+
+173
+00:17:06,383 --> 00:17:10,163
+Bir tanesinden yani 62'den daha öncekilerden olan 62'den daha büyüktür.
+
+174
+00:17:10,563 --> 00:17:15,264
+96'da öncekilerde incelediğim 62'den daha büyüktür.
+
+175
+00:17:15,983 --> 00:17:17,343
+Sonra 1 arttırdık.
+
+176
+00:17:17,404 --> 00:17:18,083
+İ eşittir 1.
+
+177
+00:17:18,184 --> 00:17:20,363
+Artık 62 şey olduğu için 31'e geçiyorum.
+
+178
+00:17:20,784 --> 00:17:22,803
+31 ile 84'ü karşılaştırdı.
+
+179
+00:17:22,904 --> 00:17:23,803
+84 büyük.
+
+180
+00:17:24,044 --> 00:17:25,244
+O yüzden bunu 1 arttırdı.
+
+181
+00:17:25,303 --> 00:17:25,744
+2 oldu.
+
+182
+00:17:26,163 --> 00:17:28,083
+31 ile 96'yı karşılaştırdı.
+
+183
+00:17:28,144 --> 00:17:28,943
+96 büyük.
+
+184
+00:17:29,083 --> 00:17:29,984
+Sayacını 1 arttırdı.
+
+185
+00:17:30,044 --> 00:17:30,423
+2 oldu.
+
+186
+00:17:30,904 --> 00:17:32,544
+31 ile 19'u karşılaştırdı.
+
+187
+00:17:32,964 --> 00:17:34,503
+31'in sayacı 1 arttı.
+
+188
+00:17:35,023 --> 00:17:36,904
+31 ile 47'yi karşılaştırdı.
+
+189
+00:17:37,083 --> 00:17:38,423
+47'in sayacı 1 arttı.
+
+190
+00:17:38,503 --> 00:17:39,363
+Tabi burada 3 var.
+
+191
+00:17:39,723 --> 00:17:40,544
+Bunu yazmadık ama.
+
+192
+00:17:41,083 --> 00:17:43,604
+3, 1, 2, 2, 0, 1 haline geldi.
+
+193
+00:17:43,604 --> 00:17:46,943
+Hep sonrakilerle karşılaştığa devam ediyoruz.
+
+194
+00:17:47,044 --> 00:17:48,383
+Sonra geldik 84'e.
+
+195
+00:17:48,383 --> 00:17:50,383
+84
+
+196
+00:17:50,383 --> 00:17:52,423
+96 daha büyük olduğu için
+
+197
+00:17:52,423 --> 00:17:54,703
+2'den 1 arttırdı sayıcını
+
+198
+00:17:54,703 --> 00:17:56,604
+3 yaptı. 84
+
+199
+00:17:56,604 --> 00:17:59,044
+19'dan büyük olduğu için 2'yi 1 arttırdı
+
+200
+00:17:59,044 --> 00:18:00,863
+3 yaptı. 84
+
+201
+00:18:00,863 --> 00:18:02,863
+47'den büyük olduğu için bunun da
+
+202
+00:18:02,863 --> 00:18:04,583
+sayıcını 1 arttırdı 4 yaptı.
+
+203
+00:18:04,923 --> 00:18:05,484
+3 1
+
+204
+00:18:05,484 --> 00:18:08,943
+4 3 0 1. Sonra işte
+
+205
+00:18:08,943 --> 00:18:10,824
+96'ya geldi. 96
+
+206
+00:18:10,824 --> 00:18:12,863
+19'dan da 47'den de büyük. O yüzden
+
+207
+00:18:12,863 --> 00:18:15,064
+4 oldu 5 oldu sayıcı.
+
+208
+00:18:16,143 --> 00:18:17,003
+Şuraya da yine
+
+209
+00:18:17,003 --> 00:18:18,203
+3 1 4 yazalım.
+
+210
+00:18:18,383 --> 00:18:20,744
+sonra 19'a geldi
+
+211
+00:18:20,744 --> 00:18:22,984
+47 daha büyük olduğu için
+
+212
+00:18:22,984 --> 00:18:25,203
+47'nin sayıcı 1 arttı ve buraya da
+
+213
+00:18:25,203 --> 00:18:27,063
+2 olarak 1'i 2 olarak
+
+214
+00:18:27,063 --> 00:18:28,604
+güncelledik. Bu da 0 kaldı.
+
+215
+00:18:28,984 --> 00:18:30,244
+Şimdi ne oldu sonunda?
+
+216
+00:18:30,824 --> 00:18:32,124
+3, 1, 4, 5
+
+217
+00:18:32,124 --> 00:18:34,684
+0, 2 şeklinde
+
+218
+00:18:34,684 --> 00:18:36,824
+bir dizi oluştu. Bu aslında
+
+219
+00:18:36,824 --> 00:18:38,764
+her bir girdideki
+
+220
+00:18:38,764 --> 00:18:40,643
+elemanın çıktı da hangi indisinde
+
+221
+00:18:40,643 --> 00:18:42,764
+durduğunu gösteriyor. Bakın
+
+222
+00:18:42,764 --> 00:18:44,783
+birinde ben
+
+223
+00:18:44,783 --> 00:18:46,783
+kaçıncı sıradayım ve benden kaç tane
+
+224
+00:18:46,783 --> 00:18:48,803
+var şeklinde artımlı bir
+
+225
+00:18:48,803 --> 00:18:50,703
+dağılım yapmıştık. Bir öncekinde
+
+226
+00:18:50,703 --> 00:18:52,303
+hiçbir if kullanmadığımız
+
+227
+00:18:52,303 --> 00:18:54,523
+counting sortta. Ama
+
+228
+00:18:54,523 --> 00:18:56,623
+buradaki karşılaştırmalı
+
+229
+00:18:56,623 --> 00:18:58,963
+counting sortta ise direkt olarak
+
+230
+00:18:58,963 --> 00:19:00,403
+her bir girdi
+
+231
+00:19:00,403 --> 00:19:02,343
+çıktı da hangi indisde yer alacak?
+
+232
+00:19:02,603 --> 00:19:04,263
+Onu buluyorum. Şimdi gidiyorum.
+
+233
+00:19:04,703 --> 00:19:06,443
+Ne yapıyorum? 62'ye okudum.
+
+234
+00:19:07,063 --> 00:19:08,723
+Diyorum ki 62'yi çıktı da
+
+235
+00:19:08,723 --> 00:19:09,643
+üçüncü göze yaz.
+
+236
+00:19:10,303 --> 00:19:12,223
+0, 1, 2, 3
+
+237
+00:19:12,223 --> 00:19:14,583
+4, 5
+
+238
+00:19:14,583 --> 00:19:16,543
+Böyle geri geleyim.
+
+239
+00:19:16,783 --> 00:19:18,943
+s count i eşittir a i
+
+240
+00:19:19,731 --> 00:19:23,551
+böyle gitti. 62'yi 3. göze yazdı.
+
+241
+00:19:24,451 --> 00:19:25,231
+Buradaki 3.
+
+242
+00:19:26,971 --> 00:19:30,192
+Sonra 31'i aldı, 1. göze yazdı.
+
+243
+00:19:30,652 --> 00:19:33,391
+84'ü aldı, 4. göze yazdı.
+
+244
+00:19:33,851 --> 00:19:36,111
+96'yı 5. göze yazdı.
+
+245
+00:19:36,391 --> 00:19:38,711
+19'u 0. göze yazdı.
+
+246
+00:19:39,131 --> 00:19:42,412
+47'yi de 2. göze yazdığımızda çıktı.
+
+247
+00:19:42,731 --> 00:19:45,751
+S dizisini bu şekilde oluşturmuş olursunuz.
+
+248
+00:19:45,751 --> 00:19:56,771
+Bunun karmaşıklığına baktığımızda da yine şuradan n² bölü 2 şeklinde bir karmaşıklık geldiğini buradaki ilk yüzünden, iki şekilde bir kordonun ilk yüzünden geldiğini görebiliyoruz.
+
+249
+00:19:56,771 --> 00:20:05,651
+Yine karşılaştırma mantığına geçtiğimizde yine böyle n² bölü 2 mertebelerinde olduğunu görebilirsiniz.
+
+250
+00:20:06,871 --> 00:20:15,611
+Ama burada aslında yaptığımız şey tam olarak ben çıktı da nerede durmalıyım?
+
+251
+00:20:15,752 --> 00:20:23,371
+ben gerçekte kaçıncı değerim bunları bir dizide tutmuş ve oluşturmuş olduk.
+
+252
+00:20:24,492 --> 00:20:28,852
+Peki bu counting sort nerede işe yarar?
+
+253
+00:20:29,331 --> 00:20:34,511
+Aslında counting sort minimum sayıda indeks değişikliği yaparak,
+
+254
+00:20:34,632 --> 00:20:37,371
+yani en sondaki döngüdeki indeks değişiklikleriyle,
+
+255
+00:20:37,371 --> 00:20:40,132
+şöyle yine geri geleyim, şurası.
+
+256
+00:20:43,211 --> 00:20:45,551
+Ya da daha da öncekinde burası.
+
+257
+00:20:45,751 --> 00:20:51,591
+yapılabilecek en az sayıda indeks değişikliği yaparak
+
+258
+00:20:51,591 --> 00:20:58,131
+sıralı dizide doğru konum neresiyse oraya yapmamızı sağlıyor.
+
+259
+00:20:58,131 --> 00:21:10,011
+Yani eğer benim sıralamak istediğim değerler küçük bir dağılım kümesine sahipse
+
+260
+00:21:10,011 --> 00:21:18,272
+o zaman buradaki count dizisi küçük olacağından dolayı oldukça verimli bir şekilde çalışabilir.
+
+261
+00:21:19,111 --> 00:21:22,191
+Yani diyelim ki çok tekrarlı değerleriniz var.
+
+262
+00:21:22,191 --> 00:21:31,191
+Çok tekrarlı değerleriniz varsa o zaman counting sort kullanmak sizin için çok avantajlı olacaktır.
+
+263
+00:21:32,431 --> 00:21:36,511
+Ya da işte ilkten kaçınmanız gerekiyorsa counting sort kullanmanız gerekecektir.
+
+264
+00:21:36,511 --> 00:22:04,411
+Ama özellikle farklı yani unique değer sayısı sıralanan unique değer sayısı az ise ki bu da aynı zamanda ne demek oluyor sayılarımız çok fazla tekrara sahip ise bu durumda işte mesela hani ilkokuldaki öğrencilerin yaşlarını düşünün sürekli olarak hani birinci sınıftan dördüncü sınıfa kadar düşündüğünüzde yaşları 5 ile işte 10 ya da 11 arasında değişecektir.
+
+265
+00:22:04,411 --> 00:22:07,951
+6 ile 10-11 arasında değişecektir.
+
+266
+00:22:08,351 --> 00:22:11,011
+Ama her bir öğrenci mesela 5 yaşında kaç öğrenci var?
+
+267
+00:22:11,131 --> 00:22:12,891
+Belki 2 milyon öğrenci var.
+
+268
+00:22:12,951 --> 00:22:15,351
+6 yaşında 3 milyon öğrenci var.
+
+269
+00:22:15,511 --> 00:22:18,251
+7 yaşında 2,5 milyon öğrenci var gibi düşünün.
+
+270
+00:22:18,791 --> 00:22:21,371
+Ama 5, 6, 7, 8 değerleri çok az.
+
+271
+00:22:21,871 --> 00:22:23,571
+Fakat çok fazla sayıda tekrar ediyor.
+
+272
+00:22:23,711 --> 00:22:24,771
+Yani frekansları yüksek.
+
+273
+00:22:24,771 --> 00:22:32,051
+İşte bu gibi durumlarda counting sort kullanmak bizim için çok doğru ve çok iyi bir çözüm.
+
+274
+00:22:32,191 --> 00:22:34,091
+Yani sıralama çözümü getirecektir.
+
+275
+00:22:34,411 --> 00:22:47,951
+Şimdi tam olarak aslında birinci verdiğim counting sort'ı azıcık modifiye ederek, aynı şeyi aslında söyleyeceğiz çok benzer bir algoritma vererek bunu distribution counting sort olan yönteme evirebiliriz.
+
+276
+00:22:47,951 --> 00:22:54,551
+Burada şunu yapıyoruz. Her elemanın tekrar sayıların yani frekansları bir tane f dizisinde olsun diyoruz.
+
+277
+00:22:54,591 --> 00:22:57,431
+Aslında count dizisi. Biraz önce oluşturduğumuz count dizisi.
+
+278
+00:22:57,431 --> 00:23:15,691
+ve şunu biliriz madem ki çok fazla sayıda tekrar ediyor işte 5 yaşındakiler 6 yaşındakiler dedik aslında en küçük L değere eşit olan elemanlar sonuçta dizinin neresinde yer alacak sıraladığımızda
+
+279
+00:23:15,759 --> 00:23:20,200
+0 ile F0-1 arasındaki pozisyonlarında olacak.
+
+280
+00:23:20,319 --> 00:23:26,879
+L artı 1 olanlar, yani 6 yaşındakiler, işte F0 artı F1-1 arasında olacaklar.
+
+281
+00:23:27,279 --> 00:23:34,459
+Böyle, yani bu 5 yaşlar burada duracak, 6 yaşlar burada duracak, 7 yaşlar burada duracak gibi düşünebilirsiniz.
+
+282
+00:23:35,180 --> 00:23:40,719
+Tam olarak biraz önceki toplamalı counting vardı ya, o oradaki dizide yaptığımız iş.
+
+283
+00:23:40,719 --> 00:23:54,279
+İşte bu tür birikmiş frekans toplamlarına istatistikte dağılım deniyor. O yüzden de buna dağılım sayımı distribution counting olarak da görebilirsiniz.
+
+284
+00:23:54,279 --> 00:24:03,079
+Şimdi algoritmayı bu şekilde verelim o zaman. Distribution counting sort. Ama tabii ufak bir varyasyonu var. Nedir? Bakın L ve U veriyorum burada.
+
+285
+00:24:03,079 --> 00:24:04,399
+L ve U ne?
+
+286
+00:24:06,499 --> 00:24:11,780
+İşte 5 yaş ile 10 yaş arasındaki öğrenciler demiştik hatırlarsınız.
+
+287
+00:24:11,940 --> 00:24:16,919
+Yani lower ve upper limitlerimiz.
+
+288
+00:24:17,339 --> 00:24:19,359
+L küçük eşit U olmak üzere.
+
+289
+00:24:19,800 --> 00:24:22,940
+Bu aralıkta n tane integer veriliyoruz.
+
+290
+00:24:23,160 --> 00:24:27,259
+Ve biz bunları bir şekilde artan sırayla sıralamak istiyoruz.
+
+291
+00:24:27,440 --> 00:24:27,959
+Ne yapacağız?
+
+292
+00:24:27,959 --> 00:24:33,279
+Ben şimdi bunları artık distribution dediğim için count değil de distribution'un d'sini kullanıyorum.
+
+293
+00:24:33,699 --> 00:24:42,059
+Yine ilk olarak bunları bir init ediyorum. Sıfırlıyorum. Ondan sonra aynen bakın burada d, a, i, eksi, l diyor.
+
+294
+00:24:42,359 --> 00:24:48,239
+Yani aslında bir indis kaydırma, l'den çıkartma işlemi gerçekleştiriyorum. Bunları sayıyorum.
+
+295
+00:24:49,239 --> 00:24:53,559
+Her bir karakterden kaç tane, her bir anahtar değerinden kaç tane olduğunu sayıyorum.
+
+296
+00:24:53,559 --> 00:25:01,479
+Ondan sonra da bakın bunları yine aynı counting sortta olduğu gibi toplamlı hale getiriyorum.
+
+297
+00:25:01,479 --> 00:25:10,999
+Bunu toplamlı hale getirdikten sonra yaptığım şey yine counting sortla aslında birebir aynı ve değerlerini biraz azaltıp ilgili göze yaz.
+
+298
+00:25:11,099 --> 00:25:12,659
+Biraz azaltıp ilgili göze yaz.
+
+299
+00:25:13,199 --> 00:25:18,819
+Ben burada dersin en başında bahsettiğim counting sortla aslında aynısını söylüyorum gördüğünüz gibi.
+
+300
+00:25:18,959 --> 00:25:21,659
+O yüzden de yine buradaki n artı k olacak.
+
+301
+00:25:21,659 --> 00:25:25,099
+tabi buradaki k'ya range, r anlamında range de diyebiliriz.
+
+302
+00:25:25,519 --> 00:25:32,699
+Low ile up arasındaki farklı tekil sayı ya da sıralanacak eleman sayısı.
+
+303
+00:25:33,299 --> 00:25:35,659
+Bu da yine lineer olarak çalışıyor.
+
+304
+00:25:36,019 --> 00:25:39,919
+Eksisine yine bir tane count dizisine ihtiyacımız var.
+
+305
+00:25:40,719 --> 00:25:42,119
+Toplam eleman sayısı kadar.
+
+306
+00:25:42,259 --> 00:25:43,159
+Bu çok önemli değil.
+
+307
+00:25:43,459 --> 00:25:45,799
+Çünkü toplam sembolünüz, farklı sembolünüz az.
+
+308
+00:25:45,799 --> 00:25:52,059
+Ama yine çıktığı ekstra olarak bir yerde oluşturmak durumunda kalıyorsunuz.
+
+309
+00:25:52,219 --> 00:25:54,859
+Ekstra alan ihtiyacı çok fazla.
+
+310
+00:25:55,319 --> 00:25:57,279
+Şimdi bunu örneğini şu şekilde vermek istiyorum.
+
+311
+00:25:57,939 --> 00:26:04,919
+Aslında biraz önceki dizide oluşturduğum toplamlı değerler tam olarak burada yine yer alıyor.
+
+312
+00:26:05,639 --> 00:26:07,480
+İlk counting sort'ta verdiklerim.
+
+313
+00:26:07,919 --> 00:26:09,139
+Nasıl oluşturduğumuza bakalım.
+
+314
+00:26:09,139 --> 00:26:10,539
+Şimdi dizimiz şöyle olsun.
+
+315
+00:26:10,699 --> 00:26:13,219
+13, 11, 12, 13, 12, 12.
+
+316
+00:26:13,219 --> 00:26:42,759
+Toplam değerlerimiz ne? 11. Yani farklı değerlerimiz ne? 11'imiz var. 12'miz var. 13'miz var. O zaman benim range'm 11 ile 13 arasında. Yani bu işte 0. göz, bu 1. göz, bu 2. göz olacak. Yani buradaki D dizisi 0 ile 2 arasında yer alacak. Yani şu 0, 1, 2. göz. Peki. Şimdi saydım. 13'ü 1 arttırdım. 11'i 1 arttırdım. 12'yi 1 arttırdım. 13'ü 1 daha arttırdım. 12'yi 1 daha arttırdım. 12'yi 1 daha arttırdım.
+
+317
+00:26:42,759 --> 00:27:10,360
+Frekanslarını saydım şuradaki, şurada. Frekanslarını saydım bir aktır aktır. Ne oldu? Şunu gördüm. 11'den bir tane varmış. 12'den 3 tane varmış. 13'den 2 tane varmış elimde. Peki. Bunları tekrar artımlı hale getirdim de 1, 1, 3 daha 4, 4, 2 daha 6. İşte benim aslında kullanacağım D dizisi burada. 1, 4, 6. Tamam mı? Bunu kullanacağız.
+
+318
+00:27:10,359 --> 00:27:14,359
+Bunu kullandığımızda, counting sortta da zaten aynısını yapmıştık.
+
+319
+00:27:14,451 --> 00:27:26,332
+şuraya geldim geri. Ne yapıyor? Tersten gidiyor. Tersten başladık. A5. Bu da adresi. 0, 1, 2, 3, 4, 5. Şuraya da 5 yazıyorum. Bu da A.
+
+320
+00:27:27,912 --> 00:27:37,671
+A adresinin 5. elemanı ne? 12. 12 nerede? Distribution değerinde. İkinci gözde değil mi?
+
+321
+00:27:37,671 --> 00:27:39,551
+şeyden çıkarttığınızda.
+
+322
+00:27:40,191 --> 00:27:42,311
+İkinci göz. İkinci göz ne diyor?
+
+323
+00:27:42,991 --> 00:27:47,331
+Güzel kardeşim diyor, git diyor, dizinin dördüncü yerine konuşlan diyor.
+
+324
+00:27:48,151 --> 00:27:57,531
+Şuraya da yine sıfır, bir, iki, üç, dört ve beş olarak yazayım.
+
+325
+00:27:57,531 --> 00:28:07,471
+Pardon dördüncü gözüne konuşlan diyor da, şuraya geldiğimizde bir eksiği, bunu unuttuk söylemeyi, bir eksiğine konuşlan diyor.
+
+326
+00:28:07,472 --> 00:28:09,652
+Yani ben burada 4 gördüğümde
+
+327
+00:28:09,652 --> 00:28:12,472
+Şuradaki 4'ü gördüğümde
+
+328
+00:28:12,472 --> 00:28:14,071
+Aslında dediğim şey
+
+329
+00:28:14,071 --> 00:28:15,672
+Git dizinin 3. gözüne
+
+330
+00:28:15,672 --> 00:28:17,472
+Buradaki A5 değerini
+
+331
+00:28:17,472 --> 00:28:18,892
+Yani 12 değerini yaz
+
+332
+00:28:18,892 --> 00:28:19,871
+İşte yazdım
+
+333
+00:28:19,871 --> 00:28:20,672
+12
+
+334
+00:28:20,672 --> 00:28:22,511
+Sonra bunu 1 azalt
+
+335
+00:28:22,511 --> 00:28:23,731
+Artık bu 3
+
+336
+00:28:23,731 --> 00:28:25,752
+Yani benim D dizim 1, 3, 6
+
+337
+00:28:25,752 --> 00:28:26,572
+Bu ne demektir?
+
+338
+00:28:27,032 --> 00:28:28,651
+11 görürsen 0'a yaz
+
+339
+00:28:28,651 --> 00:28:31,411
+12 görürsen 2'ye yaz
+
+340
+00:28:31,411 --> 00:28:33,691
+13 görürsen 5'e yaz
+
+341
+00:28:33,691 --> 00:28:34,691
+5. indise yaz
+
+342
+00:28:34,691 --> 00:28:35,992
+Demiş olacaksınız
+
+343
+00:28:35,992 --> 00:28:59,051
+Şimdi A4'e geldim. Birer birer azaltıyorum ya eni. J yiteratöründe. A4. A4 ne? Değer olarak yine 12. 12 nerede? Benim hangi distribution değerimde? Orta gözde yani ikinci gözde. İkinci gözde ne var? 3. 3'ün bir eksiğine git yaz yani 2'ye yaz. 0 ile en eksi 1 olduğu için bir eksiğine yazıyoruz. 12'yi buraya yazdım.
+
+344
+00:28:59,051 --> 00:29:29,032
+Tamam. Şuraya zaten 12'yi yazmıştım değil mi? Yukarıda. 12'yi buraya yazdım ve bunu bir azalttım. Tamam. 2 oldu. Şöyle. Şu andaki D dizim 1, 2, 6 şeklinde duruyor. Bir arttırdım yine iteratörümü. 3 oldu. A3'e gittim. A3'te de 13 değeri var. 13 değeri benim 3. distribücüm gözüm. Orada da ne değeri var? 6. 1-5'ye git bu değeri yaz. 13'ü buraya yazdım.
+
+345
+00:29:29,051 --> 00:29:31,891
+Şöyle doldurmaya devam edeyim 12, 12, 13 oldu.
+
+346
+00:29:32,991 --> 00:29:35,831
+Bunu yazdı. Değerini biraz attı. 6'ydı 5 yaptı.
+
+347
+00:29:36,831 --> 00:29:39,171
+Sonra biraz attım 2'ye geldim. A2.
+
+348
+00:29:39,411 --> 00:29:41,371
+A2 gözünde ne değeri var? 12.
+
+349
+00:29:41,591 --> 00:29:43,531
+12 nerede? Distribution'da ikinci göz.
+
+350
+00:29:44,131 --> 00:29:45,891
+Gitti baktı. 2 değeri var.
+
+351
+00:29:46,051 --> 00:29:48,731
+Gitti birinci göze 12'yi yazdı.
+
+352
+00:29:49,731 --> 00:29:51,051
+Ve bunu biraz attı.
+
+353
+00:29:52,091 --> 00:29:55,591
+12, 12 ve 13.
+
+354
+00:29:55,591 --> 00:30:24,672
+bu şekilde şu andaki sonuç dizi oluştu. Toplam 4 elemanını koydu. Sonra A1'e geldi. A1'de okuduğu değer 11. 11 distribution dizisinin ilk gözü. Şurada gördüğünüz gibi. İlk gözüne gitti 1 var. O zaman gitti 0. indise 1-0. indise 11'i yazdı ve bunu biraz attı. 0 oldu.
+
+355
+00:30:24,672 --> 00:30:50,312
+Şimdi 11 yazıldı. 12 yazılmıştı. 12 yazılmıştı. 13'de yazıldı. Biraz alttı. 0 oldu. A0'da hangi değeri okudu? 13 değerini okudu. 13 değeri distribution dizisinde sonuncu göz, ikinci göz. İkinci gözde ne var? 5 değeri var. 5'in bir eksiği olan 4'e gitti. 13'ü yazdı.
+
+356
+00:30:50,312 --> 00:31:04,392
+ve nihayetinde şunu da biraz azalttım, 4 oldu. Tamam. 11, 12, 12, 12, 13, 13.
+
+357
+00:31:05,268 --> 00:31:10,668
+dersin başında söylediğim anlattığım counting sort aslında distribution counting sort olarak da bilinir.
+
+358
+00:31:10,668 --> 00:31:13,867
+Hani kafanız karışmakın aslında ikisinde aynı şey.
+
+359
+00:31:13,867 --> 00:31:22,467
+Ve dağılımları, frekanslarını sayıyorsunuz aslında. Frekansları sayıp onları birer artımda dağılım haline getiriyorsunuz.
+
+360
+00:31:22,467 --> 00:31:33,268
+Ve bu tabloya bakarak toplam tekil eleman sayısının az olduğu durumlarda efektif bir şekilde sadece zayıf karnına ilave bir dizi kullanması
+
+361
+00:31:33,268 --> 00:31:53,448
+şey için, çıktığı usulmek için. Bunun dışında gayet lineer zamanda n artı k ya da n artı reylik bir zamanda o n artı rey de şuradaki işte eleman tekil eleman sayısından geliyor. Bu kadar efektif bir şekilde sıralama işlemini gerçekleştirebilirsiniz.
+
+362
+00:31:53,448 --> 00:32:04,148
+Evet sıralama gördüğünüz gibi illaki her zaman için döngü iç içe iki döngü yapıp ondan sonra da değer karşılaştırması şeklinde olmak zorunda değil.
+
+363
+00:32:06,268 --> 00:32:13,967
+Acaba ben kaç değerden küçüğüm ya da acaba kaç değer benden büyük şeklinde benim yani frekansım ne?
+
+364
+00:32:13,967 --> 00:32:25,807
+benden kaç tane kaç tekrar var ve ben sonuç dizisinde hangi inmişler arasında yer alırım şeklindeki soruların cevaplarının bulunmasıyla da çok rahatlıkla halletilebiliyor.
+
+365
+00:32:26,628 --> 00:32:29,727
+Peki şimdi counting sortla ilgili söyleyeceklerim bu kadar.
+
+366
+00:32:30,427 --> 00:32:31,687
+Şimdi gelelim başka bir sorta.
+
+367
+00:32:32,768 --> 00:32:33,907
+Başka bir sıralama yöntemi.
+
+368
+00:32:34,268 --> 00:32:38,647
+Bu da radix sort olarak yani basamak sıralama olarak biliniyor.
+
+369
+00:32:38,647 --> 00:32:42,047
+Bu tamamen mekanik sıralamadan doğuyor yani tarihten geliyor.
+
+370
+00:32:43,967 --> 00:32:53,967
+Burada gördüğünüz makine IBM'in ürettiği delikli kartları sıralamak için kullanılan kolon kolon çalışan bir makine
+
+371
+00:32:53,967 --> 00:32:55,967
+Bakın burada şeyler var
+
+372
+00:32:55,967 --> 00:33:05,967
+1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14 mu artık adamın arkasında var mı göremiyorum orayı
+
+373
+00:33:05,967 --> 00:33:08,967
+Böyle yan yana gördüğünüz gibi şeyler duruyor
+
+374
+00:33:08,967 --> 00:33:09,967
+Ne yapıyor?
+
+375
+00:33:09,967 --> 00:33:37,567
+Bunları delikli kartları mesela buradaki değerleri delikli kartlarda kodlanmış sayıları mesela sıralamak için buradaki delikli kartların basamaklarına göre çalışıyor ve her bir adımdan sonra o basamağı sıralıyor arada insan alıyor bunları tekrar diziyor bir daha sıralıyor tekrar diziyor bir daha sıralıyor bir daha tekrar sıralıyor basamak sayısı kadar sıralama işlemi gerçekleştirdiğinizde
+
+376
+00:33:37,568 --> 00:33:44,428
+sonuçta siz bütün girdiği sıralı bir çıktı haline getirebiliyorsunuz.
+
+377
+00:33:44,428 --> 00:33:50,348
+Bu kadar. Yani mekanik olarak sıralamadan gelen bir algoritma Radix Sort.
+
+378
+00:33:50,728 --> 00:33:53,268
+İki farklı versiyonu var. Şimdi ikisine de bakacağız.
+
+379
+00:33:54,228 --> 00:33:58,988
+Siz sayılarınızı, sayı olmak zorunda değil, kelimelerinizi de sıralayabilirsiniz.
+
+380
+00:33:58,988 --> 00:34:07,868
+yani harflerin ilk ya da son haneden başlayarak ya da işte baş harftan ya da son harftan başlayarak sıralayabilirsiniz.
+
+381
+00:34:07,868 --> 00:34:13,387
+Ve aslında yaptığımız şey her basamakta kendi içinde counting sort yapmak.
+
+382
+00:34:14,027 --> 00:34:24,368
+Counting sort yaparak da aslında hiçbir işte karşılaştırma yapmadan oradaki delikli kartlarda olan değerlerin ne olduğunu bilmeye gerek kalmadan
+
+383
+00:34:24,368 --> 00:34:28,907
+hani if kullanmadan sıralama yapabilmemizi sağlıyor.
+
+384
+00:34:28,988 --> 00:34:34,448
+Dediğim gibi ben mademki basamak basamak sıralama yapıyorum o zaman iki taraftan çalışabilirim.
+
+385
+00:34:34,568 --> 00:34:41,728
+Soldan başlayıp yani sonhaneden başlayabilirim ya da en düşük anlamlı basamaktan başlayarak sıralama yapabilirim.
+
+386
+00:34:41,728 --> 00:34:46,728
+Ya da en yüksek anlamlı basamaktan başlayarak sıralama yapabilirim.
+
+387
+00:34:47,247 --> 00:34:55,547
+Şimdi önce daha basit olan sonhaneden başlama yani LSD least significant digit radix sort'a bakalım.
+
+388
+00:34:58,988 --> 00:34:59,488
+Hmm.
+
+389
+00:35:00,436 --> 00:35:27,375
+algoritması şu şekilde. Şimdi ne oluyor? Bana işte n tane string verilmiş. Bunlar kelime. Tamam mı? Mesela n tane kelime verilmiş bana. Ve bir alfabemiz var tabii sıfırdan sigma'ya kadar. Yani işte bu kadar sigma karakterden oluşan bir alfabeden oluşan şey. Bunlar sayı olsaydı ne olacaktı? Alfabeniz 10 sembolli olacaktı. 0, 1, 2, 3, 4, 5, 6, 7, 8, 9 rakamlarından olacak.
+
+390
+00:35:27,375 --> 00:35:57,055
+ve uzunluğu da m'miş. Yani buradaki her bir kelimenin ya da sözcük yedisinin ya da her bir sıralanacak elemanın uzunluğu m olarak sabit veriliyor. Neden? Çünkü m tane basamaktan oluşuyor. Peki. Çıktığımız ne? Bir şekilde artan sırada ya da artan mantık sırasında bu r çıktısının oluşturulması. Ne yapacağız? Bakın basamak sayısı kadar yani m adım bir döngü kurguluyorum.
+
+391
+00:35:57,375 --> 00:36:03,436
+her adımda o ilgili basamağı counting sort ile sıralıyor.
+
+392
+00:36:03,796 --> 00:36:04,855
+Yaptığım tek şey bu.
+
+393
+00:36:05,955 --> 00:36:08,656
+Yani basamak sayısı kadar counting sort yapmak.
+
+394
+00:36:09,116 --> 00:36:12,135
+O zaman bu da basamak sayısı artı sigma.
+
+395
+00:36:12,355 --> 00:36:17,156
+Yani bu da n artı k şeklinde olacak bir karmaşıklık getiriyor bize.
+
+396
+00:36:17,535 --> 00:36:19,215
+Peki nasıl çalışıyor bu? Mantığı ne?
+
+397
+00:36:19,215 --> 00:36:21,895
+Hemen yine örnek üzerinden göstereyim.
+
+398
+00:36:23,616 --> 00:36:26,135
+Karakter dedik. Karakter örneğinden getirdik.
+
+399
+00:36:26,135 --> 00:36:56,115
+şimdi bakın 4 tane kelime verilmiş 3 harfli kelime cat, him, hem ve bet bunlar sayıda olabilirdi yani 3, 1, 8 mesela 318 olur bu ondan sonra bu ne bileyim işte 457 olur bu 417 olur bu da bet olduğuna göre
+
+400
+00:36:56,135 --> 00:37:02,535
+218 olur.
+
+401
+00:37:02,915 --> 00:37:03,315
+Tamam mı?
+
+402
+00:37:03,635 --> 00:37:04,135
+Bu şekilde.
+
+403
+00:37:04,455 --> 00:37:06,475
+Yani sayıları da aynı şekilde sıralayabilirim.
+
+404
+00:37:06,835 --> 00:37:07,315
+Ne yapıyorum?
+
+405
+00:37:07,395 --> 00:37:09,436
+Bana verilen sırayla bunları yazıyorum alt alta.
+
+406
+00:37:09,975 --> 00:37:13,936
+Alt alta yazmak zorunda değilim de çizmesi kolay olduğu için böyle yapacağım.
+
+407
+00:37:13,936 --> 00:37:18,335
+En düşük anlamlı basamaktan başlayarak sıralıyorum.
+
+408
+00:37:19,016 --> 00:37:21,016
+En düşük anlamlı basamak neresi?
+
+409
+00:37:21,215 --> 00:37:21,555
+Burası.
+
+410
+00:37:22,215 --> 00:37:24,535
+Cat, him, hem ve betti.
+
+411
+00:37:24,535 --> 00:37:46,895
+Şimdi bu karakterlere bakıyorum. T, M, M ve T. M yukarı. Daha küçük bir art olduğu için. İkinci M de buraya. Counting sortla bunu yapmak çok kolay. Biraz önce gördük. Bu T buraya gidiyor. Ve bu T de buraya geliyor.
+
+412
+00:37:46,895 --> 00:37:58,975
+Bunun aynı sırada yani yukarıdaki him yazan m'nin yukarıda kalması hem yazan m'nin aşağıda kalması counting sortdaki sıra ile işlemekten geliyor.
+
+413
+00:37:58,975 --> 00:38:09,935
+Bu nedenle de girdideki sırayı çıktığı da mümkün olunca her bir karakter bazında her bir digit bazında korumaya devam ediyoruz.
+
+414
+00:38:10,135 --> 00:38:12,175
+Peki şimdi baktığımızda ne görüyoruz burada?
+
+415
+00:38:12,175 --> 00:38:28,915
+MMTT ya da kelimelere baktığımızda him, hem, ket, bet görüyoruz. Bunlar sıralı mı şu anda? Hayır değil. Fakat en düşük anlamlı bitteki en düşük anlamlı basamaktaki değerler kendi içinde sıralandılar.
+
+416
+00:38:29,675 --> 00:38:42,075
+MMTT şeklinde gidiyorlar. Sonra bir sonraki basamağa geçelim. I, A, A, A görüyorum. Şimdi ilk A hem. A yukarı çıktı. İkinci A ne? Ket.
+
+417
+00:38:42,175 --> 00:38:51,355
+BAT buraya geldi. Üçüncü A BAT. Üçüncü sıraya geldi. Sonra da İ var. İ de en sona geldi. Him.
+
+418
+00:38:52,467 --> 00:39:20,487
+Bakın AAAI kendi içinde sıralandı. Bu sıra bozuldu hocam. Bozulsun. Önemi yok. Ben kendi içinde. Bunlar kendi içinde bu sırada durmalılardı. Şimdi de bu sırada durmalılar diye gitgide en yüksek anlamlı bite doğru ilerliyoruz. Sonra da şurayı sıralayacağım. H, C, B ve H. B tabii ki yukarı çıkacak. Alfabede daha en küçük harfleri yakın A'ya yakın olduğu için. Ondan sonra C gelecek. İkinci sırada cat.
+
+419
+00:39:20,487 --> 00:39:35,487
+Ondan sonra da yukarıdaki H hem ve sonraki H hem. Bakın bu A'nın i, A yukarıda i aşağıda devam edip de şurada sıraladığımda bunlar mesela aynı H'ye sahipler.
+
+420
+00:39:35,487 --> 00:39:48,207
+İşte artık bunlar kendi içinde sıralı kalmaya devam ettiler. Hem yukarıda hem aşağıda oldu. Yani bu daha az değere sahip olan basamak daha önceden sıralandığı için
+
+421
+00:39:48,207 --> 00:39:51,707
+bunlar da kendi içinde sıralı olarak kalmaya devam ettiler.
+
+422
+00:39:52,267 --> 00:39:55,827
+Yani burada H harfi olmasaydı M ve İM olacaktı.
+
+423
+00:39:55,827 --> 00:40:02,507
+O yüzden de kendi içinde yine daha düşük anlam içinde de sıralı kalmaya devam ettiler.
+
+424
+00:40:03,067 --> 00:40:04,247
+Nihayetinde ne oluştu?
+
+425
+00:40:04,487 --> 00:40:06,207
+Bet, ket, hem ve him.
+
+426
+00:40:06,307 --> 00:40:08,167
+Gördüğünüz gibi bunları sıralamış olduk.
+
+427
+00:40:08,607 --> 00:40:10,227
+Peki bu şey olsaydı ne olacaktı?
+
+428
+00:40:10,688 --> 00:40:13,107
+Rakamlardan oluşsaydı şuraya yazmıştık.
+
+429
+00:40:13,107 --> 00:40:24,868
+318, 457, 417 ve 218 değil mi?
+
+430
+00:40:26,667 --> 00:40:29,408
+İlk önce bunların şurasını sıralayacağım.
+
+431
+00:40:29,408 --> 00:40:39,227
+457, 417, 318 ve 218.
+
+432
+00:40:39,227 --> 00:40:56,487
+7, 7, 8, 8 oldu. Sonra bunları kendi içinde sıralacağım. 417, 318, 1'ler geliyor. 318, 218 ve 457.
+
+433
+00:41:00,340 --> 00:41:05,340
+ikinci basamakları sıralıyorum.
+
+434
+00:41:05,340 --> 00:41:06,340
+218
+
+435
+00:41:06,340 --> 00:41:10,340
+sonra
+
+436
+00:41:10,340 --> 00:41:11,340
+318
+
+437
+00:41:11,340 --> 00:41:15,340
+sonra
+
+438
+00:41:15,340 --> 00:41:16,340
+417
+
+439
+00:41:16,340 --> 00:41:19,340
+daha yukarıda olduğu için çıktı daha önce yer aldı
+
+440
+00:41:19,340 --> 00:41:21,340
+ve 457
+
+441
+00:41:21,340 --> 00:41:23,340
+4 ile başlayanlardan sonuç
+
+442
+00:41:23,340 --> 00:41:24,340
+ne oldu?
+
+443
+00:41:24,340 --> 00:41:27,340
+218, 318, 417, 457 şeklinde
+
+444
+00:41:27,340 --> 00:41:32,220
+Bunları sayısal da olsalar sıralayabildim. Sonuçta onlar da aslında birer sembol.
+
+445
+00:41:34,360 --> 00:41:37,240
+Burada da başka bir örnek, daha büyük bir örnek.
+
+446
+00:41:37,420 --> 00:41:41,860
+Baktığımızda işte dub, ad, cap, that, fi, bed diye gidiyor.
+
+447
+00:41:41,959 --> 00:41:43,600
+That, d, bed, bed diye.
+
+448
+00:41:44,180 --> 00:41:48,619
+Şimdi ben önce burayı sıralıyorum. Bakalım sıraladığımızda ne olacak bunlar?
+
+449
+00:41:49,219 --> 00:41:50,219
+B, B, B.
+
+450
+00:41:51,100 --> 00:41:53,539
+D, D, D, D, D, D, E, E.
+
+451
+00:41:54,240 --> 00:41:56,600
+Gördüğünüz gibi A'dan Z'ye doğru sıralandılar.
+
+452
+00:41:56,599 --> 00:42:07,979
+ve sıra burada korunuyor. Buradaki oklar birbirini kesmiyor. Yani önce gelen yukarıda, sonra gelen aşağıda, en son gelen daha aşağıda.
+
+453
+00:42:08,659 --> 00:42:18,539
+Gördüğünüz gibi. Yani buradaki D burada yine en yukarıda. Şuradaki en alttaki D burada sıralanmışların içinde yine en altta.
+
+454
+00:42:18,539 --> 00:42:21,979
+Bu sayede çıktıkları sıra korunmuş oluyor
+
+455
+00:42:21,979 --> 00:42:25,200
+Sonra burayı bitirdim
+
+456
+00:42:25,200 --> 00:42:26,599
+Şuraya göre sıralayacağım
+
+457
+00:42:26,599 --> 00:42:28,299
+Burada da neler var?
+
+458
+00:42:28,459 --> 00:42:31,559
+A, A, A, A, A, B, C, D, E, E, E
+
+459
+00:42:31,559 --> 00:42:33,059
+Bu şekilde sıralandılar
+
+460
+00:42:33,059 --> 00:42:37,979
+En son en anlamlı dijite göre de sıralayarak
+
+461
+00:42:37,979 --> 00:42:42,899
+A'ları yukarı B'ler, C'ler, D'ler, E'ler, F'ler olacak şekilde sıralamış olduk
+
+462
+00:42:42,899 --> 00:42:46,319
+Yani aslında mesela F'ye baktığınızda F'yi kapat
+
+463
+00:42:46,319 --> 00:42:49,159
+Şunun içine gir.
+
+464
+00:42:49,379 --> 00:42:51,459
+Aslında bu bir adım öncesinde sıralanmıştı.
+
+465
+00:42:52,039 --> 00:42:53,779
+A, E, E şeklinde.
+
+466
+00:42:54,379 --> 00:42:54,839
+Tamam mı?
+
+467
+00:42:54,879 --> 00:42:58,359
+Add ve i, i şeklinde sıralanmıştı.
+
+468
+00:42:59,079 --> 00:43:00,059
+Hadi burayı da kapat.
+
+469
+00:43:00,179 --> 00:43:00,819
+E'lere gel.
+
+470
+00:43:01,219 --> 00:43:08,459
+E'lerden sonra en alttaki, şuradaki basamak D ve E şeklinde daha önceden sıralanmıştı.
+
+471
+00:43:08,599 --> 00:43:09,799
+Daha şurada sıralanmıştı.
+
+472
+00:43:10,259 --> 00:43:11,420
+Yani FED neredeydi?
+
+473
+00:43:12,419 --> 00:43:13,340
+FED buradaydı.
+
+474
+00:43:14,599 --> 00:43:15,879
+Fİ neredeydi?
+
+475
+00:43:15,879 --> 00:43:27,599
+fi buradaydı. D yukarıda, E aşağıdaydı. Yani her biri kendi içinde sıralanarak geldiği için sonuçta da ben toplamda her bir elemanımı sıralamış olurum.
+
+476
+00:43:28,019 --> 00:43:32,019
+Gördüğünüz gibi basamak sayısı kadar counting sort yaptım sürekli olarak.
+
+477
+00:43:32,019 --> 00:43:39,459
+Mekanik sıralamaya çok uygun. Zamanında Herman Holleray's tarafından icat edilmiş bir sıralama yöntemi.
+
+478
+00:43:39,459 --> 00:43:43,420
+hatta bahsetmiştik Amerikan seçimleri, Amerikan nüfus sayımlarını
+
+479
+00:43:43,420 --> 00:43:48,579
+10 yıldan fazla sürecek olan nüfus sayımını birkaç ay içinde açıklayarak
+
+480
+00:43:48,579 --> 00:43:52,879
+hem rekor kırmış hem de IBM'in temellerini atmıştır.
+
+481
+00:43:53,060 --> 00:43:57,639
+Aslında bu sıralama makinesi ve sıralama algoritmasıyla başlayan bir süreç.
+
+482
+00:43:58,419 --> 00:44:00,459
+Şimdi nerede işe yarar bu?
+
+483
+00:44:00,939 --> 00:44:07,119
+Özellikle sabit uzunluklu anahtarlardan oluşan çok büyük tablolarınız varsa, çok büyük verileriniz varsa
+
+484
+00:44:07,119 --> 00:44:27,119
+LSD, Dijkstra, bu iş için biçilmiş kartan. Nedir mesela? Hesap numaraları. Bankaların hesap numaraları biliyorsunuz. IBAN'lar sabit uzunlukta değil mi? Ondan sonra ve toplam karakter sayısı da işte TR ile başlıyor ya da ülke kodu ve geri kalanı yine 10 tane rakam dediğimiz sembollerden oluşuyor.
+
+485
+00:44:27,119 --> 00:44:39,179
+ya da Türkiye Cumhuriyeti kimlik numaraları 11 aneli sayılar ya da işte bir General Universal Identifier dediğimiz GUID dediğimiz benzersiz tanımlayıcı anahtarla.
+
+486
+00:44:39,959 --> 00:44:48,860
+Bunlar diyelim ki sıralayacağız. 85 milyon tane kimlik numarasını sıralamak istiyorsunuz. 85 milyon LOG 85 milyon.
+
+487
+00:44:49,268 --> 00:45:17,948
+mesela. Bunu yapmak yerine 11 tane sadece counting sort yapmamız yeterli olabilir. Yani insertion mu kullanayım? Görmedik ama merge ve quick mı kullanayım? Heapsort mu kullanayım? Yoksa LSD sort mu kullanayım? Burada mesela ASCII ise 256 ASCII karakteriyle 65536 unicode sayac kullanmanız yeterli olacak. Çünkü o kadar tekil karakter var. Ve W adımda yani sizin GUID uzunluğunuz neyse.
+
+488
+00:45:17,948 --> 00:45:22,448
+bu kadar adımda sabit uzunluklu sinkleri sıralayabilirsiniz.
+
+489
+00:45:22,648 --> 00:45:24,727
+Diyelim ki sizin 11 haleniz var.
+
+490
+00:45:25,187 --> 00:45:29,988
+11 tane 85 milyon sadece işlem yaparsınız.
+
+491
+00:45:29,988 --> 00:45:32,427
+Ve ne oldu?
+
+492
+00:45:33,547 --> 00:45:43,708
+850 milyon adımda sıralama işlemini gerçekleştirmiş olursunuz.
+
+493
+00:45:43,827 --> 00:45:44,788
+Lineer zamanda.
+
+494
+00:45:45,427 --> 00:45:45,587
+Neden?
+
+495
+00:45:45,587 --> 00:45:54,528
+çünkü sabit uzunlukta ve buradaki sabit uzunlukların toplam basamak sayısına kadar işlemle counting sort yapmam yeterli.
+
+496
+00:45:54,967 --> 00:45:58,587
+Yani basamak sayısı kadar lineer sort yapmam yeterli olacaktır.
+
+497
+00:45:59,547 --> 00:46:04,727
+Bu gibi durumlarda mesela veri tabanı indekslerine oluşturulmasında gibi problemlerde
+
+498
+00:46:04,727 --> 00:46:08,448
+LSD Radix Sort tercih sebebidir. O kullanılır.
+
+499
+00:46:08,448 --> 00:46:12,467
+İdip de kimse orada Merge Sort, Quick Sort falan bir şey uğraşmaz.
+
+500
+00:46:12,467 --> 00:46:16,307
+özellikle de sembol seti ufaksa.
+
+501
+00:46:19,128 --> 00:46:20,027
+Peki.
+
+502
+00:46:22,067 --> 00:46:26,247
+Şimdi bir de tersten giderek.
+
+503
+00:46:26,487 --> 00:46:32,628
+Acaba ben en düşük anlamlı bitten başlamasam, en düşük anlamlı basamaktan başlamasam da.
+
+504
+00:46:33,427 --> 00:46:41,347
+İnsan gibi, okuduğum gibi, soldan başlasam, yani en yüksek anlamlı basamaktan başlayarak sıralamayı gerçekleştiremez miyim?
+
+505
+00:46:41,347 --> 00:46:47,467
+Evet gerçekleştirebilirsiniz. Hatta quicksort'a çok benzer bir şekilde çalışmış olursunuz.
+
+506
+00:46:48,187 --> 00:46:53,467
+Tabii quicksort'a hep seneye göreceksiniz ama Divide and Conquer'da.
+
+507
+00:46:54,107 --> 00:47:01,127
+Biz diziyi aslında 3 parçaya bölüyoruz. Bir tane pivot, pivot'tan küçükler, pivot'tan büyükler şeklinde.
+
+508
+00:47:01,768 --> 00:47:06,927
+Burada alfabe kadar parçaya bölüyorsunuz. Aradaki temel fark aslında bu.
+
+509
+00:47:06,928 --> 00:47:08,528
+ne demek alfabe kadar parça?
+
+510
+00:47:08,988 --> 00:47:21,907
+Her bir adımda o adımda sıralayacağınız farklı yani unique karakter seti sayısı neyse o kadar parçaya bölersiniz ve her bir parçayı kendi içinde recursif olarak tekrar MSD'ye göndersiniz.
+
+511
+00:47:22,568 --> 00:47:29,228
+Ve bunu son karaktere kadar gerekiyorsa devam ettirdiğinizde sıralama işlemini gerçekleştirmiş olursunuz.
+
+512
+00:47:29,228 --> 00:47:31,827
+Şimdi ne demek istiyorum? Şöyle göstereyim.
+
+513
+00:47:32,168 --> 00:47:34,148
+Bakın mesela burada bir sözlük var diyelim.
+
+514
+00:47:34,147 --> 00:47:42,527
+alfabet, alignment, allocate, algorithm, alternative, alias, alternate ve all diye kelimeler var.
+
+515
+00:47:42,607 --> 00:47:43,547
+Ben bunları sıralayacağım.
+
+516
+00:47:43,707 --> 00:47:47,267
+Diyelim ki A'ları sıraladım kendi içinde, L'leri sıraladım kendi içinde.
+
+517
+00:47:47,967 --> 00:47:51,427
+Artık şu birinci en anlamlı basamak bitti.
+
+518
+00:47:51,547 --> 00:47:53,467
+İkinci en anlamlı basamak bitti.
+
+519
+00:47:54,027 --> 00:47:56,227
+Üçüncü en anlamlı basamağa geldi.
+
+520
+00:47:56,227 --> 00:47:59,107
+Şimdi bu üçüncü en anlamlı basamağa geldim.
+
+521
+00:47:59,507 --> 00:48:00,467
+Bakın burada ne var?
+
+522
+00:48:00,987 --> 00:48:01,547
+T var.
+
+523
+00:48:02,787 --> 00:48:03,367
+I var.
+
+524
+00:48:03,367 --> 00:48:07,047
+L var, G var, T var.
+
+525
+00:48:07,607 --> 00:48:13,947
+Yani toplamda G, İ, L, P ve T şeklinde parçalar var.
+
+526
+00:48:14,107 --> 00:48:14,787
+Parçalar oluşuyor.
+
+527
+00:48:14,847 --> 00:48:17,667
+1, 2, 3, 4, 5 tane alt kümer.
+
+528
+00:48:18,327 --> 00:48:23,867
+Ve ben G ile başlayan, yani sanki bu taraf hiç yokmuş gibi, G ile başlayanları kendi içinde,
+
+529
+00:48:23,867 --> 00:48:28,047
+İ ile başlayanları kendi içinde, L ile başlayanları kendi içinde,
+
+530
+00:48:28,047 --> 00:48:33,307
+MSD'ye tekrar verdiğimde bunları paralel olarak bile çalıştırabilirim.
+
+531
+00:48:33,307 --> 00:48:40,967
+Mesela bu bir işlemcide çalışır, bu başka bir işlemcide, bu başka bir işlemcide çekilerek de bunları paralelleştirmemde kolaylaşır.
+
+532
+00:48:41,327 --> 00:48:44,807
+Şimdi ona baktığımızda G, başka G yok zaten kendi içinde sıralandı.
+
+533
+00:48:44,868 --> 00:48:48,988
+Bakın burası bitti. Artık bunun devamıyla hiçbir şekilde ilgilenmeme gerek bile kalmadı.
+
+534
+00:48:49,300 --> 00:48:55,300
+Şimdi i'ye bakalım. i'ler kendi içinde sıralanınca ne olacak? Kalanlar ne? g ve a.
+
+535
+00:48:55,300 --> 00:49:07,300
+O zaman ben ondan sonraki adımda burayı g ve a olarak böleceğim. a ve g'yi kendi içinde sıralayacağım. a yukarıda g aşağıda kalacak. a'dan bir tane var, g'den de bir tane var.
+
+536
+00:49:07,300 --> 00:49:10,300
+s'ye ve hınmınta bakmama gerek kalmıyor.
+
+537
+00:49:10,300 --> 00:49:16,300
+allocate ve all. all'dan sonra null karakter var. bu bölü sıfır hepsinin önünden önce olduğu için.
+
+538
+00:49:16,300 --> 00:49:27,300
+için ALL yukarı çıkacak, allocate aşağı inecek. Ondan sonra da bu bittiği için ALL yi de sıralamış olacağım. Bunun da sonrasına hiç bakmama gerek kalmıyor.
+
+539
+00:49:27,779 --> 00:49:37,039
+P'den bir tane var. Bunları hiç kontrol etmeme bile gerek kalmıyor. T'ler, E'lere bakacağım. R'lere, N'lere, A'lara, T'lere. Burada sonuna kadar neredeyse gitmek zorundayım.
+
+540
+00:49:37,039 --> 00:49:45,039
+Buralarda çok güzel kurtardım ama şuraya geldiğimde alternative ve alternate gelimlere geldiğimde aslında patladım.
+
+541
+00:49:45,039 --> 00:49:54,039
+Her bir karakteri tek tek tek kontrol etmek ve tab buraya kadar son karaktere kadar sort işlemine, MSD'yi çağırma işlemine devam etmem gerek.
+
+542
+00:49:54,039 --> 00:50:01,039
+Peki bu algoritmasından bahsedelim. Ne yapacağız? Yine input'umuz bir tane R kümesi.
+
+543
+00:50:01,039 --> 00:50:03,039
+S1'den S1'e kadar string alacağız.
+
+544
+00:50:03,719 --> 00:50:05,639
+Yine alfabemiz sıfırla sigma arasında.
+
+545
+00:50:06,919 --> 00:50:14,279
+Buradaki fark, LSD'den olan fark, bütün girdilerin aynı boyutta olmasına gerek yok.
+
+546
+00:50:14,439 --> 00:50:17,079
+Yani değişken uzunluklarda çalışabilirsiniz.
+
+547
+00:50:17,219 --> 00:50:18,899
+Çünkü soldan sağa doğru gidiyorsunuz.
+
+548
+00:50:19,259 --> 00:50:21,679
+Böyle sıfır yarana kadar çalışabilirsiniz.
+
+549
+00:50:22,239 --> 00:50:24,199
+Çıktığımız yine sıralanmış bir dizi.
+
+550
+00:50:24,199 --> 00:50:25,439
+Ne yapacağız?
+
+551
+00:50:25,439 --> 00:50:38,499
+Bakın bakın buradaki algoritmada diyor ki eğer boyut sigma'dan küçükse yani alfabe boyutundan küçükse hiç MSD Radix Sort ile uğraşma direkt olarak quicksort yap geç diyor.
+
+552
+00:50:39,380 --> 00:50:53,700
+Onun dışında bunu ayır ilk şeyi ayır şöyle geri geleyim ilk parçayı ayır şöyle kümelemeyi yap ondan sonra burayı rekürsif olarak her birini kendi içinde
+
+553
+00:50:53,699 --> 00:51:05,199
+her birini kendi içinde MSD Radix Sort'a tekrar ver. Tamam. Her birini kendi içinde sort diyoruz.
+
+554
+00:51:05,199 --> 00:51:17,079
+Bunun için de yine counting sort kullanabilirsiniz. Örneğin düzenden yine gidelim. Girdiğimiz şu şekilde.
+
+555
+00:51:17,079 --> 00:51:20,259
+D, A, B, A, D, aynı örnek.
+
+556
+00:51:20,839 --> 00:51:22,339
+Nereden başlayacağım? Buradan.
+
+557
+00:51:23,520 --> 00:51:25,339
+Burada neler var?
+
+558
+00:51:25,579 --> 00:51:30,079
+D var, A var, C var, B var, E var.
+
+559
+00:51:30,779 --> 00:51:32,540
+Yani A, B, C, D, E, F var.
+
+560
+00:51:33,460 --> 00:51:35,559
+Şimdi bunları kendi içinde sıralayacağım.
+
+561
+00:51:36,160 --> 00:51:37,279
+Ve ne oluştu?
+
+562
+00:51:37,579 --> 00:51:38,520
+Bakın şurası A.
+
+563
+00:51:41,119 --> 00:51:41,999
+Şurası B.
+
+564
+00:51:44,439 --> 00:51:45,699
+Şu bir tanesi C.
+
+565
+00:51:47,079 --> 00:51:51,460
+2 tanesi D, 2 tanesi E, 3 tane de F var.
+
+566
+00:51:52,699 --> 00:51:53,400
+Bu nedir?
+
+567
+00:51:53,639 --> 00:51:56,199
+Aslında hani counting sort yapıyorum ya.
+
+568
+00:51:56,740 --> 00:52:03,020
+A sıfırdan başlıyor, B ikiden başlıyor, C beşten, D altıdan, E sekizden, F de dokuzdan başlıyor demiş olduk.
+
+569
+00:52:03,020 --> 00:52:06,039
+Her birinin başlangıç için listelerini tutuyorum.
+
+570
+00:52:06,219 --> 00:52:08,059
+Yani A sıfırdan başlıyor A'lar.
+
+571
+00:52:08,639 --> 00:52:11,199
+Add ve Ace sıfırla bir de yer alıyor.
+
+572
+00:52:11,779 --> 00:52:13,059
+B ikiden başlıyor.
+
+573
+00:52:13,339 --> 00:52:13,859
+Şimdi ne oldu?
+
+574
+00:52:13,859 --> 00:52:18,520
+benim elimde toplam 6 tane ayrık problem oluştu.
+
+575
+00:52:19,380 --> 00:52:23,680
+1, 2, 3, 6.
+
+576
+00:52:24,880 --> 00:52:26,559
+6 tane problem.
+
+577
+00:52:26,979 --> 00:52:31,339
+A'dan F'ye kadar soldaki basamakları zaten sıraladım.
+
+578
+00:52:31,919 --> 00:52:33,160
+Counting sortla sıraladım.
+
+579
+00:52:33,740 --> 00:52:38,779
+Artık bunları recursive olarak içlerine girip tekrar counting sortla sıralamam lazım.
+
+580
+00:52:39,779 --> 00:52:42,419
+Bunun yüzden bunlar paralelleştirilebilir dedi.
+
+581
+00:52:43,188 --> 00:52:44,188
+Şimdi buna bakıyorum.
+
+582
+00:52:44,747 --> 00:52:46,267
+Bu parçaya sadece odaklanalım.
+
+583
+00:52:46,767 --> 00:52:48,027
+D ve C var.
+
+584
+00:52:48,227 --> 00:52:50,207
+Yine counting sort yaptığınızda ne olacak?
+
+585
+00:52:51,327 --> 00:52:51,707
+Ace
+
+586
+00:52:51,707 --> 00:52:53,547
+ve
+
+587
+00:52:53,547 --> 00:52:55,267
+Add olacak değil mi?
+
+588
+00:52:57,148 --> 00:52:58,407
+Şu karaktere göre
+
+589
+00:52:58,407 --> 00:52:59,528
+C ve D olarak.
+
+590
+00:52:59,868 --> 00:53:00,868
+C sıfır.
+
+591
+00:53:01,567 --> 00:53:02,987
+D de bir olacak.
+
+592
+00:53:02,987 --> 00:53:06,387
+Şimdi artık
+
+593
+00:53:06,387 --> 00:53:08,887
+bunlar zaten sıralandı.
+
+594
+00:53:08,948 --> 00:53:10,927
+Artık burasına bakmaya bile gerek kalmıyor.
+
+595
+00:53:10,927 --> 00:53:16,767
+başka da eleman olmadığı için.
+
+596
+00:53:17,368 --> 00:53:19,607
+B'lere baktığınızda A, E, E var.
+
+597
+00:53:20,067 --> 00:53:21,368
+Bunu ikiye böleceksiniz.
+
+598
+00:53:22,208 --> 00:53:24,287
+A zaten bir tane olduğu için
+
+599
+00:53:24,287 --> 00:53:25,307
+kendi içinde sıralı.
+
+600
+00:53:25,408 --> 00:53:26,327
+B burada kalacak.
+
+601
+00:53:29,327 --> 00:53:30,768
+E'ye baktığınızda
+
+602
+00:53:30,768 --> 00:53:32,548
+E iki tane ya. Bunları da tekrar
+
+603
+00:53:32,548 --> 00:53:34,327
+reküs var. Kendi içinde sıralacaksınız.
+
+604
+00:53:34,487 --> 00:53:36,868
+D ve E. Counting sort yaptığınızda
+
+605
+00:53:36,868 --> 00:53:37,548
+B yukarı.
+
+606
+00:53:37,548 --> 00:53:41,588
+B aşağı gidiyor.
+
+607
+00:53:42,748 --> 00:53:43,728
+3. karakterler.
+
+608
+00:53:45,048 --> 00:53:45,728
+Sonra
+
+609
+00:53:45,728 --> 00:53:47,708
+C cluster'ı, şuradaki
+
+610
+00:53:47,708 --> 00:53:49,848
+C count'una geldiğinizde. Zaten bir tane
+
+611
+00:53:49,848 --> 00:53:51,607
+eleman var. Hiçbir şey yapmanıza gerek yok.
+
+612
+00:53:52,768 --> 00:53:53,607
+A ve B'ye hiç
+
+613
+00:53:53,607 --> 00:53:55,527
+değmeyeceksiniz bile bunlara.
+
+614
+00:53:56,308 --> 00:53:57,107
+D'ye geldik.
+
+615
+00:53:57,568 --> 00:53:58,927
+A tek cluster.
+
+616
+00:53:59,787 --> 00:54:01,848
+Son elemana bakıyoruz. B ve D cluster.
+
+617
+00:54:01,988 --> 00:54:03,667
+B yukarı D aşağı. Zaten
+
+618
+00:54:03,667 --> 00:54:04,427
+o şekildeydi.
+
+619
+00:54:04,427 --> 00:54:05,067
+Dab.
+
+620
+00:54:07,548 --> 00:54:08,708
+ve dat.
+
+621
+00:54:09,028 --> 00:54:09,528
+Yani dead.
+
+622
+00:54:11,368 --> 00:54:12,528
+Bunlar da sıralandı.
+
+623
+00:54:13,048 --> 00:54:15,247
+E kendi içinde bir tane
+
+624
+00:54:15,247 --> 00:54:17,188
+zaten. O yüzden yine hiçbir şey
+
+625
+00:54:17,188 --> 00:54:19,107
+yapmadan sıralandığını söyleyebilirim.
+
+626
+00:54:19,988 --> 00:54:21,067
+F'lere geldiğimde de
+
+627
+00:54:21,067 --> 00:54:23,147
+A, E, E var. A kendi
+
+628
+00:54:23,147 --> 00:54:24,467
+içinde zaten tek eleman.
+
+629
+00:54:24,908 --> 00:54:25,808
+F, A, D.
+
+630
+00:54:27,308 --> 00:54:28,728
+Ondan sonra F, E.
+
+631
+00:54:28,848 --> 00:54:30,747
+E'lerden sonra da D ve E var.
+
+632
+00:54:30,927 --> 00:54:33,107
+Yine burayı counting sort yaptığınızda D yukarı
+
+633
+00:54:33,107 --> 00:54:34,128
+E aşağıya gidecek.
+
+634
+00:54:34,787 --> 00:54:34,988
+Bed.
+
+635
+00:54:37,548 --> 00:54:41,768
+Ve fi olarak çıktığı oluşturmuş olacaksınız.
+
+636
+00:54:41,948 --> 00:54:46,948
+Yani ace, ad, bet şeklinde başlayıp fed, bet, fi şeklinde bitireceksiniz.
+
+637
+00:54:47,488 --> 00:54:48,787
+Soldan başlayıp sağa doğru.
+
+638
+00:54:49,208 --> 00:54:50,908
+Şimdi bu basit olsun diye tabii ki şeydi.
+
+639
+00:54:51,288 --> 00:54:53,628
+Hepsine yine aynı sayıda karaktere sahipti.
+
+640
+00:54:53,947 --> 00:54:55,488
+Ama olmak zorunda değil.
+
+641
+00:54:55,747 --> 00:54:56,527
+Onu göstereyim.
+
+642
+00:54:58,188 --> 00:55:00,148
+Yine kitaptan bir örnek.
+
+643
+00:55:01,068 --> 00:55:02,508
+Sevgi Ebit'in kitabından.
+
+644
+00:55:02,508 --> 00:55:05,508
+She sells seashells.
+
+645
+00:55:05,507 --> 00:55:07,727
+shells. Bu da şey tabii tekerleme.
+
+646
+00:55:08,627 --> 00:55:09,407
+By the sea
+
+647
+00:55:09,407 --> 00:55:11,267
+shore. The shells
+
+648
+00:55:11,267 --> 00:55:13,407
+shells
+
+649
+00:55:13,407 --> 00:55:15,267
+are surely sea shells.
+
+650
+00:55:15,947 --> 00:55:17,367
+Söyleyebildim. Biraz yavaş
+
+651
+00:55:17,367 --> 00:55:19,167
+da olsa. Ne yapacağız?
+
+652
+00:55:20,567 --> 00:55:21,287
+Bunları önce
+
+653
+00:55:21,287 --> 00:55:23,127
+şuradaki ilk
+
+654
+00:55:23,127 --> 00:55:25,447
+harflere göre sıralayacağız.
+
+655
+00:55:26,667 --> 00:55:27,267
+Burada ne var?
+
+656
+00:55:27,407 --> 00:55:29,527
+A var. S var. A var. B var.
+
+657
+00:55:29,607 --> 00:55:31,487
+S var. T var. Önce A.
+
+658
+00:55:32,127 --> 00:55:32,727
+Sonra B.
+
+659
+00:55:33,427 --> 00:55:35,387
+Sonra S. Sonra T'ler geldi.
+
+660
+00:55:35,507 --> 00:55:39,267
+A kendi içinde zaten bir tane. Gerisine hiç bakmaya gerek yok.
+
+661
+00:55:40,067 --> 00:55:43,567
+B kendi içinde bir tane. Buradan da sonrasına gitmeye gerek yok.
+
+662
+00:55:43,687 --> 00:55:45,287
+Bakın iki tane eleman sıralandı bile.
+
+663
+00:55:46,007 --> 00:55:48,427
+S'ler sıkıntı. S'li bir sürü eleman var.
+
+664
+00:55:48,867 --> 00:55:54,507
+O zaman burada da ikinci rekürsif olarak gidip ikiye, üçü, dördü yapa yapa devam edeceğiz.
+
+665
+00:55:55,267 --> 00:55:57,767
+D'lere geldiğimizde ondan da şimdi bahsedeyim.
+
+666
+00:55:58,507 --> 00:56:01,807
+İleride aslında bahsedeceğim. O zaman şimdilik söylemeyeyim.
+
+667
+00:56:01,807 --> 00:56:04,927
+Tamam şimdi geldik S'lerin içine girdim.
+
+668
+00:56:05,067 --> 00:56:08,387
+Rekürsif olarak ikinci basamaklarına göre sıralıyorum.
+
+669
+00:56:09,067 --> 00:56:09,688
+Neler var?
+
+670
+00:56:10,247 --> 00:56:12,447
+H var, E var, U var.
+
+671
+00:56:13,188 --> 00:56:13,367
+Değil mi?
+
+672
+00:56:13,567 --> 00:56:15,647
+E, H ve U tekil karakterleri.
+
+673
+00:56:16,067 --> 00:56:18,267
+Bunları kendi içinde sıraladığımda counting ile.
+
+674
+00:56:19,267 --> 00:56:22,967
+Sells yani S-E, S-E, S-E, S-E, S-E.
+
+675
+00:56:23,527 --> 00:56:26,227
+Sonra da she, shore, shells, she.
+
+676
+00:56:27,267 --> 00:56:28,867
+Yani şuradaki sıra.
+
+677
+00:56:28,867 --> 00:56:29,887
+she
+
+678
+00:56:29,887 --> 00:56:31,567
+ondan sonra
+
+679
+00:56:31,567 --> 00:56:33,007
+bakın she
+
+680
+00:56:33,007 --> 00:56:36,688
+sure
+
+681
+00:56:36,688 --> 00:56:39,307
+shells
+
+682
+00:56:39,307 --> 00:56:41,787
+she
+
+683
+00:56:43,347 --> 00:56:45,427
+Ve H'lerden bahsediyoruz.
+
+684
+00:56:45,487 --> 00:56:46,487
+Şurlu da sona geldi.
+
+685
+00:56:46,907 --> 00:56:49,007
+Gördüğünüz gibi bunlar kesişmiyor.
+
+686
+00:56:49,427 --> 00:56:57,047
+Yani soldan sağa doğru giderken geliş sırası neyse aynı sırayla yukarıdan aşağıya durmaya devam ediyorlar.
+
+687
+00:56:57,688 --> 00:56:59,528
+Şimdi bunun içinden ne yapacağız?
+
+688
+00:56:59,907 --> 00:57:00,347
+E'ler.
+
+689
+00:57:00,567 --> 00:57:01,887
+E'lerden 5 tane var.
+
+690
+00:57:02,108 --> 00:57:03,987
+E'lerin içine rekürtif olarak gireceğiz.
+
+691
+00:57:04,127 --> 00:57:05,188
+Sonra E'lere gireceğiz.
+
+692
+00:57:05,307 --> 00:57:05,887
+Sonra U'lara.
+
+693
+00:57:06,347 --> 00:57:10,887
+U yine kendi içinde U olduğu için bir tane olduğu için buna da girmeye gerek kalmayacak.
+
+694
+00:57:10,887 --> 00:57:12,307
+Şimdi E'lere girelim.
+
+695
+00:57:12,307 --> 00:57:14,267
+üçüncü karakterlere bakacağız.
+
+696
+00:57:14,487 --> 00:57:16,388
+L, A, A, L, A.
+
+697
+00:57:16,547 --> 00:57:17,767
+Yani sadece A ve L var.
+
+698
+00:57:18,567 --> 00:57:20,047
+A'lar yukarı, L'ler aşağıya.
+
+699
+00:57:20,087 --> 00:57:20,967
+Counting sortla.
+
+700
+00:57:21,888 --> 00:57:22,767
+C shells.
+
+701
+00:57:25,247 --> 00:57:25,847
+C.
+
+702
+00:57:27,787 --> 00:57:28,847
+C shells.
+
+703
+00:57:30,467 --> 00:57:30,667
+Tamam.
+
+704
+00:57:31,327 --> 00:57:32,107
+A'lar geldi.
+
+705
+00:57:32,107 --> 00:57:34,107
+Aynı bulundukları sırayla.
+
+706
+00:57:34,647 --> 00:57:36,107
+Sells ve Sells de buraya geldi.
+
+707
+00:57:36,787 --> 00:57:37,907
+Sonra rekürtif olarak
+
+708
+00:57:37,907 --> 00:57:39,787
+A'ya gireceğiz. Şurayı
+
+709
+00:57:39,787 --> 00:57:42,247
+yapacağız. C ile başlayan
+
+710
+00:57:42,247 --> 00:57:46,707
+Bunları burada nal karakter var o yukarı gidecek.
+
+711
+00:57:49,647 --> 00:57:53,867
+Şerz ve şerz tekrardan S karakteriyle tekrar içine girecek.
+
+712
+00:57:54,387 --> 00:57:56,568
+H karakterini karşılaştıracak.
+
+713
+00:57:56,727 --> 00:58:00,167
+E karakterini L karakterini L karakterini ve S karakterini.
+
+714
+00:58:00,227 --> 00:58:00,568
+Ne oldu?
+
+715
+00:58:00,928 --> 00:58:06,407
+Solda kadar bütün hepsini aynı olmasına rağmen tek tek karşılaştırmak zorunda kalacağım.
+
+716
+00:58:06,787 --> 00:58:09,247
+Ya son karakteri farklı olsaydı bunu bilemem.
+
+717
+00:58:09,248 --> 00:58:12,847
+O yüzden de soldan sağa gidip hepsini karşıya sınmak zorunda kaldım.
+
+718
+00:58:13,447 --> 00:58:14,608
+Sonra L'leri yapacağım.
+
+719
+00:58:14,807 --> 00:58:15,407
+Sels sels.
+
+720
+00:58:15,608 --> 00:58:16,627
+L'ye bak.
+
+721
+00:58:16,728 --> 00:58:17,248
+S'ye bak.
+
+722
+00:58:17,728 --> 00:58:18,347
+Böyle kalacak.
+
+723
+00:58:18,788 --> 00:58:20,088
+Sonra H'lere geleceğim.
+
+724
+00:58:20,667 --> 00:58:21,127
+E var.
+
+725
+00:58:21,368 --> 00:58:21,928
+O var.
+
+726
+00:58:22,328 --> 00:58:22,888
+R var.
+
+727
+00:58:24,068 --> 00:58:26,667
+Burada da ne olacak bunlar?
+
+728
+00:58:27,588 --> 00:58:28,008
+Şi.
+
+729
+00:58:30,267 --> 00:58:30,788
+Şels.
+
+730
+00:58:32,987 --> 00:58:34,608
+Şurada görüyorsunuz.
+
+731
+00:58:34,667 --> 00:58:34,987
+Şi.
+
+732
+00:58:35,228 --> 00:58:35,588
+Şels.
+
+733
+00:58:36,068 --> 00:58:36,828
+Şor ve şi.
+
+734
+00:58:37,347 --> 00:58:38,208
+Buna ne olacak?
+
+735
+00:58:38,208 --> 00:58:39,028
+Yanlış mı yapayım?
+
+736
+00:58:39,247 --> 00:58:42,427
+burada bunu odaklanmamış
+
+737
+00:58:42,427 --> 00:58:44,487
+sadece şu kısmına odaklanmış o yüzden burayı
+
+738
+00:58:44,487 --> 00:58:45,707
+vermemiş ama
+
+739
+00:58:45,707 --> 00:58:48,347
+şişi şels
+
+740
+00:58:48,347 --> 00:58:49,727
+şor
+
+741
+00:58:49,727 --> 00:58:52,327
+olacak burası ondan sonra
+
+742
+00:58:52,327 --> 00:58:54,147
+şişiler kendi içinde bitti
+
+743
+00:58:54,147 --> 00:58:55,227
+şor
+
+744
+00:58:55,227 --> 00:58:58,727
+şişiler bitti
+
+745
+00:58:58,727 --> 00:59:00,727
+şels geldi en son şor kaldı
+
+746
+00:59:00,727 --> 00:59:01,987
+o zaten tek olduğu için
+
+747
+00:59:01,987 --> 00:59:04,187
+o da kendi içinde sıralanmış olacak
+
+748
+00:59:04,187 --> 00:59:06,087
+sürekli olarak ve kürsif şekilde
+
+749
+00:59:06,087 --> 00:59:08,387
+her birinde bir adım öteye git
+
+750
+00:59:08,387 --> 00:59:10,687
+bir adım içeri gir ve orada da
+
+751
+00:59:10,687 --> 00:59:12,467
+counting sort yap. Bir adım içeri gir
+
+752
+00:59:12,467 --> 00:59:14,527
+rekümsü olarak counting sort yap şeklinde
+
+753
+00:59:14,527 --> 00:59:16,587
+ilerleyeceğiz. Buna devam
+
+754
+00:59:16,587 --> 00:59:18,467
+ettiğinizde işte burada söylediğim gibi
+
+755
+00:59:18,467 --> 00:59:20,487
+her bir karakteri tekrar tek tek
+
+756
+00:59:20,487 --> 00:59:22,507
+bakmak zorunda kaldık. Selzdeki
+
+757
+00:59:22,507 --> 00:59:24,227
+L'lere baktık, S'lere baktık.
+
+758
+00:59:24,667 --> 00:59:26,287
+Sonra şu Ş'yle
+
+759
+00:59:26,287 --> 00:59:28,787
+başlayanlarda E, E, E, O'ya
+
+760
+00:59:28,787 --> 00:59:30,267
+baktık. Ondan sonra
+
+761
+00:59:30,267 --> 00:59:32,147
+E, E, L şekline geldi.
+
+762
+00:59:34,147 --> 00:59:34,787
+Ve
+
+763
+00:59:34,787 --> 00:59:36,627
+Şor zaten
+
+764
+00:59:36,627 --> 00:59:38,287
+bir taneydi. L'de bir tane.
+
+765
+00:59:38,387 --> 00:59:40,407
+bu şekilde sıralandı. En son
+
+766
+00:59:40,407 --> 00:59:42,647
+t'lere geldiğimde, şöyle geri gelip de
+
+767
+00:59:42,647 --> 00:59:43,887
+şuradaki t
+
+768
+00:59:43,887 --> 00:59:46,267
+partition'la geldiğimde de
+
+769
+00:59:46,267 --> 00:59:48,527
+t'ye baktım, h'ye
+
+770
+00:59:48,527 --> 00:59:50,247
+baktım, e'ye baktım, bitti.
+
+771
+00:59:50,667 --> 00:59:52,527
+Hepsi zaten sıralıymış
+
+772
+00:59:52,527 --> 00:59:54,147
+dedim. Ne oldu? R,
+
+773
+00:59:54,547 --> 00:59:56,307
+by, şimdi burası c,
+
+774
+00:59:56,427 --> 00:59:57,847
+c şers, c şers, sels,
+
+775
+00:59:58,287 --> 01:00:00,187
+c şers, çor, çürli,
+
+776
+01:00:00,287 --> 01:00:02,167
+dızdığı şeklinde gelmiş oldu.
+
+777
+01:00:02,787 --> 01:00:03,767
+Bu şekilde.
+
+778
+01:00:04,447 --> 01:00:05,707
+Şimdi bunun
+
+779
+01:00:05,707 --> 01:00:08,187
+iyi yanları da var.
+
+780
+01:00:08,187 --> 01:00:09,208
+kötü yanları da var.
+
+781
+01:00:10,047 --> 01:00:11,227
+İyi yanı ne?
+
+782
+01:00:13,047 --> 01:00:14,547
+Önce kötü yanlarından
+
+783
+01:00:14,547 --> 01:00:16,587
+bahsedeyim. Kötü yanı şu
+
+784
+01:00:16,587 --> 01:00:20,327
+bu eğer parçalarınız
+
+785
+01:00:20,327 --> 01:00:22,428
+çok küçükse oldukça yavaş çalışır.
+
+786
+01:00:22,508 --> 01:00:24,647
+Sürekli olarak rekürsif çağrı yaptığınız
+
+787
+01:00:24,647 --> 01:00:25,967
+ve sürekli olarak
+
+788
+01:00:25,967 --> 01:00:28,367
+counting sort yani az elemanlı olsun
+
+789
+01:00:28,367 --> 01:00:30,347
+sürekli counting sort yaptığınız için
+
+790
+01:00:30,347 --> 01:00:32,887
+ve her seferinde sayak sıfırlayacaksınız
+
+791
+01:00:32,887 --> 01:00:34,147
+count edeceksiniz falan.
+
+792
+01:00:34,647 --> 01:00:36,687
+O yüzden algoritmada ne vardı
+
+793
+01:00:36,687 --> 01:00:41,068
+Eğer boyut küçükse
+
+794
+01:00:41,068 --> 01:00:42,587
+direkt olarak hiç uğraşma.
+
+795
+01:00:43,059 --> 01:00:54,559
+quicksort yap geç diyordu. Onun dışında counting sort yap her bir parçayı sonra içine gir tekrardan çalıştır diyordu.
+
+796
+01:00:54,559 --> 01:01:11,859
+Evet, yani insertion sort da çağırmış fark etmez ama sonuçta küçük parçalarda yavaş çalışacağı için bir yerden sonra aslında quicksort gibi bir şeyi çağırmak ya da insertion sort gibi bir algoritmayı çağırmak daha battıklı olacaktır.
+
+797
+01:01:11,859 --> 01:01:19,459
+Mesela bütün harfler farklıysa en kötü durum senaryosu o zaman ne olacak?
+
+798
+01:01:19,679 --> 01:01:22,659
+İki boyutlu m bölü iki tane ayrı parçanız oluşacak.
+
+799
+01:01:22,659 --> 01:01:24,299
+Çok fazla parçalanacaksınız.
+
+800
+01:01:24,400 --> 01:01:27,859
+Çok fazla rekürsif dallanma ve geri toplama yapacaksınız.
+
+801
+01:01:28,299 --> 01:01:33,519
+Ve bu da sizin aslında radix sort olarak bir anda çok yavaş çalışmanıza yetirecek.
+
+802
+01:01:33,639 --> 01:01:34,600
+Ve sonuç doğuracak.
+
+803
+01:01:34,979 --> 01:01:41,780
+O yüzden eğer çok küçük parçalarınız varsa radix sort kullanmak ya da MSD radix sort kullanmak mantıklı değil.
+
+804
+01:01:41,859 --> 01:01:53,500
+Ama iyi yanları ne? Özellikle değişken uzunluklu girdilerde bize çok fazla aslında çok iyi sonuçlar getiriyor. Özellikle şöyle sözlük tarzı uygulamalarda.
+
+805
+01:01:53,500 --> 01:02:06,439
+Şimdi buradaki sabit uzunluklu bir girdi. Baktığımızda A'lar, B'ler, C ve D şeklinde sıralanmıştı hatırlarsanız. Sonra A'lar kendi içinde C ve D diye sıralandı.
+
+806
+01:02:06,439 --> 01:02:11,619
+Şimdi artık C ve D diye sıralandığı için bunlar da tekil birer bir tane C bir tane D var
+
+807
+01:02:11,619 --> 01:02:14,240
+Ben buradaki E ve D'ye hiç bakmıyorum bile
+
+808
+01:02:14,240 --> 01:02:16,979
+Çünkü zaten Ace ve Ed olarak bunlar sıralanmış oldu
+
+809
+01:02:16,979 --> 01:02:18,619
+Sonra Bed
+
+810
+01:02:18,619 --> 01:02:22,799
+A ile başlayan bu cluster'da bu parçacıkta başka yok
+
+811
+01:02:22,799 --> 01:02:25,259
+O yüzden D'ye de bakmak bir tane eleman var
+
+812
+01:02:25,259 --> 01:02:29,539
+Sonra E'lere geldiğimde maalesef son karakterlere de bakmak zorunda kalıyorum
+
+813
+01:02:29,539 --> 01:02:30,559
+C
+
+814
+01:02:30,559 --> 01:02:32,319
+C ile başlayan başka yok
+
+815
+01:02:32,319 --> 01:02:35,299
+O yüzden A ve B'ye hiç bakmam kendi içinde sıralanmıştı
+
+816
+01:02:35,299 --> 01:02:40,359
+D'de de A'lar olduğu için yine son karar gitmek zorunda kaldım.
+
+817
+01:02:40,439 --> 01:02:43,079
+Yani burada 8 tane girdi var.
+
+818
+01:02:43,199 --> 01:02:45,979
+3 x 8 24 tane karakter var.
+
+819
+01:02:46,379 --> 01:02:49,679
+Ben 1, 2, 3, 4, 5 tanesine bakmadım.
+
+820
+01:02:50,079 --> 01:02:52,379
+Yani 19'una baktım 24 taneden.
+
+821
+01:02:52,679 --> 01:02:54,659
+Ne demek? Yaklaşık %80'ine baktım.
+
+822
+01:02:55,220 --> 01:02:56,959
+Karakterlerin %20'sine bakmadım.
+
+823
+01:02:57,780 --> 01:03:01,259
+Hele bir de değişken uzunlukluğu bakın şuradaki örneğe, sözlük gibi örneğe bakın.
+
+824
+01:03:01,259 --> 01:03:04,539
+İşte A, A, B, B, B, C, D.
+
+825
+01:03:04,539 --> 01:03:06,239
+Şimdi C zaten bir tane ya
+
+826
+01:03:06,239 --> 01:03:10,899
+Direkt olarak burada 1, 2, 3, 4, 5, 6, 7, küsür tane şeye
+
+827
+01:03:10,899 --> 01:03:12,259
+Hiçbirine bakmam
+
+828
+01:03:12,259 --> 01:03:14,599
+Sonra aseton ve addition
+
+829
+01:03:14,599 --> 01:03:16,719
+C ve D'ye bakmam yeterli
+
+830
+01:03:16,719 --> 01:03:18,359
+Geri kalanına hiç ilgilenmiyorum
+
+831
+01:03:18,359 --> 01:03:21,039
+B'deki A bir tane
+
+832
+01:03:21,039 --> 01:03:23,899
+O yüzden burada da alt cluster'da başka hiçbir şey yok
+
+833
+01:03:23,899 --> 01:03:25,739
+E'lere baktığımda bed
+
+834
+01:03:25,739 --> 01:03:27,339
+Aslında şuradaki bedler bakın
+
+835
+01:03:27,339 --> 01:03:29,439
+Bedazzled ve Beehive
+
+836
+01:03:29,439 --> 01:03:32,500
+Burada da D ve E'ye bakmak yeterli
+
+837
+01:03:32,500 --> 01:03:34,359
+Geri kalanına hiç bakmıyorum
+
+838
+01:03:34,360 --> 01:04:02,959
+Şuradaki dub ve dead de de işte biri dead olsun biri double olsun. Bunlarda da 3 karaktere bakmak zorunda kalmıyor. Bak toplamda benim diyelim ki 64 tane karakterim vardı. Şurada sadece kaç tane? 7, 14, 15, 16, 17, 17 mi? Kaç tane ya bu? 8 pardon 8, 16, 17, 18, 19 karaktere bakmam yeterli. Yaklaşık %30'u.
+
+839
+01:04:02,959 --> 01:04:16,819
+Şöyle bir girdide. Nasıl? Sadece karakterlerin %30'u karşılaştırmaya girdi ya da sıralama işlemine tabi tutuldu. Ama ben bütün girdiyi sıralayabilmiş oldum. Bu da iyi yanı. Gördüğünüz gibi.
+
+840
+01:04:19,699 --> 01:04:27,759
+Eğer girdi uygunsa MSD Radixort kullanmak çok fayda sağlayabilir. Ama girdi uygun değilse çok da zarar getirebilir.
+
+841
+01:04:27,759 --> 01:04:30,659
+Eğer sabit boyutlu gerileriniz varsa
+
+842
+01:04:32,659 --> 01:04:54,159
+karakter kümeniz fazla geniş değilse tekrar sayeniz fazlaysa mesela kimlik numarası gibi yapılarda o zaman LSD Radixort kullanmak sizi diner zamanda milyonlarca milyarlarca kaydı sıralamanızı sağlar. Bunlar da yine gündelik hayatta aslında kullandığımız diğer sıralama yöntemlerimiz.
+
+843
+01:04:54,159 --> 01:04:59,279
+Son olarak
+
+844
+01:04:59,279 --> 01:05:03,319
+Şimdi ben pek çok yöntemden bahsediyorum
+
+845
+01:05:03,319 --> 01:05:06,560
+Sıralama için klasik karşılaştırma temelli yöntemler var
+
+846
+01:05:06,560 --> 01:05:10,779
+Bölerek sıralayan yöntemler var ki onlardan bahsetmedik
+
+847
+01:05:10,779 --> 01:05:12,119
+Mergesort ve quicksort gibi
+
+848
+01:05:12,119 --> 01:05:15,659
+Ya da hiç karşılaştırma yapmadan
+
+849
+01:05:15,659 --> 01:05:22,679
+Ya da radix yani basamaklar üzerinde çalışarak sıralayan çeşitli yöntemler var
+
+850
+01:05:22,680 --> 01:05:34,060
+Peki ben bunları nasıl karşılaştıracağım? Nasıl karşılaştırabilirim? Ona bakalım. Sıralamanın önce tanımını tekrardan verelim.
+
+851
+01:05:41,427 --> 01:05:42,767
+tanımını verelim.
+
+852
+01:05:44,687 --> 01:05:45,507
+Çok affedersiniz.
+
+853
+01:05:45,627 --> 01:05:47,207
+Bir kısa, iki dakikanızı rica ediyorum.
+
+854
+01:06:44,340 --> 01:06:48,340
+Evet, kusura bakmayın. Bu arada, bunu da temizlemiş olduk.
+
+855
+01:06:48,340 --> 01:07:00,340
+Sıralama nedir? Aslında aynı türden nesneden oluşan bir koleksiyonu bir mantıksal düzene sokmak. Nasıl bir mantıksal düzen? Büyüklük-küçüklük ilişkisi şeklinde düzene sokmak aslında. Buna sıralama adını veriyoruz.
+
+856
+01:07:00,340 --> 01:07:13,340
+Yani A1, A2, A1 şeklinde verilen bir gir diye A1 üstü A2 üstü A1 şeklinde öyle bir çiftliğe dönüştüreceğiz ki şu şartı sağlayacak. Her biri bir öncekinden daha büyük ya da eşit olacak.
+
+857
+01:07:13,340 --> 01:07:40,259
+Şimdi sıralama çok fazla algoritman içinde geçiyor otomatik olarak yani doğal olarak geçmek zorunda kalıyor. İşte işlemlerin proses edinmelerinde, işlemlerinde, ondan sonra optimizasyon problemlerinde, astrofizik problemlerinde, çeşitli dinamik çözümlemelerde, moleküler biyolojide, dil bilimde, gen bilimde, hava tahmininde her yerde sıralama çok fazla kullanılıyor. Yani çok fazla algoritman içinde sıralama yakmak gerekiyor ilk olarak.
+
+858
+01:07:40,259 --> 01:07:48,520
+ve hatta şu da biliniyor ki 20. yüzyılın yani 1900'lerin en iyi 10 algoritması oylandığında bunlardan bir tanesi bir sıralama algoritması quicksort.
+
+859
+01:07:48,520 --> 01:07:57,299
+İşte sıralama bu denli aslında önemli ve hala üzerinde sürekli olarak çalışılan bir araştırma alanı.
+
+860
+01:07:57,659 --> 01:08:00,340
+Peki ben nasıl karşılaştıracağım farklı yöntemleri?
+
+861
+01:08:00,420 --> 01:08:07,379
+Yani benim elimde bir problem var ben bu problemde bir sıralama yapacağım ve bu sıralamada acaba hangisini kullanayım neye göre karar vermek?
+
+862
+01:08:08,439 --> 01:08:09,920
+Temelde 3 tane kriter var.
+
+863
+01:08:10,259 --> 01:08:20,259
+bir tanesi performance. Performance yani başarım Türkçesi. Birincisi doğal olarak çalışma zamanı karmaşıklığı. Yani ne kadar uzun sürüyor?
+
+864
+01:08:20,259 --> 01:08:32,259
+Büyük o notasyonda ya da büyük teta notasyondaki karmaşıklığı nedir? Şimdi burada tabii ki performansta karşılaştırma ve yer değiştirme sayısı olarak ölçebilirsiniz.
+
+865
+01:08:32,259 --> 01:08:40,259
+Eğer yer değiştirme yoksa mesela counting sortta olduğu gibi burada da mesela toplam kaç tane dizi erişimi yapılıyor?
+
+866
+01:08:40,259 --> 01:08:50,020
+gibi bellek erişimde sayılabilir. Demek ki performans benim için önemli. Bir diğeri doğal olarak mekan karmaşıklığı. Yani uzay karmaşıklığı.
+
+867
+01:08:50,020 --> 01:08:58,940
+Bu arada ekstra bellek kullanımı adını veriyoruz. Bir algoritma yerinde sıralama yapabilir. In place sort dediğimiz.
+
+868
+01:08:59,159 --> 01:09:07,679
+Ya da harici bir bellek alanında sıralama yapabilir. Out of place sort. In place sort nedir? Bir rafınız var.
+
+869
+01:09:10,259 --> 01:09:17,259
+ve işte bir taneyi çıkartıp ömrünün yerine koyuyorsunuz. Bir tane iki tane çıkartıp birinin yerine kaydırıyorsunuz gibi.
+
+870
+01:09:17,259 --> 01:09:27,259
+En fazla çok küçük bir belki bir stack kullanılabilir. Function call stack ya da sabit sayıda ekstra değişken kullanabilirsiniz.
+
+871
+01:09:27,259 --> 01:09:33,259
+Yani sabit ilave alanı. Eliniz ya da iki eliniz. Başka hiçbir yeri kullanamazsınız.
+
+872
+01:09:33,259 --> 01:09:43,679
+direkt olarak rafta kitapları raft üzerinde sıraladığınızda buna ekstra bir dizi kullanmadığınızda ya da alan buna in place sort adını veriyoruz.
+
+873
+01:09:43,979 --> 01:09:58,200
+Ben şeyim yerim bol aldım bütün kitapları raftan çıkarttım döktüm yere ondan sonra bir şekilde onları alıp tekrar sıraladım ya da bir raftakileri sıralayarak başka bir rafa yerleştirdim.
+
+874
+01:09:58,200 --> 01:10:03,800
+ne oldu? İki raf bulmağında. İşte böyle harici bir bellek alanı çıktığı için kullanıyorsanız
+
+875
+01:10:03,800 --> 01:10:07,379
+buna da out of place sort adı veriliyor. Mesela counting sort da gördük değil mi?
+
+876
+01:10:08,679 --> 01:10:14,360
+Mesela merge sort da bu şekilde. Bir diğeri de tekrar eden değerlerin ne gibi işlem görülüyor.
+
+877
+01:10:14,599 --> 01:10:21,160
+Yani girdideki sıra korunabiliyor mu korunamıyor mu? Eğer korunuyorsa buna istikrarlı ya da stable bir algoritma adı verir.
+
+878
+01:10:21,220 --> 01:10:26,720
+Stable sort deriz. Girdide tekrar eden değerler çıktığı da aynı sırayla yer alınlar.
+
+879
+01:10:26,719 --> 01:10:35,399
+Counting sort'ta hatırlarsınız işte önde olan yukarıda kalıyordu. Sonra gelen aşağıda kalıyordu. Demek ki girdideki sırayı koruyor.
+
+880
+01:10:35,399 --> 01:10:41,579
+İşte şeyleri düşünelim ne bileyim işte yaşları 5 olanlar var ama
+
+881
+01:10:42,032 --> 01:10:46,091
+Mesela 5 yaşındaki Ayşe daha önce gelmişti, sıraya girmişti.
+
+882
+01:10:47,731 --> 01:10:49,431
+Veli daha sonra gelmişti.
+
+883
+01:10:49,891 --> 01:10:54,711
+Gerçekten de sıralandığında işte Ayşe daha önde, Veli daha arkada kalacak şekilde.
+
+884
+01:10:54,891 --> 01:11:02,471
+Yani girdideki tekrar sırasını, 5 yaştaki tekrar sırasını çıktığı da koruyabilirse buna stable, sort adı veriliyor.
+
+885
+01:11:02,872 --> 01:11:08,731
+Eğer koruyamıyorsa ya da bunun yer garantisini veremiyorsa yani Veli Ayşe'nin önüne geçebilir.
+
+886
+01:11:08,731 --> 01:11:20,931
+Çünkü ben yaşa göre sıralıyorum gibi bir şey söz konusuysa da o zaman tekrarın garantisinin olmadığına dair istikrar olmayan istikrarsız ya da unstable sort adını veriyoruz.
+
+887
+01:11:21,411 --> 01:11:30,191
+Yani performans, ekstra bellek gereksinimi ve tekrar eden değerlerin nasıl işlem gördüğü ile sıralama algoritmalarını temel olarak değerlendiriyoruz.
+
+888
+01:11:30,871 --> 01:11:32,971
+Şimdi pek çok algoritmik yaklaşım yöntemi var.
+
+889
+01:11:32,971 --> 01:11:38,591
+Tabi bir tanesi kaba kuvvet, brute force, mesela selection sort, bubble sort, shell sort bunlara bir örnek.
+
+890
+01:11:38,731 --> 01:11:40,531
+Selection Sort'ta Bubble Sort'ta ne yapıyoruz?
+
+891
+01:11:40,671 --> 01:11:41,331
+Curlemesine.
+
+892
+01:11:42,471 --> 01:11:43,111
+Karşılaştır.
+
+893
+01:11:43,191 --> 01:11:47,051
+Büyükse at, küçükse at, neyse yer değiştir diye devam ediyoruz.
+
+894
+01:11:49,051 --> 01:11:52,551
+Girdiği uzayını azaltarak ilerleyebiliriz.
+
+895
+01:11:52,671 --> 01:11:54,331
+Insertion Sort'u görmüştük.
+
+896
+01:11:54,911 --> 01:11:57,791
+Bu da Deep Breeze and Concurve tarzında bir yaklaşım.
+
+897
+01:11:58,551 --> 01:12:03,931
+Girdiği başka bir veri tipinde, bir veri yapısında dönüştürerek ifade edip
+
+898
+01:12:03,931 --> 01:12:07,791
+bunu veri yapısını kullanarak çözümü geliştirebiliyorduk.
+
+899
+01:12:07,791 --> 01:12:22,011
+İşte heap sort mesela. Girdiği bir heap organizasyonuna çevirip heap organizasyonunun yapısını kullanarak n-logan, n tane logan heapify işlemi yaparak problemi çözebiliyoruz.
+
+900
+01:12:22,131 --> 01:12:31,711
+İşte ne oldu? Problemi dönüştürdüm. Başka bir veri yapısı kullanarak dönüştürdüm. Bu yüzden bu arada Transformer Concur tipi yöntem veriliyor sıralama yöntemi.
+
+901
+01:12:31,712 --> 01:12:34,792
+Bu ders kapsamında görmedik ama işte
+
+902
+01:12:34,792 --> 01:12:36,892
+algoritma analizine bıraktık. Divide and
+
+903
+01:12:36,892 --> 01:12:38,671
+Concure parçala ve yönet
+
+904
+01:12:38,671 --> 01:12:41,171
+yaklaşımı da var.
+
+905
+01:12:41,532 --> 01:12:42,532
+Burada da
+
+906
+01:12:42,532 --> 01:12:44,871
+girdiği bir şekilde bir
+
+907
+01:12:44,871 --> 01:12:46,752
+mantığa göre daha ufak parçaları
+
+908
+01:12:46,752 --> 01:12:48,771
+ayırmak. Ayırdığımız parçaları
+
+909
+01:12:48,771 --> 01:12:50,772
+kendi içine daha küçük problemler haline gelmiş
+
+910
+01:12:50,772 --> 01:12:52,731
+dizi parçacıklarını sıralamak.
+
+911
+01:12:53,151 --> 01:12:54,231
+Ondan sonra da bunları
+
+912
+01:12:54,231 --> 01:12:56,451
+combine etmek yani bir araya getirip
+
+913
+01:12:56,451 --> 01:12:58,671
+tekrardan çıktığı oluşturmak
+
+914
+01:12:58,671 --> 01:13:00,772
+şeklindeki yaklaşımlar var.
+
+915
+01:13:00,771 --> 01:13:02,431
+Merge Sort'da Quick Sort dedik.
+
+916
+01:13:02,911 --> 01:13:05,771
+Anlatmayacağım ama fikir şu Merge Sort'da.
+
+917
+01:13:06,771 --> 01:13:12,391
+Eğer elimde iki tane sıralı dizi varsa o zaman ben bunları düzgün bir şekilde birleştirebilirsem
+
+918
+01:13:12,391 --> 01:13:16,751
+efektif bir şekilde sıralı diziyi, birleşmiş sıralı diziyi elde edebilirim.
+
+919
+01:13:17,031 --> 01:13:17,951
+Peki o zaman ne yapacağım?
+
+920
+01:13:18,091 --> 01:13:20,091
+Şimdi benim elimde bir tane dizi var.
+
+921
+01:13:20,611 --> 01:13:21,391
+Yapacağım şey şu.
+
+922
+01:13:21,591 --> 01:13:22,791
+Aslında ben bunu ikiye böleceğim.
+
+923
+01:13:23,151 --> 01:13:25,591
+Artık elimde M bölü ikilik iki tane problem var.
+
+924
+01:13:26,131 --> 01:13:27,291
+Sonra bunları da ikiye böleceğim.
+
+925
+01:13:28,311 --> 01:13:30,551
+M bölü dörtlük dört tane problem var.
+
+926
+01:13:30,551 --> 01:13:32,791
+M bölü 8'lik 8 tane problem var
+
+927
+01:13:32,791 --> 01:13:34,831
+şeklinde diyelim ki dizimiz 8 elemanlıydı.
+
+928
+01:13:34,891 --> 01:13:37,091
+Yani her biri bir elemanlı
+
+929
+01:13:37,091 --> 01:13:38,711
+8 tane ufakcık diziden
+
+930
+01:13:38,711 --> 01:13:40,871
+oluşan problemlere böldüm. 8 tane
+
+931
+01:13:40,871 --> 01:13:42,271
+tek elemanlı diziyi sıralayacağım.
+
+932
+01:13:42,871 --> 01:13:44,671
+Tek elemanlı dizi zaten tanım olarak
+
+933
+01:13:44,671 --> 01:13:46,811
+kendi içinde sıralıdır. Çünkü tek bir eleman var.
+
+934
+01:13:46,891 --> 01:13:48,111
+Büyüklük-küçük bir ilişkisi yok.
+
+935
+01:13:48,651 --> 01:13:50,171
+O zaman ne yapacağım şimdi?
+
+936
+01:13:50,771 --> 01:13:52,511
+Ben burada aslında
+
+937
+01:13:52,511 --> 01:13:54,291
+divide ettim. Ondan sonra
+
+938
+01:13:54,291 --> 01:13:56,471
+concure ettim. Concure ederken
+
+939
+01:13:56,471 --> 01:13:58,031
+hiçbir şey yapmadım. Kendi içinde sıralıdır.
+
+940
+01:13:58,111 --> 01:14:00,531
+Tek eleman sıralıdır dedim. Sonra ne yapacağım? Bunları birleştirdim.
+
+941
+01:14:00,551 --> 01:14:05,191
+İşte bu birleştirirken şu iki parçayı al birleştir.
+
+942
+01:14:05,731 --> 01:14:09,751
+Bu iki parçayı al birleştir.
+
+943
+01:14:09,811 --> 01:14:11,831
+Sonra bu ikilileri al dörtlü yap.
+
+944
+01:14:12,691 --> 01:14:14,011
+İkilileri al dörtlü yap.
+
+945
+01:14:14,471 --> 01:14:21,491
+Dörtlüleri al sekizli yap şeklinde birleştire birleştire gittiğimizde biz merge sort dediğimiz argumentmayı gerçekleştirmiş oluruz.
+
+946
+01:14:21,571 --> 01:14:22,431
+Bunun artısı ne?
+
+947
+01:14:22,871 --> 01:14:25,251
+Enlogen karmaşıklıklı sıralama yapmamı sağlar.
+
+948
+01:14:25,571 --> 01:14:26,351
+Detayına girmiyorum.
+
+949
+01:14:26,351 --> 01:14:29,091
+ama buradaki ikiye bölme
+
+950
+01:14:29,091 --> 01:14:31,171
+ve sonra ikili toplama mantığından
+
+951
+01:14:31,171 --> 01:14:32,831
+login geldiğini anlayabilirsiniz
+
+952
+01:14:32,831 --> 01:14:35,051
+ve
+
+953
+01:14:35,051 --> 01:14:36,871
+login ikiye böl
+
+954
+01:14:36,871 --> 01:14:38,691
+ikiye bölerek devam ettik
+
+955
+01:14:39,539 --> 01:14:59,539
+ama maalesef diziyi oluşturmak için burada birleştirip de oluşturmak için ekstradan bir yine çıktı dizisine, output dizisine bu inputtu bir output dizisine ihtiyaç duyuyoruz. O yüzden de en orantılı bir ekstra alan ihtiyacı var yerinde birleştirme yapabilmemiz için.
+
+956
+01:14:59,539 --> 01:15:29,459
+başka bölme yönetti quicksort var işte bu da yine her türlü değişiklik için çalışabilen çok popüler ve çok bilinlik bir algoritma genel olarak nLogende çalışır ama en kötü durumda n kareye çıkabilir tabi bu çok şey hani çok çok çok özel bir durum fakat genel olarak nLogende çalışır bu da aslında yine bir bölme mantığıyla gidiyor fakat merge sortta neye göre bölmüştüm ortadan ikiye böl ortadan ikiye böl diye gitmiştim
+
+957
+01:15:29,459 --> 01:15:31,139
+quicksort'taysa
+
+958
+01:15:31,139 --> 01:15:31,399
+pardon
+
+959
+01:15:31,399 --> 01:15:32,819
+quicksort'taysa
+
+960
+01:15:32,819 --> 01:15:33,599
+bölmeyi
+
+961
+01:15:33,599 --> 01:15:34,939
+değerlere göre yapıyorsunuz.
+
+962
+01:15:34,979 --> 01:15:35,159
+Yani
+
+963
+01:15:35,159 --> 01:15:36,639
+bir değer seçiyorsunuz
+
+964
+01:15:36,639 --> 01:15:37,139
+bir pivot
+
+965
+01:15:37,139 --> 01:15:37,739
+ve
+
+966
+01:15:37,739 --> 01:15:39,220
+bu pivot değerinden
+
+967
+01:15:39,220 --> 01:15:40,319
+küçükler bir tarafa
+
+968
+01:15:40,319 --> 01:15:41,359
+büyükler bir tarafa
+
+969
+01:15:41,359 --> 01:15:43,239
+ondan sonra her bir parçacığı
+
+970
+01:15:43,239 --> 01:15:44,400
+kendi içinde tekrar
+
+971
+01:15:44,400 --> 01:15:45,679
+bir pivotunu seç
+
+972
+01:15:45,679 --> 01:15:46,699
+küçükler bu tarafa
+
+973
+01:15:46,699 --> 01:15:47,539
+büyükler bu tarafa
+
+974
+01:15:47,539 --> 01:15:48,179
+diye böyle böyle
+
+975
+01:15:48,179 --> 01:15:49,019
+yine ikiye böyle böyle
+
+976
+01:15:49,019 --> 01:15:49,739
+gittiğiniz için
+
+977
+01:15:49,739 --> 01:15:51,439
+log n mertevesi geliyor.
+
+978
+01:15:51,919 --> 01:15:53,039
+N tane elemanla
+
+979
+01:15:53,039 --> 01:15:54,559
+log n'lik diye bir işlem yaptığınızda
+
+980
+01:15:54,559 --> 01:15:55,599
+kabaca n log n'de
+
+981
+01:15:55,599 --> 01:15:57,319
+çalıştığını söyleyebiliyoruz.
+
+982
+01:15:57,319 --> 01:16:17,939
+tabi C-logenlik bir ekstra alan ihtiyacı da var. O detaylara şu anda girmiyorum çünkü quicksortla anlatmadığım için ama bu da çok sık kullanılan ve efektif çalışan bir algoritma. Yine bölerek yönetmeyi sağlayan bir yaklaşım.
+
+983
+01:16:18,199 --> 01:16:26,220
+Başka ne gördük? Radicsort gördük. Radicsort'ta da basabak basamak sıralama yapıyoruz ve gerektiğinde karşılaştırma yapmadan sıralama yapmamıza imkan veriyoruz.
+
+984
+01:16:26,220 --> 01:16:29,300
+mekanik bir cihazla bile sıralama yapabilmemizi sağlıyor.
+
+985
+01:16:30,039 --> 01:16:33,099
+İstersek en düşük anlamda en yüksek anlamda gidebiliyoruz.
+
+986
+01:16:33,160 --> 01:16:40,300
+List Significant Digit Radix Sort ya da en yüksek anlamdan en düşük anlamda doğru özellikle de değişken boyutlu gitgelerim varsa
+
+987
+01:16:40,300 --> 01:16:45,179
+Most Significant Digit Radix Sort yapabiliyorum.
+
+988
+01:16:45,840 --> 01:16:51,019
+Bunların hepsini kabaca şöyle bir tablo olarak gördüğümde karşıma böyle bir manzara çıkıyor.
+
+989
+01:16:51,640 --> 01:16:54,959
+Selection Sort genelde n² ortalama diyorum ben buna.
+
+990
+01:16:54,959 --> 01:16:57,280
+en iyi en kötü durumları şey yapmıyoruz.
+
+991
+01:16:57,379 --> 01:17:01,099
+Insertion sort da n kare mertebesinde ama aslında n kare bölü 2 gerçekten.
+
+992
+01:17:01,900 --> 01:17:05,219
+Shell sort n kare yine ama n üzeri 3 bölü 2 aslında.
+
+993
+01:17:05,840 --> 01:17:12,379
+Merge sort nlog n, quicksort nlog n hatta tam olarak 1.39 tane nlog n diyebiliriz.
+
+994
+01:17:13,140 --> 01:17:17,659
+Radix linear ON ama tabii ki aslında 2NW.
+
+995
+01:17:17,659 --> 01:17:22,279
+Bu W'da ya basamak sayısı ya da alfabe boyutu olarak değişiyor.
+
+996
+01:17:22,279 --> 01:17:31,199
+MSD'ye baktığımızda aynı şekilde o da. Linear mertebede kalıyor ama aslında NW çarpanını unutmamız gerekiyor.
+
+997
+01:17:31,199 --> 01:17:38,859
+Bu nedenle alfabemiz çok büyükse o zaman MSD ya da LSD kullanmak biraz anlamsız hale geliyor.
+
+998
+01:17:39,319 --> 01:17:46,779
+Ama küçük alfabe çok tekrarlar varsa çok güzel kazanç sağlamamızı sağlayabilmemizi getiriyor bu algoritmalar.
+
+999
+01:17:47,479 --> 01:17:50,499
+Heapsort bu da enlogen hatta tam olarak iki enlogen.
+
+1000
+01:17:50,499 --> 01:17:54,879
+Şimdi stable mı değil mi ona baktığımızda
+
+1001
+01:17:54,879 --> 01:17:59,059
+Selection sort stable değil yani girdik sıraya çıktı da gözetmez
+
+1002
+01:17:59,059 --> 01:18:01,679
+Eğer gözetmeniz gerekiyorsa kullanamazsınız
+
+1003
+01:18:01,679 --> 01:18:03,739
+Insertion sort gözetir
+
+1004
+01:18:03,739 --> 01:18:09,259
+Shell sort da aynı seleksiyonla benzer mantıklı ya da bubble sort bu da gözetmez
+
+1005
+01:18:09,259 --> 01:18:12,299
+Merge sort gözetir, quicksort gözetmez
+
+1006
+01:18:12,299 --> 01:18:17,539
+Değere bağlı olarak bölükleme yaptığı için bu konuma bağlı olarak yaptığı için gözetiyor
+
+1007
+01:18:17,539 --> 01:18:28,459
+Radix sortları da az önce gördük. Yukarıdaki yukarıda kalmaya devam etti. Aşağıdaki aşağıda oklar kesişmediği için istikrarlı sıralama yapıyor.
+
+1008
+01:18:28,459 --> 01:18:37,060
+Heapsort da yine heap organizasyonu yüzünden sıralamayı değiştirebildiğinden dolayı girdi sırasını istikrarlı olarak çıktı da korumaz.
+
+1009
+01:18:37,555 --> 01:18:51,555
+Bu nedenle istikrarlı olup olmama durumlarını bu şekilde yorumlayabiliriz. Peki in place mi? Yani ekstra harici alan ihtiyacı var mı? Yok mu? Bu in place sıralar seleksiyon ekstra sabit alan bir tane değişken kullanırsınız. Temp.
+
+1010
+01:18:52,295 --> 01:19:00,476
+Insertion'da da aynı şekilde bir tane temp kullanırsınız ve yerinde sıralama yapabilirsiniz. Direkt girdik dizimde. Shell sortta da kez aynı şekilde. Bubble sortta ya da.
+
+1011
+01:19:00,476 --> 01:19:03,715
+merge sort'ta ise yerinde sıralama yapamazsınız.
+
+1012
+01:19:03,916 --> 01:19:05,675
+Aynı Radix sortlarda olduğu gibi.
+
+1013
+01:19:06,215 --> 01:19:08,756
+Ve mutlaka n'lik bir dizi ihtiyacınız var.
+
+1014
+01:19:09,055 --> 01:19:12,256
+İlave bir ekstra dizide çıktığı oluşturursunuz.
+
+1015
+01:19:13,076 --> 01:19:17,956
+Radix'te de aynı şekilde nr, bu da count dizisi ya da dr.
+
+1016
+01:19:17,956 --> 01:19:21,175
+dr ne? Radix'te bir de rekürsif çağrı var.
+
+1017
+01:19:21,576 --> 01:19:23,175
+Onun bir call stack derinliği olacak.
+
+1018
+01:19:23,175 --> 01:19:30,715
+O yüzden n artı D çarpı R olarak burada Radix'te MSD'de biraz daha fazla ekstra alan ihtiyacınız var.
+
+1019
+01:19:31,575 --> 01:19:37,875
+Quicksort yine yerinde sıralar ama silogenlik bir ekstra alan ihtiyacı duyar.
+
+1020
+01:19:38,255 --> 01:19:41,815
+Heapsort da yerinde sıralar, ekstra alan ihtiyacı hissetmez.
+
+1021
+01:19:41,916 --> 01:19:46,035
+Çünkü aynı dizi üzerinde tekrar tekrar heap yufa işlemini gerçekleştirebilirsiniz.
+
+1022
+01:19:46,035 --> 01:20:11,655
+Evet yani istikrar gerekiyorsa gerekmiyorsa yerinde sıralama yapmalıysanız ya da yok ekstra dizi kullanabilirim diyorsanız ya da yok ben kesinlikle ekstra bir şey kullanamam diyorsanız ona göre bir de tabii ki karmaşıklık sizin için tatmin edici olması bekleniyorsa buradaki tablo tabii çok daha fazla sıralama algoritmasını da bunu ekleyebilirsiniz.
+
+1023
+01:20:11,655 --> 01:20:14,355
+Biz kabaca bahsettiklerimizi buraya ekledik.
+
+1024
+01:20:14,795 --> 01:20:15,875
+Bir seçim yapacaksınız.
+
+1025
+01:20:16,115 --> 01:20:16,795
+Bu bir trade-off.
+
+1026
+01:20:17,636 --> 01:20:18,395
+Seçeceksiniz.
+
+1027
+01:20:18,596 --> 01:20:22,795
+Bunu mu seçtim, şunu mu seçtim, hangi sebepten neyi seçtiğinizi karar verip
+
+1028
+01:20:22,795 --> 01:20:27,975
+algoritmanızı, sıralama algoritmanızı toplam çözümünüzde kullanacaksınız.
+
+1029
+01:20:28,615 --> 01:20:32,835
+Sıralama algoritmalarının karşılaştırılması için de temel yöntem ve yaklaşım bu şekilde.
+
+1030
+01:20:34,175 --> 01:20:36,935
+Evet arkadaşlar bugünkü dersimiz bu kadar.
+
+1031
+01:20:37,095 --> 01:20:39,315
+Ara vermeden hızlı bir şekilde bitirmek istedim.
+
+1032
+01:20:41,655 --> 01:20:45,136
+14 haftalık teorik derslerimizin sonuna geldik.
+
+1033
+01:20:46,636 --> 01:20:48,076
+Sormak istediğiniz bir soru var mı?
+
+1034
+01:20:51,572 --> 01:20:53,572
+Finan sınavı olacak.
+
+1035
+01:20:54,052 --> 01:20:56,231
+Onu söyleyeyim, daha size sorabilirsiniz diye.
+
+1036
+01:20:56,631 --> 01:20:59,032
+Vize sınavına benzer bir şekilde bir finan sınavı olacak.
+
+1037
+01:20:59,591 --> 01:21:00,691
+Evet, binah şimdi alayım.
+
+1038
+01:21:02,151 --> 01:21:03,872
+Bitirdiniz sandım hocam, teşekkür ederim dedim.
+
+1039
+01:21:04,532 --> 01:21:08,351
+Evet, ben teşekkür ederim katılımınız ve katkılarınız için arkadaşlar.
+
+1040
+01:21:09,672 --> 01:21:14,151
+Varsa başka soru, öneri, istek, eleştiri hepsini açıyorum.
+
+1041
+01:21:20,435 --> 01:21:24,255
+Peki, o zaman yazan da yok.
+
+1042
+01:21:27,859 --> 01:21:34,879
+ekran paylaşımını durdurduk. Evet, projenin ne kadar zamanı kaldı? Az zamanı kaldı değil mi?
+
+1043
+01:21:38,099 --> 01:21:44,979
+Teslim ne zamandı? Yarın. Yarın da değil mi? Yarın akşam 7-7 diye hatırlıyorum. 30 Mayıs evet. Tamam.
+
+1044
+01:21:46,179 --> 01:21:52,019
+Ve işte bir projeniz kaldı. Finallere kadar bütün ödev ve projeleri girmeye gayret edeceğiz.
+
+1045
+01:21:52,019 --> 01:21:55,499
+Biz finalde pazartesi günü olduğu için pazartesiye yetirtilmeye çalışacağız.
+
+1046
+01:21:56,620 --> 01:21:59,579
+Değerlendirmedinizi ve not girişlerinizi OBS üzerinden.
+
+1047
+01:22:00,700 --> 01:22:05,159
+Zaten hani öncekilerinizi takip etmişsinizdir ama proje biraz daha hızlı bir şekilde olacak.
+
+1048
+01:22:06,260 --> 01:22:10,760
+Ve online finalimizde de dönemi tamamlayacağız.
+
+1049
+01:22:10,760 --> 01:22:16,120
+Dediğim gibi şu anda hatırlamıyorum ama bir öğrenci şeye girecek mazeret sınavına.
+
+1050
+01:22:16,540 --> 01:22:19,040
+Yarın saat 16'da sınavı tanımlayacağım.
+
+1051
+01:22:19,040 --> 01:22:23,019
+16'da başlayacak şekilde sınav tanımlayacağım online yalnızla.
+
+1052
+01:22:23,019 --> 01:22:24,700
+Evet atamasını gerçekleştireceğim.
+
+1053
+01:22:25,459 --> 01:22:27,560
+Arkadaşımız oradan katılabilir sınava.
+
+1054
+01:22:28,200 --> 01:22:31,019
+Peki o zaman kendinize iyi bakın.
+
+1055
+01:22:31,220 --> 01:22:32,620
+Katılmanız için teşekkür ediyorum.
+
+1056
+01:22:33,359 --> 01:22:34,540
+Ve iyi haftalar diliyorum.
+
+1057
+01:22:34,720 --> 01:22:35,199
+Hoşçakalın.
+
+1058
+01:22:35,959 --> 01:22:36,959
+Hoşçakalın hocam.

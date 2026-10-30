@@ -1,0 +1,4183 @@
+1
+00:01:31,924 --> 00:01:48,303
+Evet merhaba arkadaşlar. Dersle başlayabiliriz sanırım. 5 kişi gözüküyor şu anda. Önce birkaç tane bilgi vererek başlamak istiyorum. Birincisi daha haberiniz olmuştur.
+
+2
+00:01:49,783 --> 00:02:01,303
+Günaller ve bütünlemeler online olacak. Bu bilgiyi vereyim. İkincisi büyük bir ihtimalle yarın en kötü ihtimalle de çarşamba günü proje ödeyebiliriz.
+
+3
+00:02:01,924 --> 00:02:26,123
+ilan edeceğiz. Onu görebilir ve yapmaya başlayabilir olacaksınız. Bir de vizy sınavlarımızı henüz ilan etmemiştim. Onları da muhtemelen en geç yarım ilan etmiş olacağım. Söyleyeceklerim bu kadar. Şimdi bir derste başlayabiliriz eğer bir sorunuz yoksa. Sorunuz var mı?
+
+4
+00:02:34,355 --> 00:02:36,816
+Ekran paylaşıyorum o zaman.
+
+5
+00:02:48,692 --> 00:02:53,471
+ekranımı görüyorsunuz sanıyorum. Görüyor musunuz? Bir sıkıntı var mı?
+
+6
+00:02:55,411 --> 00:02:56,672
+Gözüküyor hocam.
+
+7
+00:02:57,331 --> 00:03:09,532
+Tamam, çok teşekkürler. Şimdi bugün string search'ten bahsetmek istiyorum size. Hatırlarsanız dönem başında şeyden bahsetmiştik.
+
+8
+00:03:09,532 --> 00:03:22,732
+demiştik ki veri yapıları ve algoritmalar dersinde amacımız öncelikle farklı uygulama alanlarında sık karşımıza çıkacak algoritmalar hakkında bilgi vermek.
+
+9
+00:03:22,732 --> 00:03:30,171
+Ayrıca bunların daha kolay kullanılabilmesini sağlayacak veri yapılarını size tanıtmak.
+
+10
+00:03:30,331 --> 00:03:31,732
+İşte bu amaçla da biliyorsunuz.
+
+11
+00:03:31,732 --> 00:03:43,372
+çeşitli veri yapıları gördüğümüz, yığın, kuyruk, link list, ağaç, graf veri yapılarını gördük birlikte.
+
+12
+00:03:43,991 --> 00:03:53,151
+Algoritmalarda da aslında en çok kullanılan algoritmalar, farklı yerlerde ihtiyaç duyduğumuz algoritmalar arama ve sıralama algoritmaları.
+
+13
+00:03:53,151 --> 00:04:02,372
+Bu dönem ve hatta birinci sınıfta da ilk başladığımızdan beri bir takım sıralama algoritmalarını gördünüz.
+
+14
+00:04:02,632 --> 00:04:09,951
+Saymak istesek geçmiş zamanda bubble sortu görmüşsünüzdür, selection sortu görmüşsünüzdür büyük bir ihtimalle.
+
+15
+00:04:10,891 --> 00:04:14,372
+Bu dönem insertion sortu gördük, heap sortu gördük.
+
+16
+00:04:14,372 --> 00:04:27,352
+Önümüzdeki sene algoritma analizi dersinde de devam edip böl ve yönet algoritmaları konusunda merge sort, quicksort bu algoritmaları göreceğiz.
+
+17
+00:04:28,052 --> 00:04:36,092
+Arama algoritmalarında da en çok yapılan arama ihtiyacı aslında önce normal dizilerde şeyi görmüştünüz.
+
+18
+00:04:36,091 --> 00:04:45,671
+tek eleman aramayı görmüştünüz. Yani işte bir dizide 8 sayısı var mı, bir dizide 15 sayısı var mı dediğimizde aslında tek bir elemanı görmüş oluyorsunuz.
+
+19
+00:04:45,671 --> 00:04:58,351
+Ama daha çok aramada ihtiyaç duyulan konulardan biri bir grup bilgiyi, büyük bir bilgi içerisinde arama.
+
+20
+00:04:58,352 --> 00:05:07,831
+mesela bir DNA dizinin içerisinde bir parça bilgi arama veya işte bir büyük bir text içerisinde bir kelime arama.
+
+21
+00:05:08,212 --> 00:05:17,952
+En basitinden mesela her gün kullandığınız Google Search'te bir kelime verdiğinizde size onunla ilgili dokümanları getirmesini istiyorsunuz.
+
+22
+00:05:17,952 --> 00:05:28,232
+Burada aslında bizim yaptığımız kelimeyi bir karakter dizisi olarak düşünürseniz birden fazla sembolden,
+
+23
+00:05:28,352 --> 00:05:35,352
+işte bu karakter olur, sayı olur, işaret olur her neyse birden fazla semboidin oluşan bir pattern'ı
+
+24
+00:05:35,352 --> 00:05:45,872
+bir büyük bilgi içerisinde örneğin bir tekst içerisinde aramak istediğiniz zaman
+
+25
+00:05:45,872 --> 00:05:52,891
+ve bu aslında string search olarak ve hatta sub-string search olarak isimlendiriliyor.
+
+26
+00:05:52,891 --> 00:06:11,391
+Niye substring search? Çünkü aslında elinizde büyük olması da gerekmiyor. Yani bir tekst var. Diyelim ki bu tekstimiz n elemanlı. Biz bunun içerisinde bu n'den genellikle çok küçük olan n elemanlı bir bilgiyi arıyoruz.
+
+27
+00:06:11,391 --> 00:06:17,632
+o sub-string search yani ana string üzerinde bir alt stringi aramış oluyoruz.
+
+28
+00:06:17,632 --> 00:06:25,031
+Şimdi tabii o zaman bunu da nasıl en efektif şekilde yaparız buna odaklanmamız lazım.
+
+29
+00:06:26,171 --> 00:06:33,651
+Şimdi diyelim ki pattern'ımız needle olsun.
+
+30
+00:06:33,651 --> 00:06:43,391
+zamanlıkta iğne arama yazısı içerisinde iğneyi arayalım birlikte.
+
+31
+00:08:02,324 --> 00:08:04,443
+bir tekstimiz olsun.
+
+32
+00:08:05,883 --> 00:08:08,083
+Ve bu da middle M eşittir.
+
+33
+00:08:08,983 --> 00:08:09,743
+Altı.
+
+34
+00:08:23,860 --> 00:08:43,159
+böyle giden bir textimiz olsun. Şimdi bunun içerisinde middle kelimesini şöyle middle'da şey yazalım her şeyi büyük kalple yazdığım için kafanız karışmaması için bunu da büyük kalple yazalım. Middle substringini aradığımızı düşünelim. Şimdi en temel yapabileceğimiz şey nedir?
+
+35
+00:08:43,159 --> 00:08:53,159
+rootforce yaklaşımda. Yani öyle tek tek bakarsınız bulana kadar ararsınız. Önce onu yapalım.
+
+36
+00:08:57,172 --> 00:08:58,792
+Ne yaparım? İşte şuradan.
+
+37
+00:09:00,551 --> 00:09:08,791
+N mi? Hayır. Devam.
+
+38
+00:09:08,871 --> 00:09:13,311
+Böyle yani tek tek bakarak ararım.
+
+39
+00:09:13,811 --> 00:09:15,871
+Yani nasıl yapıyorum ben burada?
+
+40
+00:09:16,352 --> 00:09:19,411
+H, N değilse bir sonraki karakterden devam ediyorum.
+
+41
+00:09:19,512 --> 00:09:22,411
+H, N değil bir sonraki karakterden devam ediyorum.
+
+42
+00:09:22,951 --> 00:09:25,051
+Buraya gelene kadar hiç başka N yok.
+
+43
+00:09:25,051 --> 00:09:27,551
+O yüzden işte buraya kadar geldim.
+
+44
+00:09:27,711 --> 00:09:28,691
+Burada neyi buldum?
+
+45
+00:09:28,771 --> 00:09:33,512
+Neyi bulduysam o zaman bir sonraki karakteri E mi diye kontrol ediyorum.
+
+46
+00:09:33,691 --> 00:09:36,291
+Bir sonraki karakteri D mi diye kontrol ediyorum.
+
+47
+00:09:36,771 --> 00:09:43,191
+Bunu böyle kontrol ettiğinde işte şu da D, bu da tamam, bu da L, bu da tamam, bu da E, bu da tamam.
+
+48
+00:09:43,672 --> 00:09:48,991
+O zaman diyorum ki tamam ben burada aradığım şeyi buldum.
+
+49
+00:09:49,591 --> 00:09:50,651
+Substring'i buldum.
+
+50
+00:09:50,911 --> 00:09:52,892
+O zaman baktığımızda bu çok iyi bir durum.
+
+51
+00:09:52,891 --> 00:10:02,991
+Best case'de, niye best case? Çünkü başka hiç N harfi yoktu.
+
+52
+00:10:03,791 --> 00:10:12,032
+Başka hiç N harfi olmadığı için de her seferinde bir ilerleye ilerleye şey yapmış oldu.
+
+53
+00:10:12,971 --> 00:10:18,791
+Nedir? Kelimeyi aramış oldu ve bundan ötürü de karmaşıklı gene oldu.
+
+54
+00:10:18,791 --> 00:10:30,311
+Yani çünkü ne yaptı şey olmadığı için ne buralarda olmadığı için en defa sadece en iyi şekilde karşılaştırma yaparak şeyi bulmuş oldum.
+
+55
+00:10:30,711 --> 00:10:33,651
+Nedir? Aradığı stringi bulmuş oldu.
+
+56
+00:10:33,751 --> 00:10:37,051
+Ama her zaman biz bu kadar şanslı olmayabiliriz.
+
+57
+00:10:37,051 --> 00:10:52,351
+Worst case de yani hem tekstin hem de aradığınız kelimenin sürekli kelimedeki harflerin sürekli tekrar ettiği bir durumda o zaman worst case olacak demektir.
+
+58
+00:10:52,451 --> 00:11:02,491
+Çünkü durmadan harfleri bulacaksınız ama şey yapacaksınız yani tam kelimeyi karşılamadığı için bulamadığı için aramaya devam edeceksiniz.
+
+59
+00:11:02,491 --> 00:11:05,951
+Mesela şöyle bir tekstimiz olduğunu düşünelim.
+
+60
+00:11:06,032 --> 00:11:07,371
+Şu bizim tekstimiz olsun.
+
+61
+00:11:08,011 --> 00:11:09,132
+Diyelim ki A.
+
+62
+00:11:10,492 --> 00:11:11,211
+A.
+
+63
+00:11:29,043 --> 00:11:54,304
+Bu bizim tekstimiz olsun. Bu tekst şöyle şey yapayım. Yok yaptım zaten. Şöyle şey yapayım. Pattern'ımız da A, A, A, B olsun. Böyle bir pattern'ımız olsun. Şimdi burada ne oldu? Bu sefer şöyle bir durumla karşılaştık. Bakın şimdi başladım.
+
+64
+00:11:54,304 --> 00:12:21,683
+A A'ya eşit mi? Tamam. A A'ya eşit mi? Tamam. Üçüncü A'da eşit tamam. B eşit değil. Şimdi buraya kadar geldim karşılaştırdım. Şu en uzunluklu bir pattern'ı buraya kadar geldim karşılaştırdım olmadı. O zaman ne yaptım? İkinci sefer buradan başladım. A A'ya eşit mi? Evet. A A'ya eşit mi? Evet. Eşit. B değil. Ne oldu? Şimdi şuradayım şöyle.
+
+65
+00:12:21,683 --> 00:12:23,683
+4
+
+66
+00:12:23,683 --> 00:12:29,143
+Şunu geri alayım. Ondan sonra
+
+67
+00:12:29,143 --> 00:12:31,064
+Şimdi ne yapacaksınız? Pardon.
+
+68
+00:12:32,764 --> 00:12:39,463
+Ne yapacaksınız? O zaman şuradan başlayacaksınız. Bir sonraki karakteren. Brute force çünkü. Yani eğer şey yoksa
+
+69
+00:12:39,463 --> 00:12:44,984
+nedir? Aradığım kelime yoksa tekrardan karşılaştırmaya başlıyorum. Yapabileceğim şey bu.
+
+70
+00:12:44,984 --> 00:12:51,264
+A A'yı eşit mi? Evet. A eşit mi? Evet. A eşit mi? Evet. Şöyle şeyimi kaybetmemek için
+
+71
+00:12:51,264 --> 00:12:59,603
+B, hayır. Hadi bu sefer tekrar ne yapacaksınız? Bir sonrakinden başlayacaksınız. Buradan başladım.
+
+72
+00:12:59,603 --> 00:13:03,243
+A, evet, A, evet, A, evet.
+
+73
+00:13:07,251 --> 00:13:08,251
+şurada B, hayır tekrar yine bir sonrakinden başlamak zorundayım. Şimdi A evet, A evet, A evet ve şurada B burası, B evet şimdi buldum. Şimdi o zaman ne oldu? Benim normalde best case'm en... Neden? Çünkü işte o şey ilk karakter
+
+74
+00:13:37,251 --> 00:13:44,832
+olduğu yerde vardı. Yani n burada şu şey boyunca n hiç yoktu. Dolayısıyla her seferinde bir kere karşılaştırdım.
+
+75
+00:13:44,891 --> 00:13:53,311
+h, n'ye eşit mi? Değil. Hop o zaman buradan başladım. a, n'ye eşit mi? Yani needle'ı aramaya hemen ikinci karakterden başladım.
+
+76
+00:13:53,491 --> 00:13:59,092
+Eşit değil. Hop tekrar üçüncüden n'yle y'yi karşılaştıralar devam ettim. Böylece o zaman ne oldu?
+
+77
+00:13:59,092 --> 00:14:25,631
+En uzunluklu bir tekstim varsa sadece en karşılaştırma yani aslında şöyle en karşılaştırma yaparak m diyeyim kesinlikle en karşılaştırma yaparak çünkü şuraya geldiniz şurası n-m aslında n ile n'ye eyleye d ile d'ye karşılaştırmanız sonuna kadar karşılaştırmanız ve toplamda en karşılaştırmayla bulmuş oldunuz.
+
+78
+00:14:25,631 --> 00:14:28,531
+best case mi? Ama worst case de
+
+79
+00:14:31,988 --> 00:14:56,988
+Şimdi n-m artı bir çarpı m kadar karşılaştırma yapmak zorundayım. Yani burada gördüğünüz gibi en son çünkü şurası n-m artı bir noktası her seferinde de en kötü ihtimalle son karakterde bakın bozulduğu için m defa karşılaştırma yapıyorsunuz.
+
+80
+00:14:56,988 --> 00:15:05,427
+bozuluyor. Geliyorsunuz o zaman ikinci adımdan başlayıp tekrar bir M defa daha karşılaştırma yapıyorsunuz.
+
+81
+00:15:05,927 --> 00:15:13,727
+Bundan ötürü şu en son string karşılaştırması yapabileceğiniz nokta n-m artı bir noktası.
+
+82
+00:15:13,727 --> 00:15:20,807
+Çünkü artık burada diyelim ki A, A, A, B'yi şurada bulamasaydık buradan artık devam etmenin anlamı yok.
+
+83
+00:15:20,907 --> 00:15:25,348
+Niye? Çünkü aradığım kelime dört harften oluşuyor. Geriye üç harfim kaldı.
+
+84
+00:15:25,348 --> 00:15:29,107
+O yüzden en son bakma yapabileceğimiz nokta burası zaten.
+
+85
+00:15:30,748 --> 00:15:49,028
+Dolayısıyla first case'de her seferinde tekrar başa dönüp de tekrardan yani her seferinde en sona kadar arayıp sonuncu da bulamazsak tekrar ikinci sıradan sonra üçüncü sıradan sonra dönüş sıradan tekrar tekrar en baştan başlamamız gerektiği için
+
+86
+00:15:49,028 --> 00:15:56,947
+worst case'de yapacağımız işlem n-1 çarpı m defa karşılaştırma yapmak olacak.
+
+87
+00:15:56,947 --> 00:15:59,348
+Sebebini anladığımızı zannediyorum.
+
+88
+00:15:59,968 --> 00:16:11,668
+Ve burada da eğer m diyelim ki çok büyükse çok büyük bir tekstin içerisinde büyük bir pattern arıyorsanız
+
+89
+00:16:11,668 --> 00:16:18,568
+yani m işte diyelim ki 100, 200 falanken sorun yok.
+
+90
+00:16:18,567 --> 00:16:35,047
+worst case de aslında n eder aslında. Neden? Çünkü işte m küçükken n çarpı m işte diyelim ki 100 n etti. 100 n bizim için çok önemli bir değer değildir.
+
+91
+00:16:35,047 --> 00:16:51,187
+ama emin büyük değerleri için yani önemli bir şeyde diyelim ki çalışmada emin büyük değerleri için 1 milyon çarpı n dediğimizde aslında bu iyi bir şey değildir.
+
+92
+00:16:51,187 --> 00:17:00,868
+Yani çok da iyi bir şey değildir. Bazı durumlarda o zaman n kareye gidebileceğini gösterir algoritmanızın karmaşıklığını.
+
+93
+00:17:00,867 --> 00:17:09,767
+yani büyük ise m çarpı n, n kareye gidebileceğini gösteriyor.
+
+94
+00:17:09,847 --> 00:17:16,647
+Dolayısıyla bu brute force yaklaşımı aslında şeyde iyi nedir?
+
+95
+00:17:19,447 --> 00:17:29,667
+Eğer küçük tek şeyiniz varsa, substringiniz aramak istediğiniz, substringiniz küçükse onda iyi, onda bir sıkıntı yok.
+
+96
+00:17:29,667 --> 00:17:45,627
+çünkü ne kadar şey olursa olsun hani worst case olursa olsun eğer n sayımız küçükse sonuçta yine yaklaşık en karmaşıklıkla şuradaki n küçük bir değer aldığında yaklaşık en karmaşıklıkla problemi çözeceksiniz demektir.
+
+97
+00:17:45,627 --> 00:17:51,088
+ondan sonra dolayısıyla o zaman şu şeyi yazayım ben burada
+
+98
+00:17:51,088 --> 00:17:59,368
+best case n, worst case n çarpı m
+
+99
+00:17:59,368 --> 00:18:03,687
+burada tekrardan m'e bağlı olarak n küçükse n
+
+100
+00:18:03,687 --> 00:18:09,808
+yani mandalina'nın m'si küçükse karmaşıklık o n
+
+101
+00:18:09,808 --> 00:18:13,488
+eğer büyükse de n kareye kadar gidebilir demektir
+
+102
+00:18:13,488 --> 00:18:26,667
+Dolayısıyla küçük şeylerde, substringlerde, kullanmanızda sakınca olmayan ama büyük substringlerde yavaş çalışmaya sebep olabilecek bir problem bu.
+
+103
+00:18:26,667 --> 00:18:31,088
+Şimdi gelin birlikte algoritmanın tasarımını yapalım.
+
+104
+00:18:32,147 --> 00:18:56,847
+bir search function'ımız olsun. Bir p pattern'ımız var, query aradığımız pattern. Bir de bu aramayı, pardon, aramayı yapacağımız, üzerinde arama yapılacak olan text'imiz var. İşte az önceki gibi pattern'ımız neydi o?
+
+105
+00:19:01,172 --> 00:19:04,531
+patternımız, needle mesela.
+
+106
+00:19:06,531 --> 00:19:08,531
+tekstimiz de
+
+107
+00:19:09,411 --> 00:19:10,411
+yine
+
+108
+00:19:11,132 --> 00:19:13,132
+boşluk yine
+
+109
+00:19:14,132 --> 00:19:15,132
+istek
+
+110
+00:19:18,387 --> 00:19:28,387
+böyle bir textimiz var. Textimizde bu böyle olduğunu düşünelim. Şimdi bunun üzerinde arama yapacağımızı düşünelim.
+
+111
+00:19:28,387 --> 00:19:32,387
+Bir takım değişkenler tanımlıyorum.
+
+112
+00:19:41,940 --> 00:19:56,440
+Şimdi n tekstimizin uzunluğu olsun. n de patternımızın uzunluğu olsun. Bunu bu şekilde yapalım.
+
+113
+00:19:56,440 --> 00:20:09,940
+Şimdi az önce dedik ki en son bakacağım nokta n-n noktasıdır. Neden? Çünkü şuradan hatırlayalım.
+
+114
+00:20:09,940 --> 00:20:26,999
+şurada baktığımız zaman bu A'dan sonra şurada artık bu kadarlık 3 harklık yer kaldığında benim aradığım Substantric 4 karakter olduğundan ötürü zaten şey demektir.
+
+115
+00:20:27,919 --> 00:20:37,999
+Nedir? Orada bulamayacağım demektir. O yüzden buna hiç girmemem gerekiyor. O yüzden ilk 3 keşittir en eksi M onana kadar arıyorum.
+
+116
+00:20:39,940 --> 00:20:49,940
+ondan sonrasında zaten teksti arasam da bulamam çünkü kalan parçanın uzunluğu aradığım kelimeden küçük.
+
+117
+00:20:49,940 --> 00:20:54,940
+Şimdi her seferinde sıfırdan başlıyorum aramaya.
+
+118
+00:20:54,940 --> 00:21:03,940
+Şimdi ne olacak? Diyelim ki şurada aradığımızı düşünelim.
+
+119
+00:21:15,155 --> 00:21:28,715
+tekste aradığımızı düşünelim. Şimdi her seferinde bu saydıkta mesela diyelim ki ya da şeyde arasak daha iyi. Şunu da arayayım ben size. Şunu da A, A, A, B'de arayalım.
+
+120
+00:21:28,715 --> 00:21:38,675
+A, A, A, A, A, B. Aradığımda A, A, B olsun.
+
+121
+00:21:42,420 --> 00:22:06,180
+ne olacak? A'ya baktım, bir, ikinci A'ya baktım, iki, üçüncü A'ya baktım, üç ve B ile karşılaştırdım. Şimdi ne yapıyorsunuz? Substring'in uzunluğu kadar karşılaştırma işlemi yapıyorsunuz. O zaman J'yi küçüktür M olduğu sürece, yani J sıfırdan başladı, bir, iki, en son üç.
+
+122
+00:22:06,180 --> 00:22:30,960
+yani çünkü M pattern'ın uzunluğu 4 aslında dolayısıyla ben 4 karşılaştırma yapacağım 0'dan başlattığım için G'yi, G'yi küçüktür M olduğu sürece bakacağım uyuşma varsa mesela A'la A uydu o zaman bir sonraki karaktere geçeceğim o da uydu bir sonraki karaktere geçeceğim o da uydu bir sonraki karaktere geçeceğim
+
+123
+00:22:30,959 --> 00:22:37,979
+Eğer zaten bulmuşsam stringi j kadar yani j'nin m oluşuna kadar bakmam lazım.
+
+124
+00:22:38,079 --> 00:22:39,099
+Birinci şartım bu.
+
+125
+00:22:39,699 --> 00:22:54,640
+İkinci şartım şu olduğunda j eşittir m ise pattern bulunur.
+
+126
+00:22:54,640 --> 00:23:18,259
+değil mi? Jm'e eşit olduysa bütün karakterler uydu. Pattern bulundu. Döngüden çıkmam gerekiyor demektir. Ama ikinci şart da daha aramaya devam ediyorum demektir. Daha aramaya devam etmek demek de şu demek. Pattern'ın J'si tekstin i artı J'sine eşit olduğu sürece. Yani nedir? Şimdi şurada başladık.
+
+127
+00:23:18,259 --> 00:23:38,659
+Şimdi şöyle düşünelim. Şurası i eşittir 3 olsun. Ben ne yapıyorum? Textin 3 artı j'incisini pattern'ın j'incisiyle karşılaştırıyorum. Yani bu ne demek?
+
+128
+00:23:38,659 --> 00:23:47,000
+j eşittir 0 için text'in 3. gözündeki elemanla pattern'ın 0.sını ağla ağır karşılaştırdım.
+
+129
+00:23:47,000 --> 00:23:58,000
+j eşittir 1 için pattern'ın 1. elemanıyla text'in 4. gözündeki elemanı karşılaştırdım.
+
+130
+00:23:58,839 --> 00:24:08,140
+j eşittir 2 için pattern'ın 2. elemanıyla text'in 3 artı 2 5. gözündeki elemanı karşılaştırdım.
+
+131
+00:24:08,140 --> 00:24:28,440
+çünkü şurası 3, 4, 5, 6. göz bu şekilde. O zaman ne yapmış oldum? Pattern'ın şurada gördüğünüz gibi j'siyle ti artı j'yi karşılaştırdım. Buna ne demek? Eşitlik sağlandığı sürece
+
+132
+00:24:32,788 --> 00:24:37,047
+return'ı text içinde aramaya devam etmek demek.
+
+133
+00:24:44,276 --> 00:25:06,536
+O zaman demek ki while'ı kontrol edeceğim. İki şey bu, durum bu. Bu şartlar sağlanıyorsa yapmam gereken şey ne? İşte bir sonraki pattern'ın bir sonraki karakterini tekste bir sonraki karakterle karşılaştırmak. Buna böyle devam edeceğim. Çıktıysam çıkmamın iki tane sebebi var.
+
+134
+00:25:06,536 --> 00:25:10,855
+birincisi buldum çıktım demektir.
+
+135
+00:25:10,855 --> 00:25:18,695
+if g eşittir m ise o zaman return either'ın function'dan çıkarım buldum.
+
+136
+00:25:21,195 --> 00:25:28,116
+Çünkü g m eşitse pattern'ın bütün karakterlerini tek tek aradım demektir ve buldum demektir.
+
+137
+00:25:29,456 --> 00:25:30,636
+Değilse devam edeceğim.
+
+138
+00:25:30,755 --> 00:25:32,055
+Buna böyle devam edeceğim.
+
+139
+00:25:32,856 --> 00:25:34,296
+Aramaya devam edeceğim.
+
+140
+00:25:34,395 --> 00:25:34,776
+Ne yapacağım?
+
+141
+00:25:34,776 --> 00:26:03,036
+Şimdi bir sonraki şuradaki gibi işte burada bozuldu. Burada geldim geldim geldim. Burada eşitlik bozuldu. İyi burada üçtü diyelim ki. İyi eşittir dörtten tekrar karşılaştırmaya devam edeceğim. Yani tek yapmam gereken burada benim. O zaman ne olacak? İyi'yi bir arttırarak şurada gördüğünüz gibi iyi bir arttırarak karşılaştırmaya devam edeceğim. Yapmam gereken şey bu.
+
+142
+00:26:03,035 --> 00:26:08,475
+Peki o zaman döngüden çıktıysa artık bulamamış demektir.
+
+143
+00:26:08,475 --> 00:26:16,875
+Yani ben eğer function'dan aralı bir yerde geri dönmediysem, döngüden çıktıysam bulamamış demektir.
+
+144
+00:26:16,955 --> 00:26:19,475
+O zaman return eksi bir diye yazıyorum.
+
+145
+00:26:20,075 --> 00:26:22,075
+Buraya kadar sormak istediğiniz bir şey var mı?
+
+146
+00:26:25,315 --> 00:26:26,135
+Bir bakın lütfen.
+
+147
+00:26:31,028 --> 00:26:32,028
+Hocam bir soracağım.
+
+148
+00:26:32,787 --> 00:26:33,167
+Lütfen.
+
+149
+00:26:34,467 --> 00:26:38,488
+Şimdi return e dediğinde aslında break gibi davranmayacak mı? Yani foru kırıp çıkacak değil mi oradan?
+
+150
+00:26:39,488 --> 00:26:48,007
+Şimdi bu function'dan dönmek olduğu için şey diye düşünmemen lazım. Yani foru kırmak gibi değil de yani function'dan çıkıyorsun.
+
+151
+00:26:48,007 --> 00:26:56,927
+Yani şey de bu bir program parçası olduğunda ben buna çok dikkat ediyorum. Bu soruyu sorduğum için de çok teşekkür ederim.
+
+152
+00:26:58,107 --> 00:27:00,247
+Pardon mı sen? Ders deyin.
+
+153
+00:27:00,247 --> 00:27:04,407
+Bakayım
+
+154
+00:27:04,407 --> 00:27:13,407
+Tamam şu anda geliyor gibi gözüküyor tamam sağ ol
+
+155
+00:27:13,407 --> 00:27:21,647
+İnternet yok da o yüzden evet şimdi çok güzel bir soru o yüzden tekrar ediyorum o kısmını
+
+156
+00:27:21,647 --> 00:27:30,627
+Yani bu aslında fonksiyonlar çıktığım için şey gibi değil döngü kırmak gibi düşünmemen lazım.
+
+157
+00:27:30,727 --> 00:27:31,927
+Buradan çıktım gittim.
+
+158
+00:27:32,687 --> 00:27:35,528
+Ben burada şeyi anlaşılır görmenizi istedim.
+
+159
+00:27:35,627 --> 00:27:39,427
+Şurada değişimin nasıl olduğunu anlaşılır görmenizi istedim.
+
+160
+00:27:39,427 --> 00:27:45,187
+Ama aslında şurayı şu bölümü tekrar yazacağım.
+
+161
+00:27:45,587 --> 00:27:46,568
+Şöyle şuraya.
+
+162
+00:27:47,767 --> 00:27:50,028
+Şuraya tekrar yazacağım.
+
+163
+00:27:51,647 --> 00:27:57,047
+Aslında bunu şöyle yaparsanız anlaşılırlık açısından daha doğru olur.
+
+164
+00:27:57,047 --> 00:28:09,407
+i eşittir 0 while i küçük eşittir n-m deyip
+
+165
+00:28:09,407 --> 00:28:12,887
+Pardon tek parantez yetiyor şöyle yapayım
+
+166
+00:28:12,888 --> 00:28:13,888
+while i küçük eşit n-n deyip işte şurada yaptınız yaptınız yaptınız ve şey deyip pardon dur şunu arkaya alayım burası çok dar oldu çünkü bir dakika şöyle diyelim for yerine şöyle yazabilirsiniz şurada i'yi sıfır alıp while i küçük eşit n-n deyip
+
+167
+00:28:42,888 --> 00:29:02,528
+and not found. Mesela şurada found'u sıfır yapalım. Not found. Böyle de anlaşılırlık açısından daha güzel olur. Şuraya j eşittir sıfır yaptım.
+
+168
+00:29:02,528 --> 00:29:11,587
+while işte j küçüktür m and p'nin j'incisi.
+
+169
+00:29:12,688 --> 00:29:17,947
+Aynı şeyi yazıyorum ama takip edebilmeniz açısından aynı şeyi yazıyorum.
+
+170
+00:29:17,947 --> 00:29:22,388
+Text i artı j, j artı artı.
+
+171
+00:29:22,848 --> 00:29:29,608
+Şimdi şurada if j eşit eşittir m ise found eşittir bir derseniz.
+
+172
+00:29:29,608 --> 00:29:42,388
+ve else i artı artı derseniz o zaman ne olacak?
+
+173
+00:29:42,388 --> 00:29:49,608
+Ve buradan dışarı çıktığınızda da
+
+174
+00:29:49,608 --> 00:29:56,328
+ya da şunu şöyle yapabilirsiniz o zaman derseniz
+
+175
+00:29:56,327 --> 00:30:08,967
+şöyle derseniz if derseniz found eşit eşittir bir return i şuradan devam ediyorum as
+
+176
+00:30:09,715 --> 00:30:28,816
+return eksi bir derseniz o zaman şey açısından daha anlaşılırlık açısından yani while ile çalıştığınız için while'dan çıkma koşuluyla kontrol ettiğiniz için anlaşılırlık açısından şu şekilde yaparsanız daha doğru olabilir.
+
+177
+00:30:28,816 --> 00:30:40,795
+fakat ben şeyi görün istedim yani şurada i'yi sıfırdan başlatıp nxm'e kadar gittiğinizi ve işte bir i'yi bir arttıra arttıra geldiğinizi görerek istedim.
+
+178
+00:30:41,136 --> 00:30:48,796
+O yüzden for kullandım ve return'le çıktım ama bunun da arkadaşınızın söylediği gibi şey tehlikesi var.
+
+179
+00:30:49,595 --> 00:30:53,035
+Nerede çıktığını anlamakta okuyan kişi güçlük çekebilir.
+
+180
+00:30:53,035 --> 00:30:58,315
+Büyük bir program parçasında fonksiyondan nasıl çıktığını anlamakta güçlük çekebilir.
+
+181
+00:30:58,315 --> 00:31:02,875
+o zaman onu bu şekilde açık açık yazmak daha faydalı olabilir.
+
+182
+00:31:03,035 --> 00:31:09,795
+Yani for yerine şuradaki bir öncesindeki aslında şurası neydi?
+
+183
+00:31:10,475 --> 00:31:12,495
+Pardon orası değil yanlış yaptım.
+
+184
+00:31:12,595 --> 00:31:13,375
+Şurası neydi?
+
+185
+00:31:14,095 --> 00:31:15,835
+Aslında şöyleydi.
+
+186
+00:31:15,835 --> 00:31:24,995
+For i eşittir 0, i küçük eşittir n-n, i artı artıydı.
+
+187
+00:31:24,995 --> 00:31:29,815
+Ben onun yerine burayı why'la çevirdim şimdi.
+
+188
+00:31:29,936 --> 00:31:33,475
+I artı artı da burada döngünün içerisine koydum.
+
+189
+00:31:35,635 --> 00:31:37,335
+Şey asla yapmayın.
+
+190
+00:31:37,555 --> 00:31:43,215
+Yani tek programın içerisinde dümdüz yazarken bireklerle falan kırmayı asla yapmayın.
+
+191
+00:31:43,215 --> 00:31:45,396
+Ama function dergitörüne dönebilirsiniz.
+
+192
+00:31:45,695 --> 00:31:48,635
+O kadar sakıncalı bir durum değildi.
+
+193
+00:31:48,875 --> 00:31:51,135
+Yani orada şey yok.
+
+194
+00:31:51,555 --> 00:31:52,675
+Onu yapabilirsiniz.
+
+195
+00:31:52,675 --> 00:32:01,355
+orada dediğim gibi yani anlaşılırlık açısından sıkıntı var sadece var mı başka sorunuz var mı
+
+196
+00:32:04,339 --> 00:32:28,739
+pek. Şimdi o zaman yani buradaki sıkıntıyı anladığınızı tahmin ediyorum. Buradaki sıkıntı şu, yani şimdi en sona kadar gelmişsiniz, araya araya gelmişsiniz ama en son da karakter uyuşmamış. Bu sefer tekrar başa dönüp işte birinci karakterden başladıysak aramaya, başa dönüp ikinci karakterden, başa dönüp üçüncü karakterden böyle böyle arıyoruz.
+
+197
+00:32:28,739 --> 00:32:33,419
+Şimdi bu o zaman şey sıkıntısı yaratıyor baktığımız zaman.
+
+198
+00:32:41,683 --> 00:32:51,144
+gereksiz yere emin olmak için durumdan fazladan fazladan yapmak zorundayız. Niye? Arada bir yerde AAB çıkarsa diye.
+
+199
+00:32:51,144 --> 00:33:01,944
+O zaman bunun önüne geçmek için acaba daha başka bir şekilde problemi, bu brute force, daha başka bir şekilde problemi çözebilir miyim?
+
+200
+00:33:02,364 --> 00:33:09,864
+Daha başka bir şekilde çözmek için kullanılan yöntemlerden birisi Oyer Mor yöntemi.
+
+201
+00:33:20,915 --> 00:33:25,075
+oradaki mantık şu, yine yazalım bir kelimeyi.
+
+202
+00:34:25,364 --> 00:34:27,224
+Bu tekstimiz olsun bizim.
+
+203
+00:34:29,563 --> 00:34:31,864
+Ve patternımız da.
+
+204
+00:34:37,268 --> 00:34:52,827
+middle kelimesi olsun. Bunu arayacağız. Şimdi bu mantık başka bir şekilde. Diyor ki ben diyor sonundan başa doğru giderek arayayım diyor. Yani şöyle düşünelim diyor. Middle'ı buraya böyle oturttuğumuzu varsayalım.
+
+205
+00:34:58,547 --> 00:35:00,547
+nasıl çok güzel bir yaklaşım.
+
+206
+00:35:11,188 --> 00:35:15,947
+Diyor ki, şimdi diyor ben diyor neyle e'yi karşılaştırdım.
+
+207
+00:35:16,267 --> 00:35:18,128
+Şurada neyle e'yi karşılaştırdım.
+
+208
+00:35:18,688 --> 00:35:20,207
+Sondan başa doğru gideceğiz.
+
+209
+00:35:20,347 --> 00:35:22,188
+Şöyle başa doğru bakacağız aramaya.
+
+210
+00:35:22,627 --> 00:35:26,367
+Diyor ki eğer diyor ne diyor şeyde yoksa diyor.
+
+211
+00:35:26,727 --> 00:35:28,887
+Neyle e eşit değilse birbirine diyor.
+
+212
+00:35:29,547 --> 00:35:31,127
+Şimdi şöyle bir tehlike var.
+
+213
+00:35:31,127 --> 00:35:36,747
+Ben burada birdenbire şuraya atlarsam, middle diye şuraya atlarsam.
+
+214
+00:35:36,747 --> 00:35:43,647
+belki şöyle atlarsam ve T ile E'yi karşılaştırarak yoluma devam edersen
+
+215
+00:35:43,647 --> 00:35:45,887
+belki de burada needle kelimesi vardı.
+
+216
+00:35:46,908 --> 00:35:50,247
+Yani diyelim ki belki de şöyle yapalım.
+
+217
+00:35:50,927 --> 00:35:52,728
+Diyelim ki şurada needle vardı.
+
+218
+00:35:53,507 --> 00:35:54,567
+Needle şuradaydı.
+
+219
+00:35:55,067 --> 00:35:58,868
+Ben öyle birdenbire pat diye atlarsam needle kelimesini kaçırmış olurum.
+
+220
+00:35:58,868 --> 00:36:05,347
+Yani doğrudan kelime uzunluğu kadar atlarsam ve şuradan tekrar oturtarak,
+
+221
+00:36:05,347 --> 00:36:12,208
+şuradan oturtarak kelime uzunluğu kadar atlayıp T ile E'yi karşılaştırarak yoluma devam edersen
+
+222
+00:36:12,208 --> 00:36:16,327
+ve needle burada içeride bir yerde kaldıysa onu kaçırmış olurum.
+
+223
+00:36:16,387 --> 00:36:21,548
+Bu tehlikeden kurtulmak için çok mantıklı bir yol düşünmüşler.
+
+224
+00:36:21,948 --> 00:36:24,327
+Diyor ki şöyle bir şey yapalım diyor.
+
+225
+00:36:25,488 --> 00:36:26,647
+Ben hepsini sileyim.
+
+226
+00:36:30,107 --> 00:36:32,827
+Tamam E, L'ye eşit değil ama diyor.
+
+227
+00:36:32,827 --> 00:36:37,908
+acaba diyor needle kelimesi içerisinde m harfi var mı diyor.
+
+228
+00:36:38,007 --> 00:36:39,887
+Var gerçekten şurada needle.
+
+229
+00:36:39,887 --> 00:36:46,408
+O zaman diyor ben needle'u tekst içerisinde kaçırmamak için yerini kaçırmamak için
+
+230
+00:36:46,408 --> 00:36:55,768
+öyle hop diye needle kadar atlayarak a ile neye çakışacak şekilde needle'u buraya oturtup bir karşılaştırma yapmak yerine diyor.
+
+231
+00:36:56,368 --> 00:37:00,247
+Madem diyor tekstin içerisinde şey var ne harfi var diyor.
+
+232
+00:37:00,247 --> 00:37:04,307
+N'ler çatışacak şekilde oturtayım şöyle.
+
+233
+00:37:04,307 --> 00:37:06,807
+N'ler çatışacak şekilde oturtayım.
+
+234
+00:37:16,851 --> 00:37:43,571
+öyle karşılaştırma yapayım. Mantık bundan ibaret ve çok güzel bir mantık. E ile C'yi karşılaştırdı. Şimdi E ile C'ye uyuşmadı. Yine korkuyoruz acaba middle içerisinde C var mı? Bunu kaçırmak istemiyoruz. Middle ile C'yi karşılaştırdık. Yani L, C'ye eşit mi? Hayır. D, C'ye eşit mi? E, C'ye eşit mi? N, C'ye eşit mi? Hayır. O zaman şimdi gönül rahatlığıyla bu durumda o zaman diyor ki tamam o zaman
+
+235
+00:37:43,571 --> 00:37:48,091
+Bunun sonundan işe başlayabiliriz.
+
+236
+00:37:55,635 --> 00:37:57,595
+Sonundan işe başlayabiliriz.
+
+237
+00:37:58,015 --> 00:38:02,135
+Ondan sonra işte E ile E'yi karşılaştırdık.
+
+238
+00:38:02,215 --> 00:38:02,435
+Tamam.
+
+239
+00:38:03,096 --> 00:38:04,715
+N ile L'yi karşılaştırdık.
+
+240
+00:38:04,775 --> 00:38:05,215
+Uymadı.
+
+241
+00:38:05,735 --> 00:38:09,635
+Yine aynı şekilde acaba middle içerisinde N var mı diye bakabiliriz.
+
+242
+00:38:09,735 --> 00:38:09,915
+Var.
+
+243
+00:38:10,375 --> 00:38:16,056
+O zaman middle'u bu sefer buradan oturtarak karşılaştırmaya devam ederiz.
+
+244
+00:38:16,215 --> 00:38:20,595
+Zaten burada da gördüğünüz gibi buradan oturttuğumuzda ne oldu şimdi birdenbire?
+
+245
+00:38:20,795 --> 00:38:21,955
+Şuradan şöyle bakalım.
+
+246
+00:38:22,695 --> 00:38:23,875
+N ile N ayrı.
+
+247
+00:38:23,875 --> 00:38:24,335
+Aynı.
+
+248
+00:38:24,495 --> 00:38:26,595
+E ile E aynı.
+
+249
+00:38:27,035 --> 00:38:28,135
+Bu böyle devam edecek.
+
+250
+00:38:28,235 --> 00:38:30,295
+Şurada D ile E yaparsam.
+
+251
+00:38:32,175 --> 00:38:33,915
+D ile D aynı.
+
+252
+00:38:34,335 --> 00:38:35,555
+L ile E aynı.
+
+253
+00:38:35,735 --> 00:38:36,735
+E ile D aynı.
+
+254
+00:38:37,496 --> 00:38:40,035
+Burada middle'ı bulmuş olacağız o zaman.
+
+255
+00:38:40,595 --> 00:38:44,095
+Mantığı anladıysanız eğer burada yapmaya çalıştığı şey şu.
+
+256
+00:38:44,735 --> 00:38:46,455
+Şimdi burada ne yapmaya çalışıyordu?
+
+257
+00:38:46,575 --> 00:38:49,635
+Diyordu ki ben karakter karakter ilerlemek zorundayım.
+
+258
+00:38:49,775 --> 00:38:54,415
+Çünkü bu string arada bir yerde geçerse tekst içinde bunu kaybederim.
+
+259
+00:38:54,415 --> 00:38:58,955
+Onun için 4-4 atlayamam. Nasıl atlayacağım peki?
+
+260
+00:38:59,415 --> 00:39:07,716
+Her seferinde bulamadığım zaman birinci karakterle kaldığım yerin bir karakter ilerisine yerleştirerek tekrar başlayalım.
+
+261
+00:39:07,795 --> 00:39:17,555
+Yani i3 ise i4'ten başlayalım. i4 ise i5'ten başlayalım ki şu 4 karakterlik stringi arada bir yerde hiçbir şekilde kaydetmenin mantık bu aslında.
+
+262
+00:39:19,095 --> 00:39:21,035
+Ve buna göre hareket ediyordu.
+
+263
+00:39:21,036 --> 00:39:29,455
+Bu yöntemde ise, Boyar Mor yönteminde ise diyor ki biz diyor her seferinde tekrar tekrar tekrar aynı karakterler.
+
+264
+00:39:29,555 --> 00:39:31,095
+Çünkü bakın şurada ne yaptınız?
+
+265
+00:39:31,555 --> 00:39:34,516
+Aslında bu ağ ile bir işlem yapmıştınız.
+
+266
+00:39:34,695 --> 00:39:37,896
+Şurada birinci defa burada bir işlem yapmıştınız.
+
+267
+00:39:38,576 --> 00:39:41,816
+Ama tekrar bir karşılaştırma yapıyorsunuz.
+
+268
+00:39:41,856 --> 00:39:43,256
+Hele şu ağının durumu daha var.
+
+269
+00:39:43,555 --> 00:39:48,656
+Şimdi bir kere baktınız olmadı, bir kere daha baktınız olmadı, bir kere daha baktınız.
+
+270
+00:39:48,656 --> 00:39:49,555
+Anlatabildim mi?
+
+271
+00:39:49,555 --> 00:39:54,856
+Yani tekstteki karakterlerle defalarca karşılaştırma işlemi yapıyorsunuz.
+
+272
+00:39:55,195 --> 00:39:56,915
+Şey diyor ki bunu önleyelim diyor.
+
+273
+00:39:57,075 --> 00:39:58,615
+Yani Boyar Mon diyor ki bunu önleyelim.
+
+274
+00:39:58,716 --> 00:39:59,515
+Nasıl önleyelim?
+
+275
+00:39:59,996 --> 00:40:02,735
+Çünkü arada bir yerde de geçmesinden korkuyoruz.
+
+276
+00:40:03,095 --> 00:40:05,115
+Ben baktım e ile ne aynı mı değil.
+
+277
+00:40:05,115 --> 00:40:14,535
+O zaman dedim ki bu aradık kelime içerisinde ne harfi var mı var.
+
+278
+00:40:14,975 --> 00:40:17,356
+Onlar çakışacak şekilde üst üste oturttu.
+
+279
+00:40:17,356 --> 00:40:21,856
+Oturttum. O zaman E ile S'yi karşılaştırarak işe başladım.
+
+280
+00:40:21,975 --> 00:40:25,535
+Farklı. Burada bir S harfi var mı? Yok.
+
+281
+00:40:26,055 --> 00:40:27,676
+O zaman tamamen atladım.
+
+282
+00:40:28,236 --> 00:40:31,236
+Yani bu S'den sonrasından yoluma devam ettim.
+
+283
+00:40:31,736 --> 00:40:34,035
+Yine çakıştırdım bu şekilde.
+
+284
+00:40:35,156 --> 00:40:37,076
+E ile E'yi karşılaştırdım. Aynen.
+
+285
+00:40:37,216 --> 00:40:39,335
+E ile E'yi karşılaştırdım. Farklı.
+
+286
+00:40:39,335 --> 00:40:44,296
+O zaman dedim ki middle içerisinde N harfi var mı?
+
+287
+00:40:44,775 --> 00:40:47,115
+Ondan çakışacak şekilde oturttum.
+
+288
+00:40:47,356 --> 00:40:49,555
+Ve buradan başlayalım şimdi artık.
+
+289
+00:40:52,415 --> 00:40:54,076
+Sondan başa doğru bakıyorum.
+
+290
+00:40:54,376 --> 00:40:54,656
+Şöyle.
+
+291
+00:40:55,656 --> 00:40:56,936
+E ile E'yi karşılaştırdım.
+
+292
+00:40:57,055 --> 00:40:58,615
+Biraz kalemim kayıyor.
+
+293
+00:40:58,936 --> 00:40:59,876
+Şeyle yapayım.
+
+294
+00:41:00,635 --> 00:41:02,296
+E ile E'yi karşılaştırdım aynı.
+
+295
+00:41:02,436 --> 00:41:04,035
+L ile E'yi karşılaştırdım.
+
+296
+00:41:04,135 --> 00:41:07,516
+D ile D'yi, E ile E'yi, E ile E'yi, N ile E'yi.
+
+297
+00:41:07,956 --> 00:41:09,096
+Ve ne olmuş oldu?
+
+298
+00:41:09,195 --> 00:41:11,156
+Burada aradığım kelimeyi bulmuş oldu.
+
+299
+00:41:11,555 --> 00:41:13,156
+Arkadaşlarım siz bir şey var mı?
+
+300
+00:41:14,195 --> 00:41:15,956
+Hocam benim bir sorum olacaktı.
+
+301
+00:41:15,956 --> 00:41:16,555
+Tabii.
+
+302
+00:41:17,115 --> 00:41:19,675
+Mesela neyi arıyoruz
+
+303
+00:41:19,675 --> 00:41:21,315
+patern içinde eğer
+
+304
+00:41:21,315 --> 00:41:23,195
+çapışmaz olursa
+
+305
+00:41:23,195 --> 00:41:24,516
+o ne
+
+306
+00:41:24,516 --> 00:41:27,755
+patern içerisinde birkaç defa
+
+307
+00:41:27,755 --> 00:41:29,496
+varsa onda nasıl bir
+
+308
+00:41:29,496 --> 00:41:31,716
+işlem gerçekleştiriyoruz? İlk neye
+
+309
+00:41:31,716 --> 00:41:33,656
+mi? Neye göre mi hareket
+
+310
+00:41:33,656 --> 00:41:35,576
+edeceğiz? Tamam çok
+
+311
+00:41:35,576 --> 00:41:37,076
+güzel bir soru. Şimdi zaten o
+
+312
+00:41:37,460 --> 00:41:44,699
+keyizleri anlatacağım. 43 geçmiş bir 10 dakika ara veriyor. 10 dakika sonra arkadaşınızın sorusu şu tekrar ediyorum.
+
+313
+00:41:45,279 --> 00:41:51,340
+Mesela şurada gördüğünüz gibi iki tane E var aslında. Üzlüksel üç tane E var. Hangi E ile çapıştıracağım?
+
+314
+00:41:51,340 --> 00:42:00,579
+Diyelim ki şöyle bir durum oldu. Mesela middle. Ben burada karşılaştırıyordum.
+
+315
+00:42:05,876 --> 00:42:18,735
+Şöyle şöyle burası tekstimiz, şu da patternımız. Yanlış yazdım değil mi? D'yi çok yanlış yazdım. Neyse, düzeltelim şimdi.
+
+316
+00:42:20,692 --> 00:42:24,011
+şu e'ler
+
+317
+00:42:27,731 --> 00:42:30,731
+bir dakika şöyle yaparsam anlaşılmayacak.
+
+318
+00:42:32,731 --> 00:42:34,731
+şöyle anlaşılacak bir saniye.
+
+319
+00:42:34,731 --> 00:42:36,731
+bir dakika şöyle yaparsam anlaşılacak.
+
+320
+00:42:36,731 --> 00:42:40,871
+hmmm
+
+321
+00:42:44,179 --> 00:42:46,019
+şöyle yaparsam anlaşılacak.
+
+322
+00:42:53,204 --> 00:43:23,044
+Tamam, şimdi hala anlaşılmıyor. Bir dakika, ne yaparsam anlaşılacak bu. Şunu demek istiyor arkadaşımız. Yani diyelim ki, şurada E olsun, şurada D olsun. Şöyle yapayım. Diyelim ki şunu karşılaştırdınız. E ile de uymadı. Diyor ki, şöyle yapayım. Şöyle.
+
+323
+00:43:20,115 --> 00:43:41,956
+şöyle e ile de uymadı. O zaman diyor ama benim üç tane eğim var. Bu eyi hangi e ile çapıştırmalıyım ki? Kaçırmayayım, hiçbir şeyi kaçırmayayım diyor. Soru buydu. Şimdi ondan bahsedeceğim. Bir ara vereceğim yalnız on dakika. Olası kezleri anlatacağım. Ne kadar kaydıracağımıza.
+
+324
+00:43:41,956 --> 00:43:53,255
+aradığımız kelimeyi kaybetmeden tekst içerisinde bulabilmek için ne kadar kaydırmamız gerektiğini nasıl hesaplayacağımızı anlatacağım.
+
+325
+00:43:53,935 --> 00:43:57,055
+10 dakika ara veriyorum, 5 kala devam ederiz, olur mu?
+
+326
+00:43:59,175 --> 00:44:00,136
+Tamamdır hocam.
+
+327
+00:55:42,420 --> 00:55:46,659
+ekranımı paylaşarak tekrardan kaldığım yerden devam ediyorum.
+
+328
+00:55:49,599 --> 00:55:50,760
+Oldu mu bir dakika?
+
+329
+00:55:58,996 --> 00:56:00,996
+Evet oldu galiba.
+
+330
+00:56:02,996 --> 00:56:03,996
+Tamam.
+
+331
+00:56:03,996 --> 00:56:04,996
+Şimdi
+
+332
+00:56:06,996 --> 00:56:12,996
+Yapmak istediğimiz şey, şurada gördüğümüz şeye tekrar dönecek olursak, burada
+
+333
+00:56:14,996 --> 00:56:19,996
+eşitlik bozulduğunda yani eyle neyi karşılaştırdık, uymadı, ne kadar kayacağız?
+
+334
+00:56:19,996 --> 00:56:25,996
+Dedik ki burada biz şey yaparız, neler çakışacak kadar üst üste oturturuz.
+
+335
+00:56:25,996 --> 00:56:49,996
+İkincisinde ikinci durumda S ile E'ye baktık. Bunlar uymuyor ama içeride needle'daki bulunan harflerden hiçbirisi yok. Yani S harfi needle'da yok. O yüzden dedik ki bittiği yerden, şurada bittiği yerden çakıştırırız. Ondan sonra bu şekilde E'ler çakışacak şekilde oturttuk.
+
+336
+00:56:49,996 --> 00:56:59,455
+ondan sonra e ile ilk karşılaştırdık uydu, n ile l'yi karşılaştırdık uymadı.
+
+337
+00:56:59,455 --> 00:57:06,536
+O zaman needle'un içerisinde n harfi var mı diye baktık ve n'ler çakışacak şekilde oluşturduk.
+
+338
+00:57:06,735 --> 00:57:10,235
+O zaman biz burada iki tane durumu görmüş olduk.
+
+339
+00:57:10,315 --> 00:57:12,975
+Bir tane durumda yani iki durumda farklı hareket ettik.
+
+340
+00:57:12,975 --> 00:57:22,935
+bir durumda N harfi needle kelimesi içerisinde vardı çakışma olmadığında ona göre kaydırdık.
+
+341
+00:57:22,935 --> 00:57:28,335
+Bir durumda S harfi needle kelimesi içerisinde yoktu ona göre kaydırdık.
+
+342
+00:57:28,335 --> 00:57:38,335
+O zaman bizim şimdi mismatch olduğu zaman ne kadar...
+
+343
+00:57:41,619 --> 00:57:42,840
+kayacağımıza
+
+344
+00:57:42,840 --> 00:57:45,939
+karar vermemiz lazım.
+
+345
+00:57:46,979 --> 00:57:47,999
+Ne kadar kayacağımıza
+
+346
+00:57:47,999 --> 00:57:50,299
+karar vermemiz lazım. Nasıl kayacağımıza
+
+347
+00:57:50,299 --> 00:57:52,359
+ne kadar kayacağımıza karar vermemiz
+
+348
+00:57:52,359 --> 00:57:54,339
+lazım. Önce şeye bir bakalım
+
+349
+00:57:54,339 --> 00:57:56,139
+nasıl bir şey
+
+350
+00:57:56,139 --> 00:57:58,179
+yapacağız? Yani temel mantık
+
+351
+00:57:58,179 --> 00:57:58,960
+ne aslında?
+
+352
+00:58:00,099 --> 00:58:01,439
+Genel olarak
+
+353
+00:58:01,439 --> 00:58:03,460
+i'nin sıfırdan başladığını
+
+354
+00:58:03,460 --> 00:58:05,779
+düşünecek olursak, j'nin de
+
+355
+00:58:05,779 --> 00:58:07,579
+m-1'den başladığını çünkü
+
+356
+00:58:07,579 --> 00:58:10,019
+sondan başa doğru gidiyoruz burada.
+
+357
+00:58:10,019 --> 00:58:12,499
+string arama işleminde
+
+358
+00:58:12,499 --> 00:58:14,619
+ne yapacağız? Diyeceğiz ki
+
+359
+00:58:14,619 --> 00:58:16,539
+file diyeceğiz. J'yi
+
+360
+00:58:16,539 --> 00:58:18,640
+sıfırdan büyük eşit olduğu sürece
+
+361
+00:58:18,640 --> 00:58:20,539
+çünkü sondan başa doğru bakıyoruz
+
+362
+00:58:20,539 --> 00:58:22,320
+ve pattern'ın
+
+363
+00:58:22,320 --> 00:58:23,259
+J'incisi
+
+364
+00:58:23,259 --> 00:58:26,619
+text'in i artı J'incisine
+
+365
+00:58:26,619 --> 00:58:28,259
+eşit olduğu sürece
+
+366
+00:58:28,259 --> 00:58:30,340
+aslında bizim yapmak
+
+367
+00:58:30,340 --> 00:58:32,459
+istediğimiz şey J'yi eksi eksi.
+
+368
+00:58:32,899 --> 00:58:34,279
+J'yi azaltmak. Ama
+
+369
+00:58:34,279 --> 00:58:36,340
+bir de bizim
+
+370
+00:58:36,340 --> 00:58:38,539
+bunun içerisinde
+
+371
+00:58:38,539 --> 00:58:46,419
+yapmamız gereken bir de şeyimiz var, skip hareketimiz var.
+
+372
+00:58:46,419 --> 00:58:55,779
+Yani şeyi uyuşmadığında aradığımız teksti bulamadığımızda
+
+373
+00:58:55,779 --> 00:59:01,139
+yani dışarı çıktığımızda J'yi sıfırdan büyük eşitse bu ne demektir?
+
+374
+00:59:02,039 --> 00:59:03,519
+Bulunamadı demektir.
+
+375
+00:59:03,520 --> 00:59:13,579
+O zaman bulunamadıysa bizim skip'in nasıl olacağına karar vermemiz gerekiyor.
+
+376
+00:59:13,660 --> 00:59:18,899
+Burada yapmamız gereken şey skip'in nasıl olacağına ne kadar ilerleyeceğimize karar vermek.
+
+377
+00:59:18,960 --> 00:59:21,579
+Şimdi yavaş yavaş bunun nasıl olacağına bakalım.
+
+378
+00:59:21,579 --> 00:59:33,520
+Yani prensip şu, sondan başa doğru geliyoruz, j'yi azaltarak, j'yi m-1'den başlatıp 0'a doğru azaltarak tekstimizi kontrol ediyoruz.
+
+379
+00:59:34,179 --> 00:59:41,619
+Şimdi birinci case'imiz kolay olan case'imiz.
+
+380
+00:59:42,999 --> 00:59:45,939
+Şimdi ayvurkanlarınızı tasarlarken aslında hep böyle yapmalısınız.
+
+381
+00:59:45,939 --> 01:00:01,679
+Yani önce bir şey üzerinde, küçük bir bilgi parçası üzerinde analiz yaparak algoritmanızı geliştirebilmek için hangi şartları göz önünde bulundurmanız gerektiğine bakmalısınız.
+
+382
+01:00:01,780 --> 01:00:03,440
+Bizim şu anda yaptığımız şey bu.
+
+383
+01:00:03,840 --> 01:00:04,619
+Şimdi biz ne dedik?
+
+384
+01:00:04,700 --> 01:00:06,420
+Aslında her şey çok kolay.
+
+385
+01:00:06,599 --> 01:00:08,700
+Yani şurada şu kadar basit bir iş var.
+
+386
+01:00:09,280 --> 01:00:11,659
+Geriye doğru karşılaştıra karşılaştıra gidiyoruz.
+
+387
+01:00:11,659 --> 01:00:13,259
+mesela işte burada kapak olsun
+
+388
+01:00:13,259 --> 01:00:15,480
+aradığınız
+
+389
+01:00:15,480 --> 01:00:17,859
+kelime de sopa olsun
+
+390
+01:00:17,859 --> 01:00:19,659
+mesela. Sopayı buraya
+
+391
+01:00:19,659 --> 01:00:21,699
+oturttuk. İlk önce
+
+392
+01:00:21,699 --> 01:00:23,599
+şu ağları karşılaştırıyoruz.
+
+393
+01:00:25,279 --> 01:00:26,019
+m eşittir
+
+394
+01:00:26,019 --> 01:00:28,159
+4 olduğuna göre j eşittir
+
+395
+01:00:28,159 --> 01:00:30,139
+3 burada. Burası da
+
+396
+01:00:30,139 --> 01:00:31,699
+diyelim ki i de 5 olsun
+
+397
+01:00:31,699 --> 01:00:32,679
+şurası şöyle.
+
+398
+01:00:34,199 --> 01:00:35,859
+5 artı 3
+
+399
+01:00:35,859 --> 01:00:37,799
+yani şurası da 6 burası 7 burası
+
+400
+01:00:37,799 --> 01:00:38,359
+8.
+
+401
+01:00:38,359 --> 01:00:46,999
+tekstin 8. karakteriyle pattern'ın 3. karakterini karşılaştırdık.
+
+402
+01:00:47,059 --> 01:00:47,619
+Oldu.
+
+403
+01:00:48,339 --> 01:00:49,419
+J'yi biraz attık.
+
+404
+01:00:49,519 --> 01:00:50,939
+Burada J eşittir 2.
+
+405
+01:00:51,539 --> 01:00:56,639
+O zaman tekstin 7. karakteriyle pattern'ın 2. karakterini karşılaştırdık.
+
+406
+01:00:56,719 --> 01:00:57,319
+O da oldu.
+
+407
+01:00:58,079 --> 01:00:59,279
+J'yi biraz attık.
+
+408
+01:00:59,379 --> 01:01:00,619
+J burada 1 oldu.
+
+409
+01:01:01,459 --> 01:01:05,939
+Patter'ın 1. karakteriyle tekstin 6. karakterini karşılaştırdık.
+
+410
+01:01:05,939 --> 01:01:07,199
+Ve burada bozuldu.
+
+411
+01:01:07,399 --> 01:01:08,139
+Şimdi olay bu.
+
+412
+01:01:08,359 --> 01:01:12,739
+Bizim yapmamız gereken şey bu bozulma durumunu anlamaya çalışmak.
+
+413
+01:01:12,859 --> 01:01:13,219
+Tamam mı?
+
+414
+01:01:13,579 --> 01:01:14,719
+Şimdi bozulma durumu.
+
+415
+01:01:15,519 --> 01:01:23,079
+Birinci durum en kolayı karakter tekste yoksa.
+
+416
+01:01:23,079 --> 01:01:23,999
+Pardon.
+
+417
+01:01:39,092 --> 01:02:04,731
+yani işte şuradaki durum. S karakteri şurada aradığım needle stringinde yok. Birinci durum bu. Aradığım tekst içerisindeki S karakteri E ile karşılaştırdım, bozuldu. Bu S karakteri needle'da yok. Birinci durum bu. En kolay durum bu aslında.
+
+418
+01:02:04,731 --> 01:02:32,431
+ne oldu o zaman? Mesela işte az önce konuştuğumuz kapak şuraya bakalım kapak şöyle şurası iyi göstersin diyelim ki böyle bir başta bir şeyler var kaç dedik orada 5 şimdi aynı şekilde anlatayım i5 6 7 8 9 ve sopayı arıyoruz m eşittir 4
+
+419
+01:02:32,432 --> 01:02:35,672
+Sopayı da şöyle oturttuk.
+
+420
+01:02:37,972 --> 01:02:39,071
+A'lar uydu.
+
+421
+01:02:39,272 --> 01:02:41,571
+Şurada j eşittir 3.
+
+422
+01:02:43,331 --> 01:02:45,212
+Burada j eşittir 2.
+
+423
+01:02:46,992 --> 01:02:49,272
+Ve j eşittir 1 de bozuldu.
+
+424
+01:02:49,511 --> 01:02:51,211
+Yola nereden devam etmelisiniz?
+
+425
+01:02:59,219 --> 01:03:20,339
+şey olsun, köpak olsun çünkü A var burada, köpak olsun, şöyle olsun. Yola nereden devam etmelisiniz? Ö harfi sopa içerisinde olmadığı için, ö harfi sopa içerisinde olmadığı için öden sonrasından devam etmelisiniz.
+
+426
+01:03:20,339 --> 01:03:29,439
+Çünkü ö yoksa sopa içerisinde gönül rahatlığıyla yani hiçbir şekilde şey denk gelme ihtimali yoktur.
+
+427
+01:03:29,859 --> 01:03:33,479
+Kelimenin buralarda buraya kadar olan bir yerde olma ihtimali yoktur.
+
+428
+01:03:33,619 --> 01:03:37,499
+Çünkü ö sopa içerisinde yok.
+
+429
+01:03:37,639 --> 01:03:45,739
+O zaman sopa kelimesi içerisinde ö yoksa sopanın buraya kadar olma ihtimali yoktur.
+
+430
+01:03:45,739 --> 01:03:48,039
+Buradan sonrasında olabilir.
+
+431
+01:03:48,039 --> 01:04:04,859
+O zaman böyle bir durumda yapmanız gereken şey nedir? İyiyi şi artı birden devam ettirmek. Yani iyiyi o zaman yapmanız gereken şey eğer şey sağlanmıyorsa
+
+432
+01:04:12,788 --> 01:04:14,788
+Aroda'ın korrekta?
+
+433
+01:04:18,612 --> 01:04:19,612
+ve
+
+434
+01:04:22,612 --> 01:04:47,931
+i eşittir 5'ti, j 1'de kalmıştı, i eşittir i artı j artı 1, i eşittir 7'den başlattık. Bakın i'yi, 7'den şuradan, i eşittir 7, şuradan ileriye bakacağız.
+
+435
+01:04:47,931 --> 01:05:14,591
+pak pak'tan ineriye bakacağız. Anlaşıldı mı? Birinci keyzimiz bu. Ö sopa kelimesi içinde yok. O yüzden şu örneği iptal ettim. Kapakta A var çünkü şurayı köp pak yaptım o yüzden. O ikinci keyzim özür diliyorum. Bu az öncekinde. Devam ediyorum o yüzden.
+
+436
+01:05:14,591 --> 01:05:24,091
+bu şekilde bir şey yapıyorum.
+
+437
+01:05:30,708 --> 01:05:32,708
+Bu ne kadar sonuç bizim şevalı mı?
+
+438
+01:05:37,460 --> 01:05:39,460
+Var mı sormak istediğiniz bir şey?
+
+439
+01:05:46,228 --> 01:05:48,228
+O zaman ikinci duruma geçiyoruz.
+
+440
+01:06:05,076 --> 01:06:06,076
+Yenki.
+
+441
+01:06:12,628 --> 01:06:14,628
+tekstimiz bu.
+
+442
+01:06:28,884 --> 01:06:32,243
+Diyelim ki burası işte 10. karakter olsun.
+
+443
+01:06:36,563 --> 01:06:37,563
+tekste yani i'miz şöyle, i'miz 10 şu anda. Before diyeyim, i eşittir 10. Şimdi burada, şuna A case diyorum çünkü bir de B case'imiz olacak. A diyeyim buna. Miss match character in the pattern yani şimdi şurada E ile N burada 0, 1, 2, 3, 4, 5,
+
+444
+01:07:06,563 --> 01:07:18,863
+G5, G5, eline uyuşmadı fakat middle içerisinde N harfi var. O zaman ne yapmanız lazım? Şunu şöyle oturtmanız lazım.
+
+445
+01:07:23,284 --> 01:07:45,784
+middle böyle oluşturma oturtmamız lazım. Yani i eşittir on iken artı j eksi geri kayacak. N'nin bulunduğu yer, kaçıncı karakteri?
+
+446
+01:07:45,784 --> 01:07:57,343
+pattern'ın 0. karakteri. Onu çapıştıracağız çünkü eksi 0, 15. Yani şöyle oturtmuş olduk bakın gördüğünüz gibi.
+
+447
+01:07:57,343 --> 01:08:08,343
+Burada yapmanız gereken şey, skip ederken yapmanız gereken şey, i artı j eksi,
+
+448
+01:08:08,343 --> 01:08:10,343
+...
+
+449
+01:08:13,556 --> 01:08:17,916
+sağdaki son yeri, az önce arkadaşınızın sorduğu sorun cevabı bu.
+
+450
+01:08:20,715 --> 01:08:23,615
+O zaman kaçırmazsınız hiçbir zaman kelimeyi.
+
+451
+01:08:23,755 --> 01:08:25,035
+Mesela şöyle olsaydı.
+
+452
+01:08:31,859 --> 01:08:34,479
+Yapıymışını size bir tane.
+
+453
+01:09:24,435 --> 01:09:26,595
+yapamadım. Bir saniye şöyle yapacağım şimdi.
+
+454
+01:09:38,739 --> 01:09:40,739
+şöyle olduğunu varsayalım.
+
+455
+01:09:47,699 --> 01:09:50,599
+ama olmadım bir türlü yapamadım şöyle yapayım bir dakikadır.
+
+456
+01:10:02,292 --> 01:10:23,292
+şöyle olsun varsayalım ki i'miz şurada 9 olsun 10, 11, 12, 13, 14, j, 5, 4, 3, 2, 1, 0 olsun j, 5 için çakıştırdık oldu 4 için çakıştırdık oldu 3 için çakıştırdık oldu bu da olmadı
+
+457
+01:10:23,292 --> 01:10:33,292
+bunu da bir sonraki kez'den anlatacaktım arkadaşlar. Ben size her seferinde bir kez önden gidiyorum.
+
+458
+01:10:34,292 --> 01:10:37,951
+Yani aslında tekrardan şuradan toparlayacak olursam şöyle bir şey.
+
+459
+01:10:38,951 --> 01:10:41,512
+Mesela sokak mesela kelimesi var burada.
+
+460
+01:10:41,512 --> 01:10:48,071
+İyiniz şurada 10, 11, 12, 13, 14 olsun. Şöyle geliyor diyelim ki.
+
+461
+01:10:48,071 --> 01:10:58,071
+ve siz de şeyi arıyorsunuz diyelim ki yine sopayı arıyorsunuz ve şu şekilde oldu.
+
+462
+01:11:00,071 --> 01:11:02,292
+Sopa oldu mesela.
+
+463
+01:11:07,988 --> 01:11:16,807
+Şöyle olsun. İyiniz, şurada 9, şurada 8. Siz aslında şuradan oturtmuştunuz.
+
+464
+01:11:20,347 --> 01:11:28,147
+Şöyle oturt. Niye böyle oldu bilemiyorum arkadaşlar. Bir tür oturtamadım ben hiçbir şeyi. Bugün böyle bir şey oldu.
+
+465
+01:11:28,147 --> 01:11:34,687
+Bir dakika, örneği veremedim. Doğru düzgün de ondan oldu. Bu arada karışıyor. Efendim ne söyledim?
+
+466
+01:11:37,988 --> 01:11:38,988
+Nereden çıktı şimdi?
+
+467
+01:11:39,608 --> 01:11:40,488
+A'nın üzerinde
+
+468
+01:11:40,488 --> 01:11:46,407
+Söylediğin hiçbir şekilde anlaşılmıyor.
+
+469
+01:11:47,248 --> 01:11:48,227
+Sesim geliyor mu şu anda hocam?
+
+470
+01:11:48,767 --> 01:11:49,348
+Evet geliyor.
+
+471
+01:11:50,208 --> 01:11:52,368
+Şimdi A'nın üzerinde D mi var, O mu var?
+
+472
+01:11:52,647 --> 01:11:53,307
+Orada sopanın.
+
+473
+01:11:53,868 --> 01:11:56,028
+Düzelteceğim aynen bir dakika dur bir dakika.
+
+474
+01:12:00,028 --> 01:12:01,147
+Şeyi kaybettim.
+
+475
+01:12:10,100 --> 01:12:12,100
+sunumu kaybettim.
+
+476
+01:12:13,100 --> 01:12:16,100
+Hı, 2023, 11, şurada, tamam. Evet.
+
+477
+01:12:16,100 --> 01:12:19,100
+Şunu nasıl kaldıracağım onu bulamıyorum, bir saniye.
+
+478
+01:12:20,100 --> 01:12:22,100
+Heh, tamam. Evet, of, çok şükür.
+
+479
+01:12:22,100 --> 01:12:24,100
+Evet, şimdi geri geliyorum.
+
+480
+01:12:25,100 --> 01:12:29,100
+Vermek istediğim, her seferinde bir sonraki şeyin örneğini veriyorum da size, onun için kötü oldu.
+
+481
+01:12:31,100 --> 01:12:33,100
+Şimdi düzeltiyorum.
+
+482
+01:12:35,100 --> 01:12:38,100
+Şöyle bir şey olsun, mesela sokak kelimesi olsun.
+
+483
+01:12:40,100 --> 01:12:45,100
+ve
+
+484
+01:12:52,532 --> 01:12:54,331
+Kara'yı aradığımızı varsayalım.
+
+485
+01:12:54,331 --> 01:12:55,291
+Kara
+
+486
+01:12:55,291 --> 01:12:58,691
+Aradığımızı varsayalım.
+
+487
+01:13:00,211 --> 01:13:01,252
+Hatta şöyle yapayım.
+
+488
+01:13:01,372 --> 01:13:02,091
+Sokara böyle
+
+489
+01:13:02,091 --> 01:13:05,831
+Sokara
+
+490
+01:13:10,228 --> 01:13:38,827
+yaz kara gibi böyle bir şey olsun. Şöyle i başlamış. i'miz şurası bakın arkadaşlar. i'miz 9, şurası 10, 11, 12, 13, 14, j'miz de şurada 3, 2, 1, 0 diye gidecek. Şimdi ilk karakterler şu ağlar. Çünkü biz sondan başa doğru gidiyoruz karşılaştırma yaparak. A'lar doğru. Şimdi anlatmaya çalıştığım şeyi burada göstereyim.
+
+491
+01:13:38,827 --> 01:13:54,767
+K'lar A'yı karşılaştırdık uymadı. Kara kelimesini kaçırmamak için bu pattern'ın içerisinde K var mı diye kontrol ediyorum. Var. O zaman bu K'ler çakışacak şekilde oturtmalıyım.
+
+492
+01:13:54,767 --> 01:14:03,867
+Yani karayı şöyle yapabilmek için i'yi 9'dan 11'e başlatmalı yani i 11'den başlamalı ki değil mi?
+
+493
+01:14:05,047 --> 01:14:10,767
+14. karakterle g'nin 3. karakterini karşılaştırabileyim.
+
+494
+01:14:10,767 --> 01:14:22,647
+İşte o yüzden diyorum ki i eşittir, i artı, j eksi, j'nin o anki değeri kaç?
+
+495
+01:14:22,647 --> 01:14:24,527
+jimani ki değeri 2.
+
+496
+01:14:24,808 --> 01:14:26,707
+R ile K'yı karşılaştırıyorduk çünkü.
+
+497
+01:14:28,027 --> 01:14:32,467
+Kara içerisinde K'nın en son bulunduğu yer.
+
+498
+01:14:32,967 --> 01:14:34,728
+K nerede? Sıfırıncı gözde.
+
+499
+01:14:35,207 --> 01:14:37,487
+Dolayısıyla i artı j eksi sıfır.
+
+500
+01:14:37,588 --> 01:14:39,267
+Yani i'yi nereden başlatacağım?
+
+501
+01:14:39,827 --> 01:14:41,147
+i şu anda 9'du.
+
+502
+01:14:41,267 --> 01:14:41,987
+Şurada görüyorum.
+
+503
+01:14:42,088 --> 01:14:42,948
+i 9'du.
+
+504
+01:14:43,427 --> 01:14:45,527
+9 artı 2, 11'den başlatacağım.
+
+505
+01:14:45,527 --> 01:14:48,267
+Gördüğümüz gibi i'yi 11'den başlatırsam,
+
+506
+01:14:48,268 --> 01:14:55,547
+K buraya denk geldiği için kara bu şekilde kaydırmayı sağlamış olacağım.
+
+507
+01:14:55,668 --> 01:14:59,588
+K'lar çakışacak şekilde kaydırmayı sağlamış olacağım.
+
+508
+01:14:59,668 --> 01:15:00,528
+Bu anlaşıldı mı?
+
+509
+01:15:03,088 --> 01:15:04,107
+Burası anlaşıldı mı?
+
+510
+01:15:07,108 --> 01:15:07,908
+Evet hocam.
+
+511
+01:15:08,588 --> 01:15:09,168
+Güzel.
+
+512
+01:15:09,168 --> 01:15:15,207
+Peki şimdi bu A keyzini az önce yazıp sildiğim B keyzini anlatacağım şimdi.
+
+513
+01:15:15,728 --> 01:15:18,067
+Yanlışlıkla B'den örnek verdim.
+
+514
+01:15:18,267 --> 01:15:41,347
+örnek verirken BKZ. O da şuydu. Geriye doğru, peki ben şimdi burada dedim ya, o A karakterinin, şey K karakterinin, şuradaki K karakterinin kara içerisinde bulunduğu en soldaki yer neresiyse o kadar kaydır diye.
+
+515
+01:15:41,347 --> 01:15:55,668
+Peki ya kaydırdığımda geriye doğru gidersem ne olacak? Geriye doğru gidersem daha önce baktığım yerlere doğru gitmemem lazım. Zaten oradan gelmişim. Orada olmadığını biliyorum. O zaman ne olacak?
+
+516
+01:16:00,595 --> 01:16:25,595
+geriye doğru gidersen, skip'in negatif olursa ne olacak? O zaman yapmanız gereken şey sadece i eşittir, i artı bir deyip yolunuza devam etmek. Eğer skip negatif çıkarsa geriye doğru kaymanızın bir anlamı olmadığı için i'yi sadece bir arttırarak yolunuza devam etmek.
+
+517
+01:16:25,595 --> 01:16:28,796
+Mesela şöyle bir case olduğunu düşünelim.
+
+518
+01:16:29,536 --> 01:16:31,475
+Az önce yazdığım oydu benim aslında.
+
+519
+01:16:33,616 --> 01:16:34,915
+Şurada needle'ımız var.
+
+520
+01:16:36,875 --> 01:16:37,595
+Bakın şimdi.
+
+521
+01:16:38,715 --> 01:16:39,976
+İ'imiz şurada aslında.
+
+522
+01:16:40,595 --> 01:16:42,176
+İşte ne bileyim burada da bir şey var.
+
+523
+01:16:44,755 --> 01:16:46,715
+Böyle bir kelime var mesela.
+
+524
+01:16:47,055 --> 01:16:47,835
+İ'imiz şurada.
+
+525
+01:16:47,915 --> 01:16:50,295
+İ'imiz diyelim ki onda.
+
+526
+01:16:50,856 --> 01:16:51,356
+Tamam mı?
+
+527
+01:16:51,356 --> 01:16:53,195
+J'iniz de buradan başladı.
+
+528
+01:16:53,195 --> 01:17:01,276
+j'niz 5, 4, 3, 3 de bozuldu.
+
+529
+01:17:02,055 --> 01:17:03,035
+3 de bozuldu.
+
+530
+01:17:03,875 --> 01:17:06,115
+Şimdi siz diyorsunuz ki ne var?
+
+531
+01:17:06,355 --> 01:17:08,795
+E çakışacak şekilde.
+
+532
+01:17:09,435 --> 01:17:11,536
+E'nin son olduğu yer çakışacak şekilde.
+
+533
+01:17:11,636 --> 01:17:12,595
+O zaman ne yaptınız?
+
+534
+01:17:13,075 --> 01:17:14,855
+Little'ı böyle çakıştırıyorsunuz.
+
+535
+01:17:14,856 --> 01:17:31,836
+i, ondan sonra L, ondan sonra D, böyle çakıştırıyorsunuz. Tamam mı? Ne oldu? Siz yani şu i'niz 10'du, i'yi geri kaydırmaya çalışıyorsunuz.
+
+536
+01:17:31,836 --> 01:17:41,595
+i'niz 10'du, böyle yaparsanız i'niz geri kayacak. Tamam mı? Yani ne olacak? E, E, D, ne oldu şimdi? Şöyle.
+
+537
+01:17:47,123 --> 01:18:16,503
+şöyle geri kaydırmış olacaksınız olması gereken yani o zaman çünkü i eşittir 10'du 10 artı 1 eksi e'nin son geçtiği yer 0, 1, 2, 3, 4, 5 e'nin son geçtiği yer 5, 5 i'niz 10 iken siz diyorsunuz ki 6 olsun. Şurası 6 çünkü 10. 6. karaktere gelsin. i'niz 6'ya denk gelsin diyorsunuz.
+
+538
+01:18:16,503 --> 01:18:24,844
+i'nin altıya denk gelmesi de mantıklı olamayacağına göre o zaman diyorsunuz ki tamam bir sonrakinden devam et diyorsunuz tamam mı?
+
+539
+01:18:26,543 --> 01:18:28,003
+Artı üç oluyor değil mi burada?
+
+540
+01:18:28,464 --> 01:18:30,503
+Tamam üç özür dilerim üç doğrusu.
+
+541
+01:18:30,503 --> 01:18:31,683
+Artı üç eksi beş mi?
+
+542
+01:18:32,723 --> 01:18:36,243
+Efendim?
+
+543
+01:18:37,643 --> 01:18:42,003
+İyi iyi evet ben her şeyi yine karıştırdım birbirine niye böyle?
+
+544
+01:18:42,003 --> 01:18:43,683
+Artı j beş oluyor hocam.
+
+545
+01:18:43,804 --> 01:18:46,183
+Artı j eksi right mouse.
+
+546
+01:18:46,503 --> 01:18:56,804
+i'miz 10'du, j'miz bozulduğu yer 5 olduğu yer değil mi? Şurada bozuldu.
+
+547
+01:18:57,603 --> 01:19:01,843
+Bir dakika, 3'te bozuldu. Özür dilerim 3'te bozuldu. Şurada bozuldu.
+
+548
+01:19:02,403 --> 01:19:09,803
+j'miz 3, e'miz de 5, o zaman 13-5, 8 oldu.
+
+549
+01:19:09,803 --> 01:19:15,423
+Zaten şurası da 10, şurası 9, şurası 8 değil mi? Oldu şimdi. Oldu mu?
+
+550
+01:19:16,503 --> 01:19:18,503
+oldu.
+
+551
+01:19:18,503 --> 01:19:21,003
+Oldu.
+
+552
+01:19:21,003 --> 01:19:22,003
+Peki.
+
+553
+01:19:22,003 --> 01:19:28,503
+Şimdi o zaman biz şuraya case'lerimizi bir daha yazarsak, case 1 iken, yani hepsini
+
+554
+01:19:28,503 --> 01:19:30,503
+birden yazıyorum buraya şu anda.
+
+555
+01:20:50,452 --> 01:21:10,691
+üç tane case'im var o zaman benim. Daha doğrusu yani iki tane ana case'im var. Birinde aradığım şey, text içerisindeki karakter, aradığım pattern içerisinde yoksa o zaman en son nerede kaldıysam ona göre şu şekilde i eşit, i artı, j eksi bir kadar bir kayma yapıyorum.
+
+556
+01:21:10,691 --> 01:21:26,992
+İkinci durumda aradığım karakter string içerisinde varsa fakat artımda pozitifse string içerisinde o karakterin geçtiği yeri i artı j'den çıkartıyorum.
+
+557
+01:21:26,992 --> 01:21:34,832
+üçüncü durumda da tamam text içerisinde eşitliğin bozulduğu karakter pattern içerisinde var.
+
+558
+01:21:35,672 --> 01:21:44,012
+Fakat skip hesapladığımda negatif çıkıyorsa o zaman bir sonraki karakterimden yoluma devam ediyorum geriye kaymak yerine.
+
+559
+01:21:44,432 --> 01:21:49,492
+Şimdi burada artık bu tamam fakat bir şey dikkatimi çekiyor benim.
+
+560
+01:21:49,992 --> 01:21:51,212
+Ne dikkatimi çekiyor?
+
+561
+01:21:51,212 --> 01:21:53,472
+Benim her seferimde şunu yapmam gerekiyor.
+
+562
+01:21:53,472 --> 01:22:04,032
+mesela işte şurada bu tekstim olsun şöyle şurada middle'ı da buraya çapıştıralım.
+
+563
+01:22:07,699 --> 01:22:36,519
+şimdi çakıştırdım. E ile bu da pattern'ım olsun. İşte bu İ'si işte 15 diyelim ki burası 16, burası 17, burası 18, J'si de 5 şu anda. E ile D'yi karşılaştırıyorum. Şimdi ben ne yapacağım? E ile D çakışmadığında diyeceğim ki eşit olmadığında acaba middle içerisinde D var mı diyeceğim. Tamam mı? Ve ona göre bir kayma yapacağım.
+
+564
+01:22:36,519 --> 01:22:40,839
+başka bir durumda işte şurada gördüğünüz çeşitli durumlar
+
+565
+01:22:40,839 --> 01:22:46,420
+şurada işte needle içerisinde S var mı dedik şurada mesela
+
+566
+01:22:46,420 --> 01:22:55,259
+işte ne bileyim başka bir yerde şurada needle içerisinde N var mı dedik mesela şöyle bir durum için
+
+567
+01:22:55,259 --> 01:22:59,519
+şurada L ile N çakışmayınca needle içerisinde N var mı dedik
+
+568
+01:22:59,519 --> 01:23:03,420
+böyle böyle durmadan bir takım kontroller yapmak zorunda kalıyor
+
+569
+01:23:03,419 --> 01:23:14,959
+Şimdi o zaman bir sarkince düşünüyorum ve diyorum ki ya peki ama zaten bu tekst hiçbir zaman string değişmiyor.
+
+570
+01:23:15,319 --> 01:23:17,119
+Şu string hiçbir zaman değişmiyor.
+
+571
+01:23:17,739 --> 01:23:24,299
+O zaman ben S ile E çakışmıyorsa ne kadar atlamam gerektiğini biliyorum.
+
+572
+01:23:24,299 --> 01:23:49,219
+L ile N çakışmadığında da N'nin pozisyonuna göre ne kadar atlamam gerektiğini biliyorsam eğer her seferinde böyle tek tek stringin içerisinde N var mı yok stringin içerisinde S var mı falan gibi kontroller yapmadan stringin içerisinde S yoksa ne kadar atlayacağım belli.
+
+573
+01:23:49,219 --> 01:23:51,919
+ne varsa ne kadar atlayacağım belli.
+
+574
+01:23:52,419 --> 01:23:58,399
+Bunu bir look up table üzerinden kontrol yapmadan sağlayabilir miyim?
+
+575
+01:23:58,959 --> 01:24:00,579
+Buna bakman lazım.
+
+576
+01:24:01,239 --> 01:24:04,699
+Bu algoritmanın asıl güzelliği bu aslında.
+
+577
+01:24:04,699 --> 01:24:20,619
+Şimdi bu şey tarafından Nigel Horsepool tarafından 1980'lerde geliştirilmiş bir algoritma.
+
+578
+01:24:20,619 --> 01:24:31,319
+O yüzden Horsepool algoritması diye buradaki bu şeyi bulmak için ne kadar skip edeceğimizi bulmak için kullanılan yöntem o.
+
+579
+01:24:31,319 --> 01:24:36,259
+çok güzel bir şekilde bir skip table oluşturuyor.
+
+580
+01:24:36,899 --> 01:24:41,879
+Ve bu skip table'ı her seferinde kullanarak iş yapılıyor.
+
+581
+01:24:41,999 --> 01:24:45,619
+Yani kontrol etmek yerine çok mantıklı bir şöyle bir şey yapmış.
+
+582
+01:24:45,619 --> 01:24:56,659
+Şimdi bizim kelimemiz middle şu 0, 1, 2, 3, 4, 5. indistleri olmak üzere diyor ki
+
+583
+01:24:56,659 --> 01:25:01,539
+Şimdi ben diyor sadece 26 büyük harften oluşan bir alfabem olsun diyor.
+
+584
+01:25:20,340 --> 01:25:23,999
+Şöyle düşünelim, yani aslında işte pardon ne yaptık?
+
+585
+01:25:25,820 --> 01:25:34,260
+Aslında şu alfabenin yani şu sıfırıncı indis, şu birinci indis, bu ikinci indis yani bu mantıkta düşünecek olursanız.
+
+586
+01:25:34,260 --> 01:25:39,600
+Şimdi eğer karşılaştırdım mesela şurada E vardı.
+
+587
+01:25:40,659 --> 01:25:42,419
+E ile L'yi karşılaştırdım.
+
+588
+01:25:42,579 --> 01:25:44,299
+Şöyleydi diyelim ki.
+
+589
+01:25:45,859 --> 01:25:49,119
+Ben dedim ki şeyde E var mı dedim.
+
+590
+01:25:49,119 --> 01:25:53,439
+middle kelimesi içerisinde E var mı? E'ler çakışacak şekilde oturup dedim.
+
+591
+01:25:53,439 --> 01:26:04,119
+Bunu dediğimde E'nin son geçtiği yer 5. karakter, skip için kullanacağı değer 5 olacak.
+
+592
+01:26:05,380 --> 01:26:16,859
+Şimdi D'ler çakışmadığında 3 olacak, L'ler çakışmadığında 4 olacak, N'ler çakıştığında 0 olacak.
+
+593
+01:26:16,860 --> 01:26:19,740
+o zaman mantık bu.
+
+594
+01:26:20,740 --> 01:26:32,539
+Şeyse de dedik ki olmadığında dedik ki şimdi bakın burada dedik ki pattern da yoksa i eşittir i artı j eksi 1 dedik.
+
+595
+01:26:32,539 --> 01:26:38,799
+i eşittir i artı j eksi 1 dedik.
+
+596
+01:26:47,796 --> 01:27:07,976
+j artı bir arkadaşlar o i x j x bir demişim burada zaten şöyle yanlış yazmışım şurada yanlış yazmış i artı j artı bir şurası da yanlış yazmışım düzeltiyorum i x i artı j artı bir dedik o zaman
+
+597
+01:27:12,756 --> 01:27:16,756
+Geri kalan bütün karakterler için eksi bir yazıyorum.
+
+598
+01:27:23,412 --> 01:27:34,571
+Çünkü kaldığı yerden devam etsin. Mesela burada kasap yazıyor. Burada da kediyi karşılaştırıyorduk.
+
+599
+01:27:37,771 --> 01:27:51,551
+Şimdi J burada 3. Ondan sonra şöyle olsun. İ de 9. S kedi içerisinde yok. Ben ne olmasını istiyorum?
+
+600
+01:27:51,551 --> 01:27:55,271
+şu a'ya atlamasını istiyorum.
+
+601
+01:27:55,271 --> 01:28:05,031
+j eşittir 3, i eşittir 9 artı 3 artı 1, 13 olmasını istiyorum.
+
+602
+01:28:06,092 --> 01:28:09,211
+Şimdi burada böyle yaptığım zaman
+
+603
+01:28:13,363 --> 01:28:39,243
+skip kim? Skipim 13 olacak. Yani ben de aslında bunu şöyle yapacağım. Skip eşittir. J eksi. Bu lookup'ın hangi karakteriyse diyelim ki S bu. Lookup'ın S'inci gözündeki değer eksi bir.
+
+604
+01:28:39,243 --> 01:28:45,724
+skip, işte j benim 3'tü, 3-1, 2 olacak.
+
+605
+01:28:46,724 --> 01:28:50,383
+şey de 11'den başlamış olacak.
+
+606
+01:28:50,503 --> 01:28:54,523
+Şimdi bunu örnek üzerinde size göstereceğim tekrardan nasıl olduğunu.
+
+607
+01:29:00,564 --> 01:29:12,963
+j eksi, 4 olacak şurası tamam, 4 olacak, j eksi, eksi 1, j artı 1, 4, 9, 10, 11, 12, 13, 14'ten başlanış olacak o zaman bir sıkıntı yok.
+
+608
+01:29:12,963 --> 01:29:23,003
+O zaman uymayan karakterler için, eksi 1, diğerleri için patterndaki indislerini koymuş olacağım.
+
+609
+01:29:23,564 --> 01:29:25,744
+Tamam mı? Bunu bu şekilde yapmış olacağım.
+
+610
+01:29:25,744 --> 01:29:31,043
+Şimdi bu mantıkla o zaman yavaş yavaş şeyimizi yazalım, algoritmamızı yazalım.
+
+611
+01:29:31,664 --> 01:29:36,744
+Önce şeyden başlayalım. Skip'in nasıl hesaplanacağından başlayalım.
+
+612
+01:30:48,372 --> 01:30:50,372
+Şimdi.
+
+613
+01:30:58,836 --> 01:31:00,836
+bunun uzunluğunu aldım öncelikle.
+
+614
+01:31:08,180 --> 01:31:19,600
+Table n'de mesela şu, diyelim ki büyük harfler, büyük harfler için uzunluğu 26.
+
+615
+01:31:23,412 --> 01:31:47,891
+26 tane büyük harf var. İşte bunu tamamen search'u ne tür karakterler üzerinde yapıyorsanız size'ını o şekilde alabilirsiniz. Bu algoritmanıza göre değişebilecek bir şey. Şimdi başlangıçta tablonun tamamını sıfırlıyorum. Right skip, i eşittir, eksi bir. Başlangıçta tamamını sıfırladım.
+
+616
+01:31:47,891 --> 01:31:54,131
+ondan sonra da sadece şeyleri
+
+617
+01:32:01,043 --> 01:32:04,163
+offset eşittir.
+
+618
+01:32:04,163 --> 01:32:10,363
+pattern i eksi a
+
+619
+01:32:10,363 --> 01:32:14,403
+şey, dur offset öyle yazmıyorum bir dakika.
+
+620
+01:32:15,623 --> 01:32:16,504
+Şöyle diyelim.
+
+621
+01:32:19,988 --> 01:32:24,147
+right skipping, iyisi, dur.
+
+622
+01:32:37,108 --> 01:33:03,788
+list, eksi, eksi, offset, eşittir, iyi dedim. Ne dedik ona bakalım. Şimdi şuradaki offset şey gösteriyor. Mesela bu tablo büyük harflerden oluşuyorsa sadece, büyük harfler içinse offset A karakteridir.
+
+623
+01:33:03,788 --> 01:33:17,847
+Çünkü B-A 1 eder o zaman bu dizinin birinci gözünde iş yaparsınız. Örneğin A-A 0 eder o zaman bu dizinin sıfırıncı gözünde iş yaparsınız.
+
+624
+01:33:17,847 --> 01:33:29,707
+O yüzden pattern E diyelim ki B-Offset'inizde A o zaman burası 1 eder. Right Skip'in birinci gözüne gidip de şey yazarsınız.
+
+625
+01:33:29,707 --> 01:33:32,867
+i de şeyi gösteriyor.
+
+626
+01:33:33,448 --> 01:33:35,267
+Pattern'un i'incisi ya.
+
+627
+01:33:35,827 --> 01:33:37,627
+Bir yazarsınız o zaman.
+
+628
+01:33:37,788 --> 01:33:37,907
+Niye?
+
+629
+01:33:38,087 --> 01:33:48,387
+Çünkü i'inci karakterin yerine, yani mesela middle için pattern'un sıfırıncısı gözünde n var.
+
+630
+01:33:48,387 --> 01:33:52,108
+O zaman right skip'in n'inci gözüne sıfır yazacaksınız.
+
+631
+01:33:52,468 --> 01:33:59,347
+Mesela l için pattern'un sıfır, bir, iki, üç, dördüncü gözünde l var.
+
+632
+01:33:59,707 --> 01:34:06,307
+O zaman right skip'in L'inci gözüne 4 yazacaksınız, İ yazacaksınız gibi.
+
+633
+01:34:06,727 --> 01:34:08,807
+Anlaşıldı mı? Bu sormakseniz bir şey var mı?
+
+634
+01:34:10,127 --> 01:34:12,527
+Bu offset daima A oluyor değil mi?
+
+635
+01:34:13,307 --> 01:34:20,447
+Efendim, eğer şeyse, yani biz burada bak özellikle dedik ki büyük harflerden oluşan bir tablon varsa offset'in A olur.
+
+636
+01:34:20,447 --> 01:34:22,188
+Yani offset o yüzden parametre.
+
+637
+01:34:22,548 --> 01:34:25,807
+Küçük harflerden oluşan bir tablon varsa offset'in küçük A olur.
+
+638
+01:34:25,807 --> 01:34:33,627
+başka sembollerden oluşan bir tablon varsa başka bir şey olur. Aski tablon varsa ona göre yaparsın gibi anlatabildim mi?
+
+639
+01:34:34,387 --> 01:34:39,707
+Yani bu offseti sen kendi çalıştığın şeye göre belirliyorsun.
+
+640
+01:34:40,187 --> 01:34:43,828
+İşte ne bileyim küçük harflerden oluşuyorsa, büyük harflerden oluşuyorsa vs.
+
+641
+01:34:44,608 --> 01:34:48,067
+Bambaşka bir durumdadır. Yani olduğu gibi şeyi kullanabilirsin.
+
+642
+01:34:48,067 --> 01:34:51,108
+Aski tablodaki indisleri kullanabilirsin.
+
+643
+01:34:51,108 --> 01:34:55,807
+offset'i hiç kullanmadan ASCII tablo tamamını indisi olarak kullanabilirsin. Olur mu?
+
+644
+01:34:56,608 --> 01:34:58,147
+Anladım hocam. Sağ olun. Teşekkür ederim.
+
+645
+01:34:58,587 --> 01:34:59,708
+Ben teşekkür ederim.
+
+646
+01:34:59,708 --> 01:35:08,067
+Peki şimdi o zaman bu mantığa göre şeyimizi yazalım. Substringimizi yazalım.
+
+647
+01:35:10,408 --> 01:35:13,587
+Bugün biraz dikkatim dağılıyor. O yüzden özür dilerim durmadan.
+
+648
+01:35:13,768 --> 01:35:17,667
+Örnekleri falan da verirken birazcık böyle karışık oldu.
+
+649
+01:35:17,667 --> 01:35:26,347
+biraz böyle bugün inşallah çok zorlanmadan anlamışsınızdır diye ümit etmek istiyorum.
+
+650
+01:35:31,123 --> 01:35:52,123
+Peki şimdi bir tane bu aradığım, bu da içinde arama yaptığım, tabi mesela şimdi hemen şunu fark ettim, bu da bir dizi mantıken değil mi? Şurada şöyle, bu da bir dizi, bu ikisini aldım.
+
+651
+01:35:52,123 --> 01:35:56,123
+Bir tabi değişkenler değil.
+
+652
+01:36:01,300 --> 01:36:02,739
+baştan sıfır alalım.
+
+653
+01:36:06,484 --> 01:36:20,163
+name is text kadar, name is D, petrins kadar.
+
+654
+01:36:28,115 --> 01:36:29,555
+bir de şey olsun burada.
+
+655
+01:36:47,539 --> 01:36:49,539
+büyük harf yazayım şunlar karışmasın.
+
+656
+01:36:49,539 --> 01:36:57,539
+Çünkü birinci şartımız en son bakabileceğim karaktere kadar ilerlemek.
+
+657
+01:37:02,163 --> 01:37:08,883
+İkinci şartımız da durma için yani aradığımı bulamamak ve şartının sağlanamaması.
+
+658
+01:37:08,883 --> 01:37:17,463
+Şimdi bu şartlar olduğu sürece işe başladım. Şimdi j'yi nereden başlatacağız? Her seferinde m-1 sondan başa doğru gidiyoruz.
+
+659
+01:37:17,624 --> 01:37:22,184
+1 ve nasıl ilerleyeceğiz? İki tane yine burada da şartım var.
+
+660
+01:37:22,184 --> 01:37:37,344
+j'ye eşittir 0 iken yani j'ye eşittir 0 ise yani eksi 1 ise daha doğrusu 0 değil de azaltıyoruz ya j'ye eşittir eksi 1 ise bulunamadı.
+
+661
+01:37:38,344 --> 01:37:45,803
+Değil mi? O yüzden j'ye büyük eşittir 0 olduğu sürece devam edeceğim.
+
+662
+01:37:45,803 --> 01:37:48,504
+Ve diyeceğim and.
+
+663
+01:37:48,723 --> 01:37:50,844
+Hocam bulunduğu olması gerekmiyor mu?
+
+664
+01:37:52,184 --> 01:37:55,344
+Evet, bulundu olması gerekiyor.
+
+665
+01:37:57,024 --> 01:37:58,364
+Doğrudur, yazayım.
+
+666
+01:37:59,004 --> 01:38:03,403
+j eşittir, eksi bir ise bütün harflere bakıldı ve bulundu demektir.
+
+667
+01:38:05,004 --> 01:38:06,983
+j büyük eşittir, sıfır oldu.
+
+668
+01:38:07,083 --> 01:38:08,983
+Söyce aramaya devam ediyor demektir.
+
+669
+01:38:08,983 --> 01:38:18,503
+and pj eşit eşit tekstin i artı j'sine.
+
+670
+01:38:19,704 --> 01:38:21,223
+Tamam mı? Böyle başladım.
+
+671
+01:38:21,223 --> 01:38:24,743
+ve burada tek yaptığım şey j'yi azaltmak.
+
+672
+01:38:25,583 --> 01:38:26,743
+Şimdi dışarı çıktım.
+
+673
+01:38:29,043 --> 01:38:32,503
+Niye dışarı çıktım? Ona bakmam gerekiyor.
+
+674
+01:38:33,003 --> 01:38:41,043
+Dışarı çıkma sebebi ya buldum çıktım ya bulamadım çıktım.
+
+675
+01:38:41,043 --> 01:38:48,503
+Şimdi büyük eşittir sıfırsa şimdi burada doğru artık söylediğim bulamadığı için çıktı değil mi?
+
+676
+01:38:49,123 --> 01:38:50,503
+Döngüden var.
+
+677
+01:38:51,223 --> 01:39:01,783
+y bölgesinden yukarıdaki şu döngüden j büyük eşittir 0 ise bulamamış. Demek ki şu şart bozulmuş o da dışarı çıkmış.
+
+678
+01:39:02,743 --> 01:39:05,863
+O zaman j büyük eşittir 0 ise skip'e hesaplayacağız.
+
+679
+01:39:05,863 --> 01:39:07,223
+sıkı, eşittir.
+
+680
+01:39:09,803 --> 01:39:10,903
+J'yi eksi
+
+681
+01:39:14,707 --> 01:39:29,947
+write, skipping, text in i artı j incisi. Tamam mı?
+
+682
+01:39:31,412 --> 01:39:39,151
+ve bir de ne konuşmuştuk? Eğer dedik skip, küçükten 0 ise skip'i 1 yap. Bu kadar basit.
+
+683
+01:39:42,963 --> 01:39:43,963
+ve Eğitim
+
+684
+01:39:53,427 --> 01:39:54,427
+i artı eşittir. Biraz yamuk oldu şurası. Biraz daha düzgün yazdım. Aşağılara yazmak çok zor oluyor. i artı eşittir. Skip de ve else stop eşittir. Bir de
+
+685
+01:40:22,676 --> 01:40:52,655
+şimdi while'dan çıktık şöyle şuraya geliyorum while'dan çıktık bakın bitti if stop eşittir birse return e as return eksi bir bulamadı.
+
+686
+01:40:45,108 --> 01:40:47,987
+Oldu mu? Buraya kadar sormak için bir şey var mı?
+
+687
+01:40:55,699 --> 01:41:01,120
+Peki şimdi o zaman şu şey bölümünü bir kere daha üzerinden geçiyoruz şu anda.
+
+688
+01:41:07,220 --> 01:41:08,220
+Şimdi biz dedik ki skip bölümünün üzerinden geçiyoruz. if dedik j pardon j dedik büyük eşittir 0 ise skip eşittir dedik j eksi neydi o right skip'in
+
+689
+01:41:37,684 --> 01:42:02,203
+t i artı j incisi ve dedik if dedik skip buçuktur sıfırsa skip beşittir bir dedik. Şimdi bu kısmını örnek üzerinde birlikte görelim. Needle arıyoruz yine.
+
+690
+01:42:02,203 --> 01:42:06,423
+yavaş ilerleyeceğim şimdi.
+
+691
+01:42:06,563 --> 01:42:07,763
+m eşittir 5.
+
+692
+01:42:07,763 --> 01:42:08,503
+Tamam mı?
+
+693
+01:42:10,603 --> 01:42:19,323
+Ve needle'ın kelimelerinden right skip'in n'ci gözünde 0 var.
+
+694
+01:42:21,963 --> 01:42:24,403
+n'ci gözünde 0 var.
+
+695
+01:42:24,803 --> 01:42:30,803
+e'ci gözünde 0, 1, 2, 3, 4, 5'ten ötürü
+
+696
+01:42:30,803 --> 01:42:40,803
+en son geçtiği yer 5 olduğu için 5 var, D'inci gözünde 3 var, L'inci gözünde de 4 var tamam mı?
+
+697
+01:42:40,803 --> 01:42:45,803
+Bu right skip dizisinin diğer gözlerinde de eksi 1 var. Bunu biliyoruz.
+
+698
+01:42:45,803 --> 01:42:51,803
+Şimdi birlikte şeye bakalım. Tekrar şöyle.
+
+699
+01:43:48,787 --> 01:43:59,787
+Şimdi başladık. Şehir Needle'ı buraya oturttuk.
+
+700
+01:44:02,515 --> 01:44:26,856
+elene aynı değil. Şimdi bakın ne kadar kaydıracağız? Şuraya yazıyorum kaydırma miktarını. Skip eşittir, j eksi, right skipping, t, i artı j'inci gözü. Şimdi, i'miz sıfır şu anda. i'miz şuradayız biz. i eşittir sıfır.
+
+701
+01:44:26,856 --> 01:44:50,556
+O zaman bu durumda birinci case yani şurada birinci durumdayız. Ne farklıdır E olduğu durumda skip'imiz ne oldu? J'miz 5 burada. J eşittir 5. Çünkü 0, 1, 2, 3, 4, J'miz 5. Skip eşittir o zaman.
+
+702
+01:44:50,555 --> 01:44:56,315
+tekstin sıfır artıncı
+
+703
+01:45:00,020 --> 01:45:05,619
+Right skipping, bir saniye.
+
+704
+01:45:08,199 --> 01:45:16,599
+Right skipping, i artı j'inci gözünde n var.
+
+705
+01:45:16,960 --> 01:45:19,479
+Yani i 0, i artı 5'inci gözünde n var.
+
+706
+01:45:19,479 --> 01:45:22,520
+Right skipping, n'inci gözündeki değer.
+
+707
+01:45:22,839 --> 01:45:26,799
+Yani right skipping, n eksi a'ıncı gözündeki değer.
+
+708
+01:45:26,799 --> 01:45:29,679
+O da 0.
+
+709
+01:45:30,239 --> 01:45:32,539
+Skip eşittir o zaman ne olmuş oldu?
+
+710
+01:45:33,559 --> 01:45:35,819
+5-0.
+
+711
+01:45:36,039 --> 01:45:37,159
+5 olmuş oldu.
+
+712
+01:45:37,839 --> 01:45:43,979
+O zaman i 5 olduğuna göre şurada needle'ın n'ler çakışacak şekilde oturdu.
+
+713
+01:45:49,908 --> 01:46:05,047
+şöyle n'ler çakışacak şekilde oturdu. Bu anlaşıldı mı? Yani ne kadar kayacakmış? j eksi right skip'in t artı t, right skip'in t'sinin i artı j'inci gözündeki değer kadar artacakmış.
+
+714
+01:46:05,647 --> 01:46:14,607
+tekstin i artı j'inci gözünde n var. right skip'in n'inci gözü dediği şey n eksi a'inci gözü. Orada da sıfır var.
+
+715
+01:46:14,607 --> 01:46:26,287
+Burada görüyorsunuz sıfır var. Ondan ötürü beş eksi sıfır, beş artacak. İyi sıfır da beşinci göze gelecek şekilde arttı.
+
+716
+01:46:26,547 --> 01:46:32,247
+Hocam, sizden bir örnek isteyebilir miyim? Mesela dört ile beş ikisi de e olsaydı?
+
+717
+01:46:32,967 --> 01:46:37,627
+Ya dur şimdi önce bir tane sağlam örneği bitireyim ona geri döneceğim. Zaten şimdi öyle bir şey olacak.
+
+718
+01:46:37,627 --> 01:46:40,908
+Sonunda öyle bir şey olacak. Hiçbir şey fark etmeyecek.
+
+719
+01:46:40,908 --> 01:46:50,367
+baktığın zaman E ile S şurayı düzelteyim ondan sonra yani şurayı bitireyim tam olarak bir tane de tam öyle yaparım.
+
+720
+01:46:50,367 --> 01:47:07,547
+E ile S çakışmadığı için şimdi ne oldu? S'ci gözde eksi bir var. Skip eşittir. J5 şu anda. J5. 5 eksi, eksi bir, 6 olacak.
+
+721
+01:47:07,547 --> 01:47:35,747
+Yani i'miz de şu anda 5'ti şurada i eşittir 5 i o zaman 11 olacak şimdi i 11 oldu şuradan başladı tamam mı ne e e d l e oldu mu e'ler çakıştı m ile v çakışmadı o zaman middle'ı buradan oturttuk
+
+722
+01:47:35,747 --> 01:47:40,627
+n, e, e, d, l onu da görelim yalnız.
+
+723
+01:47:40,627 --> 01:47:57,587
+n sıfırıncı eleman bakın şimdi şurada i eşittir 11, 11 artı j eksi sıfır, j'de 4 şurası j'nin 5 olduğu yer, şurası 4 olduğu yer, 11 artı 4, 15. göze oturtacaksınız.
+
+724
+01:47:57,588 --> 01:48:08,167
+Bakın ne oldu? Burada i eşittir 15'e oturttuk. Sonra da e ile e'yi karşılaştırdık. L ile L'yi, D ile D'yi, e ile E'yi, e ile E'yi karşılaştırdık.
+
+725
+01:48:08,488 --> 01:48:15,268
+Ve bunu sağlamış olduk. Şimdi senin söylediğin gibi yapalım. Söyle örnek söyle.
+
+726
+01:48:16,947 --> 01:48:19,967
+Bir önceki örneğe gelirsek oradan çarpım tarifi.
+
+727
+01:48:19,967 --> 01:48:28,087
+Buradaki 4 ile 5 ile I ve N var ya, onun ikisi de E olsaydı baştan nasıl yapardık?
+
+728
+01:48:28,087 --> 01:48:39,628
+4 ile 5 ile I ve N var. Şöyle diyorsun. Bir dakika. Finding. Burada böyle dediğim gibi o ne? Finding.
+
+729
+01:48:39,628 --> 01:48:48,408
+Oradaki I ve N olacak ikisi de. Böyle mi? Hayır. İkinci I ve N. Yani G'den önceki.
+
+730
+01:48:48,408 --> 01:48:50,408
+Tamam şöyle diyorsun
+
+731
+01:48:56,627 --> 01:48:59,507
+ve ben şöyle, nereye oturtuyorum?
+
+732
+01:48:59,507 --> 01:49:03,507
+Aynısı sadece şey değişecek, o dediğim yer değişecekti.
+
+733
+01:49:03,507 --> 01:49:04,507
+Tamam.
+
+734
+01:49:04,507 --> 01:49:08,067
+Bu arada şey de gen, yani neye de e olacak?
+
+735
+01:49:08,067 --> 01:49:15,507
+Anca öyle olur zaten, evet orada bir, ben de çünkü niye olmadı dedim. Şöyle...
+
+736
+01:49:15,507 --> 01:49:17,507
+Hmm...
+
+737
+01:49:23,731 --> 01:49:26,751
+Şimdi arkadaşımız diyor ki şurası tekst olsun diyor.
+
+738
+01:49:26,972 --> 01:49:28,391
+Şurada pattern olsun diyor.
+
+739
+01:49:29,692 --> 01:49:34,251
+Şöyle diyelim ki şurada i'miz 9 olsun mesela.
+
+740
+01:49:34,612 --> 01:49:38,692
+10, 11, 12, 13, 14 bu şekilde.
+
+741
+01:49:39,211 --> 01:49:41,031
+j'miz de 5 burada.
+
+742
+01:49:42,111 --> 01:49:42,591
+Tamam mı?
+
+743
+01:49:43,191 --> 01:49:44,912
+Diyorsun ki sen e ile çakıştı.
+
+744
+01:49:45,511 --> 01:49:46,572
+e ile ile çakışmadı.
+
+745
+01:49:47,832 --> 01:49:49,891
+Şurası j'nin 4 olduğu yer.
+
+746
+01:49:49,891 --> 01:49:52,331
+Şimdi kural ne diyor sana i eşittir diyor.
+
+747
+01:49:52,331 --> 01:49:58,571
+i artı j eksi, şuraya aşağıya yazayım, çok sıkıştı oraya.
+
+748
+01:49:59,611 --> 01:50:04,611
+i eşittir, i artı j eksi, right skip'i değil mi?
+
+749
+01:50:07,391 --> 01:50:09,691
+Tekstin hangi harfine bakıyorsunuz?
+
+750
+01:50:09,751 --> 01:50:11,631
+i artı j'inci harf diyor.
+
+751
+01:50:12,092 --> 01:50:12,571
+Tamam mı?
+
+752
+01:50:13,071 --> 01:50:15,511
+i artı j'inci harf ne teksti?
+
+753
+01:50:15,691 --> 01:50:16,371
+E harfi.
+
+754
+01:50:17,131 --> 01:50:18,391
+Biz e'ye ne deneceğiz?
+
+755
+01:50:18,511 --> 01:50:19,111
+5 deneceğiz.
+
+756
+01:50:19,111 --> 01:50:21,011
+E için
+
+757
+01:50:21,011 --> 01:50:22,651
+right skip'in
+
+758
+01:50:22,651 --> 01:50:25,591
+E
+
+759
+01:50:25,591 --> 01:50:28,912
+eksi A diye gösteriyoruz.
+
+760
+01:50:29,231 --> 01:50:31,351
+O gözde 5 varmış.
+
+761
+01:50:32,011 --> 01:50:33,371
+Gözünde 5 varmış.
+
+762
+01:50:33,471 --> 01:50:33,831
+Oldu mu?
+
+763
+01:50:36,231 --> 01:50:37,452
+Right skip'in
+
+764
+01:50:37,452 --> 01:50:38,571
+şurası 5 yani.
+
+765
+01:50:39,851 --> 01:50:40,731
+O zaman ne oldu?
+
+766
+01:50:41,551 --> 01:50:42,531
+I eşittir.
+
+767
+01:50:42,871 --> 01:50:45,131
+I artı J eksi 5 oldu.
+
+768
+01:50:45,131 --> 01:50:46,291
+J kaç?
+
+769
+01:50:47,011 --> 01:50:47,271
+4.
+
+770
+01:50:47,272 --> 01:50:51,592
+iyi de dokuzdu
+
+771
+01:50:51,592 --> 01:50:53,912
+eksi bir oldu
+
+772
+01:50:53,912 --> 01:50:55,572
+iyi geri düşürdüm
+
+773
+01:50:55,572 --> 01:50:56,691
+o zaman ne yapacaksın
+
+774
+01:50:56,691 --> 01:50:58,632
+şuradan başlatacaksın
+
+775
+01:50:58,632 --> 01:51:01,231
+oldu mu
+
+776
+01:51:01,231 --> 01:51:04,392
+oldu mu şimdi
+
+777
+01:51:04,392 --> 01:51:06,812
+negatife düştü ya
+
+778
+01:51:06,812 --> 01:51:10,172
+negatife düştüğü için
+
+779
+01:51:10,172 --> 01:51:10,852
+bir sonraki
+
+780
+01:51:10,852 --> 01:51:11,571
+nasıl bulacaksın
+
+781
+01:51:11,571 --> 01:51:14,392
+böyle bir
+
+782
+01:51:14,392 --> 01:51:17,092
+tabi şey oluyor
+
+783
+01:51:17,092 --> 01:51:32,092
+Şimdi baktığın zaman burada normalde average'de yani çok kötü olmayan bir tekste M bölü M compare yapıyorsunuz.
+
+784
+01:51:33,571 --> 01:51:44,032
+Neden? Çünkü aslında çok fena değil şu şeyi compare saymazsak yani şu S ile E'yi karşılaştırma ya artık sadece skip ediyor ne kadar gerekiyorsa.
+
+785
+01:51:44,032 --> 01:51:47,272
+uyuşmadığı anda kaydıra kaydıra gittiğinizden
+
+786
+01:51:47,272 --> 01:51:48,791
+mesela düşünün ki
+
+787
+01:51:48,791 --> 01:51:50,252
+işte şurada
+
+788
+01:51:50,252 --> 01:51:52,692
+çok fazla hani böyle
+
+789
+01:51:52,692 --> 01:51:55,172
+şöyle bir tekst olmadığı sürece
+
+790
+01:51:55,172 --> 01:51:57,931
+A A A az önce gibi
+
+791
+01:51:57,931 --> 01:51:59,851
+A B işte bilmem
+
+792
+01:51:59,851 --> 01:52:01,212
+A A A
+
+793
+01:52:01,212 --> 01:52:04,032
+yok böyle değilim
+
+794
+01:52:04,032 --> 01:52:06,132
+şöyle yaparsam doğru olacak
+
+795
+01:52:06,132 --> 01:52:08,252
+A B B B
+
+796
+01:52:08,252 --> 01:52:09,651
+B B
+
+797
+01:52:09,651 --> 01:52:12,252
+A B B falan böyle bir şey gidiyor
+
+798
+01:52:12,252 --> 01:52:12,752
+mesela
+
+799
+01:52:12,751 --> 01:52:16,131
+sizin aradığınızda
+
+800
+01:52:16,131 --> 01:52:17,431
+mesela B
+
+801
+01:52:17,431 --> 01:52:19,651
+ne olsun
+
+802
+01:52:19,651 --> 01:52:22,391
+C, B, B
+
+803
+01:52:22,391 --> 01:52:23,991
+B mesela. Siz
+
+804
+01:52:23,991 --> 01:52:25,931
+oturtuyorsunuz şuraya C, B, B
+
+805
+01:52:25,931 --> 01:52:26,991
+B işte
+
+806
+01:52:26,991 --> 01:52:30,031
+karşılaştırdınız, karşılaştırdınız
+
+807
+01:52:30,031 --> 01:52:31,991
+karşılaştırdınız hop başta gitti. Yani
+
+808
+01:52:31,991 --> 01:52:34,111
+neredeyse M kadar bir karşılaştırma
+
+809
+01:52:34,111 --> 01:52:35,671
+yaptınız aslında siz burada.
+
+810
+01:52:36,771 --> 01:52:38,011
+Yani algoritmanız
+
+811
+01:52:38,011 --> 01:52:39,271
+ne kadar iyi olursa olsun
+
+812
+01:52:39,271 --> 01:52:41,851
+başta gitti. Koydunuz tekrar
+
+813
+01:52:41,851 --> 01:52:44,111
+Şurası da B olsun diyelim ki şurası.
+
+814
+01:52:44,711 --> 01:52:47,551
+M kadar karşılaştırma yaptığınız soru en başta gitti.
+
+815
+01:52:47,751 --> 01:52:49,172
+Şimdi o zaman worst case.
+
+816
+01:52:49,592 --> 01:52:51,651
+O zaman çok fazla yapacağınız bir şey yok.
+
+817
+01:52:51,931 --> 01:52:53,151
+Anlatabildim mi problemi?
+
+818
+01:52:53,812 --> 01:52:57,812
+Yani worst case'de N çarpı M oluyor.
+
+819
+01:52:58,051 --> 01:52:58,952
+Tekrar göstereyim.
+
+820
+01:52:59,031 --> 01:53:00,971
+Yani şöyle bir şeyiniz var diyelim ki.
+
+821
+01:53:03,411 --> 01:53:06,471
+Siz A, B, B'yi arıyorsunuz burada.
+
+822
+01:53:07,091 --> 01:53:10,471
+A, B, B, B'yi arıyorsunuz.
+
+823
+01:53:10,531 --> 01:53:11,631
+Buradan çakıştırdınız.
+
+824
+01:53:11,751 --> 01:53:13,032
+Geriye doğru bakıyorsunuz.
+
+825
+01:53:13,991 --> 01:53:15,911
+Karşılaştırdınız, karşılaştırdınız, karşılaştırdınız.
+
+826
+01:53:15,991 --> 01:53:17,052
+Hep doğru buluyorsunuz.
+
+827
+01:53:17,131 --> 01:53:17,771
+En başta gitti.
+
+828
+01:53:17,892 --> 01:53:19,991
+Neredeyse M karakter karşılaştırdınız.
+
+829
+01:53:20,111 --> 01:53:20,851
+En başta gitti.
+
+830
+01:53:20,951 --> 01:53:22,291
+M karakter karşılaştırdınız.
+
+831
+01:53:22,391 --> 01:53:23,151
+M başta gitti.
+
+832
+01:53:23,631 --> 01:53:24,932
+O zaman çok kötü bir şey.
+
+833
+01:53:24,932 --> 01:53:31,571
+Ama yani mantıklı, yani düzgün bir tekste o olasılık çok büyük değil.
+
+834
+01:53:31,731 --> 01:53:35,331
+Yani bu kadar çok sürekli tekrar eden bir şey mümkün değil.
+
+835
+01:53:35,731 --> 01:53:36,631
+O zaman ne oluyor?
+
+836
+01:53:37,091 --> 01:53:41,191
+Yani işte ne bileyim ortalama olarak benimki bir iki karakter karşılaştırdınız.
+
+837
+01:53:41,591 --> 01:53:43,231
+Uyumsuzluk çıktı kaydırdınız.
+
+838
+01:53:43,331 --> 01:53:45,011
+Bir iki karakter karşılaştırdınız.
+
+839
+01:53:45,132 --> 01:53:46,632
+Uyumsuzluk çıktı kaydırdınız.
+
+840
+01:53:47,071 --> 01:53:50,211
+O zaman yaklaşık M bölü M compare yapmış oluyorsunuz.
+
+841
+01:53:50,211 --> 01:53:59,272
+Yani sonuna kadar karşılaştıra karşılaştıra gitmediğiniz sürece yaklaşık M bölü M compare yapmış oluyorsunuz.
+
+842
+01:53:59,432 --> 01:54:01,352
+Kıvaya kadar sormak istediğiniz bir şey var mı?
+
+843
+01:54:10,804 --> 01:54:17,883
+Peki. O zaman çok kısa bir şey daha kaldı, onu anlatacağım. Ama bir dinlenin. 10 dakika öyle veririz.
+
+844
+02:06:30,612 --> 02:06:31,612
+Evet, devam edelim.
+
+845
+02:06:42,292 --> 02:06:45,171
+Şimdi şey yapacağım, ekran paylaşacağım sizinle.
+
+846
+02:07:19,283 --> 02:07:26,283
+görüyor musunuz ekranımı? Hayır hocam. Görmüyor musunuz? Bir saniye bir daha deneyelim.
+
+847
+02:07:29,268 --> 02:07:31,268
+şimdi görüyor olmalısınız.
+
+848
+02:07:31,268 --> 02:07:33,268
+görüyor musunuz?
+
+849
+02:07:35,268 --> 02:07:36,268
+tamam
+
+850
+02:07:37,268 --> 02:07:45,268
+şimdi bir yöntem daha anlatacağım aslında çok fazla yöntem var ama sadece basit bir iki tanesini işliyoruz.
+
+851
+02:07:45,268 --> 02:07:53,268
+bu robin karp parmak izi yöntemi bu aslında çok basit ve eğlenceli bir şekilde çözüyor.
+
+852
+02:07:53,268 --> 02:08:01,247
+Şimdi diyor ki normalde diyelim ki işte kalem kelimesini araya olalım.
+
+853
+02:08:02,547 --> 02:08:05,808
+Ben diyor böyle tek tek harfleri karşılaştıracağım yerde diyor.
+
+854
+02:08:06,648 --> 02:08:12,147
+Kalemden bir sayı üretirim diyor ve bu sayıyı karşılaştırırım diyor.
+
+855
+02:08:12,147 --> 02:08:19,407
+Eğer diyor bu sayı oluyorsa diyor tekste o zaman diyor buldum demektir.
+
+856
+02:08:19,507 --> 02:08:22,067
+Yoksa tek tek karakter karakter karşılaştırmam diyor.
+
+857
+02:08:22,067 --> 02:08:25,047
+Çünkü Boyer Mort'a bile biz ne yapmak zorunda kaldık?
+
+858
+02:08:25,487 --> 02:08:28,427
+İşte tersten gide gide karakter karakter bakıyorduk.
+
+859
+02:08:28,527 --> 02:08:31,407
+Bu diyor ki ben baştan bir hazırlık yaparım diyor.
+
+860
+02:08:32,327 --> 02:08:35,427
+Ve tek tek tek karakterleri karşılaştırma yerine diyor.
+
+861
+02:08:35,507 --> 02:08:37,187
+Bir bütün olarak karşılaştırılıyor.
+
+862
+02:08:37,268 --> 02:08:37,927
+Ne demek bu?
+
+863
+02:08:38,427 --> 02:08:44,348
+Diyelim ki işte bunun kolay olması açısından baca kelimesiyle yapıyorum.
+
+864
+02:08:44,348 --> 02:08:51,348
+Sadece büyük harflerde oluşan bir tekst için B'nin sayı karşılığı 1'dir.
+
+865
+02:08:52,067 --> 02:09:04,027
+A'nın 0'dır, işte C'nin 2'dir, A'nın da 0'dır. Dolayısıyla bunu 1020 sayısıyla gösterebildiğimizi düşünelim.
+
+866
+02:09:04,027 --> 02:09:15,287
+Tamam mı? Diyor ki ben diyor bacayı arayacağım yerde diyor. Diyelim ki şöyle de bir tekstimiz var.
+
+867
+02:09:15,287 --> 02:09:19,327
+Arapça böyle bir textimiz var.
+
+868
+02:09:19,327 --> 02:09:24,787
+Diyor ki ben diyor bunları diyor böyle 4-4 diyor sayı karşılıklıyorum.
+
+869
+02:09:25,307 --> 02:09:30,247
+Kanun karakter karşılığını hatırlamıyorum ama diyelim ki bu 4050 olsun.
+
+870
+02:09:31,427 --> 02:09:37,488
+Şu Arap'ın karşılığı işte iki ne ara sıfırla başlıyor.
+
+871
+02:09:38,208 --> 02:09:40,208
+0-379 olsun.
+
+872
+02:09:40,367 --> 02:09:41,628
+Tamamen atıyorum arkadaşlar.
+
+873
+02:09:41,768 --> 02:09:43,027
+Bilmiyorum karşılığını çünkü.
+
+874
+02:09:43,027 --> 02:10:06,027
+işte Raban'ın karşılığı işte 5729 olsun 4 karakter 4 karakter yani şurada şöyle gösterecek olursam mesela şöyle ya Kara Baca şimdi Baca'nın karşılığına şey dedik işte 1-0-2-0-1020 dedik.
+
+875
+02:10:06,027 --> 02:10:35,847
+O diyor ki ben diyor karanın karşılığını bulurum bu da tekstimiz bizim işte arabın karşılığını bulurum ve banın karşılığını bulurum böyle dört karakter dört karakter karşılıklarını bir kere diyor hesaplarım diyor mesela karanın karşılığı 4279 olsun işte arabın attı mı yalnız bu arada tamamen attım işte arabın karşılığı işte 1900 olsun falan
+
+876
+02:10:35,848 --> 02:10:47,488
+böyle böyle gittim. Bacanın karşılığı 1020. Diyor ki ben bir tek şunları karşılaştırayım. 1020 mi? Hayır. Ondan sonra işte
+
+877
+02:10:52,916 --> 02:11:18,655
+4 karakter atladım, 4 karakter atladım, 1020 mi diye baktım, baca 1020 buldum, bitti gitti. Yani bunu bu şekilde yaparım diyor. Şimdi o zaman ama peki büyük stringler için ne yapacak? Yani çok büyük stringler olduğu zaman bunların sayı karşılığını ürettiğinde de çok büyük bir sayı karşılığı edilecek.
+
+878
+02:11:18,655 --> 02:11:24,315
+o zaman diyor ki ben bunlardan bir modülünü alarak böyle bir sayı üretirim diyor.
+
+879
+02:11:24,735 --> 02:11:29,235
+Mesela burada diyelim ki sayımız 26.535 olmuş.
+
+880
+02:11:29,575 --> 02:11:37,935
+İşte karakterlerin sayı karşılıklarını dönüştürdüğümüzde harflerin sayı karşılıklarını böyle bir 26.535 sayısı olmuş.
+
+881
+02:11:38,735 --> 02:11:42,935
+997'de büyük bir asal sayı.
+
+882
+02:11:45,035 --> 02:11:46,355
+Bunun karşılığını ne almış?
+
+883
+02:11:46,355 --> 02:12:05,895
+613. Ondan sonra diyor ki ben diyor 613'ü karşılaştıracağım diyor. 613'ü bulursam buldum demektir diyor. Şimdi şuraya bakın. Adım adım gösteriyorum ne yaptığını. Şöyle. Bu da benim tekstim. Tamam mı?
+
+884
+02:12:05,895 --> 02:12:35,755
+şimdi 31.45 karakterdi bu arada pattern'ın o yüzden 31.400'de 15'in 997'ye göre modunu aldı 518 14.179'un 997'ye göre modunu aldı 201 birer birer bakın bak birer birer kaydıra kaydıra gidiyor birer birer kaydıra kaydıra gidiyor ama şey yapmıyor her seferinde tek tek hani bir mi dört mü bir mi
+
+885
+02:12:35,755 --> 02:12:42,235
+diye karşılaştırmadan doğrudan 14159'u bir bütün olarak karşılaştırıyor.
+
+886
+02:12:43,435 --> 02:12:46,295
+14159'un 997'ye göre modunu aldı.
+
+887
+02:12:46,416 --> 02:12:51,815
+201. 201 sayısını 613 ile karşılaştırdı.
+
+888
+02:12:52,115 --> 02:12:52,475
+Oldu mu?
+
+889
+02:12:53,655 --> 02:12:54,276
+Kaydırdı.
+
+890
+02:12:54,355 --> 02:12:58,815
+41.592'nin 997'ye göre modu 715.
+
+891
+02:12:59,075 --> 02:13:00,055
+Onu karşılaştırdı.
+
+892
+02:13:00,135 --> 02:13:01,375
+Böyle devam etti etti.
+
+893
+02:13:01,375 --> 02:13:05,695
+En son 26.535'i buldu.
+
+894
+02:13:05,755 --> 02:13:11,035
+990 ile göre modunu aldı 613 karşılaştırdı meç etti.
+
+895
+02:13:11,535 --> 02:13:14,655
+Buraya kadar sormak istediğiniz bir şey var mı? Mantığı anladınız mı?
+
+896
+02:13:15,095 --> 02:13:15,455
+Hocam.
+
+897
+02:13:16,255 --> 02:13:16,515
+Tabii.
+
+898
+02:13:17,255 --> 02:13:25,576
+Hocam hatalı olma ihtimali yok. Mesela bir tanesi 2x997 613 olabilir ya da biride 3 katının 613 fazlası olabilir.
+
+899
+02:13:25,996 --> 02:13:27,175
+Çok güzel bir soru.
+
+900
+02:13:30,868 --> 02:13:43,187
+Teşekkür ederim. Çok güzel bir soru sordum. Şimdi şurada şöyle çok basit hemen aradığımız sayı 41592 olsun. Şöyle yapayım.
+
+901
+02:13:46,248 --> 02:13:57,587
+Ve hiç bilmiyorum bunun bir x sayısına göre modu 57579 olsun. Şimdi şöyle diyor bir kere buradan başlayayım arkadaşınızın sorusunu anlatacağım ondan sonra.
+
+902
+02:13:57,587 --> 02:14:10,927
+diyor ki 31.415 diyor. Önce onunla karşılaştırıyorum. Bu x'e göre modu 561 olsun diyor. Karşılaştırdım eşit değil. Devam etti.
+
+903
+02:14:14,899 --> 02:14:44,779
+Şurada 31.415 vardı. X sayısına göre modu diyelim ki 561 eşit değil. 14.159'un X'e göre modu işte 375 mesela eşit değil. Şuraya geldim. 41.592'nin X'e göre modu 579. Tamam buldum. Buldum dedim durdum. Tamam mı? Yaptığı işlem bu. Bir kere bunu anladı mı herkes? Anladım.
+
+904
+02:14:44,899 --> 02:14:46,359
+Tamam yaptığı işlem bu.
+
+905
+02:14:46,899 --> 02:14:51,600
+Şimdi arkadaşımız diyor ki aslında sen onu demedin ama demek istediğin şey oydu bence.
+
+906
+02:14:52,379 --> 02:15:08,719
+41.592'nin bir x sayısına göre modu 579 tamam ama bambaşka bir sayının örneğin 75.356'nın da bu x sayısına göre modu 579 olmaz mı diyorsun değil mi?
+
+907
+02:15:10,279 --> 02:15:10,699
+Aynen.
+
+908
+02:15:10,699 --> 02:15:40,679
+Tamam. Şimdi o yüzden onu da şöyle yapıyorsun. Eğer eşit bulursan tek tek karşılaştırıyorsun. 4 mü, 1 mi, 5 mi, 9 mu, 2 mi diye. Eşitse buldun demektir. Ama ne bileyim burada gerçekten mesela 31, 75, 356 olsaydı ben işte 31 şuna baktım değil buna baktım.
+
+909
+02:15:40,699 --> 02:16:09,759
+değil şuna baktım modu 579 çıktı karşılaştırdım evet şimdi burada yapmam gereken burada 7 3'e eşitme falan diye tek tek bakmak ama bir tek burada tek tek bakıyorum oldu mu? Çünkü birden fazla sayının modu aynı değeri verebilir bir kere bunu önlemek için bu x sayısını mutlaka büyük bir asal sayı alıyorsunuz çünkü asal sayı aldığınız zaman
+
+910
+02:16:09,760 --> 02:16:12,300
+çakışma ihtimalini azaltırsınız.
+
+911
+02:16:13,179 --> 02:16:27,120
+Çünkü asal sayının katları daha az olduğu için yani ne bileyim mesela 100 alsam buradaki x'i 100 alsam değil mi o 100, 200, 300, 400, 500 o öyle katları gidiyor.
+
+912
+02:16:27,120 --> 02:16:29,099
+Bir de şeylerden ötürü de olabilir.
+
+913
+02:16:29,860 --> 02:16:35,959
+Ortak çarpanlardan ötürü de aynı modu aynı olan değerler olabilir.
+
+914
+02:16:35,959 --> 02:16:40,379
+Bunu önlemek için büyük bir asal sayı alıyorsun ama yine de mutlaka çapışma olabilir.
+
+915
+02:16:43,319 --> 02:16:52,299
+Sayıyı aynı bulduğun anda bu sefer karakter karakter karşılaşıyorsun. Bu anlaşıldı mı? Oldu mu sorunun cevabı?
+
+916
+02:16:53,419 --> 02:16:58,340
+Oldu hocam bir de bir şey diyeceğim. Şimdi karakter karakter yerine bir de bölümü bölümlerini karşılaştırırsak.
+
+917
+02:16:58,340 --> 02:17:02,139
+Orada mısınız? Nasıl nasıl?
+
+918
+02:17:02,919 --> 02:17:03,859
+Sesim geliyor mu şu anda?
+
+919
+02:17:04,480 --> 02:17:04,840
+Geliyor.
+
+920
+02:17:05,959 --> 02:17:09,560
+Hani biz karakter karakter karşılaştıracağız ya modlar aynısı.
+
+921
+02:17:11,179 --> 02:17:11,519
+Evet.
+
+922
+02:17:12,439 --> 02:17:18,019
+Bunun yerine bir de bölümünü tutup en sonunda moda eşit çıkarsa bir de bölümlerini karşılaştırsak direkt.
+
+923
+02:17:18,019 --> 02:17:22,340
+Bölümlerini karşılaştırman kastım ne? 26.535 için söyler misin?
+
+924
+02:17:23,399 --> 02:17:26,019
+Mesela bunu 997'ye böldüğümüzde çıkan bölümün.
+
+925
+02:17:28,919 --> 02:17:31,859
+Heee 997'ye böleyim.
+
+926
+02:17:32,579 --> 02:17:34,859
+Bir kere de orada hani şey gezinmekten kurtulacağız.
+
+927
+02:17:36,244 --> 02:17:56,244
+bir dakika aslında 9-97'ye böldüğünde tabi bölümü modundan farklı olacağı için oradan da tutturabilirsin. Evet olabilir doğru söylüyorsun. Ama bu şeyde yöntemde sadece şey yapıyor yani tek tek karakter karakter o noktada karşılaştırarak geliyor.
+
+928
+02:17:56,244 --> 02:18:23,183
+aslında bölümleri doğru söylüyorsun aslında 9.97'nin biri 5 katıdır biri 9 katıdır 9 katından kalandır biri 5 katından kalandır o şekilde şey yapabilirsin yakalayabilirsin güzel doğru bir şey Robin Carp'ınkisinde onu tek tek karşılaştırıyor şimdi burada yalnız şöyle güzel bir şey yapıyor o da onu yapamıyor ama şey güzel yapıyor dikkatinizi çeken bir şey var mı mesela şurada
+
+929
+02:18:23,183 --> 02:18:32,783
+31.415 sayısı yani 3, 1, 4, 1, 5'ten 31.415 sayısını oluşturuyorsunuz önce değil mi?
+
+930
+02:18:33,244 --> 02:18:35,363
+Aslında bunlar ayrı basamaklar.
+
+931
+02:18:35,503 --> 02:18:37,123
+3, 1, 4, 1, 5.
+
+932
+02:18:37,604 --> 02:18:40,964
+Bundan önce 31.415 sayısını oluşturuyorsunuz.
+
+933
+02:18:41,643 --> 02:18:43,483
+Arkasından modunu alıyorsunuz.
+
+934
+02:18:43,483 --> 02:18:48,643
+Arkasından 1, 4, 1, 5, 9'u 14.159 yapıyorsunuz.
+
+935
+02:18:48,644 --> 02:19:05,124
+arkasından onun şeyini alıyorsunuz modunu alıyorsunuz anlatabildim mi sonra 4 1 5 9 2'nin sayısını oluşturuyorsunuz arkasından onun modunu alıyorsunuz bunu nasıl kısaltabilirsiniz
+
+936
+02:19:05,124 --> 02:19:18,244
+Hocam 3'ü çıkarıp soru yandınız mı? Evet hocam ben görmüştüm daha önce bu algoritmalara inklenmiştim en baştan 3000'i çıkarıp
+
+937
+02:19:18,244 --> 02:19:26,424
+katsayıyla çarpıp ardından arkadan sağ taraftan gelen basama ekleyebiliriz.
+
+938
+02:19:27,163 --> 02:19:29,623
+Tamam şimdi soruyu bir daha tekrarlıyorum şuradan.
+
+939
+02:19:29,623 --> 02:19:39,904
+31.415 önce 3, 1, 4, 1, 5 iken önce sayıya çeviriyorsunuz.
+
+940
+02:19:39,943 --> 02:19:42,104
+31.415 yapıyorsunuz.
+
+941
+02:19:42,163 --> 02:19:43,644
+Arkasından moduna alırsınız.
+
+942
+02:19:43,643 --> 02:19:52,643
+bir adım sonra 1, 4, 1, 5, 9'u yani şunu sayıya çeviriyorsunuz.
+
+943
+02:19:55,643 --> 02:19:57,923
+Ondan sonra onu moduna alıyorsunuz.
+
+944
+02:19:57,983 --> 02:20:01,063
+Dolayısıyla her seferinde tekrar tekrar tekrar.
+
+945
+02:20:01,223 --> 02:20:04,083
+Şimdi bir kere burada önce yapmanız gereken şey ne?
+
+946
+02:20:05,503 --> 02:20:07,543
+Sayıyı elde etmek için
+
+947
+02:20:07,544 --> 02:20:15,704
+textin veya şöyle diyeyim
+
+948
+02:20:15,704 --> 02:20:24,464
+number'ın i, ona da number deneyim x diyeyim de n ile karışmasın
+
+949
+02:20:24,464 --> 02:20:26,904
+x'in i'incisi aslında neydi?
+
+950
+02:20:27,044 --> 02:20:36,504
+textin i'incisi çarpı bir base'in m-1'incisi artı
+
+951
+02:20:36,503 --> 02:20:56,023
+textin i artı birincisi çarpı bir base'in bizim base'imiz 10 m eksi ikincisi artı işte textin i artı m eksi biri çarpı base'in sıfırıncısı.
+
+952
+02:20:56,023 --> 02:21:03,543
+Şimdi bizim için bakacak olursak bizim m'imiz 5 ya aslında ne yapıyoruz?
+
+953
+02:21:03,543 --> 02:21:06,143
+31.415 için gösteriyorum.
+
+954
+02:21:06,143 --> 02:21:09,103
+Şimdi 5 çarpı 10 üzeri 0.
+
+955
+02:21:10,183 --> 02:21:11,763
+Aslında hepsini yapabilirim.
+
+956
+02:21:12,103 --> 02:21:15,423
+31.415 için, 31.415 için.
+
+957
+02:21:16,083 --> 02:21:33,523
+5 çarpı 10 üzeri 0 artı 1 çarpı 10 üzeri 1 artı 4 çarpı 10 üzeri 2 artı 1 çarpı 10 üzeri
+
+958
+02:21:33,523 --> 02:21:34,023
+birç.
+
+959
+02:21:34,304 --> 02:21:53,423
+şurada gördüğünüz gibi 3 x 10 üzeri 4 değil mi en son? Artı 3 x 10 üzeri 4. Yani 3 x 10 üzeri 4 artı 1 x 10 üzeri 3 artı 4 x 10 üzeri 2 artı 1 x 10 üzeri 1 artı 5 x 10 üzeri 3.
+
+960
+02:21:53,423 --> 02:22:02,463
+Yani aslında burada ilk yapmamız gereken şey şu. Bunu bu şekilde bir döngüyle bunu bu şekilde sağlamak.
+
+961
+02:22:02,463 --> 02:22:10,443
+yani m-digit varken base tabanına göre yaptığımızda yaptığımız şey bu aslında.
+
+962
+02:22:10,443 --> 02:22:13,884
+Şimdi burada diyor ki arkadaşımızın söylediği şey o.
+
+963
+02:22:14,223 --> 02:22:16,443
+İyi de ben şöyleyse eğer...
+
+964
+02:22:18,943 --> 02:22:20,783
+Ne yapamadım?
+
+965
+02:22:33,843 --> 02:22:45,184
+Evet böyleyse eğer x'in i'incisi şuna eşitse tekstin i'incisi çarpı Bayes'in
+
+966
+02:22:45,184 --> 02:22:49,923
+B üzeri m-1
+
+967
+02:22:49,923 --> 02:22:52,083
+artı tekstin
+
+968
+02:22:52,083 --> 02:22:53,904
+i artı birincisi
+
+969
+02:22:53,904 --> 02:22:56,423
+çarpı B üzeri
+
+970
+02:22:56,423 --> 02:22:57,663
+m-2
+
+971
+02:22:57,663 --> 02:23:00,663
+artı tekstin
+
+972
+02:23:00,663 --> 02:23:02,143
+i artı
+
+973
+02:23:02,143 --> 02:23:03,923
+m-1'cisi
+
+974
+02:23:03,923 --> 02:23:06,064
+çarpı B üzeri
+
+975
+02:23:06,064 --> 02:23:06,903
+sıfırsa diyor.
+
+976
+02:23:07,903 --> 02:23:10,303
+X'in i artı birincisi de
+
+977
+02:23:10,303 --> 02:23:14,384
+tekstin i artı birincisi
+
+978
+02:23:14,384 --> 02:23:16,904
+çarpı b üzeri
+
+979
+02:23:16,904 --> 02:23:19,143
+m-1 artı
+
+980
+02:23:19,143 --> 02:23:21,284
+tekstin i artı ikincisi
+
+981
+02:23:21,284 --> 02:23:22,724
+çarpı
+
+982
+02:23:22,724 --> 02:23:25,303
+b üzeri m-2 artı
+
+983
+02:23:25,303 --> 02:23:27,424
+tekstin i artı
+
+984
+02:23:27,424 --> 02:23:29,303
+m'incisi çarpı
+
+985
+02:23:29,303 --> 02:23:30,704
+b üzeri 0 diyor.
+
+986
+02:23:31,204 --> 02:23:32,343
+O zaman ne oldu?
+
+987
+02:23:32,824 --> 02:23:34,184
+xd artı 1'de
+
+988
+02:23:34,184 --> 02:23:37,024
+x i artı 1'de pardon şu yok.
+
+989
+02:23:41,332 --> 02:23:42,332
+ama bu var fazla, özür dilerim, fazladan bu var. Bunu ekleyeceğiz. Bunu çıkartacağız. O zaman şöyle diyoruz. x i artı bir eşittir diyoruz. x'in i'incisinden t'nin i'incisi çarkı, B'sin
+
+990
+02:24:11,332 --> 02:24:17,332
+eksi birincisini çıkart yani şunu çıkart.
+
+991
+02:24:25,620 --> 02:24:28,060
+x'in i'incisinden bunu çıkart
+
+992
+02:24:31,987 --> 02:24:42,987
+ve artı üzerine T'nin, pardon,
+
+993
+02:24:43,219 --> 02:24:58,219
+t'nin i artı m'incisini ekle. Çünkü B sıfı dediği için bu aslında bir ile çarpmak demek. Hangi B'si olursa olsun. t'nin i artı m'incisini ekle. Yani şunu ekle.
+
+994
+02:25:07,827 --> 02:25:13,707
+Oldu mu? Oldu mu? Söyleyen kişi kimdi? İsmini göremedi. Değil mi? Senin söylediğin bu.
+
+995
+02:25:13,707 --> 02:25:14,587
+Ben de hocam. Evet hocam.
+
+996
+02:25:15,407 --> 02:25:31,547
+Evet. O zaman bu şekilde bir şeyden kurtulmuş oldum. Yani 31.478'den 14.782'ye geçerken şuradan şuraya geçerken şu 3'den kurtulmuş oldum.
+
+997
+02:25:31,547 --> 02:25:56,267
+şu ikiyi eklemiş oldum bundan kurtuldum buna eklemiş oldum oldu mu? Bu çok güzel bir şey aslında bunu boşu boşuna her seferinde bu tekrar hesabı yapmak yerine bu şekilde şey yapmak bir önceki bilgiden yararlanarak bu işi yapmak son derece efektif bir şey buraya kadar sormak istediğiniz bir şey var mı?
+
+998
+02:25:59,956 --> 02:26:04,255
+mantığı anladınız mı? Robin Carp'ınız çalıştığını anladınız mı?
+
+999
+02:26:11,763 --> 02:26:25,144
+Şimdi bu da aslında şeyde hani böyle average case'lerde çok absürt bir tekst verilmediği sürece
+
+1000
+02:26:27,700 --> 02:26:52,700
+M çarpı, worst case'de M çarpı M olabilen bir algoritma. Ama şeyde yaptığınız zaman normalde yani şey olarak tipik durumda karmaşıklı N olan bir algoritma.
+
+1001
+02:26:52,700 --> 02:27:06,560
+yani emi saymayacağımız için yani Boyer Mor yaklaşık ortalama bir durumda, Boyer Mor'unuz ortalama bir durumda n bölü n karmaşıklıktayken
+
+1002
+02:27:06,560 --> 02:27:20,560
+Rabin Karp'ınız aynı şekilde ortalama bir durumda yaklaşık n, işte emi saymazsak n küçükse eğer n çarpı n yaklaşık n karmaşıklıktayken
+
+1003
+02:27:20,560 --> 02:27:22,479
+olabilecek bir durumda.
+
+1004
+02:27:23,640 --> 02:27:33,960
+Ama brute force yani bu şey m'e çok bağlı değil aslında sabit bir değer.
+
+1005
+02:27:33,960 --> 02:27:39,039
+Yani ortalama hatta yapmışlar 7 çarpı n gibi bir değer çıkmış olasılık salıarak.
+
+1006
+02:27:40,339 --> 02:27:44,519
+Ama brute force her zaman m çarpı n olmak zorunda.
+
+1007
+02:27:44,860 --> 02:27:49,880
+Yani burada aslında söylemeye çalıştıkları şey şu, brute force'u kesmenin, küçültmenin imkanı yok.
+
+1008
+02:27:49,880 --> 02:27:55,100
+bunun da her seferinde en başa gidiyorsunuz. Dolayısıyla M çarpı, M'den daha kısa olamıyor bir türlü.
+
+1009
+02:27:55,759 --> 02:28:02,280
+Ama Boyer Mode ve Robin Card'da bunun daha kısa olma ihtimalleri yüksek.
+
+1010
+02:28:03,140 --> 02:28:04,979
+Buraya kadar sormak istediniz bir şey var mı?
+
+1011
+02:28:09,332 --> 02:28:28,291
+Peki, o zaman bugün burada keselim. Dediğim gibi, son ödevinizi oluyorsa, bugün olmuyorsa, şey pardon, oluyorsa yetiştirebiliyorsak yarın vereceğiz. Yetiştiremezsek. Çarşamba sabahtan vereceğiz. Haftaya görüşmek üzere diyorum o zaman. Evet, dinliyorum.
+
+1012
+02:28:28,911 --> 02:28:30,311
+Bir sorum var da, son ekranla ilgili.
+
+1013
+02:28:31,691 --> 02:28:33,592
+Son ekranla ilgili peki.
+
+1014
+02:28:33,592 --> 02:28:36,151
+Evet bir dakikaya yok.
+
+1015
+02:28:36,651 --> 02:28:37,672
+Yani bir terslik var.
+
+1016
+02:28:37,952 --> 02:28:38,791
+Kayboluyor her şey.
+
+1017
+02:28:39,731 --> 02:28:41,112
+Bir daha şurada.
+
+1018
+02:28:46,995 --> 02:29:14,676
+bir yavaşlama var bunda. Evet, söyle, sor bakalım. Buradaki üçü düşürmek için sola, sağa shift etsek yanlış oluyor değil mi? Dizi ama bu. Bu bir dizi. O yüzden... Ama sayı çevirdik ya sonradan. Sayıya çevirmiyor muyuz? Ha, ama on tabanında nasıl shift edeceksin? Anladım. Yani iki tabanında shift edebiliriz ya, bir C'de eğer yapıyorsa.
+
+1019
+02:29:14,676 --> 02:29:21,536
+aslında iki tabanında shift edebilirsin. Bu on tabanında olduğu için shift şeyini, operatörünü kullanamazsın dedi. Onu diyor.
+
+1020
+02:29:22,236 --> 02:29:25,155
+Evet onu da bir dediğimde o bitler için yapıyor galiba.
+
+1021
+02:29:25,396 --> 02:29:40,115
+Aynen aynen. İki şey şöyle yapabilirsin ama ikilik düzende yani sayı şunu demek istiyorsun aslında. Sen de o öyle değil. Sekiz olsaydı sayı ve sen yani tamam onluk düzendekine shift eder istiyor ama sıkıntı yok.
+
+1022
+02:29:40,115 --> 02:29:47,395
+zaten daha doğrusu her şey onluk düzende ya C'de çalışırken onluk onaltılık sekizlik düzenlerden birinde.
+
+1023
+02:29:47,395 --> 02:29:51,216
+8'i bir defa shift edersen ne bulursun? Sağ shift edersen?
+
+1024
+02:29:52,375 --> 02:29:53,375
+4 olmasın.
+
+1025
+02:29:53,635 --> 02:30:08,735
+4 aynen öyle 4 bulursun. Ama bu onluk düzende ya shift edersen yani sen 31 bin 400, 31 bin 314 bin 782'yi bir defa sağ shift edersen ikilik düzende bir shift yapacak o.
+
+1026
+02:30:08,735 --> 02:30:09,735
+ikiye bölgecek.
+
+1027
+02:30:09,735 --> 02:30:12,735
+Aynen an altı bir şey olacak.
+
+1028
+02:30:12,735 --> 02:30:15,735
+Halbuki sen onluk düzenli olsun istiyorsun.
+
+1029
+02:30:15,735 --> 02:30:23,735
+Senin dediğin şöyle eğer bu B tabanı iki ise olabilir, B tabanı iki ise o zaman senin dediğin doğru çalışır. Oldu mu?
+
+1030
+02:30:23,735 --> 02:30:25,735
+Anladım hocam sağ olun teşekkür ederim.
+
+1031
+02:30:25,735 --> 02:30:27,735
+Ben teşekkür ederim.
+
+1032
+02:30:27,735 --> 02:30:33,735
+Peki o zaman bugün burada bitiriyoruz. Dinlediğiniz için bakın kimler varmış bugün.
+
+1033
+02:30:38,195 --> 02:30:43,015
+evet, hepinize çok teşekkür ederim. Haftaya görüşmek üzere.
+
+1034
+02:30:43,035 --> 02:30:43,395
+Hocam.
+
+1035
+02:30:43,875 --> 02:30:44,475
+Buyurun.
+
+1036
+02:30:44,735 --> 02:30:46,395
+Hocam, projeyi ne zaman vereceksiniz?
+
+1037
+02:30:47,675 --> 02:30:49,156
+Sen şu anda mı bağlandın?
+
+1038
+02:30:49,595 --> 02:30:52,656
+Yok, dersin başında falan mı söylediniz acaba? Kaçırdım da onu duymadım.
+
+1039
+02:30:52,975 --> 02:30:59,075
+Tam beş dakika önce söyledim tekrar. Dersin başında söylemiştim. Beş dakika önce tekrar söyledim.
+
+1040
+02:30:59,716 --> 02:31:01,735
+Onu da kaçırmışım hocam. Ne zaman?
+
+1041
+02:31:01,735 --> 02:31:06,876
+Evet, ikisini de kaçırmışsın. Hadi görüşmek üzere. Evet, başka soru var mı?
+
+1042
+02:31:06,876 --> 02:31:10,256
+Peki sınavda ne zaman okumayı düşünüyorsunuz? Onun için bir şey dediniz mi?
+
+1043
+02:31:10,855 --> 02:31:23,175
+Onu da söyledim. Sen biraz merak içinde kal. Tamam yok söyleyeyim şimdi. Dedim ki aslında okudum ama onunla da ilgili aslında söyleyeceklerim var ama önümüzdeki hafta söylerim.
+
+1044
+02:31:27,175 --> 02:31:32,115
+Yarın veya çarşamba sisteme gireceğim dedim. Oldu mu?
+
+1045
+02:31:32,755 --> 02:31:33,876
+Tamam hocam teşekkürler.
+
+1046
+02:31:34,236 --> 02:31:34,895
+Rica ederim.

@@ -1,0 +1,7519 @@
+1
+00:05:03,475 --> 00:05:07,135
+Evet, merhaba arkadaşlar. İyi haftalar hepinize.
+
+2
+00:05:09,835 --> 00:05:14,175
+Geçen haftadan biraz daha farklı bir toplulukla tabii ki birlikte olacağız.
+
+3
+00:05:14,375 --> 00:05:22,675
+Çünkü bugün, geçen hafta söylemiştik, 3 grupta bir dengesiz dağılım söz konusuydu. O BFS'de bir sıkıntı olmuş.
+
+4
+00:05:23,355 --> 00:05:28,975
+Onlar düzeltilmişti. Bu nedenle gruplar tekrar harmanlandı.
+
+5
+00:05:28,975 --> 00:05:36,336
+ve ilk haftayı benimle geçiren ya da geçirmeyen arkadaşlarımız mevcut olabilir, normaldir.
+
+6
+00:05:36,336 --> 00:05:48,715
+Ama nihayetinde 3 grupta çok çok yakın birbirine ve paralel şekilde dersler işlediğimiz için herhangi bir kayıp ya da fazlalık söz konusu değil.
+
+7
+00:05:49,236 --> 00:05:53,495
+5 dakikamız da geçtiği için artık bu haftaki konularımıza başlayabiliriz.
+
+8
+00:05:53,496 --> 00:05:56,396
+Geçen hafta önce bir tanışmıştık.
+
+9
+00:05:57,536 --> 00:06:05,856
+Sonra dersin planı, kaynakları, değerlendirme kriterleri gibi öyle dikkat etmeniz gereken noktalar gibi hususlardan bahsetmiştik.
+
+10
+00:06:07,095 --> 00:06:09,075
+Ve sonrasında da algoritma nedir?
+
+11
+00:06:09,955 --> 00:06:11,575
+Algoritmanın özellikleri nelerdir?
+
+12
+00:06:12,255 --> 00:06:15,175
+Neler algoritmadır? Ne algoritma değildir?
+
+13
+00:06:15,175 --> 00:06:25,175
+gibi kavramlara bakıp veri nedir, veri nasıl tutulur, veri yapısı nedir, veri yapısı neden gereklidir gibi kavramlarla da dersimize bir giriş yapmıştık.
+
+14
+00:06:27,295 --> 00:06:32,175
+Yeni kaydolanlar da eski kayıtları zaten dilerlerse izleyebilirler.
+
+15
+00:06:32,895 --> 00:06:35,435
+Bu yüzden herhangi bir kayıp söz konusu olmayacak.
+
+16
+00:06:35,615 --> 00:06:42,275
+Bu online'daki sistemin böyle bir avantajı da ders kaçırmak gibi şansınız olmadığından var.
+
+17
+00:06:42,275 --> 00:06:56,915
+Şimdi özellikle algoritmaların, algoritma tasarımının işlemle çözülebilecek problemlere karşı geliştirdiğimiz yöntemler olduğunu, çözüm yolları olduğundan bahsetmiştik.
+
+18
+00:06:56,915 --> 00:07:03,255
+ve bugün hızlıca biraz da böyle beyin cimnastiği yaparak işe girmek istiyorum ve bir örnekle direkt başlayacağız.
+
+19
+00:07:04,055 --> 00:07:12,416
+Hani neden algoritma tasarlamalıyız ya da algoritmada veri yapısı kullanmak işleri nasıl kolaylaştırıyor ya da değiştiriyor,
+
+20
+00:07:12,535 --> 00:07:17,355
+nasıl bizim tasarımımızı etkiliyor ya da çözüm yöntemimizi farklılaştırabiliyor.
+
+21
+00:07:17,355 --> 00:07:23,855
+Bununla ilgili güzel ve çok basit ama bir o kadar da aslında üzerinde düşünmemizi gerektirecek bir örnekle başlayalım.
+
+22
+00:07:23,935 --> 00:07:25,555
+Problemimiz bağlantı problemi.
+
+23
+00:07:25,556 --> 00:07:32,416
+Ne demek bağlantı bu? Hocam bağlanamıyorum. Hat çekmiyor gibi bir problem mi? Hayır. Böyle bir şey değil tabii ki.
+
+24
+00:07:33,016 --> 00:07:40,996
+Şimdi bize girdi olarak birbiriyle bağlantılı olan çiftler veriliyor. Varlık çiftleri veriliyor.
+
+25
+00:07:41,296 --> 00:07:46,455
+Mesela p-q şeklinde bir bağlantı verildiğini düşünelim. Bu ne demektir?
+
+26
+00:07:46,455 --> 00:07:49,075
+P ile Q birbirine bağlıdır.
+
+27
+00:07:49,475 --> 00:07:51,875
+Gönlü bir bağlantı olmadığını varsayalım.
+
+28
+00:07:52,575 --> 00:07:56,635
+Bu durumda Q da P'ye doğal olarak bağlı demektir.
+
+29
+00:07:59,595 --> 00:08:03,495
+Burada tabii bunlar birer isim olabilir.
+
+30
+00:08:03,795 --> 00:08:05,975
+Mesela varlık isimleri olabilir.
+
+31
+00:08:06,295 --> 00:08:08,655
+Bir sosyal medyadaki nickler olabilir.
+
+32
+00:08:08,655 --> 00:08:12,675
+Ya da bir bilgisayar ağındaki nodların ID'leri olabilir.
+
+33
+00:08:12,855 --> 00:08:14,375
+Ya da isimleri olabilir gibi gibi.
+
+34
+00:08:14,495 --> 00:08:15,275
+Pek çok şey olabilir.
+
+35
+00:08:15,276 --> 00:08:27,216
+Şimdilik kolay olsun diye biz bunları birer tam sayı ile ifade edelim ve amacımız sadece yeni olan ve önceden var olmayan bağlantıları bulmak olsun.
+
+36
+00:08:27,216 --> 00:08:37,856
+Şöyle ki mesela 3-4 verildi. Bu ne demektir? 3 numaralı düğüm ile ya da varlık ile 4 numaralı varlık birbiriyle bağlıdır dedi.
+
+37
+00:08:38,076 --> 00:08:44,736
+Peki sonra 4 ile 9 verildi. Bu ne demektir? 4 numaralı varlık ile 9 numaralı varlık da bağlıdır.
+
+38
+00:08:44,735 --> 00:08:47,535
+Yani şuraya çizecek olursak
+
+39
+00:08:47,535 --> 00:08:51,435
+İşte şurada 3 var
+
+40
+00:08:51,435 --> 00:08:52,075
+Tamam
+
+41
+00:08:52,075 --> 00:08:53,336
+Şurada 4 var
+
+42
+00:08:53,336 --> 00:08:55,395
+Bunlar birbiriyle bağlıdır dedik
+
+43
+00:08:55,395 --> 00:08:57,475
+Sonra 4 ile 9 geldi
+
+44
+00:08:57,475 --> 00:09:01,196
+9 da diyelim şurada bir yerde
+
+45
+00:09:02,707 --> 00:09:32,468
+bu da bağlıdır dedik. Aslında gördüğünüz gibi artık 3 ile 9 da birbirine bağlı. Sonra 8 ile 0 geldi. 0 şurada olsun, 8 burada olsun. Bunlar da birbirine bağlıdır dedik. 8 ile 0 pardon. Sonra 2 ile 3 bağlıdır dedik. 2 de burada olsun. Şöyle bir bağlantı gerçekleştirdik. 5 ile 6 bağlıdır dedik. 5, 5 pardon ve 6. Bunlar da birbirine bağlıdır dedik.
+
+46
+00:09:32,707 --> 00:09:55,947
+Sonra 2 ve 9 geldi. Tamam 2'yi 9'a bağlıız ama biliyoruz ki 2, 3 bağlı, 3, 4 bağlı, 4, 9 bağlı. Yani aslında 2 ile 9 numaralı varlıklar birbiriyle zaten bağlı. O yüzden bunları tekrar bağlamamam gerekiyor. Böyle bir bağ kurmamam. Hop burada 2, 3, 4, 9 var diye tespit edebilmem lazım gibi gibi gibi. Yani amacımız yeni bağlantıları bulmak olsun.
+
+47
+00:09:55,947 --> 00:10:12,487
+Buradaki örnek hani biraz daha somutlaşması açısından sayı çiftleri neler olabilir? Bunlar bir ağdaki bilgisayarlar olabilir. Mesela bu hani nodlar ya da bilgisayarlar birbiriyle haberleşmek istiyorlar, birbirlerine paket yollayacaklar.
+
+48
+00:10:12,487 --> 00:10:24,447
+Bunlar için P ve Q düğümleri arasında sürekli yeni bir bağlantı mı kurmak zorundayız? Yoksa zaten hali hazırda birbirleriyle bağlılar mı ve o yol üzerinden paketleri iletebilirler mi?
+
+49
+00:10:24,447 --> 00:10:28,087
+Burada milyonlarca cihaz olabilir, milyarlarca cihaz olabilir.
+
+50
+00:10:28,748 --> 00:10:37,347
+Ya da aynı problem, bir elinizde elektronik devre var, baskılı devre var, birbirine tellerle diyelim, bağlı kontaklar var.
+
+51
+00:10:38,027 --> 00:10:42,007
+Acaba gereksiz bağlantı olmadan bütün uçları birbiriyle nasıl bağlayabiliriz?
+
+52
+00:10:42,007 --> 00:10:44,827
+Bu problemi de aynı şekilde adreslememiz mümkün.
+
+53
+00:10:44,947 --> 00:10:48,947
+Aslında özünde aynı çözüm yönetimi, aynı algoritmaya sahip olacaklar.
+
+54
+00:10:50,167 --> 00:10:51,327
+Ya da bir sosyal ağ var.
+
+55
+00:10:51,487 --> 00:10:54,267
+Bu sosyal ağda birbiriyle bağlı kişiler var mı?
+
+56
+00:10:54,267 --> 00:11:00,587
+yok mu? Hani arkadaşının arkadaşının arkadaşıyla bu iki kişi arasında bir bağlantı kurabiliyor muyuz?
+
+57
+00:11:00,647 --> 00:11:07,247
+Kuramıyor muyuz? Bunun analizi yapılmak istenebilir. Portlanda değişken isimleri olabilir gibi gibi pek çok şey
+
+58
+00:11:07,247 --> 00:11:13,827
+bağlantı problemiyle çözülebilir diyebiliriz. Yani gerçek hayattaki karşılaşabileceğimiz pek çok problem için
+
+59
+00:11:13,827 --> 00:11:19,327
+kullanabileceğimiz bir çözüm geliştirmeye çalışıyoruz. Buna da bağlantı problemi adını verdik.
+
+60
+00:11:19,327 --> 00:11:20,727
+Şöyle görselleştirelim.
+
+61
+00:11:21,487 --> 00:11:26,607
+Şimdi elimizde böyle bir bilgisayar ağı ya da bir sosyal ağ var.
+
+62
+00:11:26,788 --> 00:11:31,387
+Bunlar noktalar, varlıklarımız ve aradaki çizgiler de onların birbirleriyle olan ilişkileri.
+
+63
+00:11:31,907 --> 00:11:39,767
+Ben diyorum ki şurada gördüğünüz varlık ile burada gördüğümüz varlık acaba birbirine bağlı mıdır değil mi?
+
+64
+00:11:39,867 --> 00:11:40,727
+İşte problem bu.
+
+65
+00:11:41,307 --> 00:11:45,047
+Yani mesela bu network'te bu iki node arasında bağlantı var mı?
+
+66
+00:11:45,107 --> 00:11:46,967
+Bir yol şu anda hala hazırda var mı yok mu?
+
+67
+00:11:46,967 --> 00:11:52,568
+ya da bu iki kişi bu sosyal ağda birbirleriyle bir şekilde ilişki içindeler mi değiller mi?
+
+68
+00:11:53,367 --> 00:11:58,627
+Ya da işte bu baskılı devrede bu iki kontak arasında bir iletim sağlayabilir miyim sağlayamaz mı?
+
+69
+00:11:59,307 --> 00:12:03,568
+Mesela işte bunlar bağlantı problemiyle çözülebilir.
+
+70
+00:12:03,867 --> 00:12:05,667
+Sizce bunlar birbirine bağlı mıdır değil midir?
+
+71
+00:12:13,331 --> 00:12:14,531
+Bağlıdır ben de hocam.
+
+72
+00:12:14,891 --> 00:12:15,631
+Bağlıdır hocam.
+
+73
+00:12:15,812 --> 00:12:18,111
+Kesin bağlılardır ama nasıl bağlılardır acaba?
+
+74
+00:12:18,531 --> 00:12:23,951
+Tabii biz burada sadece bağlı mı değil mi ile ilgileniyoruz, nasıl bağlılarla ilgilenmiyoruz.
+
+75
+00:12:24,691 --> 00:12:29,171
+Baktığımızda, sizin için şöyle çizebilirim, daha doğrusu kitaptan aldım tabii ki bu örneği.
+
+76
+00:12:30,151 --> 00:12:42,191
+Aslında şöyle bir yol üzerinden bunların, belki farklı yollar da vardır, o önemli değil ama bir şekilde ben bu iki düğümün birbiriyle yani p ve q'nun birbiriyle bağlı olduğunu görebiliyorum buradaki görselde.
+
+77
+00:12:42,191 --> 00:12:49,012
+Peki şimdi acaba ben verilen iki düğün birbiriyle bağlı mı değil mi problemini nasıl çözebilirim?
+
+78
+00:12:50,491 --> 00:12:54,051
+Acaba nasıl? Bunun için bir çözüm yolu, bir algoritma geliştirmem lazım.
+
+79
+00:12:54,851 --> 00:12:56,692
+Demek ki bir tasarım yapmam gerekiyor.
+
+80
+00:12:56,692 --> 00:13:06,692
+İşte algoritmayı tasarlarken ilk işimiz, elimizdeki problemi, karşılaştığımız, çözmemiz gereken problemi, mümkün olduğunca makul, anlaşılır.
+
+81
+00:13:06,692 --> 00:13:15,331
+Anlaşılır. Çok affedersiniz. Açmam gereken bir telefon. Bugün böyle biraz şey yoğun bir gün. Hemen geri dönüyorum.
+
+82
+00:13:54,868 --> 00:14:22,708
+Kusura bakmayın. Siz bu arada tabi slide'ı okudunuz değil mi? Problemimizi makul bir şekilde tanımlamamız gerekiyor. Yani ne demek makul? Anlaşılabilir, açıklanabilir bir şekilde tanımlamamız lazım. E tabi problemi çözmek maliyetli olabilir, zor olabilir. Ama bu gibi durumlarda orijinal problem tanımından biraz farklı da olsa işe yarar bilgiyi veren ya da çözüm yürüten algoritmaları kullanmak üzere problem tanımını biraz değiştirebiliriz.
+
+83
+00:14:22,708 --> 00:14:33,427
+Mesela ben buradaki problemde P ve Q çifti hangi yolla birbirine bağlıdır sorusunu çözmüyorum ya da cevaplamıyorum.
+
+84
+00:14:34,167 --> 00:14:38,568
+Tabi bunu söylemenin yolu var ama daha karmaşık bir algoritmayla bunu söyleyebiliriz.
+
+85
+00:14:38,568 --> 00:14:41,408
+Onun için graf veri yapısını öğrenmemiz gerekecek.
+
+86
+00:14:41,827 --> 00:14:49,807
+Ama şu anda hiç graf bile bilmeden biz acaba iki tane düğün birbiriyle bağlı mı değil mi gibi bir soruyu cevaplayabiliriz.
+
+87
+00:14:49,927 --> 00:14:51,368
+Daha basit bir çözüm ile.
+
+88
+00:14:51,368 --> 00:15:04,368
+Gördüğünüz gibi orijinal probleme destek olacak şekilde bunlar birbiriyle bağlıdır ya da bunlar birbiriyle bağlı değildir cevabını üretebilecek daha basit bir algoritma hemen hızlı bir şekilde tasarlayabilirim.
+
+89
+00:15:05,247 --> 00:15:13,368
+Şimdi elimde n tane nesne var. Bunları bağlamak için n tane bağlantı yeterli mi diye de soru sorabilirim.
+
+90
+00:15:13,368 --> 00:15:19,687
+Esasen n tane nesneyi bağlamak için n-1 tane bağlantı yapmanız yeterlidir.
+
+91
+00:15:20,327 --> 00:15:28,908
+Neden? Çünkü m küçük eşit n-1 şartı sağlanıyorsa n tane bağlantı yeterli demektir.
+
+92
+00:15:29,028 --> 00:15:30,048
+Yani bu doğrudur.
+
+93
+00:15:30,687 --> 00:15:35,268
+Ama m küçüktür n-1 şartı sağlanmıyorsa bu yanlıştır.
+
+94
+00:15:35,268 --> 00:15:41,987
+Bunu da yine ileriki haftalarda aslında minimum spelling tree konusuna geldiğimizde direkt görmüş olacağız.
+
+95
+00:15:41,987 --> 00:15:50,307
+özetle ben şu anda sadece verilen bir çift bağlı mıdır değil midir yani true false bunun cevabını vermeye çalışacağım.
+
+96
+00:15:50,827 --> 00:15:54,067
+Evet nasıl çözebiliriz acaba?
+
+97
+00:15:55,307 --> 00:16:01,547
+Unutmayalım problem nasıldı şöyle geri gelecek olursak bunlar bize sırayla veriliyordu.
+
+98
+00:16:02,307 --> 00:16:03,067
+Değil mi?
+
+99
+00:16:03,547 --> 00:16:11,667
+3 ile 4 bağlıdır, 4 ile 9 bağlıdır, 8 ile 0 bağlıdır, 2 ile 3 bağlıdır, 5 ile 6 bağlıdır, 2 ile 9 bağlıdır.
+
+100
+00:16:11,668 --> 00:16:18,427
+yani 9-2'ye bağlanır dedik ama hop dedik burada kırmızıyla yazdık çünkü bu zaten bağlıydı birbirine eskiden demiştik.
+
+101
+00:16:18,427 --> 00:16:23,608
+Bunu yani böyle geldikçe bir şekilde çözebiliyor olmamız lazım.
+
+102
+00:16:25,088 --> 00:16:28,108
+Nasıl acaba bunu gerçekleştirebiliriz?
+
+103
+00:16:30,128 --> 00:16:30,868
+Var mı fikri olan?
+
+104
+00:16:33,368 --> 00:16:34,608
+Hocam ben bir şey soracağım.
+
+105
+00:16:34,607 --> 00:16:41,767
+bu bağlantıları ilk baştan biz kendimiz mi yapıyoruz algoritmuyla yoksa herhangi bir bağlantıyı sorguluyor muyuz?
+
+106
+00:16:41,767 --> 00:16:48,647
+Hani 2-9 bağlı değilse bağlı. Mesela bir yerden okuyorsunuz bunu. Kullanıcı giriyor diyelim hani en basitinden.
+
+107
+00:16:49,387 --> 00:16:58,567
+Sırayla giriyor. 2-9, 4-8, 1-6, 0-2. Anladın? O şekilde. Ya da dediğim gibi bir yerden bir listeden okuyorsunuz.
+
+108
+00:16:58,627 --> 00:17:02,627
+Hani bir diziden o da olabilir. Hiç fark etmez. Sırayla giriyor bunlar size.
+
+109
+00:17:02,627 --> 00:17:06,687
+pek efektif olmayan bir çözüm yolu önerebilirim ama bir matriz tutarız.
+
+110
+00:17:06,987 --> 00:17:10,507
+Kolonacı da bu bağlantıları koordinat yüzlemi olarak girer.
+
+111
+00:17:10,728 --> 00:17:12,647
+Biz de matrizde onu bir olarak işaret ederiz.
+
+112
+00:17:13,287 --> 00:17:18,927
+Sonrasında matrizde bir yol arama algoritmasıyla var mı yok diye sorgulayabiliriz.
+
+113
+00:17:19,167 --> 00:17:20,567
+Yol arama algoritması.
+
+114
+00:17:20,687 --> 00:17:24,247
+Sen dedin ki var olan bir algoritmayı bir şekilde kullanmaya çalışıyorum.
+
+115
+00:17:24,247 --> 00:17:28,447
+Bunun için aslında ara çözüm üretmek daha iyi olabilir dedik.
+
+116
+00:17:28,667 --> 00:17:29,407
+Tamam peki.
+
+117
+00:17:29,767 --> 00:17:30,447
+Bu bir yoldur.
+
+118
+00:17:30,448 --> 00:17:34,528
+özellikle çok büyük problemlerde sıklıkla kullandığımız bir çözüm yoludur.
+
+119
+00:17:34,528 --> 00:17:38,267
+Elimizde biraz önce söyledim ya şöyle.
+
+120
+00:17:40,564 --> 00:17:48,303
+biraz farklı da olsa işe yarayan bilgi veren ya da çözüm üreten algoritmaları kullanmak üzere problem tanımımızı biraz değiştirebiliriz demiştik.
+
+121
+00:17:48,403 --> 00:17:57,164
+Biz bunu sıklıkla özellikle büyük problemlerde yapıyoruz ama bu aslında biraz daha düşünerek çözmemiz gereken ya da düşünerek çözebileceğimiz bir problem.
+
+122
+00:17:57,164 --> 00:18:10,163
+Şimdi ben aslında şuradaki slide'da geldikçe bunları bağladım hatırlarsanız ve bir yerde de dedim ki 2.9 geldiğinde hop bunlar zaten bağlıydı diye anlattım.
+
+123
+00:18:10,564 --> 00:18:14,564
+Aslında çözüm tam olarak bu şekilde oluşturulması gerekir.
+
+124
+00:18:14,964 --> 00:18:24,183
+Şöyle ki her bir yeni çift geldikçe yani diziden yeni bir bağlantı okudukça bunlar birbiriyle bağlı mıydı değil miydi diye bir kontrol etmemiz lazım.
+
+125
+00:18:24,904 --> 00:18:26,723
+Peki bunu nasıl yapabilirim?
+
+126
+00:18:27,144 --> 00:18:31,104
+Önceki bağlantıları bir şekilde hatırlamam lazım.
+
+127
+00:18:31,983 --> 00:18:34,663
+Bir şekilde bunları bir yerde tutmam lazım.
+
+128
+00:18:35,023 --> 00:18:35,824
+Nerede tutacağım?
+
+129
+00:18:36,163 --> 00:18:38,064
+İşte bir veri yapısında tutacağım aslında.
+
+130
+00:18:38,064 --> 00:18:51,004
+acaba bu iş için uygun veri yapısı ne olabilir ki ben bu algoritmayı efektif biçimde tasarlayabileyim. Bu aslında ilk olarak düşünmemiz ya da birlikte düşünmemiz gereken husus tam olarak bu.
+
+131
+00:18:53,464 --> 00:18:57,784
+Pointer'ın yöntemleriyle hocam linkli yapı sistemi kurmak en makbul olur.
+
+132
+00:19:21,460 --> 00:19:26,019
+ya bu tez şeyleriyle uğraşıyorum bir yandan kusura bakmayın yüksek lisansların.
+
+133
+00:19:26,460 --> 00:19:29,139
+ha bir de telefon geliyor gidiyor bilmem birileri gelip gidiyor.
+
+134
+00:19:29,499 --> 00:19:30,639
+imzalar havada uçuyor.
+
+135
+00:19:30,880 --> 00:19:33,260
+bugün biraz sabahtan beri böyleyim.
+
+136
+00:19:34,800 --> 00:19:36,899
+şimdi ne dedik?
+
+137
+00:19:37,039 --> 00:19:40,319
+bir şekilde benim bunları hatırlamam lazım önceki bağlantıları.
+
+138
+00:19:40,380 --> 00:19:41,759
+bunları bir yerde tutmam lazım.
+
+139
+00:19:41,880 --> 00:19:44,199
+yani bir veri yapısı aslında kullanmam lazım.
+
+140
+00:19:44,859 --> 00:19:46,800
+o zaman şöyle demem gerekir.
+
+141
+00:19:46,880 --> 00:19:50,059
+ben bağlı mıdır değil midir bilgisini bir yerde tutacağım.
+
+142
+00:19:50,059 --> 00:20:01,759
+ve ondan sonra yeni bir bilgi geldiğinde, yeni bir bağlantı isteği geldiğinde ya da bilgisi geldiğinde ben önceki de bağlılara değiyor mu değmiyor mu diye bakmam gerekiyor.
+
+143
+00:20:01,759 --> 00:20:10,739
+Eğer değiyorsa onu da kümeye almam gerekiyor. Hani dört ile beş gelmişti. İki ile dört geldiğinde iki, dört, beş aslında birbiriyle bağlı hale gelmesi lazım.
+
+144
+00:20:10,739 --> 00:20:13,219
+bir küme oluşturması lazım demiştik.
+
+145
+00:20:13,820 --> 00:20:24,699
+İşte acaba burada birbiriyle bağlı kümeler var mı ve bunlar nelerdir şeklinde bu bilgiyi tutan bir veri yapısına ihtiyaç duyuyorum
+
+146
+00:20:24,699 --> 00:20:34,719
+ve eğer bu veri yapısını düzgün bir şekilde kullanabilirsem önceki bağlantıların hepsini sonraki adımların hepsini de takip edebilir ya da kullanabilir halde olurum.
+
+147
+00:20:34,720 --> 00:20:42,340
+Şöyle, şimdi ilk önce birinci elemana ikilik veriliyor ya bunlar, 2, 9, 4, 5 şeklinde geldiler.
+
+148
+00:20:42,760 --> 00:20:44,279
+Kolay olsun diye sayısal demiştik.
+
+149
+00:20:44,760 --> 00:20:46,900
+Birinci elemana sahip olan kümeyi bulurum.
+
+150
+00:20:47,640 --> 00:20:49,860
+Sonra ikinci elemana sahip olan kümeyi bulurum.
+
+151
+00:20:49,860 --> 00:20:56,519
+Eğer bu iki elemanın kümeleri birbiriyle aynıysa zaten bunlar önceden bağlıdır demektir.
+
+152
+00:20:56,599 --> 00:20:57,379
+Hiçbir şey yapma.
+
+153
+00:20:58,040 --> 00:21:01,860
+Eğer bunlar farklıysa o zaman bu iki kümeyi birbiriyle bağlarım.
+
+154
+00:21:01,860 --> 00:21:10,279
+bağlarım ve nihayetinde oluşan her bir küme bir bağlı bileşen yani bir connected komponent oluşturacaktır.
+
+155
+00:21:10,360 --> 00:21:15,120
+Şimdi şuradaki örneğe bakın bu aslında bu aralar çok meşhur sözler.
+
+156
+00:21:15,419 --> 00:21:18,320
+En sonunda söyleyeceğimi en başta söyleyeyim tamam mı?
+
+157
+00:21:18,739 --> 00:21:24,260
+Bakın 0, 5 ve 6 burada birbiriyle bağlı bir bileşen oluşturuyor.
+
+158
+00:21:24,919 --> 00:21:28,860
+Bunlar da benim düğümlerim daha doğrusu nodlarımın id'leri tamam mı?
+
+159
+00:21:28,859 --> 00:21:42,099
+Şimdi bakın 0, 5 ve 6 bunların hepsi 0 yani mavi ile size ayırtmak için gösterdiğim küme numarasına sahip.
+
+160
+00:21:42,979 --> 00:21:56,199
+1, 2 ve 7 gördüğümüz gibi görselde birbiriyle bağlı ve 1, 2, 7. düğümler yeşille gösterdiğimiz bir numaralı yani bunun ilk düğümü kümenin ilk düğümü olacak şekilde adreslenmişler.
+
+161
+00:21:56,199 --> 00:22:07,039
+Bunu okuduğumda ben mesela 7 bir ile bağlı mı diye bir soru sorduğumda 1'e bakıyorum küme değeri 1, 7'ye bakıyorum küme değeri 1.
+
+162
+00:22:07,499 --> 00:22:10,199
+Evet bunlar aynı kümede yani bunlar bağlı diyebilirim.
+
+163
+00:22:10,979 --> 00:22:20,879
+Fakat şuraya baktığımızda 8, 3, 4, 9 birbiriyle bağlı 8, 3, 4, 9 bunlar da siyahla verilmiş onu da üstten çizelim.
+
+164
+00:22:20,879 --> 00:22:23,859
+Şöyle 8 kümesindeler.
+
+165
+00:22:23,859 --> 00:22:45,279
+Ben mesela şunu sorsam 1 ile 8 bağlı mı? 1 ile 8 bağlı mı sorusunu cevaplayabiliyor muyum? 1'e bakıyorum 1. kümede. 8'e bakıyorum 8. kümede. Bunlar aynı kümede değil. Hayır diyorum. Bars. Bunlar birbiriyle bağlı değillerdir. Nasıl çözüm? Güzel.
+
+166
+00:22:45,279 --> 00:22:51,279
+Ben kendim söyledim kendim güzel diye direkt bitirdim. Peki bunu nasıl yapacağız?
+
+167
+00:22:52,159 --> 00:22:58,059
+Algoritma nasıl olması lazım? Şimdi tabii ki algoritmayı bir akış şeklinde size göstermeyeceğim ama adım adım anlatacağım.
+
+168
+00:22:58,559 --> 00:23:03,679
+İlk başta her şey gaz ve toz bulutu. Biliyorum ki benim 10 tane düğümüm var.
+
+169
+00:23:04,199 --> 00:23:13,039
+Tamam. Ve 10'luk bir dizi tutuyorum. Bakın burada çok basit bir dizi veri yapısı kullanıyorum. Sadece bir dizi.
+
+170
+00:23:13,140 --> 00:23:34,179
+Bu ne demek? Bakın sıfırıncı düğümün kümesi sıfırdır. Birinci düğümün küme değeri birdir. İkinin küme değeri ikidir. Yani her nesne kendi kümesine sahiptir. Elimde not sayısı kadar. Yani burada on tane, basit olsun diye, on tane ayrık küme var.
+
+171
+00:23:34,179 --> 00:24:03,039
+Şimdi dedik ki 4'ü 3'e bağla. Tamam. Gidiyorum 4'ü aslında şöyle görselde 4'ü alıyorum 3'e bağlıyorum. Bu ne demektir? 4'ü 3'ün ait olduğu kümeye koy demektir. Yani bu tuttuğum küme dizisinde 4 yerine getir 3'ü yaz demiş olduk.
+
+172
+00:24:03,039 --> 00:24:07,699
+artık ben 3 ve 4'ün aynı kümede olduğunu buradan görebiliyorum.
+
+173
+00:24:07,819 --> 00:24:10,039
+Çünkü küme ID'leri aynı.
+
+174
+00:24:11,059 --> 00:24:13,199
+Sonra ne gelmiş? 3, 8.
+
+175
+00:24:14,099 --> 00:24:16,379
+Ne demek bu? 3'ü 8'e bağla.
+
+176
+00:24:17,059 --> 00:24:19,579
+3'ü al, 8'e bağla.
+
+177
+00:24:20,679 --> 00:24:22,640
+3'ü aldım, 8'e bağladım.
+
+178
+00:24:22,879 --> 00:24:25,479
+8'in değeri ne? 8 değil mi?
+
+179
+00:24:25,479 --> 00:24:29,879
+O zaman bütün 3'leri 8 haline getirmem lazım.
+
+180
+00:24:29,879 --> 00:24:50,459
+tarıyorum bütün 3'leri 8 yapıyorum. Bunu sildim 8 yaptım. Bunu sildim 8 yaptım. Şimdi artık 3, 4 ve 8. düğümlerin bakın burada da görseli var birbirleriyle bağlantıda olduklarını bu anda takip edebiliyorum. Diğer hepsinde bağımsız olduğunda görebiliyorum.
+
+181
+00:24:50,459 --> 00:25:19,059
+Sonra dedi ki kişi sırayla geliyor ya 6'yı 5'e bağla dedi. Ne yapacağım? Gideceğim 6'yı, bütün 6'ları 5 yapacağım. Yaptım. 6'yı aldım. Hatta yönünü de doğru çizelim. 5'e bağladım. Sonra devam edeceğim. 9'u 4'e bağla diye bir şey geldi. 4'ün değeri ne? 8. küme değil mi? 9 neydi? 9'du. 9'u sildim.
+
+182
+00:25:20,459 --> 00:25:48,979
+ve 4'ün değeri olarak değiştirdim. Yani bütün 9'ları 8'e çevirdim. Okey? Buradaki bağlantı. 9'u al, 4'e bağla. Bunu yapmış olduk. Şu anda elimde burada ikili, burada dörtlü, burada da dört tane birli. 1, 2, 3, 4, 5, 6. 6 tane gördüğünüz gibi şey var. Ayrı, birbiriyle bağlantılı küme var. Bunlar teker elemandan oluştuğu için tek elemandan var.
+
+183
+00:25:48,979 --> 00:26:16,500
+Sonra dedi ki 2'yi 1'e bağla. Şunu yaptık. İttik 2'nin ID'sini yani bütün 2'leri 1'e çevirdik. Şöyle sildik 1 yazdık. 8'i 9'a bağla dedi. 8'i 9'a bağla dediği anda bakıyorum. 8'i 9'a bağla dedi. Normalde ne yapmam lazımdı? Yani beklenirdi. Tık tık tık tık tık diye şunu yapmam lazımdı değil mi? Ama bakıyorum bu ikisi de 8 değerine sahip.
+
+184
+00:26:16,500 --> 00:26:24,300
+O zaman diyorum ki ya arkadaş bunlar zaten aynı kümede diyorum ve bunlar bağlıdır deyip hiçbir şey yapmıyorum.
+
+185
+00:26:24,899 --> 00:26:29,199
+Sonra 5'i 0'a bağla dedi. 5'i 0'a bağla demek nedir?
+
+186
+00:26:29,199 --> 00:26:35,479
+İşte 5'i al 0'a bağla. Yani bütün 5'in değerlerini 0 haline getir.
+
+187
+00:26:35,619 --> 00:26:45,119
+Şurada yanlış mı yazdım? 0, 0. Pardon 5 ile 6 bağlıydı zaten. Ondan sonra onların hepsini 0 haline getirdik.
+
+188
+00:26:45,119 --> 00:26:50,519
+5 olacaktı. Şunlar eksik kalmış. Şunları düzeltelim. 5 bunlar.
+
+189
+00:26:50,519 --> 00:26:56,519
+Öğlen de geçti. Uyuyor musunuz arkadaşlar? Söylesenize hatayı.
+
+190
+00:26:56,519 --> 00:26:58,519
+Bak slide'ta hata var.
+
+191
+00:26:58,675 --> 00:27:09,035
+hemen düzelttik. O yüzden bütün 5'leri 0 yaptık ve 0, 0, 0 bunlar 1, 1, 1, 8, 7. Baktığımızda görseline de durum bundan ibaret.
+
+192
+00:27:09,596 --> 00:27:15,955
+Şimdi diyelim ki şuradaki 7 de yalnız kaldı ya onu da bir yere bağlayalım. 7 ile 2'yi bağla diye bir şey geldi.
+
+193
+00:27:15,955 --> 00:27:26,815
+7 ile 2'yi bağladık. Eskiden 7 idi. 2'nin ailesine çevirdik bütün 7'leri ve 0, 1, 1, 8, 8, 0, 1, 8, 8 diye bir üçlü küme oluşmuş oldu.
+
+194
+00:27:26,815 --> 00:27:28,735
+6'yı 1'e bağla dedi.
+
+195
+00:27:29,695 --> 00:27:30,735
+Şunu da bağlattırdı.
+
+196
+00:27:31,795 --> 00:27:32,175
+Ne oldu?
+
+197
+00:27:32,755 --> 00:27:33,516
+6 kaçtı?
+
+198
+00:27:33,795 --> 00:27:34,335
+Sıfırdı ya.
+
+199
+00:27:34,435 --> 00:27:37,255
+Bütün sıfırları 1 yapmam gerekiyor.
+
+200
+00:27:37,815 --> 00:27:38,735
+1'in aydısı.
+
+201
+00:27:38,896 --> 00:27:39,975
+Yani bunlar da 1 oldu.
+
+202
+00:27:40,275 --> 00:27:40,396
+Tamam.
+
+203
+00:27:40,955 --> 00:27:42,075
+Diyelim ki burada durduk.
+
+204
+00:27:42,615 --> 00:27:43,675
+Bu son halimiz olsun.
+
+205
+00:27:44,275 --> 00:27:47,076
+Elimizde şurada bir tane komponent var.
+
+206
+00:27:47,975 --> 00:27:50,755
+Niye böyle hala ok çıkartıyor yanına doğru anlamıyorum.
+
+207
+00:27:50,755 --> 00:27:52,615
+Burada da bir tane komponent var.
+
+208
+00:27:53,216 --> 00:27:53,595
+Bakın.
+
+209
+00:27:54,315 --> 00:27:54,915
+1'ler.
+
+210
+00:27:54,915 --> 00:28:04,055
+6 tane düğüm 1 değerine sahip 1. kümedeler ve 4 tane düğümde 8 numaralı kümedeler.
+
+211
+00:28:04,756 --> 00:28:08,356
+Alın size hızlı bir çözüm. Güzel mi?
+
+212
+00:28:10,356 --> 00:28:11,315
+Baya iyi hocam.
+
+213
+00:28:11,715 --> 00:28:17,715
+Evet işte bu tamamen bizim işimiz. Biz bunu yapmalıyız.
+
+214
+00:28:18,495 --> 00:28:21,655
+Elimde bir problem var. Bu problem için benden bir çözüm bekliyor.
+
+215
+00:28:21,655 --> 00:28:51,635
+diyor ki patron bana arkadaş bunlar bağlı mı değil mi bana söyleyeceksin hızlı söyleyeceksin tamam çok efektif bir şekilde söylemeni istiyorum bugün algoritmanın efektifliğini demek esas ona eğileceğiz zaten sonra ben de oturuyorum düşünüyorum ya bunlar bana sırayla geliyor ve her anda bunlar bağlı mı değil mi benim takip edebiliyor olmam lazım bunun için bir yöntem hemen bir arkadaştan çözüm geldi hocam ben bunları işte bir matrisle böyle bir koordinatla tutarım ondan sonra bir arama algoritmasıyla üzerinden
+
+216
+00:28:51,635 --> 00:28:56,076
+geçerim ya da bilmem ne algoritması ile ondan sonra varlarsa okey derim yoklarsa false derim.
+
+217
+00:28:56,415 --> 00:29:00,195
+Yöntemdir ama hızlı mı? Her seferinde başka bir algoritmayı koşturacağız.
+
+218
+00:29:00,195 --> 00:29:06,976
+Ama bunun yerine bir veri yapısı da kullanarak ve çok basit bir veri yapısı gördüğünüz gibi bir dizi kullandık sadece.
+
+219
+00:29:07,635 --> 00:29:14,196
+Kümel'e de ID'lerini tuttuk. Bütün olay bu kadar. Ve sayısal oldu. Hani bunlar sayısal olmak zorunda da değil biliyorsunuz.
+
+220
+00:29:15,116 --> 00:29:18,155
+Burada kolay anlatmak için bunları rakamlarla ifade ettik.
+
+221
+00:29:18,155 --> 00:29:35,256
+Alın size algoritma tasarımı nedir? Problem nasıl ele alınır? Veri yapısı hangisini kullanalım ya da nasıl kullanalım? Ve bunu algoritma tasarımınıza nasıl ekleyelim ile ilgili çok güzel, çok basit ama vay belirtecek kadar da iyi çalışan bir çözüm.
+
+222
+00:29:35,256 --> 00:29:38,356
+Bunu bir kere de yapamazsınız
+
+223
+00:29:38,356 --> 00:29:42,295
+Eğer bir kere de yapabiliyorsanız ya çok şanslısınızdır ya da daha iyisinizdir
+
+224
+00:29:42,295 --> 00:29:45,735
+Ama genellikle bunların ikisi de olmaz
+
+225
+00:29:45,735 --> 00:29:47,155
+O yüzden çalışacağız
+
+226
+00:29:47,155 --> 00:29:52,795
+Çok çalışacağız ve kendimizi bu çözümleri üretecek hale doğru taşımaya gayret edeceğiz
+
+227
+00:29:52,795 --> 00:29:54,196
+Sizlere tavsiyem
+
+228
+00:29:54,196 --> 00:29:57,616
+Geçen sene benden ders alanlar varsa BBG'de
+
+229
+00:29:57,616 --> 00:29:58,936
+Onlara da söylemişimdir
+
+230
+00:29:58,936 --> 00:30:02,575
+Hep böyle internette zaten bir sürü kaynak var
+
+231
+00:30:02,575 --> 00:30:07,775
+bir sürü coding challenge'lar ya da algoritma problem challenge'lar siteler var.
+
+232
+00:30:07,975 --> 00:30:11,335
+Onlara girin, oradan algoritmayı alın, tasarlayın, çözün.
+
+233
+00:30:11,495 --> 00:30:15,975
+Hazır çözümü kullanmadan önce kendiniz bir yol geliştirmeye çalışın.
+
+234
+00:30:16,355 --> 00:30:18,375
+Sonra hazır çözümlerle karşılaştırırsınız.
+
+235
+00:30:18,896 --> 00:30:21,195
+Aa bu bunu yapmış, aa bu bunu yapmamış falan gibi.
+
+236
+00:30:21,315 --> 00:30:22,995
+Tüh bu benim nasıl aklıma gelmedi diye.
+
+237
+00:30:23,555 --> 00:30:27,835
+Ya da bak şurada şu veri yapısını kullanmam ne kadar iyi olmuş, çok farklı çözmüşüm gibi
+
+238
+00:30:27,835 --> 00:30:30,835
+şeyleri söylemenize yol açar.
+
+239
+00:30:30,835 --> 00:30:38,775
+Peki şimdi geldik yine işin teorik tarafına algoritma tasarımı yine biraz uzun tutmuşum lafı.
+
+240
+00:30:38,775 --> 00:30:41,335
+Neden algoritma tasarlıyoruz?
+
+241
+00:30:44,835 --> 00:30:50,675
+Şimdi basit bir örnek. Elimizde 3000 tane mektup var.
+
+242
+00:30:52,468 --> 00:30:55,667
+her ne hikmetse bunlar log dosyası gibi de düşünebilirsiniz.
+
+243
+00:30:56,267 --> 00:31:01,147
+Her satırında 10 kelime var ve her dosyada da 20 tane satır var.
+
+244
+00:31:01,888 --> 00:31:14,447
+Toplamda yani 10 satır 10 kelime çarpı 20 satır yani her bir mektupta 200 tane kelime var ya da her bir log dosyasında 200 tane kayıt var.
+
+245
+00:31:14,447 --> 00:31:17,247
+Ve bunlardan da elimizde 3000 tane var.
+
+246
+00:31:17,627 --> 00:31:22,167
+Toplamda 600 bin tane kaydımız var ya da toplam 600 bin tane kelimemiz var.
+
+247
+00:31:22,468 --> 00:31:24,488
+ve biliyoruz ki bunlar tekrarlı olabilir.
+
+248
+00:31:24,607 --> 00:31:26,808
+Hatta bazıları çok fazla tekrar ediyor olabilir.
+
+249
+00:31:27,287 --> 00:31:30,127
+Verinin doğası da algoritma tasarımımıza etkiler tabii ki.
+
+250
+00:31:30,968 --> 00:31:33,267
+Ben burada mesela kendi adımı yazdım.
+
+251
+00:31:33,328 --> 00:31:36,627
+Göksel kelimesiyle eşleşen bütün kelimeleri bulmak istiyorum.
+
+252
+00:31:37,107 --> 00:31:38,008
+Ya da saymak istiyorum.
+
+253
+00:31:38,847 --> 00:31:41,728
+Diyelim ki benim elimdeki bilgisayarın hızıyla
+
+254
+00:31:41,728 --> 00:31:45,468
+benim yapacağım her bir kelime karşılaştırması
+
+255
+00:31:46,027 --> 00:31:49,087
+hani bu buna eşit midir karşılaştırması bir saniye sürsün.
+
+256
+00:31:49,087 --> 00:31:57,227
+kelimeleri de sıralı olarak bütün 600 bin tane kelimemizi A'dan Z'ye doğru sıralanmış halde tuttuğumuzu düşünelim.
+
+257
+00:31:57,548 --> 00:32:01,167
+Yani birisi bizim için önceden sıralamış bu bütün kelimeleri.
+
+258
+00:32:02,008 --> 00:32:08,508
+Şimdi eğer ben sırayla hani birinci mektubun birinci satırındaki birinci kelimeden başlayıp
+
+259
+00:32:08,508 --> 00:32:18,087
+ikinci, üçüncü sonra ikinci satır birinci, ikinci kelime toplam işte 599, 1999 ve 600 bininci kelimeye kadar
+
+260
+00:32:18,087 --> 00:32:19,727
+sırayla karşılaştırırsam
+
+261
+00:32:19,727 --> 00:32:21,527
+bir saniyeden
+
+262
+00:32:21,527 --> 00:32:24,347
+altı yüz bin tane karşılaştırma yapmam lazım.
+
+263
+00:32:24,467 --> 00:32:26,007
+Çünkü altı yüz bin tane kelimem var.
+
+264
+00:32:26,147 --> 00:32:27,667
+Eşit mi eşit mi diye bakmam lazım.
+
+265
+00:32:28,227 --> 00:32:29,687
+Toplam sayıyı bulmak için mesela.
+
+266
+00:32:29,947 --> 00:32:31,147
+Ve bu da yaklaşık eşittir.
+
+267
+00:32:31,207 --> 00:32:32,287
+Yüz altmış altı saat.
+
+268
+00:32:33,587 --> 00:32:34,387
+Kaç gün yapıyor?
+
+269
+00:32:34,907 --> 00:32:35,587
+Bayağı yapıyor değil mi?
+
+270
+00:32:36,467 --> 00:32:37,167
+Bir hafta mı yapıyor?
+
+271
+00:32:40,107 --> 00:32:41,347
+Neredeyse bir hafta yapıyor değil mi?
+
+272
+00:32:45,927 --> 00:32:46,447
+Peki.
+
+273
+00:32:47,007 --> 00:32:47,587
+Ben burada
+
+274
+00:32:47,587 --> 00:33:12,587
+bana verilen girdiğinin sıralı olduğunu exploit ederek yani bu bilgiyi sömürerek bunun üzerine giderek bunu kullanarak başka bir araç arama algoritması kullansam ikili arama dediğimiz ki bugün yetiştirmeye çalışacağım binary search dediğimiz algoritmayı kullansam o zaman da logaritma iki tabanında 600 bin tane karşılaştırma yapmam gerekir.
+
+275
+00:33:12,587 --> 00:33:35,647
+çarpı 1, 1 saniyeden. O da yaklaşık eşittir 20 saniye. Şimdi ben Göksel'i arıyorum, kaç tane Göksel göçü bulmak istiyorum. Bir arama yöntemiyle aradığımda 166 saat sürüyor ama başka bir yöntemle, başka bir algoritma kullanarak aradığımda sadece 20 saniye sürüyor. Hangisini tercih ederiz? Tabii ki ikinciyi değil mi?
+
+276
+00:33:35,647 --> 00:33:47,227
+Bu nedenle biz efektif çözümler getiren, problemimizi efektif çözen, iyi çözen, hızlı çözen algoritmalar tasarlamaya gayret ederiz.
+
+277
+00:33:48,007 --> 00:33:50,067
+Şimdi burayı biraz hızlı geçeceğiz.
+
+278
+00:33:51,827 --> 00:33:55,667
+Algoritma tasarlamanın pek çok tekniği ve stratejisi var.
+
+279
+00:33:56,247 --> 00:33:59,087
+Stratejiyi yiyileri var hatta buradaki yanlışla beraber.
+
+280
+00:33:59,947 --> 00:34:02,347
+Bunlardan bir tanesi kaba kuvvet yani brute force.
+
+281
+00:34:02,347 --> 00:34:07,147
+Bazı problemleri sadece bu şekilde çözebiliriz maalesef.
+
+282
+00:34:07,787 --> 00:34:12,047
+Örneğin işte elinizde bir tane RAR ile sıkıştırılmış dosya var.
+
+283
+00:34:13,207 --> 00:34:15,807
+Bu dosyanın şifresini unuttunuz.
+
+284
+00:34:16,547 --> 00:34:21,027
+Elinizdeki tek seçenek bütün şifre kombinasyonlarını denemekte teker teker.
+
+285
+00:34:21,147 --> 00:34:23,147
+Buna kaba kuvvet, brute force adını veriyoruz.
+
+286
+00:34:25,687 --> 00:34:28,307
+Greedy dediğimiz açgözlü algoritmatılar var.
+
+287
+00:34:28,307 --> 00:34:34,768
+burada da aslında çözümün her bir adımında o adım için en iyi olan neyse onu uygularsınız.
+
+288
+00:34:34,768 --> 00:34:42,768
+Yani mesela işte bir şey gibi hani bir odaya girdiniz ya da bir labirentte falan ya da bir yerden çıkmaya çalışıyorsunuz.
+
+289
+00:34:43,768 --> 00:34:44,767
+Önünüzde işte...
+
+290
+00:34:45,364 --> 00:35:12,663
+üç tane kapı var ama işte arkalarında da ödül ya da önünde ödüller var. Birinde bir tane elma var, birinde beş elma var, birinde üç elma var. Beş elma daha çok o yüzden oradan daha çok enerji alacağım diye oraya gidersin. O kapıdan girdikten sonrasına o zaman bakarsınız. Yani her adımda mümkün olan en optimum hareketi yaparak adım adım ilerlemek greedy çözümdür. Tabi bunun belli kısıtları ve şartları var. Bunları algoritmalarında da göreceksiniz. Burada fazla bahsedeceğiz.
+
+291
+00:35:12,663 --> 00:35:16,943
+Böl ve yönet çok sık kullanılan bir algoritma tasarım tekniğidir.
+
+292
+00:35:17,083 --> 00:35:21,843
+Büyük problemleri özellikle parçalara ayırarak parçaları çözmek ondan sonra da çözümü birleştirmek.
+
+293
+00:35:21,843 --> 00:35:29,683
+Yani aslında divide, concure and combine aslında üç aşamadan oluşur ama biz divide and concure olarak bunu isimlendiririz.
+
+294
+00:35:30,523 --> 00:35:36,503
+En bilinik algoritmalar işte merge sort olabilir, verilebilir.
+
+295
+00:35:36,683 --> 00:35:41,943
+Bunu da yine algoritma analizin başlığında seneye bırakmış olduk.
+
+296
+00:35:42,663 --> 00:35:45,704
+Divide and Concure çok büyük çok geniş bir alan burada
+
+297
+00:35:45,704 --> 00:35:55,003
+Decrease and Concure diye arama uzayını ufalta ufalta hedefi yani fethetmeye çalışan sonucu üretmeye çalışan yaklaşımlar da var
+
+298
+00:35:55,003 --> 00:36:00,003
+Bir tanesi insertion sort bugün üzerinden geçeceğiz özellikle karmaşıklık analizi için
+
+299
+00:36:00,003 --> 00:36:10,664
+Bir tanesi Transform and Concure burada da problemi başka bir yapıya dönüştürerek özellikle bir veri yapısı kullanarak başka bir hale dönüştürüp
+
+300
+00:36:10,663 --> 00:36:16,363
+onu çözmek ve orijinal problemi de çözmüş olmak şeklinde bir yaklaşım da var.
+
+301
+00:36:16,703 --> 00:36:18,983
+Ona da Transform and Concur adını veriyoruz.
+
+302
+00:36:20,543 --> 00:36:22,903
+Dinamik programlama tasarım tekniği var.
+
+303
+00:36:23,003 --> 00:36:24,523
+Adının programlama olduğuna bakmayın.
+
+304
+00:36:24,923 --> 00:36:26,723
+Aslında bir optimizasyon tekniği.
+
+305
+00:36:28,463 --> 00:36:34,943
+Bu da mesela Fibonacci sayılarını hesaplarken, onu da haftaya daha bir örnekle detaylandıracağız.
+
+306
+00:36:35,623 --> 00:36:38,743
+Aslında çok üstel bir karmaşıklığımız var.
+
+307
+00:36:38,743 --> 00:36:43,743
+ama onu lineer karmaşıklıkla çözmenin yolu da dinamik programlama gibi yaklaşımlardan geçiyor.
+
+308
+00:36:44,583 --> 00:36:48,703
+Bunu da yine aslında algoritma analizinde seneye alacaksınız.
+
+309
+00:36:49,224 --> 00:36:57,364
+Iterative Improvement özellikle sayısal analizde Newton-Raphson'la kök bulma metodunu hatırlarsanız ona çok iyi bir örnektir.
+
+310
+00:36:58,164 --> 00:37:03,164
+Artımlı iyileşme ve bununla beraber yine seneye backtracking dediğimiz geri takip,
+
+311
+00:37:03,164 --> 00:37:07,724
+işte su doku çözmede falan kullanılan algoritmik tasarım teknikleri var.
+
+312
+00:37:07,724 --> 00:37:21,623
+keşke vakit olsa da bunların hepsini uzun uzun üzerinden sizinle birlikte geçebilsek, eğlenceli örneklerle devam etsek ama genel olarak en çok kullanılan stratejiler bunlardır diyelim. Bu ekstra biraz bir bilgi olmuş olsun.
+
+313
+00:37:22,584 --> 00:37:35,444
+Şimdi başka bir örnek, çok basit, çok çok çok kolay bir örnek ve ta ortaokul hayatımızdan beri bildiğimiz bir yöntem. OBEP bulma. OBEP neydi? Ortak bölenlerin en büyüğü. Ne demek bu?
+
+314
+00:37:35,444 --> 00:37:39,343
+Bu elimizde iki tane sayı var, iki tane doğal sayı, bunlara n ve n diyelim.
+
+315
+00:37:40,024 --> 00:37:47,923
+Bu verilen iki tane doğal sayının, iki doğal sayı da ortak olarak bölen sayıların en büyüğü acaba hangisidir?
+
+316
+00:37:48,123 --> 00:37:49,404
+Bunu bulmak istiyorum.
+
+317
+00:37:50,063 --> 00:37:52,124
+Bize bunu ortaokulda şöyle öğretmişlerdi.
+
+318
+00:37:54,024 --> 00:37:58,084
+Hatırlarsınız, benim hatırlamam daha zor ama siz daha kolay hatırlarsınız diye düşünüyorum.
+
+319
+00:37:59,364 --> 00:38:02,483
+Birinci sayının asal çarpanlarını bul.
+
+320
+00:38:02,483 --> 00:38:05,123
+Yani bir m'yi asal çarpanlarına ayır.
+
+321
+00:38:05,444 --> 00:38:09,464
+Sonra n'yi asal çarpanlarına ayır.
+
+322
+00:38:09,703 --> 00:38:11,744
+İkinci sayıyı da asal çarpanlarına ayır.
+
+323
+00:38:12,604 --> 00:38:16,123
+m ve n'nin bütün ortak asal çarpanlarını bul.
+
+324
+00:38:17,024 --> 00:38:19,604
+Bütün ortak asal çarpanları birbiriyle çarp.
+
+325
+00:38:19,744 --> 00:38:21,744
+Çarpım sonucunu OBEP olarak ver.
+
+326
+00:38:22,364 --> 00:38:23,143
+Hemen bakalım.
+
+327
+00:38:23,483 --> 00:38:24,664
+Mesela basit olsun.
+
+328
+00:38:24,763 --> 00:38:25,904
+Bir sayıya 6 diyelim.
+
+329
+00:38:26,824 --> 00:38:27,024
+Tamam.
+
+330
+00:38:27,164 --> 00:38:28,703
+Bir sayıya da kaç diyelim?
+
+331
+00:38:29,143 --> 00:38:30,224
+18 mi 24 mi?
+
+332
+00:38:32,224 --> 00:38:33,404
+18 olsun.
+
+333
+00:38:35,444 --> 00:38:37,444
+18 tamam mı?
+
+334
+00:38:37,444 --> 00:38:42,444
+Şimdi altının asal çarpanları nedir?
+
+335
+00:38:42,444 --> 00:38:44,444
+Söyleyin bakalım.
+
+336
+00:38:45,811 --> 00:38:46,871
+3-5-2
+
+337
+00:38:46,871 --> 00:38:48,931
+Biri yok mu?
+
+338
+00:38:49,691 --> 00:38:50,971
+Yok, asal sayı değil bir.
+
+339
+00:38:51,772 --> 00:38:52,831
+Hee, neden değil?
+
+340
+00:38:59,860 --> 00:39:01,860
+Ne'dan değil.
+
+341
+00:39:06,483 --> 00:39:10,483
+Kendisinden ve birden başka bölöni yok. Ne güzel işte. Uymuyor mu tanıma?
+
+342
+00:39:11,483 --> 00:39:15,483
+Ama asal sayı tanımında 2 veya 2'den büyük olması gerekiyor.
+
+343
+00:39:15,483 --> 00:39:21,483
+Haa, tamam. Peki. Okey, güzel. Evet, 18'inkileri söyleyin.
+
+344
+00:39:25,619 --> 00:39:26,619
+Başka?
+
+345
+00:39:26,619 --> 00:39:28,619
+Üç
+
+346
+00:39:28,619 --> 00:39:29,619
+Unkares
+
+347
+00:39:29,619 --> 00:39:30,619
+Başka yok
+
+348
+00:39:30,619 --> 00:39:33,619
+Yok mu?
+
+349
+00:39:36,052 --> 00:39:58,131
+yok mu ya? 5 yok mu? Yok hocam, bu kadar. Yok. Bu örnekle çok kolay oldu değil mi? Peki, ne yapacağız? M ve N'nin ortak asal çarpanlarını bulalım. 2 ve 3. Değil mi? 2 ile 3. 2 ile 3'ü çarpalım. 6. Ooo, O hep 6'ymış. Sizce bu bir algoritma mı?
+
+350
+00:40:03,027 --> 00:40:09,547
+Yani hocam giriş ve sonuç kısmı olduğu için bir algoritma sayılabilir ama efektifliği tartışılır.
+
+351
+00:40:09,727 --> 00:40:12,727
+Efektifliğini sormadım hocam. Algoritma tanımına uyuyor mu?
+
+352
+00:40:16,087 --> 00:40:21,427
+Ne demiştik? Üçün adımların tam açık ve tutarlı bir şekilde anlatılmış olması gerekir dedik.
+
+353
+00:40:21,507 --> 00:40:25,628
+Ben burada diyorum ki birinci adımda daha main'in asal çarpanlarını bul diyorum.
+
+354
+00:40:26,347 --> 00:40:28,547
+Asal çarpanların nasıl bulunacağını söylüyor muyum?
+
+355
+00:40:28,547 --> 00:40:31,287
+Fonksiyon şeklinde söylenmiş aslında.
+
+356
+00:40:31,887 --> 00:40:33,927
+Bunun bir ayrıntısı olması lazım.
+
+357
+00:40:34,087 --> 00:40:35,427
+Asal çarpan nasıl bulunur?
+
+358
+00:40:36,007 --> 00:40:36,307
+Yok.
+
+359
+00:40:36,708 --> 00:40:39,527
+Ben asal çarpan nasıl bulunur burada söylemiyorum, anlatmıyorum.
+
+360
+00:40:39,627 --> 00:40:41,587
+O zaman bu haliyle bir algoritma değil.
+
+361
+00:40:42,907 --> 00:40:43,527
+Eksiği var.
+
+362
+00:40:44,167 --> 00:40:48,167
+Çünkü buradaki adım tanımlı net bir şekilde açık ve tanımlı değil.
+
+363
+00:40:48,807 --> 00:40:49,267
+Tamam mı?
+
+364
+00:40:49,947 --> 00:40:51,687
+Girdisi var evet, çıktısı var evet.
+
+365
+00:40:52,888 --> 00:40:54,567
+İşlem adımları bir şekilde var.
+
+366
+00:40:54,827 --> 00:40:55,388
+Kör topal.
+
+367
+00:40:56,007 --> 00:40:57,888
+Ama içerikleri muğlak.
+
+368
+00:40:57,888 --> 00:41:04,487
+Yani ben bilmiyorum asal çarpanları bul diyorsun bende undefined. Nasıl bulacağım ben asal çarpanı? Nasıl bulunur asal çarpan?
+
+369
+00:41:10,324 --> 00:41:32,943
+Allah bilir nasıl bulunur değil mi? Evet. Neyse. Özetle bu haliyle buna bir algoritma demek biraz zor. Peki. Şimdi. Nasıl yapacağız? Ya da bunu bir algoritma akış şekline nasıl getirebiliriz? Şimdi. Problem ne? n ve n olarak verilen iki doğal sayının ortak bölenlerinin en büyüğünü bulalım.
+
+370
+00:41:32,943 --> 00:41:42,463
+Bunu aslında Öklü bizim için Elements kitabında M.Ö. 300 yılında tanımlamış. Vay be.
+
+371
+00:41:43,843 --> 00:41:48,783
+Adam M.Ö. 300 yılında yani bundan kaç yıl önce oluyor?
+
+372
+00:41:48,903 --> 00:41:55,504
+2300 yıl önce bu algoritmayı tasarlamış ve kitapta yazmış.
+
+373
+00:41:55,504 --> 00:41:56,763
+Bakalım ne yapmış?
+
+374
+00:41:56,763 --> 00:42:09,403
+demiş ki verilen iki doğal sayı m ve n doğal sayılarının en büyük ortak bölümün yani greatest common divisor'ı kusura bakmayın bu ingilizce oldu burası.
+
+375
+00:42:10,523 --> 00:42:19,423
+İkinci sayı ile birinci sayı mod n yani ikinci sayı bölümünden kalanın ortak bölenlerinin en büyüğüne eşittir demiş.
+
+376
+00:42:19,423 --> 00:42:29,483
+ve bu işlemi n sıfır olana kadar tekrar ettirirseniz elde edeceğiniz m sayısı sizin ortak bölenlerinizin en büyüğüdür demiş.
+
+377
+00:42:30,684 --> 00:42:32,083
+Yani aslında böyle böyle gidiyor.
+
+378
+00:42:32,083 --> 00:42:37,883
+Yani asal çarpanlarını ayırmakla birebir neredeyse aynı şeyi yapıyor diyebiliriz.
+
+379
+00:42:38,544 --> 00:42:39,023
+Bakalım.
+
+380
+00:42:40,143 --> 00:42:42,863
+60 ile 24'ün obebi kaçtır?
+
+381
+00:42:43,123 --> 00:42:43,863
+Ne demek bu?
+
+382
+00:42:45,303 --> 00:42:46,764
+24 virgül.
+
+383
+00:42:47,303 --> 00:42:48,404
+Şu n gördüğünüz gibi.
+
+384
+00:42:48,403 --> 00:43:15,123
+n buraya geliyor. Bu da 60 mod 24. 60'ın 24'ünde bölümünden kalan kaçtır? 24, 48, 48, 12 kalıyor değil mi? 60'la arasında 12. Yani diyorum ki bu işlem aslında 24'ün 12 ile Creative Common Divisor'ını bulmakla eştir diyorum.
+
+385
+00:43:15,123 --> 00:43:23,623
+Hadi bunu yapalım. Bu ne demek? AnyA al. Buraya da 24 mod 12 yani 0. Değil mi?
+
+386
+00:43:29,043 --> 00:43:31,043
+Bu da 0'ı verdi.
+
+387
+00:43:31,043 --> 00:43:33,043
+Ne zamana kadar bu işleme devam edecektim?
+
+388
+00:43:33,043 --> 00:43:37,043
+N sayısı yani ikinci değerim 0 olana kadar oldu.
+
+389
+00:43:37,043 --> 00:43:39,043
+Elimde ne kaldı? 12.
+
+390
+00:43:39,043 --> 00:43:41,043
+Gördünüz mü? İşte cevap.
+
+391
+00:43:41,043 --> 00:43:45,043
+Yani 60 ile 24'ün ortak bölenlerin en büyüğü 12'dir.
+
+392
+00:43:45,043 --> 00:43:48,043
+Şeklinde sonucu üretebildim.
+
+393
+00:43:48,043 --> 00:43:52,043
+Bu işin güzelliği, bu sayılar ne olursa olsun her zaman çalışıyor.
+
+394
+00:43:52,043 --> 00:43:54,043
+Tabi bunu ispatlamak da gerekiyor.
+
+395
+00:43:54,043 --> 00:43:59,043
+Bu ispatı şimdi matematik olarak yapabiliriz ama bu kadar vaktim yok.
+
+396
+00:43:59,043 --> 00:44:00,543
+mutlaka araştırıp bakın.
+
+397
+00:44:01,163 --> 00:44:06,663
+Mesela 1785 ile 546'nın ortak bölenlerinin en büyüğünü bulalım.
+
+398
+00:44:07,323 --> 00:44:09,963
+Biraz önceki benim slide'da şuraya geri geleyim.
+
+399
+00:44:10,703 --> 00:44:15,243
+6 ile 18 kadar kolay asal çarpanlarına ayıramayacağım bir kere bunu elle.
+
+400
+00:44:15,243 --> 00:44:18,743
+O yüzden bu yöntemi kullanmak çok daha kolay.
+
+401
+00:44:19,003 --> 00:44:22,124
+Yani 1785 mod 546.
+
+402
+00:44:22,444 --> 00:44:23,743
+O da 147'yi verecek.
+
+403
+00:44:25,523 --> 00:44:28,404
+546 mod 147'den 105 gelecek.
+
+404
+00:44:29,043 --> 00:44:31,884
+105 mod 42'den 21 gelecek.
+
+405
+00:44:32,523 --> 00:44:34,984
+42 mod 21'den de 0 gelecek.
+
+406
+00:44:35,243 --> 00:44:42,923
+0'ı buldum ve elimdeki sayı yani en büyük ortak bölen 21'dir şeklinde buradaki sonucu oluşturacak.
+
+407
+00:44:44,084 --> 00:44:44,984
+Ne kadar güzel değil mi?
+
+408
+00:44:45,103 --> 00:44:50,183
+Peki ben bunu bir akış yani bir algoritma olarak nasıl ifade edebilirim?
+
+409
+00:44:51,264 --> 00:44:55,764
+Normalde bunu tabii şimdi sınıfta tahtada güzel güzel tartışarak yapmak da vardı ama
+
+410
+00:44:55,764 --> 00:45:01,584
+Ama burada biraz daha hızlı olacak dediğim gibi slide'da iki farklı şekillere gösteriyorum.
+
+411
+00:45:01,724 --> 00:45:09,724
+Sol tarafta bir basit de olsa hani başlangıcı sonu yok ama hani girdisi çıkısı falan endleri falan yok.
+
+412
+00:45:09,724 --> 00:45:12,444
+Çok temel bir akış pseudokod var.
+
+413
+00:45:13,103 --> 00:45:15,704
+n sıfırsa m değerini geri döndür ve dur.
+
+414
+00:45:16,704 --> 00:45:22,444
+Değilse o zaman ikinci adım yani ikinci adım zaten durmadıysam ikinci adıma geçtim demektir.
+
+415
+00:45:22,443 --> 00:45:40,303
+M'yi N'ye böl ve kalan değeri R'ye ata. Sonra N'nin değerini M'ye, R'nin değerini N'ye ata. Yani birbiriyle kaydır ve birinci adıma geri git. Yani burada bir durma şartını her zaman sağlayabiliyorum. Efendim?
+
+416
+00:45:41,363 --> 00:45:46,643
+Hocam M ve N'nin büyük olanını bulmamız gerekmiyor mu?
+
+417
+00:45:46,643 --> 00:45:53,903
+Gerekiyor. Burada bir varsayım var. Şimdi bu derste hızlı anlatabilmek açısından böyle bir varsayım var.
+
+418
+00:45:54,023 --> 00:46:03,963
+m'nin neyden büyük olduğunu biliyoruz. Verilen birinci sayı ikinci sayıdan büyük. Yoksa şurada ekstra bir if yapmam gerekiyor tabii ki.
+
+419
+00:46:03,963 --> 00:46:11,023
+Bir swap operasyonu. Şimdi nasıl yaparım bunun akışını? Bakın başladım. Ne demiştik? Her algoritma mutlaka bir yerde başlar.
+
+420
+00:46:11,023 --> 00:46:33,023
+sonlu sayıda adımdan sonra biter. Bunları unutmayalım. Bunlar çok önemli. Ve şuradaki delikli kalp notasyonuyla M ve N şeklinde iki tane doğal sayıyı okudum. Ve n sıfır olana kadar devam edeceğim. Bu ne demektir? n sıfır olmadığı sürece işlemler yaptım.
+
+421
+00:46:33,023 --> 00:46:35,023
+bir while döngüsü yarattım.
+
+422
+00:46:35,023 --> 00:46:37,023
+Bakın while buradan çıkmış.
+
+423
+00:46:37,023 --> 00:46:41,023
+Bunu şöyle de çizebilirdim.
+
+424
+00:46:41,023 --> 00:46:46,023
+Biraz powerpoint'te idare edin.
+
+425
+00:46:46,023 --> 00:46:54,023
+Şeyler çok güzel olmadı ama bunu elimle çizsem ben şu şekilde bir ok ile yani şöyle bir kırık çizgi ile gösterirdim.
+
+426
+00:46:54,023 --> 00:46:56,023
+Okuda böyle çizerdim.
+
+427
+00:46:56,023 --> 00:46:59,023
+Nedir? Önce kalanı bulacağım.
+
+428
+00:46:59,023 --> 00:47:01,023
+R remainder'dan geliyor.
+
+429
+00:47:01,563 --> 00:47:02,323
+M mod n.
+
+430
+00:47:03,603 --> 00:47:08,063
+Sonra n değerini m'ye yani ikinci sayı birinci sayı ata.
+
+431
+00:47:08,703 --> 00:47:10,783
+Kalan değerini ikinci sayı olarak ata.
+
+432
+00:47:11,699 --> 00:47:41,679
+O işlemi yaptım. Geri geldim. Bir kere yaptım. Sonra n0 mı diye kontrol ediyorum. n0 değilse tekrar yapıyorum. n0 değilse tekrar yapıyorum. n0 olduğu anda artık daha fazla bölme işlemi yapmama gerek yok. Asal çarpan, daha doğrusu ortak bölenlerin en büyüğünü bulmuşum demektir. Ve buradan çıkıp yoluma devam ediyorum. Yaptığım iş sadece m'yi, yani elde ettiğim sonucu yazdırmak, çıktığı üretmek ve de burada durmak.
+
+433
+00:47:41,699 --> 00:47:42,859
+Hepsi bu kadar.
+
+434
+00:47:44,760 --> 00:47:46,119
+Baya efektif gördüğünüz gibi.
+
+435
+00:47:48,400 --> 00:47:53,720
+Burada algoritmanın teorik olarak çalıştığını mutlaka ispatlamamız gerekiyor.
+
+436
+00:47:53,720 --> 00:48:00,119
+Bunun için de yapmanız gereken n'in mutlaka bir yerde sıfır olabildiğini göstermek.
+
+437
+00:48:00,639 --> 00:48:02,639
+Nasıl gösterebilirsiniz? Fikri olan var mı?
+
+438
+00:48:15,891 --> 00:48:16,512
+just tell me.
+
+439
+00:48:22,324 --> 00:48:30,163
+Ortak bölenlerin en büyüğü mevcut ise zaten hani böyle böyle gittiğimizde sıfıra doğru ikinci sayının sıfır olması mutlaktır.
+
+440
+00:48:30,284 --> 00:48:36,963
+Çünkü bir yerde birinci sayı ikinci sayı böldüğünüzde kalan sıfır olacaktır. Burası kesin.
+
+441
+00:48:37,503 --> 00:48:45,084
+Olmadığı durum ne olabilir? Öyle gidelim. Olmadığı durum ne olabilir? Aralarında asal sayılar olabilir değil mi?
+
+442
+00:48:45,084 --> 00:48:56,143
+O zaman da bölerek gittiğinizde yine aslında bunların en küçük sayısına doğru gideceksiniz ve yine ikinci sayının sıfıra doğru gitmesini garanti edeceksiniz.
+
+443
+00:48:56,143 --> 00:49:08,184
+Bunu da bir düşünün. Dediğim gibi uzatamıyorum fazla. Şimdi bir ara vereceğim. Bir düşünüp üzerinde kafa yorun. Yani ben bunu acaba nasıl ispatlayabilirim? Bu neden doğru?
+
+444
+00:49:08,184 --> 00:49:16,164
+Yani ben ikinci sayının sıfır olacağını nasıl garanti edebilirim şeklinde sorarak bu teoreminizi ispatlayabilirsiniz.
+
+445
+00:49:17,064 --> 00:49:20,344
+Araya geçmeden önce geçen hafta söylediğimiz şeyi tekrar üzerinden geçelim.
+
+446
+00:49:20,983 --> 00:49:22,783
+Asal sayı bulma problemimiz vardı.
+
+447
+00:49:23,283 --> 00:49:27,944
+n'e kadar olan bütün asal sayıları efektif olarak nasıl bulabileceğimizi söylemiştik.
+
+448
+00:49:28,563 --> 00:49:33,584
+Bunun için de Seave of Erasifene'si örnek vermiştik.
+
+449
+00:49:33,584 --> 00:49:39,463
+işte ikinin katları, üçün katları, sonraki asal sayının katları şeklinde silesiyle gideriz.
+
+450
+00:49:39,824 --> 00:49:42,984
+Kalan sayılar kökene kadar gittiğimizde de yeterli olacaktır.
+
+451
+00:49:43,603 --> 00:49:45,984
+Çünkü n çarpı n zaten buraya gelecektir.
+
+452
+00:49:46,084 --> 00:49:47,064
+Neyse bizim limitimiz.
+
+453
+00:49:47,564 --> 00:49:49,283
+Kökene kadar gitmek yeterlidir.
+
+454
+00:49:49,283 --> 00:49:58,143
+Kökenin bütün katlarına, kökene kadar olan bütün sayıların katlarına, asal sayıların katlarına sildiğimizde asal olmayanları silmiş oluruz.
+
+455
+00:49:58,544 --> 00:50:01,783
+Ve bu sayede geriye kalan her şey asal sayıdır demiştik.
+
+456
+00:50:01,783 --> 00:50:05,544
+ve bunun içinde şöyle bir şey göstermiştik.
+
+457
+00:50:05,544 --> 00:50:08,184
+Bu mesela birden n'e kadar, birden 100'e kadar.
+
+458
+00:50:08,623 --> 00:50:15,264
+Normalde bu tek boyutlu bir dizi de slide'a sığsın diye matris şeklinde yazdım ama bu matris değil.
+
+459
+00:50:15,523 --> 00:50:16,264
+Yani şöyle gidiyor.
+
+460
+00:50:16,663 --> 00:50:22,303
+1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 böyle dümdüz gidiyor aslına bakarsanız.
+
+461
+00:50:22,783 --> 00:50:24,343
+Yaptığımız şey 2 asal.
+
+462
+00:50:24,883 --> 00:50:26,603
+2'nin bütün katlarını silmek.
+
+463
+00:50:26,603 --> 00:50:41,404
+2, 6, 8, 10, 12, 14, 16, 18, 20'yi silmek. 20'ye kadar yapayım. 36'ya kadar yapalım.
+
+464
+00:50:41,404 --> 00:50:50,764
+36'da olsun. 20'yi sildik. 22, 24, 26, 28, 30, 32, 34 ve 36'yı sildim.
+
+465
+00:50:50,764 --> 00:51:17,844
+kök 36 ne? 6. 6'ya kadar gideceğim. Şuraya kök 36 diyelim. 36 eşittir 6 dedik. 6'ya kadar gitsem yeter. Sonra 3 asal. 3'ün katlarını siliyorum. 6 silindi, 9'u sildim, 12 silindi, 15'i sildim, 19, 21'i sildim, 23, 25, 27'i sildim, 29'u geç, 31, 33'ü sildim, 35'i geç, dur.
+
+466
+00:51:17,843 --> 00:51:18,843
+4 zaten silinmişti 5'e geldim 5'in katları 10 silindi 15 silindi 20 silindi 25 silindi 30 silindi 35 silindi tamam bitti 6 daha diyelim 6'yı da yaptık 6 zaten silinmişti 6'nın katları ne işte 16 12 18 24 30 36 bunlar silinmişti değil mi kalanlar neler 2
+
+467
+00:51:47,843 --> 00:52:13,843
+3, 5, 7, 11, 13, 17, 19, 23, 29, 31, o kadar. Bakın 36'ya kadar olan asal sayıları böyle bulabilirim.
+
+468
+00:52:13,843 --> 00:52:16,523
+Şimdi burada
+
+469
+00:52:18,867 --> 00:52:28,387
+Esasen burada anlattığım, daha doğrusu şurada örneğini verdiğim 1'den n'e kadar olan dizi üzerinde yaptığım işlem tam olarak soldaki akış.
+
+470
+00:52:28,387 --> 00:52:31,867
+Bakın önce 2'den n'e kadar bütün değerleri bir a dizisine yazıyorum.
+
+471
+00:52:31,987 --> 00:52:37,907
+Yani aslında a dizisi dediğim şey 2, 3, 4, n'e kadar gidiyor.
+
+472
+00:52:39,187 --> 00:52:47,467
+Sonrasında da 2'den kök n'e kadar, eğer bunu daha önceden sıfırlamadıysam, sıfırladıysam hiçbir şey yapmıyorum, devam ediyorum.
+
+473
+00:52:47,467 --> 00:52:49,627
+sıfırlamadıysam p çarpı p
+
+474
+00:52:49,627 --> 00:52:51,927
+değerini elde edip sonra da
+
+475
+00:52:51,927 --> 00:52:53,607
+n'den küçük olduğu sürece
+
+476
+00:52:53,607 --> 00:52:54,087
+bütün
+
+477
+00:52:54,087 --> 00:52:57,327
+j artı p şeklinde
+
+478
+00:52:57,327 --> 00:52:59,387
+ilerleyip bütün katlarını
+
+479
+00:52:59,387 --> 00:53:01,347
+silmek. Yani 2, 4, 6, 8
+
+480
+00:53:01,347 --> 00:53:03,728
+2'nin 4, 6, 8 onları silmek
+
+481
+00:53:03,728 --> 00:53:05,367
+3'ünküler işte 6, 9,
+
+482
+00:53:05,447 --> 00:53:07,367
+12, 11 onları silmek gibi gibi
+
+483
+00:53:07,367 --> 00:53:09,067
+böyle giden bir yöntem.
+
+484
+00:53:09,487 --> 00:53:11,647
+Ama bunu bu şekilde çözmek zorunda değilsiniz.
+
+485
+00:53:11,847 --> 00:53:13,548
+İsterseniz biraz daha farklı bir
+
+486
+00:53:13,548 --> 00:53:15,707
+çözüm de geliştirebilirsiniz. Şöyle ki
+
+487
+00:53:15,708 --> 00:53:22,088
+ben zaten indislerle yani 2'den n'e kadar olan indislerle değerlere erişebiliyorum diyebilirim.
+
+488
+00:53:22,208 --> 00:53:26,988
+Ve bütün diziyi var yok şeklinde birler sıfırlar şeklinde tutmak isteyebilirim.
+
+489
+00:53:27,088 --> 00:53:28,747
+Yani asaldır değildir.
+
+490
+00:53:28,867 --> 00:53:33,308
+Bu asaldır, bu asaldır, bu asaldır, bu asaldır diye.
+
+491
+00:53:33,707 --> 00:53:35,287
+Başta hepsini asal kabul ediyorum.
+
+492
+00:53:35,967 --> 00:53:40,987
+Sonra eğer asalsa yani bu daha henüz işlenmedi ya da silinmediyse diyeyim.
+
+493
+00:53:40,987 --> 00:53:43,707
+şöyle bir döngüyle j eşittir i ile
+
+494
+00:53:43,707 --> 00:53:45,767
+i çarpı j küçüktür en olana kadar
+
+495
+00:53:45,767 --> 00:53:47,567
+i çarpı j sıfırdır. Yani
+
+496
+00:53:47,567 --> 00:53:49,587
+ikinin katları bu ikiydi ya
+
+497
+00:53:49,587 --> 00:53:50,967
+işte iki
+
+498
+00:53:50,967 --> 00:53:53,787
+dördü sıfırla, altıyı
+
+499
+00:53:53,787 --> 00:53:56,107
+sıfırla, sekizi sıfırla, onu sıfırla
+
+500
+00:53:56,107 --> 00:53:57,647
+sonra üçün katları
+
+501
+00:53:57,647 --> 00:53:58,747
+altıyı sıfırla
+
+502
+00:53:58,747 --> 00:54:01,887
+bu şekilde ilerleyebilirsiniz.
+
+503
+00:54:02,087 --> 00:54:03,767
+Burada da ne kazancınız olur?
+
+504
+00:54:03,887 --> 00:54:05,627
+Eğer bunu mesela bir gömülü sistemde
+
+505
+00:54:05,627 --> 00:54:07,567
+yapıyorsanız bunları böyle
+
+506
+00:54:07,567 --> 00:54:10,087
+byte'larla değil, integer'larla
+
+507
+00:54:10,088 --> 00:54:12,268
+bitlerle saklayabilirsiniz mesela.
+
+508
+00:54:12,808 --> 00:54:15,488
+Buna göre acayip bir yer kazancı elde edebilirsiniz.
+
+509
+00:54:16,348 --> 00:54:18,348
+Aslında aynı şeyi yapıyorsunuz.
+
+510
+00:54:18,488 --> 00:54:20,927
+Ama veriyi tuttuğunuz şey gösterim.
+
+511
+00:54:21,367 --> 00:54:23,808
+İndisler sayıları zaten gösterecek.
+
+512
+00:54:24,287 --> 00:54:28,567
+Bu asaldır değildir şeklinde bir 0-1 kullanmak olabilir.
+
+513
+00:54:29,168 --> 00:54:30,707
+Böyle bir çözümle geliştirebilirsiniz.
+
+514
+00:54:30,888 --> 00:54:32,367
+Bu da bir başka akış.
+
+515
+00:54:33,007 --> 00:54:34,647
+Peki şimdi bir ara verelim 10 dakika.
+
+516
+00:54:35,828 --> 00:54:36,767
+Sonra da
+
+517
+00:54:36,767 --> 00:54:39,028
+şu anda 54 geçiyor.
+
+518
+00:54:39,028 --> 00:54:40,867
+tam saat 2-5 geçe
+
+519
+00:54:40,867 --> 00:54:43,088
+algoritma analizi temelleriyle
+
+520
+00:54:43,088 --> 00:54:44,628
+yolumuza devam edelim.
+
+521
+00:54:44,908 --> 00:54:46,408
+2-5 geçe görüşmek üzere.
+
+522
+01:01:18,708 --> 01:01:25,067
+Arkadaşlar, ilk hafta bu hocanın grubunda olanlar bir kişiye ses verse olur mu?
+
+523
+01:01:29,492 --> 01:01:30,691
+Burada olan varsa yani.
+
+524
+01:01:39,347 --> 01:01:40,347
+Sesim geliyor mu?
+
+525
+01:01:40,687 --> 01:01:41,327
+Geliyor geliyor.
+
+526
+01:01:43,307 --> 01:01:45,347
+İlk hafta ben hocanın grubundaydım.
+
+527
+01:01:46,847 --> 01:01:50,667
+En son ne işlediniz, ne yaptınız?
+
+528
+01:01:51,467 --> 01:01:55,608
+Çünkü ben Fatih hocadan geliyorum da biz en son işte sortları falan yazdık.
+
+529
+01:01:56,247 --> 01:01:57,948
+Ondan sonra ders bitti.
+
+530
+01:01:58,167 --> 01:01:59,587
+Yani biraz da erken bitirdik galiba.
+
+531
+01:02:00,287 --> 01:02:02,387
+Hani bu hocada en son ne işlediniz?
+
+532
+01:02:03,467 --> 01:02:04,727
+Bir slide m'lite bir şey var mı?
+
+533
+01:02:04,847 --> 01:02:05,727
+Ya da paylaşıyor mu?
+
+534
+01:02:05,727 --> 01:02:07,207
+Slide'ları henüz paylaşmıyor.
+
+535
+01:02:07,207 --> 01:02:15,907
+en son toku paylaşacakmış. Yani böyle vize dönemlerine yakın falan paylaşıyormuş galiba. Öyle anladım. Ben sormuştum geçen hafta da.
+
+536
+01:02:17,047 --> 01:02:34,487
+Onun haricinde az önce anlattığım matrisli şey vardı ya Ökled'in. Onu yaptık işte. Biz de bazı sort şeylerine bakmıştık ama genel anlamda bir giriş yaptık. Öyle çok fazla ilerleme yapmamıştık. Bu şekilde yani aslında.
+
+537
+01:02:34,487 --> 01:02:36,487
+Tamam.
+
+538
+01:02:36,487 --> 01:02:40,487
+Biz çünkü sortları falan yazdık hep böyle akış olarak falan yazmıştık.
+
+539
+01:02:40,487 --> 01:02:42,487
+O yüzden diyorum farklı şeyler işliyorlar.
+
+540
+01:02:42,487 --> 01:02:44,487
+O yüzden.
+
+541
+01:02:44,487 --> 01:02:47,487
+Aslında hocaya söyleyeyim bir şey.
+
+542
+01:02:47,487 --> 01:02:53,487
+Hani erkenden slaytları paylaşabilme ihtimali var mı bilmiyorum ama söyleyebiliriz aslında.
+
+543
+01:02:57,588 --> 01:03:10,747
+Peki şey gibi herhangi bir çalışma yeri falan söyledim ya ilk hafta şuradan çalışabilirsiniz derse buradan işte ne bileyim kaynaklarım var falan gibi.
+
+544
+01:03:12,588 --> 01:03:15,447
+Oraları hatırlamıyorum şimdi. Yanlış olmasın.
+
+545
+01:03:16,567 --> 01:03:22,667
+Ha tamamdır. Evet OBS'de yeni hocan yazıyor yani yeni grubun yazıyor.
+
+546
+01:03:22,667 --> 01:03:23,348
+Aha.
+
+547
+01:03:44,052 --> 01:03:50,391
+Neyse, en azından ders kayıtları var ya. Slides'ler var demek bu da. Çok da farklı bir şey değil aslında.
+
+548
+01:03:50,651 --> 01:03:51,331
+Doğru, evet.
+
+549
+01:05:08,563 --> 01:05:31,803
+Evet. Yavaş yavaş başlayabiliriz. Ha bu arada mesajları okuyalım. Beklerken. Notu almak sıkıntı oluyor. Ders öncesi işlenecek konu slide'ını paylaşabilir misiniz? Dersten sonra paylaşabilirim. Sebebi de dersten önce değişiklikler yapabiliyorum. O yüzden.
+
+550
+01:05:31,803 --> 01:05:35,484
+Tamam.
+
+551
+01:05:36,523 --> 01:05:40,084
+Yani dersin sonrasında ancak son hale oluşmuş oluyor.
+
+552
+01:05:40,203 --> 01:05:41,863
+Bazen de hataları falan da düzeltiyorum.
+
+553
+01:05:43,084 --> 01:05:45,244
+Değişen gruplar OBS'de görüntüleniyor.
+
+554
+01:05:45,244 --> 01:05:45,483
+Evet.
+
+555
+01:05:46,623 --> 01:05:48,203
+Ders programında bir değişiklik yok.
+
+556
+01:05:48,383 --> 01:05:49,683
+Yani aynı gün aynı saat.
+
+557
+01:05:50,324 --> 01:06:00,003
+Sadece grupların yani OBS terminolojisiyle şubelerdeki dersin şubelerindeki öğrencilerin listeleri değişti.
+
+558
+01:06:00,223 --> 01:06:00,903
+Güncellendi.
+
+559
+01:06:00,904 --> 01:06:04,144
+oradan OBS'den uygun şeyi bulabilirsiniz.
+
+560
+01:06:04,144 --> 01:06:06,644
+Zaten UZEM'e de yazıldı.
+
+561
+01:06:06,784 --> 01:06:14,663
+Yani şu anda güncel listelerle aslında ilgili hocaya OBS'de hangi hocadaysanız o grubun derslerine tanımlı olmanız da gerekiyor.
+
+562
+01:06:16,083 --> 01:06:19,263
+En azından ben geçen hafta olmayan arkadaşları görebiliyorum.
+
+563
+01:06:19,424 --> 01:06:20,744
+Farklı isimler var burada.
+
+564
+01:06:21,964 --> 01:06:23,403
+Evet peki.
+
+565
+01:06:24,364 --> 01:06:27,683
+Şimdi algoritma analizinin temelleri.
+
+566
+01:06:27,683 --> 01:06:43,523
+Algorithma analizinin tabi uzun ve büyük bir konu, derin bir konu. Biz şu anda biraz hani yüzeysel, bu sene bizim işimizi görecek kadar algoritmaları karşılaştırmamızı falan sağlayacak kadar bir detaylı bunları göreceğiz.
+
+567
+01:06:44,003 --> 01:06:52,243
+Algorithma analizi dersinde zaten adı üstünde, algorithma analizi dersinde bunun daha detaylı kısımlarını göreceksiniz ya da analizleri daha detaylı yapacaksınız.
+
+568
+01:06:52,244 --> 01:06:58,443
+Ama şimdi hızlı bir hatırlatma ya da hızlı bir ileriye adresleme de yapacağım sizler için.
+
+569
+01:07:00,063 --> 01:07:01,604
+Şöyle devam edelim.
+
+570
+01:07:01,663 --> 01:07:03,324
+Hocam ben bir şey sorabilir miyim?
+
+571
+01:07:03,403 --> 01:07:04,044
+Girmeden önce.
+
+572
+01:07:05,523 --> 01:07:09,864
+Fatih Hoca'nın dersinde bir şey yap...
+
+573
+01:07:09,864 --> 01:07:10,523
+Yok pardon.
+
+574
+01:07:10,983 --> 01:07:14,144
+Fatih Hoca'nın dersinde bir saylibus vardı.
+
+575
+01:07:14,523 --> 01:07:18,123
+İşte 5. 6. hafta ödevler, 10. hafta ödev, 9. haftasından.
+
+576
+01:07:18,123 --> 01:07:23,343
+Bu ders için farklı mı yoksa ödev ve proje haftaları, vize haftası aynı mı ilerliyor?
+
+577
+01:07:23,504 --> 01:07:24,444
+Aynı, aynı, aynı.
+
+578
+01:07:25,163 --> 01:07:25,843
+Birebir aynı.
+
+579
+01:07:25,944 --> 01:07:28,683
+Ben ödev haftalarını açıklamıyorum dersin planında.
+
+580
+01:07:29,743 --> 01:07:32,803
+Sebebi de bazen ufak tefek kaymalar yaşayabiliyoruz.
+
+581
+01:07:32,883 --> 01:07:33,743
+Genel planımız o.
+
+582
+01:07:33,883 --> 01:07:34,043
+Evet.
+
+583
+01:07:34,763 --> 01:07:37,004
+Beşinci ve altıncı haftalarda ödevler başlayacak.
+
+584
+01:07:37,144 --> 01:07:39,703
+Hani bu dönem dediler ya Mart'ta şey yapmayın diye.
+
+585
+01:07:40,224 --> 01:07:41,583
+Bu nedenle Nisan'a kaydırma.
+
+586
+01:07:42,523 --> 01:07:43,343
+Ya da Mart sonu.
+
+587
+01:07:43,403 --> 01:07:44,323
+28 Mart'tı galiba.
+
+588
+01:07:44,483 --> 01:07:45,224
+Yalnız hatırlamıyorsam.
+
+589
+01:07:45,303 --> 01:07:46,583
+İlk ödevin veriliş tarihi olacak.
+
+590
+01:07:46,583 --> 01:08:06,983
+Bir de uygulama falan da yapmıyoruz bu dönem. O yüzden işte biraz değişik oldu diyelim. Mümkün olduğunca hızlı bir şekilde konuları aktarmaya gayret ediyorum. Bu sebeple uygulama saatlerinde kullanamadığımız için hep size adres diyorum. Hani buna bakın, bunları şey yapın diye.
+
+591
+01:08:06,983 --> 01:08:35,364
+hayır kontrol olmayacak kontroller uzaktan olacak diye kararlaştırıldı ama olur ki nisan ayında yok karar değiştirir hani güncelleme yapar o zaman değişir şu andaki durumumuz böyle hani direkt lapta böyle bir kontrol yapmamak canlı kontrol yapmamak ama eğer ki yok derse ki tamam yüz yüze de yapabilirsiniz bir şeyleri derse o zaman farklı bir kontrol sistemine de geçebiliriz şu anda onun için hiçbir şey söyleyemiyorum ancak 3 hafta sonra
+
+592
+01:08:35,363 --> 01:08:39,703
+Yani 3-3,5 hafta sonrası bunu söyleyebilir halde olacağız.
+
+593
+01:08:40,159 --> 01:08:43,239
+Peki, algoritma analizi ne demektir ya da nedir?
+
+594
+01:08:43,359 --> 01:08:50,540
+Algoritma analizi, bilgisayar bilimlerinde bir çalışma alanıdır aslına bakarsanız ve derin bir alandır, zor bir alandır.
+
+595
+01:08:51,120 --> 01:09:04,500
+Amacı da farklı çözüm yöntemlerinin performansı dediğimiz öz Türkçesiyle başarımı nedir ve bunları nasıl analiz edebiliriz ve bunları birbirleriyle nasıl kıyaslayabiliriz?
+
+596
+01:09:04,599 --> 01:09:07,479
+Bunun için araçlar sunan bir çalışma alanıdır.
+
+597
+01:09:07,899 --> 01:09:10,000
+Peki, biz algoritmayı neden analiz ediyoruz?
+
+598
+01:09:10,159 --> 01:09:16,799
+Bir, en basitinden bu algoritma performansı nedir sorusunun cevabını bulabilmek için.
+
+599
+01:09:16,899 --> 01:09:18,099
+Performans ne? Başarım.
+
+600
+01:09:18,219 --> 01:09:30,420
+Yani ne kadar başarılı, ne kadar iyi çalışıyor, ne kadar hızlı çalışıyor gibi ya da ne kadar hızlı sonuç üretebiliyor gibi soruları cevaplayabilmek adına bir algoritmanın performansını ölçmek isteriz.
+
+601
+01:09:30,420 --> 01:09:32,380
+Bununla birlikte tek bir yöntem değil.
+
+602
+01:09:32,599 --> 01:09:39,420
+İşte biraz önce dosyalarda ya da mektuplarda kelime sayma ya da kelime arama örneğini vermiştik.
+
+603
+01:09:39,419 --> 01:09:44,159
+bunu çözen farklı farklı yöntemler var ve bunları bir şekilde karşılaştırabilmem lazım.
+
+604
+01:09:44,399 --> 01:09:58,119
+Mesela bir tanesi 166 saat sürerken bir tanesi aynı şartlar altında, aynı mesela işletim ortamında 20 saniye civarı bir şey sürüyor.
+
+605
+01:09:58,119 --> 01:10:01,380
+Şimdi bu ikisini karşılaştırabilmemizi sağlıyor.
+
+606
+01:10:01,459 --> 01:10:03,299
+Hangisinin daha performanslı olduğunu.
+
+607
+01:10:03,299 --> 01:10:22,439
+ya da mevcut bir algoritma çözümümüz var. Bunun daha iyisi mümkün mü? Ya da elimizdeki çözüm olabilecek çözümlerin en iyisi mi değil mi? Bunu ortaya koymak için de algoritmalarımızı analiz ederiz.
+
+608
+01:10:22,439 --> 01:10:36,779
+Peki, şimdi diyelim ki benim elimde bir problem var. Bu problemi de çözen iki farklı algoritma var. İkisi de aynı derken bu probleme çözüm üretiyor ve sonucu çözümü ortaya koyabiliyor.
+
+609
+01:10:37,419 --> 01:10:40,539
+Acaba hangisi daha iyi? Ben bunu nasıl karşılaştırabilirim?
+
+610
+01:10:40,539 --> 01:10:50,059
+Burada temelde elimizde iki tane yöntem var. Bir tanesi teorik analiz yapmak, ikincisi de empirik analiz yapmak.
+
+611
+01:10:50,059 --> 01:11:08,219
+Şimdi tersten gideceğiz. İlk olarak empirik yöntem ne demektir? Empirik gözlem demek, gözleme dayalı yöntem demek. Gözleme dayalı yöntemle algoritma analizi nasıl yapılır? Bu daha basit ve ilkel bir yöntem diyebiliriz.
+
+612
+01:11:08,219 --> 01:11:08,919
+Şimdi ne yapacağız?
+
+613
+01:11:09,040 --> 01:11:10,299
+Algoritmamızı tasarladık.
+
+614
+01:11:10,419 --> 01:11:16,979
+Ya da iki tane algoritmamız vardı ya bunları tasarladık ve bir programlama diliyle bunları gerçekleştirdik.
+
+615
+01:11:16,979 --> 01:11:22,759
+Yani implementasyonlarını yaptık, çalıştırdık ve işletim sürelerini karşılaştırdık.
+
+616
+01:11:22,839 --> 01:11:30,399
+Yani şöyle ki birinci algoritma çalışırken kronometreye bastık, çalıştı, işledi, işledi, işledi, sonucu üretti, durdu.
+
+617
+01:11:30,699 --> 01:11:34,020
+Durduğu anda kronometreye bir daha bastık, dedik ki şu kadar süre çalıştı.
+
+618
+01:11:34,479 --> 01:11:35,559
+İşletim süresi budur.
+
+619
+01:11:35,999 --> 01:11:37,380
+İkincisi için de aynısını yaptık.
+
+620
+01:11:37,380 --> 01:11:38,659
+işletim süresi budur.
+
+621
+01:11:39,120 --> 01:11:44,540
+Baktım işte biri 20 saniyede sonucu üretmiş, öbürü 140 saniyede sonucu üretmiş.
+
+622
+01:11:44,540 --> 01:11:46,939
+O zaman diyorum ki birinci algoritma daha başarılıdır.
+
+623
+01:11:47,120 --> 01:11:53,880
+Evet güzel ama burada bu karşılaştırmayı yapmanın çeşitli zorlukları var ve çeşitli sıkıntıları var.
+
+624
+01:11:54,700 --> 01:12:00,600
+Şöyle ki mesela bir, algoritmalar nasıl gerçekleştirildi, nasıl kodlandı, kodlama kalitesi neydi?
+
+625
+01:12:01,043 --> 01:12:06,043
+aslında bizim işletim süresini karşılaştırma yaptığımızda yaptığımız şey
+
+626
+01:12:06,043 --> 01:12:08,823
+implementasyonların karşılaştırması.
+
+627
+01:12:08,984 --> 01:12:13,203
+Algoritmaların değil, algoritmaların kodlanmış hallerinin karşılaştırması oluyor.
+
+628
+01:12:13,203 --> 01:12:17,564
+Ve biliyoruz ki kodlama programcının stiline çok sıkı bir şekilde bağlı
+
+629
+01:12:17,564 --> 01:12:22,623
+ve algoritmanın performansını düzgün bir şekilde ölçmemize de engel olabilir.
+
+630
+01:12:22,804 --> 01:12:27,703
+Yani çok daha efektif yazabileceği bir kodu, çok daha kötü yazabilir bir kişi, bir programcı.
+
+631
+01:12:27,703 --> 01:12:33,703
+Bu nedenle de aslında biz gerçekleştirmeleri yani implementasyonları karşılaştırmış oluruz.
+
+632
+01:12:34,023 --> 01:12:36,624
+Bununla beraber kullanılan bilgisayar da sonucu etkileyebilir.
+
+633
+01:12:36,764 --> 01:12:40,783
+Şöyle ki birinci yöntemi kullanırken hiçbir proses çalışmıyordur.
+
+634
+01:12:40,843 --> 01:12:42,724
+Hiçbir trafik network da yoktur bir şeydir.
+
+635
+01:12:43,384 --> 01:12:50,463
+Sadece hani o işlemcide sizin algoritmanızın koştuğu program daha uzun süre çalışmıştır.
+
+636
+01:12:50,944 --> 01:12:56,843
+Ama ikinciyi belki çalıştırırken pek çok farklı proses de aynı anda çalışıyordu.
+
+637
+01:12:56,843 --> 01:12:58,703
+bellekte
+
+638
+01:12:58,703 --> 01:13:01,064
+paging mekanizması yapması gerekiyordu
+
+639
+01:13:01,064 --> 01:13:03,023
+o nedenle çok fazla disk gelişimi
+
+640
+01:13:03,023 --> 01:13:04,743
+falan filan da yaptı bilgisayarınız
+
+641
+01:13:04,743 --> 01:13:07,143
+işletim sistemi üzerinden bu nedenle de
+
+642
+01:13:07,143 --> 01:13:08,844
+çok daha fazla zaman kaybetti
+
+643
+01:13:08,844 --> 01:13:11,243
+ve başka network'teki trafik yüzünden
+
+644
+01:13:11,243 --> 01:13:12,883
+bilmem nedenle zaman kaybetmiş
+
+645
+01:13:12,883 --> 01:13:14,404
+olabilir bu nedenle de
+
+646
+01:13:14,404 --> 01:13:16,724
+kullandığınız bilgisayar ve hatta o anda çalışan
+
+647
+01:13:16,724 --> 01:13:18,283
+bütün her şey eş zamanlı olarak
+
+648
+01:13:18,283 --> 01:13:20,124
+sizin sonucunuzu etkileyecektir
+
+649
+01:13:20,124 --> 01:13:23,143
+o zaman bu çok da
+
+650
+01:13:23,143 --> 01:13:25,243
+hani efektif
+
+651
+01:13:25,243 --> 01:13:26,423
+ya da çok da böyle
+
+652
+01:13:26,423 --> 01:13:29,143
+fair diyebileceğimiz
+
+653
+01:13:29,143 --> 01:13:31,003
+makul
+
+654
+01:13:31,003 --> 01:13:33,103
+karşılanabilecek bir karşılaştırma
+
+655
+01:13:33,103 --> 01:13:35,103
+yöntemi değil ya da kıyas yöntemi
+
+656
+01:13:35,103 --> 01:13:36,843
+değil. Çok
+
+657
+01:13:36,843 --> 01:13:39,003
+hani fazla değişkenden
+
+658
+01:13:39,003 --> 01:13:41,243
+etkilenebiliyor. Peki o zaman
+
+659
+01:13:41,243 --> 01:13:42,263
+benim bir şekilde
+
+660
+01:13:42,263 --> 01:13:44,963
+bir bilgisayarın özelliklerinden
+
+661
+01:13:44,963 --> 01:13:47,083
+bağımsız olarak, kullandığım
+
+662
+01:13:47,083 --> 01:13:49,203
+verinin özelliklerinden bağımsız olarak
+
+663
+01:13:49,203 --> 01:13:49,983
+ve
+
+664
+01:13:49,983 --> 01:13:53,623
+programlama dilinin avantaj ya da dezavantajlarından
+
+665
+01:13:53,623 --> 01:13:54,843
+bağımsız olarak bir şekilde
+
+666
+01:13:54,843 --> 01:13:57,363
+algoritmamın yani teorik tasarımın
+
+667
+01:13:57,363 --> 01:13:58,783
+performansını
+
+668
+01:13:58,783 --> 01:14:00,843
+ölçebiliyor ya da hesaplayabiliyor
+
+669
+01:14:00,843 --> 01:14:02,303
+olmam gerekiyor.
+
+670
+01:14:02,843 --> 01:14:05,103
+Kaldı ki mesela derleyicilerin optimizasyonları
+
+671
+01:14:05,103 --> 01:14:05,323
+var.
+
+672
+01:14:06,543 --> 01:14:08,843
+Derlerken optimizasyonlar birinde
+
+673
+01:14:08,843 --> 01:14:10,243
+açıktır, birinde kapalıdır.
+
+674
+01:14:10,663 --> 01:14:12,963
+Birindeki işletim sisteminde farklı optimizasyonlar
+
+675
+01:14:12,963 --> 01:14:14,523
+yapmıştır. Bunlar bile
+
+676
+01:14:14,523 --> 01:14:16,904
+algoritmanın implementasyonunu
+
+677
+01:14:16,904 --> 01:14:17,764
+değiştireceği için
+
+678
+01:14:17,764 --> 01:14:20,663
+gözlemle yani empirik yöntemle
+
+679
+01:14:20,663 --> 01:14:22,703
+başarım karşılaştırması yapmak
+
+680
+01:14:22,703 --> 01:14:24,623
+çok da tercih edilen
+
+681
+01:14:24,624 --> 01:14:26,364
+bir yol değildir.
+
+682
+01:14:26,764 --> 01:14:29,023
+Ancak çok karmaşık kişilerde ya da
+
+683
+01:14:29,023 --> 01:14:30,904
+işin içinden
+
+684
+01:14:30,904 --> 01:14:32,864
+çıkamadığınız elinizde sadece belli
+
+685
+01:14:32,864 --> 01:14:35,043
+bir veri var ve sadece o veri de kullanacaksınız.
+
+686
+01:14:35,204 --> 01:14:36,943
+Belki o zaman mümkün olduğunca
+
+687
+01:14:36,943 --> 01:14:37,803
+eşit şartlarda
+
+688
+01:14:37,803 --> 01:14:40,564
+karşılaştırmaya gayret edebilirsiniz.
+
+689
+01:14:42,144 --> 01:14:42,784
+Ya da
+
+690
+01:14:42,784 --> 01:14:44,804
+çok fazla sayıda karşılaştırma
+
+691
+01:14:44,804 --> 01:14:46,784
+yapıp ortalamasını alabilirsiniz ki biraz
+
+692
+01:14:46,784 --> 01:14:48,724
+böyle tekil kötü örneklerin
+
+693
+01:14:48,724 --> 01:14:50,963
+etkisini azaltmak
+
+694
+01:14:50,963 --> 01:14:52,644
+adına ama yine de iyi bir yöntem değil.
+
+695
+01:14:52,723 --> 01:14:53,443
+Peki ne yapacağız?
+
+696
+01:14:54,624 --> 01:15:01,984
+Şimdi yapmamız gereken şey teorik algoritma analizine yönelmek.
+
+697
+01:15:02,443 --> 01:15:09,543
+Yani algoritma analizinde bir algoritmanın performansını gerçekleştirme, implementasyon,
+
+698
+01:15:10,543 --> 01:15:18,264
+çalışılan ortam ya da veriden bağımsız olarak değerlendirmeye yarayan matematiksel yöntemleri kullanmamız gerekecek.
+
+699
+01:15:18,264 --> 01:15:30,603
+Şimdi algoritma analizinde temel şu belli bir çözümün etkinliğini ne kadar etkin olduğunu belirlemek için önce içindeki önemli işlemlerin sayısı belirlenir.
+
+700
+01:15:30,603 --> 01:15:32,543
+Yani maliyet noktaları belirlenir.
+
+701
+01:15:33,003 --> 01:15:42,603
+Sonrasında da bu maliyet noktaları acaba girdi boyutu büyüdüğünde yani çok daha fazla girdi ile çalıştığında ne oluru göstermek adına
+
+702
+01:15:42,603 --> 01:15:54,424
+büyüme fonksiyonları dediğimiz growth function'lar kullanılarak onların mertebesine kıyaslanarak ne kadar etkin olup olmadıkları ifade edilir.
+
+703
+01:15:54,424 --> 01:15:55,583
+Şöyle.
+
+704
+01:15:56,148 --> 01:16:25,027
+örnekler verelim. Şimdi çok en basitten başlayalım. Algoritmaların işletim süresi nedir? Bizim algoritmamızda yaptığımız her bir işlemin bir maliyeti vardır. Örneğin bir atamanın bir maliyeti, bir aritmetik işlemin bir maliyeti. Tabi toplama başka, çarpma başka. Bütün işlemler başka maliyette. İşlemcinin instruction setine göre, kaç clock cycle tuttuğu, hangi registerlardan ne kadar okuması gerektiği, yazması gerektiğiyle değişir buradaki toplam maliyet.
+
+705
+01:16:26,148 --> 01:16:32,828
+bir karar mekanizmasındaki karşılaştırma ve sonrasında yapılacak dallanma farklı bir maliyettir.
+
+706
+01:16:33,148 --> 01:16:37,048
+Bir döngünün adım adım işletilmesi kontrolü başka bir maliyettir gibi.
+
+707
+01:16:37,048 --> 01:16:44,807
+Ve özetle bunların hepsi aslında bir işlemci için sabit ama ölçülebilen ve belirli bir süre gerektirir.
+
+708
+01:16:45,228 --> 01:16:50,648
+Şöyle ki mesela count eşittir, count artı bir şeklinde bir atamamız var.
+
+709
+01:16:50,828 --> 01:16:53,107
+Yani kod karşılığı da böyle noktalı bir gülde de bitirdim.
+
+710
+01:16:54,207 --> 01:16:56,027
+Bu işlemi yapmak ne demektir?
+
+711
+01:16:56,148 --> 01:17:04,247
+Sen bu değişkeni al, bu değişkenin değerine sabit bir değeri ekle, sonra da bunu değişkenin olduğu göre tekrar yaz.
+
+712
+01:17:04,747 --> 01:17:06,308
+Böyle birkaç tane iş yapıyoruz aslında.
+
+713
+01:17:06,527 --> 01:17:12,527
+Hani ClockCycle ya da işlemci komut setindeki komutlar açısından baktığımızda.
+
+714
+01:17:12,527 --> 01:17:17,148
+Ama toplamda bu süre aslında bizim için sabit kabul edilebilir.
+
+715
+01:17:17,267 --> 01:17:20,808
+Toplam kaç ClockCycle'da yapacağı bu işi ölçülebilir.
+
+716
+01:17:21,508 --> 01:17:25,408
+Mesela count extra, count artı 1. Bunun maliyetine cost 1 diyelim.
+
+717
+01:17:26,148 --> 01:17:30,188
+bir alt satırda da sum eşittir sum artı count diye bir işlem var.
+
+718
+01:17:30,308 --> 01:17:32,648
+Burada da ne yapıyor?
+
+719
+01:17:33,408 --> 01:17:41,588
+Bir değişkeni alıyor, başka bir değişkenin değeriyle beraber topluyor, elde ettiği sonucu ilk değişkenin olduğu göze tekrar yazıyor.
+
+720
+01:17:42,948 --> 01:17:46,027
+Burada bir sabitle toplamıştı, burada bir değişkenle topladı.
+
+721
+01:17:46,027 --> 01:17:52,387
+Ama bu değişken farklı boyutlarda olabilir, onların her birinde farklı maliyeti olacaktır, okuma maliyeti olacaktır.
+
+722
+01:17:52,387 --> 01:17:56,427
+O nedenle buna da başka bir maliyettir anlamında cost 2 diyelim.
+
+723
+01:17:56,527 --> 01:18:04,927
+O zaman ben sadece iki işlem yaptıysam, akışımda şöyle gördüğünüz şu iki işlemi yaptıysam toplam maliyetim üzerini çizdik.
+
+724
+01:18:04,927 --> 01:18:07,287
+Şöyle silebiliyor muyuz?
+
+725
+01:18:09,648 --> 01:18:11,088
+Nereden çileceğiz?
+
+726
+01:18:11,707 --> 01:18:12,407
+Silgi diyelim.
+
+727
+01:18:13,787 --> 01:18:14,747
+Şurayı sildik.
+
+728
+01:18:15,327 --> 01:18:15,567
+Tamam.
+
+729
+01:18:17,627 --> 01:18:21,287
+Buradan da kaleme geri geldik.
+
+730
+01:18:21,287 --> 01:18:50,028
+Toplam maliyetimiz C1 artı C2 olacaktır. Tamam mı? Sadece iki tane işlemimiz var. Burada sabit C1 artı cost1 artı cost1 kadar bir maliyetimiz olacaktır. Bu algoritmanın çalışması için bu kadar bir süreye ihtiyacımız var. Peki. Diyelim ki elimizde bir karşılaştırma var. Yani bir if var. Bunun maliyetini nasıl hesaplarız? Şimdi burada bir karşılaştırma var. Bir koşul var. Değil mi? Bu koşul bize sabit bir maliyet getiriyor. Cost1. Kaç kere yapıyoruz bunu? Bir kere.
+
+731
+01:18:50,027 --> 01:19:19,027
+Şimdi eğer doğruysa true kolu burası biliyorsunuz şunları yapacak bu ne demektir başka bir maliyet bir kere yapacak eğer false yani bu şart yanlışsa o zaman buradaki kol çalışacak ama ya bu çalışacak ya bu çalışacak bunu biliyoruz ikisi de aynı anda çalışamaz orada cost 3 diyelim bu da tek bir tekrar ben bunun buradaki parçanın toplam maliyetini yani akış olarak gösterdiğimizde
+
+732
+01:19:19,027 --> 01:19:20,707
+İşte şurada bir if var.
+
+733
+01:19:22,447 --> 01:19:25,467
+Ve burada en küçüktür sıfır kontrolü yapılıyor.
+
+734
+01:19:26,147 --> 01:19:27,327
+Burada da true dedik.
+
+735
+01:19:27,947 --> 01:19:32,127
+True ise işte a eşittir eksi n dedim.
+
+736
+01:19:32,807 --> 01:19:33,347
+İdare edin.
+
+737
+01:19:33,507 --> 01:19:36,207
+Ufak şey mouse ile yazdığım için hızlı yazıyorum.
+
+738
+01:19:37,227 --> 01:19:39,907
+Kısaltarak a, b, s, value falan yazmadım.
+
+739
+01:19:39,907 --> 01:19:43,187
+Eğer yanlışsa da false, b.
+
+740
+01:19:44,367 --> 01:19:47,767
+Yanlışsa da a eşittir n.
+
+741
+01:19:49,027 --> 01:19:51,027
+şöyle bir akışımız var diyelim.
+
+742
+01:19:53,027 --> 01:19:54,027
+Tamam.
+
+743
+01:19:54,027 --> 01:19:55,027
+Bu...
+
+744
+01:19:57,684 --> 01:19:58,383
+Neden böyle?
+
+745
+01:19:59,164 --> 01:20:01,083
+Yani büyük ihtimalle powerpoint'te bir sıkıntı var.
+
+746
+01:20:01,184 --> 01:20:02,383
+Çünkü farklı mouse'larla deneyim.
+
+747
+01:20:02,463 --> 01:20:03,023
+Hepsini de yapıyor.
+
+748
+01:20:03,343 --> 01:20:04,963
+Kablolu mouse'lıyım şu anda yine yapıyor.
+
+749
+01:20:05,423 --> 01:20:06,723
+Toplam maliyetimiz nedir?
+
+750
+01:20:06,843 --> 01:20:09,323
+Buradaki karşılaştırma her zaman için mutlaka yapılacak.
+
+751
+01:20:09,484 --> 01:20:10,783
+Cost 1 artı.
+
+752
+01:20:12,823 --> 01:20:13,803
+Ya bu ya bu çalışacak.
+
+753
+01:20:13,923 --> 01:20:15,063
+Yani ya bu koldan akacak.
+
+754
+01:20:15,343 --> 01:20:16,383
+Ya bu koldan akacak.
+
+755
+01:20:16,483 --> 01:20:18,383
+O zaman ya bunun maliyeti ya da bunun maliyeti.
+
+756
+01:20:18,524 --> 01:20:19,343
+Hangisi daha büyük?
+
+757
+01:20:19,524 --> 01:20:21,024
+Cost 2 ya da cost 3 bilmiyorum.
+
+758
+01:20:21,563 --> 01:20:23,623
+Ama bunların hangisi daha büyükse onun maliyeti.
+
+759
+01:20:24,123 --> 01:20:24,543
+Gelecek.
+
+760
+01:20:24,723 --> 01:20:24,883
+Tamam.
+
+761
+01:20:24,883 --> 01:20:26,483
+Onu da cost k diyelim.
+
+762
+01:20:26,483 --> 01:20:28,323
+hani cost ck diysek
+
+763
+01:20:28,323 --> 01:20:30,204
+c1 artı ck. ck eşittir
+
+764
+01:20:30,204 --> 01:20:31,983
+max c2 c3. Bu şekilde
+
+765
+01:20:31,983 --> 01:20:34,663
+bir if komutunun maliyetini hesaplayabiliriz.
+
+766
+01:20:35,443 --> 01:20:36,623
+Basit bir döngümüz olsun.
+
+767
+01:20:37,263 --> 01:20:38,663
+Burada bir while döngüsü görüyorsunuz.
+
+768
+01:20:38,684 --> 01:20:40,263
+i eşittir 1 sam eşittir 0.
+
+769
+01:20:40,503 --> 01:20:44,684
+Bu atama sabit bir cost.
+
+770
+01:20:44,823 --> 01:20:45,404
+Başka bir cost.
+
+771
+01:20:46,283 --> 01:20:48,323
+Cost 2. Birer kere yapıyoruz.
+
+772
+01:20:48,904 --> 01:20:50,603
+Sonra i küçük eşittir
+
+773
+01:20:50,603 --> 01:20:52,583
+n kontrolü. Bu bize bir maliyet
+
+774
+01:20:52,583 --> 01:20:54,143
+getiriyor ve bunu
+
+775
+01:20:54,143 --> 01:20:56,463
+n kere yapacağız ve n artı
+
+776
+01:20:56,463 --> 01:20:58,783
+olup da çıkacağımız için n artı
+
+777
+01:20:58,783 --> 01:21:00,583
+bir kere ben bu kontrolü yapmam
+
+778
+01:21:00,583 --> 01:21:02,383
+gerekiyor. Yani cost 3 maliyetine
+
+779
+01:21:02,383 --> 01:21:04,044
+n artı bir kere maruz kalacak.
+
+780
+01:21:05,184 --> 01:21:06,443
+Bunun içinde bu döngünün
+
+781
+01:21:06,443 --> 01:21:08,323
+bloğu içinde de i eşitleri
+
+782
+01:21:08,323 --> 01:21:10,724
+artı bir sam eşitli sam artı i c4 ve c5
+
+783
+01:21:10,724 --> 01:21:12,184
+sabit costlarımız var.
+
+784
+01:21:12,764 --> 01:21:14,603
+Maliyetlerimiz. Bunlar kaçar
+
+785
+01:21:14,603 --> 01:21:16,603
+kere çalışacak? Döngüyü n artı
+
+786
+01:21:16,603 --> 01:21:18,484
+bir kere kontrol edeceğim ama içi mutlaka
+
+787
+01:21:18,484 --> 01:21:20,103
+n kere dönecek buradaki
+
+788
+01:21:20,103 --> 01:21:22,343
+şarttan dolayı. O zaman ben
+
+789
+01:21:22,343 --> 01:21:24,343
+buradaki tekrar sayısında n olduğunu
+
+790
+01:21:24,343 --> 01:21:26,364
+söyleyebilirim. Şimdi ben bunun hepsini
+
+791
+01:21:26,364 --> 01:21:28,463
+yazdığımda cost1 bir tane cost1
+
+792
+01:21:28,463 --> 01:21:30,523
+artı bir tane cost2
+
+793
+01:21:30,523 --> 01:21:32,364
+artı n artı
+
+794
+01:21:32,364 --> 01:21:34,544
+bir tane cost3 artı
+
+795
+01:21:34,544 --> 01:21:36,603
+n tane cost4 artı
+
+796
+01:21:36,603 --> 01:21:38,304
+n tane cost5. Ne oldu?
+
+797
+01:21:38,484 --> 01:21:40,283
+Benim toplam maliyetim tam olarak bu.
+
+798
+01:21:40,944 --> 01:21:42,663
+Ben bu kadar süre çalışmak zorundayım.
+
+799
+01:21:42,963 --> 01:21:44,184
+İşletmek zorundayım bu
+
+800
+01:21:44,184 --> 01:21:46,503
+algoritmayı. Şuradaki kodları.
+
+801
+01:21:46,944 --> 01:21:48,603
+O zaman şunu söyleyebilirim.
+
+802
+01:21:48,643 --> 01:21:50,344
+Bunlar sabit sabit. Şurada
+
+803
+01:21:50,344 --> 01:21:52,084
+n'e bağlı bir cost3 var.
+
+804
+01:21:52,584 --> 01:21:54,463
+Burada n'e bağlı bir cost4
+
+805
+01:21:54,463 --> 01:21:56,143
+var. Burada da n'e bağlı bir cos
+
+806
+01:21:56,143 --> 01:21:58,703
+5 var. Yani aslında n parantezinde
+
+807
+01:21:58,703 --> 01:22:00,084
+c3
+
+808
+01:22:00,084 --> 01:22:02,364
+artı c4
+
+809
+01:22:02,364 --> 01:22:04,864
+artı c5.
+
+810
+01:22:06,003 --> 01:22:06,383
+Şimdi bu
+
+811
+01:22:06,383 --> 01:22:08,223
+değer her neyse ne? Sabit.
+
+812
+01:22:08,424 --> 01:22:10,424
+Yani ama n ile
+
+813
+01:22:10,424 --> 01:22:12,243
+oransal olarak
+
+814
+01:22:12,243 --> 01:22:13,963
+bağlı. Yani n mertebesinde.
+
+815
+01:22:14,423 --> 01:22:16,083
+Şunu da açıkça söyleyebiliriz burada.
+
+816
+01:22:16,663 --> 01:22:18,184
+Bu algoritma için yani buradaki
+
+817
+01:22:18,184 --> 01:22:20,503
+basit döngü için gereken süre
+
+818
+01:22:20,503 --> 01:22:22,624
+işletim süresi
+
+819
+01:22:22,624 --> 01:22:24,383
+girdi boyutu n ile
+
+820
+01:22:24,383 --> 01:22:25,723
+doğru orantılıdır.
+
+821
+01:22:26,283 --> 01:22:27,963
+N 10 ise
+
+822
+01:22:27,963 --> 01:22:30,243
+sabit çarpı
+
+823
+01:22:30,243 --> 01:22:32,044
+10 kadar süre çalışacaktır.
+
+824
+01:22:32,143 --> 01:22:34,264
+N 1000 ise sabit çarpı
+
+825
+01:22:34,264 --> 01:22:35,603
+1000 kadar çalışacaktır.
+
+826
+01:22:36,264 --> 01:22:38,203
+N 1 milyonsa sabit
+
+827
+01:22:38,203 --> 01:22:39,904
+çarpı 1 milyon kadar çalışacaktır.
+
+828
+01:22:39,904 --> 01:22:41,583
+Sonuçta hep çarpı N
+
+829
+01:22:41,583 --> 01:22:43,624
+orantısında olacaktır. Bu yüzden de N ile
+
+830
+01:22:43,624 --> 01:22:45,923
+doğru orantılıdır diyebilirim.
+
+831
+01:22:47,283 --> 01:22:47,684
+Eçiçe
+
+832
+01:22:47,684 --> 01:22:49,743
+döngülerimiz olsaydı, hadi bunu 2'ye
+
+833
+01:22:49,743 --> 01:22:51,923
+çıkartalım. Yine sabit bir
+
+834
+01:22:51,923 --> 01:22:53,544
+atama maliyeti, cost 1.
+
+835
+01:22:53,544 --> 01:22:55,624
+sabit bir atama maliyeti cost 2
+
+836
+01:22:55,624 --> 01:22:57,064
+n artı bir kere
+
+837
+01:22:57,064 --> 01:22:59,624
+kontrol o kontrolün içinde
+
+838
+01:22:59,624 --> 01:23:01,583
+n kere atama
+
+839
+01:23:01,583 --> 01:23:02,704
+sonra
+
+840
+01:23:02,704 --> 01:23:04,963
+burada da
+
+841
+01:23:04,963 --> 01:23:07,044
+n çarpı n artı bir kere
+
+842
+01:23:07,044 --> 01:23:09,484
+cost 5 çünkü burası n kere
+
+843
+01:23:09,484 --> 01:23:11,383
+dönüyor burası da n artı bir kere
+
+844
+01:23:11,383 --> 01:23:13,564
+kontrol edilecek n çarpı n artı bir
+
+845
+01:23:13,564 --> 01:23:15,484
+şu n şu n şu n şu n
+
+846
+01:23:15,484 --> 01:23:17,083
+bunun içinde de
+
+847
+01:23:17,083 --> 01:23:19,323
+burası da yine n kere gidecek ama
+
+848
+01:23:19,323 --> 01:23:21,064
+dışı da n kere döndüğü için
+
+849
+01:23:21,064 --> 01:23:23,323
+n çarpı n kere cost 6
+
+850
+01:23:23,323 --> 01:23:26,704
+yine en kere iç döngüden
+
+851
+01:23:26,704 --> 01:23:28,424
+en kere de dış döngüden gelen
+
+852
+01:23:28,424 --> 01:23:30,223
+en çarpı en kere de cost 7
+
+853
+01:23:30,223 --> 01:23:32,503
+burada iç döngü
+
+854
+01:23:32,503 --> 01:23:34,544
+bitti dış döngü bitmedi
+
+855
+01:23:34,544 --> 01:23:36,823
+şurası yine en kere
+
+856
+01:23:36,823 --> 01:23:38,904
+çalışacak çünkü dıştaki döngünün
+
+857
+01:23:38,904 --> 01:23:39,943
+hala içindeyim
+
+858
+01:23:39,943 --> 01:23:42,083
+şuraya kadar olan
+
+859
+01:23:42,083 --> 01:23:44,083
+döngünün içindeyim
+
+860
+01:23:44,083 --> 01:23:46,963
+bu da cost 8 en kadar
+
+861
+01:23:46,963 --> 01:23:48,583
+en kere tekrarlanacak
+
+862
+01:23:48,583 --> 01:23:50,223
+toplam maliyet
+
+863
+01:23:51,028 --> 01:24:02,847
+cost 1 artı, cost 2 artı, n artı 1 tane, cost 3 artı, n tane cost 4 artı diye giderken burada n kare cost 5 artı n cost 5, n kare cost 6, n kare cost 7'yi görüyorum.
+
+864
+01:24:02,847 --> 01:24:18,887
+Demek ki burada n kare çarpı cost x şeklinde bir polinomda ya da fonksiyonda bir bileşen var. Bu bileşen de n kare ile mertebesel olarak orantılıdır demektir.
+
+865
+01:24:18,887 --> 01:24:28,447
+Genel öngörü olarak basit bir şekilde özetleyecek olursak buradaki maliyetleri
+
+866
+01:24:28,447 --> 01:24:33,627
+Eğer elimizde bir döngü varsa, algoritmamızda akışımızda bir döngü varsa
+
+867
+01:24:33,627 --> 01:24:42,847
+Döngünün işletim süresi en fazla, iterasyon sayısı kere döngü içindekilerin toplam işletim süresidir
+
+868
+01:24:42,847 --> 01:24:45,687
+Hani n çarpı cost bilmem ne diyoruz ya budur
+
+869
+01:24:45,687 --> 01:24:58,767
+iç içe döngülerde ise en içte kalan döngü bloğundaki komutların toplam işletim süresinin tüm döngü iterasyonu sayısına çarpımını hesaplamamız gerekir.
+
+870
+01:24:58,767 --> 01:25:05,108
+Şöyle n çarpı n artı bir demiştik hatırlarsınız.
+
+871
+01:25:06,688 --> 01:25:08,767
+Şuradaki n artı bir kontrol var.
+
+872
+01:25:08,987 --> 01:25:10,587
+n artı bir tane kontrol yapacağız.
+
+873
+01:25:11,127 --> 01:25:15,028
+Ama buradaki blokta da n kere geziyoruz.
+
+874
+01:25:15,028 --> 01:25:17,587
+O yüzden n çarpı n artı bir kere kontrol
+
+875
+01:25:17,587 --> 01:25:21,468
+Burada da n kere bunu, n kere bunu yapacağız
+
+876
+01:25:21,468 --> 01:25:27,307
+Ama dışta da n kere döndüğümüz için n kere n işlem, n kere n işlem yapmam gerekiyor
+
+877
+01:25:27,307 --> 01:25:29,667
+O yüzden de n kare mertebesinde
+
+878
+01:25:29,667 --> 01:25:34,267
+Bu durumda iç içe üçte öne döngüm olsaydı n çarpı n çarpı n
+
+879
+01:25:34,267 --> 01:25:43,028
+Hepsinin n ile bağlantılı olduğunu düşündüğümüzde n küp mertebesinde bir toplam işlem süresine ihtiyaç duyardım
+
+880
+01:25:43,028 --> 01:25:46,468
+[öğrenci] arda komutlarınız varsa basitçe onları topluyoruz.
+
+881
+01:25:46,547 --> 01:25:50,267
+Cost 1 artı, cost 2 artı, cost 8 artı, cost 9 şeklinde.
+
+882
+01:25:51,047 --> 01:25:53,007
+Bunun toplamı neyse odur.
+
+883
+01:25:53,627 --> 01:25:55,587
+Toplam, süre ve bir sabittir aslında.
+
+884
+01:25:56,627 --> 01:25:58,288
+Ve bir karar mekanizmanız varsa
+
+885
+01:25:58,288 --> 01:26:05,987
+if bloğunda yani true kolundaki ve false kolundaki işlemlerden hangisi daha çok zaman gerektiriyorsa onu alırsınız.
+
+886
+01:26:06,667 --> 01:26:07,408
+Maksimumlarını.
+
+887
+01:26:07,768 --> 01:26:08,787
+Hangisi maksimumsak.
+
+888
+01:26:08,787 --> 01:26:17,547
+Bununla beraber karşılaştırma için gereken işlem süresini de üzerine koyarız ve olabilecek en uzun işletim süresini elde ederiz.
+
+889
+01:26:17,627 --> 01:26:18,867
+Yani bunun üzerine çıkamaz.
+
+890
+01:26:19,567 --> 01:26:24,427
+Bundan daha uzun süre çalışamaz diye bir çıkarım yapabiliriz.
+
+891
+01:26:24,427 --> 01:26:31,687
+Şimdi geldik algoritmalarımızın büyüme oranlarına.
+
+892
+01:26:32,968 --> 01:26:34,367
+Ne demek büyüme oranı?
+
+893
+01:26:34,367 --> 01:26:50,567
+problemin boyutu büyüdükçe bir diğer de işte problemin girdi sayısı arttıkça acaba benim bu problemi çözmek için işletmem gereken toplam süre ne kadar artıyor?
+
+894
+01:26:50,567 --> 01:27:00,227
+Ne kadar büyüyor? Hangi oranda büyüyor? Bunu ortaya koymaya ya da bunu ifade etmeye algoritmanın büyüme oranı adını veriyoruz.
+
+895
+01:27:00,227 --> 01:27:05,287
+Şimdi slide üzerinden de tekrar devam edelim.
+
+896
+01:27:06,167 --> 01:27:15,347
+Bir algoritmanın sonuç üretmek için gereken zaman gereksinimi problemin boyutunun bir fonksiyonu olarak ölçülür.
+
+897
+01:27:15,427 --> 01:27:16,287
+Ne demektir bu?
+
+898
+01:27:16,528 --> 01:27:24,287
+n tane n sayıda girdi varsa o zaman ben bunu bir şekilde eğer bir zamansa t ile ifade edeyim.
+
+899
+01:27:24,287 --> 01:27:33,947
+tn şeklinde bir fonksiyon olarak ifade edip n'e bağlı bir fonksiyonu çözerek bu boyutu ifade etmek isterim.
+
+900
+01:27:34,507 --> 01:27:35,667
+Tabi uygulamaya bağımlı.
+
+901
+01:27:37,528 --> 01:27:43,227
+Örneğin elinizde bir dizi var, sayı dizisi ve bunları sıralamak istiyorsunuz küçükten büyüğe.
+
+902
+01:27:43,227 --> 01:27:48,707
+Kaç elemanınız varsa o kadar sıralanacak elemanınız var demektir.
+
+903
+01:27:48,948 --> 01:28:01,347
+ya da bir kullanıcı listeniz var. O listenin içinde belli bir kişiyi arıyorsunuz. Arama yapılacak listedeki toplam kullanıcı sayısı sizin aslında probleminizin boyutunu oluşturacaktır.
+
+904
+01:28:01,347 --> 01:28:18,607
+Buna n diyelim. Diyelim ki bir ağ algoritmam var ve bu problemi çözüyor. Bu problemi çözmek için n² bölü 5 birim zaman gerektiriyor. Yani 1 bölü 5 n² kadar zaman gerektiriyor.
+
+905
+01:28:18,948 --> 01:28:30,747
+Bir B algoritmam var. O da 5n zaman gerektiriyor. Böyle iki tane büyüme oranı tanımlanmış olsun.
+
+906
+01:28:30,747 --> 01:28:46,747
+Burada bizim için anlamamız gereken en önemli nokta problemin boyutuna göre yani n'e bağlı olarak algoritmanın zaman gereksiniminin hangi oranda büyüdüğüdür?
+
+907
+01:28:46,747 --> 01:28:49,628
+ya da ne kadar hızlı arttığıdır.
+
+908
+01:28:50,547 --> 01:28:53,047
+Şimdi A algoritmasına bakıyorum.
+
+909
+01:28:53,047 --> 01:29:00,047
+Boyuta bağlı olarak şuradan hemen rengi değiştirelim.
+
+910
+01:29:00,047 --> 01:29:01,128
+Mavi alalım.
+
+911
+01:29:01,927 --> 01:29:07,047
+n² mertebesinde birim zaman gerektirdiğini görüyorum.
+
+912
+01:29:07,867 --> 01:29:12,808
+Yani zaman ihtiyacı n²'ye orantılı olarak büyüyor.
+
+913
+01:29:12,808 --> 01:29:24,767
+B algoritmasına geçtiğimde ise zaman ihtiyacı n yani karesi değil lineer olarak n'ye bağlı şekilde büyüyor.
+
+914
+01:29:24,767 --> 01:29:36,248
+Zaman ihtiyacı n kare değil n üzeri bir ile orantılı olarak artıyor.
+
+915
+01:29:36,247 --> 01:29:49,547
+İşte algoritmaların oransal zaman gereksinimlerine yani girdi boyutuna oranlı olarak gerektirdiği zamana büyüme oranı adını veriyoruz.
+
+916
+01:29:49,547 --> 01:30:03,247
+Ve bütün algoritmaları yani bir problemi çözen iki ya da daha fazla algoritmayı birbiriyle karşılaştırırken performanslarını büyüme oranlarına bakarak karşılaştırmayı yapabiliriz.
+
+917
+01:30:03,248 --> 01:30:10,108
+Şimdi şöyle bir bölü beş n kare dedik ve öbürüne de n dedik.
+
+918
+01:30:10,108 --> 01:30:13,468
+Şöyle bir çalışma zamanı fonksiyonu çizelim.
+
+919
+01:30:14,087 --> 01:30:17,548
+Birinci algoritma kesikli noktalı çizgiyle verilmiş.
+
+920
+01:30:17,908 --> 01:30:19,367
+Gördüğünüz gibi lineer artıyor.
+
+921
+01:30:20,367 --> 01:30:23,748
+Ve ikinci algoritmada üstel artıyor.
+
+922
+01:30:26,188 --> 01:30:32,828
+Belli bir değere kadar mesela n eşittir bin değerine kadar ne olacaktır?
+
+923
+01:30:33,248 --> 01:30:37,567
+Gördüğümüz gibi algoritma 1 daha fazla çalışma zamanı.
+
+924
+01:30:37,567 --> 01:30:38,448
+Örneğin şurayı alalım.
+
+925
+01:30:38,507 --> 01:30:39,268
+N eşittir 500.
+
+926
+01:30:40,248 --> 01:30:44,507
+Çalışma zamanı daha yüksek olacaktır.
+
+927
+01:30:45,367 --> 01:30:45,587
+Değil mi?
+
+928
+01:30:46,188 --> 01:30:48,028
+Bu algoritma 1.
+
+929
+01:30:48,367 --> 01:30:49,208
+Algoritma 1.
+
+930
+01:30:50,708 --> 01:30:53,147
+Bu da algoritma 2.
+
+931
+01:30:55,287 --> 01:30:59,188
+Algoritma 2 daha çabuk, daha hızlı bir şekilde sonucu üretebildi.
+
+932
+01:30:59,187 --> 01:31:06,347
+ama ne zaman ki n eşittir 1000 oldu ikisi de aynı sürede sonuç ürettiler.
+
+933
+01:31:07,067 --> 01:31:10,967
+Sonrasında n büyüdükçe mesela buradan 500'ü n 1500 oldu diyelim.
+
+934
+01:31:11,307 --> 01:31:12,367
+1500 neresidir?
+
+935
+01:31:13,027 --> 01:31:14,487
+Şu aynaya gitsek şurada bir yer.
+
+936
+01:31:15,327 --> 01:31:16,827
+Şöyle çıktığımızda
+
+937
+01:31:16,827 --> 01:31:23,287
+algoritma 2 bu kadar zaman çalışma ihtiyacı duyarken
+
+938
+01:31:23,287 --> 01:31:25,227
+algoritma 1 bu kadar zaman.
+
+939
+01:31:25,227 --> 01:31:32,367
+yani aslında algoritma 1, algoritma 2'ye göre çok daha az zamanda, çok daha kısa sürede sonucu üretebilecek.
+
+940
+01:31:32,987 --> 01:31:44,048
+n çok büyüdükçe bu böyle yukarı doğru gittiği için, bu hep lineer olarak arttığı için bir yerde, ileride bir yerde aslında mesela A1 şuralardayken
+
+941
+01:31:44,979 --> 01:31:54,379
+A2 belki de buralarda, belki de göremediğimiz yerlerde, yukarılarda bir yerlerde olacak. Yani çok çok daha fazla çalışma süresine ihtiyaç duyacak.
+
+942
+01:31:54,919 --> 01:32:04,119
+Mesela bu n eşittir 1000'deki eşitlik için bir örnek verelim sayısal olarak. Şuna T1 hatta parantez içinde alabiliriz bunu. T1, T2 diyelim.
+
+943
+01:32:04,119 --> 01:32:12,259
+Ya da bunları indistaline de getirebiliriz. Bu birinci algoritma. A algoritmasının çalışma süresi olsun. Bu da B algoritmasının çalışma süresi olsun.
+
+944
+01:32:12,259 --> 01:32:40,759
+Şimdi bu lineer artıyor. n'nin 10 değeri için 10 üzeri eksi 2 yani 1 bölü 100 saniyede ya da 100 için 1 bölü 10 saniyede sonuç üretebiliyor. 1000 olduğunda da 1 saniyede sonuç üretti. Aynı şekilde grafiği hatırlayalım. Nasıldı? Şu şekildeydi. Şuraya da çizelim. Çizmeye çalışalım. Bu algoritma 1'di. Şu da neydi? Şöyle.
+
+945
+01:32:40,759 --> 01:32:44,299
+algoritma 2 idi. Şurası da 1000 değeriydi hatırlayalım.
+
+946
+01:32:47,239 --> 01:32:47,499
+Tamam.
+
+947
+01:32:48,279 --> 01:32:54,819
+Burada bir saniyede başa baş. Ondan öncesi 1 bölü 10, 1 bölü 10.000.
+
+948
+01:32:55,619 --> 01:32:56,340
+Ne oluyor? Evet.
+
+949
+01:32:57,099 --> 01:33:01,219
+Ya da 1 bölü 100 demiştim pardon. 1 bölü 10, 1 bölü 100.
+
+950
+01:33:01,939 --> 01:33:07,020
+Tamam evet bu daha hızlı ama en eşittir 1000'de de bir saniyede başa baş geliyorlar.
+
+951
+01:33:07,020 --> 01:33:15,100
+bu öncesini şu başa baş noktasının öncesini aslında bakarsanız ihmal edebiliriz. Çünkü bu n'in aslında küçük değerlerinden biri.
+
+952
+01:33:15,660 --> 01:33:22,259
+Şimdi n'i 10 ile çarptım. 10.000 oldu. Şuralara bir yere geldim yani. 10.000'dayım. Belki buradayım.
+
+953
+01:33:22,259 --> 01:33:33,959
+Buraya baktığımda birinci A algoritması, B algoritması, çalışma zamanları birincisi 10 saniyede sonuç üretirken ikincisi 100 saniyede sonuç üretirken.
+
+954
+01:33:33,959 --> 01:33:44,039
+10.000'e çıktığında pardon 100.000'e çıktığında bu 100 saniyede çalışırken bu 10.000 saniyede çalıştı.
+
+955
+01:33:44,119 --> 01:33:48,159
+Neden? Çünkü 2.0 ekliyorum değil mi? Her sıfırın yanına bir sıfır daha eklemek zorunda kalıyorum.
+
+956
+01:33:48,159 --> 01:33:53,679
+2.0'ın yanına 2.0 yani toplam 4.0 yani 10.000 saniye. Bu da 2.77 saat demek.
+
+957
+01:33:54,399 --> 01:33:59,739
+Bu ise 2.77'den daha az değil mi? Küçüktür 2 saniye.
+
+958
+01:33:59,739 --> 01:34:14,599
+Şimdi bir tanesi var bir algoritma başlarda çok hızlı çalışıyor gibi görünebilir ama belli bir eşik değerinden sonra ve aslında n'in de çok büyük olmayan bir değerinden sonra bir anda iş değişmeye başlıyor işin rengi.
+
+959
+01:34:14,599 --> 01:34:23,239
+Bir tanesi 2 saniyenin altında sonuç üretirken diğeri 2-3 saatte ancak 3 saate yakın bir sürede sonuç üretebiliyor.
+
+960
+01:34:23,239 --> 01:34:51,539
+Şimdi ben bu iki argotmayı böyle teorik olarak karşılaştırdığımda ve n'in yani girdenin büyümesine göre oranladığımda hangisinin büyüme oranı daha fazla? İkincinin oranı daha fazla. Hangisi daha efektif çalışıyor? Birincisi daha efektif çalışıyor. Çünkü lineer artıyor. Ama öbürü üstel artıyor. Yani kuadratik dediğimiz bir artışa sahip. Karesiyle doğru orantılı olduğu için.
+
+961
+01:34:51,539 --> 01:34:56,039
+sayı iki katına çıktığında kare mertibesinde artıyor işte.
+
+962
+01:34:56,159 --> 01:34:58,479
+Hani bir sıfır yerine iki sıfır yazmış oluyorsunuz buraya.
+
+963
+01:34:59,039 --> 01:35:07,360
+Bu nedenle de çok daha hızlı bir şekilde çok daha uzun sürecek çalışma zamanına ihtiyaç duyuyor.
+
+964
+01:35:09,319 --> 01:35:18,259
+Tıklıkla kullanılan yaygın büyüme oranlarına bakacak olursak en iyisi C dediğimiz constant yani sabittir.
+
+965
+01:35:18,259 --> 01:35:21,959
+büyüme oranına sabit deriz.
+
+966
+01:35:22,299 --> 01:35:23,599
+Yani ne demek bu?
+
+967
+01:35:23,920 --> 01:35:24,979
+n'e bağlı değil.
+
+968
+01:35:25,920 --> 01:35:30,379
+Girdi boyutundan bağımsız olarak sabit sayıda işlem yaparım demektir.
+
+969
+01:35:30,379 --> 01:35:34,239
+Bu en güzel, en efektif algoritmalardan biri.
+
+970
+01:35:34,360 --> 01:35:35,080
+Tabii her zaman olmuyor.
+
+971
+01:35:35,159 --> 01:35:43,119
+Çok belirli çözümlerde ancak sabit sayıda işlem ya da belli problemlerde sabit sayıda işlemle çözüm üreten algoritmalara sahibiz.
+
+972
+01:35:43,539 --> 01:36:09,539
+bunun bir iyisi pardon bir kötüsü log n'dir. Logaritmik. Burada her zaman için log yazacağız ama bunların hepsi unutmayın iki tabanında. Bizim için her şey iki tabanında. Tamam. Hiçbir zaman log iki tabanında n yazmayacağız ama bunlar hep iki tabanda n olarak bizde karşılık bulacak. Sebebi de binary aslında çalışıyor olmamız özünde.
+
+973
+01:36:09,539 --> 01:36:27,220
+Logaritmik büyüme sabitten bir kötü. Logaritma kare bundan bir kötü. Sonra n gelir doğrusal büyüme. Sonra n log n mertebesinde doğrusal logaritmik ya da linearitmik olarak isimlendirilen büyüme oranı vardır.
+
+974
+01:36:27,359 --> 01:36:37,699
+Bunun bir kötüsü n kare. İkinci derece büyüme oranı yani kare mertebesinde büyüme demektir. Bir üstü n küp kubik büyüme demektir.
+
+975
+01:36:37,699 --> 01:36:42,839
+En üzeri 4, en üzeri 5, en üzeri 6 diye bunu tabii ki arttırabilirsiniz.
+
+976
+01:36:43,479 --> 01:36:45,580
+Sonrası üstel artıştır.
+
+977
+01:36:45,740 --> 01:36:48,679
+2 üzeri n mertebesinde artış.
+
+978
+01:36:49,580 --> 01:36:55,159
+Bu artık polinom zamanında artık çözüm üretemeyeceğiniz mertebelere gelir.
+
+979
+01:36:55,300 --> 01:36:58,239
+Özellikle Fibonacci hesabında bunu göreceğiz önümüzdeki hafta.
+
+980
+01:36:58,940 --> 01:37:01,279
+Bunun da bir kötüsü n faktöriyeldir.
+
+981
+01:37:01,279 --> 01:37:05,299
+Bütün olası kombinasyon, permütasyonların oluşturulması ve denenmesi gibi.
+
+982
+01:37:05,299 --> 01:37:17,239
+işte brute force'un kötülüğü mesela burada gelir. Bu da faktöryel mertebesinde. n çarpı, n-1 çarpı, n-2 çarpı, 1'e kadar karmaşıklığa sahipsiniz.
+
+983
+01:37:17,939 --> 01:37:27,859
+Artık böyle bir şey sadece problemin çok çok çok küçük örnekleri için çözülebilir. Mantıksal, sonlu bir zamanda çözülebilir demektir.
+
+984
+01:37:27,859 --> 01:37:43,379
+n sayısı biraz büyüdüğünde faktöryel mertebesinde karmaşıklık arttığı için zaman ihtiyacı arttığı için mantıklı bir çözüm ürettiğini o algoritmanın ya da bizim için bir çözüm ürettiğini maalesef söyleyemeyiz.
+
+985
+01:37:43,999 --> 01:37:45,739
+Bunun daha beteri ne olabilir?
+
+986
+01:37:49,555 --> 01:37:56,555
+sonsuz, tabi sonsuz diye bir şey kanınlamıyoruz. Var mı fikri olan?
+
+987
+01:37:58,579 --> 01:38:16,939
+n factorialden kötü, n factorial factorial. n factorialin factorialı tabii ki. Evet, n üzeri n arkadaşlar. Şöyle yazalım. Bu da ne oluyor bunun mertebesi? [öğrenci].
+
+988
+01:38:22,644 --> 01:38:28,663
+Bilmiyorum. Bu da daha da beteri. Soru işareti koyalım o zaman.
+
+989
+01:38:30,604 --> 01:38:39,503
+Peki. Bunlar da yaygın büyüme oranlarımız. Çok kullandığımız. Yani biz aslında bir algoritmanın büyüme oranını genellikle şu mertebelerle ifade ederiz.
+
+990
+01:38:39,623 --> 01:38:48,503
+Yani bu log n mertebesindedir, n mertebesindedir, n log n mertebesindedir, n kare mertebesindedir gibi bu büyüme oranına sahiptir demiş oluyoruz.
+
+991
+01:38:48,503 --> 01:38:54,503
+grafiğini çizecek olursak şimdi burada mesela n'e n, yüze yüzlük bir çizim görüyorsunuz.
+
+992
+01:38:54,503 --> 01:38:57,504
+böyle ölçekli milimetrik kağıt üzerinde.
+
+993
+01:38:57,504 --> 01:38:59,504
+bir sabit.
+
+994
+01:38:59,504 --> 01:39:01,504
+bunun bir iyisi log n.
+
+995
+01:39:01,504 --> 01:39:03,504
+isterseniz köken.
+
+996
+01:39:03,504 --> 01:39:05,504
+sonra n var.
+
+997
+01:39:05,504 --> 01:39:07,504
+n log n burada bir yerde.
+
+998
+01:39:07,504 --> 01:39:09,504
+n kare, n küp bilmem ne.
+
+999
+01:39:09,504 --> 01:39:12,504
+iki üzeri n, n faktörü yani n faktörü şöyle gidiyor.
+
+1000
+01:39:12,504 --> 01:39:17,504
+bakın daha n, dört falanken, üçken, dörtken, beş olduğunda falan.
+
+1001
+01:39:17,504 --> 01:39:41,164
+bu zaten yüzlere falan vuruyor 5-6'da. O yüzden inanılır gibi değil buradaki büyüme oranı. Bunu böyle bire bir çizmek yerine biraz daha genişleterek çizdiğimizde, girdinin boyutunu ve çıktığı da şöyle ikinin katları olarak verdiğimizde biraz daha gözle görülebilir ya da okunabilir bir grafik karşımıza çıkıyor.
+
+1002
+01:39:41,163 --> 01:40:10,203
+Bakın bir yine sabit. Girdi boyutu ne olursa olsun sabit sayıda sabit sürede işini bitirebiliyor. Bir kötüsü log n, bir kötüsü n. Bu ölçek farkı yüzünden bu lineer değil. Ölçek olmasaydı lineer olacaktı gördüğünüz gibi. Burada n böyle gidiyor. n log n böyle gidiyor. n kare, 2 üzeri n, n faktöriyel. n üzeri n de şöyle bir şey. Böyle gidiyor.
+
+1003
+01:40:11,163 --> 01:40:22,843
+Gördüğünüz gibi büyüme oranları ne kadar yere yakın olursa ya da ne kadar sıfıra yakın olursa o kadar iyi.
+
+1004
+01:40:23,943 --> 01:40:27,883
+Ama büyüme oranı buraya ne kadar yaklaşırsa o kadar da kötü.
+
+1005
+01:40:30,043 --> 01:40:34,144
+Öyleyse iki tane algoritma var aynı işi, aynı problemi çözen.
+
+1006
+01:40:34,523 --> 01:40:37,403
+Bir tanesi şununla çözüyor, bir tanesi bununla çözüyor.
+
+1007
+01:40:38,163 --> 01:40:39,343
+Hangisini tercih edeyim?
+
+1008
+01:40:39,343 --> 01:40:41,703
+Doğal olarak hızlı olanı tercih etmeyi isterim.
+
+1009
+01:40:42,004 --> 01:40:47,623
+n log n'i ben n kare büyüme oranıyla büyüyene tercih ederim.
+
+1010
+01:40:50,864 --> 01:40:55,963
+Peki yine ufak tefek örneklerle devam edelim.
+
+1011
+01:40:57,183 --> 01:41:00,423
+Yaygın büyüme oranları mesela şöyle bir döngü gördüm.
+
+1012
+01:41:00,563 --> 01:41:05,783
+For i eşittir sıfır, i küçüktür bin, n yani aslında, i art art.
+
+1013
+01:41:05,783 --> 01:41:06,623
+Bu ne demek?
+
+1014
+01:41:07,203 --> 01:41:10,463
+Sıfırdan, yani bin adım teker teker ilerle demek değil mi?
+
+1015
+01:41:11,403 --> 01:41:13,043
+n'e bağlı, burada bine bağlı
+
+1016
+01:41:13,043 --> 01:41:20,224
+O zaman ben bunun büyüme oranı fonksiyonunu fn'i n şeklinde ifade edebilirim
+
+1017
+01:41:20,224 --> 01:41:21,444
+n mertebesinde
+
+1018
+01:41:21,444 --> 01:41:24,464
+doğrusal değil mi?
+
+1019
+01:41:25,464 --> 01:41:27,203
+kelimelerle ifade edecek olursak
+
+1020
+01:41:27,203 --> 01:41:28,783
+şöyle bir şey olsa
+
+1021
+01:41:28,783 --> 01:41:30,783
+i eşittir sıfırdan n'e kadar
+
+1022
+01:41:30,783 --> 01:41:33,823
+i artı eşit 2
+
+1023
+01:41:33,823 --> 01:41:42,323
+her adımda 2-2 artıyor. Yani 2-4-6-8-10-1000'e kadar gidiyor. 998 en son alacağı değer.
+
+1024
+01:41:42,323 --> 01:41:54,123
+Bu da buradaki 1000 değer yerine 500 tane değer alacak. Yani aslında 1 bölü 2 tane n mertebesinde olacak.
+
+1025
+01:41:54,443 --> 01:42:02,644
+Ama yine n ile orantılı ve doğrusal. Fakat çarparak ilerleseydik nasıl ilerleyecekti?
+
+1026
+01:42:02,644 --> 01:42:09,323
+İşte 1, 2, 4, 8, 16, 32, 64, 512 de bitecekti değil mi?
+
+1027
+01:42:09,323 --> 01:42:18,903
+O zaman ben burada toplam 32, 64, 128, 256.
+
+1028
+01:42:21,043 --> 01:42:47,003
+ve 512. Toplamda kaç adım? 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 adım gitmiş oldum. Yani aslında logaritma iki tabanında n kadar gitmiş oldum. Tamam. Bu da logaritmik, yani log n olarak biz bunu isimlendireceğiz. Böyle bir büyüme oranına, yani logaritmik bir büyüme oranına sahip bir döngü olacaktır.
+
+1029
+01:42:47,003 --> 01:42:50,243
+İç içe döngülere bakalım
+
+1030
+01:42:50,243 --> 01:42:55,683
+Yine bu dıştaki döngü n kere dönüyor
+
+1031
+01:42:55,683 --> 01:43:01,203
+İçteki de yine bin diyorum ya hani n sayısı kadar dönüyor
+
+1032
+01:43:01,203 --> 01:43:05,563
+O zaman bunun içinde yapacağınız işlemler n çarpı n kere
+
+1033
+01:43:05,563 --> 01:43:10,084
+Yani n kare mertebesinde bir büyüme oranına sahip olacaktır
+
+1034
+01:43:10,084 --> 01:43:13,923
+Buna da üstel ya da kuadratik büyüme oranı adını veriyoruz
+
+1035
+01:43:13,923 --> 01:43:40,563
+Şöyle bir şey olsaydı i eşittir sıfırdan n'e burada n tane adım var. Bu da sıfırdan j küçüktür i'ye yani sıfırdan i'ye kadar. Burada da bir bağımlılık var. Aslında üçgen hani şöyle bir üçgen aslında oluşmuş olacak. Yani n artı bir bölü iki olacak buradaki toplam işlem sayısı.
+
+1036
+01:43:40,563 --> 01:43:48,823
+ve bu ikisini çarptığımızda da n çarpı n artı 1 bölü 2 tane işlem yapmış olacaksınız.
+
+1037
+01:43:48,823 --> 01:43:50,563
+Ya da burada yazdığımız gibi.
+
+1038
+01:43:51,123 --> 01:43:53,223
+Buna bağımlı kvadratik adını veriyoruz.
+
+1039
+01:43:53,423 --> 01:43:54,723
+1 bölü 2 de var burada.
+
+1040
+01:43:54,843 --> 01:43:56,503
+n kare artı n bölü 2.
+
+1041
+01:43:57,003 --> 01:44:03,283
+Ama nihayetinde ben burada n kare mertebesinde bir bileşene sahibim.
+
+1042
+01:44:03,783 --> 01:44:07,263
+Bu da yine benim için daha iyi olsa bile gerçekte
+
+1043
+01:44:07,264 --> 01:44:12,103
+n² mertebesinde bir büyümeye maruz kalmış bir döngü demektir.
+
+1044
+01:44:13,003 --> 01:44:14,164
+Başka bir döngü yapalım.
+
+1045
+01:44:14,584 --> 01:44:18,724
+Dışarısı n, iç döngü ise özellikle birden başlıyor bakın.
+
+1046
+01:44:19,204 --> 01:44:21,164
+Sıfırda takılı kalmayalım diye.
+
+1047
+01:44:22,503 --> 01:44:25,844
+Ve bine kadar yani aslında bu logaritmik yani log n.
+
+1048
+01:44:27,383 --> 01:44:28,984
+İçerik içer bir büyüye iki taban da yani.
+
+1049
+01:44:31,523 --> 01:44:33,383
+O zaman bu da n log n.
+
+1050
+01:44:33,383 --> 01:44:39,643
+mertebesinde bir büyüme oranına sahip iç içe döngüdür.
+
+1051
+01:44:39,643 --> 01:44:50,124
+Buna nlog n diyoruz ya da işte kelime ile ifade edeceksek doğrusal logaritmik ya da linearitmik dediğimiz büyüme oranı burada karşımıza çıkıyor.
+
+1052
+01:44:51,503 --> 01:45:02,783
+Peki, şimdi gelelim bu algoritmalarımızın sahip olduğu büyüme fonksiyonlarını, yani fonksiyonların büyümesini nasıl analiz ederiz?
+
+1053
+01:45:03,383 --> 01:45:11,764
+ve bunu nasıl ifade ederiz, nasıl gösteririz ve büyük O dediğimiz gösterim nedir? Bunun detaylarına başlayalım.
+
+1054
+01:45:12,423 --> 01:45:14,003
+Formal tanım şu şekilde.
+
+1055
+01:45:15,743 --> 01:45:19,423
+Şöyle bir nefes alın. Bunu iyice oturtmamız gerekiyor.
+
+1056
+01:45:20,843 --> 01:45:30,543
+Bir algoritmanın büyüme fonksiyonu Fn, n'e bağlı olarak hani girdi boyutuna bağlı olarak tanımladığımız büyüme fonksiyonu Fn.
+
+1057
+01:45:30,543 --> 01:45:44,543
+Eğer başka bir gn fonksiyonu ile doğru orantılı zaman gerektiriyorsa o zaman ben şunu söyleyebilirim.
+
+1058
+01:45:44,543 --> 01:45:54,583
+fn fonksiyonu gn fonksiyonu ile aynı büyüme seviyesindedir.
+
+1059
+01:45:54,704 --> 01:46:06,624
+Ya da gn fonksiyonunun ait olduğu büyüme oranı kümesine ise f fonksiyonu da aynı büyüme fonksiyonu büyüme oranı kümesindedir diyebilirim.
+
+1060
+01:46:06,624 --> 01:46:15,424
+Bunu da ifade etmek için büyük O dediğimiz notasyonu, formülasyonu ya da fonksiyonu kullanırız.
+
+1061
+01:46:15,424 --> 01:46:16,784
+Büyük O
+
+1062
+01:46:18,676 --> 01:46:21,055
+büyük O'nun içine ne alıyorum?
+
+1063
+01:46:21,455 --> 01:46:22,875
+G, n.
+
+1064
+01:46:23,495 --> 01:46:26,875
+Bu önceden tanımlı bir fonksiyon, bir büyüme fonksiyonu.
+
+1065
+01:46:26,875 --> 01:46:40,915
+Ve eğer benim F fonksiyonum G ile doğru orantılı bir zamana ihtiyaç duyuyorsa, örneğin 5gn gibi ya da 1 bölü 3gn gibi bir zaman gerektiriyorsa,
+
+1066
+01:46:41,455 --> 01:46:48,596
+o zaman ben bunun gn seviyesinde olduğunu, yani onunla aynı mertebede arttığını, artmak zorunda olduğunu ifade edebilirim.
+
+1067
+01:46:48,676 --> 01:46:52,435
+ve büyük O gn şeklinde bunu ifade ederim.
+
+1068
+01:46:52,595 --> 01:46:54,115
+gn neydi? Tekrar ediyorum.
+
+1069
+01:46:54,696 --> 01:47:01,635
+Tanımladığım algoritmanın yani fn büyüme fonksiyonuna sahip olan algoritmanın büyüme oranı fonksiyonudur.
+
+1070
+01:47:02,235 --> 01:47:04,536
+Buna da gn. gn büyüme oranı fonksiyonu.
+
+1071
+01:47:05,196 --> 01:47:08,415
+Peki ben niye buna büyük O gösterimi adını veriyorum?
+
+1072
+01:47:08,415 --> 01:47:14,756
+Çünkü bunu ifade etmek için yani bu mertebededir diyebilmek için büyük O harfini kullanıyorum.
+
+1073
+01:47:14,755 --> 01:47:37,595
+Bu yüzden de buna büyük O ya da İngilizce'de Big O notasyonu adını veriyoruz. Niye O yazıyor burada? Bu sıfırla karışmasın diye. Yani Big Zero ne falan diyenler olabilir. Karışmasın diye Big O diye özellikle okunuş şeklinde O şeklinde yazılıyor. Big O yazan da var ama Big O olarak da görebilirsiniz. Genellikle Big O yazılır ki karışmasın diye.
+
+1074
+01:47:37,595 --> 01:47:44,595
+özellikle de hani bir tetayı falan da söyleyeceğiz onlarla da okurken karışmasın diye mutlaka
+
+1075
+01:47:44,595 --> 01:47:47,676
+H harfini de eklemeyi tercih ediyoruz.
+
+1076
+01:47:49,036 --> 01:47:57,455
+Şimdi diyelim ki gn eşittir n² olarak tanımlanmış.
+
+1077
+01:47:58,555 --> 01:48:04,375
+Ve bizim önceki slide'lardaki A fonksiyonumuz vardı ya pardon B fonksiyonumuz.
+
+1078
+01:48:04,375 --> 01:48:11,695
+O da n² ile orantılı bir zaman gerektiriyor. Mesela n çarpı n artı 1 bölü 2 zaman gerektiriyor.
+
+1079
+01:48:11,695 --> 01:48:15,176
+O zaman f'n'i de şuraya şöyle yazalım.
+
+1080
+01:48:15,595 --> 01:48:22,655
+fn yazamadık eşittir. n çarpı n artı 1 bölü 2.
+
+1081
+01:48:24,755 --> 01:48:33,676
+Tamam. Ben burada n² artı n bölü 2 ya da 1 bölü 2 n² artı 1 bölü 2 n ifadesini görüyorum.
+
+1082
+01:48:34,375 --> 01:48:42,935
+ve biliyorum ki bu 1 bölü 2n² artı 1 bölü 2n n² ile doğru orantılıdır.
+
+1083
+01:48:43,036 --> 01:48:45,815
+Çünkü ikisi de n² mertebesinde büyümektedir.
+
+1084
+01:48:45,935 --> 01:48:48,055
+Bu n² mertebesini ifade eden bir fonksiyon.
+
+1085
+01:48:48,495 --> 01:48:51,536
+Bu da n² ile orantılı büyüyen bir fonksiyon.
+
+1086
+01:48:51,655 --> 01:48:53,355
+O zaman şunu ben söyleyebilirim.
+
+1087
+01:48:54,435 --> 01:48:58,855
+Fn büyük O gn.
+
+1088
+01:48:59,015 --> 01:48:59,995
+gn ile n².
+
+1089
+01:49:01,336 --> 01:49:02,556
+Bunu yazabilirim.
+
+1090
+01:49:02,655 --> 01:49:03,396
+Ne demiş oldum?
+
+1091
+01:49:03,396 --> 01:49:12,435
+benim algoritmamın büyüme oranı büyük O n kare mertebesindedir demiş oldum.
+
+1092
+01:49:12,435 --> 01:49:32,235
+Eğer bu n ile doğru orantılı olsaydı yani g n eşittir n olarak tanımlanmış olsaydı eşittir n olsaydı o zaman da ben bunu büyük O n mertebesindedir diye kendi fonksiyonumun büyüme oranını ifade edip gösterebilirdim.
+
+1093
+01:49:33,396 --> 01:49:38,716
+Peki sık kullanılan büyüme oranı fonksiyonları nelerdir diyecek olursak
+
+1094
+01:49:38,716 --> 01:49:44,396
+aynı birkaç slide geriye gittiğimizde şuradaki büyüme oranlarımız vardı ya
+
+1095
+01:49:44,396 --> 01:49:48,735
+bunların fonksiyon haline getirilmiş halleri vardır.
+
+1096
+01:49:48,735 --> 01:49:58,735
+Şimdi burada C sabit olduğu için 1 olarak ifade edilir ve O1 şeklinde ifade gösterilir.
+
+1097
+01:49:59,696 --> 01:50:02,315
+O1. Ne demektir bu?
+
+1098
+01:50:02,315 --> 01:50:05,155
+sabit bir zaman gereksinimi var.
+
+1099
+01:50:05,315 --> 01:50:06,875
+Yani belli bir kostu var.
+
+1100
+01:50:07,015 --> 01:50:08,315
+Bir zaman gereksinimi var.
+
+1101
+01:50:08,476 --> 01:50:08,655
+Evet.
+
+1102
+01:50:09,295 --> 01:50:11,715
+Ama bu n'e bağlı falan değildir.
+
+1103
+01:50:11,836 --> 01:50:13,655
+Problemin boyutundan bağımsızdır.
+
+1104
+01:50:13,655 --> 01:50:17,556
+Yani 10 elemanlı bir girdi de verseniz aynı sayıda işlemi yapacak.
+
+1105
+01:50:18,387 --> 01:50:23,667
+10 milyon tane girdi verseniz de yine aynı sayıda işlemi yapıp size sonucu üretecek.
+
+1106
+01:50:23,947 --> 01:50:31,808
+Ne verirseniz verelim, boyuttan bağımsız olarak sabit bir zamanda buradaki işlemleri gerçekleştirecek demektir.
+
+1107
+01:50:32,587 --> 01:50:36,847
+Şimdi bir ara verelim. 10 dakika sonra bu slide ile yolumuza devam edelim.
+
+1108
+01:50:38,167 --> 01:50:39,707
+Yani tam 15'te başlayalım.
+
+1109
+02:00:50,836 --> 02:01:00,836
+Evet, saat 15 devam ediyoruz. O 1'den bahsettik. Geride boyutundan bağımsız. Hepsi art sayıda işlem yapar ve problem boyutundan bağımsız. Yani n'den bağımsız.
+
+1110
+02:01:00,836 --> 02:01:06,836
+Çok sevdiğimiz, olmasını çok istediğimiz bir büyüme oranı fonksiyonudur algoritmalarımızda.
+
+1111
+02:01:06,836 --> 02:01:19,836
+Bunun bir sonrasında log n mertebesi geliyor. Log n mertebesinde de aslında logaritmik algoritmalar, yani mesela ikiye bölerek giden binary search gibi algoritmaların zaman gereksinimidir.
+
+1112
+02:01:19,836 --> 02:01:34,455
+Burada da boyuttan daha yavaş bir artış söz konusu. Hani n yerine log n artış söz konusu olduğu için daha az bir artış oluşturuyor. Bir büyüme oranı oluşturuyor log n mertebesi.
+
+1113
+02:01:35,196 --> 02:01:44,895
+Büyük o n ise doğrusal yani direkt olarak boyut artışıyla lineer bağımlı paralel artış. n ne kadar artarsa karmaşıklık da o kadar artar.
+
+1114
+02:01:44,895 --> 02:01:53,715
+n log n doğrusal algoritmadan biraz daha tabii log n kat daha fazla bir artışı gösteriyor.
+
+1115
+02:01:53,715 --> 02:02:04,635
+n log n ama n kareye geçtiğimizde problem boyutuna göre süratle arttığını özellikle karesi mertebesinde arttığını söyleyebiliriz.
+
+1116
+02:02:04,635 --> 02:02:22,955
+Yani bir on ve yüz, on kat arttığında yüz kat, on çarpı onun karesi yüz kat daha fazla bir işlem zamanına ihtiyaç duyacak karmaşıklığının, algoritmanın karesi mertebesinde hızla arttığını söyleyebiliriz.
+
+1117
+02:02:22,955 --> 02:02:33,515
+n küp aynı şekilde bu sefer de kubik üçüncü dereceden zaman gereksinimi çok daha yüksek bir süratle bir artış getirecektir.
+
+1118
+02:02:34,635 --> 02:02:43,115
+n üzeri 4 desek n karenin karesi olduğu için yine karesen mertebede, n kare mertebesinin karesini de söyleyebiliriz.
+
+1119
+02:02:43,195 --> 02:02:45,695
+Yani n kıktan sonrasını konuşmaya çok fazla gerek yok.
+
+1120
+02:02:47,535 --> 02:02:50,695
+Ama 2 üzeri n'den bahsedebiliriz.
+
+1121
+02:02:50,695 --> 02:02:53,655
+Bu da üstsel artış.
+
+1122
+02:02:53,855 --> 02:03:04,495
+Bir algoritmanın, böyle bir büyüme oranına sahip bir algoritmanın zaman gereksinimi kullanışlı olmasının önüne geçecek şekilde aşırı yüksek bir süratle artar.
+
+1123
+02:03:04,636 --> 02:03:16,876
+İşte mesela eğer öz yinelemeli çağrılarla Fibonacci sayılarını hesaplıyorsanız ki önümüzdeki hafta bunun üzerinde duracağız. Böyle bir karmaşıklar sahip oluruz. Böyle bir büyüme oranına sahip oluruz.
+
+1124
+02:03:16,875 --> 02:03:29,315
+n'in 1, 3, 10, 15, 20 gibi değerleri için belki neyse kabul edilebilir ama ondan sonrasında artık 2 üzeri 20 bile neredeyse kabul edilemeyecek boyutlara gelir.
+
+1125
+02:03:30,035 --> 02:03:36,395
+Ve sonuç üretemeyecek, mantıklı zamanda sonuç üretemeyecek kadar uzun çalışmasına sebep olur.
+
+1126
+02:03:36,395 --> 02:03:45,415
+Kullanışlı olmasının önüne geçer. Bu kadar önüne geçecek kadar aşırı yüksek süratle zaman ihtiyacının arttığını söyleyebiliriz.
+
+1127
+02:03:45,416 --> 02:03:57,115
+n factoriali falan zaten daha da beter. Burada söylemedim bile. Sayısal olarak karşılaştıracak olursak mesela diyelim ki n eşittir 10.000 diyelim.
+
+1128
+02:03:57,276 --> 02:04:03,115
+10.000 tane girdiği için çalışıyorsunuz ve algoritmanınız log n. Büyük o log n mertebesinde.
+
+1129
+02:04:03,955 --> 02:04:11,096
+O zaman toplamda aslında log 10.000 tane işlem yaparsınız. Bu da işte yaklaşık 12 küsur, 13 diyelim.
+
+1130
+02:04:11,095 --> 02:04:19,075
+ve 13 iterasyon büyük bir ihtimalle CPU'nuzda yani kendi modern bilgisayarınızda mikrosaniyeler mertebesinde çözümü çıkartacaktır.
+
+1131
+02:04:19,815 --> 02:04:32,755
+Eğer n yani doğrusalsa büyük o n mertebesindeyse algoritmanız toplam 10.000 tane iterasyon yapacaksınız n 10.000 olduğu için ve saniyeler mertebesinde sonuca erişebilirsiniz.
+
+1132
+02:04:32,755 --> 02:04:45,356
+nlog n 13 14 14 diyelim hadi yukarı yuvarlayıp 140.000 civarında iterasyon yaparsınız yine salih ener mertebesinde diyebiliriz eğer n kare ise
+
+1133
+02:04:45,855 --> 02:04:48,695
+10.000 çarpı 10.000 yani ne oluyor?
+
+1134
+02:04:48,795 --> 02:04:49,695
+100.000.000 mu oluyor?
+
+1135
+02:04:49,836 --> 02:04:52,175
+100.000.000 tane işlem yaparsınız.
+
+1136
+02:04:52,355 --> 02:05:00,015
+Bu da modern işlemcilerde hani yine 10.000'lik bir girdiği için dakikalar mertebesinde çalışmayı beklemek demektir.
+
+1137
+02:05:00,935 --> 02:05:04,755
+Eğer polinomiyel ise n üzeri k, o zaman 10.000 üzeri k demektir.
+
+1138
+02:05:04,815 --> 02:05:05,815
+Bu da saatler demek.
+
+1139
+02:05:06,495 --> 02:05:10,975
+Eğer üstsel bir şeyiniz varsa mesela 2 üzeri n gibi, buradaki sabit 2 olsun.
+
+1140
+02:05:10,975 --> 02:05:16,155
+2 üzeri en gibi bir üstsel büyüme oranınız varsa 2 üzeri 10 binden bahsediyoruz.
+
+1141
+02:05:16,775 --> 02:05:17,955
+Bunu artık felaket dedim.
+
+1142
+02:05:18,835 --> 02:05:20,536
+Ne kadar beklersiniz bilmiyorum.
+
+1143
+02:05:21,275 --> 02:05:26,595
+Hele bir de n faktöriyelse 10 bin faktöriyel tane iterasyon yapmanız demektir.
+
+1144
+02:05:27,455 --> 02:05:35,115
+Bu da ölümcül, bizim ömrümüzün vefa etmeyeceği bir çalışma şekli olacaktır.
+
+1145
+02:05:35,115 --> 02:05:58,895
+O en faktöriyel olası bütün permütasyon kombinasyon ve bütün olası her şeyin tek tek kontrol edilmesi gereken bir yani exhaustive search gibi bir arama bir uzay taraması yapmanız gerekiyorsa o en faktöriyel türünde bir algoritmanız var demektir.
+
+1146
+02:05:58,896 --> 02:06:00,476
+tabii bunu
+
+1147
+02:06:00,476 --> 02:06:02,775
+enin çok küçük değerleri için ancak
+
+1148
+02:06:02,775 --> 02:06:04,796
+mantıklı olarak kullanabilirsiniz
+
+1149
+02:06:04,796 --> 02:06:06,656
+onun dışında hiçbir anlam
+
+1150
+02:06:06,656 --> 02:06:08,796
+ifade etmez bizim için mantıklı
+
+1151
+02:06:08,796 --> 02:06:09,976
+sonuç üretmez dedik
+
+1152
+02:06:09,976 --> 02:06:12,336
+aynı tabloyu
+
+1153
+02:06:12,336 --> 02:06:15,016
+bir de şöyle okuyalım
+
+1154
+02:06:15,016 --> 02:06:16,516
+enin hani şurada
+
+1155
+02:06:16,516 --> 02:06:18,656
+sadece on bin için demiştik ya
+
+1156
+02:06:18,656 --> 02:06:20,016
+burada enin
+
+1157
+02:06:20,016 --> 02:06:22,775
+burada yine yanlış yazmışız
+
+1158
+02:06:22,775 --> 02:06:24,796
+on bunu şöyle çizelim
+
+1159
+02:06:24,796 --> 02:06:26,635
+en eşittir
+
+1160
+02:06:26,635 --> 02:06:28,555
+on yüz bin on bin
+
+1161
+02:06:28,555 --> 02:06:30,795
+100.000 ve 1.000.000. Yani en büyüdükçe neler oluyor
+
+1162
+02:06:30,795 --> 02:06:31,935
+ona bakalım. Şimdi eğer
+
+1163
+02:06:31,935 --> 02:06:34,775
+sabitse yani O1 ise
+
+1164
+02:06:34,775 --> 02:06:36,815
+hep sabit.
+
+1165
+02:06:37,135 --> 02:06:38,875
+Girdi boyutundan etkilenmiyor
+
+1166
+02:06:38,875 --> 02:06:41,335
+gördüğünüz gibi. Logaritmikse
+
+1167
+02:06:41,335 --> 02:06:43,815
+büyük o logense
+
+1168
+02:06:43,815 --> 02:06:46,395
+işte 10 için
+
+1169
+02:06:46,395 --> 02:06:47,935
+3 iterasyon.
+
+1170
+02:06:48,415 --> 02:06:50,515
+100 için 6 iterasyon. 9, 13,
+
+1171
+02:06:50,595 --> 02:06:53,115
+16, 19. Yani 1 milyona çıktığınızda
+
+1172
+02:06:53,115 --> 02:06:55,135
+bile 19 iterasyonunda
+
+1173
+02:06:55,135 --> 02:06:56,635
+20 adımda en fazla
+
+1174
+02:06:56,635 --> 02:06:58,895
+20. adımda zaten sonucu
+
+1175
+02:06:58,895 --> 02:07:00,815
+bulmuş oluyorsunuz. Ya da sonucu
+
+1176
+02:07:00,815 --> 02:07:02,255
+üretebilmiş oluyorsunuz.
+
+1177
+02:07:03,096 --> 02:07:04,815
+n'e geçtiğimizde
+
+1178
+02:07:04,815 --> 02:07:09,135
+aynı şekilde işte n eşittir
+
+1179
+02:07:09,135 --> 02:07:10,876
+10'sa 10 adım. 10 iterasyon.
+
+1180
+02:07:10,956 --> 02:07:13,076
+100 ise 100 iterasyon. 1 milyon ise
+
+1181
+02:07:13,076 --> 02:07:15,296
+1 milyon iterasyon. n logende
+
+1182
+02:07:15,296 --> 02:07:16,995
+işte bununla bunun çarpımı kadar
+
+1183
+02:07:16,995 --> 02:07:18,775
+şurada yaklaşık 10 üzeri 7
+
+1184
+02:07:18,775 --> 02:07:21,035
+iterasyon diyebiliriz. Yuvarlayabiliriz
+
+1185
+02:07:21,035 --> 02:07:23,135
+bu kadar olduğuna. n kareye
+
+1186
+02:07:23,135 --> 02:07:24,956
+gittiğimizde mesela 1 milyon için
+
+1187
+02:07:24,955 --> 02:07:27,255
+10 üzeri 6 ya 10 üzeri 12
+
+1188
+02:07:27,255 --> 02:07:29,075
+tane
+
+1189
+02:07:29,075 --> 02:07:30,775
+işlem yapmamız gerekiyor.
+
+1190
+02:07:31,335 --> 02:07:32,695
+N küpte 10 üzeri 18.
+
+1191
+02:07:33,415 --> 02:07:35,175
+2 üzeri N'e geçtiğimizde ise
+
+1192
+02:07:35,175 --> 02:07:36,075
+bakın 1000
+
+1193
+02:07:36,075 --> 02:07:38,875
+10 üzeri 30
+
+1194
+02:07:38,875 --> 02:07:40,455
+ne oluyor?
+
+1195
+02:07:40,975 --> 02:07:42,015
+1000 çarpı 10 üzeri 10
+
+1196
+02:07:42,015 --> 02:07:45,295
+bulamadım. 10 üzeri 301
+
+1197
+02:07:45,295 --> 02:07:47,275
+yani bunlar artık mantıklı şeyler
+
+1198
+02:07:47,275 --> 02:07:49,275
+değil. Hani 1000 tane girdiği için
+
+1199
+02:07:49,275 --> 02:07:50,695
+böyle 2 üzeri N
+
+1200
+02:07:50,695 --> 02:07:53,335
+bekle bekle bekle günler
+
+1201
+02:07:53,335 --> 02:07:55,315
+boyu belki aylar boyu beklemeniz gerekecek.
+
+1202
+02:07:55,436 --> 02:07:57,115
+Şurada yıllar boyu beklemeniz belki
+
+1203
+02:07:57,115 --> 02:07:59,135
+dediğim gibi asır boyunca beklemeniz
+
+1204
+02:07:59,135 --> 02:08:01,675
+gerekecek. O kadar zaten çalıştıramayacağınız
+
+1205
+02:08:01,675 --> 02:08:03,315
+için bilgisayarın mevcut şartlar altında
+
+1206
+02:08:03,315 --> 02:08:05,055
+yapılamamış bir çözüm
+
+1207
+02:08:05,055 --> 02:08:07,275
+haline gelecektir. Feasible bir
+
+1208
+02:08:07,275 --> 02:08:09,035
+çözüm üretememişiz demektir.
+
+1209
+02:08:09,175 --> 02:08:11,555
+Teori de çözüyor ama pratik de çözemiyor
+
+1210
+02:08:11,555 --> 02:08:12,995
+diyebiliriz. Böyle bir
+
+1211
+02:08:12,995 --> 02:08:14,835
+çok büyük girdiler de
+
+1212
+02:08:14,835 --> 02:08:16,635
+daha kötü
+
+1213
+02:08:16,635 --> 02:08:19,315
+karmaşıklıklar için
+
+1214
+02:08:19,315 --> 02:08:20,835
+büyüme oranları için.
+
+1215
+02:08:22,495 --> 02:08:22,735
+Şimdi
+
+1216
+02:08:22,735 --> 02:08:26,735
+bir algoritmanın mertebesi nedir?
+
+1217
+02:08:26,835 --> 02:08:27,935
+büyüme oranı nedir?
+
+1218
+02:08:28,175 --> 02:08:31,175
+büyük o ile bu mertebe nasıl ifade edilir?
+
+1219
+02:08:31,375 --> 02:08:32,995
+bunun detaylarına baktık
+
+1220
+02:08:32,995 --> 02:08:35,855
+şimdi de algoritmanın seviyesi ne demektir?
+
+1221
+02:08:35,975 --> 02:08:36,535
+ona bakalım
+
+1222
+02:08:37,140 --> 02:08:47,060
+Diyelim ki benim bir algoritmam var ve n boyutundaki bir girdiyle çalışıp problemin çözümünü üretebilmesi için f n eşittir.
+
+1223
+02:08:47,659 --> 02:08:51,259
+n kare eksi 3 n artı 10 saniyelik işlem gerektiriyor.
+
+1224
+02:08:51,339 --> 02:08:55,039
+Hani bir cost 2 cost 3'ler vardı ya n ile çarpılanlar falan.
+
+1225
+02:08:55,499 --> 02:09:01,679
+Onları çarptım böldüm topladım ve n kare eksi 3 n artı 10 şeklinde bir fonksiyonla büyüdüğünü gördüm.
+
+1226
+02:09:01,679 --> 02:09:04,279
+Şimdi şunu söyleyebilirim.
+
+1227
+02:09:04,279 --> 02:09:07,480
+Büyük O, G, N mertebesindedir demiştik ya.
+
+1228
+02:09:07,599 --> 02:09:11,799
+İşte algoritmanın seviyesi mertebesi nedir sorusu böyle bulunuyor.
+
+1229
+02:09:12,680 --> 02:09:15,339
+G, N eşittir N kare olmak üzere.
+
+1230
+02:09:16,599 --> 02:09:20,259
+Yani şuradaki mertebedeki terimi bir fonksiyon olarak almak üzere.
+
+1231
+02:09:20,259 --> 02:09:36,500
+Eğer K çarpı Gn büyüktür Fn ve her n büyük eşit n sıfır için olacak şekilde hani şöyle şeyler çiziyorduk ya hatırlayalım.
+
+1232
+02:09:36,979 --> 02:09:39,419
+Şöyle ve şöyle giden şeylerimiz vardı.
+
+1233
+02:09:39,539 --> 02:09:41,619
+İşte şurası benim n sıfır değerim.
+
+1234
+02:09:41,619 --> 02:10:09,619
+Yani n'in n sıfırdan büyük olan bütün değerleri için buradaki büyüklük ifadesini yani şu ifadeyi doğru yapacak pozitif k ve n sıfır sabitlerini eğer bulup tanımlayabiliyorsak o zaman bu algoritmanın yani fn büyüme oranına sahip olan büyüme fonksiyonuna sahip olan algoritmanın
+
+1235
+02:10:09,619 --> 02:10:11,619
+n kare seviyesinde
+
+1236
+02:10:11,619 --> 02:10:13,739
+n kare mertebesinde olduğunu
+
+1237
+02:10:13,739 --> 02:10:15,059
+söylemiş olurum.
+
+1238
+02:10:15,719 --> 02:10:17,679
+Bir diğer deyişle tam bir kitab
+
+1239
+02:10:17,679 --> 02:10:18,899
+bir formal ifadeyle
+
+1240
+02:10:18,899 --> 02:10:21,319
+tüm n'in
+
+1241
+02:10:21,319 --> 02:10:23,839
+n sıfırdan büyük eşit bütün değerleri
+
+1242
+02:10:23,839 --> 02:10:25,959
+için yani büyüme oranı grafiğindeki
+
+1243
+02:10:25,959 --> 02:10:27,659
+şuradaki kesişim noktasından sonraki
+
+1244
+02:10:27,659 --> 02:10:29,439
+bütün değerleri için burası
+
+1245
+02:10:29,439 --> 02:10:32,739
+don't care
+
+1246
+02:10:32,739 --> 02:10:34,979
+I don't care about this area
+
+1247
+02:10:34,979 --> 02:10:37,999
+bu değerler için
+
+1248
+02:10:38,000 --> 02:10:51,419
+0 küçük eşit Fn küçük eşit K çarpı Gn şartını sağlayan K ve N0 sabitlerini tanımlayabiliyorsanız
+
+1249
+02:10:51,419 --> 02:11:00,399
+tabii ki pozitif sabitleri tanımlayabiliyorsanız o zaman bunu Fn büyük O Gn mertebesindedir.
+
+1250
+02:11:00,520 --> 02:11:06,479
+Yani Gn mertebesindedir ve büyük O Gn'dir şeklinde tanımlayabilirsiniz.
+
+1251
+02:11:06,479 --> 02:11:09,399
+örneğin buradaki örnek için
+
+1252
+02:11:09,399 --> 02:11:11,659
+k eşittir 3 ve n0
+
+1253
+02:11:11,659 --> 02:11:13,599
+eşittir 2 değerleri verildiğinde
+
+1254
+02:11:13,599 --> 02:11:15,459
+3 n kare büyüktür
+
+1255
+02:11:15,459 --> 02:11:17,159
+n kare eksi 3 n artı 10
+
+1256
+02:11:17,159 --> 02:11:19,379
+n'in n0
+
+1257
+02:11:19,379 --> 02:11:21,479
+eşittir 2'den büyük eşit
+
+1258
+02:11:21,479 --> 02:11:23,839
+olduğu bütün değerler için bu doğrudur
+
+1259
+02:11:23,839 --> 02:11:24,779
+tamam
+
+1260
+02:11:24,779 --> 02:11:26,800
+ve k'yı 3
+
+1261
+02:11:26,800 --> 02:11:29,759
+pozitif bir tam sayı
+
+1262
+02:11:29,759 --> 02:11:30,879
+pozitif k değeri
+
+1263
+02:11:30,879 --> 02:11:33,279
+tam sayı olmak zorunda da değil
+
+1264
+02:11:33,279 --> 02:11:34,459
+n0'ı da
+
+1265
+02:11:34,459 --> 02:11:37,319
+pozitif bir sabit değer olarak
+
+1266
+02:11:37,319 --> 02:11:39,119
+bulabiliyorum. 3 ve 2
+
+1267
+02:11:39,119 --> 02:11:41,499
+sabitleri buradaki eşitliği
+
+1268
+02:11:41,499 --> 02:11:42,979
+daha doğrusu büyüklük ifadesinin
+
+1269
+02:11:42,979 --> 02:11:44,399
+doğru olmasını garantiliyor.
+
+1270
+02:11:45,079 --> 02:11:47,459
+Bu durumda algoritma
+
+1271
+02:11:47,459 --> 02:11:49,039
+elimdeki bu
+
+1272
+02:11:49,039 --> 02:11:50,919
+algoritmanın şurada bahsettiğim
+
+1273
+02:11:50,919 --> 02:11:52,919
+bu büyüme oranına fonksiyonuna sahip
+
+1274
+02:11:52,919 --> 02:11:54,039
+algoritmanın
+
+1275
+02:11:54,039 --> 02:11:56,799
+en büyük eşit n sıfır
+
+1276
+02:11:56,799 --> 02:11:58,879
+olduğunda k n kare
+
+1277
+02:11:58,879 --> 02:12:00,919
+birim zamandan fazlasına
+
+1278
+02:12:00,919 --> 02:12:02,659
+asla ve asla
+
+1279
+02:12:02,659 --> 02:12:04,839
+gerek duymayacağını ispatlamış
+
+1280
+02:12:04,839 --> 02:12:06,599
+olurum. Bu nedenle de
+
+1281
+02:12:06,599 --> 02:12:09,139
+bu algoritmanın seviyesinin
+
+1282
+02:12:09,139 --> 02:12:10,959
+en kötü durumda en fazla
+
+1283
+02:12:10,959 --> 02:12:12,899
+olabilecek en kötü şeyin
+
+1284
+02:12:12,899 --> 02:12:15,059
+en kare mertebesinde olduğunu da
+
+1285
+02:12:15,059 --> 02:12:16,619
+ispatlamış olurum.
+
+1286
+02:12:17,099 --> 02:12:18,339
+Şimdi bu şu demek
+
+1287
+02:12:18,339 --> 02:12:20,739
+şöyle çizdiğimizde
+
+1288
+02:12:20,739 --> 02:12:22,299
+tabi bu biraz yanda kalmış.
+
+1289
+02:12:23,939 --> 02:12:24,779
+Şöyle bir
+
+1290
+02:12:24,779 --> 02:12:25,659
+değerde bulunuyor.
+
+1291
+02:12:26,959 --> 02:12:28,539
+Burası n sıfır.
+
+1292
+02:12:29,379 --> 02:12:30,659
+Bunu tam sayı olarak 2
+
+1293
+02:12:30,659 --> 02:12:31,759
+değerine alıyorum.
+
+1294
+02:12:32,659 --> 02:12:34,019
+İki değeri.
+
+1295
+02:12:35,091 --> 02:12:55,091
+şurası, tamam mı? Yani şu çizgi 2. Şöyle yukarı kadar da çizeyim. 3n², k eşittir 3 için bir n² çizdim. Bu grafik, tamam mı? Bu gn. Bu da fn.
+
+1296
+02:12:58,739 --> 02:13:03,739
+bunun da grafiği bu. Ben öyle bir N0 ve KD...
+
+1297
+02:13:04,739 --> 02:13:06,739
+Pardon.
+
+1298
+02:13:10,868 --> 02:13:37,788
+k değeri buluyorum ki bu noktadan sonra yani şuradaki çizdiğim kırmızı çizginin ötesinde asla fn gn'i geçemez. Bunu garanti ediyorum. Bakın öncesinde geçebiliyor ama sonrasında n0 değeri ve bu ksd sabitiyle nkarenin çarpımı ile oluşan fonksiyon grafiğinde bu böyle gidecek, bu böyle gidecek.
+
+1299
+02:13:37,788 --> 02:13:57,787
+Bu noktadan sonra buradan çok daha ilerlerde bile her zaman için g n'in daha yukarıda f n'in daha aşağıda en kötü durumda böyle fakat asla birbirine değmeden gideceğini garanti etmiş olurum.
+
+1300
+02:13:57,787 --> 02:14:00,787
+Yani bu k v n sıfır sabitlerini tanımlayabiliyorsunuz.
+
+1301
+02:14:00,787 --> 02:14:13,627
+Bu durumda işte bu algoritmanın asla g n'i geçemeyeceğini gösteriyorum ve n'in büyük değerleri için n sıfırdan büyük bütün değerleri için ve şunu diyorum asla bu mertebeyi geçemez.
+
+1302
+02:14:13,627 --> 02:14:20,487
+Yani üstten dayanabileceği ama asla değemeyeceği en üst mertebe n karedir.
+
+1303
+02:14:20,487 --> 02:14:35,287
+Bunu ifade etmiş oluyorum. Bu nedenle de fn'e sahip büyüme oranına, büyüme fonksiyonuna sahip algoritmanın mertebesini n kare olarak üstten asimtotik olarak sınırlamış oluyorum.
+
+1304
+02:14:35,287 --> 02:14:41,507
+İşte buna da algoritmanın mertebesi, algoritmanın seviyesi adını veriyoruz.
+
+1305
+02:14:41,507 --> 02:15:04,107
+Tamam olay bu. Yani büyük O gösterimi algoritmayı üstten şöyle bu GN bu da FN olabilecek maksimum en üst sınır değerini garanti edip tanımladığım mertebedir.
+
+1306
+02:15:04,107 --> 02:15:08,567
+Buna büyük O notasyonu adını veriyoruz.
+
+1307
+02:15:09,127 --> 02:15:09,368
+Peki.
+
+1308
+02:15:10,327 --> 02:15:12,747
+O zaman büyük O varsa bunun alternatiflerinde olması lazım.
+
+1309
+02:15:14,408 --> 02:15:18,007
+Ben burada hep en fazla bu kadar zamana ihtiyaç duyar demiştim.
+
+1310
+02:15:18,127 --> 02:15:19,827
+Üstten sınırlamaya çalışmıştım.
+
+1311
+02:15:20,748 --> 02:15:29,228
+Eğer aynısını şöyle okursak bir A algoritması en büyük geçit n0 boyutundaki bir problemi çözmek için yani n0'dan büyük bütün değerler için
+
+1312
+02:15:29,228 --> 02:15:34,748
+minimum en az Kgm birim zamanı ihtiyaç duyuyorsa
+
+1313
+02:15:34,748 --> 02:15:35,968
+hoppa bu ne demek?
+
+1314
+02:15:36,567 --> 02:15:36,847
+şöyle
+
+1315
+02:15:36,847 --> 02:15:39,487
+şimdi benim
+
+1316
+02:15:39,487 --> 02:15:41,287
+bir
+
+1317
+02:15:41,287 --> 02:15:44,188
+işte böyle bir Fn'im var
+
+1318
+02:15:44,188 --> 02:15:45,668
+şöyle diyelim tamam mı?
+
+1319
+02:15:46,047 --> 02:15:46,528
+bir de
+
+1320
+02:15:46,528 --> 02:15:48,347
+şöyle
+
+1321
+02:15:48,347 --> 02:15:52,308
+Gn'im var diyelim tamam mı?
+
+1322
+02:15:52,308 --> 02:15:52,627
+şu
+
+1323
+02:15:52,627 --> 02:15:55,368
+n sıfır noktasından
+
+1324
+02:15:55,368 --> 02:15:57,987
+sonraki bütün n değerleri için
+
+1325
+02:15:57,987 --> 02:16:00,987
+Bu benim Fn'im.
+
+1326
+02:16:03,187 --> 02:16:04,647
+Bu da Gn'im.
+
+1327
+02:16:05,747 --> 02:16:15,868
+Öyle bir F ve N0 sabiti bulabilirsem ki N0'dan sonraki bütün değerler için Fn büyüktür, Gn şartını sağlayabileyim.
+
+1328
+02:16:15,987 --> 02:16:19,947
+O zaman ne olur? Gn hep aşağıda kalır, Fn hep yukarıda kalır.
+
+1329
+02:16:20,027 --> 02:16:23,207
+Yani Fn asla ve asla Gn'in altına düşemez.
+
+1330
+02:16:23,207 --> 02:16:32,627
+Bu ne demektir? En iyi durumda mutlaka şu kadar işlem yapılır ya da en iyi durumda şu mertebede işlemle sonucu üretebilirim demektir.
+
+1331
+02:16:32,627 --> 02:16:39,948
+İşte buna da büyük A algoritmasının omega gn seviyesinde olduğu demektir.
+
+1332
+02:16:40,247 --> 02:16:44,588
+Ve bunu da büyük omega gn şeklinde gösterilir.
+
+1333
+02:16:44,667 --> 02:16:48,467
+Yani fn büyük eşit kgn her n büyük eşit n sıfır için.
+
+1334
+02:16:48,467 --> 02:16:51,507
+Eğer bu sabitleri bulabiliyorsam bu sefer
+
+1335
+02:16:52,020 --> 02:16:59,259
+Ve algoritmamın büyüme fonksiyonunu en sıfırdan büyük bütün değerler için alttan asimptotik olarak sınırlandırmış olurum.
+
+1336
+02:16:59,599 --> 02:17:01,280
+Buna da aslında en iyi değer analizi diyeceğiz.
+
+1337
+02:17:01,280 --> 02:17:08,079
+Bu senenin konusu değil ama hazır büyük oğadan bahsetmişken neden alttan sınırlamıyoruz?
+
+1338
+02:17:08,360 --> 02:17:09,960
+O zaman sınırlayabiliriz.
+
+1339
+02:17:10,299 --> 02:17:13,499
+Asgari ihtiyaç duyduğumuz birim zamanı buluruz.
+
+1340
+02:17:14,139 --> 02:17:16,239
+Alt asimptotu tanımlamış oluruz.
+
+1341
+02:17:16,520 --> 02:17:21,579
+Buna da büyük omega gösterimi adı verilir ve en iyi durumdaki aslında karmaşıklığı ifade eder.
+
+1342
+02:17:22,020 --> 02:17:24,260
+benzer şekilde
+
+1343
+02:17:24,260 --> 02:17:26,339
+hocam şimdi üstten sınırlayabiliyoruz
+
+1344
+02:17:26,339 --> 02:17:27,659
+alttan sınırlayabiliyoruz
+
+1345
+02:17:27,659 --> 02:17:30,639
+hem üstten hem alttan aynı anda sınırlandırabilir miyim
+
+1346
+02:17:30,639 --> 02:17:32,420
+fonksiyonumu? Evet yapabilirsiniz
+
+1347
+02:17:32,420 --> 02:17:34,240
+o zaman iki tane sabitliğe
+
+1348
+02:17:34,240 --> 02:17:35,279
+ihtiyaç duyacaksınız
+
+1349
+02:17:35,279 --> 02:17:36,720
+bir algoritması
+
+1350
+02:17:36,720 --> 02:17:38,759
+en büyüktür en sıfır
+
+1351
+02:17:38,759 --> 02:17:40,740
+değerlerin tamamı için
+
+1352
+02:17:40,740 --> 02:17:42,499
+bu problemleri çözmek için
+
+1353
+02:17:42,499 --> 02:17:44,700
+minimum k1gn
+
+1354
+02:17:44,700 --> 02:17:47,420
+ve maksimum k2gn
+
+1355
+02:17:47,420 --> 02:17:49,459
+birim zamanı ihtiyaç duyacak şekilde
+
+1356
+02:17:49,459 --> 02:17:51,780
+k1, k2 ve n0
+
+1357
+02:17:51,779 --> 02:17:53,879
+sabitlerini pozitif tam sayısal
+
+1358
+02:17:53,879 --> 02:17:55,499
+pozitif sabitleri bulabiliyorsanız
+
+1359
+02:17:55,499 --> 02:17:57,560
+o zaman da bu
+
+1360
+02:17:57,560 --> 02:17:59,880
+A algoritmasının büyüme fonksiyonunun
+
+1361
+02:17:59,880 --> 02:18:01,839
+teta g n seviyesinde olduğunu
+
+1362
+02:18:01,839 --> 02:18:03,659
+söyleyebilirsiniz. Ve bunu da
+
+1363
+02:18:03,659 --> 02:18:05,600
+büyük teta g n olarak
+
+1364
+02:18:05,600 --> 02:18:07,159
+gösterirsiniz. Bu sefer
+
+1365
+02:18:07,159 --> 02:18:10,079
+k 2 g n büyük eşit
+
+1366
+02:18:10,079 --> 02:18:12,039
+f n büyük eşit
+
+1367
+02:18:12,039 --> 02:18:14,079
+k 1 g n tanımlıdır.
+
+1368
+02:18:14,499 --> 02:18:14,799
+Bütün
+
+1369
+02:18:14,799 --> 02:18:17,839
+n sıfırdan büyük eşit n değerleri
+
+1370
+02:18:17,839 --> 02:18:19,880
+için. Tamam. Bu da hem üstten
+
+1371
+02:18:19,880 --> 02:18:21,920
+hem alttan aynı anda. Yani aslında
+
+1372
+02:18:21,920 --> 02:18:23,659
+ortalama durum ya da
+
+1373
+02:18:23,659 --> 02:18:26,100
+algoritmanın daha ortalama
+
+1374
+02:18:26,100 --> 02:18:27,960
+durumda nasıl bir
+
+1375
+02:18:27,960 --> 02:18:29,799
+karmaşıklığa, nasıl bir mertebeye
+
+1376
+02:18:29,799 --> 02:18:31,939
+sahip olduğunu ifadesinin gösterimidir.
+
+1377
+02:18:32,920 --> 02:18:34,200
+Üçünü yan yana gösterecek
+
+1378
+02:18:34,200 --> 02:18:35,299
+olursak, bakın bu
+
+1379
+02:18:35,299 --> 02:18:37,700
+benim
+
+1380
+02:18:37,700 --> 02:18:39,939
+üstten, yani
+
+1381
+02:18:39,939 --> 02:18:41,439
+büyük o notasyonuyla
+
+1382
+02:18:41,439 --> 02:18:43,820
+benim algoritmam en kötü
+
+1383
+02:18:43,820 --> 02:18:46,219
+durumda asla bunu geçemez
+
+1384
+02:18:46,219 --> 02:18:47,439
+şu noktadan sonra.
+
+1385
+02:18:47,439 --> 02:18:49,859
+en sıfır noktasından sonra
+
+1386
+02:18:49,859 --> 02:18:52,159
+mutlaka g n'in altında
+
+1387
+02:18:52,159 --> 02:18:53,959
+kalacaktır. En fazla dibine kadar
+
+1388
+02:18:53,959 --> 02:18:56,100
+gelebilir ama asla onu geçemez tanımını
+
+1389
+02:18:56,100 --> 02:18:56,700
+ispatladım.
+
+1390
+02:18:58,159 --> 02:18:59,959
+Buna büyük o notasyonu adını
+
+1391
+02:18:59,959 --> 02:19:02,020
+veriyoruz ve fonksiyonu üstten sınırlıyoruz.
+
+1392
+02:19:02,359 --> 02:19:03,900
+Üst asimptota tanımını
+
+1393
+02:19:03,900 --> 02:19:05,999
+yapmış oluyoruz. Yani bu
+
+1394
+02:19:05,999 --> 02:19:07,999
+en kötü durumda bu mertebededir.
+
+1395
+02:19:08,799 --> 02:19:10,159
+g n mertebesindedir demiş
+
+1396
+02:19:10,159 --> 02:19:12,199
+oluyoruz. Eğer alttan
+
+1397
+02:19:12,199 --> 02:19:14,020
+sınırlarsanız asla
+
+1398
+02:19:14,020 --> 02:19:16,320
+bunun altına inemeyiz. Yani inebileceğim
+
+1399
+02:19:16,320 --> 02:19:18,140
+en dip nokta şuradaki
+
+1400
+02:19:18,140 --> 02:19:20,180
+gn'dir. Bu da büyük omega
+
+1401
+02:19:20,180 --> 02:19:21,780
+notasyonu olarak ifade edilir.
+
+1402
+02:19:22,260 --> 02:19:24,760
+Hem c1gn hem c2gn
+
+1403
+02:19:24,760 --> 02:19:26,520
+yani k1k2 demiştik. Kitapta
+
+1404
+02:19:26,520 --> 02:19:28,280
+c1c2 diyor. Bu iki
+
+1405
+02:19:28,280 --> 02:19:30,579
+sabitle de tanımlayabiliyorsam benim fonksiyonum
+
+1406
+02:19:30,579 --> 02:19:32,380
+asla bundan yukarı çıkamaz. Bundan
+
+1407
+02:19:32,380 --> 02:19:34,200
+asla da aşağı inemez. Hem alt
+
+1408
+02:19:34,200 --> 02:19:36,079
+asimtotları aynı anda da tanımlayabilirim.
+
+1409
+02:19:36,420 --> 02:19:38,340
+Bu durumda da buna teta n
+
+1410
+02:19:38,340 --> 02:19:40,320
+gösterimi adını veriyoruz.
+
+1411
+02:19:41,520 --> 02:19:42,299
+Yani fonksiyonu
+
+1412
+02:19:42,299 --> 02:19:44,280
+hem üstten hem alttan bağlamak. Bizim için bu ders
+
+1413
+02:19:44,279 --> 02:19:46,319
+kapsamında şu geçerli
+
+1414
+02:19:46,319 --> 02:19:48,139
+olacak. Sadece
+
+1415
+02:19:48,139 --> 02:19:49,799
+algoritmayı üstten
+
+1416
+02:19:49,799 --> 02:19:51,099
+bağlamaya çalışacağız.
+
+1417
+02:19:52,259 --> 02:19:54,079
+Bu durumda da hani en kötü
+
+1418
+02:19:54,079 --> 02:19:55,740
+durumda bundan kötü olamam.
+
+1419
+02:19:56,659 --> 02:19:58,380
+Benim için bu algoritmadaki
+
+1420
+02:19:58,380 --> 02:20:00,380
+en büyük mertebe, en kötü mertebe budur
+
+1421
+02:20:00,380 --> 02:20:01,859
+şeklinde bir çıkarım
+
+1422
+02:20:01,859 --> 02:20:03,240
+yapmış olacak.
+
+1423
+02:20:04,020 --> 02:20:05,839
+Eğer buradaki eşitlikler yerine
+
+1424
+02:20:05,839 --> 02:20:08,079
+büyüktür işareti yani eşitliği
+
+1425
+02:20:08,079 --> 02:20:09,919
+kaldırırsanız da bunları da küçük o
+
+1426
+02:20:09,919 --> 02:20:11,779
+küçük omega gösterimleri denir. Küçük
+
+1427
+02:20:11,779 --> 02:20:13,419
+teta gösterimi diye bir şey yoktur.
+
+1428
+02:20:14,279 --> 02:20:29,479
+Eğer görürseniz hocam ben küçük o diye bir şey gördüm ya da küçük omega diye bir şey gördüm derseniz onlar da şuradaki eşitlikleri kaldırdığınızda değmezleriniz noktaları oluşturacaktır.
+
+1429
+02:20:29,479 --> 02:20:45,999
+Evet. Anladık mı? Büyük o notasyonunu ve bir algoritmanın büyüme oranı fonksiyonunu üstten nasıl sınırladığını, bundan daha kötü olamaz dediğimizi.
+
+1430
+02:20:46,739 --> 02:20:56,739
+ve bunu da büyük O gn ile ifade ettiğimiz örneğin büyük O n² ya da büyük O log n ya da büyük O nlog n şeklindeki bir mertebe ile ifade ettiğimizde.
+
+1431
+02:20:59,739 --> 02:21:03,619
+Anladık diye düşünüyorum. Peki. Örneklere de bakacağız yine.
+
+1432
+02:21:05,219 --> 02:21:11,379
+Şöyle geçelim. Şimdi büyük O notasyonun belli bazı özellikleri var.
+
+1433
+02:21:11,379 --> 02:21:17,299
+İşi kolaylaştıran, bizim için anlamayı ve aktarmayı kolaylaştıran bazı özellikleri var.
+
+1434
+02:21:17,420 --> 02:21:18,059
+Onlara bakalım.
+
+1435
+02:21:18,639 --> 02:21:22,659
+Bir, düşük seviyeli terimleri göz ardı edebiliriz.
+
+1436
+02:21:24,659 --> 02:21:25,819
+Bu ne demek?
+
+1437
+02:21:26,119 --> 02:21:29,320
+Diyelim ki gm fonksiyonunu şöyle buldunuz.
+
+1438
+02:21:29,420 --> 02:21:31,460
+n küp artı 4 n kare artı 3 n.
+
+1439
+02:21:32,059 --> 02:21:34,659
+Şimdi bunu böyle yazabilirsiniz.
+
+1440
+02:21:34,659 --> 02:21:45,099
+Ama burada n küp varken kimse n kare ya da n mertebesine yani kubik bir artış varken kvadratik ya da lineer artışa pek takılmaz.
+
+1441
+02:21:45,099 --> 02:21:53,600
+Zaten burada domine eden bütün üstten esas sınırlandıran bir sınır var, asimtot var.
+
+1442
+02:21:53,979 --> 02:22:01,939
+O nedenle n küp artı 4 n kare artı 3'en bir algoritma aynı zamanda büyük o n küptür diyebilirsiniz.
+
+1443
+02:22:01,939 --> 02:22:08,199
+özetle üyeme fonksiyonu olarak sadece en yüksek seviyeli terimi kullanmanız yeterlidir.
+
+1444
+02:22:09,779 --> 02:22:13,379
+Eğer sabit bir çarpan varsa bunu da göz ardı edebilirsiniz.
+
+1445
+02:22:14,259 --> 02:22:21,139
+Bir algoritma 5n küp mertebesindeyse buradaki sabiti göz ardı edebiliriz.
+
+1446
+02:22:21,239 --> 02:22:24,239
+Zaten n küp var artık 5'e 3'e 10'a kim takar?
+
+1447
+02:22:24,879 --> 02:22:28,600
+Ama tabii n ise o zaman n üzeri 4 olacaktır o zaman takmanız gerekir.
+
+1448
+02:22:28,600 --> 02:22:41,199
+buradaki sabit değerler göz ardı edilir ve mertebesi, tekrar ediyorum mertebe yani seviyesi, büyüme seviyesi en küp mertebesindedir.
+
+1449
+02:22:41,199 --> 02:22:50,120
+En küp seviyesindedir. Bununla orantılıdır deriz. Demek ki düşük seviyeli terimleri attık. En yüksek seviyeli terimi tuttuk.
+
+1450
+02:22:50,579 --> 02:22:54,579
+En yüksek seviyeli terimin de sabiti varsa, çarpanı varsa onu da göz ardı ettik.
+
+1451
+02:22:54,579 --> 02:23:00,199
+Ama eğer burada başka bir değişkene bağlı bir çarpan varsa onu göz ardı edemem.
+
+1452
+02:23:00,199 --> 02:23:10,839
+Örneğin ikinci bir girdi var diyelim K gibi M gibi o zaman onu boşver diyemem o da değişken olduğu için m n küp ya da k n küp diye yazmam gerekir.
+
+1453
+02:23:11,239 --> 02:23:19,359
+Özellikle graf algoritmalarında hem kenar hem düğümler karmaşıklık yaratacağı için onlar da ve e şeklinde ifadeler göreceğiz.
+
+1454
+02:23:20,979 --> 02:23:23,460
+Büyüme oranı fonksiyonları birleştirilebilir.
+
+1455
+02:23:23,460 --> 02:23:35,139
+Yani elinizde büyük O fn artı büyük O gn şeklinde bir ifade varsa siz bunu birleştirip büyük O fn artı gn mertebesindedir diyebilirsiniz
+
+1456
+02:23:35,139 --> 02:23:44,859
+Yani bir algoritmanız var O n küp artı O dört n kare mertebesinde o zaman siz bunu O n küp artı dört n kare diyebilirsiniz
+
+1457
+02:23:44,859 --> 02:23:52,879
+Yukarıdaki özellikler nedeniyle de düşük terimleri atıp aslında bu O n küp mertebesindedir diyebilirsiniz
+
+1458
+02:23:52,879 --> 02:24:01,279
+yine çarpmada da aynı kural geçerli iç içe çarpabilirsiniz tabi o zaman çarpımlar ya da üçler artabilir onlara dikkat etmeniz gerekecek
+
+1459
+02:24:01,279 --> 02:24:09,480
+şimdi basitten karmaşa doğru ve yindelik hayata doğru örneklerle yolumuza devam edelim
+
+1460
+02:24:09,480 --> 02:24:18,320
+şimdi ilki çok basit sadece tek bir döngü var hatta geçen saatte bunları görmüştük aynı kod gördüğünüz gibi
+
+1461
+02:24:18,320 --> 02:24:29,680
+Şimdi benim buradaki toplam maliyetim ne? Buradaki döngü koşulu n artı bir kere kontrol ediliyor ve döngünün içindeki iki ifade de n'er kere çalışıyor.
+
+1462
+02:24:30,400 --> 02:24:38,460
+T n eşittir. Bir tane C1 artı bir tane C2 artı n artı bir tane C3 artı n tane C4 artı n tane C5.
+
+1463
+02:24:39,159 --> 02:24:45,180
+Yani şunları parantezlersek n mertebesinde bu kadar sabit. Bunu A diyelim.
+
+1464
+02:24:46,164 --> 02:24:47,103
+Bu da B.
+
+1465
+02:24:48,003 --> 02:24:49,823
+En üzeri sıfır.
+
+1466
+02:24:51,383 --> 02:24:52,104
+Bu en üzeri bir.
+
+1467
+02:24:52,183 --> 02:24:52,963
+Bu da en üzeri sıfır.
+
+1468
+02:24:53,084 --> 02:24:56,084
+Şimdi AN artı B.
+
+1469
+02:24:56,863 --> 02:24:58,063
+Böyle bir TN'im var.
+
+1470
+02:24:58,923 --> 02:25:00,584
+O zaman ben bunu
+
+1471
+02:25:00,584 --> 02:25:01,523
+ne yapıyorum?
+
+1472
+02:25:01,983 --> 02:25:02,383
+Düşük.
+
+1473
+02:25:02,383 --> 02:25:03,463
+Şöyle yazalım.
+
+1474
+02:25:03,703 --> 02:25:06,883
+TN eşittir.
+
+1475
+02:25:07,623 --> 02:25:09,943
+AN artı B.
+
+1476
+02:25:11,103 --> 02:25:12,743
+Küçük terimleri attım.
+
+1477
+02:25:13,403 --> 02:25:14,543
+Sabitleri attım.
+
+1478
+02:25:14,543 --> 02:25:16,303
+ne oldu bunun karmaşıklığı
+
+1479
+02:25:16,303 --> 02:25:18,883
+yani mertebesi en kötü durumda
+
+1480
+02:25:18,883 --> 02:25:20,524
+üstten sınırı
+
+1481
+02:25:20,524 --> 02:25:22,504
+ne oldu büyük o en oldu
+
+1482
+02:25:22,504 --> 02:25:24,283
+yani en kötü durumda
+
+1483
+02:25:24,283 --> 02:25:26,423
+lineer mertebede bir büyümeye
+
+1484
+02:25:26,423 --> 02:25:28,844
+sahiptir büyüme oranına sahiptir
+
+1485
+02:25:28,844 --> 02:25:30,603
+buradaki kod partisi
+
+1486
+02:25:30,603 --> 02:25:32,623
+buradaki algoritma diyebilirim
+
+1487
+02:25:32,623 --> 02:25:36,743
+ikinci örnek
+
+1488
+02:25:36,743 --> 02:25:38,443
+iç içe iki tane döngü
+
+1489
+02:25:38,443 --> 02:25:40,143
+burada bir vial burada bir vial var
+
+1490
+02:25:40,143 --> 02:25:42,443
+bu
+
+1491
+02:25:42,443 --> 02:25:44,524
+n artı bir kere kontrol edilecek
+
+1492
+02:25:44,523 --> 02:25:46,563
+Burada sabit bir işlem bir işlem.
+
+1493
+02:25:46,923 --> 02:25:48,603
+Bir tekrarlı cost bir cost iki.
+
+1494
+02:25:49,483 --> 02:25:50,863
+Burada bir cost dört var.
+
+1495
+02:25:51,143 --> 02:25:52,503
+N kere tekrar edecek.
+
+1496
+02:25:52,783 --> 02:25:55,603
+Sonra döngü N kere kontrol edecek.
+
+1497
+02:25:55,743 --> 02:25:57,363
+Ama N artı bir tane kontrol var.
+
+1498
+02:25:57,524 --> 02:25:58,983
+N kere N artı bir kontrol.
+
+1499
+02:25:59,763 --> 02:26:02,183
+C6 burası N kere dönecek.
+
+1500
+02:26:02,303 --> 02:26:04,763
+Ama dıştaki de N kere döndüğü için N çarpı N kere.
+
+1501
+02:26:04,863 --> 02:26:06,423
+Bu da aynı şekilde N çarpı N kere.
+
+1502
+02:26:07,103 --> 02:26:09,003
+Ve birinci döngü bitti.
+
+1503
+02:26:09,643 --> 02:26:13,683
+İkinci döngü yani dıştaki döngüde bir sabit N tane iş daha yapılacak.
+
+1504
+02:26:13,683 --> 02:26:15,783
+Bunun toplam maliyeti nedir?
+
+1505
+02:26:17,203 --> 02:26:28,024
+Cost 1, cost 2, n 1 tane cost 3, n tane cost 4, n kare cost 5 artı n cost 5 artı n kare cost 6 artı n kare cost 7 artı n tane cost 8.
+
+1506
+02:26:28,563 --> 02:26:30,423
+Hemen n kareleri bir paranteze al.
+
+1507
+02:26:31,524 --> 02:26:33,143
+Bunlar a olsun sabit.
+
+1508
+02:26:33,783 --> 02:26:35,143
+Bunları bir paranteze al.
+
+1509
+02:26:36,063 --> 02:26:37,623
+Bunlar b olsun sabit.
+
+1510
+02:26:38,103 --> 02:26:39,323
+Bunları da bir paranteze al.
+
+1511
+02:26:39,443 --> 02:26:40,763
+Bunlar da c sabit olsun.
+
+1512
+02:26:41,323 --> 02:26:41,723
+Ne oldu?
+
+1513
+02:26:41,723 --> 02:26:44,683
+fonksiyonum a n kare artı b n artı c
+
+1514
+02:26:44,683 --> 02:26:45,983
+küçük terimleri at
+
+1515
+02:26:45,983 --> 02:26:48,443
+mertebeleri küçük olanları n kareyi tut
+
+1516
+02:26:48,443 --> 02:26:50,203
+a sabitinde at
+
+1517
+02:26:50,203 --> 02:26:52,384
+elimdeki fonksiyonun
+
+1518
+02:26:52,384 --> 02:26:54,003
+büyüme oranının karmaşıklığı
+
+1519
+02:26:54,003 --> 02:26:56,384
+n kare mertebesindedir diye ifade
+
+1520
+02:26:56,384 --> 02:26:57,223
+etmiş oldum
+
+1521
+02:26:57,223 --> 02:27:00,563
+ya da iç içe 3 tane
+
+1522
+02:27:00,563 --> 02:27:01,343
+döngü olsun
+
+1523
+02:27:01,343 --> 02:27:04,044
+i eşittir birden n'e
+
+1524
+02:27:04,044 --> 02:27:07,083
+j eşittir birden i'ye
+
+1525
+02:27:07,083 --> 02:27:08,524
+birer birer artıyor
+
+1526
+02:27:08,524 --> 02:27:11,503
+k eşittir birden
+
+1527
+02:27:11,503 --> 02:27:13,824
+j'ye birer birer artıyor.
+
+1528
+02:27:13,903 --> 02:27:15,664
+x eşittir x artı bir diye sabit bir
+
+1529
+02:27:15,664 --> 02:27:17,203
+cost 1'e sahip bir işlem yapacağım.
+
+1530
+02:27:17,643 --> 02:27:19,783
+T'ye nedir? Toplam i eşittir birden
+
+1531
+02:27:19,783 --> 02:27:21,723
+n'e. Şurası.
+
+1532
+02:27:22,643 --> 02:27:23,164
+Bunun içinde
+
+1533
+02:27:23,164 --> 02:27:25,744
+çarpı toplam
+
+1534
+02:27:25,744 --> 02:27:27,763
+j eşittir birden i'ye. Bunun içinde
+
+1535
+02:27:27,763 --> 02:27:29,643
+çarpı k eşittir birden
+
+1536
+02:27:29,643 --> 02:27:31,503
+j'ye. Toplam işlem sayısı
+
+1537
+02:27:31,503 --> 02:27:33,263
+c1. Ne oldu?
+
+1538
+02:27:33,863 --> 02:27:35,963
+Burası n mertebesinde
+
+1539
+02:27:35,963 --> 02:27:37,643
+değil mi? Burası
+
+1540
+02:27:37,643 --> 02:27:39,403
+aslında bağımlı.
+
+1541
+02:27:39,903 --> 02:27:40,863
+N'den daha az.
+
+1542
+02:27:41,103 --> 02:27:42,683
+N çarpı bilmem ne falan.
+
+1543
+02:27:42,903 --> 02:27:43,423
+N bölü 2.
+
+1544
+02:27:43,483 --> 02:27:44,303
+Üçgen demiştik.
+
+1545
+02:27:44,743 --> 02:27:49,083
+Bu da N çarpı N artı 1 bölü 2 çarpı N çarpı N artı 1 bölü 2.
+
+1546
+02:27:49,563 --> 02:27:52,063
+Ama nihayetinde burada N mertebesinde bir şeyler.
+
+1547
+02:27:52,183 --> 02:27:53,683
+Burada da N mertebesinde bir şeyler var.
+
+1548
+02:27:53,803 --> 02:27:54,963
+Şuralara 3 nokta koyuyorum.
+
+1549
+02:27:55,103 --> 02:27:55,943
+Devamını yazmadım.
+
+1550
+02:27:56,903 --> 02:28:01,063
+N çarpı N çarpı N tane bir mertebede işlemden geçmem lazım.
+
+1551
+02:28:01,063 --> 02:28:03,403
+Evet bir kat sayısı var.
+
+1552
+02:28:03,563 --> 02:28:06,943
+Evet küçük mertebeli terimleri de var.
+
+1553
+02:28:07,383 --> 02:28:08,663
+Ama onların hepsini atıyorum.
+
+1554
+02:28:08,664 --> 02:28:18,464
+Burada bir n küp görüyorum ve buradaki iç içe 3 döngüye sahip olan algoritmada büyüme oranı fonksiyonunun n küp olduğunu söylüyorum.
+
+1555
+02:28:18,544 --> 02:28:21,044
+Büyük o n küp mertebesindedir diye ifade ediyorum.
+
+1556
+02:28:21,824 --> 02:28:24,824
+Eğer bunlardan bir tanesi logaritmik olsaydı o zaman iş değişirdi.
+
+1557
+02:28:24,923 --> 02:28:26,544
+n kare logen olabilirdi.
+
+1558
+02:28:26,543 --> 02:28:43,343
+Ama burada hepsi n'e bağlı n mertebesinde olduğu için sonrasındaki kat sayılar ya da daha düşük terimleri göz ardı edip büyüme oranının n küp mertebesinde olduğunu büyük o n küp ifadesiyle gösteriyorum.
+
+1559
+02:28:48,659 --> 02:28:50,659
+Peki.
+
+1560
+02:28:57,363 --> 02:29:00,363
+Şimdi bir algoritma
+
+1561
+02:29:00,363 --> 02:29:06,883
+aynı boyutta farklı sorunları çözmek için farklı süreleri de gereksinim duyabilir.
+
+1562
+02:29:07,843 --> 02:29:08,363
+Örneğin
+
+1563
+02:29:08,363 --> 02:29:11,763
+şöyle ki gir diye bağlı olarak tabii ki
+
+1564
+02:29:11,763 --> 02:29:14,964
+en elemanlı bir diziniz var ve bu dizide
+
+1565
+02:29:14,964 --> 02:29:19,983
+arama yapıyorsunuz. Tamam. Birinci elemana, ikinci elemana, üçüncü elemana baktınız.
+
+1566
+02:29:20,663 --> 02:29:23,083
+Şöyle diziyi yazalım şuraya. Şöyle basit bir dizi yapalım.
+
+1567
+02:29:24,284 --> 02:29:27,143
+Tamam. Şöyle elemanlar buralarda
+
+1568
+02:29:27,143 --> 02:29:55,463
+yer alıyor. Şimdi hatta değerleri de yazalım. Sıralı da olsun tamam mı? 2, 3, 6, 7, 9, 10, 11. Kusura bakmayın bu mouse yine saçmaladı. 7. Diyelim ki ben 15'i arıyorum. K eşitliği, X eşittir 15'i arıyorum.
+
+1569
+02:29:59,252 --> 02:30:03,252
+x eşittir 15'i arıyorum.
+
+1570
+02:30:06,551 --> 02:30:14,971
+Başladım buradan bakmaya. Linear bir arama yapacağım. Tamam. Eşit mi? 15'e? Hayır. Eşit mi? Hayır. Hayır. Hayır. Hayır. Hayır. Hayır.
+
+1571
+02:30:15,432 --> 02:30:21,432
+Buraya kadar geldim. Bitti. En tane elemanla karşılaştırdım ve hala bulamadım. Değil mi?
+
+1572
+02:30:21,432 --> 02:30:25,032
+Bu benim yaşayabileceğim en kötü durum.
+
+1573
+02:30:25,411 --> 02:30:31,071
+İşte en kötü durum analizi yani worst case analiz böyle bir durumla karşılaşmamı ifade eder.
+
+1574
+02:30:31,711 --> 02:30:41,112
+Ve algoritmamın en boyutundaki problemi çözmesi için gerek duyduğu maksimum en uzun sürenin ne olduğunu bana söyler.
+
+1575
+02:30:41,231 --> 02:30:45,272
+Ve aslında algoritma karmaşıklığının üst sınırını verir.
+
+1576
+02:30:45,272 --> 02:30:53,671
+Genel olarak biz özellikle bu sene bu ders kapsamında hep en kötü durum davranışını inceleyeceğiz ve en kötü durumda ne olabilir?
+
+1577
+02:30:54,171 --> 02:30:59,012
+Üst sınırı nedir? Asimptotik üst sınırı nedir? Bunu ifade etmeye çalışacağız.
+
+1578
+02:31:00,071 --> 02:31:03,811
+Bunun dışında en iyi durumla da karşılaşabiliriz. Yani mesela x eşittir 2.
+
+1579
+02:31:04,711 --> 02:31:06,912
+Tersten yazmaya çalışacağım.
+
+1580
+02:31:09,792 --> 02:31:11,652
+Tersten yazınca daha az şey yapıyor.
+
+1581
+02:31:11,652 --> 02:31:21,252
+x eşittir 2. Bakmaya başladım. Tak birinci elemanda buldum. Vay şansa bak. Sadece tek bir işlem yaptım. Tek bir karşılaştırma ve buldum.
+
+1582
+02:31:21,811 --> 02:31:28,292
+İşte aslında buradaki karmaşıklığım ne oldu? 1 değil mi? O 1. Tek bir işlem. Sabit işlem yapmış oldum.
+
+1583
+02:31:30,512 --> 02:31:39,752
+Bir algoritmanın en boyutundaki problemi çözmesi için gereken en az süre minimum yani asgari süre en iyi durum yani best case analizi olarak bilinir.
+
+1584
+02:31:39,752 --> 02:31:43,451
+çok kullanışlı değildir ama şunu söyler bundan aşağı düşemezsin.
+
+1585
+02:31:43,652 --> 02:31:45,912
+Yani bu kadar işlemi minimumda yapmak zorundasın.
+
+1586
+02:31:46,531 --> 02:31:47,811
+Bir atışta bulsan bile.
+
+1587
+02:31:50,031 --> 02:31:53,192
+Ya da tek bir adımda hedefe ulaşabiliyor olsan bile.
+
+1588
+02:31:54,811 --> 02:31:56,432
+Bir de ortalama durum analizimiz var.
+
+1589
+02:31:58,272 --> 02:32:03,591
+Algorithmanın en boyutundaki problemi çözmesi için gereken ortalama süreyi ifade eder.
+
+1590
+02:32:04,091 --> 02:32:06,031
+Çoğunlukla bunu belirlemek biraz zordur.
+
+1591
+02:32:06,031 --> 02:32:10,332
+genellikle olası veri durumu değerlendirilip bunun dağılımına bakılır.
+
+1592
+02:32:10,332 --> 02:32:11,511
+Yani nasıl yapılır?
+
+1593
+02:32:11,912 --> 02:32:16,171
+Mesela burada mesela bu dizide 7 tane eleman var değil mi?
+
+1594
+02:32:16,431 --> 02:32:17,231
+En eşittir 7.
+
+1595
+02:32:18,871 --> 02:32:24,211
+Mesela 21 kere deney yapılır.
+
+1596
+02:32:24,552 --> 02:32:29,071
+21 tane sayı üretilip ya da ne bileyim 210 tane tamam mı?
+
+1597
+02:32:29,151 --> 02:32:31,612
+Sayı üretilip aranır.
+
+1598
+02:32:31,912 --> 02:32:33,591
+210 kere bu dizide ararsınız.
+
+1599
+02:32:33,591 --> 02:32:37,112
+ondan sonra da bulduğunuz adım sayısını 210'a bölersiniz.
+
+1600
+02:32:37,351 --> 02:32:40,271
+Ne yaptınız? Ortalama bir değer buldunuz.
+
+1601
+02:32:40,972 --> 02:32:48,791
+İşte içinde en iyi durum da olacak, en kötü durum da olacak, çoğunlukla ortalarda durumlar da olacak.
+
+1602
+02:32:48,791 --> 02:32:54,791
+Bunların hepsini yeterince fazla sayıda tekrar koşturup ondan sonra ortalamasını alırsanız
+
+1603
+02:32:55,612 --> 02:32:59,571
+bu algoritma ortalamada şu kadar süre gerektirir.
+
+1604
+02:32:59,571 --> 02:33:04,331
+yani süre karmaşıklığı bu kadardır şeklinde bir çıkarım yapabilirsiniz.
+
+1605
+02:33:05,051 --> 02:33:07,931
+Bunun çoğunlukla dediğim gibi belirlenmesi biraz daha zor.
+
+1606
+02:33:08,091 --> 02:33:09,791
+Bunun yine analiz yöntemleri var.
+
+1607
+02:33:09,791 --> 02:33:14,531
+Ama en kötü durum analizi ortalama durum analizinden genellikle daha çok kullanılır.
+
+1608
+02:33:14,631 --> 02:33:22,051
+Ve özellikle bu sene yani bu ders kapsamında biz hep en kötü durum analizi üzerinden değerlendirmelerimizi yapacağız.
+
+1609
+02:33:25,451 --> 02:33:28,391
+Büyük O notasyonuyla ya da çalışıyor.
+
+1610
+02:33:28,391 --> 02:33:31,492
+ve karmaşıklığımızı ifade ediyor olacağız.
+
+1611
+02:33:31,651 --> 02:33:32,871
+Bundan daha kötü olamayız.
+
+1612
+02:33:33,591 --> 02:33:35,912
+Bizim en kötü durumdaki mertebemiz budur.
+
+1613
+02:33:35,912 --> 02:33:41,951
+Bunun daha ötesine geçmek olanaksızdır bu algoritmayla şeklinde bir yaklaşım göstermiş olacağız.
+
+1614
+02:33:42,804 --> 02:33:46,923
+Şimdi en basitinden başlayalım. Hatta demin örneğini yaptım.
+
+1615
+02:33:47,184 --> 02:33:51,043
+Sıralı arama. Tahtada olsaydım bunların akışlarını çizecektim size.
+
+1616
+02:33:51,524 --> 02:33:54,743
+Sizlerden ricam mutlaka bunları akış haline getirin.
+
+1617
+02:33:55,104 --> 02:33:56,583
+Akış diagramlarıyla çalışın.
+
+1618
+02:33:56,963 --> 02:34:00,383
+Pek çoğunu geçen senede zaten gördünüz bugün vereceğim örneklerin ama
+
+1619
+02:34:00,383 --> 02:34:06,144
+hatırlamak için tekrar tekrar bunların üzerinden geçmekte fayda var.
+
+1620
+02:34:06,323 --> 02:34:10,823
+Kontrollerine, eşitliklerine, küçüklerine, büyüklerine, küçük eşitlerine falan
+
+1621
+02:34:10,823 --> 02:34:12,383
+dikkat ederek buradaki
+
+1622
+02:34:12,383 --> 02:34:15,583
+akışlarınızı
+
+1623
+02:34:15,583 --> 02:34:17,183
+tasarlamanızı tavsiye ediyorum.
+
+1624
+02:34:17,703 --> 02:34:19,343
+Şimdi sıralı arama.
+
+1625
+02:34:19,984 --> 02:34:20,283
+Eğer
+
+1626
+02:34:20,283 --> 02:34:23,143
+burada mesela kötü bir kodlama örneği var.
+
+1627
+02:34:23,143 --> 02:34:24,003
+Gördüğünüz gibi.
+
+1628
+02:34:25,363 --> 02:34:27,223
+Enden küçük olduğu sürece
+
+1629
+02:34:27,223 --> 02:34:29,003
+ve eşit olmadığı sürece
+
+1630
+02:34:29,003 --> 02:34:30,484
+devam et. Neye devam et?
+
+1631
+02:34:30,923 --> 02:34:33,463
+Bakmaya devam et. Eğer sona geldiysen
+
+1632
+02:34:33,463 --> 02:34:35,603
+bulamamışsındır. Eğer sona gelmediysen
+
+1633
+02:34:35,603 --> 02:34:36,823
+o zaman i'yi
+
+1634
+02:34:36,823 --> 02:34:38,484
+bulmuşsun demektir.
+
+1635
+02:34:38,484 --> 02:34:49,143
+Şimdi ben bir önceki slide'da olduğu gibi eğer bulamazsam x eşittir 15 gibi değer varsa mutlaka bütün en tane elemanın hepsiyle karşılaştırma yapmam gerekir.
+
+1636
+02:34:49,263 --> 02:34:54,244
+Yani büyük o notasyonunda en mertebesinde işlem yapmam gerekir.
+
+1637
+02:34:54,863 --> 02:34:55,863
+Diyelim ki bulabiliyorum.
+
+1638
+02:34:56,583 --> 02:34:57,484
+En iyi durum nedir?
+
+1639
+02:34:57,704 --> 02:34:58,884
+İlk elemanda bulurum.
+
+1640
+02:34:59,604 --> 02:35:01,183
+İki değerini bulmuştum hatırlayalım.
+
+1641
+02:35:02,123 --> 02:35:04,804
+Bu sabit tek bir işlem yapmayı gerektiriyor.
+
+1642
+02:35:04,863 --> 02:35:07,824
+O yüzden o bir yani sabit sayıda işlemle bulabiliyorum.
+
+1643
+02:35:08,783 --> 02:35:12,123
+En kötü durum aranan değer son elemandır.
+
+1644
+02:35:12,804 --> 02:35:15,043
+Yani 11 değerini arıyorumdur.
+
+1645
+02:35:15,123 --> 02:35:16,783
+Yine tık tık tık tık tık tık tık tık.
+
+1646
+02:35:17,243 --> 02:35:22,423
+11 yani en tane değeri 11'i bulana kadar 7 tane değerle karşılaştırma yapmak zorunda kalırım.
+
+1647
+02:35:22,603 --> 02:35:23,063
+Yine o en.
+
+1648
+02:35:24,263 --> 02:35:25,083
+Peki ortalama?
+
+1649
+02:35:25,863 --> 02:35:35,943
+Ortalama durumda mesela bir karşılaştırma yaptıklarım, iki karşılaştırma, üç karşılaştırma ya da yedi karşılaştırma yaptıklarımın sayılarının eşit olması beklenir.
+
+1650
+02:35:35,943 --> 02:35:54,624
+Ve buradaki toplamı n'e böldüğümde de aslında yine en kötü durumda üstten sınırımın, asimptotik üst limitimin normalde n bölü 2 ya, ortalamada n bölü 2 adımda sonuca varmayı hesaplarım değil mi?
+
+1651
+02:35:54,804 --> 02:35:55,503
+Yani beklerim.
+
+1652
+02:35:55,843 --> 02:36:01,824
+Hepsinin eşit olasılıkla geldiğini düşünürsem toplam olasılık 1 bölü 2 n gibi olacaktır.
+
+1653
+02:36:01,824 --> 02:36:08,804
+Ama büyük O notasyonunda yani üstten bunu sınırladığınızda 1 bölü 2 sabitinin bir önemi yok.
+
+1654
+02:36:08,984 --> 02:36:10,824
+O yüzden bunu siliyorum ve O N kalıyor.
+
+1655
+02:36:11,024 --> 02:36:23,384
+İşte o yüzden de ortalamada da aslında büyük O notasyonunda N mertebesinde bir karmaşıklar sahibim sıralı arama algoritmasında.
+
+1656
+02:36:25,384 --> 02:36:29,104
+Peki şimdi dizi zaten sıralıydı.
+
+1657
+02:36:29,104 --> 02:36:46,384
+Dizi kaçtı? 2, 3, 6, 7, 9, 10, 11'dir değil mi? Şuraya yazalım. 2, 3, 6, 7, 9, 10 ve 11. Bu şekilde bir diziye sahibiz.
+
+1658
+02:36:47,003 --> 02:36:53,244
+Şimdi ben burada ikili arama da kullanabilirim. İkili arama ne demek? 2'ye böle böle ara demek.
+
+1659
+02:36:53,244 --> 02:36:58,363
+Şimdi bu durumda da mesela diyelim ki ben x eşittir 7'yi arıyorum.
+
+1660
+02:37:00,124 --> 02:37:01,223
+Dizi 7 elemanlı.
+
+1661
+02:37:01,384 --> 02:37:03,783
+7 bölü 2 kaç?
+
+1662
+02:37:04,283 --> 02:37:04,544
+4.
+
+1663
+02:37:04,704 --> 02:37:05,564
+3.5'dan 4.
+
+1664
+02:37:05,723 --> 02:37:06,363
+Yani yukarı.
+
+1665
+02:37:06,844 --> 02:37:07,804
+Burada aşağı şey yaptık.
+
+1666
+02:37:07,904 --> 02:37:08,244
+Yani yukarı.
+
+1667
+02:37:08,384 --> 02:37:10,664
+Yani 4 ortadaki elemandan başladım bakmayın.
+
+1668
+02:37:11,643 --> 02:37:13,524
+İlk karşılaştırmada buldum değil mi?
+
+1669
+02:37:14,083 --> 02:37:19,583
+O zaman sabit sayıda işlemle ben sonucu üretebildim.
+
+1670
+02:37:19,904 --> 02:37:21,083
+Bu benim en iyi durumum.
+
+1671
+02:37:21,363 --> 02:37:21,984
+Best case.
+
+1672
+02:37:21,983 --> 02:37:24,143
+ve büyük o bir. Sabit.
+
+1673
+02:37:24,963 --> 02:37:25,963
+Tek işlemde buldum.
+
+1674
+02:37:26,963 --> 02:37:28,143
+Tek adımda buldum.
+
+1675
+02:37:28,443 --> 02:37:30,283
+Tek adımda da sabit sayıda işlem yaptım.
+
+1676
+02:37:30,343 --> 02:37:30,923
+O yüzden o bir.
+
+1677
+02:37:32,103 --> 02:37:34,543
+En kötü duruma bakalım. Mesela x eşittir.
+
+1678
+02:37:35,223 --> 02:37:36,123
+15'i aradık.
+
+1679
+02:37:37,876 --> 02:37:40,655
+Binary Search nasıl çalışacak? Ortadan başladı 7.
+
+1680
+02:37:41,195 --> 02:37:47,096
+7, 15'ten küçük. O zaman şu aralığı arama uzayı olarak güncelleyecek.
+
+1681
+02:37:47,256 --> 02:37:48,955
+Bunun ortasına gelecek 10.
+
+1682
+02:37:49,955 --> 02:37:56,155
+10, 15'ten küçük. O zaman şu uzayı tekrar arama uzayı olarak güncelleyecek.
+
+1683
+02:37:56,275 --> 02:37:57,175
+Yine sağ tarafını.
+
+1684
+02:37:57,755 --> 02:38:00,636
+11, tek eleman var. 11 ile karşılaştırdı.
+
+1685
+02:38:01,376 --> 02:38:02,175
+Büyük.
+
+1686
+02:38:03,175 --> 02:38:06,395
+O zaman sağ gitmeye çalışacak.
+
+1687
+02:38:06,395 --> 02:38:09,195
+gidemediği için en boyutunu geçtiği için
+
+1688
+02:38:09,195 --> 02:38:10,515
+burada duracak. Yani
+
+1689
+02:38:10,515 --> 02:38:13,315
+o en kötü
+
+1690
+02:38:13,315 --> 02:38:14,955
+durumda ya yoktur ya da
+
+1691
+02:38:14,955 --> 02:38:16,955
+aranan değer x eşittir 15
+
+1692
+02:38:16,955 --> 02:38:18,275
+ya da x eşittir 11
+
+1693
+02:38:18,275 --> 02:38:21,135
+durumudur. Son bakılan konumda
+
+1694
+02:38:21,135 --> 02:38:23,015
+yani log n artı 1 olabilir.
+
+1695
+02:38:23,475 --> 02:38:24,775
+Bu durumda artı 1
+
+1696
+02:38:24,775 --> 02:38:26,595
+sabitini de atıyoruz ve
+
+1697
+02:38:26,595 --> 02:38:28,335
+en kötü durumda benim
+
+1698
+02:38:28,335 --> 02:38:30,895
+binary search'te ikili aramada
+
+1699
+02:38:30,895 --> 02:38:32,775
+karmaşıklığımın ya da
+
+1700
+02:38:32,775 --> 02:38:34,775
+üstten sınırlayan mertebemin
+
+1701
+02:38:34,775 --> 02:38:35,556
+log
+
+1702
+02:38:35,556 --> 02:38:38,776
+en mertebesinde olduğunu söyleyebilirim.
+
+1703
+02:38:38,835 --> 02:38:41,076
+Yani büyük o log n olduğunu ifade edebilirim.
+
+1704
+02:38:41,736 --> 02:38:42,755
+Ortalamada nedir?
+
+1705
+02:38:43,255 --> 02:38:45,615
+Karşılaştırma sayısının her zaman log n'den,
+
+1706
+02:38:45,715 --> 02:38:48,096
+her zaman değil, ortalamada küçük olacağını biliyorum.
+
+1707
+02:38:48,736 --> 02:38:50,355
+Birden de büyük olacağını da biliyorum.
+
+1708
+02:38:50,816 --> 02:38:53,355
+Toplam elemanları böldüğünüzde,
+
+1709
+02:38:53,896 --> 02:38:56,115
+ortalama yenileme sayısına baktığınızda,
+
+1710
+02:38:56,195 --> 02:38:57,956
+şurada bir örnek var 7 elemanın için,
+
+1711
+02:38:57,956 --> 02:38:59,995
+eğer bunu arıyorsanız,
+
+1712
+02:39:00,215 --> 02:39:01,655
+tam ortadaki elemanı arıyorsanız,
+
+1713
+02:39:02,056 --> 02:39:03,176
+bir adımdan,
+
+1714
+02:39:04,096 --> 02:39:05,416
+şunları arıyorsanız,
+
+1715
+02:39:05,556 --> 02:39:11,556
+İki adımda bunları arıyorsanız ya da dışındaki bir şeyi arıyorsanız üç adımda bulacaksınız.
+
+1716
+02:39:12,115 --> 02:39:15,155
+Bunlara da toplam karşılaştırma ya da yenileme sayısı adını verdik.
+
+1717
+02:39:15,155 --> 02:39:20,655
+Bunu topladığımızda 3, 5, 8, 9, 12, 14, 17.
+
+1718
+02:39:20,816 --> 02:39:23,456
+Toplam 17 karşılaştırma 7 eleman.
+
+1719
+02:39:23,596 --> 02:39:26,975
+17 bölü 7 2.4 bilmem ne.
+
+1720
+02:39:27,456 --> 02:39:32,456
+Bu da logaritma 2 tabanında 7'den biraz daha küçük bir rakam.
+
+1721
+02:39:32,455 --> 02:39:35,655
+Ama yine logaritma 2 tabanında 7 bunu üstten sınırlıyor.
+
+1722
+02:39:36,115 --> 02:39:46,535
+O yüzden ortalama durumda da yine benim log n'den daha az sayıda karşılaştırma yapsam da ona yakın bir üst sınıra sahip olduğunu biliyorum.
+
+1723
+02:39:46,535 --> 02:39:57,255
+Ve şuradaki hesapla gösterdiğim gibi bu ortalamada da büyük o notasyonunda log n mertebesinde bir karmaşıklığa sahip olduğunu ifade ediyorum.
+
+1724
+02:39:57,255 --> 02:40:07,115
+Demek ki ben eğer sıralı arama yaparsam ON mertebesinde en kötü ortalama durum karmaşıklığına sahibim.
+
+1725
+02:40:07,755 --> 02:40:09,655
+Üstten sınırlayarak sadece.
+
+1726
+02:40:10,775 --> 02:40:19,035
+İkili arama yaptığımda ise LOGAN mertebesinde bir en kötü durum ya da üstten sınırlı mertebeye sahibim.
+
+1727
+02:40:20,375 --> 02:40:20,575
+Tamam.
+
+1728
+02:40:21,655 --> 02:40:25,195
+Bu da binary search ile alakalı hızlı bir kod.
+
+1729
+02:40:25,195 --> 02:40:31,075
+Dediğim gibi tekrar bunun akışını aslında çizmek isterdim ama o kadar şey kalmadı.
+
+1730
+02:40:32,775 --> 02:40:37,095
+Tablet olanam olmadığı için mouse'la bu şekilde idare edeceğiz.
+
+1731
+02:40:37,615 --> 02:40:38,135
+Ne yapacağız?
+
+1732
+02:40:38,315 --> 02:40:41,695
+İşte low ve high yani sol ve sağ indeksleri tutuyor olmam lazım.
+
+1733
+02:40:42,175 --> 02:40:44,415
+Bir de arayacağım midi bulmam lazım.
+
+1734
+02:40:44,415 --> 02:40:48,395
+low high'dan küçük eşit olduğu sürece
+
+1735
+02:40:48,395 --> 02:40:54,815
+yani ben buradaki dizide arama uzayını dışına çıkmadığım sürece
+
+1736
+02:40:54,815 --> 02:40:56,376
+aramaya devam etmem lazım.
+
+1737
+02:40:56,895 --> 02:40:58,115
+Orta değeri bulmalıyım.
+
+1738
+02:40:58,595 --> 02:41:03,495
+Orta değer eğer x'den küçükse ortayı sağ taraf olacak şekilde güncellemeliyim.
+
+1739
+02:41:03,876 --> 02:41:08,475
+Daha doğrusu arama uzayını ortanın sağı olacak şekilde güncellemeliyim.
+
+1740
+02:41:08,596 --> 02:41:10,895
+Değilse solu olacak şekilde güncellemeliyim.
+
+1741
+02:41:10,895 --> 02:41:21,175
+Bu şekilde ufalta ufalta en sonunda değeri bulup eğer bulamıyorsam da hiçbir şey yoksa da bulamadım diye çıkış yaparak yoluma devam etmem gerekiyor.
+
+1742
+02:41:23,435 --> 02:41:32,075
+İkiye bölerek diziyi gittiğimiz için yani bir adımda bununla karşılaştırdım ve ya bu tarafa ilerledim ya bu tarafa ilerledim.
+
+1743
+02:41:32,175 --> 02:41:34,655
+Yani bir anda dizinin yarısından kurtuldum.
+
+1744
+02:41:35,507 --> 02:41:38,087
+Sonra da diğer kalanın yarısından kurtuldum.
+
+1745
+02:41:38,327 --> 02:41:40,227
+Sadece şurada çalıştım buldum ya da bulamadım.
+
+1746
+02:41:40,707 --> 02:41:44,647
+Böyle ikiye böyle böyle ilerlediğimiz için log n mertebesindeyiz aslında.
+
+1747
+02:41:45,407 --> 02:41:48,527
+En iyi durumda bir sabit karmaşıklık.
+
+1748
+02:41:48,928 --> 02:41:52,327
+En kötü durumda log n artı bir yani log n karmaşıklık.
+
+1749
+02:41:52,887 --> 02:41:58,667
+Ortalama durumda da log n'den az ama log n tarafından üstten kısıtlanmış bir karmaşıklığa sahibim.
+
+1750
+02:41:58,667 --> 02:42:12,447
+Ve özetle büyük o notasyonunda yani üst asimtot tanımında ben en kötü durumda ve ortalama durumda log n karmaşıklıktayım ikili arama kullandığımda diye ifade edebilirim.
+
+1751
+02:42:14,348 --> 02:42:26,728
+Şimdi hemen hızlıca bir de sortlara bakalım sıralama algoritmalarımıza yine geçen seneden hatta geçen seneden itibaren bildiğimiz öğrendiğimiz detaylarını gördüğümüz algoritmalara bakalım.
+
+1752
+02:42:26,727 --> 02:42:29,907
+En temeli en basit neydi? Bubble Sword. Kabarcık sıralamaydı.
+
+1753
+02:42:30,447 --> 02:42:31,347
+Burada ne yapıyorduk?
+
+1754
+02:42:32,267 --> 02:42:37,827
+Dizin elemanlarını baştan sona doğru ikili ikili karşılaştırıyorduk ve büyük elemanı sona taşıyorduk.
+
+1755
+02:42:37,987 --> 02:42:43,728
+Bir kabarcık gibi büyük elemanlar fıkır fıkır fıkır dizinin sonuna doğru taşınmaya çalışıyordu.
+
+1756
+02:42:44,728 --> 02:42:47,647
+Ve en büyük eleman kabarcık gibi dizinin en sonuna doğru.
+
+1757
+02:42:47,787 --> 02:42:52,507
+Sonra sıradaki en büyük eleman ikinci sıraya, sondan ikinci sıraya, sondan üçüncü, sondan dördüncü.
+
+1758
+02:42:52,507 --> 02:42:53,408
+o şekilde
+
+1759
+02:42:53,408 --> 02:42:56,668
+sıralama gerçekleştiriliyor.
+
+1760
+02:42:58,567 --> 02:43:00,527
+Şimdi bunun dediğim gibi akışını
+
+1761
+02:43:00,527 --> 02:43:01,808
+geçen sene çizdik.
+
+1762
+02:43:02,747 --> 02:43:03,847
+Bu sene artık
+
+1763
+02:43:03,847 --> 02:43:06,567
+slide'da maalesef
+
+1764
+02:43:06,567 --> 02:43:08,088
+anlatmak zorunda kaldığım için
+
+1765
+02:43:08,088 --> 02:43:10,448
+pseudo koda çevirdim. Şu şekilde
+
+1766
+02:43:10,448 --> 02:43:12,668
+sıfırdan n-2. Bunları birden
+
+1767
+02:43:12,668 --> 02:43:14,668
+n-1 olarak değiştirebilirsiniz.
+
+1768
+02:43:15,327 --> 02:43:15,507
+Ben
+
+1769
+02:43:15,507 --> 02:43:18,368
+nedense sıfırdan diye yapmışım bu kodu.
+
+1770
+02:43:18,868 --> 02:43:20,448
+Hiç önemli değil. Bunları birden
+
+1771
+02:43:20,448 --> 02:43:22,268
+n-1, birden n-1,
+
+1772
+02:43:22,267 --> 02:43:24,447
+i'ye kadar da devam ettirebilirsiniz.
+
+1773
+02:43:25,487 --> 02:43:26,447
+Şimdi bunun
+
+1774
+02:43:26,447 --> 02:43:28,607
+karmaşıklığını analiz
+
+1775
+02:43:28,607 --> 02:43:29,867
+edecek olursak
+
+1776
+02:43:29,867 --> 02:43:32,307
+ne görüyoruz? Burada
+
+1777
+02:43:32,307 --> 02:43:34,287
+n mertebesinde
+
+1778
+02:43:34,287 --> 02:43:36,627
+bir döngü olduğunu görüyoruz.
+
+1779
+02:43:37,627 --> 02:43:38,387
+Bunun içinde
+
+1780
+02:43:38,387 --> 02:43:40,487
+n mertebesinde ikinci bir döngü
+
+1781
+02:43:40,487 --> 02:43:42,247
+olduğunu da görüyoruz ve burada da bir
+
+1782
+02:43:42,247 --> 02:43:44,267
+kontrol. Kontrolün içinde de
+
+1783
+02:43:44,267 --> 02:43:45,868
+üç tane sabit sayıda işlem.
+
+1784
+02:43:46,448 --> 02:43:48,228
+Basitçe, çok kabaca ben
+
+1785
+02:43:48,228 --> 02:43:49,927
+bubble sort'un buradaki
+
+1786
+02:43:49,927 --> 02:43:52,247
+iki tane n ve sabit
+
+1787
+02:43:52,247 --> 02:43:54,187
+sayıda işlem olduğu için
+
+1788
+02:43:54,187 --> 02:43:56,287
+n
+
+1789
+02:43:56,287 --> 02:43:59,867
+çarpı
+
+1790
+02:43:59,867 --> 02:44:03,947
+c sabiti
+
+1791
+02:44:03,947 --> 02:44:05,747
+şuradaki iflerden doğan
+
+1792
+02:44:05,747 --> 02:44:07,507
+ifin içindeki doğan c sabiti
+
+1793
+02:44:07,507 --> 02:44:10,667
+kospiratikoski bilmem ne olduğunu söyleyebilirim.
+
+1794
+02:44:10,827 --> 02:44:11,727
+Sabiti atıyorum
+
+1795
+02:44:11,727 --> 02:44:14,467
+n kare mertebesindedir
+
+1796
+02:44:14,467 --> 02:44:16,387
+diye bunu ifade ediyorum.
+
+1797
+02:44:18,207 --> 02:44:20,767
+Tamam. Büyük o n karededir
+
+1798
+02:44:20,767 --> 02:44:22,747
+diye bunun karmaşıklığını ifade
+
+1799
+02:44:22,747 --> 02:44:24,667
+ettik. Bir diğer bir
+
+1800
+02:44:24,667 --> 02:44:26,868
+sonraki algoritmamız selection sorttu.
+
+1801
+02:44:27,527 --> 02:44:28,587
+Burada da ne yapıyorduk?
+
+1802
+02:44:28,647 --> 02:44:30,187
+Her bir iterasyonda
+
+1803
+02:44:30,187 --> 02:44:32,547
+küçükten büyük ya da büyükten
+
+1804
+02:44:32,547 --> 02:44:34,607
+küçüğe sıralamaya göre ya en küçük ya da en büyük
+
+1805
+02:44:34,607 --> 02:44:36,767
+elemanı seçiyoruz ve baştan başlayarak
+
+1806
+02:44:36,767 --> 02:44:38,728
+bunları diziye yerleştiriyoruz.
+
+1807
+02:44:39,247 --> 02:44:40,547
+Kalan elemanların en küçüğünü
+
+1808
+02:44:40,547 --> 02:44:42,927
+seçip bir yerleştirme
+
+1809
+02:44:42,927 --> 02:44:44,007
+yapıyoruz. Yani aslında
+
+1810
+02:44:44,007 --> 02:44:46,607
+şurada dıştaki
+
+1811
+02:44:46,607 --> 02:44:48,787
+döngüde yine en adım dönüyorum.
+
+1812
+02:44:50,207 --> 02:44:50,607
+Bunun içinde
+
+1813
+02:44:50,607 --> 02:44:52,647
+sabit bir atama yani minimum değer
+
+1814
+02:44:52,647 --> 02:44:54,567
+minimum indisi şudur diye bir atama yapıyorum.
+
+1815
+02:44:54,787 --> 02:44:56,527
+Sonra da i'den
+
+1816
+02:44:56,527 --> 02:44:58,527
+n'e kadar. Burada yine
+
+1817
+02:44:58,527 --> 02:45:00,407
+koşullu bağlantılı bir şey var.
+
+1818
+02:45:00,567 --> 02:45:01,967
+Yani n artı 1 bölü 2
+
+1819
+02:45:01,967 --> 02:45:04,447
+tane aslında işlem yapıyorum.
+
+1820
+02:45:05,387 --> 02:45:06,627
+Bunun içinde yine sabit
+
+1821
+02:45:06,627 --> 02:45:08,287
+sayıda bir işlem var. Bu
+
+1822
+02:45:08,287 --> 02:45:10,527
+for döngüsünün dışında içteki
+
+1823
+02:45:10,527 --> 02:45:11,727
+for döngüsünün içinde
+
+1824
+02:45:11,727 --> 02:45:14,367
+sabit sayıda n tane işlem
+
+1825
+02:45:14,367 --> 02:45:16,527
+daha yapıyorum. Yani n çarpı
+
+1826
+02:45:16,527 --> 02:45:20,347
+n artı 1 bölü 2
+
+1827
+02:45:20,347 --> 02:45:22,728
+artı sabit
+
+1828
+02:45:22,728 --> 02:45:24,567
+n gibi bir işlem yapıyorum.
+
+1829
+02:45:25,168 --> 02:45:26,647
+Bunu çarptığımızda
+
+1830
+02:45:26,647 --> 02:45:28,647
+yine en büyük oranlı
+
+1831
+02:45:28,647 --> 02:45:30,467
+şeyi aldığımızda böyle 1 bölü 2
+
+1832
+02:45:30,467 --> 02:45:31,967
+n kare artı
+
+1833
+02:45:31,967 --> 02:45:33,747
+diye giden bir şey görüyorum.
+
+1834
+02:45:34,291 --> 02:45:50,451
+daha küçük mertebeleri attım. Buradaki kat sayıyı da attım. Geriye ne kaldı? n² mertebesi kaldı. Yani o n² selection sortunda üstten sınırlayan karmaşıklık mertebesidir diyoruz.
+
+1835
+02:45:50,951 --> 02:46:03,552
+Toplamda dediğim gibi n² bölü 2 mertebesinde karşılaştırma var. n mertebesinde de, şurada gördüğümüz n mertebesinde de sabit sayıda n mertebesinde yer değiştirme var.
+
+1836
+02:46:03,552 --> 02:46:13,552
+Fakat nihayetinde şuradaki tn fonksiyonunu çözdüğümüzde n kare mertebesi nedeniyle ben bunun da büyük O n karede olduğunu söyleyebilirim.
+
+1837
+02:46:14,872 --> 02:46:18,391
+Ve çok hızlı son olarak insertion sort'tan da bahsedeyim.
+
+1838
+02:46:20,591 --> 02:46:27,512
+Insertion sort'ta da küçük elemanı mümkün olduğunca ilgili yere kaydırarak taşımaya çalışıyoruz.
+
+1839
+02:46:27,512 --> 02:46:30,391
+Aynı işkambi kağıtların elimizde dizdiğimiz bir algoritma.
+
+1840
+02:46:30,391 --> 02:46:38,491
+sıralıdan bir sırayla yeni elemanı al, önceki sıralı kısmına karşılaştırarak olması gereken yere taşı şeklinde bir ifade.
+
+1841
+02:46:38,491 --> 02:46:43,451
+Burada da n tane elemanın üzerinden bir geçmemiz gerekiyor.
+
+1842
+02:46:43,631 --> 02:46:47,911
+İşte yine n mertebesinde işlem yapmam lazım.
+
+1843
+02:46:48,512 --> 02:46:56,411
+Burada şu tabii yorum satırını atlayarak sabit sayıda n işlem yapmam gerekiyor.
+
+1844
+02:46:56,411 --> 02:47:19,611
+Ondan sonra bunun içinde de bir while var ve bu da olduğu sürece dediği için burada da yine n tane şunu c1 diyelim şunu c2 diyelim c2 tane n işlem yapmam gerekiyor bunların içindeki de yine n'er kere dönecek maksimum n'e en kötü durumda n tane dönecek şekilde
+
+1845
+02:47:19,611 --> 02:47:37,711
+Özetle ben insertion sort içinde dış döngüde n, içinde sabit n, içindeki döngüde de sabit n olduğu için n çarpı c2n mertebesinde bir işleme sahibim c2n çarpı n
+
+1846
+02:47:37,711 --> 02:47:45,532
+ve buradaki cost'u attığımda da n kare kalıyor en kötü durumda benim karşılaştığım durumda
+
+1847
+02:47:45,531 --> 02:47:58,771
+haa insertion sort en iyi durumda aslında buradaki while'ı hiç işletmeyeceği için en iyi durumda o n karmaşıklıkta olacaktır.
+
+1848
+02:48:01,451 --> 02:48:11,451
+Ortalamada n kare bölü iki tane karşılaştırma yapar, n kare bölü iki tane de yer değiştirme gerçekleştirir diyebiliriz insertion sort için.
+
+1849
+02:48:11,452 --> 02:48:16,351
+Yani en kötü bir ortamada yine n kare mertebesindedir üstten sınırladığımızda.
+
+1850
+02:48:16,872 --> 02:48:19,232
+En iyi durumunda ON mertebesindedir.
+
+1851
+02:48:19,672 --> 02:48:27,571
+Ama bizim için en kötü durum analizde önemli olduğu için bu aşamada yine insertion sortunda n kare mertebesinde olduğunu söylüyoruz.
+
+1852
+02:48:28,131 --> 02:48:31,472
+Fakat dediğim gibi en iyisi ON'dir.
+
+1853
+02:48:31,471 --> 02:48:44,031
+Eğer hiçbir sıralıysa dizi o zaman tek bir lineer geçişle içindeki wire'ı hiç işletmeden lineer bir mertebede kalabiliriz.
+
+1854
+02:48:44,131 --> 02:48:45,391
+Tabi bu en iyi durum.
+
+1855
+02:48:45,571 --> 02:48:46,071
+En iyi.
+
+1856
+02:48:46,591 --> 02:48:47,751
+Üstten sınır.
+
+1857
+02:48:49,131 --> 02:48:52,291
+Ortalaması ve en kötüsü en kare olmak zorunda.
+
+1858
+02:48:54,491 --> 02:48:56,911
+Log n'in performansı ne kadar etkili?
+
+1859
+02:48:56,911 --> 02:48:58,711
+Tekrar söylemek için gösteriyorum.
+
+1860
+02:48:58,711 --> 02:49:07,891
+bakın n'in 2 üzeri 4'ten başlayıp ilerleyen 2 üzeri 10-100 bin diye giden değerleri için
+
+1861
+02:49:07,891 --> 02:49:11,652
+log n yani 16 eleman girdiğinde 4 adım.
+
+1862
+02:49:12,471 --> 02:49:15,331
+Yani 16 bin eleman girdiğinde sadece 14 adım.
+
+1863
+02:49:16,592 --> 02:49:21,251
+Daha da büyüyüp işte 1 milyon eleman girdiğinde 20 adımda sonucu erişebiliyorsun.
+
+1864
+02:49:22,092 --> 02:49:25,631
+1 milyar tane eleman girdiğinde 30 adımda sonucu erişiyorsun.
+
+1865
+02:49:25,631 --> 02:49:29,111
+Yani bu ne demek?
+
+1866
+02:49:30,100 --> 02:49:32,699
+bir arama yaptığınızı düşünün.
+
+1867
+02:49:34,080 --> 02:49:43,499
+80 milyon kişiyi arıyorsanız 22-23 adımda istediğiniz kişiyi ya bulabilirsiniz ya da yoktur, bu listede yoktur diyebilirsiniz.
+
+1868
+02:49:43,959 --> 02:49:55,499
+O yüzden login oldukça iyi bir performans ve algoritmalarda özellikle de arama algoritmalarında tercih sebebi olan bir karmaşıklık.
+
+1869
+02:49:55,499 --> 02:49:57,239
+Evet.
+
+1870
+02:50:00,159 --> 02:50:01,419
+Sorunuz var mı?
+
+1871
+02:50:05,203 --> 02:50:24,283
+dersimizin de sonuna geldik. Yarın uygulama saatimiz yok biliyorsunuz. Söylemiştik zaten geçen hafta. Tekrar etmiş olalım. Size tavsiyem bu dersi tekrar izleyin. Özellikle de büyük O ve karmaşıklık analizini kendinizle tekrar çalışın.
+
+1872
+02:50:24,283 --> 02:50:41,023
+çeşitli algoritmalar üzerinde daha önceden gerçekleştirdiğiniz algoritmaların en kötü durum, en iyi durum ve ortalama durum senaryolarını üstten nasıl sınırlandırabilirim diye çeşitli uygulamalar ve çalışmalar gerçekleştirin ki buradaki analizler mümkün olduğunca otursun.
+
+1873
+02:50:41,023 --> 02:50:46,643
+ve bununla beraber internetten bulabildiğiniz bütün algoritmik problemleri çözmeye gayret edin.
+
+1874
+02:50:47,003 --> 02:50:52,163
+Bunlar için efektif çözümler nasıl üretebilirim, nasıl farklı düşünebilirim gibi çalışmaları yapın.
+
+1875
+02:50:52,163 --> 02:50:55,884
+Ve bunlar hepsi kendinize ileriye yatırım olacaktır.
+
+1876
+02:50:57,203 --> 02:51:00,163
+Peki o zaman süremizin sonuna geldik.
+
+1877
+02:51:00,823 --> 02:51:02,003
+Ben de size teşekkür ediyorum.
+
+1878
+02:51:02,123 --> 02:51:03,183
+Haftaya görüşmek üzere.
+
+1879
+02:51:03,583 --> 02:51:04,403
+Kendinize iyi bakın.
+
+1880
+02:51:04,663 --> 02:51:05,823
+İyi günler, iyi haftalar.

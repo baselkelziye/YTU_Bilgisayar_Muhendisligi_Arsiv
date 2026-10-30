@@ -1,0 +1,2315 @@
+1
+00:04:50,483 --> 00:05:20,463
+Hoşgeldiniz arkadaşlar. Güzel bir hafta diliyorum hepinize. Son iki haftaya giriyoruz. Bu ve önümüzdeki hafta tamamlandıktan sonra bu dönemi kapatacağız. Sonrasında final sınavlarınız olacak. Son gelen bilgi resmi yazı ulaşmadı ama Twitter'dan aldığımız bilgiye göre sınavlarınız online olacak. Final sınavlarınız bugün sondakini bilgisi bu şekilde ulaşacak.
+
+2
+00:05:20,483 --> 00:05:34,824
+Dediğim gibi resmi yazı gelmedi ama gözüken bir değişiklik olmazsa final sınavlarınız online olarak gerçekleşiyor olacak. Herkese kararın hayırlı olmasını diliyorum.
+
+3
+00:05:36,443 --> 00:05:47,683
+İkinci olarak dönem projenizle ilgili bilgi vermek istiyorum. Bir aksilik olmazsa yarın en geç çarşamba günü dönem projenizi vereceğiz.
+
+4
+00:05:47,683 --> 00:05:57,263
+ve muhtemelen bir en geç önümüzdeki salı günü tahminim pazartesi de olabilir.
+
+5
+00:05:58,023 --> 00:06:05,123
+Ödevi sizlerden topluyor olacağız ki not değerlendirmelerini zamanında yapabilelim.
+
+6
+00:06:05,903 --> 00:06:11,443
+Tabi bu süreye uygun olarak bir dönem projesi konusu paylaşılıyor olacak.
+
+7
+00:06:11,443 --> 00:06:15,803
+Online Yıldızı TR üzerinden takip edebilirsiniz.
+
+8
+00:06:15,803 --> 00:06:24,363
+Biz yarına yetiştirmeyi planlıyoruz ama bir aksilik olması durumunda çarşamba günü dönem projemizi sizlerle paylaşmış olacağız.
+
+9
+00:06:25,503 --> 00:06:31,463
+Bunun dışında ikinci ödevleriniz birkaç gün içerisinde notları açıklanacaktır.
+
+10
+00:06:32,543 --> 00:06:37,284
+Hemen arkasından önümüzdeki hafta üçüncü ödevlerinizin sonuçlarını öğreneceksiniz.
+
+11
+00:06:37,284 --> 00:06:44,983
+Ve işte finallere geldiğimiz günlerde de muhtemelen girmeden planlıyoruz.
+
+12
+00:06:44,983 --> 00:06:51,583
+son gün öğrenmeyi ya da en büyük ihtimalle finaller başladığı ilk bir iki gün içerisinde
+
+13
+00:06:51,583 --> 00:06:59,504
+dönem projesi notlarınızda açıklanmış olacak ve sınavlarınıza tüm notlarınızı öğrenmiş olarak giriyor olacaksınız.
+
+14
+00:06:59,504 --> 00:07:05,864
+Bu hafta string matching algoritmalarını konuşuyor olacağız.
+
+15
+00:07:06,683 --> 00:07:13,383
+Aslında çok geniş olarak kullandığımız bir alan var bu algoritmaları.
+
+16
+00:07:13,383 --> 00:07:24,023
+onlardan bahsedeceğiz. Sonra da dersi tamamlıyor olacağız. Önümüzdeki haftada sorting albörütmalarını genel olarak değerlendiriyor olacağız.
+
+17
+00:07:24,683 --> 00:07:35,243
+Karşılaştırmalı olarak sonra da dönemi tamamlıyor olacağız. Sorusu olan, yorum yapmak isteyen varsa sözü bırakabilirim.
+
+18
+00:07:42,132 --> 00:07:48,132
+Peki o zaman demek ki bir soru ve yorum olmadığına göre derse geçebiliriz diye düşünüyorum.
+
+19
+00:07:50,132 --> 00:07:52,132
+Hemen paylaşım yapacağım sizlerle.
+
+20
+00:08:11,444 --> 00:08:22,444
+Bu hafta önce slidelardan anlatacağım. Sonra tercih etmeniz durumunda birkaç örneği ekran üzerinde çözmeyi planlıyorum.
+
+21
+00:08:22,444 --> 00:08:31,444
+String ya da bir diğer adıyla pattern matching dediğimiz algoritmaları konuşuyoruz bu hafta.
+
+22
+00:08:31,444 --> 00:08:39,443
+Aslında bir örüntü arıyoruz. Text içerisinde bir örüntü arıyoruz. O yüzden pattern search applications diye de geçiyor.
+
+23
+00:08:39,443 --> 00:08:44,964
+birden fazla karakterin bir araya geldiği yapılara string ismini veriyorduk.
+
+24
+00:08:44,964 --> 00:08:53,503
+Bazı programlama dillerinde doğrudan bu tip veri tipi tanımlı iken bazılarında yok.
+
+25
+00:08:53,644 --> 00:08:58,223
+Mesela Java'da string kullanılırken C programlama dilinde string kullanılmıyor.
+
+26
+00:08:58,223 --> 00:09:25,763
+Ama buradaki önemli olan husus bir örüntünün, karakterlerden oluşan bir örüntünün bir başka metin ya da bilgi içerisinde yarılıp almadığı varsa kaç tane olduğu ya da nerelerde olduğu bunun bulunmasına yönelik yapılan araba çalışmalarını aslında anlatıyor.
+
+27
+00:09:25,763 --> 00:09:49,823
+Bizim en çok hani yaptığımız şeylerden bir tanesi bir metin içerisinde bir kelimeyi, bir ifadeyi aratıp var olan noktaları bulmak ve sonrasında bazen işte o bölümü okumak ya da oradaki örüntüyü ya da tüm metindeki örüntüyü güncelleyerek değiştirmek.
+
+28
+00:09:49,823 --> 00:09:55,823
+bunu sıklıkla Word dokümanlarında yapıyoruz.
+
+29
+00:09:55,823 --> 00:10:11,543
+Tabi bu büyük bir metin içerisinde arama söz konusu olduğunda yüzlerce sayfa metin içerisinde oradaki zaman karmaşıklığı çok daha önemli hale geliyor.
+
+30
+00:10:11,543 --> 00:10:37,223
+keza sadece tek bir kelimeyi ya da örüntüyü metin içerisinde aratmak değil, dokümanların birbirlerine benzerliğini ölçerken çok daha fazla örüntüye bakıp diğer metin içerisinde var mı yok mu diye uzun süren aramalar ve taramalar yapıyoruz ki buna aslında kod benzerlikleri,
+
+31
+00:10:37,223 --> 00:11:02,583
+hazırlanan işte tezlerin ne kadar orijinal olduğuna yönelik yapılan değerlendirmeler bunların içerisinde yer alıyor ve on binlerce, yüz binlerce, milyonlarca metin içerisinde bu taramayı yaptığınızda buradaki zaman karmaşıklığı çok daha fazla önem kazanıyor.
+
+32
+00:11:02,583 --> 00:11:11,824
+Burada çok farklı alanlarda bu örüntü eşleştirmenin ya da aramanın yapıldığını görebiliyorsunuz.
+
+33
+00:11:11,824 --> 00:11:15,843
+İşte bioinformatik alanında da var DNA dizilimlerine bakılıyor.
+
+34
+00:11:16,604 --> 00:11:26,143
+Veri madenciliği alanında yine belirli bir örüntü varsa bu ilgili kısmın ortaya çıkartılması,
+
+35
+00:11:26,143 --> 00:11:34,463
+metin sınıflandırma yapılırken keza aynı tekniklerin farklı versiyonlarından faydalanıyor.
+
+36
+00:11:34,463 --> 00:11:46,563
+Bu genişlettiğinizde kişinin konuşmasını tanımaya kadar ilerleyen uzun bir liste.
+
+37
+00:11:46,563 --> 00:11:58,563
+biz bugün daha basit iki string arasındaki örüntü arama algoritmalarını konuşacağız.
+
+38
+00:11:59,063 --> 00:12:06,683
+Bu algoritmalardan zaten metinlere geçişi de siz de kolaylıkla yapılabildiğini görüyor olacaksınız.
+
+39
+00:12:08,683 --> 00:12:09,683
+İlk...
+
+40
+00:12:10,100 --> 00:12:39,979
+akla gelen ve brute force yaklaşım olarak ifade ettiğimiz yaklaşım hepinizin bildiği bir tekst içerisinde verilen bir örüntü var mı yok mu diye işte naif aslında string search da dediğimiz tek tek elemanların karşılaştırılması ve eşleşme sağlanamadığı durumda örüntünün bir saha kaydırılarak
+
+41
+00:12:40,100 --> 00:12:51,579
+geri kalan metin içerisinde tek tek bu kaydırma işlemi devam edilerek bir eşleşme sağlanıyor mu sağlanamıyor mu bunu araştırmak aslında.
+
+42
+00:12:53,039 --> 00:13:07,780
+Bu yöntem ilk etapta hani örüntü arama yaklaşımları işte parserlarda, spam filterlarda, word prosesörlerde, web search enginelerde çok yoğun olarak kullanılıyordu.
+
+43
+00:13:07,780 --> 00:13:19,220
+Ama bu yöntem tabii worst case senaryoda ki biraz sonra worst case senaryo ile göreceğiz n çarpı m'lik bir karmaşıklık demek.
+
+44
+00:13:20,439 --> 00:13:33,640
+Worst case senaryoda da pattern'ın genellikle aynı tür tekrar eden ne diyelim sembollerden oluştuğu case'lerde karşımıza çıkıyor.
+
+45
+00:13:33,640 --> 00:13:44,239
+O yüzden de bu özellikle tekrar eden yapıya sahip örüntüler ya da tekstler için çok uygun bir yaklaşım değil.
+
+46
+00:13:46,120 --> 00:13:55,079
+Burada kullanılan string matching problemindeki aslında notasyonları gösteriyor.
+
+47
+00:13:55,620 --> 00:13:59,839
+İşte büyük T tekste karşılık geliyor, büyük P pattern'a karşılık geliyor.
+
+48
+00:13:59,839 --> 00:14:06,939
+İşte n ve m, p ve t'nin uzunluklarını genellikle içeriyor.
+
+49
+00:14:08,219 --> 00:14:14,100
+İşte tüm set alfabeyi gösteren bir toplam sembolü var.
+
+50
+00:14:14,759 --> 00:14:16,899
+Inge letter'ı p'yi olarak gösteriyoruz.
+
+51
+00:14:17,639 --> 00:14:21,779
+Single letter'ları abc, string'leri de xz'i ile temsil ediyoruz.
+
+52
+00:14:21,779 --> 00:14:38,859
+Şimdi brute force yaklaşımla pattern match işlemi yapılmaya çalışıldığında burada gördüğünüz birer birer kaydırma ile tek tek kontrol ediliyor.
+
+53
+00:14:38,859 --> 00:14:48,839
+İşte N, H'ye eşit mi değilse bir kaydırılıyor. N, A'ye eşit mi değilse bir kaydırılıyor. Sonra en sonunda bir eşleşme durumu söz konusu oluyor.
+
+54
+00:14:48,839 --> 00:15:06,339
+ve n'ye eşit, ee'ye, ee'ye, d, d'ye ve en sonunda l's'ye eşit olmadığı için burada son harf sağlanmadığı için bir sonraki adıma geçiliyor ve yine örüntü bir sağa kaydırılmış oluyor.
+
+55
+00:15:06,339 --> 00:15:24,339
+Search metoduna baktığınızda burada aslında programatik olarak da algoritmayı görüyorsunuz ve ikisinin uzunluğuna bağlı olarak n-m noktasına kadar bu kaydırma işlemine devam ediyorsunuz.
+
+56
+00:15:24,339 --> 00:15:37,919
+İç içe iki döngü var ve işte bir tanesi tekstin sonuna kadar ilerlerken örüntüyü çıkartacak şekilde düşünmeniz gerekiyor.
+
+57
+00:15:37,999 --> 00:15:44,479
+Çünkü ondan sonra bir eşleşme olsa da örüntüyü sağlama ihtimali olmadığı için sonrasına bakmaya gerek yok.
+
+58
+00:15:45,599 --> 00:15:49,639
+İç döngüde de örüntünün boyutu kadar ilerlemeniz gerekiyor.
+
+59
+00:15:49,639 --> 00:15:53,959
+worst case scenario'da bunun karmaşıklığı n çarpı m oluyor.
+
+60
+00:15:55,119 --> 00:16:04,559
+Yine bir başka bioinformatikteki dizilimlerden yola çıkacak olursak buradaki GCT'nin aranması ile ilgili.
+
+61
+00:16:06,100 --> 00:16:13,040
+yapılan işlemin karmaşıklığının n çarpı m olacağını tekrar görmüş oluyorsunuz.
+
+62
+00:16:13,179 --> 00:16:25,079
+Buradaki işte örüntü gct yerine aab olursa yani tekrar eden bir pattern ya da ab ab ab ab olursa
+
+63
+00:16:25,079 --> 00:16:34,979
+o zaman bu pattern'lar tekrar ettiği için ve metin içerisinde de bu örüntüden çok sık karşılaşma ihtimali varsa
+
+64
+00:16:34,979 --> 00:16:38,800
+ve son harfler genelde ya da son semboller tutmuyorsa
+
+65
+00:16:38,800 --> 00:16:45,119
+o zaman örüntünün neredeyse son bir iki sembolüne kadar karşılaştırma sağlanıyor.
+
+66
+00:16:45,739 --> 00:16:52,179
+Ama son bir iki tanesi sağlanmadığı için her seferinde bir tane sağa gidilmesi işleminden dolayı
+
+67
+00:16:52,179 --> 00:16:54,960
+en çarpı emlik bir karmaşıklık oluşuyor.
+
+68
+00:16:55,600 --> 00:16:58,839
+Yine brute force yaklaşımı bir başka örnek üzerinde gördüğünüzde
+
+69
+00:16:58,839 --> 00:17:01,320
+A, B, R, A'yı karşılaştırıyoruz.
+
+70
+00:17:01,319 --> 00:17:07,319
+İşte A'lar meç ediyor, B'ler meç ediyor ama A'lar meç etmediği için tekrar bir kaydırıyoruz.
+
+71
+00:17:08,639 --> 00:17:22,259
+Burada tekrar eden bir örüntü ve metin sahibiyseniz burada gördüğünüz gibi her turda örüntünün sonuna kadar gidiyorsunuz.
+
+72
+00:17:22,259 --> 00:17:33,119
+Yani dört tane A okey ama beşinci son harf A B eşit olmadığı için tekrar bir kaydırıyorsunuz.
+
+73
+00:17:33,859 --> 00:17:37,819
+Aşağı iniyorsunuz tekrar dört tane A match ediyor, B match etmiyor.
+
+74
+00:17:37,899 --> 00:17:43,539
+Bu şekilde ilerlediğinizde işte worst case scenario aslında oluşturmuş oluyorsunuz ki
+
+75
+00:17:43,539 --> 00:17:56,219
+Bu bizim söylediğimiz tekstin ve örüntünün repetitif olduğu, tekrar eden bir örüntüye sahip olması durumu sonunda oluşan bir sonuç.
+
+76
+00:17:56,219 --> 00:18:03,679
+O nedenle de worst case scenario'da ki n çarpı m'lik karmaşıklık bizim hiç istemediğimiz.
+
+77
+00:18:04,399 --> 00:18:12,679
+Hatta örüntü uzadıkça normalde m'den oldukça büyüktür tekst örüntüden.
+
+78
+00:18:12,679 --> 00:18:19,339
+Ama örüntünün boyutu uzadıkça bu karmaşıklık daha da işin içinden çıkılmaz bir hal almaya başlıyor.
+
+79
+00:18:20,059 --> 00:18:26,339
+Bunun için burada teknik olarak bir çözüm ortaya atılmaya çalışılıyor.
+
+80
+00:18:26,399 --> 00:18:30,939
+Peki bu yaklaşım ne olabilir diye size sorsam.
+
+81
+00:18:31,519 --> 00:18:37,099
+Yani burada örüntüyü bir bir kaydırmak maliyetli olduğu gözüküyor.
+
+82
+00:18:38,699 --> 00:18:42,099
+Aslında elinizde olsaydı örüntüyü nasıl kaydırırdınız?
+
+83
+00:18:42,680 --> 00:18:46,140
+Özellikle buradaki keyif için konuşursak.
+
+84
+00:18:50,132 --> 00:18:54,592
+ya da tekrar etmeden örüntüler için konuşursak kendi içerisinde.
+
+85
+00:19:02,067 --> 00:19:17,047
+Herhangi bir tahminde bulunmak isteyen olur mu acaba? Önce A'yı aramak olabilir. Tam anlayamadım ne demek istediğimi [öğrenci]?
+
+86
+00:19:18,028 --> 00:19:26,828
+Hocam, bütün hepsini tek tek dolaşmak yerine ilk harf A olduğu için mesela bu örnek için hani A'yı bulup ondan sonraki harflere bakmak olabilir dedik.
+
+87
+00:19:26,828 --> 00:19:32,547
+bir sonraki adımda metnin içerisindeki ağ'ya eşlemek şeklinde mi?
+
+88
+00:19:35,187 --> 00:19:37,248
+Anlayamadım hocam tam dediğiniz gibi.
+
+89
+00:19:38,227 --> 00:19:40,968
+Yani burada ilk ağlar eşleşiyor.
+
+90
+00:19:41,328 --> 00:19:46,328
+Abra olmadığını anladığı anda örüntüyü bir kaydırmak yerine nereye kaydırmalı?
+
+91
+00:19:48,328 --> 00:19:50,627
+Bir sonraki ağ harfini hocam.
+
+92
+00:19:50,627 --> 00:19:51,248
+Tamam.
+
+93
+00:19:52,267 --> 00:19:56,148
+Buradaki mantık şu olmalı arkadaşınızın söylediği gibi.
+
+94
+00:19:56,827 --> 00:20:16,748
+burada örüntü içerisinde bir eşleşme yakaladıysak ya da bir eşleşememe durumu yakaladıysak örüntünün bir sonraki adımda her seferinde her ne koşul olursa olsun bir sağa kaydırılmasındansa
+
+95
+00:20:16,748 --> 00:20:28,347
+mümkünse örüntü boyutu kadar, mümkün değilse de en iyi ihtimalle o eşleşmenin sağlanabileceği noktaya kadar kaydırılması gerekiyor.
+
+96
+00:20:28,347 --> 00:20:38,127
+Şimdi ben Abra'yı B'nin altına kaydırdığımda teknik olarak zaten o eşleşmenin olma ihtimali yok.
+
+97
+00:20:38,127 --> 00:20:49,047
+En iyi ihtimalle A'nın bir sonraki A'nın altına konumlandırılması gerekiyor ki A'lar eşleşsin ve sonrakiler eşleşiyor mu diye bakılsın.
+
+98
+00:20:49,687 --> 00:20:53,967
+Aslında burada farklı örnekler üzerinden gidebiliriz.
+
+99
+00:20:54,127 --> 00:21:07,047
+A, B, C, D içerisinde X, Y, Z'yi arıyor olsaydık X ile A eşleşmediği anda otomatik olarak A, B, C, D'nin sonuna X, Y, Z'yi konumlandırabilirdik.
+
+100
+00:21:07,047 --> 00:21:11,247
+Bunun sebebi x'in zaten metin içerisinde geçmiyor olması.
+
+101
+00:21:12,127 --> 00:21:30,447
+Bu nedenle de aslında iki metin içerisinde belirli karakterler var mı yok mu kontrolünü önceden yapmak bu düşündüğümüz kaydırma işlemini daha optimize etmek açısından önemli.
+
+102
+00:21:30,447 --> 00:21:32,387
+Peki biz bunu nasıl yapacağız?
+
+103
+00:21:32,387 --> 00:21:55,467
+bir ona bakalım ve aslında bugün anlatacağımız algoritmalar arasında bizim için bu fikri performans olarak en iyi yansıtanlardan biri olduğu için Boyer-Moor algoritmasıyla string matching probleminde daha efektif çözümlere geçiş yapıyor olacağız.
+
+104
+00:21:55,467 --> 00:22:11,567
+Şimdi buradaki en önemli problem Brute Force Search'taki biz birçok eşleşme ihtimali olmayacak seçeneği de sadece bir kaydırarak kontrol etmeye devam etmemiz.
+
+105
+00:22:11,567 --> 00:22:29,127
+Aslında eşleşme ihtimali yok ama biz bunu önceden bir işlem yapmadığımız ve belirlemediğimiz için bilmediğimiz bir aslında körebe gibi gözümüzü kapatıp tek tek deneme yoluna gidiyoruz ki bu aslında akıllıca bir çözüm değil.
+
+106
+00:22:29,127 --> 00:22:34,808
+Bu noktada Boyar M. algoritması bize çok daha verimli bir çözüm ortaya atıyor.
+
+107
+00:22:34,907 --> 00:22:40,448
+Fakat bu algoritmanın tek bir dezavantajı var. Mutlaka bir ön işlem gerektiriyor.
+
+108
+00:22:40,447 --> 00:22:51,027
+tabi ön işlem aslında normalde maliyetli olabilirdi. Fakat bu ön işlemi biz arama yaptığımız text üzerinde değil,
+
+109
+00:22:51,859 --> 00:23:18,859
+Örüntü üzerinde yapıyoruz. Bu da şu demek. Örneğin, bin satırlık, on bin kelimelik bir tekst içerisinde bir arama yapacaksınız, bir pattern arayacaksınız. Siz o on bin satırlık, on bin kelimelik metni aslında ön işleme tabi tutuyorsunuz. Tam tersine beş harflik, on harflik, elli harflik ya da sembollük örüntüyü preproces işleminden geçiriyorsunuz.
+
+110
+00:23:18,859 --> 00:23:27,779
+Bu da teknik olarak m, n'den çok küçük olduğu için aslında bize çok büyük bir dezavantaj yaratmıyor.
+
+111
+00:23:27,779 --> 00:23:43,139
+Tabii ki burada bu ön işlem örüntü büyüdükçe biraz daha yavaş çalışıyor karşılaştırma yapıldığı için.
+
+112
+00:23:43,139 --> 00:23:57,279
+ama aynı zamanda bugün konuşacağımız algoritmanın da çok daha hızlı bir şekilde özellikle tekrar etmeyen örüntüler varsa hızlı çalışmasına sebebiyet veriyor.
+
+113
+00:23:57,279 --> 00:24:08,879
+O yüzden örüntünün boyutunun büyümesi bir dezavantaj gibi gözükse de ön işlemden dolayı teknik olarak örüntü boyutu büyüdükçe buradaki Boyer-Moore algoritmasının da performansı artıyor.
+
+114
+00:24:08,879 --> 00:24:16,039
+ki bunu dersin sonunda bir grafik ile de gösteriyor olacağız.
+
+115
+00:24:16,039 --> 00:24:33,079
+Şimdi Boyer-Moor algoritması aslında bir felsefeyi yani eşleşmelerdeki olası işe yaramayacak seçenekleri eleme fikrini
+
+116
+00:24:33,080 --> 00:24:43,400
+iki stringin örüntü ve metnin sondan align edilerek kontrol edilmesi ile yapıyor.
+
+117
+00:24:44,400 --> 00:24:47,300
+Bu ne demek? Birkaç slide sonra göreceğiz.
+
+118
+00:24:47,679 --> 00:25:00,960
+Knut Morris Pratt algoritması aynı benzer mantığı kullanıp bu sefer stringlerin baştan eşleşip eşleşmemelerini kontrol ediyor.
+
+119
+00:25:00,959 --> 00:25:17,419
+İkisi arasındaki en temel farklılık bu. İkisi de iki metin ve örüntü arasındaki eşleşmelerin ne kadar olması, ortaya çıkan eşleşmelerin ne kadar olduğu bilgisini kullanarak karar veriyorlar.
+
+120
+00:25:17,419 --> 00:25:26,699
+Şimdi gelin bunun nasıl olduğuna bakalım. Boyar-Mur algoritması iki farklı yaklaşım ile aslında çalışıyor.
+
+121
+00:25:26,699 --> 00:25:31,479
+Bir tanesi Boyar-Moore-Horsepool olarak literatürde yer alıyor.
+
+122
+00:25:31,979 --> 00:25:34,479
+Diğeri ise Boyar-Moore algoritmi olarak geçiyor.
+
+123
+00:25:34,580 --> 00:25:35,940
+Yani iki temel yaklaşım var.
+
+124
+00:25:36,039 --> 00:25:39,660
+Biri Boyar-Moore-Horsepool, diğeri de Boyar-Moore algoritması.
+
+125
+00:25:40,199 --> 00:25:47,279
+Horsepool algoritması nispeten diğerine göre daha kolay olduğu için ilk etapta onunla başlayacağız.
+
+126
+00:25:47,279 --> 00:25:53,099
+Sonra esas Boyar-Moore algoritması nasıl çalışıyor onu göreceğiz.
+
+127
+00:25:53,099 --> 00:26:05,639
+Şimdi yukarıda S0 ile başlayan S n-1 ile biten bir metin olduğunu düşünün ve bu metnin içerisinde de Barber isimli bir
+
+128
+00:26:09,556 --> 00:26:11,776
+örüntüyü arıyorsunuz diyelim.
+
+129
+00:26:12,375 --> 00:26:13,635
+metnin ortasındasınız.
+
+130
+00:26:14,315 --> 00:26:17,816
+barber isimli örüntüyü eşleştirdiğiniz zaman
+
+131
+00:26:17,816 --> 00:26:19,356
+buradaki
+
+132
+00:26:19,356 --> 00:26:22,355
+çok pardon
+
+133
+00:26:22,355 --> 00:26:23,835
+buradaki
+
+134
+00:26:23,835 --> 00:26:27,316
+eşleşmeye soktuğunuz
+
+135
+00:26:27,316 --> 00:26:31,316
+S karakteri
+
+136
+00:26:31,316 --> 00:26:33,495
+aslında burada işte
+
+137
+00:26:33,495 --> 00:26:35,715
+ne diyelim
+
+138
+00:26:35,715 --> 00:26:38,515
+değişken olarak C ismine almış.
+
+139
+00:26:38,515 --> 00:27:01,875
+R ile eşleşiyor mu? Eşleşmiyor mu? Buna bakıyorsunuz. Şimdi burada SR ile eşleşmedi. Ve Hays 1'de direkt Barber'ı bir sağa kaydırmak yerine boyutu kadar sağa kaydırmışız. Bunu neden yapıyoruz? Sizce bunu gönül rahatlığıyla niye yapabiliyoruz?
+
+140
+00:27:09,140 --> 00:27:29,959
+Evet, [öğrenci] arkadaşınızın chatten yazdığı gibi S harfi barber kelimesinin içerisinde geçmediği için zaten onunla hizalamamız gereken bir harf olmadığı için gönül rahatlığıyla bunu aradığımız örüntünün boyutu kadar sağa shift edebiliyoruz.
+
+141
+00:27:29,959 --> 00:27:31,019
+Bu birinci case'imiz.
+
+142
+00:27:31,019 --> 00:27:44,159
+Bu tür durumlarda boşu boşuna 6 defa shift etmek yerine ya da örüntünün boyutu kadar shift etmek yerine bir seferde örüntünün boyutunun hepsi kadar shift etmiş oluyoruz.
+
+143
+00:27:44,159 --> 00:27:47,599
+Bu bize çok ciddi bir avantaj sağlıyor.
+
+144
+00:27:48,259 --> 00:27:58,500
+Tabi her zaman bu durum bu mismatch durumudaki harf örüntünün içerisinde olmama durumu gerçekleşmeyebilir.
+
+145
+00:27:58,500 --> 00:28:01,860
+altta da bunun tersi bir case'den bahsediyor.
+
+146
+00:28:02,439 --> 00:28:03,599
+Barber kelimesi var.
+
+147
+00:28:03,939 --> 00:28:05,860
+Bu sefer B ile eşleştirmişiz.
+
+148
+00:28:06,500 --> 00:28:08,619
+Ve B ile eşleştirdiğimizde mismatch olmuş.
+
+149
+00:28:10,059 --> 00:28:13,040
+Bu sefer kelimeyi ne kadar sağa shift etmişiz?
+
+150
+00:28:14,040 --> 00:28:23,720
+İlk gözüken B ile align olacak şekilde kelimeyi sağa kaydırmışız.
+
+151
+00:28:23,720 --> 00:28:33,340
+Peki bunun boyutu ne kadar olacak? Buradan bir yorum yani bu kaydırmanın miktarı ne kadar olacak? Bir yorum yapmak isteyen var mı?
+
+152
+00:28:35,800 --> 00:28:44,559
+Burada iki gözüküyor. Bu B olmasaydı, E olsaydı, R olsaydı, A olsaydı bu kaydırmadan ne kadar olacaktı?
+
+153
+00:28:47,059 --> 00:28:52,199
+Ya da niye biz ilk B ile elayen ettik, ikinci B ile elayen etmedik?
+
+154
+00:29:00,627 --> 00:29:03,667
+Aslında metin içerisinde söylüyor neye göre yaptığımız.
+
+155
+00:29:12,243 --> 00:29:32,883
+Peki, yorum yapmak istemezseniz yapacak bir şey yok. Ben hemen söyleyip devam edeyim. Burada bu eşleşme sağlanamaması durumunda ilgili metin içerisindeki eşleşmeyi bozan harfin örüntü içerisinde olup olmadığına bakılıyor demiştik.
+
+156
+00:29:32,883 --> 00:29:40,143
+Örüntü içerisinde sağ en yakın olan eğer o harften varsa ilgili harf alınıyor.
+
+157
+00:29:40,143 --> 00:29:52,183
+B ilk sağ en yakın harf B olarak Barber'ın iki sağdan itibaren harf olduğu için kelime iki tane sağa şift edildi.
+
+158
+00:29:52,323 --> 00:29:55,144
+R olsaydı kelime üç tane sağa şift edilecekti.
+
+159
+00:29:55,143 --> 00:30:05,423
+A olsaydı bu eşleşmeyi bozan o zaman kelime 4 boyutuyla sağa şift ediliyor olacaktı.
+
+160
+00:30:12,884 --> 00:30:35,503
+Gelelim 3. keyzimize. 3. keyzde bir eşleşme durumu söz konusu. Biraz önceki keyzlerde ilk harf eşleşmemişti. Buraya bir bakalım. R'ler eşleşmiş, E'ler eşleşmiş ve M'ye eşleşmemiş.
+
+161
+00:30:35,503 --> 00:30:42,603
+Bu noktada Hays 1'e çok benzeyen bir durum var.
+
+162
+00:30:43,983 --> 00:30:48,783
+Zaten bir M eşleşmesi söz konusu olmadığı için
+
+163
+00:30:48,783 --> 00:30:55,523
+Lider'ın sağa doğru komple shift edildiğini görüyorsunuz.
+
+164
+00:30:56,963 --> 00:30:59,663
+Bunun temel sebebi ne olabilir?
+
+165
+00:31:10,324 --> 00:31:13,643
+yani M'nin D ile eşleşmemesi mi yoksa başka bir şey mi?
+
+166
+00:31:16,563 --> 00:31:19,683
+Artık kelimenin örtüşme şansı kalmadı.
+
+167
+00:31:20,824 --> 00:31:22,003
+Bunu nereden anlıyoruz?
+
+168
+00:31:23,343 --> 00:31:30,363
+Yani gözle bakıp anlıyoruz da analitik olarak bunu bilgisayara tariflemek istediğimizde nereden anlayacağız algoritmayı tasarlarken?
+
+169
+00:31:33,971 --> 00:31:35,971
+burada aslında söylüyor.
+
+170
+00:31:42,003 --> 00:31:58,583
+Evet, başka R yok aynen Abdülkader'in söylediği gibi. Başka R olmadığı için artık bunun R ile elan etme ihtimali kalmadığı için lideri komple pattern boyutu kadar sağa shift ediyoruz.
+
+171
+00:31:58,583 --> 00:32:10,983
+Dördüncü case'e geçelim. Dördüncü case'e geldiğimiz zaman burada bir eşleşme var ama bu eşleşme bir önceki case'den farklı bir durum yaratıyor.
+
+172
+00:32:10,983 --> 00:32:13,063
+R'ler birbirine benziyor.
+
+173
+00:32:13,764 --> 00:32:15,463
+A ile E eşleşmemiş.
+
+174
+00:32:15,923 --> 00:32:17,503
+Şimdi A ile E eşleşmemiş.
+
+175
+00:32:17,623 --> 00:32:28,763
+Eşleşmeyen karakteri alıp yoluma devam ediyor olsaydım A reorder'ın içerisinde olmadığı için reorder'ı komple sağa şifletmem gerekirdi.
+
+176
+00:32:29,103 --> 00:32:29,603
+Boyutu kadar.
+
+177
+00:32:30,423 --> 00:32:37,003
+Ama burada bu kezdeki farklı olan durum C aslında değişkenim.
+
+178
+00:32:37,003 --> 00:32:40,623
+Burada R karakterini temsil ediyor.
+
+179
+00:32:40,983 --> 00:32:47,743
+ve R'ler eşleştiği için doğal olarak bu örüntü içerisinde başka R olduğu için
+
+180
+00:32:47,743 --> 00:32:53,323
+hala R'ler elayen ettiğinde bir eşleşme ihtimali söz konusu olduğu için
+
+181
+00:32:53,323 --> 00:32:59,664
+ben bu örüntüyü ilk gördüğüm R'ye kadar shift ediyorum
+
+182
+00:32:59,664 --> 00:33:08,123
+ve bu sayede tekrar bir eşleşme ihtimalini gözden kaçırma olasılığı ortadan kalkmış oluyor.
+
+183
+00:33:09,164 --> 00:33:10,643
+Buraya kadar soru soman var mı?
+
+184
+00:33:23,892 --> 00:33:45,111
+Burada bir tablo görüyorsunuz. Bu preprocessing aşamasında oluşturulan bir tablo. Ve bu lookup table bize her turda biraz önce yaptığımız o hizalama işi için kullanılacak shift miktarını saklıyor.
+
+185
+00:33:45,111 --> 00:33:58,211
+metin içerisinde hangi semboller ya da karakterler mevcut olabilecekse, teknik olarak olası ise onların shift değerlerini saklıyor.
+
+186
+00:33:58,271 --> 00:33:59,951
+Peki biz bu değerleri neye göre belirliyoruz?
+
+187
+00:34:02,271 --> 00:34:11,471
+Yani bu preprocessing işini yaparken burada 4, 2, 6, 6, 1, 6 sayılarını neye göre elde ediyoruz?
+
+188
+00:34:41,331 --> 00:34:57,971
+Son harpe olan uzaklığı. Peki, burada barber kelimesini ele alıyor olsaydık, örüntü üzerinden ilerliyor olsaydık, burada ilk etapta vermiş olduğumuz look up table'daki değerler kaç olacaktı?
+
+189
+00:35:03,603 --> 00:35:17,003
+sıfır mı olacaktı, eksi bir mi olacaktı, ne olacaktı? İlk siz lookup table'ı set ederken lookup table'daki harflerin değerleri ne olacaktı?
+
+190
+00:35:31,668 --> 00:35:34,987
+Evet [öğrenci], altı olacaktı. Bunu genelleştirirsen ne söyleyeceksin?
+
+191
+00:35:39,092 --> 00:35:40,131
+Anlamadım hocam.
+
+192
+00:35:41,131 --> 00:35:48,131
+Bunu genelleştirdiğinde ne söyleyeceksin dedim? Look up table'ın initialize değeri ne olmalı?
+
+193
+00:35:49,911 --> 00:35:57,951
+Hocam 6 olmalı dedim ve içinde içerdiği harfleri mi kastediyorsunuz? Onlara ne koyunumuzu gerektiğinde?
+
+194
+00:35:57,951 --> 00:36:05,951
+Tekrar sorayım. Şu andaki barber örneği için 6 olarak verdiğimiz cevabı.
+
+195
+00:36:05,951 --> 00:36:35,291
+cevabı. Uzunluk hocam. Uzunluk, kelimenin uzunluğu. Örüntünün uzunluğu. Anlayamadım hocam başta. Sorun değil. Örüntünün uzunluğu aslında look up table'daki initialize değerlerimizi oluşturuyor. Çünkü biliyoruz ki ilgili harf eğer örüntü içerisinde yoksa biz örüntü boyutu kadar shift edeceğiz. Burada da örüntü boyutu 6 olduğu için işte C harfi için, D harfi için, F harfi için 6.
+
+196
+00:36:35,952 --> 00:37:00,712
+değerini görüyorsunuz. Peki 6'dan sonra yani look up table'ı set ettik. Set ettikten sonra işte bazı değerler değişecek. Burada nasıl bu değerleri değiştirirsiniz? Mesela A ile başladık ya da A ile başladık demeyelim de A ile başlamak çok doğru olmaz çünkü look up table'dan gitmeyeceğiz, örüntü üzerinden gideceğiz.
+
+197
+00:37:00,711 --> 00:37:05,711
+B ile başladık Barber kelimesindeki. İlk başta Barber'da 6 vardı.
+
+198
+00:37:08,211 --> 00:37:09,651
+Hocam söyleyeyim mi?
+
+199
+00:37:10,451 --> 00:37:10,791
+Evet.
+
+200
+00:37:12,151 --> 00:37:24,591
+O kelimenin içinde o harfin geçtiği son indisi. Yani mesela Barber'da B iki kere var. Dördüncü indisin. Alacağız o değeri uzunluktan çıkaracağız.
+
+201
+00:37:25,591 --> 00:37:26,311
+Yani?
+
+202
+00:37:26,312 --> 00:37:34,932
+Yani uzunluk eksi, yani berber için 4 olacak B harfi için. Pardon 2 olacak olacak.
+
+203
+00:37:36,212 --> 00:37:41,551
+Peki örüntüyü tararken biz orada B'nin nerede olduğunu görüyor muyuz?
+
+204
+00:37:46,132 --> 00:37:47,592
+Bilgisayar bunu görmüyor.
+
+205
+00:37:48,871 --> 00:37:52,612
+Evet, işte o kelimeyi bir defa şey yapmamız lazım.
+
+206
+00:37:52,612 --> 00:38:01,651
+Tamam. İlk başta B'yi gördüğümüzde B'de 6 yazıyor olacak lookup table'da. İlk B'yi gördüğümüzde lookup table'da kaç yazacağız?
+
+207
+00:38:04,112 --> 00:38:08,212
+İlk B'yi gördüğümüzde 2 yazmamız lazım hocam.
+
+208
+00:38:09,132 --> 00:38:14,431
+Hayır. Başka bir arkadaşın size söyleyebilir mi?
+
+209
+00:38:14,672 --> 00:38:15,092
+5 mi?
+
+210
+00:38:15,892 --> 00:38:16,412
+Evet. Neden?
+
+211
+00:38:16,411 --> 00:38:22,751
+Çünkü ilk B'yi gördüğümüzde günce edeceğiz bunu sonra tekrar B'yi göreceğiz tekrar günce edeceğiz
+
+212
+00:38:22,751 --> 00:38:31,351
+Aynen öyle örüntünün uzunluğundan birinci adımda bulduğunuz B'nin değerini çıkartacaksınız
+
+213
+00:38:31,351 --> 00:38:38,911
+doğal olarak eğer başka bir B olmasaydı o zaman B'nin değeri 5 olarak kalacaktı
+
+214
+00:38:38,911 --> 00:38:51,051
+Ama örüntü üzerinde her ilerlediğimizde işte A'yı ele aldığınızda A ikinci karakter olduğu için 6'dan 2'yi çıkaracaksınız 4, look up table'ı 4 ile güncelleyeceksiniz.
+
+215
+00:38:51,051 --> 00:39:00,511
+Sonra R'ye geleceksiniz, 6-3 diyeceksiniz, 3 gelecek. Sonra B'ye geleceksiniz, sonra E'ye geleceksiniz. Nerede duracaksınız?
+
+216
+00:39:04,403 --> 00:39:05,063
+E'de mi?
+
+217
+00:39:05,963 --> 00:39:07,183
+E'de durmanız gerekiyor.
+
+218
+00:39:08,124 --> 00:39:11,963
+R çünkü son karakter ve mismatch edecek olan karakter O.
+
+219
+00:39:11,963 --> 00:39:26,164
+O zaten karşılaştırmaya girdiği için, shift ettiğinizde onu karşılaştırdığınız için, sağa dayalı, sağdan sola karşılaştırma işlemi yaptığınız için, son harpin buradaki look up table'a bir etkisi olmayacak.
+
+220
+00:39:26,164 --> 00:39:29,903
+O yüzden R'yi buraya 1 yazmayacaksınız.
+
+221
+00:39:30,063 --> 00:39:34,444
+R'nin değeri 3 olarak kalıyor olacak.
+
+222
+00:39:35,183 --> 00:39:43,543
+Bu da örüntüden, örüntünün sonundaki harften bir önceki harfa kadar gitmeniz gerektiğini size söyleyen bir kural olacak.
+
+223
+00:39:47,347 --> 00:40:00,347
+ve aslında burada teknik olarak yapılan biraz önce konuştuğumuz algoritmanın ki bunun adı işte Horsepool algoritmasının preprocessing adımı olarak geçiyor. Shift table'ı oluşturuyorsunuz.
+
+224
+00:40:00,347 --> 00:40:10,347
+Burada yapılan işlemi görüyorsunuz. Çok basit bir şekilde preprocessing işlemini tamamlayabiliyorsunuz.
+
+225
+00:40:10,347 --> 00:40:19,068
+aslında örüntünün boyutu da kısa olduğu için size maliyeti oldukça düşük oluyor.
+
+226
+00:40:19,327 --> 00:40:20,507
+Buraya kadar sorusu olan var mı?
+
+227
+00:40:24,755 --> 00:40:29,755
+Hocam, ilk başta sıfırdan başlamak ve sağdan saymak daha mantıklı olmaz mı?
+
+228
+00:40:29,755 --> 00:40:32,755
+İlk başta sıfırdan başlamak ve sağdan saymak.
+
+229
+00:40:32,755 --> 00:40:35,755
+Preprocessing için mi?
+
+230
+00:40:35,755 --> 00:40:36,755
+Evet.
+
+231
+00:40:38,755 --> 00:40:49,755
+O zaman ben ilk gördüğüm B'den sonra bir sonra B'ye geleceğini bilmiyorum ve onun üzerine ezmiş olmayacak mıyım sonucu?
+
+232
+00:40:51,755 --> 00:40:52,755
+Tamam, tamam.
+
+233
+00:40:52,755 --> 00:41:00,936
+Yani önce B'ye 2 yazdım sonra en son B'yi gördüğümde tekrar bir yani sonda olmak zorunda değil hemen bir sonraki B'de olabilir.
+
+234
+00:41:01,575 --> 00:41:10,055
+O yüzden o mantıkla gidersek eğer doğru olan sonucun üzerine ezmiş olurum. Hatalı çıktı üretir.
+
+235
+00:41:13,276 --> 00:41:17,855
+Evet arkadaşlar buraya kadar sorusu olan var mı? Başka?
+
+236
+00:41:17,855 --> 00:41:21,575
+Peki.
+
+237
+00:41:22,575 --> 00:41:23,595
+O zaman bir ara verelim.
+
+238
+00:41:23,955 --> 00:41:24,875
+13.55'e kadar.
+
+239
+00:41:25,475 --> 00:41:27,295
+13.55'de kaldığımız yerden devam edelim.
+
+240
+00:54:50,003 --> 00:55:11,443
+Evet, yeniden merhaba arkadaşlar. Boyar-Mur algoritmasını birlikte inceliyorduk. Kaldığımız yerden devam edelim. En son hatırlarsanız Lookup Table'ı oluşturma kısmında kalmıştık. Orayı konuştuk. Nasıl generate edildiğinden bahsettik.
+
+241
+00:55:11,443 --> 00:55:19,823
+Şimdi matching kısmına bir piso da koduna bakalım. Aslında çok basit bir kodu var.
+
+242
+00:55:22,103 --> 00:55:36,443
+Burada iki tane while döngüsü var. Bir tanesi dış döngüde olan karşılaştırmanın bitip bitmediğini kontrol ederken iç döngü eşleşmenin ne oranda sağlandığını kontrol ediyor.
+
+243
+00:55:36,443 --> 00:55:42,383
+Yani birinde ilk kısmında tekstin sonuna gelip gelmediğinizi kontrol ediyorsunuz dış kısmında.
+
+244
+00:55:42,823 --> 00:55:46,383
+İçeride ise örüntüyle eşleşmenin sağlanıp sağlanmadığını kontrol ediyorsunuz.
+
+245
+00:55:47,123 --> 00:55:51,243
+n-1'den küçük olduğu sürece iyi devam edeceksiniz.
+
+246
+00:55:51,403 --> 00:55:53,783
+k'yı sıfırlıyorsunuz iç döngeye geçmeden önce.
+
+247
+00:55:53,783 --> 00:56:07,063
+ve K m-1 küçük eşit olduğu sürece ve birebir eşleşme sağlandığı sürece karakterlerde
+
+248
+00:56:07,063 --> 00:56:09,643
+sondan itibaren başa doğru kontrol ediyorsunuz.
+
+249
+00:56:10,084 --> 00:56:14,703
+İşte Barber kelimesinde önce R'ye baktınız, sonra E'ye, sonra B'ye.
+
+250
+00:56:15,263 --> 00:56:16,763
+Tek tek en başa kadar geliyorsunuz.
+
+251
+00:56:16,803 --> 00:56:18,303
+Bu sırada K'yı arttırıyorsunuz.
+
+252
+00:56:18,303 --> 00:56:30,743
+K eğer örüntünün boyutuna eşit olursa return diyorsunuz ve o eşleşmenin sağlandığı noktayı bilgi olarak döndürüyorsunuz.
+
+253
+00:56:30,743 --> 00:56:41,823
+Eğer eşleşme sağlanmazsa yani herhangi bir şekilde iç döngüde K, M'e ulaşamazsa döngüden çıktıktan sonra else koluna giriyorsunuz.
+
+254
+00:56:41,823 --> 00:56:46,243
+else kolunda ise ne kadar shift edeceğiniz bilgisini hesaplıyorsunuz.
+
+255
+00:56:46,743 --> 00:56:50,603
+İşte onun için de biraz önce oluşturduğumuz lookup table'a bakıyorsunuz.
+
+256
+00:56:50,603 --> 00:57:09,244
+Orada işte karşılığında ne varsa onu i'ye ekliyorsunuz ve i ya örüntünün boyutu kadar en fazla ya da örüntünün içerisinde bir harf metinle hizalanacak şekilde kaydırma işlemi tamamlanmış oluyor.
+
+257
+00:57:09,243 --> 00:57:17,703
+ve Boyer-Mur-Holspool algoritması da hem lookup table'ı oluşturarak hem de bunu kullanarak görevini yerine getirmiş oluyor.
+
+258
+00:57:18,663 --> 00:57:21,083
+Buraya kadar bir sorusu olan var mı?
+
+259
+00:57:21,083 --> 00:57:26,243
+Bu eşleştirmenin kontrolü sırasında buradaki sözde kod ile ilgili.
+
+260
+00:57:29,844 --> 00:57:36,503
+Peki, o zaman esas Boyer-Moore algoritmasına geçelim. Bu Horsepool versiyonuydu.
+
+261
+00:57:38,023 --> 00:57:47,844
+Esas Boyer-Moore algoritmasında iki tane aslında hikayemiz var. Bir tanesi bad symbol shift, bir diğeri de good suffix shift.
+
+262
+00:57:47,844 --> 00:58:04,604
+yani aslında shift etmek için iki tane farklı case'i değerlendiriyor ve bu iki case'e göre ne kadar sağa doğru öteleme yapılması gerektiğine karar veriyor Boyer-Moore algoritması.
+
+263
+00:58:05,503 --> 00:58:13,763
+Horsepool'da basit bir look-up table oluşturuyordu ve bu look-up table üzerinden karar veriyordu.
+
+264
+00:58:13,763 --> 00:58:24,263
+Burada farklı olarak aslında pattern'ların bize katkısı ne oranda oluyor?
+
+265
+00:58:24,543 --> 00:58:32,323
+Kelimenin içerisinde, örüntünün içerisinde geçen pattern bilgilerini de kullanırsak acaba daha optimum bir sonuç elde eder miyiz?
+
+266
+00:58:32,403 --> 00:58:33,844
+Buna bakıyoruz.
+
+267
+00:58:34,704 --> 00:58:40,243
+Şimdi burada yine bir metin var, tekst var, bir de pattern var, needle olmak üzere.
+
+268
+00:58:40,244 --> 00:59:01,084
+bunu eşleşmesine baktığınızda T ile D var. T ile D eşleşmediği için E eşleşmiş, L eşleşmiş ama T ile D eşleşmediği için burada bir kaydırma işlemi gerçekleşiyor ve işte T'den sonraki kısma kaydırma işini tamamlıyoruz.
+
+269
+00:59:01,084 --> 00:59:09,924
+E'nin burada bir elan ettiğinizde eşleştiği bir case olduğu için needle'ı bu şekilde konumlandırıyoruz.
+
+270
+00:59:10,244 --> 00:59:17,144
+Case 2 burada bu sefer n'de eşleşme uzunmuş.
+
+271
+00:59:18,144 --> 00:59:20,284
+n pattern içerisinde var.
+
+272
+00:59:20,584 --> 00:59:29,163
+O zaman biz pattern'ın n'siyle metnin n'sini elan edecek şekilde konumlandırıyoruz.
+
+273
+00:59:29,543 --> 00:59:30,424
+Bir başka case.
+
+274
+00:59:32,864 --> 00:59:39,023
+Burada bu sefer e harfi aslında eşleşme yapmamış.
+
+275
+00:59:40,243 --> 00:59:54,704
+Fakat E harfi eşleşme yapmadığında biz bunu eğer herhangi bir şekilde en sağdaki E ile eşleştirme şeklinde bir akıl yürütürsek
+
+276
+00:59:54,704 --> 01:00:00,064
+tabi bu pattern'ın bir nevi geri alınması anlamına geliyor.
+
+277
+01:00:00,064 --> 01:00:02,443
+O yüzden buna bir soru işareti koyuyor burada doğal olarak.
+
+278
+01:00:03,223 --> 01:00:06,243
+Acaba biz right most pattern E'yi mi kullanacağız burada?
+
+279
+01:00:06,723 --> 01:00:08,763
+Bad symbol shift'te ne yapacağız?
+
+280
+01:00:08,763 --> 01:00:15,483
+bu case'leri aslında irdeliyor bu slide'larda.
+
+281
+01:00:16,303 --> 01:00:23,784
+Çünkü burada bad symbol shift dediğinizde eşleşme olmayan sembollere göre shift işlerini gerçekleştirecek anlamına geliyor.
+
+282
+01:00:25,043 --> 01:00:27,903
+Burada işte E ile D eşleşmemiş.
+
+283
+01:00:28,704 --> 01:00:31,183
+O zaman mismatch karakterimiz E.
+
+284
+01:00:31,183 --> 01:00:44,023
+iyi o zaman bir arttıralım diyor. Çünkü ilk eşleşecek karakter E bir önceki D'den bir önceki karakter olduğu için sağa doğru bir tane shift ediyor.
+
+285
+01:00:44,344 --> 01:00:46,883
+Bu da bir başka hüristik yaklaşım.
+
+286
+01:00:46,883 --> 01:00:54,704
+Şimdi gelelim band simbol shift'te aslında nasıl bir yaklaşım var?
+
+287
+01:00:54,704 --> 01:01:02,924
+bu bir önceki gördüğünüz slide'lardaki kezleri bir araya nasıl getiriyor ve yorumluyor ona bakacağız.
+
+288
+01:01:02,924 --> 01:01:19,823
+Şimdi Barber kelimesi yukarıdaki metinde geçen nokta nokta öncesi sonra S, E, R nokta nokta sonrası olacak şekilde düşündüğünüzde R'ler eşleşmiş, E'ler eşleşmiş ama S eşleşmemiş.
+
+289
+01:01:19,823 --> 01:01:22,344
+Peki burada
+
+290
+01:01:22,344 --> 01:01:24,504
+bad symbol shift.
+
+291
+01:01:25,108 --> 01:01:42,807
+mantığı sağ tarafta da görüyorsunuz yapılan işlemi her iki farklı örnek için. En altta da bunun genelleştirilmiş hali var. Bunu sözler olarak ifade etseydiniz burada nasıl bir işlem yapıldığını söylerdiniz.
+
+292
+01:02:13,492 --> 01:02:15,492
+orada mısınız arkadaşlar?
+
+293
+01:02:29,076 --> 01:02:30,076
+Burada
+
+294
+01:02:31,435 --> 01:02:41,435
+T1S-2 yazılmış. Bu da 6-2'ye denk geliyor. Bir önceki Horstpool algoritmasından bahseler çağrışımı yapacaktır.
+
+295
+01:02:41,435 --> 01:02:43,835
+T1A-2 dediğinizde
+
+296
+01:02:43,835 --> 01:02:47,315
+4-2 değeri hesaplanmış.
+
+297
+01:02:48,315 --> 01:02:50,515
+Ve aşağıda da max
+
+298
+01:02:50,515 --> 01:02:51,515
+Hocam
+
+299
+01:02:53,515 --> 01:02:54,715
+Hocam geliyor mu şu an?
+
+300
+01:02:54,715 --> 01:02:55,715
+Geliyor.
+
+301
+01:02:55,715 --> 01:03:08,256
+şey, interneti siktir var da siz tam anlayamadım. Şey yapılmış galiba. Bu shift table'dan eşleşen harf sayısı kadar şey çıkarılmış işte.
+
+302
+01:03:09,796 --> 01:03:20,256
+S shift table'da 6 idi yani. Ben burada olup bulunmadığı için 6'ı kaydırıyorduk. Ama 2 tane eleman zaten eşleştiğimiz için 4 kaydırmış.
+
+303
+01:03:20,256 --> 01:03:22,535
+Evet teşekkür ederim.
+
+304
+01:03:24,175 --> 01:03:31,616
+Burada kaç tane eşleşme var ise işte yukarıdaki örnekte de aşağıdaki örnekte de iki tane eşleşme var.
+
+305
+01:03:31,695 --> 01:03:33,616
+R'ler eşleşmiş, E'ler eşleşmiş.
+
+306
+01:03:34,415 --> 01:03:36,596
+Eşleşmeyen karakterimiz ne?
+
+307
+01:03:37,616 --> 01:03:41,116
+Yukarıdaki örnekte S, aşağıdaki örnekte A.
+
+308
+01:03:41,116 --> 01:03:52,215
+A, S barber'ın içinde olmadığı için lookup table'daki karşılığı 6, 6-2, 4 adet sağa kaydılacak şekilde planlama yapılmış.
+
+309
+01:03:53,056 --> 01:04:07,516
+Ve aşağıdaki örnekte A harfi barber kelimesinin içerisinde bulunduğu için ve pozisyonu en uzak noktaya, en sondaki noktaya 4 uzaklıkta olduğu için
+
+310
+01:04:07,515 --> 01:04:12,095
+4-2, 2 shift edilerek karar verilmiş.
+
+311
+01:04:12,215 --> 01:04:23,155
+Tabi burada max T1, C-K, K burada eşleşme sağlanan karakter sayısını temsil ediyor.
+
+312
+01:04:23,295 --> 01:04:24,555
+Virgül 1 yazıyor.
+
+313
+01:04:25,095 --> 01:04:26,275
+Bunun sebebi ne olabilir?
+
+314
+01:04:26,575 --> 01:04:28,095
+Virgül 1 yazmışsın sebebi.
+
+315
+01:04:36,916 --> 01:04:37,916
+En az sıfır.
+
+316
+01:04:38,455 --> 01:04:40,815
+En az?
+
+317
+01:04:41,015 --> 01:04:42,655
+En az bir olması. Sıfır.
+
+318
+01:04:43,115 --> 01:04:49,935
+Evet, şimdi teknik olarak sıfır ya da eksi bir sayı üretirse buradaki T1C eksi K ki bu olabilir.
+
+319
+01:04:50,135 --> 01:04:52,995
+Çünkü K bir eşleşmeyi gösteriyor.
+
+320
+01:04:53,115 --> 01:04:57,155
+Burada işte Sarber var diyelim.
+
+321
+01:04:58,355 --> 01:05:05,895
+Sarber'da Arber kısmı tamamıyla eşleşeceği için işte oradaki ya da ne diyelim Rarber olsun.
+
+322
+01:05:05,895 --> 01:05:07,735
+eşleşmede.
+
+323
+01:05:08,155 --> 01:05:15,416
+R'nin geçtiği lookup table'daki karşılığını eşleşen sayı 5 olduğu için diyelim ki 3'ten çıkartıyoruz.
+
+324
+01:05:15,535 --> 01:05:17,975
+3-5, 2 çıkacaktı.
+
+325
+01:05:18,615 --> 01:05:27,816
+Doğal olarak 2 shift etmek gibi bir durum söz konusu olmadığına göre ki önceki slide'larda konuşurken hatırlarsanız
+
+326
+01:05:27,816 --> 01:05:33,375
+bir tane geri gelmişti karşılaştırma işlemini elayen etmek için.
+
+327
+01:05:33,375 --> 01:05:52,235
+bunun zaten olma olasılığı söz konusu olmadığı için eğer sıfır değeri çıkarsa da elimizdeki örüntüyü hiç kaydırmadan devam etmek naiv yöntemi hatırladığınızda da bir seçenek olmadığı için minimum zaten bir kaydırmak bizim hedefimiz.
+
+328
+01:05:52,235 --> 01:06:14,895
+O yüzden de buradan çıkacak değerden bağımsız olarak zaten en kötü ihtimalle 1 kaydıracağımızı virgül 1 diyerek bunların içerisinden çıkan değer 1 ise 1'e 1'den büyük değerse o değeri alarak B sembol shift'te oluşacak kaydırma miktarını hesaplıyoruz.
+
+329
+01:06:14,895 --> 01:06:32,355
+Peki, şimdi ben sembolü konuştuk ama biliyorsunuz ki örüntü içerisinde tekrar eden örüntüler olabileceği için biraz önceki örnekte baktığınızda tekrar eden örüntüler aslında teknik olarak sadece harfler var.
+
+330
+01:06:32,355 --> 01:06:36,595
+İşte R'den bir tane daha var, B'den bir tane daha var.
+
+331
+01:06:36,595 --> 01:06:48,675
+Aslında örüntünün içerisinde tekrar eden A, A, A, B ya da A, B, A, B, A, B örüntüsünde olduğu gibi uzun bir örüntü olmadığı için
+
+332
+01:06:48,675 --> 01:06:56,715
+burada kaydırmalarımızı teknik olarak bad symbol shift üzerinden yaptığımızda çok önemli bir sorun gözükmüyor.
+
+333
+01:06:56,716 --> 01:07:16,055
+Fakat tekrar eden örüntülerin olduğu örneklerde o zaman bad symbol shift veya good suffix shift'teki çıkacak sonuçları birlikte değerlendirmek işin daha optimal bir şekilde çözülmesini sağlıyor.
+
+334
+01:07:16,055 --> 01:07:25,576
+Burada nedir? Şimdi B en sondaki ilk karakter. B'den başka var mı diye bakıyorsunuz.
+
+335
+01:07:25,576 --> 01:07:29,335
+Evet var en yakında nerede tekrar ediyor? 2 öncekinde tekrar ediyor.
+
+336
+01:07:29,335 --> 01:07:46,475
+O zaman burada D2'ye yani bir shift işlemi gerçekleşecekse en iyi ihtimal ne kadarlık bir shift işlemi gerçekleşmesi gerektiğini buraya hesaplıyoruz preprocessing ödemiyle.
+
+337
+01:07:47,596 --> 01:07:52,576
+B'ye B'den dolayı 2 yazdık yani bu normalde paterni 2 kaydırırız diyoruz.
+
+338
+01:07:52,575 --> 01:08:08,175
+Fakat sonra bir başka patern yakalıyoruz. AB. AB paternine baktığınızda A ile A arasında, B ile B arasındaki çünkü AB paterni burada var. Uzaklık 4.
+
+339
+01:08:08,175 --> 01:08:14,575
+O zaman diyoruz ki zaten B'lerin eşleşmesi bir şey ifade etmiyor.
+
+340
+01:08:15,295 --> 01:08:20,935
+Çünkü burada B eşleşiyorsa daha uzun bir paten var.
+
+341
+01:08:21,755 --> 01:08:27,395
+O eşleşme en iyi ihtimalle bu örüntü içerisinde 4 aralıkla mevcut.
+
+342
+01:08:27,395 --> 01:08:36,695
+O zaman diyoruz ki sen eğer good suffix üzerinden yürüyeceksen o zaman 4 kaydırmalısın.
+
+343
+01:08:37,203 --> 01:08:59,003
+Çünkü AB'nin tekrar ortaya çıkma olasını ancak 4 kaydırdığında var. Diyelim AB'ler eşleşti, siz paterni 6 boyutu kadar kaydırmayı düşünüyorsunuz ama AB eşleştiği için ve AB paterni de örüntünün içerisinde olduğu için ancak 4 kaydırabiliyorsunuz.
+
+344
+01:08:59,003 --> 01:09:03,843
+Peki C'nin yerine A yazsaydım ne olurdu?
+
+345
+01:09:04,403 --> 01:09:06,903
+Yani pardon C'nin yerine A yazsaydım.
+
+346
+01:09:17,332 --> 01:09:28,051
+örüntümü en yüksek ne kadar kaydırabilirdim? Burada örüntümü 4 kaydırabileceğini gördüm. C'nin yerine A yazsaydım ne olurdu?
+
+347
+01:09:30,323 --> 01:09:42,164
+2. Evet. Kaydırmam gerekirdi o zaman. 4 olmayacaktı çünkü AB paternenin AB'ye olan uzaklığı CA yazdığında C yerine o zaman 2 olacaktı.
+
+348
+01:09:43,563 --> 01:09:50,523
+Aşağıdaki paterne baktığınızda hesaplamaları görüyorsunuz daha detaylı bir şekilde. Niye 4'te kaldığımızı?
+
+349
+01:09:50,703 --> 01:09:59,803
+AB'nin tekrarı 4 sonra. BAB'ye baktığınız zaman artık örüntünün boyutu olduğu için burada tabii bunun,
+
+350
+01:10:00,323 --> 01:10:12,303
+daha büyümesi mümkün hale gelmiyor. Bu noktada BAB'nin bir önceki örüntüye yani AB'ye olan uzaklığı yine 4 olarak kalıyor.
+
+351
+01:10:12,303 --> 01:10:19,584
+Çünkü A ile A'nın arası, B ile B'nin arası hala 4. B'yi shift ettiğinizde onun karşılığında örtüşen bir karakter yok.
+
+352
+01:10:20,303 --> 01:10:29,703
+CBAB'ye baktığınızda yine 4 ve en son BCBAB'ye baktığınızda yine 4 değerini alıyorsunuz.
+
+353
+01:10:29,703 --> 01:10:48,383
+Şimdi bir stringin prefiksini ve safiksini ortaya konuştuğumuz zaman burada gördüğünüz örüntü ABC, BAB örüntüsünün prefikslerini ne söylersiniz?
+
+354
+01:10:56,275 --> 01:10:58,275
+neler olabilir?
+
+355
+01:10:58,275 --> 01:11:04,275
+Şu an konuştuklarımız safiks yani sağdan sola doğru ilerliyorsunuz.
+
+356
+01:11:04,275 --> 01:11:11,275
+Prefiksleri için abcbab'nin prefikslerini sorsaydık ne derdiniz?
+
+357
+01:11:15,347 --> 01:11:22,847
+bir stringin içerisindeki olası küçük parçaları soruyorum.
+
+358
+01:11:32,307 --> 01:11:43,307
+ben örnek vereyim. A, B, C, B, A, B'nin içerisindeki bir prefiks A'dır. Başka ne olabilir?
+
+359
+01:11:45,268 --> 01:12:12,627
+AB AB AB B C C B Bunlar prefikslerdir. Peki, sapikslere baktığınız zaman neyle karşılaşıyorsunuz? B işte BA BA BAB BAB C ile karşılaşıyorsunuz. Bunlar da sapikslere.
+
+360
+01:12:12,627 --> 01:12:19,027
+Bu prefiki safikslere bakarsınız. Ne demek istediğimi daha yakından anlayacaksınız.
+
+361
+01:12:19,807 --> 01:12:28,808
+Şimdi gelelim bu iki aslında yaklaşımın birleştirilmiş haline.
+
+362
+01:12:29,467 --> 01:12:33,847
+Biri bad shift sembol, diğeri good safik sembol.
+
+363
+01:12:35,827 --> 01:12:41,347
+Burada aslında iki tane kontrol mekanizması var.
+
+364
+01:12:41,347 --> 01:12:53,507
+Bir tanesi işte bad symbol shift'teki ters eşleşmeden dolayı ne kadar kaydırılacağını hesaplıyor.
+
+365
+01:12:53,507 --> 01:13:01,087
+Bir diğeri de good suffix'teki örüntü içerisindeki benzerlik bilgisinden ne kadar kaydırılacağını hesaplıyor.
+
+366
+01:13:01,087 --> 01:13:15,568
+Peki buradaki formülizasyona baktığınızda biz hangisini tercih ediyoruz? İkisini de yapmak istersek ki bu arada algoritmanızın sadece birini de implemente edebilirsiniz.
+
+367
+01:13:15,568 --> 01:13:30,568
+Bu yanlış değil ama burada ikisinin birlikte kullanıldığı senaryoda shift mekanizmasını biraz daha hızlı hareket ettirebiliyorsunuz.
+
+368
+01:13:31,087 --> 01:13:32,808
+Bunu sağlayan nedir?
+
+369
+01:13:34,087 --> 01:13:41,607
+Her ikisinde elde ettiğiniz değer içerisinden hangisi daha fazla shift edilebileceğini söylüyorsa
+
+370
+01:13:41,607 --> 01:13:49,808
+siz onu dikkate alıp örüntünüzü o oranda shift edebiliyorsunuz.
+
+371
+01:13:53,492 --> 01:14:16,412
+tekrar diyeyim. Siz bad symbol shift içinde, good sapphic shift içinde değerler üretiyorsunuz. Bunların içerisinden hangisi daha büyükse elinizdeki örüntüyü o büyüklük oranında sağa shift edebiliyorsunuz.
+
+372
+01:14:16,412 --> 01:14:29,411
+Bu iki farklı case'i irdeleyerek aslında daha fazla örüntüyü hareket ettirme şansına sahip oluyorsunuz.
+
+373
+01:14:30,411 --> 01:14:31,451
+Bu önemli bir özellik.
+
+374
+01:14:31,451 --> 01:14:40,451
+Tabi burada k'nın sıfır olduğu durumda sadece d1'i kullanıyorsunuz.
+
+375
+01:14:40,451 --> 01:14:47,451
+Yani o da bad symbol shift'in ürettiği sonucu kullanıyorsunuz.
+
+376
+01:14:47,451 --> 01:14:58,451
+K ancak sıfırdan büyük ise, yani bu ne demek? K'nın sıfırdan büyük olması önemli bir nokta.
+
+377
+01:15:07,796 --> 01:15:10,715
+k'nın sıfırdan büyük olması ne anlamına geliyor?
+
+378
+01:15:19,475 --> 01:15:23,936
+Biraz önce aşağıdaki D1 formülünü konuşurken K'nın ne olduğunu söylemiştik.
+
+379
+01:15:29,011 --> 01:15:30,252
+Eşleşen eleman sayısı.
+
+380
+01:15:30,831 --> 01:15:42,511
+Evet, aynen öyle. Eşleşen eleman sayısı. Yani eğer eşleşen bir eleman sayınız yoksa o zaman ne olma olasılığı da yok? Herhangi bir eşleşme olmalıysa?
+
+381
+01:15:49,716 --> 01:16:08,515
+good suffix tarafında herhangi bir repeat durumu yani örüntüden kaynaklı size kazanç sağlayacak bir hesaplamanın da oluşma ihtimali söz konusu olmadığı için o yüzden eşleşme olmama durumunda good suffix tarafındaki hesaplamayı işin içine dahil etmiyorsunuz.
+
+382
+01:16:09,095 --> 01:16:14,556
+Çünkü o zaman yanıltıcı bir kaydırma olacağı için hatalı sonuç üretmesine sebebiyet verecektir.
+
+383
+01:16:14,556 --> 01:16:32,556
+O yüzden eğer bir eşleşme yok ise bad symbol shift sonucunu kullanıyorsunuz. Bir eşleşme var ise o zaman o örüntü için yapmış olduğunuz değerlendirmeyi kullanıyorsunuz.
+
+384
+01:16:33,195 --> 01:16:34,515
+Buraya kadar sorusu olan var mı?
+
+385
+01:16:37,855 --> 01:16:43,995
+İsterseniz bununla ilgili bir örnek yapalım. Ben ekran üzerinden size bir bağlayayım şu anda.
+
+386
+01:16:44,556 --> 01:16:54,796
+tableti bağlayayım. Tablet üzerinden bir karşılaştırma yapalım. Hemen şöyle şuradan kabloyu alayım.
+
+387
+01:17:55,988 --> 01:17:57,587
+Evet, şimdi paylaşımı durduruyorum.
+
+388
+01:18:59,028 --> 01:19:00,867
+Şimdi sizin ekranımı paylaşacağım.
+
+389
+01:19:35,380 --> 01:19:38,199
+Sanırım şu an görebiliyorsunuz diye tahmin ediyorum.
+
+390
+01:19:45,939 --> 01:19:52,939
+ve
+
+391
+01:19:51,796 --> 01:20:07,155
+Evet. Şöyle yazalım. B, A, O, B, A, B. Şimdi burada bad symbol, shift table'ı
+
+392
+01:20:16,564 --> 01:20:18,163
+oluşturmak isteseyiz ki.
+
+393
+01:20:20,743 --> 01:20:21,803
+buraya C diyelim.
+
+394
+01:20:22,623 --> 01:20:23,223
+buraya da
+
+395
+01:20:23,223 --> 01:20:25,003
+T1C diyelim.
+
+396
+01:20:27,324 --> 01:20:28,203
+şöyle
+
+397
+01:20:28,203 --> 01:20:29,564
+tabloyu
+
+398
+01:20:29,564 --> 01:20:31,403
+oluşturmak adına
+
+399
+01:20:31,403 --> 01:20:34,123
+A, B, C
+
+400
+01:20:34,123 --> 01:20:37,543
+B şeklinde devam edelim.
+
+401
+01:20:37,923 --> 01:20:38,223
+O
+
+402
+01:20:38,223 --> 01:20:40,664
+Z şeklinde devam edelim.
+
+403
+01:20:41,824 --> 01:20:43,904
+şimdi A'ya kaç yazacağım?
+
+404
+01:20:45,183 --> 01:20:45,423
+1
+
+405
+01:20:46,564 --> 01:21:13,744
+A'ya 1 dedik. Peki yazdım. B'ye kaç yazacağım? 2. 2. C'ye kaç yazacağım? 6. D'ye 6 yazacağım. O'ya kaç yazacağım? 3. 3 yazacağım. Peki bu hesabı yaparken nasıl yaptığımızı bir hatırlayalım. Lütfen bana söyler misin A'yı hesaplarken neye göre hesapladın?
+
+406
+01:21:13,744 --> 01:21:18,383
+En son A'nın son elemanı uzaklığını aldım.
+
+407
+01:21:19,163 --> 01:21:34,163
+Tamam. Peki bunu teknik olarak biz eşleştirme işlemini daha doğrusu bu işlemi yaparken baştan sona doğru yaptığımızı düşünürsek A'nın ilk değeri kaç olacaktı?
+
+408
+01:21:35,623 --> 01:21:35,924
+4.
+
+409
+01:21:35,924 --> 01:21:37,464
+4 olacaktı.
+
+410
+01:21:37,464 --> 01:21:50,404
+Şimdi o zaman demek ki biz gözle bunu 1 olduğunu görsek de bunu hesaplattırırken önce 6 ile başlayan A değeri 4 olacak sonra 1 olacak şekilde ilerliyor.
+
+411
+01:21:50,404 --> 01:22:01,304
+Keza B için de aynı şey geçerli. B'nin ilk değeri 5 olacak. Arkasından 2 olacak. Son B'yi de hesaplamıyoruz demiştik. Değil mi?
+
+412
+01:22:01,303 --> 01:22:13,503
+Peki bu bad symbol shift table'ı normalde şunu unutmuyorsunuz. Daha önceki horsepool algoritmasında buradaki değerleri kullanıyorduk.
+
+413
+01:22:13,503 --> 01:22:21,203
+Şimdi burada yaptığımız şey eksi k. Hatta şunu şöyle yazayım.
+
+414
+01:22:28,435 --> 01:22:44,295
+d1 max t1c eksi k bir değeri olduğunu hatırlatalım. Peki good suffix table'a bakalım.
+
+415
+01:22:54,676 --> 01:23:22,635
+Good suffix table için K patern ve D2 yazalım. Paternimiz B, A, O, B, A, B. İlk etapta K'mız 1. Yani B tek bir eşleşme var. Tekrar B ile karşılaştığımız nokta 2.
+
+416
+01:23:22,635 --> 01:23:33,036
+Yani tek bir eşleşme olduğunda biz bunu iki sağa kaydırmamız gerekiyor diye bir sonuç çıkartıyor Goods'a fixed table'ı.
+
+417
+01:23:33,036 --> 01:23:40,036
+İki eşleşmeden bahsediyor olsaydık o zaman BA veya AB şöyle yapacaktık.
+
+418
+01:23:41,455 --> 01:23:48,255
+Değerimiz ne olacaktı? AB eşleşmesi olduğunu düşünüyorsak kaydırıyor olsaydınız kaç kaydırırsınız?
+
+419
+01:23:51,796 --> 01:24:09,435
+AB yok çünkü. Yani örüntü içerisinde herhangi tekrar eden bir ikili örüntümüz yok. Böyle bir cevap geldi. Abdulkader Say'di. 6 dedi. 6 mı kaydırırsınız? Doğru cevap mıdır?
+
+420
+01:24:12,175 --> 01:24:13,075
+Doğru cevap mı?
+
+421
+01:24:13,075 --> 01:24:41,476
+yanlış cevap kaç olmalı iki eşleşme oldu AB yukarıdaki metindeki AB ile eşleşti siz bu paterni kaydırmak istiyorsunuz kaç kaydırırsınız yani şöyle bir case'den bahsediyorum nasıl göstereyim size şu AB olsun
+
+422
+01:24:46,387 --> 01:24:47,427
+Bunu kaç kaydırırsınız?
+
+423
+01:24:51,028 --> 01:24:53,468
+dot,
+
+424
+01:24:56,564 --> 01:24:58,564
+4. Emin misin?
+
+425
+01:24:59,863 --> 01:25:00,723
+Eğil mi peki?
+
+426
+01:25:01,243 --> 01:25:01,883
+Ne bence de?
+
+427
+01:25:03,163 --> 01:25:07,283
+Olsun yine de destek olduğun için teşekkür ederim.
+
+428
+01:25:08,183 --> 01:25:12,723
+Dönem boyunca ara ara 2-3 arkadaş katkı sağladı. Teşekkür ediyorum hepsine.
+
+429
+01:25:14,404 --> 01:25:26,064
+Şimdi Bad Sembo Shift'te, pardon, Good So Fix Shift'te tekrar baktığımızda B'den, yani şuradaki şöyle pointerımda göstermişim.
+
+430
+01:25:26,064 --> 01:25:31,323
+B ile bunu B'nin arasında iki tane farklılık olduğunu ve kaydırma işlemi olacağını söyledik.
+
+431
+01:25:31,404 --> 01:25:35,824
+Yani yukarıdaki B ile eşleşme söz konusu olsaydı sadece Goods'a fix'i kullanıyor olsaydık,
+
+432
+01:25:35,824 --> 01:25:41,043
+bad sembolü unutun, biz hangisini tercih edecektik? İki kaydırmayı tercih edecektik.
+
+433
+01:25:41,123 --> 01:25:47,904
+Yukarıdaki B ile eşleşme olsaydı. Yukarıdaki AB ile eşleştirme olsaydı siz neye göre shift ederdiniz?
+
+434
+01:25:48,064 --> 01:25:55,723
+AB olsaydı AB'ye bakardınız. Burada AB yok. AB yok ise o zaman bu AB ile eşleşen bir,
+
+435
+01:25:56,064 --> 01:26:04,983
+öncesinde çünkü ilk B'nin önünde O var. OB ile AB eşleşmediği için onu kendimize referans alamayız.
+
+436
+01:26:04,983 --> 01:26:22,744
+Ama burada şöyle göstereyim. Bir AB potansiyeli olarak baktığınızda ki böyle bir şey yok ama eşleşme olarak bunun altına AB'yi koyduğunuzda eşleşme ancak böyle olabilir.
+
+437
+01:26:22,744 --> 01:26:41,623
+O zaman AB ile tek B eşleşebilir. Onun da uzaklığı 5. Yani siz bunu kaydırıyor olsaydınız, Goods'a fix'e göre, o zaman şunu kırmızı ile yapayım.
+
+438
+01:26:41,623 --> 01:26:46,924
+B, A, O, B, A, B şeklinde kaydıracaktınız.
+
+439
+01:26:47,723 --> 01:26:53,523
+Buradaki belki A, buradaki belki O, buradaki belki buradaki B olacaktı.
+
+440
+01:26:54,744 --> 01:27:02,564
+O yüzden örüntü içerisindeki tekrardan repetitif durumlara baktığınızda bu mantığa gidiyorsunuz.
+
+441
+01:27:02,623 --> 01:27:06,803
+Şimdi 3 üzerinden ilerleyelim.
+
+442
+01:27:06,803 --> 01:27:26,103
+B, suffix üzerinden ilerlediğimizde bu sefer BAB var. Böyle bir tekrar eden bir case yok. Yine B ile teknik olarak eşleşebilir. Bunun da B'ye olan uzaklığına baktığımızda 5, 4'e bakalım. 4'te de aynı şey söz konusu.
+
+443
+01:27:26,103 --> 01:27:52,723
+BAB, bu sefer elimizde işte OBAP var, yine 5, son olarak B, A, O, B, A, B yazdığınızda bu sefer A, O, B, A, B doğal olarak bir tek 5 şey pardon B'ler eşleştiği için yine 5'lik bir kaydırma söz konusu olması gerekirdi.
+
+444
+01:27:52,724 --> 01:27:57,203
+Buraya kadar sorusu olan var mı?
+
+445
+01:28:05,747 --> 01:28:13,127
+Peki, bir başka örnek üzerinden isterseniz ilerlemeye çalışalım. Ben yazayım buraya.
+
+446
+01:28:13,127 --> 01:28:15,287
+PES
+
+447
+01:28:20,307 --> 01:28:21,307
+about,
+
+448
+01:28:28,851 --> 01:28:29,851
+A, S, S
+
+449
+01:28:29,851 --> 01:28:31,871
+Evet, şimdi
+
+450
+01:28:31,871 --> 01:28:33,991
+Burada
+
+451
+01:28:33,991 --> 01:28:35,391
+B
+
+452
+01:28:35,391 --> 01:28:36,511
+Pardon
+
+453
+01:28:36,511 --> 01:28:38,112
+A
+
+454
+01:28:38,112 --> 01:28:39,351
+O
+
+455
+01:28:39,351 --> 01:28:40,611
+B
+
+456
+01:28:40,611 --> 01:28:41,812
+A, B
+
+457
+01:28:41,812 --> 01:28:43,391
+Olsun
+
+458
+01:28:46,931 --> 01:29:08,831
+bunu karşılaştırarak başlıyoruz ve burada ne kadar kaydıracağımıza karar vereceğiz. Şimdi buna baktığınız zaman burada bir eşleşme var mı? Yok. Değil mi? Peki o zaman D bir T nedir?
+
+459
+01:29:13,587 --> 01:29:16,467
+şöyle yapalım, T de demeyelim, D1
+
+460
+01:29:19,988 --> 01:29:21,348
+T1k
+
+461
+01:29:24,348 --> 01:29:32,027
+O'daki k büyük, eksi eşleşen karakter sayısı sıfır. Bunun sonucu ne çıkar?
+
+462
+01:29:34,067 --> 01:29:34,827
+6
+
+463
+01:29:35,868 --> 01:29:39,067
+6 çıkar. Peki Goodsopix'ten ne gelir?
+
+464
+01:29:50,484 --> 01:29:54,423
+Şimdi biz bet, symbol, shift'i hesapladık. Good suffix'ten ne gelir?
+
+465
+01:30:01,971 --> 01:30:26,431
+Peki, sizin için işi zorlaştırmayalım. Ben burayı sileyim. Pardon. Goodsafix'ten hiçbir şey gelmez çünkü k0 yani herhangi bir eşleşen bir karakter yok. O yüzden bu karakter grubunu 6 sağa kaydırıyorum.
+
+466
+01:30:26,431 --> 01:30:29,131
+Şimdi buraya bakıyoruz.
+
+467
+01:30:30,351 --> 01:30:31,891
+Burada eşleşen kaç karakter var?
+
+468
+01:30:33,171 --> 01:30:33,331
+Bir.
+
+469
+01:30:35,332 --> 01:30:36,371
+Bir mi?
+
+470
+01:30:39,923 --> 01:30:53,543
+iki tane evet ben bir diye duydum da yanlış duymuş olabilirim iki tane eşleşen karakterimiz var o zaman k eşittir iki D bir sonucu ne olacak
+
+471
+01:31:04,884 --> 01:31:27,543
+İsterseniz şuradan bakabilirsiniz. B2 idi. 2 eksi 2. 0 çıktı doğru mu? Evet. Max'dan dolayı bir aralacak galiba. Şimdi, burada herhangi bir şekilde yaptığım hesapta bir sorun var mı? Önce onu soracağım.
+
+472
+01:31:27,543 --> 01:31:31,564
+boşluk olmayacak mı?
+
+473
+01:31:32,043 --> 01:31:33,343
+Evet, teşekkür ediyorum.
+
+474
+01:31:34,304 --> 01:31:35,183
+Önemli bir nokta.
+
+475
+01:31:35,484 --> 01:31:36,904
+Bu hataya düşmemek gerekiyor.
+
+476
+01:31:37,064 --> 01:31:41,143
+Eşleşmeyen karakter bizim için burada temsil edilmesi gereken karakter.
+
+477
+01:31:41,143 --> 01:31:43,303
+O yüzden burası B olmayacak.
+
+478
+01:31:46,483 --> 01:31:51,443
+Burası, şunu yazalım, D1, boşluk olacak.
+
+479
+01:31:52,224 --> 01:31:55,003
+Boşluk karakterinin karşılığı nedir?
+
+480
+01:31:58,836 --> 01:32:14,035
+6. Şu tarafa gelecek olursak şurada 6 olacaktı. K kaçtır? 2. Bize D1, 4 çıktı. D2'ye bakabilir miyiz bu kezde? Bakabiliriz. Çünkü K sıfırdan farklı.
+
+481
+01:32:14,035 --> 01:32:41,975
+AB eşleşmesi oldu. AB eşleşmesinin karşılığı kaçtı? 5'ti. D2, 5. D1, 4. Ben kaç kaydıracağım? Büyük olanı kaydıracağım. O zaman diyorum ki B, A, O, B, A, B.
+
+482
+01:32:45,555 --> 01:32:54,455
+Şöyle de yazalım. D max 4, 5'ten 5 değerini aldık.
+
+483
+01:32:58,996 --> 01:32:59,955
+devam ediyoruz.
+
+484
+01:33:02,115 --> 01:33:03,315
+Şu an şuradayız.
+
+485
+01:33:05,535 --> 01:33:06,175
+D1
+
+486
+01:33:11,028 --> 01:33:12,627
+eşleşmeyen karakterim hangisi?
+
+487
+01:33:15,627 --> 01:33:16,227
+boşluk
+
+488
+01:33:16,227 --> 01:33:19,028
+space karakteri
+
+489
+01:33:19,028 --> 01:33:21,667
+bunun karşılığı 6
+
+490
+01:33:21,667 --> 01:33:23,087
+eşleşen karakter sayım kaç?
+
+491
+01:33:24,887 --> 01:33:25,167
+1
+
+492
+01:33:25,167 --> 01:33:27,247
+buradan 5 geldi
+
+493
+01:33:27,247 --> 01:33:29,307
+D1'im 5
+
+494
+01:33:29,307 --> 01:33:32,028
+D2'ye bakabilirim çünkü eşleşen bir tane var
+
+495
+01:33:32,028 --> 01:33:33,167
+D2'im kaç?
+
+496
+01:33:35,047 --> 01:33:36,327
+hemen gösterelim
+
+497
+01:33:36,327 --> 01:33:37,827
+bir tane eşleştiğinde kaçtı?
+
+498
+01:33:46,612 --> 01:34:11,431
+gotusafix'te bir tane eşleşme olduğunda 2. Değil mi? Hangisi daha büyük? B max 2, 5. 5 daha büyük olduğu için diyorum ki ben bunu 5 kaydıracağım. 5 kaydırdığımda nereye gelecek? B, A, O, B, A, B'ye gelecek.
+
+499
+01:34:11,431 --> 01:34:20,531
+eşleşme sağlandı, eşleşme sağlandı, sağlandı, sağlandı, sağlandı, sağlandı, sağlandı.
+
+500
+01:34:21,452 --> 01:34:30,512
+Burada da örüntünün ilgili textin içerisinde ya da stringin içerisinde olduğunu buldum ve işlemi tamamladım.
+
+501
+01:34:30,512 --> 01:34:40,231
+Tabii tamamlamak zorunda değilim. Başka aradığım örüntüler de olabilir. Bu algoritmamı buna göre modifiye ederek hazırlamam gerekiyor.
+
+502
+01:34:41,431 --> 01:34:43,431
+Anlaşıldı mı? Sorunuz var mı?
+
+503
+01:34:48,724 --> 01:35:00,144
+Peki, teşekkür ediyorum. Sessizlik benim için her şeyin okey olduğu anlamda geliyor. Bir ara verelim 14.35, 15.50'de devam edelim. Teşekkür ediyorum. Görüşmek üzere arkadaşlar.
+
+504
+01:49:46,707 --> 01:50:04,067
+Evet, yeniden merhaba arkadaşlar. Dersin son bölümüne giriyoruz. Az önce Boyar Moore, Horsepool ve Boyar Moore, Bad Symbol Shift ve Good Suffix Shift özelliklerini konuştuk, örnek çözdük.
+
+505
+01:50:05,447 --> 01:50:16,067
+Şimdi alternatif yöntemlere bakacağız. Bu konuştuğumuz algoritmalar aslında en iyi sonucu veren algoritmalar sıralamasında ilk sıralarda konumlanıyorlar.
+
+506
+01:50:16,707 --> 01:50:24,707
+var. Şimdi tekrar ekran paylaşımı yapayım. Slide'lar üzerinden devam edelim.
+
+507
+01:50:44,756 --> 01:50:46,515
+Şurada en son
+
+508
+01:50:46,515 --> 01:51:00,216
+Robin Carp algoritmasında kalmıştık. Daha önceki konuştuğumuz algoritmalar birebir matching yani karakter karşılaştırması yapıyorlardı.
+
+509
+01:51:00,835 --> 01:51:06,276
+Robin Carp algoritması ise daha çok fingerprint araması yapıyor. Fingerprint araması ne demek?
+
+510
+01:51:06,276 --> 01:51:16,415
+aslında çeşitli tüm özellikler arasından en ayırt edici özellikleri seçerek bir arama yapmak anlamına geliyor.
+
+511
+01:51:17,616 --> 01:51:24,196
+İşte örneğin face recognition yaparken de yüzünüzde binlerce nokta var.
+
+512
+01:51:24,956 --> 01:51:35,495
+Biliyorsunuz medya eşleşmesinde, görüntü işlemede kullanılan çok eski yaklaşımlardan bir tanesi template matching'tir.
+
+513
+01:51:35,495 --> 01:51:51,655
+aslında birebir naif string selection yaptığı mantıkla pikselleşleşmelerini kontrol eder ve o resmin olası aday resmin aynısı olup olmadığını ya da ne kadar benzediğinin hesabını yapar.
+
+514
+01:51:52,395 --> 01:51:56,135
+Fakat bütün pikselleri kontrol etmek aslında çok akıllıcı değildir.
+
+515
+01:51:56,135 --> 01:52:17,675
+Bunları işte çeşitli kerneler gezdirerek işte Max Bulling vesaire yapılarak temel özellikler çıkartılıp işte bu resmin fingerprint'i dediğimiz o kişiye ait nirangi noktaları belirlenerek eşleşmenin doğru olup olmadığı kontrolündür.
+
+516
+01:52:17,675 --> 01:52:29,955
+Burada da benzer bir mantık var. Bu benzer mantığı anlatmak için burada verilen aslında tekst ve örüntü bilgisi sayılarla verilmiş.
+
+517
+01:52:31,375 --> 01:52:39,655
+Karakterlerle yaptığımız zaman dönüşümü gerçekleştirmeniz gerekiyor ama mantığı anlatmak adına bu örnek sayılarla aktarılmış size.
+
+518
+01:52:39,655 --> 01:52:52,075
+işte 26.535 örüntüsünün burada 3 ile başlayan 3 ile biten örüntü içerisinde olup olmadığını kontrol edeceğiz diyelim.
+
+519
+01:52:52,075 --> 01:53:11,095
+tek tek karakterleri ya da sayıları, rakamları birbirleriyle match edip fazla sayıda kontrol yapmak yerine bu sayıların modüller aritmetikle modunu alıp eşleşmesi sağlanıp sağlanmadığına bakılıyor.
+
+520
+01:53:11,095 --> 01:53:21,836
+İşte burada 31.415 örüntü 5 olduğu için 997'ye göre modu alınıyor.
+
+521
+01:53:22,075 --> 01:53:36,195
+26.535'in de aynı şekilde bu seçilen sayı, asal sayı göre modül alınıyor ve bu şekilde karşılaştırmalar yapılarak eşleşmenin sağlanıp sağlanmadığı kontrol ediliyor.
+
+522
+01:53:36,335 --> 01:53:40,055
+Bir eşleşme aslında kontrolü yapılmış oluyor.
+
+523
+01:53:40,715 --> 01:53:43,895
+Aksi takdirde her türde beş eşleşme kontrolü yapılacaktı.
+
+524
+01:53:43,895 --> 01:53:54,175
+ve en sonunda işte birer shift edilerek aslında naif aramanın burada bir değiştiği bir durum yok.
+
+525
+01:53:55,095 --> 01:53:59,336
+Bir kaydırarak ilerliyorsunuz fakat karşılaştırma sayısını azaltıyorsunuz.
+
+526
+01:53:59,336 --> 01:54:09,735
+Tabi modülünü aldığınızda çıkan sonucun mutlaka doğru sonuç olma ihtimali duruma göre değişkenlik gösteriyor.
+
+527
+01:54:09,895 --> 01:54:11,395
+Böyle bir kesinlik yok.
+
+528
+01:54:11,395 --> 01:54:36,276
+Çünkü kombinasyonlara bağlı olarak işte 26.535 yerine başka bir sayı kullanılsaydı o zaman belki onun da 997'ye göre modu 613 çıkacaktı ve bu eşleşme garanti mi değil mi bunun kontrolünün mutlaka eğer modüler eşleşme
+
+529
+01:54:36,724 --> 01:54:51,763
+sağlandıysa birebir rakamsal karşılaştırma şeklinde gerçekleşmesi gerekiyor. O yüzden önce modüler eşleşmenin sağlandığını tespit ediyorsunuz. Sonra tek tek rakamlar birbiriyle eşleşiyor mu diye kontrol ediyorsunuz.
+
+530
+01:54:51,763 --> 01:55:00,064
+Burada Robin Carp string search algoritması bir hash değeri hesaplıyor. Henüz hash algoritmalarını bilmeyenler olabilir.
+
+531
+01:55:00,064 --> 01:55:21,643
+Bunu özellikle search tekniklerinde O1 karmaşıklıklı arama ve siber güvenlik alanında, şifreleme alanında çeşitli hash değerleri üreterek kriptolojide de kullanıyoruz.
+
+532
+01:55:21,643 --> 01:55:30,043
+buradaki temel mantık bir verilen işte bu bir text grubu olabilir ya da bir sayı olabilir.
+
+533
+01:55:30,043 --> 01:55:37,443
+Onun bir hash değerini üretmek. Bu hash değer işte genelde modüler aritmetik kullanılarak hesaplanıyor.
+
+534
+01:55:38,224 --> 01:55:45,883
+İşte division yöntemi ya da multiplication yöntemi var. Temel kullanılan yöntemler.
+
+535
+01:55:45,883 --> 01:55:52,483
+bunu önümüzdeki dönem algoritma analizi dersinde zaten detaylı bir şekilde görüyor olacaksınız.
+
+536
+01:55:53,303 --> 01:56:04,543
+Buradaki maddelere baktığımızda işte hash değerleri birbirine eşit olmadığında bir sonraki m karakter sequencenin hash değeri hesaplanır diyor.
+
+537
+01:56:04,543 --> 01:56:28,283
+Eğer hash değerleri eşit olursa bildiğiniz brute force karşılaştırma yöntemiyle pattern ve sequence'deki M karakterin tek tek karşılaştırılması sağlanır ve eğer bütün karakterler birbiriyle tutuyorsa o zaman başarı elde edildiğini ve stringin bulunduğu söylenir.
+
+538
+01:56:28,283 --> 01:56:57,423
+Şimdi burada tabii birkaç tane trick var. Özellikle sayılar büyüdükçe ve örüntü uzadıkça değerler büyüyor. O nedenle bu hesaplamayı yaparken sayıyı küçülterek ilerlemek için kullanılan teknikler var matematikte ve o sayı üzerinden ilerlenmesi burada anlatılmış. Bunun da detayları verilmiş durumda.
+
+539
+01:56:57,423 --> 01:57:13,423
+keza yine işte hesaplama yaparken önce 2'ye göre mod alıyorsunuz sonra işte 26 sonra 265 olarak ilerlediğinizde buradaki işte aslında hesabın karmaşıklığını görüyorsunuz.
+
+540
+01:57:14,483 --> 01:57:20,783
+Ama bunun daha farklı şekillerde temsil edilme olasılıkları var bu sayıyı ifade ederken.
+
+541
+01:57:20,783 --> 01:57:46,143
+2 çarpı 10.000, 6 çarpı 10.000, 5 çarpı 100 şeklinde bu hesaplamaları daha kısaltmak amaçlı buradaki çarpma işlemleri tekrar tekrar yapılarak değil, çarpı 10.000 yapmak yerine çarpı 10 yapılarak üzerine eklenerek ilerlenmesi bu işin biraz daha kısaltılmasını mümkün hale getiriyor.
+
+542
+01:57:46,143 --> 01:57:56,343
+Yine arka arkaya gelen değerleri hesaplarken 41.592'yi hesapladığınızda bu şu anda hesapladığınız sayı olarak karşınıza çıkıyor.
+
+543
+01:57:56,343 --> 01:58:10,183
+Daha sonra yeniden bütün 15.926'yı hesaplamak yerine oradan mevcut işte 41.592'den 40.000'i çıkartıp 15.92'yi elde ediyorsunuz.
+
+544
+01:58:10,183 --> 01:58:16,423
+sonra bunu 10 ile çarpıyorsunuz 15920 ve artı 6 diyerek yeni değere ekliyorsunuz.
+
+545
+01:58:16,503 --> 01:58:25,183
+Yani baştan bütün o çarpma bölme işlemlerini yapmak yerine bu tarz daha toplama ve çıkartmanın...
+
+546
+01:58:26,452 --> 01:58:47,031
+ağırlıkta olduğu, çarpmanın yüksek olduğu bir, çarpmanın az olduğu bir yöntemi tercih edebiliyorsunuz. Böylece Robin Karp algoritmasındaki o hash değerimi hesaplamak için kullandığınız modüler aritmetik işlemleri biraz daha verimli hale getiriyorsunuz.
+
+547
+01:58:47,031 --> 01:58:53,351
+Burada tabii bunun üzerinde çok detaylı durmuyoruz. Buna baktığınızda siz de kendiniz keşfedebilirsiniz.
+
+548
+01:58:53,351 --> 01:59:08,691
+önemli olan buradaki mantığı anlamak. Biz rakamların yerine harfleri koyduğumuzda harflerin çeşitli, ne diyelim ona, ASKİ tablosundaki karşılıkları var.
+
+549
+01:59:09,132 --> 01:59:18,632
+ASKİ tablosundaki karşılıklarını alıp sayısal değere dönüştürüp buradaki modüler aritmetiğe maruz bıraktığınızda aslında aynı şeyi elde ediyorsunuz.
+
+550
+01:59:18,632 --> 01:59:22,111
+O yüzden genellikle bu tercih ediliyor.
+
+551
+01:59:22,192 --> 01:59:33,931
+Burada yapılacak yöntemlerden bir tanesi işte Horner kuralında olduğu gibi R üzeri katsayılarla çarpıp
+
+552
+01:59:33,931 --> 01:59:42,191
+işte baba ya da AB, AB kelimelerinin aynı değeri üretmemeleri için
+
+553
+01:59:42,191 --> 01:59:50,992
+her harfi başka bir katsayıyla çarparak bunun olasılığını düşürmek yapılan uygulanan tekniklerden bir tanesi de bu.
+
+554
+01:59:52,071 --> 01:59:54,672
+Bunları da inceleyip görebilirsiniz.
+
+555
+01:59:56,591 --> 02:00:02,631
+Gelelim genel olarak bu bahsettiğimiz algoritmaların karmaşıklıklarına.
+
+556
+02:00:02,631 --> 02:00:06,431
+İşte BruteForce'dan bahsettik, naive string search algoritması.
+
+557
+02:00:06,571 --> 02:00:08,251
+Carp Robin'dan bahsettik.
+
+558
+02:00:08,831 --> 02:00:11,751
+Kunut Morris Pratt algoritması var.
+
+559
+02:00:12,191 --> 02:00:21,071
+benzer mantıkla Boyer Moore'un sağdan sola yaptığı eşleşme kontrolünü soldan sağa yapıyor.
+
+560
+02:00:21,071 --> 02:00:28,211
+Ama orada kullanılan mantık Boyer Moore kadar sofistike değil.
+
+561
+02:00:28,731 --> 02:00:39,032
+Bu nedenle de burada da gördüğünüz gibi çok büyük bir açıkçası iyileşme sağlamıyor görece.
+
+562
+02:00:39,032 --> 02:01:04,212
+ama Boyer-Moore algoritmasına baktığınızda standart tekrar etmeyen örüntülerin olduğu bir yapıda en bölü enlik bir karşılaştırma ki diğerlerine baktığınızda hepsi 1.1 çarpı enlik bir karşılaştırma demek ki buna göre çok daha efektif özel case'ler dışında genel olarak baktığınızda.
+
+563
+02:01:04,211 --> 02:01:23,731
+Worst case'e baktığınızda ise Brutforce oldukça kötü. N çarpı M. Ama öte yandan Carpenter Bin ve Boyar Moore nispeten bir tık daha iyi olsa da Knut Morris Pratt da worst case düşünüldüğünde hemen hemen aynı karmaşıklıklara sahipler.
+
+564
+02:01:23,731 --> 02:01:34,192
+Bu yüzden genelde çok daha iyi olan Boyer Moore bunların arasından biraz daha ön plana çıkıp sıyrılıyor.
+
+565
+02:01:34,192 --> 02:01:39,711
+Yine bir başka karşılaştırma tablosu var. Bunun detayına da bakabilirsiniz.
+
+566
+02:01:39,711 --> 02:01:54,871
+Son olarak performansları experimental olarak incelendiğinde paternin örüntüsü büyüdükçe naif yöntemin çok büyük bir değişiklik göstermediğini performansını görüyorsunuz.
+
+567
+02:01:55,491 --> 02:02:06,411
+Keza konu tu Morris Pratt için de aynı şey geçerli. Örüntü büyüdükçe burada performansının çok daha iyi olmasına karşı naif yöntemi.
+
+568
+02:02:06,411 --> 02:02:12,131
+belli bir noktadan sonra Boyar Moore'un altında kaldığını görüyorsunuz.
+
+569
+02:02:12,811 --> 02:02:22,211
+Boyar Moore'da da örüntünün büyümesinin özellikle arama noktasında çok daha performansı arttırdığını.
+
+570
+02:02:22,771 --> 02:02:47,511
+şahit oluyoruz buradaki grafiklere baktığımızda. Burada sanki araları çok açıkmış gibi gözükse de Boyer Moore ve Boyer Moore Horsepool'un yapılan çalışmalarda işte vPaper'daki versiyonlarına baktığımızda oldukça yakın özellikle örüntü sayısı büyüdükçe değerler ürettiğini görüyoruz.
+
+571
+02:02:47,511 --> 02:02:51,911
+Bu nedenle kolay implementasyonu olan Horsepool tercih edilebilir.
+
+572
+02:02:52,952 --> 02:03:05,452
+Burada zaten daha düşük bir performans göstermiş ama aslında teknik olarak boyarmur örüntü büyüdükçe Horsepool'un bir tık altına düşüyor.
+
+573
+02:03:06,112 --> 02:03:08,852
+Ama paralel seyrediyorlar bir yerden sonra.
+
+574
+02:03:08,852 --> 02:03:12,931
+Bunların biraz daha farklı versiyonları var.
+
+575
+02:03:14,031 --> 02:03:15,431
+Özelleştirilmiş halleri var.
+
+576
+02:03:15,431 --> 02:03:31,591
+orada daha performans iyileştirmeleri söz konusu ama genel olarak standart bir iş yapan bir kişi için bu algoritmaların string matching tarafında tatminkar sonuçlar ürettiğini rahatlıkla söyleyebiliriz.
+
+577
+02:03:33,051 --> 02:03:39,932
+Evet sunumu bu kadar bugünlük. String matching yöntemleriyle ilgili sorusu olan arkadaşımız var mı?
+
+578
+02:03:47,347 --> 02:03:52,587
+Peki, başka bir yorum yapmak isteyen ya da başka bir konuyla ilgili konuşmak isteyen?
+
+579
+02:03:56,564 --> 02:04:04,963
+O zaman teşekkür ediyorum katılımınız için. Bu haftalık bu kadar. Haftaya görüşmek dileğiyle diyorum. Güzel bir hafta diliyorum hepinize. Hoşçakalın.

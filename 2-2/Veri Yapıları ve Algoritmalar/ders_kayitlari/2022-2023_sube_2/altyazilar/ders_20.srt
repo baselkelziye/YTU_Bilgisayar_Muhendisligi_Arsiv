@@ -1,0 +1,2343 @@
+1
+00:02:33,716 --> 00:02:47,935
+Hoşgeldiniz arkadaşlar. Hepinize güzel bir hafta diliyorum. Şu an 13 kişi var sadece derste. O nedenle biraz daha bekleyeceğim sayının artmasını. Birkaç dakika sonra derse başlıyor olacağız.
+
+2
+00:04:31,220 --> 00:04:54,739
+Evet, yeniden merhaba arkadaşlar. Yeterince bekledik. Daha sonra katılanlar aramızda olacaktır mutlaka. Hoş geldiniz. İki haftadır görüşmüyoruz. Bir önceki, yani iki hafta öncesinde bir sınav olmuştunuz. Sınavlarınızla ilgili herhangi bir sıkıntı yaşadığınızı zannetmiyorum.
+
+3
+00:04:54,739 --> 00:04:58,039
+geçmiş olsun diyorum sınav haftasından sonra.
+
+4
+00:04:58,999 --> 00:05:01,159
+Hemen arkasından da bir Mayıs vardı.
+
+5
+00:05:01,879 --> 00:05:03,319
+Tatil neleriyle görüşemedik.
+
+6
+00:05:04,239 --> 00:05:07,279
+Bu hafta graflar konusuna geçiş yapacağız.
+
+7
+00:05:08,559 --> 00:05:11,499
+Graflarla ilgili temel bilgileri anlattıktan sonra
+
+8
+00:05:11,499 --> 00:05:17,119
+minimum spanning tree kavramını, spanning tree kavramını tartışıp
+
+9
+00:05:17,119 --> 00:05:21,199
+bu problemin nasıl çözüldüğüne dair bilgiler vereceğiz.
+
+10
+00:05:21,199 --> 00:05:28,039
+Bu hafta 3. ve son ödevinizi veriyor olacağız. Muhtemelen yarın diye tahmin ediyorum.
+
+11
+00:05:29,099 --> 00:05:34,139
+Sonrasında da hemen arkasından dönem projenizi veriyor olacağız.
+
+12
+00:05:34,699 --> 00:05:40,020
+Sınavla ilgili sınav sonrasında gönderen arkadaşlar olmuş.
+
+13
+00:05:41,440 --> 00:05:44,239
+Sistem üzerinden teslim etmeyen arkadaşlar olmuş.
+
+14
+00:05:44,239 --> 00:05:49,660
+Bu noktada maalesef bizim yapabileceğimiz bir şey yok ama sistemsel bir sorun var ise
+
+15
+00:05:49,659 --> 00:06:08,679
+özellikle bu noktada uzam üzerinden teknik sorunu anlatan bir durum bize aktarılırsa o zaman size yardımcı olma şansımız olabilir ama onun dışında mail gönderen arkadaşlara tek tek geri dönüşü yapmadım.
+
+16
+00:06:09,259 --> 00:06:18,219
+Sizlerden ricam sizin dışınızda gelişen bir teknik problem nedeniyle sınavınızı yükleyemediyseniz birinci bölüm, ikinci bölüm,
+
+17
+00:06:18,220 --> 00:06:31,940
+daha çok ikinci bölümle ilgili sanırım sıkıntı gönderilmiş. Lütfen uzamdan bununla ilgili bir talepte bulunun ve biz de onun üzerine gerekli girişimleri başlatıp size yardımcı olmaya çalışalım.
+
+18
+00:06:35,139 --> 00:06:36,459
+Bir soru var.
+
+19
+00:06:39,740 --> 00:06:45,639
+Hayır [öğrenci], üçüncü ödevle aynı hafta tanımlanmayacak. Üçüncü ödev bu hafta verilecek.
+
+20
+00:06:45,639 --> 00:06:48,940
+dönem projisi önümüzdeki hafta verilecek bir değişiklik olması.
+
+21
+00:06:53,620 --> 00:06:59,719
+Başka sorusu olan görüş belirtmek isteyen varsa söz verebilirim.
+
+22
+00:07:00,799 --> 00:07:05,000
+Vize sonuçları muhtemelen önümüzdeki hafta açıklanır diye tahmin ediyorum.
+
+23
+00:07:06,279 --> 00:07:10,439
+Özellikle kodlarınızı okumak biraz zaman oluyor.
+
+24
+00:07:12,279 --> 00:07:16,699
+Önümüzdeki haftaya ders saatine kadar açıklamayı planlıyorum.
+
+25
+00:07:16,699 --> 00:07:24,579
+bir aksilik olmazsa yaklaşık olarak 3 hafta içerisinde sizlere sonuçları ulaştırmış olmayı planlıyorum.
+
+26
+00:07:25,939 --> 00:07:28,620
+Başka bir sorusu olan var mıdır?
+
+27
+00:07:31,559 --> 00:07:35,120
+Peki. O zaman isterseniz derse geçelim.
+
+28
+00:07:36,239 --> 00:07:40,340
+Ben şöyle sizinle öncelikle bir ekran paylaşmak için hazırlığımı yapayım.
+
+29
+00:08:06,228 --> 00:08:11,047
+Şimdi ekranımı paylaşıyor olacağım.
+
+30
+00:08:23,891 --> 00:08:25,831
+görebiliyorsunuzdur diye tahmin ediyorum.
+
+31
+00:08:32,500 --> 00:08:34,500
+Evet, graflar.
+
+32
+00:08:40,211 --> 00:08:44,211
+Al-Mumniyaz Riyama, Yırsani Nizr-ı Jajah-ı Jajah.
+
+33
+00:09:02,035 --> 00:09:23,716
+Evet, graflar dediğimiz zaman bir non-linear data structure aklımıza gelmeli. Burada herhangi bir düz yapı yok bir hiyerarşi söz konusu. Bu hiyerarşi grafların özel yapısı olan ağaçlarla daha da net ortaya çıkıyor.
+
+34
+00:09:23,716 --> 00:09:30,195
+ve burada iki temel kavram aslında graflarda ön plana çıkıyor.
+
+35
+00:09:30,275 --> 00:09:31,175
+Bir tanesi düğüm.
+
+36
+00:09:33,195 --> 00:09:37,695
+Bir başka ifadeyle İngilizce'de node olarak da kullanılıyor.
+
+37
+00:09:39,635 --> 00:09:43,376
+Bu arada benimle ilgili bir sıkıntı var.
+
+38
+00:09:51,059 --> 00:10:18,419
+ve edge yani kenar. Bizim bir grafı tanımlarken kullandığımız iki önemli kavram. Grafı ifade ederken diyorsunuz G ile ifade ediyoruz ve V ve E'ler kullanıyoruz ya da bir başka deyişle G ve E olarak da ifade edebiliyoruz.
+
+39
+00:10:18,419 --> 00:10:31,519
+Bir grafta birden fazla düğüm ya da kenar bulunabiliyor ve bunlara bağlı olarak da birçok farklı tipte grafla karşılaşıyoruz.
+
+40
+00:10:31,619 --> 00:10:34,179
+Bunları şimdi yazmaya başlayacağım.
+
+41
+00:10:34,179 --> 00:10:35,179
+Bir tanesi...
+
+42
+00:10:41,107 --> 00:11:10,167
+özür dilerim kalemle ilgili bir sıkıntım var. Null graph. Null graph dediğimiz zaman herhangi bir kenarın olmadığı bir graftan bahsediyoruz. Şöyle düğümler olsun. İşte bunlara bir, iki, üç, dört diyelim. Eğer bu grafta herhangi bir kenar yoksa bu graf null graph olarak.
+
+43
+00:11:11,107 --> 00:11:30,968
+adlandırılıyor. Trivial graph olarak bir yapıdan bahsettiğimizde de örneğin tek bir düğüm var ise single vortex diyoruz buna. Bu noktada
+
+44
+00:11:42,515 --> 00:12:00,655
+single vortex diyerek trivial grafı tariflemiş oluyoruz. Şimdi bildiğiniz graf türlerine geçiyorum. Undirected graf. Daha önceden muhtemelen duymuşsunuzdur. Ve directed graf.
+
+45
+00:12:00,655 --> 00:12:11,495
+Burada yönlü ve yönsüz graflardan bahsediyoruz. Şu şekilde belirtilen bir grafta.
+
+46
+00:12:19,412 --> 00:12:41,672
+undirected bir graf olarak anlamdırıyoruz. Herhangi bir yön bulunmuyor. Tam tersi, şöyle okların bir yön ifade ettiği, edge'lerin yön bilgisayar bulunduğu grafta da, biz,
+
+47
+00:12:45,672 --> 00:12:45,951
+biz,
+
+48
+00:12:49,011 --> 00:12:58,011
+Arkadaşlar, kalemimle ilgili bir sıkıntım var. Çok özür diliyorum, sizi bekleteceğim.
+
+49
+00:13:12,947 --> 00:13:14,947
+Tekrar deneyeceğim.
+
+50
+00:13:14,947 --> 00:13:22,947
+Burada da directed graflardan bahsediyoruz. Peki grafların undirected ve directed olması çözümlerimizi etkiliyor mu? Evet doğrudan etkiliyor.
+
+51
+00:13:22,947 --> 00:13:34,947
+O yüzden bir graf sorusu ile karşılaştığınız zaman mutlaka o grafın yönlü mü yönsüz mü olduğu özelliğini bilmenizde fayda var. Buna dikkat etmek gerekiyor.
+
+52
+00:13:34,947 --> 00:13:38,947
+Şuraya bir sayfa daha ekleyelim.
+
+53
+00:13:38,947 --> 00:13:41,947
+Connected Graph.
+
+54
+00:13:41,947 --> 00:13:46,427
+Bu da beşinci grafimiz olsun.
+
+55
+00:13:49,128 --> 00:13:55,788
+Connected grafta bütün düğümlerin birbirleri üzerinden erişilebilir olması gerekiyor.
+
+56
+00:13:55,788 --> 00:14:00,007
+Örneğin şöyle bir yapı var.
+
+57
+00:14:00,247 --> 00:14:10,007
+Bu bir connected graf iken burada şöyle bir yapı varsa bu A tarafı olsun bu da B tarafı olsun.
+
+58
+00:14:10,007 --> 00:14:17,787
+B tarafındaki yapı herhangi bir şekilde bir connected graph oluşturmuyor ya da C'ye bakalım şöyle olsun.
+
+59
+00:14:19,247 --> 00:14:22,907
+C'de bir connected graph değil.
+
+60
+00:14:23,447 --> 00:14:32,707
+O yüzden buna connected graph A'ya connected graph derken B'ye ve C'ye disconnected graph ismini veriyoruz.
+
+61
+00:14:41,748 --> 00:14:42,748
+devam edelim.
+
+62
+00:14:42,748 --> 00:14:48,748
+Complete graph kavramı var.
+
+63
+00:14:48,748 --> 00:14:50,748
+Evet.
+
+64
+00:14:52,275 --> 00:15:03,036
+Complete Graph'da bütün aslında düğümlerin birbirleriyle bağlantısı olduğu bir yapıyı söylüyoruz.
+
+65
+00:15:03,236 --> 00:15:07,715
+Aslında buna bilgisayar ağlarında da bir isim veriliyor.
+
+66
+00:15:08,095 --> 00:15:09,395
+[öğrenci] varsa söyleyebilir.
+
+67
+00:15:11,395 --> 00:15:12,995
+Bir network tipi olarak geçiyor.
+
+68
+00:15:12,995 --> 00:15:24,755
+tüm düğümlerin birbiriyle bağlı olduğu graf yapısı, complete graf olarak adlandırılıyor.
+
+69
+00:15:26,195 --> 00:15:27,616
+Network tipinde ne diyoruz?
+
+70
+00:15:39,475 --> 00:15:43,315
+mesajlardan yazan var mı diye bakıyorum ama kimse cevap yazmamış peki.
+
+71
+00:15:43,315 --> 00:15:45,315
+mesh network diyoruz.
+
+72
+00:15:45,315 --> 00:15:49,715
+tüm bilgisayarların birbirlerine doğrudan bağlı olduğu yapıdan bahsediyoruz.
+
+73
+00:15:49,715 --> 00:16:03,236
+burada da gördüğünüz gibi her düğümden diğer düğme erişim söz konusu ise doğrudan bir erişim söz konusu ise o zaman bu graf türüne complete graf adını veriyoruz.
+
+74
+00:16:03,236 --> 00:16:12,856
+Şimdi bir başka önemli kavram, cycle graph.
+
+75
+00:16:17,107 --> 00:16:27,107
+say kaçtaydık? 6'daydık. 7, bir de cyclic graf.
+
+76
+00:16:29,107 --> 00:16:36,107
+cycle graph dediğiniz zaman bir cycle oluşturan graftan bahsediyoruz.
+
+77
+00:16:40,019 --> 00:16:55,339
+Ama cyclic graph dediğimiz zaman doğrudan bir cycle oluşturmayan ama içerisinde bir cycle içeren grafa verdiğimiz isim aralarında böyle bir fark var.
+
+78
+00:16:55,339 --> 00:17:09,999
+Ama sonuçta her iki graftada bir cycle söz konusu. O yüzden çözdüğümüz problemlere bağlı olarak grafın cyclic yapıda mı, asyklik yapıda mı olduğunu bilmemiz ve anlayabilmemiz gerekiyor.
+
+79
+00:17:10,019 --> 00:17:25,019
+Buna dikkat etmek gerekiyor. Bu özellik önemli özelliklerden bir tanesi graph ile ilgili anılan Directed Ascyclic Graph diyoruz.
+
+80
+00:17:25,019 --> 00:17:29,019
+ve Direct Asite'lik graph dediğimiz zaman
+
+81
+00:17:42,867 --> 00:17:52,867
+şöyle bir graf örneği verebiliriz. Burada bir directed graf var ve bu directed graf herhangi bir cycle oluşturmuyor.
+
+82
+00:17:55,867 --> 00:17:58,867
+Bipartite graf var.
+
+83
+00:17:58,867 --> 00:18:15,667
+Burada grafınızın özellikle düğümlerinin kendi içlerinde belirli bir grup dahilinde.
+
+84
+00:18:24,627 --> 00:18:40,508
+iki kümeye ayrılmış ve bu iki küme tarafındaki düğümlerin birbirleriyle karşılıklı olarak eşleştiği ama kendi içlerinde birbirleriyle bağlantısı olmayan bir graf türüne verdiğimiz isim.
+
+85
+00:18:40,508 --> 00:18:50,308
+Mesela nörel networklerde katmanlar arasındaki ilişki aslında bir partide graf olarak tariflenebilir.
+
+86
+00:18:50,308 --> 00:19:07,407
+sol taraftaki A katmanı sağ taraftaki B katmanı olmak üzere bir nöron anındaki iki katmanın içerisinde bulunan nöronların birbirleri olan ilişkisini bu şekilde tanımlayabiliriz.
+
+87
+00:19:10,168 --> 00:19:19,047
+Bunları ek olarak çok sık kullanacağımız 11. madde weighted graf.
+
+88
+00:19:20,308 --> 00:19:29,087
+Tabii weighted grafın iki türü olabilir. Weighted undirected, weighted directed graf olmak üzere karşımıza çıkabilir.
+
+89
+00:19:29,087 --> 00:19:38,087
+Burada düğünlerin arasındaki ilişkiyi ağırlıklandırmak suretiyle...
+
+90
+00:19:41,364 --> 00:20:10,943
+oluşturduğumuz yapıya verilen isim. Önceki çizdiğimiz örneklerde hatırlarsanız böyle bir kenarların bir ağırlığı yoktu. İlişkiler ağırlıklandırılmamıştı. Birçok problemde bu ilişkilerin ağırlıklandırılmadan unweighted graf olarak tariflendiğini görürsünüz. Ama bazı ilişkilerde de her bir ilişkinin bir ağırlık derecesi vardır.
+
+91
+00:20:10,943 --> 00:20:24,084
+örneğin haritalar üzerinde bunu düşünecek olursak yolların mesafeleri üzerinden A şehrinden B şehrine gittiğinizdeki uzaklığı ağırlıklı graflar tarifleyerek ifade edersiniz.
+
+92
+00:20:24,084 --> 00:20:39,204
+O yüzden bununla da çok sık karşılaşıyor olacağız. En kısa yol probleminde spanning tree'leri özellikle minimum spanning tree'yi bulurken bu ilişkilerin ağırlığına bağlı olarak yapılan hesaplamalarla
+
+93
+00:20:39,204 --> 00:20:42,204
+bu ağırlıklardan faydalanıyoruz.
+
+94
+00:20:42,364 --> 00:20:53,084
+Tabi bu ağırlıklar genellikle pozitiftir ama bazı noktalarda iki düğüm arasındaki ilişki negatif olarak da saklanıyor olabilir.
+
+95
+00:20:53,084 --> 00:21:04,084
+O yüzden mutlaka weighted graph dediğimizde pozitif sayıları aklınıza gelmez ama ağırlıklı olarak birçok problemde bu ilişkileri pozitif sayılarla tanımlıyor oluruz.
+
+96
+00:21:04,084 --> 00:21:04,643
+Oluruz.
+
+97
+00:21:05,844 --> 00:21:11,804
+Tabii daha önceden ağaçları görmüştünüz.
+
+98
+00:21:14,103 --> 00:21:21,624
+Ağaçlar, grafların özel bir türü diye aslında adını koymuştuk.
+
+99
+00:21:21,624 --> 00:21:29,063
+Bu noktada örnek vermek gerekirse şöyle bir yapı oluşturacak olursak.
+
+100
+00:21:29,063 --> 00:21:36,683
+bunun bir graph olarak karşımıza çıktığı bir yapıda
+
+101
+00:21:41,395 --> 00:21:46,675
+Burada bir binary tree'den bahsediyoruz.
+
+102
+00:21:47,876 --> 00:21:59,275
+Buradaki en büyük farklardan bir tanesi bir grafın bir ağaç oluşturup oluşturamayacağını söyleyebilmek için grafın bir özelliğine dikkat etmek gerekiyor.
+
+103
+00:21:59,355 --> 00:22:00,035
+Ne olabilir bu?
+
+104
+00:22:03,635 --> 00:22:05,376
+Biraz önce konuştuğumuz uzayıklardan.
+
+105
+00:22:12,211 --> 00:22:16,451
+bir cycle oluşturmaması gerekiyor. Yani ascyclic olması gerekiyor.
+
+106
+00:22:18,551 --> 00:22:25,611
+Burada bir cycle var gördüğünüz gibi. O yüzden bunun zaten bir ağaç oluşturma olasılığı yok.
+
+107
+00:22:25,611 --> 00:22:38,491
+Ama şuradaki bağlardan bir tanesini kopartıyor olsaydık, o zaman teknik olarak burada bir ağaç oluşturma imkanınız vardı.
+
+108
+00:22:38,491 --> 00:22:44,311
+fakat burada da kökün ne olacağını sizin belirlemeniz gerekiyor.
+
+109
+00:22:44,392 --> 00:22:45,791
+Herhangi bir tanesi kök olabilir.
+
+110
+00:22:46,791 --> 00:22:48,091
+Burada herhangi bir sıkıntı yok.
+
+111
+00:22:48,091 --> 00:22:54,311
+O yüzden bir graftan birden fazla ağaç çıkarma potansiyeliniz de çeşitlilik anlamında var.
+
+112
+00:22:55,651 --> 00:23:06,831
+Ama size söylediğim gibi cycle söz konusu ise burada herhangi bir şekilde bir tree'den bahsetmemiz mümkün olmuyor.
+
+113
+00:23:08,491 --> 00:23:10,311
+Şimdi gelelim
+
+114
+00:23:14,195 --> 00:23:32,195
+grafların nasıl gösterildiğine ya da nasıl saklandığına iki şekilde söz konusu bir tanesi Adjustancy matriz.
+
+115
+00:23:34,387 --> 00:23:43,148
+diğeri adjacent list. Hangisi daha iyidir? Hangisini kullanmalıyız sizce?
+
+116
+00:23:52,084 --> 00:23:54,343
+Herhangi bir arkadaşımız cevaplı, size sevinirim.
+
+117
+00:24:07,316 --> 00:24:22,816
+Teşekkürler Yecan ve Nejat. Şimdi tabi biliyorsunuz bilgisayar bilimlerinde de veri yapıları söz konusu olduğunda mutlak doğru bir her konuda başarılı olan bir veri yapısı vardır diyemiyoruz.
+
+118
+00:24:22,816 --> 00:24:31,715
+Her veri yapısının bir kullanım amacı var ve case'lere bağlı olarak herhangi bir tanesi diğerine göre avantaj sağlayabiliyor.
+
+119
+00:24:31,715 --> 00:24:41,475
+Bizim de burada doğrudan matris ya da adjacency list daha iyidir deme şansımız yok.
+
+120
+00:24:41,775 --> 00:24:49,036
+Case'e bağlı olarak matrisin ya da listenin daha avantajlı olduğu durumları birlikte konuşuyor olacağız.
+
+121
+00:24:49,035 --> 00:25:04,795
+Öncelikle burada şöyle bir grafimiz olsaydı ve bunu biz bir matriz ile ifade ediyor olsaydık
+
+122
+00:25:15,763 --> 00:25:42,024
+0'dan 1'e 1. Dolayısıyla 1'den 0'a da 1 olması gerekiyor. Çünkü burada bir undirected bir graftan bahsediyoruz. Yani bu şu demek, matriz aslında teknik olarak simetrik olması gerekiyor. Bir undirected graft söz konusuysa matrizin mutlaka simetrisinin doğru olması gerekiyor.
+
+123
+00:25:42,024 --> 00:25:45,343
+Eğer simetrik değilse o zaman bir bilgi hatası var demektir.
+
+124
+00:25:46,163 --> 00:25:50,503
+0'dan 2'ye şöyle yapalım yine.
+
+125
+00:25:59,155 --> 00:26:17,655
+0'dan 2'ye, 2'den 0'a, 1'den 2'ye, dolayısıyla 2'den 1'e, ve son olarak 2'den 3'e, ve 3'den 2'ye bir ilişki söz konusu.
+
+126
+00:26:20,051 --> 00:26:30,091
+Bunu bu şekilde gösterdiğimizde bu matrice bakıldığında hangi düğümler arasında bağlantı varsa o gözlerin set edildiğini göreceksiniz.
+
+127
+00:26:30,211 --> 00:26:33,012
+Diğer noktalarında sıfır ile ilişkilendirdiğini göreceksiniz.
+
+128
+00:26:33,591 --> 00:26:37,371
+Tabi bu bir unweighted graph için geçerli.
+
+129
+00:26:37,911 --> 00:26:45,831
+Bunlara bir ağırlık verdiğiniz zaman dolayısıyla gözlerin de bir yerine ilgili ağırlıkları taşıması gerekiyor.
+
+130
+00:26:45,831 --> 00:27:03,111
+bağlantı olmayan noktalar ise infinite, işte sonsuz değer ile ifade edilerek, sonsuz işaret gösterilerek aslında bir grafın sahip olduğu yapının bir matris üzerinde konumlandırılması sağlanıyor.
+
+131
+00:27:03,111 --> 00:27:09,351
+Aynı grafı şöyle yapalım.
+
+132
+00:27:14,708 --> 00:27:18,428
+ders arasında kalemle ilgili sorum çözmeyi planlıyorum.
+
+133
+00:27:23,923 --> 00:27:53,903
+aynı grafı adjacency list olarak tanımlamak istediğimizde karşımıza şöyle bir şey çıkacak. 0, 1'e ve 2'ye komşu. 1, 0'a ve 2'ye komşu. 2, 0'a, 1'e ve 3'e komşu.
+
+134
+00:27:53,923 --> 00:28:16,004
+3 ise 2'ye komşu. Yani her bir düğüm için bir linked liste yapısı oluşturarak aslında her düğümün bağlı olduğu düğümlerin bilgisini o linked liste üzerinde saklamış oluyoruz.
+
+135
+00:28:16,003 --> 00:28:23,383
+adjacency list veri yapısını kullanarak.
+
+136
+00:28:23,383 --> 00:28:26,183
+Peki bunların birbirleriyle olan
+
+137
+00:28:32,019 --> 00:28:34,059
+karşılaştırmasına gelecek olursak.
+
+138
+00:28:41,428 --> 00:28:45,428
+bir grafa örneğin bir edge ekleyebilirsiniz.
+
+139
+00:28:45,428 --> 00:28:49,428
+bir graftan edge çıkartabilirsiniz.
+
+140
+00:28:49,428 --> 00:28:51,428
+bir grafdan edge çıkartabilirsiniz.
+
+141
+00:28:54,003 --> 00:28:55,923
+ve bir ilklendirme aşamanız vardır.
+
+142
+00:29:00,692 --> 00:29:18,731
+Bunların karmaşıklığı şu şekildedir. Bir eleman ekliyorsunuz. Her iki taraftaki karmaşıklık da O1'dir. Bir taraftan eleman çıkartmak istediğimizde matris tarafında O1 karmaşıklık, list tarafında ise O1 karmaşıklıkla karşılaşırsınız.
+
+143
+00:29:18,731 --> 00:29:27,331
+Çünkü doğrudan o noktayı sıfırlamak söz konusuyken matrisde listeden onun çıkartılması için tüm listenin gezilmesi gerekir.
+
+144
+00:29:27,331 --> 00:29:42,331
+bir ilklendirme söz konusuysa n çarpı n'lik bir yapıdan bahsederken diğer tarafta o n'lik bir karmaşıkla karşılaşıyor olursunuz.
+
+145
+00:29:43,711 --> 00:29:45,531
+Hemen bunu da yazacağım.
+
+146
+00:29:53,076 --> 00:30:22,635
+Şimdi o zaman tekrar soruyu sorduğumda biz bir neden n çarpı n oldu? Çünkü n çarpı n'lik matrisin üzerine bir tur atmamız gerekiyor ve onu initialize etmemiz gerekiyor. Tek tek erişmemiz gerekiyor. O yüzden ilgili gözlere her iki tarafa da simetrik olarak.
+
+147
+00:30:23,076 --> 00:30:24,196
+gelişmemiz gerekiyor.
+
+148
+00:30:26,895 --> 00:30:39,436
+Peki, tekrar bu sorduğum soruya dönecek olursak hangi şartta matriz, hangi şartta list bizim için kullanım açısından uygun olur sorusuna.
+
+149
+00:30:39,436 --> 00:30:48,976
+Şu iki keyword'ü kullanarak cevap vermek daha kolay olacaktır.
+
+150
+00:30:48,975 --> 00:31:04,335
+bir graf dance ise, dance graf ya da sparse ise, neye bağlı olarak o grafa bu adları veririz?
+
+151
+00:31:08,435 --> 00:31:13,255
+bi graf tam dans kraft yusak, spars kraft yusak.
+
+152
+00:31:22,836 --> 00:31:47,256
+Evet, add sayısı buradaki keyword. Bizim en tane düğümümüz olabilir. Bu düğümlerin arasındaki kenar ilişkileri ne kadar yoğunsa ve fazla ise birbirleri arasındaki bağlantılar o graf dense graf olmak açısından aday bir graftır.
+
+153
+00:31:47,256 --> 00:32:15,975
+Bir grafın içerisinde örneğin şöyle bir graftan bahsediyoruz ve sadece şu ilişkiler söz konusuysa o zaman zaten bu graf herhangi bir şekilde yoğun bir ikili ilişkiye sahip olmadığı için düğümler arasında bir sparse graf olarak adlandırılır.
+
+154
+00:32:15,975 --> 00:32:28,916
+Ama siz bu graf üzerindeki ilişkileri sayısını arttırırsanız o zaman burada bir dense graftan söz etmeye başlarsınız.
+
+155
+00:32:28,916 --> 00:32:40,295
+Add sayısına bağlı olarak ve bu sayı arttıkça da bizim bu temsil etmek için kullanacağımız yapılardan bir tanesini tercih etmemiz gerekir.
+
+156
+00:32:40,295 --> 00:32:43,955
+Peki Dens için hangisini tercih etmeyi uygun görürsünüz?
+
+157
+00:32:44,056 --> 00:32:46,135
+Spars için hangisini tercih etmeyi uygun görürsünüz?
+
+158
+00:33:01,364 --> 00:33:03,544
+birinde matriz, birinde de adjacency list.
+
+159
+00:33:06,463 --> 00:33:17,643
+Sparse bir matrizde siz, yani sıfırları bol olan bir matrizde zaten çok az bilgiyi sakladığınız için n çarpı n'lik bir alanı boşu boşuna işgal etmiş olursunuz.
+
+160
+00:33:17,643 --> 00:33:30,963
+O yüzden sparse graflar için adjacency list kullanmak, dense graflar için ise adjacency matriz kullanmak.
+
+161
+00:33:31,364 --> 00:33:35,064
+doğru tercih olacaktır.
+
+162
+00:33:35,843 --> 00:33:37,224
+Bunun temel sebebi
+
+163
+00:33:37,224 --> 00:33:40,224
+siz normalde
+
+164
+00:33:44,019 --> 00:33:52,839
+çok fazla sayıda düğme sahipseniz ve burada bakalım 1, 2, 3, 4, 5, 3, 5, 6.
+
+165
+00:33:55,679 --> 00:34:08,459
+Biz burada sadece 4 tane geri kalanları 0 olarak düşünürseniz ilişkide kenara sahipseniz boşu boşuna
+
+166
+00:34:12,916 --> 00:34:20,916
+yer kaplayan bir yapı üzerinde bu bilgileri saklamış olursunuz. Halbuki
+
+167
+00:34:22,900 --> 00:34:49,039
+A, B, C, D, E, F olsun. Aynı şekilde A, B, C, E, F olsun. Bu şekilde göstermek yerine bu 6 düğüm arasındaki ilişkiyi, işte A'nın herhangi bir bağlantısı yok. O yüzden bir bilgi tutmuyoruz. B'nin herhangi bir bağlantısı yok. C'de, şunu kendisine yazmışız, onu da düzeltelim.
+
+168
+00:34:57,331 --> 00:35:25,012
+olsun. C'den D'ye ve E'ye bir bağlantı var. D için bir bağlantı yok. E için E'ye bir bağlantı var. Ve D'ye bir bağlantı var. Sadece bu şekilde ilgili bilgileri saklayarak
+
+169
+00:35:25,012 --> 00:35:29,491
+buradaki grafteki bağlantı yapısını ifade etmiş olursunuz.
+
+170
+00:35:29,592 --> 00:35:34,512
+Tabii ben bunu böyle yazdığımda bu grafın tipiyle ilgili olarak da ne söyleyebilirsiniz?
+
+171
+00:35:35,232 --> 00:35:36,971
+Matrice ve listeye baktığımızda.
+
+172
+00:35:43,027 --> 00:35:47,207
+hani spars graf olduğunu söylüyoruz ama onun ötesinde başka ne söyleyebilirsiniz?
+
+173
+00:35:48,948 --> 00:36:10,208
+Evet, teşekkürler [öğrenci]. Bu bir directed graf. Çünkü buradaki bağlantı notlarını incelediğinizde aynı bağlantının karşılıklı bulunmadığını, tek yönde bulunduğunu görüyorsunuz ve o zaman burada bir directed graf bilgisi verildiğine, eğer hata yapılmadığını bildiğiniz bir durum söz konusuysa rahatlıkla söyleyebiliyorsunuz.
+
+174
+00:36:10,208 --> 00:36:21,347
+biliyorsunuz. Grafları bugün günümüzde çok farklı problemlerde kullanıyoruz. İşte rotalama yaparken haritalarda çok sık kullanıyoruz.
+
+175
+00:36:21,347 --> 00:36:38,968
+Sosyal networklerde insanların birbirleriyle olan bağlantısını işte arkadaşın arkadaşının arkadaşı noktasına bir bağlantı kurarken bu bilgileri graflar üzerinde saklayarak kiminle ne tür bir bağlantısı olduğunu
+
+176
+00:36:38,967 --> 00:36:41,347
+yine konumlandırabiliyoruz.
+
+177
+00:36:41,387 --> 00:36:53,388
+Yine networkler için söz konusu rotalamadan kastederken hem gerçek hayatta yol bilgisi üzerinden hem de bilgisayarların birbirleriyle olan ilişkisinden bahsediyoruz.
+
+178
+00:36:53,388 --> 00:37:08,388
+Bunun gibi günlük hayatta grafları kullandığımız onlarca örnek var ve biz açıkçası birçok problemi graf veri yapısını kullanarak çözüyoruz.
+
+179
+00:37:08,967 --> 00:37:18,067
+ve bunları da muhtemelen önümüzdeki dönemlerde daha sık aldığınız derslerde karşılaşıyor olacaksınız.
+
+180
+00:37:18,867 --> 00:37:23,267
+Graflar üzerinde ne tür işlemler yapılabilir?
+
+181
+00:37:25,147 --> 00:37:26,007
+Onlara da bir bakalım.
+
+182
+00:37:28,067 --> 00:37:33,187
+Bir grafa yeni bir düğüm eklenebilir.
+
+183
+00:37:33,187 --> 00:37:40,787
+bir graftaki bir ilişki ya da bir düğümü silmek söz konusu olabilir.
+
+184
+00:37:41,607 --> 00:37:44,987
+Buraya hem node diyelim hem de edge diyelim.
+
+185
+00:37:50,931 --> 00:37:53,331
+onun ötesinde bir graf üzerinde
+
+186
+00:37:53,331 --> 00:37:57,931
+arama yapabilirsiniz.
+
+187
+00:37:58,931 --> 00:38:00,451
+Ve graf üzerinde
+
+188
+00:38:00,451 --> 00:38:02,791
+gezebilirsiniz.
+
+189
+00:38:03,711 --> 00:38:09,011
+Tabi bir graf üzerinde arama yapıyorsanız ve gezme işlemi yapıyorsanız hatırlarsanız
+
+190
+00:38:09,011 --> 00:38:15,051
+ağaçta bir ilerleme noktasında işte in order, pre order, post order şeklinde
+
+191
+00:38:15,051 --> 00:38:18,911
+düğümlerin öncelikleri vardı.
+
+192
+00:38:18,911 --> 00:38:21,251
+ve biz bu önceliklere göre geziyorduk.
+
+193
+00:38:21,852 --> 00:38:28,351
+İlerleyen zamanlarda göreceksiniz graflar içerisinde Depth World Search.
+
+194
+00:38:33,876 --> 00:38:52,876
+ve breadth first search olmak üzere temelde iki ana yaklaşım ile geziyor ve arama yapıyor olacağız. Bu algoritmaların birbirlerinden farkını konuşuyor olacağız.
+
+195
+00:38:53,535 --> 00:38:54,976
+Buraya kadar sorusu olan var mı?
+
+196
+00:39:06,228 --> 00:39:24,427
+peki. O zaman şu an saat 13.42 saat 13.55'e kadar bir ara örelim. Ondan sonra bu temel bilgileri kullanarak yeni bilgileri ekleyip spanning tree tarafına yavaş yavaş geçmeye başlayalım. Evet 13.55'te görüşmek üzere arkadaşlar.
+
+197
+00:53:49,940 --> 00:54:12,639
+Evet arkadaşlar, yeniden merhaba. Kaldım, ziyaden devam edelim. Graflara bir giriş yaptık, temel bilgileri verdik. Nasıl grafların bilgilerinin saklanabileceği ile ilgili kısımları konuştuk. Birbirlerine göre avantajlı, dezavantajlı noktalarını kısman konuştuk.
+
+198
+00:54:12,639 --> 00:54:20,019
+isterseniz şimdi o noktalarla ilgili birkaç ufak detay daha bilgi vererek yolumuza devam ediyor olalım.
+
+199
+00:54:21,479 --> 00:54:24,499
+Öncelikle bir paylaşım yapayım.
+
+200
+00:54:49,204 --> 00:55:19,183
+Yani işte ki enşen
+
+201
+00:54:59,476 --> 00:55:01,476
+yazma ya başlayalım.
+
+202
+00:55:05,619 --> 00:55:11,859
+advantages of a two-sensi matris.
+
+203
+00:55:18,483 --> 00:55:21,843
+ve Altyazı M.
+
+204
+00:55:32,275 --> 00:55:47,275
+genellikle zaten matriz üzerinde saklamayı tercih ediyoruz. Bizim için birçok şeyi kolaylaştırıyor. Ama tabii yer maliyeti de söz konusu.
+
+205
+00:56:23,699 --> 00:56:29,419
+daha fazla alan ihtiyacımız olduğunu söylemiştik.
+
+206
+00:56:43,860 --> 00:56:58,439
+ve yeni bir düğüm eklemek istiyorsanız o da görece daha fazla bir karmaşıklığa sahip. Öte yandan
+
+207
+00:57:03,827 --> 00:57:15,939
+ve
+
+208
+00:57:21,780 --> 00:57:42,780
+İkincisi daha bizim için az yer kaybı demek. İkincisi BVOLTEX sisteme yeni olarak eklendiğinde daha rahat ekleyebiliyoruz. Son olarak da...
+
+209
+00:57:52,947 --> 00:57:54,947
+bir düğmen komşuları
+
+210
+00:57:54,947 --> 00:57:58,947
+ilgili yapılan işlemler
+
+211
+00:57:58,947 --> 00:58:00,947
+bu
+
+212
+00:58:02,483 --> 00:58:06,884
+daha verimli bir zaman dilimi içerisinde tamamlanabiliyor.
+
+213
+00:58:10,243 --> 00:58:25,523
+Genellikle linked list kullanıldığı için adjacency list görece daha tercih edilmiyor. Matris kolay erişilebilir olduğu için ama linked list yapısına oturttuğunuzda birçok avantajı var.
+
+214
+00:58:25,523 --> 00:58:34,963
+özellikle alan kullanımı anlamında ciddi bir avantaj da alıyor hele sparse matriz söz konusu ise.
+
+215
+00:58:36,603 --> 00:58:41,844
+Şimdi gelelim bizim için bugünün önemli konularından bir tanesine.
+
+216
+00:58:41,923 --> 00:58:48,783
+Graflarla ilgili birçok problemler var dedik ve bunları zaman içerisinde karşınıza çıkacağından bahsettik.
+
+217
+00:58:48,783 --> 00:59:02,363
+Bugün ilk temel problemimiz spanning tree problemi ve bu spanning tree problemi içinde biz minimum spanning tree'yi arayacağız ve onu bulmaya çalışacağız.
+
+218
+00:59:03,143 --> 00:59:07,524
+Öncelikle spanning tree nedir bir ona bakalım.
+
+219
+00:59:07,524 --> 00:59:20,323
+Şu anda bu ekranda yer alan şu pointer'ını göstereyim graflar altında iki temel aslında özelliğe dikkat çekmek istiyorum.
+
+220
+00:59:20,323 --> 00:59:33,943
+Biri connectivity, diğeri de acyclic yapı. Bir spelling tree'den bahsediyorsak mutlaka bu iki özelliğin de sağlanıyor olması gerektiğini belirtmemiz gerekiyor.
+
+221
+00:59:33,943 --> 00:59:43,863
+Burada görmüş olduğunuz şu dört düğümlü graf için bir asayklik yapıdan bahsetmemiz söz konusu değil.
+
+222
+00:59:44,583 --> 00:59:54,784
+Burada bir sayklik yapı var çünkü bir ve iki tane olmak üzere hatta ana dış döngüyü de sayarsak üç tane aslında saykl var.
+
+223
+00:59:54,784 --> 01:00:00,363
+O yüzden buradaki gösterimle bir spanning tree'den bahsetmek mümkün değil.
+
+224
+01:00:00,363 --> 01:00:13,323
+ama bir graf içerisinde o grafın altında oluşabilen spanning trileri biraz sonra oluşturuyor olacağız.
+
+225
+01:00:14,303 --> 01:00:18,144
+İkinci özelliğe sahip olup olmadığına baktığımızda connected mi?
+
+226
+01:00:18,144 --> 01:00:24,543
+Evet, tüm düğümler üzerinden bir düğümden başladığınızda istediğiniz düğüme erişebiliyorsunuz.
+
+227
+01:00:24,623 --> 01:00:26,723
+Bu bir connected yapı oluşturduğunu gösteriyor.
+
+228
+01:00:26,723 --> 01:00:41,163
+yan tarafa geçtiğinizde ise A, B, C, D düğümünün olduğu bir de E düğümünün olduğu bir yapıda E'den diğer düğümlere erişmeniz mümkün değil ya da A'dan E'ye, B'den E'ye, C'den E'ye erişmeniz mümkün değil.
+
+229
+01:00:41,163 --> 01:00:46,003
+O zaman burada bir connected yapıdan bahsetmemiz söz konusu olamıyor.
+
+230
+01:00:46,003 --> 01:00:57,603
+keza burada bunu bir ağaç formunda ele aldığımızda iki adet tree söz konusu olduğu için buna da forest ismini veriyoruz.
+
+231
+01:00:58,303 --> 01:01:00,963
+Eğer E olmasaydı zaten o zaman tree olacaktı.
+
+232
+01:01:00,963 --> 01:01:15,803
+Bu nedenle eğer E'ye ek olarak şöyle bir düğüm eklenseydi, F olsaydı yine keza burada bir connectivity'den bahsedemeyecektik.
+
+233
+01:01:15,803 --> 01:01:23,543
+Çünkü yine F üzerinden ABCD düğümlerine erişme şansınız söz konusu olmayacaktı.
+
+234
+01:01:24,583 --> 01:01:30,463
+O yüzden burada connectivity çok rahat bir şekilde aslında hemen tespit edilebiliyor.
+
+235
+01:01:30,463 --> 01:01:37,763
+Ama connectivity'nin ötesinde asayklik yapının tespiti de bizim için önemli.
+
+236
+01:01:37,763 --> 01:01:50,864
+Şuraya baktığınızda şu bölümde yukarıdaki grafın içerisinden asayklik bir başka graf çıkartabildiğimizi görüyoruz.
+
+237
+01:01:50,863 --> 01:01:51,823
+bu çıkarttığımız
+
+238
+01:01:52,271 --> 01:02:06,431
+bağlantı aslında bizim için bir spanning tree adayı oluyor. Hakikaten hem connected bir yapı, tüm düğümlere erişebiliyorsunuz, hem de herhangi bir cycle içermiyor.
+
+239
+01:02:06,431 --> 01:02:21,651
+Bunun gibi bir graftan çıkartılabilen bütün aday alt grafların hepsi birer spanning tree olma özelliği taşıyabiliyorlar.
+
+240
+01:02:21,651 --> 01:02:35,831
+Bakalım nedir? İşte aynı grafı aşağıya taşımışız şurada. Yan tarafına baktığınızda B ile C arasındaki bağlantıyı ve C ile D arasındaki bağlantıyı çıkarmışız.
+
+241
+01:02:35,831 --> 01:02:47,132
+Bu sefer tree'yi bu formatta oluşturmuşuz. Bu da bir spelling tree. Keza yukarıdaki örneğe baktığınızda A ile B arasındaki bağlantıyı çıkartmışız.
+
+242
+01:02:47,132 --> 01:02:50,952
+aynı zamanda B ile C arasındaki bağlantıyı çıkartmışız.
+
+243
+01:02:51,431 --> 01:02:53,352
+Bir tane daha spanning tree elde etmişiz.
+
+244
+01:02:53,352 --> 01:03:00,691
+Yani bir graf içerisinden birden fazla spanning tree elde etme olasılığımız söz konusu.
+
+245
+01:03:01,072 --> 01:03:08,751
+Her graf için bu geçerli değil ama grafların altında n tane spanning tree oluşturma şansınız var.
+
+246
+01:03:08,852 --> 01:03:11,371
+Peki biz neyin peşindeyiz?
+
+247
+01:03:11,371 --> 01:03:22,651
+biz bu graf içerisindeki aday spanning tree'ler arasından en küçük spanning tree'yi alıyoruz.
+
+248
+01:03:22,651 --> 01:03:29,071
+Peki en küçük spanning tree'den bahsediyorsak o zaman neyi de söyleyebiliriz?
+
+249
+01:03:29,611 --> 01:03:39,811
+O zaman bu düğümler arasındaki kenar bağlantıların bir ağırlıkları olacak ve bu ağırlıklar üzerinden biz tüm düğümleri gezerek
+
+250
+01:03:39,812 --> 01:03:45,151
+bütün grafı en az efor harcayarak gezebiliyor olmamız gerekiyor.
+
+251
+01:03:45,612 --> 01:03:48,731
+Buradan isterseniz ABCD diye gezebilirsiniz.
+
+252
+01:03:48,932 --> 01:03:52,032
+Burada CABD diye gezebilirsiniz.
+
+253
+01:03:52,212 --> 01:03:54,252
+Burada ACDB diye gezebilirsiniz.
+
+254
+01:03:54,411 --> 01:03:56,471
+Burada da ABDC diye gezebilirsiniz.
+
+255
+01:03:57,072 --> 01:04:00,831
+Bunların hepsi bir spelling tree oluşturuyor.
+
+256
+01:04:00,831 --> 01:04:07,372
+Ama içlerinden bir tanesi genelde bazen birden fazla spelling tree,
+
+257
+01:04:07,371 --> 01:04:15,631
+İkisi de en küçük değere sahip olabilirler. Minimum spanning tree'yi, MST'yi oluşturabilir.
+
+258
+01:04:16,571 --> 01:04:23,211
+Peki bu minimum spanning tree'yi bulmak için biz neler kullanıyoruz?
+
+259
+01:04:23,211 --> 01:04:27,751
+İki temel algoritmamız var. Biri prim algoritması, diğeri de kurskal algoritması.
+
+260
+01:04:28,271 --> 01:04:33,711
+Nerede işimize yarayabilir? Bu konuda size sorsam.
+
+261
+01:04:33,712 --> 01:04:39,691
+minimum spanning tree'yi bulmak nerede işimize yarayabilir?
+
+262
+01:04:54,835 --> 01:05:17,055
+Traveling Salesman problemini duymuşsunuzdur. Traveling Salesman probleminde bir satıcının şehirlere uğrama zorunluluğu var ve ona bir liste verilmiş. Bu graf üzerinde bu şehirlere en az efor harcayarak ne şekilde ziyaret planı oluşturması gerekir?
+
+263
+01:05:17,055 --> 01:05:26,095
+Bu noktada bir planlama yaparken minimum spanning tree algoritmasından faydalanıyor olacağız.
+
+264
+01:05:26,095 --> 01:05:29,975
+Şimdi o zaman şöyle yapalım.
+
+265
+01:05:31,215 --> 01:05:33,095
+Öncelikle bir...
+
+266
+01:05:37,492 --> 01:05:39,492
+tarımlarımızı yazalım.
+
+267
+01:07:33,043 --> 01:07:52,983
+Bu tanımları yaptıktan sonra bir örnek üzerinden aslında bakalım acaba bizim için bu problemi çözmek nasıl acaba mümkün olabilir? Bunları bir konuşmak istiyorum.
+
+268
+01:07:54,983 --> 01:08:02,903
+Şöyle olsun, şöyle olsun, şöyle olsun, şöyle. Bunları şimdi birbirleriyle bağlayalım.
+
+269
+01:08:03,043 --> 01:08:33,023
+Altyazı M.
+
+270
+01:08:22,612 --> 01:08:43,251
+1, 2, 3, 4, 2, 3, 3. Böyle bir grafınız var. Ve burada sizden spanning tree'lere bakmanız ve içlerinden en düşük ağırlığa sahip olan spanning tree'yi bulmanız bekleniyor.
+
+271
+01:08:43,251 --> 01:09:03,292
+Nasıl bir yaklaşım benimsersiniz? Prim ve Kurskal'ın özelinde takılmadan ne şekilde yapılabilir? Zaten bu ikisinin de ele aldığı iki farklı yaklaşım var. Bunu acaba düşünsek nasıl kurgulayabiliriz?
+
+272
+01:09:08,435 --> 01:09:10,515
+Burada bir greedy teknik kullanmak istiyoruz.
+
+273
+01:09:15,636 --> 01:09:16,636
+Çi.
+
+274
+01:09:21,971 --> 01:09:38,211
+bu greedy teknik altında greedy algoritmalar diye liste yaptığımızda prim ve kuruz kal algoritmaları bu teknik altında listelenen algoritmalardır. Ne yapabilirsiniz? Bize minimum spanning tree'yi bulmak isteseydiniz.
+
+275
+01:09:40,791 --> 01:09:51,211
+Cevap yazarsanız sevinirim. Haftalardır neredeyse sorusuz bir şekilde ilerlemeye çalışıyoruz. Çok küçük sorularımız var. O yüzden arada destek verirseniz.
+
+276
+01:09:51,971 --> 01:10:07,391
+Sevinirim. Bakalım bir cevap geldi. Bir başlangıç düğümü seçerek küçük ağırlıklı kenarı seçe seçe gideriz. Evet [öğrenci] teşekkür ediyorum. Hep en kısa yoldan gitmek olur mu? Biraz daha açalım onu. Hep en kısa yoldan gitmek nedir?
+
+277
+01:10:11,604 --> 01:10:12,303
+Abdulkader.
+
+278
+01:10:14,844 --> 01:10:16,303
+[öğrenci]nin ki bir yaklaşım.
+
+279
+01:10:16,743 --> 01:10:17,104
+Doğru.
+
+280
+01:10:26,771 --> 01:10:33,752
+Hocam, yani C'den D'ye 3, C'den B'ye 2, o zaman B'ye gideriz. Daha az olduğu için.
+
+281
+01:10:34,391 --> 01:10:36,411
+Yani en kısa kenarı mı tercih ederim?
+
+282
+01:10:37,152 --> 01:10:37,431
+Evet.
+
+283
+01:10:38,791 --> 01:10:45,331
+Peki, tamam. Ben oradan aslında bilgiyi alarak size bu iki yaklaşım neler olabileceğini söyleyeyim.
+
+284
+01:10:47,991 --> 01:10:49,952
+Elimizde iki temel yaklaşım olacak.
+
+285
+01:10:49,952 --> 01:10:57,952
+Bir tanesi kenarlar içerisinden en kısa kenarları seçerek ilerleyebilirim.
+
+286
+01:10:58,672 --> 01:11:09,672
+Ki bu kuruz kal yaklaşımı kenarları sıralarım ve elimi her seferinde listedeki en kısa kenarı alırım.
+
+287
+01:11:10,452 --> 01:11:13,771
+Ve bunları ekleye ekleye minimumsum banktiremi oluştururum.
+
+288
+01:11:13,871 --> 01:11:14,571
+Bu bir yaklaşım.
+
+289
+01:11:14,571 --> 01:11:22,351
+İkinci yaklaşımda sevdi arkadaşınızın yazdığı gibi kendime bir başlangıç düğümü seçerim.
+
+290
+01:11:23,351 --> 01:11:29,952
+Ve bu başlangıç düğümünden diğer düğümlere giden olası yollar arasından en kısayı seçerim.
+
+291
+01:11:32,312 --> 01:11:38,431
+Zaten bir tanesi kruz kalın tercih ettiği yöntem, diğeri de primin tercih ettiği yöntem.
+
+292
+01:11:38,431 --> 01:11:49,431
+Tekrar söylüyorum birinde kenarları küçükten büyüğe sıralarım ve her seferinde elimdeki en küçük kenarı spanning tree'ye ekleyerek ilerlerim.
+
+293
+01:11:49,831 --> 01:11:51,031
+Bu kuruskalın yaklaşımı.
+
+294
+01:11:52,031 --> 01:11:54,591
+Primin yaklaşımıysa bir düğüm seçerim.
+
+295
+01:11:55,291 --> 01:12:03,171
+O düğümden başka bir düğüme gitmek istediğim zaman elimdeki en kısa yol neyse onu tercih edelim.
+
+296
+01:12:03,171 --> 01:12:08,171
+Biz bugün bu iki yaklaşımı konuşuyor.
+
+297
+01:12:08,431 --> 01:12:22,351
+olacağız. Vaktimiz yettiği sürece. Evet şimdi burada aslında şöyle yapalım.
+
+298
+01:12:27,283 --> 01:12:30,283
+şu kısımları düzeltelim.
+
+299
+01:12:57,460 --> 01:12:58,460
+Altyazı M.
+
+300
+01:13:03,828 --> 01:13:17,507
+bir olsun. Şurada görmüş olduğunuz
+
+301
+01:13:18,868 --> 01:13:21,807
+bir grafımız var elimizde.
+
+302
+01:13:21,807 --> 01:13:27,487
+bir, iki, üç, dört, beş, altı tane düğümümüz var.
+
+303
+01:13:32,243 --> 01:13:40,903
+et sayımızda 1, 2, 3, 4, 5, 6, 7, 8, 9, 10.
+
+304
+01:13:43,243 --> 01:13:58,243
+Burada zaten düğümden daha fazla bir et sayısı var. Aslında teknik olarak bu bir ne diyelim dense matris, dense bir graf ve matris üzerinde saklanabilecek bir graf yapısına sahip.
+
+305
+01:13:58,243 --> 01:14:05,683
+Biz burada Pruskal algoritması ile yol almak istiyoruz.
+
+306
+01:14:06,403 --> 01:14:16,543
+Pruskal algoritması ile yol almak istiyoruz ama elimizde minimum spanning tree'ler bulmadan önce spanning tree'ler ne olabilir?
+
+307
+01:14:17,104 --> 01:14:19,584
+Yukarıda da onun karşılıkları var.
+
+308
+01:14:19,584 --> 01:14:28,483
+örneğin A'dan B'ye gidebilirsiniz, A'dan C'ye gidebilirsiniz, A'dan D'ye gidebilirsiniz.
+
+309
+01:14:28,624 --> 01:14:29,723
+Böyle bir graf verilmiş.
+
+310
+01:14:30,803 --> 01:14:34,784
+Şurada gördüğünüz alt graf, şey alttaki graftan farklı.
+
+311
+01:14:35,243 --> 01:14:41,184
+Burada minimum spanning tree'yi bulmak istediğinizde A'dan B'ye, A'dan D'ye ve C'den D'ye gidebilirsiniz.
+
+312
+01:14:41,184 --> 01:14:45,924
+Bunun değeri gördüğünüz gibi alt.
+
+313
+01:14:45,924 --> 01:15:09,163
+bu spinning tree'nin değeri. Öte yandan B'den A'ya, A'dan C'ye ve C'den D'ye gidebilirsiniz. Bunun değeri ise ikinci spinning tree'nin 9. B'den A'ya, A'dan C'ye ve A'dan D'ye gidebilirsiniz. Bunun değeri ise 8. O zaman bunların içerisinde bizim için minimum spinning tree'yi oluşturan kısım burası olacak.
+
+314
+01:15:09,163 --> 01:15:15,243
+Tabii biz bunları çizerek, görerek bu şekilde hesaplıyoruz.
+
+315
+01:15:15,723 --> 01:15:17,083
+Analitik olarak hesaplamıyoruz.
+
+316
+01:15:17,663 --> 01:15:20,403
+Bilgisayarın tabii bunu analitik olarak hesaplaması gerekiyor.
+
+317
+01:15:20,924 --> 01:15:25,523
+Bunun için de daha karmaşık bir graf yapısı söz konusu olduğunda
+
+318
+01:15:25,523 --> 01:15:34,243
+ilk yaptığımız şey burada kenarları ve uzunluklarını alıp bir listeye koymak.
+
+319
+01:15:34,243 --> 01:15:37,643
+Ve bu listeye koyduktan sonra bunları sıralamak.
+
+320
+01:15:37,643 --> 01:16:00,263
+Örneğin birinci sırada BC var, ikinci sırada EF listesi var, üçüncü sırada AB, 4, 5, 6, 7, 8, 9 ve 10 olmak üzere 10 tane kenar bilgisini önce bir listeye sakladık.
+
+321
+01:16:00,264 --> 01:16:09,824
+Sonra o listeyi sıraladık ve bu sıralı listeden işimizi yapmaya başlayacağız. Peki işimizi yaparken ne yapacağız?
+
+322
+01:16:09,824 --> 01:16:20,824
+Önce BC'yi seçtik diyelim. BC'yi seçelim. Şurayı şöyle kırmızıya boyadım. BC'yi seçtiğimiz zaman...
+
+323
+01:16:26,484 --> 01:16:56,463
+elimizde minimum spanning tree'nin en küçük kenara, değere sahip olan kenarı elimizde olacak. Peki greedy teknik dememizin sebebi nedir buna? O andaki seçenekler içerisindeki en optimal olanı alarak ilerliyorsak ve totalde en optimum sonuca ulaşmamızı sağlıyorsa bu algoritma biz buna greedy alıyoruz.
+
+324
+01:16:56,484 --> 01:17:25,863
+algoritma diyoruz. Her zaman için elinizdeki seçeneklerin alt problemde en iyisini seçip, en optimal seçip, ilerleyip en optimal sonucu ulaşabiliyorsunuz. Bu bir greedy teknik olarak literatürde yerini alıyor. Bc bir değerine sahip. Biliyoruz ki bir sonraki adımda en küçük değer EF2. O zaman EF'yi ekliyoruz. Şurada görmüş olduğunuz.
+
+325
+01:17:26,484 --> 01:17:44,984
+ikinci kenara ekledik. Şu an BC var, EF var. Peki biz hangi durumda bir sonraki değer küçük olmasına rağmen hayır biz bunu almayacağız demeliyiz bu problemin çözümünde.
+
+326
+01:17:48,948 --> 01:18:12,107
+Tekrar ediyorum. Biz tek tek en küçük değeri o andaki listeden alıyoruz. Hangi durumda bir sonraki değer en küçük olmasına rağmen hayır bunu almamamız gerekiyor. Bu bizim işimize yaramaz. Minimum spanning tree içerisinde bu kenar olmamalı dememiz gerekiyor.
+
+327
+01:18:15,828 --> 01:18:43,467
+zaten bu algoritmamın da temel krensibi. Evet, teşekkürler [öğrenci]. Bir cycle oluşturursa aldığımız kenar, o kenarı almaktan vazgeçmemiz gerekiyor. Buradaki bütün temel krensip bu. Peki, EF'yi de aldık, ikisi bir cycle oluşturmadılar. AB geldi, 3 değerine sahip, onu da ekledik listemize.
+
+328
+01:18:43,467 --> 01:18:47,067
+şu an AB, BC ve EF var.
+
+329
+01:18:47,887 --> 01:18:49,188
+Hiçbiri bir saykın oluşturmuyor.
+
+330
+01:18:49,868 --> 01:18:50,947
+Sonra BF geldi.
+
+331
+01:18:51,647 --> 01:18:52,747
+4 değerine sahip.
+
+332
+01:18:54,008 --> 01:18:57,027
+Burada ikisi aynı değere sahip ise iki kenar.
+
+333
+01:18:57,607 --> 01:18:59,407
+CF ve BF de olduğu gibi.
+
+334
+01:19:00,667 --> 01:19:06,328
+Genelde işte harf önceliğine sahip olan kenarı alıyoruz.
+
+335
+01:19:06,907 --> 01:19:08,828
+Bunu aldık ve ekledik.
+
+336
+01:19:08,947 --> 01:19:11,887
+Şu an AB, BF, FE ve BC var.
+
+337
+01:19:11,887 --> 01:19:41,387
+herhangi bir cycle oluşmuyor. Ama ne zaman ki bir sonraki kenar en küçük geriye kalanlar arasında CF'yi eklediğimizde şurada görmüş olduğunuz şu kısmı eklersek bu bir cycle oluşturacağı için siyah kenar bizim artık elimizdeki kenarla birleştirildiğinde bir spinning tree oluşturulma ihtimali ortadan kalkmış oluyor.
+
+338
+01:19:41,387 --> 01:20:06,247
+O yüzden bu kontrolü yaptıktan sonra diyoruz ki biz bunu almayacağız. Bundan vazgeçiyoruz. Ve bir sonraki en küçük değere geçiyoruz. Bir sonraki en küçük değere geçtiğimizde AF var. AF'yi alıyoruz. Pardon şunu şöyle geri alayım.
+
+339
+01:20:13,011 --> 01:20:40,511
+AF'yi almaya çalıştığımızda yine aynı sorunla karşılaşıyoruz. Bunu siyahla tekrar çizeyim. Bir cycle oluştu. O yüzden AF'yi alamayız. Bunu çıkartıyoruz. AF'den sonra gelen en küçük değer DF. DF'yi şurada gördüğünüz kısmı alıyoruz. Ekliyoruz. Herhangi bir cycle oluşturmadı.
+
+340
+01:20:40,511 --> 01:20:43,511
+Peki bizim için durma noktası neresidir?
+
+341
+01:20:45,131 --> 01:20:57,151
+Durma noktası bütün düğümlere dokunabildiysek aldığımız kenarlarla o noktada geri kalan kenarlara bakmamıza gerek kalmıyor.
+
+342
+01:20:57,651 --> 01:21:03,831
+Burada A'ya dokunduk, B'ye dokunduk, C'ye dokunduk, D'ye dokunduk, E'ye dokunduk ve F'ye dokunduk.
+
+343
+01:21:03,831 --> 01:21:11,751
+o zaman bizim için şu bölümdeki değerlerin kontrol edilmesine gerek kalmadığı.
+
+344
+01:21:12,532 --> 01:21:21,912
+Buradan sonuç olarak ne çıkıyor? Elimizde 1 var, 3 var, 4 var, şurada 2'ye atladık onu yazalım.
+
+345
+01:21:22,552 --> 01:21:25,931
+2 var, 3 var, 4 var ve 5 var.
+
+346
+01:21:25,931 --> 01:21:47,711
+O zaman diyoruz ki 12, 14, 15 bizim minimum spanning tree değerimiz 15 ve bu graftan üretilebilecek minimum spanning tree değeri bütün düğümleri gezerek bütün grafa gidebilmenin yolu 15 birimlik yol kat etmek.
+
+347
+01:21:47,711 --> 01:21:52,711
+İşte kurus kadar yürütması problemi böyle çözüyor.
+
+348
+01:21:54,551 --> 01:21:58,271
+Kenarları listeye koyuyor, sıralıyor.
+
+349
+01:21:59,331 --> 01:22:01,091
+En küçük olanı almaya başlıyor.
+
+350
+01:22:01,091 --> 01:22:11,251
+Sıradaki en küçük olanı alırken oluşturulan kenarlar dizisi saydaki yapıya sahip mi değil mi diye kontrol ediyor.
+
+351
+01:22:11,251 --> 01:22:23,251
+Eğer alınan kenar buna sebebiyet vermiyorsa o kenar listeye dahil ediliyor ve bir sonraki en küçük kenara geçiliyor.
+
+352
+01:22:23,971 --> 01:22:31,051
+Tüm düğünlere ulaşıldığında da artık geri kalan kenarlara bakmaya gerek kalmıyor.
+
+353
+01:22:32,631 --> 01:22:34,491
+Evet buraya kadar sorusu olan var mı?
+
+354
+01:22:40,564 --> 01:22:46,803
+Ruskal algoritmasının MST problemini çözmesiyle ilgili sonsuz olan var mı?
+
+355
+01:22:49,803 --> 01:22:50,803
+Peki.
+
+356
+01:22:58,131 --> 01:23:23,651
+Peki, bu Gruskal Algoritmasında tabii biz sözler olarak anlattık. Problemin çözümü için aslında subsetlerin birbirleri olan ilişkileri kullanılarak burada bir cycle oluşup oluşmadığı kontrol ediliyor.
+
+357
+01:23:23,651 --> 01:23:29,371
+örneğin bu noktada iki farklı örnekten bahsediyoruz.
+
+358
+01:23:29,471 --> 01:23:32,351
+Birincisi A örneği, diğeri B örneği.
+
+359
+01:23:33,371 --> 01:23:42,631
+Burada ilk örnekte A düğümü, B düğümü, C düğümü, D düğümü, E düğümü var.
+
+360
+01:23:44,771 --> 01:23:50,111
+Ve bunlar kendi aralarında bağlanmış durumdalar.
+
+361
+01:23:50,111 --> 01:24:05,151
+ve her birinin düğümleri birbirine bir cycle oluşturmadan bağlı olduğu için değerleri bir olarak verilmiş.
+
+362
+01:24:11,572 --> 01:24:12,572
+ve bu sırada X kenarı geliyor. İşte burada bahsettiğimiz U düğümü ve V düğümü var. Bunlar birleşecekleri zaman ikisinin de değeri aynı olduğu için bir cycle oluşturulacakları anlaşılıyor ve bu bahsettiğimiz X kenarının
+
+363
+01:24:41,572 --> 01:24:46,191
+bu minimum spanning tree'ye eklenmemesi gerektiğine karar veriliyor.
+
+364
+01:24:47,132 --> 01:24:54,112
+Ama öte yandan B örneğine baktığınızda burada iki tane disjoint subset var.
+
+365
+01:24:54,112 --> 01:24:59,152
+Biri şurada gördüğünüz bir değerlerine sahip olan
+
+366
+01:25:08,787 --> 01:25:10,787
+ikinci subset de
+
+367
+01:25:10,787 --> 01:25:15,787
+iki değerine sahip olan grup.
+
+368
+01:25:21,524 --> 01:25:39,524
+Bu bilgiler bir işte aşağıda görmüş olduğunuz bloks noktasında tutulan bilgiler aslında. Bir dizimiz var. Ve her bir düğüme ait bir değer var.
+
+369
+01:25:39,524 --> 01:25:49,263
+Burada gördüğünüz A, B, C, D, E, F, G düğümlerinin değerleri 1.
+
+370
+01:25:49,263 --> 01:25:58,643
+Burada gördüğünüz H, I, J, K düğümlerinin değerleri ise 2.
+
+371
+01:25:58,643 --> 01:26:08,363
+Peki, herhangi bir şekilde U düğümü ve V düğümünü bağlayan kenar seçilirse,
+
+372
+01:26:12,532 --> 01:26:20,532
+O'nun değeri 1, V'nin değeri 2 olduğu için değerler eşit olmadığından dolayı bağlanıyor.
+
+373
+01:26:24,115 --> 01:26:52,036
+bağlantı sağlandığı anda her iki taraftan bir tanesi değerlerini yeni gelen diğer düğümün değeriyle update ediyor. Burada bir tercih edilmiş, şöyle yapalım, V değeri bir, yani H değeri diyelim, I değeri bir, J değeri bir ve K değeri bir olmak üzere set ediliyor.
+
+374
+01:26:52,036 --> 01:27:02,136
+ve buradan şöyle bir subset oluşuyor. İki disjoint subsetten tek bir subset oluşuyor.
+
+375
+01:27:02,775 --> 01:27:16,215
+Bundan sonra eğer dışarıda başka bir subset varsa bu bağlantı sağlandığında bunlar diyelim ki 3 diyeme sahiplerse
+
+376
+01:27:16,215 --> 01:27:25,415
+1 ve 3 farklı olduğu için buradaki diğer subset de daha büyük olan subset de birleştirilmiş oluyor.
+
+377
+01:27:25,415 --> 01:27:27,415
+Ama örneğin...
+
+378
+01:27:31,252 --> 01:27:59,672
+şurada görmüş olduğunuz E ile G düğümü birleştirilmek üzere bir kenar geldiyse bu bir hem E'nin değerinin bir olması hem de G'nin bir değer olmasından dolayı bir cycle oluşturacağı için burada bu kenarın bu subsete eklenmemesi gerektiğine karar veriliyor ve onu almamayı sistem tercih ediyor.
+
+379
+01:28:03,252 --> 01:28:05,051
+Buraya kadar sorusu olan var mı?
+
+380
+01:28:06,371 --> 01:28:28,252
+Bruskal algoritmasının cycle oluşup oluşmadığını, iki disjoint subset'i ya da n tane disjoint subset'i birleştirirken nasıl bir analitik mantıkla ilerlediğini konuştuk ve genel olarak analiz edip gösterdik.
+
+381
+01:28:28,252 --> 01:28:31,311
+Burada anlaşılmayan bir şey, yarın sormak istediğiniz bir şey var mı?
+
+382
+01:28:37,939 --> 01:29:01,679
+Peki, o zaman bir sonraki saatte Kruzkal Algoritmasının kodu üzerinden bu konuştuklarımızı birlikte tartışıyor olacağız. Saat 14.32, 14.45'te tekrar bir araya gelip Kruzkal Algoritmasını daha yakından inceliyor olacağız. Görüşmek üzere arkadaşlar.
+
+383
+01:42:48,083 --> 01:42:56,683
+Evet yeniden merhaba arkadaşlar. Dersin son bölümüne giriyoruz. Şimdi sizlerle bir ekran paylaşacağım.
+
+384
+01:43:14,003 --> 01:43:38,943
+sanırım görebiliyorsunuzdur diye düşünüyorum. Burada Kurzcal algoritmasının yazılmış bir kodu var ve bu kod üzerinden neler ihtiyacımız var onları bir konuşalım. Bir kere bir edge structure tanımlanmış, düğümleri ve ağırlığını temsil eden W tanımlanmış.
+
+385
+01:43:38,943 --> 01:43:43,763
+en arkasından bir tane edge listimiz var. Yani kenarlıra ekleyeceğimiz liste.
+
+386
+01:43:44,503 --> 01:43:52,483
+Burada kenarın eklendiği bir kenar tipindeki liste, yukarıdaki yarattığımız tipte.
+
+387
+01:43:52,903 --> 01:43:56,023
+Bir de o listenin uzunluğunu temsil eden n sayısı var.
+
+388
+01:43:57,083 --> 01:44:01,623
+Bu list tipinden bir tane değişken yaratıyoruz.
+
+389
+01:44:01,623 --> 01:44:25,023
+bir grafımız var bu grafımızı adjacency matris şeklinde saklıyoruz ve bir tane de adım adım ilerlerken spend list oluşturacağız minimum spending tree oluştururken ve bu minimum spending tree listesinde de seçtiğimiz oraya eklediğimiz kenarlar olacak.
+
+390
+01:44:25,023 --> 01:44:32,523
+Bir tane Kursk-Kar'a Gürtmesi'nin ana prensiplerini çalıştıran bir metodumuz var.
+
+391
+01:44:33,963 --> 01:44:50,603
+Bir tane find isimli o ilgili ekleyeceğimiz kenarın düğümlerinin değerlerini araştıran, inceleyen bir tane fonksiyonumuz var.
+
+392
+01:44:50,603 --> 01:44:54,364
+Ve bunları birleştiren bir adet fonksiyonumuz var.
+
+393
+01:44:55,023 --> 01:45:00,703
+ek olarak da hem sıralayan hem de buna ekranı yazdıran bir fonksiyonumuz var.
+
+394
+01:45:01,263 --> 01:45:03,023
+Şimdi gelin aşağıya bir bakalım.
+
+395
+01:45:03,603 --> 01:45:05,083
+Burada ana fonksiyon var.
+
+396
+01:45:06,083 --> 01:45:17,043
+İşte n6 olarak verilmiş ve buraya elle düğümlerin değerleri ve işte kenar uzunlukları adjacency matrice ekleniyor.
+
+397
+01:45:17,044 --> 01:45:27,123
+Arkasından hemen aşağıda Pruskal algoritmasını implemente eden fonksiyon çağrılıyor ve sonra da sonuçlar ekrana yazdırılıyor.
+
+398
+01:45:27,224 --> 01:45:30,643
+Gelelim Pruskal algoritmasının olduğu noktaya.
+
+399
+01:45:30,944 --> 01:45:35,544
+Bir tane belonging biraz önce az önceki derste gördüğümüz dizimiz var.
+
+400
+01:45:36,263 --> 01:45:44,304
+Bu dizimiz ilk etapta tüm değerler sıfır şekilde konumlandırılıyor.
+
+401
+01:45:44,304 --> 01:45:53,384
+arkasından listemizin uzunluğu herhangi bir kenara eklemediğimiz için sıfır olarak set ediliyor
+
+402
+01:45:53,384 --> 01:45:58,143
+ve matriz üzerinde, ecesinisi matriz üzerinde gezmeye başlıyoruz.
+
+403
+01:45:59,364 --> 01:46:07,623
+Ecesinisi matriz üzerinde gezerken burada düğümün değerinin sıfırdan farklı olmasına bakıyoruz.
+
+404
+01:46:07,623 --> 01:46:21,503
+Eğer farklıysa oradaki satır değerini alıyoruz. Onu düğüm 1 olarak işaretliyoruz. Sonra sütün değerini alıyoruz. Düğüm 2 olarak alıyoruz.
+
+405
+01:46:21,503 --> 01:46:31,524
+grafın yani matrisin üzerindeki hücredeki değeri alıp o kenarın ağırlığı olarak E liste yani edge liste ekliyoruz.
+
+406
+01:46:31,524 --> 01:46:39,763
+Ve aynı zamanda edge listin üzerindeki kenar sayısını da bir arttırıyoruz.
+
+407
+01:46:39,923 --> 01:46:41,304
+En artı artı diyerek.
+
+408
+01:46:41,483 --> 01:46:47,384
+Sonra bu listeyi tüm adjacency matrisi gezerek oluşturduktan sonra sıralıyoruz.
+
+409
+01:46:48,003 --> 01:46:50,364
+Sort metoduyla.
+
+410
+01:46:51,503 --> 01:47:01,104
+arkasından her bir düğümü az önce sıfır olarak söylemiştim onu düzeltiyorum çünkü burası önemli.
+
+411
+01:47:01,104 --> 01:47:08,584
+Her bir düğüm ayrı bir değere sahip olacak şekilde set ediliyor. Bu ne demek?
+
+412
+01:47:09,076 --> 01:47:17,235
+İşte birinci düğüm 1, ikinci düğüm 2, üçüncü düğüm 3 değerini alacak şekilde listemizi oluşturuyoruz.
+
+413
+01:47:17,796 --> 01:47:26,135
+Bu her bir düğümün ilk etapta birbirleriyle birleştirilmeden önce ayrı değerlere sahip olması gerektiğini gösteriyor.
+
+414
+01:47:26,235 --> 01:47:32,735
+Böylece henüz bir birleştirme işlemi yapmadığımız için her düğüm kendi değerine sahip oluyor.
+
+415
+01:47:33,355 --> 01:47:37,775
+Span list ilk etapta boş. Minimum spanning tree'de herhangi bir kenar yok.
+
+416
+01:47:37,775 --> 01:47:39,695
+O yüzden sıfır değerine sahip.
+
+417
+01:47:40,575 --> 01:47:44,695
+Gelelim bizim için kritik noktalardan bir tanesine.
+
+418
+01:47:45,475 --> 01:47:55,835
+Burada sıralama yaptıktan sonra en küçük listedeki elemanı alacak şekilde listenin başından değerleri almaya başlıyoruz.
+
+419
+01:47:56,355 --> 01:47:57,815
+Değerleri alırken ne yapıyoruz?
+
+420
+01:47:57,815 --> 01:48:07,295
+Diyoruz ki sen ilk elemanın düğümünün değerini al ve onu find isimli fonksiyona gönder.
+
+421
+01:48:07,295 --> 01:48:09,835
+ilk kenarın
+
+422
+01:48:09,835 --> 01:48:11,895
+ikinci düğümünün bilgisini
+
+423
+01:48:11,895 --> 01:48:13,275
+al yine find'e gönder
+
+424
+01:48:13,275 --> 01:48:15,415
+find'e gönderdiği zaman
+
+425
+01:48:15,415 --> 01:48:18,155
+belongs isimli dizideki
+
+426
+01:48:18,155 --> 01:48:19,936
+değerin kaç olduğunu
+
+427
+01:48:19,936 --> 01:48:21,655
+alıyoruz mesela birinci düğüm geldi
+
+428
+01:48:21,655 --> 01:48:23,715
+üçüncü düğüm geldi birinci düğümün değeri
+
+429
+01:48:23,715 --> 01:48:25,555
+bir üçüncü düğümün
+
+430
+01:48:25,555 --> 01:48:26,855
+değeri üç
+
+431
+01:48:26,855 --> 01:48:29,155
+bir ile üç
+
+432
+01:48:29,155 --> 01:48:31,595
+birbirleriyle aynı mı değil mi
+
+433
+01:48:31,595 --> 01:48:33,275
+diye bakıyor sistem kontrol ediyor
+
+434
+01:48:33,275 --> 01:48:35,055
+eğer aynı değilse
+
+435
+01:48:35,055 --> 01:48:36,995
+onları birleştiriyor
+
+436
+01:48:37,296 --> 01:48:41,116
+Farklıysa elist data iyi alıyor.
+
+437
+01:48:41,756 --> 01:48:46,275
+Span list data içerisindeki span list n kısmına koyuyor.
+
+438
+01:48:47,096 --> 01:48:48,495
+Span listi bir arttırıyor.
+
+439
+01:48:48,855 --> 01:48:51,895
+Yani ikinci edge geleceği için sonra bunları birleştiriyor.
+
+440
+01:48:52,775 --> 01:48:54,355
+Birleştirme işlemini nasıl yapıyor?
+
+441
+01:48:55,056 --> 01:48:56,556
+Birleştirme işlemini de şöyle yapıyor.
+
+442
+01:48:56,696 --> 01:49:01,855
+Blancs da c2 değerine sahip olan tüm değerleri c1 değerine atıyor.
+
+443
+01:49:01,855 --> 01:49:05,516
+Yani biraz önce 1 ve 3 vardı elimizde.
+
+444
+01:49:05,515 --> 01:49:12,655
+3'ü 1 ya da 1'i 3 yapıyor ve 1 ve 3 düğümleri birbirleriyle birleşmiş oluyor.
+
+445
+01:49:13,335 --> 01:49:19,296
+Bir sonraki turda, şuradayız, tekrar buraya geldik.
+
+446
+01:49:19,375 --> 01:49:21,175
+Bu sefer ikinci en küçük kenarı alıyor.
+
+447
+01:49:21,675 --> 01:49:28,296
+İkinci en küçük kenar düğümleri birleştirildiğinde karşılığında ne var?
+
+448
+01:49:28,296 --> 01:49:29,936
+Bakıyoruz mesela 3 ile 5 geldi.
+
+449
+01:49:30,735 --> 01:49:34,335
+3 ile 5 geldiği zaman 3'ün karşılığında 1 olduğunu biliyoruz.
+
+450
+01:49:34,335 --> 01:49:36,355
+Az önce 1 ile 3 birleşti.
+
+451
+01:49:36,576 --> 01:49:37,595
+3'ü 1 yapmıştık.
+
+452
+01:49:38,835 --> 01:49:45,315
+1 ile 3 birleştiğinde 3 1 olduğuna göre 3'ün değeri 1 ile 5'in değeri 5'i karşılaştırıyor.
+
+453
+01:49:45,395 --> 01:49:47,936
+Farklı olduğu için bu sefer onları birleştiriyor.
+
+454
+01:49:48,615 --> 01:49:54,315
+Her yeni eleman geldikçe o iki düğümün değeri birbirlerinden farklıysa
+
+455
+01:49:54,315 --> 01:50:00,695
+geri kalan değerler bir önceki düğümün değerine set ediliyor.
+
+456
+01:50:01,095 --> 01:50:02,955
+Ve bu şekilde unionlar oluşturuyor.
+
+457
+01:50:02,955 --> 01:50:10,435
+Tabii bu şekilde ekleye ekleye ilerliyoruz bu noktada.
+
+458
+01:50:11,915 --> 01:50:15,935
+Ve burada tüm kenarların üzerinden ilerleniyor.
+
+459
+01:50:16,815 --> 01:50:23,415
+Bu kodun eksiklerinden bir tanesi, iyileştirilebilir yönlerden bir tanesi şu.
+
+460
+01:50:23,415 --> 01:50:37,296
+Siz ekledikçe ulaştığınız düğümleri not ederek eğer tüm düğümlere ulaşıldıysa bunu da ayrı bir dizide saklayabilirsiniz.
+
+461
+01:50:37,796 --> 01:50:40,175
+Her eklediğiniz düğümü işaretleyebilirsiniz.
+
+462
+01:50:40,736 --> 01:50:44,095
+O zaman bütün kenarları gezmenize gerek kalmasın.
+
+463
+01:50:45,095 --> 01:50:50,455
+Her yeni kenar eklendiğinde eklenen vertexler işaretlenir.
+
+464
+01:50:50,455 --> 01:51:01,535
+İşaretlenen vertexler bütün vertexlere ulaştığınız yürüldüğü anda sistem otomatikman işlemini sonlandırır.
+
+465
+01:51:07,123 --> 01:51:08,683
+Sorusu olan var mı arkadaşlar?
+
+466
+01:51:26,676 --> 01:51:34,176
+bir başka örnek üzerinden Kruzkal ile ilgili çözüm yapmamı ister misiniz?
+
+467
+01:51:41,908 --> 01:51:48,908
+Ama peki bir tane daha örnek yapalım arkadaşlarımız iyi olur dediler. Hemen ben onu durdurayım.
+
+468
+01:51:58,739 --> 01:52:10,779
+çöğ
+
+469
+01:52:06,676 --> 01:52:07,676
+seçelim.
+
+470
+01:52:12,372 --> 01:52:13,372
+Şube.
+
+471
+01:52:20,115 --> 01:52:21,075
+paylaşım yapalım.
+
+472
+01:53:11,828 --> 01:53:12,907
+bu da geldi.
+
+473
+01:53:14,967 --> 01:53:16,487
+Şimdi share screen diyelim.
+
+474
+01:53:26,068 --> 01:53:31,927
+ekranı da paylaştım. Geriye bir tek örneği buraya almak kaldı. Onu da ekleyelim.
+
+475
+01:53:35,380 --> 01:53:39,860
+böyle yapacağım. Evet, şimdi çizebilirim sanırım.
+
+476
+01:53:40,659 --> 01:53:41,219
+Kurzgal.
+
+477
+01:53:50,228 --> 01:53:50,707
+Sofır.
+
+478
+01:53:53,167 --> 01:53:53,567
+Bir.
+
+479
+01:53:57,087 --> 01:53:57,688
+İki.
+
+480
+01:54:14,355 --> 01:54:42,235
+bağlayalım. Şöyle bağlayalım, bağlayalım. Bunu bağlayalım. Sanırım tamamdır. 4, 8, 7, 9, 10, 14, 4, 2, 6, 2, 7, 1, 11, 8.
+
+481
+01:54:42,235 --> 01:54:55,775
+Evet şu anda elimizdeki grafta minimum spanning tree'yi aradığımızı varsayalım ve bizim için sıralamayı oluşturalım.
+
+482
+01:54:56,315 --> 01:55:07,275
+Şimdi öncelikle en küçükten başlarımız gerekiyor. Yanlış görmüyorsam 6 ile 7'nin birleşiminde bizim için 1 değeri var.
+
+483
+01:55:07,275 --> 01:55:26,515
+hemen arkasından 5 ile 6'nın birleşiminde 2 değeri var. 2 ile 8'in birleşiminde 2 değeri var. Ondan sonra 4'ler geliyor. 0 ve 1, 4. 2 ve 5, 4.
+
+484
+01:55:26,515 --> 01:55:52,775
+onların hemen arkasından 6 geliyor. 6, 8, 6. Sonra 7 var. 2, 3, 7, 7, 8, 7. 8'ler var. 0, 7, 8, 1, 2, 8.
+
+485
+01:55:52,775 --> 01:55:58,195
+10'dan sonra sanırım 9 geliyor 3, 4.
+
+486
+01:56:01,195 --> 01:56:03,655
+Ondan sonra 4, 5 geliyor.
+
+487
+01:56:05,415 --> 01:56:05,716
+10.
+
+488
+01:56:07,735 --> 01:56:09,375
+Sonra 1, 7 var.
+
+489
+01:56:10,155 --> 01:56:10,536
+11.
+
+490
+01:56:13,335 --> 01:56:17,015
+Sonra da sanırım 3, 5 geliyor.
+
+491
+01:56:18,375 --> 01:56:18,815
+14.
+
+492
+01:56:18,815 --> 01:56:27,576
+1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14 tane kenar var. Bakalım öyle mi?
+
+493
+01:56:27,576 --> 01:56:37,576
+1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14. Evet 14 tane kenarımızı sıraladık.
+
+494
+01:56:38,115 --> 01:56:45,975
+En küçükten, en büyüğe doğru. Ve almaya başlıyoruz şimdi. Şöyle yapalım.
+
+495
+01:56:45,975 --> 01:56:48,455
+6-7
+
+496
+01:56:48,455 --> 01:56:50,775
+İlk en küçük kenarımız
+
+497
+01:56:50,775 --> 01:56:53,355
+Şurayı birleştirelim
+
+498
+01:56:53,355 --> 01:57:01,296
+Bunu zaten ilk aldığımızda şu aslında size söylediğim
+
+499
+01:57:01,296 --> 01:57:05,576
+Blonks dizisini de oluşturursak
+
+500
+01:57:05,576 --> 01:57:07,555
+Çok da güzel olur
+
+501
+01:57:07,555 --> 01:57:09,275
+Bu da görmüş olursunuz
+
+502
+01:57:09,275 --> 01:57:12,076
+0-1-2-3
+
+503
+01:57:12,076 --> 01:57:15,675
+4-5-6-7
+
+504
+01:57:15,675 --> 01:57:21,775
+7, 8, 9, hatta fazla bile yaptık.
+
+505
+01:57:26,555 --> 01:57:27,975
+Şöyle birleştirelim.
+
+506
+01:57:29,355 --> 01:57:32,335
+Bunlara ilk değerlerini atıyoruz demiştik hatırlıyorsanız.
+
+507
+01:57:32,455 --> 01:57:33,415
+Kendi değerlerini veriyoruz.
+
+508
+01:57:33,555 --> 01:57:38,375
+0, 1, 2, 3, 4, 5, 6, 7, 8 demiştik.
+
+509
+01:57:38,775 --> 01:57:41,615
+6 ile 7'yi birleştirmek istediğimizde 6 ve 7 değerleri var.
+
+510
+01:57:41,615 --> 01:57:42,775
+Birbirlerinden farklı var.
+
+511
+01:57:42,915 --> 01:57:45,235
+O yüzden bir tanesini diğerine set edeceğim.
+
+512
+01:57:45,675 --> 01:57:48,075
+şöyle birbim
+
+513
+01:57:51,764 --> 01:57:55,764
+Bunlar 7, 7 olsun.
+
+514
+01:57:57,764 --> 01:57:59,764
+Sonra 5 ve 6 gelsin.
+
+515
+01:57:59,764 --> 01:58:04,764
+5 ve 6 geldiğinde, bakalım nerede? Şurada.
+
+516
+01:58:04,764 --> 01:58:07,764
+Bunu ekliyoruz. Sırada bu kenar var.
+
+517
+01:58:07,764 --> 01:58:11,764
+5 ve 6 bu gruba ekleneceğinde 6'nın karşılığında 7 var.
+
+518
+01:58:11,764 --> 01:58:18,764
+O zaman diyoruz ki, yeni gelen değerden dolayı bunlar 5 olsunlar.
+
+519
+01:58:18,764 --> 01:58:22,223
+hepsi 5 oldular.
+
+520
+01:58:23,364 --> 01:58:24,304
+Devam ediyorum.
+
+521
+01:58:25,664 --> 01:58:26,923
+Farklı olduğu için eklemiştik.
+
+522
+01:58:27,003 --> 01:58:27,784
+2, 8 geliyor.
+
+523
+01:58:30,923 --> 01:58:33,723
+2, 8'i birleştirdiğimizde şurayı birleştirdik.
+
+524
+01:58:34,804 --> 01:58:36,624
+2, 2, 8, 8.
+
+525
+01:58:36,743 --> 01:58:38,723
+O yüzden 8'i 2 yapalım.
+
+526
+01:58:44,500 --> 01:59:13,899
+8 ile 2 yaptık. Bu da 2, o da 2. Devam ediyorum. 0 ve 1 geliyor. Evet. Burayı birleştirdim. 0, 0, 1, 1. Birbirlerinden farklı oldukları için birini diğerine set edeceğim. İşte burası 1 oldu, burası 1. Bunları da belirginleştirme katına set ettiğimi mavi olarak işaret ettiğim. Bunu yaptık. Sığada 2, 5 var. 2, 5, 4 değerine sahip.
+
+527
+01:59:14,500 --> 01:59:31,440
+birleştirirsem görsel olarak baktığımda herhangi bir cycle oluşmuyor. Gerçekten 2, 5'e baktığımda da 2 ve 5 var. İşte 5'lerin 2 olduğunu varsayalım ve şunları şöyle şöyle.
+
+528
+01:59:35,155 --> 01:59:38,315
+2, 2, 2 olarak set edelim.
+
+529
+01:59:40,036 --> 01:59:43,315
+2 ile 5'i de birleştirdim. Sırada 6, 8 var.
+
+530
+01:59:44,555 --> 01:59:54,735
+6, 8'in değeri birbirleriyle aynı olduğu için birleştirirsem, burada da şöyle bakacak olursanız, şurayı birleştirirsem,
+
+531
+01:59:55,416 --> 02:00:03,836
+cycle oluşacağı için değerler de aynı olduğu için bunu birleştirmemem gerektiğini görüyorum ve onu eliyorum.
+
+532
+02:00:03,836 --> 02:00:06,616
+Sonra yolumda en küçük bir sonrakiyle devam ediyorum.
+
+533
+02:00:06,735 --> 02:00:07,655
+2 ile 3'e bakıyorum.
+
+534
+02:00:08,135 --> 02:00:09,856
+2 ile 3'ün değerleri birbirinden farklı.
+
+535
+02:00:10,295 --> 02:00:11,696
+O zaman bunu birleştirebilirim.
+
+536
+02:00:12,315 --> 02:00:14,016
+O zaman yaptığım şey şu oluyor.
+
+537
+02:00:15,315 --> 02:00:18,356
+Bütün işte 2'leri 3 yapıyorum.
+
+538
+02:00:18,615 --> 02:00:20,496
+Ya da tam tersi gidiyorduk galiba.
+
+539
+02:00:21,255 --> 02:00:22,795
+Yeni gelen 3'ü 2 yapıyorum.
+
+540
+02:00:22,795 --> 02:00:24,455
+Ve burası da 2 oluyor.
+
+541
+02:00:24,916 --> 02:00:27,016
+Burada da birleştirelim 2 ile 3'ü.
+
+542
+02:00:28,516 --> 02:00:28,955
+Şöyle.
+
+543
+02:00:31,496 --> 02:00:33,295
+2 ile 3'ü birleştirdim.
+
+544
+02:00:33,836 --> 02:00:49,135
+Şu anda başka bir yerde set ediyor olsaydım 0'ı almıştım, 1'i almıştım, 2'ye aldım, 3'ü aldım, 5'i aldım, 6'ya aldım, 7'ye aldım, 8'i aldım.
+
+545
+02:00:49,755 --> 02:00:55,975
+Yani başka bir dizde bunu set ediyor olsaydım bir tek 4'ü almadığım için aramaya devam edecektim.
+
+546
+02:00:55,975 --> 02:01:03,655
+7 ve 8 birleşirse ne olur diye bakıyorum. 7 ve 8'in değerleri nedir diye bakıyorum.
+
+547
+02:01:03,836 --> 02:01:07,035
+7 ve 8'in değerleri burada gördüğünüz gibi
+
+548
+02:01:07,035 --> 02:01:16,516
+biloksizinde aynı. O yüzden bunu almayacağımı biliyorum. Değerler aynı olduğu için.
+
+549
+02:01:17,056 --> 02:01:30,176
+0 ve 7'ye bakıyorum. 0'ın değeri 1, 7'nin değeri 2. Peki 0 ile 7'yi birleştirmem gerekiyor mu?
+
+550
+02:01:30,175 --> 02:01:34,015
+0 ile 7'yi birleştirdiğimde o yola ihtiyaç duyuyor muyum?
+
+551
+02:01:34,495 --> 02:01:34,775
+Evet.
+
+552
+02:01:35,215 --> 02:01:36,575
+Şu anda o yola ihtiyaç duyuyorum.
+
+553
+02:01:36,655 --> 02:01:37,935
+Birleşmiş olmaları gerekiyor.
+
+554
+02:01:38,575 --> 02:01:38,855
+Hemen.
+
+555
+02:01:43,091 --> 02:01:45,091
+orayı da işaretledim.
+
+556
+02:01:47,091 --> 02:01:47,591
+ve
+
+557
+02:01:48,191 --> 02:01:49,091
+tik attım.
+
+558
+02:01:49,691 --> 02:01:52,591
+0'ın değeri 1 idi, 7'nin değeri 2 idi.
+
+559
+02:01:53,091 --> 02:01:55,091
+geri kalan hepsini
+
+560
+02:01:57,844 --> 02:02:05,203
+1, 1, 1, 1, 1, 1 yaptım.
+
+561
+02:02:07,844 --> 02:02:10,483
+Şu an bir tek 4'e ulaşmamış durumdayım.
+
+562
+02:02:11,923 --> 02:02:13,383
+1, 2'ye bakıyorum. 8.
+
+563
+02:02:14,243 --> 02:02:18,383
+1, 2'nin değeri 1, 1 olduğu için, aynı olduğu için almıyorum.
+
+564
+02:02:19,663 --> 02:02:22,363
+3, 4'e bakıyorum. 3, 4'ün değeri farklı.
+
+565
+02:02:22,363 --> 02:02:36,483
+3, 4'ün değeri farklı olduğu için onu ekliyorum. Bu şekilde bunu da aldım. Sonra hepsini 4'e dönüştürüyorum.
+
+566
+02:02:40,851 --> 02:03:07,891
+Zaten hepsi aynı değeri aldığı zaman aslında teknik olarak hepsine ulaşmış oluyorum. Aslında ek bir diziye ihtiyaç duymadan da burayı kontrol ederek aslında işi tamamlamış da oluyorsunuz. Bu da önemli noktalardan bir tanesi. Geri kalan 4-5'e, 1-7'ye ve 3-5'e bakmama gerek kalmadan Bruce Kala algoritmasını kullanarak bütün düğümlere ulaşan minimum spinning tree'yi belirlemiş oluyorum.
+
+567
+02:03:07,891 --> 02:03:13,931
+sorusu olan var mı? Bu yaptığımız örnekle ilgili ya da kurskalar dörtmasıyla ilgili.
+
+568
+02:03:23,091 --> 02:03:28,211
+graflarla ilgili bu haftaki işlediğimiz konularla ilgili soru sormak isteyen var mı?
+
+569
+02:03:30,691 --> 02:03:34,211
+Sınav sorularını çözmemi isteyen var mı?
+
+570
+02:03:53,684 --> 02:04:14,303
+Peki, sınav sorularında bir anda reaksiyon arttı. Güzel. Sınav sorularını bu hafta çözmeyeceğim. Çünkü kağıtlarınızı yani cevaplarınızı tamamladıktan sonra hatalarınızı söylemek istiyorum ama gördüğüm kadarıyla herhangi bir problem gözükmüyor.
+
+571
+02:04:14,303 --> 02:04:27,083
+en azından ilk kısmı okuduğum için bunu söyleyebilirim ama herkes için bu yorumu yapmak mümkün olmayabilir ama genelle ilgili önemli bir sorun gözükmüyor not açısından baktığımızda.
+
+572
+02:04:28,203 --> 02:04:42,023
+Önümüzdeki hafta için buna dair bir planlama yaparım. Hem genel hatalarla ilgili birkaç yorum söylerim hem de sınav sorularını çözecek bir zaman dilimi sağlarız.
+
+573
+02:04:42,024 --> 02:04:44,603
+Önümüzdeki hafta prim algoritmasını anlatacağım.
+
+574
+02:04:46,503 --> 02:04:51,003
+Ve belki short spread algoritmasını Dijkstra'nın konuşuyor olabiliriz.
+
+575
+02:04:51,084 --> 02:04:55,343
+Ya da alternatif bir graph algoritması sizinle paylaşıyor olurum.
+
+576
+02:04:56,003 --> 02:04:58,204
+Hocalarla konuştuktan sonra karar veririz.
+
+577
+02:04:58,684 --> 02:05:07,624
+Yarın itibariyle bir aksilik olmazsa en geç, hani öğleden sonraki vakit diye düşünüyorum ama bir aksilik olursa sizi bilgilendiririm.
+
+578
+02:05:08,484 --> 02:05:10,344
+Ödevinizi, son ödevinizi vereceğiz.
+
+579
+02:05:10,343 --> 02:05:18,643
+süresiyle ilgili ödevin yapısına bağlı olarak çok uzun bir süre vermeyebiliriz bu arada o da bilginiz dahilinde olsun.
+
+580
+02:05:19,103 --> 02:05:22,383
+Mutlaka bir hafta olacak diye bir şey yok. Ödevin içeriğine bağlı.
+
+581
+02:05:24,963 --> 02:05:28,163
+Sonra da zaten önümüzdeki hafta dönem projenizi veriyor olacağım.
+
+582
+02:05:29,843 --> 02:05:36,403
+Dersi sonradan izlediğinizi varsayarak bugünkü katılım çok yüksek olmadığı için ekstra bir soru da sormadım.
+
+583
+02:05:36,404 --> 02:05:42,224
+genelde anladığım kadarıyla sonradan izlemeyi hızlandırmış izlemeyi tercih ediyorsunuz.
+
+584
+02:05:42,224 --> 02:05:49,103
+Vakit ayırdığınız için, dinlediğiniz için teşekkür ediyorum. Hepinize güzel bir hafta diliyorum. Haftaya görüşmek dileğiyle. Hoşçakalın.
+
+585
+02:05:55,891 --> 02:05:56,911
+İyi günler hocam.
+
+586
+02:05:57,391 --> 02:05:57,991
+Hoşçakalın.

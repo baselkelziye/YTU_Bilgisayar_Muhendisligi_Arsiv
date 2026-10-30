@@ -1,0 +1,2887 @@
+1
+00:04:27,156 --> 00:04:28,276
+Hoşgeldiniz arkadaşlar.
+
+2
+00:04:30,975 --> 00:04:32,636
+7. haftadayız.
+
+3
+00:04:34,195 --> 00:04:35,996
+Hepinize güzel bir hafta diliyorum.
+
+4
+00:04:37,835 --> 00:04:46,375
+Sanırım bir aksilik olmazsa bayram sonrasında vize haftası yapacağız ve uzaktan ilk sınavınızda olacaksınız.
+
+5
+00:04:47,416 --> 00:04:53,315
+Bu hafta heap data structure'ını önümüzdeki haftada priority queue'ları anlatıyor olacağız.
+
+6
+00:04:53,315 --> 00:04:58,475
+ve sonra bayram ve arkasından da sınav haftanız olacak.
+
+7
+00:04:59,255 --> 00:05:01,156
+Sınav takvimi yakında açıklanacaktır.
+
+8
+00:05:03,135 --> 00:05:07,156
+Ara sınavların uzaktan yapılacağı kesinleşmişti.
+
+9
+00:05:07,535 --> 00:05:12,075
+En son gelen bilgi final sınavlarının da yüz yüze olacağı yönünde.
+
+10
+00:05:12,895 --> 00:05:17,996
+Herhangi bir değişiklik yapılmazsa bu bilgiyi de sizlerle paylaşmış olayım.
+
+11
+00:05:17,996 --> 00:05:23,696
+Sanırım 5-15 Haziran aralığına denk geliyordu final sınav takvimi.
+
+12
+00:05:25,696 --> 00:05:34,336
+Bu sene değerlendirmelerimizi bir ara sınav, 3 ödev, bir proje ve bir final üzerinden yapacağımızı ders başında size aktarmıştık.
+
+13
+00:05:34,336 --> 00:05:38,275
+Birinci ödevinizi tamamladınız. Umarım faydalı olmuştur sizlere.
+
+14
+00:05:38,935 --> 00:05:40,295
+Değerlendirmesi devam ediyor.
+
+15
+00:05:40,295 --> 00:05:54,156
+yakın zamanda değerlendirme sonuçlandığındaki hedefimiz iki haftada genelde açıklamak ödev sonuçlarımızı sizlerle paylaşacağız.
+
+16
+00:05:54,156 --> 00:05:58,336
+Yarın itibariyle bir yeni ödeviniz daha olacak, ikinci ödeviniz.
+
+17
+00:05:58,615 --> 00:06:04,556
+Bu ödevinizin konusu Tree, Stack ve Q ile ilgili bir ödev olacak.
+
+18
+00:06:04,556 --> 00:06:11,475
+yarın yine laboratuvar saatinde ödevinizi duyurmuş olacağız.
+
+19
+00:06:12,755 --> 00:06:14,975
+Bir haftalık bir süreniz olacak yaklaşık olarak.
+
+20
+00:06:16,255 --> 00:06:20,255
+Yine aynı kurallar geçerli olarak ödevinizi gerçekleştiriyor olacaksınız.
+
+21
+00:06:21,096 --> 00:06:23,115
+Sorularınız olursa bize iletirsiniz.
+
+22
+00:06:24,016 --> 00:06:26,935
+Şimdiden başarılar diliyorum ödevinizde.
+
+23
+00:06:26,935 --> 00:06:31,895
+Şimdi benim ilk etapta size aktaracağım bilgiler bu yönde.
+
+24
+00:06:32,435 --> 00:06:43,195
+Size söz vermek isterim, almak isteyen varsa, yorum yapmak isteyen, soru sormak isteyen ya da bir isteği olan varsa dinlemek isterim.
+
+25
+00:06:43,596 --> 00:06:46,055
+Var mıdır arkadaşlar herhangi bir katkıda bulunmak isteyen?
+
+26
+00:06:52,052 --> 00:07:06,231
+Peki, o zaman dersimize başlayabiliriz. Şu an yaklaşık 30 kişi derse katılım gösteriyor. Tekrar teşekkür ediyorum derse katıldığınız için. Şimdi ben sizin ekranımı paylaşacağım.
+
+27
+00:07:12,947 --> 00:07:19,027
+Sanırım görebiliyorsunuzdur. Bu hafta HİP veri yapısını birlikte işliyor olacağız.
+
+28
+00:07:19,847 --> 00:07:22,047
+HİP ağaçlarını konuşuyor olacağız.
+
+29
+00:07:22,828 --> 00:07:27,087
+Bu HİP ağaçlarını kullanarak neler yaptığımızdan bahsedeceğiz.
+
+30
+00:07:27,207 --> 00:07:29,727
+Aslında temel birkaç tane amacımız var.
+
+31
+00:07:30,407 --> 00:07:37,128
+O amaçlar etrafında birçok işi HİP ağaçlarıyla günlük hayatta da aslında çözmeye çalışıyoruz.
+
+32
+00:07:37,128 --> 00:07:41,068
+buradaki görmüş olduğunuz
+
+33
+00:07:41,068 --> 00:07:42,187
+heap ağacında
+
+34
+00:07:42,187 --> 00:07:44,687
+aslında bu bir
+
+35
+00:07:44,687 --> 00:07:45,888
+binary heap tree
+
+36
+00:07:45,888 --> 00:07:50,508
+yani en fazla iki çocuğu olabiliyor
+
+37
+00:07:50,508 --> 00:07:52,267
+bu ağaçta düğümlerin
+
+38
+00:07:52,267 --> 00:07:54,568
+temel bir
+
+39
+00:07:54,568 --> 00:07:55,988
+kaç kural var
+
+40
+00:07:55,988 --> 00:07:58,648
+bir ağacın binary heap tree olabilmesi için
+
+41
+00:07:58,648 --> 00:08:00,788
+başka heap tree'ler de var ama
+
+42
+00:08:00,788 --> 00:08:02,988
+biz ağırlıklı olarak binary heap tree'ler
+
+43
+00:08:02,988 --> 00:08:03,827
+üzerinde duracağız
+
+44
+00:08:03,827 --> 00:08:05,067
+birincisi
+
+45
+00:08:05,067 --> 00:08:07,867
+bir ağacın öncelikle
+
+46
+00:08:07,867 --> 00:08:09,527
+binary tree ise eğer
+
+47
+00:08:09,527 --> 00:08:11,927
+complete binary tree özelliği taşıması
+
+48
+00:08:11,927 --> 00:08:13,547
+gerekiyor bir heap tree
+
+49
+00:08:13,547 --> 00:08:15,747
+ağacından bahsedebilmemiz için.
+
+50
+00:08:16,107 --> 00:08:17,907
+Olmazsa olmaz birinci özellik o.
+
+51
+00:08:18,547 --> 00:08:19,628
+İkinci özellik de
+
+52
+00:08:19,628 --> 00:08:21,628
+parent node
+
+53
+00:08:21,628 --> 00:08:23,587
+her zaman
+
+54
+00:08:23,587 --> 00:08:25,007
+çocuklarından
+
+55
+00:08:25,007 --> 00:08:28,187
+daha büyük bir değere sahip
+
+56
+00:08:28,187 --> 00:08:30,107
+ya da her zaman daha küçük bir değere sahip.
+
+57
+00:08:30,227 --> 00:08:31,907
+Bu da karşımıza iki tür
+
+58
+00:08:31,907 --> 00:08:33,787
+heap tree çıkartıyor. Biri
+
+59
+00:08:33,787 --> 00:08:36,527
+Max hip tree, diğeri de min hip tree.
+
+60
+00:08:37,107 --> 00:08:39,587
+Max hip tree dendiği zaman şunu biliyoruz.
+
+61
+00:08:40,247 --> 00:08:50,007
+Kökte yer alan eleman tüm çocuk düğümlerden, aşağıdaki alt ağaçlarda yer alan tüm çocuk düğümlerden daha büyük bir değere sahip.
+
+62
+00:08:50,007 --> 00:08:59,047
+Min hip tree'de de tam tersi kökte yer alan eleman, alt ağaçlarda yer alan tüm elemanlardan daha küçük bir değere sahip.
+
+63
+00:08:59,047 --> 00:09:07,827
+İki tane temelde heap tree ile karşılaşacağız. Biri max heap tree, diğeri min heap tree.
+
+64
+00:09:07,827 --> 00:09:30,767
+Bu noktada şuradaki örneğe baktığınızda şu yan tarafta bulunan örneğe baktığınızda temel olarak bir binary tree özelliği gösterse de ağaç sola dayalı olmadığı için ve arada bir boşluk yer aldığı için bu ağacın herhangi bir şekilde heap tree olma ihtimali yok.
+
+65
+00:09:30,767 --> 00:09:33,987
+Çünkü Complete Binary Tree özelliği taşımıyor.
+
+66
+00:09:34,427 --> 00:09:38,767
+Bir kere bu noktada yapısal olarak ağacın düğümlerini incelediğinizde
+
+67
+00:09:39,367 --> 00:09:41,707
+heap tree olup olmadığını anlayabiliyorsunuz.
+
+68
+00:09:41,767 --> 00:09:45,767
+Bu aşamaya geçtikten sonra elemanları kontrol ettiğimizde
+
+69
+00:09:46,327 --> 00:09:51,767
+altının kök düğümünün altında yer alan değerlere baktığınızda
+
+70
+00:09:51,767 --> 00:09:57,767
+4 ve 5 parent'tan küçük mü diye bakıyorsunuz ki bu bir max heap tree olduğunu söylemiştik.
+
+71
+00:09:57,767 --> 00:10:15,047
+Evet küçük o zaman bu kuralı sağlıyor. Sonra 4'e bakıyorsunuz. 3 ve 2 bu kuralı sağlıyor. Sonra 5'e bakıyorsunuz. 0 o da bu kuralı sağlıyor. Demek ki bu bir Max Heap Tree ağacı olarak kullanılabilir bir ağaç.
+
+72
+00:10:15,907 --> 00:10:20,467
+Aynı şekilde açığındakine baktığımızda 2'nin altında yer alanlar mutlaka kendisinden büyük olmalı.
+
+73
+00:10:20,547 --> 00:10:21,387
+5 ve 7 büyük.
+
+74
+00:10:21,827 --> 00:10:24,647
+5'in altında yer alanlar 6 ve 8 büyük.
+
+75
+00:10:25,067 --> 00:10:28,087
+7'nin altında yer alanlar 9 ve 11 büyük.
+
+76
+00:10:28,807 --> 00:10:30,907
+Peki şöyle olabilir miydi?
+
+77
+00:10:31,227 --> 00:10:31,907
+Bir de ona bakalım.
+
+78
+00:10:32,847 --> 00:10:36,867
+Şurada şunu küçültelim.
+
+79
+00:10:39,447 --> 00:10:40,987
+Burası 11.
+
+80
+00:10:40,987 --> 00:10:45,187
+Burası 8.
+
+81
+00:10:46,947 --> 00:10:49,187
+Bu yine bir heap tree oluşturur mu?
+
+82
+00:10:51,107 --> 00:10:53,487
+Hemen sormuş olayım. Sizden de kısaca bir cevap alayım.
+
+83
+00:10:55,427 --> 00:10:57,267
+Verdiğiniz kurallara göre oluşturur.
+
+84
+00:10:57,567 --> 00:11:16,307
+Evet, verdiğimiz kurallara göre oluşturur hakikaten bir sorun yok. Ama burada dikkat çekmek istediğimiz nokta şu, kendi içerisinde belirli bir sıraya sahip olmak zorunda değil düğümler. Yani 11.8'den önce geldiği zaman, aa bu sıralama bozuluyor diyeceğimiz herhangi bir takip etmemiz gereken kural yok.
+
+85
+00:11:16,307 --> 00:11:25,408
+önemli olan parentteki değerin aşağıdaki çocuk değerlerden ya büyük ya da küçük olması.
+
+86
+00:11:26,067 --> 00:11:32,947
+Eğer kök değeri büyükse ve maxi tree'den bahsediyorsak o zaman bütün alt ağaçlarda da aynı kural geçerli olmalı.
+
+87
+00:11:33,347 --> 00:11:45,108
+Mini tree'den bahsediyorsak o zaman kök değerinin en küçük olduğunu ve alt ağaçlarda da her zaman parent değerin çartlardan daha küçük olduğunu kabul edeceğiz anlamına geliyor.
+
+88
+00:11:45,107 --> 00:11:47,387
+Buraya kadar sorusu olan var mı?
+
+89
+00:11:49,167 --> 00:11:52,607
+Peki bu zor bir kural değil zaten.
+
+90
+00:11:54,447 --> 00:11:57,087
+Şimdi gelelim heapify işlemine.
+
+91
+00:11:57,187 --> 00:12:00,107
+Heapify işlemi ne anlama geliyor arkadaşlar?
+
+92
+00:12:00,267 --> 00:12:03,027
+Onu sorsam size heapify ile neyi kastediyoruz?
+
+93
+00:12:19,539 --> 00:12:20,679
+Evet, Oksay.
+
+94
+00:12:21,619 --> 00:12:31,159
+Az önceki verdiğiniz kurallara uydurmak. Yani en üstteki node göre minimum veya maksimum olacak şekilde sıralamayı sağlamak galiba. Ve sola dayalı hale getirmek.
+
+95
+00:12:32,019 --> 00:12:45,220
+Doğru. Aslında sola dayalı ilk etapta bu kurallara uygun bir şekilde ağacın bize verildiğini kabul ediyoruz. O yüzden Complete Binary Tree özelliğini taşıması gerekiyor.
+
+96
+00:12:45,220 --> 00:12:52,880
+Ancak belli işlemler sonunda bu ağacın yapısı daha önce gördüğünüz ağaçlardaki gibi bozulabilir.
+
+97
+00:12:52,880 --> 00:12:58,699
+Bu işlemler nedir? Bir tanesi insertion, bir tanesi de deletion.
+
+98
+00:12:59,300 --> 00:13:09,260
+Yani ağaca bir eleman eklediğinizde aslında ağacın yapısını bozma olasılığınız var elemanı nereye eklediğinize bağlı olarak.
+
+99
+00:13:09,259 --> 00:13:30,039
+Ağaçtan bir eleman sildiğinizde yine ağacın yapısını bozma ihtimaliniz olduğu için mutlaka bir heapify işleminden geçmek gerekiyor ki gerçekten ağaçta bir şeyler bozulduysa mutlaka o bozulan kısmı heapify yaparak düzeltmeye çalışalım.
+
+100
+00:13:30,039 --> 00:13:32,799
+Şimdi onun tanımını yazalım şuradan hemen.
+
+101
+00:13:32,800 --> 00:13:40,800
+E-Pify'ın farklı tanımları var. Bunlardan bir tanesi...
+
+102
+00:13:45,076 --> 00:14:10,115
+of creating a heap from an array. Yani bu şu demek. Sadece tek bir eleman eklendiğinde ya da silindiğinde değil, aynı zamanda bir diziden yeni bir heap tree oluşturmak istediğinizde buradaki heapify yaklaşımını kullanmanız gerekiyor.
+
+103
+00:14:10,115 --> 00:14:14,695
+Peki, insertion, evet bir ağaca ekleme yapıyoruz.
+
+104
+00:14:14,955 --> 00:14:18,096
+Deletion, ağaçtan bir eleman siliyoruz.
+
+105
+00:14:18,675 --> 00:14:21,515
+Bunların karmaşıklıklarıyla ilgili bir fikir yürütebilir misiniz?
+
+106
+00:14:29,683 --> 00:14:40,524
+ağaçtan bir eleman silme ve ağaca bir eleman ekleme işlemleri heap, data structure, heap tree kullanıldığında
+
+107
+00:14:42,644 --> 00:15:06,583
+Bakalım. Evet, [öğrenci] Logan demiş, [öğrenci] demiş. Doğru, Logan'den bahsediyoruz. Tabi burada bizim için, worst case için de bu karmaşıklık Logan. Ama bunun temel sebebi ağacın complete binary tree olmasından kaynaklanıyor.
+
+108
+00:15:06,583 --> 00:15:21,563
+Yani ağacın degenerated ya da pathological bir tree olma ihtimali bulunmadığı için, belirli bir denge söz konusu olduğu için işlemlerinizi log n karmaşıklığında worst case senaryoda da gerçekleştirebiliyorsunuz.
+
+109
+00:15:21,563 --> 00:15:25,903
+Peki getmax ve getmin için ne söylersiniz karmaşıklık açısından?
+
+110
+00:15:31,635 --> 00:15:54,915
+Evet, her ikisi için de O1 diyebiliriz. Ancak burada varsaymamız gereken bilgi şu. Eğer max heap tree'de çalışıyorsak, evet O1. Min heap tree'de çalışıyorsak, evet O1.
+
+111
+00:15:54,915 --> 00:15:58,815
+Ama biraz önceki örneğe geri dönecek olursak
+
+112
+00:15:58,815 --> 00:16:03,915
+Mesela max heap tree'de en küçük elemanı bulmak istiyorsunuz
+
+113
+00:16:04,435 --> 00:16:06,595
+O zaman
+
+114
+00:16:06,595 --> 00:16:09,835
+Şurada hemen şöyle yapalım
+
+115
+00:16:09,835 --> 00:16:13,775
+Şuraya sıfır
+
+116
+00:16:13,775 --> 00:16:15,335
+Şuraya üç diyelim
+
+117
+00:16:15,335 --> 00:16:19,496
+O zaman ne yaparsınız?
+
+118
+00:16:23,059 --> 00:16:29,959
+max heap tree'de en küçüğü bulmak istiyorsunuz ya da min heap tree'de en büyüğü bulmak istiyorsunuz.
+
+119
+00:16:39,635 --> 00:16:44,195
+Teknik olarak Max Heap Tree'de en küçük nerede olabilir?
+
+120
+00:16:50,259 --> 00:17:19,199
+Yapraklar da olabilir. Yaprakların nerede olduğunu biliyoruz. Son seviyede olduğunu biliyoruz. Aynı şey min heap tree'de de geçerli. O zaman ağacın geri kalan seviyelerini kontrol etmektense ağacın son seviyesinde en küçük ve en büyük değeri aramak işi çok daha kısaltacaktır.
+
+121
+00:17:19,199 --> 00:17:22,319
+Bu da dikkat edilmesi gereken noktalardan bir tanesi.
+
+122
+00:17:24,339 --> 00:17:42,259
+Peki o zaman demek ki biz genelde heap ağacı üzerinde temel olarak insertion, deletion, en yüksek değere sahip olan eleman ya da en küçük değere sahip olan elemanın peşinde oluyoruz.
+
+123
+00:17:42,259 --> 00:17:58,940
+Bu işleri yapıyoruz. Bunları yaptığımız zaman da özellikle ağacın yapısını bozduğumuzda mutlaka bir heap ifa işlerini yaparak ağacın yeniden heap özelliği sağlayacak haline ulaşmasını sağlıyoruz.
+
+124
+00:17:58,940 --> 00:18:14,319
+Buraya ekleyebileceğimiz ifadelerden bir tanesi de peak. Yine peakte de aslında kökteki elemanı alıyorsunuz ve ağaç max heap tree ise en büyük elemanı almış oluyorsunuz.
+
+125
+00:18:14,319 --> 00:18:21,120
+Min heap tree ise de en küçük elemanı ağaçtan değer olarak temin etmiş oluyorsunuz.
+
+126
+00:18:21,120 --> 00:18:30,579
+O zaman karşımıza iki tane ağaç türü çıkıyor demiştik. Bir tanesi max heap, diğeri de min heap.
+
+127
+00:18:34,355 --> 00:18:51,796
+Peki burada bir genelde yaptığımız bir işlemi buraya yazmadım. Teknik olarak bu işi yapabiliriz ama burada işlemler arasında görmüyoruz. Nedir o işlem? Bugüne kadar birçok veri yapısı üzerinde çalıştık, onlarda hep kullanıyorduk.
+
+128
+00:18:59,539 --> 00:19:01,539
+diziler üzerinde özellikle yapıyoruz.
+
+129
+00:19:02,139 --> 00:19:03,539
+linked list üzerinde yapıyoruz.
+
+130
+00:19:05,719 --> 00:19:07,679
+Temel bir dizi işlemidir.
+
+131
+00:19:11,859 --> 00:19:34,759
+Bakalım chatten bir cevap geldi. Evet, search. Search burada yok. Search'un olmama sebebi aslında heap tree search için uygun bir veri yapısı değil. Biraz önceki ağaçta gördüğünüz gibi burada sadece en üstte en büyük değerler ya da en küçük değerler olacak şekilde konumlanıyor.
+
+132
+00:19:34,759 --> 00:19:41,259
+Ama bir arama yapacağınız zaman binary search tree'deki belirli bir kural yok. O zaman tüm ağacı gezmeniz gerekiyor.
+
+133
+00:19:41,859 --> 00:19:44,979
+O yüzden heap tree'ler search işlemine çok da uygun değiller.
+
+134
+00:19:45,760 --> 00:19:51,179
+Search işlemi varsa heap tree kullanılması pek tercih edilmiyor.
+
+135
+00:19:51,659 --> 00:19:54,080
+Bunu da bir kenara nokta düşmekte fayda var.
+
+136
+00:19:55,080 --> 00:20:01,019
+Gelelim biz burada nasıl işler yapacağız?
+
+137
+00:20:01,139 --> 00:20:07,979
+Bu işleri yaparken de ne tür dikkat etmemiz gereken önemli noktalar var bunları konuşmaya.
+
+138
+00:20:07,979 --> 00:20:32,900
+Birincisi burada varsayarken bir dizimiz var diyelim. Bu dizimizde elemanlar bir numaralı gözden yerleşmeye başlamışlar. Yani 6 buraya yerleşmiş, 4 buraya yerleşmiş, burası 1, burası 2, burası 3 şeklinde devam ediyor.
+
+139
+00:20:32,900 --> 00:20:44,319
+Daha önce işte binary search tree'de sıfırdan başlatmıştık. Burada birden başlatıyoruz. Burada iki i ile ilerliyorsunuz. Yan tarafta da iki i artı bir ile ilerliyorsunuz.
+
+140
+00:20:44,319 --> 00:21:01,980
+Şimdi altı, dört, beş, üç, iki, sıfır, bir bir dizide verilmiş olsun. Bu şekilde verilen bir dizide yer alan elemanların heap, tree oluşturup oluşturmadığına baktığımızda
+
+141
+00:21:01,979 --> 00:21:06,239
+Complete bir binary tree ile karşı karşıyayız yapısal olarak.
+
+142
+00:21:07,119 --> 00:21:13,859
+Aynı zamanda parent'taki elemanlar child'taki elemanlardan hep daha büyük.
+
+143
+00:21:13,859 --> 00:21:21,379
+O zaman diyoruz ki bu bir heap tree özelliği taşıyan bir yapı.
+
+144
+00:21:21,819 --> 00:21:27,859
+Aynı zamanda max heap tree olduğunu da söylüyoruz.
+
+145
+00:21:27,859 --> 00:21:34,720
+tabi size bu verildiğinde yukarıdaki elemanların büyük mü küçük mü olduğunu bilemeyebilirsiniz.
+
+146
+00:21:35,499 --> 00:21:37,940
+Bu bir ağaç max heap tree özelliği de taşıyabilir.
+
+147
+00:21:38,539 --> 00:21:40,619
+Min heap tree özelliğini de taşıyabilir.
+
+148
+00:21:40,699 --> 00:21:42,279
+O yüzden ikisini de kontrol etmek gerekiyor.
+
+149
+00:21:42,279 --> 00:21:46,259
+Bir ağacın heap tree özelliği taşıyıp taşımadığını sorulduğunda.
+
+150
+00:21:46,819 --> 00:21:48,119
+Bu da önemli bir nokta diyelim.
+
+151
+00:21:48,119 --> 00:22:01,159
+Peki bu noktada yan taraftaki yapıya baktığımızda şöyle şurayı gösterelim.
+
+152
+00:22:06,195 --> 00:22:17,395
+bu noktada 4 yukarıda konumlandırılmış diyelim ya da şöyle yapalım hatta şurayı da silelim
+
+153
+00:22:39,731 --> 00:22:57,731
+size böyle bir yapı verildiğini varsayalım ve şunu biliyoruz ki burada 4'ün yerinde daha önce diyelim ki 9 vardı ve biz buradaki 9'u aldık.
+
+154
+00:22:57,731 --> 00:23:18,952
+yerine şöyle yapalım. 4 koyduk. 4 koyduğumuz anda köke bu ağacın yapısını değiştirdik. Yani oradaki değeri değiştirdiğimiz anda ağacın artık bir heap tree olma olmamı durumu mutlaka kontrol edilmesi gerekiyor.
+
+155
+00:23:18,952 --> 00:23:27,211
+Buraya 4 koymayıp 14 de koyamadık. Bu da mümkündü. Ama biz buraya herhangi bir değer koyduk.
+
+156
+00:23:27,211 --> 00:23:31,912
+Bu noktaya herhangi bir değer koyduğumuzda yapmamız gereken şey nedir?
+
+157
+00:23:33,511 --> 00:23:38,551
+Şimdi aslında burada max heapify fonksiyonunu görüyorsunuz.
+
+158
+00:23:38,731 --> 00:23:42,912
+Bu fonksiyon bize yapacağımız operasyonu tarifliyor.
+
+159
+00:23:43,231 --> 00:23:45,871
+Öncelikle left'e 2 ile gidiyoruz.
+
+160
+00:23:46,672 --> 00:23:48,952
+Right'e 2 artı 1 ile gidiyoruz.
+
+161
+00:23:48,952 --> 00:23:57,852
+Bu fonksiyonun bir recursive fonksiyon olduğunu şurada görmüş olduğunuz fonksiyon içerisinde kendi kendini çağırmasından anlayabiliyorsunuz.
+
+162
+00:23:58,592 --> 00:24:02,831
+Bir kere önemli noktalardan bir tanesi bu. Bu bir recursive fonksiyon.
+
+163
+00:24:02,831 --> 00:24:14,371
+Ve buraya ilk etapta bir dizi bilgisi gönderiliyor, bir başlangıç noktası gönderiliyor ve bu dizinin boyutu gönderiliyor.
+
+164
+00:24:14,371 --> 00:24:26,032
+Bu noktada biz öncelikle hangi noktada iş yapacaksak i'yi alıyoruz ve işte o değişikliği nerede yaptık?
+
+165
+00:24:26,111 --> 00:24:28,492
+Biz kökte yaptık, kökün de 1 olduğunu biliyoruz.
+
+166
+00:24:29,391 --> 00:24:37,931
+Artık elimizde i eşittir 1 var ve bu noktadan itibaren max heapify kodumuzun içerisinde heapify operation'ı gerçekleştireceğiz.
+
+167
+00:24:37,931 --> 00:24:39,931
+EP5 operation'ı ne yapacak?
+
+168
+00:24:40,451 --> 00:24:47,991
+Left küçük eşit n mi diye kontrol ediyor ve diyor dizi left, dizi i'den büyük mü diye bakıyor.
+
+169
+00:24:47,991 --> 00:25:00,651
+Yani dördün sol tarafta yer alan çocuğu, dört koyduğumuz düğüm yani birinci düğümün çocuğu kendi değerinden büyük mü diye kontrol ediyoruz.
+
+170
+00:25:00,651 --> 00:25:05,971
+Evet büyük. O zaman büyükse largest'ın yeni değeri
+
+171
+00:25:10,099 --> 00:25:11,099
+7 oluyor.
+
+172
+00:25:13,099 --> 00:25:23,099
+else call'ına gitmiyoruz çünkü zaten herhangi bir şekilde yani true call'ına girdim için buraya gitmeye gerek yok. Sonra bir kontrol daha yapıyoruz. Bu sefer diyoruz ki
+
+173
+00:25:24,499 --> 00:25:34,099
+right küçük eşit and mi? Dizi right büyük mü? Dizi large istanlıyoruz. Neden dizi iyi demedik?
+
+174
+00:25:43,412 --> 00:25:59,912
+Tekrar ediyorum. İlk kontrolde dizi left, dizi i'den büyük mü demiştik. İkinci kontrolümüzde sağ tarafta yer alan çocuk. Niye dizi i'den büyük mü diye kontrol etmiyoruz. Niye dizi largesttan büyük mü diye kontrol ediyoruz.
+
+175
+00:26:02,291 --> 00:26:03,432
+Evet [öğrenci].
+
+176
+00:26:04,771 --> 00:26:12,351
+Hocam az önce zaten largest'ı left'e atamıştık. Hani i'yi kontrol edersek onu kaçırmış olacağız. Ondan da büyük mü diye kontrol etmemiz lazım.
+
+177
+00:26:12,351 --> 00:26:23,851
+Evet bizim amacımız çocuklardan büyük olanı yukarı taşımak olduğumuz için şu anda elimizde en büyük hangisi var onu largest'a tutuyoruz ve biraz önce 7 daha büyüktü 4'ten.
+
+178
+00:26:24,371 --> 00:26:33,651
+Şimdi 8, 7'den büyük mü diye baktık. Evet 8, 7'den büyük olduğu için burada largest 8 değerini almış oldu.
+
+179
+00:26:33,651 --> 00:26:42,651
+8 değerini aldıktan sonra kontrolümüz şu oluyor largest i'den farklı mı diye kontrol ediyoruz.
+
+180
+00:26:42,651 --> 00:26:50,651
+Peki burada 4 olmasaydı biraz önce konuştuğumuz gibi 14 olsaydı pardon.
+
+181
+00:26:55,028 --> 00:27:11,507
+O zaman 7, 14'tan büyük mü diye sorduğumuzda büyük değil cevap gelecekti. 8, 14'tan büyük mü diye sorduğumuzda yine büyük değil cevap gelecekti. O zaman larges değişmemiş olacaktı.
+
+182
+00:27:11,507 --> 00:27:16,187
+Eğer largest değişmeseydi i ile aynı olacaktı.
+
+183
+00:27:16,187 --> 00:27:27,267
+O zaman artık alt düğümlerde herhangi bir değişikliğe ihtiyaç duymadığımız için burada fonksiyonu kendi kendini çağırmasını sonlandıracaktık.
+
+184
+00:27:27,627 --> 00:27:28,987
+Ve işimiz burada bitmiş olacaktı.
+
+185
+00:27:29,068 --> 00:27:41,267
+Yani 4 yerine 14 gelseydi bu ağaca o zaman heapify operation'ı daha ilk adımda kuralları bozmadığı için yeni gelen elema sonlanmış olacaktı.
+
+186
+00:27:41,507 --> 00:27:49,748
+O yüzden bizim durma koşullarımızdan bir tanesi alt elemanlardan biri yukarı taşınıyor mu ona bakıyoruz.
+
+187
+00:27:50,167 --> 00:27:51,048
+Bunu kontrol ediyoruz.
+
+188
+00:27:51,847 --> 00:28:04,127
+Tekrar 4'e dönecek olursak, elimizde 4 olduğunu varsayacak olursak dedik ki 8 en büyüğü sonra 8 ile 4'ün yerini değiştiriyoruz.
+
+189
+00:28:13,332 --> 00:28:22,991
+ve 4 buraya geldi. Bunu da sweb ismini yazmış olduğumuz işte ilgili fonksiyonla yapıyoruz. Yerlerini değiştirdik.
+
+190
+00:28:22,991 --> 00:28:35,031
+Şimdi kritik nokta nedir? Yani biz yerini oynattık artık. Yeni gelen elemanın yerini değiştirdik. Bundan sonra neyin peşinde olacağız?
+
+191
+00:28:35,031 --> 00:28:45,391
+bundan sonra aşağıya kadar eleman yer değiştirirse çocuklarından herhangi bir tanesiyle aşağıya kadar peşinden gitmemiz gerekiyor.
+
+192
+00:28:46,451 --> 00:28:47,411
+Bu da ne demek oluyor?
+
+193
+00:28:48,091 --> 00:28:49,591
+Fonksiyon kendi kendini çağırıyor.
+
+194
+00:28:49,711 --> 00:28:55,332
+Bu sefer alt fonksiyona largest değerini gönderiyoruz.
+
+195
+00:28:55,891 --> 00:28:57,031
+Largest değeri nedir?
+
+196
+00:28:57,551 --> 00:29:00,071
+Burası 1'di, burası 2'di, burası 3'tü.
+
+197
+00:29:00,071 --> 00:29:05,791
+alt fonksiyon çağrıldığında i değer olarak aşağıya 3 paslandı.
+
+198
+00:29:06,151 --> 00:29:11,411
+3 paslandığında left 6 oldu, right da 7 oldu.
+
+199
+00:29:12,231 --> 00:29:15,871
+Bu sefer 4'ü 6 ve 5 ile kontrol ediyoruz.
+
+200
+00:29:16,571 --> 00:29:18,931
+6 4'den büyük mü? Evet büyük.
+
+201
+00:29:18,931 --> 00:29:25,111
+O zaman diyoruz ki benim largest'ım artık 6.
+
+202
+00:29:25,871 --> 00:29:29,552
+Sonra 5 6'dan büyük mü diye kontrol ediyoruz.
+
+203
+00:29:29,552 --> 00:29:47,812
+Hayır değil. O zaman demek ki ben 4 ile 6'nın yerini değiştireceğim. Burada 4'ü alıyorum. Buraya koyuyorum. 6'yı da buraya koyuyorum. Sonra geldiğim nokta artık bu nokta oluyor. 6'dayım.
+
+204
+00:29:47,811 --> 00:29:55,531
+aşağıya max heapify'a tekrar kendisini çağırdığımda null değerine ulaştığım anda
+
+205
+00:29:55,531 --> 00:30:01,431
+alt elemanlarla ilgili artık herhangi bir yapacağım bir iş kalmadığı için
+
+206
+00:30:01,431 --> 00:30:05,451
+burada heapify operasyonumu tamamlamış oluyorum.
+
+207
+00:30:06,332 --> 00:30:11,231
+Demek ki heapify operasyonunda maksimum karmaşıklık ne olacak?
+
+208
+00:30:17,268 --> 00:30:28,268
+EP5 operasyonu yaparken bir karmaşıklık hesabı yapsaydım maksimum karmaşıklığım ne olması gerekirdi?
+
+209
+00:30:30,804 --> 00:30:33,304
+yukarıdan aşağı doğru iniyorum. Oradan düşünebilirsiniz.
+
+210
+00:30:40,500 --> 00:30:42,500
+kaç adımda? Yukarıdan aşağıya inabilirim.
+
+211
+00:30:44,500 --> 00:30:54,500
+Evet, teşekkürler [öğrenci]. Log n karmaşıklığında heapify operasyonumu sonuçlandırmış oluyorum. Burada gördüğünüz örnekte olduğu gibi.
+
+212
+00:30:54,500 --> 00:30:58,500
+Evet şimdi heapify operasyonuyla ilgili sorusu olan var mı?
+
+213
+00:31:06,163 --> 00:31:08,303
+Peki o zaman anlaşıldı diye tahmin ediyorum.
+
+214
+00:31:09,884 --> 00:31:15,464
+İlk başladığım noktada 4'ü kök noktasına yerleştirdim.
+
+215
+00:31:16,383 --> 00:31:19,743
+4 gelince otomatikman ağaçta bir değişiklik oldu.
+
+216
+00:31:20,363 --> 00:31:21,563
+Değerleri kontrol ettim.
+
+217
+00:31:22,383 --> 00:31:24,684
+Değerleri kontrol ettiğimde 8'i yukarı aldım.
+
+218
+00:31:25,723 --> 00:31:29,383
+İkinci aslında figürde bunu görüyorsunuz.
+
+219
+00:31:29,383 --> 00:31:32,643
+Şurada 8, 7, 4, 6, 5 oldu.
+
+220
+00:31:32,643 --> 00:31:38,663
+doğal olarak işin leaf node'lara ulaşmadığım için bitmedi.
+
+221
+00:31:39,743 --> 00:31:43,663
+4, 6, 5 arasında biraz önceki kontrolü yaptığımda 6 yukarı taşındı.
+
+222
+00:31:44,163 --> 00:31:54,503
+Leaf node'a ulaştığımda fonksiyon, recursive birbirini çağırma noktasından geriye dönerek işini bitirdi.
+
+223
+00:31:54,504 --> 00:32:07,064
+ve ağacı yeni gelen bir değer eklendikten sonra tekrar heap özelliğine kavuşturarak dört elemanında olması gereken konuma yerleştirmiş oldu.
+
+224
+00:32:11,955 --> 00:32:34,115
+Evet, şimdi tabii bu noktada bir diziden elemanları buraya doğru yerleştirme işi yapıyor olabilirdim. Ve bir ağacın keyip özelliği taşıyıp taşımadığı konusunda bir çalışma yürütüyor olabilirdim.
+
+225
+00:32:34,115 --> 00:32:51,515
+Buradaki ekrandaki ağaca baktığımda şu ağacın 8, 7, 6, 3, 2, 4, 5 ağacının aslında bir heap tree özelliği taşıyıp taşımadığını bakıp söyleyebiliyorum.
+
+226
+00:32:51,515 --> 00:33:02,055
+Biraz önceki ağaçta tek bir değer değiştirmiştim ve o tek değeri değiştirdikten sonra ağacımın heap tree özelliği taşıdığını bildiğim için
+
+227
+00:33:02,055 --> 00:33:10,735
+gerekli kontrolleri o tek elemanı yerleştikten sonra yaparak tekrar heap tree özelliğine ulaşmasını sağlamıştım.
+
+228
+00:33:10,795 --> 00:33:13,235
+Ama ya ağaç hakkında hiç bilgi sahibi değilse?
+
+229
+00:33:14,815 --> 00:33:15,615
+O zaman ne yapacağım?
+
+230
+00:33:18,015 --> 00:33:21,835
+Şuradaki kısma bir bakabilirsiniz.
+
+231
+00:33:22,636 --> 00:33:23,655
+Böyle bir ağacım var.
+
+232
+00:33:25,495 --> 00:33:27,115
+Burada yapmam gereken şey nedir?
+
+233
+00:33:27,115 --> 00:33:42,415
+Bir ağaç verilmiş size bunun heap tree'ye dönüştürülmesi isteniyor ve bu ağacın heap tree özelliğine sahip olup olmadığını tek tek bakmam lazım.
+
+234
+00:33:43,495 --> 00:33:44,355
+Neler yapmam lazım?
+
+235
+00:33:48,468 --> 00:33:53,607
+fikir yürütebilecek olan var mı? Aslında ekranda bununla ilgili hafif hafif ipuçları da var.
+
+236
+00:34:05,332 --> 00:34:10,451
+Tekrar ediyorum, problemimizi biraz önce tek bir eleman değiştirmiştik ve heapify yaptık.
+
+237
+00:34:11,051 --> 00:34:16,491
+Heapify ile ağacın yeniden heap tree özelliğine kavuşmasını sağladık.
+
+238
+00:34:17,212 --> 00:34:19,271
+Burada bir ağaç var elimde.
+
+239
+00:34:20,231 --> 00:34:24,611
+Bu ağacın heap tree özelliğine sahip olup olmaları bilmiyorum.
+
+240
+00:34:24,611 --> 00:34:31,211
+Ama istediğim şey bu ağacı max heap tree özelliğine sahip olacak şekilde dönüştürmek.
+
+241
+00:34:31,211 --> 00:34:37,692
+Bunun için de biraz önceki yaptığım işi farklı bir şekilde yapmam gerekiyor. Evet [öğrenci].
+
+242
+00:34:40,192 --> 00:34:56,671
+İlk önce sol ve sağ alt ağaçları heapify yaparız. Ondan sonra root'u heapify yaparız. Bir de eğer değişiklik olursa değişiklik yaptığımız şeyi tekrar sol veya sağ tekrar heapify yaparız.
+
+243
+00:34:56,672 --> 00:35:01,771
+Doğru. Peki hangi düğümden başlamalıyım heapify yapmaya?
+
+244
+00:35:03,872 --> 00:35:07,232
+Sol yani şeyinci düğüm.
+
+245
+00:35:07,232 --> 00:35:07,651
+Şu ağaçta?
+
+246
+00:35:07,712 --> 00:35:07,891
+İki.
+
+247
+00:35:08,891 --> 00:35:09,651
+İkiden.
+
+248
+00:35:09,971 --> 00:35:10,692
+İkiden mi?
+
+249
+00:35:11,071 --> 00:35:11,412
+Evet.
+
+250
+00:35:12,391 --> 00:35:13,111
+Yani yediden?
+
+251
+00:35:13,632 --> 00:35:14,431
+Evet yediden.
+
+252
+00:35:15,352 --> 00:35:17,291
+Peki başka fikir olan var mı?
+
+253
+00:35:26,804 --> 00:35:38,163
+Şimdi o zaman şöyle söyleyelim. Bir kere şurada bir eleman sildiğimde, şu bir elemanını sildiğimde bu gene bir heap tree özelliği, complete binary tree olmasından dolayı taşıyor.
+
+254
+00:35:39,163 --> 00:35:48,383
+Aslında bizim için buradaki kritik nokta şu. Benim leaf node olmayan ilk internal node'um hangisi?
+
+255
+00:35:49,383 --> 00:35:55,663
+Leaf node olmayan ilk internal node'um hangisi? Ben aslında işe oradan başlıyorum.
+
+256
+00:35:56,804 --> 00:36:15,743
+O da nedir? 3 numaralı düğümdür. Şurada görmüş olduğunuz düğümdür. Tekrar biraz önceki elemanı yerine yerleştirecek olursak, burada bir vardı, o da böyle olsun hatta şöyle yapalım, kırmızı ile yazalım.
+
+257
+00:36:21,204 --> 00:36:35,044
+Yapmam gereken şey, yan tarafta da gösterildiği gibi, altıyı önce heapify işlemini sokmak. Altıyı heapify işlemini soktuğunda, altı dokuzla yer değiştirdi.
+
+258
+00:36:35,624 --> 00:36:45,163
+Şurada görmüş olduğunuz gibi, dokuzla altının yeri değişti. Çünkü dokuz birden daha büyüktü. Altıdan da büyük olduğu için yukarı geldi.
+
+259
+00:36:45,163 --> 00:36:52,003
+ve burada işim henüz bitmedi bu heapify turunda.
+
+260
+00:36:52,003 --> 00:36:57,723
+Çünkü biliyorum ki 9, 7, 5 ağacında 9 daha büyük.
+
+261
+00:36:58,403 --> 00:37:00,123
+O zaman ne yapmam gerekiyor?
+
+262
+00:37:00,583 --> 00:37:03,863
+Benim bu noktada bunu yukarı taşımam gerekiyor.
+
+263
+00:37:04,763 --> 00:37:09,623
+Bunu yukarı taşıyabilmem için de bir kontrol daha yapmam gerekiyor.
+
+264
+00:37:09,623 --> 00:37:18,543
+Bu noktada bu kontrolü yaptığım zaman yukarı ağacın tepesine doğru dokuzunda hareket etmesi gerekiyor.
+
+265
+00:37:18,543 --> 00:37:31,243
+Peki bu noktada benim tek tek elemanları yukarı taşıdığım senaryoda hangi sıra ile hareket etmem uygun olacaktır?
+
+266
+00:37:31,763 --> 00:37:37,323
+Yukarıdan aşağıya mı heap ifa yapacağım yoksa aşağıdan yukarı doğru mu heap ifa yapacağım?
+
+267
+00:37:37,843 --> 00:37:38,963
+Bu konuda ne söylersiniz?
+
+268
+00:37:44,659 --> 00:37:47,659
+bu kuzun yerini değiştirdim.
+
+269
+00:37:58,452 --> 00:38:00,452
+Burada işim bitti mi?
+
+270
+00:38:05,492 --> 00:38:10,631
+yorum yapmak isteyen hiçbir arkadaşım yok mu? [öğrenci]?
+
+271
+00:38:12,131 --> 00:38:22,051
+9'u burada yaşayacak şekilde bir üst nokta değiştirmek gerekiyor ama ben heapify'da recursive çağırıyoruz diye hatırlıyordum.
+
+272
+00:38:22,051 --> 00:38:28,912
+En tepeden başladığımızda normalde aşağı 9'a kadar yine kontrol edip onu yukarı alması gerekmiyor muydu?
+
+273
+00:38:29,611 --> 00:38:33,151
+Yok, önemli bir nokta. Burada kritik nokta şu.
+
+274
+00:38:33,151 --> 00:38:38,131
+6-9-1 ağacın ilk halini görüyorsunuz şurada.
+
+275
+00:38:39,151 --> 00:38:49,971
+Biz heapify'a başladığımız zaman heapify işlemini aşağı yönlü olarak gerçekleştiriyoruz ve 6 ile 9'un yerini değiştirdiğimiz zaman
+
+276
+00:38:49,971 --> 00:38:59,191
+6 aşağıya indiğinde artık altında herhangi bir leaf node olmadığı için ilk tur tamamlanmış oluyor.
+
+277
+00:38:59,191 --> 00:39:05,571
+ve ilk turun sonunda elimizde stack 1'in sonunda ağacın bu hali yer alıyor.
+
+278
+00:39:06,471 --> 00:39:10,551
+İkinci turda elimize 7'yi alıyoruz.
+
+279
+00:39:11,271 --> 00:39:12,651
+Yani şuradakini gösterelim.
+
+280
+00:39:13,431 --> 00:39:14,271
+Bu 7'yi alıyoruz.
+
+281
+00:39:15,071 --> 00:39:18,731
+7'yi aldıktan sonra bir heapify işlemi uyguluyoruz bu yönde.
+
+282
+00:39:19,611 --> 00:39:22,691
+Ve ikinci turda doğal olarak 8 yukarı çıkıyor.
+
+283
+00:39:27,507 --> 00:39:32,067
+Bu noktada, stack de yukarı taşımış oluyoruz.
+
+284
+00:39:34,968 --> 00:39:36,367
+Buraya kadar sorusu olan var mı?
+
+285
+00:39:43,476 --> 00:39:51,476
+Şimdi ikinci internal node'u da heapify işlemiyle olması gereken yerine konumlandırdık.
+
+286
+00:39:51,476 --> 00:39:55,976
+Üçüncü turda artık elimizde ne olacak?
+
+287
+00:39:57,476 --> 00:39:59,476
+Buldaki 9 olacak.
+
+288
+00:39:59,476 --> 00:40:06,476
+Ve bu 9'un heapify işlemini, pardon özür diliyorum, şunu yanlış yaptım geri alayım.
+
+289
+00:40:07,476 --> 00:40:09,476
+Şöyle gösterelim.
+
+290
+00:40:09,476 --> 00:40:12,476
+Üçüncü turda elimizde 5 olacak.
+
+291
+00:40:13,476 --> 00:40:18,376
+5 olduğunda elimizde 8 ve 9 var.
+
+292
+00:40:19,516 --> 00:40:22,336
+Buna göre heapify yaptığımızda 9 yukarı taşınacak.
+
+293
+00:40:23,955 --> 00:40:25,156
+5 aşağı inecek.
+
+294
+00:40:26,996 --> 00:40:29,675
+9 yukarı taşındı, 5 aşağı indi.
+
+295
+00:40:30,175 --> 00:40:35,935
+Ama bu türdeki heapify hala leaf node'lara gelmediğimiz için bitmedi.
+
+296
+00:40:35,935 --> 00:40:43,496
+5 aşağı indiğinde henüz leaf nodlara ulaşmadığımız için altındaki elemanlarla kontrole girdi.
+
+297
+00:40:44,196 --> 00:40:50,376
+Doğal olarak 6 5'ten büyük olduğu için 6 yukarı taşındı. 5 ise artık leaf nod'a indi.
+
+298
+00:40:50,376 --> 00:41:03,115
+leave node'a indiği anda 5 heapify işlemini tamamladı ve bütün internal node'ların heapify işlemini tamamlandığı için
+
+299
+00:41:03,115 --> 00:41:14,836
+ağaç 9, 8, 6, 4, 7, 5, 1 halini son olarak almış oldu ve biz bize verilen bir tree'yi
+
+300
+00:41:14,836 --> 00:41:19,435
+heap tree, max heap tree özelliği taşıyacak hale getirmiş olduk.
+
+301
+00:41:20,376 --> 00:41:27,075
+O yüzden de şurada görmüş olduğunuz kod parçası bütün bu işleri yapıyor.
+
+302
+00:41:27,876 --> 00:41:28,795
+Nedir bu?
+
+303
+00:41:30,115 --> 00:41:36,556
+n bölü 2'den yani internal node'ların sonuncusundan başlıyoruz.
+
+304
+00:41:38,456 --> 00:41:46,556
+Hepsi için birinci düğüme kadar olan tüm düğümler için max heapify işlemini gerçekleştiriyoruz.
+
+305
+00:41:46,555 --> 00:42:09,355
+gerçekleştiriyoruz. Önce 6 ile başladık, 6 aşağı indi, leaf nodlara ulaştık, tamamladık. Sonra 7'ye geçtik. 7 aşağıda bir kademe olduğu için sadece daha fazla olsa da aşağıya kadar inecektik. 7, 8 de yer değiştirdi ve leaf nodlara ulaştığı için 7, onun da işi bitti. Yukarı 8 ve 9 çıkmış oldu.
+
+306
+00:42:09,355 --> 00:42:18,595
+8 ve 9 yukarı çıktıktan sonra onlar için zaten heapify tamamlandı ama 5 için heapify yapmamıştık.
+
+307
+00:42:18,595 --> 00:42:23,955
+5 için heapify yapmaya başlayınca önce 9 ile yer değiştirdik.
+
+308
+00:42:24,675 --> 00:42:27,195
+9 ile yer değiştirdiğimizde 5 aşağıya geldi.
+
+309
+00:42:27,855 --> 00:42:33,295
+Ama o tur bitmedi çünkü 5'in altında hala düğünler var.
+
+310
+00:42:33,835 --> 00:42:37,675
+Bu sefer 5, 6 ve 1 ile kendini kıyasladı.
+
+311
+00:42:37,675 --> 00:42:40,375
+6 daha büyük olduğu için 6 ile yer değiştirdi.
+
+312
+00:42:40,895 --> 00:42:42,735
+5 leaf node'a ulaştı.
+
+313
+00:42:43,515 --> 00:42:51,935
+5 leaf node'a ulaştığında artık bu turdaki heapify, max heapify çağrılma işi bitti.
+
+314
+00:42:52,755 --> 00:42:58,495
+Geriye de başka bir düğüm kalmadığı için internal node olarak en tepedekinin çünkü heapify'ını yaptık.
+
+315
+00:42:58,495 --> 00:43:02,575
+Bu ağaç artık max heap tree özelliği taşıyor.
+
+316
+00:43:03,515 --> 00:43:05,815
+Gönül rahatlığıyla diyebilecek noktaya gelmiş olduk.
+
+317
+00:43:07,675 --> 00:43:09,336
+sorusu olan vardır.
+
+318
+00:43:14,228 --> 00:43:21,007
+Peki. O zaman bir ara veriyoruz. 13.43, 13.55'de kaldığımız yerine devam ediyoruz.
+
+319
+00:55:12,403 --> 00:55:14,743
+Evet arkadaşlar, kaldığımız yerden devam edelim.
+
+320
+00:55:17,344 --> 00:55:19,864
+Şimdi ben sizlerle ekranımı paylaşayım.
+
+321
+00:55:28,788 --> 00:55:55,687
+sanırım görebiliyorsunuz. Biz az önceki derste heap tree ile ilgili temel giriş adımlarını yaptık. Dedik ki max heap tree var, min heap tree var. Kuralları şunlardır. Ve heap tree üzerinde değişiklik yapıldığında o ağacın özelliğini kaybetmemesi için bir heapify adımı uygulanır.
+
+322
+00:55:55,687 --> 00:56:16,508
+Ancak bize verilen bir ağaç heap özelliğine sahip olup olmadığını bilmediğimiz için tüm ağacın heap özelliğine kavuşturulabilmesi için ağacın en son görülen internal nodundan itibaren geriye doğru tüm düğümleri için heapify adımları uygulanır dedik.
+
+323
+00:56:16,507 --> 00:56:22,627
+Burada 5, 7, 6, 4, 8, 9, 1 ağacı görüyorsunuz.
+
+324
+00:56:22,627 --> 00:56:39,087
+Bu ağacın max heap tree'ye dönüştürülebilmesi için kendisinin en son internal nodu olan, çünkü leaf nodlar 4, 8, 9, 1, 6 değerine sahip düğümle başlıyoruz.
+
+325
+00:56:40,047 --> 00:56:45,427
+6 değerine sahip düğümü öncelikle bir heapify işlemine sokuyoruz.
+
+326
+00:56:45,427 --> 00:57:05,288
+9 yukarı taşınıyor ve 6'nın heapify işlemi burada bitiyor. Sonra 7'ye geçiyoruz. 8 yukarı taşınıyor. 7'nin heapify işlemi burada leaf node'a geldiği için bitiyor. Son düğüm olan 5 heapify işlemine sokuluyor. 9 yukarı taşınıyor, 5 aşağı geliyor.
+
+327
+00:57:05,288 --> 00:57:15,008
+5 henüz leaf node'a ulaşmadığı için alttaki düğümlerle 6 ve 1 ile 1 heapify işlemine daha giriyor.
+
+328
+00:57:15,648 --> 00:57:24,008
+Bu sefer 6 yukarı çıkıyor 5 aşağı geliyor ve 5 leaf node'a ulaştığı zaman ve tüm düğümleri de heapify işlemine soktuğumuz için
+
+329
+00:57:24,008 --> 00:57:30,127
+9, 8, 6, 4, 7, 5, 1 ağacını elde etmiş oluyoruz.
+
+330
+00:57:30,527 --> 00:57:32,487
+İsterseniz bir örnek daha yapalım.
+
+331
+00:57:32,487 --> 00:57:37,088
+Burada da diyelim ki
+
+332
+00:57:40,659 --> 00:57:45,379
+14, 7, 12.
+
+333
+00:57:50,164 --> 00:58:08,164
+13, 17, 6, 4, 9, 15, düğümlere olsun.
+
+334
+00:58:23,827 --> 00:58:44,107
+Bu noktada böyle bir ağacım var. Hatta numaralandıralım. 1, 2, 3, 4, 5, 6, 7, 8, 9. Bu ağacımın bir heap tree ağacı olmadığını görebiliyorum.
+
+335
+00:58:44,107 --> 00:58:54,487
+tabi ben buna gözle bakıp karar veriyorum ama burada bir analitik çözüm üreterek algoritmanızın da o ağacın heap tree özelliği taşımadığını bulabilmesi lazım.
+
+336
+00:58:54,627 --> 00:58:58,447
+Bu da aslında üzerinde çalışılabilecek örnek algoritmalardan bir tanesi.
+
+337
+00:58:59,367 --> 00:59:03,627
+Ben burada bu ağacı Max Heap Tree'ye convert etmek istiyorum.
+
+338
+00:59:04,667 --> 00:59:09,227
+Yani Max Heap Tree özelliği taşıyan bir ağaç elde etmek istiyorum.
+
+339
+00:59:09,227 --> 00:59:24,207
+Adım adım bu ağacın üzerinde ilerliyor olsaydım ve biraz önce görmüş olduğunuz şu yuvarlak içerisine alınmış kod parçasına baktığınızda başlangıç noktası burada yer alıyor.
+
+340
+00:59:26,047 --> 00:59:34,787
+Bu ağaçta internal node olarak hangi noktadan başlayabilirim ya da ne söylersiniz bu noktada?
+
+341
+00:59:42,771 --> 00:59:45,492
+Evet, bakalım, çaydan bir cevap geldi.
+
+342
+00:59:46,891 --> 00:59:54,771
+Dördüncü node 13. Burada 15'in leaf node olduğunu biliyoruz. 9'un leaf node olduğunu biliyoruz.
+
+343
+00:59:56,051 --> 01:00:06,051
+7'nin leaf node olduğunu biliyoruz. 6'nın leaf node olduğunu biliyoruz. Ve 5'in leaf node olduğunu biliyoruz.
+
+344
+01:00:06,051 --> 01:00:11,491
+Arkadaşınızın da söylediği gibi burada işleme 13'ten başlıyorum.
+
+345
+01:00:12,771 --> 01:00:36,091
+Şimdi şöyle yapalım. 13'den başladığımda baktığımda 13, 9, 15'ten yukarı max heat tree olduğu için 15'i taşıyorum. Şöyle hızlıca yapmak adına hatta şöyle yapalım. Şöyle silelim.
+
+346
+01:00:36,091 --> 01:00:40,312
+Buraya 15 geldi, buraya 13 geldi
+
+347
+01:00:40,312 --> 01:00:45,591
+13 aşağı geldiği için buradaki heapify işlemin bitti
+
+348
+01:00:45,591 --> 01:00:49,471
+Ama sadece bu düğüm için heapify işlemini tamamladım
+
+349
+01:00:49,471 --> 01:00:55,791
+Sırada 13'den sonra geriye doğru birinci düğüme doğru ilerlediğim için 12 var
+
+350
+01:00:55,791 --> 01:01:02,151
+12, 6 ve 4 ile baktığımda herhangi bir şekilde yer değiştirmesini gerektirecek bir durum yok
+
+351
+01:01:02,151 --> 01:01:10,211
+O yüzden burada ilk kontrolüm sonunda yer değiştirmediği için işlem tamamlanmış oluyor ve bir sonraki düğüme geçiyorum.
+
+352
+01:01:10,211 --> 01:01:23,831
+O da 7 değerindeki düğümü aldığımda aşağıdaki düğümlerle kıyasladığımda 17 daha büyük olduğu için
+
+353
+01:01:30,387 --> 01:01:33,147
+17 yukarı geldi, 7 aşağı geldi.
+
+354
+01:01:36,532 --> 01:01:45,971
+tabi 7 aşağıya geldiği zaman 7 leaf node ulaştığı için herhangi bir şekilde artık aşağıya ilerlemeyeceği için burada da heap, heap işlemini tamamlamış oldum.
+
+355
+01:01:46,412 --> 01:01:51,931
+Sol tarafta da 15, 9, 13 üçgende de bir değişiklik olmadığı için o tarafta zaten bir şeye bakmama gerek kalmadı.
+
+356
+01:01:53,032 --> 01:01:54,571
+Şimdi son olarak 14'e geldim.
+
+357
+01:01:56,351 --> 01:01:58,651
+Çünkü biraz önce 7 ile iş yapmıştım.
+
+358
+01:01:58,651 --> 01:02:00,872
+17 yukarı çıkmıştı. 14 var elimde.
+
+359
+01:02:00,872 --> 01:02:14,892
+doğal olarak 14'dan daha büyük olan 17 yukarı geldi. 14 aşağı indi. 14 aşağı indiğinde bu turdaki YP5 işim henüz Leaf node ulaşmadığım için bitmedi.
+
+360
+01:02:15,552 --> 01:02:20,951
+14, 15 ve 7 ile kıyaslandığında 15 daha büyük olduğu için
+
+361
+01:02:24,724 --> 01:02:27,923
+15 yukarı çıktı, 14 aşağı indi.
+
+362
+01:02:29,023 --> 01:02:33,263
+14 hala bir leaf node olmadığı için aşağıdakilerle kıyasladık.
+
+363
+01:02:33,743 --> 01:02:41,404
+9 ve 13 ile daha büyük bir değer olmadığı için 14'ü aşağıya doğru götürmem için bir sebep kalmadı.
+
+364
+01:02:41,883 --> 01:02:44,644
+Ve burada heap ifa işlemini sonlandırmış oldum.
+
+365
+01:02:45,163 --> 01:02:48,503
+Elimdeki ağaca baktığımda max heap tree özelliği taşıyor mu?
+
+366
+01:02:48,503 --> 01:02:50,644
+17, 15, 12 evet.
+
+367
+01:02:51,003 --> 01:02:52,904
+15, 14, 7 evet.
+
+368
+01:02:53,323 --> 01:02:54,583
+12, 6, 4 evet.
+
+369
+01:02:54,724 --> 01:03:11,944
+Evet, 14, 9, 13. Evet, o zaman demek ki benim max heap conversion'ım burada tamamlanmış olduğu kod ne çalıştı? Biraz önce gördüğünüz build max heap kodunu çalıştırdım.
+
+370
+01:03:11,943 --> 01:03:17,483
+arkasından da max heapify'ı çağırıyorum her adımda.
+
+371
+01:03:17,983 --> 01:03:25,963
+Max heapify'da burada görmüş olduğunuz kod parçası her bir internal node için çalışıyor
+
+372
+01:03:25,963 --> 01:03:31,023
+ve leave node'a ulaşana kadar ya da eleman değişmeyene kadar devam ediyor.
+
+373
+01:03:33,623 --> 01:03:37,584
+Başka bir örnek yapmamı isteyen ya da anlamamış olan var mı?
+
+374
+01:03:37,683 --> 01:03:39,203
+Soru sormak isteyen var mı?
+
+375
+01:03:46,996 --> 01:03:50,476
+Peki, o zaman yolumuza devam edelim.
+
+376
+01:03:53,135 --> 01:03:56,496
+Heap'in tabii bize kazandırdığı belirli avantajlar var.
+
+377
+01:03:57,496 --> 01:03:58,815
+Dezavantajlarıyla birlikte.
+
+378
+01:03:59,575 --> 01:04:05,935
+Bir kere maksimum ve minimum elemanlara ulaşmayı kolaylaştırıyor.
+
+379
+01:04:05,935 --> 01:04:15,355
+Ve maks heap'te O1 karmaşıklıkta kıta, min heap'te de minimum elemana O1 karmaşıklıkta erişebiliyorsunuz.
+
+380
+01:04:15,355 --> 01:04:22,755
+insertion ve deletion operasyonları verimli bir şekilde gerçekleşebiliyor.
+
+381
+01:04:22,755 --> 01:04:31,795
+Biraz önce de gördüğünüz gibi insertion ve deletion da aslında biraz sonra daha detaylı bir şekilde konuşuyor olacağız ama
+
+382
+01:04:31,795 --> 01:04:35,435
+log n karmaşıklığında operasyonu tamamlıyor olacaksınız.
+
+383
+01:04:37,235 --> 01:04:41,475
+Dizi kullanılarak çok basit bir şekilde implemente edilebiliyor.
+
+384
+01:04:41,875 --> 01:04:42,835
+Herhangi bir sorun yok.
+
+385
+01:04:42,836 --> 01:04:47,036
+ve gerçek hayat uygulamaları için de uygun bir yapı sunuyor.
+
+386
+01:04:47,036 --> 01:04:54,275
+Bu anlamda da heap'i bir sonraki slide'da göreceksiniz birçok uygulamada kullanıyor olacağız.
+
+387
+01:04:55,436 --> 01:04:57,835
+Tabi search için uygun olmadığını söyledik.
+
+388
+01:04:59,576 --> 01:05:06,835
+Özellikle max ve min değerlerinin peşinde değilseniz, ara değerler peşindeyseniz heap'ten faydalanmak akıllıca değil.
+
+389
+01:05:07,055 --> 01:05:10,356
+Ekstra bir overhead'i var heap structure'ın.
+
+390
+01:05:10,896 --> 01:05:12,275
+Bu bir maliyet getiriyor.
+
+391
+01:05:12,835 --> 01:05:28,496
+ve aynı zamanda görece baktığınızda array linkli liste yapılarının priority olmayan buyruklar için daha yavaş heap structure'ının çalıştığını söylememiz doğru olacaktır.
+
+392
+01:05:28,555 --> 01:05:35,255
+Bu nedenle eğer priority queue'yu kullanmıyorsanız heap structure yapısından faydalanmak da çok akıllıca değil.
+
+393
+01:05:35,255 --> 01:05:40,695
+Normal bir linkli liste ya da array kullanmak çok daha mantıklı hale geliyor.
+
+394
+01:05:40,695 --> 01:05:45,095
+nerelerde karşımıza çıkıyor heap data structure'ları?
+
+395
+01:05:45,755 --> 01:05:55,755
+Önümüzdeki hafta göreceğiniz öncelikli kuyruklar, priority queue'larda karşımıza çıkıyor ve birçok varyasyonu priority queue'la alakalı gerçek hayattaki.
+
+396
+01:05:56,335 --> 01:05:58,195
+Heap sort'u göreceğiz bugün.
+
+397
+01:05:59,455 --> 01:06:09,955
+Heap sort, nlogan karmaşıklığında gerçekleşen bir sort ve işte merge sort ve quicksort'un teknik olarak rakibi
+
+398
+01:06:09,955 --> 01:06:13,715
+ama çeşitli handikaplarından dolayı çok sık tercih edilmiyor.
+
+399
+01:06:13,715 --> 01:06:25,135
+Graf algoritmalarında karşınıza çıkacak en kısa ol problem Dijkstra, işte prim algoritması minimum yayılımlı ağaçlar için minimum spending tree algoritmalarından bir tanesi.
+
+400
+01:06:25,955 --> 01:06:35,315
+A yıldız arama algoritması yine heap veri yapısının kullanıldığı algoritmalardan bir tanesi.
+
+401
+01:06:35,315 --> 01:06:43,735
+sıkıştırmada özellikle dosya sıkıştırmada Hufman encoding yaparken karşımıza çıkıyor.
+
+402
+01:06:44,615 --> 01:06:46,955
+Burada bir heap veri yapısı kullanıyoruz.
+
+403
+01:06:47,175 --> 01:06:54,015
+Dinamik programlamada keza aynı şekilde bazı problemlerin çözümünde heap veri yapısını kullanıyoruz.
+
+404
+01:06:54,015 --> 01:07:00,115
+Medical application'lar dediğimiz zaman yine öncelikli queue'ları atıfta bulunarak verilen örnekler var.
+
+405
+01:07:00,115 --> 01:07:19,695
+bir hastanın durumunun kritikliğine bağlı olarak daha önce tedavi almasını sağlayan sistemler kurulduğunda yine öncelikle hizmet alacak hastaların en yukarıda konumlanması sağlanıyor.
+
+406
+01:07:19,695 --> 01:07:30,875
+Load balancing dediğiniz zaman yük dengeleme sunucular tarafında yapılırken bazen yükü yüksek sunuculara en düşük.
+
+407
+01:07:31,248 --> 01:08:00,347
+yükteki işi teslim edip yük dengesini bozmamak adına minimum, daha doğrusu min heap tree'lerden faydalanıyor. Yine finansal alanda da heap veri yapısının kullanıldığı birçok örnek var. Bunların temelinde priority queue yatıyor ama özellikle minimum ve maksimum değerlere erişim söz konusu olduğunda
+
+408
+01:08:00,347 --> 01:08:06,748
+özellikle heap data structure'ını çok yoğun kullandığımızı söylemek doğru olacaktır.
+
+409
+01:08:07,607 --> 01:08:13,567
+Gelelim biraz önce konuştuğumuz insertion ve deletion operasyonlarına.
+
+410
+01:08:14,727 --> 01:08:19,167
+Heap tree'de operasyonlar ağırlıklı olarak bunların ikisi üzerinden yönetiliyor.
+
+411
+01:08:19,167 --> 01:08:23,007
+Bir de işte peak olarak da adlandırıldık.
+
+412
+01:08:23,007 --> 01:08:34,727
+kök elemanını değerini okumak ya da işte getmax ya da getminin en büyük değeri, en küçük değeri alma şeklinde düşünebilirsiniz.
+
+413
+01:08:34,727 --> 01:08:37,847
+Şimdi şöyle ikiye ayıracak olursak ekranı.
+
+414
+01:08:43,828 --> 01:09:11,927
+sağ tarafta insert operasyonuyla başlıyoruz ve diyoruz ki 968257 isimli bir ağacımız var. Buraya onu eklemek istiyoruz. Ne yapıyoruz onu eklemek istediğimizde? Aslında delete'te de göreceksiniz ağacımızın complete binary tree özelliğini barındırdığını düşünerek hareket ettiğimizde
+
+415
+01:09:11,927 --> 01:09:19,747
+yeni gelen elemanı ağacın en son gözünden sonraki boş ilk alana yerleştiriyoruz.
+
+416
+01:09:19,747 --> 01:09:27,447
+Bu ağacın en son elemanı 7. 10 geldi. 10'u 7'den sonraki göze koyduk.
+
+417
+01:09:27,607 --> 01:09:35,267
+Mesela 10'dan sonra 11 gelseydi de işte 10'dan sonra 20 gelseydi de 10'dan sonraki ilk göze koyacaktık.
+
+418
+01:09:35,267 --> 01:09:49,527
+Şimdi onu koyduk en sona ama doğal olarak en sona koyduğumuz için burada bir heap tree özelliği yeni eleman eklendiği için hemen sağlam boğulmasına düşük.
+
+419
+01:09:49,527 --> 01:09:54,908
+O yüzden onu koyduğumuz yerden itibaren daha önce down heap yapıyorduk.
+
+420
+01:09:54,987 --> 01:09:57,067
+Şimdi up heap yaparak ilerleyeceğiz.
+
+421
+01:09:58,527 --> 01:09:59,647
+Bu up heap nedir?
+
+422
+01:10:00,467 --> 01:10:04,087
+Heapify operasyonunun yukarı yönlü yürütülüğü haldir.
+
+423
+01:10:04,087 --> 01:10:07,967
+10'u koydunuz, 10, 7 ve 8 var elinizde.
+
+424
+01:10:08,707 --> 01:10:15,627
+Bir sonraki adımda 10, burada gördüğünüz gibi 8'i de yerleştiriyor.
+
+425
+01:10:16,907 --> 01:10:19,907
+8 aşağı geldi, 10 yukarı çıktı.
+
+426
+01:10:21,127 --> 01:10:26,167
+Bir sonraki adımda 10, 6, 9 üçgenindeyiz.
+
+427
+01:10:26,767 --> 01:10:30,627
+Diyoruz ki 10, 9'dan daha büyük olduğu için en tepeye çıktı.
+
+428
+01:10:30,627 --> 01:10:32,687
+9 buraya konumlandı.
+
+429
+01:10:34,087 --> 01:10:51,387
+Peki bu noktada 10 elemanını yerleştirmiş olduk yerine ve diğerlerinin de yerleri başka noktalara kaymış oldu ve bu şekilde bu problemi çözdük.
+
+430
+01:10:51,447 --> 01:10:52,768
+Birinci örneğimiz buydu.
+
+431
+01:10:53,548 --> 01:10:54,307
+İkinci örneğe bakalım.
+
+432
+01:10:55,367 --> 01:10:57,607
+İkinci örnekte bu sefer 7 geliyor.
+
+433
+01:11:00,607 --> 01:11:03,167
+9, 8, 6, 1, 2, 5, 7 geldi.
+
+434
+01:11:04,087 --> 01:11:08,167
+7 geldiği noktada 7'yi yine upheap ile yukarı taşıyacağız.
+
+435
+01:11:08,727 --> 01:11:11,667
+6'dan büyük olduğu 5'den büyük olduğu için 7 yukarı çıktı.
+
+436
+01:11:12,667 --> 01:11:15,987
+6, 5 bu şekilde konumlandırlar.
+
+437
+01:11:17,347 --> 01:11:22,507
+Upheap yapacağız ama elimizdeki 7 ve 8 değerlerine baktığımızda
+
+438
+01:11:22,507 --> 01:11:27,587
+ki zaten yeni gelen elemanın yukarıdaki elemandan büyük olma ihtimali var.
+
+439
+01:11:27,587 --> 01:11:29,328
+8'in olma ihtimali yok.
+
+440
+01:11:29,947 --> 01:11:32,787
+7 yukarıdaki elemandan büyük mü değil mi diye bakıyoruz.
+
+441
+01:11:32,787 --> 01:11:45,027
+büyük olmadığı için de doğrudan bu konumunu koruyor ve 9, 8, 7, 1, 2, 5, 6, 7 geldikten sonra ağacın yeni şeklini oluşturmuş oluyor.
+
+442
+01:11:45,027 --> 01:12:01,187
+Yeni bir eleman ekleyelim bu ağaca. Diyelim ki buraya 12 gelsin. 12 geldiğinde kendisinden, kendisinin bağlı olduğu parentten büyük mü değil mi diye bakıyoruz.
+
+443
+01:12:01,188 --> 01:12:12,328
+büyük olduğu için 12, 1 ile yer değiştiriyor. 8, 2, 9, 7, 5, 6 halini alıyor.
+
+444
+01:12:13,328 --> 01:12:20,408
+Burada işimiz bitmedi. 12, 8'den büyük mü diye soruyoruz. 12, 8'den büyükse o zaman bunların yerlerini değiştiriyorum.
+
+445
+01:12:20,408 --> 01:12:29,408
+Bu sefer 8 aşağıya koyuyor. 12 yukarı çıkıyor. Son olarak 12, 9'dan büyük mü diye soruyorum.
+
+446
+01:12:29,408 --> 01:12:42,727
+12'de 9'dan büyük olduğu için 12 yukarı çıkıyor. 9'da aşağıya konumlanıyor. En son noktada 12 elemanı yerleşmiş oluyor.
+
+447
+01:12:43,667 --> 01:12:50,727
+ve bütün değerlerde aslında yeni konumlarını almışlar.
+
+448
+01:12:51,207 --> 01:12:56,607
+Insert de biraz önceki heapify'dan farklı olarak herhalde dikkatinizi çekmiştir.
+
+449
+01:12:57,548 --> 01:13:01,487
+Çaylılar arasında bir karşılaştırma özel olarak söz konusu olmuyor.
+
+450
+01:13:01,487 --> 01:13:11,088
+Çünkü zaten heap tree özelliğine sahip bir ağaç elimizde olduğu için yeni gelen elemanın parent'ına bakmanız,
+
+451
+01:13:11,088 --> 01:13:22,748
+büyük mü küçük mü noktasında yeterli oluyor. Üçlü bir karşılaştırma yapmamıza gerek kalmıyor bu noktada ve elemanı yukarı doğru taşımış oluyoruz bu sayede.
+
+452
+01:13:25,227 --> 01:13:26,827
+Insorion ile ilgili sorusu olan var mı?
+
+453
+01:13:35,699 --> 01:13:55,919
+Peki, o zaman lead tarafa geçelim isterseniz. Şimdi 9, 8, 6, 2, 5, 1. Burada görmüş olduğunuz keep tree ağaç. Şimdi bu ağaçtan herhangi bir elemanın remove edilmesi istenebilir.
+
+454
+01:13:55,919 --> 01:14:06,179
+Bu noktada dokuzun remove edilmesi istenmiş ve dokuzun remove edilmesi istendiğinde biz de ne yapabiliriz bir bakalım.
+
+455
+01:14:06,179 --> 01:14:14,819
+Bu noktada aslında burada gördüğünüz gibi bir çıkış noktası var.
+
+456
+01:14:14,819 --> 01:14:27,679
+o da 9'un elenmek istenmesinden dolayı ağacın en son gözüne yerleştirilmesi bu işini kolaylaştıracaktır.
+
+457
+01:14:27,679 --> 01:14:32,539
+Bu ne demek? 9 buradayken yani en tepedeyken
+
+458
+01:14:35,956 --> 01:14:52,035
+En sonundaki eleman başa alınıyor. Dokuzun yerine, silinmek istenen elemanın yerine. Sekiz, altı, iki, beş ve dokuzlukla başlaşıyoruz. Bu şunu bize getiriyor.
+
+459
+01:14:52,035 --> 01:15:07,035
+diyoruz ki zaten ben dokuzu sona aldığımda n'i bir azaltarak dokuzu tamamen devre dışı bırakabilirim.
+
+460
+01:15:07,035 --> 01:15:21,275
+Bir dizi üzerinde özellikle çalıştığımızı varsayarsanız. Dokuzu devre dışı bıraktığım anda yani silmek istediğim elemanı en son elemanla yer değiştirdiğim zaman otomatikman zaten ağacında
+
+461
+01:15:21,275 --> 01:15:24,296
+9'dan kurtulmuş oluyorum.
+
+462
+01:15:25,156 --> 01:15:33,136
+Ama yukarı ağacın son elemanını taşıdığım için doğal olarak ağacı bozmuş oluyorum.
+
+463
+01:15:33,575 --> 01:15:36,515
+Bundan sonraki olay tamamen EP5 olayı.
+
+464
+01:15:37,536 --> 01:15:41,555
+Bakıyorum bir var elimde 8'e 6'dan 8 daha büyük.
+
+465
+01:15:41,555 --> 01:15:45,136
+O zaman diyorum ki şöyle yapalım.
+
+466
+01:16:00,692 --> 01:16:02,192
+8 yukarı gelsin.
+
+467
+01:16:02,192 --> 01:16:03,692
+Step 2'de
+
+468
+01:16:05,692 --> 01:16:07,192
+bir de aşağı insin.
+
+469
+01:16:09,192 --> 01:16:11,692
+Tabi bir aşağı indiği zaman
+
+470
+01:16:12,692 --> 01:16:15,692
+heapify işlemim bitmiş olmuyor çünkü leaf node'a ulaşmadım.
+
+471
+01:16:16,192 --> 01:16:18,192
+Bir sonraki adımıma geçiyorum.
+
+472
+01:16:19,192 --> 01:16:20,692
+Ve bir sonraki adımımda
+
+473
+01:16:21,692 --> 01:16:22,692
+8
+
+474
+01:16:22,692 --> 01:16:25,692
+1, 2, 3'ten 3 yukarı geliyor.
+
+475
+01:16:26,692 --> 01:16:27,692
+Bir aşağı iniyor.
+
+476
+01:16:27,692 --> 01:16:29,192
+2 burada kalıyor.
+
+477
+01:16:29,192 --> 01:16:31,292
+6 burada kalıyor, 9 burada kalıyor.
+
+478
+01:16:33,052 --> 01:16:34,752
+Bir leaf node ulaştığı için
+
+479
+01:16:42,260 --> 01:16:45,079
+artık buradaki heapify işlemini tamamlanıyor.
+
+480
+01:16:50,420 --> 01:17:13,939
+heap, hy, vark, dün. Daha doğrusu ikisi aslında aynı. İşlem sadece birbirlerinin devamı. Günün sonunda n-1'den n'in 5'e düşüyor. Ve ben bu elemanları yazdırmak istediğimde 8, 3, 6, 2, 1 olarak yazdırabiliyorum.
+
+481
+01:17:13,939 --> 01:17:21,439
+ve heap tree özelliğini bozmadan eleman çıkarma işlemini tamamlamış oluyor.
+
+482
+01:17:21,859 --> 01:17:26,259
+Demek ki delete operation'ında da dikkat edilmesi gereken nokta şu.
+
+483
+01:17:26,799 --> 01:17:28,939
+Çıkarmak istediğiniz elemanı buluyorsunuz.
+
+484
+01:17:31,479 --> 01:17:40,019
+Silmek istediğiniz elemanı bulduktan sonra o elemanı en sonda yer alan,
+
+485
+01:17:40,019 --> 01:17:44,019
+ağacın en sondaki elemanına yer değiştiriyorsunuz, swap yapıyorsunuz.
+
+486
+01:17:44,679 --> 01:17:48,039
+En sondaki eleman silmek istediğiniz elemanın yerine geliyor.
+
+487
+01:17:49,719 --> 01:18:00,019
+Daha sonra en yani ağaçtaki eleman sayısını bir azaltarak aşağıya gönderdiniz, silinmesini istediğiniz elemanı devre dışı bırakıyorsunuz
+
+488
+01:18:00,019 --> 01:18:08,899
+ve yerini değiştirdiğiniz, yeni yerleştirdiğiniz elemandan itibaren heapify işlemi yapıyorsunuz.
+
+489
+01:18:10,019 --> 01:18:19,019
+heapify işleminin sonunda da ağacın son hali delete işleminden sonra olması gereken haline gelmiş oluyor.
+
+490
+01:18:19,019 --> 01:18:22,019
+Buraya kadar sorusu olan var mı? Delete ile ilgili.
+
+491
+01:18:27,731 --> 01:18:28,911
+Evet, [öğrenci].
+
+492
+01:18:30,911 --> 01:18:38,471
+Search operasyonunu bilerek yapmamıştık maliyette oluyor diye. Deliyet işlemi sadece max veya min olandan mı yapılıyor?
+
+493
+01:18:39,911 --> 01:18:42,531
+Deliyet işlemi max veya min olandan mı?
+
+494
+01:18:43,551 --> 01:18:47,591
+Sadece maxitte maxı, mühitte sadece mini mi silebiliyoruz?
+
+495
+01:18:47,591 --> 01:19:12,772
+Genellikle yapı bu yönde kurgulanacak şekilde aslında oluşturulmuş ve priority queue'dan aslında elemanı dışarı çıkartmak mantığı güdüyor ve bu da aslında en üstte yer alan en öncelikli değerine bağlı olarak max ya da min değeri olan elemanın çıkartılmasını anlatan, tarif eden bir delete işlemi oldu burada.
+
+496
+01:19:12,771 --> 01:19:14,411
+bu anlattığımız örnekte.
+
+497
+01:19:15,131 --> 01:19:20,411
+Ama mutlaka böyle bir delete operasyonu olmak zorunda değil.
+
+498
+01:19:21,111 --> 01:19:26,711
+Ağacın herhangi bir elemanını da çıkartma potansiyeliniz her zaman söz konusu.
+
+499
+01:19:26,711 --> 01:19:31,871
+Fakat ağırlıklı olarak delete operasyonu yukarıda bulunan elemanın,
+
+500
+01:19:32,531 --> 01:19:36,731
+yani en tepede bulunan elemanın çıkartılmasına yönelik gerçekleştiriliyor.
+
+501
+01:19:36,731 --> 01:19:43,551
+Çünkü asıl amaç öncelikte olan elemanın queue'dan çıkartılması.
+
+502
+01:19:47,988 --> 01:19:52,127
+Peki, başka sorunuz yoksa devam edelim.
+
+503
+01:19:57,235 --> 01:19:58,515
+Gelelim IPS orta.
+
+504
+01:20:01,455 --> 01:20:03,676
+Hatta şöyle yapalım.
+
+505
+01:20:05,675 --> 01:20:07,935
+Bir tane açalım.
+
+506
+01:20:08,995 --> 01:20:14,576
+9, 6, 8, 3, 2, 1, pardon.
+
+507
+01:20:14,576 --> 01:20:17,576
+4, 5,
+
+508
+01:20:24,627 --> 01:20:38,167
+Şöyle olsun 19, 16, 18, 14, 15, 13, 12, 13.
+
+509
+01:20:40,948 --> 01:20:41,448
+çı?
+
+510
+01:20:45,076 --> 01:20:46,375
+4, 5 olsun.
+
+511
+01:20:55,444 --> 01:21:17,444
+bu bir heap ağacı, max heap ağacı ve bu noktada aslında bu ağacı yazdırdığınızda 19 sırayla 16, 18, 13, 12, 14, 15, 7, 6, 4, 5 göreceksiniz.
+
+512
+01:21:17,444 --> 01:21:27,863
+nispeten sıralı diyebileceğiniz ama aslında sıralı olmayan bir yapıda tutulmuş elemanlar.
+
+513
+01:21:27,863 --> 01:21:33,683
+O yüzden heap tree işte en üstte zaten en büyük elemanı tutuyor.
+
+514
+01:21:34,204 --> 01:21:36,804
+O yüzden altındakiler küçük olduğu için zaten sıralıdır.
+
+515
+01:21:37,603 --> 01:21:38,423
+Mantığı doğru değil.
+
+516
+01:21:39,403 --> 01:21:41,723
+Buradan baktığınızda da bunu rahatlıkla görebiliyorsunuz.
+
+517
+01:21:41,723 --> 01:21:49,723
+Peki o zaman ben burada heap tree yapısından faydalanarak
+
+518
+01:21:53,779 --> 01:21:55,779
+keep sort.
+
+519
+01:21:58,260 --> 01:22:20,399
+algoritmasını implemente ediyor olsaydı nasıl ilerlemem gerekirdi? Çok basit bir mantığı var aslında. Biraz önceki operasyonlarda gördüğünüz bir mantık kullanılıyor. Bir sonraki slide'da da aslında detaylı anlatım var ama hani biraz beyin cimnastiği olması açısından birlikte bakalım istedim.
+
+520
+01:22:26,899 --> 01:22:51,299
+Burada en tepede en büyük elemanın olduğunu bildiğiniz bir max heap tree var. Siz bu max heap tree'den faydalanarak elinizdeki elemanları sıralamak istiyorsunuz. Yani heap sort mantığıyla sıralamanız bekleniyor sizden. Nasıl ilerlersiniz?
+
+521
+01:22:51,299 --> 01:23:00,279
+İlk bakışta ilk elemanları sırayla görmezden gelerek yaparız gibi geliyor ama implementasyon hakkında bir fikrim yok.
+
+522
+01:23:00,279 --> 01:23:06,479
+Yani 19'u görmezsem kalanı yeniden hittiriye çevirsem başarılı olur.
+
+523
+01:23:06,779 --> 01:23:10,199
+Başlangıç olarak zaten öyle bir başlangıç gerekiyor.
+
+524
+01:23:10,499 --> 01:23:11,319
+[öğrenci].
+
+525
+01:23:13,779 --> 01:23:19,639
+Hocam her leveldeki elemanı soldan sağa doğru sıralayarak yapabiliriz.
+
+526
+01:23:19,639 --> 01:23:26,779
+Zaten en yukarıda büyük sayıların olduğunu bildiğimiz için her leveli soldan sağa sıralarsak zaten bütün liste sıralanmış olacak.
+
+527
+01:23:27,379 --> 01:23:30,539
+Yani mantıken yapabileceğimiz bir şey ama bu biraz maliyetli bir iş.
+
+528
+01:23:31,620 --> 01:23:34,319
+Daha az maliyetli olanını yapmak istiyoruz.
+
+529
+01:23:34,319 --> 01:23:41,719
+Yani bu çünkü ağaç büyüdükçe her seviyedeki eleman sayısı en mertebesine gidecek.
+
+530
+01:23:41,719 --> 01:24:01,959
+bu da işte 7, 6, 4, 5 devam ettiğini düşünürsek bunların hepsini sıralamak için en yani kare karmaşıklığında bir algoritma belki kullanmamız gerekecek ya da başka algoritmalarından faydalanmamız gerekecek ama biz burada heapin yapısını kullanarak bunu solt etmek istiyoruz.
+
+531
+01:24:02,620 --> 01:24:04,659
+Şunu da biliyoruz ki en büyük eleman 19.
+
+532
+01:24:08,307 --> 01:24:20,307
+buna bakarak ilerlesek, her türde en yukarıda en büyük eleman var olacak şekilde düşünsek, biraz önceki delete operasyonunu da hatırlatsam size.
+
+533
+01:24:23,699 --> 01:24:25,699
+Evet, Onktay.
+
+534
+01:24:30,868 --> 01:24:31,327
+[öğrenci]?
+
+535
+01:24:34,328 --> 01:24:35,567
+Sesim geliyor mu?
+
+536
+01:24:36,027 --> 01:24:36,687
+Şimdi geliyor.
+
+537
+01:24:37,767 --> 01:24:42,868
+Her node'un çocuklarını kendi arasında sıralarsak sıralı hale gelmiş olur gibi.
+
+538
+01:24:46,167 --> 01:24:47,888
+Tam olarak öyle olmaz.
+
+539
+01:24:48,907 --> 01:24:55,767
+Çünkü 16 için 13-12, 18 için 14-15.
+
+540
+01:24:55,767 --> 01:25:01,187
+aslında tam olarak olmaz dedim ama olur mu diye de bir bakıyorum.
+
+541
+01:25:02,868 --> 01:25:03,728
+5, 4.
+
+542
+01:25:06,388 --> 01:25:09,947
+Olabilir gibi duruyor ama aradan hiç çözüm bu değil.
+
+543
+01:25:12,187 --> 01:25:17,007
+Ben o zaman çok uzatmadan birkaç fikir aldım sizlerden.
+
+544
+01:25:17,967 --> 01:25:22,387
+Biraz daha adım adım ilerleyelim.
+
+545
+01:25:22,387 --> 01:25:25,467
+Hatta bunun üzerine değil de bir son iki örnek üzerinde ilerleyelim.
+
+546
+01:25:25,467 --> 01:25:29,627
+birazdan bir önceki çizdiğim örnek üzerinde de yeniden yaparız birlikte.
+
+547
+01:25:30,307 --> 01:25:31,227
+Ve buradaki mantık şu.
+
+548
+01:25:31,607 --> 01:25:34,687
+En büyük elemanı sondaki elemanla değiştireceksiniz yerini.
+
+549
+01:25:36,607 --> 01:25:38,448
+Sondaki eleman 9 oldu diyelim.
+
+550
+01:25:40,307 --> 01:25:40,527
+Tamam.
+
+551
+01:25:41,527 --> 01:25:48,647
+Şimdi 9 olduktan sonra yapılması gereken iş nedir?
+
+552
+01:25:49,507 --> 01:25:51,167
+9 ile 7'nin yerini değiştirdiniz.
+
+553
+01:25:51,448 --> 01:25:53,027
+HIPIFI işlemi yapmanız gerekiyor.
+
+554
+01:25:53,027 --> 01:26:11,087
+7, 6, 8'den 8 yukarı çıktı, 7 aşağı indi, 7 aşağı indikten sonra da aslında 8, 7, 6, 2, 5, 9 elinizde var.
+
+555
+01:26:12,767 --> 01:26:14,067
+Buraya koymuştunuz 9'u.
+
+556
+01:26:14,067 --> 01:26:24,207
+Şimdi biliyorsunuz ki ikinci turda en tepede olan eleman en büyük ikinci eleman.
+
+557
+01:26:25,347 --> 01:26:30,667
+O zaman diyorsunuz ki ben biraz önce n'e koymuştum en son elemana.
+
+558
+01:26:30,987 --> 01:26:33,447
+Bu sefer onu n-1'deki elemanla yer değiştireyim.
+
+559
+01:26:35,327 --> 01:26:39,808
+Alıyorsunuz 8'i buraya koyuyorsunuz 5'in yerine.
+
+560
+01:26:40,228 --> 01:26:41,448
+5'i de 8'in yerine koyuyorsunuz.
+
+561
+01:26:41,448 --> 01:27:09,328
+görüyorsunuz. E şimdi bir heapify daha yapmanız lazım çünkü yine ağacı bozdunuz. 5, 6, 7'den 7 yukarı geldi. 5 aşağı indi. Bu noktada herhangi bir artık yerleştiği ihtimali kalmadığı için 5 konumunu korudu. Elinizde 9, 8 sıralanmış 2 tane eleman var.
+
+562
+01:27:09,327 --> 01:27:21,627
+Doğal olarak şu elemanlar sıralandığı için bir sonraki üçüncü büyük eleman buraya gelecek. Bu eleman da yukarı çıkacak.
+
+563
+01:27:23,127 --> 01:27:34,687
+2 buraya geldi. 2 buraya geldikten sonra 7 buraya geldi. 6-5'ten dolayı 6 yukarı çıktı. 2 burada konumlandı. 5 bu noktada konumlandı.
+
+564
+01:27:34,687 --> 01:27:36,827
+Bu noktada
+
+565
+01:27:36,827 --> 01:27:38,967
+Şu an ders alınçalım.
+
+566
+01:27:39,567 --> 01:27:40,267
+Bu noktada
+
+567
+01:27:40,267 --> 01:27:47,367
+6, 2, 5 dedik.
+
+568
+01:27:48,487 --> 01:27:48,987
+En son
+
+569
+01:27:48,987 --> 01:27:51,747
+6 vardı elimizde.
+
+570
+01:27:53,587 --> 01:27:54,727
+6'yı
+
+571
+01:27:54,727 --> 01:27:57,547
+7'den sonraki konumuna yerleştirdik.
+
+572
+01:27:58,827 --> 01:28:00,727
+6 buraya yerleşmiş oldu.
+
+573
+01:28:01,687 --> 01:28:04,307
+5'le yer değiştirdi. 5 yukarı çıktı.
+
+574
+01:28:04,687 --> 01:28:12,807
+Burada artık bunların hepsinin işi bittiği için bunları işaretledik.
+
+575
+01:28:14,087 --> 01:28:15,707
+En son sıra 2'ye geldi.
+
+576
+01:28:18,087 --> 01:28:20,707
+2'ye aldık, yukarı koyduk.
+
+577
+01:28:21,368 --> 01:28:22,627
+5'le yer değiştirdik.
+
+578
+01:28:22,627 --> 01:28:27,547
+Ve ağacımız 2, 5, 6, 7, 8.
+
+579
+01:28:28,180 --> 01:28:33,359
+9 olmak üzere ağaçta yer alan tüm elemanları sıralamış oldu.
+
+580
+01:28:36,039 --> 01:28:37,980
+Çok basit bir mantıkla yaptık.
+
+581
+01:28:39,279 --> 01:28:44,559
+En yukarıdaki elemanı dizinin son elemanıyla yerini değiştirdik.
+
+582
+01:28:45,520 --> 01:28:52,819
+Son eleman en büyük eleman olduğu için bir sonraki turda son elemandan bir önceki elemanla en tepedeki elemanı yerleştirdik.
+
+583
+01:28:52,819 --> 01:29:04,040
+Her turda son koyduğumuz elemandan bir önceki elemanla yer değiştirdik ve her turda yer değiştirdiğimiz için heap ifa işlemini gerçekleştirmiş olduk.
+
+584
+01:29:05,040 --> 01:29:07,059
+Gelelim buradaki örneğe.
+
+585
+01:29:08,520 --> 01:29:14,779
+Buradaki örnek üzerinden ilerlersek 19'u 5 ile yer değiştirdik.
+
+586
+01:29:14,779 --> 01:29:16,279
+Hatta şöyle yapalım.
+
+587
+01:29:16,860 --> 01:29:19,720
+Çok uzun uzadıya vakit kaybı olmaması adına.
+
+588
+01:29:20,540 --> 01:29:21,339
+5'i aldık.
+
+589
+01:29:21,339 --> 01:29:23,099
+19'u aldık.
+
+590
+01:29:25,259 --> 01:29:26,560
+19 pardon.
+
+591
+01:29:27,799 --> 01:29:29,220
+5 buraya geldi.
+
+592
+01:29:29,779 --> 01:29:30,880
+19 buraya geldi.
+
+593
+01:29:31,819 --> 01:29:34,819
+Şimdi doğal olarak burada bir heapify yapmamız gerekiyor.
+
+594
+01:29:36,139 --> 01:29:39,059
+Heapify için 18, 5'ten daha büyük olduğu için
+
+595
+01:29:39,059 --> 01:29:41,580
+18, 5 buraya geldi.
+
+596
+01:29:42,680 --> 01:29:44,080
+Sonra devam ediyoruz.
+
+597
+01:29:45,620 --> 01:29:47,620
+15 daha büyük olduğu için
+
+598
+01:29:47,619 --> 01:30:05,819
+15 buraya geldi, 5 buraya geldi. Leaf node'a ulaştık ve burada ilk tur bitti. İlk tur tamamlandığında heapify ile biz bu sefer 4 sondan bir önceki eleman olduğu için 4'e geldik. 18'i aldık.
+
+599
+01:30:09,235 --> 01:30:36,156
+buraya koyduk. 4'ü bu sefer buraya konumlandırdık. 4'ü buraya konumlandırdığımız zaman en büyük olan 16 olduğu için heapify işlemine başladığımızda 4 buraya geldi, 16 buraya geldi. E heapify devam ediyor, leaf node'a ulaşmadık. O zaman şunu biliyorum ki 4'ü alacağım, 13'ü de yer değiştireceğim. 4'ü buraya getirdim, 13'ü buraya getirdim.
+
+600
+01:30:36,156 --> 01:30:38,455
+hala leaf node'a ulaşmadım.
+
+601
+01:30:40,135 --> 01:30:40,875
+4'ü aldım.
+
+602
+01:30:42,636 --> 01:30:43,776
+7 ile yer değiştirdim.
+
+603
+01:30:44,436 --> 01:30:45,515
+Ve leaf node'a ulaştım.
+
+604
+01:30:47,355 --> 01:30:49,235
+Şu anda bu noktadayım.
+
+605
+01:30:50,855 --> 01:30:52,496
+Şimdi işim bitti.
+
+606
+01:30:52,496 --> 01:30:54,916
+Bir sonraki turdayım.
+
+607
+01:30:56,316 --> 01:30:58,916
+En son koyduğum 18'li bu sefer 6'ya alacağım.
+
+608
+01:31:01,835 --> 01:31:03,316
+6'ya aldım.
+
+609
+01:31:06,676 --> 01:31:16,516
+buraya koydum. Yukarıda 16 vardı, yerini değiştirdim. heapify'a başladım. 6 ile. 15, 6.
+
+610
+01:31:18,995 --> 01:31:25,875
+6'yı buraya koydum, 15'i buraya koydum. Tekrar bir heapify yapmam lazım. leaf node'a ulaşmadığım için.
+
+611
+01:31:25,875 --> 01:31:35,875
+6 ile 14'ü yer değiştiriyorum. 14 buraya geldi, 6 buraya geldi. leaf node'a ulaştım ve buradaki heapify işim bitti.
+
+612
+01:31:35,875 --> 01:31:39,155
+Şimdi sıra geldi 16'dan bir önceki konuma yerleştirmeye.
+
+613
+01:31:42,996 --> 01:31:44,996
+15'i buraya aldım.
+
+614
+01:31:48,787 --> 01:31:50,787
+4'de yukarı aldım.
+
+615
+01:31:50,787 --> 01:31:57,787
+4'ü yukarı aldığımda yine bir heapify işlemi geliyor.
+
+616
+01:31:59,988 --> 01:32:01,988
+14 yukarı geldi, 4 buraya geldi.
+
+617
+01:32:02,988 --> 01:32:04,988
+6 ve 4 yer değiştirdi.
+
+618
+01:32:04,988 --> 01:32:06,988
+6 buraya geldi, 4 buraya geldi.
+
+619
+01:32:07,988 --> 01:32:10,988
+Şimdi geldik bir üst kısmı.
+
+620
+01:32:11,988 --> 01:32:13,988
+15'ten önce 5 var.
+
+621
+01:32:14,988 --> 01:32:16,988
+5'te 14'ün yerini değiştiriyorum.
+
+622
+01:32:18,988 --> 01:32:21,988
+5 buraya geldi, 14 buraya geldi.
+
+623
+01:32:23,988 --> 01:32:26,988
+5'ten başlıyorum ip ifa yapmaya.
+
+624
+01:32:26,988 --> 01:32:30,967
+o zaman 13'de yer değiştiriyorlar.
+
+625
+01:32:31,368 --> 01:32:32,147
+5 buraya geliyor.
+
+626
+01:32:33,188 --> 01:32:39,208
+5 buraya geldiği zaman 5 ile 12'nin yerini yer değiştiriyorum.
+
+627
+01:32:39,427 --> 01:32:40,287
+12 buraya geliyor.
+
+628
+01:32:40,848 --> 01:32:41,547
+5 buraya geliyor.
+
+629
+01:32:42,087 --> 01:32:50,848
+Artık n değerim azalarak buraya geldiği için burası benim için çocukları olmayan bir leaf node olduğu için 5 burada kalıyor.
+
+630
+01:32:51,328 --> 01:32:52,807
+18-19'da kontrol etmiyorum.
+
+631
+01:32:52,807 --> 01:32:56,748
+Benim için önemli olan her turda n değerimin bir azalması.
+
+632
+01:32:56,747 --> 01:33:11,568
+bir azaldığı için de artık 5'i buraya taşıdığım anda şu kısma aşağıdaki düğümler n'nin ötesinde olduğu için onlarla kontrol etmeme gerek kalmıyor ve 5'in leaf node pozisyonda olduğunu anlamış oluyorum.
+
+633
+01:33:12,708 --> 01:33:24,527
+Buradan sonra devam ettiğimde 4 ile 13'ü 4 veya 13 buraya geldi.
+
+634
+01:33:24,528 --> 01:33:28,068
+4 ile heapify yapacağım.
+
+635
+01:33:29,267 --> 01:33:35,868
+12, 4, burada 4 ile 7'yi yer değiştireceğim.
+
+636
+01:33:37,187 --> 01:33:38,288
+4 ve 7.
+
+637
+01:33:38,468 --> 01:33:46,288
+Artık 4 de benim için 15-16'dan dolayı, n'den dolayı artık leaf node ulaştığı için bu noktada konumlandırdım.
+
+638
+01:33:47,368 --> 01:33:50,848
+Ve ileri heapify işlemin sonlandığı için gitmeme gerek kalmadı.
+
+639
+01:33:50,848 --> 01:33:54,708
+14, 13 bunlar yerleşmiş oldu.
+
+640
+01:33:55,907 --> 01:33:58,267
+Sırada 5'te 12'nin yer değişimi olacak.
+
+641
+01:34:02,707 --> 01:34:25,548
+5 buraya geldi, 12 buraya geldi. 5'i heap ifay ediyorum. Heap ifay ettiğimde 7 ile yer değiştirecek. 7 yukarı geldi, 5 aşağı geldi. Artık bu noktada herhangi bir yukarı çıkabilecek bir eleman kalmadı. Sıra 7 ile 4'ü yerinin değişmesinde.
+
+642
+01:34:25,548 --> 01:34:31,548
+son kısımları da şöyle renkli yapalım.
+
+643
+01:34:32,347 --> 01:34:33,228
+7 buraya geldi.
+
+644
+01:34:34,107 --> 01:34:34,987
+4 buraya geldi.
+
+645
+01:34:35,788 --> 01:34:39,228
+YPFY yaptığım zaman 6 yukarı çıkacak.
+
+646
+01:34:40,827 --> 01:34:42,307
+4 buraya gelecek.
+
+647
+01:34:43,767 --> 01:34:50,648
+Çocuklar artık düğümler N'den dolayı 4 leaf node olduğu için buradaki 13-14 çocuk olmaktan çıktı.
+
+648
+01:34:52,347 --> 01:34:54,228
+O yüzden burada sonlandırdım.
+
+649
+01:34:54,228 --> 01:34:55,628
+son düğüm benim için artık 4.
+
+650
+01:35:00,148 --> 01:35:24,367
+4'ü buraya taşıtım, 6 buraya geldi. 4 ile 5'i kontrol ediyorum bu noktada. 4 ile 5'i kontrol ettiğimde aslında teknik olarak 5 yukarı çıkıyor, 4 buraya geliyor. Son turda aşağı inemediği için 4 burada kalıyor.
+
+651
+01:35:24,367 --> 01:35:29,847
+5'i en son olarak alıp 6'dan önceki yere konumlandırıyorum.
+
+652
+01:35:30,087 --> 01:35:31,087
+2'ye kadar geldim.
+
+653
+01:35:31,467 --> 01:35:33,148
+4, o da konumlanmış oldu.
+
+654
+01:35:34,368 --> 01:35:38,607
+Heap tree'i kullanarak heap sold işlemini gerçekleştirmiş oldum.
+
+655
+01:35:39,287 --> 01:35:41,508
+Peki, bunun karmaşıklığı nedir?
+
+656
+01:36:00,756 --> 01:36:14,015
+G'den bir cevap gelmiş. n. Bir düşünelim, burada kaç tane iş yapıyoruz? [öğrenci] nlog n dedi. Niye nlog n?
+
+657
+01:36:16,435 --> 01:36:22,535
+heapify işlemi logendi. Bunu her birisi için tekrarladığımız için n çarpı logendi.
+
+658
+01:36:23,675 --> 01:36:31,675
+Evet, aynen öyle. Heapify işlemi bizim için logend karmaşıklığındaydı.
+
+659
+01:36:31,675 --> 01:36:46,495
+Biz n tane elemanı aslında sort işlemini soktuğumuz için burada n çarpı logendik bir karmaşıklıkla heap sort işlemini tamamlamış oluyoruz.
+
+660
+01:36:47,276 --> 01:36:59,895
+Evet şimdi 14.37 oldu. Bir ara vereceğiz 14.50'ye kadar. 14.50'de bu konuştuklarımızı toparlayacağız ve sorularınız varsa sorularınızı alacağım.
+
+661
+01:36:59,895 --> 01:37:02,476
+14.50'de görüşmek üzere arkadaşlar.
+
+662
+01:49:26,260 --> 01:49:37,039
+Evet arkadaşlar, yeniden merhaba. Dersin son bölümüne giriyoruz. En son heap sortu konuşuyorduk. Heap sortun karmaşıklığı için nlogan demiştik. Hemen ekran paylaşımı yapayım sizinle.
+
+663
+01:49:38,419 --> 01:49:47,260
+Bunun temel sebebinin de heapify işleminin her bir eleman için loganlik bir karmaşıklık oluşturması.
+
+664
+01:49:47,260 --> 01:49:58,780
+worst case scenario'da en tane elemanı her seferinde heapify işlemine maruz bıraktığımız için de nloganlik bir karmaşıklığa sahip oluyor.
+
+665
+01:49:58,780 --> 01:50:05,980
+Heapsort. Heapsort'un temel sıkıntısı stable olmaması. Yani bu stable olmaması demek şu demek.
+
+666
+01:50:07,280 --> 01:50:16,100
+İki aynı değer dizimizin içerisinde varsa onların yerlerinin değişmemesini garanti etmiyor.
+
+667
+01:50:17,260 --> 01:50:20,620
+İşte önce gelen sonra gelebiliyor sıralandıktan sonra.
+
+668
+01:50:21,399 --> 01:50:24,999
+İşte diyelim ki [öğrenci] isimli iki tane kayıt var.
+
+669
+01:50:26,379 --> 01:50:30,520
+Bu kayıtların hangisinin önce hangisinin sonra geldiği önemli diyelim.
+
+670
+01:50:31,060 --> 01:50:34,499
+Heapsort bunu maalesef sağlayamıyor.
+
+671
+01:50:34,499 --> 01:50:38,639
+Bu yüzden de stable olmayan algoritmalar arasında, sort algoritmalar arasında yer alıyor.
+
+672
+01:50:38,639 --> 01:50:50,099
+heapify işlemini aslında kodlayabildikten sonra, tasarlayabildikten sonra diğer işleri yapmak çok da zor değil gördüğünüz gibi.
+
+673
+01:50:50,099 --> 01:51:06,299
+Bu noktada özellikle ağıncı en küçük ya da ağıncı en büyük eleman peşinde koştuğumuz noktada karmaşıklığı k-logen seviyesine indirerek aslında
+
+674
+01:51:06,300 --> 01:51:23,459
+biraz daha bu problemin heap sortla çözülmesi bize avantaj sağlayabiliyor. Priority Queue'da da göreceksiniz. Özellikle bu yaklaşımın bize avantaj sağladığından bahsediyor olacağız.
+
+675
+01:51:23,459 --> 01:51:35,980
+Şimdi devam edecek olursak problemler neler var elimizde? Bir işte verilen binary tree'nin heap özelliği taşıyıp taşımadığını
+
+676
+01:51:35,980 --> 01:52:01,879
+bulmak çözülmesi gereken algoritmik problemlerden bir tanesi. Yine Ka'ncı en küçük en büyük elemanı sırasız bir dizide bulabilmek yine bizim uğraşmamız gereken problemlerden bir tanesi. Ve mesela verilen bir min heap'i max heap'e dönüştürmek yine çözülmesi gereken problemlerden bir tanesi.
+
+677
+01:52:01,879 --> 01:52:24,700
+Bu problemlerle şimdi kısaca konuşabiliriz üzerinde, fikir yürütebiliriz karşılıklı, beyin cimnastiği yapabiliriz ama bunların hepsinin kodlanması ve algoritmasının geliştirilmesi noktasında alıştırma yaparsanız sizin açınızdan önümüzdeki haftaki priority queue'ya da bir hazırlık olur hem de bu konuları vize öncesinde çalışmış olursunuz diye düşünüyorum.
+
+678
+01:52:24,700 --> 01:52:36,520
+Bu nedenle burada soracaklarınız varsa özellikle ders saati kapsamında paylaşırsanız, sorarsanız sevinirim, cevaplamaya çalışırım.
+
+679
+01:52:36,980 --> 01:52:44,520
+Şimdi isterseniz verilen bir binary tree'nin heap olup olmadığı noktasında aslında ne yapılabileceğini konuşmuştuk ama
+
+680
+01:52:44,520 --> 01:52:50,940
+bir isterseniz fikir yürütmekte fayda var diye düşünüyorum.
+
+681
+01:52:50,940 --> 01:52:52,080
+Şöyle yapalım.
+
+682
+01:52:57,332 --> 01:53:01,052
+size bir binary tree verilsin.
+
+683
+01:53:03,051 --> 01:53:07,611
+Ve bu binary tree'nin heap özelliği sağlayıp sağlamadığına bakalım.
+
+684
+01:53:07,752 --> 01:53:10,212
+Bu bir heap özelliği sağlayan bir binary tree olsun.
+
+685
+01:53:11,491 --> 01:53:18,432
+Bu da işte 3, pardon 5, 6 olsun.
+
+686
+01:53:18,432 --> 01:53:22,672
+burada da bir şey olmasın diyelim.
+
+687
+01:53:24,892 --> 01:53:25,612
+Şöyle.
+
+688
+01:53:26,631 --> 01:53:29,291
+Bu da heap özelliği taşımayan bir binary tree olsun.
+
+689
+01:53:33,111 --> 01:53:40,352
+Bu tabii binary tree'nin heap özelliği taşımaması bir structure anlamında kontrol edilmesi gerekiyor.
+
+690
+01:53:40,631 --> 01:53:42,172
+Complete binary tree olup olmadığı.
+
+691
+01:53:42,172 --> 01:53:44,651
+bir de şöyle de bir durumla karşılaşabiliriz.
+
+692
+01:53:44,732 --> 01:53:53,212
+8, 9, işte 7, 6, 5 de olabilir.
+
+693
+01:53:53,611 --> 01:53:55,872
+Bunların her biri birer örnek olsun.
+
+694
+01:53:56,692 --> 01:53:58,811
+Bu noktada neler yapabiliriz?
+
+695
+01:53:59,531 --> 01:54:03,391
+Fikir yürütmek istersek neler söyleyebilirsiniz?
+
+696
+01:54:04,971 --> 01:54:09,832
+Öncelikle isterseniz bir binary tree'nin complete binary tree olup olmadığını kontrol ediyor olursak.
+
+697
+01:54:20,404 --> 01:54:32,404
+Evet, bir binary tree'nin complete binary tree olup olmadığını kontrol etme istersek neler yapabiliriz?
+
+698
+01:54:35,155 --> 01:54:54,756
+Şöyle yapalım. Bir 3-4 dakika size süre vereyim. Hem Complete Binary Tree noktasını hem de heap özelliği, max ya da min heap özelliği taşıyıp taşımadığını nasıl bir algoritma ile bulabilirsiniz. Bir tasarlamaya çalışın. 14.55, 15'e kadar süre vereyim. Ondan sonra bir konuşalım.
+
+699
+02:00:00,819 --> 02:00:14,099
+Evet arkadaşlar, belirlen bir binary tree'nin heap özelliği taşımadığıyla ilgileniyorduk. Biraz zaman verdim size, fikirlerinizi almak isterim.
+
+700
+02:00:31,060 --> 02:00:35,259
+Peki, B3'nin complete binary tree olup olmalarını nasıl kontrol edebiliriz diye sorsan.
+
+701
+02:00:49,235 --> 02:00:56,235
+buradaki örneklerde aslında biraz görebileceğiniz şekilde var. Evet [öğrenci] lütfen.
+
+702
+02:00:57,515 --> 02:01:07,475
+Dizi olarak yaptığımızda birden n'e kadar geçersiz cücre olmamasını kontrol ettirebilirim de linked listede nasıl yapacağımı bilemedim.
+
+703
+02:01:08,295 --> 02:01:18,135
+Evet, burada önemli noktalardan bir tanesi arkadaşınızın söylediği. Bunu bir dizi olarak kabul ettiğinizde n'e kadar herhangi bir nal değerine rastlamıyorsanız
+
+704
+02:01:18,135 --> 02:01:40,675
+Tek tek giderlerken ağaç üzerinde bir diziyi gezer gibi gezerken atlanan bir eleman, arada boş olan bir eleman var olup olmadığını kontrol edip aslında varsa o noktada aramanızı durdurup bu ağaç Complete Binary 3 özelliği taşımıyor diyebilirsiniz.
+
+705
+02:01:40,675 --> 02:01:51,075
+sona kadar gittiğinizde de herhangi bir kesintiye uğramadıysanız en incelemene kadar giderken o zaman bu bir complete binary tree'dir diyebilirsiniz.
+
+706
+02:01:52,655 --> 02:01:56,615
+Bu hani dizi üzerinden çalıştığımızı varsayarsak.
+
+707
+02:01:57,195 --> 02:02:09,055
+Peki arkadaşınızın söylediği gibi parent ve child yani linked liste yapısı kullandığımızda her bir parent'ın kendi child olduğu ve o child'ların da child'ları olduğunu düşünürsek
+
+708
+02:02:09,055 --> 02:02:11,856
+bu noktada nasıl ilerleyebiliriz acaba?
+
+709
+02:02:20,307 --> 02:02:47,307
+Peki o zaman şöyle yapalım. Şimdi bunlar böyle hani hemen söylendiğinde size çok katkı sağlayacak problemler değil. Benim sizden rica bunları önümüzdeki haftaya kadar bir antrenman olarak üzerinde çalıştırması gereken bir ne diyelim alıştırma olarak görürseniz, bunlarla ilgili bir çalışmayı yürütürseniz,
+
+710
+02:02:47,307 --> 02:03:01,848
+Sevinirim. Haftaya priority queue'yu anlatacağız. Priority queue'dan vaktimiz kalırsa bunların cevaplarıyla ilgili de çeşitli açıklamalar yaparız. Siz de belki o zaman daha çok fikir yürütme şansına sahip olursunuz.
+
+711
+02:03:01,848 --> 02:03:10,068
+min heap, max heap dönüşümü için şöyle bir hatırlatma yapsam.
+
+712
+02:03:10,967 --> 02:03:15,107
+2, 3, 5, 9, 2, 8, 7.
+
+713
+02:03:16,488 --> 02:03:18,428
+Böyle bir min heapimiz olsa.
+
+714
+02:03:23,828 --> 02:03:24,828
+bu noktada
+
+715
+02:03:24,828 --> 02:03:28,768
+bunu max heap'e dönüştürüyor olsak
+
+716
+02:03:28,768 --> 02:03:35,147
+nasıl ilerlerdi? Daha şöyle yapalım. Daha da
+
+717
+02:03:35,147 --> 02:03:39,527
+biraz daha farklı olsun.
+
+718
+02:03:42,428 --> 02:03:42,828
+2
+
+719
+02:03:42,828 --> 02:03:44,828
+3
+
+720
+02:03:46,644 --> 02:04:00,144
+7 diyelim. Bu size verilmiş. Bu bir min heap tree. Siz bunu max heap'e dönüştürmek istiyorsunuz. Ne yapılabilir?
+
+721
+02:04:07,636 --> 02:04:16,936
+Daha önce heap, sort'ta kullandığımız, delete'te kullandığımız çeşitli yaklaşımlar vardı. Acaba onlardan faydalanabilir miyiz?
+
+722
+02:04:30,452 --> 02:04:59,811
+Peki, o zaman bu haftalık bu kadar. Ben sizlere özellikle bakabileceğiniz bu alıştırma sorularını vermiş olayım. Önümüzdeki hafta lütfen bana hatırlatın. Bunlar üzerinden birlikte beraber geçelim. Priority Q'yu anlatalım ve ondan sonra zaten bayram ve sonrasında da vize haftası var. Sorunuz yoksa dersimiz bugünlük bu kadar. Teşekkür ediyorum katıldığınız için. Hepinize güzel bir hafta diliyorum arkadaşlar. Görüşmek dileğiyle. Hoşçakalın.

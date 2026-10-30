@@ -1,0 +1,3467 @@
+1
+00:04:30,355 --> 00:04:55,155
+Evet, merhaba arkadaşlar. Biraz bekledim ama artık derste başlayabiliriz sanıyorum. Bugün size recursive fonksiyonların kullanımından bahsedeceğim. Şimdi normalde veri yapıları ve algoritmalarda recursive fonksiyon bizim farklı durumlarda ihtiyaç duyduğumuz bir şey.
+
+2
+00:04:55,155 --> 00:05:17,076
+mesela bir quicksort sıralama algoritmalarından bir quicksort, bir merge sort algoritması iteratif yazması çok güç olan rekürsif yazılan algoritmalar veya bazı ağaçlarla ilgili algoritmalar, graflarla ilgili algoritmalarda da aynı şekilde iteratif olarak kodlaması,
+
+3
+00:05:17,075 --> 00:05:29,195
+algoritmasının tasarlanması zor olan recursive olarak yazıldığında daha kolay ve anlaşılır şekilde çözülebilen problemler mevcut.
+
+4
+00:05:29,195 --> 00:05:42,935
+Dolayısıyla bugün ileriki konularda ihtiyaç duyduğunuzda kullanabilmek amacıyla aslında büyük bir ihtimalle programlama dillerinde,
+
+5
+00:05:42,936 --> 00:05:51,616
+C dersinde gördüğünüz reküsif algoritma mantığının üzerinden geçmek istiyoruz.
+
+6
+00:05:51,716 --> 00:05:54,576
+Bugünkü programımız, planımız bunun üzerinde.
+
+7
+00:05:54,576 --> 00:05:57,955
+Şimdi ben sizinle bir ekran paylaşayım öncelikle.
+
+8
+00:06:09,620 --> 00:06:15,679
+Şimdi ekranımı görüyor olmanız gerekir tahminen değil mi? Görüyor musunuz arkadaşlar? Herkes ekranı görüyor mu?
+
+9
+00:06:15,679 --> 00:06:16,040
+Görüyor.
+
+10
+00:06:16,040 --> 00:06:38,359
+Tamam harika. Şimdi o zaman şey yapabiliriz, başlayabiliriz. Normalde aslında şey, iterasyonla eğer iteratif yöntemler yani mesela döngü ile bir problemi çözebiliyorsak, döngü kullanarak bir problemi çözebiliyorsak bunu bu şekilde yapmak lazım.
+
+11
+00:06:38,359 --> 00:06:46,359
+o bazı argıtmalarda recursive yani kendi kendine çağıran fonksiyonlara biz ihtiyaç duyabiliyoruz.
+
+12
+00:06:46,439 --> 00:06:54,559
+Şimdi şöyle düşünelim, diyelim ki faktöriyel işlemi için bir program yazmak istiyoruz.
+
+13
+00:06:55,300 --> 00:06:59,200
+İşte verilen bir sayının faktöriyelini hesaplamak istiyoruz.
+
+14
+00:06:59,200 --> 00:07:07,520
+Bunu bir şöyle yazabiliriz, diyebiliriz ki, işte bu bizim main programımız olsun.
+
+15
+00:07:07,519 --> 00:07:08,819
+nasıl?
+
+16
+00:07:16,915 --> 00:07:19,035
+bir değerimiz olsun.
+
+17
+00:07:21,735 --> 00:07:28,535
+Şimdi ben burada sayıya şey yazacağım ki gözümüzün önünde sayı kalsın, beşim faktörü.
+
+18
+00:07:28,675 --> 00:07:30,215
+Yani aslında o da yazmıyorum.
+
+19
+00:07:31,336 --> 00:07:34,895
+Sonra içeride değer yazılmasından bir sonuçlanmıyoruz.
+
+20
+00:07:35,016 --> 00:07:39,535
+Oraya değerini o şekilde yazarız.
+
+21
+00:07:39,535 --> 00:07:45,535
+Şurayı da şöyle yapalım.
+
+22
+00:07:46,836 --> 00:07:49,655
+faktoriye fonksiyonumuzu tanımlıyorum.
+
+23
+00:08:08,180 --> 00:08:10,680
+bir sayı dışarıdan alalım.
+
+24
+00:08:23,540 --> 00:08:36,739
+Ondan sonra bunun faktoryal fonksiyonu içerisinde faktoryal hesaplı, şey bir de yazdıralım tabii ki pardon.
+
+25
+00:08:49,427 --> 00:08:51,427
+ısırmadığı için böyle alt alt yazıyorum.
+
+26
+00:09:00,692 --> 00:09:03,871
+Bu şekilde işte dışarıdan bir x sayısını alacağız.
+
+27
+00:09:04,011 --> 00:09:05,771
+Bunun faktör yerini hesaplayacağız.
+
+28
+00:09:06,672 --> 00:09:10,291
+Ve ondan sonra da sonucu ekranda yazacağız.
+
+29
+00:09:10,631 --> 00:09:13,971
+Şimdi önce bir şeyi hatırlamaya çalışalım şurada.
+
+30
+00:09:13,971 --> 00:09:23,671
+En faktör yer dediğimiz şey aslında eğer n sıfırsa birdir.
+
+31
+00:09:26,491 --> 00:09:30,112
+Farklı sıfırdan büyük oldu şöyle diyeyim.
+
+32
+00:09:30,692 --> 00:09:34,732
+en büyüktür sıfırsa
+
+33
+00:09:34,732 --> 00:09:37,272
+n çarpı
+
+34
+00:09:37,272 --> 00:09:39,631
+n eksi bir faktörü yerdir.
+
+35
+00:09:40,272 --> 00:09:40,592
+Yani
+
+36
+00:09:40,592 --> 00:09:42,951
+yapılması gereken şey
+
+37
+00:09:42,951 --> 00:09:44,851
+n faktörüyle hesaplamak için
+
+38
+00:09:44,851 --> 00:09:47,571
+örneğin 4 faktörüyle hesaplamak için
+
+39
+00:09:47,571 --> 00:09:50,092
+4 çarpı 3 faktörü yerdir.
+
+40
+00:09:50,592 --> 00:09:51,692
+O da
+
+41
+00:09:51,692 --> 00:09:54,011
+4 çarpı 3 çarpı
+
+42
+00:09:54,011 --> 00:09:55,532
+2 faktörü yerdir.
+
+43
+00:09:55,931 --> 00:09:58,071
+4 çarpı 3 çarpı
+
+44
+00:09:58,071 --> 00:10:04,611
+2 çarpı 1 faktöre dediğiniz zaman aslında sonucu bulmuş oluyorsunuz.
+
+45
+00:10:04,671 --> 00:10:08,811
+Yani 4 faktöre ile hesaplamak için 3 faktöre ile ihtiyacımız var.
+
+46
+00:10:09,552 --> 00:10:16,031
+3 faktöre ile hesaplamak için 3 çarpı 2 faktöre ile ihtiyacımız var.
+
+47
+00:10:16,031 --> 00:10:20,711
+2 faktöre ile hesaplamak için 2 çarpı 1 faktöre ile ihtiyacımız var.
+
+48
+00:10:21,071 --> 00:10:27,431
+Yani burada gördüğünüz gibi n faktöre ile hesabında n çarpı n-1 faktöre ile ihtiyacımız var.
+
+49
+00:10:27,431 --> 00:10:33,291
+O zaman bunu şey yaparak rekürsif olarak yazabiliriz.
+
+50
+00:10:33,451 --> 00:10:44,192
+Yani n faktöriyeli hesaplamak için fonksiyonu n faktöriyeli için çağırdığımızda o da n-1 faktöriyel için fonksiyonu çağırabilir.
+
+51
+00:10:44,631 --> 00:10:49,991
+İşte n-1 için n-2'yi çağırır şeklinde geriye doğru gide gide yapabiliriz.
+
+52
+00:10:49,991 --> 00:10:51,891
+Şimdi önce bir şeyi düşünelim.
+
+53
+00:10:53,011 --> 00:10:57,231
+Normal iterasyonlarla bunu yapmayı düşünelim.
+
+54
+00:10:57,431 --> 00:11:06,192
+faktöriyel fonksiyonumuzu klasik yazalım.
+
+55
+00:11:16,916 --> 00:11:18,916
+Aşır.
+
+56
+00:11:23,059 --> 00:11:29,719
+şöyle yazalım. Tabi sayının n sayısının pozitif verildiğini varsayıyoruz. Şu anda onunla uğraşmıyoruz.
+
+57
+00:11:29,719 --> 00:11:41,059
+i'yi birden başlattık o yüzden. i n'den küçük olduğu sürece i'yi arttırdık biz altta dedik ki
+
+58
+00:11:41,059 --> 00:11:50,059
+i'ye eşittir ve onu da işimiz bittiğinde geri döndük. Şimdi buraya kadar sormak istediğiniz bir şey var mı?
+
+59
+00:11:50,059 --> 00:12:02,740
+Yani bu birinci sınıfta büyük bir ihtimalle gördüğünüz bir algoritma i1'den n'e kadar değişirken n faktörleri hesaplamak istediğimizde sonucu i ile çarpa çarpa gidiyoruz.
+
+60
+00:12:02,740 --> 00:12:12,379
+Yani nedir? 4 faktörleri hesaplamak istediğimizde i'yi birden 4'e kadar götüreceğiz. O zaman result ne olacak?
+
+61
+00:12:12,379 --> 00:12:37,240
+%6'nız 1'di. i eşittir 1 için 1 olacak. i eşittir 2 için elinizde 1 vardı. 1 çarpı 2 olacak. Şöyle yazalım. i eşittir 1, i eşittir 2. i eşittir 3 için ne olacak? Elinizde 2 vardı. 2 çarpı 3 olacak. i eşittir 4 için elinizde 6 vardı. 6 çarpı 4 olacak.
+
+62
+00:12:37,240 --> 00:12:44,960
+ve zaten döngüden çıktığınızda 4 faktöryelin sonucunu 24 olarak elde etmiş olacaksınız.
+
+63
+00:12:44,960 --> 00:12:47,899
+Şimdi bunu böyle yazabiliriz.
+
+64
+00:12:47,960 --> 00:13:00,600
+Burada gördüğünüz gibi işte şurada çağırdığımız faktöryel fonksiyonunu bu şekilde küsüp olmayan haline yapabiliriz.
+
+65
+00:13:00,600 --> 00:13:16,899
+İkinci de bunu aynı işi yani burada döngüyle yaptığımız işi aynı işi şurada döngüyle yaptığımız işi şey olarak yapabiliriz rekürsif olarak yapabiliriz. Bir de ona bakalım rekürsif olarak nasıl yazacağımıza bakalım birlikte.
+
+66
+00:13:16,899 --> 00:13:30,519
+Şimdi yine burada aslında burada önce de küsük yazmadan önce bir her seferinde recursion'da şey olan ne?
+
+67
+00:13:30,519 --> 00:13:38,939
+Yaptığımız işlemle aslında aynı fonksiyonu daha küçük problemler için tekrar tekrar çağırmak.
+
+68
+00:13:38,939 --> 00:13:47,379
+yani bu da aynı işi yapan fonksiyonu daha küçük parçalar için tekrar çağırmak.
+
+69
+00:13:47,379 --> 00:13:53,419
+Şimdi burada da ne oluyor n factorial için n-1 factoriali çağırıyorsunuz.
+
+70
+00:13:53,439 --> 00:13:56,999
+n-1 factoriali için n-2 factoriali çağırıyorsunuz.
+
+71
+00:13:57,079 --> 00:14:02,399
+Yani yaptığımız işten hep aynı factorial hesabı fonksiyonu.
+
+72
+00:14:02,739 --> 00:14:05,379
+Ama ne yapmış oluyorsunuz?
+
+73
+00:14:05,379 --> 00:14:09,799
+her seferinde bir adım geriye giderek çağırmış oluyorsunuz.
+
+74
+00:14:09,799 --> 00:14:12,279
+O zaman ben bunu nasıl yazabilirim?
+
+75
+00:14:13,739 --> 00:14:22,839
+Bu sefer rekürsif olarak nasıl yazarım?
+
+76
+00:14:28,628 --> 00:14:30,447
+faktoryal fonksiyonumu
+
+77
+00:14:30,447 --> 00:14:34,267
+şimdi
+
+78
+00:14:34,267 --> 00:14:37,067
+yaptığım iş ne aslında
+
+79
+00:14:37,067 --> 00:14:40,387
+her seferinde
+
+80
+00:14:40,387 --> 00:14:42,947
+bu
+
+81
+00:14:46,004 --> 00:14:50,103
+Bir küçük değer için faktöriyel fonksiyonunu çağırmak.
+
+82
+00:14:50,823 --> 00:14:58,083
+Yani işte n için şurada faktöriyel fonksiyonu n için geldiğinde tamam diyoruz ne olacak?
+
+83
+00:14:58,083 --> 00:15:03,043
+N çarpı şurada n-1 için faktöriyeli çağırıyoruz.
+
+84
+00:15:03,163 --> 00:15:09,783
+Yani her n değeri için faktöriyel fonksiyonunu o n değerinden bir küçük değer için çağırıyoruz.
+
+85
+00:15:09,903 --> 00:15:11,104
+Yaptığımız işlem bu.
+
+86
+00:15:11,543 --> 00:15:13,623
+Yani o zaman ne olmuş oluyor?
+
+87
+00:15:13,623 --> 00:15:16,963
+Şurada gösterecek olursak.
+
+88
+00:15:18,443 --> 00:15:25,083
+Şimdi faktöriyeli faktöriyel fonksiyonunu 3 sayısı için çağırdığınızda,
+
+89
+00:15:25,544 --> 00:15:35,684
+burada en eşittir 3 iken, 3 için çağırdığınızda o diyor ki 3 çarpı faktöriyel 2'yi çağır diyor.
+
+90
+00:15:35,783 --> 00:15:37,423
+Yani şurası onu söylüyor bize.
+
+91
+00:15:38,083 --> 00:15:43,263
+N çarpı faktöriyel n-1 dediği 3 çarpı faktöriyel 2'yi çağır diyor.
+
+92
+00:15:43,263 --> 00:15:51,403
+O ne diyor? 2'in çarpı faktöriyel 1'i çağır diyor.
+
+93
+00:15:51,864 --> 00:15:58,283
+Şimdi burada ne diyeceğiz? O da diyecek ki 1 çarpı faktöriyel 0'ı çağır diyecek aslında.
+
+94
+00:15:58,943 --> 00:16:02,523
+O da işte 0 çarpı faktöriyel eksi 1'i çağır diyecek.
+
+95
+00:16:02,823 --> 00:16:06,283
+Bu nereye kadar gidecek böyle? Sonsuza kadar gidecek.
+
+96
+00:16:06,283 --> 00:16:08,743
+Şimdi çünkü recursion'da olay ne?
+
+97
+00:16:08,743 --> 00:16:13,224
+işte enin değeri neyse en eksi bir için bu böyle çağıra çağıra gidiyor.
+
+98
+00:16:13,663 --> 00:16:17,663
+Şimdi o zaman demek ki döngüde biz bunu nasıl engelliyorduk?
+
+99
+00:16:18,023 --> 00:16:20,823
+Döngüde biz bunu şey yaparak engelliyorduk.
+
+100
+00:16:21,263 --> 00:16:27,643
+Burada işte birden başlattım ene kadar diyerek bir sınır belir diyerek düzenliyorduk.
+
+101
+00:16:27,743 --> 00:16:29,724
+Böylece o sınırlar içerisinde işlenmedi.
+
+102
+00:16:29,724 --> 00:16:32,523
+Şimdi bu burada böyle sonsuza kadar çağıra çağıra gidiyor.
+
+103
+00:16:32,523 --> 00:16:39,703
+Demek ki bizim aynı şeyi rekürsif fonksiyon içinde yapmamız bir durma noktası olmasını sağlamamız gerekiyor.
+
+104
+00:16:39,863 --> 00:16:41,083
+Yoksa sonsuza kadar gider.
+
+105
+00:16:41,723 --> 00:16:44,123
+Peki buradaki bizim durma noktamız ne?
+
+106
+00:16:44,463 --> 00:16:45,523
+Hemen şeye bakıyoruz.
+
+107
+00:16:46,343 --> 00:16:49,303
+Rekürsün için yazdığımız bağıntımıza bakıyoruz.
+
+108
+00:16:49,443 --> 00:16:51,043
+Diyoruz ki burada nedenmiş?
+
+109
+00:16:51,103 --> 00:16:55,224
+N faktörü yeri hesaplarken N çarpı N-1 faktörü çağır.
+
+110
+00:16:55,364 --> 00:17:01,563
+Ama N eşittir 0 ise N faktörü yer 1'e eşittir diyoruz.
+
+111
+00:17:02,524 --> 00:17:05,524
+O yüzden bunu yazarken bunu şöyle diyebiliriz.
+
+112
+00:17:06,584 --> 00:17:07,584
+If diyebiliriz.
+
+113
+00:17:07,664 --> 00:17:08,524
+Bir kere bir şey ise.
+
+114
+00:17:09,604 --> 00:17:11,524
+And eğer sıfırsa.
+
+115
+00:17:15,264 --> 00:17:16,744
+Şöyle de diyebiliriz.
+
+116
+00:17:16,824 --> 00:17:19,104
+Yani burada işçi kontrol altında tutmak için.
+
+117
+00:17:19,484 --> 00:17:20,544
+Şöyle diyebiliriz.
+
+118
+00:17:21,244 --> 00:17:22,884
+If diyebiliriz.
+
+119
+00:17:23,364 --> 00:17:24,824
+En küçüktür sıfır.
+
+120
+00:17:24,824 --> 00:17:29,123
+İşte return eksi bir mesela.
+
+121
+00:17:29,123 --> 00:17:30,843
+karşı tarafta da
+
+122
+00:17:30,843 --> 00:17:33,163
+eğer negatif bir değer
+
+123
+00:17:33,163 --> 00:17:35,123
+gelirse hata mesajı versin.
+
+124
+00:17:36,403 --> 00:17:37,203
+If işte
+
+125
+00:17:37,203 --> 00:17:39,183
+en eşit eşittir
+
+126
+00:17:39,183 --> 00:17:40,683
+sıfırsa
+
+127
+00:17:40,683 --> 00:17:43,243
+return bir
+
+128
+00:17:43,243 --> 00:17:44,364
+else
+
+129
+00:17:44,364 --> 00:17:46,643
+pardon
+
+130
+00:17:46,643 --> 00:17:49,224
+şu else farklı renkle yazmak
+
+131
+00:17:49,224 --> 00:17:50,864
+istemiştim. Şöyle yapalım.
+
+132
+00:17:51,003 --> 00:17:52,803
+Birazcık yamuk oldu
+
+133
+00:17:52,803 --> 00:17:54,263
+şey else'in yeri ama
+
+134
+00:17:54,263 --> 00:17:57,243
+bir dakika daha yukarıdan
+
+135
+00:17:57,243 --> 00:17:59,323
+yapayım. Çünkü görürken siz şimdi
+
+136
+00:17:59,323 --> 00:18:00,363
+yanlış görmeyin bunu.
+
+137
+00:18:01,023 --> 00:18:02,543
+Şimdi şöyle yapayım. If diyorum.
+
+138
+00:18:03,243 --> 00:18:04,923
+En diyorum küçüktür sıfırsa
+
+139
+00:18:04,923 --> 00:18:07,163
+return eksilir. Çünkü negatif değerler için
+
+140
+00:18:07,163 --> 00:18:08,403
+bunu yapamaması lazım.
+
+141
+00:18:09,063 --> 00:18:11,003
+If diyorum en eşittir sıfırsa
+
+142
+00:18:11,003 --> 00:18:12,023
+return bir
+
+143
+00:18:12,023 --> 00:18:14,303
+else diyorum.
+
+144
+00:18:14,903 --> 00:18:17,263
+Faktöriye çağır. Şimdi ne oldu? Ben o zaman
+
+145
+00:18:17,263 --> 00:18:18,923
+durma şartını sağladım.
+
+146
+00:18:19,723 --> 00:18:21,803
+Faktöriye sıfırı çağırdığında
+
+147
+00:18:21,803 --> 00:18:23,123
+şimdi artık burası
+
+148
+00:18:23,123 --> 00:18:25,283
+ne olacak? Şurayı silebilirim.
+
+149
+00:18:25,283 --> 00:18:31,783
+faktöriyel sıfırı çağırdığında burası diyecek ki tamam bir bir diyecek.
+
+150
+00:18:32,323 --> 00:18:34,703
+En eşittir sıfırsa return bir.
+
+151
+00:18:35,164 --> 00:18:36,783
+Buraya bir gelmiş olacak.
+
+152
+00:18:37,224 --> 00:18:41,884
+O zaman burada da bu fonksiyon faktöriyel bir için bittiğinden.
+
+153
+00:18:42,288 --> 00:19:06,407
+ne olacak? Buranın return değeri bir, beşe geri dönmüş oldu. Yani şuraya geri dönmüş oldu. O zaman faktöriyel ikiye geri döndü. O iki diyecek. Ondan sonra o da üç çarpı faktöriyel iki dediğimiz yerde hesap altı çıkacak.
+
+154
+00:19:06,407 --> 00:19:13,527
+ve böylece bizim faktoriyel 3 fonksiyonundan döndüğümüzde elimizdeki sonuç değeri 6 olacak.
+
+155
+00:19:13,687 --> 00:19:14,407
+Yani ne oldu?
+
+156
+00:19:15,407 --> 00:19:25,288
+Şey şurada faktoriyel 2 çağrıldı, burada faktoriyel 1 çağrıldı, burada faktoriyel 0 çağrıldı.
+
+157
+00:19:25,288 --> 00:19:26,907
+Şimdi ne oldu peki?
+
+158
+00:19:28,247 --> 00:19:34,288
+Burada faktoriyel 0 bitti, faktoriyel 1'e döndü.
+
+159
+00:19:34,288 --> 00:19:40,547
+Faktoriyel 1 bitti, Faktoriyel 2'ye döndü. Faktoriyel 2 bitti, Faktoriyel 3'e döndü.
+
+160
+00:19:40,547 --> 00:19:46,408
+Ve böylece her seferinde bir üste döndü.
+
+161
+00:19:47,347 --> 00:19:52,548
+Ve Faktoriyel 3'ten de nereye döndü? Ana programa, kendisini çağıran programa döndü.
+
+162
+00:19:53,548 --> 00:19:55,567
+Buraya kadar sormak istediğiniz bir şey var mı?
+
+163
+00:20:05,299 --> 00:20:28,179
+Peki o zaman burada biz ne yapmış olduk? Aslında ikisinde de aynı işi yaptık. Yani recursive olmayanda döngüyle yaptığımız işi burada recursive olan da bu şekilde döngüyle tekrar eden işi kendi kendine aynı fonksiyonu daha küçük değerler için n için n-1 değeri için faktöryel fonksiyonunu tekrar çağırdık.
+
+164
+00:20:28,179 --> 00:20:35,519
+daha küçük değerler için aynı fonksiyonu çağırarak işin tekrar etmesini sağlamış olduk.
+
+165
+00:20:36,519 --> 00:20:40,259
+Şimdi burada dikkat etmemiz gereken şey şu.
+
+166
+00:20:44,599 --> 00:20:54,639
+Böyle bir şey yazarken, recursive fonksiyon yazarken demek ki bizim bir durma noktamızın olması lazım ki şey olsun.
+
+167
+00:21:03,763 --> 00:21:05,984
+sonsuza kadar dönmesin.
+
+168
+00:21:06,263 --> 00:21:07,123
+Şimdi bu bizim
+
+169
+00:21:15,316 --> 00:21:29,495
+rekürsif parçamız. Şurası n çarkı factorial n-1'deki factorial n-1 bizim rekürsif parçamız. Ve şuradaki şu parçamızda
+
+170
+00:21:34,900 --> 00:21:36,900
+parçamızda
+
+171
+00:21:36,900 --> 00:21:42,900
+base case'imiz
+
+172
+00:21:42,900 --> 00:21:43,900
+bizim
+
+173
+00:21:43,900 --> 00:21:46,900
+durmamızı sağlamayan yer yani
+
+174
+00:21:46,900 --> 00:21:50,900
+bunun sonsuza kadar dönmesini engelleyen yerimiz
+
+175
+00:21:54,324 --> 00:21:56,383
+Buraya kadar sormak istediniz bir şey var mı?
+
+176
+00:22:02,867 --> 00:22:10,067
+var mı sorunuz? Şimdi birkaç tane böyle örnek üzerinden gidelim.
+
+177
+00:22:13,067 --> 00:22:27,667
+O zaman bir dizideki bütün elemanları dizinin elemanlarını işte 3, 5, 7, 2 mesela böyle dizimiz var A dizimiz var.
+
+178
+00:22:28,243 --> 00:22:45,523
+bir adizimiz var. Bunların elemanlarının toplamını istiyor. Yani 3 artı, 5 artı, 7 artı, 2 istiyor. Şimdi burada da yine baktığımız zaman bu iteratif böyle döngü içerisinde de yapabileceğiniz bir şey. Yine az önce olduğu gibi recursifle yazabileceğiniz bir şey.
+
+179
+00:22:45,523 --> 00:22:56,203
+Şimdi burada da bakacak olursak şey yazmıyorum ne derler ana programı yazmıyorum sadece fonksiyonu yazacağım.
+
+180
+00:22:56,203 --> 00:22:58,243
+Ben bunu şöyle de yazabilirsiniz.
+
+181
+00:23:03,635 --> 00:23:06,435
+İşte bir A dizimiz var.
+
+182
+00:23:08,096 --> 00:23:12,815
+Bir N sayımız var.
+
+183
+00:23:18,387 --> 00:23:22,067
+İyi diyelim buna da şimdi şey olmasın bir dakika.
+
+184
+00:23:26,612 --> 00:23:27,612
+yukarıda gösterelim. if diyorum i küçüktür 0 ise yine burada da i eğer 0'dan küçükse buradan çıkmanız lazım. Eğer değilse
+
+185
+00:23:46,163 --> 00:23:57,163
+A'nın i'incisini bu sefer i-i birinci eleman için gelecek olan değerlerle toplayarak sonucu elde ediyorum.
+
+186
+00:23:57,163 --> 00:24:03,163
+Şimdi bunu şeyde yazıyor olsaydı...
+
+187
+00:24:10,451 --> 00:24:35,891
+iteratif olarak yazıyorsaydım şöyle yazacaktım. i'yi sıfırdan başlatacaktım. i küçüktür n için. Pardon şurada şöyle bir değişken daha tanımlayayım. sam diye bir değişkenimiz daha olsun. Onu da başta sıfıra eşitliyim. i sıfırdan başlatacağım. i küçüktür n için yapacağım şey.
+
+188
+00:24:35,891 --> 00:24:59,231
+anın inçini toplaya toplaya gidecektim. İşte iş bittiğinde de sum'ı geri döndürecektim. Şurada bizim main programımızın olduğunu varsayalım. Main program ne yapacak?
+
+189
+00:25:12,819 --> 00:25:16,819
+şurada aynı olması için ikisinin de şunu şöyle yapayım.
+
+190
+00:25:28,723 --> 00:25:44,723
+şöyle yapayım, şöyle küçük eşitliyim, şuraya da sum'ı şey için çağırsın, n-1 için çağırsın, böylece ikisi aynı işi yapıyor olsun ben. Şöyle yapayım, tamam şimdi oldu.
+
+191
+00:25:49,172 --> 00:26:03,411
+Şurada n-1 verdiğim için şurada da n'e kadar dedim. İ küçük eşit n'e kadar dedim. Çünkü burada da n-1'den başlayarak geri geri gittiği için o şekilde yaptım.
+
+192
+00:26:04,031 --> 00:26:10,611
+Şimdi bakın nasıl yapıyor. Recursion olana bakalım. Öbür klasik olanı zaten siz yaparsınız.
+
+193
+00:26:10,611 --> 00:26:18,911
+Diyelim ki i'yi 3'ten başlattım şu anda bizim şu dizideki durumumuz.
+
+194
+00:26:18,911 --> 00:26:39,311
+Şimdi bakalım i eşittir 3 için diyor ki i eşittir 3 için diyor ki a'nın üçüncüsü, a'nın ikincisi artı kol diyor iki için olan şey diyor.
+
+195
+00:26:39,311 --> 00:27:08,212
+Şuraya bir saniye uzun uzun fonksiyon adını yazmamak için S yazacağım şöyle S'i diyor samofere yani şunu kısalttım şöyle çünkü durmadan aynı şeyi yazmak uzun geldi şu an bana S diye yazdım S'i 2 için çağır diyor şimdi gittim ben bu fonksiyondayım şu anda o da diyor ki tamam iyi küçük müdür 0'dan ayrı 2 çünkü
+
+196
+00:27:08,212 --> 00:27:19,131
+o zaman diyor ki A'nın ikincisi yani 7 artı diyor kol diyor S fonksiyonunu diyor.
+
+197
+00:27:20,771 --> 00:27:22,972
+Tabii hiçbiriniz beni uyarmıyorsunuz.
+
+198
+00:27:24,292 --> 00:27:25,871
+Şuranın adı sumofarray.
+
+199
+00:27:27,871 --> 00:27:29,792
+Hiç kimse uyarmadı.
+
+200
+00:27:35,220 --> 00:27:57,339
+fonksiyonun adı Samoferi diye. Esi diyor, i-1, 1 için çağır diyor. Şimdi buraya geldim. O da diyor ki, a'nın birincisi 5 artı, esi diyor, 0 için çağır diyor. Buraya geldim, kol şöyle, 0'a geldim.
+
+201
+00:27:57,339 --> 00:28:06,439
+0'da diyor ki A'nın 0'ncısı 3'tü. 3 artı kol diyor esi diyor A'nın eksi birincisi için çağır diyor.
+
+202
+00:28:06,439 --> 00:28:14,580
+Şimdi buradan toplayarak dönmeye başlıyoruz. Şimdi A'nın eksi birincisi için çağırdığımızda bunun sonucu ne oldu?
+
+203
+00:28:14,679 --> 00:28:20,859
+Bakın şurada görüyorsunuz ilk küçüktür 0 ise return 0'dan örtülü. Onun sonucu 0 oldu.
+
+204
+00:28:21,419 --> 00:28:25,939
+3 artı 0 3. O zaman bu fonksiyondan geriye 3 döndü.
+
+205
+00:28:25,939 --> 00:28:50,339
+O zaman burası ne oldu? 8 oldu. Buraya 8 döndü. 8 artı 7 burası 15 oldu. O zaman şu fonksiyona 15 döndü. 15 artı A'nın ikincisi şurası yanlış yazmışım. Siz beni hiç uyarmıyorsunuz. 3 olacak şurası da.
+
+206
+00:28:50,339 --> 00:28:53,319
+15 artı A'nın üçüncüsü 2 idi.
+
+207
+00:28:54,039 --> 00:28:55,499
+2, 17.
+
+208
+00:28:56,219 --> 00:29:03,279
+Ana programa yani şurada fonksiyonu çağıran ana programa dönen değer 17 oldu.
+
+209
+00:29:04,319 --> 00:29:07,319
+Bu dizinin elemanlarının toplamı 17.
+
+210
+00:29:07,639 --> 00:29:10,339
+Şimdi bir bakın buraya kadar sormak istediğiniz bir şey var mı?
+
+211
+00:29:20,084 --> 00:29:21,163
+Sanırım yok hocam.
+
+212
+00:29:22,043 --> 00:29:23,683
+Yok peki, teşekkür ederim.
+
+213
+00:29:25,703 --> 00:29:30,084
+Peki, o zaman şimdi adımlarımızı belirleyelim.
+
+214
+00:29:30,084 --> 00:29:39,684
+Şimdi birinci yapmamız gereken şey her zaman recursive algoritma yazarken bir base case'imizin olması lazım.
+
+215
+00:29:40,163 --> 00:29:44,764
+Base case dediğimiz şey bizim durma noktamız.
+
+216
+00:29:44,764 --> 00:30:02,124
+Yani şöyle bir kez daha gösterirsek mesela bu algoritmamızda base case'imiz şurası. Yani diyoruz ki i sıfırdan küçük olursa sıfır dönsün döndür ve bitsin bu algoritma diyoruz.
+
+217
+00:30:02,124 --> 00:30:14,264
+Yani bu algoritma için bizim base case'imiz if i küçüktür 0, return 0 demek artık geriye doğru çağrı çağrı gitme yoksa çünkü sonsuza kadar gider.
+
+218
+00:30:14,903 --> 00:30:21,644
+Burada dur demek yani artık işlem yapılmayacak noktayı belirliyoruz o bizim durma noktamız oluyor.
+
+219
+00:30:21,644 --> 00:30:31,244
+O zaman recursion'un durmasını sağlayan şarta şey diyoruz base case diyoruz.
+
+220
+00:30:31,243 --> 00:30:33,243
+you can just
+
+221
+00:30:36,500 --> 00:30:37,500
+algoritmamızda recursive case'in ne olduğunu belirlememiz. Şimdi yine bizim bu algoritmamız için buradaki recursive case şurası yani aslında tam olarak baktığımız zaman tam olarak şurada
+
+222
+00:31:02,324 --> 00:31:04,824
+burada şeyin çağrıldığı yer.
+
+223
+00:31:08,723 --> 00:31:10,743
+Recursive case de burası.
+
+224
+00:31:12,143 --> 00:31:12,803
+Oldu mu?
+
+225
+00:31:14,624 --> 00:31:16,684
+Burası da recursive case.
+
+226
+00:31:16,803 --> 00:31:19,024
+Yani sum of array function'ın
+
+227
+00:31:19,024 --> 00:31:19,484
+tekrar
+
+228
+00:31:19,484 --> 00:31:22,483
+çağrıldığı yer.
+
+229
+00:31:22,743 --> 00:31:23,463
+Şimdi o zaman
+
+230
+00:31:23,463 --> 00:31:28,904
+birinci yapacağımız şey base case'i
+
+231
+00:31:28,904 --> 00:31:30,744
+belirledik. İkinci yapacağımız şey
+
+232
+00:31:30,744 --> 00:31:32,443
+recursive case'i belirledik.
+
+233
+00:31:32,984 --> 00:31:34,723
+Üçüncü olarak yapmamız
+
+234
+00:31:34,723 --> 00:31:36,343
+gereken şey de
+
+235
+00:31:36,343 --> 00:31:37,343
+Evet.
+
+236
+00:31:43,476 --> 00:32:10,236
+eninde sonunda base case'e ulaşılacağından emin olmanız. Şimdi tamam ben base case yazdım da hiçbir zaman bu sıfıra kadar gitmiyorsa o zaman demek ki ne olması lazım? Benim sonsuza kadar dönen bir programım var. Bir çözüm üretmem lazım. Yani algoritmaların üzerinden bir daha geçmem lazım. Bu orası yani Ensure Recursion Terminates dediği yerde bizim bir bakmamız lazım.
+
+237
+00:32:10,236 --> 00:32:18,816
+gerçekten ben recursive işlemlerin sonunda base case ile durma noktasına ulaşıyor muyum?
+
+238
+00:32:19,615 --> 00:32:21,476
+Buna dikkat etmen lazım.
+
+239
+00:32:21,575 --> 00:32:27,976
+O zaman demek ki bir recursive ipodma gerçekleştirirken dikkat etmem gereken şeyler bunlar.
+
+240
+00:32:29,236 --> 00:32:31,496
+Buraya kadar sormak istediniz bir şey var mı?
+
+241
+00:32:31,575 --> 00:32:32,775
+Bir bakın, dikkat edin.
+
+242
+00:32:33,275 --> 00:32:36,175
+Bir şey varsa çözelim.
+
+243
+00:32:43,571 --> 00:32:47,571
+Ondan sonra işte
+
+244
+00:32:50,963 --> 00:32:55,123
+sonunda da zaten probleminizi çözmüş oluyorsunuz.
+
+245
+00:32:56,223 --> 00:33:01,023
+Şimdi burada bir takım türleri var. Onlardan bahsedeceğim recursion'un.
+
+246
+00:33:02,844 --> 00:33:08,564
+Yani recursive bir program yazarken birincisi directed recursion denilen şey.
+
+247
+00:33:09,023 --> 00:33:18,663
+Şey yapabilirsiniz. Eğer fonksiyon kendi kendisine doğrudan çağırıyorsa buna directed recursion deniyor.
+
+248
+00:33:30,259 --> 00:33:51,680
+eğer kendi kendini çağırıyorsa, direct recursion deniyor. Mesela faktöriyelde olduğu gibi, yani yaptığınız şey şu, diyelim ki rekürsif bir fonksiyonunuz var, işte bir Z değeri için bu fonksiyonu çağırdınız, ondan sonra o diyelim ki işte
+
+249
+00:33:51,680 --> 00:33:52,680
+Eeeeh...
+
+250
+00:33:56,564 --> 00:34:01,363
+mesela z bölü 2 için
+
+251
+00:34:01,363 --> 00:34:03,923
+z bölü 2 için
+
+252
+00:34:14,579 --> 00:34:37,359
+Tekrar F fonksiyonunu çağırıyor mesela. Bu recurs şey olması, directed doğrudan çağırması. İkincisi ve bu çok az kullanılan bir hali, indirect recursion var. Bu çok dikkatli takip edilmesi gereken bir şey. O şöyle bir şey.
+
+253
+00:34:37,359 --> 00:34:43,119
+gelin ki bir f1 fonksiyonumuz var. Onun içerisinde şöyle bir şey yaptınız mesela.
+
+254
+00:34:43,119 --> 00:34:52,819
+x eşittir 1 ise return x. Ondan sonra else dediniz ki return f2x dediniz mesela.
+
+255
+00:34:53,679 --> 00:35:03,979
+Burada da f2 fonksiyonumuz var. O da diyor ki işte şöyle yapayım pardon. Onu da içeriye alayım.
+
+256
+00:35:08,052 --> 00:35:34,732
+O da diyor ki, return diyor mesela, F1X diyor mesela. Şimdi burada ne oldu? Aslında direct olmayan bir şekilde yine indirect bir şekilde recursion yapmış oldunuz. Yani bu F1, F2'yi çağırdı ama F2 tekrar F1'i çağırdı. Aslında burada bir recursion'u indirect bir şekilde yapmış oldunuz.
+
+257
+00:35:34,732 --> 00:35:51,912
+Buna çok dikkat etmek lazım çünkü şey iyi bir şey değil aslında yani böyle yaptığınızda takibini çok iyi yapmanız lazım. Indirect conversion yaptığınız zaman bunun nasıl olduğuna çok dikkat etmemiz lazım.
+
+258
+00:35:51,912 --> 00:36:04,252
+Peki şimdi recursive fonksiyon yazmanın avantajı nedir, dezavantajı nedir?
+
+259
+00:36:04,252 --> 00:36:11,672
+Onun üzerinden birlikte geçelim sonra bir ara verelim bir beş dakika bunun üzerinde konuşalım.
+
+260
+00:36:11,671 --> 00:36:41,132
+Yani şimdi bazı problemler var ki bir kere benim size tavsiyem şu gerçekten iteratif olarak işte bir döngüyle forla neyse işte tekrar eden şimdi bir kere ne zaman recursion kullanıyoruz tekrar eden aynı iş olduğunda mutlaka tekrar eden aynı iş olduğunda diyoruz ki ben bunu recursive yazarsam işte ne bileyim aynı iş n factorialde gördüğünüz gibi yani buradaki çok
+
+261
+00:36:41,131 --> 00:36:49,231
+aslında faktöriyeli şey yazmanın bir anlamı yok. Yani iteratif yazdığınızda da çok basit ve anlaşılır bir şekilde çözülüyor da
+
+262
+00:36:49,231 --> 00:36:55,991
+recursion'a örnek vermek açısından, kolaylığı açısından genelde faktöriyelin rekürsif hali gösteriliyor.
+
+263
+00:36:55,991 --> 00:37:05,431
+Şimdi burada mesela yani aynı iş şu faktöriyel hesabı daha küçük bir parça için aynı işi tekrar ediyorsunuz.
+
+264
+00:37:05,431 --> 00:37:12,611
+Şimdi öyle bir durumda recursive fonksiyon yazmamız doğru ama artıların eksilerini düşünmemiz lazım.
+
+265
+00:37:12,611 --> 00:37:21,611
+Mesela bu problem için aslında yani ben bunu dönbüyle de yaptığımda aynı temizlikte, aynı basitlikte zorlanmadan yapabiliyorum.
+
+266
+00:37:22,251 --> 00:37:33,011
+Ama mesela işte önümüzdeki zamanlarda göreceğimiz diyelim ki bir quicksort algoritmasında onu recursive yazmazsanız altından kalkmanız çok zor.
+
+267
+00:37:33,011 --> 00:37:39,791
+çünkü algoritmik olarak recursive çözüm çok daha basit, daha rahat anlaşılan bir çözüm.
+
+268
+00:37:40,151 --> 00:37:45,311
+Dolayısıyla recursion'ı mecbur kaldığınızda kullanmanız doğru.
+
+269
+00:37:45,311 --> 00:37:49,391
+Ama mecbur değilseniz şuna dikkat etmeniz gerekiyor.
+
+270
+00:37:49,391 --> 00:38:03,071
+Şimdi recursion yaptığınızda her recursive fonksiyon fonksiyonunuzun yeni bir kopyasını stack bölgesinde, bellekte stack bölgesinde yeni bir kopyasını
+
+271
+00:38:04,724 --> 00:38:29,363
+yaratıyor. Ve değişkenler, argılanlar bu stack bölgesinde tutuluyor. Dolayısıyla her bir kürsit çağırmanızda siz siteyi tuta tuta devam ediyorsunuz. Neden? Çünkü şimdi şurada faktöriyel 3 için bir stack bölgesinde yer tuttunuz. Çünkü main fonksiyonumuz bu faktöriyeli çağırdı, bu fonksiyonu çağırdı.
+
+272
+00:38:29,363 --> 00:38:41,203
+faktoriyel 2 için bir kere daha bu sefer yeni bir faktoriyel fonksiyon için yer açtınız ama 3 de duruyor aslında bellek bölgesinde.
+
+273
+00:38:41,203 --> 00:38:50,444
+Şimdi bu dururken bu sefer bir de faktoriyel 1 için şey yaptınız ayrı bir stack bölgesinde ayrı bir yer tuttunuz.
+
+274
+00:38:50,603 --> 00:38:53,183
+Bu böyle gidiyor recursive çağırmada.
+
+275
+00:38:53,183 --> 00:39:00,584
+Yani 3'ü kapatmadan, 3 için kullandığınız yeri serbest bırakmadan 2 için yeni bir yere ihtiyaç duyduğunuz.
+
+276
+00:39:00,904 --> 00:39:05,463
+2 için kullandığınız yeri serbest bırakmadan 1 için yeni bir yere ihtiyaç duyduğunuz.
+
+277
+00:39:05,803 --> 00:39:07,823
+Bu böyle böyle aşağı doğru devam ediyor.
+
+278
+00:39:08,163 --> 00:39:09,124
+O zaman ne oluyor?
+
+279
+00:39:09,124 --> 00:39:15,883
+Mesela şey görmüşsünüzdü bazen yazdığınız programlarda Stack Overflow hatası verir.
+
+280
+00:39:15,883 --> 00:39:24,923
+programını stack overflow hatası verdiyse ya illa recursion kullanmanıza gerek yok.
+
+281
+00:39:25,663 --> 00:39:31,583
+Herhangi bir fonksiyonumuzun içerisinde sonsuz bir döngüde kalmasınızda bir şekilde,
+
+282
+00:39:31,583 --> 00:39:34,843
+yani bunun recursive olmasına gerek yok.
+
+283
+00:39:35,183 --> 00:39:36,823
+Sonsuz döngüde kalmasınızdır.
+
+284
+00:39:36,863 --> 00:39:39,003
+O yüzden stack overflow veriyordur.
+
+285
+00:39:39,363 --> 00:39:43,783
+Ya da recursive fonksiyonunuz recursiondan çıkamıyordur.
+
+286
+00:39:43,783 --> 00:39:50,264
+veya çok fazla defa recursion fonksiyonu kendi kendisini çağırmıştır.
+
+287
+00:39:50,823 --> 00:39:53,263
+Bundan ötürü de stack overflow oluşmuş olabilir.
+
+288
+00:39:53,463 --> 00:39:58,343
+Dolayısıyla yani böyle bir sıkıntı var birincisi.
+
+289
+00:39:59,423 --> 00:40:03,683
+İkincisi siteyi yönetmek zorunda kalıyorsunuz.
+
+290
+00:40:03,683 --> 00:40:05,003
+Bu da bir yavaşlık getiriyor.
+
+291
+00:40:05,243 --> 00:40:12,243
+Yani işte yok parametreleri aktardım, nerede kaldığımı aktardım, lokal değişkenler tanımladım bilmem ne.
+
+292
+00:40:12,243 --> 00:40:18,983
+her function çağrışınızda recursive olarak bunu tekrar tekrar yapmanız gerekiyor.
+
+293
+00:40:19,084 --> 00:40:20,843
+Bu da bir yavaşlık overhead getiriyor.
+
+294
+00:40:22,444 --> 00:40:27,623
+Eğer zaten yani teratik olarak da çok kolaylıkla çözülecek bir probleminiz varsa
+
+295
+00:40:27,623 --> 00:40:29,724
+bu gereksiz bir yavaşlık getiriyor.
+
+296
+00:40:29,724 --> 00:40:30,983
+Yani bunun bir anlamı yok.
+
+297
+00:40:33,283 --> 00:40:35,603
+Yani recursion aslında daha yavaş.
+
+298
+00:40:36,164 --> 00:40:41,143
+Aynı işi yapabilen iki algoritmanız var ise tekrar söylüyorum.
+
+299
+00:40:41,143 --> 00:40:53,203
+bazı durumlarda şey yazmak çok mümkün olmuyor. Bunu düz yazmak çok mümkün olmuyor. Çünkü şeye ihtiyaç oluyor. Yani stack gibi çalışan çözüme ihtiyaç oluyor.
+
+300
+00:40:53,203 --> 00:41:03,604
+Hani bir onu hesaplayabilmek için bir önceki durumu bilmeye, ondan bir önceki durumu bilmeye falan böyle bir yapıya ihtiyaç duyduğu o zaman tamam.
+
+301
+00:41:03,603 --> 00:41:26,003
+yani mutlaka recursion kullanılır ama klasik yöntemlerle çok rahat çözülen bir probleminiz varsa recursive fonksiyon yazmanın klasik yönteme göre daha yavaş çalışma, boşu boşuna stack bölgesine tutma gibi dezavantajları var. Buna dikkat etmemiz gerekiyor. Var mı soru?
+
+302
+00:41:52,692 --> 00:42:20,692
+soru var mı? O zaman buraya yazıyorum. Her recursive fonksiyonu çağırdığımızda fonksiyonun yeni bir kopyası stack bölgesinde tutuluyor.
+
+303
+00:42:22,708 --> 00:42:26,708
+aslında hem bu işin yapılması bir yavaşlık hem de yer tutuyor.
+
+304
+00:42:29,347 --> 00:42:35,507
+Değişkenlerimiz, ondan sonra argümanlarımız stack de tutuluyor.
+
+305
+00:42:47,092 --> 00:42:49,312
+O zaman da bir overhead oluyor.
+
+306
+00:43:03,731 --> 00:43:27,751
+Dolayısıyla tekrardan yani eğer aynı şekilde problemi çözen iki yaklaşımınız varsa rekürsif çağırma stack'te gereksiz yere fazla yer tuttuğu için ve stack işlemleriyle bir vakit harcamanız gerektiği için daha yavaş oluyor. Var mı sorunuz?
+
+307
+00:43:31,507 --> 00:43:56,627
+Peki, o zaman bir ara verelim burada. Şu anda kaçmış saat? Ha, soru varmış ama şimdi bunu konuşmuştuk arkadaşlar, soruları buradan yazmayın diye. Çünkü ben full screen'de göremiyorum. Ha, evet denmiş, peki. Hangi aşamada evet dediniz onu bilemiyorum şu anda ama sorunuz olursa fensesli sorun çünkü şey, göremiyorum ben.
+
+308
+00:43:56,627 --> 00:44:07,807
+Tamam o zaman şu anda bir dakika 13.42'miş 13.55'e kadar 2'ye 5 kala devam ederiz ara verelim teşekkür ederim
+
+309
+00:59:04,436 --> 00:59:33,755
+Evet, tekrar devam edelim kaldığımız yerden. Yani demek ki genelde şey, sınavlarda falan biz çok karşılaşıyoruz. Her şeyi recursive yazmaya çalışan öğrenciler oluyor. Bunu yapmayın. Yani sadece karar verin. Bunu gerçekten recursive yazmam gerekiyor mu, gerekmiyor mu? Buna karar verin.
+
+310
+00:59:33,755 --> 00:59:44,915
+ona göre lazım. Şimdi bir de yani buradaki tek problemimiz aslında şu anda gördüğümüz gibi işte sürekli defalarca şeyin çağrılmasına müthirlenir.
+
+311
+00:59:44,915 --> 01:00:01,375
+Hani şurada gördüğünüz gibi her seferinde zaten bir fonksiyon çağırdığımız için bir fonksiyon çağırmayla ilgili işte stack değer tuttum, değişkenleri, parametreleri sakladım, dönüş adreslerini sakladım vesaire gibi işlemleri.
+
+312
+01:00:01,375 --> 01:00:05,755
+bu faktöriyel fonksiyonu 3 değeri için çağrıldığını da yaptık.
+
+313
+01:00:06,075 --> 01:00:12,976
+Bu daha burada dururken bu sefer 2 faktöriyel için yani 2 değeri için tekrar faktöriyeli çağırdık.
+
+314
+01:00:12,976 --> 01:00:16,135
+Yani o defalarca kopyalar oluşturduk.
+
+315
+01:00:16,296 --> 01:00:22,796
+Bunun hem bu işi her seferinde yapmanın bir zaman kaybı var hem de gereksiz yeri bir yer kaybı var.
+
+316
+01:00:24,095 --> 01:00:28,595
+Bunun dışında şöyle sıkıntılar da var.
+
+317
+01:00:28,695 --> 01:00:30,955
+Şimdi buna özellikle dikkatinizi çekmek istiyorum.
+
+318
+01:00:31,375 --> 01:00:44,695
+yaptığımız şey sırasında eğer ad problemler fonksiyon yazarken, recursive yazısı fonksiyon yazarken ad problemler birbiriyle ilişkiliyse
+
+319
+01:00:51,380 --> 01:01:03,380
+Bu sefer de aynı işi yapan fonksiyonları defalarca çağırma gibi bir problem de olabiliyor. Bu da sık karşılaşılan bir sıkıntı.
+
+320
+01:01:03,380 --> 01:01:17,380
+Mesela buna da çok güzel bir örnek Fibonacci problemidir. Fibonacci problemini hatırlarsınız. Şöyle bir şey, ilk 3 sayımız 0-1-1 iken,
+
+321
+01:01:17,380 --> 01:01:37,819
+her sayı kendisinden önce gelen iki sayının toplamı olduğundan işte burada bir ile biri topladım iki, bir ile ikiyi topladım üç, işte üç ile ikiyi topladım beş gibi her sayı kendisinden önce gelen iki sayının toplamına eşit oluyor.
+
+322
+01:01:37,819 --> 01:01:53,939
+O zaman ben burada da yine şey yazarken, recurrence bağıntısını yazarken aslında şu şekilde üç tane C oldu.
+
+323
+01:01:53,939 --> 01:01:59,380
+bir n sayısı için, verilen bir n sayısı için
+
+324
+01:01:59,380 --> 01:02:03,499
+yani fibonacci değerini yazarken
+
+325
+01:02:03,499 --> 01:02:08,499
+mesela altının fibonacci sayısı değeri kaçtır diye yazarken
+
+326
+01:02:08,499 --> 01:02:09,759
+ne diyeceğim?
+
+327
+01:02:09,880 --> 01:02:21,100
+Eğer işte n sıfıra eşitse sıfır, n bir'e eşitse bir değilse
+
+328
+01:02:21,100 --> 01:02:30,760
+n-1 ile n-2'nin toplamına eşitleyeceğim.
+
+329
+01:02:32,880 --> 01:02:38,420
+Eğer n0 veya 1 değilse n-1 ile n-2'nin toplamına eşitleyeceğim.
+
+330
+01:02:38,500 --> 01:02:39,979
+Şimdi bakar bakmanız görünüyor zaten.
+
+331
+01:02:40,140 --> 01:02:44,839
+Ben bunu çok güzel bir şekilde rekürsif yazabilirim.
+
+332
+01:02:45,299 --> 01:02:48,159
+Yazayım da o zaman rekürsif yazayım bunu.
+
+333
+01:02:57,076 --> 01:03:17,076
+n sıfıra eşitse durma şartım bunlar benim sıfır. n1'e eşitse 1 değil mi? Değilse
+
+334
+01:03:32,179 --> 01:03:38,019
+Şunu şöyle rahat takip edebilmeniz için ben yerim olmadığı için yanı kullanacağım çünkü böyle alt alta yazdım.
+
+335
+01:03:38,120 --> 01:03:43,100
+Aslında bunları yan yana Fibonacci n-1 artık Fibonacci n-2 yan yana yazabilirsiniz aslında.
+
+336
+01:03:43,899 --> 01:03:47,979
+Ben sağ tarafı kullanacağım için öyle yazmak durumunda kal.
+
+337
+01:03:48,259 --> 01:03:52,440
+Öncelikle bir de kodu yazarken bir şeylerin üzerinden geçmek istiyorum bilmeniz açısından.
+
+338
+01:03:52,959 --> 01:03:56,600
+Kimse sormuyor çünkü aslında sormanızı beklerdim.
+
+339
+01:03:56,600 --> 01:04:13,179
+tabi derste de size daha önce böyle gösterilmişse sormamanız da normal ama niye acaba şurada if n eşittir 0 yazıyor n eşittir 0 ise return 0 var zaten n 0 eşitse bu fonksiyondan çıkıp gidecek niye acaba ben burada bir daha altına if diyorum
+
+340
+01:04:16,659 --> 01:04:40,080
+Veya daha doğrusu niye şurada onu da diyebilirsiniz. Niye acaba else diyorum yani şöyle sorayım soruda en eşittir 0 ise return 0 dedi çıktı gitti. Değilse en eşittir 1 ise return 1 dedi çıktı gitti. Bir daha burada else demesem zaten en 0 veya 1 değilse buraya gireceği belli. Niye burada else diyorum sizce? Demeli miyim?
+
+341
+01:04:40,080 --> 01:04:47,639
+Hocam 2 girdiğimiz zaman 1 ve 0 elde ediyoruz ya o yüzden olabilir mi?
+
+342
+01:04:48,639 --> 01:04:51,659
+İşte ettiysek çıktı gitti return 1 ise gitti buradan.
+
+343
+01:04:52,099 --> 01:04:55,719
+Dolayısıyla zaten 0 veya 1 değilse buraya iniyordur.
+
+344
+01:04:55,719 --> 01:05:02,740
+Bu else demesek de bak şimdi şunu sorayım önce şu else demesen bu haliyle bu program doğru mu? Doğru çalışır mı?
+
+345
+01:05:02,739 --> 01:05:12,879
+Fibonacci'nin ikinci sayısını elde etmemiz gerektiğinde program çalışmayabilir sanki.
+
+346
+01:05:15,979 --> 01:05:18,279
+Bu haliyle doğru çalışır bir kere.
+
+347
+01:05:19,199 --> 01:05:26,179
+Çünkü sen diyorsun ki n1 ise return 1 diyorsun, n0 ise return 0 diyorsun.
+
+348
+01:05:26,619 --> 01:05:30,240
+Bu iki şart sağlanmıyorsa zaten nereye düşecek? Buraya düşecek.
+
+349
+01:05:30,240 --> 01:05:54,939
+değil mi? Şu sağlanmıyorsa, bu iki şart sağlanmıyorsa buraya düşecek. Bu iki şarttan birisi sağlanıyorsa zaten çıkıp gitmiş olacak. Buradan çıkıp gitmiş olacak. Dolayısıyla burada else demeseniz de olur aslında. Bizim burada else dememizin sebebi bunu her zaman yapın. Yani zaten hani return var zaten yukarı girdiyse return'e çıkıp gidecek.
+
+350
+01:05:54,939 --> 01:05:59,100
+else yazmasam da demek yukarı girmediyse else durumunda zaten bunu yapacak.
+
+351
+01:05:59,240 --> 01:06:01,359
+Yani bunu yazmasanız da olur aslında.
+
+352
+01:06:02,079 --> 01:06:07,079
+Bizim yazma sebebimiz tamamen okuyan açısından anlaşılır olsun diye.
+
+353
+01:06:07,919 --> 01:06:14,539
+Yani okuyan ha aksi durumda bu işi yapıyorum iyice anlasın diye kendince iki saat hesap yapıp
+
+354
+01:06:14,539 --> 01:06:17,999
+öyleyken öyle böyleyken böyleyken bakar bakmaz şurada niye anlıyor?
+
+355
+01:06:18,399 --> 01:06:21,079
+L0 değilse 1 değilse buraya girecek anlıyor.
+
+356
+01:06:21,499 --> 01:06:23,700
+Yani hesap kitap yapmak zorunda değil.
+
+357
+01:06:23,700 --> 01:06:33,999
+bunu anlaşılırlık açısından koyuyorsunuz. Başka koymasanız da çalışır halbuki. Tamamen o tip şeylerde anlaşılırlık açısından yapıyorsunuz.
+
+358
+01:06:33,999 --> 01:06:45,779
+Şimdi gelecek olursak, çalışmasına bakacak olursak, şimdi bakalım Fibonacci'yi F yazacağım uzun olmaması için ya da FİB falan mı yazayım?
+
+359
+01:06:46,620 --> 01:06:51,939
+Neyse F yazımı F dediğinde anlayacaksınız. 6 değer için çağırdığımızı düşünelim.
+
+360
+01:06:51,939 --> 01:06:59,760
+Yani işte 6 verildiğinde fibonacci 6'yı hesaplasın istiyoruz.
+
+361
+01:06:59,760 --> 01:07:03,079
+Şimdi bakalım fibonacci 6 kimi çağırıyor?
+
+362
+01:07:03,699 --> 01:07:09,380
+Fibonacci 5 artı fibonacci 4'ü çağırıyor değil mi?
+
+363
+01:07:13,972 --> 01:07:14,592
+Evet hayır.
+
+364
+01:07:17,192 --> 01:07:20,051
+Evet yani Fibonacci 5 artı Fibonacci 4'ü çağırıyor.
+
+365
+01:07:20,331 --> 01:07:21,871
+Fibonacci 5 kimi çağırıyor?
+
+366
+01:07:22,352 --> 01:07:25,871
+Fibonacci 4 artı Fibonacci 3'ü çağırıyor değil mi?
+
+367
+01:07:26,312 --> 01:07:28,071
+Her seferinde içeri girdiğinde.
+
+368
+01:07:29,111 --> 01:07:34,131
+Ve Fibonacci 4 de Fibonacci 3 artı Fibonacci 2'yi çağırıyor.
+
+369
+01:07:35,251 --> 01:07:36,291
+Bu kimi çağırıyor?
+
+370
+01:07:36,291 --> 01:07:39,171
+3 artı 2'yi çağırıyor.
+
+371
+01:07:39,251 --> 01:07:40,211
+Bu kimi çağırıyor?
+
+372
+01:07:40,671 --> 01:07:42,751
+2 artı 1'i çağırıyor.
+
+373
+01:07:43,972 --> 01:07:48,391
+Bu 2 artı 1'i çağırıyor.
+
+374
+01:07:49,332 --> 01:07:54,832
+Bu 1 artı 0'ı çağırıyor.
+
+375
+01:07:54,992 --> 01:07:55,791
+Devam ediyorum.
+
+376
+01:07:55,791 --> 01:07:58,492
+2 artı 1'i çağırıyor.
+
+377
+01:08:00,992 --> 01:08:07,291
+1 artı 0'ı.
+
+378
+01:08:08,531 --> 01:08:12,031
+F1 zaten kendisi 1 döndürüyor, bitiriyor burada.
+
+379
+01:08:12,031 --> 01:08:17,651
+burası 1 döndürüyor, burası 1 döndürüyor, 0 döndürüyor.
+
+380
+01:08:18,131 --> 01:08:23,071
+F2 hala 1 artı 0'ı çağırıyor.
+
+381
+01:08:23,192 --> 01:08:27,171
+Bu 1 döndürüyor, şu 0 döndürüyor, şu 0, şu 1.
+
+382
+01:08:27,171 --> 01:08:29,151
+Şimdi burada bizi ne rahatsız etti?
+
+383
+01:08:34,003 --> 01:09:03,764
+burada bizi şu rahatsız etti. Bakın F4'e bakın kaç defa çağrılmış. Bir burada çağrılmış bir burada çağrılmış. F3'e bakalım kaç defa çağrılmış. Burada çağrılmış, burada çağrılmış, burada çağrılmış. F2'ye bakıyorum. 1, 2, 3, 4, çağrılmış. Görüyor musunuz? Şimdi bu da recursion'ın yanlış, kötü kullanımına bir örnek.
+
+384
+01:09:03,764 --> 01:09:20,044
+Yani alt problemler şurada yazdığımız gibi alt problemler birbirine bağlı ve biz bunu fark etmeden yani aslında baktığımız zaman çok güzel böyle hani gayet güzel yazmışız böyle bakar bakmaz da anlaşılıyor.
+
+385
+01:09:20,043 --> 01:09:27,063
+en değeri için Fibonacci'nin 6 için neyi çağırıyor? 5 ile 4'ün toplamıdır gerçekten de öyle değil mi?
+
+386
+01:09:27,443 --> 01:09:29,883
+Kendisinden önceki iki tanesinin toplamıdır.
+
+387
+01:09:30,523 --> 01:09:34,843
+Dolayısıyla yani çok şık bir şekilde bakar bakmaz burada ne olduğunu anlıyorsunuz.
+
+388
+01:09:35,143 --> 01:09:40,224
+Ama burada ne oluyor? Aynı şeyler defalarca çağrılıyor gereksiz yere.
+
+389
+01:09:40,963 --> 01:09:44,364
+Tamam mı? Bakın F1 kaç defa çağrılmış birlikte bakalım.
+
+390
+01:09:44,364 --> 01:09:47,963
+F1'e bakıyoruz.
+
+391
+01:09:48,603 --> 01:09:56,524
+1 burada, 2 burada, 3 burada, 4 burada, 5 burada, 6 burada.
+
+392
+01:09:56,524 --> 01:09:58,864
+Ha burada da varmış, pardon şurada da.
+
+393
+01:09:59,264 --> 01:10:09,584
+F2'de F1 artı F0 dediği için 1, 2, 3, 4, 5, 6, 7 burada, 8 burada.
+
+394
+01:10:09,583 --> 01:10:36,363
+gördünüz mü bir tek F1'i 8 defa tekrar tekrar hesaplıyor. Gördünüz mü F2 mesela şurada unutmuşuz onu şurada bir F2 daha var bir tek F2'yi 1, 2, 3, 4 defa hesaplıyor. Dolayısıyla mesela bunun hesabını yapmışlar Fibonacci 6 için 1.6 üzeri en tane toplama işlemi yapılıyormuş.
+
+395
+01:10:36,364 --> 01:11:01,364
+Yani gayet gereksiz bir şekilde aynı işleri defalarca yapıyorsunuz. O zaman demek ki recursive fonksiyon kullanırken ilk dikkat etmemiz gereken şey aynı işi klasik non-recursive bir algoritmada açık ve basit bir şekilde çözebiliyorsak
+
+396
+01:11:01,364 --> 01:11:18,203
+Hani stack ihtiyacı falan duyulmayan bir önceki değerleri bilerek bir sonraki değerleri hesaplandı böyle stack kullanarak çözülmesine ihtiyaç duyulmayan özellikle problemlerimizde o zaman non-recursive yazacağız.
+
+397
+01:11:18,203 --> 01:11:23,903
+Çünkü boşu boşuna işte fonksiyona gittim geldim overhead ile uğraşmak istemiyorsak
+
+398
+01:11:23,903 --> 01:11:33,383
+İkinci olarak da böyle burada gördüğünüz gibi aynı şeylerin defalarca çağrılması durumunda da
+
+399
+01:11:33,383 --> 01:11:39,823
+Gereksiz işlem yapılmasına sebep olduğu için böyle bir şey olup olmadığına dikkat edeceğiz
+
+400
+01:11:39,823 --> 01:11:45,523
+Recursive fonksiyonumuzu yazarken ki boşu boşuna şey yapmayalım
+
+401
+01:11:47,315 --> 01:12:03,315
+zaman kaybetmeyelim. Aynı fonksiyonu, burada gördüğünüz gibi yani aynı değerler için fonksiyonu, burada işte mesela 3 için 2 defa, işte bilmem 2 için 5 defa, sadece 6 değeri için fibonacci sayısını hesaplayacağız.
+
+402
+01:12:03,315 --> 01:12:09,016
+6 defa 2 için Fibonacci funk fonksiyonunu çağırıyoruz.
+
+403
+01:12:09,375 --> 01:12:18,915
+Halbuki bir defa çağırsam Fibonacci 2'yi bir kere elde etsem bunu kullanabilmek varken 6 defa çağırmak durumunda kalıyoruz.
+
+404
+01:12:18,915 --> 01:12:31,396
+O yüzden bunun klasik gayet şık bir şekilde şey çözülmesi mümkünken, döngü içerisinde çözülmesi mümkünken bu şekilde recursive kullanılması uygun değil.
+
+405
+01:12:31,395 --> 01:12:34,195
+Bu ekodak da sormak istediğiniz bir şey var mı?
+
+406
+01:12:38,100 --> 01:12:40,039
+var mı sormak istediğiniz bir şey?
+
+407
+01:12:42,159 --> 01:12:42,759
+Yok hocam.
+
+408
+01:12:43,359 --> 01:12:46,060
+Tamam peki. O zaman devam edelim.
+
+409
+01:12:46,480 --> 01:13:03,819
+Şimdi bir tane mesela yani yine şey recursive çözmeseniz de şey olan gayet yerinde olan ama recursive çözülen algoritmalardan birinden bahsetmek istiyorum.
+
+410
+01:13:03,819 --> 01:13:10,479
+Çünkü bu karşımızda çok fazla recursif çözümü çıkabilecek bir algoritma binary search algoritması.
+
+411
+01:13:10,479 --> 01:13:13,539
+Şimdi binary search mantığımızı hatırlayalım birlikte.
+
+412
+01:13:14,019 --> 01:13:22,379
+Binary search'ta bizim yaptığımız şey, küçükten büyüye sıralı bir dizimiz varsa veya büyükten küçüğe de olabilir fark etmez önemli olan sıralı olması.
+
+413
+01:13:23,059 --> 01:13:26,619
+Elinizde sıralı bir dizimiz varsa diyelim ki şöyle.
+
+414
+01:13:33,747 --> 01:13:44,787
+en eşittir 8 için 8 elemanlı bir dizimiz var ve bir x sayısını arıyorsunuz. Diyelim ki önce var olan bir sayı arayalım biz de 29'u arayalım.
+
+415
+01:13:44,787 --> 01:13:59,987
+Şimdi normalde bir arama yaparken bütün elemanlara tek tek bakmak uygunken burada bizim yaptığımız gereksiz kontrolleri engellemek.
+
+416
+01:13:59,987 --> 01:14:19,367
+Ben şöyle yapsam, 8 elemanım varsa 7 artı 0, 2, 3. eleman lefti 0, righti 7 ise
+
+417
+01:14:28,884 --> 01:14:57,863
+midi de 7 bölü 2, 3 olacağı için. Üçüncü göze baktım, 11. Şimdi benim 29, 11'den büyükse mantıken bunlara hiç bakmama gerek yok. Bu 11'den küçük olan bütün sayılardan büyüktür. O zaman şöyle yapayım, left, right, mid diye 3 tane değişken yapayım. 0, 7 iken 3. O zaman bunların hiç bine bakmama gerek olmadığına göre başlangıç noktamı mid artı 1, yani 4 yaparım.
+
+418
+01:14:58,884 --> 01:15:01,564
+4'ten 7'ye kadar olan şu bölüme bakarım.
+
+419
+01:15:02,203 --> 01:15:07,543
+7, 4 daha 11, 2'ye böl 5, 5. göze bakarım.
+
+420
+01:15:07,724 --> 01:15:09,744
+17, 5. gözde 17 var.
+
+421
+01:15:10,224 --> 01:15:12,303
+Şimdi 29, 17'den de büyük.
+
+422
+01:15:12,683 --> 01:15:15,763
+O zaman bunlara da bakmama, 13'ye de bakmama gerek yok.
+
+423
+01:15:15,763 --> 01:15:23,464
+Yani bu sayede tam ortadan bakarak, her seferinde bakmam gereken aralığın tam ortasından bakarak,
+
+424
+01:15:23,463 --> 01:15:30,303
+en baştan tek tek bakmak yerine bir grup bilgiyi daha hiç bakmadan elemiş oluyorum.
+
+425
+01:15:30,303 --> 01:15:37,424
+Yani dediğim gibi 11'e baktığım zaman eğer sayım 11'den büyükse mutlaka 3-5-7'den de büyük olmak zorunda.
+
+426
+01:15:37,483 --> 01:15:39,343
+Yani niye bunlara bakarak vakit kalbineyim?
+
+427
+01:15:40,363 --> 01:15:45,723
+2'ye bölerek o yüzden binary search, 2'ye böle böle diziyi eleyerek ilerliyorum.
+
+428
+01:15:46,064 --> 01:15:49,303
+O zaman 5. göze baktığımda 5. göze 17 var.
+
+429
+01:15:49,303 --> 01:15:58,924
+29, 17'den de büyük olduğuna göre o zaman baktığım aralığının solu 6, sağ 7, 6. göze bakacağım.
+
+430
+01:15:58,924 --> 01:16:06,763
+6. gözde 21 var. 21'den de büyük. O zaman 7, 7, 7. göze bakacağım ve 29'da buldum.
+
+431
+01:16:07,083 --> 01:16:10,123
+Şimdi birinci şeyim bu. Yapabileceğim.
+
+432
+01:16:10,123 --> 01:16:24,564
+aradığım eleman bizdeyken bir tane de aradığım eleman bizde yokken ne yapacağımızı görelim. x değeri 8 olsun mesela.
+
+433
+01:16:32,404 --> 01:16:33,404
+Ơ
+
+434
+01:16:36,692 --> 01:16:38,692
+11'e baktım, mid 3.
+
+435
+01:16:38,692 --> 01:16:45,692
+8, 11'den küçükse bütün bunların hepsinden 13, 17, 21, 29 hepsinden küçüktür.
+
+436
+01:16:45,692 --> 01:16:51,192
+Onların hepsini el edim. O zaman bu sefer baktığım aralığın sonunu değiştirdim.
+
+437
+01:16:51,192 --> 01:16:52,692
+mid eksi 1 yaptım.
+
+438
+01:16:53,692 --> 01:17:03,692
+Neden? Çünkü 11'den küçükse baktığım aralığı daraltmak için 11'den küçük sayılara bakmam mantıklı olur.
+
+439
+01:17:03,692 --> 01:17:15,912
+0, 2, 2'nin 2, 2'ye böl, 1. birinci gözde 5 var. 5'ye baktım. 5'ten de büyük. O zaman 5'ten büyükse demek ki 3'e de bakmama gerekiyor.
+
+440
+01:17:15,912 --> 01:17:31,952
+Bu sefer baktığım aralığın başlangıcını değiştirdim. 2, 2, ortadaki değer 2, 7'ye baktım. 7'den büyük. O zaman baktığım aralığın başlangıcını değiştirmen gerekir. 3, 2.
+
+441
+01:17:31,951 --> 01:17:46,872
+Şimdi left 3, right 2 olunca ne oldu? Yani böyle bir şeyin mantığı yok. Çünkü baktığım aralığın başlangıcının değeri sonunun değerinden büyükse indis olarak left 3, right 2 yani böyle bir şey olmamaz.
+
+442
+01:17:46,872 --> 01:17:47,872
+ben her zaman biliyorum ki adreslerde son baştan büyük olmalı her zaman son baştan pardon büyük veya eşit olmalı o zaman left right'tan büyük olduğu zaman demek ki benim algoritmayı durdurmam gerekiyor yapmam gereken şey bu şimdi bunu bildiğinizi tahmin ediyorum biliyor musun herkes şuradan göreyim biliyorsunuz değil mi bunu şeyden
+
+443
+01:18:16,872 --> 01:18:22,232
+bilgisayar bilimlerine giriş veya programlama dillerinde gösterildiğini zannediyorum.
+
+444
+01:18:22,791 --> 01:18:23,711
+Değil mi? Yanılıyor muyum?
+
+445
+01:18:25,312 --> 01:18:25,812
+Görenleri kaldım.
+
+446
+01:18:25,812 --> 01:18:27,071
+Evet hocam göstermişlerdi.
+
+447
+01:18:27,071 --> 01:18:29,671
+Tamam, tamam. Görüyorsunuz tamam.
+
+448
+01:18:30,831 --> 01:18:32,272
+BBG'de gördüm tamam.
+
+449
+01:18:32,952 --> 01:18:37,071
+Şimdi o zaman demek ki yapmam gereken şeyi anladım ben.
+
+450
+01:18:38,171 --> 01:18:43,971
+Bulana kadar veya left right'tan büyük olana kadar ya bulunca çıkacağım ya da bulamadıysam,
+
+451
+01:18:43,971 --> 01:18:47,451
+left right'ten büyük olduysa demek ki bu eleman bu dizide yok.
+
+452
+01:18:48,011 --> 01:18:50,072
+O zaman bulamadığım için çıkacak.
+
+453
+01:18:50,072 --> 01:18:57,912
+Şimdi biz normalde bunu size şey yazmışlardır, bir tarifte yani adım adım döngüyle,
+
+454
+01:18:57,992 --> 01:19:00,751
+Y döngüsüyle nasıl yapılacağını göstermişlerdir.
+
+455
+01:19:01,292 --> 01:19:10,651
+Ama bunun şeyi de mümkün, anlaşılırlık açısından güzel olduğu için genelde rekursif binary search'u gösteriyorlar.
+
+456
+01:19:10,651 --> 01:19:19,251
+yine ben hani bana söyleyecek olursanız bunu da dövbeyle yapmanın daha efektif olduğu görüşündeyim.
+
+457
+01:19:19,251 --> 01:19:34,791
+Ama gelin birlikte çok kullanıldığı için binary search'un yani sıralı bir dizide aradığımız elemanın eğer varsa yerini bulmak için kullandığımız binary search'un recursive olarak nasıl olacağına bakalım.
+
+458
+01:19:34,791 --> 01:20:01,811
+Şimdi aradığımız eleman şu x elemanı. Initial durumda low 0 dizinin başını gösteriyor. High da n-1 şey gösteriyor. A dizisi için. En son elemanın adresini gösteriyor low ile high. Ama her adımda şimdi bu bizim için değişecek. Bakalım ne yapacağız? Bir tane vidimiz var.
+
+459
+01:20:01,811 --> 01:20:11,011
+Şimdi yine recursion mantığıyla düşünecek olursak durma şartımız ne?
+
+460
+01:20:12,011 --> 01:20:14,811
+Birden fazla durma şartımız var aslında.
+
+461
+01:20:15,431 --> 01:20:20,651
+Birincisi eğer low high'dan büyükse bulamadık demektir.
+
+462
+01:20:22,412 --> 01:20:23,391
+Return eksi bir.
+
+463
+01:20:23,511 --> 01:20:26,611
+Eğer elemanı bulamadıysak low high'dan büyüktür.
+
+464
+01:20:26,711 --> 01:20:29,511
+O zaman birinci durma şartımız, base case'imiz bu.
+
+465
+01:20:31,028 --> 01:20:35,687
+İkinci durma şartımız da aslında arada bir şey olacak şimdi bu.
+
+466
+01:20:36,008 --> 01:20:40,408
+Şimdi mid ne? Bizim bakacağımız elemanın adresi bizim tam ortası.
+
+467
+01:20:40,408 --> 01:20:44,467
+Yani o an için baktığımız bölgenin tam ortası.
+
+468
+01:20:44,887 --> 01:20:46,767
+Yani low artı high bölü 2.
+
+469
+01:20:47,507 --> 01:20:56,807
+Şimdi o zaman ikinci durma şartımız da eğer a mid x'e eşitse yine duracağız.
+
+470
+01:20:56,807 --> 01:21:00,587
+return mid diyeceğiz.
+
+471
+01:21:00,807 --> 01:21:02,307
+Elemanın adresi mid çünkü.
+
+472
+01:21:02,787 --> 01:21:03,327
+Yine duracağız.
+
+473
+01:21:03,427 --> 01:21:05,247
+Şimdi iki tane durma şartımız var.
+
+474
+01:21:05,927 --> 01:21:11,567
+Diğerlerinde ise ne oluyor eğer, şimdi buna bakalım yavaş yavaş.
+
+475
+01:21:12,687 --> 01:21:14,307
+Şöyle yazayım onu.
+
+476
+01:21:15,227 --> 01:21:16,547
+Dur, şöyle yazayım.
+
+477
+01:21:16,747 --> 01:21:18,667
+As diyeyim, if diyeyim.
+
+478
+01:21:19,147 --> 01:21:22,208
+O şartı şey yazayım, biraz dikkat çeksin.
+
+479
+01:21:22,208 --> 01:21:29,288
+A'nın birinci adresindeki elemanın değeri x'in değerinden büyükse.
+
+480
+01:21:29,447 --> 01:21:30,388
+Şimdi birinci durum bu.
+
+481
+01:21:30,388 --> 01:21:32,447
+Yani şurada, pardon.
+
+482
+01:21:39,604 --> 01:21:42,243
+Şurada dizi parçası üzerinde görelim.
+
+483
+01:21:52,595 --> 01:22:12,595
+mesela x'imiz 4 bölü 2 7 şuraya bakacağız x'imiz 3 olsun mesela. A'nın birinci gözündeki eleman yani 7 büyüktür 3'ten. Şimdi o zaman ne olacak? O zaman biz binary search'ü
+
+484
+01:22:15,956 --> 01:22:22,835
+kim için çağıracağız? Şu tarafı eleyerek, sağ tarafı eleyerek çağıracağız.
+
+485
+01:22:22,835 --> 01:22:23,975
+Low down,
+
+486
+01:22:24,635 --> 01:22:27,155
+ııı
+
+487
+01:22:29,235 --> 01:22:40,515
+mid eksi 1'e kadar olan bölgeye bak x değeri için. Yani bu eski high değeri aslında mid eksi 1 oldu şimdi.
+
+488
+01:22:41,715 --> 01:22:49,275
+Şimdi eğer A mid x'den büyükse yani 7.3'den büyük olduğu için 7.3'den büyükse sağ tarafı elemem gerektiğinden
+
+489
+01:22:49,275 --> 01:22:56,835
+baktığım aralığın başlangıcı aynı kalıyor, low aynı kalıyor ama high'ı mid eksi 1 yapıyorum.
+
+490
+01:22:56,835 --> 01:23:15,195
+neden? Çünkü sadece 3'de 5'e baksın diye. Şimdi birinci durum bu. x eşittir 3 iken. Şimdi o zaman şu anda loğum sıvı sıfır, payımda mid eksi bir yani bir. O zaman ne oldu? Mid ne oldu?
+
+491
+01:23:15,195 --> 01:23:19,256
+0 artı 1 bölü 2 0 oldu.
+
+492
+01:23:19,256 --> 01:23:21,735
+Şimdi ikinci durum da o zaten.
+
+493
+01:23:22,916 --> 01:23:27,835
+İkinci durumdaysa diyorum ki else diyorum.
+
+494
+01:23:29,895 --> 01:23:32,195
+Else dediğim şey nedir aslında?
+
+495
+01:23:32,835 --> 01:23:40,855
+Söylemek istediğim şey aslında anın midi küçük tür x'ten.
+
+496
+01:23:41,036 --> 01:23:43,676
+Yani buradaki durum anın midi 3.
+
+497
+01:23:43,675 --> 01:23:47,255
+3 küçük daha x eşittir 3 demişim hay Allah ya.
+
+498
+01:23:48,035 --> 01:23:49,955
+5 de sevmişim hadi 5 diyeyim mi?
+
+499
+01:23:50,615 --> 01:23:52,955
+5 olsun arkadaşlar hadi 5 yaptım.
+
+500
+01:23:53,555 --> 01:23:55,955
+Şuraya da 5 bir adım daha gitsin de görün istiyorum.
+
+501
+01:23:56,495 --> 01:23:57,415
+Şurası da 5 olsun.
+
+502
+01:23:57,995 --> 01:24:00,495
+3 küçüktür 5'ten.
+
+503
+01:24:00,495 --> 01:24:03,155
+O zaman ne yapmam lazım?
+
+504
+01:24:03,435 --> 01:24:06,315
+O zaman da başlangıç aralığını değiştirmem lazım.
+
+505
+01:24:06,895 --> 01:24:11,055
+O zaman diyorum ki bu sefer diyorum binary search'u
+
+506
+01:24:15,060 --> 01:24:26,459
+mid artı birden başlayıp, h'ya kadar olan bölüm için çalıştır diyorum. Tamam mı? Yaptığım şey bu. Şimdi birlikte bakalım.
+
+507
+01:24:29,259 --> 01:24:43,879
+Adım adım. Şuraya sildim. X eşittir 5 için. Adım adım inceleyelim nasıl olduğunu. Şimdi şurada low diyeyim, high diyeyim ve mid diyeyim. Birlikte bakalım.
+
+508
+01:24:43,879 --> 01:24:49,999
+başlangıçta low 0, high 4, midde 2. x eşittir 5 için yapıyoruz.
+
+509
+01:24:50,379 --> 01:24:55,299
+Şimdi bakıyorum burada x, şurada parantez unutmuşum.
+
+510
+01:24:57,900 --> 01:25:02,939
+x eşittir an'ın midi mi? 5 eşit midir? 2. gözde 7 var. Hayır.
+
+511
+01:25:03,240 --> 01:25:11,280
+O zaman bakıyorum 7, an'ın midinci gözündeki eleman 7.
+
+512
+01:25:11,279 --> 01:25:20,240
+büyük müdür 5'ten evet o zaman binary search'ı bu sefer low ve mid-exibi 1 için çağırıyorum.
+
+513
+01:25:20,479 --> 01:25:22,159
+Şimdi 0 ve 1 için çağırdım.
+
+514
+01:25:22,280 --> 01:25:23,019
+Girdim buraya.
+
+515
+01:25:23,639 --> 01:25:31,799
+Low büyük müdür ay'dan hayır 1 eşittir low artı high bölü 2 yani 0.
+
+516
+01:25:33,399 --> 01:25:38,379
+Binary search'ı bu sefer şey için çağırdım.
+
+517
+01:25:38,379 --> 01:25:40,560
+Ưə
+
+518
+01:25:48,404 --> 01:26:08,763
+şurası için çağırmıştım. A mid 0, 0. [öğrenci] 3 var. 3 küçüktür şeyden, A'nın bitincisi 3 küçüktür 5'ten. O zaman binary search'ı burası için çağırıyorum. Yani low eşittir mid artı 1 oluyor, high 1 oluyor, mid de 1 oluyor.
+
+519
+01:26:08,763 --> 01:26:29,603
+Şimdi birinci göze bakıyorum. Önce şeyi kontrol ediyorum. No büyük müdür hayda? Hayır. O zaman mid eşittir işte 1 artı 1 bölü 2 1. A'nın birinci gözü yani 5 eşit midir 5'e? Evet return mid. O zaman ben mid adresini yani burada biri return ediyorum.
+
+520
+01:26:29,604 --> 01:26:31,964
+ana programa return ediyorum.
+
+521
+01:26:32,363 --> 01:26:34,683
+Burada bizim yaptığımız şey bu.
+
+522
+01:26:35,124 --> 01:26:37,043
+Durma şeklimiz bu şekilde.
+
+523
+01:26:38,324 --> 01:26:42,503
+Burada aynı fonksiyonu şey için çağırıyoruz.
+
+524
+01:26:42,503 --> 01:26:49,944
+Yani dizinin bölerek baktığımız aralığı değiştirmek için çağırıyoruz.
+
+525
+01:26:50,463 --> 01:26:56,043
+İhtiyacımıza göre işte bir şey sol tarafa bakmasını sağlıyoruz.
+
+526
+01:26:56,183 --> 01:26:59,543
+Bulunduğumuz bölgenin bir de sağ tarafına ihtiyacımıza göre.
+
+527
+01:26:59,603 --> 01:27:02,963
+amit x'den büyükse dizinin sol tarafına bakıyoruz.
+
+528
+01:27:03,404 --> 01:27:04,983
+Küçükse de sağ tarafına bakıyoruz.
+
+529
+01:27:05,084 --> 01:27:08,103
+Eşitse de bulduğumuz için durma şartı da çıkıyor.
+
+530
+01:27:08,703 --> 01:27:11,063
+Bulamadıysak da low high'dan büyük oluyor zaten.
+
+531
+01:27:11,543 --> 01:27:12,863
+O zaman da o şekilde çıkıyor.
+
+532
+01:27:13,223 --> 01:27:15,143
+Buraya kadar sormak istediğiniz bir şey var mı?
+
+533
+01:27:18,143 --> 01:27:19,503
+Bir düşünün lütfen.
+
+534
+01:27:19,683 --> 01:27:21,003
+Sormak istediğiniz bir şey var mı?
+
+535
+01:27:30,644 --> 01:27:52,183
+Peki, şimdi ben size bir tane soru söyleyeceğim. Yani bunu çözmeyeceğim. Sizin çözmenizi istiyorum. Bu çok eğlencelidir. İkinci sınıfta iken bize de sorulmuş bir soruydu. Çözümü kolay değil. Yani kendi başınıza ama sağa sola bakmadan kendi başınıza kolay değil ama çözerseniz hoşunuza gidecek bir soru.
+
+536
+01:27:52,183 --> 01:28:01,103
+tabuz o fanayı bakmayın ama dediğim gibi çözümlerine çünkü hemen bunu yazdığınız anda internette güzel güzel çözümünü görürsünüz.
+
+537
+01:28:01,103 --> 01:28:04,023
+Şeyleri var ona bakabilirsiniz onda bir sıkıntı yok.
+
+538
+01:28:07,883 --> 01:28:12,403
+Nedir? Demoları var böyle hani demosunu gösteriyor.
+
+539
+01:28:13,223 --> 01:28:18,004
+Onlara bakabilirsiniz ama algoritmasını kendiniz yapmaya çalışın.
+
+540
+01:28:24,020 --> 01:28:33,020
+Şimdi şöyle bir şey var, biraz açayım o zaman şurayı da Destination'la çok çiçe girdiler.
+
+541
+01:28:35,507 --> 01:29:01,067
+Şimdi, listleriniz var ağaç çubuğunda. Mesela işte bir tane şöyle kırmızınız var. Ondan sonra küçükken belki oynamışsınızdır. Böyle bir şey vardı. Bütün küçük çocuklarda plastikten şöyle bir şey vardı. Üst üste renkli renkli çocuklar renkleri öğrensinler falan diye şey yapılır.
+
+542
+01:29:01,067 --> 01:29:07,587
+üst üste renkli renkli halkalar vardır aslında böyle bir şeye çubuğa geçirilmiş.
+
+543
+01:29:08,067 --> 01:29:15,607
+Onları büyükten küçüğe büyük en altta olacak şekilde dizmeye çalışır çocuklar.
+
+544
+01:29:16,267 --> 01:29:18,287
+Bunun da öyle bir şey olduğunu düşünelim.
+
+545
+01:29:18,447 --> 01:29:21,887
+Şimdi diyelim ki şöyle dört tane halkanız var.
+
+546
+01:29:21,887 --> 01:29:29,607
+Soru şu ben bu halkaların aynı şekilde B'de toplanmasını istiyorum.
+
+547
+01:29:29,607 --> 01:29:45,707
+Yani nasıl? İş bittiğinde en altta kırmızı olacak, ortada pembe olacak, onun üzerinde yeşil olacak, onun üzerinde de mavi olacak şekilde B'de toplanmasını istiyorum.
+
+548
+01:29:45,707 --> 01:29:55,787
+ama kuralım var. Kuralım şu, asla küçük halkanın üzerine, yani daha doğrusu kuralları şuraya yazalım.
+
+549
+01:29:56,687 --> 01:30:06,307
+Birinci kuralım, her seferinde sadece bir diski oynatabilirsiniz. Yani dördünü birden aldım da oraya yerleştirdim diye bir şey yok.
+
+550
+01:30:06,307 --> 01:30:13,527
+Her seferinde sadece bir tane diski oynatabilirsiniz. Yani diyelim ki sadece maviye oynatabilirsin, sadece yeşilye oynatabilirsin.
+
+551
+01:30:13,527 --> 01:30:19,367
+İkinci ana kuralı asla küçük bir diskinin üzerine büyük bir disk gelemez.
+
+552
+01:30:43,604 --> 01:31:04,124
+üçüncü kuralında aradan disk çekemem sadece en üsttekini hareket ettirebilirim. Yani ne demek? Şimdi B'de şu anda hiçbir şey yok aslında. B şu vaziyette. İş bittiğinde o hale gelecek. B böyle boş şu anda.
+
+553
+01:31:04,124 --> 01:31:11,763
+Şimdi ilk hareket ettirebileceğim şu mali ya bir tek maviyi alıp buraya koyabilirim.
+
+554
+01:31:11,763 --> 01:31:19,723
+Yani aynı seferde pembeyi alttan pembeyi çıkartıp koyma gibi bir şansım yok.
+
+555
+01:31:20,243 --> 01:31:22,763
+Burada mesela şunu yapabilirim.
+
+556
+01:31:23,203 --> 01:31:28,944
+Diyelim ki işte maviyi aldım buraya koydum.
+
+557
+01:31:30,804 --> 01:31:32,723
+O zaman üstte yeşil kaldı.
+
+558
+01:31:32,723 --> 01:31:45,784
+diyelim ki işte yeşili de aldım buraya koydum bunu yapabilirim ama alttaki pembeyi çıkarabilmek için önce mavinin sonra da yeşilin oradan çıkmış olması gerekir.
+
+559
+01:31:45,784 --> 01:32:00,943
+Anlatabildim mi soruyu? Yani iş bittiğinde benden istenilen şey şu iş bittiğinde şöyle olacaklar kırmızı üzerinde pembe onun üzerinde yeşil
+
+560
+01:32:00,943 --> 01:32:10,943
+ve onun üzerinde de iş bittiğinde mavi olacak ama kurallarım şunlar birinci kuralım her seferinde sadece bir diski oynatabilirim.
+
+561
+01:32:11,683 --> 01:32:14,563
+Yani aynı anda hem mavi hem meşil oynatamam.
+
+562
+01:32:16,443 --> 01:32:22,083
+Hiçbir zaman büyüğün üzerine pardon küçüğün üzerine büyük gelmez.
+
+563
+01:32:22,083 --> 01:32:28,823
+Yani şu yok küçüğün üzerine büyük yani şu yok.
+
+564
+01:32:30,943 --> 01:32:44,803
+böyle bir şey yapamam. Ondan sonra ve her seferinde üstte kim varsa onu hareket ettirebilirim. Yani mavi gittiyse, yeşil gittiyse ancak o zaman şu pembeyi hareket ettirebilirim.
+
+565
+01:32:45,583 --> 01:32:56,283
+Ve bütün A'daki diskleri düzgün A'da olduğu sırayla B'ye taşımak istiyorum. C olarak da temporary bir şey kullanabilirim.
+
+566
+01:32:56,283 --> 01:32:58,223
+çubuk kullanabilirim.
+
+567
+01:32:58,443 --> 01:33:00,003
+Bir yerden bir yere aktarırken
+
+568
+01:33:00,003 --> 01:33:01,863
+C'den faydalanmak
+
+569
+01:33:01,863 --> 01:33:03,543
+yani üçüncü bir şeyden
+
+570
+01:33:03,543 --> 01:33:06,843
+çubuktan faydalanma hakkı var.
+
+571
+01:33:07,223 --> 01:33:08,143
+Ama iş bittiğinde
+
+572
+01:33:08,143 --> 01:33:09,963
+her şey B'de
+
+573
+01:33:09,963 --> 01:33:11,583
+A'dan B'ye geçmiş vasiyette
+
+574
+01:33:11,583 --> 01:33:13,623
+her şey B'de toplanmış olacak
+
+575
+01:33:13,623 --> 01:33:15,923
+ve bu şekilde düzgün bir sırayla
+
+576
+01:33:15,923 --> 01:33:17,423
+toplanmış olacak. Soru bu
+
+577
+01:33:17,423 --> 01:33:19,223
+bunu nasıl yaparsınız?
+
+578
+01:33:20,643 --> 01:33:22,023
+Bunu çözmeniz isteniyor.
+
+579
+01:33:23,104 --> 01:33:24,104
+Soru anlaşıldı mı?
+
+580
+01:33:27,956 --> 01:33:28,795
+Evet hocam.
+
+581
+01:33:29,696 --> 01:33:47,095
+Anladınız, tamam, peki. O zaman şöyle bir, şimdi bir on dakika ara daha verelim. Şimdi otuz kırk beşte devam ederiz. Kısaca linked listelere bir başlayalım. Ondan sonra şey yapacağız zaten, bugünü bitiririz.
+
+582
+01:33:49,855 --> 01:33:56,995
+Sorunuz varsa düşünün, aradan sonra sorunlarınız varsa konuşabiliriz.
+
+583
+01:33:56,995 --> 01:33:57,995
+Tamam.
+
+584
+01:33:57,995 --> 01:34:01,996
+O zaman şimdi bir ara verdim.
+
+585
+01:45:30,579 --> 01:45:34,239
+Şimdi ekranı görüyorsunuz sanıyorum. Görüyor musunuz?
+
+586
+01:45:35,040 --> 01:45:35,779
+Görüyoruz hocam.
+
+587
+01:45:36,399 --> 01:45:39,179
+Tamam. Şimdi evet buyurun.
+
+588
+01:45:41,019 --> 01:45:42,199
+Ekranı görüyoruz sanırım.
+
+589
+01:45:42,519 --> 01:45:44,119
+Tamam peki teşekkürler.
+
+590
+01:45:44,579 --> 01:45:49,500
+Şimdi şöyle, Vickersion'la ilgili de söyleyeceklerim şu anda bu kadar.
+
+591
+01:45:50,600 --> 01:45:53,039
+Sorunuz varsa sorabilirsiniz.
+
+592
+01:45:53,319 --> 01:45:58,559
+Yoksa ileriki haftalarda yeri geldiğinde yine üzerinden geçeriz.
+
+593
+01:45:58,559 --> 01:46:12,980
+Benim üzerine basa basa söyleyeceğim şey ben sınav kağıtlarını da bazen görüyorum yani zorlama bir recursion kullanımı var gerek olmaması da o zaman da çoğunlukla öğrenciler hata yapıyorlar.
+
+594
+01:46:12,980 --> 01:46:24,399
+İki şeyi tavsiye ederim size. Birincisi önce farklı örnekler deneyerek kendi kendinize recursive fonksiyon yazmaya çalışın.
+
+595
+01:46:24,399 --> 01:46:44,419
+çünkü onun düşünce mantığı biraz daha farklı olduğu için klasik döngülerle çözeceğiniz problem türüne göre kendi kendini çağıran fonksiyonu yazmada daha dikkatli olmanız gerekiyor.
+
+596
+01:46:44,419 --> 01:46:52,199
+İşte o gays geyzi, recursive geyzi vesaire iyi planlayarak, kurgulayarak algoritmanızı tasarlamamız gerekiyor.
+
+597
+01:46:52,199 --> 01:47:09,359
+Şimdi benim birinci tavsiyem size iyi yazmayı öğrenin. Yani nasıl recursive fonksiyon doğru yazarımı, base case nasıl ayarlarımı, recursive case nasıl yazmam gerekir vesaire bunu bir yaza yazıp bir alışın öğrenin.
+
+598
+01:47:09,359 --> 01:47:21,359
+Dediğim gibi bu tavır zofan çok eğlencelidir ve kendi başınıza bir yere bakmadan yazarsanız baya o mantığın oturması konusunda da size yardımcı olur aslında.
+
+599
+01:47:21,359 --> 01:47:32,999
+Onun dışında da yani bir sürü problemi böyle çözebilirsiniz. Ne bileyim işte bir sayının en ince dereceden kuvvetinin hesaplanması bunu gayet recursif olarak çözebilirsiniz.
+
+600
+01:47:32,999 --> 01:47:54,319
+İşte ne bileyim dediğim gibi şimdi şeylere girmiyoruz yani graflarla, ağaçlarla vesaire ilgili yapılması gereken rekürsif işlemleri geri geldikçe göreceğiz ama şu ana kadar bildiğimiz döngülerle çözülen bazı problemleri şey olarak çözebilirsiniz, rekürsif çözebilirsiniz.
+
+601
+01:47:54,319 --> 01:48:11,219
+Mesela şey vardır nedir? Palindrom bir kelimenin palindrom olup olmadığının bulunması. Mesela kabak kelimesi palindromdur. Sağdan da soldan da baktığınızda aynıdır. Mesela ne bileyim yay kelimesi palindromdur.
+
+602
+01:48:11,219 --> 01:48:17,039
+mesela bu da recursive çözmeye örnek olan algoritmalardan birisi.
+
+603
+01:48:17,199 --> 01:48:27,619
+Böyle ufak tefek algoritmalar yazarak recursive çözülebilecek doğru recursive algoritma yazma pratiğini edinmenizi tavsiye ederim.
+
+604
+01:48:27,699 --> 01:48:28,740
+Birinci söyleyeceğim şey bu.
+
+605
+01:48:28,740 --> 01:48:32,960
+Çünkü dediğim gibi bazı yerlerde mecbur kullanmak zorunda kalıyorsunuz.
+
+606
+01:48:32,999 --> 01:48:34,999
+O problem başka türlü çözülmüyor.
+
+607
+01:48:35,440 --> 01:48:37,999
+İkinci söyleyeceğim şey de.
+
+608
+01:48:38,484 --> 01:49:01,543
+Yani her algoritma tasarımında artık sizin şeye yavaş yavaş çalışmanız gerekiyor. Yani önemli olan çalışan bir algoritma olması değil artık. Bir adım öteye geçtiniz siz şimdi bu veri yapıları ve algoritmalar dersiyle. Olabildiğince zamanı, yeri iyi kullanan, efektif, rahat anlaşılır bir algoritma yazmanız bekleniyor sizden.
+
+609
+01:49:01,543 --> 01:49:07,343
+O yüzden bunun yine şeylerinden birisi de gereksiz yere işlem yapmamaktır.
+
+610
+01:49:07,984 --> 01:49:17,683
+Az önce konuştuğumuz sebeplerden ötürü recursion da gerekmedikçe kullanmamanız uygun olan bir şeydir, özelliktir.
+
+611
+01:49:18,123 --> 01:49:19,583
+Dolayısıyla buna da dikkat edin.
+
+612
+01:49:19,583 --> 01:49:28,503
+Yani olur olmaz her yerde böyle kompleks, sofistike bir görüntü vermek için algoritmanıza recursion kullanmayın.
+
+613
+01:49:28,504 --> 01:49:34,664
+gerçekten orada olma ihtiyaç olduğuna emin olduğunuz durumlarda kullanmaya özel gösterim.
+
+614
+01:49:35,884 --> 01:49:36,603
+Var mı sorunuz?
+
+615
+01:49:41,460 --> 01:50:06,199
+Peki. O zaman şimdi ilk derste şeyden bahsetmiştik. Yani bu ders bir bütün hem algoritma çok sık kullanılan temel bazı algoritmaların kullanımından bahsedeceğiz. Hem de bu da daha önemli olan bizim yine bu efektif tasarım yapmamızı kolaylaştırmaya yönelik bir takım veri yapıları var. Bu veri yapılarından bahsedeceğiz.
+
+616
+01:50:06,199 --> 01:50:28,659
+Şimdi mesela ilk gördüğünüz aslında veri yapısı birinci sınıftayken liste, array veri yapısı. Burada ne vardı? Mesela şey dediğimiz zaman işte bir sınıftaki üç öğrencinin işte notları verilmiş ortalamasını hesaplayayım desem ben size.
+
+617
+01:50:28,660 --> 01:50:37,040
+ne yaparsınız? E madem 3 öğrenci var, birine A deriz, birine B deriz, birine C deriz, işte 3 tane değişkenim olur, toplarız, 3'e böleriz.
+
+618
+01:50:37,099 --> 01:50:44,259
+Yani burada bir sıkıntı yok. Ama ben size işte bir sınıftaki öğrencilerin not ortalamasını hesaplayın dersen,
+
+619
+01:50:44,680 --> 01:50:51,360
+o sınıfta 20 öğrenci de olabilir, 50 öğrenci de olabilir. E ne yapacaksınız? Bunun için kaç değişken tanımlayacaksınız?
+
+620
+01:50:51,799 --> 01:50:57,839
+Bunları nasıl kullanacaksınız? Sayı 20 olunca ne yapacaksınız? 50 olunca ne yapacaksınız? İş karışmaya başlıyor.
+
+621
+01:50:57,839 --> 01:51:17,799
+o zaman ne öğretilmişti size? Dizi diye bir şey olsa aynı amaç için kullanılan verileri birden fazla veriyi bir arada tutmanızı sağlasa o zaman ben öğrencileri böyle ayrı ayrı değişkenlerde saklayacağım yerde örneğin maksimum 50 öğrencim olabilir.
+
+622
+01:51:17,799 --> 01:51:29,199
+o zaman 50 elemanlık bir dizi tanımlasam bunları bu şekilde kullansam diye size bir şey en temel kullanılabilecek veri yapısı gösterilmişti.
+
+623
+01:51:29,919 --> 01:51:32,179
+Hocam şu anda node defterini göremiyoruz.
+
+624
+01:51:33,139 --> 01:51:35,460
+Sordum görüyor musunuz diye görüyoruz dediniz.
+
+625
+01:51:35,999 --> 01:51:39,559
+Hayır ekran geldi ama şey node defterine geçmeden.
+
+626
+01:51:39,559 --> 01:51:40,159
+Yok hocam.
+
+627
+01:51:41,499 --> 01:51:44,719
+Burada şu anda şey ne diyor diye gözüküyor.
+
+628
+01:51:45,059 --> 01:51:47,179
+Şu anda görüyor musunuz?
+
+629
+01:51:47,179 --> 01:51:52,019
+Şu anda bir şehir var ama görmemiz gereken ekranı görmüyoruz.
+
+630
+01:51:52,960 --> 01:51:55,579
+Allah Allah bir dakika o zaman şehirden çıkıp bir daha gireyim.
+
+631
+01:52:01,363 --> 01:52:03,363
+Peki şimdi bir dakika.
+
+632
+01:52:05,363 --> 01:52:07,363
+Şimdi görüyor musunuz?
+
+633
+01:52:09,363 --> 01:52:10,363
+Yok yok.
+
+634
+01:52:10,363 --> 01:52:13,363
+Hayır hocam şu anda yine görmüyoruz.
+
+635
+01:52:13,363 --> 01:52:14,363
+Allah Allah.
+
+636
+01:52:14,363 --> 01:52:15,363
+Niye öyle ya?
+
+637
+01:52:23,956 --> 01:52:27,956
+Hayır, share ediyor çünkü. Şu anda ne görüyorsunuz peki?
+
+638
+01:52:27,956 --> 01:52:36,956
+Şu anda katılan kişilerin ekranını görüyoruz. Sizden gelen ekran paylaşımı yok yani şu anda.
+
+639
+01:52:36,956 --> 01:52:40,956
+Bir dakika, bir daha share ediyorum.
+
+640
+01:52:40,956 --> 01:52:42,956
+Evet.
+
+641
+01:52:44,532 --> 01:52:54,532
+Çünkü yukarıda şey de diyor gibi görüyor. Bir dakika. Şimdi bu sefer olacak büyük ihtimalle. Çünkü yavaş yaptı. Şimdi görüyor musunuz?
+
+642
+01:52:54,532 --> 01:52:56,532
+Evet, şu an görünüyor.
+
+643
+01:52:56,532 --> 01:52:58,532
+Tamam.
+
+644
+01:52:58,532 --> 01:53:03,532
+Peki.
+
+645
+01:53:03,532 --> 01:53:13,532
+Şimdi buradaki şey ne? Ekranımı görüyorsunuz aslında şey yazmıştım, bir dizi tanımlamıştım 50 öğrenci için.
+
+646
+01:53:13,532 --> 01:53:18,912
+maksimum kullanabilecek dizi. Şimdi bunu anlatırken de size mutlaka işte programlar dinlerinde
+
+647
+01:53:18,912 --> 01:53:25,252
+dynamic memory allocation'dan bahsetmişlerdir. Ve demişlerdir ki iyi ama mesela işte kaç öğrenci
+
+648
+01:53:25,252 --> 01:53:30,972
+olacağı belli değil. Burada da şey sıkıntısı oluyor. Maksimum öğrenci sayısına göre bir yer açtığınızda
+
+649
+01:53:30,972 --> 01:53:38,932
+işte beş öğrenciniz varsa da diyelim ki beş yüzlük yer açıyorsunuz. Elli öğrenciniz varsa da beş yüzlük yer açıyorsunuz.
+
+650
+01:53:38,931 --> 01:53:42,291
+500 öğrenciniz varsa da 500 elemanlık geri ölçüyorsunuz.
+
+651
+01:53:42,531 --> 01:53:43,771
+Peki bunu nasıl çözeceğiz?
+
+652
+01:53:44,111 --> 01:53:46,571
+O zaman işte dynamic memory location yaparız.
+
+653
+01:53:46,671 --> 01:53:48,291
+Öyle öğretmişlerdir size.
+
+654
+01:53:49,911 --> 01:53:52,311
+Arkadaşlar bir saniye sürekli beni arıyorlar.
+
+655
+01:53:52,311 --> 01:53:55,411
+Bir şey yapacağım.
+
+656
+01:54:21,747 --> 01:54:23,747
+neyse anlayamadık ne olduğunu.
+
+657
+01:54:24,747 --> 01:54:30,947
+Buradaki sıkıntıyı çözmek için dynamic memory allocation yaparız değil mi?
+
+658
+01:54:31,347 --> 01:54:32,287
+O zaman ne olur?
+
+659
+01:54:33,407 --> 01:54:50,727
+Dışarıdan verilen işte bir n sayısı için yani o anda eğer 500 öğrenci için iş yapacaksanız işte 500 öğrenci için şöyle bir yer allocate ederim.
+
+660
+01:54:56,148 --> 01:55:03,088
+değil mi? Böylece de yani bu pardon küçük yazmışım yukarıda.
+
+661
+01:55:07,507 --> 01:55:31,307
+Böylece de şey sağlamış olurum, boşu boşuna işte statik olarak şey yapmak yerine bir dizi için bir yer tutmak yerine şeyi dışarıdan alıp o programın ihtiyacına göre yani o programı kullandığınız anın ihtiyacına göre 100 öğrenci varsa 100'lük yer açarım, 50 öğrenci varsa 50'lik yer açarım.
+
+662
+01:55:31,307 --> 01:55:33,107
+Ama bunu nasıl yapıyor o zaman sistem?
+
+663
+01:55:33,607 --> 01:55:37,667
+İşte burada diyelim ki sizin için bir başlangıç adresinden itibaren,
+
+664
+01:55:37,767 --> 01:55:43,767
+diyelim ki bin numaralı adresten itibaren aşağıya doğru bir blok yeri size hareket ediyor.
+
+665
+01:55:44,048 --> 01:55:44,387
+Değil mi?
+
+666
+01:55:45,667 --> 01:55:51,267
+Ardışık olarak en elemanlık yeri size hareket ediyor.
+
+667
+01:55:51,347 --> 01:55:53,347
+Dinamik Memor Hareketi işini yaptığınızda.
+
+668
+01:55:53,787 --> 01:55:57,507
+Şimdi bu bir çözüm ama bazen de şöyle bir durum olabiliyor.
+
+669
+01:55:57,507 --> 01:56:08,507
+Bazen ihtiyacınıza göre birer eleman birer eleman yani gerektikçe bir eleman için bir yer tutuyorsunuz.
+
+670
+01:56:09,728 --> 01:56:14,308
+Sonra işte yani dizi gibi değil de bir eleman için yer tuttunuz.
+
+671
+01:56:14,448 --> 01:56:17,768
+Bir süre sonra başka bir eleman geldi onun için yer tuttunuz.
+
+672
+01:56:17,808 --> 01:56:21,408
+Yani dizi de olsa başka bir eleman geldi onun için yer tuttunuz.
+
+673
+01:56:21,887 --> 01:56:25,188
+Sonra başka bir eleman geldi bu sefer onun için yer tuttunuz gibi.
+
+674
+01:56:25,188 --> 01:56:43,588
+Yani şey olsa ihtiyaç duyuldukça yeni bir eleman eklememiz gerekse ve ihtiyaç duyulmadığı zaman herhangi bir elemanı oradan çıkartıp silmemiz gerekse o zaman nasıl bir şey yapmamız? Problem bu.
+
+675
+01:56:43,587 --> 01:57:03,847
+Şimdi bir kere daha söylüyorum bu problemi. Şimdi esas problem eleman sayısı belli değil ama benim aynı iş için kullanacağım birden fazla verim var. O zaman ben diyorum ki işte peki şöyle yapsam bir dizi tanımlayayım, dizi için maksimum uzunluk belirleyeyim ve bu kadarlık bir yer açayım.
+
+676
+01:57:03,847 --> 01:57:10,727
+Bu static allocation aslında yani programlan edilmeden önce ne kadarlık yer tuttuğu belli.
+
+677
+01:57:10,907 --> 01:57:15,467
+İşte mesela burada yazdığı gibi şunu şöyle üzerine çizmeden göstereyim.
+
+678
+01:57:15,868 --> 01:57:20,728
+Burada yazdığı gibi işte diyorsunuz ki bir ağ dizim var 500 eleman için yer açayım.
+
+679
+01:57:21,168 --> 01:57:23,127
+İster 10 kullanırım ister 50 kullanırım.
+
+680
+01:57:23,467 --> 01:57:27,907
+Bunu biraz daha iyileştirmek için diyorum ki o zaman dinamik yapayım ben bunu.
+
+681
+01:57:27,907 --> 01:57:34,147
+Yeri geldiği zaman, kaç elemana ihtiyaç olduğunu öğrendiğim zaman o kadarlık yeri açıyor.
+
+682
+01:57:34,647 --> 01:57:35,927
+Bu iyi ve doğru bir çözüm.
+
+683
+01:57:36,047 --> 01:57:44,147
+Eğer yani bütün program boyunca bu en tane eleman için iş yapacağımı biliyorsam o zaman gerçekten en güzeli.
+
+684
+01:57:44,228 --> 01:57:45,967
+Bu dynamic memory allocation'ı yaparım.
+
+685
+01:57:46,047 --> 01:57:54,228
+Onu yaptığımda sistem bana bir blok, en tane eleman için gerekli ardışık bir blok yer tutar ve ben orada çalışırım.
+
+686
+01:57:54,228 --> 01:57:59,907
+Ama bazı uygulamalarda, şimdi biz bunu ağaçlarda ve graflarda kullanacağız.
+
+687
+01:58:00,868 --> 01:58:06,228
+Önümüzdeki haftalarda ağaç konusunu ve graf konusunu gördüğümüzde kullanacağız.
+
+688
+01:58:07,248 --> 01:58:13,067
+Bazı uygulamalarda bundan daha farklı bir mantık gerekebiliyor.
+
+689
+01:58:13,487 --> 01:58:19,328
+Mesela ne bileyim, sadece eleman geldikçe ekleyeceğim.
+
+690
+01:58:20,287 --> 01:58:22,427
+Baştan ben de bilmiyorum kaç tane eleman mı olur.
+
+691
+01:58:22,427 --> 01:58:42,687
+Mesela bir çözüm bu. Baştan kaç elemanın olduğunu ben de bilmiyorum. Elemanı geldikçe ekleyeceğim. İşim bittiğinde o elemanı sileceğim. Mesela bir tanesi bu. Bir tanesi işte diyelim ki bir matrisim var aslında ama bu matris de mesela bu graflarda kullanılan hali bir satırda iki eleman var.
+
+692
+01:58:42,687 --> 01:58:46,007
+İşte bir satırda üç eleman var falan.
+
+693
+01:58:47,147 --> 01:58:48,107
+Böyle bir yapım var.
+
+694
+01:58:48,207 --> 01:58:50,507
+Bir satırda işte bir eleman var gibi.
+
+695
+01:58:51,347 --> 01:58:55,667
+Ve işte gerekiyorsa yine burada da eklemeler yapabileceğim, sinmeler yapabileceğim falan.
+
+696
+01:58:55,847 --> 01:58:59,767
+Böyle bir daha dinamik bir şeye ihtiyacım olduğunda ne yapacağım?
+
+697
+01:59:00,107 --> 01:59:01,687
+Şimdi bu şekilde...
+
+698
+01:59:04,212 --> 01:59:30,212
+Bir seferde en eleman için iş yapmayacağım, yapmama gerek olmayan durumlarda kullanılan yapı aslında sizin yine ve büyük bir ihtimalle programlama dilleri dersinde gördüğünüz linked list veri yapısı. Gördün mü bunu programlama dillerinde?
+
+699
+01:59:30,212 --> 01:59:52,351
+gördünüz değil mi? Tamam. Şimdi yine bunu bu derste hatırlatıp önümüzdeki derslerde kullanarak devam edeceğiz. Şimdi buradaki mantık ne? Buradaki mantık aslında önce şeyini hatırlatayım ben size. Bunun için nasıl bir tanımlama yaptığımızı hatırlatayım.
+
+700
+01:59:52,351 --> 02:00:04,091
+eğer şeyin her birine bir düğüm dersek, her listemizin her elemanı bir düğüm dersek
+
+701
+02:00:04,091 --> 02:00:15,851
+mesela ve her düğümün bir değeri varsa bakın burada dikkat edin buradaki yapının kendisi recursion.
+
+702
+02:00:18,351 --> 02:00:20,392
+Yapının kendisi recursion.
+
+703
+02:00:24,275 --> 02:00:40,275
+Yani şöyle bir şey oluyor. Structure node tipinde
+
+704
+02:00:44,467 --> 02:00:45,987
+bir değişkeniniz var.
+
+705
+02:00:49,844 --> 02:01:00,383
+yani tamamen kendi özelliklerinde bu structure'ın özelliklerinde bir değişken dekleri ediyorsunuz. Yapının kendisi recursive aslında bu da değişik şey olan bu.
+
+706
+02:01:00,383 --> 02:01:13,383
+Ve şimdi burada mesela bir tane böyle bir şey tanımladığınız zaman mesela bir tane tanımlayalım.
+
+707
+02:01:13,383 --> 02:01:15,383
+Şöyle benimki
+
+708
+02:01:15,383 --> 02:01:20,063
+not tipinde bir
+
+709
+02:01:20,063 --> 02:01:21,943
+şunu büyük harf yazayım ben
+
+710
+02:01:30,804 --> 02:01:31,804
+yazmıyorum hiç gerek yok. Şunu şöyle yapayım. Tamam. Şöyle. Şuradaki node tipinde diyelim ki bir P pointer'ımız varsa P eşittir. Node keskiyle monologue size of node dediğiniz zaman bir tanecik
+
+711
+02:02:00,804 --> 02:02:03,923
+eleman için yer tutmuş oluyorsunuz.
+
+712
+02:02:04,884 --> 02:02:12,103
+Ve o zaman size işte şey değilse eğer pn alsa zaten tutamadınız demektir.
+
+713
+02:02:22,579 --> 02:02:31,059
+Biliyorsunuz bunu. Dinamik alokasyonda eğer tutamadıysanız nav döndürüyordu. Değilse de tuttunuz demekti. Böyle bir tuttunuz.
+
+714
+02:02:31,439 --> 02:02:36,540
+Tuttuğunuz şey ne peki? P mesela şöyle bir şey tutmuş oluyorsunuz.
+
+715
+02:02:38,719 --> 02:02:46,859
+Valuesu var. Bir structure'ımız çünkü bu. Bir value parçası var. Bir de next parçası var. Şuradan hatırlatalım.
+
+716
+02:02:46,859 --> 02:03:08,999
+bir value bir next'ten oluşuyordu. Next de tam böyle şeyi gösteriyor. Tamamen aynı özellikteki başka bir değişkeni value ve next parçalarından oluşan bu structure'ın özelliğindeki başka bir değişkeni point etmek için, adresini kullanmak için kullanılan bir pointer değişken aslında.
+
+717
+02:03:08,999 --> 02:03:20,119
+şuradan tekrar bakacak olursak next aslında bir pointer değişken tamamen bu structure ile aynı özellikte olan bir başka değişkeni göstermek için kullanılıyor.
+
+718
+02:03:21,079 --> 02:03:30,520
+Ve bu structure'da bir tane normal integer değişkenimiz var bir de pointer değişkenimiz var adres göstermek için kullanılan.
+
+719
+02:03:30,520 --> 02:03:32,839
+O zaman şimdi ben ne yapmış oluyorum?
+
+720
+02:03:32,840 --> 02:03:52,960
+mesela işte allocate ettim burası 1000 numaralı adres olsun burası da 1250 numaralı adres olsun o zaman ben burada iş yaptığımda bunu 1250 dersem eğer ne olmuş oluyor 1250 dersem tamamen burayı göstermiş oluyor bu değişkeni göstermiş oluyor
+
+721
+02:03:52,959 --> 02:03:57,579
+tabi bunu da birinin göstermesi lazım.
+
+722
+02:03:58,079 --> 02:04:00,919
+O yüzden bir tane de her zaman bir head vardır.
+
+723
+02:04:01,879 --> 02:04:02,940
+Hatırlarsınız bunu.
+
+724
+02:04:03,099 --> 02:04:10,099
+Head başlangıç ilk şeyin elemanı gösterir ki oradan erişelim.
+
+725
+02:04:10,359 --> 02:04:11,619
+Şimdi o zaman ne olmuş oldu?
+
+726
+02:04:11,699 --> 02:04:17,419
+Ben ihtiyaç duydukça buna yani yeni bir eleman için yer tutuyorum.
+
+727
+02:04:17,419 --> 02:04:19,639
+Mesela 1300 numaralı adresi tuttum.
+
+728
+02:04:19,639 --> 02:04:35,999
+sonra da son elemana veya işte ilk elemana kime istiyorsam, nerede ihtiyacım varsa birisine 1300 numaralı adresi göstertirsem eğer 1300 numaralı adresteki değişkende bu listenin bir parçası olmuş oluyor.
+
+729
+02:04:35,999 --> 02:04:43,800
+Şimdi bu şekilde olan yapıya şey deniyor single link liste deniyor yani.
+
+730
+02:04:48,819 --> 02:05:15,219
+en temel yapı bu. Forward only. Yani ileriye doğru tek yönlü bir şeyimiz var. Listemiz var. Her eleman bir sonraki elemanın adresini gösteriyor. Bu şekilde en son elemanda hiç kimseyi göstermeyen malı gösteriyor. Böylece ben hede bakarak şeyi anlıyorum. İlk elemanın nerede durduğunu anlıyorum.
+
+731
+02:05:15,219 --> 02:05:24,099
+ve bir elemanları gösterdiğinde de tamam artık listedeki bütün elemanlara eriştim, işim bitti, bunu anlıyorum.
+
+732
+02:05:24,439 --> 02:05:26,500
+Buraya kadar sormak istediğiniz bir şey var mı?
+
+733
+02:05:28,459 --> 02:05:30,819
+Listenin mantığı bu. O zaman ne olmuş oluyor?
+
+734
+02:05:31,220 --> 02:05:35,220
+Ben buradaki bütün elemanlar için ayrı ayrı alokasyon yapmış oluyorum.
+
+735
+02:05:35,220 --> 02:05:42,079
+Ben burada özellikle bu kadar birbirinden ayrık adresler verdim ki şeyi görünce tabii arka arkaya da gelebilir bunlar.
+
+736
+02:05:42,079 --> 02:05:46,179
+Yani bunlar belli ki farklı farklı yerlerde durabiliyorlar.
+
+737
+02:05:46,179 --> 02:05:54,119
+Yani ihtiyaç duyduğunuz anda öyle keyfettiğiniz için bu anda nerede boşluk varsa orada durabiliyorlar. Var mı sorun?
+
+738
+02:05:59,347 --> 02:06:01,347
+So, u var mı?
+
+739
+02:06:03,796 --> 02:06:19,796
+Tamam peki. Şimdi burada hangi işlemler yapılıyor bu linked list yapısında? Aslında en temel yapabileceğiniz işlemler bir yeni bir elemanı ekleme yapabiliyorsunuz.
+
+740
+02:06:19,796 --> 02:06:27,656
+İki, artık kullanmadığınız, ihtiyaç duymadığınız bir elemanı silme yapabiliyorsunuz.
+
+741
+02:06:29,656 --> 02:06:35,035
+Üçüncüsü şey yapabilirsiniz, herhangi bir elemanı arayabilirsiniz.
+
+742
+02:06:35,035 --> 02:06:46,056
+Mesela işte ne bileyim az önce binary search'te olduğu gibi yani binary search değil de bir x elemanını link liste üzerinde arama yapabilirsiniz.
+
+743
+02:06:46,055 --> 02:07:01,275
+dördüncüsü de display, linked listedeki bütün elemanları işte ekranda göstermek falan gibi bir şey yapabilirsiniz, yapabileceğiniz temel işlemler bunlar.
+
+744
+02:07:01,275 --> 02:07:07,375
+Peki o zaman avantaj ve dezavantajlarına bakalım.
+
+745
+02:07:07,595 --> 02:07:13,695
+Yani neler avantaj olabilir, neler dezavantaj olabilir?
+
+746
+02:07:13,696 --> 02:07:25,776
+Şimdi artılarını düşünecek olabilirsek en temel artısı şey özelliği dizi uzunluğunun sabit olmaması.
+
+747
+02:07:26,855 --> 02:07:32,876
+Bu dynamic allocation da aslında bize sağlanan bir özellik.
+
+748
+02:07:34,316 --> 02:07:38,836
+Ama orada bir blok halinde bilgi şey yapılıyordu.
+
+749
+02:07:38,836 --> 02:07:45,456
+ondan sonra burada blok olması gerekmiyor, delik deşik olabiliyor.
+
+750
+02:07:45,456 --> 02:07:48,615
+O zaman bu neyi sağlıyor bize?
+
+751
+02:07:49,075 --> 02:07:51,456
+Yeteri kadar ardışık yer yoksa...
+
+752
+02:08:01,300 --> 02:08:30,339
+avantajlı. Üçüncüsü eleman ekleme ve silme kolay. Yani burada şey var, bir blok halinde alokiyet ettiğinizde, yani ben şuradaki elemanı silsem ne yapmam lazım? Bunların hepsini yukarı taşımam falan lazım. Çünkü bunlar belli bir blok halinde tutuyorlar. Yani bunu buradan sildiğimde ya yerini boş bırakacağım, burası boş kalacak.
+
+753
+02:08:30,339 --> 02:08:34,439
+Böylece sık eleman silme varsa burası böyle delik deşik olacak.
+
+754
+02:08:35,059 --> 02:08:42,759
+Ya sürekli kaydırarak boş yerleri dolduracak şekilde bir sıkıştırma işlemi yapmam gerekecek.
+
+755
+02:08:43,219 --> 02:08:44,399
+Böyle bunlarla uğraşacağım.
+
+756
+02:08:44,480 --> 02:08:45,679
+Ama burada öyle bir şey yok.
+
+757
+02:08:46,480 --> 02:08:51,099
+Mesela şu elemanı silmek istiyorsan bunu free bırakacağım.
+
+758
+02:08:51,480 --> 02:08:55,059
+Burası artık 1250 değil 1300'ü gösterecek mesela.
+
+759
+02:08:55,059 --> 02:08:59,359
+Yani bunu yaptığım anda ne olmuş oluyor?
+
+760
+02:08:59,359 --> 02:09:17,499
+çok basit bir şekilde hani 100 tane elemanı yerinden oynatmadan sadece silmek istediğim elemanı sildim ve onu bin numaralı adresli ki eleman onu değil onun gösterdiğim 1300 numaralı elemanı gösterirse olay çok hızlı bir şekilde çözülmüş olacak.
+
+761
+02:09:17,499 --> 02:09:28,139
+aynı şekilde yeni bir eleman geldiğinde bu mantıkta düşünecek olursak yani işte özel bir yere eklemen gerektiğinde bu da sürekli yine kaydırmalar yapmak zorundayım.
+
+762
+02:09:28,559 --> 02:09:36,539
+Ama burada diyelim ki işte bunların sıralı olduğunu düşünelim böyle sıralıymış mesela işte yeni gelen bir elemanı araya yerleştireceksin.
+
+763
+02:09:36,539 --> 02:09:42,039
+Hiç kimseyi oynatmadan mesela 8'i diyeceksin ki artık bu 1300'ü göstermesin.
+
+764
+02:09:42,039 --> 02:09:49,099
+örneğin 1400 numaralı adresli olsun. Bu 1400'ü göstersin. Bu da 1300'ü göstersin. Bunu da böyle çözmüş olacaksın.
+
+765
+02:09:49,579 --> 02:09:55,300
+Yani eleman eklenme resimine çok kolay veya işte en başa veya en sona eklersin artık nasıl ihtiyacın varsa.
+
+766
+02:09:55,939 --> 02:10:07,139
+Ama burada hep böyle olay pointerlerle çözüldüğü için bir tane elemanı gösterecek veya göstermeyecek bir pointer işlemiyle bir işlemle çözüyorsun.
+
+767
+02:10:07,139 --> 02:10:12,259
+öbüründe fazla miktardaki elemanı bir yerden bir yere kaydırman gerekebiliyor.
+
+768
+02:10:12,619 --> 02:10:18,639
+Dolayısıyla bunlar aslında bu şekilde avantajlarımız bizim kullanırken.
+
+769
+02:10:18,639 --> 02:10:23,020
+Peki haliyle bunun tabii bir de dezavantajlarının olması lazım.
+
+770
+02:10:23,740 --> 02:10:25,039
+Dezavantajları neler?
+
+771
+02:10:25,539 --> 02:10:32,339
+En temel dezavantajı, en en en temel dezavantajı random access mümkün değil.
+
+772
+02:10:32,639 --> 02:10:35,160
+Bu ne demek random access'in mümkün olmaması?
+
+773
+02:10:37,139 --> 02:10:44,999
+Yani şu 8'e erişmek için buradan böyle 5'e 7'ye tek tek uğrayarak gelmen lazım.
+
+774
+02:10:44,999 --> 02:10:56,259
+Yani şey olması lazım yani 8'e doğrudan şartla erişebilme 1400 numaralı adresi git derim ama 8'in 1400'de olduğunu biliyorsam git derim.
+
+775
+02:10:56,259 --> 02:11:08,519
+yoksa yani şey üzerinden linked list yapısında saklanmış bir veride bir elemanı, aradaki bir elemanı doğrudan erişmek mümkün değil.
+
+776
+02:11:08,679 --> 02:11:12,259
+Bundan böyle linked list üzerinde ilerleyerek...
+
+777
+02:11:13,108 --> 02:11:42,227
+bulmam gerekiyor. Bu bir problem. İkinci dezavantajı da pointer değişken için yani adres gösteren bir sonraki elemanın adresini gösteren değişken için ekstra yer gerekli. Yani yine şeye dönecek olursak şuradaki klasik dinamik alokasyonumuzda yani ben bir tane pointer değişken tanımladım. O da işte bilmem şey yaptı, en elemanlık yer tanımladım.
+
+778
+02:11:42,227 --> 02:12:03,567
+O pointer değişken sadece tuttuğum alanın başlangıcını gösteriyor. Ben onu kullanarak bu gölge üzerinde ilerleyebiliyorum. Ama burada öyle bir şey yok. Her şey için, linked listede bir elemanı göstermek için bir de o elemanı göstermemi sağlayan bir adres tutan pointer değişkene ihtiyacım var.
+
+779
+02:12:03,567 --> 02:12:18,587
+O yüzden linked listinin her elemanına bir de bağlı pointer değişken olmak zorunda. O da gereksiz yere tutmaya sebep oluyor.
+
+780
+02:12:19,067 --> 02:12:29,108
+Üçüncüsü de cache'te kullanılamaması. Hızlı erişim biliyorsunuz cache'te olması bilginin hızlı erişim imkanı sağlar.
+
+781
+02:12:29,108 --> 02:12:32,487
+burada böyle bir avantajımız da yok.
+
+782
+02:12:32,487 --> 02:12:35,707
+Peki nerede kullanıyoruz biz linked liste yapısını?
+
+783
+02:12:36,167 --> 02:12:46,188
+Genellikle dediğim gibi graph ağaç veri yapıları için çok fazla linked liste yapısı kullanılıyor.
+
+784
+02:12:46,927 --> 02:12:48,847
+Buraya kadar sormak istediğiniz bir şey var mı?
+
+785
+02:12:50,788 --> 02:12:54,087
+Hocam cache'te kullanılmamasının temel bir sebebi var mı?
+
+786
+02:12:54,087 --> 02:13:01,847
+şey kullanıyor, dynamic memorabilitation, heap bölgesini kullanıyor bellekte, yani kullanılmıyor, tasarım öyle.
+
+787
+02:13:03,187 --> 02:13:04,007
+Anladım hocam, teşekkür ederim.
+
+788
+02:13:04,007 --> 02:13:11,507
+O şey değil, onu o şekilde tasarlandığı için, planlama öyle yapıldığı için, cache de kullanılmıyor.
+
+789
+02:13:13,587 --> 02:13:16,727
+Peki, öyle tasarlamışlar.
+
+790
+02:13:16,727 --> 02:13:42,727
+O zaman şimdi sadece bir tane şey yapıp insert işleminin nasıl yapıldığını gösterip aslında 3'ü çelik geçmiş. Önümüzde 2 hafta yapalım çünkü şey diye konuşmuştuk hani dersleri özellikle dikkatli almasın diye çok uzun yapmama kararı almıştık.
+
+791
+02:13:42,727 --> 02:13:48,108
+normalde çünkü aslında hızlı gitmek durumunda kalıyoruz uzaktan yaptığımızda.
+
+792
+02:13:48,207 --> 02:13:57,027
+Çünkü yüz yüze olduğunda mutlaka öğrenciler çok daha fazla soru sordukları için konular daha yavaş doğal olarak ilerliyor.
+
+793
+02:13:58,507 --> 02:14:00,027
+Burada ise şey olmuyor.
+
+794
+02:14:00,887 --> 02:14:09,647
+Öğrenciler çok fazla soru sormadıkları, daha doğrusu soru sormadıkları, pointer'ların default değeri non oluyor.
+
+795
+02:14:09,647 --> 02:14:16,407
+Hayır pointer'ların default değeri diye bir şey yok aslında.
+
+796
+02:14:17,027 --> 02:14:25,387
+Pointer değişkenin, şimdi sonuçta şöyle söyleyeyim ki ama ekran dur şeyi göstererek söyleyeyim bir saniye.
+
+797
+02:14:27,387 --> 02:14:31,687
+Önce ona cevap vereyim sonra kaldığım yerden devam ederim.
+
+798
+02:14:45,747 --> 02:15:07,807
+gösteriyor mu şu anda? Şimdi bu C özellikleri, bunu unutmayın. Şey değil, calloc vardı bir, değil mi hatırlarsanız? Bir de malloc vardı. Calloc baştan sıfırlıyordu tuttuğu yeri. Malloc sıfırlamaz. Malloc'un sıfırlamaması demek şu demek, siz diyelim ki bir P pointer'ı tanımladınız.
+
+799
+02:15:07,807 --> 02:15:17,227
+P işte bellekte kendisi diyelim ki 2500 numaralı adreste duruyor orada ne varsa onu gösterir.
+
+800
+02:15:19,327 --> 02:15:23,807
+Ne varsa mesela atıyorum tamamen atıyorum garbage burada böyle çok var.
+
+801
+02:15:24,567 --> 02:15:31,507
+P bellekte o anda kendisinin durduğu adreste ne varsa onu gösterir alokasyon yaptığımızda.
+
+802
+02:15:31,507 --> 02:15:36,947
+Call-log iki tane fonksiyon vardı hatırlarsanız C'de.
+
+803
+02:15:37,307 --> 02:15:40,847
+Mall-log bu şekilde bellekte ne varsa onu gösteriyordu.
+
+804
+02:15:40,967 --> 02:15:42,047
+Call-log sıfırlıyordu.
+
+805
+02:15:42,047 --> 02:15:45,967
+Evet o zaman o mal gösterir yoksa göstermez.
+
+806
+02:15:46,567 --> 02:15:49,667
+O yüzden sizi mutlaka initialize etmeniz gerekir.
+
+807
+02:15:49,727 --> 02:15:51,468
+Bunu derslerde hep söyleriz biz size.
+
+808
+02:15:51,587 --> 02:15:56,747
+Çünkü öyle bir denk gelir ki birisi sizin Call-log'da yazdığınız şeyi mall-lo açabilir.
+
+809
+02:15:57,367 --> 02:16:00,867
+Baştan sıfırlanmadığı için her şey tepetaklak gidebilir.
+
+810
+02:16:00,867 --> 02:16:03,447
+o yüzden öndeninizi almanız gerekir.
+
+811
+02:16:03,527 --> 02:16:08,627
+Ayrıca bütün dillerde de memorallakasyonları aynı olacak diye de bir kural yok.
+
+812
+02:16:08,747 --> 02:16:10,367
+Hepsi sıfırlamıyor olabilirler.
+
+813
+02:16:11,207 --> 02:16:14,007
+Yani mallokun kendisi de sıfırlamıyor zaten.
+
+814
+02:16:14,007 --> 02:16:20,407
+O yüzden bu dilin kullandığınız fonksiyonuna bağlı olduğunda
+
+815
+02:16:20,407 --> 02:16:23,687
+şey gibi davranmanız gerekir.
+
+816
+02:16:23,767 --> 02:16:25,687
+Yani sıfırlanmıyor gibi davranmanız gerekir.
+
+817
+02:16:25,787 --> 02:16:26,667
+Başka birisi bir şey.
+
+818
+02:16:26,667 --> 02:16:28,947
+Arkadaşlar bakın ben size diyorum ki
+
+819
+02:16:28,947 --> 02:16:31,027
+Tamam çok teşekkür ederim namazan
+
+820
+02:16:31,027 --> 02:16:35,788
+Sorularınızı yüksek sesle sorun
+
+821
+02:16:35,788 --> 02:16:38,807
+Anlamışsın namazan tamam
+
+822
+02:16:38,807 --> 02:16:43,108
+Çünkü ben full city'nde görmüyorum sizin sorularınızı
+
+823
+02:16:43,108 --> 02:16:44,907
+Tamam şimdi gördüm cevapları
+
+824
+02:16:44,907 --> 02:16:45,247
+Peki
+
+825
+02:16:45,247 --> 02:16:50,307
+Ders sonradan izleyen arkadaşlar için tekrar aynı şeyi söyleyeceğim
+
+826
+02:16:50,307 --> 02:16:54,608
+Bu çok tehlikeli bir aslında sizin şu anki durum
+
+827
+02:16:54,608 --> 02:16:56,807
+Ben şu anda derste 35 kişi görüyorum.
+
+828
+02:16:57,628 --> 02:17:00,027
+Sadece şey yapmak için sormak istiyorum.
+
+829
+02:17:00,647 --> 02:17:03,068
+Şu anda burada olanları ev kaldırabilirler mi?
+
+830
+02:17:03,268 --> 02:17:05,227
+Kaç kişi ev kaldıracak onu da bir göreyim.
+
+831
+02:17:05,828 --> 02:17:07,587
+Çünkü bir kısımda açıp bırakıp gidiyor.
+
+832
+02:17:07,947 --> 02:17:09,367
+Onu da bir görmek isterim.
+
+833
+02:17:13,043 --> 02:17:15,303
+Hocam nerden kaldırıldığını bilmiyorum ben ya.
+
+834
+02:17:16,764 --> 02:17:17,383
+Adın ne?
+
+835
+02:17:18,783 --> 02:17:19,843
+[öğrenci].
+
+836
+02:17:20,403 --> 02:17:23,103
+Tamam oldu, sen benim için el kaldırmış oldun şu anda.
+
+837
+02:17:25,203 --> 02:17:34,964
+Mesela 17 kişi aslında, [öğrenci]'yı da sayarsak 18 kişi, 35 kişi gözüküyor, 18 kişi el kaldırdı aslında.
+
+838
+02:17:35,943 --> 02:17:41,903
+Dolayısıyla diğer 17 kişi 19 etti, 20 hadi diyelim.
+
+839
+02:17:41,903 --> 02:17:43,783
+Diğerleri şey
+
+840
+02:17:43,783 --> 02:17:46,143
+Bir dakika
+
+841
+02:17:46,143 --> 02:17:51,383
+Reaksiyonuna parmak kaldırdığında bilmeyen başkaları da mı varmış?
+
+842
+02:17:55,156 --> 02:18:25,135
+kaç kişi oldu şu anda? 20 kişi oldu. Yine de 15 kişi yok gözüküyor. Dolayısıyla şey, yani 90 küsur kişi alıyor bu dersi. Aktif olarak dinleyen kişi sayısı 20. Şimdi biz bir pandemi döneminde bunu yaşadığımız için çok iyi biliyoruz. Aslında çok tehlikeli bir öğrenci açısından yaklaşım. Çünkü o zaman da böyle şey oluyordu, yani nasılsa kaydediliyor, ben bunu kayıptan dinlerim falan.
+
+843
+02:18:25,156 --> 02:18:36,935
+oluyordu. Aslında doğrusu dinlemek ve hem de soru sormak. Yani dinleyin, dinlerken mutlaka not alın çünkü yazarken öğrenirsiniz.
+
+844
+02:18:37,795 --> 02:18:43,635
+Sadece dinlerken bir süre sonra dikkatiniz dağılır ve dinlememeye başlarsınız farkına varmadan.
+
+845
+02:18:43,635 --> 02:18:54,635
+O yüzden mesela Memiş Beli Kırık birisi terk etti dersi şu anda hatta. Yani şey yapın lütfen, dinlemeye özen gösterin.
+
+846
+02:18:54,635 --> 02:18:59,456
+çünkü genelde bu şeyde başarı çok düşük oluyor.
+
+847
+02:19:00,056 --> 02:19:01,975
+Online'da başarı çok düşük oluyor.
+
+848
+02:19:02,115 --> 02:19:09,255
+Onun da sebebi öğrencilerin sonra kaydı izlerim deyip izlemeyip konular üst üste birikince de dersten kopması.
+
+849
+02:19:09,916 --> 02:19:12,236
+Yani zor bir dönem bu dönem sizin için.
+
+850
+02:19:12,935 --> 02:19:19,715
+Biz bunu dediğim gibi yaklaşık bir buçuk sene boyunca yaşadığımız için problemleri gözleme fırsatımız oldu.
+
+851
+02:19:19,715 --> 02:19:23,096
+Daha doğrusu gözleme durumumuz oldu.
+
+852
+02:19:23,095 --> 02:19:25,035
+bu bir fırsat değil aslında kötü bir şey.
+
+853
+02:19:25,775 --> 02:19:32,535
+O yüzden size tavsiyem lütfen şu anda sonradan dinleyecek arkadaşlar için söylüyorum.
+
+854
+02:19:32,535 --> 02:19:45,895
+Eğer bulunduğunuz yerde internet, elektrik kesintisi vesaire gibi problemler yoksa dersi ders zamanı dinlemeye özen gösterin ki başarılı olmanız için çok önemli bir şey bu.
+
+855
+02:19:45,895 --> 02:20:15,816
+bunun dışında da anlatımımla ilgili anlamanızı zorlaştıran bir şeyler varsa lütfen uyarın beni ben yazarak anlatmaya çalışıyorum özellikle ama hızlı geliyorsa daha fazla örnek olması gerektiğini düşünüyorsanız lütfen söyleyin hani ben arada sorduğumda anladık falan diyorsunuz şimdi konular basit olduğu için belki hani daha önce gördüğünüz konular olduğu için ama anlamadığınız bir noktada lütfen beni uyarın.
+
+856
+02:20:15,816 --> 02:20:22,636
+olur mu? Birisi bir şey daha söyledi. Soru sormamamızın sebebi bu konuları biliyor olmanız. Öyle mi diyorsun bakayım?
+
+857
+02:20:24,136 --> 02:20:30,616
+Evet, evet ama burada şey yapmak zorundayız biz yani her sene ilk başta bunları bir şey yapmamız gerekiyor.
+
+858
+02:20:31,536 --> 02:20:42,495
+Anlatmamız gerekiyor çünkü şey daha büyük sıkıntı oluyor. Öğrenciler yani sen öyle diyorsun ama genelde çok büyük bir çoğunluğu o kadar olaylara hakim olmayabiliyorlar.
+
+859
+02:20:42,495 --> 02:20:45,175
+onun üzerine anlattığında da bu sefer ağır geliyor.
+
+860
+02:20:45,635 --> 02:20:47,535
+Altından kalkamaz hale geliyorlar.
+
+861
+02:20:48,475 --> 02:21:02,295
+Evet bir de biz yine uzaktan olduğu için normalde bunu daha hızlı anlatırken yavaş yavaş anlatıyoruz ki şey olmasın yani hani öğrenilen her şey kalıcı olsun daha rahat anlaşılsın diye.
+
+862
+02:21:02,295 --> 02:21:04,656
+Tamam o zaman bir problem yok şu an için.
+
+863
+02:21:05,415 --> 02:21:08,715
+O zaman haftaya görüşmek üzere burada kesiyorum.
+
+864
+02:21:09,915 --> 02:21:12,016
+Önümüzdeki hafta görüşmek üzere arkadaşlar.
+
+865
+02:21:12,016 --> 02:21:13,116
+Çok teşekkürler.
+
+866
+02:21:14,435 --> 02:21:15,396
+Görüşmek üzere hocam.
+
+867
+02:21:16,316 --> 02:21:16,896
+Teşekkürler.
