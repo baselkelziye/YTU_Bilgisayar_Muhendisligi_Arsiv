@@ -1,0 +1,2203 @@
+1
+00:00:30,164 --> 00:00:55,803
+Merhabalar. Bugün sunumlarınızı gerçekleştireceksiniz. Zaten raporlarınızda büyük bir çoğunluğunuzu yüklediniz. Arkadaşlarınızdan üç grup istekli olmuştu bugün sunmak için. Başka isteyen var mı?
+
+2
+00:00:55,803 --> 00:01:01,563
+Birinci [öğrenci] ve grubu.
+
+3
+00:01:02,763 --> 00:01:09,043
+İkinci sırada da [öğrenci] grubu sunacak.
+
+4
+00:01:10,463 --> 00:01:15,683
+Ve hazırlanmanız için saat şimdi 1-10 geçiyor.
+
+5
+00:01:16,164 --> 00:01:20,803
+Bir 5 dakika sonra sunuma başlayabilirsiniz.
+
+6
+00:01:22,083 --> 00:01:24,683
+[öğrenci] bütün arkadaşlarınız burada mı?
+
+7
+00:01:25,803 --> 00:01:34,483
+Hocam sadece bir arkadaşınız yok. Memleketinde bir cenaze olayı varmış da o yüzden katılamayacak. Onun dışında 3 kişi hazırız.
+
+8
+00:01:34,483 --> 00:01:39,384
+Evet. [öğrenci] liste sormuşsun.
+
+9
+00:02:58,355 --> 00:03:11,635
+[öğrenci], bir kişi hariç, beş dakika sonra sunumunuza başlayabilirsiniz. [öğrenci], sizin grubunuz tamam mı?
+
+10
+00:03:17,716 --> 00:03:20,355
+Üçüncü olarak sunmak isteyen var mı?
+
+11
+00:03:23,828 --> 00:03:36,447
+Liste vermedim. İstekliler sunacak bugün. Diğer gruplar önümüzdeki hafta sunacak. Ama bana istek bildirmeyip de bugün sunmak isteyen grup varsa sunabilir.
+
+12
+00:03:44,020 --> 00:03:53,699
+başka grup var mı bugün sunmak isteyen? Üçüncü bir grup daha vardı. Nina sizin grubunuz muydu hazırız diyen?
+
+13
+00:03:57,587 --> 00:04:22,747
+Tamam. [öğrenci]'in grubu da üçüncü olarak sunacak. Başka hazır olan varsa bu arada konuşup arkadaşlarıyla sunabilir. O zaman şimdi bir beş dakika sonra [öğrenci]'in grubu sunum yapacak. [öğrenci] sizin grubunuzda sunum yapacak mıydı?
+
+14
+00:04:24,187 --> 00:04:24,907
+Bugün.
+
+15
+00:04:24,907 --> 00:04:28,067
+Hocam [öğrenci] benim grubumda
+
+16
+00:04:28,067 --> 00:04:28,707
+Evet
+
+17
+00:04:28,707 --> 00:04:32,747
+Ha tamam ayrıca çünkü sanki ondan da bir mail gelmişti
+
+18
+00:04:32,747 --> 00:04:38,448
+Tamam o zaman [öğrenci] dediğim gibi bir 5 dakika sonra sizin grubunuz
+
+19
+00:04:38,448 --> 00:04:41,907
+sonra Mertlerin grubu sonra da Aykutların grubu
+
+20
+00:04:41,907 --> 00:04:44,327
+Tamam hocam
+
+21
+00:10:47,475 --> 00:10:49,995
+Hocam siz başlayın dediğiniz zaman başlayabiliriz.
+
+22
+00:11:36,436 --> 00:11:50,335
+Evet, deminden beri konuşuyorum. Sesim kapalıymış. [öğrenci], [öğrenci], [öğrenci]. Başka kim vardı? [öğrenci]. Yok, [öğrenci]. Ben varım hocam. Tamam.
+
+23
+00:11:55,347 --> 00:11:57,227
+Başlayalım mı hocam? Evet, evet.
+
+24
+00:11:58,907 --> 00:12:14,327
+Merhaba, bugün kütüphane yönetim sistemi test faaliyetlerinden bahsedeceğiz. Öncelikle kütüphane yönetim sisteminden bahsetmek gerekirse, kütüphane yönetim sistemi, kütüphanelerde takip sistemini kolaylaştırmak amacıyla web platformu kullanan bir sistemdir.
+
+25
+00:12:15,047 --> 00:12:21,547
+Kısaca kitap ödünç verme, ödünç işlem sistemlerini kontrol etme, kitap arama, kayıtlara erişme, rapor oluşturma gibi işlemleri yapar.
+
+26
+00:12:21,547 --> 00:12:37,208
+Daha önce oluşturduğumuz SRS belgesinde de bahsettiğimiz gibi orada işte buna ait fonksiyonel gereksinimlerden, kullanım senaryolarından ve fonksiyonel olmayan gereksinimlerden bahsetmiştik. Şimdi ise kütüphane yönetim sistemi test planından bahsedeceğiz kısaca.
+
+27
+00:12:44,980 --> 00:12:59,419
+Test planlı kapsamında test stratejisi ve test edilecek öğeler, doğrulama yöntemleri, testlerin tamamlanma kriterleri, test edilebilecek öğeler, hata raporlama, test sonuç raporlama, test sorumlulukları ve eğitim ihtiyacı, test takvimi, risk yönetimi, test ortamı ve araçlarından bahsedeceğiz.
+
+28
+00:13:02,539 --> 00:13:09,459
+Test faaliyetleri kapsamında 3 adet test yapacağız. Bunlar birim testi, sistem testi ve kullanıcı testleridir.
+
+29
+00:13:09,459 --> 00:13:13,799
+Bu testleri burada da gördüğümüz modüller üzerine gerçekleştireceğiz.
+
+30
+00:13:14,059 --> 00:13:18,459
+Üye, kitap, yazar, yayımcı ve kütüphane ayarları modülleri.
+
+31
+00:13:20,340 --> 00:13:27,459
+Doğrulanma başlığında test aşamasında test planı doğrultusunda oluşturulan senaryolar üzerinde test işlemi yapılacaktır.
+
+32
+00:13:28,660 --> 00:13:34,560
+Analiz aşamasında ise yapılan test sonuçları değerlendirilecek ve belirtilen de ortalarda çalışıp çalışmada gözlemlenecektir.
+
+33
+00:13:34,559 --> 00:13:39,639
+Olması gereken durum değerler ile sistem yanıtı karşılaştırılacak sonuçlar raporlanacaktır.
+
+34
+00:13:40,899 --> 00:13:47,039
+Testlerin tamamlanma kriterleri ise daha önce belirttiğimiz birim, sistem ve kullanıcı testinin tamamen başarıyla bitmiş olması gerekir.
+
+35
+00:13:47,419 --> 00:13:55,160
+Ve bu yapılan testler sonucunda olası çıkan birinci ve ikinci, üçüncü dereceden hataların tamamının çözülmüş olması beklenmektedir.
+
+36
+00:13:56,079 --> 00:14:03,679
+Test edilebilecek öğelere baktığımızda kullanıcı, kitap, yazar, yayımcı ve üyenin yönetimi arama modülleri
+
+37
+00:14:03,679 --> 00:14:14,279
+bunlara ek olarak üye görüntüleme, kitap ödünç verme, ödünç kayıtları arama, iade süresi uzatma, kitap iade alma gibi modüller de test edilebilecek böyler arasındadır.
+
+38
+00:14:17,019 --> 00:14:24,739
+Hata raporlama kısmında ilk önce az önce de bahsettiğim gibi testler sonucunda oluşabilecek hataların bir sınıflandırılması vardır.
+
+39
+00:14:24,899 --> 00:14:26,859
+Birinci, ikinci ve üçüncü dereceden hatalar.
+
+40
+00:14:27,399 --> 00:14:31,340
+Birinci dereceden hatalar kütüvane yönetim sisteminin genel çalışmasını direkt etkileyen hatalardır.
+
+41
+00:14:31,340 --> 00:14:38,700
+İkinci dereceden hatalar kütüvane yönetim sisteminin genel çalışmasını direkt etkilemeyecek olan fakat işlevsel yönden bazı yönlerin çalışmasını engelleyen hatalardır.
+
+42
+00:14:39,200 --> 00:14:44,000
+Üçüncü dereceden hatalar kütüvane yönetim sisteminin çalışmasını etkilemeyen görsel yönden ortaya çıkan hatalardır.
+
+43
+00:14:44,719 --> 00:14:47,719
+Bu hata raporlama kısmı belli bir prosedür vardır.
+
+44
+00:14:48,299 --> 00:14:52,480
+İlk önce test sonucu ortaya çıkan hatayı bildirmek için hata bildirim formu düzenlenir.
+
+45
+00:14:53,340 --> 00:14:57,879
+Hatayı bulan kişi bu formu düzenledikten sonra hatayı sistem mühendisi grubuna iletir.
+
+46
+00:14:58,639 --> 00:15:04,639
+Sistem mühendisi grubuna iletildiğinde yaşam döngüsünde bu hata bildirme durumundadır.
+
+47
+00:15:05,340 --> 00:15:12,639
+Daha sonra sistem mühendisi grubu bu hatayı inceler, kabul edilmesi durumunda ilgili kişiye atanmasını yapar.
+
+48
+00:15:12,879 --> 00:15:20,559
+Eğer sistem mühendisi grubu bu hatayı kabul etmezse reddederek kapandığı durumuna geçirir.
+
+49
+00:15:21,499 --> 00:15:27,279
+İlgili kişiye atandıktan sonra ilgili kişi hatanın kendisine ait olmadığını düşünürse tekrar sistem mühendisi grubuna iletir.
+
+50
+00:15:27,280 --> 00:15:35,440
+Eğer hatanın kendisine ait olduğunu düşünürse hatayı çözer ve çözdükten sonra tekrar test grubuna ileterek testte aşamasına geçmesini sağlar.
+
+51
+00:15:35,720 --> 00:15:42,060
+Test grubu gerekli testleri yaptıktan sonra hatayı başarıyla geçmesi durumunda kapandı olarak işaretler.
+
+52
+00:15:44,160 --> 00:15:53,539
+Test sorumlulukları ve eğitimi ihtiyacından bahsetmek gerekirse bu kapsamda bazı görevler ve bu görevlerin tanımları verilmiştir burada.
+
+53
+00:15:53,539 --> 00:16:03,860
+yöntemiz, kuragasyon yönetim sorumlusu, test yöneticisi, test grubu, test ortam sorumlusu ve bu görevlere grup üyelerimizden atamalar yapılmıştır.
+
+54
+00:16:06,200 --> 00:16:10,939
+Test takvimine baktığımızda üç adet test planlamıştık. Birim, sistem ve kullanıcı testleri.
+
+55
+00:16:11,519 --> 00:16:14,780
+Bunların hangi zaman aralığında yapılacağını burada GAN diyakramıyla gösterdik.
+
+56
+00:16:15,899 --> 00:16:23,420
+Risk yönetimin başında bu testlerin yapılmasında olası riskleri belirledik ve bu risklere karşı alınabilecek önlemlerden bahsettik.
+
+57
+00:16:23,539 --> 00:16:28,539
+[öğrenci] bir de kişilerle eşleştirir misin?
+
+58
+00:16:28,539 --> 00:16:36,599
+Bu test planında hangi test hangi arkadaşınız tarafından yapıldı?
+
+59
+00:16:37,739 --> 00:16:40,759
+Tabirde yalnız risk sorumlusu [öğrenci].
+
+60
+00:16:41,460 --> 00:16:54,399
+riskler, cihazda. Olası riskleri beledik burada. Mesela birim testi hanginiz yaptınız? Sistem testini var mı orada? Yok, göremedim. Kişi. Burada, aynen, burada yok.
+
+61
+00:16:55,619 --> 00:16:58,319
+Burada yok, onlar, burada yok. Birim testi bir daha.
+
+62
+00:16:58,319 --> 00:16:59,239
+Birim testi bir daha.
+
+63
+00:17:01,239 --> 00:17:01,919
+[öğrenci].
+
+64
+00:17:02,419 --> 00:17:03,960
+[öğrenci], tamam.
+
+65
+00:17:03,960 --> 00:17:18,259
+Tamam. Daha sonra siz de bildirirseniz iyi olur. Önümüzdeki hafta dersin başında bu projeyle ilişkili birkaç soruma cevap verecek.
+
+66
+00:17:19,040 --> 00:17:19,680
+Tamam hocam.
+
+67
+00:17:20,159 --> 00:17:20,419
+Tamam.
+
+68
+00:17:22,300 --> 00:17:27,800
+Test ortamı ve araçlarından bahsetmek gerekirse test ortamı kendi şahsi kişisel bilgisayarlarımızdı.
+
+69
+00:17:41,419 --> 00:17:45,460
+Test planı bitti. Şimdi kütüven yönetim sistemi test sonuç raporundan bahsedeceğim.
+
+70
+00:17:46,599 --> 00:17:54,820
+Test sonuç raporunda test ortamından, yine test ortamından, test yaklaşımından, test durumları oluşturulması, test durumdan izlenebilirlikleri, test prosedüründen ve test durumu tanımlarından bahsedeceğiz.
+
+71
+00:17:54,820 --> 00:18:05,960
+test durumu tanımlarında bir bölümde test verisinin nasıl oluşturulduğundan, test verisinin ne olduğundan, test durumlarından ve bu test durumlarının hangi eksimleri karşılandığından bahsedilecektir.
+
+72
+00:18:06,699 --> 00:18:17,839
+Test verisi manuel yollarda oluşturulmuştur. Test verisi oluşturulurken potansiyel kullanıcıların girebileceği veriye uygun bir test datası oluşturulması göz önünde bulundurulmuştur.
+
+73
+00:18:18,040 --> 00:18:24,299
+Bundan sonraki kısmı [öğrenci] anlatacak. [öğrenci] bize kullanıcı testleri ve sistem testini anlatacak.
+
+74
+00:18:24,820 --> 00:18:27,620
+Simi?
+
+75
+00:18:28,620 --> 00:18:30,980
+Host alabilir miyim? Tamam. Aldım galiba.
+
+76
+00:18:36,307 --> 00:18:41,228
+Şu an you can't, ekranını kapasana sen. Sen açıkken ben alamıyorum.
+
+77
+00:18:45,332 --> 00:18:52,832
+Nasıl kapatacağız? Stop sharing var. Böyle kırmızı bir tuş. Tamam.
+
+78
+00:18:55,172 --> 00:18:58,471
+Hocam şimdi ben de size kullanıcı tezlerinden bahsedeceğim.
+
+79
+00:19:00,411 --> 00:19:03,991
+Şu bir saniye bilgisayar bir kendine gelsin.
+
+80
+00:19:17,940 --> 00:19:31,320
+Merhaba hocam. Kullanıcı testleri aşamasında 5 adet fonksiyonel gereksinimi hedefleyen, 1 adet de fonksiyonel olmayan gereksinimi hedeflemek üzere toplamda 6 adet test durumu belirledik. Bu test durumlarını şimdi sırayla anlatacağım.
+
+81
+00:19:33,559 --> 00:19:43,639
+İlk testimiz bizim sistemde tanımlı bir yönetici rolüyle giriş yapıldığında bu yöneticinin sisteme kullanıcı eklemesi, düzenlemesi gibi işlemleri gerçekleştirebildiğini test ettik.
+
+82
+00:19:43,639 --> 00:19:47,239
+şu an ben sistemi yönetici rolüyle giriş yaptım.
+
+83
+00:19:47,959 --> 00:19:49,939
+Burada kullanıcılar listemiz var.
+
+84
+00:19:50,639 --> 00:19:52,659
+Şu anda mevcut olan kullanıcıları görmektesiniz.
+
+85
+00:19:53,219 --> 00:19:54,719
+Buradan sistemi kullanıcı ekleyeceğiz.
+
+86
+00:19:56,519 --> 00:19:59,679
+Kullanıcı eklerken buradan kullanıcıya gerekli
+
+87
+00:19:59,679 --> 00:20:03,679
+alt, soyat, e-posta, şifre ve kullanıcı rolü bilgilerin girilmesi gerektiği söyleniyor.
+
+88
+00:20:06,819 --> 00:20:09,179
+Buradan herhangi bir kullanıcı oluşturalım askeri.
+
+89
+00:20:12,660 --> 00:20:19,660
+Bu bilgiye girdikten sonra ardından kullanıcının rolünü belirledikten sonra kaydet tuşuna basıyoruz.
+
+90
+00:20:19,660 --> 00:20:32,660
+Burada işlem başarı ile gerçekleştirme başarısını aldığımız zaman kullanıcının eklenmiş olduğunu biliyoruz. Yine de ilk kontrol etmek gerekirse buradan kullanıcılar kısmına giderek bu kullanıcının sisteme eklenmiş olduğunu görebilmekteyiz.
+
+91
+00:20:32,660 --> 00:20:42,959
+diğer bir testimizde ise yine yönetici röleği ile girilmiş bir kullanıcının sistemde kullanıcı araması yaparak sonuçta erişebildiğini test ettik.
+
+92
+00:20:43,779 --> 00:20:52,020
+Burada da işte kullanıcı bizim listemiz var. Burada herhangi bir kullanıcının isim, soy isim ya da e-poste bilgisine girerek herhangi bir kullanıcının bilgisine erişebiliriz.
+
+93
+00:20:52,020 --> 00:21:03,959
+Mesela burada sadece bir sayfa var ama mesela 50 sayfa da olsa burada herhangi bir isim yazdığımız zaman o isme ait kullanıcılar veyahut da o isme ait soy isme ait kullanıcılar bir isteğe gelmekte.
+
+94
+00:21:04,639 --> 00:21:12,540
+Buradan yeni kullanıcıya ait daha fazla bilgi görmek isterseniz buradan göz içerisine tıklayarak daha fazla ayrıntı bilgisini görebilmekteyiz.
+
+95
+00:21:12,539 --> 00:21:25,959
+diğer bir testimizde ise sistemde editör rolüyle giriş yapıldığı zaman sisteme kitap eklemesi veyahut da var olan bir kitabın bilgisini düzenlemesi işlemlerini gerçekleştirebildiğini test ettik.
+
+96
+00:21:27,339 --> 00:21:32,380
+Buradan öncelikle biz kitap listesine gidiyoruz. Burada şu anda var olan kitaplar yer alıyor.
+
+97
+00:21:34,039 --> 00:21:39,279
+Buradan kitap ekle tuşuna basarak kitap ekleme sayfasını açıyoruz ve kitap için gerekli olan bilgileri yazıyoruz.
+
+98
+00:21:39,279 --> 00:21:48,219
+Burada işte A, İSE, B, N, E, M, Tarihi, sayfa sayısı, yayıncı bilgileri, yazar bilgileri ve burada diğer bilgileri de tek tek girip herhangi bir kitap ekleyebiliriz.
+
+99
+00:21:53,556 --> 00:22:10,015
+Buradan tarihimizi seçelim. Sayfa sayısı. Buradan yayıncı için sistemde var olan yayıncılardan seçmek zorundasınız. Burada kısıtlara yazdım ben zaten bunu. Herhangi yeni bir yayıncı belirleyemezsiniz. Sistemde var olanlardan birini seçmeniz gerekiyor.
+
+100
+00:22:10,576 --> 00:22:22,775
+Aynı şekilde yazar için de sistemde daha önce var olan bir yazarlardan birini seçmeniz gerekiyor. Daha sonra kitap deliği, kapak tipi ve kütüphane izlemini konumuna girdikten sonra
+
+101
+00:22:22,775 --> 00:22:25,375
+Buradan bir kitap ekleyebiliriz.
+
+102
+00:22:26,655 --> 00:22:30,916
+Kitap başarılı eklendiği mesajını aldıktan sonra kitabın başarılı eklenmiş olduğunu görmekteyiz.
+
+103
+00:22:31,475 --> 00:22:37,335
+Daha sonra yine de kontrol etmek gerekirse buradan kitaplar listesine giderek bu kitabın eklendiğini görüyoruz burada.
+
+104
+00:22:37,515 --> 00:22:39,575
+Bu testin de başarılı sonuçlandığını görüyoruz.
+
+105
+00:22:40,855 --> 00:22:46,435
+Bir sonraki testimizde ise sistemli kitap araması yaparak sonuçlar erişebildiğini test ettik.
+
+106
+00:22:46,435 --> 00:22:48,115
+Burada kitap listemiz var.
+
+107
+00:22:48,115 --> 00:22:56,475
+herhangi bir kitabın buradan ismini yazarak ya da bir kısmını yazarak ismin buradan o kitaba erişebiliyoruz.
+
+108
+00:22:56,955 --> 00:23:01,795
+Daha ayrıntılı bilgi görmek için bu işareti tıkladıktan sonra kitabın ayrıntılar kısmına gidiyor.
+
+109
+00:23:03,056 --> 00:23:05,475
+Bu şekilde diğer testi de gerçekleştirmiş olduk.
+
+110
+00:23:06,056 --> 00:23:10,556
+Son olarak sistemde elektörün yazar eklemesi ve yazar bilgilerini değiştirebildiğini test ettik.
+
+111
+00:23:11,215 --> 00:23:12,535
+Buradan bizim yazar listemiz var.
+
+112
+00:23:14,035 --> 00:23:16,015
+Bu sistemde kayıt olan yazarlar listesi.
+
+113
+00:23:16,015 --> 00:23:19,655
+Buradan yazar ekleyerek herhangi bir yazar ekleyebiliriz.
+
+114
+00:23:24,627 --> 00:23:51,968
+Bu yazar eklendikten sonra gerilen bilginin ait olduğu yazar profili ekrana geldiyse bu yazar ekleme işlemi başarılı gerçekleştiriliyor. Yine de buradan yazarlar kısmına giderek kontrol edebiliriz. Bir de fonksiyon olmayan gereksinlerden güvenlik kısmını test ettik. Güvenlik dediğimiz işte authentication işlemi bir kullanıcı sadece kendine izin verilen modüllere erişimi olmalı. Mesela ben şu anda root hesabından girdiğim için şu an tüm modüllere erişebilmekteyim.
+
+115
+00:23:51,968 --> 00:24:00,947
+kontrol etmek için buradan şimdi hesabından çıkıp sırasıyla önce kütüphaneci rolüne daha sonra da editör rolüne ait bir giriş yapacağım.
+
+116
+00:24:01,267 --> 00:24:05,328
+Oradan verilen izinlerin doğru olup olmadığını test edeceğim.
+
+117
+00:24:10,740 --> 00:24:37,639
+Şimdi kütübancı rolü ile girdiğim zaman benim görmem gereken ödünç vermi ve üye ekleme modüllerine erişim izni olmam. Daha sonra mesela kullanıcı ekleme modülüne erişimim yok benim şu anda. Veyahut da yazar ekleme, kitap ekleme modüllerine erişimim yok görüldüğü üzere. Sadece üye ekleme ve ödünç kayıtları modüllerine erişimim var. Bu şekilde yetkilendirme işlemin başarılı bir şekilde sağlandığını görebilmediğim. Burada mesela sadece kitap araması yapabiliyor. Kitap ekleme modülüne erişim yok.
+
+118
+00:24:37,639 --> 00:24:41,559
+Aynı şekilde editör rolünü de kontrol edelim
+
+119
+00:24:50,996 --> 00:25:15,715
+Edütörün de olması gereken kitap yönetimine, yasel yönetimine ve yayıncı yönetimi modülüne erişim olması. Buradan bakıldığı zaman kitaplar modülüne erişim var, yazarlar modülüne erişim var, aynı şekilde yayıncı firmalar modülüne erişim var ama burada da kullanıcı modülüne erişim yok mesela. O sadece yöneticiye ait bir rol. O yüzden burada görmemekteyiz. Bu şekilde 6 testimizi başarılı olarak gerçekleştirmiş olduk.
+
+120
+00:25:15,715 --> 00:25:25,895
+Burada testlerin bizim daha önce yazdığımız gereksinim analizinde hangi fonksiyonel gereksinimleri hedeflediğini burada görmekteyiz tablo kısmında
+
+121
+00:25:25,895 --> 00:25:32,555
+Burada test kısmında aldığımız bir hatayı belirtmek istedim
+
+122
+00:25:32,555 --> 00:25:38,775
+Burada bir yazarı normalde kitapsız eklediği zaman tekrar kitaplar listesine erişilmiyor
+
+123
+00:25:38,775 --> 00:25:43,575
+Bu hatanın da hata bildirim formunu oluşturdum ve gerekli kişiye ilettim bu şekilde
+
+124
+00:25:43,575 --> 00:25:50,455
+bundan sonra sistem testimiz geliyor. Sistem testi kısmında performans testi gerçekleştirdik.
+
+125
+00:25:50,455 --> 00:25:57,135
+Şimdi bizim uygulamanız web uygulaması olduğu için web uygulamasını değerlendirirken bazı performans medikleri var.
+
+126
+00:25:57,435 --> 00:26:09,496
+Onlardan bahsettim burada. First Content Mode Paint sayfa yüklenmeye başladığı zaman ekrana gelen ilk kısmın ilk kısmına kadar geçen süreyi bahsediyor.
+
+127
+00:26:09,496 --> 00:26:35,996
+Daha sonra speed index var. Bu da içerik hesaplaması, bu arka piyanda bir içerik hesaplaması yapıyor. Onunla ilgili bir hız indeksi belirliyor. Aynı şekilde burada daha farklı metriklerimiz var. Dersimizin ana konusu bu olmadığı için sadece burada kısaca bir görmenizi istedim. Bu testimizi de daha önce bahsettiğimiz gibi GT metrics üzerinden gerçekleştirdik. Burada bazı metriklerimizin sonuçlarını görmektesiniz. Ekranını da açayım.
+
+128
+00:26:35,996 --> 00:27:01,996
+Bu şekilde bir analiz gerçekleştiriyor bu kullandığımız tool. Daha sonra bu analize ait performans ve yapı hızlarını belirliyor. Burada on node time, FCP ve large CAP bildirilmeni gerçekleştiriyor. Burada 0.8 toplam interaktif süresi ve sayfadaki son kısım yüklerine kadar toplam geçen süre 1.2 saniye olarak gözüküyor.
+
+129
+00:27:01,996 --> 00:27:30,695
+Bu hızlar yani bana da bu hızlar aşina olmayabilir. Yani 0.7 iyi mi kötü mü bilmeyebiliriz. Burada işte genel bir internet web ortamında genel bir değerlendirmesi yer alıyor. Hani bu 0.7 iyi mi kötü mü? Sadece CLC değerinde küçük bir düşüş var. 0.24 ile kötü bir değerlendirme almış. Onun dışında diğer altı metlikte iyi bir performans gerçekleştiğini görüyoruz. Bu şekilde kullanıcı ve sistem testlerini gerçekleştirmiş olduk.
+
+130
+00:27:30,695 --> 00:27:36,035
+bilim testini anlatmak için ben arkadaşımı Bediren Akçaya şimdi postluğu vereceğim.
+
+131
+00:27:50,291 --> 00:28:10,151
+Merhabalar. Öncelikle spring boot projesi. Bu sebeple testlerin üzerinde çalışacağı application konteksi oluşturmak, o kontekse testlere bağlamak gibi kontrolleri spring'e devretmek adına spring boot test kütüphanelerinden yararlandık.
+
+132
+00:28:10,151 --> 00:28:13,331
+Testleri de JUnit ile yazdık.
+
+133
+00:28:15,631 --> 00:28:24,071
+Proje kapsamında, test kapsamında bu listede görünen modüllerin servis katmanındaki kodlarını test ettik.
+
+134
+00:28:24,611 --> 00:28:38,152
+Örneğin kitap modülü için kitap servisinde bulunan yeni bir kitap ekleme ve kitabın ödünç almak için uygun olup olmadığını kontrol eden servis fonksiyonlarını test ettik.
+
+135
+00:28:38,152 --> 00:28:42,391
+Yeni bir kitap kaydederken öncelikle bir kitap kayıt formu oluşturuyoruz.
+
+136
+00:28:42,791 --> 00:28:51,492
+Bu kayıt formunu servis kayıt fonksiyonuna parametre olarak verdiğimizde eğer kayıt başarılıysa o objeyi dönüyor.
+
+137
+00:28:51,632 --> 00:28:53,951
+Başarısız bir nal değer dönüyor.
+
+138
+00:28:54,291 --> 00:29:00,012
+Biz de bu nal dönüp dönmediğinden sort ederek kontrolü, testi yapıyoruz.
+
+139
+00:29:00,251 --> 00:29:08,071
+Kitabın uygunluğunu test eden fonksiyon ise uygun olup olmadığı durumuna göre doğru veya yanlış görüyor.
+
+140
+00:29:08,152 --> 00:29:09,891
+dönüyor. Biz de bu durumu asert ederek
+
+141
+00:29:09,891 --> 00:29:12,312
+sonucu testi yapıyoruz.
+
+142
+00:29:12,832 --> 00:29:13,872
+Yayıncı modülü de
+
+143
+00:29:13,872 --> 00:29:14,912
+çeye çok benzer.
+
+144
+00:29:15,931 --> 00:29:17,891
+Yine yeni bir yayıncı
+
+145
+00:29:17,891 --> 00:29:19,851
+firma kaydı yaparken bir kayıt formu
+
+146
+00:29:19,851 --> 00:29:21,891
+oluşturuyoruz. İşlemin sonucuna göre
+
+147
+00:29:21,891 --> 00:29:22,452
+nav veya
+
+148
+00:29:22,452 --> 00:29:26,172
+objenin döndüğünü asert ederek
+
+149
+00:29:26,172 --> 00:29:29,611
+testi sağlıyoruz.
+
+150
+00:29:30,711 --> 00:29:32,012
+Bir diğer fonksiyon da
+
+151
+00:29:32,012 --> 00:29:33,771
+yayıncı servisindeki
+
+152
+00:29:33,771 --> 00:29:35,872
+id'ye göre database'den
+
+153
+00:29:35,872 --> 00:29:37,912
+yayıncıyı çekmek. O da
+
+154
+00:29:37,911 --> 00:29:41,571
+Eğer ID ile bir yayıncı varsa o yayıncı objesini dönüyor.
+
+155
+00:29:41,751 --> 00:29:42,691
+Bulamazsa nal dönüyor.
+
+156
+00:29:42,771 --> 00:29:45,951
+Biz de bu durumu asert ederek kontrol ettik.
+
+157
+00:29:46,611 --> 00:29:50,371
+Kullanıcı modülü için buradan göstersem daha iyi olacak.
+
+158
+00:29:50,491 --> 00:29:54,751
+Bu kullanıcı servisini test ettiğimiz test sınıfı.
+
+159
+00:29:54,751 --> 00:30:01,012
+Burada yeni bir kullanıcı kaydederken öncelikle yeni bir kayıt form objesi oluşuyoruz.
+
+160
+00:30:01,051 --> 00:30:04,652
+Burada kullanıcının e-post adresinin ismini şifresine girerek.
+
+161
+00:30:04,652 --> 00:30:07,551
+daha sonra user servisindeki bu fonksiyonu
+
+162
+00:30:07,551 --> 00:30:09,491
+fonksiyona parametre olarak veriyoruz.
+
+163
+00:30:09,851 --> 00:30:12,491
+Geriye dönüş değerini de assert ile kontrol ediyoruz.
+
+164
+00:30:12,872 --> 00:30:15,952
+Burada herhangi bir hata olmadığı için
+
+165
+00:30:15,952 --> 00:30:17,491
+üzerin kaydetmesini bekleriz.
+
+166
+00:30:17,532 --> 00:30:20,512
+O yüzden assert not null ile sonucu değerlendiriyoruz.
+
+167
+00:30:20,592 --> 00:30:23,372
+Ben aynı zamanda girilen değerlerle
+
+168
+00:30:23,372 --> 00:30:27,051
+kaydedilen değerlerin eşitliğini de kontrol etmişim.
+
+169
+00:30:28,051 --> 00:30:31,071
+Bu fonksiyon aynı zamanda hatalı durumlarda
+
+170
+00:30:31,071 --> 00:30:33,911
+exception fırlatıyor hatalı verilerde.
+
+171
+00:30:33,911 --> 00:30:36,851
+onun da bir durumunu test ettik.
+
+172
+00:30:37,291 --> 00:30:43,291
+Eğer zaten kayıtlı bir e-posta adresiyle yeni bir kullanıcı kaydedilmeye çalışıldığında
+
+173
+00:30:43,291 --> 00:30:48,111
+entity or the exist exception'ı fırlatıyor.
+
+174
+00:30:48,111 --> 00:30:54,711
+Biz de bunu kaydetmek adına uygulama ayağa kalkarken kaydedilen root hesabın e-postasıyla
+
+175
+00:30:54,711 --> 00:31:00,111
+yeni bir kayıt objesi oluşturup daha sonra bu promise ile onu denedim.
+
+176
+00:31:01,191 --> 00:31:02,171
+Yani çalıştırdık.
+
+177
+00:31:02,171 --> 00:31:06,731
+Daha sonra bu egzepşion'a fırlatması gerektiğini assert ettik.
+
+178
+00:31:06,951 --> 00:31:13,711
+Aynı şekilde yine eğer kullanıcının şifresi girilmemişse de bir egzepşion fırlatıyor.
+
+179
+00:31:13,811 --> 00:31:25,171
+Bu durumu da yeni bir kayıt objesinde password'ı null veya boystring olarak deneyip bu user password empty egzepşion'a fırlatmasını assert ettik.
+
+180
+00:31:25,171 --> 00:31:28,891
+aynı zamanda
+
+181
+00:31:28,891 --> 00:31:29,911
+bu
+
+182
+00:31:29,911 --> 00:31:33,671
+servisin e-post adresiyle
+
+183
+00:31:33,671 --> 00:31:35,051
+DataVac'dan user
+
+184
+00:31:35,051 --> 00:31:37,671
+alması da, alma fonksiyonu da
+
+185
+00:31:37,671 --> 00:31:39,371
+test ettik. Yukarıdakiyle aynı şekilde
+
+186
+00:31:39,371 --> 00:31:41,271
+çalışıyor. Yazar modülü de
+
+187
+00:31:41,271 --> 00:31:43,411
+bir önceki modüllere
+
+188
+00:31:43,411 --> 00:31:45,531
+benzer bir şekilde çalışıyor. Yeni yazar
+
+189
+00:31:45,531 --> 00:31:46,151
+kaydı için
+
+190
+00:31:47,763 --> 00:32:09,184
+Yine bir yazar objesi oluşturup bu objeyi, sonucu now veya olmadığına göre assert ediyoruz. Bu servis sınıfı aynı zamanda bir arama, anahtar kelimeye göre arama fonksiyonu da barındırıyor. Bunu da test ettik. Çıkan page sonucundaki değerlerle beklenen değerleri karşılaştık, assert ederek denedik.
+
+191
+00:32:09,184 --> 00:32:20,524
+Yö modülü de benzer bir şekilde çalışıyor diğerlerine. Onları da kaydını sort ederek ve de ödünç almak için uygun olup olmadığını sort ederek kontrol ettik.
+
+192
+00:32:21,763 --> 00:32:35,543
+Kütüphane ayarları modülü de göstermem gerekirse. Burada testini gerçekleştik. Bu kütüphane ayarları kütüphanenin iç işleyişini kontrol eden ayarlar.
+
+193
+00:32:35,543 --> 00:32:41,663
+örneğin max extension bir ödünç kaydının ne kadar uzatılabileceğini kontrol ediyor.
+
+194
+00:32:42,063 --> 00:32:49,203
+Burada bu teste bu isimle bu servisten bu kaydı istedik.
+
+195
+00:32:49,203 --> 00:32:52,944
+Eğer doğru bir şekilde bulduysa assert not null ile bunu kontrol ediyoruz.
+
+196
+00:32:53,003 --> 00:32:55,124
+Bulamadıysa no olması gerekiyor.
+
+197
+00:32:56,243 --> 00:33:00,944
+Ardından bunu editlemeyi test ettik.
+
+198
+00:33:00,944 --> 00:33:10,103
+MaxExtension'ın değerini 5 olarak güncellediğimde çıkan sonucu burada sort ederek kontrol ediyorum.
+
+199
+00:33:11,124 --> 00:33:14,763
+Daha sonra bu tabi bu güncelleme işlemi de hatta fırlatıyor.
+
+200
+00:33:15,043 --> 00:33:17,083
+Hatalı durumlarda bir Exception fırlatıyor.
+
+201
+00:33:17,083 --> 00:33:22,024
+Onu da test ettik. MaxExtension nümerik tipte değerler kabul ediyor.
+
+202
+00:33:22,323 --> 00:33:26,844
+Fakat ben ona Text tipinde bir değer verdiğimde bu Exception'ı fırlatıyor.
+
+203
+00:33:27,043 --> 00:33:29,284
+Bunun testini gerçekleştirdik.
+
+204
+00:33:30,944 --> 00:33:37,124
+Evet. Test raporuyla ilgili, test sonuç raporuyla ilgili söyleyeceklerimiz bu kadardı.
+
+205
+00:33:43,571 --> 00:33:48,591
+Evet, gruptakilerden
+
+206
+00:33:52,531 --> 00:33:54,691
+Anlatım yapmayan var mı şu anda?
+
+207
+00:33:54,691 --> 00:33:56,571
+Fatih Yılmaz hocam.
+
+208
+00:33:58,371 --> 00:33:59,771
+Evet.
+
+209
+00:34:01,031 --> 00:34:01,731
+Şimdi
+
+210
+00:34:01,731 --> 00:34:04,771
+[öğrenci]
+
+211
+00:34:04,771 --> 00:34:06,691
+anlattı.
+
+212
+00:34:06,952 --> 00:34:07,251
+Evet.
+
+213
+00:34:08,011 --> 00:34:09,571
+Genel olarak
+
+214
+00:34:09,571 --> 00:34:14,471
+planlama konusunda bilgi verdi.
+
+215
+00:34:15,811 --> 00:34:17,971
+[öğrenci]
+
+216
+00:34:17,971 --> 00:34:20,792
+kullanıcı test ve sistem testlerini
+
+217
+00:34:20,792 --> 00:34:30,536
+Evet.
+
+218
+00:34:33,915 --> 00:34:46,355
+[öğrenci] anlattı. Sonra [öğrenci] unit testi anlattı. Başka grubunuzda [öğrenci] var.
+
+219
+00:34:47,876 --> 00:34:49,475
+Evet hocam, [öğrenci] var bir de.
+
+220
+00:34:51,655 --> 00:34:52,716
+Dört kişi miydiniz?
+
+221
+00:34:52,876 --> 00:34:53,735
+Dört kişiyiz, evet.
+
+222
+00:34:56,335 --> 00:34:57,055
+Tamam.
+
+223
+00:34:57,055 --> 00:35:00,935
+[öğrenci], [öğrenci], [öğrenci], [öğrenci]
+
+224
+00:35:00,935 --> 00:35:02,675
+Doğru
+
+225
+00:35:02,675 --> 00:35:03,175
+Değil mi?
+
+226
+00:35:03,435 --> 00:35:05,036
+Doğru hocam, dört kişiyiz toplam
+
+227
+00:35:05,036 --> 00:35:06,515
+Tamam
+
+228
+00:35:06,515 --> 00:35:10,015
+Evet, sunumunuz güzel oldu
+
+229
+00:35:10,015 --> 00:35:16,755
+Size, tabii ki bugün fazla sunum olmadığı için size fazla zaman verdim
+
+230
+00:35:16,755 --> 00:35:20,795
+Önümüzdeki hafta sunum yapacak olan arkadaşlar
+
+231
+00:35:20,795 --> 00:35:27,895
+daha planlı ve daha özet olarak anlatacaklar.
+
+232
+00:35:28,655 --> 00:35:34,256
+Ve bugün de bakıyorum sınıfın sayısı oldukça kalabalık.
+
+233
+00:35:35,495 --> 00:35:44,116
+Sizler için de arkadaşlarınız ilk sunum yapan grup olarak daha aydınlatıcı olmuştur diye düşünüyorum.
+
+234
+00:35:44,116 --> 00:35:46,655
+Güzel bir sunum yaptılar.
+
+235
+00:35:46,655 --> 00:36:01,895
+Bu şekilde her seçtiğiniz örnek yapmanızı istemiştim ve söylediğim minimum koşulları yerine getirmiş arkadaşlarınız.
+
+236
+00:36:01,896 --> 00:36:18,635
+Yani nedir? Genel olarak yazılımı anlattılar. İsteyen gereksinim raporunu ortaya koyarak onun üzerinden de gidebilir bu programın anlatım kısmını, yazılımın anlatım kısmını.
+
+237
+00:36:18,635 --> 00:36:40,196
+Daha sonra test planlarını verdiler ve kullanıcı testi sistem için bir tane açık kaynaklı tool bulmalarınızı istemiştim.
+
+238
+00:36:40,196 --> 00:36:48,235
+Arkadaşlarınız bunu da bulmuşlar ve unit testi de anlatan arkadaşları da güzel anlattı.
+
+239
+00:36:48,635 --> 00:36:55,495
+O yüzden arkadaşlarınızın projesi başarılı.
+
+240
+00:36:56,755 --> 00:37:04,515
+Şimdi ikinci grup [öğrenci] siz alabilirsiniz sunumu.
+
+241
+00:37:05,175 --> 00:37:07,195
+Teşekkür ederim bu gruptakilere.
+
+242
+00:37:08,015 --> 00:37:13,795
+[öğrenci]'e de önümüzdeki hafta sunumunuzun herhangi bir yerinden soru soracağım.
+
+243
+00:37:14,395 --> 00:37:17,535
+Önümüzdeki hafta derste mutlaka olsun.
+
+244
+00:37:18,635 --> 00:37:20,635
+FonMov-e-chan
+
+245
+00:37:24,115 --> 00:37:26,035
+Hocam başlayalım mı?
+
+246
+00:37:40,403 --> 00:37:54,383
+Merhaba herkese. Yazılım Kalite, test süreci projesi sunumunu yapacağız şimdi. Bizim projemiz VVHK adında bir sosyal medya projesi. Bunu yaz aylarında beraber yapmıştık. Projeyi kısaca şöyle tanıtabilirim.
+
+247
+00:37:54,383 --> 00:37:58,723
+Bir daha şeye gelebilir misin? İsimlerinizin olduğu yere.
+
+248
+00:38:05,139 --> 00:38:06,039
+Başlayayım mı hocam?
+
+249
+00:38:08,600 --> 00:38:09,219
+Evet.
+
+250
+00:38:09,939 --> 00:38:31,499
+Tamam. Biz bu projeyi yaz aylarında yapmıştık. Bu aslında bir sosyal medya platformu. Burada öğrenmek istediğiniz dili belirleyip o dili bilen kişilerle birbirinizi eşleştirmenizi sağlıyor belli kriterlere göre. Bu sistem mikroservis yapısına tasarlandı ve bir sürü farklı servisleri var.
+
+251
+00:38:31,499 --> 00:38:57,799
+Bu servislerden en büyüğü VWHC User Info Service. Burada kullanıcı bilgileri tutuluyor genelde. VWHC Authentication Service, Message Service ve Match Service de var. Ve VWHC WebClient var. Bunların testleri User Info Service'i [öğrenci]'le ben yaptık. Authentication Service'i [öğrenci] yaptı. Message Service'i [öğrenci] yaptı. Match Service'i de [öğrenci] yaptı. WebClient'i de [öğrenci]'le [öğrenci] beraber yaptılar.
+
+252
+00:38:57,799 --> 00:39:03,259
+Siz bir yerde kullanılmak üzere mi yapmıştınız?
+
+253
+00:39:03,919 --> 00:39:06,439
+Hocam biz bunu yazın bu projeyi yaptık.
+
+254
+00:39:07,139 --> 00:39:09,860
+Bir müşterisi var mıydı onu sormak istedim.
+
+255
+00:39:09,959 --> 00:39:13,519
+Yok sadece kendi yarattığımız kullanıcılarla kendimizi test ettik.
+
+256
+00:39:14,040 --> 00:39:14,300
+Tamam.
+
+257
+00:39:15,300 --> 00:39:20,180
+Bunu User Info Service yazarken Node.js ve Express.js framework'ünü kullandık.
+
+258
+00:39:20,360 --> 00:39:22,919
+Node.js runtime'da Express.js framework'ı.
+
+259
+00:39:22,919 --> 00:39:25,759
+Bu kullanıcı bilgilerini sağlayan bir servis.
+
+260
+00:39:25,759 --> 00:39:32,959
+test, genel olarak çoğu işten buradan yürüyor. Bunun birim testleri yazarken Mocha, Çay ve İstanbul CS kullandık.
+
+261
+00:39:33,399 --> 00:39:38,559
+Entegrasyon testlerinde Sinon ve SuperTest kullanıldı. Sistem testleri de Postman ile yapıldı.
+
+262
+00:39:39,559 --> 00:39:42,299
+Benim kısmım şu anlık bu kadar. Teşekkür ederim.
+
+263
+00:39:43,579 --> 00:39:47,539
+User Info Service'in test kısmını şimdi ben göstereceğim.
+
+264
+00:39:47,539 --> 00:40:01,859
+Öncelikle gereksinim spesifikasyonu belgemizden kısaca bahsetmek istiyorum. Burada özel gereksinimler kısmında, fonksiyonel gereksinimler kısmında bir kullanım senaryomuz vardı.
+
+265
+00:40:01,859 --> 00:40:08,859
+ve 3.2 bölümünde bütün harici arayüz gereksinimlerini tanımlamıştık.
+
+266
+00:40:10,479 --> 00:40:29,639
+Yazılım test raporumuzda da bütün test edilen sistemlerde hem bilim testlerde hem integrasyon testlerinde hem de sistem testlerinde ilgiye SRS bilimi zaten bu başlıklar olarak belirlendi.
+
+267
+00:40:30,459 --> 00:40:31,819
+Biraz daha büyüteyim.
+
+268
+00:40:31,860 --> 00:40:40,800
+Burada oldukça fazla test var. O yüzden sadece bir tane örnek olarak rapordaki bir test size anlatacağım.
+
+269
+00:40:41,779 --> 00:40:47,759
+Farklı test suite'lerimiz var. Bu test suite'leri genellikle servislerin isimleriyle eşleşiyor.
+
+270
+00:40:48,520 --> 00:40:58,680
+Test edilen birimler de çoğunlukla backend servislerinde bir tane kontrol olur, bir tane model ve bir tane de validation birimleri var.
+
+271
+00:40:58,679 --> 00:41:03,959
+test başlığı da bu test örneğinde kullanıcıların doğrulanması olarak belirlenmiş.
+
+272
+00:41:04,059 --> 00:41:06,159
+Test senaryosu boş kullanıcı listesinin gelmesi.
+
+273
+00:41:07,339 --> 00:41:09,019
+Bu test herhangi bir girdi almıyor.
+
+274
+00:41:09,739 --> 00:41:19,179
+Sadece istek gönderilen fonksiyonun doğru bir şekilde boş kullanıcı listesini gönderip göndermediğini kontrol ediyor.
+
+275
+00:41:20,019 --> 00:41:21,559
+Test taşımaları da bu şekilde.
+
+276
+00:41:21,559 --> 00:41:25,239
+Beklenen sonuç bir boş listenin gelmesi.
+
+277
+00:41:25,239 --> 00:41:34,159
+bu boş listede aslında kullanıcıların olması bekleniyordu. Ancak hiçbir kullanıcı olmadığında bu sistemin nasıl yanıt vereceği test edildi burada.
+
+278
+00:41:35,339 --> 00:41:45,399
+Bu testin geçtiğini ve herhangi bir hatanın belirlenemediği burada da not edilmiş. Birçok farklı test senaryosu da burada yazıldı.
+
+279
+00:41:45,399 --> 00:41:54,399
+Oldukça uzun olduğu için bunlara değinmeyeceğim. Şimdi User Info Service'teki bazı noktalara değineceğim.
+
+280
+00:41:54,399 --> 00:42:03,799
+Burada unit testlerden bahsetmek istiyorum. Controller ve user controller içerisindeyiz. Çağ dış arkadaşım da dediği gibi
+
+281
+00:42:04,947 --> 00:42:19,647
+backend servislerinde Node.js ve Express.js kullandık. Bu frameworklerin test edilmesi için de Mocha.js ve Mocha.js Sinon, İstanbul.js gibi farklı kütüphanelerden faydalandık.
+
+282
+00:42:22,327 --> 00:42:31,327
+Burada gördüğünüz gibi birçok farklı test case var. Bunların hepsini göstermeyeceğim. Şimdi sadece testleri çalıştıracağım.
+
+283
+00:42:31,327 --> 00:42:46,488
+unit testleri çalıştırıyorum. Burada User Info Service servisi için toplamda 49 tane unit test yazılmış ve bunların her birinden geçtiğini görebiliyoruz.
+
+284
+00:42:46,488 --> 00:42:56,847
+Az önce Çağdış arkadaşım da dediği gibi Mocha kütüphanesini kullandık. Şimdi bir de integrasyon testlerini çalıştıracağım.
+
+285
+00:42:56,847 --> 00:43:18,507
+Burada şöyle bir sıkıntı var. Sinon ve SuperTest kullandık. Bazı durumlarda Node.js'deki bir hata yüzünden bir cache silme problemi oluşabiliyor. Bu testler lokalde değil de cloud üzerinde çalıştırıldığında herhangi bir sorun olmazken,
+
+286
+00:43:18,507 --> 00:43:30,628
+lokalde entegrasyon testleri çalıştırıldığında Node.js environment'ın kaynaklı bir sorun olabildiğini görebiliyoruz.
+
+287
+00:43:30,628 --> 00:43:38,247
+Coverage tool olarak İstanbul.js'ı kullandık. Şimdi tekrardan bu aracı çalıştıracağım.
+
+288
+00:43:42,099 --> 00:43:52,579
+Bütün testleri çalıştırdıktan sonra kendisi bir klasörün içerisine toplam coverage değerlerini çıkartıyor ayrı modüller halinde.
+
+289
+00:43:56,539 --> 00:44:01,479
+Yazılım test planında açıkladığımız bazı noktalar vardı.
+
+290
+00:44:05,492 --> 00:44:31,511
+test geçme ve kalma kriterleri. Burada coverage değerleri için, coverage değerlerinden bahsetmiştik. %60 test kapsama oranına ulaşılması sistemlerde yeterli olarak görüldü yaptığımız incelemelerde. Bu user info servisinde %64 oranında test coverjine sahip olduğunu görüyoruz. Valideşim ve models kısmında %100 test coverjine sahipken, controllers kısmında %63 oranında bir test coverjine sahip.
+
+291
+00:44:31,511 --> 00:44:38,811
+User Info Service'in birim testleri ve integrasyon testleri bu şekildeydi.
+
+292
+00:44:38,811 --> 00:44:45,631
+Sistem testlerinde sistemin yoğunluğunu test edebilmek amacıyla Postman aracını kullandık.
+
+293
+00:44:45,731 --> 00:44:53,311
+Postman'de bazı URL'lere çeşitli HTTP request'leri atabiliyorsunuz.
+
+294
+00:44:53,631 --> 00:44:56,971
+Header'lar ekleyebiliyorsunuz, body ekleyebiliyorsunuz veya testler oluşturabiliyorsunuz.
+
+295
+00:44:56,971 --> 00:45:18,352
+Bu testleri test runner aracıyla çalıştırabiliyorsunuz. Burada çalıştırılacak testleri seçtim. User Info Service Production'ına bağlanacağız şimdi ve bu fonksiyonların şu anda Production Environment'ında gerekli işlemleri yapıp yapmadığını test edeceğiz.
+
+296
+00:45:22,003 --> 00:45:40,264
+Şu anda 9 tane sistem testi vardı. Bütün bu rahatları görebiliyorsunuz zaten. 9 tanesinden de geçti. Her birinde response time'ının 200 milisaniyeden daha düşük olmasıyla ilgili testler gerçekleştirdi. Mesela burada 200 beklentisi vardı.
+
+297
+00:45:40,264 --> 00:45:51,983
+Ben önümüzdeki haftada sunum yapacak olan arkadaşlarınız için de soruyorum. Gerçi raporlarınızı bitirdiniz ama yine de
+
+298
+00:45:51,983 --> 00:46:00,163
+Bu kullandığınız tool'ların seçimini araştırmasını nasıl yaptınız?
+
+299
+00:46:01,163 --> 00:46:18,323
+Hocam zaten uygulamanın hangi dil ve platformlarda yazıldığı önceden belirliydi. Sonrasında bu platformlar için mesela Node.js kullanıyoruz. O yüzden Node.js'in Package Manager'ı olan NPM.
+
+300
+00:46:18,323 --> 00:46:30,404
+Package Manager'ın internet sitesinde çeşitli kütüphaneleri görebiliyorsunuz. O kütüphanelerde de kütüphanelerin hangi kategorilerde olduğu da yönetilenebiliyor.
+
+301
+00:46:30,523 --> 00:46:39,023
+Mesela bazıları şifreleme için kullanılırken bazıları test yapmak için kullanılıyor. Oradan test kütüphanelerini araştırdık.
+
+302
+00:46:39,023 --> 00:46:47,804
+Sonrasında her birinin internet sitelerini inceledik. Medium yazılarından oldukça faydalandık. Medium'da mesela Mocha veya Jest
+
+303
+00:46:47,803 --> 00:46:50,383
+kütüphaneleri arasında kullanacaktık.
+
+304
+00:46:50,463 --> 00:46:51,763
+Bu iki kütüphaneler arasında kaldık.
+
+305
+00:46:52,143 --> 00:46:56,603
+Bu iki kütüphaneden hangisini seçeceğimiz konusunda karar verirken özellikle Medium yazılarına baktık.
+
+306
+00:46:57,223 --> 00:47:03,423
+Medium'da yazıları daha çok olan, daha kaliteli olan, bizim sistemimize daha uygun olan,
+
+307
+00:47:03,423 --> 00:47:12,543
+gerçekten test edilebilirliği yüksek kodlar yazılmış olan örneklerde yazıları inceledik ve sonucunda,
+
+308
+00:47:12,863 --> 00:47:14,803
+bunların sonucunda Mocha'ya karar verdik.
+
+309
+00:47:14,803 --> 00:47:20,663
+WebClient'a en son geleceğiz ama şimdi onu da söyleyebilirim.
+
+310
+00:47:21,303 --> 00:47:23,343
+Vue.js ile yazıldı WebClient'ı.
+
+311
+00:47:23,863 --> 00:47:32,263
+Vue.js'de de zaten doğrudan dokumentasyonu hazır olan ve doğrudan destek alan Vue.js test tools vardı.
+
+312
+00:47:32,263 --> 00:47:42,963
+O yüzden direkt onu kullanmayı tercih ettik ki zaten hem Jest kütüphanesi hem de Mokka kütüphanesi aslında ikisi de temelde birbiriyle çok benziyor.
+
+313
+00:47:42,963 --> 00:47:46,883
+yazım stilleri de oldukça benzer.
+
+314
+00:47:48,743 --> 00:47:58,943
+Bekan servislerinde Mocha kütüphanesini kullanırken Frontend tarafında testleri gerçekleştirirken JST'i kullandık.
+
+315
+00:47:59,283 --> 00:48:02,863
+View Test Tools aslında JST altyapısını kullanıyor.
+
+316
+00:48:04,043 --> 00:48:08,023
+Böyle bir araştırma gerçekleştirdik, gerçekleştirdik diyebilirim.
+
+317
+00:48:10,103 --> 00:48:12,723
+User Info Service kısmı bu şekildeydi.
+
+318
+00:48:12,724 --> 00:48:32,944
+Şimdi diğer kısımlara geçeceğiz. Diğer kısımlarda da aynı şekilde bütün bu şeyler çok uzun olacağı için en önemli kısım olan User Info Service'ı da göstermeyi tercih ettik. Diğerlerinde testleri göstermeyeceğiz. Sadece sistemin nasıl çalıştığını, nasıl test planlarının hazırlandığını açıklayacağız.
+
+319
+00:48:34,524 --> 00:48:38,343
+Hocam bu arada ara ara kopuyorsunuz galiba. Kaçıdığınız arada bir kısım oldu mu?
+
+320
+00:48:43,155 --> 00:48:45,735
+Hocam buradaysanız ben devam edebilirim.
+
+321
+00:49:04,244 --> 00:49:06,424
+Hocam konuşuyorsanız mikrofonunuz kapalı da.
+
+322
+00:49:25,364 --> 00:49:26,503
+Hocam burada mısınız?
+
+323
+00:49:27,183 --> 00:49:30,163
+Evet, evet. Benim arada internet gidiyor şu anda.
+
+324
+00:49:32,983 --> 00:49:33,483
+Tamamdır.
+
+325
+00:49:34,923 --> 00:49:36,063
+Devam edebilirsiniz.
+
+326
+00:49:36,303 --> 00:49:36,803
+Tamamdır.
+
+327
+00:49:37,603 --> 00:49:44,284
+Verika Authentication Source aslında sistemden kullanıcıların veri tabanına erişip,
+
+328
+00:49:44,864 --> 00:49:49,423
+gerekli yetkilendirmeleri alarak sisteme tekrar erişmelerini sağlayan bir sistem.
+
+329
+00:49:50,243 --> 00:49:54,003
+Burada veri tabanı olarak MongoDB'yi kullandık.
+
+330
+00:49:54,003 --> 00:49:58,003
+MongoDB'ye erişmek için ise Mongo's tutuphanesini kullandık.
+
+331
+00:49:59,663 --> 00:50:10,103
+Gördüğünüz BigRibs framework'ını kullanıcı bilgilerini, özellikle şifrelerini hashleyerek veri tabanına kaydetmek için kullandık.
+
+332
+00:50:10,404 --> 00:50:12,803
+Ama burada şöyle bir sorunla karşılaştık.
+
+333
+00:50:12,904 --> 00:50:17,843
+Kullanıcılar genellikle basit olan şifreleri tekrar tekrar kullanabiliyor.
+
+334
+00:50:17,843 --> 00:50:29,224
+Bu da güvenlik açıklarına sebep verebiliyor. Çünkü 1'den 8'e kadar olan rakamların sıralanışı halindeki şifreler karşılık gelen hash'ler genellikle aynı oluyor.
+
+335
+00:50:29,323 --> 00:50:36,983
+Biz de bu sorunu çözmek için aynı framework'ın içinde bulunan salting işlemini kullanarak böylece sisteme ekledik.
+
+336
+00:50:37,804 --> 00:50:46,724
+Bundan sonra JSON Web Token framework'ını kullanarak da aslında cookie'lere benzer olarak bir token sistemi oluşturduk.
+
+337
+00:50:46,724 --> 00:50:52,944
+e-mail ve password karşılığında kullanıcıya bir token döndürerek bununla işlem yapmasını sağlıyoruz sistemde.
+
+338
+00:50:54,024 --> 00:51:00,603
+Bu aslında kükülerden farklı olarak browser'ın local storage'ında tutuluyor.
+
+339
+00:51:01,904 --> 00:51:05,703
+Bunun dışında birim testlerini tekrardan Mocha, Çay ve İstanbul'la yaptık.
+
+340
+00:51:05,823 --> 00:51:08,744
+Entegrasyon testlerini Sinon ve Supertest'le yaptık.
+
+341
+00:51:09,304 --> 00:51:12,423
+Sistem testlerini de Postman'la yaptık bu sistemin.
+
+342
+00:51:12,423 --> 00:51:14,423
+Benim anlatacaklarım...
+
+343
+00:51:14,423 --> 00:51:18,423
+Bu kadar teşekkür ederim.
+
+344
+00:51:18,423 --> 00:51:25,423
+Evet şimdi diğer arkadaşınız devam edebilir.
+
+345
+00:51:25,423 --> 00:51:36,423
+Tamam hocam. Öbür üçka da mesaj servisi de ben yazdım hocam [öğrenci] ben. Framework olarak Node.js ve Express.js kullandık.
+
+346
+00:51:36,423 --> 00:51:54,843
+Şimdi bu mesaj servis kullanıcıların arasındaki yani mesaj açmayı sağlayan servis. Kullanıcıların match servis ile bundan hemen sonra [öğrenci] arkadaşımız anlatacak. Eşleştikten sonra eşleştiği kullanıcılar bir kullanıcı eşleştiği kullanıcılarla mesaj yoluyla iletişim kurabiliyor.
+
+347
+00:51:54,843 --> 00:52:23,703
+Şimdi bu şöyle çalışıyor. Mesela bir kullanıcı atıyorum [öğrenci] olsun. Diğeri de mesela Al olsun. [öğrenci] kullanıcısı Al kullanıcısına mesaj attığı zaman database'de bu iki kullanıcı adından yeni bir chat room dediğimiz yer oluşuyor. Ve de bu mesajlar daha sonra burada tutuluyor. Mesajlar burada tutulduğu zaman daha sonra hani daha sonra girişlerinde hep buradan çekilerek mesajları sürekli olarak ulaşılabiliyor.
+
+348
+00:52:24,843 --> 00:52:29,343
+Bilim testlerini MOCA, CH ve İstanbul'la yaptık kütüphaneleriyle.
+
+349
+00:52:29,663 --> 00:52:33,084
+Entegrasyon testlerini [öğrenci] ve Süper Test kütüphaneleriyle yaptık.
+
+350
+00:52:33,203 --> 00:52:34,763
+System testlerini de Postman'la yaptık.
+
+351
+00:52:35,683 --> 00:52:39,063
+Daha sonra chat için iki tane mesaj içinde iki tane unit test yazdık.
+
+352
+00:52:39,123 --> 00:52:42,584
+Onları zaten görebilirsiniz koddaki şeylerden.
+
+353
+00:52:43,003 --> 00:52:45,143
+Onu en kötü [öğrenci] arkadaşımız gösterir.
+
+354
+00:52:45,823 --> 00:52:49,643
+Mesajma servisi böyle çalışıyor. İki kullanıcı arasındaki iletişim.
+
+355
+00:52:49,643 --> 00:53:02,983
+ver tabanından kullanıcıların mesajları ve de kullanıcıların konuştuğu alanın chat roomu tutuluyor. Bunlar mesaj atıldığı zaman işleniyor, mesaj geldiği zaman da çekiliyor. Bu şekilde benim anlatacağım kısmı.
+
+356
+00:53:05,811 --> 00:53:35,591
+Merhaba hocam. WebExCambient Service şu mantıkla çalışıyor. Kullanıcılara dost önermek için yapılan bir sistem. Bu sistemde Python ve FASC API kullanarak yazıldı. Bim testleri PyTest de yapıldı. Burada kullanıcıların user info servicesten verileri alınıyor. Hangi veriler? Hobileri, delileri, hangi ülkede oldukları ve hangi okulda oldukları? Bu değerler sonrasında bir string'e çevirip vektörize edilip kosans simerite fonksiyonuna veriliyor. Bu fonksiyon içinde eski log ihtimalinde kullandık.
+
+357
+00:53:35,811 --> 00:53:39,012
+Burada en benzeri 30 kullanıcı geri döndürüyor.
+
+358
+00:53:39,192 --> 00:53:39,832
+Yüzün info servisi.
+
+359
+00:53:40,332 --> 00:53:44,551
+Ki bu sayede en benzeri 30 tane geri döndürsün kullanıcıya.
+
+360
+00:53:46,271 --> 00:53:47,852
+Bilim testleri PyTest'e yapıldı.
+
+361
+00:53:49,032 --> 00:53:53,011
+Entegrasyon testleri ise PyTest'e yapıldı.
+
+362
+00:53:54,771 --> 00:53:57,551
+Sonrasında web tarihte içelim.
+
+363
+00:53:57,751 --> 00:53:59,532
+Bu bölümü anlatan [öğrenci] değil mi?
+
+364
+00:53:59,791 --> 00:54:00,032
+Evet.
+
+365
+00:54:00,751 --> 00:54:00,992
+Tamam.
+
+366
+00:54:01,712 --> 00:54:02,212
+WebKind'i.
+
+367
+00:54:02,211 --> 00:54:03,931
+Hocam WebKind'ta
+
+368
+00:54:03,931 --> 00:54:05,231
+Arkadaşlar önce anlatıldığı gibi
+
+369
+00:54:05,231 --> 00:54:06,211
+Vue.js kullandık
+
+370
+00:54:06,211 --> 00:54:08,111
+Burası sistemimizin ön yüzü
+
+371
+00:54:08,111 --> 00:54:10,511
+Burada kullanıcının bütün
+
+372
+00:54:10,511 --> 00:54:12,411
+Bekend Service'e ilişimi kurması sağlayan ara yüzümüz
+
+373
+00:54:12,411 --> 00:54:14,291
+Heroku'ta çalışıyoruz
+
+374
+00:54:14,291 --> 00:54:16,711
+Dün testleri Vue.js'de
+
+375
+00:54:16,711 --> 00:54:18,111
+yine test ve test tozu yapıldı
+
+376
+00:54:18,111 --> 00:54:20,331
+Sistem testleri ise Chrome Lighthouse'da yapıldı
+
+377
+00:54:20,331 --> 00:54:22,351
+Buradan sonrasında
+
+378
+00:54:22,351 --> 00:54:23,291
+[öğrenci] de avlayacak
+
+379
+00:54:32,115 --> 00:54:52,716
+Burada uygulamayı kısa bir şekilde göstermek istiyorum. Gördüğünüz gibi Hiroku üzerinde çalışan Hiroku uzantılı bir web adresimiz var. Burası bizim login sayfamız. Buradan kullanıcı login olabiliyorum. Burada WebRHK Authentication Service çalışıyor. Buradan register veya login işlemi gerçekleştirebiliyorum.
+
+380
+00:54:52,716 --> 00:55:04,855
+Burası ana sayfamız ve burada bize az önce Sarkan arkadaşımın anlattığı özellikler üzerinden çeşitli kullanıcılar öneriliyor.
+
+381
+00:55:05,235 --> 00:55:11,895
+Burada mesela ben şu an kendi hesabıma giriş yaptım. Bana [öğrenci] arkadaşımın hesabını önerdi.
+
+382
+00:55:12,395 --> 00:55:19,915
+[öğrenci] arkadaşımın profiline gittiğim zaman da burada yine User Info Service üzerinden [öğrenci]'ın bilgileri alınıyor.
+
+383
+00:55:19,915 --> 00:55:25,495
+çalışın kendi eklemiş olduğu kişisel bilgilerini görebiliyoruz burada.
+
+384
+00:55:26,075 --> 00:55:35,095
+Feature'leri ve hobileri görebiliyoruz ve uygulamanın temel kısmı olan hangi dilleri bildiği ve hangi dilleri konuşmak istediği kısmını görebiliyoruz.
+
+385
+00:55:35,615 --> 00:55:40,455
+Kendi profilime gittiğim zaman da yine benzer bir şekilde aynı bilgileri görebiliyorum.
+
+386
+00:55:40,455 --> 00:55:57,235
+Burada message kısmına tıkladığım zaman son konuşmuş olduğum kişileri görebiliyorum. Burada mesela Donald White isimli kullanıcıya tıkladığım zaman Donald'la olan mesajlaşmalarımı görebiliyorum.
+
+387
+00:55:59,055 --> 00:56:09,375
+Ayarlar kısmım var. Burada ayarlarımı değiştirebiliyorum. Sonrasında da çıkış yapabiliyorum. Slide'e geri dönecek olursam.
+
+388
+00:56:10,455 --> 00:56:12,115
+Burada
+
+389
+00:56:12,115 --> 00:56:22,395
+Bu UserInfoService GitHub Repositoriesindeki bir GitHub Action'la ait bir YAML dosyası
+
+390
+00:56:22,395 --> 00:56:25,215
+Bu YAML dosyasında gördüğümüz üzere
+
+391
+00:56:25,215 --> 00:56:32,435
+Master branchine her push ve pull request işlemi gerçekleştirildiği zaman
+
+392
+00:56:32,435 --> 00:56:35,395
+Gerçekleşen bir GitHub Action var
+
+393
+00:56:35,395 --> 00:56:38,235
+Bu GitHub Action'ı Node.js environment'ını kullanıyor
+
+394
+00:56:38,235 --> 00:56:44,795
+ve öncelikle bir buit işlemi gerçekleştiriyor. Sonrasında da unit testleri çalıştırıyor.
+
+395
+00:56:54,931 --> 00:57:05,692
+Yine aynı şekilde bu dosyaya ve bu dosyaya yazalım test planındaki 18. bölümdeki onaylamalar kısmına da değindik. Aynı şekilde burada da anlatıyoruz bunu.
+
+396
+00:57:10,132 --> 00:57:18,331
+sonrasında yine size az önce göstermiş olduğum İstanbul coverage tolundan bir ekran görüntüsünü paylaştık burada.
+
+397
+00:57:21,052 --> 00:57:26,392
+Yine bu User Info Service'e ait olan bir coverage ekran görüntüsü.
+
+398
+00:57:37,268 --> 00:57:43,647
+Sonrasında Weberichka WebClient'e ait test raporundan bazı bilgileri paylaşmak istiyorum.
+
+399
+00:57:47,827 --> 00:58:07,607
+Weberitka WebClient'ın sistem testlerini Chrome Lighthouse aracıyla gerçekleştirdik. Hiroku sisteminde ücretsiz sunucularda çalışıyor. Bu yüzden performansının düşük olmasını bekliyoruz. Ancak yine de oldukça yüksek bir performans başarımını gösteriyor.
+
+400
+00:58:07,607 --> 00:58:30,107
+92 puanla. Accessibility konusunda da Vue.js ve Vue.tify araçlarının bize sağlamış olduğu özellikleri kullanıyoruz ve yine best practices'leri takip ediyoruz. O yüzden Chrome Lighthouse'un bizim web sitemize vermiş olduğu puanlamalar oldukça yüksek gözüküyor.
+
+401
+00:58:30,107 --> 00:58:40,427
+Burada da çeşitli bilgiler yer alıyor bu test sistemin, bu testlerin hangi sistem üzerinde gerçekleştiğine dair bilgiler
+
+402
+00:58:40,427 --> 00:58:48,387
+Kullanıcı testi kısmına gelecek olursak uygulama şu anda alfa aşamasında ve herkese açık bir kullanımı var
+
+403
+00:58:48,387 --> 00:58:56,147
+Ancak 20-25 aktif yoğun bir şekilde kullanan kullanıcısı var
+
+404
+00:58:56,147 --> 00:58:58,408
+Bu kullanıcılardan geri bildirim alıyoruz
+
+405
+00:58:58,408 --> 00:59:13,168
+O yüzden kullanıcı testlerinde de çok farklı cihazlarda hem masaüstü cihazlarında hem de mobil cihazlarda farklı web tarayıcılarında ve farklı işletim sistemlerinde geri bildirim aldığımızı söyleyebilirim.
+
+406
+00:59:14,768 --> 00:59:16,088
+Benim anlatacaklarım bu kadar.
+
+407
+00:59:45,268 --> 00:59:46,508
+Hocam, burada mısınız?
+
+408
+00:59:47,387 --> 00:59:47,748
+Hocam.
+
+409
+01:00:29,268 --> 01:00:34,268
+Berkez senin dediğini duyamadım şu anda. Arkbintu...
+
+410
+01:00:35,847 --> 01:00:39,427
+Hocam benim kısmım kaçtı mı?
+
+411
+01:00:40,987 --> 01:00:41,747
+Efendim?
+
+412
+01:00:42,707 --> 01:00:47,868
+Ben mesaj servisini anlatmıştım da o kısmı kaçtı mı? Bir daha anlatabilirim isterseniz.
+
+413
+01:00:51,108 --> 01:00:52,307
+En son nerede korktunuz?
+
+414
+01:01:12,563 --> 01:01:18,443
+Hocam, bir şey söylediyseniz şu anda sizi duyamıyoruz. Mikrofonunuz açık gözüküyor ama sesiniz gelmiyor.
+
+415
+01:02:03,251 --> 01:02:05,591
+Hocam geldiğiniz mi? Şu an duyuyor musunuz?
+
+416
+01:02:05,611 --> 01:02:08,251
+Evet, evet. Alp Bintuğ'un anlattığı...
+
+417
+01:02:13,235 --> 01:02:15,075
+Hocam bizde en sesiniz kesildi galiba.
+
+418
+01:02:16,155 --> 01:02:17,235
+Hocam sesiniz kesildi.
+
+419
+01:03:01,108 --> 01:03:02,747
+Evet, şu anda duyabiliyorum.
+
+420
+01:03:04,027 --> 01:03:07,127
+Hocam, slide'da mı yerlerde kaldınız? Nerede en son kesildi?
+
+421
+01:03:09,127 --> 01:03:19,187
+Şimdi [öğrenci]'nin anlattıklarını dinledim ama arada Art Bintu'nun bölümünde karıştı. Hangisini Art Bintu'nun anlattıklarını?
+
+422
+01:03:20,307 --> 01:03:22,327
+Authentication service'ı ben anlattım hocam.
+
+423
+01:03:26,099 --> 01:03:30,099
+Hocam, [öğrenci], Belkeden önceki anlatmıştı.
+
+424
+01:03:34,420 --> 01:03:37,019
+açırdığım için. Alp.
+
+425
+01:03:38,699 --> 01:03:40,360
+Hocam teknoloji anlatayım mı?
+
+426
+01:03:41,179 --> 01:03:42,579
+Yani özet olarak.
+
+427
+01:03:43,039 --> 01:03:43,699
+Tamamdır.
+
+428
+01:03:45,199 --> 01:03:46,779
+Ben yine yayın açıyorum.
+
+429
+01:03:47,420 --> 01:03:47,959
+Tamamdır.
+
+430
+01:03:49,539 --> 01:03:51,860
+Bir saniye beklersen senin kısmına geleceğim.
+
+431
+01:03:54,340 --> 01:03:55,999
+Şu anda ekran geliyor mu size?
+
+432
+01:03:56,199 --> 01:03:56,760
+Evet, evet.
+
+433
+01:03:56,760 --> 01:03:59,979
+Tamam. Alp'in slide'ına geliyorum.
+
+434
+01:04:00,459 --> 01:04:00,760
+Tamam.
+
+435
+01:04:00,979 --> 01:04:01,979
+Tamam, hep sendeyiz.
+
+436
+01:04:04,420 --> 01:04:05,840
+Sesimi duyabiliyorsunuz değil mi hocam?
+
+437
+01:04:05,840 --> 01:04:09,379
+Evet, evet, duyuyorum. O arada tutuk oldu, özür dilerim.
+
+438
+01:04:10,039 --> 01:04:11,079
+Tamamdır.
+
+439
+01:04:11,579 --> 01:04:18,559
+Veri Authentication Service aslında web client ile veri tabanını bağlayan bir servis.
+
+440
+01:04:19,079 --> 01:04:28,019
+Burada kullanıcının gerekli bilgileri girdikten ve gerçekten kullanıcı olduğunu kanıtladıktan sonra işlemleri yapması için bir izin sağlıyoruz aslında.
+
+441
+01:04:28,159 --> 01:04:29,379
+Giriş işlemini yapıyoruz.
+
+442
+01:04:30,000 --> 01:04:32,920
+Burada veri tabanı olarak MongoDB kullanıyoruz.
+
+443
+01:04:32,920 --> 01:04:37,500
+MongoDB'ye ise Mongo's tütüphanesini kullanarak erişiyoruz.
+
+444
+01:04:38,120 --> 01:04:46,619
+Kullanıcıların şifreleri öncelikle hashlenerek sonra hashleme işleminden sonra bir salting işlemi yapılarak,
+
+445
+01:04:46,699 --> 01:04:50,119
+Bcrypt tütüphanesi kullanılarak MongoDB'ye kaydediliyor.
+
+446
+01:04:50,119 --> 01:05:07,079
+Burada JWT yani JSON Web Token kütüphanesini ise token iletişimi için kullanıyoruz.
+
+447
+01:05:07,079 --> 01:05:24,319
+Tokenlar kullanıcının e-postası ve şifresi yerine geçen ve authentication'ı sağlayan sistemler bir nevi cookie aslında ama cookie'lere nazaran bunlar browser'ın lokalinde kaydediliyor.
+
+448
+01:05:25,119 --> 01:05:29,499
+Burada birim testlerini Mocha, Çay ve İstanbul kullanarak yaptık.
+
+449
+01:05:29,999 --> 01:05:35,259
+Entegrasyon testlerini Sinon ve Supertest kullanarak yaptık ve sistem testlerini de Postman kullanarak yaptık.
+
+450
+01:05:35,259 --> 01:05:38,199
+Bu kadar anlatacaklarım. Teşekkürler.
+
+451
+01:05:48,692 --> 01:05:50,692
+Hocam burada mısınız? Ne olur evet değil.
+
+452
+01:06:16,179 --> 01:06:18,959
+Hocam sonrasında anlatılan kısımları deneyebildiniz mi?
+
+453
+01:07:52,532 --> 01:07:53,032
+Evet, evet.
+
+454
+01:07:57,972 --> 01:08:14,091
+Herhangi bir yeri kaçırdıysanız tekrar anlatabiliriz hocam. Yok, hayır. Diğer grup, Aytu, [öğrenci]. Buradayım hocam.
+
+455
+01:08:22,163 --> 01:08:49,163
+Hocam ilk başta sistemi tanıtarak başlamak istiyorum. Sistemimiz otobüsler için bilet ve yolculukları yönetilemek üzerine. Geçen seneki yakın sistem programma dersimizin projesiydi. Ekranımız bu şekilde eğer ki bir hesabımız yoksa buradan yine editerek girişler yapabiliyoruz. Daha önceden bir tane hesabım olduğu için yönetici olarak sisteme giriş yapıyorum.
+
+456
+01:08:52,163 --> 01:09:21,043
+sistemde otobüsel bir görüntüleyebiliyorum. Yeni otobüs ekleyebilirim veya güncelleyebilirim. Buradan silebilirim de. Bu şekilde çalışanları da görüntüleyebiliyorum. Buradan yöneticileri görebilirim. Düzenleyebilirim. Bu kısımda yolculukları yani nereye, hangi şehre girebildiğini, nereden kalktığını görebiliriz. Burada anlamsız yerler var bazı yerlerde. Bunlar tek taşınısında eklenen şeyde.
+
+457
+01:09:22,163 --> 01:09:29,163
+kullanıcıları burada görebilirim ve burada biletlerini görebilirim ve serciliğini görüntüleyebilirim.
+
+458
+01:09:29,163 --> 01:09:33,163
+Bu şekilde şimdi sunuma geçiyorum.
+
+459
+01:09:38,899 --> 01:09:50,899
+Şimdi biz az önce de gösterdiğim gibi black almak üzerine tasarlandı. Her kullanıcının belli bir iptal parası var ve şirkleme girerek black alabiliyor.
+
+460
+01:09:53,011 --> 01:10:14,371
+İlk önce birim testinde biz nasıl ilerleyeceğimizi kararlaştırdık arkadaşımız birlikte. Burada sequence diagramlarını görebilirsiniz. İki farklı testi inceleyeceğiz. Birincisinde bir kullanıcının şifredesini veya kullanıcı adını eksik vererek sisteme girmeye çalışacağız. Birinde de yanlış bilgilerle giriş yapmaya çalışacağız.
+
+461
+01:10:14,371 --> 01:10:24,871
+sistem testinde ise öncelikle bir taban ile bağlantısını gerçekten yapabiliyor mu? Doğru hata kodlarını görülülebiliyor mu? şeklinde inceleme yapacağız.
+
+462
+01:10:24,871 --> 01:10:36,872
+Kloniç testinde ise client'dan yani istemciden bir giriş izni isteyeceğiz ve bu izin geri dönüyor mu diye kontrol edeceğiz.
+
+463
+01:10:36,872 --> 01:10:40,872
+Burada zaman diyarlamımız var. Gang diyarlamını koydum.
+
+464
+01:10:40,872 --> 01:10:46,011
+İlk önce ilk kısım bizim SLS belgesinden önceki zamanımız.
+
+465
+01:10:46,572 --> 01:10:50,272
+SLS belgesinden sonraki test kısımlarında da bu şekilde ilerledik.
+
+466
+01:10:51,852 --> 01:10:53,092
+Senaryolarımız şu şekilde.
+
+467
+01:10:53,352 --> 01:10:54,892
+Yeni bir müşterine eklememiz gerekiyor.
+
+468
+01:10:55,452 --> 01:11:00,532
+Çünkü bu sistemin en önemli noktalarından biriymiş, birinci kısımda sisteme yeni bir kullanıcı eklenmesi.
+
+469
+01:11:01,291 --> 01:11:04,251
+Biz de bu durumun doğruluğunu kontrol ettik.
+
+470
+01:11:04,251 --> 01:11:08,532
+Hata olması durumunda hatayı gerçekten döndü, döndüremediğini kontrol ettik.
+
+471
+01:11:10,872 --> 01:11:25,872
+Ve bir diğer şey de sisteme giriş. Bu noktada da önemli çünkü eğer tuyalanmış kişiye sisteme girebilirse kendine ait olmayan bilgileri değiştirebilir veya farklı biletler alabilir biletlerimiz için bu da tehlikeli bir durum arz etmektedir.
+
+472
+01:11:29,872 --> 01:11:32,272
+Bu noktada tarih arkadaşımı bırakacağım.
+
+473
+01:11:48,115 --> 01:11:55,115
+sistem test,
+
+474
+01:12:11,731 --> 01:12:17,331
+system testi için takip, su olunu kullanmıştır. Uçtanı verilecek testi,
+
+475
+01:12:30,100 --> 01:12:31,379
+Projenin de eski aramakoluk.
+
+476
+01:12:40,884 --> 01:12:42,663
+Sadece bir gerekli fotoğrafınızda
+
+477
+01:12:47,988 --> 01:12:49,447
+Çok teşekkür ederim.
+
+478
+01:12:54,707 --> 01:13:01,707
+ve
+
+479
+01:13:03,764 --> 01:13:06,484
+Yani, entegraçant textolik ile.
+
+480
+01:13:06,484 --> 01:13:08,903
+Entegraçant iskisi bir paket.
+
+481
+01:13:11,988 --> 01:13:18,988
+ve
+
+482
+01:13:18,988 --> 01:13:22,767
+AYTL,
+
+483
+01:13:31,380 --> 01:13:39,699
+Entegrasyon testi için dummy verilerin bulunduğu test değerlerinin bulunduğu veri kapanın ayağı kaldıydı.
+
+484
+01:13:39,699 --> 01:13:52,419
+Vanland, yolda kümlelerinde, iş kirletim olması gerekirken, iş şu anda sadece entegrasyon test kısımına alakalı, ahliyeten bir test veri kapanı kaldı mıydı?
+
+485
+01:13:52,419 --> 01:13:56,679
+Ama gerçeğinde ahliyeten bir test veri kapanı kaldı mıydı?
+
+486
+01:14:00,212 --> 01:14:18,931
+test test kullanımdan yardım edin. JUnit testi kuratından direkt rest temizden ve önceden belirlediğimiz şekilde kullanıcı otomatikman bilgilerine kayıt olmaya çalışıyor. Bu işte rest temizden yani internet satanında.
+
+487
+01:14:24,212 --> 01:14:26,212
+...şeylere kaydedik, konusunu veririm.
+
+488
+01:14:27,011 --> 01:14:30,251
+Sen bana da gel demek, kaybolur 10.000'e kontrol edin.
+
+489
+01:14:34,003 --> 01:14:44,844
+Ben kendim çok özür diliyorum. Şu anda test seviyorsan adını, türklerini geçermek istiyorum. Bunları direkt canlı olarak geçeceğim, ben çevirip istiyorum.
+
+490
+01:14:50,644 --> 01:14:51,644
+Öncelikle, kimin testlerinizi çalıştırmak için, parçalel seçeceğinler hazırladık. Eğer komiklarının verilip, parçalel, tarz, test, music yazı etkili,
+
+491
+01:15:08,659 --> 01:15:29,059
+i.e.publish için gerçekleştirdim. İki tane unit testimiz var. Birincisi, cash source yokken, login, aka, and front-in-demi, 440'e kadar çalışıyor. Başarı bir şekilde de için. İkinci süs ise, online bir user ile birit yapmayı çalışıyor. Bu da birit seyirinden biritim başarı da verir.
+
+492
+01:15:29,059 --> 01:15:36,679
+Entegrasyon testi ise, mtm-run ve integration diye de çalıştırabilir.
+
+493
+01:15:40,212 --> 01:15:41,212
+İntegrasyon testimizin, çalıştığı için, çalıştığı için, çalıştığı için, çalıştığı için, çalıştığı için, çalıştığı için, çalıştığı için, çalıştığı için, çalıştığı için, çalıştığı için, çalıştığı için, çalıştığı için, çalıştığı için, çalıştığı için, çalıştığı için, çalıştığı için, çalıştığı için, çalıştığı için, çalıştığı için, çalıştığı için, çalıştığı için, çalıştığı için, çalıştığı için, çalıştığı için, çalıştığı için, çalıştığı için, çalıştığı için, çalıştığı için, çalıştığı için, çalıştığı için, çalıştığı için, çalıştığı için, çalıştığı için, çalıştığı için, çalıştığı için, çalıştığı için, çalıştığı için, çalıştığı için, çalıştığı için, çalıştığı için, çalıştığı için, çalıştığı için, çalıştığı için, çalıştığı için, çalıştığı için, çalıştığı için, çalıştığı için, çalıştığı için, çalıştığı için, çalıştığı için, çalıştığı için, çalıştığı için, çalıştığı için, çalıştığı için, çalıştığı için, çalıştığı için, çalıştığı için, çalıştığı için, çalıştığı için, çalıştığı için, çalıştığı için, çalıştığı için, çalıştığı için, çalıştığı için, çalıştığı için, çalıştığı için, çalıştığı için, çalıştığı için, çalıştığı için, çalıştığı için, çalıştığı için, çalıştığı için, çalıştığı için, çalıştığı için, çalıştığı için, çalıştığı için, çalıştığı için, çalıştığı için, çalıştığı için, çalıştığı için, çalıştığı için, çalıştığı için, çalıştığı için, çalıştığı için, çalıştığı için, çalıştığı için, çalıştığı için,
+
+494
+01:16:10,212 --> 01:16:11,052
+Sesimiz geçen.
+
+495
+01:16:12,572 --> 01:16:12,831
+Evet.
+
+496
+01:16:14,412 --> 01:16:15,351
+Enfes yazar.
+
+497
+01:16:15,612 --> 01:16:18,351
+Patrik yolunu da çekeceğiz.
+
+498
+01:16:24,404 --> 01:16:27,183
+Bu zaman da mahkumun teklifin peki
+
+499
+01:16:34,036 --> 01:16:34,615
+Sağ olun.
+
+500
+01:16:35,615 --> 01:16:36,955
+Mükemmel bir kesinlikle.
+
+501
+01:16:37,995 --> 01:16:39,895
+Bu hangi de bu yüzde
+
+502
+01:16:39,895 --> 01:16:40,895
+makağın
+
+503
+01:16:40,895 --> 01:16:41,635
+kaçtınız?
+
+504
+01:16:41,635 --> 01:16:42,235
+Bakın.
+
+505
+01:16:43,515 --> 01:16:44,135
+Nasıl olacaksınız?
+
+506
+01:16:44,715 --> 01:16:45,715
+Açıklarınızı mı?
+
+507
+01:16:46,235 --> 01:17:03,595
+Açıklarınızı.
+
+508
+01:18:11,731 --> 01:18:13,691
+kullanımlar.
+
+509
+01:19:23,828 --> 01:19:39,828
+Evet, ses çok az geldi ama raporunuzla beraber takip edebildim. Başka anlatacağınız bir şey var mı?
+
+510
+01:19:39,828 --> 01:19:42,828
+Yok hocam.
+
+511
+01:19:42,828 --> 01:19:48,828
+Evet, zaten siz iki kişiydiniz.
+
+512
+01:20:00,051 --> 01:20:02,451
+Bu yüzden daha
+
+513
+01:20:09,395 --> 01:20:11,136
+zaman planınızı daha
+
+514
+01:20:11,136 --> 01:20:13,235
+iyi
+
+515
+01:20:13,235 --> 01:20:14,776
+yapmanız gerekecek.
+
+516
+01:20:15,275 --> 01:20:16,475
+Bu hafta için
+
+517
+01:20:16,475 --> 01:20:18,776
+sorunuz
+
+518
+01:20:32,724 --> 01:20:42,423
+Bu hafta için dinleyen arkadaşlarınızın önümüzdeki hafta sunumlarını gerçekleştirirken soracakları soru var mı?
+
+519
+01:20:52,435 --> 01:20:57,615
+Enimizdeki hafta bütün grupların sunum yapması gerekiyor. Zaten son haftamız.
+
+520
+01:21:36,564 --> 01:22:01,443
+uygulamanızdan kısaca bahsetmeniz gerekiyor. Kodları da birim test gerçekleştirirken kullanmanız gerekecek. Slide hazırlayalım mı diye sormuş bir arkadaşınız. Slide hazırlarsanız daha hızlı çevirebilirsiniz sunumlarınızı.
+
+521
+01:22:01,443 --> 01:22:18,683
+o açıdan yani raporun tümünden ilerlemek yerine ana hatları birleştirerek bir sunum haline getirmeniz daha hızlandıracaktır önümüzdeki haftaki dersimizi.
+
+522
+01:22:19,943 --> 01:22:21,303
+Başka sorunuz var mı?
+
+523
+01:22:37,300 --> 01:22:55,199
+Evet, önümüzdeki hafta için aslında genel bir sıralama yapalım. İlk sunum yapacak olan grubu belirleyelim önce. İlk kim gerçekleştirecek, hangi grup?
+
+524
+01:22:58,739 --> 01:23:00,819
+saat 1'de başlayacağımız
+
+525
+01:23:00,819 --> 01:23:04,979
+birinci grup
+
+526
+01:23:06,804 --> 01:23:08,483
+için aday olan var mı?
+
+527
+01:23:12,979 --> 01:23:16,819
+Bu hafta nasıl olsa 3 tane örnek gördünüz.
+
+528
+01:23:30,804 --> 01:23:33,264
+Maziyer sizin grubunuz olabilir mi?
+
+529
+01:23:55,123 --> 01:23:58,683
+Şimdi gelen şeylere göre ilk grup
+
+530
+01:23:58,683 --> 01:24:02,283
+İlk grup
+
+531
+01:24:06,612 --> 01:24:09,651
+Azir, siz niniyle aynı grupta mısınız nini?
+
+532
+01:24:11,871 --> 01:24:14,092
+Tamam, o zaman birinci grup
+
+533
+01:24:14,092 --> 01:24:16,851
+niniyle aynı grupta mısınız nini?
+
+534
+01:24:22,707 --> 01:24:25,928
+saat 1'de [öğrenci] ve [öğrenci]'ın olduğu grup.
+
+535
+01:24:27,227 --> 01:24:28,207
+İkinci grup
+
+536
+01:24:28,207 --> 01:24:29,867
+[öğrenci] ve [öğrenci]'ın olduğu grup.
+
+537
+01:24:56,500 --> 01:25:00,699
+Sen diğer arkadaşlarından ayrı grupsun değil mi [öğrenci]?
+
+538
+01:25:15,475 --> 01:25:16,375
+Burkan [öğrenci].
+
+539
+01:25:19,988 --> 01:25:22,488
+ikinci grup, üçüncü grup,
+
+540
+01:25:33,395 --> 01:26:01,395
+Bundan sonra da zaten bu ilk üç grup önemliydi. Bundan sonra dersin saatinde bir saat geçmiş olacak. Ondan sonra herkes derste bulunacak. Ben bundan sonraki sıralamayı derste yapacağım. Ama bütün gruptaki üyeler önümüzdeki hafta
+
+541
+01:26:03,395 --> 01:26:12,015
+Bu üç gruptan sonra yani ikiye çeyrek kaladan itibaren herkes sınıfta olmalı.
+
+542
+01:26:13,416 --> 01:26:16,015
+Grup sıralamasını ben önümüzdeki hafta yapacağım.
+
+543
+01:26:17,796 --> 01:26:19,395
+Başka sorunuz var mı?
+
+544
+01:26:20,936 --> 01:26:22,756
+Süre sınırımız olacak.
+
+545
+01:26:23,156 --> 01:26:26,395
+Yani 20 dakika gibi sunum oluşturun.
+
+546
+01:26:28,455 --> 01:26:29,395
+20 dakikayı geçmesin.
+
+547
+01:26:49,076 --> 01:26:52,455
+Evet, bu hafta anlatmak isteyen başka grup var mıydı?
+
+548
+01:27:12,051 --> 01:27:32,851
+Evet, bu hafta anlatan arkadaşlarınıza teşekkür ederim. Dersi tamamlayabiliriz. İstekli olanları bu hafta anlatmasını istedim. Önümüzdeki hafta kalan bütün gruplar anlatmak zorunda. Başka sorunuz var mı?
+
+549
+01:27:46,420 --> 01:27:50,219
+Evet, iyi haftalar o zaman. Bugünkü dersi tamamlayabiliriz.
+
+550
+01:27:52,079 --> 01:27:53,319
+Teşekkür ederim hocam, iyi haftalar.
+
+551
+01:27:53,920 --> 01:27:54,680
+İyi haftalar.

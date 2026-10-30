@@ -1,0 +1,2951 @@
+1
+00:03:08,467 --> 00:03:23,187
+Açtım şimdi. Duyabiliyor musunuz? Görüntü geliyor mu? Şimdi ekran paylaşacağım biraz sonra. Evet, görüntü de geliyor değil mi? Tamam. Şimdi ekranı paylaşıyorum.
+
+2
+00:03:59,604 --> 00:04:20,063
+Geçen hafta derste olan arkadaşlarınız için çok hızlı bir tekrar geçen haftadan sonra katılan arkadaşlarınız için de biraz daha kolay olması için dersin.
+
+3
+00:04:20,063 --> 00:04:29,063
+Evet, yazılım kalite ve test içeriği.
+
+4
+00:04:42,324 --> 00:04:58,324
+yaklaşımı ve yazılım mühendisliğindeki yeri duruyoruz. Yazılım geliştirme süreç modellerinin üzerinde geçen hafta bir başlangıç yapmıştık. Çevik yaklaşımlarda...
+
+5
+00:05:00,372 --> 00:05:03,612
+bir başlangıç yapacağımı söylemiştim.
+
+6
+00:05:04,372 --> 00:05:06,372
+Yazılım kalite ve test...
+
+7
+00:05:11,540 --> 00:05:27,540
+Yazılım Kalite etmenlerinin sınıflandırılması. Bu geçen konular içinde de vardı. Makkol'un yazılım kalite sınıfı.
+
+8
+00:05:30,771 --> 00:05:59,771
+standartların üzerinde geçeceğiz ve yazılım kalitesini sağlamak için hangi aktiviteleri bundan söz edeceğiz. Bunlar nelerdi? Kalite standartları, gözden geçirme ve onaylama, review aşaması ve yazılım için gerçekleştirme ve yazılım aşaması.
+
+9
+00:06:00,771 --> 00:06:07,771
+Evet, katılan arkadaşlarınız henüz ekliyorum.
+
+10
+00:06:14,451 --> 00:06:17,571
+sonradan problem
+
+11
+00:06:25,651 --> 00:06:51,611
+test sağlama aktivitelerinin adımı da incelemedir. Inspection, inceleme aşamasında temel kavramları üzerinde de duracağız. Çünkü bunu kod inceleme ve yazılımdaki diğer olarak görebiliyoruz.
+
+12
+00:06:51,611 --> 00:06:56,931
+Fagan'ın inceleme aşaması üzerinde duracağız.
+
+13
+00:06:59,811 --> 00:07:07,591
+Certification validation da yazılım kalitesi içindeki önemli kavramlardan bir tanesi.
+
+14
+00:07:09,052 --> 00:07:14,431
+Yazılım test sürecine geçeceğiz daha sonra.
+
+15
+00:07:14,431 --> 00:07:38,732
+Şimdi yukarıda kalite aktivitelerinin önemli bir adımı da test yani geliştirme sürecinde ne kadar dikkat edersek edelim hatanın test yoluyla bulunması bu aşamada test sürecini nasıl
+
+16
+00:07:42,548 --> 00:07:46,167
+kod aşamasında algoritmanın test edilmesi.
+
+17
+00:07:52,468 --> 00:08:08,867
+uygulama aşamasında hata var mı? Onun test edilmesi, hem algoritmanın test edilmesi. Daha sonra da bütünlük, tek bütün alt programları test ettikten sonra bütün olarak da doğru çalışıyor mu? Onun doğrulanması.
+
+18
+00:08:13,524 --> 00:08:33,603
+bütünlük testini yaptıktan sonra hata oluşursa bunun tekrarlanması, sistem testi, bütünlük testinden geçen yazılımın sistem üzerinde doğru çalışıp çalışmadığının test edilmesi,
+
+19
+00:08:33,603 --> 00:08:49,564
+onaylama testi de kullanıcı testiyle aslında kullanıcı onay testi diyebiliriz. Bu da kullanıcı bakış açısıyla istediği yazılımı elde etmiş mi?
+
+20
+00:08:53,172 --> 00:08:59,711
+bakış açısıyla da test edilmesi aslında gereksinim analizi, sistem analizi bunun karşılığını getiriyor.
+
+21
+00:09:02,711 --> 00:09:14,391
+Kullanıcıların isteklerini yerine getirebilmiş mi gözden geçiriyoruz?
+
+22
+00:09:37,076 --> 00:09:40,395
+yazıyla bazı şeyler soran arkadaşlarınız var galiba.
+
+23
+00:10:00,000 --> 00:10:13,000
+test sürecinin adımlarını göreceğiz. Test sürecinin adımlarını gördükten sonra da bu test sürecinde hangi test teknikleri var?
+
+24
+00:10:14,836 --> 00:10:20,475
+hata giderme, debug, hata düzeyleri bunların üzerinde duracağız.
+
+25
+00:10:21,895 --> 00:10:26,216
+ve grey kutu testleri üzerinde duracağız.
+
+26
+00:10:28,716 --> 00:10:30,856
+Yazılım Test
+
+27
+00:10:30,856 --> 00:10:32,955
+Test
+
+28
+00:10:36,563 --> 00:10:40,284
+meydan vermemek için test işlemini gerçekleştiriyoruz.
+
+29
+00:10:46,067 --> 00:11:01,528
+Ölçütleri konusu da bizim işlemlerden bir tanesi. Ayrıca bu bize proje yönetiminde de fayda sağlıyor bitmiş yazılımlar.
+
+30
+00:11:06,004 --> 00:11:18,083
+Bu konusu da yine güvenirlik ölçümünden de söz edeceğimiz için güvenirlik modelleri de yine bu konu kapsamında ele alınabilecek konulardan.
+
+31
+00:11:25,043 --> 00:11:31,743
+test için planlama ve yönetim de önemli bir kavram.
+
+32
+00:11:34,583 --> 00:11:41,224
+ve test çalışma ekibinin yapısı. Bu test planlama ve yönetimi kapsamında
+
+33
+00:11:45,524 --> 00:11:46,723
+arkadaşlar için.
+
+34
+00:11:49,663 --> 00:11:52,123
+Sizin sorumluluklarınızı
+
+35
+00:11:55,764 --> 00:11:56,764
+projeydi.
+
+36
+00:11:58,323 --> 00:11:59,103
+5 kişi
+
+37
+00:11:59,103 --> 00:12:01,603
+olabileceksiniz.
+
+38
+00:12:02,163 --> 00:12:02,363
+Ben
+
+39
+00:12:02,363 --> 00:12:05,483
+demiştim. Bir
+
+40
+00:12:05,483 --> 00:12:07,883
+yazılım seçip bu yazılım üzerinde
+
+41
+00:12:07,883 --> 00:12:10,383
+test işleminin
+
+42
+00:12:10,383 --> 00:12:12,604
+gerçekleştirilmesi.
+
+43
+00:12:13,803 --> 00:12:16,104
+Tabii ki bunun için de gereksinim
+
+44
+00:12:16,104 --> 00:12:20,003
+spesifikasyonunu oluşturmanız lazım yazılım üzerinde
+
+45
+00:12:20,003 --> 00:12:20,583
+demiştim.
+
+46
+00:12:20,583 --> 00:12:22,503
+İşte bu test
+
+47
+00:12:22,503 --> 00:12:52,484
+SESCAL
+
+48
+00:12:26,035 --> 00:12:47,956
+projenizde örnekleyeceğiniz şeyleri anlatacağız aslında. Test yönetimi nedir? Test çalışma ekibi profesyonel hayatta nasıl hazırlanır? Nasıl hazırlanır? Bunun üzerinde duracağız.
+
+49
+00:12:47,956 --> 00:12:52,876
+ve bu derste test gerçekleştirdiğimiz
+
+50
+00:12:59,700 --> 00:13:12,799
+Senaryoları nasıl göstereceksiniz? Bunu da burada görmüş olacağız. Teslim sonrasında da kalitenin sağlanması, kalite adına gerçekleştirecekler var.
+
+51
+00:13:17,011 --> 00:13:40,911
+yazılım konfigürasyon yönetimi. Yine şeyde yazılım mühendisliği dersinde software configuration management olarak konfigürasyon yönetimi üzerinde durmuştuk. Ayrıca yazılım bunlar da kalite adına gerçekleştirecek işlemler.
+
+52
+00:13:40,911 --> 00:13:42,451
+yazılımı teslim ettik.
+
+53
+00:13:42,551 --> 00:13:43,591
+Teslim sonrasında
+
+54
+00:13:48,403 --> 00:13:53,663
+istenilen eklemeler varsa bu bakım maintenance.
+
+55
+00:13:57,620 --> 00:14:03,580
+ne giriyor? Bakımı, hangi türde bakım yapıyoruz? Bunların üzerinde duracağız.
+
+56
+00:14:06,719 --> 00:14:21,759
+Konfigürasyon, düzen demek. Yazılım düzeni dediğimizde yazılımın elemanlarının nasıl ve bu yapının korunması adına gerçekleştirecek işlemler.
+
+57
+00:14:21,759 --> 00:14:22,819
+nelerdir bunlar?
+
+58
+00:14:32,820 --> 00:14:37,379
+yazılımın elemanı
+
+59
+00:14:42,323 --> 00:14:43,283
+belgeler.
+
+60
+00:14:46,223 --> 00:14:49,804
+Bunların hepsi planlar.
+
+61
+00:14:52,204 --> 00:14:54,383
+Bunların saklanması.
+
+62
+00:14:54,383 --> 00:14:57,923
+Kusura bakmayın, bölüyorum da. Sesiniz çok kesiliyor. Bir de slide'ları göremiyoruz.
+
+63
+00:14:58,063 --> 00:14:58,844
+Slide varsa.
+
+64
+00:15:08,467 --> 00:15:09,148
+Bir dakika.
+
+65
+00:15:22,035 --> 00:15:24,075
+site'ları görebiliyor musunuz şu anda?
+
+66
+00:15:29,427 --> 00:15:30,747
+Yok hocam şu anda gözükmüyor.
+
+67
+00:15:31,288 --> 00:15:32,807
+Görünmüyor bir dakika.
+
+68
+00:16:20,659 --> 00:16:22,880
+Ekranı yeniden paylaşacağım.
+
+69
+00:17:31,700 --> 00:17:34,979
+Şu anda slide görebiliyor musunuz?
+
+70
+00:17:37,059 --> 00:17:38,039
+Evet hocam geldi şimdi.
+
+71
+00:17:38,719 --> 00:17:39,719
+Tamam, tamam.
+
+72
+00:17:42,639 --> 00:17:45,620
+Evet o slide'da bir problem oldu herhalde.
+
+73
+00:17:50,740 --> 00:17:52,360
+Şunu da deneyim bir daha.
+
+74
+00:20:50,579 --> 00:20:53,579
+Evet, şu anda görebiliyor musunuz ekranı?
+
+75
+00:20:55,279 --> 00:20:55,919
+Evet hocam.
+
+76
+00:20:56,439 --> 00:21:03,579
+Şey, yazılım, inceleme, temel kavramları, adımları üzerinde duracağımızı.
+
+77
+00:21:04,699 --> 00:21:06,139
+Evet hocam, slide geldi şu anda.
+
+78
+00:21:06,399 --> 00:21:07,699
+Tamam, teşekkürler.
+
+79
+00:21:10,139 --> 00:21:13,379
+Evet, yazılım, inceleme üzerinde duracağımızı söylemiştim.
+
+80
+00:21:14,579 --> 00:21:18,840
+Test süreci adımları üzerinde duracağımızı söylemiştim.
+
+81
+00:21:18,840 --> 00:21:29,019
+ve test aşamalarında sonra test teknikleri üzerinde duracağımızı söylemiştim.
+
+82
+00:21:29,739 --> 00:21:39,459
+Saydam kutu ve kara kutu testi üzerinde hata giderme, debugging ve hata düzeyleri üzerinde duracağımızı söylemiştim.
+
+83
+00:21:39,459 --> 00:21:51,519
+yazılım ölçümünün de yazılım kalitesi üzerinde önemli bir konu olduğundan bahsetmiştik bir önceki slide'da.
+
+84
+00:21:51,519 --> 00:22:05,819
+Software Matrix konusu, yazılım kalite ölçütleri, hashtag, maccape, maccall gibi bütün bu metrikleri bir arada tekrar üzerinde duracağız.
+
+85
+00:22:05,819 --> 00:22:18,899
+yazılım güvenirli reliability konusu. Bu reliability konusu üzerinde de bu konu kapsamında duracağımızı belirttim.
+
+86
+00:22:20,739 --> 00:22:32,619
+Projenizle ilgili konuştum az önce. Projenizle ilişkili olan projenizin raporunu nasıl hazırlayacaksınız anlatımı da
+
+87
+00:22:32,620 --> 00:22:37,999
+yazılım test planlama ve yönetim bölümünde yer alacak.
+
+88
+00:22:39,779 --> 00:22:47,440
+11. bölümde de yazılım teslim sonrasında kaliteyi nasıl sağlayacağımız üzerinde duracağız.
+
+89
+00:22:48,179 --> 00:22:51,639
+Bakımı yazılım konfigürasyonu üzerinde duracağız.
+
+90
+00:22:59,155 --> 00:23:00,155
+En son bölümümüzde kalite iyileştirme. Kalite iyileştirmede CMMI, CMMI yeterlilik düzeyleri, anahtar süreç alanlar ve PeopleCMM hakkında konuşacağız. Bunlar dersin içeriği, derste neler üzerinde duracağımızdı ve bu
+
+91
+00:23:32,211 --> 00:23:37,672
+temel olarak göreceğiz. Sizden beklediğim bir ara sınavımız olacak.
+
+92
+00:23:45,140 --> 00:23:48,939
+projenin tanımı üzerinde durmuştum. Geçen hafta
+
+93
+00:23:54,740 --> 00:24:05,740
+Tabii ki bu yazılımın source kodu da elinizde olmalı. Daha önce yaptığınız proje olabilir, ara proje olabilir.
+
+94
+00:24:07,892 --> 00:24:27,892
+Özür dilerim. Bu projede kullanacağınız yazılımı seçtikten sonra gereksinim spesifikasyonunu hazırlayacaksınız. Tabii ki yazılımı seçme aşamasında bir de grubunuzu oluşturacaksınız. Beş kişi bir arada yapabiliyorsunuz.
+
+95
+00:24:27,892 --> 00:24:41,811
+ve bu proje kapsamında da yazdığınız gereksinim analizini daha sonra kullanıcı testinde kullanacaksınız ve her grubu bir kullanıcı testi yapmasını istiyorum.
+
+96
+00:24:43,991 --> 00:24:47,131
+Gereksinim spesifikasyonunu zaten oluşturacaksınız.
+
+97
+00:24:47,131 --> 00:24:55,711
+Bir de test, birim test, sistem testi yapabilirsiniz.
+
+98
+00:24:55,711 --> 00:25:02,892
+Bunları da test yönetimi konusunda göreceğimiz gibi raporlayacaksınız.
+
+99
+00:25:03,031 --> 00:25:05,112
+Yani önce planınızı oluşturacaksınız.
+
+100
+00:25:05,271 --> 00:25:12,951
+Sonra test senaryolarınızı, hangi test verisini kullanarak bunları gerçekleştirdiğinizi belirteceksiniz.
+
+101
+00:25:13,411 --> 00:25:21,651
+Ve bu raporu, sonuç raporunu, test sonuç raporunu hazırlayacaksınız.
+
+102
+00:25:21,652 --> 00:25:26,132
+Bu dersin projesi bu şekilde gerçekleştirilecek.
+
+103
+00:25:26,872 --> 00:25:36,512
+İlk başta yapacağınız şey şu anda grubunuzu oluşturmak ve yazılımınızı seçmek.
+
+104
+00:25:37,592 --> 00:25:40,272
+Geçen hafta soran arkadaşlarınız olmuştu.
+
+105
+00:25:42,432 --> 00:25:46,372
+Biz seçemezsek grubu siz oluşturur musunuz diye.
+
+106
+00:25:46,372 --> 00:25:50,492
+Yani daha verimli çalışabilmeniz için grubu seçmek.
+
+107
+00:25:51,651 --> 00:25:57,791
+Ben de rastgele oluşturabilirim. Bunun için de size iki hafta
+
+108
+00:25:57,791 --> 00:26:17,551
+Dersle ilgili içerikle ilişkili, projeyle ilişkili sorunuz var mı? Onu göreyim. Daha sonra da
+
+109
+00:26:17,552 --> 00:26:24,432
+Dersi geçen hafta gördüklerimizi kısaca tekrarlayarak devam edeceğiz.
+
+110
+00:26:43,092 --> 00:26:57,651
+grubunuzu oluşturmanız için, beş kişilik grubunuzu, bir de projenizi gerçekleştireceğiniz yazılımı seçmeniz için.
+
+111
+00:27:35,092 --> 00:27:41,032
+yazılım mühendisliğinde kalitenin yeri ve
+
+112
+00:27:44,564 --> 00:28:03,343
+devam etmiştik. Burada bir yazılı mühendisliği tanımı yazısı var. Size geçen haftada tekrarladığım yazılı mühendisliği tanımını
+
+113
+00:28:05,268 --> 00:28:15,768
+kaliteli yazılımı elde etmek üzere ve en ekonomik elde etmek üzere
+
+114
+00:28:19,923 --> 00:28:23,363
+çözüm işlemlerini
+
+115
+00:28:25,011 --> 00:28:53,011
+bilim dalına yazılım mühendisliği diyoruz. Burada üç tane temel ana, yani yazılımı herhangi bir şekilde üretmek değil, bu derste de sayacağımız kalite özelliklerine sahip yazılımın elde edilmesi, en ekonomik olarak elde etme, buradaki en ekonomik kavramı da yazılımın,
+
+116
+00:28:55,011 --> 00:29:11,651
+en ucuz değil en iyi yazılımı en iyi maliyete etmek. Bunun için de proje yönetimine ihtiyaç var. Kaliteli yazılımı tanımlamak ve elde etmek için de kalite yönetimine ihtiyaç var.
+
+117
+00:29:11,651 --> 00:29:26,471
+ve bunun için mühendislik sürecini kullanmak, mühendislik çözüm yöntemlerini kullanmakta sorunu çözmek için tasarımı gerçekleştirmek,
+
+118
+00:29:26,471 --> 00:29:32,471
+yani doğrudan doğruya kod yazarak ya da doğrudan doğruya algoritmiz.
+
+119
+00:29:35,331 --> 00:29:42,471
+Tasarımı gerçekleştirerek analizden sonra tasarımı gerçekleştirerek yazılımı geliştirerek.
+
+120
+00:29:44,211 --> 00:29:49,211
+Ölçme işlemini yapmak bitmiş yazılımlar üzerinde.
+
+121
+00:29:49,211 --> 00:30:13,111
+yazılımın büyüklüğünü karmaşıkta ölçüp bir sonraki gerçekleştireceğimiz yazılımda bu veri kullanarak maliyet tahmini yapabileceğimiz şekilde ölçüm gerçekleştirmek.
+
+122
+00:30:13,111 --> 00:30:33,051
+Yazılım mühendisliğinde bir katmanlı yapı bunun için oluşturuyoruz. Kalite bakış açısı ve bunun için süreçleri kullanıyoruz. Yani formal bir şekilde analiz, tasarım, gerçekleştirme, test aşamasını yazılım geliştirme süreci.
+
+123
+00:30:39,155 --> 00:30:42,235
+ve gerekli yöntemleri kullanıyoruz.
+
+124
+00:30:48,564 --> 00:30:55,703
+gibi ve buna uygun olacak şekilde yazılım araçlarından, tool'lardan faydalanıyoruz.
+
+125
+00:30:56,703 --> 00:31:02,823
+Bunu da hatırladık. Yazılım geliştirme sürecinde bir esas adımlar vardı.
+
+126
+00:31:08,084 --> 00:31:13,643
+Bunlar temel işlemler yazılımı hazırlamak için. Bir de destek süreç adımları var.
+
+127
+00:31:15,703 --> 00:31:34,084
+Validation, verification, formal ve teknik gözden geçirme, yazılım konfigürasyon yönetimi, reusability, yazılım ölçümü, software matrix, risk yönetimi, bunların hepsi
+
+128
+00:31:34,084 --> 00:31:44,084
+yazılım mühendisliğindeki destek süreç adımlarımız, yani temel adımlarımızı, temel adımlarımızı...
+
+129
+00:31:47,508 --> 00:31:49,287
+oluşturduğumuz adımlar.
+
+130
+00:31:54,804 --> 00:31:58,643
+yazılım geliştirme süreç modelleri üzerinde durmuştuk.
+
+131
+00:31:58,643 --> 00:32:02,323
+süreç modelleri
+
+132
+00:32:06,036 --> 00:32:12,516
+waterfall model ile başlayan modeller. Bunlar geleneksel modeller. Burada hep saydıklarımız.
+
+133
+00:32:12,516 --> 00:32:31,515
+waterfall model, mental model, spiral model, RAD model, unified process model. Bunların geleneksel yaklaşımla yazılım geliştirme süreç modelleri.
+
+134
+00:32:31,515 --> 00:32:43,295
+Bu unified process model nesneye yönelik yaklaşımı en iyi yürütebilmemizi sağlayan modeldir.
+
+135
+00:32:43,295 --> 00:32:52,195
+İşte yine yazılım mühendisliğinden hatırlatmalar yaparsak RAD model zaten adı üstünde hızlı uygulama geliştirme.
+
+136
+00:32:52,195 --> 00:33:19,716
+birbirinden modüllere bölüp yazılımı geliştireceğimiz yazılımı bu yazılımda farklı gruplara bu modüllerden her birini hazırlamak üzere bir şey daha sonra geliştirilen bütün yazılımları birleştireceğiz.
+
+137
+00:33:19,716 --> 00:33:49,696
+birleştirip bir test işlemi gerçekleştireceğiz. Dolayısıyla ekip bu hızlı yazılım geliştirmeye ve bir başka şartı da RAT modelin kullanımının hem geniş ekip olanağınız varsa hem de yazılımınız modüllere ayrılabilme özelliği gösteriyorsa bunu kullanacağız.
+
+138
+00:33:49,716 --> 00:33:50,955
+kullanabiliyorsunuz.
+
+139
+00:33:59,539 --> 00:34:15,640
+model üzerinde. Spiral modeli de şöyle bir hatırlayalım. Sarmal model, spiral model. Her bir evrimde aynı zamanda bu bir evrimsel yazılım geliştirme süreç yapısı.
+
+140
+00:34:15,640 --> 00:34:45,620
+üretimine,
+
+141
+00:34:45,639 --> 00:35:14,639
+Bunların hepsini uyguluyoruz. Daha sonra şu en içteki adım prototip, bundan sonraki sarmal, yeni ürün geliştirme ve şurada kullanıma alıyoruz. Bundan sonra ürüne yeni ilaveler yapıyoruz, zenginleştiriyoruz. Yine aynı müşteriyle iletişim, planlama, risk analizi, mühendislik, yapım, construction aşamalarının hepsini uyguluyoruz.
+
+142
+00:35:15,639 --> 00:35:26,639
+Daha sonra burada artık ürünü de zenginleştirdik kullanıma, daha önce kullanıma geçmiştik zaten şu ikinci çevrimde.
+
+143
+00:35:28,639 --> 00:35:31,639
+Bunları tekrardan gerçekleştiriyoruz.
+
+144
+00:35:31,639 --> 00:35:42,639
+Tabi yine bu internet bağlantısında ara sıra kopukluklar oluyor.
+
+145
+00:35:49,460 --> 00:36:12,099
+Spiral modelde az önce de şekilde gördüğümüz gibi her sarmal, müşteriyle iletişim, planlama, risk analizi, mühendislik, yapım ve değişim ve müşteri değerlendirme olmak üzere aşamalardan oluşuyor.
+
+146
+00:36:12,099 --> 00:36:17,279
+Ve bunların her birisi bir çevrimde gerçekleştiriliyor.
+
+147
+00:36:17,279 --> 00:36:29,539
+Şimdi buraya kadar sorunuz var mı? Yazılım mühendisliğinin devamı olarak bir bağlantı oluşturdunuz mu?
+
+148
+00:36:29,800 --> 00:36:45,640
+Bundan sonraki aşamada bu geleneksel modelleri hatırladık. Bir de çevik modelleri hatırlayalım. Onlara geçeceğim. Onlar üzerinde geçen hafta zaten durmamıştım.
+
+149
+00:36:45,640 --> 00:37:06,640
+hızlıca geçmiş oldum. Hem yazılı mühendisliğinin bir tekrarını gerekli olan bölümde düşünebiliriz bu derste hem de bu dersin içindekiler listesi üzerinde durduk.
+
+150
+00:37:06,640 --> 00:37:13,699
+Şimdi çevik yaklaşımlara geçmeden önce sorunuz var mı?
+
+151
+00:37:31,731 --> 00:37:36,851
+sorunuz var mı? Sözlü de sorabilirsiniz. Bir de yazı var mı? Ona bakacağım.
+
+152
+00:38:17,972 --> 00:38:24,191
+internet hattında arada problemler oluyor galiba.
+
+153
+00:38:24,191 --> 00:38:32,131
+Sılaıyor musunuz? Tekrar düzelmişti.
+
+154
+00:38:44,851 --> 00:38:47,851
+Evet, kamerayı kapatıp
+
+155
+00:38:47,851 --> 00:38:51,711
+Belki daha iyi olabilir.
+
+156
+00:41:12,692 --> 00:41:28,692
+Evet, şimdi çevik yaklaşımlarla yazılım geliştirme konusu üzerinde duracağız. Şu anda sesim duyabiliyor musunuz?
+
+157
+00:41:30,036 --> 00:41:31,516
+Evet hocam, duyabiliyoruz.
+
+158
+00:41:32,516 --> 00:41:36,755
+Çevik yaklaşımlarla yazılım geliştirme slide'ını görebiliyor musunuz?
+
+159
+00:41:43,956 --> 00:41:45,555
+Evet görebiliyoruz.
+
+160
+00:41:45,635 --> 00:41:45,835
+Tamam.
+
+161
+00:41:47,196 --> 00:41:50,235
+Çevik yaklaşımlarla yazılım geliştirme.
+
+162
+00:41:51,875 --> 00:41:57,876
+Şimdi buraya nereden geldik?
+
+163
+00:42:00,015 --> 00:42:06,575
+Bir klasik yöntemler, bir de çevik yöntemler var demiştik.
+
+164
+00:42:06,575 --> 00:42:18,575
+Çevik yöntemler veya çevik yaklaşımlar geleneksel yöntemlerden daha sonra kullanılmaya başlandı.
+
+165
+00:42:18,575 --> 00:42:32,956
+Ve çevik yaklaşımlarda hem hangi modeller var, onun üzerinde duracağız.
+
+166
+00:42:32,956 --> 00:42:46,195
+Ve ilk model olarak XP çerçevesinde, XP üzerinde bu çevik yaklaşımların özellikleri üzerinde duracağız.
+
+167
+00:42:46,195 --> 00:42:51,636
+Yani seçtiğimiz başlangıç modeli XP model, Extreme Programming olacak.
+
+168
+00:42:53,335 --> 00:42:59,136
+Geleneksel yazılım geliştirme süreç modellerine göre farklılıkları söyleyeceğiz.
+
+169
+00:42:59,676 --> 00:43:07,975
+Ondan sonra da hızlıca test güdümlü yazılım geliştirme üzerinde duracağız.
+
+170
+00:43:07,975 --> 00:43:21,335
+Test Driven Development kavramı nedir? Bunun kısaltılmışıyla da çok karşılaşabilirsiniz. Bunun üzerinde duracağız.
+
+171
+00:43:21,335 --> 00:43:31,575
+Test süreciyle ilişkili bir şey var mı kullanacağımız saat üzerinde?
+
+172
+00:43:31,715 --> 00:43:38,316
+Daha sonra da yazılım kalitesiyle ilişkili temel kavramlara geçeceğiz.
+
+173
+00:43:38,316 --> 00:43:55,595
+Şimdi bu test yönelimli geliştirme ve çevik yöntemler üzerinde, çevik yöntemlerin ayrıntılı tanımı üzerinde yazılı mühendisliğinde durmuştuk.
+
+174
+00:43:55,676 --> 00:43:58,295
+Bu sadece bir hatırlatma şeklinde olacak.
+
+175
+00:43:58,295 --> 00:44:09,756
+XP, Extreme Programming kullanıldığında çevik yaklaşımlar başlamış.
+
+176
+00:44:10,335 --> 00:44:22,495
+2000'li yılların başında, hatta 99 sonu 2000 başı gibi bir manifesto ile başladı, bir başkaldırı ile başladı.
+
+177
+00:44:22,495 --> 00:44:29,875
+Artan müşteri taleplerini daha hızlı karşılamak ve geleneksel sistem geliştirme modellerine alternatif olarak çıktı.
+
+178
+00:44:30,435 --> 00:44:36,335
+Bu geçen 20 sene içinde de sektöre de yaygınlaşmış oldu.
+
+179
+00:44:36,995 --> 00:44:42,555
+Ama diğer yazılım geliştirme süreç modelleri de kayboldu mu? Hayır.
+
+180
+00:44:42,555 --> 00:44:59,955
+Yine bir hata kritik yazılım geliştirmemiz gerektiğinde veya hata kritik yazılım geliştiren askeri yazılımlar gibi bunlarda da yine çevik yaklaşımlar kullanılıyor.
+
+181
+00:44:59,955 --> 00:45:10,755
+Ama spiral model yine hata kritik modellerde hatayı evrimsel olarak en aza indirmek anlamında kullanılıyor.
+
+182
+00:45:10,755 --> 00:45:18,575
+Veya waterfall yine geleneksel var olan bir yazılımı yenilemek istediğimizde yine waterfall'u kullanıyoruz.
+
+183
+00:45:19,275 --> 00:45:27,315
+Artan müşteri taleplerini daha hızlı karşılamak için geleneksel modellere bir alternatif olarak ortaya çıktı.
+
+184
+00:45:27,316 --> 00:45:41,836
+Çevik yaklaşımlar yazılım geliştirme aşamasında gereksinimlerin daha geç ortaya çıkmasını önlemek amacıyla kullanılan modeller.
+
+185
+00:45:42,387 --> 00:46:12,367
+XP'ye baktığımızda basitlik, iletişim, geri besleme ve cesaret olmak üzere çerçevesinde oluşturuldu. Yani daha basit çözümlerle başla, iletişimi ön planda tut, ekipten geri beslemeler al ve yeni yöntemleri daha hızlı kullanıma al.
+
+186
+00:46:12,387 --> 00:46:20,047
+olmak üzere bir süreç içinde geliştirildi XP.
+
+187
+00:46:21,047 --> 00:46:39,087
+XP'nin önemli özelliklerinden bir tanesi yani diğer çevik yaklaşımlara göre programlama, pair programming kullanılması, refactoring devamlı yeniden tasarım gerçekleştirilmesi,
+
+188
+00:46:39,087 --> 00:46:52,187
+ortak kod mülkiyetinin olması, sürekli bütünleştirme yapılması gibi özelliklerle ön plana çıkıyor.
+
+189
+00:46:53,627 --> 00:47:06,947
+Çevik modellerle geleneksel yazılım geliştirme süreç modelleri arasında dinamik kalite değerlendirme, statik kalite değerlendirmeden daha fazla kullanılıyor.
+
+190
+00:47:11,923 --> 00:47:33,524
+Dinamik kalite değerlendirme dediğimizde test kavramını görüyoruz. Statik kalite değerlendirme mesela inceleme gerçekleştirdiğimizde statik değerlendirme yapıyoruz. Test gerçekleştirebilmemiz için yazılımı çalıştırmamız gerekiyor çünkü.
+
+191
+00:47:33,524 --> 00:47:49,523
+kalite ile ilgili işlemler daha sürecin erken adımlarında başlıyor çevik modellerde. Kalite ile ilgili aktiviteler daha az aralıklarla daha sık olarak gerçekleştiriliyor.
+
+192
+00:47:49,523 --> 00:48:03,643
+Çevik yaklaşımlarda kullanıcı hikayeleri, birim testler, müşteri geri beslemesi ile hem doğruluk hem de sürekli olarak bu kalite değerlendirme sağlanmış oluyor.
+
+193
+00:48:04,763 --> 00:48:11,423
+Biz Çevik yaklaşımlarda test güdümlü yazılım geliştirme kullanıyoruz.
+
+194
+00:48:11,423 --> 00:48:26,864
+Bu nedir? Küçük ve hızlı iterasyonlarla yazılım geliştirme araçlarıyla hazırlanmış testler yazılıyor ve bu şekilde ilerleyen bir yazılım geliştirme metodolojisi.
+
+195
+00:48:26,863 --> 00:48:33,323
+içerik yaklaşımlar içinde bu uygulanıyor genellikle.
+
+196
+00:48:34,583 --> 00:48:47,403
+Yani daha yazılımı sistem analizini gerçekleştirirken nasıl test edeceğiz, kullanıcı testini nasıl yapacağız,
+
+197
+00:48:47,403 --> 00:48:52,883
+bunun test planları da hazırlanmış oluyor.
+
+198
+00:48:52,883 --> 00:48:55,243
+O yüzden test driving development.
+
+199
+00:48:56,703 --> 00:49:00,203
+Bilim test case'leri oluşturuluyor.
+
+200
+00:49:01,203 --> 00:49:16,743
+Yani bilimler için, yazılımın en küçük parçası için bunları nasıl test edeceğimiz test senaryolarını hazırlamış oluyoruz.
+
+201
+00:49:41,012 --> 00:49:55,012
+Evet, bu arada bakıyorum herhangi bir şey var mı? Problem var mı? Seste ya da slide'ın görünmesinde?
+
+202
+00:49:57,204 --> 00:49:58,063
+Yok hocam.
+
+203
+00:49:58,483 --> 00:49:58,843
+Tamam.
+
+204
+00:50:10,195 --> 00:50:21,895
+Evet, birim test kezleri yazmak. Yazılım test kezlerinin henüz kod yazılmadığı için başarısız olduğunu görmek için çalıştırabilmek.
+
+205
+00:50:21,895 --> 00:50:32,595
+Yani kod yazma aşamasında birimleri çalıştırarak test etmek.
+
+206
+00:50:32,595 --> 00:50:37,335
+Bütünlük testini beklememek
+
+207
+00:50:37,335 --> 00:50:46,175
+Tasarım sırasında kod da yazarak test case'lerin çalıştırılmasını sağlamak
+
+208
+00:50:46,175 --> 00:50:55,935
+Ve test case'lerin bütünleme oldukça çalıştırarak testten geçtiğini görmek
+
+209
+00:50:55,935 --> 00:51:08,935
+kodu yeniden düzenlemek yani hatalar ortaya çıktığı düzenleyip tekrar kullanmak bu sürece bir dinamiklik katmış oluyor.
+
+210
+00:51:08,935 --> 00:51:34,535
+Test Driven Development için Hakan Erdoğmuş bizim bölüm tarafından 10 sene önce düzenli Ulusal Yazılı Mühendisliği Sempozyumuna davetli konuşmacı olarak gelmişti.
+
+211
+00:51:34,535 --> 00:52:04,515
+Amerika'da IEEE software'in editörü olarak çalışıyordu. Bu test driving development konusunda oldukça fazla ilk çalışmaları yapan uzman ve araştırma sonucunda test driving development'ın programcı üretkenliğini
+
+212
+00:52:04,535 --> 00:52:17,155
+fakat kalitede de bazı eksiklikler olduğunu vurgulamıştı ve bu konuda da hep iyileştirme çalışmaları yapıldı 10 senedir.
+
+213
+00:52:19,295 --> 00:52:22,835
+Önce test yaklaşımı.
+
+214
+00:52:27,380 --> 00:52:38,680
+Ne kadar test sonuçlarını yedekleyip iyileştirmeyle motive edilirse o kadar iyileştirecektir diye bir sonuç çıkarmıştı.
+
+215
+00:52:38,680 --> 00:52:59,499
+Yani test driving development üzerinde, ecail yaklaşımın çıktığı 20 sene olduysa 10 senedir de test driving development üzerinde iyileştirme çalışmaları yapılıyor.
+
+216
+00:53:00,080 --> 00:53:02,060
+Sektörde de kullanımı fazla.
+
+217
+00:53:02,060 --> 00:53:15,499
+Şimdi dediğim gibi ben çevik modellerin tanımını yazılı mühendisliği dersinde hem ben hem Yunus Emre hocanız yapmıştı.
+
+218
+00:53:15,499 --> 00:53:32,740
+Scrum'un özellikleri nelerdir, Kamba'nın ayrıca özellikleri nelerdir, işte XP ilk ortaya çıkış noktasıdır Ecail yönetimin gibi tanımlamalar yapmıştık.
+
+219
+00:53:32,839 --> 00:53:38,299
+Burada sadece kaliteyi bilerek de bir hatırlatma yapmış oldum.
+
+220
+00:53:38,299 --> 00:53:44,299
+Şimdi kalite temel kavramları üzerinde duracağız.
+
+221
+00:53:44,299 --> 00:53:55,240
+Kalite temel kavramları dediğimizde bir yazılım kalite faktörlerinin anlaşılması ya da hatırlanması üzerinde duracağız.
+
+222
+00:53:55,719 --> 00:53:59,979
+Yazılım kalite faktörleri modeli, McColl modeli üzerinde duracağız.
+
+223
+00:54:00,999 --> 00:54:05,479
+Kalite sağlama aktivitelerini özetleyeceğiz.
+
+224
+00:54:06,740 --> 00:54:12,799
+Kalite maliyet modellerini daha sonra çok az üzerinde duracağız.
+
+225
+00:54:12,799 --> 00:54:18,759
+Ve geçerleme doğrulamanın yazılım kalitesindeki yerini tanımlayacağız.
+
+226
+00:54:18,880 --> 00:54:21,299
+Ama o esas daha sonraki konumuz oluyor.
+
+227
+00:54:22,600 --> 00:54:30,579
+Esas şu kalite faktörleri ve kalite sağlama aktiviteleri üzerinde duracağız.
+
+228
+00:54:31,100 --> 00:54:37,779
+Ki gözden geçirme, inceleme bunun arkasından gelecek konular olacak.
+
+229
+00:54:37,779 --> 00:54:42,059
+Kalite özellikleri üzerinde şöyle bir duracağım.
+
+230
+00:54:42,059 --> 00:54:51,739
+Kaliteli yazılım nedir? Kalite özelliklerini, makol listesini hatırlatacağım. Ondan sonra bir ara verelim, bir 10 dakikalık.
+
+231
+00:54:51,739 --> 00:55:11,380
+Şimdi kalite özelliklerini anlayabilmek için kaliteli yazılım, önceden belirlenmiş olan işlevsel gereksinimlere, yazılım geliştirme standartlarına uygun ve kabul edilebilir hata düzeyinde olan yazılımdır.
+
+232
+00:55:11,380 --> 00:55:37,740
+Yani kaliteli yazılım için işlevsel gereksinimlere uygun olacak, gereksinim spesifikasyonunda belirtilmiş olan bütün işleri yapıyor olacak, bütün işlevsele olmayan özellikleri sağlıyor olacak, standartlara uygun geliştirilmiş olacak.
+
+233
+00:55:37,740 --> 00:55:43,019
+hem de kabul edilebilir hata düzeyinde olması gerekecek.
+
+234
+00:55:43,139 --> 00:55:49,139
+Hata sayısı, dur diyemeyiz ama en aza indirilmiş olacak.
+
+235
+00:55:50,400 --> 00:55:52,740
+İşte kaliteli yazılım,
+
+236
+00:55:55,260 --> 00:56:03,980
+standartlara uygun hazırlanmış olacak ve hata düzeyi az olacak.
+
+237
+00:56:03,979 --> 00:56:09,679
+Bu yazılıma kaliteli yazılım diyoruz.
+
+238
+00:56:10,639 --> 00:56:13,019
+Yazılım mühendisliği tanımında da geçiyordu.
+
+239
+00:56:13,119 --> 00:56:23,959
+Kaliteli yazılımı en ekonomik olarak elde eden mühendislik yöntemlerini kullanan bilim dalı diye yazılım mühendisliği için.
+
+240
+00:56:29,556 --> 00:56:58,415
+Yazılım kalite faktörleri diyelim. Kalite faktörleri, McCall kalite üçgenini hatırlayacağınızı umuyorum. Yazılım ürünümüz, yazılım, yazılımın kullanımı, geçiş, yani bir yerden bir yere aktarılması veya bir yazılımdan başka bir yazılıma geçiş, birlikte kullanılış ve üründe değişiklik.
+
+241
+00:56:58,415 --> 00:57:10,715
+Yani yazılımda değişiklik yapmak, bakım yapmak. Bunların 3 gruba ayırıyoruz bu şekilde kalite özelliklerini.
+
+242
+00:57:12,715 --> 00:57:18,596
+Ürün kullanımı açısından doğruluk, güvenirlik, kullanışlılık, bütünlük, etkinlik.
+
+243
+00:57:21,395 --> 00:57:27,416
+Ürün geçişi açısından taşınabilirlik, yeniden kullanılabilirlik, birlikte çalışılabilirlik.
+
+244
+00:57:28,415 --> 00:57:33,975
+3 grup üzerinde duracağız.
+
+245
+00:57:33,975 --> 00:57:35,295
+Şimdi
+
+246
+00:57:44,692 --> 00:57:58,692
+bir ara veriyorum. 10 dakika. 10 dakika sonra yazılım kalite faktörlerinden devam edeceğiz.
+
+247
+01:01:06,516 --> 01:01:07,415
+kullanılıyor.
+
+248
+01:01:11,860 --> 01:01:14,659
+çok iyi.
+
+249
+01:01:33,588 --> 01:01:34,447
+Şuraya gelin.
+
+250
+01:01:49,235 --> 01:01:50,235
+ve sonunda.
+
+251
+01:02:01,427 --> 01:02:08,427
+ve
+
+252
+01:02:18,835 --> 01:02:21,675
+çeşit.
+
+253
+01:02:32,755 --> 01:02:34,755
+Söylesin.
+
+254
+01:02:34,755 --> 01:02:35,755
+Sağ olun.
+
+255
+01:02:35,755 --> 01:02:40,395
+İyi günler. Bir tane samosa istiyordum. Sağ olun.
+
+256
+01:03:26,643 --> 01:03:29,124
+sistem, bu.
+
+257
+01:03:34,291 --> 01:03:36,291
+bir şey.
+
+258
+01:05:27,219 --> 01:05:28,700
+Bu böyle düşünüyorum yani.
+
+259
+01:05:29,379 --> 01:05:31,319
+Ben öbür kışlarım taksalar ya.
+
+260
+01:05:32,079 --> 01:05:33,719
+Onun için çarşı takacağım.
+
+261
+01:05:35,640 --> 01:05:37,239
+Şimdi yani böyle bir hata
+
+262
+01:05:37,239 --> 01:05:38,439
+alıp da bir yapmak istiyorum.
+
+263
+01:05:50,771 --> 01:05:59,152
+Önce bir şey yok.
+
+264
+01:06:13,076 --> 01:06:17,076
+Bu arada bu işimizde bizim diğer bir şeyini yaptılar.
+
+265
+01:06:17,076 --> 01:06:21,076
+Bu, evet, nasılsınız?
+
+266
+01:06:25,811 --> 01:06:32,811
+ve
+
+267
+01:06:36,275 --> 01:06:43,275
+Bu olma
+
+268
+01:06:53,139 --> 01:06:53,899
+3.5%
+
+269
+01:14:28,083 --> 01:14:40,883
+Evet, şimdi yazılım kalite faktörlerini MacGol üçgeniyle görelim. Yazılım kalite özelliklerini hatırlayalım.
+
+270
+01:14:40,883 --> 01:14:59,363
+Ürün kullanımı anlamında kullanıcı bakış açısıyla doğruluk, correctness, güvenilirlik, reliability yani doğruluğa yüzde kaç güvenebiliriz?
+
+271
+01:14:59,363 --> 01:15:14,563
+kullanışlılık, bütünlük, etkinlik, performansı, bütünlük, integrity, security.
+
+272
+01:15:14,563 --> 01:15:21,163
+Bunlar kullanıcı bakış açısıyla yazılımda istenen özellikler.
+
+273
+01:15:21,163 --> 01:15:40,183
+Ürün geçişini yapan kişiler açısından taşınabilirlik, yeniden kullanılabilirlik, birlikte çalışabilirlik, birlikte çalışabilirlik diğer yazılımlarla ne kadar uyumlu bunu görüyoruz.
+
+274
+01:15:40,183 --> 01:15:51,783
+Bu arada tekrar sorayım hep bağlantıda problemler olduğu için ses ve slide görüntüsünde problem var mı? Görebiliyor musunuz?
+
+275
+01:15:54,363 --> 01:15:55,563
+Duyabiliyor musunuz?
+
+276
+01:15:55,563 --> 01:15:56,664
+Görebiliyoruz duyabiliyoruz.
+
+277
+01:15:56,683 --> 01:15:57,843
+Hocam şu anda bir sıkıntı yok.
+
+278
+01:15:58,264 --> 01:15:59,444
+Tamam teşekkürler.
+
+279
+01:16:06,963 --> 01:16:28,543
+Taşınabilirlik bir ortamdan, bir işletim sisteminden başka bir işletim sistemine taşınabilmesi. Yeniden kullanılabilirlik, reusability çok önemli. Yazılım mühendisliğinin önemli alt başlıklarından bir tanesi aslında. Ayrıca bir kitap, ayrıca bir çeptir oluşturulmuş bazı kaynaklarda.
+
+280
+01:16:28,543 --> 01:16:41,923
+hazırladığımız bir yazılımın bir parçasının başka bir yerde de kullanılması veya bir tasarımın başka bir yerde de kullanılması.
+
+281
+01:16:41,923 --> 01:16:46,984
+Mesela yeniden kullanılabilirliği nesneye yönelik yaklaşım daha çok destekliyor.
+
+282
+01:16:47,923 --> 01:16:57,963
+Aynı zamanda nesneye yönelik yaklaşımda da design patternler, tasarım kalıpları yeniden kullanılabilirliği destekliyor.
+
+283
+01:16:58,543 --> 01:17:09,443
+Bu alana özgü modelleme, yine yeniden kullanımı destekleyen kavramlardan birisi.
+
+284
+01:17:13,443 --> 01:17:25,143
+Bu önemli bir kavram, yazılımın bir parçasının ya da bütününün başka ortamlarda da kullanılabilir olması veya sadece tasarımın.
+
+285
+01:17:25,144 --> 01:17:40,764
+birlikte çalışabilirlik, birlikte çalışabilirlikte interoperability başka yazılımlara veri gönderebiliyor mu, onun veri tabanını kullanabiliyor mu?
+
+286
+01:17:40,764 --> 01:17:49,963
+Yani uyumlu çalışması bunu anlatıyor.
+
+287
+01:17:49,963 --> 01:17:55,383
+Bunlar da ürün geçişi açısından önemli özellikler.
+
+288
+01:17:55,843 --> 01:18:00,803
+Üründe değişiklik yaparken aslında yeniden kullanılabilirlik burada da önem taşıyor.
+
+289
+01:18:01,184 --> 01:18:14,184
+Ama bakım yapılabilirlik, esneklik, test edilebilirlik bunlar da üründe değişiklik yapacağımız zaman önemli özellikler test edilebilirlik.
+
+290
+01:18:14,183 --> 01:18:27,063
+Aslında burada bunları destekleyen başka alt kavramlar mesela belgeleme varsa üründe değişiklik yapmak daha kolaylaşır.
+
+291
+01:18:28,423 --> 01:18:35,223
+Bunu da kalite ölçütleriyle faktörler arasındaki ilişki de göreceğiz zaten.
+
+292
+01:18:35,223 --> 01:18:47,684
+Şimdi yazılım kalite özelliklerine yazıyla da baktığımızda az önce söylediklerinin hepsini bu slide'da da tanım olarak görüyoruz.
+
+293
+01:18:47,883 --> 01:19:00,223
+Doğruluk, correctness, spesifikasyonlara uygunluk, müşteri isteklerini karşılama derecesi, güvenirlik, reliability, tasarlanan işlemleri ne kadar duyarlılıkla yerine getirebiliyoruz?
+
+294
+01:19:00,223 --> 01:19:24,743
+Yani doğru sonuca ne kadar güvenebiliyoruz? Verimlilik efficiency, programın işlevlerini yerine getirebilmesi için gerekli bilgi işlem kaynaklarının ve kodlamanın gideri maliyetle gerçekleştiren işlevler birbiriyle uyumlu mu? Verimlilikten bunu kastediyoruz.
+
+295
+01:19:24,743 --> 01:19:30,544
+güvenlik, security, yetkisiz kişiler giriyor mu sizin yazılımınıza?
+
+296
+01:19:30,984 --> 01:19:38,523
+Kullanışlılık, usability, öğrenme, işletme, girdi hazırlama, çıktı yorumlama kolay mı bu yazılımda?
+
+297
+01:19:38,523 --> 01:19:48,984
+Yani kullanım kolaylığı, user friendly, kullanıcı dostu, bunu da böyle de görebiliriz, ismi farklı olabilir.
+
+298
+01:19:48,983 --> 01:20:04,783
+hata bulma kolaylığı, hatanın yerini bulup düzeltme olanağı, esneklik, yazılımda değişiklik yapma kolaylığı, sınama yapılabilirlik, test edilebilirlik, taşınabilirlik, portability, yazılımın farklı donanımlarda
+
+299
+01:20:05,395 --> 01:20:31,475
+kullanılma özelliği. Yeniden kullanılabilirlik, az önce söz ettik, yazılımın tümünün veya başka bir bölümünün başka bir uygulamada kullanılabilme olanağı. Bağlanabilirlik demişiz biz Türkçesini oluştururken ama bu biraz anlatmıyor. Birlikte çalışabilirlik demek daha uzun bir isim de olsa daha anlatılır.
+
+300
+01:20:31,475 --> 01:20:39,916
+bir sistemin diğer bir sistemle birlikte çalışabilmesi özelliği demiştik.
+
+301
+01:20:39,916 --> 01:20:49,015
+İşte bu kalite özelliklerini bu şekilde tanımlamış oluyoruz.
+
+302
+01:20:49,455 --> 01:20:58,476
+MacCol yazılım kalite modeli dediğimizde, bunlar az önce söylediğim kalite modelleri MacCol üçgeninden çıkan kalite modelleriydi.
+
+303
+01:21:01,475 --> 01:21:14,756
+Yazılım kalite faktörleri doğrudan ölçülemez bazı özelliklere bağlı birer doğrusal regresyon denklemi şeklinde kestirilebilir.
+
+304
+01:21:14,756 --> 01:21:30,756
+Yani buradaki Fİ bir kalite faktörü dersek M1, M2, M3 de yazılım ölçütleri, metrikleri gösterir.
+
+305
+01:21:31,476 --> 01:21:38,596
+yazılımı değerlendirebileceğimiz daha ölçülebilir kavramlar.
+
+306
+01:21:38,756 --> 01:21:41,256
+Onlar da bazen başka şeylere bağlıdır aslında.
+
+307
+01:21:43,976 --> 01:21:47,776
+Bunların bir bileşimi oluyor.
+
+308
+01:21:48,876 --> 01:21:57,995
+Şöyle şekil üzerinde görürsek bunu, yazılım mühendisliğinde de göstermiştim bu ilişkilendirme modelini.
+
+309
+01:21:57,995 --> 01:22:01,995
+Sol taraf yazılım kalite özellikleri.
+
+310
+01:22:01,995 --> 01:22:25,395
+Sağ taraf ise yazılımda ya bu kalite faktörlerinden bazılarını ya da ölçebildiğimiz kavramları görüyoruz yazılım üzerinde.
+
+311
+01:22:25,395 --> 01:22:38,216
+Doğruluk dediğimiz zaman izlenebilirlik, tam olma, uyumluluk, güvenirlik dediğimizde doğruluk, uyumluluk ve hata toleransını
+
+312
+01:22:38,216 --> 01:22:52,996
+Yani hata toleransı bir yazılım ne kadar hata ortaya çıktığında bunu tolera edebiliyor, daha çalışmasına devam edebiliyor
+
+313
+01:22:52,995 --> 01:22:59,595
+etkinlik, çalışma etkinliği, bellek etkinliği.
+
+314
+01:22:59,595 --> 01:23:04,975
+Yani çalışma hızı, cevap süresi, bellek etkinliği.
+
+315
+01:23:05,075 --> 01:23:07,195
+Ne kadar bilgi saklayabiliyor?
+
+316
+01:23:08,635 --> 01:23:21,175
+Bütünlük, tamlık, erişim kontrolü, erişimin denetilmesi, kullanılabilirlik, çalışabilirlik, eğitim,
+
+317
+01:23:21,175 --> 01:23:45,675
+iletişim yapılabilirlik metrikleriyle, bakım yapılabilirlik, basitlik, hassasiyet, ifade edilebilirlik, yani bakım ifade edilebilirlik derken belgelemesi var mı yazılımın?
+
+318
+01:23:45,675 --> 01:23:48,556
+O zaman bakım daha kolay yapabiliriz.
+
+319
+01:23:52,756 --> 01:23:58,355
+Test edilebilirlik yine basit tasarımı, anlaşılır tasarımı var mı?
+
+320
+01:24:00,635 --> 01:24:04,676
+Bir araç kullanılmış mı geliştirirken?
+
+321
+01:24:07,015 --> 01:24:17,495
+Test edilebilirlik için ifade edilebilirlik, yani yine test edebilmek için belgeleme var mı yazılımda?
+
+322
+01:24:17,495 --> 01:24:20,256
+test edilebilir olması için
+
+323
+01:24:20,256 --> 01:24:22,436
+modülleri testi
+
+324
+01:24:22,436 --> 01:24:23,256
+nedir?
+
+325
+01:24:24,776 --> 01:24:26,675
+Modüllere ayrılarak
+
+326
+01:24:26,675 --> 01:24:27,855
+mı hazırlanmış?
+
+327
+01:24:27,956 --> 01:24:29,635
+Modül tanımları var mı alt
+
+328
+01:24:29,635 --> 01:24:31,296
+başlıklarda?
+
+329
+01:24:33,195 --> 01:24:34,775
+Yeniden kullanılabilirlik
+
+330
+01:24:34,775 --> 01:24:35,915
+yine basitlik,
+
+331
+01:24:36,415 --> 01:24:38,135
+genelleştirilebilirlik
+
+332
+01:24:38,135 --> 01:24:40,796
+yani bir
+
+333
+01:24:40,796 --> 01:24:42,616
+tasarım kalıpları gibi
+
+334
+01:24:42,616 --> 01:24:44,195
+genelleştirilebilirlik
+
+335
+01:24:44,195 --> 01:24:45,595
+yapısı var mı?
+
+336
+01:24:47,495 --> 01:24:54,335
+Yeniden kullanılabilirlik için yazılım sistemi bağımsızlığı var mı?
+
+337
+01:24:54,335 --> 01:25:04,336
+Mesela bir modülü yeniden kullanılabilir olabilmesi için başka modüllere çok bağımlıysa yeniden kullanılabilirliği düşüktür.
+
+338
+01:25:04,336 --> 01:25:22,395
+Yine birlikte çalışabilirlik için modül adete iletişim genelliği, veri genelliği var mı?
+
+339
+01:25:23,395 --> 01:25:30,215
+Başka veri tabanlarını kullanabilmesi için veri genelleştirmesi yapılabiliyor mu?
+
+340
+01:25:30,215 --> 01:25:31,575
+Bu önem kazanıyor.
+
+341
+01:25:31,575 --> 01:25:41,575
+Yani sağ taraftakiler daha ölçülebilir veya başka kalite faktörlerine bağlılık ölçütler.
+
+342
+01:25:42,855 --> 01:25:45,955
+Sol taraftakiler de kalite özellikleri oluyor.
+
+343
+01:25:48,075 --> 01:25:57,355
+Böyle birden fazla metriyi bir kalite faktörünü hesaplamak için kullanabiliyoruz.
+
+344
+01:25:57,355 --> 01:26:02,955
+Her birinin de katkı oranı farklı oluyor.
+
+345
+01:26:04,895 --> 01:26:13,795
+Şimdi buraya kadar kalite faktörleri üzerinde durduk.
+
+346
+01:26:13,795 --> 01:26:28,435
+Yani madem ki kaliteli yazılım elde etmeyi hedefliyoruz, kaliteli yazılımı elde etmek üzere hangi özelliklerine bakmalıyız?
+
+347
+01:26:28,895 --> 01:26:31,295
+Ne tip yazılımlar kaliteli oluyor?
+
+348
+01:26:31,955 --> 01:26:36,175
+Ve bu kaliteyi nasıl hesaplayacağız kalite faktörlerini?
+
+349
+01:26:36,175 --> 01:26:54,715
+Bir kalite faktörü birden fazla, şurada tekrar göreceğimiz gibi, bir kalite faktörü birden fazla kalite özelliğine bağlantılı olabiliyor.
+
+350
+01:26:54,715 --> 01:27:09,755
+Bir kalite faktörünü hesaplamak için birden fazla kalite metriyinden faydalanıp bunun hakkında bir sayısal değer bulabiliyoruz.
+
+351
+01:27:11,155 --> 01:27:15,675
+Şimdi biz kaliteli yazılım oluşturmaya çalışıyoruz.
+
+352
+01:27:15,815 --> 01:27:17,075
+Bunu ölçüyoruz.
+
+353
+01:27:17,155 --> 01:27:18,955
+Hata var mı test ediyoruz filan.
+
+354
+01:27:18,955 --> 01:27:29,855
+Genel olarak kaliteli yazılımı sağlamak üzere neler gerçekleştirebiliyoruz?
+
+355
+01:27:31,135 --> 01:27:35,136
+Hata ve eksikleri anında bulmak ve düzeltmek gerekiyor.
+
+356
+01:27:35,136 --> 01:27:48,815
+Bir basamakta yapılan hata sonra etkiliyor ve giderek hata bulma olasılığı azalıyor.
+
+357
+01:27:48,955 --> 01:28:18,935
+Biz o zaman...
+
+358
+01:27:50,847 --> 01:28:09,587
+Hatayı Erken Bulmaya çalışacağız. Ki bu Hatayı Erken Bulalım diagramlarını daha önceden yazılım mühendisliğinde de görmüştük.
+
+359
+01:28:09,587 --> 01:28:20,307
+Hatayı ne kadar erken bulursak, hatayı ne kadar erken ararsak bulma olasılığımız artıyor.
+
+360
+01:28:20,847 --> 01:28:28,748
+harcayacağımız para maliyette azalıyor şeklinde söylemiştik.
+
+361
+01:28:34,036 --> 01:28:58,036
+Peki biz bunun için neler yapıyoruz? Kaliteyi sağlamak üzere gerçekleştirdiğimiz aktiviteler. Şimdi bu haftaki konumuz bunlardı. Kaliteyi sağlama aktivitelerini tanıtacaktık ve bunlardan bazılarını incelemeye başlayacaktık.
+
+362
+01:28:58,036 --> 01:29:21,896
+kaliteli yazılım dedik. Kaliteli yazılımı tarif ettik. Hangi özelliktedir kaliteli yazılımlar? Şimdi de diyoruz ki biz kaliteli yazılım elde etmek için hangi işleri, hangi aktiviteleri gerçekleştirmeliyiz? Öncelikle standartları kullanmalıyız, yazılım standartlarını.
+
+363
+01:29:21,896 --> 01:29:27,256
+Verification, validation kavramları üzerinde durmalıyız.
+
+364
+01:29:28,155 --> 01:29:33,296
+Yazılımın doğrulanması ve geçerlenmesi.
+
+365
+01:29:34,376 --> 01:29:36,896
+Türkçe'de aynı kelimedir ikisi de.
+
+366
+01:29:38,936 --> 01:29:47,595
+Ama Verification, yazılımı doğru yolla ürettik mi ona bakar.
+
+367
+01:29:47,595 --> 01:29:56,595
+Bunu Türkçe'de doğrulama kelimesiyle eşleştirmek kararı alınmıştır.
+
+368
+01:29:57,935 --> 01:30:03,915
+Validation'da biz istediğinden ürünü ürettik mi?
+
+369
+01:30:05,315 --> 01:30:07,116
+Ürün istediğimiz ürün mü?
+
+370
+01:30:08,055 --> 01:30:12,635
+İşte bu da geçerleme olarak kararlaştırılmıştır.
+
+371
+01:30:12,635 --> 01:30:16,335
+Validation'da geçerleme demek kararlaştırılmıştır.
+
+372
+01:30:16,335 --> 01:30:41,155
+Bunun için biz ne yapıyoruz? Biz standartları kullanacağız demiştik. Bir de gözden geçirme önemli. Çünkü ilk adımlarda daha yaptığımız her bir analizi, her bir tasarımı, müşteriden dinlediğimiz her bilgiyi gözden geçireceğiz. Review gerçekleştireceğiz. Denetimler yapacağız bunların üzerinde.
+
+373
+01:30:41,155 --> 01:31:08,955
+gözden geçirmenin bir üst işi burada yazmamışım onu inceleme bunu da slide'larda göreceğiz zaten inceleme inspection inspection da hataları bulmak için kodu inceleyeceğiz işte belgeleri daha ayrıntılı inceleyeceğiz
+
+374
+01:31:08,955 --> 01:31:18,175
+Başka yapmamız gereken şey dinamik değerlendirmeye geçiyoruz şimdi
+
+375
+01:31:18,175 --> 01:31:22,336
+Dinamik değerlendirmede test yapacağız
+
+376
+01:31:22,336 --> 01:31:28,215
+Bu arada standartlar dedik, standartlar da açmadık aslında
+
+377
+01:31:28,215 --> 01:31:36,416
+Formal bir yöntem yazılım geliştirme süreç modelini de benimseyip uygulamamız gerekiyor
+
+378
+01:31:36,415 --> 01:31:55,495
+hataları bulmak için, hata kusur analizi gerçekleştireceğiz, değişim yönetimi yapacağız, konfigürasyon yönetimi yapacağız, eğitim vereceğiz kullanıcılara ve risk yönetimi yapacağız.
+
+379
+01:31:56,495 --> 01:32:01,535
+Bütün bunlar kaliteyi sağlamak için gerçekleştireceğimiz aktiviteler.
+
+380
+01:32:01,536 --> 01:32:06,496
+yazılım geliştirme sürecinde ne yapacağız?
+
+381
+01:32:11,859 --> 01:32:22,439
+geliştirme sürecinde, yani gereksinim analizinde, tasarımda, test sırasında ne yapmamız gerekiyor?
+
+382
+01:32:22,919 --> 01:32:37,780
+Gereksinim analizi aşamasında sistemin kolayca kullanılıp öğrenilmesi, öğrenilir olması, istenmeyen hallerin planlı olarak değiştirilmesine çaba gösterilmesi gerekecektir.
+
+383
+01:32:37,780 --> 01:32:58,499
+Yani sistemin ne olduğunu öğrenip analiz ederken daha bu sistemi nasıl daha kolay kullanıma açarım bunun çabası gösterilmelidir.
+
+384
+01:32:58,499 --> 01:33:17,119
+Modülleri ayırma, genel tasarım aşamasında ya da mimari tasarımda taşınabilirlik, bağlanabilirlik gibi özelliklere yani interoperability'ye önem vermemiz gerekiyor.
+
+385
+01:33:18,020 --> 01:33:22,559
+Modüllere daha verimli olarak modülleri belirlememiz gerekiyor.
+
+386
+01:33:22,559 --> 01:33:47,419
+ayrıntılı tasarımda doğruluk faktörüne ağırlık vererek her bir ayrıntılı tasarımdaki her bir modülde gerçekleştirdiğimiz algoritmalarda algoritmanın doğru çalışmasını hedeflememiz gerekiyor.
+
+387
+01:33:47,419 --> 01:34:07,419
+ayrıntılı tasarım sırasında doğruluk faktörünü benimsememiz gerekiyor. Peki test aşamasında ne yapacağız? Test aşamasında şimdi burada yazılım geliştirme sürecinin her bir adımın...
+
+388
+01:34:11,060 --> 01:34:22,079
+Gereksinim analizi, tasarım ve test adımlarını söylemiştik. Gereksinim analizi, tasarım, gerçekleştirme ve test adımları bizim esas adımlarımız demiştik.
+
+389
+01:34:22,079 --> 01:34:31,999
+Gereksinim analizinde sistemi anlarken öğrenilebilir olmasına çaba göstereceğiz.
+
+390
+01:34:31,999 --> 01:34:46,319
+ve tasarım sırasında modüllere ayırma sırasında birlikte çalışabilirliğe ve bağımsızlığa önem vereceğiz.
+
+391
+01:34:46,839 --> 01:34:52,879
+Ayrıntılı tasarımda gerçeklemede doğruluk faktörüne ağırlık vereceğiz.
+
+392
+01:34:52,879 --> 01:34:59,339
+Her bir modülün işini doğru yapması için algoritmayı doğru kuracağız.
+
+393
+01:34:59,339 --> 01:35:11,539
+test aşamasında ise doğruluk ve olduğunca performans gibi faktörlerin ölçümüne gayret etmemiz gerekiyor.
+
+394
+01:35:11,539 --> 01:35:29,659
+Şimdi bu kalite aşamasında gerçekleştirmemiz gereken aktiviteleri ve yazılım geliştirmedeki her bir adımı görmüş olduk.
+
+395
+01:35:29,659 --> 01:35:36,979
+Şimdi başka bir slide'a geçeceğim.
+
+396
+01:37:22,131 --> 01:37:43,131
+Yazılım Kalitesi ile ilişkili. Az önce tekrar yenilediğim için sorayım. Slaytları görebiliyor musunuz? Yazılım Kalite Maliyeti slaytını görebiliyor musunuz? Evet hocam.
+
+397
+01:37:43,131 --> 01:37:57,131
+Tamam, teşekkürler. Biz az önce kalite maliyetinden söz ettik. Bir diagramım vardı, onu size sözlü olarak söyledim ama o diagramı da görelim istedim.
+
+398
+01:37:57,131 --> 01:38:02,071
+satırlayın.
+
+399
+01:38:03,131 --> 01:38:08,871
+Yazılım geliştirme süreci ile hata bulma gideri ve hata bulma olasılığı ilişkisi
+
+400
+01:38:08,871 --> 01:38:19,451
+alttaki yazılım geliştirme sürecini gösteriyor.
+
+401
+01:38:19,451 --> 01:38:27,572
+diğer tarafta da bir tarafta hata bulma gideri bir tarafta da hata bulma olasılığı.
+
+402
+01:38:28,831 --> 01:38:35,172
+Yazılım geliştirme hata bulma giderimiz artıyor.
+
+403
+01:38:35,172 --> 01:38:38,371
+Daha fazla para harcamamız gerekiyor.
+
+404
+01:38:38,712 --> 01:38:43,451
+Daha fazla yazılımcı zamanı harcamamız gerekiyor.
+
+405
+01:38:43,451 --> 01:38:50,451
+süreç ilerledikçe de yine de hata bulma olasılığımız da düşüyoruz.
+
+406
+01:38:50,451 --> 01:38:57,932
+Bu yüzden bizim review aşamamız önemli.
+
+407
+01:38:59,172 --> 01:39:03,611
+Yazılım geliştirme bir süreç modeli kullanmamız önemli.
+
+408
+01:39:03,792 --> 01:39:05,891
+Bir standart kullanmamız önemli.
+
+409
+01:39:05,891 --> 01:39:23,091
+Bu kalite maliyeti, kaliteyi baştan sağlama, hatayı önleme maliyeti, sonradan sağlamaya çalışmanın hata bulma ve düzeltme maliyetinden az olur her zaman için.
+
+410
+01:39:23,091 --> 01:39:42,512
+ki biz yazılım kalite aktivitelerinde sırayla gösterdik. Standartları kullanma, verification gerçekleştirme, gözden geçirme, review yapma, formal bir süreç modeli kullanma.
+
+411
+01:39:42,511 --> 01:39:56,271
+Bunlar buradaki kaliteyi baştan sağlama aktiviteleri, hatayı önleme maliyeti, sonradan sağlamaya çalışmakta hata bulma ve düzeltme.
+
+412
+01:39:56,271 --> 01:40:04,971
+Yani test aşaması, test aşaması bırakmamak gerekiyor.
+
+413
+01:40:04,971 --> 01:40:20,231
+Tabii ki ilk bugünün başında anlattığım yazılım başında yapıyorsak zaten bunun ikisini de karıştırıyoruz test driving development ile.
+
+414
+01:40:20,231 --> 01:40:31,071
+yazılımdaki hataları düzeltme maliyeti gereksinim analizinde
+
+415
+01:40:35,891 --> 01:40:59,431
+daha azken, yani gereksinim analizinde 0.2 iken tasarımda 0.5, bilim testinde 2, kabul testinde artık müşteriye teslim ederken müşteri bir hata bulmuşsa 5, bakım aşamasında kullanıma alındıktan sonra çıkmışsa 20'dir.
+
+416
+01:40:59,431 --> 01:41:16,072
+O yüzden bakımın maliyetle olur. O aşamada hatayı düzeltme daha zor olacaktır. Tüm yazılımı anlama gerektirecektir çünkü.
+
+417
+01:41:16,072 --> 01:41:25,472
+hata önleme maliyeti dediğimiz zaman bunu biraz daha açalım.
+
+418
+01:41:25,472 --> 01:41:43,871
+Sadece standartları kullanma falan dedik formal yöntem kullanma biraz daha açarsak hatayı yazılımı geliştirirken oluşturduğumuz planlayacağız.
+
+419
+01:41:43,871 --> 01:41:52,171
+formal ve teknik gözden geçirme yani review, inspection bunların hepsini gerçekleştireceğiz.
+
+420
+01:41:53,311 --> 01:42:01,931
+Test, test driving development kullanırsak baştan itibaren küçük küçük testler yapacağız ve eğitim vereceğiz.
+
+421
+01:42:02,931 --> 01:42:11,891
+Kullanıcılara eğitim vereceğiz. Hem yazılım geliştiricilere kullanılan yazılım elemanlarıyla ilişkili eğitim vereceğiz.
+
+422
+01:42:13,871 --> 01:42:18,951
+Hata maliyeti dediğimizde bir iç maliyet var bir de dış maliyet var.
+
+423
+01:42:18,951 --> 01:42:22,411
+İç maliyet, iç hata maliyeti.
+
+424
+01:42:25,011 --> 01:42:34,031
+Almadan önce bir hata çıkarsa bu yazılım geliştirme ekibinin içinde halledilecek ve içinde fark edilecek.
+
+425
+01:42:34,031 --> 01:42:41,031
+dış hata maliyeti ise kullanımdan sonra kullanıcıya yansıyan hata
+
+426
+01:42:46,996 --> 01:43:07,115
+Bir de kullanıcının güvenini de kaybetmiş olacağımız için daha maliyetli olacaktır bizim için. Yani iç hata maliyeti, dış hata maliyeti kullanımdan önce müşteriyle karşılaşmıyor.
+
+427
+01:43:07,115 --> 01:43:19,135
+Biz bu hatayı düzeltiyoruz. En azından bir müşterinin güvenini kaybetme işi çıkmıyor.
+
+428
+01:43:19,135 --> 01:43:42,795
+Bir de şöyle bir şekil var. Kalite maliyet modeliyle ilişkili. Geliştirme ve yazılım sağlama birimleri, yönetim kalite maliyeti, yani kalite kontrol işlemlerini nasıl gerçekleştireceğiz?
+
+429
+01:43:42,795 --> 01:43:47,836
+Bunları da iç hata ve dış hata maliyeti diye ayırıyoruz.
+
+430
+01:43:47,975 --> 01:43:52,015
+Ama bu çok fazla ekonomi işine giriyor.
+
+431
+01:43:52,195 --> 01:43:54,475
+Bunu sadece bilgi olsun diye gösterdim.
+
+432
+01:43:54,475 --> 01:44:03,576
+Şimdi kalite sağlamak için gerçekleştirdiğimiz etki.
+
+433
+01:44:05,396 --> 01:44:09,635
+Birincisi standartları kullanmak demiştik.
+
+434
+01:44:09,635 --> 01:44:13,515
+yazılım mühendisliği standartları dediğimizde
+
+435
+01:44:18,515 --> 01:44:20,976
+bana söyleyebilir misiniz birkaç tane?
+
+436
+01:44:24,787 --> 01:44:28,107
+yazılım standardı
+
+437
+01:44:33,844 --> 01:44:39,563
+yazılım standardı için örnek verecek olan var mı?
+
+438
+01:45:09,492 --> 01:45:10,791
+ISO olabilir mi hocam?
+
+439
+01:45:11,011 --> 01:45:12,771
+Evet, evet. Başka?
+
+440
+01:45:18,579 --> 01:45:45,819
+Evet, CMMI'de şey, yazılım, iyileştirme, etkinleştirme yeteneklerinin, olgunluğunun arttırılması modeli. Başka, işte network standartları filanda var içinde mesela. Başka, geliyor mu?
+
+441
+01:45:48,579 --> 01:45:50,699
+Evet, IEEE.
+
+442
+01:45:51,699 --> 01:46:01,980
+IEEE, uluslararası elektrik, elektronik standartları.
+
+443
+01:46:04,980 --> 01:46:17,660
+Burada işte yazılımın geliştirilme adımlarının her bir aşaması var.
+
+444
+01:46:18,579 --> 01:46:36,380
+PMI biraz şey, PMI yazılım değil sadece, bütün proje management institute, tüm proje yönetimi için standartlar içeriyor.
+
+445
+01:46:36,379 --> 01:46:50,399
+Genel olarak yazılım standartlarını ISO, IEEE ve diğer standartları sayabiliriz arkadaşlarımızın söylediği.
+
+446
+01:46:50,399 --> 01:47:04,779
+Şimdi standartları tekrar gözden geçirelim.
+
+447
+01:47:04,779 --> 01:47:08,779
+Evet size bir şey vermek istedim.
+
+448
+01:47:26,228 --> 01:47:27,507
+görebiliyorsunuz değil mi?
+
+449
+01:47:27,507 --> 01:47:28,507
+Evet.
+
+450
+01:47:35,220 --> 01:47:37,519
+Slide'de görüyorsunuz değil mi? Evet hocam.
+
+451
+01:47:37,979 --> 01:47:38,419
+Evet hocam.
+
+452
+01:47:38,419 --> 01:47:41,439
+Tamam. Artık evham oldum göremiyorsanız diye.
+
+453
+01:47:42,519 --> 01:47:50,339
+Şimdi, yazılım mühendisliği standartları yazılım geliştirme aşamasına, kaynağına, değerlendirme ölçü tipine göre sınıflandırılır.
+
+454
+01:47:50,339 --> 01:48:11,839
+Yani mesela yazılım geliştirme sürecinde işte proje plan standardı, gereksinim standardı, tasarım spesifikasyonu standardı gibi tipleri olduğu gibi bir de kaynağına göre sınıflandırılır.
+
+455
+01:48:11,839 --> 01:48:30,940
+Yani kim hazırlamış bu standardı? Uluslararası mı, ulusal mı? İşte ulusal örneğin Türk Standartlar Enstitüsü'nün standardı olabilir. IEEE standardı dediğimiz zaman IEEE tarafından geliştirilmiş standart deriz.
+
+456
+01:48:30,939 --> 01:48:43,979
+ISO Uluslararası Standartlar Organizasyonu tarafından geliştirilmiş standarttır deriz. Bu şekilde standartları sınıflandırabiliyoruz.
+
+457
+01:48:43,980 --> 01:49:12,980
+Yazılım geliştirme aşamasına göre az önce söylediğim gibi proje yönetimi, gereksinim tanımı, yani yazılım proje gereksinim standartı, tasarım design specification standart, kodlama, konfigürasyon yönetimi, konfigürasyon planı,
+
+458
+01:49:13,979 --> 01:49:18,439
+gibi standartlar.
+
+459
+01:49:34,355 --> 01:49:44,415
+yazılım geliştirme süreci içinde bir standartları kullanmamız gerekiyor.
+
+460
+01:49:45,955 --> 01:49:54,935
+Ve biz burada bir de kalite yönetim aktivitelerinde geçerleme ve doğrulamayı da oluşturalım demiştik.
+
+461
+01:49:54,935 --> 01:50:24,196
+yani geçerleme ve doğrulamada statik ve dinamik yazılım değerlendirmesini sağlamak, gözden geçirme tipinin belirlenmesi, gözden geçirme ve doğrulama arasındaki farklılıklar, yazılım sistemi dediğimizde bu kalite yapısını da kim oluşturacak?
+
+462
+01:50:24,935 --> 01:50:28,615
+Bunun hakkında da bilgi verebiliyoruz.
+
+463
+01:50:28,695 --> 01:50:29,995
+Kalite yönetim sistemi.
+
+464
+01:50:31,335 --> 01:50:38,896
+İşte bu standartlar genel olarak ISO 9126, DOD.
+
+465
+01:50:38,896 --> 01:50:42,115
+DOD'de az önce ismini vermemiştim.
+
+466
+01:50:43,875 --> 01:50:50,695
+Department of Defense, Amerikan Savunma Kaynaklı Standartlar.
+
+467
+01:50:50,695 --> 01:51:08,735
+Bir kurumda kalite yönetim sistemi önce oluşturulurken biri ya da birden fazlası baz alınarak kurumun kalite yönetim sistemi oluşturuluyor.
+
+468
+01:51:09,395 --> 01:51:18,575
+Bir kalite el kitabı oluşturuluyor ve kurumun standartları nelerdir, kalite kontrolleri nelerdir bu oluşturuluyor.
+
+469
+01:51:18,576 --> 01:51:32,236
+Bundan sonra bu kurumda geliştirilen her bir projede bu standartlar ve kalite kontrolları temel alınıyor.
+
+470
+01:51:32,235 --> 01:51:49,175
+ve bu her bir projede standartlara ek olarak başka standartlarda kullanacak mıyız? Bunu belirlememiz gerekiyor.
+
+471
+01:51:49,175 --> 01:52:05,475
+ve kalite güvencesi oluşturduğumuzda yazılım kalite yönetimi sırasında
+
+472
+01:52:09,716 --> 01:52:14,656
+Yazılım Kalite Yönetiminde neler yer alıyor?
+
+473
+01:52:18,676 --> 01:52:47,735
+standartı kullanacağız, hangi geliştirme süreç modelini kullanacağız, hangi ölçüm yöntemini kullanacağız, yani neleri ölçeceğiz, nasıl ölçeceğiz, konfigürasyon yönetimini ne şekilde yapacağız, doğrulama geçerli için neler gerçekleştireceğiz, kaliteyi güvence altına almak, standartları kullanmakla da eş anlamlı.
+
+474
+01:52:48,676 --> 01:53:18,375
+ve bütün bunlar, bütün bu kalite yönetimi bize kaliteyi güvence altına alın, yüksek kalitede ürünümüzü geliştirme ve ölçüm ile kalite derecesini belirleme ve daha sonra kullanılacak, gerçekleştirilecek projelere de temel oluşturma tahmin için işine yarayacak.
+
+475
+01:53:18,676 --> 01:53:34,195
+yazılım geliştirme sürecinde kaliteyi yükseltmek için de yine az önce bunları görmüştük.
+
+476
+01:53:34,195 --> 01:53:45,036
+Geliştirme sürecinde kaliteyi yükseltmek için de gereksin manazinde tasarımda, ayrıntılı tasarımda yapacağımız işlemler var.
+
+477
+01:53:45,036 --> 01:54:14,356
+kaliteyi belirlemek için de doğrudan objektif kalite ölçütleri kullanmak, makyiple karmaşıklığı ölçmek, high stat ile işlem sayısını yorumlamak ve dolaylı ölçütlerden de
+
+478
+01:54:14,356 --> 01:54:27,015
+yine faydalanmak ve yazılım uzman olan yazılımcılarla da bunu tartışmak yoluna gidilebilir.
+
+479
+01:54:29,015 --> 01:54:33,756
+Şimdi bir ara verelim yine 10 dakika.
+
+480
+01:54:41,300 --> 01:54:48,300
+daha sonra gözden geçirme kavramlarını göreceğiz.
+
+481
+01:55:06,899 --> 01:55:12,199
+Evet, 10 dakika ara veriyorum. 10 dakika sonra tekrar derse başlıyoruz.
+
+482
+01:55:17,876 --> 01:55:19,075
+Partiz duydu değil mi?
+
+483
+01:55:20,635 --> 01:55:21,235
+Evet hocam.
+
+484
+01:55:21,616 --> 01:55:25,836
+Tamamdır. 10 dakika sonra devam ediyoruz.
+
+485
+02:00:00,404 --> 02:00:01,644
+kullanıcı,
+
+486
+02:05:55,475 --> 02:06:02,475
+kullanıcı, ekleyin, tüm
+
+487
+02:06:11,764 --> 02:06:12,884
+bir şey.
+
+488
+02:06:47,699 --> 02:06:48,699
+var mı istedim?
+
+489
+02:06:48,699 --> 02:06:49,699
+Sağ ol.
+
+490
+02:06:49,699 --> 02:06:51,699
+Şerine, su almak falan var.
+
+491
+02:06:51,699 --> 02:06:52,699
+Var var.
+
+492
+02:06:54,699 --> 02:06:56,699
+Aa, yumurtta yok.
+
+493
+02:06:57,699 --> 02:06:58,699
+Aa, evet.
+
+494
+02:06:58,699 --> 02:06:59,699
+Evet.
+
+495
+02:07:01,699 --> 02:07:02,699
+Devam etsin mi?
+
+496
+02:07:02,699 --> 02:07:03,699
+Hı hı.
+
+497
+02:07:03,699 --> 02:07:04,699
+Evet.
+
+498
+02:08:41,716 --> 02:08:43,076
+Evet, arayı tamamladık.
+
+499
+02:08:46,076 --> 02:09:03,595
+Şimdi yazılım kalitesinin sağlanması aktivitelerinden standartlardan sonra, standartları kullanarak sonra yapmamız gereken gözden geçirme ve onaylama aşaması üzerinde duracağız.
+
+500
+02:09:10,515 --> 02:09:28,335
+hata önleme işlemleri olarak gözden geçirme, standartları kullanma ve formal bir yazılım geliştirme süreç modelini kullanma yer alıyordu.
+
+501
+02:09:31,395 --> 02:09:34,335
+Standartlar üzerinde durduk.
+
+502
+02:09:34,936 --> 02:09:39,255
+Yazılım geliştirme süreç modelleri üzerinde durduk.
+
+503
+02:09:39,255 --> 02:09:44,716
+şimdi gözden geçirme ve onaylama üzerinde duruyoruz.
+
+504
+02:09:51,891 --> 02:09:57,332
+Tekrar sorayım. Slide'ı görebiliyor musunuz? Sesim duyuluyor mu?
+
+505
+02:09:59,311 --> 02:10:00,312
+Görebiliyoruz hocam.
+
+506
+02:10:00,732 --> 02:10:00,951
+Tamam.
+
+507
+02:10:02,871 --> 02:10:05,571
+Gözden geçirme ve onaylama nedir?
+
+508
+02:10:06,951 --> 02:10:08,091
+Yazılım geliştirme şartı.
+
+509
+02:10:09,931 --> 02:10:20,431
+Her bir basamak tamamlanınca durak noktalarında yapılan işler gözden geçirilmekte ve geliştirilmektedir.
+
+510
+02:10:20,431 --> 02:10:27,371
+Bu bizim en temel waterfall aşamasında bu şekildeydi.
+
+511
+02:10:27,471 --> 02:10:28,371
+Adım tamamlan.
+
+512
+02:10:29,771 --> 02:10:31,851
+Gözden geçirme ve onaylama.
+
+513
+02:10:31,851 --> 02:10:53,391
+waterfall dışındaki modellerde de her dönemin bitmesini beklemeden daha sık aralıklarla gözden geçirme, durak noktalarını belirleyip buralarda gözden geçirme yapma şeklinde devam ediyor.
+
+514
+02:10:53,391 --> 02:10:58,612
+gözden geçirme bir eleme niteliğindedir.
+
+515
+02:10:59,512 --> 02:11:05,572
+Hata ve eksiklerin zamanında bulunup giderilmesini sağlamaktadır.
+
+516
+02:11:06,531 --> 02:11:20,311
+Böylece hata bulma gideri daha düşük olur, daha sık aralıklarla gözden geçirme yaparsak,
+
+517
+02:11:20,311 --> 02:11:25,031
+hata bulma olasılığı da daha fazla olmuş olacak.
+
+518
+02:11:25,531 --> 02:11:34,311
+Örneğin yazılım geliştirmedeki hataların %65'i tasarım aşamasında yapılmakta.
+
+519
+02:11:37,711 --> 02:11:44,051
+Gözden geçirme sırasında bu hataların da %75'i bulunup düzeltilmektedir.
+
+520
+02:11:44,051 --> 02:11:48,751
+İşte buradan bulunamadan çıkan hatalar da
+
+521
+02:11:48,751 --> 02:11:53,531
+Sırasında
+
+522
+02:11:53,531 --> 02:11:57,231
+Düzeltilebilir. O zaman
+
+523
+02:11:57,231 --> 02:12:12,071
+Daha az maliyetle düzeltilir. Ama test sırasında düzeltilirse bu katlanarak artar.
+
+524
+02:12:12,071 --> 02:12:19,111
+İşte bu katlanarak artma konusunda burada bir takım sayılar verdim önemini görmeniz için.
+
+525
+02:12:22,963 --> 02:12:30,203
+kaynaklarda benzer sayılar görülebilir.
+
+526
+02:12:37,492 --> 02:13:06,492
+Gözden geçirme ne amaçla yapılıyor? Gözden geçirme yazılımda işlevsel, mantıksal hatalar varsa, kodlama dili hatalı kullanılmışsa, bunların hepsinin düzeltilmesi, bulunması anlamındadır.
+
+527
+02:13:07,492 --> 02:13:19,372
+test, pardon, yazılımın gereksinimlere uygun olarak düzenlendiği onaylanır her adımda.
+
+528
+02:13:21,372 --> 02:13:24,852
+Belirlenen standartlara uygun gidiyor muyuz?
+
+529
+02:13:25,091 --> 02:13:30,572
+Mesela bir gereksinim spesifikasyonu belgesi hazırlanıyor.
+
+530
+02:13:30,571 --> 02:13:46,791
+IEEE'nin gereksinim spesifikasyon belgesi formuna yani SRS'e, SRS standartına uygun raporlanmış mı ona bakılıyor.
+
+531
+02:13:49,172 --> 02:13:56,511
+Yazılımın önceden belirlenen standartlara uygun kodlanıp kodlanmadığı, kodlama dili standartlarına.
+
+532
+02:13:56,511 --> 02:14:12,911
+Böylece proje yönetimi de kolaylaştırılmış oluyor. Müşteriye dağıtılacak olan ürün dökümanları da daha kaliteyle hazırlanmış oluyor gözden geçirme vasıtasıyla.
+
+533
+02:14:12,911 --> 02:14:17,751
+Gözden geçirme review nedir?
+
+534
+02:14:17,751 --> 02:14:20,711
+Buna bakalım.
+
+535
+02:14:20,711 --> 02:14:30,551
+Teknik uzmanların çalışmalarının teknik uzmanlar tarafından değerlendirildiği bir toplantı.
+
+536
+02:14:30,911 --> 02:14:33,351
+Bu şeklinde de olabilir.
+
+537
+02:14:34,271 --> 02:14:40,691
+Belgeler verilir, bu belgeler incelenerek gözden geçirme raporları hazırlanır.
+
+538
+02:14:40,691 --> 02:14:41,991
+Bu şekildedir.
+
+539
+02:14:41,992 --> 02:14:52,111
+Yani yazılım mühendisliği sürecinde yaratılan ürünlerin teknik değerlendirilmesidir.
+
+540
+02:14:52,111 --> 02:15:00,072
+Ve ilk başta da gördüğümüz gibi yazılım kalitesi sağlama aktivitesidir.
+
+541
+02:15:00,251 --> 02:15:02,691
+Aynı zamanda da bir eğitim ortamıdır.
+
+542
+02:15:02,831 --> 02:15:11,751
+Çünkü programın kodunu yazan hatasını anlamış olur zamanında söylendiğinde.
+
+543
+02:15:11,992 --> 02:15:18,992
+ya da algoritmayı hazırlayan, tasarımı yapan hatasını anlayacaktır.
+
+544
+02:15:20,072 --> 02:15:25,232
+Bir de gözden geçirme ne değildir diye bakalım.
+
+545
+02:15:27,171 --> 02:15:28,812
+Gözden geçirme ne değildir?
+
+546
+02:15:28,812 --> 02:15:31,812
+Bir proje özeti ya da...
+
+547
+02:15:36,372 --> 02:15:49,292
+yazılım geliştirici çıkıp yazılımı her noktada geliştirdiğini uzun uzun anlatmaz bir proje özeti ifadesi değildir.
+
+548
+02:15:50,131 --> 02:15:56,671
+Yazılım geliştirme ekibinin değerlendirmesi de değildir.
+
+549
+02:15:56,671 --> 02:16:01,111
+Sadece bilgi verme toplantısı da değildir.
+
+550
+02:16:01,111 --> 02:16:20,232
+teknik olarak hazırlanan işin gözden geçirildiği, kurallara göre değerlendirildiği ve hataların net olarak belirtildiği bir toplantı ya da bunun için gerçekleştirilen inceleme,
+
+551
+02:16:20,232 --> 02:16:33,471
+yani incelemede raporların gözden geçirildiği ve hata raporu olarak sunulduğu bir kullanmadır.
+
+552
+02:16:34,831 --> 02:16:42,111
+Gözden geçirme toplantısı yapılıyorsa, gözden geçirme toplantısında gözden geçirme lideri ya da görevlisi,
+
+553
+02:16:42,111 --> 02:16:50,471
+kullanıcıların temsilcisi, kalite güvence ekibinden standartlara uygun olduğunu kontrol eden birinin,
+
+554
+02:16:50,471 --> 02:17:04,391
+işte bir kayıt yapanın bir de üretici yani yazılım geliştirici ekibinden birisi bulunur ve anında orada gözden geçirme işlemi gerçekleştirilir.
+
+555
+02:17:04,391 --> 02:17:17,051
+Burada yazılımın büyüklüğüne göre bu ekipteki roller azalır ya da çoğalabilir.
+
+556
+02:17:17,971 --> 02:17:34,191
+Yani genellikle bunların bulunması idealidir ama mesela küçük bir yazılım evi için, küçük bir yazılım geliştirme grubu için bir kalite güvence ekibi ayrıca bulunmayabilir.
+
+557
+02:17:34,391 --> 02:17:39,291
+belirlenen standartları ekip kendi içinde gözden geçirecektir.
+
+558
+02:17:40,731 --> 02:17:45,011
+Gözden geçirme lideri görevlisi olmayabilir.
+
+559
+02:17:45,011 --> 02:17:54,351
+Bir kullanıcı temsilcisi, bir kendi içlerinden belirtilen kayıtçı ve üretici de, yani yazılım geliştirici de olabilir.
+
+560
+02:17:54,351 --> 02:18:06,851
+Gözden geçirme ve inceleme tipleri nelerdir?
+
+561
+02:18:07,631 --> 02:18:12,271
+Gözden geçirme formal olmayan informal review.
+
+562
+02:18:12,411 --> 02:18:18,691
+Yani review dediğimizde esas bu ilk adımı anlıyoruz gözden geçirme tiplerinde.
+
+563
+02:18:20,071 --> 02:18:22,111
+Yapısal denetim walkthrough olabilir.
+
+564
+02:18:22,111 --> 02:18:33,571
+bir de inspection olabilir, bir de bu incelemenin özel bir hali olan Round Robin Peer Review olarak isimlendiren bir gözden geçirme.
+
+565
+02:18:36,931 --> 02:18:43,611
+İnceleme ve review arasındaki ve bunların arasındaki geçiş hali olan Walkthrough.
+
+566
+02:18:47,092 --> 02:18:51,592
+Farklılıkları görelim.
+
+567
+02:19:05,043 --> 02:19:12,043
+Gözden geçirme review matrisi, gözden geçirme walkthrough ve inspection.
+
+568
+02:19:15,924 --> 02:19:23,404
+Gözden geçirme lideri, formal olmayan gözden geçirmede yoktur.
+
+569
+02:19:23,404 --> 02:19:24,224
+Walk through.
+
+570
+02:19:26,003 --> 02:19:34,463
+Toplantı takvimi belki olabilir gözden geçirmede ama walkthrough'da ve inspection'da mutlaka vardır.
+
+571
+02:19:35,883 --> 02:19:43,143
+Gözden geçirenler mutlaka gözden geçirme grubunda olacaklar.
+
+572
+02:19:43,143 --> 02:19:55,144
+Walkthrough'da mutlaka bir ön hazırlık gerçekleştirirler. Burada belki gerçekleştirirler. Yazılımcı sunum yapar.
+
+573
+02:19:56,823 --> 02:20:07,284
+Belki olabilir. Walkthrough'da bu çünkü tüm adımların gözden geçirmesi olduğu için sunum yapar.
+
+574
+02:20:07,284 --> 02:20:24,184
+Inspection'da yoktur. Inspection'da çünkü daha çok bu incelemeyi yapanlar raporlar üzerinde gerçekleştirirler yapacakları incelemeyi.
+
+575
+02:20:24,184 --> 02:20:46,184
+hataları bulmak için bir checklist yani sonucunda işte her bir aşamadan geçerken uyuyor mu, şu maddeyi sağlıyor mu gibi bir checklist oluşturulur inspection'da ama gözden geçerken.
+
+576
+02:20:46,183 --> 02:20:53,203
+bulunan hatalarda bir sınıflama var mı? Yani şu tip hatalar, şu kadar sayı, şu tip hatalar.
+
+577
+02:20:53,723 --> 02:20:55,223
+Inspection'da bu da vardır.
+
+578
+02:20:58,363 --> 02:21:01,023
+Walkthrough'da yoktur. Kayıtçı not alıyor mu?
+
+579
+02:21:02,143 --> 02:21:04,223
+Kayıtçı ayrıca not alıyor.
+
+580
+02:21:07,983 --> 02:21:11,143
+Belki yani burada zaten görüyorsunuz.
+
+581
+02:21:11,263 --> 02:21:13,603
+Gözden geçirme çok formal değil.
+
+582
+02:21:13,604 --> 02:21:15,843
+çok böyle kurallı.
+
+583
+02:21:18,324 --> 02:21:34,804
+Hata hızlıca bakıp hata toplantı sırasında daha yazılım ürün ya da yarı ürünlerini bakıp hata var mı? Hatayı not almak.
+
+584
+02:21:34,803 --> 02:21:45,983
+sınıflandırmak, özel bir kayıtçının not alması bunlar belki bazıları belki var bazıları yok.
+
+585
+02:21:48,723 --> 02:22:04,183
+Farklılıkları görüyoruz ve her inspection gerçekleştirmiyoruz ama gözden geçirmeyi
+
+586
+02:22:04,183 --> 02:22:09,383
+daha çok gerçekleştiriyoruz.
+
+587
+02:22:18,739 --> 02:22:22,319
+sorunuz var mı? Gözden geçirme konusunda sorunuz var mı?
+
+588
+02:22:28,180 --> 02:22:31,599
+Gözden geçirme, inspection, walkthrough
+
+589
+02:22:31,599 --> 02:22:36,839
+Bu kavramlarla ilgili sorunuz
+
+590
+02:22:44,404 --> 02:22:46,463
+çok anladığım kadarıyla
+
+591
+02:22:50,708 --> 02:22:51,708
+Evet.
+
+592
+02:22:55,476 --> 02:22:57,476
+küçük projelerde
+
+593
+02:23:00,724 --> 02:23:07,184
+ve düzeltme işlemi doğrudan yazılımı geliştiren tarafından da
+
+594
+02:23:07,184 --> 02:23:11,024
+eksikliklerin
+
+595
+02:23:11,024 --> 02:23:16,523
+üçüncü kişi tarafından daha kolay ve daha duyarlı biçimde görülmesi
+
+596
+02:23:16,523 --> 02:23:20,523
+olduğundan
+
+597
+02:23:20,523 --> 02:23:25,963
+üçüncü bir göz tarafından yapılması daha
+
+598
+02:23:25,963 --> 02:23:27,644
+doğrudur.
+
+599
+02:23:27,644 --> 02:23:40,543
+kendisi aynı hatayı tekrarlayacağı için bu yola pek gidilmemesi istenecektir.
+
+600
+02:23:40,543 --> 02:23:42,863
+Peki bir de şuna bakalım.
+
+601
+02:23:50,548 --> 02:24:01,548
+gözden geçirme ve onaylama ne zamanlarda genelde yapılmalı?
+
+602
+02:24:04,691 --> 02:24:17,911
+Yazılım geliştirme süreci, genel durak noktaları, milestone'lar gözden geçirme içinde kullanılabilir.
+
+603
+02:24:21,043 --> 02:24:28,543
+daha büyük bir proje ise daha sık aralıklarla bölünmeli diyebiliriz.
+
+604
+02:24:28,543 --> 02:24:48,623
+analizi bittiğinde, yazılım geliştirme planı tamamlandığında, gereksinim analizi tamamlandığında, kodlama tamamlandığında, test tamamlandığında ve bakım onarım işlemi
+
+605
+02:24:48,623 --> 02:24:50,824
+Sonunda
+
+606
+02:24:56,180 --> 02:24:59,180
+gözden geçirme gerçekleştirilir.
+
+607
+02:25:01,180 --> 02:25:09,180
+Peki bakalım gözden geçirme ve onaylama basamaklarının her birinde neler yapılıyor?
+
+608
+02:25:10,640 --> 02:25:12,119
+Neler gözden geçiriliyor?
+
+609
+02:25:17,747 --> 02:25:29,747
+sistem analizi spesifikasyonların yazılıma ilişkin işlev ve görevler olarak dağıtımının doğruluğu
+
+610
+02:25:33,620 --> 02:25:59,620
+özellikle ana işlevler, ara birimler, performanslarının tanımları, alternatifler arasındaki seçimlerin tutarlığı, teknolojik bakımdan yapılan sistemin test edilme esasları, sistem üyeleri arasındaki uyumluluğu,
+
+611
+02:25:59,620 --> 02:26:08,099
+Yani sistem analizi aşamasında, analiz aşamasında ne yapıyoruz?
+
+612
+02:26:12,147 --> 02:26:30,867
+ara birimleri nelerdir alt sistemler arasında? Bunu anlamaya çalışıyoruz. Performans ve tasarım kısıtları var mı sistemde?
+
+613
+02:26:32,915 --> 02:27:01,915
+anlayınca bu sistemdeki problemi çözmek için hangi alternatif çözümleri kullanacağız? Bunları seçtiğimiz zaman tutarsızlıklar var mı? Bunlara bakıyoruz. Ve teknolojik olarak incelediğimiz sistemi teknik olarak feasible olmayan bir yapı var mı? Yani yapı...
+
+614
+02:27:03,987 --> 02:27:28,828
+açısından değerlendirme yapıyoruz. Bunların sistem analizi sırada yapması gerekiyor. Sistemi doğru anlamaya çalışacağız. Sistemin ne iş yaptığını anlamaya çalışacağız. Bunları doğru anladık mı diye gözden geçireceğiz. Doğru anladık mı diye kiminle gözden geçirme yapacağız? Kullanıcılarla.
+
+615
+02:27:28,828 --> 02:27:35,147
+kullanıcılara işte bir kontekst veri akış diagramı çizeceğiz.
+
+616
+02:27:35,807 --> 02:27:38,528
+Birinci düzey veri akış diagramı çizeceğiz.
+
+617
+02:27:38,528 --> 02:27:44,008
+Gidip yanlarına bunu biz doğru anladık mı böyle mi çalışıyor hakikaten sisteminiz?
+
+618
+02:27:45,208 --> 02:27:48,328
+Bunu onaylatmaya çalışacağız.
+
+619
+02:27:49,147 --> 02:27:50,848
+Peki yazılım geliştirme planı mı?
+
+620
+02:27:51,547 --> 02:27:54,388
+Bunun gözden geçirilmesi.
+
+621
+02:27:54,387 --> 02:28:09,307
+projenin gerçekleşmesi bu planı sırasındaki risklere bakacağız yazılım geliştirme planında.
+
+622
+02:28:09,307 --> 02:28:23,348
+Bu amaçla yazılım sorununu doğru tanımladık mı? Terimleri doğru belirttik mi? Kaynakların yeterliliği ve sağlamalisi doğru mu?
+
+623
+02:28:24,388 --> 02:28:31,388
+Yani bu kaynakları sağlayabilecek miyiz hakikaten? Görevler uygun mu?
+
+624
+02:28:34,675 --> 02:29:00,936
+gider ve zamanlama tahminleri tutarlı mı? Bunları gözden geçireceğiz. Gereksinim analizinde ne yapacağız? Gereksinim analizinde sistem düzeyindeki bağlılık ve doğruluk üzerinde duracağız.
+
+625
+02:29:04,675 --> 02:29:22,675
+Bu bölümlere uygun mu gereksinim spesifikasyonumuz? Doğru analizi tutarlı ve doğru mu? Sorunu doğru bölümlere ayırmış mı?
+
+626
+02:29:22,675 --> 02:29:27,675
+sistem düzeyinde tutarlı mı?
+
+627
+02:29:34,644 --> 02:29:52,963
+gereksinimleri biz fonksiyonel ve fonksiyonel olmayan diye ayırıyorduk. Özellikle fonksiyonel olmayan sistem tanımı içinde, işletim sistemi çerçevesinde yapılabilecek şeyler mi?
+
+628
+02:29:52,963 --> 02:30:03,863
+firma veya kullanıcı oluşturulan prototip üzerinde görüş ve onay sağlıyor mu?
+
+629
+02:30:05,863 --> 02:30:10,083
+Bunları gözden geçireceğiz.
+
+630
+02:30:10,083 --> 02:30:22,903
+Ve gereksinimlerin zamanlama, kaynak, bütçe bakımında gerçekleştirilip gerçekleştirilmeyeceği üzerinde duracağız.
+
+631
+02:30:22,963 --> 02:30:38,724
+Bundan sonraki aşamalarda basamaklara baktığımızda tasarım üzerinde duralım. Tasarım aşamasında neye bakılacak?
+
+632
+02:30:38,724 --> 02:30:53,504
+tasarım aşamasında bir defa genel tasarımda gereksinim analizinde yaptığımız iş tanımlamaları ve alt sistem tanımlamaları.
+
+633
+02:30:56,819 --> 02:31:08,419
+Bu tasarımda doğru belirtilen kaynaklarla sağlanabilecek şekilde planlanmış mı?
+
+634
+02:31:08,419 --> 02:31:12,939
+Biz tasarımda, klasik tasarımda ne yapıyorduk?
+
+635
+02:31:14,319 --> 02:31:15,879
+Yapı diagramı yapıyorduk.
+
+636
+02:31:16,059 --> 02:31:20,459
+Modülleri hiyerarşik olarak sıralıyorduk.
+
+637
+02:31:20,459 --> 02:31:34,299
+Ve bu acaba modüller, modül hiyerarşisi doğru mu? Doğru çalışır mı? Bunu inceliyorduk.
+
+638
+02:31:34,299 --> 02:31:48,379
+Özellikle tasarım sırasında kullanıcının değil, yazılım mühendisi, yazılım tasarımını yapan uzmanlar tarafında gözden geçirilmesi gerekir.
+
+639
+02:31:48,379 --> 02:31:52,499
+ve modül bağımsızlığı sağlanıyor mu?
+
+640
+02:31:52,599 --> 02:31:55,139
+Modüller arasındaki geçişler doğru mu?
+
+641
+02:31:56,079 --> 02:32:10,379
+Modüllerde birbiriyle ilişkilendirme ve modülün iç bağımsızlığını sağlayacak şekilde mi bir yapılandırma olmuş?
+
+642
+02:32:10,899 --> 02:32:13,899
+Yapı diagramlarını buna göre incelememiz.
+
+643
+02:32:13,900 --> 02:32:32,099
+Ayrıca ayrıntılı tasarım sırasında da algoritma işlevleri doğru yerine getirecek şekilde sonuçlar doğru olacak şekilde tasarlanmış mı?
+
+644
+02:32:32,099 --> 02:32:36,580
+Bunu kontrol ediyoruz tasarım sırasında.
+
+645
+02:32:36,579 --> 02:32:45,519
+tasarımı gördüğünüz gibi genel tasarım ve ayrıntılı tasarım olarak iki hedefte inceledik.
+
+646
+02:32:46,319 --> 02:32:50,539
+Genel tasarımın doğruluğu özellikle modüllerin belirlenmesi.
+
+647
+02:32:50,539 --> 02:33:00,879
+Nesneye yönelik çalıştığımızda da özellikle nesne hiyerarşisi, sınıf diagramları doğru oluşturulmuş mu,
+
+648
+02:33:00,879 --> 02:33:09,439
+Kavramsal sınıf diagramı değil de tasarım yapılandırılmış mı buna bakacağız.
+
+649
+02:33:09,439 --> 02:33:38,859
+Ayrıca genel tasarım sırasında bizim sınıfların gerçekleştirdiği fonksiyonlar arasında ve bu fonksiyonların tetiklenmesi mesajlar anlamında doğru ilişkilendirilmiş mi?
+
+650
+02:33:39,439 --> 02:33:41,639
+Bunlara bakmamız gerekiyor.
+
+651
+02:33:41,639 --> 02:34:10,819
+Yani bir anlamda tasarım için çizilen yapı diagramları klasik yaklaşımda, nesneye yönelik yaklaşımda da tasarım için hazırlanmış olan tasarım sınıf diagramları ve etkileşim takip edilerek doğru çalıştırılıyor mu buna bakmak gerekiyor.
+
+652
+02:34:10,819 --> 02:34:29,620
+Kodlama aşamasında tasarımda belirtilenler seçilen kodlama diliyle doğru hazırlanmış mı? Bunu kontrol etmek gerekiyor.
+
+653
+02:34:29,619 --> 02:34:42,259
+Baktığımızda yazılım tasarımı basamağına veri yapıları, program yapısı ve işlemler ele alınıyor.
+
+654
+02:34:42,859 --> 02:34:46,619
+Önce ön tasarım sonra da ayrıntılı tasarım gözden geçiriliyor.
+
+655
+02:34:47,319 --> 02:34:53,379
+Ön tasarımın incelenmesinde gereksinimler tasarıma doğru dönüştürülmüş mü?
+
+656
+02:34:53,775 --> 02:35:05,435
+yazılım mimarisi doğru oluşturulmuş mu? Genellikle gereksinimler yazılım mimarisine doğru yansıtılmış mı?
+
+657
+02:35:05,435 --> 02:35:19,015
+Ve modüller etken mi? İşlevsel olarak bağımsız mı? Bunu az önce de söylemiştim sözlü olarak. Program yapısı buna uygun mu? Bu inceleniyor.
+
+658
+02:35:19,015 --> 02:35:37,496
+Ayrıntılı tasarımda da daha çok artık modüllerin algoritma tasarımı yani her modülün kendi iç yapısında gerçekleştirilen işlemler doğru yapılandırılmış mı?
+
+659
+02:35:38,036 --> 02:35:39,015
+Bunlara bakılıyor.
+
+660
+02:35:39,755 --> 02:35:44,895
+Algoritma hatası var mı ayrıntılı tasarımda?
+
+661
+02:35:44,895 --> 02:36:03,875
+Buraya baktığınızda kodlama sırasında da tasarım koda dönüştürülürken hem programlama diline hem de tasarıma uygun kodlanmış mı?
+
+662
+02:36:03,875 --> 02:36:05,835
+programlama dilin
+
+663
+02:36:05,835 --> 02:36:12,475
+algoritmaya uygun
+
+664
+02:36:12,475 --> 02:36:15,975
+kodlanmış mı? O gözden geçirilecek.
+
+665
+02:36:16,375 --> 02:36:20,115
+Test sırasında da bütün test işlemleri
+
+666
+02:36:20,115 --> 02:36:23,895
+planlanan test planına göre hazırlanmış mı?
+
+667
+02:36:24,315 --> 02:36:25,496
+Hedefine uygun mu?
+
+668
+02:36:25,496 --> 02:36:26,075
+Bu
+
+669
+02:36:26,075 --> 02:36:30,136
+ve milestone
+
+670
+02:36:30,136 --> 02:36:34,616
+sistem analizinden hatırlayacaksınızdır.
+
+671
+02:36:34,616 --> 02:36:36,195
+Mindstone kavramını.
+
+672
+02:36:39,956 --> 02:36:50,296
+hangi durak noktaları dediğimizde hangi milestonelarda gerçekleştiriliyor?
+
+673
+02:36:52,095 --> 02:36:59,876
+Şimdi biz böylece gözden geçirme nedir?
+
+674
+02:37:00,735 --> 02:37:02,735
+Gözden geçirme ne değildir?
+
+675
+02:37:04,275 --> 02:37:07,956
+Gözden geçirme hangi...
+
+676
+02:37:10,260 --> 02:37:15,220
+yazılım geliştirmenin hangi adımlarında gerçekleştirilir?
+
+677
+02:37:18,019 --> 02:37:28,999
+Gözden geçirme matrisi dediğimizde, gözden geçirme, walkthrough ve inspection arasındaki farklılıkları görmüş olduk.
+
+678
+02:37:28,999 --> 02:37:36,440
+Bu hafta tekrar inspection'a geçmek istemiyorum.
+
+679
+02:37:36,440 --> 02:37:44,379
+ilişkili kavramları önümüzdeki hafta göreceğiz.
+
+680
+02:37:44,379 --> 02:37:51,840
+Bu sorunuz var mı?
+
+681
+02:37:58,548 --> 02:38:13,968
+Bu sistemde bir şey, slide ve not paylaşımı gibi bir özellik olacak sanıyorum. Oradan paylaşacağım. Aves ise koymayacağım.
+
+682
+02:38:19,156 --> 02:38:37,156
+Bir de ayrıca şeyleri de izleyebiliyorsunuz tekrar ders tanımlarını ama bu sistem içinde bir şey var galiba. Evet, oraya koyacağım. Yani Avesis'e koymayacağım.
+
+683
+02:38:38,324 --> 02:38:46,863
+Başka sorunuz var mı? Bana hangi maille ulaşabilirsiniz? kalipsiz.yildiz.yudu.tr
+
+684
+02:38:52,244 --> 02:38:55,224
+Bir de
+
+685
+02:38:55,224 --> 02:39:00,363
+bugünden itibaren galiba yoklama alabiliyorum.
+
+686
+02:39:04,503 --> 02:39:06,863
+Şimdi katılımcılara bakayım bir daha.
+
+687
+02:39:12,724 --> 02:39:36,183
+Projeyle ilişkili şey vereyim. Önümüzdeki haftada size zaman veriyorum. Ondan sonraki hafta herkes bana grubunu, en az 5 kişi olacak şekilde grup listesini ve seçtikleri yazılımı belirtecekler.
+
+688
+02:39:36,183 --> 02:39:42,963
+seçtiğiniz yazılımın mutlaka kaynak kodu olsun.
+
+689
+02:39:43,163 --> 02:39:49,103
+Çünkü bir tane birim kod testi de yapmanızı isteyeceğim.
+
+690
+02:39:51,564 --> 02:39:55,283
+Hangi kaynak kodu olan yazılımı seçtiniz?
+
+691
+02:39:56,084 --> 02:39:57,483
+Kimler çalışıyorsunuz?
+
+692
+02:39:57,483 --> 02:40:01,243
+Bundan sonra iki parça olacak zaten.
+
+693
+02:40:01,383 --> 02:40:05,444
+Bir gereksinim spesifikasyon raporu.
+
+694
+02:40:06,183 --> 02:40:23,063
+Bir de test planı, test senaryoları ve test sonuç raporundan oluşan test raporunuzu benimle paylaşacaksınız.
+
+695
+02:40:23,063 --> 02:40:37,983
+Bu da son iki haftada sunum yapacağız dersek, işte sondan üçüncü haftada teslim etmeniz gerekecek.
+
+696
+02:40:44,084 --> 02:41:03,463
+Çok Disiplinli Tasarım Projesi'nde, şimdi bu Cumartesi günü bir sizinle öyle görünüyor ders şeyinde. Eğer yapabiliyorsam, konuşma yapacağım grubumla.
+
+697
+02:41:03,463 --> 02:41:12,443
+bazı soru işaretleri var bizim içinde hem proje tanımı ile ilişkili hem gruplarla ilişkili.
+
+698
+02:41:14,183 --> 02:41:20,283
+O sorularımıza biz cevap almış olursak bu hafta bir tanıtı yapacağız.
+
+699
+02:41:21,624 --> 02:41:23,463
+Yani bir ders saati var onun içinde.
+
+700
+02:41:30,291 --> 02:41:32,211
+Bu arada
+
+701
+02:41:32,211 --> 02:41:35,772
+Bu sınıfta
+
+702
+02:41:35,772 --> 02:41:39,351
+Cuma sesi saat 8. Evet.
+
+703
+02:41:40,071 --> 02:41:43,491
+İşte onda bir şey yapacağım. Yani bu hafta
+
+704
+02:41:43,491 --> 02:41:45,891
+tam şey alamayabilirim.
+
+705
+02:41:46,892 --> 02:41:50,231
+Ama bu hafta yaparım. Bir başlangıç yaparım.
+
+706
+02:41:52,071 --> 02:41:54,771
+Yani ne kadar anlamışsam o kadarını anlatırım size.
+
+707
+02:41:54,771 --> 02:41:57,011
+Bu cumartesi günü
+
+708
+02:41:57,011 --> 02:41:59,231
+ders yapalım.
+
+709
+02:42:00,291 --> 02:42:04,071
+Tanıdığınız arkadaşlarınız varsa onları da duyurun.
+
+710
+02:42:07,531 --> 02:42:10,351
+En azından bir önceki sene yaptıklarımızı anlatırım.
+
+711
+02:42:13,843 --> 02:42:16,463
+Evet, bu dersle ilişkili sorunuz var mı?
+
+712
+02:42:21,843 --> 02:42:23,143
+Tamamdır. O zaman
+
+713
+02:42:23,143 --> 02:42:25,803
+derse
+
+714
+02:42:25,803 --> 02:42:27,183
+bitirebiliriz.
+
+715
+02:42:29,063 --> 02:42:29,763
+Bir sonraki
+
+716
+02:42:29,763 --> 02:42:31,804
+haftada da
+
+717
+02:42:31,804 --> 02:42:35,943
+inceleme
+
+718
+02:42:35,943 --> 02:42:39,024
+üzerinde duracağız. Daha sonra da
+
+719
+02:42:39,024 --> 02:42:40,743
+validation
+
+720
+02:42:40,743 --> 02:42:43,684
+kavramlarını göstereceğimiz
+
+721
+02:42:43,684 --> 02:42:46,423
+konuyla devam edeceğiz.
+
+722
+02:42:59,219 --> 02:43:22,459
+gereksinim raporunu bir kere de teslim edeceksiniz. Test raporunu da daha sonra, yani son dersten 3 hafta önce test raporunu teslim edeceksiniz. Anlaşıldı mı?
+
+723
+02:43:33,203 --> 02:43:34,324
+sorunuz var mı?
+
+724
+02:43:59,924 --> 02:44:03,164
+İlk teslimde kaynak kodu olan bir yazılım
+
+725
+02:44:06,708 --> 02:44:24,548
+İlk bana vereceğiniz, teslim edeceğiniz şey sizin grup yapınız, grup elemanlarınız. Çünkü bu tanımda hangi elemanları belirtmişseniz bundan sonra ekleyemeyeceksiniz yeni arkadaşlar.
+
+726
+02:44:24,548 --> 02:44:34,987
+grup tanımınız ve hangi yazılım üzerinde çalışacaksınız? Yazılımı ayrıca göndermeniz gerekmiyor bana.
+
+727
+02:44:35,468 --> 02:44:41,507
+Yazılımın source kodu var, şu konuyu seçiyoruz diye. Bu birinizin ara proje konusu olabilir.
+
+728
+02:44:42,327 --> 02:44:51,527
+Başka bir dersin projesi olabilir ya da internetten seçtiğiniz bir kaynak kodlu yazılım da olabilir.
+
+729
+02:44:51,527 --> 02:45:04,327
+mail atacaksınız. Önümüzdeki hafta veya daha sonraki haftaya kadar. Daha sonraki hafta artık herkesin tamamlanmış olmalı.
+
+730
+02:45:06,027 --> 02:45:12,327
+5 kişilik grup üyelerinizi ve hangi yazılım üzerinde çalışacağınızı.
+
+731
+02:45:12,888 --> 02:45:18,327
+2 hafta sonra da, ondan 2 hafta sonra da gereksinim raporunuzu göndereceksiniz.
+
+732
+02:45:18,327 --> 02:45:29,847
+Gereksinim raporu için size ayrıca derste yazılım mühendisliğindeki konuyu hatırlatarak bir özet geçeceğim.
+
+733
+02:45:30,107 --> 02:45:32,687
+Gereksinim raporu nasıl yazılır?
+
+734
+02:45:38,388 --> 02:45:43,268
+Yani 5 kişi olsanız daha iyi olur. Ama 4'ten az olmayın.
+
+735
+02:45:57,620 --> 02:46:11,879
+Evet, bu hafta ikinci haftadayız. Üçüncü haftada oluşturan varsa bana gönderebilir. Dördüncü hafta deadline. Altıncı haftada da gereksinim raporunu vermeniz gerekiyor. Evet, [öğrenci] iyi özetledi.
+
+736
+02:46:16,115 --> 02:46:17,295
+Başka sorunuz var mı?
+
+737
+02:46:28,051 --> 02:46:35,371
+Evet, o zaman dersi bitirebiliriz şimdi. Yine de aklınızda kalan bir soru varsa sorabilirsiniz.
+
+738
+02:46:46,004 --> 02:46:49,063
+Evet, dersi bitiriyoruz o zaman. İyi haftalar dilerim.

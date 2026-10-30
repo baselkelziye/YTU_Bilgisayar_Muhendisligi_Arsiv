@@ -1110,6 +1110,7 @@
 
 #### 📚 Faydalı Olabilecek Kaynaklar
 
+- 📄 **Ders Kayıtları:** [Yazılım Kalite ve Test Süreci Ders Kayıtları Altyazıları](./Yaz%C4%B1l%C4%B1m%20Kalite%20ve%20Test%20S%C3%BCreci/ders_kayitlari/) ✨
 - 📄 [Genel Çıkmış Sorular](https://drive.google.com/drive/folders/1imIiwx0xxIPWREGP-YqotnFdUku8Ealf)
   - ℹ️ Kaynaklar öğrenciler tarafından oluşturulmuştur. Bundan dolayı içeriklerin doğruluğu garanti edilemez.
 
