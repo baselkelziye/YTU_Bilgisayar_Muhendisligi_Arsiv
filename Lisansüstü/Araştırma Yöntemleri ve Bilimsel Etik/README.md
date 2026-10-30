@@ -20,6 +20,7 @@
 
 ## 📖 Faydalı Olabilecek Kaynaklar
 
+- 📄 **Ders Kayıtları:** [Araştırma Yöntemleri ve Bilimsel Etik Ders Kayıtları Altyazıları](./ders_kayitlari/) ✨
 - 📄 **Not:** [Önder'in markdown notları](./slaytlar_notlar/2023/onder_gormez%20markdown) ✨
 - 📄 [Genel Çıkmış Sorular](https://drive.google.com/drive/folders/1imIiwx0xxIPWREGP-YqotnFdUku8Ealf)
   - ℹ️ Kaynaklar öğrenciler tarafından oluşturulmuştur. Bundan dolayı içeriklerin doğruluğu garanti edilemez.
