@@ -1,0 +1,4391 @@
+1
+00:00:10,355 --> 00:00:12,355
+Günaydın arkadaşlar.
+
+2
+00:00:14,355 --> 00:00:16,356
+Sesim duyuluyor mu?
+
+3
+00:00:16,356 --> 00:00:18,356
+Günaydın hocam duyuluyor.
+
+4
+00:00:18,356 --> 00:00:20,356
+Tamam çok teşekkürler.
+
+5
+00:00:39,892 --> 00:00:42,132
+Evet, biraz birikim diye bekliyorum.
+
+6
+00:00:52,371 --> 00:00:56,092
+Tamam, başlayabiliriz sanırım. Evet, şimdi.
+
+7
+00:00:59,451 --> 00:01:04,131
+En son şeyden bahsediyoruz, kuyruklardan bahsediyorduk.
+
+8
+00:01:06,431 --> 00:01:08,392
+Ekranımı görüyor musunuz şu anda?
+
+9
+00:01:11,132 --> 00:01:11,531
+Evet.
+
+10
+00:01:12,392 --> 00:01:20,391
+Tamam, oldu. Başlamıştık, birazcık daha devam edeceğim bugün öncelikle kuyrukları.
+
+11
+00:01:20,391 --> 00:01:24,591
+Şimdi önce şey görmüştük, yığın veri yapısını görmüştük.
+
+12
+00:01:25,631 --> 00:01:38,371
+Yığın veri yapısında hedefimiz şeydi, eğer son işlem yaptığımız elemana ilk erişmek istiyorsak o zaman yığın veri yapısını kullanıyorduk.
+
+13
+00:01:38,371 --> 00:01:41,092
+İşte örnekler de vermiştik hatırlarsanız.
+
+14
+00:01:42,191 --> 00:01:45,871
+Bir diyelim ki şeyde nedir?
+
+15
+00:01:47,371 --> 00:01:51,371
+Text editöründe undo işlemi yapmak istediğiniz zaman ne oluyor?
+
+16
+00:01:51,491 --> 00:01:53,191
+Şöyle boş yer açayım kendime.
+
+17
+00:01:53,691 --> 00:01:55,511
+Mesela kalem yazdım.
+
+18
+00:01:55,971 --> 00:01:57,552
+Undo yapıyorum şu anda.
+
+19
+00:01:58,032 --> 00:01:58,831
+Bakın ne oldu?
+
+20
+00:01:59,452 --> 00:01:59,931
+Yapamadım.
+
+21
+00:02:01,272 --> 00:02:01,991
+Niye yapamıyor?
+
+22
+00:02:01,991 --> 00:02:07,151
+En son yazdığımı ilk siliyor.
+
+23
+00:02:08,372 --> 00:02:27,732
+Şimdi A'yı silecek. Redo yaparsam da en son sildiğimi getirerek işlem yapacak. Aslında bu iki tane yerini kullanıyor. Bir taraftan aldığını bir tarafa koyarak. Ando, Redo yap dediğimiz zaman bu şekilde yapıyor.
+
+24
+00:02:27,732 --> 00:02:41,251
+Şimdi böyle bir şey için yani bu türlü uygulama için örneğin aradaki A harfini şey yapmak yani son yazdığınızı silmek hedeftir.
+
+25
+00:02:41,372 --> 00:02:48,071
+Yani aradaki bir şeyi silmek istiyorsanız zaten onu kendiniz şey yaparsınız, yapmak zorundasınızdır.
+
+26
+00:02:48,071 --> 00:03:01,651
+Dolayısıyla işte en son yaptığınız işi geri almak istediğinizde veya en son yaptığınız şeye ilk erişmek istediğinizde NeonMare yapısını kullanırız dedik.
+
+27
+00:03:01,651 --> 00:03:23,372
+işte şey de görmüştük hatta diyelim ki web sayfası linklere tıklaya tıklaya gidiyorsunuz bekle geri geldiğinizde en son uğradığınız yere önce döner ondan sonra bir öncekine döner veya işte function call'larda konuşmuştuk gittiği yerden en son nereden yola çıktıysa oraya geri döner diye.
+
+28
+00:03:23,372 --> 00:03:33,991
+Şimdi kuyruk veri yapısı da benzer ama şöyle, şeyde yığımda last in first out'u, kuyrukta first in first out.
+
+29
+00:03:33,991 --> 00:03:40,791
+Yani ilk gelene ilk hizmet veriliyor, ilk gelen ile ilk iş yapılıyor.
+
+30
+00:03:40,911 --> 00:03:44,532
+Ki bu zaten bizim günlük hayatta da alışık olduğumuz bir yapı.
+
+31
+00:03:44,612 --> 00:03:49,732
+Yani bir markette kuyruğun başındaki kişi kimse ona hizmet verilir.
+
+32
+00:03:50,151 --> 00:03:52,872
+Ve yeni birisi geldiğinde de kuyruğun sonuna ekleniyor.
+
+33
+00:03:52,872 --> 00:03:55,631
+O yüzden bizim kuyrukta iki tane pointer var aslında.
+
+34
+00:03:56,172 --> 00:04:03,252
+Bir tane front pointer kuyruğun başını gösteren, bir tane de rear pointer kuyruğun sonunu gösteren.
+
+35
+00:04:03,252 --> 00:04:10,592
+Şimdi kuyruk üzerinde işlem yaparken birinci olarak yapınızı şöyle kurabilirsiniz.
+
+36
+00:04:10,771 --> 00:04:20,431
+Bir tane diziniz olur ve bu dizi üzerinde fronttaki iş bitince bütün diziyi bir kaydırabilirsiniz.
+
+37
+00:04:21,043 --> 00:04:43,724
+Yani A bitti, B'nin başa gelmesini sağlamak için bütün diziyi bir kaydır. Niye biz bu kaydırma işlemini yapıyoruz? Çünkü sınırlı sayıda yerimiz var. Şeyi en başa almazsak arkada boş yer kalmayacak bir noktada. Yani B bitti, C bitti, herkes gitti ama kimseyi yerinden kıpırdatmazsanız ne olacak? Arkada boş yer kalmayacak.
+
+38
+00:04:43,724 --> 00:05:12,523
+boş yer sağlamak için bir kaydırırız sola doğru bir kaydırırız A bittiği zaman o zaman B sıfırıncı göze yerleşir o zaman ne olur benim frontum B rear'ım E rear 4'ten 3'e geldi yani az önce 4. gözdeyken 3. göze geldi burada dikkatinizi çekerse front her zaman sıfırıncı göz çünkü elemanları bir kaydırdığımız için
+
+39
+00:05:12,523 --> 00:05:17,123
+kuyruğun en başı her zaman dizinin ilk adresi oluyor.
+
+40
+00:05:17,584 --> 00:05:24,323
+Peki şey konuşmuştuk, bu efektif mi değil mi diye konuşmuştuk ve hep birlikte şuna karar vermiştik.
+
+41
+00:05:25,383 --> 00:05:36,883
+Her eleman çıktığında worst case'de bütün elemanları kaydırmak istediğimiz zaman en tane kaydırma yapmak zorundayız değil mi?
+
+42
+00:05:36,883 --> 00:05:46,563
+yani bu dizinin tamamı dolu olsaydı bütün elemanları buraya kaydırmak demek işte yani bir kişi çıktığına göre n-1 elemanım kalmış demektir.
+
+43
+00:05:46,963 --> 00:05:50,283
+n-1 elemanı öne doğru hareket ettireceğim demek.
+
+44
+00:05:50,403 --> 00:05:55,883
+Şimdi örneğin bir market kuyruğunu düşünün çok fazla hareket var bunu simüle ettiğinizi düşünün.
+
+45
+00:05:57,643 --> 00:06:03,123
+Böyle bir durumda ne olacak o zaman sürekli n-1'lik bir iş yapıyor olacaksınız.
+
+46
+00:06:03,123 --> 00:06:08,003
+Onun üzerine demiştik ki peki biz bu problemi nasıl çözebiliriz?
+
+47
+00:06:08,323 --> 00:06:22,763
+Elemanları sürekli hareket ettirmek masraflı bir iş olduğuna göre elemanları hareket ettirmesek sadece pointerları hareket ettirsek daha efektif bir çözüm bulmuş olur muyuz dedik.
+
+48
+00:06:22,763 --> 00:06:33,823
+ve şöyle yaptık dairesel kuyruk yapısı yine dizi kullanıyorum ama bu sefer dairesel kuyruk ile şöyle bir şey yapabilirim.
+
+49
+00:06:34,003 --> 00:06:40,563
+Dedim ki işte front A'ydı ya A bitti A ile işim bittiyse frontu B yap o zaman.
+
+50
+00:06:40,863 --> 00:06:42,923
+Yani sadece pointer'ı hareket ettir.
+
+51
+00:06:42,923 --> 00:06:48,243
+Rear'ım olduğu yerde zaten gelen eleman.
+
+52
+00:06:48,823 --> 00:06:56,283
+Mesela şey olduğunda, F geldi, F Rear'ı olduğunda o zaman burada şey yapmışım.
+
+53
+00:06:56,363 --> 00:06:58,343
+Aslında bunu böyle yapmak zorunda değilsiniz.
+
+54
+00:06:58,483 --> 00:07:00,123
+Şimdi kafanız karışmasın.
+
+55
+00:07:00,203 --> 00:07:02,603
+Yani anlatırken bir şekilde öyle yapmışım.
+
+56
+00:07:03,123 --> 00:07:05,203
+Rear'ınız yani yine burası da olabilir.
+
+57
+00:07:05,203 --> 00:07:08,783
+O tamamen pointer'ı nasıl kullanmak istediğinizle bağlı.
+
+58
+00:07:08,783 --> 00:07:17,243
+ilk boş yeri gösterseniz istiyorsanız şurada rear'ı 5 yaparsınız yani 5. adresi boş yeri gösterir.
+
+59
+00:07:18,383 --> 00:07:22,103
+Kullanılan son yeri göstermek istiyorsanız rear'ı 4 yaparsınız.
+
+60
+00:07:22,243 --> 00:07:26,103
+Anlatırken bir şekilde herhalde o anda boş yeri göstermişim.
+
+61
+00:07:26,183 --> 00:07:33,163
+Fark etmez yukarıdakinin aynısı olsun diye yani tamamen şununla aynı olsun diye şu anda şöyle aldım.
+
+62
+00:07:33,163 --> 00:07:47,343
+dediğim gibi ister rear'ınız burası olur algoritmanıza göre ister son dolu göz olur ister ilk boş göz olur yeni gelen elemanın yerleşeceği ister son dolu olur o tamamen size kalmış o önemli bir şey değil.
+
+63
+00:07:47,343 --> 00:08:02,343
+Şimdi diyelim ki bu kariye uyusun diye rear'ı E yaptım F geldi rear'ınız F olur bu sefer front'umuz B olduğuna göre diyelim ki yeni bir eleman geldi G geldi.
+
+64
+00:08:03,163 --> 00:08:04,163
+bir şey oldu.
+
+65
+00:08:04,500 --> 00:08:26,379
+GA'nın üzerine yerleşir. Çünkü B front olduğu için sıfırıncı göz bizim için free olan bir gözdü. Free olduğu için de G'yi rahatlıkla sıfırıncı göze yerleştirebiliriz. Böylece dairesel olması sayesinde ne olmuş oldu?
+
+66
+00:08:26,379 --> 00:08:44,799
+elemanları değil sadece başı ve sonu gösteren pointerlara hareket ettirerek boşu boşuna işte bütün elemanları hadi en başa kadar kaydıralım yapmak yerine problemi daha efektif bir şekilde çözmüş olduk.
+
+67
+00:08:44,799 --> 00:08:55,799
+Buraya kadar sormak istediğiniz bir şey var mı? Burası hatırlatma bölümüydü ama geçen dersin sonu olduğu için belki dikkatinizi çok toplayamamış ve iyi takip edememiş olabilirsiniz.
+
+68
+00:08:56,379 --> 00:08:58,599
+O yüzden sorunuz varsa alayım.
+
+69
+00:09:00,859 --> 00:09:04,539
+Link listlerle de yapabiliriz değil mi? Sadece sabit dizi olması gerektiğin.
+
+70
+00:09:05,139 --> 00:09:08,699
+Evet şimdi ona geleceğim. Önce bununla ilgili sorunuz varsa onu alayım.
+
+71
+00:09:15,860 --> 00:09:36,239
+Şimdi, eğer ki kuyruğumuzun boyutu tahmin edilebilir bir boyutsa, doğrusu dizi kullanmaktır. Yani linked liste mantığı aslında, dynamic allocation mantığı ne zaman yapmamız gereken bir şey?
+
+72
+00:09:36,239 --> 00:09:38,839
+yani linked liste yapısı.
+
+73
+00:09:39,839 --> 00:09:44,919
+İşte sürekli yeni elemanlar ekleniyor, çıkıyor, ne kadar eleman olacağını bilmiyorsunuz vs.
+
+74
+00:09:46,679 --> 00:09:47,239
+Kestiremiyorsunuz.
+
+75
+00:09:47,239 --> 00:09:53,260
+O zaman işte çok büyük bir yer tanımlasanız o efektif değil.
+
+76
+00:09:54,419 --> 00:09:57,339
+İşte eklemeler oluyor, çıkarmalar oluyor falan filan.
+
+77
+00:09:57,339 --> 00:10:06,200
+o zaman şey yapısı kullanmak, bit bir liste yapısı kullanmak normal düz dizi, statik dizi kullanmaktan daha efektif.
+
+78
+00:10:06,200 --> 00:10:08,779
+Şimdi aynı şey kuyruk içinde geçerli.
+
+79
+00:10:09,200 --> 00:10:13,459
+Eğer ki yani biliyorsunuz mesela ekranım gitti mi?
+
+80
+00:10:16,139 --> 00:10:16,819
+Ekranımı görüyor musunuz?
+
+81
+00:10:16,819 --> 00:10:18,159
+Görüyor hocam görüyoruz.
+
+82
+00:10:18,239 --> 00:10:20,580
+Tamam yan şey kapağımı çizgi.
+
+83
+00:10:22,099 --> 00:10:26,279
+Şeyse örneğin işte bir market simülasyonu yapıyorsunuz.
+
+84
+00:10:26,279 --> 00:10:47,419
+yani tahmin ediyorsunuz ki bir markette en fazla bir anda işte 50 müşteri olabilir bir kuyrukta. O bile olmaz ama yani diyelim ki 50 müşteri olur. O zaman 50'lik bir dizi tanımlarsınız, bunu kullanırsınız. Ama başka bir platformda sürekli bir hareket var ve hiç kestiremiyorsunuz. Bazen 3, bazen 300, bazen bilinen.
+
+85
+00:10:47,419 --> 00:10:53,519
+o zaman dizi kullanmak yerine linkli liste yapısını kullanabilirsiniz.
+
+86
+00:10:54,080 --> 00:10:54,619
+Tamam mı?
+
+87
+00:10:55,040 --> 00:10:59,720
+Yoksa linkli liste yapısı da onun dezavantajı ne?
+
+88
+00:11:00,199 --> 00:11:04,619
+Ekstradan adres değişkeni tutuyor biliyorsunuz.
+
+89
+00:11:04,999 --> 00:11:10,799
+Dolayısıyla işte ne bileyim 500'lük yer tanımladığınız zaman 500'lük de adres için tanımlıyorsunuz.
+
+90
+00:11:11,799 --> 00:11:14,580
+Dolayısıyla yani onun bir de işleri daha yüklü.
+
+91
+00:11:14,579 --> 00:11:25,580
+işte memorial lokasyonu yapıyorsunuz o dur dur bir sürü işi var. Eğer gerçekten ihtiyacınız var ise kuyruğu linkli liste yapısıyla tanımlayın.
+
+92
+00:11:26,299 --> 00:11:33,360
+Yani ihtiyaç ne? Hareket çok fazla, ne kadar eleman olacak, kaç tane eklenecek, kaç tane çıkacak bilmiyorum.
+
+93
+00:11:33,360 --> 00:11:41,319
+O zaman linkli liste yapısı kullanmak efektiftir. Ama yoksa burada dairesel kuyrukta çok masrafınız yok.
+
+94
+00:11:41,319 --> 00:11:49,159
+bir tek frontunuzu, rearunuzu hareket ettirerek bu yapıyı gayet güzel bir şekilde efektif olarak kullanabiliyorsunuz.
+
+95
+00:11:51,619 --> 00:11:53,399
+Burada şeyler vardı.
+
+96
+00:11:53,579 --> 00:11:57,059
+Şimdi o zaman kuyruk üzerinde yapılacak işler neler?
+
+97
+00:11:57,419 --> 00:11:59,499
+Kuyruk üzerinde iki tane temel işlemimiz var.
+
+98
+00:11:59,619 --> 00:12:03,299
+NQ kuyruğa yeni gelen elemanı yerleştirmek için.
+
+99
+00:12:03,300 --> 00:12:10,300
+DQ'da kuyruğun başındaki kişiye hizmet vermek yani kuyruğun başındaki...
+
+100
+00:12:11,764 --> 00:12:38,063
+veriyi kuyruktan çıkarmak için. Tabii ki burada da şu iki tane kontrolü yapmanız lazım. Eğer is full ise, yani burada bir dizi kullandığınız için sonuçta statik bir veri yapısı belli bir noktada dolacak, dolabilir. Dolup dolmadığını kontrol etmeniz lazım.
+
+101
+00:12:38,063 --> 00:12:43,423
+ne zaman? NQ işleminden önce eğer dolduysa kuyruğa yeni eleman alamazsınız.
+
+102
+00:12:44,403 --> 00:12:52,323
+İkinci yapacağınız şey kuyruktan bir eleman çekmek için de önce kuyruğun boş olup olmadığını kontrol etmelisiniz.
+
+103
+00:12:52,323 --> 00:13:01,843
+Çünkü yanlış bir işlem yapıp kuyruk boş olmasına rağmen kuyruktan eleman çekmek isteyebilir sistem,
+
+104
+00:13:01,843 --> 00:13:06,723
+herhangi bir yanlış kontrol veya işte neyse herhangi bir sebeple.
+
+105
+00:13:07,103 --> 00:13:11,923
+Bunun önüne geçmek için de kuyruğun boş olup olmadığını kontrol edeceksiniz.
+
+106
+00:13:11,923 --> 00:13:13,843
+Veya şöyle de bir şey olabilir.
+
+107
+00:13:14,003 --> 00:13:21,023
+Kuyruk tamamen boş olana kadar işte kuyrukdan elemanları çıkar diye bir şeyiniz vardır, tasarımınız vardır.
+
+108
+00:13:21,223 --> 00:13:22,643
+Yani hata mataya yok orada.
+
+109
+00:13:23,203 --> 00:13:25,383
+Kuyruk boş alana kadar hizmet edeceksiniz.
+
+110
+00:13:25,764 --> 00:13:27,243
+O zaman da ne yapacaksınız?
+
+111
+00:13:27,243 --> 00:13:34,143
+önce is empty ile kuyruğun yani de queue işlemini yapmadan önce kuyruğun boş olup olmadığını kontrol edeceksiniz.
+
+112
+00:13:34,483 --> 00:13:36,883
+Buraya kadar sormak istediğimiz var, bir şey var mı?
+
+113
+00:13:40,563 --> 00:14:06,563
+Peki, bir de yine yığında olduğu gibi burada bizim bir peak fonksiyonumuz var. Peak de bize şeyi veriyor, herhangi bir şekilde kimseyi yerinden oynatmadan kuyruğun başında kim var onu veriyor. Yani kime hizmet edileceğini görmek istiyorsunuz ama başka bir şey yapmayacaksınız, ona hizmet etmeyeceksiniz o anda. O zaman peak ile sadece sorgulama yapıp orada kim olduğunu görebilirsiniz.
+
+114
+00:14:06,563 --> 00:14:11,904
+Peki şimdi buraya kadar sormak istediğiniz bir şey yoksa ilerliyorum.
+
+115
+00:14:15,700 --> 00:14:28,000
+Peki. Şimdi geldik arkadaşımızın söylediği, yine bunu geçen hafta derste başlamıştım. Link list yapısına. Şimdi şurayı böyle bir, pardon sileyim.
+
+116
+00:14:35,379 --> 00:15:04,379
+biraz önce söylediğim gibi şey olabilir nedir? Yani çok sirkülasyon olabilir. O zaman şey kullanmak yerine bizi kullanmak yerine işte bazen üç eleman bazen üç eleman yani bunu kestiremiyorsanız o zaman bu hareketi önlemek için şey yaparım linked liste yapısı kullanırım.
+
+117
+00:15:12,371 --> 00:15:20,531
+O zaman şimdi diyelim ki bu sefer A kuyruğunuzun başındaki A bu.
+
+118
+00:15:23,531 --> 00:15:25,611
+A, B'yi gösteriyor.
+
+119
+00:15:26,971 --> 00:15:28,972
+B, C'yi gösteriyor.
+
+120
+00:15:31,771 --> 00:15:33,771
+C kimseyi göstermiyor.
+
+121
+00:15:33,771 --> 00:15:36,171
+O zaman R'ın ise bu.
+
+122
+00:15:36,171 --> 00:15:43,671
+Şimdi burada nasıl olacak kulüp üzerinde işlem yaptığımızda?
+
+123
+00:15:43,671 --> 00:15:45,671
+Enqueue dediğinizde...
+
+124
+00:15:50,035 --> 00:16:10,615
+örneğin D'yi eklemek istediğinizde ne olacak? C artık malı göstermeyecek. Yeni gelen D'yi gösterecek. D'niz rear olacak ve D malı gösterecek. Mesela DQ dediğimde
+
+125
+00:16:15,539 --> 00:16:16,299
+O zaman?
+
+126
+00:16:20,596 --> 00:16:31,835
+kalemi o kadar şarj ettim ama bazen böyle bir şeyler oluyor. Deku dediğinizde A kuyrukdan çıkacak, yeni frontunuz B olacak.
+
+127
+00:16:33,695 --> 00:16:40,616
+Evet, linked liste yapısı kullanırsanız da bu işi böyle yapacaksınız. Ve ne kadar sormak istediğiniz bir şey var mı?
+
+128
+00:16:47,412 --> 00:17:03,412
+Peki, o zaman linked list yapısı kullanırsanız nasıl bir yapınızın olması lazım?
+
+129
+00:17:16,211 --> 00:17:42,071
+örneğin sadece şeylerden oluşan bir tek şöyle olduğunu düşünelim. Bir dakika. Her node için iki parçadan oluştuğunu düşünelim ki örneğin işte bir değişken bu da next bir sonraki adresi gösteren pointer değişkenimiz.
+
+130
+00:17:42,071 --> 00:17:55,531
+Bu ne yapıyor? Bir sonraki şeyi gösteriyor. Kuyruktaki elemanın adresini gösteriyor.
+
+131
+00:17:55,991 --> 00:18:01,191
+Ki de işte ne bileyim orada neyi saklamak istiyorsanız kuyrukta onun değeri.
+
+132
+00:18:01,191 --> 00:18:08,631
+O zaman kuyruktaki bir elemanı bu şekilde tanımlayabilirsiniz.
+
+133
+00:18:08,631 --> 00:18:17,631
+bu kuyruğu nasıl tanımlarsınız? Kuyrukta nelerin olması gerekir? Neleri saklamanız gerekir kuyrukta?
+
+134
+00:18:24,660 --> 00:18:54,639
+Kuyruğa erişebilmek için neyi bilmeniz gerekir? Head Nasıl? Head'i bilmemiz gerekir değil mi hocam? Bir de neyi bilmeniz gerekir? Front barrier. Efendim? Front barrier. Evet, bir başını aynen arkadaşınızın head dediği kuyruğun başı. Yani ister head değil, ister front değil. Hani şimdi burada front rear diye iki değişken ismi kullandım.
+
+135
+00:18:54,660 --> 00:18:58,660
+bu noktadan da bir sonuna kadar doğru.
+
+136
+00:18:58,660 --> 00:19:04,660
+Evet yani kuyruğun başı. İkincisi de neyi bilmeniz gerekir? Kuyruğun sonunu bilmeniz gerekir. Değil mi?
+
+137
+00:19:11,476 --> 00:19:33,476
+O zaman demek ki linked list yapısıyla kuyruk gerçekleştirecekseniz bir kuyruk düğümünüz işte yani aslında bu bir struct, kendisi de bir struct olabilir. Her neyse işte ad, soyad, adres bilen ne istiyorsanız kuyrukta tutabilirsiniz çünkü. Ben sadece basit olması açısından integer bir değişken tanımladı.
+
+138
+00:19:33,476 --> 00:19:52,935
+Ondan sonra kuyruktaki her eleman burada value'lar yani işte bu elemanların şeyleri nelerse değişken olması istediğimiz değişkenleri nelerse dediğim gibi ad soyad adresinden ne istiyorsanız onlar burası.
+
+139
+00:19:52,935 --> 00:20:04,755
+bir de bir sonraki elemanın adresi çünkü işte AB'yi gösterecek, BC'yi gösterecek, CD'yi gösterecek gibi bir sonraki elemanın adresi bir kuyruk düğümünün yapısı.
+
+140
+00:20:05,476 --> 00:20:15,916
+İkincisi de kuyruk neden oluşacak? İki tane pointer'ınız var. Birincisi front point'ı kuyruğun başını gösteren, rear pointer da kuyruğun sonunu gösteren.
+
+141
+00:20:15,915 --> 00:20:25,115
+kuyruğa hizmet ederken yani işin başındaki kişiyi, kuyruğun başındaki kişiyi kuyruktan çıkarmak istediğinizde fronta bakacaksınız.
+
+142
+00:20:25,115 --> 00:20:31,155
+Yeni bir eleman geldiğinde nereye ekleyeceksiniz bu yeni elemanı?
+
+143
+00:20:31,415 --> 00:20:32,595
+Riora ekleyeceksiniz.
+
+144
+00:20:33,495 --> 00:20:34,235
+Var mı soru?
+
+145
+00:20:36,355 --> 00:20:40,375
+Şimdi şeyi size bıraktım geçen hafta ve size bırakmaya devam ediyorum.
+
+146
+00:20:40,376 --> 00:20:46,096
+dairesel kuyruğu gerçekleştirmek için gerekli algoritmayı kendiniz tasarlayın lütfen.
+
+147
+00:20:46,336 --> 00:20:52,456
+Normal dizi kullanarak dairesel kuyruk gerçekleştirmek için uygun algoritmayı tasarlayabilirsiniz.
+
+148
+00:20:54,416 --> 00:20:56,096
+Kendiniz tasarlayın lütfen.
+
+149
+00:20:58,236 --> 00:21:00,836
+Ondan sonra ben size şimdi şeyi anlatacağım.
+
+150
+00:21:00,956 --> 00:21:06,795
+Link liste üstüyle kuyruğun nasıl gerçekleştireceğini anlatacağım.
+
+151
+00:21:06,795 --> 00:21:12,295
+veya kadar sormak istediğimiz bir soru var mı?
+
+152
+00:21:13,255 --> 00:21:18,315
+Hocam front and rear is track olarak değil de normal sadece variable'da tanımlayabiliriz değil mi?
+
+153
+00:21:19,075 --> 00:21:21,375
+Tanımlayamayız çünkü adres gösteriyorlar.
+
+154
+00:21:23,755 --> 00:21:25,776
+Yani pointer olarak.
+
+155
+00:21:26,336 --> 00:21:28,276
+Tabii. Kimi point ediyor?
+
+156
+00:21:28,836 --> 00:21:31,076
+Q node tipindeki bir veriyi point ediyor.
+
+157
+00:21:31,075 --> 00:21:54,295
+Yani şu kuyruktaki elemanın point ettiği elemanda yine kendisi gibi bir structure. İki parçadan oluşan, değişken ve adres parçasından oluşan bir structure. O yüzden front ve rear'ın tipi queue node structure'ı.
+
+158
+00:21:54,995 --> 00:21:56,335
+Tamam anladım hocam teşekkür ederim.
+
+159
+00:21:56,336 --> 00:22:01,175
+Ama çok güzel bir soruydu çünkü pek çok kişi bunu karıştırıyor.
+
+160
+00:22:02,076 --> 00:22:04,996
+Yani umarım herkes sebebini anlamıştır.
+
+161
+00:22:05,095 --> 00:22:07,416
+Yani bunlar adres gösteriyor ya frontları.
+
+162
+00:22:07,856 --> 00:22:09,556
+Kimin adresini gösteriyor?
+
+163
+00:22:09,556 --> 00:22:15,395
+Bir sonraki düğüm veya işte diyorum neyse yani herhangi bir düğümün adresini gösteriyor.
+
+164
+00:22:15,516 --> 00:22:17,535
+Kuyruk düğümünün adresini gösteriyor.
+
+165
+00:22:17,996 --> 00:22:25,455
+O yüzden kuyruk düğümün yani işte şu düğüm mesela onun tipinde olmak zorunda.
+
+166
+00:22:25,455 --> 00:22:38,976
+yani gösterdiği adres QNOT tipinde olduğu için bu şekilde deklare etmemiz gerekiyor.
+
+167
+00:22:40,336 --> 00:22:44,655
+Tamam mı? Peki. O zaman devam edelim.
+
+168
+00:22:44,655 --> 00:22:51,755
+Şimdi kuyruk üzerinde dedik ki yapacağımız işler işte enkü yapacağız, dekü yapacağız.
+
+169
+00:22:52,136 --> 00:22:55,155
+Bunları yapabiliriz. Düğünlerimiz tanımadık.
+
+170
+00:22:55,455 --> 00:22:57,455
+Ön
+
+171
+00:23:02,163 --> 00:23:22,443
+şeyin ayrı tanımlamadın ya da yapabilirim aslında şu anda yapabilirim hadi yapayım sizin için hemen. Öncelikle bir şey yapalım. Kuyruk kriyeti yazalım isterseniz.
+
+172
+00:23:34,996 --> 00:23:37,996
+kuyruğumuz yoktu şu ana kadar.
+
+173
+00:23:40,795 --> 00:23:41,996
+Onu create edelim.
+
+174
+00:23:56,339 --> 00:24:07,079
+bir queue pointer'ım var. Pardon, stack dememe gerek yok. Type definition yapmıştım değil mi az önce?
+
+175
+00:24:07,796 --> 00:24:16,796
+Buna hiç gerek yok. Pardon arkadaşlar. Şuna gerek yok. Çünkü az önce şöyle type definition olarak yaptım.
+
+176
+00:24:17,796 --> 00:24:23,796
+Gördüğünüz gibi aslında type definition. O yüzden şunu şey yazabilirim.
+
+177
+00:24:26,796 --> 00:24:30,796
+Altada yazmak gerekmiyor mu type definition için?
+
+178
+00:24:30,796 --> 00:24:37,296
+Haklısın gerekiyor. Bir anda aldım. Çok teşekkür ederim. Onları düzelteyim ben. Zaten bir terslik olduğumun farkındaydım ama.
+
+179
+00:24:37,796 --> 00:24:38,796
+şuraya
+
+180
+00:24:45,587 --> 00:24:46,607
+Şunu yazmana gerek.
+
+181
+00:24:48,767 --> 00:24:50,787
+Yo, var, ona da var, bir dakika.
+
+182
+00:24:52,887 --> 00:24:53,647
+Şöyle yapayım.
+
+183
+00:24:58,259 --> 00:25:02,680
+Hocam onu içeride kullanmadığımız sürece gerek yok sanırım.
+
+184
+00:25:02,999 --> 00:25:03,459
+Şuna değil mi?
+
+185
+00:25:04,079 --> 00:25:04,359
+Evet.
+
+186
+00:25:05,039 --> 00:25:06,139
+Tamam oldu bende.
+
+187
+00:25:06,899 --> 00:25:08,159
+Şuna var ama bir dakika.
+
+188
+00:25:08,159 --> 00:25:08,379
+Evet.
+
+189
+00:25:10,199 --> 00:25:12,499
+Bir saniye şunu şöyle yapacağım.
+
+190
+00:25:13,779 --> 00:25:14,499
+Şuradakine.
+
+191
+00:25:23,124 --> 00:25:25,124
+aynı isimde olmuyordu ama değil mi?
+
+192
+00:25:27,923 --> 00:25:29,523
+Onu şimdi birden hatırlıyorum.
+
+193
+00:25:29,523 --> 00:25:30,523
+Oluyor hocam.
+
+194
+00:25:30,523 --> 00:25:32,523
+Oluyor mu? Tamam, sıkıntı yok hocam.
+
+195
+00:25:32,523 --> 00:25:32,924
+Oluyor.
+
+196
+00:25:32,924 --> 00:25:40,124
+Ya bir an onu tam hatırlayamadım. Tamam, şimdi sıkıntı yok. Q nodu da tanımladım, Q'yu da tanımladım. Şimdi şöyle yapabilirim.
+
+197
+00:25:41,724 --> 00:25:43,523
+Akıldan yazıyorum da o yüzden...
+
+198
+00:25:46,323 --> 00:25:47,523
+Şimdi create edeceğim.
+
+199
+00:25:51,092 --> 00:25:52,611
+kuyruğu create edeceğim şimdi
+
+200
+00:25:52,611 --> 00:25:58,951
+Q tipinde bir
+
+201
+00:25:58,951 --> 00:26:02,111
+Q değişkenim var
+
+202
+00:26:02,111 --> 00:26:05,092
+Q
+
+203
+00:26:06,291 --> 00:26:08,291
+kest işlemi yaptım.
+
+204
+00:26:15,347 --> 00:26:43,347
+Sadece bir tane queue pointer için yer allocate ettim ve queue'nun front ve rear'ını null atadım. Çünkü şu anda kuyruk boş fakat kuyrukun boş olduğunu göstermek için de queue'nun başına ve sonuna null değer atamam gerekiyor.
+
+205
+00:26:43,347 --> 00:27:07,568
+boş olduğunu göstermek için. Şimdi yaptığım şey bu kuyruk yaratma dediğim şey initialization aslında bu. Başlangıçta boş bir kuyruk tanımladı. Şimdi ne yapabilirim? Enque dediğim zaman işte kuyruğa yeni eleman ekleyebilirim.
+
+206
+00:27:07,567 --> 00:27:34,367
+nereye ekleyeceğim? Şimdi burada şey yapabilirsiniz yani ister bunu yine kuyruk sürekli kullanacaksa bütün fonksiyonlarımızda kullanacaksa onu global tanımlamakta bir problem yok fakat oradaki sıkıntı şu mesela şimdi bu program için bir tek zaten bu programda kuyrukla işlem yapılıyor.
+
+207
+00:27:34,367 --> 00:27:38,147
+Dolayısıyla bu kuyruğu global tanımlamakta sıkıntı yok.
+
+208
+00:27:38,307 --> 00:27:49,247
+Ama bir başka büyük bir sürü function'dan oluşan programınızda kuyruk her yerde kullanılmıyorsa onu global tanımlamanız hoş bir şey değil.
+
+209
+00:27:49,247 --> 00:28:02,727
+Çünkü bir yerlerde bir şey bozulduğunda takip etmeniz zorlaşır ve aynı zamanda yine sizin bildiğiniz gibi global değişkenler bellekte yer tutuyorlar.
+
+210
+00:28:02,727 --> 00:28:06,028
+program çalıştığı sürece yer tutuyorlar.
+
+211
+00:28:06,807 --> 00:28:17,747
+Dolayısıyla bu eğer programınızda yapılan zaten başka şeyler de varsa çok tercih edeceğiniz bir şey olmayabilir.
+
+212
+00:28:18,347 --> 00:28:22,507
+Şimdi o yüzden ben burada şey yaptım yani parametre olarak aktarıyorum.
+
+213
+00:28:23,227 --> 00:28:24,747
+Buna dikkat edersiniz.
+
+214
+00:28:24,747 --> 00:28:27,887
+Tamam şimdi ne yapacağım?
+
+215
+00:28:27,887 --> 00:28:43,647
+İşte yeni bir düğüm için yer tutmam lazım. Ona da new node diyeyim. Temporal bir yer tutmam lazım. Ondan sonra
+
+216
+00:28:55,220 --> 00:28:57,220
+Büyük boş ise
+
+217
+00:29:00,180 --> 00:29:18,180
+ne yapmanız lazım? Kuyruğun frontu da rear'da tempi göstermeli. Değil mi? Eğer kuyruk boşsa kuyruğun frontu da rear'da tempi göstermeli ve iş bitiyor o zaman.
+
+218
+00:29:22,996 --> 00:29:34,215
+return deseniz de olur, demeseniz de olur. Zaten else'iniz var. Else, gelen elemanı nereye ekleyeceksiniz?
+
+219
+00:29:41,811 --> 00:29:48,752
+Aynen öyle. Gelen elemanı kuyruğun sonuna ekleyeceksiniz. O zaman, şimdi bakın buna dikkat edin.
+
+220
+00:29:54,644 --> 00:29:56,644
+allocation yapmamız gerekmez mi?
+
+221
+00:29:57,644 --> 00:30:04,644
+Bir dakika, allocation'ı şeyde yapıyoruz zaten, new node yapıyor, onu çağıracağım birazdan, new node yapıyor allocation'ı.
+
+222
+00:30:06,644 --> 00:30:10,644
+Değil mi? Onu az önce dedim ya, new node diye bir function.
+
+223
+00:30:10,644 --> 00:30:11,644
+Evet hocam, teşekkür ederim.
+
+224
+00:30:11,644 --> 00:30:19,644
+Şu function, yani onu da yazacağım birazdan. Şurada allocation yaptım, ondan sonra...
+
+225
+00:30:19,644 --> 00:30:23,644
+Yukarıda create queue bir değer döndürüyor ama...
+
+226
+00:30:27,188 --> 00:30:30,188
+Create queue değer döndürüyor.
+
+227
+00:30:30,188 --> 00:30:31,188
+Evet.
+
+228
+00:30:34,708 --> 00:30:36,708
+tabii ki haklısın, teşekkür ederim.
+
+229
+00:30:36,987 --> 00:30:40,148
+allocate ettim, şey yaptım, köyü geri döndürdüm.
+
+230
+00:30:40,247 --> 00:30:41,427
+zaten dönüştü peki yok.
+
+231
+00:30:41,847 --> 00:30:47,387
+şimdi burada, cure-rear'ı, next'i kimi gösterecek artık?
+
+232
+00:30:48,427 --> 00:30:49,907
+temp'i gösterecek değil mi?
+
+233
+00:30:51,847 --> 00:30:58,287
+şimdi şöyle düşünün, şöyle düşünün, şu anda durumunuzun şu olduğunu düşünün.
+
+234
+00:30:58,727 --> 00:31:00,007
+şurası front'umuz.
+
+235
+00:31:07,412 --> 00:31:35,271
+şurası da real'ınız. Tamam mı? Şimdi temp geldi. Şurada temp'iniz var. Şurada temp'iniz var. İşte diyelim ki 3 değeri falan var burada. Ondan sonra ne olması lazım? Şimdi burası neresi? Bir dakika şöyle. Şurası next. Şurası key.
+
+236
+00:31:35,271 --> 00:32:00,011
+Şimdi artık rear'ın next'i null'ı değil kimi göstermeli? Bu şurayı değil temp'i göstermeli. Doğru mu? Çünkü kuyruğun sonuna ekleyeceğiz. O yüzden diyoruz ki queue'nun rear'ını next'i temp'i göstermeli diyoruz. Anladınız mı? Burayı anladınız mı?
+
+237
+00:32:01,011 --> 00:32:02,391
+Evet hocam.
+
+238
+00:32:02,391 --> 00:32:11,391
+Tamam. Peki. Ve şey ne olmalı? Bu sefer queue'nun real'i kim olmalı?
+
+239
+00:32:19,763 --> 00:32:21,763
+kadem biraz zor yazıyor.
+
+240
+00:32:25,652 --> 00:32:42,931
+bakın şimdi ne yaptınız? Eğer kuyruk boşsa, kuyruk boşsa, front da rear'da tempi gösterecek. Yani şu durum, kuyruk boşsa, şurası boş, bu sizin temp değişkeniniz. İşte ne bileyim burada 9 var, şurası null.
+
+241
+00:32:42,931 --> 00:32:57,211
+kuyruğun başı da front da burası, rear da burası. Başı da sonu da eğer kuyruk boş ise başı da sonu da tempi gösterecek.
+
+242
+00:32:57,211 --> 00:33:09,731
+Eğer kuyruk doluysa yani kuyrukta bir takım elemanlar varsa o zaman sadece sonu tempi gösterecek
+
+243
+00:33:09,731 --> 00:33:11,631
+Ve artık
+
+244
+00:33:11,631 --> 00:33:13,631
+ımm
+
+245
+00:33:16,788 --> 00:33:36,788
+artık rear değil burası olacak yani rear burası olacak. Rear'ın stamp olacak. Yeni gelen eleman kuyruğun en sonuna eklendi ve yeni kuyruk sonu bu elemanın adresi oldu. Oldu mu? Bu anlaşıldı mı?
+
+246
+00:33:40,339 --> 00:33:49,720
+Hocam, queue, rear, eşittir, temp yerine queue, rear, eşittir, temp, rear yazmamız gerekiyor diyeyim. Tamam.
+
+247
+00:33:50,919 --> 00:33:55,579
+Tamam, teşekkürler. Sen kendi kendine çözdün. Peki, var mı başka?
+
+248
+00:33:59,731 --> 00:34:01,731
+Bu benim himmen.
+
+249
+00:34:06,259 --> 00:34:25,559
+Peki, devam ediyorum. Şimdi burada iki tane fonksiyonumuz var. Biri new node, yeni düğüm için yer hareket etmek için. Biri de isempti, kuyruğun boş olup olmadığını görmek için.
+
+250
+00:34:25,559 --> 00:34:43,899
+is empty siz yazın lütfen. Yazabileceğinize inanıyorum. Is empty nedir? Eğer hem şeyse nedir? Hem queue front hem queue real nalsa kuyruk boş demektir. Değil mi?
+
+251
+00:34:43,899 --> 00:34:47,419
+İzant'i yazabileceğinize inanıyorum.
+
+252
+00:34:48,319 --> 00:34:48,800
+Siz yazın.
+
+253
+00:34:48,839 --> 00:34:50,480
+Biraz şöyle şey yapın lütfen.
+
+254
+00:34:50,719 --> 00:34:55,879
+Çünkü eğer oynamazsanız, bir şeyler yapmazsanız öğrenemezsiniz.
+
+255
+00:34:55,879 --> 00:35:04,039
+Yani sadece dinleyerek ele bu şartlarda, böyle sınıf ortamında daha böyle bir kalıcılığı fazla oluyor anlatılanların.
+
+256
+00:35:04,859 --> 00:35:06,620
+Bu şartlarda şey.
+
+257
+00:35:06,879 --> 00:35:08,099
+Şunu da tavsiye ederim.
+
+258
+00:35:08,239 --> 00:35:12,560
+Geçen gün bazı öğrencilerle konuşurken şeyi söylediler.
+
+259
+00:35:12,559 --> 00:35:31,379
+işte derste dinleyemedikleri için yani herhangi bir sebeple daha sonra kayıtları izleriz dediklerini ve bir türlü de kayıtları izlemeye vakit kalmadığını söylediler. Böyle bir durum yaşıyor musunuz? Gerçi şu anda burada olanlar dinliyor zaten.
+
+260
+00:35:31,979 --> 00:35:34,339
+Çok birikiyor hocam, çok hızlı birikiyor.
+
+261
+00:35:34,340 --> 00:35:55,800
+Evet o yüzden mutlaka dinlemeye, derste dinlemeye özen gösterin. Çünkü en azından böyle bir dikkatiniz dağılsa da bir şey olur nedir? O anda böyle bir konuyu anlarsınız, neden bahsedildiğini bilirsiniz falan. Sonra tekrar dinlediğinizde daha kabucu olur.
+
+262
+00:35:55,800 --> 00:35:59,959
+Yani şey bir hata yani sonradan dinlerim demeyin.
+
+263
+00:36:00,520 --> 00:36:05,359
+Sonradan uygun zaman ve mekanı yaratamayabilirsiniz kendinize.
+
+264
+00:36:05,420 --> 00:36:06,719
+Bu hepimiz için geçerli.
+
+265
+00:36:07,240 --> 00:36:09,760
+O yüzden derste dinleyin lütfen tavsiye.
+
+266
+00:36:10,679 --> 00:36:13,599
+Peki o zaman devam ediyoruz.
+
+267
+00:36:17,200 --> 00:36:18,800
+Deku diyelim.
+
+268
+00:36:18,800 --> 00:36:22,739
+Şimdi Deku'da da ne yapacaksınız?
+
+269
+00:36:22,739 --> 00:36:25,939
+kuyruğun başındaki kişiyi kuyrukdan çıkartacaksınız.
+
+270
+00:36:28,179 --> 00:36:32,499
+Kuyruğun başındaki kişiyi kuyrukdan çıkartacaksınız.
+
+271
+00:36:32,659 --> 00:36:33,919
+Tamam, yaptığımız şey bu.
+
+272
+00:36:55,987 --> 00:36:58,627
+Şimdi burada da şey kullanıyorum.
+
+273
+00:37:01,388 --> 00:37:03,127
+İzlenti kullanıyorum.
+
+274
+00:37:03,367 --> 00:37:06,328
+Şimdi şurada kullanma sebebim farklıydı.
+
+275
+00:37:06,847 --> 00:37:09,567
+Burada kullanma sebebim eğer kuyruk boşsa,
+
+276
+00:37:10,927 --> 00:37:14,107
+şimdi Qfront'da Qrear'ı nalt alınladım ya,
+
+277
+00:37:14,787 --> 00:37:16,427
+başlangıçta create ederken,
+
+278
+00:37:16,427 --> 00:37:21,367
+kuyruk boşsa artık Qfront'da Qrear adres göstermeli.
+
+279
+00:37:21,627 --> 00:37:24,187
+Kuyruktaki elemanın adresini göstermeli.
+
+280
+00:37:24,187 --> 00:37:28,467
+O yüzden burada boş mu diye bir kontrol etti.
+
+281
+00:37:29,507 --> 00:37:38,668
+Şimdi kontrol etme sebebimse eğer kuyruk şeyse boşsa iş yapamayacağım için.
+
+282
+00:37:39,947 --> 00:37:48,587
+O yüzden eğer kuyruk boşsa diyorum ki artık ben sadece burada mesaj yazıyorum.
+
+283
+00:37:48,587 --> 00:37:54,947
+Siz artık ne yapmanız gerekiyorsa algoritmanızın ihtiyacına göre onu yaparsınız.
+
+284
+00:37:55,147 --> 00:37:59,668
+Yani ben orada kuyruğun boşluğu durumunda mesaj yazdım ve gençtim.
+
+285
+00:38:04,687 --> 00:38:12,607
+Şimdi şeyse eğer boş değilse ne yapacağımıza bakalım.
+
+286
+00:38:13,007 --> 00:38:17,187
+Şimdi boş değilse ki kuyruk durumunu göstereyim size birlikte ilerleyelim.
+
+287
+00:38:17,187 --> 00:38:22,767
+Şimdi diyelim ki şu A düğümünüz yani A elemanınız, şu da B elemanınız.
+
+288
+00:38:24,147 --> 00:38:26,348
+İşte burası da nalı gösteriyor.
+
+289
+00:38:27,107 --> 00:38:29,667
+Şurası sizin kuyruğunuzun frontu şu anda.
+
+290
+00:38:30,567 --> 00:38:32,407
+Şurası da kuyruğunuzun rear'ı.
+
+291
+00:38:33,167 --> 00:38:35,427
+Şimdi ne olması gerekiyor?
+
+292
+00:38:38,187 --> 00:38:44,307
+Eğer kuyruk boş değilse, kuyruğunuz boş değilse
+
+293
+00:38:44,307 --> 00:38:48,907
+şu A'yı buradan çıkartmanız
+
+294
+00:38:48,907 --> 00:38:51,248
+gerekiyor. A'yı çıkartmanız
+
+295
+00:38:51,248 --> 00:38:52,947
+demek ne demek?
+
+296
+00:38:56,007 --> 00:38:56,947
+Q frontunuz
+
+297
+00:38:56,947 --> 00:38:57,888
+ne olacak demek?
+
+298
+00:38:58,467 --> 00:39:00,507
+Yeni Q frontunuz ne olacak demek?
+
+299
+00:39:02,227 --> 00:39:03,168
+A'nın next'te.
+
+300
+00:39:04,068 --> 00:39:04,887
+Çok güzel.
+
+301
+00:39:05,107 --> 00:39:06,327
+Q frontun
+
+302
+00:39:06,327 --> 00:39:08,607
+next'te olacak demek.
+
+303
+00:39:08,607 --> 00:39:10,607
+Yani A'nın next'te arkadaşımızın
+
+304
+00:39:10,607 --> 00:39:12,467
+dediği gibi. Frontta A olduğu için
+
+305
+00:39:12,467 --> 00:39:22,867
+Yani şu artık, şimdi front, şöyle bakın, front ne yaptım ben?
+
+306
+00:39:25,467 --> 00:39:27,987
+Size şöyle yine güzel adreslerle göstereyim.
+
+307
+00:39:28,087 --> 00:39:30,327
+Şurası 1000 olsun, şurası 1500 olsun.
+
+308
+00:39:30,708 --> 00:39:34,387
+Aslında şu anda A 1500'ü gösteriyor.
+
+309
+00:39:34,947 --> 00:39:39,167
+Şurada sizin frontunuz da 1000'i gösteriyor.
+
+310
+00:39:40,107 --> 00:39:40,687
+Tamam mı?
+
+311
+00:39:40,687 --> 00:39:43,047
+frontunuz 1000'i gösteriyor.
+
+312
+00:39:43,148 --> 00:39:44,447
+Şu anki durum bu aslında.
+
+313
+00:39:45,087 --> 00:39:47,167
+Siz diyorsunuz ki A'yı bitirdim işte
+
+314
+00:39:47,167 --> 00:39:48,507
+neyse hizmet ettim.
+
+315
+00:39:49,087 --> 00:39:51,148
+Printer'da çıkışını bastım.
+
+316
+00:39:51,568 --> 00:39:53,307
+Neyse artık ne yaptıysam yaptım.
+
+317
+00:39:53,387 --> 00:39:54,187
+Bitti bunun işe.
+
+318
+00:39:54,667 --> 00:39:56,788
+A'yı diyorsunuz çıkart kuyrukdan.
+
+319
+00:39:56,887 --> 00:39:57,907
+İşi bitti diyorsunuz.
+
+320
+00:39:58,208 --> 00:40:00,027
+O zaman front kimi göstermeli?
+
+321
+00:40:00,127 --> 00:40:01,087
+B'yi göstermeli.
+
+322
+00:40:01,187 --> 00:40:03,507
+O nasıl olacak?
+
+323
+00:40:04,247 --> 00:40:07,167
+Q front'un yani A'nın next'i kimse
+
+324
+00:40:07,167 --> 00:40:09,527
+artık o
+
+325
+00:40:09,527 --> 00:40:12,267
+yeni Q front olacak.
+
+326
+00:40:12,407 --> 00:40:13,727
+O zaman Q front eşittir.
+
+327
+00:40:13,787 --> 00:40:15,487
+Q front next dediğinizde
+
+328
+00:40:15,487 --> 00:40:17,727
+şu yapıya göre yani şuradaki
+
+329
+00:40:17,727 --> 00:40:18,827
+yapıya göre
+
+330
+00:40:18,827 --> 00:40:21,567
+frontunuzun yeni değeri ne olacak?
+
+331
+00:40:22,247 --> 00:40:23,807
+Q front'un next'i burası.
+
+332
+00:40:23,987 --> 00:40:25,627
+Yani 1500 olduğu için
+
+333
+00:40:25,627 --> 00:40:27,347
+1500 olacak ve
+
+334
+00:40:27,347 --> 00:40:29,647
+artık neyi
+
+335
+00:40:29,647 --> 00:40:30,707
+gösteriyor olacak?
+
+336
+00:40:31,747 --> 00:40:33,587
+Q front buradan
+
+337
+00:40:33,587 --> 00:40:35,707
+kalkacak. Şöyle
+
+338
+00:40:35,708 --> 00:40:37,528
+Böyle 1500'ü gösteriyor olacak.
+
+339
+00:40:38,428 --> 00:40:38,808
+Oldu mu?
+
+340
+00:40:39,848 --> 00:40:40,668
+Anladınız mı?
+
+341
+00:40:41,848 --> 00:40:45,028
+Hocam frontu free etmemiz gerekmiyor mu bu işlemden önce?
+
+342
+00:40:46,547 --> 00:40:47,668
+Çok güzel bir soru.
+
+343
+00:40:47,767 --> 00:40:50,728
+Frontu bu işlemden önce free edersen ne olur?
+
+344
+00:40:50,728 --> 00:40:53,928
+Ama bir TMP değerini atayacağız önce frontu.
+
+345
+00:40:55,027 --> 00:41:01,027
+Sonra onu B'ye atadıktan sonra frontu free edecektim. Öyle düşünüyordum.
+
+346
+00:41:02,407 --> 00:41:07,607
+Bir de de queue'nun key'e dönmesi gerekmez mi?
+
+347
+00:41:07,607 --> 00:41:09,107
+Dikiyor ettiği eleman.
+
+348
+00:41:11,407 --> 00:41:18,587
+Ben niye döndürmemişim? Hakikaten onu bilmiyorum ve niye sizin dediklerinizi şimdi hemen yapacağım.
+
+349
+00:41:19,208 --> 00:41:22,288
+Çok teşekkürler. Dur şimdi bir dakika. Hemen yapalım.
+
+350
+00:41:22,288 --> 00:41:28,288
+Bir tane Q tipinde farklı renkte yazayım ki karışmasın.
+
+351
+00:41:30,288 --> 00:41:38,347
+Q tipinde bir temp tanımlayalım. Birincisi O eşittir. Q'nun frontu diyelim. Birincisi O.
+
+352
+00:41:38,347 --> 00:41:43,587
+Onu çünkü şey yapmamız gerekiyor. Nedir?
+
+353
+00:41:48,083 --> 00:42:18,023
+geri döndüreceğiz. Bir de integer key tanımlayalım. Ben de queue yaparken açıkçası şey yapmamıştım. Temp meselesine atladım. Evet, onda haklısın. Ama de queue yaparken sadece çıkartmayı yapmıştım. Bir değer döndürme doğru, haklısın. Eğer burada sembolik bir şey yapıyorsak, kuyrukdan çıkartma değil, çıkarttığımızı geri döndürmemiz lazım.
+
+354
+00:42:18,083 --> 00:42:23,484
+yani hizmet edildiği nasıl göstereceğiz biz burada geri döndürerek gösterelim.
+
+355
+00:42:23,863 --> 00:42:25,304
+O yüzden şöyle yapalım tamam.
+
+356
+00:42:25,903 --> 00:42:31,723
+Diyelim ki eğer diyelim queue boşsa bir şey yapma.
+
+357
+00:42:32,023 --> 00:42:36,043
+Eğer queue doluysa queue front eşittir.
+
+358
+00:42:37,043 --> 00:42:41,143
+Şöyle diyelim bir dakika şöyle diyelim else diyelim.
+
+359
+00:42:41,143 --> 00:43:06,183
+q front eşittir, q front'un next'i ondan sonra pardon ki eşittir temp'in aslında bunu başta da yapabilirim dur şöyle yapayım da kafa karışmasın ki eşittir q'nun front'undaki elemanın ki'si dönecek olan değer
+
+360
+00:43:06,183 --> 00:43:29,643
+Q front'u değiştirdim. Ondan sonra Q front'u değiştirdiğime göre tempi free ettim. Tempi free ettim ve return key dedim. O zaman şurada da hata döndürebilmesi için örneğin return eksi bir diyelim. Key'nin negatif olmayacağını düşünerek.
+
+361
+00:43:29,643 --> 00:43:42,043
+neyse yani burada şöyle hata için şurada yani hata için eksi bir döndürdük.
+
+362
+00:43:44,043 --> 00:43:47,164
+Algoritmaya göre burada ne döneceğine bakabilirsiniz.
+
+363
+00:43:47,163 --> 00:44:16,223
+algoritmaya göre farklı bir değer dönebilir. Farklı bir bilgi yapabilirsiniz. Bu da zaten büyük ihtimalle bir tek değer dönen bir şey olmuyordur. Sadece şey bile yapabilirsiniz. Yani kuyruktan çıkan eleman sahilere çıkma isteği varsa, işte çıkartabildimse kuyruktan, bir çıkartamadimse eksi bir falan gibi işler de yapabilirsiniz.
+
+364
+00:44:16,223 --> 00:44:19,703
+O zaman baştan toplayarak anlatıyorum.
+
+365
+00:44:20,263 --> 00:44:22,063
+Şimdi kuyruktan eleman çıkartacağım.
+
+366
+00:44:22,223 --> 00:44:27,403
+Tabii ki arkadaşlarınızın dediği gibi burayı benim serbest bırakmam gerekeceği için.
+
+367
+00:44:29,283 --> 00:44:30,804
+Tabii bitmedi, burada da bitmedi.
+
+368
+00:44:37,003 --> 00:44:38,703
+Devamı da var bunun değil mi?
+
+369
+00:44:39,464 --> 00:44:40,804
+Bir şöyle yapalım.
+
+370
+00:44:41,203 --> 00:44:42,684
+Biraz burada yavaş ilerleyelim.
+
+371
+00:44:42,884 --> 00:44:45,464
+Öncelikle buraya kadar olan kısım bir yapalım.
+
+372
+00:44:45,463 --> 00:44:56,743
+Eğer kuyruk boşsa kuyruk boş olduğu için bir şey yapamayacağım ve eksi bir döndüreceğim bitecek.
+
+373
+00:44:57,123 --> 00:45:01,783
+Eğer kuyrukta eleman var ise o zaman ne yapacağım?
+
+374
+00:45:02,403 --> 00:45:07,143
+Bu elemanın kuyruktan çıkartıp geri döndüreceğim elemanın değerini aldım.
+
+375
+00:45:07,263 --> 00:45:08,583
+Birinci yaptığım şey bu.
+
+376
+00:45:09,283 --> 00:45:12,463
+İkinci yaptığım şey kuyruğun başını değiştirdim.
+
+377
+00:45:12,463 --> 00:45:36,103
+ondan sonra ve kuyruğun başını değiştirdim bu a'yı tutan şeyi nedir allocate ettiğim yeri free bıraktım bu temp'teydi bu adres free bıraktım ondan sonra işim bitmedi ne var şu anda yapmam gereken
+
+378
+00:45:40,628 --> 00:45:42,067
+Ne kaldı geriye?
+
+379
+00:45:43,068 --> 00:45:45,827
+Asıl şöyle göstereyim.
+
+380
+00:45:47,387 --> 00:45:50,867
+Önce sorayım, ne kaldı geriye? Fark edebiliyor musunuz?
+
+381
+00:45:52,187 --> 00:45:55,067
+Hocam, benim aklıma bir rear kontrolü geliyor ama.
+
+382
+00:45:55,787 --> 00:45:59,388
+Niye peki? Güzel. Niye rear'ı kontrol edelim?
+
+383
+00:46:00,148 --> 00:46:01,827
+Az önce şöyle bir şey yaptık biz.
+
+384
+00:46:02,388 --> 00:46:06,227
+empty ise queue front ile queue rear'ı birbirine eşitip tmp'ye eşitmiştik.
+
+385
+00:46:06,227 --> 00:46:08,388
+Aynı şeye bakıyor, tek eleman varsa.
+
+386
+00:46:09,187 --> 00:46:10,267
+Evet.
+
+387
+00:46:10,628 --> 00:46:17,988
+Dolayısıyla şu anda uçurunca TMP'yi, rear ne oldu orası?
+
+388
+00:46:19,547 --> 00:46:29,468
+Normalde bir şey olmadı. Kuyrukta zaten B var. Normalde bir şey olmadı. Yani şöyle olsa bir şey olur mu? Bak şurada bir de C olsa. Şöyle yapayım.
+
+389
+00:46:33,172 --> 00:46:39,471
+Şöyle. Yok. Doluysa eğer, birden fazla eleman varsa bir şey olmadı. Ama ikisi aynı göze bakıyorsa.
+
+390
+00:46:40,691 --> 00:46:49,891
+Aynen öyle. Şimdi sıkıntı bu. Rear burası. Burada bir sıkıntı yok. Yani frontu değiştirdin. Tamam B oldu. Burada bir sıkıntı yok.
+
+391
+00:46:50,231 --> 00:46:57,911
+Şey de olsa sıkıntı yok bu arada. Yani iki eleman varken de sıkıntı yoktu da. Yani bir önceki adımda da hiçbir sıkıntı yoktu.
+
+392
+00:46:57,911 --> 00:47:19,631
+çünkü bir tane elemanım var. Asıl sıkıntı şu anda durum şuysa yani kuyrukta zaten bir tane eleman var yani tekrardan söylüyorum şurada bir sıkıntı yoktu çünkü A ve B iki eleman var A'yı sıktım B'yi gösterdim yani orada bir problem yok yani orada bir problem yoktu.
+
+393
+00:47:19,631 --> 00:47:35,251
+fakat bir tane elemanımız var şimdi front beni gösteriyor ve front'un next'i null şu anda yani arkasında kimse yok tamam mı?
+
+394
+00:47:36,151 --> 00:47:38,972
+Aslında rear'da nereyi gösteriyor?
+
+395
+00:47:41,911 --> 00:47:47,352
+Şöyle rear'da beni gösteriyor şu anda rear'da beni gösteriyor.
+
+396
+00:47:47,352 --> 00:48:00,491
+Burayı takip edebiliyor musunuz? Bir daha anlatmamı ister misiniz? Tek eleman olduğu durumu düşünüyoruz şu anda. Anlıyor musunuz burayı? Bir bakayım şöyle.
+
+397
+00:48:02,491 --> 00:48:07,352
+Üç tane kişi var mesela. [öğrenci] anlıyor musun olduğunu?
+
+398
+00:48:14,931 --> 00:48:16,931
+[öğrenci]
+
+399
+00:48:16,931 --> 00:48:30,931
+Hocam, bir de şeyi soracaktım ben, demenin izin betmesini bekliyordum da, temp değişkeni q node tipinden bir değişken değil mi hocam, o temp pointerı?
+
+400
+00:48:30,931 --> 00:48:32,931
+Kesinlikle evet, temp...
+
+401
+00:48:34,931 --> 00:48:37,931
+Şöyle geri dönelim, bir dakika.
+
+402
+00:48:37,931 --> 00:48:43,391
+temp front tipinde şey q tipinde bir değişken
+
+403
+00:48:43,391 --> 00:48:45,571
+temp q tipinde bir değişken
+
+404
+00:48:45,571 --> 00:48:49,091
+dolayısıyla tempi free ettiğinde
+
+405
+00:48:49,091 --> 00:48:52,012
+yani tempin q tipinde olması ne demek
+
+406
+00:48:52,012 --> 00:48:57,692
+temp işte şöyle q'muzda şöyleydi
+
+407
+00:48:57,692 --> 00:49:03,051
+bir adres gösteren değişken şu anda
+
+408
+00:49:03,051 --> 00:49:06,612
+hocam biz q tipinde bir değişken yapmadık
+
+409
+00:49:06,612 --> 00:49:12,292
+Qnode tipinde bir değişken yaptı. Q'yu o ürettiğimiz şeydi. Onun adresini gösteren.
+
+410
+00:49:15,351 --> 00:49:20,311
+Gördün mü? Ama böyle bir variable'ın ismi değil mi hocam Q burada?
+
+411
+00:49:20,732 --> 00:49:22,512
+Evet, evet hocam. Q'nun struct.
+
+412
+00:49:24,351 --> 00:49:26,372
+Aa, evet. Qnode hocam.
+
+413
+00:49:26,372 --> 00:49:30,391
+Evet, haklısınız. Tamam, tamam. Doğru. Çok doğru.
+
+414
+00:49:36,612 --> 00:49:41,512
+Bir an boş bulundum. Haklısınız. Çok doğru. Q değişkeni mi? Tamam. Çok teşekkür ederim.
+
+415
+00:49:41,512 --> 00:49:53,751
+Hocam böyle deyince de bir şey oluşturmuş olmuyor muyuz? Q değişkeni oluşturuyoruz ama biz bir Q front deyince bir node atıyoruz hocam. Q not olmayacak.
+
+416
+00:49:53,751 --> 00:50:04,411
+Haklısın. Haklısın. Bugün niye böyle bu kadar arka arkaya koktu her şey? Özür dilerim arkadaşlar. Zaten zor anlıyoruz. Genelde herkesin doğal olarak uzaktan zor anlıyoruz.
+
+417
+00:50:04,411 --> 00:50:05,152
+Evet evet hocam.
+
+418
+00:50:06,612 --> 00:50:15,991
+Tamam bugün böyle bir kopma oldu. Tamam bir dakika. Q note. Q note. Q note. Q note. Haklısınız. Tamam düzelttim. Oldu mu şimdi?
+
+419
+00:50:17,991 --> 00:50:18,991
+Oldu hocam.
+
+420
+00:50:20,332 --> 00:50:33,152
+Teşekkür ederim. Böyle düzeltin arada çünkü şey anlatırken bazen kaçıyor şey olmasın yani fark etmiyorum doğal olarak yani tamam fark ettim ve düzeltiyorum ama fark etmezsem yanlış olabilir.
+
+421
+00:50:33,152 --> 00:50:42,452
+sonuçta fark ettiğinizde siz beni uyarın. Baştan anlatayım o zaman isterseniz burayı. Şimdi herkes için hataları da düzelterek.
+
+422
+00:50:42,452 --> 00:50:50,392
+Şimdi prompt dediğimiz şey aslında bir adres gösteriyor arkadaşlar. Tamam mı? Şu prompt değişkeniz.
+
+423
+00:50:50,872 --> 00:51:01,812
+Kimin adresini gösteriyor? Prompt. Bir kuyruk düğümünün adresini gösteriyor. O yüzden tipi queue node tipinde.
+
+424
+00:51:01,811 --> 00:51:14,211
+Tamam mı? Arkadaşlarınız uyarık düzelttim. Temp için. QNOT tipinde. Şimdi front aslında örneğin şurası binse bin numaralı adres gösteriyor.
+
+425
+00:51:14,331 --> 00:51:21,691
+Kuyruğun başını gösteriyor. Burada A var. Diyelim ki next'inde bin beş yüz numaralı adresle de B var. Tamam mı?
+
+426
+00:51:21,691 --> 00:51:29,291
+Şurası pardon B var. Şurası da bin beş yüz numaralı adres. Ve o da kimseyi göstermiyor.
+
+427
+00:51:29,292 --> 00:51:57,972
+Şimdi ben A'yı sileceğim ya o yüzden bir numaralı adresi daha sonra free bırakabilmek için qnote tipinde bir temp tanımladım. Tamam mı? Mesele bu. qnote tipinde temp tanımladım. Aynen front gibi o da bir adres göstersin istiyorum. Yani kimi gösterecek zaten? Front'un adresini göstersin dedim. Neden? Çünkü şunu istiyorum. Şimdi şurası bir dakika. Şurası sizin front.
+
+428
+00:51:59,292 --> 00:52:02,892
+front değişkenimiz bir de tam tanımladım ben.
+
+429
+00:52:02,892 --> 00:52:05,271
+Tam.
+
+430
+00:52:05,780 --> 00:52:07,499
+Bini gösterseniz istiyorum.
+
+431
+00:52:07,699 --> 00:52:09,739
+Neden? Çünkü şey
+
+432
+00:52:09,739 --> 00:52:11,859
+free bırakmak
+
+433
+00:52:11,859 --> 00:52:13,879
+istiyorum ya temp de bini gösteriyor.
+
+434
+00:52:14,160 --> 00:52:15,359
+Yani front
+
+435
+00:52:15,359 --> 00:52:16,580
+temp eşittir
+
+436
+00:52:16,580 --> 00:52:19,419
+front dediğiniz zaman
+
+437
+00:52:19,419 --> 00:52:21,479
+temp de bini gösteriyor.
+
+438
+00:52:21,579 --> 00:52:23,880
+Niye? Sonra orayı free bırakmak istediğim için.
+
+439
+00:52:24,040 --> 00:52:25,620
+İş bitince o allocate
+
+440
+00:52:25,620 --> 00:52:27,700
+ettiğim yeri kullanmayacağından ötürü
+
+441
+00:52:27,700 --> 00:52:29,899
+free bırakmak için. Free bırakmazsam ne olur?
+
+442
+00:52:29,999 --> 00:52:31,879
+Siz biliyorsunuz bir süre sonra
+
+443
+00:52:31,879 --> 00:52:32,679
+şişer yani
+
+444
+00:52:32,679 --> 00:52:35,739
+allocate ettiğiniz ama kullanmamanızı
+
+445
+00:52:35,780 --> 00:52:37,339
+rağmen bırakmadığınız
+
+446
+00:52:37,339 --> 00:52:38,820
+bırakmadığınız içinde
+
+447
+00:52:38,820 --> 00:52:41,599
+boş olmasına rağmen kullanamadığınız
+
+448
+00:52:41,599 --> 00:52:43,280
+yerler bunlar. Peki
+
+449
+00:52:43,280 --> 00:52:45,500
+o yüzden de aslında
+
+450
+00:52:45,500 --> 00:52:47,879
+re-bırakmazsanız hata yaptığınızı
+
+451
+00:52:47,879 --> 00:52:49,640
+anlamazsınız çünkü program bir hata
+
+452
+00:52:49,640 --> 00:52:50,719
+mesajı vermez ama
+
+453
+00:52:50,719 --> 00:52:53,739
+efektif çalışmaz. Peki
+
+454
+00:52:53,739 --> 00:52:55,540
+şimdi o zaman kuyruk boşsa
+
+455
+00:52:55,540 --> 00:52:57,559
+kuyruk boş dedim işim yok. Bu
+
+456
+00:52:57,559 --> 00:52:59,579
+kuyruğun dolu olduğu durumunda önce
+
+457
+00:52:59,579 --> 00:53:01,399
+kuyruğun başındaki elemanın
+
+458
+00:53:01,399 --> 00:53:03,500
+değerini aldım bunu geri döndüreceğim.
+
+459
+00:53:04,140 --> 00:53:05,699
+Arkasından kuyruğun başını
+
+460
+00:53:05,699 --> 00:53:07,259
+değiştirdim. Dedim ki
+
+461
+00:53:07,259 --> 00:53:09,359
+kuyruğun başı artık bini değil
+
+462
+00:53:09,359 --> 00:53:11,159
+1500'ü
+
+463
+00:53:11,159 --> 00:53:13,039
+göstersin dedim. Kuyruğun başı
+
+464
+00:53:13,039 --> 00:53:15,259
+1500'ü göstersin dedim. O zaman
+
+465
+00:53:15,259 --> 00:53:16,000
+bu geliştiriyor.
+
+466
+00:53:16,579 --> 00:53:18,899
+Orada da bir kontrol yapmamız gerekmez mi?
+
+467
+00:53:18,939 --> 00:53:21,140
+1500 yerine nulü gösteriyor olabilirdi.
+
+468
+00:53:21,720 --> 00:53:22,780
+Tek eleman olabilirdi yani.
+
+469
+00:53:22,799 --> 00:53:25,039
+Tam oraya gelmiştik. Onu konuşuyorduk ki
+
+470
+00:53:25,039 --> 00:53:27,399
+farkındaysam tam şuradaydık.
+
+471
+00:53:28,000 --> 00:53:29,219
+Arkadaşların hataları
+
+472
+00:53:29,219 --> 00:53:31,239
+düzelttiler. Şimdi onu yapacağız
+
+473
+00:53:31,239 --> 00:53:32,699
+zaten. Şimdi
+
+474
+00:53:32,699 --> 00:53:35,199
+bu şeyi gösterdi.
+
+475
+00:53:35,199 --> 00:53:37,820
+1500'ü gösterdi. Ondan sonra
+
+476
+00:53:37,820 --> 00:53:39,500
+temp'i de free bıraktık. Yani
+
+477
+00:53:39,500 --> 00:53:40,799
+şurayı free bıraktık.
+
+478
+00:53:41,680 --> 00:53:43,679
+Bin numaralı temp'ini gösteriyor.
+
+479
+00:53:43,839 --> 00:53:45,500
+Çünkü free temp dediğimiz zaman
+
+480
+00:53:45,500 --> 00:53:47,739
+bin numaralı adresteki değere
+
+481
+00:53:47,739 --> 00:53:49,780
+free bıraktık.
+
+482
+00:53:49,860 --> 00:53:51,939
+Şimdi buraya kadar bir sıkıntı yok.
+
+483
+00:53:55,220 --> 00:53:56,099
+Şimdi gelelim.
+
+484
+00:53:57,299 --> 00:53:59,640
+Şu şey meselesine. Tam burada kalmıştık ki
+
+485
+00:53:59,640 --> 00:54:01,659
+hataları düzelttik.
+
+486
+00:54:01,659 --> 00:54:05,319
+kuyrukta tek elemanınız vardı.
+
+487
+00:54:05,819 --> 00:54:07,299
+Şimdi ne oldu? Key'iniz
+
+488
+00:54:07,299 --> 00:54:09,099
+işte A'nın değeri diyelim ki
+
+489
+00:54:09,099 --> 00:54:11,159
+işte şurada 9 varmış.
+
+490
+00:54:13,299 --> 00:54:13,860
+Şurası
+
+491
+00:54:13,860 --> 00:54:16,780
+9'muş mesela.
+
+492
+00:54:16,940 --> 00:54:18,399
+A'nın değeri 9'muş.
+
+493
+00:54:19,019 --> 00:54:21,220
+Ondan sonra key eşittir 9.
+
+494
+00:54:22,160 --> 00:54:23,640
+Key'inizi aldınız.
+
+495
+00:54:24,119 --> 00:54:25,160
+Q front dediniz.
+
+496
+00:54:25,280 --> 00:54:26,860
+Q front'un next'i dediniz.
+
+497
+00:54:27,459 --> 00:54:29,039
+Şimdi bakın burada yavaş
+
+498
+00:54:29,039 --> 00:54:30,660
+yavaş çekim gösteriyorum.
+
+499
+00:54:31,179 --> 00:54:32,419
+Front'unuz ne oldu?
+
+500
+00:54:33,239 --> 00:54:33,899
+Null oldu.
+
+501
+00:54:34,919 --> 00:54:37,159
+Neden? Çünkü kuyrukta başka eleman yoktu.
+
+502
+00:54:37,379 --> 00:54:38,479
+Front'unuz null oldu.
+
+503
+00:54:40,079 --> 00:54:41,459
+Ve tempi de free bıraktınız.
+
+504
+00:54:41,579 --> 00:54:42,999
+Şurayı da güzelce free bıraktınız.
+
+505
+00:54:43,079 --> 00:54:44,219
+Burayla işimiz gitti.
+
+506
+00:54:44,899 --> 00:54:46,839
+Şimdi ne yapmanız lazım?
+
+507
+00:54:46,839 --> 00:54:49,839
+Eğer kuyrukta eleman kalmadıysa
+
+508
+00:54:49,839 --> 00:54:52,979
+rear'ınız da beni gösteriyordu.
+
+509
+00:54:53,219 --> 00:54:54,779
+Rear hala beni gösteriyor.
+
+510
+00:54:54,879 --> 00:54:55,419
+Doğru mu?
+
+511
+00:54:55,739 --> 00:54:56,879
+Yani böyle mi olmalı?
+
+512
+00:54:56,879 --> 00:55:01,139
+rear şu anda free bıraktığınız
+
+513
+00:55:01,139 --> 00:55:02,199
+bir yeri gösteriyor.
+
+514
+00:55:04,759 --> 00:55:06,799
+Neyi değiştirmem lazım o zaman?
+
+515
+00:55:09,839 --> 00:55:11,219
+Bakın frontunuz
+
+516
+00:55:11,219 --> 00:55:13,159
+nal nal şu anda. Frontta bir sıkıntı
+
+517
+00:55:13,159 --> 00:55:15,219
+var mı? Frontunuz nal gösteriyor.
+
+518
+00:55:16,599 --> 00:55:17,239
+Ama rear'ı
+
+519
+00:55:17,239 --> 00:55:18,559
+ellemedik. Rear hala bir yeri.
+
+520
+00:55:18,559 --> 00:55:20,839
+Rear'ı da nal yapmamız gerekmiyoruz mu?
+
+521
+00:55:21,759 --> 00:55:22,759
+Aynen öyle.
+
+522
+00:55:23,159 --> 00:55:25,199
+Şimdi o zaman şunu kontrol etmemiz
+
+523
+00:55:25,199 --> 00:55:27,199
+gerekir. Eğer Q'nun frontu
+
+524
+00:55:28,059 --> 00:55:29,500
+nal ise
+
+525
+00:55:29,500 --> 00:55:31,199
+yani kuyruk boşaldıysa
+
+526
+00:55:31,739 --> 00:55:33,360
+o zaman ne yapmanız
+
+527
+00:55:33,360 --> 00:55:35,259
+lazım? Q'nun rear'ını
+
+528
+00:55:35,259 --> 00:55:37,539
+da nal yapmanız lazım. Tamam mı?
+
+529
+00:55:38,119 --> 00:55:39,220
+Eğer böyle
+
+530
+00:55:39,220 --> 00:55:40,280
+bir durum yoksa
+
+531
+00:55:40,280 --> 00:55:43,220
+sıkıntı yok. Yani
+
+532
+00:55:43,220 --> 00:55:45,399
+şuraya baktığınızda sıkıntı yok.
+
+533
+00:55:45,539 --> 00:55:47,319
+Rear işte C'yi gösteriyor
+
+534
+00:55:47,319 --> 00:55:49,280
+falan yani. Kuyruk
+
+535
+00:55:49,280 --> 00:55:51,220
+doluydu. Kuyrukta başka elemanlar da
+
+536
+00:55:51,220 --> 00:55:53,619
+vardı. Rear ile ilgili bir işlem yapmanıza
+
+537
+00:55:53,619 --> 00:55:55,280
+gerek yok. Ama
+
+538
+00:55:55,280 --> 00:55:57,059
+kuyruk boşaldıysa
+
+539
+00:55:57,059 --> 00:55:59,140
+yani şuradaki sıkıntı
+
+540
+00:55:59,140 --> 00:56:00,720
+bizim buradaki sıkıntımız
+
+541
+00:56:00,720 --> 00:56:03,059
+Q frontundan olması demek
+
+542
+00:56:03,059 --> 00:56:04,280
+kuyruğun
+
+543
+00:56:05,268 --> 00:56:32,987
+boş olması demek. Kuyruk boş ise o zaman rear'ı değiştirmeniz gerekir. Yoksa sıkıntı yok. Yani kuyruk doluysa rear kendi kendine böyle sonda bir yerde duruyor. Yani onunla ilgili bir sıkıntı yok. Ama kuyruk boş ise başka eleman yok. A'yı hizmet ettik. A çıktı gitti. Ondan sonra kuyruk boş aldı. O zaman ne yapmanız lazım?
+
+544
+00:56:32,987 --> 00:56:57,907
+Rear'ı da buradan değiştirip null yapmamız lazım. Tamam mı? Peki şimdi bu da bitti. Qfront Eşitler'ına yani rengarenk bir şey oldu. Ama sonuçta işte bir elemanımız vardı zaten burada. O zaman onu return ettirdim ve işlemimi bitirdim. Oldu mu? Buraya kadar sormak istediğiniz bir şey var mı? Bir bakın.
+
+545
+00:57:09,780 --> 00:57:10,499
+Oldu mu şu anda?
+
+546
+00:57:13,000 --> 00:57:14,760
+Evet hocam.
+
+547
+00:57:15,240 --> 00:57:20,979
+Tamam, çok teşekkürler. O zaman devam ederiz. Bir on dakika ara yapalım. On bir çeyrek geçe devam ederiz. Olur mu?
+
+548
+00:57:22,559 --> 00:57:23,039
+Teşekkürler.
+
+549
+01:09:47,283 --> 01:09:49,283
+Evet, geri geldik arkadaşlar.
+
+550
+01:10:01,524 --> 01:10:30,524
+Evet şimdi nQ'yu gördük. Şöyle bir bakalım. Bir şeyimiz vardı. Create etmeyi gördük. Bir de nQ'yu yaparken yani kuyruğa yeni bir eleman eklerken, kuyruğun sonuna yeni bir elemanı eklerken önce o eleman için yer adı keyf edeceğiz ve oraya elemanı gelen değerini yerleştireceğiz. Ne yapmamız gerekiyordu?
+
+551
+01:10:30,524 --> 01:10:37,604
+O zaman bir tane şey yapalım isterseniz onu da göstereyim ondan sonra quick meselesini bitirelim.
+
+552
+01:10:39,064 --> 01:10:42,884
+Yeni bir düğümün nasıl yapılacağına bakalım.
+
+553
+01:10:43,384 --> 01:10:49,143
+Şimdi ne var? Yeni bir düğüm için yapacağımız şey ne hareket edeceğiz?
+
+554
+01:10:49,604 --> 01:10:52,663
+Gelen değeri oraya yerleştireceğiz o kadar başka bir şey yok.
+
+555
+01:10:52,663 --> 01:11:05,983
+O zaman diyorum ki işte dönüş değeri ne olacak? Tutulan yerin başlangıç değil de tutulan yerin adresi olacak.
+
+556
+01:11:05,983 --> 01:11:12,903
+O zaman QNOT tipinde bir değer döndüreceğiz yani adres döndüreceğiz.
+
+557
+01:11:12,903 --> 01:11:23,524
+new node function'ı ve buraya gelen bilgi de bu yeni düğümün değeri.
+
+558
+01:11:23,524 --> 01:11:32,783
+O zaman diyorum ki Qnode tipinde bir değişkenlikleri edelim.
+
+559
+01:11:35,363 --> 01:11:41,823
+Birazcık zor yazıyor yine bu kalem ama Qnode tipinde bir değişkenlikleri edelim.
+
+560
+01:12:10,260 --> 01:12:27,760
+Yaptığımız şey yer alokit ettik. Şey yapısını yazmıyorum. Onları siz artık biliyorsunuz yazarsanız işte alokit ettim edemedim onları kontrol etmeniz gerekir. Edemediyse hata mesajı döndürmeniz gerekir falan. Biz burada böyle her şeyin yolunda gittiğini düşünerek vakit kaybetmemek için yazmıyorum.
+
+561
+01:12:27,760 --> 01:12:33,700
+allocate ettim mutlaka diye yapıyorum ama normalde sizin ne yapmamız lazım?
+
+562
+01:12:33,860 --> 01:12:41,620
+Mutlaka memori alokasyonu yaptığınız yerlerde orada yer tutabildim mi, bir sıkıntı olduğumu bunu kontrol edelimiz lazım.
+
+563
+01:12:42,079 --> 01:12:43,780
+İllaki yer olmaması gerekmez.
+
+564
+01:12:43,879 --> 01:12:51,480
+Öyle bir işlem yapıyorsunuzdur ki right protect bir yere alokasyon yapmak istiyorsunuzdur mesela.
+
+565
+01:12:51,479 --> 01:13:09,059
+Yani olabilecek her türlü problemi düşünüp mutlaka aloket etmeye çalışırken size yer tutamadıysa siz tutmuş gibi davranmaya devam ederseniz çok sıkıntı olur.
+
+566
+01:13:09,059 --> 01:13:15,279
+Çatışmayan bir programımız olur. O yüzden bunu mutlaka kontrol edin.
+
+567
+01:13:15,279 --> 01:13:44,699
+Şimdi biz allocate ettik. Tempin key'sine key yazdık. Tempin next'ine null yazdık. Çünkü yeni eleman nereye yerleşecek? Kuyruğun en sonuna yerleşecek. Ve kimseyi göstermeyecek. Yani şöyle düşünüyorum. Şurası sizin front değişkeniniz olsun. Front burayı gösterdi. İşte burası, diyelim burada A var. İşte bu da B'yi gösteriyor. Bu null'ı gösteriyor.
+
+568
+01:13:44,699 --> 01:14:10,699
+şimdi bu yeni elemanımız temp burası işte burada C var buraya nalı göstertmelisiniz bu da artık B'de C'yi gösterecek birazdan dolayısıyla yani kuyruğun en sonundaki artık C olacağı için O'nun nereye göstermesi lazım mutlaka nalı göstermesi lazım bunu sağladık temp neksi nal olsun dedik ondan sonra da
+
+569
+01:14:10,699 --> 01:14:33,599
+ne diyeceğiz? Return diyeceğiz, stack diyeceğiz ve bu adresi geri döndüreceğiz. Ne oldu geri döndürdüğümüzde? Bakın şurası geri dönen adresi kullandı. Ondan sonra ve işte kuyruğun sonuna bu elemanı ekledik.
+
+570
+01:14:33,599 --> 01:14:35,599
+Yani şurada tuttuğumuz yer vardı.
+
+571
+01:14:35,599 --> 01:14:37,599
+Kuyruğun sonunda bu elemanı ekledik.
+
+572
+01:14:37,599 --> 01:14:42,599
+Burada Nilmov'la yeni bir düğüm için yer hareket ettik.
+
+573
+01:14:42,599 --> 01:14:45,599
+O düğme değeri yerleştirdik falan filan.
+
+574
+01:14:45,599 --> 01:14:47,599
+Yaptığımız işlem bu.
+
+575
+01:14:47,599 --> 01:14:51,599
+Buraya kadar sormak istediğiniz bir şey var mı? Bir bakın lütfen.
+
+576
+01:14:58,420 --> 01:15:02,259
+Hocam, tanım sayfasını bir gösterebilir misiniz? Bir 5-10 saniyeliğine.
+
+577
+01:15:03,059 --> 01:15:05,279
+Burayı? Yok, şunu.
+
+578
+01:15:13,811 --> 01:15:18,692
+Oldu mu? Sorun mu var? Soru varsa sorabilirsin.
+
+579
+01:15:19,691 --> 01:15:24,311
+Bir saniye hocam, ekranı alacağım da arada atladığım yer vardı, onu kontrol ediyorum.
+
+580
+01:15:26,732 --> 01:15:28,371
+Tane tane ilerleyebilirim.
+
+581
+01:15:42,963 --> 01:15:43,963
+ve alamedin.
+
+582
+01:15:49,747 --> 01:15:50,308
+ediyorum.
+
+583
+01:15:52,488 --> 01:15:53,947
+Tamam hocam, teşekkür ederim.
+
+584
+01:15:54,507 --> 01:15:55,627
+Ben teşekkür ederim.
+
+585
+01:15:57,467 --> 01:16:03,947
+Peki, şimdi o zaman yani şöyle bir main programınız olsa ne dersiniz?
+
+586
+01:16:03,947 --> 01:16:11,787
+İşte dersiniz ki, işte Q tipinde bir diyelim ki Q değişkenimiz var.
+
+587
+01:16:12,527 --> 01:16:17,027
+İşte create Q diyerek Q'yu create ettim.
+
+588
+01:16:17,027 --> 01:16:19,027
+çağırırken de mesela
+
+589
+01:16:19,027 --> 01:16:27,027
+enq küçük harbini yazmıştım.
+
+590
+01:16:27,027 --> 01:16:30,027
+büyük yazmışım.
+
+591
+01:16:30,027 --> 01:16:33,027
+enq dedi
+
+592
+01:16:36,275 --> 01:16:43,775
+Mesela işte queue'ya onu yansın. İşte en queue dedim.
+
+593
+01:16:47,731 --> 01:16:48,731
+uya 20'ye ekledim. Sonra diyelim ki işte dedim ki printf used to the n
+
+594
+01:17:04,083 --> 01:17:21,024
+de queue'ya bakalım, o ne de queue'yu gönderip şey yapıyormuşuz, tamam, de queue dedim, queue dedim, kuyruktan kaç çıkar? Printf yazdığınızda ekranda kaç görürsünüz?
+
+595
+01:17:24,851 --> 01:17:25,851
+10 hocam.
+
+596
+01:17:25,851 --> 01:17:49,851
+10 görürsünüz kuyruğun başında çünkü yani şu anda durum şu. Şurada 10 var. İşte şurası front. Front burayı gösteriyor. 10 var. 10, 20'yi gösteriyor. Burası nalı gösteriyor. Şu anda durum bu. Dolayısıyla de q, q dediğiniz zaman neyi görürsünüz? Onu görürsünüz ekranda. Bir daha de q, q derseniz yemin ediyorsunuz.
+
+597
+01:17:49,851 --> 01:18:02,671
+Peki, kuyruklarla ilgili sormak istediğiniz aklınıza takılan herhangi başka bir şey var mı? Böyle kadar sormak istediğiniz bir şey varsa sorabilirsiniz.
+
+598
+01:18:07,636 --> 01:18:09,636
+var mısınız?
+
+599
+01:18:15,283 --> 01:18:23,283
+Peki, o zaman burayı bitiriyorum.
+
+600
+01:18:31,731 --> 01:18:43,731
+Şimdi yeni bir veri yapısına geçeceğiz. O da tree veri yapısı.
+
+601
+01:18:47,412 --> 01:18:49,412
+Çünkü tree bir kere...
+
+602
+01:18:53,971 --> 01:19:23,951
+veri yapısı. Linear olması demek bizi bir linear veri yapısı. Yani burada bir sıralı olarak bilgilere erişim söz konusu. Ondan sonra yani belli bir sırayla bilgilere erişim söz konusu. Ama ağaç dediğimiz yapı bilgilere sıralı erişmediğimiz, ondan sonra hop ve yazıplaya erişebildiğiniz bir veri yapısı.
+
+603
+01:19:23,971 --> 01:19:30,091
+Şimdi ağaç dediğimiz zaman şöyle bir şey bir ağaç mesela işte
+
+604
+01:19:36,819 --> 01:20:03,819
+Öncelikle neden ağaç kullanıyoruz? Bir hiyerarşiyi göstermek için ağaç kullanıyoruz. Mesela en basit bildiğimiz ağaç yapısı nedir? Çok basit bir şekilde aile ağacıdır değil mi? Yani işte büyük baba, büyük anne, çocukları, çocuklarının çocukları falan şeklinde en basit bildiğimiz ağaç kullanılan yer aile ağacı yapısı.
+
+605
+01:20:03,819 --> 01:20:23,199
+yani orada da zaten temel olarak bir hiyerarşi var yani işte ataların tepede kökte bulunduğu ondan sonra işte çocukların sırayla şeylerde bulunduğu aşağılarda bulunduğu veri yapısı.
+
+606
+01:20:23,199 --> 01:20:31,479
+Aslında ağaç veri yapısı gerçekten gerçek dünyadaki ağaç simüle edilerek oluşturulmuş bir veri yapısı.
+
+607
+01:20:31,959 --> 01:20:39,519
+Yani ağaç veri yapısında da kök var, yapraklar var, işte arada yer alan bilgiler var.
+
+608
+01:20:39,739 --> 01:20:46,040
+Tamamen hiyerarşik durumu göstermek için bir saniye arkadaşlar, bir saniye.
+
+609
+01:21:16,756 --> 01:21:18,996
+böyle yapısı.
+
+610
+01:21:19,075 --> 01:21:20,575
+Mesela bildiğiniz başka
+
+611
+01:21:20,575 --> 01:21:21,975
+kullandığınız ağaç şeyi
+
+612
+01:21:21,975 --> 01:21:24,535
+diyelim ki bilgisayar
+
+613
+01:21:24,535 --> 01:21:26,375
+ortamındaki directory
+
+614
+01:21:26,375 --> 01:21:28,775
+yapımız bir root var. Ondan sonra
+
+615
+01:21:28,775 --> 01:21:30,355
+diyelim ki root'un altında
+
+616
+01:21:30,355 --> 01:21:32,075
+işte diyorsunuz ki
+
+617
+01:21:32,075 --> 01:21:34,795
+şöyle directorlerimiz
+
+618
+01:21:34,795 --> 01:21:36,016
+var. Derslerle ilgili
+
+619
+01:21:36,016 --> 01:21:38,495
+bir directorimiz var. İşte
+
+620
+01:21:38,495 --> 01:21:40,436
+oyunlarla ilgili bir
+
+621
+01:21:40,436 --> 01:21:41,715
+directorimiz var.
+
+622
+01:21:42,555 --> 01:21:43,795
+Derslerin altında
+
+623
+01:21:43,795 --> 01:21:46,355
+diyelim ki data structure dediğimiz
+
+624
+01:21:46,355 --> 01:21:47,875
+şey bir direktörü.
+
+625
+01:21:48,335 --> 01:21:49,975
+İşte ne bileyim
+
+626
+01:21:49,975 --> 01:21:51,875
+ne var ders bu sene altında?
+
+627
+01:21:52,075 --> 01:21:53,436
+Software Engineering mi var?
+
+628
+01:21:54,075 --> 01:21:55,735
+Software Engineering bir direktörü.
+
+629
+01:21:55,795 --> 01:21:57,315
+Data Structure'ın altında
+
+630
+01:21:57,315 --> 01:22:00,455
+işte notları bir yerde tutuyorsunuz.
+
+631
+01:22:01,055 --> 01:22:02,035
+Ne bileyim
+
+632
+01:22:02,035 --> 01:22:04,595
+ödevleri bir yerde tutuyorsunuz
+
+633
+01:22:04,595 --> 01:22:05,975
+falan değil mi? Sonuçta
+
+634
+01:22:05,975 --> 01:22:08,616
+işte bilgisayarımızın organizasyonu
+
+635
+01:22:08,616 --> 01:22:10,415
+da aslında bir ağaç
+
+636
+01:22:10,415 --> 01:22:12,395
+veri yapısı. Orada bir ağaç veri yapısı
+
+637
+01:22:12,395 --> 01:22:14,635
+tutuyorsunuz. Arkasından
+
+638
+01:22:14,635 --> 01:22:16,155
+şey var
+
+639
+01:22:16,155 --> 01:22:18,915
+ne bileyim karar ağaçları var.
+
+640
+01:22:19,915 --> 01:22:24,195
+En çok kullanılan ağaç türlerinden birisi karar ağaçları.
+
+641
+01:22:24,695 --> 01:22:28,555
+Ne bileyim işte bir A durumundasınız.
+
+642
+01:22:29,335 --> 01:22:35,955
+İşte bir şart sağlamlıyorsa örneğin A büyüktür işte 50 ise B'ye geliyorsunuz.
+
+643
+01:22:36,795 --> 01:22:41,116
+İşte A küçük eşittir 50 ise C'ye geliyorsunuz.
+
+644
+01:22:41,116 --> 01:22:51,516
+İşte ne bileyim D pozitifse D'ye geliyorsunuz, işte negatifse E'ye geliyorsunuz falan.
+
+645
+01:22:52,395 --> 01:22:54,575
+Burada da aslında bir hiyerarşi var.
+
+646
+01:22:54,756 --> 01:22:58,116
+Yani hiyerarşiye göre bir ağaç üzerinde ilerliyorsunuz.
+
+647
+01:22:58,876 --> 01:23:05,116
+Şeyde mesela karar ağaçları yapay zekada çok kullanılan bir şeydir.
+
+648
+01:23:05,116 --> 01:23:05,916
+şeydir.
+
+649
+01:23:07,075 --> 01:23:08,596
+Öğrenme yöntemidir aslında.
+
+650
+01:23:08,715 --> 01:23:11,135
+Karar ağaçlarına göre bilinmeyen
+
+651
+01:23:11,135 --> 01:23:13,116
+bir örneğin
+
+652
+01:23:13,116 --> 01:23:15,095
+hangisinin fayet olduğunu bulma işlemi
+
+653
+01:23:15,095 --> 01:23:17,455
+yaparken karar ağacı kullanabilirsiniz.
+
+654
+01:23:18,395 --> 01:23:19,315
+Sonra mesela
+
+655
+01:23:19,315 --> 01:23:20,876
+satranç oyunu,
+
+656
+01:23:21,016 --> 01:23:23,095
+bilgisayar ortamında satranç oyunu var.
+
+657
+01:23:23,556 --> 01:23:24,696
+Orada da şeyler var.
+
+658
+01:23:24,856 --> 01:23:27,416
+Diyelim ki yapılan hamleye göre
+
+659
+01:23:27,416 --> 01:23:29,276
+ilerlemeler var.
+
+660
+01:23:29,395 --> 01:23:30,675
+Orada bir karar ağacı aslında.
+
+661
+01:23:30,675 --> 01:23:31,916
+İşte o hamle yapıldı.
+
+662
+01:23:32,095 --> 01:23:33,276
+Buradan ilerleyeceksin.
+
+663
+01:23:33,276 --> 01:23:37,035
+Ondan sonra bilmem şu yapılırsa şuradan, bu yapılırsa buradan.
+
+664
+01:23:37,256 --> 01:23:48,336
+Yani bir oyunda aslında şeye göre, hamlelere göre açılımın nasıl olacağını, nasıl devam edeceğini aslında ağaç yapısıyla yine belirliyorsunuz.
+
+665
+01:23:48,756 --> 01:23:50,996
+Aklınıza gelen başka ağaç uygulaması var mı?
+
+666
+01:23:52,556 --> 01:23:53,876
+Organizasyon şemaları olabilir.
+
+667
+01:23:54,876 --> 01:23:56,576
+Evet, kesinlikle çok doğru.
+
+668
+01:23:56,576 --> 01:24:01,216
+Organizasyon şemaları da aslında bir ağaç yapısıdır.
+
+669
+01:24:01,215 --> 01:24:22,595
+Ondan sonra şey göstermesi açısından işte şirketin bilinen genel müdürü bilinen departmanı o departmanın altında övüde falan filan şeklinde göstermesi açısından şeydir yani bir ağaç yapısıdır aslında.
+
+670
+01:24:22,595 --> 01:24:31,895
+Peki şimdi ağaç üzerinde öncelikle ağaç terminolojisini vermek istiyorum.
+
+671
+01:24:32,075 --> 01:24:43,135
+Çünkü bu şeyleri, terminolojiyi uzun uzun zamanlar kullanacaksınız aslında.
+
+672
+01:24:43,135 --> 01:24:57,055
+Çünkü dediğim gibi ağaç çok farklı şeylerde kullanıldığı için, uygulamalarda kullanıldığı için bununla ilgili terimler de çok karşımıza çıkacak.
+
+673
+01:24:58,095 --> 01:25:02,555
+Diyelim ki şöyle bir ağacımız var.
+
+674
+01:25:02,695 --> 01:25:04,115
+Önce şuradan başlayalım.
+
+675
+01:25:05,695 --> 01:25:10,155
+Şimdi bunu gerçek dünyadaki ters dönmüş bir ağaç gibi düşünün.
+
+676
+01:25:10,155 --> 01:25:12,155
+Dolayısıyla...
+
+677
+01:25:11,923 --> 01:25:19,423
+Burası bizim rootumuz. Bir tane rootumuz var ve rootumuzda her zaman tek bir düğümümüz var.
+
+678
+01:25:19,423 --> 01:25:27,923
+Bu başlangıç düğümü. Bunun öncesinde hiçbir şey yok.
+
+679
+01:25:27,923 --> 01:25:38,323
+ve şeylerde ÖJK da yapraklar.
+
+680
+01:25:38,323 --> 01:25:45,824
+ÖJK yapraklar.
+
+681
+01:25:45,824 --> 01:25:50,163
+Yapraklar da çocuğu olmayan.
+
+682
+01:25:54,292 --> 01:26:12,132
+düğümler yani tersi ağaç gibi düşünecek olursanız şey bu, yapı bu. Şimdi burada mesela 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11. Şimdi burada 11 tane düğüm var.
+
+683
+01:26:18,515 --> 01:26:31,515
+en son K almak üzere ve her düğün bir yani tek başına bir node dediğimiz şey, düğün tek başına bir anlam ifade ediyor.
+
+684
+01:26:31,515 --> 01:26:46,515
+Bulunduğu yere göre eğer şeyse root veya yaprak değilse bunlara internal şey, root da internal,
+
+685
+01:26:46,515 --> 01:26:52,096
+Eğer yaprak değilse bunlara internal mode deniyor.
+
+686
+01:26:52,196 --> 01:26:58,896
+Yani en az bir tane çocuğu varsa bunlara internal mode deniyor.
+
+687
+01:27:05,939 --> 01:27:18,739
+Mesela işte burada internal nodlar. A internal, B, C, ondan sonra E, G bunlar internal nodlar.
+
+688
+01:27:26,420 --> 01:27:54,840
+Aynı zamanda bunlar bir de parent node'lar. Çünkü şeyleri var. Yani bunların aynı zamanda çocukları da var. Dolayısıyla bunlar aynı zamanda baktığımız zaman şimdi şöyle baktığımız zaman A bir parent node. Çünkü B ve C iki tane çocuğu var. B parent node. C de öyle.
+
+689
+01:27:54,840 --> 01:28:12,219
+D değil çünkü D yaprak not. Aslında şöyle onu da şuradan şey yapayım. D yaprak not. Şurada onları yazmamışım evet. D, F, H, I, J, K. Bunların hepsi yaprak notlar.
+
+690
+01:28:16,692 --> 01:28:26,411
+şöyle şey olmayan nedir kendisine bağlı alt düğme olan notlara parent node deniyor.
+
+691
+01:28:26,411 --> 01:28:30,951
+chart node'larda
+
+692
+01:28:32,275 --> 01:28:46,975
+işte kendisinden önce gelen notlar olan notlar. Yani işte baktığınız zaman B, C, D işte.
+
+693
+01:28:47,755 --> 01:28:49,036
+Ruh tarih hepsi diyebilir miyiz?
+
+694
+01:28:49,036 --> 01:28:52,055
+Ruh tarih hepsi. Şöyle diyebiliriz aslında.
+
+695
+01:28:52,055 --> 01:29:15,375
+A için B ve C, ondan sonra işte B için D, E, F bunlar çarp yani B ve C A'nın çarpları, D, E, F işte B'nin çarpları.
+
+696
+01:29:20,595 --> 01:29:37,555
+Dolayısıyla işte bu böyle devam ediyor. Mesela işte E için, I ve J falan diye böyle devam ediyor. Bunlar child notlar. Yani çok hikayeye girmek değil ama karşınıza çıkarsa diye buraya hepsini yazacağım.
+
+697
+01:29:37,555 --> 01:29:43,795
+sibling node dediğimiz notlar aynı parent'a ait olan notlar.
+
+698
+01:29:43,935 --> 01:29:47,855
+Mesela B ve C aynı zamanda sibling notlar.
+
+699
+01:29:49,295 --> 01:29:56,855
+İşte bilinen baktığınız zaman B, E, F, sibling notlar.
+
+700
+01:30:09,395 --> 01:30:24,255
+hiç girildiği olmuyor aslında ve yaprak notlar, yaprak notları söyledik aslında yaprak notlarda şeyi olmayan, çocuğu olmayan notlar, internal notlar, içeride yer alan notlar.
+
+701
+01:30:24,255 --> 01:30:33,736
+Şimdi genelin asıl ağaçla ilgili bilgi vermemiz, ağacın geneliyle ilgili bilgi vermemiz gerektiğinde kullandığımız terimlere,
+
+702
+01:30:33,736 --> 01:30:37,736
+Şimdi bunlardan birisi ağacın digrisi.
+
+703
+01:30:39,336 --> 01:30:47,635
+Diki dediğiniz şey, beğenin mesela digrisi.
+
+704
+01:30:54,260 --> 01:31:05,140
+üç, yani bir düğümün kaç tane çocuğu oldu?
+
+705
+01:31:20,051 --> 01:31:38,312
+Mesela f'in digrisi 0, ondan sonra ne bileyim işte g'nin digrisi 1 gibi, digri kaç tane şey oldu, bir şeyin nedir, büyümün kaç tane çocuğu oldu.
+
+706
+01:31:38,312 --> 01:31:49,211
+Şimdi gelelim şeye, level meselesine. Bir ağacın level ve height'ı genel olarak ağacın bütünü hakkında bilgi verir.
+
+707
+01:31:49,211 --> 01:31:52,311
+Şimdi şöyle bir ağacımızı tekrardan çizelim.
+
+708
+01:32:10,228 --> 01:32:27,228
+Şimdi şurası level 0, burası level 1, şurası level 2 ve burası level 3. Tamam mı?
+
+709
+01:32:29,460 --> 01:32:31,739
+level 0. Ona göre
+
+710
+01:32:36,404 --> 01:33:01,963
+ağacın kaç, level nedir diye sorulduğu zaman, roottan uzaklığı aslında, yaprağın roottan uzaklığı. Yani ağacın level'ı yaprak notların şeyden uzaklığı nedir? Kökten uzaklığı.
+
+711
+01:33:03,923 --> 01:33:14,923
+dediğimiz zaman kökten uzaklar. Aynı zamanda bunun için şey de kullanıyorlar, depth de kullanıyorlar.
+
+712
+01:33:17,171 --> 01:33:35,112
+şey dediğiniz zaman ise, take dediğiniz zaman ise bu da şeyden uzaklığım, yapraktan uzaklığım. Yani
+
+713
+01:33:37,011 --> 01:33:40,091
+şeyin, ölü, j'nin, k'nın neydi?
+
+714
+01:33:43,796 --> 01:33:45,796
+ve Algoritmalar dersi.
+
+715
+01:33:45,796 --> 01:33:47,796
+Algoritmalar dersi.
+
+716
+01:33:51,347 --> 01:34:19,507
+G'nin heyti 1 aslında. Dolayısıyla şeyler mesela şurada baktığınız zaman şöyle yapayım isterseniz. Mesela şunların heytleri 0. Ondan sonra işte şey B'nin heyti 2. Ondan sonra E'nin heyti 1. Ondan sonra işte G'nin 1.
+
+717
+01:34:19,507 --> 01:34:23,447
+C'nin 2, A'nın da 3
+
+718
+01:34:23,447 --> 01:34:27,228
+D, F, H'de 0 o zaman değil mi?
+
+719
+01:34:27,708 --> 01:34:31,007
+Evet, D, F, D, H'de 0
+
+720
+01:34:37,011 --> 01:34:53,011
+O zaman eğer ağacın yüksekliğinden bahsediliyorsa bu ağacın yüksekliği root'un yüksekliğidir.
+
+721
+01:34:55,380 --> 01:35:22,599
+mesela burada bizim ağacımızın yüksekliği 3. Yani root'un yüksekliği, root'un en alttaki yaprağı uzaktığı. Şimdi bizim en alttaki yaprağımız işte ÖJK bunlar. Yani şeye uzaktığı derseniz, P'ye uzaktığı derseniz çünkü aslında iki A'nın ama hate dediğimiz zaman, hate of A dediğimiz zaman,
+
+722
+01:35:22,599 --> 01:35:27,420
+A'nın en alt katmandaki yaprağı uzaktım aslında.
+
+723
+01:35:27,900 --> 01:35:35,600
+O gözle bakarsanız işte 0, 1, 2, 3 şeklinde işte şuradan da gelirseniz, buradan da gelirseniz.
+
+724
+01:35:36,600 --> 01:35:42,019
+Şeyin, root'un şeyi yüksekliği 3.
+
+725
+01:35:49,011 --> 01:36:15,772
+Hocam bu yükseklik kargaşa oluşturmuyor mu? Mesela level 2'deki ve level 3'deki nodların sıfır olma ihtimali oluyor. Yani D, F ve H de sıfır, IJK da sıfır yükseklik olarak. Ama biri level 2'de, biri level 3'de o bir kargaşa yaratmıyor mu?
+
+726
+01:36:15,772 --> 01:36:21,252
+yoksa iki bilgi de elimizde olduğu için hangisi işimize yararsa onu mu kullanıyoruz?
+
+727
+01:36:21,892 --> 01:36:27,732
+Şimdi normalde aslında genelde konuşulan şey hep ağacın yüksekliğidir.
+
+728
+01:36:27,732 --> 01:36:35,671
+Yani şimdi niye bilmek istersin herhangi bir düğümün yüksekliğini?
+
+729
+01:36:36,151 --> 01:36:40,651
+O düğüme işte bir noktadan nasıl ulaşacağını bilmek istersin.
+
+730
+01:36:40,651 --> 01:37:02,851
+Ondan ötürü mesela şeyini, reptini bilmek isteme sebebi şudur. Dersin ki işte reptini niye bilmek istersin? Kökten yola çıktın, B'ye ne kadar zamanda ulaşacağım? B'ye ne kadar zamanda ulaşırsın kökten çıktığında? Bir adımda ulaşırsın. Yani B'nin derinliğini bilme ihtiyacın bundan ötürüdür.
+
+731
+01:37:02,851 --> 01:37:14,791
+Aynı şekilde işte kökten yola çıktığımda k'ya ne kadar derinliğine kanun 3 ne kadar şeyle ulaşırım işte 3 adımda ulaşırım gibi
+
+732
+01:37:14,791 --> 01:37:25,531
+Yani ya bir düğme özel bir işin varsa düğümün derinliğine veya işte yüksekliğine ne bilmek işine yarıyorsa onu o şekilde kullanırsın
+
+733
+01:37:25,531 --> 01:37:39,071
+ama yani kargaşa falan yok burada çünkü hiyerarşiye göre düğümün ruta göre veya işte bağlı olduğu yaprağa göre nerede duracağı değişiyor yani.
+
+734
+01:37:39,071 --> 01:37:43,331
+Evsi zaten aynı sırada olsa bir anlamı olmaz ağaç yapısının değil mi?
+
+735
+01:37:43,631 --> 01:37:47,071
+Dolayısıyla bunu ya düğüm için özel olarak değerlendiriyorsundur.
+
+736
+01:37:47,811 --> 01:37:54,211
+Yani tekrardan söyleyeyim ruttan yola çıktığında P düğümüne kaç adımda gelirim diye soruyorsundur.
+
+737
+01:37:54,211 --> 01:37:55,811
+pet bulmaya çalışıyorsun.
+
+738
+01:37:55,931 --> 01:37:58,691
+Bu tak tak iki adımda geliyorsun ve onu iki çünkü.
+
+739
+01:37:59,172 --> 01:38:00,672
+Yani derinliği iki çünkü.
+
+740
+01:38:00,751 --> 01:38:02,211
+O nodun derinliği iki çünkü.
+
+741
+01:38:02,452 --> 01:38:03,191
+Anlatabildim mi?
+
+742
+01:38:03,431 --> 01:38:05,011
+Ya öyle bir ihtiyacın vardır.
+
+743
+01:38:06,471 --> 01:38:15,092
+Ya da ağacın asıl genellikle bilinmesi gereken şey ağacın yüksekliğini bilmek istiyorsun gibi.
+
+744
+01:38:15,172 --> 01:38:17,511
+Yani ağacın yüksekliğini niye bilmek istersin?
+
+745
+01:38:17,511 --> 01:38:23,232
+Bir noktadan çıktım en uzak noktaya ne kadar adımda geliyorum onun için bilmek istersin?
+
+746
+01:38:23,232 --> 01:38:31,851
+harcı yüksekliğini bilmen gerekir. Dolayısıyla buradaki her bilgi senin anmanitmandaki ihtiyacına göre kullanabileceğin bir bilgi.
+
+747
+01:38:31,952 --> 01:38:35,252
+Karışıklık falan olmaz hiçbir zaman yani endişe etme o konuda.
+
+748
+01:38:36,252 --> 01:38:36,812
+Olur.
+
+749
+01:38:38,952 --> 01:38:39,872
+Tamam.
+
+750
+01:38:45,108 --> 01:38:46,987
+Aynı şekilde efendim.
+
+751
+01:38:47,507 --> 01:38:53,347
+Bu height bilgisini notla beraber tutmakta fayda var sanki. Her defasında hesaplamak zor olabilir çünkü değil mi?
+
+752
+01:38:54,207 --> 01:39:02,147
+Tekrardan ihtiyacına bağlı olarak saklaman gerekmiyor. Çünkü yani gerçekten kullanacak mısın?
+
+753
+01:39:02,307 --> 01:39:11,187
+Hani ağacın stack içerisinde her büyüm için yüksekliğini sakla bilmem ne falan filan öyle bir şey yapmıyoruz biz normalde.
+
+754
+01:39:11,707 --> 01:39:14,927
+Ama tasarımın da ihtiyacın olursa kullanacağın bir şey.
+
+755
+01:39:15,108 --> 01:39:18,547
+Yani bunlar dediğim gibi
+
+756
+01:39:18,547 --> 01:39:22,527
+Yani ihtiyaç olduğunda bence çok faydalı olduğu durumlar olabilir.
+
+757
+01:39:23,067 --> 01:39:25,288
+Mesela C'nin iki hayti.
+
+758
+01:39:25,828 --> 01:39:30,148
+Onu bir G ve K'dan giderek bulabiliyoruz ama H'dan giderek bulamıyoruz.
+
+759
+01:39:30,148 --> 01:39:34,508
+Dolayısıyla tüm çaylıkları kontrol etmek yerine tutmakta fayda var gibi gözüktü bana.
+
+760
+01:39:37,027 --> 01:39:38,328
+Şimdi tekrardan söylüyorum.
+
+761
+01:39:38,427 --> 01:39:41,608
+Algoritmana bağlı olarak gerekiyorsa tutarsın.
+
+762
+01:39:41,608 --> 01:40:08,188
+Yani özellikle şu anda şunu anlıyorum, senin söylediğin ne demek istediğini anlıyorum. Her seferinde hesaplamayayım diyorsun. Yani aynen eğer şeyse onu sürekli kullanman gerekiyorsa, yüksekliğini işte levelini her seferinde kullanman gerekiyorsa o zaman haklısın. O zaman onu tutarsın zaten hesaplarsın. Bir yere koyarsın, tutarsın.
+
+763
+01:40:08,188 --> 01:40:24,228
+Şimdi Deptofetry dediğiniz zaman bu da aynı şekilde şeyden, roottan.
+
+764
+01:40:27,796 --> 01:40:52,476
+yapraklara en uzun yol aslında. O da 3 burada. Çünkü aynı mantıkla yani ağacın yüksekliği ve ağacın derinliği dediğimiz zaman ağacın bütününe baktığımız için bu da işte ağacın bütününe baktığımızda işte şuradan şu seviyeye olan mesafedir.
+
+765
+01:40:52,476 --> 01:40:57,976
+dolayısıyla derinliği ve yüksekliği bu ağacın 3'tür.
+
+766
+01:40:58,056 --> 01:41:00,316
+Buraya kadar sormak istediğiniz bir şey var mı?
+
+767
+01:41:05,844 --> 01:41:08,623
+Hocam internal node ile parent node tamamen aynı şey mi?
+
+768
+01:41:10,943 --> 01:41:13,643
+Internal node ile parent node aynı şey mi?
+
+769
+01:41:14,583 --> 01:41:21,783
+Yani aslında evet aynı şey çünkü bir tane çocuğu varsa internal node diyorsun.
+
+770
+01:41:21,783 --> 01:41:30,043
+O zaman mesela burada baktığın zaman işte A, D, C, E, F, G hepsi internal node.
+
+771
+01:41:30,163 --> 01:41:32,803
+Hepsi de aynı zamanda parent olan node var. Haklısın.
+
+772
+01:41:34,524 --> 01:41:35,783
+Tamamdır hocam, sağ olun.
+
+773
+01:41:35,844 --> 01:42:01,024
+Ben teşekkür ederim. Şimdi o zaman son iki tane daha terminoloji vereceğim. O da şöyle. Şimdi birincisi şöyle bir ağaçta iki düğümü birbirine bağlayan şey edge olarak geçiyor. Yani A ve B düğümünü bağlayan şey edge olarak biliniyor.
+
+774
+01:42:01,024 --> 01:42:18,284
+mesela nedir? Bu bir karar ağacı olsun. Diyelim ki işte karar ağacında renk diyorsun. Ondan sonra işte kırmızı bir et, işte yeşil bir et, pembe bir et.
+
+775
+01:42:18,283 --> 01:42:22,543
+Aç, mesela kırmızıysa diyorsun ki yuvarlak mı?
+
+776
+01:42:24,163 --> 01:42:33,483
+İşte evet bir Aç, hayır bir Aç falan gibi Aç bilgileri aslında şey olabiliyor.
+
+777
+01:42:33,483 --> 01:42:42,643
+Yani işte düğümler arasındaki geçişi sağlayan anlamlı bilgi olabiliyor mesela.
+
+778
+01:42:42,643 --> 01:43:10,883
+mesela ne bileyim şurası İstanbul burası Ankara işte burası 1500 kilometre bu bir edge, edge İstanbul Ankara arasındaki mesafeyi gösterebiliyor gibi iki düğümü birbirine bağlayan şey neyse bilgi neyse ona biz edge diyoruz birincisi bu söyleyeceklerinden ikincisi de
+
+779
+01:43:21,140 --> 01:43:31,999
+iki düğüm arasındaki yola da pet diyoruz. Mesela A'dan D'ye petimiz şu şekilde.
+
+780
+01:43:37,300 --> 01:43:38,839
+A'dan E'ye
+
+781
+01:43:38,839 --> 01:43:42,760
+petimiz
+
+782
+01:43:42,760 --> 01:43:47,539
+A, işte B, D, E şeklinde
+
+783
+01:43:47,539 --> 01:43:48,939
+işte efendim
+
+784
+01:43:48,939 --> 01:43:52,739
+eee
+
+785
+01:43:53,908 --> 01:44:19,787
+B'den C'ye petinizde, B, C şeklinde. Pet de o zaman şeyi gösteriyor. Yani bir düğümden başka bir düğme olan hatta B'den C'ye peti farklı renkte boyunca öyle şey gösteriyor, yolu gösteriyor. Yani A'dan E'yi nasıl gidebileceğimizi gösteriyor.
+
+786
+01:44:19,787 --> 01:44:39,347
+Şimdi ağaçta dikkat etmeniz gereken şey aslında burada şey yok. Yani farkındaysanız şöyle bir şey yok. Yani şurada bir H var. H de geliyor. D'ye bağlanıyor gibi bir durum söz konusu değil.
+
+787
+01:44:39,347 --> 01:45:01,227
+yani bundan ötürü de ağaç üzerinde A'dan E'ye giderken 10 tane farklı peç olamaz yani değil mi? Ağaçta çünkü böyle bir bağlantı yok yani diyelim ki A'dan şöyle P'ye geldin ondan sonra da H'de D'ye bağlantı falan gibi bir bağlantı yok.
+
+788
+01:45:01,227 --> 01:45:14,227
+Yani D'nin şeyi varsa bir tane parent var. Öyle birden fazla yoldan geldi, yoldan mı geldi? Şöyle göstereyim.
+
+789
+01:45:14,227 --> 01:45:24,227
+Şeyiniz yok, parentınız yok. Yani şöyle bir şey söz konusu değil. C bir de buradan bir parent gelsin diye bir şey söz konusu değil.
+
+790
+01:45:24,227 --> 01:45:26,227
+Bu ne kadar sormak istediğiniz bir şey var mı?
+
+791
+01:45:40,372 --> 01:45:52,372
+Peki, o zaman bir de şunları konuşalım. Termin örejiyi ezberlememiz gerekmiyor ama zaman içerisinde kullana kullana zaten şey yapıyorsunuz, öğreniyorsunuz.
+
+792
+01:45:52,372 --> 01:46:07,372
+Yani en çok kullanılan termin öreji de bence şeydir, bir root çok kullanılıyor, bu ağacın kökü nedir çok kullanılır. Bir de yaprak çok kullanılır, işte yapraklara nasıl gideceğiz falan şeklinde.
+
+793
+01:46:07,372 --> 01:46:25,031
+ara düğümler arada kaynar. Genelde onlarla ilgili terminolojiyi çok da ezbere bilmeniz gerekmiyor. Bir de PET gayet doğal olarak A'da E'ye nasıl gideceğiz falan PET çok kullanılan terminolojideki kelimeler.
+
+794
+01:46:25,031 --> 01:46:27,892
+Şimdi mesela bir de şunlar var.
+
+795
+01:46:28,892 --> 01:46:41,851
+Alt ağaçlar baktığınız zaman bir şeyin, düğümün çocuklarından itibaren olan ağaç bir alt ağaç.
+
+796
+01:46:41,851 --> 01:46:48,412
+Yani baktığımız zaman işte şurası bir
+
+797
+01:46:53,076 --> 01:47:02,115
+Şurası bir A'nın altı ağacı aslında. Şurası bir altı ağacı.
+
+798
+01:47:02,323 --> 01:47:08,323
+değiştirmek istedim ama değiştirelim. Ha şurada. Şurada bir altı aç mesela.
+
+799
+01:47:16,467 --> 01:47:25,348
+yani kendisine göre baktığımız zaman şey yapalım mesela şurada böyle bir Y olsun bir dakika.
+
+800
+01:47:25,348 --> 01:47:40,148
+şöyle bu bir altı ağaç. Bakın üzerini boyunca ne yapıyorum? Mesela yaptı valla şu FG'de bir altı ağaç.
+
+801
+01:47:40,148 --> 01:47:42,648
+C'ye göre altı ağaç.
+
+802
+01:47:42,848 --> 01:47:44,947
+Aaa tüh yapamadım.
+
+803
+01:47:45,787 --> 01:47:47,068
+Şöyle yaparsam olur mu?
+
+804
+01:47:49,107 --> 01:47:49,707
+Şurası.
+
+805
+01:47:50,868 --> 01:47:52,107
+Bu da bir saptırayım.
+
+806
+01:47:53,008 --> 01:47:57,828
+Yani baktığımız noktaya göre altı ağaçlar mesela A'nın iki tane altı ağacı var.
+
+807
+01:47:57,828 --> 01:48:00,287
+Bir B'ye göre olan altı ağaç.
+
+808
+01:48:00,847 --> 01:48:03,148
+Bir de C'ye göre olan altı ağacı var.
+
+809
+01:48:04,167 --> 01:48:07,927
+Yani A'nın iki çocuğu var çünkü B çocuğu ve C çocuğu.
+
+810
+01:48:07,927 --> 01:48:17,367
+dolayısıyla orada iki tane alt ağaç var. C'nin de F diye bir çocuğu var. C'nin aşağısı da o zaman C'ye göre bir alt ağaç falan böyle.
+
+811
+01:48:18,188 --> 01:48:24,247
+Dolayısıyla şeyler mümkün yani bu alt ağaçları kendi içerisine değerlendirmek mümkün.
+
+812
+01:48:24,368 --> 01:48:28,828
+Mesela öyle bir ihtiyacınız vardır ki A'nın sol tarafında ilerleyeceksinizdir.
+
+813
+01:48:28,828 --> 01:48:35,828
+O zaman B saptörüysiyle ilgilenirsiniz. Hiç C saptörüysiyle C'den olan saptörüyle ilgilenmezsiniz gibi.
+
+814
+01:48:35,828 --> 01:48:55,947
+Böyle bir şey var. Ve son olarak da bununla bitiriyorum artık şeyleri. Baktığınız zaman mesela bu bir ağacınız ama şurada da bir başka ağacınız olabilir. Tamamen bağımsız.
+
+815
+01:49:01,971 --> 01:49:24,451
+Bu tamamı ama aynı amaç için kullanılıyor bunlar. Buna forest deniyor. Yani birden fazla ağaçtan oluşan bir yapınız varsa buna forest deniyor. Mesela şey örneğini verirsek, bu aile ağacı örneğini verirsek, birbirine bağlı değiller.
+
+816
+01:49:24,451 --> 01:49:52,271
+Aynı apartmandaki farklı ailelerin aile ağacını göstermek istiyorsunuz. Bunlar bir forest oluşturuyorlar. Fakat şey değiller yani birbirleriyle bağlı değiller. Mesela şey göstermek istiyorsunuz ne bileyim işte hayvanları göstermek istiyorsunuz. Yok şeyleri göstermek istiyorsunuz. Canlıları göstermek istiyorsunuz ama onun da tepesi var.
+
+817
+01:49:52,271 --> 01:50:01,271
+bu şekilde tepesi olmaması lazım. Birbiriyle şeyin olmaması gerekiyor. Bağlantısının en tepesinde başkasına olması gerekiyor.
+
+818
+01:50:01,271 --> 01:50:11,272
+Bu şekilde birden fazla ağaç parçasından oluşan şeye aynı amaç için kullanılan yapıyor polis peynir.
+
+819
+01:50:11,272 --> 01:50:14,272
+Buraya kadar sormak istediğiniz bir şey var mı?
+
+820
+01:50:20,243 --> 01:50:25,144
+O zaman 12-5 geçe kadar bir öre verelim. Sonra devam edeceğiz. Olur mu?
+
+821
+01:50:28,143 --> 01:50:28,843
+Olur.
+
+822
+02:02:51,764 --> 02:02:53,624
+Evet arkadaşlar, geri geldim.
+
+823
+02:03:08,243 --> 02:03:36,403
+Şöyle şeylere bakayım istiyorum ne kadar kimler var diye. Herkes bana bir burada diyebilir mi? Bir sayacağım bakayım kaç kişi bir hocam? [öğrenci] hocaman, onun müzikofonu yok burada. Tamam. Yaren Yıldırım. Dur ne yaptınız? Kimler kaldırdın? Kimler bu? Burada olanlar şey mi yapıyor? İyi de ben elleri nasıl örüyorum? Elleri yanlıyor. Yukarı gidin hocam müsteze. Tamam. Şahane tamam.
+
+824
+02:03:36,403 --> 02:03:57,403
+Tamam. Bu kadarcık mı? Kaç kişi varmış? 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 18, 18 kişi varmış. Çok komik aşağılarda.
+
+825
+02:03:57,403 --> 02:03:59,043
+Hocam ben el kaldıramıyorum ama
+
+826
+02:03:59,043 --> 02:04:01,503
+20 kişi kaldırdı
+
+827
+02:04:01,503 --> 02:04:05,523
+Bir kişi daha var
+
+828
+02:04:05,523 --> 02:04:06,663
+21 oldu
+
+829
+02:04:06,663 --> 02:04:09,523
+Evet 47'de 21 yani
+
+830
+02:04:09,523 --> 02:04:14,383
+Öbürleri de boşu boşuna internetinden yiyor anladım bu kadarıyla
+
+831
+02:04:14,383 --> 02:04:16,523
+El kaldıramıyorum yani utku muydu?
+
+832
+02:04:16,803 --> 02:04:17,604
+Evet hocam benim
+
+833
+02:04:17,604 --> 02:04:18,824
+Sen de kal
+
+834
+02:04:18,824 --> 02:04:21,063
+Hadi kaki o zaman 25 kişi falan
+
+835
+02:04:21,063 --> 02:04:25,383
+Başka ne? Çetten ne yazmışlar?
+
+836
+02:04:27,403 --> 02:04:30,803
+Meynimi verebilir miyim? Olur veririm. Meynimi veririm.
+
+837
+02:04:33,283 --> 02:04:36,223
+Ben demişim, bir dersi verdik biz aslında size.
+
+838
+02:04:37,223 --> 02:04:40,383
+Ama ne olur çok uzun yazmayın, şey yazmayın bir de.
+
+839
+02:04:41,203 --> 02:04:46,563
+Böyle uzun cevap isteyen bazısı yazıyor.
+
+840
+02:04:46,563 --> 02:04:51,343
+Yani düşünün ki bir kuruk insan var.
+
+841
+02:04:51,343 --> 02:05:05,343
+Aaaa ne? Entra basamadım. Bir dakika. Entra basıyorum. Gitmiyorum. Siz görüyor musunuz?
+
+842
+02:05:12,916 --> 02:05:26,416
+bir kadranı. Peki tamam, mail'i şurada yazacağım. Yazdığım da gitmedi çünkü. Elif et cerebros. Oldu mu? Şurası re. Cerebros.
+
+843
+02:05:31,347 --> 02:05:45,587
+Tamam mı? Mail yazmak isterseniz. Şey çalışmıyor. Yılkız adresinde bir sorun var. Çözemediler bilgi işlem tarafından. O nasıl çalışmıyor maddesi? Ben özel adres kullanıyorum.
+
+844
+02:05:45,587 --> 02:05:59,247
+Peki, artık sıkıldık herhalde bu şey meselesinden. Ağaç termineolojisi meselesinden devam edelim. Size soru sorayım şeyle ilgili. Ödevde yığını nasıl yaptınız?
+
+845
+02:05:59,247 --> 02:06:03,607
+soruyu nasıl yaptınız?
+
+846
+02:06:05,388 --> 02:06:06,967
+Hadi biraz konuyu değiştirelim.
+
+847
+02:06:07,127 --> 02:06:12,568
+A, B, C, 2, D, E, 1 falan böyle bir ödev vardı ya.
+
+848
+02:06:13,147 --> 02:06:13,907
+Nasıl yaptınız?
+
+849
+02:06:18,003 --> 02:06:24,003
+Yaptınız mı veya ödevlerinizi asisten arkadaşlara verdik, bakıyorlar böyle. Yaptınız mı?
+
+850
+02:06:26,003 --> 02:06:32,003
+Hocam ben değerleri aldım da, bir şey yapamadım. Toplayamadım tekrar.
+
+851
+02:06:32,003 --> 02:06:36,003
+Aa niye aşk olsun, o kadar sızlı yapış pop fonksiyonu yandım.
+
+852
+02:06:36,003 --> 02:06:39,003
+Süre yetmedi. Öncesinde yeterince hazırlanamadım.
+
+853
+02:06:39,003 --> 02:06:47,003
+Tamam bekleyin. Şimdi ne var? Aslında biliyorsunuz ABC'ye geldi, siteye yerleştirdiniz.
+
+854
+02:06:47,003 --> 02:07:04,603
+İkiyi görünce siteyin üstünden iki tane değeri pop edeceksiniz. Burada A var. D geldi, E geldi. Biri görünce siteyin üstünden bir tane değeri pop edeceksiniz. Ne oldu? A ve D oldu.
+
+855
+02:07:08,340 --> 02:07:30,600
+Basitti aslında, çok zor değil ama ben size şey için yine de hep teşekkür ediyorum, ederim yani kendi başımıza yapıyorsunuz. Şeyde ben mutlu oldum açıkçası. Birinci quizde şeyi görünce yani vardı tabii onu şeyle işaretledik. Hani böyle çok benzer, belli birlikte yapıldığı olanlara işaret koyduk. Çok fazla şey olanlara ancak şey verdik.
+
+856
+02:07:30,600 --> 02:07:43,180
+nedir? İşte kopya muamele işlemi yaptı. Ama genel olarak çok böyle hani aşırı kötü de olsa kendi başına yapan çok fazla kişi vardı.
+
+857
+02:07:43,180 --> 02:07:54,719
+Hani iyi olup kendi başına yapmak ötesinde bence kötü olmasına rağmen hiç ben kimseden bir şey anlayacağım, yapacağım demeniz çok daha önemli ve sizin için şey nedir?
+
+858
+02:07:54,719 --> 02:08:05,959
+faydalı. O yüzden ben hep teşekkür ederim size. Yani boşverin, puan hiç önemli değil. Önemli olan öğrenmeyiz. Zaten yeterince iyi öğrenirseniz puan da gelir arkasında.
+
+859
+02:08:07,379 --> 02:08:18,679
+Hocam doğru. Bu soruda siteyi önceden yazdığım halde string üzerinden çözdüm soruyu ve çözebildim. Orada stackle çözün de demiyordu. Yani puan kırma olur mu?
+
+860
+02:08:18,679 --> 02:08:48,439
+Şöyle şimdi bir kere biz ödevil stack ile ilgili olduğunu söyledik. Stack ile çözüm dememe sebebimiz stack ile çözüm diyordu. Yani stack ile çözülebileceğini görmemiz gerekiyordu. Eğer en karmaşıklıkla stack siz çözdüysen sıkıntı yok. Yani ondan da puan odasın stack ile çözüm demedik çünkü. Ama en karmaşıklıkla çözemediysen o kötü tabii.
+
+861
+02:08:48,679 --> 02:08:56,859
+Tamam. Yani ben de önce de siteyi yazdığım halde sınav telaşında string şeyine döndü bir anda formatına.
+
+862
+02:08:57,179 --> 02:09:02,439
+Stack fonksiyonlarını çevirmek zorunda kaldım. Ben de zorlandım kendim açıkçası. Stack daha kolaydı hatta.
+
+863
+02:09:03,199 --> 02:09:10,179
+Stack kolaydı. Stack en karmaşıklıkla çözmemiz çok zor. Yani çözdüysem de mutlu sanırım.
+
+864
+02:09:10,899 --> 02:09:11,579
+Tamamdır hocam.
+
+865
+02:09:12,379 --> 02:09:13,999
+Çözdün mü en karmaşıklıkla?
+
+866
+02:09:13,999 --> 02:09:37,539
+Yani ben n diye gördüm yani. Yani şöyle mesela hocam size şey soracaktım ben de. Mesela dokuz sayısı geldi diyelim. Dokuz karakter atacağız ya dışarı. Burada o dokuzu dönmemiz dokuz n oluyor. Bu şey sayılıyor mu mesela oradaki dokuz? n karmaşıklığı ortadan kaldırıyor mu? Mesela o dokuz için ayrı bir for dönüyoruz tek tek dışarı çıkarmak için.
+
+867
+02:09:37,539 --> 02:09:38,539
+Tabii ki.
+
+868
+02:09:39,200 --> 02:09:41,819
+Yani bir sefer yakmıyorsun ki.
+
+869
+02:09:43,219 --> 02:09:44,659
+Görmeden bir şey diyemem.
+
+870
+02:09:44,799 --> 02:09:58,720
+Yani şu anda gerçekten algoritmanı görmeden bir şey diyemem ama sonuçta ileri geri, ileri geri eğer sarıyorsan sürekli o zaman şey yani eni geçer yani geçiyor zaten.
+
+871
+02:09:58,959 --> 02:10:01,379
+Ama geçmeden çözebildiysen sıkıntı yok.
+
+872
+02:10:01,500 --> 02:10:03,539
+O tür pes atlamışsındır onu sen herhalde.
+
+873
+02:10:04,119 --> 02:10:06,299
+Geçmeden çöldüysen sıkıntı yok.
+
+874
+02:10:06,299 --> 02:10:08,479
+stack de daha kolay oldu.
+
+875
+02:10:08,599 --> 02:10:09,219
+Yani çok kolay.
+
+876
+02:10:09,359 --> 02:10:11,739
+Zaten size pushupupu falan vermiştik ya.
+
+877
+02:10:12,739 --> 02:10:16,179
+O açıdan yani her şey en azından altındaydı.
+
+878
+02:10:16,319 --> 02:10:20,279
+Stack de daha kolay olduğu için şey yaptık ama çözmüşsen sıkıntı yok.
+
+879
+02:10:20,579 --> 02:10:22,859
+Peki şimdi o zaman artık şeye geçiyorum.
+
+880
+02:10:24,179 --> 02:10:26,099
+Şeyi de size zaten çözecekler.
+
+881
+02:10:26,099 --> 02:10:28,159
+Çarşamba Dünanistan arkadaşlar.
+
+882
+02:10:28,279 --> 02:10:33,739
+Quiz 1'in cevabıyla şeyin cevabını çözecekler.
+
+883
+02:10:33,739 --> 02:10:44,319
+ödevlerin cevabını çözecekler. Böylece şey yapabilirsiniz. Görebilirsiniz. Peki. Devam edeyim mi artık?
+
+884
+02:10:44,659 --> 02:10:47,560
+Hocam not 100 üzerinden miydi? Usist 2 not.
+
+885
+02:10:48,200 --> 02:10:48,639
+Efendim?
+
+886
+02:10:49,319 --> 02:10:51,079
+Usist 2 not 100 üzerinden değil mi?
+
+887
+02:10:52,299 --> 02:10:54,739
+100 üzerinden ama 5 puan biliyorsunuz.
+
+888
+02:10:57,199 --> 02:10:58,219
+Peki teşekkür ederim.
+
+889
+02:10:58,239 --> 02:10:59,679
+100 üzerinden 5 puan.
+
+890
+02:10:59,679 --> 02:11:04,099
+Hocam bu ödevin notları ne zaman açıklanır acaba?
+
+891
+02:11:05,203 --> 02:11:24,843
+bilmiyorum asistanlar okuyorlar ama yeni aldılar listen ödevleri. Yani perşembe falandı galiba. Çarşamba oldu, perşembe veya cuma aldılar. Bir de kalabalıksınız ve onlarla az kişi oldukları için. Yani haftaya açıklanır herhalde. Bilmiyorum. Şey diye konuşmadık şu anda. Ne zaman açıklanınca ile ilgili.
+
+892
+02:11:25,843 --> 02:11:27,063
+Tamamdır hocam.
+
+893
+02:11:27,063 --> 02:11:29,783
+Şimdi devam ediyorum arkadaşlar.
+
+894
+02:11:30,563 --> 02:11:32,363
+Şeyi nasıl göstereceksiniz?
+
+895
+02:11:33,023 --> 02:11:35,903
+Ağacı hangi?
+
+896
+02:11:41,043 --> 02:12:03,423
+veri yapısıyla göstereceksiniz. Yani tabii ki her zamanki gibi bu abstrakt bir structure. Yani aslında ağaç diye bir bilgisayar ortamında tanımlı yapı yok aslında. Yani hani biz için var artışık olarak şey dediğimiz zaman örneğin integer A10 dediğimiz zaman belli ki sizin için artışık 10 tane el tutuyor falan böyle bir şey var.
+
+897
+02:12:03,423 --> 02:12:32,443
+işte şey için de var nedir link liste yapısı için de var bunu yapabiliyorsunuz kendiniz ama ağaç için böyle bir şey yok yığın için kuruluk için olmadığı gibi ağaç için de aslında bilgisayar ortamında tanımı yapıyor o yüzden bunu sizin şey yapmanız lazım kurmanız lazım şimdi birinci yapabileceğiniz şey bu baya zor
+
+898
+02:12:32,443 --> 02:12:34,543
+array veri yapısı.
+
+899
+02:12:35,143 --> 02:12:39,443
+Şimdi array veri yapısı özellikle böyle şeylerde çok kolay değil.
+
+900
+02:12:39,443 --> 02:12:48,663
+Şimdi birazdan bugün yetişirme bilmiyorum da şeyde de görmüşsünüzdür, diskret matematikte de binary tree görmüşsünüzdür.
+
+901
+02:12:49,863 --> 02:12:55,443
+Yani ikili ağacı saklaması daha kolay ama böyle bir yapıyı ağaçta saklaması zor.
+
+902
+02:12:55,583 --> 02:12:57,563
+Yani şeyi biliyor olmanız lazım.
+
+903
+02:12:57,563 --> 02:13:03,523
+her düğümün en fazla kaç çocuğu olabileceğini biliyor olmanız lazım.
+
+904
+02:13:04,163 --> 02:13:05,983
+O kadar yer açmamız lazım.
+
+905
+02:13:06,123 --> 02:13:13,463
+Mesela burada her düğümün maksimum 3 çarede olacağını biliyorsanız o zaman şöyle yaparsınız.
+
+906
+02:13:13,463 --> 02:13:25,303
+Dersiniz ki şimdi şu 0, A, 1, B, 2, C, 3 boş.
+
+907
+02:13:25,303 --> 02:13:48,903
+Yani şurada aslında bir boş yer var. Bir düğüm gelirse oraya yerleştireceğiz. Ondan sonra işte 4D, 5E, 6P, işte 7 şu sıra yani level level der diyorsunuz.
+
+908
+02:13:48,904 --> 02:14:00,404
+Şurası 0, şurası 1, şurası 2, burası 3, 4, 5, 6, 7, mesela burada bir tane 8 var, burada bir tane 9 var gibi
+
+909
+02:14:00,404 --> 02:14:11,723
+böyle boş gözler bıraka bıraka her level için hesaba katarak maksimum çocuk sayısı neyse onu hesaba katarak
+
+910
+02:14:11,723 --> 02:14:14,743
+boş gözler bıraka bıraka ilerlersiniz.
+
+911
+02:14:14,743 --> 02:14:16,904
+Şimdi birinci yapabileceğiniz şey bu.
+
+912
+02:14:16,904 --> 02:14:28,743
+Tabii sizin de gördüğünüz gibi bayağı sıkıntılı bir şey. Böyle bir şeyde boş gözler çok fazla şeyi iyi biliyor olmanız lazım.
+
+913
+02:14:28,924 --> 02:14:34,603
+Maximum çocuk sayısının hiçbir zaman taşınmayacağını falan bundan emin olmanız lazım.
+
+914
+02:14:34,603 --> 02:14:42,523
+Eğer binary tree ise dediğim gibi sıkıntı yok. Çünkü her günün en fazla iki çocuğu olacağından kesin elisiniz binary tree'yi de.
+
+915
+02:14:42,523 --> 02:15:03,163
+o bir nebze daha kolay ama böyle bir ağaçtı. Biraz sıkıntılı bir problem. O yüzden genellikle ağaçlarda link listeleri yapısı kullanılır. Hani link listeleri anlatırken diyordum ya çok kullanılır, iyi öğrenmeye çalışın diye link listeleri yapısı kullanılır.
+
+916
+02:15:03,163 --> 02:15:04,503
+O zaman şöyle olur.
+
+917
+02:15:05,303 --> 02:15:15,343
+Şimdi bu A, A'nın ondan sonra diyelim ki işte
+
+918
+02:15:22,868 --> 02:15:28,647
+A
+
+919
+02:15:27,347 --> 02:15:29,347
+şöyle gösterelim maksimum.
+
+920
+02:15:35,091 --> 02:15:45,331
+benimki üç çocuğu var. İşte birisi Bey'i gösteriyor.
+
+921
+02:15:44,564 --> 02:16:04,123
+işte birisi C'yi gösteriyor. Birisi de şu anda N'ı gösteriyor. Ondan sonra işte B'nin üç tane çocuğu var. İşte birisi D'yi gösteriyor. Bu N'ı gösteriyor. Bu işte E'yi gösteriyor.
+
+922
+02:16:10,163 --> 02:16:36,263
+gibi böyle bir linked list yapısıyla ilerleyebilirsiniz. Bu genelde daha çok tercih edilen bir şey. Çünkü bu da şeyler de çok kolay. Yani işte örneğin ekleme silme yaparken şimdi bunları ikili ağaçta anlatacağım. Detay eklemek istemiyorum. Çünkü normalde bizim daha çok kullanacağımız ağaç, ikili ağaç olacak ama burada da görün diye sadece örnek vereceğim.
+
+923
+02:16:36,263 --> 02:16:53,763
+normalde işte mesela burada bir diyelim ki G düğümünü sildiğiniz zaman yapacağımız şey işte C'nin şeyine gösterdiği düğümü göstermektir.
+
+924
+02:16:53,763 --> 02:17:03,403
+Yani silme işlemi burada daha kolaydır. Ağaçtaki gibi, şeydeki gibi, sildiğiniz zaman ağacı organize etmekte güçlük çekmezsiniz.
+
+925
+02:17:03,403 --> 02:17:06,403
+Şimdi bunu burada kesip hemen binary tree'e geçeceğim.
+
+926
+02:17:06,503 --> 02:17:11,243
+Çünkü kafamız karışmasın çok daha temiz bir şekilde nasıl yapıldığını görün diye.
+
+927
+02:17:11,683 --> 02:17:13,423
+Sadece burada şeyi görmekizi istiyorum.
+
+928
+02:17:13,583 --> 02:17:20,583
+Yani ya bizi şeklinde ya İngilizce şeklinde ağaç ıksını gerçekleştirebilirsiniz.
+
+929
+02:17:21,244 --> 02:17:25,664
+Rahat anlaşılıldığı açısından binary tree üzerinde göstermek istiyorum.
+
+930
+02:17:25,664 --> 02:17:34,744
+Şimdi binary tree dediğimiz şey aslında bir düğümün en fazla iki tane çocuğunun olabildiği durum.
+
+931
+02:17:34,744 --> 02:17:39,384
+Şunların hepsi aslında binary tree.
+
+932
+02:17:39,384 --> 02:17:57,983
+en fazla işte şuraya da koyayım isterseniz bir düğümün en fazla iki tane şeyin olabildiği, çocuğunun olabildiği yapıya binary tree diyoruz.
+
+933
+02:17:57,983 --> 02:18:06,384
+Şimdi binary tree de şöyle bir şey var o zaman bir tane root'umuz var.
+
+934
+02:18:06,383 --> 02:18:13,883
+Ruta bağlı bir tane sol ağacımız var.
+
+935
+02:18:13,883 --> 02:18:19,463
+Bir tane de sağ ağacımız var.
+
+936
+02:18:24,531 --> 02:18:31,351
+bu şekilde binary tree'nizi oluşturabiliyorsunuz.
+
+937
+02:18:31,351 --> 02:18:40,251
+o zaman ben şey dediğim zaman örneğin şöyle bir binary tree'n var dediğim zaman şimdi az önceki şeyleri daha iyi anlayacaksınız.
+
+938
+02:18:41,452 --> 02:18:50,351
+mesela işte şöyle bir binary tree'n var dediğim zaman o zaman liste olarak yani dizi olarak şöyle array diyeyim.
+
+939
+02:18:50,351 --> 02:18:54,792
+Erey olarak gösterirseniz şöyle göstereceksiniz.
+
+940
+02:18:55,372 --> 02:19:01,372
+Her düğümün en fazla iki düğümü olabileceğine bildiğimize göre diyeceksiniz ki
+
+941
+02:19:01,372 --> 02:19:04,911
+şurası sıfırsa burası bir burası iki.
+
+942
+02:19:06,351 --> 02:19:14,311
+Her iyici düğümün sol tarafındaki düğüm ikiyi artı birinci göze yerleşir.
+
+943
+02:19:14,311 --> 02:19:22,371
+sağ tarafındaki düğümde 2i artı ikinci göze yerleşir.
+
+944
+02:19:22,791 --> 02:19:29,451
+Yani o mantıkla bu D düğümü 2i artı birinci gözde yani beşinci gözde.
+
+945
+02:19:29,451 --> 02:19:34,392
+Neden? Çünkü aslında burada beynin iki tane çocuğu gelebilir.
+
+946
+02:19:34,392 --> 02:19:52,171
+3 ve 4. göze E6'da F'de şurası şeyse gelebilecek yerse 2 artı 2 de 14. göze. O zaman ne oldu? A burada, B burada, C burada, D burada, E burada.
+
+947
+02:19:58,579 --> 02:20:19,299
+F de burada şeklinde oldu. Şimdi burada da gördüğünüz gibi aslında sıkıntı var. Aslında şu anda 2, 4, 6 göz dolu ama 15'lik yere en az ihtiyacınız var. Hani bunun altları da diyelim ki şöyle bir tane daha koyayım hadi. G'yi de şöyle koyayım. Orası ne oldu? G neresi oldu o zaman?
+
+948
+02:20:19,299 --> 02:20:48,359
+2x28 30. göz oldu. 30. göze de y'yi yerleştirdiniz falan. Baya böyle bir boş yer problemi var burada, sıkıntı var. O yüzden binary tree genellikle liste veri yapısıyla gösterilir. Ve şöyle olur. Eğer şurada value varsa burada left address, burada da right address olur.
+
+949
+02:20:49,299 --> 02:20:52,239
+Structure'mız bu şekilde şimdi göstereceğim.
+
+950
+02:20:53,319 --> 02:20:55,419
+Buna göre örneğin burada A var.
+
+951
+02:20:57,239 --> 02:21:01,279
+İşte left'i B'yi gösteriyor.
+
+952
+02:21:03,279 --> 02:21:08,219
+Right'ı da C'yi gösteriyor.
+
+953
+02:21:09,159 --> 02:21:13,399
+İşte B'nin left'i null şu anda.
+
+954
+02:21:14,479 --> 02:21:15,779
+Right'ı da null.
+
+955
+02:21:15,779 --> 02:21:21,079
+ama işte C'nin lefti D'yi gösteriyor.
+
+956
+02:21:24,724 --> 02:21:27,204
+right da E'yi gösteriyor gibi.
+
+957
+02:21:31,156 --> 02:21:33,656
+Buraya kadar sormak istediğiniz bir şey var mı?
+
+958
+02:21:44,084 --> 02:21:52,523
+O zaman böyle bir binary'nin B'siyle structure, Bnone diye bir structure tanımlarsak neyiniz var burada?
+
+959
+02:21:53,183 --> 02:21:56,803
+Aslında mesela integer value'unuz var diyelim ki.
+
+960
+02:21:56,803 --> 02:22:02,883
+Yani yine bu da bir structure olabilir, ne bileyim işte kişilerin adı, soyadı, adresi.
+
+961
+02:22:05,443 --> 02:22:07,743
+Kimlik numarası falan filan gibi.
+
+962
+02:22:08,424 --> 02:22:13,883
+Ondan sonra ve Bnone tipinde left pointer'ınız var.
+
+963
+02:22:14,084 --> 02:22:24,084
+ve B-none tipinde right pointer'ınız var. Böyle bir yapınız var mesela.
+
+964
+02:22:25,984 --> 02:22:28,203
+Buraya kadar sormak istediğiniz bir şey var mı?
+
+965
+02:22:40,852 --> 02:22:42,852
+Peki, devam ediyorum.
+
+966
+02:22:47,827 --> 02:23:12,168
+Şimdi peki binary tree'iniz bu şekilde iken şeyleriniz nasıl olabilir? Ağaç üzerinde gezmeleriniz nasıl olabilir? Yani bu ağacın tamamı üzerinde bir işlem yapmak istiyorsanız ağaç üzerinde gezmeleriniz nasıl olabilir?
+
+967
+02:23:12,168 --> 02:23:17,208
+Şimdi mesela bundan neyi kastettiğimi bir örnek üzerinden göstereyim.
+
+968
+02:23:17,688 --> 02:23:20,868
+Diyelim ki bu bir aritmatik expression tree idi.
+
+969
+02:23:21,708 --> 02:23:26,668
+A artı B şeklinde bir ağacımızın olduğunu düşünelim.
+
+970
+02:23:27,487 --> 02:23:29,927
+Bunun üzerinde üç tür gezebilirsiniz.
+
+971
+02:23:29,927 --> 02:23:30,927
+Birincisi...
+
+972
+02:23:35,188 --> 02:23:59,868
+Preorder Traverse'ı, arithmetic expression için bu prefix işlemi aslında. Preorder dediğinizde şöyleyken, burada yaptığımız şey, önce node'a gidiyorsunuz, oradan left'ine gidiyorsunuz, oradan right'ına gidiyorsunuz.
+
+973
+02:23:59,868 --> 02:24:14,427
+Yani Reorder dediğiniz zaman yaptığınız şey artı AB şeklinde. Yani şuradan çıktığınız artı AB şeklinde.
+
+974
+02:24:16,548 --> 02:24:25,208
+Bu dediğim gibi şey için, expression tree için prefix işlemi aslında.
+
+975
+02:24:25,208 --> 02:24:32,208
+ikinci yapabileceğiniz in order traversi
+
+976
+02:24:36,819 --> 02:25:00,279
+orada in order dediğimiz ne? A artı B yani şu. O zaman yaptığımız şey ne? Left ile başlıyorsunuz. Node diyorsunuz. Right diyorsunuz. Yani A artı B. Bu da infix.
+
+977
+02:25:03,731 --> 02:25:09,471
+Üçüncüsü de, bunları diskret matematikte bu şekilde gösterdiğer mi size?
+
+978
+02:25:12,211 --> 02:25:12,911
+Evet hocam.
+
+979
+02:25:13,572 --> 02:25:15,572
+Ağaçta gezmeyi gördünüz mü?
+
+980
+02:25:17,971 --> 02:25:21,832
+Evet hocam, ağaçlarla ritmetik işlemler yapmıştık.
+
+981
+02:25:22,252 --> 02:25:25,091
+O ara gördünüz. Tamam, o zaman çok durmayacağım üzerinde.
+
+982
+02:25:27,191 --> 02:25:31,152
+Postordur dediğinizde de şöyle yapıyorsunuz.
+
+983
+02:25:31,152 --> 02:25:44,151
+yani left diyorsunuz, right diyorsunuz ve en son nodu geçiyorsunuz yani A, B, artı yapıyorsunuz.
+
+984
+02:25:44,511 --> 02:25:49,291
+Bu da sizin bildiğiniz postfix aslında arıtmak expression'da.
+
+985
+02:25:49,291 --> 02:25:53,891
+Bir tane örnek üzerinden göstereceğim sadece. Bir dakika.
+
+986
+02:26:07,156 --> 02:26:19,656
+Şimdi burada şey dediğimiz zaman, preorder dediğimiz zaman dediğimiz şey node, left, right şeklinde. Nasıl gidiyoruz şimdi?
+
+987
+02:26:19,656 --> 02:26:39,416
+node'dan başladık. Artıdan yani düğüm node şuradan başladık. Artıyı yazdık. Left'ı A'yı yazdık. Right'ı. Right'ın şeyini yazıyoruz. Nedir?
+
+988
+02:26:39,415 --> 02:26:53,135
+root'unu yazıyoruz. Yani çarpıyı yazıyoruz. Left'ini yazıyoruz. B'yi yazıyoruz. Right'ını yazıyoruz. C'yi yazıyoruz. Yani şu sırayla ilerledik.
+
+989
+02:26:53,135 --> 02:27:06,015
+1, 2, 3, 4, 5. Bu sırayla ilerledik. Aynı şeyi in order yazalım. Bir tane örnek yapacağım.
+
+990
+02:27:06,015 --> 02:27:12,635
+yani dediğim gibi diskret alan anlayan karışık olursa diye in order'ını yazalım.
+
+991
+02:27:13,775 --> 02:27:21,516
+In order'da left node right sırasıyla ilerliyoruz.
+
+992
+02:27:21,875 --> 02:27:22,935
+In order'da o zaman.
+
+993
+02:27:23,555 --> 02:27:25,295
+Şimdi önce left'ten başladım.
+
+994
+02:27:26,895 --> 02:27:30,195
+A node artı.
+
+995
+02:27:31,855 --> 02:27:33,255
+Şimdi right'a geldim.
+
+996
+02:27:33,255 --> 02:27:51,795
+right'a geldiğimde right'ın left'inden başladım. Yani 1, 2, right'ın left'indeyim. 3, B, node çarpı right'ın right'ı C. A artı B çarpı C.
+
+997
+02:27:51,795 --> 02:27:58,795
+Aynı şekilde post order yazarsam.
+
+998
+02:27:58,795 --> 02:28:07,435
+Hocam numaralandırmada bir hata oldu. A1 artı 2 olacaktı.
+
+999
+02:28:08,275 --> 02:28:10,596
+Evet evet doğru söylüyorsun. Çok güzel.
+
+1000
+02:28:13,096 --> 02:28:19,156
+A1 artı 2 değil mi? B3 çarpı. Tamam çok teşekkürler.
+
+1001
+02:28:19,156 --> 02:28:41,775
+şimdi post order'da ne olacak peki? Left, right, node olacak. O zaman başlayacağız şimdi. Left'den başladık. A ile başladık. Right'ına geçtik. Right'ındayız. Şimdi right, şurası tamamı right.
+
+1002
+02:28:41,775 --> 02:29:03,075
+right'ın left'ine bakıyoruz. Yani B, B2. Right'ın right'ına bakıyoruz. C, 3. Left bitti, right bitti. Şimdi nodu yazacağız.
+
+1003
+02:29:03,075 --> 02:29:14,555
+kendi içerisinde çarpı. Şimdi ne oldu? Left bitmişti, right da bitti. Şimdi node yazacağız.
+
+1004
+02:29:19,924 --> 02:29:32,563
+yani burada önemli olan şey left'te ne varsa tamamını bitireceksiniz, right'te ne varsa tamamını bitireceksiniz, ondan sonra node ile ilgili kısma geçeceksiniz. Mantık bu.
+
+1005
+02:29:32,563 --> 02:29:43,883
+O zaman burada ne var demektir? Böyle left'in tamamını bitecek, right'in tamamını bitecek dediğimiz zaman yapmanız gereken şey, şeyin ne derler?
+
+1006
+02:29:43,883 --> 02:29:55,223
+ağacın solunu bir bütün hani sol alt ağacı bir left olarak bütün görmelisiniz.
+
+1007
+02:29:55,223 --> 02:29:59,363
+Sağ alt ağacı right olarak bütün görmelisiniz.
+
+1008
+02:29:59,924 --> 02:30:03,703
+Left dediği zaman o alt ağaçtaki bütün işleri bitirmelisiniz.
+
+1009
+02:30:03,843 --> 02:30:07,543
+Right dediği zaman alt ağaçtaki bütün işleri bitirmelisiniz.
+
+1010
+02:30:07,543 --> 02:30:36,364
+Yani şu mantıkla yani şu A ise işte burada diyelim ki işte şöyle bir şey varsa şu sizin nodunuzsa şu sizin left subtree'iniz bu da right subtree'iniz bir dakika yazamadım.
+
+1011
+02:30:37,543 --> 02:30:52,563
+right subtree'niz. Ne olmalı? Bunları left dediğinde left subtree'ye işlemleri yapmalısınız. Ondan sonra right dediğinde de right subtree üzerinde işlemleri yapmalısınız.
+
+1012
+02:30:52,563 --> 02:31:04,103
+O zaman şey istediğinde şimdi birlikte bir tanesini yazalım. Ondan sonra diğerlerini sizin yazmanızı isteyeceğim.
+
+1013
+02:31:04,104 --> 02:31:13,944
+Ağaç üzerinde preorder traversal yap dediğinde preorder ne diyordu?
+
+1014
+02:31:13,944 --> 02:31:20,343
+Note left right diyordu. O zaman ne yapacağım?
+
+1015
+02:31:32,884 --> 02:31:43,384
+Önce nodu işleyeceğim. Arkasından left subtree ismi yapacağım. Arkasından right subtree ismi yapacağım.
+
+1016
+02:31:43,384 --> 02:31:53,384
+Şimdi bu ne demek? Left subtree dediğimiz şey de kendi içerisinde alt ağaçlardan oluştuğuna göre ben bu problemi nasıl çözebilirim?
+
+1017
+02:31:53,384 --> 02:32:02,384
+Recursif olarak çözebilirim değil mi? Yapabileceğim bir şey yok. O zaman önce bir düğümü yazayım.
+
+1018
+02:32:02,384 --> 02:32:04,384
+...
+
+1019
+02:32:05,652 --> 02:32:23,711
+bir values var. Ondan sonra Structure node tipinde left var, right var. Böyle bir düğüm olduğunu varsayalım.
+
+1020
+02:32:24,979 --> 02:32:45,660
+ve şey sırasıyla preorder sırasıyla şeyleri ağaçtaki bilgileri ekrana yazdırmak istediğimi düşüneyim. Şöyle yazayım ki karışmasın. Her şeyle böyle karışmasın.
+
+1021
+02:33:12,468 --> 02:33:18,707
+Şimdi eğer ne alsa yazacak hiçbir şey yok.
+
+1022
+02:33:22,644 --> 02:33:36,144
+O yüzden şöyle yapalım. Tree node null'dan farklıysa iş yapacaksınız. Tree node null'dan farklıysa ne yapacaksınız?
+
+1023
+02:33:40,051 --> 02:33:42,051
+şimdi root'u yazacaksınız.
+
+1024
+02:33:42,051 --> 02:33:44,051
+tree node'un
+
+1025
+02:33:46,051 --> 02:33:48,051
+v v üstünü yazacaksınız.
+
+1026
+02:33:52,371 --> 02:33:54,371
+Dans sonra...
+
+1027
+02:33:56,788 --> 02:33:57,288
+Pardon.
+
+1028
+02:34:04,531 --> 02:34:15,531
+fonksiyonu ne için çağıracaksınız? Tree node'u lefti için çağıracaksınız.
+
+1029
+02:34:19,283 --> 02:34:20,823
+raati için çağıracaksınız.
+
+1030
+02:34:29,108 --> 02:34:49,427
+şimdi bakın birlikte inceleyelim. Mesela şuna bakın. Bu ağaca bakın. Şimdi başladık. Trinode null'dan farklı mı? Yani hayır. Şöyle düşünelim isterseniz onu yazalım. Şimdi mesela bu da A var.
+
+1031
+02:34:49,427 --> 02:35:18,347
+lefti şurası valuesu value mu dedik onu ne dedik value bu lefti bu da righti tamam mı lefti B'yi gösteriyor ondan sonra righti da E'yi gösteriyor mesela oldu mu bu böyle bir ağaç yapısı bu da böyle aşağı doğru devam ediyor bunlar da böyle gidiyorlar şimdi preorder dediğiniz zaman
+
+1032
+02:35:19,427 --> 02:35:22,988
+Önce ne olacak bakalım?
+
+1033
+02:35:24,347 --> 02:35:32,128
+Eğer bu ağaca geldi, eğer null'dan farklıysa, null'dan farklı buradaki value'yu yazdıracak.
+
+1034
+02:35:32,128 --> 02:35:39,847
+İşte A'nın değeri kaçsa onu yazdırdı, 9 dedi, karakterse işte belki A var gerçekten, A dedi falan buradaki değeri yazdıracak.
+
+1035
+02:35:40,008 --> 02:35:43,347
+Bunu yazdırdıktan sonra ne yapacak?
+
+1036
+02:35:43,347 --> 02:35:52,067
+left'e gidecek yani left düğümü preorder fonksiyonunu left düğümü için çağıracak.
+
+1037
+02:35:52,067 --> 02:35:58,027
+Orada da her seferinde naldan farklıysa buradaki değeri yazdırıp onun left'ini çağıracak.
+
+1038
+02:35:58,167 --> 02:36:02,987
+Dolayısıyla böyle çağrı çağrı aşağı doğru left'i bitirmiş olacak.
+
+1039
+02:36:03,487 --> 02:36:10,847
+Eğer zaten nalsa fonksiyondan çıkıp bir aşağıya düştüğü için rayta düşer.
+
+1040
+02:36:10,847 --> 02:36:18,307
+bu sol tarafın tamamı bittiğinde artık nola geldiğinde ondan sonra ne olacak?
+
+1041
+02:36:18,307 --> 02:36:22,968
+İşte E için tekrardan, right için tekrardan çalışacak.
+
+1042
+02:36:23,288 --> 02:36:24,427
+Bir bakın buna lütfen.
+
+1043
+02:36:25,907 --> 02:36:27,627
+İsterseniz tekrar anlatabilirim.
+
+1044
+02:36:27,707 --> 02:36:29,608
+Sormak istediğiniz bir şey varsa sormak.
+
+1045
+02:36:33,587 --> 02:36:47,928
+recursive çağırmak zorundayım. Pardon. Neden? Çünkü yani her seferinde bir left subtree yani düğüm left subtree right subtree sırasıyla ilerliyorsunuz.
+
+1046
+02:36:47,928 --> 02:37:02,127
+Dolayısıyla A ile iş yaptığınız bir left subtree, B ile iş yaptığınız C aşağısı varsa aşağıdaki subtree, buranın tamamı bitti D aşağısı varsa aşağıdaki subtree,
+
+1047
+02:37:02,127 --> 02:37:18,367
+o da tamamen bitti o zaman left'in tamamı bitti o zaman şuradayım şuraya geldim şuradayım right subtree e'yi yaptım falan şeklinde devam edeceğim bir bakın sormak istediğiniz soru varsa cevap vereyim
+
+1048
+02:37:25,332 --> 02:37:27,332
+var mısınız?
+
+1049
+02:37:32,852 --> 02:37:34,852
+Kayet açık hocam sağ olun.
+
+1050
+02:37:34,852 --> 02:37:47,852
+Tamam, o zaman şimdi ben şeyi yazmayacağım. Burada keseceğim. Zaten bugün yeteri kadar böyle kuyruktan girdik, ağaçtan çıktık şeklinde bayağı bir şey yaptık.
+
+1051
+02:37:47,852 --> 02:37:53,852
+O yüzden in order ile post order için print fonksiyonunu kendiniz yazmaya çalışın.
+
+1052
+02:37:53,852 --> 02:38:10,911
+hatta yani şey yapın bence tavsiyem iyi olur. Böyle çok basit sayılarla ondan sonra hatta karakter girip şeyi de görebilirsiniz. Böyle expression tree'yi de görebilirsiniz. Hani ABC işte artı çarpı böyle falan gibi karakterler girersiniz.
+
+1053
+02:38:10,911 --> 02:38:25,471
+kendiniz işte elle bir expression tree oluşturursunuz diyelim ki ondan sonra da işte o expression tree'yi preorder yazdırırsınız, prefixini görürsünüz, inorder yazdırırsınız, infixini pardon görürsünüz falan.
+
+1054
+02:38:25,471 --> 02:38:39,591
+Böyle oynayabilirsiniz. Önce şey yazdırın, adım adım onu görün bence ben olsam preorder'ı görün. Arkasından da kendi başınızı inorder ile postorder yazmaya çalışın.
+
+1055
+02:38:39,591 --> 02:39:03,291
+Ben onları dediğim gibi size yani haftaya şey yapacağım zaten hani anlatacağım ama oynarsanız şimdi şey çok kullanılıyor ağaç ve graph en çok kullanılan veri yapıları ve bunlar da tabii şey kullandıkları için link bir liste falan kullandıkları için çaresiz link bir listeyi bilmeniz gerekiyor.
+
+1056
+02:39:03,871 --> 02:39:05,311
+Duyuyor musunuz da görüyor musunuz beni?
+
+1057
+02:39:07,131 --> 02:39:08,171
+Evet hocam duyuyoruz.
+
+1058
+02:39:08,171 --> 02:39:08,591
+Evet hocam.
+
+1059
+02:39:09,591 --> 02:39:35,251
+dolayısıyla yani bence hani çok gecikmeden şey yaparsanız böyle ufak tefek oynarsanız üzerinde o bilgiler sizin için kalıcı olur. Üzerine üzerine eklendikçe zorlanmadan çünkü şimdi ağaçlarda işte heap tree falan böyle daha değişik şeyler göreceğiz inşallah önümüzdeki hafta. Hani böyle üst üste geldiğinde zorluk çekmezsiniz.
+
+1060
+02:39:35,251 --> 02:39:40,971
+önümüzdeki haftaya daha şey gelebilirsiniz yani hazır gelirsiniz daha rahat edersiniz.
+
+1061
+02:39:41,352 --> 02:39:42,531
+Genel sorunuz var mı?
+
+1062
+02:39:42,531 --> 02:39:47,572
+Bu sorun istediğiniz aklınıza takılan bir şey var mı?
+
+1063
+02:39:49,572 --> 02:39:55,011
+Hocam peki bunun tree'nin oluşturulma şeklinde yazmamız gerekecek mi?
+
+1064
+02:39:55,891 --> 02:39:57,731
+Yoksa elle mi oluşturacağız mesela?
+
+1065
+02:39:58,891 --> 02:40:03,931
+Hayır hayır şimdi bu örnek için tabii ki elle oluşturun da size şeyi anlatacağım canım.
+
+1066
+02:40:03,932 --> 02:40:08,212
+yani ağaca insert nasıl yapılır, delete nasıl yapılır falan anlatacağım.
+
+1067
+02:40:08,331 --> 02:40:14,932
+Sadece ağaçta gezerken hani hangi sırayla gezdiğine örnek olsun deyip tabii ki şeyi anlatacağım.
+
+1068
+02:40:15,792 --> 02:40:29,971
+Siz şimdilik şey yaparsınız yani aynen yapabilmek için şeyi de bilmeniz gerekecek doğru insert falan da ya kendiniz yazacaksınız şimdi in order post order denerken.
+
+1069
+02:40:29,971 --> 02:40:38,792
+ellene in aslında yani ağacını spriy et edersiniz nasıl binary tree'ye insert edersiniz falan onlarla da oynayın isterseniz.
+
+1070
+02:40:39,131 --> 02:40:40,771
+Tamam hocam ben de onu sormuştum.
+
+1071
+02:40:40,771 --> 02:40:48,271
+Tamam haftaya ben derste onları anlatacağım çünkü size yani ağaca insert etmeyi, delete etmeyi falan anlatacağım.
+
+1072
+02:40:49,051 --> 02:40:56,731
+O zaman şey olursunuz daha kendinizle oynadığınız için üzerinde daha rahat olabilirsiniz.
+
+1073
+02:40:56,731 --> 02:41:09,011
+Peki var mı sorunuz? Veya yani evet onu doğru haklısın ayrıca bilmeden ilerleyemeyi de bilirsiniz. Öyle yani. Var mı sorunuz?
+
+1074
+02:41:09,831 --> 02:41:10,551
+Hocam merhaba.
+
+1075
+02:41:12,331 --> 02:41:13,751
+Tamam dinliyorum.
+
+1076
+02:41:14,291 --> 02:41:24,411
+Hocam quiz bir ve ödev ve herhangi bir şey göndermedim ben yüklemedim yani sisteme yapamadığım, yetiştiremediğim için açıkçası.
+
+1077
+02:41:24,411 --> 02:41:24,711
+Tamam.
+
+1078
+02:41:24,712 --> 02:41:30,152
+Hani katılım zorunu vesaire gibi bir şeyden dolayı bir sıkıntı oluşabilir mi acaba?
+
+1079
+02:41:31,432 --> 02:41:31,691
+Yok.
+
+1080
+02:41:32,564 --> 02:41:53,383
+Bu an puan, puan ne gidiyor şu anda. Ama yani hani şey olursa tabii devamsız sayılırsın. Yani hani vizemize bir sürü şey yani şimdi bu dönemde şey yok. Bize sorumluluğu yok ama sürekli olarak öyle bir katılama durumun olursa devamsız sayılabilirsin. Yani ona dikkat et.
+
+1081
+02:41:53,904 --> 02:41:57,263
+Anladım hocam. Teşekkür ederim. Rica ederim. Başka var mı?
+
+1082
+02:41:57,263 --> 02:42:25,403
+yani quizler mesela çünkü ilk derste de söyledik şey değil yani adı üstünde quiz olması sebebiyle şey günü söylüyoruz ders günü söylüyoruz 5-10 dakika öncesinden haber veriyoruz hani birazdan quiz olacak diye yani öyle hani onda ama zaten o toplamda 3 quiz vardı galiba işte 15 puan 5'er 5'er 15 puan etkiliyor
+
+1083
+02:42:25,404 --> 02:42:38,803
+dolayısıyla şey yani çok yüksek bir puanı yok ama yine de şey yani yapabildiğiniz kadar puan toplamaya çalışmak iyi bir de şey açısından iyi.
+
+1084
+02:42:38,803 --> 02:42:54,943
+Yani bu dönemde sizin öğrenmenizi sağlamanın başka yolu yok. Sürekli ödev, quiz, işledimlenme neyse bir şeyler yapmak zorundayız yoksa şey olmuyor yani bir türlü geçen dönemde biz bunu gördük.
+
+1085
+02:42:54,943 --> 02:43:22,203
+Bir önceki dönemde biz bunu gördük. Çok haklısınız yani çok zor sizin için. Sizi çok iyi anlamaya çalışıyorum, anlıyorum diyebileceğim. Ama öğrenciler ilerleyemiyorlar bir türlü ve dönem sonu geldiğinde çok sıkıntılı bir durum yaşanıyor. O yüzden yani böyle katılmaya çalışın, ödevleri yapmaya çalışın. Öğrenmeniz için faydesi çok fazla. Peki var mı başka?
+
+1086
+02:43:22,203 --> 02:43:45,103
+Hocam bu arada ben bir şey için teşekkür edeceğim. Yani hocam slide'dan anlatmamız için teşekkür ederim. Yani yazarak kendisi hem siz yazıyorsunuz, yazarken de bazı hatalar oluyor, bizim yapabileceğimiz hataları filan da gösteriyorsunuz. Yani yazdığınız için ben kendi adıma teşekkür ediyorum. Çünkü böyle açıkçası bizim için daha anlaşılır oluyor.
+
+1087
+02:43:45,103 --> 02:43:48,223
+Artık 1
+
+1088
+02:43:48,223 --> 02:44:09,143
+Ben teşekkür ederim. Çünkü bizim için çok zor bir dönem. Yani biz de sizin için en faydalısının ne olacağını çok bilemeden körlemesine ilerliyoruz açıkçası. Ben kendi adımı hep yazarak öğrendim bugüne kadar. O yüzden de öyle tane tane yazmanın size faydalı olacağını düşündüğüm için yazarak anlatıyorum.
+
+1089
+02:44:09,144 --> 02:44:25,064
+faydası oluyorsa çok mutlu oldum. Geri dönüş için de özellikle teşekkür ederim. Çünkü sizin geri dönüşleriniz de çok önemli. Yani anlayamıyoruz, siz de anlatıyorsunuz, çok yavaş anlatıyorsunuz, uykumuz geldi gibi geri dönüşleriniz de çok önemli.
+
+1090
+02:44:25,064 --> 02:44:55,043
+şöyle bir şey oldu geçen gün bir doktor öğrenci bir sunum hazırlamıştı yaptıklarıyla ilgili hem şey üzerinden anlatıyor PowerPoint üzerinden anlatıyor bir noktada ben kayboldum çünkü yani kayboldum derken kopmuşum yani çünkü slide'lar böyle değişiyor ama yazsa adım adım ilerleyeceği için yani bir dalıp gitmişim bir an fark etmişim.
+
+1091
+02:44:55,064 --> 02:44:57,524
+Bence bu çocukcağız anlatıyor.
+
+1092
+02:44:58,144 --> 02:45:07,144
+Yani bir sene size göre tabii ki daha tecrübeli, dikkati daha az dağılması gereken kişilerken bizim bile başımıza bu geliyor.
+
+1093
+02:45:08,064 --> 02:45:14,483
+Yani daha önce de söylediğim gibi bu üçüncü yarı yılınız, bir dördüncü yarı yılından nasıl geçeceğini hiç bilmiyoruz.
+
+1094
+02:45:14,483 --> 02:45:21,183
+Sizin için en faydanız neyse yani geri beslemeniz, sizin geri dönüşleriniz de çok önemli.
+
+1095
+02:45:21,183 --> 02:45:29,183
+Peki hadi bakalım o zaman çarşamba günü LAP saatinde tekrar görüşmek üzere size güzel bir hafta diliyorum.
+
+1096
+02:45:32,084 --> 02:45:33,103
+Teşekkürler Hocam.
+
+1097
+02:45:33,883 --> 02:45:35,103
+Sağ ol Hocam, şöyle iyi haftalar.
+
+1098
+02:45:35,564 --> 02:45:37,143
+Görüşmek üzere, iyi günler.

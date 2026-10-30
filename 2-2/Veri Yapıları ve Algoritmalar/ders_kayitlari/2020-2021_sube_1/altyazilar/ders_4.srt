@@ -1,0 +1,2551 @@
+1
+00:00:16,692 --> 00:00:18,692
+Merhaba arkadaşlar.
+
+2
+00:00:28,724 --> 00:00:35,803
+Teşekkürler. Şimdi hemen başlayabilirim aslında. Sizinle ekran paylaşayım.
+
+3
+00:00:45,363 --> 00:00:48,523
+mesajlara bakayım.
+
+4
+00:00:50,764 --> 00:00:52,443
+Teşekkürler herkese merkez.
+
+5
+00:00:52,443 --> 00:01:04,603
+Şimdi arkadaşlar, geçen hafta, pardon, pazartesi dünkü derste temel karmaşıklığı genelde işte n kare civarında olan sıralama algoritmalarından bahsediyorduk.
+
+6
+00:01:05,183 --> 00:01:11,683
+Bunlar işte birinci sınıfta hatta böyle giriş derslerinde algoritma tasarımında gördüğümüz algoritmalardı.
+
+7
+00:01:12,223 --> 00:01:13,463
+Hangilerinden konuştuk?
+
+8
+00:01:13,463 --> 00:01:24,544
+İşte bubble sort'tan konuştuk, selection sort'tan konuştuk, insertion sort'tan ve en son shell sort'tan bahsettik.
+
+9
+00:01:24,544 --> 00:01:27,683
+Şimdi bunların mantığı şu şekildeydi.
+
+10
+00:01:28,443 --> 00:01:37,303
+Aslında hepsi en kötü durumda en kare karmaşıklıkla çalışan algoritmalar.
+
+11
+00:01:37,803 --> 00:01:39,703
+Fakat şey diye konuşmuştuk.
+
+12
+00:01:39,704 --> 00:01:48,783
+peki bunların hepsi n kare karmaşıklıkla çalışıyorsa hangisini kullandım fark etmez mi olaya o gözle bakalım diye konuşmuştuk.
+
+13
+00:01:48,783 --> 00:02:00,124
+Ve şöyle karar vermiştik. Aslında şey olarak baktığımızda, bu worst case'i şuraya da best yazalım. Bestleriyle çok ilgilenmiyoruz.
+
+14
+00:02:00,124 --> 00:02:09,924
+Ama bubble sort da insertion sort aslında en iyi durumda en karmaşıklıkla çözülebilen algoritmalar.
+
+15
+00:02:10,384 --> 00:02:15,604
+Peki demiştik yani fark eder mi niye herkes bubble sortu bu kadar kötülüyor değil mi?
+
+16
+00:02:15,604 --> 00:02:25,503
+Yani aslında bubble sort işte şey olarak bakılan en performansı düşük algoritma bubble sort hep öyle biliyoruz.
+
+17
+00:02:25,503 --> 00:02:44,603
+neden peki biz insertion ve selection'ında şeyi yok yani selection'da çaremiz yok o hep n kare olacak bir ay görültü ama bir kere önce şey diye konuşmuştuk yani best case'ler üzerinde çok durmayalım çünkü best case çok nadir karşılaşacağımız bir durumdur.
+
+18
+00:02:44,603 --> 00:03:12,763
+genelde average case'lerle karşılaşırız. Bu arada bunların average case'leri de yani ortalama istatiksel olarak dizilerin karışıklığı ortalama durumda olduğunda yani ne küçükten büyüğe ne büyükten küçüğe sıralı değil ama karışık olduğunda average case durumuyla karşılaşıyoruz aslında ortalama karışıklıkta olduğunda ve ortalamada da yani public selection, instruction hepsi en kare aslında karmaşıklıkları.
+
+19
+00:03:12,763 --> 00:03:16,503
+Peki avantaj-dezavantaj olarak değerlendirirsek durum nedir?
+
+20
+00:03:17,043 --> 00:03:22,643
+BFS'un diğerlerine göre dezavantajlı gözükmesinin sebebi ne size sorayım?
+
+21
+00:03:28,243 --> 00:03:30,243
+sürekli yer değiştirme yapıyor.
+
+22
+00:03:30,243 --> 00:03:37,243
+Evet, kesinlikle güzel sesli cevap geldi. Geri dönebilirim. Chatleri çok görmüyorum biliyorsunuz. Daha doğrusu hiç görmüyorum.
+
+23
+00:03:37,243 --> 00:03:57,243
+bubblesort'un diğerlerine göre dezavantajı sürekli bir yer değiştirme olması ve bu yer değiştirme olmasının sıkıntısı da şey değil yani tamam yer değiştirebilirsin yeri geldiğinde değişecek hepsi bunu yapmak zorunda ama bunun iki iki iki iki arka arkaya bütün elemanlara bakıp
+
+24
+00:03:57,243 --> 00:03:59,743
+gerektikçe sürekli yer değiştirmek zorunda olması.
+
+25
+00:03:59,844 --> 00:04:06,663
+Yani hani şey de diğerleri de tabii ki sıralayabilmek için yer değiştirecekler ama onlar bir takım kontrolleri yapıyorlar.
+
+26
+00:04:07,163 --> 00:04:10,223
+Sonra bir noktada tamam bunun yerini değiştirelim diyorlar.
+
+27
+00:04:10,303 --> 00:04:16,644
+Bunu da sorsa iki iki iki iki her kontrolün sonunda bir yer değiştirme işlemi yapılma ihtiyacı var.
+
+28
+00:04:16,644 --> 00:04:25,343
+Ve bu da yer değiştirme de exchange yani A'daki B gözüne B'deki A gözüne şeklinde exchange olduğu için daha masraflı.
+
+29
+00:04:25,343 --> 00:04:31,503
+Dolayısıyla aslında biz bu dönem birazcık daha artık şeylere dikkat eder duruma geldik.
+
+30
+00:04:31,503 --> 00:04:41,424
+Yani yazdığımız bir algoritmada efektifliği sağlamak için nelere dikkat etmemiz gerekir konusunu da gündemimize aldık.
+
+31
+00:04:41,543 --> 00:04:48,263
+Yani sadece çalışan işte sadece diyelim ki tamam iç içe iki döngüyle en iyi yapabilirim.
+
+32
+00:04:48,263 --> 00:04:59,244
+o zaman ben bu algoritmayı yazdıysam iyidir'in ötesinde birazcık daha yazdığımız algoritmaların iyileştirilmesi için neler yapabiliriz bunlara bakabiliriz.
+
+33
+00:04:59,523 --> 00:05:13,883
+Şimdi bu gözle baktığımızda da şey diye konuştuk hatırlarsanız dedik ki bunların içerisinde bu üç tane n kare karmaşıklısı algoritma içerisinde aslında en şeyi efektifi o gözle baktığımız zaman
+
+34
+00:05:13,883 --> 00:05:17,403
+dedik ki insertion sort.
+
+35
+00:05:18,284 --> 00:05:20,324
+Neden insertion sort?
+
+36
+00:05:20,443 --> 00:05:25,163
+Çünkü insertion sort da şey var.
+
+37
+00:05:26,703 --> 00:05:29,863
+Yani bir şey avantajından faydalanıyoruz.
+
+38
+00:05:30,003 --> 00:05:32,604
+Baş taraf kendi içerisinde sıralı.
+
+39
+00:05:32,604 --> 00:05:42,764
+Yani şöyle bir durum var diyelim ki sizin yerleştirmek istediğiniz eleman mesela altı olsun.
+
+40
+00:05:43,883 --> 00:05:47,684
+Şu 3'ü yerleşmişler zaten 6'ı yerleştiriyorsunuz.
+
+41
+00:05:48,003 --> 00:05:55,344
+Biz burada diyoruz ki 6-7'den küçük mü? Evet o zaman 7 buraya gelsin.
+
+42
+00:05:55,764 --> 00:05:57,783
+6-5'den küçük mü? Hayır.
+
+43
+00:05:58,303 --> 00:06:02,184
+O zaman 6-5'den küçük değilse 3'den de kesinlikle küçük değildir.
+
+44
+00:06:03,503 --> 00:06:06,044
+Hiç 3'e bakmama bile gerek yok diyorum.
+
+45
+00:06:06,044 --> 00:06:09,803
+Yani burada şey avantajından faydalanıyorum.
+
+46
+00:06:09,803 --> 00:06:17,824
+başa doğru artık bu tarafa hiç gitmeyeyim ve bu karşılaştırmaları hiç yapmayayım.
+
+47
+00:06:18,363 --> 00:06:20,904
+Bu avantajdan faydalanıyorum.
+
+48
+00:06:21,964 --> 00:06:25,783
+Diyeceksiniz ki selection sort da böyle yapmıyor mu değil mi?
+
+49
+00:06:26,443 --> 00:06:28,763
+Orada da biz şunu biliyoruz.
+
+50
+00:06:28,763 --> 00:06:33,063
+Yani işte dizinin en küçük elemanını buldum.
+
+51
+00:06:33,604 --> 00:06:34,863
+Bunu getirdim buraya koydum.
+
+52
+00:06:34,943 --> 00:06:38,783
+Bunu getirdim buraya koydum ise selection sort da bu tarafa hiç bakmıyor.
+
+53
+00:06:39,803 --> 00:06:48,044
+Yani işler burada yürüyecek bir adım sonra. Peki o zaman niye hala insertion sort, selection sort'tan daha avantajlı?
+
+54
+00:06:57,139 --> 00:06:59,139
+soruyu anladınız mı?
+
+55
+00:07:03,091 --> 00:07:23,491
+Cevap geliyor mu bakayım? Neden daha avantajlı? Insertion Sort, Selection Sort'tan? Bak, liste aynı işi yapmıyor mu? Bu da bir buraya yerleştiyse bir daha buraya ilişmiyor. Bu da baştakiler sıralı olduğu için Insertion Sort'ta 5'den 6 büyükse bir daha bu tarafa hiç bakmıyor. Neden Insertion Sort hala daha avantajlı?
+
+56
+00:07:23,891 --> 00:07:31,631
+Hocam, hocam şey. Pardon, ters yazdım, özür dilerim. Yok, ters yazmadım, doğru. Evet, neden daha avantajlı?
+
+57
+00:07:31,631 --> 00:07:43,371
+Hocam şey diyeyim mi? Selection'da en küçüğü bulduğumuz için bir daha başa bakmamıza gerek kalmıyor.
+
+58
+00:07:43,971 --> 00:07:44,251
+Evet.
+
+59
+00:07:44,251 --> 00:07:52,531
+Ama insertion'da sürekli karşılaştırma yaptığımız için en küçük olduğundan emin değiliz aslında. O yüzden başa kadar gitmemiz gerekiyor.
+
+60
+00:07:53,132 --> 00:07:56,731
+Ama bak insertion daha avantajlı diyorum. Insertion'u savunman lazım bana.
+
+61
+00:07:57,491 --> 00:07:59,651
+Evet hocam onu söylerken ben de fark ettim.
+
+62
+00:08:00,651 --> 00:08:01,171
+Çok iyi.
+
+63
+00:08:01,171 --> 00:08:22,091
+Hocam şu yüzden olabilir mi? Selection'da en küçüğü bulmamız gerekiyor. Insertion'da nereden başlayacağımız belli olduğu için hangi elemandaysak oradan başlıyoruz. Bir adım sonra bile durabiliriz. Hemen solumuza geçtiğimizde bile durabiliriz. Ama selection'da kalan elemanlar arasında en küçüğü bulmamız gerekiyor.
+
+64
+00:08:22,091 --> 00:08:39,532
+Evet yani aslında yani tekrardan söylüyorum bakın çok fark etmiyor ama şeyin insertion'ın birazcık daha avantajlı olması ve en kare olan karmaşıklıktaki algoritmalar içerisinde tercih edilmesinin sebebi bu.
+
+65
+00:08:39,531 --> 00:08:55,551
+Yani şöyle bir durum var diyelim ki şu bu taraf pardon bu taraf yerleşmiş vaziyette şu altıda sıra altıyı yerleştirmek istiyoruz insertion sortta düşünelim.
+
+66
+00:08:55,551 --> 00:09:03,711
+Yani biz buradaki bütün elemanların içerisinde bir en küçük bulup da bilmem bunu yerleştirmeye çalışma endişesinde değiliz.
+
+67
+00:09:03,711 --> 00:09:10,591
+sırası gelen eleman için sadece onun başa göre yerini belirlemeye çalışıyoruz.
+
+68
+00:09:11,071 --> 00:09:13,312
+O da bulduğumuz noktada da duruyoruz.
+
+69
+00:09:13,391 --> 00:09:16,131
+O yüzden diğerine göre birazcık daha avantajlı.
+
+70
+00:09:16,211 --> 00:09:18,871
+Bir de tekrardan şeyi vurgulamak istiyorum.
+
+71
+00:09:19,011 --> 00:09:25,791
+Insurge'ın sortun en avantajlı olduğu durum yarı sıralı denilen şey diziler.
+
+72
+00:09:25,791 --> 00:09:31,491
+Yani hani zamanında sıralıymış ama bir takım işlemlerden sonra o sıra bozulmuş.
+
+73
+00:09:31,491 --> 00:09:49,211
+Yani bir kısmı zaten aslında sıralı duruyor. O zaman ben bu elemanı, bu diziyi sıralı hale getirirken aslında çok da fazla böyle hareket olmayacak. O zaman için tercih edilen daha çok avantajlı olan bir problem.
+
+74
+00:09:49,211 --> 00:09:55,931
+Sonra şimdi i'nin de iyisi var diyerek bir algoritmadan daha bahsettik.
+
+75
+00:09:56,011 --> 00:10:03,071
+Geçen hafta, pazartesi günün kaldığımız noktada Shell Sort algoritmasından bahsettik.
+
+76
+00:10:03,391 --> 00:10:10,851
+Shell Sort aslında şeyin üzerine kurulu bir algoritma, insertion sort mantığının üzerine kurulu bir algoritma.
+
+77
+00:10:10,851 --> 00:10:14,151
+Burada da şey düşünülüyor.
+
+78
+00:10:14,151 --> 00:10:29,071
+Deniyor ki, yani şöyle tersten sıralı bir dizim olsaydı örneğin benim, işte sonra, yani bu böyle gitsin mesela.
+
+79
+00:10:30,740 --> 00:10:56,679
+şunlar kendi içerisinde sıralı hale gelmiş. Sıra 2'de 2'yi yerleştirmeye çalışıyorum. Diyelim ki bu bizim tersten sıralı olsaydı küçük elemanlar hep sonlarda kalmış ve onları başa taşımak için bütün buraları böyle geçmeniz gerekiyor. Yani insertion sortunda hani tekrardan söylüyorum bunlar dezavantaj değil bunlar acaba daha nasıl iyileştirirdik diye baktığımız noktalar.
+
+80
+00:10:56,679 --> 00:11:06,759
+böyle bir şey var burada değil mi? Yani küçük bir eleman sonlarda yer aldıysa bunu başa taşımak için tek tek kontrol ede ede gitmemiz gerekiyor.
+
+81
+00:11:07,119 --> 00:11:11,019
+Bu anlaşıldı mı buradaki iyileştirmeye çalıştığımız durum?
+
+82
+00:11:12,339 --> 00:11:12,539
+Evet.
+
+83
+00:11:13,259 --> 00:11:20,740
+Burada kalmış. Şimdi dedik ki o zaman bunu nasıl yapabiliriz? Bunun içinde işte Shelsort diye bir algoritma var.
+
+84
+00:11:20,740 --> 00:11:28,859
+Scherzort da diyor ki birer birer şey yapacağımı, karşılaştıracağımı zıplaya zıplaya gideyim.
+
+85
+00:11:29,039 --> 00:11:37,740
+Eğer bunu yaparsam sondaki bir elemanı tek tek bütün kendinden öncekilerle karşılaştıracağımı örneğin beş öncesiyle karşılaştırırım.
+
+86
+00:11:37,839 --> 00:11:43,500
+Beş öncesinden küçükse işte ondan beş öncesiyle karşılaştırırım falan.
+
+87
+00:11:43,500 --> 00:11:48,659
+O küçük elemanı başı daha hızlı taşımış olurum diyor.
+
+88
+00:11:48,659 --> 00:12:07,659
+Bu da oldukça şey bir mantık yani güzel bir mantık. Bundan ötürü de shell sort, insertion sort'tan daha şey aslında daha efektif. Bir kere öncelikle Nourse Case'de bunun matematik doğrulamasını yapmayacağım.
+
+89
+00:12:07,659 --> 00:12:25,600
+ama genellikle çok iyi bir şey seçerseniz, adım aralığı seçerseniz yani dörder dörder ilerleyeceğim, beşer beşer ilerleyeceğim o çok iyi denk gelirse en kötü durumda en üzeri 3 bölü 2 yani 1,5 gibi bir şey oluyor 2'den küçük.
+
+90
+00:12:25,600 --> 00:12:33,400
+işte bazen yine o seçtiğimiz adım büyüklüğüne bağlı olarak 4 bölü 3, 5 bölü 4 falan oluyor.
+
+91
+00:12:33,400 --> 00:12:39,499
+Yani adım büyüklüğünüze bağlı olarak genellikle n kareden birazcık daha iyi.
+
+92
+00:12:39,919 --> 00:12:45,879
+Bu niye önemli diyecek olursanız onun niye önemli olduğunu nerede bakayım o?
+
+93
+00:12:46,439 --> 00:12:47,700
+Şurada görmüştük.
+
+94
+00:12:48,100 --> 00:12:52,680
+Yani n kare olduğundan oluyor, n olduğundan oluyor, n logan olduğundan oluyor.
+
+95
+00:12:52,680 --> 00:13:01,760
+sürelerin birbirlerine göre durumlarını görmüştük. Dolayısıyla işte insanlar bunlarla uğraşıyorlar. Yani iyi bir şey bu.
+
+96
+00:13:02,140 --> 00:13:12,680
+Çünkü en değerimiz büyüdükçe, 1 milyon, 2 milyon oldukça n kare ile en üzeri 3 bölü 2 arasında da tabii ki bir performanssız açısından bir performans oluyor.
+
+97
+00:13:12,680 --> 00:13:17,719
+O yüzden bunlarla uğraşmak aslında çok da fena bir şey değil.
+
+98
+00:13:17,719 --> 00:13:25,100
+Peki şimdi ben size şeyi sormuştum, algoritmik olarak nasıl tasarlarsınız diye sormuştum.
+
+99
+00:13:26,439 --> 00:13:32,740
+Ve bir kişi bana gönderdi. Kimdi o? İsim söyleyebilir mi? Unuttum şimdi. Bakamıyorum bilgisayara.
+
+100
+00:13:33,399 --> 00:13:35,799
+Ben göndermiştim ama hocam [öğrenci].
+
+101
+00:13:37,919 --> 00:13:38,999
+Çalışmış mıydı?
+
+102
+00:13:38,999 --> 00:13:47,879
+Çalışıyor hocam ama bir Vile var. İçinde iki tane for var, bir tane daha Vile var.
+
+103
+00:13:49,579 --> 00:13:55,879
+Bayağı diyorsun şey oldu. Senin dergok bana bakacaktım. Bakacağım da dersten sonra bakacağım sana cevap yazacağım özellikle.
+
+104
+00:13:56,419 --> 00:14:01,919
+Aslında eskiden şey çok güzel oluyordu ama şimdi birazcık onun için de çalışmamız lazım sizinle.
+
+105
+00:14:01,919 --> 00:14:09,299
+ekran paylaşma falan bir şeyler yapmaya şey açı sırasında bir sıkıntı oluyor gösterme sırasında.
+
+106
+00:14:10,399 --> 00:14:11,999
+Anlatırken de çok zor anlatılıyor.
+
+107
+00:14:12,199 --> 00:14:13,219
+Anlatabileceğini düşün.
+
+108
+00:14:13,499 --> 00:14:14,939
+Ha gönderelim mi be elimize?
+
+109
+00:14:15,299 --> 00:14:17,479
+Olur yapanlar göndersin bakarım ben.
+
+110
+00:14:17,639 --> 00:14:17,799
+Tamam.
+
+111
+00:14:18,740 --> 00:14:20,479
+İki dakikanızı rica ediyorum.
+
+112
+00:14:20,719 --> 00:14:21,799
+İki dakika ara vereceğim.
+
+113
+00:14:21,999 --> 00:14:22,599
+Devam edeceğim.
+
+114
+00:14:22,779 --> 00:14:23,199
+Bir dakika.
+
+115
+00:15:52,436 --> 00:16:19,675
+Evet, devam edelim. Tamam. Evet, bakarım. Yani aslında her zaman çok fazla şey olmuyor. Çok kalabalık olduğuna vakit olmuyor ama az kişi olduğunda yaptıklarınıza batarım. Peki. Şimdi önce şey göstereceğim. Bundan sonrası için de ama evet öyle bir şey yapalım ki dersi siz de yaptıklarınızı gösterebilirim. Onunla ilgili de bir planlama yapalım ki.
+
+116
+00:16:19,675 --> 00:16:24,675
+ben görmek isterim çünkü yaptığımız şekilleri.
+
+117
+00:16:27,575 --> 00:16:35,995
+Bir örnek üzerinde önce bir göstererek ilerleyeceğim.
+
+118
+00:16:43,155 --> 00:16:49,215
+Şimdi adım büyüklüğünü ne alacağız? Burada en eşittir 12 elemanlı dizim var. Bir dizi yapayım.
+
+119
+00:17:40,531 --> 00:17:53,171
+Evet, şimdi böyle bir dizimiz olduğunu varsayalım. Şimdi burada bir adım büyüklüğü alacağız. Kaç geriye taşıyacağınıza bakmak için bir adım büyüklüğü alacağız.
+
+120
+00:17:53,171 --> 00:18:07,551
+Şimdi şey diye konuşmuştuk hatırlarsanız, adım büyüklüğüne nasıl seçileceği de farklı böyle şeyler var. Yöntem deneyim de şu adım büyüklüğünü şöyle alırsanız daha iyi oluyor falan şeklinde çalışmalar var.
+
+121
+00:18:07,551 --> 00:18:12,111
+ama böyle genel kullanılanlardan bir tanesini yapacağım ben şimdi.
+
+122
+00:18:12,771 --> 00:18:15,131
+N bölü 3 ile yapacağım algoritmayı.
+
+123
+00:18:15,131 --> 00:18:16,451
+N bölü 3 ile göstereceğim.
+
+124
+00:18:16,551 --> 00:18:17,251
+Tekrar ediyorum.
+
+125
+00:18:17,411 --> 00:18:22,071
+Bu kesinlikle şey, farklı farklı şey alabilirsiniz.
+
+126
+00:18:22,551 --> 00:18:23,851
+N bölü 2 alanlar var.
+
+127
+00:18:24,111 --> 00:18:27,051
+İşte daha farklı adım büyüklükleri alanlar var.
+
+128
+00:18:27,151 --> 00:18:28,451
+Ben şimdi N bölü 3 ile yapacağım.
+
+129
+00:18:28,591 --> 00:18:32,851
+Çünkü şey yani yöntemlerden birisi bu.
+
+130
+00:18:33,191 --> 00:18:34,151
+12 elemanım var.
+
+131
+00:18:34,311 --> 00:18:35,091
+4 yani.
+
+132
+00:18:35,531 --> 00:18:36,911
+Şimdi 4 olması demek ne demek?
+
+133
+00:18:36,911 --> 00:18:38,351
+şimdi onu da göstereyim.
+
+134
+00:18:38,431 --> 00:18:39,691
+4 olması demek şu demek.
+
+135
+00:18:40,271 --> 00:18:47,011
+0, 4, 8. gözdeki elemanlar kendi içerisinde değerlendirilecek.
+
+136
+00:18:48,111 --> 00:18:53,252
+1, 5, 9 kendi içinde değerlendirilecek.
+
+137
+00:18:55,252 --> 00:18:58,591
+2, 6, 10.
+
+138
+00:18:58,591 --> 00:19:06,191
+ve işte bir de şunu seçeyim.
+
+139
+00:19:06,871 --> 00:19:11,051
+3, 7, 11 kendi içerisinde değerlendirecek.
+
+140
+00:19:11,151 --> 00:19:13,671
+Yani 3 tane parçam var ilk adım için.
+
+141
+00:19:14,271 --> 00:19:16,331
+İlk adım için 3 parçam var.
+
+142
+00:19:16,331 --> 00:19:21,491
+Yani dörder dörder baktığım durum için 3 parçam var.
+
+143
+00:19:21,911 --> 00:19:27,291
+Ondan sonra işte H'yi böyle böyle ilerleyeceğim.
+
+144
+00:19:27,291 --> 00:19:43,271
+Şimdi başlıyorum. Şu şekilde yapıyorum. İlk önce HHM bölü 3 dedim. Şeyden başlıyorum. M bölü 3 ne? 4. gözdeki elemandan başlıyorum.
+
+145
+00:19:43,271 --> 00:19:58,252
+16. Exchange de edebilirim, şey de yapabilirim. Geçen hafta, pazartesi insertion soft'ta yaptığımız gibi yani exchange etmeden kaydırarak da yapabilirim. İkisi de mümkün.
+
+146
+00:19:58,252 --> 00:20:12,591
+Şimdi 16 ile kendisinden 4 öncesini 21'i karşılaştırıyorum. 16 daha küçük. O zaman 21'i buraya getirdim. 0'dan 4 öncesi olmadığı için işi burada kesiyorum.
+
+147
+00:20:13,271 --> 00:20:34,331
+16, 16 ile 21 yer değişti. Şimdi şöyle yapabilirim. Bunu bu şekilde 4 ilerisiyle baka baka gittiğim için 11'e geldim şimdi. Yani 4'ten başlamıştım işe. Bir sonraki 5'e bakıyorum. 5'in 4 gerisiyle karşılaştıracağım.
+
+148
+00:20:34,332 --> 00:20:37,031
+11 ile 8'i karşılaştırıyorum.
+
+149
+00:20:37,671 --> 00:20:40,371
+11, 8'den büyük olduğu için onu eldemiyorum.
+
+150
+00:20:40,511 --> 00:20:46,811
+Geldim 6. göze 7, 4 gerisi 2, 7 ile 13'ü karşılaştırıyorum.
+
+151
+00:20:47,932 --> 00:20:51,332
+7 küçük, 7 buraya, 13 buraya.
+
+152
+00:20:54,932 --> 00:20:56,272
+2. gözdeyim.
+
+153
+00:20:56,352 --> 00:20:59,311
+2. gözün 4 gerisi olmadığı için burada kesiyorum.
+
+154
+00:21:00,091 --> 00:21:04,011
+Geldim 7. göze, devam ediyorum şimdi ben yapmaya.
+
+155
+00:21:04,332 --> 00:21:22,552
+7. gözdeyim, 25 var. İsterseniz şöyle yapayım onu kaçırmamanız için. 4'ten başladım. 5, 6, şimdi 7. gözdeyim. 7. gözden geri gidiyorum şu anda yaptığım şey bu. Ama dikkat edin bir bir gitmiyorum. Nasıl gidiyorum? 4-4 diyorum.
+
+156
+00:21:22,551 --> 00:21:39,591
+25'i şeyle karşılaştırdım. Nedir? 4 gerisi 3. gözdeki 19'da karşılaştırdım. 25-19'dan büyük olduğu için ellemedim. 8. göze geldim.
+
+157
+00:21:40,596 --> 00:21:41,195
+Pardon.
+
+158
+00:21:42,635 --> 00:21:43,915
+Sekizinci göze geldim.
+
+159
+00:21:44,015 --> 00:21:45,655
+Sekizinci gözde on iki var.
+
+160
+00:21:46,635 --> 00:21:52,415
+On ikiyi dört gerisi yirmi birle karşılaştırdım.
+
+161
+00:21:53,455 --> 00:21:55,175
+Yirmi bir, on iki.
+
+162
+00:21:55,615 --> 00:21:56,556
+Bakın dikkat edin.
+
+163
+00:21:56,856 --> 00:21:58,415
+Kırmızıyla kırmızıyı karşılaştırdım.
+
+164
+00:21:59,036 --> 00:21:59,715
+Görüyor musunuz?
+
+165
+00:21:59,715 --> 00:22:03,596
+Yani kendi içerisinde karşılaştırılacakları aynı renge boyamıştım.
+
+166
+00:22:03,696 --> 00:22:04,335
+Bakın nedir?
+
+167
+00:22:04,776 --> 00:22:08,276
+Şurası, şurası, şurası kendi içerisinde karşılaştırılacak.
+
+168
+00:22:08,815 --> 00:22:10,335
+Şimdi onu yapıyorum aslında.
+
+169
+00:22:10,596 --> 00:22:13,415
+12 ile 21'i karşılaştırdım.
+
+170
+00:22:14,195 --> 00:22:14,855
+12 küçük.
+
+171
+00:22:15,476 --> 00:22:16,895
+21'i buraya taşıdım.
+
+172
+00:22:18,136 --> 00:22:19,375
+Şimdi buradayım aslında.
+
+173
+00:22:20,335 --> 00:22:22,816
+Yani buraya ister yazarsınız ister yazmazsınız.
+
+174
+00:22:23,096 --> 00:22:24,816
+Yani exchange de yapabilirsiniz.
+
+175
+00:22:25,335 --> 00:22:29,356
+Insurcion sorttaki gibi exchange yapmadan kaydıra kaydıra da gidersiniz.
+
+176
+00:22:29,936 --> 00:22:31,835
+4 eksik de bu gözdeyim şimdi.
+
+177
+00:22:32,456 --> 00:22:35,075
+12 ile 16'yı karşılaştırıyorum.
+
+178
+00:22:35,155 --> 00:22:36,776
+4 eksiği 16. göz.
+
+179
+00:22:37,356 --> 00:22:38,996
+12 16'dan da küçük.
+
+180
+00:22:38,996 --> 00:22:40,276
+16 buraya geldi.
+
+181
+00:22:40,596 --> 00:22:41,695
+12 buraya geldi.
+
+182
+00:22:42,555 --> 00:22:45,735
+Burada durdum çünkü sıfırın gerisinde bir yer yok.
+
+183
+00:22:46,176 --> 00:22:48,216
+Şimdi buradayım bakın 9. gözdeyim.
+
+184
+00:22:48,435 --> 00:22:49,676
+Burada 10 var.
+
+185
+00:22:50,475 --> 00:22:52,195
+Şimdi 10'u kimle karşılaştıracağım?
+
+186
+00:22:52,316 --> 00:22:55,856
+4 eksiği 5. gözde 11 ile karşılaştıracağım.
+
+187
+00:22:56,456 --> 00:22:58,856
+10 daha küçük olduğu için 11 buraya geldi.
+
+188
+00:22:59,856 --> 00:23:00,935
+10 burada diyelim.
+
+189
+00:23:01,295 --> 00:23:02,676
+1. gözde 8 var.
+
+190
+00:23:02,776 --> 00:23:04,356
+10 ile 8'i karşılaştırdım.
+
+191
+00:23:04,475 --> 00:23:04,996
+İlerlemedim.
+
+192
+00:23:05,115 --> 00:23:06,276
+Bakın yine dikkat edin.
+
+193
+00:23:06,695 --> 00:23:08,655
+Kimleri birbirleriyle karşılaştırdım?
+
+194
+00:23:08,655 --> 00:23:10,715
+yeşilleri birbirleriyle karşılaştırdım.
+
+195
+00:23:10,795 --> 00:23:12,075
+Bulaşmadım diğerlerine.
+
+196
+00:23:12,655 --> 00:23:14,395
+Şimdi bir yine ilerledim.
+
+197
+00:23:15,795 --> 00:23:16,596
+Burada
+
+198
+00:23:16,596 --> 00:23:18,435
+10.
+
+199
+00:23:18,635 --> 00:23:20,555
+gözdeyim. Şimdi ne olması lazım?
+
+200
+00:23:20,675 --> 00:23:22,215
+Bakın bunları karşılaştıracağım.
+
+201
+00:23:22,316 --> 00:23:24,255
+5, 7 ve yani 5,
+
+202
+00:23:24,835 --> 00:23:27,115
+13 ve 7'yi karşılaştıracağım.
+
+203
+00:23:27,816 --> 00:23:28,735
+Takip ediyorsunuz
+
+204
+00:23:28,735 --> 00:23:29,075
+değil mi?
+
+205
+00:23:30,235 --> 00:23:31,155
+Edebiliyor musunuz?
+
+206
+00:23:33,635 --> 00:23:34,215
+Evet hocam.
+
+207
+00:23:34,715 --> 00:23:36,335
+Tamam. 5'i
+
+208
+00:23:36,335 --> 00:23:38,355
+10. gözdeki elemanı
+
+209
+00:23:38,355 --> 00:23:40,595
+4 eksiği 7 ile karşılaştırıyorum.
+
+210
+00:23:40,715 --> 00:23:42,355
+5 pardon 13 ile karşılaştırıyorum.
+
+211
+00:23:42,435 --> 00:23:43,255
+Dışta 13 var.
+
+212
+00:23:43,715 --> 00:23:45,235
+5 13'den küçük mü?
+
+213
+00:23:45,475 --> 00:23:45,715
+Evet.
+
+214
+00:23:45,895 --> 00:23:47,435
+O zaman 13 buraya geldi.
+
+215
+00:23:48,135 --> 00:23:49,255
+5 buraya geldi.
+
+216
+00:23:49,475 --> 00:23:50,655
+6. gözdeyim.
+
+217
+00:23:51,096 --> 00:23:52,715
+4 gerisinde 2 var.
+
+218
+00:23:52,855 --> 00:23:54,195
+2. gözde 7 var.
+
+219
+00:23:54,316 --> 00:23:55,495
+5 7'den küçük mü?
+
+220
+00:23:55,575 --> 00:23:55,795
+Evet.
+
+221
+00:23:56,375 --> 00:23:57,435
+5 buraya geldi.
+
+222
+00:23:57,596 --> 00:23:58,515
+7 buraya geldi.
+
+223
+00:23:58,615 --> 00:23:59,995
+2. gözünün gerisi yok.
+
+224
+00:24:00,075 --> 00:24:00,895
+O yüzden bitti.
+
+225
+00:24:01,456 --> 00:24:02,715
+11. gözdeyim.
+
+226
+00:24:02,755 --> 00:24:04,155
+11. gözde 4 var.
+
+227
+00:24:04,155 --> 00:24:04,875
+Yine bakın.
+
+228
+00:24:05,415 --> 00:24:06,915
+Kimlerle karşılaştıracağım?
+
+229
+00:24:07,055 --> 00:24:08,035
+11. göz.
+
+230
+00:24:08,036 --> 00:24:11,655
+7. göz ve 3. gözü birbirleriyle karşılaştıracağım.
+
+231
+00:24:11,655 --> 00:24:14,515
+Yani kendi içlerinde karşılaştıracağım.
+
+232
+00:24:15,176 --> 00:24:18,575
+11. gözdeki 4'ü 4 gerisi 7. göz.
+
+233
+00:24:18,655 --> 00:24:20,155
+25 ile karşılaştırıyorum.
+
+234
+00:24:20,235 --> 00:24:20,856
+4 küçük.
+
+235
+00:24:21,676 --> 00:24:22,976
+25 buraya geldi.
+
+236
+00:24:23,295 --> 00:24:24,375
+4 buraya geldi.
+
+237
+00:24:25,735 --> 00:24:29,096
+4 gerisinde 3. gözde 19 var.
+
+238
+00:24:29,596 --> 00:24:31,235
+19 ile karşılaştırıyorum.
+
+239
+00:24:32,235 --> 00:24:33,276
+4 buraya geldi.
+
+240
+00:24:33,575 --> 00:24:34,715
+19 buraya geldi.
+
+241
+00:24:34,856 --> 00:24:36,056
+3'ün 4 gerisi yok.
+
+242
+00:24:36,176 --> 00:24:36,875
+Burada durdum.
+
+243
+00:24:36,875 --> 00:24:41,935
+Ve ne oldu şu anda bakın diziniz şu hale geldi.
+
+244
+00:24:43,256 --> 00:25:00,316
+12, 8, 5, 4, 16, 10, 7, 19, 21, 11, 13 ve 25 oldu.
+
+245
+00:25:07,347 --> 00:25:29,807
+Şimdi bakın burada dikkatinizi çekerse aslında bir önceki turda 10. gözde olan 5 ikinci göze geldi. Nasıl geldi hem de? Bunları kendi içinde karşılaştırdık. 5, 7, 13'ü 3 karşılaştırmayla ikinci göze geldi. Gördünüz mü?
+
+246
+00:25:29,807 --> 00:25:35,427
+Aynı mantıkla yani 3 dediği 2 karşılaştırma 5'i 7 ve 13 ile karşılaştırdık.
+
+247
+00:25:35,507 --> 00:25:38,807
+2 karşılaştırma sonunda 5 ikinci göze geldi.
+
+248
+00:25:39,188 --> 00:25:40,307
+Şurada 4'e bakın.
+
+249
+00:25:40,947 --> 00:25:42,287
+4 nasıl oldu?
+
+250
+00:25:43,267 --> 00:25:45,367
+4 için kimleri karşılaştırdık?
+
+251
+00:25:45,727 --> 00:25:51,647
+11. gözü, 7. gözü ve 3. gözü karşılaştırdık.
+
+252
+00:25:51,647 --> 00:26:00,147
+aynı şekilde 4 de son gözden kalktı sadece 2 karşılaştırmayla 3. göze geldi.
+
+253
+00:26:00,607 --> 00:26:02,447
+Anlatmaya çalıştığım şey buydu.
+
+254
+00:26:02,747 --> 00:26:03,787
+Yani görüyor musunuz?
+
+255
+00:26:04,068 --> 00:26:18,747
+Aslında 4'ü ben taşımaya çalışsaydı 4 en sonda olduğu için başa gitmesi için 11. gözden burada böyle en başa doğru tek tek bütün elemanlarla karşılaştırılması gerekecekti.
+
+256
+00:26:18,748 --> 00:26:29,608
+Ama ne oldu? Ben 4'ü sadece 25 ve 19'la karşılaştırarak 3. göze hızla taşıyabilmiş oldum. Avantaj bu.
+
+257
+00:26:30,028 --> 00:26:40,468
+Şimdi H'miz 4'tü. H'yi 3'e bölerek gidiyoruz. Yani n bölü 3'ten başladık. 3'e bölerek gidiyoruz. Olay bu.
+
+258
+00:26:40,467 --> 00:26:45,727
+4 bölü 3 de 1 yani artık bu aşama insertion sort yaptığım aşama.
+
+259
+00:26:46,127 --> 00:26:51,527
+Tekrardan düşünecek olursak örneğin n'iniz 1000 olsaydı şöyle olacaktı.
+
+260
+00:26:51,607 --> 00:26:56,387
+Diyelim ki yani 1200 olsun şu üçün katı bir şeyden başlayalım.
+
+261
+00:26:56,507 --> 00:27:01,287
+n'iniz 1200 olsaydı ama üçün katı gidemedi tabii.
+
+262
+00:27:01,287 --> 00:27:03,627
+400 olacaktı bir adım sonra.
+
+263
+00:27:03,627 --> 00:27:33,068
+şey H400 olacaktı. Bir adım sonra 400 bölü 3 işte ne oluyor? 130 falan gibi bir şey mi oluyor? Diyelim ki 130 olacaktı şöyle yaklaşıp. Yani birinci turda 400'er 400'er ileriye bakacaktık. İkinci turda 130 130 ileriye bakacaktık. Böyle görüyor musunuz? Yani sonlardaysa eğer küçük elemanımız bir seferde 400 adım öncesine hala geliyor.
+
+264
+00:27:33,068 --> 00:27:34,847
+Bunu da böyle devam edecektik.
+
+265
+00:27:35,107 --> 00:27:37,008
+İşte diyelim ki 130'sa bu.
+
+266
+00:27:37,528 --> 00:27:38,308
+İşte 3'e böl.
+
+267
+00:27:38,467 --> 00:27:39,428
+İşte ne çıkıyor?
+
+268
+00:27:39,648 --> 00:27:41,407
+40 bir şey çıkıyor herhalde.
+
+269
+00:27:42,228 --> 00:27:43,308
+43 falan mı çıkıyor?
+
+270
+00:27:44,168 --> 00:27:49,847
+Diyelim ki işte bir tur sonra böyle bir olana kadar böyle böyle gidecektik.
+
+271
+00:27:49,847 --> 00:27:59,808
+Her seferinde adım büyüklüğümüzü 3'te 1'e indirerek hızlı hızlı sonlarda kalan küçükleri önlere taşımış olacaktık.
+
+272
+00:27:59,807 --> 00:28:04,587
+Şimdi bu artık insertion sort olduğu için bildiğimiz şekilde ilerliyoruz.
+
+273
+00:28:04,587 --> 00:28:14,847
+8-12'den küçük 8 buraya, 12 buraya, 5 için işte 12 buraya, 8 buraya, 5 buraya, 4 için bir adım daha yapıp duracağım.
+
+274
+00:28:15,467 --> 00:28:22,407
+12 buraya, 8 buraya, 5 buraya, 4 buraya diye böyle yavaş yavaş işte 16 burada kaldı falan.
+
+275
+00:28:24,167 --> 00:28:27,327
+Insertion sort yaparak bundan sonrası için devam ediyoruz.
+
+276
+00:28:27,327 --> 00:28:44,847
+Şimdi mantık öncelikle oturdu mu aklımızda? Yani bunu zaten yapmıştık ama işte algoritmasını yapacağım için birazcık daha böyle yavaş yavaş algoritma tasarımına geçer şekilde anlattım. Buraya kadar sormak istediğiniz bir şey var mı?
+
+277
+00:28:46,987 --> 00:28:48,267
+Aklınıza takılan.
+
+278
+00:28:48,547 --> 00:28:49,087
+Efendim?
+
+279
+00:28:49,987 --> 00:28:50,208
+Tabii.
+
+280
+00:28:50,208 --> 00:29:05,508
+H1'e gidene kadar yapmak yerine bubblesort yaptığımız gibi bir swap değişkeni tutsak, swap yapılmayı bıraktığında atıyorum 130'dayken hiç swap yapılmadı.
+
+281
+00:29:06,003 --> 00:29:08,444
+O zaman kessek daha iyi olmaz mı?
+
+282
+00:29:10,303 --> 00:29:17,743
+Şeyde diyorsun değil mi? 130 iken güzel, doğru söylüyorsun. Aslında haklısın. Yani ben onun üzerinde durmadım.
+
+283
+00:29:18,143 --> 00:29:22,223
+Şeyi doğru söylüyorsun. Bir dakika, doğru mu söylüyorsun? Ona bakmam lazım.
+
+284
+00:29:25,223 --> 00:29:32,663
+130'dayken, hayır, orada şey var yalnız. Hepsi kendi içlerinde değiştirmiyor olabilirler.
+
+285
+00:29:32,663 --> 00:29:39,163
+ama diyelim ki 130'dayken bir adım daha küçüksen değişme oluyor olabilir.
+
+286
+00:29:40,463 --> 00:29:44,783
+Hocam ama sebep değişkenini şeyde sıfırlayacağız.
+
+287
+00:29:45,563 --> 00:29:45,883
+Neden?
+
+288
+00:29:46,443 --> 00:29:49,603
+Sebep sayısını yarılar yarılamaz sıfırlayacağız.
+
+289
+00:29:50,264 --> 00:29:51,643
+Yani anladım.
+
+290
+00:29:51,963 --> 00:29:54,463
+Herhangi bir değişiklik olduğunda çıkacağız.
+
+291
+00:29:54,463 --> 00:30:07,743
+şey diyorsun, sebebi şey yaptım yani diyelim ki P130 iken ondan sonra hiç kimse birbirleriyle yer değiştirmedi.
+
+292
+00:30:08,283 --> 00:30:10,243
+Durdurdum diyorsun. Değil mi?
+
+293
+00:30:10,783 --> 00:30:11,463
+Evet hocam.
+
+294
+00:30:12,743 --> 00:30:19,944
+Orada bir, şimdi bak ezbere konuşmayayım bir şeyi karşılaştırmak lazım. Ona bakalım haftaya konuşalım. Hiç denemedim.
+
+295
+00:30:19,943 --> 00:30:45,803
+söylediğin mantıklı geliyor ama şey olabilir şimdi burada kendi içerisinde diziler var ya o kendi içerisindeki diziler yani mesela şöyle 21, 16, 12, 4 bir dizi işte 13 ne var burada 21, 16, 12 ya 4 değil o bir dakika 21, 16, 12 bir dizi değil mi?
+
+296
+00:30:45,803 --> 00:31:08,063
+Evet 13, 7, 5, 1 dizi. Böyle diziler var kendi içinde. Şeyi bir kontrol etmen lazım. Bakayım sen de bak haftaya yani pazartesi dersinde konuşalım. Bunlar kendi içerisinde sıralı olabilir ama bu dizinin sıralı olacağı anlamına gelir mi? Çok emin değilim. Ona bir bakmamız lazım.
+
+297
+00:31:08,063 --> 00:31:17,364
+Yani sebep etmemeleri bir adım sonra sebep etmeyecekleri anlamına gelir mi? Çok emin değilim ondan. Tamam mı? Bakalım ona konuşalım.
+
+298
+00:31:18,263 --> 00:31:19,123
+Tamam hocam.
+
+299
+00:31:20,123 --> 00:31:26,944
+Teşekkürler. Şey yaparsak anlarız aslında. Büyükten küçüğe sıralı bir dizide yaparsak hemen anlarız ne olduğunu bittiğini. Bir bakalım ona.
+
+300
+00:31:27,944 --> 00:31:28,543
+Buyurun.
+
+301
+00:31:28,543 --> 00:31:29,783
+Hocam ben de bir soru sorabilir miyim?
+
+302
+00:31:30,164 --> 00:31:30,444
+Tabii.
+
+303
+00:31:31,343 --> 00:31:37,483
+Bunu peki şey olarak yapsaydık. Bir önceki ders galiba öyle yaptık ki ben yanlış not almadıysam.
+
+304
+00:31:37,483 --> 00:31:48,483
+Mesela şimdi 4'ten başa doğru baktık sonra 5'e geçtik ya bunu 4'ten 8'e geçip 8'den 12'ye geçip
+
+305
+00:31:48,483 --> 00:31:49,303
+Kesinlikle
+
+306
+00:31:49,303 --> 00:31:51,883
+Tamam öyle de yapabiliriz yani
+
+307
+00:31:51,883 --> 00:32:06,444
+Aynen aynen ikisi de doğru ben işte algoritmayı şey yaptığım için öyle anlattım aslında ne bileyim 4'ten 5'e 5'ten 6 yani ikisini de yapabilirdim yani ikisi de doğru yani aynı şeyi yapıyorum farkındaysam
+
+308
+00:32:06,444 --> 00:32:16,044
+Biliyorum doğru söylüyorsun pazartesi anlatırken şeyi diye anlatmıştım 4'den 8'e geçiyor çünkü aslında kendi içerisinde o dizileri karşılaştırıyor.
+
+309
+00:32:16,044 --> 00:32:20,404
+Dikkat edersen şu anda anlattığım şey de aynı şeyi, birebir aynı şeyi yapıyor.
+
+310
+00:32:20,824 --> 00:32:26,563
+Sadece algoritmayı anlatmam daha kolay olsun diye şu anda yani akışı öyle yaptım.
+
+311
+00:32:26,643 --> 00:32:31,024
+Burada hani birer birer böyle ilerliyor ki daha kolay anlaşılsın diye yoksa hiçbir fark yok.
+
+312
+00:32:32,003 --> 00:32:33,084
+Tamamdır hocam sağ olun.
+
+313
+00:32:33,084 --> 00:32:48,084
+karmaşıklıkları falan da aynı. Yani hiç gerçekten fark yok ama bunun akışını çizdiğimde daha rahat anlaşılacak diye öyle yaptım. Yoksa ikisi aynı işi yapıyorlar. Çok teşekkürler sorduğum için. Çünkü kimsenin aklında yanlış bir şey kalmasın.
+
+314
+00:32:48,084 --> 00:33:01,324
+Arkadaşlar şeyi dışarıdan alabilirsiniz step size'ını ama dediğim gibi kullanılan şeylerden biri step'in 3 olması.
+
+315
+00:33:01,324 --> 00:33:04,003
+Step size'ı şuraya şöyle.
+
+316
+00:33:10,291 --> 00:33:27,531
+Dolayısıyla E çeşittir n bölü step size. Yani şey fena bir şey değil dediğim gibi çok kullanılanlardan birisi. H'nin n bölü 3 olduğu durum.
+
+317
+00:33:29,651 --> 00:33:39,151
+Şimdi biz şunu yapacağız. Ne yapacağız? En son birer birer ilerleyeceğiz. Yani en son bildiğimiz klasik insertion sortu yapacağız.
+
+318
+00:33:39,151 --> 00:33:51,291
+Ama işte konuşmuştuk. Diyelim ki 1200 elemanlı bir dizimiz varsa önce işte step size'ı da 3 ise diyelim ki önce 400-400 ilerledik.
+
+319
+00:33:51,431 --> 00:33:57,832
+Sonra 400'ü 3'e böldük. İşte dinden 130-130 ilerledik falan diye böyle yavaş yavaş ineceğiz.
+
+320
+00:33:57,951 --> 00:34:00,991
+En son adımda da plasik insertion sortu yapacağız.
+
+321
+00:34:02,611 --> 00:34:09,051
+Şimdi dediğim gibi ben akışın rahat anlaşılsın diye şöyle yaptım.
+
+322
+00:34:09,151 --> 00:34:20,671
+h'den başlatıyorum birer birer arttırarak n-1'e kadar gidiyorum ki rahat takip etin. Şurada bir minicik dizi yapıp göstereceğim.
+
+323
+00:34:24,851 --> 00:34:26,451
+Birazdan sileceğim ama
+
+324
+00:34:26,451 --> 00:34:53,951
+Şöyle, yani şöyle yapacağım. Diyelim ki bu böyle az önceki 12 eleman dizimiz olsun. Evimizde 4 olsun. Önce 4 ile şunu karşılaştıracağım. Sonra 5 ile bunu karşılaştıracağım. 6 ile bunu karşılaştıracağım gibi böyle geri geri geri geri giderek şey yapacağım. Tamam mı?
+
+325
+00:34:54,851 --> 00:34:57,692
+takip edebiliyor musunuz?
+
+326
+00:34:59,951 --> 00:35:01,072
+Orada mısınız?
+
+327
+00:35:02,392 --> 00:35:03,311
+Evet, öyle mi söyleyeceğim?
+
+328
+00:35:03,572 --> 00:35:04,851
+Tamam, peki.
+
+329
+00:35:05,372 --> 00:35:09,232
+Şimdi o zaman tekrardan söylüyorum rahat anlaşılsın diye.
+
+330
+00:35:10,072 --> 00:35:10,831
+Öyle yaptım.
+
+331
+00:35:10,911 --> 00:35:12,591
+J'yi de i'den başlattı.
+
+332
+00:35:14,432 --> 00:35:15,192
+Şöyle.
+
+333
+00:35:16,651 --> 00:35:17,411
+Şimdi ne olacak?
+
+334
+00:35:17,651 --> 00:35:20,192
+J büyük eşittir h iken olacak.
+
+335
+00:35:20,471 --> 00:35:20,651
+Neden?
+
+336
+00:35:20,651 --> 00:35:27,032
+Çünkü diyelim ki kalem bir şey yapmaya başladı.
+
+337
+00:35:28,192 --> 00:35:34,631
+H'niz dört ise J'niz ancak en son dört için çalışabilir.
+
+338
+00:35:34,631 --> 00:35:39,892
+Diyelim ki veya işte çünkü dördün kendinden önce dört öncesi üçtür.
+
+339
+00:35:40,252 --> 00:35:44,072
+Çünkü diyelim ki J'niz üç olsa kendinden dört öncesi yok.
+
+340
+00:35:44,311 --> 00:35:44,971
+Anlatabildim mi?
+
+341
+00:35:44,971 --> 00:35:52,911
+O yüzden herhangi bir elemanı kendisinden H kadar öncesiyle karşılaştırabilmem için
+
+342
+00:35:52,911 --> 00:35:56,611
+J'nin H'den büyük veya eşit olması lazım.
+
+343
+00:35:57,491 --> 00:35:59,831
+Ve ne olduğu sürece karşılaştıracağım.
+
+344
+00:35:59,971 --> 00:36:06,011
+A'nın J'incisi, pardon küçüktür özür dilerim yanlış oldu.
+
+345
+00:36:07,131 --> 00:36:12,091
+A'nın J'incisi, A, hayır az önceki yanlış.
+
+346
+00:36:12,091 --> 00:36:20,911
+A'nın j eksi h incisinden büyük olduğu sürece
+
+347
+00:36:32,019 --> 00:36:39,939
+küçük olduğu sürece. Az önce yazdığım doğruymuş. A'nın j'incisi küçükse bunu başa taşıman lazım değil mi?
+
+348
+00:36:41,639 --> 00:36:51,379
+Küçükse başa taşıman lazım. Ne yapacağım? Böyle bir durumda. Şimdi en temeli exchange edebilirsiniz.
+
+349
+00:36:52,599 --> 00:37:01,419
+Ya da insertion sorttaki gibi onun bir adını sonra yazacağım size. Şimdi en temelini gösteriyorum. Rahat anlaşılsın derdindeyim açıkçası.
+
+350
+00:37:01,419 --> 00:37:28,600
+şu anda birazdan daha kısasını da göstereceğim. Şöyle, j eşittir, j eksi h. Ondan sonra şuradan şuraya geldim. Böyle. Şimdi bakın ne olduğunu şurada hemen şey yapalım, göstereyim ne demek istediğimi.
+
+351
+00:37:28,599 --> 00:37:31,719
+şöyle yapıyoruz.
+
+352
+00:37:31,899 --> 00:37:43,499
+Diyelim ki A'nın J'incisi yani 5. gözü mesela J-H ile yani 1. gözle karşılaştırıyorum.
+
+353
+00:37:44,779 --> 00:37:49,979
+Diyorum ki 1. gözde 5 var, 5. gözde 7 var.
+
+354
+00:37:49,979 --> 00:38:18,779
+A'nın J'incisi yani 5. göz A'nın J eksi H'incisinden yani şu 2 olsun da bir dakika şöyle 2 olsun J'inci gözdeki eleman daha mı küçük 2 5'ten küçük o zaman diyorum ki 2 buraya gelsin 5 buraya gelsin ve J'yi de
+
+355
+00:38:18,779 --> 00:38:20,979
+4 eksilt bir yap.
+
+356
+00:38:21,519 --> 00:38:28,679
+J'yi 4 eksilttiğimizde birin gerisinde, 4 gerisinde eleman olmadığı için döngüden çıkıyorum.
+
+357
+00:38:29,379 --> 00:38:33,599
+Diyelim ki J 10 olsaydı ne olacaktı?
+
+358
+00:38:34,139 --> 00:38:37,119
+10. yü 6. ile karşılaştıracaktı.
+
+359
+00:38:37,639 --> 00:38:41,359
+Ondan sonra 6. yü 2. ile karşılaştıracaktı.
+
+360
+00:38:41,599 --> 00:38:42,499
+Burada kesecekti.
+
+361
+00:38:42,579 --> 00:38:43,979
+Buraya kadar anlaşıldı mı?
+
+362
+00:38:45,419 --> 00:38:47,559
+Anlamadığınız herhangi bir şey var mı?
+
+363
+00:38:47,559 --> 00:39:03,359
+sormak istediğiniz bir şey var mı? Aklınıza takılan iyi mi her şey? Peki o zaman şimdi ben size soruyorum şimdi ne yapmam lazım? Bu tür bitti. Ne yapmam lazım?
+
+364
+00:39:10,675 --> 00:39:12,675
+ne yapmam lazım arkadaşlar?
+
+365
+00:39:12,675 --> 00:39:17,675
+yani şunu yaptım şu anda göstereyim
+
+366
+00:39:17,675 --> 00:39:19,675
+bu
+
+367
+00:39:26,195 --> 00:39:27,195
+Bunları boş vererek gösteriyorum. H4 olduğu için dördüncü gözden başladım. 4 ile 0'ı karşılaştırdım. Arkasından devam ettim. İ'yi 1 arttırdım. 5 ile 1'i karşılaştırdım. Devam ettim. 6 ile 2'yi karşılaştırdım. 7 ile 3'ü karşılaştırdım. Şimdi dikkat edin. 8 ile 8 ile
+
+368
+00:39:56,195 --> 00:39:58,675
+4'ü karşılaştırdım.
+
+369
+00:39:59,276 --> 00:40:03,076
+İkinci defa buraya geldim ve 0'ı karşılaştırdım.
+
+370
+00:40:07,731 --> 00:40:24,611
+9 ile kimi karşılaştırdım? 5'i karşılaştırdım ve 1'i karşılaştırdım. Gerekiyorsa tabii yani eğer büyükten küçüğe sıralıysa böyle yani bunların hepsini karşılaştıracağım yoksa karşılaştırmayacağım değil mi?
+
+371
+00:40:24,611 --> 00:40:35,611
+10 ile şöyle yapayım diziyi böyle küçükten büyükten küçüğe sıralarsanız onu yapmak zorunda kalacaksınız çünkü böyle bir diziniz olduğunu düşünün.
+
+372
+00:40:37,731 --> 00:40:47,312
+10 ile 4 gerisi 6, 4 gerisi 2, 11 ile 4 gerisi 7, 4 gerisi 3.
+
+373
+00:40:47,312 --> 00:40:55,952
+Böyle eğer gerekiyorsa yani şu şey bozulmadıysa bütün bu karşılaştırmaları yaptım.
+
+374
+00:40:56,072 --> 00:40:59,891
+Yani dörder dörder atlayarak karşılaştırmaları yaptım.
+
+375
+00:41:00,312 --> 00:41:01,851
+Şimdi bu bitti böyle.
+
+376
+00:41:02,251 --> 00:41:03,251
+Birinci turum bitti.
+
+377
+00:41:03,791 --> 00:41:05,251
+Şimdi ne yapmam gerekir?
+
+378
+00:41:05,252 --> 00:41:09,171
+H'ı adım sayısına bölüp H'ı atamalıyız.
+
+379
+00:41:10,172 --> 00:41:10,731
+Harika.
+
+380
+00:41:10,731 --> 00:41:11,731
+H'ı
+
+381
+00:41:17,780 --> 00:41:39,499
+adım sayısına bölmeliyiz ve devam etmeliyiz. Örneğin işte konuştuğumuz gibi 400 ise bir adım sonra 130 oldu mesela 3-3 ilerliyorsak falan. Ne zamana kadar? En son 1 için insertion sort gibi şey yapacağız.
+
+382
+00:41:39,499 --> 00:41:42,979
+Şurada n'leri büyük yazmışım.
+
+383
+00:41:43,719 --> 00:41:45,299
+En başta da büyük yazayım da.
+
+384
+00:41:47,479 --> 00:41:47,979
+Şöyle.
+
+385
+00:41:48,979 --> 00:41:52,559
+Ve dizimizi yazdıracağız.
+
+386
+00:41:53,879 --> 00:41:59,299
+Buraya kadar sormak istediğiniz, kafanızı karıştıran, anlamadığınız bir şey var mı?
+
+387
+00:42:02,099 --> 00:42:04,359
+Tekrar şeyi söylemek istiyorum.
+
+388
+00:42:04,359 --> 00:42:13,639
+Bu karşılaştırmalar eğer şu şart bozulmadıysa yolumuza devam ediyor isek yapacağımız karşılaştırmalar.
+
+389
+00:42:14,359 --> 00:42:16,579
+Ama burada şeyi görmenizi istedim.
+
+390
+00:42:16,699 --> 00:42:24,699
+Yani en son 11. gözdeki elemanı 2'yi mesela 2 küçük olduğuna göre onu karşılaştıracağız demektir.
+
+391
+00:42:24,699 --> 00:42:28,960
+11'i 7. gözdekiyle 4 çıkarttım.
+
+392
+00:42:29,019 --> 00:42:31,659
+3. gözdekiyle karşılaştıracağım en son.
+
+393
+00:42:32,259 --> 00:42:34,000
+Orada bitireceğim.
+
+394
+00:42:34,360 --> 00:42:39,400
+ve bir sonraki turda işte H zaten dört'tü.
+
+395
+00:42:40,580 --> 00:42:47,500
+Üçe böldüm, bir edecek ve işte insertion sort gibi çalışacak burası bu problem için.
+
+396
+00:42:48,099 --> 00:42:49,960
+Bu şekilde olacak. Peki.
+
+397
+00:42:51,120 --> 00:42:52,520
+Sormak istediniz bir şey var mı?
+
+398
+00:42:54,040 --> 00:42:56,380
+Hocam ben bir soru sorabilir miyim? Biraz genel bir soru olacak.
+
+399
+00:42:57,020 --> 00:42:57,360
+Tamam.
+
+400
+00:42:57,360 --> 00:43:03,780
+Biz sıralanma argöretmenini kıyaslarken işte birkaç yönden bakıyoruz, birkaç boyutdan bakıyoruz.
+
+401
+00:43:04,359 --> 00:43:04,619
+Evet.
+
+402
+00:43:05,319 --> 00:43:08,879
+Mesela şu bakış açısı da bir avantaj, dezavantaj oluşturur mu?
+
+403
+00:43:09,179 --> 00:43:16,959
+Mesela insertion ve selection'da hani baştan itibaren sıralama baştan itibaren sağlanmış oluyor.
+
+404
+00:43:16,959 --> 00:43:22,899
+Yani her adımda baştan itibaren sıralanmış bir diziye sahip olmuş oluyor.
+
+405
+00:43:23,739 --> 00:43:26,939
+Böyle olduğu için bazı sıralama gürtmanında bu olmuyor peki.
+
+406
+00:43:26,940 --> 00:43:27,780
+Evet.
+
+407
+00:43:29,460 --> 00:43:39,100
+Mesela her adımda o baştaki elimizdeki sıralanmış dizi kısmını mesela bir assignment işlemi için kullanmamız gerekiyor mesela.
+
+408
+00:43:39,100 --> 00:43:43,880
+Böyle bir durum derken o algoritmalar daha avantajlı diyebilir miyiz?
+
+409
+00:43:45,740 --> 00:43:49,919
+Son söylediğini anlayamadım. Ne demek istediğini anlatabilir misin bana?
+
+410
+00:43:49,919 --> 00:44:00,199
+Başta işte her adım sayısı arttıkça bizde sıralanmış bir kısım o elimizde bir kısım sıralanmış oluyor.
+
+411
+00:44:00,819 --> 00:44:10,880
+Bizde tekrardan sıralamayla o yapacağımız işlemi ayrı tutmadan hem sıralarken aynı zamanda o işlemi de yapabileceğimiz bir imkan olmuş oluyor.
+
+412
+00:44:10,880 --> 00:44:13,580
+Yani bu başta sıralanmış olduğu için.
+
+413
+00:44:14,140 --> 00:44:14,300
+Evet.
+
+414
+00:44:15,039 --> 00:44:19,179
+Bu bir avantaj sayılır mı? Bu dikkate değer mi? Duruma göre.
+
+415
+00:44:19,919 --> 00:44:35,419
+tabi yani yapacağın işe bağlı olarak evet o da bir avantaj sevilir. O tarafta o tarafın sıralı olmasını kullanıyorsan eğer o da bir avantaj olur.
+
+416
+00:44:35,860 --> 00:44:46,559
+Mesela Shell'de olan bir şey yani Shell'de hız avantajı olabiliyor ama işte başta sıralanmış olmadığı için mesela instruction ondan daha avantajlarla geçebiliyor böyle bir durumda.
+
+417
+00:44:49,919 --> 00:44:54,800
+insertion'ın şeyini mi söylüyorsun? Kesiciye için işlemi birinci turun sonunda.
+
+418
+00:44:57,020 --> 00:45:00,479
+Baştan itibaren sıralanmış dizi oluşturduğu için yani Shell'de.
+
+419
+00:45:00,916 --> 00:45:28,955
+bu en başta olmuyor. Şelde bakarak, tabi bakmak zorundasın. Şeye bakacağım ama yani o oluyor mu bilmeyeceğim. Bir şey bilmiyorum. Arkadaşımızın az önce söylediği, swap etmiyorsa duralım her durumda. Burada sağlamıyor olabilir çünkü. Kendi içlerinde ayrık diziler olduğu için, o ayrık diziler sıralı olsa da dizinin tamamı sıralı olmayabilir. Ama tekrardan söyleyeceğim. Yani olaya şey gözüyle bakmamanız lazım.
+
+420
+00:45:28,955 --> 00:45:44,495
+bu gibi problemlerde mesela quicksort da dizi sıralıysa en kare yani en logan karmaşıklıkla en iyi sıralama algoritması eğer size sıralı bir dizi verilirse en kare karmaşıklığa kadar düşüyor.
+
+421
+00:45:44,495 --> 00:45:53,655
+Ama zaten normalde dizinin sıralı olması çok beklediğiniz bir şey değil. O yüzden bunlar avantajlı oluyor.
+
+422
+00:45:53,655 --> 00:46:07,235
+Yani hani daha böyle yüzyılda bir karşınıza çıkacak bir durum zaten olasılıksal olarak onun şey olduğunu bekliyorsunuz yani sırasız olduğunu bekliyorsunuz o yüzden öyle.
+
+423
+00:46:07,615 --> 00:46:17,615
+Tekrardan o güzel bir soruyu da bakacağım yani olduğunu düşünmüyorum ama belki de gerçekten oluyordur arada bir noktada sebep olmadığında mutlaka her zaman sıralı oluyor mu?
+
+424
+00:46:18,435 --> 00:46:23,575
+Zannetmiyorum dediğim gibi kendi içlerinde ayrı kızları olduğu için ama emin de değilim bir bakacağım ona.
+
+425
+00:46:23,655 --> 00:46:26,575
+Peki var mı başka aklınıza takılan?
+
+426
+00:46:27,175 --> 00:46:31,395
+Hocam, bir kise tamam. Ondan sonra ben bir deaklone bir şey geldim.
+
+427
+00:46:32,235 --> 00:46:33,155
+Ne oldu?
+
+428
+00:46:33,295 --> 00:46:36,715
+Hocam iki kişiyiz de. Neyse arkadaş söylesin.
+
+429
+00:46:36,975 --> 00:46:48,375
+Tamam. Şöyle bir sıkıntı var yalnız ve bu beni enişelendiriyor. Bana sizin sesleriniz çok iyi gelmiyor. Benim sesim size yani böyle dinlerken rahat duyuyor musunuz beni?
+
+430
+00:46:49,855 --> 00:46:51,755
+Benim internet bağlı tıp hocam bir sıkıntı var.
+
+431
+00:46:51,755 --> 00:46:54,055
+Ama sizinki sesiniz iyi
+
+432
+00:46:54,055 --> 00:46:56,695
+Tamam oldu peki şimdi dinliyorum o zaman
+
+433
+00:46:56,695 --> 00:47:02,715
+Bu sıralama algoritmalar arasında bazen çok gerçekten fark olabiliyor ya duruma göre
+
+434
+00:47:02,715 --> 00:47:03,635
+Evet
+
+435
+00:47:03,635 --> 00:47:09,755
+Bunun için de hangi algoritmanın daha avantajlı olduğuna dair bir algoritma var mı?
+
+436
+00:47:10,835 --> 00:47:12,475
+Çok güzel bir soru
+
+437
+00:47:12,475 --> 00:47:16,595
+Bunun da hangisinin daha avantajlı olduğuna dair şey yapıyorlar
+
+438
+00:47:16,595 --> 00:47:20,315
+Algoritmaları çalıştırıp zamanlarını ölçüyorlar
+
+439
+00:47:20,315 --> 00:47:48,315
+Çünkü farklı case'lerle şimdi aslında bugün size hani oturup da bakın diyeceğim şeylerden birisi oydu. En sonunda dersin söyleyeceğim şeylerden birisi oydu. Aynen şimdi durumlar çok değişiyor. İşte bizi birazcık sıralıysa ne olur? Küçükten büyüğe sıralıysa ne olur? Büyükten küçüğe sıralıysa ne olur? Değil mi? Bir sürü case var aslında birinin diğerine göre avantajlı olabilecekler.
+
+440
+00:47:48,315 --> 00:47:51,955
+Gözde anlaşılabiliyor ama bazıları hiç gözde anlaşılabilir olmayabilir.
+
+441
+00:47:52,375 --> 00:47:53,655
+Boyutu arttıkça falan.
+
+442
+00:47:54,795 --> 00:48:00,015
+Yani şey belli şimdi belli şartlara göre diyorum mesela en beğenmediğimiz bubble sort,
+
+443
+00:48:00,435 --> 00:48:03,075
+zizistralıysa selection sortun önüne geçiyor falan.
+
+444
+00:48:03,075 --> 00:48:06,095
+O yüzden yani böyle tek doğrumuz yok aslında.
+
+445
+00:48:06,655 --> 00:48:11,155
+O yüzden mesela biz de anlatırken hep şey diye anlatıyoruz.
+
+446
+00:48:11,335 --> 00:48:14,495
+Yani hani şu avantajları ve dezavantajları budur.
+
+447
+00:48:14,496 --> 00:48:19,656
+kullanırken bunları gözlerinde bulundurarak kullanır diye anlatıyoruz.
+
+448
+00:48:19,656 --> 00:48:22,356
+Yani doğrusu da o, gerçekten doğrusu da o.
+
+449
+00:48:22,456 --> 00:48:23,656
+Yani mesela...
+
+450
+00:48:23,744 --> 00:48:47,063
+Geçen hafta konuştuk ya, dönem sonuna doğru göreceksiniz şeyleri, endogen karmaşıklıkta algoritmaları, merge sort bunların içerisinde en çok kullanılanlardan birisi ama merge sort yedek dizi kullanıyor. O zaman şey demen gerekiyor, yani çok elemanım var, yedek dizi için verecek yerim yok, o zaman ben merge sort kullanmayayım demen gerekiyor falan.
+
+451
+00:48:47,063 --> 00:49:03,763
+yani böyle şeyler var veya tekrardan söyleyeyim Java quicksort kullanıyor fakat şey için quicksort, recursive kendini çağıran bir algoritma küçük parçalara bölerek her parçayı ayrı sıralama yapılıyor orada.
+
+452
+00:49:03,763 --> 00:49:14,744
+Mesela o küçük parçalara inildiğinde insertion sort kullanıyor veya baştan siz küçük bir dizi verirseniz hiç quicksort yapmadan direkt insertion sort kullanıyor.
+
+453
+00:49:14,744 --> 00:49:18,163
+niye? O case'lerde yani küçük dizi parçaları için.
+
+454
+00:49:18,543 --> 00:49:20,964
+Insurion Sort, quicksort'tan daha hızlı.
+
+455
+00:49:21,444 --> 00:49:31,284
+Neden? Çünkü quicksort recursive çalıştığı için şey overhead'ı var işte böyle sürekli function çağırma sıkıntısı var.
+
+456
+00:49:31,764 --> 00:49:33,924
+O olmasın diye falan yani böyle.
+
+457
+00:49:33,924 --> 00:49:42,883
+Şimdi bunlar çok ince şeyler ama ben seviyorum çünkü sonuçta sizlerin bilgisayar mühendisi olarak şey yapmanız gerekiyor.
+
+458
+00:49:42,883 --> 00:49:58,163
+yani efektif çözümler sunmanız gerekiyor. Gittikçe şey daha önemli bir hal alıyor. Bilgisayar ortamında yazılan algoritmaların zamanı ve yeri çok iyi kullanması gittikçe daha önemli bir hal alıyor.
+
+459
+00:49:58,163 --> 00:50:16,703
+O yüzden bunları böyle akılda tutmak, akılda tutmasanız bile gerektiğinde bir yerlere bakarak da olsa seçim yapmanız gerektiğini daha iyi yapabileceğinizi falan düşünmek bence önemli ve güzel.
+
+460
+00:50:16,703 --> 00:50:40,383
+Şimdi bir tek şurada şunu söyleyeceğim. Şuranın böyle sürekli yer değiştirmek yerine burada da şey yapabilirsiniz. Üzerine mi yazayım ne yapayım? Diyelim ki şurada bir temp tanımlarsınız. Açık olsun daha anlaşılır olsun diye ben bu kırmızı olan öyle yazdım. Ama diyelim ki orada bir temp tanımlarsınız.
+
+461
+00:50:40,383 --> 00:50:47,663
+İşte şurada sadece A'nın J'inci gözüne A'nın J-E3'inci elemanını yerleştirirsiniz.
+
+462
+00:50:47,663 --> 00:50:53,964
+Burada da dışarı çıktığınızda A'nın J'inci gözüne tempi yerleştirirsiniz.
+
+463
+00:50:54,124 --> 00:50:55,824
+Mesela bu da şeyi engellemiş olur.
+
+464
+00:50:56,104 --> 00:50:58,703
+Şöyle son yazdıklarını sarıya alıyorum.
+
+465
+00:51:00,624 --> 00:51:01,984
+Bu da şeyi engellemiş olur.
+
+466
+00:51:02,564 --> 00:51:09,383
+Hani şurada yaptığınız exchange yerine birazcık daha iyileştirmiş olursunuz.
+
+467
+00:51:09,383 --> 00:51:17,223
+tekrar edeyim ben rahat anlaşırsın diye o karmaşaya girmedim ama birazcık daha eleştirmek isterseniz böyle bir şey de yapabilirsiniz.
+
+468
+00:51:18,824 --> 00:51:27,923
+O zaman şuraya da, bir dakika, şuraya da bunun yerine temp dersiniz.
+
+469
+00:51:29,443 --> 00:51:35,604
+Şunun yerine falan böyle birazcık daha yapabilirsiniz.
+
+470
+00:51:35,604 --> 00:51:58,684
+Peki şimdi o zaman son şeyi söyleyeyim size. Shellsort ne zaman daha iyi? Daha büyük diziler için iyi. Yani yine 12 elemanın diziniz varsa bizim şu anda yaptığımız gibi. Ay ben bunu parçalara böleyim de dörder dörder atlasın da falan çok gerekli şeyler değil yani gerçek bu.
+
+471
+00:51:58,684 --> 00:52:19,744
+şeyde gördük bakın geri geliyorum bu bence çok önemli bu ayırımı yapmanız çok çok önemli yani şöyle ki en onken zaten bir şey olmuyor en yüz milyonken oluyor
+
+472
+00:52:20,340 --> 00:52:27,340
+Dolayısıyla hani 12 elemanınız varken onu kullanmışsınız, bunu kullanmışsınız çok önemli değil.
+
+473
+00:52:27,340 --> 00:52:36,840
+Shellsort'u gerçekten n kare karmaşıklı bir algoritma olarak yani en üzeri 3,2'de desen o sonuçta n kareye yakın.
+
+474
+00:52:36,840 --> 00:52:42,340
+Büyük dizilerde işte 100 elemanlı, 200 elemanlı, 300 elemanlı falan daha büyük dizilerde.
+
+475
+00:52:42,340 --> 00:52:49,840
+Zaten 1 milyon elemanınız varsa şey kullanın, quicksort falan kullanın orada hiç bunlara bakmayın bile.
+
+476
+00:52:49,840 --> 00:53:02,200
+İkincisi shell sort yine insertion sort gibi böyle tamamen random sayılardan değil de biraz sıralı sayılardan oluşmuş dizilerde avantajlı.
+
+477
+00:53:02,200 --> 00:53:13,659
+Yani zamanında diyelim ki sıralıymış ama üzerinde bir takım hareketler olduğu için gelen giden elemanlar olduğu için hafif sıra bozulmuş, çok da sırasız değil.
+
+478
+00:53:13,659 --> 00:53:15,900
+o tür diziler de avantajlı.
+
+479
+00:53:17,220 --> 00:53:25,840
+Ve şeyden genel olarak ne yaparsanız yapın, instruction'dan da selection'dan da daha nasıl bir algoritma.
+
+480
+00:53:25,840 --> 00:53:31,780
+Peki, şimdi ben size mesela şöyle şeyler önereceğim.
+
+481
+00:53:37,108 --> 00:54:07,087
+şey deneyim, mesela yarı sıralı dizilerde çalıştırarak run ederek çalışma zamanı ölçtü. Çalışma zamanı ölçtü. Çalışma zamanı ölçtü. Biliyorsunuz herhalde şey kullanmadan nedir? Hiç yazdırma yapmayacaksınız ekrana ekran yani ayo yapmadan şeyin işlemlerin başladığı yerin üzerine bir zaman şeyi koyuyorsunuz, fonksiyonu koyuyorsunuz.
+
+482
+00:54:07,108 --> 00:54:15,927
+3 tane dün içerisinde var sistem zamanını ölçme. Ondan sonra bir de bittiği yere böylece ölçebilirsiniz zamanlarını.
+
+483
+00:54:16,847 --> 00:54:23,667
+Böyle oynayın aslında, büyük diziler verin. Diyelim ki işte bir dosyadan okutun öyle elle de olmasın.
+
+484
+00:54:24,108 --> 00:54:31,468
+Diyelim ki 1000 eleman, işte 5000 eleman falan öyle bir sefer uğraşın veya ürettirtin, random sayı ürettirtin şeyinize.
+
+485
+00:54:32,148 --> 00:54:35,868
+Nedir programınızda? Programınız random sayı üretsin.
+
+486
+00:54:35,867 --> 00:54:43,947
+Diyelim ki işte 5000 eleman için bir şeyi deneyin, bir selection'ı deneyin, bir insertion'ı deneyin.
+
+487
+00:54:44,367 --> 00:54:54,048
+Ondan sonra ne bileyim bir diziyi tam yarıya kadar sıraladıktan sonra bir daha deneyin hangi insertion mı daha hızlı, selection mı daha hızlı falan diye.
+
+488
+00:54:55,048 --> 00:55:05,507
+Ondan sonra şey yapın işte büyükten küçüğe sıralı dizi için deneyin falan.
+
+489
+00:55:05,508 --> 00:55:12,427
+Tamam böyle oynayın, şeyi görün. Orada mısınız bu arada? Yani ben gitmişim.
+
+490
+00:55:13,008 --> 00:55:13,788
+Burada izleceğim.
+
+491
+00:55:14,527 --> 00:55:31,707
+Evet ama şey gitmiş değil mi? Ekran şehri gitmiş. Öyle görüyorum. Evet şehir gitmiş. Ondan sonra birazcık şey yapın. Yani oynayarak bu bahsettiğim şeylerin nasıl olduğunu görün. Bunlar eğlenceli şeyler.
+
+492
+00:55:31,707 --> 00:55:41,907
+Bir de bunlara alışırsanız ileride de daha böyle önemli gerçek hayatta kullanılacak algoritmalarda şeye bir alıştınız mı?
+
+493
+00:55:41,907 --> 00:55:44,608
+O hep öyle olur çünkü efektif yazmaya alıştınız mı?
+
+494
+00:55:45,048 --> 00:55:50,427
+Daha büyük problemlerde de böyle farkına bile varmadan daha efektif yazıyor olursunuz.
+
+495
+00:55:50,427 --> 00:55:57,747
+Peki bugün burada keselim başka sorunuz yoksa pazartesinde devam edelim. Uygun mudur? Var mı sorunuz?
+
+496
+00:55:57,947 --> 00:56:01,227
+Hocam şahsort hakkında bir soru daha sorabilir miyim?
+
+497
+00:56:01,707 --> 00:56:11,367
+Tamam. Bu arada da shell sort böyle genelde ortalarda çok konuşulmayan, bilinmeyen, ben birden böyle bir yıldız yaptım sanıyorum shell sortu size. Evet, bilmiyorum.
+
+498
+00:56:12,287 --> 00:56:16,827
+Hocam geçen hafta anlattığınız algoritmik şekle göre ben yazdım ve kodladım.
+
+499
+00:56:16,827 --> 00:56:17,667
+Tamam tabii tabii.
+
+500
+00:56:18,267 --> 00:56:23,647
+Orada ama iki for kullanarak yapmak zorunda kaldım. Siz mesela before'la şey yaptınız.
+
+501
+00:56:24,207 --> 00:56:28,187
+Ama olur mu? Aşk olsun. Benim de while'ım var. Niye öyle diyorsun?
+
+502
+00:56:28,187 --> 00:56:31,407
+İki while before'la yaptınız. Ben iki while iki for'la yaptım hocam.
+
+503
+00:56:31,707 --> 00:56:32,867
+Orada bir for daha var fazla.
+
+504
+00:56:32,947 --> 00:56:34,647
+Gönder bakayım, gönder bakayım.
+
+505
+00:56:35,147 --> 00:56:36,887
+Hocam ben gönderdim size.
+
+506
+00:56:37,047 --> 00:56:37,787
+Sebebi de şu.
+
+507
+00:56:38,547 --> 00:56:40,567
+Adını da söyle.
+
+508
+00:56:41,887 --> 00:56:42,227
+Efendim?
+
+509
+00:56:42,727 --> 00:56:43,387
+Adını söyle.
+
+510
+00:56:43,847 --> 00:56:44,367
+[öğrenci].
+
+511
+00:56:44,927 --> 00:56:47,847
+Tamam şimdi diğer vardır başka gönderen diye bakacağım diye.
+
+512
+00:56:48,007 --> 00:56:49,027
+Evet, [öğrenci].
+
+513
+00:56:49,027 --> 00:56:51,607
+Hem sitevi arttırıyorum hocam for dönemiz içinde.
+
+514
+00:56:51,787 --> 00:56:52,107
+Dört, dört.
+
+515
+00:56:52,207 --> 00:56:54,887
+Hani siz dört, beş, altı diye gidiyorsunuz ya mesela.
+
+516
+00:56:55,367 --> 00:56:57,387
+Ben dört, beş, on iki diye gidiyorum önce.
+
+517
+00:56:57,467 --> 00:56:58,607
+Gidebiliyorsun, evet.
+
+518
+00:56:59,327 --> 00:57:00,907
+Şunun yerine sen tabii.
+
+519
+00:57:00,908 --> 00:57:04,228
+Hocam ekranı paylaşırsanız hatta gösteririm şu anki veremiyorum
+
+520
+00:57:04,228 --> 00:57:10,188
+Ay pardon ben bu arada dur şey yapmışım ben de ekranı siz görüyorsunuz
+
+521
+00:57:10,188 --> 00:57:13,048
+Ha sana şey mi vereyim? Hak mı vereyim?
+
+522
+00:57:13,727 --> 00:57:17,608
+Yok hocam siz kendinizi açsanız da ben şey yaparım oradan anlatırım yani
+
+523
+00:57:17,608 --> 00:57:23,208
+Ha tamam oldu peki tamam zaten veremedim bak size vereyim istedim de
+
+524
+00:57:23,208 --> 00:57:26,968
+Tamam şimdi bir dakika dur
+
+525
+00:57:26,968 --> 00:57:29,788
+Evet dinliyorum
+
+526
+00:57:30,771 --> 00:57:31,591
+Görüyor musun?
+
+527
+00:57:32,811 --> 00:57:33,411
+Görüyorum.
+
+528
+00:57:33,971 --> 00:57:35,771
+Mesela step size 3 dedikten sonra
+
+529
+00:57:35,771 --> 00:57:38,091
+3-6, 3-0 bakıyorsunuz.
+
+530
+00:57:38,171 --> 00:57:39,791
+Sonra 4-1 bakıyorsunuz.
+
+531
+00:57:39,811 --> 00:57:40,631
+Öyle gidiyorsunuz ya.
+
+532
+00:57:41,051 --> 00:57:43,351
+Ben mesela 3-0 gidiyorum.
+
+533
+00:57:43,451 --> 00:57:46,131
+Sonra 6-3-0 gidiyor. 9-6-3-0 diye gidiyor.
+
+534
+00:57:46,771 --> 00:57:47,712
+Tamam o da doğru.
+
+535
+00:57:48,331 --> 00:57:50,011
+Bir de bu indeks artırmam lazım
+
+536
+00:57:50,011 --> 00:57:51,131
+4'e geçmek için.
+
+537
+00:57:51,692 --> 00:57:53,112
+Onun için de ayrı bir for tutuyorum.
+
+538
+00:57:53,112 --> 00:57:55,831
+3 ile 6 arasında kalsın diye ayrı bir for tutuyorum.
+
+539
+00:57:56,571 --> 00:57:58,551
+Aslında şöyle tekrardan söyleyeyim.
+
+540
+00:57:58,551 --> 00:58:05,351
+Ben şimdi onu anlatırken size öyle anlatırken algoritma daha rahat anlaşılıyor.
+
+541
+00:58:05,531 --> 00:58:07,051
+O yüzden öyle anlatmıştım.
+
+542
+00:58:07,471 --> 00:58:13,171
+Ama şimdi bu sefer burada da kod yazarken de böyle kod böyle daha rahat yazılıyor.
+
+543
+00:58:13,331 --> 00:58:16,632
+Daha böyle kodunu bunun kodu daha anlaşılır oluyor.
+
+544
+00:58:16,632 --> 00:58:19,731
+O yüzden değiştirdim ama ikisi de aynı şeyi yapıyor.
+
+545
+00:58:19,831 --> 00:58:20,971
+Hiç endişe etmeyin.
+
+546
+00:58:21,331 --> 00:58:22,551
+Algoritmana bakarım.
+
+547
+00:58:22,771 --> 00:58:26,351
+Daha iyileştirilebiliyor mu bir fikir verir sana.
+
+548
+00:58:26,952 --> 00:58:27,511
+Tamam mı?
+
+549
+00:58:27,511 --> 00:58:29,451
+şey olmasın yani sakın şey
+
+550
+00:58:29,451 --> 00:58:31,771
+düşünmeyin pazartesiyle farkındaysanız
+
+551
+00:58:31,771 --> 00:58:33,431
+bugünki aynı şey fakat
+
+552
+00:58:33,431 --> 00:58:35,471
+orada algoritmayı anlatması
+
+553
+00:58:35,471 --> 00:58:37,571
+daha kolaydı. Burada da
+
+554
+00:58:37,571 --> 00:58:39,231
+böyle akış çizerken
+
+555
+00:58:39,231 --> 00:58:41,492
+anlaşılır ne daha kolay gibi geliyor
+
+556
+00:58:41,492 --> 00:58:43,011
+bana bilmiyorum. Rahat anladınız mı?
+
+557
+00:58:43,771 --> 00:58:44,751
+Anladım hocam.
+
+558
+00:58:46,191 --> 00:58:46,951
+Güzel.
+
+559
+00:58:47,411 --> 00:58:48,791
+Ben yolladım hocam zaten size.
+
+560
+00:58:48,791 --> 00:58:49,971
+Tamam oldu bakacağım.
+
+561
+00:58:50,651 --> 00:58:52,211
+Hocam yine bu akış yamasıyla alakalı
+
+562
+00:58:52,211 --> 00:58:54,091
+biraz talih bir nokta ama
+
+563
+00:58:54,091 --> 00:58:56,831
+hani siz süreçlemini
+
+564
+00:58:56,831 --> 00:58:58,611
+işte öyle kısaca bir
+
+565
+00:58:58,611 --> 00:59:00,571
+proses için diye göstermiş oldunuz ya daha rahat
+
+566
+00:59:00,571 --> 00:59:02,731
+anlaşılması için. Şunu mu diyorsun?
+
+567
+00:59:03,571 --> 00:59:03,992
+Şunu mu?
+
+568
+00:59:04,571 --> 00:59:06,651
+Evet en son. İşte onun gibi
+
+569
+00:59:06,651 --> 00:59:08,492
+mesela diziyi de input alırken
+
+570
+00:59:08,492 --> 00:59:10,311
+işte tek input kutucukta
+
+571
+00:59:10,311 --> 00:59:12,671
+almak vs. Biraz talih bir nokta
+
+572
+00:59:12,671 --> 00:59:14,352
+ama bazı hocalar çok dikkat ediyor.
+
+573
+00:59:14,531 --> 00:59:15,831
+Özellikle işte sınavları falan.
+
+574
+00:59:16,831 --> 00:59:18,691
+Yani mesela anlatırken daha kolay
+
+575
+00:59:18,691 --> 00:59:20,451
+ama bizden talep ettiğiniz
+
+576
+00:59:20,451 --> 00:59:21,111
+şekilde.
+
+577
+00:59:22,731 --> 00:59:24,671
+Şöyle. Birinci sınıf
+
+578
+00:59:24,671 --> 00:59:26,632
+tamam mı? Yani ben
+
+579
+00:59:26,632 --> 00:59:28,051
+zamanında bilgisayar bilgisayar bilgisayarın
+
+580
+00:59:28,051 --> 00:59:30,091
+girişi anlattım, söylemişimdir büyük bir ihtimalle.
+
+581
+00:59:30,172 --> 00:59:31,591
+Eski yıllarda anlatıyordum.
+
+582
+00:59:32,471 --> 00:59:34,151
+Birinci sınıf öğrencilerinde bizimle
+
+583
+00:59:34,151 --> 00:59:36,032
+çok dikkat ederiz. Çünkü
+
+584
+00:59:36,032 --> 00:59:38,331
+şey sıkıntısı vardır. Mesela öğrenci
+
+585
+00:59:38,331 --> 00:59:39,471
+şunu şey zanneder.
+
+586
+00:59:40,212 --> 00:59:42,311
+Şurada şu var ya, en ince elemanı
+
+587
+00:59:42,311 --> 00:59:43,872
+yazdırıyorum falan zanneder.
+
+588
+00:59:43,992 --> 00:59:46,111
+Dizide sıfırdan başlıyor. Zaten en ince eleman
+
+589
+00:59:46,111 --> 00:59:48,111
+yok aslında. Onu
+
+590
+00:59:48,111 --> 00:59:50,372
+oturtması birinci sınıf öğrencisi
+
+591
+00:59:50,372 --> 00:59:51,812
+çok zaman alıcı bir iştir.
+
+592
+00:59:52,171 --> 00:59:53,932
+O yüzden ben de o zamanlar
+
+593
+00:59:53,932 --> 00:59:56,132
+uzun uzun bunun döngüyle
+
+594
+00:59:56,132 --> 00:59:58,611
+nasıl alındığını, bunun döngüyle nasıl yazıldığını
+
+595
+00:59:58,611 --> 01:00:00,171
+bütün algoritmalarımda
+
+596
+01:00:00,171 --> 01:00:02,212
+açık açık yazardım. Yani for döngüsüyle
+
+597
+01:00:02,212 --> 01:00:04,271
+okulduk, for döngüsüyle yazardım ki
+
+598
+01:00:04,271 --> 01:00:06,372
+şey yapmasın, öğrencinin
+
+599
+01:00:06,372 --> 01:00:07,852
+kafası karışmasın diye ama
+
+600
+01:00:07,852 --> 01:00:10,471
+mesela ben kendi adıma, diğer hocalarımız
+
+601
+01:00:10,471 --> 01:00:12,432
+nasıl yapıyor bilmiyorum, birinci
+
+602
+01:00:12,432 --> 01:00:14,271
+sınıfta işte dönemin
+
+603
+01:00:14,271 --> 01:00:16,372
+ortasından sonra artık buna
+
+604
+01:00:16,372 --> 01:00:18,271
+geçerdim. Çünkü tamam yani öğrenci
+
+605
+01:00:18,271 --> 01:00:20,292
+anlamıştır orada bunun
+
+606
+01:00:20,292 --> 01:00:22,152
+bir sembol olduğunu ve
+
+607
+01:00:22,152 --> 01:00:24,451
+bütün diziyi okuması gerektiğini bakınca
+
+608
+01:00:24,451 --> 01:00:26,311
+anlıyordur. O yüzden
+
+609
+01:00:26,311 --> 01:00:28,531
+aynı şey şunun içinde geçer.
+
+610
+01:00:28,631 --> 01:00:29,951
+Şimdi birinci sınıf öğrencisine
+
+611
+01:00:29,951 --> 01:00:31,791
+şeyi söylemen lazım. İşte
+
+612
+01:00:31,791 --> 01:00:34,551
+bir tempararı bir yer var. Tempe işlerinden
+
+613
+01:00:34,551 --> 01:00:36,491
+A'nın neyincisini al, A'nın neyinci
+
+614
+01:00:36,491 --> 01:00:37,911
+gözlerinden neyi al falan.
+
+615
+01:00:38,351 --> 01:00:40,631
+Değil mi? Yani çünkü bunu anlayamaz
+
+616
+01:00:40,631 --> 01:00:42,531
+yani normal birinci sınıf öğrencisi.
+
+617
+01:00:43,051 --> 01:00:44,551
+Genelleme için söylüyorum
+
+618
+01:00:44,551 --> 01:00:45,831
+sana bunu ben.
+
+619
+01:00:46,551 --> 01:00:48,411
+Şu anda artık siz
+
+620
+01:00:48,411 --> 01:00:50,811
+o noktayı çok geçtiğiniz için
+
+621
+01:00:50,811 --> 01:00:52,131
+bir mahsuru yok yani.
+
+622
+01:00:52,311 --> 01:00:54,391
+Bence hiçbir mahsuru yok yani.
+
+623
+01:00:54,451 --> 01:00:56,431
+yani çok avuç işler için
+
+624
+01:00:56,431 --> 01:00:58,591
+kullanmadığınız sürece kısaltmaları
+
+625
+01:00:58,591 --> 01:01:00,391
+şimdi çok da bilemiyorum
+
+626
+01:01:00,391 --> 01:01:02,211
+yani ne de kullanırsanız olmaz
+
+627
+01:01:02,211 --> 01:01:04,511
+diyebileceğim birim yok ama bunlar artık
+
+628
+01:01:04,511 --> 01:01:06,431
+tamam yani ikinci sınıf ikinci dönemde
+
+629
+01:01:06,431 --> 01:01:08,731
+ya Allah Allah hoca burada ne demek istedi
+
+630
+01:01:08,731 --> 01:01:10,151
+demeyeceğiniz şeyler sanırım
+
+631
+01:01:10,151 --> 01:01:11,391
+anlaşılmıyorum sağolun
+
+632
+01:01:11,391 --> 01:01:12,871
+tamam peki
+
+633
+01:01:12,871 --> 01:01:16,591
+o zaman bugün burada bitirelim
+
+634
+01:01:16,591 --> 01:01:18,711
+pazartesi görüşmek üzere
+
+635
+01:01:18,711 --> 01:01:20,551
+size güzel bir hafta biliyorum
+
+636
+01:01:20,551 --> 01:01:23,271
+iyi günler
+
+637
+01:01:23,271 --> 01:01:25,152
+O zaman, şeyin bir gün.
+
+638
+01:01:26,012 --> 01:01:26,432
+Bir şey.

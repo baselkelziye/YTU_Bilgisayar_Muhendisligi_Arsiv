@@ -1,0 +1,1627 @@
+1
+00:00:34,835 --> 00:00:36,835
+Merhaba hocam.
+
+2
+00:01:08,884 --> 00:01:12,884
+Arkadaşlar merhaba, ben Fuat, araştırma görevlisi.
+
+3
+00:01:15,884 --> 00:01:21,884
+Sadece Elif Hoca'nın öğrencileri yok değil mi? Bütün gruptaki öğrenciler geliyor şu anda. Diğer gruptan olan bir arkadaş size söyleyebilir mi?
+
+4
+00:01:21,884 --> 00:01:22,884
+Evet.
+
+5
+00:01:22,884 --> 00:01:24,884
+Hocadan da var.
+
+6
+00:01:24,884 --> 00:01:27,884
+Tamam, güzel. Biraz bekleyelim, diğer arkadaşlarınız da katılsın.
+
+7
+00:01:27,884 --> 00:01:30,884
+Onlar harici bir şekilde bağlanıyorlar çünkü diğer gruptan geliyorlar.
+
+8
+00:01:30,884 --> 00:01:32,884
+Onları bekleyelim.
+
+9
+00:01:32,884 --> 00:01:50,884
+Sonra size quizlerde ve ödev konusunda takım açıklamalarda ve yol gösterici çözümlerle ilgili kısa bir sunum yapacağım. Biraz bekleyelim istiyorsanız.
+
+10
+00:02:14,836 --> 00:02:18,974
+zannedersem şu ana kadar iki tane queue, yüz bir de ödev oldunuz değil mi arkadaşlar?
+
+11
+00:02:18,974 --> 00:02:21,974
+Evet hocam.
+
+12
+00:05:20,180 --> 00:05:22,180
+İsterseniz başlayalım arkadaşlar.
+
+13
+00:05:22,180 --> 00:05:32,180
+Size şu ana kadar iki quiz bir ödev verildi. Ödevinin stack ile ilgiliydi. Yani bir karakter kontrol yapıyordunuz. İki tane kod vardı.
+
+14
+00:05:32,180 --> 00:05:41,180
+Kodları kontrol etmeniz gerekiyordu. Doğruysa doğru, kodlar yalnızsa da yanlış şekilde çıkış yapmanız gerekiyordu. Programda genel olarak istenen şey, beklenen şey buydu.
+
+15
+00:05:41,180 --> 00:05:50,899
+Bir de quizde de sizden bir renk matrisinin iki boyutlu renk erayının ya da histogramının yapılması istemiyorum.
+
+16
+00:05:51,040 --> 00:05:56,838
+Onunla ilgili bir takım varsayımlar vardı. Varsayımları göz önünde bulundurarak bir algoritma geliştirip kodunu yazmanız gerekiyordu.
+
+17
+00:05:58,199 --> 00:06:06,298
+Şimdi öncelikle onunla başlayalım istiyorsanız. Sonra da stack sorusu ile ilgili size nasıl yapmanız, bizden beklenen çözüm belli diye ipuçlarını vereyim.
+
+18
+00:06:06,298 --> 00:06:18,079
+Önce biz quiz 1 ile başlayalım. Quiz 1'de arkadaşlar sizden bir matriz bekleniyordu. Ben ekrana tetek giriyom ekran adına bu şekilde hızlı bir şekilde bir matriz oluştum ki boyutlu.
+
+19
+00:06:19,738 --> 00:06:31,639
+Genişliklerinde o n ve m yani kolon ve satış sayılarında böyle makro ile hızlı bir şekilde belirledim. Çünkü kod içerisinde birden fazla ayar da aynı şeyleri girmenin için daha kolay oluyor.
+
+20
+00:06:31,639 --> 00:06:40,139
+yönetmesi daha kolay olduğu için makro tanımladım bunun için. Zaten size renk skalasının 0 ile 255 arasında olduğu bilgisayar verilmişti.
+
+21
+00:06:40,139 --> 00:06:50,139
+İndislerimizi genelde biliyorsunuz arkadaşlar ayrı bir yerde tanımlıyoruz. Yani bu değişkenlerimizi özellikle grupta yiyip tanımlamak,
+
+22
+00:06:50,139 --> 00:06:59,139
+onları yorumlamak, yorum satıları ile ilgili de uyumlu olması açısından her zaman okunaklık kod olması açısından da faydalı oluyor. O yüzden biz de bunları böyle ayrı ayrı yazdık.
+
+23
+00:06:59,139 --> 00:07:05,139
+Max color range 255 arasında olduğunu söylemiştik. Size bir varsayım vardı. Bu varsayımda bir k değeri vardı.
+
+24
+00:07:05,139 --> 00:07:13,139
+K değeri de bu k sayısının 3 bölü, bölü 3 hali aslında. Bu k dediğim şey k bölü 3 olarak size verilen dökümandaki değişken.
+
+25
+00:07:14,139 --> 00:07:27,139
+Kısa olması acısından ben ona k dedim. Burada bir flag'imiz var. Bu bizim histogram hesaplarken renklerin, renk matresi, renk ereğinde farklı renklerin olduğu ereğinde bulunup bulunmadığını kontrol etmek için kullandığım bir flag.
+
+26
+00:07:27,139 --> 00:07:31,139
+Bu da kaç farklı renk varsa onları sayan bir sayaç aslında.
+
+27
+00:07:33,639 --> 00:07:36,139
+Şimdi burada biz bir pre-allocation yapmıştık.
+
+28
+00:07:36,798 --> 00:07:41,199
+Burada ise malloc ve calloc iki farklı şekilde allocation yapma örneği koydum.
+
+29
+00:07:42,259 --> 00:07:43,858
+Bunları zaten biliyorsunuz diye düşünüyorum.
+
+30
+00:07:44,699 --> 00:07:48,879
+Malloc'la calloc arasındaki fark memore allocation'da tek bir parametre var.
+
+31
+00:07:48,879 --> 00:07:56,199
+Ve parametre tamamen allocate mesleğiniz bit sayısıyla alakalı bir tek parametre alıyor.
+
+32
+00:07:56,199 --> 00:08:09,278
+Colour O'u da ise iki parametre alıyor. Her bir değişken için ayrılan boyut ve birkaç tane değişken için yer ayıracaksınız onun parametresini alıyor, element parametresi.
+
+33
+00:08:10,139 --> 00:08:15,499
+Ve Colour O'u da ki bir diğer farkı kısa Colour O'u da ki dedikten sonra bütün değerleri sıfıra dolduruyor.
+
+34
+00:08:16,658 --> 00:08:19,598
+Bunları biliyor olabilirsiniz ama ben tekrar üstünden geçmekte fayda görüyorum.
+
+35
+00:08:19,598 --> 00:08:27,999
+Color Count ise burada arkadaşlar. Şimdi döngümüze başlayacağız. Yapmamız gereken şey öncelikle bütün resimleri gezmek. Bununla ilgili yapabileceğimiz başka bir şey yok.
+
+36
+00:08:27,999 --> 00:08:37,759
+Bütün resim, piksel yeri, bütün renkletlik gezmek zorundayız. Bu da n çarpı m'lik bir karmaşıkta sahip. Bunu yapmak zorundayız. Bundan kaçış yok.
+
+37
+00:08:37,759 --> 00:08:56,200
+ancak resimleri unique dediğimiz dizide gezme işini kısaltabiliriz yani bir pikseldeki rengin renk matrizinde veya dizisinde olup olmadığını kontrol etmek için dizinin sonuna kadar gitmeye gerek yok yani dizide eğer bulduğumuz anda çıkabiliriz değil mi?
+
+38
+00:08:56,198 --> 00:08:58,899
+O yüzden burayı bir varlıyoruz koyuyoruz.
+
+39
+00:08:59,698 --> 00:09:03,399
+Tamam mantık şu, eğer bulunursa, fanlı bir yapacağım, çıkacağım.
+
+40
+00:09:04,078 --> 00:09:10,599
+Veya bütün farklı renkler sayısı, şu ana kadar kaç tane farklı renk varsa, T oraya gidene kadar devam edecek ve çıkacak dönemden.
+
+41
+00:09:10,658 --> 00:09:11,379
+İki şartımız var.
+
+42
+00:09:11,744 --> 00:09:32,962
+bu keşah içerisinde eğer rengi bulursak found'ı bir yapıp çıkma koşulunu sağlayacağız ve o rengin indisindeki renk neyse, daha önce bu renk olduğu için found oldu bu arada, onun değerini bir arttırarak count dizisini güncelleyeceğiz. Bu count aslında hangi rengin, kaç tane, hangi renkten, kaç tane olduğumuzdan parametrenin dizisi.
+
+43
+00:09:32,962 --> 00:09:59,423
+İndisler beraber ortak, bunu match sort ile belirleyebilirdiniz. Örneğin ben unix ve counts'u iki farklı araya tuttum. Siz bunu tek bir iki boyutlu, pardon, bir T boyutlu ve iki tane indisi olan bir match şeklinde tutabilirdiniz. Yani ben burada iki tane araya tuttum ayrı ayrı. Siz bunları birleştirip iki boyutlu tek bir match şeklinde tutabilirdiniz. Sıfırıncı gözlerinde unix'ler olurdu, birinci gözünde de, birinci kolonunda da daha doğrusu count'lar olurdu.
+
+44
+00:09:59,423 --> 00:10:10,144
+bu şekilde arttırıyoruz. Burada da T değişkenimiz var. Yani her adımda bir sonraki renk gözüne gitmek için yaptığımız bir değişken arttırması.
+
+45
+00:10:10,264 --> 00:10:15,964
+While döngüsünün bir parçası aslında. Eğer while döngüsünden çıktıysak bunun iki sebebi olabilir.
+
+46
+00:10:15,964 --> 00:10:21,302
+Birincisi ya found, ya rengi bulmuşuzdur ya da bütün renkleri gezmişizdir, rengi bulamamışızdır.
+
+47
+00:10:21,802 --> 00:10:27,403
+O yüzden şu değişken herhangi birini kontrol ederek biz bunun neden çıktığını öğrenebiliriz.
+
+48
+00:10:27,403 --> 00:10:56,763
+Yani rengi bulduk mu yoksa renk hiç bulunamadı mı? Renk bulunamadıysa eğer yeni bir renktir bu o zaman bunu zaten şu an renklerin sayısı neyse o ödeye atıp yeni renk olarak oluşturup counter'unu da birden başlatıyoruz. Daha sonra color counter'ı tekrar bir arttırarak işlemimize devam ediyoruz. Döngümüz bunu yapıyor arkadaşlar. Bundan sonra zaten ekranda çıkıları veren kısım var. Onları da anlatayım. Sonra size farklı alternatif yönleri göstereyim. Burada çok basit bir şekilde 2 for ile dönüyorum.
+
+49
+00:10:56,763 --> 00:11:24,964
+Burada size size söylemek istediğim şey, ben burada desimalleri böyle 3D3D olarak gösterdim. Burada 0, 255 aralığında olduğu için renklerimiz. Bu şeyi göstermek daha uygun oluyor. Desimal olarak 1 ile 255 hep left-carsified olarak terminale yazdırdı ama siz bunların align olmasını istiyorsanız alt alta yazdırırken bu şekilde formantlayarak yazdırabiliyorsunuz. Bunu da unutmayın. Göster açıdan da her zaman daha göze hoş gelen, daha anlaşılır. Sonuçlar edilmeli sağlar.
+
+50
+00:11:24,964 --> 00:11:51,082
+farklı nasıl yapabilirdiniz bunu arkadaşlar? Örneğin allocation'larınızı mesela örneğin ödedişte verilen şey bir memory kısmı içeriyordu ama zaten size k bölü 3 bahsedefini yaptığınız için aslında onu çok da dikkat etmenize gerek yok çünkü renk sayısı zaten verdiğimiz bahsedefini oldukça kuşatıyoruz ama gömülü sistem için bunu daha iyi tasarlamanın yolu iki farklı şekilde olabilir.
+
+51
+00:11:51,082 --> 00:12:01,342
+örneğin siz renk geldikçe ne bir renk eklediğiniz için önceki elde ettiğiniz matrisi allocate ettiğiniz alanı bir genişletebilirsiniz.
+
+52
+00:12:01,342 --> 00:12:11,643
+Bunun için de malloc alloc dışında daha önce oluşturduğunuz bir memori alanını expand etmek ya da daha geniş bir alokasyon sağlamak amacıyla kullanabileceğimiz realloc fonksiyonu var.
+
+53
+00:12:12,323 --> 00:12:13,163
+Bu şekilde yazılıyor.
+
+54
+00:12:13,163 --> 00:12:18,082
+Bu fonksiyon ile daha önceki pointer'ınızın alanını yeni alan olarak belirleyip
+
+55
+00:12:18,082 --> 00:12:22,323
+Örneğimiz mesela burada count list'ini k boyutlu bir size of int kadar belirlemiştik
+
+56
+00:12:22,323 --> 00:12:28,464
+Bunun için en başta belirlediğimiz alanı daha büyük bir k parmaçı vererek tekrar güncelleyebiliyoruz
+
+57
+00:12:28,464 --> 00:12:30,903
+Ve bunu aynı pointer için yapabiliyoruz
+
+58
+00:12:30,903 --> 00:12:36,722
+Yani aslında kısacası relog sizin var olan olakiyetiniz alanı daha da genişletmek için kullandığınız bir şey
+
+59
+00:12:36,722 --> 00:12:38,464
+Peki onu burada nasıl kullanabiliriz?
+
+60
+00:12:38,464 --> 00:12:44,222
+Biz her seferin yeni renk geldikçe aslında daha önceden ayrılmış olan dizinin belli gözlerini dolduruyoruz.
+
+61
+00:12:45,143 --> 00:12:51,143
+Ama burada bunu yapmak yerine yeni renk geldikçe yeni alokasyon yapmayı sağlayarak memori daha efektif kullanabiliriz.
+
+62
+00:12:51,143 --> 00:13:00,582
+Ama bunun da bir drawback'i var. Bu drawback de şu. Siz aslında her seferinde her reallocayı yaptığınızda sizin memorinizi yöneten o ara birim.
+
+63
+00:13:01,043 --> 00:13:08,763
+iş iş yapıyor. Yani bir CPU kullanımı söz konusu. Sonuçta bizim allocate yaptığımız her şey bir fonksiyon ve fonksiyonlarda arka planda birtakım işler yapıyorlar.
+
+64
+00:13:08,763 --> 00:13:17,202
+birtakım sistem çağrıları yapıyorlar. Memorideki bazı beşte fragmentları birleştirip sizin ihtiyacınız olan memori alanı oluşturmaya çalışıyorlar.
+
+65
+00:13:17,202 --> 00:13:26,322
+Sonuçta bu da bir iş. Gömün sistemde olsa bu da bir iş. Bunu da gözümde bulundurarak yapabilirsiniz. Evet, size bir memori alanı kazandırıyor ama bunun karşılığında sistem bir CPU ve zaman alıyor.
+
+66
+00:13:26,322 --> 00:13:30,043
+Bu da tabi performans açısından değerlendirmesi gereken bir kriter.
+
+67
+00:13:30,543 --> 00:13:31,743
+Burayı relakate yapabilirdiniz.
+
+68
+00:13:32,202 --> 00:13:37,224
+Ben tamamen önceden belirlediğim k sayılarını riayet ederek devam ettim.
+
+69
+00:13:37,602 --> 00:13:38,302
+Bu bir tercih idi.
+
+70
+00:13:39,163 --> 00:13:46,562
+Bir diğer tercih ise bu şekilde Unix ve Cons şekli bir kre kullanmak yerine bir link liste kullanabilirdiniz.
+
+71
+00:13:46,562 --> 00:13:48,623
+Link listenin sadece en büyük avantajı şu olur.
+
+72
+00:13:49,224 --> 00:13:55,224
+Siz aslında her bir element eklediğinizde elementin sonuna yeni bir element ekleyebiliyorsunuz.
+
+73
+00:13:55,263 --> 00:13:56,243
+Link listenin olayı bu değil mi?
+
+74
+00:13:56,322 --> 00:14:00,263
+Her zaman bir insert opsiyonu sağlıyor size ama arraylerde böyle bir şey yok.
+
+75
+00:14:00,263 --> 00:14:02,822
+Arraylerde statik bir memory alokasyon söz konusu.
+
+76
+00:14:02,822 --> 00:14:04,623
+Realloc yapmadığınız sürece tabii ki.
+
+77
+00:14:04,623 --> 00:14:08,624
+Ve o memory alokasyonu siz kullansanız da kullanmasanız da hep öyle duracak.
+
+78
+00:14:08,624 --> 00:14:10,023
+Ama link listede böyle bir şey yok.
+
+79
+00:14:10,023 --> 00:14:17,322
+Siz her seferinde yeni bir değişken tanımlayıp değişkenin adresini bir önceki linkli listenin geri kalan son kuyruğuna bağlamış oluyorsunuz.
+
+80
+00:14:17,322 --> 00:14:24,124
+Böylece aslında hem memory biraz daha efficient kullanmış oluyorsunuz hem de şey olmuş oluyor.
+
+81
+00:14:24,124 --> 00:14:28,624
+biraz daha yönetim daha kolay bir şey olmuş oluyor. Relog'dan daha kolay bir yönetime sahip olmuş oluyorsunuz.
+
+82
+00:14:28,624 --> 00:14:31,624
+En azından CPU ve memori alokasyonu açısından.
+
+83
+00:14:32,322 --> 00:14:38,124
+Tabii bunun da sağladığı bir dezavantaj var. O dezavantaj da siz her bir link liste tuttuğunuzda bir adres tutmak zorundasınız.
+
+84
+00:14:38,124 --> 00:14:43,624
+Normalde biz burada bir size of int kadar yer tutarken bu artık iki size of int kadar olacak belki.
+
+85
+00:14:44,124 --> 00:14:47,624
+Tabii siz adres, memorizdeki adres uçlarının büyüklüğüne de bağlı.
+
+86
+00:14:47,623 --> 00:14:56,623
+Çünkü integer'dan daha büyük bir adres olabilirsin. Memorizu kullanan adres birimiz bir integer'dan daha büyük bir alana ihtiyaç duyabilir.
+
+87
+00:14:56,623 --> 00:15:07,623
+32 bit, 64 bit biliyorsunuz memory blokları var. Ona göre int 32 bit destekliyorsa integer'dan daha büyük longit vesaire bir şey tanılamanız gerekebilir.
+
+88
+00:15:07,623 --> 00:15:16,623
+Onun dışında linkli listelerin bir diğer dezavantajı ise örneğin mesela ben şu an burada
+
+89
+00:15:16,624 --> 00:15:28,083
+İstediğim rengin, istediğim gözdeki rengin Unix-E diyerek, Unix-5 diyerek direkt o renge gidip o rengin kaç kauntı varmış diye bakabiliyorum ama link listede doğrudan adreslenme diye bir şey yok.
+
+90
+00:15:28,523 --> 00:15:35,124
+Örneğin ben link listenin 5. gözündeki rengin kaç tane olduğunu öğrenmek istediğim zaman ne yapmak zorundayım?
+
+91
+00:15:35,124 --> 00:15:41,822
+Link listenin başından başlayıp 2. elemanına, 3. elemanına, 4. elemanına, sonra 5. elemanına böyle tek tek gezmek zorundayım.
+
+92
+00:15:41,942 --> 00:15:46,423
+Yani link listenin bir diğer dezavantajı ise random access diye bir şey yok.
+
+93
+00:15:46,624 --> 00:15:52,264
+herhangi bir gözdeki elemente erişmek istediğiniz zaman en baştan başlayıp o göze kadar tek tek yerlenmek durumundasınız.
+
+94
+00:15:52,864 --> 00:15:54,583
+Link listenin bir diğer dezavantajı da o.
+
+95
+00:15:55,083 --> 00:15:59,583
+Ama tabii ki biz şu anda gömülü sistemler için bu uygulamayı tasarladığımız için
+
+96
+00:15:59,583 --> 00:16:08,962
+memori alakasyonu ve linkli listenin bu şu anki anlattığım şeylere daha fazla avantaj sağlayacağını söyleyebiliriz.
+
+97
+00:16:09,822 --> 00:16:12,844
+Bu soruyla ilgili merak ettiniz başka bir şey var mı?
+
+98
+00:16:17,235 --> 00:16:19,235
+Anlattıklarım dışında merak ettiniz.
+
+99
+00:16:19,615 --> 00:16:22,735
+Hocam şöyle olsaydı nasıl olurdu diye sormaksız bir şey var mı?
+
+100
+00:16:28,628 --> 00:16:30,986
+Yok hocam, teşekkürler. Bunları paylaşacak mısınız?
+
+101
+00:16:32,087 --> 00:16:36,687
+Bunu paylaşmayacağız arkadaşlar. Derslerden o yüzden size gösteriyorum.
+
+102
+00:16:37,467 --> 00:16:40,267
+Bunu paylaşmamıza gerek yok. Zaten bu sizin yapmanız gereken bir quizdi.
+
+103
+00:16:40,366 --> 00:16:48,187
+Sadece eksiklerinizi görmeniz açısından ve biraz size fikir oluşturması açısından size biz nasıl yapıyoruz onu göstermek için.
+
+104
+00:16:48,187 --> 00:16:52,567
+En azından şey de görmüş oluyorsunuz aslında. Biz değerlendirmeleri yaparken nelere dikkat ediyoruz?
+
+105
+00:16:52,687 --> 00:16:57,687
+Hangi structure array? Özellikle veri yapıları dersinde biliyorsunuz ki kullandığınız array, linked liste,
+
+106
+00:16:57,687 --> 00:17:04,586
+yani structure'ların önemi çok büyük. Çünkü dersin amacı o zaten. Size o structure'lara ve o structure'lara uygun kullanımları verebilmek.
+
+107
+00:17:05,386 --> 00:17:10,627
+Dolayısıyla biz de şu anda size o kısımlarla ilgili ipuçlarını vermek açısından kodu gösteriyoruz.
+
+108
+00:17:10,627 --> 00:17:13,727
+Yoksa zaten bizim ödedilerinizi böyle tuttukça açıklayıp kodlarını göstermiyoruz.
+
+109
+00:17:14,426 --> 00:17:19,047
+Size aynı atlılması açısından gösteriyoruz. O yüzden dersi dinleyenlerin sağlayacağı vantajı.
+
+110
+00:17:19,086 --> 00:17:21,707
+Şu anda AVS'de bu kodu tekrar koymak gibi bir düşüncemiz yok.
+
+111
+00:17:22,727 --> 00:17:24,047
+Bir şey sorabilir miyim hocam?
+
+112
+00:17:24,386 --> 00:17:24,886
+Tabii buyurun.
+
+113
+00:17:24,886 --> 00:17:32,547
+Unix ve Comps dizileri oluştursaydık fixed bir şekilde yine aynı şey olurdu. Yani bunun bir farkı var.
+
+114
+00:17:32,547 --> 00:17:41,247
+Evet, allocation'larından size bahsetmek adına bunları böyle yaptım. Tabii ki bunları aynı şu yukarıda yaptığımız gibi size'larını verip yapabilirdik. Doğru söylüyorsun.
+
+115
+00:17:42,067 --> 00:17:48,527
+Ama sizin zaten programda sizin zaten şu şeyleri, maximum color range'leri vesaire input olarak vermeniz gerekiyordu.
+
+116
+00:17:48,528 --> 00:17:51,307
+ben burada statikleştirdim için ona da imkan sağladım.
+
+117
+00:17:51,307 --> 00:17:55,887
+Örneğin siz şu k'yı, pardon şu max color range sizin ekrandan okutmanız gerekiyor sanırım.
+
+118
+00:17:56,127 --> 00:17:58,008
+Ben öyle hatırlıyorum kodu.
+
+119
+00:17:58,347 --> 00:18:02,406
+Dolayısıyla siz bu k sayısını max color range almadan ne kadar allocate edeceğiz bilmediğiniz için
+
+120
+00:18:02,406 --> 00:18:06,208
+mallocation, malloc ve calloc kullanmak zorunda kalacaktınız zaten.
+
+121
+00:18:06,326 --> 00:18:07,887
+Çünkü şu sayı bilmiyorsunuz önceden.
+
+122
+00:18:08,667 --> 00:18:11,547
+Bu sayı statik sayı ben burada koydum ama sizin için statik sayı olmayabilir bu.
+
+123
+00:18:12,147 --> 00:18:12,647
+O durum var.
+
+124
+00:18:12,727 --> 00:18:14,567
+Tabii ki memorallication kullanmak zorundasınız.
+
+125
+00:18:14,567 --> 00:18:38,886
+Sizce tavsiyeyim, ben şu an burada tabii ki NME'yi de statik koydum ama mümkün mertebe allocation'larınızı dinamik yapmaya alışın. Mümkün mertebe. Yani şunu artık yavaş yavaş bırakmanız gerekiyor. Sadece kendi testleriniz için, kendi yazdığı kodu değerli test etmek için, aynı benim yaptığım gibi, burada tek tek şunları girmek yerine, böyle direkt allocate edebilirsiniz testi ama biz şunları görmek istiyoruz arkadaşlar.
+
+126
+00:18:38,886 --> 00:19:06,886
+...
+
+127
+00:19:06,886 --> 00:19:13,646
+teknolojilerin çok kullanılan bir programlama dili ve C++ da da bunları bu şekilde free etmeniz gerekebiliyor.
+
+128
+00:19:13,646 --> 00:19:22,767
+C ve C++ da hala bu teknolojiler devam ediyor. Çünkü Java'daki gibi garbage kolektörler olmayabiliyor veya Python'daki gibi garbage kolektörler olmayabiliyor.
+
+129
+00:19:22,886 --> 00:19:28,406
+Sizin aslında allocate ettiğiniz her bir değişkeni kullanmanız bittiği zaman free edip memoriye geri kazandırmanız gerekiyor.
+
+130
+00:19:28,847 --> 00:19:34,487
+Biz o yüzden bunları da görmenizi istiyoruz. Bunları da değerlendirirken sizin kodlarınızı görmeyi arzuluyoruz açıkçası.
+
+131
+00:19:34,488 --> 00:19:43,488
+O yüzden bunları da koyarsanız bu şekilde kullanımız bitikten sonra free deyip memory'i geri kazandırırsanız değişkenlerin tuttu alanı daha iyi olur.
+
+132
+00:19:44,488 --> 00:19:50,488
+Biz bunu sadece bir örnek olsun diye koyduk ama allocation'ları kısacası kesinlikle görmek istiyoruz.
+
+133
+00:19:50,488 --> 00:19:56,488
+Yani bu şekilde bir memory alokasyonundansa dinamik memory alokasyonları görmeyi tercih ediyoruz.
+
+134
+00:19:56,488 --> 00:19:59,488
+Ve dikkate de alıyoruz biz bunu puanlandırırken.
+
+135
+00:20:03,284 --> 00:20:28,784
+Başka soru sorun var mı? Chatte bir şey gördüm. Tam node değerlendirmesi hangi çözüme göre yapıldı? Arkadaşlar, tam node değerlendirmesi şu an ekranda gördüğünüz çözüme tam puan veriyoruz ama tabii ki bizim kodda ödevde verilen gömülü sistemlerde kullanılacağını düşünerek, memory alokasyonu, minimum tutmak istediğimiz o kritere göre yaparsanız tabii ki hoşumuza gidiyor ama biz diğer çözümleri de 100 olarak kabul edeceğiz.
+
+136
+00:20:28,784 --> 00:20:32,124
+Yani bu çözümü de mesela burada bizim memori çok efficient kullandığımı söyleyemem.
+
+137
+00:20:32,203 --> 00:20:34,843
+Çünkü bizim burada bir k kadar alan ayırıyoruz.
+
+138
+00:20:35,483 --> 00:20:39,624
+K kadar, k bölüş kadar daha doğrusu metnine göre bir alan ayırıyoruz.
+
+139
+00:20:39,742 --> 00:20:44,163
+Belki çok daha az rengimiz var ve bu ayırdığımız alanda boş alanlarımız elbette var.
+
+140
+00:20:44,742 --> 00:20:44,903
+Değil mi?
+
+141
+00:20:45,804 --> 00:20:50,903
+Bununla bunu yeni bir link liste veya relocation ile sürekli allocate ederseniz gömül sistemleri daha uygun bir çözüm olur.
+
+142
+00:20:51,383 --> 00:20:56,044
+Tabi bunu görürsek daha mutlu oluyoruz ama ikisini de şu anda 100 olarak değerlendiriyoruz.
+
+143
+00:20:56,044 --> 00:20:57,903
+Yani bu çözümü de kabul edeceğiz, zirini de kabul edeceğiz.
+
+144
+00:20:58,784 --> 00:21:03,222
+Tabii ki çözümlerinizi görmeksiz diğer şeylerden bahsetmekte fayda var hazır sözü açılmışken.
+
+145
+00:21:03,603 --> 00:21:05,542
+Biz global değişken görmek istemiyoruz.
+
+146
+00:21:05,963 --> 00:21:11,963
+Kodlarınızın mümkün mertebe değişken tanımlarınızın, değişken isimlendirmelerinizin mantıklı olmasını istiyoruz.
+
+147
+00:21:12,063 --> 00:21:15,683
+Örneğin ben buraya max color range diye bir değişken isim vermişim.
+
+148
+00:21:15,762 --> 00:21:16,623
+Gayet açıklıyor değil mi?
+
+149
+00:21:16,742 --> 00:21:19,202
+Yani color'ın, range'inin olabileceği maksimum değer.
+
+150
+00:21:19,304 --> 00:21:20,183
+256 demişim.
+
+151
+00:21:20,183 --> 00:21:24,003
+Yanına da 0-255 arasındaki renk skalasını gösteren bir yorum yapmışım.
+
+152
+00:21:24,343 --> 00:21:26,503
+Sizden bu tarz bir değişken tanımımı istiyoruz.
+
+153
+00:21:26,563 --> 00:21:27,563
+Örneğin şöyle bir şey istemiyoruz.
+
+154
+00:21:27,563 --> 00:21:29,663
+int a işte 256 yorumda seç.
+
+155
+00:21:29,883 --> 00:21:31,583
+Şimdi bu ne? Neyi açıklıyor?
+
+156
+00:21:32,183 --> 00:21:33,324
+Açıklaması çok zor bir şey.
+
+157
+00:21:33,423 --> 00:21:37,103
+Ben bunun ne olduğunu anlamak için gidip kodda yerine bakmam lazım vs. vs.
+
+158
+00:21:38,163 --> 00:21:39,963
+Bu bizim tercih ettiğimiz bir şey.
+
+159
+00:21:40,083 --> 00:21:41,563
+Tabii ki biz bunları da dikkate alıyoruz.
+
+160
+00:21:42,022 --> 00:21:44,324
+Yani kod değerlendirirken bunları da dikkate alıyoruz.
+
+161
+00:21:45,144 --> 00:21:47,482
+Örneğin başka memora lokasyonlarına dikkat ediyoruz.
+
+162
+00:21:51,022 --> 00:21:55,223
+Global değişkenlerin neden üstünde tutulduğunu size ilerleyen zamanlarda
+
+163
+00:21:55,222 --> 00:22:01,103
+bilişim sistemleri güvenliği hatta işitim sistemleri dersini Gökul Hoca açıklayacaktır detaylı olarak.
+
+164
+00:22:01,103 --> 00:22:08,502
+Ama temel olarak global değişkenlerle ilgili sorun şu, siz birden fazla muşteriyon işlemlerle çalıştığınız zaman
+
+165
+00:22:08,502 --> 00:22:19,423
+aynı global değişkenin erişmesi gereken iki tane thread, race condition'a düşüp o global değişkenin değerin olması gerekenden çok daha farklı şeyleri tutabiliyor.
+
+166
+00:22:19,522 --> 00:22:24,482
+Örneğin, kabaca açıklayayım, çok üstün kör anlatacağım, daha detaylı göreceksiniz.
+
+167
+00:22:24,482 --> 00:22:31,943
+Örneğin şuraya ben bir tane integer değer tanımladım int global val eşittir 0 diyorum ve buna göre iki tane de fonksiyonum olacak.
+
+168
+00:22:31,943 --> 00:22:46,123
+İşte bir tanesi global vali alacak x olsun bu global vali alıp hatta pointer olarak alıp çok üstün körü yazıyorum yani sintaksı çok dikkat etmiyorum.
+
+169
+00:22:46,123 --> 00:23:01,663
+global verinin değerini bir yapacak. Bir şeyler bir şeyler yapacak önce. Sonra global verinin değerini bir yapacak. Bir tane de Y-Trad'ım olsun. O da global değişikliğini alsın. O da sıfır yapsın.
+
+170
+00:23:01,663 --> 00:23:12,503
+Şimdi ben şu, kritikte biz şunu bekliyoruz. Önce X çalışacak, sonra Y çalışacak. Bunlar multi-trad diye düşünün. Ve bunlar global değişikliğini değerini değiştirecek. Ama her zaman böyle olmuyor.
+
+171
+00:23:12,503 --> 00:23:17,063
+Çünkü bilgisayardaki prosesörü, preemptive scheduler'ı siz kontrol edemiyorsunuz.
+
+172
+00:23:17,743 --> 00:23:19,982
+O gidip gidiyor, bir x çalıştırıyor, bir y çalıştırıyor.
+
+173
+00:23:20,084 --> 00:23:21,963
+Belki iki üç defa y üst üste çalıştırıyor.
+
+174
+00:23:21,963 --> 00:23:28,042
+Ve bu şu global değişkenin değerini doğrudan değiştirdiği için, adresini doğrudan değiştirdiği için,
+
+175
+00:23:28,864 --> 00:23:30,542
+kaotik sonuçları neden alabiliyor.
+
+176
+00:23:30,644 --> 00:23:32,623
+Yani bilgisayarda her şey sizin kontrolünüzde olmuyor.
+
+177
+00:23:32,702 --> 00:23:37,284
+Özellikle munch thread çalıştığınız zaman threadler arasındaki interrupt da siz kontrol edemeyebiliyorsunuz.
+
+178
+00:23:37,284 --> 00:23:42,743
+Bunu zaten size şeyde critical section'ları anlatırken, mutex'ları anlatırken size gösterecekler.
+
+179
+00:23:43,262 --> 00:23:46,023
+İşte global değişkenin kullanılmasının dezavantajı o.
+
+180
+00:23:46,384 --> 00:23:49,084
+En büyük dezavantajı o ve siz bunu genelde fark edemiyorsunuz.
+
+181
+00:23:49,644 --> 00:23:51,864
+Çok zor oluyor bu tarz bir hatayı çözümlemeyelis.
+
+182
+00:23:53,104 --> 00:23:58,482
+Zaten bir diğer nedeni de şu global değişkenle yaptığınız her şeyi aslında siz lokal değişkenlerde yapabilirsiniz.
+
+183
+00:23:58,482 --> 00:24:01,423
+Örneğin bir tane global değişken tanımlıyorsunuz.
+
+184
+00:24:01,542 --> 00:24:02,223
+Tekrar yazıyorum.
+
+185
+00:24:03,316 --> 00:24:05,875
+10 olsun mesela ya da değeri olmasın.
+
+186
+00:24:05,875 --> 00:24:11,256
+Bu global değişkeni siz aslında birden fazla fonksiyon kullanmak için global tanımıyorsunuz ama
+
+187
+00:24:11,256 --> 00:24:18,674
+o fonksiyonlara global değişkeni değiştirmek yerine fonksiyonu parametre olarak göndererek de kullanabilirsiniz yani gayet basit bir şekilde.
+
+188
+00:24:18,674 --> 00:24:23,535
+Yani nasıl diyeyim mesela şu max color range'i ben burada bir yerde kullandım.
+
+189
+00:24:23,535 --> 00:24:27,634
+Şurada k bölücü hesaplarken kullandım.
+
+190
+00:24:27,634 --> 00:24:29,934
+Bunun bir fonksiyon içinde olduğunu düşünün.
+
+191
+00:24:29,934 --> 00:24:35,934
+Ben bunu yukarı global tanımlayıp hiç şunu yapmayabilirdim ama fonksiyonu parametre göndererek yapabilirdim.
+
+192
+00:24:36,655 --> 00:24:40,694
+Yani çok farklı çözüşüleri var. Global değişken kullanmak bir zorunluluk değil bir tercihtir.
+
+193
+00:24:41,214 --> 00:24:46,355
+Biz de bu tercih alışmanızı istemiyoruz. O yüzden global değişkenlere bu kadar karşıyız genel olarak.
+
+194
+00:24:49,134 --> 00:24:52,894
+Hocam sorunun kendisi bir yerde paylaşıldı mı peki?
+
+195
+00:24:53,675 --> 00:24:58,134
+Soru zaten quiziniz arkadaşlar. Yapmadınız mı siz bu quiz? Yapmış olmanız gerekiyor.
+
+196
+00:24:59,934 --> 00:25:01,934
+Quizinizi anlatıyorum şu anda.
+
+197
+00:25:07,730 --> 00:25:31,631
+Evet, linked list'in head'i global olabilir. O mecbur zaten. Structure'larınız zaten global olmak zorunda. Burada olmak zorunda structure tanımlarınız. Head'i de aslında şey yapmak zorunda değilsiniz. Bu arada global olmak zorunda değil. Head'i de main için tutabilirsiniz. Sonuçta bir pointer. Ama structure'ınızın global tanımlaması gerekiyor. O bir structure zaten. O bir değişken değil. O tanım.
+
+198
+00:25:31,631 --> 00:25:50,570
+Sizin kullanacağınız bir memorial allocation için kullandığınız değişkenleri tutan bir kapsül aslında structure dediğimiz. O kapsülü siz global tanımlayabilirsiniz. Çünkü o bir değişken değil. Ama siz onu main içinde bir pointer atadınız zaman o bir değişken haline dönüşüyor. Ve o pointer her zaman hedi tutar. Hedi tuttuğu için de main için tutmanız daha doğru. Umarım açıklayıcı olmuştur [öğrenci].
+
+199
+00:25:50,571 --> 00:26:15,672
+O zaman bir şey sonraki şeye geçelim. Sizdeki ödeviniz de buydu arkadaşlar. Sizdenizde iki tane kelime vardı. Kodları eşit mi diye bir soru vardı aslında. Bu soruya çok farklı yaklaşımlar gelebilir. Çok farklı şeklinde yönetebilirsiniz. Çünkü soru çok basit aslında. Birçok alternatif çözümlere de müsait. Ama bizim sitem bekliğimiz soru bir stack sorusu. Bu siteyi kullanmanızı istemiştik sizden.
+
+200
+00:26:15,671 --> 00:26:20,070
+Şimdi sormadan size söyleyeyim, stack dışındaki çözümleri de kabul edeceğiz.
+
+201
+00:26:20,171 --> 00:26:27,250
+Çünkü özellikle stack sorusu demedik ama sizden beklediğimiz, arzuladığımız çözüm bunun bir stack sorusu olduğunu anlayıp buna göre çözüm yapmanızdı.
+
+202
+00:26:27,250 --> 00:26:32,090
+Şimdi soruyu incelemeye başlayalım istiyorsanız nasıl çözdüğünüzü göstereceğim, kodunu göstermeyeceğim.
+
+203
+00:26:32,691 --> 00:26:34,010
+Öncelikle böyle bir kelimemiz var.
+
+204
+00:26:35,310 --> 00:26:38,891
+Bu kelimeyle veri kelimesinin birebir aynı olduğunu görebiliyoruz.
+
+205
+00:26:38,931 --> 00:26:41,270
+Çünkü vezir 3'ten 3 yazmış mesela.
+
+206
+00:26:41,471 --> 00:26:43,911
+3'teki şu zir kelimesi kaldığımızda geriye V kalıyor.
+
+207
+00:26:43,912 --> 00:26:45,451
+devam ediyorum.
+
+208
+00:26:45,550 --> 00:26:47,230
+Lize kelimesinden de iki var sonunda.
+
+209
+00:26:47,471 --> 00:26:49,570
+Sondaki z'yi kaldırdığımız zaman r'yi kalıyor.
+
+210
+00:26:49,931 --> 00:26:51,471
+Stop adımız zaman veri oluyor aslında.
+
+211
+00:26:51,611 --> 00:26:52,771
+Bunlar eşit.
+
+212
+00:26:53,151 --> 00:26:55,451
+Bunu programatik olarak nasıl yapacağız, nasıl koltayacağız?
+
+213
+00:26:55,912 --> 00:26:57,531
+Öncelikle dikkat etmeniz gereken şey şu.
+
+214
+00:26:57,971 --> 00:27:00,092
+Biz okurken bu şekilde okuyoruz.
+
+215
+00:27:00,751 --> 00:27:04,050
+Ama silerken, 3 tane kelime geldi, sileceğiz, silerken böyle gidiyoruz.
+
+216
+00:27:05,392 --> 00:27:09,851
+Burada bir aslında push ve pop mekanizmasının olduğunu bu şekilde anlayabilirsiniz.
+
+217
+00:27:09,851 --> 00:27:12,132
+Burada stack ile yönetilebilir bir durum değil mi?
+
+218
+00:27:12,131 --> 00:27:19,250
+Yani siz bir şöyle kelimeler dedik push edip sonra 3 gördüğünüzde de geriye doğru 3 tane pop yaptığınız zaman geride V kelimelesi kalıyor.
+
+219
+00:27:20,570 --> 00:27:22,151
+Aynı mantıkla devam ediyorum.
+
+220
+00:27:23,171 --> 00:27:25,010
+İki harfin görene kadar her şeyi pushluyorum.
+
+221
+00:27:25,891 --> 00:27:27,611
+İki gördüğümde iki defa pop yapıyorum.
+
+222
+00:27:28,310 --> 00:27:29,250
+Geriye veri kalıyor.
+
+223
+00:27:29,590 --> 00:27:31,330
+Temel olarak yapmamız gereken şey bu.
+
+224
+00:27:31,951 --> 00:27:33,830
+Sonra bu iki kelimeyi kontrol etmemiz gerekiyor.
+
+225
+00:27:34,611 --> 00:27:36,471
+Onunla da ilgili konuşacağız nasıl kontrol edebiliriz diye.
+
+226
+00:27:37,070 --> 00:27:38,510
+Ama önce şey yapalım derseniz.
+
+227
+00:27:39,010 --> 00:27:40,931
+Stake'de nasıl gözüküyor onu da göstereyim.
+
+228
+00:27:42,131 --> 00:27:55,830
+Şimdi başlayalım. Önce V kelimesini içeri attım. Bir harfti çünkü. E kelimesi de bir, E de bir harf, Z de bir harf, İ de bir harf, R de bir harf.
+
+229
+00:27:56,510 --> 00:28:06,631
+Şimdi bir numara geldi. Üç, üç gelince duruyoruz. Üç geldi. Üç tane pop yapıyoruz. Dolayısıyla silgimizle şöyle hemen şunlar gidiyor.
+
+230
+00:28:11,826 --> 00:28:30,727
+3 geldikten sonra devam ediyorum. Rize kelimesi geliyor. Rize'yi yazıyorum. R, hepsini dedikli push diyorum içeri doğru. 2 geldi. 2 gelince de şu ikisini siliyorum.
+
+231
+00:28:36,530 --> 00:28:48,631
+işlemimiz bitti şu anda. Şu anda konut etmemiz gerekiyor. Veri kelimesi ile veri kelimesi şu kelime aynı kelime. Bunu yapmanın iki yolu var. Şimdi sizde normalde string compare diye bir hazır fonksiyon var.
+
+232
+00:28:49,530 --> 00:28:59,830
+Biz mümkün mertebe hazır konu fonksiyon kullanmanızı istemiyoruz. Bu string compare iki ya da üç parametre alabiliyor. Bir tanesi kelimenin birinci karakteri, diğeri ikinci karakteri, diğeri de üçüncü parametrelerde.
+
+233
+00:28:59,830 --> 00:29:11,030
+işte farklı parametreleri var bunun return'leri işte kaç karakterle ilgili compare yapacaksın veya compare patlarsın olacak bir sürü parametreli farklı versiyonları var.
+
+234
+00:29:11,030 --> 00:29:14,151
+Ama önemli olan buradaki şu iki parametre bilgilendiren kısmı şu anda.
+
+235
+00:29:14,691 --> 00:29:17,911
+Bu iki tane string erayı kontrol etmeli sağlayan bir fonksiyon.
+
+236
+00:29:18,530 --> 00:29:22,871
+Ama bunu hazır kullanmanızdansa biz şöyle bir yaklaşım uygulamanızı tavsiye ediyoruz.
+
+237
+00:29:22,872 --> 00:29:26,691
+Şimdi bir stack mantığıyla şu kelimeyi de aynı şekilde bir stack'e bastığınızda
+
+238
+00:29:26,691 --> 00:29:30,310
+basabilirsiniz bunları push ederek.
+
+239
+00:29:31,231 --> 00:29:33,731
+Sonra ikisini aynı anda birlikte tek tek pop edersiniz.
+
+240
+00:29:33,951 --> 00:29:35,330
+Aynı anda birlikte pop edersiniz.
+
+241
+00:29:36,171 --> 00:29:41,730
+Eğer hepsi pop olduğunda, bütün elemanlar pop olduğunda, iki stack'in de bu arada eşit olacak derler.
+
+242
+00:29:41,730 --> 00:29:47,351
+Her pop ettiğinizde sonuçta siz C'de karakter kontrolü direkt if ile yapabiliyorsunuz değil mi?
+
+243
+00:29:48,090 --> 00:29:51,510
+Şöyle if deyip karakter kontrolü yapabiliyorsunuz.
+
+244
+00:29:51,510 --> 00:29:58,310
+i gibi. Böyle bir karakter kontrolü C'de mümkün ama C'de string kontrol yapamıyorsunuz.
+
+245
+00:29:58,310 --> 00:30:01,750
+String kontrol için istediğimiz string compare'i kullanmanız gerekiyordu.
+
+246
+00:30:04,391 --> 00:30:08,830
+Ama stack'te biz bunu site'ye attıktan sonra her bir karakteri birebir eşit diye kontrol edebiliriz.
+
+247
+00:30:09,111 --> 00:30:11,931
+St de kontrol ediyoruz. i'leri eşit mi eşit pop ediyoruz.
+
+248
+00:30:13,230 --> 00:30:15,570
+L'leri kontrol ediyoruz. Eşit mi eşit pop ediyoruz.
+
+249
+00:30:16,371 --> 00:30:18,770
+E'leri kontrol ediyoruz. Eşit mi eşit yine pop ediyoruz.
+
+250
+00:30:18,770 --> 00:30:30,010
+Sonra V'ye geliyoruz. V'leri en son yaptıktan sonra ki siteyli durumu boş ise, boş bu da boş ise, ikisinden de pop edemiyorsak artık bu kelimeler eşit demektir.
+
+251
+00:30:33,618 --> 00:30:39,259
+Yani bu şekilde bir şey kontrol yapabiliyorsunuz, kelime kontrol yapabiliyorsunuz. Bu da programın ikinci aşamasıydı.
+
+252
+00:30:39,259 --> 00:30:44,380
+Yani ilk aşamada şu kelimeyi normal bir karakteri araya çevireceksiniz.
+
+253
+00:30:45,138 --> 00:30:48,979
+Normal en kısacızda dekodlayacaksınız. Bu bir enkodlanmış hali.
+
+254
+00:30:48,979 --> 00:30:53,578
+Dekod ettikten sonra da bununla orijinal kelimeyi kontrol ettiğiniz ikinci kısım başlıyor.
+
+255
+00:30:53,578 --> 00:30:56,419
+İkinci kısma da ilgili yine stackleri kullanabilirsiniz. Aynı mantıkla.
+
+256
+00:30:56,419 --> 00:31:01,259
+Ama bir stack soru üstü arkadaşlar. Fark çözümleri öğretmiş olabilirsiniz. Biz hepsini değerlendireceğiz ama
+
+257
+00:31:01,259 --> 00:31:05,618
+sizden mümkün mertebe hazır fonksiyonları kullanmamanızı istiyoruz. Mecbur kalmadıkça.
+
+258
+00:31:06,118 --> 00:31:10,259
+Tabii ki biz hazır fonksiyonlar kullanıyoruz. Mesela burada allocation için yaptığımız şeyler hazır fonksiyon ama
+
+259
+00:31:10,259 --> 00:31:15,939
+siz bunu kendiniz yazamazsınız zaten. Çok sistem çağrısı var arkada, bir sürü mekaniz var. Onları yazmamızı beklemiyoruz.
+
+260
+00:31:16,118 --> 00:31:21,959
+Bu bir hazır fonksiyon. Bunu kullanıyorsunuz. printf de bir hazır fonksiyon. Bunu da sizin yazmanızı istemiyoruz.
+
+261
+00:31:22,638 --> 00:31:29,378
+Ama böyle basit kendiniz yapabileceğiniz iki tane string'i kontrol etmek ya da ne bileyim string'in substring'ini almak
+
+262
+00:31:29,378 --> 00:31:46,398
+gibi işlemleri sizin kendiniz yapması istiyoruz. Çünkü burada her bir string operasyonu, bir array operasyonu çok basit bir şekilde. Çünkü her string bir karakter array'dir. Ve siz array operasyonlarını zaten dersle öğreniyorsunuz. Size bunlar veriliyor. O yüzden sizin çözümlerinizle biz bunları kullanmanızı istemiyoruz. Bunlardan bahsetmiş olayım.
+
+263
+00:31:46,398 --> 00:32:08,559
+Peki başka bir de ikinci quiziniz vardı arkadaşlar. Bu ilk ödevinizdi. Diğeri quizinizdi kodunu gösterdiğim. Bir de quiz ikiniz vardı. Quiz ikinizde ise soru cevap şeklini hocanız herhalde hazırlamış ise quiz ikinizi yapmış ama sonuçta bana vermediler henüz. Onları da ya biz açıklarız ya hocanız açıklar.
+
+264
+00:32:08,558 --> 00:32:09,278
+Tamam mı?
+
+265
+00:32:09,939 --> 00:32:11,739
+Benim anlatacaklarım bu kadardı.
+
+266
+00:32:12,318 --> 00:32:13,699
+Biraz hızlı ilerlemiş olabilirim.
+
+267
+00:32:14,459 --> 00:32:15,719
+Ama sormaktan çekinmeyin.
+
+268
+00:32:15,798 --> 00:32:18,999
+Varsa eksik bir şey, eksik kaldığınız noktaya.
+
+269
+00:32:19,098 --> 00:32:19,598
+Ben sorun.
+
+270
+00:32:20,699 --> 00:32:22,719
+Hem chat'e bakıyorum hem de söz hakkı alabilirsiniz.
+
+271
+00:32:23,118 --> 00:32:23,318
+Buyurun.
+
+272
+00:32:23,699 --> 00:32:25,038
+Hocam bunun sonuçları açıklandı mı?
+
+273
+00:32:26,499 --> 00:32:28,919
+Bunun sonuçlarını arkadaşlar biz henüz okumadık.
+
+274
+00:32:28,979 --> 00:32:31,519
+Hocalarla daha yeni tartıştık nasıl değerlendirelim konusunda.
+
+275
+00:32:33,098 --> 00:32:34,298
+Henüz okumadık.
+
+276
+00:32:34,298 --> 00:32:37,219
+Yani okuduktan sonra OVS'i duyuracağız.
+
+277
+00:32:37,318 --> 00:32:38,259
+Hemen görürsünüz zaten.
+
+278
+00:32:38,259 --> 00:32:40,038
+Olur mu? Ben bu hafta okuruz diye düşünüyorum.
+
+279
+00:32:44,019 --> 00:32:52,359
+bu hafta açıklandır yani sonuçları. Öyle umuyorum şu anda. Gersilik olmazsa. Çünkü bütün asistanlar toplu bir şekilde açıklıyoruz. Herkes bitirdikten sonra açıklıyoruz.
+
+280
+00:32:55,098 --> 00:33:02,558
+Ve sorular açıkladıktan sonra arkadaşlar sizler diyeceğim eğer itirazınız varsa, yani gerçekten adaletsiz bir değerlendim yapıldığını düşünüyorsanız,
+
+281
+00:33:03,539 --> 00:33:12,239
+bir iki gün içinde mümkün mertebe olabileceği hızlı bir şekilde söyleyeyim. Çünkü yani ödevi anlatıyoruz açıklığı açıklığı bir hafta sonra itirazı geliyorlar. Çok hoş olmuyor.
+
+282
+00:33:12,239 --> 00:33:14,499
+Yani bu zamana kadar neredeydin diyoruz biz.
+
+283
+00:33:15,878 --> 00:33:30,638
+Ve lütfen itirazınızı ederken hocalarınıza karşı üslubunuzda ve açıklamalarınızda biraz daha şeffaf olun ve düzgün bir açıklama yazın.
+
+284
+00:33:30,638 --> 00:33:40,398
+Önceki dönemlerde çok böyle laubal demeyeceğim de böyle birazcık cüretkar açıklamada bulunan bir arkadaşınız oldu.
+
+285
+00:33:40,398 --> 00:33:46,318
+onunla ilgili çok kötü hissedik kendimizi, kötü durumlara düştük.
+
+286
+00:33:46,398 --> 00:33:48,578
+O yüzden böyle olabildiğince üstümüze dikkat edelim.
+
+287
+00:33:48,659 --> 00:33:50,858
+Birbirimize hoşgörü ve saygı içerisinde.
+
+288
+00:33:51,659 --> 00:33:55,398
+Biz zaten bütün itirazlarınızı değerlendiriyoruz.
+
+289
+00:33:56,118 --> 00:33:58,558
+Hatta dönüp tekrar hep diğer asistan arkadaşlara dönüyoruz.
+
+290
+00:33:58,618 --> 00:34:00,019
+Nasıl değerlendirelim, tekrar düşünüyoruz.
+
+291
+00:34:00,358 --> 00:34:04,499
+Yani emin olun, mümkün olan en çok mümkün olduğu kadar adalet davranmaya çalışıyoruz.
+
+292
+00:34:04,919 --> 00:34:07,199
+Sizden de buna karşı bir saygı ve hoşgörü bekliyoruz.
+
+293
+00:34:11,795 --> 00:34:19,715
+Bu oturumun kaydını paylaşacak mıyım? Ben şu an kendi hesabımla girdim. Herhalde otomatik kaydoluyordur zaten.
+
+294
+00:34:23,074 --> 00:34:25,434
+Quizlerin sonuçları için mi soruyorsun [öğrenci]?
+
+295
+00:34:27,775 --> 00:34:34,195
+Quizlerin sonuçları için mi? Bize mi? Epo sapmanıza gerek yok. İtirazlar için arkadaşlar şey yapabiliriz.
+
+296
+00:34:34,534 --> 00:34:37,215
+Hocaları şey yapmanıza gerek yok. Hocalar da bize geliyor sonunda.
+
+297
+00:34:37,215 --> 00:35:03,094
+zaten biz hangi şeyi, hangi asistanların kontrol yaptığını zaten şey biliyorsunuz bizim ana bilimdeki asistanları biliyorsunuzdur onlara mail atabilirsiniz ya da AVS'i de kim sizin kodunuzu duyurmuşsa o asistanlara doğrudan iletişim açabilirsiniz hocalara herhangi bir şey de gitmenize gerek yok dersin hocasına asistanlara gidin ana bilimdol asistanlarına veya açıklandıysa AVS'i de hangi hocanın kontrol ettiğini doğrudan onlara girebilirsiniz
+
+298
+00:35:03,094 --> 00:35:09,235
+Hocam Elif Hoca'nın grubunu siz mi okuyorsunuz?
+
+299
+00:35:11,235 --> 00:35:15,414
+Evet Elif Hoca'nın grubunu ben okuyorum. Diğer iki grubu da başka arkadaşlar okuyor.
+
+300
+00:35:16,016 --> 00:35:21,315
+Ama değerlendirmelerimiz beraber karar verdik neleri nasıl değerlendireceğimize.
+
+301
+00:35:22,315 --> 00:35:26,195
+O yüzden şey olmayacak. Grup içinde yani çanlar da grup içinde olduğu için
+
+302
+00:35:26,195 --> 00:35:30,215
+aynı grubu farklı asistanlara vermemeye çalıştık bu dönem.
+
+303
+00:35:30,215 --> 00:35:38,414
+O yüzden şey olacaktı yani sizin etkileyen bir durum olmayacaktır asistan farklılığı yer. Merak ettiğin şey oysa.
+
+304
+00:35:39,516 --> 00:35:47,954
+Evet şeyi merak etmiştim hocam yani hangi hoca okuyacak onu bilirsem o mail atabilirim diye düşünmüştüm.
+
+305
+00:35:47,954 --> 00:35:53,735
+Onun cevabını açıkladım o zaman. Zaten biz öyle bir mail atmanızı istersek de oradan o asistanı belirtiriz.
+
+306
+00:35:53,735 --> 00:36:01,974
+Süt Hoca'sında notunuzu okudu diye. Açıklamıyorsak da bizim ana bilimlerindeki asistanlardan birine gönderirseniz zaten o bize yok bir şekilde yollar.
+
+307
+00:36:02,414 --> 00:36:09,215
+Yok, itiraz için değildi hocam. Ben ödevimi yükleyemediğim için direkt sıfır alacağım da zaten.
+
+308
+00:36:10,434 --> 00:36:12,215
+Hani diyorsun benim zaten kaderim belli diyorsun yani.
+
+309
+00:36:12,215 --> 00:36:18,014
+Evet, Elif Hoca'ya şey diye mail atmıştım. Yine de ödevim değerlendirilebilir mi?
+
+310
+00:36:18,375 --> 00:36:22,054
+Ona Dersin Hoca'sına atacaksın. Ona biz bir şey yapamayız. Orada biz inisiyatif alamıyoruz ne yazık ki.
+
+311
+00:36:22,054 --> 00:36:34,675
+Hayır, hayır, şeyden dolayı, sıfır alacağım zaten ama yine de değerlendirilebilir mi? Yani notum sıfır girilecek ama notumu yine de öğrenebilecek miyim?
+
+312
+00:36:34,675 --> 00:36:50,994
+Şimdi bu soruyu tam anlamadım, sen şey mi istiyorsun, hatalarının ve şeylerinin ne kadar tutacağını, yani ödevi yaptım ama biri kontrol etse de ne kadar yaptığımı öğrensem, ya o biraz şey değil, bence bir sonraki ödevlerde şansını denesen daha iyi olur.
+
+313
+00:36:50,994 --> 00:36:55,635
+Yani biz notunu vermeyeceğimiz bir değerlendirmeyi yapmak çok hoş bir şey değil yani bizim için de güzel bir şey değil.
+
+314
+00:36:56,335 --> 00:37:00,195
+Konuşma biz değerlendireceğimiz notun değerlendirmesini yapıyoruz.
+
+315
+00:37:00,635 --> 00:37:10,894
+Değerlendiremeyeceğimiz için, notunu vermeyeceğimiz için şey yapmaya gerek yok ama şey yapabilirsin, belki bir gün bir ara bir asistanlardan rica edip ama dönemi sonunda rica etmeni tavsiye ederim.
+
+316
+00:37:10,994 --> 00:37:13,735
+Çünkü bizim de kendi derslerimiz oluyor, başka yükümlülüklerimiz oluyor.
+
+317
+00:37:14,235 --> 00:37:15,735
+Şu anda çok boş zamanımız yok bizimle.
+
+318
+00:37:15,735 --> 00:37:24,516
+belki dönem sonunda bir hocaya gönderip hocam siz ne düşünüyorsun kodla ilgili diye fikir almak istersen bence hiçbir hoca şey yapmayacaktır yani reddetmeyecektir.
+
+319
+00:37:24,516 --> 00:37:30,914
+Biz öğrencilere bitirme tezlerinde bile yardımcı oluyoruz yani merak etmeyin. Elimizden gelen hepimiz var.
+
+320
+00:37:36,947 --> 00:38:02,288
+Başka sorusu olan var mı? Yok herhalde. 90 kişi için. Ben bir soru sorabilirim mi? Tabii sor. Buyur. Ama çocuk ise bir not girdi da diğer notu. Hangisi için? Quiz için mi? Yani o sistem bu diğer notu olarak geçiyor. Ben de quiz 1 için mi girdi sadece diye sormak istedim. Şu an okunan sanırım sadece bir quiz var değil mi?
+
+321
+00:38:02,288 --> 00:38:31,708
+şu an iki quiz var bir tanesi yazılı sınav şeklindeydi soru cevap şeklindeydi bir tane quiz yapıl sanırım bir de bir quiz de bu kodunu gösterdiğim Instagram quiz idi bir de şey vardı ödev vardı ödev zaten stack sorusu az önce dizerek anlattığım çözümünü bu quiz birdi quiz ikide soru cevap da zaten böyle herhalde sanırım boşluk doldurmalı true false'lu yanlışım varsa düzeltsınlar böyle ama onlarla ilgili ben amaç hocanın hangi notu nereye girdiğini bilmiyorum
+
+322
+00:38:31,706 --> 00:38:33,527
+onu dersin hocasına sormam daha doğru olur.
+
+323
+00:38:34,206 --> 00:38:35,547
+Tamamdır hocam sağ olun.
+
+324
+00:38:36,027 --> 00:38:36,746
+Teşekkür ederim.
+
+325
+00:38:38,686 --> 00:38:39,746
+Herhalde tamamız arkadaşlar.
+
+326
+00:38:40,766 --> 00:38:41,407
+Başka soru mu?
+
+327
+00:38:41,847 --> 00:38:42,447
+Buyur.
+
+328
+00:38:43,047 --> 00:38:44,987
+Şimdi bir sorum olacaktı.
+
+329
+00:38:45,106 --> 00:38:46,927
+Ben bir iki hafta derslere giremiyorum.
+
+330
+00:38:47,606 --> 00:38:53,987
+O yüzden şu an anlattığınız ödev kısmı şu an önümüzde yapılması gereken bir ödev açıklaması mı?
+
+331
+00:38:54,106 --> 00:38:55,367
+Yoksa geçmişe öğrenelim mi?
+
+332
+00:38:55,786 --> 00:38:56,907
+Yok bunu yaptık zaten.
+
+333
+00:38:57,027 --> 00:38:58,146
+Bu dersi biz yaptık.
+
+334
+00:38:58,146 --> 00:39:00,286
+Şimdi sadece sonuçlarını gösterdim size.
+
+335
+00:39:00,286 --> 00:39:02,027
+nasıl yapabiliriz, nasıl değerlendirik?
+
+336
+00:39:02,367 --> 00:39:06,827
+Buradaki amacımız şeydi, sizin notlarınızı nasıl değerlendiriyoruz, nelere bakıyoruz, siz nelere dikkat etmelisiniz?
+
+337
+00:39:07,527 --> 00:39:08,527
+Onu göstermekti yani.
+
+338
+00:39:08,766 --> 00:39:12,567
+Yoksa bu önümüzdeki haftanın ödevini, şimdiden açıklamanın besmesi yok değil mi?
+
+339
+00:39:12,626 --> 00:39:13,867
+Bu değerlendirme sıkılmış bir ödevde.
+
+340
+00:39:14,586 --> 00:39:15,347
+Verildi yani bu ödev.
+
+341
+00:39:15,567 --> 00:39:15,967
+Toplamak için.
+
+342
+00:39:23,764 --> 00:39:25,764
+Başka?
+
+343
+00:39:30,099 --> 00:39:32,280
+Tamam, o zaman bu kadar arkadaşlar.
+
+344
+00:39:35,579 --> 00:39:37,398
+Herkese teşekkür ediyorum dinlediğiniz için.
+
+345
+00:39:38,400 --> 00:39:40,360
+Umarım güzel bir dönem olur.
+
+346
+00:39:41,739 --> 00:39:43,940
+Hepinize sağlıklı günler diliyorum. Hoşçakalın.
+
+347
+00:39:44,358 --> 00:39:45,918
+Teşekkür ederim hocam, sağ olun.
+
+348
+00:39:46,780 --> 00:39:47,519
+İyi günler hocam.
+
+349
+00:39:48,259 --> 00:39:48,978
+İyi günler arkadaşlar.
+
+350
+00:42:44,578 --> 00:42:48,418
+Merhaba arkadaşlar. Bir an bağlantım koptu. Beni duyuyor musunuz şu anda?
+
+351
+00:42:52,514 --> 00:42:53,335
+Evet hocam.
+
+352
+00:42:54,835 --> 00:42:55,534
+Tamamdır.
+
+353
+00:42:57,034 --> 00:42:57,674
+Peki.
+
+354
+00:42:58,074 --> 00:43:02,094
+Biraz daha kişi sayısı artsın diye bekliyorum.
+
+355
+00:43:07,107 --> 00:43:09,107
+Bir iki dakika daha bekleyeceğim.
+
+356
+00:45:44,163 --> 00:45:45,783
+Evet arkadaşlar, merhaba.
+
+357
+00:45:46,962 --> 00:45:48,942
+Şimdi bugün quiz yapacağız.
+
+358
+00:45:49,103 --> 00:45:51,282
+Orada 12 çeyrek geçe başlayacak.
+
+359
+00:45:51,442 --> 00:45:54,322
+17 dakikalık bir quiz, 10 soru olacak.
+
+360
+00:45:57,083 --> 00:46:02,344
+Çoktan seçmeli ve boşluk doldurma şeklinde.
+
+361
+00:46:03,503 --> 00:46:06,902
+Sizden ricam lütfen şey yapın, dikkat edin.
+
+362
+00:46:06,902 --> 00:46:33,982
+işte uzun süre dokunmadım, bağlantım koptu, bir daha bağlanamadım vesaire olmaması için işte ne bileyim ara sıra işlem yapın, bağlantımızın gitmemesi için yani online yapısı kapatıyor belli bir süre sonra vesaire yani problem yaşamadan şey yapmaya çalışın, soruları çözüp sabit etmeye çalışın.
+
+363
+00:46:33,982 --> 00:46:47,023
+12.45'de de şey başlayacak, birinci kuisin ve birinci ödevin çözümlerini yapacaklar asistan arkadaşlar.
+
+364
+00:46:48,023 --> 00:46:52,922
+12.45'de tekrar bağlanıp şey yapabilirsiniz, takip edebilirsiniz.
+
+365
+00:46:53,982 --> 00:46:55,502
+Sorununuz var mı?
+
+366
+00:47:00,739 --> 00:47:28,858
+Evet, [öğrenci] şey yapabilirsin, linki paylaşabilirsin buradan. Arkadaşlar, [öğrenci] şeyi söylemişti, Skylab klübünün düzenlediği bir algorithm games challenge varmış. Bununla ilgili linki de şu anda paylaştı [öğrenci]. Yani bence katılın, şansınızı deneyin.
+
+367
+00:47:30,739 --> 00:47:44,960
+güzel bir etkinlik. O yüzden Skylab'da bu etkinliği düzenleyen arkadaşlara da teşekkürler. Ellerime sağlık. Güzel bir etkinlik olmuş. Bir kere daha çete açayım, görülsün buradan.
+
+368
+00:47:44,958 --> 00:47:52,938
+[öğrenci] istersen 12.45'de bir kez daha duyurabilirsin.
+
+369
+00:47:54,438 --> 00:48:00,739
+Asistan arkadaşların ödev sorularını çözecek toplantıda da bir kez daha duyurabilirsin.
+
+370
+00:48:00,739 --> 00:48:03,878
+Evet geç katılanlar için bir kez daha söylüyorum.
+
+371
+00:48:04,038 --> 00:48:05,358
+Şu anda 32 kişi var.
+
+372
+00:48:06,138 --> 00:48:10,679
+12.25'e şey başlayacak, quiz başlayacak.
+
+373
+00:48:10,679 --> 00:48:17,818
+17 dakika süren çoktan seçmeli ve boşluk doldurma olan bir quiz.
+
+374
+00:48:17,818 --> 00:48:25,538
+Orada şimdi sizden istenilen, elle yazmanız gereken cevaplar için, geçen dönemden muhtemelen alışmışsınızdır ama
+
+375
+00:48:25,538 --> 00:48:33,498
+işte diyelim ki birden fazla cevap varsa aralarında boşluk bırakarak yazmanız yeterli.
+
+376
+00:48:34,679 --> 00:48:39,918
+Yani büyük harf yazarsanız iyi olur ama yani ne yazıyorsanız yazın.
+
+377
+00:48:39,920 --> 00:49:09,578
+lütfen şey yapmayın açıklama yazmayın oraya bilmem ne bilmem ne olduğu için örneğin en dedim falan gibi açıklama yapmayın sadece cevap ne cevap en ne en yazın o kadar yani şey yapmayın sorunuz var mı gereksiz bilgi yazmayın çünkü aslında string compiler yapıyor sistem biz şeyi kontrol ediyoruz string compiler bazen doğru çalışmıyor nedense o yüzden tek tek kontrol ediyoruz
+
+378
+00:49:09,578 --> 00:49:18,179
+zaten sizin yazdığınız cevapların doğruluğunu, yanlışlığını ama uzun cümleler yazdığınızda ne olduğunu anlamak her zaman kolay olmayabiliyor.
+
+379
+00:49:18,179 --> 00:49:33,179
+O yüzden örneğin cevap tamamen atıyorum linkli listemi oraya linkli liste yazın geçin bilmem ne bilmem ne olduğu için linkli listeyle çözelim falan yazmayın lütfen tamam mı?
+
+380
+00:49:33,358 --> 00:49:35,118
+Var mı sormak istediğimiz bir şey?
+
+381
+00:49:39,266 --> 00:49:43,688
+sorunuz var mı? Evet. Yo, sesim mi gitti?
+
+382
+00:49:45,786 --> 00:49:47,326
+Geliyor sesimiz hocam.
+
+383
+00:49:48,046 --> 00:50:01,246
+Tamam, peki. O zaman ben dediğim gibi 12.45'te şey başlayacak, laboratuvar başlayacak, quiz 1'in ve ödev 1'in çözümünü anlatacak asistan arkadaşlar.
+
+384
+00:50:01,246 --> 00:50:24,106
+arkadaşlar 12.15'te de sınav başlayacak. Hepinize başarılar diliyorum sınavda. 17 dakika. Dediğim gibi lütfen şey yapmayın, bağlantım koptu vs. olmasın. Uzun süre hiçbir işlem yapmadan durmayın. Problem yaşamadan cevaplarınızı girin.
+
+385
+00:50:24,107 --> 00:50:36,746
+bu şekilde başka aklıma gelen bir şey yok. Sorunuz varsa sorun yoksa kapatıp şey yapacağım. Sınav için bitireceğim. Var mı? Solmak istediğiniz bir şey.
+
+386
+00:50:38,107 --> 00:50:47,646
+Aslında şeyde durayım. İlk beş dakika açık bırakayım. Eğer bir sıkıntı olursa şey yaparsınız ama sıkıntı olacağını zannetmiyorum.
+
+387
+00:50:48,646 --> 00:50:49,987
+Sınavı dönemleyeceğiz mi?
+
+388
+00:50:49,987 --> 00:50:52,207
+Hayır geri dönüş yok.
+
+389
+00:50:52,347 --> 00:50:53,226
+Onu söyleyeyim.
+
+390
+00:50:53,906 --> 00:50:57,987
+Süreleri her sorunun için tahmini süre yazdık yanlarına.
+
+391
+00:50:59,447 --> 00:51:02,427
+O tahmini sürelerin toplamı 15 dakika ediyor.
+
+392
+00:51:02,987 --> 00:51:05,027
+Biz bize ekstradan 2 dakika verdik.
+
+393
+00:51:05,127 --> 00:51:07,148
+Yani uzun aslında o tahmini süreler.
+
+394
+00:51:07,266 --> 00:51:10,387
+Olabilecek böyle en uzun tahmini süreler.
+
+395
+00:51:10,887 --> 00:51:14,288
+O mantığa göre çözebilirsiniz.
+
+396
+00:51:14,506 --> 00:51:15,366
+Geri dönüş yok.
+
+397
+00:51:16,046 --> 00:51:17,966
+Sorular karışık sırayla geliyor.
+
+398
+00:51:17,966 --> 00:51:19,966
+O şekilde.
+
+399
+00:51:24,099 --> 00:51:25,278
+var mı başka sorunuz?
+
+400
+00:51:31,043 --> 00:51:33,043
+o zaman ben size başarılar diliyorum.
+
+401
+00:51:33,043 --> 00:51:46,043
+[öğrenci]'de şeyde problem olursa şey yapabilirsiniz aslında. Buradan da sorabilirsiniz.
+
+402
+00:51:46,043 --> 00:51:53,043
+Beş dakika şey açık tutarım. Sesli sorun yalnız şirkinizi görmem buradan soracaksınız tamam mı?
+
+403
+00:51:53,043 --> 00:51:58,243
+ya da buradan açık tutmayayım, online'da iki yer açık tutmayın, mesaj atarsınız bana.
+
+404
+00:51:59,822 --> 00:52:03,182
+Problem yaşarsınız ama şey diye mesaj atmayın lütfen.
+
+405
+00:52:03,182 --> 00:52:12,223
+Yok işte bundan ben bitiremedim o yüzden buradan cevap gönderiyorum diye onlar geçerli değil.
+
+406
+00:52:13,304 --> 00:52:15,862
+Herkes aynı süreyi kullansın lütfen.
+
+407
+00:52:26,563 --> 00:52:28,563
+Evet, başarılar görmek için.

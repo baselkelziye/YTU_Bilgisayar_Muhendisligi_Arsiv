@@ -1,0 +1,1487 @@
+1
+00:00:48,371 --> 00:01:04,091
+Evet, merhaba arkadaşlar. Birazcık kalabalık olsun diye bekledim ama sanıyorum laboratuvar günü olması sebebiyle bugünlük bu kadarmışız gibi bir durum var. 28 kişi. Merhaba.
+
+2
+00:01:06,972 --> 00:01:17,471
+Şimdi hatırlarsanız size pazartesi günü derste bir soru sormuştum. O soruya bakma fırsatınız oldu mu?
+
+3
+00:01:27,540 --> 00:01:48,099
+Ben baktım peki. Peki Ramesh dinleyeyim nasıl bir şey düşünün? Önce soruyu hatırlatayım ben bir herkese. Şimdi şeydi bu, aslında 3. sınıfta algoritma analizinde anlattığımız Haching diye bir konu var. Yani şu anda o konu önemli değil, sorudaki algoritma önemli.
+
+4
+00:01:48,099 --> 00:02:04,679
+Eşink'te yapılan şeyler, yöntemlerden birisi şu, elemanlara hızlı erişim, doğrudan erişim imkanı için arama yapmadan, yani az arama yaparak veya erişim imkanı için söz vereceğim şimdi Örmeşsan'a.
+
+5
+00:02:04,679 --> 00:02:18,439
+Diyelim ki şöyle uzunluğu 10 olan bir diziniz var.
+
+6
+00:02:19,159 --> 00:02:23,299
+Elemanları yerleştirirken bu yöntemlerden birisi sadece.
+
+7
+00:02:25,040 --> 00:02:29,559
+Ve şöyle de bir ağ dizinizde bir takım elemanlar var diyelim ki.
+
+8
+00:02:35,092 --> 00:02:47,331
+diyelim bu 23'müş, bu 4'müş, bundan sonra bu 3, bu 9, bu da 29. Böyle 5 tane elemanımız olduğunu varsayalım.
+
+9
+00:02:50,391 --> 00:02:53,432
+Şöyle şey yapayım, birazcık şurayı genişleteyim.
+
+10
+00:03:05,268 --> 00:03:19,547
+9. Şimdi yöntemde şöyle, gelen herhangi bir x elemanını yerleştirirken n'e göre modu alıyorsunuz ve ilgili göze bakıyorsunuz.
+
+11
+00:03:20,127 --> 00:03:33,307
+Burada örneğin 23 ile başladık. 23'ün ona göre modu 3, 3. göze yerleştirdik. 4 ile devam ediyoruz. 4'ün ona göre modu 4, 4. göze yerleştirdik.
+
+12
+00:03:33,307 --> 00:03:53,367
+şimdi 3 var. 3'ün ona göre modu 3 fakat 3. göz dolu. Burada bu yöntem için bu tekrardan yani hashing'i anlatmıyorum size. Yöntemde hashing için kullanılan yöntemlerden birisi bu. Doluysa ardışık gözlere bakıp boş bulduğunuz yere yerleşiyorsunuz.
+
+13
+00:03:53,367 --> 00:04:07,327
+4. göz dolu, 5. göz boş, 3'ü buraya yerleştiriyoruz. 9, 9'u 9. göze yerleştirdik. 29 geldi. Ona göre modu 9. 9. göz dolu, 29 da buraya yerleştirdik.
+
+14
+00:04:07,327 --> 00:04:26,447
+Şimdi soru şuydu, her ortalama elemanlar kaç adımda yerleşmişler? Şu birinci adımda yerleşmiş, şu birinci adımda yerleşmiş, bu birinci adımda yerleşmiş, bu da ikinci adımda yerleşmiş, bu üçüncü adımda yerleşmiş.
+
+15
+00:04:26,447 --> 00:04:33,167
+Şimdi evet, şimdi şey yapıyorum, geri dönüyorum. Kim konuşuyordu az önce?
+
+16
+00:04:33,168 --> 00:04:37,507
+Ben baktığını söylemiştim hocam.
+
+17
+00:04:37,948 --> 00:04:40,948
+Baktığını söylemiştim Römeş. Söyleyecek misin yöntemini?
+
+18
+00:04:41,968 --> 00:04:42,727
+Söyleyebilirim.
+
+19
+00:04:43,808 --> 00:04:46,748
+Tamam. Bir dakika. Evet. Dinliyorum.
+
+20
+00:04:47,388 --> 00:04:50,967
+Şöyle bir şey yaptım. A diye bir dizi alıyorum gösterdiğiniz gibi.
+
+21
+00:04:52,308 --> 00:04:57,867
+Sonra bunun uzunluğu mesela burada sizler bir m olsun mesela uzunluğu.
+
+22
+00:04:57,867 --> 00:05:03,227
+Sonra n eşittir m çarpı 2 yapıyorum
+
+23
+00:05:03,227 --> 00:05:24,167
+Tamam şey kısmını anlatma sadece artık yani bu sayılar yerleşmiş A dizisini boşverdik bu sayılar yerleşmiş bunlar A dizisi yok elinde yani sadece bu tablo var elinde tablo varken her elemanın kaçıncı adımda yerleştiğini nasıl bulursun onu söyle bize
+
+24
+00:05:24,167 --> 00:05:29,467
+Anladım hocam. Ben aslında şöyle yerleştirirken saydım.
+
+25
+00:05:29,467 --> 00:05:29,967
+Yok.
+
+26
+00:05:30,907 --> 00:05:43,687
+Tamam. Yok. Burada tablo var bir tek elimizde. Yani tabloda sayılar varken kaçıncı adımda yerleştiğini nasıl bulursunuz? Tablo var sadece. Yerleştirilmiş tablo var.
+
+27
+00:05:44,307 --> 00:05:44,747
+Anladım.
+
+28
+00:05:49,235 --> 00:05:50,235
+Evet.
+
+29
+00:05:50,235 --> 00:06:06,235
+Hocam, ben farklı bir şekilde yaklaşmıştım da, bilmiyorum listatistikçi olarak. En az 5 adımda yerleşebilir, şu anki örnekte. En fazla düşündüğüm zaman n× n-1 bölü 2'den de 15 tane yerleşirdi.
+
+30
+00:06:06,235 --> 00:06:28,235
+bunda düzgün dağılımda şöyle bir şey var beklenen değeri iki aralığın toplamı böyle ikiye yaptığımızda bulabiliyorduk yani ortalama kaç adımda yerleştiğimde burada on ve beş değerlerini toplayıp ikiye böldüğümde de yedi buçuk adımda ortalama yerleşiyor diyebilirim.
+
+31
+00:06:28,235 --> 00:06:43,015
+Şimdi ama bak burada öyle olsun hiç tutmuyor farkındaysan 2, 4, 5 elemanımız var. 2, 3, 4, 7, 8 bölü 5. 2 bile değil.
+
+32
+00:06:43,015 --> 00:06:49,015
+Aslında zaten normalde de tam tersine maksimum 5 adımda yerleşiyor bunlar.
+
+33
+00:06:49,256 --> 00:06:55,215
+Çünkü yani tabii dediğim gibi bu 3. sınıfta görülecek bir konu ama Heshing'in özelliği o.
+
+34
+00:06:55,215 --> 00:07:19,335
+elemanların eğer tablo sayısını iki kata alırsanız eleman sayısını maksimum yerleşme sayısı tablo uzunluğuyla doğru yani doğru demeyeyim de orantılı olduğu için küçük bir değerde yani öyle M&N ilgisi olmayan yani eleman sayısından bağımsız küçük bir adım sayısıyla yerleşirler.
+
+35
+00:07:19,335 --> 00:07:22,795
+ve burada siz de gerçekten bunu hesaplamanız isteniyor.
+
+36
+00:07:22,935 --> 00:07:31,295
+Yani bir şey yapmanız değil de matematiksel bir açıklama yapmanız değil de gerçekten hesaplamanız isteniyor.
+
+37
+00:07:31,295 --> 00:07:33,155
+Yani sizin şunu söylemeniz isteniyor.
+
+38
+00:07:33,295 --> 00:07:48,956
+1, 2, 3, 4, 5 eleman varsa, 2, 3, 4, 7, 8 toplam şeyse, 8 bölü 5 işte yaklaşık 1.6 adımda yerleşiyorlar demeniz isteniyor.
+
+39
+00:07:48,955 --> 00:07:53,595
+Hiç şey yok mu hani şu haliyle soruyu çözebilecek içinizde yok mu?
+
+40
+00:07:54,155 --> 00:07:58,235
+Hocam yerleştirilen sayıların modunu alırız.
+
+41
+00:07:58,675 --> 00:07:58,895
+Evet.
+
+42
+00:07:59,415 --> 00:08:01,495
+Mesela yirmi dokuzun modunu aldık dokuz.
+
+43
+00:08:01,915 --> 00:08:02,195
+Evet.
+
+44
+00:08:03,635 --> 00:08:09,795
+Bunun dokuza olan uzaklığına bakarız ama aşağı doğru değil de geriye doğru yani sıfırdan dokuza giderek.
+
+45
+00:08:10,555 --> 00:08:12,915
+Oradan iki adımda yerleştiğini buluyoruz.
+
+46
+00:08:12,995 --> 00:08:18,175
+Mesela yirmi üçe gittiğimizde direkt zaten üçün üstünde olduğu için bir adımda yerleştiğini görebiliyoruz.
+
+47
+00:08:18,176 --> 00:08:19,456
+Nasıl yapıyoruz onu?
+
+48
+00:08:20,396 --> 00:08:23,496
+23'ün modunu alıyoruz 3, indekside bakıyoruz.
+
+49
+00:08:23,616 --> 00:08:24,896
+İndekside 3 olduğu için.
+
+50
+00:08:25,996 --> 00:08:27,435
+İndekside bakıyor muyuz?
+
+51
+00:08:27,515 --> 00:08:30,596
+23'ün modunu aldım, pardon çok özür dilerim yanlış yazdım.
+
+52
+00:08:31,896 --> 00:08:34,575
+23'ün ona göre modunu aldım 3.
+
+53
+00:08:35,795 --> 00:08:42,015
+i'yi de, yani şöyle yaptık aslında, dur öyle yazalım da senin dediğin tam güzel olsun.
+
+54
+00:08:42,015 --> 00:08:52,816
+i'inci gözdeydi. Table i mod n dedi. O 3 çıktı. i eşittir. 3 içindeyim şuraya da.
+
+55
+00:08:52,816 --> 00:08:53,935
+Aynen.
+
+56
+00:08:54,676 --> 00:09:06,855
+3 yani bu. İstersen şuna da value diye şey yapayım. Sen diyorsun ki value eşit midir?
+
+57
+00:09:06,855 --> 00:09:09,935
+iyiye diye bakarım değil mi?
+
+58
+00:09:10,435 --> 00:09:10,735
+Aynen.
+
+59
+00:09:11,695 --> 00:09:12,415
+Eşitse?
+
+60
+00:09:13,295 --> 00:09:15,295
+Bir adımda yerleştiğini şey yapıyoruz.
+
+61
+00:09:15,575 --> 00:09:17,875
+Tamam o zaman step eşittir bir derim.
+
+62
+00:09:18,475 --> 00:09:18,995
+Değilse?
+
+63
+00:09:20,295 --> 00:09:23,435
+Değilse mesela beşinci indisteki üçe bakalım.
+
+64
+00:09:24,176 --> 00:09:26,635
+Aldık modu üç oldu tekrar.
+
+65
+00:09:27,215 --> 00:09:27,475
+Evet.
+
+66
+00:09:27,855 --> 00:09:29,315
+Üçü olan uzaklığına bakacağız.
+
+67
+00:09:30,035 --> 00:09:30,676
+Nasıl bakalım?
+
+68
+00:09:31,795 --> 00:09:36,096
+Buraya if koyup üçten büyükse büyükten küçüğü çıkaracağız.
+
+69
+00:09:36,096 --> 00:09:43,096
+Eğer küçükse toplam uzunluktan üçü çıkarıp...
+
+70
+00:09:44,148 --> 00:09:48,508
+Oraya yukarıyı tam şey yapamadım. Aşağıda ise direkt çıkarıyorsunuz da.
+
+71
+00:09:48,927 --> 00:09:52,148
+Eğer diyorsun value i'den büyükse yani
+
+72
+00:09:52,148 --> 00:09:58,847
+Evet value i'den büyükse index'imi moddan çıkaracağız.
+
+73
+00:09:58,927 --> 00:10:05,988
+Value stable e, node n, 3. Ondan sonra value'muz 3 ama i'miz de 5.
+
+74
+00:10:06,828 --> 00:10:08,667
+Aynen. Çıkarıp bilek diyeceğiz.
+
+75
+00:10:08,687 --> 00:10:10,767
+Küçük sesi kolay onu yap önce.
+
+76
+00:10:10,767 --> 00:10:14,127
+i'den value çıkaracağız.
+
+77
+00:10:14,807 --> 00:10:15,727
+Aynen öyle.
+
+78
+00:10:15,867 --> 00:10:17,027
+Diyeceğiz ki
+
+79
+00:10:17,027 --> 00:10:23,148
+i-value
+
+80
+00:10:23,148 --> 00:10:25,987
+artı bir diyeceğim.
+
+81
+00:10:27,127 --> 00:10:28,587
+Bakalım doğru mu?
+
+82
+00:10:29,027 --> 00:10:30,188
+Takip edebiliyor musunuz?
+
+83
+00:10:30,188 --> 00:10:32,247
+Arkadaşınız diyor ki
+
+84
+00:10:32,247 --> 00:10:33,387
+ben diyor
+
+85
+00:10:33,387 --> 00:10:38,188
+o elemanın
+
+86
+00:10:38,188 --> 00:10:40,567
+hangi adreste olması gerektiğini
+
+87
+00:10:40,567 --> 00:10:49,267
+şu şekilde bulurum. Table'ın inci gözünde örneğin 23 var. 23'ün ona göre modunu aldığında 3, 3. adreste olması gerekirdi.
+
+88
+00:10:49,387 --> 00:10:57,287
+Eğer diyor value i'ye eşitse yani i de 3'tü, value da 3'tü o zaman bir adımda yerleşmiştir. Bu ilk adımda yerleşmiştir.
+
+89
+00:10:57,287 --> 00:11:06,387
+Eğer diyor değilse diyor value küçük müdür i'den derin. Eğer küçükse şimdi bizim value'umuz kaç? 3.
+
+90
+00:11:06,387 --> 00:11:11,547
+i'miz kaç? 3. Ha şey, şurada, şuna baksaydık, eşit değilse'ye bakalım.
+
+91
+00:11:12,087 --> 00:11:27,707
+i'miz 5, value'muz 3. Ondan sonra 3, 5'ten küçük olduğu için i'miz 5, value'muz 3, 5-3 artı 1, 3 adımda yerleşir derim diyor.
+
+92
+00:11:27,827 --> 00:11:33,868
+Gerçekten de 1, 2, 3, 3 adımda yerleşmiş. Bunu diyor, böyle bulurum diyor. Doğru mu bu?
+
+93
+00:11:33,868 --> 00:11:35,868
+Evet hocam
+
+94
+00:11:35,868 --> 00:11:38,008
+Ben fikirsiniz peki
+
+95
+00:11:38,008 --> 00:11:45,967
+Şimdi ama diyor eğer örneğin sıfırıncı gözde 29 var o biraz işi bozuyor 9. gözde
+
+96
+00:11:45,967 --> 00:11:54,728
+Hocam orada da hash table'ın uzunluğundan artı şey mi yapacağız toplam birimini mi yapacağız
+
+97
+00:11:54,728 --> 00:11:56,868
+Ben size soruyorum
+
+98
+00:11:57,547 --> 00:11:57,868
+Ama doğru
+
+99
+00:11:57,868 --> 00:12:02,368
+Öyle evet söyle şöyle desem oluyor mu acaba
+
+100
+00:12:02,368 --> 00:12:07,287
+Hatch table'un uzundan indeksi çıkarıp diğer indeksini mi arttıracağız?
+
+101
+00:12:07,448 --> 00:12:18,808
+Mesela 9 için, 29 için, Hatch table'un uzunduğu 9, yerleşeceği birim normalde 9 ama orada olmadığı için 0 eklememiz gelecek.
+
+102
+00:12:19,127 --> 00:12:20,827
+Bilmiyorum hocam orayı tam şey yapamadım.
+
+103
+00:12:20,827 --> 00:12:29,987
+Bak işte söylediğin oluyor, step eşittir M'miz 10, artı İ'miz 0.
+
+104
+00:12:29,987 --> 00:12:51,067
+şu an. 0, 29'a bakıyoruz. Eksi, value'umuz 9. Doğru oluyormuş. Oluyor değil mi? Peki. Şimdi bunu böyle bir şey yazalım, daha güzel yazalım. Şimdi şöyle ya da bu tarafı sileyim mi ben? Silmeyeyim dur şöyle yapalım birazcık şurayı bir rahatlatalım önce.
+
+105
+00:12:52,115 --> 00:13:16,975
+şöyle birazcık x mod n. Şimdi bir kere çözümünüzü yaparken buna dikkat edin. Yani sayılarla bir deneyin bir problemi çözerken en güzel hızlı çözüm şekli odur. Bakın burada gözle görebilirsiniz de problemleri. Şimdi biz sizinle geçen hafta şey diye konuşmuştuk. Uç noktalara dikkat etmek gerekir diye konuşmuştuk.
+
+106
+00:13:16,975 --> 00:13:46,955
+buradaki uç nokta ne aslında dikkatinizi çekmek gereken buradaki uç nokta şu 29 sayısı çünkü o geldi şeye yerleşti sizin de gördüğünüz gibi böyle döndü tablonun yani alt hani 5 mesela 5. göze yerleşti o bizi şaşırtan bir şey değil yani aşağıya doğru bir adresli 3'ten büyük bir adrese yerleşti ama 29'da birdenbire ezberi
+
+107
+00:13:46,956 --> 00:14:10,395
+bozuldu, o 0. göze yerleşti. Demek ki benim bunu da dikkate almam gerekir. Bunu almazsam dikkate yanlış olur. Şimdi arkadaşımız dedi ki aslında temel şekliyle doğru bir çözüm. Ben dedim şeyi alırım, elemanın değerini alırım. Mesela işte 5. gözdeyim.
+
+108
+00:14:10,395 --> 00:14:12,016
+i'ye eşittir, 5'teyim.
+
+109
+00:14:12,615 --> 00:14:13,836
+5. gözlerim.
+
+110
+00:14:14,156 --> 00:14:18,516
+Derim ki buradaki eleman kaçıncı adrese yerleşmeliydi?
+
+111
+00:14:19,056 --> 00:14:23,355
+3 var, 3 mod, 10, 3, 3. adrese yerleşmeliydi.
+
+112
+00:14:23,895 --> 00:14:31,115
+Dedi ki bakarım dedi eğer 3 ise yani i'ye eşitse, i ile value birbirine eşitse doğru yerdedir değil mi?
+
+113
+00:14:31,115 --> 00:14:35,955
+Mesela 23 için, 23'ün ona göre modu 3, 3. gözde doğru yerde.
+
+114
+00:14:36,115 --> 00:14:39,796
+4 için, 4'ün ona göre modu 4, 4. gözde doğru yerde.
+
+115
+00:14:39,796 --> 00:14:47,215
+9 için 9'un 10'a göre modu 9, 9. gözde doğru yerde bunu kontrol ederim önce dedi.
+
+116
+00:14:48,236 --> 00:14:50,056
+VEVU eşittir iyi midir derim dedi.
+
+117
+00:14:50,196 --> 00:14:52,276
+Evetse bir adımda yerleşmiştir dedi.
+
+118
+00:14:52,935 --> 00:14:56,296
+Değilse dedi iki şey olabilir dedi.
+
+119
+00:14:56,296 --> 00:14:59,955
+VEVU i'den küçüktür örneğin 5. gözde 3 var.
+
+120
+00:14:59,955 --> 00:15:13,276
+O zaman i-value artı 1 dersem yani buradaki gibi i'miz 5, value'miz 3, artı 1 de çünkü ilk yerleştiği yer sıfır değil birinci adım olduğu için bir ekliyorum.
+
+121
+00:15:13,276 --> 00:15:19,655
+Yani değil mi ilk yerleşmesi için de bir adım bir efor harcadık aslında yani hiçbir şey de yapmamış değiliz.
+
+122
+00:15:19,735 --> 00:15:20,895
+O yüzden bir ekliyorum.
+
+123
+00:15:21,395 --> 00:15:29,315
+Bunu yapar bulurum dedi ama dedi i value'dan büyük değilse yani buradaki gibi i sıfır,
+
+124
+00:15:29,315 --> 00:15:32,375
+value 9, 29'un 10'a göre modu 9.
+
+125
+00:15:32,815 --> 00:15:42,295
+O zaman da dedi table size artı i'den value çıkartırsam onu da öyle bulurum dedi.
+
+126
+00:15:42,295 --> 00:15:45,056
+Şimdi bu aklınıza yattı mı? Önce bir onu sorayım.
+
+127
+00:15:47,655 --> 00:15:49,255
+Cevapları görmek için.
+
+128
+00:15:50,276 --> 00:15:53,196
+Aklınıza yattı mı? Anladınız mı öncelikle?
+
+129
+00:15:53,735 --> 00:15:55,336
+Anlatmamı ister misiniz bir daha?
+
+130
+00:15:57,355 --> 00:15:58,435
+Mantıklı peki.
+
+131
+00:15:58,435 --> 00:16:16,575
+Peki, kısaltır mısınız? Kısaltabilir misiniz? Sonra size üçlerin yüzde sekseninin çözdüğü şeklini söyleyeceğim. Şimdi bak siz temiz kafayla oldukça başarılı bir çözüm önerdiniz. Daha kısa nasıl yapabilirsiniz? Neleri kısaltabilirsiniz? Şimdi ona bakın.
+
+132
+00:16:22,100 --> 00:16:24,919
+sesli söyleyebilirsiniz, chat ekranını görmüyorum.
+
+133
+00:16:30,419 --> 00:16:34,439
+Söylemek isteyen var mı? Ben şunu bir kere niye kaldırmıyoruz diyecek olan var mı?
+
+134
+00:16:40,788 --> 00:16:42,788
+Ben söyleyeyim o zaman.
+
+135
+00:16:44,788 --> 00:16:46,788
+Şunu niye kaldırmıyoruz?
+
+136
+00:16:48,788 --> 00:16:52,788
+i-value artı bir zaten onu da bir yapıyor değil mi hocam?
+
+137
+00:16:52,788 --> 00:17:02,788
+Kesinlikle öyle. Yani buna gerek yok mesela. Bak şimdi hemen bundan kurtulabilirsiniz. Neden? Çünkü 3 için bakalım şimdi şuraya.
+
+138
+00:17:02,788 --> 00:17:28,987
+23, 23'ün ona göre modu 3. Bakın ne oluyor? Burada da 3-3, 0 yani şuraya bakın. 3-3, 0 şurayı küçük eşit diyelim şimdilik. Küçük eşit iyiyse. Ondan sonra 3-3, 0 artı 1, 1 birinci adımda olduğunu buluyor. Yani bu kontrolü yapmasanız da olur. Anlaşıldı mı?
+
+139
+00:17:28,988 --> 00:17:42,828
+Bu kontrolü yapmanıza gerek var mı? Yok. Çünkü zaten eşit de olsa şuradaki ifade doğru çalışıyor, doğru buluyor. Bu anlaşıldı mı?
+
+140
+00:17:44,767 --> 00:17:45,627
+Evet hocam.
+
+141
+00:17:46,347 --> 00:17:50,828
+Tamam. Şimdi peki ikinci soruna geliyorum. O zaman şurayı bir daha yazıyorum.
+
+142
+00:17:50,828 --> 00:17:52,188
+Pardon.
+
+143
+00:17:55,308 --> 00:17:57,747
+Şimdi bir daha yazıyorum. Şurayı.
+
+144
+00:18:03,604 --> 00:18:19,923
+0. gözde 29 var. 3. gözde 3 var. 4. gözde 3 değil de neydi o? 23, 4, 3. 23, 4, 3.
+
+145
+00:18:22,132 --> 00:18:51,392
+9. gözde de 9 var. Şimdi yapı bu. Tamam mı? Şeyi bir daha yazıyorum. Value eşittir. Table i mode n. Şey yazmama gerek var mı? Yani onu biliyorsunuz tek tek. Yani şöyle aslında neyse onu en son yazarım. Value eşittir. Yani yukarıdan nasıl geldiğini biliyorsunuz.
+
+146
+00:18:51,392 --> 00:19:00,371
+bütün elemanlar için bunu yapacak. Şimdi en son şu vaziyetteyiz. Value diyoruz. Küçük eşit i ise
+
+147
+00:19:05,971 --> 00:19:09,432
+Bunu kısalttıracağım size. Step eşittir.
+
+148
+00:19:12,851 --> 00:19:16,011
+i-value artı 1
+
+149
+00:19:16,011 --> 00:19:20,432
+Değil ise
+
+150
+00:19:20,432 --> 00:19:25,171
+Diyoruz ki step eşittir.
+
+151
+00:19:26,011 --> 00:19:31,531
+m artı i-value artı 1 diyorum.
+
+152
+00:19:33,031 --> 00:19:34,991
+Tamam mı? Şu anda şu vaziyetteyiz.
+
+153
+00:19:35,971 --> 00:19:42,812
+Şimdi örnekle deniyorum. Bunu da daha kısaltabilir miyiz? Ona bakıyoruz.
+
+154
+00:19:42,812 --> 00:19:54,431
+Diyelim ki i eşittir 3 olsun. i eşittir 3 için table'ın i'inci gözünde 23 var. O zaman value ne?
+
+155
+00:19:54,431 --> 00:20:07,971
+23 mod 13, 3 küçük eşit midir i'den? Evet. O zaman step ne? i 3-value 3 artı 1, 1. Tamam mı?
+
+156
+00:20:09,191 --> 00:20:15,071
+Şimdi bu doğru. Demek ki bunu doğru yapıyor algoritmamız. i eşittir 5 için.
+
+157
+00:20:15,071 --> 00:20:44,451
+value n? 3 modu, 10, 3. Step n? i yani 5, eksi value artı 1, 3. Doğru mu? Doğru. Bunu da gerçekten şunu bir adımda buldu. Bunu bir adımda yerleşti. Buraya 3 adımda yerleşti. Şimdi i eşittir. Sıfır için bakıyorum. Oradaki durumu kontrol ediyorum.
+
+158
+00:20:44,451 --> 00:21:11,151
+bütün şartları kontrol ediyorum mesele bu. VU eşittir. Kaç burada? 29 mod 10, 9. Step kaç? Şimdi şu kola geldim. Bakın buradayım. Step neye eşit? Pardon M değil. Şurası N olacak. Özür dilerim. Düzeltiyorum şurayı. M nereden çıktı? N. Şurası şöyle N.
+
+159
+00:21:14,451 --> 00:21:32,431
+Step eşittir n yani 10 eksi şey artı i, i sıfır eksi value 9 artı 1. Bakıyorum 2 gerçekten de 1, 2, 29 iki adımda yerleşmiş.
+
+160
+00:21:32,431 --> 00:21:51,651
+Demek ki doğru. Şimdi demek ki herhangi bir tablodaki herhangi bir eleman için yaptığım kaçıncı adımda yerleşti? Hesabı doğru. Buraya kadar bir sorunuz var mı? Anladınız mı?
+
+161
+00:21:53,491 --> 00:21:54,571
+Evet hocam.
+
+162
+00:21:55,251 --> 00:22:02,211
+Güzel. Peki şimdi hadi hep birlikte şu iften kurtulalım. Kurtulabilir miyiz bundan?
+
+163
+00:22:02,431 --> 00:22:02,931
+Sizce?
+
+164
+00:22:02,931 --> 00:22:06,051
+Hocam, iften arkadaş konuşsun.
+
+165
+00:22:06,951 --> 00:22:07,251
+Tamam.
+
+166
+00:22:08,391 --> 00:22:16,751
+N'i ekleyip, yani ikinci koldaki gibi, birinci koldaki gibi N'i ekleyip N'e göre modunu alırsak, olabilir mi acaba?
+
+167
+00:22:17,871 --> 00:22:18,351
+Harika.
+
+168
+00:22:19,091 --> 00:22:25,151
+Evet, şunu yaparsak, bir dakika daha güzel bir kalem yapalım.
+
+169
+00:22:27,151 --> 00:22:29,991
+Bu kadar mı? Kalem seçeneklerimiz çok kötü.
+
+170
+00:22:29,991 --> 00:22:49,071
+Şimdi şu ikisinin yerine arkadaşınızın dediği gibi şöyle yapsak desek ki step desek burası yalnız biraz aşağı olduğu için görmüyorsunuz değil mi? Biraz daha yukarı alayım. Görüyor muydunuz?
+
+171
+00:22:49,071 --> 00:23:01,071
+bazen gözükmüyor şeylerde. Step eşittir diyorum. Bakın şimdi.
+
+172
+00:23:02,163 --> 00:23:16,103
+artı i eksi value artı biri her şey için kullanalım diyorum. Şimdi zaten i eşittir sıfır yani şu durumda bir sıkıntı yoktu onu kullandık. Şimdi öbür durumda nasıl kullanacağımıza bakalım.
+
+173
+00:23:16,103 --> 00:23:23,603
+i eşittir 5 için olduğunda value'da üçgen ne oluyor o zaman?
+
+174
+00:23:24,703 --> 00:23:32,443
+n10, 10-10 artı i 5, eksi value 3 artı 1 oluyor.
+
+175
+00:23:32,864 --> 00:23:36,463
+15, 16, eksi 3, 13 oluyor.
+
+176
+00:23:37,143 --> 00:23:38,323
+Ben bunu istemiyorum.
+
+177
+00:23:39,103 --> 00:23:42,943
+Arkadaşınıza diyor ki, bunu ben niye yaptım?
+
+178
+00:23:43,083 --> 00:23:44,524
+Bunu şunun için yaptım.
+
+179
+00:23:44,524 --> 00:24:01,303
+başa döndü yani şurada başa döndü ya şöyle burada ne oldu şuradan şöyle şuradan şöyle circle olarak başa döndü dokuzuncu göz doluysa döndü başa sıfırıncı gözden yerleştirmeye çalışıyor.
+
+180
+00:24:01,303 --> 00:24:09,524
+örneğin sorayım size diyelim ki şu anda 40 gelse 40 kaçıncı göze yerleşir?
+
+181
+00:24:09,524 --> 00:24:16,844
+şey yok 40 gelmesin pardon pardon onu istemiyorum doğru 39 gelse 39 kaçıncı göze yerleşir?
+
+182
+00:24:20,163 --> 00:24:20,723
+1'e
+
+183
+00:24:20,723 --> 00:24:27,844
+aynen 39 1'e yerleşir niye? 9. göz dolu 0. göz dolu 1. göze yerleşir
+
+184
+00:24:27,844 --> 00:24:34,824
+Şimdi dolayısıyla bu durumu göz önünde bulundurmak için ben şu n'i bu tarafa eklemek zorundayım.
+
+185
+00:24:34,943 --> 00:24:40,924
+Ama n'i bu tarafa eklediğimde burası için kullanmaya kalkarsan da böyle bir durum çıkıyor.
+
+186
+00:24:40,924 --> 00:24:54,003
+Arkadaşımız dedi ki peki biz bunu önlemek için ikisini de ortak kullansak ama sonucun ele göre modunu alsak toparlayabilir miyiz dedi.
+
+187
+00:24:58,132 --> 00:25:24,171
+Şimdi buna bakalım. Zaten i eşittir 0 için yani 29 değeri için hatta gelin şimdi 39 için yapalım. Pardon. Diyelim ki i eşittir 1 için deneyelim şu anda. i eşittir 1 için deneyelim. i eşittir 1 için value kaç? 39 mod 10, 9. Step neye eşit olacak?
+
+188
+00:25:24,171 --> 00:25:32,911
+n10 artı i1 eksi value 9 artı 1
+
+189
+00:25:32,911 --> 00:25:38,471
+12 eksi pardon şeyi koyalım şuraya bir dakika
+
+190
+00:25:38,471 --> 00:25:42,711
+mod 10'u koyalım şuraya
+
+191
+00:25:42,711 --> 00:25:48,331
+12 eksi 9 3 mod 10 3 olacak
+
+192
+00:25:48,332 --> 00:25:56,172
+gerçekten de 39, 1, 2, 3, 3. adımda yerleşti. 3. denemede yerleşti.
+
+193
+00:25:56,172 --> 00:26:05,971
+Şimdi az önceki value'nun i'den küçük eşit olduğu duruma örnek olması için i eşittir 5'i bir kontrol edelim bakalım.
+
+194
+00:26:05,971 --> 00:26:27,671
+i eşittir 5 için value kaç? 3. Step ne? 10 artı i5, 5 eksi value 3 artı 1, mod 10, 16 eksi 3, 13, mod 13 gerçekten de 3. adımda oluyor. Anlaşıldı mı?
+
+195
+00:26:27,672 --> 00:26:36,612
+Şimdi sınavda tabi bu kadar böyle şey bunları yapmanız beklenmiyor.
+
+196
+00:26:36,731 --> 00:26:39,172
+Gerçi bu soru 50 dakika verilmişti bu soruya.
+
+197
+00:26:39,271 --> 00:26:40,871
+Bence yapılabilir aslında.
+
+198
+00:26:41,572 --> 00:26:52,072
+Ama şöyle bir şeyi yapabilmeniz, yani 3. sınıf bu arada arkadaşlar 3. sınıfta oldukları için zaten veri yapıları görüyorlar.
+
+199
+00:26:52,072 --> 00:26:56,831
+İşte BBG programlama dille falan bütün şeylerden geçmiş durumdalar.
+
+200
+00:26:56,831 --> 00:27:03,031
+o yüzden onlar sizden bir adım daha tecrübeliler algoritma geliştirmek konusunda.
+
+201
+00:27:03,551 --> 00:27:10,831
+Yani en azından şu yapılabilir bir şey kesinlikle yani ilk akla gelebilecek bir şey.
+
+202
+00:27:10,831 --> 00:27:15,591
+O zaman ben bunu genelleştirirsem nasıl diyebilirim?
+
+203
+00:27:16,271 --> 00:27:23,132
+Diyebilirim ki işte diyebilirim bir en elemanlı bir tablo verildiğinde.
+
+204
+00:27:26,963 --> 00:27:31,963
+işte tablodaki sum 0 olsun.
+
+205
+00:27:34,963 --> 00:27:35,304
+Değil mi?
+
+206
+00:27:37,043 --> 00:27:40,503
+Ha bir de counter koymamız lazım. Onu da yazayım. Pardon bir saniye.
+
+207
+00:27:44,756 --> 00:27:46,756
+Count'ı sıfır olsun.
+
+208
+00:27:51,667 --> 00:27:55,507
+ne yapacaksınız? Döngü içerisinde. Sığarım inşallah buraya.
+
+209
+00:27:59,347 --> 00:28:04,647
+Diyeceksiniz ki öncelikle o göz dolu mu ona bakmanız lazım.
+
+210
+00:28:05,687 --> 00:28:10,108
+Table i farklıdır. Null ise değil mi?
+
+211
+00:28:14,163 --> 00:28:25,163
+true ise diyeceksiniz ki şimdi onun aynısını yazmak istiyorum. Step eşittir.
+
+212
+00:28:26,259 --> 00:28:33,139
+n artı i eksi value artı bir mod n
+
+213
+00:28:33,139 --> 00:28:44,860
+count artı artı bir de sum artı eşittir.
+
+214
+00:28:44,860 --> 00:28:51,299
+Step diyeceksiniz değil mi? Hem toplayacaksınız hem de sıfırdan farklıları saymamız lazım ki ortalama alabilir.
+
+215
+00:28:51,299 --> 00:28:59,559
+yoksa sıfırdan farklı kaç eleman olduğunu bilmezseniz ortalama da alamazsınız. Değil mi?
+
+216
+00:29:00,979 --> 00:29:04,379
+Hocam bir de buradan önce value hesaplayacaktık sanırım.
+
+217
+00:29:04,379 --> 00:29:09,959
+Ay evet. Haklısın dümdüz yazsın.
+
+218
+00:29:09,960 --> 00:29:17,500
+value eşittir.
+
+219
+00:29:18,500 --> 00:29:24,380
+Table i mode n. Oldu mu şimdi? Çok teşekkürler.
+
+220
+00:29:27,020 --> 00:29:28,419
+Çizgi çizemiyorum bu arada.
+
+221
+00:29:29,899 --> 00:29:31,459
+Şöyle. Oldu mu şimdi?
+
+222
+00:29:33,560 --> 00:29:34,800
+Oldu sanırım.
+
+223
+00:29:35,480 --> 00:29:38,560
+Tamam. Şimdi average de neye eşittir?
+
+224
+00:29:39,959 --> 00:29:44,679
+sum bölü count'a eşittir değil mi?
+
+225
+00:29:50,067 --> 00:30:09,328
+Böylece ortalama kaç tane şey olduğunu, nedir? Ortalama kaç adımda elemanların yetiş, yerleştiğini bulabilirsiniz. Çözüm böyle. Şimdi genel olarak orada yapılan genel çözümü size göstermek istiyorum.
+
+226
+00:30:09,328 --> 00:30:30,108
+bunu göstermek istememin sebebi doğru mu? Evet doğru çalışıyor. Fakat hani sizinle şey konuşuyoruz ya artık belli bir noktadan sonra algoritmalarınızın doğruluğunun ötesinde efektif olmaları da önemli.
+
+227
+00:30:30,108 --> 00:30:47,248
+Şimdi biz aslında bu leşinkte yapılmaya çalışılan şey şu. Üçüncü sınıfta göreceksiniz. Biz en çok sıkıntı yaşadığımız şeyler arama işlemleri. Aramayı olabildiğince hızlı yapmaya çalışıyoruz.
+
+228
+00:30:47,248 --> 00:30:58,207
+hash-ing yaklaşımı da şey yapıyor, şey yapmadan böyle mesela binary search'ta bile log n karmaşıklı arama var.
+
+229
+00:30:58,648 --> 00:31:05,688
+n'e bağlı olmadan diyelim ki 3 adımda 5 adımda aradığınız elemana ulaşabilmenizi sağlıyor.
+
+230
+00:31:05,687 --> 00:31:24,447
+bu yaklaşımın güzelliği bu. Table size'ını yaklaşık eleman sayısının en fazla iki katı yaparsanız maksimum üç veya dört adımda yani on elemanınız varken diyelim ki yirmi uzunluklu bir tablo yaparsanız maksimum üç veya dört adımda aradığınız elemanı bulabiliyorsunuz.
+
+231
+00:31:24,447 --> 00:31:27,007
+bunun istatiksel bir karşılığı var.
+
+232
+00:31:27,107 --> 00:31:28,027
+Birthday paradox.
+
+233
+00:31:29,027 --> 00:31:36,367
+İşte aynı anda iki kişinin doğum günün aynı olma olasılığı mantığından yola çıkarak istatiksel bir hesabı da var.
+
+234
+00:31:37,587 --> 00:31:41,407
+Ondan sonra işte onları algoritma analizinde anlatıyoruz biz size.
+
+235
+00:31:41,947 --> 00:31:49,687
+Sonuçta yani burada amaç öyle bir yerleştirip ki ene bağlı olmadan 3 adımda aradığımı bulayımken
+
+236
+00:31:49,687 --> 00:32:11,667
+Şimdi bakın arkadaşlar %80'i öğrencilerin yani 4-5 kişi dışında bunu iki sınıfta doğru yapan yani doğru derken efektif çözen hani şu şekilde bahsettiğimiz şekilde yani bunun zaten neredeyse bir kişi vardı galiba bunu böyle yapan da şu şekilde bu arkadaşımızın söylediği şekilde de çözen 5 kişi falan iki sınıftaya vardı ya yoktu.
+
+237
+00:32:11,667 --> 00:32:16,667
+Genel çözüm şöyleydi ve bu yani baya kötü bir çözüm.
+
+238
+00:32:17,847 --> 00:32:21,627
+Diyelim ki i5 olsun.
+
+239
+00:32:22,827 --> 00:32:24,987
+i'yi 5 olarak aldığımızı düşünelim.
+
+240
+00:32:24,987 --> 00:32:37,067
+i'yi 5 aldığında value burada 5, özür dilerim 5 değil tabi ki.
+
+241
+00:32:37,067 --> 00:32:45,527
+Value burada table i mod n'den 3 mod 13.
+
+242
+00:32:46,288 --> 00:32:53,607
+Şimdi şunu yapıyor diyor ki value diyor eşit midir i'ye.
+
+243
+00:32:53,607 --> 00:32:54,607
+bir kere önce onu bir kontrol ediyor. Tamam etsin. Eşitse zaten step 1. Burada bir sıkıntı yok. Eşit değilse bakın burası çok ilginç. Şöyle bir şey yapıyorlar. Count eşittir 0 sayıcıyı hazırlıyor. Diyor ki adres eşittir
+
+244
+00:33:23,607 --> 00:33:25,767
+şey nedir?
+
+245
+00:33:27,727 --> 00:33:28,807
+i diyor.
+
+246
+00:33:31,687 --> 00:33:33,527
+Ondan sonra şunu yapıyor.
+
+247
+00:33:34,587 --> 00:33:43,587
+Diyor ki count diyor, küçüktür n, şey n, n, eleman sayısı n de, hep unutuyorum o özür dilerim.
+
+248
+00:33:43,587 --> 00:33:44,087
+Pardon.
+
+249
+00:33:46,527 --> 00:33:48,507
+Count küçüktür n, and.
+
+250
+00:33:48,847 --> 00:34:05,547
+tablen adres eşittir i artı bir pardon pardon şimdi anlayacaksınız olayı i artı bir mod n bakın ne yapıyorlar tablen i'incisi farklıdır
+
+251
+00:34:05,547 --> 00:34:07,547
+Vee voo
+
+252
+00:34:38,132 --> 00:34:52,291
+Birazcık buralarda zor dolaştım ama. Şimdi şöyle bir şey yapıyorlar. Bakın ne yapıyor şimdi. Dur bir saniye.
+
+253
+00:35:01,684 --> 00:35:03,763
+Tamam. Şimdi oldu.
+
+254
+00:35:07,155 --> 00:35:34,615
+Şimdi, diyelim ki value 3 ama i'de 5. Tamam mı? Yani 3. gözde 3 yok aslında. 5. gözde i. Şimdi, 3. gözden başlıyor ve 3 sayısını aramaya başlıyor.
+
+255
+00:35:37,155 --> 00:35:40,856
+Düştürüz, süreseləşirəni özüldüli.
+
+256
+00:35:45,780 --> 00:36:13,979
+Anladınız mı ne yaptıklarını? Bakın şöyle yapayım peki 29'u göstereyim. Şimdi veya 39'u göstereyim. Orada mısınız? Evet hocam. Tamam şimdi 39'u arayalım. Bakın birlikte 39'u arayalım. Nasıl olduğunu görelim yaptıklarını. Şimdi bakın geldi. İğiniz 0 tamam mı? 0. gözdeyiz.
+
+257
+00:36:13,979 --> 00:36:22,479
+şey bir bir pardon burası bir özür dilerim burası bir iyiniz bir otuz dokuz için işlem yapıyorum şimdi iyiniz bir birinci gözdeyiz.
+
+258
+00:36:22,479 --> 00:36:42,859
+value'nuzda birinci gözde otuz dokuz vardı otuz dokuz mod on dokuz diyor ki şimdi iyi bir ama burada iyiniz bir value'nuzda dokuz bir diyor dokuza eşit mi diyor hayır o zaman diyor ki adres diyor dokuz olsun
+
+259
+00:36:42,859 --> 00:36:47,339
+9. gözden başlayarak 39'u ara diyor.
+
+260
+00:36:48,299 --> 00:36:52,780
+Şimdi sen zaten buradaydın ve 39'da burada bunu biliyorsun yani değil mi?
+
+261
+00:36:52,780 --> 00:36:54,679
+Şu anda buradan yola çıktınız.
+
+262
+00:36:54,799 --> 00:36:57,860
+İğiniz birdi ve birinci gözde de 39 vardı.
+
+263
+00:36:58,559 --> 00:37:01,879
+Yani oradasın ve orada 39 olduğunu biliyorsun.
+
+264
+00:37:03,099 --> 00:37:08,699
+Ama adım sayısını bulmak için 9. göze gidiyor önce.
+
+265
+00:37:09,699 --> 00:37:11,579
+Ve bakın table adres farklıdır.
+
+266
+00:37:11,579 --> 00:37:12,859
+table iyi olduğu sürece.
+
+267
+00:37:13,319 --> 00:37:15,579
+39 bulana kadar gözlere bakıyor.
+
+268
+00:37:15,739 --> 00:37:16,939
+Diyor ki burada mı 39?
+
+269
+00:37:17,299 --> 00:37:17,619
+Hayır.
+
+270
+00:37:17,819 --> 00:37:18,979
+O zaman bir kere say.
+
+271
+00:37:19,859 --> 00:37:22,139
+Ondan sonra adresi arttırdı, buraya geldi.
+
+272
+00:37:22,259 --> 00:37:23,059
+Burada mı 39?
+
+273
+00:37:23,299 --> 00:37:23,519
+Hayır.
+
+274
+00:37:23,619 --> 00:37:24,419
+Bir kere daha say.
+
+275
+00:37:24,519 --> 00:37:25,259
+Burada mı 39?
+
+276
+00:37:25,799 --> 00:37:28,659
+Az önce yerini bildiği 39'u bir kere daha arıyor.
+
+277
+00:37:28,919 --> 00:37:30,179
+Anladınız mı ne yaptıklarını?
+
+278
+00:37:31,419 --> 00:37:36,059
+Ve bunu yani ben hani 40 yıl falan düşünsem böyle bir çözüm aklıma gelmezdi.
+
+279
+00:37:36,679 --> 00:37:37,719
+Onu da söyleyeyim.
+
+280
+00:37:38,039 --> 00:37:39,459
+Bunu bu şekilde yapmışlar.
+
+281
+00:37:39,460 --> 00:38:07,500
+mesela diyelim ki şurada 13 olsun iyi eşittir 6 için bakın valuesu da nedir 6 için 13 mod 13 şimdi bakıyor 6 3'e eşit mi? Hayır 6 0'dan başlatıyor adres de diyor 3 diyor şimdi zaten 13'ün 6. gözde onu biliyor aslında ama 3. gözden başlayıp 13'e arıyor.
+
+282
+00:38:07,500 --> 00:38:17,520
+13 mü? Hayır. Bir saygı. 13 mü? Hayır. 13 mü? Hayır. 13 mü? Evet. Dördüncü adımda buldum. Anladınız mı nasıl yapıldığını? Ne yaptıklarını?
+
+283
+00:38:19,020 --> 00:38:26,679
+Hocam bir de table'ın adres mod n'incisine bakıyor sanırım her seferinde.
+
+284
+00:38:26,679 --> 00:38:36,699
+Pardon. Önemli değil. Evet evet. O n'li mi bir karıştırdım bugün yazarken hep. Haklısın. Burası n olacak. Anladınız mı nasıl bir çözüm şey yapıldığını?
+
+285
+00:38:36,699 --> 00:38:38,280
+Evet hocam evet
+
+286
+00:38:38,280 --> 00:39:02,179
+Sıkıntıyı anladınız mı? Sen zaten yani sizler, herkes burada, 39'un burada olduğunu biliyor ama diyor ki 39. gözde olmalıydı. Sayması gerek yok kaç adımda 39 yerleşti. 9'dan yola çıkarak 39'u arıyor tekrardan. Yani bir adım önce zaten nerede olduğunu bildiğin 39'u tekrardan arıyor.
+
+287
+00:39:02,179 --> 00:39:11,179
+Burada bir de daha da kötü bir şey var. Şu kontrolü yapıyor bir de. Yani bu kontrolü niye yapıyor şu kontrolü?
+
+288
+00:39:12,275 --> 00:39:32,355
+39 yoksa diye bir de böyle bir kontrol yapıyor. Hani biz geçen hafta pazartesimiz sizinle derste konuşmuştuk ya, eleman dizide olmayabilir diye değil mi? Eleman dizide var mı diye önce bir şeyi kontrol etmenizi adım sayısını falan. Hani linear search konuşurken hatırlıyor musunuz?
+
+289
+00:39:32,355 --> 00:39:40,735
+demiştik ki linear search yaparken i küçüktür, ns ve işte a'nın i'incisi farklıdır aranan sayıysa dönün.
+
+290
+00:39:41,136 --> 00:39:42,796
+Şu kontrol neyi sağlıyordu?
+
+291
+00:39:43,296 --> 00:39:45,456
+Aradığınız eleman yoksa değil mi?
+
+292
+00:39:45,616 --> 00:39:49,575
+Gereksiz dönmememizi yani n bitince dışarı çıkmanızı sağlıyor.
+
+293
+00:39:49,676 --> 00:39:50,676
+Hatırlıyor musunuz bunu?
+
+294
+00:39:52,116 --> 00:39:52,395
+Evet.
+
+295
+00:39:52,915 --> 00:39:55,536
+Şimdi bu kontrolü de onun için yapıyor.
+
+296
+00:39:55,956 --> 00:40:01,636
+Ya diyor hani az önce bulduğu table'un i'inci gözündeki 39 var ya.
+
+297
+00:40:01,636 --> 00:40:10,156
+yani 39 sanki hareket edebilen, gezebilen bir elemanmış gibi ya 39 yoksa diye bir de böyle bir kontrol koyuyor.
+
+298
+00:40:10,296 --> 00:40:15,636
+Yani bir adım önce zaten 39'u sen buldun, orada 39 olduğunu biliyorsun.
+
+299
+00:40:15,816 --> 00:40:23,235
+Yani şunun sonucunun her zaman doğru çıkacağını bir yerde o 39'u bulacağını biliyorsun aslında.
+
+300
+00:40:23,915 --> 00:40:28,415
+Bir de şu kontrolle emin olmaya çalışıyor ya 39 tabloda yoksa diye.
+
+301
+00:40:28,415 --> 00:40:40,195
+Dolayısıyla yani bu çözümü özellikle bugün paylaşmak istedim çünkü ilk derste de konuştuk.
+
+302
+00:40:40,195 --> 00:40:48,155
+Şey kadar doğru çalışan bir algoritma kadar yazdığınız algoritmanın efektif olması da önemlidir.
+
+303
+00:40:48,155 --> 00:41:02,535
+Şey stresine hiçbir zaman kapılmayın. Nedir? Ay işte sınavda çok efektif, karmaşıklığı çok az bir algoritma yazmam gerekir stresine hiçbir zaman kapılmayın.
+
+304
+00:41:02,535 --> 00:41:14,935
+Ama yani böyle bir çözüm gerçekten hani bir iki dakika düşünmekle ya ben ne yapıyorum deyip kendinize gelmeniz gereken bir çözüm.
+
+305
+00:41:14,935 --> 00:41:40,395
+yani ne bileyim hiçbir şey olmasa şu kontrolü koymazsın yani çünkü eleman dizide zaten var yani zaten sen Table E'de o 39'u bulmuştun bir daha bulamama ihtimalin yok değil mi mesela yani ve Table'ın birinci gözünde 39'un olduğunu bile bile sen niye bir daha arıyorsun değil mi yani bunların hepsi çok ciddi problemler
+
+306
+00:41:40,395 --> 00:42:01,415
+Dolayısıyla yani şey tabii ki doğru efektif yazın derken sınavda her zaman aklınıza iyi çözümler gelmeyebilir bu çok doğru bir şey ama yine de belli bir eşik seviyesinin üzerinde kötü çözümler olması önemli.
+
+307
+00:42:01,415 --> 00:42:13,436
+Yani aşama aşama kendinizi düzeltmeniz gerekir. Yani bu kadar şey olmaması için, sıkıntılı bir çözüm yapmamış olmak için. Sormak istediğiniz bir şey var mı?
+
+308
+00:42:16,436 --> 00:42:21,876
+Hocam bir algoritma son haline yazmıştık ya. O sayfaya geri döner misiniz? Bir fotoğrafımı çekeyim.
+
+309
+00:42:24,096 --> 00:42:26,656
+Slideler şey, ders kaydediliyor.
+
+310
+00:42:28,055 --> 00:42:30,436
+Hocam biliyorum ama biraz geç kaydediliyor.
+
+311
+00:42:30,435 --> 00:42:31,435
+Öyle mi?
+
+312
+00:42:32,095 --> 00:42:33,055
+Ne kadar zaman?
+
+313
+00:42:33,435 --> 00:42:35,435
+Mesela yarım saat, bir saat sonra diyeyim.
+
+314
+00:42:35,555 --> 00:42:36,475
+Çok fazla geç değil.
+
+315
+00:42:36,615 --> 00:42:39,135
+O zamana kadar kafamda kalması diye.
+
+316
+00:42:39,295 --> 00:42:40,355
+Tamam, peki oldu.
+
+317
+00:42:40,835 --> 00:42:41,035
+Peki.
+
+318
+00:42:41,875 --> 00:42:42,975
+Hatamız yok değil mi?
+
+319
+00:42:43,215 --> 00:42:44,235
+Bir bakalım.
+
+320
+00:42:44,375 --> 00:42:47,155
+Ben çünkü bir yerlerde emlerle emleri birbirine karıştırdım.
+
+321
+00:42:47,515 --> 00:42:50,355
+Hemen isterseniz bir tanecik sayı için deneyebilirim.
+
+322
+00:42:51,895 --> 00:42:56,555
+Örneğin diyelim ki beşinci göze yerleşmiş.
+
+323
+00:42:57,075 --> 00:42:58,395
+Yirmi üç için deneyelim.
+
+324
+00:42:58,395 --> 00:42:58,895
+Hemen.
+
+325
+00:42:58,895 --> 00:43:10,895
+value eşittir 23, 5. gözdeki 23 mod 13, step eşittir n10'du artı
+
+326
+00:43:11,635 --> 00:43:31,635
+i5, 5. göz çünkü şurası i'miz, 5. Eksi value'muz 3, artı 1, mod 10, 15, 16, 13, mod 13. Tamam, doğru. Bir de birinci göze yerleşmiş 39 için deneyelim.
+
+327
+00:43:31,635 --> 00:43:56,036
+y1 iken o zaman ne olmuş? Value eşittir. 39 mod 10, 9. Step eşittir. 10 artı i'miz bir, eksi value'muz 9 artı bir mod 10. Burada zaten 11, 12, eksi 9, 3. 39 birinci gözde ise nasıldı aslında?
+
+328
+00:43:56,035 --> 00:43:58,835
+9. gözde olması gerekiyordu.
+
+329
+00:43:58,955 --> 00:44:05,275
+9. göz 1. adım, 0. göz 2. adım, 39. 3. adımda yerleşti.
+
+330
+00:44:05,675 --> 00:44:06,395
+Anlaşıldı mı?
+
+331
+00:44:06,475 --> 00:44:07,295
+Tekrardan söyleyeyim.
+
+332
+00:44:07,355 --> 00:44:12,895
+Bakın bunun yerine şu nerede arkadaşımızın ilk ders başında söylediği.
+
+333
+00:44:12,895 --> 00:44:16,575
+Bu da yani bu halide doğru bir çözüm.
+
+334
+00:44:17,055 --> 00:44:20,455
+Kesinlikle olacak bir çözüm.
+
+335
+00:44:20,455 --> 00:44:29,155
+Biraz daha iyisi şu şekilde yaparsanız yine doğru bir çözüm, yine efektif bir çözüm.
+
+336
+00:44:29,335 --> 00:44:31,335
+Yani çok da sıkıntısı yok bu çözümün.
+
+337
+00:44:31,415 --> 00:44:32,775
+Şurada bir tane ifiniz var.
+
+338
+00:44:32,775 --> 00:44:42,155
+Ama daha kısası hiç if kullanmadan sadece o gözdeki elemanlardan farklı onu kullanmak zorundasınız.
+
+339
+00:44:42,316 --> 00:44:45,375
+Çünkü orada eleman yoksa iş yapmamanız lazım.
+
+340
+00:44:46,216 --> 00:44:49,895
+Orada eleman varsa bu şekilde hesap yapabilirsiniz.
+
+341
+00:44:49,895 --> 00:45:19,875
+o zaman fotoğraf çekecekseniz 3 aşama yapayım size bak bu ilk aşaması burada value'nun iyi eşitliğini de kontrol edebiliyoruz bu ilk aşaması doğru bir gayet iyi bu da yani gayet iyi bir çözüm bu da geçiyorum bu ikinci aşaması value'nun iyi eşitliğini kontrol etmek yerine küçük eşitledik burada onu da içeriye aldık true false value'u i'den küçükse ne yapacaksın büyükse ne yapacaksın
+
+342
+00:45:19,875 --> 00:45:49,755
+yapacaksın. Bu ikinci aşaması. Bu da doğru ve gayet yine efektif, güzel bir çözüm. Birazcık daha iyisi ki tekrardan söyleyeyim yani o kadarını göremezsenize çok sıkıntı değil ama biraz düşünürseniz görebileceğiniz daha iyisi onu da çözmek için bir n eklerseniz şuradaki gibi ve sonra da n'e göre modunu alırsanız hem value'nun
+
+343
+00:45:49,755 --> 00:45:52,175
+i'den küçük olduğu durumu çözmüş olursunuz.
+
+344
+00:45:52,295 --> 00:45:55,095
+Sen de büyük olduğu durumu çözmüş olursunuz.
+
+345
+00:45:55,455 --> 00:45:56,415
+Sorunuz var mı?
+
+346
+00:45:57,755 --> 00:45:59,795
+Hocam hatırlamak için bu akış şeması ile ilgili.
+
+347
+00:45:59,955 --> 00:46:05,996
+Döngünün içini sağ taraftaki gibi çıkışını da herhangi bir çıkış şartı belirtmeden soldaki gibi bitiriyoruz değil mi?
+
+348
+00:46:09,996 --> 00:46:11,496
+Anlamadım. Şurayı mı sordunuz?
+
+349
+00:46:12,115 --> 00:46:14,955
+Evet, akış şemasının. Evet, o kısım sordum.
+
+350
+00:46:14,955 --> 00:46:16,735
+En son bitişi çıkışı.
+
+351
+00:46:16,735 --> 00:46:22,755
+Şöyle şunu soruyorsunuz değil mi? Bunu mu sordunuz?
+
+352
+00:46:27,476 --> 00:46:28,235
+Bunu mu sordunuz?
+
+353
+00:46:29,135 --> 00:46:32,856
+En son 10'a kadar saydığında, en eksi 1'e kadar saydığında ki çıkışını sordum.
+
+354
+00:46:33,755 --> 00:46:34,655
+Ha şunu sordunuz.
+
+355
+00:46:35,896 --> 00:46:36,595
+Bu mu?
+
+356
+00:46:36,755 --> 00:46:37,335
+Evet, evet.
+
+357
+00:46:38,135 --> 00:46:49,476
+Ha tamam. Her zaman şöyle, evet. Yani soruyu doğru anladıysam eğer, buradan içeri giriyorsunuz, şuradan geri dönüyorsunuz her zaman, şuradan da dışarı çıkıyorsunuz.
+
+358
+00:46:50,675 --> 00:46:52,156
+Tamam, anlaşıldı hocam. Teşekkürler.
+
+359
+00:46:52,156 --> 00:46:53,195
+Rica ederim.
+
+360
+00:46:53,195 --> 00:46:56,915
+ve while'ınız da varsa, while var mı burada hiç?
+
+361
+00:46:56,915 --> 00:47:01,516
+while'ınız varsa da onu da göstereyim.
+
+362
+00:47:02,235 --> 00:47:06,836
+Yani şu bir, şu iki, şu üç for'da.
+
+363
+00:47:07,375 --> 00:47:11,175
+while yapıyorsanız da her zaman şöyle yapıyorsunuz.
+
+364
+00:47:11,255 --> 00:47:15,275
+Şuradan çıkıyorsunuz true ise burada işleri yapıyorsunuz.
+
+365
+00:47:15,355 --> 00:47:16,955
+Şöyle geri dönüyorsunuz.
+
+366
+00:47:17,415 --> 00:47:19,895
+Bu yukarıdan gelişiniz, bu da aşağı gidişiniz.
+
+367
+00:47:19,895 --> 00:47:41,175
+false ise yani wild şartı örneğin iyi küçüktür n olduğu sürece diyelim ki doğruysa şu şekilde false ise yani şart bozulduğunda wild şartı şuradan dışarı çıkıyorsunuz şu wild işte diyelim ki iyi küçüktür n dediniz içeride de bir takım işler yaptınız böyle bir şey.
+
+368
+00:47:41,995 --> 00:47:43,056
+Var mı başka sorunuz?
+
+369
+00:47:54,291 --> 00:48:19,271
+Biri [öğrenci]. Aslında dinlediklerini uygulamaya çalışmışlar ama özümseyememişler işte. Güvenememişler sayılara. Çok tatlı. Güzel yorumlar yazmışsınız. Tamam. Primitif ama çalışıyor. Evet yani çalışıyor. Ben zaten bir şey... Biz puan verdik bu arada onu da söyleyeyim. Puan vermemiş değiliz o sorulara. Biraz üzüldük tabii okurken ama yine de puan verdik. O konuda bir endişeniz olmasın.
+
+370
+00:48:19,271 --> 00:48:34,351
+Peki o zaman bu uygulama dersi olduğu için bu hafta ilk haftamızda olduğu için bugünlük bu kadar yeter. Önümüzdeki hafta başka sonunuz yoksa önümüzdeki hafta dersi de pazartesi günü görüşmek üzere. Güzel bir gün diliyorum hepinize. Var mı sorunuz?
+
+371
+00:48:35,451 --> 00:48:36,711
+Sağ olun hocam. İyi günler.
+
+372
+00:48:37,111 --> 00:48:38,372
+İyi günler. Teşekkürler.
