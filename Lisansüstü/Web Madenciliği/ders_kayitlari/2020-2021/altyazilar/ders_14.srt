@@ -1,0 +1,2715 @@
+1
+00:06:08,980 --> 00:06:10,100
+Arkadaşlar, günaydın.
+
+2
+00:06:13,939 --> 00:06:22,099
+Biraz bekleyelim arkadaşlarınızdan gelin olur diye. Saat şu an 9.00'u 4.00 geçiyor. Saat 9.00'u 10.00 geçe derse başlayacağım.
+
+3
+00:06:23,320 --> 00:06:24,200
+Günaydın hocam.
+
+4
+00:06:25,019 --> 00:06:26,839
+Günaydınlar. Hoş geldiniz.
+
+5
+00:06:27,659 --> 00:06:28,239
+Hoş bulduk.
+
+6
+00:12:23,860 --> 00:12:27,860
+Evet arkadaşlar, başlayalım isterseniz. Sesim geliyor mu? Bir teyit eder misiniz?
+
+7
+00:12:27,860 --> 00:12:29,860
+Evet hocam, duyabiliyorum.
+
+8
+00:12:29,860 --> 00:12:31,860
+Tamam, süper.
+
+9
+00:12:31,860 --> 00:12:51,860
+Şimdi nerede kaldığımızı bir hatırlayalım. Link analizi konusunu konuşuyoruz. Geçtiğimiz hafta, şuradan gidelim, link analizi...
+
+10
+00:12:52,019 --> 00:13:11,239
+Evet. Geçtiğimiz hafta link analizi konusuna başlamıştık. Sosyal network analizini öncelikle işlemiştik. Sosyal network analizi kapsamında iki tane temel metrikten bahsetmiştik. Bu metrikler centrality ve prestij metrikleriydi.
+
+11
+00:13:11,239 --> 00:13:18,999
+bu iki metriğin de kendi altında bu iki kategoriye giren metrikler vardı.
+
+12
+00:13:18,999 --> 00:13:31,479
+Centrality metrikleri, degree centrality, closeness centrality, betweenness centrality, prestige metrikleri ise degree prestij, proximity prestij, bir de rank prestij.
+
+13
+00:13:31,479 --> 00:13:56,600
+Bu metrikleri örnekler üzerinde çalıştık. Oyuncak örnekler üzerinde bu metriklerin nasıl hesaplanması gerektiğini konuştuk. Bunların anlamlarını çalıştık. Ondan sonra da geçtiğimiz hafta yine iki tane daha yaygın kullanılan metrikten bahsettik. Bunlar Cositation ve Bibliographic Coupling metriği idi.
+
+14
+00:13:56,600 --> 00:14:16,780
+co-citation metriği ve bibliografik coupling metriğinin özellikle içinde referanslar olan paperları ya da dokümanları arasında bir ilişki kurmak için kullandığımız metrikler diye konuştuk.
+
+15
+00:14:16,779 --> 00:14:31,779
+Bu iki, normalde iki doküman arasında benzerliği bulurken TF-IDF tabanlı metrikler kullanıyoruz. Bunu daha önce Information Retrieval Chapter'ı içerisinde görmüştük.
+
+16
+00:14:31,779 --> 00:14:43,459
+ama burada içeriye bakmadan tamamıyla iki tane dokümanın vermiş olduğu referanslara bakaraktan ya da almış oldukları referanslara bakaraktan ne yapıyoruz?
+
+17
+00:14:43,579 --> 00:14:49,479
+Aradaki ilişkiyi bulmaya çalışıyoruz. Bunun için de COS-ITES'in ve bibliografik coupling metriklerini konuştuk.
+
+18
+00:14:49,479 --> 00:15:13,680
+Geçtiğimiz hafta yine aynı şekilde link analizi konusunda PageRank algoritmasına başladık. PageRank algoritmasının nasıl hesaplandığını konuştuk. PageRank algoritmasının matriz reprezentasyonunu konuştuk.
+
+19
+00:15:13,680 --> 00:15:37,240
+aynı şekilde PageRank algoritmasını çözmüş olduğu spider trap bir de dead end problemlerini nasıl çözdüğünü ve belirli bir iterasyon sonunda bütün notlar için nasıl bir PageRank vektörüne converge olduğunu detaylarıyla konuştuk.
+
+20
+00:15:37,240 --> 00:15:46,439
+Bugün konuşacağımız konu ise diğer bir algoritma olan link analizi algoritması olan HITS algoritması. Buna bakacağız.
+
+21
+00:15:51,539 --> 00:16:03,899
+Şimdi biz demiştik ki PageRank algoritması bir web grafı üzerinde notların popüleritesini tespit ediyor.
+
+22
+00:16:04,779 --> 00:16:07,319
+Popüleriteyi ne diye tanımlamıştık?
+
+23
+00:16:07,319 --> 00:16:24,979
+Eğer bir not çok sayıda nottan link alıyorsa ve link almış olduğu notların da popüleritesi yüksekse bu notun da popüleritesi yüksek olacaktır.
+
+24
+00:16:25,619 --> 00:16:27,959
+PageRank algoritmasının esası buna dayalı.
+
+25
+00:16:27,959 --> 00:16:48,459
+Ve PageRank algoritması diyor ki bu bir recursive yaklaşımdır. Bir nodun kendisine link veren notlardan yola çıkarak PageRank'ini buluyorsanız bu nodu PageRank'ini de bunun link vermiş olduğu notların PageRank değerini bulmak için kullanabilirsiniz.
+
+26
+00:16:48,459 --> 00:16:58,679
+Şimdi PageRank'in bu yaklaşımı arkadaşlar query independent bir yaklaşım.
+
+27
+00:16:58,839 --> 00:17:03,459
+Yani siz öncelikle Google'da query'ye giriyorsunuz.
+
+28
+00:17:04,699 --> 00:17:14,799
+Google'da query'ye girdikten sonra sizin query'nize Google gidiyor.
+
+29
+00:17:14,799 --> 00:17:21,059
+Inverted Index tablosundaki keywordlerle karşılaştırıyor.
+
+30
+00:17:21,059 --> 00:17:32,499
+Bu keywordlerle karşılaştırdıktan sonra bu keywordlerin bulunmuş olduğu entry'lerdeki sayfaları alıp öncelikle getiriyor, bunları birleştiriyor.
+
+31
+00:17:32,639 --> 00:17:34,579
+Bir search result listesi oluşturuyor.
+
+32
+00:17:34,580 --> 00:17:46,720
+Daha sonra da önceden hesaplanmış olan PageRank skoru tablosuna bakaraktan bu search result listesindeki sonuçları tekrardan sıralandırıyor.
+
+33
+00:17:48,620 --> 00:17:54,580
+Şimdi dikkat ederseniz bu yapıda PageRank skorlarının hesaplanması önceden gerçekleşiyor.
+
+34
+00:17:55,220 --> 00:17:57,580
+Yani queryden bağımsız olarak gerçekleşiyor.
+
+35
+00:17:58,260 --> 00:18:02,439
+Query ne derse desin PageRank skorları önceden hesaplanıyor.
+
+36
+00:18:02,439 --> 00:18:30,619
+Şimdi bu durumda şöyle bir şey ortaya çıkıyor. Diyelim ki mesela siz Web Data Mining üçlü kelime üçlüsünü arıyorsunuz. Şimdi Web Data Mining kelime üçlüsü diyelim ki normalde hani beklediğiniz bu Web Data Mining isimli kitabın olduğu sayfanın ilk 10 sonuçta çıkmasını beklersiniz.
+
+37
+00:18:30,620 --> 00:18:52,739
+Ama eğer içerisinde web data mining kelimeleri olan aynı zamanda PageRank skoru çok yüksek olan başka sayfalar varsa PageRank skoruna göre tekrardan bu search resultlarını re-rank yaptığımızdan dolayı sıraladığımızdan dolayı
+
+38
+00:18:52,739 --> 00:19:01,719
+ilk 10 skor içerisinde web data mining kitaplarının bulunduğu sayfalar giremeyebilir.
+
+39
+00:19:02,519 --> 00:19:11,840
+Sırf popüleritesi yüksek oldu diye ve içerisinde web data mining kelimeleri geçti diye sayfalar ilk 10 sonuç içerisine girebilir.
+
+40
+00:19:13,340 --> 00:19:18,799
+Buradaki durum PageRank'in query independent olmasından dolayı geliyor.
+
+41
+00:19:18,799 --> 00:19:31,239
+Şimdi PageRank'in ortaya çıktığı yıllarda 1998 yılında yine Cornell Üniversitesi'nden, PageRank Stanford Üniversitesi'nden çıktı.
+
+42
+00:19:31,400 --> 00:19:38,400
+Cornell Üniversitesi'nden de yine sayfaların popüleritesini hesaplamak üzerine başka bir algoritma çıktı.
+
+43
+00:19:38,539 --> 00:19:41,939
+Buna da HITS diyoruz. Hypertext Induced Topic Search.
+
+44
+00:19:42,900 --> 00:19:47,459
+Şimdi HITS'in PageRank'den farkı HITS Search Query Dependent.
+
+45
+00:19:47,459 --> 00:19:50,459
+Yani hiç hesaplanırken...
+
+46
+00:19:51,667 --> 00:19:54,307
+Search query dikkate alınarak hesaplıyor.
+
+47
+00:19:54,408 --> 00:19:55,807
+Peki bunu nasıl yapıyor?
+
+48
+00:19:56,527 --> 00:19:59,807
+Öncelikle HITS algoritmasında iki tane ranking skoru var.
+
+49
+00:19:59,947 --> 00:20:03,727
+Bunlardan bir tanesi authority ranking, diğerisi ise hub ranking.
+
+50
+00:20:04,207 --> 00:20:04,887
+Ne demek bu?
+
+51
+00:20:05,447 --> 00:20:07,487
+Her sayfanın iki tane skoru var.
+
+52
+00:20:07,628 --> 00:20:10,667
+Authority ranking, bir de hub ranking diye iki tane skoru var.
+
+53
+00:20:10,867 --> 00:20:12,147
+Peki bunları nasıl hesaplıyor?
+
+54
+00:20:12,928 --> 00:20:14,907
+Öncelikle authority nedir, hub nedir?
+
+55
+00:20:14,907 --> 00:20:28,888
+Şimdi biz diyoruz ki bir sayfa otoriter sayfa olabilmesi için bu sayfanın çok sayıda sayfa tarafından link verilmesi lazım.
+
+56
+00:20:29,087 --> 00:20:33,388
+Yani bir sayfanın otoriter bir sayfa ise çok sayıda link alması lazım.
+
+57
+00:20:33,388 --> 00:20:38,427
+Peki hub nedir?
+
+58
+00:20:38,787 --> 00:20:44,827
+Hub ise bir sayfanın hub sayfa olabilmesi için çok sayıda alt linki olması gerekir.
+
+59
+00:20:44,907 --> 00:20:51,767
+Peki, tanımları bu şekilde yaptıktan sonra burada örneklerini görebiliyoruz.
+
+60
+00:20:53,107 --> 00:20:56,607
+Otoriter bir sayfa, çok sayıda sayfadan link alıyor.
+
+61
+00:20:56,748 --> 00:20:59,307
+Hub sayfası ise çok sayıda sayfaya link veriyor.
+
+62
+00:21:00,227 --> 00:21:04,067
+Ve diyoruz ki HITS algoritması şunu varsayıyor.
+
+63
+00:21:04,207 --> 00:21:12,207
+Diyor ki bunlar arasında bir mutual reinforcement ilişkisi vardır.
+
+64
+00:21:12,207 --> 00:21:13,467
+Bu ne demek?
+
+65
+00:21:13,467 --> 00:21:20,207
+Yani diyor ki e-hub sayfaları, e-hub sayfaları link verir.
+
+66
+00:21:21,067 --> 00:21:25,027
+E-hub sayfalar da e-hub sayfalarından link alır.
+
+67
+00:21:25,667 --> 00:21:33,687
+E-hub sayfaları, e-hub sayfalarından link alır.
+
+68
+00:21:34,207 --> 00:21:40,887
+Yani şuradaki gördüğünüz şekildeki yapıyı varsayıyor hits algoritması.
+
+69
+00:21:40,888 --> 00:21:51,867
+Peki bu varsayıma dayalı olarak başarılı bir şekilde sayfaların popüleritesine göre sıralama yapabiliyor mu? Buna bakalım.
+
+70
+00:21:53,068 --> 00:21:55,227
+Şimdi Hits algoritması şunu yapıyor.
+
+71
+00:21:56,248 --> 00:22:08,647
+Öncelikle siz bir query verdiğiniz zaman Hits algoritması öncelikle gidiyor bu query'i match eden inverted index tablosundaki keywordlerin entrilerini buluyor.
+
+72
+00:22:08,647 --> 00:22:33,167
+Okey. Dediniz ki mesela web data mining kelimesinin üçlü kelime grubunu arıyorum. Gidiyor web data mining kelimelerini içeren inverted index'in key kısmındaki değerleri buluyor. Bunlara karşılık gelen entry'lerdeki HTML sayfaları alıyor. Birleştiriyor bir tane search result list oluşturuyor.
+
+73
+00:22:33,167 --> 00:22:45,347
+İşte bu oluşturmuş olduğu search result ise root set diyeceğiz ve bunu burada büyük harf W diye göstermişiz.
+
+74
+00:22:45,347 --> 00:23:04,547
+Şimdi buradan başlayarak elimizde bir root set var. Bu root setin içerisindeki dokümanların link vermiş olduğu bir derece sonraki link vermiş oldukları dokümanları buluyor.
+
+75
+00:23:04,547 --> 00:23:14,727
+İki, bu root set içerisindeki dokümanlara link veren bir derece önceki dokümanları buluyor hits algoritması.
+
+76
+00:23:14,847 --> 00:23:18,207
+Peki bunu nereden buluyor? Elimizde web graf var mı? Var.
+
+77
+00:23:18,867 --> 00:23:22,687
+Bu web grafı tanıtan adjacency matrisimiz var mı? Var.
+
+78
+00:23:22,687 --> 00:23:47,547
+Yani ben bu AdGesense matrise bakaraktan elimdeki işte root setindeki sayfalara hangi sayfalar link vermiş ya da elimdeki root sayfası hangi sayfalara link veriyor ya da elimdeki root sayfasına root setindeki sayfalara hangi sayfalar link veriyor bunları tespit edebilirim.
+
+79
+00:23:47,955 --> 00:24:05,296
+Bunu tespit ettikten sonra elimdeki bu root set içerisindeki linkleri genişletiyor. Yani bu root setin içerisindeki sayfalar artı bunların link vermiş olduğu sayfalar artı bu root sete link vermiş olan sayfalar.
+
+80
+00:24:05,296 --> 00:24:16,775
+İşte bu yeni oluşmuş şeye ise link setine base set diyoruz.
+
+81
+00:24:17,176 --> 00:24:19,055
+Bunu da büyükse ile gösteriyoruz.
+
+82
+00:24:21,435 --> 00:24:26,695
+Şimdi artık elimde bir base set var.
+
+83
+00:24:26,695 --> 00:24:35,955
+Bu base setin içerisinde kaç tane link varsa ben bunları kullanıraktan bir tane küçük web graf oluşturuyorum.
+
+84
+00:24:37,395 --> 00:24:45,415
+Bu oluşturmuş olduğum küçük web grafa adjacency matrix diyorum ve bunu L ile ifade ediyorum.
+
+85
+00:24:45,675 --> 00:24:47,375
+Demek ki ne yapmış oldum?
+
+86
+00:24:47,775 --> 00:24:54,055
+Rootsetten başlayarak onların bir link vermiş olduğu sayfaların linklerini aldım.
+
+87
+00:24:54,055 --> 00:24:58,195
+Bir de RootSet'teki sayfalara link vermiş olan sayfaları aldım.
+
+88
+00:24:58,955 --> 00:25:00,356
+Bunların hepsini birleştirdim.
+
+89
+00:25:00,835 --> 00:25:02,695
+Bir tane BaseSet oluşturdum.
+
+90
+00:25:03,075 --> 00:25:08,595
+BaseSet'in içerisindeki linkleri kullanaraktan bir tane komşuluk matresi oluşturdum.
+
+91
+00:25:08,595 --> 00:25:17,595
+Bu komşuluk matresinde eğer bir not diğer nota link veriyorsa bir, link vermiyorsa sıfır diye işaretledim.
+
+92
+00:25:17,595 --> 00:25:29,856
+Şimdi Hitz algoritması ne diyordu? Hitz algoritması diyordu ki iyi otoriter sayfa iyi hub sayfalarından link alır.
+
+93
+00:25:29,856 --> 00:25:35,316
+Şimdi bu söylediğini şu formülle gösterebiliyorum.
+
+94
+00:25:35,496 --> 00:25:55,915
+Diyorum ki bir otoriter sayfa hub sayfalarından link alır ve dolayısıyla da hub sayfalarının skorlarının toplamı yani i sayfasına link veren hub sayfalarının skorlarının toplamı a'nın i sayfasının otorite skorunu verir.
+
+95
+00:25:56,616 --> 00:25:59,595
+Aynı şekilde HIT algoritması ne diyordu?
+
+96
+00:25:59,855 --> 00:26:09,895
+İyi bir hub sayfası iyi otoriter sayfalarına link verir.
+
+97
+00:26:09,895 --> 00:26:27,395
+Burada da link vermiş olduğu otoriter sayfaların otorite değerlerinin toplamı buradaki hub sayfasının değerini veriyor.
+
+98
+00:26:27,396 --> 00:26:55,496
+Yani Hits algoritmasının söylediği iki tane varsayımı ben ne yapmış oldum? Birer denkleme dönüştürmüş oldum. Şimdi burada benim dikkatimi şu çekiyor. Hani ben burada şuradaki hub skoru değerine şu aşağıdaki denklemin sağ tarafını alıp koyabilirim.
+
+99
+00:26:55,495 --> 00:27:11,775
+Aynı şekilde aşağıdaki denklemde de otorite skoru değerine yukarıdaki denklemin sağ tarafındaki değeri koyabilirim.
+
+100
+00:27:12,035 --> 00:27:15,135
+Bunu tespit ettim. Şimdi bunu yapalım.
+
+101
+00:27:15,135 --> 00:27:27,915
+Şimdi eğer ben bunu bu az önce gösterdiğim sadece bir tane nodun otorite değerini ve bir tane nodun hub değerini hesaplamak için de.
+
+102
+00:27:28,307 --> 00:27:46,408
+PageRank'den de hatırlarsınız. Biz PageRank'i konuşurken öncelikle tek bir nodun PageRank skorunu hesaplamayı konuştuk. Ondan sonra dedik ki peki bunu bir matrisin çok sayıda nodu aynı anda hesaplamak istiyorsam bu durumda matris representation ile göstermem gerekir.
+
+103
+00:27:46,408 --> 00:27:51,728
+Az önceki bu iki formülün matriz representation ile gösterimi de şu.
+
+104
+00:27:53,328 --> 00:27:57,868
+Otorite kolon vektörü eşittir.
+
+105
+00:27:58,627 --> 00:28:04,028
+Komşuluk matrisinin transpozesi çarpı hub kolon vektörü.
+
+106
+00:28:04,428 --> 00:28:06,928
+Hub kolon vektörü eşittir.
+
+107
+00:28:08,068 --> 00:28:13,407
+Komşuluk matrisi çarpı otorite kolon vektörü.
+
+108
+00:28:13,407 --> 00:28:25,787
+Okey. Burada da kolon vektörlerinin gösterimini yapmışım. Normalde bu satır vektörü ama bunun transpozesini alınca bu kolon vektörü. Bu da aynı şekilde bir kolon vektörü.
+
+109
+00:28:25,787 --> 00:28:47,708
+Şimdi ne yaptım? Şuradaki iki tane formül sadece tek bir nodun otorite, tek bir nodun hub skorunu hesaplamaktı. Burada ise bütün notlar için bir otorite kolon vektörü hesaplıyorum. Bütün notlar için bir hub kolon vektörü hesaplıyorum.
+
+110
+00:28:47,708 --> 00:29:03,928
+Tamam. Şimdi ne yaptım? Dedim ki biraz önce burada ben yukarıdaki hap vektörünün yerine aşağıdaki denklemin sağ tarafını yazabilirim.
+
+111
+00:29:04,627 --> 00:29:12,507
+Aynı şekilde aşağıda da A kolon vektörünün yerine yukarıdaki denklemin sağ tarafını yazabilirim.
+
+112
+00:29:12,507 --> 00:29:27,827
+Peki yazalım neye dönüşecek? Öncelikle yukarıdaki denklemin ele alalım. Yukarıdaki denklemde hub kolon vektörü yerine onun sağ tarafındaki denklemi yazsın. Böyle bir şey çıktı.
+
+113
+00:29:27,827 --> 00:29:35,827
+Şimdi hatırlarsanız biz PageRank'i konuşurken böylesi bir denklemle karşılaşmıştık.
+
+114
+00:29:37,287 --> 00:29:49,787
+Orada da demiştik ki buradaki kolon vektörü sıfırıncı state'de ise denklemin diğer tarafındaki kolon vektörü birinci state'dedir.
+
+115
+00:29:49,787 --> 00:29:52,287
+Sonra bunu alıp tekrar buraya koyarız.
+
+116
+00:29:52,287 --> 00:29:58,248
+Buradaki kolon vektörü birinci state'de ise buradaki kolon vektörü ikinci state'de olacaktır.
+
+117
+00:29:58,347 --> 00:30:02,867
+Bu şekilde iterasyon yaparak böylesi bir denklemi çözebilirdik.
+
+118
+00:30:02,987 --> 00:30:05,727
+Bu çözme tekniğinde de power iteration dedik.
+
+119
+00:30:06,327 --> 00:30:08,287
+Burada da aynı şeyi yapıyoruz.
+
+120
+00:30:08,287 --> 00:30:22,287
+Bu denklemi bu yerine koyma yöntemiyle şuna çevirmiş olduğum otorite skoru için bu denklemi power iteration yöntemiyle ben ne yapabilirim? Çözebilirim.
+
+121
+00:30:23,147 --> 00:30:36,507
+Şu L'nin transpozesi komşuluk matrisinin transpozesi. NN bir matris. L komşuluk matrisi. Bu da NN bir matris. NN matris ile NN matrisin çarpımı yine NN bir matris eder.
+
+122
+00:30:37,248 --> 00:30:39,608
+Burada iki tane kolon vektörü var.
+
+123
+00:30:39,748 --> 00:30:41,287
+Bunlar otorite kolon vektörü.
+
+124
+00:30:41,407 --> 00:30:45,207
+Bir tanesi bir önceki state, bir sonraki, bir sonraki state.
+
+125
+00:30:45,207 --> 00:30:53,067
+Power iteration metodu en baştan diyorum ki sıfırıncı state de otorite skorlarının hepsi bir olsun.
+
+126
+00:30:53,807 --> 00:30:56,968
+Buradan başlayarak dan power iteration metodu çalışıyorum.
+
+127
+00:30:57,087 --> 00:31:02,827
+Belli bir iterasyon sonra otorite skorları belirli bir değerlere yakınlayacaktır.
+
+128
+00:31:02,827 --> 00:31:06,827
+Aynı şekilde bunu aşağıdaki denklem için de yapıyorum.
+
+129
+00:31:07,135 --> 00:31:16,615
+Burada da hub skorları için kolon vektörü, burada da hub skorları için kolon vektörü var.
+
+130
+00:31:17,175 --> 00:31:21,075
+Bu sıfırıncı state'deyken bu birinci state'i hesaplamış oluyorum.
+
+131
+00:31:21,175 --> 00:31:22,295
+Bunu alıp yerine koyuyorum.
+
+132
+00:31:22,435 --> 00:31:24,695
+Bu birinci state'deyken ikiye hesaplıyorum.
+
+133
+00:31:24,896 --> 00:31:33,535
+Bu şekilde ne zaman ki bu hub skor değerleri bir nihai değere yakın sayıncaya kadar.
+
+134
+00:31:33,535 --> 00:31:46,536
+Bu iki farklı denklem üzerinde ben Power Reteration yöntemini uyguladığım zaman Hits algoritması diyor ki bu iki tane vektör yakınsıyacaktır.
+
+135
+00:31:48,215 --> 00:31:51,595
+Değişmeyecek bir sabit vektörlere yakınsıyacaktır.
+
+136
+00:31:51,716 --> 00:32:00,536
+Dolayısıyla benim bu base setim içerisindeki her bir not için hem otorite hem hub skorunu bu şekilde hesaplayabilirim.
+
+137
+00:32:00,535 --> 00:32:17,335
+Dikkat edin hani bu 5 set içerisindeki not sayısı fazla değil. Yani buradaki örnekte mesela root set 200 taneymiş. İşte 5 set belki 200 olmayacak ama 500 olacak.
+
+138
+00:32:17,335 --> 00:32:21,975
+Ama fazla bir şey değil yani büyük bir matriz değil.
+
+139
+00:32:22,055 --> 00:32:32,335
+Dolayısıyla böylesi küçük bir matriz üzerinde bu otorite ve hub skorlarını hesaplamak aslında oldukça hızlı.
+
+140
+00:32:36,595 --> 00:32:43,395
+Bu algoritma HITS algoritması da yine recursive bir algoritma.
+
+141
+00:32:43,395 --> 00:32:46,295
+bu algoritma içerisinde de ben
+
+142
+00:32:46,295 --> 00:32:52,535
+recursive algoritma ama buradaki örnekte bunu ben
+
+143
+00:32:52,535 --> 00:32:56,355
+iterasyon yöntemiyle çözmeye çalışmışım.
+
+144
+00:32:57,395 --> 00:33:01,215
+Burada görüyorsunuz web graph'ı vermişim.
+
+145
+00:33:01,275 --> 00:33:02,355
+Web graph değil aslında.
+
+146
+00:33:02,975 --> 00:33:06,875
+Bu base setin içerisindeki notlardan oluşmuş graph.
+
+147
+00:33:07,775 --> 00:33:10,635
+Burada bir loop içerisinde
+
+148
+00:33:10,635 --> 00:33:13,195
+her iki denklem için power iteration
+
+149
+00:33:13,195 --> 00:33:14,595
+yöntemini çalıştırıyorum.
+
+150
+00:33:15,095 --> 00:33:17,096
+En nihayetinde bu algoritma
+
+151
+00:33:17,096 --> 00:33:18,016
+bana neyi veriyor?
+
+152
+00:33:18,996 --> 00:33:20,835
+Otorite için kolon vektörü
+
+153
+00:33:20,835 --> 00:33:22,856
+hub için kolon vektörüne veriyor.
+
+154
+00:33:23,535 --> 00:33:24,415
+Benim de istediğim bu.
+
+155
+00:33:25,755 --> 00:33:25,895
+Okey.
+
+156
+00:33:27,175 --> 00:33:27,736
+Burada
+
+157
+00:33:27,736 --> 00:33:30,996
+yine ilginç
+
+158
+00:33:30,996 --> 00:33:32,115
+bir tespitimiz var.
+
+159
+00:33:32,835 --> 00:33:34,415
+Burada dikkat ederseniz
+
+160
+00:33:34,415 --> 00:33:37,296
+biz
+
+161
+00:33:37,296 --> 00:33:39,616
+otoriti
+
+162
+00:33:39,616 --> 00:33:41,936
+değerini hesaplarken
+
+163
+00:33:41,936 --> 00:33:43,936
+matriz reprezentasyonda
+
+164
+00:33:44,996 --> 00:33:47,656
+komşuluk matrizinin
+
+165
+00:33:47,656 --> 00:33:49,856
+transpozesi çarpı komşuluk
+
+166
+00:33:49,856 --> 00:33:51,076
+matrizi demiştik.
+
+167
+00:33:51,676 --> 00:33:53,736
+Bunun aynısına biz
+
+168
+00:33:53,736 --> 00:33:55,716
+co-citation matrizi
+
+169
+00:33:55,716 --> 00:33:57,676
+hesaplarken karşılaşıyoruz.
+
+170
+00:33:57,816 --> 00:33:58,695
+Yani co-citation
+
+171
+00:33:58,695 --> 00:34:01,596
+metriğini hatırlıyorsunuz.
+
+172
+00:34:02,076 --> 00:34:03,676
+İki tane not arasındaki
+
+173
+00:34:03,676 --> 00:34:05,635
+co-citation değerini bulurken
+
+174
+00:34:05,635 --> 00:34:08,315
+şu formülü kullanıyorduk.
+
+175
+00:34:08,675 --> 00:34:11,376
+Bu formülü aslında şu şekilde yazabiliriz.
+
+176
+00:34:11,716 --> 00:34:14,516
+Dolayısıyla aslında şuradaki ifade
+
+177
+00:34:14,516 --> 00:34:17,576
+cos citation matrisini ifade ediyor.
+
+178
+00:34:17,695 --> 00:34:19,775
+Bu iki tane matrisi çarptığında
+
+179
+00:34:19,775 --> 00:34:21,596
+cos citation matrisini elde ediyorum.
+
+180
+00:34:22,275 --> 00:34:26,496
+Aynı şekilde bu hub matrisinin
+
+181
+00:34:26,496 --> 00:34:30,376
+formülünde karşılaşmış olduğum şu çarpım
+
+182
+00:34:30,376 --> 00:34:33,595
+yani komşuluk matrisi çarpı
+
+183
+00:34:33,595 --> 00:34:35,895
+komşuluk matrisinin transpozesini de
+
+184
+00:34:35,895 --> 00:34:37,515
+bibliografik coupling
+
+185
+00:34:37,515 --> 00:34:39,895
+formülünde karşılaşıyorum.
+
+186
+00:34:40,035 --> 00:34:41,935
+Bu bibliografik formülünde
+
+187
+00:34:41,935 --> 00:34:43,915
+hatırlayın bu şekilde buluyordum.
+
+188
+00:34:44,595 --> 00:34:45,715
+Bunu bu şekilde
+
+189
+00:34:45,715 --> 00:34:47,055
+yazabiliyorum aynı şekilde.
+
+190
+00:34:47,595 --> 00:34:49,575
+Yani komşuluk matrisi çarpı
+
+191
+00:34:49,575 --> 00:34:51,495
+komşuluk matrisinin transpozesi.
+
+192
+00:34:52,035 --> 00:34:53,835
+Dolayısıyla Hitz algoritmasında
+
+193
+00:34:54,420 --> 00:35:06,220
+Ben otorite değerini bulurken şu iki matrisin çarpımı sonucunda elde etmiş olduğum matris aslında benim cosi-pation matrisim.
+
+194
+00:35:06,779 --> 00:35:13,959
+Şu iki matrisin çarpımı sonucunda elde etmiş olduğum matris de aslında benim bibliografik coupling matrisim.
+
+195
+00:35:15,840 --> 00:35:23,680
+Peki en nihayetinde Hits algoritması otorite ve hub skorlarını bütün sayfalar için buluyor.
+
+196
+00:35:23,680 --> 00:35:38,620
+Bu durumda ben Hits algoritması search resultlarını sıralarken bu otorite ve hub skorlarının değerlerine göre ne yapıyor? Sıralandırıyor.
+
+197
+00:35:40,479 --> 00:35:50,479
+Peki bu olursa Hits algoritmasının PageRank'ten ne gibi bir fark oldu? Ne gibi avantajı oldu?
+
+198
+00:35:50,479 --> 00:36:00,819
+Öncelikle bu yöntemde spam'e uğrama açısından bu yöntem daha açık.
+
+199
+00:36:02,039 --> 00:36:06,699
+Şimdi hatırlayın PageRank algoritması sadece in-linklere dayılıyordu.
+
+200
+00:36:06,699 --> 00:36:18,420
+Yani PageRank algoritması diyordu ki, arkadaş diyordu ben sadece bana link vermiş olan notlardan yola çıkaraktan bir popülerite hesaplayacağım.
+
+201
+00:36:18,519 --> 00:36:26,039
+Ve bana link vermiş notların da PageRank değerleri oranında bana PageRank'lerini yansıtmasına dikkat edeceğim.
+
+202
+00:36:27,100 --> 00:36:36,159
+Ama his algoritmasında aynı zamanda link vermeyi de içine alan bir algoritma.
+
+203
+00:36:36,159 --> 00:36:40,819
+Hatırlayın Root Set'ten Base Set'e giderken ne yapmıştı?
+
+204
+00:36:41,179 --> 00:36:42,979
+Önce Search Reset'leri bulmuştu.
+
+205
+00:36:43,479 --> 00:36:55,799
+Sonra Search Reset'lerinin içerisindeki linklere bakarak bir sonraki adımda hangi sayfalara link vermişse o sayfaları da Base Set'in içerisine almıştı.
+
+206
+00:36:56,280 --> 00:37:01,439
+Aynı zamanda o Root Set'in içerisindeki sayfalara link veren sayfaları da almıştı.
+
+207
+00:37:01,439 --> 00:37:26,559
+Şimdi bu root setin içerisindeki sayfaların link veren sayfalarına giderken bu sayfaların içerisindeki eğer linkler gereğinden fazlaysa ya da spam yapmak amacıyla konulmuş ise o durumda base set içerisine search query ile ilgili olmayan ve gereksiz sayfaların girmesine sebep olabilir bu algoritma.
+
+208
+00:37:26,559 --> 00:37:47,459
+Çünkü ne yapıyor? Rootset içerisine girmiş olan sayfaların içerisindeki linklere bakıyor. PageRank algoritmasından en büyük farkı bu. Demek ki kolaylıkla spam edilebilir bir yöntem.
+
+209
+00:37:47,459 --> 00:37:52,379
+diğer bir
+
+210
+00:37:52,379 --> 00:37:55,059
+önemli avantaj ise
+
+211
+00:37:55,059 --> 00:37:57,959
+query sırasında
+
+212
+00:37:57,959 --> 00:38:00,999
+bu hesaplamayı yapıyor.
+
+213
+00:38:01,159 --> 00:38:02,920
+Yani otorite ve
+
+214
+00:38:02,920 --> 00:38:05,339
+hub score hesaplamasını
+
+215
+00:38:05,339 --> 00:38:07,159
+query sırasında yapıyor.
+
+216
+00:38:07,899 --> 00:38:09,079
+Query'e karşılık gelen
+
+217
+00:38:09,079 --> 00:38:10,779
+search resultları oluşturuyor.
+
+218
+00:38:11,519 --> 00:38:13,199
+Ondan sonra bunu root set diyor.
+
+219
+00:38:13,199 --> 00:38:15,159
+Ondan sonra base seti oluşturuyor
+
+220
+00:38:15,159 --> 00:38:16,819
+ve base set içerisindeki
+
+221
+00:38:16,819 --> 00:38:23,879
+notlardan yola çıkaraktan komşuluk matrisini oluşturup daha sonra da otorite ve hub skorunu hesaplıyor.
+
+222
+00:38:23,879 --> 00:38:31,099
+Her ne kadar bu oluşturmuş olduğu komşuluk matrisinin içindeki not sayısı az olsa bile
+
+223
+00:38:31,099 --> 00:38:39,759
+query zamanı bir hesaplama yaptığı için dolayısıyla da search'un performansını azaltıyor.
+
+224
+00:38:40,179 --> 00:38:56,919
+Yine bu spamden dolayı yani root setin içerisindeki sayfaların başka ilgisiz sayfalara link verme olasılığından dolayı sonuçlarda topic drift söz konusu olabilir.
+
+225
+00:38:56,919 --> 00:39:09,679
+Yani normalde search query ve onun etrafında dolaşan sayfaları search resultlarında görmek gerekir. Ama spam'e açık olduğu için bir topic drift söz konusu olabilir.
+
+226
+00:39:10,179 --> 00:39:32,139
+Ama avantajı, PageRank'e göre avantajı da query dependent olması. Yani PageRank ne yapıyordu? Bazen popüleritesi yüksek olduğu için bir queryye en otoriter bir şekilde cevap verebilecek sayfaları ilk on sonuçta gösteremeyebiliyordu.
+
+227
+00:39:32,139 --> 00:39:53,599
+Yani kimi zaman Wikipedia sayfaları en otoriter sayfalar olabiliyor belli bir query'e karşılık ama ondan daha popüler sayfalar söz konusu olduğu için onları ilk on sonucu alabiliyor PageRank.
+
+228
+00:39:53,599 --> 00:40:00,360
+Ama HITS algoritması query dependent olduğu için bunu yapmıyor.
+
+229
+00:40:00,360 --> 00:40:20,580
+ok. Burada ben link analizi konusunu bitirmiş oluyorum arkadaşlar. Şu ana kadar konuştuğumuz konular nelerdi? Tekrardan sosyal network analizini konuştuk, centrality, prestige metriklerini konuştuk,
+
+230
+00:40:21,519 --> 00:40:28,700
+cositation, bibliografik kıpkın tıklarını konuştuk, PageRank algoritmasını detaylı konuştuk ve şimdi de HITS algoritmasını konuştuk.
+
+231
+00:40:30,360 --> 00:40:48,439
+Şimdi bu konuştuğumuz metriklerin hepsi çok önemli. Sınavda da çok büyük ihtimalle karşılaşacaksınız. Bu metriklerin size verilmiş olan örnek bir graf üzerinde nasıl hesaplandığını çok iyi biliyor olmanız gerekiyor.
+
+232
+00:40:48,439 --> 00:41:03,359
+O yüzden hem PageRank, hem HITS algoritması, hem co-citation, hem bibliografik coupling metrikleri, bir de sosyal network analizi, social network analizi metriklerini lütfen iyi çalışın.
+
+233
+00:41:07,251 --> 00:41:12,732
+link analizi, chapter'i ile ilgili sorusu olan var mı arkadaşlar? Burada durayım size soru sorayım.
+
+234
+00:41:22,963 --> 00:41:34,663
+üzerinden geçmem gerekiyor. Dediğiniz gibi o örneklerin üzerinden geçmem gerekiyor özellikle. Tamamdır. Sınav öncesi bunlara dikkat ediyor olacak.
+
+235
+00:41:41,396 --> 00:41:46,075
+Şimdi bir diğer konuya geçmek istiyorum. Web usage mining konusu.
+
+236
+00:42:16,563 --> 00:42:23,063
+Evet, kitapta 12. çeptere karşılık geliyor şu anda konuştuğumuz konu.
+
+237
+00:42:34,996 --> 00:43:02,996
+Biz web mining konusuna başlarken web mining'i 3 temel kategori altında işlemiştik. Bunlardan bir tanesi web content mining. Web content mining ile ilgili konuları
+
+238
+00:42:58,195 --> 00:43:19,255
+özellikle chapter 6 altında işledik ve aynı zamanda web crawling chapter altında işledik. Ondan sonra ikinci temel kategori web structure mining'de. Web structure mining ile ilgili konuları sosyal network analizi chapter altında işledik.
+
+239
+00:43:19,255 --> 00:43:30,615
+ve social network analysis. Üçüncü temel kategori ise web usage mining. Bu da şu an işleyeceğimiz konuya denk geliyor.
+
+240
+00:43:36,340 --> 00:43:40,959
+Web Usage Mining'de bizim hedefimiz ne? Neyi amaçlıyoruz?
+
+241
+00:43:41,199 --> 00:43:48,099
+Bizim üzerimizde üzerinde çalışacağımız data tipi nasıl bir data tipi ve Web Usage Mining'de neyi hesaplıyoruz?
+
+242
+00:43:49,680 --> 00:43:54,979
+Öncelikle Web Usage Mining'de üzerinde çalıştığımız data ClickStream datası.
+
+243
+00:43:54,979 --> 00:43:56,319
+Bu tıklama verisi.
+
+244
+00:43:57,279 --> 00:44:05,340
+Biz web üzerinde sayfalar üzerinde gezinirken bir takım izler bırakıyoruz.
+
+245
+00:44:05,340 --> 00:44:23,899
+Bunlar davranış verileri de diyebiliriz buna. Sayfanın sağlamış olduğu kullanıcı arayüzündeki objeleri tıklayarak bir takım eventler oluşturuyoruz ve bu eventler log dosyalarında loglanıyor.
+
+246
+00:44:23,899 --> 00:44:42,239
+Bu log dosyaları neler olabilir? Bir, application server'ın kendisine ait log dosyası olabilir. Application server deyince ne anlıyoruz? ISS sunucuyu anlıyoruz. Apache Tomcat sunucuyu anlıyoruz. Glassfish sunucuyu anlıyoruz.
+
+247
+00:44:42,240 --> 00:44:57,259
+Bu application serverlar kendi üzerlerinde çalışan web uygulamalarına yönlendirilen her türlü eventi ne yapıyorlar? Logluyorlar.
+
+248
+00:44:58,560 --> 00:45:00,860
+Bir de bunun yanı sıra ne olabilir?
+
+249
+00:45:01,679 --> 00:45:04,780
+Web uygulamasının kendisine ait bir log dosyası olabilir.
+
+250
+00:45:04,779 --> 00:45:13,059
+Web uygulamasının kendisi de uygulama üzerinde gerçekleştirilen eventleri ne yapabilir? Loglayabilir.
+
+251
+00:45:13,060 --> 00:45:40,159
+Şimdi biz web usage mining'de demek ki neymiş? Bu log dosyaları yani davranışlar sonucu insanların navigation davranışları, browsing davranışları sonucu sunucu tarafında oluşmuş olan bu tıklama devirleri üzerinde analizler yaparak insanların davranışlarını anlamaya çalışıyoruz.
+
+252
+00:45:40,159 --> 00:46:10,140
+Okey. İnsanların ya da bu bir insan olmayabilir bir software agent de olabilir bu işi yapan. Davranışlarını anlamaya çalışıyoruz. Okey. Bu davranışsal örüntüleri tespit etmek istiyoruz ve bu davranışsal örüntüleri tespit ederekten belki de hani kullanıcının sayfa üzerinde ne yapmaya çalıştığını tahmin edeceğiz ya da kullanıcının bir sonraki adımını
+
+253
+00:46:10,140 --> 00:46:10,960
+tahmin edeceğiz.
+
+254
+00:46:12,819 --> 00:46:13,780
+Şimdi
+
+255
+00:46:13,780 --> 00:46:16,200
+bunu
+
+256
+00:46:16,200 --> 00:46:18,300
+nasıl gerçekleştiriyoruz? Öncelikle
+
+257
+00:46:18,300 --> 00:46:19,840
+üzerinde çalıştığımız
+
+258
+00:46:19,840 --> 00:46:22,220
+data tipleri nelerdir? Bunlara bir bakalım.
+
+259
+00:46:24,640 --> 00:46:26,360
+Web sunucu log dosyaları
+
+260
+00:46:26,360 --> 00:46:26,600
+var.
+
+261
+00:46:28,119 --> 00:46:29,800
+Ondan sonra yine
+
+262
+00:46:29,800 --> 00:46:32,280
+uygulamaya ait
+
+263
+00:46:32,280 --> 00:46:33,580
+log dosyaları var.
+
+264
+00:46:35,039 --> 00:46:35,860
+Bunun dışında
+
+265
+00:46:35,860 --> 00:46:38,239
+web sitesinin içeriği
+
+266
+00:46:38,239 --> 00:46:40,579
+var. Yani web sitesinin
+
+267
+00:46:40,579 --> 00:46:42,039
+ana sayfası
+
+268
+00:46:42,039 --> 00:46:44,359
+ve navigasyon
+
+269
+00:46:44,359 --> 00:46:46,560
+linklerini, menüdeki linkleri
+
+270
+00:46:46,560 --> 00:46:47,759
+düşünecek olursanız
+
+271
+00:46:47,759 --> 00:46:50,200
+web sitesinin bir link structure'ı var
+
+272
+00:46:50,200 --> 00:46:51,879
+ve içeriği var, content'i var.
+
+273
+00:46:53,099 --> 00:46:54,159
+Bunun
+
+274
+00:46:54,159 --> 00:46:54,899
+haricinde
+
+275
+00:46:54,899 --> 00:46:57,479
+sunucu tarafında
+
+276
+00:46:57,479 --> 00:46:59,899
+gelen kullanıcılarla
+
+277
+00:46:59,899 --> 00:47:02,039
+ilgili farklı
+
+278
+00:47:02,039 --> 00:47:04,159
+müşteri ilişkileri
+
+279
+00:47:04,159 --> 00:47:05,919
+veri tabanları söz konusu olabilir.
+
+280
+00:47:06,739 --> 00:47:15,359
+müşterilerin vermiş oldukları formları doldurarak ya da kredi kartı bilgilerini girerek
+
+281
+00:47:15,359 --> 00:47:24,099
+vermiş oldukları bilgilerin saklanıldığı bir takım veri tabanları, müşteri ilişkileri, CRM veri tabanları olabilir.
+
+282
+00:47:24,099 --> 00:47:35,019
+Demek ki biz bu farklı veri kaynaklarını kullanaraktan müşterilerin davranışlarını anlamaya çalışıyoruz
+
+283
+00:47:35,019 --> 00:47:41,100
+ve müşterilerin bu davranışlarını anlayarak ne yapmaya çalışacağız?
+
+284
+00:47:41,239 --> 00:47:42,879
+Aksiyonlar üretmeye çalışırız.
+
+285
+00:47:44,959 --> 00:47:52,539
+Şimdi bu data üzerinde çalıştığımız data tiplerini incelediğimiz zaman
+
+286
+00:47:52,539 --> 00:47:59,299
+müşterilerin davranışlarıyla ilgili dataların her zaman available olmadığını görüyoruz.
+
+287
+00:48:00,299 --> 00:48:01,920
+Bu ne demek?
+
+288
+00:48:01,920 --> 00:48:14,559
+Yani müşterinin bir takım davranışları var ama eksik. Böyle bir şey nasıl olabilir? Diyelim ki mesela bir sunucu proxy cache kullanıyordur.
+
+289
+00:48:15,680 --> 00:48:31,420
+Proxy cache ne demek? Sunucuya gider requestler öncelikle bir cache'e gidiyor. Cache'te o data var mı bakıyor. Arkasından bulamazsa sunucuya gidiyor. Datayı cache'e getiriyor ve request'i client'e gönderiyor.
+
+290
+00:48:31,920 --> 00:48:40,140
+Eğer tekrar aynı data request edilirse bu data artık cache'de olduğu için proxy cache'de bu data proxy cache üzerinden karşılanıyor.
+
+291
+00:48:41,100 --> 00:48:53,059
+Şimdi eğer böyle bir durum söz konusuysa mesela diyelim ki ana sayfaya A diyelim, onun bir altındaki sayfaya B diyelim, onun bir altındaki sayfaya C diyelim.
+
+292
+00:48:53,059 --> 00:49:01,339
+Diyelim ki bir kullanıcı öncelikle ana sayfa A'ya gitti, sonra B'ye gitti, sonra C'ye gitti.
+
+293
+00:49:01,920 --> 00:49:19,620
+Şimdi eğer bu kişi tekrardan B'ye dönecek olursa bu B sayfası nereden karşılanacaktır? Proxy cache'den karşılanacaktır. Çünkü A sayfası cache'lendi, B sayfası cache'lendi, C sayfası cache'lendi.
+
+294
+00:49:19,619 --> 00:49:31,859
+Eğer tekrardan B'yi request edecek olursa B ile ilgili requesti sunucu tarafına gitmediği için sunucu tarafında bu request ne yapamayacaktır?
+
+295
+00:49:32,159 --> 00:49:32,619
+Loglanmayacaktır.
+
+296
+00:49:33,519 --> 00:49:35,639
+Dolayısıyla ben ne yapmış oluyorum?
+
+297
+00:49:36,759 --> 00:49:42,879
+Kullanıcının bir takım davranışlarını proxy cache kullanılmasından dolayı kaçırmış oluyorum.
+
+298
+00:49:44,439 --> 00:49:48,739
+Bir diğer şey bu datalar farklı yerlerde.
+
+299
+00:49:48,739 --> 00:49:53,620
+Bir kısım data ISS sunucusunun ya da Tomcat sunucusunun log dosyasında.
+
+300
+00:49:53,779 --> 00:49:59,239
+Bir kısım data application uygulamanın kendi log dosyasında.
+
+301
+00:49:59,379 --> 00:50:03,939
+Bir kısım data işte CRM veri tabanı üzerinde.
+
+302
+00:50:04,600 --> 00:50:07,639
+Bir kısım data site kontenti üzerinde.
+
+303
+00:50:07,779 --> 00:50:15,379
+Bunların hepsinin entegre edilip bir tane user transaction database üzerinde toplanması gerekiyor.
+
+304
+00:50:15,379 --> 00:50:19,639
+bir de biz bu web
+
+305
+00:50:19,639 --> 00:50:21,499
+usage miningde en fazla
+
+306
+00:50:21,499 --> 00:50:23,579
+bu clickstream datası
+
+307
+00:50:23,579 --> 00:50:25,639
+üzerinde çalışıyoruz
+
+308
+00:50:25,639 --> 00:50:27,739
+bu clickstream datasının da
+
+309
+00:50:27,739 --> 00:50:29,159
+ne yapılması gerekiyor
+
+310
+00:50:29,159 --> 00:50:30,779
+modellenmesi gerekiyor
+
+311
+00:50:30,779 --> 00:50:33,079
+bunu da az sonra konuşacağız
+
+312
+00:50:33,079 --> 00:50:35,680
+şimdi bu şekle
+
+313
+00:50:35,680 --> 00:50:37,519
+iyi bakın arkadaşlar bu şekil
+
+314
+00:50:37,519 --> 00:50:39,279
+önemli bu şekle
+
+315
+00:50:39,279 --> 00:50:40,239
+baktığınız zaman
+
+316
+00:50:40,239 --> 00:50:42,079
+aslında
+
+317
+00:50:42,079 --> 00:50:44,879
+şunu görüyorsunuz
+
+318
+00:50:44,879 --> 00:50:49,139
+Bir web sunucusu log dosyasındaki entry'leri görüyorsunuz.
+
+319
+00:50:50,460 --> 00:50:52,320
+Şimdi dikkat edin.
+
+320
+00:50:52,320 --> 00:51:01,400
+Burada mayacsdepol.edu adresi altında.
+
+321
+00:51:01,775 --> 00:51:12,696
+Classes dizininin altında, CS589'unun altında, papers.html sayfasına bir tane kullanıcı request etmiş.
+
+322
+00:51:13,696 --> 00:51:16,055
+Browser'da. Browser'da bunu yazmış.
+
+323
+00:51:27,375 --> 00:51:55,035
+şimdi bu entry şunu söylüyor diyor ki bu request şu tarifte geldi şu saatte geldi geldiği IP adres şu IP adresiydi ondan sonra şu sunucu üzerinde HTTP versiyon 1.1 versiyonuyla şu sayfayı request etti
+
+324
+00:51:55,035 --> 00:52:22,755
+request eden kişi bu sayfanın linkini buradaki sayfadan aldı. Yani referrer sayfa buydu. Gelen kişinin browser'ı şu şekilde bir browser'ı var. Gelen kişinin işletim sistemi şudur, versiyonu şudur. Bütün bu bilgileri ben HTTP request içerisinden yakalayabiliyorum.
+
+325
+00:52:22,755 --> 00:52:36,395
+Şimdi bir şeye daha dikkat edin, dikkat edin Papers.html'i browserda request ettikten sonra browser geri planda bir takım işler yapıyor
+
+326
+00:52:36,395 --> 00:52:47,215
+Burada görüyorsunuz bu sayfayı, önce Papers.html sayfasına girdi
+
+327
+00:52:47,215 --> 00:52:52,975
+sonra Papers, HTML sayfasından şuradaki PDF'i talep etti.
+
+328
+00:52:53,435 --> 00:52:56,095
+CMS, TAI, PDF'i talep etti.
+
+329
+00:52:57,175 --> 00:53:03,295
+Ondan sonra gitti, Google'da bir search gerçekleştirdi.
+
+330
+00:53:03,755 --> 00:53:11,535
+Yapmış olduğu search sonucunda bir tane sonuçlar içerisinden bir tane sonuca bastı.
+
+331
+00:53:11,935 --> 00:53:13,775
+Bu hyperlink PDF oldu.
+
+332
+00:53:13,775 --> 00:53:30,576
+Ondan sonraki hareketinde gitmiş Maya CS Depot Edu altında, Classes altında CS480 sayfasından şuradaki announcement'ı linkine tıklamış
+
+333
+00:53:30,576 --> 00:53:39,755
+Buna tıkladığı zaman bakın browser geri planda iki tane daha obje için request gerçekleştirmiş
+
+334
+00:53:39,755 --> 00:53:43,255
+Aslında şu sayfayı görüntülemek istemiş browserdan
+
+335
+00:53:43,255 --> 00:53:53,915
+ama browser bu sayfayı görüntüleyebilmek için geri planda iki tane farklı obje için ne yapıyor? Request yapıyor.
+
+336
+00:53:53,915 --> 00:54:03,095
+Yani son kullanıcı bunları spesifik olarak request etmemiş, browser da sadece bunu görüntülemek istemiş ama browser bu iki sayfayı da getirmiş.
+
+337
+00:54:03,835 --> 00:54:11,015
+Şimdi bakın ben aslında bir kullanıcının yapmış olduğu davranışları log dosyasından okudum.
+
+338
+00:54:11,015 --> 00:54:36,535
+Şimdi ama benim yapmak istediğim bunu gözle okuyarak değil bunu makine öğrenmesi teknikleriyle buradaki davranışı anlamaya çalışmak istiyorum. Eğer ben bunu anlayabilirsem kullanıcının niyetini sayfayı dolaşırkenki niyetini tespit edebilirim. Peki bu işlemi nasıl yapacağım?
+
+339
+00:54:39,860 --> 00:54:58,880
+Öncelikle bu yaptığımız işlem web usage mining process işlemini ben uzaktan, yukarıdan bakaraktan anlatmaya çalışacağım. Elimde web applications sunucusu log dosyaları var.
+
+340
+00:54:58,880 --> 00:55:13,679
+Yani hem web sunucusu log dosyaları hem de bu application sunucusu üzerinde çalışan web uygulamasının kendine ait log dosyaları olabilir
+
+341
+00:55:13,679 --> 00:55:22,200
+Bir de benim sayfamın kontenti var, belirli bir domeyne göre oluşturulmuş sayfamın kontenti var
+
+342
+00:55:50,356 --> 00:55:59,835
+Şimdi ben ne yapıyorum? Bu iki tane data kaynağını alıp bunun üzerinde data preprocessing yapıyorum. Peki neler yapıyorum? Bir tane data clenic işlemim var mesela.
+
+343
+00:55:59,835 --> 00:56:09,075
+Şimdi ben normalde neyin peşindeyim? Normal kullanıcıların sayfa üzerinde bırakmış oldukları davranışları anlamaya çalışıyorum.
+
+344
+00:56:09,075 --> 00:56:32,975
+Dolayısıyla benim robotlar tarafından, örneğin crawlerlar tarafından gerçekleştirilmiş requestleri tespit edip log dosyasından çıkarmam gerekiyor. Sadece kullanıcılara ait davranışları, log entry'leri kullanmam gerekiyor. Dolayısıyla bir data cleaning çalışması yapmam gerekiyor.
+
+345
+00:56:32,975 --> 00:56:43,935
+PageView Identification. Bakın az önce şunu demiştim ya, normalde kullanıcı announce.html sayfasını görüntülemek istiyor.
+
+346
+00:56:43,935 --> 00:56:55,735
+Ama bu sayfayı görüntüleyebilmek için browser iki tane farklı objeyi indirmek için ne yapıyor? Bunlara request gönderdi.
+
+347
+00:56:55,735 --> 00:57:21,815
+Aslında şu üç tane peşi sıra gelen request bir tane page view demek. Yani bir tane sayfayı görüntülemek için gerçekleşen requestler zinciri demek. Dolayısıyla benim ne yapmam gerekiyor? Çok sayıda HTTP request içerisinden acaba hangileri bir page view amaçlı bunu identify etmem gerekiyor.
+
+348
+00:57:25,907 --> 00:57:50,847
+Sessionization. Benim bir kullanıcım bir sayfaya sabah girebilir, öğlen girebilir, akşam girebilir, farklı zaman dilimlerinde girebilir. Her girdiğinde login ve logout ya da browser'ı açıp sayfaya girmekle browser'ı kapatmak arasındaki zaman aralığına ben bir tane session diyorum.
+
+349
+00:57:50,847 --> 00:58:03,107
+ve bu session'ların log dosyalarındaki verilere bakılarak tespit edilmesi önemli. Bunu da WebUsage Mining'te yapıyorum. Yapmam gereken bir adım.
+
+350
+00:58:03,768 --> 00:58:16,307
+Diğer bir adım Data Integration. Bunu az önce konuşmuştuk. Farklı veri tabanlarında, log dosyalarında, CRM veri tabanlarında, site kontentinde müşterilerle ilgili veriler var.
+
+351
+00:58:16,307 --> 00:58:31,167
+bu verilerin entegre edilmesi gerekiyor. Ve diğer bir data preprocessing adımı ise data transformation. Burada ben bütün bu datayı bir user transaction database ile dönüştürmem gerekiyor.
+
+352
+00:58:31,168 --> 00:58:50,748
+Bu nedir user transaction database dediğim şey? Satırlarında kullanıcı olan ve her bir satırda kullanıcının sıralı hareketlerinin belirtildiği transaction database'e ben user transaction database diyorum.
+
+353
+00:58:50,747 --> 00:59:15,207
+yani satırında diyelim ki iki tane kolonu olan bir tane tablo düşünün. Birinci kolonda müşteriler var ya da birinci kolonda müşterinin sesini var. Her bir sesine karşılık gelmiş o sesindeki sıralı aktiviteler ise bu tablonun ikinci kolonunda.
+
+354
+00:59:15,207 --> 00:59:34,227
+mesela user 1, session 001 bu birinci kolondaki entry ise buna karşılık gelen işte ana sayfa, arkasından işte onun bir altındaki sayfa, arkasından onun bir altındaki sayfa gibi
+
+355
+00:59:34,227 --> 00:59:43,487
+kullanıcının bu sayfa üzerinde gerçekleştirmiş olduğu sıralı aksiyonları içeren bir tane database diye düşünebilirsiniz.
+
+356
+00:59:43,487 --> 00:59:45,128
+User Transaction Database.
+
+357
+00:59:45,208 --> 01:00:06,068
+Şimdi bu user transaction database üzerinde de ben ne yapacağım? Usage mining tekniklerini uygulayacağım. Şimdi bir ara verelim arkadaşlar. Şu anda 9'u 58 geçiyor. 9'u 10 geçe ben devam edeceğim. Kapatmayın ben sadece mute alıyorum. Sesi kapatıyorum. 9'u 10 geçe devam edeceğim.
+
+358
+01:11:39,859 --> 01:11:41,579
+Evet, devam edelim.
+
+359
+01:11:45,427 --> 01:11:47,107
+Sesim geliyor değil mi arkadaşlar?
+
+360
+01:11:49,747 --> 01:11:50,547
+Geliyor hocam.
+
+361
+01:11:50,947 --> 01:11:51,127
+Tamam.
+
+362
+01:11:55,127 --> 01:12:02,688
+Az önce user transaction database'i konuştuk.
+
+363
+01:12:02,787 --> 01:12:05,667
+User transaction database'in neye benzediğini konuştuk.
+
+364
+01:12:05,667 --> 01:12:07,567
+bu user transaction database'i
+
+365
+01:12:07,567 --> 01:12:09,108
+oluşturduktan sonra
+
+366
+01:12:09,108 --> 01:12:11,307
+ben bunun üzerinde
+
+367
+01:12:11,307 --> 01:12:12,967
+bir takım
+
+368
+01:12:12,967 --> 01:12:17,448
+daha önceki derslerde öğrenmiş
+
+369
+01:12:17,448 --> 01:12:19,508
+olduğumuz makine
+
+370
+01:12:19,508 --> 01:12:21,347
+öğrenmesi algoritmalarını
+
+371
+01:12:21,347 --> 01:12:23,268
+kullanarak web
+
+372
+01:12:23,268 --> 01:12:25,328
+usage mining yapabilirim. Nedir mesela
+
+373
+01:12:25,328 --> 01:12:27,008
+bu algoritmalardan bazıları?
+
+374
+01:12:28,027 --> 01:12:28,727
+Örneğin
+
+375
+01:12:28,727 --> 01:12:31,627
+association rule mining yapabilirim.
+
+376
+01:12:32,067 --> 01:12:33,487
+Eğer birlikte
+
+377
+01:12:33,487 --> 01:12:35,087
+satılmış
+
+378
+01:12:35,087 --> 01:12:37,227
+ürünleri tespit etmek istiyorsam
+
+379
+01:12:37,227 --> 01:12:39,067
+birliktelikleri tespit
+
+380
+01:12:39,067 --> 01:12:40,948
+etmek istiyorsam association rule
+
+381
+01:12:40,948 --> 01:12:42,968
+mining uygulayabilirim. Association rule
+
+382
+01:12:42,968 --> 01:12:44,648
+mining neydi? Bir
+
+383
+01:12:44,648 --> 01:12:47,288
+unsupervised learning
+
+384
+01:12:47,288 --> 01:12:49,347
+yöntemlerinden bir tanesiydi.
+
+385
+01:12:50,567 --> 01:12:51,247
+Bu yöntem
+
+386
+01:12:51,247 --> 01:12:53,387
+neye dayalıydı? Association
+
+387
+01:12:53,387 --> 01:12:54,627
+lara dayalı olarak
+
+388
+01:12:54,627 --> 01:12:57,167
+birliktelik
+
+389
+01:12:57,167 --> 01:12:58,767
+gösteren ürünlerin
+
+390
+01:12:58,767 --> 01:13:00,527
+tespitinde kullanılıyordu.
+
+391
+01:13:01,907 --> 01:13:02,868
+Sequential pattern
+
+392
+01:13:02,868 --> 01:13:04,427
+mining yapabilirim. Bu neydi?
+
+393
+01:13:05,087 --> 01:13:12,407
+Sıralı örüntüler varsa, sıralı eylemler varsa bu sıralı eylemleri tespit edebilirim.
+
+394
+01:13:12,407 --> 01:13:35,747
+Özellikle bir web sitesi üzerinde sıralı olarak hangi aksiyonların gerçekleştiğini, popüler olarak gerçekleştiğini tespit edebilirsem, bu durumda bu aksiyonların bir kısmını gerçekleştirmiş olan kullanıcıların bir sonraki adımlarının ne olacağını kural tabanlı olarak tespit edebilirim örneğin.
+
+395
+01:13:35,747 --> 01:13:52,828
+Yine biz dersin başında clustering yöntemlerini konuşmuştuk. Clustering yöntemleri neydi? Unsupervised learning yöntemleriydi. Bu yöntemleri kullanıraktan transaction'ları tespit edebilirim, page view'ları tespit edebilirim.
+
+396
+01:13:52,827 --> 01:13:57,827
+Yine correlation analysis yapabilirim, churn analysis yapabilirim.
+
+397
+01:13:58,687 --> 01:14:08,887
+Burada classification algoritmalarını yani supervised learning algoritmalarını kullanaraktan ben ne yapabilirim?
+
+398
+01:14:09,207 --> 01:14:15,527
+Kişinin bir sonra ne yapacağını tahmin etmeye yönelik bir takım algoritmaları çalıştırabilirim.
+
+399
+01:14:16,527 --> 01:14:25,727
+Peki bu makine öğrenmesi algoritmalarını user transaction database üzerinde çalıştırdığında ne oluyor?
+
+400
+01:14:26,627 --> 01:14:28,467
+Ya ben bir kural seti buluyorum.
+
+401
+01:14:28,667 --> 01:14:31,967
+Mesela association rule mining özelinde bir kural seti çıkartıyor.
+
+402
+01:14:31,967 --> 01:14:35,167
+Support değeri ve confidence değerleri olan bir kural seti.
+
+403
+01:14:35,827 --> 01:14:45,367
+Ya da sequential pattern mining işte belli bir support değeri, confidence değeri olan sıralı eylem dizlerini oluşturuyorum.
+
+404
+01:14:45,527 --> 01:14:53,007
+Eğer ben clustering yapmışsam, cluster'lardan oluşan bir model ortaya çıkıyor.
+
+405
+01:14:53,467 --> 01:14:59,287
+Ya da bir classification yapmışsam, bir model oluşturuyorum.
+
+406
+01:14:59,427 --> 01:15:01,847
+Supervised learning modeli oluşturuyorum.
+
+407
+01:15:02,447 --> 01:15:07,767
+Şimdi bu pattern'lar ya da pattern ya da model oluştuktan sonra,
+
+408
+01:15:08,347 --> 01:15:11,747
+ben bunun üzerinde ne yapabilirim?
+
+409
+01:15:11,887 --> 01:15:13,407
+Pattern analysis yapabilirim.
+
+410
+01:15:13,407 --> 01:15:23,407
+Yani eğer bu bir kural tabanlı bir sistemse bunun üzerinde benimle ilgili benim için çok önemli olmayan kuralları filtreleyebilirim.
+
+411
+01:15:24,987 --> 01:15:36,407
+Bu diyelim ki eğer bir unsupervised learning ise clustering yapıyorsam oluşturulmuş olan clusterların neye tekabül ettiğini tanımlamaya çalışabilirim.
+
+412
+01:15:36,407 --> 01:15:42,407
+Yani en sonunda bu oluşturmuş olduğu modelin...
+
+413
+01:15:42,707 --> 01:16:02,487
+kullanıcıları, davranışlarını tanımlamada kullanılabilmeleri için bunlar üzerinde tekrardan bir analiz yapıyorum. Web usage mining prosesi bu. Oluşturulmuş olan modeller ya da patternleri bularaktan da nihai olarak kullanıcıların davranışlarını tanımlamaya çalışıyorum.
+
+414
+01:16:07,028 --> 01:16:12,408
+Şimdi az önceki bu data preparation kısmı var değil.
+
+415
+01:16:12,547 --> 01:16:13,667
+Burası bunu gösteriyor.
+
+416
+01:16:13,787 --> 01:16:15,887
+Biraz daha oraya odaklanmış bir şema bu.
+
+417
+01:16:16,467 --> 01:16:18,807
+Data preparation şeması.
+
+418
+01:16:19,567 --> 01:16:29,567
+Buraya baktığım zaman burada en üst tarafta web application server log dosyaları var.
+
+419
+01:16:29,567 --> 01:16:32,948
+En alt tarafta da user transaction database var.
+
+420
+01:16:32,948 --> 01:16:44,888
+İşte az önceki şekle baktığınız zaman web server log dosyaları var. User transaction database. Yani şu kısmı biraz daha odaklanmış bir şekil bu.
+
+421
+01:16:44,888 --> 01:17:04,368
+Şimdi burada ne yapıyorum? Web Application Server Log dosyaları üzerinde Usage Pre-processing yapıyorum. Neler yapmışım? Data Fusion Data Integration demek. Yani farklı yerlerden gelmiş dataları ne yapıyorum? Entegre ediyorum.
+
+422
+01:17:04,368 --> 01:17:07,028
+Data üzerinde cleaning gerçekleştiriyorum.
+
+423
+01:17:07,388 --> 01:17:10,208
+Crawler'ların bırakmış oldukları dataları temizliyorum.
+
+424
+01:17:10,767 --> 01:17:12,688
+Page view'un ne olduğunu anlatmıştım.
+
+425
+01:17:12,807 --> 01:17:14,627
+Page view identification yapıyorum.
+
+426
+01:17:15,167 --> 01:17:17,328
+Session'ların ne olduğunu anlatmıştım.
+
+427
+01:17:17,468 --> 01:17:19,507
+Session'ların identification'ını yapıyorum.
+
+428
+01:17:20,028 --> 01:17:22,307
+Bir de episode identification'ını yapıyorum.
+
+429
+01:17:22,468 --> 01:17:24,307
+Episode identification nedir?
+
+430
+01:17:25,167 --> 01:17:30,847
+Şimdi diyelim ki bir session içerisinde bir kullanıcı bir takım bir işlem gerçekleştiriyor.
+
+431
+01:17:30,847 --> 01:17:33,847
+Diyelim ki mesela satın alma işlemi.
+
+432
+01:17:34,367 --> 01:17:39,007
+Bu satın alma iş süreci de diyebilirsiniz buna.
+
+433
+01:17:39,627 --> 01:17:45,967
+Öncelikle bir ürünü görüntüler, özelliklerine bakar, bunu sepete koyar.
+
+434
+01:17:47,087 --> 01:17:54,367
+Ondan sonra sepeti bir adım ileriye götürür, kredi kartı bilgilerine girer ve ödemeye başlar.
+
+435
+01:17:55,367 --> 01:17:59,727
+Bu bir kredi kartı kullanaraktan satın alma süreci.
+
+436
+01:17:59,727 --> 01:18:03,687
+Ya da favorilerini alma süreci.
+
+437
+01:18:03,687 --> 01:18:14,907
+İşte ürünü görüntüler, favorilerini al butonuna basar, işte wishlist bölümüne gider vs. vs.
+
+438
+01:18:15,847 --> 01:18:22,627
+Demek ki session içerisinde önceden tanımlanmış bir takım iş süreçleri var.
+
+439
+01:18:23,727 --> 01:18:27,127
+Yardım için izlenecek iş süreci var.
+
+440
+01:18:27,847 --> 01:18:30,367
+Satın alma için izlenecek iş süreci var.
+
+441
+01:18:30,367 --> 01:18:34,287
+wish liste eklemek için izlenecek bir iş süreci var.
+
+442
+01:18:35,007 --> 01:18:38,367
+Biz bu episode identification'ı yapmaya çalıştığımız bu.
+
+443
+01:18:38,688 --> 01:18:46,207
+Yani kullanıcı session içerisindeki davranışlarıyla hangi episodu gerçekleştirmeye çalışıyor.
+
+444
+01:18:46,468 --> 01:18:48,248
+Bunu identify etmeye çalışıyoruz.
+
+445
+01:18:49,968 --> 01:18:53,807
+Şimdi bu işlemlerden sonra biz ne yaptık?
+
+446
+01:18:54,188 --> 01:18:57,327
+Bir pre-process clickstream datası oluşturduk.
+
+447
+01:18:57,328 --> 01:19:02,528
+Yani şunların üzerinde bu pre-processing yaparaktan clickstream datası oluşturdu.
+
+448
+01:19:02,968 --> 01:19:09,128
+Bu clickstream datasını da user transaction database'e dönüştürmek için şu işlemleri yapıyoruz.
+
+449
+01:19:09,688 --> 01:19:11,348
+Burada bir data integration var.
+
+450
+01:19:11,507 --> 01:19:21,447
+Burada işte müşteri ilişkileri veri tabanı, CRM veri tabanından gelen veriler, sitenin kontantinden gelen verilerle ne yapıyorum?
+
+451
+01:19:21,788 --> 01:19:23,848
+Ben verileri entegre ediyorum.
+
+452
+01:19:23,847 --> 01:19:46,287
+Bunlardan oluşan verilerle yeni bir tablo oluşturuyorum ve bu tablo üzerinde eğer genelleştirme yapmam gerekiyorsa birden fazla kolonu birleştirip başka bir kolon oluşturmam gerekiyorsa bunu yapıyorum ve en nihayetinde user transaction database'i oluşturuyorum.
+
+453
+01:19:46,287 --> 01:19:59,807
+Burada bu pre-processing of web usage data kısmının şu kısmı biraz daha detaylı.
+
+454
+01:20:00,000 --> 01:20:28,079
+resmetmiş. Gelen ham log dosyası üzerinde data cleaning gerçekleştiriyor. Userları ve sessionları identify ediyor. Daha sonra bu clickstream datası üzerinde page view'ları identify ediyor. Ondan sonra page view'ları identify ederken hani size demiştim ya proxy cache'den dolayı kimi sayfaların requestleri, HTTP requestleri sunucu tarafında gözükmeyebilir.
+
+455
+01:20:28,079 --> 01:20:47,879
+o sayfaların istemlerini PageComplation yapmak gerekiyor. Bu durumda ne yapıyorum? Ben eksik sayfaların, eksik requestlerin var olduğunu tespit edersen bunları tamamlamam gerekiyor log dosyasında.
+
+456
+01:20:47,879 --> 01:20:58,939
+en nihayetinde ben ne yapıyorum? Bu session içerisinde kullanıcının gerçekleştirmeye çalıştığı episodları ya da iş süreçlerini identify etmeye çalışıyorum.
+
+457
+01:21:02,139 --> 01:21:10,879
+Burada da az önce konuştuğumuz adımlarda detaylı olarak ne gibi kodlama faaliyetlerini yapıyoruz ona bakmışız.
+
+458
+01:21:12,879 --> 01:21:15,939
+Irrelevant referansları uçuruyoruz.
+
+459
+01:21:19,412 --> 01:21:31,412
+spider'lardan dolayı ya da crawlerlardan dolayı oluşmuş HTTP request izleri varsa, enterleri varsa bunları uçuruyoruz.
+
+460
+01:21:35,315 --> 01:21:45,055
+Eğer yanlış referanslar varsa yani yanlış entry'ler varsa bu yanlış entry'ler log dosyasının kütüphanesinden dolayı olabilir.
+
+461
+01:21:45,055 --> 01:21:55,755
+Ya da o anda web sunucusunun üzerinde çalışan başka uygulamaların log dosyasının üzerinde bir şeyler yapmaya çalışmasından dolayı oluşabilir.
+
+462
+01:21:56,695 --> 01:22:02,895
+Böylesi hatalı referanslar varsa entry'ler varsa bunların uçurulması gerekiyor.
+
+463
+01:22:02,895 --> 01:22:17,775
+Bunun dışında eğer caching'den dolayı proxy cache'lerden dolayı bir takım referanslar yani entry'ler eksik ise bunların tamamlanması gerekiyor.
+
+464
+01:22:20,295 --> 01:22:28,396
+Yine session'ların identify edilmesi gerekiyor. Bu önemli bir şey. Bu session'ları ben nasıl identify edebilirim? Şimdi buna bakalım.
+
+465
+01:22:28,395 --> 01:22:44,396
+Şimdi biz bir sayfayı incelerken bizim incelemek istediğimiz sayfa için browser bir tane cookie oluşturuyor.
+
+466
+01:22:44,396 --> 01:23:09,336
+Bu cookie dediğimiz dosya içerisinde bir unique cookie ID var. Bu bizim eğer tekrardan aynı sayfaya tekrardan daha sonra ziyaret etmek istediğimizde tekrar gelen kullanıcı olduğumuzun tespit edilmesi için gerekli bir cookie ID.
+
+467
+01:23:09,335 --> 01:23:36,335
+Okey. Dolayısıyla neredeyse her sayfa bizim browserımızın lokal ortamında bir folder'a bir tane cookie bırakmak ister. Okey. Eğer ben özellikle cookie'lerin bırakılmasını engelleyen seçeneği seçmediysen mutlaka ne yapıyor? Benim konsantimi de alaraktan bu cookie'leri bırakıyor.
+
+468
+01:23:36,335 --> 01:23:50,655
+Peki bu cookie olduğu vakit ben kullanıcıları identify edebilir miyim? Evet. Bu cookie'leri kullanıraktan kullanıcıları identify edebilirim.
+
+469
+01:23:50,655 --> 01:24:07,055
+Peki, cookie'yi kullandım. Cookie'nin haricinde bir de session'ları da tespit etmem gerekti. Yani kullanıcı diyelim ki sabah geldi, öğlen geldi, akşam geldi.
+
+470
+01:24:07,055 --> 01:24:09,395
+3 tane farklı zaman diliminde geldi.
+
+471
+01:24:09,515 --> 01:24:11,255
+Her birisi ayrı bir session demek.
+
+472
+01:24:12,415 --> 01:24:17,435
+Hangi yaptığı aktiviteler hangi session'a ait bunu tespit etmem gerekiyor.
+
+473
+01:24:18,695 --> 01:24:24,135
+Eğer gelen HTTP request içerisinde bir session ID bilgisi varsa
+
+474
+01:24:24,135 --> 01:24:30,135
+bu durumda ben artık o session'ın bütün detayları ile yakalayabilirim.
+
+475
+01:24:30,915 --> 01:24:33,655
+Yani gerçek session'ı yakalayabilirim bütün detayları ile.
+
+476
+01:24:33,655 --> 01:24:43,835
+Ama çoğu zaman gelen HTTP request'e cookie ID olmasına rağmen session ID, embedded session ID bulunmayabiliyor.
+
+477
+01:24:44,715 --> 01:24:46,715
+Ben bu durumda ne yapmam gerekiyor?
+
+478
+01:24:47,295 --> 01:24:57,195
+Session'ın hangi aktivitelerin hangi session'a girdiğini bir takım sezgisel yöntemlerle tespit etmem gerekiyor.
+
+479
+01:24:57,195 --> 01:25:00,275
+Az sonra bu sezgisel yöntemler neler buna bakacağız.
+
+480
+01:25:00,275 --> 01:25:12,395
+Yani genel HTTP request'in user ID'sini bir şekilde biliyorum ama orada hangi aktivitelerin hangi sesjine ait olduğunu bilmiyorum.
+
+481
+01:25:13,215 --> 01:25:15,695
+Bunun için bir takım sezgisel yöntem kullanacağım.
+
+482
+01:25:16,635 --> 01:25:19,335
+Şimdi diğer bir durum elimde cookie de yok.
+
+483
+01:25:19,335 --> 01:25:26,175
+Yani kullanıcı browserına ben cookie'leri istemiyorum engelli diye bir seçeneği seçmiş.
+
+484
+01:25:26,275 --> 01:25:33,095
+Dolayısıyla bu sayfa için browser lokal ortama cookie bırakamamış.
+
+485
+01:25:34,228 --> 01:25:50,248
+Peki bu durumda ben kullanıcının hangi kullanıcı olduğunu nasıl tespit edebilirim? Onun için de genel kullanılan yöntem şu, IP adresi ile agent bilgisini concunate ediyoruz.
+
+486
+01:25:50,248 --> 01:26:18,187
+IP adresi artı agent bilgisi. Agent bilgisi içinde neler var? İşletim sistemi bilgisi var, işletim sisteminin versiyonu, işletim sisteminin üzerine bir software package varsa, security package varsa onun ismi. Ondan sonra yine kullanılan browser, browser'ın modeli ve versiyonu. Bu gibi bilgilerin hepsine agent diyorum. Bunların hepsini concunate ediyorum.
+
+487
+01:26:18,187 --> 01:26:29,467
+bir de IP adresi bunu da konken edelim. Bu ikisi beraber olduğu zaman ben bunu bir ID olarak kullanıp kullanıcıyı temsil eden ID olarak kullanabilirim.
+
+488
+01:26:30,927 --> 01:26:40,127
+Ama bunda bir problem var. Bu problem de şu, çoğu yerde biz kablosuz internet kullanıyoruz ve dynamic IP alıyoruz.
+
+489
+01:26:40,128 --> 01:27:03,448
+Bu şu demek, bizim bilgisayarımız sürekli değişen IP'ler alaraktan ne yapıyor? İnternete bağlanıyor. Dolayısıyla aynı browser üzerinden gitmemize rağmen IP adresimiz dinamik olarak değiştiği için sanki karşıdaki sunucu da sunucu farklı bir kullanıcı gelmiş gibi değerlendirebiliyor.
+
+490
+01:27:03,448 --> 01:27:10,768
+Ama eğer statik IP'den bağlanıyorsak o zaman IP ve Agent ikilisi Unique ID olabilir
+
+491
+01:27:10,768 --> 01:27:26,708
+Şimdi cookie yoluyla ya da IP Agent yoluyla session'ları user ID'lerin bilindiği durumlarda acaba ben session'ları sezgisel yöntemlerle nasıl tespit ederim bir de buna bakalım
+
+492
+01:27:26,707 --> 01:27:44,707
+Şimdi iki tane sezgisel yöntem var. Bunlardan bir tanesi zaman bağımlı sezgisel yöntem, Time Oriented Touristics. Birisi browsing ya da işte gezme davranışı tabanlı sezgisel yaklaşım.
+
+493
+01:27:44,707 --> 01:28:12,407
+Şimdi öncelikle zaman bağımlılığa bakalım. Şimdi bu diyor ki yapılan deneysel çalışmalar bir sayfada bir sesyonun 30 dakikayı geçmeyeceğini söylüyor. Bu konfigüre edilebilir bir değer. 30 dakika belki bankacılık domenini için 15 dakikadır ama trend yolu ya da FC bu aradaki domen için belki 45 dakikadır.
+
+494
+01:28:12,407 --> 01:28:32,228
+ama konfigüre edilebilen bir değer. Genelde de 30 dakika kullanılıyor. Şimdi bu diyor ki bu sezgisel yöntem bir session aktivitesi 30 dakikadır ve bu kadar süre içerisine giren bütün aktiviteleri ben session olarak ifade ederim.
+
+495
+01:28:32,228 --> 01:28:49,987
+ve bu session'in başlangıcı ise ilk defa karşılaşmış olduğum HTTP request'in zamanına bakıyorum. Ondan itibaren 30 dakika ekliyorum ve bütün bu hareketleri session diyorum.
+
+496
+01:28:49,987 --> 01:29:03,627
+ondan sonra 31. dakikadaki HTTP request'in time'ına bakıyorum ona 30 dakika ekliyorum o kadarlık zaman dilimi içerisindeki tüm aktiviteleri yine session diyorum.
+
+497
+01:29:03,627 --> 01:29:19,487
+Bu zaman bağımlı bir sezgisel yaklaşım. Bu sezgisel yaklaşımın içinde yine şu da var bu da diyor ki arkadaş diyor sen bu 30 dakikalık zaman içerisinde eğer bir sayfada 10 dakikayı geçmişsen
+
+498
+01:29:19,487 --> 01:29:25,267
+o durumda hiç 30 dakikayı beklemeden seni 10 dakikada bu sessionin bitmiştir.
+
+499
+01:29:25,908 --> 01:29:43,908
+yani şu, diyelim ki 30 dakikayı başlattınız ama daha ilk sayfada 10 dakikadan fazla zaman harcıyorsunuz. O durumda ne yapıyor? Geriye kalan 20 dakikayı beklemeden hemen sesini bitiriyor, bir sonraki sesini başlatıyor. Bu yöntem.
+
+500
+01:29:43,908 --> 01:29:58,167
+Yani bir totaldeki bir session'ın süresi 30 dakikayı geçemez ve bir session süresinde de bir sayfa için harcanan zaman 10 dakikayı geçemez. Bu bir zamansal sezgisel yaklaşım.
+
+501
+01:29:58,167 --> 01:30:03,147
+buna dayalı olarak log dosyasındaki sessionları tespit ediyor.
+
+502
+01:30:03,147 --> 01:30:08,088
+Şimdi bir de gezme davranışı açısından sezgisel yaklaşım var.
+
+503
+01:30:08,227 --> 01:30:14,567
+Burada da şimdi biz dedik ya bir HTTP request içerisinde bir referral kısmı var.
+
+504
+01:30:14,747 --> 01:30:24,107
+Yani bu sayfaya get request'i yapılmış olan sayfaya hangi sayfadan geldiğimizi belirten link, referral.
+
+505
+01:30:24,107 --> 01:30:31,967
+şimdi eğer bir HTTP request içerisinde referral sayfa yoksa bu şu anlama gelebilir.
+
+506
+01:30:32,707 --> 01:30:39,107
+Kullanıcı gitmiş browser'ın textbox alanına gitmiş type etmiş.
+
+507
+01:30:39,247 --> 01:30:41,647
+Yani hangi URL'e gitmek istediğini type etmiş.
+
+508
+01:30:41,647 --> 01:30:48,927
+Şimdi ancak böyle durumda referral URL adres bölümü boş olur.
+
+509
+01:30:49,047 --> 01:30:53,467
+Çünkü kullanıcı oraya herhangi bir linke tıklayarak gelmemiş.
+
+510
+01:30:53,467 --> 01:31:09,147
+direkt gitmiş, browserda ilk defa o sayfanın URL'ini yazmış. Şimdi durum böyle olunca o durumda ilk defa geldiği sayfayı tespit ettiğimiz için biz diyoruz ki session burada başlayacaktır.
+
+511
+01:31:09,147 --> 01:31:20,847
+ve ondan sonra bir sonra referral adresi olmayan ikinci bir HTTP request'e kadar geçen bütün aktiviteleri yine session diyoruz.
+
+512
+01:31:21,787 --> 01:31:24,607
+Şimdi bunları örnek üzerinde anlatınca daha iyi olacak.
+
+513
+01:31:27,027 --> 01:31:31,628
+Burada session tespit etmek için mesela bir tane oyuncak örnek var.
+
+514
+01:31:32,827 --> 01:31:34,947
+Burada bir kullanıcı var, bir kullanıcı.
+
+515
+01:31:35,047 --> 01:31:38,628
+Bu kullanıcının ID'sini ben cookie ID'den de tespit edebilirim.
+
+516
+01:31:38,628 --> 01:31:49,807
+ya da user ID, agent birleşiminden de tespit edebilirim. Ama burada bir kullanıcı var. Kullanıcının dikkat ederseniz 001'de aktivitesi başlamış.
+
+517
+01:31:50,387 --> 01:31:59,027
+Zaman tabanlı eğer ben yaklaşımı uygulayacak olursam ne yapmam gerekli? Buna 30 dakika ekleyeceğim. Şuralarda bir yer.
+
+518
+01:31:59,027 --> 01:32:06,307
+30 dakikalık zaman içerisine giren bütün aktiviteler bir tane session olmuş oldu. Şu bir tane session.
+
+519
+01:32:06,307 --> 01:32:24,327
+ondan sonra bir sonraki zamana gideceğim. Bir sonraki zaman ne oldu? 1.15 oldu. Yine 1.15'den başlayarak 30 dakika ekleyeceğim. O zamana kadar ki zaman aralığı içerisindeki bütün veriler de burada gözüküyor arkadaşlar.
+
+520
+01:32:24,327 --> 01:32:50,547
+ok. Dolayısıyla ne yapmış oldum? İki tane session belirlemiş oldum. Peki bunu navigation oriented yapsaydım yani gezme davranışı tabanlı yapsaydım mantık neydi? Öncelikle referral adresi olmayan birinci kaydı bu. Buradan başlayarak bir sonraki referral adresi olmayan bir sonraki kayda kadarki bütün aktiviteler aynı session içerisindedir.
+
+521
+01:32:50,547 --> 01:33:04,408
+yine bir sonraki referral olmayan kaydı bu. Bundan sonra bir sonraki referral olmayan kayda kadarki bütün aktiviten ayrı seçim içerisindedir. Bu da navigation oriented terroristik.
+
+522
+01:33:05,367 --> 01:33:07,447
+Hocam bir şey sorabilir miyim orada?
+
+523
+01:33:08,447 --> 01:33:09,008
+Tabii ki.
+
+524
+01:33:10,008 --> 01:33:18,268
+Bir önceki slide'a gelebilir misiniz [öğrenci]? Orada time 0.25'den 1.15'e kadar ki o süreyi kim tutuyor? Nasıl tutuluyor?
+
+525
+01:33:18,268 --> 01:33:21,327
+şuradan çıkartıyoruz.
+
+526
+01:33:24,979 --> 01:33:29,819
+Dikkat edersen her gelen HTTP request içerisinde zaman bilgisi de var.
+
+527
+01:33:30,979 --> 01:33:32,199
+Anladım hocam.
+
+528
+01:33:33,039 --> 01:33:34,119
+Yani ben ne yapıyorum?
+
+529
+01:33:34,639 --> 01:33:38,459
+Şuradaki datayı şuna çevirmişim.
+
+530
+01:33:40,659 --> 01:33:42,139
+Şuna çevirmişim.
+
+531
+01:33:42,219 --> 01:33:43,839
+Oradaki zaman bilgisini almışım.
+
+532
+01:33:43,959 --> 01:33:45,299
+IP bilgisini almışım.
+
+533
+01:33:46,080 --> 01:33:48,259
+GET ile gitmek istediği request'i almışım.
+
+534
+01:33:48,379 --> 01:33:49,660
+Referral bilgisini almışım.
+
+535
+01:33:50,419 --> 01:33:52,439
+Tamam hocam teşekkür ederim.
+
+536
+01:33:52,439 --> 01:34:06,779
+Şimdi arkadaşlar az önce ben session identification'ın hem zaman oriented yani time oriented hem navigation oriented nasıl yapılabileceğini gösterdim örnek üzerinde.
+
+537
+01:34:07,679 --> 01:34:12,319
+Şimdi de user identification'ın nasıl yapılabileceğini göstereceğim.
+
+538
+01:34:12,319 --> 01:34:19,340
+Şimdi user identification için bir tane yöntem söylemiştim zaten cookie.
+
+539
+01:34:19,340 --> 01:34:29,380
+Yani browser'a eğer ben engel koymamışsam browser girmiş olduğu sayfa için bir tane cookie'yi götürüyor benim lokaldeki bir folder'a bırakıyor.
+
+540
+01:34:30,859 --> 01:34:35,459
+Cookie'yi ben sahipsem bana bunun avantajı nedir?
+
+541
+01:34:35,880 --> 01:34:40,880
+Eğer sayfaya tekrar gelen kullanıcılar varsa ben bunları cookie ID ile takip edebilirim.
+
+542
+01:34:40,959 --> 01:34:46,759
+Çünkü her gelen HTTP request içerisinde mutlaka cookie ID oluyor eğer karşı tarafta cookie varsa.
+
+543
+01:34:49,340 --> 01:34:57,380
+Şimdi kullanıcıyı identify etmek için, yani tekrar gelen kullanıcının kim olduğunu tespit etmek için güzel bir yöntem.
+
+544
+01:34:58,299 --> 01:34:59,640
+Peki başka ne yöntem var?
+
+545
+01:35:00,280 --> 01:35:01,359
+Registration değil mi?
+
+546
+01:35:01,920 --> 01:35:07,619
+Kullanıcı eğer login olursa, o durumda ben kullanıcının kim olduğunu takip edebilirim tabii ki.
+
+547
+01:35:09,219 --> 01:35:10,619
+Okey, bu diğer bir yöntem.
+
+548
+01:35:10,920 --> 01:35:17,439
+Bir diğer yöntem, kullanıcının ortamında ben bir tane software agent çalıştırıyorum.
+
+549
+01:35:59,280 --> 01:36:17,280
+Eğer bu şekilde yapıyorsam yani bir software agent çalıştırıyor isam bu durumda da ben sayfadaki kullanıcıyı çok iyi bir şekilde identify edebilirim. Yani tekrar gelen kullanıcıyı identify edebilirim.
+
+550
+01:36:47,280 --> 01:36:57,200
+Mesela telefon üzerinde e-mail adresi ise bilgisayar üzerinde MAC adresi. Bu adresleri alaraktan kullanıcıyı unik olarak identify edebilirler.
+
+551
+01:36:58,500 --> 01:37:02,360
+Peki başka ne kullanabilirim user'a identify etmek için?
+
+552
+01:37:02,359 --> 01:37:08,239
+Eğer Embedded Session ID söz konusuysa yani Embedded Session ID.
+
+553
+01:37:09,108 --> 01:37:22,488
+ilk başta session'ı oluşturdu kullanıcı. Ben buna bir tane session ID'yi gönderdim ve bundan sonra bu uygulama bütün göndermiş olduğu HTTP request'lerde embedded session ID'yi gönderiyor.
+
+554
+01:37:22,488 --> 01:37:38,687
+Bu durumda aynı session içerisindeki bütün hareketlerini kullanıcının ben takip edebilirim. Ama neyi takip edemem? Kullanıcı bir sonraki session'da geldiği zaman bunun kim olduğunu takip edemem.
+
+555
+01:37:38,687 --> 01:37:56,188
+yani embedded session ID sadece aynı session içerisindeki kullanıcıyı takip etmek için. Bir diğer nasıl takip edebilirim kullanıcıyı? IP adresi ve agent. Bunu az önce konuşmuştuk. IP adresi ve agent'ı concunate edip ben takip edebilirim.
+
+556
+01:37:56,187 --> 01:38:15,567
+Ama bunun mesela dezavantajı var. Nedir dezavantajı? Eğer IP adresi şeyse, dinamik IP ise o durumda unique IP yaratmak çok zor. Embedded session ID'nin de ilk dezavantajı var. Az önce söyledim. Tekrar gelen kullanıcıyı tespit edemez.
+
+557
+01:38:15,567 --> 01:38:23,648
+registration'ın yani login olmayla kullanıcıyı identify etmenin dezavantajı var.
+
+558
+01:38:23,887 --> 01:38:29,408
+Çok sayıda insan hesabı olmasına rağmen login olmadan ziyaret ediyor.
+
+559
+01:38:29,408 --> 01:38:34,048
+Yani hepsi bu araya gidiyorsun ama login olmuyorsun.
+
+560
+01:38:34,227 --> 01:38:35,328
+Login ne zaman oluyorsun?
+
+561
+01:38:35,548 --> 01:38:38,767
+Ta ki karar verdin, parayı ödeyeceksin o zaman login oluyorsun.
+
+562
+01:38:38,767 --> 01:38:53,407
+Cookie'nin dezavantajı, kullanıcılar Cookie özelliğini turn off edebiliyorlar, kapatabiliyorlar, istemeyebiliyorlar.
+
+563
+01:38:53,407 --> 01:39:05,787
+Yine Software Agent yüklenmesi olayını, kimi kullanıcı her bir uygulamaya ait olan yazılımı ne telefonuna ne bilgisayarına yüklemek istemeyebiliyor.
+
+564
+01:39:05,788 --> 01:39:24,488
+Bunları browser üzerinden kullanmak isteyebiliyor. Şimdi bir de oyuncak örnek üzerinde user identification yapalım. Ama bu user identification yaparken de şu yöntemi kullanacağım. Yani IP address ve agent ikilisini conconnect edeceğim.
+
+565
+01:39:24,487 --> 01:39:43,807
+şimdi ne yapmışım? Şöylesi bir data vermişim. Burada user 1'i identify edeceğim. Dikkat edin. Mesela IP adres 1234 olmak kaydıyla Agent Internet Explorer 5 ve Windows 2000 işletim sistemi üzerinde çalışıyor.
+
+566
+01:39:43,807 --> 01:40:11,927
+bunu concunate etmişim. Bundan bakın işte şu var. Şurada bir tane var. Şurada bir tane var. Şunlar iki tane. Şunlardan üç tane var. Bunları birleştirince user 1'in aktiviteleri çıkmış. 2, 3, 4, 5'i birleştirmişim. Bir de Internet Explorer 6 Windows XP Security Package 1. Bunu birleştirmişim. Bunları birleştirince user 2 çıkmış.
+
+567
+01:40:11,927 --> 01:40:26,327
+Sonra user için de bulmuşum. Yani ne yapmış oldum? User identification'ı yaparken bu sefer de IP adresi de agent'ı concunate ederek user'ları tespit etmiş oldum.
+
+568
+01:40:30,355 --> 01:40:47,055
+Bir diğer konumuz page view. Buradaki şemadan bütün buraya gelmiştik. Şuradaki data cleaning'i konuştuk. User session identification'i konuştuk. Page view identification'a bakalım.
+
+569
+01:40:47,055 --> 01:40:59,255
+PatchView Identification demiştik ki bir sayfayı siz görüntülemek istiyorsunuz ama browser'a o sayfanın linkini veriyorsunuz ya da bir linke tıklıyorsunuz browser'da.
+
+570
+01:40:59,855 --> 01:41:06,815
+Browser o sayfayı görüntülemek için geri planlı 4-5 tane farklı obje için HTTP request atıyor.
+
+571
+01:41:08,576 --> 01:41:16,795
+Dolayısıyla hani log dosyasına baktığınız zaman bir tane sayfa için belki çok sayıda request görüyorsunuz.
+
+572
+01:41:16,795 --> 01:41:23,216
+Dolayısıyla o bütün request'lerin tek bir page view'e ait olduğunu tespit etmeniz gerekiyor.
+
+573
+01:41:24,475 --> 01:41:32,355
+Bir diğer data preparation kısmındaki önemli konu path completion konusu.
+
+574
+01:41:33,015 --> 01:41:38,735
+Şimdi path completion konusuna bakınca proxy cache'i hatırlamamız lazım.
+
+575
+01:41:38,855 --> 01:41:39,835
+Proxy site cache.
+
+576
+01:41:40,635 --> 01:41:45,735
+Dedik ki işte bir sayfanın ana sayfasına gittik sonra bir takım sayfaları dolaştık.
+
+577
+01:41:45,735 --> 01:41:47,355
+tekrardan ana sayfaya gidiyoruz.
+
+578
+01:41:47,995 --> 01:41:49,915
+İşte daha önceden request edilmiş ve
+
+579
+01:41:49,915 --> 01:41:51,555
+cache'e alınmış sayfaları
+
+580
+01:41:51,555 --> 01:41:54,295
+tekrardan request etmişsek
+
+581
+01:41:54,295 --> 01:41:55,695
+bu request sunucuya
+
+582
+01:41:55,695 --> 01:41:57,875
+ulaşmıyor arkadaşlar. Bu request
+
+583
+01:41:57,875 --> 01:41:59,855
+proxy cache tarafından karşılanıyor.
+
+584
+01:41:59,935 --> 01:42:01,255
+Burada mesela bir örnek var.
+
+585
+01:42:02,275 --> 01:42:04,015
+Normalde kullanıcı şunları yapmış.
+
+586
+01:42:04,655 --> 01:42:05,716
+A'dan B'ye gitmiş.
+
+587
+01:42:05,835 --> 01:42:08,015
+B'den D'ye gitmiş. D'den E'ye
+
+588
+01:42:08,015 --> 01:42:09,915
+gitmiş. Sonra E'den D'ye dönmüş.
+
+589
+01:42:10,835 --> 01:42:11,995
+Sonra bu sefer D'den
+
+590
+01:42:11,995 --> 01:42:13,895
+B'ye dönmüş. B'den de
+
+591
+01:42:13,896 --> 01:42:15,156
+C'ye gitmiş. Yani
+
+592
+01:42:15,156 --> 01:42:17,955
+şunları yapmış. A'dan B'ye
+
+593
+01:42:17,955 --> 01:42:19,116
+B'den D'ye
+
+594
+01:42:19,116 --> 01:42:22,095
+D'den E'ye, E'den D'ye dönmüş
+
+595
+01:42:22,095 --> 01:42:23,836
+D'den B'ye dönmüş
+
+596
+01:42:23,836 --> 01:42:25,095
+ondan sonra C'ye gitmiş.
+
+597
+01:42:26,476 --> 01:42:26,815
+Ama
+
+598
+01:42:26,815 --> 01:42:29,735
+sunucudaki blog dosyasına bakınca
+
+599
+01:42:29,735 --> 01:42:31,736
+şöyle bir şey görüyorsunuz. Şimdi
+
+600
+01:42:31,736 --> 01:42:33,756
+ilk başta A'ya gitmiş
+
+601
+01:42:33,756 --> 01:42:35,156
+hatta referörü yok. Yani
+
+602
+01:42:35,156 --> 01:42:37,555
+browser'ın
+
+603
+01:42:37,555 --> 01:42:39,576
+textbox kısmına belli ki
+
+604
+01:42:39,576 --> 01:42:41,135
+gitmiş A'nın yöreni yazmış.
+
+605
+01:42:42,096 --> 01:42:43,676
+A'dan B'ye gitmiş çok güzel.
+
+606
+01:42:43,895 --> 01:42:47,235
+B'den D'ye gitmiş bunu da görebiliyoruz.
+
+607
+01:42:47,755 --> 01:42:50,175
+D'den E'ye gitmiş bunu da görebiliyoruz.
+
+608
+01:42:50,675 --> 01:42:55,275
+Ama bakın ondan sonra E'den D'ye gitme olayını burada göremiyoruz.
+
+609
+01:42:56,215 --> 01:42:59,375
+Ama bakın yine D'den B'ye gitme olayını göremiyoruz.
+
+610
+01:42:59,515 --> 01:43:07,715
+Çünkü şurada iki tane entry proxy cache tarafından sağlandığı için sunucu tarafına düşmemiş.
+
+611
+01:43:08,415 --> 01:43:11,175
+Ama B'den C'ye gittiğini görebiliyoruz.
+
+612
+01:43:11,175 --> 01:43:13,595
+B'den C'ye gittiğini görebiliyoruz.
+
+613
+01:43:13,595 --> 01:43:27,835
+Demek ki biz missing referanslar olabilir. Proxy caching'den dolayı, proxy site caching'den dolayı bizim bu missing referansları doldurmamız gerekiyor. Bu da pet completion az önce söyledim.
+
+614
+01:43:27,835 --> 01:43:38,615
+şimdi bir sayfa üzerinde arkadaşlar tıklama verileri var bir de eventler var tamam mı?
+
+615
+01:43:38,615 --> 01:43:43,675
+bu tıklama verilerine biz e-commerce mesela clickstream datası diyoruz
+
+616
+01:43:43,675 --> 01:43:49,275
+bir de bu clickstream datalarının bir araya gelmesinden oluşan eventler var
+
+617
+01:43:49,275 --> 01:43:50,955
+mesela ne tip eventler olabilir?
+
+618
+01:43:52,016 --> 01:43:54,095
+mesela product view eventi olabilir
+
+619
+01:43:54,095 --> 01:44:10,235
+Siz bir sayfa üzerinde bir tane ürünü görüntülüyorsunuz mesela. Bu bir resim olabilir, metin olabilir, link olabilir. Bunu görüntülüyorsunuz. Bu mesela bir event.
+
+620
+01:44:10,235 --> 01:44:27,475
+Bir tane ürünle ilgili detay bilgi almak için ürüne basıyorsunuz.
+
+621
+01:44:27,475 --> 01:44:29,535
+Click through eventine dönüşüyor.
+
+622
+01:44:30,292 --> 01:44:49,151
+ya da sizin alışveriş sepetinizde bir değişiklik olursa bir şey eklenmesi ya da çıkartılması ya da quantity'nin sayının değiştirilmesi söz konusu olursa bu da mesela bir event arkadaşlar.
+
+623
+01:44:50,251 --> 01:44:56,391
+Bir ürün aldığınızda ya da bir ürün için fiyat önerisi yaptığınızda bunların hepsi birer event.
+
+624
+01:44:56,391 --> 01:45:23,731
+event. Yani demek ki ne yapıyoruz? Biz bir sayfa içerisinde müşterinin, kullanıcıların ne yaptığını modelleyebilmek için o sayfa üzerinde ne tip eventler vardır? Öncelikle buna bir çalışmamız gerekiyor. Bunları kategorize etmemiz gerekiyor. Her bir eventi tanımlamamız gerekiyor. Bir eventin event olabilmesi için hangi tıklamalar veya tıklama zincirlerinin oluşması gerekiyor? Buna bakmamız gerekiyor.
+
+625
+01:45:23,731 --> 01:45:44,372
+bir event tek bir tıklamadan oluşabileceği gibi birden fazla tıklamanın bir araya gelmesiyle de oluşabilir. Bu durumda ben ne yapıyorum? Öncelikle eventleri tanımlıyorum. Eventleri tanımlayabilirsem bu durumda ben buradan yola çıkarak bu eventlerle ilgili örüntüleri de tespit edebilirim.
+
+626
+01:45:44,372 --> 01:45:52,532
+Şimdi burada bu web usage mining prosesi yine bir başka bakış açısıyla anlatmış
+
+627
+01:45:52,532 --> 01:46:03,892
+HAM kullanıcı datası, işte log dosyaları, application dosyaları, CRM verisi, site yapısı
+
+628
+01:46:03,892 --> 01:46:10,472
+Bunların hepsi üzerinde ne yapıyoruz? Pre-processing yapıp artık pre-process clickstream data oluşturuyoruz
+
+629
+01:46:10,472 --> 01:46:39,851
+bu pre-process clickstream data üzerinde makine öğrenmesi algoritmaları çalıştırıyoruz ve bunun sonucunda model oluşturuyoruz, istatistiksel model oluşturuyoruz, kurallar oluşturuyoruz ve bunlar üzerinde de pattern analizi yaparaktan yani işimize yarayan modelleri kullanmak, işimize yaramayan modelleri atmak ya da işte işimize yaramayan modelin parçaları söz konusuysa
+
+630
+01:46:39,851 --> 01:46:52,971
+onları çıkarmak yoluyla pattern analizi tamamlıyoruz ve en sonunda ortaya bizim için anlamlı olabilecek kural setleri, örüntüler ve istatistiksel bilgiler ortaya çıkıyor.
+
+631
+01:46:53,211 --> 01:46:54,991
+Web Yüzüş Miley bu demek arkadaşlar.
+
+632
+01:46:58,131 --> 01:47:00,211
+Mesela buradaki örneğe bakın.
+
+633
+01:47:00,331 --> 01:47:07,232
+Burada işte şuradaki log dosyası verilerinin milyonlarca olduğunu düşünün.
+
+634
+01:47:07,232 --> 01:47:27,232
+hani böylesi bir veriden kullanıcının ne yaptığını anlamak zor. Özellikle milyonlarca veri içerisindeyse bu. Ama burada mesela bir detaylı bir inceleme oyuncak örnek üzerinde mesela yapalım. Hani buraya baktığınız zaman öncelikle search by location yapmış.
+
+635
+01:47:27,232 --> 01:47:46,752
+belli bir location vermiş, bir search yapmış, sonra ortaya çıkan sonuçlar içerisinden sıralandırma yapmış, hem location hem de price'a dayalı olarak sıralandırma yapmış, en sonunda da o karşısına çıkan bir tane otelin görüntülenmesini yapmış.
+
+636
+01:47:46,751 --> 01:48:00,711
+Bakın dikkat edin buradaki gerçekleşmiş olan olayı HTTP request'lerden alıp bu şekilde anlaşılabilir bir formata dönüştürmüştür. Bizim de aslında yapmaya çalıştığımız bu.
+
+637
+01:48:08,340 --> 01:48:29,520
+Burada bir e-commerce dünyasından bir data analizi, workflow'u nasıl oluşur? Onu göstermiş web usage mining açısından. Buraya bakacak olursanız, elimde site var, bunun bir kontenti var. Bu kontent analizi gerçekleştiren bir tane modülüm var.
+
+638
+01:48:29,520 --> 01:48:53,780
+Bu kontent analizi gerçekleştiren modülüm aynı zamanda sunucu log dosyaları, application log dosyalarını da kendine input olarak alıyor. Bu kontent analizi sonucunda çıkan outputları data sessionization ve data cleaning modülüne veriyoruz.
+
+639
+01:48:53,779 --> 01:49:16,340
+bir de bu web sunucu log dosyaları üzerinde data integration modülü hem CRM datasından gelen veriler hem de web application server'dan gelen veriler hem de sitenin yapısından gelen verileri kullanaraktan bunları entegre ediyor ve üzerinde çalışılması için bir data martı artıyor.
+
+640
+01:49:16,340 --> 01:49:39,780
+Yani user transaction database'e dönüştürüyor ve bir datamart atıyor. Ben bu datamart üzerinde pattern analizi gerçekleştirebilirim standart makine algoritmalarıyla. Yine aynı şekilde OLAP analiziyle bu datamart üzerinde bir takım veri madenciliği analizleri gerçekleştirebilirim.
+
+641
+01:49:46,323 --> 01:49:46,683
+ok?
+
+642
+01:49:55,091 --> 01:50:20,091
+Burada web usage mining datası üzerinde gerçekleştirilebilecek farklı tipte uygulamalar var. Mesela bir tanesi frequent item seti tespit edebilirim. Frequent item setinin ne olduğunu hatırlayın. Özellikle birliktelik kurallarını çıkartırken birlikte tekrar eden, çok sayıda popüler olarak tekrar eden ürünleri tespit ediyorduk.
+
+643
+01:50:20,091 --> 01:50:37,591
+burada da bunu gerçekleştirmek istemiş. Yani işte bir sayfa, elektronik ticari sayfası, bu elektronik ticari sayfasında birlikte satılan ürünleri belirli bir support değerine göre tespit etmek istemiş.
+
+644
+01:50:39,731 --> 01:50:46,191
+Association Rule, eğer ben birliktelikleri tespit edebilirsem bu birliktelikleri kurallara da dönüştürebilirim.
+
+645
+01:50:46,191 --> 01:51:11,631
+kurallara dönüştürdüğüm zaman her bir kuralın güvenilirliği de olacaktır tabii ki. Yani confidence değeri de olacaktır. Association rule ile kastetmeye çalıştığımız nedir? İşte bir A-B birlikteliğini yakalamışsam bir kullanıcı A'yı almışsa işte şu olasılıkla B'yi de alacaktır gibisinden kurallar çıkartmak istiyorum.
+
+646
+01:51:11,632 --> 01:51:22,051
+Bir diğer bizim bu veri seti üzerinde yaptığımız sequential pattern mailing. Burada da sırlı eylem dizilerini tespit etmek istiyorum.
+
+647
+01:51:22,051 --> 01:51:36,151
+Bir öğrenci A oyununu oynamışsa %50-60 ihtimalle B oyununu da oynayacaktır gibisinden patternler çıkartmak istiyorum. Kollektif müşteri verileri üzerinden.
+
+648
+01:51:36,151 --> 01:51:50,312
+yine clustering yapmak istiyorum yani unsupervised learning algoritmalarını çalıştırabilirim. Burada da customer'ların davranışlarına göre segmentasyonunu yapabilirim.
+
+649
+01:51:50,312 --> 01:52:01,431
+Aynı şekilde sayfaların benim sonuçlarımda çıkan sayfaların ya da ürünlerin kategorizasyonunu yapabilirim.
+
+650
+01:52:01,431 --> 01:52:22,271
+diğer bir kullanacağım alan classification. Burada da ben ne yapıyorum? Bir tane model eğitiyorum. Bu eğitmiş olduğum modeli kullanarak da ne yapıyorum? Bir tane ürünün hangi grubun parçası olduğunu tahmin etmeye çalışıyorum.
+
+651
+01:52:22,271 --> 01:52:36,111
+Burada farklı tipteki web usage mining uygulamalarının hangi konulara dağıldığını gösteriyor.
+
+652
+01:52:36,111 --> 01:52:43,971
+Mesela card fraud detection bu classification için kullanılan, classification'ın kullanıldığı bir problem.
+
+653
+01:52:44,791 --> 01:52:50,131
+Characterization of visitors yine classification'ın kullanıldığı bir problem.
+
+654
+01:52:50,131 --> 01:53:04,471
+Mesela discovery of visitor groups with common behavior bu tam anlamıyla clustering problemi. Discovery of visitor groups with common properties and interests bu da tam anlamıyla bir clustering problemi.
+
+655
+01:53:04,471 --> 01:53:21,251
+Yine discovery of associated events or application objects. Bu da yine association rule mining problemi. Prediction of next event. Bu da yine sequential pattern mining eventi.
+
+656
+01:53:29,140 --> 01:53:49,099
+Bugün web usage mining'de kullanılan bazı teknikleri konuşmuş olduk arkadaşlar. Hani burada özellikle sessionization, user ID, identification bunları iyi öğrenmenizi istiyorum. Bunlar karşınıza çıkabilir.
+
+657
+01:53:49,099 --> 01:54:00,859
+ondan sonra yine farklı tipteki tekniklerin web usage miningde ne amaçla kullanıldığını biliyor olmanız gerekiyor.
+
+658
+01:54:06,996 --> 01:54:26,496
+Evet, benim bugün için dersi anlatacaklarım bu kadar arkadaşlar. Şimdi bu cumartesi günü sizlerle konuştuk. Bu cumartesi günü sizlerle programımız var. Saat 9'da projelerinize beraber bakacağız.
+
+659
+01:54:26,496 --> 01:54:45,396
+ben tekrardan bunu şimdi hatırlatmış olayım. Yine e-mail gönderip ayrıca da hatırlatacağım ama siz e-mail gelse gelmese her ay kâlde, cumart saat 9'da benim göndereceğim zoom link adresi üzerinden benimle buluşmanız gerektiğini lütfen bilin.
+
+660
+01:54:46,315 --> 01:54:51,115
+Projelerinizin demosunu göstereceksiniz, projelerinizin kodlarını paylaşacaksınız benimle.
+
+661
+01:54:53,076 --> 01:54:54,695
+Sorusu olan var mıdır?
+
+662
+01:54:54,696 --> 01:54:59,256
+Hocam ortalama olarak bir kişinin ne kadarlık bir demonstrasi olmalı?
+
+663
+01:55:01,836 --> 01:55:04,975
+Yani bunu en fazla 10 dakika diye düşünüyorum.
+
+664
+01:55:06,056 --> 01:55:08,415
+Ama tabii ki sayımız az.
+
+665
+01:55:09,415 --> 01:55:11,756
+Hani bu biraz daha uzun sürebilir.
+
+666
+01:55:11,896 --> 01:55:14,576
+Bana PowerPoint slide'ı falan hazırlamanıza gerek yok.
+
+667
+01:55:15,576 --> 01:55:19,116
+Sadece kodunuzu detaylı olarak göstereceksiniz.
+
+668
+01:55:19,116 --> 01:55:21,156
+Ben kodlarınızı açtıracağım.
+
+669
+01:55:21,436 --> 01:55:23,315
+Neyi nasıl yaptığınızı anlatacaksınız.
+
+670
+01:55:23,315 --> 01:55:40,695
+uygulamanızın çalışmasını anlatacaksınız. Uygulamanızın bir de readme dosyası olacak. Ben bu uygulamayı kendi bilgisayarımda kurup sizden bağımsız şekilde çalıştırmak istesem hangi adımları yapmam lazım, nasıl çalıştırmam lazım onu da belirtiyor olmanızı istiyorum.
+
+671
+01:55:42,076 --> 01:55:43,635
+Tamamdır hocam. Teşekkürler.
+
+672
+01:55:45,015 --> 01:55:49,595
+Rica ederim arkadaşlar. Şimdiden başarılar dilerim. Yine sorunuz olursa hafta için.
+
+673
+01:55:49,595 --> 01:55:50,756
+Sosu'dan sorun.
+
+674
+01:55:52,076 --> 01:55:53,295
+Fokan senin soru var mı?
+
+675
+01:55:53,576 --> 01:55:55,255
+Yok hocam, teşekkür etmek istemiştim.
+
+676
+01:55:56,635 --> 01:56:00,375
+Ben teşekkür ederim arkadaşlar. İyi günler, iyi dersler diliyorum.
+
+677
+01:56:00,735 --> 01:56:01,415
+İyi günler.
+
+678
+01:56:02,555 --> 01:56:03,555
+Hoşçakalın hocam.
+
+679
+01:56:04,455 --> 01:56:05,235
+Görüşmek üzere.

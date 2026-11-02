@@ -1,0 +1,3879 @@
+1
+00:05:03,987 --> 00:05:07,347
+Arkadaşlar, herkese günaydın. Sesini biliyorum. Bir teyit eder misiniz lütfen?
+
+2
+00:05:08,787 --> 00:05:10,547
+Günaydın hocam. Geliyor sesiniz.
+
+3
+00:05:18,228 --> 00:05:20,088
+Ekran paylaşımını yaptım.
+
+4
+00:05:21,367 --> 00:05:22,307
+Herkese günaydın.
+
+5
+00:05:24,927 --> 00:05:26,208
+Gerdin tekrardan hocam.
+
+6
+00:05:26,467 --> 00:05:28,568
+Gülsünüzdür. Şarjı yolundadır.
+
+7
+00:05:29,287 --> 00:05:30,367
+Günaydın hocam.
+
+8
+00:05:30,807 --> 00:05:31,267
+Günaydın.
+
+9
+00:05:32,767 --> 00:05:34,287
+Ben önce bir
+
+10
+00:05:34,287 --> 00:05:38,287
+geçen hafta ders yapamadık.
+
+11
+00:05:38,367 --> 00:05:40,187
+Ondan önceki hafta kaldığımız yeri bir
+
+12
+00:05:40,187 --> 00:05:42,228
+hatırlatıp ondan sonra derse başlamak
+
+13
+00:05:42,228 --> 00:05:42,568
+istiyorum.
+
+14
+00:05:43,707 --> 00:05:46,347
+Biz link analizli chatlerini
+
+15
+00:05:46,347 --> 00:05:48,327
+işliyoruz şu anda.
+
+16
+00:05:49,067 --> 00:05:50,927
+Link Analyze Chapter'ında da
+
+17
+00:05:50,927 --> 00:05:52,707
+öncelikle sosyal
+
+18
+00:05:52,707 --> 00:05:54,588
+network analizi metriklerinden
+
+19
+00:05:54,588 --> 00:05:56,747
+bahsettik. Sosyal
+
+20
+00:05:56,747 --> 00:05:58,768
+network analizi metriklerini de
+
+21
+00:05:58,768 --> 00:06:00,967
+iki başlık altında inceledik.
+
+22
+00:06:01,147 --> 00:06:02,367
+Bunlardan bir tanesi
+
+23
+00:06:02,367 --> 00:06:05,027
+Prestige Centrality
+
+24
+00:06:05,027 --> 00:06:05,887
+metrikleriydi.
+
+25
+00:06:07,268 --> 00:06:08,687
+Bir tanesi Centrality
+
+26
+00:06:08,687 --> 00:06:11,107
+metrikleriydi. İkincisi Prestige metrikleriydi.
+
+27
+00:06:11,687 --> 00:06:12,728
+Centrality metrikleri
+
+28
+00:06:12,728 --> 00:06:14,547
+altında Degree Centrality,
+
+29
+00:06:14,967 --> 00:06:16,047
+Closed Centrality,
+
+30
+00:06:16,347 --> 00:06:21,447
+Between Centrality'ye 3 farklı Centrality metriği inceledik.
+
+31
+00:06:22,228 --> 00:06:28,588
+Farklı örnekler üzerinde bu metriklerin değerlerini nasıl hesapladığımızı gördük.
+
+32
+00:06:29,628 --> 00:06:32,107
+Bir de Prestige metriklerinden bahsettik.
+
+33
+00:06:32,268 --> 00:06:41,168
+Prestige metrikleri de yine bir sosyal network içerisinde bir aktörün önemini belirten bir metrikti.
+
+34
+00:06:41,167 --> 00:06:54,067
+Prestige metriklerini konuşurken de işte degree prestige, proximity prestige bir de rank prestige diye üç tane farklı prestij metriğini konuştuk.
+
+35
+00:06:54,907 --> 00:07:00,907
+Hatırlayacak olursanız centrality metrikleri outlinkler üzerinden hesaplanıyordu.
+
+36
+00:07:01,967 --> 00:07:05,287
+Prestige metrikleri ise inlinkler üzerinden hesaplanıyordu.
+
+37
+00:07:05,287 --> 00:07:14,847
+Outlink neydi? Bir sosyal networkta bir not dış dünyaya, dış notlara vermiş olduğu linklere o not için Outlink diyorduk.
+
+38
+00:07:15,807 --> 00:07:21,927
+Dış dünyadan ya da diğer notlardan almış olduğu linklere ise Inlink diyorduk.
+
+39
+00:07:22,927 --> 00:07:29,088
+Özellikle presizmetriğini konuşurken bir de şunu söyledik.
+
+40
+00:07:29,088 --> 00:07:36,847
+Dedik ki her almış olduğun linkin önemli derecesi aynı değildir.
+
+41
+00:07:37,308 --> 00:07:49,787
+Önemli bir noktam bir link alıyorsan o almış olduğun link üzerinden aldığın önem de daha yüksek olacaktır dedik.
+
+42
+00:07:50,407 --> 00:07:56,308
+Özellikle bu prestij metriklerinden renk prestij bunu yakalayabiliyor diye söyledik.
+
+43
+00:07:56,308 --> 00:08:12,408
+Renk prestiji hesaplarken de şöyle bir formülü konuşmuştuk. Demiştik ki bir not için yani not I için renk prestiji değerini hesapladığımızı düşünelim.
+
+44
+00:08:12,688 --> 00:08:22,968
+Buradaki PR'lerin hepsi renk prestiji ifade ediyor. Not I için düşünelim ve öyle bir düşünelim ki bu sosyal networkta en tane not var.
+
+45
+00:08:22,967 --> 00:08:27,487
+Bu notların her birisinin renk prestij değerlerini yazalım.
+
+46
+00:08:27,887 --> 00:08:35,487
+Ve diyelim ki bu enterne nottan ininci nota link verenlerin başına bir koyalım, link vermeyenlerin başına sıfır koyalım.
+
+47
+00:08:35,807 --> 00:08:42,147
+Böylelikle link veren arkadaşların renk prestij değerlerini ne yapıyorum?
+
+48
+00:08:42,287 --> 00:08:48,447
+Toplayıp bu ininci arkadaşa yansıtıyorum.
+
+49
+00:08:48,448 --> 00:08:55,448
+Yalnız bu başlarına koyacağımız yani olmayanları zaten sıfır koyuyorduk.
+
+50
+00:08:56,367 --> 00:09:12,308
+Olanların başlarına da öyle bir değer koyalım ki buradaki renk prestiji Alping sayısı kadar bu iğnenin renk prestijlerini yansıtsın.
+
+51
+00:09:16,148 --> 00:09:29,207
+Dolayısıyla bu katsayı ya da o nodun dış dünyaya vermiş olduğu link sayısına bir bölü dış dünyaya vermiş olduğu link sayısına bölerek katsayı ile hesaplıyoruz.
+
+52
+00:09:29,207 --> 00:09:41,148
+Eğer link vermişse yani şu en tane nottan, iğnenci nodanın link vermiş olanlar için koyacağımız katsayı belirlerken o zaman da ne diyoruz?
+
+53
+00:09:41,148 --> 00:09:50,848
+bir bölü o link veren nodun dış dünyaya vermiş olduğu link sayısı. Bu şekilde ben bu denklemi kullanaraktan
+
+54
+00:09:50,848 --> 00:10:01,887
+ininci nodun bir sosyal networkdaki ring prestij değerini bulabiliyordum. Şimdi bu aslında bir tane not için eğer ben bunu en tane not için alt alta yazacak olursam
+
+55
+00:10:01,887 --> 00:10:11,587
+aslında bu yapmış olduğum denklemler bir matrix vektör çarpımının sonucunda oluşan denklemler.
+
+56
+00:10:11,587 --> 00:10:29,307
+Yani aslında şurada görmüş olduğumuz denklem matrisi çarpı renk prestij vektörü eşittir renk prestij vektörü şeklindeki bir denklemi siz açık bir şekilde yazacak olursanız
+
+57
+00:10:29,307 --> 00:10:54,627
+bu denklemlere ulaşıyorsunuz. Burada da dedik ki bu A komşuluk matrisi, A komşuluk matrisinin transpozesi olan matris çarpı bir kolon vektörü, bir sütün vektörü, buna renk presici vektörü diyoruz.
+
+58
+00:10:54,627 --> 00:11:20,327
+eşittir. Yine bir sütun vektörü. Bu da yine renk prestij vektörü. Burada ilk konuştuğumuz birinci denkleyin bu tarafındaki renk prestij vektörüne biz sıfırıncı state'deki ya da ne diyelim T anındaki renk prestij vektörü diyeceğiz.
+
+59
+00:11:20,328 --> 00:11:28,608
+şuradaki denklemin sol tarafındaki renk prestij değeri neyse P artı 1 anındaki renk prestij değeri diyeceğiz.
+
+60
+00:11:28,608 --> 00:11:37,748
+Şimdi bu denklemi göstermiştik ve demiştik ki bu denkleme linear algebra da aydın sistem deniyor.
+
+61
+00:11:38,427 --> 00:11:44,187
+Ve bu denklemi çözmek için linear algebra da kullanılan bir yöntem var.
+
+62
+00:11:44,287 --> 00:11:45,547
+Power iteration yöntemi.
+
+63
+00:11:45,547 --> 00:11:53,847
+ve bunu çözdüğümüz zaman buradaki P'nin yani sütün vektörünün değerlerini bulabiliyoruz.
+
+64
+00:11:53,847 --> 00:12:03,327
+Ne zamanki bu sütün vektörünün değerini bulduğumuz zaman zaten o sosyal networkdaki bütün notların renk prestij değerini buluyoruz demek.
+
+65
+00:12:03,327 --> 00:12:25,467
+Burada dikkat etmemiz gereken bu denklemi çözerken sağlanması gereken bir takım koşullar var. Bu koşulları az sonra PageRank konusunu konuşurken konuşacağız.
+
+66
+00:12:25,467 --> 00:12:44,467
+Şimdi az sonra konuşacağımız popülerite tabanlı algoritmalar PageRank ve HITS algoritması tamamıyla bu Renk Prestige metriğinin üzerine kurgulanmış olan algoritmalar.
+
+67
+00:12:45,207 --> 00:12:55,247
+Geçtiğimiz hafta bir de bu sosyal network analizinde konuştuğumuz metriklerin dışında iki tane daha metriğin varlığından bahsetmiştik.
+
+68
+00:12:55,467 --> 00:13:11,907
+bir tanesi co-citation metriydi, diğerisi bibliografik metriydi. Şimdi PageRank ve HITS algoritmalarına geçmeden önce öncelikle bu co-citation ve bibliografik coupling metriklerinden de bahsetmek istiyorum. Bunlar nedir?
+
+69
+00:13:14,035 --> 00:13:36,895
+diyelim ki elimizde bir doküman seti var arkadaşlar. Bu doküman setinin her birisini akademik yayınlardan oluştuğunu düşünün. Yani akademik yayınları nasıl yayınlar? Bunlarda referans bölümleri var. Her bir akademik yayın başka akademik yayınlara ne yapıyor? Referans bölümlerinde bir citation veriyor.
+
+70
+00:13:36,895 --> 00:13:58,875
+Şimdi normalde bu doküman siti içerisinde ben size desem ki birbirine benzer olan, birbirleriyle ilişkili olan dokümanları bulun. Siz ne yaparsınız? Hani bu dokümanların birbirlerine benzerliklerini, TF-IDF skorunu kullanarak bulabilirsiniz. Ve dersiniz ki işte şu oranda, şu dokümanlar birbirine benziyor.
+
+71
+00:13:58,876 --> 00:14:12,896
+Diğer bir yöntem ise içeriğe yani benzerliğe bakmadan sadece citationlara bakaraktan bu paperların aralarındaki ilişkiyi belirleyebilirsiniz.
+
+72
+00:14:13,116 --> 00:14:19,495
+İşte o zamanda bu co-citation ya da bibliografik coupling metriklerini kullanıyoruz.
+
+73
+00:14:20,696 --> 00:14:28,455
+Şimdi öncelikle bizim burada üzerinde çalışacağımız matrise ne matrisi deniyor?
+
+74
+00:14:28,455 --> 00:14:54,815
+Burada bir matriz var. Bu matriz şu anda benim görüntümü büyütecek olursanız ben tahtada söyleyeceğim şeyi çiziyorum. Bir tane matriz düşünün. Bu matriz neye diye ifade edeceğim bu matrize? Bu matrizin satırlarında birden n'e kadar paper var, dökümanların olduğunu düşünün.
+
+75
+00:14:54,815 --> 00:15:10,756
+sütunlarında da birden ne kadar dokümanların olduğunu düşünün. Eğer birinci doküman setinde herhangi bir dokümana şey veriyorsa, citation veriyorsa şuraya bir koyuyorum. Aksi takdirde sıfır koyuyorum.
+
+76
+00:15:10,755 --> 00:15:30,015
+Aynı şekilde bunu diğer bütün dokümanlar için koyuyorum. Yani satırda citation'ı verenler, sütunlarda ise citation'ı alanlar var. İşte buna ben ne matrisi diyorum? Citation matrisi diyorum.
+
+77
+00:15:30,015 --> 00:15:40,035
+Şimdi önceliklerini böylesi bir matriz üzerinden ben bu co-citation metriğini bulacağım
+
+78
+00:15:40,035 --> 00:15:41,735
+Co-citation metriği
+
+79
+00:15:45,779 --> 00:16:03,839
+Şimdi bu cosi-cash'in metriyle benim aslında hesaplamaya çalıştığım iki tane not arasındaki ilişki, yani iki tane doküman arasındaki ilişkiyi hesaplamak istiyorum. Diyelim ki E ve C arasındaki cosi-cash'in değerini hesaplamak istiyorum.
+
+80
+00:16:05,524 --> 00:16:31,103
+Bunu nasıl hesaplarım? Şimdi bunu hesaplarken şu şekilde düşünüyorum. Diyorum ki benim iki tane dokümanım var. Bu dokümanlara beraber citation vermiş bir tane K dokümanı düşünelim. Yani bir tane dokümanın citation bölümünde hem i hem j'ye referans verilmiş.
+
+81
+00:16:31,103 --> 00:16:47,903
+Şimdi eğer böyle bir durum varsa o zaman diyoruz ki bu i ve j co-cited edildikleri için aynı paperda yani beraber cite edildiği için referans verildiği için bunlar arasında bir ilişki olabilir.
+
+82
+00:16:47,903 --> 00:17:00,423
+İ ve J aynı konuda olabilir, birbirleriyle ilişkide olabilir. Çünkü beraber aynı paperda referans verildiği için bunlar mutlaka bir şekilde aynı alanda olan paperlar ki
+
+83
+00:17:00,423 --> 00:17:11,303
+Carl'ın yazarı oturmuş bunları aynı paperda referans vermiş. Buradaki sayı artarsa yani çok sayıda farklı paper aynı şeyi yapacak olursa
+
+84
+00:17:11,303 --> 00:17:18,723
+i ve j'yi referans bölümünde beraber kullanacak olursa i ve j arasındaki ilişki de ne yapacaktır? Artacaktır.
+
+85
+00:17:18,723 --> 00:17:32,163
+Şimdi mesela şunu düşünelim. Şurada şöyle iki tane sütun vektörü çizeceğim. Şunların bir tanesine de i, bir tanesine de j yapacağım.
+
+86
+00:17:32,163 --> 00:17:51,583
+Şimdi şuraya da ben bir tane K koyayım. Tekrar şu anda söylediklerimi benim görüntüme bıkacak olursanız tahtaya çiziyorum. O görüntüyü büyütecek olursanız rahatlıkla tahtayı görebiliyor olmanız gerekiyor.
+
+87
+00:17:52,503 --> 00:17:53,663
+Şimdi burada...
+
+88
+00:17:53,663 --> 00:17:56,123
+Görüntü mü gelmiyor bana? Bir tek bana mı gelmiyor?
+
+89
+00:17:56,123 --> 00:18:13,943
+Şu anda iki tane bağlantım var. Bir tanesi sesimi götürüyor, bir tanesi de görüntümü taşıyor. Zoom'da galeri büyüğe basacak olursan bütün herkesi görebiliyorsun bağlantıda olanları.
+
+90
+00:18:18,836 --> 00:18:19,895
+Ben geldim, tamam.
+
+91
+00:18:20,435 --> 00:18:27,155
+Ondan sonra da oradaki benim görüntümü pin yaparsan bütün ekranına paylaşacaktır.
+
+92
+00:18:31,895 --> 00:18:39,555
+Burada bu i ve j iki tane sütun vektörü arasındaki ilişkiyi tespit etmeye çalışıyorum.
+
+93
+00:18:39,555 --> 00:18:44,055
+Yani diyorum ki iki tane döküman arasındaki cosi temişim metri nedir?
+
+94
+00:18:44,055 --> 00:19:04,435
+Şimdi ne demiştim? Bu iki tane doküman aynı dokümandan link alırsa bu iki doküman arasında bir ilişki vardır demiştim ya. Mesela bir K dokümanı düşünelim. Eğer burada hem bir varsa şurada da bir varsa şu demek. K dokümanı hem İ'ye hem C'ye beraber bir şekilde link vermiş demek.
+
+95
+00:19:04,435 --> 00:19:22,115
+Şimdi bunlardan çok fazla varsa yani çok fazla hem bir i'ye hem j'ye citation vermiş olan notlar varsa bunların aralarındaki ilişki artacak.
+
+96
+00:19:22,115 --> 00:19:30,435
+az sayıda varsa aralarındaki ilişki azalacak. Bir sonraki slide'da bunun da formülünü görüyorsunuz.
+
+97
+00:19:30,435 --> 00:19:44,615
+Bunu yazarken diyoruz ki i ve j arasındaki eğer ben citation, co-citation değerini hesaplamak istiyorsam o zaman bu matris üzerinde şunu yapabilirim.
+
+98
+00:19:49,556 --> 00:20:13,556
+nedir yaptığım? İki tane sütün vektörünün aralarındaki ilişkiyi hesaplamak istediğim notlara ait iki tane sütün vektörünün her bir satır için elemanlarını çarpıyorum. Sonra toplayacağım. Her bir satır için elemanlarını çarpıyorum. Ondan sonra bunların toplamını alıyorum.
+
+99
+00:20:13,556 --> 00:20:40,136
+Bu bana bu iki tane vektör için, iki tane not için cositation değerini veriyor. Bu metrik demek ki iki dökümana aynı anda referans veren dökümanların sayısı fazla olduğu zaman bu metriğin değeri yüksek oluyor. Bu cositation metriği.
+
+100
+00:20:40,135 --> 00:20:47,815
+Şimdi bir de bibliografik coupling metriği var arkadaşlar. Bibliografik coupling metriği de şu.
+
+101
+00:20:50,095 --> 00:20:57,916
+Şimdi biz ne demiştik? Az önce iki tane doküman aynı dokümandan referans alırsa.
+
+102
+00:20:57,916 --> 00:21:09,895
+Şimdi ise bu sefer iki tane farklı doküman var. Bu iki tane farklı doküman aynı dokümana referans veriyor.
+
+103
+00:21:10,136 --> 00:21:13,756
+Bu nasıl bir şey? Şunu silelim.
+
+104
+00:21:25,940 --> 00:21:36,940
+iki tane doküman var. Bir tanesi i, bir tanesi c. Şurada da bir tane doküman var. Şimdi iki tane farklı doküman
+
+105
+00:21:40,756 --> 00:21:49,875
+aynı dokümana referans veriyor. İ, K'ya referans veriyor, C, K'ya referans veriyor. Okey.
+
+106
+00:21:51,815 --> 00:22:07,415
+Böylesi durum çok fazlaysa, yani bu iki tane farklı doküman çok fazla aynı dokümana referans veriyorsa, o zaman diyoruz ki, bu arkadaşlar arasında bir ilişki vardır.
+
+107
+00:22:07,415 --> 00:22:34,296
+bu arkadaşlar arasındaki ilişkiye de şudur. Bunlar sürekli olarak aynı dokümanlara referans veriyorlar. Dolayısıyla bunlar birbiriyle ilişkili olabilir. Hani şey düşünün, hani iki tane paper düşünün. Hani birisi almış aynı paperı İngilizce'den Fransızca'ya çevirmiş. Tamamıyla Fransızca, Döbgürsü'de tamamıyla İngilizce.
+
+108
+00:22:34,295 --> 00:22:39,255
+bunun arasını TF-IDF'i uyguladığınız zaman mesela herhangi bir benzerlik bulmayacaktır.
+
+109
+00:22:39,395 --> 00:22:46,555
+Ama her iki paper da, iki farklı paper, her ikisi de aynı paperlara referans veriyor.
+
+110
+00:22:46,555 --> 00:23:03,335
+Yani bu paperların vermiş oldukları referans sayısı, aynı paperlara vermiş oldukları ortak referans sayısı çok fazla.
+
+111
+00:23:03,336 --> 00:23:16,895
+hani buradan yola çıkaraktan ben şunu diyebilirim bunlar arasında bir ilişki var. Bu bibliografik coupling metriğini de arkadaşlar şu şekilde hesaplıyorum. Tekrardan buraya çiziyorum.
+
+112
+00:23:27,251 --> 00:23:28,111
+şey yapalım.
+
+113
+00:23:29,011 --> 00:23:31,351
+Şuna video krafik takmak diyelim.
+
+114
+00:23:43,284 --> 00:23:54,383
+v, i, j, i eşittir. Birden n'e giderken v, i, k, v, j, k.
+
+115
+00:23:54,383 --> 00:24:12,983
+Şimdi burada da şuradaki yine ekranda gördüğünüz bu satır vektörlerinin her bir elemanını birbirleriyle çarpıyorum ve bu çarpımların toplamlarını alıyorum.
+
+116
+00:24:13,284 --> 00:24:24,484
+Yani her iki vektörde de aynı anda bir olma durumları çok fazla olacak olursa buradaki çarpımların toplumunun değeri yüksek olacaktır değil mi?
+
+117
+00:24:24,484 --> 00:24:34,784
+Bu da neyi bir gösterecektir bana? Bu iki metrik arasındaki bibliografik coupling değerinin yüksek olmasını gösterecektir. Bu da bibliografik coupling metriği.
+
+118
+00:24:34,784 --> 00:24:56,224
+Hani buradaki bu iki metrik önemli metrikler bunu en şey üzerinde ben özellikle matris üzerinde bu şekilde göstermemin sebebi aklınıza kalmasını istiyorum. Yoksa hani formülü ezberlemenize gerek yok. Bunu hatırladığınız zaman bundan zaten formülü kolayca yazabilirsiniz arkadaşlar.
+
+119
+00:25:10,451 --> 00:25:29,851
+Şimdi geçmek istediğim konu bu Renk Prestige üzerine konuştuğumuz popülerite tabanlı Renk Prestige üzerine gelen popülerite tabanlı algoritmalardan PageRank algoritmasını konuşmak istiyorum.
+
+120
+00:25:29,851 --> 00:25:45,852
+PageRank algoritması bizim için önemli çünkü biz web data mining dersinde üzerinde çalıştığımız karmaşık network, karmaşık ağ web grafı.
+
+121
+00:25:47,071 --> 00:25:53,132
+Yani biz sosyal network analizi tekniklerini hangi sosyal network üzerinde kullanmış oluyoruz?
+
+122
+00:25:53,492 --> 00:25:54,571
+Web grafı üzerinde.
+
+123
+00:25:54,571 --> 00:25:59,931
+Peki web grafı nasıl bir sosyal network oluşturuyor benim için?
+
+124
+00:26:02,111 --> 00:26:08,951
+Şu anda gördüğünüz şekilde mesela sosyal network Facebook datası üzerinden oluşmuş.
+
+125
+00:26:09,451 --> 00:26:17,471
+Şurada gördüğünüz network, sosyal network blog dosyalarının birbirine verdikleri linklerden oluşmuş.
+
+126
+00:26:17,471 --> 00:26:29,271
+Yine burada işte başka bir domeyindeki paperların birbirine link vermesinden dolayı oluşmuş bir network var.
+
+127
+00:26:30,231 --> 00:26:45,631
+İnternet biliyorsunuz webin bir alt katmanında yer alan communication network olan internetin de oluşturmuş olduğu bir kompleks network var.
+
+128
+00:26:45,632 --> 00:26:54,892
+Tabii ki orada biz sunucular arasında fiziksel connection'lara bakaraktan bir network oluşturuyoruz.
+
+129
+00:26:55,291 --> 00:27:04,472
+Ama bizim ilgilendiğimiz ise bu internetin üzerinde olan yine application sunucular üzerinde yer alan
+
+130
+00:27:04,472 --> 00:27:10,231
+HTML dokümanlarının birbirine vermiş oldukları linklerden oluşan web graph datası.
+
+131
+00:27:10,231 --> 00:27:31,191
+Yani web datası üzerinde biz oluşan sosyal network üzerinde çalışıyoruz. Burada da her bir nodun içerisinde hyperlinkler var. Hyperlinklerle biz bir nodu bir başka noda link verir hale getirebiliyoruz.
+
+132
+00:27:31,191 --> 00:27:41,591
+Burada da görüyorsunuz hani basit bir işte web sitesi, basit bir web grafı var.
+
+133
+00:27:42,671 --> 00:27:45,551
+İşte her bir sayfanın içerisinde hyperlinkler var.
+
+134
+00:27:45,651 --> 00:27:48,171
+Bir sonraki sayfaya işaret ediyor.
+
+135
+00:27:48,271 --> 00:27:54,091
+Yani burada HTML sayfaları not, hyperlinkler ise linkleri oluşturuyor.
+
+136
+00:27:54,091 --> 00:28:12,672
+Şimdi biz böylesi bir web graph üzerinde notların önem değerini hesaplamak istiyoruz. Bu önem değerini hesaplamak için biz daha önce centrality metriklerini kullanmıştık bir de prestij metriklerini kullanmıştık.
+
+137
+00:28:12,672 --> 00:28:28,371
+Şimdi ise bu önem değerini popülerite tabanlı olarak belirlemek için PageRank metreyini kullanacağız. PageRank'i hesaplamak için kullandığımız algoritma ise PageRank algoritması diyoruz.
+
+138
+00:28:28,371 --> 00:28:42,351
+Şimdi biz daha önce bunu neden yaptığımızı konuşmuştuk. Yani neden popüleriteyi hesaplamak istediğimizi, neden bir nodun önemini hesaplamak istediğimizi belirtmiştik.
+
+139
+00:28:42,351 --> 00:28:52,312
+Biz eğer search işlemi olmasaydı biz web sitelerini browse ederek aramak durumunda kalırdık.
+
+140
+00:28:52,812 --> 00:28:56,091
+Ama onun yerine search gibi bir elimizde olanak var.
+
+141
+00:28:56,331 --> 00:28:58,031
+Web üzerinde search yapabiliyoruz.
+
+142
+00:28:58,431 --> 00:28:59,911
+Search yaparken de ne yapıyoruz?
+
+143
+00:29:00,071 --> 00:29:03,771
+Bir keyword'ü sayfalarla match ettirmeye çalışıyoruz.
+
+144
+00:29:04,531 --> 00:29:22,552
+Şimdi bunu iki türlü yapabilirsiniz. Hani bir TF-IDF similarity, TF-IDF ve benzeri metriklerle similarity tabanlı yapabilirsiniz arkadaşlar. Ama bunu bu şekilde yaptığınız vakit spam'e açık bir search uygulamanız oluyor.
+
+145
+00:29:22,552 --> 00:29:40,972
+Yani sayfalar kendileriyle ilgili olmayan keywordleri kendi sayfalarında kullanacak olurlarsa bu durumda siz sizinle tam olarak ilgili olmayan, güvenilir olmayan sayfaları sonuçlarınızın ilk 10 sonucunda görebilirsiniz
+
+146
+00:29:40,972 --> 00:29:52,372
+Dolayısıyla bu sorunu çözmek için de biz popülerite tabanlı metrikleri kullanaraktan search sonuçlarını sıralandırmak istiyoruz
+
+147
+00:29:52,372 --> 00:30:05,612
+Bunu yaparken de önümüzde hani bizim bunu yaparken hani search yaptığımız zaman elimizi geçen sonuçlarda karşılaştığımız iki tane problemi çözüyoruz.
+
+148
+00:30:05,712 --> 00:30:11,231
+Bir tanesi benim karşıma çıkan sayfalar içerisinde hangi sayfaya güvenmeliyim?
+
+149
+00:30:12,231 --> 00:30:16,031
+Eğer popülerite tabanlı bir skorum varsa bu sorunu çözebiliyorum.
+
+150
+00:30:16,031 --> 00:30:42,031
+Nedir mesela? Diyelim ki işte web data mining keywordlerini girdim search'e. 3 tane keyword girdim. Buna karşılık gelen işte 100 tane sayfa var. Ama bu 100 tane sayfanın bir kısmı üniversite ve Wikipedia sayfalarından geliyor. Bir kısmı ise hiç bilmedik işte kişilerin sayfalarından gelen bilgiler var.
+
+151
+00:30:42,031 --> 00:30:51,051
+sayfalar var. Ben burada isterim ki sonuçlarımda öncelikli olarak Wikipedia ve üniversite sayfalarının öne çıkmasını isterim.
+
+152
+00:30:51,531 --> 00:30:59,491
+Dolayısıyla bana gelen 100 tane sonuç içerisinden bunlar içerisinde güvenebileceğim sayfaları belirlemek istiyorum.
+
+153
+00:30:59,491 --> 00:31:09,591
+Dolayısıyla popülerite tabanlı metrikler bunu sağlıyor arkadaşlar. İkincisi ve bana gelmiş olan bu 100 tane sonucun içerisinden
+
+154
+00:31:09,591 --> 00:31:19,351
+benim istediğim keywordler yani web data mining 3 tane keyword grubuna en iyi meçeden dökümünü da tespit edebilmek isterim.
+
+155
+00:31:19,351 --> 00:31:36,231
+Onu da yine popülerite tabanlı metrikler ne yapıyor? Bu sayfaları popülerite resimlerine göre sıralandırdıkları için ben hem benim keywordüme meçeden hem de yüksek popülerlikte olan sayfayı direkt ilk sonuç olarak gösterebiliyorum.
+
+156
+00:31:36,231 --> 00:31:45,871
+dolayısıyla ben neden sayfaları popülerite tabağlı metrikler kullanarak renk etmek istiyorum?
+
+157
+00:31:45,871 --> 00:31:59,811
+Çünkü web search sonuçlarında güvenilir sayfaları ve search queriesini match eden sayfaları ilk 10 sonuçta gösterebilmek için bunu istiyorum.
+
+158
+00:31:59,811 --> 00:32:23,871
+Bu sayede de ben ne yapıyorum? Webin link structure'ından yararlanarak web üzerindeki notların önem değerini hesaplayabiliyorum. Burada basit bir örnek var şu anda gördüğünüz slide'da. Mavi renkli not çok fazla nottan link almış. Kırmızı renkli not sadece bir nottan link almış.
+
+159
+00:32:23,871 --> 00:32:33,871
+hani burada sadece grafiği görselleştirip baktığınız zaman mavinin daha öneme sahip popüler bir not olduğunu görebiliyorsunuz.
+
+160
+00:32:34,551 --> 00:32:44,871
+Dolayısıyla eğer aradığınız keyword'ün her iki sayfada da olması durumunda biz isteriz ki mavi notu ilk 10 sonuçta gösterelim.
+
+161
+00:32:45,671 --> 00:32:50,951
+Yani kırmızı notla karşılaştırıldığında mavi notu mutlaka ilk 10 sonuçta gösterelim.
+
+162
+00:32:50,951 --> 00:33:04,131
+işte bunu da sağlamak için popülerite tabanlı biz metrikleri kullanıyoruz. Bu popülerite tabanlı metriklerden bir tanesi PageRank. Şimdi PageRank'i konuşacağız. Bir diğeri ise HITS metriği.
+
+163
+00:33:07,635 --> 00:33:07,976
+Okey.
+
+164
+00:33:10,155 --> 00:33:11,795
+Şimdi bu
+
+165
+00:33:11,795 --> 00:33:13,755
+PageRank metriyine
+
+166
+00:33:13,755 --> 00:33:14,855
+bir beraber bakalım.
+
+167
+00:33:16,795 --> 00:33:19,535
+Şimdi PageRank metriği diyor ki
+
+168
+00:33:19,535 --> 00:33:23,375
+bir noda
+
+169
+00:33:23,375 --> 00:33:25,515
+link veren bütün notlar
+
+170
+00:33:25,515 --> 00:33:28,335
+bu noda
+
+171
+00:33:28,335 --> 00:33:29,875
+kendi
+
+172
+00:33:29,875 --> 00:33:31,255
+önem değerini
+
+173
+00:33:31,255 --> 00:33:32,095
+bu noda
+
+174
+00:33:32,095 --> 00:33:35,035
+kendi önem değerlerini
+
+175
+00:33:35,035 --> 00:33:37,195
+aktarıyorlar. Yani
+
+176
+00:33:37,195 --> 00:33:44,455
+Yani PageRank diyor ki eğer bir not çok sayıda nottan link alıyorsa bu not önemli bir nottur.
+
+177
+00:33:45,356 --> 00:33:50,095
+Bu mantık aynı zamanda Rank Prestige mantığında da vardı.
+
+178
+00:33:50,095 --> 00:34:01,036
+O yüzden demiştik ki Rank Prestige PageRank ve his algoritmaları metrikleri Rank Prestige metriğinin üzerine kurgulanmış metrikler.
+
+179
+00:34:02,115 --> 00:34:04,235
+Buradaki örnekte işte iki tane sayfa var.
+
+180
+00:34:04,235 --> 00:34:23,235
+Bir tane Stanford'ın ana sayfası çok sayıda link almış. Bir tane de işte bilinmeyen bir çok kişinin sayfası. O da sadece bir tane link almış. Eğer benim keyword'üm her ikisinde de varsa tabii ki de ben Stanford'ın sayfasını benim sonuçlarımda görmek isterim.
+
+181
+00:34:23,235 --> 00:34:26,095
+istedim. PageRank
+
+182
+00:34:26,095 --> 00:34:27,395
+demek ki bir
+
+183
+00:34:27,395 --> 00:34:29,335
+nodun almış olduğu in-link
+
+184
+00:34:29,335 --> 00:34:31,216
+sayısına bağlı olaraktan o
+
+185
+00:34:31,216 --> 00:34:33,216
+nodun popüleritesine daha
+
+186
+00:34:33,216 --> 00:34:35,455
+yüksek veren bir metrik.
+
+187
+00:34:36,335 --> 00:34:37,356
+Şimdi
+
+188
+00:34:37,356 --> 00:34:39,435
+PageRank aynı zamanda diyor ki
+
+189
+00:34:39,435 --> 00:34:40,316
+arkadaş diyor
+
+190
+00:34:40,316 --> 00:34:42,955
+link veren her
+
+191
+00:34:42,955 --> 00:34:45,095
+nodun önem değeri farklıdır.
+
+192
+00:34:45,576 --> 00:34:47,295
+Dolayısıyla da bir
+
+193
+00:34:47,295 --> 00:34:48,856
+nod bir
+
+194
+00:34:48,856 --> 00:34:50,175
+yüksek
+
+195
+00:34:50,176 --> 00:34:54,635
+PageRank değerine sahip bir nottan sen link alıyorsan
+
+196
+00:34:54,635 --> 00:34:59,796
+dolayısıyla o linkten dolayı senin PageRank değerinde yüksek olacaktır.
+
+197
+00:35:03,055 --> 00:35:05,635
+Şuradaki örnekte daha iyi görüyorsunuz.
+
+198
+00:35:06,036 --> 00:35:11,536
+Burada iki notlar arasında ben PageRank algoritmasını çalıştırmışım
+
+199
+00:35:11,536 --> 00:35:13,716
+ve PageRank metrik değerlerini bulmuşum.
+
+200
+00:35:13,716 --> 00:35:19,716
+Şimdi bakacak olursanız yuvarlakların her birisi farklı büyüklükte.
+
+201
+00:35:19,716 --> 00:35:23,555
+Büyük yuvarlak demek, page rank değeri büyük demek.
+
+202
+00:35:24,596 --> 00:35:33,035
+Burada mavi nodun bütün bu network içerisinde en önemli nod olduğunu görüyorsunuz.
+
+203
+00:35:33,596 --> 00:35:36,255
+Hem en büyük hem de page rank değeri büyük.
+
+204
+00:35:38,335 --> 00:35:45,956
+Bunun en büyük olmasının ana nedeni çok sayıda nodlardan link alıyor olması.
+
+205
+00:35:45,955 --> 00:36:00,175
+Ve bir de şu yanındaki node'a bakalım. Bu yanındaki node da C node. C node'u da en az B node'u kadar büyük bir node ama bir tane link almış.
+
+206
+00:36:00,175 --> 00:36:20,555
+Şimdi PageRank az önce bize ne demişti? Demişti ki eğer almış olduğun linkler kadar senin önem değerin artacaktır ama aynı zamanda sana link veren sayfaların hepsi aynı PageRank değerine sahip değildir.
+
+207
+00:36:20,555 --> 00:36:26,535
+Dolayısıyla sen eğer çok önemli bir nottan link alıyorsan,
+
+208
+00:36:27,055 --> 00:36:32,576
+bu çok önemli notun PageRank değeri sana yansıyacaktır.
+
+209
+00:36:32,915 --> 00:36:34,815
+Burada da bunu görüyorsunuz.
+
+210
+00:36:35,315 --> 00:36:44,635
+C notu sadece bir tane nottan link almış ve link aldığı not bu web graf üzerinde en önemli not.
+
+211
+00:36:44,635 --> 00:36:46,576
+dolayısıyla
+
+212
+00:36:46,576 --> 00:36:49,475
+bir tane link almasına rağmen
+
+213
+00:36:49,475 --> 00:36:51,615
+page rank değeri c'nin de çok yüksek
+
+214
+00:36:51,615 --> 00:36:52,016
+çıkmış
+
+215
+00:36:52,403 --> 00:37:08,183
+Mesela E'yi düşünelim. E nodunun PageRank değeri daha düşük. Aslına bakarsanız E nodu 1, 2, 3, 4 tane farklı nottan link almış. Ama E nodunun link aldığı notların PageRank skorları düşük.
+
+216
+00:37:08,183 --> 00:37:25,863
+dolayısıyla almış olduğu link sayısı C'nin aldığı link sayısına göre daha fazla olmasına rağmen bu linkleri vermiş olan arkadaşların PageRank değerleri düşük olduğu için E'nin de PageRank değeri ne yaptı? Düşük çıktı.
+
+217
+00:37:25,863 --> 00:37:42,764
+demek ki biz PageRank hesaplaması yaparken bir notların almış olduğu linklere bakıyoruz. İkincisi bu linkleri vermiş olan notların PageRank skorlarına bakıyoruz.
+
+218
+00:37:48,307 --> 00:38:02,307
+Şimdi bu şekilde bunu daha da güzel görebileceksiniz. Burada PageRank skoru hesaplarken bir nodun renk değerini nasıl hesapladığınızı görüyorsunuz.
+
+219
+00:38:02,307 --> 00:38:15,307
+Şimdi arkadaşlar, buradaki slide'da bir basit örnek var. J nodunun PageRank değerini beraber hesaplayalım.
+
+220
+00:38:15,307 --> 00:38:42,007
+Bu J notu bu grafikte kırmızı renkte işaretlenmiş not. Şimdi bu kırmızıya iki tane nottan link var. Bir tanesi İ, bir tanesi K. Bu J'nin PageRank değerini bulurken İ'den ve K'dan gelen PageRank değerlerini toplamam gerekiyor.
+
+221
+00:38:42,007 --> 00:38:58,467
+Ama olduğu gibi toplamıyorum. Buradan gelen değerleri bu notların outlink sayısıyla oransal bir şekilde alaraktan topluyorum. Oransal bir şekilde almak ne demek?
+
+222
+00:38:58,467 --> 00:39:06,147
+i'nin kaç tane altınki var? 3 tane altınki var. i'nin PageRank değerini 3'e bölüyorum.
+
+223
+00:39:06,147 --> 00:39:13,367
+artı. k'nın kaç tane altınki var? 4 tane altınki var. k'nın PageRank değerini 4'e bölüyorum.
+
+224
+00:39:14,087 --> 00:39:22,747
+ve bu ikisini topladığım zaman bana j'nin nesini veriyor? PageRank değerini veriyor.
+
+225
+00:39:22,747 --> 00:39:48,527
+Peki J'den sonra 3 tane mavi renkli not var. Onların PageRank'ini bulurken J'nin değerini nasıl onlara yansıtıyorum? Dikkat edecek olursanız J 3 tane nota link veriyor. Her bir linkinde de J'nin PageRank değerinin 3'te 1'ini bir sonraki nota yansıtıyor.
+
+226
+00:39:48,527 --> 00:39:53,167
+Neden? Çünkü J dış dünyaya 3 tane link vermiş
+
+227
+00:39:53,167 --> 00:40:09,367
+Bu bir recursive algoritma yani PageRank metriğini hesaplarken recursive bir şekilde sürekli olarak kendisinden önce gelen notların kendisine vermiş olduğu PageRank'i hesaplıyorum
+
+228
+00:40:09,367 --> 00:40:15,307
+ve kendisinden sonraki notlara vermiş olduğu PageRank değerini hesaplıyorum
+
+229
+00:40:15,307 --> 00:40:23,188
+bütün grafikteki notlar bunu gerçekleştiriyorlar ve bunu belirli bir iterasyon kadar tekrarlıyorum.
+
+230
+00:40:23,188 --> 00:40:38,567
+Yani bu PageRank değerlerinin bütün notlar için hesaplanmasını belirli sayıda iterasyon için gerçekleştiriyorum ve belli iterasyon sonra bakıyorum ki notların PageRank değerleri değişmiyor.
+
+231
+00:40:38,567 --> 00:40:50,887
+O durumda diyorum ki tamam artık en son bulmuş olduğum değişmeyen PageRank değerleri bu networktaki notların PageRank değerleridir diyorum.
+
+232
+00:40:53,867 --> 00:41:02,567
+Şimdi bu söylediğimi şu oyuncak bir grafikte beraber inceleyelim. Bu oyuncak grafikte 3 tane not varmış.
+
+233
+00:41:06,643 --> 00:41:08,723
+A nodu, Y nodu ve M nodu.
+
+234
+00:41:10,343 --> 00:41:15,923
+Şimdi bu notlara bakacak olursam bunlar arasında linkler var.
+
+235
+00:41:17,863 --> 00:41:20,463
+Tek bir not mesela kendine de link vermiş.
+
+236
+00:41:20,564 --> 00:41:22,643
+Y nodu kendine de link vermiş.
+
+237
+00:41:24,283 --> 00:41:31,183
+Şimdi ben az önce size grafikte göstermiş olduğum şeyi şu formülle yazabilirim.
+
+238
+00:41:31,404 --> 00:41:32,243
+Bu formül nedir?
+
+239
+00:41:32,243 --> 00:41:34,343
+herhangi bir not
+
+240
+00:41:34,343 --> 00:41:36,383
+J nodu
+
+241
+00:41:36,383 --> 00:41:38,723
+page rank değerini hesaplamak
+
+242
+00:41:38,723 --> 00:41:40,663
+istiyorsanız bu
+
+243
+00:41:40,663 --> 00:41:41,783
+noda link veren
+
+244
+00:41:41,783 --> 00:41:43,223
+notların
+
+245
+00:41:43,223 --> 00:41:46,824
+bu noda link veren notların
+
+246
+00:41:46,824 --> 00:41:50,883
+oransal page rank değerlerini
+
+247
+00:41:50,883 --> 00:41:53,023
+toplamanız yeterli.
+
+248
+00:41:53,023 --> 00:41:54,903
+Ne demek oransal
+
+249
+00:41:54,903 --> 00:41:56,963
+page rank değerleri? Yani bu
+
+250
+00:41:56,963 --> 00:41:59,263
+noda link veren her bir nodun
+
+251
+00:41:59,263 --> 00:42:01,303
+page rank değerini
+
+252
+00:42:01,303 --> 00:42:03,024
+o nodun kendi
+
+253
+00:42:03,024 --> 00:42:05,903
+outlink sayısına
+
+254
+00:42:05,903 --> 00:42:07,083
+böldüğüm vakit
+
+255
+00:42:07,083 --> 00:42:11,584
+o link veren nodun
+
+256
+00:42:11,584 --> 00:42:13,523
+oransal page rank değerini
+
+257
+00:42:13,523 --> 00:42:15,703
+buluyorum ve bunların hepsini topladığım zaman
+
+258
+00:42:15,703 --> 00:42:17,584
+bu
+
+259
+00:42:17,584 --> 00:42:19,423
+arkadaşların link
+
+260
+00:42:19,423 --> 00:42:21,643
+vermiş olduğu J nodunun
+
+261
+00:42:21,643 --> 00:42:23,143
+page rank değerini bulabiliyorum.
+
+262
+00:42:23,843 --> 00:42:25,523
+Mesela şuradaki formülü
+
+263
+00:42:26,084 --> 00:42:27,584
+Y nodu için yapalım.
+
+264
+00:42:28,364 --> 00:42:28,843
+Ne dedik?
+
+265
+00:42:29,263 --> 00:42:30,063
+Y noduna
+
+266
+00:42:30,063 --> 00:42:32,023
+Y nodunun
+
+267
+00:42:32,023 --> 00:42:33,703
+PageRank değerini hesaplamak istiyorum.
+
+268
+00:42:33,883 --> 00:42:35,623
+Şurada şu şey
+
+269
+00:42:35,623 --> 00:42:37,843
+denklemim şuradaki denklem.
+
+270
+00:42:38,783 --> 00:42:39,903
+Bu noda link
+
+271
+00:42:39,903 --> 00:42:41,803
+veren hangi notlar var? Bir tanesi
+
+272
+00:42:41,803 --> 00:42:44,004
+kendisi var. İkincisi ise
+
+273
+00:42:44,004 --> 00:42:45,883
+A nodu var. Bu noda
+
+274
+00:42:45,883 --> 00:42:47,943
+link veren notlar iki taneymiş.
+
+275
+00:42:48,504 --> 00:42:49,724
+Bu iki tane not için
+
+276
+00:42:49,724 --> 00:42:51,623
+bunların
+
+277
+00:42:51,623 --> 00:42:53,583
+oransal PageRank değerlerini
+
+278
+00:42:53,583 --> 00:42:56,004
+bulup birbiri
+
+279
+00:42:56,004 --> 00:42:58,083
+toplayacağım. Mesela Y'nin oransal
+
+280
+00:42:58,083 --> 00:42:59,983
+PageRank değeri Y kaç tane
+
+281
+00:42:59,983 --> 00:43:01,923
+node'a link vermiş. Bir kendisine
+
+282
+00:43:01,923 --> 00:43:04,163
+vermiş. Bir de buraya. Dolayısıyla
+
+283
+00:43:04,163 --> 00:43:06,343
+R, Y'yi
+
+284
+00:43:06,343 --> 00:43:07,943
+ne yapacağım? İkiye böleceğim.
+
+285
+00:43:08,863 --> 00:43:10,363
+Okey. İkincisi
+
+286
+00:43:10,363 --> 00:43:11,623
+A. A'nın
+
+287
+00:43:11,623 --> 00:43:14,163
+oransal page
+
+288
+00:43:14,163 --> 00:43:15,763
+renk değeri. A kaç tane node'a
+
+289
+00:43:15,763 --> 00:43:17,943
+link vermiş? Bir tanesini Y'ye vermiş.
+
+290
+00:43:18,043 --> 00:43:19,423
+Bir tanesini M'ye vermiş.
+
+291
+00:43:20,043 --> 00:43:21,403
+İki tane linki var.
+
+292
+00:43:21,963 --> 00:43:23,543
+Ne yapıyorum? A'nın
+
+293
+00:43:23,543 --> 00:43:25,463
+page renk değeri R, A
+
+294
+00:43:25,463 --> 00:43:27,523
+bölü iki. Okey.
+
+295
+00:43:27,523 --> 00:43:32,043
+İşte bu iki tane oransal page rank değerini topladığım zaman ne otmuş oluyor?
+
+296
+00:43:32,423 --> 00:43:41,403
+Bu arkadaşların yani A'nın ve Y'nin link vermiş olduğu arkadaş yani Y bunun page rank değerini buluyor.
+
+297
+00:43:41,563 --> 00:43:43,703
+Aynı şeyi A için de yapabilirim arkadaşlar.
+
+298
+00:43:44,663 --> 00:43:46,523
+Aynı şeyi M için de yapabilirim.
+
+299
+00:43:46,523 --> 00:44:05,323
+Okey. Burada her üç tane not için ben buraya şurada göstermiş olduğum denklemi uygulayarak üç tane farklı denklem yazdım. Okey. Şimdi burada kaç tane bilinmeyenim var?
+
+300
+00:44:05,323 --> 00:44:07,523
+rey'yi bilmiyorum
+
+301
+00:44:07,523 --> 00:44:09,143
+rea'yı bilmiyorum
+
+302
+00:44:09,143 --> 00:44:10,463
+rem'yi bilmiyorum yani
+
+303
+00:44:10,463 --> 00:44:12,323
+y'nin peş renk değerini bilmiyorum
+
+304
+00:44:12,323 --> 00:44:15,403
+a'nın peş renk değerini m'nin peş renk değerini bilmiyorum
+
+305
+00:44:15,403 --> 00:44:17,423
+kaç tane benim denklemim var
+
+306
+00:44:17,423 --> 00:44:18,663
+3 tane denklemim var
+
+307
+00:44:18,663 --> 00:44:21,143
+3 tane denklem 3 tane bilinmeyen
+
+308
+00:44:21,143 --> 00:44:23,303
+şimdi böyle bir durum olduğu zaman
+
+309
+00:44:23,303 --> 00:44:23,963
+ben
+
+310
+00:44:23,963 --> 00:44:26,683
+tek bir sonuca ulaşmıyorum
+
+311
+00:44:26,683 --> 00:44:28,803
+yani ulaşacağım sonuçlar
+
+312
+00:44:28,803 --> 00:44:31,063
+hep birbirlerinin katları
+
+313
+00:44:31,063 --> 00:44:32,603
+olan sonuçlar olacak yani
+
+314
+00:44:32,603 --> 00:44:34,863
+rey, rea, rem için
+
+315
+00:44:34,864 --> 00:44:37,123
+bulacağım üçlü real
+
+316
+00:44:37,123 --> 00:44:39,203
+sayılar, tek bir
+
+317
+00:44:39,203 --> 00:44:40,923
+üçlü real sayı bulmayacağım.
+
+318
+00:44:41,123 --> 00:44:42,343
+O üçlü real sayının
+
+319
+00:44:42,343 --> 00:44:44,884
+birinci katı, bütün
+
+320
+00:44:44,884 --> 00:44:46,804
+katları benim bu
+
+321
+00:44:46,804 --> 00:44:49,263
+üçlü denklem çözümümü sağlayacak.
+
+322
+00:44:49,403 --> 00:44:50,703
+Ben ise sadece
+
+323
+00:44:50,703 --> 00:44:52,584
+bir tane üçlü
+
+324
+00:44:52,584 --> 00:44:54,343
+sonuç arıyorum. Yani
+
+325
+00:44:54,343 --> 00:44:56,664
+öyle bir sonuç arıyorum ki
+
+326
+00:44:56,664 --> 00:44:59,164
+rey için, ra için,
+
+327
+00:44:59,283 --> 00:45:00,823
+rem için sadece
+
+328
+00:45:00,823 --> 00:45:02,364
+bir tane değer üretsin.
+
+329
+00:45:03,063 --> 00:45:03,184
+Okey.
+
+330
+00:45:03,635 --> 00:45:27,236
+bunu yapmak için bir tane daha equation eklemem lazım. Yani böylesi bir denklem setini çözebilmem için, 3 tane bilinmeyenli bir sistemi çözmek için 4 tane denkleme ihtiyacım var. O yüzden bir tane daha denklem ekliyorum ve diyorum ki, arkadaş bu grafikteki PageRank değerlerinin hepsini topladığında 1'e eşit olsun.
+
+331
+00:45:27,236 --> 00:45:49,275
+toplamdaki PageRank değer sayısı 1'e eşit olsun. Artık elimde ne var? Şu 3 tane denklem var bir de bu 4. denklem var. Yani 4 tane denklem 3 tane bilinmeyen. Artık şimdi bu denklem setini eğer ben çözecek olursam bu 3 tane bilinmeyenin değerini bulabiliyorum.
+
+332
+00:45:49,275 --> 00:46:04,476
+Bu bulduğum değerlerin de bu üçlü değer yani Y için, A için ve M için bulmuş olduğum bu üçlü değer de artık unique bir sonuçun olmuş oluyor. Değişmiyor.
+
+333
+00:46:04,476 --> 00:46:23,595
+Arkadaşlar tabii bu söylediğimi yani şuradaki formülü böyle bir denklem setine dönüştürüp bir tane de az önce söylediğim bütün PageRank değerleri toplarsam bire eşittir ekleyip şeye dönüştürebilirsiniz.
+
+334
+00:46:25,896 --> 00:46:32,775
+Böyle bir denklem setine dönüştürüp çözebilirsiniz ama ancak bunu böyle küçük bir grafik üzerinde yapabilirsiniz.
+
+335
+00:46:32,775 --> 00:46:44,576
+Ama bizim uğraştığımız grafikler ise web grafi olduğu için biz bu işlemi matriz reprezentasyonuyla yapmak zorundayız.
+
+336
+00:46:44,676 --> 00:46:48,155
+Yani matriz üzerinde onu gerçekleştirmek zorundayız.
+
+337
+00:46:49,936 --> 00:46:56,716
+Şimdi de matriz reprezentasyonu kullanaraktan aynı şeyi nasıl yaparız buna bakalım.
+
+338
+00:47:10,516 --> 00:47:36,175
+Okey. Tekrardan yine benim görüntüme bakacak olursanız ben yine tahtaya bir şeyler çizeceğim. Şimdi benim şu anda tahtaya çizdiğim matriz bu matrize bakacak olursak bu matrizde benim yine web grafım var.
+
+339
+00:47:36,175 --> 00:47:48,416
+birden n'e kadar elemanlarım var, birden n'e kadar elemanlarım var. Burada notları link veren sayfalar sütunlarda düşünün.
+
+340
+00:47:49,016 --> 00:48:01,075
+Satırlarda da linki alan sayfalar var. Eğer bir not diğerisine bir link vermişse, i notu j notuna link vermişse ben burada bir görüyorum.
+
+341
+00:48:01,075 --> 00:48:28,115
+Eğer not vermemişse, link vermemişse şurada sıfır geliyorum arkadaşlar. Ama ben bu sefer bu matrise bir şey daha ekliyorum. Diyorum ki eğer bir not bir diğerisine link vermişse buraya bir koymak yerine buraya bir bölü D'ye iyi koyacağım.
+
+342
+00:48:28,115 --> 00:48:42,395
+yani buradaki D, i'ninci nodun dış dünyaya vermiş olduğu eleman sayısı. Dış dünyaya vermiş olduğu link sayısı.
+
+343
+00:48:42,395 --> 00:48:53,035
+ve diyelim ki mesela i nodu iki tane farklı noda link vermiş her birisine bir bölü di yazıyorum.
+
+344
+00:48:53,035 --> 00:49:03,895
+Okey. Eğer link vermemişse sıfır link vermişse buna b yazıyorum. Şimdi şuradaki satır vektörünü
+
+345
+00:49:07,315 --> 00:49:20,395
+pardon, şuradaki sütun vektörünün elemanlarını topladığım zaman, ok, şuradaki sütun vektörünün elemanlarını topladığım zaman bunların toplamı 1 oluyor.
+
+346
+00:49:20,395 --> 00:49:34,336
+Şimdi bu şekilde sütün vektörlerinin elemanlarını topladığında bir olan matrislere biz stokastik matris diyoruz arkadaşlar.
+
+347
+00:49:35,336 --> 00:49:41,775
+Stokastik matris. Şu matrisin ismi komşuluk matrisi. Neden komşuluk matrisi?
+
+348
+00:49:41,775 --> 00:49:51,115
+çünkü notların birbirlerine vermiş oldukları linkleri, komşuluklarını gösteren bir matriz.
+
+349
+00:49:51,115 --> 00:49:54,835
+O yüzden buna komşuluk matrizi adjacency matrizi diyoruz.
+
+350
+00:49:55,695 --> 00:50:07,295
+Eğer bir de sütunların elemanlarının hepsini topladığımda bu bire eşit ise bu durumda buna stokastik komşuluk matrizi diyor.
+
+351
+00:50:07,295 --> 00:50:34,976
+Şimdi neden bu stokastik konuşuluk madresi oldu? Bu diyelim ki mesela yeni not iki tane şeye link vermiş olsun, sayfaya link vermiş olsun. Şuraya ne yapacaktım? 1 bölü 2 yazacaktım. Şuraya 1 bölü 2 yazacaktım. 1 bölü 2'lerin toplamı bana 1 verecekti. Eğer 3 tane nota link vermiş olsaydı 1 bölü 3, 1 bölü 3
+
+352
+00:50:43,731 --> 00:50:51,451
+1 bölü 3, 1 bölü 3, 1 bölü 3. Bunların toplamı yine bana bir değerini verecektir.
+
+353
+00:50:51,451 --> 00:51:08,631
+Şimdi ben burada diyorum ki bu Stochastic Adjacency Matrice'i şunun yanına bir tane de sütun vektörü koyayım.
+
+354
+00:51:08,631 --> 00:51:17,072
+bir tane daha sütun vektörü koyayım. Bu sütun vektörüne de PageRank vektörü diyeceğim.
+
+355
+00:51:21,268 --> 00:51:39,087
+buna da R ile göstereyim. Şu neydi? M idi. Şimdi bu ikisinin çarpımı bana tekrardan başka bir sütun vektörü verecek. O da yine R olacak.
+
+356
+00:51:39,087 --> 00:52:03,907
+Demek ki bir matriz çarpı bir sütun vektörü eşittir başka bir sütun vektörü. Gerçekten de n'e 1 bir matrizle n'e 1 bir vektörü çarpıyorum. O da bana neyi verecektir?
+
+357
+00:52:03,907 --> 00:52:25,107
+n'e birlik bir kolon vektörünü, sütün vektörünü verecektir. Şimdi burada ben diyelim ki şuradaki bir arkadaşın şeyini bulmak istiyorum. Şuna RJ diyelim.
+
+358
+00:52:29,427 --> 00:52:45,927
+Şuradaki bir arkadaşın PageRank değerini bulmak istiyorum. PageRank değerini bulmak istediğimde bu durumda ben ne yaparım? Şuradan bir tane
+
+359
+00:52:49,780 --> 00:52:54,039
+Satır vektörü aldığımı düşünelim.
+
+360
+00:52:54,680 --> 00:52:57,039
+Şimdi bu satır vektörünü aldım.
+
+361
+00:52:57,039 --> 00:53:01,919
+Bu bir sonraki slide'da daha iyi göstereceğim.
+
+362
+00:53:02,399 --> 00:53:08,300
+Şimdi şu da j'ninci eleman için olmuş olsun.
+
+363
+00:53:10,380 --> 00:53:13,419
+Ben ne yapıyorum?
+
+364
+00:53:13,419 --> 00:53:16,679
+bu J'ye
+
+365
+00:53:16,679 --> 00:53:19,460
+link vermiş olan
+
+366
+00:53:19,460 --> 00:53:21,159
+bütün notların
+
+367
+00:53:21,159 --> 00:53:22,620
+değerleri nerelerdedir?
+
+368
+00:53:23,079 --> 00:53:24,079
+Şuralardadır değil mi?
+
+369
+00:53:24,219 --> 00:53:26,300
+J'ye link vermiş olan
+
+370
+00:53:26,300 --> 00:53:28,539
+notların değerleri şuralardadır.
+
+371
+00:53:30,719 --> 00:53:33,399
+Şimdi bu J'ye link
+
+372
+00:53:33,399 --> 00:53:34,780
+vermiş olan notların
+
+373
+00:53:34,780 --> 00:53:37,119
+eğer varsa
+
+374
+00:53:37,119 --> 00:53:39,479
+onlar için buralarda
+
+375
+00:53:39,479 --> 00:53:40,699
+ne yazması gerekir?
+
+376
+00:53:41,799 --> 00:53:42,479
+Bir bölü
+
+377
+00:53:42,479 --> 00:53:43,539
+D.
+
+378
+00:53:44,079 --> 00:53:45,259
+Bir bölü D.
+
+379
+00:53:47,259 --> 00:53:48,199
+Okey. Yani
+
+380
+00:53:48,199 --> 00:53:50,199
+hangi notlar J'ye link
+
+381
+00:53:50,199 --> 00:53:51,919
+vermişse onların
+
+382
+00:53:51,919 --> 00:53:54,119
+bir bölü
+
+383
+00:53:54,119 --> 00:53:56,199
+outlink değeri kadar
+
+384
+00:53:56,199 --> 00:54:00,119
+şeyler yazması gerekiyor.
+
+385
+00:54:00,119 --> 00:54:01,719
+Değil mi? Bir bölü
+
+386
+00:54:01,719 --> 00:54:04,199
+outlink değeri kadar real sayılar
+
+387
+00:54:04,199 --> 00:54:05,919
+yazması gerekiyor. Okey.
+
+388
+00:54:06,599 --> 00:54:07,619
+Şimdi ben ne yapıyorum?
+
+389
+00:54:08,099 --> 00:54:09,959
+Şuradaki J için olan
+
+390
+00:54:09,959 --> 00:54:12,439
+bu satır vektörünü
+
+391
+00:54:12,439 --> 00:54:14,279
+alıp şuradaki
+
+392
+00:54:14,279 --> 00:54:16,399
+kolon vektörüyle çarpıyorum.
+
+393
+00:54:17,579 --> 00:54:18,579
+Şimdi
+
+394
+00:54:18,579 --> 00:54:20,579
+buradaki kolon vektöründe
+
+395
+00:54:20,579 --> 00:54:21,679
+ne vardı?
+
+396
+00:54:22,859 --> 00:54:24,519
+T anında ki
+
+397
+00:54:24,519 --> 00:54:26,319
+bütün
+
+398
+00:54:26,319 --> 00:54:28,659
+network'teki notların
+
+399
+00:54:28,659 --> 00:54:30,999
+peş renk
+
+400
+00:54:30,999 --> 00:54:33,079
+skor değeri
+
+401
+00:54:33,079 --> 00:54:33,399
+vardı.
+
+402
+00:54:34,319 --> 00:54:36,699
+Şimdi bunu aldım ve
+
+403
+00:54:36,699 --> 00:54:37,419
+şuradaki
+
+404
+00:54:37,419 --> 00:54:40,239
+renk vektörüyle çarptım.
+
+405
+00:54:40,239 --> 00:55:00,780
+Diyelim ki mesela şuradaki J'ye üç tane arkadaş link vermiş olsun. Ne yapacağım? Bu link veren birinci arkadaş, diyelim ki mesela bu birinci arkadaş oldu, bu ikinci arkadaş oldu, bu üçüncü arkadaş oldu.
+
+406
+00:55:00,780 --> 00:55:23,880
+Link veren birinci arkadaşın buradaki şu da birin ikinin üçün renk skorları oldu. Şunu birinci arkadaşın renk skoruyla çarptım. Şunu ikinci arkadaşın renk skoruyla çarptım. Şunu üçüncü arkadaşın renk skoruyla çarptım ve bunları topladım.
+
+407
+00:55:23,879 --> 00:55:44,499
+Bu değer bana RJ'yi veriyor. Bu da bizim daha önce o oyuncak örnek üzerinde gördüğümüz formülün aynısı. Nedir? Bir noda link veren nodlar için bu nodların oransal page rank değerlerinin çarpım toplamı bana neyi verecektir?
+
+408
+00:55:44,500 --> 00:55:46,800
+bu nodun page rank değerini verecektir.
+
+409
+00:55:46,960 --> 00:55:48,300
+Benim sadece yaptığım
+
+410
+00:55:48,300 --> 00:55:50,640
+bu formülü sadece
+
+411
+00:55:50,640 --> 00:55:52,839
+bir tane matrisin
+
+412
+00:55:52,839 --> 00:55:54,780
+bu
+
+413
+00:55:54,780 --> 00:55:56,280
+page rank vektörü
+
+414
+00:55:56,280 --> 00:55:58,259
+hesabındaki bir tane
+
+415
+00:55:58,259 --> 00:55:59,759
+not için gösterdi.
+
+416
+00:56:00,300 --> 00:56:02,679
+Demek ki bütün notlar için
+
+417
+00:56:02,679 --> 00:56:04,959
+ben aynı formülü uygulayabiliyorum.
+
+418
+00:56:05,399 --> 00:56:06,419
+Bu matrisi yani
+
+419
+00:56:06,419 --> 00:56:08,320
+M stochastic
+
+420
+00:56:08,320 --> 00:56:10,559
+adjacency matrisle
+
+421
+00:56:10,559 --> 00:56:12,699
+page rank
+
+422
+00:56:12,699 --> 00:56:15,419
+vektörünü çarptığım zaman elde edeceğim
+
+423
+00:56:15,419 --> 00:56:17,979
+diğer patching vektörü
+
+424
+00:56:17,979 --> 00:56:21,280
+demek ki bana
+
+425
+00:56:21,280 --> 00:56:24,280
+benim bir önceki oyuncak örnekte
+
+426
+00:56:24,280 --> 00:56:27,080
+gösterdiğim formülü uygulayarak
+
+427
+00:56:27,080 --> 00:56:30,019
+bütün patching değerlerini
+
+428
+00:56:30,019 --> 00:56:31,419
+aynı anda hesaplıyor.
+
+429
+00:56:33,559 --> 00:56:36,860
+Yani az önce gösterdiğim
+
+430
+00:56:36,860 --> 00:56:40,019
+formülü ben matriz olarak
+
+431
+00:56:40,019 --> 00:56:41,319
+sizlere
+
+432
+00:56:41,319 --> 00:56:44,499
+göstermiş olduk.
+
+433
+00:56:50,804 --> 00:56:54,103
+Şimdi bu durumda problem şuna dönüşmüş oldu.
+
+434
+00:56:54,683 --> 00:56:56,123
+Tekrardan slide'a döndüm.
+
+435
+00:56:57,203 --> 00:57:03,644
+Aygın vektör sisteminden bahsetmiştim.
+
+436
+00:57:04,463 --> 00:57:07,783
+Elimde bir tane stokastik adjc matrisi var.
+
+437
+00:57:07,943 --> 00:57:11,203
+Stokastik adjc matrisinin ne olduğunu az önce size söyledim.
+
+438
+00:57:11,203 --> 00:57:16,863
+Bir de elimde bir tane page rank kolon vektörü var.
+
+439
+00:57:16,923 --> 00:57:17,823
+Sütun vektörü var.
+
+440
+00:57:17,823 --> 00:57:26,063
+Bu stochastic agency matrisiyle sütün matrisini çarptığım zaman tekrardan bana bir sütün matrisi oluşturuyor.
+
+441
+00:57:27,083 --> 00:57:28,503
+Ben bunu nasıl çözerim?
+
+442
+00:57:28,783 --> 00:57:30,643
+Buradaki equation'ı nasıl çözerim?
+
+443
+00:57:30,763 --> 00:57:34,484
+Bu equation'a aygın sistem dedik.
+
+444
+00:57:35,023 --> 00:57:37,743
+Bu equation'ı linear algebra'da da görüyoruz.
+
+445
+00:57:38,543 --> 00:57:41,763
+Bu gördüğümüz örneği şurada görebilirsiniz.
+
+446
+00:57:41,763 --> 00:57:46,363
+Bir matrisle şeyi çarpmışım.
+
+447
+00:57:46,623 --> 00:57:48,463
+Bir kolon vektörünü çarpmışım.
+
+448
+00:57:48,863 --> 00:57:50,363
+Yine bir kolon vektörü elde ediyorum.
+
+449
+00:57:50,543 --> 00:57:52,304
+Önünde de bir lambda değeri var.
+
+450
+00:57:52,863 --> 00:57:58,863
+Şimdi buradaki değer R biz linear algebra'da aygın value diyoruz.
+
+451
+00:58:00,083 --> 00:58:06,804
+Ve X'in kendisine de buradaki denklemde X'in kendisine de aygın vektör diyoruz.
+
+452
+00:58:06,804 --> 00:58:28,263
+Şimdi biz bu eküasyonu bu denklemi lineer algebranın bize önerdiği bir yöntemle çözecek olursak bu x için bulacağımız değerler bizim aslında istediğimiz page rank skorlarının olduğu değer olacak.
+
+453
+00:58:28,263 --> 00:58:35,484
+Yani burada mesela şuradaki denklemi buna çevirecek olursak burada lambda değeri 1.
+
+454
+00:58:35,723 --> 00:58:39,804
+Yani şu R'nin önünde lambda olarak 1 değeri var.
+
+455
+00:58:40,204 --> 00:58:43,003
+1 çarpı R eşittir M çarpı R.
+
+456
+00:58:43,123 --> 00:58:44,704
+Şuradaki denklem şunun aynısı.
+
+457
+00:58:45,543 --> 00:58:52,183
+Dolayısıyla ben diyorum ki lineer algebranın önermiş olduğu bir teknikle ben bu denklemi eğer çözecek olursam
+
+458
+00:58:52,183 --> 00:59:02,503
+En sonunda bu çözümde elde edeceğim R sütun vektörü benim PageRank skorlarımı oluşturacağı sütun vektörü olacaktır.
+
+459
+00:59:03,164 --> 00:59:12,323
+Ve ben eğer bunu bulacak olursam dolayısıyla da benim grafım üzerindeki bütün notların PageRank değerlerine ulaşmış olacağım.
+
+460
+00:59:14,283 --> 00:59:20,223
+İşte bu denklemi çözmek için linear algebranın önermiş olduğu yönteme de Power Interaction yöntemi diyoruz.
+
+461
+00:59:20,223 --> 00:59:26,164
+Power Interaction yöntemi kullanaraktan ben böylesi bir denklem sistemini çözebilirim.
+
+462
+00:59:26,223 --> 00:59:28,763
+Peki bu Power Interaction metodunu nasıl ürün edeceğim?
+
+463
+00:59:30,384 --> 00:59:42,483
+Öncelikle ben bu oyuncak örnekten devam edip bu oyuncak örneği matriz reprezentasyonuyla nasıl gösterdiğimi tekrardan size göstereyim.
+
+464
+00:59:42,483 --> 00:59:53,483
+Biz ilk olarak hani bu oyuncak örnek üzerinde PageRank skorlarını hesaplamak için dedik ki biz bunu denklemlerini yazabiliriz.
+
+465
+00:59:54,403 --> 01:00:02,483
+İşte Y'nin PageRank skor denklemini yazalım, A'nınkini yazalım, M'inkini yazalım.
+
+466
+01:00:03,223 --> 01:00:06,583
+Sonra buna bir dördüncü şey de ekleyelim.
+
+467
+01:00:06,583 --> 01:00:11,244
+Diyelim ki bütün PageRank skor değerlerinin toplamı 1'e eşit olsun.
+
+468
+01:00:11,723 --> 01:00:14,343
+4 tane denklem var, 3 tane bilinmeyen var.
+
+469
+01:00:14,623 --> 01:00:19,223
+Bunu çözersem ben herkesin PageRank skorunu çözebiliyorum.
+
+470
+01:00:19,643 --> 01:00:25,763
+Ama sonra dedi ki bu oyuncak örnek bunun içerisindeki eleman sayısı çok fazla olduğu zaman
+
+471
+01:00:25,763 --> 01:00:29,164
+ben bu şekilde denklem sistemi oluşturmam imkansız.
+
+472
+01:00:29,503 --> 01:00:32,104
+O yüzden ben bunu matriz reprezentasyonuyla yapayım.
+
+473
+01:00:32,103 --> 01:00:46,883
+Peki bu matriz reprezentasyonuyla ben bunu çözmek istersem neye ihtiyacım var? Öncelikle bir stokastik komşuluk matrisine ihtiyacım var. O zaman onu oluşturayım. Stokastik komşuluk matrisi.
+
+474
+01:00:47,219 --> 01:01:07,119
+Burada ne demiştik? Link veren notlar sütunların etiketi olacak. Link alan notlarsa satırların etiketi olacak. Mesela Y nodu kaç tane noda link vermiş? Kendisine vermiş bir de A'ya vermiş. Dolayısıyla Y'den Y'ye var, Y'den A'ya değer var.
+
+475
+01:01:07,119 --> 01:01:31,599
+Buraya yazacağımız değerleri ne yazıyorduk? Hatırlayın stokastik matrisi olabilmesi için buraya bir bölü D yani bir bölü outlink sayısı kadar outlink sayısı diyorduk. Yani Y'nin kaç tane outlink'i var? Bir burada, bir burada, iki tane var, bir bölü iki. Aynı şekilde buraya yazacağımız değer de yine Y'nin outlink sayısı olmuş oluyor. Bir bölü iki.
+
+476
+01:01:31,599 --> 01:01:39,099
+topladığımız zaman bütün sütunu bire eşit stokastik metropatris olduğu için zaten bunu sağlaması gerekiyor.
+
+477
+01:01:39,319 --> 01:01:51,199
+A'nın kaç tane noda linki var? Bir Y'ye var, bir M'ye var. Dolayısıyla iki tane link vermiş. Bir buraya sıfırdan farklı değer, bir de buraya sıfırdan farklı değer yazmam lazım.
+
+478
+01:01:51,859 --> 01:01:56,459
+Yazarken de A'nın dış dünyaya vermiş olduğu iki tane link var. Bir bölü iki, bir bölü iki.
+
+479
+01:01:56,459 --> 01:02:13,319
+kaç tane node link veriyor? Bir tane. Dolayısıyla o da A'ya vermiş. Dolayısıyla burada bir yazıyor. Diğerlerinde sıfır yazıyor. Bir tane node link verdiği için bir bölü bir. Stokastik komşuluk madresini yazmak o kadar kolay.
+
+480
+01:02:13,319 --> 01:02:27,559
+bundan sonra artık ne kaldı geriye? Benim bir tane kolon vektörüne ihtiyacım var. Buradaki kolon vektörü buradaki her bir nodun PageRank değerini ifade ediyor.
+
+481
+01:02:27,559 --> 01:02:33,839
+matrisi bu kolon vektörüyle çarpıyorum yine bana ayrı bir kolon vektörü, bir sütün vektörü veriyor.
+
+482
+01:02:33,839 --> 01:02:43,879
+Demek ki şuradaki oyuncak örneği ben matris reprezentasyonuyla yazıp şu denklemle çözmek istediğimde şu hale getiriyorum.
+
+483
+01:02:48,275 --> 01:03:04,236
+Şimdi bu matriz reprezentasyonu üzerinde Publiteration metodunu uygulayacağız ama bir ara verelim. Bir 10 dakika ara verelim. Şu an benim saatime göre 10'u 2 geçiyor. 10 dakika sonra 10'u 12 geçe devam edeceğim arkadaşlar.
+
+484
+01:12:38,003 --> 01:12:39,983
+arkadaşlar. Tekrardan merhaba. Sesim
+
+485
+01:12:39,983 --> 01:12:42,123
+geliyor mu? Hemen bir teybilirsiniz. Başlamın
+
+486
+01:12:42,123 --> 01:12:42,523
+dersi.
+
+487
+01:12:45,763 --> 01:12:46,203
+Geliyorum.
+
+488
+01:12:49,023 --> 01:12:51,403
+Şimdi biz dedik ki elimizde
+
+489
+01:12:51,403 --> 01:12:53,743
+bir
+
+490
+01:12:53,743 --> 01:12:55,764
+matriz
+
+491
+01:12:55,764 --> 01:12:56,684
+vektör
+
+492
+01:12:56,684 --> 01:13:00,003
+çarpımı var. Matriz vektör
+
+493
+01:13:00,003 --> 01:13:02,083
+bir stokastik
+
+494
+01:13:02,083 --> 01:13:03,443
+ecesisi matrisiyle
+
+495
+01:13:03,443 --> 01:13:05,963
+bir kolon
+
+496
+01:13:05,963 --> 01:13:07,963
+vektörünü çarpıyoruz ve bunun sonucunu
+
+497
+01:13:07,963 --> 01:13:10,163
+yine bir kolon vektörü elde ediyoruz.
+
+498
+01:13:11,103 --> 01:13:16,663
+Az önceki slide'daki bu denklendi.
+
+499
+01:13:17,243 --> 01:13:20,523
+Ve bunu çözmek için linear algebra'nın önermiş olduğu
+
+500
+01:13:20,523 --> 01:13:23,003
+power iteration metodunu kullanıyoruz dedik.
+
+501
+01:13:24,003 --> 01:13:26,203
+Bu power iteration metodu neymiş peki?
+
+502
+01:13:26,443 --> 01:13:29,663
+Yani nasıl bize aradığımızı verecek?
+
+503
+01:13:30,023 --> 01:13:30,703
+Buna bakalım.
+
+504
+01:13:30,963 --> 01:13:33,083
+Şimdi power iteration metodu şunu diyor.
+
+505
+01:13:33,083 --> 01:13:40,083
+Diyor ki bir recursive fonksiyon aslında power iteration fonksiyonu.
+
+506
+01:13:41,103 --> 01:13:58,643
+Öncelikle diyor ilk başta senin bu denklemindeki kolon vektörünü yani stokastik eccesi matrisle çarpacağın kolon vektörünü ilk değerlerini ata diyor.
+
+507
+01:13:58,643 --> 01:14:05,423
+Bunu atarken de diyor senin bu n'e n grafın içerisinde kaç tane not var?
+
+508
+01:14:05,523 --> 01:14:06,483
+N tane not var.
+
+509
+01:14:07,084 --> 01:14:09,044
+Her bir değere bir bölü n atar.
+
+510
+01:14:09,483 --> 01:14:20,944
+Yani burada işte stokastik adjacency matrisle çarpacağım kolon vektörünü ben burada göstermişim.
+
+511
+01:14:21,444 --> 01:14:26,483
+Kolon vektörünü satır şeklinde yazmışım ama dikkat edin bu satırın da transpozesini almışım.
+
+512
+01:14:26,483 --> 01:14:30,463
+Yani aslında şuradaki tüm ifade bir sütün vektörü.
+
+513
+01:14:31,623 --> 01:14:35,463
+Ve bu sütün vektörünün her bir elemanı da bir bölü n.
+
+514
+01:14:35,663 --> 01:14:36,603
+Yani ne yapmışım?
+
+515
+01:14:37,083 --> 01:14:47,683
+İlk başlangıçta başlangıç page rank vektörümün bütün değerleri bir bölü n olarak almışım.
+
+516
+01:14:48,383 --> 01:14:52,164
+Ve bu page rank vektörünün state'ine de sıfır demişim.
+
+517
+01:14:52,263 --> 01:14:55,003
+Yani sıfırıncı andaki page rank vektörü.
+
+518
+01:14:55,003 --> 01:14:55,803
+Okey.
+
+519
+01:14:56,483 --> 01:15:07,383
+Sonra buradan başlayarak elde etmiş olduğum PageRank vektörünü götürüp bu stokastik adjesisi matrisiyle çarpmışım.
+
+520
+01:15:07,383 --> 01:15:13,743
+Ve t artı bir anındaki PageRank vektörünü bulmuşum.
+
+521
+01:15:13,743 --> 01:15:38,403
+Ve tekrardan başa gitmeden önce bu yeni bulmuş olduğum page rank vektörünün yani t artı bir andaki page rank vektörünün değerinden bir önceki anda yani t andaki page rank vektörünün değerlerini çıkartmışım.
+
+522
+01:15:38,403 --> 01:15:52,503
+Oluşan kolon bu ikisinin arasındaki farktan dolayı oluşan kolon vektörünün belirli bir epsilon değerinden düşük olup olmadığına bakmışım.
+
+523
+01:15:52,503 --> 01:16:00,283
+Yani buradaki ikisi arasındaki kolon vektörünü de ben ne yapmışım?
+
+524
+01:16:01,943 --> 01:16:05,803
+Bir epsilon değeriyle karşılaştırmışım.
+
+525
+01:16:05,803 --> 01:16:25,903
+Eğer bu epsilon değerinden küçükse yani iki tane page rank vektörü arasındaki fark ya birbirine eşit ya da çok ihmal edilebilir küçüklükte bir değerse o zaman ben bu recursive fonksiyondan çıkıyorum.
+
+526
+01:16:26,083 --> 01:16:33,423
+Yani benim bulmuş olduğum page rank kolon vektörü nihai değerlere sahip bir kolon vektörüdür diyorum.
+
+527
+01:16:33,779 --> 01:16:38,779
+Aksi takdirde tekrardan ne yapmak gerekiyor? Başa geçmem gerekiyor.
+
+528
+01:16:41,799 --> 01:16:55,319
+Hocam, bu kısmı ben anlayamadım. Initialize kısmına bir bölü n verme sebebimiz ne? Zaten skolastik vektör bir bölü n olarak oluşmuyor mu? Niye tekrar R0'a bir bölü n veriyorduk?
+
+529
+01:16:55,319 --> 01:17:19,619
+Şimdi stokastik matris dediğimiz şey M'di değil mi? Yani M'in her bir kolonundaki arkadaşların toplamını ne diyordum? Bir diyorum. Ama şu anda ben R'yi konuşuyorum. Diyorum ki hani bu R, yani ilk başta ben bu notların her birisine bir tane initial page rank değeri vermem gerekiyor.
+
+530
+01:17:19,620 --> 01:17:37,379
+yani bu denkleme başlarken. Acaba ne vereyim? Yani neyle başlayayım? Hepsine bir mi vereyim? Hepsine sıfır mı vereyim? Bir değerle başlamam gerekiyor. Öncelikle benim initialize için kullanmış olduğum değerler bir bölü en olsun diye başlıyorum.
+
+531
+01:17:37,379 --> 01:18:02,619
+Yani illa az sonra göreceğiz bu Power Iteration metodunu kullanırkenki teori bana az sonra diyecek ki sen hangi PageRank skor değerleriyle başlarsan başla nihayetinde aynı sonuç PageRank değerine yakınlayacaksın
+
+532
+01:18:02,619 --> 01:18:12,619
+yani illa hani hepsini bir bölü n olarak başlatmak zorunda değilim. Ama buradaki örnekte dedim ki hani ben bir bölü n ile başlatayım.
+
+533
+01:18:13,519 --> 01:18:21,799
+Bende de şey canlandı hocam yanlış olabilir ama hani R vektörü T anındaki pençreğin kuranlarını veriyordu ya bizde.
+
+534
+01:18:21,799 --> 01:18:22,619
+Evet.
+
+535
+01:18:23,319 --> 01:18:32,019
+Oradaki T anıyla T sıfır anı çıkarınca sanki epsilon değerini buluyormuşuz tarzı bir düşünce oluştu kafamda.
+
+536
+01:18:32,619 --> 01:18:41,839
+Direkt epsilon değerini onu buluyoruz. Diğer oranlara göre de T artı bir oranına göre de epsilon değerini kıyaslamışız gibi algılamıştım.
+
+537
+01:18:41,839 --> 01:18:53,539
+Bu ikisinin arasındaki farkın önceden belirlenmiş olan minimum bir değerden düşük olup olmadığına bakıyoruz.
+
+538
+01:18:53,640 --> 01:19:02,119
+Aslında baktığımız şey şu yakın samışma. Biz bunu sürekli iterasyon halinde yapıyoruz ya Ford öngüsü içerisinde.
+
+539
+01:19:02,119 --> 01:19:12,860
+diyeyim ki mesela 50 iterasyon sonucunda öyle bir noktaya gelecek ki bir sonraki PageRank değeriyle bir önceki PageRank değeri arasındaki fark neredeyse sıfır olacak.
+
+540
+01:19:13,860 --> 01:19:15,000
+Evet anladım hocam.
+
+541
+01:19:15,000 --> 01:19:32,000
+O zaman da diyoruz ki tamam diyoruz artık bu noktada PageRank algori şey dursun favoriterasyon ve bu oluşmuş olan PageRank vektöründeki değerlere bakaraktan ben bu graf üzerindeki her nodun PageRank değerini artık kullanıyorum.
+
+542
+01:19:32,119 --> 01:19:39,839
+şimdi bu power iteration metodunu şimdi bir örnek üzerinde yapalım daha da iyi anlayalım.
+
+543
+01:19:41,479 --> 01:19:52,119
+Şimdi bu örnek üzerinde yapalım. Bu oyuncak örnekten biz başlamıştık. Bu oyuncak örnek üzerinde öncelikle gittik kendimize stokastik komşuluk matrisini oluşturduk.
+
+544
+01:19:52,119 --> 01:20:03,099
+artık elimizde stokastik komşuluk matrisi var. Bir de kolon vektörüne ihtiyacım var. Kolon vektörünü de dedim ki bütün kolon vektörünün değerleri bir bölü en olsun.
+
+545
+01:20:03,099 --> 01:20:13,599
+Zorunlu değilim bak tekrar diyorum ama bir yerden başlamam gerekiyor. Ben hepsi bir bölü üç olacak, bir bölü en olacak şekilde başladım.
+
+546
+01:20:13,599 --> 01:20:31,139
+Şimdi bu benim stokastik eccesi matrisim. Şuradaki benim ilk baştaki yani sıfırıncı andaki kolon vektörüm. Şimdi bu M ile bu R'yi çarpacağım.
+
+547
+01:20:31,699 --> 01:20:47,160
+Bunu çarptıktan sonra bir sonraki aşamadaki neler olanları da gösterelim. Evet, şimdi burada bütün iterasyon tamamlandıktan sonraki sonucu gösteriyor. Ben size adım adım anlatayım.
+
+548
+01:20:47,160 --> 01:20:57,739
+Şimdi M ile bu ilk baştaki R0 vektörünü çarptığım zaman bu sefer şu ikinci şuradaki kolon vektörünü elde edeceğim.
+
+549
+01:20:57,739 --> 01:21:17,119
+Şimdi bu kolon vektörüyle bu ikisinin arasındaki farka bakıyorum. Eğer bu ikisinin arasındaki fark şeyse benim epsilon değerimden büyükse tekrardan Power Literation metodunun başına gidiyorum.
+
+550
+01:21:17,119 --> 01:21:42,999
+yani birinci adıma gidiyorum. Birinci adımda tekrardan ne yapıyorum? Bu T1 anındaki kolon vektörüyle bu stokastik matresi çarpıyorum. Bu sefer ikinci andaki kolon vektörünü hede ediyorum. İkinci andaki kolon vektörü acaba bir öncekiyle eşit ya da ikisi arasındaki fark minimum mu diye bakıyorum değilse tekrardan birinci adıma gidiyorum.
+
+551
+01:21:42,999 --> 01:21:54,899
+bunu tekrarlıyorum ta ki en sonda öyle bir kolon vektörüne ulaşmışım ki bu kolon vektörüyle bir önceki kolon vektörü neredeyse birbirine eşit çıkmış.
+
+552
+01:21:55,639 --> 01:22:02,639
+Yani yakınsamış, belirli bir değere yakınsamış. Artık diyorum ki burada duruyorum.
+
+553
+01:22:02,639 --> 01:22:12,699
+Ve en sonda bulduğum nihai kolon vektörünün her bir elemanı da benim bu grafım üzerindeki notların PageRank değerlerini veriyor.
+
+554
+01:22:12,699 --> 01:22:19,680
+Yani Y'ninki 6 bölü 15'miş, A'ninki 6 bölü 15, M'ninki 3 bölü 15.
+
+555
+01:22:21,119 --> 01:22:23,579
+Power iteration metodu bu şekilde çalışıyor.
+
+556
+01:22:27,060 --> 01:22:49,060
+Şimdi ben şu ana kadar size PageRank'i anlatırken dedim ki hani bir nodun bir başka noda vermiş olduğu link sayesinde bu nod kendi PageRank değerini oransal olarak bir sonraki noda aktarıyor dedim.
+
+557
+01:22:49,060 --> 01:22:50,060
+Okey?
+
+558
+01:22:52,060 --> 01:22:53,060
+Aldım.
+
+559
+01:22:56,724 --> 01:23:12,803
+Şimdi bu aynı şeyi bu sefer Random Walk Interpretation kullanarak anlatacağım. Yani web üzerindeki bir kişinin web'i dolaşma mantığını anlatarak anlatacağım.
+
+560
+01:23:12,803 --> 01:23:30,724
+Şimdi siz bir sayfadasınız. Bu sayfada bir HTML dokümanını inceliyorsunuz. Web grafi üzerinde bir sonraki sayfaya gidebilmeniz için ne yapabilirsiniz?
+
+561
+01:23:30,724 --> 01:23:41,503
+Bu sayfanın size sunmuş olduğu hyperlinklerden bir tanesine basarsınız değil mi? Bu linklerden bir tanesine basarsınız. Sizi nereye götürecektir?
+
+562
+01:23:41,503 --> 01:23:50,843
+bir sonraki sayfaya götürecektir. Şimdi öyle bir browser düşünün ki bu browserda back butonu yok. Yani geriye dönemiyorsunuz.
+
+563
+01:23:51,043 --> 01:24:01,683
+Ve bu browserda aynı zamanda textbox da yok. Yani gidip oraya kendiniz URL type edip kendiniz de istediğiniz sayfaya gidemiyorsunuz.
+
+564
+01:24:01,983 --> 01:24:11,304
+Yani tek yapabileceğiniz ne yapmak? Mevcuttaki HTML üzerindeki URL'lere basarak buradan bir sonraki sayfaya gitmek.
+
+565
+01:24:11,503 --> 01:24:36,283
+şimdi diyelim ki bu sayfa üzerinde 10 tane link olsun siz bir sonraki sayfaya gideceksiniz şimdi bu bir sonra gideceğiniz 10 tane link var bu 10 tane linkten bir tanesini seçip gitme olasılığınız ne demek oluyor o zaman 1 bölü 10 yani siz 1 bölü 10 olasılıkla bir sonraki sayfaya gideceksiniz
+
+566
+01:24:36,283 --> 01:24:54,743
+mesela buradaki slide'daki örnekte mesela i1 sayfası, i1 sayfasının 10 tane diyelim ki linki var, i1 sayfasından j. sayfaya gitme olasılığınız nedir? 1 bölü 10'dur.
+
+567
+01:24:54,743 --> 01:25:03,783
+1 bölü 10 olasılıkla siz J'ninci sayfaya ulaşacaksınızdır.
+
+568
+01:25:04,783 --> 01:25:17,023
+Şimdi T anında diyelim ki ben İ1. sayfada olabilirim, İ2. sayfada olabilirim, İ3. sayfada olabilirim.
+
+569
+01:25:17,023 --> 01:25:22,863
+T1 anında ise J'ninci sayfada olma durumum var.
+
+570
+01:25:22,863 --> 01:25:40,703
+Şimdi J'ninci sayfada bulunma olasılığımı hesaplarken diyorum ki J'ninci sayfada bir tane random surferin olma olasılığını hesaplıyorsan bu I1. sayfada bulunma olasılığı çarpı I1'in kaç tane şeyi var?
+
+571
+01:25:40,703 --> 01:25:53,523
+10 tane linki var. 1 bölü 10 yani R1 çarpı 1 bölü 10 diyorum. Yani I1'den bir random surferun J'ye gelme olasılığını alıyorum.
+
+572
+01:25:53,876 --> 01:26:07,515
+Artı i2'de random surfer olmuş olsaydı bundan bu linki takip ederek j'de olma olasılığı i3'de olmuş olsaydı i3'ü takip ederek j'de olma olasılığı.
+
+573
+01:26:07,915 --> 01:26:14,835
+Bu olasılıkları topladığım zaman bana random surfer'ın j'ninci not üzerinde olma olasılığını veriyor.
+
+574
+01:26:14,835 --> 01:26:18,495
+Şimdi ben ne yapmış oldum?
+
+575
+01:26:18,495 --> 01:26:31,695
+Az önce PageRank değerlerini oransal olarak bir sonraki noda aktarıyor demiştim. Şimdi de bunu olasılık bakış açısıyla söyledim.
+
+576
+01:26:31,695 --> 01:27:01,676
+Yani J'ninci anında J'ninci not üzerinde herhangi bir anda bir kişinin bulunma olasılığını hesaplarken bunun bir önce buna link veren notların olasılıkları çarpı bu bir önceki notlarda Web Surfer'ın bulunma olasılığı çarpı bu arkadaşların dış dünyaya vermiş oldukları link sayısını
+
+577
+01:27:01,695 --> 01:27:03,395
+link sayısı
+
+578
+01:27:03,395 --> 01:27:06,316
+artı bu çarpımların
+
+579
+01:27:06,316 --> 01:27:08,015
+toplamını alıyorum. Bu da bana
+
+580
+01:27:08,015 --> 01:27:10,676
+jn.websurfer'ın
+
+581
+01:27:10,676 --> 01:27:11,816
+bulunma olasılığını veriyor.
+
+582
+01:27:12,416 --> 01:27:14,736
+Peki ben bu random walk interpretation'ı
+
+583
+01:27:14,736 --> 01:27:15,475
+niye anlattım?
+
+584
+01:27:17,475 --> 01:27:17,695
+Okey.
+
+585
+01:27:18,456 --> 01:27:18,695
+Şimdi
+
+586
+01:27:18,695 --> 01:27:22,596
+şuradaki formül
+
+587
+01:27:22,596 --> 01:27:24,635
+aslında bizim daha önce
+
+588
+01:27:24,635 --> 01:27:26,816
+konuştuğumuz formülün
+
+589
+01:27:26,816 --> 01:27:28,395
+aynısı. Yine elimde
+
+590
+01:27:28,395 --> 01:27:30,475
+stokastik adjacency
+
+591
+01:27:30,475 --> 01:27:32,876
+matrisim var. Ben bunu
+
+592
+01:27:32,876 --> 01:27:34,596
+t'ninci
+
+593
+01:27:34,596 --> 01:27:35,115
+anında
+
+594
+01:27:35,115 --> 01:27:39,456
+bu random surfer'ın
+
+595
+01:27:39,456 --> 01:27:42,816
+n tane not
+
+596
+01:27:42,816 --> 01:27:44,556
+üzerinde bulunma
+
+597
+01:27:44,556 --> 01:27:46,255
+olasılıklarını gösteren
+
+598
+01:27:46,255 --> 01:27:48,775
+bu page rank
+
+599
+01:27:48,775 --> 01:27:50,775
+bu probability
+
+600
+01:27:50,775 --> 01:27:52,835
+kolon vektörü
+
+601
+01:27:52,835 --> 01:27:54,736
+çarpıyorum
+
+602
+01:27:54,736 --> 01:27:57,015
+bu matrisle
+
+603
+01:27:57,015 --> 01:27:59,075
+t artı birinci
+
+604
+01:27:59,075 --> 01:27:59,835
+anında
+
+605
+01:27:59,835 --> 01:28:08,135
+random surfer'ın herhangi bir not üzerinde bulunma olasılıklarını gösteren probability vektörü elde ediyorum.
+
+606
+01:28:08,995 --> 01:28:17,515
+Yani artık buradaki denklemi probability açısından yorumluyorum.
+
+607
+01:28:17,956 --> 01:28:20,335
+Demek ki ne diyorum tekrardan söylüyorum.
+
+608
+01:28:20,335 --> 01:28:29,635
+T'ninci anında random surfer'ın herhangi bir not üzerinde bulunma olasılıklarını ifade eden probability vektörü bu.
+
+609
+01:28:29,835 --> 01:28:30,595
+bunu
+
+610
+01:28:30,595 --> 01:28:33,975
+stokastik adjacency matrisiyle
+
+611
+01:28:33,975 --> 01:28:35,475
+çarpıyorum. Yine bana
+
+612
+01:28:35,475 --> 01:28:37,775
+t artı bir anında bu
+
+613
+01:28:37,775 --> 01:28:39,935
+random surferin herhangi bir not üzerinde
+
+614
+01:28:39,935 --> 01:28:41,535
+bulunma olasılıklarını gösteren
+
+615
+01:28:41,535 --> 01:28:43,215
+bu vektörü gösteriyor.
+
+616
+01:28:44,695 --> 01:28:45,655
+Şimdi
+
+617
+01:28:45,655 --> 01:28:47,935
+biz diyoruz ki
+
+618
+01:28:47,935 --> 01:28:49,195
+bu
+
+619
+01:28:49,195 --> 01:28:51,215
+random walker
+
+620
+01:28:51,215 --> 01:28:52,715
+ben bu denklemi
+
+621
+01:28:52,715 --> 01:28:54,915
+çözdüğüm zaman
+
+622
+01:28:54,915 --> 01:28:57,375
+belirli bir şeye
+
+623
+01:28:57,375 --> 01:28:59,555
+yakınsıyorsa yani belirli
+
+624
+01:28:59,555 --> 01:29:01,735
+bir iterasyondan
+
+625
+01:29:01,735 --> 01:29:03,395
+sonra bu probability
+
+626
+01:29:03,395 --> 01:29:05,455
+vektörü belirli bir değeri
+
+627
+01:29:05,455 --> 01:29:07,315
+yakınsıyorsa bu
+
+628
+01:29:07,315 --> 01:29:09,876
+değer stationary distribution'dır.
+
+629
+01:29:10,815 --> 01:29:11,315
+Yani
+
+630
+01:29:11,315 --> 01:29:13,255
+değişmez. Bu değerin
+
+631
+01:29:13,255 --> 01:29:15,195
+elemanları
+
+632
+01:29:15,195 --> 01:29:17,415
+bu probability vektörünün
+
+633
+01:29:17,415 --> 01:29:19,355
+elemanları değişmez. Stationary
+
+634
+01:29:19,355 --> 01:29:21,255
+distribution'dır. Bu
+
+635
+01:29:21,255 --> 01:29:22,895
+stationary distribution
+
+636
+01:29:22,895 --> 01:29:26,015
+değeri de
+
+637
+01:29:26,015 --> 01:29:27,735
+başlangıçta
+
+638
+01:29:27,735 --> 01:29:29,535
+benim seçmiş olduğum
+
+639
+01:29:29,535 --> 01:29:40,975
+Initial probability değeri ne olursa olsun her zaman nihai olarak yakınsıyacağım probability vektörü değeri aynı olacaktır.
+
+640
+01:29:40,975 --> 01:29:42,975
+Şimdi bu söylemiş olduğumu...
+
+641
+01:29:44,627 --> 01:29:58,887
+destekleyen bu random walk teorisinden gelen Markov-Zincir prosesleri teori mi bunu söylüyor?
+
+642
+01:29:58,887 --> 01:30:25,907
+Markov zincir proses teorisi diyor ki eğer diyor sen diyor şuradaki az önce yorumladığın denklem diyor bu denklemde diyor bu M matrisi belirli koşulları sağlarsa diyor şu denklemi çözdüğün zaman P'ye probability vektörünün yakınsadığı değer her zaman unique olacaktır.
+
+643
+01:30:25,907 --> 01:30:42,047
+Ve ilk başta senin seçmiş olduğun probability değerleri ne olursa olsun yakın olacaktır. Hani biz şeye başlarken, derse başlarken ben demiştim ya şurada hadi diyelim ki bunların hepsine bir bölü en değeri verelim. Bu şekilde başlayalım.
+
+644
+01:30:42,047 --> 01:31:01,627
+Bu şu diyor ki şuradaki Markov zincir teorisi diyor ki eğer diyor bu başlangıçta senin başlamış olduğun matris o matris bir grafi ifade ediyordu hatırlayın.
+
+645
+01:31:01,627 --> 01:31:19,767
+bu graf belirli kondişonları sağlıyorsa bu durumda benim nihayet olarak yakınsıyacağım probability vektörü yani bir başka deyişle page rank vektörü her zaman unique olacaktır.
+
+646
+01:31:19,767 --> 01:31:33,147
+Stationary Distribution olacaktır. Yani benim başlangıçta seçmiş olduğum Initial değerler, PageRank değerleri ne olursa olsun nihayetinde ulaşacağım, yakın isteyeceğim değer aynı olacaktır.
+
+647
+01:31:33,147 --> 01:31:53,348
+Şimdi bunu niye söylüyorum? Bunu şunun için söylüyorum. Ben ilk başta bu power iteration'e sokacağım bu denklemdeki stokastik adjacency matrisle page rank vektörünü çarpmıştım. Yine bir sonraki adımdaki page rank vektörünü elde etmiştim.
+
+648
+01:31:53,348 --> 01:32:03,208
+Initial değerlerin ne olursa olsun eğer bu matriz belirli koşulları sağlıyorsa ben mutlaka bir unique page rank değerine yakınlayacağım.
+
+649
+01:32:03,348 --> 01:32:05,907
+Yani bu bir infinite loop olmayacak.
+
+650
+01:32:06,127 --> 01:32:07,228
+Bu benim için çok önemli.
+
+651
+01:32:07,907 --> 01:32:17,127
+Çünkü bir web graf üzerinde milyonlarca not var ve milyonlarca not için bir page rank vektörü hesaplıyorum.
+
+652
+01:32:18,088 --> 01:32:22,988
+Ve bunun infinite loop'a girmesi benim hiç istediğim bir şey değil.
+
+653
+01:32:22,988 --> 01:32:25,208
+yani belirli iterasyon sonucunda
+
+654
+01:32:25,208 --> 01:32:27,088
+ben bir page rank değerini
+
+655
+01:32:27,088 --> 01:32:28,407
+yakınsamasını istiyorum.
+
+656
+01:32:28,807 --> 01:32:31,068
+Ve bu teorem
+
+657
+01:32:31,068 --> 01:32:32,988
+de diyor ki evet arkadaş bu
+
+658
+01:32:32,988 --> 01:32:35,008
+kesinlikle bir page rank
+
+659
+01:32:35,008 --> 01:32:36,167
+değerine yakınsar.
+
+660
+01:32:36,687 --> 01:32:38,928
+Ancak bu matrisin
+
+661
+01:32:38,928 --> 01:32:41,027
+belirli kondişimlerini sağlaması
+
+662
+01:32:41,027 --> 01:32:43,008
+gerekiyor. Yakınsadığı değer de
+
+663
+01:32:43,008 --> 01:32:43,488
+zaten
+
+664
+01:32:43,488 --> 01:32:46,547
+initial page rank
+
+665
+01:32:46,547 --> 01:32:48,728
+değerlerini ne seçersen seç
+
+666
+01:32:48,728 --> 01:32:50,527
+mutlaka aynı değere yakınsar.
+
+667
+01:32:50,527 --> 01:32:50,767
+Ok.
+
+668
+01:32:52,988 --> 01:33:15,508
+Peki bu durumda şuna geliyoruz. Eğer ben bu konuştuğumuz PageRank hesabını bu Random Walk Interpretation'la da bir başka bakış açısıyla anlattım ve dedim ki ben probability bakış açısıyla da şu denklemi açıklayabilirim.
+
+669
+01:33:15,507 --> 01:33:28,407
+Ve bu denklemi bir unique değere yakınlayacağını da Random Walk teorisindeki Markov zincir prosesine dayalı olarak kanıtlayabilirim.
+
+670
+01:33:28,487 --> 01:33:33,567
+Ama bu teori diyor ki mutlaka grafiğin belli kondişonları sağlaması lazım.
+
+671
+01:33:33,687 --> 01:33:35,747
+Peki şimdi bu kondişonlar nedir buna bakalım.
+
+672
+01:33:38,107 --> 01:33:41,767
+Şimdi bizim çıkış noktamız neydi arkadaşlar?
+
+673
+01:33:42,420 --> 01:33:59,239
+Biz demiştik ki bir not J'ye link veren notlar bu notların oransal PageRank değerlerini toplarsam J'nin PageRank değerini hesaplıyorum dedim.
+
+674
+01:33:59,239 --> 01:34:10,959
+Bu bizim ilk baştaki oyuncak örnekten çıkartmış olduğumuz PageRank skor formülüydü. Sonra dedik ki biz bunu bir de matriz reprezentasyonunu yazalım.
+
+675
+01:34:10,959 --> 01:34:28,559
+matriz reprezentasyonu da buydu. Bu M stokastik adjesisi matrizi ifade ediyordu. R ise bir önceki PageRank vektörünü, buradaki yani denklemin sol tarafındaki R ise bir sonraki PageRank değerini ifade ediyordu.
+
+676
+01:34:28,559 --> 01:34:57,220
+Şimdi üç tane soruya yanıt vermemiz gerekiyor. Birincisi buradaki denklemi ben Power Riteration metoduyla çözdüğümde bu converge olacak mı? Yani herhangi bir nihai PageRank değerine converge olacak mı? İkincisi tamam converge oldu yani yakınsadı. Acaba bu yakınsamış olduğu PageRank vektörü benim istediğim bir şey mi?
+
+677
+01:34:57,219 --> 01:35:21,199
+üçüncüsü yakınsamış olduğu PageRank skorları mantıklama. Şimdi bu üç tane soruya yanıt verecek şekilde, doğru yanıt verecek şekilde bu stokastik encesisi, matrisinin hangi kondisyonlara sahip olması gerektiğine bakacağız.
+
+678
+01:35:21,199 --> 01:35:31,879
+Şimdi bir stokastik encesi matris içerisinde bulunabilecek problemler nelerdir?
+
+679
+01:35:31,879 --> 01:35:37,780
+Yani stokastik encesi matris dediğimiz şey neyi ifade ediyordu? Bir grafiği ifade ediyordu.
+
+680
+01:35:37,939 --> 01:35:42,199
+Yani dolayısıyla bir grafikte karşılaşabileceğimiz problemler nelerdir?
+
+681
+01:35:42,799 --> 01:35:45,280
+Bunlardan bir tanesi spider trap problemi.
+
+682
+01:35:45,860 --> 01:35:49,539
+Şimdi diyelim ki mesela benim oyuncak grafiğim şu olsun arkadaşlar.
+
+683
+01:35:49,539 --> 01:35:58,939
+Yani elimdeki bu M matrisi şundan oluşmuş olsun. Bir A bir de B. İki tane elemandan oluşan bir web grafı olduğunu düşünün.
+
+684
+01:35:59,899 --> 01:36:16,939
+Şimdi ben bunun üzerinde şeyi yazdığımı düşünün. R eşittir M çarpı R. Denklemi yazdığımı düşünün. İlk başta da R'ye bir sıfır verdiğimi düşünün.
+
+685
+01:36:16,939 --> 01:36:44,959
+düşünün. Hatırlayın, şey diyordu ki Markov zincir teoremi, arkadaş diyordu, eğer diyordu, bu matriz belirli bu kondişonları sağlarsa, senin başta başlamış olduğun initial PageRank değerleri ne olursa olsun, en nihayetinde bu Power Riteration'ı çalıştırdığın zaman bir tane unique PageRank değerine yakınsıyacak. Yani değişmeyecek belli bir itirasyon sonra.
+
+686
+01:36:44,959 --> 01:36:52,759
+Peki bu küçük graf için ben de initial vektör olarak 1 ve 0'ı seçtim o zaman
+
+687
+01:36:52,759 --> 01:37:05,399
+Şimdi 1 ve 0'ı seçtim ben bunu götürüp matrisinle çarptığım zaman bir sonraki adımı da elde ettiğim değerler 0, 1 oluyor
+
+688
+01:37:05,399 --> 01:37:11,119
+0, 1 ile tekrardan matrisi çarptığım zaman bir sonraki değer 1, 0 oluyor
+
+689
+01:37:11,119 --> 01:37:17,659
+bir sıfırı verdiğimde sıfırdır. Dikkat edin bu hep böyle gidecek. Yani hiçbir zaman bir değere yakın sanıyor.
+
+690
+01:37:18,195 --> 01:37:37,275
+Okey. Demek ki eğer ben bu şekilde benim grafımda böyle bir circle varsa yani A, B'ye vermiş, B, A'ye vermiş başka bir yere de gidemiyorlar. Yani belli adımda A'dan başlıyorsun, belli adımda B'ye gidiyorsun ve B'den başlıyorsun, belli adımda yine A'ya gidiyorsun.
+
+691
+01:37:37,275 --> 01:37:41,456
+Hani böyle bir durum varsa biz buna spider trap problemi diyoruz.
+
+692
+01:37:41,675 --> 01:37:50,276
+Ve kesinlikle böyle bir şey varsa benim page rank formülüm converge olmuyor.
+
+693
+01:37:51,015 --> 01:37:54,276
+Demek ki spider trap problemi varsa bunu benim çözmem gerekiyor.
+
+694
+01:37:56,175 --> 01:38:01,215
+Şimdi bir grafikte diğer karşılaşabileceğim problem ise dead end problemi arkadaşlar.
+
+695
+01:38:02,236 --> 01:38:03,475
+Dead end problemi nedir?
+
+696
+01:38:03,935 --> 01:38:06,755
+Bir tane not link alıyor ama kimseye link vermiyor.
+
+697
+01:38:06,755 --> 01:38:10,435
+Yani grafik içerisinde link alıyor ama kimseyi link alıyor.
+
+698
+01:38:10,515 --> 01:38:15,715
+Bu oyuncak grafik üzerinde şimdi PageRank formülümüzü çalıştıralım.
+
+699
+01:38:16,435 --> 01:38:19,235
+Initial PageRank değeri olarak 1 ve 0 seçelim.
+
+700
+01:38:19,335 --> 01:38:22,355
+Yani A'nın PageRank'in 1, B'ninkine 0 diyelim.
+
+701
+01:38:23,416 --> 01:38:28,276
+Şimdi ben bu durumda bu şeyi çalıştırdığım zaman
+
+702
+01:38:28,276 --> 01:38:29,955
+Initial PageRank değerim bu.
+
+703
+01:38:30,375 --> 01:38:34,215
+Matrisimle çarptığım zaman bir sonraki değerim 0, 1 oldu.
+
+704
+01:38:34,215 --> 01:38:36,695
+matrisinle çarptığı zaman
+
+705
+01:38:36,695 --> 01:38:40,135
+bir sonraki değer 0,0 oldu
+
+706
+01:38:40,135 --> 01:38:42,655
+şimdi converge oluyor
+
+707
+01:38:42,655 --> 01:38:44,875
+yani bir şeye yakınsıyor ama yakınsadığı
+
+708
+01:38:44,875 --> 01:38:46,435
+şey bizim istediğimiz şey değil
+
+709
+01:38:46,435 --> 01:38:49,055
+neden? biz şimdi böylesi bir grafikte
+
+710
+01:38:49,055 --> 01:38:50,155
+isteriz ki
+
+711
+01:38:50,155 --> 01:38:52,115
+her bir nodun
+
+712
+01:38:52,115 --> 01:38:54,915
+page rank değeri birbirinden farklı olsun ki
+
+713
+01:38:54,915 --> 01:38:56,855
+biz bunlar arasında bir sıralama
+
+714
+01:38:56,855 --> 01:38:57,515
+yapabilelim
+
+715
+01:38:57,515 --> 01:39:00,675
+hangisi diğerisine göre göreceli bir şekilde
+
+716
+01:39:00,675 --> 01:39:01,915
+önemlidir diyebilelim
+
+717
+01:39:01,916 --> 01:39:04,996
+hepsinin page rank değerleri birbirine eşit çıkarsa
+
+718
+01:39:04,996 --> 01:39:07,456
+bundan zaten ben yararlanamam.
+
+719
+01:39:08,376 --> 01:39:09,255
+Dolayısıyla
+
+720
+01:39:09,255 --> 01:39:10,816
+converge olsa bile
+
+721
+01:39:10,816 --> 01:39:13,316
+bizim istediğimiz mantıklı bir şeye
+
+722
+01:39:13,316 --> 01:39:14,596
+converge olması gerekiyor.
+
+723
+01:39:15,176 --> 01:39:17,115
+Demek ki bir grafikte eğer
+
+724
+01:39:17,115 --> 01:39:19,576
+dead end problemi varsa bu da benim istemediğim
+
+725
+01:39:19,576 --> 01:39:20,076
+problem.
+
+726
+01:39:22,475 --> 01:39:23,716
+Demek ki ben
+
+727
+01:39:23,716 --> 01:39:26,236
+gerçek hayattaki web grafiğinde
+
+728
+01:39:26,236 --> 01:39:28,095
+iki tane problemle karşılaşıyorum.
+
+729
+01:39:28,195 --> 01:39:29,996
+Bir tanesi dead end problemi
+
+730
+01:39:29,996 --> 01:39:39,315
+Yani gerçek hayattaki web grafiklerinde bazı notlar var ki dışarıdan link alıyorlar ama başka kimseye link vermiyorlar.
+
+731
+01:39:39,315 --> 01:39:55,695
+Bir de spider trap problemi. Öyle not şeyler var ki, grafikler var ki, sub grafikler bunlar kendi aralarında link veriyorlar ama dış dünyaya link vermiyorlar.
+
+732
+01:39:55,695 --> 01:40:00,556
+Yani bunların içerisinde bilinikten başladığın zaman sürekli kendi içerisinde dönüyorsun.
+
+733
+01:40:01,175 --> 01:40:03,996
+Dolayısıyla bu da diğer bir başka problem.
+
+734
+01:40:04,455 --> 01:40:14,296
+Şimdi eğer ben içerisinde dead end ve spider trap olan bir grafiği stokastik adjacency matriz şeklinde reprezent edersem,
+
+735
+01:40:14,295 --> 01:40:27,475
+Bunun üzerinde ben Power Iteration uyguladığım zaman Markov Zincir Process Teoremi diyor ki hiçbir zaman sen bir PageRank vektörüne yakınsayamazsın.
+
+736
+01:40:28,035 --> 01:40:39,255
+Dolayısıyla bu Dead End problemi ve Spider Track problemini öncelikle çözmen gerekiyor ki bu Power Iteration metodu seni bir PageRank vektörüne yakınsattırsın.
+
+737
+01:40:40,095 --> 01:40:40,295
+Peki.
+
+738
+01:40:41,115 --> 01:40:44,335
+O zaman ben problemlere tekrardan bir döneyim.
+
+739
+01:40:44,695 --> 01:40:47,716
+Ondan sonra da bu problemleri ne yapmaya çalışacağım?
+
+740
+01:40:49,636 --> 01:40:51,015
+Çözmeye çalışacağım.
+
+741
+01:40:51,636 --> 01:40:53,975
+Öncelikle spider trap problemine döneyim.
+
+742
+01:40:54,556 --> 01:40:56,136
+Spider trap problemi neydi?
+
+743
+01:40:56,136 --> 01:41:06,395
+Bir grafin içerisinde bir nottan başlayarak belirli adım sonra hep aynı noda dönüyorsam orada bir spider trap vardır.
+
+744
+01:41:07,115 --> 01:41:08,815
+Mesela bu oyuncak örneğime bakalım.
+
+745
+01:41:08,815 --> 01:41:11,056
+Bu oyuncak örneğimde 3 tane not var.
+
+746
+01:41:12,500 --> 01:41:29,459
+Burada dikkat edin A'dan M'ye bir link var. M'ye gelen bir tane web surfer tekrardan hep M'ye dönüyor. Yani belirli adım sonra hep aynı noda dönüyor. Bu durumda burada bir spider trap problemi var.
+
+747
+01:41:29,459 --> 01:41:51,919
+Eğer burada bir spider trap problemi varsa o durumda ne diyorduk? Biz power iteration metodunu çalıştırdığımızda ya herhangi bir değeri yakınsamıyorduk ya da yakınsıyorsak da yakınsadığımız değer bizim istediğimiz bir değer olmuyordu.
+
+748
+01:41:51,919 --> 01:42:20,979
+Şimdi bu oyuncak örneğinin örnek için stokastik eccesin simetrisi oluşturdum. Gördüğünüz gibi şurada stokastik eccesin simetrisim. İlk başta da seçmiş olduğum initial PageRank değerleri bu şekilde oldu. Ben PowerRiteration metodunu çalıştırdığım zaman en nihayetinde yakınsamış olduğum değer bu oldu. Ama bu benim istediğim bir PageRank skor değeri değil.
+
+749
+01:42:21,919 --> 01:42:42,099
+Çünkü bunu kullanaraktan ben bu network üzerinde sıralandırılmış bir şey çıkartamıyorum PageRank skor değeri çıkartamıyorum. Dolayısıyla buradaki spider trap probleminden dolayı benim power iteration metodum çalışmadı. Benim bunu düzeltmem lazım.
+
+750
+01:42:42,099 --> 01:42:50,779
+Şimdi bunu düzeltmek için PageRank formülünün önermiş olduğu çözüm şöyle bir çözüm
+
+751
+01:42:50,779 --> 01:43:04,119
+Diyor ki normalde bu random surfer ne yapıyordu? Bir sayfanın içerisinde bulunan linkleri takip ederekten bir sonraki sayfalara geçiyordu
+
+752
+01:43:04,119 --> 01:43:28,339
+Şimdi öyle bir düşünün ki bu sefer yeteneği de veriyorum bu random surfer'a. Browser'a textbox'a giriyorum. Diyorum ki arkadaş sen istediğin zaman herhangi bir bu web grifindeki herhangi bir URL'i textbox'a girip istediğin zaman istediğin sayfaya da geçebilirsin.
+
+753
+01:43:28,339 --> 01:43:36,440
+Yani belirli bir olasılıkla istiyorsan textbox'a git, yörel yaz, istediğin linke geç
+
+754
+01:43:36,440 --> 01:43:44,699
+Belirli bir olasılıkla da o sayfanın içerisindeki linkleri takip ederek bir sonraki linke geç
+
+755
+01:43:44,699 --> 01:43:49,239
+Yani şuradaki grafiğe bakacak olursak
+
+756
+01:43:59,667 --> 01:44:27,487
+hani şuradaki grafik pardon şunu şöyle yapayım. Şuradaki grafiğe bakacak olursak sol tarafta A'dan M'ye gelmiş Random Surfer eğer sadece M'nin üzerindeki linkleri takip edecek olsa hep M'ye gelecekti değil mi?
+
+757
+01:44:27,487 --> 01:44:48,427
+bu bizim istediğimiz bir şey değildi. Ve bu yeni önerdiğimiz çözümle diyoruz ki öyle bir şey yapalım ki M'den istediği anda hem Y'ye hem A'yı hem M'ye zıplayabilsin.
+
+758
+01:44:48,427 --> 01:44:58,007
+yani bir tane textbox koyalım istediği anda URL oraya girerekten Random Surfer istediği linki gidebilme yeteneğine sahip olsun.
+
+759
+01:44:58,627 --> 01:45:05,587
+Bunun için de ne yapıyoruz? Bu yeni getirdiğimiz şeye de teleport diyoruz.
+
+760
+01:45:05,587 --> 01:45:17,447
+Beta olasılığıyla herhangi bir sayfaya gidebilsin. 1-beta olasılığıyla mevcuttaki linkleri takip edebilsin.
+
+761
+01:45:17,447 --> 01:45:36,348
+Şimdi pardon beta olasılığıyla mevcuttaki linkleri takip edebilsin. 1-beta olasılığıyla da herhangi bir sayfaya zıplayabilsin. Beta için kullanılan değer ise 0.8 ya da 0.9.
+
+762
+01:45:36,348 --> 01:45:44,487
+Şimdi daha ilerlemeden oradaki formülü size göstermek istiyorum.
+
+763
+01:45:44,487 --> 01:46:08,587
+Evet. Şurada, şuradaki şu formülü hatırlıyorsunuz. Yani şurada betayı görmeyin arkadaşlar. Şu artı ve ondan sonraki kısmı da görmeyin. Ondan önceki şu beta olmadanki kısım şu ana kadar hep görmeye alışmış olduğunuz PageRank formülü.
+
+764
+01:46:08,587 --> 01:46:19,807
+yani J'nin PageRank değerini bulurken ne yapıyorduk? J'ye link veren arkadaşların oransal PageRank değerlerini toplayıp J'ye atıyorduk.
+
+765
+01:46:20,267 --> 01:46:35,207
+Şimdi ne diyorum? O durumda yani hiç bu beta değeri olmadan yani herhangi bir yanda başka notlara zıplama yeteneğini Random Surfer'a sunmadan biz ne diyorduk?
+
+766
+01:46:35,207 --> 01:46:59,747
+Diyorduk ki Random Surfer ancak kendisine sunulmuş olan linkleri takip eder diyorduk. Yani şuradaki kısım. Şimdi diyorum ki beta olasılıkla mevcuttaki linkleri takip etsin bu arkadaş. 1-beta olasılıkla da herhangi bir sayfaya atlayabilsin. Herhangi bir sayfaya atlama olasılığı ne olur? 1 bölü n olur değil mi?
+
+767
+01:46:59,748 --> 01:47:07,748
+çünkü en tane sayfa var. Ben oraya bir tane textbox koydum. Gidip en tane sayfadan birisinin URL'ini girebilir.
+
+768
+01:47:08,748 --> 01:47:17,748
+Dolayısıyla Random Surfer'ın linkleri takip ederek bir sonraki sayfa olan J'de olma olasılığı artı,
+
+769
+01:47:17,748 --> 01:47:28,507
+t artı, random server'ın gidip URL type ederek bir sonraki sayfaya geçme olasılığı ikisini topladığım zaman
+
+770
+01:47:28,507 --> 01:47:34,287
+random server'ın t artı bir anında j'ninci nokta olma olasılığını elde ediyorum.
+
+771
+01:47:34,708 --> 01:47:37,048
+Şimdi tekrardan geri dönelim.
+
+772
+01:47:42,707 --> 01:48:01,207
+Böylelikle ben ne yapmış oldum? Dedim ki eğer spider trap problemi varsa bir grafikte ben bu şekilde benim formülüme beta şeyini ekleyerekten bir çözüm sağlamış oluyorum.
+
+773
+01:48:01,207 --> 01:48:17,847
+random surfer böylesi bir spider trap'e girmiş olsa bile bu spider trap'ten şey olduğu için bu random teleport imkanını ben sunduğum için tekrardan grafiğe dönebilir.
+
+774
+01:48:18,447 --> 01:48:22,788
+Bu benim spider trap için bulmuş olduğum çözümdü.
+
+775
+01:48:23,687 --> 01:48:26,748
+Şimdi bir de ikinci problemim vardı, deadhead problemini.
+
+776
+01:48:26,748 --> 01:48:47,928
+Şimdi dedet problemini hatırlayalım. Bu oyuncak grafik üzerinde bakın bir tane not var. Bu no'da link var ama link dış dünyaya link yok. Yani random surfer diyelim ki şuralarda dolaştı en sonunda M'ye geldi ama M'den tekrardan diğer notlara dönemiyor. Bu benim istemediğim bir şey.
+
+777
+01:48:47,928 --> 01:49:02,148
+bunun için şu grafik için adjacency matrisi çizdiğimde de zaten bakacak olursanız M'den diğer hiçbir noda şey yok, link yok. Dolayısıyla bunların hepsi sıfır.
+
+778
+01:49:02,148 --> 01:49:15,888
+Bu benim zaten istemediğim bir şey. Yani bu eğer beden problemi olursa bu stokastik bir matris olmamış oluyor. Çünkü kolonlarından bir tanesinin toplamı bir olmamış oluyor.
+
+779
+01:49:15,888 --> 01:49:27,608
+dolayısıyla içerisinde dead end problemi olan bir tane matriz zaten ne olmuş oluyor? Stokastik, eccesi matriz olmamış oluyor.
+
+780
+01:49:28,508 --> 01:49:37,087
+Şimdi böylesi bir matrizle ben power iteration matriyatını çalıştırmış olsaydım ilk başta 1 bölü 3'lerden başladığımı düşünelim initial olarak.
+
+781
+01:49:37,087 --> 01:49:45,207
+ne olacaktı? Şu matrisle bu vektörü çarptığında yeni vektör şu olacaktı, bu vektörle matrisle çarptığında yeni vektör bu.
+
+782
+01:49:45,207 --> 01:49:53,807
+Bunu devam ettirdiğimde nihayet olarak yakınsayacağım vektör şunları içerecekti. 0, 0, 0. Bu da benim istemediğim bir şey.
+
+783
+01:49:54,827 --> 01:50:00,967
+Yani yakınsadığı değerin de benim kullanabileceğim bir PageRank vektörü olması gerekiyor.
+
+784
+01:50:01,407 --> 01:50:03,687
+Dolayısıyla dead end problemini de çözmem lazım.
+
+785
+01:50:03,687 --> 01:50:23,487
+Şimdi deadhead problemini de yine teleport yaklaşımıyla çözüyorum ama burada şunu yapıyorum diyorum ki benim bu edgecense matrisimi bir güncelleme yapacağım. Bu yapacağım güncellemeyi de şu şekilde yapacağım.
+
+786
+01:50:23,487 --> 01:50:40,207
+Şimdi dead end problemi oluşturan nottan diğer bütün notlara sanki sanal bir tane link varmış gibi düşüneceğim kendisi dahil olmak üzere ve bunu şeye yansıtacağım stokastik adjessence matrise yansıtacağım
+
+787
+01:50:40,207 --> 01:50:50,288
+Yani ne yapıyorum dead end problemi olan not kim? M, M'e 3 tane sanal link ekliyorum bir kendisine bir Y'ye bir tane A'ya
+
+788
+01:50:50,288 --> 01:50:55,047
+Bu durumda yeni oluşan stokastik matrisim nasıl bir şey olacak?
+
+789
+01:50:56,047 --> 01:51:05,267
+EJS'e şu şekilde olacak. Yani M'in bulunduğu sütuna ne yaptım? 3 tane link ekledim. Dolayısıyla buraya non-zero değerler gelecek.
+
+790
+01:51:06,308 --> 01:51:16,728
+Ve gelecek değerde ne olacak? 1 bölü M'in dış dünyaya verdiği link sayısı kadar. Yani 1 bölü 3 olacak. 3 tane sanal link verdiğim için 1 bölü 3, 1 bölü 3, 1 bölü 3.
+
+791
+01:51:16,727 --> 01:51:29,407
+Böylelikle ne yapmış oldum? İçerisinde dead end problemi olan bir matrisi artık düzeltmiş oldum, stokastik adjacency matris haline getirmiş oldum
+
+792
+01:51:29,407 --> 01:51:34,787
+Şimdi bu iki tane karşılaştığım probleme iki tane çözüm buldum
+
+793
+01:51:34,787 --> 01:51:42,227
+Şimdi bu çözümlerle birlikte artık benim PageRank formülüm ne hale gelmiş buna bir bakalım
+
+794
+01:51:42,608 --> 01:52:00,567
+Bizim şimdi ilk baştaki şeyimiz neydi? Denkliğimiz şuydu. M, stochastic adjacency matris olacaktı. T'ninci anındaki PageRank vektörüyle çarpacaktık. T artı birinci anındaki PageRank vektörünü bulacaktık.
+
+795
+01:52:00,567 --> 01:52:26,667
+ok? Markov zincir teoremi bize demişti ki, arkadaş demişti, eğer demişti, M, stochastic adjacency matriz belirli koşulları sağlıyorsa, sen ilk başta başlamış olduğun PageRank vektörlerinin değerleri ne olursa olsun, mutlaka ki belli bir iterasyon sonucunda, senin Power Reteration metodun bir tane PageRank vektörüne yakınlayacaktır.
+
+796
+01:52:26,667 --> 01:52:33,807
+ve bu değer stationary distribution olacaktır. Kesinlikle değerleri değişmeyecektir. Bunu söylüyorum.
+
+797
+01:52:37,107 --> 01:52:46,927
+Ve Markov zincir teoremi diyordu ki bu matrisin mutlaka belirli değer şeyleri sağlaması gerekiyor.
+
+798
+01:52:46,927 --> 01:53:01,727
+condition'ları. Bu condition'lardan bir tanesi stokastik matris olması gerekiyor. Yani kolonların her birisini topladığın zaman kolonların elemanları toplama bir olması gerekiyor.
+
+799
+01:53:03,167 --> 01:53:16,887
+Irredusible olması gerekiyor. Yani içerisinde dead end problemi olmaması gerekiyor. Eperiodic olması gerekiyor. Yani içerisinde spider trap problemi olmaması gerekiyor.
+
+800
+01:53:16,927 --> 01:53:41,987
+Şimdi biz irredisible yani dead end problemine ne yaptık? Sanal linkler ekleyerekten çözüm bulduk. Eperiodic olmasına yani spider trap olması durumuna ise bu formüle jumping faktörü ekleyerek çözüm bulmuş olduk.
+
+801
+01:53:41,987 --> 01:53:44,268
+Şimdi bakalım durumlar nasıl değişti?
+
+802
+01:53:46,927 --> 01:54:03,468
+Şimdi bu benim dead end problemini çözmek için yaptığım yaklaşımdan sonra benim bu stokastik end agency matrisim başka bir matrise dönüşüyor.
+
+803
+01:54:03,468 --> 01:54:21,227
+bu matrise de A matrisi diyeyim. Buna aynı zamanda Google matrisi de deniyor. A matrisi. Çünkü bu PageRank'i öneren Google'ın sahipleri olduğu için onların paper'ından alınma bir formül bu.
+
+804
+01:54:21,227 --> 01:54:34,807
+Şimdi bu bizim içerisinde dead end problemi bulunan stokastik adjacency matrisiydi. Ben buna şuradaki bir bölü içleri eklemek için şurada bir tane daha matris yaratıyorum.
+
+805
+01:54:34,807 --> 01:54:55,447
+Bu matrise bakacak olursak, şu bir satır vektörü, şu da bir kolon vektörü, bu bir n'e bir vektör, bu da n'e bir vektör, tabii bu da bire n vektör
+
+806
+01:54:55,447 --> 01:55:05,347
+Şimdi bu n'e 1 ile 1'e n vektörü çarptığım zaman bir tane n'e n matris elde edeceğim.
+
+807
+01:55:05,347 --> 01:55:16,847
+n'e n matris elde edeceğim. Bu n'e n matrisin şuradaki şu arkadaşlar şöyle tahtada göstereyim.
+
+808
+01:55:17,548 --> 01:55:19,227
+Daha iyi anlayın.
+
+809
+01:55:24,564 --> 01:55:33,963
+Benim görüntümü tekrardan büyütecek olursanız tahtada daha rahat size gösterebileceğim.
+
+810
+01:55:33,963 --> 01:55:39,963
+Şimdi şu benim içerisinde problem olan M matrisimde.
+
+811
+01:55:42,523 --> 01:55:52,904
+Şurada sıfırlar vardı. Ondan sonra şu Y, şu A, şu M, şu Y, şu A, şu M.
+
+812
+01:55:52,904 --> 01:56:07,043
+Şimdi ben bunu içerisinde problem olmayan bir matrise dönüştürmek için ne yaptım? Şuna bir ekleme yapıyorum. Yapmak istediğim ekleme de yine n'e n boyutunda bir matris.
+
+813
+01:56:09,623 --> 01:56:16,424
+Şu matrisin şuradaki değerlerin hepsi 0, şuralarsa 1 bölü 3.
+
+814
+01:56:16,424 --> 01:56:33,903
+Şimdi bu matris ile bu matrisi topladığım zaman şunların değerlerini de yazayım. 1 bölü 2 imiş, 1 bölü 2 imiş, 1 bölü 2 imiş, 0'mış, 0, 1 bölü 2.
+
+815
+01:56:33,903 --> 01:56:45,744
+Şu matris ile şu matrisi topladığım zaman bu slide'da görmüş olduğunuz matrisi elde ediyorum. Peki şu konuştuğumuz matrisi nasıl elde edebilirim?
+
+816
+01:56:45,744 --> 01:56:47,784
+bu ise şu demek
+
+817
+01:56:47,784 --> 01:56:52,903
+şunu ise şöyle yapıyorum
+
+818
+01:56:52,903 --> 01:56:57,144
+A transpose çarpı bir bölü
+
+819
+01:56:57,144 --> 01:56:58,864
+NE
+
+820
+01:56:58,864 --> 01:57:01,004
+şu bir
+
+821
+01:57:01,004 --> 01:57:03,903
+NE bir
+
+822
+01:57:03,903 --> 01:57:05,564
+bir vektör
+
+823
+01:57:17,108 --> 01:57:20,267
+şu da 1'e N bir vektör.
+
+824
+01:57:22,687 --> 01:57:27,327
+Bu iki vektörü çarptığım zaman şunu elde ediyorum.
+
+825
+01:57:27,927 --> 01:57:35,927
+Bu N'e bir vektör şu görüyorsunuz A'nın transpozesini almışım.
+
+826
+01:57:36,427 --> 01:57:41,647
+Bu A'nın transpozesi dediğim şey elimde bir tane satır vektörü var.
+
+827
+01:57:47,475 --> 01:57:57,615
+şu benim için A satır vektörü, şu da bu satır vektörünün transpozesi yani kolon vektörüne dönüştürülmüş hali.
+
+828
+01:57:57,615 --> 01:58:25,615
+Eğer şu satır vektöründe birden n'e kadar elemanlar var. Eğer dış dünyaya alt debrisi sıfırsa yani hiçbir noda şey vermiyorsa m'de olduğu gibi şuraya ne yazıyorum? Bir yazıyorum. Diğerlerine sıfır yazıyorum.
+
+829
+01:58:25,615 --> 01:58:32,275
+Hocam çok pardon kamerayı biraz yukarı kaldırabilir misiniz? Üst taraf gözükmüyor da. Çok sağ olun.
+
+830
+01:58:32,275 --> 01:58:51,916
+Şurada üç tane elemanlı hani buradaki örnekten yola çıkaraktan bir tane satır vektörü var. Eğer bir not, notun dış dünyaya vermiş olduğu şey sayısı, eleman sayısı sıfırsa
+
+831
+01:58:51,915 --> 01:59:02,675
+M gibi, oyuncak grafiğimizdeki M gibi, buraya 1, diğerleri neyse 0 yazıyorum.
+
+832
+01:59:02,675 --> 01:59:17,995
+Şimdi bunun nesini alacağım? Transpozesini alacağım. Şu 0, 0, 1 hale gelmiş oluyor. Ondan sonra şurada ise buraya 1 bölü 3, 1 bölü 3, 1 bölü 3 yazıyorum.
+
+833
+01:59:17,995 --> 01:59:37,455
+Şimdi bu ikisini çarptığım zaman elde edeceğim matris bu hale gelmiş oluyor. Yani aslında ne yapmaya çalıştım? Sadece emin şuradaki değerleri olacak ve matrisin diğer tarafları sıfır olacak şekilde bir matris yarattım.
+
+834
+01:59:37,455 --> 01:59:49,335
+Şimdi bu matrisi içerisinde dead end problemi olan matrisi eklediğim zaman işte bu gördüğünüz A matrisini yani slide'da gördüğünüz A matrisini elde etmiş oldum arkadaşlar.
+
+835
+01:59:49,335 --> 02:00:07,235
+Şimdi bu slide'da gördüğümüz A matrisi de benim için hem stokastik matris hem aynı zamanda irreducible matris yani indirgenemez matris yani içerisinde diğer bir deyişle dead end problemi olmayan matris.
+
+836
+02:00:07,455 --> 02:00:08,455
+ok?
+
+837
+02:00:14,387 --> 02:00:18,347
+diğer bir problemdi
+
+838
+02:00:18,347 --> 02:00:19,947
+spider trap problemiydi
+
+839
+02:00:19,947 --> 02:00:22,967
+spider trap problemini çözmek için de
+
+840
+02:00:22,967 --> 02:00:23,947
+ne yapmıştım
+
+841
+02:00:23,947 --> 02:00:26,808
+jumping faktörünü getirmiştim
+
+842
+02:00:26,808 --> 02:00:28,247
+demiştim ki
+
+843
+02:00:28,247 --> 02:00:29,907
+bir not
+
+844
+02:00:29,907 --> 02:00:32,247
+ya mevcuttaki
+
+845
+02:00:32,247 --> 02:00:34,308
+linkleri takip edebilir
+
+846
+02:00:34,308 --> 02:00:35,447
+beta olasılıkla
+
+847
+02:00:35,447 --> 02:00:37,547
+bu durumda
+
+848
+02:00:37,547 --> 02:00:40,187
+işte j'ninci
+
+849
+02:00:40,187 --> 02:00:42,068
+notta olma olasılığı
+
+850
+02:00:42,068 --> 02:00:43,487
+o
+
+851
+02:00:43,487 --> 02:00:45,927
+J'ye link veren
+
+852
+02:00:45,927 --> 02:00:47,327
+notların
+
+853
+02:00:47,327 --> 02:00:49,227
+oransal
+
+854
+02:00:49,227 --> 02:00:52,167
+page rank değerlerinin toplamıdır
+
+855
+02:00:52,167 --> 02:00:54,167
+dedik beta olasılıkla
+
+856
+02:00:54,167 --> 02:00:55,547
+ama bir
+
+857
+02:00:55,547 --> 02:00:57,947
+beta olasılıkla da
+
+858
+02:00:57,947 --> 02:00:59,367
+random surfer
+
+859
+02:00:59,367 --> 02:01:02,167
+herhangi bir not üzerinden
+
+860
+02:01:02,167 --> 02:01:03,727
+J'ye gelebilir
+
+861
+02:01:03,727 --> 02:01:05,607
+yani bir
+
+862
+02:01:05,607 --> 02:01:07,807
+random surferın J'de bulunma
+
+863
+02:01:07,807 --> 02:01:09,127
+olasılığı bir
+
+864
+02:01:09,127 --> 02:01:11,387
+J'ye link veren
+
+865
+02:01:11,387 --> 02:01:16,687
+arkadaşlar üzerinden gelme olasılıkları toplamı
+
+866
+02:01:16,687 --> 02:01:22,367
+artı herhangi bir not üzerinden 1-beta olasılıkla
+
+867
+02:01:22,367 --> 02:01:25,087
+tekrardan j'ye gelme olasılığı.
+
+868
+02:01:25,387 --> 02:01:27,507
+Bu ikisini topluyorum.
+
+869
+02:01:28,188 --> 02:01:31,487
+Şuradaki beta değeri %80 genelde alınıyor.
+
+870
+02:01:31,667 --> 02:01:34,347
+1-beta da dolayısıyla da %20 alınıyor.
+
+871
+02:01:34,347 --> 02:01:39,648
+Peki bu formüle bunu eklememin sebebi ne içindi?
+
+872
+02:01:39,647 --> 02:01:42,107
+Spider trap probleminden dolayı.
+
+873
+02:01:44,547 --> 02:01:48,027
+Şimdi benim formülüm ne hale gidiyor?
+
+874
+02:01:48,927 --> 02:01:54,767
+Şimdi spider trap formülümden dolayı ben bu jumping faktörü getirmiştim.
+
+875
+02:01:55,887 --> 02:02:07,587
+Bir de aynı zamanda Google dead end probleminden dolayı benim stokastik adjacency matrisimi neye dönüştürmüştüm?
+
+876
+02:02:07,587 --> 02:02:09,527
+A matrisine dönüştürmüştüm.
+
+877
+02:02:09,647 --> 02:02:23,667
+Şimdi bu stokastik matrisimin içerisine hem dead end problemini çözmek için yaptığım eklemeyi koyalım.
+
+878
+02:02:23,927 --> 02:02:25,867
+Yani şu eklemeyi koyalım.
+
+879
+02:02:26,347 --> 02:02:28,967
+Aynı zamanda bir de jumping faktörü koyalım.
+
+880
+02:02:28,967 --> 02:02:37,187
+Yani stokastik encesi matrisimi işte linkleri beta olasılıkla takip ettiğim durum.
+
+881
+02:02:37,188 --> 02:02:52,807
+Bir de herhangi bir link üzerinden bir eksi beta olasılıkla jump ettiğim durumu ekleyelim. Bu durumda benim nihayi matrisim, Google matrisim şu şekle girmiş oluyor.
+
+882
+02:02:52,807 --> 02:03:02,807
+Artık benim elimdeki bu Google matrisi stokastik matristir, aperiodik matristir, irradiusible matristir.
+
+883
+02:03:03,688 --> 02:03:05,447
+Yani stokastik matris neydi?
+
+884
+02:03:05,947 --> 02:03:11,968
+Bütün kolonlarının elemanlarının toplamı bire eşittir, aperiodiktir.
+
+885
+02:03:12,307 --> 02:03:14,988
+Yani içerisinde spider thread problemi yoktur.
+
+886
+02:03:15,067 --> 02:03:15,727
+Neden dolayı?
+
+887
+02:03:15,807 --> 02:03:17,527
+Bu jumping faktörden dolayı.
+
+888
+02:03:18,147 --> 02:03:21,287
+Irradiusible'dir yani içerisinde dead end problemi yoktur.
+
+889
+02:03:21,287 --> 02:03:36,087
+Neden dead end problemi yoktur? Çünkü ben bu stokastik adjacency matrise öyle bir şey ekledim ki içerisinde dead end olan notlardan diğer bütün notlara salarlayın eklemiş oldum.
+
+890
+02:03:36,087 --> 02:03:52,447
+Yani eğer bir not varsa ki kolonlarının toplamı sıfır, o not için o kolonlara ne yaptım birbirine eşit olacak şekilde bir bölü n yazmış oldum.
+
+891
+02:03:52,947 --> 02:04:01,027
+Şimdi elde ettiğim artık Google matrisi benim Markov zincir teorimin tam olarak istediğim matris oldu mu? Oldu.
+
+892
+02:04:01,027 --> 02:04:07,567
+Ve Markov zincir teoremi diyor ki böylesi bir matrisi power iteration'a sokabilirsin.
+
+893
+02:04:08,020 --> 02:04:31,879
+Bu durumda, Initial PageRank değerlerini ne seçersen seç. Ne seçersen seç. Belirli bir iterasyon sonucunda senin nihai PageRank vektörün bir stationary distribution değerine yakınsıyacaktır. Yani nihai değere yakınsıyacaksın ve bu nihai değer kesinlikle değişmeyecek.
+
+894
+02:04:31,879 --> 02:04:56,239
+Bu genellikle de PageRank skorunun şeyi yaklaşık 50 iterasyon sonucunda, büyük graflarda nihai PageRank değerine yakınsıyor ve bu PageRank değeri de kesinlikle değişmiyor. Ama bizim kullanmış olduğumuz matrisin mutlaka stokastik, apuridik ve iridipüsü olmasını sağlamamız gerekiyor.
+
+895
+02:05:01,619 --> 02:05:19,619
+Şimdi bu şu ana kadar konuştuğumuz her şeyi hani bu üzerinde çalıştığımız hani oyuncak örneğe uygulayacak olursak, oyuncak örnek neydi? Şurada içinde spider trap olan bir tane oyuncak örneğimiz vardı.
+
+896
+02:05:22,319 --> 02:05:30,619
+Şuradaki oyuncak örnek. Hani şu oyuncak örnekte uygulayacak olursak,
+
+897
+02:05:34,163 --> 02:05:51,163
+Hani burada ne yapmış oldum? Ben elimdeki matrisim buydu. Bu matrise dedim ki 0.8 olasılıkla yani jumping factor'um 0.8 bu matrisi takip edeyim.
+
+898
+02:05:51,163 --> 02:06:01,383
+0.2 olasılıkla da herhangi bir linki takip ederekten bir sonraki linklere geçeyim.
+
+899
+02:06:01,383 --> 02:06:08,104
+Yani jumping factor. Şu herhangi bir linki takip etmek demek, şu matrisle çarpmak demek.
+
+900
+02:06:08,583 --> 02:06:16,524
+Bu ikisini topladığım zaman elde ettiğim matris benim artık Google matrisim.
+
+901
+02:06:16,643 --> 02:06:20,543
+Yani stokastik, epölyodik ve irredusible matris.
+
+902
+02:06:20,543 --> 02:06:30,003
+artık şu matrisi ben power iteration'e koyduğum zaman belirli bir değer sonra ne yapacaktır? Yakınsayacaktır.
+
+903
+02:06:30,003 --> 02:06:38,843
+Oyuncak örneğime dönecek olursam hatırlayın aynı örnek yine şu değerlerden başlamıştım.
+
+904
+02:06:39,223 --> 02:06:43,703
+Hatırlayın şuna yakınsamıştı yani benim kullanamayacağım bir değere yansımıştı.
+
+905
+02:06:43,704 --> 02:06:59,684
+ama ben bu Google'ın nihai formülünü kullandığım zaman Power Riteration en sonunda bana unique bir PageRank skora yansımama, yakınsamama olanak veriyor.
+
+906
+02:06:59,683 --> 02:07:19,803
+şu ana kadar konuştuğumuz şeyler Google'ın popüleriteyi hesaplamak için kullanmış olduğu ve nihai olarak 1998 yılında yayınlanmış olduğu PageRank algoritmasını konuşmuş olduk.
+
+907
+02:07:19,803 --> 02:07:49,104
+Biz ne yaptık dersin başında? Dedik ki, tekrardan dönecek olursam, biz dedik ki, sosyal network analizinde bizim kullandığımız metrikler, centrality, bir de prestij metrikleri var dedik, degree centrality, closeness centrality, proximity centrality. Bunlar bir aktörün önemini belirtiyordu.
+
+908
+02:07:49,104 --> 02:08:16,744
+Prestige metrikleri vardı. Bunlar da degree prestij, proximity prestij, rank prestij bunlar da yine bir aktörün önemini belirtiyordu ama bunlar in linklere bakarak belirtiyordu. Bunların arasından bir tanesi vardı ki rank prestij insanların vermiş oldukları linklerin önem değerine bakaraktan bir kişinin rank prestij değerini buluyordu.
+
+909
+02:08:16,744 --> 02:08:24,143
+ve biz demiştik ki PageRank'de temelde buna dayanıyor. Yani renk prestij hesaplamasına dayanıyor.
+
+910
+02:08:24,143 --> 02:08:37,824
+Ve bu renk prestij hesaplamasının üzerine biz işte bir tane aygın vektör denklemi göstermiştim.
+
+911
+02:08:38,384 --> 02:08:42,044
+Bunu kullanaraktan renk prestij değerlerini hesaplıyoruz demiştik.
+
+912
+02:08:42,043 --> 02:09:06,263
+Google ise ne yaptı? Bu Rank Prestige formülünden yola çıkaraktan dedi ki benim grafiğimdeki problemler yani bir web grafiğimdeki olması gereken problemleri dikkate alacak şekilde ben bu Rank Prestige formülünü alıp
+
+913
+02:09:06,579 --> 02:09:33,019
+ne yapabilirim? Bir renk pro popülerite hesaplama metriyine dönüştürebilirim. Google da buna PageRank metriği dedi. Ve bu PageRank metriyini hesaplarken de mutlaka bu Power Iteration yöntemiyle bu denklemi çözdüğün zaman sonuca ulaşabilmesi için yapılması gereken bazı adımları da önermiş oldu.
+
+914
+02:09:33,019 --> 02:09:50,219
+ve nihai Google formülüyle beraber ben biliyorum ki belirli bir adım sonra mutlaka benim PageRank değerim, PageRank vektörüm belirli bir değere yakınsayacak ve bu değer değişmeyecek.
+
+915
+02:09:50,219 --> 02:10:03,260
+Şimdi sizlerden isteğim artık siz bu oyuncak örnekler üzerinde bir degree centrality'yi nasıl hesaplıyorsunuz bunu bilmeniz gerekiyor.
+
+916
+02:10:03,260 --> 02:10:14,579
+Degree Prestige'i nasıl hesaplıyorsunuz, Closeness Centrality'i, Proximity Centrality'i, ondan sonra yine Bibliografik Kapımetrik değerini,
+
+917
+02:10:15,380 --> 02:10:27,819
+Co-Citation metrik değerini, ondan sonra bu konuştuğumuz PageRank metriğini hesaplamayı öğrenmenizi istiyorum.
+
+918
+02:10:27,819 --> 02:10:38,059
+çünkü sınavda da ben size oyuncak bir grafik vereceğim ve diyeceğim ki bunun içerisinde şu notların şu metrik değerini hesaplamanızı istiyorum.
+
+919
+02:10:39,179 --> 02:10:41,819
+Şu PageRank değerini hesaplamanızı istiyorum.
+
+920
+02:10:42,399 --> 02:10:46,719
+Jumping Factor şu olduğu zaman PageRank Factor değeri ne olur?
+
+921
+02:10:46,719 --> 02:11:03,300
+ya da hiç jumping içerisinde spider trap problemi olduğu durumda PageRank vektörü hesaplaması nasıl gerçekleşiyor?
+
+922
+02:11:03,300 --> 02:11:11,940
+Bunlarla ilgili sorular gelebileceğini düşünerekten bu dersi mutlaka iyi öğrenmenizi istiyorum.
+
+923
+02:11:11,940 --> 02:11:22,940
+sorunuz olursa bana gelecek dersi de sorabilirsiniz ya da ayrıca da hocam office hour şeklinde soru sorabilir miyim diye de gelebilirsiniz.
+
+924
+02:11:24,020 --> 02:11:32,620
+Benim bugünkü dersi anlatacaklarım bu kadar. Sizlere bir iki ders borcum var onu biliyorum. O dersleri kayıt olarak ekleyeceğim.
+
+925
+02:11:32,619 --> 02:11:45,499
+gelecek hafta yine dersimiz var. Gelecek hafta yeni yılın ilk haftası bizim yine dersimiz olacak.
+
+926
+02:11:45,499 --> 02:12:04,999
+Son haftamız sanırım 8'inde bitiyor dönem. Son haftaki dersimizi projelerinizin sunumlarının olduğu şey diye düşünün.
+
+927
+02:12:04,999 --> 02:12:14,899
+Yani bu akademik takvimde ayın 8'inde bitiyorsa son haftamız gelecek hafta oluyor.
+
+928
+02:12:15,499 --> 02:12:21,079
+Akademisyen takvimde ayın 15'inde bitiyorsa son haftamız ayın 12'si olmuş oluyor arkadaşlar.
+
+929
+02:12:23,740 --> 02:12:29,079
+Dönemin son haftası hangi hafta bilen var mı? Mikrofonunu açıp söyleyebilir bana şimdi.
+
+930
+02:12:42,292 --> 02:12:47,172
+sizler bilmiyorsunuz. O zaman ben hemen onu kontrol edeyim.
+
+931
+02:13:12,500 --> 02:13:13,600
+Evet, 9 Ocak.
+
+932
+02:13:18,228 --> 02:13:33,867
+9 Ocak. Yani gelecek hafta bizim son dersimiz oluyor. Dolayısıyla da projelerinizi de görmek istediğim hafta gelecek hafta olmuş oluyor arkadaşlar. Projeler konusunda ne durumdasınız?
+
+933
+02:13:39,891 --> 02:13:41,891
+mikrofonlarınızı açabilirsiniz arkadaşlar.
+
+934
+02:13:45,587 --> 02:13:49,587
+Merhaba hocam. Duyabiliyor musun? Evet, süreyim.
+
+935
+02:13:50,587 --> 02:14:13,587
+Hocam benim son bir ay civarı işten dolayı çok yoğunum. O yüzden biraz projede açıkçası takvimi çok yakalayamadım. Ama bu yılbaşı tatiliyle, haftaya ise son tarih, elimden geleni yapmaya çalışacağım.
+
+936
+02:14:13,587 --> 02:14:17,887
+WebCrawlink'de hocam benim projem.
+
+937
+02:14:17,887 --> 02:14:41,607
+Şimdi şöyle yakalım. Yani sizin ayın 11'inde 100 yarı yılı final sınavlarınız başlıyor. Ayın 11 ile 23'ü arası 2 hafta boyunca sizin benim dışımda diğer derslerinizden de sınavlarınız olacak. Benim dersimden de olacak, diğer derslerden de olacak.
+
+938
+02:14:41,608 --> 02:14:42,567
+Evet
+
+939
+02:14:42,567 --> 02:14:57,668
+Şimdi ben dersin dönem projesini final sınavlarına aktardığım vakit sizin bütün final sınavlarından performansınızı düşürürüm
+
+940
+02:14:57,668 --> 02:15:06,907
+yani final sınavlarınız çalışmanız gereken yerde gidip kod yazıp projelerinizi çalıştırmaya çalışırsanız vs.
+
+941
+02:15:06,907 --> 02:15:32,988
+Bir de Mehmet Hoca'ya demo göstereceğiz durumu oluşursa sınavlardan da kötü olursunuz. O yüzden benim yapabileceğim en fazla şu olur. O hafta bizim normal ders günümüzde değil de cumartesine kaydırabilirim.
+
+942
+02:15:32,987 --> 02:15:39,827
+yani ne oluyor? Dokuzun oluyor hocam yani.
+
+943
+02:15:39,827 --> 02:15:57,447
+Evet yani dokuzuna kaydırıyorum. Yani ben hafta sunumu sizler için kullanıp hani dokuzunda bana sunumlarınızı gösterecek şekilde şey ama buna hepiniz uyuyacak olursanız yani böyle bir şeye
+
+944
+02:15:57,448 --> 02:16:09,147
+aksi takdirde ben bunu normal ders günü sizlerin projelerinizi göndermemizi talep edeceğim.
+
+945
+02:16:09,147 --> 02:16:22,147
+Ama uyumak ne demek? Hepinizin cumartesi günü sabahtan normal ders saatinde bilgisayarlarınızı açıp bana demonuzu birebir göstermez.
+
+946
+02:16:22,147 --> 02:16:33,487
+O gün katılmazsanız, demonizi göstermezsiniz projeden sıfır alacaksınız. Bunu bilmeniz gerekiyor.
+
+947
+02:16:34,407 --> 02:16:45,047
+Şimdi burada derse katılan arkadaşların çoğunluğu olduğu için lütfen mikrofonlarınızı açın. Benim için uygundur, uygun değildir diye belirtin.
+
+948
+02:16:45,047 --> 02:17:11,047
+Yani iki alternatifiniz var. Bir, dersin başında açıklandığı gibi bir sonraki hafta yani ayın beşinde demonuzu ve projenizi gönderip demonuzu ayın beşinde yapmanız. Bu birinci alternatif. İkinci alternatif ise yumartesi sabahı aynı ders saatinde demo projenizi gönderip yine projenizin demosunu sırasıyla yapmanız.
+
+949
+02:17:11,047 --> 02:17:15,667
+yapmanız. Bu iki alternatif arasından ne istiyorsunuz onu belirtin lütfen.
+
+950
+02:17:17,947 --> 02:17:21,407
+Hocam benim tercihim 9 Ocak olur.
+
+951
+02:17:21,887 --> 02:17:24,047
+Evet diğer arkadaşlardan da istiyorum.
+
+952
+02:17:25,307 --> 02:17:27,307
+Bence de cumartesi uygun olabilir hocam benim için.
+
+953
+02:17:27,887 --> 02:17:28,167
+Tamam.
+
+954
+02:17:29,007 --> 02:17:31,107
+Benim için de hocam 9 Ocak daha iyi.
+
+955
+02:17:39,267 --> 02:17:40,607
+[öğrenci] sen burada mısın?
+
+956
+02:17:42,036 --> 02:18:09,135
+Mikrofonun kapalı. Buradayım hocam. Şimdi bir toplantıdaydım, şimdi açabildim. Tamam. Konuştuğumuzu duydun mu? Yok hocam, öbür toplantının sesi geliyordu. Bir daha alabilirsem. Dokuzunda mı yapılmasını istiyorsun yoksa beşinde mi? Bu proje sunumlarını dokuza ertelesek, cumartesi günü derse katılıp sunumunu yapman gerekecek.
+
+957
+02:18:09,135 --> 02:18:12,575
+Dokuzu benim için uygun, ben evdeyim zaten sürekli
+
+958
+02:18:12,575 --> 02:18:27,536
+Okey, o zaman böyle bir uzatma yapıyorum, ayın beşinde ders işleyeceğim, dokuzunda da şey yapacağım, projelerinizin demosunu istiyorum, yani bu sizi ekstradan bir dört gün kazandırıyor
+
+959
+02:18:27,536 --> 02:18:42,995
+bugünden o zamana kadar 10 günün üzerinde bir vaktiniz olmuş oldu. Lütfen projelerinizi bitirin. Projenizi yapmamanız bu dersten kalmanıza sebep olabilir arkadaşlar.
+
+960
+02:18:42,995 --> 02:18:57,735
+buna olanak vermeyin. Tek yapmanız gereken az bir şey gösterecek olmuş olsanız bile mutlaka projenizi tamamlayıp sunumunuzu yapın.
+
+961
+02:18:58,396 --> 02:19:07,875
+Projenizin sunumunu yapmamayı tercih ettiğiniz zaman alacağınız nokt sıfır olacak ve bu da bu dersten geçer nokta geçmemenize sebep olacak.
+
+962
+02:19:07,875 --> 02:19:15,215
+bunu yapmayın. 10 günün üzerinde bir sürede bu konuştuğumuz projeyi yapabilmeniz için yeterli bir süre.
+
+963
+02:19:15,995 --> 02:19:25,135
+Tabii ki daha önceden başlamış olmanız gerekiyordu ama hadi diyelim ki birçok nedenden dolayı olmadı ama yine bu süre zarfında yapabilirsiniz.
+
+964
+02:19:25,655 --> 02:19:32,195
+Böylelikle final haftasına da bir tane proje taşımadan bu işi halletmiş olursunuz.
+
+965
+02:19:35,015 --> 02:19:37,036
+Tamam mı? Teşekkür ederim.
+
+966
+02:19:37,036 --> 02:19:48,355
+Arkadaşlar benim bugün anlatacaklarım bu kadar. Gelecek hafta yine ders işleyeceğiz. Bunun haricinde benim yapamadığım dersleri online kayıt olarak sisteme yutlayacağım.
+
+967
+02:19:50,575 --> 02:19:52,496
+Teşekkürler hocam. Hoşçakalın.
+
+968
+02:19:52,496 --> 02:19:53,536
+İyi günler.
+
+969
+02:19:54,636 --> 02:19:56,036
+İyi haftalar hocam.
+
+970
+02:19:56,616 --> 02:19:57,136
+Size de.
