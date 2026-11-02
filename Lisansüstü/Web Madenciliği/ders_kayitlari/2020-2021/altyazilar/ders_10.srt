@@ -1,0 +1,2147 @@
+1
+00:24:13,779 --> 00:24:15,039
+Herkese günaydın arkadaşlar.
+
+2
+00:24:49,523 --> 00:25:08,583
+Evet, bugün web crawling chapter'ından bahsedeceğim. Chapter 8. Bugün bu chapter'ı bitirebilirsek bir de link analizsiz konusuna girmek istiyorum.
+
+3
+00:25:08,583 --> 00:25:24,423
+Öncelikle dersin sayfasında projelerinizle ilgili bilgileri yayınladım. Aynı zamanda ders vize sınavından aldığınız notları da bulabilirsiniz.
+
+4
+00:25:24,423 --> 00:25:40,543
+projelerinizle ilgili bilgilendirmelere lütfen bakın. Eğer yapmanızı istediğim ek bir şey varsa onları buraya not aldım.
+
+5
+00:25:41,823 --> 00:25:52,023
+Projenizi göndermişsiniz ve bana ulaşmamışsa bu konuda bana bilgi verin. Gönderdiğinize dair e-mailin ekran görüntüsünü alın.
+
+6
+00:25:52,023 --> 00:25:58,184
+aksi takdirde proje notunuz olmayacak.
+
+7
+00:26:10,036 --> 00:26:10,415
+ok.
+
+8
+00:26:14,900 --> 00:26:22,759
+Sorusu olan olursa sayımız az. Chatten yazmak yerine mikrofonunu açıp lütfen aralarda bana sorabilir.
+
+9
+00:26:24,379 --> 00:26:39,799
+Web crawling. Bu ders kapsamında bir web crawler yazarken çözmemiz gereken implementasyon problemleri üzerinde duracağız.
+
+10
+00:26:39,799 --> 00:26:53,979
+Bir de bir web crawler yazarken bunu küçük ölçekli belli bir odak doğrultusunda yazabileceğimiz gibi daha büyük ölçekli bir şekilde de yazabiliriz.
+
+11
+00:26:53,979 --> 00:27:04,440
+Daha büyük ölçekli web crawler'ın çözmesi gereken problemler nelerdir onlardan da konuşacağız.
+
+12
+00:27:04,580 --> 00:27:06,539
+Universal crawler'lardan konuşacağız.
+
+13
+00:27:06,539 --> 00:27:15,260
+Universal crawlerlar şu anki arama motorlarını desteklemek için ne gibi problemleri çözüyor bunu konuşacağız.
+
+14
+00:27:16,379 --> 00:27:29,440
+Bir takım odaklı crawlerlar var. Bir de gerçek zamanlı çalışan crawlerlar. Yani search keywordlerini girdiğiniz anda çalışmaya başlayan crawlerlar.
+
+15
+00:27:29,440 --> 00:27:38,800
+Bunların da kullanım alanlarını konuşacağız. Bir de bunların biraz çalışma şekillerinden bahsedeceğiz.
+
+16
+00:27:43,092 --> 00:28:06,772
+Evet, öncelikle crawlerlara niye ihtiyaç var? Biz arama yaparken, bir arama motoru üzerinde arama yaparken yaptığımız arama bir inverted index üzerinde oluyor. Yani biz aramayı elde etmiş olduğumuz ham sayfalar üzerinde gerçekleştirmiyoruz. Bunu daha önce konuştuk.
+
+17
+00:28:06,772 --> 00:28:33,352
+bir inverted index table üzerinde gerçekleşiyor. Bu inverted index table'ı oluşturabilmek için öncelikle benim farklı sunucular üzerinde yerleşik HTML sayfalarını belirli bir metodolojiye dolaylı olarak toplayıp merkezi bir ortamda yerleştirmem lazım. Merkezi bir ortamda saklamam lazım.
+
+18
+00:28:33,351 --> 00:29:00,831
+İşte bu işlem yani dağıtık ortamda yani web ortamında farklı sunucular üzerinde duran HTML sayfaların belirli bir metodolojik yaklaşıma dayalı olarak bulup indirip merkezi bir saklama ortamında saklayan uygulamalara biz crawler uygulamaları diyoruz.
+
+19
+00:29:00,831 --> 00:29:11,471
+Bunlar sayesinde de biz inverted index'i oluşturabileceğimiz HTML sayfalarına ulaşabiliyoruz
+
+20
+00:29:11,471 --> 00:29:26,691
+Şimdi crawler'da bu tür uygulamalar, crawler uygulamaları input olarak bir URL seti alırlar
+
+21
+00:29:26,691 --> 00:29:30,471
+Biz bunları seed URL diyoruz, çekirdek URL'ler
+
+22
+00:29:30,471 --> 00:29:59,511
+bu seed URL'leri kullanarak bir URL, bir crawler uygulaması web'i taramaya başlar. Verilmiş olan linklerden başlayarak bu linklerin bulunmuş oldukları HTTP sunucularına HTTP request gönderirler ve bu sunuculardan bu URL'lerin işaret etmiş oldukları HTML sayfalarını alırlar.
+
+23
+00:29:59,511 --> 00:30:10,532
+Bu HTML sayfaları alındıktan sonra bu HTML sayfalarının içerisinden bunlar pars edilir, içerisinden yeni yöreller çıkartılır
+
+24
+00:30:10,532 --> 00:30:14,631
+Yani ne oldu? İlk başta bizim bir başlangıç yörel setimiz vardı
+
+25
+00:30:14,631 --> 00:30:21,252
+Bunları işaret ettiği sayfalara gittik, indirdik, içlerinden yeni yöreller çıkarttık
+
+26
+00:30:25,076 --> 00:30:55,055
+ok. Burada ki örnekte de yapılmış olan bu yeni URL'ler elde ettim. Yine bu URL'lere de yine HTTP request gönderiyorum. Bu URL'lere HTTP request gönderdikten sonra elde etmiş olduğum yeni sayfaların içerisinden yeni URL'ler çıkartıyorum ve bu URL'leri kullanarak tekrardan web'e gidip webdeki bunların işaret etmiş olduğu sayfalara indirmeye çalışıyorum.
+
+27
+00:30:55,076 --> 00:31:24,015
+çalışacağım. Bu işlemi sürekli gerçekleştiriyorum. Tabii ki bunu ne zaman durdurmam gerektiği konusunda da crawler'ın bir bilgi vermem lazım. Crawler'a farklı stopping condition'lar verebilirim. Bunlar neler olabilir? Bunlardan bir tanesi süre bazlı çalıştırabilirim crawler'ın.
+
+28
+00:31:24,015 --> 00:31:36,175
+derim ki seed yörellerden başlayacak şekilde 3 saat boyunca ulaşabildiğim bütün web içeriğini crawl et.
+
+29
+00:31:37,375 --> 00:31:43,116
+Tabi süre bazlı verdiğim zaman burada problem olabiliyor.
+
+30
+00:31:43,335 --> 00:31:48,335
+Çünkü neden? Bu crawlerın çalışma süresi içerisinde network latency de var.
+
+31
+00:31:48,335 --> 00:32:02,395
+Network Latency ne demek? HTTP request'imizin sunucuya ulaşması ve sunucudan HTTP response objesinin bizim client'imize ulaşması için gerekli Network Latency.
+
+32
+00:32:02,395 --> 00:32:13,435
+Bu da sunucunun bulunmuş olduğu web ortamında sunucunun bulunmuş olduğu noktaya göre değişecektir.
+
+33
+00:32:13,436 --> 00:32:23,616
+Dolayısıyla bunun dışında farklı stopping condition'lar da seçmek gerekir. Bunlar nedir mesela?
+
+34
+00:32:25,535 --> 00:32:40,316
+HTTP, HTML sayısı yani toplamdaki indirilmiş doküman sayısı ya da bu doküman sayısı olabileceği gibi bizim saklama ortamımızın maksimum sınırı varsa bu verilebilir.
+
+35
+00:32:40,315 --> 00:32:47,295
+diyebilirsiniz ki işte şu kadar terawaitlik ben totalde veri indireceğim.
+
+36
+00:32:48,095 --> 00:32:58,115
+Diğer bir yaklaşım şu olabilir, seed yörellerin bulunmuş olduğu seviyeyi root olarak düşünecek olursanız,
+
+37
+00:32:58,115 --> 00:33:10,195
+bunu bir ağacın kökü olarak düşünecek olursanız, kökten başlayaraktan işte 6 tane seviye ilerleyeceğiz diyebilirsiniz.
+
+38
+00:33:10,315 --> 00:33:25,335
+6 tane seviye ilerledikten sonra yani buradaki örnekte mesela 1, 2, 3 seviye ilerlemişim. 6 seviye ilerledikten sonra benim crawl durum duracak gibi farklı stopping condition'lar koyabilirsiniz.
+
+39
+00:33:25,335 --> 00:33:53,255
+Şimdi bu örnekte az önceki search ortamında işte bir sayfayı aradım. O sayfayla ilgili bir takım sonuçlar geldi. Ben o sonucu o search'te gösterebilmek için demek ki yapmam gereken hani en azından üç tane seviye web'i crawl ederekten o sayfanın bulunmuş olduğu sayfaya ulaşabileyim.
+
+40
+00:33:53,255 --> 00:34:05,775
+sadece mesela şuradaki sayfayı searchlerde gösterebilmek için seed yörellerden başlayarak bu kadar sayfayı crawl edip bunları saklamam gerekiyormuş.
+
+41
+00:34:05,775 --> 00:34:23,355
+Demek ki bu şu demek eğer benim arama sonuçlarımın başarılı sonuçlar vermesini istiyorsam benim olabildiğince fazla sayfayı indekslemem gerekir
+
+42
+00:34:23,731 --> 00:34:49,912
+Hatta olabildiğince fazla relevant sayfayı indekslemem gerekir. Yani ilk başta seçmiş olduğum URL, seed URL'ler benim için çok önemli. Eğer ben entertainment ile ilgili sayfalara ulaşmak istiyorsam, seed URL'lerde beni entertainment ile ilgili en iyi sayfalara götürecek en doğru URL setini seçmem gerekiyor.
+
+43
+00:34:49,912 --> 00:35:04,072
+demek ki yanlış seed URL seçerekten başlayacak olursam webin farklı taraflarını tarıyor olacağım ve ulaşmak istediğim sayfalara çok daha uzun zamanda ulaşacağım.
+
+44
+00:35:04,072 --> 00:35:21,632
+Dolayısıyla web ortamındaki çok sayıda döküman içerisinde özellikle bulunmasını istediğim sayfalara ulaşmak istiyorsam seed URL sayısı ve webin ne kadarını crawl edeceğim bilgisi oldukça önemli.
+
+45
+00:35:21,631 --> 00:35:35,452
+Şimdi bu crawlerlar şu anda günlük olarak sürekli kullandığımız internet bandwidth'inde çalışan uygulamalar.
+
+46
+00:35:35,452 --> 00:35:43,971
+İnternet bandwidth'ini en yüksek yüzdeyle kullanan uygulamalar aslında bunlar.
+
+47
+00:35:43,971 --> 00:36:06,031
+binin, Google'ın, Yandex'in, Yahoo'nun çalışan crawlerları sürekli olarak webdeki farklı sayfalara HTTP request'ler gönderiyorlar.
+
+48
+00:36:06,031 --> 00:36:16,251
+ve onların karşılığında HTTP responslar alıyorlar. Dolayısıyla da en yüksek yüzdeyle Bandbit'i kullanan uygulamalar bunlar.
+
+49
+00:36:16,251 --> 00:36:29,111
+Bu uygulamaların farklı isimleri oluyor. Crawler, Spider, Robot, Web Agent bunların hepsi aynı şeye ifade eden uygulama isimleri.
+
+50
+00:36:29,111 --> 00:36:39,851
+şu anda Google'ın crawlerına Googlebot, MSN'in crawlerına MSNbot gibi isimler vermişler.
+
+51
+00:36:40,471 --> 00:36:52,751
+Şimdi bir de bu crawlerlar herhangi bir siteye geldiği zaman, diyelim ki mesela bir site içerisinde bir tane HTTP dosyası var.
+
+52
+00:36:52,892 --> 00:36:57,711
+Bu HTTP dosyasına crawlerın URL listesine düşmüş.
+
+53
+00:36:57,711 --> 00:37:08,731
+crawler'ın taranacak bir URL listesine düştüğü için de crawler bu HTML sayfası için request göndermiş.
+
+54
+00:37:08,731 --> 00:37:16,851
+Şimdi her web sitesinin application sunucusunda robot.txt diye bir tane dosya oluyor.
+
+55
+00:37:16,851 --> 00:37:32,431
+Bu dosya hangi sayfaların o site içerisinde hangi sayfaların crawl edilebileceğini, hangilerinin ise edilmeyeceğini belirtiyor
+
+56
+00:37:32,431 --> 00:37:47,631
+ve crawler'ın da bu robot txt dosyasını okuduktan sonra bu site üzerinde ilgili sayfaları sadece robot txt'de belirtilen sayfaları taraması gerekiyor.
+
+57
+00:37:47,631 --> 00:38:09,371
+bunun dışındaki diğer sayfaları tarayamaz. Taramaya çalıştığı zaman yani robot TXT'de olmamasına rağmen HTTP request'ler gönderdiği zaman da bu siteler tarafından, bu sitelerin daha doğrusu wirefall uygulamaları tarafından bu crawlerlar ne yapıyor?
+
+58
+00:38:09,371 --> 00:38:17,972
+flagleniyor. Yani bir daha bu crawler bu siteden herhangi bir sayfayı indeksleyemiyor.
+
+59
+00:38:21,460 --> 00:38:35,119
+Peki bu crawler uygulamalarını biz niye implement ediyoruz? Az önce söyledik, bu search engine'lerin çalışabilmesi için bizim webdeki veriyi indirip indekslememiz lazım.
+
+60
+00:38:35,119 --> 00:38:48,999
+Bunun dışında bir de bazı odaklanmış arama motorları var. Bunlar yemek tarifi, haberler, Google News search uygulaması gibi.
+
+61
+00:38:48,999 --> 00:38:57,259
+ondan sonra insanların girmiş oldukları yorumlarla ilgili arama motorları.
+
+62
+00:38:57,259 --> 00:39:07,099
+Bu tür dikey eksende odaklı arama motorlarına biz ihtiyaç duyabiliyoruz. Bunlar kullanılıyor.
+
+63
+00:39:08,259 --> 00:39:16,159
+Bunların arama yaptıkları inverted indeksleri oluşturmak için de yine crawler kullanıyoruz.
+
+64
+00:39:16,159 --> 00:39:32,579
+Kimi zamanda business intelligence için biz crawler kullanıyoruz. Herhangi bir alanda rakip firmaların neler yaptığını takip edebilmek için crawler kullanıyoruz.
+
+65
+00:39:32,579 --> 00:39:45,659
+Burada özellikle sırf bu business intelligence için kurulmuş olan şirketler var. Bu şirketlerin yapmış olduğu, siz bu şirkete diyorsunuz ki ben şu alanda bir ürün çıkartacağım.
+
+66
+00:39:46,159 --> 00:39:53,320
+bu alanda ürün çıkartan firmaların güncel olarak neler yaptığını anlık takip etmek istiyorum.
+
+67
+00:39:53,839 --> 00:40:00,579
+Hani bu durumda sizin diyelim ki mesela Ülker yeni bir tane şey ürün çıkartıyor.
+
+68
+00:40:01,379 --> 00:40:12,779
+Rakip firmaların hem Türkiye'de hem dünya genelinde bu ürünle ilişkili olabilecek diğer ürünleri varsa bunlarla ilgili günlük rapor almak istiyor.
+
+69
+00:40:12,779 --> 00:40:39,180
+mesela bunun için bir tane crawler çalışıyor. Rakip firmaların yapmış sayfaları ya da rakip firmaların farklı haber portallarında çıkmış olan haberleri sürekli taranarak bu ürüne rakip olacak ürünlerle ilgili sayfalar toplanıyor ve bunlar birer rapor haline getiriliyor.
+
+70
+00:40:39,180 --> 00:41:02,460
+Yine bazı web sitelerini monitör etmek için de crawler kullanabilirim. Bazılarımızın projesinde vardı sanırım. Hani hibrit bir arama motoru. Yani geri planda çalışan birden fazla örneğin elektronik e-ticari sesi var.
+
+71
+00:41:02,460 --> 00:41:32,200
+Media Market var, B-Max var, Technosaf var. Bu sayfaları sürekli monitör edip belli tip ürünler için bu sayfalardaki fiyat bilgisini, özellik bilgisini, kampanya bilgisini, kaç gün içerisinde kargoya verilecek o bilgilerin hepsini alıp getirip tek bir hibrit arama motoru üzerinde
+
+72
+00:41:32,460 --> 00:41:43,359
+kullanıcının filtreleyerek ürünleri farklı firmalar üzerinde ne şekilde satılıyor izleyebileceği web siteler var.
+
+73
+00:41:43,359 --> 00:41:52,040
+Bu web siteleri de ne yapıyorlar? Geri plandaki e-ticari sitelerini sürekli olarak monitör ediyorlar. Dolayısıyla onlar da crawler kullanıyor.
+
+74
+00:41:52,040 --> 00:42:11,140
+Bir diğer crawler'ın kullanımı eğer siz şey yapmak istiyorsanız bir e-mail database'i oluşturmak istiyorsanız sürekli olarak web ortamında e-mail verilerini paylaşmış olan sayfalara gidip e-mail'leri toplayabilirsiniz.
+
+75
+00:42:11,140 --> 00:42:20,599
+Yani mesela spamming amaçlı, phishing amaçlı insanların e-mail listesini toplayan crawler'lar var.
+
+76
+00:42:23,956 --> 00:42:26,095
+Biz bu şekli daha önceden konuşmuştuk.
+
+77
+00:42:26,275 --> 00:42:33,095
+Bu şekle baktığınız vakit aslında crawler'ın yapmış olduğu şeyi en basit anlamda görüyorsunuz.
+
+78
+00:42:33,095 --> 00:42:49,956
+Web ortamındaki webdeki dağıtık sunucular üzerinde yerleşik olan HTML sayfalarını bu crawler uygulaması belirli bir metodolojik yaklaşımla buluyor.
+
+79
+00:42:49,956 --> 00:43:00,735
+Ve bunları merkezi ortamda yerleşik yine dağıtık bir veri saklama platformuna saklıyor.
+
+80
+00:43:01,296 --> 00:43:05,536
+Aslında bu Crawler uygulamasının yaptığı bu.
+
+81
+00:43:05,636 --> 00:43:10,956
+Bunu gerçekleştirdikten sonra yani veri saklama ortamında saklandıktan sonra
+
+82
+00:43:10,956 --> 00:43:15,775
+daha sonra bu veri üzerinde text ve link analizi çalışmaları yapılıp
+
+83
+00:43:15,775 --> 00:43:19,136
+bir tane inverted index tablosu oluşturuluyor.
+
+84
+00:43:19,136 --> 00:43:21,575
+rankinglerin yer aldığı her
+
+85
+00:43:21,575 --> 00:43:23,716
+URL'in bir ranking değeri
+
+86
+00:43:23,716 --> 00:43:25,775
+hesaplanıyor ve buna
+
+87
+00:43:25,775 --> 00:43:27,456
+dayalı olarak da artık
+
+88
+00:43:27,456 --> 00:43:29,756
+siz aramayı gerçek zamanlı
+
+89
+00:43:29,756 --> 00:43:31,555
+olarak inverted index tablosu
+
+90
+00:43:31,555 --> 00:43:33,155
+üzerinde gerçekleştiriyorsunuz.
+
+91
+00:43:37,015 --> 00:43:39,896
+Şimdi bu crawlerların
+
+92
+00:43:39,896 --> 00:43:42,136
+bir taksonomisi
+
+93
+00:43:42,136 --> 00:43:42,396
+var.
+
+94
+00:43:44,735 --> 00:43:45,616
+Mevcuttaki
+
+95
+00:43:45,616 --> 00:43:48,036
+bütün crawlerları tek bir resim üzerinde
+
+96
+00:43:48,036 --> 00:43:49,856
+kategorileri ayırmak
+
+97
+00:43:49,856 --> 00:43:51,576
+isteseniz bu şekilde ayırabilirsiniz.
+
+98
+00:43:52,636 --> 00:43:54,095
+Öncelikle crawlerlar
+
+99
+00:43:54,095 --> 00:43:55,756
+universal crawlerlar bir de
+
+100
+00:43:55,756 --> 00:43:57,656
+preferential crawlerlar diye iki
+
+101
+00:43:57,656 --> 00:43:59,515
+temel kategoriye ayrılabilir.
+
+102
+00:43:59,676 --> 00:44:00,896
+Universal crawlerlar
+
+103
+00:44:00,896 --> 00:44:04,056
+bu universal search
+
+104
+00:44:04,056 --> 00:44:06,056
+enjinleri destekleyen crawlerlar.
+
+105
+00:44:06,056 --> 00:44:07,636
+İşte Googlebot,
+
+106
+00:44:07,735 --> 00:44:09,316
+MSNbot gibi.
+
+107
+00:44:10,775 --> 00:44:12,116
+Preferential crawlerlar
+
+108
+00:44:12,116 --> 00:44:13,915
+ise bunlar da
+
+109
+00:44:13,915 --> 00:44:15,536
+belirli bir amaca
+
+110
+00:44:15,535 --> 00:44:17,475
+yönelik olan çalışan
+
+111
+00:44:17,475 --> 00:44:19,635
+kurulurlar. Bunu da iki temel
+
+112
+00:44:19,635 --> 00:44:21,655
+kategoriye ayırabilirsiniz.
+
+113
+00:44:21,915 --> 00:44:23,495
+Bunlardan bir tanesi focus
+
+114
+00:44:23,495 --> 00:44:24,155
+kurulurlar.
+
+115
+00:44:25,455 --> 00:44:27,195
+Focus kurulurlar
+
+116
+00:44:27,195 --> 00:44:29,375
+diyelim ki bir tane
+
+117
+00:44:29,375 --> 00:44:31,555
+search engine'e gidiyorsunuz.
+
+118
+00:44:31,615 --> 00:44:32,875
+Search engine sadece
+
+119
+00:44:32,875 --> 00:44:34,575
+elektronik
+
+120
+00:44:34,575 --> 00:44:37,395
+e-ticaret sayfalarındaki
+
+121
+00:44:37,395 --> 00:44:38,956
+ürünleri aramak için
+
+122
+00:44:38,956 --> 00:44:40,615
+kullanılan bir search engine.
+
+123
+00:44:41,815 --> 00:44:43,115
+Ya da
+
+124
+00:44:43,115 --> 00:44:44,935
+işte bir tane
+
+125
+00:44:44,935 --> 00:44:46,855
+şeye gidiyorsunuz
+
+126
+00:44:46,855 --> 00:44:50,435
+Search Engine'e gidiyorsunuz.
+
+127
+00:44:50,575 --> 00:44:54,255
+Mesela ResearchGate Search Engine'ine gidiyorsunuz.
+
+128
+00:44:54,396 --> 00:44:56,855
+ResearchGate Search Engine'e
+
+129
+00:44:56,855 --> 00:44:58,635
+işte size
+
+130
+00:44:58,635 --> 00:45:01,135
+farklı ortamlarda
+
+131
+00:45:01,135 --> 00:45:02,055
+publish edilmiş
+
+132
+00:45:02,055 --> 00:45:05,155
+gerçi ResearchGate sadece
+
+133
+00:45:05,155 --> 00:45:06,355
+kendi ortamındaki
+
+134
+00:45:06,355 --> 00:45:09,235
+şeyi yapıyor. O çok güzel bir örnek olmadı.
+
+135
+00:45:09,995 --> 00:45:10,595
+Fakat
+
+136
+00:45:10,595 --> 00:45:13,135
+farklı sitelerdeki
+
+137
+00:45:13,135 --> 00:45:24,995
+Peki, aynı konuda yayınlanmış olan HTML sayfaları taramanıza olanak veren search engine'leri destekler Focus Crawler'lar.
+
+138
+00:45:26,215 --> 00:45:29,615
+Bu yemek tarifleriyle ilgili olabilir.
+
+139
+00:45:30,875 --> 00:45:32,795
+Online shopping ile ilgili olabilir.
+
+140
+00:45:32,795 --> 00:45:36,115
+Yani sadece e-ticaret elektronik olmaz.
+
+141
+00:45:36,315 --> 00:45:42,075
+Bütün e-ticaret siteleri üzerinde çalışabilir bu Crawler.
+
+142
+00:45:42,075 --> 00:45:55,715
+Ama bu focus crawler'ın aynı universal crawler gibi yapmış olduğu şey sayfaları indirip bir inverted index oluşturulmasına olanak vermek.
+
+143
+00:45:55,795 --> 00:46:10,295
+Yani focus crawler'ların da desteklemiş olduğu search engine'ler bir inverted index oluşturup aramayı o inverted index üzerinde yapan search uygulamaları.
+
+144
+00:46:10,295 --> 00:46:16,555
+Demek ki focus crawler da universal crawlerlar da offline çalışıyor.
+
+145
+00:46:16,676 --> 00:46:18,375
+Yani search zamanı çalışmıyorlar.
+
+146
+00:46:18,867 --> 00:46:38,987
+sadece search'ın gerçekleştirebilmesi için bu indeks tablosunu oluşturuyorlar. Bir diğer preferential crawler, topical crawler. Bu topical crawler dediğimiz şey, bu ise gerçek zamanlı yani search zamanı çalışan crawlerlar. Nedir bunlar?
+
+147
+00:46:47,287 --> 00:47:03,507
+Siz kendinizle ilgili gerçek zamanlı olarak yani query girdikten sonra başlayacak şekilde web ortamında kimler neler konuşmuş
+
+148
+00:47:03,507 --> 00:47:14,747
+hangi sayfalarda isminiz geçiyor diye arama yapıyorsunuz. Siz search'u girdiğiniz anda şey başlıyor, crawler çalışmaya başlıyor ve bit aramaya başlıyor.
+
+149
+00:47:14,747 --> 00:47:30,647
+İşte bu tür crawler'ları da typical crawler diyoruz. Bu crawler'ların elde etmiş olduğu sonuçlar, crawler sonuçları buldukça bizim search result ekranında bu sonuçlar gözükmeye başlıyor.
+
+150
+00:47:30,647 --> 00:47:53,767
+yani böyle crawler çalışırken sonuçlar sürekli geldiği için bu tür search ortamları genelde eğer kullanıcı arayüzünü düşünecek olursanız böyle akan sonuçların görüldüğü bir tane kullanıcı arayüzü düşünün ya da notification tabanlı çalışan bir tane kullanıcı arayüzü düşünün.
+
+151
+00:47:53,768 --> 00:48:06,048
+Yani ne demek bu? Siz search'e girdiniz, aynı zamanda e-mail'inizi girdiniz, başlattınız. Bu belli aralıklarla bulmuş olduğu sonuçların sizin e-mail'inize gönderecektir.
+
+152
+00:48:06,048 --> 00:48:18,728
+Ya da işte belli aralıklarla siz bu ürünün kullanıcı arayüzünün sayfasına gittiğiniz zaman sonuçların sürekli olarak değiştiğini görebileceksiniz.
+
+153
+00:48:18,728 --> 00:48:47,207
+Bu topical crawlerlar da yine kendi arasında ikiye ayrılıyor. Web'i statik bir şekilde dolaşan crawlerlar. Yani önceden belirlenmiş olan web ağacını ararken önceden belirlenmiş olan bir dolaşma algoritmasına göre dolaşan crawlerlar.
+
+154
+00:48:47,207 --> 00:48:49,088
+Bunlar neler olabilir?
+
+155
+00:48:49,327 --> 00:48:56,028
+İşte best first olabilir, dev first search olabilir, bread first search olabilir, az sonra konuşacağız bunların bazılarını
+
+156
+00:48:56,028 --> 00:48:57,528
+Ya da page rank olabilir.
+
+157
+00:48:57,687 --> 00:48:59,287
+Hani bu static crawlerlar ne demek?
+
+158
+00:48:59,407 --> 00:49:02,367
+Diyelim ki mesela siz 10 tane URL indirdiniz.
+
+159
+00:49:02,367 --> 00:49:10,647
+Bu URL'lerin belirli bir sırayla gidip bu URL'lerin işaret etmiş oldukları HTML sayfalarını indirmeniz gerekiyor.
+
+160
+00:49:11,427 --> 00:49:14,867
+Bunu yapabilmek için bir politikanız olması lazım.
+
+161
+00:49:14,867 --> 00:49:44,388
+ya burada şey diyebilirsiniz ben işte seviye seviye gideceğim ağacın yapraklarını o yüzden işte bread first search'u tercih ediyorum ya da şunu diyebilirsiniz ben seviye seviye gitmeyeceğim ağacın bir tane dalını yakaladığım zaman o dalın en dip noktasına kadar gideceğim ondan sonra tekrardan yukarıya çıkıp bu sefer ağacın başka bir dalını seçip
+
+162
+00:49:44,387 --> 00:50:10,307
+o ağacın en dipteki yapraklarına kadar gidip o şekilde geçelim. Mesela o da depth first search yaklaşımı. Bunlar static crawling yaklaşımları. Bir de adaptive topical crawlerlar var. Bunlar da sayfaları dolaşırken elde ettikleri bilgilerden yola çıkarak hareket ediyorlar.
+
+163
+00:50:10,308 --> 00:50:13,048
+Yani diyelim ki siz bir sayfayı dolaştınız
+
+164
+00:50:13,456 --> 00:50:31,335
+bir sayfaya işte periköz gönderdiniz, o sayfayı aldınız, sayfa geldi, içerisinden URL'leri çıkarttınız. Aynı zamanda bu sayfanın içerisinden keywordleri de çıkartıyorsunuz. Hani diyorsunuz ki mesela indirdiğiniz sayfanın keywordlerini çıkarttınız.
+
+165
+00:50:31,335 --> 00:50:43,615
+sizin ilk başta bu topical crawler'ı başlatırken kullanmış olduğunuz keyword ile bu sayfadan indirmiş olduğunuz sayfadan elde ettiğiniz keyword'leri karşılaştırıyorsunuz.
+
+166
+00:50:44,515 --> 00:50:59,496
+Eğer benzerlik oranı yüksekse ha diyorsunuz ya ben bu HTML sayfasını indirmiş olmakla başarılı bir iş yaptım ve doğru bir şeyi takip ediyorum.
+
+167
+00:50:59,495 --> 00:51:13,835
+sayfa zincirini takip ediyorum. Bu yeni sayfadan öğrenmiş olduğum yeni kelimeleri de benim ilk başta kullanmış olduğum topical crawler'a kullanıcı tarafından girilmiş kelimenin yanına ekleyeyim.
+
+168
+00:51:13,835 --> 00:51:29,215
+Böylelikle zenginleştirilmiş bir kelime grubuyla artık arayayım diyorsunuz. Ve bundan sonra artık sizin crawler'ınız bir sonra taranacak olan URL'i belirlerken sadece kullanıcı tarafından girilmiş
+
+169
+00:51:29,215 --> 00:51:37,675
+kelimeyi değil, yine başarılı bir şekilde indirmiş olduğu sayfalardan elde etmiş olduğu kelimeleri de kullanıyor.
+
+170
+00:51:37,675 --> 00:51:51,635
+İşte buna reinforcement learning diyoruz. Yani bunlar ne yapıyorlar? Sürekli olarak taramış oldukları sayfalardan elde etmiş oldukları bilgileri de kullanıyorlar.
+
+171
+00:51:52,335 --> 00:51:58,355
+Bunlar da adaptive crawlerler. Yine bunun başka bir örneği evolutionary crawlerler.
+
+172
+00:52:02,643 --> 00:52:28,583
+Peki, bu crawler'ları ne olduğunu anladık. Farklı tiplerini anladık, motivasyonlarını anladık. Şimdi de basit bir crawler'dan başlayarak bu bir crawler'ı implement ederken, implementasyon da karşılaşacağımız, çözmemiz gereken konuları konuşalım.
+
+173
+00:52:30,583 --> 00:52:30,663
+Evet.
+
+174
+00:52:38,420 --> 00:53:01,859
+Burada gördüğünüz bir basic crawler şeması arkadaşlar. Bu bir sequential crawler. Yani herhangi bir paralelleştirme yok. Burada gördüğünüz logical flow. Bu logical flow tek threat üzerinde çalışıyor. Bu crawler'ın yapısına bir beraber bakalım.
+
+175
+00:53:01,859 --> 00:53:16,979
+Öncelikle ne dedik? Dedik ki crawler bir seed URL'den başlıyor. Yani en başta siz bu crawlere bir input vermek zorundasınız. Şu URL'lerden başlayarak webitter'e demek zorundasınız.
+
+176
+00:53:18,439 --> 00:53:28,920
+Burada dikdörtgen şeklinde gördüğünüz her şey birer modül yani crawler'ın parçası. Birinciden başlayalım.
+
+177
+00:53:28,920 --> 00:53:37,859
+Öncelikle crawler'ınızda bir tane initialize frontier amaçlı bir tane modülünüz olması lazım.
+
+178
+00:53:38,440 --> 00:53:43,860
+Hani bunun yapmış olduğu şey bir frontier listesi oluşturuyor.
+
+179
+00:53:44,000 --> 00:53:47,420
+Bu genelde frontier listesi bir link list şeklinde implement edilir.
+
+180
+00:53:47,979 --> 00:53:58,839
+Bu initialize frontier modülü seed URL'leri alır, bununla gidip bir tane link listi in-memory'ye koyar.
+
+181
+00:53:58,920 --> 00:54:08,759
+ve bu link liste seed yörellerin her birer tane link listin nodu olacak şekilde ayağa kaldırır.
+
+182
+00:54:09,759 --> 00:54:26,600
+İkinci modül bu frontier listesindeki her bir yöreli bu link listten alıp alan modüldür.
+
+183
+00:54:26,600 --> 00:54:46,940
+Bunun görevi ise frontier listesine gider, bu frontier listesinin en başındaki nodu alır, en başındaki URL'i alır ve bir sonraki modüle verecek şekilde o URL'in linkless nodu içerisinden çıkartır.
+
+184
+00:54:46,940 --> 00:54:55,800
+Bunu yapmış olduğu ise neymiş bu frontier listesinden şey yapmak, URL'i çekmek.
+
+185
+00:54:56,599 --> 00:55:21,159
+Bir sonraki modül elde edilmiş olan URL için HTTP request oluşturan modül. Bu modül HTTP request objesini oluşturur, web ortamındaki ilgili application sunucusunu gönderir, application sunucusundan HTTP response objesini alır.
+
+186
+00:55:21,159 --> 00:55:33,159
+demek ki bu modülle birlikte artık benim elimde bu yörele karşılık gelen HTML dosyası olmuş olacak.
+
+187
+00:55:34,159 --> 00:55:40,679
+En fazla zaman harcadığı şey de modül de budur.
+
+188
+00:55:40,679 --> 00:55:47,299
+Çünkü bunun içerisinde bunun çalışması için bir network latency'yi de aşması gerekiyor.
+
+189
+00:55:47,299 --> 00:55:56,059
+network latency zamanını da bunun içerisine eklediğimiz zaman dolayısıyla da şuradaki modül en fazla zamanı alan modüle dönüşebiliyor.
+
+190
+00:55:58,379 --> 00:56:06,499
+HTML döküman HTTP request içerisinden bu modül içerisinde alınıyor.
+
+191
+00:56:07,099 --> 00:56:12,779
+Bunu aldıktan sonra artık ben HTML dökümanı içerisinden URL'leri de çıkartıyorum.
+
+192
+00:56:12,780 --> 00:56:23,559
+yani bana ulaşmış olan bir HTML dökümanı içerisinden URL'leri çıkartıyorum ve bunları tekrardan Frontier listesine ekliyorum.
+
+193
+00:56:24,459 --> 00:56:29,699
+Hatırlayın Frontier listesi bir link list olarak implement edilebilir demiştim.
+
+194
+00:56:29,699 --> 00:56:36,160
+Demek ki bu yeni gelen URL'leri bu link listin uygun yerlerine eklemem lazım.
+
+195
+00:56:38,003 --> 00:56:56,344
+Eğer ben last in first out şeklinde bir frontier listesi implement etmişsem, dolayısıyla yeni elde etmiş olduğum URL'leri bu link listin en sonuna çıkarma sırasına göre eklemem lazım.
+
+196
+00:56:56,344 --> 00:57:14,264
+nedir çıkarma sırası? İşte HTML içerisinde 10 tane yörel varsa benim parserim ilk görmüş olduğu yöreli çıkartacaktır. Sonra ikincisi, sonra üçüncüsü. Bunların hepsinin görülme sırasına da elı olarak bu frontier listesine ne yapması lazım? Eklenmesi lazım.
+
+197
+00:57:14,263 --> 00:57:37,723
+Farklı tipte benim şeylerim olabilir. Last in, first out olabilir. Ondan sonra farklı sıralama metotlarım olabilir.
+
+198
+00:57:37,723 --> 00:57:52,303
+Kimi zaman da göreceğiz URL'leri bu frontier listesine eklerken gelme sırasından bağımsız olarak bu URL'lerin popüleritesine dayalı olarak da ben frontier listesini oluşturabilirim
+
+199
+00:57:52,303 --> 00:57:56,403
+Arkadaşlar bir saniye müsaadenizi istiyorum
+
+200
+01:01:38,996 --> 01:01:40,415
+Evet, devam edebiliriz.
+
+201
+01:01:46,452 --> 01:01:48,871
+Sesim geliyor mu? Bir teyit edebilir misiniz arkadaşlar?
+
+202
+01:01:49,692 --> 01:01:50,751
+Evet, o da yapıyorum.
+
+203
+01:01:51,171 --> 01:01:51,372
+Tamam.
+
+204
+01:01:52,912 --> 01:02:07,331
+Şimdi bu yapıda HTML sayfalarından elde edilmiş olan yeni URL'leri ben Frontier listesindeki link liste eklerken farklı yaklaşımlar sergileyebilirim.
+
+205
+01:02:07,331 --> 01:02:15,471
+Az önce dediğim gibi, popularity'e dayalı olarak da ben Frontier listesine elde etmiş olduğum yeni URL'leri ekleyebilirim.
+
+206
+01:02:16,452 --> 01:02:36,952
+Ben bu HTML sayfası içerisinden yörelleri çıkartıp Frontier listesine ekledikten sonra bir sonraki modülüm benim bu elde etmiş olduğum HTML sayfasını bir dağıtık saklama ortamında yine saklayan bir modülüm var.
+
+207
+01:02:36,952 --> 01:02:54,492
+Buradaki amaç da şu, ben bu crawler'ım bu arama işlemini gerçekleştirdikten sonra ben elde etmiş olduğum HTML sayfaları üzerinden bir tane inverted index oluşturmam gerekiyor.
+
+208
+01:02:55,032 --> 01:03:02,312
+Dolayısıyla inverted index oluşturabilmem için benim elde etmiş olduğum bütün sayfaları ne yapmam lazım?
+
+209
+01:03:02,312 --> 01:03:18,591
+bir saklama ortamında saklamam lazım. Ama HTML sayfaların içerisinde benim için gerekli olmayan birçok şey de var. Resimler var, multimedia objeleri var, metinle alakalı olmayan birçok şey var.
+
+210
+01:03:18,591 --> 01:03:30,331
+Dolayısıyla sayfaları saklarken de belirli bir metodolojiye dayalı saklıyorum. Bu sayfaların ifade eden keywordleri çıkartıp bunları birer keyword
+
+211
+01:03:30,331 --> 01:03:35,571
+vektörlerden oluşan vektöre dönüştürüp saklayabilirim.
+
+212
+01:03:36,091 --> 01:03:44,031
+Yahut da bunların içerisinden metin dosyasını çekip sadece bir metin dosyası şeklinde saklayabilirim.
+
+213
+01:03:44,031 --> 01:03:50,131
+Farklı şekillerde ben demek ki crawl dataset'i oluşturabilirim.
+
+214
+01:03:50,591 --> 01:03:52,111
+Arkasından ne yapıyorum?
+
+215
+01:03:52,672 --> 01:03:55,931
+Crawlerum stopic condition'ı kontrol ediyor.
+
+216
+01:03:55,931 --> 01:04:06,371
+Stopping Condition bir önceki slidelarda söylediğim gibi totaldeki sayfa sayısı olabilir. Crawler'ın totalde crawl edeceği sayfa sayısı.
+
+217
+01:04:07,211 --> 01:04:14,312
+Totalde indirilmiş olan sayfaların byte olarak büyüklüğü.
+
+218
+01:04:14,312 --> 01:04:27,332
+Yine işte seed URL'lerden başlamak üzere ağacın dallarında işte kaç tane seviye aşağıya doğru inileceği gibi farklı stopping condition'lar olabilir.
+
+219
+01:04:27,331 --> 01:04:48,491
+Eğer hala crawler stopping condition'a ulaşmamışsa tekrardan frontier listesinden yeni URL alıp bu elde etmiş olduğu URL'i bu pipeline'a sokan modülün olduğu yere dönüp tekrardan bu işlemi devam ettirmen gerekiyor.
+
+220
+01:04:48,491 --> 01:05:09,391
+Şimdi dedik ya crawlerlar, dedi crawl ederken farklı crawling stratejilerine göre crawl edebilirler. Bunlar static crawling yaklaşımları olabilir. Bunlardan yaygın kullanılan bir tanesi breadth-first search
+
+221
+01:05:09,392 --> 01:05:28,972
+şimdi breadworth search crawler'ı implement ederken biz ne yapıyoruz? Frontier listesi üzerinde first in first out tabanlı bir queue implement ediyoruz.
+
+222
+01:05:28,971 --> 01:05:41,211
+Burada Frontier listesinde FIFO yaklaşımını implement ettiğimiz için bu liste üzerinde
+
+223
+01:05:43,956 --> 01:05:57,655
+Bu liste üzerindeki ilk girmiş olan URL ilk olarak bu listeden çekiliyor.
+
+224
+01:06:00,175 --> 01:06:09,435
+Buradaki yaklaşım nedir? Ben birinci URL'in sayfasına gittim. Ondan iki tane URL'e gittim.
+
+225
+01:06:09,435 --> 01:06:28,515
+ve bu iki tane URL'i benim elimdeki URL listemin en sonuna ekledim. Bu first'in first'e alt yaklaşımı. Ondan sonra yine elde etmiş olduğum URL'lerden her birisi için sayfalara gittim.
+
+226
+01:06:28,515 --> 01:06:40,795
+o sayfaların altındaki yeni URL'leri indirdim. Eğer ilk gitmiş olduğum sayfa buysa bu sayfanın URL'lerini götürdüm, listeme ekledim.
+
+227
+01:06:40,995 --> 01:06:48,176
+Arkasından elde etmiş olduğum sayfayla ise bundan çıkarmış olduğum URL'leri tekrardan benim listeme ekledim.
+
+228
+01:06:49,316 --> 01:06:58,055
+Ne yaptım? Her yeni gelen sayfadan elde etmiş olduğum URL'leri mevcuttaki link listin en sonuna ekledim.
+
+229
+01:06:58,055 --> 01:07:15,835
+Şimdi bu link listin en başındaki URL'i çekerekten ben crawler'ını mı sürekli çalıştıracak olursam aslında yapmış olduğum benim bu link listime ilk giren elemanı ilk olarak çektiğim stratejisine dönüşüyor.
+
+230
+01:07:15,835 --> 01:07:44,835
+first in first out. Bu seviye bazlı olarak web'i search etmemizi olmak sağlıyor. Diğer bir yöntem depth first search. Burada da benim seed URL'den başlamak üzere web ortamındaki datayı çekerken eğer bir dal seçip bu dalın sonuna kadar ilerleyip bu dalın en dibindeki yaprakları yakaladık,
+
+231
+01:07:44,835 --> 01:07:54,256
+indirdikten sonra, sonra bir sonraki dala geçip ondan sonra o daldaki yapraklara ulaşmamı sağlayan bir strateji bu.
+
+232
+01:07:54,256 --> 01:08:00,036
+Bu da bunun yapmış olduğu da last in first out yaklaşımı.
+
+233
+01:08:00,915 --> 01:08:05,295
+Buradaki depth first search'ı implement ederken ne yapıyorum?
+
+234
+01:08:05,896 --> 01:08:13,475
+Öncelikle birinci URL'imden eşitlik bir request gönderiyorum.
+
+235
+01:08:13,476 --> 01:08:31,856
+ondan gelmiş olan sayfadan çıkan ilk URL için tekrardan HTTP request gönderiyorum. Ondan gelmiş olan sayfadan elde etmiş olduğum ilk URL için tekrardan HTTP request gönderiyorum. Ondan gelen sayfadan elde ettiğim URL.
+
+236
+01:08:31,855 --> 01:08:49,895
+eğer bu URL'in eğer benim stopping condition'ım buradaysa ne yapıyorum? Bunu indirdikten sonra bu sefer bir adım geriye dönüp bunun diğer aynı sayfada olan diğer URL'ini çekiyorum.
+
+237
+01:08:49,896 --> 01:09:02,256
+sonra bir adım geriye dönüp bu seviyedeki HTML sayfasından daha önce bakmamış olduğum diğer URL'in sayfasına oluşuyorum.
+
+238
+01:09:02,256 --> 01:09:06,256
+Yani ne yapıyorum? En başta seçmiş olduğum brançın...
+
+239
+01:09:08,180 --> 01:09:23,419
+en uç noktasına kadar gidiyorum. Bu en uç noktasındaki sayfaları indiriyorum. Ondan sonra bunların hepsini indirdikten sonra bir başka branş seçip bu branşın alt sayfalarına iniyorum.
+
+240
+01:09:23,419 --> 01:09:42,559
+Bu last in first out yaklaşımı bu yaklaşımda da özellikle belirli bir konudaki sayfaları en dip noktasına kadar taramak istiyorsam bu da kullanılabilir.
+
+241
+01:09:42,560 --> 01:09:53,659
+Bunlar statik graph traversal algoritmaları. Bunları implement ettiğiniz crawler'ın konfigürasyon dosyasında siz seçebilirsiniz.
+
+242
+01:10:00,000 --> 01:10:26,899
+Burada bir tane temel crawler uygulamasının implementasyonu var. Bunu Perl'de implement etmişiz. Yaptığımız şey şu, seed URL'leri bir tane dosyaya koymuşuz. Seed URL'leri okumuşuz ve frontier listesine atmışız. Bunu tekrardan link list olarak düşünün. Ondan sonra da bu frontier listesi üzerinde bir döngü gerçekleştirmişiz.
+
+243
+01:10:26,899 --> 01:10:46,639
+Bu frontier listesi üzerinde döngüyü gerçekleştirirken stopic condition'ımızı da koymuşuz. Demişiz ki hani totaldeki şey sayısı, benim crawl edeceğim link sayısı maksimumu geçmemeli.
+
+244
+01:10:46,639 --> 01:11:00,360
+Bu döngü içerisinde ne yapmışım? Öncelikle Frontier listesinin en başındaki URL'i çekmiş ve indirilecek bir sonraki link değişkenimi atamışım.
+
+245
+01:11:00,720 --> 01:11:08,319
+Ondan sonra bu değişkendeki URL'i gitmişim, HTTP request göndermişim.
+
+246
+01:11:08,319 --> 01:11:17,239
+bunun karşısından gelen HTTP response objesine de bir page adını verdiğim bir tane değişkeni atamışım.
+
+247
+01:11:18,720 --> 01:11:26,040
+Bu elde etmiş olduğum page'i indekslemişim. Yani saklama ortamıma koymuşum.
+
+248
+01:11:26,699 --> 01:11:36,940
+Aynı şekilde bu elde etmiş olduğum page'in içerisinden linkleri çıkartmışım.
+
+249
+01:11:36,939 --> 01:11:52,419
+ve bu linkleri çıkartırken bunun içerisinde çıkardığım linkler arasında benim bu sayfanın kendi linki olmayacak şekilde çıkartmışım.
+
+250
+01:11:52,419 --> 01:12:06,259
+Yani ne demek? Bir sayfa kendi kendisine işaret edebilir. Yani bir sayfanın içerisinde kendi URL'i de olabilir. Biz kendi URL'ini zaten gittik, fetch ettik.
+
+251
+01:12:06,939 --> 01:12:12,779
+Dolayısıyla sadece bu yörelerin içerisinden kendisi dışındaki diğer yöreleri çıkartmak istiyorum.
+
+252
+01:12:12,919 --> 01:12:15,739
+Bu diğer yöreleri çıkarttığım zaman da neye ekleyeceğim?
+
+253
+01:12:16,360 --> 01:12:23,179
+Benim linklerden oluşan bir tane değişkenimi atlatacağım.
+
+254
+01:12:23,479 --> 01:12:28,479
+Demek ki bu sayfadan çıkartmış olduğum linkleri ne yapıyorum?
+
+255
+01:12:28,899 --> 01:12:30,940
+Links değişkenini atıyorum.
+
+256
+01:12:30,940 --> 01:12:49,940
+Daha sonra bu links değişkenini proses edip frontier listesine ekleyeceğim. Bu links değişkenini proses ederken benim az sonra konuşacağız. Yörelleri canonical formata dönüştürmem gerekiyor.
+
+257
+01:12:49,940 --> 01:13:12,440
+Yani yörellerin kök yörelini bulmam gerekiyor. Anlamsız soru işaretinden sonra ya da işte eğer bir yörelin içerisinde bir takım query ifadeleri varsa onların hepsini çıkartıp sadece kök yöreli tespit ediyorum ve onu frontier listesine ekliyorum.
+
+258
+01:13:13,339 --> 01:13:19,020
+Bunu bir döngü içerisinde gerçekleştiriyorum ta ki stopping condition'a ulaşana kadar.
+
+259
+01:13:23,636 --> 01:13:38,596
+Şimdi crawler'ın yaptığı bu işi gerçekleştirirken benim dikkat etmem gereken implementasyon işçileri var. Bunlardan bir tanesi ben bir sayfayı iki defa fech etmek istemiyorum.
+
+260
+01:13:38,596 --> 01:13:50,955
+dolayısıyla benim bu frontier listesini eklemiş olduğum URL'leri takip etmem lazım
+
+261
+01:13:50,955 --> 01:13:55,415
+yani ben URL'leri sürekli frontier listesine ekliyorum
+
+262
+01:13:55,415 --> 01:14:01,795
+aynı zamanda bu frontier listesinin en tepesindeki URL'e de dikiyor yapıyorum
+
+263
+01:14:02,755 --> 01:14:11,115
+Dolayısıyla daha önce benim URL listemde olmuş ama şu anda olmayan URL'ler olabilir.
+
+264
+01:14:11,356 --> 01:14:14,895
+Yani daha önce indirmiş olduğum URL'ler olabilir.
+
+265
+01:14:15,036 --> 01:14:16,636
+Bunların takibini yapmam gerekiyor.
+
+266
+01:14:16,636 --> 01:14:19,856
+Onun için de ne yapmam gerekiyor?
+
+267
+01:14:19,935 --> 01:14:22,636
+Bir tane hash tablosu tutmam gerekiyor.
+
+268
+01:14:22,636 --> 01:14:32,256
+Ve hash tablosunda da daha önce takip ettiğim, indirmiş olduğum tüm sayfaların bir bilgisi olmalı.
+
+269
+01:14:32,256 --> 01:14:45,036
+Eğer ben daha önceden bu sayfayı gezmişsem, hash tablom bana gezdiğimi söylüyorsa bu sayfayı tekrardan götürüp frontier listesine eklememem gerekiyor.
+
+270
+01:14:46,115 --> 01:14:52,136
+Diğer bir konu, frontier listesi çok hızlı bir şekilde büyüyebilir.
+
+271
+01:14:52,636 --> 01:15:01,095
+Ben sürekli olarak evde etmiş olduğum eşleyemen sayfalarından yöreller çıkartıyorum ve Frontier listesine ekliyorum.
+
+272
+01:15:02,235 --> 01:15:21,436
+Bu Frontier listesi eğer büyüyecek olursa benim bu Frontier listesindeki her bir yöreli indirmemde zaman alacağı için ve benim kuralarımın belirli bir sürede en önemli sayfaları indirmesini istediğim için ben ne yapmam lazım?
+
+273
+01:15:21,435 --> 01:15:27,755
+Frontier listesindeki URL'leri belirli bir mantığa göre sıralandırman lazım.
+
+274
+01:15:28,495 --> 01:15:34,655
+Az önceki örneklerde Bread First Search, Bread First Search bunlar static crawlerlardı.
+
+275
+01:15:34,775 --> 01:15:39,015
+Yani bunlar gelme sırasına göre ben ne yapıyordum?
+
+276
+01:15:40,095 --> 01:15:46,775
+İşte web ağacını tararken nasıl taramak istiyorsam Frontier listesine gelen URL'leri o şekilde koyuyordum.
+
+277
+01:15:46,775 --> 01:16:07,175
+Ama eğer ben popüleriteye dayalı olarak en yüksek popülerlikteki sayfaları özellikle, öncelikle indirmek istiyorsam, demek ki ben frontier listemi oluştururken popülerite bilgisine dayalı olarak frontier listesindeki sıralamayı oluşturmam direkt.
+
+278
+01:16:07,175 --> 01:16:15,355
+Diğer bir konu bu Fetcher modülü.
+
+279
+01:16:15,355 --> 01:16:26,035
+Fetcher modülünde de benim Fetcher modülünün belirli bir zamanda yapacağı işi yapmasını garantir altına almam gerekiyor.
+
+280
+01:16:26,136 --> 01:16:26,535
+Ne demek?
+
+281
+01:16:26,535 --> 01:16:49,315
+Eğer ben bandwidth'i çok düşük olan bir web sayfaya ulaşmak istiyorsam yani bu web sayfasının bulunmuş olduğu sunucu öyle bir ortamda ki bu sunucuya ancak çok düşük bir bandwidth üzerinden ben ulaşabiliyorum.
+
+282
+01:16:49,315 --> 01:17:14,775
+Dolayısıyla da benim bu sunucu üzerindeki sayfayı indirmem için gerekecek ortalama zaman çok büyüyor. Ama ben ne istiyorum? Feçer modülümün robust olmasını istiyorum. Yani bir sayfayı indirirken çok fazla zaman harcamasını istemiyorum ya da bir sayfayı indirirken.
+
+283
+01:17:15,136 --> 01:17:27,195
+fail durumu oluşsun istemiyorum. O yüzden de timeout mekanizması koyuyorum. Ne demek? Belirli bir süre içerisinde bir sayfayı indiremiyorsa Fetcher, o sayfayı indirmekten vazgeçmeli.
+
+284
+01:17:28,195 --> 01:17:40,195
+Ya da Fetcher bir sayfayı indirirken eğer bu sayfanın büyüklüğü, belli bir büyüklüğü açıyorsa, bunu bu sayfayı indirmekten vazgeçmeli.
+
+285
+01:17:40,195 --> 01:17:48,235
+Bunları da Fetcher'ı implement ederken biz ne yapıyoruz? Bunu dikkate alarak implement ediyoruz.
+
+286
+01:17:49,955 --> 01:17:58,935
+Yine biz özellikle indireceğimiz sayfaların indekslenebilir sayfalar olmasını istiyoruz.
+
+287
+01:17:58,935 --> 01:18:07,176
+Dolayısıyla da bu yöreller sadece bir HTML sayfasına işaret etmiyorlar.
+
+288
+01:18:07,175 --> 01:18:16,115
+aynı zamanda PDF sayfalarına, binary dosyalara, Word dosyalarına, text dosyalarına da işaret ediyorlar.
+
+289
+01:18:16,715 --> 01:18:21,755
+Dolayısıyla biz mutlaka ne yapmamız gerekiyor?
+
+290
+01:18:22,975 --> 01:18:28,535
+Pars edip içerisinden keywordleri çıkartabileceğimiz dosyaların peşinden koşmamız gerekiyor.
+
+291
+01:18:28,535 --> 01:18:37,055
+Dolayısıyla da eğer biz bir URL ile karşılaşmışsak ve bu URL bizim istemediğimiz tipteki bir dosyaya işaret ediyorsa
+
+292
+01:18:37,055 --> 01:18:52,115
+bu dosyaları indirmekten vazgeçmemiz gerekiyor. Bunun için de yöntemler var. Yani bu dosyanın acaba istediğimiz tipte bir dosya olup olmadığını kontrol etmek için az sonra onu da konuşuyor olacağız.
+
+293
+01:18:56,756 --> 01:18:58,735
+Buraya kadar sorusu olan var mı arkadaşlar?
+
+294
+01:19:06,068 --> 01:19:26,147
+Herhalde yok. Tamam. İsterseniz bir beş dakika ara verelim. Saat şu anda on bir geçiyor benim saatime göre. Bir beş dakika ara verelim, tekrardan devam edelim. Kapatmayın, sadece şey yapın, mute alın.
+
+295
+01:23:57,300 --> 01:23:58,979
+devam ediyorum.
+
+296
+01:24:11,796 --> 01:24:27,296
+Şimdi fetching ile ilgili implementasyon konusunu konuşalım. Biz fetching'i, fetcher'ı robust hale getirebilmek için mutlaka fetcher'ı implement ederken belirli kurallar koymamız gerekiyor.
+
+297
+01:24:27,296 --> 01:24:39,296
+Eğer indireceğimiz HTML sayfasının büyüklüğü çok fazlaysa bunun sadece belli bir bölümünü indirecek şekilde bir kural koyabiliriz.
+
+298
+01:24:39,296 --> 01:25:01,395
+yahut da diyebiliriz ki elde ettiğimiz Fetcher belirli bir timeout süresinin geçtiği durumda bir üereli indirirken bu durumda bu üereli indirmekten vazgeçecek bir sonraki üereli geçecek gibi bir takım implementasyonumuza kurallar koyabiliriz.
+
+299
+01:25:05,555 --> 01:25:29,156
+Diğer bir implementasyon konusu parsing ile ilgili. Biz şimdi normalde bizim kullandığımız browserların hepsi akıllı browserlar. Karşılaştıkları bir HTML'i son kullanıcıya gösterirken bu HTML dosyasında eksik kısımlar olsa bile bunu doğru bir şekilde gösterebiliyorlar.
+
+300
+01:25:29,156 --> 01:25:44,295
+Yani eksik HTML'leri tespit edip bu eksik HTML'leri ya kendileri dolduruyorlar ya da bunlar olmasına rağmen bu HTML'i olması gerektiği gibi görüntüleyebiliyorlar
+
+301
+01:25:44,295 --> 01:25:48,236
+Bizim crawler'ımızın da aynı mantıkta çalışması gerekli
+
+302
+01:25:48,236 --> 01:25:50,896
+Yani biz sonuçta ne yapıyoruz?
+
+303
+01:25:51,096 --> 01:25:57,236
+Elde ettiğimiz HTML dosyası içerisinden URL'leri çıkartıyoruz bir de metni çıkartıyoruz değil mi?
+
+304
+01:25:57,236 --> 01:26:11,676
+hani bu URL'leri çıkartırken, metni çıkartırken karşılaştığımız HTML dosyasının eksik ve problemler içeren HTML dosyası olabileceğini düşünerekten kodumuzu yazmamız gerekiyor.
+
+305
+01:26:11,676 --> 01:26:18,076
+Ve buna dayalı olarak da bunun içerisinden metinleri çıkarmamız gerekiyor.
+
+306
+01:26:21,427 --> 01:26:41,348
+diğer bir implementasyon konusu. Bunu daha önce content mining konusunu konuşurken de gördük. Sayfaların içerisinde kendi başına anlamı olmayan sadece gramer kuralları içerisinde olduğu için bir dilde kullandığımız kelimeleri ne yapmamız gerekiyor?
+
+307
+01:26:41,348 --> 01:27:05,008
+Çıkartmamız gerekiyor. Statik wordler bunlar. Dolayısıyla da bu kelimeleri indekslerken, bu kelimelerin biz kaydederken daha doğrusu saklama ortamında bu kelimeleri çıkartarak bunları saklama ortamında saklayabiliriz.
+
+308
+01:27:08,595 --> 01:27:28,055
+Yine ben bir crawler'ı çalıştırırken hatırlayan hani crawler'ı çalıştırdıktan sonra ben saklama ortamında crawl ettiğim bütün sayfaları ne yapıyorum?
+
+309
+01:27:28,055 --> 01:27:40,075
+indirdikten sonra saklıyorum. Daha sonra da bu saklama ortamındaki sayfalar üzerinde indeksi oluşturuyorum. Bu indekste ilgili bir implementasyon işiyor.
+
+310
+01:27:40,075 --> 01:27:56,435
+Bunu daha önce konuşmuştuk. Biz ne yapıyoruz? Kelimelerin birbirine eş, birbirine benzer anlamda olan kelimeleri tek bir köke dönüştürüp öyle indekse yerleştiriyoruz.
+
+311
+01:27:56,436 --> 01:28:02,436
+bu sayede oluşturulacak indeksin size'ını küçük tutmaya çalışıyoruz.
+
+312
+01:28:03,335 --> 01:28:13,756
+Aynı şekilde kelimelerin köklerini bularak bu köklerini indekste indekslemeye çalışıyoruz.
+
+313
+01:28:13,756 --> 01:28:25,396
+Böylelikle aynı anlama gelen, aynı kelimenin kökünden türemiş çok sayıda kelime için indekste yer tutmak zorunda kalmıyoruz.
+
+314
+01:28:26,435 --> 01:28:36,615
+Diğer bir implementasyon konusu statik ve dinamik yöreller arasındaki fark
+
+315
+01:28:36,615 --> 01:28:50,615
+Biz web'i crawl ederken karşılaşmış olduğumuz yörelleri statik yörel ya da dinamik yörel olduğunu tespit etmemiz gerekiyor
+
+316
+01:28:50,615 --> 01:29:00,956
+ve biz eğer dinamik bir URL ile karşılaşmışsak bu dinamik URL üzerinde bir takım kurallar koymamız gerekiyor.
+
+317
+01:29:00,956 --> 01:29:14,055
+Bu dinamik URL'in eğer URL uzunluğu belirli bir karakter sayısını aşıyorsa bunu tekrardan şeye eklemememiz gerekiyor frontier listesine.
+
+318
+01:29:14,055 --> 01:29:25,995
+Çünkü belirli bir karakter sayısını aşıyorsa bu dinamik yörel bir spam yöreli olabilir
+
+319
+01:29:25,995 --> 01:29:33,476
+Buradaki buna örnek olarak bahsettiğim şey şurada
+
+320
+01:29:33,476 --> 01:29:39,555
+Bunları spider trap oluşturan dinamik yöreller diyoruz
+
+321
+01:29:39,555 --> 01:29:43,676
+Bunların içerisinde birer CGI script olabiliyor
+
+322
+01:29:43,676 --> 01:30:08,476
+örnek olarak CCI'si. Başka scriptler de kullanıyorlar. Buradaki karşılaştığımız yöreller, diyelim ki siz bir web sitesine giriyorsunuz ve bu web sitesinde sürekli olarak sizi işte bir dinamik yörelle basıyorsunuz, başka bir sayfa açılıyor, onun içerisinde başka dinamik yöreller var, tekrardan bir dinamik yörelle basıyorsunuz, yine başka bir sayfaya gidiyorsunuz.
+
+323
+01:30:08,475 --> 01:30:20,635
+aslında yapmış olduğu crawler uygulamasını belli bir web sitesi üzerinde sürekli dolaşmaya zorluyor.
+
+324
+01:30:20,635 --> 01:30:33,635
+Ve burada oluşturmuş olduğu dinamik yörellerin karakter sayısı bu durumda belli bir karakteri açtığı zaman ne yapmamız gerekiyor?
+
+325
+01:30:34,255 --> 01:30:37,835
+Bu yöreli artık frontier liste sokmamamız gerekiyor.
+
+326
+01:30:38,475 --> 01:30:51,275
+diğer bir bu spider traplerden kaçma noktası da diyelim ki siz bir web sitesine girdiniz bu web sitesi içerisinde sizin crawlerınız çok yüksek sayıda URL'i crawl etmeye başladı.
+
+327
+01:30:51,275 --> 01:30:58,275
+Yani belli ki sürekli olarak yeni dinamik URL'ler yaratıp crawlerın...
+
+328
+01:30:59,315 --> 01:31:24,315
+aynı domen içerisinde çok sayıda URL'i crawl etmesine yol açtı. Bu durumda da aynı siteden crawl edilmiş URL sayısına bakaraktan ben ne yapabilirim? Bu sitedeki diğer dinamik URL'leri frontier listesine sokmayabilirim.
+
+329
+01:31:24,315 --> 01:31:44,716
+Demek ki benim karşılaştığım URL'lerim bazıları statik bazıları dinamik URL'ler olabilir. Dinamik URL'lerden bazıları spider trap'e yol açabilir. Dolayısıyla dinamik URL'ler için benim bir takım implementasyonumda kurallarım olması gerekiyor.
+
+330
+01:31:44,715 --> 01:32:00,935
+Yine ben karşılaşmış olduğum bir URL'i frontier listesine koymadan önce bu URL'i bir absolute URL'e dönüştürmem gerekiyor.
+
+331
+01:32:26,396 --> 01:32:46,315
+Yani tüm URL'i vermek yerine sadece intle.html o URL'in içerisinde olabilir. Aynı sayfa altında olduğu için browser link to sayfasından intle.html sayfasına gidebiliyor.
+
+332
+01:32:46,315 --> 01:32:52,616
+çünkü aynı domain altında aynı kategoride olduğu için bu relatif yörelden ulaşabiliyor.
+
+333
+01:32:53,415 --> 01:32:56,915
+Ama benim yapmam gereken ne yapmak?
+
+334
+01:32:57,095 --> 01:33:01,155
+Hani bu relatif yöreli absolute yörele çevirmek.
+
+335
+01:33:01,155 --> 01:33:11,396
+Demek ki bir sayfanın altında relatif yöreller varsa bu relatif yöreli base yörelle birleştirip absolute yörele çevirdikten sonra ben ne yapıyorum?
+
+336
+01:33:11,916 --> 01:33:14,275
+Götürüp frontier listeme ekliyorum.
+
+337
+01:33:14,275 --> 01:33:31,455
+Diğer bir benim dikkat etmem gereken konu da canonicalization. Burada standart formata dönüştürüyorsunuz yöreli. Burada görüyorsunuz dört tane farklı yörel var. Bunların aslında hepsi birbiriyle aynı.
+
+338
+01:33:31,455 --> 01:33:48,215
+Burada işte small letter'larla göstermişim, burada capital letter'larla göstermişim, burada portunu özellikle belirtmişim, oysa ki bu standart port yani belirtmeme gerek yok
+
+339
+01:33:48,215 --> 01:34:02,995
+burada da URL içerisinde önce sanki bir tane alt dizine giriyormuşum ondan sonra da sonra tekrardan ruta dönüyormuşum gibi bir şey yapmışım.
+
+340
+01:34:02,995 --> 01:34:07,255
+Buna da gerek yok yani şu kısmı da uçurabilirim.
+
+341
+01:34:07,735 --> 01:34:17,036
+Dolayısıyla aslında bu dört tane farklı URL'in hepsinin işaret etmiş olduğu canonical form yani standart form buradaki form.
+
+342
+01:34:17,036 --> 01:34:28,655
+dolayısıyla bunlarla karşılaştığında bunların aynı yörel olduğunu tespit edecek kod yazmam lazım ve frontier listesine de buna dayalı olarak koymam lazım.
+
+343
+01:34:31,176 --> 01:34:45,735
+İşte hani burada farklı canonical formlar var. İşte mesela yukarıdaki ne değil aşağıdakini seçiyorum. Her bir ikili için yukarıdakileri değil aşağıdakini canonical form için seçiyorum.
+
+344
+01:34:45,735 --> 01:34:54,896
+Şimdi bunların hepsi birer tane benim implementasyonumda kural olmalı. Bu kurallara dayalı olarak ben ne yapacağım? Yazacağım, crawler uygulamasını yazacağım.
+
+345
+01:34:56,655 --> 01:34:58,355
+Spider-Trap konusunu konuştuk.
+
+346
+01:35:03,091 --> 01:35:30,891
+PageRepository, şimdi eğer benim indirmem gereken, saklamam gereken HTML döküman sayısı çok fazla ise bu durumda bu dosyaları yine sıkıştırarak yahut da bu her bir HTML sayfasını temsil edecek netelikte bilgiyi tutaraktan saklamam gerekiyor.
+
+347
+01:35:30,891 --> 01:35:37,632
+yani HTML sayfasının tümünü değil de sadece benim için önemli olan metinleri tutaraktan saklamam gerekiyor.
+
+348
+01:35:38,911 --> 01:35:43,891
+Burada görüyorsunuz bir file sistemi üzerinde ben bu page repositori oluşturabilirim.
+
+349
+01:35:44,932 --> 01:35:57,891
+Ben ne yaparım? File sistem üzerinde her bir URL'e bir hash fonksiyon kullanaraktan bu sayfanın URL'ini bir file name'e dönüştürürüm.
+
+350
+01:35:57,891 --> 01:36:15,312
+bir hash fonksiyon kullanıraktan. Ondan sonra da ne yaparım? File sistemde her birisi ayrı bir file olacak şekilde saklayabilirim. Bunun sonucunda benim elde edeceğim crawl datasında çok fazla ayrı dosya olacaktır.
+
+351
+01:36:15,312 --> 01:36:33,572
+ya da diğer bir yöntem nedir? Benim her bir indirmiş olduğum sayfayı bir XML ile dönüştürebilirim. Bütün bu sayfaları büyük bir XML dosyası içerisinde tutabilirim.
+
+352
+01:36:33,571 --> 01:36:52,991
+XML dosyasının her bir elemanı birer tane sayfayı ifade edecek şekilde ne yaparım? Büyük bir XML dosyası oluşturabilirim. Bu da yine file sistem üzerinde duracak bir yaklaşım. Bunun dışında diğer database optionlarını deneyebilirim.
+
+353
+01:36:52,991 --> 01:36:56,811
+işte relational database sistemi kullanabilirim.
+
+354
+01:36:56,811 --> 01:37:13,211
+Yahut da yine database yaklaşımını kullanan ama standart relational database'lerden overhead'i daha düşük olan dedicated, sadece bu iş için dedicated database'ler var.
+
+355
+01:37:13,391 --> 01:37:15,711
+Bunlardan bir tanesi birthday DB.
+
+356
+01:37:16,531 --> 01:37:18,891
+Bunları kullanaraktan ne yapabilirim?
+
+357
+01:37:18,951 --> 01:37:22,451
+Bir database ortamında bu dosyaları saklayabilirim.
+
+358
+01:37:25,779 --> 01:37:44,179
+Şimdi şu ana kadar konuştuğumuz crawler yapısı, sequential crawler yapısı. Bunda herhangi bir paralellik yok. Oysa ki şu anda hiçbir implement edilmiş crawler, yani günümüzdeki hiçbir implement edilmiş crawler sequential olarak çalışmıyor.
+
+359
+01:37:44,179 --> 01:37:51,620
+çünkü eş zamanlı olarak çok sayıda URL'i indirip proses edebilir crawler'lara ihtiyaç var.
+
+360
+01:37:51,759 --> 01:37:57,319
+Çünkü web domaininde çok fazla crawl edilmesi gereken doküman var.
+
+361
+01:37:59,960 --> 01:38:03,219
+Bunun için de concurrency'yi implement etmeye çalışıyoruz.
+
+362
+01:38:03,439 --> 01:38:07,439
+Yani eş zamanlı çalışılabilirliği implement etmeye çalışıyoruz.
+
+363
+01:38:07,439 --> 01:38:21,239
+Bunu yaparken de özellikle bir sequential crawler'ın nerelerde daha fazla zaman harcadığını incelememiz gerekiyor.
+
+364
+01:38:21,239 --> 01:38:39,759
+Öncelikle bunlardan bir tanesi bir hostname'i bir URL'deki hostname'i bir IP adresi match ettiren işlem var.
+
+365
+01:38:39,759 --> 01:38:53,179
+bunu nasıl yapıyoruz? Mesela bir HTML dosyasından bir URL'i çektik. Bu URL'in bir HTTP request objesi oluşturacağım ve HTTP request objesini göndereceğim.
+
+366
+01:38:53,179 --> 01:39:03,219
+Bunun için bu URL'e karşılık gelen IP adresini bilmem lazım. İşte bu işlemi gerçekleştiren DNS sunucusu. Domain Name Server sunucusu.
+
+367
+01:39:03,219 --> 01:39:13,819
+İşte bu DNS sunucusuna ne yapıyor benim crawler uygulamam? Bir tane request gönderiyor. Diyor ki işte şu hostname ve karşılık gelen IP adresi bana verir misin?
+
+368
+01:39:13,819 --> 01:39:18,779
+İşte bu zaman alan bir işlem. Bunu paralelleştirmek gerekiyor.
+
+369
+01:39:18,779 --> 01:39:46,100
+Yine bir diğer konu, ben bir sayfaya HTTP request gönderdikten sonra bu eğer bir standard socket üzerinden yapılmış ise yani standard socket sınıfı kullanılarak yapılmış ise bu synchronized şekilde gerçekleşiyor.
+
+370
+01:39:46,099 --> 01:40:04,199
+yani ne demek? Ben request'i gönderiyorum, bu soket sınıfı request'e karşılık response gelene kadar blok oluyor. Yani bir başka thread tarafından kullanılmıyor. Bizim bu soket sınıfı dediğimiz şey nedir?
+
+371
+01:40:04,199 --> 01:40:25,259
+network protokollerini hatırlayacak olursanız, TCP IP protokolünü kullanırken, ne zaman ki siz bir uygulamanızı başka bir makinedeki bir uygulamayla konuşturmak istediğiniz zaman,
+
+372
+01:40:25,259 --> 01:40:37,519
+TCP IP protokolünü kullanırken siz ne yapacaksınız? Bu protokolleri kullanmanıza izin veren kütüphaneler size bir tane soket sınıfı veriyorlar.
+
+373
+01:40:37,519 --> 01:40:48,239
+Yani siz bir soket sınıfının objesini oluşturuyorsunuz. Bu soket sınıfının objesinde karşı taraftaki IP adresi ve port adresini belirtiyorsunuz.
+
+374
+01:40:48,679 --> 01:40:54,619
+Ve bu soket üzerinden göndermek istediğiniz mesajı karşı tarafa gönderiyorsunuz.
+
+375
+01:40:55,259 --> 01:41:13,679
+Eğer bu bir sinkronize soketse ne olacak? Bu soket request'i gönderdikten sonra response gelene kadar başkası tarafından kullanılmayacak. Yani block olacak. Bu da zaman alan bir şey. Dolayısıyla bunun da paralelleştirilmesi gerekiyor.
+
+376
+01:41:13,679 --> 01:41:22,019
+diğer bir zaman alan şey network zamanı. Hani siz ne yapıyorsunuz?
+
+377
+01:41:24,180 --> 01:41:36,020
+request'i gönderdiniz, response gelene kadar geçen zaman. Bunun da ne yapılması gerekiyor? Paralelleştirilebiliyor ya da hızlandırılabiliyor olması gerekiyor.
+
+378
+01:41:36,020 --> 01:41:51,639
+Şimdi buradaki şeyleri zaman alıcı bir sequential crawler'da bu zaman alıcı adımları nasıl paralelleştiriyoruz, nasıl concurrent hale getiriyoruz ona bakalım.
+
+379
+01:41:54,180 --> 01:42:10,720
+Şimdi bu da bir concurrent crawler'ın görünümü. Hani bakacak olursanız bu concurrent crawler'da şurada her bir gri background ile çizilmiş olan her bir dikdörtgen birer tane thread.
+
+380
+01:42:11,620 --> 01:42:19,319
+Bu threadlerin her birisi neyin threadi? Sequential crawler'daki o logical flow'un içerisinde barındıran bir thread.
+
+381
+01:42:19,319 --> 01:42:47,199
+Buradaki çalışma yapısı nedir? Burada öncelikle front seed yörelleri yine bu uygulamaya veriyoruz. Çünkü bir crawler uygulaması. Frontier Manager ne yapıyor? Bu ilk baştaki modülümüz. Bu modülü paralelleştiremiyorum. Çünkü ilk start aldığımda yapılması gereken işleri yapan modül bu.
+
+382
+01:42:47,199 --> 01:42:55,219
+seed yörelleri frontier listesine ilk başta bu ekliyor ve frontier manager aynı zamanda bütün threadleri çalıştırıyor.
+
+383
+01:42:56,040 --> 01:43:01,439
+Şimdi bu eş zamanlı olarak çalışan threadlerden bir tanesini yaptığına bakalım.
+
+384
+01:43:02,039 --> 01:43:05,619
+Öncelikle bu thread ayağa kalktığı zaman ne yapıyor?
+
+385
+01:43:05,619 --> 01:43:12,979
+İlk olarak frontier listesinden ilk yöreli alıyor. Ondan sonra bunu fetch ediyor.
+
+386
+01:43:12,979 --> 01:43:32,799
+ondan sonra bunun içerisindeki yörelleri çekiyor bunu ne yapıyor? Saklama ortamına saklıyor. Arkasından stopping condition sağlanmış mı? Bana bakıyor. Sonra tekrardan gidip yeniden frontier listesinden bir tane yörel alıyor.
+
+387
+01:43:32,799 --> 01:43:38,339
+bu işlemi bütün threadler eş zamanlı olarak yapıyorlar.
+
+388
+01:43:39,439 --> 01:43:42,139
+Dolayısıyla ben ne yapmış oldum?
+
+389
+01:43:43,739 --> 01:44:00,959
+İlk başta bu frontier listesinden eleman alma işlemini çok sayıda eş zamanlı çalışan crawler threadini gerçekleştirmiş oldum.
+
+390
+01:44:00,959 --> 01:44:19,639
+eleman alıp yani yöre alıp bunları proses eden threadleri. Şimdi hala burada benim yapacağım şeyler var. Birincisi bu sayfayı fetch ederken ne yapıyorum? Hala DNS sunucusuna şeyi sormak zorundayım.
+
+391
+01:44:19,639 --> 01:44:23,359
+URL ile IP adresini sormak zorundayım.
+
+392
+01:44:23,359 --> 01:44:38,699
+Hala burada bir sayfayı repository'ye store ederken, IO storage gerçekleştiği için, IO access gerçekleştiği için hala burada bir zaman alıcı bir işlem var.
+
+393
+01:44:41,879 --> 01:44:44,199
+Onlara da çözümler bulmam gerekiyor.
+
+394
+01:44:49,811 --> 01:45:14,871
+demek ki concurrent crawlerlarda az önce söylediklerimi özetleyecek olursam, multi-threading kullanılıyor. Her bir thread birer sequential crawler olarak çalışıyor. Sadece bunlar aynı data structure'ları paylaşıyorlar. Yani bir frontier listesini paylaşıyorlar. Bir de repository'yi paylaşıyorlar.
+
+395
+01:45:14,871 --> 01:45:23,691
+Yani hepsinin aynı repositoriye bu elde etmiş oldukları HTML dökümanlarını yazmaları lazım. Hepsi aynı frontier listesinden okumalı.
+
+396
+01:45:26,431 --> 01:45:40,771
+Dolayısıyla da hani bu shared data'nın olduğu ortamları sinkronize etmem gerekli. Yani birden fazla thread frontier listesine ulaşıyorsa buraya bir sinkronizasyon koymam lazım.
+
+397
+01:45:40,771 --> 01:45:46,611
+aynı dataya eş zamanlı olarak birden fazla trendin ulaşmasını önleyeceğim.
+
+398
+01:45:47,051 --> 01:45:54,471
+Aynı şekilde repositoriye herhangi bir şey yazılacaksa burada da bir synchronization yapmam gerekiyor.
+
+399
+01:46:02,195 --> 01:46:30,036
+Şimdi bir de universal crawler'lara bakalım. Universal crawler'lar dediğimiz gibi universal search engine'leri support eden crawler'lar. Bunlar çok sayıdaki web datasına ölçeklenebilir crawler'lar. Bunlar günümüzdeki network bandwidth'in neredeyse %50'den fazlasını consume eden crawler'lar.
+
+400
+01:46:30,036 --> 01:46:37,515
+ve bunlar her seferinde yeniden sıfırdan bir indeks oluşturmuyorlar.
+
+401
+01:46:37,635 --> 01:46:43,036
+Mevcuttaki indeks üzerine incremental bir şekilde eklemeler yapıyorlar.
+
+402
+01:46:43,036 --> 01:46:53,995
+Çünkü sıfırdan bir indeks oluşturmaları bunların çok zaman alacağı için sadece yeniden karşılaştıkları sayfaları indeksliyorlar ve mevcuttaki indeksleri update ediyorlar.
+
+403
+01:46:53,995 --> 01:47:07,435
+Bu universal crawlerların da implement edilirken dikkat edilmesi gereken iki tane önemli faktör var. Bir tanesi performans, ikincisi politika.
+
+404
+01:47:07,815 --> 01:47:19,575
+Performans derken bu crawlerların milyarlarca sayfaya crawl edecek şekilde ölçeklenebilir crawlerlar olması gerekiyor.
+
+405
+01:47:19,575 --> 01:47:39,515
+politika açısından da şimdi iki türlü şey yapabilirsiniz. Bir tanesi sayfaların güncel olmasını talep edebilirsiniz. İkincisi ise bu sayfaların olabildiğince fazla olmasını isteyebilirsiniz.
+
+406
+01:47:39,515 --> 01:47:43,496
+Yani bir coverage ile freshness arasında bir trade-off var.
+
+407
+01:47:43,916 --> 01:47:49,715
+Coverage derken olabildiğince birbirinden farklı fazla sayfayı ben indeksleyeyim diyebilirsiniz.
+
+408
+01:47:49,715 --> 01:48:01,695
+İkincisi ise hayır ben olabildiğince fazla sayfa olmasın ama şu olsun benim indekslediğim sayfaların içeriği sürekli güncel olsun.
+
+409
+01:48:01,695 --> 01:48:16,716
+Yani bu şu demek sizin crawlerınız aynı indekslemiş olduğu sayfayı daha yüksek frekanslarla tekrardan ziyaret edip bu sayfanın içeriğini ne yapıyor? İndirip güncelliyor demek
+
+410
+01:48:16,716 --> 01:48:31,235
+Crawlerınız yeni daha önce hiç karşılaşmadığı sayfaları indekslemek üzerinde çalışmak yerine daha önce indekslemiş olduğu sayfaların içeriğinin güncel olması üzerinde çalışıyor
+
+411
+01:48:31,235 --> 01:48:51,615
+Dolayısıyla ben bu universal crawler'ları implement ederken coverage ile freshness arasındaki trade-off'a dikkat etmem gerekiyor. Bunun için bir politika belirlemem gerekiyor. Aynı zamanda çok olabildiğince fazla sayfaya da ulaşabilir nitelikte bir yazılım geliştirmem gerekiyor.
+
+412
+01:48:51,615 --> 01:49:17,115
+Şimdi şurada şeylerden bahsetmiştik ya, crawlerların, concurrent crawlerları zaman alan şeyleri, işte DNS sunucusundan IP ile yöreli meçettirmek, işte sincronist soketlerin kullanımı, bir de işte network zamanının çok fazla alması durumları
+
+413
+01:49:17,115 --> 01:49:30,276
+İşte bu universal crawlerlar bunlarla ilgili bir takım çözümler sunuyorlar, implement etmek durumundalar
+
+414
+01:49:30,276 --> 01:49:34,935
+Bunlardan bir tanesi bunlar asynchronous soketler kullanıyorlar
+
+415
+01:49:34,935 --> 01:49:44,515
+Yani TCP IP'nin sunmuş olduğu standart synchronous soket mantığının yanı sıra asynchronous soket kullanıyorlar
+
+416
+01:49:44,515 --> 01:49:55,175
+Bu ne demek? Bir soket üzerinden bir tane request'i karşı tarafa gönderdiğiniz zaman oradan response gelmesini beklemeden ne yapıyorsunuz?
+
+417
+01:49:55,235 --> 01:49:58,875
+Tekrardan bu soketi başka bir request göndermek için kullanıyorsunuz.
+
+418
+01:50:00,564 --> 01:50:28,564
+Aynı zamanda bunlar DNS lookup'larını da minimize etmek için çözümler sunuyor. Aynı zamanda yine storage'a yani gelen sayfaları sakladıkları saklama ortamına daha hızlı bir şekilde sayfaları saklayacak şekilde çözümler sunuyorlar.
+
+419
+01:50:28,564 --> 01:50:46,123
+Bir bakalım bunların architecture'ına, mimari yapısına bir bakalım. Burada bir universal crawler'ın yapısını görüyorsunuz. Yine bu da daha önce göstermiş olduğum concurrent crawler'ların yapısına benziyor.
+
+420
+01:50:46,123 --> 01:50:52,703
+Burada her bir gördüğünüz gri arka planlı dikdörtgen birer tane crawler thread'i
+
+421
+01:50:52,703 --> 01:51:09,823
+Bu thread'lere bakacak olursanız normal daha önce konuştuğumuz gibi yalnız burada sadece zaman alan aşamalar için biraz daha optimizasyon yapılmış
+
+422
+01:51:09,824 --> 01:51:30,804
+nedir bunlar? Bunlardan bir tanesi bu DNS'e ulaşırken bir URL ile IP adresi match ederken düşünülmüş çözümler. Bunlar DNS sunucuları için bir cache mekanizması implement etmiş ve cache kullanıyorlar.
+
+423
+01:51:30,803 --> 01:51:43,343
+Asynchronous soketler kullanıyorlar. Bu sayede bu crawler'ın çalıştığı makine üzerinde açılabilecek soket sayısını çok daha arttırıyorlar.
+
+424
+01:51:43,343 --> 01:52:11,444
+Yine sayfaları daha hızlı bir şekilde getirebilmek için network switch'ler, software tabanlı network switch'ler implement etmişler ve bu network switch'ler üzerinden bir sayfaya ulaşmak için gereken routing zamanını daha da kısaltabiliyorlar.
+
+425
+01:52:11,443 --> 01:52:22,483
+Yani sayfayı indirmek için gerekli süreyi azaltmaya çalışmışlar, asinkroni soketlerle daha fazla sayfayı eş zamanlı olarak indirme olanağı sağlamışlar
+
+426
+01:52:22,483 --> 01:52:37,523
+Aynı zamanda caching mekanizmaları kullanaraktan DNS'te IP adresiyle URL'i match ettirme işlemini daha hızlı yapıyor hale gelmişler
+
+427
+01:52:37,523 --> 01:52:50,343
+Bir de aynı zamanda sayfaları da saklama ortamına koyarken yani işte URL'leri çıkardıktan sonra sayfayı saklamaları gerekiyor ya
+
+428
+01:52:50,343 --> 01:52:55,643
+koyarken yine software tabanlı storage switch'ler implement etmişler.
+
+429
+01:52:56,243 --> 01:53:02,103
+Buna dayalı olarak da IO access zamanını da daha kısa sürede gerçekleştirebiliyorlar.
+
+430
+01:53:02,103 --> 01:53:20,363
+Az önce coverage ile freshness arasındaki trade-off'u konuşmuştum. Her universal crawler, bu ikisi arasındaki trade-off'a ne yapması gerekiyor? Konfigüre edilebilir bir hale getirmesi gerekiyor.
+
+431
+01:53:20,364 --> 01:53:34,703
+kimi zaman coverage, kimi zaman da freshness önem kazanabiliyor. Bu iki trade-off'u da destekleyebilir esneklikte bir tane crawler implement etmek gerekiyor.
+
+432
+01:53:40,787 --> 01:53:56,467
+Her universal crawler'ın indeksine bakaraktan biz bu web domenindeki data size hakkında da fikir sahibi olabiliriz.
+
+433
+01:53:57,427 --> 01:54:06,867
+Farklı arama motorlarının crawler'ları farklı indeks size'larına sahip olabilir. Bu indeks size'ları da yıldan yıla değişebilir.
+
+434
+01:54:06,867 --> 01:54:23,567
+Burada kimi zaman bu crawlerların farklı politikaları desteklediğini de görebiliyoruz. Kimi zaman freshness politikasını, coverage politikasına daha tercih edebiliyor arama motorları.
+
+435
+01:54:27,091 --> 01:54:37,571
+Bir de indirilmiş olan sayfaların freshness politikasını destekleyip desteklemediğine bakarken neye bakıyoruz?
+
+436
+01:54:37,571 --> 01:54:56,791
+sayfaların içerisindeki Glass Modified ya da işte Expires taglerine, etiketlerine bakarak bu etiketlerde yazan verilere dayalı olarak biz sayfaların freshness bilgisine,
+
+437
+01:54:56,791 --> 01:55:17,851
+freshness konusunda ne kadar önce update edilmiş, bir sonra ne zaman ben bu sayfayı revisit etmem gerekli, tekrardan crawl edip indirmem gerekli bunları belirleyebiliyoruz.
+
+438
+01:55:22,515 --> 01:55:24,736
+Bunları geçebilirim.
+
+439
+01:55:28,435 --> 01:55:32,355
+Evet, şimdi bir de preferential crawlerlardan konuşmak istiyorum.
+
+440
+01:55:32,515 --> 01:55:39,495
+Bu preferential crawlerları implement ederken, ben frontier listesini oluştururken daha önce ne demiştim?
+
+441
+01:55:40,856 --> 01:55:46,315
+First in, first out ya da last in, first out gibi politikalarım olabilirdi.
+
+442
+01:55:46,315 --> 01:55:55,655
+Bunlar bread first search ya da dev first search mantığıyla ben web'i crawl etmek istiyorsam, bu politikaları implement edebilirdim.
+
+443
+01:55:55,655 --> 01:56:05,715
+yahut da popülerite, öncelikle popüleriteye önem vererekten ben sayfaları indirmeyi tercih edebilirim.
+
+444
+01:56:05,776 --> 01:56:12,656
+Bu durumda elde etmiş olduğum sayfaları frontier listesine eklerken,
+
+445
+01:56:14,055 --> 01:56:20,375
+popülerlik değeri, page rank gibi popülerlik değerine dayalı olarak frontier listesine ne yapıyorum?
+
+446
+01:56:20,375 --> 01:56:20,895
+ekliyorum.
+
+447
+01:56:22,675 --> 01:56:23,776
+Şimdi bu bir
+
+448
+01:56:23,776 --> 01:56:24,355
+importance
+
+449
+01:56:24,355 --> 01:56:28,335
+measure yani
+
+450
+01:56:28,335 --> 01:56:29,975
+bir önem
+
+451
+01:56:29,975 --> 01:56:32,735
+ölçüm değeri. Eğer ben
+
+452
+01:56:32,735 --> 01:56:34,156
+bir sayfanın önem
+
+453
+01:56:34,156 --> 01:56:36,075
+ölçüm değeriyle ilgili bir tane
+
+454
+01:56:36,075 --> 01:56:38,575
+bilgiye sahipsen, bir veriye
+
+455
+01:56:38,575 --> 01:56:40,175
+sahipsen mesela o sayfanın
+
+456
+01:56:40,175 --> 01:56:42,175
+popülerliğiyle ilgili veri, buna
+
+457
+01:56:42,175 --> 01:56:43,255
+dayalı olarak ben
+
+458
+01:56:43,255 --> 01:56:46,035
+frontier listesinde sıralama
+
+459
+01:56:46,035 --> 01:56:46,955
+oluşturabilirim.
+
+460
+01:56:47,915 --> 01:56:49,255
+Şimdi peki
+
+461
+01:56:49,255 --> 01:56:55,876
+Bu önem derecesi metriyi nasıl hesaplanabilir?
+
+462
+01:56:56,796 --> 01:57:07,016
+Bana bir yörel verdiniz ve dediniz ki bu yöreli bir önem değeri tespit edebilir misin?
+
+463
+01:57:07,016 --> 01:57:17,016
+Şimdi eğer benim elimde bir web grafiği varsa ya da o ana kadar crawl etmiş olduğum sayfalar içerisinden bir web grafiği oluşturmuşsam,
+
+464
+01:57:17,015 --> 01:57:33,015
+bu web grafiği içerisinde link tabanlı bir sıralama algoritması çalıştırıp elimdeki web grafiğin yani o ana kadar kural etmiş olduğum web grafiği üzerinde her bir sayfanın önem değerini hesaplayabilirim.
+
+465
+01:57:34,515 --> 01:57:39,156
+Dolayısıyla bir önem değeri hesaplamadaki bir yöntem bu.
+
+466
+01:57:39,156 --> 01:58:05,976
+İkincisi eğer ben bir şey yapıyorsam, preferential crawler yapıyorsam benim ilk başta hangi konuyla ilgili crawler'ı çalıştıracaksam bu konuyla ilgili keywordler ile o URL arasında bir benzerlik fonksiyonu çalıştırabilirim.
+
+467
+01:58:05,975 --> 01:58:20,775
+Nasıl yaparım bunu? Bu URL'in içerisinde bulunan keywordler varsa bu keywordlerle benim bu arama konum olan keywordler arasında bir benzerlik var mı buna bakabilirim.
+
+468
+01:58:20,775 --> 01:58:46,615
+Aynı şekilde bu URL'i çıkarmış olduğum URL'in parent HTML dosyası içerisinde bulunan keywordlere bakaraktan yani parent'ın içerisinde bulunan keywordlerle benim arama yaptığım konuyla ilgili benzerliğe bakıp yine bu URL'e bir puan ataması yapabilirim.
+
+469
+01:58:46,615 --> 01:59:14,575
+Dolayısıyla benim bu herhangi karşılaşmış olduğum bir URL'i ya popüleritesine dayalı olarak ya da hem URL'in kendi tekstil içerisinde ya da URL'in bulunmuş olduğu parent HTML dükkanı içerisindeki keywordlerin arama konusuyla benzerliğine dayalı olarak da aynı şekilde bu URL'lere bir puan ataması yapabilirim.
+
+470
+01:59:15,796 --> 01:59:21,095
+Şimdi bu preferential crawler'lar demek ki neye dayalıymış?
+
+471
+01:59:21,595 --> 01:59:28,716
+URL'lere bir önem derecesi puanı atıyorum ve bu puana dayalı olarak da bu URL'leri sınıflandırıyorum.
+
+472
+01:59:29,955 --> 01:59:31,716
+İki tip preferential crawler var.
+
+473
+01:59:31,835 --> 01:59:35,335
+Bir tanesi focus crawler, ikincisi typical crawler.
+
+474
+01:59:35,335 --> 01:59:44,335
+Focus crawler, daha önce bahsetmiştik aynı normal standart crawler'lar gibi bir inverted index oluşturuyorlar.
+
+475
+01:59:44,335 --> 02:00:09,875
+Ve search işlemi inverted index üzerinden gerçekleşiyor. Topical crawlerlar ise search işlemi yapıldığında başlatıldığında başlanan crawlerlar. Onlar herhangi bir şekilde bir indeks oluşturmak için çalışmıyorlar. Ne zamanki biz search işlemi için keywordleri girdik ve search'i başlattık crawlerlar da o zaman web'i aramaya başlıyorlar.
+
+476
+02:00:09,875 --> 02:00:30,656
+Şimdi bu Superwise Focus Crawler'lar karşılaşmış oldukları sayfaların bu crawlerın aramakla sorumlu olduğu sayfalar kategorisinde olup olmadığına bakıyor.
+
+477
+02:00:30,796 --> 02:00:32,695
+Eğer varsa bunu indiriyor.
+
+478
+02:00:32,815 --> 02:00:33,876
+Değilse indirmiyor.
+
+479
+02:00:33,876 --> 02:00:39,555
+Bunlar dolayısıyla bir klasifier kullanıyorlar.
+
+480
+02:00:39,876 --> 02:00:47,615
+Bu focus kruvları mesela işte yemek tariflerinin olduğu sayfaları içeren, bulmaya çalışan bir kruvdır.
+
+481
+02:00:48,075 --> 02:00:53,656
+Dolayısıyla bu kruvların içinde ne çalışacak?
+
+482
+02:00:54,676 --> 02:01:01,516
+Sayfayı yemek sayfası mıdır, değil midir diye etiketlemeye çalışan bir tane sınıflandırıcı çalışacak.
+
+483
+02:01:01,516 --> 02:01:16,676
+Eğer bir sayfayı indirdiniz, elinizde bir URL var, gittiniz bunu indirdiniz, bunun içerisinden kontentini çıkarttınız, sizin klasifierınız bunu etiketlemeye çalışacak.
+
+484
+02:01:16,796 --> 02:01:22,296
+Bu bir işte recipe sayfasıdır, yemek tarifidir yahut da değildir.
+
+485
+02:01:22,895 --> 02:01:30,296
+Eğer yemek tarifi sayfası diye etiketliyorsanız bu sayfanın içerisinden de URL'leri çıkartıp Frontier listesine ekleyeceksiniz mesela.
+
+486
+02:01:30,296 --> 02:01:37,456
+Eğer değildir diye etiketliyorsanız bu sayfasının içerisinden çıkarttığınız URL'leri eklemeyeceksiniz.
+
+487
+02:01:37,456 --> 02:02:00,495
+Topical crawler'larda az önce söylediğim gibi sürekli olarak elde etmiş olduğunuz URL'in ya kendi URL'in içerisindeki anchor text'in ya da URL'in bulunmuş olduğu parent dosyanın içerisindeki keywordlerin topi'ye benzerliğine bakıyoruz.
+
+488
+02:02:00,495 --> 02:02:04,915
+Eğer bu benzerlik belirli bir derecenin üzerindeyse ne yapıyoruz?
+
+489
+02:02:05,075 --> 02:02:07,895
+Bu yöreli frontier listesine ekliyoruz.
+
+490
+02:02:09,236 --> 02:02:13,115
+Bu preferential crawling algoritmalarının farklı tipleri var.
+
+491
+02:02:13,555 --> 02:02:19,796
+Yani mesela bir tane bread first search aslında preferential crawler değil.
+
+492
+02:02:20,715 --> 02:02:21,775
+Depth first search da öyle.
+
+493
+02:02:21,895 --> 02:02:24,876
+Yani bunlar standart crawling algoritmaları.
+
+494
+02:02:24,876 --> 02:02:32,775
+Ama bunlar genelde preferential crawling algoritmalarına benchmark algoritmalar olarak kullanılır.
+
+495
+02:02:32,855 --> 02:02:42,296
+Yani bread first search, depth first search bunları şu aşağıdaki diğer preferential crawling algoritmalarına karşı benchmarklarda kullanıyoruz.
+
+496
+02:02:43,376 --> 02:02:46,635
+Şimdi preferential crawling algoritmalarında neler var?
+
+497
+02:02:46,756 --> 02:02:48,316
+Mesela best and first var.
+
+498
+02:02:49,236 --> 02:02:53,376
+Hani burada işte ne dedik az önce?
+
+499
+02:02:53,376 --> 02:03:11,935
+Yani sizin ilk başta girmiş olduğunuz konuya benzer nitelikte sayfalar söz konusuysa bu benzer nitelikte sayfalardan elde ettiğiniz yörellere daha büyük önem değeri verip
+
+500
+02:03:12,079 --> 02:03:41,139
+frontier listesine öyle koyuyorsunuz. O durumda frontier listesi ne yapıyor? Sürekli olarak en yüksek benzerlikte olan sayfaların benzerlik değerlerine göre yukarıdan aşağıya sıralandırılmış bir liste olmuş oluyor. Ve siz bu frontier listesindeki en tane yöreli aynı anda concurrent bir şekilde, paralel bir şekilde indirmeye çalışıyorsunuz.
+
+501
+02:03:42,079 --> 02:04:08,779
+PageRank tabanında preferential crawling algoritması bu arkadaşın yapmış olduğu ne yapıyor? Bizim frontier listesindeki URL'leri, keywordleri ve PageRank değerlerine dayalı olarak ne yapıyor? Sıralandırıyor.
+
+502
+02:04:08,779 --> 02:04:26,619
+Shark Search, bu Shark Search'ta yapmış olduğu şey bu anchor text ile yani URL'in kendi teksti içerisindeki kelimelerle
+
+503
+02:04:26,620 --> 02:04:39,579
+URL'in bulunmuş olduğu parent sayfanın içerisindeki kelimelere bakıp URL'in önem değerini buna da yanı olarak buluyor.
+
+504
+02:04:40,240 --> 02:04:45,779
+Bu Shark Search'ın daha önceki implementasyonu Fish Search'tu.
+
+505
+02:04:46,260 --> 02:04:50,399
+Daha sonra Shark Search bunun geliştirilmiş versiyonu oldu.
+
+506
+02:04:50,399 --> 02:05:05,980
+Yine diğer bir preferential crowding algoritması InfoSpider bu algoritmada karşılaşmış olduğu sayfalardan, yeni sayfalardan çekmiş olduğu yeni URL'lere dayalı olarak ne yapıyor?
+
+507
+02:05:06,699 --> 02:05:13,980
+Web ortamındaki sayfaları arıyor. Bu InfoSpider bir topical crawler algoritma örneği.
+
+508
+02:05:20,564 --> 02:05:35,643
+Şimdi bu preferential crawlerların çalışmalarını birbiriyle karşılaştırırken de crawl size recall grafikleri kullanıyoruz arkadaşlar.
+
+509
+02:05:35,643 --> 02:05:52,164
+Şimdi bu grafiğe bakacak olursanız sıfırdan yüzde yüzü düşünün. Şimdi siz bir keyword girdiniz ve bu keyword'e karşılık gelen sayfaları en kısa sürede indirmek istiyorsunuz.
+
+510
+02:05:52,163 --> 02:06:10,903
+Şimdi farklı tipte crawler'la implement etmişsiniz. Bir tane crawler PageRank'e bakıyor. Bir tanesi Bread First Search'u implement etmiş. Bir tanesi Random implement etmiş. Yani Random olarak elimdeki URL'leri seçip indirmeye çalışıyor.
+
+511
+02:06:10,904 --> 02:06:25,383
+Bir tanesi backlinklere bakmış. Yani sayfalara şey yapan, sayfaları işaret eden, diğer sayfaları öne çıkartan bir tane algoritma implement etmiş.
+
+512
+02:06:25,824 --> 02:06:33,564
+Şimdi bunların karşılaştırmalı bir şekilde performansını ölçmemiz gerekiyor. Bunu nasıl yaparız? Burada bunun örneğini gösteriyor.
+
+513
+02:06:33,564 --> 02:06:49,324
+%100 bütün hepsi çalıştığı zaman yani sayfaların tamamını indirdiği zaman zaten benim en başta belirlemiş olduğum keyword'e karşılık gelen bütün dokümanları hepsi indirmiş olacaktır değil mi? Yani şu noktadan bahsediyorum.
+
+514
+02:06:49,323 --> 02:07:18,143
+Peki bizim buradaki hedefimiz ne? Daha crawl size düşük iken yani daha %20'lerde %40'lardayken yani daha bütün sayfaları indirmeden daha düşük crawl size'larındayken acaba benim keyword'üme karşılık gelen en fazla sayfayı hangi algoritma indiriyor?
+
+515
+02:07:18,143 --> 02:07:31,763
+hangi crawling algoritma indiriyor? Bakacak olursak şurada mesela PageRank tabanlı algoritma düşük size'lerde bile yani düşük crawl size'larında bile maksimum relevant sayfayı indiriyor.
+
+516
+02:07:31,763 --> 02:07:42,263
+Hatırlayın recall ne demekti? Benim indirmiş olduğum ya da elde etmiş olduğum relevant sayfaların totaldeki relevant sayfaları oranını söylüyordu.
+
+517
+02:07:42,263 --> 02:08:07,103
+Dolayısıyla baktığınız zaman düşük crawl size'larda bile PageRank tabanlı algoritma daha fazla relevant dokümanı indirebiliyor. Dolayısıyla da hani buradaki dört tane farklı algoritmayı karşılaştırırken düşük crawl size'larında recall değeri yüksek olan algoritmalar benim tercih edeceğim algoritmalar olmalı.
+
+518
+02:08:07,103 --> 02:08:29,743
+son olarak topical crawler'lardan bahsetmek istiyorum. Topical crawler'larda bir tane query veriyoruz. Bu query bir tane topic veriyoruz. Bu topic query formatında olabilir. Bir description olabilir ya da keyword olabilir.
+
+519
+02:08:29,743 --> 02:08:44,483
+bir de ilk başta bir set of seed page veriyoruz. Diyoruz ki sen bu seed yörellerden başlayarak bu topiğe dayalı olarak web'i search et.
+
+520
+02:08:44,483 --> 02:08:55,463
+Web'i search ederken de bir indeks oluşturmanı istemiyorum. Ne zaman ki ben sana search et demeye başladım o zaman crawl etmeye başlamını istiyorum. Burada bir örnek var.
+
+521
+02:08:56,979 --> 02:09:22,339
+info spider algoritmasını implement eden bir tane örnek. Görüyorsunuz burada keywordleri girmişim. İlk başta seed yörellerinden başlayarak ne yapıyor? Aramaya başlıyor. Bulmuş olduğu sonuçları benim girmiş olduğum keyword grubuna yakınlıklarına göre skorları atayıp yukarıdan aşağıya ne yapıyor?
+
+522
+02:09:22,339 --> 02:09:34,340
+sıralandırılmış bir şekilde gösteriyor. Bu bir akan sonuçların sürekli olarak güncellendiği bir ekran, kullanıcı arayüzü.
+
+523
+02:09:34,660 --> 02:09:42,879
+Ne zamanki yeni sonuçlar bulunduğu zaman geçerken bunlar result listesinde olması gereken yere yerleşiyor.
+
+524
+02:09:47,315 --> 02:09:47,675
+ok?
+
+525
+02:09:53,203 --> 02:10:01,843
+Tamam. Topical crawlerlarla beraber ben bugünkü dersi bitirmek istiyorum arkadaşlar.
+
+526
+02:10:01,843 --> 02:10:17,544
+Crawlerlarla ilgili bulabileceğiniz açık kaynaklı ve projenizde eğer crawler ütemat ediyorsanız kullanabileceğiniz crawling kodları ile ilgili linkler burada var.
+
+527
+02:10:17,544 --> 02:10:36,703
+açık kaynaklı kullanabileceğiniz farklı crawlerlar var. Benim yaygın olarak kullandığım notch crawlerı. Bu aynı zamanda kendi içerisinde bir tane search engine'i de getiriyor.
+
+528
+02:10:36,703 --> 02:10:56,044
+Bunun dışında farklı tipte, farklı programlama dillerinde yazılmış crawlerlar da var. Bunları alıp, bunları kullanaraktan projelerinizde crawling işlemini gerçekleştirebilirsiniz.
+
+529
+02:10:56,044 --> 02:11:01,263
+Tabii ki bunları alıp by default kullanamıyorsunuz. Bunların üzerine kod yazmanız gerekiyor.
+
+530
+02:11:01,263 --> 02:11:23,123
+Benim bugünkü anlatacaklarım bu kadar. Gelecek hafta link analizi konusuna geçeceğim. Link analizi konusu da chapter 7. Bunların slide'ları zaten dersin sayfasında yayınlanmış durumda. Buradan takip edebilirsiniz. Sorusu olan var mı arkadaşlar?
+
+531
+02:11:32,372 --> 02:11:53,491
+Tamam. Yani projelerinizle ilgili sorunuz varsa şey yapabilirsiniz, sorabilirsiniz. Ben dediğim gibi bazılarınızın projeleriyle ilgili yorumlar yapıp dersin sayfasına koydum. Bu konuda sorunuz olursa dersin dışında e-mail de atabilirsiniz.
+
+532
+02:11:55,251 --> 02:11:59,271
+Katılımınız için teşekkür ederim. Haftaya görüşmek üzere o zaman.
+
+533
+02:12:00,132 --> 02:12:00,771
+Teşekkürler.
+
+534
+02:12:00,771 --> 02:12:02,311
+Görüşmek üzere hocam kendinize iyi bakın
+
+535
+02:12:02,311 --> 02:12:03,251
+İyi günler
+
+536
+02:12:03,251 --> 02:12:04,592
+İyi günler hocam
+
+537
+02:12:04,592 --> 02:12:05,892
+Sağolun size
