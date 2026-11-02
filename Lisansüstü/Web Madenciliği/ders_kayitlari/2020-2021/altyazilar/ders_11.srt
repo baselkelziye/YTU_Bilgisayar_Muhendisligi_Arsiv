@@ -1,0 +1,4463 @@
+1
+00:15:36,563 --> 00:15:43,563
+ve
+
+2
+00:15:45,139 --> 00:15:49,879
+günaydın [öğrenci], [öğrenci] merhaba, hoş geldin.
+
+3
+00:15:55,956 --> 00:15:58,975
+Evet. İsterseniz başlayalım.
+
+4
+00:16:03,155 --> 00:16:14,975
+Bugünkü konuşacağımız konu link analizis konusu. Bu konuşacağımız konu kitabın yedinci çeptlerine geliyor.
+
+5
+00:16:15,195 --> 00:16:21,756
+Social Network Analysis ve Link Analysis konusu.
+
+6
+00:16:21,756 --> 00:16:33,115
+Buradaki konuşacağımız konu daha önce hatırlarsınız information retrieval yani kitabın 6. çeptarını web content mining konusunu konuşurken
+
+7
+00:16:33,115 --> 00:16:49,135
+demiştik ki biz herhangi bir arama kelimesine karşılık gelen web sayfalarını bulurken bir inverted index üzerinde bunu buluyoruz.
+
+8
+00:16:49,135 --> 00:16:55,295
+Inverted Index oluşturulurken de Inverted Index bir tabloydu aslında.
+
+9
+00:16:56,655 --> 00:17:03,056
+Bu tablonun birinci kolonunda keywordler vardı ya da keyword grupları.
+
+10
+00:17:03,895 --> 00:17:13,196
+İkinci kolonunda ise bu keyword ya da keyword gruplarının içerisinde barındıran web sayfalarının sıralandırılmış bir şekilde listesi vardı.
+
+11
+00:17:14,096 --> 00:17:16,295
+Bu sıralandırmayı nasıl yapıyorduk?
+
+12
+00:17:16,295 --> 00:17:37,376
+Bu sıralandırmaydı. TF-IDF gibi skorlara dayalı yapıyorduk. TF-IDF neydi? Bir kelimenin bir doküman seti içerisinde aynı zamanda bu doküman seti içerisinde bulunan bir tane dokümandaki önemini ifade eden bir metrikti.
+
+13
+00:17:37,376 --> 00:17:52,376
+Ve ondan sonra bu konuyu tartışırken aynı zamanda dedi ki tabii ki arama motorları sadece bu içerik tabanlı benzerlik metriklerini kullanarak sıralandırma yapmıyorlar.
+
+14
+00:17:52,376 --> 00:17:57,236
+Yani bu TF-IDF tek başına kullanılmıyor.
+
+15
+00:17:58,096 --> 00:18:22,355
+Siz bir arama kelimesi girdiğiniz zaman eğer bu arama kelimesine karşılık gelen bu sıralandığımız sayfaları inverted index'den alırsanız bir de onun üzerine bu sayfalarla ilgili sayfaların webin link yapısı içerisindeki önemini ifade eden popülerite metriklerini link analizi tabakta,
+
+16
+00:18:22,376 --> 00:18:27,376
+popülarite metriklerini kullanaraktan tekrardan sıralandırıyorsunuz.
+
+17
+00:18:28,495 --> 00:18:44,976
+İşte bu popülarite tabanlı olarak yani link analizine dayalı olup sayfaların büyük web grafiği içerisindeki popülaritilerini hesaplamamıza olanak veren konu link analizi konusu web structure mining.
+
+18
+00:18:44,975 --> 00:18:48,615
+Aynı zamanda social network analize konusu.
+
+19
+00:18:49,075 --> 00:18:59,255
+Yani ne yapıyoruz? Elimizdeki bir kompleks network'ü ya da bir sosyal network'ü analiz edip bunun içerisindeki aktörlerin önemlerini buluyoruz.
+
+20
+00:18:59,635 --> 00:19:07,215
+Bizim burada daha çok yoğunlaştığımız web sayfaları bizim için birer aktör.
+
+21
+00:19:07,215 --> 00:19:11,495
+Bu web sayfaları arasındaki linkler de bu hyperlinkler.
+
+22
+00:19:11,495 --> 00:19:26,876
+Yani bir sayfanın kontenti içerisinde bir tane hyperlink varsa yani bir başka sayfayı işaret eden bir link varsa demek ki bu bir hyperlink bu iki sayfa arasındaki ilişkiyi ifade ediyor.
+
+23
+00:19:27,456 --> 00:19:36,835
+Çok sayıda web sayfası bu şekilde içerisinde hyperlinkler birbirlerine işaret ettikleri için bunları bir araya getirdiğinizde bir kompleks network oluşuyor.
+
+24
+00:19:36,835 --> 00:19:59,835
+Şimdi biz bu böylesi bir kompleks network'te öncelikle bu böylesi bir network'ü, sosyal network'ü nasıl reprezent ederiz, nasıl tanımlarız, bunun üzerinde ne gibi metrikleri hesaplarız, bir nodun önem değeri nasıl hesaplanır, ondan sonra da buna...
+
+25
+00:20:00,000 --> 00:20:21,459
+dayalı olarak ranking işlemi nasıl gerçekleşir? Farklı algoritmalara göre bütün bunları bu çeptir kapsamında konuşacağız. Bu anlatacağım konularla ilgili bütün slide'ları zaten dersin başında dersin web sayfasına koymuştum. Oradan bakabilirsiniz arkadaşlar.
+
+26
+00:20:28,339 --> 00:20:56,339
+okey benim internette de yavaşlıklar herhalde. Ondan dolayı sayfadaki doküman şey çıkmadı. Aslına bakarsanız benden değil de Google ve YouTube'da bir sıkıntı var. Şu anda bu dokümanları Google Drive'e yüklediğim için dün ve bugün...
+
+27
+00:20:54,291 --> 00:20:56,451
+Sesim geliyor mu arkadaşlar sizlere?
+
+28
+00:20:57,131 --> 00:20:57,571
+Geliyor.
+
+29
+00:20:58,051 --> 00:20:58,571
+Tamam.
+
+30
+00:20:58,891 --> 00:20:59,091
+Okey.
+
+31
+00:21:00,051 --> 00:21:01,131
+Ama görüntü gitti.
+
+32
+00:21:02,291 --> 00:21:02,571
+Tamam.
+
+33
+00:21:03,991 --> 00:21:06,191
+Onu da bilinçliyorum.
+
+34
+00:21:06,811 --> 00:21:11,571
+Şöyle, aslına bakarsan görüntü var ama ben iki rekanttan bağlanıyorum.
+
+35
+00:21:12,791 --> 00:21:16,771
+Şu anda benim sesimi duyduğum farklı bir rekant.
+
+36
+00:21:16,951 --> 00:21:18,291
+Bir de görüntümün olduğu var.
+
+37
+00:21:18,291 --> 00:21:25,511
+görüntüyü dekodlanmak istersen onu da şey yapabilirsin, pin yapabilirsin.
+
+38
+00:21:28,332 --> 00:21:30,771
+Ekran paylaşımı git demek istiyorsun, tamam.
+
+39
+00:21:31,211 --> 00:21:32,172
+Kesinlikle öyle.
+
+40
+00:21:32,172 --> 00:21:33,492
+Tamam, tamam.
+
+41
+00:21:37,332 --> 00:21:45,891
+Dün siz internette miydiniz? Google ve YouTube'da bir sıkıntı vardı. Herkes yaşadığını söyledi ama.
+
+42
+00:21:47,391 --> 00:21:53,571
+Hocam ben çalışıyordum. O yüzden onu hissetmedim ama dediğiniz gibi sosyal medyada ekşi sözler.
+
+43
+00:21:57,364 --> 00:22:12,364
+yani şey ne Gmail'i, Google uygulamalarının hiçbirisine ulaşamadık. Evet, sosyal network analizinden başlayalım.
+
+44
+00:22:21,332 --> 00:22:33,531
+Google Drive'da var. Ama şu anda Google Drive'ı ben de açıp size göstermek istedim ama ulaşamadım. Yani bu dün bahsettiğim problem devam ediyor.
+
+45
+00:22:40,692 --> 00:22:41,351
+takip ediyorum.
+
+46
+00:22:46,548 --> 00:22:48,548
+sosyal network analizi
+
+47
+00:22:57,395 --> 00:22:59,935
+ses ulaşmıyor diyor [öğrenci].
+
+48
+00:23:11,571 --> 00:23:14,131
+[öğrenci] senderi bir problem var mı sesine ulaşmaması?
+
+49
+00:23:14,591 --> 00:23:16,012
+Yok hocam, ben duyabiliyorum.
+
+50
+00:23:16,532 --> 00:23:18,951
+Okey. Şu anda ama şey değil.
+
+51
+00:24:20,372 --> 00:24:31,752
+[öğrenci], Zoom chat üzerinden [öğrenci]'ye yazabilir misin? Sanırım benim sesimi duymuyor. [öğrenci] şu anda sesim geliyor mu?
+
+52
+00:24:51,923 --> 00:24:54,063
+[öğrenci], mikrofonunu açabilirsin istersen.
+
+53
+00:24:57,971 --> 00:24:59,411
+Günaydın hocam.
+
+54
+00:24:59,971 --> 00:25:03,932
+Tamam, şu anda ses ve görüntü geliyor mu? İteyiden misin?
+
+55
+00:25:04,892 --> 00:25:10,471
+Ben şu an hem telefondan hem bilgisayardan bağlıyorum. Görüntüyü bilgisayardan alıyorum, ses telefonundan alıyorum hocam.
+
+56
+00:25:10,471 --> 00:25:16,591
+Büyük ihtimalle sanal sunucu üzerinden bağlanıyorum. Onunla ilgili bir problem var.
+
+57
+00:25:18,431 --> 00:25:19,392
+Anladım, tamamdır.
+
+58
+00:25:22,011 --> 00:25:24,371
+Evet, sosyal network analizi dedik.
+
+59
+00:25:24,371 --> 00:25:33,431
+sosyal network analizini biz bu sosyal network analizini yaparaktan ne gibi şeyler çıkartmaya çalışıyoruz?
+
+60
+00:25:34,492 --> 00:25:43,872
+Burada elimizde sol tarafta bir sosyal network datasını görselleştirmişiz.
+
+61
+00:25:43,871 --> 00:25:53,471
+Böylesi bir data'da notlar var, aktörler var, bir de bunlar arasında ilişkiler var.
+
+62
+00:25:54,531 --> 00:26:03,391
+Biz böylesi bir data üzerinde gizli kalmış ne gibi bilgiler var bunları çıkarmaya çalışıyoruz.
+
+63
+00:26:03,391 --> 00:26:11,571
+Burada işte sol taraftaki bir network üzerinden sağ taraftaki bir analizi gerçekleştirmişiz.
+
+64
+00:26:11,571 --> 00:26:22,351
+aslında gördüğünüz bir analiz sonucu. Bu analizde neler yapılmaya çalışılmış? Öncelikle burada acaba ne gibi gruplar var?
+
+65
+00:26:22,351 --> 00:26:36,771
+Böylesi bir sosyal network içerisinde ne tip gruplar var? Bu grupların görüşleri nedir? Bu gruplar birbirleriyle nasıl etkileşim halindeler?
+
+66
+00:26:36,771 --> 00:26:44,351
+bunlar içerisinde birbiriyle sıkça görüşen alt gruplar var mı?
+
+67
+00:26:44,351 --> 00:26:49,871
+Ve bunlar içerisinde isolated gruplar var mı?
+
+68
+00:26:49,971 --> 00:26:55,431
+Yani diğerleriyle hiç konuşmayan sadece tek başına kendi içerisinde konuşan gruplar var mı?
+
+69
+00:26:55,531 --> 00:27:03,231
+gibi şeyleri analiz edip bunu bir de analiz sonucunu görselleştirme şeklinde raporlayabiliyoruz.
+
+70
+00:27:03,231 --> 00:27:21,151
+Bu aslında, böylesi bir sosyal network analizi bizim şu andaki bildiğimiz anlamıyla, işte biz farklı sosyal network analizlerin üyesiyiz, neredeyse hepimiz
+
+71
+00:27:21,151 --> 00:27:32,131
+LinkedIn'in kullanıyoruz, ondan sonra Twitter'da hesabımız var, Instagram'da hesabımız var, Facebook'da hesabımız var, web sayfamız var
+
+72
+00:27:32,132 --> 00:27:45,471
+bunların hepsinin oluşturmuş olduğu bir takım farklı sosyal networklar var. Bunlardan çok önce aslında sosyal network analizleri halen yapılıyordu.
+
+73
+00:27:45,471 --> 00:28:08,492
+Diyelim ki farklı gazeteler var. Bu farklı gazeteler içerisinde şehir isimleri ve insan isimleri, cünik herkes tarafından üzerinde hemfikir olan isimlerden bahsediyorum.
+
+74
+00:28:08,491 --> 00:28:37,611
+Yünük isimler. Bu isimler farklı gazetelerde, farklı haberler içerisinde geçebiliyor. Bunları eğer siz bir harita üzerinde birleştirecek olursanız, bir şehir ismiyle işte bir ekonomi terminolojisini bir haber içerisinde yakaladınız ve bu ikisi arasında
+
+75
+00:28:37,611 --> 00:28:41,052
+aynı paragrafta geçtiği için bir ilişki yaratıyorsunuz.
+
+76
+00:28:41,491 --> 00:28:57,471
+o ekonomi terminolojisi bir başka gazete içerisinde, bir başka kişi tarafından kullanılırsa bu sefer o terminoloji ile o kişi arasında bir ilişki kuruyorsunuz.
+
+77
+00:28:57,471 --> 00:29:13,651
+Bu şekilde bu unique isimler üzerinden çıkartılmış ve özellikle finans alanındaki olayları yorumlamaya çalışan sosyal network analizleri daha önceden yapılmış.
+
+78
+00:29:13,651 --> 00:29:32,591
+Bizim şu anda yaygın olarak sosyal network analizini çalışıyor olmamız, yani bilgisayar mühendisleri ve bilgisayar bilimcilerinin, data analizcilerinin çalışıyor olmasının ana nedeni
+
+79
+00:29:32,591 --> 00:29:49,712
+Özellikle bu sosyal network analizi sonucunda ortaya çıkan sıralamaların, sosyal network analizinde sonucunda aktörlerin popülarite değerlerinin belirlenmesinin
+
+80
+00:29:49,712 --> 00:29:55,911
+günümüzdeki internet kullanımında çok fazla yaygın etkisi olması.
+
+81
+00:29:56,771 --> 00:30:00,411
+Burada gördüğünüz görselleştirme internet yapısını ifade ediyor.
+
+82
+00:30:00,411 --> 00:30:19,091
+Bu internet yapısı tabii biz biliyorsunuz şeyi ayırmıştık bir internet altyapısını ayırmıştık bir de internetin üzerinde web sosyal network'ünü ayırmıştık. Neydi internet?
+
+83
+00:30:19,091 --> 00:30:34,572
+fiziksel notların ya da sanal notların birbirleri arasındaki communication network'ünü ifade eden dünya genelindeki bir network'tan bahsediyoruz değil mi?
+
+84
+00:30:34,572 --> 00:30:44,471
+Wide Area Network diye nitelendirdiğimiz altyapıdaki communication network'tan bahsediyoruz.
+
+85
+00:30:44,471 --> 00:31:07,871
+bir de bu internet ortamındaki sunucular üzerinde bulunan bir de soft layer vardı. İşte bu da webdi bizim için. Bu soft layerden kastımız neydi? Bu sunucular üzerindeki dokümanlar ve bu dokümanların içerisindeki hyperlinklerle bunların birbirlerine neler vermesi? Linkler vermesi.
+
+86
+00:31:07,871 --> 00:31:33,611
+Demek ki web kompleks network ile internetin kompleks network'u ikisi birbirinden farklılaşıyor. Bu internetin bir sosyal network analizi yapılarak gösterimi. Bu tür gördüğünüz grafiklerin hepsi bir analiz sonucu oluşturulmuş görseller.
+
+87
+00:31:33,611 --> 00:31:48,451
+Yine bu bir sosyal network analizi sonucu oluşturulmuş görüntü. Burada da bloglar, blog sayfaları üzerinde bir sosyal network analizi çalışması yapılmış ve gösterimi yapılmış.
+
+88
+00:31:48,451 --> 00:32:01,571
+Burada da özellikle Amerikan seçimleri öncesi kişisel bloğu olan insanların politik görüşlerini belirtmesi sonucunda hangi sayfaların
+
+89
+00:32:03,508 --> 00:32:18,147
+Cumhuriyetçiler ya da Demokratlar olmasına dayalı olarak sayfaları görselleştirmişler. Burada ilginç olan, ilginç gösterim bu analiz sonucunda şunu görebiliyorsunuz.
+
+90
+00:32:18,147 --> 00:32:40,147
+aynı görüşe sahip olan sayfalar hep birbirlerini işaret etmişler. Yani bir sayfa kendi görüşünü ifade ederken karşı taraftaki görüşü savunan insanların sayfasını kullanarak gerçekleştirmiyor.
+
+91
+00:32:40,147 --> 00:32:59,447
+Yani siz bu sosyal network analizi sonucu şunu görebiliyorsunuz. İşte demokratların sayfalarında dolaşan bir insan hiçbir zaman ya da çok az bir olasılıkla cumhuriyetçilerin sayfalarında belirtilen görüşleri göremiyor.
+
+92
+00:32:59,447 --> 00:33:15,827
+aynı şekilde diğer taraf için de geçerli. Çünkü birbirlerine tamamıyla link vermeden birbirlerinin görüşlerine ulaşılmasına minimum derecede olanak verecek şekilde bu bloglar birbirlerine linkler veriyorlar.
+
+93
+00:33:15,827 --> 00:33:35,787
+Yine bu da bir başka sosyal network analizi sonucu. Yine burada da bir şirkete ait e-mail database'ini alıp üzerinde sosyal network analizi yapmışlar ve böylesi bir çıktığa dönüştürmüşler.
+
+94
+00:33:35,787 --> 00:33:47,347
+Şimdi bu rapor neyi gösteriyor? Bu analiz raporu. Buna baktığınız zaman departmanlar arasındaki e-mail data ve izinden nasıl sosyal network oluşturursunuz?
+
+95
+00:33:47,887 --> 00:34:03,627
+E-mail'i atan kişiler aktör, bir kişi diğerisine e-mail attığı zaman bu ikisi arasında tek yönlü e-mail hareketi olduğu için onu da bir tane edge olarak yani bir ilişki olarak gösteriyorsunuz.
+
+96
+00:34:03,627 --> 00:34:12,067
+Buraya baktığınız vakit farklı departmanlar arasındaki şeyleri görebiliyorsunuz.
+
+97
+00:34:14,127 --> 00:34:23,787
+E-mail değişimlerinden ağırlıklı olarak bu departmanlar içerisinde insanların birbiriyle konuştuğunu görebiliyorsunuz.
+
+98
+00:34:23,787 --> 00:34:37,487
+Bunun yanı sıra bazı notlar var ki mesela şuradaki not gibi diğer bütün küçük gruplarla aynı şekilde yoğun bir şekilde etkileşim içerisinde
+
+99
+00:34:37,487 --> 00:34:53,287
+Buradan da buradaki notların ya insan kaynakları birimlerinde çalışan kişiler ya da orta derece ya da yüksek derece seviyede yönetici olan kişiler olduğunu çıkartabiliyorsunuz
+
+100
+00:34:53,287 --> 00:35:06,168
+özellikle mesela böyle bir analizi kim ister? Siz diyelim ki yeni bir işletmeye gittiniz, oraya genel müdür olarak atanıyorsunuz.
+
+101
+00:35:06,168 --> 00:35:22,168
+O işletmede insanların birbirleriyle olan ilişki ağını ortaya çıkarmak istiyorsanız, bilgi işlem biriminize geçmişe dönük olarak e-mailler üzerinde böyle bir rapor hazırlamasını isteyebilirsiniz.
+
+102
+00:35:22,167 --> 00:35:33,387
+Bu rapor size kişilerden bağımsız olarak kişilerin e-mail yoluyla birbirleriyle ne kadar etkileşim içerisinde olduğunu gösterebilir.
+
+103
+00:35:34,027 --> 00:35:36,707
+Buradan yola çıkarak şunu da diyebilirsiniz.
+
+104
+00:35:37,167 --> 00:35:41,267
+İnsanlar çok iletişim halinde değil, birbirlerinden kopuk çalışıyorlar.
+
+105
+00:35:41,267 --> 00:35:56,207
+İşte bu işletme içerisinde belli aktörler var ki bunların etki derecesi yani diğer insanlara etki derecesi yüksek çünkü bunlar herkesle iletişim halinde gibi çıkarımlar yapabilirsiniz.
+
+106
+00:35:58,036 --> 00:36:01,855
+Yine bu da başka bir sosyal network analizi sonucu.
+
+107
+00:36:02,255 --> 00:36:10,515
+Bu da Facebook üzerindeki sosyal network datasını üzerinde analiz yapılmış ve böyle bir rapor çıkartılmış.
+
+108
+00:36:10,515 --> 00:36:23,956
+Buna baktığımız vakitte bu raporda işte farklı arkadaş gruplarının farklı networkları farklı renklerle ifade etmişiz.
+
+109
+00:36:23,956 --> 00:36:36,955
+Aynı şekilde bazı notların diğerlerine göre daha büyük olduğunu görüyorsunuz. Bunların da diğerlerine göre önem değerlerinin, bu aktörlerin önem değerinin yüksek olduğunu görüyorsunuz.
+
+110
+00:36:36,955 --> 00:36:55,695
+Yine bu görselleşmede bazı networkler var ki, alt networkler hiç kimseyle yetişim halinde değil sadece kendileri etkileşim halinde. Bunların hepsini bu sosyal network analizi raporu ile üzerinde yorumlar yapmanız mümkün.
+
+111
+00:36:55,695 --> 00:37:03,656
+Bizim üzerinde çalışacağımız acaba böylesi bir sosyal network analizi raporunu nasıl oluşturuyoruz?
+
+112
+00:37:03,735 --> 00:37:07,936
+Hangi teknikleri kullanıyoruz? Hangi metrikleri kullanıyoruz da böyle bir çıktı oluşturuyoruz?
+
+113
+00:37:09,515 --> 00:37:12,896
+Yine burada başka bir sosyal network analizi raporu.
+
+114
+00:37:12,896 --> 00:37:28,396
+Hani buraya baktığım vakitte burada yemek tarifleri sayfalarını, resipi sayfalarını şey yapmışız, analiz etmişiz.
+
+115
+00:37:28,855 --> 00:37:35,796
+Bu resipi sayfalarının oluşturmuş olduğu network üzerinde bir analiz yapmışız.
+
+116
+00:37:35,795 --> 00:37:46,655
+Ve burada notları da bu yemeklerin içerisine koyduğumuz ingredientler, içeriklerden oluşturmuşuz.
+
+117
+00:37:46,655 --> 00:38:08,515
+Bu içerikler eğer aynı sayfada kullanılıyorsa, aynı birkaç slide öncesinde farklı haber sayfalarındaki unique isimlerin arasında ilişkiler oluşturarak bir sosyal network analizi yapmak gibi.
+
+118
+00:38:08,515 --> 00:38:22,835
+Burada da farklı resepiyeler içerisinde yer almış ingredientler arasında aynı resepi içerisinde olup olmadıklarına bakaraktan bir sosyal network analizi oluşturmuşum.
+
+119
+00:38:22,836 --> 00:38:45,856
+Buraya da baktığım zaman bazılarının fark fontlarının diğerlerine göre daha büyük olduğunu görüyorum. Bunun sebebi de eğer bu ingredientler çok fazla şeyse, geçmişse, çok fazla resipi de bu durumda bunların ben ne yapıyorum? Görselde büyüklüklerini daha büyütüyorum.
+
+120
+00:38:46,776 --> 00:38:51,235
+Şimdi böylesi bir sosyal network analizi yaparak ne yapabilirim ben? Ne çıkartabilirim?
+
+121
+00:38:52,836 --> 00:39:01,036
+diyelim ki mesela Türk mutfağının yemek tariflerini içeren çok sayıda dökümanı bana veriyorsunuz.
+
+122
+00:39:01,455 --> 00:39:05,896
+Ve bunun üzerinde böyle bir sosyal network analizi yapmamı istiyorsunuz.
+
+123
+00:39:05,896 --> 00:39:18,315
+Bunu yaptıktan sonra buna bakan birisi Türk mutfağında yemeklerin ağırlıklı olarak hangi ürünleri kullandığını gösterecektir.
+
+124
+00:39:18,315 --> 00:39:36,095
+Yani biz ağırlıklı olarak işte tereyağı kullanıyoruz, yemeklerimizde zeytinyağı kullanıyoruz, tuz, yumurta bizim için önemli ürünlerden gibi çıkarımlar yapabiliriz.
+
+125
+00:39:39,175 --> 00:39:45,215
+Tabii şey yeni tarifler bile bunlardan yeni tarifler bile çıkartabilirim.
+
+126
+00:39:51,155 --> 00:39:51,855
+ve altyazı.
+
+127
+00:40:00,000 --> 00:40:02,240
+Aynen.
+
+128
+00:40:02,240 --> 00:40:26,000
+Bu da mesela hani çıktılardan bir tanesi. Yani ben eğer devlet planlama teşkili altında mesela çalışıyorsam, benden böylesi bir şey isteniyorsa, yani Türkiye'de özellikle desteklenmesi gereken işte ürün altyapıları, işte fabrikaları vesaire,
+
+129
+00:40:26,000 --> 00:40:45,959
+böylesi sosyal network analizleriyle ben özellikle öne çıkan, talep eden ürünleri ortaya çıkartabilirim. Bunlar da aslında bizim yemek yeme alışkanlıklarımıza dayalı olarak talep ettiğimiz ürünleri öne çıkartan bir sosyal network analizi sonucu olmuş oluyor.
+
+130
+00:40:45,959 --> 00:41:05,839
+Peki, şimdi biz bu türden çıkarıp sosyal network analizleri yapıyoruz. Bu sosyal networklerde aslında sosyal network dediğimiz konu multidisiplinir bir konu. Bu farklı disiplinler tarafından çalışılıyor.
+
+131
+00:41:05,839 --> 00:41:12,839
+Sosyologlar bu konuyu çalışıyor, fizikçiler çalışıyor, bizler çalışıyoruz, matematikçiler çalışıyor
+
+132
+00:41:12,839 --> 00:41:29,679
+Bunların her bir farklı disiplinde, bilimsel alanda bu sosyal networklerde kullanılan notlar ve aralarında ilişkiler için farklı terimler kullanılabiliyor
+
+133
+00:41:29,680 --> 00:41:55,020
+Biz computer science ile bunlara not diyoruz ve bunlar arasındaki ilişkileri de link diyoruz. Mesela işte matematikte bu notlara word istiyoruz. Bunlar arasındaki ilişkileri H diyoruz. O yüzden farklı aynı şeylere farklı terimlerle ifade eden yayınlarla karşılaşabilirsiniz.
+
+134
+00:42:01,844 --> 00:42:03,464
+Evet, şimdi
+
+135
+00:42:18,420 --> 00:42:34,420
+Şimdi bu sosyal networkleri artık biraz şey yapmaya çalışalım. Nasıl ifade ediyoruz konusuna girmeye çalışalım.
+
+136
+00:42:49,940 --> 00:43:09,040
+Şimdi bir sosyal network directed graph olabilir ya da undirected graph olabilir arkadaşlar. Şimdi mesela link edin, link edin. Directed midir, undirected midir? Mikrofonlarınızı açabilirsiniz arkadaşlar. Zaten az kişiyiz. Eğer ortam gürültüsü yoksa mikrofonlarınızı açabilirsiniz.
+
+137
+00:43:11,339 --> 00:43:13,479
+Undirected'dır diye düşünüyorum hocamlar.
+
+138
+00:43:14,139 --> 00:43:15,319
+Neden böyle düşündün?
+
+139
+00:43:15,319 --> 00:43:24,339
+Çünkü tek taraflı değil, karşılıklı gidip bağlanması sağlayabiliyoruz birbirimizle. Etkileşim karşılıklı, iki taraflı olmuyor mu?
+
+140
+00:43:25,759 --> 00:43:39,319
+Kime ilk olarak koronuna gelirdiğini davet ettik, göndermiyoruz değil mi? O yüzden undirected. Ama mesela Twitter'da kimi kimi follow ettiğini görebiliyoruz.
+
+141
+00:43:39,319 --> 00:43:57,019
+Dolayısıyla Twitter'dan çıkardığım şey de direkt, mesela Facebook. Facebook'ta eğer follow özelliğini düşünmezseniz Facebook'ta da kimin kime ilk olarak arkadaşlık etkiliğini göremiyorum.
+
+142
+00:43:57,019 --> 00:44:01,459
+Ama Facebook'ta follow özelliği de aynı zamanda var.
+
+143
+00:44:01,459 --> 00:44:08,839
+ekran görüntümü görebiliyorsunuz değil mi arkadaşlar?
+
+144
+00:44:08,839 --> 00:44:12,239
+Ben buradaki paylaşımı tekrardan yapayım.
+
+145
+00:44:12,300 --> 00:44:13,219
+Bende gitti çünkü.
+
+146
+00:44:16,759 --> 00:44:19,219
+Bunun haricinde mesela Instagram.
+
+147
+00:44:19,499 --> 00:44:23,999
+Instagram'da da yine aynı şekilde kimin kimi follow ettiğini görebiliyorsunuz.
+
+148
+00:44:24,199 --> 00:44:26,199
+Dolayısıyla o da bir directed graph.
+
+149
+00:44:27,619 --> 00:44:28,719
+Web'i düşünelim.
+
+150
+00:44:28,959 --> 00:44:30,819
+Web de bir sosyal network.
+
+151
+00:44:30,819 --> 00:44:55,699
+web ortamında da kime link verdiğini, hyperlinklerin yönünü görebiliyorsunuz. O da bir directed graph. Demek ki eğer bir grafa baktığım zaman graftaki ilişkilerin yönünü göremiyorsam, bu durumda bu grafa undirected diyorum. Graftaki ilişkilerin yönünü görebiliyorsam bu grafa directed graph diyorum.
+
+152
+00:45:04,244 --> 00:45:26,744
+Şimdi bir grafı gördüğüm zaman bu graf üzerindeki ilişkilere bakalım, linklere bakalım. Şimdi bu linklerin farklı atribütleri yani bu linklerin farklı özellikleri olabilir. Nedir mesela? Birincisi bu linklerin ağırlıkları olabilir.
+
+153
+00:45:26,744 --> 00:45:52,604
+Şimdi şeyi düşünün, iki tane aktör düşünün. Bu iki tane aktör, diyelim ki web sayfası olsun bu aktörler. Bunlar arasında bir de link var. Eğer bu ikisi arasında işte birinciden ikinciye verilmiş olan link sayısı çok fazlaysa aynı sayfa içerisinde ikinci arkadaşa çok fazla link vermiş.
+
+154
+00:45:52,604 --> 00:45:59,984
+bu şu demek yani oradaki ilişkinin ağırlığını yüksek tutmamız gerekiyor.
+
+155
+00:45:59,984 --> 00:46:12,303
+Ya da işte bu CDR datası üzerinde çalıştınız ve işte kişiler arasındaki telefon konuşmalarının sosyal network analizini çıkartacaksınız.
+
+156
+00:46:12,904 --> 00:46:18,424
+Eğer bir kişi diğerisini çok defa aramışsa onun ağırlığını yüksek tutacaksınız.
+
+157
+00:46:18,424 --> 00:46:44,203
+ok? Böylesi bir demek ki bu notlar arası, aktörler arası ilişkilerin bir atribütü olabilirmiş ağırlık. Diğer bir tanesi ranking. Şimdi benim diyelim ki bir sosyal networkta diyelim ki Facebook'ta arkadaşlarım var. Facebook bana bu arkadaşları gruplandırmama izin veriyor.
+
+158
+00:46:44,203 --> 00:47:04,163
+diyor ki işte hangileri senin okul arkadaşın, hangileri en yakın arkadaşın, hangileri çocukluk arkadaşın. Dolayısıyla bu linklere bir de atribüt vermeme izin veriyor. Dolayısıyla linkleri de kendi arasında kategorize edebiliyorum, renk edebiliyorum.
+
+159
+00:47:04,163 --> 00:47:15,083
+en iyi arkadaşım, ikinci iyi arkadaşım, okul arkadaşım şeklinde bunları belli rankinglere oturtabiliyorum.
+
+160
+00:47:16,464 --> 00:47:28,443
+Yine bu type az önce Facebook örneğinde verdiğim gibi bunları kategorilere koyabiliyorum.
+
+161
+00:47:28,443 --> 00:47:33,624
+Aynı zamanda bunları bu kategoriler içerisinde renk de edebiliyorum.
+
+162
+00:47:34,163 --> 00:47:57,163
+Bunun haricinde bu linklerin başka propertyleri de oluyor. Bu propertylerde bu iki nodun çok sayıda nodun içerisinde bir yerde olduğunu söyleyebiliyor.
+
+163
+00:47:57,163 --> 00:48:17,104
+Yani bu ilişkinin bir nottan diğer noda giderken kullandığımız bu ilişkinin çok sayıda farklı not tarafından da kullanılabileceğini, çok sayıda farklı notları birleştiren önemli bir ilişki olduğunu da söyleyebiliyor
+
+164
+00:48:17,104 --> 00:48:29,143
+Demek ki ben bir sosyal network üzerindeki ilişkileri analiz ederken, onları analiz sonucunda gösterirken bütün bu attribütleri kullanabileceğim
+
+165
+00:48:29,143 --> 00:48:37,064
+Burada bir tane directed network şeyini görüyorsunuz
+
+166
+00:48:37,064 --> 00:48:43,503
+Şöyle bir görselleştirme olmuş
+
+167
+00:48:43,503 --> 00:48:50,263
+insanlar, insanların işte
+
+168
+00:48:50,804 --> 00:49:00,804
+bir yurttaki oturduğu, beraber oturduğu, yemek masasına beraber oturduğu arkadaşların görselleştirilmesini yapmışlar.
+
+169
+00:49:00,804 --> 00:49:09,023
+Yine bunu yaparken de herkesin birinci ve ikinci seçeneğini kullanmışlar.
+
+170
+00:49:09,644 --> 00:49:20,583
+Yani herhangi bir noda baktığınız zaman bu arkadaş iki tane kişiyle oturmak istiyor, yemek yemek istiyor, tercih bu yönde.
+
+171
+00:49:20,804 --> 00:49:29,484
+ve bunun birinci tercihini bir noduyla ikinci tercihini de iki ilişkisiyle gösteriyorum.
+
+172
+00:49:29,623 --> 00:49:33,563
+Yani ilişkilerin tiplerini ne yaptım belirledim.
+
+173
+00:49:33,943 --> 00:49:38,603
+Hani böylesi bir network üzerinde baktığınız zaman neyi görüyorsunuz?
+
+174
+00:49:38,603 --> 00:49:46,083
+Herkes tarafından beraber yemeğe gidilmesi istenen bir takım karakterler var.
+
+175
+00:49:46,083 --> 00:49:57,384
+Bunların da şeylerine baktığınız zaman kimisi hep birinci tercih olarak istenmiş, kimisi hem birinci hem ikinci tercih olarak istenmiş.
+
+176
+00:49:57,823 --> 00:50:04,363
+Buradan yola çıkarak bir grup içerisindeki popüler kişileri belirleyebiliyorsunuz.
+
+177
+00:50:07,827 --> 00:50:21,127
+Burada da ilişkilere farklı attribütler verebiliyoruz dedik ya, burada da ilişkilere pozitif ya da negatif ağırlık verilmiş.
+
+178
+00:50:21,127 --> 00:50:35,248
+Yani biliyorsunuz biz Facebook yahut da birçok sosyal network üzerinde like butonu konuluyor ama dislike butonu genelde yok.
+
+179
+00:50:35,248 --> 00:50:59,307
+ama son zamanlarda Distract butonu yerine duyguları ifade eden emojileri siz koyabiliyorsunuz. Yani siz diyelim ki bir kişinin sayfası yahut da bir kişinin paylaşımı ile ilgili duygunuzu farklı emojilerle belirtebiliyorsunuz.
+
+180
+00:50:59,307 --> 00:51:15,827
+Eğer böyle bir şey söz konusuysa, böyle bir data söz konusuysa buradan yola çıkaraktan aktörler arasında pozitif ilişkileri farklı bir renkte, negatif ilişkileri ise farklı bir renkte gösterebilirsiniz
+
+181
+00:51:15,827 --> 00:51:27,307
+Burada da insanların birbirine güvenmesi veya güvenmemesini ifade eden bir tane sosyal network oluşturulmuş
+
+182
+00:51:27,307 --> 00:51:38,547
+buradaki kırmızılar bu sosyal network üzerindeki birbirine güvenmeme durumlarını ifade ediyor. Gerileri ise güvenme durumlarını ifade ediyor.
+
+183
+00:51:38,548 --> 00:52:08,348
+Hani böyle bir analiz sonucuna niye istersiniz? Böyle işte bir gruptan sorumlu hale gelirsiniz, yönetici olursunuz ve böylesi bir şekilde bir grubun, bu grubun daha önce oluşturmuş olduğu bir sosyal network içerisindeki verileri analiz edersiniz ve bu grup içerisinde acaba insanlar birbirine güveniyor mu? Bir güvensizlik ortamı mı var? Bir güven ortamı mı var? Bunu rahatlıkla çıkartabilirsiniz.
+
+184
+00:52:14,132 --> 00:52:43,191
+Peki, tüm bunlar, bunları gerçekleştirirken, demek ki ben sosyal network analizi yaparken benim aktörlerim var, aktörler arasında ilişkiler var. Bu ilişkilere ben attribütler koyabiliyorum. Bu attribütler işte ilişkinin ağırlığını verebiliyor, bu ilişkinin tipini verebiliyor, bu ilişkinin sıralandırılmasını verebiliyor.
+
+185
+00:52:43,191 --> 00:52:54,731
+ve ben bu aktörler ilişki ve ilişkilerin bu attribütlerine içerecek bir data reprezentasyon arıyorum.
+
+186
+00:52:54,731 --> 00:53:01,611
+Şimdi burada yaygın kullanılan üç tane farklı data reprezentasyon var.
+
+187
+00:53:01,852 --> 00:53:03,511
+Yani datayı tanımlama yöntemi.
+
+188
+00:53:04,051 --> 00:53:07,911
+Bunlardan bir tanesi adjacency matrix, komşuluk matrisi.
+
+189
+00:53:08,352 --> 00:53:09,611
+Diğerisi edge list.
+
+190
+00:53:10,191 --> 00:53:12,911
+Bu da ilişki listesi.
+
+191
+00:53:13,191 --> 00:53:24,211
+Yine bir tanesi de AdGestancy list, komşuluk listesi. Şimdi bunlara bakalım. AdGestancy matris. Ben burada bir sosyal network'ü bir matris şeklinde gösterebiliyorum.
+
+192
+00:53:24,212 --> 00:53:47,091
+Burada bu matrisi büyük A ile ifade edelim. Bu matrisin satırlarındaki notlardan sütundaki notlara birer tane link verildiğini düşünelim.
+
+193
+00:53:47,091 --> 00:53:59,091
+Yani burada A, İ, J diyelim, şurada İ ve J iki nodu var, İ'den J'ye bir tane link var
+
+194
+00:53:59,091 --> 00:54:05,911
+Bu durumda bu matriz içerisinde A, İ, J hücresine bir yazıyorum
+
+195
+00:54:05,911 --> 00:54:10,712
+Yani İ'den J'ye bir tane link varsa A, İ, J hücresine bir yazıyorum
+
+196
+00:54:10,712 --> 00:54:15,731
+Eğer İ ile J arasında herhangi bir link yoksa buna bu durumda sıfır diyorum
+
+197
+00:54:15,731 --> 00:54:33,091
+Yine bir başka durum, eğer bu matriz üzerinde İ'den kendisine bir tane referans varsa, bu durumda buna 1 diyorum, yani A, İ, İ durumu için kendisine bir tane referans var, bunları self loop diyoruz
+
+198
+00:54:33,091 --> 00:54:48,911
+Eğer yoksa buna sıfır diyorum. Yine bu mesela undirected grafa bir örnek. İ de J'ye vermiş, J de İ'ye vermiş. Yani aslında buradaki okları çıkartabilirdim.
+
+199
+00:54:48,911 --> 00:55:02,571
+Hani böylesi bir durumda bunu gösterirken hem AIJ hem de AGI birbirine eşit. Çünkü bu ikisi de birbirlerine ne yapıyorlar? Link veriyorlar.
+
+200
+00:55:02,572 --> 00:55:21,992
+Bu bir ecesinisi matris gösterimi. Buradaki oyuncak örnek üzerinde bu ecesinisi matrisi gösterelim. Buraya bakacak olursam 5 tane nodum var. Dolayısıyla bu matrisin satırlarında 5 tane, sütunlarında 5 tane eleman olacak.
+
+201
+00:55:21,992 --> 00:55:44,372
+Buraya baktığım vakit mesela birinci elemandan, birinci nottan başlayalım. Birinci not hiç kimseye link vermemiş değil mi? Link almış ama hiç kimseye link vermemiş. Dolayısıyla birinci nottan şuradaki notlara herhangi bir link yok. Görüyorsunuz bunların hepsi sıfır.
+
+202
+00:55:44,371 --> 00:55:58,471
+mesela 5'e bakalım. 5 kimlere vermiş? 1 ve 2 notlara link vermiş. 5'e geldik. Burada 5. Görüyorsunuz 5 birinci noda ve ikinci noda link vermiş.
+
+203
+00:55:58,471 --> 00:56:12,471
+Yani şurada A11 ve A12 değerleri 1 ama geriye kalanları 0 çünkü 5 diğerlerine link vermemiş. Bu şekilde komşuluk matrisinde
+
+204
+00:56:12,496 --> 00:56:29,615
+bu matrisin satırlarındaki elemanlardan, sütunlardaki, şuraya sütunlardaki elemanlara link verilme durumlarına göre bu matrisin hücrelerine bir ya da sıfır veriyoruz. Eğer link varsa bir, yoksa sıfır diyoruz.
+
+205
+00:56:29,615 --> 00:56:35,615
+Bu EdgeCency matrisi
+
+206
+00:56:35,615 --> 00:56:43,615
+Şimdi bir matrisi diğer bir şeyle EdgeList olarak da gösterebilirsiniz. Bu da EdgeList gösterimi
+
+207
+00:56:43,615 --> 00:56:55,615
+Buna baktığımız vakit ben burada hangi Edge'ler varsa bunları buraya listelemişim. Mesela neler var? 2-3 var
+
+208
+00:56:55,615 --> 00:57:24,515
+ondan sonra 2, 4 var. Ondan sonra 3, 2 var. 3'den 2'ye de görüyorsunuz bir tane link oluşmuş. 3, 4 var. Yani bu grafikte görmüş olduğum bütün linkleri, directed linkleri ben buraya bu linkin kaynağı ve linkin destination'ını, source'unu ve destination'ını yazacak şekilde yazıyorum.
+
+209
+00:57:24,515 --> 00:57:31,835
+Şimdi bu da bir sosyal network'ı ifade eder, şu da bir sosyal network'ı ifade eder.
+
+210
+00:57:38,835 --> 00:57:59,596
+Üçüncü bir gösterim Adjacency List. Bu Adjacency List'te ise şu şekilde bir gösterim var. Benim totaldeki kaç tane nodum var? Beş tane nodum var. Ne yapıyorum? O kadar not sayısı kadar ben satırım oluyor bu gösterimde.
+
+211
+00:57:59,596 --> 00:58:16,736
+mesela birinci noktan başlayıp birinci noktan yanına iki nokta koyuyorum. Birin vermiş olduğu linkleri varsa buraya bu linklerin listesini yazıyorum. Yok o yüzden boş bıraktım. İkiye geçtim. İkinin vermiş olduğu linklere bakıyorum.
+
+212
+00:58:16,735 --> 00:58:20,535
+3 ve 4
+
+213
+00:58:20,535 --> 00:58:24,515
+2'nin vermiş olduğu linkler 3 ve 4
+
+214
+00:58:24,515 --> 00:58:27,415
+demek ki bunu buraya yazıyorum. 3'in yanına 2 nokta
+
+215
+00:58:27,415 --> 00:58:31,815
+aynı şekilde 1'den eninci noda kadar bütün notların
+
+216
+00:58:31,815 --> 00:58:35,655
+komşuluk durumlarını yanlarına yazıyorum.
+
+217
+00:58:36,215 --> 00:58:41,035
+Bu da Adgesense List gösterimi. Demek ki 3 tane farklı
+
+218
+00:58:41,035 --> 00:58:43,975
+ben bir matrisi gösterebiliyormuşum.
+
+219
+00:58:43,975 --> 00:58:51,075
+bunların hepsinin farklı kullanımları var.
+
+220
+00:58:55,891 --> 00:59:12,891
+Şimdi ben bu sosyal network'ü bu şekilde bir matriz olarak gösterdikten sonra bu sosyal network üzerinde artık tanımlayıcı bir takım metrikleri hesaplayabilirim.
+
+221
+00:59:12,891 --> 00:59:24,891
+Yani bir sosyal network üzerinden çıkartabileceğim bir takım tanımlayıcı metrikler var. Bu metrikleri artık hesaplayabilirim.
+
+222
+00:59:24,891 --> 00:59:26,992
+hesaplayabilirim. Peki bu metrikler nelerdir?
+
+223
+00:59:30,547 --> 00:59:34,247
+Şimdi bunlardan bir tanesi degree.
+
+224
+00:59:34,247 --> 00:59:50,267
+Degree bir sosyal network üzerindeki nodların en fazla ilişkisi olan nodların gösterilmesi için kullandığımız bir metrik.
+
+225
+00:59:50,267 --> 01:00:00,568
+Bu grafikte baktığınız vakit bazı notların hem büyüklüklerin ve renkleri farklı gösterilmiş.
+
+226
+01:00:01,147 --> 01:00:03,408
+Büyüklüklerinin farklı gösterilmiş şu demek.
+
+227
+01:00:03,408 --> 01:00:13,908
+Demek ki bu grafik üzerinde, bu sosyal network üzerinde bu arkadaşlar çok fazla farklı notla etkileşim halinde.
+
+228
+01:00:13,908 --> 01:00:21,867
+Yani bunların degre'leri, bunlara sahip oldukları link sayısı çok fazla.
+
+229
+01:00:23,187 --> 01:00:27,308
+Bunun için kullanmış olduğumuz metrik degre metriği.
+
+230
+01:00:28,027 --> 01:00:31,768
+Şimdi degre metrikleri de kendi içerisinde ayrılıyor.
+
+231
+01:00:31,967 --> 01:00:33,748
+Bir tanesi in degre olabilir.
+
+232
+01:00:34,268 --> 01:00:38,408
+Yani bir noda gelmiş olan toplamdaki linklerin sayısı.
+
+233
+01:00:38,628 --> 01:00:40,187
+Bu mesela in degre'yi gösteriyor.
+
+234
+01:00:41,448 --> 01:00:42,967
+Out degre var.
+
+235
+01:00:42,967 --> 01:00:47,967
+Bu da bir nottan dışa çıkmış olan degree sayısını gösteriyor.
+
+236
+01:00:48,667 --> 01:00:51,367
+Yani out linklerin sayısını gösteriyor.
+
+237
+01:00:53,487 --> 01:00:55,967
+Sadece degreeyi de merak edebilirsiniz.
+
+238
+01:00:56,228 --> 01:01:03,728
+Yani buna gelmiş olan ya da kendisinden giden ya da kendisine gelmiş olan linklerin toplamı degree ifade ediyor.
+
+239
+01:01:04,247 --> 01:01:06,587
+Ve out linklerin toplamı.
+
+240
+01:01:06,588 --> 01:01:13,747
+Demek ki degree metriği benim hesaplayacağım metriklerden bir tanesi.
+
+241
+01:01:14,747 --> 01:01:21,827
+Degree metriği aslında centrality yani merkezliği ifade eden bir metrik.
+
+242
+01:01:22,208 --> 01:01:27,428
+O yüzden biz bunu degree centrality metriği diye konuşacağız.
+
+243
+01:01:27,427 --> 01:01:49,027
+Yani bir sosyal network üzerinde bir nodun ne kadar merkezi bir nod olduğu, ne kadar fazla birbirinden farklı nodla ilişki içerisinde olduğunu bu degree metriyle görebildiğimiz için bu metrik aynı zamanda kişinin ne kadar merkezi bir metrik olduğu,
+
+244
+01:01:49,027 --> 01:01:59,047
+Yani herkesle iletişim halinde olabilen bir not olduğunu, aktör olduğunu gösterdiği için centrality tabanlı bir metrik diyoruz.
+
+245
+01:02:00,047 --> 01:02:06,447
+Bunun yanı sıra, bu degreenin yanı sıra başka centrality metrikleri de var.
+
+246
+01:02:07,628 --> 01:02:16,547
+Bir nodun ne kadar fazla nodun arasında bir not olduğunu gösteren bitmeyinli centrality metriği var.
+
+247
+01:02:16,547 --> 01:02:18,507
+Az sonra bunun da detayını konuşacağız.
+
+248
+01:02:19,027 --> 01:02:35,567
+Hani degree centrality neydi? Acaba bir not kaç tane farklı notla ilişki içerisinde? Between the centrality ise bir not acaba kaç tane farklı ikili notun ortasında?
+
+249
+01:02:36,052 --> 01:02:54,411
+onu gösteren bir centralitimetriği. Diğer bir centralitimetriği, closeness centralitimetriği. Bu da şunu gösteriyor. Acaba bir not bütün network'ü düşündüğünüz zaman bütün network'teki notlara ne kadar yakın bir not?
+
+250
+01:02:54,411 --> 01:03:01,151
+Yani bir nottan başlayarak networkdeki diğer notlara çok kısa bir sürede ulaşabiliyor musunuz?
+
+251
+01:03:01,811 --> 01:03:09,691
+İşte bir not öyle bir noktada ki her yere ulaşılabilir bir noktada mı? O da closed centrality gösteriyor.
+
+252
+01:03:09,691 --> 01:03:24,291
+Demek ki bizim konuşacağımız şeylerden bir tanesi degree centrality olacak, bir tanesi bitfiniz centrality olacak, bir tanesi closed centrality olacak. Bunların nasıl hesapladığınızı az sonra konuşuyor olacağız.
+
+253
+01:03:24,412 --> 01:03:40,191
+Hocam bir şey sorabilir miyim orada? Bitminin nasıl konsolidide şey mi? Hani iki noduna kaç iki nod arasındadır diyor. Yani örnek veriyorum bir iki üç notları var. Birden ikiye, ikiden de üçe şeklinde mi bir age oluşacak?
+
+254
+01:03:40,191 --> 01:04:00,912
+Yani şöyle düşün, 5 tane not, senin verdiğin örneği biraz daha genişleteyim, 5 tane not var. Bu notlar da hepsi 1-2 ile, 2-3 ile, 3-4 ile, 4-5 ile ancak iletişim kuruyor. Yani herkes kendisinden bir sonraki ile iletişim kurabiliyor diye düşün.
+
+255
+01:04:01,811 --> 01:04:03,132
+Aracı not oluyor.
+
+256
+01:04:03,831 --> 01:04:05,331
+Aracı not var yani.
+
+257
+01:04:05,331 --> 01:04:22,211
+Evet yani bir ikiye link veriyor, iki üçe link veriyor, üç dörde link veriyor, pardon yani linkleri unut, hani bir ikiyle konuşabiliyor, iki üçle konuşabiliyor, üç dörtle dört beşle konuşabiliyoruz, böyle bir network düşün
+
+258
+01:04:22,211 --> 01:04:24,931
+Burada en önemli kişi kimdir?
+
+259
+01:04:26,912 --> 01:04:33,092
+Bir iki üç için ikidir, üç dört için üçtür, üç dört beş içinde dörttür
+
+260
+01:04:33,092 --> 01:04:37,251
+Güzel. Birden beşe kadar için kimdir?
+
+261
+01:04:38,871 --> 01:04:40,912
+Birden beşe kadar, evet üçtür.
+
+262
+01:04:41,672 --> 01:04:44,531
+Yani bunu söylerken direkt şunu düşünüyorsun.
+
+263
+01:04:44,531 --> 01:04:52,751
+Yani mesela ortadaki üç kaç tane ikilinin konuşma yolu üzerinde?
+
+264
+01:04:53,191 --> 01:04:58,412
+Mesela bir, dört ve beşle konuşmak için üçün üzerinden geçmeli.
+
+265
+01:04:58,971 --> 01:05:01,512
+İki tane ikili olmuş oldu.
+
+266
+01:05:01,511 --> 01:05:23,991
+iki, dörtle beşle konuşmak için yine üçün üzerinden geçmeli. İki tane de ikili oradan geldi. Dört tane farklı ikilinin konuşma yolu üzerinde. Üç. Dolayısıyla da ne kadar fazla ikili insanların konuşma yolu üzerindeysen senin önem değerin o kadar artıyor.
+
+267
+01:05:23,992 --> 01:05:48,072
+Yani networklerde de gerçek hayatta da öyledir ya öyle bir kişi vardır ki iki tane farklı birbiriyle konuşmayan grubu birleştiren kişidir. Yani grubun üyeleri arasında direkt iletişim yoktur ama bir kişi üzerinden sürekli bir gruptan diğer gruba bilgi taşınıyordur. İşte mesela o kişinin bitmeyli sentralitesi çok yüksek.
+
+268
+01:05:49,451 --> 01:05:51,152
+Anladım hocam çok teşekkürler.
+
+269
+01:05:51,539 --> 01:05:56,219
+Biz şimdi onun nasıl hesapladığımıza bakacağız.
+
+270
+01:05:56,440 --> 01:06:00,679
+Yani onun matematiksel hesaplamasına bakacağız.
+
+271
+01:06:01,399 --> 01:06:03,679
+Şimdi öncelikle degree'den başladık.
+
+272
+01:06:03,779 --> 01:06:09,939
+Çünkü degree centric dedik, betweenness centric dedik, arkasından da closeness centric dedik.
+
+273
+01:06:10,019 --> 01:06:10,939
+Şimdi degree'e bakalım.
+
+274
+01:06:11,519 --> 01:06:15,999
+Şimdi burada gördüğümüz bu reprezentasyon yöntemlerinden ilki.
+
+275
+01:06:16,199 --> 01:06:18,319
+Yani adjacency matriz yöntemi.
+
+276
+01:06:18,319 --> 01:06:22,399
+Bu e-ccessing matris yönteminde ne demiştik?
+
+277
+01:06:22,539 --> 01:06:25,599
+İşte bunun satırlarında linki verenler var.
+
+278
+01:06:25,919 --> 01:06:27,859
+Sütunlarında ise linki alanlar var.
+
+279
+01:06:28,499 --> 01:06:37,139
+Burada hücrelerde eğer sıfır varsa demek ki satırdaki elemandan sütundaki elemana herhangi bir link yok.
+
+280
+01:06:37,580 --> 01:06:42,179
+Varsa satırdaki elemandan sütundaki elemana bir link var.
+
+281
+01:06:42,179 --> 01:06:49,760
+Şimdi böylesi bir grafik üzerinde mesela out degree hesaplarken bu durumda nasıl hesaplıyoruz?
+
+282
+01:06:49,900 --> 01:06:51,819
+Mesela şu satırı düşünün.
+
+283
+01:06:53,260 --> 01:07:00,099
+Bu satırda diyelim ki i'ninci eleman için şeyi hesapladığımızı düşünün.
+
+284
+01:07:01,340 --> 01:07:06,539
+Out linklerin toplamını yani out degree hesapladığımızı düşünün.
+
+285
+01:07:06,539 --> 01:07:22,300
+Eğer bu satırdaki değerler bu kişinin diğer notlara vermiş olduğu linkleri ifade ediyorsa ben bu AdGestancy matriste bu satırdaki elemanların hepsini toplarsam bu toplam değer bana neyi verecektir?
+
+286
+01:07:23,379 --> 01:07:28,599
+OutDegree verecektir. Yani şuradaki nodun OutDegree'sini verecektir.
+
+287
+01:07:28,599 --> 01:07:43,779
+Aynı mantıkla indigriyi bulurken de bir ecesin simatristi herhangi bir kolondaki elemanların toplamını alacak olursam o noda gelmiş olan linklerin toplamını bulmuş olurum.
+
+288
+01:07:43,859 --> 01:07:46,599
+Yani indigriyi bulmuş olurum.
+
+289
+01:07:47,319 --> 01:07:51,659
+Hani buradaki örnekte üçüncü nodun indigrisi demek ki birmiş.
+
+290
+01:07:52,339 --> 01:07:57,239
+Buradaki örnekte üçüncü nodun outigrisi demek ki ikiymiş.
+
+291
+01:07:57,239 --> 01:08:03,459
+Bu şekilde kolayca adjacency matrisinden yararlanarak in degree ve alt degree değerlerini bulabilirim.
+
+292
+01:08:03,459 --> 01:08:18,459
+Şimdi az önce dedim ya ben bana verilmiş olan sosyal network'ü biraz daha tanıtmak istiyorum.
+
+293
+01:08:18,459 --> 01:08:28,700
+Yani bir takım istatistiksel verilerle bu konuştuğumuz metriklere dayalı verilerle birisine tanıtmak istiyorum.
+
+294
+01:08:28,700 --> 01:08:36,700
+Bunun için mesela out degree ve in degree kullanarak şöyle tanımlamalar yapabilirim.
+
+295
+01:08:37,300 --> 01:08:40,060
+Mesela data sequence'ı gösterebilirim.
+
+296
+01:08:40,379 --> 01:08:45,700
+Yani benim sosyal network üzerimdeki in degree sequence'ı gösterebilirim.
+
+297
+01:08:46,679 --> 01:08:54,720
+Mesela burada 5 tane buradan, 3 tane de buradan toplamda 8 tane node'a sahip bir tane network'üm varmış.
+
+298
+01:08:54,719 --> 01:09:03,879
+Şimdi ben bu network'ü tanımlamak için bunların indigrelerini kullanaraktan indigre sequence'ını belirtiyorum.
+
+299
+01:09:04,879 --> 01:09:12,039
+Ne oluyor? Birinci nottan başlıyorum. Birinci not kaç tane indigre'si var? İşte iki tane.
+
+300
+01:09:13,419 --> 01:09:21,339
+İkinci notun kaç tane indigre'si var? İki tane. Üçüncü notun iki tane. Sonra dördüncü notun kaç tane indigre'si var? Bir.
+
+301
+01:09:21,339 --> 01:09:25,099
+işte en sonuncu notun kaç tane indigrisi var?
+
+302
+01:09:25,399 --> 01:09:25,699
+Sıfır.
+
+303
+01:09:25,799 --> 01:09:28,519
+Mesela şu da sonuncu notmuş.
+
+304
+01:09:28,639 --> 01:09:31,139
+Mesela bu arkadaşın indigrisi sıfır.
+
+305
+01:09:31,799 --> 01:09:34,039
+Buraya baktığım vakit ben buradan
+
+306
+01:09:34,039 --> 01:09:37,919
+benim sosyal network'ümdeki
+
+307
+01:09:37,919 --> 01:09:41,539
+indigri distribution'u sıralı bir şekilde görebiliyorum.
+
+308
+01:09:42,619 --> 01:09:43,239
+Okey, okey.
+
+309
+01:09:43,764 --> 01:09:55,764
+Aynı şekilde bunu out degree için de yapabilirim. 8 tane not var. 8 tane notu sıralı olarak not numaralarına göre yazarım ve her notun out degreesini buraya yazabilirim.
+
+310
+01:09:55,764 --> 01:10:09,104
+Eğer bu bir undirected graf ise bu her bir notun degreesini yani in ve out linklerin toplamını yine burada sıralı bir şekilde yazabilirim.
+
+311
+01:10:09,104 --> 01:10:19,164
+Şimdi bu degree sequence'ına bakaraktan ben bu grafikle ilgili bir bilgiyi tanımlamış oldum mesela.
+
+312
+01:10:20,284 --> 01:10:27,704
+Yine bu bilgiyi kullanaraktan ben bir degree distribution tablosunu da oluşturabilirim.
+
+313
+01:10:28,743 --> 01:10:31,164
+Bu degree distribution tablosu nasıl bir şey?
+
+314
+01:10:31,163 --> 01:10:48,063
+Diyelim ki mesela benim bu networkte işte iki tane indigrisi olan eleman sayım üç taneymiş. Değil mi? Bir tane indigrisi olan eleman sayım dört taneymiş. Sıfır tane indigrisi olan eleman sayım bir taneymiş.
+
+315
+01:10:48,063 --> 01:10:54,483
+mesela şunu in degree distribution'a dayalı olarak mesela buraya bir bar grafik oluşturmuşum.
+
+316
+01:10:55,983 --> 01:11:03,803
+Hani buna bakaraktan ben sosyal network yorumlamaya çalışabilirim.
+
+317
+01:11:03,903 --> 01:11:11,003
+Dolayısıyla bu degree metriğini kullanaraktan bu sosyal network hakkında ben ne yaptım?
+
+318
+01:11:11,003 --> 01:11:15,163
+Bir tanımlayıcı bilgiyi bir grafiğe dönüştürdüm.
+
+319
+01:11:15,164 --> 01:11:31,683
+hani bu diyelim ki in degree sayısı sıfır olanın şeyi çok büyük olmuş olsaydı o zaman ben şöyle diyecektim bu network üzerinde hiç link almamış isolated node sayısı çok fazla
+
+320
+01:11:31,683 --> 01:11:42,683
+şimdi bu oyuncak örnek üzerinde bunu görmeniz mümkün olabiliyor ama bu oyuncak örnek olmasaydı içerisinde 10 milyon tane node olan
+
+321
+01:11:42,683 --> 01:11:56,523
+ve görselleştirmeniz kolay olmayan bir database üzerinde duran bir sosyal network olsaydı o zaman böylesi bir degree distribution tablosu çok anlamlı hale gelecekti.
+
+322
+01:11:56,523 --> 01:12:05,344
+Çünkü bu datayı proses edip görselleştirmeniz ve bunu görsel olarak bu tür böyle bir analiz yapmanız çok zor.
+
+323
+01:12:05,743 --> 01:12:07,003
+Bunun yerini ne yapıyorsunuz?
+
+324
+01:12:07,043 --> 01:12:09,383
+Degree distribution sequencerini yazıyorsunuz.
+
+325
+01:12:09,443 --> 01:12:12,204
+Ondan degree distribution tablolarını oluşturuyorsunuz.
+
+326
+01:12:12,204 --> 01:12:20,963
+ve böyle bir yapı çıktığı zaman da burada notların connectivity'si hakkında yorumlar yapabiliyorsunuz.
+
+327
+01:12:24,435 --> 01:12:47,255
+Şimdi bir sosyal network üzerinde her şey connected olmak zorunda değil. Yani böyle adacıklar da olabilir. Küçük adacıklar. Ya da böylesi büyük bir connected şey de olabilir. Ve bu connected yapı içerisinde de böyle farklı gruplar da olabilir.
+
+328
+01:12:47,255 --> 01:13:00,656
+Peki bunları nasıl tespit ediyoruz? Bu sosyal networkleri de, arkadaşlar bir saniye müsaadenizi rica ediyorum
+
+329
+01:14:31,956 --> 01:14:35,315
+Evet, kusura bakmayın. Sesim geliyor mu?
+
+330
+01:14:37,416 --> 01:14:37,896
+Evet, ok.
+
+331
+01:14:40,775 --> 01:14:54,675
+Bu arada 10'a 10 geçiyor. İsterseniz bir ara verelim, ondan sonra ben devam edeyim. Bir 10 dakika ara verelim. Sizleri de çok yormak istemiyorum. Şu anda 10'a 10 geçiyor, 10'a 20 geçe ben devam ediyor olacağım.
+
+332
+01:24:48,532 --> 01:24:50,251
+Evet arkadaşlar devam edelim.
+
+333
+01:24:53,691 --> 01:25:06,972
+Şimdi bir sosyal network üzerinde az önce dediğim gibi gösterdiğim gibi bazı farklı komponentler olabilir.
+
+334
+01:25:06,972 --> 01:25:18,892
+Birbirinden bağımsız, kendi içerisinde farklı bağlantı derecesine sahip olan komponentler olabilir.
+
+335
+01:25:19,691 --> 01:25:27,451
+Bunları da sosyal network analizi raporlarında, sosyal network analizlerinde tespit edebilmek istiyoruz.
+
+336
+01:25:28,152 --> 01:25:32,712
+Mesela burada bir tane sosyal network'üm var, oyuncak bir sosyal network'üm.
+
+337
+01:25:32,712 --> 01:25:36,351
+Bunun içerisinde yine 8 tane nodum var.
+
+338
+01:25:36,351 --> 01:25:50,011
+Ben bunun içerisinde hangi alt grupların konnektiv olduğunu ve bunların konnektivitesini, bağlantı derecesini belirtmek istiyorum.
+
+339
+01:25:50,651 --> 01:25:59,591
+Bir network içerisinde strongly connected, bağlantı derecesi çok iyi olan alt gruplar olabilir.
+
+340
+01:26:00,091 --> 01:26:05,311
+Bir de bağlantı derecesi zayıf olan alt gruplar olabilir.
+
+341
+01:26:05,311 --> 01:26:14,171
+Mesela buraya baktığım zaman bu sosyal network üzerinde bağlantı derecesi yüksek strongly connected komponentleri tespit edeyim.
+
+342
+01:26:15,151 --> 01:26:19,791
+Buna baktığım zaman tanımı ne bu strongly connected komponentlerin?
+
+343
+01:26:20,612 --> 01:26:25,112
+Herhangi bir tane nodu seçtiğin zaman o nottan herhangi bir noda gidebiliyorsun.
+
+344
+01:26:26,291 --> 01:26:30,951
+Yani herkes herkese gidebiliyor.
+
+345
+01:26:31,731 --> 01:26:37,951
+Eğer böylesi bir şey varsa, alt grup varsa buna strongly connected diyoruz.
+
+346
+01:26:38,011 --> 01:26:39,731
+Mesela böyle bir grup var mı burada?
+
+347
+01:26:40,431 --> 01:26:43,191
+Mesela B, C, D, E alt grubuna bakalım.
+
+348
+01:26:43,191 --> 01:26:57,392
+Yani bu 8 tane notluk sosyal network içerisinde B, C, D, E notlarına baktığım zaman gerçekten de bir nottan başlayıp diğer herhangi bir noda mutlaka gidebiliyorum.
+
+349
+01:26:57,392 --> 01:27:00,571
+bir nottan başlayıp diğer herhangi bir
+
+350
+01:27:00,571 --> 01:27:03,032
+notu mutlaka gidebiliyorum. Dolayısıyla da
+
+351
+01:27:03,032 --> 01:27:05,011
+BCDE kendi içerisinde
+
+352
+01:27:05,011 --> 01:27:08,532
+strongly connected. Yine mesela
+
+353
+01:27:08,532 --> 01:27:11,392
+şeye bakalım. Burada bir tane tek başına
+
+354
+01:27:11,392 --> 01:27:12,992
+bir tane komponent
+
+355
+01:27:12,992 --> 01:27:16,852
+var. Bu nottan
+
+356
+01:27:16,852 --> 01:27:19,972
+zaten kendisinin tek not olduğu için
+
+357
+01:27:19,972 --> 01:27:22,011
+sadece kendisine
+
+358
+01:27:22,011 --> 01:27:23,632
+ulaşabiliyorum. Yani
+
+359
+01:27:23,632 --> 01:27:27,231
+başka bir notu ulaşamıyorum. Dolayısıyla bu da
+
+360
+01:27:27,231 --> 01:27:29,311
+tek başına bir strongly connected
+
+361
+01:27:29,311 --> 01:27:31,431
+note. Mesela
+
+362
+01:27:31,431 --> 01:27:33,571
+G ile H'ye bakalım. G ile H'nin
+
+363
+01:27:33,571 --> 01:27:35,811
+elemanları bir tanesinden
+
+364
+01:27:35,811 --> 01:27:37,431
+diğerisine ulaşabiliyorum. F'de
+
+365
+01:27:37,431 --> 01:27:39,591
+tek başına bir note olduğu için onu da
+
+366
+01:27:39,591 --> 01:27:41,211
+tek notluk bir komponent
+
+367
+01:27:41,211 --> 01:27:42,171
+olarak gösteriyorum.
+
+368
+01:27:43,791 --> 01:27:45,171
+Yine mesela
+
+369
+01:27:45,171 --> 01:27:47,171
+bigly connected komponentler de
+
+370
+01:27:47,171 --> 01:27:49,071
+olabilir bir net yol içerisinde.
+
+371
+01:27:49,631 --> 01:27:51,532
+Bigly connected
+
+372
+01:27:51,532 --> 01:27:53,371
+komponentleri tanımlarken de
+
+373
+01:27:53,371 --> 01:27:57,472
+bir nottan
+
+374
+01:27:57,472 --> 01:27:59,211
+her not
+
+375
+01:27:59,211 --> 01:28:02,151
+bir başka
+
+376
+01:28:02,151 --> 01:28:02,731
+noda
+
+377
+01:28:02,731 --> 01:28:07,392
+bazı linkleri
+
+378
+01:28:07,392 --> 01:28:09,811
+takip ederek ulaşabilir.
+
+379
+01:28:10,892 --> 01:28:12,711
+Yani buradaki
+
+380
+01:28:12,711 --> 01:28:16,991
+yapıda
+
+381
+01:28:16,991 --> 01:28:19,771
+Weekly Connected'de illa her
+
+382
+01:28:19,771 --> 01:28:20,951
+nottan her noda
+
+383
+01:28:20,951 --> 01:28:22,271
+ulaşmak
+
+384
+01:28:22,271 --> 01:28:23,271
+Evet.
+
+385
+01:28:23,536 --> 01:28:24,855
+Zorunda değilim.
+
+386
+01:28:25,615 --> 01:28:30,775
+Ama buradaki weekly connected komponenti tanımlarken şunu diyorum.
+
+387
+01:28:31,175 --> 01:28:34,135
+Her not mutlaka bir şekilde ulaşılabilir olsun istiyorum.
+
+388
+01:28:34,715 --> 01:28:41,595
+Mesela burada ABCD'ye baktığım zaman buradaki komponenti.
+
+389
+01:28:42,216 --> 01:28:45,915
+Burada her not diğer notlar tarafından ulaşılabilir mi?
+
+390
+01:28:46,175 --> 01:28:47,055
+Evet ulaşılabilir.
+
+391
+01:28:47,335 --> 01:28:49,536
+A diğer notlar tarafından ulaşılabilir.
+
+392
+01:28:49,695 --> 01:28:51,716
+E'de, B'de, D'de, C'de.
+
+393
+01:28:51,716 --> 01:28:54,855
+strongly connected gibi
+
+394
+01:28:54,855 --> 01:28:56,635
+her nottan her no'da
+
+395
+01:28:56,635 --> 01:28:58,556
+ulaşmak zorunluluğum yok
+
+396
+01:28:58,556 --> 01:29:00,436
+sadece her notun ulaşılabilir
+
+397
+01:29:00,436 --> 01:29:02,796
+olma tanımını getiriyorum
+
+398
+01:29:02,796 --> 01:29:04,436
+burada da
+
+399
+01:29:04,436 --> 01:29:06,796
+her not ulaşılabilir mi
+
+400
+01:29:06,796 --> 01:29:08,796
+evet işte F'den başlayacak
+
+401
+01:29:08,796 --> 01:29:09,876
+olursam F'den
+
+402
+01:29:09,876 --> 01:29:12,536
+H'ye ulaşıyorum G'ye ulaşıyorum
+
+403
+01:29:12,536 --> 01:29:14,476
+ondan sonra bu da
+
+404
+01:29:14,476 --> 01:29:16,576
+kendi içerisinde ne olmuş oluyor
+
+405
+01:29:16,576 --> 01:29:18,695
+bir weekly connected
+
+406
+01:29:18,695 --> 01:29:19,995
+komponent olmuş oluyor
+
+407
+01:29:19,995 --> 01:29:40,396
+Dolayısıyla ben bir sosyal network üzerindeki komponentleri tanımlarken mesela bana dediniz ki buradaki alt grupları yani komponentleri göstermeni istiyorum ama komponent tanımı olarak strongly connected kullanacağım.
+
+408
+01:29:40,396 --> 01:29:42,296
+yahut da
+
+409
+01:29:42,296 --> 01:29:44,216
+weekly connected kullanacağım.
+
+410
+01:29:44,336 --> 01:29:45,915
+Buna dayalı olarak ben
+
+411
+01:29:45,915 --> 01:29:48,056
+şuradaki alt grupları
+
+412
+01:29:48,056 --> 01:29:50,235
+tespit edebilirim ve bunu bu
+
+413
+01:29:50,235 --> 01:29:52,235
+şekilde gösterebilirim.
+
+414
+01:29:55,216 --> 01:29:57,135
+Yine aynı şekilde
+
+415
+01:29:57,135 --> 01:30:00,216
+eğer bu alt
+
+416
+01:30:00,216 --> 01:30:02,116
+komponentlerden bir tanesi
+
+417
+01:30:02,116 --> 01:30:04,216
+içerdiği eleman
+
+418
+01:30:04,216 --> 01:30:06,256
+sayısı, içerdiği link
+
+419
+01:30:06,256 --> 01:30:07,775
+sayısı bakış açısından
+
+420
+01:30:07,775 --> 01:30:10,076
+diğerlerine göre çok daha
+
+421
+01:30:10,076 --> 01:30:12,156
+fazla eleman içeriyorsa
+
+422
+01:30:12,156 --> 01:30:14,315
+bu durumda bunun ismini
+
+423
+01:30:14,315 --> 01:30:15,756
+de giant component olarak
+
+424
+01:30:15,756 --> 01:30:18,175
+nitelendiriyoruz. Yani diğerlerinden
+
+425
+01:30:18,175 --> 01:30:20,116
+farklı olarak mesela burada
+
+426
+01:30:20,116 --> 01:30:21,896
+bir tane giant component var.
+
+427
+01:30:23,355 --> 01:30:24,036
+Onun dışındaki
+
+428
+01:30:24,036 --> 01:30:25,635
+diğer alt
+
+429
+01:30:25,635 --> 01:30:27,256
+componentler
+
+430
+01:30:27,256 --> 01:30:30,015
+dediğimiz gibi
+
+431
+01:30:30,015 --> 01:30:34,056
+bu strongly connected
+
+432
+01:30:34,056 --> 01:30:36,076
+ya da weakly connected tanımlarına göre
+
+433
+01:30:36,076 --> 01:30:38,015
+oluşturulmuş componentler.
+
+434
+01:30:38,015 --> 01:30:42,635
+bunlardan bir tanesi öne çıkıyorsa buna da cahit komponat diyoruz.
+
+435
+01:30:44,476 --> 01:30:44,735
+Okey.
+
+436
+01:30:47,315 --> 01:30:48,515
+Biz neleri konuştuk?
+
+437
+01:30:48,515 --> 01:30:56,116
+Hani sosyal networkleri matrisler olarak, edge list olarak, adjacency list olarak tanımlayabileceğimizi söyledik.
+
+438
+01:30:56,555 --> 01:31:02,555
+Ondan sonra karşılaştığımız sosyal networkleri bazı metriklerle tanımlayabileceğimizi söyledik.
+
+439
+01:31:02,555 --> 01:31:25,035
+Bu bir sosyal networkleri degree değerlerine göre ifade edebiliriz. Bu degree distribution grafları oluşturabiliriz. Aynı şekilde sosyal networkler içerisinde komponentleri tanımlayabiliriz. Bu komponentler neler olabilir? Strong komponentler olabilir. Bunlar strongly connected komponentler.
+
+440
+01:31:25,036 --> 01:31:30,235
+weak komponentler olabilir, weakly connected komponentler bir de giant komponent olabilir.
+
+441
+01:31:30,675 --> 01:31:37,536
+Bu da diğerlerine göre içerdiği eleman sayısı ve link sayısına göre çok daha büyük olan komponentler.
+
+442
+01:31:42,963 --> 01:31:58,263
+Şimdi biz centrality metriklerinden bahsettik. Dedik ki degree centrality var, between the centrality var bir de closing centrality. Şimdi bu üç tane metrik bizim için önemli. O yüzden bunu biraz daha derinlemesine bakalım.
+
+443
+01:31:58,263 --> 01:32:23,223
+Burada bir sosyal network görüyorsunuz. Bu sosyal network içerisinde bazı notların renkleri farklı. Aynı zamanda bazı notların büyüklükleri diğerlerine göre de farklı. Burada büyüklüğü diğerlerine göre farklı olmasının sebebi degree centrality metriyine göre çizilmiş bir network bu.
+
+444
+01:32:23,223 --> 01:32:37,963
+Yani burada mesela Kimball ve Gerard şekilde gördüğünüz diğerlerine göre daha büyük. Bunun sebebi bu arkadaşların sahip olmuş oldukları link sayıları yani degree sayıları daha büyük.
+
+445
+01:32:38,783 --> 01:32:52,963
+Demek ki ben görselleştirmeyi de, social network analiz raporundaki görselleştirmeyi de seçileceğim metriye göre yapıyorum. Burada da degree centrality metriyeni seçmişim ve ona göre görselleştirmişim.
+
+446
+01:32:53,224 --> 01:33:08,324
+Yine burada başka bir görselleştirme var. Burada da önemli aktörleri biraz daha önem derecesine oranlı bir şekilde ne yapıyorum? Daha büyük gösteriyorum.
+
+447
+01:33:12,659 --> 01:33:23,120
+Şimdi buna baktığımda mesela buradaki şekilde yine aynı şekilde hani degree centralisyene göre ben notların büyüklüklerini farklı göstermişim.
+
+448
+01:33:23,120 --> 01:33:34,080
+Aynı zamanda bir de ilişkileri de ilişkinin ağırlık etribütüne dayalı olarak farklı göstermişim görselleştirmen de.
+
+449
+01:33:34,539 --> 01:33:40,679
+Mesela hani burada Leonard ile Teddy arasındaki ilişki biraz daha kuvvetli bir ilişki.
+
+450
+01:33:40,679 --> 01:33:46,019
+bu arkadaşların arasındaki geçen konuşma sayısı olmuş olabilir.
+
+451
+01:33:46,159 --> 01:33:49,259
+Bu arkadaşların arasındaki e-mailleşme sayısı olmuş olabilir.
+
+452
+01:33:49,979 --> 01:33:54,879
+Eğer böylesi bir ağırlık bilgisi de varsa, ilişkinin ağırlığı bilgisi de varsa
+
+453
+01:33:54,879 --> 01:33:57,979
+bunu da görselleştirmemde ne yapıyorum? Gösteriyorum.
+
+454
+01:34:01,479 --> 01:34:07,779
+Şimdi buraya baktığımda mesela buradaki örnekte Orkut diye bir not var.
+
+455
+01:34:07,779 --> 01:34:13,759
+Bu Orkut'un sahip olduğu linklere bakıyorsunuz biraz fazla.
+
+456
+01:34:14,139 --> 01:34:21,679
+Yani mesela bu Orkut'un bulunmuş olduğu ortamda mesela bir de kırmızı not var.
+
+457
+01:34:22,039 --> 01:34:28,439
+Hani kırmızı notlu Orkut'u karşılaştırdığım zaman Orkut'un edge sayısı çok daha fazla.
+
+458
+01:34:28,639 --> 01:34:34,819
+Yani bu da yola çıkaraktan bu Orkut'un daha önemli olduğunu söyleyebilirsiniz.
+
+459
+01:34:34,819 --> 01:34:36,459
+degree centrality.
+
+460
+01:34:37,539 --> 01:34:37,939
+Ama
+
+461
+01:34:37,939 --> 01:34:41,299
+Orkut'un sahip olduğu
+
+462
+01:34:41,299 --> 01:34:43,479
+link sayısına bakmak yeterli
+
+463
+01:34:43,479 --> 01:34:45,099
+değil. Yani Orkut'un
+
+464
+01:34:45,099 --> 01:34:46,939
+bulunmuş olduğu networkdeki
+
+465
+01:34:46,939 --> 01:34:49,379
+önem değerini ifade etmek için
+
+466
+01:34:49,379 --> 01:34:51,359
+sadece link sayısına bakmak
+
+467
+01:34:51,359 --> 01:34:53,799
+yeterli değil. Şimdi bu grafiği
+
+468
+01:34:53,799 --> 01:34:54,959
+şey yapalım,
+
+469
+01:34:55,299 --> 01:34:56,279
+gerçeğini gösterelim.
+
+470
+01:34:57,219 --> 01:34:58,539
+Bu grafiğin gerçeği de böyle.
+
+471
+01:35:00,739 --> 01:35:01,659
+Bakacak olursanız
+
+472
+01:35:01,659 --> 01:35:03,039
+ne yapmış oldu? Orkut
+
+473
+01:35:03,039 --> 01:35:12,939
+Total'deki network içerisinde aslında çok ufak bir alanda duran bir tane nolu ifade ediyor.
+
+474
+01:35:12,939 --> 01:35:17,020
+Yani bu sosyal network'ün merkezinde değil.
+
+475
+01:35:18,599 --> 01:35:21,600
+Buradan yola çıkarak şunu söyleyebilirsiniz.
+
+476
+01:35:22,579 --> 01:35:29,779
+Orkut'un link sayısı fazla ama bu network üzerinde geneline baktığınız zaman çok önemli bir yerde durmuyor.
+
+477
+01:35:29,779 --> 01:35:39,899
+Dolayısıyla degree centrality yani bir linkin sahip olmuş olduğu link sayısı tek başına yeterli bir metrik değil.
+
+478
+01:35:41,059 --> 01:35:44,319
+Bunun haricinde diğer centrality metriklerine ihtiyacımız var.
+
+479
+01:35:44,439 --> 01:35:44,959
+Nedir bunlar?
+
+480
+01:35:45,619 --> 01:35:48,439
+Betweenness centrality bir de closeness centrality.
+
+481
+01:35:50,100 --> 01:35:59,279
+O yüzden de bir centrality metriklerini belirtirken yani bir aktörün bir network üzerinde önemini belirtirken
+
+482
+01:35:59,279 --> 01:36:01,399
+bu üç tane farklı
+
+483
+01:36:01,399 --> 01:36:02,880
+centrality metriyine bakıyoruz.
+
+484
+01:36:03,619 --> 01:36:05,619
+Bir tanesi degree centrality.
+
+485
+01:36:05,799 --> 01:36:07,600
+Bu degree centrality'yi hesaplarken
+
+486
+01:36:07,600 --> 01:36:09,479
+in degree'yi yahut da out degree'yi
+
+487
+01:36:09,479 --> 01:36:11,559
+kullanabilirim. Genelde kullandığımız
+
+488
+01:36:11,559 --> 01:36:13,959
+out degree'dir centrality için.
+
+489
+01:36:15,339 --> 01:36:16,239
+Aynı zamanda
+
+490
+01:36:16,239 --> 01:36:17,399
+between the centrality
+
+491
+01:36:17,399 --> 01:36:19,520
+ve de close the centrality'ni kullanmam
+
+492
+01:36:19,520 --> 01:36:21,219
+gerekir. Mesela buraya
+
+493
+01:36:21,219 --> 01:36:23,579
+baktığımızda, out degree
+
+494
+01:36:23,579 --> 01:36:25,619
+için degree centrality'ye
+
+495
+01:36:25,619 --> 01:36:27,139
+baktığımızda, burada
+
+496
+01:36:27,139 --> 01:36:28,839
+en önemli
+
+497
+01:36:28,839 --> 01:36:30,879
+X ile Y notlarını
+
+498
+01:36:30,879 --> 01:36:32,919
+karşılaştıralım. Kim daha önemli burada?
+
+499
+01:36:33,519 --> 01:36:35,179
+X daha önemli çünkü X'in
+
+500
+01:36:35,179 --> 01:36:37,219
+dış dünyaya vermiş olduğu beş tane
+
+501
+01:36:37,219 --> 01:36:39,079
+link var. Y'nin ise
+
+502
+01:36:39,079 --> 01:36:40,979
+sıfır. Okey.
+
+503
+01:36:41,719 --> 01:36:43,319
+Yine bitmeymiş sentral etiğe
+
+504
+01:36:43,319 --> 01:36:44,979
+bakalım. Hani X ile Y
+
+505
+01:36:44,979 --> 01:36:46,879
+arasındaki önemi karşılaştıralım.
+
+506
+01:36:47,019 --> 01:36:49,199
+X burada Y'den daha önemli çünkü
+
+507
+01:36:49,199 --> 01:36:51,319
+X kaç tane ikilinin
+
+508
+01:36:51,319 --> 01:36:53,559
+yolu ortasında
+
+509
+01:36:53,559 --> 01:36:55,139
+mesela şuradaki
+
+510
+01:36:55,139 --> 01:36:57,079
+not X üzerinden şu iki
+
+511
+01:36:57,079 --> 01:36:58,820
+notla konuşacak. Dolayısıyla
+
+512
+01:36:58,820 --> 01:37:01,059
+iki tane ikili demek. Şuradaki
+
+513
+01:37:01,059 --> 01:37:02,899
+not x üzerinden şu ikiliyle
+
+514
+01:37:02,899 --> 01:37:05,100
+konuşacak. Dolayısıyla dört tane ikili demek.
+
+515
+01:37:05,759 --> 01:37:06,639
+x kaç tane
+
+516
+01:37:06,639 --> 01:37:08,899
+ikilinin önündeymiş? Dört
+
+517
+01:37:08,899 --> 01:37:10,040
+tanenin önündeymiş.
+
+518
+01:37:10,676 --> 01:37:30,915
+Peki y kaç tane ikilinin arasında? Şuradaki not eğer tercih eder de y'nin üzerinden gitmek isterse şurada 3 tane arkadaşla konuşabilir. Dolayısıyla 3 tane ikili var. Ama bu 3 tane ikiliyle konuşurken y'yi bypass da edebilir. Buradan da gidebilir.
+
+519
+01:37:31,776 --> 01:37:37,235
+X'te ise dört tane ikilinin kesinlikle yolunun üzerinde.
+
+520
+01:37:37,335 --> 01:37:40,475
+Dolayısıyla X, Y'ye göre daha önemli.
+
+521
+01:37:41,475 --> 01:37:42,995
+Closeness Centrality'ye bakalım.
+
+522
+01:37:43,655 --> 01:37:50,615
+Hani X'den yola çıkarak ortalamada diğer notlara uzaklık ne kadar?
+
+523
+01:37:51,835 --> 01:37:58,036
+Bir de Y'den yola çıkarak diğer notlara ortalamada uzaklık ne kadar?
+
+524
+01:37:58,036 --> 01:38:04,856
+Bunları topladığınızda X'in daha önemli olduğunu görüyoruz.
+
+525
+01:38:04,955 --> 01:38:16,256
+Yani X'den bütün notlara işte bir iki adımda, bunu da bir adımda, bunu da iki adımda ulaşıyor, bunu da bir adımda, bunu da iki adımda ulaşıyor.
+
+526
+01:38:16,716 --> 01:38:25,176
+Bunları topladığınızda Y'den başlayarak diğer notlara ortalamada ulaşma uzaklığına göre daha kısa olduğunu görüyoruz.
+
+527
+01:38:25,176 --> 01:38:28,275
+Dolayısıyla X'in closed centrality daha yüksek.
+
+528
+01:38:30,476 --> 01:38:35,936
+Şimdi biz degree centrality'yi ikiye ayırdık. Bir tanesi yani in degree demiştik.
+
+529
+01:38:36,955 --> 01:38:43,495
+Burada mesela in degree ile ilgili in degree'yi kullanarak çizilmiş bir tane grafik var.
+
+530
+01:38:43,495 --> 01:38:57,415
+Buraya baktığınız vakit ülkelerin satın aldıkları petrol miktarlarına dayalı olarak çizilmiş bir sosyal network.
+
+531
+01:38:57,415 --> 01:39:09,476
+Buraya baktığınız vakit Amerika ve Japonya yüksek miktarlarda diğer ülkelerden petrol alıyormuş.
+
+532
+01:39:09,475 --> 01:39:16,555
+İşte Venezuela'dan alıyormuş, Meksika'dan, Amerika, Kanada'dan alıyormuş, Irak'tan alıyormuş, Suudi Arabistan'dan alıyormuş.
+
+533
+01:39:17,275 --> 01:39:23,415
+Aynı şekilde Japonya'da Suudi Arabistan, Birleşik Arap Ömürlüklerinden alıyormuş.
+
+534
+01:39:23,536 --> 01:39:24,575
+Bunları görüyoruz.
+
+535
+01:39:24,676 --> 01:39:33,415
+Buradaki ilişkinin de ağırlığını da göstermek için daha kalın bir link kullanıyoruz.
+
+536
+01:39:33,415 --> 01:39:52,795
+Yine bu şekle baktığım zaman hangi şehirlerin daha fazla daha yüksek indigrisi vardır işte burada Amerika ve Japonya'yı bu grafikten hızlı bir şekilde seçebilirim.
+
+537
+01:39:52,795 --> 01:40:07,775
+Dolayısıyla bu sosyal network analizleri raporları size görsel olarak aslında bu data üzerinden yapmanız gereken çıkarımları kolay bir şekilde yapmanıza olanak veriyor.
+
+538
+01:40:07,775 --> 01:40:18,775
+Yani şu sorunun yanıtını ben sadece bu sosyal network analizi raporu sonucuna bakaraktan yanıtlayabildim.
+
+539
+01:40:18,775 --> 01:40:23,315
+Bu sefer de alt tigriye dayalı bir tane grafik çizelim.
+
+540
+01:40:25,055 --> 01:40:28,795
+Burada bu da alt tigriye dayalı çizilmiş bir network.
+
+541
+01:40:28,795 --> 01:40:51,315
+Burada da Suudi Arabistan'ın dış dünyaya vermiş olduğu petrol miktarlarına çok yüksek olduğu için Suudi Arabistan'ın nodu diğerlerine göre daha büyük çizilmiş.
+
+542
+01:40:51,315 --> 01:41:01,696
+Mesela Vanuzella ve Birleşik Arap Emirlikleri de veriyormuş ama onların vermiş oldukları miktar daha düşük olduğu için,
+
+543
+01:41:01,955 --> 01:41:09,056
+Altling miktarı onların notlarının büyüklükleri Suudi Eriplistan'a göre daha düşük.
+
+544
+01:41:09,460 --> 01:41:20,279
+Burada da gördüğünüz gibi notların büyüklüklerini bu sefer neye göre yapmış oldum? Alt de gray'e göre yapmış oldum.
+
+545
+01:41:21,876 --> 01:41:22,216
+ok?
+
+546
+01:41:27,283 --> 01:41:39,603
+Buraya baktığım zaman mesela burada da diyorum ki mesela düşük alt dügriye sahip ama aynı zamanda önemli miktarda petrol dış dünyaya gönderen hangi ülke vardır?
+
+547
+01:41:39,603 --> 01:41:56,643
+Burada alt dügri miktarı düşük olan mesela Vanuzelle var, Arap Emirlikleri var. Bunların alt linkleri Suudi Erevistan'a göre düşük ama önemli miktarda ne yapıyorlar?
+
+548
+01:41:56,643 --> 01:42:00,683
+dış dünyaya petrol üretimi sağlıyorlar.
+
+549
+01:42:09,140 --> 01:42:21,100
+Şimdi bu degree centrality metriyeni şimdi artık oyuncak networkler üzerinde hesaplamaya başlayalım.
+
+550
+01:42:21,100 --> 01:42:25,419
+Burada bir tane örnek oyuncak network var.
+
+551
+01:42:25,939 --> 01:42:28,820
+İşte 6 tane elemanı var.
+
+552
+01:42:29,459 --> 01:42:36,480
+Bu 6 tane elemanın degree centrality değerini hesaplayalım ama normalization yapmadan hesaplayalım.
+
+553
+01:42:36,480 --> 01:42:40,279
+Degree Centrality değeri bu undirektif bir graf.
+
+554
+01:42:40,539 --> 01:42:43,860
+Dolayısıyla hem outlink hem itlink sayısı fark etmiyor.
+
+555
+01:42:44,079 --> 01:42:45,379
+Link sayısına bakıyoruz.
+
+556
+01:42:45,879 --> 01:42:47,439
+Şuradaki notun kaç tane linki var?
+
+557
+01:42:47,619 --> 01:42:48,660
+Ortadaki 5 tane.
+
+558
+01:42:48,799 --> 01:42:53,160
+Diğerlerinin ise birer tane linkleri var.
+
+559
+01:42:53,299 --> 01:42:55,220
+Dolayısıyla link sayısına bakıyoruz.
+
+560
+01:42:59,439 --> 01:43:04,980
+Şimdi eğer normalize etmek istiyorsam da normalize ettiğim zaman n-1'e bölmem lazım.
+
+561
+01:43:04,980 --> 01:43:08,140
+Yani kendisi dışındaki not sayısına bölmem lazım.
+
+562
+01:43:08,279 --> 01:43:12,099
+Burada mesela 3 tane farklı oyuncak net örtüm var.
+
+563
+01:43:13,059 --> 01:43:14,440
+Bunu zaten konuşmuştuk.
+
+564
+01:43:14,940 --> 01:43:18,119
+İşte ortadakinin link sayısı 5 taneydi.
+
+565
+01:43:18,239 --> 01:43:19,239
+Diğerlerinin 1'di.
+
+566
+01:43:19,699 --> 01:43:20,879
+Normalize etmek istiyorum.
+
+567
+01:43:21,040 --> 01:43:23,479
+Toplamda 6 tane not var.
+
+568
+01:43:23,800 --> 01:43:24,519
+1 çıkartıyorum.
+
+569
+01:43:24,640 --> 01:43:26,479
+Yani eneksi 1'e bölüyorum.
+
+570
+01:43:26,919 --> 01:43:30,360
+Dolayısıyla da buradaki 5'li 5'e 5'e bölüyorum.
+
+571
+01:43:30,500 --> 01:43:31,739
+1 diğerleri 1'di.
+
+572
+01:43:32,259 --> 01:43:34,739
+Bunları da 5'e böldüğümde 0.2.
+
+573
+01:43:34,979 --> 01:43:36,999
+iki çıkıyor. Bunların degree
+
+574
+01:43:36,999 --> 01:43:39,079
+centrality değeri. Mesela şu
+
+575
+01:43:39,079 --> 01:43:40,939
+en alttaki oyuncak
+
+576
+01:43:40,939 --> 01:43:41,640
+örneğe bakalım.
+
+577
+01:43:43,379 --> 01:43:45,079
+Ortadakinin kaç tane linki var?
+
+578
+01:43:45,259 --> 01:43:47,019
+İki. Onun yanındakinin
+
+579
+01:43:47,019 --> 01:43:49,039
+kaç tane linki var? İki. Onun yanındakinin
+
+580
+01:43:49,039 --> 01:43:50,659
+kaç tane linki var? İki. En
+
+581
+01:43:50,659 --> 01:43:52,979
+uçlardakilerin kaç tane linki var?
+
+582
+01:43:52,979 --> 01:43:54,339
+Birer tane linki var.
+
+583
+01:43:55,619 --> 01:43:56,379
+Peki bunları
+
+584
+01:43:56,379 --> 01:43:59,099
+normalize ettiğim zaman
+
+585
+01:43:59,099 --> 01:44:00,939
+toplamdaki not sayısı
+
+586
+01:44:00,939 --> 01:44:02,719
+burada beş taneydi.
+
+587
+01:44:02,719 --> 01:44:04,719
+neye böleceğim? N-1 4'e
+
+588
+01:44:04,719 --> 01:44:06,699
+böleceğim. Değil mi? Burada
+
+589
+01:44:06,699 --> 01:44:08,799
+iki tane link vardı. 2 bölü
+
+590
+01:44:08,799 --> 01:44:10,719
+4 0.5. İki link vardı.
+
+591
+01:44:10,839 --> 01:44:12,199
+2 bölü 4 0.5.
+
+592
+01:44:12,839 --> 01:44:14,859
+Burada bir link vardı. 1 bölü
+
+593
+01:44:14,859 --> 01:44:16,239
+4 0.25.
+
+594
+01:44:17,719 --> 01:44:18,919
+Şurada 9 notluk
+
+595
+01:44:18,919 --> 01:44:20,259
+pardon
+
+596
+01:44:20,259 --> 01:44:22,360
+3 burada. 3 burada 6
+
+597
+01:44:22,360 --> 01:44:24,779
+bir tane 7. 7 notluk
+
+598
+01:44:24,779 --> 01:44:26,199
+bir tane oyuncak örnek var.
+
+599
+01:44:27,079 --> 01:44:28,659
+Mesela şuradaki nota bakalım.
+
+600
+01:44:28,819 --> 01:44:30,679
+Buradaki nodun kaç tane elemanı var?
+
+601
+01:44:31,259 --> 01:44:32,519
+Linki var. İki tane.
+
+602
+01:44:32,720 --> 01:44:34,300
+2 bölü n-1
+
+603
+01:44:34,300 --> 01:44:36,699
+dolayısıyla 6'ya böleceğim.
+
+604
+01:44:37,160 --> 01:44:38,779
+2 bölü 6. Bu da
+
+605
+01:44:38,779 --> 01:44:40,899
+bana bunun degree centrality
+
+606
+01:44:40,899 --> 01:44:41,699
+değerini veriyor.
+
+607
+01:44:43,140 --> 01:44:45,080
+Şuradaki notların kaç tane
+
+608
+01:44:45,080 --> 01:44:46,899
+şeyi var? 3 tane linki var.
+
+609
+01:44:47,080 --> 01:44:49,180
+3'ü n-1'e
+
+610
+01:44:49,180 --> 01:44:49,979
+bölüyorum. Yani
+
+611
+01:44:49,979 --> 01:44:53,160
+7-1 6'ya bölüyorum. 0.5
+
+612
+01:44:53,160 --> 01:44:53,979
+0.5.
+
+613
+01:44:54,440 --> 01:44:56,759
+Bu şekilde her nodun
+
+614
+01:44:56,759 --> 01:44:59,039
+ben degree centrality
+
+615
+01:44:59,039 --> 01:45:00,460
+değerini bulabiliyorum.
+
+616
+01:45:02,720 --> 01:45:13,240
+Şimdi bir nodun degree centrality değerini bulduğum gibi bütün bir sosyal network'ün degree centrality değerini de hesaplayabilirim.
+
+617
+01:45:14,240 --> 01:45:20,979
+Bütün bir network'ün degree centrality'sini.
+
+618
+01:45:20,979 --> 01:45:24,220
+Buna da hani centralization metri diyorum.
+
+619
+01:45:24,820 --> 01:45:28,580
+Burada da şunu hesaplarken de şunu şey yapıyorum.
+
+620
+01:45:28,580 --> 01:45:44,580
+Diyorum ki bu network içerisindeki maksimum degree centrality'ye sahip olan nodun degree centrality değerinden diğer bütün nodların degree centrality değerini çıkartıyorum.
+
+621
+01:45:45,320 --> 01:45:55,039
+Yani bu her maksimumla her bir nodun değeri arasında degree centrality değeri arasındaki farkları buluyorum ve bu farkların toplamını alıyorum.
+
+622
+01:45:55,039 --> 01:45:57,860
+ve bu farkları
+
+623
+01:45:57,860 --> 01:46:00,239
+toplamdaki eş sayısına bölüyorum
+
+624
+01:46:00,239 --> 01:46:02,339
+n-1 çarpı n-2'ye bölüyorum
+
+625
+01:46:02,339 --> 01:46:03,599
+normalize ediyorum
+
+626
+01:46:05,363 --> 01:46:11,083
+Yani buraya baktığım vakit mesela şuradaki örneğe bakalım.
+
+627
+01:46:11,844 --> 01:46:17,223
+Burada maksimum şeye sahip olan hangisi?
+
+628
+01:46:17,903 --> 01:46:20,383
+Degree Centrality'ye sahip olan hangisi?
+
+629
+01:46:20,883 --> 01:46:21,023
+Şu.
+
+630
+01:46:21,784 --> 01:46:22,263
+Bu arkadaş.
+
+631
+01:46:23,204 --> 01:46:30,223
+Bu arkadaşla diğer arkadaşların aralarındaki farkları alıyorum.
+
+632
+01:46:30,223 --> 01:46:36,483
+Bu farkları topluyorum ve bunu n-1 çarpı n-2'ye bölüyorum.
+
+633
+01:46:37,883 --> 01:46:58,544
+Şimdi bunu yapacak olursam bu bana bu centralization değeri yani bir verilmiş olan network'ün centralization değerine bakaraktan şunu söyleyebiliyorum.
+
+634
+01:46:58,544 --> 01:47:04,463
+Bu grafik merkezi bir not etrafında toplanmış bir grafiktir.
+
+635
+01:47:04,663 --> 01:47:14,624
+Yahut da bu grafik böyle bir dağınık yatay eksen üzerinde dağılmış bir grafiktir şeklinde yorumlar yapabiliyorum.
+
+636
+01:47:14,764 --> 01:47:19,243
+Mesela degree centrality 1.0 olduğu durum için konuşalım.
+
+637
+01:47:20,163 --> 01:47:24,883
+Şimdi degree centrali, daha doğrusu centralization degree değeri,
+
+638
+01:47:25,083 --> 01:47:29,623
+yani bütün grafiğin centralization degreesinin bir olduğu durum için konuşalım.
+
+639
+01:47:29,943 --> 01:47:31,783
+Şimdi biz ne yapıyorduk?
+
+640
+01:47:32,303 --> 01:47:37,643
+Maksimumla minimum arasındaki farkların toplamını alıyorduk.
+
+641
+01:47:37,983 --> 01:47:40,084
+Maksimum ne burada? Beş, burada bir.
+
+642
+01:47:40,703 --> 01:47:41,803
+Beş eksi bir, dört.
+
+643
+01:47:42,403 --> 01:47:45,943
+Bunun içinde dört, bunun içinde dört, bunun içinde dört, bunun içinde dört.
+
+644
+01:47:46,403 --> 01:47:47,443
+Toplamda ne oldu?
+
+645
+01:47:47,443 --> 01:47:49,943
+4 çarpı 5 yani
+
+646
+01:47:49,943 --> 01:47:51,923
+20 oldu. Bu nerede
+
+647
+01:47:51,923 --> 01:47:53,863
+20? Paydaki
+
+648
+01:47:53,863 --> 01:47:55,903
+kısım. Maksimumla
+
+649
+01:47:55,903 --> 01:47:57,923
+her bir elemanın
+
+650
+01:47:58,723 --> 01:48:00,163
+degree centrality değerlerinin
+
+651
+01:48:00,163 --> 01:48:01,723
+arasındaki farkı alıp topladım.
+
+652
+01:48:02,283 --> 01:48:03,883
+Bölü n-1 çarpı
+
+653
+01:48:03,883 --> 01:48:05,223
+n-2. Burada
+
+654
+01:48:05,223 --> 01:48:06,703
+kaç tane not var?
+
+655
+01:48:07,883 --> 01:48:09,603
+6, 1-5
+
+656
+01:48:09,603 --> 01:48:12,243
+n-1
+
+657
+01:48:12,243 --> 01:48:13,603
+5, n-2 4
+
+658
+01:48:13,603 --> 01:48:15,963
+5 çarpı 4. Bana neyi verecektir?
+
+659
+01:48:16,363 --> 01:48:17,363
+20'yi verecektir.
+
+660
+01:48:17,444 --> 01:48:18,664
+20 bölü 21.
+
+661
+01:48:19,563 --> 01:48:20,824
+Yani bu şunu gösteriyor.
+
+662
+01:48:20,824 --> 01:48:39,824
+Eğer ben böylesi tek not etrafında toplanmış notlardan oluşan merkezi bir şekilde toparlanmış bir grafikten bahsediyorsam bu tür grafiklerin centralization degree değeri sıfırla bir arasında bire daha yakın olacaktır.
+
+663
+01:48:39,823 --> 01:49:02,623
+Eğer benim böylesi yatay eksende dağılmış bir tane grafiğim varsa sıfırla bir arasındaki aralıkta sıfıra daha yakın bir centralization degree değerine sahip bir grafik karşımda vardır.
+
+664
+01:49:02,623 --> 01:49:11,023
+Burada da yine tek bir not etrafında toplanmış bir grafikten bahsetmiyorum.
+
+665
+01:49:11,023 --> 01:49:14,283
+Çünkü ortadaki tek not iki tane elemana sahip.
+
+666
+01:49:14,584 --> 01:49:18,263
+Onun haricinde yan kollarda birbiriyle connected graph var.
+
+667
+01:49:18,683 --> 01:49:25,423
+Yani bunun da centralization degreesi sıfırlan bir aralığında biraz daha sıfır yönünde.
+
+668
+01:49:25,423 --> 01:49:38,423
+Demek ki ben her bana verilmiş bir graf için centralization degree değerini bularak daha o grafiği görselleştirmeden o grafik hakkında bir takım şeyler söyleyebilirim.
+
+669
+01:49:40,003 --> 01:49:42,283
+Mesela şuradaki iki grafa bakın.
+
+670
+01:49:43,024 --> 01:49:48,923
+Buradaki iki grafta centralization degree değeri daha yüksek olan hangisidir?
+
+671
+01:49:53,652 --> 01:49:55,191
+Sol taraftaki. Neden?
+
+672
+01:49:55,852 --> 01:49:57,791
+Çünkü bir tane
+
+673
+01:49:57,791 --> 01:49:59,911
+büyük bir not var. Yani bir tane
+
+674
+01:49:59,911 --> 01:50:01,971
+çok sayıda notla
+
+675
+01:50:01,971 --> 01:50:04,011
+konuşan bir tane
+
+676
+01:50:04,011 --> 01:50:04,931
+not var.
+
+677
+01:50:06,131 --> 01:50:07,631
+Ve bu notun
+
+678
+01:50:07,631 --> 01:50:10,111
+etrafında ağırlıklı olarak bu network
+
+679
+01:50:10,111 --> 01:50:11,531
+konuşulanmış.
+
+680
+01:50:12,412 --> 01:50:12,672
+Peki
+
+681
+01:50:12,672 --> 01:50:15,951
+Centralization degrees'i
+
+682
+01:50:15,951 --> 01:50:17,832
+düşük olan grafik, biraz daha düşük
+
+683
+01:50:17,832 --> 01:50:20,111
+olan grafik sağda. Buradaysa
+
+684
+01:50:20,111 --> 01:50:22,152
+birbirine eşit önemde
+
+685
+01:50:22,152 --> 01:50:23,351
+çok sayıda not var.
+
+686
+01:50:23,652 --> 01:50:35,971
+yani bunların yuvarlakların büyüklüklerine bakacak olursanız birbirine eşit önemde çok sayıda not var ve bu notların etrafında network dağılmış.
+
+687
+01:50:36,652 --> 01:50:42,652
+Dolayısıyla bu notta ise centralization degree değeri düşük oluyor.
+
+688
+01:50:43,652 --> 01:50:46,352
+Aklınıza kalması açısından tekrar söyleyelim.
+
+689
+01:50:46,692 --> 01:50:59,512
+Eğer bir sosyal networkte tek büyük bir merkezi not varsa ve bütün her şey onun etrafında dolaşıyorsa o durumda centralization degree değeri yüksek olur.
+
+690
+01:50:59,512 --> 01:51:14,832
+Eğer bir networkta birbirine eşit önemde çok sayıda not varsa burada da centralization degree değeri daha düşüktür o network için.
+
+691
+01:51:14,832 --> 01:51:29,912
+Şimdi biz dedik ki degree centrality bir network üzerinde bir nodun önemini ifade edebilir.
+
+692
+01:51:30,052 --> 01:51:35,851
+Çünkü bir nodun kaç tane farklı nodla etkileşim halinde olduğunu söylüyorsunuz.
+
+693
+01:51:35,851 --> 01:51:39,872
+Ama degree centrality'nin yakalayamadığı durumlar var.
+
+694
+01:51:39,872 --> 01:51:42,092
+yakalayamadığı durumlarda
+
+695
+01:51:42,092 --> 01:51:44,412
+acaba network içerisinde
+
+696
+01:51:44,412 --> 01:51:45,012
+bu not
+
+697
+01:51:45,012 --> 01:51:48,431
+kaç tane nodun etkileşim
+
+698
+01:51:48,431 --> 01:51:50,532
+iletişim yolu
+
+699
+01:51:50,532 --> 01:51:51,632
+üzerinde yani
+
+700
+01:51:51,632 --> 01:51:54,351
+bitmeymiş centraliteyi yakalayamaz
+
+701
+01:51:54,351 --> 01:51:56,512
+ikincisi bu nottan
+
+702
+01:51:56,512 --> 01:51:58,471
+başlayacak olsam diğer notlara
+
+703
+01:51:58,471 --> 01:52:00,611
+ne kadar kolay gidebilirim o sosyal
+
+704
+01:52:00,611 --> 01:52:01,532
+network üzerinde
+
+705
+01:52:01,532 --> 01:52:04,032
+yani closeness durumu
+
+706
+01:52:04,032 --> 01:52:05,472
+bunu da yakalayamıyor
+
+707
+01:52:05,472 --> 01:52:08,351
+mesela buraya baktığımız vakit
+
+708
+01:52:08,351 --> 01:52:18,631
+Şuradaki oyuncak örnekte burada iki ortadaki not aslında önemli bir not.
+
+709
+01:52:19,291 --> 01:52:28,532
+Betweenness centralitesi yüksek bir not ama degree centralite diyor ki bu ortadaki not onun hemen bir yanındaki notlardan daha düşük öneme sahip.
+
+710
+01:52:28,531 --> 01:52:44,591
+Aslında bu tam ortada çok sayıda ikilinin şurada 3 çarpı 3 9 tane farklı ikilinin konuşma yolu üzerinde ama ona rağmen önem değeri düşük.
+
+711
+01:52:46,431 --> 01:52:51,311
+Mesela bu şuradaki alttaki oyuncak network'te ortadaki not.
+
+712
+01:52:51,391 --> 01:52:55,431
+Ortadaki nottan başlayarak diğer notlara kolayca ulaşabiliyorum aslında.
+
+713
+01:52:55,431 --> 01:53:09,672
+Ama bu yakınlık metriğini yakalayamadığı için degree centrality bunun önem değerini bunun bir yanındaki arkadaşlarının önem değeriyle eşit tutmuş.
+
+714
+01:53:09,812 --> 01:53:13,051
+Ama aslında bunun önem değerinin daha yüksek olması gerekir.
+
+715
+01:53:14,411 --> 01:53:15,512
+Bu örneği vermiştim.
+
+716
+01:53:15,512 --> 01:53:25,872
+Buradaki orkut aslında degreesine bakılacak olursa degreesi yüksek ama bitmeğiniz ve closeness metrikleri açısından düşük bir not.
+
+717
+01:53:28,232 --> 01:53:32,012
+Evet bitmeğiniz centralite bunu daha önce göstermiştim.
+
+718
+01:53:32,112 --> 01:53:41,092
+Burada x'in y'ye göre önem değeri daha yüksek çünkü x dört tane farklı ikilinin konuşma yolu üzerinde.
+
+719
+01:53:41,092 --> 01:53:48,532
+Y ise eğer Y üzerinden gitmeyi tercih edecek olursam 3 tane farklı ikilinin konuşmaları bu üzerinde.
+
+720
+01:53:54,547 --> 01:54:10,607
+Okey. Hani buraya bakacak olursam yine bitwindness bakış açısı açısından hani X kaç tane ikilinin konuşma yolu önünde?
+
+721
+01:54:11,367 --> 01:54:14,728
+Şu not X üzerinden giderek şu iki notla konuşacak.
+
+722
+01:54:14,867 --> 01:54:16,148
+İki tane ikili olmuş oldu.
+
+723
+01:54:16,267 --> 01:54:19,367
+Şu not X üzerinden giderek şu iki notla konuşmuş an.
+
+724
+01:54:19,487 --> 01:54:23,067
+Yani X dört tane farklı ikilinin konuşma yolu üzerinde.
+
+725
+01:54:23,067 --> 01:54:30,147
+Peki Y'yi düşündüğüm zaman Y ise şuradaki not şuradaki üç notla konuşacak Y üzerinden.
+
+726
+01:54:30,287 --> 01:54:33,107
+Dolayısıyla üç tane farklı ikilinin konuşma yolu üzerinde.
+
+727
+01:54:33,228 --> 01:54:41,487
+Bu dört tane ikilinin bu üç tane dolayısıyla X'in Y'ye göre daha fazla önemi var Bitfine's açısından.
+
+728
+01:54:44,187 --> 01:54:47,587
+Bitfine's centrality'yi hesaplarken de şu şekilde hesaplıyorum.
+
+729
+01:54:47,587 --> 01:54:59,207
+Diyorum ki bir E nodunun between the centralitiesini hesaplarken E nodu acaba kaç tane ikilinin yolu üzerindedir?
+
+730
+01:55:00,047 --> 01:55:03,927
+Bir de bu değeri de normalize etmem gerekiyor.
+
+731
+01:55:03,927 --> 01:55:19,467
+Bu değeri de normalize ederken bu iki iyi üzerinden konuşma sağlayan bu arkadaşların totaldeki birbiriyle konuşabileceği pet sayısı nedir?
+
+732
+01:55:19,927 --> 01:55:27,227
+Yani iyi üzerinden de gidebilirim ya da eğer alternatifim varsa iyi üzerinden ve diğer yotlardan da gidebilirim.
+
+733
+01:55:27,228 --> 01:55:39,808
+Dolayısıyla bu iki tane nodun konuşma yolları arasında i'nin i üzerinden giderek gerçekleşen kaç tanedir? Bunu hesaplıyorum.
+
+734
+01:55:41,168 --> 01:55:45,228
+Bunun bir örneğini şurada yapabilirim.
+
+735
+01:55:45,908 --> 01:55:55,507
+Mesela buradaki ortadaki notun betweenness centralitisini hesaplayacağım ama bunu normalize etmeden öncelikle hesaplıyorum.
+
+736
+01:55:55,507 --> 01:56:18,607
+Şimdi birinci şundan başlayalım. Bu arkadaşın diğer notlarla kaç tane notla görüşebilir bu? 1, 2, 3, 4. 4 tane notla görüşebilir. 4 tane konuşacağı farklı ikili konuşacağı not için şunun üzerinden gitmek zorunda.
+
+737
+01:56:18,607 --> 01:56:24,908
+Dolayısıyla şuradaki arkadaş dört tane farklı ikilinin konuşma yolu üzerinde.
+
+738
+01:56:25,187 --> 01:56:27,827
+Tamam bunu saydığımıza göre bunu bir kenara koyalım.
+
+739
+01:56:27,928 --> 01:56:29,348
+Artık şu not için şey yapalım.
+
+740
+01:56:29,947 --> 01:56:36,047
+Şimdi bu dört tane bundan dolayı dört tane farklı ikili geliyor da şimdi bunun için konuşalım.
+
+741
+01:56:36,428 --> 01:56:37,367
+Bunu saymıştık.
+
+742
+01:56:37,928 --> 01:56:41,428
+Bunun konuşabileceği üç tane kaldı.
+
+743
+01:56:41,867 --> 01:56:44,967
+Bu üç tane ile konuşabilmesi demek üç tane ikili demek.
+
+744
+01:56:44,967 --> 01:56:51,208
+Dolayısıyla bundan dolayı üç tane farklı ikiliyle ikilini konuşma yolu üzerinde.
+
+745
+01:56:51,967 --> 01:56:53,848
+Buradan dört tane ikili gelmişti.
+
+746
+01:56:53,928 --> 01:56:55,027
+Buradan üç tane geldi.
+
+747
+01:56:55,447 --> 01:56:56,507
+Şimdi bunu da saydık.
+
+748
+01:56:56,848 --> 01:56:57,928
+Şu arkadaşı sayalım.
+
+749
+01:56:58,928 --> 01:57:03,527
+Bu arkadaş şu notla konuşabilir ve şu notla konuşabilir bunun üzerinden.
+
+750
+01:57:03,708 --> 01:57:05,007
+İki tane de bundan geldi.
+
+751
+01:57:05,727 --> 01:57:06,667
+Bunu da saydık.
+
+752
+01:57:07,128 --> 01:57:11,428
+Bu arkadaş bunun üzerinden şu notla konuşabilir bir tane.
+
+753
+01:57:11,527 --> 01:57:13,187
+Yani dört, üç, iki, bir.
+
+754
+01:57:13,567 --> 01:57:14,527
+Toplamı on.
+
+755
+01:57:14,527 --> 01:57:18,187
+Dolayısıyla kaç tane ikilinin konuşma yolu üzerinde? 10 tane.
+
+756
+01:57:18,787 --> 01:57:24,247
+Peki bu uçtaki arkadaşlar bunlar herhangi birinin konuşma yolu üzerinde mi değil?
+
+757
+01:57:24,507 --> 01:57:29,507
+Dolayısıyla da bitmeymiş centrality değerleri sıfır bu arkadaşlarım.
+
+758
+01:57:32,115 --> 01:57:39,275
+Yine between the centralitiesini normalize etmeden yine hesaplayalım.
+
+759
+01:57:39,635 --> 01:57:41,076
+Mesela C'yi hesaplayalım.
+
+760
+01:57:41,595 --> 01:57:44,635
+C kaç tane ikilinin konuşma yolu üzerinde?
+
+761
+01:57:45,135 --> 01:57:49,136
+Şimdi A nodu C üzerinden kaç tane notla görüşebilir?
+
+762
+01:57:49,235 --> 01:57:50,456
+Şurada iki tane not var.
+
+763
+01:57:50,796 --> 01:57:53,456
+Dolayısıyla iki tane ikili.
+
+764
+01:57:53,755 --> 01:57:55,335
+A, D ve A, E.
+
+765
+01:57:55,335 --> 01:58:01,456
+Demek ki C nodu A'dan dolayı iki tane ikilinin konuşma yolu üzerinde.
+
+766
+01:58:01,456 --> 01:58:04,136
+B nodu C üzerinden kaç tane notla?
+
+767
+01:58:04,435 --> 01:58:05,656
+Şu ikisiyle konuşabilir.
+
+768
+01:58:05,856 --> 01:58:06,935
+Oradan da iki tane geliyor.
+
+769
+01:58:07,435 --> 01:58:11,415
+C toplamda dört tane ikilinin konuşma yolu üzerinde.
+
+770
+01:58:12,016 --> 01:58:13,316
+Mesela B'yi hesaplayalım.
+
+771
+01:58:13,915 --> 01:58:17,235
+B'nin betweenness centralitesi.
+
+772
+01:58:17,556 --> 01:58:20,636
+Burada bir not B üzerinden şu üç notla konuşabilir.
+
+773
+01:58:20,775 --> 01:58:23,755
+Dolayısıyla üç tane ikilinin konuşma yolu üzerinde.
+
+774
+01:58:24,435 --> 01:58:26,836
+A herhangi ikilinin konuşma yolu üzerinde mi?
+
+775
+01:58:26,976 --> 01:58:27,215
+Değil.
+
+776
+01:58:27,476 --> 01:58:28,656
+Aynı şekilde E de değil.
+
+777
+01:58:28,655 --> 01:58:33,115
+Bu şekilde Bitwinnis Central Etis'ini hesaplayabiliyorum bütün notları.
+
+778
+01:58:34,055 --> 01:58:35,855
+Yine buradaki örneğe bakın.
+
+779
+01:58:36,915 --> 01:58:39,335
+Burada ortadaki not.
+
+780
+01:58:39,835 --> 01:58:43,615
+Ortadaki not kaç tane ikilinin konuşma yolu üzerinde?
+
+781
+01:58:43,695 --> 01:58:44,515
+Bunu hesaplayalım.
+
+782
+01:58:45,195 --> 01:58:50,055
+Şimdi bu şuradaki not şuradaki üçlüyle konuşmak için şunun üzerinden gidecek.
+
+783
+01:58:50,195 --> 01:58:54,235
+Dolayısıyla şuradaki not için üç tane ikili var.
+
+784
+01:58:54,836 --> 01:58:56,295
+Şu, şu, şu.
+
+785
+01:58:57,016 --> 01:59:01,575
+Şuradaki not, şuradaki notlarla konuşmak için şuradaki notun üzerinden gidecek.
+
+786
+01:59:01,696 --> 01:59:03,455
+Dolayısıyla bundan da 3 geliyor.
+
+787
+01:59:03,455 --> 01:59:07,995
+Yani şunla konuşabilir, şunla konuşabilir, şunla konuşabilir.
+
+788
+01:59:08,136 --> 01:59:09,075
+Ne yaptı? 6 etti.
+
+789
+01:59:09,675 --> 01:59:13,056
+Şuradaki not, şuradaki not üzerinden yine 3 tane notla konuşabilir.
+
+790
+01:59:13,535 --> 01:59:14,955
+Dolayısıyla buradan da 3 geldi.
+
+791
+01:59:15,455 --> 01:59:19,916
+Toplamda bu arkadaşın between the centrality 9.
+
+792
+01:59:21,476 --> 01:59:23,035
+Mesela şu noda bakalım.
+
+793
+01:59:23,035 --> 01:59:30,035
+Şu not, the between the centrality'si, bu arkadaş bu not üzerinden şu dört notla konuşabilir.
+
+794
+01:59:30,735 --> 01:59:31,855
+Buradan dört geldi.
+
+795
+01:59:32,355 --> 01:59:35,075
+Şu arkadaş bu not üzerinden şu dört notla konuşabilir.
+
+796
+01:59:35,215 --> 01:59:36,175
+Oradan dört geldi.
+
+797
+01:59:36,635 --> 01:59:37,976
+Toplamda sekiz diyoruz.
+
+798
+01:59:45,235 --> 01:59:59,095
+Mesela bu örnek önemli. Bunu iyi takip edin. Mesela burada yine bitkini sentraliteyi hesaplıyorum normalize etmeden. Şimdi A herhangi ikilinin yolu üzerinde mi değil? Sıfır zaten.
+
+799
+01:59:59,095 --> 02:00:20,815
+Şimdi B'ye bakalım. B hangi ikililerin yolu üzerinde? Şimdi baktığım vakit A şuradaki 3 notla konuşacak değil mi? B üzerinden şu 3 notla konuşacak.
+
+800
+02:00:20,815 --> 02:00:31,295
+Dolayısıyla 3 oradan geliyor. Yani A, B üzerinden şu 3 nokta konuşulacak. Ama burada 3,5 yazıyor. Bunun buçuğu nereden geliyor?
+
+801
+02:00:32,655 --> 02:00:46,715
+Dikkat edin. C ve D, B üzerinden konuşabilir. Ama C ve D aynı zamanda diğer bir alternatifi de var. C ve D konuşmak isterlerse şu alternatif yol üzerinden de konuşabilirler.
+
+802
+02:00:46,715 --> 02:01:08,335
+dolayısıyla ne yaptım? C ve D ikilisinden dolayı gelen ağırlığı ikiye böldüm. Şu tekrardan bitmeyeyim de centrality şeyine dönelim. Ne demiştim? Bir nodun üzerinden kaç tane ikili geçiyor?
+
+803
+02:01:08,335 --> 02:01:17,435
+bunu paya yazıyordum. Payda da ise bu ikililerin toplamda konuşabileceği yol sayısını yazıyordum.
+
+804
+02:01:17,435 --> 02:01:33,275
+Değil mi? Tekrardan buraya dönüyorum. Dikkat edin. Bu ikilinin B üzerinden konuşabileceği yol sayısı 1.
+
+805
+02:01:33,276 --> 02:01:46,356
+toplamda bu ikinin konuşabileceği yol sayısı ise 2. Ne yaptım? 1 bölü 2 yani 0.5 C bölü D'den 0.5 geldi.
+
+806
+02:01:47,075 --> 02:02:02,995
+Dolayısıyla ondan dolayı burada 3.5 var. Şurada A nodu şu B üzerinden şu 3 tane farklı yol ile, farklı arkadaş ile konuşabiliyor.
+
+807
+02:02:02,995 --> 02:02:20,055
+dolayısıyla oradan da ne yaptım? 3 geldi. Peki E'nin değerini konuşalım. E'nin değerini between-ish centralitiesine bakalım. E'nin between-ish centralitiesine bakarken E hangi ikilinin arasında? C ve D.
+
+808
+02:02:20,055 --> 02:02:48,955
+ama C ve D arasında birden fazla konuşma şey var, iki tane var. Dolayısıyla C ve D arasındaki konuşma şey bir tane petin üzerinde E. Dolayısıyla payda bir var ama payda değilse C ve D arasında iki tane pet olduğu için ikiye bölüyorum. Bir bölü iki, 0.5.
+
+809
+02:02:50,055 --> 02:02:54,195
+Ok, az önceki konuştuğumuz konu
+
+810
+02:02:58,292 --> 02:03:10,331
+Şimdi burada Bitwingli centrality metriyine dayalı olarak bir sosyal network analizi çıkartmışım. Yani bu şekle baktığınız vakitte
+
+811
+02:03:12,372 --> 02:03:39,311
+not büyüklüğü fazla olan notlar daha fazla ikililerin arasında olan notlar. Hani bakacak olursanız şurada, şuradaki kırmızıyla işaretlenmiş olan notlar daha fazla ikililerin arasında olan notlar. Bunların zaten büyüklükleri de biraz daha şey diğerlerine göre fazla.
+
+812
+02:03:39,311 --> 02:03:59,891
+Demek ki ben bir sosyal network analizi raporunu oluştururken yani böylesi bir görselleştirmeyi oluştururken Bitmey'in centraliteye dayalı oluşturacak olursam çok sayıda nodun arasında olan nodlar daha önemli gözükecektir
+
+813
+02:03:59,892 --> 02:04:17,492
+Şimdi bu grafiğe bakıp şu soruyu yanıtlayalım. Yüksek betweenness değerine sahip olan ama düşük degree değerine sahip olan notu soruyorum. Siz buna yanıt verin. Buna yanıtınız ne olurdu?
+
+814
+02:04:22,484 --> 02:04:34,063
+Yani bu grafiğe baktığınızda yüksek betweenness değerine sahip ama düşük degree, centrality degree değerine sahip olan not hangi nottur?
+
+815
+02:04:42,452 --> 02:04:43,831
+G gibi yani.
+
+816
+02:04:45,131 --> 02:05:03,212
+Evet. Neden G? G'ye baktığım zaman G kaç? Şurada 6 tane not var. Bu 6 tane not şuradaki 5 notla konuşacak. Dolayısıyla 6 kere 5, 30 tane ikilinin konuşma yolu üzerinde. Aynı zamanda centrality degree değeri 2.
+
+817
+02:05:03,212 --> 02:05:12,911
+H'ye bakalım. H burada 4 tane var. Burada da 7 tane var. 7 kere 4, 28. 28 tane ikilinin konuşma yolu üzerinde.
+
+818
+02:05:13,952 --> 02:05:25,931
+Degree centralisi 2. Yani G 30 tane ikili, H 28 tane. Dolayısıyla G en yüksek bitmin list değeri ve en düşük loader'ye sahip olan not diyebiliriz.
+
+819
+02:05:25,931 --> 02:05:38,511
+Şimdi bir de bu soruyu yanıtlayın. Burada da düşük bitfinis değeri olan ama yüksek degreye sahip olan not ya da notları söyleyelim.
+
+820
+02:05:53,587 --> 02:06:15,087
+Evet, burada baktığım zaman bitviniz değeri düşük olan şu arkadaşlar mesela A, B, C, D, E, F bunlar herhangi bir ikilinin arasındalar mı? Değiller. Çünkü direkt kendileri birbirleriyle konuşabiliyorlar değil mi? Konuşabilmek için herhangi bir ikilinin arasında değiller.
+
+821
+02:06:15,087 --> 02:06:24,087
+aynı zamanda bunların degree centralitesi de yüksek. Yani F'nin 1, 2, 3, 4, 5, A'nın 5, E'nin 5.
+
+822
+02:06:25,167 --> 02:06:32,887
+Dolayısıyla şu A, B, C, D, E, F bunların hepsinin degree centralite değeri yüksek.
+
+823
+02:06:33,287 --> 02:06:36,407
+Aynı zamanda between the centralite değeri düşük.
+
+824
+02:06:41,587 --> 02:07:05,707
+Bir diğer biz ne dedik? Yani degree centrality dedik, betweenness centrality dedik, bir de closeness centrality dedik. Bir diğer centrality metriyi closeness centrality. Bu da bir not bir network içerisinde diğer notları ortalama da ne kadar yakın? Bunun önemini ifade eden bir metrik.
+
+825
+02:07:05,707 --> 02:07:13,147
+Mesela buraya baktığınız vakit, mesela böylesi bir oyuncak sosyal network üzerinde mor renkli nodu düşünelim.
+
+826
+02:07:14,047 --> 02:07:23,207
+Şimdi bu mor renkli nodu degree centrality metriğini kullanacak olursanız, bu mor renkli nodun önem değeri düşük olur.
+
+827
+02:07:24,067 --> 02:07:25,247
+Çünkü bir tane linki var.
+
+828
+02:07:27,628 --> 02:07:34,067
+Yine şey between the centrality metriğini kullanarak bakacak olursanız bu nodun önem değeri düşük olur.
+
+829
+02:07:34,067 --> 02:07:41,827
+Ama closeness centralitometri açısından bakacak olursanız bu nodun önem değeri çok yüksek.
+
+830
+02:07:42,567 --> 02:07:44,087
+Bunu şu şekilde düşünebilirsiniz.
+
+831
+02:07:44,247 --> 02:07:47,007
+Seni bir genel müdürün danışmanını düşünün.
+
+832
+02:07:47,907 --> 02:07:55,727
+Genel müdürün danışmanı genel müdürle istediği zaman konuşma şeyine sahip.
+
+833
+02:07:55,827 --> 02:08:00,047
+Dolayısıyla genel müdürü etkileme yeteneğine sahip.
+
+834
+02:08:00,948 --> 02:08:05,247
+Dolayısıyla genel müdürün danışmanı aslında çok önemli bir rol.
+
+835
+02:08:06,247 --> 02:08:14,028
+Ama genel müdürün danışmanı şirkette çalışan insanlarla çok etkileşim halinde olan bir kişi değil.
+
+836
+02:08:14,607 --> 02:08:17,907
+O yüzden de bunun between the centralitiesi düşük olacaktır.
+
+837
+02:08:18,787 --> 02:08:22,888
+Yine aynı şekilde genel müdürün danışmanı dışarıdan gelen bir kişi olduğu için
+
+838
+02:08:22,887 --> 02:08:31,267
+şirkette çalışanlar arasında işte şey tanışıklık derecesi düşük olabilir.
+
+839
+02:08:31,727 --> 02:08:34,807
+Dolayısıyla centrality degreesi de düşük olacaktır.
+
+840
+02:08:34,807 --> 02:08:42,827
+Ama o kişinin direkt genel müdüre ulaşma şeyi olduğu için ve genel müdürü etkileme, yönlendirme imkanı olduğu için
+
+841
+02:08:42,827 --> 02:08:46,147
+onun önem derecesinin yine büyük olması gerekir.
+
+842
+02:08:46,967 --> 02:08:48,787
+Closedness centrality bunu yakalıyor.
+
+843
+02:08:48,787 --> 02:08:57,187
+Şimdi closing centrality'yi hesaplarken de şuradaki metriyi kullanıyoruz.
+
+844
+02:08:57,187 --> 02:09:11,687
+Diyoruz ki bir nodun diğer bütün nodlara olan uzaklıklarının toplamını buluyoruz.
+
+845
+02:09:11,687 --> 02:09:17,587
+bir bölü bu uzaklıklar toplamına biz ne diyoruz?
+
+846
+02:09:17,647 --> 02:09:19,147
+Closed and centralized diyoruz.
+
+847
+02:09:20,247 --> 02:09:24,787
+Bunu normalize etmek için de ne yapıyoruz?
+
+848
+02:09:24,887 --> 02:09:27,107
+Bu değeri eneksi veriliyoruz.
+
+849
+02:09:27,167 --> 02:09:29,727
+Yani nihai formülümüz hani şuna dönüşmüş oluyor.
+
+850
+02:09:33,207 --> 02:09:38,647
+Bir nodun diğer bütün nodları olan uzaklıklarının toplama bölü
+
+851
+02:09:38,647 --> 02:09:41,547
+eneksi birin eksi birinci kuvvetini alıyoruz.
+
+852
+02:09:41,687 --> 02:09:43,927
+Bu bana Closed Centrality veriyor.
+
+853
+02:09:44,587 --> 02:09:48,327
+Mesela burada A'nın Closed Centrality'sini hesaplayacağım.
+
+854
+02:09:48,867 --> 02:09:49,787
+Bunun için ne yapıyorum?
+
+855
+02:09:49,947 --> 02:09:52,707
+A'nın diğer bütün notları olan uzaklıklarını bulacağım.
+
+856
+02:09:52,987 --> 02:09:59,087
+1, 1, 2, 1, 2, 3, 1, 2, 3, 4.
+
+857
+02:09:59,847 --> 02:10:03,327
+B'ye olan uzaklığı, C'ye, D'ye, E'ye olan uzaklığı.
+
+858
+02:10:03,427 --> 02:10:04,567
+Bunların hepsini yazdım.
+
+859
+02:10:06,507 --> 02:10:08,107
+Bunu normalize edeceğim.
+
+860
+02:10:08,307 --> 02:10:10,527
+Totalde kendisi dışında kaç tane not var?
+
+861
+02:10:10,528 --> 02:10:13,308
+4'e böldüm. Bunun eksi birinci
+
+862
+02:10:13,308 --> 02:10:14,988
+kuvveti. Bu da bana bunun
+
+863
+02:10:14,988 --> 02:10:17,388
+closeness centralitisini verdi. 0.4.
+
+864
+02:10:18,287 --> 02:10:19,028
+Okey.
+
+865
+02:10:19,848 --> 02:10:21,227
+Ben hiç closeness
+
+866
+02:10:21,227 --> 02:10:23,188
+centralitisini hesaplamadan da
+
+867
+02:10:23,188 --> 02:10:24,688
+bu grafiğe bakıp hani burada
+
+868
+02:10:24,688 --> 02:10:27,168
+hangilerinin daha ortada
+
+869
+02:10:27,168 --> 02:10:28,948
+daha diğerlerine kolay
+
+870
+02:10:28,948 --> 02:10:31,248
+ulaşabilir bir noktada olduğunu görebilirim.
+
+871
+02:10:31,867 --> 02:10:33,168
+Bu oyuncak
+
+872
+02:10:33,168 --> 02:10:34,727
+örneğe baktığım zaman C.
+
+873
+02:10:35,412 --> 02:10:50,931
+öyle bir noktada ki diğer notlara kolayca ulaşabilir noktada. Dolayısıyla diyorum ki, closeness centralitiesi C'nin daha büyük olmalı. Ondan sonra B'ninkiler gelir, ondan sonra da A ve E'n'e 2 gelir diyebilirim. Ama hesaplaması da bu şekilde oluyor.
+
+874
+02:10:50,931 --> 02:11:02,592
+mesela buraya baktığım vakit closeness centralitiesi burada ortadaki nodun tabii ki closeness centralitiesi ne olacak? 1 olacak.
+
+875
+02:11:02,592 --> 02:11:10,971
+İşte normalize etmeden bakacak olursam daha doğrusu bu normalize edilmiş şekli mesela birden şuna gittim.
+
+876
+02:11:10,971 --> 02:11:35,311
+mesafe 1, 2, 3, 4, 5. Yani birden totalde yandaki notlara gitme mesafelerinin toplamı 5. Toplamda 6 not var. 6-1, 5. 5 bölü 5, 1. Dolayısıyla ortadaki notun closeness centralitesi 1. Bu şekilde uç noktadaki arkadaşların da closeness centralitesini hesaplayabiliyorum.
+
+877
+02:11:35,311 --> 02:11:48,772
+Şimdi bu grafiğe baktığım zaman ortadaki nottan diğer notlara kolayca gidebileceğimi görüyorum zaten. Dolayısıyla ortadaki notun closing centralizisi doğal olarak ne olmalı? Büyük olmalı diye düşünüyorum.
+
+878
+02:11:48,772 --> 02:12:11,691
+ok. Burada da ne yapacağım? İşte bundan diğer notlara mesafelerin toplamını bulacağım. İşte bir mesafe, iki mesafe, iki mesafe, işte dört, beş buradan geldi. Beş de buradan gelir. On, işte on bölü altının eksi birinci kuvveti o da sıfır nokta altı yapıyor.
+
+879
+02:12:11,691 --> 02:12:14,651
+Bu şekilde Closeless Centrality'yi bulabiliriz.
+
+880
+02:12:16,431 --> 02:12:27,751
+Şimdi mesela bu grafiğe bakalım. Bu grafikte degree centrality yüksek olan ama Closeless Centrality düşük olan bir tane not söyleyeyim bana.
+
+881
+02:12:34,836 --> 02:12:44,756
+sorunuzu yanlış anlamış olabilirim de, closeness'ı yüksek olan ama centrality'si düşük olan neye var?
+
+882
+02:12:44,756 --> 02:12:51,776
+Yok, tam tersi. Yani closeness'ı düşük olacak ama degree centrality'si yüksek olacak. Yani relatifle yüksek olacak.
+
+883
+02:12:57,684 --> 02:13:27,163
+Mesela burada O'yu söyleyebiliriz değil mi? Çünkü O'nun 3 tane şeyi var. Degree centrality'si diğerlerine göre relativli yüksek. Çünkü diğerlerinin ya 2 ya 1 şeyi var. Aynı zamanda close centrality'si de düşük. Çünkü uç noktalarda. Yani bu arkadaştan diğerlerine kolayca gidebilmek bir tık daha zor.
+
+884
+02:13:27,684 --> 02:13:54,684
+Mesela öyle düşünelim. I'nın degree centralitesi çok yüksek. Zaten onu direkt elemem gerekiyor. Closure centralitesi yüksek. Diğer notlara ulaşabileceğim, kolayca ulaşılabilecek bir noktada ama degree centralitesi yüksek. Ama O'nun degree centralitesi relatifli yüksek. Çok yüksek değil ama relatifli yüksek. Ama aynı zamanda diğer notlara ulaşmak için de kötü bir noktada. Yani closeness centralitesi düşük.
+
+885
+02:13:54,684 --> 02:13:55,544
+Düşük.
+
+886
+02:14:00,435 --> 02:14:01,275
+Tamamdır.
+
+887
+02:14:04,735 --> 02:14:21,335
+Şimdi isterseniz yine bir ara verelim. Bir on dakika. Ondan sonra ben yine devam edeceğim. Bu link analizinin ilk bölümünü bitirmek istiyorum bugün. Saat on geçiyor. Yirmi geçe tekrardan bir araya gelelim. Olur mu?
+
+888
+02:14:21,975 --> 02:14:22,575
+Tamam hocam.
+
+889
+02:24:20,724 --> 02:24:43,043
+Evet arkadaşlar, devam edelim. Şimdi link analizi öncesi sosyal network konusunu konuştuk. Şimdi bir saniye şunu öncelikle reddedelim.
+
+890
+02:24:43,043 --> 02:25:05,543
+Evet, şimdi şu ana kadar biz nelerden konuştuk? Sosyal network analizini konuştuk. Bu sosyal network analizini biz web alanında özellikle arama motorlarında nasıl kullanıyoruz?
+
+891
+02:25:05,543 --> 02:25:17,203
+Şimdi biraz ondan bahsedeceğim. Şimdi biz dersin başında girişte de söylediğim gibi arama motorları ilk olarak ortaya çıktığı zaman
+
+892
+02:25:17,203 --> 02:25:31,543
+TF-IDF ve benzerlik cosine similarity, TF-IDF gibi keyword ile doküman arasındaki benzerliğe dayalı yöntemler kullanıyorduk.
+
+893
+02:25:31,543 --> 02:25:47,963
+Bu yöntemlere dayalı olarak bir kelimenin en iyi match ettiği dökümanları similarity değerine dayalı olarak yukarıdan aşağıya sıralandırıp son kullanıcıya gösteriyordu.
+
+894
+02:25:47,963 --> 02:26:10,503
+Ama bu yaklaşım özellikle sayfaların kendilerini göstermek için sonuçlarda yüksek sıralarda göstermek için kendi kontentlerine farklı keywordleri koymaları bu yöntemi kolayca spam edilebilir bir yöntem haline getiriyor
+
+895
+02:26:10,503 --> 02:26:37,244
+Dolayısıyla da 1996'lı yıllarda bu content similarity tabanlı arama motorlarının başarılı olmadığı ortaya çıkınca özellikle link tabanlı yöntemleri kullanaraktan biz popülerite sıralaması nasıl yapabiliriz bunun üzerinde çalışılmaya başlandı.
+
+896
+02:26:37,244 --> 02:26:52,744
+1997 ve 1998 yılları özellikle bu link analizine dayalı olarak popülerite değerlerinin belirlenmesi için önemli yıllar.
+
+897
+02:26:52,743 --> 02:27:08,143
+ilk olarak 97 yılında bu URL'lerin hyperlinklerinin üzerindeki keywordlere dayalı olarak bir tane arama motoruyla ilgili bir patent alınmış.
+
+898
+02:27:08,143 --> 02:27:33,983
+ama esas önemli olan 1997 ve 1998 yıllarında iki tane grup, bir tanesi Cornell'dan, bir tanesi de Stanford'dan bu linklerin birbirine vermiş oldukları, web sayfalarının birbirine vermiş oldukları linklere dayalı olarak sayfaların popülaritelerini belirten iki algoritma çıkartıyorlar.
+
+899
+02:27:33,983 --> 02:27:53,724
+hani 98 yılında birisi Ocak ayında birisi işte Nisan ayında yaptıkları yayını yayınlıyor. Bir tanesi HITS algoritması. HITS daha sonra Yahoo'nun link tabanlı algoritması oluyor. PageRank, PageRank'de daha sonra Google'un link tabanlı algoritması oluyor.
+
+900
+02:27:53,724 --> 02:28:01,304
+Bu iki algoritmanın yaptığı şey aslında notların popülerite değerlerini buluyorlar.
+
+901
+02:28:02,024 --> 02:28:08,804
+Popülerite değerlerini bularaktan notların sıralandırılmasına olanak veren iki tane algoritma.
+
+902
+02:28:13,299 --> 02:28:22,239
+Şimdi biz bu algoritmaların vermiş oldukları sonuçlara bakaraktan ne yapıyoruz?
+
+903
+02:28:22,239 --> 02:28:29,239
+Diyelim ki biz inverted index'te bir tane şey yaptık, bir keyword'ü.
+
+904
+02:28:29,859 --> 02:28:31,959
+Inverted index üzerinde aradık.
+
+905
+02:28:32,400 --> 02:28:39,239
+Inverted index üzerindeki entry diye karşılık gelen o kelimeyi barındıran sayfaların
+
+906
+02:28:39,239 --> 02:28:43,220
+TFI diye değerine göre sıralandırılmış listesini aldık.
+
+907
+02:28:43,299 --> 02:28:52,200
+İşte bu link analizinden çıkartmış olduğumuz bu popülerite değerlerine göre de tekrardan sıralandırıyoruz.
+
+908
+02:28:52,520 --> 02:29:01,779
+Yani hem TF-IDF hem de link analizi sonucuna göre biz sayfaları sıralandırıp son kullanıcıya öyle gösteriyoruz.
+
+909
+02:29:01,779 --> 02:29:12,099
+Şimdi bu konuştuğumuz popülerite yani değerleri sadece sıralandırma için kullanılmıyor.
+
+910
+02:29:12,099 --> 02:29:34,259
+Yani sadece search da kullanılmıyor. Aynı zamanda biz bunu web üzerindeki komüniteleri tespit etmek için de kullanıyoruz. Demek ki biz bu popülerite değerlerini web üzerindeki link analizini ve popülerite değerlerini web üzerindeki sub komüniteleri tespit etmek için de kullanıyoruz.
+
+911
+02:29:34,259 --> 02:29:53,619
+Yine aynı şekilde bu link analizi çalışması az önceki sesyonlarda konuştuğumuz gibi bir önceki dersin bölümlerinde konuştuğumuz gibi e-maillerin analizine de olanak veriyor.
+
+912
+02:29:53,619 --> 02:30:07,020
+Ya da işte elimde free dokümanlar varsa bu free dokümanlar arasındaki unique keywordler arasında ilişkiler kurarak bu ilişki ağını ortaya çıkarmam için de kullanılıyor.
+
+913
+02:30:07,899 --> 02:30:14,840
+Biz daha önceki dört derste sosyal network analizinde şu an gösterdiğim slide'ları konuşmuş olduk.
+
+914
+02:30:14,840 --> 02:30:31,840
+Bir sosyal network analizinin parçası olan aktörleri, ilişkileri, bunlardan ortaya çıkan sosyal network'ün nasıl tanımlanacağını, adjacency matrisi, edge listi, adjacency listi bunların hepsini konuştuk.
+
+915
+02:30:31,839 --> 02:30:43,199
+Ve dedik ki biz dedik bir sosyal network üzerindeki notların önemini belirtmek için centrality metriklerini kullanabiliriz dedik.
+
+916
+02:30:43,599 --> 02:30:49,379
+Buna degree centrality dedik, betweenness centrality dedik bir de closeness centrality dedik.
+
+917
+02:30:51,219 --> 02:30:54,059
+Bunları tekrarlamayacağım.
+
+918
+02:30:54,159 --> 02:31:00,899
+Debre centrality'nin formülünü konuştuk, closeness centrality'yi konuştuk, betweenness centrality'yi konuştuk.
+
+919
+02:31:00,899 --> 02:31:02,639
+bunları. O yüzden geçiyorum
+
+920
+02:31:02,639 --> 02:31:04,579
+burada. Hocam araya girerek
+
+921
+02:31:04,579 --> 02:31:06,759
+şey soruyoruz. Communities
+
+922
+02:31:06,759 --> 02:31:08,379
+diye isimlendirdik ya
+
+923
+02:31:08,379 --> 02:31:10,379
+social network analizde. O
+
+924
+02:31:10,379 --> 02:31:12,239
+unsupervised learning'de
+
+925
+02:31:12,239 --> 02:31:14,099
+cluster kavramını
+
+926
+02:31:14,099 --> 02:31:16,499
+konuşuyorduk. Ona benzer
+
+927
+02:31:16,499 --> 02:31:18,319
+özellikleri var mı o community'leri?
+
+928
+02:31:19,519 --> 02:31:19,899
+Evet.
+
+929
+02:31:20,279 --> 02:31:22,119
+Öyle de düşünelim.
+
+930
+02:31:22,819 --> 02:31:24,759
+Yani analoji kurabilirsin.
+
+931
+02:31:24,939 --> 02:31:26,379
+Aynı şeyler değil ama analoji
+
+932
+02:31:26,379 --> 02:31:28,459
+kurabilirsin. Yani clustering'de biz
+
+933
+02:31:28,459 --> 02:31:30,499
+unsupervised yöntemle
+
+934
+02:31:30,499 --> 02:31:38,979
+bir işte dataset içerisindeki birbirine benzer notları gruplandırmaya çalışıyorduk.
+
+935
+02:31:40,139 --> 02:31:40,359
+Evet.
+
+936
+02:31:41,259 --> 02:31:50,799
+Şimdi ama şeyde ise bu sosyal network analizi üzerinde community discovery dediğimiz şeyde ne yapıyoruz?
+
+937
+02:31:51,399 --> 02:31:56,939
+Sosyal network analizindeki community discovery'de belli metrikler belirliyoruz.
+
+938
+02:31:56,939 --> 02:32:07,259
+Diyoruz ki mesela arkadaş ben sosyal network üzerindeki işte indigrimetriğine dayalı olarak şey yapacağım.
+
+939
+02:32:08,788 --> 02:32:25,968
+sub-community discovery yapacağım. Yani öncelikle metriyi belirtiyorum. Ondan sonra bunu belirttikten sonra insanların birbirine işte vermiş olduğu, almış olduğu linklere dayalı olaraktan sub-communityleri tespit etmeye çalışıyorum.
+
+940
+02:32:25,968 --> 02:32:44,567
+Yani diyelim ki mesela bir büyük network içerisinde alt hani biz şey yapmıştık ya strong component dedik işte weekly connected component dedik, strongly connected component dedik, giant component dedik.
+
+941
+02:32:44,567 --> 02:32:59,447
+Yani birbirine vermiş oldukları link yapılarına göre bunların altındaki strongly connected ya da weakly connected alt community'leri, grupları tespit ediyoruz.
+
+942
+02:32:59,447 --> 02:33:20,288
+Birisi dataset üzerinde birbirine benzer noktaları gruplandırıyor bu clustering. Diğerisi ise network üzerinde birbirine link vermiş ama belirli bir metriye dayalı olarak link vermiş arkadaşların ayırmaya çalışıyor.
+
+943
+02:33:20,288 --> 02:33:21,707
+Bu da community.
+
+944
+02:33:21,707 --> 02:33:23,188
+Top Community teşekkür ederim.
+
+945
+02:33:23,247 --> 02:33:25,487
+Mesela sen sorduğun için söylüyorum.
+
+946
+02:33:25,607 --> 02:33:28,328
+Community Discovery'i nerelerde kullanıyoruz?
+
+947
+02:33:28,328 --> 02:33:40,247
+Mesela biz böyle bir şeyi bir telekom firması için benim araştırma grubum bunun üzerinde churn analizi çalışması yaptı.
+
+948
+02:33:40,707 --> 02:33:41,968
+Onu da nasıl bir şey yaptık?
+
+949
+02:33:43,487 --> 02:33:46,627
+Bir, sub-community'leri tespit ettik.
+
+950
+02:33:47,027 --> 02:33:49,627
+Sub-Community Discovery algoritmaları kullanaraktan.
+
+951
+02:33:49,627 --> 02:33:59,427
+SAP community'yi tespit ettikten sonra bir SAP community içerisindeki insanlar birbirleriyle çok yoğun bir şekilde konuşan insanlar.
+
+952
+02:34:00,147 --> 02:34:11,667
+Eğer bu çok yoğun bir şekilde konuşan insanlardan bir tanesi o telekom şirketini başka bir telekom şirketi için terk ederse
+
+953
+02:34:11,667 --> 02:34:17,747
+o SAP network'teki diğer insanlar da bundan etkilenir.
+
+954
+02:34:17,747 --> 02:34:32,787
+Neden? Çünkü bunlar birbirleriyle çok yakın konuşan arkadaş grubu. Yani birisi işte Turkcell'den Avaya'ya geçecek olursa diğer arkadaşlar da bundan etkilenir varsayımını düşünüyorsun.
+
+955
+02:34:32,787 --> 02:34:47,487
+Dolayısıyla eğer bunların arasından bir tanesi terk etmişse diğerlerinin de churn etmesi yani sistemden ayrılmasını engellemek için henüz daha ayrılmamış arkadaşlara bir takım aksiyonlarla gidiyorsun.
+
+956
+02:34:47,487 --> 02:35:02,907
+mesela indirimler yapıyorsun. Memnun kalabilmesi için bir takım offerlar yapıyorsun. Böylelikle onların terk etme davranışını sistemde kalma davranışına dönüştürmeye çalışıyorsun.
+
+957
+02:35:02,907 --> 02:35:05,407
+Mesela bunun için bir çalışma yaptık.
+
+958
+02:35:06,148 --> 02:35:07,148
+Evet çok güzel bir şey.
+
+959
+02:35:07,148 --> 02:35:23,108
+Şimdi şu ana kadar bir centrality metrikleri üzerinde konuştuk. Yani bir sosyal network üzerinde merkezilik bakış açısı açısından notların önem değerlerine baktık.
+
+960
+02:35:23,107 --> 02:35:49,887
+Şimdi de prestij bakışı açısı açısından bir sosyal network üzerindeki notların önemine bakacağız. Bu da ikinci kategori önemi belirten metrik. Prestiji şu şekilde düşünebilirsiniz, popülarite. Yani ne kadar siz başka insanlar tarafından tercih ediliyorsunuz.
+
+961
+02:35:50,355 --> 02:36:09,815
+Centrality başka bir şeydi. Centrality tercih edilme bakış açısıyla değil de siz ne kadar o network üzerinde ortada bir noktadasınız. Ya closeness, ya betweenness, ya da degree centrality açısından da. Ama Prestige o network içerisinde ne kadar popüler bir insansınız. Hani onun peşinde.
+
+962
+02:36:09,815 --> 02:36:21,155
+Dolayısıyla da Prestige Network'ü arkadaşlar daha çok neyle ilgilenir? Inlink'lerle ilgilenir.
+
+963
+02:36:23,075 --> 02:36:26,795
+Centralitimetri ise daha çok outlink'lerle ilgilenir.
+
+964
+02:36:26,795 --> 02:36:32,716
+Şey paylaşım durdu. Buradaki network sıkıntı var. Bir saniye şimdi gelecek.
+
+965
+02:37:27,476 --> 02:37:36,595
+Demek ki Prestige neymiş? Ne kadar link aldığımızla ilgilenen bir metrikmiş.
+
+966
+02:37:36,595 --> 02:37:45,996
+Şimdi bu Prestige metriğinin de farklı üç tane şeyi var. Bir tanesi degree Prestige, aynı degree Centrality gibi.
+
+967
+02:37:46,576 --> 02:37:56,575
+Hesaplaması da ona benziyor. Bir nodun degree Prestige'ini hesaplarken bu sefer bir noda olan in linklerin sayısı, bölü,
+
+968
+02:37:56,575 --> 02:37:59,255
+en eksi bir yani kendisi dışında
+
+969
+02:37:59,255 --> 02:38:00,455
+kalan notların sayısı.
+
+970
+02:38:02,035 --> 02:38:03,255
+Bu degree
+
+971
+02:38:03,255 --> 02:38:05,275
+prestige. İkincisi
+
+972
+02:38:05,275 --> 02:38:06,635
+proximity prestige.
+
+973
+02:38:07,435 --> 02:38:09,095
+Bu da bir noda
+
+974
+02:38:09,095 --> 02:38:10,535
+diğer not
+
+975
+02:38:10,535 --> 02:38:12,115
+bir noda
+
+976
+02:38:12,115 --> 02:38:14,875
+ulaşabilir diğer notlardan
+
+977
+02:38:14,875 --> 02:38:18,976
+bu noda
+
+978
+02:38:18,976 --> 02:38:21,555
+ulaşabilecek olanların
+
+979
+02:38:21,555 --> 02:38:23,115
+ortalamadaki
+
+980
+02:38:23,115 --> 02:38:25,875
+toplam
+
+981
+02:38:25,875 --> 02:38:28,175
+ağırlığını hesapladığımız
+
+982
+02:38:28,175 --> 02:38:29,995
+bir metrik. Yani
+
+983
+02:38:29,995 --> 02:38:32,196
+degree prestige
+
+984
+02:38:32,196 --> 02:38:34,415
+bir noda direkt olan
+
+985
+02:38:34,415 --> 02:38:36,015
+notların
+
+986
+02:38:36,015 --> 02:38:37,815
+vermiş olduğu ağırlıkla
+
+987
+02:38:37,815 --> 02:38:40,156
+hesaplanıyor. Yani bir noda
+
+988
+02:38:40,156 --> 02:38:42,095
+verilmiş olan direkt linklerin
+
+989
+02:38:42,095 --> 02:38:44,155
+sayısı böyle
+
+990
+02:38:44,155 --> 02:38:46,196
+en eksi bir. Burada ise
+
+991
+02:38:46,196 --> 02:38:48,215
+bir noda hem
+
+992
+02:38:48,215 --> 02:38:49,915
+direkt link vermiş hem de
+
+993
+02:38:49,915 --> 02:38:51,815
+bu noda direkt link vermemiş ama
+
+994
+02:38:51,815 --> 02:38:53,655
+başka notlar üzerinden bu noda
+
+995
+02:38:53,655 --> 02:38:55,155
+ulaşabilir notların
+
+996
+02:38:55,156 --> 02:38:58,156
+vermiş olduğu ağırlıkla bulunan
+
+997
+02:38:58,156 --> 02:38:59,776
+bir metrik. Şimdi
+
+998
+02:38:59,776 --> 02:39:01,935
+bakalım. Şimdi daha iyi anlayacaksınız.
+
+999
+02:39:02,995 --> 02:39:03,355
+Degree
+
+1000
+02:39:03,355 --> 02:39:05,675
+proximity prestiji
+
+1001
+02:39:05,675 --> 02:39:07,196
+ne şekilde buluyoruz?
+
+1002
+02:39:07,675 --> 02:39:09,715
+Proximity prestiji bulurken de
+
+1003
+02:39:09,715 --> 02:39:11,715
+pi'de yukarıda
+
+1004
+02:39:12,836 --> 02:39:13,916
+bir
+
+1005
+02:39:13,916 --> 02:39:15,035
+i noduna
+
+1006
+02:39:15,035 --> 02:39:17,556
+ulaşabilir o network'te
+
+1007
+02:39:17,556 --> 02:39:19,636
+linkleri takip ederek ulaşabilir
+
+1008
+02:39:19,636 --> 02:39:21,276
+olan nodların sayısı
+
+1009
+02:39:21,276 --> 02:39:23,395
+bunu
+
+1010
+02:39:23,395 --> 02:39:25,815
+en eksi bire bölüyoruz normalize ediyoruz.
+
+1011
+02:39:25,976 --> 02:39:28,135
+Yani toplamdaki notlar içerisinde
+
+1012
+02:39:28,135 --> 02:39:29,656
+i'ninci noda
+
+1013
+02:39:29,656 --> 02:39:31,556
+linkleri takip ederek
+
+1014
+02:39:31,556 --> 02:39:33,235
+ulaşabilir notların sayısı
+
+1015
+02:39:33,235 --> 02:39:35,515
+aşağıda da
+
+1016
+02:39:35,515 --> 02:39:37,056
+i'ninci noda
+
+1017
+02:39:37,056 --> 02:39:39,836
+linkleri takip ederek
+
+1018
+02:39:39,836 --> 02:39:41,276
+ulaşabilir notların
+
+1019
+02:39:41,276 --> 02:39:43,095
+ortalamadaki
+
+1020
+02:39:43,095 --> 02:39:45,955
+uzaklıklarının toplamı
+
+1021
+02:39:45,955 --> 02:39:47,595
+bölü bu
+
+1022
+02:39:47,595 --> 02:39:49,395
+ulaşabilir notların sayısı.
+
+1023
+02:39:50,235 --> 02:39:51,076
+Aşağıda yani
+
+1024
+02:39:51,076 --> 02:39:52,955
+payda tarafında
+
+1025
+02:39:52,955 --> 02:39:55,675
+bu ortalama uzaklığı vermiş oluyorum.
+
+1026
+02:39:55,776 --> 02:39:59,955
+Ulaşabilir olan notların ortalama uzaklığını vermiş oluyorum.
+
+1027
+02:40:01,075 --> 02:40:07,135
+PY'de ise ulaşabilir olan notların tüm notlar içerisindeki oranını vermiş oluyorum.
+
+1028
+02:40:07,696 --> 02:40:14,315
+Yani hesaplaması aslında closeness'a benziyor.
+
+1029
+02:40:14,995 --> 02:40:16,595
+Proximity Prestige.
+
+1030
+02:40:16,595 --> 02:40:25,935
+Sadece buradaki hesapta, buradaki formülde ulaşabilir olan notları dikkate alarak ben proximity prestiji hesaplıyorum.
+
+1031
+02:40:30,164 --> 02:40:32,843
+Üçüncü metrem ise renk prestij.
+
+1032
+02:40:32,843 --> 02:40:53,743
+Şimdi hem degree prestij hem de proximity prestij link veren notların her birisinin vermiş olduğu linklerin ağırlığını bir olarak kabul eder.
+
+1033
+02:40:54,364 --> 02:41:00,243
+Yani diyelim ki mesela bir noda üç tane farklı not link vermiş olsun.
+
+1034
+02:41:00,704 --> 02:41:05,143
+Bu üç tane nodun vermiş olduğu linklerin her birisini bir puan sayar.
+
+1035
+02:41:05,263 --> 02:41:06,623
+Yani bir sayar.
+
+1036
+02:41:07,483 --> 02:41:12,283
+Hem degree hem prestige hem proximity prestige.
+
+1037
+02:41:12,903 --> 02:41:15,143
+Ama gerçek hayatta bu böyle olmuyor.
+
+1038
+02:41:17,083 --> 02:41:21,443
+Örneğin mesela bize referans veren kişilerin düşünün.
+
+1039
+02:41:21,443 --> 02:41:26,823
+bir genel müdürden bir referans aldığımız zaman o referansın önem değeri daha yüksektir.
+
+1040
+02:41:27,504 --> 02:41:34,783
+Ya da işte bir co-worker'dan beraber çalıştığınız bir çalışma arkadaşınızdan almış olduğunuz referansın değeriyle
+
+1041
+02:41:34,783 --> 02:41:42,903
+genel müdürden aldığınız referansın değerini karşılaştırdığınızda genel müdürün referans değeri daha yüksek olacaktır.
+
+1042
+02:41:44,403 --> 02:41:49,763
+Dolayısıyla da bunu yansıtabilmek için biz ne diyoruz?
+
+1043
+02:41:49,763 --> 02:42:01,763
+Çünkü herkesin network üzerindeki önemi kadar vermiş olduğu link de bu önemi bir sonraki noda yansıtabilmesi gerekmekte.
+
+1044
+02:42:02,664 --> 02:42:05,683
+Bunu da sağlayan metrik renk prestij metriği.
+
+1045
+02:42:05,783 --> 02:42:12,963
+Zaten bunu da daha sonra renk prestiji page rank metriğinde, page rank'i anlatırken konuşuyor olacağız.
+
+1046
+02:42:12,963 --> 02:42:28,963
+Bu renk prestij metriğini konuşurken de şu şekilde konuşuyoruz. Ben ininci bir nodun şu anda renk prestij değerini hesaplıyorum.
+
+1047
+02:42:28,963 --> 02:42:42,623
+Renk prestij değerini hesaplarken diyorum ki bu i'ninci noda link veren notlar birden n'e kadar olabilir.
+
+1048
+02:42:43,723 --> 02:42:49,363
+Bu eğer link vermişse bunun kat sayısı 1 olacaktır.
+
+1049
+02:42:50,083 --> 02:42:53,104
+Link vermemişse buradaki kat sayı 0 olacaktır.
+
+1050
+02:42:53,104 --> 02:42:59,464
+Yani bu A1İ, A2İ, ANİ şuradaki değerler 1 ya da 0 değerleri.
+
+1051
+02:42:59,904 --> 02:43:04,723
+Eğer bir nolu not i'ye link vermişse şu 1 olacaktır.
+
+1052
+02:43:05,143 --> 02:43:08,443
+Bir nolu not i'ye vermemişse şu 0 olacaktır.
+
+1053
+02:43:09,443 --> 02:43:17,544
+Ve aynı şekilde birinci nodun renk prestij değeri, kadarlık bir değeri ne yapıyorum?
+
+1054
+02:43:18,363 --> 02:43:20,604
+İ'ninci nodun renk prestijine ekliyorum.
+
+1055
+02:43:21,604 --> 02:43:24,643
+İkinci nodun renk prestij kadar değerini ne yapıyorum?
+
+1056
+02:43:24,863 --> 02:43:27,264
+İğinin renk prestij değerini ekliyorum.
+
+1057
+02:43:27,264 --> 02:43:29,244
+Yani yapmış olduğum şey ne?
+
+1058
+02:43:30,083 --> 02:43:38,824
+Bir önceki notların renk prestij değerlerinin toplamını bir sonraki noda yansıtıyorum.
+
+1059
+02:43:40,024 --> 02:43:45,884
+Bu ininci noda verilmiş olan linkler için bunu tabii ki gerçekleştiriyorum.
+
+1060
+02:43:46,643 --> 02:43:50,524
+İşte bu konuştuğumuz şey ise renk prestij.
+
+1061
+02:43:50,604 --> 02:44:06,443
+Üç tane Prestige metriyi konuştuk. Bir tanesi Degree Prestige. Bu Degree Centrality'ye benziyordu. İkinci konuştuğumuz Proximity Prestige. Bu Closeness Centrality'ye benzeyen bir metrikti.
+
+1062
+02:44:06,443 --> 02:44:16,884
+sadece buradaki bakış açısı ulaşabilir, linkleri takip ederek ulaşabilir olan notların vermiş olduğu.
+
+1063
+02:44:17,407 --> 02:44:39,487
+katkı değerine bakaraktan proximity prestiji hesaplıyorduk. Üçüncüsü ise her nodun network üzerindeki önem değeri farklıdır. Dolayısıyla da bu önem değerlerini bir link vermiş oldukları bir sonraki noda yansıtmam gerektiği bakış açısıyla renk prestij metriğini hesaplıyorum.
+
+1064
+02:44:39,487 --> 02:44:50,527
+Bu renk prestij metriğini hesaplarken de her nodun renk prestij değerini bir sonraki nodun renk prestij değerini hesaplarken kullanıyorum.
+
+1065
+02:44:50,527 --> 02:44:59,027
+Burada yapmış olduğum şuradaki görmüş olduğunuz formülün kısaltılmış şekli arkadaşlar şuradaki formül.
+
+1066
+02:44:59,027 --> 02:45:17,027
+Bu formül bir önceki seviyede yani link yapısında bir önceki link veren arkadaşların PageRank değerleriyle daha doğrusu Renk Prestige değerleriyle
+
+1067
+02:45:17,027 --> 02:45:32,128
+bu adjacency matrisin, transposesinin çarpımı bir sonraki nodun PageRank değerini verdiğini gösteriyor.
+
+1068
+02:45:32,128 --> 02:45:48,888
+buradaki görmüş olduğunuz formül denkleme biz eigensistem denklemi diyoruz ve bu eigensistemi çözmek için de power iteration denilen bir tane yöntem var linear algebra'dan.
+
+1069
+02:45:49,268 --> 02:46:02,007
+Bunu konuşacağız önümüzdeki hafta. Bu power iteration yöntemini konuşacağız ve bu renk prestije benzeyen PageRank algoritmasını konuşturacağız.
+
+1070
+02:46:02,128 --> 02:46:17,687
+Demek ki PageRank algoritmasının temeli bu renk prestij metriğine dayanıyormuş ve bunu çözmek için de şu denklemi çözmek için de öncelikle bunu bir aygın sistem denklemi olarak belirtiyoruz.
+
+1071
+02:46:18,148 --> 02:46:26,407
+Bunu belirttikten sonra da linear algebra'nın bu denklemi çözmek için önermiş olduğu power iteration yöntemini kullanarak bunu çözeceğiz.
+
+1072
+02:46:26,407 --> 02:46:36,027
+Gelecek hafta konuşacağımız diğer bir konu ise co-citation ve bibliografik coupling metotlarını konuşacağız.
+
+1073
+02:46:36,027 --> 02:46:49,247
+Bu iki metot da yine biz sosyal network analizi yaparken iki not arasındaki benzerliği ortaya koymak için kollandığımız metrikler,
+
+1074
+02:46:49,247 --> 02:47:04,488
+özellikle bu Authenticate ya da işte Urkund gibi birbirine benzer paperları tespit eden sistemlerin yaygın kullandığı metrikler bunlar.
+
+1075
+02:47:04,488 --> 02:47:09,927
+Yani sadece içerisindeki kontentlerin benzerliğine bakmıyor bu araçlar.
+
+1076
+02:47:09,927 --> 02:47:20,447
+aynı zamanda bu yayınların birbirlerine vermiş oldukları linkleri analiz ederekten bu yayınların birbirine ne kadar benzer olduğunu tespit edebiliyor.
+
+1077
+02:47:20,607 --> 02:47:24,607
+İşte onlar da co-sitation ve bibliografik coupling metrikleri.
+
+1078
+02:47:25,607 --> 02:47:31,107
+Yani gelecek hafta hem bu iki metriyi konuşacağız hem de PageRank konusuna gireceğiz.
+
+1079
+02:47:34,147 --> 02:47:38,547
+Benim anlatacaklarım bugün için bu kadar arkadaşlar. Sizlerin soruları var mıdır?
+
+1080
+02:47:39,927 --> 02:47:46,207
+Hocam aslında benim vardı. Eğer vaktiniz varsa bu proje proposerle ilgili bir şey sormak istiyorum da.
+
+1081
+02:47:46,907 --> 02:47:47,207
+Olur.
+
+1082
+02:47:47,827 --> 02:48:08,287
+Yazdığınız yorum da benimkinde ilk şeydi. Ben hani sentiment analizi istiyorum demiştim yorumlara yönelik. Siz bana şey demiştiniz, opinion mining yap diye. Benim o yüzden konum değişmişti. İki derse de ben hocam şirketteki sunumlar yüzünden katılamadım. Onda da gösteremedim. Şu an isterseniz onu göstereyim mi vaktiniz varsa?
+
+1083
+02:48:08,915 --> 02:48:14,376
+Tamam, gösterebilirsin. Arkadaşlar, sizin beklemenize gerek yok.
+
+1084
+02:48:14,896 --> 02:48:25,676
+Hocam, bir de şey diyecektim. Ben size mail atmıştım konuyla ilgili. Bana da şey demiştiniz. Opinion, mining, yoksa classification'ı seç demiştiniz. Ben sonra classification olarak güncellemiştim onu.
+
+1085
+02:48:26,295 --> 02:48:31,715
+Tamam, ok. Ben iyi mail ile alayım. Şeye yansıtma, yansıtma olmadı. Tamamdır.
+
+1086
+02:48:31,715 --> 02:48:34,836
+Tamam, teşekkür ederim. İyi haftalar.
+
+1087
+02:48:34,836 --> 02:48:36,475
+İyi haftalar
+
+1088
+02:48:36,475 --> 02:48:38,836
+İyi haftalar, kolay gelsin
+
+1089
+02:48:38,836 --> 02:48:40,176
+Teşekkür ederim
+
+1090
+02:48:40,176 --> 02:48:44,855
+Şimdi şunu büyüteyim
+
+1091
+02:49:01,652 --> 02:49:07,612
+Evet, hani yorumların olumlu olumsuz sınıflandırılmasıydı değil mi senin projem?
+
+1092
+02:49:07,671 --> 02:49:20,471
+Evet hocam, ilki oydu ama sonrası şey demiştiniz, bu yorumlardan opinion mining yap, ona göre hangi future'lar çıkıyor, böyle hangi future'lar olumlu olumsuz ona göster demiştiniz bir tane arayüzde.
+
+1093
+02:49:21,311 --> 02:49:21,591
+Evet.
+
+1094
+02:49:22,572 --> 02:49:28,171
+Ben de ona yönelik bir tane araştırma yapmıştım, böyle future çıkaramayarak hangi algoritmalar var tarzı.
+
+1095
+02:49:28,171 --> 02:49:34,911
+Tamam, dersin kitabında da biliyorsun aspect oriental opinion mining şeyi var
+
+1096
+02:49:34,911 --> 02:49:41,311
+Evet hocam gördüm onu okudum o kısmı çok faydası oldu onu okuduktan sonra zaten
+
+1097
+02:49:41,311 --> 02:49:41,711
+Tamam
+
+1098
+02:49:41,711 --> 02:49:44,832
+İsterseniz paylaşım yetki verdiniz mi hocam?
+
+1099
+02:49:44,832 --> 02:49:48,832
+Tamam olur bir ekran paylaşımı yapabilirsin ben kendi paylaşımı durdurdum
+
+1100
+02:49:50,031 --> 02:49:50,591
+Tamam
+
+1101
+02:49:57,716 --> 02:50:11,415
+görebiliyor musunuz? Geliyor. Tamam geldi. Biraz daha bunu büyütebilir misin? Tabii. İyi mi? Tamam, şimdi daha iyi.
+
+1102
+02:50:16,115 --> 02:50:21,855
+Aspect Oriental Stop In Your Mining. Data setini yazmışsın. Tamam, aşağıya yazıyorum.
+
+1103
+02:50:21,855 --> 02:50:29,115
+Yardım hocam, linkli tarafından hazırlanan şey, 9 ürün, 3 ürün, bir de 5 ürünlük bir data set hazırlanmış.
+
+1104
+02:50:29,635 --> 02:50:34,835
+Bazı yorumların feature'ları çıkartılarak nasıl bir yöntem uygulanacağı gösterilmiş.
+
+1105
+02:50:35,536 --> 02:50:40,355
+Ben literatür taraması fark edeceğim, çok farklı bir yöntem uygulayan insanları gördüm.
+
+1106
+02:50:40,355 --> 02:50:48,296
+bunda future çıkarımında makine öğrenmesi kullanan filan da var ama onlar bir tane yemek datası üzerine kullanmış.
+
+1107
+02:50:48,395 --> 02:50:55,775
+Data çok büyüktü. Ben o yüzden onu tercih etmedim. Baktıklarımda Apriori algoritması ve TF-IDF yöntemleri kullanılmış.
+
+1108
+02:50:55,915 --> 02:51:03,275
+Bir tane de bir Amerika'daki üniversitedeki öğrencinin kendi yöntemleri var. Bu frekanslardan yola çıkarak yapamayormuş.
+
+1109
+02:51:03,275 --> 02:51:15,395
+Ben de şey dedim, önce bunları post kullanarak isimleri ayırayım, isimlerden de başlarına veya sonlarındaki sıfat veya zarflara göre de
+
+1110
+02:51:15,395 --> 02:51:18,956
+apriori ile bunların feature'larını çıkarmış olurum diye düşündüm
+
+1111
+02:51:18,956 --> 02:51:23,635
+Çünkü baktığımızda kulaklık çok iyi, tarzı yorumlar falan var
+
+1112
+02:51:23,635 --> 02:51:26,755
+Böyle feature'ları çıkarabileceğimi düşünüyorum
+
+1113
+02:51:26,755 --> 02:51:37,935
+Bu LinkedIn'in yine leksikin tabanlı şeyleri var, olumlu ve olumsuz kelimeler diye bir sözlük yapmış hocam, yaklaşık 6800 kelimeden meydana geliyor
+
+1114
+02:51:37,935 --> 02:51:50,235
+Bununla da o future'ların önüne gelen sıfatlardan genel olarak future'un olumlu ve olumsuzluğu sayısını tutup bir frekansa göre onun şeklini çizdirebileceğimi düşünüyorum
+
+1115
+02:51:50,235 --> 02:51:54,755
+Totalde de bir yorumda ne kadar fazla olum ne kadar az olum
+
+1116
+02:52:00,211 --> 02:52:27,611
+ve cim düşündüm. Tamam, tamam. Bu söylediklerim bence oldum da bu şekilde devam edebilirsin. Yani şey bunu da bana gönder tekrardan eğer göndermediysen. Tamam. Şey okey değil mi? Böyle haftalık da gösterdim bunu. Tamam, tamamdır. Tamamdır. Bu şekilde devam edebilirsin. Tamam hocam. Çok teşekkür ederim. Rica ederim. Kolay gelsin. Hoşçakalın.
