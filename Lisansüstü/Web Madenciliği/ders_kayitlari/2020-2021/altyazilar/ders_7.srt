@@ -1,0 +1,3751 @@
+1
+00:01:49,652 --> 00:01:51,652
+günaydın okanım.
+
+2
+00:02:02,995 --> 00:02:04,995
+Teşekkür ederim. Sen nasılsın?
+
+3
+00:04:41,076 --> 00:04:42,755
+Hocam günaydın.
+
+4
+00:04:45,695 --> 00:04:46,635
+Günaydın.
+
+5
+00:04:47,375 --> 00:05:02,076
+Geçen hafta bu projeler için teklif formlarını incelemiştik ya birlikte. Benim formum yoktu ve önümüzdeki haftaya hazırla birlikte bakalım demiştiniz. İsterseniz arkadaşları beklerken bakalım mı yoksa dersin sonunda mı bakalım hocam?
+
+6
+00:05:02,435 --> 00:05:03,916
+Dersin sonunda bakalım olur mu?
+
+7
+00:05:04,336 --> 00:05:06,416
+Tamamdır. Tamamdır. Teşekkür ederim.
+
+8
+00:08:41,139 --> 00:08:45,779
+Herkese günaydın. Arkadaşlar, sesimin geldiğini teylede mi siz?
+
+9
+00:08:49,587 --> 00:08:50,527
+tamam, süper.
+
+10
+00:08:56,724 --> 00:09:25,903
+Tamamdır. Bu hafta Information Retrieval chapter'ından kaldığımız yerden devam edeceğiz arkadaşlar. Şu anda geldiğimiz nokta şurası. Sadece 5. çeptir Partially Supervised Learning algoritmalarının olduğu çeptiri yapmadık. Onun haricindeki diğer çeptirleri sırasıyla yaptık.
+
+11
+00:09:26,724 --> 00:09:35,224
+Bu hafta information retrieval ve web search chapter'ının konuşmadığımız kısımlarını konuşacağız.
+
+12
+00:09:35,224 --> 00:09:41,224
+Arkasından da kalan zamanda web crawling chapter'ını konuşuyor olacağız.
+
+13
+00:09:51,827 --> 00:10:03,788
+Okey, biz bir önceki haftada bu information retrieval'ın database retrieval'dan nasıl farklı olduğunu konuşmuştuk.
+
+14
+00:10:03,788 --> 00:10:11,947
+Bir de bir information retrieval uygulamasında hangi modüller var?
+
+15
+00:10:12,088 --> 00:10:13,248
+Hani bunları konuşmuştuk.
+
+16
+00:10:13,367 --> 00:10:16,387
+Bu modüller birileriyle nasıl etkileşim içerisinde?
+
+17
+00:10:16,467 --> 00:10:17,447
+Bunları konuşmuştuk.
+
+18
+00:10:17,447 --> 00:10:28,427
+bir information retrieval sistemini besleyen crawler uygulaması bir tane doküman koleksiyon oluşturur.
+
+19
+00:10:28,967 --> 00:10:34,447
+Bu crawler uygulamasının bu işi nasıl yaptığını bir sonraki çeptirde konuşuyor olacağız.
+
+20
+00:10:34,447 --> 00:10:44,647
+Ama diyelim ki şöyle düşünün burada bir crawler var ve bu crawler dağıtık ortamdaki dosyaları alıp burada bir doküman koleksiyon oluşturmuş.
+
+21
+00:10:44,647 --> 00:10:56,688
+Ama kimi zamanda dağıtık ortamdaki deliler üzerinde bir information retrieval motoru çalıştırmazsınız.
+
+22
+00:10:56,927 --> 00:11:07,508
+Kimi zamanda kendi çalışmış olduğunuz lokal ortamdaki dokümanlar üzerinde information retrieval yapmak istersiniz.
+
+23
+00:11:07,508 --> 00:11:14,887
+Dolayısıyla elimizde merkezi ortamda yerleşik bir doküman koleksiyonu olduğunu düşünüyoruz.
+
+24
+00:11:15,728 --> 00:11:18,988
+Bu doküman koleksiyonu üzerinde search yapmıyoruz tabii ki.
+
+25
+00:11:19,967 --> 00:11:21,408
+Bunu ne yapmamız gerekiyor?
+
+26
+00:11:21,527 --> 00:11:22,667
+İndekslerimiz gerekiyor.
+
+27
+00:11:22,988 --> 00:11:25,427
+Bir tane doküman indeksi oluşturuyoruz.
+
+28
+00:11:25,588 --> 00:11:26,707
+Bu indeks nasıl bir şey?
+
+29
+00:11:27,927 --> 00:11:33,628
+Bir tane kolonunda aramayı gerçekleştireceğimiz keywordler var.
+
+30
+00:11:33,627 --> 00:11:44,527
+İkinci kolonunda ise her keyword içerisinde barındıran dokümanların sıralandırılmış bir şekilde listesi var.
+
+31
+00:11:45,447 --> 00:11:47,527
+Yani bu sıralandırmayı nasıl yapıyoruz?
+
+32
+00:11:47,767 --> 00:11:54,447
+Yani o kelimenin o doküman içerisindeki önem değerini ifade eden TF-IDF diye bir skor hesaplıyoruz.
+
+33
+00:11:55,147 --> 00:12:01,407
+Ve TF-IDF skorlarına dayalı olarak o dokümana içeren bütün dokümanları sıralandırıyoruz.
+
+34
+00:12:01,408 --> 00:12:04,548
+ve elimizde böyle bir tablo var.
+
+35
+00:12:05,327 --> 00:12:10,008
+Kullanıcı bize bir keyword ya da keyword grubu verdikten sonra
+
+36
+00:12:10,008 --> 00:12:12,508
+ben bu keyword ve keyword grubunu alıp
+
+37
+00:12:12,508 --> 00:12:15,747
+executable query haline getiriyorum.
+
+38
+00:12:16,408 --> 00:12:18,467
+Farklı tiplikli queryleri görmüştük.
+
+39
+00:12:18,887 --> 00:12:22,467
+Bu kullanıcı tarafından verilmiş olan queryleri
+
+40
+00:12:22,467 --> 00:12:25,788
+executable query dönüştürürken
+
+41
+00:12:25,788 --> 00:12:29,428
+farklı tiplikli querylerde ne gibi işlemler yaptığımızı
+
+42
+00:12:29,428 --> 00:12:30,387
+geçen hafta konuştuk.
+
+43
+00:12:30,387 --> 00:12:54,287
+Arkasından executable query oluştuktan sonra bu executable query ile bu doküman indeksi arasında ne yapıyorum? Bir similarity fonksiyonu kullanarak benzer olan dokümanları buluyorum.
+
+44
+00:12:54,287 --> 00:13:05,507
+Daha doğrusu buradaki keyword ile bu tablodaki keywordlerin lookup yaptırıyorum.
+
+45
+00:13:05,647 --> 00:13:08,907
+Yani buradaki tabloyu bir hashtag olarak tuttuğumu düşünün.
+
+46
+00:13:09,627 --> 00:13:13,767
+Burada girilmiş olan keywordlerin bulunmuş olduğu enter'leri buluyorum.
+
+47
+00:13:13,907 --> 00:13:22,887
+Bu enter'lerdeki dosya zincirlerini alıp birleştirip sıralandılmış bir şekilde son kullanıcıya gönderiyorum.
+
+48
+00:13:22,887 --> 00:13:31,887
+Şimdi biz geçen hafta bu keyword farklı user querylerinden konuştuk.
+
+49
+00:13:32,787 --> 00:13:37,227
+Bu user queryleri nasıl executable queryleri dönüştürebileceğimizi konuştuk.
+
+50
+00:13:38,027 --> 00:13:43,447
+Ondan sonra bu doküman indeksini oluştururken doküman indeksi içerisinde demiştim ya,
+
+51
+00:13:43,807 --> 00:13:46,887
+bir tane bu bir tablo, bu bir tane kolonu.
+
+52
+00:13:47,731 --> 00:13:50,692
+kelimelerden oluşuyor. İkinci kolonu ise
+
+53
+00:13:50,692 --> 00:13:52,692
+her kelimenin
+
+54
+00:13:52,692 --> 00:13:54,531
+içerisinde
+
+55
+00:13:54,531 --> 00:13:56,411
+olan dokümanları sıralandırılmış
+
+56
+00:13:56,411 --> 00:13:58,291
+bir şekilde ihtiva
+
+57
+00:13:58,291 --> 00:14:00,072
+ediyor. Dolayısıyla
+
+58
+00:14:00,072 --> 00:14:02,411
+bu sıralandırmayı yapmak için
+
+59
+00:14:02,411 --> 00:14:04,172
+biz bir takım
+
+60
+00:14:04,172 --> 00:14:06,431
+metrikler kullanıyoruz.
+
+61
+00:14:06,631 --> 00:14:08,431
+Onun için de yaygın kullanılan metrik
+
+62
+00:14:08,431 --> 00:14:10,511
+TF-IDF metriği. Geçen hafta
+
+63
+00:14:10,511 --> 00:14:12,271
+bir de TF-IDF metriğini konuştuk.
+
+64
+00:14:12,371 --> 00:14:14,051
+Yani TF-IDF'i nerede
+
+65
+00:14:14,051 --> 00:14:16,431
+kullanıyormuşuz? Demek ki bu indekser
+
+66
+00:14:16,431 --> 00:14:26,231
+Şuradaki doküman indeksi oluştururken keywordleri içerisinde bulunan dokümanları sıralandırmak için kullanmış olduğu ağırlıklandırma bizim için TFI diye.
+
+67
+00:14:27,092 --> 00:14:32,371
+Bunun dışında farklı tipteki information retrieval modeller vardı.
+
+68
+00:14:32,571 --> 00:14:40,751
+Bu information retrieval modeller bir tane query ile bir tane dokümana match ettiriyordu.
+
+69
+00:14:40,752 --> 00:14:42,792
+İşte
+
+70
+00:14:42,792 --> 00:14:45,752
+query'nin bir tane
+
+71
+00:14:45,752 --> 00:14:47,492
+internal representation'ı vardı
+
+72
+00:14:47,492 --> 00:14:50,011
+bir de dokümanın internal representation'ı
+
+73
+00:14:50,011 --> 00:14:51,752
+vardı. Biz
+
+74
+00:14:51,752 --> 00:14:52,931
+bu ikisini
+
+75
+00:14:52,931 --> 00:14:56,191
+farklı information retrieval
+
+76
+00:14:56,191 --> 00:14:57,431
+yöntemlerinin
+
+77
+00:14:57,431 --> 00:15:00,011
+dikte etmiş olduğu benzerlik
+
+78
+00:15:00,011 --> 00:15:01,971
+fonksiyonlarıyla tespit ediyorduk.
+
+79
+00:15:02,471 --> 00:15:02,871
+Buradaki
+
+80
+00:15:02,871 --> 00:15:06,071
+mesela vector space modeli konuşmuştuk
+
+81
+00:15:06,071 --> 00:15:07,791
+geçen hafta. Vector space model
+
+82
+00:15:07,791 --> 00:15:09,851
+mesela cosine similarity
+
+83
+00:15:09,851 --> 00:15:11,711
+kullanaraktan döküman
+
+84
+00:15:11,711 --> 00:15:13,131
+ve kelimeyle
+
+85
+00:15:13,131 --> 00:15:15,351
+arasındaki benzerliği
+
+86
+00:15:15,351 --> 00:15:17,371
+ölçüyorduk. Yine burada
+
+87
+00:15:17,371 --> 00:15:20,151
+bu dökümanı oluştururken
+
+88
+00:15:20,151 --> 00:15:21,831
+yani şuradaki tabloyu
+
+89
+00:15:21,831 --> 00:15:23,871
+oluştururken birinci
+
+90
+00:15:23,871 --> 00:15:25,571
+kolonunda keywordler var.
+
+91
+00:15:25,731 --> 00:15:27,751
+İkinci kolonunda hani dökümanlar var.
+
+92
+00:15:27,871 --> 00:15:30,111
+Bu dökümanlar arasındaki
+
+93
+00:15:30,111 --> 00:15:31,551
+benzerliği
+
+94
+00:15:31,551 --> 00:15:34,031
+tespit etmişiz ki bu dökümana
+
+95
+00:15:34,031 --> 00:15:35,631
+ilgili keywordün
+
+96
+00:15:35,631 --> 00:15:38,051
+bulunduğu entry'e koymuşuz. Demek ki
+
+97
+00:15:38,051 --> 00:15:42,891
+Burada bu dökümanı oluştururken bir cosine similarity kullanmışız.
+
+98
+00:15:42,891 --> 00:15:47,611
+Yine Boolean Information Retrieval'da ise ne yapıyorduk?
+
+99
+00:15:47,711 --> 00:15:56,571
+Bu kelimenin yahut da kelime grubunun bu döküman içerisinde kesin olması ya da bazen ne yapıyorduk?
+
+100
+00:15:56,672 --> 00:16:00,892
+And or kullanıyorduk bir de not operator'u kullanıyorduk.
+
+101
+00:16:00,892 --> 00:16:14,832
+Ya da işte keyword grubundan bir tane kelimenin olmamasını istediğimiz durumlar varsa işte girilmiş olan keyword'ü exact match olarak karşılayan dokümanları ne yapıyorduk?
+
+102
+00:16:14,892 --> 00:16:20,032
+Bu inverted tablosunda daha doğrusu bu tablo içerisinde yerini aldırıyorduk.
+
+103
+00:16:20,132 --> 00:16:24,231
+Bu tabloya az sonra artık inverted index tablosu diyeceğiz.
+
+104
+00:16:24,632 --> 00:16:30,112
+Çünkü burada kelimelerden dokümanlara ulaşmamızı sağlayan bir tane tablodan bahsediyoruz.
+
+105
+00:16:30,111 --> 00:16:58,831
+Yani geçen hafta aslında biz biraz da şu doküman indeksini verilmiş olan yerleşik noktada toplanmış olan bu doküman koleksiyonunda indeksler uygulamasını kullanarak bir tablonun içerisindeki verileri Vector Space Model yahut da Boolean Information Model gibi farklı information retrieval modellere dayalı olarak nasıl oluşturduğumuzu konuşmuştuk.
+
+106
+00:17:00,111 --> 00:17:13,211
+Şimdi yine buradan hani bu dokümanları biz bunlar üzerinde bir text processing işlemi gerçekleştiriyoruz.
+
+107
+00:17:13,931 --> 00:17:21,031
+Bunu indekslemeden önce bu dokümanların üzerinde bir pre-processing çalışması yapıyoruz.
+
+108
+00:17:21,031 --> 00:17:27,731
+Yani nedir bu? Hani ben HTML dokümanını olduğu gibi indirdim diyelim ki şeyden, internetten.
+
+109
+00:17:27,731 --> 00:17:33,032
+HTML dökümanının içerisinde yöreller var, image'ler var.
+
+110
+00:17:34,011 --> 00:17:39,151
+Bunların tabii ki image'in kendisi o HTML dökümanının içerisinde gömülü değil ama
+
+111
+00:17:39,151 --> 00:17:42,731
+image'i de HTML'i indirirken ayrı bir dosya halinde indiriyorsunuz.
+
+112
+00:17:43,692 --> 00:17:46,411
+HTML'in içerisinden image'e bir tane link oluyor.
+
+113
+00:17:47,284 --> 00:18:06,223
+Burada bu HTML dökümanın temsil eden kelimeleri bu dökümanın içerisinden çıkarttığımızı ve Bag of Words şeklinde yani dökümanları bir vektör şeklinde ifade edebileceğimizi söylemiştik geçen hafta.
+
+114
+00:18:06,223 --> 00:18:16,183
+Ve hem Boolean Information model hem Vector Space model artık bu dökümanları birer vektör şeklinde takip ediyor diye konuşmuştuk. Değil mi?
+
+115
+00:18:16,183 --> 00:18:33,163
+Şimdi bu HTML dökümanda işte bu kelimeleri ekstrakt ederken bu döküman üzerinde yapılması gereken bir takım text preprocessing işlemleri var. Yani bu kelimeleri ekstrakt etmeden önce.
+
+116
+00:18:33,163 --> 00:18:53,123
+Şimdi de bunu konuşacağız. Yani bakacak olursanız hani geçen haftadan bu yana bizim konuştuğumuz kısım hani şu information retrieval engine'in şu kısmı ve şuradaki query operasyonları kısmıydı. Şimdi devam ediyoruz kaldığımız yerden.
+
+117
+00:18:59,092 --> 00:19:23,491
+Okey, text-free processing. Biz ne yaptık? Elimizde doküman var. Bu dokümanı artık bir vektöre dönüştüreceğiz. Bu vektöre dönüştürdükten sonra da artık bu vektörü dokümanın temsilcisi olarak kullanıp bundan sonra bir query ve doküman arasındaki benzerliği ölçerken bu vektörü kullanacağız.
+
+118
+00:19:23,491 --> 00:19:33,632
+Şimdi eğer bir dökümanı temsil edecek bir tane temsilci vektör oluşturuyorsak bu vektörü gerçekten doğru oluşturmamız gerekiyor.
+
+119
+00:19:33,792 --> 00:19:43,571
+Aksi takdirde bu dökümana match eden, bu dökümanın match ettiği kuyruğeleri bulmakta yanlış yaparız.
+
+120
+00:19:43,751 --> 00:19:46,172
+Çünkü artık gerçek dökümandan uzaklaştık.
+
+121
+00:19:46,672 --> 00:19:50,411
+Dökümanın temsilcisi olan vektörle bütün hesaplamaları yapıyoruz.
+
+122
+00:19:50,411 --> 00:19:56,251
+Dolayısıyla dokümanın temsilcisi olan vektörü doğru şekilde hesaplıyor olmam gerekiyor.
+
+123
+00:19:57,911 --> 00:20:03,431
+Şimdi neler yapıyorum peki bir doküman üzerinde bu vektörü çıkartırken?
+
+124
+00:20:03,592 --> 00:20:05,852
+Birincisi ben terimleri buluyorum.
+
+125
+00:20:06,231 --> 00:20:07,931
+Terimleri ekstrakt ediyorum.
+
+126
+00:20:08,871 --> 00:20:17,411
+Bu bir parser yazıp bana verilmiş olan bir PDF, bir Word, bir HTML dokümandan kelimeleri çıkarmak kolay.
+
+127
+00:20:17,731 --> 00:20:18,971
+Yani bunda bir sıkıntı yok.
+
+128
+00:20:18,971 --> 00:20:26,772
+İkincisi buradaki kelimeler içerisinde stop word dediğimiz kelimeler de var.
+
+129
+00:20:26,772 --> 00:20:44,971
+Stop word dediğimiz kelimeler kendi başına anlamı olmayan ama her dilin kendi gramerinde anlamı olan kelimelerle birlikte kullanılan ve cümlelerden cümle oluşturulması için kullanılan kelimeler.
+
+130
+00:20:44,971 --> 00:21:05,631
+Bizde mesela bağlaşlar var. İngilizce'de the article'ı var. Almanca'da derdi, das article'ları var. Her dilde kendi başına anlamı olmayan fakat birlikte kullanıldığı kelime ve kelime gruplarıyla birlikte bir anlam oluşturan bir şeyden bahsediyoruz.
+
+131
+00:21:05,632 --> 00:21:24,452
+Bunların bizim için bir faydası yok. Yani bir dökümanı bir vektöre dönüştürürken bu vektör içerisinde bu türden kendi başına anlam ifade etmeyen kelimeleri almak istemiyoruz.
+
+132
+00:21:24,452 --> 00:21:34,252
+Sadece kendi başına anlamı olan ve dökümanı tanımlayıcı olan kelimeleri almak zorunda. Bu kelimelerde genelde terimler yani isimler.
+
+133
+00:21:36,672 --> 00:21:52,392
+Bir başka yaptığınız işlem hani sistemik. Şimdi bir kelimenin aynı kelimenin özellikle sondan ek alan diller. Türkçe mesela öyle bir dil. Sondan kelimeler sondan ek alarak denişliyorlar.
+
+134
+00:21:54,452 --> 00:22:12,612
+Aynı kelimenin farklı versiyonları olabilir. Aynı kelimenin işte farklı ek almış versiyonları olabilir. Biz bunların hepsini ayrı birer kelime olarak alıp bizim bu kelime vektörü içerisinde göstermek istemiyoruz.
+
+135
+00:22:12,611 --> 00:22:39,351
+Yani eğer bir kelimeyi aynı anlamı ifaden bir kelimeyi 3-4 tane farklı ek alarak 3-4 tane farklı biçimdeki kelimeyle gösteriyorsa doküman içerisinde bunların kökünü bulup kökündeki kelimeyi bizim bu kelimelerden oluşan vektörde göstermemiz gerekiyor.
+
+136
+00:22:39,351 --> 00:22:41,851
+Dolayısıyla bu yaptığımız işlemede steming diyoruz.
+
+137
+00:22:42,611 --> 00:22:58,391
+Okey. Stopverse removal yaptığımız bir işlem. Stemming ikinci işlem. Şimdi bunu yaptıktan sonra ne yapıyoruz? TF-IDF skorlarını hesaplıyoruz. Nasıl yapacağız bunu? Zaten elimde şey var. Doküman setimin her birisini.
+
+138
+00:22:58,963 --> 00:23:00,723
+birer vektöre dönüştürmüşüm.
+
+139
+00:23:01,444 --> 00:23:03,303
+Elimde totaldeki
+
+140
+00:23:03,303 --> 00:23:04,483
+doküman setim var.
+
+141
+00:23:05,143 --> 00:23:07,224
+Doküman seti içerisindeki
+
+142
+00:23:07,224 --> 00:23:08,823
+kelimeleri ifade eden
+
+143
+00:23:08,823 --> 00:23:10,823
+benim vektörlerim var.
+
+144
+00:23:11,963 --> 00:23:13,103
+Artık bundan sonra
+
+145
+00:23:13,103 --> 00:23:15,083
+TF-IDF skorunu hesaplayabilirim.
+
+146
+00:23:15,463 --> 00:23:17,283
+Hatırlama istersek
+
+147
+00:23:17,283 --> 00:23:19,263
+TF turn frequency demekti.
+
+148
+00:23:19,363 --> 00:23:20,703
+Turn frequency ne demekti?
+
+149
+00:23:20,703 --> 00:23:22,963
+Bir kelime bir doküman içerisinde
+
+150
+00:23:22,963 --> 00:23:24,403
+ne kadar geçiyor?
+
+151
+00:23:25,384 --> 00:23:26,943
+Ondan sonra IDF ne demekti?
+
+152
+00:23:26,943 --> 00:23:29,583
+inverse document freqüensiydi.
+
+153
+00:23:30,203 --> 00:23:31,184
+Bir kelime
+
+154
+00:23:31,184 --> 00:23:33,343
+totaldeki
+
+155
+00:23:33,343 --> 00:23:35,243
+doküman seti içerisindeki
+
+156
+00:23:35,243 --> 00:23:37,004
+dokümanlar düşünüldüğünde
+
+157
+00:23:37,004 --> 00:23:39,463
+bu kelime totaldeki dokümanlar
+
+158
+00:23:39,463 --> 00:23:40,504
+seti içerisinde
+
+159
+00:23:40,504 --> 00:23:43,223
+kaç tane doküman içerisinde
+
+160
+00:23:43,223 --> 00:23:45,184
+geçiyor? Yani bir tf kısmı
+
+161
+00:23:45,843 --> 00:23:47,243
+kelimenin bir doküman
+
+162
+00:23:47,243 --> 00:23:49,063
+içerisindeki önemini ifade eder.
+
+163
+00:23:49,544 --> 00:23:51,263
+idf kısmı ise kelimenin
+
+164
+00:23:51,263 --> 00:23:53,703
+bütün doküman seti içerisindeki
+
+165
+00:23:53,703 --> 00:23:55,203
+önemini ifade eder.
+
+166
+00:23:56,143 --> 00:24:04,523
+Eğer TF kısmında bir kelime bir doküman içerisinde ne kadar yüksekse TF-IDF skoru o kadar yüksek olur.
+
+167
+00:24:05,203 --> 00:24:15,583
+IDF kısmında bir kelime tüm doküman seti içerisinde ne kadar nadir geçmişse, ne kadar az dokümanda geçmişse TF-IDF skoru o kadar yüksek olur.
+
+168
+00:24:22,963 --> 00:24:27,364
+Evet, az önce stop wordlerin ne olacağını söyledik.
+
+169
+00:24:27,364 --> 00:24:45,663
+Dedik ki tek başına anlamı olmayan, gramörde geçen ve cümle oluşturmamızı, diğer kelimelerle kullanıldığında ancak bir anlam oluşturabilen kelimelerden bahsediyoruz.
+
+170
+00:24:46,144 --> 00:24:47,583
+Her dilde bunlardan var.
+
+171
+00:24:47,583 --> 00:24:56,043
+Biz bunları mutlaka çıkardıktan sonra bir dokümanı vektöre dönüştürüyoruz.
+
+172
+00:24:56,144 --> 00:25:00,163
+Yani bag of verse dediğimiz dokümanı temsil eden vektöre dönüştürüyoruz.
+
+173
+00:25:00,943 --> 00:25:11,663
+Şimdi az sonra göreceksiniz ki bu dokümanlardan çıkartılmış kelimeleri kelime vektörlerine dönüştürdük.
+
+174
+00:25:11,664 --> 00:25:23,263
+Dokümanlardan çıkarttığımız kelimelerin oluşturmuş olduğu ve kelime uzayına biz vokabilleri demiştik bir önceki derste.
+
+175
+00:25:24,004 --> 00:25:30,764
+Tüm doküman setim içerisinden çıkartılmış olan kelimelerin oluşturulmuş olduğu kelime uzayına vokabilleri diyoruz.
+
+176
+00:25:30,864 --> 00:25:35,864
+Yani o doküman seti içerisinde geçmiş olan bütün kelimelerden bahsediyoruz.
+
+177
+00:25:36,004 --> 00:25:38,984
+Sadece bir tanesinde değil, bütün doküman seti içerisinde.
+
+178
+00:25:38,983 --> 00:25:48,383
+Şimdi bu vokabileri dediğim bütün döküman seti içerisinde geçmiş olan unique kelimelerin ben ne yapacağım?
+
+179
+00:25:48,824 --> 00:25:54,583
+Oluşturacağım tabloda hani birinci kolon demiştim ya bu birinci kolonda yerini alacak kelimeler olacak.
+
+180
+00:25:56,723 --> 00:25:57,563
+Okey.
+
+181
+00:25:58,423 --> 00:26:00,303
+Ondan sonra da ne yapacağım?
+
+182
+00:26:00,303 --> 00:26:08,923
+bu kelimelerin her bir bu tablonun her bir satırı içinde kelimeyi içerisinde barındıran
+
+183
+00:26:08,923 --> 00:26:14,003
+dokümanları bir liste şeklinde link list şeklinde koyacağım.
+
+184
+00:26:15,803 --> 00:26:23,723
+Bu dokümanların link listine de oluştururken de sıralandırılmış bir şekilde oluşturacağım.
+
+185
+00:26:23,843 --> 00:26:28,383
+Bu sırayı sırayı ifade eden değeri nereden bulacağım?
+
+186
+00:26:28,383 --> 00:26:31,743
+TF-IDF skorlarını, TF-IDF skoru en büyük olan
+
+187
+00:26:31,743 --> 00:26:35,223
+dokümandan en küçük olan dokümana doğru sıralanacağım.
+
+188
+00:26:35,723 --> 00:26:38,044
+Tabi burada doküman derken bu link listeki
+
+189
+00:26:38,044 --> 00:26:40,904
+notlar dokümanın kendisi değil. Siz bunu tahmin
+
+190
+00:26:40,904 --> 00:26:44,063
+ediyorsunuzdur. Buradaki link listin notları
+
+191
+00:26:44,063 --> 00:26:47,824
+dokümanı point eden
+
+192
+00:26:47,824 --> 00:26:51,583
+dokümanın id'sini içeren bir tane
+
+193
+00:26:51,583 --> 00:26:55,143
+özet bilgiden bahsediyoruz. Dokümanın kendisi değil asla.
+
+194
+00:26:55,143 --> 00:27:14,563
+Eğer ben stop word removal yaparsam yani kelime dokümanların içerisinden çıkartmış olduğum kelimeler içerisine bu konuştuğumuz stop words'leri koymazsam bu durumda oluşturacağım tablonun index size'ını da düşürmüş oluyorum.
+
+195
+00:27:14,563 --> 00:27:28,263
+Yani bunu yaptığınızda %20-%30 oranında totaldeki kelime oranını düşürdüğünüz için sizin index size'ınız da küçülmüş oluyor.
+
+196
+00:27:34,612 --> 00:27:59,331
+Diğer bir kelime, işte bu kelime vektörlerini oluştururken, doküman temsilcisi kelime vektörlerini oluştururken, systemic yapıyoruz dedik. Aynı kelimenin farklı versiyonları, mesela İngilizce'de user, users, used, using, bunların hepsi aynı kökten türemiş. Use kelimesinden türemiş. Engineering, engineered, engineered, bunların hepsi aynı kökten türemiş.
+
+197
+00:27:59,331 --> 00:28:10,452
+Dolayısıyla eğer ben bunlarla karşılaşıyorsam ki döküman içerisinde bunların kökünü bulup bu kökünü sadece bu döküman içerisinde var diye çıkartıyorum.
+
+198
+00:28:12,292 --> 00:28:19,671
+Dikkat edin bu şeyleri oluştururken yani Bay of Words'ı oluştururken yani kelime vektörünü oluştururken
+
+199
+00:28:19,671 --> 00:28:33,911
+her bir kelimenin aynı zamanda döküman içerisinde ne kadar geçtiği bilgisini de bu vektörün içerisinde her bir kelimeyle birlikte tutmam gerekiyor.
+
+200
+00:28:33,911 --> 00:28:40,951
+Yani bu vektörün elemanlarını birer ikili şeklinde de düşünebilirsiniz.
+
+201
+00:28:40,951 --> 00:29:05,031
+Yani bir tanesi kelimenin olmuş olup olmaması yahut da ikincisi şey bunun kaç tane geçtiği kaç tane bunu şu şekilde de dönüştürebilirsiniz hani tek eliman olacak şekilde de yapabilirsiniz o durumda bir sıfır olmaz orada dokümanın kaç defa geçtiğini ifade eden bir sayı olur.
+
+202
+00:29:05,031 --> 00:29:08,391
+Vector Space modelde mesela bu vardı.
+
+203
+00:29:08,591 --> 00:29:15,131
+Yani doküman o kelime dokümanda kaç defa geçmişse o değeri ne yapıyorduk alıyorduk.
+
+204
+00:29:18,675 --> 00:29:21,896
+Doküman web sayfadan mı gelir hocam?
+
+205
+00:29:23,455 --> 00:29:26,175
+Doküman dediğimiz şey zaten web sayfası.
+
+206
+00:29:26,175 --> 00:29:35,675
+Yani web domeninde information retrieval eğer bir web search engine ise o zaman doküman dediğimiz web sayfası.
+
+207
+00:29:35,795 --> 00:29:47,855
+Ama information retrieval dediğimiz şey senin kendi iş yerindeki yahut da kendi makinendaki dokümanlar ise o zaman makinendaki word dokümanlar,
+
+208
+00:29:47,855 --> 00:29:49,895
+yani PDF dökünür diye düşünüyorum.
+
+209
+00:29:51,955 --> 00:30:06,495
+Şimdi ben bunu yapacak olursam yani stemming yapacak olursam en sonunda oluşturmak istediğim bu indeks tablosu vardı ya bunun da indeks size'ını %40-50 oranında ne yapıyorum azaltıyorum.
+
+210
+00:30:11,508 --> 00:30:39,027
+Burada İngilizce için hani stemming metodlarından bahsetmiş. Stemming kütüphaneleri genelde kuran tabanlı kütüphanelerdir. Her dil için değişir. Bir dilin özellikle sondan ek alan dillerin sondan ek aldığı zaman kelimenin köküne değiştirdiğini biliyoruz.
+
+211
+00:30:39,027 --> 00:30:51,947
+bu durumda kelimenin kökünün sonundaki harfler gelen eke dayalı olarak değişecektir. Dolayısıyla da siz bununla ilgili eğer bir kod yazıyorsanız bunu kural tabanlı yapmanız lazım.
+
+212
+00:30:53,167 --> 00:31:04,847
+İşte böylesi durumlar kaç tane varsa her birisini kurala dönüştürüp, doküman içerisinde bu kelimelerle karşılaştığınızda ilgili kurala dayalı olarak bunun kökünü bulmanız gerekiyor.
+
+213
+00:31:04,848 --> 00:31:11,868
+burada da İngilizce için kurallardan bahsediyoruz.
+
+214
+00:31:15,443 --> 00:31:37,704
+Şimdi ne yaptık? Hani doküman setini aldık. Doküman setinin üzerinde öncelikle stop work removal yaptık. Arkasından ne yaptık? Sistemin kütüphanesini kullanarak kelimelerin köklerini bulduk. Sonra artık şeyi oluşturacağız. Hani vektörümüzü oluşturacağız.
+
+215
+00:31:37,704 --> 00:31:50,083
+vektörümüzü oluştururken biz TF-IDF skorunu hesapladık. Bu TF-IDF skorunu nasıl hesapladığımızı bir önceki derste gördük.
+
+216
+00:31:50,083 --> 00:32:04,624
+TF-IDF skorlarını hesapladıktan sonra artık elimde bir vektör var. Vektörün boyutu benim tüm doküman setinden çıkartmış olduğum unit kelimelerin sayısı kadar,
+
+217
+00:32:04,624 --> 00:32:08,324
+yani vocabulary sayısı kadar bir dokümanın boyutu var.
+
+218
+00:32:09,964 --> 00:32:19,903
+Ve bu vektördeki eğer bir kelime bu vektör içerisinde varsa buraya da bu kelimenin TF-IDF değerini yazıyor.
+
+219
+00:32:20,664 --> 00:32:26,503
+Demek ki her kelime için bu doküman seti içerisinde TF-IDF skorunu hesaplıyorum.
+
+220
+00:32:27,543 --> 00:32:33,223
+Her kelimenin o doküman için önemini tespit eden TF-IDF hesaplıyorum.
+
+221
+00:32:33,223 --> 00:32:55,423
+o vektör içerisinde de eğer o doküman içerisinde o kelime varsa o TF-IDF değerine de o vektörün ilgili noktasına o değeri yazıyorum.
+
+222
+00:33:00,660 --> 00:33:06,259
+Tamam. Şimdi ne yaptım ben? Şu anda neredeyim?
+
+223
+00:33:10,771 --> 00:33:37,251
+Şu anda artık ben şeyi oluşturdum. Yani bu doküman koleksiyonu üzerinde ben bu vektörleri oluşturdum. Bu vektörler içerisinde TF-IDF skorlarım var. Bu vektörler her bir dokümanı temsil ediyor. Ondan sonra artık elimde bütün doküman setini ifade eden bir tane matris var.
+
+224
+00:33:37,251 --> 00:34:02,591
+Şimdi bu matrisin kolonları neyi ifade ediyor? Vocabulary'ı ifade ediyor. Yani bütün döküman seti içerisinden çıkartmış olduğum keywordleri ifade ediyor. Bu vektörün satırları neyi ifade ediyor? Bu satırlar ise dökümanları ifade ediyor. Satırlar, dökümanlar, sütunlar ise bu vocabulary, keywordler olmak üzere bir tane matris.
+
+225
+00:34:02,591 --> 00:34:20,992
+Peki matrisin içerisindeki o değerler ne olmalı? Bunlar da TF-IDF skoru. Eğer bir kelime, bir döküman içerisinde varsa orada non-zero değer olacak. Yani sıfırın dışında bir değer olacak. O değeri neyse hesaplayacağım? TF-IDF'i kullanarak da. Artık elinde bir matris var.
+
+226
+00:34:34,036 --> 00:34:58,036
+Şimdi biz bir search işlemi yaparken bu search işlemine karşılık sonuçları getiren bir tane retrieval engine'imiz var. Yani az önceki şeklinde
+
+227
+00:34:58,612 --> 00:35:08,952
+Queryleri aldıktan sonra bu querylere karşılık gelen sonuçları bu doküman indeksine gidip alan bir tane retrieval engine'im var.
+
+228
+00:35:09,952 --> 00:35:17,831
+Şimdi bu retrieval engine yaptığı işlemi benim bir şekilde ölçmem gerekiyor.
+
+229
+00:35:17,911 --> 00:35:20,551
+Ne kadar başarılı olarak bunu gerçekleştiriyor.
+
+230
+00:35:20,551 --> 00:35:28,471
+Şimdi diyelim ki benim doküman setimde 100 tane doküman var ve ben de webmiling kelimesini arıyorum.
+
+231
+00:35:28,612 --> 00:35:34,731
+Retrieval Engine gidecek, içerisinde web mining olan dokümanları bana getirecek.
+
+232
+00:35:34,832 --> 00:35:36,551
+Ama kaç tanesini getirmesini istiyorum?
+
+233
+00:35:36,671 --> 00:35:37,992
+10 tane getirmesini istiyorum.
+
+234
+00:35:40,091 --> 00:35:51,832
+Şimdi bana getirmiş olduğu 10 tane dokümandan ben bunların 10 taneden acaba kaç tanesi web mining ile ilgilidir karar vereceğim.
+
+235
+00:35:52,271 --> 00:35:54,211
+Yani relevantları seçeceğim.
+
+236
+00:35:54,211 --> 00:35:57,011
+bana getirmiş olduğu
+
+237
+00:35:57,011 --> 00:35:58,871
+dokümanlar içerisinden relevant
+
+238
+00:35:58,871 --> 00:36:01,211
+olanların sayısını precision diyorum.
+
+239
+00:36:02,491 --> 00:36:05,231
+Eğer toplamdaki
+
+240
+00:36:05,231 --> 00:36:06,891
+doküman seti içerisinde
+
+241
+00:36:06,891 --> 00:36:08,431
+web mining'i içeren
+
+242
+00:36:08,431 --> 00:36:10,571
+doküman sayısı fazlaysa
+
+243
+00:36:10,571 --> 00:36:12,851
+ve benim retrieval sistemim
+
+244
+00:36:12,851 --> 00:36:14,591
+ilk onu getirmek amacıyla
+
+245
+00:36:14,591 --> 00:36:15,671
+bu
+
+246
+00:36:15,671 --> 00:36:18,311
+web mining'i içeren
+
+247
+00:36:18,311 --> 00:36:20,451
+dokümanlardan bir kısmını getirmişse
+
+248
+00:36:20,451 --> 00:36:22,472
+bu retrieval
+
+249
+00:36:22,472 --> 00:36:24,592
+sistemin getirmiş olduğu dokümanların
+
+250
+00:36:24,592 --> 00:36:26,751
+arasında relevant olanların
+
+251
+00:36:26,751 --> 00:36:28,472
+toplamdaki relevant oranına
+
+252
+00:36:28,472 --> 00:36:29,832
+ise
+
+253
+00:36:29,832 --> 00:36:32,491
+recall diyor. Yani dolayısıyla
+
+254
+00:36:32,491 --> 00:36:34,311
+precision bir recall dediğim şey
+
+255
+00:36:34,311 --> 00:36:36,251
+bu retrieval sistemin
+
+256
+00:36:36,251 --> 00:36:38,732
+ne kadar başarılı olduğunu
+
+257
+00:36:38,732 --> 00:36:40,751
+ölçmek için kullanılan iki tane
+
+258
+00:36:40,751 --> 00:36:41,671
+metrik arkadaşlar.
+
+259
+00:36:43,152 --> 00:36:44,792
+Az önce demiştik ki
+
+260
+00:36:44,792 --> 00:36:46,972
+bir tane matriz oluşturuluyor. Bu matrizin
+
+261
+00:36:46,972 --> 00:36:48,751
+kolonları, kelimeler,
+
+262
+00:36:49,052 --> 00:36:50,232
+satırları, dokümanlar.
+
+263
+00:36:50,231 --> 00:37:07,011
+Bu matristen yola çıkarak indeksir bir tane tablo oluşturacak. Bu tablonun birinci kolonu kelimeler olacak. İkinci kolonu ise bu kelimeleri ihtiva eden dokümanların TFIDF skorlarına göre sıralandırılmış listesi olacak.
+
+264
+00:37:07,011 --> 00:37:30,731
+Retrieval systemde bu query'i aldıktan sonra gidecek bu inverted index tablosuna, inverted index tablosunda ilgili kelimenin içeren dokümanları alıp bir tane sıralandırılmış bir doküman listesi oluşturacak ve bunun ilk 10 tanesini alıp son kullanıcıya gösterecek.
+
+265
+00:37:30,731 --> 00:37:34,631
+İşte bu retrieval
+
+266
+00:37:34,631 --> 00:37:36,531
+sistemin bu yapmış olduğu şey yani
+
+267
+00:37:36,531 --> 00:37:38,251
+kelimeyle kelimenin
+
+268
+00:37:38,251 --> 00:37:40,931
+bu inverted index tablosundaki
+
+269
+00:37:40,931 --> 00:37:43,091
+karşılığı olan dokümanlardan
+
+270
+00:37:43,091 --> 00:37:44,751
+ne kadarını relevant
+
+271
+00:37:44,751 --> 00:37:46,731
+olarak getirebiliyor konusunu
+
+272
+00:37:46,731 --> 00:37:48,052
+ölçmek için biz
+
+273
+00:37:48,052 --> 00:37:50,751
+precision ve recall metriklerini kullanıyoruz.
+
+274
+00:37:57,907 --> 00:38:02,007
+Demek ki ne demekmiş precision recall?
+
+275
+00:38:05,587 --> 00:38:12,167
+Bir query verildiği zaman iki tane soruya yanıt veriyormuş bu precision recall.
+
+276
+00:38:12,407 --> 00:38:15,607
+Bir tanesi are all retrieved documents relevant?
+
+277
+00:38:15,828 --> 00:38:21,828
+Yani bana getirmiş olduğum dokümanları düşündüğüm zaman bunların hepsi relevant mu?
+
+278
+00:38:21,927 --> 00:38:23,047
+Bunu ölçen precision.
+
+279
+00:38:23,307 --> 00:38:27,607
+İkinci soru have all the relevant documents been retrieved?
+
+280
+00:38:27,907 --> 00:38:39,167
+Yani doküman seti içerisinde sana vermiş olduğum query için bütün relevant dokümanları düşündüğün vakit sen bu bütün relevant dokümanların hepsini getirebildin mi?
+
+281
+00:38:39,827 --> 00:38:41,808
+İkincisiyle ilgilenemesi recall.
+
+282
+00:38:43,948 --> 00:38:50,147
+Birincisi precision, ikincisi ise ikinci soru için recall metreni kullanıyoruz.
+
+283
+00:38:50,147 --> 00:38:54,207
+Hani burada da şeyi görüyorsunuz.
+
+284
+00:38:54,327 --> 00:38:56,668
+Az önce anlattığım o şekilde göstermiş.
+
+285
+00:38:56,667 --> 00:38:58,847
+toplamdaki document collection'ın
+
+286
+00:38:58,847 --> 00:39:00,627
+buradaki kare
+
+287
+00:39:00,627 --> 00:39:02,847
+mavi kare. Bunun içerisinde
+
+288
+00:39:02,847 --> 00:39:04,967
+bir tane yeşil yumurta
+
+289
+00:39:04,967 --> 00:39:06,827
+var. Bir tane de mor yumurta var.
+
+290
+00:39:07,567 --> 00:39:09,147
+Bana bir tane query veriyorsunuz.
+
+291
+00:39:09,647 --> 00:39:11,187
+Bu query'nin karşılığı
+
+292
+00:39:11,187 --> 00:39:12,427
+olan dokümanları
+
+293
+00:39:12,427 --> 00:39:14,707
+bu doküman sitinde içindeki
+
+294
+00:39:14,707 --> 00:39:16,768
+dokümanları bu mor yumurta
+
+295
+00:39:16,768 --> 00:39:17,488
+ile belirtiyorum.
+
+296
+00:39:18,488 --> 00:39:19,687
+Ondan sonra
+
+297
+00:39:19,687 --> 00:39:22,887
+benim kullanmış
+
+298
+00:39:22,887 --> 00:39:25,088
+olduğum information retrieval
+
+299
+00:39:25,088 --> 00:39:27,388
+engine sizin yapmış olduğunuz
+
+300
+00:39:27,388 --> 00:39:28,907
+query'e karşılık gidiyor.
+
+301
+00:39:29,528 --> 00:39:31,068
+Yeşil yumurtanın içerisinde
+
+302
+00:39:31,068 --> 00:39:32,588
+bulunan dokümanları getiriyor.
+
+303
+00:39:33,367 --> 00:39:35,107
+Şimdi size 10 tane
+
+304
+00:39:35,107 --> 00:39:36,827
+sonuç gösterdim. Şimdi
+
+305
+00:39:36,827 --> 00:39:38,147
+size soruyorum yani
+
+306
+00:39:38,147 --> 00:39:41,028
+bu information retrieval
+
+307
+00:39:41,028 --> 00:39:42,867
+engine'in başarısını ölçebilir miyiz?
+
+308
+00:39:43,367 --> 00:39:44,848
+Ölçebiliriz. Nasıl
+
+309
+00:39:44,848 --> 00:39:47,387
+ölçeceğiz? Size göstermiş
+
+310
+00:39:47,387 --> 00:39:48,988
+olan dokümanlar nelerdi? Bu
+
+311
+00:39:48,988 --> 00:39:50,787
+yeşilin içerisindeki dokümanlardı.
+
+312
+00:39:51,407 --> 00:39:53,168
+Bu yeşilin içindeki dokümanların
+
+313
+00:39:53,168 --> 00:39:54,568
+acaba kaç tanesi
+
+314
+00:39:54,567 --> 00:39:57,127
+relevant. Yani kaç tanesi bu
+
+315
+00:39:57,127 --> 00:39:58,447
+kuyruğuyla ilgili? Yani şu
+
+316
+00:39:58,447 --> 00:40:01,067
+iki tane küme arasındaki kesişim
+
+317
+00:40:01,067 --> 00:40:02,407
+olan kısım. Şu kısım.
+
+318
+00:40:02,967 --> 00:40:05,267
+Bu nedir? Bu da
+
+319
+00:40:05,267 --> 00:40:09,068
+Precision A kesişim
+
+320
+00:40:09,068 --> 00:40:10,747
+B. A kesişim B'nin
+
+321
+00:40:10,747 --> 00:40:12,568
+şuradaki alanın
+
+322
+00:40:12,568 --> 00:40:15,268
+B'ye oranı. Yani bana getirmiş
+
+323
+00:40:15,268 --> 00:40:17,087
+olduğum dökümanlar içerisinde
+
+324
+00:40:17,087 --> 00:40:19,367
+acaba yüzde kaçı
+
+325
+00:40:19,367 --> 00:40:20,927
+ne kadarı
+
+326
+00:40:20,927 --> 00:40:22,827
+relevant? Bu da bunu söylüyor.
+
+327
+00:40:22,827 --> 00:40:27,147
+A kesişim B bölü B'nin kendisi.
+
+328
+00:40:27,867 --> 00:40:31,488
+O yüzden de hatırlayın şuradaki soru neyi söylüyordu?
+
+329
+00:40:33,047 --> 00:40:34,788
+Are all retrieved documents relevant?
+
+330
+00:40:35,327 --> 00:40:39,867
+Yani bana getirdiğim dokümanlar içerisinde hepsi relevant mı?
+
+331
+00:40:39,967 --> 00:40:40,867
+Yüzde kaçı relevant?
+
+332
+00:40:41,047 --> 00:40:42,647
+İşte bunu ölçen precision.
+
+333
+00:40:43,587 --> 00:40:47,208
+Precision'in de şeyde göreceksiniz.
+
+334
+00:40:48,008 --> 00:40:50,708
+Farklı kaynaklarda, kitapta da aynı şekilde.
+
+335
+00:40:50,708 --> 00:40:53,308
+farklı değerleri vardır.
+
+336
+00:40:53,467 --> 00:40:55,088
+Precision Top 10 yapabilirsiniz.
+
+337
+00:40:55,268 --> 00:40:57,047
+Precision Top 20 yapabilirsiniz.
+
+338
+00:40:57,208 --> 00:40:59,047
+Top 30 yapabilirsiniz. Bu ne demek?
+
+339
+00:41:00,387 --> 00:41:01,228
+Son kullanıcıyı
+
+340
+00:41:01,228 --> 00:41:02,568
+gösterdiğiniz ilk 10
+
+341
+00:41:02,568 --> 00:41:05,228
+sonuç içerisinde Precision'e
+
+342
+00:41:05,228 --> 00:41:07,047
+bakabilirsiniz. Ya da son
+
+343
+00:41:07,047 --> 00:41:09,448
+20 içerisinde bakabilirsiniz.
+
+344
+00:41:09,747 --> 00:41:11,407
+Hani ilk 10 ya da
+
+345
+00:41:11,407 --> 00:41:13,247
+ilk 20 ya da ilk 30
+
+346
+00:41:13,247 --> 00:41:14,948
+sonuç içerisinde bakabilirsiniz.
+
+347
+00:41:15,407 --> 00:41:17,728
+Dolayısıyla Precision'ı
+
+348
+00:41:17,728 --> 00:41:18,368
+da
+
+349
+00:41:18,367 --> 00:41:20,507
+tek başına kullanmıyoruz.
+
+350
+00:41:20,687 --> 00:41:21,987
+Top 10, Top 20 gibi
+
+351
+00:41:21,987 --> 00:41:24,607
+değerle kullanıyoruz.
+
+352
+00:41:27,627 --> 00:41:29,087
+Recall dediğimiz şey ise
+
+353
+00:41:29,087 --> 00:41:31,487
+bana
+
+354
+00:41:31,487 --> 00:41:33,567
+Information Retrieving
+
+355
+00:41:33,567 --> 00:41:36,047
+engine'in getirmiş olduğu
+
+356
+00:41:36,047 --> 00:41:38,307
+dokümanlardaki relevant dokümanlar
+
+357
+00:41:38,307 --> 00:41:41,827
+acaba toplamdaki
+
+358
+00:41:41,827 --> 00:41:44,187
+relevant dokümanlar içerisinde yüzde kaç
+
+359
+00:41:44,187 --> 00:41:44,667
+oranında?
+
+360
+00:41:44,667 --> 00:41:49,768
+have all the relevant documents
+
+361
+00:41:49,768 --> 00:41:51,567
+recall ise bu
+
+362
+00:41:51,567 --> 00:41:52,827
+ikinci soruyla ilgilenir
+
+363
+00:41:52,827 --> 00:41:55,887
+demek ki burada da
+
+364
+00:41:55,887 --> 00:41:57,207
+A kesişin B'nin
+
+365
+00:41:57,552 --> 00:42:12,871
+A kesişim B'nin A'y bölümü. Yani bu Information Retrieval Engine'in getirmiş olduğu relevant dokümanların toplamdaki relevant dokümanlara oranına biz ne diyoruz? Recall metri diyoruz.
+
+366
+00:42:13,691 --> 00:42:19,431
+Bu ikisi kullanılarak bir tane Information Retrieval Engine'in başarısını ölçebiliriz.
+
+367
+00:42:19,431 --> 00:42:36,571
+Şimdi information retrieval engine eğer web ortamında çalışıyorsa bu oldukça çözmesi gereken problem sayısı artıyor.
+
+368
+00:42:36,572 --> 00:43:01,331
+Hani buradaki temel şey biz information retrieval engine'e web ortamında çalışıyorsa diyoruz ki bir iki tane keyword veriyoruz ve bu iki keyworddan yola çıkaraktan çok büyük ölçekli veri seti üzerinde en doğru yanıtları bulmasını istiyoruz.
+
+369
+00:43:01,331 --> 00:43:11,391
+ve bizim ilk onda bize göstermiş olduğu sonuçlarda da bizim aramış olduğumuz dokümanları çıkartmasını istiyoruz.
+
+370
+00:43:12,391 --> 00:43:21,331
+Dolayısıyla bu web ortamında bu işi yaparken bu retrieval enjinlerin işi çok daha zor.
+
+371
+00:43:21,331 --> 00:43:32,331
+ve web ortamında genellikle bizim kullandığımız metrik precision metriği, precision top 10 metriği
+
+372
+00:43:32,331 --> 00:43:39,632
+precision top 10, dikkat ederseniz siz bir arama yaparsanız genelde ilk 10 sonuca bakıyorsunuz
+
+373
+00:43:39,632 --> 00:43:43,971
+eğer ilk 10 sonuçta aradığınızı bulamazsanız keyword'ünüzü değiştiriyorsunuz
+
+374
+00:43:43,971 --> 00:43:49,691
+yani gidip ilk 20'ye, ilk 30'a, ilk 40'a bakan kullanıcı sayısı azdır
+
+375
+00:43:49,691 --> 00:44:00,812
+Dolayısıyla genelde bir information retrieval engine'in başarısı precision top-down metriğiyle ölçülür.
+
+376
+00:44:02,191 --> 00:44:16,872
+Recall metriğini web ortamında ölçemiyoruz. Neden? Çünkü bir kelimenin web ortamında gerçek olarak kaç tane karşılığı olduğunu bilemiyoruz.
+
+377
+00:44:16,871 --> 00:44:31,751
+yani recall'u bulabilmem için o döküman seti ortamında bu kelimeleri içeren gerçekteki dökümanları benim bilmem güç.
+
+378
+00:44:32,591 --> 00:44:37,571
+Dolayısıyla da ben şuradaki pay kısmını bilebilirim.
+
+379
+00:44:37,571 --> 00:44:46,191
+bana göstermiş olduğu ilk 10 sonuç içerisinde kaç tanesinin relevant olduğunu tamam tespit edebilirim ama
+
+380
+00:44:46,191 --> 00:44:55,351
+bu payda kısmında bu kelimelerin gerçekten içinde olduğu relevant dokümanları bulabilmem imkansız.
+
+381
+00:44:55,351 --> 00:45:04,991
+Ondan dolayı da biz daha çok hesaplayabileceğimiz, bulabileceğimiz precision metriyeni kullanarak web ortamındaki başarıyı ölçmeye çalışıyoruz.
+
+382
+00:45:04,992 --> 00:45:25,611
+Diğer bir başarı ise diversity. Şu anda search engine'lerin birbirine karşı başarısı ölçülürken sadece aranılan relevant dokümanları ilk onda getirmesine bakmıyoruz.
+
+383
+00:45:25,611 --> 00:45:34,912
+Bir de acaba bunları hangileri farklı domenlerden getirmiş? Yani diversity'ye dikkat edilmiş buna bakıyoruz.
+
+384
+00:45:35,507 --> 00:46:03,707
+Eğer bir tane search engine, diyelim ki Bing'de bir arama yapıyoruz. Bing bana aradığım kelimenin karşılığı olan search result'ını getirdi. Ama hepsini aynı domeninden getirdi. Google'da yapıyorum. Google'da benim yapmış olduğum search'e karşılık sonuçları getirdi ama farklı farklı domenlerden getirdi. Bu durumda ben Google'ın sonuçlarına daha çok güveniyorum. Çünkü bana tek bir sayfanın görüşünü empoze etmeye çalışmıyor.
+
+385
+00:46:03,707 --> 00:46:13,667
+diğerisi farklı sayfalardan gelen benim kelimeme karşılık gelmiş olan bilgileri içi iftiva eden sayfaları bana gösteriyor.
+
+386
+00:46:16,947 --> 00:46:30,207
+Genelde de bir arama motorunun ya information retrieval engine'inin başarısını precision recall metrikleriyle, grafikleriyle gösteririz.
+
+387
+00:46:30,207 --> 00:46:35,587
+Precision Recall grafiğinde X ekseninde recall olur, Y ekseninde Precision olur.
+
+388
+00:46:36,307 --> 00:46:43,527
+X ekseninde recall değerlerini öncelikle sıfırdan başlatarak 100'e kadar %10 şeklinde arttırırım.
+
+389
+00:46:44,387 --> 00:46:52,627
+Ondan sonra da işte %10'luk recall olduğu durumda acaba Precision ne oluyor?
+
+390
+00:46:52,627 --> 00:46:54,347
+Bunu tespit etmeye çalışırım.
+
+391
+00:46:54,727 --> 00:46:56,407
+Yani ne yapmaya çalışırım?
+
+392
+00:46:56,408 --> 00:47:12,927
+derim ki acaba diyelim ki doküman setimde 100 tane şey var, doküman var. Bu dokümanlar içerisinde de işte 10 tane benim girmiş olduğum query'e karşılık gelen relevant doküman var.
+
+393
+00:47:12,927 --> 00:47:29,547
+Şimdi bu relevant dokümanlardan bir tanesini arama sonucuna sokabilmek için yapmış olduğum aramada benim precision değerim ne olur?
+
+394
+00:47:29,547 --> 00:47:42,188
+Mesela buradaki örnekte bu information retrieval engine bu durumda %100'miş. Yani bir tane ilk göstermiş olduğu kelime kullanıcıya relevantmış.
+
+395
+00:47:42,188 --> 00:48:08,248
+Eğer iki tane kelime gösterdiği zaman son kullanıcıya bu Information Retrieval Engine, precision'i hala %100 demek ki iki tane gösteriyor. Bu 2 bölü 10 çünkü toplamda 10 tane relevant var dedim. 2 bölü 10 %20 ve iki tane gösterdiği için gösterdiklerinin tamamı relevant %100.
+
+396
+00:48:08,247 --> 00:48:36,747
+Bu information retrieval mesela ilk 3 tanesini relevant göstermiş. Dolayısıyla ilk 3 tanesi düşünüldüğünde recall %30 iken precision %100. Ondan sonra artık ilk 4 sonuçta yavaş yavaş düşüyor. Demek ki 4. sonuçta relevant olmayan bir şey getirmiş. %40 olduğu zaman precision değeri düşüyor.
+
+397
+00:48:36,747 --> 00:48:49,567
+Yani böylesi bir tabloyu öncelikle recall değerleri artarken buna karşılık gelen precision değerleri ne olmalıdır diye önce hesaplıyorum sonra da bu grafiği çiziyorum
+
+398
+00:48:56,019 --> 00:49:05,280
+Şimdi biz bir Information Retrieval Engine'in başarısını ölçerken nasıl ölçüyoruz dedik.
+
+399
+00:49:05,619 --> 00:49:06,860
+Bir query giriyoruz dedik.
+
+400
+00:49:07,119 --> 00:49:11,239
+Bu query'e karşılık gelen precision ve recall değerlerini buluyoruz dedik.
+
+401
+00:49:11,719 --> 00:49:18,499
+Ama bunu yaparken sadece bir query'e bağlı olarak şeyi ölçmeyiz.
+
+402
+00:49:20,879 --> 00:49:24,139
+Information Retrieval Engine'in başarısını ölçmeyiz.
+
+403
+00:49:24,139 --> 00:49:30,239
+Yani tek bir query girip precision recall'ları alıp bunu kullanarak karşılaştırmayız.
+
+404
+00:49:30,380 --> 00:49:31,239
+Burada ne yapıyoruz?
+
+405
+00:49:32,099 --> 00:49:34,659
+Çok sayıda query seçiyoruz.
+
+406
+00:49:35,779 --> 00:49:40,999
+Bu querylerin de farklı alanlardan gelmesini tercih ediyoruz.
+
+407
+00:49:41,759 --> 00:49:48,459
+Her bir query için Information Retrieval Engine'in recall ve precision değerlerini buluyoruz.
+
+408
+00:49:48,459 --> 00:49:54,700
+ve farklı recall değerleri için
+
+409
+00:49:54,700 --> 00:49:57,419
+precision değerlerini hesaplıyoruz
+
+410
+00:49:57,419 --> 00:49:59,019
+yani şuradaki tabloyu
+
+411
+00:49:59,019 --> 00:50:03,859
+birden fazla query için hesaplıyoruz arkadaşlar
+
+412
+00:50:03,859 --> 00:50:05,499
+dikkat edin
+
+413
+00:50:05,499 --> 00:50:06,939
+P of R E
+
+414
+00:50:06,939 --> 00:50:09,299
+yani buradaki şey
+
+415
+00:50:09,299 --> 00:50:11,079
+şuradaki değerleri
+
+416
+00:50:11,079 --> 00:50:13,279
+birden fazla query için hesaplayıp
+
+417
+00:50:13,279 --> 00:50:14,619
+bunların ortalamasını alıyoruz
+
+418
+00:50:14,619 --> 00:50:16,719
+yani şu tabloyu diyelim ki
+
+419
+00:50:16,719 --> 00:50:18,139
+birinci query için hesapladım
+
+420
+00:50:18,139 --> 00:50:20,179
+bir tane daha tablo ikinci
+
+421
+00:50:20,179 --> 00:50:22,239
+kuveri için bir tane daha tablo üçüncü kuveri
+
+422
+00:50:22,239 --> 00:50:23,699
+için ondan sonra
+
+423
+00:50:23,699 --> 00:50:25,979
+recallın sıfır olduğu durum için
+
+424
+00:50:25,979 --> 00:50:27,019
+buradaki
+
+425
+00:50:27,019 --> 00:50:30,179
+birinci tablodaki precision değeri
+
+426
+00:50:30,179 --> 00:50:32,139
+ikinci tablo üçüncü tablodaki precision
+
+427
+00:50:32,139 --> 00:50:33,879
+değerin ortalamasını alıp öyle
+
+428
+00:50:33,879 --> 00:50:36,059
+precision recall tablosuna
+
+429
+00:50:36,059 --> 00:50:36,479
+konuyorum.
+
+430
+00:50:37,959 --> 00:50:39,919
+Dolayısıyla yani benim o
+
+431
+00:50:39,919 --> 00:50:42,159
+en nihayetinde precision
+
+432
+00:50:42,159 --> 00:50:44,179
+recall için oluşturacağım bu
+
+433
+00:50:44,179 --> 00:50:45,359
+tabloyu oluştururken
+
+434
+00:50:45,359 --> 00:50:47,459
+tek bir puyleden gelen
+
+435
+00:50:47,459 --> 00:50:49,719
+tablodan elde ettiğim sonuçlarla
+
+436
+00:50:49,719 --> 00:50:51,719
+değil çok sayıda queryden
+
+437
+00:50:51,719 --> 00:50:53,439
+oluşmuş olan
+
+438
+00:50:53,439 --> 00:50:55,159
+çok sayıda tablodan aldığım
+
+439
+00:50:55,159 --> 00:50:57,539
+ortalamalar sonucunda oluşan tabloyu
+
+440
+00:50:57,539 --> 00:50:58,399
+kullanarak yapıyorum.
+
+441
+00:51:00,799 --> 00:51:03,599
+Ondan sonra da zaten precision recall
+
+442
+00:51:03,599 --> 00:51:04,919
+körlerini
+
+443
+00:51:04,919 --> 00:51:06,240
+çiziyorum.
+
+444
+00:51:10,260 --> 00:51:28,639
+Biz dedik ki bir arama motorunu kullanırken, biz arama motorunun başarısını ölçerken biz precision'e bakıyoruz. Precision'e bakarken de top 5, top 10, top 15, top 20, top 25 vs.
+
+445
+00:51:28,639 --> 00:51:38,139
+hani bu bize gösterilmiş olan sonuçlara bakıyoruz ama en yaygın olarak kullanılan top 10'dir. Yani precision top 10'dir.
+
+446
+00:51:38,139 --> 00:51:47,899
+recall web search ortamında çok anlamlı değil çünkü bir kelimeye karşılık gelmiş olan gerçekteki relevant doküman sayısını bilmemiz imkansız.
+
+447
+00:51:48,120 --> 00:51:58,959
+Ondan dolayı değil. Ama eğer benim bu information retrieval engine'i lokalde çalıştırıyorsam, kendi doküman setimi aramak üzerine çalıştırıyorsam,
+
+448
+00:51:59,319 --> 00:52:06,339
+o zaman kendi doküman setim içerisinde aramış olduğum kelimeye karşılık kaç tane relevant var bunu tespit edebilirim.
+
+449
+00:52:06,339 --> 00:52:28,620
+buradan yola çıkarak recall'u da hesaplayabilirim. Şu ana kadar biz neleri konuştuk tekrardan dönelim. Şu anda bu retrieval sistemin executable query'yi alıp
+
+450
+00:52:28,620 --> 00:52:38,980
+doküman indeksi üzerinde, inverted doküman indeksi üzerinde sonuçları bulup sıralandırılmış bir şekilde gösterdiği zaman ben bunun başarısını nasıl ölçerim konusunu konuştuk.
+
+451
+00:52:54,452 --> 00:53:01,892
+Şimdi ise bu inverted index diyordum ya, bu inverted index'in yapısını konuşacağız.
+
+452
+00:53:01,892 --> 00:53:24,011
+Inverted index'i ben bir tablo olarak kanıtmıştım size. Birinci tabloda kelimeler var. Daha doğrusu bir tablodur. Birinci kolonunda kelimeler var. Tablonun ikinci kolonunda ise bu kelimeleri içerisinde barındıran dokümanlar bir linked list şeklinde, sıralandırılmış bir linked list şeklinde duruyor.
+
+453
+00:53:24,011 --> 00:53:53,151
+şimdi bunu nasıl oluşturuyoruz buna bakacağız öncelikle o şekli hatırlayacak olursanız hani doküman koleksiyonu oluştururken web ortamında hani biz crawler kullanıyoruz crawler gidiyor farklı ISS sunucuları altında duran farklı Tomcat sunucuları altında duran dosyaları HTML dokümanlarını alıyor getiriyor ve doküman koleksiyonun içerisine koruyor
+
+454
+00:53:54,011 --> 00:54:15,691
+Biz bu doküman koleksiyonu içerisinde aradığımızı search zamanı yapamayacağımıza göre çünkü search'ün çok hızlı olması gerekiyor. Dolayısıyla bu dokümanı, doküman setini bir indekse dönüştürmemiz gerekiyor. Yani üzerinde çok hızlı arama yapabileceğimiz bir indekse dönüştürmemiz gerekiyor.
+
+455
+00:54:15,691 --> 00:54:41,111
+Şimdi bunu konuşacağız. Bizim arama motorlarının kullanmış olduğu indeks yapısına inverted indeks diyoruz. Çünkü biz dosyalara kelimelerden yola çıkaraktan ulaşıyoruz. Demek ki dosyaları distinctive kelimelere ne yapıyoruz? Match ettiriyoruz bu tabloda.
+
+456
+00:54:41,111 --> 00:54:55,351
+ve bu inverted index yapısını kullanırken bir kelimeyi bu inverted index tablosunda ararken ne yapıyoruz?
+
+457
+00:54:55,871 --> 00:55:02,831
+Bir lookup gerçekleştiriyoruz ve bu kelimenin bulunmuş olduğu entry'yi buluyoruz.
+
+458
+00:55:02,831 --> 00:55:13,591
+bu entry'deki kelimeye karşılık gelen doküman listesini alıp sıralandırılmış bir şekilde doküman listesini alıp son kullanıcıya gösteriyoruz.
+
+459
+00:55:23,539 --> 00:55:27,359
+Peki bu inverted index tablosunun yapısı nasıl?
+
+460
+00:55:28,020 --> 00:55:40,199
+Buraya baktığım vakit şurada bir sol tarafta A harfinin bulunduğu yerde bir tane inverted index tablosu var.
+
+461
+00:55:40,300 --> 00:55:44,239
+Bir de B harfinin olduğu yerde başka bir inverted index tablosu var.
+
+462
+00:55:44,939 --> 00:55:46,759
+Şimdi birincisi daha basit.
+
+463
+00:55:46,899 --> 00:55:51,199
+İkincisi biraz daha detaylı bilgi içeren inverted index tablosu.
+
+464
+00:55:51,279 --> 00:55:52,079
+Birinciye bakalım.
+
+465
+00:55:52,779 --> 00:55:57,519
+Birinci şunu diyor, ben diyor senin bana vermiş olduğun doküman seti içinde,
+
+466
+00:55:57,619 --> 00:56:01,479
+doküman seti de üç tane dokümandan oluşan bir doküman setiymiş.
+
+467
+00:56:02,199 --> 00:56:06,419
+Bu doküman setleri içerisinde işte şeyler var, cümleler var.
+
+468
+00:56:07,299 --> 00:56:15,159
+Diyor ki hani ben senden hani senin içerisindeki öncelikle kelime uzayını bulurum.
+
+469
+00:56:15,159 --> 00:56:21,659
+Yani birinci, ikinci ve üçüncü dokümanlar içerisinden kelime uzayını çıkartıyor.
+
+470
+00:56:22,079 --> 00:56:27,039
+Kelime uzayı, bu tabii ki distinktif kelimeler olması gerekiyor.
+
+471
+00:56:27,179 --> 00:56:29,979
+İçerisinde bulunan stop quote'ları vs. kullanmıyorum.
+
+472
+00:56:30,799 --> 00:56:38,219
+Ondan sonra bu kelime uzayındaki kelimeleri, bu benim inverted index tablomun enter'leri yapıyorum.
+
+473
+00:56:38,900 --> 00:56:40,279
+Key value'ları yapıyorum.
+
+474
+00:56:40,419 --> 00:56:42,859
+Tabloda key value var, bunlar olmuş oluyor.
+
+475
+00:56:42,859 --> 00:56:54,539
+Ondan sonra da bu kelimeleri içeren dokümanları da bu tablonun value kısmına yazıyorum.
+
+476
+00:56:54,539 --> 00:57:07,599
+Yani tablo key value şeklinde düşünecek olursak birinci kolonu key, ikinci kolonu value olarak düşünecek olursak bu kelimeyi içerisinde barındıran dokümanı da ne yapıyorum value kısmını da yazıyorum.
+
+477
+00:57:07,599 --> 00:57:09,580
+Mesela applications kimde varmış?
+
+478
+00:57:09,699 --> 00:57:10,739
+ED2'de varmış.
+
+479
+00:57:11,400 --> 00:57:12,659
+Hyperlink kimde varmış?
+
+480
+00:57:12,760 --> 00:57:13,819
+ED3'de varmış.
+
+481
+00:57:14,859 --> 00:57:16,019
+Mining kimde varmış?
+
+482
+00:57:16,159 --> 00:57:19,039
+Hem 1'de varmış, hem 2'de varmış, hem 3'de varmış.
+
+483
+00:57:20,720 --> 00:57:24,620
+Bu sol taraftaki tablo daha basit bir tablo.
+
+484
+00:57:24,620 --> 00:57:34,739
+Sağ taraftaki tablo ise dökümanın içerisinde bu kelime kaç defa geçmiş
+
+485
+00:57:34,739 --> 00:57:41,739
+ve dökümanın içerisinde bu kelime kaçıncı pozisyonda geçmiş bu bilgiyi de veriyor.
+
+486
+00:57:43,480 --> 00:57:45,400
+Mesela applications.
+
+487
+00:57:45,539 --> 00:57:47,219
+Applications neredeymiş?
+
+488
+00:57:47,480 --> 00:57:48,959
+İkinci dökümanda geçiyormuş.
+
+489
+00:57:49,299 --> 00:57:52,219
+İkinci dökümanda bir defa geçiyormuş.
+
+490
+00:57:52,539 --> 00:57:53,859
+Doğru bir defa geçiyor.
+
+491
+00:57:54,420 --> 00:58:00,439
+Bir de üçüncü pozisyonda yani kelime sıralaması içerisinde üçüncü pozisyonda.
+
+492
+00:58:00,439 --> 00:58:03,999
+Peki yani bu pozisyonları niye?
+
+493
+00:58:04,739 --> 00:58:07,219
+Şey yapıyorum yani tutma gereksinimi duyuyorum.
+
+494
+00:58:07,620 --> 00:58:12,620
+Hatırlarsınız biz proximity search diye bir tane search'dan bahsetmiştik.
+
+495
+00:58:12,620 --> 00:58:25,319
+Yani ben kelimelerin bir kelime grubunu arıyorum bir doküman içerisinde ve orada proximity search diye bir tane option var.
+
+496
+00:58:25,319 --> 00:58:28,280
+o durumunu işaretleyerek olursam
+
+497
+00:58:28,280 --> 00:58:30,400
+o kelime grubunu ararken
+
+498
+00:58:30,400 --> 00:58:32,260
+birbirine yakın olacak
+
+499
+00:58:32,260 --> 00:58:33,939
+şekilde olan
+
+500
+00:58:33,939 --> 00:58:35,679
+dokümanlara daha öncelik veriyorum.
+
+501
+00:58:35,840 --> 00:58:37,999
+Yani eğer o kelime grubundaki kelimeler
+
+502
+00:58:37,999 --> 00:58:40,060
+aynı paragraftaysa ya da aynı cümle
+
+503
+00:58:40,060 --> 00:58:41,779
+içimcindeyse o tür
+
+504
+00:58:41,779 --> 00:58:44,039
+dokümanlara daha fazla önem veriyorum.
+
+505
+00:58:45,359 --> 00:58:46,219
+Bir bunun için
+
+506
+00:58:46,219 --> 00:58:47,539
+gerekli bir de
+
+507
+00:58:47,539 --> 00:58:49,319
+eğer kelime
+
+508
+00:58:49,319 --> 00:58:51,799
+diyelim ki kelimenin
+
+509
+00:58:51,799 --> 00:58:53,079
+pozisyonu
+
+510
+00:58:54,099 --> 00:59:16,959
+Diyelim ki HTML dökümanı içerisinde işte meta tagler içerisindeyse bu kelime ya da HTML dökümanı içerisinde bir başlık içerisindeyse bu pozisyonun yanı sıra kelimenin döküman içerisindeki önemini ihtiva eden işte meta tag içinde olması,
+
+511
+00:59:16,959 --> 00:59:22,219
+işte bold olarak yazılmış olması, itelik olarak yazılmış olması gibi
+
+512
+00:59:22,219 --> 00:59:26,579
+kelimenin diğer kelimelerden farklı olduğunu gösteren bir takım bilgi varsa
+
+513
+00:59:26,579 --> 00:59:31,639
+bunu da aynı bunun pozisyonu gibi şu şeye yazıyorum.
+
+514
+00:59:32,179 --> 00:59:39,659
+Dikkat ederseniz burada sadece şu şey içerisinde şu notasyon bir tane dokümanı ifade ediyor
+
+515
+00:59:39,659 --> 00:59:42,899
+ama bunun içerisine zenginleştirilmiş bilgi koyuyorum.
+
+516
+00:59:42,899 --> 00:59:49,899
+Yani bunu üçlü bir eleman olarak buraya koyuyorum.
+
+517
+00:59:50,319 --> 00:59:53,460
+Bu üçlü eleman dörtlü olabilir, beşli olabilir, altılı olabilir.
+
+518
+00:59:53,940 --> 01:00:02,579
+Ben ne kadar bu dokümanda bu kelimenin geçtiği nokta ile ilgili ek bilgi koymak istiyorsam
+
+519
+01:00:02,579 --> 01:00:08,680
+buradaki küçük üçlü vektörü dörtlü, beşli, altılı vektörü dönüştürebilirim.
+
+520
+01:00:08,680 --> 01:00:09,680
+Okey.
+
+521
+01:00:09,680 --> 01:00:13,280
+buradaki örnekte sadece
+
+522
+01:00:13,280 --> 01:00:15,059
+üçlü bir vektör birincisi
+
+523
+01:00:15,059 --> 01:00:17,460
+dokümanın idc ikincisi dokümanda
+
+524
+01:00:17,460 --> 01:00:18,900
+bu kelime kaç defa geçmiş
+
+525
+01:00:18,900 --> 01:00:20,460
+üçüncüsü pozisyonu
+
+526
+01:00:20,460 --> 01:00:23,120
+mesela mining'e bakalım mining kelimesi
+
+527
+01:00:23,120 --> 01:00:24,460
+üç tane farklı dokümanda
+
+528
+01:00:24,460 --> 01:00:25,640
+geçmiş
+
+529
+01:00:25,640 --> 01:00:29,280
+birincisi birinci dokümanda ikinci dokümanda
+
+530
+01:00:29,280 --> 01:00:31,120
+üçüncü dokümanda birinci de
+
+531
+01:00:31,120 --> 01:00:32,480
+bir defa geçmiş
+
+532
+01:00:32,480 --> 01:00:34,840
+ikinci dokümanda
+
+533
+01:00:34,840 --> 01:00:36,960
+bir defa geçmiş mining
+
+534
+01:00:36,960 --> 01:00:38,019
+üçüncü dokümanda
+
+535
+01:00:38,019 --> 01:00:41,239
+mining kelimesi yine bir
+
+536
+01:00:41,239 --> 01:00:43,559
+defa geçmiş. Her birisinde
+
+537
+01:00:43,559 --> 01:00:45,460
+pozisyonları farklı. Mesela structure
+
+538
+01:00:45,460 --> 01:00:47,219
+ise üçüncü
+
+539
+01:00:47,219 --> 01:00:49,119
+dokümanda structure iki tane
+
+540
+01:00:49,119 --> 01:00:50,140
+geçtiği için burada
+
+541
+01:00:50,140 --> 01:00:53,299
+value iki. Hem ikinci
+
+542
+01:00:53,299 --> 01:00:55,040
+sırada hem sekizinci sırada olduğu için
+
+543
+01:00:55,040 --> 01:00:57,199
+dikkat edin pozisyonlarına birden
+
+544
+01:00:57,199 --> 01:00:59,040
+fazla olduğu için bu şekilde belirtmişim.
+
+545
+01:00:59,999 --> 01:01:00,960
+Okey. İşte bu
+
+546
+01:01:00,960 --> 01:01:02,859
+oluşturduğumuz şey inverted index.
+
+547
+01:01:03,939 --> 01:01:05,219
+Biz ne yapıyoruz?
+
+548
+01:01:05,379 --> 01:01:06,579
+Inverted index de
+
+549
+01:01:06,579 --> 01:01:08,499
+ne yapıyoruz?
+
+550
+01:01:09,259 --> 01:01:09,979
+Vocabulary
+
+551
+01:01:09,979 --> 01:01:11,899
+search yapıyoruz. Öncelikle
+
+552
+01:01:11,899 --> 01:01:14,499
+bana gelmiş olan query'ye
+
+553
+01:01:14,499 --> 01:01:15,739
+bir lookup yapıp
+
+554
+01:01:15,739 --> 01:01:17,859
+hangi entry'de olduğunu
+
+555
+01:01:17,859 --> 01:01:19,639
+şey yapıyorum. Eğer bana bir
+
+556
+01:01:19,639 --> 01:01:22,199
+query grubu verilmişse yani
+
+557
+01:01:22,199 --> 01:01:23,939
+mesela web mining verildi diyelim.
+
+558
+01:01:24,439 --> 01:01:25,979
+O durumda birincisi
+
+559
+01:01:25,979 --> 01:01:28,019
+web'e gideceğim, şu entry'e gideceğim.
+
+560
+01:01:28,139 --> 01:01:30,040
+İkincisi mining'e gideceğim, şu entry'e
+
+561
+01:01:30,040 --> 01:01:31,899
+gideceğim. Burada bir, iki,
+
+562
+01:01:31,999 --> 01:01:33,760
+üç döküman var. Web'de bir, iki,
+
+563
+01:01:33,839 --> 01:01:36,040
+iki tane döküman var. Yani
+
+564
+01:01:36,040 --> 01:01:57,840
+Birinci kelimeden dolayı üç tane doküman geldi. İkinci kelimeden dolayı iki tane doküman geldi. Sonra ne yapıyorum? Gelen sonuçları ne yapıyorum? Merge ediyorum. Merge ederken bunları neye göre merge ediyorum? Bunların TF-IDF skorlarına dayalı olarak merge ediyorum.
+
+565
+01:01:57,839 --> 01:02:10,059
+Yani burada her bir kelimenin hangi dokümandaki önemini ifade eden şu kelimenin şu doküman içerisinde önemini ifade eden TFIDF skoru bilgim var.
+
+566
+01:02:10,199 --> 01:02:13,619
+Şunun şunun üzerindeki önemini ifade eden TFIDF var.
+
+567
+01:02:14,039 --> 01:02:17,839
+Bunun da aynı şekilde bunları yaparaktan result'ları merge ediyorum.
+
+568
+01:02:17,839 --> 01:02:31,259
+Ondan sonra da elde etmiş olduğum merge resultlar yani birleştirilmiş sonuçlar üzerinde de son kullanıcıya göstermeden tekrardan bir yeniden sıralandırma yapıyorum.
+
+569
+01:02:31,539 --> 01:02:36,679
+Bu yeniden yapmış olduğum sıralandırma genellikle link-based sıralandırma olur.
+
+570
+01:02:37,099 --> 01:02:39,199
+Eğer bu bir web search domainindeyse.
+
+571
+01:02:40,279 --> 01:02:45,299
+Link-based sıralandırmada kullandığımız yöntemi bu bölümde çalışmayacağız.
+
+572
+01:02:45,299 --> 01:02:47,059
+Bir başka çeptirde çalışacağız.
+
+573
+01:02:47,059 --> 01:02:53,659
+Ama demek ki şeyden sonra inverted index'den gelen sonuçları
+
+574
+01:02:54,996 --> 01:03:04,095
+birleştirdikten sonra direkt olarak son kullanıcıyı göstermiyorum. Öncesinde tekrardan bir ring-ring işlemi yapıyorum. Ondan sonra gösteriyorum.
+
+575
+01:03:09,012 --> 01:03:27,091
+Şimdi hani farklı arama motorları hani farklı başarılı sonuçlar gösteriyor. İşte bunun temelindeki sebep bunların inverted indeksi içerisine ne kadar ek bildik bilgi koyduklarından dolayı.
+
+576
+01:03:27,091 --> 01:03:53,232
+inverted index içerisine işte kelime title'da mı, body'de mi, meta tag'de mi ondan sonra bu bilgileri koydukları vakit şey yaparken kelimeyle işte dokümanı match ederken ve sıralandırılmış sonuç listesini gösterirken daha başarılı sonuçlar halde edebiliyorlar.
+
+577
+01:03:53,231 --> 01:04:05,031
+Bir de son kullanıcıdan query'i aldıkları zaman bu query'i daha başarılı sonuç elde etmek için expand ediyorlar mevcuttaki search engine'ler
+
+578
+01:04:05,031 --> 01:04:13,091
+Yani ne demek? Diyelim ki siz işte web mining dersiyle ilgili bir araştırma yapıyorsanız, bir search yapıyorsanız
+
+579
+01:04:13,092 --> 01:04:23,291
+sizin daha önce yapmış olduğunuz search'lerden de yola çıkaraktan mevcuttaki web mining kelimelerin yanına bir takım ek kelimeler koyuyorlar.
+
+580
+01:04:23,852 --> 01:04:35,752
+Yani siz diyelim ki web mining'den önce İstanbul yazdınız, web mining'den önce Yıldız Teknik Üniversitesi yazdınız, search yaptınız.
+
+581
+01:04:35,751 --> 01:05:02,571
+web mining'den önce işte İstanbul'daki lokantaları search ettiniz. Akıllı bir arama motoru ne yapıyor? Bütün bunlardan sonra siz web mining girdiğiniz zaman sizin web miningle ilgili göstereceği sonuçlar içerisine gidip Çin'deki bir üniversitede verilmiş olan web mining dersinin sonuçlarını ilk 10 sonuçta getirmiyor.
+
+582
+01:05:02,571 --> 01:05:32,551
+ne yapıyor? İlk 10 sonuçta getireceği şeyler içerisinde sizin bulunmuş olduğunuz lokasyonu, sizin bulunmuş olduğunuz, sizin girmiş olduğunuz kelimelerden hangi şehirde, hangi ülkede olduğunuzu takip ediyor ve size getireceği sonuçlarda da web mining kelimesini içeren sonuçları da bu bilgilere dayalı olarak getiriyor.
+
+583
+01:05:32,571 --> 01:06:00,251
+Dolayısıyla sizin search'ünüzü expand ediyor. Sizin bulunduğunuz search'e ek kelimeler ekliyor. Belki İstanbul'a ekliyor, belki Türkiye'ye ekliyor, belki Yıldız Teknik Üniversitesi'ne ekliyor. Ama bu yapmış olduğu expansion'ı size göstermiyor. Bunu geri planda gerçekleştiriyor. Ve bu da size göstermiş olduğu ilk 10 tane sonuçta sizin daha çok tercih edeceğiniz sonuçları görmenizi sağlıyor.
+
+584
+01:06:06,356 --> 01:06:34,116
+Evet, bizim konuştuğumuz Boolean Information modeldi, ondan sonra Vector Space modeldi. Bunun haricinde başka Information Retrieval yöntemleri de var. Statistical Language model Information Retrieval modeli var. Latent Semantic Index'in Information Retrieval modeli var. Bunun dışında da başka Information Retrieval yöntemlerimiz var.
+
+585
+01:06:34,116 --> 01:06:45,536
+Bunun dışında bizim şu anda konuşmadığımız bu indeksi biz indeksin size'ını düşük tutmak için işte stop word removal yapmaktan bahsettik.
+
+586
+01:06:45,536 --> 01:07:01,756
+bunun dışında işte systemic yapmaktan bahsettik ama onun dışında hala indeks çok büyük ölçekli verilerde ya da çok fazla kelime ihtiva eden dillerde oldukça büyük olacağı için
+
+587
+01:07:01,755 --> 01:07:19,595
+index compression yöntemleri var. Bunlar konusunda da konuşmadık. Onun dışında ne dedik? TF-IDF'e dayalı olarak bir kelimenin bir doküman için ne kadar önemli olduğunu konuştuk.
+
+588
+01:07:19,595 --> 01:07:41,216
+buna göre sıralandırdık dedik. Daha sonra da bu TF-IDF tabanlı sıralandırılmış sonuçları bunu link analizi sonuçlarıyla birleştirip tekrardan sıralandırıyoruz dedik. Link analiziyle ilgili kısımları ileriki çeptırlarda konuşacağız. Web Structure Mining'i konuşurken konuşacağız.
+
+589
+01:07:41,216 --> 01:07:51,036
+web sayfaların pre-processing konusunda detaya inmedik ama bununla ilgili detayları biraz da kitaptan okuyabilirsiniz.
+
+590
+01:07:51,036 --> 01:07:56,995
+Web spam konusundan biraz bahsettik. Web spamın e-mail spamdan nasıl farklı olduğunu söyledik ama
+
+591
+01:07:56,995 --> 01:08:01,695
+bunun nasıl önleyeceğimiz konusuna çok detaylı olarak girmedik.
+
+592
+01:08:02,835 --> 01:08:11,095
+Farklı ranking makinizmaları nasıl kombine ettiğimiz konusuna girmedik ama bunun dışında kalan
+
+593
+01:08:11,216 --> 01:08:25,216
+kısımları cover ettik diye düşünüyorum. İsterseniz bir ara verelim arkadaşlar. Benim şu anda saatim 10'u 10 geçiyor. Bir 10 dakika ara verelim. 10'u 20 geçe devam edelim.
+
+594
+01:19:32,020 --> 01:19:34,520
+Evet arkadaşlar, devam edelim.
+
+595
+01:19:39,731 --> 01:19:57,731
+Bu arada haftaya sınav yapacağız. Bildiğiniz olsun. Haftaya vize haftası. Geldiğimiz konu, yani ilk beşinci hariç ilk altı çeptirle ilgili konuları konulardan sorumlu olacaksınız.
+
+596
+01:19:57,731 --> 01:20:09,152
+multiple questions'lar da olabilir içerisinde.
+
+597
+01:20:09,152 --> 01:20:11,691
+Yani multi choice sorular da olabilir.
+
+598
+01:20:12,471 --> 01:20:17,912
+İçerisinde doğru yanlış olacak şekilde bilginizi ölçen sorular da olabilir.
+
+599
+01:20:20,831 --> 01:20:24,371
+Bu yeni sınav sistemi var şu anda.
+
+600
+01:20:24,751 --> 01:20:26,031
+Üniversitenin satın aldığı.
+
+601
+01:20:26,031 --> 01:20:34,671
+bu yeni sınav sistemi üzerinde olacak. Ben de bu sınav sistemini açıkçası çok detaylı incelemedim. Onun bilgisi bize yeni geldi.
+
+602
+01:20:36,211 --> 01:20:46,191
+Ama yine bununla ilgili sizler de bilgilendirirsiniz. Bir değişiklik olursa gelecek hafta olmaması konusunda sizi bilgilendiririm.
+
+603
+01:20:46,191 --> 01:21:04,191
+ama şu anda hani sınavla ilgili, vize sınavıyla ilgili olacağını söylüyorum. Hangi konuları kabul ettiğini de söylüyorum. İlgili chapter'ları dersin sayfasından indirebilirsiniz, slide'ları indirebilirsiniz.
+
+604
+01:21:04,191 --> 01:21:32,051
+Burada kitabın sayfasında daha kapsamlı olarak chapter'lar var. Aynı zamanda kitapta bunların PDF'leri var. Kitaptaki chapter'lardaki örnekleri mutlaka çalışın. Oradaki örnekler ve kitabın ilgili chapter'ların sonundaki sorulara mutlaka çalışın. Onlar sizi sınava iyi çalışmak konusunda yönlendirici olacaktır.
+
+605
+01:21:32,051 --> 01:21:44,592
+Dediğim gibi multiple choice questions, içerisinde true-false içeren sorular olan bir sınav olarak düşünebilirsiniz.
+
+606
+01:21:47,351 --> 01:21:49,832
+Sınav yine ders saatinde olacaktır.
+
+607
+01:21:53,876 --> 01:22:14,335
+Bugün biraz web crawling konusuna gireceğim. Bu konu sınavda sorumlu olacağınız bir konu değil. Biraz bu konudan bahsettikten sonra projeleriyle ilgili konuşmak isteyen arkadaşlarımla konuşmak istiyorum.
+
+608
+01:22:14,335 --> 01:22:33,535
+Az önceki biz information retrieval engine'lerin yapısını konuşurken bir doküman koleksiyonunu crawler'ın oluşturduğunu söyledik. Özellikle web search engine'ler için.
+
+609
+01:22:37,524 --> 01:22:41,423
+Şimdi bu crawler'lar bunu nasıl oluşturuyorlar?
+
+610
+01:22:41,543 --> 01:22:49,743
+Yani crawler'lar bir doküman merkezi ortamda yerleşik olan bu doküman koleksiyonunu nasıl oluşturuyorlar?
+
+611
+01:22:51,643 --> 01:22:54,583
+Tabii aklınızda şu olmalı.
+
+612
+01:22:55,944 --> 01:23:01,903
+Sonuçta biz web search ortamında çok büyük ölçekli veriyle uğraştığımız için,
+
+613
+01:23:01,903 --> 01:23:10,683
+yani milyonlar mertebesinde dokümanla ulaştığımız için hatta web search'te milyarlar seviyesinde dokümanla ulaşıyoruz.
+
+614
+01:23:12,443 --> 01:23:19,384
+Ama bazen yine bazı web search enginleri var ki bunlar dikey web search enginleri.
+
+615
+01:23:19,384 --> 01:23:32,564
+Yani elektronik alanındaki sayfaları aramanızı sağlayan search engine'ler ya da tarifler konusunda arama yapmanıza ihtiyaç var.
+
+616
+01:23:33,464 --> 01:23:40,384
+Bunların yönetmiş olduğu ya da arama yapmış olduğu doküman sayısı tabii ki milyonlar mertebesine iniyor.
+
+617
+01:23:40,383 --> 01:23:52,743
+Şimdi bu arama motorları bu dokümanları merkezi ortamda toplamak için crawler kullanıyorlar.
+
+618
+01:23:52,743 --> 01:23:57,703
+Merkezi ortamda topluyorlar ama bu merkezi ortamda da tek not üzerinde bunlar durmuyor.
+
+619
+01:23:58,283 --> 01:24:03,643
+Yani merkezi ortamda dağıtık sistem mimarisine dayalı olarak bu dokümanlar tutuluyor.
+
+620
+01:24:04,203 --> 01:24:04,703
+Nedir bu?
+
+621
+01:24:04,704 --> 01:24:30,424
+İşte siz bu dokümanları indiriyorsunuz. Bir işte data center'ınız var. Bu data center'ınız üzerindeki klastra bu dokümanları çok not üzerine bir NoSQL veri saklama teknolojisi kullanarak tutuyorsunuz ve bunun üzerinde siz indeksleme çalışmalarını yapıyorsunuz.
+
+622
+01:24:30,423 --> 01:24:47,783
+Dolayısıyla indirmiş olduğunuz dokümanların büyüklükleri yani hacmi diyelim toplamdaki doküman sayısı diyelim tek not üzerinde tutulamayacak kadar büyük olduğu için bunu dağıtık sistem mimarisine dayalı olarak çok not üzerinde tutuyorsunuz.
+
+623
+01:24:47,783 --> 01:25:00,323
+Ama sonuçta bunu kendi merkezi ortamınıza indirmeniz gerekli ki bunun üzerinde bu indeksleme yapabilmeniz için gerekli olan text preprocessing çalışmalarını yapabilir.
+
+624
+01:25:03,063 --> 01:25:14,883
+Peki bu merkezi ortama getirmekle sorumlu olan, dokümanları merkezi ortama getirmekle sorumlu olan crawlerlar nasıldır, nasıl çalışır?
+
+625
+01:25:15,744 --> 01:25:20,484
+Önceliklerini bunun motivasyonundan başlayarak bunun taksonomisine gireceğiz.
+
+626
+01:25:20,484 --> 01:25:24,484
+Yani hangi farklı tipte crawlerlar vardır.
+
+627
+01:25:25,044 --> 01:25:31,943
+Sonra en temel bir crawler'ı alıp bu crawler'ı implement etmek istediğimizde
+
+628
+01:25:31,943 --> 01:25:34,503
+hani nelere dikkat etmemiz gerekli bunlara bakacağım.
+
+629
+01:25:34,604 --> 01:25:36,684
+Öncelikle motivasyonumuzdan bakalım.
+
+630
+01:25:38,344 --> 01:25:44,264
+Biz bir query'yi search ederken bu query bir indeks üzerinde oluyor dedik.
+
+631
+01:25:44,263 --> 01:25:45,963
+Yani bu query'ye karşılık gelen
+
+632
+01:25:45,963 --> 01:25:47,963
+sonuçları
+
+633
+01:25:47,963 --> 01:25:49,783
+tespit eden search işlemi
+
+634
+01:25:49,783 --> 01:25:51,563
+bir indeks üzerinde yapılıyor.
+
+635
+01:25:52,083 --> 01:25:53,883
+Yani ben query'ye girdim
+
+636
+01:25:53,883 --> 01:25:55,823
+bana ilk 10 sonucu getirdi.
+
+637
+01:25:56,363 --> 01:25:57,743
+Bu sonuçlar bir indeks
+
+638
+01:25:57,743 --> 01:25:58,683
+üzerinden geliyor.
+
+639
+01:25:59,723 --> 01:26:02,083
+Dolayısıyla daha önceden
+
+640
+01:26:02,083 --> 01:26:03,983
+benim bu kelimeye
+
+641
+01:26:03,983 --> 01:26:05,623
+karşılık gelmiş olan kelime
+
+642
+01:26:05,623 --> 01:26:06,923
+dokümanları
+
+643
+01:26:06,923 --> 01:26:09,323
+indirmiş olan bir uygulamam
+
+644
+01:26:09,323 --> 01:26:11,463
+olması lazım. İşte bu da
+
+645
+01:26:11,463 --> 01:26:12,063
+crawler.
+
+646
+01:26:14,263 --> 01:26:23,443
+Crawler'ın temeldeki fikri şu, siz ilk başta belli sayıda URL veriyorsunuz crawler'a.
+
+647
+01:26:23,503 --> 01:26:28,663
+Diyorsunuz ki, arkadaş ben sana bu URL'leri veriyorum, bunlar senin başlangıç noktan.
+
+648
+01:26:29,323 --> 01:26:31,763
+Öncelikle git bu URL'leri indir.
+
+649
+01:26:33,332 --> 01:26:35,832
+HTTP request yap bu yörelleri indir.
+
+650
+01:26:36,371 --> 01:26:38,292
+Yörelleri indir ne demek?
+
+651
+01:26:38,411 --> 01:26:41,511
+Yörelleri karşılık gelen HTML dosyalarını indir.
+
+652
+01:26:41,651 --> 01:26:42,271
+Nasıl indirecek?
+
+653
+01:26:42,391 --> 01:26:43,651
+HTTP request yapacak.
+
+654
+01:26:43,792 --> 01:26:47,212
+HTTP response objesi içerisinde bu HTML'ler gelecek.
+
+655
+01:26:48,471 --> 01:26:57,491
+Ondan sonra bu indirmiş olduğun yöreller içerisinden tekrardan bunları parset, her birini parset, bunların içerisinden de yöreller çıkar.
+
+656
+01:26:57,491 --> 01:27:02,971
+Bu sefer de bu yeni çıkarmış olduğun yöreller için gidip onları indir.
+
+657
+01:27:02,971 --> 01:27:08,231
+Yani onlar için eşitipi request yap onların karşılık gelen dokümanları indir.
+
+658
+01:27:08,591 --> 01:27:09,552
+Ne yapıyormuşuz?
+
+659
+01:27:10,172 --> 01:27:13,832
+İlk başta belli sayılı URL'den başlıyoruz bunları gidiyoruz indiriyoruz.
+
+660
+01:27:14,611 --> 01:27:19,091
+Bunların içerisinde parse yapıp yeni URL'ler çıkartıyoruz.
+
+661
+01:27:20,912 --> 01:27:24,931
+Bu yeni URL'lere de tekrardan gidiyoruz bunları indiriyoruz.
+
+662
+01:27:26,211 --> 01:27:32,232
+Onların parse edip onların içerisinden yeni URL'ler buluyoruz.
+
+663
+01:27:32,231 --> 01:27:34,371
+şu yeni yöreller. Bunlar için tekrardan
+
+664
+01:27:34,371 --> 01:27:35,851
+gidiyoruz. Yeni dokümanlar
+
+665
+01:27:35,851 --> 01:27:38,251
+şey bu yeni dokümanları indiriyoruz.
+
+666
+01:27:38,411 --> 01:27:40,251
+Yeni web sayfalarına.
+
+667
+01:27:41,751 --> 01:27:42,371
+Onları da
+
+668
+01:27:42,371 --> 01:27:44,351
+yine pars ediyoruz.
+
+669
+01:27:44,491 --> 01:27:46,031
+Onların içerisinden de yöreller
+
+670
+01:27:46,031 --> 01:27:48,251
+çıkartıyoruz. Tekrardan gidiyoruz.
+
+671
+01:27:48,431 --> 01:27:49,412
+Onları da indiriyoruz.
+
+672
+01:27:54,291 --> 01:27:56,211
+Şimdi diyelim ki
+
+673
+01:27:56,211 --> 01:27:58,471
+ben bu indirme işlemini
+
+674
+01:27:58,471 --> 01:28:00,531
+öyle bir konfigüre etmişim ki
+
+675
+01:28:00,531 --> 01:28:02,692
+birinci, ikinci, üçüncü adımda
+
+676
+01:28:02,692 --> 01:28:04,012
+benim şeyim durmuş.
+
+677
+01:28:04,851 --> 01:28:05,951
+Yani üç tane
+
+678
+01:28:05,951 --> 01:28:08,471
+birinci seed yörelden başlayarak
+
+679
+01:28:08,471 --> 01:28:09,411
+üç tane
+
+680
+01:28:09,411 --> 01:28:11,832
+seviyeye gittikten sonra
+
+681
+01:28:11,832 --> 01:28:13,871
+benim crawlerum durmuş.
+
+682
+01:28:14,631 --> 01:28:16,552
+Şimdi artık ben ne yaptım?
+
+683
+01:28:16,631 --> 01:28:17,611
+Bu kadar dokümanı
+
+684
+01:28:17,611 --> 01:28:20,411
+bu kadar dokümanı
+
+685
+01:28:20,411 --> 01:28:22,011
+indirmiş oldum. Şimdi
+
+686
+01:28:22,011 --> 01:28:24,251
+ben bu kadar dokümanı
+
+687
+01:28:24,251 --> 01:28:26,291
+indirdim. Bu dokümanlar
+
+688
+01:28:26,291 --> 01:28:28,071
+içerisinde benim
+
+689
+01:28:28,071 --> 01:28:30,192
+normalde search yaptığım
+
+690
+01:28:30,192 --> 01:28:32,232
+zaman search'e karşılık
+
+691
+01:28:32,232 --> 01:28:34,052
+gelen sonuçlar içerisindeki
+
+692
+01:28:34,052 --> 01:28:36,332
+dökümanım olmalı.
+
+693
+01:28:36,732 --> 01:28:37,872
+Hani burada mesela
+
+694
+01:28:37,872 --> 01:28:40,272
+bir önceki sayfada
+
+695
+01:28:40,272 --> 01:28:42,251
+bir search yapmıştım. Demek ki bu search'e
+
+696
+01:28:42,251 --> 01:28:44,391
+karşılık gelen dökümanın
+
+697
+01:28:44,391 --> 01:28:46,072
+karşılığını crawler'ın
+
+698
+01:28:46,072 --> 01:28:47,451
+bu noktada indirmiş.
+
+699
+01:28:48,311 --> 01:28:50,451
+Demek ki crawler
+
+700
+01:28:50,451 --> 01:28:52,692
+daha döküman koleksiyonunu
+
+701
+01:28:52,692 --> 01:28:54,451
+oluştururken belirli bir stüdyo
+
+702
+01:28:54,451 --> 01:28:56,492
+yerelden başlayarak bir stopping
+
+703
+01:28:56,492 --> 01:28:58,872
+kriteryeye karşılık
+
+704
+01:28:58,872 --> 01:28:59,692
+gelene kadar
+
+705
+01:28:59,692 --> 01:29:11,471
+web'i tarayan ve bir linkten bir linke giderekten sürekli olarak webdeki dokümanları merkezi bir lokasyona indiren bir uygulamadan bahsediyoruz.
+
+706
+01:29:14,111 --> 01:29:22,192
+Şimdi bu crawlerlar aslında her gün çalışan uygulamalar.
+
+707
+01:29:23,531 --> 01:29:28,671
+Her arama motoru ile ilgili birer tane crawler var.
+
+708
+01:29:29,632 --> 01:29:31,552
+Mesela Google. Google'ın çalışan
+
+709
+01:29:31,552 --> 01:29:32,772
+crawlerı Google Bot.
+
+710
+01:29:33,992 --> 01:29:35,632
+Bing. Bing'in çalışan
+
+711
+01:29:35,632 --> 01:29:37,931
+crawlerı MSN Bot.
+
+712
+01:29:38,692 --> 01:29:39,451
+Scooter diye
+
+713
+01:29:39,451 --> 01:29:41,632
+başka bir arama motorunun şeyi var.
+
+714
+01:29:41,751 --> 01:29:43,412
+Slug diye başka. Yandex'in
+
+715
+01:29:43,412 --> 01:29:45,251
+farklı bir şeyi var.
+
+716
+01:29:45,951 --> 01:29:47,011
+Crawlerı var.
+
+717
+01:29:47,931 --> 01:29:49,591
+Bunlar genelde son kısımları
+
+718
+01:29:49,591 --> 01:29:50,511
+bot ile bitiyor.
+
+719
+01:29:51,891 --> 01:29:52,412
+Bunlar
+
+720
+01:29:52,412 --> 01:29:55,791
+şu andaki internet bandwidth'in
+
+721
+01:29:55,791 --> 01:29:57,571
+en yoğun olarak
+
+722
+01:29:57,571 --> 01:29:59,571
+kullanan uygulamalar. Yani bu
+
+723
+01:29:59,571 --> 01:30:01,571
+bütün crawler uygulamalarının
+
+724
+01:30:01,571 --> 01:30:03,911
+toplamda yapmış olduğu
+
+725
+01:30:03,911 --> 01:30:05,731
+bandwidth'i
+
+726
+01:30:05,731 --> 01:30:07,871
+ne kadar dünya genelindeki
+
+727
+01:30:07,871 --> 01:30:09,831
+band genişliğinin yüzde kaçını
+
+728
+01:30:09,831 --> 01:30:11,431
+kullandığına baktığımız zaman
+
+729
+01:30:11,431 --> 01:30:13,311
+crawler uygulamaları
+
+730
+01:30:13,311 --> 01:30:15,451
+şey dominantdır.
+
+731
+01:30:15,631 --> 01:30:17,431
+Yani diğer uygulamalara göre
+
+732
+01:30:17,431 --> 01:30:18,731
+crawler uygulamaları
+
+733
+01:30:18,731 --> 01:30:21,731
+webdeki band genişliğini
+
+734
+01:30:21,731 --> 01:30:23,531
+dominant olarak kullanan uygulamalar.
+
+735
+01:30:23,631 --> 01:30:25,631
+Neden? Çünkü bunlar sürekli çalışıyor.
+
+736
+01:30:27,071 --> 01:30:27,271
+Okey.
+
+737
+01:30:27,859 --> 01:30:37,679
+Güneş'ı çalışıyor ve bunu crawler'ı çalıştırmaya başladığınızda hani bir sonraki indeksi oluşturana kadar sürekli ne yapacak?
+
+738
+01:30:38,019 --> 01:30:42,039
+Çalışacak ve sürekli bir HTTP request'ler gönderecek.
+
+739
+01:30:42,499 --> 01:30:45,519
+Ve bunu bir tane crawler'ı yapmıyor, çok sayıda crawler yapıyor.
+
+740
+01:30:46,099 --> 01:30:49,679
+Bu crawler'lar bu HTTP request'leri nereye yapıyorlar?
+
+741
+01:30:50,280 --> 01:30:51,819
+Application Server'a yapıyorlar.
+
+742
+01:30:52,099 --> 01:30:53,759
+Application Server nerelerde?
+
+743
+01:30:53,759 --> 01:30:58,859
+dünya genelinde bu application serverler farklı ortamlarda dağılmış.
+
+744
+01:30:59,959 --> 01:31:04,760
+Hani haber sayfalarının application serveri var.
+
+745
+01:31:04,760 --> 01:31:12,540
+Yani bir web sayfasını publish ettiğiniz zaman bir application server altında publish ediyorsunuz.
+
+746
+01:31:13,080 --> 01:31:22,580
+Dolayısıyla da bu application serverın bulunmuş olduğu nokta sizin crawlerlar tarafından ne yapılıyor?
+
+747
+01:31:22,579 --> 01:31:24,699
+crawl ediliyor. Bir
+
+748
+01:31:24,699 --> 01:31:26,559
+crawler bir application
+
+749
+01:31:26,559 --> 01:31:28,859
+server'a geldiği zaman application
+
+750
+01:31:28,859 --> 01:31:30,219
+server altında
+
+751
+01:31:30,219 --> 01:31:32,799
+crawler'ın
+
+752
+01:31:32,799 --> 01:31:34,639
+hangi sayfaları
+
+753
+01:31:34,639 --> 01:31:36,559
+indeksleyip hangi sayfaları
+
+754
+01:31:36,559 --> 01:31:38,639
+indekslemeyeceğiyle ilgili bir tane
+
+755
+01:31:38,639 --> 01:31:39,379
+doküman var.
+
+756
+01:31:40,439 --> 01:31:42,959
+Crawler bu dokümana bakaraktan
+
+757
+01:31:42,959 --> 01:31:45,499
+hangi sayfaları indeksleyemeyeceğini
+
+758
+01:31:45,499 --> 01:31:46,959
+görüyor. O sayfaları
+
+759
+01:31:46,959 --> 01:31:48,819
+indeksleyemiyor. Sadece
+
+760
+01:31:48,819 --> 01:31:51,019
+indeksleyebileceği sayfaları indeksliyor.
+
+761
+01:31:51,019 --> 01:31:55,079
+Yani sadece crawl edebileceği sayfaları crawl ediyor.
+
+762
+01:31:56,859 --> 01:32:11,259
+Ve her application server'ın altındaki bu dosya içerisinde aynı zamanda bir crawler'ın o sayfayı hangi sıklıkta ziyaret edebileceği ile ilgili bilgi de var.
+
+763
+01:32:11,259 --> 01:32:23,879
+Yani crawlerların bir sayfayı ziyaret etme sıklığını da o application server altında bulunmuş olan o dosyaya dayalı olarak yapması gerekli.
+
+764
+01:32:24,039 --> 01:32:31,839
+Eğer sayfa diyorsa arkadaş benim search resultlarında yukarıda çıkmam çok önemli değil.
+
+765
+01:32:31,959 --> 01:32:33,559
+Beni günde bir defa şey yap.
+
+766
+01:32:35,359 --> 01:32:39,679
+Eğer böyleyse crawler bunu uymak durumunda.
+
+767
+01:32:39,679 --> 01:32:51,899
+Aksi takdirde ne yapacak? Gereğinden fazla aynı sayfayı crawl ettiği zaman bu application serverı ne yapacak? Meşgul tutacak.
+
+768
+01:32:52,519 --> 01:33:00,379
+Bunu yaptığı vakitte bu sayfanın yöneticisi bu crawleru tekrardan bu sayfayı indekslemesini yasaklayabilir.
+
+769
+01:33:01,679 --> 01:33:05,459
+Dolayısıyla crawlerların user friendly olması gerekiyor.
+
+770
+01:33:05,459 --> 01:33:07,819
+User friendly olabilmeleri için de ne yapıyorlar?
+
+771
+01:33:07,819 --> 01:33:21,799
+Her application sunucunun altında ki bu robot TXT dosyasına bakaraktan hangi sayfaları ne sıklıkla arayabilecekleriyle ilgili bilgiye dayalı olarak o application sunucuyu ne yapıyorlar tarıyorlar.
+
+772
+01:33:27,252 --> 01:33:42,911
+Şimdi bu crawler'ların motivasyonu nedir? Dedik ki bu information retrieval engine'ler bu doküman koleksiyonu üzerinde indeksleme yapıyorlar ya, işte bu crawler'lar bu doküman koleksiyonu oluşturuyor.
+
+773
+01:33:42,911 --> 01:33:59,631
+Şimdi crawler web ortamında çalışıyorsa bu bir hani universal search engine'i desteklemek için olabilir. Yani Google, Yahoo, Yandex, Bing bunları desteklemek için olabilir. Bu bir.
+
+774
+01:33:59,632 --> 01:34:16,732
+ikincisi işte yemek tarifleri, işte alışveriş siteleri, haberler bunlarla ilgili ya da işte mesela Google Scholar sadece paperlar üzerinde, akademik yayınlar üzerinde arama yapmak.
+
+775
+01:34:16,731 --> 01:34:27,691
+bunlar üzerinde dikey arama yapmak istiyorsanız yani dikey bir arama motoru geliştirmek istiyorsanız bu durumda ne yapıyorsunuz?
+
+776
+01:34:27,691 --> 01:34:37,972
+Yine crawlerlar kullanıyorsunuz. Crawlerlar demek ki sadece genelde duran şeyler için arama motorları için document collection oluşturmuyor.
+
+777
+01:34:37,972 --> 01:34:48,012
+aynı zamanda dikey arama motorları içinde ya da özelleştirilmiş arama motorları içinde doküman koleksiyonu oluşturuyor.
+
+778
+01:34:50,132 --> 01:34:55,351
+Kimi zaman crawler'ı bir business intelligence aracı olarak kullanabiliyorsunuz.
+
+779
+01:34:55,351 --> 01:35:02,451
+Yani siz diyelim ki işte BIMEX'siniz, fiyat politikanızı belirlemek istiyorsunuz.
+
+780
+01:35:02,451 --> 01:35:20,911
+yani fiyasada ki diğer elektronik araç gereçli satışı yapan MediaMarkt, Technos'a, Vatan ve benzeri firmaların vermiş olduğu fiyatlardan çok yüksek ya da çok düşük fiyat vermek istemiyorsunuz. Bunlar sizin rakibiniz.
+
+781
+01:35:20,911 --> 01:35:34,252
+Dolayısıyla ne yapıyorsunuz? Bir crawler yazıyorsunuz. Bu crawler bu firmaların sayfalarını sürekli olarak ürün bazlı olarak ve ürünlerin fiyatları olarak arama yapıyor.
+
+782
+01:35:35,171 --> 01:35:47,071
+Ve ürün bazlı olarak ürünlerin fiyat bilgilerini de alıyorsunuz ve bunların diyelim ki mesela ortalamasını alıyorsunuz. Bunların işte standart satmasını alıyorsunuz.
+
+783
+01:35:47,071 --> 01:35:57,731
+sizin yapmış olduğunuz, sizin vermiş olduğunuz fiyatla karşılaştırıyorsunuz. Eğer bu fiyat onlardan çok yukarıdaysa ve çok aşağıdaysa bunu düzeltiyorsunuz.
+
+784
+01:35:57,731 --> 01:36:09,711
+Ya da bu rakip firmalar sizden daha başka elektronik ürünler satıyorsa bunu farkına varıyorsunuz. Siz de ürün çeşitliliğinizi arttırmaya gidiyorsunuz.
+
+785
+01:36:09,791 --> 01:36:16,351
+Dolayısıyla bu crawlerlar sadece diki arama motorları için değil, business intelligence için de kullanılıyor.
+
+786
+01:36:17,071 --> 01:36:41,551
+Aynı şey retail online marketler için de geçerli. Yani Migros, Carrefour'un ya da işte farklı işte Happy Center'ın farklı online marketlerin, online marketi de olan süper marketlerin neler sattığını takip etmek isteyebilir.
+
+787
+01:36:41,552 --> 01:36:47,171
+onların ürün çeşitliliğini fiyat politikası konusunda bilgi sahibi olmak isteyebilir.
+
+788
+01:36:48,871 --> 01:36:58,292
+Yine crawlerları farklı web sitelerinde neler olduğunu takip etmek için kullanabilirsiniz.
+
+789
+01:36:58,472 --> 01:37:07,852
+Ne değişiklikler olmuş, neleri eklemişler, haber sayfalarında yenilikler nedir, bir önceki güne göre daha yeni ne haberler gelmiş.
+
+790
+01:37:08,052 --> 01:37:10,472
+Bunun için crawlerları kullanabilirsiniz.
+
+791
+01:37:10,472 --> 01:37:21,472
+Yine crawlerları kullanan diğer bir yöntem marketing dünyası crawlerları çok kullanır. Hani niçin? Çünkü marketing dünyası...
+
+792
+01:37:21,716 --> 01:37:39,435
+işte satış yapmakla sorumlu olduğu dünyadaki insanların e-mail adreslerine ulaşmak ister. Dolayısıyla da sürekli olarak bu dünyadaki kişilerin e-mail'lerini crawl etmek ve bir e-mail database oluşturmak ister.
+
+793
+01:37:39,435 --> 01:37:59,955
+hani bu e-mail database'i eğer oluşturabilirse buradan yola çıkaraktan ne yapabilir? Kişilere odaklı şeyler atabilir. Yani bize sürekli mesela işte akademik konferanslardan okul hesaplarımıza e-mailler geliyor.
+
+794
+01:37:59,955 --> 01:38:08,975
+ya da işte farklı akademik yayın tercümeleri yapan firmalardan şey geliyor.
+
+795
+01:38:09,115 --> 01:38:13,695
+Yani bizim bu e-mail adreslerimizi bizim kendi okulumuzun bunlara vermesi imkansız bir şey.
+
+796
+01:38:14,695 --> 01:38:22,216
+Ya da hani bunların bizim sayfalarımızı crawl etmekten başka yöntemleri yok.
+
+797
+01:38:22,216 --> 01:38:24,075
+Yani bizden haberdar olabilmeleri için.
+
+798
+01:38:24,575 --> 01:38:25,355
+Dolayısıyla ne yapıyorlar?
+
+799
+01:38:25,495 --> 01:38:29,216
+Bütün Türkiye'deki bütün üniversitelerin sayfalarına giriyorlar.
+
+800
+01:38:29,216 --> 01:38:46,815
+sayfaları için crawler yazıyorlar. Buradaki akademisyenlerin e-mail adreslerine ulaşıyorlar ve toplu e-mail ataraktan işte yapmak istedikleri şey neyse, tanıtım neyse bunu yapmaya çalışıyorlar. Demek ki bunların hepsi için crawlerlara ihtiyacımız var.
+
+801
+01:38:50,387 --> 01:39:09,587
+Peki, bir crawler'ın çalışma mantığı nedir? Öncelikle web üzerindeki sayfalara HTTP request'ler yapabilecek ve belli bir crawler algoritmasına dayalı olarak çalışacak bir crawler'ımız olması lazım.
+
+802
+01:39:09,587 --> 01:39:29,027
+crawler web ortamındaki ne yapıyor? Veriyi alıyor. Bir PageReposter'ı atıyor. Bu PageReposter'ı dediğimiz hani information retrieval yapısını gösterirken, mimarisini gösterirken orada Data Document Collection vardı. İşte bu PageReposter'ı da o.
+
+803
+01:39:29,027 --> 01:39:41,928
+bunun üzerine text preprocessing çalışması yapıyoruz ve link analizi çalışması yapıyoruz ve text preprocessing çalışması sonucunda text index yani inverted index'i oluşturuyoruz.
+
+804
+01:39:41,928 --> 01:39:58,828
+Inverted index'i ben daha önceki chapter'da size göstermiştim. Şimdi bir de bunun yanısına bir tane daha index oluşturuyoruz. Bir tane daha tablo oluşturuyoruz. Bu tabloya da PageRank tablosu diyeceğiz.
+
+805
+01:39:59,027 --> 01:40:05,087
+Yani bu PageRank HITS olabilir ya da başka bir link tabanlı algoritma olabilir.
+
+806
+01:40:05,547 --> 01:40:13,767
+Buradaki örnek Google olduğu için Google PageRank tabanlı link analizi algoritmasını kullandığı için burada PageRank tablosu var.
+
+807
+01:40:15,947 --> 01:40:24,487
+Şimdi search zamanı siz query'e girdiğiniz zaman search engine bu query'yi alıp gidip inverted index üzerinde bir lookup yapıyor.
+
+808
+01:40:24,487 --> 01:40:37,027
+lookup sonucunda ne yapıyor? Bu lookupa karşılık gelmiş olan sonuçları öncelikle tespit ediyor. Bunlar bu search'e karşılık gelmiş olan sonuçlar.
+
+809
+01:40:37,027 --> 01:40:49,787
+Tabii ki bu sonuçları direkt olarak son kullanıcıya hemen göstermiyor. Bir de bu elde etmiş olduğu sonuçları PageRank sonuçlarıyla birleştirerek ne yapıyor?
+
+810
+01:40:49,787 --> 01:41:15,047
+götürüp tekrardan sıralandırılmış bir şekilde son kullanıcıya gösteriyor. Yani birincisi query'e karşılık gelmiş olan sayfaların tespit edilmesi lazım ve bu sayfalar tespit edildiğinden sonra hem TF-IDF hem de PageRank skorları dikkate alınacak şekilde bu elde edilmiş olan sayfaların sıralandırılması lazım.
+
+811
+01:41:15,048 --> 01:41:20,828
+sıralandırılmış sonuçlar da son kullanıcıya gösterilen sonuçlar.
+
+812
+01:41:29,011 --> 01:41:38,411
+Evet, şimdi bu crawlerların kendi içlerinde motivasyonlarını size söyledim.
+
+813
+01:41:38,812 --> 01:41:50,411
+Farklı motivasyonları sağlamak için farklı crawlerlar bugüne kadar literatürde önerilmiş ve endüstride de bunların implementasyonları yapılmış.
+
+814
+01:41:51,411 --> 01:41:58,131
+Şimdi crawlerları bir universal crawlerlar bir de preferential crawlerlar diye iki kategoriye ayırabiliriz.
+
+815
+01:41:58,131 --> 01:42:08,451
+Universal Crawler'lar Yahoo, Index, Google gibi global arama motorlarını destekleyen crawler'lar.
+
+816
+01:42:08,851 --> 01:42:13,071
+Geri planda onların document collection'larını oluşturuyor bu Universal Crawler'lar.
+
+817
+01:42:13,831 --> 01:42:18,351
+Preferential Crawler'lar ise size demiştim ya dikey search engine'leri var.
+
+818
+01:42:18,471 --> 01:42:23,451
+Bu dikey search engine'lerinin document collection'larını oluşturuyorlar.
+
+819
+01:42:23,451 --> 01:42:35,431
+Şimdi bu dikey search engine'lerinin document collection'ına oluşan preferential crawler'lar da kendi içerisinde focus crawler'lar bir de topical crawler'lar diye ayrılıyor.
+
+820
+01:42:37,131 --> 01:42:46,452
+Focus crawler'lar dediğimiz şey, size demiştim ya tarifle ilgili, yemek tarifleriyle ilgili arama yapabileceğiniz arama motoru.
+
+821
+01:42:46,452 --> 01:42:52,891
+Ya da elektronik ürünlerle ilgili arama yapabileceğiniz arama motoru.
+
+822
+01:42:53,451 --> 01:42:59,711
+Ya da işte süpermarket ürünleriyle ilgili arama yapacağımız arama motoru.
+
+823
+01:43:00,771 --> 01:43:09,071
+Bunların kullanmış olduğu doküman koleksiyonlar için doküman koleksiyonları oluşturan crawlerlar da burada yer alıyor.
+
+824
+01:43:09,211 --> 01:43:10,451
+Focus crawlerlar.
+
+825
+01:43:10,451 --> 01:43:13,871
+şimdi
+
+826
+01:43:13,871 --> 01:43:17,871
+bu focus crawler'larda da
+
+827
+01:43:17,871 --> 01:43:20,011
+universal crawler'larda da
+
+828
+01:43:20,011 --> 01:43:21,751
+her ikisinde de
+
+829
+01:43:21,751 --> 01:43:23,871
+indeksi önceden oluşturuyoruz
+
+830
+01:43:23,871 --> 01:43:26,091
+arkadaşlar indeksi önceden oluşturuyoruz
+
+831
+01:43:26,091 --> 01:43:26,951
+bu ne demek
+
+832
+01:43:26,951 --> 01:43:30,191
+şuradaki
+
+833
+01:43:30,191 --> 01:43:32,031
+indeksi önceden oluşturuyoruz
+
+834
+01:43:32,031 --> 01:43:33,691
+ve search dediğimiz işlem
+
+835
+01:43:33,691 --> 01:43:35,891
+bu indeks üzerinde gerçekleşiyor
+
+836
+01:43:35,891 --> 01:43:37,991
+yani hem focus crawler'da
+
+837
+01:43:37,991 --> 01:43:40,051
+hem universal crawler'da
+
+838
+01:43:40,051 --> 01:43:41,791
+hiçbir ayrıştırma yapmadan
+
+839
+01:43:41,791 --> 01:43:44,731
+bütün web sitelerinden
+
+840
+01:43:44,731 --> 01:43:46,211
+indeksi oluşturuyorum. Focus
+
+841
+01:43:46,211 --> 01:43:48,351
+Crawler'da ise hangi topik
+
+842
+01:43:48,351 --> 01:43:50,411
+için bu arama motorunu
+
+843
+01:43:50,411 --> 01:43:52,211
+geliştiriyorsam o topik için
+
+844
+01:43:52,211 --> 01:43:53,691
+dokümanları
+
+845
+01:43:53,691 --> 01:43:56,291
+indirip bir indeks oluşturuyorum.
+
+846
+01:43:57,591 --> 01:43:57,631
+Okey.
+
+847
+01:43:58,931 --> 01:44:00,151
+Diğer bir kategori ise
+
+848
+01:44:00,151 --> 01:44:02,171
+Topical Crawler'lar. Şimdi bu
+
+849
+01:44:02,171 --> 01:44:04,391
+Topical Crawler'lar dediğimiz şeyde
+
+850
+01:44:04,391 --> 01:44:06,351
+biz indeksi
+
+851
+01:44:06,351 --> 01:44:08,671
+önceden oluşturmuyoruz.
+
+852
+01:44:08,672 --> 01:44:11,651
+query zamanı oluşturuyoruz.
+
+853
+01:44:11,791 --> 01:44:13,312
+Yani query girildiği zaman
+
+854
+01:44:13,312 --> 01:44:15,632
+biz bu queryden başlayarak
+
+855
+01:44:15,632 --> 01:44:17,112
+web'i aramaya başlıyoruz.
+
+856
+01:44:18,032 --> 01:44:19,431
+Ve bizim
+
+857
+01:44:19,431 --> 01:44:21,351
+istediğimiz sonuca yani
+
+858
+01:44:21,351 --> 01:44:23,431
+bizim istediğimiz queryye match eden
+
+859
+01:44:23,431 --> 01:44:24,412
+sonuçları
+
+860
+01:44:24,412 --> 01:44:27,252
+adım adım gösteriyoruz.
+
+861
+01:44:27,732 --> 01:44:29,511
+Hani buna örnek
+
+862
+01:44:29,511 --> 01:44:30,791
+olarak ne verilebilir?
+
+863
+01:44:54,323 --> 01:45:16,244
+Bu mesela bir tane örnek. Burada sizin aramış olduğunuz keyword'e karşılık webde publish edilmiş şeyleri sürekli olarak sizin adınıza monitör ediyorsunuz.
+
+864
+01:45:36,020 --> 01:46:02,999
+Siz diyelim ki mesela bir tane şey yaptınız, the north face diye bir tane query girdiniz. Hangi sayfalarda geçiyorsa bunu real time'da arayıp size gösteren bir tane arama motorundan bahsediyoruz. Yani bir indeks oluşturmuyor. Siz ne zamanki query'ye girdiniz o zaman o query için web'i taramaya başlıyor.
+
+865
+01:46:02,999 --> 01:46:08,139
+dolayısıyla mevcuttaki şu yöntemden farklı olarak ne farkı var?
+
+866
+01:46:08,139 --> 01:46:19,939
+Bu yöntemde yani bir indeks oluşturduğunuz yöntemde öncelikle siz bir gün öncesinden bütün dokümanları indiriyorsunuz, bir indeks oluşturuyorsunuz.
+
+867
+01:46:20,179 --> 01:46:24,200
+Bir gün öncesinde oluşturmuş olduğunuz indeks üzerinde aramayı yapıyorsunuz.
+
+868
+01:46:24,200 --> 01:46:44,200
+Bu topical crawler yönteminde ise o anda siz web'i arıyorsunuz ve query'e girdiğiniz anda web'i ararken karşınıza çıkan sizin girmiş olduğunuz query'e match eden dokümanları sıralandırılmış bir şekilde listeliyorsunuz.
+
+869
+01:46:44,200 --> 01:47:03,320
+bunun da alt kolları var bunu adaptif bir şekilde yapabilirsiniz yani siz arama yaparken arama yaptığınız sayfalardan öğrenmiş olduğunuz yeni bilgileri de dikkate alarak aramaya devam edebilirsiniz ya da bunu statik bir şekilde yapabilirsiniz yani
+
+870
+01:47:03,319 --> 01:47:17,979
+base first search, depth first search gibi ya da işte link analizi tabanlı link analizi skorlarına bakaraktan siz bir sayfadan diğerine giderek aramanızı gerçekleştirebilirsiniz.
+
+871
+01:47:19,159 --> 01:47:28,799
+Şimdi biz bunlarla ilgili konuşuyor olacağız. Önümüzdeki ders sınav var. Ondan sonraki hafta detaylı olarak konuşuyor olacağız.
+
+872
+01:47:28,799 --> 01:47:44,999
+Ben burada durmak istiyorum. Crawler'ın taksonomi sayfasında durmak istiyorum. Ondan sonraki hafta daha kapsamlı bir şekilde bunu işliyor oluruz. Sizlerin şu ana kadar ki konuştuklarımızla ilgisi sorunuz var mıdır arkadaşlar?
+
+873
+01:47:52,051 --> 01:48:00,531
+arasındaki fark ne oluyor? Kısaca anlatılabilecek bir şeyse onu söylemeyeyim.
+
+874
+01:48:01,831 --> 01:48:03,331
+Crawler ile neyi dedin?
+
+875
+01:48:05,051 --> 01:48:08,091
+Scraper diye geçiyor hocam da.
+
+876
+01:48:09,451 --> 01:48:13,431
+S-C-R-A-P-I-R
+
+877
+01:48:13,431 --> 01:48:17,191
+Okey, onu bilmiyorum ben de. Scraper'ı ben de bilmiyorum.
+
+878
+01:48:17,191 --> 01:48:22,611
+Sen bana tanımlayabilirsen ne olduğunu oradan yola çıkarak şey yapayım.
+
+879
+01:48:22,711 --> 01:48:25,971
+Yahut da ben biraz baktıktan sonra seninle konuşuyor olalım.
+
+880
+01:48:26,611 --> 01:48:27,952
+Tamam, mail atarım hocam.
+
+881
+01:48:28,211 --> 01:48:28,412
+Tamam.
+
+882
+01:48:28,931 --> 01:48:30,791
+İletişim kurarız. Teşekkür ederim.
+
+883
+01:48:34,611 --> 01:48:39,631
+Başka sorusu olan yoksa, projesini konuşmadığımız arkadaşlar varsa,
+
+884
+01:48:39,631 --> 01:48:46,131
+geçen haftadan sonra bana zaten güncellenmiş şeklini hepiniz gönderdiniz.
+
+885
+01:48:47,191 --> 01:48:56,191
+güncellenmiş şekilleriyle ilgili tekrardan konuşmak isteyen varsa bakma fırsatım olmadı bakacağım ama şu anda konuşabiliriz.
+
+886
+01:48:59,412 --> 01:49:03,232
+Ben geçen hafta gösterememiştim hocam ben isterseniz başlayabilirim.
+
+887
+01:49:03,232 --> 01:49:13,412
+Oldu sen ekran görüntüsünü alıp o zaman şey yap ben şu anda ekran görüntüsünü bıraktım. Sen ekran görüntüsünü paylaşıp bana göster.
+
+888
+01:49:17,191 --> 01:49:19,852
+Şu an ekranımı görebiliyor musunuz?
+
+889
+01:49:20,031 --> 01:49:23,511
+Şu an geldi evet. Biraz büyüt, biraz büyüt.
+
+890
+01:49:24,391 --> 01:49:27,471
+Tabii. İyi midir?
+
+891
+01:49:28,592 --> 01:49:29,371
+Tamam, şimdi iyi.
+
+892
+01:49:30,452 --> 01:49:37,111
+Benim proje için düşündüğüm şey şuydu aslında. Ben hazır bir datasetiyle çalışacağım.
+
+893
+01:49:51,371 --> 01:50:06,212
+İlk olarak şöyle söyleyeyim, yapmak istediğim şey şu, bu applicationlar yayınlandıktan sonra kullanıcılar üzerinde, kullanıcılar bunları rateleme işlemleri yapıyor ve her application belli bir rate'e sahip oluyor
+
+894
+01:50:06,212 --> 01:50:12,051
+yapmak istediğim şey de kullanıcıların vereceği rate'leri daha öncesinden takip etmek.
+
+895
+01:50:12,051 --> 01:50:20,012
+Yani yayınlanan application'ın son olarak hangi rate alacağını önceden kestirmek istiyorum.
+
+896
+01:50:20,391 --> 01:50:22,572
+Yani sayısal bir değer tahmini yapmak istiyorsunuz.
+
+897
+01:50:22,572 --> 01:50:25,391
+Evet, 1 ile 5 arasında sayısal bir değer tahmini yapacağım.
+
+898
+01:50:25,471 --> 01:50:31,532
+Tamam, güzel. Burada o zaman sayısal değer tahmini yapacağın regresyon analizi kullanman lazım.
+
+899
+01:50:31,531 --> 01:50:36,912
+yahut da LSTM tabanlı sayısal değer tahmini yapabileceğin bir şey yapmam lazım.
+
+900
+01:50:37,051 --> 01:50:40,492
+Mesela şu anda gösterdiğin algoritmalar classification algoritmaları.
+
+901
+01:50:41,311 --> 01:50:44,671
+Bunların yanında linear regresyonlar vesaire de var hocam.
+
+902
+01:50:45,412 --> 01:50:46,971
+Biraz daha araştırmam gerekecek.
+
+903
+01:50:47,371 --> 01:50:49,431
+İçeriğini kullanacağım kısımları.
+
+904
+01:50:50,051 --> 01:50:51,591
+Genel olarak birazcık araştırdım.
+
+905
+01:50:51,851 --> 01:50:54,151
+Daha önce bu alanda çalışılmış projeler de var.
+
+906
+01:50:54,851 --> 01:50:56,291
+Onlardan da biraz yararlanacağım.
+
+907
+01:50:57,051 --> 01:50:58,351
+Bu şekilde ilerlemek istiyorum.
+
+908
+01:50:58,352 --> 01:51:15,891
+Datanın içinde belli kalımlar falan da var zaten. Bunları kullanarak ratelerin tahmin edilmesi olacak. Bu şekilde kullanacağım Python kullanarak yazacağım zaten. İşte Pandasman Pifat kullanacağım. Bu şekilde bir proje düşünüyorum.
+
+909
+01:51:15,891 --> 01:51:18,471
+Ama burada algoritma sayısını bir üçe çıkart.
+
+910
+01:51:19,231 --> 01:51:19,511
+Tamam.
+
+911
+01:51:20,031 --> 01:51:25,731
+Ondan sonra bir bu. İkincisi, burada senin yapacağının dataset'ini belirtmişsin.
+
+912
+01:51:26,772 --> 01:51:32,272
+Ben şeyi de tahmin edeceğim diyorsun. Sayısal bir değer tahmin edeceğim diyorsun.
+
+913
+01:51:33,031 --> 01:51:37,251
+Buradaki şu anda yazdığın algoritmalar kategoriyel değer tahmin eder.
+
+914
+01:51:37,251 --> 01:51:43,431
+Yani binary classification yapıyorsan işte evet ya da hayır.
+
+915
+01:51:44,171 --> 01:51:45,471
+Ya da işte kabul ya da red.
+
+916
+01:51:45,891 --> 01:51:51,011
+yahut da işte mavi ya da kırmızı gibi kategoriyel değerler tahmin eder.
+
+917
+01:51:51,359 --> 01:52:16,040
+hani burada bunu eğer bir multi-class şeyine sokacaksan yani ya bir, ya iki, ya üç, ya dört, ya beş bunlardan bir tanesini tahmin edeceğim şekline sokuyorsan bu şekilde yani arada bir nokta bir, bir nokta beş, bir nokta iki gibi real sayılar yoksa bu durumda bu şekilde de gidebilirsin.
+
+918
+01:52:16,040 --> 01:52:25,120
+yani biri bir kategori, iki başka bir üç o zaman multi prediction'a girer senin üzerinde çalışacağın problem.
+
+919
+01:52:25,120 --> 01:52:32,639
+O durumda bu türden algoritmalar kullanabilirsin ama bunları da multi label'ı tahmin eder.
+
+920
+01:52:32,760 --> 01:52:42,179
+Yani iki tane label'dan binary prediction değil de multi label'ı tahmin eden yönteme dönüştürmen gerekiyor.
+
+921
+01:52:42,519 --> 01:52:44,200
+Ve en az üç tane algoritma kullan.
+
+922
+01:52:44,200 --> 01:52:51,959
+Tamam. Peki hocam sizin tercihiniz bunları kategorize edip o kategorilerden birini seçmem mi olur yoksa direkt sayısal değerini bulmam mı?
+
+923
+01:52:51,959 --> 01:53:06,540
+Benim burada tercihim yok. İstersen burada şey kullanırsın, regression analizi algoritmaları kullanırsın. İstersen kategoriyel tahmin yapan algoritmaları kullanırsın. Her ikisi de okey.
+
+924
+01:53:06,540 --> 01:53:16,099
+ama regression analizi içinde, kategoriyel tahmin yapan classification algoritmaları içinde mutlaka en az 3 tane algoritma kullanmanı istiyorum.
+
+925
+01:53:16,660 --> 01:53:17,380
+Tamamdır hocam.
+
+926
+01:53:17,400 --> 01:53:26,720
+Ama şunu söyleme, yani kategori tahmin eden classification algoritmalarını kullanaraktan sayısal değer tahmini yapıyorum deme.
+
+927
+01:53:26,720 --> 01:53:29,359
+Yani elma ile armudu karıştırma.
+
+928
+01:53:29,359 --> 01:53:55,520
+hani şeyi diyorsan, diyorsan ki hocam tamam ben random porusu kullanacağım. Ondan sonra işte Canary's neighbor'ı kullanacağım. İşte Support Vector Machine'ı kullanacağım. Ama bunlar bildiğiniz gibi kategoriyel değer tahmin ediyor. Ben bunları kullanarak işte bire bir kategori, ikiye iki kategori, ikinci, üçüncü yani bunları kategori olarak değerlendiriyorum ve bunları multi-class problemi olarak şey yapıyorum.
+
+929
+01:53:55,519 --> 01:54:18,059
+Multi-Class Prediction'ı yapan bir iki tane paper buldum. Bunlar da bu algoritmalar işte beş tane farklı label'dan bir tanesini tahmin etmek için şu şekilde kullanılmış. Future setim budur. Ben de o paper'dan yola çıkarak bu şekilde implementasyonu yaptım. Bu şekilde eğer anlatıyor isen o zaman okey.
+
+930
+01:54:18,819 --> 01:54:24,419
+Tamamdır hocam. Ben o şekilde güncelleyim bu dokümanımı ve o şekilde size mail atayım tekrar.
+
+931
+01:54:24,419 --> 01:54:25,119
+Tamam
+
+932
+01:54:25,119 --> 01:54:27,800
+Tamamdır. Teşekkür ederim
+
+933
+01:54:27,800 --> 01:54:35,399
+Rica ederim. Başka söz almak isteyen var mı projesiyle ilgili?
+
+934
+01:54:40,435 --> 01:55:04,455
+Tamam, yok o zaman. O zaman gelecek hafta sınavımız olacak. Eğer dersin sayfasındaki announcementları takip edersiniz, bunun aksine bir durum gerçekleşecek olursa size duyuru yaparım. Ama ders saatinde gelecek hafta sınav olacak diye şey yaparsınız. Crawler chapter'ı dahil değil, ondan önceki chapter'lar vizeye dahil.
+
+935
+01:55:08,851 --> 01:55:12,051
+Tamam arkadaşlar. Bugünlük bu kadar. Katılığınız için teşekkür ederim.
+
+936
+01:55:13,091 --> 01:55:13,991
+Teşekkürler hocam.
+
+937
+01:55:14,611 --> 01:55:15,431
+İyi günler hocam.
+
+938
+01:55:15,611 --> 01:55:16,551
+İyi haftalar.

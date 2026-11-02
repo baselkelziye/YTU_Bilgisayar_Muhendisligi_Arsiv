@@ -1,0 +1,4087 @@
+1
+00:16:26,964 --> 00:16:28,964
+Arkadaşlar günaydın.
+
+2
+00:16:30,964 --> 00:16:32,964
+Sesini geliyor.
+
+3
+00:16:32,964 --> 00:16:34,964
+Geliyorum.
+
+4
+00:16:37,043 --> 00:16:44,043
+ve kanlısı
+
+5
+00:16:44,211 --> 00:16:45,452
+Oramızda [öğrenci] da katılmış.
+
+6
+00:16:49,587 --> 00:16:55,767
+Evet. [öğrenci] seni de bir tanıydım. Geçen hafta sen yoktun. Biz bir tanıştık.
+
+7
+00:17:05,715 --> 00:17:06,915
+2004 yılında mezun oldum.
+
+8
+00:17:12,660 --> 00:17:26,120
+yazılım uzmanı olarak çalışıyorum. Ödeme sistemleri üzerine yazılımı geliştiriyoruz genel olarak. Bu şekilde özetleyebilirim. Evliliğim eşim de akademisyen, o da Yıldız Teknik Üniversitesi'nde.
+
+9
+00:17:26,120 --> 00:17:36,160
+Ben de birim? Çevre mühendisliğinde. Doktorasını bitirdi geçtiğimiz yaz.
+
+10
+00:17:37,619 --> 00:17:39,019
+ve ilgi duyuyordum zaten.
+
+11
+00:17:42,644 --> 00:18:09,644
+ve cihazlarında cesaretlendirmesiyle falan fırsat bulduğum süreçte başvurdu. Bizim doktorlu programımızda mısın yoksa master'da mısın? Master'dayım, yüksek lisansda hocam. Bu dönem kabul aldım. İlk dönemim. Devam etmeye düşünüyor musun master sonrası? Evet, düşünüyorum hocam. Süper, tamam. O zaman hoş geldin diyorum sana. Teşekkürler, hoş bulduk.
+
+12
+00:18:09,644 --> 00:18:14,344
+[öğrenci] nasılsın? Her şey yoğununda mı?
+
+13
+00:18:16,063 --> 00:18:17,263
+Evet hocam sağ olun.
+
+14
+00:18:17,263 --> 00:18:18,644
+Her şey var çok güzel.
+
+15
+00:18:19,203 --> 00:18:24,184
+Yeterlik sınavına teşekkür ederim sağ olasın. Yeterlik sınavına çalışıyorsunuz en bir şekilde.
+
+16
+00:18:24,324 --> 00:18:24,623
+Evet.
+
+17
+00:18:24,903 --> 00:18:25,484
+Evet hocam.
+
+18
+00:18:28,203 --> 00:18:33,923
+Arkadaşlardan [öğrenci] ders notlarını paylaşmıştı sınav sorularını. Onları aldın herhalde.
+
+19
+00:18:35,343 --> 00:18:35,684
+Evet.
+
+20
+00:18:37,684 --> 00:18:38,443
+Konuşuyoruz.
+
+21
+00:18:38,443 --> 00:18:51,864
+Tamam, süper. Az bir zaman kaldı. Yoğun çalışmaya devam. Ben sizin dördünüzün de sınava geçeceğinden eminim. Ama biraz daha yoğun ve uzaklı çalışmaya devam.
+
+22
+00:18:53,243 --> 00:18:53,843
+Teşekkür ederim.
+
+23
+00:18:58,044 --> 00:19:03,444
+[öğrenci], [öğrenci], merhabalar. Sizler de iyisinizdir diye ümit ediyorum.
+
+24
+00:19:03,963 --> 00:19:05,084
+İyi güzel, teşekkür ederim.
+
+25
+00:19:05,084 --> 00:19:06,703
+Evet, merhaba hocam. İyiyiz.
+
+26
+00:19:06,703 --> 00:19:11,483
+biraz ses kısıklığı var. Onun dışında bir şey yok. Çok şükür.
+
+27
+00:19:12,083 --> 00:19:20,543
+Evet yani ona şu anlık şükrediyoruz o tür durumları. Biliyorsun durumları. Özellikle şimdi hava değişimi de oldu.
+
+28
+00:19:21,623 --> 00:19:27,224
+Ondan zaten hocam. Evden dışarı çıkmadık. Hani cam var açık falan derken biraz şey yaptı ses.
+
+29
+00:19:28,263 --> 00:19:29,063
+Geçmiş olsun.
+
+30
+00:19:29,523 --> 00:19:30,163
+Teşekkürler.
+
+31
+00:19:30,163 --> 00:19:52,883
+Şimdi ben bugünkü üzerinde konuşacağımız konu birliktelik kuralların çıkarma algoritmaları, Associated Rule Mining, sequential Pattern Mining, bir de sıralı kural çıkarma algoritmalarını konuşacağız.
+
+32
+00:19:53,543 --> 00:19:58,183
+Bunların web miningde nelerde kullanıldığından biraz bahsedeceğim.
+
+33
+00:19:58,183 --> 00:20:22,263
+Endüstri'de karşılaştığımız problemlerden biraz bahsedeceğim. Özellikle endüstri'de bu algoritmaları kullanarak veriden birliktelik çıkartmak, kural çıkartmak çok ihtiyaç duyulan bir konu. Bunların uygulamaları konusunda konuşacağım.
+
+34
+00:20:22,263 --> 00:20:41,923
+ama ona başlamadan önce tabii bir dersle ilgili birkaç bir şey gösterebiliyor muyum? Dersi işleyişi ile ilgili ondan biraz bahsetmek isterim ama öncelikle bir bakalım. Bir dakika bizi düzeltiyorum.
+
+35
+00:21:52,276 --> 00:21:53,276
+çabuk.
+
+36
+00:22:06,836 --> 00:22:10,035
+Şurada göstermek istediğim bir slide var.
+
+37
+00:22:13,235 --> 00:22:26,235
+Şimdi bu dönem projesi ile ilgili, proje kapsamında bir dönem projesi yapacağınızı söylemiştik. Tek kişilik projeler olacak demiştik.
+
+38
+00:22:27,235 --> 00:22:34,635
+Bir tane proje proposal formatımız var. Bu formatı kullanarak bir sayfalık.
+
+39
+00:22:34,635 --> 00:22:57,336
+Bu dönem kapsamı içerisinde ne yapacağımızı anlatacağız, bunu niye yapıyoruz, bu fikrimizi motive eden şey nedir ve bu dersle neden ilgilidir, bu derste işleyeceğimiz konuların hangileriyle ilgilidir, bundan bahsedeceğiz.
+
+40
+00:23:21,075 --> 00:23:37,855
+Papers with Codes diye bir tane sayfa var. Paper'ların kodlarının da paylaşıldığı bir sayfa var. Kodlarının ve dataset'lerinin. Orası olabilir.
+
+41
+00:23:37,855 --> 00:23:50,675
+Farklı yerlerden veri seti elde etmenizi isteyeceğim. Dolayısıyla burada da hangi yerden veri seti toplayacaksınız? Ondan bahsedeceksiniz.
+
+42
+00:23:51,075 --> 00:23:59,535
+ondan sonra burada gerçekleştireceğiniz şeyi nasıl gerçekleştirmeyi planladığınızdan bahsedeceksiniz.
+
+43
+00:23:59,916 --> 00:24:02,876
+Bir de bunu bir iş planına koymanızı istiyorum.
+
+44
+00:24:03,075 --> 00:24:07,255
+Yani 8 haftalık bir zaman diliminiz olacak.
+
+45
+00:24:07,435 --> 00:24:15,755
+O 8 haftanın hangi zamanlarında ne yapacaksınız onları teker teker anlatmanızı isteyeceğim.
+
+46
+00:24:17,136 --> 00:24:18,216
+Bir sayfalık bir format.
+
+47
+00:24:18,215 --> 00:24:34,455
+bunu da beşinci hafta yapalım arkadaşlar. Beşinci hafta ben sizlerden bir sakin bir proje proposerinizi isteyeyim.
+
+48
+00:24:34,995 --> 00:24:43,015
+Hani burada da farklı proje fikirleri olabilir. Burada mesela bazı proje fikirleri var.
+
+49
+00:24:43,015 --> 00:24:55,095
+Burada bir crawler yazabilirsiniz. Ya da işte biz PageRank ve ranking mekanizmalarını kullanacağız.
+
+50
+00:24:55,095 --> 00:25:11,095
+İşte PageRank ve ranking mekanizmalarını implement edip işte bir graph datası bulup graph datası üzerinde bunları farklı ranking mekanizmalarına göre sıralandırabilirsiniz.
+
+51
+00:25:11,095 --> 00:25:24,575
+bulundurabilirsiniz. Sosyal network analizi çalışacağız. Community discovery algoritmaları var. Onları kullanarak bir graf içerisindeki sub-grafları, sub-networkları tespit edebilirsiniz.
+
+52
+00:25:24,575 --> 00:25:41,055
+İşte bu ders konuşacağımız mesela birliktelik kuralları çıkarma algoritmaları var. Bir veri seti bulursunuz. Sonra oradan işte çapraz satış için ya da üst satış için cross-sell, up-sell konuları için birliktelikleri bulabilirsiniz.
+
+53
+00:25:41,715 --> 00:25:50,175
+Burada hani farklı proje fikirleri ile ilgili bir döküman da var ama buna bağlı kalmadan bu sadece sizin için bir örnek olur herhalde.
+
+54
+00:25:50,175 --> 00:26:02,295
+siz kendi çalıştığınız şirketteki problemlerden de yola çıkabilirsiniz. Biraz Google mühendisliği de yapabilirsiniz.
+
+55
+00:26:02,295 --> 00:26:04,875
+Proje fikri konusunda düşünmenizi istiyorum.
+
+56
+00:26:06,836 --> 00:26:18,336
+Şimdi burada bazı arkadaşlarımız doktor öğrencisi, bazılarımız yüksek lisans öğrencisi, belki de yüksek lisans sonrası doktoraya da devam etmeyi düşünüyor.
+
+57
+00:26:18,336 --> 00:26:31,635
+Bu dersi kurgulanız şekli bir araştırma dersi şeklinde. Dolayısıyla bu yapacağınız projenin içinde araştırma içeriği de olacak şekilde kurgularsanız,
+
+58
+00:26:31,635 --> 00:26:39,075
+bu proje sonucunda bir tane akademik konferansta yayınlanmak üzerine bir bildiri yazabilirsiniz.
+
+59
+00:26:40,575 --> 00:26:43,655
+Bu proje sonucunda tabii ki projenizin bir raporu olacak.
+
+60
+00:26:43,876 --> 00:26:53,635
+O raporu IEEE'nin iki kolonlu bir konferansa gönderilebilir bir teknik yazısına dönüştürür.
+
+61
+00:26:53,635 --> 00:26:59,635
+Benim de onayımı alır. Bana da gözden geçirttirirseniz ve bir konferansa gönderirseniz.
+
+62
+00:26:59,635 --> 00:27:10,615
+konferans tarafından da kabul edilirse, sizin hani bonus olarak hani ben öğrencilerime şöyle bir şey yapıyorum.
+
+63
+00:27:10,775 --> 00:27:15,696
+Mevcutta almış oldukları harf notunu bir tık yukarıya çıkartıyorum.
+
+64
+00:27:15,895 --> 00:27:22,475
+Bunu da hani ders notları belirlendiği tarihten olmuş olsa bile, sonra olmuş olsa bile yapmaya çalışıyorum.
+
+65
+00:27:22,895 --> 00:27:27,376
+O yüzden bunu da bir bonus olarak dersin başında söylüyorum.
+
+66
+00:27:27,376 --> 00:27:36,836
+çünkü akademik çalışmaya önem veren arkadaşların bundan ek bir bonus alması böylesi bir araştırma dersi için oldukça normal.
+
+67
+00:27:39,016 --> 00:27:52,556
+Bu bakış açısıyla da düşünün, ben bu ders kapsamında hem literatür taraması yapmak istiyorum, hem üzerine çalışacağım projenin performans analizini yapmak istiyorum.
+
+68
+00:27:52,556 --> 00:28:05,736
+hem doğruluk açısından hem gecikme süresi açısından hem ölçeklenebilirlik açısından. Ondan sonra bununla ilgili algoritmayı implement edip veri seti üzerinde uygulamak istiyorum.
+
+69
+00:28:06,456 --> 00:28:14,276
+Belki bir iki tane algoritmayı karşılaştırarak uygulamak istiyorum. Ondan sonra bunu bir akademik çalışmaya dönüştürmek istiyorum.
+
+70
+00:28:14,275 --> 00:28:35,475
+dediğiniz vakit ben elimden gelen yardımı yapıyorum, yaparım. Ki sizde bu çalışma sonucunda bir tane kariyerinizde faydalı olacak bu ders kapsamında bir yayın üretim. Daha önce bunu yapan her dersimde yüksek istans doktora dersinde bunu yapan en az bir öğrenci grubum oluyor.
+
+71
+00:28:35,475 --> 00:28:41,655
+Bunları da size aktarmış oldum.
+
+72
+00:28:41,655 --> 00:28:45,056
+Tekrardan durdurum.
+
+73
+00:28:45,056 --> 00:28:48,336
+Son slide'ını tekrardan paylaşayım.
+
+74
+00:29:05,779 --> 00:29:28,239
+Evet. Şimdi arkadaşlar, dersin başında da bahsetmiştim. Ben dersin textbook'unu birebir takip ederek dersi işliyorum. Dolayısıyla derste işlediğim konuların, slide'larda işlediğim topikleri, her bir chapter'ın alt konularının kitapta iz düşümü var.
+
+75
+00:29:28,239 --> 00:29:51,859
+iz düşüne derken neyi kastediyorum? Yani kitaptaki her bir chapter'ın önemli bir kısmını slide'larda işliyorum. Bu chapter'ların okumak, oradaki detaylı hem chapter'ın içerisinde geçen örnekleri hem de chapter'ın en sonunda geçen soruları okumak, çalışmak sizin sorumluluğunuzda.
+
+76
+00:29:51,859 --> 00:30:04,679
+Dolayısıyla midterm ve final sınavında hoca ne tip sorular soracak şeyi sorduğunuz vakit onun yanıtı kitapta saklı.
+
+77
+00:30:04,679 --> 00:30:15,479
+Hani textbook içerisinde anlatılmış olan konulardan benim ders slide'larında anlattığım örneklerini verdiğim konulardan soruyorum.
+
+78
+00:30:15,619 --> 00:30:20,039
+Bunun dışında hani farklı yerlerden sormuyorum.
+
+79
+00:30:20,040 --> 00:30:33,839
+O yüzden her chapter'dan sonra dersin işleniş akışına göre mutlaka ilgili chapter'ı da mutlaka okuyun.
+
+80
+00:30:34,699 --> 00:30:41,460
+Bugün Association Rule Mining ve Secure Pattern Mining konularını öğreneceğiz.
+
+81
+00:30:41,460 --> 00:30:54,019
+Öncelikle bu bugünkü işleyeceğimiz akış. Ben saatimi de başlatayım bana hatırlatma olsun açısından.
+
+82
+00:31:06,003 --> 00:31:14,563
+Okey. Öncelikle bu birliktelik kuralları, association rule'ların ne olduğunu görelim.
+
+83
+00:31:14,844 --> 00:31:18,703
+Sonra bunun için kullanılan temel bir algoritma var.
+
+84
+00:31:18,803 --> 00:31:20,723
+Apriori algoritmasını konuşalım.
+
+85
+00:31:21,303 --> 00:31:25,844
+Sonra bu apriori algoritmasının farklı versiyonları var.
+
+86
+00:31:26,783 --> 00:31:31,104
+Farklı tipteki transaction data üzerinde kullanılan.
+
+87
+00:31:31,203 --> 00:31:34,123
+Bunlardan bir tanesi class association rule mining.
+
+88
+00:31:34,123 --> 00:31:35,043
+Bir ona bakalım.
+
+89
+00:31:35,043 --> 00:31:39,463
+En sonunda da sequential pattern mining konusuna bakalım.
+
+90
+00:31:41,163 --> 00:31:50,563
+Şimdi bu birliktelik kuralları nerede kullanılıyor?
+
+91
+00:31:51,283 --> 00:31:58,983
+Birliktelik kurallarını biz özellikle müşterilerin hareketlerine, hareketlerken transaction'larına,
+
+92
+00:31:58,983 --> 00:32:14,123
+yani müşteriler işte Migros'ta, Carrefour'da bir takım satın almalar yaptıktan sonra kasaya gittiklerinde para öderken sepetlerindeki bütün itemleri tek seferde tek bir transaction'da ödüyorlar.
+
+93
+00:32:14,983 --> 00:32:28,983
+Dolayısıyla o transaction gerçekleştiği zaman, o satın alım gerçekleştiği zamanki fiş üzerinde bize vermiş oldukları hani fiş üzerindeki bütün ürünler aynı anda satın alınmış oluyor.
+
+94
+00:32:28,983 --> 00:32:30,943
+Buna bir transaction diyelim.
+
+95
+00:32:31,303 --> 00:32:37,163
+Bir transaction içerisinde demek ki eş zamanlı olarak alınan ürünler var.
+
+96
+00:32:37,163 --> 00:32:47,503
+Şimdi bu birliktelik kural çıkarma algoritmalarının yaptığı şu, çok sayıda insanın transaction datasına bakıyorlar bu algoritmalar.
+
+97
+00:32:47,603 --> 00:32:56,923
+Çok sayıda insanın transaction datasına bakıp çok sayıda insanın transaction'ında birlikte tekrar etmiş olan kopüler birliktelikleri buluyorlar.
+
+98
+00:32:56,923 --> 00:33:19,763
+Yani işte siz gittiniz süt ve ekmek aldınız. Eğer bu ikiliyi milyonlarca kişi gerçekleştirmişse transaction'ında bu durumda en çok gerçekleşen satın almalar listesinde süt ve ekmek birlikte çıkacak.
+
+99
+00:33:19,763 --> 00:33:28,623
+Peki bunu niye yapıyoruz? Bu birliktelik çıkarma algoritmalarını kullanaraktan en popüler birliktelikleri niye tespit ediyoruz?
+
+100
+00:33:28,623 --> 00:33:55,763
+Bu özellikle arkadaşlar çapraz satış dediğimiz pazarlamada geçen bir popüler ürünü satmak isterken bunun yanına daha az popüler olan ama müşterilerin tercih edebiliği müşterilerin alma niyeti çok olmayan
+
+101
+00:33:55,763 --> 00:34:13,763
+Ama diğer popüler üründen dolayı alabilecekleri ürünleri satma olayı. Çapraz satış bu. Yani satılma potansiyeli daha az olan bir ürünle satılma potansiyeli yüksek olan bir ürünü birleştiriyorsunuz.
+
+102
+00:34:13,763 --> 00:34:21,883
+Bir ürünü o satılma potansiyeli az olan ürünü de satmış oluyorsunuz.
+
+103
+00:34:23,163 --> 00:34:28,083
+Bunu özellikle biz şeyde çok yoğun olarak görüyoruz.
+
+104
+00:34:28,224 --> 00:34:30,663
+E-ticaret sitelerinde çok yoğun olarak görüyoruz.
+
+105
+00:34:32,183 --> 00:34:40,263
+Bunun haricinde yine bunu fiziksel retail store olan yerlerde de görüyoruz.
+
+106
+00:34:40,263 --> 00:34:43,063
+Migros, Carthurs'a ve benzeri yerlerde de görüyoruz.
+
+107
+00:34:43,763 --> 00:34:48,183
+Bir de bunun yanında üst satış diye bir şey var.
+
+108
+00:34:48,403 --> 00:34:50,283
+Bu da Absel diye geçiyor.
+
+109
+00:34:50,603 --> 00:34:57,283
+Bu üst satış dediğimiz konu da bir ürünün farklı seviyeleri olabilir.
+
+110
+00:34:57,443 --> 00:34:59,123
+Bunu bir hizmet ürünü olarak düşünün.
+
+111
+00:34:59,539 --> 00:35:28,819
+siz diyelim ki bir yerde bir üyeliğiniz var. Bu üyelik orta seviye bir üyelik. Öncelikle bu üyeliği siz satmışsınız. Arkasından bunu reklamla bir şekilde kişinin o hizmeti kullanırkenki hizmetten memnuniyetiyle vs. bu ürünü bir üst seviyesine upgrade etmişsiniz ve upgrade ürünü hizmete satmışsınız.
+
+112
+00:35:28,819 --> 00:35:49,900
+ve bu da kişinin yapmış olduğu şeyde gözüküyor. Hani transaction'larda gözüküyor. Bu durumda siz şey yapabilirsiniz. Hani bir ürünü satarken bu ürünün upgrade versiyonunu pazarlayabilirsiniz.
+
+113
+00:35:49,900 --> 00:36:00,179
+eğer bu çok sayıda insanın transaction'ında popüler bir şekilde geçiyorsa o zaman bunu şu şekilde sokabilirsiniz.
+
+114
+00:36:00,179 --> 00:36:12,879
+İsterseniz ki bu ürünü alan müşterilerimizin %90'ı aynı zamanda sonradan bunu upgrade'ine almıştır. Dolayısıyla da biz de size bunu bu şekilde önerelim.
+
+115
+00:36:12,879 --> 00:36:29,819
+bunları tespit etmek için yani çapraz satış yapılabilecek ürünleri tespit etmek için bir de üst satış yapılabilecek ürünleri tespit etmek için işte birliktelik kuralları çıkarma algoritmalarını kullanıyoruz.
+
+116
+00:36:29,819 --> 00:36:45,480
+Şimdi bu problem yeni bir problem değil. Aslında bu retail store'larda yani fiziksel mağazası olan satış yapan, ürün satışı yapan mağazalarda bu çoktandır var olan bir problem.
+
+117
+00:36:45,479 --> 00:37:00,819
+ama bu problemi çözmek için ilk olarak 1993 yılında bir algoritma önerilmiş ve bu problemi de tanımlayabilmek için buna market basket analisis problemi denilmiş.
+
+118
+00:37:00,819 --> 00:37:29,120
+market basket analisis problemini de açıklarken popüler birliktelikleri ortaya çıkarma problemi diye tanımlayalım bunu market basket analisis problemini ve bu problemi çözmek için de ilk algoritmayı Agraval önermiş 93 yılında ve buradaki bunu varsayarken de
+
+119
+00:37:29,120 --> 00:37:40,159
+buradaki bütün verilerin kategoriyel yani nümerik değerler değil de sayısal değerler değil de kategoriyel değerlere sahip olduğunu düşünerek yapmış.
+
+120
+00:37:42,980 --> 00:37:51,760
+Şimdi bu bildikleri kuralları çıkarma algoritmaları o günden bugüne oldukça popüler bir konu olduğu için
+
+121
+00:37:51,760 --> 00:37:57,679
+bununla ilgili çok sayıda farklı algoritma önerilmişti işte a priori'den sonra.
+
+122
+00:37:59,120 --> 00:38:27,480
+şu anda da çok farklı data mining kütüphaneleri içerisinde, işte Veka'da, işte Python'un kütüphanelerinde, işte Spark yahut da Apache, F-Link gibi farklı büyük bir işleme platformlarının makine öğrenmesi kütüphanelerinde bunların hepsinde bu birliktelik kuralları çıkarma algoritmaları var.
+
+123
+00:38:27,480 --> 00:38:37,640
+Burada işte bir tane örnek görüyorsunuz. Bu bread ve milk çok sayıda transaction ile beraber çıkmış. Dolayısıyla böyle karşımıza bir kural çıkmış.
+
+124
+00:38:38,260 --> 00:38:47,060
+Böylesi bir kuralın kaliteli bir kural olup olmadığını anlayabilmek için iki tane metrik var. Bunlardan bir tanesi support metriği.
+
+125
+00:38:47,407 --> 00:39:15,168
+diğerisi ise confidence metriği. Support, destek metriği. Hani bu acaba benim transaction'larımın yüzde kaçı da bu ikili birlikte geçiyor. Yani totalde yüz tane transaction'ım varsa bunların beş tanesinde Brad ve Mill beraber geçiyormuş. Yani popüleritesini ifade ediyor. Elimdeki transaction'ların yüzde kaçı bu ikisini içeriyor.
+
+126
+00:39:15,168 --> 00:39:35,628
+Confidence ise şunu söylüyor, güvenilirlik yani ben bu kurala güveneyim mi güvenmeyeyim mi? Hani benim elimde bread ve elimdeki transaction'lardan içinde bread olanları arasında milk yüzde kaçında var?
+
+127
+00:39:35,627 --> 00:39:53,387
+yani elimde diyelim ki 100 taneden 5 tane transaction içerisinde bread varsa bu 5 tane transaction içerisinde milk de var mı? Eğer 5 tane transaction içerisinde milk de varsa confidence %100. Yani bu kurala benim güvenilirliğim %100.
+
+128
+00:39:53,387 --> 00:40:14,627
+Şimdi bu algoritmayı kullanırken de tabii ki bizim datayı nasıl modelleyeceğimiz konusunda bir notasyon var. Onu bilmemiz gerekiyor. Bu notasyon benim üzerinde çalışacağım bütün itemleri büyük I ile gösteriyorum.
+
+129
+00:40:14,628 --> 00:40:25,448
+ve bu büyük ın altındaki her bir alt eleman yani bunun subsetleri itemleri gösteriyor.
+
+130
+00:40:25,708 --> 00:40:30,488
+Yani burada işte M tane item varmış.
+
+131
+00:40:32,448 --> 00:40:35,948
+Transaction'ı ise küçük TL gösteriyorum.
+
+132
+00:40:35,948 --> 00:40:47,588
+bu transaction, her bir transaction, siz Carrefour'a gittiniz, alışveriş yaptınız, çıkıyorsunuz, kasaya geldiniz, kasada ödeme yaptınız, bu siz için bir tane transaction.
+
+133
+00:40:48,348 --> 00:40:55,788
+İşte üç tane ürün aldınız, bu transaction içerisinde bir, iki, üç tane ne olacak? Hani ürün olmuş olacak.
+
+134
+00:40:55,787 --> 00:41:05,927
+Bütün bu transaction'ların farklı kişiler tarafından yapılmış olan bütün transaction'ların olduğu database ise büyük teyli gösteriyor
+
+135
+00:41:05,927 --> 00:41:16,887
+Dolayısıyla her gün siz en yakınındaki süpermarkete gittiğiniz zaman günlük bazda neler oluşuyor? Transaction'lar oluşuyor
+
+136
+00:41:16,887 --> 00:41:24,847
+Bu günlük bazdaki transaction'lar içerisindeki bütün veriler dönüyor tekrardan büyük transaction database'inde toplanıyor
+
+137
+00:41:24,848 --> 00:41:42,027
+Carrefour'un merkez ofisini yapıyor. Bu bütün mağazalardan gelmiş transactionlar üzerinde birliktelik kuralları çıkarma algoritmalarını çalıştırıyor ve en yaygın olarak birlikte satılan ürünleri tespit ediyor.
+
+138
+00:41:42,027 --> 00:42:08,768
+Bu ürünleri tespit ettikten sonra da bunların içerisinden özellikle birbirleriyle beraber satılabilecek olanlar varsa bunları birleştiriyor ya da işte bunların kasada satış görevlisinin hemen yanında yakın bir yere, görünür bir yere koyuyor.
+
+139
+00:42:08,768 --> 00:42:21,107
+Siz ne zamanki alışverişini tamamlıyorsunuz, kasadaki görevli size o ürünleri gösterip bu ürünler üzerinde indirim var deyip size bir öneride bulunuyor.
+
+140
+00:42:21,187 --> 00:42:36,047
+Aslında o ürünler önceden üzerinde çalışılmış, çok sayıda insana satıldığı belli olmuş ve satılması konusunda firmanın bir ön fikri olan ürünler.
+
+141
+00:42:39,923 --> 00:43:01,223
+Burada bir örnek veriyorsunuz. N tane transaction var. Her bir transaction'da farklı sayıda ürünler var. Bizim üzerinde çalışacağımız veriler bu tür veriler arkadaşlar. Bunların içerisinden en fazla tekrar etmiş birliktelikleri bu algoritmaları kullanarak tespit etmeye çalışıyoruz.
+
+142
+00:43:02,423 --> 00:43:09,764
+Şuradaki terminolojiyi az önce size söyledim. Her bir transaction'ın mutlaka bir transaction ID'si oluyor.
+
+143
+00:43:14,036 --> 00:43:38,216
+Şimdi bu transaction'ların üzerinden birlikteliklerin çıkartılması konusu o kadar popüler oldu ki özellikle bu veri alanında çalışanlar biz bunu farklı yerlerde de kullanabilir miyiz sorusunu sordular. Bunun yanıtı da özellikle yine web mining alanında dokümanlar üzerinde olduğunu gördüler.
+
+144
+00:43:38,216 --> 00:43:58,635
+Yani siz şimdi elinizde çok sayıda döküman var. Sizi dendi ki hani bu dökümanlar içerisinden en fazla tekrar etmiş olan kelime gruplarını tespit edin.
+
+145
+00:43:59,556 --> 00:44:05,595
+Burada her bir dökümanı bag of words şeklinde gösterebilirsiniz. Bag of words ne demek?
+
+146
+00:44:05,595 --> 00:44:25,375
+dökümanın içerisinde en yaygın tekrar etmiş olan anlamlı kelimeler yani bağlaçlarmış, şaşkınlık ifade eden, ünlem ifade eden kelimelermiş.
+
+147
+00:44:25,375 --> 00:44:40,155
+bunları çıkartıp tamamıyla anlamı olan kelimeleri kullanıyorsunuz ve bunları bir araya getirerekten bu dokümanı bir tane temsil eden bir vektör oluşturuyorsunuz.
+
+148
+00:44:40,235 --> 00:44:41,555
+Bunları da Bag of Words diyoruz.
+
+149
+00:44:42,635 --> 00:44:53,775
+Bu doküman seti üzerinde birliktelik kuralları, algoritmalarını çalıştırarak bu dokümanların büyük bir bölümünde tekrar eden kelime gruplarını tespit ediyorsunuz.
+
+150
+00:44:53,775 --> 00:45:21,775
+Eğer bunu tespit edebilirsiniz o zaman şunu diyebilirsiniz eğer yüksek destek seviyesinde bir birlikteliği yakalamışsanız şunu diyebilirsiniz buradaki döküman seti kaç tane döküman varsa ağırlıklı olarak şu konular üzerine yoğunlaşmış. Yani işte basketbol ve spor üzerine yoğunlaşmış ya da futbol üzerine yoğunlaşmış ya da politika üzerine yoğunlaşmış gibi çıkarımlar yapabilirsiniz.
+
+151
+00:45:26,675 --> 00:45:36,795
+Şimdi biz bu problemi çözebilmek için veriyi üzerinde çalışıyoruz.
+
+152
+00:45:36,995 --> 00:45:42,535
+Bu veri üzerinde algoritmayı çalıştırırken bir takım notasyonlar kullanmamız gerekli.
+
+153
+00:45:43,255 --> 00:45:52,035
+Öncelikle olarak biz buradan ne tip kurallar çıkartacağız konusunu konuşalım.
+
+154
+00:45:52,035 --> 00:45:55,375
+Şu ana kadar ben hep birliktelik dedim arkadaşlar.
+
+155
+00:45:55,375 --> 00:46:00,595
+Yani beraber satılan ürünleri tespit edeceğiz dedim.
+
+156
+00:46:00,935 --> 00:46:02,775
+Ama şimdi ise kuraldan bahsediyorum.
+
+157
+00:46:03,815 --> 00:46:05,856
+Bu kural deyince ne anlamadayım?
+
+158
+00:46:07,275 --> 00:46:11,036
+Benim diyelim ki tespit etmiş olduğum bir tane birliktelik var.
+
+159
+00:46:11,415 --> 00:46:15,216
+İlk başta bu süt ve ekmek örneğini vermiştim.
+
+160
+00:46:16,155 --> 00:46:22,435
+Bu birliktelik içerisinde ben iki tane kural çıkartabilirim.
+
+161
+00:46:22,435 --> 00:46:23,435
+Bir şunu diyebilirim.
+
+162
+00:46:25,375 --> 00:46:30,895
+Süt kuralın sol tarafına gelsin, ekmek sağ tarafına gelsin.
+
+163
+00:46:31,015 --> 00:46:32,515
+Bir de bunun tersini söyleyebilirim.
+
+164
+00:46:32,595 --> 00:46:35,015
+Ekmek sol tarafına, süt sağ tarafına gelsin.
+
+165
+00:46:35,675 --> 00:46:42,915
+Yani bu şu demek, eğer insanlar ekmek alırsa aynı zamanda süt de alacaktır.
+
+166
+00:46:42,995 --> 00:46:46,255
+Ya da insanlar süt alırsa aynı zamanda ekmek alacaktır.
+
+167
+00:46:46,495 --> 00:46:53,415
+Şimdi bu türden mesela böylesi bir birliktelikten, böylesi ikili birliktelikten iki tane kural çıkartmış oldu.
+
+168
+00:46:53,415 --> 00:47:04,235
+Benim amacım öncelikle bu birliktelik kuralları çıkarma algoritmalarıyla öncelikle birliktelikleri yakalamak, popüler birliktelikleri yakalamak transakşonlar üzerinde.
+
+169
+00:47:05,055 --> 00:47:10,856
+Sonra bunlardan yola çıkaraktan şeyi yakalamak, kurallar çıkartmak.
+
+170
+00:47:10,856 --> 00:47:15,555
+Şimdi bu kuralları da tanımlarken bu şekilde tanımlıyorum.
+
+171
+00:47:15,555 --> 00:47:17,895
+bir kuralın
+
+172
+00:47:17,895 --> 00:47:20,215
+hem sol tarafı
+
+173
+00:47:20,215 --> 00:47:21,875
+hem sağ tarafı
+
+174
+00:47:21,875 --> 00:47:24,255
+ilk baştaki benim item set
+
+175
+00:47:24,255 --> 00:47:26,396
+diye bütün itemları içine koymuş
+
+176
+00:47:26,396 --> 00:47:27,575
+olduğum
+
+177
+00:47:27,575 --> 00:47:30,315
+kümenin alt kümeleri olmalı.
+
+178
+00:47:30,995 --> 00:47:32,335
+Ve bu ikisinin de
+
+179
+00:47:32,335 --> 00:47:33,815
+kesişimi sıfır olmalı.
+
+180
+00:47:33,935 --> 00:47:35,655
+Yani şu demek mesela diyelim ki
+
+181
+00:47:35,655 --> 00:47:37,955
+x'in içerisinde sadece bir item
+
+182
+00:47:37,955 --> 00:47:39,915
+olmak zorunda değil. Mesela burada şu da
+
+183
+00:47:39,915 --> 00:47:40,435
+olabilirdi.
+
+184
+00:47:42,595 --> 00:47:43,315
+İşte
+
+185
+00:47:43,315 --> 00:47:45,715
+ekmek
+
+186
+00:47:45,715 --> 00:47:47,396
+ondan sonra
+
+187
+00:47:47,396 --> 00:47:50,595
+işte çikolata
+
+188
+00:47:50,595 --> 00:47:52,196
+olabilirdi. Burada
+
+189
+00:47:52,196 --> 00:47:53,875
+hani süt
+
+190
+00:47:53,875 --> 00:47:56,375
+onun yanında işte
+
+191
+00:47:56,375 --> 00:48:02,075
+cereal da olabilirdi. Yani
+
+192
+00:48:02,075 --> 00:48:04,795
+bunların içerisinde
+
+193
+00:48:04,795 --> 00:48:06,435
+yer alan ürün sayısı
+
+194
+00:48:06,435 --> 00:48:08,515
+bir olmak zorunda değil. Birden fazla
+
+195
+00:48:08,515 --> 00:48:11,075
+olabilir ama bunların içerisindeki
+
+196
+00:48:11,075 --> 00:48:11,836
+ürünler
+
+197
+00:48:11,836 --> 00:48:16,056
+Ürünler totaldeki ürünlerin subseti olmak zorunda.
+
+198
+00:48:16,256 --> 00:48:22,476
+Bir de bu iki arkadaşın içerisindeki ürünlerin kesişimi boş durum olmak zorunda.
+
+199
+00:48:22,815 --> 00:48:24,636
+Yani bir ürün hem burada hem burada olamaz.
+
+200
+00:48:25,196 --> 00:48:26,576
+Kuralı bu şekilde tanımlıyorum.
+
+201
+00:48:27,015 --> 00:48:32,996
+Dolayısıyla birliktelikleri tespit ettikten sonra kuralları da buna dayalı çıkartıyorum.
+
+202
+00:48:33,576 --> 00:48:35,996
+Burada mesela benim bir item setim var.
+
+203
+00:48:35,996 --> 00:48:37,716
+Mesela x'i bu şekilde tanımlamışım.
+
+204
+00:48:37,715 --> 00:48:56,855
+Demişim ki bunun içerisinde 3 tane kural olacak. Mint, bread, cereal. Ondan sonra buna da böyle bir item set diyorum ve bunu tanımlarken de tree item set diyorum. Hani 3 tane elemandan oluşan item settir bu diyorum.
+
+205
+00:48:57,315 --> 00:49:01,315
+Mesela bunu kurala dönüştürdüğümde bu 3 tane ürün şu tarafta olacak.
+
+206
+00:49:01,895 --> 00:49:03,375
+Belki de burada bir tane olacak.
+
+207
+00:49:03,595 --> 00:49:10,235
+Yani bu şu demek bu 3 tane ürünü alan bir kişi aynı zamanda bu sağ taraftaki ürünü de alacak demek.
+
+208
+00:49:13,172 --> 00:49:18,531
+Şimdi ben dedim ya hani bu kuralları öncelikle birliktelikleri tespit edeceğim.
+
+209
+00:49:18,771 --> 00:49:24,552
+Birliktelikleri tespit ettikten sonra bu birlikteliklerin üzerinden kuralları çıkartacağım.
+
+210
+00:49:25,132 --> 00:49:31,751
+Hani bu çıkartılmış olan kuralların sıralandırılmış olarak ben kullanacağım.
+
+211
+00:49:31,751 --> 00:49:34,231
+Diyelim ki mesela 10 tane kural çıkarttım.
+
+212
+00:49:34,231 --> 00:49:47,991
+Bu kuralları belli bir sıraya göre yukarıdan aşağıya dizip ondan sonra da bu kurallara uyan çapraz satış ve üst satış politikalarımı geliştireceğim.
+
+213
+00:49:48,672 --> 00:49:59,172
+Peki hani bu kuralların birbirlerinden farklılaştıran yani önem değerleri data üzerinden çıkarttığım zaman bunların önem değerlerini nasıl tespit edeceğim?
+
+214
+00:49:59,172 --> 00:50:18,291
+Hani burada iki metrik var. Bir tanesi support, bir tanesi ikincisi confidence. Support dediğim şey totaldeki transaction'lar içerisinde acaba kaç tane transaction'da hem X'in içerisindeki hem de Y'nin içerisindeki item setler var?
+
+215
+00:50:18,291 --> 00:50:22,571
+mesela hani az önceki örneklerden
+
+216
+00:50:22,571 --> 00:50:25,591
+işte süt ve ekmek
+
+217
+00:50:25,591 --> 00:50:29,671
+işte ekmek alırsan süt de alırsın kuralı
+
+218
+00:50:29,671 --> 00:50:33,911
+hani acaba totaldeki transakşınlar içerisinde
+
+219
+00:50:33,911 --> 00:50:35,971
+hangisinin kaç tanesinde
+
+220
+00:50:35,971 --> 00:50:40,311
+yüzde kaçında hem süt ve hem bir şey var
+
+221
+00:50:40,311 --> 00:50:41,071
+ekmek var
+
+222
+00:50:41,071 --> 00:50:44,251
+bu bana bu kuralın support değerini söylüyor
+
+223
+00:50:44,251 --> 00:50:46,591
+aklınızda kalması açısından
+
+224
+00:50:46,591 --> 00:50:48,691
+yani destek bu veri seti
+
+225
+00:50:48,691 --> 00:50:50,611
+bu kuralı ne kadar destekliyor?
+
+226
+00:50:50,991 --> 00:50:52,471
+Bu veri setinin içerisinde
+
+227
+00:50:52,471 --> 00:50:54,931
+kaç tane transaction'da
+
+228
+00:50:54,931 --> 00:50:56,712
+acaba şey var?
+
+229
+00:50:58,651 --> 00:51:00,611
+Yüzde kaçındaki transaction'da
+
+230
+00:51:00,611 --> 00:51:02,291
+acaba bu iki üründe var?
+
+231
+00:51:03,392 --> 00:51:04,271
+Confidence ise
+
+232
+00:51:04,271 --> 00:51:06,631
+hani bu kurala ne kadar
+
+233
+00:51:06,631 --> 00:51:08,771
+güveneyim? Kuralın güvenilirliği
+
+234
+00:51:08,771 --> 00:51:10,571
+orada da kuralın
+
+235
+00:51:10,571 --> 00:51:12,691
+sol tarafındaki ürünlere bakıyorum.
+
+236
+00:51:14,032 --> 00:51:14,252
+Eğer
+
+237
+00:51:14,252 --> 00:51:16,252
+işte
+
+238
+00:51:16,251 --> 00:51:19,551
+X sol taraftaysa
+
+239
+00:51:19,551 --> 00:51:21,431
+Y sağ taraftaysa
+
+240
+00:51:21,431 --> 00:51:23,291
+kuralın sol tarafındaki yani
+
+241
+00:51:23,291 --> 00:51:24,892
+X'in içindeki ürünlere bakıyorum.
+
+242
+00:51:25,451 --> 00:51:27,451
+X'in içerisindeki büyük X'in
+
+243
+00:51:27,451 --> 00:51:29,231
+içerisindeki ürünleri içeren
+
+244
+00:51:29,231 --> 00:51:30,532
+transactionların
+
+245
+00:51:30,532 --> 00:51:32,531
+içerisinde
+
+246
+00:51:32,531 --> 00:51:35,091
+yüzde kaçı aynı zamanda
+
+247
+00:51:35,091 --> 00:51:37,271
+büyük Y'nin içerisindeki ürünleri de
+
+248
+00:51:37,271 --> 00:51:38,071
+içermektedir.
+
+249
+00:51:39,011 --> 00:51:41,451
+Yani yine ekmek süt
+
+250
+00:51:41,451 --> 00:51:43,451
+örneğinden gidelim. Bu durumda
+
+251
+00:51:43,451 --> 00:51:45,631
+bunun konfidencini hesaplarken
+
+252
+00:51:45,631 --> 00:51:53,871
+Ben ne yapıyorum? Benim içerisinde ekmek içeren transactionlarım içerisinde
+
+253
+00:51:53,871 --> 00:51:57,571
+acaba yüzde kaçı süt de içeriyor?
+
+254
+00:51:57,991 --> 00:52:01,371
+Çünkü bazı insanlar hani ekmeği almış ama sütü almamış olabilir.
+
+255
+00:52:02,231 --> 00:52:05,691
+Bu da hani bu kuralın güvenilirliğini gösteriyor arkadaşlar.
+
+256
+00:52:05,691 --> 00:52:15,371
+Demek ki biz birliktelik kurallarını çıkarttığımız zaman her kuralla ilgili bir support bir de confidence değerini bulmamız gerekiyor.
+
+257
+00:52:15,631 --> 00:52:18,431
+Hani buradaki formüller de bunu anlatıyor.
+
+258
+00:52:18,671 --> 00:52:27,111
+İşte support değeri x ve y içindeki ürünlerin toplam transaction'lar içerisindeki sayısını bul.
+
+259
+00:52:27,431 --> 00:52:29,371
+Bölü toplam transaction sayısı.
+
+260
+00:52:30,371 --> 00:52:44,671
+Confidence x ve y içerisindeki ürünlerin toplamının toplamı acaba x'in bir daha söyleyelim.
+
+261
+00:52:44,672 --> 00:52:47,552
+toplamdaki
+
+262
+00:52:47,552 --> 00:52:50,351
+transaction içerisindeki
+
+263
+00:52:51,532 --> 00:52:53,392
+sadece
+
+264
+00:52:53,983 --> 00:53:03,523
+X'i içindeki, büyük X'in içerisindeki ürünleri taşıyan transactionların sayısı içerisinde acaba kaç tanesi Y'yi de içermektedir?
+
+265
+00:53:03,904 --> 00:53:11,404
+Yani öncelikle bulacağım X'in içerisindeki itemları içeren transactionların sayısı, o benim paydamda olacak.
+
+266
+00:53:11,404 --> 00:53:18,783
+Onun içerisinde, o transactionların içerisinde acaba kaç tanesi hem X'i hem Y'yi içeriyor?
+
+267
+00:53:18,783 --> 00:53:27,643
+ve eğer x'i içeren transaction'ların tamamında y ürünleri de varsa o zaman confidence ne olacak? Hani %100 olacak.
+
+268
+00:53:31,603 --> 00:53:47,603
+Bir önceki sayfayı açabilir miyiz hocam? Orada sadece y'yi içerip x'i içermeyen de var diye anlamamız gerekmiyor mu hocam? Confidence'da özellikle.
+
+269
+00:53:47,603 --> 00:54:04,784
+Şimdi hani mesela kuralı ben şu anda hani konuştuğumuz, buradaki konuştuğumuz confidence'ı mesela şunun için yapıyorum mesela düşünüyorum. X, Y. Şu kural için düşünüyorum.
+
+270
+00:54:04,784 --> 00:54:12,784
+Şimdi ben bu kural için bunu düşündüğüm zaman confidence'ın formülünü şu şekilde kurguluyorum.
+
+271
+00:54:12,883 --> 00:54:22,184
+Diyor ki totaldeki transaction'ların içerisinde öncelikle X'lerin içerisindeki ürünlerin bulunduğu transaction'lara bak.
+
+272
+00:54:23,423 --> 00:54:26,304
+Diyelim ki 100 tane üründen 5 tanesinde X var.
+
+273
+00:54:27,444 --> 00:54:29,944
+Bu şimdi bu 5 tane senin paydan oldu.
+
+274
+00:54:29,944 --> 00:54:33,324
+Şimdi bu 5 tane içerisinden kaç tanesinde Y var?
+
+275
+00:54:33,323 --> 00:54:50,283
+bunun içerisinde belki 5 tanenin sadece 3 tanesinde Y olabilir. 5 tanesinde Y olabilir. 1 tanesinde Y olabilir. Dolayısıyla öncelikle benim paydaya koyduğum şey kuralın sol tarafındaki itemların içeren transactionların sayısı.
+
+276
+00:54:50,284 --> 00:55:02,584
+Eğer kuralım şu olsaydı, bu durumda da bu formülü şey şeklinde düşünecektim.
+
+277
+00:55:02,943 --> 00:55:08,124
+Hani aşağıda payda da yeğenin kağıntı olacaktı. Ama üstü payda yine değişmeyecekti.
+
+278
+00:55:09,383 --> 00:55:10,843
+Ne diyorsun? Bu sorunun yanıtı oldu mu?
+
+279
+00:55:13,223 --> 00:55:18,364
+Hocam, açıklayıcı oldu. Sadece şurada kafama takıldı.
+
+280
+00:55:18,363 --> 00:55:22,483
+mesela hani süt ve ekmek ve süt örneği vermiştik ya.
+
+281
+00:55:23,443 --> 00:55:28,643
+Ekmek alanların ne kadarı süt almış gibi.
+
+282
+00:55:29,183 --> 00:55:32,423
+Ekmek almayıp süt alan insanlar da olacak ya hocam.
+
+283
+00:55:33,503 --> 00:55:36,383
+Evet ama onları şeyin içerisine katmıyoruz.
+
+284
+00:55:36,523 --> 00:55:38,463
+Confidence hesabının içerisine katmıyoruz.
+
+285
+00:55:38,463 --> 00:55:39,083
+Katmıyoruz.
+
+286
+00:55:39,623 --> 00:55:42,363
+Çünkü kuralın sol tarafında ekmek var ya.
+
+287
+00:55:42,783 --> 00:55:43,044
+Evet.
+
+288
+00:55:43,044 --> 00:55:51,504
+Dolayısıyla bizim bakış açımız yani bu kural için bakış açımız öncelikle arkadaşların ekmek alması olmasıdır.
+
+289
+00:55:52,144 --> 00:55:58,404
+Ekmek alma şartı var. Sadece ekmek almayıp süt alanları saymıyoruz aslında.
+
+290
+00:55:58,424 --> 00:56:00,943
+Onları saymıyoruz. Bu kural için saymıyoruz.
+
+291
+00:56:01,943 --> 00:56:06,083
+Tamam. Burada birleşim olduğu için hocam kafam oradan karıştı.
+
+292
+00:56:06,864 --> 00:56:08,663
+Birleşim işaretinden dolayı.
+
+293
+00:56:08,663 --> 00:56:27,123
+Birleşim'deki kasıt hem ekmek hem sütü almış olanları yine buluyoruz. Ama bu ekmek ve sütü almış olan arkadaşların sadece x'i almış olan arkadaşlar içindeki oranına bakıyoruz.
+
+294
+00:56:31,380 --> 00:56:32,959
+Teşekkürler. Rica ederim.
+
+295
+00:56:35,039 --> 00:56:51,400
+Şimdi biz bir birliktelik kuralları çıkarma çalışması yaparken bize problem olarak iki tane şey veriliyor. Bir tanesi minimum support, bir tanesi minimum confidence değeri veriliyor.
+
+296
+00:56:51,400 --> 00:57:17,220
+deniyor ki ben diyor şey retail mağaza sahibi eğer benim müşterilerin gerçekleştirmiş oldukları satın alımlarda %50'nin oranında %50'nin üzerinde popülerlikle işte bazı ürünleri alıyorsa ben bunlarla ilgili çapraz satışa çıkmak istiyorum.
+
+297
+00:57:17,220 --> 00:57:27,999
+bunun için bana bu benim müşterilerimin son 6 aylık verileri içerisinde birlikte satmış oldukları ürünleri bulabilir misin?
+
+298
+00:57:28,819 --> 00:57:32,819
+Bunu söylerken aslında support değerini söylüyor bana. %50 support diyor.
+
+299
+00:57:34,880 --> 00:57:46,119
+Ondan sonra bana şunu da diyebilir. Sen bu birliktelikleri çıkardıktan sonra %50 support değeriyle bir de bana bunlardan kural çıkartabilir misin?
+
+300
+00:57:46,119 --> 00:57:59,019
+Yani ben hani işte 3 tane ürünün birlikte satıldığını tespit ettim ama acaba bunları tetikleyen yani bu 3 tane ürünün birlikte satılmasını tetikleyen hangi ürün?
+
+301
+00:57:59,019 --> 00:58:11,100
+Yani işte bunların arasında bir tanesi olmalı ki diğerlerine göre daha satılma potansiyeli daha yüksek.
+
+302
+00:58:11,100 --> 00:58:32,860
+Bunu da tespit ederken bana kurallar çıkar. A ürünü satılırsa büyük bir güvenilirlikle BBC ürünü satılır gibi kurallar çıkar. Burada da çıkartacağın kuralların da güvenilirliği en az %50 olsun yine.
+
+303
+00:58:32,859 --> 00:58:43,479
+yani hem destek değerini, support değerini %50 belirledi firmanın sahibi hem de confidence değerini %50 belirledi.
+
+304
+00:58:44,139 --> 00:58:57,380
+Hani bu bize verildikten sonra artık bizim işimiz kolay. Biz mevcuttaki transaction datasını üzerinde birliktelik kuralları çıkarma algoritmalarını bu iki değere dayalı çıkartıyoruz.
+
+305
+00:58:57,380 --> 00:59:12,200
+ve biz bunu yaparken bizim dikkat etmemiz gereken iki şey var. Bir tanesi öyle algoritma ile çalışmamız gerekiyor ki mevcut data içerisinde olabilecek kuralların tamamını bulalım.
+
+306
+00:59:12,200 --> 00:59:26,079
+Yani hiçbir kuralı atlamayalım. İkincisi bu kuralların sağ tarafında, kuralın bir sol tarafı var, sağ tarafı var. Hem her iki tarafında da ürün olacak.
+
+307
+00:59:26,079 --> 00:59:30,159
+Yani sol tarafında da ürün olacak, sağ tarafında da ürün olacak
+
+308
+00:59:34,195 --> 00:59:45,536
+Buna bir örnek. İşte 5 tane transaction gerçekleşmiş. Bu gördüğünüz tablodaki birinci kolon şeyi veriyor.
+
+309
+00:59:45,536 --> 00:59:53,315
+Şunu şu formata çevireyim. Arkadaşlar bir saniyenizi rica ediyorum.
+
+310
+01:01:02,387 --> 01:01:04,667
+Evet kusura bakmayın arkadaşlar.
+
+311
+01:01:06,727 --> 01:01:07,727
+Sesim geliyor mu?
+
+312
+01:01:10,787 --> 01:01:11,747
+Evet tamam geliyor.
+
+313
+01:01:11,827 --> 01:01:12,547
+Tamam okey.
+
+314
+01:01:13,127 --> 01:01:16,667
+Şimdi bu gördüğünüz örnekte beş tane transaction var arkadaşlar.
+
+315
+01:01:17,107 --> 01:01:20,447
+Hani bu transaction'lar içerisinde farklı ürünler beraber satılmış.
+
+316
+01:01:21,107 --> 01:01:25,007
+Hani ben burada az önce konuştuğumuz problemi bana söylüyorlar.
+
+317
+01:01:25,007 --> 01:01:29,287
+Diyorlar ki burada birlikte satılan ürünleri önce tespit et.
+
+318
+01:01:29,387 --> 01:01:32,047
+Arkasından bunlarla ilgili kurallar çıkar.
+
+319
+01:01:32,387 --> 01:01:38,867
+Birlikte tatılan ürünleri tespit et derken bana aslında frequent item setleri tespit et diyorlar.
+
+320
+01:01:38,968 --> 01:01:48,648
+Yani frequent item set dediğim şey çok sayıda farklı transaction'da beraber geçen popüler ürün gruplarını tespit et diyor.
+
+321
+01:01:51,087 --> 01:01:58,327
+Ben burada gözle bir çalışma yapmışım.
+
+322
+01:01:58,327 --> 01:02:02,887
+İşte görüyorsunuz frequent pattern'ları önce tespit etmişim.
+
+323
+01:02:04,007 --> 01:02:08,907
+İşte A ürünü toplamdaki 5 tane üründen 3 defa geçmiş.
+
+324
+01:02:09,487 --> 01:02:14,627
+B ürünü toplamdaki 5 taneden 1, 2, 3 defa geçmiş.
+
+325
+01:02:15,248 --> 01:02:18,387
+D toplamdakilerden işte 4 defa geçmiş.
+
+326
+01:02:18,568 --> 01:02:19,828
+E 3 defa geçmiş.
+
+327
+01:02:20,007 --> 01:02:25,748
+Öncelikle birli popüler elemanları buldum.
+
+328
+01:02:26,447 --> 01:02:28,287
+Arkasından ikiliye geçtim.
+
+329
+01:02:28,327 --> 01:02:33,167
+Ondan sonra baktım ki işte A, D 5 taneden 3 tane de geçmiş.
+
+330
+01:02:33,747 --> 01:02:39,687
+Şimdi bana minimum support değerini verdiği için hani %50'sinin üzerinde geçmesini istiyorum.
+
+331
+01:02:39,887 --> 01:02:49,587
+Yani bir birlikteliğin popüler olması için en az %50'sinde geçmiş olması lazım.
+
+332
+01:02:50,087 --> 01:02:51,327
+Hani ben de buna bakmışım.
+
+333
+01:02:52,287 --> 01:02:55,867
+Bu frequent patternleri bu şekilde tespit etmişim arkadaşlar.
+
+334
+01:02:55,867 --> 01:03:03,787
+Arkadaşlar bunu tespit ettikten sonra ikinci sorusu da hani bunlardan bana kural üretebilir misin?
+
+335
+01:03:04,247 --> 01:03:06,967
+Hani teklilerden zaten kural çıkartamam.
+
+336
+01:03:07,407 --> 01:03:11,927
+İkili ve ikinin üzerinde elemanı olan birlikteliklerden çıkartabilirim.
+
+337
+01:03:12,007 --> 01:03:13,187
+Buradan da çıkarmışım.
+
+338
+01:03:13,767 --> 01:03:16,947
+AD birlikteliğinden iki tane şey çıkarmışım.
+
+339
+01:03:18,328 --> 01:03:20,548
+A alınırsa D de alınacak.
+
+340
+01:03:20,687 --> 01:03:21,828
+D alınırsa A da alınacak.
+
+341
+01:03:21,828 --> 01:03:44,488
+Şimdi AD ve DA'nın support değerleri zaten aynı. Support için ne demek demiştik? Bu kuralın her iki tarafındaki elemanların toplamdaki transaction'lar içerisinde kaç defa tekrar etmiş olayı? Toplamda 5 tane vardı. Bu arkadaşlar AD 1, 2, 3 defa geçmiş. Dolayısıyla her ikisinde de %60. Orada bir değişiklik yok.
+
+342
+01:03:45,287 --> 01:03:47,687
+Peki confidence değerine bakalım.
+
+343
+01:03:48,327 --> 01:03:50,927
+Birinci kural için confidence neydi?
+
+344
+01:03:51,427 --> 01:03:52,887
+Bu kuralın güvenilirliği.
+
+345
+01:03:54,087 --> 01:03:58,567
+İçerisinde A olan transaction'ları önce bir sayısını bulalım.
+
+346
+01:03:59,127 --> 01:04:01,227
+1, 2, 3, 3 tane.
+
+347
+01:04:01,227 --> 01:04:06,167
+Bu içerisinde A olan transaction'ların yüzde kaçında D'de vardır?
+
+348
+01:04:06,647 --> 01:04:08,067
+1, 2, 3, %100.
+
+349
+01:04:08,327 --> 01:04:11,427
+Bunun desteği %100'müş.
+
+350
+01:04:11,527 --> 01:04:12,847
+Güvenilirliği %100'müş.
+
+351
+01:04:12,847 --> 01:04:15,087
+d a için bakalım
+
+352
+01:04:15,087 --> 01:04:17,147
+öncelikle içerisinde d olan
+
+353
+01:04:17,147 --> 01:04:19,107
+transactionları bulalım 1 2
+
+354
+01:04:19,107 --> 01:04:20,347
+3 40
+
+355
+01:04:20,347 --> 01:04:23,127
+bu içinde d olanlardan kaç
+
+356
+01:04:23,127 --> 01:04:25,027
+tanesi a'yı içeriyor 1
+
+357
+01:04:25,027 --> 01:04:27,227
+2 3 yani 3 bölü
+
+358
+01:04:27,227 --> 01:04:29,087
+4 %75'miş bunun da
+
+359
+01:04:29,087 --> 01:04:31,127
+oranı %75 şimdi bana
+
+360
+01:04:31,127 --> 01:04:32,367
+sorarken şey demişti
+
+361
+01:04:32,367 --> 01:04:35,367
+bu confidence değeri
+
+362
+01:04:35,367 --> 01:04:37,247
+en az %50 olanlar
+
+363
+01:04:37,247 --> 01:04:39,107
+demişti bu ikisi de bunu da
+
+364
+01:04:39,107 --> 01:04:41,047
+sağlıyor dolayısıyla ben iki tane kural
+
+365
+01:04:41,047 --> 01:04:42,827
+çıkartmış oldum. Şimdi
+
+366
+01:04:42,827 --> 01:04:44,247
+dataset üzerinde
+
+367
+01:04:44,247 --> 01:04:47,127
+bunu gerçekleştirirken
+
+368
+01:04:47,127 --> 01:04:49,027
+yaklaşımı mı gördünüz? Öncelikle
+
+369
+01:04:49,027 --> 01:04:50,407
+tekleri tespit ettim.
+
+370
+01:04:50,987 --> 01:04:52,967
+Teklilerden sonra ikilileri tespit
+
+371
+01:04:52,967 --> 01:04:55,087
+ettim. Sonra güçlüleri tespit edecektim.
+
+372
+01:04:55,167 --> 01:04:55,967
+Bu şekilde gittim.
+
+373
+01:04:57,627 --> 01:04:58,707
+Ondan sonra da
+
+374
+01:04:58,707 --> 01:05:00,927
+ikililerden başlayarak kuralları
+
+375
+01:05:00,927 --> 01:05:01,587
+çıkarttım.
+
+376
+01:05:02,036 --> 01:05:10,515
+Bunun için bu söylediğim yani kendimin bu problemi çözerken gözle yapmış olduğum şeyi a priori algoritması yapıyor.
+
+377
+01:05:11,336 --> 01:05:16,615
+A priori algoritması bunu bir algoritma içerisinde gerçekleştiriyor.
+
+378
+01:05:16,695 --> 01:05:17,895
+Şimdi biz bunu konuşacağız.
+
+379
+01:05:20,275 --> 01:05:22,835
+Burada yine bir basit örnek var.
+
+380
+01:05:23,036 --> 01:05:25,235
+Hani bunu da bakıp öyle geçmiş olalım.
+
+381
+01:05:25,235 --> 01:05:30,555
+Hani burada da 7 tane farklı şey var.
+
+382
+01:05:30,555 --> 01:05:35,195
+transaction var. Bu transaction'ların her birisinde
+
+383
+01:05:35,195 --> 01:05:38,415
+şeyler olmuş, ürünler var.
+
+384
+01:05:39,515 --> 01:05:42,815
+Bana deniyor ki bunun içerisinden
+
+385
+01:05:42,815 --> 01:05:46,455
+kurallar tespit et. Bu kuralların support değeri
+
+386
+01:05:46,455 --> 01:05:48,975
+yüzde otuz, confidence değeri yüzde seksen olsun.
+
+387
+01:05:50,355 --> 01:05:52,455
+Ben burada öncelikle
+
+388
+01:05:52,455 --> 01:05:56,915
+bir önceki örnekte şeylerden başlamıştım.
+
+389
+01:05:57,295 --> 01:06:00,135
+Önce tekliler, teklilerden sonra ikililer.
+
+390
+01:06:00,556 --> 01:06:02,556
+Burada o aşamaları geçmişim.
+
+391
+01:06:02,815 --> 01:06:03,655
+Tamamlamışım.
+
+392
+01:06:04,135 --> 01:06:05,495
+En sonunda şeyi bulmuşum.
+
+393
+01:06:06,175 --> 01:06:14,495
+En fazla tekrar eden yani popüler en fazla elemanı olan item seti bulmuşum.
+
+394
+01:06:15,656 --> 01:06:20,815
+Burada 3 tane elemanı olan en fazla tekrar eden item set.
+
+395
+01:06:21,095 --> 01:06:22,296
+Chicken, Clothes, Milk.
+
+396
+01:06:23,175 --> 01:06:25,915
+7 tane üründen 3 tanesini de bunlar tekrar etmiş.
+
+397
+01:06:26,175 --> 01:06:29,936
+Ve 3 bölü 7 de benim %30 support değerime karşılık geliyor.
+
+398
+01:06:29,936 --> 01:06:30,976
+Ondan yukarıda.
+
+399
+01:06:31,995 --> 01:06:36,256
+Sonra bundan da yola çıkaraktan ben kurallarımı çıkartıyorum.
+
+400
+01:06:36,656 --> 01:06:41,936
+Diyorum ki eğer içinde son öncelikle bir tane ayetimi buraya koyayım.
+
+401
+01:06:42,036 --> 01:06:43,355
+İki tanesini bu tarafa alayım.
+
+402
+01:06:43,495 --> 01:06:45,656
+Sonra bunların içerisinden bir tanesini alıyorum.
+
+403
+01:06:46,135 --> 01:06:47,796
+Geri kalanlarını sağ tarafa koyuyorum.
+
+404
+01:06:48,476 --> 01:06:55,495
+Bu şekilde devam ederek en sonunda işte iki tane lileri bu sefer sol tarafa koyup diğerisini sağ tarafa koyuyorum.
+
+405
+01:06:56,116 --> 01:06:59,235
+Sonra hepsi için oturup confidence değerlerini hesaplıyorum.
+
+406
+01:06:59,935 --> 01:07:18,555
+Buraya baktım mesela şu ürün için. Bunun confidence değerini nasıl hesaplarım? Eğer clothes olan şeyleri bulalım, transactionları bulalım. Onların bir, iki, üç tane olduğunu görüyorum. O üç tane içerisinden aynı zamanda milk ve chicken'ı içerenler hangileri?
+
+407
+01:07:18,556 --> 01:07:20,315
+3 tane 3 bölü 3 %100.
+
+408
+01:07:22,516 --> 01:07:28,276
+Bunların zaten hepsi bu 3 tane clothes, milk ve chicken'ı içerdiği için
+
+409
+01:07:28,276 --> 01:07:30,595
+bunların support değerleri zaten şununla aynı.
+
+410
+01:07:30,735 --> 01:07:34,336
+Yani değişmeyecek sadece confidence değerlerini bütün bunlar için
+
+411
+01:07:34,336 --> 01:07:36,236
+bulmak durumunda kaldı.
+
+412
+01:07:36,576 --> 01:07:42,875
+Şimdi şu örnekle hani şu örneğe tekrar yani bunu çözerkenki
+
+413
+01:07:42,875 --> 01:07:45,216
+yaklaşımıma baktığın zaman şunu görüyorsun.
+
+414
+01:07:45,215 --> 01:08:09,855
+Öncelikle teklilerden başlamış. Bu teklilerden sonra ikili popüler itemlere sonra üçlü popüler itemlere gitmiş. En sonda en fazla elemanı olan popüler item seti bulmuş. En fazla popüleritesi olan popüler item seti bulduktan sonra da bundan kuralları çıkartmış.
+
+415
+01:08:09,855 --> 01:08:23,055
+Bizim apriori algoritmamızın yaptığı şey de bu. En fazla elemanı olan popüler item seti bulur. Bunun içerisinden kurallar çıkartıyor.
+
+416
+01:08:23,055 --> 01:08:26,415
+ok
+
+417
+01:08:26,415 --> 01:08:28,835
+apriori algoritmasının detayına
+
+418
+01:08:28,835 --> 01:08:30,375
+az sonra geçeceğiz
+
+419
+01:08:30,375 --> 01:08:32,955
+öncelikle transaction
+
+420
+01:08:32,955 --> 01:08:34,835
+datamız ne tip bir transaction
+
+421
+01:08:34,835 --> 01:08:36,755
+data ondan biraz
+
+422
+01:08:36,755 --> 01:08:38,215
+bahsedeyim ondan sonra geçeceğim
+
+423
+01:08:38,215 --> 01:08:41,335
+şimdi transaction data içerisinde
+
+424
+01:08:41,335 --> 01:08:42,735
+en
+
+425
+01:08:42,735 --> 01:08:44,915
+basitten sadece ürünün
+
+426
+01:08:44,915 --> 01:08:45,795
+id'si var
+
+427
+01:08:45,795 --> 01:08:47,335
+ve
+
+428
+01:08:47,335 --> 01:08:50,395
+transaction id var yani
+
+429
+01:08:50,395 --> 01:08:52,235
+şuraya bakacağımız zaman
+
+430
+01:08:52,235 --> 01:08:54,155
+transaction ID
+
+431
+01:08:54,155 --> 01:08:56,836
+burada ürünlerin isimlerini yazmışım ama
+
+432
+01:08:56,836 --> 01:08:58,915
+normalde ürünlerin ID'leri olur.
+
+433
+01:08:59,315 --> 01:09:21,195
+En basit transaction database bu. Ama bunun haricinde bu ürün ID'lerinin yanında parantez içerisinde ya da işte bu hemen ürün ID'sinin yanında bürgülle bu ürünün fiyatı, bu ürünün adedi, kaç tane almış, hangi fiyattan almış gibi bilgiler de bulunabilir.
+
+434
+01:09:21,195 --> 01:09:39,795
+Ama bu algoritmayı çalışırken biz özelliklerini basitleştirmişiz, ürünü fiyatından ve adedinden arındırmışız, sadece ürünün ID'sini burada düşünüyoruz ve bu database'e bakarak popüler birliktelikleri tespit ediyoruz.
+
+435
+01:09:39,795 --> 01:09:51,315
+ama normalde bunun yanı sıra ürün kuantitesi ve ürünün fiyatı da gerçek transaction dataset'lerde olur.
+
+436
+01:09:53,836 --> 01:10:03,195
+Tabii ki bir transaction dataset'te çok sayıda transaction var.
+
+437
+01:10:03,616 --> 01:10:05,976
+Bu transaction'larda çok sayıda ürün olabilir.
+
+438
+01:10:05,975 --> 01:10:14,595
+biz bunun içerisinden öncelikle birliktelikleri çıkartacağız sonra bu birlikteliklerden de birliktelik kurallarını çıkartacağız.
+
+439
+01:10:14,595 --> 01:10:26,495
+Onun için de Agraval'ın 93 yılında önerdiği ve o günden bugüne benzerleri çıkmış ya da türevleri çıkmış Appure algoritması var.
+
+440
+01:10:26,655 --> 01:10:30,295
+Biz Appure algoritmasını konuşuyor olacağız arkadaşlar.
+
+441
+01:10:31,355 --> 01:10:35,175
+Appure algoritmasını ben ara verdikten sonra geçeyim.
+
+442
+01:10:35,176 --> 01:10:38,775
+Şu ana kadar ki konuyla ilgili sorunsuz olan var mıdır?
+
+443
+01:10:44,692 --> 01:11:08,851
+yok gibi gözüküyor. Tamam. [öğrenci]'e hoş geldin sen de. [öğrenci] hoş geldin. Bir ara verelim. Ondan sonra devam edelim. Arayı da 10 dakika şeklinde verelim. Şu anda benim saatim 10'u 7 geçiyor. Onu 17 geçe tekrardan bir araya gelelim.
+
+444
+01:11:08,851 --> 01:11:18,372
+kapatmayın bilgisayarlarınızı. Gidip bir çayırın. Biraz dinlenin ondan sonra devam edeceğiz.
+
+445
+01:21:43,220 --> 01:21:45,440
+Evet. Merhaba arkadaşlar.
+
+446
+01:21:52,851 --> 01:21:54,851
+kaldığımız yerden devam edelim.
+
+447
+01:22:03,604 --> 01:22:10,564
+arada sohbetle edelim. Sizler evden mi bağlanıyorsunuz yoksa iş yerlerinden mi bağlanıyorsunuz? Nasıl çalışıyorsunuz?
+
+448
+01:22:16,692 --> 01:22:17,991
+sesim geliyor mu arkadaşlar?
+
+449
+01:22:22,131 --> 01:22:38,831
+evden çalışıyorsun. Evet, bizim ofiste şöyle bir uygulama oldu. İki hafta evden, iki hafta ofisten olacak şekilde ekipleri ikiye böldüler. Ben bu hafta haftaya evden, sonraki iki hafta ofisten olabilir. O şekilde bağlanıyor olacağım.
+
+450
+01:22:39,371 --> 01:22:50,472
+Anladım. Diğer arkadaşlar, [öğrenci] sen o asla yapıyorsun. Ben ofisten devam ediyorum hocam. Ofisten. Evet, RG birim olduğumuz için bizim bina içinde bulunmamız gerekiyor.
+
+451
+01:22:50,472 --> 01:22:55,411
+Anladım. Hepiniz geliyor musunuz yoksa sizde de bölüşümlü gitme var mı?
+
+452
+01:22:56,352 --> 01:23:08,812
+Bazı eşi hamile olan anne babası 63 üstü olan kişilerin çoğu gelmedi zaten. O yüzden ciddi bir azalma oldu. Böyle işte evinde bu tarz durumu olmayan kişiler geliyorlar.
+
+453
+01:23:09,712 --> 01:23:14,331
+Anladım. Tamam. [öğrenci], [öğrenci], [öğrenci] sizlerde durum nasıl?
+
+454
+01:23:16,751 --> 01:23:18,071
+Ben de evden ben.
+
+455
+01:23:18,071 --> 01:23:23,492
+[öğrenci] sen evden bağlı olsun. Evet. [öğrenci], [öğrenci].
+
+456
+01:23:29,140 --> 01:23:42,679
+Evet, onlar şu anda yoklar galiba. Aralarda böyle sizleri orada mısınız diye şey de yapmak istiyorum yani. Ne yapıyorsunuz, ne ediyorsunuz diye.
+
+457
+01:23:46,679 --> 01:23:54,419
+Bu online eğitimle beraber, sizlerle beraber interaktif bir şekilde ders işleme yeteneğini kaybettik.
+
+458
+01:23:54,419 --> 01:24:01,659
+tabi hepinizin ortamın müsait olmadığı için kameralarınızı da açma imkanlarınız olmuyor.
+
+459
+01:24:02,559 --> 01:24:09,899
+Ama yine de ben ders süresince bilgisayar başında olup şey yapmanızı istiyorum.
+
+460
+01:24:09,899 --> 01:24:14,859
+Yani derse katılım sağlamanızı istiyorum. Dersin parçası olmanızı istiyorum arkadaşlar.
+
+461
+01:24:18,739 --> 01:24:22,859
+Evet, devam ediyorum. Epriori algoritması ile devam ediyorum.
+
+462
+01:24:25,559 --> 01:24:26,839
+Bir saniye.
+
+463
+01:24:27,839 --> 01:24:28,179
+Tamam.
+
+464
+01:24:35,796 --> 01:24:48,595
+Biz dedik ki, Appiori algoritması, transaction veri setleri üzerinde popüler birliktelikleri buluyor dedik. Bunu nasıl yapıyor? Buna bakalım.
+
+465
+01:24:50,395 --> 01:25:02,995
+Appiori algoritması, bunu gerçekleştirirken iki aşamada yapıyor. Öncelikle frequent item setleri buluyor. Olabilecek bütün frequent item setlerini buluyor.
+
+466
+01:25:02,995 --> 01:25:16,435
+Ama bu frequent item sets dediği şey de, algoritmanın frequent item sets diye tanımladığı şey de içerisinde en fazla item'ın olmuş olduğu frequent item setleri.
+
+467
+01:25:16,435 --> 01:25:28,796
+Yani içerisinde bir tane eleman olan frequent item set olabilir, içerisinde iki tane eleman olabilir, üç tane eleman olan frequent item set olabilir.
+
+468
+01:25:28,796 --> 01:25:40,435
+Bunlar içerisinde en fazla eleman olan frequent item seti bulmaya çalışıyor algoritma. Bunu bulduktan sonra da bunu kullanarak kurallar yaratıyor.
+
+469
+01:25:41,275 --> 01:25:57,696
+Mesela algoritmanın ilk adımında şu üçlüyü bulmuş, ilk adımını çalıştırmış ve bunun en sonunda en fazla tekrar eden ve içerisinde en fazla eleman olan frequent item seti bulmuş.
+
+470
+01:25:57,696 --> 01:26:08,115
+bunun support değeri problemin en başındaki support değerini sağlıyor. Sonra bundan yola çıkarak da ikinci aşamayı gerçekleştirmiş. Bundan kurallar çıkartmış.
+
+471
+01:26:08,115 --> 01:26:23,135
+Burada da aşağıda bir tane kural var. Bu kuralın da confidence değerini bulmuş. Şimdi böyleyse o durumda bu apriori algoritması diyemiz algoritma iki tane değer alıyor. Bunlardan bir tanesi support, bir tanesi ise confidence değeri arkadaşlar.
+
+472
+01:26:23,135 --> 01:26:31,775
+demek ki input olarak bu algoritmettiği dataset'in kendisini alıyor bir de minimum support, minimum confidence değerleri alıyor.
+
+473
+01:26:36,083 --> 01:26:45,403
+Şimdi biz bu birinci aşamada nasıl gerçekleştiriyor yaptığı işi buna bakalım.
+
+474
+01:26:48,303 --> 01:27:00,363
+Apiary algoritması bir elemanın frequent item set olup olmadığına karar verirken bunun minimum support değerine bakıyor.
+
+475
+01:27:00,363 --> 01:27:10,883
+minimum support yani problemde verilen minimum support değerinin üzerindeyse bu durumda buna diyor ki bu frequent item settir.
+
+476
+01:27:11,343 --> 01:27:13,264
+Ve bir sonraki aşamaya geçiyor.
+
+477
+01:27:15,183 --> 01:27:19,583
+Algoritmanın çalışırken baktığı önemli bir özellik bu.
+
+478
+01:27:19,723 --> 01:27:23,103
+İkinci özellik ise algoritma çalışırken şuna bakıyor.
+
+479
+01:27:23,104 --> 01:27:37,624
+Diyor ki her aşamasında bir seçmiş olduğum bir tane frequent item setin downward closure property diye bir tane property'yi sağlaması gerekir.
+
+480
+01:27:37,723 --> 01:27:39,664
+Buna da apriori property de diyor.
+
+481
+01:27:40,543 --> 01:27:44,003
+Downward closure property ile apriori property aynı şey.
+
+482
+01:27:44,003 --> 01:27:57,143
+Bu da şu demek bir frequent item seti ait frequent demem için bunun bütün subsetlerinin de frequent olması gerekiyor.
+
+483
+01:27:57,143 --> 01:28:04,923
+Mesela bakalım şurada ABC var, ABD var, ACD var, BCD var.
+
+484
+01:28:05,023 --> 01:28:09,163
+Yani ben buraya olabilecek bütün seçenekleri yazmışım.
+
+485
+01:28:09,283 --> 01:28:14,203
+Yani aşağıdaki ikililerin bir araya gelmesiyle olabilecek bütün seçenekleri yazmışım.
+
+486
+01:28:14,503 --> 01:28:21,123
+Bunlar içerisinden ABD'nin sapsetleri neler?
+
+487
+01:28:21,783 --> 01:28:25,023
+AB, AD, BD.
+
+488
+01:28:25,023 --> 01:28:26,523
+3 tane sapseti var.
+
+489
+01:28:26,523 --> 01:28:30,863
+Bu arkadaşın bütün subsetlerinin de frequent olması lazım.
+
+490
+01:28:32,983 --> 01:28:37,363
+Bunların, bu arkadaşların subsetlerinin de frequent olması lazım.
+
+491
+01:28:38,703 --> 01:28:44,463
+Eğer bu sağlanıyorsa o durumda burada downward closure property sağlanıyordur.
+
+492
+01:28:44,583 --> 01:28:46,903
+Dolayısıyla bu arkadaş frequent'dur.
+
+493
+01:28:47,903 --> 01:28:49,103
+Demek ki iki şeye bakıyorum.
+
+494
+01:28:49,983 --> 01:28:51,483
+Algoritma iki şeye bakıyorum.
+
+495
+01:28:51,563 --> 01:28:55,723
+Bir tanesi minimum support değeri belli bir şeyin üzerinde olacak.
+
+496
+01:28:56,423 --> 01:29:00,024
+İkincisi ise downward closure property'yi sağlayacak.
+
+497
+01:29:00,024 --> 01:29:08,863
+Yani mesela ABD'ye şuradaki üçlüye bu algoritmanın frequent item set diyebilmesi için iki şeyi sağlaması lazım.
+
+498
+01:29:09,024 --> 01:29:17,783
+Bunun birincisi bu ABD'nin veri içerisinde geçme sıklığı belirli bir değerin üzerinde olacak.
+
+499
+01:29:17,904 --> 01:29:19,304
+Minimum support'un üzerinde olacak.
+
+500
+01:29:19,464 --> 01:29:23,363
+Bir de bu arkadaşın subsetleri de yine şey olacak.
+
+501
+01:29:23,363 --> 01:29:27,744
+belirli bir support değerinin yukarısında olacak.
+
+502
+01:29:27,923 --> 01:29:29,403
+Yani popüler olacaklar.
+
+503
+01:29:31,983 --> 01:29:38,903
+Şimdi bunun ne demek olduğunu az sonra algoritmanın örneğini çalıştırırken göreceğiz.
+
+504
+01:29:39,483 --> 01:29:45,643
+Bu aslında algoritmanın şeyi, südokodu.
+
+505
+01:29:46,244 --> 01:29:49,703
+Ben bunu değil de size şeyi göstereyim.
+
+506
+01:29:49,703 --> 01:29:52,683
+algoritmanın öncelikle çalışmasını göstereyim sonra
+
+507
+01:29:52,683 --> 01:29:56,043
+stüdyo koduna geçeceğim. Şimdi bu algoritmayı
+
+508
+01:29:56,043 --> 01:29:58,963
+şu veri seti üzerinde adım adım çalıştıralım
+
+509
+01:29:58,963 --> 01:30:02,543
+anlamaya çalışalım. Elimde
+
+510
+01:30:02,543 --> 01:30:05,283
+dört tane transaction var. Bu
+
+511
+01:30:05,283 --> 01:30:06,883
+transaction'lar içerisinde
+
+512
+01:30:06,883 --> 01:30:09,743
+itemlar var burada.
+
+513
+01:30:11,663 --> 01:30:14,283
+Ve bana problemde demişler ki
+
+514
+01:30:14,283 --> 01:30:17,643
+yüzde elli minimum support olacak
+
+515
+01:30:17,643 --> 01:30:19,944
+şekilde bu algoritmayı kullanaraktan
+
+516
+01:30:19,944 --> 01:30:21,843
+bana frequent item
+
+517
+01:30:21,843 --> 01:30:22,403
+set bul.
+
+518
+01:30:23,804 --> 01:30:25,804
+Tekrar edelim. Frequent item set
+
+519
+01:30:25,804 --> 01:30:27,843
+derken, item sets
+
+520
+01:30:27,843 --> 01:30:30,143
+derken istediği şey aslında
+
+521
+01:30:30,143 --> 01:30:31,683
+içerisinde
+
+522
+01:30:31,683 --> 01:30:34,024
+en fazla eleman içeren
+
+523
+01:30:34,024 --> 01:30:35,703
+frequent item seti istiyor.
+
+524
+01:30:36,115 --> 01:30:39,295
+Şimdi algoritmayı çalıştırıyorum.
+
+525
+01:30:39,435 --> 01:30:47,916
+Şimdi algoritma her seferinde, her çalıştığında yani bu bir iteratif algoritma yani bir döngü içerisinde çalışıyor.
+
+526
+01:30:48,536 --> 01:30:53,036
+Her seferinde çalıştığında bir defa database'i tarıyor.
+
+527
+01:30:53,315 --> 01:30:54,855
+Database dediğimiz şey nedir?
+
+528
+01:30:54,956 --> 01:30:59,595
+Transaction'lardan oluşan bir büyük tablo diye düşünün.
+
+529
+01:30:59,595 --> 01:31:05,835
+Her seferinde bu algoritma bu tabloyu birinci satırından başlayıp sonuncu satırına kadar tarıyor.
+
+530
+01:31:06,115 --> 01:31:12,296
+Ve bu bittikten sonra bunu yaparken de count işlemi yapıyor.
+
+531
+01:31:13,296 --> 01:31:14,355
+Neyi count ediyor?
+
+532
+01:31:15,255 --> 01:31:20,476
+Elindeki itemlerin sayısını yukarıdan aşağıya doğru count ediyor.
+
+533
+01:31:20,636 --> 01:31:22,115
+Şimdi algoritmayı çalıştıralım.
+
+534
+01:31:23,255 --> 01:31:25,735
+Şimdi öncelikle bu algoritma bottom up çalışıyor.
+
+535
+01:31:25,895 --> 01:31:26,535
+Yani ne demek?
+
+536
+01:31:27,395 --> 01:31:32,595
+Öncelikle elindeki bir item item setlerden başlıyor.
+
+537
+01:31:32,715 --> 01:31:34,476
+Kaç tane item var burada? Beş tane.
+
+538
+01:31:34,475 --> 01:31:44,795
+Dolayısıyla bu algoritmanın ilk başta database üzerini tararken yapacağı şey 5 tane item'ın sayısını sayacak.
+
+539
+01:31:45,655 --> 01:31:49,655
+Algoritma tabloyu birinci satırından başlayıp saymaya başlıyor.
+
+540
+01:31:49,775 --> 01:31:51,476
+Şuradan yukarıdan aşağıya gidelim.
+
+541
+01:31:52,315 --> 01:31:54,795
+Birinci satırdan başladı aşağıya doğru iniyor.
+
+542
+01:31:55,275 --> 01:32:03,415
+Ve her satırda elindeki bu 5 tane item'ın yanına sayı yazıyor.
+
+543
+01:32:03,415 --> 01:32:07,035
+Yukarıdan aşağı inerken buradaki count'ları arttırıyor.
+
+544
+01:32:08,835 --> 01:32:17,795
+Bütün database'i sonuna kadar taradığı zaman artık elimdeki item'ların count'larını elde etmiş oldum.
+
+545
+01:32:19,055 --> 01:32:25,395
+İlk yapmış olduğum tarama sonucunda elimdeki bütün item'ların count'larını saymış oldum.
+
+546
+01:32:26,395 --> 01:32:30,695
+Ondan sonra yaptığı işlem şu.
+
+547
+01:32:30,695 --> 01:32:38,975
+Bu arkadaşlar içerisinde frequent olanları tespit ediyor.
+
+548
+01:32:39,855 --> 01:32:41,655
+Yani F1 dediği frequent.
+
+549
+01:32:41,815 --> 01:32:46,355
+Peki bir elemanın frequent olanı olduğunu neye göre tespit ederim?
+
+550
+01:32:46,955 --> 01:32:48,855
+Bana verilmiş support değerine göre değil mi?
+
+551
+01:32:49,255 --> 01:32:55,995
+Support değeri %50 yani 4 üzerinden 2 ve onun üzerinde olanlar benim için nedir?
+
+552
+01:32:55,995 --> 01:32:59,295
+4 taneden 2 tane de geçmiş
+
+553
+01:32:59,295 --> 01:33:01,195
+onun üzerinde geçmiş olanlar benim için
+
+554
+01:33:01,195 --> 01:33:03,455
+frequent'tir. Dolayısıyla
+
+555
+01:33:03,455 --> 01:33:04,935
+ben bu
+
+556
+01:33:04,935 --> 01:33:07,335
+ilk başta saymış olduğum
+
+557
+01:33:07,335 --> 01:33:09,035
+count buna da candidate diyorum
+
+558
+01:33:09,035 --> 01:33:12,235
+bu
+
+559
+01:33:12,235 --> 01:33:14,855
+bir elemanlı
+
+560
+01:33:14,855 --> 01:33:17,335
+candidate listesindeki arkadaşlardan
+
+561
+01:33:17,335 --> 01:33:18,695
+frequent olanlar
+
+562
+01:33:18,695 --> 01:33:21,315
+sayısı 2 ve 2'den
+
+563
+01:33:21,315 --> 01:33:23,235
+fazla olanlar. Gördüğünüz gibi sadece
+
+564
+01:33:23,235 --> 01:33:25,115
+sayısı 2 ve 2'den fazla
+
+565
+01:33:25,115 --> 01:33:25,996
+olanları tuttum.
+
+566
+01:33:27,795 --> 01:33:28,035
+Okey.
+
+567
+01:33:29,095 --> 01:33:31,155
+Şimdi algoritma şunu yapıyor.
+
+568
+01:33:31,976 --> 01:33:33,655
+Bu tekleleri
+
+569
+01:33:33,655 --> 01:33:36,696
+kullanaraktan
+
+570
+01:33:36,696 --> 01:33:39,375
+bir sonra yapacağı
+
+571
+01:33:39,375 --> 01:33:40,295
+tarama için
+
+572
+01:33:40,295 --> 01:33:42,115
+candidate list hazırlıyor.
+
+573
+01:33:43,015 --> 01:33:44,856
+Ne demek? Şimdi burada
+
+574
+01:33:44,856 --> 01:33:47,136
+kaç tane elemanım
+
+575
+01:33:47,136 --> 01:33:49,196
+var? Şu güzel parantezler
+
+576
+01:33:49,196 --> 01:33:51,056
+içerisindeki benim elemanlarım.
+
+577
+01:33:51,056 --> 01:33:53,035
+Bir, iki, üç, dört
+
+578
+01:33:53,035 --> 01:33:54,955
+tane frequent
+
+579
+01:33:54,955 --> 01:33:56,995
+olarak tespit ettiğim eleman var.
+
+580
+01:33:57,976 --> 01:33:58,855
+Algoritma diyor ki
+
+581
+01:33:58,855 --> 01:34:01,075
+bu arkadaşları
+
+582
+01:34:01,075 --> 01:34:04,715
+join yaparaktan
+
+583
+01:34:04,715 --> 01:34:07,196
+bunlardan oluşan
+
+584
+01:34:07,196 --> 01:34:09,115
+bütün olası ikilileri
+
+585
+01:34:09,115 --> 01:34:10,836
+tespit ederekten bir tane
+
+586
+01:34:10,836 --> 01:34:12,255
+kendi date list oluştur.
+
+587
+01:34:13,175 --> 01:34:14,495
+Bu da bunu yapıyor.
+
+588
+01:34:14,715 --> 01:34:16,435
+1 ile 2'yi, 1 ile 3'ü,
+
+589
+01:34:16,696 --> 01:34:18,995
+1 ile 5'i, ondan sonra
+
+590
+01:34:18,995 --> 01:34:21,235
+2 ile 3'ü, 2 ile 5'i,
+
+591
+01:34:22,035 --> 01:34:23,495
+ondan sonra 3 ile 5'i.
+
+592
+01:34:23,495 --> 01:34:35,215
+Yani bu arkadaşların bir araya ikili olarak getirilmeleri sonucunda oluşabilecek bütün olası ikilileri liste şekline getiriyor algoritma.
+
+593
+01:34:36,851 --> 01:34:40,851
+Şimdi artık yeni candidate listemizi oluşturduk.
+
+594
+01:34:42,031 --> 01:34:55,731
+Algoritme tekrardan database'in başından başlayarak bu candidate listesindeki bütün elemanların sayılarını aşağı doğru ilerken sürekli bakıyor.
+
+595
+01:34:56,331 --> 01:34:58,671
+Şunun içerisinde 1 ve 2 var mıdır?
+
+596
+01:34:58,991 --> 01:34:59,911
+Yok aşağı in.
+
+597
+01:34:59,952 --> 01:35:00,891
+1 ve 2 var mıdır?
+
+598
+01:35:00,971 --> 01:35:01,731
+Yok aşağı in.
+
+599
+01:35:01,731 --> 01:35:06,571
+Yani aşağı inerken sadece 1 ve 2'nin sayısına bakmıyor.
+
+600
+01:35:06,571 --> 01:35:09,291
+Her satırda bütün hepsinin satırın sayısına bakıyor.
+
+601
+01:35:09,491 --> 01:35:11,192
+Mesela 1 ve 2 var mıdır? Yok.
+
+602
+01:35:11,331 --> 01:35:12,491
+1 ve 3 var mıdır? Var.
+
+603
+01:35:13,111 --> 01:35:15,291
+1 ve 5 var mıdır? Var.
+
+604
+01:35:15,591 --> 01:35:16,251
+Sayıyı arttır.
+
+605
+01:35:16,611 --> 01:35:17,611
+2-3 var mıdır?
+
+606
+01:35:18,392 --> 01:35:22,811
+İşte bu şekilde her satırı incelerken
+
+607
+01:35:22,811 --> 01:35:24,752
+şuradaki satırları update ediyor.
+
+608
+01:35:24,851 --> 01:35:26,311
+İkinci satıra geçiyor.
+
+609
+01:35:26,871 --> 01:35:30,311
+Bu satıra bakarken şuradakilerin countlarını update ediyor.
+
+610
+01:35:30,791 --> 01:35:32,091
+Böyle böyle aşağıya doğru iniyor.
+
+611
+01:35:32,471 --> 01:35:35,231
+En sonunda bütün database'i taradığı zaman
+
+612
+01:35:35,231 --> 01:35:43,591
+bu ikili elemanlardan oluşan item setlerin count'larını bana hesaplamış oldum.
+
+613
+01:35:44,631 --> 01:35:48,971
+Şimdi algoritma tekrardan döngü içerisinde bir sonra yapacağı şey
+
+614
+01:35:48,971 --> 01:35:59,151
+bu count'ları bulunan ikililer içerisinden sayısı 2 ve 2'nin üzerinde olanları tutuyor diğerlerini atıyor.
+
+615
+01:36:02,591 --> 01:36:04,911
+Onları tutuyor ve diğerlerini atıyor.
+
+616
+01:36:05,231 --> 01:36:11,551
+Ondan sonra tekrardan algoritma diyor ki ben bir daha en başa geçiyorum.
+
+617
+01:36:11,991 --> 01:36:20,212
+Tekrardan database'i tarayacağım ama database'i taramadığın önce bana sayısını hesaplamam gereken candidate listesini ver.
+
+618
+01:36:21,031 --> 01:36:25,411
+Algoritma gidiyor bu ikilileri birbirleriyle merge ettiriyor.
+
+619
+01:36:26,691 --> 01:36:28,212
+Üçlü olacak şekilde.
+
+620
+01:36:28,391 --> 01:36:30,191
+1-3 ile şunu merge ediyor.
+
+621
+01:36:30,451 --> 01:36:31,251
+1-2-3.
+
+622
+01:36:32,031 --> 01:36:34,251
+1-3 ile 2-5'i merge ediyor.
+
+623
+01:36:34,251 --> 01:36:40,491
+İşte 1, 3, 5. 1, 3 ile ondan sonra şunu merge ediyor.
+
+624
+01:36:40,611 --> 01:36:46,451
+İşte 1, 3, 5. Bu şekilde bütün alternatifleri merge ettiriyor.
+
+625
+01:36:47,951 --> 01:36:54,171
+Yalnız bunu gerçekleştirip mesela buradaki örnekte 2, 3, 5'i burada görüyorsunuz ama
+
+626
+01:36:54,171 --> 01:36:57,471
+mesela 1, 2, 3'ü burada görmüyorsunuz.
+
+627
+01:36:58,311 --> 01:36:59,091
+Bunun nedeni ne?
+
+628
+01:36:59,091 --> 01:37:10,931
+Hani biz şurada demiştik ya, bu algoritmanın item seti frequent diyebilmesi için iki şeyi sağlaması lazım.
+
+629
+01:37:11,071 --> 01:37:18,091
+Bir bunun sayılarının belli minimum support'un üzerinde olması lazım.
+
+630
+01:37:18,611 --> 01:37:24,211
+Bir de bu arkadaşın bütün subset'lerinin aynı zamanda frequent olması gerekiyor.
+
+631
+01:37:24,212 --> 01:37:46,932
+Şimdi ben burada bu candidate listesini bulurken ben oluşturmuş olduğum bütün candidate listeme sayma işlemine geçmeden önce bir bakıyorum.
+
+632
+01:37:47,691 --> 01:37:49,191
+Mesela 2-3-5'e baktım.
+
+633
+01:37:49,491 --> 01:37:55,691
+2-3-5'in bütün subsetleri yukarıda bir önceki aşamada frequent olarak tespit edilmiş midir diye bakıyorum.
+
+634
+01:37:56,812 --> 01:37:58,732
+2-3 evet frequent.
+
+635
+01:37:58,932 --> 01:38:00,331
+3-5 evet frequent.
+
+636
+01:38:00,331 --> 01:38:03,452
+Ondan sonra 2-5 evet frequent.
+
+637
+01:38:03,592 --> 01:38:08,631
+Dolayısıyla bu arkadaş downward closure property'yi sağladığı için bunu tutuyorum.
+
+638
+01:38:08,631 --> 01:38:18,971
+Ama diğer oluşturmuş olduğum üçlülerin sapsetleri, sapsetlerin hepsi şurada olmadığı için onları saymamışım.
+
+639
+01:38:19,092 --> 01:38:20,191
+Sadece bunu tutmuşum.
+
+640
+01:38:21,615 --> 01:38:38,355
+Ondan sonra da tekrardan database'in başına geçmişim ve 2-3-5'in gerçekten frequent olup olmadığına bakmak için 2-3-5'in bu database'deki tekrar sayılarına bakmışım. 2-3-5 burada var mı? Yok. Update etmedim. 2-3-5 var mı? Var. Update ettim.
+
+641
+01:38:38,355 --> 01:38:56,755
+2-3-5 burada var mı? Var. Update ettim. Var mı? Yok. Update etmedim. Total'daki benim sayım kaç tane? İki tane. Dolayısıyla da algoritma en son da 2-3-5'i frequent olarak tespit etti.
+
+642
+01:39:37,011 --> 01:39:49,751
+Evet. Şimdi bu algoritmanın südokuduna bir bakalım. Öncelikle algoritma bir item frequent item setleri tespit ediyor.
+
+643
+01:39:53,751 --> 01:40:06,751
+Bu şuradaki karenin içine bakalım. Bir item frequent item setleri tespit ediyor. Bunları tespit ettikten sonra ikinci k eşittir.
+
+644
+01:40:07,011 --> 01:40:19,631
+2'den başlayarak şurada gördüğünüz tekrarı gerçekleştiriyor. Öncelikle eleman sayısı 2 olan bütün candidate'leri buluyor.
+
+645
+01:40:21,631 --> 01:40:25,592
+Eleman sayısı 2 olan bütün candidate'leri buluyor.
+
+646
+01:40:29,140 --> 01:40:44,499
+ondan sonra burada kendi date'leri bulduktan sonra bu item setlerin şunu şöyle alayım
+
+647
+01:40:50,707 --> 01:41:00,027
+Sonra database'i tarayarak bu item setlerin gerçekten frequent olup olmadığına bakıyor.
+
+648
+01:41:00,027 --> 01:41:03,267
+Burada database'i gerçekten taraması gerekiyor.
+
+649
+01:41:03,567 --> 01:41:04,887
+Şurada yaptığımız şey.
+
+650
+01:41:05,867 --> 01:41:11,527
+Database'i tarıyoruz ve şu sayıları buluyoruz.
+
+651
+01:41:13,687 --> 01:41:19,087
+Sonra bunun içerisinden tekrardan yeni candidate'leri tespit ediyoruz.
+
+652
+01:41:19,087 --> 01:41:28,767
+Bunu bulduk. Bu candidate'ler içerisinden gerçekten frequent olanlarını bulduk. Sonra bir sonraki aşamadaki candidate'leri buluyoruz.
+
+653
+01:41:29,207 --> 01:41:37,487
+Yani ilk başta benim elimde ikili elemanlardan oluşan, birli elemanlardan oluşan candidate'ler vardı.
+
+654
+01:41:37,987 --> 01:41:44,947
+Bu şekilde başladım. Öncelikle ikili elemanlardan oluşan candidate'leri buldum.
+
+655
+01:41:44,947 --> 01:41:49,047
+şurada birli elemanlardan oluşan frequentları bulmuştum.
+
+656
+01:41:50,167 --> 01:41:54,167
+Sonra ilk aşamada ikili elemanlardan oluşan kendi dekleri buldum.
+
+657
+01:41:56,167 --> 01:41:59,467
+Ondan sonra database'i şu satırda taradım.
+
+658
+01:42:00,267 --> 01:42:02,707
+Database'i şu satırda taradım.
+
+659
+01:42:03,207 --> 01:42:04,007
+Sayıları buldum.
+
+660
+01:42:04,887 --> 01:42:09,987
+Ondan sonra da sayıları bulduktan sonra
+
+661
+01:42:09,987 --> 01:42:12,288
+bu sayılar içerisinden gerçekten
+
+662
+01:42:12,288 --> 01:42:13,447
+frequent olanları
+
+663
+01:42:13,447 --> 01:42:15,788
+tespit ettim. Yani
+
+664
+01:42:15,788 --> 01:42:17,788
+tarama ve şu iki satır
+
+665
+01:42:17,788 --> 01:42:20,307
+şu şuradaki satır ve şuradaki
+
+666
+01:42:20,307 --> 01:42:22,007
+satır şuna denk geliyor.
+
+667
+01:42:22,428 --> 01:42:23,967
+Şuradaki satıra denk geliyor.
+
+668
+01:42:25,307 --> 01:42:25,428
+Okey.
+
+669
+01:42:26,367 --> 01:42:28,167
+Ondan sonra da ne
+
+670
+01:42:28,167 --> 01:42:29,487
+yapıyorum? Şuradaki
+
+671
+01:42:29,487 --> 01:42:31,987
+gerçekten frequent olan ikilileri
+
+672
+01:42:31,987 --> 01:42:33,687
+kullanarak üçlüleri
+
+673
+01:42:33,687 --> 01:42:36,047
+candidate olarak biliyorum. Yani
+
+674
+01:42:36,047 --> 01:42:38,207
+şunları kullanaraktan tekrardan
+
+675
+01:42:38,207 --> 01:42:40,627
+loop'un başına geldim. Bu sefer k eşittir
+
+676
+01:42:40,627 --> 01:42:42,727
+3 oldu. Bu sefer
+
+677
+01:42:42,727 --> 01:42:44,407
+üçlülerin kendi date'ini buldum.
+
+678
+01:42:44,847 --> 01:42:46,788
+Şimdi ne yapacağım? Üçlüler
+
+679
+01:42:46,788 --> 01:42:48,547
+için yani bu bulmuş olduğum
+
+680
+01:42:48,547 --> 01:42:50,727
+kendi date'ler için tekrardan database'i
+
+681
+01:42:50,727 --> 01:42:52,547
+tarayacağım. Yani şu aşağıdaki
+
+682
+01:42:52,547 --> 01:42:54,487
+satırı yapacağım. Database'i
+
+683
+01:42:54,487 --> 01:42:56,568
+gerçekten tarıyorum ve bunların
+
+684
+01:42:56,568 --> 01:42:58,487
+içerisinden taradığım için count'ları
+
+685
+01:42:58,487 --> 01:43:00,588
+hesapladım. Bunların içerisinden
+
+686
+01:43:00,588 --> 01:43:02,387
+kaç tanesinin gerçekten frequent
+
+687
+01:43:02,387 --> 01:43:04,008
+olduğunu tespit ediyorum. Yani
+
+688
+01:43:04,008 --> 01:43:06,547
+şuradaki şu iki
+
+689
+01:43:06,547 --> 01:43:08,288
+satır şu ve şu.
+
+690
+01:43:10,187 --> 01:43:10,667
+Şurada
+
+691
+01:43:10,667 --> 01:43:12,467
+şu satıra denk geliyor.
+
+692
+01:43:12,467 --> 01:43:13,068
+Okey.
+
+693
+01:43:17,235 --> 01:43:29,775
+Şurada en başta yapmış olduğum yani tekli frequentları bulmak C1 ve şu iki satır ise bu loop'a girmeden şuradaki satırda gerçekleştirmiş olduğum işlem.
+
+694
+01:43:29,775 --> 01:43:42,795
+Yani şu gördüğünüz iteratif algoritmayı çalışma şeklini ben az önce size şurada gösterdim.
+
+695
+01:43:42,795 --> 01:43:50,835
+Yani 3 tane frequent item seti şu dataset üzerinde çalışmasını gösterdim.
+
+696
+01:43:50,975 --> 01:43:56,215
+Bu çalışma şekli aslında şurada gördüğünüz şey algoritmanın südü konu.
+
+697
+01:43:57,015 --> 01:44:02,975
+Şimdi bu algoritmanın biraz daha detayları verilmiş olan şeyine bakacak olursak.
+
+698
+01:44:04,515 --> 01:44:10,155
+İlk başta bu algoritmada Appliore algoritmasında dataset'i alıyorum.
+
+699
+01:44:10,155 --> 01:44:11,395
+dataset'i yeri sıra.
+
+700
+01:44:12,155 --> 01:44:14,195
+Aynı zamanda minimum support değerini de
+
+701
+01:44:14,195 --> 01:44:14,515
+alıyorum.
+
+702
+01:44:16,855 --> 01:44:17,895
+Bu öncelikle
+
+703
+01:44:17,895 --> 01:44:20,095
+ilk başta bütün database'i bir
+
+704
+01:44:20,095 --> 01:44:21,115
+okuyorum.
+
+705
+01:44:22,035 --> 01:44:23,795
+Ve bu database'i
+
+706
+01:44:23,795 --> 01:44:25,276
+okurken elimde
+
+707
+01:44:25,276 --> 01:44:27,956
+count'unu
+
+708
+01:44:27,956 --> 01:44:29,596
+hesaplayacağım
+
+709
+01:44:29,596 --> 01:44:31,975
+elemanlar var. Bütün
+
+710
+01:44:31,975 --> 01:44:33,956
+elemanlar için count'ları hesaplıyorum.
+
+711
+01:44:34,975 --> 01:44:35,956
+Ondan sonra count
+
+712
+01:44:35,956 --> 01:44:37,995
+değerleri ne bakaraktan
+
+713
+01:44:37,995 --> 01:44:39,956
+minimum support'un üzerinde olan
+
+714
+01:44:39,956 --> 01:44:41,616
+elemanları yani
+
+715
+01:44:41,616 --> 01:44:44,335
+count değeri bölü toplamdaki
+
+716
+01:44:44,335 --> 01:44:46,015
+eleman sayısına böldüğüm zaman
+
+717
+01:44:46,015 --> 01:44:47,776
+minimum support'tan yukarıdaysa
+
+718
+01:44:47,776 --> 01:44:50,015
+bunları diyorum ki bunlar
+
+719
+01:44:50,015 --> 01:44:51,576
+gerçekten frequent olan
+
+720
+01:44:51,576 --> 01:44:53,916
+tekli elemanlardır. Yani
+
+721
+01:44:53,916 --> 01:44:55,596
+büyük F1'i buluyorum.
+
+722
+01:44:56,735 --> 01:44:58,295
+Ondan sonraki şuradaki
+
+723
+01:44:58,295 --> 01:45:00,136
+for döngüsü benim
+
+724
+01:45:00,136 --> 01:45:02,136
+şurada göstermiş olduğum
+
+725
+01:45:02,136 --> 01:45:03,335
+for döngüsünün aynısı.
+
+726
+01:45:05,276 --> 01:45:06,695
+Artık elimde
+
+727
+01:45:06,695 --> 01:45:08,416
+frequent olduğunu
+
+728
+01:45:08,416 --> 01:45:10,816
+bildiğim tekli elemanlar
+
+729
+01:45:10,816 --> 01:45:12,475
+var ve bunları
+
+730
+01:45:12,475 --> 01:45:14,735
+kullanaraktan bu loop'un içerisine
+
+731
+01:45:14,735 --> 01:45:16,195
+giriyorum. Öncelikle
+
+732
+01:45:16,195 --> 01:45:18,416
+bu teklileri kullanaraktan
+
+733
+01:45:19,375 --> 01:45:20,456
+ikili
+
+734
+01:45:20,456 --> 01:45:22,456
+candidate'leri buluyorum. Şurada
+
+735
+01:45:22,456 --> 01:45:24,055
+yapmıştık. Tekli
+
+736
+01:45:24,055 --> 01:45:26,256
+freqüntleri kullanaraktan
+
+737
+01:45:26,256 --> 01:45:27,695
+ikili candidate'leri buldum.
+
+738
+01:45:29,556 --> 01:45:32,235
+Bu candidate'leri bulduktan sonra
+
+739
+01:45:32,235 --> 01:45:34,155
+ne yapıyorum? Gidiyorum
+
+740
+01:45:34,155 --> 01:45:36,456
+tekrardan database'i
+
+741
+01:45:36,456 --> 01:45:37,155
+okuyorum.
+
+742
+01:45:38,415 --> 01:45:45,235
+Ve database'i tekrardan bu kendi delikler için yani ikili elemanlardan oluşan kendi delikler için okuyorum.
+
+743
+01:45:45,235 --> 01:45:48,815
+Her satırda acaba bu ikili o satırda var mı?
+
+744
+01:45:49,175 --> 01:45:50,635
+Bu ikili o satırda var mı?
+
+745
+01:45:50,735 --> 01:45:54,135
+Şu ikili o satırda var mı diye bunların sayılarını arttırıyorum.
+
+746
+01:45:55,215 --> 01:46:03,875
+Tekrardan bu okuma işlemini bitirdikten sonra artık elimde sayıları hesaplanmış olan ikililer var.
+
+747
+01:46:04,435 --> 01:46:05,855
+Yani şuradaki aşamadayım.
+
+748
+01:46:06,195 --> 01:46:08,335
+Sayıları hesaplanmış ikililer var.
+
+749
+01:46:08,415 --> 01:46:28,615
+Artık bu sayıları hesaplanmış olan ikililerden hangileri frequent yani F2'yi bulmam lazım onu da şu aşamada yapıyorum sayıları bölü toplamdaki transaction sayısı minimum support'tan yukarıda olanları gerçek frequentlardır diyorum.
+
+750
+01:46:28,615 --> 01:46:32,235
+ve loop'un başına dönüyorum.
+
+751
+01:46:32,435 --> 01:46:34,335
+K'yı bir arttırıyorum. Bu sefer
+
+752
+01:46:34,335 --> 01:46:36,535
+elimde ikililerden oluşan
+
+753
+01:46:36,535 --> 01:46:38,475
+bir liste var. Gerçek frekünt
+
+754
+01:46:38,475 --> 01:46:40,495
+olduğunu bildiğim ikililerden oluşan liste var.
+
+755
+01:46:40,955 --> 01:46:42,555
+Bunu kullanarak tekrardan
+
+756
+01:46:42,555 --> 01:46:44,335
+yeni kendileri generate ediyorum.
+
+757
+01:46:45,415 --> 01:46:46,355
+Algoritmi bu şekilde
+
+758
+01:46:46,355 --> 01:46:48,315
+gidiyor. Şimdi burada kendileri
+
+759
+01:46:48,315 --> 01:46:50,435
+generate diye bir tane algoritma var.
+
+760
+01:46:51,495 --> 01:46:51,855
+Yani
+
+761
+01:46:51,855 --> 01:46:54,455
+bir fonksiyon var. Bu fonksiyona
+
+762
+01:46:54,455 --> 01:46:54,895
+gidelim.
+
+763
+01:46:57,175 --> 01:46:58,295
+Şimdi bu
+
+764
+01:46:58,295 --> 01:47:00,355
+fonksiyonun da kendi içerisinde iki tane
+
+765
+01:47:00,355 --> 01:47:02,215
+adımı var arkadaşlar. Bunlardan
+
+766
+01:47:02,215 --> 01:47:02,995
+bir tanesi
+
+767
+01:47:03,412 --> 01:47:22,252
+joint step yani işte tekleri ikiliye çeviriyor, ikilileri üçlüye çeviriyor o joint step. İkincisi de prone step burada da downward closure property'yi sağlamayan durumlar varsa onları uçuruyor.
+
+768
+01:47:24,787 --> 01:47:44,767
+Mesela şuradaki örneğe bakın. Şimdi bu Candidate Jam, şuradaki Candidate Jam fonksiyonunu çağırdığım zaman yaptığı işlem şu. Diyelim ki mesela ben bu Candidate Jam'i şöyle bir liste için çağırdım. Bu listenin içerisinde frequent olduğunu bildiğim üçlüler var.
+
+769
+01:47:44,767 --> 01:48:01,387
+Şimdi bu candidate chain fonksiyonu öncelikle bu üçlüleri bir join yapacak. İki tane şeyi vardı ya aşaması. Birincisi join, ikincisi prune. Öncelikle join yapacak. Kaç tane join yaparak oluşturabilmiş? İki tane.
+
+770
+01:48:01,387 --> 01:48:09,547
+1-2-3 ile şunu birleştirmiş, 1-2-3-4'ü oluşturmuş. 1-2-3 ile şunu birleştirmiş, o da yine 1-2-3-4'ü veriyor.
+
+771
+01:48:10,427 --> 01:48:24,047
+1-2-3 ile 1-3-5'i oluşturmuş, burada 1-2-3-5 yok, onu da eklemem gerekiyor.
+
+772
+01:48:24,047 --> 01:48:35,527
+1, 2, 3, 5'i burada göremedim. O da burada yok. Onu da şimdi madem fark ettim onu da ekliyorum.
+
+773
+01:48:59,220 --> 01:49:19,779
+Okey. Ondan sonra başka ne yapmış? 1-3-4-5 var. Mesela 1-3-4 ile 1-3-5'i birleştirince 1-3-4-5'i oluşturmuş. Ondan sonra 1-2-4 ile 2-3-4'ü birleştirmiş. 1-2-3-4'ü oluşturmuş.
+
+774
+01:49:19,779 --> 01:49:29,339
+Yani şu üçlüleri birbirleriyle birleştirerek olabilecek bütün olası dörtlüleri tespit ediyoruz.
+
+775
+01:49:30,400 --> 01:49:36,739
+Şimdi bunu tespit ettikten sonra işi bitmiyor bu candidate chain algoritması.
+
+776
+01:49:37,499 --> 01:49:42,979
+Bu candidate'leri geri göndermeden önce output olarak bu algoritma bir de şuna bakıyor.
+
+777
+01:49:43,120 --> 01:49:48,419
+Arkadaş diyor download closure property diye bir şey vardı.
+
+778
+01:49:48,420 --> 01:49:55,300
+Yani bunların subsetlerinin hepsi acaba frequent mıdır?
+
+779
+01:49:55,679 --> 01:49:59,519
+Yani şu 1, 2, 3, 4'ün bütün subsetleri frequent mıdır?
+
+780
+01:49:59,720 --> 01:50:02,220
+1, 3, 4, 5'in bütün subsetleri frequent.
+
+781
+01:50:02,519 --> 01:50:05,199
+Bu 1, 2, 3, 5'in bütün subsetleri frequent mıdır?
+
+782
+01:50:05,880 --> 01:50:16,160
+Buna bakarken de bir önceki aşamadaki şeylere bakıyor.
+
+783
+01:50:16,159 --> 01:50:40,559
+Burada mesela 1, 2, 3. Şuraya gelelim bir saniye. Biz bunu aynı örnekten aldık. Onu da hatırlamıyorum. O örnek burada yok. Tamam. Yani buradaki dörtlerin her birisi için bunun altın, şuradan görebiliriz, pardon şuradan takip edebiliriz.
+
+784
+01:50:40,559 --> 01:50:42,519
+1-2-3-4
+
+785
+01:50:42,519 --> 01:50:44,220
+1-2-3-4'ün üçlü
+
+786
+01:50:44,220 --> 01:50:46,559
+subsetleri neler? 1-2-3 yukarıda var mı?
+
+787
+01:50:46,619 --> 01:50:48,319
+var. 2-3-4
+
+788
+01:50:48,319 --> 01:50:49,939
+yukarıda var mı? var.
+
+789
+01:50:50,819 --> 01:50:52,379
+1-3-4 yukarıda
+
+790
+01:50:52,379 --> 01:50:54,239
+var mı? var. Tamam o zaman ben bunu
+
+791
+01:50:54,239 --> 01:50:56,519
+ne diyorum? Bütün subsetleri
+
+792
+01:50:56,519 --> 01:50:58,499
+frequent'tur
+
+793
+01:50:58,499 --> 01:51:00,220
+diyor. Şimdi buna
+
+794
+01:51:00,220 --> 01:51:01,839
+bakalım şu acaba
+
+795
+01:51:01,839 --> 01:51:04,039
+bütün subsetleri frequent mudur? Çünkü
+
+796
+01:51:04,039 --> 01:51:05,919
+yukarıda gerçek frequent
+
+797
+01:51:05,919 --> 01:51:08,239
+islam var. 1-3-4
+
+798
+01:51:08,239 --> 01:51:09,959
+frequent mudur? Evet.
+
+799
+01:51:10,559 --> 01:51:18,259
+Bir 3-4-5 yukarıda frequent müdır? 3-4-5 yukarıda frequent değil.
+
+800
+01:51:19,039 --> 01:51:26,339
+Dolayısıyla bakın buradaki arkadaşın bütün subsetleri frequent olarak çıkmadan.
+
+801
+01:51:28,339 --> 01:51:30,319
+Downward closure property ne diyordu?
+
+802
+01:51:30,319 --> 01:51:32,899
+bir elemanın
+
+803
+01:51:32,899 --> 01:51:34,719
+bir frequent item setin
+
+804
+01:51:34,719 --> 01:51:36,659
+item set olabilmesi için
+
+805
+01:51:36,659 --> 01:51:38,539
+bunun bütün
+
+806
+01:51:38,539 --> 01:51:40,719
+subsetlerinin frequent olması
+
+807
+01:51:40,719 --> 01:51:42,419
+gerekiyor. Ben buradan gördüm ki
+
+808
+01:51:42,419 --> 01:51:44,819
+bir 3-4-5 yukarıda
+
+809
+01:51:44,819 --> 01:51:46,759
+olmadığı için bu arkadaş
+
+810
+01:51:46,759 --> 01:51:48,299
+downward closure
+
+811
+01:51:48,299 --> 01:51:50,799
+propiyeti'yi sağlamadı. Dolayısıyla
+
+812
+01:51:50,799 --> 01:51:52,659
+bunu candidate listimden
+
+813
+01:51:52,659 --> 01:51:54,759
+çıkartıyorum. Mesela buna
+
+814
+01:51:54,759 --> 01:51:56,579
+bakalım 1-2-3 yukarıda
+
+815
+01:51:56,579 --> 01:51:58,659
+var mı? Var. 2-3-5
+
+816
+01:51:58,659 --> 01:51:59,739
+var mı? Yok.
+
+817
+01:52:00,319 --> 01:52:01,799
+Bakın 2-3-5 yukarıda yok.
+
+818
+01:52:01,899 --> 01:52:07,219
+Yani bu arkadaşın da bütün subsetleri yukarıdaki frequent listesinde yok.
+
+819
+01:52:08,059 --> 01:52:08,739
+Ben ne yaptım?
+
+820
+01:52:08,819 --> 01:52:15,419
+Bu 3 tane şunları birleştirmekle oluşturmuş olduğum bu 3 tane arasından sadece bir tanesini bıraktım.
+
+821
+01:52:15,419 --> 01:52:22,899
+Yani prune stepinde downward closure property'yi sağlamayan arkadaşları eliminate ettim.
+
+822
+01:52:22,899 --> 01:52:36,519
+Şimdi demiştim ya kendi date listesindeki bir arkadaşın iki tane property'yi sağlaması lazım. Bir tanesi download closure property. İkincisi ise bunun countunun minimum support'tan büyük olması.
+
+823
+01:52:36,519 --> 01:52:48,239
+Şimdi artık bir sonraki aşamada ne yapacağım? Tekrardan bunu database'in başına getireceğim. Database içinde 1, 2, 3, 4'ün kaç tane olduğunu sayacağım.
+
+824
+01:52:50,036 --> 01:53:12,056
+demek ki Candidate Jam dediğim algoritma da bunu yapıyor. Buraya bakacak olursam aslında algoritmanın da şeyi bu. Öncelikle siz bu algoritmaya ya teklilerin listesini ya da ikililerin frequent olan tekliler ya da frequent olan ikililer ya da frequent olan üçlerin listesini veriyorsunuz.
+
+825
+01:53:12,056 --> 01:53:40,355
+Bu algoritma tekleri ikili hale getiriyor. İkilileri üçlülerden oluşan liste haline getiriyor. Şuraya kadar. Join step şurası. Arkasından da bunun içerisinde subsetleri ilk başta kendisine verilmiş olan yani join edilmiş olan elemanlar içinde subsetleri kendisine ilk başta verilmiş olan listede olmayanları siliyor, eliminate ediyor.
+
+826
+01:53:40,355 --> 01:53:53,335
+Yani Candidate Gen bana şeyi return ederken Download Closure Propriety'sini kontrol ederek listeyi gönderiyor
+
+827
+01:53:53,335 --> 01:53:58,135
+Algoritmama tekrar dönecek olursam a priori algoritmanın tamamına
+
+828
+01:53:58,135 --> 01:54:04,436
+Hatırlayın şuradaki Ford döngüsü içerisinde ilk başta Candidate Gen'i çağırıyordum
+
+829
+01:54:04,436 --> 01:54:07,696
+Candidate Gen'e teklileri veriyordum ilk başta
+
+830
+01:54:07,696 --> 01:54:10,036
+O bana ikilileri veriyordu
+
+831
+01:54:10,036 --> 01:54:19,355
+demek ki Candidate'çen ikilileri bana verirken aynı zamanda her bir ikili için downward closure property'yi de kontrol ettikten sonra veriyor.
+
+832
+01:54:20,296 --> 01:54:29,735
+Üçlüleri verirken örneğin bir sonraki aşamada üçlüleri verirken Candidate üçlüleri her birisi için downward closure property'yi kontrol ettikten sonra veriyor.
+
+833
+01:54:33,332 --> 01:54:34,332
+ok?
+
+834
+01:54:38,163 --> 01:55:06,463
+Şimdi bu birliktelirlikleri çıkarma en başta demiştik ya, a priori algoritmasının iki ana aşaması var. Birinci aşamada frequent item setleri bulmaktı. Frequent item setleri bu a priori algoritmasını çalıştırarak tespit edebiliyorum. Ondan sonra da kuralları generate ediyoruz. Hani kuralları generate etme kısmındayım şu an. Kuralları nasıl generate ediyor?
+
+835
+01:55:08,163 --> 01:55:31,384
+Şimdi bu Apiore algoritması ile beraber en sonunda oluşmuş olan Frequent Item Setler yani çok sayıda transaction'da tekrar etmiş olan içinde çok sayıda elemanın olduğu Frequent Item Setler Association Rule değil.
+
+836
+01:55:31,383 --> 01:55:56,323
+demek ki bizim yapmamız gereken bir aşama daha var. Association rule'ları oluştururken de şuna dikkat ediyoruz. Benim bir frequent item setimi ben büyük capital X olarak şey yapalım. Mesela bu capital X bir önceki örnekte mesela şu olabilir. Yani bu bir algoritmayı çalıştırmışım. En sonunda bana bir, üç, dört, beş demiş ki bu frequent item set.
+
+837
+01:55:56,323 --> 01:56:09,403
+yani minimum support değerini sağlayan largest frequent item set ve içindeki eleman sayısı en fazla olan item set.
+
+838
+01:56:09,403 --> 01:56:18,503
+Bunu vermiş. Şimdi ben buna büyük x diyorum ve diyorum ki ben büyük x içerisinde bir tanesi subset tanımlayayım, büyük a tanımlayayım.
+
+839
+01:56:18,503 --> 01:56:28,503
+bu X'in sapseti olsun ve boş küme olmasın.
+
+840
+01:56:28,663 --> 01:56:33,843
+Yani şunun içerisinde A en azından bir tane eleman içersin.
+
+841
+01:56:34,503 --> 01:56:37,783
+B ise X'in geri kalan elemanlarına diyeyim.
+
+842
+01:56:37,783 --> 01:56:50,923
+yani A demek ki bunun tamamını eğer ben şey diyecek olursam, X diyecek olursam, 1, 3, 4, 5'ten oluşan frequent item seti X diyecek olursam
+
+843
+01:56:50,923 --> 01:57:03,283
+A bir ya da birden fazla eleman içerebilir, B ise X'in A'nın dışında kalan elemanlarından oluşan kısmını diyoruz.
+
+844
+01:57:03,283 --> 01:57:14,024
+demek ki tanımlarken X'i frequent item set diye tanımlıyorum. A bunun non empty sub seti olacak. B ise kalan kısmı olacak.
+
+845
+01:57:15,024 --> 01:57:25,283
+Şimdi bunu bu şekilde düşündükten sonra artık ben sol tarafı A, sağ tarafı B olan bütün kuralları, bütün olabilecek kuralları yazabilirim.
+
+846
+01:57:25,283 --> 01:57:53,903
+Şimdi şunu görüyorsunuz bu ne demekti? Şuradaki 4 tanenin frequent item set olması bu downward closure property'yi sağlıyor demek. Yani bu şu demek. Bu arkadaşların bunun bütün subsetleri de frequent item set yani bunun bütün subsetleri de aynı zamanda neyi sağlıyor? Minimum support'u sağlıyor.
+
+847
+01:57:55,283 --> 01:58:10,683
+dolayısıyla ben bu formatta yani sol tarafı A, sağ tarafı B formatında yazacağım bütün kuralların hepsi minimum support değerini sağlayacaktır.
+
+848
+01:58:10,683 --> 01:58:22,543
+Neden sağlayacaktır? Zaten A ve B'yi oluşturan elemanların oluşmuş olduğu küme yani şu kümenin a priori algoritması bana zaten verdi.
+
+849
+01:58:22,543 --> 01:58:27,463
+dedi ki bunun minimum support değeri zaten senin istediğin support değerinin üzerindedir.
+
+850
+01:58:28,148 --> 01:58:31,388
+Dolayısıyla benim burada hesaplamam gereken confidence değeri.
+
+851
+01:58:31,547 --> 01:58:42,488
+Yani elimdeki bana verilmiş olan bir tane frequent item setten bu formatta kuralları yazarken mutlaka benim bunun support değerini biliyorum.
+
+852
+01:58:42,608 --> 01:58:45,007
+Minimum support'un üzerinde olduğunu zaten biliyorum.
+
+853
+01:58:45,687 --> 01:58:48,408
+Bunun confidence değerini hesaplamam gerekiyor.
+
+854
+01:58:50,007 --> 01:58:52,908
+Confidence değerini de şu şekilde hesaplayabilirim.
+
+855
+01:58:52,908 --> 01:58:59,807
+Herhangi belirmiş olan bir A varsa B'de vardır kuralının confidence değeri.
+
+856
+01:59:00,548 --> 01:59:05,387
+A birleşim B'nin yani A birleşim B'nin neyi ifade ediyor?
+
+857
+01:59:05,508 --> 01:59:09,348
+X'i yani şu arkadaşın support değeri.
+
+858
+01:59:09,348 --> 01:59:19,207
+Yani bütün bu frequent item set için bulmuş olduğum largest frequent item set için bulmuş olduğum arkadaşın support değeri.
+
+859
+01:59:19,207 --> 01:59:33,207
+bölü kuralın sol tarafına düşmüş olan yani A'nın support değerini eğer ben kullanaraktan şuradaki kuralın confidence'ını hesaplayabilirim.
+
+860
+01:59:35,648 --> 01:59:37,627
+Burada bir örneğe bakalım.
+
+861
+01:59:38,707 --> 01:59:46,687
+Burada bana denmiş ki düşün ki ben Appriori algoritmasını çalıştırdım denmiş.
+
+862
+01:59:46,688 --> 01:59:49,427
+ve Apriori algoritması sonucunda
+
+863
+01:59:49,427 --> 01:59:51,148
+2, 3, 4
+
+864
+01:59:51,148 --> 01:59:53,488
+Frequent Item Set
+
+865
+01:59:53,488 --> 01:59:55,128
+olarak Apriori bana
+
+866
+01:59:55,128 --> 01:59:55,588
+bulmuş.
+
+867
+01:59:58,868 --> 01:59:59,148
+Ve
+
+868
+01:59:59,148 --> 02:00:00,688
+bana diyor ki
+
+869
+02:00:00,688 --> 02:00:03,168
+bunun da support değeri %50.
+
+870
+02:00:03,308 --> 02:00:05,188
+Yani bu Frequent Item Set'i bulmuş.
+
+871
+02:00:05,588 --> 02:00:07,588
+2, 3, 4 Frequent Item Set
+
+872
+02:00:07,588 --> 02:00:09,188
+ve bunun support değeri %50.
+
+873
+02:00:09,287 --> 02:00:11,067
+Yani toplamdaki transaction'lar
+
+874
+02:00:11,067 --> 02:00:13,847
+içerisinden %50'sinde
+
+875
+02:00:13,847 --> 02:00:15,028
+2, 3, 4
+
+876
+02:00:15,028 --> 02:00:16,627
+bulunuyor.
+
+877
+02:00:16,688 --> 02:00:20,247
+ve bana diyor ki
+
+878
+02:00:20,247 --> 02:00:22,008
+ben diyor aynı zamanda
+
+879
+02:00:22,008 --> 02:00:24,107
+bu arkadaşların
+
+880
+02:00:24,107 --> 02:00:28,228
+yani bu 2-3-4'ü içeren
+
+881
+02:00:28,228 --> 02:00:31,148
+bu frequent item setin
+
+882
+02:00:31,148 --> 02:00:32,567
+sub setlerinin de
+
+883
+02:00:32,567 --> 02:00:34,107
+sana şeyini vereceğim
+
+884
+02:00:34,107 --> 02:00:37,688
+support değerlerini vereceğim
+
+885
+02:00:37,688 --> 02:00:40,608
+bunun bütün sub setlerini gördüğünüz gibi
+
+886
+02:00:40,608 --> 02:00:41,927
+vermiş 2-3
+
+887
+02:00:41,927 --> 02:00:43,608
+2-4, 3-4
+
+888
+02:00:43,608 --> 02:00:45,308
+2-3-4
+
+889
+02:00:45,308 --> 02:01:12,347
+Değil mi? İkili subsetler de olabilir, tekli subsetler de olabilir. Bunların hepsinin support değerlerini vermiş. Dikkat ederseniz apriori algoritması ne demişti? Ben en sonunda bulmuş olduğum frequent item set downward closure property'yi sağlar diyordu. Ne demekti bu? Bu arkadaş eğer frequent ise bunun bütün subsetleri de frequent'tir.
+
+890
+02:01:12,347 --> 02:01:21,267
+Yani minimum support'un üzerindedir. Gerçekten de buradaki değerler de minimum support'un üzerinde olan değerler. Eşit ve üzerinde olan değerler.
+
+891
+02:01:22,808 --> 02:01:36,167
+Şimdi ve ben size soruyorum. Diyorum ki bu kadar bilgiye dayalı olarak bana bundan yola çıkaraktan kural üretin ve bu kuralların confidence değerlerini hesaplayın diyorum.
+
+892
+02:01:36,167 --> 02:01:57,967
+Bu durumda şunu uyguluyorsunuz. Diyorsunuz ki tamam o zaman bize verilmiş olan bu item seti x diyelim. Bu item seti içerisinde bir tane subset düşünelim a diyelim. X'in içerisinde olup a'da olmayan geri kalana ise b diyelim.
+
+893
+02:01:57,967 --> 02:02:04,547
+Ve bununla ilgili bütün olası A varsa B de vardır kurallarını öncelikle yazalım.
+
+894
+02:02:05,147 --> 02:02:06,707
+Gerçekten oturduğunuz yazdınız.
+
+895
+02:02:09,087 --> 02:02:11,887
+Başladınız. Öncelikle A'yı 2-3 belirlediniz.
+
+896
+02:02:12,307 --> 02:02:15,367
+Geriye kalan ne kaldı? 4. 4'ü sağ tarafa yazdınız.
+
+897
+02:02:15,487 --> 02:02:19,587
+Sonra A'yı 2-4 belirlediniz. Geriye ne kaldı? 3 bu tarafa yazdınız.
+
+898
+02:02:20,607 --> 02:02:24,707
+A'yı 3-4 belirlediniz. Buraya yazdınız. Geriye ne kaldı? 2 buraya yazdınız.
+
+899
+02:02:25,555 --> 02:02:49,695
+A'yı 2'ye ilerlediniz. Geriye ne kaldı? 3, 4 buraya. A'yı 3 belirlediniz. 2, 4. 4 belirlediniz. 2, 3 bu tarafa yazdınız. Olası yani şu formatta A varsa B'de vardır formatında ve şuradaki cümleyi sağlayan bütün kuralları yazdınız. Cümle ne diyordu?
+
+900
+02:02:49,695 --> 02:02:59,755
+A non-empti set olacak, boş küme olmayacak ve X'in subset'i olacak. B'de A'da olmayan X'de olan geri kalandaki kısmı olacak.
+
+901
+02:03:00,276 --> 02:03:07,736
+Buna da yol olarak bütün kuralları yazdınız. Şimdi ne kaldı sizin göreviniz? Bu kuralların confidence değerlerini bulmak.
+
+902
+02:03:08,515 --> 02:03:17,035
+Şimdi böyle bir kuralın confidence değerini bulurken size şöyle bir şey kuraldan bahsettim.
+
+903
+02:03:17,035 --> 02:03:23,835
+dedim ki bunun confidence'ını bulurken kuralın şunu kullanabilirsiniz.
+
+904
+02:03:24,635 --> 02:03:37,136
+A ve B'nin support değeri yani hem A'da olan hem B'de olan elemenlerin toplamının support değeri bölü sadece A'da olan elemanların support değeri.
+
+905
+02:03:37,136 --> 02:03:50,615
+gelelim. Şimdi hem A'da hem de B'de olanların dikkat ederseniz bütün kurallara baktığım zaman hem A hem B'de olanlar yani bu ikisinin birleşimi şu demek.
+
+906
+02:03:50,615 --> 02:04:04,456
+Yani 2-3-4 demek. Dolayısıyla A ve B'nin birleşiminin support değerini ben zaten biliyorum. Yüzde elli. Yani şuradaki formülün üst kısmını, pay kısmını zaten biliyorum.
+
+907
+02:04:04,456 --> 02:04:16,936
+%50 bölü, şimdi pay kısmına bakacağım, pay kısmı ne diyordu? Payda kısmı pardon, A'nın yani kuralın sol tarafına düşen kısmının support değerini bul.
+
+908
+02:04:18,155 --> 02:04:28,395
+A'nın support değeri, 2-3'ün support değeri, ben bunu zaten vermişim, 2-3'ün support değeri %50. %50 bölü %50 ne oldu? Confidence %100 oldu.
+
+909
+02:04:28,395 --> 02:04:51,895
+2-4'ü vermişim. 2-4 %50. %50 bölü %50 ne oldu? %100. Bu şekilde aşağıya doğru iniyorum. 3-4'ün support değeri %75. %50 bölü %75 neyi verdi? %67'yi verdi. Bu şekilde bütün kuralların confidence değerlerini bulabilirim.
+
+910
+02:04:51,895 --> 02:05:08,395
+Eğer size soruda bir de şunu da sormuş olsaydım, demiş olsaydım ki confidence değerleri %70'in üzerinde olanları benim için yaz demiş olsaydım o zaman şu arkadaşları yazmayacaktınız. Sadece şu iki tanesi kuralı yazacaktınız.
+
+911
+02:05:08,395 --> 02:05:25,955
+Bu da bizim apriorinin sonucunda oluşmuş olan Frequent Item Set'ten yola çıkarak Confidence'ı belli bir değerin üzerinde olan kuralları bulma yöntemimiz arkadaşlar
+
+912
+02:05:35,347 --> 02:05:38,347
+Az önce anlattığım şeyleri burada konuşuyorum.
+
+913
+02:05:40,607 --> 02:05:57,627
+Şimdi Appriori algoritması dediğimiz şey Level-wise Search yapıyor. Yani bottom-up gidiyor. Öncelikle bir elemanı olan item setten başlıyorsunuz. İki elemanı olan item setlere geçiyorsunuz.
+
+914
+02:05:57,627 --> 02:06:07,327
+orada öncelikle candidate'leri buluyorsunuz. Onların içerisinden download closure property'yi sağlamayanlara eliyorsunuz.
+
+915
+02:06:07,687 --> 02:06:17,627
+Tekrardan count işlemi yapıyorsunuz ve gerçek frequent ikilileri buluyorsunuz. Sonra bunu aynı şey üçlüler için yapıyorsunuz. Yukarıya doğru çıkıyorsunuz.
+
+916
+02:06:17,627 --> 02:06:39,407
+ve her adımda yani birlileri bulurken, ikilileri bulurken, üçlüleri bulurken database'i sıfırdan okuyorsunuz. Dolayısıyla k tane k largest item seti bulmak istiyorsanız k tane database'i sıfırdan birinci satırdan sonuna kadar okumanız gerekiyor.
+
+917
+02:06:39,407 --> 02:06:59,527
+dolayısıyla burada hani eğer bir database üzerinde milyonlar mertebesinde transaction varsa yani milyon mertebesinde satır varsa bu costu büyük olan, maliyeti büyük olan bir algoritma.
+
+918
+02:06:59,528 --> 02:07:18,447
+Çünkü neden büyük? Her seferinde database'e bir ulaşıyorsunuz ve database'de tabloyu baştan sonra okuyorsunuz. Ne zaman ki siz bir IO operation'ı yaptığınız zaman yani bir diske ulaştığınız zaman ve disk üzerinden bir okuma yaptığınız zaman bunun cost'u çok fazladır.
+
+919
+02:07:18,447 --> 02:07:42,788
+Yani memoriden okumayla diskle okumayı karşılaştırdığınız zaman diskin kostu memoriden okumaya göre çok fazla. Dolayısıyla da bu algoritma eğer çok fazla diske gidecek olursa yani k değeri çok büyük olacak olursa algoritma oldukça fazla zaman harcayacak bir algoritmaya dönüşür.
+
+920
+02:07:42,787 --> 02:07:59,347
+o yüzden de genelde pratikte bu K değerinin bir maksimum sınırı olur. Yani en fazla 10 tane largest item için siz bir apriori algoritmasını çalıştırırsınız.
+
+921
+02:07:59,347 --> 02:08:11,847
+algoritmanın kendisi hızlı ama algoritmanın her bir seferinde veriye gidip veriyi okuması okuma işlemi pahalı.
+
+922
+02:08:11,847 --> 02:08:22,508
+Çünkü transaction database'leri genelde büyüklüğü fazla olan, tabloda satır sayısı fazla olan bir veriler oluşuyor.
+
+923
+02:08:26,260 --> 02:08:42,739
+Farklı formatlarda biz datalarla karşılaşabiliriz. Bizim istediğimiz Apriori algoritmasını görmek istediği data tipi şu şekilde, transaction data formatında.
+
+924
+02:08:43,399 --> 02:08:50,279
+Birinci satırda, birinci satır birinci transakşını, ikinci satır ikinciyi, üçüncü satır üçüncü transakşını gösteriyor.
+
+925
+02:08:50,279 --> 02:09:11,819
+Bu transaction formatını kimi zaman bazı tablolarda böyle bir tablo formunda görüyorum. Bu görmüş olduğum tablo formunu ben transaction formuna çevirmem gerekiyor ki Apiore algoritmasını kullanayım.
+
+926
+02:09:11,819 --> 02:09:18,739
+Burada mesela şöylesi bir tablo formunu transaction formuna çevirmek durumunda kaldığım zaman şöyle yapıyorum.
+
+927
+02:09:20,280 --> 02:09:34,639
+işte attribute 1 için A değeri, attribute 1 ondan sonra attribute 2 için B değeri, attribute 3 için D değeri yani şunları der birisi birer transaction ifade ediyorsa
+
+928
+02:09:34,639 --> 02:09:47,420
+şuradaki kolon isimlerini alıp şuradaki eleman değeriyle ne yapıyorum ikili haline getirip bunları bu şekilde transaction formatına çayınıyorum.
+
+929
+02:09:47,419 --> 02:09:54,139
+Bu sayede Apriori algoritmasın böyle bir transaction formatındaki datayı proses edebilir.
+
+930
+02:10:00,659 --> 02:10:15,120
+Evet, Apriori algoritmasının diğer bir versiyonu Class Association rule'ları çıkartmak için kullanılan versiyonu.
+
+931
+02:10:15,120 --> 02:10:34,579
+Bu buradaki Class Association Rule Mining için kullandığımız algoritmanın a priori algoritmasından tek farkı var. O da kuralın sol tarafında artık itemlar yok. Kuralın sol tarafında bir etiket var.
+
+932
+02:10:34,579 --> 02:10:52,479
+algoritma, aynı algoritma sadece üzerinde çalışmış olduğu data böyle bir data. Normalde daha önceden şu sağ taraftaki etiketler yoktu.
+
+933
+02:10:52,479 --> 02:11:03,239
+Apriori algoritmasını kullanırken bu etiketler yoktu ve biz şuradaki elemanlar içerisindeki Frequent birliktelikleri buluyorduk.
+
+934
+02:11:03,239 --> 02:11:16,219
+Şimdi burada ise arkadaşlar bizim bulmaya çalıştığımız frequent birliktelikleri yine bulmaya çalışıyoruz ama klasıyla beraber bulmaya çalışıyoruz.
+
+935
+02:11:16,219 --> 02:11:28,859
+Yani burada mesela bir örneğimiz var. Şu kuralı mesela düşünelim. Sol tarafta student ve school var. İçerisinde student ve school olanların,
+
+936
+02:11:28,859 --> 02:11:46,479
+student ve school olanlar ve education olan kaç tane var? Totalde 7 tane transaction var. Bunların içerisinde student, school ve education olan 2 tane var. Dolayısıyla support değeri 2 bölü 7.
+
+937
+02:11:48,619 --> 02:11:58,659
+Dikkat edin, hani education'ı da ve sport'ı da sanki bir öncelikle elemanmış gibi düşünün. Yani bir önceki algoritma da sanki burada elemanmış gibi düşünün.
+
+938
+02:11:58,859 --> 02:12:18,139
+Yani şu 3 taneyi, 1, 2, 3 taneyi içeren toplamda kaç tane transaction var? Total transaction içerisinde bunların oranına bakıyorum. Student, school, education bunlar kaç tane varmış? 2 tane varmış. Totalde 7 içerisinde 2. Bu bana support değeri var.
+
+939
+02:12:18,139 --> 02:12:26,999
+Confidence değerine bakarken de şuna bakıyorum. Aynı mantık. Sol tarafında student ve school alanlardan kaç tane var? İki tane var.
+
+940
+02:12:27,659 --> 02:12:38,959
+Student ve school alanlardan. Acaba kaç tanesinin etiketi education? İki tane. Dolayısıyla bu kuralın Confidence'ı iki bölü iki.
+
+941
+02:12:38,960 --> 02:12:57,740
+şuna bakalım. İçinde game ve sport olan kaç tane transaction var? Hem game hem sport olan 1, 2, ondan sonra 2 tane saydım.
+
+942
+02:13:05,332 --> 02:13:08,332
+Evet, bir saniye...
+
+943
+02:13:27,636 --> 02:13:47,115
+Okey. Bunun da iki olması lazım. İçinde game ve sport olan iki tane var. İki bölü yedi olması lazım. Bunu yanlış yazmışım. Bunlar içerisinde aslında yanlış yazmışım da değil de ben yanlış söylüyorum.
+
+944
+02:13:47,115 --> 02:13:54,275
+Burada support değerine bakarken etikete değil de yine aynı şekilde elemanlara bakıyorum.
+
+945
+02:13:56,595 --> 02:14:09,195
+Yani sol taraftaki arkadaşların total bulunduğu transactionlar bölü totaldeki transaction sayısı bana support değerini veriyor.
+
+946
+02:14:09,195 --> 02:14:19,395
+Ben bunu söylerken şu arkadaşı da işin içine katarak bir önceki birliktelik kuralları çıkarmada uyguladığım yöntem gibi konuştum.
+
+947
+02:14:19,595 --> 02:14:20,695
+Bunu yanlış konuştum.
+
+948
+02:14:20,995 --> 02:14:21,835
+Özür dilerim.
+
+949
+02:14:21,915 --> 02:14:22,915
+Bir adım geriye atıyorum.
+
+950
+02:14:24,255 --> 02:14:35,735
+Class Association Rule Mining'de support değerini bulurken sol taraftaki elemanların geçmiş olduğu transaction sayısının totaldeki transaction sayısının oranına bakıyor.
+
+951
+02:14:35,735 --> 02:14:41,676
+sol taraftaki elemanların bulunmuş olduğu transaction sayısı ilkinde iki taneydi
+
+952
+02:14:41,676 --> 02:14:43,775
+totale böldüğüm zaman 2 bölü 7
+
+953
+02:14:43,775 --> 02:14:48,115
+ve confidence değerini bulurken şuna bakıyorum
+
+954
+02:14:48,115 --> 02:14:53,615
+sol taraftaki elemanların bulunmuş oldukları transaction'ları buluyorum
+
+955
+02:14:53,615 --> 02:14:54,675
+onların sayısı 2
+
+956
+02:14:54,675 --> 02:15:00,636
+onların içerisinden kaç tanesindeki sağ taraftaki etiket education 2 bölü 2
+
+957
+02:15:00,636 --> 02:15:02,636
+şimdi buna bakalım
+
+958
+02:15:02,636 --> 02:15:10,455
+Game ve sport içerisinde sol taraftaki elemanın bulunmuş olduğu transaction sayısı kaç tane?
+
+959
+02:15:10,975 --> 02:15:12,256
+1, 2, 3.
+
+960
+02:15:13,176 --> 02:15:15,296
+Totalde kaç tane şeyim vardı? 7.
+
+961
+02:15:15,915 --> 02:15:18,015
+3 bölü 7. Bu benim supportum.
+
+962
+02:15:19,076 --> 02:15:26,076
+İçerisinde game'in olduğu dökümanlar için transaction'lar içerisinde kaç tanesinin etiketi sport?
+
+963
+02:15:26,755 --> 02:15:27,996
+O da 2 bölü 3.
+
+964
+02:15:27,996 --> 02:15:49,436
+Demek ki Class Association Rule'da aynı Association Rule Mining gibi ben birliktelikleri tespit ediyorum. Bunlar benim birlikteliklerim. Sadece tek farkım burada kuralları oluştururken kuralın sağ tarafına bir tane ürün koymak yerine etiketi koyuyorum.
+
+965
+02:15:49,436 --> 02:16:09,036
+Bu etiket de veri setinin içerisinde oluyor. Yani Class Association Rule Mining'in tek farkı yine Apriori algoritmasını kullanıraktan ben gidip bu frequent birliktelikleri tespit ediyorum.
+
+966
+02:16:09,035 --> 02:16:21,255
+Yalnız bu frequent birliktelikleri tespit ettikten sonra bu sağ tarafa etiketi koyarken mutlaka ama mutlaka confidence değerine bakarak koyuyorum.
+
+967
+02:16:22,935 --> 02:16:26,915
+Bu sağ tarafta ürün yerine etiketi koyuyorum.
+
+968
+02:16:27,335 --> 02:16:30,875
+Association Rule Mining'de burada da ürün yer alıyordu.
+
+969
+02:16:30,975 --> 02:16:32,375
+Burada ise etiket yer alıyor.
+
+970
+02:16:35,636 --> 02:16:57,175
+Şimdi son olarak konuşacağımız sequential pattern mining konusu var. Sequential pattern mining konusu önemli. Özellikle sıralı aksiyonların ne şekilde alınacağını, hangi sırayla alınacağını anlatan bir algoritma türü.
+
+971
+02:16:57,175 --> 02:17:04,155
+churn analizinde özellikle kullanılıyor ya da işte retortion modellerinde kullanılıyor.
+
+972
+02:17:04,155 --> 02:17:23,395
+Eğer siz bir müşterinin sistemi terk edeceğini öğrenirseniz daha önce sistemi terk etme davranışı göstermiş olan müşterilere uygulanmış olan sıralı kural madenini, sıralı aksiyonlar üzerinde bu sequential pattern mining'i uygulayıp
+
+973
+02:17:23,395 --> 02:17:29,255
+en başarılı bir şekilde müşteriye ulaşma aksiyonlarını öğrenebilirsiniz.
+
+974
+02:17:29,515 --> 02:17:33,255
+Hani farklı problemlerde kullanılıyor, churlerinizi gibi.
+
+975
+02:17:34,075 --> 02:17:38,655
+O yüzden önemli. Ben bunu gelecek hafta işleyeceğim.
+
+976
+02:17:38,775 --> 02:17:42,115
+Bugünlük burada dersi tamamlamak istiyorum.
+
+977
+02:17:45,015 --> 02:17:51,915
+Öncelikle sizin bir sorunuz var mıdır? Onu alayım. Ondan sonra tekrardan bir iki hatırlatma yapacağım.
+
+978
+02:17:53,395 --> 02:17:54,715
+sorusu olan var mıdır?
+
+979
+02:17:56,875 --> 02:17:58,455
+Bir soru sorabilir miyim?
+
+980
+02:18:02,611 --> 02:18:04,331
+sesin geliyor mu?
+
+981
+02:18:04,331 --> 02:18:05,211
+Bu yok diye anlıyorum.
+
+982
+02:18:06,851 --> 02:18:08,211
+Şimdi size...
+
+983
+02:18:08,211 --> 02:18:10,131
+Siz geliyor da hoca duymuyor sanırım.
+
+984
+02:18:11,532 --> 02:18:15,351
+Tekrardan ekran paylaşımı bırakalım.
+
+985
+02:18:17,431 --> 02:18:19,651
+Bir arkadaşım sorusu vardı galiba ama.
+
+986
+02:18:20,792 --> 02:18:22,331
+Size ses vermiyor galiba.
+
+987
+02:18:26,260 --> 02:18:34,279
+Evet, tekrardan dönem projesinizle ilgili arkadaşlar
+
+988
+02:18:39,156 --> 02:19:03,555
+sesinizi duymadım. Tekrardan konuşuyor musunuz arkadaşlar? Sesinizi duymadım. Siz beni duyuyor musunuz? Chatten yazabilirseniz ben sizin sesinizi duyamadım. Evet hocam duyuyoruz. Şu anda sesiniz geliyor. Tamam arkadaşlar. Bir arkadaş soru soracaktı da tekrar sorabilir o zaman. Birkaç defa dedi ama.
+
+989
+02:19:03,555 --> 02:19:12,556
+Hocam bir şey soracaktım. Class Association role, TF-ID gibi mi çalışıyor? Çok sefakli bir...
+
+990
+02:19:15,556 --> 02:19:20,556
+TF-ID neydi? TF-ID bizim...
+
+991
+02:19:25,556 --> 02:19:32,175
+Bir döküman içerisinde bir kelimenin ne kadar önemli olduğunu bulmaktı ya [öğrenci].
+
+992
+02:19:33,555 --> 02:19:51,016
+Yani hani diyelim ki mesela turn frequency'yi hesaplarken ne diyorduk? Diyelim ki benim elimde 10 tane doküman var. Bunun içerisinde hangi kelimenin önemli olduğuna bakmak istiyordum.
+
+993
+02:19:51,016 --> 02:20:12,135
+Öncelikle o kelimenin bir doküman içerisindeki önemine bakıyordum. Ona ne yapıyordum? Turn Frequency'ye bakıyordum. İşte o doküman içerisinde o kelime ne kadar fazla geçmiş? Bir ona bakıyordum. İkinci inverse document frequency vardı o TF-IDF'in şeyinde. O inverse document frequency neyini gösteriyordu?
+
+994
+02:20:12,135 --> 02:20:17,875
+o kelime, o 10 tane dokümanın hepsinde geçmiş mi yoksa çok azında mı geçmiş?
+
+995
+02:20:18,335 --> 02:20:27,455
+Hepsinde geçmişse mesela o kelimenin o doküman seti için çok ayrıştırıcı gücü yok dolayısıyla çok önemli değil diye düşünüyorduk.
+
+996
+02:20:28,195 --> 02:20:38,755
+Yani baktığın zaman TF-IDF metreyi bir dokümanın sana verilmiş olan bir doküman seti içerisindeki önemini belirtiyor.
+
+997
+02:20:38,755 --> 02:20:49,635
+Ama buraya baktığın zaman burada bir doküman içerisinde birlikte geçmiş olan kelimeleri bulmuş oluyorsun.
+
+998
+02:20:49,635 --> 02:21:00,016
+Ve birlikte geçmiş olan kelimeleri ve bu kelimelerin topiklerini bulmuş oluyorsun.
+
+999
+02:21:01,355 --> 02:21:06,756
+Yani birisinde kelimelerin önemini buluyorsun, birisinde ise birliktelikleri buluyorsun.
+
+1000
+02:21:06,755 --> 02:21:23,175
+Yani Class Association Rule'un odaklanmış olduğu birliktelikler, TF-IDF skorunun odaklanmış olduğu bir kelimenin bir döküman için, döküman seti için önemi. Bu şekilde ayrıştır.
+
+1001
+02:21:24,795 --> 02:21:32,855
+Anladım hocam. Buradaki etiketler, Education ve Sport, veri setinde biliyor mu yoksa çıkartılıyor mu?
+
+1002
+02:21:32,855 --> 02:22:01,855
+Yani veri setinde bunlar ya vardır ya da biz kendimiz yani mesela bize şöyle bir şey verilebilir denir ki şunu denir bak bu doküman setinde 100 tane doküman var bunların 30 tanesi education 70 tanesi sport sen bunun içerisinden bana class association kuralları çıkart
+
+1003
+02:22:02,855 --> 02:22:22,395
+yani bana o dokümanların etiketlerini kendisi vermiş oldu. Ben ne yaparım? Her dokümanın içerisinden Bag of Words'ı çıkartırım. O dokümanın etiketini de yanına koyup bu doküman setiyle ilgili transaction datasını bu şekilde oluştururum.
+
+1004
+02:22:23,156 --> 02:22:27,316
+Oluşturduktan sonra da Class Association Rule Mining'i bunun üzerinde çalıştırırım.
+
+1005
+02:22:28,244 --> 02:22:52,424
+ya bana, yani mutlaka bana etiketi veriyor olması lazım. Ya etiketi böyle implicit bir şekilde dolaylı yoldan verecek ya da explicit bir şekilde açık olarak verecek. Yani bu şekilde açık olarak da verebilir ya da benim verdiğim örnekteki gibi dolaylı yoldan da verebilir. Ama en nihayetinde benim dataset'i şu formata dönüştürmem lazımdı.
+
+1006
+02:22:55,043 --> 02:22:56,563
+Anlaşıldı hocam. Teşekkür ederim.
+
+1007
+02:22:58,244 --> 02:23:14,443
+Başka sorusu olan var mı? Yok. O zaman ben tekrardan projeyle ilgili şeye dönmek istiyorum. Bunu ben dersin sayfasına koyacağım. Dersin sayfasının linkini de size bu sis üzerinden atacağım arkadaşlar.
+
+1008
+02:23:15,723 --> 02:23:27,543
+Sizden isteğim dönemin beşinci haftasında bir tane proje fikrini bu şeye uyacak şekilde, formata uyacak şekilde hazırlamanız olacak.
+
+1009
+02:23:28,244 --> 02:23:46,184
+Projenizde hangi konuyu seçersiniz? Onunla ilgili benimle toplantı yapabilirsiniz. İlla ders sırasında olmasına gerek yok. Bana e-mail atıp, hocam dersten sonra bir şey yapabilir miyiz diye.
+
+1010
+02:23:46,183 --> 02:24:03,703
+derslerden sonra salı günleri biraz ara verip yarım saat, bir saat bir ofis ağır yapabiliriz. Bugün biraz yoğun bir gün ama önümüzdeki haftalarda derslerden sonra belli bir ara verdikten sonra ofis ağır düzenleyeceğim arkadaşlar.
+
+1011
+02:24:04,483 --> 02:24:08,243
+Hocam şeyi kaçırdım, beşinci haftada ne olacak?
+
+1012
+02:24:08,244 --> 02:24:16,244
+ödev, bu projenizde ne yapacağınızla ilgili bir ödev vereceksiniz.
+
+1013
+02:24:16,244 --> 02:24:16,924
+Tamam.
+
+1014
+02:24:17,784 --> 02:24:38,223
+Yani bu bir sayfalık proje ödevinizi ne yapacaksınız, nasıl yapacaksınız, hangi zamana göre yapacaksınız, hangi yöntemleri kullanacaksınız diye bir sayfalık bir dökümanı bana göndereceksiniz ve burada sırasıyla görüntülerinizi açacaksınız.
+
+1015
+02:24:38,244 --> 02:24:50,383
+ve bana o 5 dakika içerisinde o projede ne yaptığınızı anlatacaksınız. Ben de sizle sanki yüz yüze görüşüyormuş gibi projenizi konuşacağım.
+
+1016
+02:24:50,624 --> 02:25:00,764
+Arkadaşlarınız projelerinizi dinleyecek ve projenizde eksik görüyorsam ekleme yapacağım. Her şeyle tamamsa tamamsam bu konuda artık çalışmaya başlayabilirsin diyeceğim.
+
+1017
+02:25:00,763 --> 02:25:11,263
+5. haftadan sonra dönemin sonu 14. haftaya kadar 2 aylık bir zamanınız oluyor. O 2 aylık zamanda da bu proje üzerinde çalışmanızı bekleyeceğim.
+
+1018
+02:25:14,203 --> 02:25:15,863
+Tamamdır hocam. Teşekkürler.
+
+1019
+02:25:16,303 --> 02:25:17,583
+Ben teşekkür ederim arkadaşlar.
+
+1020
+02:25:19,223 --> 02:25:23,563
+Bugünlük bu kadar. Gelecek hafta Secure and Pattern Mining ile devam ediyor olacağım arkadaşlar.
+
+1021
+02:25:28,340 --> 02:25:30,239
+Teşekkürler.
+
+1022
+02:25:30,439 --> 02:25:31,419
+Teşekkürler hocam.
