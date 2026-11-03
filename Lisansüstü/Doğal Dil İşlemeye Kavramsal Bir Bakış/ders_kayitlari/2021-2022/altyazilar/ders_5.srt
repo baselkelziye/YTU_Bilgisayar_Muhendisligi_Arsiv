@@ -1,0 +1,3107 @@
+1
+00:01:57,140 --> 00:01:57,959
+Aleyküm Or.
+
+2
+00:01:59,239 --> 00:01:59,979
+Hayırlı hocam.
+
+3
+00:02:01,339 --> 00:02:03,459
+Sesin hiç gelmiyor bir saniye.
+
+4
+00:02:06,940 --> 00:02:16,400
+Cumhur bu ara aklımdayken söyleyeyim. Sen bir ödev vermiştin. Ben o ödevde senden düzeltme istemiştim. Bana geri dönüş yapmadın.
+
+5
+00:02:16,719 --> 00:02:18,740
+Yaptım hocam. Maile gönderdim size.
+
+6
+00:02:18,759 --> 00:02:19,480
+Yaptın mı?
+
+7
+00:02:19,659 --> 00:02:20,159
+Yaptım.
+
+8
+00:02:20,339 --> 00:02:24,699
+Yaptın maili bana bir daha gönderir misin? Demek ki yüzünden başta.
+
+9
+00:02:25,159 --> 00:02:26,299
+Gönderim hocam sıkıntı.
+
+10
+00:02:26,299 --> 00:02:39,660
+Tamam unutma ama eme? Tamam. Tamam. Şimdi bir dakika. Tamam ben senden başlayayım. Tamam hocam. Çünkü sonra sarkıyor arkadaşlar da gelecektir.
+
+11
+00:02:49,268 --> 00:02:52,567
+Biraz mürütü yapıyorum. Daha yeni geldim de.
+
+12
+00:02:55,688 --> 00:02:57,488
+Slide'ı görebiliyor musunuz hocam?
+
+13
+00:02:57,728 --> 00:02:58,568
+Görebiliyorum.
+
+14
+00:02:58,707 --> 00:02:58,947
+Tamam.
+
+15
+00:03:01,228 --> 00:03:04,148
+Sözdürüz de alayım. Evet.
+
+16
+00:03:06,067 --> 00:03:07,227
+Başlıyorum hocam.
+
+17
+00:03:07,667 --> 00:03:08,127
+Başla.
+
+18
+00:03:09,827 --> 00:03:10,667
+Merhaba.
+
+19
+00:03:12,067 --> 00:03:15,967
+İsmim Cumhur Topçuoğlu. Haberleşme Doktoru Programı öğrencisiyim.
+
+20
+00:03:15,967 --> 00:03:27,927
+Seminer konumun bir bildiri sunumu olan The Evolution of 5G Technology from Sentiment Analysis Perspective in Twitter.
+
+21
+00:03:31,527 --> 00:03:35,667
+Nedir bu konunun anlamı?
+
+22
+00:03:35,667 --> 00:03:52,227
+Twitter'dan 5G teknolojisi hakkında insanların görüşleri alınmış ve olumlu olumsuz yönde değerlendirme yapılmış.
+
+23
+00:03:54,607 --> 00:04:01,567
+Ama bu değerlendirme olumlu mu olumsuz mu diye sonuca varılmamış.
+
+24
+00:04:01,567 --> 00:04:10,947
+sadece hangi araçlar kullanılmış, onun başarı skorları arasındaki ölçüde ölçüt değerlendirilmiş.
+
+25
+00:04:12,687 --> 00:04:19,047
+Çalışmayı yapan hocalarımız Tuğkan Seçkin, Kocaeli Üniversitesi Bilişim Sistemleri Mühendisliği bölümünden
+
+26
+00:04:19,047 --> 00:04:25,487
+ve Zeynep Hilal Kilimci yine Kocaeli Üniversitesi Bilişim Sistemleri Mühendisliği bölümünden.
+
+27
+00:04:25,488 --> 00:04:41,407
+Bu bilimsel çalışma 2020 Innovations in Intelligence System and Application Conference'ında 15-17 Ekim 2020 tarihinde bildiri olarak sunulmuş.
+
+28
+00:04:43,308 --> 00:04:49,148
+Yayıncı ise IEEE 23 Kasım 2020'de yayınlanmış.
+
+29
+00:04:49,147 --> 00:05:10,648
+Bu bildirimiz hangi bölümlerden oluşmaktadır? Öncelikle bir özet kısmı var. Bir de giriş kısmı var. Kullanılan metodolojiler kısmından bahsedilmiş. Önerilen model var. Deney sonuçları ve tartışma ve sonuç bölümüyle sonuçlandırılmış.
+
+30
+00:05:14,803 --> 00:05:30,863
+Bu çalışmayı özetleyecek olursak ne yapılmış? Çeşitli makine öğrenmesi ve derin öğrenme algoritmaları kullanılarak 5G teknolojisinin algısı gözlemlenmeye çalışılmış. Bu amaçla geleneksel makine öğrenmesi algoritmaları kullanılmış. Nelerdir bunlar?
+
+31
+00:05:30,863 --> 00:05:36,963
+Nyer Bayes, destek vektör makinesi ve K-E en yakın komşu alı bırakması yöntemleri kullanılmış.
+
+32
+00:05:38,863 --> 00:05:45,563
+Bir de bu gelen eksel makine öğrenmesi yöntemleri dışında derin öğrenme modelin etkisi gözlemlenmek istenmiş.
+
+33
+00:05:46,583 --> 00:05:53,083
+Derin öğrenme metodolojisi olarak da tekrarlayan sinir aldır Recurrent Neural Network'den yararlanılmış.
+
+34
+00:05:53,083 --> 00:06:00,943
+modelin performansını göstermek için 5G hashtagli 58965 tweetten yararlanılmış.
+
+35
+00:06:00,943 --> 00:06:05,943
+Bu tweetler özelleştirmiş bir tarayıcı vasıtasıyla İngilizce olarak toplanmış.
+
+36
+00:06:06,643 --> 00:06:19,903
+Deneyi solucuları ise kullanıcı yorumlarının duygularının algılanması açısından derin öğrenme metodu olan tekrarlayan sinir ağlarının sınıflandırma başarısız olarak daha üstün bir performans sergilediği sonucuna varılmış.
+
+37
+00:06:23,083 --> 00:06:33,363
+Neden böyle bir çalışma yapıldığı konusunda fikir verebilmek için öncelikle 5G nedir? Ondan bir bahsetmek gerekirse
+
+38
+00:06:33,363 --> 00:06:42,363
+İnternet erişimi bilgisayarlardan sonra cep telefonlarında da hayata geçmesiyle beraber hücresel A kavramı ortaya çıkmış
+
+39
+00:06:42,363 --> 00:06:51,383
+1970-1979 yılında 1G ile 1G dediğimiz jenerasyon kavramı ortaya çıkmış.
+
+40
+00:06:52,263 --> 00:06:56,063
+Ardından 1991'de 2G'nin tanıtımı yapılmış.
+
+41
+00:06:56,203 --> 00:07:00,423
+Ardından 3G, 4G ve 5G devreye girmiştir.
+
+42
+00:07:02,103 --> 00:07:09,243
+5G'de şu an en son diğer teknolojinin birkaç adım önünde olan popüler bir teknoloji.
+
+43
+00:07:09,243 --> 00:07:23,664
+5G'nin tamamen odaklandığı konu makineler, nesneler ve cihazlara dair olmak üzere neredeyse herkes ve her şeyi birbirine bağlamak üzerine tasarlanmış bir tür hücresi haberleşme sistemi.
+
+44
+00:07:25,143 --> 00:07:38,943
+Daha önceki teknolojiler de olduğu gibi bu teknoloji üzerinde de bazı endişeler olduğu gözlemlenmiş, örnek vermek gerekirse siber güvenlik açıkları olabilir denilmiş.
+
+45
+00:07:39,244 --> 00:07:48,844
+farklı teknolojilerin var olması, uyum sorunu, mevcut teknolojilerimizle uyum sorunu olabilir mi, olamaz mı?
+
+46
+00:07:49,684 --> 00:07:51,024
+Öyle bir endişe sorunu olmuş.
+
+47
+00:07:51,783 --> 00:07:55,443
+Ve radyasyon riski olabilir mi? gibi endişeler ortaya çıkmış.
+
+48
+00:07:55,443 --> 00:08:02,044
+Bu kaygılardan dolayı toplumun bu teknolojiye yaklaşımı incelenmek istemiş hocalarımız tarafından.
+
+49
+00:08:03,244 --> 00:08:06,943
+Bu amaçla 5G teknolojisi üzerinde bir duygu analizi yapılmış.
+
+50
+00:08:09,244 --> 00:08:21,564
+Hangi yöntemler kullanılmış bunun için? Sınıflandırmak için yorumları, makine öğrenme yöntemleri, tahmine dayalı başarılığından dolayı duygu sınıflandırması da yaygın olarak kullanılan
+
+51
+00:08:21,564 --> 00:08:35,503
+Nive Bias, destek vektör makinesi ve K en yakın komşu alırtması, karar ağacı, yapay sinir ağları gibi teknikler duygu sınıflandırmada çokça kullanılmaktadır.
+
+52
+00:08:35,503 --> 00:08:41,123
+Bunun yanı sıra derin öğrenme metodolojisi de son zamanlarda popüler hale gelmiş.
+
+53
+00:08:42,744 --> 00:08:50,123
+Derin öğrenme model olarak tekrarlayan sinir ağları kullanılarak bu çalışmada 5G teknolojisinin nasıl algılandığı araştırılmış.
+
+54
+00:08:51,503 --> 00:09:01,363
+Bu amaçla öncelikle 5G hashtagli 58.965 Twitter'dan özelleştirmiş bir tarayıcı aracılığıyla İngilizce olarak ham veri seti olarak toplanmış.
+
+55
+00:09:01,363 --> 00:09:07,263
+daha sonra kirli veri dediğimiz kullanılmayan verilerin etkisini ortadan kaldırmak için
+
+56
+00:09:07,700 --> 00:09:18,959
+hashtaglerin kaldırılması amaçlanmış, URL'lerin kaldırılması amaçlanmış. Bu amaçla çeşitli ön işleme teknikleri kullanarak ham veri seti işlenmiş.
+
+57
+00:09:20,279 --> 00:09:24,779
+Ardından modelin başarısını ölçmek için çeşitli sınıflandırma yöntemleri yapılmış.
+
+58
+00:09:24,779 --> 00:09:33,700
+Toplumun 5G teknolojisine ilişkin algısını tespit etmek için ise geleneksel makine öğrenme algoritmalarından
+
+59
+00:09:33,700 --> 00:09:45,679
+derin ön deney sonuçlarında tekrarlayan sinir ağlarının geleneksel makine öğrenme algoritmalarından daha iyi performans gösterdiği ortaya çıkmıştır.
+
+60
+00:09:46,960 --> 00:09:50,200
+Bu çalışmada kullanılan metodolojiler hangisi?
+
+61
+00:09:50,200 --> 00:09:58,859
+Bu çalışmada Nive-Bias destekte vektör makineleri, K'ye en yakın komşu aldıkması ve tekrarlayan sinir ağlarıdır.
+
+62
+00:09:59,319 --> 00:10:00,299
+RNN dediğimiz.
+
+63
+00:10:03,100 --> 00:10:09,920
+Bunların sonuçlarını ölçmeden önce hepsinin tek tek kısaca bir tanımına bakacak olursak Nive-Bias nedir?
+
+64
+00:10:09,920 --> 00:10:19,799
+Nive-Bias hem ikili sınıflı hem de çok sınıflı sınıflandırma problemleri için yayın olarak kullanılan ve tercih edilen bir sınıflandırma modelidir.
+
+65
+00:10:20,200 --> 00:10:23,600
+Bias hipotezin temelini oluşturur.
+
+66
+00:10:24,759 --> 00:10:30,039
+Veri hükümesindeki öz niteliklerin feature dediğimiz bağımsız olması fikrine dayanmaktadır.
+
+67
+00:10:30,719 --> 00:10:32,939
+Modeli oluşturmak kolaydır ve karmışık değildir.
+
+68
+00:10:34,039 --> 00:10:37,500
+Bu nedenle büyük veri setlerinde de avantaj sağlamaktadır.
+
+69
+00:10:38,460 --> 00:10:43,500
+Navi Bias algoritması basit olmasına rağmen sınıflandırmada iyi bir performans sunmaktadır.
+
+70
+00:10:44,780 --> 00:10:48,640
+Ve daha karmışık sınıflandırma modellerinden daha iyi bir sonuç vermektedir.
+
+71
+00:10:48,639 --> 00:10:51,599
+Bu Nive-Maius modeller arasında hangileri vardır?
+
+72
+00:10:51,599 --> 00:11:01,859
+Bir Gauss, Gaussian Nive-Baius, iki Bernoulli Nive-Baius ve üç Multinominal Nive-Baius gibi farklı olay modelleri.
+
+73
+00:11:02,459 --> 00:11:08,299
+Kesiyorum, araya giriyorum ama bu yöntemleri bize detaylı vermiyor. Bunları zaten biliyoruz.
+
+74
+00:11:08,379 --> 00:11:08,599
+Tamam.
+
+75
+00:11:08,739 --> 00:11:11,039
+Yöntemler kullanılmıştır diye hızlı geçebiliriz.
+
+76
+00:11:11,039 --> 00:11:11,299
+Tamam.
+
+77
+00:11:12,459 --> 00:11:14,639
+Nive-Baius kullanıldığını söylemiştik.
+
+78
+00:11:14,639 --> 00:11:17,999
+İkinci olarak destek vektör makineleri kullanılmıştır.
+
+79
+00:11:18,000 --> 00:11:34,060
+daha sonra K-Yak'ın komşu okurtması, yinelenen sinir ağlarından da bahsettik. Önerilen modele geçecek olursak ilk adım olarak TWINT aracını kullanarak Twitter'dan veri set oluşu çekilmiş.
+
+80
+00:11:35,300 --> 00:11:40,740
+TWINT nedir? Kullanıcılığın girilen gereksinleri ve yani tweetleri Twitter'dan çekmesini olanak tanıyan bir araç.
+
+81
+00:11:40,739 --> 00:11:52,499
+Kullanıcıların belli kelimeleri veya cümleleri içeren tweetleri, belli hesaplar tarafından yayınlanan tweetleri, belli bir zaman aralığındaki tweetleri ve çok daha fazlasını aramaya olan aktarılır.
+
+82
+00:11:53,499 --> 00:12:04,019
+Yapılan çalışmada dil ayarı olarak İngilizce, başlangıç tarihi olarak 01.01.2019 ve bitiş tarihi olarak 30.05.2020 olarak ayarlanmış.
+
+83
+00:12:05,379 --> 00:12:07,859
+100.000 İngilizce tweet toplanmış.
+
+84
+00:12:07,859 --> 00:12:16,659
+Bu özelleştirilmiş tarayıcı üzerinden İngilizce ham veri seti 5G hashtaglerine sahip 100.000 tweet alınmış.
+
+85
+00:12:18,779 --> 00:12:28,239
+Ancak tagging dediğimiz etiketlenmeden sonra nötr tweetler kaldırılmış. Daha sonra bu sayı 58.965'e düşürmüş.
+
+86
+00:12:29,439 --> 00:12:37,659
+Niçin bu sayı düşürmüş? Çünkü olum ve olumsuz yorumlar bizi ilgilendirmektedir. Nötr yorumlar bizi ilgilendirmektedir.
+
+87
+00:12:37,859 --> 00:12:47,979
+Bu amaçla Python programlama dilikleri kullanılarak ve platform olarak Jupyter Notebook kullanılarak sınıflandırma işlemi yapılmaya başlanmış.
+
+88
+00:12:48,759 --> 00:12:56,499
+Dörte data dediğimiz kirli verilerin sınıflandırma üzerindeki olumsuz etkisini ortadan kaldırmak için ön işleme pre-processing yapı uygulanmış.
+
+89
+00:12:57,859 --> 00:13:00,279
+Bunun için de regular expression kütüphanesi.
+
+90
+00:13:01,076 --> 00:13:08,175
+Veri kümesini temizlemek için Twitter'daki URL'leri, hashtag'leri ve emojileri kaldırmak için kullanılmıştır.
+
+91
+00:13:10,496 --> 00:13:14,996
+Adres soru operatörü ve diğer semboller de kaldırılmıştır.
+
+92
+00:13:16,315 --> 00:13:23,756
+Son olarak da cümlede anlamı olmayan etkisiz kelimeler, stop first dediğimiz kelimeler de tweetlerden kaldırılmış.
+
+93
+00:13:23,756 --> 00:13:31,796
+Ön işleme adımından sonra denetimle öğrenme, Supervised Learning Prosesleri için etiketleme, labeling gereklidir.
+
+94
+00:13:33,016 --> 00:13:35,895
+Bunun için de TextBlock kütüphanesinden yararlanılmış.
+
+95
+00:13:37,675 --> 00:13:41,375
+TextBlock, metin verilerini işlemek için bir Python kütüphanesidir.
+
+96
+00:13:41,375 --> 00:13:59,375
+Part of speech tagging, konuşma bölümü etiketleme için ve isim ve beyi çıkarma, non-forrest extraction, duygu analizi, sınıflandırma ve çeviri ve daha fazlası için yaygın bir doğal din işleme görevini gerçekleştirmek için basit bir hapı sağlamaktadır.
+
+97
+00:13:59,375 --> 00:14:07,936
+Bu işlemlerin sonunda text block cümlelerin polarita değerlerini tespit etmiş.
+
+98
+00:14:09,256 --> 00:14:11,775
+Bu değerlerini de gruplandırması gerekmiş.
+
+99
+00:14:11,775 --> 00:14:22,635
+Bu nedenle negatif polarita değerleri olanlara sıfır, pozitif polarita değerine sahip olanlara bir, sıfır polarita değerine sahip olanlara da iki etiketi verilmiş.
+
+100
+00:14:23,436 --> 00:14:27,675
+Böylece negatif polarita'ya sahip tweetler sıfır, pozitif olanlar bir.
+
+101
+00:14:27,675 --> 00:14:29,515
+nötre eğilimli tweetler ise iki olarak
+
+102
+00:14:29,515 --> 00:14:31,395
+işaretlenmiş ve
+
+103
+00:14:31,395 --> 00:14:33,616
+sonuç itibariyle olumlu ve olumsuz
+
+104
+00:14:33,616 --> 00:14:35,135
+etiketlenmiş olarak
+
+105
+00:14:35,135 --> 00:14:37,695
+58.965 tweet elde edilmiş.
+
+106
+00:14:41,756 --> 00:14:43,515
+Bahsettiğimiz makine
+
+107
+00:14:43,515 --> 00:14:45,455
+çok
+
+108
+00:14:45,455 --> 00:14:47,735
+ağdalı anlatıyorsun.
+
+109
+00:14:48,296 --> 00:14:49,875
+Bir cümleyi birkaç cümleyi
+
+110
+00:14:49,875 --> 00:14:51,675
+de sığırtıyorsun. Yirminci dakikana
+
+111
+00:14:51,675 --> 00:14:52,595
+geldi. Tamam.
+
+112
+00:14:52,915 --> 00:14:55,855
+Tf7 mekudunu kullandı diye bitir.
+
+113
+00:14:55,855 --> 00:14:56,656
+Tamam hocam.
+
+114
+00:14:56,656 --> 00:14:58,476
+Çünkü biliyoruz artık bu modelin olduğunu.
+
+115
+00:14:59,616 --> 00:15:00,675
+Daha sonra
+
+116
+00:15:00,675 --> 00:15:03,555
+TF-IDP dediğimiz bir
+
+117
+00:15:03,555 --> 00:15:05,055
+tokenizer kullanılmış.
+
+118
+00:15:05,656 --> 00:15:06,256
+Daha sonra
+
+119
+00:15:06,256 --> 00:15:10,076
+metinlerin vektörleştirilmesi
+
+120
+00:15:10,076 --> 00:15:10,676
+yapılmış.
+
+121
+00:15:12,315 --> 00:15:12,956
+Daha sonra
+
+122
+00:15:12,956 --> 00:15:16,255
+Normalizasyon yapılmış.
+
+123
+00:15:16,395 --> 00:15:17,895
+Evet. Polarizasyon
+
+124
+00:15:17,895 --> 00:15:19,635
+yapılmıştır. Daha sonra
+
+125
+00:15:19,635 --> 00:15:21,755
+gerekli çekirdek
+
+126
+00:15:21,755 --> 00:15:23,995
+iyilesi dediğimiz kernel trickler uygulanmış.
+
+127
+00:15:23,995 --> 00:15:27,456
+gerekli parametreler
+
+128
+00:15:27,456 --> 00:15:28,296
+girilmiştir
+
+129
+00:15:28,296 --> 00:15:31,755
+normalizasyon işlemi yapılmış
+
+130
+00:15:31,755 --> 00:15:33,876
+daha sonra
+
+131
+00:15:33,876 --> 00:15:35,436
+naive bias
+
+132
+00:15:35,436 --> 00:15:37,335
+algoritmaları uygulanmış
+
+133
+00:15:37,335 --> 00:15:38,975
+k-enekın kamşal
+
+134
+00:15:38,975 --> 00:15:39,936
+algoritması ile
+
+135
+00:15:39,936 --> 00:15:43,016
+sıfırla onlar arasında bir liste oluşturulmuş
+
+136
+00:15:43,016 --> 00:15:45,135
+bir döngü
+
+137
+00:15:45,135 --> 00:15:46,975
+yapılarak en iyi ta değeri
+
+138
+00:15:46,975 --> 00:15:47,615
+aranmış
+
+139
+00:15:47,615 --> 00:15:50,055
+son olarak da
+
+140
+00:15:50,055 --> 00:15:52,436
+tekrarlayan sinir ağları kullanılmış
+
+141
+00:15:52,436 --> 00:15:58,755
+çıkış boyutu 50 olarak ayarlanmış
+
+142
+00:16:03,155 --> 00:16:15,155
+Daha sonra yoğun katman dediğimiz bir katman kullanılarak, çıkış nöreminin bağlı olduğu bir layer kullanılarak çıkış birimi 256 olarak ayarlanmış.
+
+143
+00:16:17,155 --> 00:16:24,155
+Bu da detaylı teknik bilgiler bulunmaktadır.
+
+144
+00:16:25,155 --> 00:16:26,155
+Sonuçlara gelelim.
+
+145
+00:16:26,155 --> 00:16:36,115
+Sonuç olarak hocam doğruluk, ekü seri dediğimiz F ölçümü, F major, precision ve recall değerleri aranmış.
+
+146
+00:16:37,516 --> 00:16:44,996
+Deney sonuçlarında tabloda da gördüğünüz üzere en iyi sınıflandırma doğruluğu Nive-Mias modellerinde
+
+147
+00:16:44,996 --> 00:16:53,876
+multinominal Nive-Bias'ı kıyasla doğruluk performanslarında %1 fark ile Bernoulli Nive-Bias kullanımı ile saptanmış.
+
+148
+00:16:53,875 --> 00:17:06,415
+En kötü doğruluk değerine sahip naive bias modeli ise doğruluk sonuçlarında diğerlerine göre yaklaşık %20 ve %19 azalmada sahip Gaussian naive bias ile elde edilmiş.
+
+149
+00:17:11,215 --> 00:17:20,315
+naive bias modeller arasında sınıflandırma başarısı Bernoulli, multinominal ve Gaussian olarak sıralanabilir.
+
+150
+00:17:20,315 --> 00:17:31,875
+Linear kernel'a sahip destek vektör makinesi %75.10 doğrulukla diğer kernel sürücülerine daha iyi performans gösterdiği ortaya çıkmış.
+
+151
+00:17:31,876 --> 00:17:50,396
+Destek vektör makineleri FEP'a kattığımız zaman destek vektör makinesi Liner, destek vektör makinesi RBF ve POLY ile karşılaştırıldığında sınıflandırma başarısında yaklaşık %2 geliştirme gösterdiği anlamına gelir.
+
+152
+00:17:50,395 --> 00:18:03,195
+Sınıflandırma performanslarına sıraladığımızda DVM Liner, DVM RBF ve DVM Poli olarak sıralanmış.
+
+153
+00:18:03,895 --> 00:18:11,016
+K'ya yakın komşu alırtması için farklı K değerleri de değerlendirilmiş.
+
+154
+00:18:11,655 --> 00:18:19,536
+K parametresi 5'e ayarlandığında en iyi doğruluk değerinin %73.08 doğrulukla en iyi elde edildiği açıkça görülmüş.
+
+155
+00:18:20,395 --> 00:18:28,915
+Sınıflandırma performansları da KNN5, KNN7 ve KNN3 şeklinde sıralanmış.
+
+156
+00:18:32,375 --> 00:18:42,235
+Genel olarak tablos sonucunda her bir makine öğrenmesi algoritmasının doğruluk metri akuserimetrik açısından sınıflandırma başarısı şu şekildedir.
+
+157
+00:18:42,236 --> 00:18:57,016
+destek vektör makinesi Liner, DVM-RBF, DVM-POLI büyüktür, KNN 5, 7 ve 3 o da büyüktür, Nive-Base modeller şeklinde sıralanmıştır.
+
+158
+00:19:01,016 --> 00:19:03,256
+İlk başta da bahsettiğimiz gibi...
+
+159
+00:19:03,256 --> 00:19:05,336
+Hepsinin özeti, geç bunu.
+
+160
+00:19:05,696 --> 00:19:07,855
+Tamam, bunu da geçiyorum.
+
+161
+00:19:08,036 --> 00:19:11,835
+Sonuç olarak bu çalışmada ne yapılmıştır, tekrarlayacak olursak?
+
+162
+00:19:12,236 --> 00:19:27,596
+5 teknolojisinin algısını araştırmaya odaklanılmış, olumlu mu, olumsuz mu tepki verildiği sonucuna varılmamış sadece, sınıflandırma algoritmalarının başarısı ortaya çıkarılmaya çalışmış.
+
+163
+00:19:29,336 --> 00:19:34,555
+Toplumun 5G örneği hakkındaki düşüncelerini keşfederek toplumun nabzı tutulmaya çalışılmış.
+
+164
+00:19:34,555 --> 00:19:43,255
+Daha önce de bahsettiğimiz gibi 58.965 bir tweet üzerinde sınıflandırma işlevi yapılmış.
+
+165
+00:19:44,435 --> 00:19:50,615
+Son olarak da tekrarlayan sinir ağlarının toplumun 5G teknolojisine ilişkin algısını tespit etmek amacıyla
+
+166
+00:19:50,615 --> 00:19:58,995
+%78.35 doğrulukla makine öğrenme algoritmalarından önemli ölçüde daha iyi performans gösterdiği ortaya çıkarılmıştır.
+
+167
+00:20:00,000 --> 00:20:17,020
+Teşekkür ederim. Teşekkür ediyorum Cumhur. Cumhur'a sorusu olan var mı? Yok. Sunumunu koydun Drive'a. Koyacağım hocam. Okey, tamam. İzlet seni alalım o zaman.
+
+168
+00:20:18,299 --> 00:20:25,959
+Merhaba hocam. Ben ilk sıradaydım sanırım. Ölüm yok. Sınıfa gelmişim. Online olduğunu bilmiyordum. Nasıl bilmiyordun?
+
+169
+00:20:25,959 --> 00:20:29,779
+Ya son derste mi söylediniz bilmiyorum sayfanızda da göremedim
+
+170
+00:20:29,779 --> 00:20:32,779
+Kendini bildim bileli bunu söylüyorum arkadaşlar
+
+171
+00:20:32,779 --> 00:20:36,000
+Neyse bu konuya girmeyelim
+
+172
+00:20:36,000 --> 00:20:39,259
+Sunumunu başka sen?
+
+173
+00:20:40,519 --> 00:20:42,180
+Ekranımı paylaşıyorum
+
+174
+00:20:42,180 --> 00:20:47,879
+Cumhur sen durdurabilir misin? Ben paylaşamıyorum sen paylaşırken de
+
+175
+00:20:50,759 --> 00:20:52,119
+Cumhur kalktın mı?
+
+176
+00:20:52,119 --> 00:20:56,319
+Neyse ben cumhur'u remove ettim.
+
+177
+00:20:58,540 --> 00:21:01,759
+Bir daha deneyeyim. Tamamdır bir dakika.
+
+178
+00:21:05,844 --> 00:21:06,844
+Geliyor mu?
+
+179
+00:21:07,603 --> 00:21:08,003
+Geldi.
+
+180
+00:21:08,564 --> 00:21:08,883
+Tamam.
+
+181
+00:21:10,523 --> 00:21:13,943
+Maksimum 20 dakikanız var, bunu aşmayalım, tamam mı?
+
+182
+00:21:14,564 --> 00:21:16,724
+Tamamdır, kısa bir sürede bitirmeye çalışacağım.
+
+183
+00:21:19,103 --> 00:21:20,463
+Şöyle basalım.
+
+184
+00:21:23,284 --> 00:21:31,083
+Merhaba, 15 dakika içinde bitirmeye çalışacağım makaleyi. Eğer sorularınız vs. olursa en son da alabilirim.
+
+185
+00:21:31,083 --> 00:21:44,323
+Makalenin başlığı ve içeriği aslında bazı şirketlerin özellikle Amerika'daki Dow Jones hissesinde, borsasında bulunan büyük şirketlerin diyelim.
+
+186
+00:21:44,323 --> 00:22:07,763
+sosyal medya uygulaması olan Twitter üzerinden belli tweetleri algoritmaya sokarak ve analiz ederek o zamana göre popüleritesini ölçmek, tweetlerle nasıl bağlantılı bir şekilde etkinlikler aslında şirketlerin etkinlikleri nasıl rol izlemiş, yol izlemiş onları gözlemlemek.
+
+187
+00:22:07,763 --> 00:22:25,424
+Biraz içeriye bakacak olursak, giriş kısmı var. Önceden kullanılan market analizleri nelerdir? Bizim bu sentiment analiz dediğimiz kısımdan önce, duygu analizi dediğimiz kavramdan önce neler nasıl kullanılmış?
+
+188
+00:22:25,424 --> 00:22:33,303
+duygu analizi kavramı var. Bu makalede nasıl bir tasarım ortaya konulmuş? Sistemin kısa bir tasarım özeti.
+
+189
+00:22:33,844 --> 00:22:41,184
+Finansal topluluk çok fazla geçiyor makalede. Bu finansal topluluk neyi ifade ediyor, nedir? Onu biraz tanımlamak.
+
+190
+00:22:41,903 --> 00:22:48,864
+Duygular nasıl tanımlanıyor, ölçülüyor aslında sentimentler, tweet içerisinden. En sonunda normalizasyon uygulanıyor.
+
+191
+00:22:48,864 --> 00:22:54,864
+Bu kavram nedir ve neden uygulanıyor? Bundan biraz bahsedeceğiz. En sonunda da durum çalışmaları,
+
+192
+00:22:55,423 --> 00:23:01,303
+CASE'ler yapmışlar. Bunları inceleyip sonuçlarını bildirmeyi hedefliyorum.
+
+193
+00:23:03,243 --> 00:23:09,703
+Dediğim gibi tweetlerden duygu analizi yoluyla belli bir analiz çıkarılmaya çalışılıyor.
+
+194
+00:23:10,243 --> 00:23:18,743
+Önceden hani duygu analizi kavramından önce kullanılan kavramlar çok önceden beri teknik analiz ve temel analiz şeklinde.
+
+195
+00:23:18,743 --> 00:23:34,483
+Bu makale ve aslında duygu analiziyle şirketlerin popülaritesini ve o dönemin performansını ölçmek ne katkı sağlıyor dersek ve içinde neler var dersek kavram olarak.
+
+196
+00:23:34,483 --> 00:23:41,003
+Bir finans topluluğunu tanımlamış oluyoruz aslında. Daha doğrusu makale yazarları tanımlamış oluyor.
+
+197
+00:23:41,004 --> 00:23:49,944
+Her kullanıcı için tüm tweetler çıkarılıyor. Yani burada kaç adet tweetle uğraşıldı, ne kadar yıldır uğraşıldı bir sonraki slide'lar da var.
+
+198
+00:23:51,724 --> 00:23:58,983
+30 şirket için dedik. Bunlar için tweet filtreleme algoritmaları kullanılıyor. Bu algoritmalar da incelenecek.
+
+199
+00:24:00,543 --> 00:24:04,744
+Analiz araçlarının oluşturulması, duygu analiz araçlarının oluşturulması.
+
+200
+00:24:04,743 --> 00:24:18,704
+tabi bunlar artı eksi nötr puanlarla değerlendirilip pozitiflik, negatiflik parametrelerine göre dediğim gibi artı eksi nötr puanları verilip bu puanların toplamından oluşan bir sonuç ortaya konuluyor.
+
+201
+00:24:20,303 --> 00:24:21,823
+Ve manuel tespitler var.
+
+202
+00:24:22,963 --> 00:24:28,323
+Şöyle eski kavrama göz atacak olursak market analizi dediğimiz asıl temel teknik analiz.
+
+203
+00:24:28,323 --> 00:24:30,983
+Aslında duygu analizinden önceki kavram.
+
+204
+00:24:30,983 --> 00:24:50,323
+Bu en çok bilinen analizlerden bir tanesi. Bunun tanımını makale başında sunuyorlar. Fiyatın tüm piyasa güçlerinin kapsamlı bir yansıması olduğu, tarihsel olarak tekrarlayıcı olduğu fiyatların, fiyatlar buna göre hareket ediliyor, deniyor geleneksel kavramda.
+
+205
+00:24:50,323 --> 00:24:54,983
+belirlenebilen ve kar fırsatlarına dönüştürülebilen trendlerde hareket ediyor.
+
+206
+00:24:54,983 --> 00:25:01,903
+Aslında belli döngülerde ve trendlerde hareket eden bir kavram fiyatlar market analizinde.
+
+207
+00:25:03,316 --> 00:25:10,175
+Metin Sınıflandırması'na duygu analizi, sentiment analizi, text classification başlığında.
+
+208
+00:25:11,256 --> 00:25:18,255
+Burada önceki çalışmalarda fikir madenciliği bir opinion mining ve duygu analizi kavramları var.
+
+209
+00:25:18,355 --> 00:25:21,055
+Denetimsiz bağımlılık ayrıştırma gibi kavramlar var.
+
+210
+00:25:22,435 --> 00:25:29,295
+Bu algoritmaların sağladığı yararlar aslında en başta belirtilen rekabetçi bir performans ve sağlamlık sağlanacak.
+
+211
+00:25:29,295 --> 00:25:35,115
+belli şeylerden, sözcüklerden yararlanıyor, sözcüksel kaynaklardan yararlanılıyor.
+
+212
+00:25:35,415 --> 00:25:37,595
+I know, I think diye kavramlar var.
+
+213
+00:25:37,716 --> 00:25:39,176
+Opinion finder sözcüğü var.
+
+214
+00:25:40,235 --> 00:25:49,375
+Bir sonraki slaytlarda bahsedilecek olan zaten Sentis, Strengths and WordNet gibi bir takım tool'lar, algoritmalar bulunmakta.
+
+215
+00:25:50,515 --> 00:25:56,335
+Bu Opinion finder ve Google profile of mood states diye, G-POMS diye bir kavram var.
+
+216
+00:25:56,336 --> 00:26:05,615
+Bu da sakin uyarıcı, emin hayatı nazik, mutlu. 6 tane aslında duyguyu ifade eden kavramlar bu şekilde.
+
+217
+00:26:06,756 --> 00:26:12,216
+Sistem nasıl tasarlanmış? Hangi kavramlar içeriyor? Kısaca özet yapacak olursak.
+
+218
+00:26:13,676 --> 00:26:22,256
+Twitter'da finansal piyasaları etkileyebilecek özel olayların popülerliğini tespit etmek az önce de söylediğimiz gibi aslında amaç.
+
+219
+00:26:22,255 --> 00:26:32,835
+örtük duyguları. Yani tamam tweet atılıyor ama bu duygu analizinin amacı aslında altında yatan sebebi.
+
+220
+00:26:32,835 --> 00:26:38,695
+Yani pozitif mi, negatif mi, nötr mü? Bunu çıkarmak, bunu algoritmayla nasıl başarıyorlar?
+
+221
+00:26:39,735 --> 00:26:43,955
+Olumlu ifadeler tabii ki yüksek puanlı olarak etiketleniyor, işaretleniyor.
+
+222
+00:26:44,735 --> 00:26:47,675
+Günün sonunda bu puanlar toplanıp bir sonuca varılıyor.
+
+223
+00:26:47,676 --> 00:26:52,415
+geri bildirimleri anlamak için de puanlanıyor diyebiliriz.
+
+224
+00:26:52,415 --> 00:26:59,896
+5 ana blo ayrılmış. Bunlar finansal topluluk, tweet filtreleri, duygu analizi, normalizasyon ve en sonunda da tespit.
+
+225
+00:27:00,576 --> 00:27:10,415
+Şöyle bir flow da görecek olursak tasarımı. En üstte bir financial community dediğimiz Twitter kullanıcıları da diyebiliriz.
+
+226
+00:27:10,415 --> 00:27:35,616
+Atılan tweetlerin bir filtreden geçmesi, bir süzgeçten geçmesi bu da tabii sözlükler sayesinde sağlanıyor. Burada bir analiz ve skor hesaplama kısmı bu şirketten şirkete yapılan ve her şirket için ayrı dosyalara oluşturulan ve bu dosyalara yazılan analizler burada hesaplanan skorlar daha doğrusu.
+
+227
+00:27:35,616 --> 00:27:44,996
+Çıktığı olarak örneğin burada Apple'ı örnek göstermiş, Apple'ın sporları. Sonra normalizasyon uygulanmış ve en sonunda da bir tespit aşaması var.
+
+228
+00:27:45,655 --> 00:27:57,616
+Finansal topluluk dediğimiz kavram Twitter herkesin bildiği gibi bir sosyal medya ve en çok yorum ve tartışmaların yapıldığı şu an forum olarak tanımlanabilir.
+
+229
+00:27:58,356 --> 00:28:03,735
+Veri toplama nasıl sağlanmış? Twitter'ın açık kaynak belli apileri var.
+
+230
+00:28:03,735 --> 00:28:30,215
+Bu finans topluluğu rastgele seçilmemiş. Burada benzer ilgi alanlarına sahip kullanıcıların bir kümesi alınmış. Bunu da belli parametreler tanımlanmış. O kullanıcının takipçi sayısı bir kere takip ettiğinden fazla olmalı. Her kullanıcının attığı tweetler burada baz alınmamış rastgele.
+
+231
+00:28:30,215 --> 00:28:35,036
+ve şu da önemli bir kriter yani herkesin
+
+232
+00:28:35,667 --> 00:28:50,247
+çok fazla bildiği, yani çok popüler olan 10 kişi değil. Çünkü onların attığı tweetler genelde nötre de yakın olabiliyor daha çok. Çünkü bunlar zaten Bloomberg, CNBC gibi kaynaklarda bulunmaktadır diyorlar.
+
+233
+00:28:51,088 --> 00:29:04,667
+Bu yüzden seçilen kullanıcılar aslında takipçi sayısı, evet yine fazla olacak. Ama herkesin de öyle çok fazla bilmediği, ama ne dedikleri de önemli olan kişilerden seçilen kişilerdir.
+
+234
+00:29:05,667 --> 00:29:22,248
+Burada da bir flowda hani bunu özetleyebiliriz Ray Dalio adlı kişinin evet takipçileri 6584 takip ettiklerinden fazla ilk kritere uyuyor. Öyle herkesin bildiği bir kişi de değil.
+
+235
+00:29:22,247 --> 00:29:35,447
+Burada tweet filtresi yaparken not important tweet diye etiketlenmiş. Burada bazı tweetler işte important mı değil mi bunları da ayırmak için keywordler tanımlanmış.
+
+236
+00:29:35,447 --> 00:30:03,307
+Apple için örneğin bu şekilde borsa simgesi veya dolar simgesi gibi başında böyle olan ve şirketin Dow Jones hissesindeki kodunu tanımlayan kelimeler geçtiğinde bunu yakala veya Apple geçtiğinde yakala veya da bu şekilde olduğunda yakala diye ve en sonunda da Apple'ın dosyasına, company files'a bunları yaz diye şeklinde bir özet var.
+
+237
+00:30:03,307 --> 00:30:16,028
+Bu Ray Deilio adlı kişinin attığı tweetler baz alınarak tabi buradaki keywordler nasıl ayrıştırılacak onlara da bir sonraki slide'larda biraz daha detaylı değinilir.
+
+238
+00:30:17,087 --> 00:30:18,608
+Sözlük kısmı var.
+
+239
+00:30:19,568 --> 00:30:21,328
+Nihayi amaç takipçileri bulmak.
+
+240
+00:30:23,047 --> 00:30:26,167
+Takipçisi takip etme sayısından fazla olacak dedik.
+
+241
+00:30:26,167 --> 00:30:44,028
+Burada yararlanılan sözlük 865 kelimeden oluşan ve neredeyse tüm finansal kavramları veya sözcükleri teknik teriminden tutulan günlük kullanımdaki bütün finansal terimlere dayanan neredeyse bir sözlükten yararlanılmış.
+
+242
+00:30:44,028 --> 00:30:53,787
+Bu da investopedia'ya dayanan bir sözlük. Dediğimiz gibi yaygın ve nadir görülen tüm finansal terimler burada.
+
+243
+00:30:53,787 --> 00:31:07,327
+Bu ilk filtrenin amacı da finansal piyasayla ilgili olmayan tweetleri silmek. Apple dedik ama Apple yani elma demek. Gerçekten şirkete ait bir tweet mi atılmış yoksa elmayla alakalı bir tweet mi atılmış?
+
+244
+00:31:07,328 --> 00:31:18,628
+Finansal içerikli olması önemli. Bu yüzden bu sözlükte tanımlanan bu buy kelimesinin örneğin bütün çekimleri vs. de sözlükte tanımlanmış.
+
+245
+00:31:18,628 --> 00:31:31,488
+Buna göre de filtreleme ve algoritmayı uygulayarak filtreleme sağlıklı bir şekilde yapılabilsin diye Apple Juice yazılırsa o tweeti öneme almıyorlar örneğin.
+
+246
+00:31:31,487 --> 00:31:39,427
+örnek bir tweet mesela 6 Eylül Cuma günü işte şu şekilde ifade edilmiş Apple'ın China Mobile'la de anlaşması vs.
+
+247
+00:31:40,247 --> 00:31:44,567
+bunu içeride içinde Apple text dosyasına yerleştirildiği ifade ediliyor.
+
+248
+00:31:44,567 --> 00:31:49,647
+Toplam 30 dosya oluşturuluyor çünkü 30 tane şirket incelenmiş dedik Dove Jones listesindeki.
+
+249
+00:31:51,727 --> 00:31:54,567
+Duyguyu peki nasıl ölçülüyor, nasıl değerlendirmişler?
+
+250
+00:31:55,167 --> 00:32:00,707
+4 tane metin analiz aracı burada kullanılmış veya kıyaslanmış, karşılaştırılmış.
+
+251
+00:32:01,487 --> 00:32:14,267
+Bunlardan ilki MySentiment API dedikleri, bu da Java kaynaklı, bir de Sentiment 140 diye bir web uygulaması bulunan tweetleri kutuplarına göre ayıran bir araç.
+
+252
+00:32:15,327 --> 00:32:21,707
+Burada 1.6 milyon tweet örneği incelenmiş. Unigram ve Bigram diye kavramlar var.
+
+253
+00:32:22,227 --> 00:32:30,807
+Unigram tek kelimeden oluşan, Bigram ise bir terim deniliyor aslında ama o da iki kelimeden oluşan bir küme diyebiliriz.
+
+254
+00:32:31,667 --> 00:32:53,387
+Burada puanlamalar yine yapılıyor. TV token'u puan toplamaya çalışılıyor. Burada cümle segmentasyonu önemli değil, kelime segmentasyonu önemli. Çünkü Twitter zaten şöyle bir limiti var. Yani bir cümle en fazla 140 karakter olsun diye. Bu yüzden cümlelere bakmıyorlar çok fazla. Kelimeler ve karakterler baz alınıyor aslında.
+
+255
+00:32:53,387 --> 00:33:14,528
+tokenization dediğimiz kısım karakterleri tokenlara bölme, singeleştirme diye bir yaklaşımlar var. Bu da tweet çalıştırılıyor, kelime analiz ediliyor, tüm 1-gram ve 1-gram puanları toplanıyor. Ayrı ayrı bunlar puanlanıp en sonunda da bir toplama sokuluyor. Bu şekilde bir algoritması var bu aracın.
+
+256
+00:33:14,528 --> 00:33:37,667
+İkincisi text blob. Bu da Python'da yazılmış kaynaklı bir araç diyebiliriz. Burada da isim öbeği çıkarılıyor ve kelimenin bir kısmı işaretleniyor aslında. Duygu analizmi metin çevirisi aracını söylemiştik. Burada önemli olan kutupluluk ve öznerlik şekilde iki tane polarite aslında, eksi bir ve bir arasında olacak şekilde.
+
+257
+00:33:37,667 --> 00:33:44,748
+sıfır çok nesnel diye almıyoruz bir ise çok özneldir şeklinde bunu söyleyebiliriz.
+
+258
+00:33:46,208 --> 00:33:51,928
+Sentisiz renk üçüncü aracımız bu da Python tabanlı denetimsiz öğrenmeye dayalı.
+
+259
+00:33:52,528 --> 00:34:00,928
+Bu kısa sosyal web metinleri ve sözlük tabanlı projelerinde ve uygulamalarında yararlı bir kaynak.
+
+260
+00:34:00,927 --> 00:34:08,047
+Bu yüzden kısa sosyal web derimleri, metinleri olduğu için Twitter analizinde bunu kullanmak gerçekten yararlı olacaktır.
+
+261
+00:34:08,327 --> 00:34:10,227
+Bu da 5 kategoriye asıl ayırmış oluyor.
+
+262
+00:34:10,807 --> 00:34:16,947
+Pozitif, nötr ve negatifin dışında aşırı negatif, aşırı pozitif ayrıştırması da var.
+
+263
+00:34:17,387 --> 00:34:19,767
+Olumlu ve olumsuz kelimelere farklı değerler atılıyor.
+
+264
+00:34:20,327 --> 00:34:27,067
+Burada bir olumlu değil, 5-10 derece olumlu, eksi bir negatif değil, eksi 5-10 derece olumsuz gibi atamalar yapılıyor.
+
+265
+00:34:27,067 --> 00:34:28,927
+Dördüncü aracımız Affin.
+
+266
+00:34:28,927 --> 00:34:34,547
+Burada any sözcüğüne dayalı, effective norms for English words.
+
+267
+00:34:35,087 --> 00:34:39,067
+Burada da yine diğer araçlara benzer şekilde bir puanlama sistemi var.
+
+268
+00:34:39,067 --> 00:34:43,847
+Olumlu kelimeler 1-5 arasında, olumsuz kelimeler, eksi 1-5 arasında değerlendiriliyor.
+
+269
+00:34:43,967 --> 00:34:47,007
+Sözlük 2477 kelimeden oluşuyor.
+
+270
+00:34:47,447 --> 00:34:51,007
+Bunların karşılaştırılması örnek tweetler, bir örnek çart.
+
+271
+00:34:51,727 --> 00:34:58,127
+Bu pozitif bir metinse bunlar 1-5 arasında my sentiment happy de veriliyor demiştik vs.
+
+272
+00:34:58,127 --> 00:35:02,607
+Burada yeşile bayanmış kısımlar biraz daha pozitif olduğunu zaten gösteriyor.
+
+273
+00:35:02,787 --> 00:35:05,347
+Negatif ve burada da negatif bir tweet var.
+
+274
+00:35:05,687 --> 00:35:09,867
+My sentiment tapide bunun aldığı eksi 0.5, bunun aldığı eksi 4.7.
+
+275
+00:35:09,867 --> 00:35:16,227
+Buna aşırı negatif diyebiliyoruz yani buna kıyasla bu şekilde yorumlamalar yapılabilir.
+
+276
+00:35:16,347 --> 00:35:20,007
+Sıfıra nesnel demiştik, nötr olduğunu söyleyebiliriz bunların.
+
+277
+00:35:20,487 --> 00:35:21,807
+Son alttaki iki tweetlerin.
+
+278
+00:35:23,787 --> 00:35:25,287
+Normalizasyon uygulanıyor.
+
+279
+00:35:25,287 --> 00:35:54,287
+Bu da aslında normalizasyon. Şu çarptan da göreceğimiz üzere bu aşırı fazla çıkmış, bunlar çok kısa, bunları biraz daha normalize etmek amacıyla sağlanıyor. Onun da örneği bir sonraki slide'da var. Twitter'ın kullanım oranı zamanla artar. Bunu aslında biraz önüne geçmek için, bizim proje uygulamayı yaptığımız zaman ve sonrası için bir normalizasyon sağlamak amacıyla, tutarlılık sağlamak amacıyla kullanılıyor.
+
+280
+00:35:54,287 --> 00:36:21,767
+kullanılıyor. Günlük puan son 3 aydaki ortalama tweet hacmine bölünerek burada skor normalize edilmiş oluyor. Bunun da matematiksel formülü bu. Ve sonunda da her gün aynı hacimli tweetlere sahip olunmuş, sahip olunuyor aslında. Normalizasyondan önceki çart az önce gösterilen grafikte buydu. Normalizasyon sağlandıktan sonra biraz daha değerler birbirine yakın ve tutarlılık sağlanmış oldu diye ifade edebiliriz.
+
+281
+00:36:22,260 --> 00:36:38,919
+sonuçlar ve kullanılan tweetler, zaman aralığı vs. burada yazıldı. 9000'den fazla kullanıcı analiz edilmiş. 2 yıldan fazla çalışılmış. 2 yıllık tweetler aslında analiz edilmiş. 12 milyonun üzerinde bir tweet sayısı var.
+
+282
+00:36:39,659 --> 00:36:51,859
+Filtreleme sonucunda 192 bin toplam 935. Tabii bunlar filtreleme sonucunda 12 milyonun üzerinden düşen, 192 bine düşen bir adetten bahsediyoruz.
+
+283
+00:36:52,260 --> 00:36:59,019
+4 metin tuğulu kullanılıp az önce bahsettiğimiz metin tuğulları ve örtük duygular sınıflandırılmış oluyor.
+
+284
+00:36:59,620 --> 00:37:01,520
+Çok kısa case study'lerden bahsedeceğim.
+
+285
+00:37:01,620 --> 00:37:08,719
+Bu Apple, Microsoft, Walmart gibi şirketlerin 3 tane şirketin case study'lerini koymuşlardı.
+
+286
+00:37:09,480 --> 00:37:12,840
+Buradaki olaylar neyi ifade ediyor hemen ona bakalım.
+
+287
+00:37:12,980 --> 00:37:16,899
+5 numara mesela en dikkat çeken kısım burada.
+
+288
+00:37:16,899 --> 00:37:20,179
+4 farklı tuğulda da en fazla çıkan o.
+
+289
+00:37:20,179 --> 00:37:32,940
+5 numara tepe grafik o da iPhone 6'nın uzun zamandır beklenen iPhone 6'nın çıkışını simgeliyor aslında ve o zamanda atılan tweetleri
+
+290
+00:37:32,940 --> 00:37:43,159
+7 numara Apple'ın akıllı saatinin piyasaya sürülmesi o da burada örneğin 9 numaralı yetkinlik iPhone 6'nın yükseltilmesi atılan örnek tweetler burada vardı
+
+291
+00:37:43,160 --> 00:37:47,319
+Microsoft'da da aynı şekilde 2 numara çok dikkat çekiyor.
+
+292
+00:37:47,420 --> 00:37:51,500
+2 numarada da CEO'nun bir sunumu olmuş.
+
+293
+00:37:51,640 --> 00:37:53,340
+1 numarada Nokia satın alınmış.
+
+294
+00:37:53,500 --> 00:37:56,079
+1 numarada yine bir çıkmış var.
+
+295
+00:37:58,520 --> 00:38:00,359
+Ve 4 numaraya bakalım.
+
+296
+00:38:00,520 --> 00:38:02,420
+Ona negatif olarak gözlemleyelim.
+
+297
+00:38:03,079 --> 00:38:05,039
+Burada aşağıda değerler görüyoruz.
+
+298
+00:38:05,099 --> 00:38:05,899
+Negatiflik var.
+
+299
+00:38:05,899 --> 00:38:09,140
+Burada Microsoft işten çıkarmalar duyurdu.
+
+300
+00:38:09,240 --> 00:38:11,160
+18 bin tane çalışan da kesinti oldu.
+
+301
+00:38:11,159 --> 00:38:36,299
+Burada çok fazla olumsuz o sırada tweetler, yorumlar var. Buradan bu anlaşılıyor. Sonuç olarak da duygu analizi araçları, Centrum Analysis Tools, Google Trends genel arama araçlarıyla birleştirilmiş oluyor. Dünyanın çeşitli yerlerinde belli bir terimin veya aramanın kaç kez girildiğini gösterebiliyor. Şirketlerin performansını o döneme göre aslında biraz daha ölçebiliyor ve analizler sunabiliyor en sonunda.
+
+302
+00:38:36,299 --> 00:38:42,799
+trendi yani o zamanki trendi ve popülerliği Twitter duygu analizi sayesinde sağlamış oluyorlar.
+
+303
+00:38:42,919 --> 00:38:46,379
+Finansal olaylarda performanslı bir şekilde tespit edilmiş oluyor.
+
+304
+00:38:47,079 --> 00:38:48,499
+Benim sunumum bu kadardı hocam.
+
+305
+00:38:50,199 --> 00:38:52,999
+Güzel bir sunumdu [öğrenci].
+
+306
+00:38:54,159 --> 00:38:55,239
+Beğendim yani.
+
+307
+00:38:55,639 --> 00:38:56,439
+Benim sorum yok.
+
+308
+00:38:56,579 --> 00:38:57,599
+Sorusu olan var mı?
+
+309
+00:38:59,699 --> 00:39:00,959
+Peki teşekkür ediyorum.
+
+310
+00:39:01,399 --> 00:39:01,760
+Ben teşekkür ederim.
+
+311
+00:39:01,760 --> 00:39:03,559
+[öğrenci] bir de sözü söyleyeyim.
+
+312
+00:39:03,959 --> 00:39:05,619
+Sunumu Drive'e koyuyorsun.
+
+313
+00:39:06,299 --> 00:39:07,599
+Tamam, şimdi eklerim hocam
+
+314
+00:39:07,599 --> 00:39:08,439
+Tamam, peki
+
+315
+00:39:08,439 --> 00:39:15,119
+Sen de paylaşımını bırakırsan, kesersen [öğrenci]'ı alacağız
+
+316
+00:39:15,119 --> 00:39:19,039
+Selamlar sesim geliyor mu?
+
+317
+00:39:19,760 --> 00:39:22,399
+Geliyor, ama biraz derinden geliyor
+
+318
+00:39:22,399 --> 00:39:26,339
+Kulaklık takayım mı yoksa
+
+319
+00:39:26,339 --> 00:39:30,079
+Kesinlikle ben kendimi zorlarsam duyarım
+
+320
+00:39:30,079 --> 00:39:33,939
+Ben de birazcık kendimi zorlayayım, anlaşmaya çalışıyorum olur mu?
+
+321
+00:39:33,999 --> 00:39:35,819
+Ben şimdi bir sunumu paylaşayım
+
+322
+00:39:35,819 --> 00:40:05,799
+Altyazı M.
+
+323
+00:39:41,331 --> 00:39:42,871
+Başlayayım mı hocam? Evet.
+
+324
+00:39:43,651 --> 00:39:57,551
+Okey. Merhabalar. Bugün ben sizlere hisse senedi hareketleri tahmini için sosyal medyada kullanılan duygu analizi yöntemi üzerinde yapılan çalışmayı anlatmaya çalışacağım.
+
+325
+00:39:57,831 --> 00:40:03,051
+Benim burada makale adım aslında zaten Sentiment Analysis on Social Media for Stock Moment Prediction.
+
+326
+00:40:03,051 --> 00:40:06,631
+yazarlar burada iki tane Japon akademisyenimiz var.
+
+327
+00:40:06,631 --> 00:40:09,411
+Bir de sanırım İngiliz'de Julian Welchum var.
+
+328
+00:40:11,071 --> 00:40:15,352
+Yayınlandığı dergide Elsevier Journal'da 2015 yılında yayınlanıyor bu makali.
+
+329
+00:40:16,311 --> 00:40:18,552
+İçerik olarak giriş yapacağız.
+
+330
+00:40:18,731 --> 00:40:20,391
+İlgili çalışmalardan bahsedeceğim.
+
+331
+00:40:20,811 --> 00:40:24,451
+Daha önce yapılmış ve güncel çalışmalardan.
+
+332
+00:40:24,751 --> 00:40:31,012
+Daha sonrasında veri setlerinden ve metotlardan en son olarak değerlendirmelerin sonucu geçeceğiz.
+
+333
+00:40:33,051 --> 00:40:52,631
+Giriş olarak hisse senetleri biliyorsunuz ki zaten bütün dünyada çok önemli bir faktör. Nasıl önemli? Şirketler, ülkeler iş planlaması yaparken gelecek yıllarını düşünürken hep bu market fiyatları aslında çok belirleyici olur.
+
+334
+00:40:52,631 --> 00:41:06,391
+işte büyüme oranları vesaire gibisinden ve bu fiyatlar da aslında birçok faktöre bağlıdır. Bunların başında da aslında toplumun ruh hali ve modu yaşadığı içinde bulunduğu durum çok önemlidir.
+
+335
+00:41:07,211 --> 00:41:15,171
+Şimdi bu çalışmada da bu düşünülerek insanların modunu nasıl öğrenebiliriz diyorlar ve sosyal medyadan öğreniriz diyorlar.
+
+336
+00:41:15,171 --> 00:41:17,271
+sosyal medyada Twitter değil arkadaşlar.
+
+337
+00:41:17,411 --> 00:41:18,351
+Birazdan bahsedeceğim.
+
+338
+00:41:19,311 --> 00:41:32,551
+Bu çalışmada Yahoo message board'u kullanacaklar ve elde edilen duygular seçilen modele entegre edilerek bir feature olarak eklenerek bir sonuç elde edilmeye çalışılacak.
+
+339
+00:41:32,551 --> 00:41:38,771
+Daha öncesinde yapılan çalışmalarda en önemlisi Efficient Market Hypothesis olarak çıkıyor karşımıza.
+
+340
+00:41:39,251 --> 00:41:41,351
+Bu hipotez aslında şunu söylüyor.
+
+341
+00:41:41,351 --> 00:41:49,071
+diyor ki az önce bahsettiğim gibi marketler, bu trendler hep haberlere ve bilgilere bağlıdır.
+
+342
+00:41:50,031 --> 00:41:53,311
+Ve bu haberler ve bilgiler de doğası gereği bilinemez.
+
+343
+00:41:53,391 --> 00:42:01,391
+Yani örnek verecek olursak en uzak olan arkadaşımız bile burada 2020 yılında, mart ayında pandeminin başlamasıyla
+
+344
+00:42:01,391 --> 00:42:07,331
+bütün marketlerin down olduğunu, battığını, 3 kat, 4 kat eksiğe geçtiğini duymuşsunuzdur.
+
+345
+00:42:07,331 --> 00:42:26,591
+Bu da diyor ki biz bunu öngöremeyiz. Yani bu istediğimiz kadar yapımı çalışmayı %50'nin üzerine çıkamazsınız diyorlar. Yani bu hipotez bunu söylüyor. Bu hipotezin ardından işte başka çalışmalarda aslında yapılan çalışmalarda %56 yöyü sonuç ortaya çıkıyor ve aslında bu alan çok ilgi çekici bir alan zaten.
+
+346
+00:42:26,591 --> 00:42:38,411
+Yani siz bunu zaten şu an akademik olarak çalışıyorsunuz ama elde ettiğiniz dünyada zaten artık her şeyi bir kere bırakıp sadece bu alanda devam edebilirsiniz tahminlemeye.
+
+347
+00:42:38,411 --> 00:42:43,411
+Şimdi bu çalışmalar dışında marketi yani hareket tahminini...
+
+348
+00:42:44,436 --> 00:43:13,475
+yapabilmek için iki teori bulunuyor. İşte bunlardan biri fundamental analisis, ikincisi de teknikal analisis diye geçiyor. Fundamental analisis aslında az önce bahsettiğim örnek verecek olursak bir bankaya alalım, Yapı Kredi Bankası. Bu bankanın fundamental analisi aslında yaptığı iş birlikleri, işte yaptığı yatırımlar, aldığı yatırımlar, yurt dışına açılma oranı, büyüme oranı, yıllık getiri oranı vesaire hep bu tür yani o şirket hakkında veya o ülke hakkında da olabilir arkadaşlar.
+
+349
+00:43:13,475 --> 00:43:24,895
+TL mesela yani TL'nin değer kaybetmesi, değer kazanması aslında ülkenin yaptığı yatırımlar, anlaşmalar ülkenin prestijiyle alakalı ve onun hakkında hep haberlerle ilgili olur.
+
+350
+00:43:24,895 --> 00:43:37,255
+Yani fundamental analysis bu. Technical analysis ise yani bir paritenin yani TL'nin diyelim yıllar içerisindeki grafiğini ele alabiliriz.
+
+351
+00:43:37,255 --> 00:44:02,895
+tarihsel fiyat hareketleridir aslında. Burada da işte bir pattern var mı? Destek var mı? Direnç var mı? Az çok ilgisi olan arkadaşlar burada işte destek olur bir fiyat atıyorum 9'dur. Mesela TL için 9 bir dirençtir. 9'u geçmesi zor olur. Tarih boyunca geçememiştir. Burası bizim için direnç noktasıdır gibi düşünebilirsiniz. Bu şekilde işte trendler vardır, döngüler, destekler, dirençler diyebiliriz.
+
+352
+00:44:02,895 --> 00:44:08,876
+Şimdi bu çalışmada, bu makalede bu iki teori aslında birleştirilmeye çalışılıyor.
+
+353
+00:44:09,215 --> 00:44:18,135
+Bu da nasıl yapılacak? Bizim veri setlerimiz bu noktada tarihsel fiyat verileri, yani technical analysis dediğimiz kısmı biz fiyat verilerinden elde etmeye çalışacağız.
+
+354
+00:44:18,555 --> 00:44:23,156
+Duygu bilgisi verilerini de aslında fundamental analysis olarak ele alacağız burada.
+
+355
+00:44:24,275 --> 00:44:27,936
+Şimdi tarihsel fiyat verilerinden, siz sağ tarafta bir grafik görüyorsunuz.
+
+356
+00:44:27,936 --> 00:44:30,815
+İşte ne dedim? Orada iki tane paralel sarı çizgi var arkadaşlar.
+
+357
+00:44:30,815 --> 00:44:35,635
+mesela hep iki kez mesela en başta bakın benim masumu görebiliyor musunuz?
+
+358
+00:44:35,915 --> 00:44:40,195
+2003-2004 yıllarında buralarda mesela gelmiş buraya destekleyebilirsiniz.
+
+359
+00:44:40,375 --> 00:44:41,675
+Buradan tepki alıyor.
+
+360
+00:44:42,135 --> 00:44:43,075
+İşte burası direnç oluyor.
+
+361
+00:44:43,156 --> 00:44:43,915
+Buradan tekrar uçuyor.
+
+362
+00:44:43,995 --> 00:44:48,035
+Buraya geldiğinde tekrar tepki alacağını düşünüp işte burada pozisyon alabilirsiniz ona göre.
+
+363
+00:44:48,415 --> 00:44:51,575
+Burada tekrar satabilirsiniz gibi böyle çıkarılar yapılıyor.
+
+364
+00:44:51,575 --> 00:44:59,115
+Şimdi bu çalışmada da 18 tane şirketin bir yıllık bir periyotta verisi alınıyor.
+
+365
+00:44:59,115 --> 00:45:27,315
+Yani bir fiyat verisi alınıyor. Fiyatların açılış, kapanış, yüksek alçak seviyeleri alınıyor. İşte bu da ne demek? Örneğin burada bir mum var. Burada her mum, şu kırmızı mumu düşünün. Hepsi bir güne hitap ediyor aslında arkadaşlar. Yani şu değer aslında açılış değeri. İşte şu bir tane çizgi var. Bu çizginin en sonuna kadar gittiği yer en alçak yeri. İşte en yukarı gittiği yer en tepe yeri. Bu da gövdesi oluyor gibi. Biraz teknik analize kayan konular alıyor.
+
+366
+00:45:27,315 --> 00:45:32,095
+İşte burada da bu değerler alınıyor aslında modele entegre edilebilmek için.
+
+367
+00:45:32,715 --> 00:45:37,035
+Biz bununla zaten bir base oluşturacağız, bir temel oluşturacağız bizim yapılacak çalışmamız için.
+
+368
+00:45:37,715 --> 00:45:40,515
+Burada da gördüğünüz gibi 18 tane büyük şirket var.
+
+369
+00:45:40,935 --> 00:45:48,015
+İşte Apple, Amazon, Dell gibi şirketleri bir yıllık verileri incelemiyor olacak bu noktada.
+
+370
+00:45:48,016 --> 00:46:00,616
+Bu duygu bilgisi verileri de az önce bahsettiğim gibi bu 23 Temmuz 2012 ile 19 Temmuz 2013 aralığında Yahoo Finance Message Board ortamından alınıyor.
+
+371
+00:46:00,616 --> 00:46:10,296
+Neden Twitter'dan alınmıyor? Çünkü Twitter'da veri çok düzensiz, çok dağınık, imna, yazın yanlışları vs. O nedenle bu çalışmada böyle bir ortama yönelilmiş.
+
+372
+00:46:10,296 --> 00:46:40,156
+Bu ortamda da arkadaşlar aslında şirketler hakkında yorumlar yapılıyor. İşte sağ tarafta bir tane yorum örneği koydum. Burada diyor ki Apple için 200 dolara tablet var diyor. Yani burada laptoplar 1000 dolar olacak diyor, 500 dolar olacak. Nasıl rekabet edecekler diyor diğer şirketler. Ben bunu satarım. Burada bir sentiment veriyor bu arkadaş. Keep Shorting diye bir arkadaş, kullanıcı. Gelmiş burada da bir sentiment verilmiş. O da ne? Ben bunu diyor satarım. Strong sell diyor.
+
+373
+00:46:40,496 --> 00:46:55,775
+Şimdi burada 4 kategoride sentiment oluyor yorumlarda. İşte güçlü alış, yani strong buy, sell ve strong sell gibisinden 4 kategoride kullanıcılar da yorumuna girip sentiment olarak bize verebiliyor bunu.
+
+374
+00:46:57,155 --> 00:47:02,775
+Şimdi burada 1 yıllık veri dedim. Hafta sonları marketler kapalı oluyor, bir işlem yapamıyorsunuz.
+
+375
+00:47:02,775 --> 00:47:09,635
+ve burada her bir mum bir güne tekabül ediyor ve yaklaşık 249 adet transaction'dayız.
+
+376
+00:47:09,715 --> 00:47:12,915
+Yani işlem günü diyeceğimiz T diyelim biz ona.
+
+377
+00:47:13,055 --> 00:47:14,195
+Şimdiden ben size T diyeyim.
+
+378
+00:47:14,275 --> 00:47:19,435
+Birazdan metodlara geçtiğimize tekrar belirttim ama 249 T'miz var bizim aslında orada.
+
+379
+00:47:19,515 --> 00:47:20,915
+249 günde inceleniyor.
+
+380
+00:47:21,475 --> 00:47:26,455
+Şimdi bu az önce gösterdiğim mesajların şu sağ tarafta olan aşağıda sentiment gördüğünüz.
+
+381
+00:47:26,455 --> 00:47:32,475
+Bu mesajların toplamının sadece %15'inde kullanıcılar bir sentiment veriyor, bir duygu veriyorlar.
+
+382
+00:47:32,475 --> 00:47:34,696
+Mesajını yazıyor ve diyor ki ben bunu satarım derdi.
+
+383
+00:47:34,836 --> 00:47:36,095
+Ben bunu alırım diyor.
+
+384
+00:47:36,455 --> 00:47:37,315
+Böyle bir mesaj diyor.
+
+385
+00:47:37,396 --> 00:47:38,415
+Sadece %15'inde var.
+
+386
+00:47:38,696 --> 00:47:45,896
+Sağ taraftaki gördüğünüz tabloda da her bir tarih için aslında şirketler hakkında 18 şirket için değerler yer alıyor.
+
+387
+00:47:45,896 --> 00:47:52,055
+Yani günlük olarak ortalama atıyorum Apple'a 1678 yorum girilmiş ortalama günlük.
+
+388
+00:47:52,335 --> 00:47:56,496
+Ve bu 1678'in ortalama 350 tanesinde bir duygu var.
+
+389
+00:47:56,815 --> 00:47:58,216
+Yani kullanıcıların belirttiği.
+
+390
+00:47:58,296 --> 00:47:59,635
+Diğer 1300 tanesinde yok.
+
+391
+00:47:59,635 --> 00:48:27,315
+Biz de bu şimdi ilk olarak duygulardan başlıyor olacağız. Şimdi metotlara geçelim. Burada çalışmada Support Vector Machine seçiliyor. Çünkü işte çok boyutlu verilerde başarılı olduğu bilindiği için direkt olarak bu seçilmiş. Başka bir algoritma tercih edilmiyor. Yani denenmiyor. Burası bana biraz garip geldi ama direkt Support Vector Machine seçiliyor. Ve diyorlar ki biz burada 6 farklı feature kümesi ele alacağız.
+
+392
+00:48:27,315 --> 00:48:43,256
+İlk olarak bir price only yapacağız. Sadece fiyat, tarihsel fiyatı alıp bir paten var mı yok mu ona bakacağız. Sonra human sentiment, sentiment classification, LDR-based metot var, JST-based metot var ve en sonunda aspect-based sentiment ile bitiriyor olacağım.
+
+393
+00:48:43,256 --> 00:48:57,296
+Şimdi biraz bunların detaylarından bahsedeyim arkadaşlar sizlere. Price only de dediğim gibi sadece fiyatı baz alıyor. Az önce bahsettiğim grafikteki açılış-kapanış değerleri, en yüksek alçak değerlerini alıyor.
+
+394
+00:48:57,315 --> 00:49:05,275
+ve diyorlar ki işte burada bir paten var mı? Örneğin işte bu buraya geliyor da aşağı geliyor, o sarı aşağı değiyor, yukarı tekrar gidiyor.
+
+395
+00:49:05,435 --> 00:49:10,295
+E bu sefer tekrar yukarı mı gider gibi patenler aslında var mı yok mu aranıyor?
+
+396
+00:49:10,735 --> 00:49:15,735
+Ve buradaki asıl amaç da şu, şimdi burada biz tabii ki de duygu analizi yapacağız.
+
+397
+00:49:16,115 --> 00:49:19,955
+Bizim bunu entegre edeceğimiz bir taban oluşturuyoruz price only feature ile.
+
+398
+00:49:19,955 --> 00:49:25,535
+Bu daima uyguladığımız bizim feature'imiz, hiç kaldırmayacağımız modelle.
+
+399
+00:49:25,535 --> 00:49:35,955
+tarihlere göre işte her günün bir önceki gününe baz alarak fiyatların yani grafiklerin bir sonraki günleri tahmin etmeye çalışacak.
+
+400
+00:49:36,695 --> 00:49:42,515
+Şimdi burada yavaş yavaş modeli inşa ediyorlar tabii. Burada human sentiment'i baz alıyorlar.
+
+401
+00:49:42,515 --> 00:49:51,895
+Human sentiment dediğimiz kısımda aslında az önce bahsettiğim o Yahoo message board'ta alınan mesajların %15'lik kısmına tekabül ediyor.
+
+402
+00:49:51,895 --> 00:50:21,395
+Burada bizim bir sentimentimiz var. Bu sentimenti alıyor. İstatistiğini yani olasılığını hesaplıyor bu mesajların. İşte ne yapıyor? Ne kadar strong buy var? Divided diye şeye bölüyor. Tamamına bölüyor tüm mesajlara. Bunun direkt olarak çok basit bir şekilde olasılığını hesaplayıp şeye hesaplıyor. Modela entegre ediyor. Yani burası da basit bir kısmı aslında. Burada da duygular verileri etkiliyor mu etkileniyor mu onu gözlemlemeye çalışıyorlar. Direkt olarak price only metodunun üstüne.
+
+403
+00:50:21,395 --> 00:50:28,015
+bu feature'ı ekliyorlar. Sonrasında sentiment classification arkadaşlar. Burada da şunu inceliyorlar.
+
+404
+00:50:28,724 --> 00:50:43,003
+%15'de dediğim gibi sentiment var, %85'de yok. Var olmayan sentimentleri ortaya çıkarmaya çalışıyorlar. Burada da işte sentiment classification yapıyorlar, 5 sınıf belirliyorlar.
+
+405
+00:50:43,003 --> 00:50:53,904
+İşte alış-satış, güçlü alış, güçlü satış. Bir de burada ek olarak hold var, yani pozisyonunu koruma gibi bir durum var. İşte burada ne yapılıyor? Lemotizasyon yapılıyor. Lemotizasyon ne?
+
+406
+00:50:53,904 --> 00:51:00,883
+streaming'in aslında benzeri ama burada daha çok morfolojik olarak kelimenin bedeni aranıyor orada diyebilirim size.
+
+407
+00:51:00,883 --> 00:51:10,783
+Burada da Stanford Core NLP kütüphanesinden faydalanıyor. Çok büyük bir sözcük kütüphanesinin ihtiyacı var ki burada morfolojik olarak inceleyebilsin açıkçası.
+
+408
+00:51:11,404 --> 00:51:21,183
+Burada ne oluyor? Burada da aynı şekilde mesajlardaki sınıf yüzdesi, az önceki dediğim gibi işte alış satışın tamamına bölümünde buradan yüzde hesaplanıyor.
+
+409
+00:51:21,183 --> 00:51:25,283
+Bunların sonuçlarını birazdan gösteriyor olacağım size. Şu an size metotları özetlemeye çalışıyorum.
+
+410
+00:51:26,343 --> 00:51:31,283
+LDA-based metoda geçiliyor daha sonrasında. Bunlar aslında hep baseler yani hep temel oluşturuyorlar.
+
+411
+00:51:31,603 --> 00:51:38,323
+Son iki metot en çok üzerinde durulan. Şimdi burada da LDA-NAT, Latent Drill Allocation diye geçiyor.
+
+412
+00:51:38,323 --> 00:51:43,863
+Şimdi burada şöyle grafiğimden anlatayım aslında size. Bir döküman var olduğunu düşünün.
+
+413
+00:51:43,944 --> 00:51:47,003
+LDA-i modele soktuğumuzda bu döküman bir regresyon yapıyor.
+
+414
+00:51:47,003 --> 00:51:53,463
+aslında biraz burada topic, yani konu modellemesi diyebilirim ben size bu model için.
+
+415
+00:51:53,804 --> 00:52:01,863
+Şimdi bu LDS modeli soktuğunuzda dokümanları size bir rastgele kelimeleri, siz bir lematizasyon yapıyorsunuz az önce dediğim gibi.
+
+416
+00:52:02,224 --> 00:52:05,264
+Kelimelerin gövdeliyi, orada gövdesini alıyorsunuz.
+
+417
+00:52:05,323 --> 00:52:08,683
+Yani mesela ve bu kelimeleri modele sokuyorsunuz.
+
+418
+00:52:08,764 --> 00:52:10,483
+Yani şeyler dokümanlardan bağımsız.
+
+419
+00:52:10,823 --> 00:52:14,444
+Ve bu kelimeler bazlı topicler jenere ediliyor.
+
+420
+00:52:14,444 --> 00:52:16,023
+Yani bir sürü topic ortaya çıkıyor.
+
+421
+00:52:16,023 --> 00:52:21,883
+tabi burada işte eleme yöntemleri kullanılıyor. Yani 10 tanesi en az çıkan 10 konu eleniyor vs.
+
+422
+00:52:21,883 --> 00:52:29,123
+Burada temizlik işlemleri yapılıyor. İşte GPT sampling'ten faydalanıp 1000 iterasyonla 50 tane konu seçiliyor.
+
+423
+00:52:29,603 --> 00:52:38,003
+Ve bu 50 konu için her bir yorumu işte ne oluyor dedim. Burada her bir kelime için ortalama yukarıda K tarafında topic seçiliyor.
+
+424
+00:52:38,403 --> 00:52:45,584
+Daha sonra baktıklarında bu topic'i oluşturan kelimeler distribution'la bakılıyor, dağılımına bakıyor.
+
+425
+00:52:45,584 --> 00:53:04,423
+ve bu kelimeler içinde bizim dokümas dediğimiz ama bizim çalışmamızda aslında bir yorum için o yorumun ait olduğu konuları yani temsil ettiği konuların yüzdesel olarak hesaplanıyor ve modele entegre ediliyor bu olasılıklarda.
+
+426
+00:53:04,423 --> 00:53:06,264
+LDA-Based metod bu şekilde.
+
+427
+00:53:06,263 --> 00:53:23,343
+CST-Based metodda ise burada birazcık konu duygu çifti var ve LDA-Based metoddan farklı olarak burada her bir doküman, daha doğrusu her bir yorum bir probability alıyor, bir topic için probability alıyor.
+
+428
+00:53:23,343 --> 00:53:35,603
+Ama CST'de burada her bir cümle, yani yorum 5 cümlelik olabilir ama her cümleyi ayrı ayrı ele alıyorlar. Yine çok benzer, burada regresyon tarzı düşünebilirsiniz arkadaşlar dediğim gibi.
+
+429
+00:53:35,603 --> 00:54:00,303
+Burada mevcut konuya bağlı bir model aslında kurgulanıyor. Burada da işte parametre olarak az önce biz bin iterasyon elli konu yapmıştık. Burada da üç tane duygu veriliyor. İşte up, down, nötr gibisinden. Yani şey pozitif, negatif ve nötr gibisinden. Yine ön çalışmalar var. Yine elematizasyon yapılıyor. Stanford'un kütüphanesinden faydalanıyor. Ve yine aynı şekilde olasılıklar hesaplanıyor burada da.
+
+430
+00:54:00,304 --> 00:54:06,264
+işte her bir yorum için değil her bir sentence, her bir cümle için aslında burada olasılıklar hesaplanıyor.
+
+431
+00:54:06,684 --> 00:54:09,363
+Daha fazla olasılık ihtimali var aslında burada.
+
+432
+00:54:09,843 --> 00:54:12,363
+Yani daha fazla matematik var onu söyleyebilirim.
+
+433
+00:54:12,363 --> 00:54:17,363
+Şimdi son olarak da aspect-based sentiment'e geçtiğimde de burada...
+
+434
+00:54:17,715 --> 00:54:46,415
+konular ve duygular önerilen yöntemle tanımlanır demişiz. Bu da aslında bu yöntem, nasıl bir yöntem ondan bahsedeyim. Burada bir örnek koydum oraya. Profit will go up diyor. Bizim buradaki direkt olarak duygumuz up olması, yani yukarı yönlü oluyor olması. Konumuzda ne? Profit. Yani karın yukarı olacağı. Burada direkt olarak bir çift. Yani burada bir payer mantığı var. İşte profit up mantığı var.
+
+435
+00:54:46,415 --> 00:54:51,396
+ve burada sadece 3 sentiment ele alınıyor.
+
+436
+00:54:51,556 --> 00:54:54,215
+İşte pozitif, negatif, nötr gibisinden.
+
+437
+00:54:54,215 --> 00:54:59,076
+Ve burada kelimelerin, her kelimenin anlamı araştırılıyor.
+
+438
+00:54:59,175 --> 00:55:02,215
+İşte burada opinion mining yapılıyor ki anlaşılabilsin.
+
+439
+00:55:03,175 --> 00:55:06,436
+Yani burada her cümle inceleniyor yine JST'ye base metoddaki gibi.
+
+440
+00:55:07,015 --> 00:55:10,095
+Her cümledeki kelimelerin işte bu stop wordler atılıyor.
+
+441
+00:55:10,535 --> 00:55:12,875
+Nedir o the'lar, of'lar vesaireler.
+
+442
+00:55:12,875 --> 00:55:23,516
+ve her kelimenin, profitin, up'ın, go'nun hepsinin anlamına bakılıp bir sentiment, her cümle için sentiment çıkarılıp o sentimentin de topiği çıkarılıyor burada her cümle için.
+
+443
+00:55:24,156 --> 00:55:28,076
+Ve yine olasılıkları hesaplanıp modeli entegre ediyor özellikle arkadaşlar.
+
+444
+00:55:29,215 --> 00:55:30,355
+Metotlar bu şekilde.
+
+445
+00:55:30,516 --> 00:55:37,355
+Ve bu metotların sonuçlarına geldiğimizde, işte burada görüyorsunuz baseline models olarak ilk dört anlattığım var aslında.
+
+446
+00:55:38,195 --> 00:55:40,495
+Our models olarak da iki modeli koymuşlar.
+
+447
+00:55:40,495 --> 00:55:43,275
+burada GSTBase metot ve Aspect Based Sentiment olarak.
+
+448
+00:55:43,275 --> 00:55:48,656
+Şimdi burada baktığımızda benim dikkatimi açıkçası Human Sentiment çekti.
+
+449
+00:55:49,335 --> 00:55:54,375
+Burada hep Average 18 şirket için hesaplıyorlar bu 6 metodu da ve ortalamalarını alıyorlar.
+
+450
+00:55:55,035 --> 00:56:01,035
+Mesela Human Sentiment'in oranı en çok başarı elde eden Aspect Based Sentiment ile paralel.
+
+451
+00:56:01,375 --> 00:56:04,995
+Zaten burada da insanların işte bu %15'lik mesajdı hatırlarsanız.
+
+452
+00:56:05,415 --> 00:56:08,515
+İnsanların burada sentimenti verdiği, duyguyu verdiği mesajlardı.
+
+453
+00:56:08,515 --> 00:56:14,155
+yakın bir değerde ama yine de en yüksek aspect-based sentiment olarak karşımıza çıkıyor.
+
+454
+00:56:15,055 --> 00:56:17,815
+Burada şu dikkatimi çekiyor benim.
+
+455
+00:56:18,155 --> 00:56:21,135
+%50'nin üstüne çok çıkılan stok var burada.
+
+456
+00:56:21,615 --> 00:56:26,135
+Fakat bazıları %70, örneğin Amazon için %70 gibi bir ekürisi.
+
+457
+00:56:26,135 --> 00:56:29,355
+Bu arada hepsi ekürisi değerleri arkadaşlar söylemediysen.
+
+458
+00:56:29,855 --> 00:56:32,135
+%71 gibi bir ekürisi hesaplanıyor.
+
+459
+00:56:32,595 --> 00:56:36,895
+Yani çok yüksek bir oran aslında bunu markette, predict noktasında.
+
+460
+00:56:36,895 --> 00:56:45,055
+her stokta başarılı olmasa da ortalama olarak en yüksek aspect-based sentiment çıkıyor baktığımızda.
+
+461
+00:56:45,055 --> 00:56:50,215
+Ama şu human sentiment de benim için beni çok şey yaptı yani açıkçası çeldi.
+
+462
+00:56:50,375 --> 00:56:54,035
+Yani sadece human sentiment de bile gayet iyi.
+
+463
+00:56:54,255 --> 00:56:59,195
+Örneğin şurada %64 gibi, %66 gibi yaklaşık değerler var.
+
+464
+00:56:59,295 --> 00:57:01,635
+Alıp bu modeli örneğin sadece Amazon'da kullanabilirsiniz.
+
+465
+00:57:01,755 --> 00:57:05,575
+Human sentiment sadece X10'da kullanabilirsiniz gibi çıkartmalar yapılabilir.
+
+466
+00:57:05,576 --> 00:57:09,055
+Topoluş olarak da bu piyasa çok faktörlü bir piyasa arkadaşlar.
+
+467
+00:57:09,275 --> 00:57:20,275
+Yani sadece fiyat ve insan duygularını baz alarak tahminlenebilecek değil, daima geliştirilebilecek bir piyasada ve gelecek çalışmalarda da işte bunu ekleyebiliriz.
+
+468
+00:57:20,355 --> 00:57:25,436
+Örneğin şirketlerin yaptığı yatırımlar, anlaşmaların verilerini alıp bunları da ekleyebiliriz future olarak demişler.
+
+469
+00:57:25,816 --> 00:57:29,156
+Bu çalışma daha çok işte tema duygusu yani konu bazlı değil.
+
+470
+00:57:29,236 --> 00:57:31,456
+Tema değil de konu daha doğru bir kelime olur burada.
+
+471
+00:57:31,455 --> 00:57:40,535
+konu bazlı bir çalışma, konu endeksli bir çalışma, konulardan çıkarım yapılarak, konu çıkarım yapılarak tahmin, duygu çıkarım yapılıyor.
+
+472
+00:57:41,575 --> 00:57:47,335
+En iyi ortalama dediğim gibi aslında %54 burada fakat bazı veriler içinde %60 üzeri var.
+
+473
+00:57:48,135 --> 00:57:51,895
+Yani siz sadece tek bir şirket içinde bu modeli kullanıyor olabilirsiniz.
+
+474
+00:57:52,595 --> 00:57:56,675
+Ve burada sadece up ve down outputu alıyoruz.
+
+475
+00:57:56,675 --> 00:58:00,935
+Aslında modele sokuyoruz ve modelin bize verdiği outputlar up ve down oluyor.
+
+476
+00:58:00,936 --> 00:58:17,135
+Yani yukarı ve aşağı tahmini var. Belki ilerideki işte Futureworks olarak da burada dalgalanmalar biraz aşağı, biraz yukarı, işte sabit, stabil gibi outputlar eklenebilir gibisinden belirtilmiş. Bu şekilde arkadaşlar, beğenilmemiz için teşekkür ederim.
+
+477
+00:58:17,619 --> 00:58:29,139
+Biz teşekkür ederiz. Bu da sadece sence mesela böyle bir çalışma bizim ülkemiz koşullarında ne kadar başarılı olur?
+
+478
+00:58:29,899 --> 00:58:35,519
+Yani işte ne dedim mesela? Çok multifaktör bir konu.
+
+479
+00:58:35,519 --> 00:58:35,899
+Evet.
+
+480
+00:58:35,899 --> 00:58:46,059
+Ve Türkiye gibi aslında unstable diyebileceğimiz biraz belirsiz maalesef yani yatırımla atıyorum 5 yıllık 10 yıllık yatırım yapmıyor ülke.
+
+481
+00:58:46,059 --> 00:58:48,219
+veya işte büyük anlaşmalar yapmıyor.
+
+482
+00:58:48,839 --> 00:58:52,679
+Bu noktada işte az önce ne dedim bir hipotez vardı en başta bahsettiğim.
+
+483
+00:58:52,679 --> 00:58:56,099
+Diyor ki haberler ve bilgiler öngörülemez.
+
+484
+00:58:56,419 --> 00:58:58,759
+Türkiye gibi bir yerde bu çok doğruluyor.
+
+485
+00:58:58,859 --> 00:59:01,079
+Aslında bu hipotezi doğrulayan bir ülkeyiz maalesef.
+
+486
+00:59:01,279 --> 00:59:04,119
+Yani şu anki şartlarda hiçbir şey öngöremiyoruz.
+
+487
+00:59:04,660 --> 00:59:12,159
+Yani o yüzden Türkiye gibi yani TL'yi tahminleme noktasında benim test konularım, test konum aslında benzer bir konu test konumda.
+
+488
+00:59:12,659 --> 00:59:15,159
+Çalışacağız bakalım yani TL'yi tahminlersek.
+
+489
+00:59:15,199 --> 00:59:15,819
+Çalışacağız.
+
+490
+00:59:16,059 --> 00:59:18,059
+Bilgi vermeye çalışıyorum arkadaşlar.
+
+491
+00:59:18,859 --> 00:59:20,059
+Peki teşekkür ederim.
+
+492
+00:59:20,339 --> 00:59:22,399
+Seninle sunumunu beğendim [öğrenci].
+
+493
+00:59:22,739 --> 00:59:24,539
+Arkadaşınızın sorusu olan var mı?
+
+494
+00:59:26,539 --> 00:59:26,899
+Tamam.
+
+495
+00:59:28,060 --> 00:59:30,639
+[öğrenci] bugün sunamıyor.
+
+496
+00:59:31,319 --> 00:59:34,819
+Az önce beklenmedik bir şekilde toplantıya çağrılmış.
+
+497
+00:59:35,660 --> 00:59:37,379
+Toplantıya girmesi gerekti.
+
+498
+00:59:38,259 --> 00:59:39,700
+Ta seni gördüm.
+
+499
+00:59:40,480 --> 00:59:42,759
+Ben ta, evet var.
+
+500
+00:59:43,119 --> 00:59:43,980
+Evet hocam.
+
+501
+00:59:43,980 --> 00:59:45,800
+Sözü sana veriyorum.
+
+502
+00:59:46,059 --> 00:59:48,339
+Tamamdır hocam
+
+503
+00:59:48,339 --> 00:59:58,739
+Görüntün açabilmem mümkün mü? Bir yüzünü hatırlayayım. Bazılarınızın üzerine isimlemeç edemiyorum. Var mı?
+
+504
+00:59:58,739 --> 01:00:01,359
+Hocam o zaman şöyle yapalım.
+
+505
+01:00:01,379 --> 01:00:03,779
+Uygundayın ise açmıyorum de.
+
+506
+01:00:05,359 --> 01:00:07,719
+Bir saniyenizi istiyorum hocam. Hemen açıyorum.
+
+507
+01:00:08,259 --> 01:00:10,539
+Tamam. Kısa süreliğine.
+
+508
+01:00:11,159 --> 01:00:11,539
+Evet.
+
+509
+01:00:11,539 --> 01:00:14,559
+Tamam. Oldu.
+
+510
+01:00:14,559 --> 01:00:22,319
+Deseydin ya çıkışlarda soru soran çocuk hemen hatırladım. Peki daha.
+
+511
+01:00:24,079 --> 01:00:24,679
+Tamamdır.
+
+512
+01:00:24,819 --> 01:00:26,539
+Bir de 20 dakika süren var.
+
+513
+01:00:29,039 --> 01:00:31,980
+Tamam hemen şöyle bir açıyorum ekranı.
+
+514
+01:00:38,324 --> 01:00:42,203
+Antigran dışı gibi konulur inşallah diyeceğim. Evet, öyleymiş.
+
+515
+01:00:43,224 --> 01:00:51,863
+Hocam, ben bunu seçerken tarihine bakmadım. Şeyin üstüne tarih yoktu. Attığınız bildiriler içerisinden birkaç seneye bakmıştım.
+
+516
+01:00:52,923 --> 01:00:53,923
+Küslek diyelim.
+
+517
+01:00:55,143 --> 01:01:02,303
+Yani nasip diyelim ama yani baya baya bir eski. Bu 2000 yılında yazılmış.
+
+518
+01:01:02,324 --> 01:01:04,683
+En azından nereden nereye geldiğimizi görürüz.
+
+519
+01:01:06,343 --> 01:01:06,943
+Tamamdır.
+
+520
+01:01:06,943 --> 01:01:08,543
+Tamam, hadi başlayalım.
+
+521
+01:01:10,723 --> 01:01:18,223
+Text kategorizasyonunu unsupervised olarak yapmaya çalışıyorlar ve bunu otomatikleştirmeye çalışıyorlar.
+
+522
+01:01:19,483 --> 01:01:20,864
+Bir dakika, şey işlemiyor.
+
+523
+01:01:22,443 --> 01:01:33,123
+Benim genel böyle bir şeyim olacak, giriş, proje konusu nedir, motivasyon ne, çalışma motivasyonu, araştırma sonuçları ne, ondan sonra genel olarak sistemi anlatacağım.
+
+524
+01:01:33,123 --> 01:01:51,563
+Formüllerin olduğu yeri kapattım şimdilik. Sunumu yüklerken orada görebilirsiniz. Oraları anlatmayacağım için. Bu genel girişi yapayım mı bilmiyorum ama genel olarak artık internet üzerinden dokümanlar çok paylaşılıyor ve
+
+525
+01:01:51,563 --> 01:01:56,843
+şeyler varsa onların hızlı girişi.
+
+526
+01:01:56,843 --> 01:02:04,943
+Hocam ben bir oda değiştireyim. Kedi sesinden şey olmayabilir. Bir 30 saniyenizi rica ediyorum.
+
+527
+01:02:04,943 --> 01:02:05,303
+Tamam.
+
+528
+01:02:08,623 --> 01:02:20,623
+Bu arada [öğrenci] seni de gördüm. Sunumun var ama [öğrenci] ben senin ödevin için sana mail atmıştım. Hatırlıyor musun?
+
+529
+01:02:22,803 --> 01:02:23,684
+Hatırlamıyorum.
+
+530
+01:02:23,684 --> 01:02:28,963
+Bir ödev vermiştin. Böyle yarım sayfa bir regeks.
+
+531
+01:02:29,523 --> 01:02:32,684
+Evet. Sonradan tekrar gönderdim onu size ulaşmadım.
+
+532
+01:02:32,684 --> 01:02:42,923
+Ben Cumhur'da da aynı şey oldu. Elime ya geçti ben farkına varmadım işlememişim. Rica ederim bir daha gönderir misin?
+
+533
+01:02:43,103 --> 01:02:44,904
+Tamam maili tekrar yönlendirdim.
+
+534
+01:02:44,904 --> 01:02:45,224
+Tamam.
+
+535
+01:02:47,603 --> 01:02:50,103
+Tamamdır hocam ben anlatmaya devam ediyorum.
+
+536
+01:02:50,103 --> 01:03:05,583
+Bu ilk zamanlar supervised olarak yapılıyormuş bu işlemler ve o supervised olarak yerlere verebilmek için de bazı kısımları manuel olarak elle doldurmak gerekiyormuş.
+
+537
+01:03:06,684 --> 01:03:17,643
+Bu iki arkadaş da bu kısmı nasıl otomatize edebiliriz bunu tartışmışlar ve bunun üzerine unsupervised bir sistem nasıl geliştirebiliriz demişler.
+
+538
+01:03:17,643 --> 01:03:34,983
+Genel olarak otomatik metin sınıflandırma için bir yöntem önerilmiştir. Önerilen yöntem her kategorinin anahtar kelime listelerini kullanarak otomatik olarak eğitim setleri oluşturup bunları metin belgelerinin sınıflandırmada kullanılmakta.
+
+539
+01:03:34,984 --> 01:04:02,463
+İşin motivasyonu şu, yapılan önceki çalışmalar hep etiketli belgelerden oluşan veri setleri ve bu artık genel zaten, bunlar da ön işlemden geçiriyorlar. Bunların ön işlemden geçilmesinin sebebi internetten alıyorlar dokümanları ve oradaki tagları falan silmek için genel olarak. Ama şuna bakıyorlar, yapılan çalışmalar genellikle supervised.
+
+540
+01:04:02,463 --> 01:04:09,083
+artık günümüzde biz ne kadar unsupervised çalışmalar görecekti o zamanlar görememişler.
+
+541
+01:04:10,624 --> 01:04:15,324
+Ve verilen temel görevleri önceden tanımlı kategori etiketlerini atamak.
+
+542
+01:04:15,324 --> 01:04:19,404
+Ve bunu yapmak için çok fazla etiketli veriye ihtiyaç var.
+
+543
+01:04:20,163 --> 01:04:28,044
+Ve bundan dolayı haber, makale, web sayfası ve e-posta gibi yerlerde bunu oluşturmak zor ve çok maliyetli.
+
+544
+01:04:28,324 --> 01:04:32,223
+Yani insan eliyle bunun yapılması zaman açısından mümkün değil.
+
+545
+01:04:34,612 --> 01:04:51,651
+Evet, çalışmanın genel motivasyonu denetimsiz bir öğrenme yöntemiyle çözüm yapma. Diyorlar ki biz cümlelere böleriz, anahtar kelime listemizi oluştururuz. Cümle benzerliğini kullanarak bunları kategorize ederiz.
+
+546
+01:04:51,651 --> 01:05:02,251
+daha az maliyet ve mevcuttaki bu supervised yöntemlere göre yakın bir başarım oranını yakalarsak bizim için yeterli diyorlar.
+
+547
+01:05:02,251 --> 01:05:07,051
+Yani bu projede başarım oranını artıracağız demiyorlar.
+
+548
+01:05:07,191 --> 01:05:14,531
+Sadece maliyeti düşürüp başarım oranını olabildiğine supervised yöntemlere yakın tutmaya çalışıyorlar.
+
+549
+01:05:15,792 --> 01:05:17,652
+Araştırma sonucunda şöyle bir şey oluyor.
+
+550
+01:05:17,652 --> 01:05:28,372
+burada şekilde vermemişler ama bu üçgen olan yaptıkları çalışmanın sonucu şurada daha iyi gözüküyordu.
+
+551
+01:05:30,492 --> 01:05:37,612
+Buradaki üçgen olan işte proposed method dedikleri method by supervised learning dedikleri de şu.
+
+552
+01:05:38,891 --> 01:05:42,792
+Yani kendileri şöyle bir sistem tutmuşlar.
+
+553
+01:05:43,632 --> 01:05:45,992
+Şu ilk iki bin kelime için demişler.
+
+554
+01:05:45,991 --> 01:06:01,531
+Bizim başarımız demişler, önerdiğimiz sistem de %71.8, denetimli öğrenmeyle yapıldığı zaman da bu %75.6, o zaman aralarındaki fark sadece 3.8 olduğu için bu sistem kullanılabilir.
+
+555
+01:06:01,911 --> 01:06:15,931
+Yani her ne kadar bu sözlük boyutu küçükken kullanılabilir gözükse de, sözlük boyutu büyüdükçe, yani 10.000 kelimeye çıkmış mesela, ara burada açılmış gözüküyor yani.
+
+556
+01:06:15,991 --> 01:06:26,551
+ne kadar çok çok etkiler mi? Orada tabii onun için test yapmak gerekir. Ama çalışma sonuçlarına şöyle bir şey demişler.
+
+557
+01:06:27,472 --> 01:06:37,691
+Performans açısından biz bunu zaten öneriyoruz. Bundan dolayı küçük boyutlu şeyler için, sözlükler için bu yöntem kullanılabilir.
+
+558
+01:06:37,691 --> 01:06:48,231
+Eğitim belgelerini etiketlemediği yüksek maliyet ve etiketlenmemiş belgelerin büyük hacmi olduğu için metin öğreniminde bir yöntem olarak kullanılabilir demiş.
+
+559
+01:06:50,051 --> 01:06:57,751
+Ve evet bu yöntem düşük maliyetli metin kategorizasyonu gereken alanlarda kesinlikle kullanılabilir demişler.
+
+560
+01:06:57,751 --> 01:07:08,472
+Sistem genel olarak tanıtırsak, 2000'e yakın kelimeyle bir eğitim yapılmış.
+
+561
+01:07:10,992 --> 01:07:17,311
+Ön nitelik seçimi için X kare, metin sınıflandırıcısı olarak NeuBiOS kullanılmış.
+
+562
+01:07:18,371 --> 01:07:20,552
+Ben şöyle genel mimariye anlatayım.
+
+563
+01:07:22,291 --> 01:07:26,311
+Zaten artık hepimizin kullandığı, bildiği yapılar.
+
+564
+01:07:26,311 --> 01:07:33,671
+bir pre-processing var, training yapıyor. Ondan sonra bir feature selection ile işi bitiriyor.
+
+565
+01:07:35,412 --> 01:07:43,272
+Burada ön işlemde genel kelimeleri çıkarıyor. Özel karakterleri ayırıyor, cümleleri ayırıyor, içerik kümesi oluşturuyor.
+
+566
+01:07:43,371 --> 01:07:53,031
+İçerik kümesi oluştururken bu arkadaşlar Koreli oldukları için işte dillerinde bazı sıfat ve fiiller isim olarak sayılabiliyor diyorlar.
+
+567
+01:07:53,031 --> 01:08:01,472
+Bundan dolayı bu pos etiketine göre biz bunlardan bazılarını da alacağız diyorlar ve ona göre işlem yapıyorlar.
+
+568
+01:08:01,851 --> 01:08:03,011
+Yani almamız lazım diyorlar.
+
+569
+01:08:04,071 --> 01:08:06,951
+İstem mimarisi içerisindeki diğer şey eğitim set üretme.
+
+570
+01:08:08,052 --> 01:08:09,692
+Şurada ikinci kısım.
+
+571
+01:08:11,811 --> 01:08:16,692
+Bunun içinde temsili cümlelerin çıkarılması ve doğrulanması ve cümlelerin genişletilmesi.
+
+572
+01:08:17,552 --> 01:08:20,391
+Temel yapı olarak burada işte TF ve ICF kullanılıyor.
+
+573
+01:08:20,391 --> 01:08:24,992
+daha doğrusu bunların bir kombinasyonu olan TF-ICF kullanılıyor.
+
+574
+01:08:27,311 --> 01:08:28,832
+Buna değerleri üretip
+
+575
+01:08:29,684 --> 01:08:35,624
+ağırlıklarına göre sıralıyorlar. Azalan olacak şekilde, çoktan aza doğru sıralıyorlar.
+
+576
+01:08:37,303 --> 01:08:45,483
+Ve şöyle bir şey yapıyorlar, sanırım bu başarımın düşmemesi için sıralama işleminden sonra temsili cümlelerin ilk %70'ini seçiyorlar.
+
+577
+01:08:46,083 --> 01:08:48,463
+Buna da diyorlar, deneysel olarak karar verdik.
+
+578
+01:08:50,323 --> 01:08:51,043
+Evet.
+
+579
+01:08:52,703 --> 01:08:57,823
+Bu da daha demin dediğim gibi, %70'ini seçiyorlar ve işte buna deneysel olarak karar verdik diyorlar.
+
+580
+01:08:59,684 --> 01:09:27,983
+Bu genel formül işte TF-ICF ve TF-ICF'i nasıl yaptıklarına dair. Temsili cümlelerin genişletilmesi konusunda da bazı kısımlar var. Kelime ve cümle benzerliklerine bakıyorlar. Yakınlık formülleri, benzerlik formülleri ve kelime ağırlıklarını kontrol ederken işte global frekans, log olasılık ve part of speech dediğimiz işte pause ve ondan sonra sınıfsız cümlelere sınıf atama.
+
+581
+01:09:27,983 --> 01:09:34,184
+Buradan bir tek ben sınıfsız cümlelere sınıf atama kısmına değineceğim.
+
+582
+01:09:34,184 --> 01:09:41,603
+Bu da şundan dolayı ilk başta bunlar sınıflandırıyorlar ama bir kısmı sınıfsız kalıyor metinlerin.
+
+583
+01:09:42,124 --> 01:09:47,303
+Bunları da daha sonra ikinci olarak işlerlerken yakınlığına bakıyorlar.
+
+584
+01:09:47,544 --> 01:09:54,443
+İşte bu sınıfsız olanların hangisine daha çok yakın olduğuna, hangisine yakınsa o sınıfa dahil ediyorlar.
+
+585
+01:09:54,443 --> 01:10:05,943
+Dediğim gibi buraları slide'da şey yaptım, kapattım. Burada sadece formüller vardı. Bir tek burada işte Metin Sınıflandırıcısı biraz daha farklıydı formül olarak.
+
+586
+01:10:05,943 --> 01:10:15,523
+Burada Kulbak-Liber-Divergence'ı artık bu adamın bir formülü var herhalde. Ben bunu tam olarak bilmiyorum.
+
+587
+01:10:15,523 --> 01:10:22,563
+Nive Bayes'e böyle bir optimizasyon yapmışlar ve bununla beraber bu sadece ufak bir değişiklik.
+
+588
+01:10:22,643 --> 01:10:27,003
+Temel olarak yine Nive Bayes gibi çalışıyor fakat başarımı birazcık daha yükseklemişler.
+
+589
+01:10:29,063 --> 01:10:30,723
+Var öyle bir metrik.
+
+590
+01:10:33,223 --> 01:10:33,703
+Yani.
+
+591
+01:10:35,184 --> 01:10:35,603
+Tamam.
+
+592
+01:10:36,903 --> 01:10:37,623
+Bu kadar.
+
+593
+01:10:39,443 --> 01:10:42,124
+Peki ben yalnız şeyi anlayamadım.
+
+594
+01:10:42,124 --> 01:10:47,764
+Şimdi bunlar başlığın senin neydi? Unsupervised'di değil mi?
+
+595
+01:10:48,284 --> 01:10:48,624
+Evet.
+
+596
+01:10:49,163 --> 01:10:58,084
+Unsupervised'da hangi yöntemi kullandılar? Ben şey anlayamadım, naive by it, supervised bir yöntem.
+
+597
+01:10:59,663 --> 01:11:08,984
+Bunlar normalde şey yapıyorlarmış, bunlardan önce şu keyword listesine vermiyorlarmış.
+
+598
+01:11:09,083 --> 01:11:12,044
+Herhalde elle işaretleme, etiketleme yapılması gerekiyormuş.
+
+599
+01:11:12,124 --> 01:11:35,323
+Bunlar sadece keyword listesini veriyorlar. Bu keywordden şu training, sentest, creation bu ortadaki kısmı yani benim anladığım kadarıyla otomatizasyon yaptıkları kısım burası. Yani unsupervised olan kısım. Çünkü dediğiniz gibi n-by-ass şey supervised bir yöntem artık hani işlenmiş veri üstünde tekrardan bir işlem yapması lazım.
+
+600
+01:11:35,323 --> 01:11:42,823
+Keyword listesi var. O Keyword listesine bakarak o dokümanlardaki geçen kelimelere göre etiket mi veriyor?
+
+601
+01:11:43,163 --> 01:11:44,844
+Kategori oluşturuyorlar.
+
+602
+01:11:44,924 --> 01:11:50,823
+Tamam etiket veriyor. Gerçekten tabii 21 sene öncenin teknolojisi diyelim.
+
+603
+01:11:51,544 --> 01:11:51,803
+Evet.
+
+604
+01:11:52,523 --> 01:11:59,463
+Okey, peki. Senin bildiğin ne var unsupervizyon tem olarak?
+
+605
+01:12:02,223 --> 01:12:05,103
+Şu an aklıma gelmedi hocam böyle sorunca.
+
+606
+01:12:05,323 --> 01:12:09,083
+Peki, K-Mins diye bir yöntem atılıyor musun?
+
+607
+01:12:09,863 --> 01:12:13,103
+Şöyle, bir dakika, şuradan anlatırım vardı.
+
+608
+01:12:13,103 --> 01:12:21,424
+O dönem anlattıklarında şey demişler mesela, K-NN, SVM,
+
+609
+01:12:23,412 --> 01:12:26,251
+Bunlar süpervaz yöntemler.
+
+610
+01:12:26,591 --> 01:12:41,531
+Evet, bunları şey yapmış, atıfta bulunmuş. Demiş ki bunlarla çalışma yapılmış, işte o yakınlık komşuluğa bakılarak yapılmış ama bizim yaptığımız kısımda yapılmamış diye böyle şey yaptık.
+
+611
+01:12:43,111 --> 01:12:48,832
+Ama bir K-MİS yöntemini bir hatırla, tamam mı? Arkadaşınıza sorusu olan var mı?
+
+612
+01:12:48,832 --> 01:12:58,011
+Ben şey bu PCA metodu da unsupervised yöntemi olarak geçiyor diye biliyorum ama doğru mu?
+
+613
+01:12:58,292 --> 01:12:59,731
+Presible Component Analist
+
+614
+01:12:59,731 --> 01:13:00,092
+Evet
+
+615
+01:13:00,092 --> 01:13:07,831
+Evet süpervised sınıf bilgisini kullanmaz ama o özellik seçme yani future extraction yöntemidir.
+
+616
+01:13:07,831 --> 01:13:15,672
+En ayırt edici özellikleri veri seti içerisinden seçmek için ama etiket bilgisini kullanmaz.
+
+617
+01:13:15,671 --> 01:13:23,391
+Eğer tam bir kümeleme model olarak bahsediyorsak işte K-Means, X-Means bunlardan biri.
+
+618
+01:13:24,171 --> 01:13:28,051
+Hocam derse gelmek isteyip gelemeyenler varmış. Allah Allah.
+
+619
+01:13:30,431 --> 01:13:32,251
+Bu da yeni mi ya? Niye?
+
+620
+01:13:32,651 --> 01:13:36,211
+[öğrenci]ın sınırı falan olabilir mi? 10 kişilik, 9 kişilik yapmış olabilir.
+
+621
+01:13:36,211 --> 01:13:42,371
+Bu dersin şey neyse o kadardır. Neyse verdim izin. Gelsinler.
+
+622
+01:13:42,371 --> 01:13:46,912
+Peki, [öğrenci], sözü sana bırakıyorum
+
+623
+01:13:46,912 --> 01:13:50,511
+Tamam, ekran paylaşıyorum
+
+624
+01:13:50,511 --> 01:13:52,852
+Evgen senin diye yüzünü hatırlayabilir miyim?
+
+625
+01:13:53,791 --> 01:13:55,151
+Tabii ki
+
+626
+01:13:55,151 --> 01:14:00,391
+Tamam, oldu, cam tarafında oturuyorsun genellikle değil mi?
+
+627
+01:14:00,391 --> 01:14:05,111
+Hayır, şey aslında, kapı tarafından ikinci sırada şey olarak
+
+628
+01:14:05,111 --> 01:14:05,992
+O zaman karıştırıyorum
+
+629
+01:14:05,992 --> 01:14:09,371
+Orada üç veya dörtte maske oluyor genelde, belki şöyle söyleyeyim
+
+630
+01:14:09,371 --> 01:14:17,891
+Maskeli, daha gözlükle tanıdım, tamam. Bir de maskesini sürekli indiren biri vardı, o kimdi?
+
+631
+01:14:18,751 --> 01:14:20,431
+Aralarda ben de indiriyorum.
+
+632
+01:14:21,051 --> 01:14:26,412
+Yok, böyle sürekli ben bakınca maskesini takam.
+
+633
+01:14:26,791 --> 01:14:27,712
+Yok, ben değilim.
+
+634
+01:14:27,712 --> 01:14:37,651
+Sen bunu açıyorsun. Ne kadar kötü, insanları artık böyle tanıyoruz. Çiftliği vatan, maskesinin rengi bu olan.
+
+635
+01:14:37,651 --> 01:14:42,191
+Tamam, Nes uzatmayalım, bu da ara gibi olsun. Evet [öğrenci] sıra sende.
+
+636
+01:14:42,971 --> 01:14:44,911
+Tamam, paylaşıyorum ekran.
+
+637
+01:14:49,171 --> 01:14:51,171
+vekutlu.
+
+638
+01:15:07,731 --> 01:15:10,031
+Şu an ekranım geldi mi?
+
+639
+01:15:12,971 --> 01:15:14,951
+Sesiniz gittin ama
+
+640
+01:15:22,739 --> 01:15:24,980
+Hocam, mikrofonunuz kapalı ama.
+
+641
+01:15:28,979 --> 01:15:31,419
+En altta şey, screen var yeşil.
+
+642
+01:15:32,479 --> 01:15:36,200
+Evet, oradan seçtim aslında ama bir dakika tekrar bir.
+
+643
+01:15:36,200 --> 01:15:37,279
+Bir daha dene.
+
+644
+01:15:43,604 --> 01:15:45,763
+Gelecek, geldi. First questions.
+
+645
+01:15:47,703 --> 01:15:49,303
+Evet, geldi sanırım.
+
+646
+01:15:51,683 --> 01:15:55,604
+Benim incelediğim makale işte bir daha...
+
+647
+01:15:57,604 --> 01:16:00,643
+2016 sanırım.
+
+648
+01:16:01,604 --> 01:16:07,024
+Bir de doküman, ola yazılır evlat. Tamam mı? Doküman.
+
+649
+01:16:08,063 --> 01:16:09,364
+Doküman, tamam.
+
+650
+01:16:09,364 --> 01:16:29,743
+Bunu ben de böyle yazmıştım. Hem de doktora tezimin içinde tez hocamdan bir azar işittim. Sen dedi doküman nasıl yazılır bilmiyorsun. Bir de Türkçe ile ilgili bir çalışma yapıyordum ben. Rezil oldum. Anlatamam. Bu yüzden çok dikkat ederim artık dokümana. Evet, sözü sana veriyorum.
+
+651
+01:16:29,743 --> 01:16:34,364
+Ben de herhalde farkında olmadan yazdım bilmiyorum. Olabilir.
+
+652
+01:16:34,363 --> 01:16:36,343
+Bu arada ilk kez yazdım ama
+
+653
+01:16:36,343 --> 01:16:42,343
+Tamam önemli değil. Ben gördüğümü söylemeliyim. Üzerimde kalmasın.
+
+654
+01:16:42,743 --> 01:16:44,163
+Tamam teşekkür ederim.
+
+655
+01:16:44,163 --> 01:17:01,223
+Makale 2016 yılında aslında ama ona rağmen 155 veya 156 atıf almış. Hani dediğiniz gibi çok güncel bir konu. O yüzden bence güzel, benim için de verimli oldu diyebilirim.
+
+656
+01:17:04,363 --> 01:17:08,463
+İlk önce ben genel kavramlardan bahsedeceğim burada.
+
+657
+01:17:08,743 --> 01:17:12,863
+Sonrasında işte birazdan metoda sonra deney sonuçlarına gideceğiz.
+
+658
+01:17:13,003 --> 01:17:14,503
+Böyle bir yol izleyeceğim.
+
+659
+01:17:15,883 --> 01:17:28,823
+İlk önce bizim işte bir dökümanı bilgisayarın anlayabilmesi için işte atomik base dediğim öncelikle kelimelerin hangi anlamda kullanıldığını anlaması gerekiyor.
+
+660
+01:17:28,824 --> 01:17:37,444
+Bu bizim WSD konusundaki, dökümanın içinde anlam belirsizliği konusundaki önemli ve ilk sorularımızdan bir tanesi.
+
+661
+01:17:37,644 --> 01:17:51,464
+Örneğin buradaki cold kelimesi işte duygu anlamında mı yoksa havanın derecesi an sıcaklık anlamına mı kullanıldı tarzında bunun makineye anlaşılmasını sağlayan problem aslında WSD dediğimiz problem.
+
+662
+01:17:53,064 --> 01:17:56,003
+LSTM nedir? Çift yönlü LSTM nedir?
+
+663
+01:17:56,003 --> 01:18:10,843
+LSTM aslında bir RNN metodu. Long short term memory içeren, yani aslında geçmişteki kelimeleri de bünyesine katıp da tahmin yapan bir yöntem, bir RNN türü.
+
+664
+01:18:11,824 --> 01:18:22,543
+Çift yönlü LSTM nedir? Çift yönlü LSTM'dir. Bu LSTM'in hem soldan sağa hem sağdan sola iki yönlü olarak da bakılması aslında dökümanın tamamı içerisinde.
+
+665
+01:18:22,544 --> 01:18:31,924
+Bu her iki yönlü işlem yaptığımız için aslında genel anlamda başarıyı arttıracağını söylüyor makale. Zaten bunun üstüne kurulmuş.
+
+666
+01:18:34,023 --> 01:18:45,583
+Burada bir örnek var görsel anlamda. İlk önce bizim tahmin edeceğimiz kelimeyi hem soldan sağ hem sağdan sola LSTM uyguladığımız metoda sokuyoruz.
+
+667
+01:18:45,583 --> 01:18:54,503
+Sonra activation layer ve output'um geliyor. Bu arada bir de softmax layer'ım var. Onu da bildirdik görsellerde göreceğiz.
+
+668
+01:18:55,923 --> 01:19:05,583
+Bir başka kavram da Glove. Glove bizim bir kelimeyi vektörize etmemizi sağlayan metotlardan bir tanesi.
+
+669
+01:19:05,583 --> 01:19:31,743
+Bu anlamsal olarak gösterim sağlıyor bize. Burada başka ne diyebilirim? Denetimsiz bir öğrenme sağlıyor ve eğitim hükümesi çok büyük ve global bir şey olduğu için aslında İngilizce için özellikle çok fazla tercih edilen bir vektörize etme yöntemi.
+
+670
+01:19:31,743 --> 01:19:38,484
+Ekran paylaşımı durdu mu? Bu arada bana bir bildirim geldi ama
+
+671
+01:19:38,484 --> 01:19:41,443
+Yok durmadı
+
+672
+01:19:41,443 --> 01:19:42,404
+Tamam
+
+673
+01:19:42,912 --> 01:19:54,811
+DropWord yazıyor. Tamam, tamam, doğru. Bir başka kavramda DropWord, sonra modele geçeceğiz. DropWord nedir? Bir kelime düzeyinde düzenleme metodu.
+
+674
+01:19:54,811 --> 01:20:12,672
+İşte WordDropOut'a benzer bir metot aslında. Farkı ne? Benim işte StopWords dediğimiz kelimeler gibi böyle çok sık kullanılan, işte cezalandırılması gereken kelimeleri alıp da cezalandıran bir düzenleme yöntemi aslında DropWord.
+
+675
+01:20:12,912 --> 01:20:23,551
+WordDropout'dan farkına biz WordDropout'da işte bu atmamız gereken kelimeleri sıfır yapıyoruz. Böylece aslında hiç yokmuş gibi işlem yapıyoruz.
+
+676
+01:20:24,432 --> 01:20:29,531
+DropWord'da ise bunları DropIt etiketiyle etiketliyoruz. Bu bizim ne işimize yarıyor?
+
+677
+01:20:29,531 --> 01:20:49,352
+Aslında tamamen silmek yerine bu stop words veya çok fazla tekrar eden veya hiç etkisi olmayan, çok az tekrar eden kelimeleri, yani cezalandırmamız gereken kelimeleri tek bir kelimeymiş gibi, drop it kelimesiymiş gibi algılıyoruz ve bunları da modele dahil ediyoruz.
+
+678
+01:20:49,351 --> 01:20:57,251
+Böylece bizim başarı oranımız biraz daha artıyor şeklinde bir yorumu var mekalenin yazarının.
+
+679
+01:20:57,251 --> 01:21:03,151
+Bunu da testlerle birlikte sonuç kısmında tekrar üzerinden geçeceğiz.
+
+680
+01:21:04,771 --> 01:21:09,731
+Peki model nasıl bir model? Çok fazla matematiğine girmeyeceğim.
+
+681
+01:21:11,071 --> 01:21:17,051
+İşte kelimenin one hat değeri ve ağırlığının çarpımını alıyoruz x'ini hesaplarken.
+
+682
+01:21:17,051 --> 01:21:22,532
+dediğimiz şey de bir bit grubu aslında, özel bir bit grubu.
+
+683
+01:21:22,632 --> 01:21:29,111
+Özelliğine bir değeri birden oluşan, geri kalan tüm değerleri de sıfırdan oluşan bir değer.
+
+684
+01:21:29,531 --> 01:21:31,931
+Her kelime için farklı bir bit grubu oluşuyor.
+
+685
+01:21:33,072 --> 01:21:37,831
+Bunun ağırlıkla çarpımı bizim X'nin tahmini için kullanılıyor.
+
+686
+01:21:41,011 --> 01:21:44,352
+Bir de arada softmax layer'ım var demiştim.
+
+687
+01:21:44,351 --> 01:22:09,011
+Burada daha detaylı bir görsel var. Buradan tekrar bir bahsedeceğim. Ben bir kelimeyi işlerken ilk önce bir embedding işleminden geçiriyorum. Sonrasında hem soldan sağa hem sağdan sola LSTM uyguluyorum. Bir directional olması için. Sonrasında bunları representation layer ile tek bir şey haline getiriyorum.
+
+688
+01:22:09,011 --> 01:22:32,911
+Yani birleştiriyorum diye diyeyim, merge ediyorum. Sonra softmax layer'ını sokup da output'umu elde ediyorum. Ve bana çıktığı veriyor. Burada da matematiksel gösterimi var bunun. Bu kısmında üzerinde çok fazla durmayacağım ama merak eden veya sorusu olan varsa daha sonra veya şu anda da geçebiliriz üzerinden.
+
+689
+01:22:32,912 --> 01:23:01,512
+Deney aşamasına geçiyorum. Deney aşamasında da Senseval 2 ve Senseval 3 veri setleri üzerinde işlem yapılmış, testler yapılmış. Bu Senseval 2'de doğru hatırlıyorsam 7000'e yakın doküman, 3'te de 11-12000 civarında dokümandan oluşan bir veri kümesi aslında. İngilizce için yine çok fazla tercih ediliyor. Ben de çalışmalarımda daha önce Senseval veri setlerini kullandım.
+
+690
+01:23:02,912 --> 01:23:08,891
+Burada ekstra olarak bir de şöyle bir işlem uygulanıyor bu makale içerisinde.
+
+691
+01:23:08,992 --> 01:23:16,152
+Bu Sensable 2 ve 3 veri setinde yer alan sayı içeren kelimeleri number etiketiyle etiketliyoruz.
+
+692
+01:23:16,152 --> 01:23:25,611
+Yani aslında bizim stop words'leri elememiz gibi drop word konusunda burada sayıları da aslında elemiş oluyoruz.
+
+693
+01:23:25,712 --> 01:23:31,292
+Number etiketi etiketleyerek tek bir kelimeymiş gibi tüm sayıları işlem yapıyoruz.
+
+694
+01:23:32,051 --> 01:23:44,972
+Bu işlemi yaptıktan sonra Senseval 2 veri setinde 50.000 küsur kelime, Senseval 3 veri setinde de 378.000 kelimeye sahip bir veri kümesi elde ediliyor.
+
+695
+01:23:48,020 --> 01:24:02,099
+ve tüm dokümana bakmak yerine sağdan soldan 70'er tane kelimeye bakarak bir Direction LSTM'de sola 70 kelime, sağa 70 kelime giderek işlem yapıyoruz.
+
+696
+01:24:02,099 --> 01:24:17,079
+Toplamda 140 kelimeye bakıyoruz öncesinde ve sonrasında yer alan. Ama zaten Sensival 2 ve 3 veri setinde çok uzun dokümanlar olmadığı için aslında birçok dokümanda tüm kelimelere bakıyoruz bu 140 limitiyle birlikte.
+
+697
+01:24:18,020 --> 01:24:23,799
+O yüzden 140 limiti bana bu makale için çok belirleyici bir limit gelmedi.
+
+698
+01:24:25,799 --> 01:24:28,579
+Embedding işlemine sokuyoruz demiştik.
+
+699
+01:24:28,720 --> 01:24:30,400
+Burada Glove kullanılıyor.
+
+700
+01:24:31,319 --> 01:24:33,079
+Glove'dan bahsetmiştim.
+
+701
+01:24:34,939 --> 01:24:41,679
+Hiperparametre kullanılan hiperparametrelerde deneme yanılma yoluyla bulunuyor.
+
+702
+01:24:41,679 --> 01:24:44,979
+İşte birçok hiperparametre deneniyor.
+
+703
+01:24:44,979 --> 01:24:50,239
+Örneğin embedding size 100 ile 200 arasındaki değerler deneniyor.
+
+704
+01:24:50,739 --> 01:24:54,219
+Heiden layer'ın boyutu da 50 ile 100 arasında deneniyor gibi gibi.
+
+705
+01:24:54,880 --> 01:25:01,880
+Tüm parametre, hiper parametreler aslında tek tek denenerek bulunuyor ve en optimum sonuç elde ediliyor.
+
+706
+01:25:03,499 --> 01:25:07,419
+Ve bu sonuçlar kullanılarak aslında tahminler yapılıyor.
+
+707
+01:25:09,020 --> 01:25:10,960
+Bu tahminlerin sonucunda ne geliyor?
+
+708
+01:25:10,960 --> 01:25:14,259
+F1 skoru paylaşmış sadece makalenin sahibi.
+
+709
+01:25:14,979 --> 01:25:40,979
+bu konuda da en son bir eleştirim olacak. Senseable 2 veri setinde işte karşılaştırdığı diğer 3 metot da işte 100JHU işte oradaki yazan okuyamadığım karışık 3 tane metotla kıyaslamış ve Senseable 2 veri setinde de 3 veri setinde de bu oluşturulan bir directional LSTM metodu modeli
+
+710
+01:25:40,979 --> 01:25:54,320
+daha başarılı veya aynı başarıya sahip bir şekilde elde edilmiş. Çok büyük farklar yok aslında ama yine de küçük farklarda da yani küçük de olsa öne geçiyor aslında.
+
+711
+01:25:55,039 --> 01:26:08,320
+Şimdi bu kullanılan DropWordGlove'ı veya işte kelime sıralamasının önemini anlamak için de işte bunlarsız aynı metodu uygulamış Senseable 2 ve 3 veri setinde.
+
+712
+01:26:08,320 --> 01:26:21,400
+DropWord'u çıkarınca veya yerine farklı bir herhangi bir metot koyunca aslında sonucu çok F1 skoru çok fazla etkilemediği sonucuna ulaşmış.
+
+713
+01:26:21,400 --> 01:26:38,159
+Yani burada DropWord yerine farklı bir alternatif kullanılabilir veya bizim zaman ve memori sıkıntımız varsa DropWord'dan vazgeçebiliriz gibi bir sonuca ulaşılmış bu küçük farktan dolayı.
+
+714
+01:26:38,320 --> 01:26:57,920
+Ama Glove ve kelime sıralaması çok büyük bir öneme sahip. Başarı oranını, F1 skoru büyük ölçüde yükselten metotlar bunlar. O yüzden kelime sıralaması ve Glove metot için çok önemli iki adım aslında.
+
+715
+01:26:57,919 --> 01:27:10,399
+Benim buradaki bir eleştirimde burada sadece F1 skoru paylaşmış, accuracy değerini veya recall değerini, prediction falan paylaşmamış.
+
+716
+01:27:10,659 --> 01:27:19,679
+Bu konuda belki işte benim kullanacağım modeli seçmem konusunda aslında bunlar da benim için etkili değerler.
+
+717
+01:27:19,679 --> 01:27:41,659
+Ben elimdeki doküman ve işlem tipine bağlı olarak hangi metodu seçeceğime, hani F1 skor tamam bunların birleşiminden oluşuyor ama yine de hangi metodu seçeceğimiz konusunda IQ, RECALL ve prediction değerleri de gayet etkili oluyor bence. Onları da paylaşsaydı çok daha iyi olabilirdi diye düşünüyorum.
+
+718
+01:27:44,916 --> 01:27:58,916
+sonuçlar ve kendisi için veya bu makaleyi okuyanlar için birkaç görev belirtmiş. Burada kendi oluşturduğu modeli dil bağımsız bir model olarak belirtiyor.
+
+719
+01:27:58,916 --> 01:28:15,756
+Kaynak yetersizliği olan diller için, train için, çok fazla kaynağı bulunmayan diller için mükemmel bir metot olarak, mükemmel değil, çok iyi bir metot olarak sunuyor aslında kendi oluşturulan bir Direction LSTM metodunu.
+
+720
+01:28:17,075 --> 01:28:26,875
+Ama dilden bağımsızlığı konusunda ampiri kanıt sağlamak için farklı dillerde de çalışma yapılması gerektiğini görev olarak belirtiyor.
+
+721
+01:28:28,916 --> 01:28:48,055
+Çünkü tamam teorik olarak dille bir bağ olmayan işte önceki sonraki kelimelere bakıp da bir tahminde bulunan bir metot ama hani sadece İngilizce için test etmiş makalenin sahibi bu yüzden diğer diller için de test edilmesi gerekiyor yönünde bir adım bırakmış.
+
+722
+01:28:48,055 --> 01:28:55,036
+benim 2 ay kadar önce yayınlanmış gördüğüm bir makale Urduca için bu testi yapıyor.
+
+723
+01:28:55,735 --> 01:29:05,755
+Ve F1 skor değerini işte 66-73 gibi yüksek bir rakam değil, %50'nin altında 49.2 idi doğru hatırlıyorsam.
+
+724
+01:29:05,755 --> 01:29:11,956
+F1 skoru %49.2 gibi bir sonuç buluyor Urduca dili için.
+
+725
+01:29:12,155 --> 01:29:17,975
+Yani aslında çok da dil bağımsız değilmiş diyebiliyoruz bu metot için.
+
+726
+01:29:18,055 --> 01:29:28,035
+Ama dün akşama araştırırken şeyi de fark ettim. Urduca konusunda yapılan diğer modeller de normal başarının altında sonuçlar veriyor.
+
+727
+01:29:28,035 --> 01:29:38,576
+Yani farklı bir modelde %60 elde ediyorsa Murduca'da %50'lere, %52'lere düşebiliyor bu. Urduca özelinde de bir şey olabilir bu metod sonucunda.
+
+728
+01:29:38,636 --> 01:29:46,835
+Ama farklı bir dilde yapılmış bir çalışmaya da henüz denk gelemedim atıflara baktığımda. 155-156 atıfa baktım.
+
+729
+01:29:46,835 --> 01:29:53,515
+farklı bir dil için çalışmaya denk gelemedim. Bu konuda bir eksiği var. Bir de böyle bir eleştirim olabilir makale için.
+
+730
+01:29:55,675 --> 01:29:58,975
+Benim sunumum bu kadardı. Sorunuz varsa?
+
+731
+01:30:00,815 --> 01:30:08,255
+Öncelikle bir şey sormak istiyorum. Bu Samseval'ın veri setlerini ben de çalışmalarında kullandım dedin ya.
+
+732
+01:30:08,555 --> 01:30:08,815
+Evet.
+
+733
+01:30:08,815 --> 01:30:10,955
+Ne çalışmalar yapmıştın hocam?
+
+734
+01:30:10,955 --> 01:30:17,955
+Ben lisanslı bitirme tezi olarak yine WST üzerine bir çalışma yapmıştım.
+
+735
+01:30:17,955 --> 01:30:19,595
+Bir şey daha söyle.
+
+736
+01:30:20,555 --> 01:30:22,935
+WST üzerine.
+
+737
+01:30:24,155 --> 01:30:33,955
+Evet, temel şeyimiz de kernel PCA metodunu kullanmaktı ama 2004 yılındaydı doğru hatırlıyorsam.
+
+738
+01:30:34,775 --> 01:30:36,935
+Bir makale yayınlanmış.
+
+739
+01:30:37,035 --> 01:30:38,895
+SVM için bir kernel sunuyordu.
+
+740
+01:30:38,895 --> 01:30:42,455
+Biz dedik ki bunu biz PCI için niye uygulayamayız?
+
+741
+01:30:42,636 --> 01:30:44,356
+Hani acaba başarı oranı mı düşük?
+
+742
+01:30:44,435 --> 01:30:45,595
+Kimse niye uygulamadı?
+
+743
+01:30:46,315 --> 01:30:57,555
+Sonra PCI için uygulayınca aslında SVM için, yani PCI artık K&N kullandığımızda K&N çok kötü bir, SVM karşısında kötü bir classification metodu olmasına rağmen
+
+744
+01:30:57,555 --> 01:31:01,996
+SVM'den daha iyi sonuçlar elde etmiştik.
+
+745
+01:31:02,535 --> 01:31:03,996
+Öyle bir çalışma yapmıştık.
+
+746
+01:31:04,495 --> 01:31:06,475
+Senin bu dersteki proje konum ne?
+
+747
+01:31:06,475 --> 01:31:09,695
+Bu dersteki derken?
+
+748
+01:31:10,436 --> 01:31:12,235
+Finalde teslim edeceksiniz ya.
+
+749
+01:31:14,875 --> 01:31:19,015
+Projek konusunu hatırlayamıyorum, bir kontrol edeyim.
+
+750
+01:31:19,535 --> 01:31:21,055
+Yani daha başlamadın mı?
+
+751
+01:31:22,755 --> 01:31:27,235
+Başlayamadım hocam, işte iş yoğunluğu diğer şeylerden ama hani...
+
+752
+01:31:27,235 --> 01:31:28,195
+Nasıl diyebilecek arkadaşlar?
+
+753
+01:31:29,779 --> 01:31:35,019
+yetiştirelim. Bugünden sonra tamamen boşum ve bu projeye odaklanacağım.
+
+754
+01:31:35,220 --> 01:31:42,379
+Tamam. Neyse, projeler yetişmezse projeleriniz bana bilgi verirsiniz, bütünleme sınavına girersiniz. Tamam mı?
+
+755
+01:31:42,979 --> 01:31:47,259
+Tamam ama öyle bir şey en azından benim için olmayacaktır.
+
+756
+01:31:48,599 --> 01:31:49,679
+Bu kadar eminiz.
+
+757
+01:31:51,679 --> 01:31:57,579
+Yani çok şey, sonuçta zor bir proje değil.
+
+758
+01:31:57,579 --> 01:32:26,679
+Ama daha projeni hatırlamıyorsun. Zor ya da kolay olduğunu nereden biliyorsun? Bak bakayım neymiş projen? Ya arkadaşlar sen bak [öğrenci] proje konuna. Ben şunu söyleyeyim. Hayranım. Sizin öz güveninize çok hayranım. Ya da herhalde yeni nesil olarak mı? Yani aynı bir sürü şeyi aynı anda yapabiliyorsunuz. Ben yapamıyordum yani. Öğrencilik günlerime gidiyorum.
+
+759
+01:32:27,579 --> 01:32:31,719
+Belki zorlansam yapabilir miydim bilmiyorum
+
+760
+01:32:31,719 --> 01:32:39,619
+Hocam ben lisansıda dönemlik 9 ders alıyordum ve tam zamanla çalışıyordum ve yetişiyordu da
+
+761
+01:32:39,619 --> 01:32:41,779
+Vur tatlaya vur
+
+762
+01:32:41,779 --> 01:32:45,479
+Vur bak nazarım değecek neymiş konu
+
+763
+01:32:45,479 --> 01:32:47,699
+Bakıyorum bir saniye
+
+764
+01:32:58,100 --> 01:32:59,979
+Projemiz Karadelik
+
+765
+01:33:04,627 --> 01:33:07,747
+nereye yazmıştınız hatırlasam ben bakacağım ama
+
+766
+01:33:07,747 --> 01:33:11,867
+ben açtım bakıyorum içerik menzelliklerin çıkarılması
+
+767
+01:33:11,867 --> 01:33:20,847
+ne yapacaksın ne düşündün yani aynı içeriğe sahip dokümanları mı bulacaktın
+
+768
+01:33:20,847 --> 01:33:33,127
+şey hani bir veri seti bulacağım buna yönelik ve bir hani içindeki dokümanların birbirine ne kadar benzediği konusunda işte haberler olabilir
+
+769
+01:33:33,127 --> 01:33:43,528
+Yani mesela atıyorum bir X haberi var. Filancayı öldürdü. Bu haber bir sürü kaynakta var.
+
+770
+01:33:43,528 --> 01:33:46,828
+Ben bunların benzerliklerini kıyaslayacağım.
+
+771
+01:33:47,488 --> 01:33:53,067
+Tamam peki. [öğrenci]'a sorusu olan var mı?
+
+772
+01:33:53,067 --> 01:34:02,567
+Yoksa bir arkadaşımız haftaya kaldığı için bugün burada bitiriyoruz dersimizi.
+
+773
+01:34:03,967 --> 01:34:05,567
+Haftaya görüşmek üzere diyorum.
+
+774
+01:34:07,267 --> 01:34:08,488
+Tamam görüşmek üzere.
+
+775
+01:34:08,507 --> 01:34:09,007
+Hoşçakalın.
+
+776
+01:34:10,827 --> 01:34:11,668
+İyi günler hocam.
+
+777
+01:34:12,287 --> 01:34:14,568
+Hoşçakalın.

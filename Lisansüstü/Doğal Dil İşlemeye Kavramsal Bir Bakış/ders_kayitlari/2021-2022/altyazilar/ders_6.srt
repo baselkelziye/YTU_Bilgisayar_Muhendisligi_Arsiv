@@ -1,0 +1,2419 @@
+1
+00:00:28,210 --> 00:00:29,591
+Günaydın arkadaşlar.
+
+2
+00:00:32,290 --> 00:00:33,470
+Günaydın [öğrenci].
+
+3
+00:00:33,831 --> 00:00:35,250
+Panik yaşadım.
+
+4
+00:00:36,472 --> 00:00:39,951
+Bağlanamıyorsun diyor. Serverde bilmem ne hatası var diyor.
+
+5
+00:00:40,250 --> 00:00:43,290
+Bir de mail attım size sizin de başınıza geliyor mu diye.
+
+6
+00:00:44,331 --> 00:00:45,212
+Sonra girdim.
+
+7
+00:00:47,490 --> 00:00:50,151
+Evet. Tekrardan günaydın.
+
+8
+00:00:51,110 --> 00:00:52,430
+İstemize bir bakayım.
+
+9
+00:00:52,430 --> 00:00:54,430
+İlk sırada...
+
+10
+00:00:54,430 --> 00:00:56,670
+Bu listeler bunlar değil.
+
+11
+00:00:56,930 --> 00:00:57,651
+Bir saniye.
+
+12
+00:00:58,212 --> 00:01:17,031
+Bir yerde açtım. [öğrenci] galiba sen buradasın. Merhabalar buradayım. Tamam merhaba. Hemen ekranını paylaş. Yüzünü bir kısa süreli göster.
+
+13
+00:01:22,578 --> 00:01:49,438
+O zaman önce bir kamerayı açayım. Nerelere var. Çok böyle sürekli hatırladım. Efendim? Filik olarak hatırladım seni. Sürekli gelmiyordun ders edin mi? Yok, geliyorum hocam. Sürekli geliyorum. Ne tarafta oturuyorsun? Orta, arka gibi. Arka gölgede kalıyorsun demek ki. Olabilir. Tamam, peki. Hadi bakalım.
+
+14
+00:01:52,578 --> 00:01:53,638
+başlatıyorum.
+
+15
+00:02:10,419 --> 00:02:11,780
+geldi sanırım ekran.
+
+16
+00:02:11,799 --> 00:02:12,639
+geldi, görüyoruz.
+
+17
+00:02:13,579 --> 00:02:17,579
+tekrardan merhabalar, ben [öğrenci], doktora programındayım.
+
+18
+00:02:18,840 --> 00:02:23,998
+bugünkü konumuz aslında makalenin ismi Twitter, Opinion, Analiz, Topic 5G Teknoloji.
+
+19
+00:02:25,098 --> 00:02:36,019
+aslında genel olarak duygu analizi, özetlemek gerekirse, yani makalede yapılan çalışmaları, özetlemek gerekirse, 3 adımda işlem yapılıyor.
+
+20
+00:02:36,019 --> 00:02:40,758
+duygu belirleme, sınıflandırma modeli ve konu modelleme.
+
+21
+00:02:41,538 --> 00:02:42,878
+Üç tane task var aslında.
+
+22
+00:02:45,218 --> 00:02:52,399
+Kısaca 5G teknoloji zaten hepimizin belki de yakından takip ettiği.
+
+23
+00:02:52,938 --> 00:02:54,739
+Avantajları, dezavantajları var.
+
+24
+00:02:55,479 --> 00:02:59,718
+İndirme, yükleme gibi hızda çok avantajlı.
+
+25
+00:02:59,718 --> 00:03:11,639
+pratikteki zorluklar işte güvenlik, gizlilik gibi veyahut da hava şartları işte bazı istasyonların gibi zaman kayması gibi bazı işte gecikmeler gibi bazı dezavantajları var.
+
+26
+00:03:12,599 --> 00:03:24,460
+Bir de eski cihazların desteklenmemesi konusu var. Şu an günümüzde baktığımızda bazı cihazlar yeni çıkan cihazlar özellikle üst sekmez cihazlarda bu teknoloji destekleniyor.
+
+27
+00:03:24,460 --> 00:03:27,019
+pratikte kullanımı var mı şu an?
+
+28
+00:03:28,500 --> 00:03:41,400
+Türk Telekom'un geçen sene, Ekim'i ayında 5G destekli gözlüklerle gerçek bir ameliyat yaptığı bir haberi vardı, onu okumuştum.
+
+29
+00:03:43,099 --> 00:03:52,618
+Şu an aslında test aşamasında bazı zorlukları var, dediğim gibi gecikmelerde yaşanan problemler var, özellikle zaman kayması gibi bazı sorunlar var, onlar çözülüyor.
+
+30
+00:03:54,460 --> 00:03:58,180
+Literatürdeki, yani makaledeki literatürde neler yapılmış?
+
+31
+00:03:58,680 --> 00:04:06,739
+Daha çok Twitter ve diğer sosyal medya uygulamalarından yorumlar veyahut da tweetlerin alınarak duygu analizi gibi konular işlenmiş.
+
+32
+00:04:06,739 --> 00:04:23,740
+Twitter ve o hesaplarının tespiti, sonrasında seçimler, bazı şirketler, yani pizza gibi, veyahut da başkanlık seçimleri gibi diğer ürünler hakkında insanların ne düşündüğü, yorumları nelerdir, bu bilgilerden.
+
+33
+00:04:24,459 --> 00:04:27,298
+bu verilerden bilgiler çıkarmaya çalışılmış.
+
+34
+00:04:28,358 --> 00:04:30,959
+Yani burada farklı yöntemler de kullanılmış aslında.
+
+35
+00:04:30,959 --> 00:04:36,079
+SVM gibi işte Random Force gibi farklı algoritmalar da kullanılmış.
+
+36
+00:04:37,199 --> 00:04:43,199
+Yani derin öğrenme ağları çok fazla görmedim kullanıldığını makaledeki.
+
+37
+00:04:44,098 --> 00:04:51,738
+Ama genel olarak insanların ürünler veyahut da farklı konular hakkında neler düşündüklerini tespiti yapılmaya çalışılmış.
+
+38
+00:04:51,738 --> 00:04:56,939
+Makaledeki yöntem 3 adımdan oluşuyor.
+
+39
+00:04:57,959 --> 00:05:03,538
+Birinci adımda Twitter veri setinin hazırlanması.
+
+40
+00:05:03,538 --> 00:05:17,658
+İkinci adımda hazırlanan bu veri setinin Google Cloud AutoML kullanılarak hem sınıflandırma, sınıflandırma sonrası tekrar kendi modellerini kullanarak kendi modellerini oluşturduktan sonra
+
+41
+00:05:17,658 --> 00:05:23,838
+Natural Language API'nin çıktısında sınıflandırma yapılıyor.
+
+42
+00:05:24,158 --> 00:05:35,978
+Sınıflandırma sonucu AutoML Natural Language'e kendi modellerini ve sınıflandırma sonucu etiketli datayı verip yeniden bir eğitim ve test sürecine giriliyor.
+
+43
+00:05:35,978 --> 00:05:39,858
+Daha sonra tekrar yeniden bir sınıflandırma yapılmış oluyor.
+
+44
+00:05:39,959 --> 00:05:41,319
+Aslında iki sınıflandırma var.
+
+45
+00:05:41,319 --> 00:05:58,278
+Birincisi Natural Language API'nin doğrudan kullanarak bir sınıflandırma var. Sınıflandırma sonucu veriler etiketlenmiş oluyor. Kendi modelleriyle etiketlenmiş veriyi tekrar eğitip tekrar bir sınıflandırma yapılmış oluyor.
+
+46
+00:05:58,279 --> 00:06:06,199
+üçüncü adımda ise aynı veri setini kullanarak bu Twitter'lardan
+
+47
+00:06:06,802 --> 00:06:22,302
+konu belirlemeye çalışılmış. Yani konu aslında başlığımız 5G ama 5G ile birlikte hangi konular, alt konular kullanılmış, hangi insanlar hangi konulara değinmiş, bunları belirlemeye çalışmışlar.
+
+48
+00:06:23,043 --> 00:06:24,362
+5G hakkında mı?
+
+49
+00:06:24,923 --> 00:06:25,362
+Efendim hocam?
+
+50
+00:06:25,963 --> 00:06:27,702
+5G hakkında alt başlık.
+
+51
+00:06:27,702 --> 00:06:28,862
+Evet, evet.
+
+52
+00:06:28,862 --> 00:06:38,182
+Yani hastalık olabilir, teknoloji, IoT, o alt başlıklar hangilerine değinilmiş diye
+
+53
+00:06:38,182 --> 00:06:53,403
+Aslında yöntemden biraz bahsettim. Yöntemde RStudio kullanarak, R dilinde Twitter Search API ile birlikte kullanarak Twitterlar çekilmiş. Veri seti böyle hazırlanmış ilk olarak.
+
+54
+00:06:53,403 --> 00:07:02,802
+Sınıflandırma dediğim gibi Google Cloud'un Natural Language API ile o temelli Natural Language tool'ları kullanılmış.
+
+55
+00:07:04,002 --> 00:07:10,343
+Kendileri bir model hazırlamış sınıflandırma için ancak model hakkında bir bilgi verilmemiş.
+
+56
+00:07:11,463 --> 00:07:20,583
+Üçüncü adımda da zaten Latent Directing Algorithması kullanarak konu modelleme yapılmış.
+
+57
+00:07:20,583 --> 00:07:36,283
+Normalde LDA unsupervised bir yöntem. Çıktısı aslında şey, kategori aslında, kategorisi sınıf bilgisi, etiket bilgisi olmadığı için
+
+58
+00:07:36,283 --> 00:07:43,822
+manuel etiketleme yapılmış.
+
+59
+00:07:43,822 --> 00:07:52,423
+Aynı zamanda tekrar şuradaki AutoML Language, Natural Language ile birlikte tekrar bir sınıflandırma yapılmış.
+
+60
+00:07:52,502 --> 00:07:57,083
+Hem manuel hem de tekrar Google Cloud'u kullanarak sınıflandırma yapılmış.
+
+61
+00:08:00,596 --> 00:08:15,535
+Veri seti nasıl hazırlanmış? Artifit kütüphanesi kullanılmış. Burada artifit kütüphanesinde bazı değişiklikler yapmışlar. Aslında parametre değişiklikleriyle son 8 gündeki değil de daha geniş bir tarih aralığında veri seti alınmış.
+
+62
+00:08:16,834 --> 00:08:27,295
+Geçerli tweetlerin yani alınan 5G etiketine sahip geçerli tweetleri belirlemek için bazı filtreler kullanılmışlar.
+
+63
+00:08:27,295 --> 00:08:32,695
+yani geçerli tweetler alabilmek için bazı şartlar koymuşlar.
+
+64
+00:08:32,815 --> 00:08:42,534
+İşte bunlardan bazıları işte profil fotoğrafının yani tweet zaten kullanıcının profil ve arka plan fotoğrafının olmasını dikkat etmişler.
+
+65
+00:08:43,355 --> 00:08:51,115
+Retweet olmaması, işte en az 80 karakterden olması, sadece İngilizce tweetler gibi bazı ön koşullardan geçirmişler.
+
+66
+00:08:51,115 --> 00:08:55,375
+Toplamda 46.559 tweet alınmış R-Tweet kütüphanesiyle.
+
+67
+00:08:55,375 --> 00:09:04,676
+ancak bu kurallar uygulandığında, bu şartlardan geçirildiğinde geçerli 8102 tweet elde edilmiş. Veri setimizde aslında 8102 tweet var.
+
+68
+00:09:08,178 --> 00:09:30,379
+Duygu analizi için dediğim gibi Google Cloud'ı kullanmışlar. İki tane farklı aslında tool'u var. Natural Language API var olan hazırda modeller var. Bunlara siz sadece şeyinizi veriyorsunuz, datanızı veriyorsunuz. O istediğiniz duygu analizi yapmak istiyorsanız onun sonucunu veriyor. Sınıflandırma yapmak istiyorsanız sınıflandırma sonucunu vermiş oluyor.
+
+69
+00:09:30,379 --> 00:09:36,139
+AutoML Natural Language'de aslında kendi modelinizi oluşturuyorsunuz.
+
+70
+00:09:36,239 --> 00:09:42,879
+Kendi modelinizi Google Cloud'daki kendi datalarıyla eğitebilirsiniz.
+
+71
+00:09:43,039 --> 00:09:47,698
+Veyahut da hem modelinizi hem de datanızı verip train test işlemini yapmış olabilirsiniz.
+
+72
+00:09:50,119 --> 00:09:52,519
+Burada ikisini de kullanmışlar aslında.
+
+73
+00:09:52,519 --> 00:10:08,139
+Natural Language App'i verdiğinizde bu tweet datasını verdiğinizde score ve magnitude 2 değer dönmüş oluyor.
+
+74
+00:10:08,139 --> 00:10:13,899
+Score, 1 ve artı 1 aralığındaki değerler.
+
+75
+00:10:14,899 --> 00:10:21,340
+Eksi 1 çok negatif, sıfıra nötr demişler, artı 1'e ise çok pozitif demişler.
+
+76
+00:10:25,778 --> 00:10:36,859
+magnitude'da aslında aralığı vermemişler. Büyük ihtimal 0-1 aralığında bir değerdir ama duygunun yoğunluğu ya da büyüklüğü diyebiliriz.
+
+77
+00:10:37,859 --> 00:10:51,219
+Dediğim gibi 3 sınıf oluşturmuşlar. Eksi 1, 0, artı 1 diye sınıf bilgileri böyle. Aslında anlam olarak negatif, nötr, pozitif. Ama sınıf etiketi olarak eksi 1, 0, 1 kullanmışlar.
+
+78
+00:10:51,219 --> 00:11:00,619
+Daha sonra kendileri bir model oluşturup, o time and natural language'e verip onun eğitimini sağlamışlar.
+
+79
+00:11:01,278 --> 00:11:04,678
+Modeli böyle eğitmişler, kendi datalarıyla eğitmişler.
+
+80
+00:11:04,759 --> 00:11:11,499
+%80 train, %10 validation ve %10 test diye datayı bu bölümle ayrıp kendi modellerini eğitmişler.
+
+81
+00:11:13,538 --> 00:11:21,158
+Latentary allocation algorithm çok kısa bahsetmek gerekirse, bu zaten görsel popüler bir görsel.
+
+82
+00:11:21,219 --> 00:11:41,639
+Bir doküman içinde aslında gizli konular olabilir diyor. Yani bir doküman gizli konulardan oluşmuştur. Konularda aslında kelimelerden oluşur diye böyle olasılıkların olasılığı gibi bir durum var.
+
+83
+00:11:41,639 --> 00:12:09,599
+Yani bir dokümanda birden fazla konu olabilir. O konuların her birinin bir olasılığı olabilir. Sıfır bir aralığında toplamda bir olmak şeklinde. Ve her bir konuda birden fazla kelimeden oluşabilir. O yüzden topik bir olasılık. Topikin içindeki kelimelerde bir olasılık aslında. O yüzden olasılıkların olasılıkları gibi değerlendiriliyor.
+
+84
+00:12:13,748 --> 00:12:31,947
+konu modelleme diyebiliriz aslında ama burada konu belirleme diye daha doğru olur herhalde. Normalde topic modeling diye geçiyor ama burada konu belirleme diye ilk başta tasklardan öyle isimlendirmişlerdi.
+
+85
+00:12:31,947 --> 00:12:39,407
+Burada en çok bahsedilen bu toplam 8102 tweetten bahsedilen konuları bulmaya çalışıyorlar.
+
+86
+00:12:40,126 --> 00:12:54,366
+30 konu belirlenmiş. Bu 30 konuyu nasıl elde ettikleri, neye göre belirledikleri normalde belli değil.
+
+87
+00:12:54,366 --> 00:13:07,788
+Ben Leda'yla biraz uğraştığımda bazıları şey 1-2-3-4 diye sürekli deneyerek belli bir sayıyı işte elde ederek en optimum değeri konu sayısına böyle bulunmuştu.
+
+88
+00:13:08,767 --> 00:13:12,947
+Araya gireyim. Şimdi adını unuttum ama bir tane metut var.
+
+89
+00:13:13,506 --> 00:13:16,187
+Evet hocam ben de onu düşünmeye çalıştım da o yüzden.
+
+90
+00:13:16,187 --> 00:13:29,107
+Şu an aklıma gelmedi. Onu kullanarak tahmini bir konunun ne olabileceğini belirliyorlar. Biraz onun yukarısı aşağısı diye oynuyorlar. O şimdi aklıma gelmedi. Gelirse çöpür.
+
+91
+00:13:29,107 --> 00:13:32,268
+Hocam Perlex gibi bir şey vardı.
+
+92
+00:13:33,148 --> 00:13:37,307
+Evet o vardı ama onu da kullanmıyorlar.
+
+93
+00:13:37,687 --> 00:13:42,768
+Yani kullanan da var ama şimdi E ile ya da yine P ile başlayan bir şeydi.
+
+94
+00:13:42,768 --> 00:13:46,886
+Benim normalde proje konum Leda'ydı.
+
+95
+00:13:46,986 --> 00:13:50,206
+Onunla sunumunu birkaç hafta önce şey yaptım, projeyi tamamladım.
+
+96
+00:13:50,886 --> 00:13:53,148
+O yüzden tam hatırlayamadım kelimeyi.
+
+97
+00:13:53,288 --> 00:13:55,748
+Bu arada arkadaşlar araya giriyorum.
+
+98
+00:13:55,748 --> 00:14:20,107
+Şimdi oldukça kalabalığız sınıfta. Hepsine ben final gününde projeye bakmakta belki yetiştiremeyebilirim. Sizin o gün başka bir sınavınız falan olabilir. Projesini önceden bitirenler bana bilgi verirse bir akşam saati ya da arada bir zamanda da bakabilirim. Tamam mı? Neyse ben bunu mail yazacağım. Sen devam et.
+
+99
+00:14:20,107 --> 00:14:20,548
+Tamam hocam.
+
+100
+00:14:20,547 --> 00:14:24,047
+Yine öyle bir skor değere hesaplanıyor.
+
+101
+00:14:24,827 --> 00:14:32,866
+Şeydeki gibi SVM'de de sanırım bu parametrelerin optimum elde etmek için bir şey vardı.
+
+102
+00:14:33,307 --> 00:14:40,866
+Sürekli aynı veri seti üstünde tekrar test edip, tren edip, test edip sonuçlara göre optimum bir değer elde ediliyordu.
+
+103
+00:14:40,866 --> 00:14:42,567
+Galiba arbi parametreler için.
+
+104
+00:14:44,086 --> 00:14:48,986
+Burada da öyle konuyu belirlemişler ama neye göre belirledikleri belli değil.
+
+105
+00:14:50,548 --> 00:14:57,128
+Ayrıca TF-IDF ile tweetler, kelimeler ağırlıklandırılmış.
+
+106
+00:14:57,288 --> 00:15:03,707
+Ön işlemeden geçirilmiş bir tweet de minimum aslında bir kelime 5'ten fazla geçmiş olması lazım.
+
+107
+00:15:04,187 --> 00:15:10,807
+5'ten az olan kelimeleri atıyorlar toplam tweet'teki aslında korpustaki bütün kelime sayısına.
+
+108
+00:15:10,807 --> 00:15:13,488
+Bir kelime 5'ten az geçiyorsa onu atmışlar.
+
+109
+00:15:13,567 --> 00:15:18,727
+Stop words'ları çıkarmışlar ve en çok geçen kelimelerin %5'ini atmışlar.
+
+110
+00:15:18,726 --> 00:15:28,726
+Büyük ihtimalle bunlar anlamsız kelimeler olarak düşünüp sık kullanan geçersiz bir anlam ifade etmeyen kelimeler olarak düşünüp yüzde beşini de çıkarmışlar.
+
+111
+00:15:31,248 --> 00:15:32,027
+Dediğim gibi.
+
+112
+00:15:32,027 --> 00:15:34,967
+Az daha da anlatıyor musun? Sürekli buraya geçiyoruz.
+
+113
+00:15:35,527 --> 00:15:45,047
+Tamam. Sonuçlara geldim aslında. Sonuçlar aslında. Sonuçlarda Google Cloud'ı kullanarak bir sınıflandırma yapılmıştı.
+
+114
+00:15:45,047 --> 00:15:51,907
+o sınıflandırmadan sonra kendileri bir model oluşturup veri setini tekrar eğitip tekrar teste sokmuşlardı.
+
+115
+00:15:51,986 --> 00:15:53,047
+Bu aslında onun sonucu.
+
+116
+00:15:53,866 --> 00:15:57,547
+Sınıflandırma sonrası tekrar bir sınıftan, kendi modelleri sınıflanman sonucu.
+
+117
+00:15:58,466 --> 00:16:01,047
+Burada pozitif, nötral ve negatif...
+
+118
+00:16:01,620 --> 00:16:28,938
+son tweet sayıları aslında veri setindeki bir homojen olmadığı için sonuçlarda biraz farklı çıkmış. Nötr olan değerler %54 ile prez için rekol değerleri biraz çok düşük çıkmış. Büyük ihtimal bu veri setinin heterojen olmasından kaynaklanıyor. Yani bu sayılar pozitif değerli sayılar tweetler 5200 nötr değerler, nötr tweetler 900 çok büyük bir fark var. O yüzden düşük çıkmış olabilir.
+
+119
+00:16:28,938 --> 00:16:35,538
+Bunlar biraz da eşit dağılımlı olsaydı buradaki precision recall değerleri biraz daha anlam ifade edecekti.
+
+120
+00:16:35,659 --> 00:16:36,859
+Buradan neyi çıkarmış oluyoruz?
+
+121
+00:16:36,899 --> 00:16:46,719
+Aslında precision değerine baktığımız zaman pozitifteki, pozitif sınıfındaki pozitif olarak işaret ettiklerimizin %84.3'ü aslında gerçekte pozitif.
+
+122
+00:16:47,739 --> 00:16:57,359
+Recall değerinde de gerçekte pozitif olanların %94.7'si pozitif demiş.
+
+123
+00:16:57,359 --> 00:17:27,339
+%6'lık bir kısmına aslında pozitif dememişiz. Orada bir kaçırmışız. Sonuçlar böyle. Sınıflandırma sonuçları. Konularda da en fazla ilk üç konuyu LDA sonucunda vermişler. Health, Disease, Networking ve Technology Innovation. Üç konuyu vermişler burada. Aslında bunun gibi otuz konu var aslında. Health ve Disease aslında bir konu.
+
+124
+00:17:27,358 --> 00:17:38,480
+Altta kredi, health, effects dediği diğer kelimeler de aslında bu konuya bağlı konuyu ifade eden, anlamlandıran kelimeler.
+
+125
+00:17:38,480 --> 00:17:40,959
+Bu bu şekilde aslında açıkçası.
+
+126
+00:17:45,618 --> 00:18:01,338
+LDA sonucunda sınıflandırmayı, manuel sınıflandırma, sol sütündeki manuel sınıflandırma, sağ sütündeki de LDA sonucunda çıkan bu şuradaki kelimeleri tekrar bir sınıflandırmaya sokmuşlar Google Cloud ile.
+
+127
+00:18:03,318 --> 00:18:13,299
+Sağ taraftakileri de Google Cloud'ın sınıflandırma sonucu. Mesela fon operatör demiş, internet, telekom bu aslında Google Cloud'taki eşleştirmelerini bulmuşlar.
+
+128
+00:18:13,299 --> 00:18:35,299
+Ben baktım Google Cloud'da sanırım 100 küsur sınıf var. O yüzden burada sol taraftaki manuel sınıflandırma etiketlenme yaptığı için sağ tarafta Google Cloud'da karşılık gelmeyen sınıflara no categorized found diye işaretlenmiş. Yani birebir karşılığı yok aslında.
+
+129
+00:18:38,804 --> 00:18:49,843
+tweetlerdeki 5G etiketine sahip tweetlerdeki aldığımız veri setindeki en çok kullanılan diğer hashtagler.
+
+130
+00:18:51,323 --> 00:18:55,123
+Burada en fazla IoT hashtaglenmiş teknoloji.
+
+131
+00:18:56,243 --> 00:18:58,663
+Bu sırada iniyor aşağı.
+
+132
+00:18:58,663 --> 00:19:10,563
+Sonuç olarak da veri setimiz homojen olmadı. Bu yüzden sonuçlar çok doğru olmayabilir gibi bir yorum yapmışlar.
+
+133
+00:19:10,962 --> 00:19:20,442
+Alınan tüm veri setindeki pozitiflerin sayısı %65'lik bir kısım, %25'i nekatli, %11'i aslında nötr olarak etiketlenmiş.
+
+134
+00:19:20,542 --> 00:19:23,242
+Veri seti çok homojen değil.
+
+135
+00:19:23,242 --> 00:19:27,923
+Sonuç olarak biz neyi halde etmişler?
+
+136
+00:19:27,923 --> 00:19:47,583
+Aslında 5G hakkındaki önemli konuların tespitini, yani 5G ve yanındaki diğer alt başlıkları neler olabilir diye ilgi çeken bir kısım işte radyasyon sonucu insanların kanser hastalığına yakınılmasının riski veyahut da insanlar kanser olacağından korkuyor gibi bir sonuç çıkarmışlar 5G ile birlikte.
+
+137
+00:19:47,583 --> 00:20:00,363
+ve 5G ile birlikte aslında şuradaki hashtaglere bakarak hangi konuların 5G ile birlikte geleceği ya da hangi konuların da ilişkili olduğu çıkarılmış.
+
+138
+00:20:00,363 --> 00:20:08,563
+Aslında bu sınıflandırma veyahut da şeyle alakalı değil aslında, klasit linkle alakalı değil.
+
+139
+00:20:08,722 --> 00:20:12,262
+Sadece bu aslında veri setindeki tweetlerdeki hashtaglerin sayısı.
+
+140
+00:20:12,804 --> 00:20:15,323
+Bu sonuçlar büyük ihtimal şeyle çıkarılmıştır.
+
+141
+00:20:15,323 --> 00:20:24,663
+normal programlamayla çıkarmıştır diye düşünüyorum. Bu kadar aslında benim anlatacaklarım varsa sorunuz.
+
+142
+00:20:24,663 --> 00:20:41,923
+Ben bir iki şey sorunluk istiyorum. Ya ben anlayamadım ya da arada kaynadı. Şimdi slide'ın ilk başlarında dedin ki natural language API diye bir API var. Onu kullanarak sentiment analizi, işte varlık ismi tanıma falan bunları bulabiliyorlar dedi.
+
+143
+00:20:41,923 --> 00:20:51,063
+sonra da bunlar makalenin içerisinde aslında bu işi nasıl yaptıklarını anlatmıyorlar modeli dedi.
+
+144
+00:20:51,063 --> 00:20:52,823
+Evet model anlatmışlar.
+
+145
+00:20:52,843 --> 00:21:03,222
+Şimdi yani bunlar bu standart natural language'in apisini mi kullandılar sentiment analizinde? Belki o yüzden modellerini anlatmadılar.
+
+146
+00:21:03,942 --> 00:21:11,222
+Hocam şöyle şimdi buradaki aslında grafiklerine baktığımız zaman veri setini alıyorlar, sentiment analize sokuyorlar.
+
+147
+00:21:11,222 --> 00:21:22,743
+3 etiketli bir şey çıkıyor, veri çıkıyor. Sınıflandırma 3 etiketli oluyor. Eksi 1, 0, 1. Sonra bu aslında veri etiketsiz olduğu için kendi modelleri...
+
+148
+00:21:22,743 --> 00:21:24,583
+Sonunda LDA uyguluyorlar.
+
+149
+00:21:25,384 --> 00:21:36,643
+Buna LDA aslında etiketli sınıfa değil. İlk orijinal veri setini uyguluyorlar. Şöyle aslında önce Google Cloud'da etiketsiz veriyi etiketlendirmiş, sınıflandırmış oluyorlar.
+
+150
+00:21:36,643 --> 00:21:43,262
+sonra kendi modelleriyle etiketlenmiş olan veri setini tekrar sınıflandırıyorlar.
+
+151
+00:21:43,423 --> 00:21:46,403
+O yüzden buradaki sonuçlar da bana çok şey gelmedi.
+
+152
+00:21:47,243 --> 00:21:52,923
+Yani çünkü Google Cloud aslında ne kadar başarılı etiketlendirdi bu veri setini.
+
+153
+00:21:53,923 --> 00:21:55,982
+Belki de çok kötü etiketlendirdi.
+
+154
+00:21:56,123 --> 00:21:58,982
+O yüzden kendi başarıları da düşük çıkmış olabilir.
+
+155
+00:21:58,982 --> 00:22:02,282
+Aslında sınıflandırma sonucu tekrar yeni bir modelle.
+
+156
+00:22:02,282 --> 00:22:12,123
+Acaba kendilerinin modeli o Step 3'te gördüğümüz gibi model LDA diyor. Belki LDA üzerine kurdular. Kendi modelleri bu.
+
+157
+00:22:12,123 --> 00:22:28,623
+Yok hocam. Step 3 dediği sadece 5G ile birlikte hangi konuları konuşmuşlar insanlar? Yani konu çıkarmak için sadece konu belirlemek için çıkarmışlar. Bu taraftaki sol taraftaki dördüncü adımda mesela.
+
+158
+00:22:28,623 --> 00:22:31,643
+Ben niye dördüncü adımı görmüyorum?
+
+159
+00:22:31,643 --> 00:22:35,863
+Pardon, dördüncü adım değil, dördüncü edge mi desem?
+
+160
+00:22:36,262 --> 00:22:37,063
+Tamam, tamam.
+
+161
+00:22:37,940 --> 00:23:04,739
+Mesela bu 1-2-3 diye takip edersek birincisine mesela birinci adım şeyde adım demeyelim de birinci işlemde veri setini doğrudan Natural Language API'ye veriyorlar. Buradan bir sentiment analizi elde ediyorlar. Sonra bu sentiment analizi sonucunda çıkan sonucu tekrar yeni bir modelle üçüncü adımda AutoML Natural Language'e veriyorlar. Bunun bir çıktısı da oluyor.
+
+162
+00:23:04,739 --> 00:23:15,739
+Aslında bunun çıktısı kendi modellerin ve veri setini eğitilmiş bir çıktısı oluyor. Sonra bunu sınıflandırma yapmışlar dördüncü adımda.
+
+163
+00:23:16,480 --> 00:23:18,519
+Nerede yayınlanmıştı bu çalışma?
+
+164
+00:23:19,739 --> 00:23:21,219
+Nerede yayınlanmıştı hocam?
+
+165
+00:23:24,398 --> 00:23:31,138
+Tam hatırlamıyorum ama 2019'da aslında yayınlanmış. 2020'de online oluyor diye yazıyordu.
+
+166
+00:23:31,838 --> 00:23:33,660
+Burada bir şey yok.
+
+167
+00:23:33,659 --> 00:23:39,598
+Şu grafikte Step 3'te şey yapmışlar, konuyu belirlemeye çalışmışlar
+
+168
+00:23:39,598 --> 00:23:41,199
+Onu anladım, anladım onu
+
+169
+00:23:41,199 --> 00:23:52,919
+Bir de şurada hocam Step 3'teki Topik Dedek dediği kısımda topikleri çıkardıktan sonra topikleri ve kelimeleri tekrar bir aslına sınıflandırmaya sokmuşlar
+
+170
+00:23:52,919 --> 00:23:59,578
+O yüzden şuradaki son adımdaki kısım şu, buradaki LDA sonucu sol adım
+
+171
+00:23:59,578 --> 00:24:01,479
+Evet, boş kaldı bazı şeyler, okey
+
+172
+00:24:01,480 --> 00:24:07,740
+Bir de yine bir cümleyle dedin ki tamamladığın proje dedin. Hangi projeden bahsediyorsun?
+
+173
+00:24:08,880 --> 00:24:09,960
+Final projesi hocam.
+
+174
+00:24:10,519 --> 00:24:12,460
+Sen LDA [öğrenci]'i mi aldın projeni?
+
+175
+00:24:12,460 --> 00:24:12,679
+Evet.
+
+176
+00:24:15,480 --> 00:24:18,940
+Topic Modeling, Text Categorization'dı galiba.
+
+177
+00:24:18,940 --> 00:24:26,240
+Yani bu kadar yakın zamanda bu projeyi aldın, bitiriyorsun. Perplexity niye bu kadar geç hatırladın?
+
+178
+00:24:28,578 --> 00:24:29,778
+Bilmiyorum hocam.
+
+179
+00:24:29,778 --> 00:24:34,558
+Ben yıllar önce kullanmıştım o yüzden öyle aklıma çok geç geldi
+
+180
+00:24:34,558 --> 00:24:37,038
+Sunumu da ben aslında asladım
+
+181
+00:24:37,038 --> 00:24:42,338
+Hocam şöyle dün de sunum yaptım bugün de çok fazla yoğunluk var
+
+182
+00:24:42,338 --> 00:24:42,959
+Okey okey
+
+183
+00:24:42,959 --> 00:24:46,699
+Ben böyle sorarım aklıma geleni biliyorsunuz
+
+184
+00:24:46,699 --> 00:24:51,999
+Peki sizin arkadaşınızla soracak sorunuz var mı?
+
+185
+00:24:52,499 --> 00:24:54,898
+Zaten bugün sadece sunum yapanlar gelmiş
+
+186
+00:24:54,898 --> 00:24:57,380
+Yok
+
+187
+00:24:57,380 --> 00:24:59,739
+Sunumu driver koydun mu [öğrenci]?
+
+188
+00:24:59,778 --> 00:25:06,838
+koydum. Hocam bir de şuradan şimdi ben diğer sunumdan baktım. Böyle bir skor var bir de coherence skor.
+
+189
+00:25:07,440 --> 00:25:09,818
+Coherence skoru aslında daha çok kullanıyorlar şu an.
+
+190
+00:25:10,019 --> 00:25:10,358
+Doğru.
+
+191
+00:25:11,099 --> 00:25:12,058
+İfade ediyor diye.
+
+192
+00:25:12,398 --> 00:25:12,740
+Doğru.
+
+193
+00:25:12,818 --> 00:25:17,239
+Çünkü diğeri biraz daha ekürisi gibi davranıyor. Alttaki biraz daha farklı bir şey.
+
+194
+00:25:17,259 --> 00:25:23,919
+Bu peki sonuç vermiyor. Bazı kaynaklar hep perplexitiği yazıyor ama coherence daha iyi. Doğru söylüyorum.
+
+195
+00:25:23,919 --> 00:25:27,318
+Evet. Yani yükselere bakmayın biraz şey olabilir.
+
+196
+00:25:27,739 --> 00:25:27,959
+Yok.
+
+197
+00:25:27,959 --> 00:25:29,739
+Çünkü birkaç hafta önce
+
+198
+00:25:29,739 --> 00:25:30,739
+Tamam
+
+199
+00:25:30,739 --> 00:25:32,759
+Teşekkür ederim sana
+
+200
+00:25:32,759 --> 00:25:33,259
+Rica ederim
+
+201
+00:25:33,259 --> 00:25:34,979
+Şimdi [öğrenci]'da sıra
+
+202
+00:25:34,979 --> 00:25:36,078
+[öğrenci]
+
+203
+00:25:36,078 --> 00:25:39,699
+[öğrenci] hangi esimle çağırıyorlar?
+
+204
+00:25:40,618 --> 00:25:42,058
+Hocam [öğrenci] genellikle
+
+205
+00:25:42,058 --> 00:25:43,679
+Daha kolay çünkü
+
+206
+00:25:43,679 --> 00:25:47,038
+[öğrenci] sunumunu iptal et
+
+207
+00:25:47,038 --> 00:25:49,398
+Sanırım hocam bulmaya çalışıyorum
+
+208
+00:25:49,398 --> 00:25:56,239
+Şu aşağıda yeşil olan paylaşımı kesmez bir şey yazıyordur
+
+209
+00:25:56,240 --> 00:26:03,940
+yazıyor mu bakayım? Share screen var ya, en altta yeşil bir kutu var, ona bir daha basarsak.
+
+210
+00:26:03,940 --> 00:26:05,960
+Zoom'un şeyinde olacak.
+
+211
+00:26:07,499 --> 00:26:09,740
+E tamam, şuradan da.
+
+212
+00:26:14,770 --> 00:26:17,171
+Yoksa ben seni dışarı atacağım, sen gireceksin.
+
+213
+00:26:17,191 --> 00:26:18,471
+Tamam hocam siz atın ben.
+
+214
+00:26:19,570 --> 00:26:20,451
+Gördüm, gördüm tamam.
+
+215
+00:26:20,451 --> 00:26:21,270
+Tamam peki.
+
+216
+00:26:26,740 --> 00:26:29,460
+Evet, [öğrenci], hadi bakalım.
+
+217
+00:26:32,019 --> 00:26:32,878
+Geldim mi hocam?
+
+218
+00:26:33,180 --> 00:26:33,939
+Geldim, görüyorum.
+
+219
+00:26:36,459 --> 00:26:41,898
+Hocam, benim projemin makalemin adı Document Level Sentiment Analysis from New Articles.
+
+220
+00:26:41,898 --> 00:26:44,160
+Dur, dur, sen uykusuzsun.
+
+221
+00:26:45,618 --> 00:26:51,098
+Hocam, dün evet, biraz çalışmam vardı da başka ödev ve sınav var diyebilirim.
+
+222
+00:26:51,118 --> 00:26:54,019
+Belli, yüzünden çok belli. Hadi tamam, başla hızlıca, bitir.
+
+223
+00:26:54,439 --> 00:26:55,278
+Tamamdır hocam.
+
+224
+00:26:55,278 --> 00:27:04,459
+Bu makalemizde özet, giriş, duygu analizindeki seviyeler, veri kümem, ön işleme, önerilen yaklaşım, deneysel çalışma, sonuçlar ve kaynakçadan oluşmaktadır.
+
+225
+00:27:04,959 --> 00:27:11,578
+Özet de bu makalemizde şu anlatılmaktadır. İnternette çok büyük bir veri var. Bu büyük veriden bilgi çıkarmak önemlidir.
+
+226
+00:27:12,019 --> 00:27:17,460
+Haberver ve bloklar çağında bu haberlerin incelenmesi, fikirlerin analiz edilmesi gerekiyor.
+
+227
+00:27:17,858 --> 00:27:22,118
+Duygu analizi bu konuda bize yardımcı oluyor. Belirli bir konuda olumlu veya olumsuz bir görüş buluyor.
+
+228
+00:27:22,118 --> 00:27:28,378
+Sistemimiz veri kümesini BBC haberlerinin de çevrimiçe haber veri tabanlarını kullanıyor.
+
+229
+00:27:28,778 --> 00:27:34,538
+Haberleri incelerken analiz edip kategorize ediyor. Bunları iyi veya kötü haber olup olmadıklarına dair.
+
+230
+00:27:35,199 --> 00:27:38,898
+Bunun için öncelikle bir ön işlemeden geçiyorlar. Veriyi temizliyorlar öncelikle.
+
+231
+00:27:39,219 --> 00:27:43,298
+Geleksik sözlükleri silmeye, küçük bölümlere ayırma gibi adımlar uygulanıyor.
+
+232
+00:27:44,538 --> 00:27:49,439
+Böyle üç tane sınıf bulacaklar. Negatif, nötr veya pozitif diye.
+
+233
+00:27:49,439 --> 00:27:55,999
+Girişte duygu analizi doğal dil işleme, hesaplama, anlam, bilim, metin aletinin küçük bir uygulamasıdır.
+
+234
+00:27:56,378 --> 00:28:06,378
+Duygu analizi temel olarak bir metin analizi olup metnin duygusu olarak ifade etmek istediği pozitif, negatif ve nötr sınıfları belirlemeyi amaçlar.
+
+235
+00:28:06,378 --> 00:28:12,699
+Bunun için çeşitli kaynaklar analiz edilir. Metinler, tweetler, bloglar, sosyal medya, haber makalleli ve ürün yorumları.
+
+236
+00:28:13,318 --> 00:28:16,378
+Önce dediğim gibi duygu analizinde metnin ön işlem rolünü gözlemliyoruz.
+
+237
+00:28:17,338 --> 00:28:19,259
+Deneysel sonuçlar bulup bunu...
+
+238
+00:28:19,439 --> 00:28:21,420
+uygun şekilde görselleştiriyoruz.
+
+239
+00:28:22,199 --> 00:28:25,699
+Duygu analizindeki temel olarak 3 seviyeye ayırmışlar.
+
+240
+00:28:25,798 --> 00:28:28,858
+Document level, sentence level, entity ve aspect level diye.
+
+241
+00:28:29,558 --> 00:28:36,019
+Document level'da yani doküman seviyesinde belgenin tamamı analiz edilip olup belgenin kutupluluğu ortaya çıkıyor.
+
+242
+00:28:36,019 --> 00:28:38,680
+Yani 3 temel sınıfta çıkarmış oluyorlar.
+
+243
+00:28:39,180 --> 00:28:43,558
+Genel hakkında olumlu veya olumsuz bir görüşme ifade ettiğini hesaplıyorlar document level'da.
+
+244
+00:28:44,419 --> 00:28:47,219
+Sentence level'da ise bu sefer cümle bazlı analiz yapıyorlar.
+
+245
+00:28:47,319 --> 00:28:48,538
+Cümle düzeyinde analizinde.
+
+246
+00:28:48,539 --> 00:28:55,480
+her cümledeki kutuplaşma inceleniyor ve analiz ediliyor. Yine cümle hakkında olumlu olumsuz veya tarafsız bir fikir veriliyor.
+
+247
+00:28:56,078 --> 00:29:07,099
+Cümle düzeyinde çalışmanın faydası özellik ve nesnellik sınıfında yattığını belirtmişler ve eğitim süreçleri içinde geneliksel algoritmalar kullanılabilir olduğunu belirtmişler.
+
+248
+00:29:07,400 --> 00:29:16,220
+İfade düzeyi analizinde ise özelliğe dayalı duygu analizi olarak da adlandırılıyor. Bir düşünceye dayanıyor yine olumlu ve olumsuz ve hedeften oluşuyor.
+
+249
+00:29:16,219 --> 00:29:21,999
+Bu seviyedeki amacımız ise varlıklar ve onların yönleri hakkında duyguları bulmaktır.
+
+250
+00:29:22,838 --> 00:29:27,919
+Veri kümemiz daha önce dediğim gibi BBC'nin bir veri tabanından kullanılıyor.
+
+251
+00:29:28,159 --> 00:29:39,038
+Bunun için işte işletme, eğlence, politika, spor, teknoloji gibi 5 popular alandaki 2225 belge içeren veri tabanını kullanıyorlar.
+
+252
+00:29:39,038 --> 00:29:45,180
+Yaklaşık 300 ile 400 makale taşıyormuş ve TXT formatındaymış dosyamız.
+
+253
+00:29:45,180 --> 00:29:50,400
+İlk önce dediğim gibi analizden önce bir ön işlemeden geçiriliyor. Ne yapılıyor bir ön işlemede?
+
+254
+00:29:50,839 --> 00:29:55,358
+Hashleme etiketleri, komut postraları, reklamsız gibi anlamsız metinler çıkarılıyor.
+
+255
+00:29:56,240 --> 00:29:59,900
+Metin macili yöntem ve uygulamalar çok önemli bir rol oynuyor tabii bu ön işlemede.
+
+256
+00:30:01,638 --> 00:30:07,920
+Daha sonra ayrıca sınıflandırma amacıyla metnin temizlenme vs. düzenlemesi sürecine de yardım ediyor.
+
+257
+00:30:07,919 --> 00:30:15,878
+Temel olarak çevrim içi ve çevrim dışı veriler belirli verilerden herhangi bir istenen bilgi içermeyen çok sayıda ham veri ve istemsiz anları çıkarmış oluyor.
+
+258
+00:30:15,999 --> 00:30:21,038
+Yani aynı şey aslında. Kısacası istemsiz bilgileri, bizim için faydalı olmayan bilgileri biz verimizden çıkarıyoruz.
+
+259
+00:30:22,482 --> 00:30:36,242
+Önerilen yaklaşımda ise 5 adım olarak belirlemişler. İlk adımda önceden dediğim gibi bir veriyi temizleme, ön işleme yani ne dediğim gibi URL, gereksiz sözlükler, noktalamış işaretleri, boşluklar bunlar verilerden siliniyor.
+
+260
+00:30:36,923 --> 00:30:48,383
+Bunlardan sonra köklendirme, en önemli adım olan köklendirmeye giriyorlar. Yani burada da örnek olarak mesela education kelimesinin kökü educate biçimine dönüştürüyor her bir kelime böyle.
+
+261
+00:30:48,383 --> 00:31:05,002
+Bunun içinde R kütüphanesinde bir stim fonksiyonu varmış. Bu fonksiyon yardımıyla köklendirme işlemini yapıyorlar. Bu ön işleme tabittikten sonra işlenen veri sesine meydana gelen terimin sıklığını dayanan terim belge matrisini belirliyorlar. Yine R dilinde.
+
+262
+00:31:05,003 --> 00:31:33,743
+Bu ön işleme için de tabii onu da söylemiyorum. R dilinde TN paketi altında DTM metodu varmış. Bu ön işleme işlemlerini yapmak için DTM metodunu kullanıyorlar. Burada da genel şeyini göstermişler hocam. Önce şöyle döküman geliyor. Bunu korpus şeklinde çeviriyorlar. Ön işleme alınıyorlar. Bu ön işlemi de ne yapıyorlar? Stop versleri siliyorlar veya başka noktaların işaretleri gibi şeyleri. Daha sonra köklendirme işlemini tutuyorlar.
+
+263
+00:31:33,743 --> 00:32:00,982
+Daha sonra da her bir şeyi karşılaştırıp skorunu buluyorlar. Bunu nasıl yapabiliyorlar? Burada DNS'a çalışmada 2006 olumlu kelime ve 4783 olumsuz kelime içeren Bintli sözlüğü kullanmışlar. Veri setinin ön işlemesinden sonra önce işlenmiş verilerimizi verilen sözlük ve puan duyarlılığı fonksiyonu yardımıyla gerçekleştiriyorlar. Ve her bir kelimeyi önceden işlenmiş bir veriyle karşılaştırıyorlar.
+
+264
+00:32:00,982 --> 00:32:30,723
+Bu puan doyarlı işlevi sözcüğe dayalı puan olarak döndürüyor. Yani ön in iş anlamında gelen business'da 510 makale inceliniyor. 262 pozitif, 214 negatif ve 34 nötr olarak çıkartıyorlar. Her bir 5 konu başlığında böyle çıkartmışlar. Bunun için de şöyle bir sonuç demişler. Ön in demişler. Ben diyor iş ve spor makalesi sayısı diyor. Hemen hemen aynı diyor. Aynı kategoride nötr sayısı da.
+
+265
+00:32:30,982 --> 00:32:55,644
+hemen hemen aynadır. Yani aynı nötür sayıda bulunmuş. Ancak pozitif ve negatif kutupları farklıdır diyor. Benzer şekilde eğlence ve teknoloji için de makale sayısı aynadır. Eğlence ve teknoloji için de pozitif, negatif ve nötür de aynadır diyor. Yani örneğin şurada eğlence ile teknolojiye baktığımda diyor, makale sayıları aynı diyor. Pozitif de aynadır diyor. Negatif de aynadır diyor. Nötür de aynadır diyor.
+
+266
+00:32:55,644 --> 00:33:00,903
+Siyaset katastrof için pozitif kutup fazla, negatif kutup ve nötr.
+
+267
+00:33:01,844 --> 00:33:31,623
+az olarak değerlendirmişler. Daha sonra bu projelerini bitirdikten sonra gelecek çalışmamız için de diyor, cümle puanlarına göre anlamsal kutupluluğu tanımaya ve haber makalelerinin olumlu ve olumsuz etiketlerini belirlemek için farklı makine algoritmaları uygulamaya odanaklanacaklar. Yani burada benim araştırdığımda hocam mesela ben şu makine algoritması şunu kullandım bunu kullandım çok demiyorlar. Yani şurada da gösterdiğim gibi sözcük karşılaştırma puan yani sözcüklerin birbirleri olan
+
+268
+00:33:31,623 --> 00:33:34,423
+korelasyonunu hesaplayarak bir anlam çıkarmış.
+
+269
+00:33:34,502 --> 00:33:40,103
+Ben modelimi şu kadar ayırdım, şu kadar yaptım tarzı bir makine algoritması şeyi kullanmamışlar.
+
+270
+00:33:40,163 --> 00:33:43,462
+Ardil'in de mesela DTM metodunu kullanarak ön işleme yapmışlar.
+
+271
+00:33:44,042 --> 00:33:48,042
+Daha sonra köklendirme algoritmaları yapmışlar.
+
+272
+00:33:48,344 --> 00:33:50,803
+Yine Ardil'in de Steam fonksiyonunu kullanarak.
+
+273
+00:33:50,803 --> 00:33:58,103
+Ama bir makine algoritması, hani burada dediği gibi farklı makine algoritmalara odaklanacaktır demişler ama burada öyle bir şey yapmamışlar.
+
+274
+00:33:58,182 --> 00:34:00,042
+Bir makine algoritması kurup da modelim oluşturup da...
+
+275
+00:34:00,042 --> 00:34:03,962
+Makine öğrenmesi algoritmaları değil mi?
+
+276
+00:34:04,063 --> 00:34:07,442
+Aynen, burada spesifik bir şey belirtmemişlerdi makine.
+
+277
+00:34:07,542 --> 00:34:14,422
+Makine öğretmeni şu sınıflandırmayı kullandım, şöyle modeli şöyle ayırdım, başarı oranım budur gibi bir açıklama yapmamışlar.
+
+278
+00:34:14,543 --> 00:34:21,762
+Yani sözcüklerin puan doyarlılığıyla olumlu, yani pozitif, negatif veya nötr olarak açıklanmışlar.
+
+279
+00:34:21,762 --> 00:34:27,262
+Gelecek çalışmalarında diyor makine öğrenme algoritmalarına odaklanacaktır diyor.
+
+280
+00:34:27,704 --> 00:34:29,063
+Kaynaklarımız bunlar hocam.
+
+281
+00:34:29,063 --> 00:34:30,184
+Bu kaç yılına ait?
+
+282
+00:34:30,503 --> 00:34:34,103
+Bu 2017'ydi yanlış hatırlamıyorsam. Ağustos 2017'ye ait.
+
+283
+00:34:36,244 --> 00:34:42,543
+Yani 17 yılı için bile içerik olarak şey, sadece puan değerlerini.
+
+284
+00:34:42,543 --> 00:34:50,043
+Evet yani sadece sözcükleriyle karşılaştırmışlar birbirleriyle. Ona göre pozitif, negatif ve nötr demişler.
+
+285
+00:34:50,043 --> 00:34:54,543
+O araştırırken benim de açıkçası hiç bir ade, grütme, bir şey kullanmıyor.
+
+286
+00:34:54,543 --> 00:34:59,443
+sadece R-Studyosu'na ait fonksiyonları kullanıp böyle bir çalışma yapmışlar.
+
+287
+00:34:59,583 --> 00:35:00,802
+Şeye merak ettin mi?
+
+288
+00:35:00,922 --> 00:35:02,822
+Gelecekteki çalışmalarımız dedi.
+
+289
+00:35:02,963 --> 00:35:08,663
+Bu yazarların isimlerini verip gerçekten 2000, kaçtı bu 17 mi dedi?
+
+290
+00:35:09,163 --> 00:35:10,603
+2017'di isimleri.
+
+291
+00:35:10,784 --> 00:35:14,402
+17'den sonra var mı, yapmışlar mı çalışma?
+
+292
+00:35:15,563 --> 00:35:17,844
+Yoksa öyle uyduruktan yazılmış bir şey mi?
+
+293
+00:35:18,623 --> 00:35:20,784
+Detektif gibi iş süreceksiniz.
+
+294
+00:35:21,663 --> 00:35:22,003
+Doğru.
+
+295
+00:35:22,003 --> 00:35:23,103
+Tamam peki.
+
+296
+00:35:24,543 --> 00:35:26,583
+Soru var mı [öğrenci]'a?
+
+297
+00:35:28,163 --> 00:35:30,362
+Tabii ki yok her zamanki gibi.
+
+298
+00:35:30,862 --> 00:35:32,802
+Teşekkür ediyoruz [öğrenci] sana da.
+
+299
+00:35:33,302 --> 00:35:35,382
+[öğrenci] seni alalım.
+
+300
+00:35:35,742 --> 00:35:36,742
+[öğrenci] sen bırak.
+
+301
+00:35:37,802 --> 00:35:40,123
+[öğrenci]'ı büyükemedim de hocam bu altı aldı beni.
+
+302
+00:35:40,923 --> 00:35:42,663
+Siz yine beni bir atabilir misiniz hocam?
+
+303
+00:35:42,762 --> 00:35:43,423
+Atayım.
+
+304
+00:35:43,923 --> 00:35:46,623
+Ya ben de atıcı çıktı adım ama dur bakayım.
+
+305
+00:35:50,503 --> 00:35:53,503
+Remove diyeceğim sen yeniden gideceksin herhalde.
+
+306
+00:35:53,503 --> 00:35:54,083
+Aynen hocam.
+
+307
+00:35:54,083 --> 00:35:56,682
+Bilmiyorum. Haydi güle güle.
+
+308
+00:36:00,947 --> 00:36:25,166
+Sen derse sürekli geliyor musun? Evet, geliyorum. Allah Allah. Sen nerede oturuyorsun? Mekan olarak değil, sınıfta. O taraftan ikinci sırada ortada. Yok, seni de çıkaramadım tam. Hocam, maske olunca zaten birbirimizi tanıyamıyoruz. Evet, o da doğru. Bak yani.
+
+309
+00:36:25,166 --> 00:36:30,547
+Gelmiyor mu? Gelmiyorsa ben kulaklık takabilirim.
+
+310
+00:36:30,567 --> 00:36:31,806
+Geliyor, geliyor.
+
+311
+00:36:31,806 --> 00:36:35,168
+Peki öyleyse. Ekran paylaşayım.
+
+312
+00:36:45,556 --> 00:36:47,454
+Ben kameramı kapatabilir miyim hocam?
+
+313
+00:36:47,574 --> 00:36:48,135
+Bağlantıla.
+
+314
+00:36:48,135 --> 00:36:48,914
+Kapan, kapan.
+
+315
+00:36:57,108 --> 00:36:59,108
+mam başlığa lese.
+
+316
+00:37:03,827 --> 00:37:19,427
+Merhabalar, [öğrenci] ben. Bugünkü sunum konum bilgi çıkarım hakkında. Özgeçmişlerin eğitim bölümlerini ayrıştırmak için yarı denetimli derin öğrenme tabanlı varlık ismi tanıma modeli oluşturulmuş. Makaleden bahsedeceğim.
+
+317
+00:37:24,467 --> 00:37:38,467
+Bu makaleyi Hindistanlı bir grup araştırmacı yazmışlar. 2020 Eylül'de Springer'in Neural Computing Web applications dergisinde yayınlanmış.
+
+318
+00:37:39,507 --> 00:37:47,907
+önce bir giriş yapacağım, daha sonra veriden bahsedeceğim. Daha sonra oluşturulan modelden, sonuçlardan ve kısaca bir özetlen bahsedeceğim.
+
+319
+00:37:51,027 --> 00:38:05,786
+Genel olarak büyük firmaların çok fazla özgeçmiş toplamaları ve bu özgeçmiş kalabalığı içerisinde ellerinde anlamlı bir veri oluşturulamaması için bu soruna bir çözüm bulmaya çalışmışlar.
+
+320
+00:38:05,786 --> 00:38:15,827
+düzgün bir eleme yapılabilmesi için öncelikle eğitim kısımlarına önem veren bir şirket için bu proje yapmak istemişler.
+
+321
+00:38:15,947 --> 00:38:24,228
+Zaten veri seti de şirketten satın alınmış yani. O yüzden paylaşmamışlar. Sanırım onları özel yapmışlar.
+
+322
+00:38:24,228 --> 00:38:28,306
+Bu yüzden bazı kısımları çok detaylarını paylaşmamışlar.
+
+323
+00:38:28,306 --> 00:38:37,067
+Özgeçmişlerdeki eğitim bölümlerini aştırılması için Named Entry and Recognition varlık ismi tanımak kullanılıyor.
+
+324
+00:38:38,786 --> 00:38:44,907
+Belirlenen bir varlık türüne ait bütün oluşumları tanımlamaya çalışıyorlar. Bunun için de elbette etiketli veriye ihtiyaç var.
+
+325
+00:38:47,027 --> 00:38:51,467
+Son zamanlarda derin öğrenme tabanlı yöntemler çok yaygınlaşıyor.
+
+326
+00:38:51,467 --> 00:38:58,387
+Çünkü doğruluk oranları çok ciddi anlamda yükseliyor ve çeşitli veriler üzerinde genelleştirilebiliyor.
+
+327
+00:38:58,507 --> 00:39:04,728
+Çok farklı farklı veriler üzerinde kullanılabiliyor. Bunlar da derin öğrenme modeli kullanmaya karar vermişler.
+
+328
+00:39:05,427 --> 00:39:17,728
+Örnek olarak referans gösterdikleri bazı çalışmalarda eğitim kısımlarının çıkartılması, yani aynı konuda aslında yapılan çalışmalarda en son geçen sene yapılan
+
+329
+00:39:17,728 --> 00:39:27,228
+%82 civarında FB skor veren bir çalışma varmış. Onu geliştirmeyi amaçlamışlar öncelikle. Daha yüksek bir oran bulmak istemişler.
+
+330
+00:39:29,168 --> 00:39:41,987
+Bu çalışmada özgeçmişlerin eğitim bölümlerindeki akademik derecelerin, işte ön lisans, lisans, yüksek lisans, doktora gibi onların ve üniversitelerin ve S2 isimlerinin doğru bir şekilde çıkartılmasını istemişler.
+
+331
+00:39:41,987 --> 00:39:47,447
+iş alım görevlerinin süreçleri kolaylaşsın, daha hızlı yapsınlar diye.
+
+332
+00:39:49,746 --> 00:39:52,588
+Burada yerden içinde bir teknik kullanmışlar.
+
+333
+00:39:52,706 --> 00:39:54,367
+Hem etikette hem etiketsiz veri var.
+
+334
+00:39:54,507 --> 00:39:57,887
+Fakat burada bir değişiklik yapmışlar.
+
+335
+00:39:58,746 --> 00:40:00,567
+Bir düzeltme modülü koymuşlar.
+
+336
+00:40:01,186 --> 00:40:08,606
+Yanlış tahmin edilen kısımları düzeltip orijinal veri setinin üzerine dahil etmişler.
+
+337
+00:40:08,606 --> 00:40:13,266
+Böyle olunca aslında çok küçük başlayan veri seti giderek büyümüş.
+
+338
+00:40:13,367 --> 00:40:15,827
+Büyüdükçe de doğruluklara giderek artmış.
+
+339
+00:40:15,827 --> 00:40:23,626
+Bunu amaçlarken asıl başlangıç noktaları derin öğrenmede genellikle çok büyük veri setleri kullanıyor.
+
+340
+00:40:23,726 --> 00:40:26,407
+Ama biz biraz daha küçük veri setiyle çalışabilir miyiz?
+
+341
+00:40:26,507 --> 00:40:29,487
+Daha doğruluk anları böyle de çıkartabilir miyiz?
+
+342
+00:40:29,547 --> 00:40:30,387
+Den başlamışlar.
+
+343
+00:40:30,467 --> 00:40:32,387
+Bu yüzden böyle bir yol bulmuşlar.
+
+344
+00:40:33,666 --> 00:40:34,887
+Biz küçük de başlayalım.
+
+345
+00:40:35,146 --> 00:40:37,867
+Hem tahmin yapalım hem tahmin ettiklerimiz üzerine ekleyelim.
+
+346
+00:40:37,867 --> 00:40:46,286
+giderek büyüsün, giderek doğruluklarını yükselsin gibi. Toplamda 550 tane özgeçmiş kullanmışlar.
+
+347
+00:40:46,807 --> 00:40:55,327
+50 tanesi test için 500 tanesini eğitim için ayırmışlar. Önce video ön işlemede PDF dosyalarını JSON'a çevirerek başlamışlar.
+
+348
+00:40:55,327 --> 00:41:03,108
+Burada NLTK, Natural Language Toolkit kullanmışlar etiketleme için. Part of Speech olarak hepsini ayırıp etiketlemişler.
+
+349
+00:41:03,106 --> 00:41:13,007
+Buradaki etiketlemenin tabii ki ele yapmışlar. Doğru olması önemli çünkü kurum isimleri var ve kurum isimlerini bir de herkes farklı farklı yazabiliyor.
+
+350
+00:41:14,286 --> 00:41:22,286
+Hem kurum isimlerinde hem derece isimlerinde farklı işte parantezler var, farklı yazımlar var gibi.
+
+351
+00:41:22,286 --> 00:41:28,487
+Bu kısımlara biraz özen göstermişler çünkü kendilerine de bazı hatalar yaptıklarını, özverişsiz zorlandıklarını söylemişlerdi.
+
+352
+00:41:29,286 --> 00:41:32,146
+Daha sonra bu eğitim kısımları verilerden çıkartmışlar.
+
+353
+00:41:33,876 --> 00:41:51,556
+etiketleri göstermişler. U ile başlayanlar tek kelimelelik enstitü isimleri ve derece isimleri. B olanlar bir kalıpsa onun başlangıcı, I ile başlayanlar da onun devamını gösteriyor. O olanlar da diğer kelimeler olarak etiketlenmiş.
+
+354
+00:41:51,556 --> 00:42:06,255
+Burada veriyi temizlemişler. PDF'den Jason'a çevirilirken bazı bozukluklar olmuş. Parantezlerin düzenlenmesi, fazladan boşlukların temizlenmesi, istenmeyen karakterlerin çıkartılması gibi.
+
+355
+00:42:07,056 --> 00:42:20,974
+Sol üstte, parantez, RDSO, üniversitenin ismi, iki ismi varmış. Bu şekilde yazmışlar. Burada tabi ki parantez yanlış ayrılmış.
+
+356
+00:42:21,556 --> 00:42:26,936
+Bunu düzeltmek için parantezleri yok edip ikisini ayrı kelime olarak seçmeye karar vermişler.
+
+357
+00:42:27,855 --> 00:42:32,835
+Sol altta study dinitendirilmiş CMS'den önce ikiden fazla boşluk bırakılmış.
+
+358
+00:42:32,974 --> 00:42:36,815
+Bu boşluklar yanlışlıkla gerçek bir kelimeymiş gibi algılanmış.
+
+359
+00:42:37,275 --> 00:42:38,815
+O boşlukların yok edilmesi.
+
+360
+00:42:40,195 --> 00:42:50,556
+Daha sonra bu V amperesan kelimesinin işaretinin yanlışlıkla PDF'den Jason'ı çevrilirken sanırım V AMP olarak çevriliyormuş.
+
+361
+00:42:50,556 --> 00:43:00,556
+Bu hatayı düzeltmek için bunları elde temizlemişler. Bir de istenmeyen bazı iki nokta üst üste gibi bazı karakterler var. Onları çıkartmışlar.
+
+362
+00:43:03,056 --> 00:43:16,014
+Oluşturulan modeli göstermişler. Ve şimdi ne kadar? Özgeçmişlerden eğitim kısımlarının çıkartılmasından bahsettik. Daha sonra el ve verinin etiketlenmesinden bahsettik. Daha sonra verinin temizlenmesinden bahsettik.
+
+363
+00:43:16,014 --> 00:43:44,976
+Bundan sonra eğitim kısmına gelmişler. Burada bir classification model oluşturmuşlar. Derin öğrenme tabanlı. Burada eğitim verisine eğitmişler. Daha sonra bahsettiğimiz bu düzeltme modülü devreye girmiş. Düzeltme modülü önce bir tahmin çıkartıyor. Tahmine göre etiketlerin doğruluğuna bakıyorlar, karşılaştırma yapıyorlar. Daha sonra düzeltme modülü devreye giriyor. Yanlış olanları düzeltiyor.
+
+364
+00:43:44,974 --> 00:44:02,155
+Bu kısım tamamlanmış oluyor. Burası başa geliyor ve burada bir doğruluk oranı çıkartıyorlar. Bu birinci iterasyon oluyor. Daha sonra düzeltilmiş olan kısımları tekrar ana veri setinin üzerine dahil ediyorlar ve tekrar bu işlemi yapıyorlar.
+
+365
+00:44:02,155 --> 00:44:13,155
+Ya da denoranme modelinden bahsetmişler. Bu kısma çok detaylı olarak girmeyeceğim. Onlar da aslında çok fazla girmemişler açıkçası.
+
+366
+00:44:13,155 --> 00:44:23,335
+Bir word embedding katmanı var, bir CNN katmanı var, Trapat, BLSHTM, Softmax ve en son tahmin kısmı var.
+
+367
+00:44:27,860 --> 00:44:42,018
+ana veri setimiz dışında 360 tane özgeçmiş etiketlenmemiş veri var. Onları da yine ön işleme ve temizleme adımlarından geçirmişler. Bunları 12 tane ayrı gruba ayırmışlar. Her birinde 30 tane özgeçmiş var.
+
+368
+00:44:42,539 --> 00:44:53,360
+Ondan sonra biraz önce bahsettiğim gibi her bir seferinde bu 30 özgeçmiş için bir tahmin çıkartmışlar. Daha sonra onu düzeltmesini yapmışlar ve ana veri setimiz üzerine dahil etmişler.
+
+369
+00:44:53,360 --> 00:45:14,360
+bunu 12 defa yapmışlar. 12 her iterasyondan 12 farklı sonuç elde etmişler. Amaçları çok da fazla olmadan bunu biz 12 seferde yapalım ama eğer istenirse bunu daha fazla veriyle 12'den daha fazla yaparsanız çok daha doğru sonuçları zaten elde edebilirsinizmiş. Amaçlarına da ulaşmışlar.
+
+370
+00:45:14,360 --> 00:45:40,760
+Bunu yaparken, bu düzeltme modülünde karşılaştırma yaparken iki tane liste kullanmışlar. L1 ve L2 listesi. L1 listesi Hindistan'dan ve Amerika'dan çünkü aldıkları öğrenci işlerin hepsi Hindistan'dan ve Amerika'danmış. Üniversite isimleri var. L2 listesinde de olabilecek bütün derecelerin olduğu bir liste. Bunları kullanarak bir karşılaştırma yapmışlar.
+
+371
+00:45:40,760 --> 00:46:03,860
+Bunu yaparken iki tane işaretçi kullanmışlar. Bu işaretçi start pointer ve end pointer gibi. Çıkartılmış olan varlık isminin en başında genelde hep başlangıcı belli edecek olan B ile başlayan eski ismi ya da işte B, NIST ya da B, DEC gibi bir şey olması gerekiyor.
+
+372
+00:46:03,860 --> 00:46:05,699
+çünkü başlangıç hep bununla ifade ediliyor.
+
+373
+00:46:05,818 --> 00:46:08,719
+B'yi gördüğü yerde soldan başlayarak ilerliyor.
+
+374
+00:46:08,800 --> 00:46:10,900
+B'yi gördüğü yerde oraya start pointer koyuyor.
+
+375
+00:46:10,900 --> 00:46:12,360
+Daha sonra ilerliyor.
+
+376
+00:46:12,838 --> 00:46:15,800
+Devam kısımları hep etiketlerde U ile başlıyor.
+
+377
+00:46:16,199 --> 00:46:19,719
+En son U'yu gördüğü yerde de oraya da end pointer koyuyor.
+
+378
+00:46:20,699 --> 00:46:24,940
+Bu şekilde çıkartılıyor varlık isimleri.
+
+379
+00:46:25,079 --> 00:46:30,378
+Daha sonra bunları L1, L2 listelerindekilerle karşılaştırıyorlar.
+
+380
+00:46:30,539 --> 00:46:31,440
+Doğru çıkartmış mı?
+
+381
+00:46:33,860 --> 00:46:39,838
+Bunda da Fazı Vazı diye bir kütüphane kullanmışlar. Fazı Vazı'yı string karşılaştırma yapıyormuş.
+
+382
+00:46:42,978 --> 00:46:44,338
+Efendim hocam duyamadım.
+
+383
+00:46:44,759 --> 00:46:47,278
+Niye diye? Tamam tamam.
+
+384
+00:46:47,579 --> 00:46:55,719
+Fazı Vazı'yı string karşılaştırma yapıyormuş. Bu string karşılaştırma ile doğru çıkartmış mıyız diye bir karşılaştırma yapmışlar.
+
+385
+00:46:56,278 --> 00:47:02,759
+Eğer doğru çıkartılmışsa tamam bir sorun yok. Eğer doğru çıkartılmamışsa bu Fazı Vazı kütüphanesi ayrıca
+
+386
+00:47:02,759 --> 00:47:15,378
+en benzer olan listedeki beş tane ana adayı çıkartmamış. Benzerlik oranlarına göre en fazla hangisi benziyorsa doğru olan odur deyip onu etiketleyerek düzeltiyormuş.
+
+387
+00:47:15,378 --> 00:47:27,878
+Burada benim makalede biraz eksik olarak gördüğüm bir kısım. Bu fazı vazinin çalışması ya da tahminde düzeltme modelinden önce ne kadar bir doğruluk oranı bulmuşlar?
+
+388
+00:47:27,878 --> 00:47:29,498
+Bundan hiç bahsetmemişler.
+
+389
+00:47:29,599 --> 00:47:34,079
+Yani bu kısımda atıyorum 30 tane ilk iterasyon da koydular.
+
+390
+00:47:34,498 --> 00:47:38,878
+29 tanesi yanlış olmuş ve 29'un da fazla vaziydi düzeltmiş olabilirler.
+
+391
+00:47:38,998 --> 00:47:40,259
+Bundan hiç bahsetmemişler.
+
+392
+00:47:42,599 --> 00:47:52,018
+Daha sonra her bir yinelemede bu etiketlenmemiş verim bölümleri düzeltildikten sonra, doğru
+
+393
+00:47:52,018 --> 00:47:54,239
+Bu şekilde etiketlendikten sonra ana...
+
+394
+00:47:54,239 --> 00:48:04,619
+modelin üzerine dahil edilmiş. Oradan beslemişler. Tekrar bir sınıf aldığında, tekrar bir düzeltme vakit yapmışlar. Böylece korpus büyümüş. Korpus büyüdükçe performans da artmış.
+
+395
+00:48:04,619 --> 00:48:19,898
+Burada sonuçlarda tabloda görüyoruz. Birinci iterasyonda seed dedikleri ana saf veri seti üzerinde. Eqlisi %85 bulmuşlar. Daha sonra 12 iterasyonu tamamladıklarında %92'ye kadar çıkmış.
+
+396
+00:48:19,898 --> 00:48:29,878
+Bu da referans olarak gösterdikleri %82'lik doğrulu kurulanan çalışmaya göre daha iyi bir doğrulu kurulunu vermiş.
+
+397
+00:48:30,079 --> 00:48:32,798
+Kürtten sonuçlarından kendileri de memnunlarmış.
+
+398
+00:48:35,820 --> 00:48:44,000
+Özletom geçmişi olursak, burada eğitim bölümlerinin özgeçmişlerde isimlerini eğitim dereceleri çıkartmasına başlamışlar.
+
+399
+00:48:43,998 --> 00:48:50,619
+Deren öğrenme tabanlı varlık tanıma yöntemlerinde büyük miktarda veri gerekiyor.
+
+400
+00:48:50,719 --> 00:48:53,420
+Bunu önlemek için yarı denetimde bir yaklaşım kullanmışlar.
+
+401
+00:48:55,778 --> 00:49:03,420
+Tahmin edilmesi, eski etlenmemiş eğitim bölümlerinin tahmin edilmesi ve daha sonra bir düzeltme modülü kullanarak düzeltilmesini sağlamışlar.
+
+402
+00:49:04,119 --> 00:49:07,719
+Daha sonra düzeltilmiş verilere ilk kısımdaki ana veriyi eklemişler.
+
+403
+00:49:07,719 --> 00:49:14,418
+Güncellenen set için tekrar eğitim yapmışlar ve doğruluk aranın giderek yükseldiğini görmüşler.
+
+404
+00:49:16,099 --> 00:49:18,139
+Teşekkür ederim. Ben son anım bu kadar.
+
+405
+00:49:19,318 --> 00:49:22,498
+Böyle bir çalışmayı yapmaya neden gerek duymuşlar sence?
+
+406
+00:49:24,318 --> 00:49:26,199
+Hocam bunu ben de biraz merak ettim.
+
+407
+00:49:26,719 --> 00:49:33,378
+Çünkü açıkçası şimdiye kadar yapılan şeylerden çok da bir farkı olduğunu düşünmedim.
+
+408
+00:49:33,378 --> 00:49:42,719
+Yani çok daha büyük veriler üzerinde daha iyi denilen modelleri de %98'lik doğruluk oranlarına erişen modeller var artık.
+
+409
+00:49:43,199 --> 00:49:44,798
+Bir de kendilerini aşmış durumdalar.
+
+410
+00:49:45,159 --> 00:49:47,239
+Neden böyle bir şeye ihtiyaç durmuşlar diye baktım.
+
+411
+00:49:47,338 --> 00:49:51,239
+Daha sonra bu sonuç kısmının altını ben de veri setini merak ediyordum.
+
+412
+00:49:51,358 --> 00:49:54,280
+Nasıl bir şey yapmışlar, ben de bir şeyler deneyebilir miyim diye düşündüm.
+
+413
+00:49:54,739 --> 00:50:00,259
+Fark ettim ki biz bunu özel bir firma için kullandık veri setini.
+
+414
+00:50:00,878 --> 00:50:02,619
+O yüzden paylaşamayız yazmışlar.
+
+415
+00:50:02,619 --> 00:50:08,539
+fark ettim ki aslında sanırım biraz bir işmiş yani bu. Bir firmaya yapmışlar bunu.
+
+416
+00:50:09,639 --> 00:50:12,259
+Senin projen ne? Ders projesi ne?
+
+417
+00:50:12,478 --> 00:50:15,018
+Benimki de varlık ismi tanımayla bilgi çıkarım hocam.
+
+418
+00:50:15,398 --> 00:50:16,219
+Başladın değil mi?
+
+419
+00:50:16,818 --> 00:50:22,219
+Başladım ama henüz bir sonuca elde edilmiş değilim. Bir şeyler deniyorum.
+
+420
+00:50:22,219 --> 00:50:28,998
+Hocam sizin kemiğin web sitesine koyduğunuz bazı fabrik veri setleri var.
+
+421
+00:50:28,998 --> 00:50:49,539
+Burada ben bir haber veri seti gördüm. Aslında classification için kullanılması önerilmiş ama o veri setini bu şekilde kullanırsam sizce çok mu basit kalır? Çünkü biraz küçüktü. Yani 5 ay bir kategoride 10'ar tane haber falan vardı. Ben öyle bir şeyler yapmayı denedim ama.
+
+422
+00:50:49,539 --> 00:50:55,719
+Yok canım ne küçük kalsın. Yani sonuçta %50'nin üzerinde bir bulma olsun.
+
+423
+00:50:55,719 --> 00:51:23,778
+Anladım. Peki ben ilk önce böyle özgeçmiş denemek istedim. Bazı veri setleri de buldum. İşte eğitim mi çıkartsam, okul ismi çıkartmayı denesem gibi ama bu özel isimlerin etiketlenmesi kısmı beni biraz zorladı. O yüzden ne yapacağımı bilemedim. Habere döndüm. Haberde de haberde ne çıkartsam, konum mu çıkartsam, ismimi çıkartsam onu deniyorum şu an. Siz ne önerirsiniz?
+
+424
+00:51:23,778 --> 00:51:40,599
+Yani öyle konu çıkartmak falan zorlar seni daha henüz çok az da zaman kaldı. Sen yine klasik bildiğimiz gibi location, person, organizasyon gibi genel bilinen NLPT'eki başlıkları çıkar.
+
+425
+00:51:41,239 --> 00:51:43,659
+Tamam, tamam. Haklısınız. Teşekkür ederim.
+
+426
+00:51:43,659 --> 00:51:46,599
+Peki. Sorunuz var mı Hecanlura?
+
+427
+00:51:47,398 --> 00:51:53,719
+Yok. Geçen hafta sunum yapmamış bir arkadaşımız vardı. [öğrenci].
+
+428
+00:51:54,643 --> 00:52:17,403
+Şu an halen aramızda yok. Bana herhangi bir mail ile de geri dönüş yapmadı. Kayıtlara girmesi amacıyla bunu söylüyorum. Gelmezse bunun sonuna kadar [öğrenci]'den sonra yani vermedi kabul edeceğim seminerini. Şimdi son konuşmacımız [öğrenci].
+
+429
+00:52:21,204 --> 00:52:23,003
+Merhaba hocam, sesim geliyor mu?
+
+430
+00:52:23,302 --> 00:52:28,422
+Geliyor. Kendini Astrolis gibi hissetme, sona çıktım diye.
+
+431
+00:52:29,402 --> 00:52:31,143
+Hiç öyle hissetmedim hocam.
+
+432
+00:52:31,282 --> 00:52:31,563
+Tamam.
+
+433
+00:52:32,523 --> 00:52:33,682
+Hadi bakalım.
+
+434
+00:52:34,182 --> 00:52:36,722
+Tamam. Ben önce ekranımı paylaşayım hocam.
+
+435
+00:52:46,132 --> 00:52:52,132
+Yalnız full screen'e geçersem ben daha rahat görebiliyorum.
+
+436
+00:52:52,251 --> 00:52:52,510
+Tabii.
+
+437
+00:52:53,971 --> 00:52:54,831
+Onun yanı.
+
+438
+00:52:55,771 --> 00:52:56,210
+Ha tamam.
+
+439
+00:52:58,170 --> 00:52:59,472
+Okey, şu an tamam.
+
+440
+00:53:00,570 --> 00:53:05,311
+Öncelikle kendimi tanıtayım. Bilgisayar Mahallesi'nde ben de yüksek lisansımı yapıyorum.
+
+441
+00:53:06,311 --> 00:53:08,110
+Bu üçüncü dönemim.
+
+442
+00:53:08,751 --> 00:53:10,931
+Banu Hoca kendisi tez hocam olur.
+
+443
+00:53:10,931 --> 00:53:24,291
+Bugün Türkçe tabanlı, Türkçe için yapılmış bir soru cevap sistemini anlatacağım. Makale anlatamadı A Turkish Question Answering System Based on Deep Learning Neral Networks diye geçiyor.
+
+444
+00:53:24,811 --> 00:53:34,451
+Bunun arka tarafında anlatılan BERT modeli olsun, ondan sonra değişik yöntemler olsun bunu kapsayan bir makale.
+
+445
+00:53:34,451 --> 00:53:46,231
+benim de bu ders için projem ve tezimin bir kısmında classification yapacağım için BERT Saban'la bu seminer konusunda bu makaleyi seçmeyi tercih ettim.
+
+446
+00:53:47,451 --> 00:53:53,492
+Bu sebeple öncelikle bu makalenin ne zaman yayınlandığı, yazarları kim onları anlatmak istiyorum.
+
+447
+00:53:53,492 --> 00:53:58,672
+Makale yazarları Cavide Balkı, Gemilter'le Dionysus Golarast diye geçiyor.
+
+448
+00:53:58,672 --> 00:54:15,391
+Yeditepe Üniversitesi'nin kullanılarak çıkmış bir makale. Makalenin yayın tarihi çok yeni, Eylül 2021. Makalenin yayınlandığı mecra ise Dergi Park, Zeki Sistemler, Terör ve Uygulamaları Dergisi.
+
+449
+00:54:15,391 --> 00:54:20,871
+Ajanda şöyle ilerleyeceğiz bu sonunda.
+
+450
+00:54:21,311 --> 00:54:22,911
+İlk olarak girişten bahsedeceğiz.
+
+451
+00:54:23,030 --> 00:54:24,590
+Makalenin girişiyle ilerleyeceğiz.
+
+452
+00:54:24,590 --> 00:54:29,851
+Sonra makalede makalenin yol aldığı örnek çalışmalar var.
+
+453
+00:54:30,030 --> 00:54:31,871
+Bu yaptığı için bahsedeceğiz.
+
+454
+00:54:31,990 --> 00:54:33,311
+Bunu özellikle değinmek istedim.
+
+455
+00:54:33,451 --> 00:54:38,931
+Çünkü Türkçe için planlı kullanabileceğimiz hazır eğitilmiş dil modelleri var.
+
+456
+00:54:39,331 --> 00:54:42,731
+Belki herhangi birimize bir fikir verebilir diye düşündüm.
+
+457
+00:54:43,251 --> 00:54:45,231
+Üçüncü aşaması ve hükümesi detayı.
+
+458
+00:54:45,391 --> 00:54:53,130
+4 kullanılan metot, 5 eğitim prosedürü, 6 eğitim sonuç ve değerlendirme, 7 de kaynakçı olarak ilerleyecek sunumumuz.
+
+459
+00:54:53,130 --> 00:55:03,572
+İlk olarak girişte, duydurdu gibi morfolojik açıdan karmaşık, böyle sondan eklemeli dillerde morfolojik analizler ciddi anlamda zor oluyor.
+
+460
+00:55:04,291 --> 00:55:13,132
+Bu makalede ilk olarak buna değinmiş. Zaten şu an çok fazla NLP içinde klasik makine öğrenmesi yöntemlerinde belirli bir başarı yakalanmış.
+
+461
+00:55:13,132 --> 00:55:31,971
+Bunun en büyük başarı yakalanmasından kastımız da İngilizce için yapılan çalışmalar. Türkçe gibi böyle sonran ekleme, morfoloji yapısı karışık dillerde çok fazla çalışma yapılamadığı için yapılıyor ama daha fazla ellerinde kaynak olmadığı için belirli bir sonuçlara ulaşamıyoruz.
+
+462
+00:55:31,971 --> 00:55:50,331
+Bu projenin amacı da bu yöntemleri deneyerek aslında bir tür bir sistem öneriyorlar bize. Bu sistemde şöyle Türkçe dili için yapılmış bankacılık sektöründeki soru cevap yöntemi yani makinenin okuyabileceği bir soru cevap yöntemi önermek istiyorlar.
+
+463
+00:55:50,331 --> 00:56:00,391
+Din modelleri de klasik makine öğrenmesi algoritmaları yerine bir transformsları kullanarak yapmışlar. Bu transformslardan da BERT modelini kullanmışlar din modeli için.
+
+464
+00:56:00,391 --> 00:56:09,492
+Bu aşağıdaki şekilde zaten şey kullanıyor, bir tane datamız var bizim, büyük bir veri topluluğu, veri kümesi, veri yığını.
+
+465
+00:56:10,050 --> 00:56:15,291
+Bunu biz BERT Dil modeline verdiğimizde bize model bir çıktı üretiyor.
+
+466
+00:56:15,911 --> 00:56:21,550
+Çıktıktan kastımızda mesela şurada demiş ki mesela bir şey hakkında bilgi alabilir miyim diye soruyor.
+
+467
+00:56:22,132 --> 00:56:29,431
+Bunun MERT çıktısına göre de şu MRQA dediği şey, Measure-Read Question Answering Model, jeneri neye geçiyor.
+
+468
+00:56:29,431 --> 00:56:45,311
+Yani bizim question answer modelimiz bir çıktı üretecek BERT aracılığıyla. Burada da mesela diyor ki size şu kadar kredi belki alabilirsiniz tarzı bir dönüşüm yapıyor. Bu proje daha çok bu tarz bir soru cevap almayı hedefliyor.
+
+469
+00:56:46,483 --> 00:57:11,463
+yapılan bu ilgili çalışmalarda da bir araştırma yapmaya başlamışlar. İlk olarak Türkçedeki Question Answer QA olarak kısa attım mı? QA çalışmaları, arama motorlarındaki sorguların cevaplarını iyileştirmeye yönelik yapılmış. Bu iyileştirme yönelik içinde nasıl yapılmış? Türkçe için özellikle hazırlanmış kütüphaneler var. Bunlar morfolojik analizleri çözümlenmesi için yapılmış.
+
+470
+00:57:11,463 --> 00:57:21,043
+ne bu? Hepimizin aşina olduğunu düşündüğüm Zemberek ve Tribank diye. Bunlar kural tabağına yaklaşımlar öneriyorlar genellikle.
+
+471
+00:57:21,943 --> 00:57:28,003
+Tabii ki Zemberek'in classification kısmını adlıyorum. O çünkü derin öğrenme tabağına bir şey kullanıyor.
+
+472
+00:57:28,003 --> 00:57:29,402
+Çok pardon.
+
+473
+00:57:32,762 --> 00:57:39,922
+Kullanıyor. Ama son zamanlarda bu GPO'nun gelişmesi paralel hesaplamanın artmasıyla birlikte
+
+474
+00:57:39,922 --> 00:58:09,902
+nörol ağlarda eğitim çıktıklarının başarı oranlarında bir ağır atış gözlemleniyor. Bu nörol ağlık eğitimi kullanmaya başlanıyor. Bununla ilk olarak örneklerde nerede karşılaşıyoruz? ELMO, GPT yani Gentle Petrain Transformer tarzı modellerde karşılaşıyoruz. Bu GPT, ELMO, tek denli transformerlar. Şimdi transformer diyorum ama birazdan daha içine gireceğim. Transformer'ın aslında dediğimiz
+
+475
+00:58:09,922 --> 00:58:20,322
+ne olduğuna da biraz değineceğim. Ve Google'ın 2018 yılında çıkardığı devrim nitelinde diye konuşulan bir model var, BERT modeli.
+
+476
+00:58:20,623 --> 00:58:28,123
+Bir Direction Encoder, Representation, from Transformers'e geçiyor. GPT tek yönlüyken BERT modeli çift yönlü çalışıyor.
+
+477
+00:58:28,722 --> 00:58:38,422
+Şimdi bu tarz modeller artık çıkmaya başlıyor 2018 yılında. Böyle olunca da İngilizce için genelleştirilmiş MRQA için bir yarışma düzenleniyor 2019 yılında.
+
+478
+00:58:38,422 --> 00:58:54,882
+Bu İngilizce için düzenlenen yarışmaya ciddi bir yoğun ve talep oluşuyor. Bu talepte değişik değişik İngilizce için modeller gelişiyor ve bu BERT tabağın bulunan genelde BERT'ın burada ise yıldızı parlıyor.
+
+479
+00:58:54,882 --> 00:59:05,483
+Şimdi böyle olunca birçok ülkeden buna ülkenin de aslında ihtiyacı olduğu açığa çıkıyor. Böyle olunca bunun aslında math language bir modele dönüşmesi gerektiği düşünülüyor.
+
+480
+00:59:05,483 --> 00:59:14,864
+O yüzden buradaki MATLANGUAGE anlamında gelen NBERT ismiyle bir implementasyonlar gerçekleştiriliyor bu farklı diller için.
+
+481
+00:59:15,284 --> 00:59:24,523
+Ana BERT modelinin üzerine bir iki katman eklenerek kendi ülke bazı, kendi dillerine yönelik bir model oluşuyorlar NBERT adına.
+
+482
+00:59:24,523 --> 00:59:35,242
+Ama bu büyük performanslı oluyor. Çünkü diller bildiğiniz gibi özel çalışma gerektirdiği için bu çok performanslı çalışmıyor.
+
+483
+00:59:35,483 --> 00:59:59,983
+Bu böyle çıkınca bazı ülkedeki bazı diller için bazı çalışmalar gerçekleşiyor. Bunlardan bazıları ne? Arapça. Arapça için bir tane Araberç'in bir model gerçekleşiyor. Bunun arkasında RCD dediğimiz Arabic Reading Compressing Dataset kullanılıyor. Bu ama test için. Aslında bunun ön eğitim aşamasında birazdan anlatacağım.
+
+484
+01:00:00,000 --> 01:00:16,840
+pretrained ve fine-tuning kısmındaki BERT'teki pretrained kısmında kullanılan kısım. Bunun fine-tuning kısmı için ise İngilizce'deki Stanford Quarlesming as for dataset tarzı.
+
+485
+01:00:16,840 --> 01:00:26,518
+Bu tarz bir dataset'ini İngilizce'den Arapçaya otomotif olarak çeviriyorlar. Yani makine çevirisi yöntemi kullanıyorlar burada.
+
+486
+01:00:26,518 --> 01:00:55,860
+Dataset adi etmek için, question answering için. Sonra bunu eğitiyorlar ama bunun performansı da en belkten farklı çıkmıyor. Bununla düşük performans, çok iyi gelmiyor. Sonra Fransızca için bir Cameron BERT modeli uygulanıyor. Bunların başına çıktılarından makalede bahsedilmemiş. Korayca için KORBET uygulanıyor. Bunu ben yaptığım araştırmalarda şey görmüştüm. Korayca'da aslında uçtan uç eklemeli bir dil olduğu için.
+
+487
+01:00:55,860 --> 01:01:03,478
+Evet çekil yapılısı farklılığı var ama bu kullanılan modelin Türkçe içinde daha başarılı olacağına yönet çalışmalar var.
+
+488
+01:01:03,699 --> 01:01:04,818
+Bunu özellikle koyuyorum.
+
+489
+01:01:05,519 --> 01:01:08,239
+Fahşi için Perspert model üretiliyor.
+
+490
+01:01:08,778 --> 01:01:13,179
+Çinci için artık Çinci, Google buna el atıyor.
+
+491
+01:01:13,179 --> 01:01:35,778
+Çince 2018'inde kendisi SimearC, DRC'di, JRC datasetlerini kullanarak bu üç datasetini birleştirerek bir eğitim yapıyor. Çince eğitim, bir model eğitim yapıyor. Bunların da başarı çıktığıları üretilmemiş. Buraya kadar sorunuz varsa alabilirim.
+
+492
+01:01:36,940 --> 01:01:40,800
+Yok ben zaten direkt ortadan giriyorum. Arkadaşları bilmem.
+
+493
+01:01:40,798 --> 01:02:09,659
+Tamam. Şimdi bu projede kullanılan veri kümesi detayına gelecek olursak, şimdi bizim BERT modelimizde iki aşama var demiştim. Biri pretrend kısmı, iki fine tuning kısmı. Şimdi bu fine tuning kısmından kastım da benim. BERT arkadaşlar şey diye geçiyor, generalized language modeling diye geçiyor. Yani genelleştirilmiş dil modeli. Bu modeller eğitilmiş, böyle saatlerce tipi üzerinde günlerce eğitilmiş modeller.
+
+494
+01:02:09,659 --> 01:02:16,159
+Zaten yanlış hatırlamıyorsam 8 milyar kelime üzerinden eğitiyor Google bunu.
+
+495
+01:02:16,639 --> 01:02:23,119
+Bizler bunları yani şu an için böyle bir donanımlarımız olmadığı için makaleye kullanan arkadaşlar da öyle diyor.
+
+496
+01:02:23,900 --> 01:02:31,199
+Olmadığı için bu eğitilmiş ağırlıklar üzerine bazı yeni ağırlıklar eklenerek fine tuning işlemi yapılıyor.
+
+497
+01:02:31,300 --> 01:02:32,599
+Ne bu fine tuning işlemi?
+
+498
+01:02:32,599 --> 01:02:37,918
+Bizim kendi domenimize göre, kendi dilimize göre bazı ince ayarlar yapmamız gerekiyor.
+
+499
+01:02:37,918 --> 01:03:01,059
+Örnek veriyorum normal BERT'in kendi iç kısmında 12 tane transformers katmanı kullanırken ben oraya bir katman daha ekliyorum kendi katmanımda. Ama oradaki parametre ayarlarını değiştiriyorum. Bu tarz bir yapı. Şimdi bu pretrain kısmına eklenen genel Türkçe veri setinde eğitiliyor. Bunlara da bir iki katman eklemişler. Pretrain için 3 tane veri seti kullanılmışlar.
+
+500
+01:03:01,059 --> 01:03:05,380
+Fintun'un içinde bankacılık sektörüne ait bir veri seti hükümesi kullanılmış.
+
+501
+01:03:05,880 --> 01:03:10,338
+Bunun detaylarına bakacak olursak eğitim için, pre-training eğitiminden bahsediyorum.
+
+502
+01:03:10,880 --> 01:03:14,300
+Wikipedia sayfaları yaklaşık 4.5 milyon centisden oluşuyor.
+
+503
+01:03:14,398 --> 01:03:16,739
+Bu Türkçe bir dataset bu da.
+
+504
+01:03:17,478 --> 01:03:22,579
+Ondan sonra haber makaleleri, bu da 20 milyonluk bu cümle ve ekonomik korpus.
+
+505
+01:03:22,579 --> 01:03:28,579
+Çünkü bu anladığım kadarıyla bu makaleyi yazan iki kişi de TEP Bankası'nda çalışıyor.
+
+506
+01:03:28,579 --> 01:03:35,639
+ARF Bankası'nda. O bankanın büyük ihtimalle oradaki projeye yönelik bir çalışma bu.
+
+507
+01:03:36,039 --> 01:03:43,099
+Ekonomi korpus oluşturmuşlar. Bu da ne? Web sayfalarındaki ekonomi blok sayfalarından alınmış bir datasit. Böyle 270 binlik.
+
+508
+01:03:43,668 --> 01:04:11,047
+sonra ince ayar kısmında, bunun eğitim aşamasında kullanılmış. BERT'in ince ayar kısmında da yine 3 tane dataset kullanılıyor. Biraz önce yaptığımız Arapça için yapılan Araberte kullanılan Fentonik kısmındaki squat Türkçe için kullanılmış. Bunu İngilizceden Türkçe'ye otomatik hale çevirmişler. Otomatik hale çevirilmişte mesela İngilizce sorulan bir cevap, İngilizce sorulan bir soru ve ona verilen bir cevap var. Bunun Türkçe için de durumu var.
+
+509
+01:04:11,047 --> 01:04:30,547
+Sonra yine haberlerden alan bir Türkçe soru cevap kısmı var. Bu da yine makine çevirsi yöntemiyle kullanılmış. Bunların her bir artık Türkçe olarak elimizde hazır. Ve kendi bu iki arkadaşın ve belirli bazı kişilerin hazırladığı söylenen makalede kişiler kendi bankacılığa ait, domeyne sahip bir veri seti hazırlıyor.
+
+510
+01:04:30,547 --> 01:04:41,487
+679 dokümandan oluşan işte 17708 question yani sorusu olan bu sorunun eşit sayıda da cevabı olan bir dataset hazırlıyorlar.
+
+511
+01:04:41,487 --> 01:04:51,447
+Bu kısımlar fine tuning kiti kullanıyor. Bunun için artık dataset'i hazırlıyorlar. Bunun için bir metot denemeleri gerekiyor.
+
+512
+01:04:51,447 --> 01:05:01,586
+yaptıkları araştırmalardan BERT'in Koyş'in S-Fönig'de ciddi anlamda başarı kazanmasıyla birlikte BERT modelini kullanmak istiyorlar.
+
+513
+01:05:01,586 --> 01:05:11,686
+BERT'in iki tane alt tarafta modeli var. BERT-BASE daha çok OpenAI'a benzeyen bir taraftı. BERT-BASE'i kullanmayı tercih ediyorlar.
+
+514
+01:05:12,067 --> 01:05:20,547
+Şimdi BERT-BASE bir transformer. Transformers'tan kastım şu, öncelikle RNN'e gitmemiz gerekiyor.
+
+515
+01:05:20,547 --> 01:05:30,206
+RNN dediğimiz modelde mesela bir söylemde hep sıralı bir cümle sıralı olarak dizilmiş kelimelerden oluşuyor.
+
+516
+01:05:30,586 --> 01:05:35,847
+O kelimelerin sırasının ve dizisinin yerinin bilinmesi gerekiyor, akılda tutulması gerekiyor.
+
+517
+01:05:35,847 --> 01:05:49,766
+Bunu RNN başarıyordu ama bu uzun cümleler için bunun sırasını tutmak, bunları sayısallaştırmak ciddi bir maliyet olduğu için bunu bir çözüm üretmek istiyorlardı.
+
+518
+01:05:49,766 --> 01:06:03,927
+Bunun için LSTM modeli üretildi. LSTM modelinde ne yapılıyordu? Bazı şeylerin ağırlıkları, kelimeleri unutularak önemli olan kelimelerin ağırlığının değerinin düşürülmesine engel oluyordu.
+
+519
+01:06:03,927 --> 01:06:15,547
+Şimdi böyle olunca RNN yapısında hidden layer'lar bir sonraki katmanın inputu olarak giriyordu. Yani çıkan hidden layer bir sonraki katmanın hidden olarak veriyordu.
+
+520
+01:06:15,547 --> 01:06:23,407
+ve en sondaki encoder ve decoder kısmındaki encoder'ın son hidden layer'ı decoder'a input olarak veriliyordu.
+
+521
+01:06:23,907 --> 01:06:32,626
+RNN'de şimdi uzun cümlelerde problem olunca denilen bir yöntemde, attention adı verilen yöntemde deniliyor ki,
+
+522
+01:06:33,007 --> 01:06:39,987
+RNN'deki her hidden layer, encoder'daki hidden layer katmanları decoder'a 3'ü birlikte verilsin.
+
+523
+01:06:39,987 --> 01:06:43,146
+3 tane hidden layer çıktı, 3'ü de birlikte decoder'a verilsin.
+
+524
+01:06:43,146 --> 01:06:52,086
+RNN'de 3 tane hidden layer olmasına rağmen 3. son hidden layer decoder kısmına verilirken
+
+525
+01:06:52,086 --> 01:06:57,847
+attention dediğimiz kısımda 3 hidden layer de decoder'a veriliyordu enkoder çıktısında.
+
+526
+01:06:57,847 --> 01:07:03,367
+Böyle olunca bu çok güzel bir başarı adetti uzun söyleyenler için falan olduğu için.
+
+527
+01:07:05,012 --> 01:07:26,871
+Böyle olunca bu attention kısmı başarı elde edince GPU'nun gelişmesi, paralel hesaplamanın gelişmesiyle birlikte bir transformer kavramı oluşturmuşlar. Bunların biraz tarihçileri var makalede. İncelemek isterseniz siz de oradan bakabilirsiniz. Transformer'larda genel olarak 6 tane attention'ın paralel olarak çalışmasından meydana geldi.
+
+528
+01:07:26,871 --> 01:07:56,471
+öğreniyor. Burada bunun genel bir şeması var. Bunun çok detayına girmeyeceğim ama girmeyin hocam. Şöyle üzerinden bahsedebiliriz sadece. Burada kelimeler sayısallaştırılıyor. Kelimeler sayısallaştırılıyor ama kelimelerin sırası da indekslenerek pozisyon, encoding yöntemle o da bir vektöre çeviriliyor. Sonra bu iki vektör toplandığında hem kelimenin sırası hem de kelimenin önem değeri yani vektörleştirilmiş hali tutuluyor.
+
+529
+01:07:56,471 --> 01:07:58,211
+Bu yüzden önemli bir kavram.
+
+530
+01:07:59,471 --> 01:08:01,771
+Şimdi transformer kısmına değindik.
+
+531
+01:08:02,170 --> 01:08:04,931
+BERT, şimdi BERT'te ne yapmamız gerekiyor?
+
+532
+01:08:04,931 --> 01:08:09,530
+Önce normal NLT işlemlerinde de bir ön işleme aşamamız var bizim.
+
+533
+01:08:09,931 --> 01:08:11,871
+Bunlar ne? Part of speech.
+
+534
+01:08:12,150 --> 01:08:14,030
+Part of speech bunlardan biri.
+
+535
+01:08:14,471 --> 01:08:22,452
+Bunların ben token'larını ayırmak için işte BERT şey kullanıyor bir tane.
+
+536
+01:08:22,850 --> 01:08:25,711
+Alt kelime tabanlı en belli bir yöntemi.
+
+537
+01:08:25,711 --> 01:08:42,551
+Buna da wordpiece, wordbase, embedding demiş. Sonra maskeli dil modeli kullanıyor ve sonra cümle tahmini yapmak için NLP, NCP kullanıyor ve çift yönlü transformerlar kullanıyor.
+
+538
+01:08:43,831 --> 01:08:49,451
+Bu kullanılan metotlardan alt kelime tabanına embedding sistemi yani wordpiece yöntemi.
+
+539
+01:08:49,451 --> 01:09:15,570
+Şimdi burada makalede bir örnek vermişler. Normalde hani kural tabanında daha çok zembelek kütüphanesinin kullanılıyor deniliyordu ya. Çekoslovakya okuyamıyorum ama burada görüyorsunuz siz. Zembeleğin ayırma kısmı bu. Burada biraz problem var kökenlerini ayırmada falan. O yüzden deniliyor ki bu Bert'ın kullandığı arka taraftaki embedding sistemine, wordpiece'de.
+
+540
+01:09:15,570 --> 01:09:32,731
+diyor ki bütün cümleyi tara, kelime olarak değil cümleyi tara, sonra kelimeleri ayır, kelimeleri harfleri ayır, harflerin bir arada geçme olasılığını hesapla ve son ayık olarak düşündüklerinin başına iki tane diyez işareti koyuyor.
+
+541
+01:09:32,731 --> 01:09:37,311
+İki tane diyez işareti koyduktan sonra yapımız şu hale geliyor.
+
+542
+01:09:37,671 --> 01:09:42,391
+Mesela çek kelimesi bir arada geçtiği için bunu bir yapı olarak alıyor.
+
+543
+01:09:42,872 --> 01:09:47,032
+Osun daha çok son ek olarak gelebileceğini düşünüyor.
+
+544
+01:09:47,430 --> 01:09:48,952
+Bu tarz bir yapı oluşturuyor.
+
+545
+01:09:49,411 --> 01:09:52,650
+Üstteki zembeleyin görüntüsü, alttaki word piece'in görüntüsü.
+
+546
+01:09:53,850 --> 01:09:57,231
+Şimdi kullanılan metoda şey yaptık.
+
+547
+01:09:57,231 --> 01:09:58,190
+Ne derler ona?
+
+548
+01:09:58,350 --> 01:09:59,811
+Embedding tarafını yaptık.
+
+549
+01:09:59,952 --> 01:10:01,011
+Word embedding tarafını.
+
+550
+01:10:01,011 --> 01:10:12,171
+Maskeleme için ise biraz önce şurada bahsettiğim word2vec tarafı, maskeleme tarafı ve bir sonraki cümle tarafı kısmındaki maskeleme tarafında ise
+
+551
+01:10:12,171 --> 01:10:17,612
+kullanan satanın bu maskeleme kısmı %15'ine uygulanıyor.
+
+552
+01:10:17,612 --> 01:10:26,731
+Yani %85'i kısmı bir yerde %15'i maskele seçiliyor ve %15'in kendi içerisindeki %80'ine
+
+553
+01:10:26,731 --> 01:10:33,551
+Aynen bırakılırken %15'i rastgele değiştiriliyor bazı kelimelerle.
+
+554
+01:10:33,551 --> 01:10:36,051
+Mesela burada aylarında donay yapmış.
+
+555
+01:10:36,551 --> 01:10:44,131
+Ondan sonra bakım kelimesi %10 aynı kalırken burada yağ kelimesini değiştirmiş, maskelemiş.
+
+556
+01:10:44,930 --> 01:10:47,332
+Yani bu yağ kelimesini görmüyor.
+
+557
+01:10:47,471 --> 01:10:51,291
+Böylelikle iki kelime arasındaki benzerliği yakalamaya çalışıyor.
+
+558
+01:10:52,020 --> 01:11:00,020
+yakalamaya çalışıyor. Böyle iki kelime arasındaki benzerliği, anlamı, bağlamı yakalamayı başarıyor.
+
+559
+01:11:00,359 --> 01:11:11,298
+Maskelemeden sonra maskeleme kelime arasındaki ilişkiyi gözetirken bir sonraki artık NCP yöntemi cümle arasındaki ilişkiyi gözetiyor.
+
+560
+01:11:11,738 --> 01:11:21,618
+Bunun için de şöyle yapıyor. İkinci cümlenin yüzde ellisi, mesela otuz kelime varsa, on beş kelimesi rastgele değiştiriliyor kendi arasında.
+
+561
+01:11:22,020 --> 01:11:35,199
+15'ine de hiç dokunulmuyor. 15 adetine de hiç dokunulmuyor. Böylelikle bunun ne kadar doğru tahmin edebileceğini düşünün. Yani cümle arasında ilişki kurmaya çalışıyor.
+
+562
+01:11:39,319 --> 01:11:51,199
+Bunlar yapıldıkları eğitim prosedörüne geçiyor makalede. Makalede dil modeli eğitim için ön eğitim deniyor. 32 bin kelimenin yer aldığı bir kelime sözlüğü oluşturmuşlar.
+
+563
+01:11:52,020 --> 01:12:09,078
+Bunlar biraz önce gösterdiğim Wikipedia haber siteleri, finans haber sitesi falan olan dataset kullanılarak yapılıyor. Bunların 2000'i ise finans sektörüne ait kelimelerden oluşmuş. Bunları kendileri belirlediklerini söylüyorlar.
+
+564
+01:12:09,078 --> 01:12:20,380
+WordPits tokenlaştırmada kullanılırken MLM dediğim biraz önceki maskeleme ve NCP bir sonraki cümlenin tahmin edilmesi yöntemleriyle birlikte bu model üretiliyor.
+
+565
+01:12:20,779 --> 01:12:38,078
+Bunu da üç veri setini birleştirerek yapıyorlar. Daha sonra veri kümenlerin ön işlemesindeki ince ayar kısmında yani fine tuning, pre-train ve fine tuning kısmındaki BERT'in, fine tuning kısmında bir tane Stanford Üniversitesi'ne ait bu data setini İngilizceden Türkçe'ye çeviriyorlar.
+
+566
+01:12:38,078 --> 01:12:45,179
+çeviriyorlar otomatik olarak makine öğrenmesi yöntemiyle. Ama bunda da bazı problemler olduğunu söylüyorlar.
+
+567
+01:12:45,658 --> 01:12:53,298
+Mesela İngilizce'de de soru cevap bir dataset ama o dataset'in sorusunun cevabının yanlış verildiği cevaplar var.
+
+568
+01:12:53,298 --> 01:13:02,298
+Bunların tespit edilmesi için ve bazılarına paragrafların falan başında başlamadığı için bir ön işleme aşaması yaptıklarını söylüyorlar.
+
+569
+01:13:03,338 --> 01:13:07,498
+Daha sonra bu eğitimi gerçekleştiriyorlar ve eğitim sonucunda
+
+570
+01:13:07,498 --> 01:13:36,038
+512 söylenlik şeyleri yapıyorlar böyle mesela cümlenin uzunluğu azalırsa başarı oranı nasıl etkisi var? Ondan sonra dökümandaki uzunluk artarsa ne olur? Sorgunun uzunluğu artarsa ne olur? Yani sorunun uzunluğu ne olursa cevap ne oluyor? Başarı oranı ne oluyor? Tarz bir şey yapmışlar. Bu EM dedikleri şey de exact match. Yani tam olarak eşleşen şeyler.
+
+571
+01:13:36,038 --> 01:13:51,139
+Burada mesela 512 uzunluktaki token uzunluğundaki cümle için F-score'ı %79 çıkıyor ve sorgunun uzunluğu, kelime uzunluğu 64 token olarak.
+
+572
+01:13:52,238 --> 01:13:55,899
+Cümle karakterin uzunluğu 64 olduğunda yine %79.
+
+573
+01:13:55,899 --> 01:13:57,559
+Bundan şöyle bir yorum yapıyorlar.
+
+574
+01:13:57,559 --> 01:14:22,219
+Eğer ki benim sorumun uzunluğu yüksekse yani burada gösterilenden ve verilen cevap da yüksekse yani birebir eşleşme varsa benim başarı oranımda artış var. Ama soru çok uzun benim vereceğim cevap biraz kısaysa gene bu aynı olmasına yönelikten şurada görebiliriz. Başarı oranında biraz düşüklük olduğu söyleniyor.
+
+575
+01:14:22,219 --> 01:14:49,359
+Tabii ki şu parametrelerde de değişiklik var. Böyle bir yorumlarım var onların. Sonra şimdi 17 bin tane yaklaşık soru vardı bu arkadaşların eğitime soktuğu data setde. Bunun yaklaşık %3.2'si tam anlamıyla yanlış cevap vermiş. Bu yanlış verilen cevaplardan 572 adetini 7 tane klasa göre ayırmışlar bunlar.
+
+576
+01:14:49,359 --> 01:14:50,319
+ne mesela
+
+577
+01:14:51,188 --> 01:15:05,787
+yanlış bir tane cevaplanmış soru, yanlış cevap soru var. Yanlış cevap var. Mesela sorulan sorunun muhtemel bir sürü cevabı var. Bunları analiz ettiklerinde bu tarz şeylere karşılaşmışlar.
+
+578
+01:15:05,787 --> 01:15:08,726
+şeylerle karşılaşmışlar.
+
+579
+01:15:09,108 --> 01:15:14,766
+Mesela sorunun daha fazla bilgi içermesi gerektiğine yönelik bir analiz yapmışlar.
+
+580
+01:15:14,766 --> 01:15:22,106
+Buna göre de yanlış cevap verdi ama buna belki de insanlar da yanlış cevap verebilir tarzı bir yorumda bulunuyorlar.
+
+581
+01:15:22,868 --> 01:15:24,766
+Sonuç değerlendirme kısmı bu kadardı.
+
+582
+01:15:25,387 --> 01:15:26,407
+Kaynakçam da bunlar.
+
+583
+01:15:26,646 --> 01:15:28,287
+Beni dinlediğiniz için teşekkür ederim.
+
+584
+01:15:30,087 --> 01:15:32,707
+[öğrenci] arada bir nefes alabilirdin.
+
+585
+01:15:32,707 --> 01:15:53,426
+Alt tarafı bir dakika daha uzardı sunumun. Çok sürekli anlattım ve öksürdüğün arada bir. Çok güzel hazırlanmışsın. Teşekkür ederim sana. Zorlu bir makaleydi bence. Daha önce bu alanda çalışmış mıydın?
+
+586
+01:15:53,426 --> 01:16:01,966
+Hocam aslında çalışmadım ama bu tezimiz için hani üç kısmın ilk kısmı şeydi ya imtihan tanımaydı ya
+
+587
+01:16:01,966 --> 01:16:06,747
+BERT'i araştırmaya başladım ben de. Türkçe BERT model BERT Türk öneriliyor.
+
+588
+01:16:06,747 --> 01:16:10,327
+Ama BERT Türkiye'nin önerildiği de güzel bir çalışma bulamadım ben.
+
+589
+01:16:10,688 --> 01:16:17,047
+O sebeple KovBERT denen modeli bir denedim. Çok güzel başarı elde edemedim ben onda.
+
+590
+01:16:17,627 --> 01:16:22,806
+Sonra kendim bir tane model oluşturdum. O yüzden bu makaleleri de zaten arka tarafta okuyordum ben.
+
+591
+01:16:22,806 --> 01:16:24,306
+Bu makale çok hoşuma gitti.
+
+592
+01:16:25,506 --> 01:16:27,226
+Kendimi bir tane model oluşturdum.
+
+593
+01:16:27,306 --> 01:16:28,766
+Projem için de onu kullandım.
+
+594
+01:16:29,407 --> 01:16:35,567
+Bu şey sınıflandırması, kemikte yer alan haber sınıflandırmasına yaklaşık yüzde 87 başarı yakaladım onunla.
+
+595
+01:16:35,926 --> 01:16:42,407
+Ama o benim için şu an aslında güzel ama çok da güzel bir sonuç değil kendi adıma.
+
+596
+01:16:43,346 --> 01:16:51,027
+Çok uzun söylemlerde böyle sonuç üretmesi güzel ama ben kısa söylemlerde biraz daha başarılı şeyler üretmesini istiyorum.
+
+597
+01:16:51,027 --> 01:16:57,987
+O yüzden kısa cevaplar için belki BERT'le birlikte başka bir modelleri de birleştirebilir miyiz diye düşünüyoruz şu an
+
+598
+01:16:57,987 --> 01:17:18,908
+Tamam, peki. Sorunuz var mı Atıca'ya? Yok. O zaman bugünkü sunumlarımız da bitiyor. Ben yine size mail atacağım arkadaşlar. Bu projeyle ilgili sınav takvimi belli oldu ama hangi haftaydı bizim dersimiz bilmiyorum.
+
+599
+01:17:18,908 --> 01:17:30,148
+Eğer sınav gününden önce projeyi bitirirseniz ve ben de müsait olursam önce de bazılarınıza bakabilirim.
+
+600
+01:17:30,728 --> 01:17:36,768
+Çünkü o gün çok kalabalık olduğunda yetiştiremeyebilir, başka dersinizin sınavıyla da çakışabilir.
+
+601
+01:17:36,768 --> 01:17:39,947
+Ama bir şekilde bir şeyler yaparız.
+
+602
+01:17:40,627 --> 01:17:43,768
+Herkes umarım sunumlarını Drive'a koymuştur.
+
+603
+01:17:44,466 --> 01:17:46,806
+Ona göre sisteme notlarınıza gireceğim.
+
+604
+01:17:46,806 --> 01:17:59,287
+sizin bana soracağınız bir şey varsa alayım yoksa sizleri uğurlayayım. İyi günler diyeyim. Finalde görüşmek üzere diyorum.
+
+605
+01:18:00,027 --> 01:18:02,247
+Görüşmek üzere hocam.

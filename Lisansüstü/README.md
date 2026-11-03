@@ -334,6 +334,7 @@
 
 #### 📚 Faydalı Olabilecek Kaynaklar
 
+- 📄 **Ders Kayıtları:** [Doğal Dil İşlemeye Kavramsal Bir Bakış Ders Kayıtları Altyazıları](./Do%C4%9Fal%20Dil%20%C4%B0%C5%9Flemeye%20Kavramsal%20Bir%20Bak%C4%B1%C5%9F/ders_kayitlari/) ✨
 - 📄 [Genel Çıkmış Sorular](https://drive.google.com/drive/folders/1imIiwx0xxIPWREGP-YqotnFdUku8Ealf)
   - ℹ️ Kaynaklar öğrenciler tarafından oluşturulmuştur. Bundan dolayı içeriklerin doğruluğu garanti edilemez.
 
