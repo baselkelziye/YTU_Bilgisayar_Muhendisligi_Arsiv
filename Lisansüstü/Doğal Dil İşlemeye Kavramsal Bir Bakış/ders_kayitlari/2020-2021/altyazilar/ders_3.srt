@@ -1,0 +1,5339 @@
+1
+00:01:04,243 --> 00:01:18,643
+Arkadaşlar, yalnız çok garip bir şey yaşıyorum şu an. Sadece [öğrenci]'yi görüyorum, başka hiç kimseyi görmüyorum. Ben bir çıkıp bir daha gireceğim. Haberiniz olsun.
+
+2
+00:01:32,180 --> 00:01:34,180
+böyle oldu.
+
+3
+00:01:39,956 --> 00:01:41,875
+[öğrenci]'nin resmi duruyor şu an.
+
+4
+00:01:43,515 --> 00:01:44,856
+Hocam ben de buradayım.
+
+5
+00:01:44,856 --> 00:01:46,615
+Diğer karşına gelmedim acaba.
+
+6
+00:01:47,175 --> 00:01:49,336
+Yok yok, 11 kişi gözüküyor.
+
+7
+00:01:49,595 --> 00:01:53,595
+Bir saniye [öğrenci], çözeceğim problemi, bir izin verin.
+
+8
+00:01:58,164 --> 00:01:59,823
+İnşallah. Çözacağım.
+
+9
+00:02:11,123 --> 00:02:32,384
+Ya çok garip. O kadar farklı platformlar kullanıyoruz ki farklı şeyler için. Bir sürü şey var bilgisayarımda şu an yüklü. Neyse en azından [öğrenci] sen artık yoksun ama eski hali yok şu an ekranımın. Bakalım screen share yapınca problem yaşayacak mıyım?
+
+10
+00:02:32,384 --> 00:02:47,704
+Bakalım. İçinizden geçen hafta sempozuma katılan oldu mu? Hayır. Olmadı.
+
+11
+00:02:57,972 --> 00:03:14,232
+Peki. Bilgisayarı yeni açtım. Mailimde iki tane NLP dersi alan bir şey gördüm. Mail gördüm ama işlerine girip bakmadım. İçinizden biri mi onu da bilmiyorum.
+
+12
+00:03:15,492 --> 00:03:25,591
+Neyse önemli değil. Dersten sonra bakarım. Bir güne katılabildim. Çok sevindim. Hani seslendin Atıç'e?
+
+13
+00:03:35,828 --> 00:03:38,127
+Hocam, perşembe gününe girebildim.
+
+14
+00:03:38,507 --> 00:03:40,607
+Ne vardı perşembe gününe hangi oturum?
+
+15
+00:03:40,847 --> 00:03:46,067
+Perşembe zaten öğleye kadar açılış filandı. Öğleden sonra da daha çok böyle...
+
+16
+00:03:46,067 --> 00:03:48,067
+Akıllı sistem ve akıllı bilmem ne.
+
+17
+00:03:48,788 --> 00:03:52,508
+Şey, dur onlar üzerine güzel çalışmalar vardı. Onlar ilgimi çektim baya.
+
+18
+00:03:53,428 --> 00:03:56,248
+İyi, peki. İşe yaradı. Senden başka da yok.
+
+19
+00:03:56,248 --> 00:04:02,147
+İyi, sana bir bonus hakkı kazandın oraya girdiğin için. Teşekkür ediyorum.
+
+20
+00:04:02,147 --> 00:04:19,207
+Şimdi arkadaşlar artık yavaş yavaş da geldiniz diyeceğim ama 13 kişi, 30 kişi almış bu dersi 13 kişi var. 5 dakikayı da geçti. Hadi birazcık kendimi göstereyim ama şeyi geçince kapatacağım.
+
+21
+00:04:21,207 --> 00:04:27,647
+Şimdi bugün çok hızlı bir şekilde iki tane slide bitireceğiz. Neden hızlı bir şekilde bitireceğiz?
+
+22
+00:04:27,647 --> 00:04:35,387
+İkinci slide yine çok sözel bir slide ve bazı şeyleri atlayarak geçeceğim.
+
+23
+00:04:36,487 --> 00:04:41,147
+Aklınıza bir şey takılırsa girer bakarsınız çünkü biraz dil bilgisiyle ilgili.
+
+24
+00:04:41,927 --> 00:04:45,607
+Üçüncü slide'ımız gramer ve dillere gireceğiz.
+
+25
+00:04:45,988 --> 00:04:50,467
+Biraz gramerden bahsedeceğiz ama bu gramer biz bildiğimiz gramer değil.
+
+26
+00:04:50,467 --> 00:04:52,827
+İşte dillerin üç tane türü var.
+
+27
+00:04:52,947 --> 00:04:54,447
+Tür 0 ve Tür 3'e kadar.
+
+28
+00:04:54,688 --> 00:04:56,067
+Onlardan bahsedeceğiz.
+
+29
+00:04:56,067 --> 00:05:10,907
+Ancak toparlarız. Regular expression'lara herhalde haftaya geçebiliriz. Regular expression'larla ilgili size küçük bir ödev vereceğim. Şu an bu sistem üzerine yeni yeni modüller ekliyorlar.
+
+30
+00:05:10,907 --> 00:05:29,187
+Eğer o modül eklenirse bu kullanımı sistem üzerinden bana ödevlerinizi yükleyebileceksiniz. Eğer olursa bilmiyorum. Olmazsa şey yapacağız. Bana mail'e gönderirsiniz. Ona o zaman geldiğinde bakarız.
+
+31
+00:05:29,188 --> 00:05:42,527
+Peki şimdi ekranımı da açayım. Dediğim gibi bu ikinci bölüm bir biliminin esasları. Biraz hızlı geçeceğim. Esas üçüncü bölüm üzerinde bugün konuşacağız.
+
+32
+00:05:43,667 --> 00:05:51,628
+Bir şeye bakayım. Önce bir açayım. Arkada o kadar iş var ki açılmış.
+
+33
+00:05:51,628 --> 00:05:55,247
+şey bulmaya çalışıyorum.
+
+34
+00:05:55,428 --> 00:05:59,648
+Derslerimin slide'ını nerede olduğu geldik.
+
+35
+00:06:00,387 --> 00:06:02,747
+İkinci bölüm, ikinci bölümü bulalım.
+
+36
+00:06:03,008 --> 00:06:04,128
+Onu da bulduk.
+
+37
+00:06:07,128 --> 00:06:08,208
+Tamamdır.
+
+38
+00:06:09,208 --> 00:06:11,368
+Şimdi size geri dönüyorum.
+
+39
+00:06:19,923 --> 00:06:32,283
+Yok ben bugün hiçbir şey beceremiyorum gerçekten. Çok özür dilerim arkadaşlar. Ne yaptığımı bile farkında değilim. Bir şeyler oluyor ama yine [öğrenci] var olduğu gibi.
+
+40
+00:06:33,363 --> 00:06:45,443
+Neyse. Bu arada [öğrenci] bu. Ben de [öğrenci] diye bir kare. Üzerinde de [öğrenci]. O da bizim öğrencimizmiş. O var.
+
+41
+00:06:45,443 --> 00:06:49,543
+Benim de konuşan hangi [öğrenci]'ydi? [öğrenci] mu, [öğrenci] mı?
+
+42
+00:06:51,063 --> 00:06:52,343
+[öğrenci] hocam.
+
+43
+00:06:52,623 --> 00:07:09,803
+Sendi, tamam peki. Evet şimdi ekran paylaşımımı yapıyorum. Geldik. Şunu da kenara alalım. Hatta şunu kapatayım. Hatta pardon şunu da açalım.
+
+44
+00:07:09,803 --> 00:07:13,683
+Hadi.
+
+45
+00:07:16,263 --> 00:07:20,403
+Dediğim gibi şimdi burada öncelikle şunu söyleyeceğiz.
+
+46
+00:07:20,523 --> 00:07:27,243
+Biz doğal dille iş yapıyorsak bizim mutlaka bir kelimelere bir de kurallara ihtiyacımız var.
+
+47
+00:07:27,243 --> 00:07:29,503
+Kelime dediğimiz şey sözlük.
+
+48
+00:07:30,003 --> 00:07:32,163
+Sözlüklere de leksikon diyoruz.
+
+49
+00:07:32,163 --> 00:07:42,363
+Ben yeri geldiğimde sadece isimlerden, sadece fiillerden, sadece eklerden oluşan leksikonlarım olacak, sözlüklerim.
+
+50
+00:07:42,483 --> 00:07:45,023
+Bir de dile özgü gramerlerim olacak.
+
+51
+00:07:46,523 --> 00:07:57,963
+Sadece genel kültür olsun, ilk şey sözlük Türk kültüründeki divanı lügati Türk diye çıkarılmış, Türkçeden Arapçaya olan bir sözlük.
+
+52
+00:07:57,964 --> 00:08:08,224
+Gramer'in içerisinde yine dil modellerinde göreceğimiz gram kavramı var. Bu gramı ağırlık birimiyle karıştırmayın.
+
+53
+00:08:08,224 --> 00:08:19,403
+İşte Arapçadan Sarf ve Nav ilmi ve Batı dillerinde de gram diye geçiyor. Bir dilde bölünebilen en küçük parçacıklar demektir.
+
+54
+00:08:19,403 --> 00:08:44,663
+Bu ne demek? Bir dökümanın en küçük birimi kelimedir. Ben gerekiyorsa kelimelerin her birini gram olarak adlandıracağım. Ya da kelimeler karakterlerden oluşuyor. Ben geri geldiğimde gramı karakter olarak adlandıracağım. Yani karakter tabanlı engramlar ya da kelime tabanlı engramlar diye dil modellerinde kullanacağız.
+
+55
+00:08:44,663 --> 00:08:48,563
+Gram kelimesi oradan aklınıza gelsin.
+
+56
+00:08:49,243 --> 00:08:53,343
+Doğal dil işlemede 6 tane ana başlığımız vardı.
+
+57
+00:08:54,003 --> 00:08:56,223
+Bunların birincisi fonoloji.
+
+58
+00:08:56,743 --> 00:08:58,043
+Fonoloji ne yapıyordu?
+
+59
+00:08:58,183 --> 00:09:00,463
+Dilin ses özelliklerini inceliyor.
+
+60
+00:09:01,103 --> 00:09:03,183
+Biz bu konuya pek girmiyoruz.
+
+61
+00:09:03,183 --> 00:09:07,623
+Yani ne demek dilin ses özelliklerini incelemek?
+
+62
+00:09:07,923 --> 00:09:09,803
+Ben bir A karakteri koydum.
+
+63
+00:09:09,903 --> 00:09:12,183
+Bu A karakterinin sesi.
+
+64
+00:09:12,443 --> 00:09:13,663
+İşte A diyorum ona.
+
+65
+00:09:13,663 --> 00:09:18,603
+Neden ağ diyorum da ağ gibi bir garip bir ses çıkarıp söylemiyorum.
+
+66
+00:09:19,223 --> 00:09:23,863
+Her dilin, her karakterin bir frekansı var.
+
+67
+00:09:23,863 --> 00:09:34,863
+Ben eğer speech to text yaptığımda her bir o frekanstan, o sesten onun hangi karaktere karşılık geldiğini çıkarabiliyorum.
+
+68
+00:09:35,783 --> 00:09:38,983
+Peki işte karakterlerden nereye geçiyordu?
+
+69
+00:09:39,163 --> 00:09:42,643
+Karakterler bir araya geliyordu, kelimeleri oluşturuyordu.
+
+70
+00:09:42,644 --> 00:09:59,164
+kelime yerine sözcük, sözcük yerine kelime kullanabilirim. Daha sonra işte kelimenin yerine sözcüğü kullandıkları için ben de sözcük kullanayım istiyorum ama ilkokul alışkanlığımdan dolayı kelime diye gidiyor bazen.
+
+71
+00:09:59,504 --> 00:10:04,763
+Cümle diyorum. Aslında cümlelerde şu an ilkokullarda tümcü olarak kullanılıyor.
+
+72
+00:10:05,299 --> 00:10:30,379
+yani tümce ve cümle aynı, sözcük ve kelime de aynı. Şimdi karakterlerimiz geldi, karakterler bir araya geldi, bir kelimeyi oluşturdu. Bu kelimeyi, yani bu sözcüğün yapısını inceleyen de biçim bilim, yani morfoloji, morfoloji analiz dediğimiz şey kelimenin biçim bilim yapısını inceliyor.
+
+73
+00:10:30,379 --> 00:10:38,020
+Yani nedir bu? Kelimenin köklerini ve o köklere eklenebilecek ekleri bulmaya çalışıyor.
+
+74
+00:10:38,719 --> 00:10:43,799
+Kullanacağımız zemberek mesela bana biçim bilim bilgisini kelimemin veriyor.
+
+75
+00:10:43,980 --> 00:10:51,020
+Ya da Stanford Üniversitesi'nin NLTL kiti bana kelimemin morfolojik analizini veriyor.
+
+76
+00:10:51,859 --> 00:10:56,060
+Kelimeyi inceledim. Evet kelime bu dile özgü bir kelime.
+
+77
+00:10:56,059 --> 00:11:05,959
+kelimenin kökünü ve eklerini biliyorum. Daha sonra bu kelimeleri yani sözcükleri bir araya getirerek bir cümle oluşturuyorum. Tümce.
+
+78
+00:11:05,959 --> 00:11:21,719
+İşte bu cümle yapısını da inceleyen söz dizim bilgisi diye geçiyor. Sentaks analiz. Buradaki sentaks analiz yazılmış olan bir tümcenin o dile ait olup olmadığını bana söylüyor.
+
+79
+00:11:21,719 --> 00:11:44,739
+Ne demek istiyorum? İstediğim şu kitap, kuş, petrol, araba. Hepsi morfolojik analizden geçmiş kelimeler. Bunları bir araya getirdim. Sonuna da noktayı koydum. Bu şimdi bir tümce mi oldu? Hayır. Türkçe için hiç anlamı olmayan bir cümle yapısı.
+
+80
+00:11:44,739 --> 00:11:51,119
+İşte sentaks analiz bana bu dile ait bir cümle olup olmadığını söyleyecek.
+
+81
+00:11:51,639 --> 00:11:59,859
+Zaten üçüncü slide'da da bu söz dizimsel analizle ilgili kısımları aslında daha detaylı olarak göreceğiz.
+
+82
+00:12:00,439 --> 00:12:04,939
+Peki cümlem bu dile ait bir cümle olduğunu anladım.
+
+83
+00:12:05,359 --> 00:12:07,999
+Artık bunun hangi aşamaya göndereceğim?
+
+84
+00:12:08,419 --> 00:12:09,539
+Semantik analize.
+
+85
+00:12:10,119 --> 00:12:13,039
+Yani anlamsal bilgiye göndereceğim.
+
+86
+00:12:13,039 --> 00:12:24,979
+Semantik analiz ne yapacak? Bu tümcinin anlamını anlamaya çalışacak. Yani kelime ve kelime öbeklerini anlamaya çalışacak. Ne demek istiyorum?
+
+87
+00:12:26,079 --> 00:12:41,579
+Mesela bu cümle ne demek istiyor? Ben bu cümleye kim, ne, nerede, neden sorularını sorabildiğimde alabilmeliyim.
+
+88
+00:12:41,579 --> 00:12:53,199
+ya da birlikte kullanılan eş dizimlilik adı verdiğimiz söz öbekleri var. Bunları acaba yakalayabiliyor muyum? Ne demek istiyorum bunları yakalayabiliyor muyum diye.
+
+89
+00:12:53,199 --> 00:12:58,459
+vereceğim örnek.
+
+90
+00:12:59,779 --> 00:13:00,179
+Birlikte
+
+91
+00:13:00,179 --> 00:13:06,059
+niye gelmiyor aklıma?
+
+92
+00:13:08,399 --> 00:13:09,119
+Allah Allah.
+
+93
+00:13:11,119 --> 00:13:14,219
+Birlikte kullanılan kelimeler.
+
+94
+00:13:15,520 --> 00:13:17,539
+Yıldız Teknik Üniversitesi olsun.
+
+95
+00:13:17,539 --> 00:13:26,079
+Yani ben yıldızı, tekniki ve üniversite kelimesini ayrı ayrı değerlendirirsem cümle çok farklı bir anlama gidebilir.
+
+96
+00:13:26,079 --> 00:13:34,379
+Ne bileyim yıldızı belki özne olarak alabilir ama yıldız teknik üniversitesi bir söz öbeği, üçü birlikte kullanılıyor.
+
+97
+00:13:34,759 --> 00:13:38,839
+Bu tip şeyleri bulup çıkarıyorum bu semantik analizden.
+
+98
+00:13:39,199 --> 00:13:43,499
+Yani öznelerini buluyorum, öğelerini buluyorum bir cümleni.
+
+99
+00:13:43,499 --> 00:13:51,779
+Bundan sonra cümleyi anlamaya çalıştım ama cümleyi anlamam sadece yetmiyor.
+
+100
+00:13:53,312 --> 00:14:03,272
+kontekstini de bilmem lazım. Bu da söylem bilgisi, diskors oluyor. Farklı türdeki metinlerin yapısını inceliyor.
+
+101
+00:14:03,272 --> 00:14:20,312
+Şimdi burada dediğim şey de nedir? Elimde bir metin var. Bu metinde ben cümle bazında bunları değerlendirdim ama cümlenin anlamı o kontekse göre değişebilir.
+
+102
+00:14:20,312 --> 00:14:38,752
+Ne söyleyebiliriz buna? Mesela benim çok olumsuz söylemiş olduğum bir cümle bana olumsuz gibi gelse de o konteks içerisinde, o döküman içerisinde aslında okuduğum da bütün olarak o cümle o kadar da anlamsız bir cümle değil.
+
+103
+00:14:38,751 --> 00:14:41,931
+Daha anlamlı bir şeyler bana ifade edebiliyor.
+
+104
+00:14:42,471 --> 00:14:53,391
+Eğer ben cümleyi sadece bağımsız olarak değerlendirirsem, farklı anlamlar çıkarabilirken, kontekste değerlendirirsem anlamı farklı olur.
+
+105
+00:14:53,391 --> 00:14:57,871
+Ne bileyim, eşyalarını, paralarını sakladı falan filan.
+
+106
+00:14:58,131 --> 00:15:02,291
+Böyle bir cümle okuduğunuzda bu bir insanın cimri olduğunu gösterir de,
+
+107
+00:15:02,291 --> 00:15:16,711
+Metin bütününe baktığında belki bir savaş anı insanlar eşyaları olmasın diye, gasp edilmesin diye eşyalarını saklıyor.
+
+108
+00:15:16,711 --> 00:15:20,711
+Bütününe baktığında daha olumlu bir anlam ifade edebilir.
+
+109
+00:15:20,831 --> 00:15:23,312
+Her ne kadar savaş olumlu bir şey olmasa bile.
+
+110
+00:15:23,812 --> 00:15:28,411
+Bu tip anlamları da söylem bilgisinden çıkarıyorduk.
+
+111
+00:15:28,411 --> 00:15:52,752
+Bundan sonraki de pragmatik yaklaşımda kullanım bilgisi. Bu da metin dışından bazı bilgilere ihtiyacım oluyordu. Bunun örneğini vermiştik ilk dersimizde. Hani ev sahibiyle kiracı arasında bir konuşma geçiyordu da kiracının köpeğim de var dediğinde ev sahibinin bu kötü bir şey demesiydi.
+
+112
+00:15:52,751 --> 00:16:05,271
+Halbuki ev sahibi-kiracı ilişkisinde evde hayvan beslemenin birçok ev sahibi tarafından hoş karşılanmadığı bilgisi metnin içeriğinde olan bir bilgi değil.
+
+113
+00:16:05,731 --> 00:16:08,672
+Bu bilgi dışarıdan bana verilecek.
+
+114
+00:16:08,672 --> 00:16:20,691
+Ne demek istedim? Ben böyle bir metni eğer üzerinde çalışıyorsam bir kiracıyla ev sahibiyle ilişkili geçen metnler üzerinde ya da konuşmalar üzerinde
+
+115
+00:16:20,691 --> 00:16:23,131
+dışarıdan bu bilgileri vermeliyim.
+
+116
+00:16:23,611 --> 00:16:25,911
+İşte artış oranının ne olduğu.
+
+117
+00:16:26,471 --> 00:16:31,931
+Yani ev sahibine göre bir artış oranı normalken kiracıya göre olumsuz olabilir.
+
+118
+00:16:32,411 --> 00:16:34,531
+İşte evdeki bazı kuralları.
+
+119
+00:16:35,111 --> 00:16:37,691
+Bu tip şeyler dışarıdan verilen kurallar.
+
+120
+00:16:37,691 --> 00:16:45,511
+Dün bunların hepsini bir arada toplayarak bir çalışma yapabiliyorsak mükemmel bir çalışma olabilir.
+
+121
+00:16:45,511 --> 00:16:53,131
+Fakat günümüzde bu diskors ve pragmatik yaklaşımlar üzerinde daha yeni yeni çalışılıyor.
+
+122
+00:16:53,351 --> 00:16:54,892
+Hepsini içinde barındıran.
+
+123
+00:16:55,796 --> 00:17:07,796
+komple bir NLP çalışması henüz yok. Yani belki de şeyler aşamasında, denemeler aşamasında ya da alana özel olabilir diyebiliriz.
+
+124
+00:17:08,275 --> 00:17:21,675
+Doğal dil işlemede kullanılan modeller nedir? Şimdi ben dedim, işte sentaktik analiz var, biçim bilimsel analiz var, semantik analiz var, pragmatik, diskors yaklaşımlar var.
+
+125
+00:17:21,675 --> 00:17:27,575
+Bunların içerisinde benim bir takım olayları yapabilmem için modellerimin olması gerekir.
+
+126
+00:17:27,976 --> 00:17:31,796
+Bazı aşamalarında sonlu durum makineleri kullanılıyor.
+
+127
+00:17:32,695 --> 00:17:38,395
+İşte aslında klasikte biçim bilimsel analizde sonlu durum makineleri hep vardır.
+
+128
+00:17:38,535 --> 00:17:48,815
+Ben de derste onları göndereceğim ama son zamanlarda sonlu durum makineleri yerine derin öğrenmedeki modeller kullanılmaya da başlandı.
+
+129
+00:17:48,816 --> 00:17:55,176
+ama henüz ben öyle bir çalışmayı, bir fiil dinlemedim ya da elime rastlamadım.
+
+130
+00:17:55,176 --> 00:18:04,096
+Kural tabanlı sistemler var. Nedir kural tabanlı? Kurallarımı önceden belirleyip çıkarıyorum.
+
+131
+00:18:04,255 --> 00:18:08,736
+Sırasıyla bu kurala uydu mu, buna uydu mu, buna uydu mu diye kontrol ediyorum.
+
+132
+00:18:09,435 --> 00:18:13,796
+Mantık kullanan, yani lojiyi kullanan sistemler var.
+
+133
+00:18:13,796 --> 00:18:34,215
+Olasılık teorisini kullanan dil modelleri mesela tamamıyla olasılık teorisini kullanan bir yapıdır. Bir de makine öğrenmesi modelleri. Son zamanlarda yapılan çalışmaların çoğunun içinde okuduğunuz makalelerde de makine öğrenmesini göreceksiniz.
+
+134
+00:18:34,215 --> 00:19:00,516
+Evet şimdi derin öğrenme yaklaşımları da var ama makine öğrenmesinin farkı şu az veriyle de daha başarılı sonuçlar alabiliyorum. Aynı veriyle derin öğrenmede çalıştığımda aynı sonucu alamıyorum. Verimin çok fazla olması lazım. Ne kadar çok şeyle sistemi ne kadar çok parametreyle eğitirsem o kadar mükemmel sonuçlar alırım.
+
+135
+00:19:00,515 --> 00:19:09,575
+Ama elimizdeki donanımlar bireysel olarak bunları bana sağlayamadığı için yine makine öğrenmesi üzerinde de çalışabiliyorum.
+
+136
+00:19:09,955 --> 00:19:12,535
+Ya da derin öğrenmede de modelimi kuruyorum.
+
+137
+00:19:12,755 --> 00:19:18,115
+Belki başarılı makine öğrenmesi kadar iyi bir sonuç olmasa da onun sebebini biliyorum.
+
+138
+00:19:18,115 --> 00:19:24,835
+Yani çok fazla arada ara layırlarımın sayısını arttıramıyorum.
+
+139
+00:19:25,235 --> 00:19:29,695
+Çok fazla data ile veri ile besleyemediğim için başarım düşük olabiliyor.
+
+140
+00:19:29,695 --> 00:19:44,675
+Şunlara hısla geçiyoruz. Bu aşamaları demin size anlattık. Ses fonetikte girişe akustik bir işaret veriliyor. Bunun dışında alfabedeki herhangi bir karakterin karşılığını alıyoruz.
+
+141
+00:19:44,675 --> 00:20:05,895
+Buradaki ses birimine fon deniliyor. Doğal dillerin hepsi fonetik bir dil değildir. Yazıldığı gibi okunan diller fonetik dillerdir. Mesela Türkçeyi yazdığımız gibi okuruz. Japonca da öyle, finca da öyle.
+
+142
+00:20:05,895 --> 00:20:12,395
+Bunlar fonetik olması yani yazıldığı gibi okunmasının anlamı şudur.
+
+143
+00:20:14,295 --> 00:20:17,515
+Her sese bir tane sembol karşılık gelir.
+
+144
+00:20:17,515 --> 00:20:20,255
+Yani bir karaktere bir ses var.
+
+145
+00:20:20,435 --> 00:20:25,775
+Bazı dillerde iki karakter yan yana geldiğinde farklı bir şekilde okunabiliyor.
+
+146
+00:20:26,055 --> 00:20:29,895
+O zaman bu dillere biz fonetik diller değil diyoruz.
+
+147
+00:20:30,335 --> 00:20:35,315
+Fonetik dillerden bahsettikten sonra bir de fonetik alfabe diye bir kavram var.
+
+148
+00:20:35,315 --> 00:20:37,595
+Bu fonetik alfabe nedir?
+
+149
+00:20:39,604 --> 00:20:49,683
+işte bunun NATO'da kullanılanı, askeriyede bu herhalde, Türkiye ve uluslararası alanda kullanıyorsam şudur.
+
+150
+00:20:49,683 --> 00:21:07,883
+Hani bazen bir kelimeyi duymakta zorluk çekeriz ya da işte dediğim gibi iki karakterden birleşiminden bir ses çıkar da ben telefonda dinlerken ya da kişinin şivesi ya da lehçesinden onu anlayamıyorsam
+
+151
+00:21:07,883 --> 00:21:17,644
+kodla diyoruz ya da spellet diyoruz harf harf söyle. İşte bu harf harf söylemede her harfin karşılığı olan bir kelime konulmuş.
+
+152
+00:21:18,743 --> 00:21:21,703
+Mehmet Ali Erbil'in programının adı neydi?
+
+153
+00:21:24,464 --> 00:21:25,183
+Ne?
+
+154
+00:21:25,604 --> 00:21:26,543
+Çarkıfelek mi?
+
+155
+00:21:26,703 --> 00:21:32,583
+Hah çarkıfelek. İşte çarkıfelek'te ne diyor? Lüleburgaz'ın L'si, Kastamon'un K'sı.
+
+156
+00:21:32,583 --> 00:21:41,824
+Biz onları böyle diyoruz ama kafamızdan atıyoruz ama gerçekte kullanacak olsak bu fonetik alfabeyi kullanmamız gerekir.
+
+157
+00:21:42,083 --> 00:21:44,663
+Ama yine de bana bazı şeyler çok saçma geliyor.
+
+158
+00:21:44,663 --> 00:21:47,263
+Yani Ü, Ü için Ünye.
+
+159
+00:21:47,923 --> 00:21:53,144
+Türkiye'de kaç kişi Ünye diye bir ilçenin olduğunu biliyor.
+
+160
+00:21:53,824 --> 00:22:00,764
+Kuzey bölgelerinde yaşamış olanlar değilse yani üzüm desem daha anlamlı gelir gibime geliyor benim.
+
+161
+00:22:00,763 --> 00:22:27,983
+Bir yerde daha hata vardı şurada J7I ya da Jerusalem yazılmış bu kitaptan aldığım için bunu olduğu gibi buraya koydum belki de hata yoktur emin değilim bunu bir başka yerde doğruluğuna bakabilirsiniz ama çok önemli bir şey değil sadece dilin politik olması yazıldığı gibi okunması ve her sese karşılık bir tane karakterin karşılık gelmesini söyleyebiliriz
+
+162
+00:22:27,983 --> 00:22:43,223
+Hocam bir şey sorabilir miyim burada? Ben şu an leksikon sözü üzerine uğraşıyorum da Türkçe'de Farsçadan falan çok fazla kelime geldiği için mesela kağıt tarzında falan araya biz farklı fonemler ekliyoruz.
+
+163
+00:22:43,223 --> 00:22:56,143
+Yani biz bir yazılı şeyine iki fonem ekliyorum ben orada. Onun şimdi birçok farklı söylemleri oluyor.
+
+164
+00:22:56,143 --> 00:23:00,604
+O yüzden benim kullandığım bir yöntem var. Bu Sampa diye bir şey var.
+
+165
+00:23:00,883 --> 00:23:03,223
+Nereye sesin çok az geliyor. Ben duyamıyorum.
+
+166
+00:23:03,643 --> 00:23:04,503
+Şu an geliyor mu?
+
+167
+00:23:04,583 --> 00:23:05,563
+Evet. Daha iyi.
+
+168
+00:23:06,223 --> 00:23:15,604
+Sampa diye bir böyle dil bilimcilerin yaptığı bir çalışma olmuş İngiltere'de. Türkçe için de yapılmış bu. Onun ben bir fonolojisini kullanıyorum.
+
+169
+00:23:15,604 --> 00:23:25,423
+İşte arka tarafta da Çölkesen diye bir hoca var Almanya'da. O da morfolojik analizini çıkarmış. Bir tane hazır kütüphane tarzı bir şey yapmış.
+
+170
+00:23:25,423 --> 00:23:38,503
+arkada onu kullanarak oluşturuyorum fonemleri ama bu biraz şey oluyor ne derler her kelime içinde farklı bir fonem çıkartamıyor bazen bunu otomatize edecek bazı yöntemler var mı?
+
+171
+00:23:38,503 --> 00:24:06,503
+Şimdi aslında o ses tarafıyla çok fazla ilgilenmediğim için ben hep tekst tarafıyla ilgileniyorum. Karıştırman lazım yani literatürü ya da kendin kurallar yazacaksın. Ama ben şu şeyde de takıldım. Kağıt, tamam kitap bunlar bizim Türkçe kelimeler değil. Arapçadan geçti. Buradaki bir tane bana örnekle anlatabilir misin mesela?
+
+172
+00:24:06,503 --> 00:24:08,623
+Bir dakika hocam.
+
+173
+00:24:15,667 --> 00:24:27,548
+Mesela bir tane şey olsun hocam. Şu an aklıma tekrar geldi. Transfer kelimesi. Transfer kelimesinde normalde T-R, ansfer oluyor. Ama bizim bunun söyleyişinde araya I giriyor.
+
+174
+00:24:27,667 --> 00:24:27,968
+Evet.
+
+175
+00:24:28,167 --> 00:24:35,928
+Ya da profesyonel. Araya I da girebiliyor, söyleyişte U da girebiliyor. Bunların varyasyonlarını da eklememiz gerekebiliyor.
+
+176
+00:24:37,107 --> 00:24:41,467
+Anladım. Ama bu söylediğin kelimelerin hiçbiri Türkçe değil.
+
+177
+00:24:41,467 --> 00:24:49,367
+Evet o yüzden ama bizim herkesin kullandığı kelimeler o yüzden bunların da analiz edilmesi gerekiyor bir nevi
+
+178
+00:24:49,367 --> 00:25:07,307
+Aslında eğer imkanın varsa hani geçen hafta da söyledik ya linguistçilerle birlikte bu dilin ilk etimolojisinde ya da morfolojik analizinde dil bilimcilerle hep birlikte çalışılmıştır
+
+179
+00:25:07,307 --> 00:25:09,907
+Sen şu an hangi şehirdesin?
+
+180
+00:25:09,907 --> 00:25:11,707
+İstanbul'dayım hocam.
+
+181
+00:25:11,747 --> 00:25:12,007
+Tamam.
+
+182
+00:25:13,227 --> 00:25:17,887
+Mesela en iyi dil bilimcileri İstanbul Üniversitesi'ndedir benim bildiğim.
+
+183
+00:25:18,407 --> 00:25:21,287
+Onların dil bilimcili kürsüsü de vardır.
+
+184
+00:25:21,507 --> 00:25:24,187
+Oralarda hala kürsü diye geçiyor ana bilim dalı.
+
+185
+00:25:24,727 --> 00:25:33,547
+Orada herhangi bir hocaya attığında belki cevap dönmeyebilir ama bir araştırma görevlisi arkadaşla falan iletişime geçtim mi?
+
+186
+00:25:33,547 --> 00:25:39,507
+Çünkü tamamıyla bu onların şeyine giriyor, ilgisine giriyor, ilgi alanına giriyor.
+
+187
+00:25:39,507 --> 00:25:43,267
+Sana çok daha fazla yardımcı olabilir bu gibi konularda
+
+188
+00:25:43,267 --> 00:25:48,367
+Çünkü tamamıyla dilin morfolojisi yani etimolojisiyle ilgili
+
+189
+00:25:48,367 --> 00:25:51,107
+Ya da sen ne yapacaksın?
+
+190
+00:25:51,607 --> 00:25:56,847
+İşte Trabzon diyorum mesela, Trabzon, TR
+
+191
+00:25:56,847 --> 00:26:00,767
+Belki de işte kurallar mı? Kurallar çıkaracaksın
+
+192
+00:26:00,767 --> 00:26:04,107
+Zaten hocam şu an kural tabanını çalışıyorum
+
+193
+00:26:04,107 --> 00:26:05,727
+Öyle bir kod geliştirdik
+
+194
+00:26:05,727 --> 00:26:16,627
+Ama şöyle söyleyip, söyleyiş varyasyonları o kadar farklı ki, o kural tabanlıyı bir süre sonra artık manuel eklemeler yapmak zorunda kalıyoruz kendimiz
+
+195
+00:26:16,627 --> 00:26:20,567
+Kimle çalışıyorsun sen? Fatih Hoca ile mi?
+
+196
+00:26:21,087 --> 00:26:25,388
+Yok, ben kendim iş yerimde ARGE Mühendisi olarak çalıştığım projem böyle
+
+197
+00:26:25,388 --> 00:26:34,647
+Valla aklıma gelebilecek, yani sadece kural tabanlar ama Türkçe için mi yapıyorsunuz bunu?
+
+198
+00:26:34,647 --> 00:26:36,687
+Türkçede kaç tane böyle kelime var?
+
+199
+00:26:38,248 --> 00:26:43,547
+Onun sayısını veremem hocam. Şöyle bir sayısı var diyemem ona. Birçok var.
+
+200
+00:26:44,367 --> 00:26:48,687
+Hayır birçok var dediğim şöyle mesela. Türkçede bir ses zarf, bir sessiz zarf.
+
+201
+00:26:48,687 --> 00:26:57,487
+Ben böyle bir analiz bile yapsam, bir tane sonu durum makinesi kurdun. Bu kuralın dışına çıkmış olanlar şeydir.
+
+202
+00:26:57,967 --> 00:27:02,307
+Mesela şu sana yardımcı olabilir mi? Açık kaynak da bulabilirsin.
+
+203
+00:27:02,307 --> 00:27:19,727
+Türkçedeki kelimelerin hecelerine ayrılması. Şimdi hecelere ayrılmanın 8 ya da 9 tane kuralı var. Buna göre ayrılır. Ben bir Trabzon ya da işte ne bileyim profesör, profesyonel kelimelerini verdiğimde nasıl hecelerini ayırıyor?
+
+204
+00:27:19,727 --> 00:27:33,367
+Orada bile mutlaka ekstra kurallar koyması gerekir. Yoksa ayıramaz profesyoneli. Gerçekten şimdi sorsam size profesyonel kelimesini heceleyene ayırın desem nasıl ayıracaksınız?
+
+205
+00:27:35,807 --> 00:27:38,427
+Pro, fos, yo, ner diye ayırırız.
+
+206
+00:27:38,427 --> 00:27:49,607
+Pro. Tamam. Peki sessiz, sessiz, sesli harf var. Aslında Türkçede çok az kelime vardır. İki tane sessiz harfi
+
+207
+00:27:50,132 --> 00:28:16,231
+yan yana geldiği, aslında şunlar var, okullar diyorum. Oradaki okul ve lar, L'ler iki tane sessiz ama eklerini ayırdıktan sonra kelimenin gövde halinde iki tane sessiz kalan, harf yan yana gelen kaç tane kelime vardır? Bunlar azdır. Belki bunları çıkarıp, bunlar üzerinden bir kurallar yazılırsa daha farklı olabilir.
+
+208
+00:28:16,231 --> 00:28:25,831
+Ama buna özgü bir model var mı bilmiyorum yani bilmiyorum bu konuda
+
+209
+00:28:25,831 --> 00:28:31,891
+Şu an ben hocam kural tabanlı çalışıyorum ama istatistiksel tabanlı yaklaşımlar da varmış bunda
+
+210
+00:28:31,891 --> 00:28:35,331
+Yani sizin o konu hakkında fikriniz var mı?
+
+211
+00:28:35,331 --> 00:28:43,871
+Hayır hiç çalışmadığım için rastlamadım da yok ama istatistiksel yaklaşımlarda yine şu olabilir
+
+212
+00:28:43,871 --> 00:29:02,312
+Mesela PR'nin gelme olasılığı Türkçe'de çok çok zayıftır olasılığı. Hiçbir zaman PR kelimesinin olasılığı gelmez. Gelmeyince o zaman ne yapabilirsin orada? Belki Hidden Markov modeller kullanılır.
+
+213
+00:29:02,312 --> 00:29:12,551
+Olasılığı hep D-Dimarkov modellerde bir state'den değerine geçerken olasılığı büyük olanı ben tercih ediyorum da geçiyorum.
+
+214
+00:29:13,072 --> 00:29:16,812
+Olasılığı küçükse burada bir problem var demektir.
+
+215
+00:29:16,812 --> 00:29:18,812
+Yani bu Türkçe bir kelime değil.
+
+216
+00:29:19,511 --> 00:29:22,212
+Öyleyse bunu çözelim.
+
+217
+00:29:22,632 --> 00:29:27,652
+Ama yine de onlara kural tavanlı yaklaşımlarının daha uygun geleceğini düşünüyorum.
+
+218
+00:29:28,471 --> 00:29:30,611
+Ama gerçekten kaç tane böyle kelime var?
+
+219
+00:29:30,731 --> 00:29:31,911
+Binlerce olamaz diye.
+
+220
+00:29:32,312 --> 00:29:55,771
+düşünüyorum. Hocam çok fazla var. Binlerceyi de geçtik. Şöyle bile var. Mesela geleceğim kelimesini geleceğim diye telaffuz edildiğinde o geleceğimi geleceğime etiketlemek zorundayız. O ki olarak. O zaman siz sesle mi çalışıyorsunuz? Evet. O zaman bana bunu baştan söylesene. Text olarak hep ben düşünüyorum.
+
+221
+00:29:55,771 --> 00:30:12,611
+Ama şu an tekst üzerine gidiyorum hocam. Tekste geleceğimi geleceğim şeklinde leksikinde o key'yi etiketiyorum. Hem geleceğim var, geleceğim, geleceğim keysine eşit. Geleceğim keys aynı zamanda geleceğim tekstine de eşit. İkisi de tek geleceğim keysine gidiyor.
+
+222
+00:30:12,611 --> 00:30:25,091
+Şimdi geleceğim dede sen anlıyoruz yalnız şu an dersi çok şey yaptık böyle geleceğim kelimesini bir kere düzeltmen lazım.
+
+223
+00:30:27,212 --> 00:30:34,712
+O geleceğim kelimesi o kontekste dil modellerinde mesela ben diyorum ki ben yarın okula geçeceğim.
+
+224
+00:30:34,971 --> 00:30:36,391
+Geçeceğim dedim.
+
+225
+00:30:37,111 --> 00:30:42,531
+Dil modelinde baktığında o geçeceğim kelimesini morfolojik analiz çözümlemeyecek.
+
+226
+00:30:42,611 --> 00:30:48,352
+geçeceği ve çözümlemediği için onu yanlış bir kelime olarak sen işaretleyeceksin.
+
+227
+00:30:48,352 --> 00:30:55,811
+Ben yarın okuladan sonra hangi kelimenin gelebileceğini dil modelleri bana söyler.
+
+228
+00:30:56,371 --> 00:31:05,492
+Ama senin elinde çok fazla kelime gramlarının şeylerinin çıkarılması lazım, istatistiksel bilgilerin olması lazım.
+
+229
+00:31:05,492 --> 00:31:21,212
+Yani gigabaytlarca bir derlemi aldım. Bu derlemden kelime tabanlı istatistikleri çıkardım ikili, üçlü. Elinde bunlar var. Sonra Hidden Markov modellerini burada kullanabilirsiniz.
+
+230
+00:31:21,212 --> 00:31:27,432
+orada ben yarın okula geçeceğim şeyini bir kere bulacak.
+
+231
+00:31:27,712 --> 00:31:31,391
+O geçeceğim yalnızsa bunun yerine gelebilecek kelime nedir?
+
+232
+00:31:32,092 --> 00:31:33,452
+Sana onu söyleyecek.
+
+233
+00:31:33,452 --> 00:31:37,872
+Belki de o geçeemin git olduğunu anlayacak.
+
+234
+00:31:38,271 --> 00:31:43,732
+Daha sonra o git kelimesi kontekste bakarak hangi ekleri alabilir?
+
+235
+00:31:44,172 --> 00:31:46,271
+Bunları sistem sana söyleyecek.
+
+236
+00:31:47,028 --> 00:31:52,647
+Yani sen burada morfolojik çözümlemeyi, kullanmayı denediniz mi?
+
+237
+00:31:53,147 --> 00:31:59,147
+Evet hocam, kullanıyorum onu şu an. Almanya'da bir hocanın hazırladığı, final state transferi kullanıyorum.
+
+238
+00:32:00,587 --> 00:32:02,367
+Bu da çözmedi problemi.
+
+239
+00:32:02,647 --> 00:32:02,908
+Evet.
+
+240
+00:32:05,227 --> 00:32:05,587
+Neyse.
+
+241
+00:32:06,288 --> 00:32:11,107
+O zaman yerinde RGS'i bunu orada yerinde çözeceksiniz diyeyim [öğrenci] şimdi.
+
+242
+00:32:12,807 --> 00:32:15,227
+Yani aklıma başka bir şey gelmiyor.
+
+243
+00:32:15,227 --> 00:32:17,967
+Ben çok fazla şey bölmeyeyim hocam dersiz
+
+244
+00:32:17,967 --> 00:32:20,087
+Tamam peki sonra yine konuşuruz
+
+245
+00:32:20,087 --> 00:32:21,368
+Tamam çok teşekkürler
+
+246
+00:32:21,368 --> 00:32:27,927
+Ne dedik? Morfoloji yapısına girdik dedik
+
+247
+00:32:27,927 --> 00:32:32,407
+Şimdi burada şunları açalım
+
+248
+00:32:32,407 --> 00:32:39,307
+Morfoloji'de karşımıza işte kelimeleri çözümlüyoruz dedik
+
+249
+00:32:39,307 --> 00:32:42,547
+Bunlar ortografik kelimeler diye de geçer
+
+250
+00:32:42,548 --> 00:33:00,108
+İşte mesela ben Ayşe gelmişti de diyebilirim, Ayşe gelmiş idi de diyebilirim. Bunlar aynı anlama geliyor. Farklı şekillerde de kullanabilirim. Arabayla ya da araba ile. Bunları ama bana hepsini söyleyebilen morfolojik analiz.
+
+251
+00:33:00,108 --> 00:33:06,447
+Bunun dışında burada benim için şu aşağıdaki cümlenin anlamı var.
+
+252
+00:33:06,608 --> 00:33:09,087
+Ben rahatlıkla bunu bölebiliyorum.
+
+253
+00:33:09,087 --> 00:33:13,928
+Hangi kelimelerden sonra boşluk olacağını rahatlıkla söyleyebiliyorum.
+
+254
+00:33:14,068 --> 00:33:16,807
+Ama bilgisayar bunu hayatta çözümleyemez.
+
+255
+00:33:17,908 --> 00:33:21,087
+Ne kadar mükemmel bir şeye versen de bunu çözümleyemez.
+
+256
+00:33:21,847 --> 00:33:24,428
+Onun için bilinmeyen bir kelimedir bu.
+
+257
+00:33:25,487 --> 00:33:30,087
+Sentax analizinde ikinci slide'larımızda bunları göreceğiz dedik.
+
+258
+00:33:30,107 --> 00:33:42,187
+hiyerarşik bir yapı oluşturacağız cümleyi. Cümleyi sentence'dan alacağız ve bunları yavaş yavaş pars ederek çözümlemeye çalışacağız.
+
+259
+00:33:42,467 --> 00:33:52,267
+Yine Türkçe aklinatif bir dil, yani bitişken bir dil. Kelimenin sonuna gelebilecek eklerden oluşuyor, yani ekler alarak.
+
+260
+00:33:52,267 --> 00:34:02,267
+Mesela burada çok kendimizi zorlayarak yazılmış kaç tane? 2, 4, 6, 8, 10, 11 tane ek eklemiştik.
+
+261
+00:34:02,267 --> 00:34:10,867
+Biz günlük hayatımızda aslında maksimum 4 ya da 5 tane ek getirerek bir kelimeyi kullanıyoruz.
+
+262
+00:34:11,547 --> 00:34:18,487
+Böyle bir kelimeyi doğru Türkçe bir kelime analiz de edilir fakat kullanmıyoruz.
+
+263
+00:34:18,487 --> 00:34:46,547
+anlamı yok ama ne kadar şey olduğunu görün diye. Analiz edilmesi, sonundan eklemeli dillerin bir İngilizceye göre çok çok zor. İngilizce çok kolay. Yani S'yi, I, N, C, E atıyor geri kalan zaten kelimenin kökü oluyor. Bizim gibi dillerde oldukça büyük problem. Bir de işte arkadaşınızın söylediği gibi ama o diğer dillerde de vardır. Yanlış.
+
+264
+00:34:48,487 --> 00:35:02,347
+telaffuz edilmesi. Burada bunlara da geçelim. Gerek yok. Bunlardan da semantikte anlamsal analizini anlam çıkarmaya çalışıyoruz dedik cümleden.
+
+265
+00:35:02,487 --> 00:35:13,887
+Fikir yürütüyoruz. Bunları çok hızlı geçeceğim ama şöyle bir kısaca hatırlayalım. Eklerimiz, şurada gördüğümüz gibi çekim ekleri ve yapım eklerimiz var.
+
+266
+00:35:13,888 --> 00:35:19,828
+Bir de birleştirilmiş kelimeler var. Bunlar da bir problem çözülmesi gerekiyor.
+
+267
+00:35:21,396 --> 00:35:30,675
+çekim ekleri kelimenin köküne eklendiği vakit kelimenin anlamını değiştirmiyor ama yapım ekleri kelimenin anlamını değiştiriyor.
+
+268
+00:35:30,795 --> 00:35:32,115
+farklı bir anlama geliyor.
+
+269
+00:35:32,856 --> 00:35:35,356
+her şeyi şunun üzerinden çok hızlı geçelim.
+
+270
+00:35:35,915 --> 00:35:39,515
+ekler dedik çekim ekleri ve yapım ekleri diye ayrıldı.
+
+271
+00:35:39,775 --> 00:35:44,335
+çekim ekleri, isme eklenen ekler ve fiile eklenen ekler var.
+
+272
+00:35:44,335 --> 00:35:47,835
+mesela isme eklenen eklerden çoğul eki var.
+
+273
+00:35:48,236 --> 00:35:50,896
+ismi çoğul yapıyor, kitaplar, çocuklar gibi.
+
+274
+00:35:51,396 --> 00:36:05,776
+hal ekleri var. IED'den halleri bir kelimeyi IED'den eklerse kal ekleri oluyor. Kalemi verdik, duvara baktaki A gibi.
+
+275
+00:36:05,775 --> 00:36:14,015
+İyelik ekleri sahiplik bildiriyor. İşte kitabım, kitabın, kitabımız, kitabı, kitapları gibi.
+
+276
+00:36:15,375 --> 00:36:24,475
+İlgi ekleri, ın, in, un, ün ekleri de ilgi ekleri. Biz bunlara tamlama ekleri diyoruz. Kapının kolu gibi.
+
+277
+00:36:25,195 --> 00:36:32,995
+Ek eylem ekleri var. Bunlar da isim soylu sözcükleri yüklem yapmak için kullanan şeyler, eklemler.
+
+278
+00:36:32,995 --> 00:36:44,635
+İyi kelimesi isim ama iyiyim deyince biz bunu yüklem yapıyoruz. Bugün nasılsın Banu? İyiyim. Bu bir yüklem ve cümlem bitiyor.
+
+279
+00:36:44,635 --> 00:36:54,015
+Sonra fiiller eklenen çekim ekleri var. Eklenen ekler zamanı bildiriyor. Gelmiş, geçmiş, okudu, geçmiş zaman gibi.
+
+280
+00:36:54,015 --> 00:37:11,935
+Dilek ekleri var. Fiillerde şart, istek ve gerekliliği anlatılıyor. Aşağıda var. Gidersem, gitmeliyim. Buradaki gereklilik gibi. Sonra şahıs ekleri var. Fiillere eklenen.
+
+281
+00:37:11,936 --> 00:37:18,315
+Geliyorum, burada şahısı anlatıyor, ben geliyorum, geliyorsun, sen geliyorsun gibi.
+
+282
+00:37:18,955 --> 00:37:22,095
+Yapım ekleri de kelimenin anlamını değiştiriyor dedik.
+
+283
+00:37:22,095 --> 00:37:25,196
+İsme ek ekliyorsun, yeni isim yapıyor.
+
+284
+00:37:25,476 --> 00:37:27,535
+Ek ekliyorsun, yeni fiil yapıyor.
+
+285
+00:37:27,916 --> 00:37:30,136
+Fiile ek ekliyorsun, yeni isim.
+
+286
+00:37:30,535 --> 00:37:32,515
+Ek ekliyorsun, yeni fiil yapıyor.
+
+287
+00:37:33,216 --> 00:37:35,535
+İsimden isim yapan eklere bakalım.
+
+288
+00:37:35,535 --> 00:37:43,155
+Mesela kömür kelimesi isim, lıklık ekini eklediğimde kömürlük oldu.
+
+289
+00:37:43,715 --> 00:37:45,015
+Farklı bir isim oldu.
+
+290
+00:37:45,175 --> 00:37:47,035
+Kömürlerin konulduğu yer gibi.
+
+291
+00:37:48,375 --> 00:37:50,836
+İsimden fiil yapan ekler var.
+
+292
+00:37:51,235 --> 00:37:53,375
+Mesela hangi şey olsun?
+
+293
+00:37:54,035 --> 00:37:58,976
+La iki, su isim, sula diyorum fiil yapıyor.
+
+294
+00:37:58,976 --> 00:38:00,035
+Emir kipi.
+
+295
+00:38:01,276 --> 00:38:03,996
+Fiilden isim yapan ekler var.
+
+296
+00:38:03,995 --> 00:38:14,375
+Fiilim düşün, düşünmekten geliyor. CC ekini ekledim mesela. Düşünce ne oldu? İsim oldu.
+
+297
+00:38:15,955 --> 00:38:23,615
+Fiilden fiil yapan ekler var. Gül, fiil. İsim hali de var ama gülmekten gül diyelim.
+
+298
+00:38:23,615 --> 00:38:31,475
+Dırdır ekini aldı. Güldür yine yeni bir fiil yaptı. Şimdi bu ekler neden önemli?
+
+299
+00:38:31,476 --> 00:38:48,295
+Ben morfolojik analiz yaptığımda kelimemin eklerinin hepsi bana verilirken yani kelimenin kökünü buldu ve arkasından ekleri verdiğinde hepsini post etiketleriyle bana verecek. Post etiketi nedir?
+
+300
+00:38:48,295 --> 00:38:50,915
+İşte mesela
+
+301
+00:38:52,211 --> 00:39:18,671
+bu yine bronluk korpusda da bunları göstereceğim size. Mesela bir şeyi fiilden fiil yapan bir ek kullanıyorsam bu ekin o ek olduğunu anlatan bir etiket var. Ha diyorum bu ek bu anlama geliyor. İşte lar var çoğul eki diye bana veriyor. Do ek diyor geçmiş zaman eki diye bana etiketleyerek veriyor.
+
+302
+00:39:18,671 --> 00:39:23,451
+O zaman ben semantik analizede geçtiğimde şunu söylüyorum.
+
+303
+00:39:23,451 --> 00:39:27,072
+Bu olay geçmiş zamanda yapılmış.
+
+304
+00:39:27,471 --> 00:39:29,371
+Bu olay da şu olmuş.
+
+305
+00:39:29,752 --> 00:39:35,091
+İşte kapının kolu dediğimde aslında buradaki kol kapıyı anlatıyor.
+
+306
+00:39:35,471 --> 00:39:40,191
+Kapının bir özelliğini bana söylüyor gibi anlamlar çıkarabiliyorum.
+
+307
+00:39:40,191 --> 00:40:02,652
+Bu şeylere kelimeleri çözümleyebiliyoruz dedik ama bazen embedding durumlar olabiliyor. Yani belirsiz durumlar olabiliyor. Ne demek istiyorum? Şurada üç tane kelimem olsun. Bunlar Ahmet'in kitapları. Kardeşimin kitaplarını kaplamalıyım. Ahmet kitapları okudu.
+
+308
+00:40:02,651 --> 00:40:13,871
+Kitaplar var ve ben bu kitap kelimesini yani kitapları, kitaplarını ve kitapları bu kelimeyi çözümlemesi için tuğla veriyorum.
+
+309
+00:40:14,591 --> 00:40:15,971
+Nasıl çözümlüyor?
+
+310
+00:40:16,291 --> 00:40:22,351
+Hepsindeki, her bir cümledeki kelimenin kökü kitap.
+
+311
+00:40:22,351 --> 00:40:32,892
+Fakat birinciyi çözümlerken çoğul eki, ı da üçüncü tekil iyilik olarak bana bunun çözümlemesini veriyor.
+
+312
+00:40:33,972 --> 00:40:39,711
+Kitaplarını kelimesini eğer böyle bir aslında vermiyor şöyle söyleyeyim.
+
+313
+00:40:39,711 --> 00:40:50,572
+Bu cümledeki kitaplarını ben çözümleyecek olsam işte kitap kök diyorum, çoğul eki diyorumlar, ını da iyilik eki diyorum.
+
+314
+00:40:50,572 --> 00:40:57,832
+Ahmet kitapları okuduğu çözümlemek istediğimde de kitap, kök, çoğul ve durum 2 diyorum.
+
+315
+00:40:57,832 --> 00:41:03,631
+Çünkü cümledeki yerine göre, kullanımına göre çözümlemesi değişiyor.
+
+316
+00:41:04,172 --> 00:41:11,952
+Ama Tullar bana ben kitapları kelimesini verdiğimde bu 3 tane çözümü de veriyor.
+
+317
+00:41:12,732 --> 00:41:17,812
+Ama benim elimdekinin en uygununun hangisi olacağını söylemiyor.
+
+318
+00:41:18,331 --> 00:41:19,411
+Belirsizlik var.
+
+319
+00:41:19,411 --> 00:41:27,591
+Bunları verirken bana dilimizde en fazla karşılaşılan duruma göre, onun istatistiği onun elinde var.
+
+320
+00:41:27,751 --> 00:41:33,512
+Çünkü milyonlarca cümleden oluşmuş bir analiz yapılmış, bunlar çıkarılmış.
+
+321
+00:41:34,671 --> 00:41:35,671
+Bilinciyi veriyor.
+
+322
+00:41:36,251 --> 00:41:40,611
+Benim için çok fazla önemli değilse bu çözümlemenin ne olduğu.
+
+323
+00:41:40,611 --> 00:41:51,011
+Yani benim için ihtiyaç olan kitap kelimesinin kaç kez geçtiğini bulmansa sadece kök bilgisini almam yeterli.
+
+324
+00:41:51,231 --> 00:41:53,911
+Hangi şekilde çözümlenirse çözümlenirsin.
+
+325
+00:41:53,911 --> 00:42:04,971
+Ama cümlenin semtaktik yapısını da kullanmak istiyorsam o zaman bu çözümlemelerden hangisinin doğru olduğunu bilmem lazım.
+
+326
+00:42:04,971 --> 00:42:13,791
+O zaman da yapılacak olan şey dependency parsing dediğimiz bağımlılık analizi.
+
+327
+00:42:13,791 --> 00:42:19,051
+Bu bağımlılık analizi bizim kullandığımız tool'ların içerisinde yok.
+
+328
+00:42:19,572 --> 00:42:23,311
+Bazı üniversitelerde akademik çalışmalar olarak yapılmış.
+
+329
+00:42:25,751 --> 00:42:29,731
+Aslında OTTÜ'de ve Boğaziçi'nde de var.
+
+330
+00:42:29,871 --> 00:42:33,631
+Boğaziçi'nden hocalardan isteyince size verebiliyorlar.
+
+331
+00:42:34,003 --> 00:43:02,743
+İTÜ'deki çalışmada üst üste yapılan doktora çalışmalarından bir pipeline oluşturulmuş. İşte morfolojik analizi, sentaktik analizi, varlık ismi çıkarımını, dependency parsingi bilmem nelerin hepsini yapıyor. Yalnız size web ortamından kullanım için açıyor. Yani sen input'u gönderiyorsun, o sana output'u veriyor. Bu da süreci çok yavaşlattığı için pek tercih edilmiyor.
+
+332
+00:43:02,743 --> 00:43:08,823
+ve akademik amaçlı kullanacağım diye de izin istemeniz gerekiyor.
+
+333
+00:43:09,704 --> 00:43:19,783
+Yine bu sempozyumlarda, geçen haftaki sempozyumda bunu ilgilenenler olursa bir yere not alsın.
+
+334
+00:43:19,783 --> 00:43:21,684
+Hangi gün olduğunu bilmiyorum.
+
+335
+00:43:22,663 --> 00:43:28,003
+Sterling diye bir firmada çalışan öğrenciler var.
+
+336
+00:43:28,703 --> 00:43:30,783
+Yani mezun olmuşlar da çalışıyorlar.
+
+337
+00:43:30,783 --> 00:43:56,523
+belki master tezleridir yaptıkları şeyler. Tribank oluşturmuşlar. Bu tribank nedir? Binlerce Türkçe cümleyi almışlar. Bu cümlenin boğumluluk analizlerini çıkarmışlar. İşte aynen buradaki gibi. Bunlar Ahmet'in kitapları deyince bunlar kitapları anlatıyor. Yani bunlar dediğim kitapları gösteriyor.
+
+338
+00:43:56,523 --> 00:44:09,663
+Kitaplar kimin? Ahmet'in. Bütün bu bağlılıkları elle etiketleyerek bir derlem oluşturmuşlar. Tribank ve bunları açık olarak herkesle paylaşıyoruz dediler.
+
+339
+00:44:09,663 --> 00:44:19,663
+Ya onlara mail atıp onlardan bu bilgi alınır. Belki de gerçekten bir link koydular. Oradan bu derlemi indirebiliyorsunuz.
+
+340
+00:44:19,663 --> 00:44:29,383
+sonrasında bakmadım ama ihtiyacı olanlar bunu kullanabilirler ve çift kör etiketleme yapmışlar.
+
+341
+00:44:29,383 --> 00:44:44,023
+Yani birinin etiketlediğini, diğeri de kontrol ediyor bir hatanın olup olmadığını görmek için aslında çalışmalarda sistemimizi türen etmekte çok faydalı ve yararlı bir input olur.
+
+342
+00:44:44,024 --> 00:44:51,824
+Biz Türkler zaten bu Türkçe için çalışmalara çok sonradan başlandı ve herkes bağımsız olarak çalıştı.
+
+343
+00:44:52,143 --> 00:44:54,203
+Hiç çalışmalar bir araya getirilmedi.
+
+344
+00:44:54,744 --> 00:44:56,184
+Aynı şeyi herkes yapıyor.
+
+345
+00:44:56,343 --> 00:44:58,464
+Herkes veri setini yeniden oluşturuyor.
+
+346
+00:44:59,203 --> 00:45:04,283
+Onları birleştirelim de her yeni gelen buna yeni bir şey ekleyerek artsın.
+
+347
+00:45:04,744 --> 00:45:07,304
+Yok yeni yeni böyle yapalım deniyor.
+
+348
+00:45:07,544 --> 00:45:09,264
+Halen de bir şey göremedim ben.
+
+349
+00:45:09,263 --> 00:45:16,803
+Mesela gider kelimesini de çözümlerken yine tool bana şunu veriyor bu da bir problem.
+
+350
+00:45:16,803 --> 00:45:23,563
+Gider aynı zamanda mesela şu birinci cümleye bakın bu gider tablosu çok detaylı hazırlanmıştır.
+
+351
+00:45:23,843 --> 00:45:24,803
+Bu isim.
+
+352
+00:45:25,012 --> 00:45:44,371
+ve gider tablosu, demin verecek örnek bulamadım demiştim, cümle öbeklerini de bulmamız gerekiyor. Gider tablosu, bu bir birleşik isim aslında, gider tablosu. İkincisinde Ayşe her gün okula gider, buradaki gider de fiil olarak kullanılmış ve zaman eki var.
+
+353
+00:45:44,371 --> 00:45:50,471
+Yine Tool'lar morfolojik analizimi yaparken bana bu iki tanesini veriyor.
+
+354
+00:45:51,231 --> 00:45:55,751
+Şimdi ben buradaki elimdeki gider isim mi fiil mi bilmiyorum.
+
+355
+00:45:55,951 --> 00:45:59,851
+Adama verdim dokümanı, dokümandaki kelimelerin analizini yaptı.
+
+356
+00:45:59,931 --> 00:46:02,151
+Ben cümlelerin anlamını bilmiyorum.
+
+357
+00:46:02,831 --> 00:46:08,052
+Ama karşıma böyle bir şey geldiğinde bunu da çözümlemem gerekir.
+
+358
+00:46:08,052 --> 00:46:17,012
+Yani aslında şuraya bakarsam isimden önce geldiği için cümlenin başında olduğu için bunun zaten fiil olma ihtimali yok.
+
+359
+00:46:17,392 --> 00:46:19,311
+Ben bunu isim olarak alabilirim.
+
+360
+00:46:19,712 --> 00:46:26,991
+Bu cümlenin sonu ve yüklem o zaman burada gider zaten fiil olarak kullanılmıştır diyebilirim.
+
+361
+00:46:27,352 --> 00:46:28,892
+Bunları da demem gerekiyor.
+
+362
+00:46:29,251 --> 00:46:35,412
+Yani morfolojik analizin bana verdiği çözümler birden fazla belirsizlikler de var.
+
+363
+00:46:35,412 --> 00:46:37,232
+Bunları da çözmem gerekiyor.
+
+364
+00:46:37,232 --> 00:46:51,571
+ya da genelde bu çalışmayı yapanlar diyor ki ilk olan anlamı alacağım. Herkes de ilk olan anlamı aldığı için aynı veri setini kullanıyorsak da birbirimizle sonuçlarımızı kıyaslayabiliyoruz.
+
+365
+00:46:52,952 --> 00:47:05,772
+Buradan yine şöyle hızlı geçelim. Burada iki tane önemli kavram var. Bir tanesi kök, diğeri gövde. Yani ruled ve lemma. Bu lemmatization olarak da geçer.
+
+366
+00:47:05,771 --> 00:47:15,811
+O da şudur, mesela gözlük, gözlük kelimesi gözden türetilmiştir.
+
+367
+00:47:16,211 --> 00:47:18,091
+Aslında kökü gözdür.
+
+368
+00:47:18,491 --> 00:47:23,451
+Fakat sözlükte ben gözlük kelimesini de görebiliyorum.
+
+369
+00:47:23,611 --> 00:47:26,691
+İşte gözlük göze takılan bir araçtır diyor.
+
+370
+00:47:26,691 --> 00:47:35,171
+O zaman gözlük kelimesinin ben kökü gözden geliyor diye, bunun kökü gözdür diye inmemem gerekir.
+
+371
+00:47:35,172 --> 00:47:50,692
+Eğer gözlüğü alıyorsam bu leme halidir. Yani gövde halidir. Göz olarak bunu işlersem yaptığım uygulamaya göre hatalı da hareket etmiş olabilirim.
+
+372
+00:47:51,392 --> 00:48:03,052
+Kısacası bir kelime eğer sözlükte varsa artık o kelimeyi o haliyle almam yeterli. Onun daha da köküne inmeme gerek yok.
+
+373
+00:48:03,051 --> 00:48:20,411
+Mesela şuradaki kayak kelimesini aldım. Kaya attım kaya. Aslında kaya sözlükte de var. Bunu attım kay. Kayda fiil olarak var. Bunu attım ka. Ka da güneş tanrısı olarak belki vardır.
+
+374
+00:48:20,411 --> 00:48:40,251
+Ben bunu nereye kadar atacağım? Bunun kökü, kaya mı, kay mı, ka mı, nedir? Kayak eğer sözlükte varsa ben bunu kayak olarak almalıyım. Yani lemma halini almalıyım. Köküne kadar gitmeme gerek yok.
+
+375
+00:48:40,251 --> 00:48:57,431
+Burada ne var? Burada yine çok önemli bir bilgi yok. Bazı eylemler var ki günümüzde unutulmuş, yani artık kullanılmamaktan ölmüş şeyler var. Mesela çalış.
+
+376
+00:48:57,972 --> 00:49:25,732
+eylemi. Biz hep bunu çalışmaktan gelir diyebiliriz. Çalışmak. Halbuki eskiden çal diye bir eylem vardı. Evler kelpiçlem yapılırken işte elle çamuru alıp duvara böyle atma işlemine çalma işlemi denilirmiş. Aynı göle mayayı çalması gibi Natsreddin hocanın. Fakat bunlar artık günümüzde kullanılmadığı için ölmüş kelimeler.
+
+377
+00:49:25,732 --> 00:49:46,692
+Burada yine hızlı gidiyorum. Çok garip Türkçeye çevrilmeler var. Garip dediğime bakmayın. Ben buna kelime diyorum. Sözcük bilim diyor. Bu almış olduğu her bir ekede sözcük biçim diyor. Çünkü kelimenin biçimini değiştiriyorum.
+
+378
+00:49:46,691 --> 00:49:52,171
+Bu sözcük bilimler LSTM olarak da geçer.
+
+379
+00:49:53,251 --> 00:49:56,931
+Fakat pardon Türkçede neyi görüyorsunuz?
+
+380
+00:49:57,011 --> 00:50:06,692
+Türkçede çok güzel ev kelimesi aldığı bütün sözcük biçimlerine de baktığımda ben bunun evden türediğini rahatlıkla anlayabiliyorum.
+
+381
+00:50:07,731 --> 00:50:09,671
+Fakat İngilizce'de durum böyle değil.
+
+382
+00:50:09,671 --> 00:50:11,651
+İşte go'yu aldık diyelim.
+
+383
+00:50:11,791 --> 00:50:13,411
+Going, goes, gone.
+
+384
+00:50:13,411 --> 00:50:21,231
+Buraya kadar her şeyin go'dan geldiğini anlıyorum ama karşıma birdenbire go'dan türemiş bir başkası öcük biçim çıkıyor, WENT.
+
+385
+00:50:21,231 --> 00:50:28,231
+Yani ben yabancı biriyim, ilk kez İngilizceyi öğreniyorsam bu WENT'in başka bir kelime olduğunu düşünebilirim.
+
+386
+00:50:29,211 --> 00:50:31,291
+Go'dan türemediğini söyleyebilirim.
+
+387
+00:50:31,391 --> 00:50:39,691
+O yüzden İngilizce gibi çalışmalarda da fiillerde, düzenli ve düzensiz fiillerde ayrı leksikonlarda tutuluyor.
+
+388
+00:50:39,692 --> 00:50:43,692
+Bunlar önemli değil.
+
+389
+00:50:45,692 --> 00:51:07,031
+Şimdi burada anlamda en küçük birime, evet morfem diyoruz demin arkadaşınızın dediği gibi de o arkadaşınızın problemi bunların yanlış söylenmiş olması gelecek.
+
+390
+00:51:07,031 --> 00:51:32,431
+gelecek diye yazanlar bile olabilir ama bunlar çok rahatlıkla düzeltilebilen şeyler. Ben gelecek yerine gelecek bile yazsam, word1vec ya da google bile şunu mu demek istediniz diye bana onu düzeltiyor. Bunu işte düzeltmesi demek arkada dil modellerini kullanıyor. Bu dil modellerinde de Ngram modellerini kullanıyor.
+
+391
+00:51:32,431 --> 00:51:59,431
+Çünkü n-gram modelleri aslında bana en kolay şekilde çözümü söyleyebilecek durumlar. Şöyle bir örnek vereyim. Ben bir elimde resim formatında tekst var. OCR yapıyorum ve bunu tekste çeviriyorum. OCR'ım her zaman çok başarılı olmuyor. Son model versiyon OCR'lar gayet başarılı ama
+
+392
+00:51:59,431 --> 00:52:03,271
+Ama kağıdın kalitesi bile çok önemli.
+
+393
+00:52:03,851 --> 00:52:08,831
+Arada diyelim ki şuradaki harf L değil de T olarak çıktı.
+
+394
+00:52:09,311 --> 00:52:10,691
+Getecek diye çıktı.
+
+395
+00:52:11,291 --> 00:52:13,711
+Türkçede getecek diye bir kelime yok.
+
+396
+00:52:14,071 --> 00:52:15,611
+Peki bu kelime ne olabilir?
+
+397
+00:52:15,611 --> 00:52:24,611
+Ben dil modellerini kullanarak bunun önündeki kelime ya da arkasındaki kelimeye göre buranın gelecek olduğunu
+
+398
+00:52:24,611 --> 00:52:36,671
+ya da karakter tabanlı model kullanarak bunun önünde E, iki önünde G, arkasında E, iki arkasında C ya da üç arkasında Ece varsa
+
+399
+00:52:36,671 --> 00:52:44,031
+buranın T değil de L olacağını yine bana dil modellerim söyleyebilir.
+
+400
+00:52:45,492 --> 00:52:47,391
+N-gram modelleri.
+
+401
+00:52:47,731 --> 00:52:52,751
+Şimdi bir ara vermeden evvel şöyle bir şey yapalım.
+
+402
+00:52:53,152 --> 00:53:07,691
+dedik ki yeryüzünün 3000 ile 4000 arasında farklı dil var fakat bu dillerden haberimiz bile yok. Bu dillerden bir tanesi çok küçük bir kitle tarafından kullanılan suvahili dilim.
+
+403
+00:53:07,691 --> 00:53:26,512
+Tabi basit diller, kelimesi az olan dillerde cümle yapıları da özellikleri de çok çok kısıtlı. Ben hiç suva hile dili bilmiyorum ama bana sol tarafta bu dilde ve bu da Türkçedeki karşılığı verilmiş.
+
+404
+00:53:26,512 --> 00:53:35,392
+Ben kalem kullanmadan, hiçbir model tasarlamadan rahatlıkla bu dili çözebiliyorum.
+
+405
+00:53:36,131 --> 00:53:45,512
+Mesela bakıyorum buradaki almak fiili varsa ben şu kelimelere bakarak almak fiilinin hangisi olduğunu söyleyebilirim.
+
+406
+00:53:45,512 --> 00:53:48,571
+Bir dakika daha sormadım.
+
+407
+00:53:48,571 --> 00:53:56,571
+Birinci tekil şahsın ne olduğunu, ikinci tekilin ne olduğunu, gelecek zamanın ne olduğunu bunların hepsini söyleyebilirim.
+
+408
+00:53:57,431 --> 00:54:02,911
+Mesela şöyle bir bakın biraz sonra birlikte bunu yorumlayalım.
+
+409
+00:54:09,364 --> 00:54:37,843
+baktınız. Sizce çok basit. Almak burada nedir? Al fiili. Pata. Pata. Şeye yazmayın çünkü ben çeti şu an görmüyorum. Pata. Almak. Peki, burada başka neler var? Li var. Li acaba neyi vurguluyor? Hemen li'lerin olduğu şeylere bakmam lazım. Sonra ni var.
+
+410
+00:54:39,364 --> 00:54:55,944
+VAR var, U var, şurada Q var ya da Q var. Bunların her biri mutlaka bir şey gelecek. Şuna bakalım. Şunlarda onu, onu, onu var.
+
+411
+00:54:56,283 --> 00:55:08,084
+Öyleyse buradaki onu, iki ne olabilir? Yani onu kelimesi. Ki. Çünkü diğerlerinde hiç ki yok ve diğerlerinde onu da yok.
+
+412
+00:55:08,083 --> 00:55:35,383
+Peki ki onu patada şey anmak. Şimdi burada ne var? Aldım, alacağım, aldın. Şu ikisinde ben var. Bu da sen. Öyleyse ben nedir? Ni. Peki doğruluğunu bakalım. Aldım diyorum. Burada da ben birinci tekil şahıs. Evet burada da ni var. İyi bunu da yerine koydum.
+
+413
+00:55:35,383 --> 00:55:43,023
+Sen kelimesi nedir? Ya da seni diyelim.
+
+414
+00:55:43,803 --> 00:55:44,023
+KU.
+
+415
+00:55:49,023 --> 00:55:50,663
+Başka var mı burada?
+
+416
+00:55:51,243 --> 00:55:51,503
+KU.
+
+417
+00:55:51,923 --> 00:56:03,703
+Ne diyorsunuz? Anlamıyorum ki ya. Alkolik gibi konuşuyorsunuz arkadaşlar. Benim gibi bas bas konuşsanıza. Biraz sonra yalnız sesim yine gidecek. O ayrı bir konu.
+
+418
+00:56:03,703 --> 00:56:32,883
+ya da çoğul eki hangisidir? Burada bir tane çoğul var. Aldılar. Öncesi çoğul eki var. Hemen açalım. Çoğul eki de değil, üçüncü çoğul şahısmış. Bunlar. E ne oldu? Bana bir başka kelime verseler. Git, kata. Hepsini çözdüm. Nili kata diyeceğim. Onu verdim.
+
+419
+00:56:33,703 --> 00:56:40,043
+Olikata diyeceğim, onu aldım, verdim, verdin olacak.
+
+420
+00:56:40,623 --> 00:56:46,444
+Öyleyse dilim, demek ki çözümlemek bu oluyor.
+
+421
+00:56:46,563 --> 00:56:47,483
+Çok basit bir dil.
+
+422
+00:56:47,823 --> 00:56:50,763
+Hiçbir şey kullanmadım, model kullanmadım.
+
+423
+00:56:51,203 --> 00:56:54,923
+Sadece kendi mantığında bu kuralları çıkarabildim.
+
+424
+00:56:54,923 --> 00:57:21,423
+Ben nasıl bunu bu şekilde çıkarabiliyorsam aslında şu an şeyde de bir derin öğrenme yapısı ben kullansam NLP, Pata aldım böyle kelimeleri verdim, verdim, verdim al öğren dedim ona ve o şu benim yaptığım gibi Pata'nın almak, U'nun ikinci teki şahıs olduğunu falan bana çıkarır ve öğrenir.
+
+425
+00:57:21,423 --> 00:57:27,823
+sistemim çok güzel bir şekilde modellerim ya da bunu makine öğrenmesi yöntemleriyle de yapabilirim.
+
+426
+00:57:28,724 --> 00:57:38,823
+Burada şeyi görüyoruz, bir kelime biçim birimlerini alırken farklı koşullara girebiliyor.
+
+427
+00:57:38,823 --> 00:57:43,343
+Mesela buradaki bilecek, buradaki bulacak.
+
+428
+00:57:44,224 --> 00:57:50,623
+Burası işte ses uyumunda olduğu gibi kalın sesli ise kalın sesli ile devam ediyor.
+
+429
+00:57:50,623 --> 00:58:07,503
+İnce sesli ise ince sesli ile devam ediyor. Başka bunlara hiç uymayan durumlar var. Uymayan durumları da göreceğiz. O da ken eke. Önündeki ister kalın ister ince olsun.
+
+430
+00:58:08,500 --> 00:58:29,719
+sesli harf her zaman ken oluyor. Yok, kanmış, kunmuş, kinmiş olmuyor. Ken oluyor. Şimdi şu eklere de şöyle bir genelleme yapmamız gerekiyor. Bunların da bir gösterelim notasyonu var. Bir bakayım şu slide'da o var mıydı? Bir dakika. Evet, varmış.
+
+431
+00:58:29,719 --> 00:58:46,479
+Bizde az çok belli de bu durum ama İngilizce'de durum pek öyle değil. Şu önüne in mi gelecek, in mi, in mi, ir mi bir kuralı yok. Çok karışık.
+
+432
+00:58:46,479 --> 00:58:55,939
+Genelde dile karşı yetisi olan kişiler kulağıma bu daha uyumlu geldi diyorlar ve doğru da tahmin edebiliyorlar.
+
+433
+00:58:55,939 --> 00:59:10,919
+Benim gibi yeteneği az olan kişiler bu gibi konularda ben ancak o kelimeyi defalarca görüp okudum daha bu hep inle kullanılıyormuş, bu hep imle kullanılıyormuş diyebilen insanlardanım.
+
+434
+00:59:11,119 --> 00:59:12,379
+Mesela kural yok.
+
+435
+00:59:12,759 --> 00:59:15,239
+Peki İngilizce'de böyle bir durumda ne yapıyorlar?
+
+436
+00:59:15,239 --> 00:59:26,040
+il ön ekini alan kelimeler ayrı bir leksikonda, il ekini alanlar ayrı bir leksikonda, im olanlar ayrı bir leksikonda tutuluyor.
+
+437
+00:59:26,459 --> 00:59:29,699
+Başka türlü bunu yapamazlar.
+
+438
+00:59:32,699 --> 00:59:36,539
+Şimdi şu notasyona bakın.
+
+439
+00:59:36,539 --> 00:59:39,000
+Şu notasyona bakın.
+
+440
+00:59:39,000 --> 00:59:51,099
+Bu aldığımız biçim birimler yani acak ecek var, çı çı çı çı, cı cı cı cı cı bunların gösterilimleri var.
+
+441
+00:59:51,540 --> 00:59:58,900
+Gösterilimlerinde eğer bu köşeli parantez içerisinde gördüğünüz her şey olduğu gibi kullanılacak demektir.
+
+442
+00:59:58,900 --> 01:00:06,580
+Süslü parantez içerisinde yazdığında ve büyük harf olanları farklı şekilde okuyacağım demektir.
+
+443
+01:00:06,579 --> 01:00:16,419
+Büyük A gördüğümüz şeyler demektir ki bu yeri geldiğinde E olacak, Ecek, yeri geldiğinde A olacak demektir, Acak.
+
+444
+01:00:17,079 --> 01:00:25,699
+Şimdi buraya gelelim. İkisi de büyük harf. Bu büyük harf Ç'yi gördüğümde ben bunları yine küçük harf olarak algılayacağım.
+
+445
+01:00:26,619 --> 01:00:36,099
+Ç olarak ya da C olarak kullanılacak. Bu büyük I harfi de I, İ olabilir, U, Ü olabilir.
+
+446
+01:00:36,580 --> 01:00:46,820
+O zaman bu C ve Ç olarak bunlar da I, İ, U, Ü olarak okunduğu için 4 tane farklı biçimcik yazabiliyorum.
+
+447
+01:00:47,479 --> 01:00:51,320
+Buraya bakalım. Buradaki büyük harf olan şu ortadaki I.
+
+448
+01:00:51,320 --> 01:00:58,279
+Bu I'larda ya I'dır ya İ'dir ya U'dur ya da Ü'dür. Aynı burada olduğu gibi.
+
+449
+01:00:59,160 --> 01:01:01,479
+Lıklik, lukluk diye okunur.
+
+450
+01:01:01,479 --> 01:01:21,379
+Bunun ikisi de büyük harf. A'lar ne oluyordu? Ya A ya E oluyordu. Büyük T'ler de ya T'dır ya Da'dır. Yani mesela kitap diyorum ama kitaba diye çeviriyorsun. Kitapta, kitapta bunlar değişebiliyor.
+
+451
+01:01:21,379 --> 01:01:42,999
+Ken ne olursa olsun her zaman kendi okunuyor. Hiçbir değişikliği yok. Bunları neden gösterdim? Bunları şu yüzden gösterdim. Karşınıza şöyle çıkabilir. Git kelimesi var. Bu bir sözcük birim. Git kelimesi ek alarak bir sözcük biçim haline gelmiş. Gidecek.
+
+452
+01:01:43,000 --> 01:01:49,179
+Bunun kökü git ama bu RT ile yazmamın sebebi şudur.
+
+453
+01:01:49,179 --> 01:01:59,459
+Bu bazı durumlarda T oluyor tek başına kullanıldığında ama ek aldığında da T D'ye dönüşecek demektir.
+
+454
+01:01:59,820 --> 01:02:03,720
+Çünkü T neydi? D de olabilir, T de olabilir.
+
+455
+01:02:04,240 --> 01:02:05,279
+Bu Ecek.
+
+456
+01:02:06,164 --> 01:02:34,863
+ya da acak oluyordu. Önüne gelen fiile göre bu acak da olabilir, ecek de olabilir. Aynen buradaki gibi. Ben şu notasyonlara bakarak bunların nasıl okunabileceğini, nasıl değişebileceğini söyleyebiliyorum. Neyse ben bu bölümü bitirince ara verim. Burayı da çok hızlı geçiyorum. Biçim birimler neydi arkadaşlar? Şunlardı biçim birimler.
+
+457
+01:02:36,164 --> 01:02:45,384
+parçalanmış. Bu biçim bilimlerin türleri var. Bağımlı, bağımsız olması, sıfır biçimci, portmanto, tekçil.
+
+458
+01:02:45,384 --> 01:02:53,583
+Bağımlı ve bağımsız olması ne demek? Ya ek alacak, ekler her zaman bağımlıdır, tek başına kullanılamaz.
+
+459
+01:02:53,903 --> 01:03:03,004
+Tek başına görünmeyen kökler vardır. Bir de eylemler, bunlar da bağımlıdır. Bağımsız olanlar, bunların dışında kalanlardır.
+
+460
+01:03:03,004 --> 01:03:05,724
+Free Morpham dedik.
+
+461
+01:03:07,524 --> 01:03:10,363
+Bulumluya bir örnek verelim mesela.
+
+462
+01:03:10,644 --> 01:03:13,244
+Bazı ekler tek başına görünemez.
+
+463
+01:03:13,384 --> 01:03:20,303
+Mesela öğre kökü eskiden kullanılmış bir kök ama artık yok.
+
+464
+01:03:20,303 --> 01:03:24,863
+Yani öğrenmek deyince öğrenmenin kökü öğre değil.
+
+465
+01:03:25,363 --> 01:03:26,863
+Bu kök artık unutulmuş.
+
+466
+01:03:27,043 --> 01:03:29,303
+Öğrencinin kökü öğre değil.
+
+467
+01:03:29,983 --> 01:03:32,744
+Ya da nite diye kökten türemiştir.
+
+468
+01:03:32,744 --> 01:03:38,684
+nitelikte nitel kelimesi de ama nite diye bir kök de şu an günümüzde yoktur.
+
+469
+01:03:38,983 --> 01:03:41,044
+Bu da ölmüştür zaman içerisinde.
+
+470
+01:03:41,524 --> 01:03:43,604
+İster nitel de kökü niteldir.
+
+471
+01:03:44,024 --> 01:03:49,324
+Nitelik de kökü yine niteliktir, niteldir.
+
+472
+01:03:52,144 --> 01:03:56,763
+Eylemler kök veya köklerden başlaşmadan emir tipi haricine dedik.
+
+473
+01:03:56,763 --> 01:03:58,363
+Sıfır biçimcik nedir?
+
+474
+01:03:58,363 --> 01:04:04,923
+Tek başına kullanılabilenler, hiçbir ek almadan kullanılabilenler, sıfır biçimcik olarak adlanılır.
+
+475
+01:04:05,303 --> 01:04:22,964
+Portmanto nedir? Portmanto nedir? Evde işte ya da sınıfta üzerimizden çıkardıklarımızı astığımız bir askı ama hatırlayın bazen bir o çengeli birden fazla kişi kıyafetini asıyor, üst üste biniyor.
+
+476
+01:04:22,964 --> 01:04:31,783
+İşte burada da bir ek birden fazla anlamı içerisinde barındırıyorsa bu portmanto biçimcik oluyor.
+
+477
+01:04:31,783 --> 01:04:41,164
+Nedir mesela? Geliyorsunuz. Burada hem sizi anlatıyor hem de çoğul olduğunu anlatıyor.
+
+478
+01:04:42,204 --> 01:04:50,863
+Geldikteki kelime geldik, biz geldik ve aslında geldik geçmiş bir zamanı anlatıyor.
+
+479
+01:04:50,863 --> 01:04:59,324
+İngilizce'deki S hem geniş zamanı gösteriyor hem de üçüncü tekil kişiyi gösteriyor.
+
+480
+01:04:59,324 --> 01:05:01,703
+Bu özelliği taşıyanlar var.
+
+481
+01:05:02,164 --> 01:05:03,223
+Tekçiller var.
+
+482
+01:05:04,083 --> 01:05:05,443
+Bu da çok enteresan.
+
+483
+01:05:05,604 --> 01:05:06,983
+Bazı kelimeler var.
+
+484
+01:05:07,164 --> 01:05:13,263
+Mesela yağmur sözcüğü yağ eylemi ile bir bağlantısı olduğu açık.
+
+485
+01:05:13,403 --> 01:05:14,563
+Yağmaktan geliyor.
+
+486
+01:05:15,263 --> 01:05:17,783
+İşte yağdı, yağın, yığıyor gibi.
+
+487
+01:05:17,783 --> 01:05:42,323
+Fakat mur eki Türkçede yağ kökünden başka hiçbir kelimeye eklenmiyor. Yok yani. Hamur diyeceksiniz. Hamurun kökü ha değil ki mur ona ek gelsin. O kelimenin kendisi. Eğer mur bir ek olarak sadece yağ köküne geliyor Türkçeden. Başka da hiç gelmiyor. O yüzden bunlar da tek cil biçim birim oluyor.
+
+488
+01:05:42,323 --> 01:05:55,903
+İngilizce'deki beri mutlaka bir şeylere ekleniyor ama krem kelimesi sadece beri ekiyle kullanılıyor. Başka hiçbir şeyle kullanılmıyor.
+
+489
+01:05:56,532 --> 01:06:06,471
+Kısacası biçim bilimsel analizin görevleri nedir? Kelimenin türünü tespit ediyor. İsim mi, sıfat mı, fiil mi, edat mı buna bakıyor.
+
+490
+01:06:07,091 --> 01:06:13,851
+Kendisini oluşturan kök ve ona eklenen ekleri, biçim bilimleri bana söylüyor.
+
+491
+01:06:13,851 --> 01:06:25,872
+Yine aldığı ekin türlerinin bilgisini bana veriyor. Mesela armudu yedim, Ali'nin armudu, buradaki u eki değişiyor.
+
+492
+01:06:25,872 --> 01:06:42,892
+Birinde nesne eki iken diğerinde tamlanan eki. Ali'nin armudu diyorum oradaki u tamlanan eki oluyor. Biçim bilimsel analizde deklaratif yöntemler ve prosedürlü yöntemler diye ikiye ayrılıyor.
+
+493
+01:06:42,892 --> 01:06:48,792
+Prosedürlü yöntem de basit ama ilkel bir yöntem aslında.
+
+494
+01:06:49,032 --> 01:06:52,712
+Bütün kelimelerin kökleri sözlükte saklanıyor.
+
+495
+01:06:52,712 --> 01:06:59,392
+Ben ekleri ayırdıktan sonra bu kelimenin kökü bu sözlükte varsa kökü budur diyorum.
+
+496
+01:07:00,032 --> 01:07:02,612
+Diğeri ise deklaratif bir yöntem.
+
+497
+01:07:03,412 --> 01:07:10,292
+Kelimeler biçim bilimleriyle, morfolojik bilgileriyle birlikte sözlükte tutuluyor.
+
+498
+01:07:10,292 --> 01:07:14,272
+analiz yapılınca kelime bu sözlük içerisinde aranıyor.
+
+499
+01:07:14,552 --> 01:07:21,512
+Uygun sonucun doğrudan alınmasına dayanıyor.
+
+500
+01:07:21,752 --> 01:07:23,132
+Aslında yanlış söyledim.
+
+501
+01:07:23,412 --> 01:07:25,772
+Deklaratif yöntem en basit olan yöntem.
+
+502
+01:07:26,152 --> 01:07:29,311
+Çok zahmetli yalnız bir kere bunun hazırlanması gerekiyor.
+
+503
+01:07:29,792 --> 01:07:32,811
+Prosedürlü yöntemde sadece kökleri saklıyorum.
+
+504
+01:07:32,811 --> 01:07:39,351
+Ekleri ben kendim morfolojik testlerle bulmaya çalışıyorum.
+
+505
+01:07:40,291 --> 01:07:57,771
+İşte iyilik ekleri var. Bunu geçelim. Durum ekleri, yönelme ekleri. Bu morfolojik analizde karşıma neler gelecekti. 3 tane ki eki var. Hatırlayın. Bir ara bunu ödev vermiştim. Bana ki eklerinin metin içerisinde bul.
+
+506
+01:07:57,771 --> 01:08:19,032
+Şimdi bazı key'ler var. Ek olarak ayrılmış. Mesela bağlaç olan key'ler var. Ne zaman bir key ayrı yazılır? Bu key'yi kaldırdığım ve key cümlenin anlamı bozulmuyorsa bu bağlaç olarak kullanılmış key'dir. Bir yemek yapmış, yeme de yanında yat. Bir yemek yapmış key, yeme de yanında yat.
+
+507
+01:08:19,032 --> 01:08:26,192
+Yani ki çıkardığımda cümlenin anlamı bozulmuyorsa bu ki ayrı yazılmalıdır ve bağlaç olan ki'dir.
+
+508
+01:08:26,632 --> 01:08:32,431
+İkinci ki sıfat yapan ki'dir ve ismin mutlaka D halinden sonra gelir.
+
+509
+01:08:32,431 --> 01:08:34,272
+Aynen burada olduğu gibi.
+
+510
+01:08:34,791 --> 01:08:36,052
+Karşıda ki diyorum.
+
+511
+01:08:36,612 --> 01:08:40,392
+Aslında tanımladığım için patikayı sıfat yaptım.
+
+512
+01:08:40,731 --> 01:08:45,091
+İsmin D halinden sonra geldiği için sıfat yapan ki'ye ki.
+
+513
+01:08:45,571 --> 01:08:47,731
+Bir de zamir yapan ki'ye ki var.
+
+514
+01:08:47,731 --> 01:09:04,151
+Eklendiğinde bir ismin yerini tutuyor. Benim çantamın rengi siyahmış. Seninki ne renk diyor. Yani bu da seninki karşımdaki bahsetmiş olduğum kişi olduğu için zamir yapan ki diyoruz.
+
+515
+01:09:04,151 --> 01:09:17,411
+Büyük ünlü küçük ünlü uyumları var. Bunları hatırlarsınız. Kural dışı durumlar çok fazla var Türkçe'de. Bu uyumlara uymayan bir kere bileşik sözcükler uymuyor.
+
+516
+01:09:17,731 --> 01:09:25,752
+Türkçedeki taş, taş, kilgen, kili, ımtırak, ümtırak, yor, uyor ekleri de kurallara uymaz.
+
+517
+01:09:25,911 --> 01:09:29,252
+Mesela gönül taş diyoruz, meslek taş diyoruz, uymuyor.
+
+518
+01:09:29,991 --> 01:09:36,412
+Anne, dahi, elma, kardeş, şişman bu kelimeler uymuyor.
+
+519
+01:09:36,551 --> 01:09:43,051
+Çünkü bunların birçoğu ülkeme diyorum dilime başka dillerden girmiş kelimeler.
+
+520
+01:09:43,051 --> 01:09:48,651
+FİL NESNEĞE VE ÖZNEĞE FİILLERİ
+
+521
+01:09:49,876 --> 01:10:04,256
+çatı nesne ve özneye göre farklılıklar değiştiriyor. Bunlara bakarsınız. Bunların önemi yok. Yani böyle şeylerle uğraşmayacaksınız. Sadece morfolojik analizde, sana çözümlemede bunları da söyleyecek.
+
+522
+01:10:04,256 --> 01:10:24,015
+Diyecek ki geçişsiz fiil, geçişsiz fiil nedir diye kalma. İşte geçişsiz fiil, nesneye soru soruyorsun. Neyi, kimi ve onu zamirli, yani fiile neyi, kimi sorularını yöneltiyorsun veya fiilin başına onu zamirini getiriyorsun.
+
+523
+01:10:24,015 --> 01:10:39,896
+cevap alabiliyorsan bu fiil geçişli fiil oluyor. Seni duyuyorum. Neyi duyuyorsun? O yok. Kimi duyuyorsun? Seni duyuyorum. O zaman bu nedir? Geçişli bir fiildir duymak.
+
+524
+01:10:39,896 --> 01:10:57,496
+Geçitsiz, lütfen otur, sor bakalım otur kelimesini, neyi otur, cevap yok, kime otur, cevap yok, fiilin başına onu otur zaminini getirdim, yine anlamsız, o zaman bu ne oluyor, işte geçitsiz fiil oluyor.
+
+525
+01:10:57,495 --> 01:11:26,335
+Bunun gibi başka tipleri de var. Çatılı çatısız. Öznesine göre etken edilgen olanları var. Evi güzelce temizledi. Kim temizledi? Özneye cevap varsa bu etkendir. Ev temizlendi. Kim temizledi? Cevap yok. Bu da edilgendir.
+
+526
+01:11:27,495 --> 01:11:50,795
+Ondan sonra dönüştü fiiller. Yani bunları dediğim gibi geçtim. Şimdi bir ara verelim. Bundan sonra gramal ve dillere geçelim. Çevrek geçiyor. On buçukta yeniden burada olalım. Okey? Biri evet derse memnun olurum. Evet mi?
+
+527
+01:11:50,795 --> 01:11:51,915
+Tamam hocam.
+
+528
+01:11:52,335 --> 01:11:54,895
+Tamam peki. On buçukta.
+
+529
+01:11:54,895 --> 01:11:55,875
+Hocam.
+
+530
+01:11:57,495 --> 01:12:10,935
+Tamam hocam. Oldu. Hocam, slide'ları paylaşacak mısınız? Arkadaşlar slide'larım zaten paylaşılmış durumda. Avizsiz, Banu Diri deyin, şuraya yazıyorum.
+
+531
+01:12:10,935 --> 01:12:28,355
+Atice'ye değil, Evruban Herkes'e, Avesiz, Üniversitemin Şeği, Banu Diri değil, benim sayfama giri, duyurular, paylaşımlar kısmında bütün derslerimin noktaları var.
+
+532
+01:12:28,355 --> 01:12:40,515
+Ama tarihlerine bakın, bazen bu slatları hiç online anlatmadım ben, araları yeni şeyler ekliyorum, güncellemeler olabiliyor.
+
+533
+01:12:40,935 --> 01:12:48,995
+Yani anlattığım dersleri indirin bakın. Diğerlerinin hepsini indirmeyin. Onlara ekler yapıp güncelleyeceğim. Tamam mı?
+
+534
+01:12:51,155 --> 01:12:57,015
+İnşallah duyuldu. Herkes gitti mi bilmiyorum. Hadi kapatıyoruz. Görüşmek üzere diyoruz.
+
+535
+01:27:38,515 --> 01:27:41,216
+Evet, bir dakika gecikmişim. Özür dilerim.
+
+536
+01:27:56,916 --> 01:28:13,516
+Şimdi herhalde 17'ye düştük. Gelirler herhalde 27'lik bir ara. Şimdi ben şey, screen share yapıyorum. Bir ses alayım birinizden.
+
+537
+01:28:13,516 --> 01:28:43,395
+Tamam. Çok garip oluyor arkadaşlar. En azından böyle derse girişte böyle bir kamerayı bir açın. Gerçi benimki de açık değilmiş. Kapatırım biraz sonra. Bir açın. Bir ha ha hu bir şey deyin. Ben bir canlı bir şey olduğunu hissedeyim. Tamam. Şimdi kapattım. Slide mı? Pardon. Pardon. Ay ay ay. Share screen dedi.
+
+538
+01:28:43,515 --> 01:29:11,395
+Buna geçtik. Şunu da yapalım. Şimdi birazcık konunun rengi ve şekli değişti burada. Burada neyi göstermek istiyorum bu derste size? Bu derste göstereceğim şey şu. Bir elinizde dil var. Bu dilin grameri, bu dildeki
+
+539
+01:29:11,395 --> 01:29:31,955
+cümle yapıları, dildeki sözlükler yani kelimeler, sözlükleri ve o dili dil yapan özellikler size verildiğinde ben tüm cesel yapılarımı nasıl oluşturuyorum ve bu dili nasıl modelliyorum bunu göstereceğiz.
+
+540
+01:29:31,956 --> 01:29:46,316
+Tabi bunu gösterirken bunu gerçek bir doğal dildeki gibi göstermem imkansız. Daha böyle sembolik karakterlerle göstereceğim. Daha sonra bu slide'ın sonunda da gerçek dünya örneklerine geçeceğiz.
+
+541
+01:29:46,315 --> 01:29:58,575
+Bunları yaparken önce ne demem gerekiyor? Elimizde bir alfabemiz var. Bu alfabemiz benim dilimi oluşturan karakterlerden oluşuyor.
+
+542
+01:29:58,575 --> 01:30:12,235
+Türkçe ise bu 29 karakter ama benim burada modelleyeceğim örneklerde ABC, 01 gibi as kelimeden oluşan sözlükler olacak.
+
+543
+01:30:12,235 --> 01:30:33,855
+Bir gramerim, gramerimdeki kurallarım, bir de tümcesel yapılarım var. Bu tümcesel yapılar bu kurallar çerçevesinde oluşabiliyorsa, oluşturuluyorsa bunlar geçerli. Aksi takdirde de geçersiz durum haline geliyor.
+
+544
+01:30:33,856 --> 01:30:49,316
+Kullanacağım notasyonlarda iki tane kavram var. Onları unutmayalım. Önemli. Bir tanesi söz isim değişkenleri. İkincisi de uç değişkenler.
+
+545
+01:30:49,656 --> 01:30:56,676
+Uç değişkenler küçük harflerle gösteriliyor. Söz isim değişkenleri de büyük harflerle.
+
+546
+01:30:56,675 --> 01:31:10,295
+Bazı yayınlar aynı şeye karşılık gelse de kimi uç değişkenleri abc012 diye sembolize ederken diğerleri uvwy diye.
+
+547
+01:31:10,295 --> 01:31:20,615
+Büyük harfleri yani söz değişken söz hızın değişkenleri abc ederken diğerleri uvy olarak sembolize ediyor.
+
+548
+01:31:20,615 --> 01:31:39,655
+Neyse evde yokmuşum gibi davranıyorum şu an kapı çalınıyor. Boşverin. Olarak sembolize ediliyor. Bunlar da benim tüm cesel yapılarım. Şimdi bunların ne olduklarından bahsederim.
+
+549
+01:31:39,655 --> 01:31:54,815
+Ay susmadı. Söz isim değişken nedir? Söz isim değişken şudur. Ben mesela ne diyeyim size? Şu yukarıya yazıyorum. Türkçe olsun isim cümlesi.
+
+550
+01:31:55,315 --> 01:32:00,835
+İsim cümlesi ic diyelim. İsim cümlesi ne olsun?
+
+551
+01:32:04,916 --> 01:32:17,035
+isim cümlesi ya da isim cümlesi demeyeyim ona. word phrase, noun phrase. Tamam, isim cümlesi olsun.
+
+552
+01:32:18,035 --> 01:32:29,995
+isim cümlesi bir isimden ve onu takip eden ikinci bir isimden olsun.
+
+553
+01:32:29,995 --> 01:32:35,516
+Yani iki tane arka arkaya gelen isim, bir isim cümlesi olsun.
+
+554
+01:32:35,516 --> 01:32:39,596
+Biz bunlara söz dizimsel değişkenler diyeceğiz.
+
+555
+01:32:40,055 --> 01:32:43,916
+Yani birden farklı, birinizin mikrofonu açık kapatabilir mi?
+
+556
+01:32:44,295 --> 01:32:50,816
+Birden farklı yapının arka arkaya gelmesiyle ben söz dizimsel değişkenleri oluşturuyorum.
+
+557
+01:32:51,416 --> 01:32:56,456
+Uç simgeler dediğim şey de kelimeler, tek başına olan kavramlar.
+
+558
+01:32:56,455 --> 01:33:01,055
+Alfa ise beta dediğim şeyde şu şekilde göstereceğim.
+
+559
+01:33:01,055 --> 01:33:02,375
+Alfa ise betayı.
+
+560
+01:33:02,815 --> 01:33:04,155
+Bunun da anlamı şudur.
+
+561
+01:33:04,715 --> 01:33:11,615
+Aynı programlama dillerinde olduğu gibi beta değerlerini al, alfanın içerisine koy.
+
+562
+01:33:12,015 --> 01:33:12,675
+Bu ne demek?
+
+563
+01:33:13,136 --> 01:33:16,515
+Benim elimde bir tane cümle var, sentence olsun.
+
+564
+01:33:17,075 --> 01:33:23,355
+Bu cümlem bir isim cümlesi, bir tane de şeyden olsun, fiil cümlesinden olsun.
+
+565
+01:33:23,355 --> 01:33:29,395
+İsim cümlesi C'ye bakılana kadar kötü yazılmış bir de fiil cümlesinden olsun.
+
+566
+01:33:29,395 --> 01:33:37,395
+Ben şuradaki değeri alıp bir Santos oluşturmak amacıyla Santos'a atmam demek bunlar.
+
+567
+01:33:37,975 --> 01:33:40,015
+Örneklerde çok daha rahat göreceğiz.
+
+568
+01:33:42,375 --> 01:33:45,755
+Silelim ve şimdi devam edelim.
+
+569
+01:33:48,035 --> 01:33:51,055
+Karşıma Shomsky hiyerarşisi çıkıyor.
+
+570
+01:33:51,055 --> 01:34:15,455
+Bu nedir? Shomsky, Narmu Shomsky en ünlü dil bilimci. Bu dil bilimci dilleri dörde ayırıyor. Tür sıfırdan tür üçe kadar gidiyor. Çemberin en dışındaki dil sınırsız bir dil. Hiçbir kuralı yok. Yazabildiğin, yapabildiğin her şeyi yapabiliyorsun.
+
+571
+01:34:15,455 --> 01:34:26,255
+İçeri doğru ilerledikçe diller yoğunlaşıyor. Yani kurallar geliyor, kısıtlar geliyor, kafana göre hareket edemiyorsun.
+
+572
+01:34:27,135 --> 01:34:29,916
+Dışarıya doğru açıldıkça her şey serbest.
+
+573
+01:34:29,916 --> 01:34:43,575
+TÜR sıfır dili ön yinelemeli sayılabilir diller deniyor. Bunun anlamı yani hiç kural yok. İç içe bir yapıları koyarak gene yapılar oluşturabiliyorum.
+
+574
+01:34:43,576 --> 01:34:44,615
+İkincide
+
+575
+01:34:45,716 --> 01:34:53,435
+bağlama bağımlı diller, context sensitive diyoruz, kural ekleniyor, o kural çerçevesinde hareket ediyorum.
+
+576
+01:34:54,155 --> 01:35:04,175
+Bağlamdan bağımsız diller, context free diller oluyor. Bunlara en güzel örnek programlama dilleri. Programlama dilleri kurallıdır.
+
+577
+01:35:04,275 --> 01:35:12,136
+Öyle kafana göre bir kod yazamıyorsun, kod satırı yazamıyorsun ya da komutu kullanamıyorsun, sana sintaks hatası veriyor.
+
+578
+01:35:12,136 --> 01:35:21,616
+En sonda olan düzgün diller daha da rejit. Katı kuralları var. Her şey belli. Hiçbir esnekliğin yok.
+
+579
+01:35:22,355 --> 01:35:32,896
+Günümüzde belki birçoğumuzun kullanmış olduğu regular expression dediğimiz regex dile tamamıyla bu düzenli diller kavramına geliyor.
+
+580
+01:35:32,896 --> 01:35:39,495
+Şimdi biz tür sıfırdan tür üçe geçerek örneklerle bu dilleri anlatmaya çalışacağım.
+
+581
+01:35:39,916 --> 01:35:42,375
+Ama hangi notasyonlarla? Bunlarla.
+
+582
+01:35:42,796 --> 01:35:49,775
+Yani benim söz dizimsel değişken dediğim isim cümlesi, fiil cümlesi olmayacak da ABC olacak.
+
+583
+01:35:50,516 --> 01:35:56,396
+Uç değişkenlerim gitti, geldi, gördü, sevdi olmayacak da ABC olacak.
+
+584
+01:35:56,396 --> 01:36:07,876
+Alfa, beta dediğim şey bir cümle özne, nesne, yüklemden oluşur demeyeceğim de alfa, betadan türer diyebileceğim.
+
+585
+01:36:08,635 --> 01:36:12,116
+Yani olayları kısaltabilmek amacıyla.
+
+586
+01:36:13,495 --> 01:36:22,635
+Dedik ki üç tane dil bilgisim var bunları göreceğiz ama bu dil bilgilerini oluştururken de dil bilgisini iki türlü okuyabilirim.
+
+587
+01:36:22,635 --> 01:36:35,635
+Ya sağdan doğru sağlayayım, sağdan başlayarak okurum ya da sol doğru sağlayıp soldan başlayarak oluşturabilirim.
+
+588
+01:36:35,635 --> 01:36:39,955
+İster sağdan ister soldan oku fark etmez.
+
+589
+01:36:40,515 --> 01:36:51,515
+Soldan okumak bizim okuma alışkanlığımıza, işlem yapma alışkanlığımıza daha yatkın olduğu için genelde kitaplarda ya da ders anlatımlarında
+
+590
+01:36:51,515 --> 01:36:54,156
+hep soldan sağa doğru anlatılır.
+
+591
+01:36:54,915 --> 01:37:06,675
+Türetmeler, ayrıştırma ağaçları yani bir cümlenin kelimelerine ayrılması ya da kelimelerden bir cümlenin oluşturulması olarak yorumlarsam
+
+592
+01:37:06,675 --> 01:37:16,315
+bu da ya yukarıdan aşağıya doğru ayrıştırma yapılır, top-down parsing ya da aşağıdan yukarıya yapılır, batıma parsing.
+
+593
+01:37:16,656 --> 01:37:17,216
+Ne demek?
+
+594
+01:37:18,555 --> 01:37:20,975
+Banu okula gitti.
+
+595
+01:37:21,516 --> 01:37:49,835
+Bu bir sentence. Bunu ayırdım. Banu özne okula gitmek bir fiil cümlesi. Okula git diye geldik. Okul isim, okula isim, gitti fiil. Okulaya geldim. Okul noun, a işte yönelme eki. Gite geldim, git isim, d geçmiş zaman eki. Bu şekilde ayırıyorsam bu yukarıdan aşağıya ayırıştırma demektir.
+
+596
+01:37:49,835 --> 01:38:16,875
+Aşağıdan yukarıya ayrıştırmada işte git diye birleştirdik fiil geçmiş zaman. Okula, nesne iki aldı okula. İşte bu bağını geldi. Okula gitti aldı fiil cümlesi. Bağını geldi noun. Fiil cümlesi noun birleşti cümle oldu diyebiliyorsam bu da batımak parsing oluyor.
+
+597
+01:38:16,875 --> 01:38:24,495
+Şimdi bu tür sıfırla üç arasını örneklerle anlatacağım ama genelde bunları hep tahtayı kullanarak anlatıyordum.
+
+598
+01:38:24,635 --> 01:38:26,935
+Çünkü ancak öyle anlatılabilir bana göre.
+
+599
+01:38:27,575 --> 01:38:32,655
+Şimdi böyle bir imkanım olmadığı için notlarımı buraya geçirdim.
+
+600
+01:38:33,015 --> 01:38:35,695
+Yine bu kalemleri kullanarak anlatacağım.
+
+601
+01:38:36,355 --> 01:38:39,215
+Şunun kalemleri daha büyük.
+
+602
+01:38:41,235 --> 01:38:48,676
+ne olduğuna, bu DROV nedir acaba? Bir şey denemek istiyorum. Bu DROV'un ne olduğunu. DROV daha büyük, daha güzel. Peki.
+
+603
+01:38:50,975 --> 01:39:03,935
+Şimdi, şu G gramer. Gramerin G'si. Bir gramer şu dörtlüden oluşur. Nedir bu dörtlü? Bu terimleri aklımızda tutalım.
+
+604
+01:39:03,935 --> 01:39:20,535
+VN, söz dizimsel değişkenleri yani o büyük harfle yazmış olduğumuz isim cümlesi, fiil cümlesi, dolaylı tümleç bunların hepsi söz dizim değişkenidir ve sonlu bir kümedir.
+
+605
+01:39:21,295 --> 01:39:28,355
+VT dediğim şey uç değişken, bu da sonlu bir küme, elimdeki sözlükler.
+
+606
+01:39:28,355 --> 01:39:36,875
+VT ve VN ayrı kümeler yani bunların kesişimleri boş küme hiç aralarında ortak bir şey olamaz.
+
+607
+01:39:37,535 --> 01:39:49,875
+Gelelim P'ye. P nedir? P yeniden yazma ve türetme kuralı. Yani alfa ise beta. Bunun anlamı da nedir?
+
+608
+01:39:49,875 --> 01:40:06,715
+Benim bu dile özgü kurallarım alfa sentence olsun, beta özne, nesne, yüklem olsun, alfa sıfat cümlesi olsun, beta sıfat isim olsun.
+
+609
+01:40:07,276 --> 01:40:10,795
+Böyle kurallarım çıkarılarak bana verilecek.
+
+610
+01:40:11,215 --> 01:40:14,295
+Betayı hep alfada ilgili yere koyacağız.
+
+611
+01:40:14,295 --> 01:40:16,295
+S nedir?
+
+612
+01:40:16,456 --> 01:40:18,355
+Dördüncü aşamadaki S.
+
+613
+01:40:18,355 --> 01:40:44,195
+başlangıç değişkeni. Ben işlemime nereden başlayacağım? S'den, cümleden başlıyorum. Cümle kimin elemanı? V, N'nin. Yani cümlede bir söz dizimsel değişken. En genel biçimiyle alfa ise beta diyorsam alfa V'lerden oluşuyor. V neymiş?
+
+614
+01:40:44,195 --> 01:40:50,956
+Sözdezimsel değişken ve uç değişkenin birleşimi ve artı var.
+
+615
+01:40:51,616 --> 01:40:54,935
+Beta'da yine V'lerden oluşuyor ve yıldız var.
+
+616
+01:40:54,935 --> 01:41:06,635
+Şimdi hatırlarsınız lisans derslerinizden artı ve yıldız regular expression'da plana operatörleri olarak geçiyor ve anlamları vardı.
+
+617
+01:41:07,336 --> 01:41:13,795
+Artı ifade en az bir kez veya en kez tekrar edebilir.
+
+618
+01:41:14,195 --> 01:41:19,795
+Yıldız ya hiç ya da edebildiği kadar edebilir.
+
+619
+01:41:20,075 --> 01:41:30,955
+Örnek verelim. Elimdeki sembol A. A artı diyorsam ve bununla neler yazabilirim sorusu karşıma gelirse
+
+620
+01:41:30,955 --> 01:41:36,295
+en az bir kez A'yı kullanmam gerekiyorsa A'yı yazarım.
+
+621
+01:41:36,295 --> 01:41:46,036
+arka arkaya iki tane A, ondan sonra işte üç tane A, dört, beş, altı yazabilirim.
+
+622
+01:41:46,816 --> 01:41:51,415
+Yıldız operatörünü kullanıyorsam, yıldız operatörü neydi?
+
+623
+01:41:52,015 --> 01:41:54,735
+Ya hiç ya da yazabildiğim kadar.
+
+624
+01:41:54,735 --> 01:41:59,575
+Ya hiç ise anlamı boşluk, hiçbir şey yok, boş küme.
+
+625
+01:41:59,575 --> 01:42:07,096
+ya da bir tane A, işte iki tane A, nokta nokta, üç tane A diye gider.
+
+626
+01:42:07,676 --> 01:42:13,456
+Öyleyse burası artıysa, alfa artıysa boşluk çıkarılmıştır.
+
+627
+01:42:13,835 --> 01:42:17,475
+Yani sol tarafta hiçbir zaman boş küme yok.
+
+628
+01:42:17,896 --> 01:42:20,835
+Boş kümeye herhangi bir şeyi atayamam çünkü.
+
+629
+01:42:20,835 --> 01:42:26,375
+Ama beta, yıldız, sağ tarafta bir boşluk olabilir.
+
+630
+01:42:27,412 --> 01:42:43,852
+Son olarak, gramer 4 tane bileşandan oluşuyor. V-N sözlüsüm, büyük harflerle yazdıklarımız ve türetilecek olan şeyler. Yani şu türetme kuralları hem V-N'lerden hem de V-T'lerden oluşacak.
+
+631
+01:42:43,852 --> 01:42:56,611
+V-T uç değişkenler, sözlüğümdeki elemanlar, P'ler türetme kuralları, dilime has özellikler, S de benim başlangıç noktam.
+
+632
+01:42:57,412 --> 01:43:00,571
+Peki, devam edelim.
+
+633
+01:43:01,112 --> 01:43:03,391
+Edebilmeyi becerirsem, edelim.
+
+634
+01:43:04,292 --> 01:43:12,112
+Öyleyse bir dil, bir dil, bir dil, kaldım böyle.
+
+635
+01:43:13,112 --> 01:43:14,352
+Spotlight alalım.
+
+636
+01:43:15,452 --> 01:43:16,531
+Bu niye böyle oldu?
+
+637
+01:43:18,092 --> 01:43:19,632
+Bir dil değil.
+
+638
+01:43:20,651 --> 01:43:22,531
+Language, L'den geldi.
+
+639
+01:43:23,172 --> 01:43:25,031
+Bu dilin bir G gramelli var.
+
+640
+01:43:25,031 --> 01:43:42,671
+Bu gramer öyle tümcesel yapılardan oluşuyor ki bu tümcesel yapılar VT yıldızın elemanı ve bu cümlede türetme kurallarından oluşacak.
+
+641
+01:43:43,431 --> 01:43:54,371
+İşte türetme kuralları bu S alfa 1, alfa 1'e alfa 2 koymuş, alfa 2'ye alfa N koymuş arka arkaya iç içe bir sürü tümcesel yapılar olabilir.
+
+642
+01:43:55,031 --> 01:44:12,651
+Şimdi şuradaki örneğe bakalım. Buradaki örnek ne diyor? Buradaki örneği dediği şey şu. Bunları beceremiyorum. Çık buradan. Kalemi al. Hala bu var.
+
+643
+01:44:12,651 --> 01:44:33,351
+Olmuyor, beceremedik yine. Bu ne? Böyle bir şey varmış. Anlamı neyse. Peki ben bunu nasıl kapatacağım gerçekten? En iyisi şuradan çıkarım. Yeniden kaleme gireriz.
+
+644
+01:44:33,351 --> 01:44:48,191
+Şimdi örneğin diyor ki sana bir gramer verdim. Bu G1 grameri. VNN sadece S'den oluşuyor. VT'de sözlüğümde de 0, 1 diye iki tane kelimem var.
+
+645
+01:44:48,191 --> 01:44:55,171
+Türetme kuralların birse 0-1 diye bir türetme kuralım var.
+
+646
+01:44:56,012 --> 01:44:58,391
+N-0-1 diye bir türetme kuralım var.
+
+647
+01:44:58,391 --> 01:45:03,471
+Bu gramere sahip bir dile nasıl modellersin diyor.
+
+648
+01:45:04,292 --> 01:45:13,492
+Şimdi dili modelleyebilmem için benim önce bu türetme kurallarıyla yazabileceğim tüm cesaret yapıları çıkarmam lazım.
+
+649
+01:45:14,251 --> 01:45:15,831
+Birinci bunu çıkarmışım.
+
+650
+01:45:16,331 --> 01:45:17,651
+Başlangıç noktam ne?
+
+651
+01:45:18,191 --> 01:45:37,611
+S'den başlayacağım. S ya 0S1 yazabiliyorum ya da 01 yazıyorum. 01 almışım bu. Bir şeyin hepsi tamamı uç değişkenlerden oluşuyorsa bu bitti demektir. Bitti. Burada başka yazılacak bir şey yok.
+
+652
+01:45:37,611 --> 01:45:49,831
+İkinci bir tümcüsel yapı yazayım. S yerine gideyim 0, S1 koyayım. 0, S1. Bunun tamamının uç değişken olması gerekir.
+
+653
+01:45:49,831 --> 01:46:05,231
+Öyleyse ben S'yi acaba başka neler cinsinden yazabilirim ki uç değişken olsun? S'nin yerine gidiyorum 0, 1 koyuyorum. Şurası. Eskiden burası S'de 0, 1 koydum.
+
+654
+01:46:05,231 --> 01:46:23,631
+Ne oldu? 0, 0, 1, 1 oldu. Hepsi uç değişken. Bu da bitti. Başka bir tümceser yapı yazayım. S yerine 0, S, 1 almışım. Ve buradaki S yerine de gidip ne koymuşum?
+
+655
+01:46:24,051 --> 01:46:44,451
+ya bunu koyabilirim ya bunu koyabilirim. Yine 0S1'i koymuşum. Bunun hepsinin tümdesel yapı olması lazım. Şuradaki S'nin yerine de gidip 0S1'i koymuşum. Arkasında da iki tane 1, 1 var. Hepsi uç değişken oldu. Bu da bitti.
+
+656
+01:46:44,451 --> 01:46:54,451
+Daha böyle bir süre yazabilirim. Her gördüğüm S'nin yerine 0S1, 0S1 iç içe, iç içe, iç içe yazabilirim. Gidebildiği yere kadar.
+
+657
+01:46:55,631 --> 01:47:00,651
+Şimdi acaba ben bu üç tane tümlesel yapıdan bir gramat çıkarabilir miyim?
+
+658
+01:47:00,651 --> 01:47:16,371
+Şimdi bakıyorum 0-1, 2-0-2-1, 3-0-3-1 bunu devam ettirirsem başka s'ler yazarsam 4-0-4-1, 5-0-5-1, 6-0-6 tane 1 diye gider.
+
+659
+01:47:16,371 --> 01:47:26,412
+Öyleyse ben bunu genelleştiriyorum. Diyorum ki bana verdiğin gramerle yazabileceğim dil şu özelliklere haiz.
+
+660
+01:47:26,411 --> 01:47:55,631
+Öyle W'lardan oluşuyor ki, bu W'lara bakıyorum, hep 0, 1'lerden oluşuyor. 0 üzeri N, 1 üzeri N. N'de büyük eşittir 1 demişim. Şimdi N'e 1 koyalım. 0, 1 bunu elde ettim. N'e 2 koy. 2, 0, 2, 1 bunu da elde ettim. N'e 3 koy. 3, 0, 3, 1 bunu da elde ettim. İlerlediğimde diğer çıkardığım bütün S'leri elde ederim.
+
+661
+01:47:56,412 --> 01:48:11,632
+İşte bunu gerçek dünyada yaparken burası gidecek benim Türkçedeki bütün bir cümlenin olabilme kuralları ve onun alt parçaları burada yer alacak.
+
+662
+01:48:12,971 --> 01:48:22,492
+Bunlar benim kelimelerim olacak, sözlümdeki kelimeler. Bunlar da bütün yapılarım olacak.
+
+663
+01:48:22,491 --> 01:48:34,091
+Ne demek yapılarım? İsim cümlesi, fiil cümlesi, zarf tümleci, ondan sonra neler varsa örneklerini zaten göreceğiz.
+
+664
+01:48:34,091 --> 01:48:40,331
+Şimdi bunlardan yola çıkarak, bunlardan yola çıkarak şu dillerimizin
+
+665
+01:48:43,923 --> 01:49:00,483
+üzerinden geçelim. Tür sıfır. Kısıtlamasız dil bilgisi. Hiçbir kısıt yok. Bana diyor ki, senin elinde sadece şu var, alfa ise beta dediğin, sana bir takım türetme kuralları vereceğim.
+
+666
+01:49:01,444 --> 01:49:13,623
+Alfan V artı, sol taraf hiçbir zaman boşluk olmayacak. Betanda V yıldız. Artık ne yapabiliyorsan yap diyor. Örnek. Yine kalemimizi açalım.
+
+667
+01:49:13,923 --> 01:49:17,304
+Farklı renk kullanalım.
+
+668
+01:49:18,203 --> 01:49:20,243
+Gramerim var, dörtlüm.
+
+669
+01:49:20,883 --> 01:49:23,504
+VN'lerimi vermiş, SLR, ABC.
+
+670
+01:49:25,264 --> 01:49:29,383
+VTM uç değişkenimde A, yani bir tane kelime var.
+
+671
+01:49:29,504 --> 01:49:34,303
+Bu öyle bir dil ki bütün kelimeler A'dan türetilmiş.
+
+672
+01:49:34,944 --> 01:49:36,803
+Şunlar da türetme kurallarım.
+
+673
+01:49:37,843 --> 01:49:41,843
+Hiçbir şey yok, kural yok, kafama ne gelirse.
+
+674
+01:49:41,843 --> 01:49:53,303
+Şurada gördüğünüz şey pipeline yani or, AR'nin yerine ya BR koyacaksın veya C koyacaksın diyor.
+
+675
+01:49:53,303 --> 01:49:56,104
+Bu da lambda yani boş küme.
+
+676
+01:49:56,863 --> 01:50:00,864
+Şimdi ben bu kurallarda tümcesel yapılar yazalım.
+
+677
+01:50:01,063 --> 01:50:03,004
+Birinci tümcesel yapım bu olsun.
+
+678
+01:50:03,583 --> 01:50:04,923
+Hadi bakalım başlayalım.
+
+679
+01:50:05,823 --> 01:50:08,363
+S yerine tek bir tane ifade var.
+
+680
+01:50:08,623 --> 01:50:10,843
+L-A küçük A-R bunu aldım.
+
+681
+01:50:10,843 --> 01:50:25,623
+Şimdi ben bunun yerine bir şeyler yazacağım. Bir şeyler ne olacak? Şu S ifadesinin tamamını uç değişkenlerden oluşturacağım. VT'lerden.
+
+682
+01:50:25,623 --> 01:50:32,303
+Yani şuradaki kuralları kullanarak bunun tamamını uç değişkenler halimde yazmalıyım.
+
+683
+01:50:32,303 --> 01:50:41,843
+Bu işlemi yaparken de ya bu ifadeyi soldan başlayarak yapacağım ya da sağdan başlayarak yapacağım.
+
+684
+01:50:43,443 --> 01:50:47,743
+Ben burada nereden başlayarak yapmışım bir bakalım.
+
+685
+01:50:48,463 --> 01:50:49,963
+Şimdi önce L'yi arıyorum.
+
+686
+01:50:50,423 --> 01:50:52,203
+Sol tarafta hiç L var mı?
+
+687
+01:50:52,203 --> 01:51:19,444
+L varsa sağ tarafında neyse onu atayacağım. Hayır yok. Peki bakıyorum. L-A var mı ikili? Sol tarafta hiç L-A da yok. Üçlü olarak bakmama gerek var mı? Sol tarafta hiç üçlü olmadığı için üçlü kontrolü yapmama gerek yok. Öyleyse bir kaydırdım. Büyük A, küçük A var mı diye bakıyorum sol tarafta. Evet var. Şurası.
+
+688
+01:51:19,443 --> 01:51:21,243
+Büyük A, Küçük A
+
+689
+01:51:21,243 --> 01:51:26,703
+Büyük A, Küçük A yerine git, iki tane Küçük A bir A koy diyor
+
+690
+01:51:26,703 --> 01:51:34,663
+Gidiyorum, şunun yerine iki tane Küçük A bir de Büyük A'yı koyuyorum
+
+691
+01:51:34,663 --> 01:51:35,943
+Yani bunu koydum
+
+692
+01:51:35,943 --> 01:51:38,483
+Ne oldu benim ifadem?
+
+693
+01:51:39,063 --> 01:51:42,003
+L, Küçük A, Küçük A, A ve R
+
+694
+01:51:42,003 --> 01:51:44,523
+Yeniden başlıyorum soldan
+
+695
+01:51:44,523 --> 01:51:46,763
+L var mı sol tarafta? Yok
+
+696
+01:51:46,763 --> 01:51:49,223
+L, Küçük A var mı? Yok
+
+697
+01:51:49,224 --> 01:51:52,903
+3'lüye hiç bakmıyorum çünkü burada yok.
+
+698
+01:51:53,203 --> 01:51:54,304
+Bir kaydırdım.
+
+699
+01:51:55,004 --> 01:51:55,744
+A var mı?
+
+700
+01:51:56,063 --> 01:51:57,543
+Birlilere de hiç bakmayayım.
+
+701
+01:51:57,664 --> 01:52:01,604
+S'den başka bir adet olan alfa değeri yok.
+
+702
+01:52:02,203 --> 01:52:03,224
+AA var mı?
+
+703
+01:52:03,891 --> 01:52:04,891
+Hayır yok.
+
+704
+01:52:05,252 --> 01:52:06,531
+Üçlüye bakmıyordum.
+
+705
+01:52:07,011 --> 01:52:09,431
+Küçük A, büyük A var mı diye bakıyorum.
+
+706
+01:52:09,611 --> 01:52:11,311
+Küçük A, büyük A da yok.
+
+707
+01:52:11,971 --> 01:52:15,272
+Öyleyse büyük A, R var mı diye bakıyorum bu sefer.
+
+708
+01:52:15,692 --> 01:52:16,911
+Şunu andu yapayım.
+
+709
+01:52:17,291 --> 01:52:19,272
+Büyük A, R var mı diye bakıyorum.
+
+710
+01:52:19,791 --> 01:52:20,912
+Büyük A, R var.
+
+711
+01:52:20,912 --> 01:52:26,711
+Şimdi büyük A, R yerine ya B, R koyacağım veya C koyacağım.
+
+712
+01:52:26,931 --> 01:52:28,291
+Hangisini istersem.
+
+713
+01:52:28,551 --> 01:52:31,051
+Her seferinde farklı tümce oluştururum.
+
+714
+01:52:31,551 --> 01:52:34,832
+Öyleyse büyük A, R yerine gidip neyi koymuşum?
+
+715
+01:52:35,331 --> 01:52:35,812
+C'yi.
+
+716
+01:52:36,651 --> 01:52:37,811
+İfadem bu oldu.
+
+717
+01:52:37,972 --> 01:52:39,051
+İşleme devam ediyorum.
+
+718
+01:52:39,232 --> 01:52:41,732
+Çünkü bunların hepsinin uç değişken olması lazım.
+
+719
+01:52:41,932 --> 01:52:43,051
+Soldan başladım.
+
+720
+01:52:43,752 --> 01:52:44,752
+L, A var mı?
+
+721
+01:52:44,871 --> 01:52:46,472
+Büyük L, küçük A yok.
+
+722
+01:52:46,951 --> 01:52:48,631
+İki tane küçük A var mı?
+
+723
+01:52:48,811 --> 01:52:50,271
+İki tane küçük A yok.
+
+724
+01:52:50,671 --> 01:52:52,051
+Küçük A, C var mı?
+
+725
+01:52:52,271 --> 01:52:54,191
+Evet, küçük A, C var burada.
+
+726
+01:52:54,191 --> 01:52:57,792
+Küçük A, C yerine C, A'yı koydum.
+
+727
+01:52:58,211 --> 01:52:59,112
+İşte koyduk.
+
+728
+01:52:59,111 --> 01:53:05,331
+Yeniden başlıyorum soldan çünkü hepsinin vt olması lazım.
+
+729
+01:53:05,811 --> 01:53:09,711
+L, a var mı? Hayır sol tarafta l, a yok.
+
+730
+01:53:10,451 --> 01:53:13,711
+Küçük a büyük c var mı? Evet küçük a büyük c var.
+
+731
+01:53:14,311 --> 01:53:18,031
+Küçük a büyük c yerine c, a'yı koydum.
+
+732
+01:53:18,031 --> 01:53:21,671
+Şurada gördüğünüz gibi c, a'yı koydum.
+
+733
+01:53:22,071 --> 01:53:23,651
+Buradaki a'yı getirdim.
+
+734
+01:53:24,311 --> 01:53:25,752
+Elimde ne var şu an?
+
+735
+01:53:26,651 --> 01:53:27,851
+L, c, a, a.
+
+736
+01:53:27,851 --> 01:53:30,612
+yine ikişer ikişer aldım
+
+737
+01:53:30,612 --> 01:53:32,411
+lc var mı sol tarafta
+
+738
+01:53:32,411 --> 01:53:33,911
+var nedir lambda
+
+739
+01:53:33,911 --> 01:53:36,391
+boş koydum iki tane
+
+740
+01:53:36,391 --> 01:53:38,752
+a hepsi uç değişken olduysa
+
+741
+01:53:38,752 --> 01:53:40,171
+bitti bu bir tane
+
+742
+01:53:40,171 --> 01:53:41,351
+tümcesel yapım
+
+743
+01:53:41,351 --> 01:53:44,411
+başka tümcesel yapılar oluşturabilir
+
+744
+01:53:44,411 --> 01:53:46,411
+miyim elbette oluşturabilirim
+
+745
+01:53:46,991 --> 01:53:48,612
+burada gördüğüm
+
+746
+01:53:48,612 --> 01:53:49,932
+şu ifade yerine
+
+747
+01:53:49,932 --> 01:53:52,411
+ne koymuştum c koymuştum
+
+748
+01:53:52,972 --> 01:53:54,411
+c koymam da
+
+749
+01:53:54,411 --> 01:53:56,671
+b koyarak
+
+750
+01:53:56,671 --> 01:53:58,871
+devam ederim. Mesela
+
+751
+01:53:58,871 --> 01:54:00,731
+bakın burada bere koyarak devam
+
+752
+01:54:00,731 --> 01:54:03,191
+etmişim. Ondan sonra
+
+753
+01:54:03,191 --> 01:54:04,991
+küçük a b'nin yerine
+
+754
+01:54:04,991 --> 01:54:06,551
+değer koymuşum.
+
+755
+01:54:06,991 --> 01:54:08,711
+Sonra l b'nin
+
+756
+01:54:08,711 --> 01:54:11,151
+halen devam ediyorum. Hep soldan
+
+757
+01:54:11,151 --> 01:54:13,031
+başlayarak. Şu a
+
+758
+01:54:13,031 --> 01:54:14,711
+küçük a'nın yerine
+
+759
+01:54:14,711 --> 01:54:16,531
+a küçük a'nın yerine
+
+760
+01:54:16,531 --> 01:54:18,692
+a r'nin yerine c
+
+761
+01:54:18,692 --> 01:54:20,951
+koymuşum. a c'nin yerine
+
+762
+01:54:20,951 --> 01:54:22,811
+a c'nin a c'nin a c'nin
+
+763
+01:54:22,811 --> 01:54:24,832
+geldi dört tane a yazdım.
+
+764
+01:54:24,832 --> 01:54:33,192
+Bir başka S yazmaya kalksam bu ikincisi bir başka S yazmaya kalksam başka bir şey çıkacak.
+
+765
+01:54:33,852 --> 01:54:36,671
+Bir tane daha yazacağım başka bir şey çıkacak.
+
+766
+01:54:37,152 --> 01:54:41,432
+Bu çıkanları gördükten sonra bu patternları avlayacağım.
+
+767
+01:54:41,912 --> 01:54:44,591
+Bu dilin modelini ben çıkarabilirim.
+
+768
+01:54:44,591 --> 01:54:49,052
+Bu dilin modeli de demişim ki A üzeri İ.
+
+769
+01:54:49,692 --> 01:54:51,552
+İ de iki üzeri N.
+
+770
+01:54:52,112 --> 01:54:54,572
+N de birden büyük.
+
+771
+01:54:54,832 --> 01:54:56,752
+1'e eşit ve büyük.
+
+772
+01:54:57,052 --> 01:55:00,031
+N1 olduğunda i2 olacak a kare.
+
+773
+01:55:00,472 --> 01:55:05,192
+Yani en küçük yazabileceğim ilk ifade 2 tane a olur.
+
+774
+01:55:05,432 --> 01:55:06,932
+İşte o zaten burada var.
+
+775
+01:55:08,031 --> 01:55:09,432
+Sonra n'i 2 yazalım.
+
+776
+01:55:09,792 --> 01:55:10,531
+4 olur.
+
+777
+01:55:10,992 --> 01:55:12,011
+a üzeri 4.
+
+778
+01:55:12,472 --> 01:55:14,091
+4 tane a yazabilirsin.
+
+779
+01:55:14,291 --> 01:55:15,171
+İşte burada var.
+
+780
+01:55:16,291 --> 01:55:17,332
+N3 olur.
+
+781
+01:55:17,572 --> 01:55:21,011
+2 üzeri 3'ten 8 tane a yazabilirsin.
+
+782
+01:55:21,011 --> 01:55:25,472
+Bir başka deneme yapsam 8 tane A'lık bulabilirim.
+
+783
+01:55:26,511 --> 01:55:30,252
+Bu 4 olduğunda 16 olacak.
+
+784
+01:55:30,811 --> 01:55:35,191
+16 tane A arka arkaya yazarım.
+
+785
+01:55:35,332 --> 01:55:36,832
+Bir başka S'de.
+
+786
+01:55:36,951 --> 01:55:39,631
+Bir başka S'de 32 tane, 64 tane.
+
+787
+01:55:39,771 --> 01:55:41,031
+Bu değil, böyle bir dil.
+
+788
+01:55:41,591 --> 01:55:42,951
+Bana bunları çıkaracak.
+
+789
+01:55:42,951 --> 01:55:49,031
+Eğer biri gelip bana dese ki A, B, A.
+
+790
+01:55:50,100 --> 01:55:59,139
+Bu dili ait bir tümcesel yapımı ben şu kurala bakarak bu dile uymadığını söyleyebilirim.
+
+791
+01:55:59,139 --> 01:56:05,399
+Bana diyebilirsiniz ki hocam zaten VT içerisinde B yok. Sen ne yazıyorsun böyle?
+
+792
+01:56:05,819 --> 01:56:12,819
+Bu örnek olsun diye bunu buraya koydum. Herhalde tek bir tümceden oluşan da bir kelime, bir dil olmaz.
+
+793
+01:56:13,419 --> 01:56:18,280
+Ama bunun tür sıfır olmasının tek önemli tarafı hiçbir kural yok.
+
+794
+01:56:18,280 --> 01:56:31,019
+İstediğin gibi yaz. Sol, sağ, yok bir değişken olmuş, üç değişken olmuş, beş değişken olmuş, yok söz isimselmiş, uç değişkenmiş. Bunların hiçbirinin önemi yok.
+
+795
+01:56:31,019 --> 01:56:48,059
+Peki o zaman bir tık yukarıya çıkalım. Çıkabilirsem bir tık yukarıya çıkalım. Tür bir olsun. Tür bir nedir? Biraz daha içeriye girdik ve kısıtlar geldim. Bunun kısıtları nelerdir?
+
+796
+01:56:48,059 --> 01:57:02,119
+renk değiştirelim. Bunun kısıtları da şu, alfa ise beta, problem yok. Alfa V artıydı, beta da V yıldızdı. Yalnız bana kural veriyor, bir kısıt getirildi.
+
+797
+01:57:02,119 --> 01:57:22,519
+Diyor ki ben hani yazıyorum ya alfa ise yazamıyorum ama alfa ise beta diye türetme kuralları bana diyor ki alfa tarafına yazmış olduğun elemanların sayısı beta tarafına yazmış olduğun elemanların sayısıyla ya aynı olacak ya da küçük olacak.
+
+798
+01:57:22,519 --> 01:57:43,939
+Yani ne demek? Ben şöyle bir şey yazabilir miyim? A, şık şık, B. Evet yazabilirim. Burada da bir eleman var, burada da bir eleman var. Eşit. Peki şöyle bir şey yazabilir miyim? Burası da küçük A olsun.
+
+799
+01:57:47,636 --> 01:58:11,835
+Böyle bir şey yazabilir miyim? Alfa tarafında iki eleman var, beta tarafında bir eleman var. İki birden küçük eşit mi? Hayır. Böyle bir kural yazamam. İşte kısıt dediğimiz şey bu. Ama tam tersi olabilir. Buraya BA yazabilirim. Burada bir eleman var, burada iki eleman var. Bir ikiden küçük eşittir. Doğru.
+
+800
+01:58:11,835 --> 01:58:24,435
+O zaman tür bir dediğimiz bağlama bağlı, context-sensitive olan şeylerde, dillerde şu kuralı sağlamak zorundayım.
+
+801
+01:58:25,015 --> 01:58:30,856
+Ve yazma kurallarının tümü de şu şartlara uyuyor.
+
+802
+01:58:30,855 --> 01:58:44,975
+Yani alfa, 1, 2, 2, beta, V yıldız olacak ve bu alfa değişkenlerim türetme kurallarımın arasında da yer alabilir.
+
+803
+01:58:46,215 --> 01:58:49,715
+Hemen bununla ilgili örneğimize geçelim.
+
+804
+01:58:55,539 --> 01:59:21,559
+Geçmedi. Bununla ilgili örneğe geçelim. Yine bana bir dil bilgisi veriliyor. Sözlizmsel değişkenlerim budur. Uç değişkenlerinde A, B, C. Şunlar da türetme kuralları. Bu hangi türe giriyor? Tür 1'e.
+
+805
+01:59:21,559 --> 01:59:41,379
+Neden? Alfa'daki eleman sayıları beta'daki eleman sayılarından küçük ve eşit. Burada bir eleman var. Burada 4, 3. Eşitlik burada var. 2, 2, 2. Her zaman beta tarafı daha büyük. Peki bu dilin grameri nedir diye sorulduğunda ne yapıyorum?
+
+806
+01:59:41,380 --> 02:00:10,080
+yazabildiğim, bana dili modelleyebileceğim kadar tüm cesel yapı çıkarıyorum. Bir tanesi bu. İki tane S var. Burada hangi S'yi almışım? Şu S'yi almışım. Sonra soldan başlıyorum. Küçük A, büyük A yerine AB'yi koydum. B. Sonra bakıyorum. Küçük B, büyük B yerine de ne var? Küçük B, büyük B yerine BC var. Onu koydum.
+
+807
+02:00:10,080 --> 02:00:37,700
+hepsi ABC. Bitti. Bu bir uç değişken. Hepsi bir tümcesel yapı. Başka bir S alıyorum. Bu S'ye bakıyorum. Aynı şekilde burada da şununla başlamışım. Bununla başlıyorum. Soldan yerine koya koya koya koya bir başka tümcesel yapı elde etmişim. Başka bir S yazsam yine bir yapı çıkacak buna benzer.
+
+808
+02:00:37,699 --> 02:00:44,259
+Yanlış bir şey yazdığımda zaten burada bunları uç değişkene getiremiyorsunuz.
+
+809
+02:00:44,259 --> 02:00:48,779
+O zaman diyorsun ki ben şöyle bir şey düşünün.
+
+810
+02:00:49,379 --> 02:00:55,979
+İşte hep örnek veriyorum ya gökyüzü, çöp terekesi, deniz, araba, nokta.
+
+811
+02:00:57,099 --> 02:00:58,619
+Bu bir cümle midir? Hayır.
+
+812
+02:00:59,179 --> 02:01:01,659
+Kelimeler dilime ait ama cümle değil.
+
+813
+02:01:01,899 --> 02:01:03,959
+Böyle bir şey burada da karşıma gelir.
+
+814
+02:01:03,959 --> 02:01:22,400
+Ben analiz ederim ederim bunlar bir cümle oluşturamayacaksa bir şekilde burada tıkanın artık yerine koyabileceğin bir şeyi göremezsin. O zaman dersin ki bu kurallar bu dili bir cümle yazmaya uygun değildir dersin.
+
+815
+02:01:22,400 --> 02:01:42,500
+Şimdi burada da bunu ve bunu çıkarmışsam bir sonraki bir başka S yazsam bana güvenin şöyle çıkacak bir başka S. Çok kötü yazıyorum. 3 tane A çıkacak. Arkasından 3 tane B çıkacak. Arkasından 3 tane de C çıkacak.
+
+816
+02:01:46,003 --> 02:01:51,543
+Bir başka S yazarsam 4A, 4B, 4C çıkacak. Yazdım biliyorum çünkü.
+
+817
+02:01:52,083 --> 02:02:02,403
+Öyleyse ben ne diyorum? Benim öyle bir gramerim var ki bu tümcesel yapım ABC formunda bunların da üzerine N koymuşum.
+
+818
+02:02:02,543 --> 02:02:14,643
+N'de biri eşit ve birden büyük. N'ye 1 verdiğimde yukarıya elde ederim. N'ye 2 verdiğimde 2A, 2B, 2C. N'ye 3 verdiğimde 3A, 3B, 3C çıkar.
+
+819
+02:02:14,643 --> 02:02:30,443
+Peki size sorulsa ki, size dendi ki A, B, B, C ve C bu tümcesel yapı bu dile ait midir?
+
+820
+02:02:30,443 --> 02:02:51,603
+Bu tümcesel yapının bu dile ait olup olmadığını anlamak için işte ya S'den başlayıp aşağıya doğru inip yapraklarda bu kelimeleri oluşturacağım ya da bunları bir şekilde bağlayarak S'ye ulaşmaya çalışacağım.
+
+821
+02:02:51,603 --> 02:02:58,724
+Eğer ulaşamıyorsam bu tümcesel yapı bu dile ait değildir.
+
+822
+02:02:58,724 --> 02:03:00,944
+Belki de ben İngilizce bir cümle verdim.
+
+823
+02:03:01,383 --> 02:03:07,163
+Türkçe'nin gramerinde bu cümlenin bu dile ait olup olmadığını bulmaya çalışıyorum.
+
+824
+02:03:09,563 --> 02:03:11,944
+Bir ileriye geçelim.
+
+825
+02:03:12,303 --> 02:03:16,643
+Bir ilerisi bunun bir tık daha.
+
+826
+02:03:20,884 --> 02:03:32,483
+daraltılmış hali. Nedir daraltılmış hali? Tür 2. Tür 2 de diyor bağlamdan bığımsız bir dildir diyor. Context free.
+
+827
+02:03:33,243 --> 02:03:40,423
+Bağlamdan bığımsız diller bizim kullandığımız programlama dillerinin hepsi bağlamdan bığımsız.
+
+828
+02:03:40,423 --> 02:03:49,583
+Peki daha da kuralların var demektir. Bu kuralların başında gelen şey yine alfa ise beta.
+
+829
+02:03:49,583 --> 02:03:55,483
+Yani bu alfa ise beta da niye buraya A yazıldığını söyleyeceğiz.
+
+830
+02:03:56,503 --> 02:04:05,623
+Yazma kurallarında yani alfa ise hiç bu kadar zor olduğunu bilmiyordum bunlarla yazmanın.
+
+831
+02:04:05,623 --> 02:04:17,363
+Alfa ise betanın sol tarafında yani alfada her zaman ve her zaman tek bir değişken yer almalıdır.
+
+832
+02:04:17,363 --> 02:04:38,303
+Programlama dilleri diyoruz. Siz programlama dillerinde şöyle bir ifade yazabilir misiniz? A artı B eşittir 5. 5'i al, A artı B'ye ata diye bir şey yazabilir miyiz? Hayır. Her zaman sol tarafta ne vardır? Tek bir değişken.
+
+833
+02:04:38,303 --> 02:04:41,403
+İşte burada da bahsetmek istenilen şey bu.
+
+834
+02:04:41,843 --> 02:04:47,924
+Sol tarafta, context-free gramerde her zaman bir tane söz dizimsel değişken.
+
+835
+02:04:48,403 --> 02:04:50,863
+Hep o bir taneyi açarak gideceğiz.
+
+836
+02:04:51,483 --> 02:04:53,543
+Peki hemen örneğimizi verelim.
+
+837
+02:04:56,244 --> 02:04:56,443
+Bu.
+
+838
+02:04:58,583 --> 02:05:00,203
+Gramer verildi.
+
+839
+02:05:00,744 --> 02:05:06,023
+Bir tane söz dizimsel değişkenim varsa bunlar da benim uç değişkenlerim.
+
+840
+02:05:06,023 --> 02:05:29,624
+Buradaki V variable değişken, C de sabit, constant, türekme kuralların S, S artı S olabilir veya S çarpı S olabilir veya S eksi S veya S bölüse veya parantez içerisinde S veya uç değişkenlerim geliyor V veya C olabilir.
+
+841
+02:05:29,623 --> 02:05:57,823
+Hadi bir şeyler yazmaya çalışalım. Bakalım bizim yazdığımız şeylere benziyor mu? S'yi aldım. S yerine gittim. S çarpı S'yi koydum. Bakın bu sefer soldan yapmamışım. Sağdan başlıyorum. Bu sefer de sağdan giderek yapmışım. Önce sağdakinin yerine bir şey koyuyorum. S'nin yerine aç parantez S'yi koymuşum.
+
+842
+02:05:57,824 --> 02:06:03,803
+sonra bunun içerisine S-S'yi koymuşum.
+
+843
+02:06:05,204 --> 02:06:08,424
+Sonra sol tarafa geçmişim.
+
+844
+02:06:09,104 --> 02:06:11,564
+Buradaki S'nin yerine V'yi koymuşum.
+
+845
+02:06:12,604 --> 02:06:22,443
+Sonra yeniden parantezin içine geçip, işte sağdan yapıyorsam önce sola geçmişim burada da biraz karışık yapmışım.
+
+846
+02:06:22,443 --> 02:06:50,983
+V'yi koymuşum. Sonra da V'nin yerine S'yi atlayarak gitmişim birazcık burada. Ama karışık olmuş. Şunu ben sağdan, aslında şunu şöyle yapalım. Bunu sağdan yaparak yapsaydım S eşittir diyecekti. S çarpı S. Bu kadar zor bir hayat ya. Bir dakika. Bu çok zor. Şuradaki teksti alayım ben.
+
+847
+02:06:50,983 --> 02:06:55,983
+Eğer ben bunu sağdan yapsaydım şu benim türetme kuralım olsun.
+
+848
+02:06:57,108 --> 02:07:26,567
+S diyecektim. Diyelim ki S çarpı S'yi aldım. Şık şık şık şık. Sonra S'yi sağdan yapıyorum. S'yi bıraktım. Çarpı. Aç parantez S'yi koydum. Şık şık şık. Yine burası S çarpı. Sonra parantez içindeki S'yi S-S olarak yazdım. Şık şık şık. Sonra yine burası S çarpı geldi. Parantez içerisindeki S-S buradaki S'yi önce sağdan yapıyorum ya.
+
+849
+02:07:26,567 --> 02:07:55,968
+varaybol koydum. Şık şık şık. Ondan sonra S çarpı açtım parantez. Öteki S'nin yerine de Constance koydum. V'yi koydum. Şık şık şık. Sonra buradaki S'yi açacağım. Buradaki S'yi hiç uzatmayalım. V açalım. Çarpı aç parantez. C-V. Bunun benim yazdığım bir ifadeden hiçbir farkı kalmadı.
+
+850
+02:07:55,967 --> 02:08:00,847
+sağdan açtım. Bunu istersen soldan açarak da yapabilirsin.
+
+851
+02:08:09,492 --> 02:08:11,492
+Evet
+
+852
+02:08:19,604 --> 02:08:31,683
+Son Dil Bilgisi, Regular Expressionlar, pardon, Tür 3, Düzenli Diller. Bunun da tek bir kuralı var. Bu kural da şudur.
+
+853
+02:08:31,683 --> 02:08:47,444
+Sol tarafta her zaman bir tane söz dizimsel değişken olacak. Sağ taraf ya boş, ya bir uç değişken veya uç değişkeni takip eden bir söz dizimsel değişken olacak.
+
+854
+02:08:47,444 --> 02:09:13,324
+Bu özelliği sağlayan dillere de düzgün ya da regular diller diyoruz. Bizim bu slattan sonra göreceğimiz reg yazabilirsem reg x, regular expressionlar reg x diye geçer. Bu dille türetilmiş olan dillerdir.
+
+855
+02:09:13,323 --> 02:09:17,283
+Peki buna da bir örnek verelim
+
+856
+02:09:17,283 --> 02:09:21,283
+Burada bu varken bu daha güzel
+
+857
+02:09:21,283 --> 02:09:23,443
+Hem ileriye gidiyor hem silmiyorsun
+
+858
+02:09:23,443 --> 02:09:24,883
+Burada da rengi gözükmüyor
+
+859
+02:09:24,883 --> 02:09:29,203
+Şu helikopter mi nedir bir geçsin de
+
+860
+02:09:36,083 --> 02:10:06,063
+Şimdi bu dilde kurallar verilmiş bana. S0, S0'a boşluk 0 olabilir. A0B, B1S olabilir. Hep bakıyoruz. Kurallar ne? Bir uç değişken, bir söz dizimsel değişken, uç değişken, söz dizimsel değişken, uç değişken, söz dizimsel değişken, uç değişken, söz dizimsel, uç değişken, söz dizimsel veya uç değişken veya boşluk.
+
+861
+02:10:06,083 --> 02:10:33,503
+Evet bunlar tür 3'ün düzenli dillerin özelliklerini sağlıyor. Şimdi bunlarla neler yazabiliriz? Bir tane S yazmışım. S yerine 0S'yi aldım. Sonra gittim S yerine 0'ı koydum. 0, 0 çıktı. Sonra S yerine 0A ile başladım. A yerine gittim 0B'yi aldım. B yerine gittim 1S'yi aldım. S yerine gittim boşluğu aldım. İkinci olarak bunu yazdım.
+
+862
+02:10:33,503 --> 02:10:39,863
+Bir üçüncü yazmak istediğimde de istediğim işte istediğim yere koydum ve yazdım.
+
+863
+02:10:39,863 --> 02:10:44,664
+Şimdi bu dillerde olay biraz daha zorlaştı.
+
+864
+02:10:44,804 --> 02:10:50,863
+Yani şunlarda yaptığım gibi böyle çok kolay bir şekilde genelleştirme yapamam.
+
+865
+02:10:51,304 --> 02:10:54,643
+Şimdi bir bakın kolay değil bunu genelleştirme yapmayı.
+
+866
+02:10:54,643 --> 02:11:04,003
+bunu da genelleştirmemi yaparken gramerimi böyle sözlü olarak evet yazdım ama bunları regular expression ile göstermem lazım.
+
+867
+02:11:04,003 --> 02:11:17,944
+Regular expression ile gösterirken clini operatörlerini kullanıyoruz. Belki hatırlarsınız clini operatörleri aslında hatırlarsınız çünkü burada da anlattım çarpı ve artıydı.
+
+868
+02:11:17,944 --> 02:11:25,884
+çarpı neydi? Ya hiç ya da olabildiği kadar artı en az bir kere geçecek.
+
+869
+02:11:26,304 --> 02:11:41,823
+Şimdi size diyorum ki şu tümcesel yapıyı, şu tümcesel yapıyı, bu tümcesel yapıyı ve bunun gibi bu gramerden çıkaracağım bütün tümcesel yapıları regular expression ile yazalım.
+
+870
+02:11:41,823 --> 02:11:57,043
+Ben ilk bu dersi anlatırken şu birinciyi yazmıştım. Daha sonra işte yaza yaza şeyim de gelişti. Sonra da şu ikinciyi yazdım.
+
+871
+02:11:57,043 --> 02:12:04,383
+İkisinin de yaptığı aynı şey. İkisi de şu sonuçları bana veriyor.
+
+872
+02:12:04,383 --> 02:12:14,803
+Yani şöyle diyorum veriyor. Ben input olarak buna verdiğimde bu bunu sağlıyorsa bu tümce bu gramerindir.
+
+873
+02:12:15,103 --> 02:12:19,543
+Bu gramer bu tümceyi üretiyordur diyebilirim.
+
+874
+02:12:19,683 --> 02:12:26,383
+Sağlamıyorsa ya benim yazdığım gramer yanlış ya da bu türettiğim tümce bu gramere ait değil.
+
+875
+02:12:26,384 --> 02:12:42,344
+Bu da aynısını yapıyor. Aradaki fark nedir? Ben biraz daha tecrübelenmişim. Biraz daha kodumu yazdığım ifadeyi daha optimize etmişim. Daha az işlemle aynı şeyleri verebiliyorum.
+
+876
+02:12:42,343 --> 02:12:50,503
+Şimdi size yazın diyebilirim ama ilk örnek olarak şu birincisi üzerinde bir konuşalım.
+
+877
+02:12:50,503 --> 02:13:00,763
+Ya ben nasıl bir regular expression yazayım ki şu bu tümcelerin hepsini sağlasın.
+
+878
+02:13:00,843 --> 02:13:03,043
+Bu tümcelerin doğru olduğunu biliyorum.
+
+879
+02:13:03,283 --> 02:13:04,043
+Nereden biliyorum?
+
+880
+02:13:04,223 --> 02:13:07,063
+Çünkü bunları ben oluşturdum bu kurallara göre.
+
+881
+02:13:07,403 --> 02:13:08,843
+Hiç camuk bir şey de yapmadım.
+
+882
+02:13:08,943 --> 02:13:09,703
+Bunlar doğru.
+
+883
+02:13:10,304 --> 02:13:12,323
+Peki bu gramer bunu sağlar mı?
+
+884
+02:13:12,343 --> 02:13:16,563
+Burada da N'de sıfıra eşit veya büyük olacak.
+
+885
+02:13:17,123 --> 02:13:21,063
+Şimdi bakalım şu iki tane sıfırı sağlatabilir miyim?
+
+886
+02:13:22,583 --> 02:13:33,063
+Bakalım eğer N'i sıfır alırsam, yani şurası hiç yok sıfır aldığımda, bu yıldız...
+
+887
+02:13:33,140 --> 02:14:02,119
+Ya var, ya yok, ya da olabildiği kadarsa yıldızdan bir tane sıfır gelsin. Şu yıldızdan da bir tane sıfır gelsin. İki tane sıfırı yazarım. Ya da bu hiç çalışmasın. Bunun da çalışmasının önemi yok. Bu da hiç çalışmasın. Bu iki kere çalışsa şunu elde edebilirim. Tamam. Bunu sağladım. Peki, şu ikinciyi çıkarabilir miyim? Buna bakalım.
+
+888
+02:14:03,140 --> 02:14:31,720
+bu pattern nerede var? Şu pattern şurada var. N, 1 olsun. Yani bu parantezin içerisine bir kere girilsin. Şurası yıldız, hiç alınmasın. Şu parantezin içerisine bir kere girdim. Şu yıldızdan dolayı da bu da hiç alınmasın. Bu yıldız da hiç alınmasın. 0, 0, 1. İşte bunu da yazdım.
+
+889
+02:14:33,140 --> 02:14:54,099
+Peki yine bunları silelim. Şu üçüncüyü yazabiliyor muyum? Buna bakalım. Benim patronum ne var? Şurada bir bir burada geçtiği için buna bakıyorum. İki tane 0, 1 var. İki tane böyle bir patronum var.
+
+890
+02:14:54,099 --> 02:15:05,119
+O zaman şuradaki N bir kere 2 olursa bunun içerisine iki kere girer şu 0, 1, 0, 0, 1'i alır.
+
+891
+02:15:05,900 --> 02:15:09,180
+Şu bir kere olsun şu 0 gelsin.
+
+892
+02:15:09,919 --> 02:15:13,239
+Şu parantezin içerisine iki kere girdi.
+
+893
+02:15:14,379 --> 02:15:17,119
+İkisinde de şu yıldızı hiç çalıştırmasın.
+
+894
+02:15:17,119 --> 02:15:26,059
+0, 0, 1, 2 kere girdi 0, 0, 1, sonra çıkarken de şu 0'ı alsı bunu da çalıştırdı.
+
+895
+02:15:27,659 --> 02:15:31,479
+Peki şimdi size sorum şu olsun.
+
+896
+02:15:31,479 --> 02:15:42,319
+Şu model hani daha optimize ettiğim dediğim model acaba şu 1'i, 2'yi ve 3'ü üretebiliyor mu?
+
+897
+02:15:42,319 --> 02:15:56,859
+üretebiliyorsa ben diyeceğim ki bu daha uzun hiç bunu kullanma otur bunu kullan. Bir bakar mısınız? Sonra da biri baktıktan sonra bu konu üzerinde konuşsun.
+
+898
+02:16:00,467 --> 02:16:08,467
+galiba kalemi de alma yetkisi de var sizin. Benim gibi kullanabiliyorsunuz anlatımda.
+
+899
+02:16:13,043 --> 02:16:14,943
+Hocam, üçüncü üretmez.
+
+900
+02:16:16,443 --> 02:16:19,583
+Üçüncüyü üretmez diyorsun. Çok da eminiz.
+
+901
+02:16:22,903 --> 02:16:24,583
+Bugün en kaç arkadaşlar?
+
+902
+02:16:26,464 --> 02:16:27,063
+22.
+
+903
+02:16:27,543 --> 02:16:29,903
+Birinci üretebilir.
+
+904
+02:16:29,903 --> 02:16:32,003
+Bir dakika dur. 22 olduğunu şuraya bir not alıyorum da.
+
+905
+02:16:34,103 --> 02:16:39,703
+Evet. Üçüncüyü üretmez diyorsun. Tamam bakalım. İlk önce birinci üretir mi bakalım?
+
+906
+02:16:40,423 --> 02:16:41,323
+Birinci üretelim.
+
+907
+02:16:41,323 --> 02:16:59,904
+Hiç parantezin içine girmesin, şuradan 0-0 alsın, okey. 0-0 biri üretilme, şu parantezin içerisine bir kere girsin, şuradan bir 0-0 alacak en az bir kere diyorum, arkasından da bu 1'i alacak, sonra bu olmayacak, tamam.
+
+908
+02:17:00,503 --> 02:17:04,263
+Şimdi buna bakalım, bunu üretmez diyorsun.
+
+909
+02:17:04,263 --> 02:17:13,023
+Hocam çift sıfırlar çifter gittiği için bizim 3 sıfırımız var o yüzden üretemeyecektir
+
+910
+02:17:17,876 --> 02:17:21,715
+Peki, şöyle koysam.
+
+911
+02:17:23,816 --> 02:17:25,336
+Ben üretir diye düşünüyorum.
+
+912
+02:17:25,856 --> 02:17:26,495
+Hangisi?
+
+913
+02:17:26,495 --> 02:17:28,615
+Bence üretir, üçüncü.
+
+914
+02:17:29,575 --> 02:17:30,836
+Bunu koymadan mı?
+
+915
+02:17:31,635 --> 02:17:34,476
+Evet, onu koymadan da üretir diye düşünüyorum.
+
+916
+02:17:35,136 --> 02:17:37,355
+Dur, ben çok şey düşünüyorum.
+
+917
+02:17:38,655 --> 02:17:42,075
+Peki, bu üretir diyenler nasıl ürettiğini bana söyleyebilir mi?
+
+918
+02:17:42,735 --> 02:17:45,115
+Şu kalemi siz de benim gibi kullansanıza.
+
+919
+02:17:45,115 --> 02:17:46,115
+Evet.
+
+920
+02:17:52,180 --> 02:17:55,299
+Kim alıyor? Biri alsın.
+
+921
+02:17:59,924 --> 02:18:09,764
+Ben şimdi buradan nasıl göreceğim? Şu mor. Sizleri nasıl görüyorum? Hiç göremiyorum ki.
+
+922
+02:18:12,344 --> 02:18:21,083
+Bir şey komik değil mi? Yok. Participantlar diyeyim. Şöyle görebilirim. Bana bunun ürettiğini kim söyleyebilir?
+
+923
+02:18:21,764 --> 02:18:23,883
+Hocam benim yazdığım görünüyor mu şu an için?
+
+924
+02:18:24,663 --> 02:18:28,043
+Nereye ne yazdın? Hah bir şeyler çiziktiriyorsun. Evet.
+
+925
+02:18:28,043 --> 02:18:28,743
+Evet.
+
+926
+02:18:28,743 --> 02:18:30,723
+Müsaadenizle başlayayım.
+
+927
+02:18:30,723 --> 02:18:31,563
+Adını söyle bir.
+
+928
+02:18:32,124 --> 02:18:32,703
+[öğrenci].
+
+929
+02:18:33,304 --> 02:18:34,624
+Tamam. Evet [öğrenci].
+
+930
+02:18:35,863 --> 02:18:37,523
+Şöyle ifade edeyim hocam.
+
+931
+02:18:37,903 --> 02:18:39,523
+Biraz da yüksek sesli olur musun?
+
+932
+02:18:40,183 --> 02:18:41,563
+Evet. Duyabiliyor musunuz?
+
+933
+02:18:41,604 --> 02:18:41,883
+Evet.
+
+934
+02:18:43,063 --> 02:18:49,144
+İlk sıfır için şu ya hiç ya olabildiği kadardı. Burayı boş küme alırız.
+
+935
+02:18:50,203 --> 02:18:52,924
+Ama kalemle bir göster ben anlayamıyorum.
+
+936
+02:18:53,604 --> 02:18:58,363
+Şöyle hocam. İlk sıfır için şu ifadeyi çalıştırırız. Tek sıfır.
+
+937
+02:18:58,743 --> 02:19:18,903
+Burası boş küme ilk sıfır için. Çift sıfır bir için bu boş küme burası tek bir kez çalışır. Yine devamı için aynısı. Dışarıdaki sıfır için yine burası boş küme bu sıfır çalıştırılır.
+
+938
+02:19:18,903 --> 02:19:44,723
+Peki ama arkadaşların şöyle bir şey düşünüyor olabilir. Sen ilki için dedin ki şurasını çalıştırmıyorum. Tamam mı? Şu sıfırı çalıştırıyorum dedin. Peki bunun yeniden girdiğinde de burayı aldın. Ama bu akan bir şey. Adını söyle.
+
+939
+02:19:44,723 --> 02:20:07,723
+Akan bir stream. Yani ben bunu almadım, bunu geçtim. Benim yeniden sola dönebilmem için bu işlemi yenilemem lazım. Acaba buraya bir tane yıldız koysam? Şimdi ilk yıldızda buraya girerim bunun içine, şurayı almam, şunu alırım. Tamam mı?
+
+940
+02:20:07,723 --> 02:20:30,424
+Buraya yine geldi bu karşıma. Bu sefer bu yıldızla yine bunun içine girerim. Bu sefer şuradaki yıldızı bir kere alırsam iki tane sıfır bir bir çıkar. İkinci kez alırsam bu sefer de şurası çıkar. Bir daha girdiğimde şuraya almam şuradaki sıfırı alırım.
+
+941
+02:20:30,424 --> 02:20:35,403
+Buraya yıldız koymazsam şu oluyor.
+
+942
+02:20:36,043 --> 02:20:42,004
+Geldi bunu, şuradan geldi işledi, buraya almadı, bunu aldı.
+
+943
+02:20:42,424 --> 02:20:44,843
+Benim buraya yeniden dönebilmem lazım.
+
+944
+02:20:45,004 --> 02:20:50,504
+Buraya yeniden dönebilmemi sağlayan şey, şunun dışına koymuş olduğum yıldız.
+
+945
+02:20:50,504 --> 02:20:56,483
+Bu bunun içine bir, iki, üç, dört istediğim kadar gireceğimi gösterir.
+
+946
+02:20:57,183 --> 02:20:58,043
+Anlatabildim mi?
+
+947
+02:20:59,664 --> 02:20:59,963
+Evet.
+
+948
+02:21:00,424 --> 02:21:01,703
+Daha doğru bir ifade oldu.
+
+949
+02:21:01,884 --> 02:21:03,043
+Değil mi? Daha doğru oldu.
+
+950
+02:21:03,584 --> 02:21:09,543
+Eğer bunu böyle bırakırsam arkadaşlar şimdi geldi kod yazıyorum ben işleyeceğim.
+
+951
+02:21:10,483 --> 02:21:12,703
+Burayı atladım sıfır kez aldım.
+
+952
+02:21:13,103 --> 02:21:15,463
+Hiç almadım. Buraya sıfır kez aldım.
+
+953
+02:21:16,263 --> 02:21:16,584
+Bitti.
+
+954
+02:21:17,683 --> 02:21:20,063
+Benim bu işleme yeniden dönebilmem lazım.
+
+955
+02:21:20,063 --> 02:21:30,623
+ancak bunun dışına bir yıldız daha koyarsan benim elimdeki buradaki input bitene kadar bu bunu çalıştırmak zorunda.
+
+956
+02:21:31,364 --> 02:21:38,644
+Yoksa çalıştırmaz. Anlatabildim mi? Bir cevap. Hadi.
+
+957
+02:21:39,543 --> 02:21:46,724
+Tamam. Sen siler misin? Bunlar seni koydukların ya ben galiba silemiyorum onları. Bir bakayım.
+
+958
+02:21:46,723 --> 02:21:48,323
+silmişim.
+
+959
+02:21:48,323 --> 02:21:48,643
+Okey.
+
+960
+02:21:50,203 --> 02:21:50,643
+Şimdi
+
+961
+02:21:50,643 --> 02:21:55,903
+Saat de çok ilerledi ya.
+
+962
+02:21:59,059 --> 02:22:23,079
+Şunları çok uzatmayacağım. Çünkü burada anlattığım şey hani sağ doğrusal okuyorum, sol doğrusal okuyorum. Zaten örneklerimizde hep bunları yaptık. Yani yaptığım şey okurken burada koyarken sağ doğrusal okuyorsam sağdan başlıyorum yerleştirmeye. Sol doğrusal okuyorsam soldan başlıyorum yerleştirmeye.
+
+963
+02:22:23,079 --> 02:22:35,959
+buralara geçeceğim. Şuradaki örnekler çok güzel. Şurada bakın bu örnekleri lütfen bakın. Aynı şeyleri tekrar etmeyeyim çünkü.
+
+964
+02:22:35,959 --> 02:22:52,740
+Burada gramerimizi vermişiz. V, N, V, T'lerin ve türetme kuralların bu örneğimiz önceden vardı. İki tane tümcesel yapım var. W1, W2. Bu slide W1'i W2'yi soldan başlayarak türetiyor.
+
+965
+02:22:53,080 --> 02:22:58,179
+arkadaki bu slide da aynı şeyi sağdan başlayarak türetiyor.
+
+966
+02:22:58,879 --> 02:23:00,580
+Aynı şeyi elde ederiz.
+
+967
+02:23:01,120 --> 02:23:09,479
+Ama ben bir kod yazıyorsam bunu ya soldan başlayarak türetecek şekilde kodumu yazacağım ya da sağdan başlayarak.
+
+968
+02:23:09,619 --> 02:23:12,519
+Yani kafasına göre bir sağdan bir soldan değil.
+
+969
+02:23:14,479 --> 02:23:17,820
+O yüzden bek bek yapalım yine.
+
+970
+02:23:18,820 --> 02:23:21,519
+Bu kısmı anlatıp şu türetme ağacına gideceğiz.
+
+971
+02:23:21,519 --> 02:23:42,559
+Türetme ağacı içinde ne demiştik? Elimdeki cümleyi ya yukarıdan aşağı oluşturacağım, top-the-bottom ya da aşağıdan yukarıya doğru oluşturacağım, bottom-the-up diyecektik. Bunlara bir örnek verelim. Basitçe ne? İşte yine burada bana gramerler verilmiş, türetme kuralları verilmiş.
+
+972
+02:23:42,559 --> 02:24:03,979
+Buradan diyor, TAPT'ı batım olarak ağacı üret diyor. Ben neyle başlayacağım? S ile. S ile başladım. S'nin yerine şunlardan bir tanesini koyacağım. Neyi koymuşum? 0S0'ı koymuşum. Uç değişken olana kadar devam edecek. Bu S'nin yerine ne koyacağım?
+
+973
+02:24:03,979 --> 02:24:31,239
+KF'i 1S1 koymak istemiş, 1S1 koydu. Bu S'nin yerine ne koyacağım? 0A0 koydu. Ben bunun bitmesini istiyorsam ne koymalıyım? Bu A'nın yerine koymam gereken şey nedir? Bunu bitirecek olan bir şey. Geliyorum bunu bitirecek olan bir şey nedir? Ya 01 ya da 10'dır.
+
+974
+02:24:31,239 --> 02:24:56,339
+Buraya da diyelim ki 0 ve 1'i yaptım. Şimdi bu tümcesel yapıyı okusam neler çıkacak? 0, geldim. Bunun içinde ne var? 1. Hep soldan başlıyorum okumaya. Bunun içinde ne var? 0. Bunda ne var? 0. Sonra ilerliyorum. 1, çıktım 0.
+
+975
+02:24:56,339 --> 02:25:00,140
+Çıktım bir, çıktım sıfır.
+
+976
+02:25:01,080 --> 02:25:04,699
+İşte bu bir tümcesel yapı.
+
+977
+02:25:04,699 --> 02:25:16,420
+Bu yapı bu grameri sağlıyor mu diye baktığımda ben bu ağacın içerisinde ilerleyerek bunu oluşturabiliyorsam evet sağlıyorum demektir.
+
+978
+02:25:16,860 --> 02:25:18,580
+Burada da tam tersini koymuşum.
+
+979
+02:25:18,660 --> 02:25:20,000
+Bir sıfır diye koymuşum.
+
+980
+02:25:20,319 --> 02:25:22,019
+Bana şöyle bir şey verirse.
+
+981
+02:25:22,019 --> 02:25:33,479
+1, 1 atıyorum şurada ne olduğunu bilmiyorum. 0, 1, 1, 1, 0. Bu tümcesel yapı bu gramele ait mi?
+
+982
+02:25:33,479 --> 02:25:42,179
+Şimdi bunun içinde yapacağım şey bunları birleştireyim. Buradaki S'yi elde etmem gerekir.
+
+983
+02:25:42,179 --> 02:25:56,000
+Acaba ne yapabilirim? Mesela şuradaki 0, 1 yerine A koysam. 0, A, 1 diye bir şey var mı? 0, A, 1 diye bir şey yok. O zaman
+
+984
+02:25:56,564 --> 02:26:23,543
+Bu doğru olmadı. Buradaki 0, 1 olmaz. 1, 0 var. Şuradaki 1, 0'a A diyeyim. Şurası 1, 0 A olsun. 1, A, 0 diye bir şey var mı? 1, A, 0 diye de bir S yok. Yani buradan bütün denemelerimi yapıp S'ye varabilirsem bu türmcesel yapıda bu dile aittir diyeceğim. Değilse değildir diyeceğiz.
+
+985
+02:26:23,543 --> 02:26:28,643
+Hocam 1A0A gözüküyor ama o A yaptığımızın üzerine A desek
+
+986
+02:26:28,643 --> 02:26:35,584
+Belki de ben göremedim, şunları bir şey yapayım, bunun ambusu var mı?
+
+987
+02:26:36,924 --> 02:26:38,244
+Hepsini bu sürecek
+
+988
+02:26:38,244 --> 02:26:41,964
+Söyle bana, dur kalem değiştireyim, renk değiştireyim
+
+989
+02:26:41,964 --> 02:26:45,424
+Renk değiştireyim, evet, ne ile neyi?
+
+990
+02:26:48,123 --> 02:26:49,323
+Hangisini başlayayım?
+
+991
+02:26:49,523 --> 02:26:50,883
+1A0A dedik ya
+
+992
+02:26:50,883 --> 02:26:52,443
+Şuna mı? Şuradaki ne mi?
+
+993
+02:26:52,663 --> 02:26:52,883
+Evet
+
+994
+02:26:52,883 --> 02:26:54,503
+Tamam, buna A diyelim, evet
+
+995
+02:26:54,503 --> 02:26:56,264
+Tamam, bir var önünde
+
+996
+02:26:56,264 --> 02:26:56,944
+Evet
+
+997
+02:26:56,944 --> 02:26:58,823
+Sonrasında da sıfır geliyor şu an
+
+998
+02:26:58,823 --> 02:27:03,964
+Ha, şuna da, şuna da yine A diyorum, evet
+
+999
+02:27:03,964 --> 02:27:06,824
+Sonra ama A
+
+1000
+02:27:06,824 --> 02:27:08,784
+Buradan belki bir şey çıkarma diye düşündüm ama
+
+1001
+02:27:08,784 --> 02:27:10,424
+A bir diye bir şey çıkmaz
+
+1002
+02:27:10,424 --> 02:27:17,383
+Şuralardan belki bir şey çıkar ama hiçbir şeyde A'la başlamadığı için
+
+1003
+02:27:17,383 --> 02:27:18,104
+Evet
+
+1004
+02:27:18,104 --> 02:27:20,023
+S'nin yine çıkmaz
+
+1005
+02:27:20,023 --> 02:27:25,843
+Zaten onu attım kafadan. Tuzsaydı hemen gider bilet alırdım bugün.
+
+1006
+02:27:26,383 --> 02:27:27,223
+Peki hocam.
+
+1007
+02:27:28,244 --> 02:27:36,864
+Ondan sonra şimdi biraz bugün dersimiz uzayabilir arkadaşlar. Dersiniz var mı?
+
+1008
+02:27:41,139 --> 02:27:42,719
+Bu sessizliğin anlamı ne?
+
+1009
+02:27:44,719 --> 02:27:47,239
+Benim akabinde dersim yok hocam.
+
+1010
+02:27:47,620 --> 02:28:05,099
+Tamam. Neyse, yani ben bu slide'ı bugün bitirmek istiyorum. Tamam mı? Çok fazla bir şeyimiz kalmadı zaten. Bunları yaptık. Bu size kalemler üzerinden anlattığım şeylerin sözlü hali. Soldan sağa anlattık.
+
+1011
+02:28:05,099 --> 02:28:07,259
+Oh my god
+
+1012
+02:28:07,259 --> 02:28:13,379
+Bir izninizle bir su içeceğim çünkü burada çok nefes
+
+1013
+02:28:17,843 --> 02:28:47,523
+harcayacağım. İşte bu örneği neden koydum? Hani aşağıdan yukarı ya da yukarıdan aşağıya bu şeyleri yapabiliriz. Aslında hiç o kadar da kolay şeyler değil bunlar. Önce şundan başlayayım. Bu. Bu daha kolay. Yukarıdan aşağıya doğru iniyorum. İşte bir tane S cümlesi alıyorsunuz. Diyorsunuz ki bu S nelerden oluşuyordu? Bana vermişler S ya bundan.
+
+1014
+02:28:47,843 --> 02:28:59,283
+ya bundan ya da bundan oluşuyor. E peki bundan oluşuyorsa yerine neleri koyabilirim? Bana verilmiş türetme kuralları bunları koydum diyelim yerine.
+
+1015
+02:29:00,403 --> 02:29:07,244
+E sonra böyle bir şey olursa bunun da türetme kuralları verilmiş bana bunu koyuyorum.
+
+1016
+02:29:07,243 --> 02:29:16,703
+Yani ne bileyim belki türetme kuralı şöyle AS yerine sadece S konuluyor.
+
+1017
+02:29:16,903 --> 02:29:20,623
+Yok AS yerine bu A varsa A-A-S konulmuş.
+
+1018
+02:29:20,883 --> 02:29:22,403
+Neyse böyle koyuyorum koyuyorum.
+
+1019
+02:29:22,564 --> 02:29:25,763
+Öyle bir şey geliyor ki bazen bunlar duruyor.
+
+1020
+02:29:26,463 --> 02:29:28,183
+İlerleyemiyor kural gereği.
+
+1021
+02:29:28,623 --> 02:29:29,843
+Duruyor, ilerleyemiyor.
+
+1022
+02:29:29,983 --> 02:29:31,243
+Aynen burada olduğu gibi.
+
+1023
+02:29:31,243 --> 02:29:35,243
+Ama bazıları hepsi uç değişkene inebiliyor.
+
+1024
+02:29:35,244 --> 02:29:55,543
+inebiliyor. Başka uç değişkeni inen ne var? Maalesef hiçbiri yok. Sadece bu iniyor. Ha öyleyse ben buradan giderek çıkarabileceğim tümcesel yapılarım yok. Sadece işte seyirin yerine bunu, bunun yerine bunu, bunun yerine verilen kurallarda bunu koyduğumda bunu yazabiliyorum.
+
+1025
+02:29:55,543 --> 02:30:01,243
+ya da yeni kurallar ekleyeceğim yeni tümcesel yapı oluşturmak için.
+
+1026
+02:30:01,723 --> 02:30:06,023
+Kısacası yukarıdan aşağı gitmek her zaman çok daha kolaydır.
+
+1027
+02:30:06,683 --> 02:30:09,204
+Zor olan aşağıdan yukarı gitmektir.
+
+1028
+02:30:09,204 --> 02:30:12,343
+İşte bu örnekte onunla ilgili bir örnek.
+
+1029
+02:30:12,704 --> 02:30:13,923
+Şimdi bu örneğe bakalım.
+
+1030
+02:30:15,963 --> 02:30:18,583
+Bana diyor ki sana diyor şu kuralları verdim.
+
+1031
+02:30:18,903 --> 02:30:20,183
+Türetme kurallarım bu.
+
+1032
+02:30:20,783 --> 02:30:24,423
+Benim V'nem zaten A, S ve B olduğu belli.
+
+1033
+02:30:24,423 --> 02:30:45,923
+VT'lerinde AB şöyle de bir tümcesel yapı veriyor. Bu diyor bu dile ait bir kural mı? Bunun bu dile ait bir kural olduğunu anlayabilmem için benim deminki yaptığımız örnek gibi bir şekilde bunları bağlayarak S'ye ulaşmam lazım. Nasıl yapılır bu işlemler?
+
+1034
+02:30:45,924 --> 02:31:04,424
+Oh my god, ne oldu? Nasıl yapılır bu işlemler? İşte burayı aldım bunun buradaki örneğim. Soldan gitmemişim bakın sağdan gitmişim. Önce bakıyor tek başına A'nın yerine konulabilecek bir şey var mı? Yok.
+
+1035
+02:31:04,424 --> 02:31:26,224
+Öyleyse BA'yı aldı. BA olan bir kural var mı? Evet var. B. Bu biri getirdi buraya koydu. BA'nın yerine B'yi yazarak diğerlerini buraya koydu. Ben bunu değiştirmeyip başka bir değiştirme yapsaydım. Başka ikili bakalım.
+
+1036
+02:31:26,223 --> 02:31:48,443
+sağdan gidiyorum. Mouse yine yok oldu. Sağdan gidiyoruz. Allah'ım nerede bu ya? O da yoruldu. B-A. B-A var mı? B-A diye bir kural. Evet var. B konuluyormuş. Öyleyse buna iki numara yok.
+
+1037
+02:31:48,443 --> 02:32:06,163
+ha pardon pardon AB'yi buna aldık sonra bunu alacağız AB'yi arıyorum AB'nin konulacağı bir kural var mı? var A şu 2'yi de aldım buraya getirdim bunun yerine A koyarak yazdım sonra
+
+1038
+02:32:08,051 --> 02:32:26,411
+Bir kaydırdım. B A'lı bir şey var mı? B varmış. 3'ü aldım buraya koydum. Onun yerine B koyarak yazdım. Sonra kaydırdım. B B diye bir şey var mı? B B diye hiç yok. Devam ettim. A B diye var mı? Evet var. Buraya 4'ü koydum.
+
+1039
+02:32:27,031 --> 02:32:28,691
+Sonra kaydırdım.
+
+1040
+02:32:28,771 --> 02:32:29,971
+B, A diye var mı?
+
+1041
+02:32:30,411 --> 02:32:31,171
+Evet var.
+
+1042
+02:32:31,751 --> 02:32:33,171
+5'i de buraya getirdim.
+
+1043
+02:32:34,051 --> 02:32:34,731
+Kaydırdım.
+
+1044
+02:32:34,831 --> 02:32:35,951
+A, B diye var mı?
+
+1045
+02:32:36,091 --> 02:32:36,711
+Evet var.
+
+1046
+02:32:37,131 --> 02:32:38,651
+6'yı da buraya getirdim.
+
+1047
+02:32:39,071 --> 02:32:40,271
+A, A diye var mı?
+
+1048
+02:32:40,471 --> 02:32:41,091
+Hayır yok.
+
+1049
+02:32:41,091 --> 02:32:45,912
+Şimdi benim elimde 6 tane opsiyonum var.
+
+1050
+02:32:46,611 --> 02:32:47,811
+Bunlardan ilerleyeceğim.
+
+1051
+02:32:48,271 --> 02:32:52,771
+Ama bunlardan ilerlerken hangisini seçip yoluma devam etmeliyim?
+
+1052
+02:32:53,591 --> 02:32:58,451
+Maksimum çakışmayı bana verecek olanı seçmeliyim.
+
+1053
+02:32:58,851 --> 02:33:01,751
+Maksimum çakışmayı bana verecek olması ne demek?
+
+1054
+02:33:01,751 --> 02:33:09,211
+Şu yaptığım ifadelerden yukarıdaki kurallarda en fazla kaç tane çakışma var?
+
+1055
+02:33:10,351 --> 02:33:16,791
+Bakıyorum AB çakışıyor, BA çakışıyor, başka da çakışan yok.
+
+1056
+02:33:16,971 --> 02:33:18,031
+Maksimum 2 var.
+
+1057
+02:33:18,251 --> 02:33:19,071
+Buna bakıyorum.
+
+1058
+02:33:20,071 --> 02:33:25,051
+Bunda çakışanlar yine BA var ya da AB olarak var.
+
+1059
+02:33:25,271 --> 02:33:25,731
+Yine yok.
+
+1060
+02:33:25,911 --> 02:33:26,551
+Buna da 2.
+
+1061
+02:33:27,091 --> 02:33:28,231
+Buna da baktık 2.
+
+1062
+02:33:28,412 --> 02:33:29,091
+Şuna bakalım.
+
+1063
+02:33:29,351 --> 02:33:30,351
+Buna 3 demişim.
+
+1064
+02:33:30,551 --> 02:33:31,311
+Neden 3?
+
+1065
+02:33:31,931 --> 02:33:32,691
+Bir bakıyorum.
+
+1066
+02:33:33,271 --> 02:33:35,751
+AB diye evet ikili bir çakışma var.
+
+1067
+02:33:36,671 --> 02:33:39,291
+BA diye de ikili bir çakışma var.
+
+1068
+02:33:39,291 --> 02:33:44,571
+Ama küçük A küçük B büyük A diye bir çakışma daha var.
+
+1069
+02:33:45,131 --> 02:33:46,071
+Maksimum 3.
+
+1070
+02:33:46,412 --> 02:33:47,491
+Buna 3 yazdım.
+
+1071
+02:33:47,991 --> 02:33:49,791
+Diğerlerine de baktığımda 2.
+
+1072
+02:33:49,791 --> 02:33:55,611
+Beni en büyük sonuca getiren yani ilk deneme yapmam gereken maksimum olan.
+
+1073
+02:33:56,191 --> 02:33:59,911
+Öyleyse buradan bu maksimum olanı aldım.
+
+1074
+02:34:00,471 --> 02:34:04,271
+Buraya getirdim ve buradan yoluma devam edeceğim.
+
+1075
+02:34:04,631 --> 02:34:05,671
+Yine başlıyorum.
+
+1076
+02:34:06,431 --> 02:34:07,491
+BA var mı?
+
+1077
+02:34:08,111 --> 02:34:09,031
+BA vardı.
+
+1078
+02:34:09,171 --> 02:34:12,851
+BA'nın yerine B yazarak bir numarayı buraya taşıdım.
+
+1079
+02:34:13,671 --> 02:34:14,831
+Sonra kaydırdım.
+
+1080
+02:34:14,931 --> 02:34:15,871
+AB var mı?
+
+1081
+02:34:16,111 --> 02:34:17,331
+AB de şurada var.
+
+1082
+02:34:17,331 --> 02:34:19,251
+İki numarayı da buraya taşıdım.
+
+1083
+02:34:20,171 --> 02:34:20,772
+Kaydırdım.
+
+1084
+02:34:21,251 --> 02:34:23,011
+B A var mı? Evet var.
+
+1085
+02:34:23,171 --> 02:34:24,792
+Üç numarayı buraya taşıdım.
+
+1086
+02:34:25,152 --> 02:34:27,132
+Kaydırdım. Büyük A B var mı?
+
+1087
+02:34:27,451 --> 02:34:28,712
+Hayır öyle bir kural yok.
+
+1088
+02:34:29,132 --> 02:34:30,871
+Küçük A A var mı?
+
+1089
+02:34:31,031 --> 02:34:32,212
+Öyle de bir kural yok.
+
+1090
+02:34:32,632 --> 02:34:36,072
+Şimdi bakacağım. Bunlardaki maksimum çakışmayı bulacağım.
+
+1091
+02:34:36,471 --> 02:34:38,492
+Ortadakinde hiç çakışan yok.
+
+1092
+02:34:39,632 --> 02:34:41,331
+Hiç. Küçük A, büyük A.
+
+1093
+02:34:41,671 --> 02:34:42,511
+Büyük A B.
+
+1094
+02:34:43,031 --> 02:34:44,951
+Küçük B, büyük A diye bir şey yok.
+
+1095
+02:34:44,951 --> 02:34:45,572
+Sıfır.
+
+1096
+02:34:46,091 --> 02:34:50,011
+Yukarkinde çakışan sadece BA var.
+
+1097
+02:34:51,071 --> 02:34:53,031
+Başka yok. İkilik bir çakışma var.
+
+1098
+02:34:53,151 --> 02:34:54,951
+Bunda da ikilik bir çakışma var.
+
+1099
+02:34:55,471 --> 02:34:57,711
+Hangisiyle yoluma devam etmeliyim?
+
+1100
+02:34:58,511 --> 02:35:00,811
+Bu sana kalmış bir tercih.
+
+1101
+02:35:00,931 --> 02:35:03,691
+Ben hep en sonda bulduğumla devam ederim.
+
+1102
+02:35:04,591 --> 02:35:06,111
+Yani nasıl kodluyorsam.
+
+1103
+02:35:06,751 --> 02:35:11,791
+Bununla sonuca ulaşamazsam buraya geri dönüp bir sonrakini alacağım.
+
+1104
+02:35:11,791 --> 02:35:14,611
+Şimdi bunu aldım. Buraya geldim.
+
+1105
+02:35:15,171 --> 02:35:16,791
+Buradaki durumlara bakacağız.
+
+1106
+02:35:17,371 --> 02:35:20,412
+BA'lı bir çakışma var mı? Evet BA vardı.
+
+1107
+02:35:20,992 --> 02:35:22,811
+Biri getirdik buraya koyduk.
+
+1108
+02:35:23,171 --> 02:35:26,471
+Sonra büyük B küçük B var mı? Hayır öyle bir şey yok.
+
+1109
+02:35:26,932 --> 02:35:29,951
+Büyük A büyük B var mı? Evet var burada.
+
+1110
+02:35:30,531 --> 02:35:33,231
+Bunu da aldık. İki olarak buraya getirdik.
+
+1111
+02:35:33,231 --> 02:35:35,791
+Küçük A büyük A var mı? Hayır yok.
+
+1112
+02:35:36,712 --> 02:35:41,451
+Maksimum çakışmalarına baktığımda buradaki maksimum çakışma ne var?
+
+1113
+02:35:41,451 --> 02:35:43,871
+BB var. Buradaki maksimum
+
+1114
+02:35:43,871 --> 02:35:46,211
+çakışmada küçük AS'den
+
+1115
+02:35:46,211 --> 02:35:47,511
+ya da BA'dan
+
+1116
+02:35:47,511 --> 02:35:49,631
+ikili var. Yine ikisi de aynı.
+
+1117
+02:35:50,291 --> 02:35:51,731
+En sonda olduğumu
+
+1118
+02:35:51,731 --> 02:35:53,651
+alıyorum ve bununla
+
+1119
+02:35:53,651 --> 02:35:54,711
+devam ediyorum.
+
+1120
+02:35:55,531 --> 02:35:56,071
+Dönelim.
+
+1121
+02:35:57,075 --> 02:36:21,836
+onu nereye aldım? Şuraya aldım. Bunlar eskileri de görelim diye buraya koymuşum. Buraya aldım. Şimdi buradan bakıyorum. BA'nın varmış. Onu bir ile buraya aldım. SB yok. AS var. Buraya aldım. Maksimum çakışmalarına bakmışım. İkisinde de iki var. En son olanı alıyordum. Bununla aldım.
+
+1122
+02:36:21,836 --> 02:36:48,695
+Şimdi bunu bakıyorum. B, A diye var mı? Var. B, A'nın yerine B koydum. S, B etti. Ama bakarsanız S, B diye S'ye atanmış bir ifade yok. O zaman diyorum ki ben buradan yoluma devam edemem. Buradan bir şey çıkmadı. O zaman bu sıradaki ikinci maksimumu alayım. Şunu alayım. Buna bakalım.
+
+1123
+02:36:48,695 --> 02:37:10,175
+SB var mı? Yok. AS var mı? Evet. AS yerine S gelmiş ama SB diye bir kuralım yok. Buradan da çözüm çıkmadı. Burayı da sildim. Bunu nereden seçmiştim? Buradan. Buradan gidemediğime göre bu sefer bunu aldım. Bununla yoluma devam ettim.
+
+1124
+02:37:10,175 --> 02:37:13,256
+B, B, evet varmış aldım.
+
+1125
+02:37:13,635 --> 02:37:15,235
+A, B'yi de aldım.
+
+1126
+02:37:15,595 --> 02:37:17,195
+Şu küçük A, büyük A yok.
+
+1127
+02:37:17,595 --> 02:37:19,995
+Bunlardaki maksimum çakışmaları baktım.
+
+1128
+02:37:20,156 --> 02:37:21,436
+İkisinde de 2 var.
+
+1129
+02:37:21,936 --> 02:37:24,436
+En son bulduğumla yoluma devam edeceğim.
+
+1130
+02:37:25,135 --> 02:37:26,975
+A, S vardı, S koydum.
+
+1131
+02:37:27,095 --> 02:37:28,735
+Fakat S, B diye bir şey yok.
+
+1132
+02:37:29,115 --> 02:37:30,535
+Buradan da çözüm çıkmadı.
+
+1133
+02:37:31,535 --> 02:37:33,575
+O zaman şunu aldım.
+
+1134
+02:37:33,955 --> 02:37:34,936
+Buraya baktım.
+
+1135
+02:37:34,936 --> 02:37:39,455
+Burada A, B'nin ne olduğunu görüyoruz.
+
+1136
+02:37:39,455 --> 02:38:00,375
+AB'nin, göremiyorum, AB'nin S olduğunu gördüm, geldim, buna S koydum, şuna S koydum, küçük AS etti, küçük AS diye bir şey var mı? Evet var, yani S, sonra geldim, S yazdım ve sentence'a ulaştım.
+
+1137
+02:38:00,375 --> 02:38:14,375
+Artık benim cümleden böyle bir tümcesel yapı, böyle bir tümcesel yapı yazabilmem için ağaç üzerinde hangi aşamalardan geçeceğimi bana gösteriyor.
+
+1138
+02:38:14,375 --> 02:38:25,095
+Yolu bu. Gördüğünüz gibi buradaki yapım ne kadar büyükse, ne kadar fazla kuralım varsa burada oluşabilecek olasılıklar o kadar artıyor.
+
+1139
+02:38:25,096 --> 02:38:32,215
+Yani ne kadar iyi kodumu yazarsam optimize bir şekilde o kadar hızlı bir cevap alabilirim.
+
+1140
+02:38:32,736 --> 02:38:37,096
+Sentaptik analiz denilen şey arka planda işte bunu yapıyor.
+
+1141
+02:38:37,495 --> 02:38:46,516
+Bir cümlenin bir dile ait olup olmadığını anlamak için o cümleyi o dilin kurallarına göre pars etmesi gerekiyor.
+
+1142
+02:38:46,676 --> 02:38:49,995
+İster yukarıdan isterse aşağıdan yapıyor.
+
+1143
+02:38:50,256 --> 02:38:53,995
+Şimdi gerçek dünya örneklerine geçelim.
+
+1144
+02:38:53,995 --> 02:39:01,195
+Bu gerçek dünya örneklerinde bir izniniz olursa şey yapmak istiyorum.
+
+1145
+02:39:01,195 --> 02:39:03,355
+Allah Allah
+
+1146
+02:39:07,603 --> 02:39:14,843
+hiçbir şey de beceremiyorum ya. Bunu stop etmeden göremiyorum. Kaç slide'ım kaldığını görmek istiyordum. Neyse.
+
+1147
+02:39:16,163 --> 02:39:24,723
+Şimdi, burada anlatacağın şey diyor ki, örnek, yukarıdan aşağı diyor ayrıştırma yapacaksın ve left to right yapacaksın.
+
+1148
+02:39:25,263 --> 02:39:32,383
+Depth first'ün ne olduğunu hatırlıyorsunuzdur belki. Ağaç üzerinde arama algoritmalarıydı. Bir bread first, bir depth first vardı.
+
+1149
+02:39:32,383 --> 02:39:43,723
+Depth first, başladığın noktadan gidebildiğin kadar derine gideceksin. Yani başladığın nokta sentence, gidebildiğin derinlikte yapraklar.
+
+1150
+02:39:43,723 --> 02:39:52,683
+Şimdi şurada neleri görüyorsunuz? Hemen kalemimi çıkarıyorum. Farklı bir renk alalım. Pembiş olsun.
+
+1151
+02:39:53,223 --> 02:39:59,943
+Şimdi S diye kurallarım var. Bir S nelerden oluşuyor diyor. Hadi yazalım.
+
+1152
+02:39:59,944 --> 02:40:07,684
+Bir S diyor, niye bunu kullandım? Bir dakika, clear all diyorum, bunlar çok zor, şöyle yazalım.
+
+1153
+02:40:08,423 --> 02:40:13,784
+Dilin türetme kurallarını çıkarıyorum. Bir S nelerden oluşur?
+
+1154
+02:40:13,784 --> 02:40:19,703
+S diyor, bir noun phrase, isim cümlesi bir word phrase'den oluşabilir diyor.
+
+1155
+02:40:19,703 --> 02:40:34,324
+veya diyor birse aux denilen şey auxiliary kerim yani yardımcı fiil onu takip eden bir noun phrase onu takip eden bir word phrase'den oluşabilir diyor.
+
+1156
+02:40:34,324 --> 02:40:44,264
+veya diyor, veya diyor, bir şey, sentence sadece word phrase'den oluşabilir diyor.
+
+1157
+02:40:44,264 --> 02:40:55,484
+Peki bu non-phrase, word phrase bunların hepsi söz dizimsel değişken.
+
+1158
+02:40:56,203 --> 02:40:58,703
+Peki başka neyi bilmem lazım?
+
+1159
+02:40:58,904 --> 02:41:00,464
+Non-phrase acaba nedir?
+
+1160
+02:41:01,144 --> 02:41:03,943
+Non-phrase denilen şey diyor, bir determiner.
+
+1161
+02:41:04,323 --> 02:41:18,803
+BERT, TECH, onu izleyen gittik. Niye böyle oluyor? Ben bunu bir daha alamıyor muyum?
+
+1162
+02:41:26,451 --> 02:41:28,051
+Neyse üstüne yazayım.
+
+1163
+02:41:29,851 --> 02:41:30,651
+Şöyle yazayım.
+
+1164
+02:41:31,811 --> 02:41:34,851
+Bir noun phrase neden oluşuyor?
+
+1165
+02:41:35,391 --> 02:41:40,591
+Bir determiner yani bağlaç ve onu izleyen nominal bir değer.
+
+1166
+02:41:40,711 --> 02:41:43,972
+Nominal bir değer noun'a karşılık gelecek.
+
+1167
+02:41:44,811 --> 02:41:48,911
+Veya noun phrase'in yerine gelen başka bir şey var mı?
+
+1168
+02:41:48,911 --> 02:41:49,271
+Var.
+
+1169
+02:41:49,771 --> 02:41:55,872
+Noun phrase veya bir en alt satıra bakın proper name'den oluşur diyor.
+
+1170
+02:41:55,872 --> 02:41:58,571
+Proper name de özel isim demektir.
+
+1171
+02:41:58,931 --> 02:42:01,911
+Başka np'nin yerine gelen bir şey var mı? Yok.
+
+1172
+02:42:02,451 --> 02:42:04,051
+Başka neyi bilmem lazım?
+
+1173
+02:42:04,891 --> 02:42:05,712
+Word phrase'i.
+
+1174
+02:42:06,091 --> 02:42:08,492
+Word phrase nelerden oluşurmuş?
+
+1175
+02:42:08,951 --> 02:42:20,951
+Word phrase bir verb'ten ve onu izleyen bir noun phrase'den veya bir word phrase sadece verb'ten oluşur diyor.
+
+1176
+02:42:20,951 --> 02:42:27,091
+İşte o da onun üstünde geldi. Neyse anladınız artık ne olduğunu.
+
+1177
+02:42:27,512 --> 02:42:30,951
+Türetme kurallarım işte bunlar ve bunları böyle yazdım.
+
+1178
+02:42:31,731 --> 02:42:39,951
+Sentence burada non-phrase yerine determiner nominal bir değer koydum veya nominal değerini yerine proper name koyabilirim.
+
+1179
+02:42:41,032 --> 02:42:47,431
+Observer-cary'den gidiyorsam non-phrase yerine determiner nominal değer ya da proper name koyabilirim.
+
+1180
+02:42:47,431 --> 02:42:50,631
+sentence word phrase'den yola çıkacaksam
+
+1181
+02:42:50,631 --> 02:42:53,451
+ya word noun phrase oluyordu
+
+1182
+02:42:53,451 --> 02:42:55,691
+ya da word koyabiliyordum
+
+1183
+02:42:55,691 --> 02:42:58,351
+peki benim bir de nelere ihtiyacım var
+
+1184
+02:42:58,351 --> 02:42:59,331
+vt'ler
+
+1185
+02:42:59,331 --> 02:43:01,271
+vt'ler nedir
+
+1186
+02:43:01,271 --> 02:43:03,611
+nom dediğim şey aslında
+
+1187
+02:43:03,611 --> 02:43:05,191
+nom yazamadım
+
+1188
+02:43:05,191 --> 02:43:07,251
+nom dediğim şey aslında
+
+1189
+02:43:07,251 --> 02:43:09,111
+noun'dur
+
+1190
+02:43:09,111 --> 02:43:11,511
+işte ben de bu nounlara ne yazayım
+
+1191
+02:43:11,511 --> 02:43:13,151
+book
+
+1192
+02:43:13,151 --> 02:43:14,991
+ondan sonra
+
+1193
+02:43:14,991 --> 02:43:15,751
+cheer
+
+1194
+02:43:15,751 --> 02:43:18,031
+Ondan sonra pen.
+
+1195
+02:43:18,891 --> 02:43:20,571
+Ondan sonra nokta nokta.
+
+1196
+02:43:20,811 --> 02:43:22,691
+Bütün isimleri.
+
+1197
+02:43:23,191 --> 02:43:25,191
+Başka neye ihtiyacım var benim?
+
+1198
+02:43:25,611 --> 02:43:26,451
+Excellary carry.
+
+1199
+02:43:26,851 --> 02:43:30,531
+Excellary carry yerine ben ne yazabilirim?
+
+1200
+02:43:31,431 --> 02:43:32,771
+Bu sözlüğün içine.
+
+1201
+02:43:34,331 --> 02:43:34,711
+Is.
+
+1202
+02:43:35,892 --> 02:43:36,672
+İşte the.
+
+1203
+02:43:37,091 --> 02:43:38,291
+The nereden çıktı?
+
+1204
+02:43:38,411 --> 02:43:38,731
+Is.
+
+1205
+02:43:39,291 --> 02:43:39,571
+Do.
+
+1206
+02:43:40,351 --> 02:43:40,751
+Are.
+
+1207
+02:43:41,231 --> 02:43:42,172
+Nokta nokta.
+
+1208
+02:43:42,731 --> 02:43:44,631
+Başka benim neye ihtiyacım var?
+
+1209
+02:43:44,631 --> 02:43:45,631
+Verplere.
+
+1210
+02:43:45,752 --> 02:43:50,132
+Verb sözlüğünün içinde neler yazacağım?
+
+1211
+02:43:50,291 --> 02:43:51,371
+Verbü de yazamadım.
+
+1212
+02:43:51,752 --> 02:43:53,151
+Neler yazacağım mesela?
+
+1213
+02:43:54,151 --> 02:43:57,992
+Go, paint, nokta, nokta.
+
+1214
+02:43:58,752 --> 02:44:00,532
+Determinera ihtiyacım var.
+
+1215
+02:44:00,871 --> 02:44:02,712
+Bu sözlüğün içinde neler olacak?
+
+1216
+02:44:03,272 --> 02:44:07,492
+Bu sözlüğün içinde the, e, er.
+
+1217
+02:44:08,552 --> 02:44:11,172
+İşte şunlar vt'ler.
+
+1218
+02:44:12,332 --> 02:44:14,151
+Şunlar vn'ler.
+
+1219
+02:44:14,151 --> 02:44:17,011
+Bunlar da türetme kuralları.
+
+1220
+02:44:17,931 --> 02:44:21,011
+Şimdi size gerçek doğal dilde bir cümle vereceğim.
+
+1221
+02:44:21,631 --> 02:44:27,892
+Ve bunların nasıl ağaç üzerinde olduğunu daha gerçekçi örneklerle göreceğiz.
+
+1222
+02:44:29,371 --> 02:44:31,051
+Görelim hemen.
+
+1223
+02:44:32,691 --> 02:44:34,312
+İzin verirse bilgisayar bana.
+
+1224
+02:44:36,312 --> 02:44:42,032
+Şimdi elime bir cümlenin ilk kelimesi geldi.
+
+1225
+02:44:42,032 --> 02:44:47,431
+Does. Sentence'ı aldım. Sentence non-phrase ve phrase'den oluşur dedim.
+
+1226
+02:44:48,071 --> 02:44:52,172
+Non-phrase'in kurallarından bir tanesi determiner ve nominal değer.
+
+1227
+02:44:52,931 --> 02:44:56,211
+Hemen determiner sözlüğünün içine bakıyorum. Does yok.
+
+1228
+02:44:56,571 --> 02:45:00,192
+O zaman sen bu kuralla yoluna devam edemezsin diyor.
+
+1229
+02:45:00,731 --> 02:45:04,992
+Bir başka kural neydi? Non-phrase proper name olabilirdi.
+
+1230
+02:45:05,591 --> 02:45:09,832
+Proper name özel isim. Özel isim sözlüğüne bakıyor. Does var mı? Yok.
+
+1231
+02:45:09,831 --> 02:45:13,591
+O zaman bu kuralla da yoluna devam edemezsin diyor.
+
+1232
+02:45:13,671 --> 02:45:15,791
+Başka bir sentence seçiyor.
+
+1233
+02:45:16,271 --> 02:45:19,691
+Kuralları auxiliary carry, noun phrase, word phrase.
+
+1234
+02:45:20,071 --> 02:45:21,611
+Öxaleri sözlüğüne bakıyor.
+
+1235
+02:45:21,851 --> 02:45:22,411
+Does var.
+
+1236
+02:45:22,851 --> 02:45:24,831
+Hemen does'ı buraya...
+
+1237
+02:45:24,927 --> 02:45:52,667
+match ediyor. Sırada diz var. Acaba diz, noun phrase'e uyacak mı? Noun phrase'in kuralları neydi? Determiner ve nominal değerde. Determiner sözlüğün içine bakıyor, diz var. Hop, bunu da açıyor. Flight geliyor, uçuş. Nominal değerde. Nominal değer, noun'la karşılık geliyor. Noun sözlüğüne bakıyor. Flight var mı? Evet var. Bunu da açıyor.
+
+1238
+02:45:52,667 --> 02:46:18,288
+sonra include kelimesi geliyor. Burada verb phrase vardı. Verb phrase'in kuralları içerisinde verb var. Verb sözlüğüne bakıyor. Include var mı? Evet, var. Include'u açıyor. Sonra arkasından A geliyor. Ama verb phrase sadece deminkinde verb de bitmişti.
+
+1239
+02:46:18,288 --> 02:46:28,668
+o zaman buna uymuyor diyor. Verb için. Verb, non-phrase yapısını alıyor. Bu include zaten buna uymuştu. Non-phrase'i şimdi açması gerekiyor.
+
+1240
+02:46:28,668 --> 02:46:41,487
+Non-phrase'de determiner nominal değer. Determiner sözlüğünde a'yı buluyor. Bunu açtı. Nominal değer noun'du. Non-sözlüğünde meal var mı diye bakıyor.
+
+1241
+02:46:41,487 --> 02:46:52,707
+meal varsa onu da açıyor ve bütün does this flight include a meal cümlesi ağaç üzerinde pars edilmiş oluyor.
+
+1242
+02:46:52,707 --> 02:47:03,727
+Nasıl pars ettim? Top the bottom. Yukarıdan aşağı nasıl yaptım? Soldan sağa ve bütün hepsi buraya atıldı.
+
+1243
+02:47:03,727 --> 02:47:17,727
+Ha şöyle düşünün bu Türkçe bir kelime olsun kelimelerin ekleri var bu ağaçların içerisinde o ekler de ilgili sözlüklerin içerisinde yer alarak burada açılıyor ve her şey oturuyor.
+
+1244
+02:47:17,727 --> 02:47:28,967
+Bir şekilde şu kelimelerden bir tanesi verb sözlüğünün içerisinde olmasaydı bu cümleye İngilizce cümle değildi diyecekti.
+
+1245
+02:47:29,427 --> 02:47:36,127
+Ya da bu cümle o sözlüğe eklenmeye unutulmuş olabilir ama bu gibi şeylerin unutulmaması gerekir.
+
+1246
+02:47:36,288 --> 02:47:39,327
+Ya da dile yeni girmiş bir kelime olabilir.
+
+1247
+02:47:39,827 --> 02:47:46,047
+Mesela ne bileyim COVID kelimesi hiç hayatımızda olmayan bir kelimeydi.
+
+1248
+02:47:46,047 --> 02:47:57,947
+bu COVID kelimesi bizim bu sözlüklere eklenmezse Ayşe COVID'e yakalandı diye bir cümle geldiğinde bu cümleye Türkçe bir cümle değil diyecekti.
+
+1249
+02:47:58,347 --> 02:48:08,967
+Ama COVID'i ben nedir bir özel isim diye yerleştirirsem sözlüğüme o cümleyi de şey yapacak, analiz edecek.
+
+1250
+02:48:08,967 --> 02:48:12,707
+Peki şimdi aşağıdan yukarı yapalım.
+
+1251
+02:48:13,767 --> 02:48:16,027
+Burada yine bana kurallarım verilmiş.
+
+1252
+02:48:16,047 --> 02:48:45,487
+türetme kurallarım. Burada da işte sözlüğüm var. Hangi sözlükte neler var? Türetme kuralları, evet burada. Şu prep dediğiniz şey propositionlar, proper noun dediğimiz özel isimler. Şu da kuralların bir tanesi bu nominal değer, nominal proper pronoun bu da. Bu kullandığım terminoloji benim kafadan uydurduğum terminoloji değil. Post-Tech etiketlerimiz, tüm dünya bunu böyle biliyor.
+
+1253
+02:48:45,487 --> 02:48:48,487
+NP görüyorsan bu isim cümlesi.
+
+1254
+02:48:48,788 --> 02:48:51,987
+İşte DET görüyorsan bu belirteç.
+
+1255
+02:48:52,508 --> 02:48:56,407
+Ne bileyim AUX görüyorsan bu yardımcı fiildir diye.
+
+1256
+02:48:56,667 --> 02:48:57,407
+Şimdi bakalım.
+
+1257
+02:48:57,827 --> 02:48:58,948
+Bir de şurada dikkat edin.
+
+1258
+02:48:59,088 --> 02:49:02,368
+Book kelimesi her iki sözlüğün içinde de var.
+
+1259
+02:49:02,567 --> 02:49:04,687
+Noun kitap olarak book duruyor.
+
+1260
+02:49:05,228 --> 02:49:08,667
+Verb sözlüğünde de kayıt olmak anlamında book duruyor.
+
+1261
+02:49:09,627 --> 02:49:10,527
+Oh ma uf.
+
+1262
+02:49:11,347 --> 02:49:13,088
+Nerelere dokunuyorum böyle ya?
+
+1263
+02:49:13,087 --> 02:49:15,787
+Book that flight diye bir cümlem var.
+
+1264
+02:49:16,244 --> 02:49:27,983
+BERT, FLART cümlesini aşağıdan yukarıya doğru parsedeceğim. Yani bunu öyle parsedim ki sentence'a varıyorsam o cümle doğru bir cümle. Önce sol tarafa bakalım.
+
+1265
+02:49:29,063 --> 02:49:40,223
+BERT'a bakıyor. Noun sözlüğünde var. Noun diyor. Dettü, det diye işaretliyor. FLART'ı da noun diye işaretliyor. Yukarıdaki kurallarıma bakıyor.
+
+1266
+02:49:40,223 --> 02:49:45,443
+non nominal bir değerde nominali koydu işte.
+
+1267
+02:49:45,924 --> 02:49:46,924
+Şimdi geldik.
+
+1268
+02:49:47,483 --> 02:49:51,703
+Determiner ile nominal değer birleştiğinde hemen bulalım.
+
+1269
+02:49:52,123 --> 02:49:53,803
+Öyle bir şey olması lazım.
+
+1270
+02:49:57,427 --> 02:50:15,907
+Determiner ile nominal değer birleştiğinde non-phrase oluyormuş. Buna non-phrase dedim. Burası nominal değer dedim. Peki kurallarım içerisinde nominal değer arkasından takip eden non-phrase diye bir kural var mı? Hayır, öyle bir kural yok.
+
+1271
+02:50:16,487 --> 02:50:23,907
+Ben hiçbir zaman bu ikisini bağlayamıyorum. Burada o zaman bir problem var demek. Bu problem ne olabilir?
+
+1272
+02:50:23,907 --> 02:50:45,947
+Ya gerçekten bu dilde olmayan bir kelimedir ya da bu kelime birden fazla anlama olan bir kelimedir. Ambigüist bir kelimedir. Bunun başka bir anlamı da vardır. Başka hangi sözlükte vardı? Verb sözlüğünde vardı. Peki bu kum verb olarak alayım. Bu yine that, bu yine noun.
+
+1273
+02:50:45,948 --> 02:50:55,547
+nominal değer de noun, determiner ile nominal değer noun phrase oluyordu. Burası da verb.
+
+1274
+02:50:55,547 --> 02:51:04,067
+Verb ile noun phrase'i birleştiren bir kural var mı? Bakıyorum verb ile noun phrase'i birleştiren kural verb phrase'miş.
+
+1275
+02:51:04,608 --> 02:51:14,987
+Buraya verb phrase dedim. Peki verb phrase neyin altında yer alıyor? Sentence bir verb phrase'den oluşabilirmiş ve burada sentence'a geldim.
+
+1276
+02:51:14,987 --> 02:51:22,887
+Şu ağaç bana bunun bu dile ait olmadığını söylerken bu ağaç bu dile ait olduğunu söylüyor.
+
+1277
+02:51:23,387 --> 02:51:31,307
+Öyleyse bir kelime ambigü ise bu kelimenin farklı türleriyle de bu analizi yapmam gerekir.
+
+1278
+02:51:31,407 --> 02:51:37,827
+Bununla başladım olmadı dursaydım ben yanlış bir sintaktik analiz yapmış olacaktım.
+
+1279
+02:51:38,627 --> 02:51:43,027
+Burada başka bir örnek alınmış A Flight from Indianapolis.
+
+1280
+02:51:43,027 --> 02:52:04,207
+İşte bunu yaparsak aynı şekilde ulaştığını göreceğiz. Bu çok ilkel Türkçe için oluşturulmuş bir şey. Üzerinde pek konuşmaya bile gerek yok. Böyle bir şeyler yok arkadaşlar İG, FG diye. Yani bu özellikle söylüyorum literatüre aykırı bir şey. Bunu kimse bilmez.
+
+1281
+02:52:04,207 --> 02:52:24,187
+Yani sen bile bu ilgiye nedir dersin. Yani gözümüz hep ne diyeyim diyemiyorum. Standart herkesin kullandığı o etiketleri kullanarak biz okumaya alıştık ve o şekilde de okumalıyız.
+
+1282
+02:52:24,187 --> 02:52:48,587
+Peki, şimdi son olarak burada her zaman ben bu sintaktik gösterilimi ağaç yapısında bir network kullanarak göstermek zorunda değilim ağaç yapısında. Bunları Augmented Network Translation Grammar adı verilen, Türkçesi genişletilmiş geçiş ağları olan bir network ile de tasarlayabilirim.
+
+1283
+02:52:48,588 --> 02:53:13,908
+Bu nasıl bir şey? Zor bir şey mi? Hayır. Hiç zor bir şey değil. Hepsini açalım. Bu stakerden oluşuyor. Stakerden staker'e geçiş şartlarım var. Hangi stakerden başlıyorsa start, hangi stakerde bitiyorsa stop stakerim var. Öyle düşünün. Bir tane küçük bir örnek verin size. Mesela bu.
+
+1284
+02:53:13,907 --> 02:53:21,127
+Lisanstaki hesaplama teorisi dersinde de bunları görmüşsünüzdür.
+
+1285
+02:53:21,127 --> 02:53:22,987
+4 tane state'in var.
+
+1286
+02:53:23,627 --> 02:53:27,067
+Kimi buraya S koyar bu stop state'tir.
+
+1287
+02:53:27,607 --> 02:53:32,187
+Ya da şunu çift halka ile gösterir.
+
+1288
+02:53:32,648 --> 02:53:39,467
+Bunu çift halka ile göstermek demek senin elindeki input böyle bir state'e gelmeden bitemez.
+
+1289
+02:53:39,467 --> 02:53:51,187
+Böyle bir state'e geldin elindeki input bittiyse o yine olmaz. Hangi şeyden başlayacaksa da oraya da böyle start diye bildirilir.
+
+1290
+02:53:51,636 --> 02:54:13,595
+işte burada start yazıyor, yazamadım. State'lerden geçişlerin kuralları var. İşte döner, defalarca dönebilir, önemli olan elimdeki input, final state'te bitmesi lazım. Buna göre bana şöyle inputlar verilmiş. İnşallah verilecek.
+
+1291
+02:54:17,747 --> 02:54:38,247
+Bunlar, bu A'da tanınır mı? Bilmem, tanınır mı? Mesela B'yi tanır mı? Q1'den Q4'e B ile gittim. Final State, elimdeki input bitti, tanıdım. ABBA'yı tanır mı? ABB, bunu aldım. ABB, bunu aldım.
+
+1292
+02:54:41,747 --> 02:55:03,687
+Q2'ye geldim. Sonra bir A var. Bundan sonra A yok ama bu Epsilon. Hiçbir şey olmadan state değiştireceğimi gösterir bana. Q3'e geçtim. A var. Q4'e geldim. Q4 final state. Elimdeki input bitti. Evet, bunu da sağlar. Bunların hepsini sağlar. Ha şöyle de olur.
+
+1293
+02:55:03,687 --> 02:55:14,527
+A, A, B diye gelir, buradan yeniden A, A ile buraya döner, sonra yine A, B, B diye gelir, A, A ile döner, sonra B ile buraya gelir, önemli değil.
+
+1294
+02:55:14,527 --> 02:55:25,027
+Okların yönü incelensin, okların yönünde hareket edilsin, final state de bitsin, elimdeki bütün input işlenmiş olsun.
+
+1295
+02:55:25,527 --> 02:55:31,627
+Bunları tanıyamaz demiş, neden tanıyamaz bakalım, şunu neden tanıyamadığına bakalım.
+
+1296
+02:55:31,627 --> 02:55:59,927
+B ile başlayacak. Hiçbir inputun var mı? Var. B ile başlayan bir inputun var. Geldim. Ama AAB kaldı. Final stake. Buradan geriye dönüşte yok. Öyleyse bunu tanıyamaz. Peki bunu bakalım. ABB. Evet ABB'yi aldım. Buraya geçtim. Ondan sonra boş buraya geçtim. Sonra bir A geldi. A ile de şunu aldım. Buraya geçtim.
+
+1297
+02:55:59,928 --> 02:56:09,807
+bir B geldi ama ben B'ye dönemiyorum. Yani herhangi B'yi okuyacağım bir eğitim yok. Öyleyse bunu da tanıyamaz.
+
+1298
+02:56:09,807 --> 02:56:22,867
+Şimdi bunlardan yola çıkaraktan, bunlardan yola çıkaraktan, inşallah çıkacağım.
+
+1299
+02:56:22,867 --> 02:56:26,107
+hadi ama
+
+1300
+02:56:26,107 --> 02:56:29,327
+ne oluyoruz ya
+
+1301
+02:56:29,327 --> 02:56:33,207
+bu noktalar koyuyor yarabbim
+
+1302
+02:56:37,203 --> 02:57:06,843
+Şöyle bir cümle alalım. Ali, camı kırdı cümlesi. Morfolojik analiz sonucunda ne çıkacak? Ali, öznedir, özel isimdir. Cam, noun'dur, isimdir. I, ektir. Kır, fiildir. Aynı zamanda kır isimdir de unutmayın. D da ektir. Geniş zaman, geçmiş zaman ekim.
+
+1303
+02:57:06,843 --> 02:57:34,583
+Şimdi ben bunu ağaç üzerinde göstermiştim. Şimdi de şey olarak gösterelim. Bu genişletilmiş geçiş ağlarını kullanalım. Bana diyor ki cümle diyor ya özne ve yüklemden oluşur. Bu final state cümlem biter diyor. Ya da bir cümle özne, nesne, yüklemden oluşur ve biter diyor. Peki benim neleri bilmem lazım?
+
+1304
+02:57:34,583 --> 02:57:40,323
+Özne'ye hangi şartı sağlayacak ki buradan Q1'e geçsin?
+
+1305
+02:57:40,923 --> 02:57:47,523
+Özne'nin sonlanabilmesi için, Q1'e geçebilmesi için isim sözünde olması gerekiyor.
+
+1306
+02:57:47,723 --> 02:57:50,064
+Peki nesnenin şartı nedir?
+
+1307
+02:57:50,403 --> 02:57:54,863
+Nesne de diyor isim olacak ve arkasından nesne 2 alacak.
+
+1308
+02:57:55,223 --> 02:57:57,343
+Tabi bu çok basitleştirilmiş bir şey.
+
+1309
+02:57:57,463 --> 02:58:00,723
+Bu örnekte nesne 2 olduğu için ben buraya bunu yazdım.
+
+1310
+02:58:00,723 --> 02:58:19,043
+Bir isim kaç tane ek alıyorsa burası o kadar komplike olacak. Sonra yüklem var. Fiil nasıl olacak? İşte fiil de bu. Tabi burada da bir tane ek koymuşum. Bu örnekte bu olduğu için burada da istemediğin kadar ek var.
+
+1311
+02:58:19,043 --> 02:58:45,083
+Şimdi nasıl çalışacak? Geldi cümle. Ali'yi aldı. Ali'nin özne olması lazım. Geldi özneye. İsim, isim sözlüğüne baktım. Ali var. Q5'e geçti. Ha bu bunu tamamladı. Artık ben Q1'deyim. Sonra cam geldi. Yüklem tarafına gitti. Diyelim yükleme geldi. Fi'nin sözlüğünde baktı. Cam var mı? Hayır yok.
+
+1312
+02:58:45,083 --> 02:59:08,803
+Bu sonlanamadı. O zaman demek ki bu yüklem değil. Ben geri döndüm. Nesneye geçtim. Geldim nesneye. İsim sözlüğünde can var mı? Var. Q6'dayım. Nesne 2 sözlüğünde ı var mı? Evet var. Q7 bitti. Yani nesne sonlandı. Öyleyse ben Q1'den Q2'ye geçtim. Şu an buradayım.
+
+1313
+02:59:08,803 --> 02:59:31,483
+Kırdı fiili var. Yani kır var. Kırı aldı. Fiil sözlüğünde var mı? Var. Zaman ekinde var mı? Var. Sonlandı mı? Sonlandı. Yüklem de tamamlandı. Buraya geldi. Sonlandı mı? Cümle sonlandı. Elimdeki input bitti mi? Bitti. O zaman bu cümle doğrudur diyoruz.
+
+1314
+02:59:31,483 --> 02:59:45,983
+Bu şekilde de gösterebiliriz. Hiçbir farkı yok. Sadece kaynaklarda farklı farklı gösterimler görebilirsiniz. Akademik kaynaklarda bu tip gösterim daha az yer kapladığı için tercih edilebilinir.
+
+1315
+02:59:45,983 --> 03:00:00,883
+Son olarak da söyleyeceğim şey bazen bu steytler üzerinde döngü olabilir. Neden? Mesela düşünün top kelimesini önüne onlarca sıfat koyabilirim. Türkçe böyle bir dil.
+
+1316
+03:00:00,883 --> 03:00:14,943
+Derim ki yırtık, kırmızı, büyük, ağır, pütürlü, ekose renkli, ekose desenle top.
+
+1317
+03:00:15,963 --> 03:00:17,703
+Bir sürü özellik söyledim.
+
+1318
+03:00:18,063 --> 03:00:21,863
+Ben normalde bir ismin önüne kaç tane sıfat geldiğini bilmiyorum.
+
+1319
+03:00:21,863 --> 03:00:23,443
+Ne yapacağım yani?
+
+1320
+03:00:24,003 --> 03:00:25,763
+Ne oluyoruz?
+
+1321
+03:00:27,163 --> 03:00:28,183
+Ne yapacağım yani?
+
+1322
+03:00:28,623 --> 03:00:29,983
+Şunu mu yapacağım?
+
+1323
+03:00:30,451 --> 03:01:00,031
+kalem alalım. İşte bakacağım sıfat, sıfatsı ötekine geç. Sıfat, geç, sıfat, geç, sıfat, geç, sıfat. Kaç tane sıfat? Kaç tane arka artıya isteye koyacağım? Bununla uğraşacağıma bir şey sıfatsa, yeniden bunun üzerine döndürüyorum, bir sıfat daha geldiyse. Yırtık sıfat sözlüğünde var, geldi. Kırmızı sıfat sözlüğünde var, büyük, var, top, yok.
+
+1324
+03:01:00,031 --> 03:01:07,652
+Öyleyse buraya geçti. İsim sözlüğünde var mı? Var. Sonlandı. Bu şekilde de gösterebilirim.
+
+1325
+03:01:08,751 --> 03:01:17,672
+Evet. Şimdi arkadaşlar bu üçüncü slide'ımızı da bitirdim. Dediğim gibi slide'lar A ve SES'in sayfamda var.
+
+1326
+03:01:18,051 --> 03:01:24,571
+Ama anlattığım slide'lara bakın. Diğerlerine hep yeni şeyler ekliyorum çünkü. Hep demeyeyim. Bazılarına ekliyorum.
+
+1327
+03:01:24,571 --> 03:01:43,392
+Haftaya regular expression'ları size anlatıp ödev vereceğim ama haftaya tatil midir onu tam bilmiyorum. 29 Ekim emin değilim size mesaj atarım. Ne olacağını bilmiyorum çünkü. Regular expression'ları göreceğiz. Sorunuz varsa alayım.
+
+1328
+03:01:44,431 --> 03:01:46,871
+29 Ekim resmi tatil olması lazım hocam.
+
+1329
+03:01:46,871 --> 03:02:05,331
+Tamam o zaman yok demektir ama bari o zaman diliminde lütfen proje konularını bir inceleyin. Bir bakın yavaş yavaş şey yapalım. Ben de seminer konusu gündemde olan konularla ilgili makaleler bulmaya çalışacağım.
+
+1330
+03:02:05,331 --> 03:02:17,632
+çok fazla sayfa sayısı olmayan, rahatlıkla okunabilen ama sayımız arttığı için bu özelliklere sahip makale bulmakta da bazen zorlanabiliyorum.
+
+1331
+03:02:17,812 --> 03:02:24,172
+Ama elimden geleni yapmaya çalışırım. Siz de bana öneriyle gelebilirsiniz. Ben de onları hazırlamış olurum.
+
+1332
+03:02:25,731 --> 03:02:34,791
+Dersi uzattığım için üzgünüm ama okununun bitmesi gerekiyordu. Teşekkür ederim zaman ayırdığınız için. Görüşmek üzere diyorum.
+
+1333
+03:02:35,331 --> 03:02:38,631
+Bir kişi bana bir cevap versin. Moralim bozuluyor.
+
+1334
+03:02:39,071 --> 03:02:39,771
+Görüşürüz hocam.
+
+1335
+03:02:39,791 --> 03:02:42,091
+Peki, tamam. Hadi hoşçakalın.
