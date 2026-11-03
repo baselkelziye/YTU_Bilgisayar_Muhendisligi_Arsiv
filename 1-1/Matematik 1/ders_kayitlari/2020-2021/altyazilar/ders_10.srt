@@ -1,0 +1,3383 @@
+1
+00:00:13,396 --> 00:00:14,735
+Evet, merhaba arkadaşlar.
+
+2
+00:00:28,500 --> 00:00:30,639
+Dün kaldığımız yerden devam edelim.
+
+3
+00:00:32,920 --> 00:00:35,480
+Hiperbolik fonksiyonlardan bahsedelim.
+
+4
+00:00:36,339 --> 00:00:40,039
+Zamanımız kalırsa bir miktar soru çözelim genel uygulama.
+
+5
+00:00:42,699 --> 00:00:44,279
+Birkaç dakika bekleyelim.
+
+6
+00:00:45,479 --> 00:00:46,719
+Herkes katılabilsin derse.
+
+7
+00:02:31,283 --> 00:02:48,923
+Okay, let's introduce the definition of hyperbolic functions, but before we need to recall some basic rules about trigonometric function. In fact, there is some analog, okay, there is some similarity between trigonometric functions and hyperbolic functions.
+
+8
+00:03:07,283 --> 00:03:21,283
+...circle with radius R. The area of this circular section is given by...
+
+9
+00:03:21,923 --> 00:03:25,283
+...supose that theta is radian value, not degree.
+
+10
+00:03:25,283 --> 00:03:29,283
+Okay, so theta is radian value. Let's say this is T.
+
+11
+00:03:29,283 --> 00:03:30,283
+Yani bu bölümde böl
+
+12
+00:03:56,915 --> 00:04:02,515
+Okay, I see we can express this area in terms of radian value.
+
+13
+00:04:04,195 --> 00:04:11,315
+Now we know this fact x squared plus y squared is equal to one coming from the Pythikorium theorem.
+
+14
+00:04:13,955 --> 00:04:22,275
+Now consider, so this is circular, unit circle, so let's talk about unit hyperbolic curve.
+
+15
+00:04:22,275 --> 00:04:33,475
+So x squared minus y squared is equal to 1. It's graph is something like that. In fact, let me stop this share. So let's share a new.
+
+16
+00:04:38,195 --> 00:04:46,115
+x squared minus y squared is equal to 1. This is unit hyperbolic curve. It's graph is something like that.
+
+17
+00:04:50,675 --> 00:04:55,675
+consists of two disjoint curves.
+
+18
+00:04:58,675 --> 00:05:03,675
+Okay, so this is the graph of hyperbolic functions.
+
+19
+00:05:06,612 --> 00:05:14,851
+I see all the difference between the algebraic equation of hyperbolic curve and the unit circle algebraic equation.
+
+20
+00:05:14,851 --> 00:05:20,371
+This minus, so this is hyperbolic, unit hyperbolic curve.
+
+21
+00:05:24,468 --> 00:05:30,468
+Now let's sketch unit circle.
+
+22
+00:05:33,468 --> 00:05:35,468
+So this is the unit circle.
+
+23
+00:05:36,468 --> 00:05:40,468
+X² plus y² is equal to 1.
+
+24
+00:05:40,468 --> 00:05:41,468
+Okay.
+
+25
+00:05:44,468 --> 00:05:48,468
+Now, so as you see we have this difference.
+
+26
+00:05:50,468 --> 00:05:51,468
+Minus,
+
+27
+00:05:51,468 --> 00:06:18,468
+bu
+
+28
+00:06:18,468 --> 00:06:29,368
+Apsis and ordinate of any point on the circle in terms of angle, in terms of radian value of angle sin t.
+
+29
+00:06:30,008 --> 00:06:34,587
+So as you see t is radian value, corresponds to degree.
+
+30
+00:06:35,027 --> 00:06:37,307
+Okay, angle, corresponds to angle.
+
+31
+00:06:38,648 --> 00:06:43,408
+Now, so this is the parametric equation of circle.
+
+32
+00:06:43,408 --> 00:06:48,328
+So what about the parametric equation of hyperbolic curve?
+
+33
+00:06:48,468 --> 00:06:52,347
+Can we find some parametric equations?
+
+34
+00:06:53,487 --> 00:07:00,287
+Okay, for which, so you have this equality.
+
+35
+00:07:00,287 --> 00:07:07,768
+But as you see, so if you substitute x into this algebraic equation and y,
+
+36
+00:07:08,427 --> 00:07:12,268
+so cosine squared plus sine squared t is equal to 1.
+
+37
+00:07:12,267 --> 00:07:19,447
+As you see, these parametric equations hold this algebraic equation of unit circle.
+
+38
+00:07:19,707 --> 00:07:24,847
+So what about parametric equations for this hyperbolic curve?
+
+39
+00:07:24,847 --> 00:07:36,167
+Okay, so if you can answer this question, so okay, you can construct the definition of hyperbolic curve in terms of some parametric equation.
+
+40
+00:07:36,387 --> 00:07:37,667
+Okay, hyperbolic function.
+
+41
+00:07:37,767 --> 00:07:40,927
+We call those algebraic equations hyperbolic functions.
+
+42
+00:07:40,927 --> 00:07:47,147
+But here, so we construct trigonometric functions, trigonometric cosine, trigonometric sine.
+
+43
+00:07:47,547 --> 00:07:55,947
+So when you try to construct parametric equations for this algebraic equation, you are going to obtain trigonometric hyperbolic functions.
+
+44
+00:07:56,127 --> 00:08:00,627
+Okay, let me write here, trigonometric hyperbolic functions.
+
+45
+00:08:00,627 --> 00:08:09,767
+Okay, now let me stop this share and let's share our main lecture note.
+
+46
+00:08:09,768 --> 00:08:10,568
+Tamam.
+
+47
+00:08:11,747 --> 00:08:15,928
+Now, so we use this notation.
+
+48
+00:08:16,247 --> 00:08:17,628
+So this is just notation.
+
+49
+00:08:18,328 --> 00:08:26,107
+So in order to, because of the similarity between trigonometric functions and hyperbolic functions,
+
+50
+00:08:26,107 --> 00:08:30,908
+we prefer to use this notation, cosine hyperbolic T.
+
+51
+00:08:31,247 --> 00:08:38,107
+But in fact, this is just definition in the language of computer science.
+
+52
+00:08:38,288 --> 00:08:39,148
+This means definition.
+
+53
+00:08:39,147 --> 00:08:47,468
+Okay, now so this is just definition. We define cosine hyperbolic t in terms of exponential function.
+
+54
+00:08:48,127 --> 00:08:59,267
+So, exponential t plus exponential minus t over 2 and y coordinates on this curve in terms of exponential function in this way.
+
+55
+00:08:59,267 --> 00:09:02,747
+Ok, t minus, t over 2.
+
+56
+00:09:02,947 --> 00:09:04,907
+Bakın, şimdi,
+
+57
+00:09:05,267 --> 00:09:06,427
+when you substitute
+
+58
+00:09:06,427 --> 00:09:08,927
+this x and y
+
+59
+00:09:08,927 --> 00:09:10,487
+in terms of t
+
+60
+00:09:10,487 --> 00:09:12,467
+into this algebraic
+
+61
+00:09:12,467 --> 00:09:14,787
+equation for hyperbolic
+
+62
+00:09:14,787 --> 00:09:16,467
+curve, ok, you can
+
+63
+00:09:16,467 --> 00:09:18,647
+verify these holes, these equations
+
+64
+00:09:18,647 --> 00:09:20,387
+holes, ok, when you substitute
+
+65
+00:09:20,387 --> 00:09:22,427
+these parametric equations.
+
+66
+00:09:23,796 --> 00:09:32,756
+Now, so we can define also other hyperbolic functions.
+
+67
+00:09:32,756 --> 00:09:35,716
+Hyperbolic cosine is defined in this way.
+
+68
+00:09:36,256 --> 00:09:39,256
+Hyperbolic sine defined in this way.
+
+69
+00:09:39,635 --> 00:09:45,896
+And similarly, we can define tangent hyperbolic x, hyperbolic x over cosine hyperbolic x.
+
+70
+00:09:46,095 --> 00:09:48,875
+So we obtain this function.
+
+71
+00:09:48,875 --> 00:09:53,575
+Okay, cotinent hyperbolic x in this way.
+
+72
+00:09:53,796 --> 00:10:00,715
+Hyperbolic secund, 1 over cosin hyperbolic x, 2 over exponatial x plus exponatial minus x.
+
+73
+00:10:01,156 --> 00:10:06,535
+Okay, those are hyperbolic functions, hyperbolic trigonometric hyperbolic functions.
+
+74
+00:10:06,696 --> 00:10:15,735
+Attention here, so this trigonometric identity is coming from the Pythichorium theorem on the unit circle.
+
+75
+00:10:15,735 --> 00:10:18,175
+This corresponds to unit circle.
+
+76
+00:10:19,615 --> 00:10:24,335
+And this corresponds to unit hyperbolic curve.
+
+77
+00:10:24,995 --> 00:10:26,656
+Okay, do not forget this.
+
+78
+00:10:27,035 --> 00:10:29,855
+So by substituting, by using this definition,
+
+79
+00:10:30,196 --> 00:10:39,336
+you can verify that this identical relation holds.
+
+80
+00:10:39,336 --> 00:10:44,075
+Okay, now as you see, we can verify this cosine hyperbolic square
+
+81
+00:10:44,075 --> 00:10:50,876
+x minus sin hyperbolic square x. Okay, so when you manipulate on this expression, when you simplify,
+
+82
+00:10:50,876 --> 00:10:57,355
+when you expand, you are going to obtain one. Actually, we can verify this. This is very important
+
+83
+00:11:00,156 --> 00:11:05,755
+identity for hyperbolic functions, which is very similar to Pythagorean theorem. Okay,
+
+84
+00:11:05,755 --> 00:11:10,415
+Ok, cosin squared x plus sin squared x is equal to 1.
+
+85
+00:11:12,575 --> 00:11:16,516
+Now, so we can define other fundamental identities.
+
+86
+00:11:16,775 --> 00:11:18,775
+For example, so by using this,
+
+87
+00:11:19,435 --> 00:11:23,855
+ok, we can show that 1 minus tangent hyperbolic square x
+
+88
+00:11:23,855 --> 00:11:26,435
+is equal to sin hyperbolic square x.
+
+89
+00:11:26,435 --> 00:11:30,055
+So we know that sin squared sin squared x
+
+90
+00:11:30,055 --> 00:11:34,055
+is equal to 1 plus tangent squared x.
+
+91
+00:11:34,055 --> 00:11:37,855
+So from trigonometric function theory, we can show this.
+
+92
+00:11:38,355 --> 00:11:40,235
+As you see, we have some similarity.
+
+93
+00:11:40,415 --> 00:11:43,215
+Only difference between trigonometric function theory
+
+94
+00:11:43,215 --> 00:11:46,575
+and 100 hyperbolic function theory is this minus.
+
+95
+00:11:46,715 --> 00:11:47,296
+Can you see that?
+
+96
+00:11:47,415 --> 00:11:53,516
+Here minus, we have plus.
+
+97
+00:11:54,075 --> 00:11:54,736
+Can you see that?
+
+98
+00:11:55,675 --> 00:12:00,655
+Now, so similarly, we can obtain this sine hyperbolic 2x.
+
+99
+00:12:00,656 --> 00:12:04,476
+2 sin hyperbolic x, cosin hyperbolic x.
+
+100
+00:12:05,236 --> 00:12:08,596
+Ok, by using this trigonometric eyedens, we can show that.
+
+101
+00:12:12,659 --> 00:12:28,099
+So, look at here, sin hyperbolic 2x, by using the definition of sin hyperbolic x, we call the sin hyperbolic a, is equal to exponential a minus exponential minus a over 2, by using this definition.
+
+102
+00:12:28,739 --> 00:12:39,739
+So, we can show that this is identical to this. In fact, this is the product of sin hyperbolic x, cosin hyperbolic x, and 2. Can you see that?
+
+103
+00:12:39,739 --> 00:13:02,759
+So you don't need to memorize everything. I think it is sufficient to memorize this cosin hyperbolic a and cosin hyperbolic a. Exponation a plus exponential minus a over 2. So all trigonometric hyperbolic functions are defined based on these fundamental definitions. Okay?
+
+104
+00:13:11,827 --> 00:13:12,827
+Şimdi, bu yukarıda, bu yukarıda, bu yukarıda, bu yukarıda, bu yukarıda, bu yukarıda, bu yukarıda, bu yukarıda, bu yukarıda, bu yukarıda, bu yukarıda, bu yukarıda, bu yukarıda, bu yukarıda, bu yukarıda, bu yukarıda, bu yukarıda, bu yukarıda, bu yukarıda, bu yukarıda, bu yukarıda, bu yukarıda, bu yukarıda, bu yukarıda, bu yukarıda, bu yukarıda, bu yukarıda, bu yukarıda, bu yukarıda, bu yukarıda, bu yukarıda, bu yukarıda, bu yukarıda, bu yukarıda, bu yukarıda, bu yukarıda, bu yukarıda, bu yukarıda, bu yukarıda, bu yukarıda, bu yukarıda, bu yukarıda, bu yukarıda, bu yukarıda, bu yukarıda, bu yukarıda, bu yukarıda, bu yukarıda, bu yukarıda, bu yukarıda, bu yukarıda, bu yukarıda, bu yukarıda, bu yukarıda, bu yukarıda, bu yukarıda, bu yukarıda, bu yukarıda, bu yukarıda, bu yukarıda, bu yukarıda, bu yukarıda, bu yukarıda, bu yukarıda, bu yukarıda, bu yukarıda, bu yukarıda, bu yukarıda, bu yukarıda, bu yukarıda, bu yukarıda, bu yukarıda, bu yukarıda, bu yukarı
+
+105
+00:13:41,827 --> 00:13:49,508
+at the structure of sin hyperbolic a so and you see when you substitute minus a here so we can see
+
+106
+00:13:49,508 --> 00:13:58,067
+that this is odd function f of minus x is equal to minus f of x so we can see this and similarly
+
+107
+00:13:58,067 --> 00:14:06,307
+tangent hyperbolic x is also odd function by using the definition of tangent hyperbolic x
+
+108
+00:14:06,307 --> 00:14:13,048
+tanjent hyperbolic x is equal to sine hyperbolic x over cosine hyperbolic x.
+
+109
+00:14:13,207 --> 00:14:20,027
+So by using this even odd case, we can see that tanjent hyperbolic x is odd function.
+
+110
+00:14:20,427 --> 00:14:20,607
+Okay.
+
+111
+00:14:20,927 --> 00:14:26,827
+Also, by using those basic definitions, you can prove those identities are true.
+
+112
+00:14:27,067 --> 00:14:27,207
+Okay.
+
+113
+00:14:28,488 --> 00:14:35,307
+Now, by using definition of tanjent cosine hyperbolic x, okay, you can prove this again.
+
+114
+00:14:36,307 --> 00:14:41,307
+Bu, x'y'y'ye kadar yüksek,
+
+115
+00:14:41,307 --> 00:14:50,307
+ve 2'ye kadar yüksek,
+
+116
+00:14:54,292 --> 00:15:06,292
+So, look at the case of addition formula for the trigonometric function. cos cos a cos b minus sin a sin b.
+
+117
+00:15:06,292 --> 00:15:12,611
+Only difference between this addition formula and this addition formula is minus, can you see that? Plus.
+
+118
+00:15:13,411 --> 00:15:21,171
+Okay, so there is no difference between in this addition formula and in this addition formula.
+
+119
+00:15:21,171 --> 00:15:27,652
+ok, sin A, cos B, plus cos A, times sin B.
+
+120
+00:15:28,531 --> 00:15:33,571
+Ok, now, ok, this is the same, but what about this?
+
+121
+00:15:33,691 --> 00:15:46,091
+So, in the case of trigonometric functions, so we have this, cos x, not hyperbolic, cos 2x is equal to cos square x minus sin square x.
+
+122
+00:15:46,171 --> 00:15:48,271
+Can you see that? This is plus, this is minus.
+
+123
+00:15:48,271 --> 00:15:56,832
+Okay, let's introduce definition of, let's introduce derivation of hyperbolic functions.
+
+124
+00:15:57,871 --> 00:16:06,792
+First of all, okay, look at, look at the structure of cosine hyperbolic x.
+
+125
+00:16:07,391 --> 00:16:09,911
+Now, cosine hyperbolic x.
+
+126
+00:16:13,427 --> 00:16:29,427
+So, suppose that you forget the definition of cosine hyperbolic x and sine hyperbolic x. You can verify. Okay, we know this. For example, suppose that I forget the structure definition of
+
+127
+00:16:30,836 --> 00:16:54,135
+cosin hyperbolic. So what is this? We don't know. What we know is x² minus y² is equal to 1. So this is the algebraic equation of hyperbolic curve. Now, cosin hyperbolic, let me write here t, so exponential t minus, let's substitute this, so this is a mistake, this is not true,
+
+128
+00:16:54,135 --> 00:17:01,375
+sin hyperbolic t, exponential t, plus, exponential minus t, over 2.
+
+129
+00:17:01,475 --> 00:17:05,715
+So, when you substitute this, generally students confuse this, okay?
+
+130
+00:17:06,075 --> 00:17:13,736
+So, when you substitute this algebraic equations, parametric equations, into these algebraic equations,
+
+131
+00:17:14,016 --> 00:17:16,056
+okay, you are going to obtain some contradiction.
+
+132
+00:17:16,715 --> 00:17:19,855
+So, that's why we change their position, okay?
+
+133
+00:17:19,856 --> 00:17:40,575
+So this is the definition of cosine hyperbolic t and sine hyperbolic t. Okay, we will replace x with t. Okay, now, so when you substitute this, if you derivate with respect to x, let me erase this part.
+
+134
+00:17:46,867 --> 00:17:48,867
+Ok, if you derivate
+
+135
+00:17:48,867 --> 00:17:52,867
+exp x minus exp x
+
+136
+00:17:52,867 --> 00:17:58,867
+plus exp x over 2
+
+137
+00:17:58,867 --> 00:18:02,867
+derivation of this with respect to x, exp x minus
+
+138
+00:18:02,867 --> 00:18:06,867
+exp x over 2, and you see this is
+
+139
+00:18:06,867 --> 00:18:10,867
+sin hyperbolic x. And similarly
+
+140
+00:18:10,867 --> 00:18:14,867
+so when you derivate exp x minus
+
+141
+00:18:14,867 --> 00:18:22,268
+x over 2. So this is the sin hyperbolic x with respect to x. Now, so this is the
+
+142
+00:18:22,268 --> 00:18:32,167
+x plus x over 2, which is cos hyperbolic x. Can you see that? So this is very similar
+
+143
+00:18:32,167 --> 00:18:38,867
+to derivation of trigonometric functions. Now, similarly, we can obtain derivation of
+
+144
+00:18:38,867 --> 00:18:42,867
+x as sin x.
+
+145
+00:18:42,867 --> 00:18:52,867
+Ok, so this is equivalent to 1 minus sin x is 1 minus tan x.
+
+146
+00:18:52,867 --> 00:18:59,867
+Ok, so only difference between trigonometric functions and hyperbolic functions is minus.
+
+147
+00:18:59,867 --> 00:19:02,548
+Şimdi cotingen hyperbolic x,
+
+148
+00:19:02,548 --> 00:19:03,528
+we have this.
+
+149
+00:19:05,268 --> 00:19:05,948
+Okay,
+
+150
+00:19:06,567 --> 00:19:07,787
+we have this minus.
+
+151
+00:19:07,948 --> 00:19:08,567
+Can you see that?
+
+152
+00:19:08,948 --> 00:19:09,887
+You can obtain that.
+
+153
+00:19:09,948 --> 00:19:11,128
+This is 1 over
+
+154
+00:19:11,128 --> 00:19:14,048
+1 over cosin hyperbolic
+
+155
+00:19:14,048 --> 00:19:14,867
+x.
+
+156
+00:19:15,007 --> 00:19:16,287
+When you derivate this
+
+157
+00:19:16,287 --> 00:19:17,687
+by the quotient rule,
+
+158
+00:19:18,207 --> 00:19:19,787
+okay, by quotient rule,
+
+159
+00:19:20,388 --> 00:19:22,448
+by the quotient rule,
+
+160
+00:19:23,287 --> 00:19:24,247
+so you are going to obtain
+
+161
+00:19:24,247 --> 00:19:25,687
+this expression minus
+
+162
+00:19:25,687 --> 00:19:28,048
+second hyperbolic x
+
+163
+00:19:28,048 --> 00:19:34,207
+x times hyperbolic x. Similarly, this is 1 over sin hyperbolic x.
+
+164
+00:19:34,207 --> 00:19:39,007
+When you derivate this by using quotient rule, you are going to obtain this expression.
+
+165
+00:19:39,007 --> 00:19:48,687
+OK, you don't need to memorize everything. OK, let me talk about inverse of hyperbolic x.
+
+166
+00:19:53,844 --> 00:20:03,844
+So in order to talk about inverse of some functions, that function must be one to one and onto.
+
+167
+00:20:07,380 --> 00:20:14,259
+Okay, now let's take y is equal to cosine hyperbolic x.
+
+168
+00:20:15,539 --> 00:20:23,779
+But we have this part, attention here, so this is the exponential x plus exponential minus x over 2.
+
+169
+00:20:25,220 --> 00:20:33,060
+Okay, now so we ignore other parts, we constrain ourselves to some local parts of cosine hyperbolic x.
+
+170
+00:20:33,060 --> 00:20:37,060
+bu bölümünü alın.
+
+171
+00:20:37,060 --> 00:20:41,060
+Bu bölümünü alın.
+
+172
+00:20:45,811 --> 00:21:04,811
+but as you see we have this expression. So this is the range when you take the orthogonal projection of this graph. This is the range image image of domain. Okay, now we have this
+
+173
+00:21:10,612 --> 00:21:34,671
+So that's why we can talk about inverse of, so this is, let me use R cosine, R cosine hyperbolic x, okay, y is equal to R cosine hyperbolic x, when you apply cosine hyperbolic function to both sides of this equality, cosine hyperbolic y is equal to x, okay, so we are going to obtain this part.
+
+174
+00:21:34,671 --> 00:21:55,671
+So as you see, cosine will be considered this function, cosine hyperbolic x, so from 1 to infinite, sorry, from 0, from 0 to infinite.
+
+175
+00:22:02,836 --> 00:22:28,836
+1 to infinite. So as you see, this is 1 to 1 and on top. This is 1 to 1. Let me write the cosine hyperbolic. There is no x here. So taking this x, this is y is equal to cosine hyperbolic x. This is 1 to 1 and on top. So this function has inverse, which is called r cosine.
+
+176
+00:22:28,836 --> 00:22:40,895
+R-cosine, R-cosine hyperbolic function, from, from, one, infinite, two,
+
+177
+00:22:44,500 --> 00:22:46,500
+0, ok?
+
+178
+00:22:50,771 --> 00:23:01,771
+Look at the graph of this function. Look at the graph of this function. Okay? We know that the graph of invertible function
+
+179
+00:23:04,771 --> 00:23:19,771
+results in the graph of its inverse when you take its symmetry about y, x line. Okay? If you take the symmetry of f of x with respect to y, x line, you are going to obtain the graph of its inverse. Okay?
+
+180
+00:23:20,771 --> 00:23:47,612
+Now, similarly, you can define arcsin hyperbolic x. This is arcsin hyperbolic x. So, when you apply both sides of this equality, when you apply sin hyperbolic function to both sides of this equality, you are going to obtain this identical relation, logical equivalence. Okay. Now, similarly, tangent hyperbolic x. Yeah.
+
+181
+00:23:54,228 --> 00:24:01,427
+Okay, so let me talk about derivation of arcsin hyperbolic x.
+
+182
+00:24:02,547 --> 00:24:10,947
+So consider y is equal to arcsin hyperbolic x. So this is arcsin hyperbolic x.
+
+183
+00:24:10,947 --> 00:24:26,467
+y is equal to, so this is y is equal to arcsin hyperbolic x, equivalent to x is sin hyperbolic y.
+
+184
+00:24:26,467 --> 00:24:31,268
+When we apply sin hyperbolic function to both sides of this equality, we are going to obtain
+
+185
+00:24:31,268 --> 00:24:40,787
+right hand side of this logical symbol. Okay, now so we have this x is equal to sin hyperbolic y,
+
+186
+00:24:40,787 --> 00:24:48,387
+So this is explanation y minus explanation minus y by the definition of sine hyperbolic function over 2.
+
+187
+00:24:48,907 --> 00:24:55,167
+So if you express y in terms of x, okay, you are going to obtain its inverse.
+
+188
+00:24:55,507 --> 00:24:58,607
+Okay, now y is manipulating on this expression.
+
+189
+00:24:59,167 --> 00:25:02,687
+So as you see, we have this algebraic equations.
+
+190
+00:25:03,327 --> 00:25:06,667
+Explanation y minus 2x minus explanation minus y.
+
+191
+00:25:06,667 --> 00:25:22,587
+As you see, if you take square of both sides of this equality, so square of left-hand side here and square of zero, this, okay.
+
+192
+00:25:26,259 --> 00:25:39,399
+Now as you see we have some quadratic expression. So this is quadratic expression. So how can we solve, how can we find out root of this quadratic expression? So we know this.
+
+193
+00:25:39,399 --> 00:25:47,259
+So let me write this A x squared plus B x plus C is equal to zero.
+
+194
+00:25:48,019 --> 00:25:53,639
+So first of all, we construct discriminant for this quadratic equation.
+
+195
+00:25:54,079 --> 00:25:59,899
+So radical of B squared minus four times A c.
+
+196
+00:26:00,120 --> 00:26:01,559
+We know this from high school.
+
+197
+00:26:01,559 --> 00:26:06,480
+If this, okay, sorry, sorry, sorry.
+
+198
+00:26:07,300 --> 00:26:08,859
+So there is no radical here.
+
+199
+00:26:09,399 --> 00:26:10,399
+Şimdi bu kısımda bu kısımda bu kısımda bu kısımda bu kısımda bu kısımda bu kısımda bu kısımda bu kısımda bu kısımda bu kısımda bu kısımda bu kısımda bu kısımda bu kısımda bu kısımda bu kısımda bu kısımda bu kısımda bu kısımda bu kısımda bu kısımda bu kısımda bu kısımda bu kısımda bu kısımda bu kısımda bu kısımda bu kısımda bu kısımda bu kısımda bu kısımda bu kısımda bu kısımda bu kısımda bu kısımda bu kısımda bu kısımda bu kısımda bu kısımda bu kısımda bu kısımda bu kısımda bu kısımda bu kısımda bu kısımda bu kısımda bu kısımda bu kısımda bu kısımda bu kısımda bu kısımda bu kısımda bu kısımda bu kısımda bu kısımda bu kısımda bu kısımda bu kısımda bu kısımda bu kısımda bu kısımda bu kısımda bu kısımda bu kısımda bu kısımda bu kısımda bu kısımda bu kısımda bu kısımda bu kısımda bu kısımda bu kısımda bu kısımda bu kısımda bu kısımda bu kısımda bu kısımda bu kısımda bu kısımda bu kısımda bu kısımda bu kısımda bu kısımda bu kısımda bu kısımda bu kısımda bu kısımda bu kıs
+
+200
+00:26:39,399 --> 00:26:52,599
+We have two real roots. Minus B plus minus radical discriminant over 2A.
+
+201
+00:26:52,599 --> 00:27:01,800
+Ok? Now by using this formula about roots, ok, we are going to obtain this.
+
+202
+00:27:01,800 --> 00:27:02,800
+Y'e y' y'e y'e y
+
+203
+00:27:31,800 --> 00:27:43,300
+algebraik equation. This is x plus minus this. Okay. Now we have positive root. So we need to
+
+204
+00:27:43,300 --> 00:27:51,000
+choose some positive root because of this domain and call domain. Okay. Look at this call domain
+
+205
+00:27:51,000 --> 00:27:55,099
+and domains. Taking into account this fact. Sorry, this fact.
+
+206
+00:28:04,980 --> 00:28:08,980
+Okay, look at that. Because of this fact, we need to choose positive fruit.
+
+207
+00:28:10,420 --> 00:28:15,459
+Now, so we need to express y in terms of x. So we have this.
+
+208
+00:28:17,299 --> 00:28:20,659
+Actually, we can express y in terms of x.
+
+209
+00:28:22,500 --> 00:28:29,059
+Now, as you see, this is the definition of arcsine hyperbolic x.
+
+210
+00:28:29,699 --> 00:28:34,099
+Arcsine hyperbolic x in terms of logarithmic function here.
+
+211
+00:28:34,099 --> 00:28:39,619
+okay look at here sine hyperbolic x given by this equality
+
+212
+00:28:42,259 --> 00:28:48,819
+arc sine hyperbolic x is given by this we cannot choose negative roots or negative one x minus we
+
+213
+00:28:48,819 --> 00:28:57,619
+will choose x plus discriminant x plus radical of discriminant okay attention here and similarly
+
+214
+00:28:57,619 --> 00:29:01,379
+bu konu, yöntem diğer konu.
+
+215
+00:29:01,379 --> 00:29:06,700
+Ok, as you see, we have logaritmic function here.
+
+216
+00:29:06,700 --> 00:29:10,700
+So we have this relation.
+
+217
+00:29:12,819 --> 00:29:21,819
+ok, by using this and this in terms of logarithmic function, you can define arcsine hyperbolic x in terms of
+
+218
+00:29:21,819 --> 00:29:30,819
+ok, logarithmic function by using these identical relations. ok, look at here.
+
+219
+00:29:30,819 --> 00:29:39,819
+it is sufficient to know this one. but generally in the exam, in the exam,
+
+220
+00:29:39,819 --> 00:29:46,720
+questions about hyperbolic functions are simple, not so complicated, more complicated than this.
+
+221
+00:29:47,720 --> 00:29:53,939
+Dikkat edin arkadaşlar, hyperbolic fonksiyonların sadece dediğimiz gibi o birkaç tanesini çıkartmayı bilmeniz yeterli.
+
+222
+00:29:54,879 --> 00:29:57,459
+Şunu bilin, kosinüs hyperbolic x'i bilin.
+
+223
+00:30:00,119 --> 00:30:03,699
+Unutursunuz diye, bir de şunu arkadaşlar unutabilirsiniz.
+
+224
+00:30:04,439 --> 00:30:08,360
+Bunu bilin, zaten kuadratik denklemin kökünü bulmayla alakalı.
+
+225
+00:30:08,359 --> 00:30:15,259
+hemen bulabilirsiniz burada karesini alıp şurada işler dışlar yapıp şu kısımda 30 saniyenizi almaz.
+
+226
+00:30:15,919 --> 00:30:19,959
+Yaptığınızda şu formülü biliyorsanız ki siz lisede öğrendiniz diye biliyorum ben.
+
+227
+00:30:20,979 --> 00:30:23,079
+Şu an çıkartılmadı galiba müfredattan bu.
+
+228
+00:30:23,659 --> 00:30:26,359
+İkinci derecelerin denklemlerin çözümleri var diye hatırlıyorum.
+
+229
+00:30:26,559 --> 00:30:28,899
+Evet bu şekilde bulabilirsiniz arkadaşlar.
+
+230
+00:30:29,159 --> 00:30:30,499
+Oradan hemen neyi bulacaksınız?
+
+231
+00:30:30,499 --> 00:30:33,499
+Ters fonksiyonun kuralını belirlemiş olacaksınız.
+
+232
+00:30:34,139 --> 00:30:35,659
+Logaritmik fonksiyon cinsinden.
+
+233
+00:30:35,659 --> 00:31:03,659
+Tamam mı? Kosinüs'te, kosinüs'te de arkadaşlar tek farkı burası sinüs'te artı iken kosinüs'te eksi oluyor. Tek farkı o. Tanjant, hiperbolik, x'te zaten ikisinin oranını şeklinde alacak olursanız arkadaşlar oranlı değil de nasıl olur? Evet oradan gelecek tanjanttan. Yine düzenleme yapacaksınız biraz doğrudan gelmeyecek. Bu şekilde gelir arkadaşlar. Tamam mı?
+
+234
+00:31:03,659 --> 00:31:13,139
+Evet, geçiyorum arkadaşlar buraları. Türevinden bahsedelim. Let me talk about derivation of inverse trigonometry, inverse hyperbolic functions.
+
+235
+00:31:21,652 --> 00:31:26,831
+Evet, let's obtain derivation of arc sin hyperbolic x.
+
+236
+00:31:27,331 --> 00:31:34,032
+So, we know when you apply hyperbolic function, sin hyperbolic function, both sides of this equality, we have this.
+
+237
+00:31:34,572 --> 00:31:37,032
+So, we know that y depends on x.
+
+238
+00:31:37,131 --> 00:31:43,572
+In this case, at the left-hand side of this logical symbol, x is independent variable, y is independent variable.
+
+239
+00:31:43,992 --> 00:31:49,412
+We are looking for dy over dx.
+
+240
+00:31:49,412 --> 00:31:50,412
+Ok?
+
+241
+00:31:50,412 --> 00:31:52,412
+Önce de left-hand side.
+
+242
+00:31:52,412 --> 00:31:56,412
+Now, but first of all, we prefer to use right-hand side.
+
+243
+00:31:56,412 --> 00:31:59,412
+X is equal to sine hyperbolic y.
+
+244
+00:31:59,412 --> 00:32:04,412
+When you derivate both sides of this equality with respect to x, derivation of x with respect
+
+245
+00:32:04,412 --> 00:32:10,412
+to x, 1, derivation of sine hyperbolic y, taking into account the fact that y depends
+
+246
+00:32:10,412 --> 00:32:16,412
+on x, derivation of sine hyperbolic y, cosine hyperbolic y times, we know that y depends
+
+247
+00:32:16,412 --> 00:32:18,412
+on x, that's y, y-chain rule.
+
+248
+00:32:18,411 --> 00:32:21,491
+Şimdi, dy over dx.
+
+249
+00:32:21,931 --> 00:32:23,332
+Now, dy over dx
+
+250
+00:32:23,332 --> 00:32:25,931
+is equal to 1 over cosine hyperbolic y.
+
+251
+00:32:26,271 --> 00:32:27,131
+Now, we know
+
+252
+00:32:27,131 --> 00:32:29,531
+cosine hyperbolic y
+
+253
+00:32:29,531 --> 00:32:30,431
+in terms of
+
+254
+00:32:30,431 --> 00:32:32,471
+sine hyperbolic y.
+
+255
+00:32:32,711 --> 00:32:34,071
+So, recall this
+
+256
+00:32:34,071 --> 00:32:36,311
+cosine hyperbolic square x
+
+257
+00:32:36,311 --> 00:32:37,332
+minus sine
+
+258
+00:32:37,332 --> 00:32:39,872
+hyperbolic square x
+
+259
+00:32:39,872 --> 00:32:41,012
+is equal to 1.
+
+260
+00:32:42,931 --> 00:32:43,732
+Değil mi arkadaşlar?
+
+261
+00:32:44,372 --> 00:32:45,271
+Okay, look at here.
+
+262
+00:32:45,811 --> 00:32:47,691
+Now, so, as you see,
+
+263
+00:32:47,692 --> 00:32:54,652
+Y sin hyperbolic y sin hyperbolic y is equal to x look at here so as you see dy over dx
+
+264
+00:32:54,652 --> 00:33:02,431
+can be obtained in terms of x in this form 1 over square root of x square plus 1 so this is the
+
+265
+00:33:02,431 --> 00:33:10,131
+derivation of arc sine hyperbolic x derivation of arc sine hyperbolic x so we can extend this
+
+266
+00:33:10,131 --> 00:33:11,891
+arc sine
+
+267
+00:33:11,891 --> 00:33:13,711
+hyperbolic u
+
+268
+00:33:13,711 --> 00:33:16,151
+x derivation of this
+
+269
+00:33:16,151 --> 00:33:17,611
+with respect to x
+
+270
+00:33:17,611 --> 00:33:19,371
+u prime
+
+271
+00:33:19,371 --> 00:33:21,811
+x over
+
+272
+00:33:21,811 --> 00:33:23,871
+square root of u
+
+273
+00:33:23,871 --> 00:33:26,031
+square x
+
+274
+00:33:26,031 --> 00:33:27,511
+plus 1.
+
+275
+00:33:27,511 --> 00:33:29,511
+By chain rule we can obtain this.
+
+276
+00:33:29,732 --> 00:33:31,791
+Is there any question about this?
+
+277
+00:33:33,012 --> 00:33:34,152
+Soru soran var mı gençler?
+
+278
+00:33:42,932 --> 00:33:56,932
+Okay, in similar manner, you can obtain derivation of cosine, arc cosine hyperbolic x, arc tangent hyperbolic x, okay, arc secant hyperbolic x.
+
+279
+00:34:04,019 --> 00:34:12,499
+Evet. Tamam arkadaşlar. Şimdi L'Hospital kuralından bahsedelim. Let me talk about L'Hospital's rule.
+
+280
+00:34:24,179 --> 00:34:32,819
+Ok, given two functions f and g, which are differentiable on some open interval i containing a,
+
+281
+00:34:33,940 --> 00:34:41,020
+but such that g prime of x non-zero on i, whenever x is different from a.
+
+282
+00:34:41,479 --> 00:34:44,119
+But this is another condition.
+
+283
+00:34:45,259 --> 00:34:49,159
+As x goes to af of x, zero, as x goes to ag of x, zero.
+
+284
+00:34:49,339 --> 00:34:53,919
+But in that case, as you see, we have indeterminant form zero over zero.
+
+285
+00:34:54,179 --> 00:35:03,979
+This means that we can apply L'Hopital's rule to some limit problem whenever you have 0 over 0 in the terminat form.
+
+286
+00:35:03,979 --> 00:35:11,559
+Now in this case, left-hand side limit problem is identical to right-hand side limit problem.
+
+287
+00:35:11,559 --> 00:35:14,739
+Now the ratio of
+
+288
+00:35:14,739 --> 00:35:17,079
+instance rate of change
+
+289
+00:35:17,079 --> 00:35:19,219
+of f and g
+
+290
+00:35:19,219 --> 00:35:20,399
+as x goes to a
+
+291
+00:35:20,399 --> 00:35:22,279
+results in the
+
+292
+00:35:22,279 --> 00:35:25,079
+limit of ratio of
+
+293
+00:35:25,079 --> 00:35:26,379
+functions. Dikkat edin.
+
+294
+00:35:26,459 --> 00:35:28,359
+Fonksiyonların oranının limiti
+
+295
+00:35:28,359 --> 00:35:30,979
+fonksiyonların değişim oranlarının
+
+296
+00:35:30,979 --> 00:35:32,579
+limitine eşit.
+
+297
+00:35:32,579 --> 00:35:34,839
+Değişim oranlarının oranının limitine
+
+298
+00:35:34,839 --> 00:35:36,099
+eşit oluyor arkadaşlar.
+
+299
+00:35:36,599 --> 00:35:37,959
+Ona dikkat edin. L'Hôpital bunu
+
+300
+00:35:37,959 --> 00:35:40,559
+söylüyor bize. Ama sıfır bölü sıfır
+
+301
+00:35:40,559 --> 00:35:42,719
+belirsizliğini yakalamanız lazım.
+
+302
+00:35:43,259 --> 00:35:45,019
+Aksi durumda yapamazsınız.
+
+303
+00:35:45,279 --> 00:35:46,739
+Tamam mı arkadaşlar? Mesela
+
+304
+00:35:46,739 --> 00:35:48,719
+hemen basit bir örnek olayı daha da
+
+305
+00:35:48,719 --> 00:35:50,099
+iyi anlamanız için.
+
+306
+00:35:51,739 --> 00:35:52,819
+Okay, let me talk about
+
+307
+00:35:52,819 --> 00:35:54,419
+this simple example.
+
+308
+00:35:54,919 --> 00:35:56,399
+So consider this function
+
+309
+00:35:56,399 --> 00:35:58,379
+f of x given by this.
+
+310
+00:35:58,499 --> 00:36:00,019
+Let's suppose that this is the
+
+311
+00:36:00,019 --> 00:36:02,799
+function f of x. Let's suppose
+
+312
+00:36:02,799 --> 00:36:04,779
+that this is the function g of x.
+
+313
+00:36:05,339 --> 00:36:05,739
+Now
+
+314
+00:36:05,739 --> 00:36:08,339
+look at this
+
+315
+00:36:08,339 --> 00:36:19,419
+f of a is equal to g of a is equal to 0, f prime of x is 4, g prime of x is 2 according to this rule.
+
+316
+00:36:20,039 --> 00:36:26,219
+Now look at the quotient f over g, f of x over g of x.
+
+317
+00:36:26,319 --> 00:36:28,039
+So as you see we have this.
+
+318
+00:36:28,039 --> 00:36:37,120
+In fact so we have this is the instantane rate of change of f and this is the instantane rate of change of g.
+
+319
+00:36:37,120 --> 00:36:39,019
+ok 4 over 2
+
+320
+00:36:39,019 --> 00:36:40,739
+but this is nothing else than
+
+321
+00:36:40,739 --> 00:36:42,959
+derivation of this and derivation of this
+
+322
+00:36:42,959 --> 00:36:43,720
+can you see that
+
+323
+00:36:43,720 --> 00:36:47,980
+now limit as x goes to a
+
+324
+00:36:47,980 --> 00:36:49,760
+as x goes to a
+
+325
+00:36:49,760 --> 00:36:52,519
+so by using L'Hôpital's rule
+
+326
+00:36:52,519 --> 00:36:54,200
+ok we are going to obtain
+
+327
+00:36:54,200 --> 00:36:56,099
+same result the answer is 2
+
+328
+00:36:56,099 --> 00:36:58,019
+but if you substitute
+
+329
+00:36:58,019 --> 00:37:00,019
+directly here at the left hand side
+
+330
+00:37:00,019 --> 00:37:02,560
+f of a over g of a
+
+331
+00:37:02,560 --> 00:37:03,959
+0 over 0
+
+332
+00:37:03,959 --> 00:37:05,140
+because of this fact
+
+333
+00:37:05,140 --> 00:37:06,879
+ok because of this fact
+
+334
+00:37:11,380 --> 00:37:39,979
+Now let's see its proof. Let's see its proof. So its proof is very simple in fact. So let's give some any function yf of x. So if you derivate this function at the point A, so you are going to obtain the slope of this tangent line. Now let's see other function g of x.
+
+335
+00:37:41,380 --> 00:37:46,560
+So, when you derivate this function g of x at the point a, you are going to obtain instant
+
+336
+00:37:46,560 --> 00:37:51,479
+standard rate of change of a, which is the slope of tangent here. Can you see that?
+
+337
+00:37:52,760 --> 00:38:08,039
+Now, f of x over g of x approximates, okay, so approximates, we have this f prime of a times x minus a, g prime of a times x minus a,
+
+338
+00:38:08,039 --> 00:38:20,439
+by using linearization so we can write this. We call the linearization topic. Did we talk about linearization before? I think we talked about linearization. Last week.
+
+339
+00:38:22,140 --> 00:38:26,040
+Keçen hafta linearleştirmeden bahsetmiştik değil mi arkadaşlar? Evet.
+
+340
+00:38:26,040 --> 00:38:36,280
+Evet. Şimdi bakın fx bölü gx oranına yakın sıyan yaklaşık olarak orada yaklaşık sembolü var. This is approximation symbol not equality symbol.
+
+341
+00:38:36,280 --> 00:39:00,540
+So by using linearization approximation method, so we can write this, as you see this is simplified, we have this, now if you take the limit, limit both sides of this equality, we are going to obtain this, okay, now, so this is very nice proof, by using linearization approach, so we can prove this, okay.
+
+342
+00:39:04,275 --> 00:39:27,775
+Now look at these simple equations. So as x goes to 1, so denominator is approaching 0, denominator is approaching 0, let me use different color. So this is approaching 0, this is approaching 0.
+
+343
+00:39:27,775 --> 00:39:48,595
+So, that's why we can apply L'Hospital's rule. Limit as x goes to 1, we need to derivate nominator, derivation of nominator 3x squared plus 2x minus 2 over derivation of denominator, derivation of x minus 1, 1.
+
+344
+00:39:48,595 --> 00:39:59,255
+So, as x goes to 1, as you see, there is no sum factor resulting in indeterminate form, as you see, the answer is 3.
+
+345
+00:39:59,415 --> 00:40:06,975
+Because of this fact, look at here, so the factor resulting in indeterminate form, x minus a, here.
+
+346
+00:40:07,155 --> 00:40:13,755
+Can you see that? So, those are 65. The answer is 3.
+
+347
+00:40:13,755 --> 00:40:14,755
+ve bu.
+
+348
+00:40:14,755 --> 00:40:23,075
+And similarly, as x goes to 0, as you see, we have indeterminat form, 0 over 0.
+
+349
+00:40:23,075 --> 00:40:29,755
+Now limit as x goes to 0 by the L'Hospital's rule derivational nominator.
+
+350
+00:40:34,324 --> 00:40:47,603
+over derivation of denominator. Okay, if you do this algebraic operations, you are going to obtain 1 over 2. Okay?
+
+351
+00:40:51,251 --> 00:40:54,371
+Ok, let me recall some equivalent limits.
+
+352
+00:40:55,091 --> 00:41:00,172
+So, look at here. Limit as x goes to 0 sin ax over bx.
+
+353
+00:41:00,251 --> 00:41:03,651
+So, we know this, how to compute. We know how to compute this limit.
+
+354
+00:41:03,771 --> 00:41:07,272
+And the answer is a over b. But by using L'Hopital's rule,
+
+355
+00:41:07,852 --> 00:41:11,451
+you can directly see that its limit value is a over b.
+
+356
+00:41:11,451 --> 00:41:16,191
+And similarly, as x goes to 0 arc sin ax over bx,
+
+357
+00:41:16,432 --> 00:41:20,251
+actually, again, we have indeterminant form 0 over 0.
+
+358
+00:41:20,251 --> 00:41:25,531
+L'Hôpital's rule, derivation of arcsin A'x,
+
+359
+00:41:25,832 --> 00:41:30,452
+so A over square root of 1 minus A'x square
+
+360
+00:41:30,452 --> 00:41:33,311
+over derivation of B'x, B.
+
+361
+00:41:33,871 --> 00:41:36,751
+So, okay, limit as x goes to 0 by L'Hôpital.
+
+362
+00:41:36,932 --> 00:41:39,491
+As x goes to 0, the answer is A over B.
+
+363
+00:41:39,671 --> 00:41:42,211
+We can directly see this, A over B.
+
+364
+00:41:42,551 --> 00:41:45,871
+And similarly, as you see, we have 0 over 0
+
+365
+00:41:45,871 --> 00:41:48,092
+in the terminal form by L'Hôpital's rule.
+
+366
+00:41:48,092 --> 00:41:53,772
+So, derivation of this and derivation of this and take as x goes to 0.
+
+367
+00:41:54,231 --> 00:41:56,811
+Now, actually, we have this.
+
+368
+00:41:57,231 --> 00:41:57,972
+The same as.
+
+369
+00:41:58,692 --> 00:42:00,972
+Okay, we have four equivalent limits.
+
+370
+00:42:01,531 --> 00:42:01,872
+Dikkat edin.
+
+371
+00:42:01,951 --> 00:42:03,432
+Bun dört de birbirine teyik.
+
+372
+00:42:03,512 --> 00:42:04,731
+Hepsi A bölü B'yi veriyor.
+
+373
+00:42:04,811 --> 00:42:05,991
+L'Hôpital'dan görebilirsiniz.
+
+374
+00:42:08,531 --> 00:42:14,671
+So, let me talk about other case for which we can apply L'Hôpital's rule.
+
+375
+00:42:14,671 --> 00:42:20,472
+So in this case as x goes to af of x goes to plus infinite or minus infinite.
+
+376
+00:42:20,771 --> 00:42:23,911
+Similarly g of x goes to plus infinite or minus infinite.
+
+377
+00:42:24,071 --> 00:42:26,731
+In that case we have indeterminant form.
+
+378
+00:42:27,251 --> 00:42:28,792
+Infinite over infinite.
+
+379
+00:42:29,612 --> 00:42:33,651
+So in that case again we have this equivalence.
+
+380
+00:42:34,332 --> 00:42:34,612
+Okay.
+
+381
+00:42:38,291 --> 00:42:44,651
+Now as you see there are only two cases for which we can apply L'Hôpital's rule.
+
+382
+00:42:44,772 --> 00:42:47,151
+Otherwise we cannot apply L'Hôpital's rule.
+
+383
+00:42:47,512 --> 00:42:53,091
+Dikkat edin sıfır bölü sıfır ve sonsuz bölü sonsuzda sadece L'Hôpital uygulayabilirsiniz.
+
+384
+00:42:53,611 --> 00:42:57,151
+Eğer bunu yakalayamamışsanız yoksa ona benzetmeye çalışırsınız.
+
+385
+00:42:57,312 --> 00:42:58,031
+Tamam mı gençler?
+
+386
+00:42:58,472 --> 00:42:59,231
+Buna dikkat edelim.
+
+387
+00:43:00,511 --> 00:43:02,771
+Okay and look at this simple example.
+
+388
+00:43:02,771 --> 00:43:04,531
+As x goes to infinite.
+
+389
+00:43:04,531 --> 00:43:11,531
+bu konuda bu konuda bu konuda bu konuda bu konuda
+
+390
+00:43:11,531 --> 00:43:14,531
+4 over 2 ok
+
+391
+00:43:14,531 --> 00:43:15,531
+2
+
+392
+00:43:15,531 --> 00:43:18,531
+ama bu konuda bu konuda bu konuda bu konuda
+
+393
+00:43:18,531 --> 00:43:20,531
+çünkü bu konuda 3 konuda
+
+394
+00:43:20,531 --> 00:43:22,531
+bu konuda 3 konuda
+
+395
+00:43:22,531 --> 00:43:24,531
+bu konuda konuda konuda
+
+396
+00:43:24,531 --> 00:43:26,531
+4 over 2 konuda
+
+397
+00:43:26,531 --> 00:43:28,531
+bu konuda 2 konuda
+
+398
+00:43:28,531 --> 00:43:30,531
+ama bu konuda
+
+399
+00:43:30,531 --> 00:43:35,531
+L'Hopita's rule is 2.
+
+400
+00:43:35,531 --> 00:43:38,531
+Şimdi bu simple equation.
+
+401
+00:43:38,531 --> 00:43:48,531
+So as x goes to pi over 2 from left hand side, 1 plus tangent x over second x.
+
+402
+00:43:48,531 --> 00:43:56,531
+Now in that case again we have a tangent look at here and here we have plus
+
+403
+00:43:56,531 --> 00:44:01,531
+infinite or minus infinite. So let me sketch this graph, graph of tangent.
+
+404
+00:44:01,531 --> 00:44:08,531
+Şimdi bu
+
+405
+00:44:31,531 --> 00:44:32,531
+Şimdi x'ı yukarı ile yukarı ile yukarı ile yukarı ile yukarı ile yukarı ile yukarı ile yukarı ile yukarı ile yukarı ile yukarı ile yukarı ile yukarı ile yukarı ile yukarı ile yukarı ile yukarı ile yukarı ile yukarı ile yukarı ile yukarı ile yukarı ile yukarı ile yukarı ile yukarı ile yukarı ile yukarı ile yukarı ile yukarı ile yukarı ile yukarı ile yukarı ile yukarı ile yukarı ile yukarı ile yukarı ile yukarı ile yukarı ile yukarı ile yukarı ile yukarı ile yukarı ile yukarı ile yukarı ile yukarı ile yukarı ile yukarı ile yukarı ile yukarı ile yukarı ile yukarı ile yukarı ile yukarı ile yukarı ile yukarı ile yukarı ile yukarı ile yukarı ile yukarı ile yukarı ile yukarı ile yukarı ile yukarı ile yukarı ile yukarı ile yukarı ile yukarı ile yukarı ile yukarı ile yukarı ile yukarı ile yukarı ile yukarı ile yukarı ile yukarı ile yukarı ile yukarı ile yukarı ile yukarı ile yukarı ile yukarı ile yukarı ile yukarı ile yukarı ile yukarı ile yukarı ile yukarı ile yukarı ile yukarı ile yukarı ile yukarı ile yukarı ile yukarı ile yukarı ile yukarı ile yukarı ile yukarı ile yukarı ile yukarı ile yukarı ile yukarı ile yukarı ile yukarı ile yukarı ile yukarı ile yukarı ile yukarı ile yukarı ile yukarı ile yukarı ile
+
+406
+00:44:49,460 --> 00:44:55,099
+Ok, so let me talk about other indeterminant forms.
+
+407
+00:44:55,279 --> 00:44:56,940
+Look at these indeterminant forms.
+
+408
+00:44:57,339 --> 00:45:00,699
+Zero times infinite, this is also indeterminant form.
+
+409
+00:45:00,819 --> 00:45:02,559
+Infinite minus infinite.
+
+410
+00:45:02,739 --> 00:45:09,720
+We can directly apply L'Hopita's rule to limits with this indeterminant form.
+
+411
+00:45:09,720 --> 00:45:18,300
+First of all, we need to manipulate on the rule of functions in order to obtain zero over zero or infinite over infinite.
+
+412
+00:45:18,300 --> 00:45:20,939
+Ok, so for example, this equation.
+
+413
+00:45:22,439 --> 00:45:34,659
+So as x goes to infinite, so we are going to obtain 0 times infinite in the time-in-art form.
+
+414
+00:45:35,000 --> 00:45:37,720
+First of all, we need to manipulate on this expression.
+
+415
+00:45:38,279 --> 00:45:44,919
+So we transport this x square, ok, here 1 over x square.
+
+416
+00:45:44,919 --> 00:45:48,039
+As x goes to infinity, this goes to 0.
+
+417
+00:45:48,339 --> 00:45:49,879
+Sin 0 goes to 0.
+
+418
+00:45:50,059 --> 00:45:52,099
+Actually, we are going to obtain 0 over 0.
+
+419
+00:45:52,239 --> 00:45:53,239
+This goes to 0.
+
+420
+00:45:53,739 --> 00:45:56,460
+So we have 0 over 0 in the terminant form.
+
+421
+00:45:57,180 --> 00:45:57,400
+Okay.
+
+422
+00:45:57,739 --> 00:46:01,419
+Now, so this means that we can apply L'Hopital's rule.
+
+423
+00:46:01,680 --> 00:46:03,599
+So we need to derivate denominator.
+
+424
+00:46:03,820 --> 00:46:06,599
+Derivation of sin 1 over 4x² here.
+
+425
+00:46:08,140 --> 00:46:08,379
+Okay.
+
+426
+00:46:08,479 --> 00:46:11,279
+Derivation of denominator 1 over x².
+
+427
+00:46:11,879 --> 00:46:12,900
+So we have this.
+
+428
+00:46:13,680 --> 00:46:13,919
+Okay.
+
+429
+00:46:13,919 --> 00:46:15,919
+Şimdi, bu kadar, şimdi,
+
+430
+00:46:15,919 --> 00:46:19,919
+ve bu,
+
+431
+00:46:19,919 --> 00:46:21,919
+bu,
+
+432
+00:46:21,919 --> 00:46:23,919
+ve bu,
+
+433
+00:46:23,919 --> 00:46:41,919
+bu,
+
+434
+00:46:41,919 --> 00:46:45,519
+has infinite minus infinite indeterminat form.
+
+435
+00:46:45,519 --> 00:46:48,519
+But in fact, we can apply the usual method.
+
+436
+00:46:48,519 --> 00:46:51,720
+We can apply conjugate method to this problem,
+
+437
+00:46:51,720 --> 00:46:59,120
+but we can take x common factor here
+
+438
+00:46:59,120 --> 00:47:01,719
+without applying conjugate method.
+
+439
+00:47:01,719 --> 00:47:03,719
+We can apply L'Hôpital's Rule,
+
+440
+00:47:03,719 --> 00:47:06,519
+but for this we need to manipulate on this expression.
+
+441
+00:47:06,519 --> 00:47:10,120
+But in this case, so we take common factor x here.
+
+442
+00:47:10,120 --> 00:47:14,820
+Şimdi, in order to obtain 0 over 0 in the terminal form,
+
+443
+00:47:14,900 --> 00:47:18,099
+we take this x here, 1 over x.
+
+444
+00:47:18,460 --> 00:47:20,299
+So, we need to derivate nominator.
+
+445
+00:47:21,440 --> 00:47:23,460
+And we need to derivate 1 over x.
+
+446
+00:47:23,840 --> 00:47:26,280
+Okay, if you derivate those five,
+
+447
+00:47:26,420 --> 00:47:29,019
+in fact, you can do change of variable
+
+448
+00:47:29,019 --> 00:47:31,540
+in order to simplify your problem.
+
+449
+00:47:32,120 --> 00:47:34,659
+So, it is better to do change of variable.
+
+450
+00:47:35,340 --> 00:47:38,220
+If you say t is equal to 1 over x,
+
+451
+00:47:38,219 --> 00:48:04,960
+Bu soru soruları var mı?
+
+452
+00:48:04,960 --> 00:48:07,040
+Ticher?
+
+453
+00:48:07,639 --> 00:48:08,519
+Evet, sor.
+
+454
+00:48:09,079 --> 00:48:10,260
+Sorry about the interruption.
+
+455
+00:48:11,280 --> 00:48:13,120
+Ticher, we can use also another
+
+456
+00:48:13,120 --> 00:48:15,239
+formula for
+
+457
+00:48:15,239 --> 00:48:17,060
+this infinite
+
+458
+00:48:17,060 --> 00:48:19,299
+minus infinite. Is that true?
+
+459
+00:48:20,180 --> 00:48:21,060
+Another formula?
+
+460
+00:48:21,239 --> 00:48:21,859
+Which formula?
+
+461
+00:48:22,939 --> 00:48:25,099
+This. I will write.
+
+462
+00:48:25,379 --> 00:48:27,200
+I don't know formula. I know
+
+463
+00:48:27,200 --> 00:48:29,019
+only
+
+464
+00:48:29,019 --> 00:48:31,379
+conjugate method and these methods.
+
+465
+00:48:31,379 --> 00:48:33,120
+Okay. I do not
+
+466
+00:48:33,120 --> 00:48:34,680
+memorize other formulas.
+
+467
+00:48:34,960 --> 00:48:35,840
+Okey?
+
+468
+00:48:36,579 --> 00:48:36,859
+Çok.
+
+469
+00:48:37,460 --> 00:48:40,099
+Ben başka formül ezberlemiyorum arkadaşlar.
+
+470
+00:48:40,359 --> 00:48:42,120
+Yani formül ezberleyecek kadar benim
+
+471
+00:48:42,120 --> 00:48:43,560
+kapasitem yok.
+
+472
+00:48:43,936 --> 00:48:54,295
+sadece ne yapıyorum? Belli başlı yöntemleri öğreniyorum. Onların üzerine inşa edilecek formülleri, önemli formülleri, onu da çıkartılışınız göz önünde bulunurarak.
+
+473
+00:48:54,856 --> 00:49:02,956
+Eğer o şekilde direkt zihninizi zorlamayın arkadaşlar. Yani biliyorum ben, kitaplarda görüyorum ders kitaplarında, lise kitaplarında bir sürü formül veriyorlar.
+
+474
+00:49:02,956 --> 00:49:13,655
+Ama bu doğru değil bence. Tamam arkadaşlar, benim size öğrettiğim bu şeylere bakın yeter. Eşlenik yöntemini gösterdim. Bir de L'Hospital'i bakın, dikkat edin. Bunları bilmeniz yeterli.
+
+475
+00:49:13,936 --> 00:49:21,936
+diğer bütün formüller bence boşuna zihni yormak. Tam başka bir şey değil. Tamam mı? Bilmiyorum bana soracak olursan diğer formülleri.
+
+476
+00:49:23,936 --> 00:49:30,436
+Evet. Doğrudur. Aynı sonucu bulursun. Ben bulamazsın demiyorum. Onlar da buradan geliyor ama.
+
+477
+00:49:30,436 --> 00:49:36,315
+All other formulas are based on these two main methods. Do not forget this. Okey?
+
+478
+00:49:39,923 --> 00:49:41,683
+Okay, have a break for 10 minutes.
+
+479
+01:02:51,347 --> 01:03:00,467
+Evet, merhaba arkadaşlar. Kaldığımız yerden devam edelim. Birkaç not var. Vurgulamak istediğim husus var. Onlardan bahsedelim.
+
+480
+01:03:02,268 --> 01:03:04,627
+Okay, let me talk about some remarks.
+
+481
+01:03:09,492 --> 01:03:11,492
+about Lobikavro.
+
+482
+01:03:14,675 --> 01:03:27,575
+suppose that you have 0 or 0 or 0 over 0 or infinite over infinite in order to apply L'Hospital's rule.
+
+483
+01:03:28,675 --> 01:03:35,075
+you need to have you have to have this in the terminal form.
+
+484
+01:03:41,715 --> 01:03:45,715
+Okay, let's apply L'Hospital's rule.
+
+485
+01:03:54,867 --> 01:03:59,547
+ve suppose you cannot obtain some precise result.
+
+486
+01:03:59,547 --> 01:04:03,788
+So let's have some...
+
+487
+01:04:07,987 --> 01:04:09,987
+So we need to go on.
+
+488
+01:04:12,227 --> 01:04:14,227
+We continue.
+
+489
+01:04:17,076 --> 01:04:23,955
+until we have some limit result.
+
+490
+01:04:24,795 --> 01:04:32,956
+We repeat L'Hospital's process until we have some limit result.
+
+491
+01:04:34,955 --> 01:04:42,015
+Anlaşımın bir yeri var mı arkadaşlar? Ta ki kesin bir sonuç buluncaya kadar L'Hospital kuralını uygulayabilirsiniz.
+
+492
+01:04:42,015 --> 01:04:50,015
+bir defa uygulanacak diye bir şey yok birden fazla arka arkaya uygulama olabilir ta ki gerçek sonucu elde edinceye kadar.
+
+493
+01:04:50,015 --> 01:04:52,015
+Diğer bir husus bu.
+
+494
+01:04:52,015 --> 01:04:53,015
+Other remark.
+
+495
+01:04:56,436 --> 01:05:04,436
+Okay, consider this example. Let me talk about the result by using this simple example.
+
+496
+01:05:19,411 --> 01:05:39,571
+sorry this is x times cosine square x. now look at this so if you try to apply directly l'Hopital's rule here so we can apply directly l'Hopital's rule.
+
+497
+01:05:44,788 --> 01:05:49,788
+Let's try to apply L'Hospital's rule directly. Derivation of this...
+
+498
+01:05:54,516 --> 01:05:57,155
+over derivation of this.
+
+499
+01:06:01,684 --> 01:06:02,684
+Okay. Now, so this is first method. Let me talk about other method. Limit as x goes to zero. We do not directly, we do not directly, cosine, square x, we do not directly apply L'Hospital's rule. So,
+
+500
+01:06:33,268 --> 01:06:39,268
+we consider product rule for limit.
+
+501
+01:06:42,867 --> 01:07:09,927
+We can do this because of the fact that this cos square x, this cos square x do not yield sum, okay, 0 or infinite. So this goes to 1. That's why we can ignore this in the test exam. We can ignore this, this approach 1. Okay, so actually this have 0 over 0 in the terminal form.
+
+502
+01:07:09,927 --> 01:07:18,768
+Okay, limit as x goes to 0, x derivation of x over derivation of this.
+
+503
+01:07:21,768 --> 01:07:32,527
+Okay, now, so this is not so easy, not easy, because you need to apply product rule for derivation of this term.
+
+504
+01:07:32,527 --> 01:07:53,867
+Okay, but here, we have directly limit, as x goes to 0, derivation of x, 1, and derivation of this cosine x square minus x, time derivation of x square minus x, 2x minus 1.
+
+505
+01:07:54,327 --> 01:08:00,707
+Okay, as x goes to 0, this goes to 1, this goes to 0, the answer is minus 1.
+
+506
+01:08:00,707 --> 01:08:24,087
+Herhalde anlaşılmıştır meramım. Ne yapacaksınız? Bazen doğrudan L'Hospital uygulamak yerine limiti parçalamayı düşünün arkadaşlar. Parçalayın. Oradaki bazı parçalar zaten direkt belli bir değere yaklaşacaktır. Aynı burada olduğu gibi. Kosinüs kare x 1'e gidiyor. Onu ayırın. Ayrı bir şekilde değerlendirin.
+
+507
+01:08:24,088 --> 01:08:30,948
+belirsizliği veren 0 bölü 0 veya sonsuz bölü sonsuzluğu verenlerin üzerinde L'Hospital uygulayın.
+
+508
+01:08:30,948 --> 01:08:34,827
+Ben bunu genellikle öğrencilerin kağıtlarında görüyordum klasik sınavda.
+
+509
+01:08:35,147 --> 01:08:38,507
+Maalesef buna dikkat etmiyorlar ve çok iş çorba olabiliyor.
+
+510
+01:08:38,687 --> 01:08:39,728
+İşlem kalabalıklı.
+
+511
+01:08:39,888 --> 01:08:43,448
+Böyle yaparsanız basitleştirerek sonuca ulaşmış olursunuz.
+
+512
+01:08:43,608 --> 01:08:44,028
+Tamam mı?
+
+513
+01:08:44,067 --> 01:08:44,787
+İzlediğiniz için.
+
+514
+01:08:48,819 --> 01:08:50,019
+soru yok galiba.
+
+515
+01:08:51,879 --> 01:08:53,099
+Sesim geliyor değil mi gençler?
+
+516
+01:08:54,839 --> 01:08:55,499
+Evet, geliyor.
+
+517
+01:09:00,115 --> 01:09:06,596
+Okay, let me talk about other indeterminate types, exponentially indeterminate forms.
+
+518
+01:09:08,595 --> 01:09:28,115
+Now you don't need to, you don't need to memorize this, you don't need to memorize this, let me talk about, let's talk, let's share, let's share some new page. Okay, so how can we understand is this indeterminate form?
+
+519
+01:09:32,372 --> 01:09:40,291
+is this indeterminate form or not? is this indeterminate form?
+
+520
+01:09:42,003 --> 01:09:48,563
+How can you understand whether this is some indeterminant form or not?
+
+521
+01:09:48,563 --> 01:09:51,523
+So just apply logarithmic function.
+
+522
+01:09:52,964 --> 01:09:56,884
+This is not true from the logical point of view.
+
+523
+01:09:58,643 --> 01:10:03,604
+But so in order to ask for this question, we may use this approach.
+
+524
+01:10:04,163 --> 01:10:07,684
+So this is infinite time zero.
+
+525
+01:10:07,684 --> 01:10:14,643
+So, this implies that yes, the answer is yes, because this is indeterminat form.
+
+526
+01:10:14,643 --> 01:10:19,483
+Okay, this is, we know that this is indeterminat form.
+
+527
+01:10:20,404 --> 01:10:28,584
+Okay, is 0 to 0 indeterminat form, but this must be positive.
+
+528
+01:10:28,583 --> 01:10:33,143
+Bu 0 plus means
+
+529
+01:10:33,143 --> 01:10:36,003
+Sufficiently small positive number
+
+530
+01:10:36,003 --> 01:10:38,343
+Okay, which is sufficient to close 0
+
+531
+01:10:38,343 --> 01:10:40,283
+But positive number
+
+532
+01:10:40,283 --> 01:10:41,843
+In determinate form
+
+533
+01:10:47,252 --> 01:10:50,611
+how can we ask for this question? So again, we apply
+
+534
+01:10:52,951 --> 01:10:53,431
+this
+
+535
+01:11:01,108 --> 01:11:31,067
+So let's recall the graph of logarithmic function, L'NX. This is the graph of L'NX. So as you see, so this is zero. If we approach zero from right hand side, this zero plus means we choose some positive number which is sufficient to close zero. As you see, corresponding number is somewhere here, which is sufficiently
+
+536
+01:11:31,108 --> 01:11:43,128
+down. Okay, so this is minus infinite. As x goes, we know that limit as x goes to zero from right-hand side, L'Hospital, x goes down infinitely, minus infinite.
+
+537
+01:11:43,128 --> 01:11:56,767
+So this is minus infinite, zero times minus infinite. The answer is minus infinite. Okay, this is, we have time here. So the answer is not. Let me use different.
+
+538
+01:11:56,767 --> 01:12:08,768
+This is not indeterminant form. Okay, so we got directly minus infinite. Okay, this is not indeterminant form.
+
+539
+01:12:18,836 --> 01:12:19,836
+ok. let me talk about one to one other
+
+540
+01:12:27,347 --> 01:12:29,347
+indeterminat form.
+
+541
+01:12:29,347 --> 01:12:31,347
+Dekka, stop share.
+
+542
+01:12:33,347 --> 01:12:35,347
+Okay, let's see other indeterminat form.
+
+543
+01:12:35,347 --> 01:12:39,347
+So, 0, 0.
+
+544
+01:12:51,859 --> 01:12:59,059
+Sorry. Ben, okay. So what about this? Görebiliyor musunuz gençler? Paylaşımı görebiliyor musunuz?
+
+545
+01:13:00,799 --> 01:13:07,240
+Evet. Ben de görünmedi diye zannettim.
+
+546
+01:13:09,239 --> 01:13:20,879
+Okay. So look at this in the terminal form. 0 to 0, 0 plus 0. If you apply logaritmic function, as you see, 0 times ln 0 plus,
+
+547
+01:13:20,879 --> 01:13:23,119
+0 times minus infinite.
+
+548
+01:13:23,299 --> 01:13:24,919
+So this is indeterminat form.
+
+549
+01:13:25,299 --> 01:13:27,139
+Yes, this is indeterminat form.
+
+550
+01:13:27,739 --> 01:13:30,419
+Infinite to 0, infinite to 0.
+
+551
+01:13:30,419 --> 01:13:39,179
+So when you apply logarithmic function here, 0 times L'n'infinite, L'n'infinite, infinite, 0 times infinite.
+
+552
+01:13:39,319 --> 01:13:40,679
+This is indeterminat form.
+
+553
+01:13:40,759 --> 01:13:42,139
+This is also indeterminat form.
+
+554
+01:13:42,439 --> 01:13:47,439
+So as you see, we have three exponential indeterminat forms.
+
+555
+01:13:47,659 --> 01:13:47,939
+Okay.
+
+556
+01:13:48,379 --> 01:13:49,999
+I don't need to memorize those.
+
+557
+01:13:50,880 --> 01:14:17,880
+ve
+
+558
+01:14:17,879 --> 01:14:23,579
+Okay, we made some mistake. Okay, let me check out.
+
+559
+01:14:26,179 --> 01:14:26,979
+Okay.
+
+560
+01:14:29,739 --> 01:14:32,639
+White, whiteboard.
+
+561
+01:14:34,119 --> 01:14:40,299
+So, 0 to 0, okay, this is indeterminate form. Is that correct?
+
+562
+01:14:40,819 --> 01:14:41,079
+Yes.
+
+563
+01:14:41,080 --> 01:15:02,539
+0 ile 0 plus 0 times infinite, so minus infinite, the answer is independent form, so if we write this, I think we made mistake here, so we write here infinite, okay not infinite, so we take this 0, okay?
+
+564
+01:15:02,539 --> 01:15:16,259
+belki yanlış yazmış olabilirim. Sıfıra başa geçirirken sonsuz diye yazmış olabilirim. O yüzden sen yanlış değerlendirme olmuş olabilir. Onu düzelterim. Tamam mı arkadaşlar?
+
+565
+01:15:16,259 --> 01:15:18,259
+ok, diğer bir şey
+
+566
+01:15:26,036 --> 01:15:29,635
+Hocam, bunun en yalın hali neydi? Elenlere siz mi gönderdiniz?
+
+567
+01:15:31,295 --> 01:15:55,475
+Ya ben 0 üzeri 0 belirsizlik mi değil mi? Bunu anlamaya çalışıyorum. Eleni uyguladığında bilinen bir belirsizlik elde ettin mi? Elde ettim. 0 çarpı sonsuz. 1 üzeri sonsuz belirsizlik mi değil mi? Bunu anlamak istiyorum. Yani 1 üzeri sonsuz 1'e mi eşit yoksa başka bir şeye mi eşit? Bunu anlamak istiyorum. Ne yapıyorum? O yüzden eleni uyguladığında elen 1, elen 1'de 0 gelir. Bakın sonsuz çarpı 0.
+
+568
+01:15:55,475 --> 01:16:02,675
+O yüzden belirsizlik. O zaman bu neyi doğrur? 0 to 0 is indeterminate for.
+
+569
+01:16:07,060 --> 01:16:11,819
+This implies that 1 to infinite is indeterminate form.
+
+570
+01:16:15,859 --> 01:16:26,359
+yani birin yeterince bir limit durumunda bir üzeri sonsuzu yakalarsanız cevap bir değil. Bir belirsizliktir. Tamam mı? Bunu belirlemeye çalışıyorum.
+
+571
+01:16:26,740 --> 01:16:34,719
+In the case of limit, why if you got one to infinite, this means that this is indeterminate form. You cannot say the answer is one. Okay?
+
+572
+01:16:35,999 --> 01:16:42,739
+Başka ne vardı orada? Bir üzeri sonsuz. Sonsuz üzeri sonsuz belirsizlik mi diye düşünebilirsiniz.
+
+573
+01:16:43,739 --> 01:16:44,739
+Evet.
+
+574
+01:16:53,076 --> 01:16:59,076
+This implies that infinite, the infinite is not in the terminant form.
+
+575
+01:17:04,659 --> 01:17:05,659
+Tamam, is that clear?
+
+576
+01:17:06,119 --> 01:17:07,579
+The answer is directly infinite.
+
+577
+01:17:07,979 --> 01:17:13,460
+So for example, limit as x goes to infinite, x to x.
+
+578
+01:17:14,559 --> 01:17:16,540
+Okay, so infinite to infinite.
+
+579
+01:17:16,659 --> 01:17:18,399
+You can directly say this is infinite.
+
+580
+01:17:19,099 --> 01:17:20,299
+Because of this fact.
+
+581
+01:17:20,299 --> 01:17:23,260
+You don't need to manipulate on this limit problem.
+
+582
+01:17:23,739 --> 01:17:25,799
+Because this is not indeterminant form.
+
+583
+01:17:26,119 --> 01:17:26,359
+Okay?
+
+584
+01:17:27,199 --> 01:17:27,959
+Is there any question?
+
+585
+01:17:29,580 --> 01:17:30,459
+Var mı anlaşmen bier?
+
+586
+01:17:30,459 --> 01:17:31,459
+Yeni Yeni
+
+587
+01:18:00,459 --> 01:18:02,459
+tamam teşekkür ederim
+
+588
+01:18:21,844 --> 01:18:48,844
+So, as you see, we have three types indeterminate form. You don't need to memorize this. We can, by applying logarithmic function, so you can, you can decide whether this is indeterminate form or not, because by applying logarithmic function, you can transform these exponential indeterminate forms into the well-known indeterminate forms, okay?
+
+589
+01:18:49,268 --> 01:18:56,567
+Okay, let's solve this problem. So let me stop this share. So let's solve this.
+
+590
+01:19:00,627 --> 01:19:16,567
+Ok, let's try to obtain this limit problem. Limit as x goes to 0, 1 plus, let me put here some constant a, a times x,
+
+591
+01:19:19,315 --> 01:19:21,056
+1 over x.
+
+592
+01:19:21,536 --> 01:19:22,815
+So we have this.
+
+593
+01:19:23,535 --> 01:19:24,535
+Look at this
+
+594
+01:19:24,535 --> 01:19:27,875
+problem.
+
+595
+01:19:28,055 --> 01:19:29,315
+As x goes to 0,
+
+596
+01:19:29,736 --> 01:19:31,475
+actually we have 1 to
+
+597
+01:19:31,475 --> 01:19:33,455
+infinite or 1 to minus
+
+598
+01:19:33,455 --> 01:19:34,555
+infinite, it doesn't matter.
+
+599
+01:19:35,015 --> 01:19:36,875
+So we have it in the terminate form.
+
+600
+01:19:37,135 --> 01:19:38,175
+The answer is not 1.
+
+601
+01:19:38,916 --> 01:19:41,416
+Okay, so how can we
+
+602
+01:19:41,416 --> 01:19:43,115
+solve this problem?
+
+603
+01:19:45,175 --> 01:19:47,355
+So in order to solve this problem,
+
+604
+01:19:47,355 --> 01:19:58,275
+So we know, let me write this a, a is equal to 1 plus a times x to 1 over x.
+
+605
+01:19:58,656 --> 01:20:03,615
+So when you apply natural logarithmic function to both sides of this equality,
+
+606
+01:20:04,795 --> 01:20:13,395
+ln 1 plus a times x to 1 over x by using logarithmic function rule.
+
+607
+01:20:13,395 --> 01:20:19,475
+So this 1 over x exponent can be taken to this part as coefficient.
+
+608
+01:20:22,095 --> 01:20:24,575
+1 plus a times x.
+
+609
+01:20:24,915 --> 01:20:33,375
+So as you see, we transform our problem into another region, another zone by using natural logarithmic function.
+
+610
+01:20:33,835 --> 01:20:40,135
+Instead of computing limit of a, so we may compute the limit of l and a.
+
+611
+01:20:40,135 --> 01:20:45,036
+So let's compute limit of ln A.
+
+612
+01:20:45,216 --> 01:21:00,135
+As x goes to 0, limit of ln A, limit as x goes to 0, ln 1 plus A times x over x.
+
+613
+01:21:00,396 --> 01:21:01,295
+We have this.
+
+614
+01:21:01,695 --> 01:21:04,295
+As x goes to A, ln 1 0.
+
+615
+01:21:05,616 --> 01:21:08,375
+So as x goes to 0, x approaching 0.
+
+616
+01:21:08,375 --> 01:21:12,515
+As you see, we are ready to apply L'Hopita's rule.
+
+617
+01:21:12,856 --> 01:21:23,295
+By L'Hopita's rule, limit as x goes to 0, derivation of denominator, derivation of this.
+
+618
+01:21:25,515 --> 01:21:33,896
+So, a over 1 plus a times x over derivation of x is 1.
+
+619
+01:21:34,476 --> 01:21:36,655
+Okay, the answer is a.
+
+620
+01:21:36,655 --> 01:21:42,176
+Attention here, this is the limit of ln a.
+
+621
+01:21:42,176 --> 01:21:49,835
+In order to turn back, so we came here by using logarithmic function by ln n.
+
+622
+01:21:50,295 --> 01:21:56,615
+In order to turn back our answer, so we need to apply explanation function.
+
+623
+01:21:56,795 --> 01:22:00,715
+We know that explanation function is the inverse of logarithmic function.
+
+624
+01:22:00,715 --> 01:22:19,715
+So that's why when you apply both sides of this equation, when you apply exponential function to both sides of this equality, so limit as x goes to 0 exponential LNA is equal to e to a.
+
+625
+01:22:19,715 --> 01:22:31,635
+Okay, so this is the a, we know that this is a, this is a. Limit of a as x goes to 0, exponential a.
+
+626
+01:22:31,635 --> 01:22:44,435
+So this is the answer is exponential a. Okay, so let me, so let me write this limit as x goes to 0,
+
+627
+01:22:44,435 --> 01:22:45,435
+A'ı'
+
+628
+01:23:06,804 --> 01:23:23,203
+Now, let me do another formula, which is equivalent to this one. You don't need to memorize this formula. Let me do some change of variable. Let's do change of variable. 1 over x, let's do this change of variable, t.
+
+629
+01:23:23,203 --> 01:23:41,283
+ok, now in that case, look at that, so let me write here 0 plus, also you may write here 0 minus, t goes to infinite or minus infinite, ok, now as x goes to 0.
+
+630
+01:23:44,756 --> 01:24:03,756
+Now in that case we transform this problem into a new problem in terms of t. At t goes to infinite, 1 plus a is a constant with respect to limit variable t. a over t, x is equal to a over t.
+
+631
+01:24:03,756 --> 01:24:12,756
+And so we have this. So again we have, so look at here.
+
+632
+01:24:13,011 --> 01:24:41,011
+indeterminat form of this, 1 to infinite again. Now, so again we have same result, okay? Sometimes it is better to use this one, sometimes it is better to use this one. It depends on the structure of functions given in the limit problem, okay? So, how can we apply this method? So, this formula, this formula is very important formula. Sometimes it is better to
+
+633
+01:24:41,011 --> 01:24:43,331
+bu metodları direkt kullanırken.
+
+634
+01:24:43,331 --> 01:24:44,372
+Efendim,
+
+635
+01:24:49,555 --> 01:24:51,555
+bu bölümden yazayım.
+
+636
+01:24:58,963 --> 01:25:05,963
+let's try to solve this problem. Limit as x goes to 0.
+
+637
+01:25:09,971 --> 01:25:18,971
+sin x over x to x.
+
+638
+01:25:19,604 --> 01:25:43,364
+1 over x. Okay, let's try to solve this problem. We have two methods. We have two methods. The first method, the first method for this problem, so we say this is a is equal to sin x over x to 1 over x.
+
+639
+01:25:43,364 --> 01:25:49,843
+So then, so we apply natural logaritmic function to both sides of this equality.
+
+640
+01:25:50,063 --> 01:25:51,624
+Okay, this is homework for you.
+
+641
+01:25:52,464 --> 01:25:56,984
+Okay, let me talk about second method without applying this general method.
+
+642
+01:25:57,083 --> 01:26:00,523
+This is general method in such cases.
+
+643
+01:26:00,824 --> 01:26:02,184
+Okay, general method.
+
+644
+01:26:04,544 --> 01:26:06,364
+Genel metodumuz bu arkadaşlar.
+
+645
+01:26:07,223 --> 01:26:09,083
+Ama ben genel metodu kullanmak istemiyorum.
+
+646
+01:26:09,184 --> 01:26:10,604
+Olayı basitleştirmek istiyorum.
+
+647
+01:26:16,051 --> 01:26:44,812
+Okay, now, so in order to make similarity between this problem and this problem, you need to check out indeterminate form. So we have 1 to infinite indeterminate form. Okay, you are lucky because you got 1 to infinite and 1 to infinite. This means that you can make some similarity between this limit problem and this well-known limit problem. Okay?
+
+648
+01:26:49,140 --> 01:26:53,140
+How can we manage this? Let's do this.
+
+649
+01:26:56,148 --> 01:27:21,927
+let me write here, limit as x goes to 0, we add some 1 term here, plus sin x over x minus 1. Nothing changed. So again we have sin x over x. Okay, now we have 1 over 1 over x here. Can you see that?
+
+650
+01:27:21,927 --> 01:27:28,047
+Şimdi bu eksperyation, bu eksperyation, let me
+
+651
+01:27:31,507 --> 01:27:48,507
+package this expression. Can you see that? So let's say this is u. Let's say this is u. Let me write this is u. Sorry. Let's say this is u.
+
+652
+01:27:48,507 --> 01:28:00,507
+Let's say this is u.
+
+653
+01:27:56,564 --> 01:28:10,043
+Okay, again we have the same answer. As u goes to 0, 1 plus a times u over, sorry, 2, 1 over u into a. Now, so let's say this is u.
+
+654
+01:28:10,043 --> 01:28:17,303
+sin x over x minus 1.
+
+655
+01:28:17,783 --> 01:28:20,123
+So this u goes to 0.
+
+656
+01:28:20,244 --> 01:28:20,904
+Can you see that?
+
+657
+01:28:20,904 --> 01:28:26,543
+It goes to 0 as x goes to 0.
+
+658
+01:28:26,643 --> 01:28:30,723
+Okay, we are lucky because here u goes to 0.
+
+659
+01:28:31,744 --> 01:28:33,663
+Here u goes to 0.
+
+660
+01:28:34,043 --> 01:28:36,284
+Okay, this means that you are on the true path.
+
+661
+01:28:37,403 --> 01:28:39,483
+Now, so let's go on.
+
+662
+01:28:40,043 --> 01:29:01,583
+limit, as x goes to 0, let me write here, 1 plus sin x over x minus 1, this is u, a is 1, the coefficient of u, 1, a is 1, coefficient of u, a is 1, according to the spatial case,
+
+663
+01:29:01,583 --> 01:29:14,583
+So we need to obtain, we need to write this, 1 over u, 1 over u, 1 over u, u is sin x over x minus 1.
+
+664
+01:29:14,663 --> 01:29:17,883
+But in the original equation, we have 1 over x.
+
+665
+01:29:21,460 --> 01:29:28,460
+but in the original equation there is no sine x over x minus 1. Okay?
+
+666
+01:29:28,460 --> 01:29:42,460
+Now look at here in fact these are this simplified there is nothing. Okay, there is no change here. Can you see that you are simplified. Now in the original equation we have 1 over x.
+
+667
+01:29:42,460 --> 01:29:48,460
+Okay?
+
+668
+01:29:46,292 --> 01:29:57,691
+so, 1 over this. So we have this. Look at this package. Let me use different color here.
+
+669
+01:30:04,404 --> 01:30:22,203
+So this is transformed into this package is transformed into this limit problem. As u goes to 0, 1 plus a is 1, u2, 1 over u. According to this change of variable, this package goes to e.
+
+670
+01:30:22,203 --> 01:30:49,223
+ok, now, so what about this, but in the exponential case, E2, let me go on here, so this is, this is at the exponent position, ok, üst kolumda arkadaşlar, dikkat edin, so what is this, so, exponential limit, as x goes to 0, when you manipulate this, sin x,
+
+671
+01:30:49,223 --> 01:30:53,203
+minus x over x square.
+
+672
+01:30:54,143 --> 01:31:00,444
+So let's apply L'Hospital's rule here. Can you see that? 0 over 0 in the terminal form.
+
+673
+01:31:01,363 --> 01:31:04,483
+So then apply L'Hospital's rule here.
+
+674
+01:31:06,923 --> 01:31:11,764
+Derivation of this, derivation of this, let me go on anymore.
+
+675
+01:31:12,844 --> 01:31:16,183
+Let me go on here. Silmem lazım bir yerlere arkadaşlar.
+
+676
+01:31:16,183 --> 01:31:17,183
+alanı daraldı.
+
+677
+01:31:19,183 --> 01:31:20,783
+Şurayı siliyorum.
+
+678
+01:31:28,627 --> 01:31:31,427
+Okay. So,
+
+679
+01:31:33,827 --> 01:31:55,727
+exponential limit, as x goes to zero, derivational nominator, cosin x minus one over two x. Okay. So we know the limit of this. This goes to zero. The answer is exponential zero, the answer is one. Okay.
+
+680
+01:31:55,727 --> 01:32:25,587
+bir
+
+681
+01:32:10,100 --> 01:32:11,100
+introduce general rule. if u of x goes to 0 as x goes to a then you can write this limit as x goes to a as x goes to a 1 plus a times
+
+682
+01:32:43,028 --> 01:33:11,267
+1 over u of x, identical to this limit problem. Limit, by the change of variable as u goes to 0, 1 plus a times u, 2, 1 over u, 1 over u, as for its explanation a. So, for example, this limit as x goes to 0,
+
+683
+01:33:11,267 --> 01:33:38,307
+1 plus 1 minus 1 plus 2 plus 2 minus cos x, let me write 2 minus cos x over 1 over x squared.
+
+684
+01:33:38,307 --> 01:33:41,667
+Okay, let's solve this problem.
+
+685
+01:33:42,947 --> 01:33:44,907
+How can we solve this problem?
+
+686
+01:33:46,867 --> 01:33:50,468
+Limit as x goes to 0.
+
+687
+01:33:50,647 --> 01:33:53,068
+First of all, we need to obtain this term.
+
+688
+01:33:54,828 --> 01:34:04,248
+1 plus 1 minus cosine x to 1 over x squared.
+
+689
+01:34:04,248 --> 01:34:06,007
+So, attention here.
+
+690
+01:34:06,007 --> 01:34:23,047
+So we have this part, if you do this change of variable, 1 minus cosin x is equal to u, as this u goes to 0, as x goes to 0
+
+691
+01:34:23,047 --> 01:34:38,528
+Now, but we need 1 over u, there is no 1 over u here, so 1 over u, u is 1 minus cosin x, 1 minus cosin x, nothing changed
+
+692
+01:34:38,528 --> 01:34:43,907
+Let me collect this part.
+
+693
+01:34:44,807 --> 01:34:48,288
+So, let me write here.
+
+694
+01:34:49,047 --> 01:35:00,188
+Limit, as x goes to 0, 1 plus 1 minus cosin x to 1 over 1 minus cosin x.
+
+695
+01:35:00,188 --> 01:35:03,487
+So, we know that this approach E.
+
+696
+01:35:03,487 --> 01:35:12,687
+So in the exponent case, limit as x goes to 0, we take this and we have this.
+
+697
+01:35:13,027 --> 01:35:21,867
+Okay, now so focus on this part, resting terms here in the exponent case.
+
+698
+01:35:21,867 --> 01:35:28,087
+So 1 minus cosin x over x squared.
+
+699
+01:35:28,087 --> 01:35:57,067
+So as you see we have in the table, this goes to E according to this theorem, so coefficient of U here, so this is U, coefficient of U, 1, so this goes to E according to this formula, and so we need to compute limit of this by the L'Hospital's rule, so this goes to sin x, 1 over 2, can you see that, this sin x,
+
+700
+01:35:58,087 --> 01:36:09,468
+over 2x, 1 over 2. So L'Hospital, exponential, 1 over 2. Var mı soru sola?
+
+701
+01:36:09,968 --> 01:36:12,548
+Hocam, 1 bölü x kare nereye gidiyor orada?
+
+702
+01:36:14,688 --> 01:36:22,147
+Bir yere gitmedi burada işte. Aldım buraya. Üst kısmında 1 bölü x kare çarpı 1 eksi kosinüs x.
+
+703
+01:36:23,347 --> 01:36:23,947
+Tamam.
+
+704
+01:36:25,447 --> 01:36:27,007
+Var mı anlaşmayan bir yer başka?
+
+705
+01:36:30,996 --> 01:36:44,255
+yok değil mi? Güzel. Ama burada genel yöntemi kullanmak daha avantajcıydı. Ama bir öncekinde genel yöntemi kullanmak avantajcı değildi. Çünkü orada bakın bir önceki soruyu genel yöntemden yapmaya çalışın.
+
+706
+01:36:46,395 --> 01:36:49,016
+Consider this problem.
+
+707
+01:36:55,380 --> 01:37:05,919
+We solved this before. Böyle miydi? Sinüs x böl x üzeri 1 böl x mi demiştik? Let's apply general method.
+
+708
+01:37:23,604 --> 01:37:28,883
+ok, let's update limit of this LNA.
+
+709
+01:37:37,939 --> 01:38:06,459
+okay, derivate this by L'Hospital's rule, L'M1 0, 0 over 0. Okay, so we have 0 over 0 in the terminal form, that's why we can apply L'Hospital's rule, limit as x goes to 0, derivation of this, derivation of this, sin x over x, derivation of this, over sin x over x, and derivation of x, 1.
+
+710
+01:38:06,459 --> 01:38:31,879
+So, now let's come here, limit as x goes to 0, derivation of sin x over x, unit depli quotient rule, derivation of sin x, cosin x times x minus sin x times x over x squared over sin x over x.
+
+711
+01:38:31,879 --> 01:38:49,219
+let me write here, you don't need to sign x. These and this, we have x. Okay, now limit as x goes to zero, cos x, x'ler gitti, doğru mu arkadaşlar?
+
+712
+01:38:49,939 --> 01:38:51,579
+Kosinüs x, şurada gitti.
+
+713
+01:38:52,300 --> 01:38:53,459
+Hocam nerede hata yaptınız?
+
+714
+01:38:53,639 --> 01:38:53,999
+We can.
+
+715
+01:38:54,939 --> 01:38:56,839
+Sinüs x çarpı 1 olması gerekmiyor.
+
+716
+01:38:57,759 --> 01:39:01,839
+Evet, doğru. Hata yaptık. Gördünüz mü? Bir sürü hata yapabiliyoruz.
+
+717
+01:39:01,879 --> 01:39:10,319
+şurası kosinüs x çarpı x eksi sinüs x çarpı 1 olacak.
+
+718
+01:39:10,439 --> 01:39:10,839
+Tabii ki.
+
+719
+01:39:12,299 --> 01:39:13,339
+Evet hata yaptık.
+
+720
+01:39:16,979 --> 01:39:39,580
+gördünüz mü? Öyle ha deyince kolay olmuyor. İş zorlaştı. Kosinüs x çarpı x, eksi sinüs x. Şunlardan gitti doğru mu? Bölü x çarpı sinüs x mi geldi? Bir tane x'ler sadeleşti. x çarpı sinüs x. Tekrardan ne yapacaksın? L'Hospital'ı uygulayacaksın.
+
+721
+01:39:39,580 --> 01:39:44,580
+bir daha L'Hospital uygula, bir daha uygula, bir daha uygula
+
+722
+01:39:44,580 --> 01:39:48,759
+you need to apply L'Hospital's rule many times
+
+723
+01:39:48,759 --> 01:39:50,340
+not so easy
+
+724
+01:39:50,340 --> 01:39:51,520
+can you see that?
+
+725
+01:39:52,579 --> 01:39:56,420
+bir daha uygulayayım, en az 3-4 tane L'Hospital uygulamak zorunda kalabilirsiniz
+
+726
+01:39:56,420 --> 01:39:58,000
+gördünüz mü?
+
+727
+01:40:01,000 --> 01:40:02,000
+at least
+
+728
+01:40:05,652 --> 01:40:16,591
+3x, you need to apply L'Hospital's rule. Fakat benim dediğim şekilde benzerliği yakalayıp gidersen bir defa L'Hospital'ı buluyorsun. Basit bir düzenleme yapıyorsun.
+
+729
+01:40:16,591 --> 01:40:25,971
+E üzeri A'ya benzetmeye çalışıyorsun. Oradan yakalıyorsun. Daha kısa sürede cevaplamış oluyorsun. Yani kolay değil gördüğünüz gibi arkadaşlar.
+
+730
+01:40:26,391 --> 01:40:33,912
+Sınavda, test sınavında bu tarz sorular gelmez. Yani şu soru benim size çözdüğüm bir soru. En zor soru tiplerinden birisi.
+
+731
+01:40:33,912 --> 01:40:41,071
+hem klasik yöntem, belleştirme yöntemi hem de L'Hospital birlikte kullanılarak çözülen bir soru tipi.
+
+732
+01:40:41,732 --> 01:40:42,791
+Kolay bir soru tipi değil.
+
+733
+01:40:43,391 --> 01:40:44,332
+Onu belirteyim size.
+
+734
+01:40:44,672 --> 01:40:45,412
+Var mı soru sola?
+
+735
+01:40:45,412 --> 01:40:47,611
+Buraya hocam ben anlamadım dediğiniz yer var mı?
+
+736
+01:40:52,051 --> 01:40:53,091
+Evet, geçiyorum.
+
+737
+01:41:02,003 --> 01:41:05,003
+Bir tane daha soru çözelim, bitirelim. Bununla alakalı
+
+738
+01:41:19,028 --> 01:41:24,028
+Okay, let's compute this.
+
+739
+01:41:27,155 --> 01:41:33,155
+So, how can we compute this? So, first of all, we need to determine indeterminate form of this.
+
+740
+01:41:36,036 --> 01:41:45,155
+So, how can we understand whether this is indeterminate form or not? So, let's take-
+
+741
+01:41:46,452 --> 01:42:14,452
+0 times ln 0 plus, 0 times, this is minus infinity. Okay, so this is in determinate form. Okay, now in such cases, you can write this. So, exponential x to x is equal to exponential. So ln x to x. Is that true? You can write this.
+
+742
+01:42:14,452 --> 01:42:44,431
+Now, so this is x times lnx, let's apply L'Hopita's rule, so sorry, let's apply limit process here, limit as x goes to zero from right hand side, limit as x goes to zero from right hand side, limit as x goes to zero from right hand side, limit as x goes to zero from right hand side, so limit
+
+743
+01:42:44,452 --> 01:42:47,711
+as x goes to, ok, sorry
+
+744
+01:42:51,604 --> 01:43:02,484
+okay, exponential limit, as x goes to zero from right hand side. So x times ln x. So in order to apply L'Hospital's rule,
+
+745
+01:43:05,043 --> 01:43:17,604
+we need to manipulate on this expression. As you see, infinite over infinite in the terminal form. Let me go on from here. Exponential limit as x goes to zero from right hand side.
+
+746
+01:43:17,604 --> 01:43:26,444
+Derivation of ln x, 1 over x, or derivation of this, minus 1 over x squared.
+
+747
+01:43:26,804 --> 01:43:33,803
+So after simplifying this expression, limit as x goes to 0 from right hand side.
+
+748
+01:43:33,944 --> 01:43:36,364
+So we have a minus x.
+
+749
+01:43:37,604 --> 01:43:43,104
+Okay, so this goes to 0, exponential 0, the answer is 1.
+
+750
+01:43:43,104 --> 01:43:44,523
+The answer is 1.
+
+751
+01:43:45,903 --> 01:43:46,964
+Var mı sorusu ola?
+
+752
+01:43:47,604 --> 01:44:03,604
+Hocam ben anlamadım dediğiniz yer var mı? Aynı yöntem, farklı bir yöntem değil. Yani şöyle de yapabilirdiniz. A eşittir, x üzeri x derdiniz. This is other method. In fact not other method. Just apply natural logaritmic function.
+
+753
+01:44:03,604 --> 01:44:18,724
+ok, satatat, you are going to obtain one. Herhalde anlaşmayan bir yer yok. Evet. Geçiyorum. Burada anlaşıldı. Peki bunu ben genelleştirebilir miyim? How can we generalize this situation?
+
+754
+01:44:18,723 --> 01:44:22,483
+So, let me generalize the situation.
+
+755
+01:44:22,483 --> 01:44:43,543
+Suppose that u of x goes to 0 as x goes to a, then, so we can obtain this, limit as x goes to a, but suppose that this goes to 0 from right hand side.
+
+756
+01:44:43,543 --> 01:45:01,544
+So limit as x goes to A, u to x to u to x, equivalent to this limit as u goes to 0 from right hand side, u to u goes to 1.
+
+757
+01:45:01,544 --> 01:45:03,863
+Okay, so we can write this, for example,
+
+758
+01:45:22,644 --> 01:45:23,884
+Let's compute this.
+
+759
+01:45:24,763 --> 01:45:26,863
+So indeterminant form of this,
+
+760
+01:45:27,084 --> 01:45:29,624
+we know that indeterminant form of this problem,
+
+761
+01:45:30,944 --> 01:45:32,343
+0 to 0.
+
+762
+01:45:33,203 --> 01:45:35,383
+Indeterminant form of this problem,
+
+763
+01:45:35,763 --> 01:45:36,923
+0 to 0.
+
+764
+01:45:37,723 --> 01:45:39,863
+Because of this general case,
+
+765
+01:45:40,263 --> 01:45:41,744
+because of this change of variable,
+
+766
+01:45:41,744 --> 01:45:44,263
+we can make similarity between this problem
+
+767
+01:45:44,263 --> 01:45:46,523
+and this main formula.
+
+768
+01:45:47,123 --> 01:45:48,803
+Okay, so in this case,
+
+769
+01:45:49,103 --> 01:45:50,863
+we consider this part,
+
+770
+01:45:50,863 --> 01:45:53,203
+We consider 1 minus
+
+771
+01:45:53,203 --> 01:45:55,243
+sine x over
+
+772
+01:45:55,243 --> 01:45:56,603
+x as u.
+
+773
+01:45:59,123 --> 01:46:01,603
+As you see this u goes to
+
+774
+01:46:01,603 --> 01:46:03,583
+Okay, please turn off
+
+775
+01:46:03,583 --> 01:46:04,383
+your microphone.
+
+776
+01:46:05,303 --> 01:46:07,463
+1 minus sine x over x
+
+777
+01:46:07,463 --> 01:46:09,324
+u. As you see
+
+778
+01:46:09,324 --> 01:46:10,583
+this u goes to
+
+779
+01:46:10,583 --> 01:46:11,883
+0.
+
+780
+01:46:11,883 --> 01:46:13,463
+From my tensor.
+
+781
+01:46:17,864 --> 01:46:18,943
+Tamam arkadaşlar.
+
+782
+01:46:19,563 --> 01:46:20,423
+Okay, now
+
+783
+01:46:20,423 --> 01:46:24,984
+So we can write, we can transform this problem.
+
+784
+01:46:25,103 --> 01:46:33,703
+In order to obtain u to u, so let me use black one at the beginning.
+
+785
+01:46:33,703 --> 01:46:39,743
+Limit as x goes to 0, 1 minus sine x over x.
+
+786
+01:46:40,163 --> 01:46:49,663
+But in the original equation, there is no u, but we need to put here some u, 1 minus sine x over x.
+
+787
+01:46:50,423 --> 01:46:50,743
+Okay.
+
+788
+01:46:53,404 --> 01:46:53,923
+Sorry.
+
+789
+01:46:54,343 --> 01:46:55,163
+Sorry, sorry, sorry.
+
+790
+01:46:59,220 --> 01:47:03,399
+1 minus sin x over x.
+
+791
+01:47:04,120 --> 01:47:05,419
+In the original equation,
+
+792
+01:47:06,039 --> 01:47:10,339
+there is no 1 minus sin x over x in the exponent case.
+
+793
+01:47:10,859 --> 01:47:12,720
+Now, so in the original equation,
+
+794
+01:47:12,720 --> 01:47:15,240
+we have, let me use,
+
+795
+01:47:17,279 --> 01:47:22,720
+so 1 minus sin x over x in the exponent.
+
+796
+01:47:23,019 --> 01:47:23,959
+Okay, we write this.
+
+797
+01:47:24,480 --> 01:47:28,899
+Now in the original equation, we have x here.
+
+798
+01:47:29,220 --> 01:47:42,260
+So let me write this limit as x goes to 0 as you see 1 minus sin x over x to 1 minus sin x over x.
+
+799
+01:47:43,800 --> 01:47:54,980
+So in the exponent limit as x goes to 0 as we package this and in the exponent we need to package this.
+
+800
+01:47:54,979 --> 01:48:03,800
+Okay, now x over x minus sine x over x.
+
+801
+01:48:04,080 --> 01:48:06,839
+So if you reverse this part, so we have this.
+
+802
+01:48:11,891 --> 01:48:39,691
+so let me write this, let me write here, so x, this is x squared, this is x minus sin x, so we know that this goes to 1 because of this fact, because of this fact, can you see that, so this is u, this u goes to 0, this goes to 1, so 1 to limit as x goes to 0,
+
+803
+01:48:39,691 --> 01:48:53,371
+So actually we have indeterminate form 0 over 0 and derivation of this 2x over derivation of this 1 minus cosine x.
+
+804
+01:48:53,371 --> 01:49:05,691
+The answer for this 0. As x goes to 0, this goes to 0. 1 to 0 is 1. Okay. The answer for this 1.
+
+805
+01:49:06,691 --> 01:49:07,411
+Var mı soru soru?
+
+806
+01:49:09,691 --> 01:49:13,311
+Evet, soru solan var mı?
+
+807
+01:49:14,631 --> 01:49:18,871
+Hocam yine sıfırı bölü sıfırı gelmiyor mu? Bir kez daha lapidar almamızı gerekmiyor mu?
+
+808
+01:49:21,411 --> 01:49:28,211
+Evet ya, kosinüs sıfırı şey yapıyorum, doğru ya, kafa gitmiş, yorulmuş kafa artık.
+
+809
+01:49:28,891 --> 01:49:32,991
+Of course, of course, you're right. Not 0 over 0.
+
+810
+01:49:32,991 --> 01:49:46,211
+not 0 over 0. So sorry we have 0 over 0. As for it is not 0. So let me write this. Okay.
+
+811
+01:49:48,331 --> 01:49:58,311
+Now let's go on. Tabi şurada ikisimiz var değil mi? Evet. Okay. So again if you apply L'Hospital's rule
+
+812
+01:49:58,311 --> 01:50:05,671
+want to limit as x goes to 0, 2 over sin x.
+
+813
+01:50:06,432 --> 01:50:06,831
+Okey.
+
+814
+01:50:07,531 --> 01:50:10,691
+Gördüğünüz gibi arkadaşlar x sıfıra gidiyor.
+
+815
+01:50:11,451 --> 01:50:12,231
+Sağdan mı gidiyor?
+
+816
+01:50:12,291 --> 01:50:13,252
+Hadi sağdan diyelim.
+
+817
+01:50:14,031 --> 01:50:15,211
+Hepsini sağdan diyelim.
+
+818
+01:50:15,411 --> 01:50:16,311
+Yoksa şey olmayacak.
+
+819
+01:50:17,031 --> 01:50:18,451
+Evet hepsini sağdan diyelim.
+
+820
+01:50:19,311 --> 01:50:20,972
+Sağdan, sağdan, sağdan.
+
+821
+01:50:22,231 --> 01:50:22,591
+Okey.
+
+822
+01:50:22,731 --> 01:50:26,091
+Now as you see as x goes to 0 from right hand side.
+
+823
+01:50:26,091 --> 01:50:45,631
+Bu bir belirsizlik veriyor. Burada bir sıkıntı var. Niye gelmedi? O belirsizlik verir. Bu çok karışık bir problem oldu. Zihnimden yazdım. Yine belirsizlik verdi.
+
+824
+01:50:45,631 --> 01:51:01,631
+Bu metod değil
+
+825
+01:51:06,323 --> 01:51:11,083
+So we have indeterminate form again. We cannot give any answer.
+
+826
+01:51:11,663 --> 01:51:18,244
+So, işlem hatası var mı? İşlem hatası yok. Şurada işlem doğru yaptık mı?
+
+827
+01:51:20,043 --> 01:51:25,563
+x eksi sinüs x bölü x terçiyeli çarparsam x kare bölü x eksi sinüs x.
+
+828
+01:51:26,504 --> 01:51:32,563
+x sıfıra giderken sıfır bölü sıfır geldi. 2x bölü 1 eksi kosinüs x.
+
+829
+01:51:32,563 --> 01:51:37,524
+x, rho, içe olmuyor.
+
+830
+01:51:39,063 --> 01:51:45,004
+Teacher, x square over 1 minus sin x, not x minus sin, right?
+
+831
+01:51:45,803 --> 01:51:47,463
+x minus sin is x.
+
+832
+01:51:48,643 --> 01:51:53,084
+So if you simplify this, x minus sin is x over x,
+
+833
+01:51:53,763 --> 01:51:59,643
+maybe when you simplify this, x square over x minus sin is x.
+
+834
+01:52:00,684 --> 01:52:00,904
+Here.
+
+835
+01:52:00,903 --> 01:52:02,763
+1-sinüs x değil mi?
+
+836
+01:52:03,803 --> 01:52:04,203
+Alt taraf.
+
+837
+01:52:05,603 --> 01:52:07,603
+1-sinüs x bölü x.
+
+838
+01:52:09,043 --> 01:52:10,544
+Tamam mı? Yanlış yok ya. Doğru.
+
+839
+01:52:10,803 --> 01:52:14,523
+İşlem hatası yok. Ben haftaya bakarım size arkadaşlar. Unutturmayın bunu.
+
+840
+01:52:14,643 --> 01:52:17,044
+Şimdi bakacağım. Ben haftaya size tekrardan bunu çözerim.
+
+841
+01:52:17,523 --> 01:52:21,803
+Soru da sıkıntılı olabilir. Kafamdan yazdığımdan dolayı. Tamam mı?
+
+842
+01:52:22,563 --> 01:52:24,763
+Burada we cannot give any answer.
+
+843
+01:52:25,663 --> 01:52:25,883
+Okay?
+
+844
+01:52:27,883 --> 01:52:28,923
+See you next week.
+
+845
+01:52:28,923 --> 01:52:39,404
+Haftaya ben size bunu açıklayacağım neden böyle geldi. Şu an göremedim ya da sonrada bir sıkıntı var. Kesin bir net cevap vereceğim haftaya tamam mı gençler? Haftaya görüşmek üzere.
+
+846
+01:53:00,948 --> 01:53:04,327
+Evet. Görüşmek üzere gençler. Kendinize iyi bakın.
