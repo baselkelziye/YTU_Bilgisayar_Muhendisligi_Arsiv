@@ -1,0 +1,2259 @@
+1
+00:00:07,155 --> 00:00:07,875
+çıçı
+
+2
+00:00:32,692 --> 00:01:00,471
+Günaydın arkadaşlar. Bugün birlikte son dersimizi yapacağız. Başlangıçta şöyle bir şey oldu. Canlı ders açılmadı. Yani daha doğrusu canlı ders sekmesi bile çıkmadı. Buradan herhalde şu işareti almamız gerekiyor. Artık yeterince ders yaptık. Dönemin sonuna geldik. Burada yavaş yavaş bitirmeniz gerekiyor.
+
+3
+00:01:00,471 --> 00:01:10,031
+Bugün o yüzden kısa bir ders yapacağım şeyi de biliyorum çok sıkışık vaziyette herkesin ödev yetiştirmeye çalıştığını vesaire de biliyorum
+
+4
+00:01:10,031 --> 00:01:17,931
+Geçen hafta şeyi konuşmuştuk işbirlikçi filtrelerden bahsetmek üzerine konuşmuştuk
+
+5
+00:01:17,931 --> 00:01:29,031
+Aslında makine öğrenmesinin klasik ders programlarında işbirlikçi filtreler daha doğrusu tavsiye sistemleri yoktu
+
+6
+00:01:29,032 --> 00:01:36,552
+fakat son yıllarda makine öğrenmesinin en başarılı uygulama alanlarından birisi tavsiye sistemleri oldu.
+
+7
+00:01:36,552 --> 00:01:47,492
+Özellikle internet ortamında hizmet veren pek çok firma tavsiye sistemlerinden faydalanıyor.
+
+8
+00:01:47,611 --> 00:01:57,212
+Müşterilerine bir şeyler önermek, satış oranını arttırmak için en çok bu tavsiye sistemleri kullanan öncü kuruluşlar.
+
+9
+00:01:57,211 --> 00:02:04,951
+yani bunu ilk başta kullanıp da faydasını gören ve yayılmasını sağlayanlar çoğunuz biliyorsunuzdur.
+
+10
+00:02:04,951 --> 00:02:25,211
+Başlangıçta Netflix aslında daha sonra şu anda işte Amazon, YouTube ondan sonra Pinterest, Google aklınıza gelebilecek pek çok internet üzerinden milyonlarca müşteriye yayın yapan kuruluş.
+
+11
+00:02:25,211 --> 00:02:38,011
+bu tavsiye sistemlerinden faydalanıyor. O yüzden ben son 3-4 senedir derslerde tavsiye sistemlerinin nasıl kullanıldığından da bahsediyorum.
+
+12
+00:02:38,951 --> 00:02:52,231
+Şimdi öncelikle tavsiye sistemi ne? Aslında sizler de bunun internet alışverişlerinde veya Netflix'te film izlerken vesaire görüyorsunuzdur.
+
+13
+00:02:52,231 --> 00:02:55,831
+sistem size bir şeyler öneriyor.
+
+14
+00:02:55,831 --> 00:03:04,351
+Ya işte en basit temel tavsiye şey, işte çok satan kitapları öneriyor.
+
+15
+00:03:04,531 --> 00:03:08,791
+Diyelim ki işte şu anda popüler olan kitaplar şunlardır.
+
+16
+00:03:09,151 --> 00:03:21,291
+Bu şekilde sizin şeyin çoğunluğun beğendiği ürünlerden haberdar olmamız, popüler ürünlerden haberdar olmamızı sağladı.
+
+17
+00:03:21,291 --> 00:03:29,991
+Şimdi bu genel bir tavsiye ama aslında önemli olan kişiselleştirilmiş olan tavsiyeler.
+
+18
+00:03:29,991 --> 00:03:41,771
+Yani size uygun öneriler gelirse sizin o ürünü alma olasılığınız artacak.
+
+19
+00:03:41,951 --> 00:03:49,591
+Yani sizin zevkinize uygun, size göre kişiselleştirilmiş bir tavsiye yapılabilmesi bu noktada önemli.
+
+20
+00:03:49,591 --> 00:03:54,211
+Şimdi çalışmalar zaten bunun üzerine yoğunlaşıyor.
+
+21
+00:03:54,211 --> 00:03:58,371
+Yani ne yaparız da biz arttırırız.
+
+22
+00:03:58,791 --> 00:04:07,791
+Nedir? Satın almayı, müşterilerin arttırırız. Satın alma miktarını arttırırız.
+
+23
+00:04:08,091 --> 00:04:16,151
+Şimdi bu noktada baktığımızda aslında işte tavsiye sistemlerini şöyle şey yapabiliriz.
+
+24
+00:04:21,716 --> 00:04:23,315
+değerlendirebiliriz.
+
+25
+00:04:38,995 --> 00:04:42,615
+En temel, kalem yazmadı da ona bir şey ediyorum.
+
+26
+00:04:43,535 --> 00:04:46,095
+İçerik tabanlı tavsiye sistemleri.
+
+27
+00:04:46,195 --> 00:04:48,995
+Bunlar aslında şeye bakıyorlar.
+
+28
+00:04:49,215 --> 00:04:59,375
+İçerik tabanlı tavsiye sistemleri genel olarak makine öğrenmesinin en temel klasik yöntemlerini kullanarak
+
+29
+00:04:59,375 --> 00:05:02,375
+genel kişilerin özelliklerine bakıyorlar.
+
+30
+00:05:02,375 --> 00:05:23,975
+Mesela nedir? İşte üniversite mezunu, ondan sonra bilmem kaç yaşını geçmiş, spor yapan, sanatla ilgilenen vesaire belli özellikteki kişilere ben ne önerebilirim diye öneride bulunuyorlar.
+
+31
+00:05:23,975 --> 00:05:28,635
+Şu yaşlarda bu kişilere ne önerebilirim diye öneride bulunan sistemler.
+
+32
+00:05:28,635 --> 00:05:52,896
+Bunlar genel olarak şeye bakmadan sizin daha önceki bir film önerecek, izlediğiniz filmler, şunlar, bunların değerlendirilmesini size özellik olarak benzeyen kişilere göre öneride bulunan sistemler.
+
+33
+00:05:52,896 --> 00:06:09,095
+İlk sistemler aslında böyle sistemler. Size benzeyen kişilerin beğendiği şeyleri öneren sistemler veya şeyi öneren sistemler.
+
+34
+00:06:09,095 --> 00:06:17,875
+Yani ne bileyim işte siz diyelim ki sosyal içerikli filmler izliyorsunuz.
+
+35
+00:06:18,176 --> 00:06:20,896
+Size sosyal içerikli filmler öneriyor.
+
+36
+00:06:20,896 --> 00:06:24,356
+İşte ne bileyim romantik filmler izliyorsunuz.
+
+37
+00:06:24,375 --> 00:06:25,936
+Size romantik filmler öneriyor.
+
+38
+00:06:26,095 --> 00:06:28,856
+Yani orada bir şey yok aslında.
+
+39
+00:06:29,076 --> 00:06:34,495
+Daha böyle aşırı bir kişiselleştirme yok.
+
+40
+00:06:34,495 --> 00:06:39,396
+size benzeyeni bulma, daha çok dediğim gibi yaşaya göre benzeyeni bulma,
+
+41
+00:06:39,835 --> 00:06:54,156
+işte sizin gibi özellikleri benzeyen, özelliklerde mezun olduğu okul, yaşı, yaptığı sporlar vs. gibi özellikleri benzeyen insanların seçimini önermek
+
+42
+00:06:54,156 --> 00:07:02,955
+veyahut da sizin daha önceki şeylerinize bakarak romantik filmleri seviyor, o zaman romantik filmi öneriyim gibi bir yaklaşım.
+
+43
+00:07:02,955 --> 00:07:17,535
+İkinci yaklaşım ise işbirlikçi filtreler. Bu yaklaşım aslında en çok şu anda kullanılan yaklaşım. Burada şöyle bir şey var.
+
+44
+00:07:17,535 --> 00:07:24,155
+Şimdi normalde mesela film zevkimize baktığınız zaman şu var.
+
+45
+00:07:25,575 --> 00:07:33,895
+Diyelim ki komedi filmleri izliyoruz ama her türlü komedi filmini izlemiyoruz.
+
+46
+00:07:33,895 --> 00:07:44,895
+Yani diyelim sizin izlediğiniz filmler daha böyle komedi filmi mesela Cem Yılmaz'ın filmi.
+
+47
+00:07:45,588 --> 00:07:47,367
+türü sizin daha çok
+
+48
+00:07:47,367 --> 00:07:49,308
+hoşunuza gidiyor ama bir de diyelim şeyler
+
+49
+00:07:49,308 --> 00:07:51,347
+var işte Orecibe Vedic türü filmler var
+
+50
+00:07:51,347 --> 00:07:53,387
+onlar aslında sizin çok da
+
+51
+00:07:53,387 --> 00:07:55,647
+ilginizi çekmiyor
+
+52
+00:07:55,647 --> 00:07:57,027
+bu arada sadece
+
+53
+00:07:57,027 --> 00:07:59,548
+komedi filmi de izlemiyorsunuz
+
+54
+00:07:59,548 --> 00:08:01,827
+işte biyografi de izliyorsunuz
+
+55
+00:08:01,827 --> 00:08:03,188
+dram da izliyorsunuz
+
+56
+00:08:03,188 --> 00:08:03,928
+daha farklı
+
+57
+00:08:03,928 --> 00:08:06,987
+seçimleriniz de var dolayısıyla
+
+58
+00:08:06,987 --> 00:08:09,307
+bir tek şeye indirgemek de doğru değil
+
+59
+00:08:09,307 --> 00:08:11,387
+yani komedi
+
+60
+00:08:11,387 --> 00:08:13,327
+filmi izliyor diye indirgemek de
+
+61
+00:08:13,327 --> 00:08:15,227
+doğru değil orada da mesela biyografilerde
+
+62
+00:08:15,227 --> 00:08:24,247
+Diyelim ki daha çok sanatçıların biyografisini izliyorsunuz veya siyasetçilerin biyografisini izliyorsunuz.
+
+63
+00:08:24,367 --> 00:08:28,967
+Böyle daha orada bir alt gruplarınız var, seçtiğiniz gruplarınız var.
+
+64
+00:08:29,047 --> 00:08:31,588
+Şimdi normalde aslında hepimiz bunu böyle yapıyoruz.
+
+65
+00:08:32,087 --> 00:08:35,207
+Yani seçimlerimiz çok kaba seçimler değil.
+
+66
+00:08:35,948 --> 00:08:39,007
+Genel olarak alt seçimlerimiz var.
+
+67
+00:08:39,007 --> 00:08:41,847
+Şimdi işbirlikçi filtrelerdeki hedef bu.
+
+68
+00:08:41,847 --> 00:08:47,067
+İşbirlikçi filtreler diyor ki yani tamam ben öyle şeye bakmayacağım.
+
+69
+00:08:47,347 --> 00:08:51,808
+Yani ana başlığa bakıp da komedi izliyor komedi göstereyim demeyeceğim.
+
+70
+00:08:53,387 --> 00:09:00,787
+Seçtiği şeylere bakarak, itemlere bakarak öyle öneride bulunacağım.
+
+71
+00:09:01,067 --> 00:09:03,567
+Yani işbirlikçi filtrelerin şeyi bu.
+
+72
+00:09:03,567 --> 00:09:31,647
+Seçtiği şeylere bakarak, daha önceki seçimlerine bakarak ve bu seçimleri diğer kişilerin yaptığı seçimlerle eşleyerek bize benzeyen kişilerin ya bize benzeyen kişilerin yaptığı seçimlere göre bize tavsiyede bulmak
+
+73
+00:09:31,647 --> 00:09:46,367
+Ya da benzeyen ürünlere göre tavsiyede bulunmak. Yani bir ürünü önerecekse bu ürüne benzeyen ürünlere göre tavsiyede bulunmak.
+
+74
+00:09:46,768 --> 00:09:59,347
+Yani diyelim ki işte siz zaten Cem Yılmaz türü komedi filmlerine yüksek puan verdiyseniz bunlara benzeyen bir filmi size önermek gibi.
+
+75
+00:09:59,347 --> 00:10:10,607
+Şimdi kolaboratif filtreler o açıdan iki şeyde değerlendiriyor. Birincisi bellek tabanlı, ikincisi model tabanlı.
+
+76
+00:10:12,087 --> 00:10:22,747
+Bellek tabanlı dediğimizde, şimdi bizim için bir kullanıcılar var, film izleyen kullanıcılar var, bir de filmler var.
+
+77
+00:10:22,748 --> 00:10:35,528
+Aslında bütün olay bunun etrafında dönüyor. Kullanıcılar ve itemler, Amazon için satılan ürünler, user da müşteriler.
+
+78
+00:10:35,988 --> 00:10:47,628
+Dolayısıyla bu memory tabanlı yöntemler tamamen bu kullanıcı ve ürün bilgilerini kullanarak işlem yapıyorlar.
+
+79
+00:10:47,627 --> 00:11:06,808
+Ve ya user item filtering diye bir kullanıcılar ve seçtikleri ürünlere bağlı olan filtreler var ya da item item filtering denilen şeye bağlı olan yani bir ürüne benzeyen ürünlere bağlı olan tavsiyeler var.
+
+80
+00:11:08,007 --> 00:11:10,087
+Şey bu şekilde mantık bu şekilde.
+
+81
+00:11:10,087 --> 00:11:13,107
+Şimdi o zaman şeyle başlayalım.
+
+82
+00:11:13,107 --> 00:11:17,347
+user based
+
+83
+00:11:17,347 --> 00:11:21,707
+ekranı mı görüyorsunuz değil mi?
+
+84
+00:11:25,364 --> 00:11:26,844
+Ekranını görüyor musunuz?
+
+85
+00:11:26,883 --> 00:11:27,883
+Evet, hocam.
+
+86
+00:11:27,963 --> 00:11:46,864
+Tamam. User-based filtrelerle başlayalım. Şimdi user-based filtrelerde şöyle bir şey var. Aslında bir şey için diyelim ki Amazon için Amazon'un müşterileri var ve bu müşterilerin yaptıkları satın almalar var ve verdikleri puanlar var.
+
+87
+00:11:46,864 --> 00:12:02,044
+Şimdi biz burada şey üzerinden gideceğiz. Örneği puan üzerinden yapacağız. Diyelim ki Netflix'te kullanıcılar izledikleri filmlere 1 ile 5 arası puan veriyorlar. 5 en yüksek puan, 1 en düşük puan olmak üzere.
+
+88
+00:12:02,044 --> 00:12:19,743
+Şimdi şurası şeyi gösteriyor, kullanıcıları gösteriyor. Mesela işte Ali, Ayşe, Can bunlar kullanıcılarınızı gösteriyor. Burası da seçtiğimiz şeyleri gösteriyor, filmleri gösteriyor.
+
+89
+00:12:19,743 --> 00:12:24,803
+movie1, movie2, movie3, movie4 diye burada şeyler var.
+
+90
+00:12:25,043 --> 00:12:33,724
+Şimdi şu taraf bizim user tarafımız, bu taraf da bizim item tarafımız.
+
+91
+00:12:33,724 --> 00:12:41,343
+Şimdi burada aslında hesaplamalar bu mantıkta bizim verdiğimiz
+
+92
+00:12:41,343 --> 00:13:11,323
+Música
+
+93
+00:12:47,443 --> 00:13:05,183
+oylar bir matrisle tutuluyor. Tabii ki biz her şeye de oy vermiş değiliz. Sonuçta işte ne bileyim Ali ikinci filmi izlemiş, beş vermiş, dördüncü filmi izlemiş, dört vermiş gibi böyle bir şey var.
+
+94
+00:13:05,183 --> 00:13:17,323
+Şimdi diyelim ki şöyle yakın plana bakalım. Ali'ye izlemediği bir filmi önermek istiyoruz. İzlemediği filmlerin arasından,
+
+95
+00:13:17,443 --> 00:13:30,043
+bir şey önermek istiyoruz. Ne öneririz? En çok izleyebileceğini düşündüğümüz filmi önermemiz gerekiyor değil mi? Normalde size oluyor aslında şeyde yapıyor yani size bir şeyler öğreniyor.
+
+96
+00:13:30,603 --> 00:13:36,284
+İşte daha önce şunu izlediğine göre bunlar senin ilgini çekebilir diye filmler öneriyor. Bunu nasıl yapıyor?
+
+97
+00:13:36,284 --> 00:13:55,283
+Şimdi birinci yolu kullanıcı tabanlı filtreleme yöntemi. Burada yaptığı şey size benzeyen kullanıcıları bulmak. Şimdi benzerlik dediğimiz zaman aslında bu geçen hafta gördüğümüz varyans-po varyans meselesi.
+
+98
+00:13:55,283 --> 00:14:10,183
+benzerliği ölçmek için iki tane yaklaşım kullanılıyor. Birincisi Pearson Coefficient, ikincisi de Cosine Simulator.
+
+99
+00:14:17,524 --> 00:14:33,524
+Şimdi RA ve RU, A ve U kullanıcılarının rating verdiği ratingler olsun. Ondan sonra...
+
+100
+00:14:35,827 --> 00:14:41,487
+işte M tane item için verdikleri şeyler olsun.
+
+101
+00:14:43,487 --> 00:14:44,927
+reytingler olsun.
+
+102
+00:14:45,708 --> 00:14:52,107
+Şey nedir? A ile bu kullanıcılarının reytinglerinin kovaryansı nedir?
+
+103
+00:14:52,527 --> 00:14:54,668
+Bunu geçen haftadan hatırlarsınız.
+
+104
+00:14:54,668 --> 00:14:57,787
+M tane item'ımız varsa eğer,
+
+105
+00:14:57,787 --> 00:15:26,087
+İYİNCİ AYTEM için verdiği reytingin A'nın verdiği ortalama reytinglerden farkı çarpı U'nun İYİNCİ AYTEM için verdiği reyting eksi U'nun kişinin verdiği reytinglerin ortalaması bölü M.
+
+106
+00:15:26,087 --> 00:15:46,127
+değil mi? Bu şey, covariance. Burada ortalama da işte M tane şey varsa, ürün varsa, işte film varsa bunların toplamını M'e bölüyorsunuz.
+
+107
+00:15:46,127 --> 00:15:57,127
+Yani burada bir şey yok aslında. Özel bir durum yok. Peki şey ne? Standart sakma ne? Onu da biliyorsunuz.
+
+108
+00:16:20,851 --> 00:16:24,851
+O zaman aslında dediğim gibi...
+
+109
+00:16:33,011 --> 00:16:39,571
+Geçen hafta derste görmüştük hatırlarsanız. Pearson correlation coefficient neydi?
+
+110
+00:16:40,931 --> 00:16:50,772
+A ve U kullanıcıları için benzerliği ölçmek için Pearson correlation coefficient
+
+111
+00:16:50,772 --> 00:16:55,612
+A ile U'nun covariansı bölüp
+
+112
+00:16:59,220 --> 00:17:25,819
+A ve O'nun verdiği reytinglere göre standart sapmaları. O zaman şimdi benzerliği ölçerken önce şunu yapacağız. Önce Pearson Coefficient ile
+
+113
+00:17:25,268 --> 00:17:27,268
+ağlı beynin
+
+114
+00:17:30,516 --> 00:17:53,635
+benzerliğini ölçeceğiz. Yani A kullanıcısıyla B kullanıcısının benzerliğini ölçeceğiz. Bunu ölçerken şeye dikkat edilmesi gerekiyor. İkisinin de oyladığı itemler olmalı. Yani şöyle düşünün. Şu A kullanıcısı olsun, şurada B kullanıcısı olsun, şurada da moviler var.
+
+115
+00:17:53,635 --> 00:18:14,935
+movie 1, movie 2, movie 3, movie 4. Şimdi A diyelim buna 4 verdi, buna 2 verdi, buna da 5 verdi, B de işte buna ne bileyim işte 5 verdi, buna da 3 verdi.
+
+116
+00:18:14,935 --> 00:18:40,275
+Şimdi değerlendirme yaparken sadece şu ikisine bakmanız gerekir. Neden? Çünkü B birinci filmi izlememiş. Dolayısıyla benzerliği ölçerken bütün kişilerin, A'nın diğer kişilere benzerliğini ölçerken bu böyle işte matriste şu taraf hatırlarsanız demiştik ki şu taraf user demiştik.
+
+117
+00:18:40,275 --> 00:18:43,435
+Şu tarafta item demiştik.
+
+118
+00:18:44,935 --> 00:19:03,835
+ne yapacaksınız? Bir ağ kişisinin kime benzediğini bulmak için önce şeyde bulunan, bu nedir? Matriste bulunan, rating matrisinde bulunan bütün izleyicilere benzerliğini tek tek ölçeceksiniz bu şekilde.
+
+119
+00:19:04,675 --> 00:19:14,395
+Similarity değerleri eksi birden artı bire kadar değişen değerler alırlar burada. Böylece şeyi bulmuş olacağız. Nedir?
+
+120
+00:19:14,935 --> 00:19:26,835
+ağ kullanıcısının benzediği kişileri bulacağız. Peki benzerlikleri ölçtükten sonra bunu nasıl değerlendirmeliyiz?
+
+121
+00:19:27,475 --> 00:19:31,855
+Genellikle yapılan yöntem şey K-N, nearest neighborhood ile
+
+122
+00:19:38,932 --> 00:19:40,771
+şurada bir ref o fazla oldu.
+
+123
+00:19:42,311 --> 00:19:55,952
+K-N, R-S, Neybrut'la burada yapmanız gereken şey en çok benzediği kişileri bulup onların üzerinden öneride bulmak.
+
+124
+00:19:55,952 --> 00:20:05,112
+Yani şimdi sonuçta biz neyin peşindeyiz? Ona benzeyen kişilerin beğendiği şeyleri önermenin peşindeyiz.
+
+125
+00:20:05,112 --> 00:20:18,351
+o zaman en çok benzeyen kar kişi çıkartılır. Ondan sonra da bu kişilerin beğendiği filmler önerilir.
+
+126
+00:20:18,351 --> 00:20:31,512
+Buradan da şunu yapmanız gerekir. P diyelim ki şey olsun nedir item olsun bizim itemımız olsun.
+
+127
+00:20:31,511 --> 00:20:51,971
+Şimdi önermek için şuna bakmanız lazım. Bu item'a ne kadar puan verebileceğini tahmin etmeniz gerekiyor. Şu bizim A user'ımız, şu da bizim P item'ımız. Şimdi diyelim ki ben şunu merak etmek istiyorum. M3 filmine ne verirdi bunu bilmek istiyorum.
+
+128
+00:20:51,972 --> 00:20:57,631
+Birinci yapacağımız şey önce ona en çok benzeyen K kişiyi bulmaya çalışmak.
+
+129
+00:20:57,631 --> 00:21:17,131
+Arkasından da bu K kişi için A'nın izlediği filmlerin ortalama reytingi RA bu şekilde verilmişken B'de en benzer K kişi olmak üzere pardon.
+
+130
+00:21:24,084 --> 00:21:34,563
+A'nın B'ye benzerliği, çarpı, B'nin o filme verdiği oy, eksi, B'nin varyansı da oluyor oradan işte o zaten.
+
+131
+00:21:34,563 --> 00:21:52,963
+B'nin genel olarak verdiği oy ortalaması, bölü, normalize etmek için A ile B'nin benzerliklerinin toplamı.
+
+132
+00:21:52,963 --> 00:22:11,163
+Şimdi bunu yaptığınız zaman şuradaki kişiler A'ya en çok benzeyen K kişi, diyelim ki K eşlikleri 3 için en çok benzeyen 3 kişi için şeye bakıyorsunuz.
+
+133
+00:22:12,843 --> 00:22:16,543
+Onların izlemişler o filmi tabii ki öyle bir şey olması gerekiyor.
+
+134
+00:22:17,483 --> 00:22:21,343
+Ondan sonra o filme verdikleri O'ya bakıyorsunuz.
+
+135
+00:22:21,343 --> 00:22:46,003
+Yani şöyle B diyelim ki bunu izlemiş, 4 vermiş. İşte şurada bir B, A'ya benzer çıkmış bir kişi olsun. İlk 3'e girmiş mesela K eşittir 3 için ilk 3'e girmiş bir kişi olsun. Aynı şekilde C'de ilk 3'e girmiş birisi olsun. Bunların işte 3. filme verdikleri puanlar var bu şekilde.
+
+136
+00:22:46,003 --> 00:22:52,804
+ve siz şeyi mi merak ediyorsunuz? Acaba A bu filme kaç puan verirdi? Bunu merak ediyorsunuz.
+
+137
+00:22:52,804 --> 00:23:07,024
+O zaman işte birinci olarak yapacağımız şey Pearson Correlation Coefficient ile A'nın B'ye öncelikle benzerliğini bulmak, arkasından A'nın en çok benzediği K kişiyi bulmak,
+
+138
+00:23:07,023 --> 00:23:25,483
+onun arkasından da bu K kişinin 3. filme verdikleri oylara göre şu P işte mesela 3. film olsun A'nın 3. filme ne oy verebileceğini tahmin etmeye çalışmak.
+
+139
+00:23:25,483 --> 00:23:35,883
+Şimdi bunu da yaptınız. O zaman birincisi similar şeyleri buldunuz. Neyse yazdım sıkışık oldu zaten.
+
+140
+00:23:35,884 --> 00:24:05,863
+birincisi şuradan göstereyim. Siz A kişisine benzeyen similar kullanıcıları buldunuz. Arkasından bunları K'nin yarısını bulduk da en çok benzerden, en az benzere göre ilk K tanesini seçtiniz. Ondan sonra A'nın şey yaptığı film için, izlemediği film için bu K kullanıcının reytinglerinden, yani tabii bu K kullanıcının bir de hem K kullanıcı olarak,
+
+141
+00:24:05,884 --> 00:24:33,363
+olacak hem de bu kişi bu filmleri izlemiş, yani üçüncü filmi izlemiş olması lazım bu işi yapabilmeniz için. Ondan sonra bu şekilde bir tahmin hesapladınız. Sonra ne yapmanız gerekiyor? Bir sonraki adımda yapmanız gereken şey, anın izlemediği filmler içinden tahmini, reytingi en yüksek olanları bulmak. Değil mi?
+
+142
+00:24:33,363 --> 00:24:44,283
+sonuçta şimdi diyelim ki şöyle bir şey buldunuz. İşte ağanın üçüncü filme prediction'ını ne bileyim 4.2 buldunuz.
+
+143
+00:24:54,036 --> 00:25:10,855
+izlemediği 7. filme prediction'ını 4.9 buldunuz. İzlemediği 12. filme prediction'ını da 2.8 buldunuz. O zaman A'ya ne önermeniz lazım burada? 7. filme önermeniz lazım.
+
+144
+00:25:10,855 --> 00:25:22,895
+Burada yapmanız gereken şey veya işte AKG 7'yi önerirsiniz, 3'ü önerirsiniz falan belli bir eşik seviyesinin üzerinde rate almış olanlardan.
+
+145
+00:25:24,036 --> 00:25:31,195
+Hangisi şeyse, neyse, nedir yüksekse bunları sadece önerirsiniz.
+
+146
+00:25:32,216 --> 00:25:38,216
+Şimdi bu şey bellek tabanlı bir yöntem.
+
+147
+00:25:38,216 --> 00:25:41,235
+Neden? Çünkü sadece şeye bakıyor.
+
+148
+00:25:42,616 --> 00:25:50,095
+Gerçekte işte ne bileyim sizin diğer özelliklerinize veya filmlerin diğer özelliklerine mesela şuna bakmıyor.
+
+149
+00:25:50,095 --> 00:26:19,015
+işte ne bileyim bu film efendim içeriği şöyle olan bir filmdir. Ondan sonra işte bilmem bu film festival filmidir bilmem ne nedir yani böyle bir herhangi bir şekilde bir bilgi başka özellik değerlendirmeden bu memory based yöntemi yaptığı tek şey verilen bilgilere göre
+
+150
+00:26:19,015 --> 00:26:28,915
+şeylere bakarak rating mantrisini kullanıp size benzeyen kullanıcıların seçimlerine göre size bir şey önermek.
+
+151
+00:26:28,915 --> 00:26:37,835
+Dolayısıyla burada bir şey yok. Yani makine öğrenmesi tabanlı böyle bir prediction yok aslında.
+
+152
+00:26:39,055 --> 00:26:44,295
+Sadece matematiksel olarak ratinglerin benzerliğine göre bir öneri yapmak var.
+
+153
+00:26:44,295 --> 00:26:48,215
+İkinci yaklaşım item tabağına
+
+154
+00:26:55,059 --> 00:27:13,059
+yaklaşın. Buradaki mantık itemlar arasındaki benzerliği bulmak. Yani şurada şöyle yine burada bizim user'larımız var. Şurada. Şurada da itemlarımız var.
+
+155
+00:27:14,132 --> 00:27:16,811
+işte şurada movie 1 var
+
+156
+00:27:16,811 --> 00:27:19,731
+movie 2
+
+157
+00:27:19,731 --> 00:27:22,271
+movie 3
+
+158
+00:27:22,271 --> 00:27:23,071
+movie 4
+
+159
+00:27:23,071 --> 00:27:25,851
+şu da şöyle
+
+160
+00:27:28,403 --> 00:27:29,323
+şiddet.
+
+161
+00:27:34,612 --> 00:27:36,391
+var. Şurada C'ye yazılıyor var.
+
+162
+00:27:36,711 --> 00:27:38,431
+Şimdi mesela item 1'e işte
+
+163
+00:27:38,431 --> 00:27:40,572
+bunlar böyle 5 vermiş.
+
+164
+00:27:41,151 --> 00:27:42,731
+3 vermiş. 4 vermiş.
+
+165
+00:27:42,912 --> 00:27:44,671
+İşte 2, 1
+
+166
+00:27:44,671 --> 00:27:46,211
+1 vermiş.
+
+167
+00:27:47,211 --> 00:27:50,171
+2
+
+168
+00:27:50,171 --> 00:27:52,751
+3
+
+169
+00:27:54,036 --> 00:27:56,855
+3 vermiş, 1, 4 vermiş
+
+170
+00:28:00,627 --> 00:28:25,427
+yok hadi şuna da 4-4 diyeyim. Şimdi burada şeyi bulmaya çalışıyorsunuz. Birbirine benzeyen itemleri bulmaya çalışıyorsunuz. Yani ben burada şunu merak ediyorum. A, M4'e yani şunu merak ediyorum. A kişisi M4'e ne verecek? Bunu bulmaya çalışıyorum.
+
+171
+00:28:25,427 --> 00:28:43,567
+Bu sefer bunu yaparken item olarak şeyi bulmaya çalışıyorum. Mesela movie 1'in en çok benzediği film hangisidir?
+
+172
+00:28:43,567 --> 00:28:54,107
+veya şimdi ben burada ağımın MUI 4'e ne vereceğini bulmaya çalıştığıma göre MUI 4'e en çok benzeyen item hangisidir onu bulmalıyım.
+
+173
+00:28:54,527 --> 00:28:58,787
+Ona göre de mesela şimdi burada MUI 1 ile MUI 4 birbirine benziyor.
+
+174
+00:28:58,787 --> 00:29:05,208
+Ona göre ben A kişisinin şeyini yapabilirim o zaman.
+
+175
+00:29:06,427 --> 00:29:08,947
+Nedir? Tahminini yapabilirim.
+
+176
+00:29:08,947 --> 00:29:20,988
+Şimdi aslında bu item to item şeyi tabanlı yaklaşım aslında daha çok kullanılıyor şeye göre.
+
+177
+00:29:21,168 --> 00:29:27,147
+Kişilerin, size benzeyen kişiler şunu izledikten çok yani şey daha çok yapılıyor.
+
+178
+00:29:27,147 --> 00:29:30,747
+Dikkat ederseniz şeyin de kullandı o, Netflix'in de kullandı o.
+
+179
+00:29:31,187 --> 00:29:38,247
+Yani o şeye bakıyor, sizin izlediklerinize bakıyor ve ondan sonra diyor ki işte sen şu filmi izlediğine göre
+
+180
+00:29:38,247 --> 00:30:04,567
+büyük bir ihtimalle şu filmden de hoşlanırsın diyor. Yani işte bilmem kaç milyon kişiye bakıp da oradan size benzeyen kişileri bulup da onların izlediklerine göre size bir şey tavsiye etmeye çalışmak yerine normalde şey yapıyor işte izlediğiniz filmlere bakıyor ona bağlı olarak sen bunları sevmiştin o zaman bunu da hoşlanırsın bundan da hoşlanırsın diye öneri de bulunuyor.
+
+181
+00:30:04,567 --> 00:30:18,047
+Bu da en çok kullanılan yani item to item şeyde, collaborative filtrede en çok kullanılan ve başarılı olan cosine similarity.
+
+182
+00:30:23,251 --> 00:30:43,251
+Yani kosen similesi biliyorsunuz iki vektör arasındaki açının ölçülmesi. Açı ne kadar küçükse iki vektör o kadar yakın birbirine demektir. Dolayısıyla işte A ve B item'larının benzerliği
+
+183
+00:30:43,251 --> 00:31:00,251
+Şimdi u şeyleri göstermek üzere A ve B itemlarını oylayan kullanıcıları göstermek üzere
+
+184
+00:31:00,251 --> 00:31:08,131
+A ve B itemlarının şu bunlar itemlar
+
+185
+00:31:08,131 --> 00:31:11,251
+A ve B itemları
+
+186
+00:31:15,347 --> 00:31:17,588
+A ve B'yi
+
+187
+00:31:21,172 --> 00:31:22,311
+öğret eden
+
+188
+00:31:29,236 --> 00:31:30,795
+kullanıcılar
+
+189
+00:31:35,188 --> 00:31:37,188
+U item'ın ortalaması
+
+190
+00:31:37,188 --> 00:31:44,188
+U kullanıcılarının ortalaması, pardon özür dilerim
+
+191
+00:31:44,188 --> 00:31:48,188
+ve normalize ediyoruz burada da
+
+192
+00:32:31,763 --> 00:32:34,763
+Ona göre de prediction'ı şu şekilde yapıyoruz.
+
+193
+00:33:16,115 --> 00:33:32,275
+aslında şey önemli, sonuçta önerirken en çok similarity sonucunda en çok benzeyenleri aslında, en çok benzeyen itemların üzerinden ilerlemeniz önemli.
+
+194
+00:33:32,415 --> 00:33:38,995
+Yani sonuçta bütün itemlar için similarity ölçeceksiniz. Yine burada K şeyli nedir?
+
+195
+00:33:38,995 --> 00:33:44,475
+en çok benzeyen şeyin üzerinden ilerlemeniz önemli.
+
+196
+00:33:45,115 --> 00:33:47,635
+Itemların üzerinden ilerlemeniz önemli.
+
+197
+00:33:49,235 --> 00:33:54,796
+Şimdi burada tabii sıkıntılar var.
+
+198
+00:33:54,935 --> 00:33:56,635
+Buraya kadar sormaksiniz bir şey var mıydı?
+
+199
+00:33:56,735 --> 00:33:57,915
+Bugün hiç sesiniz çıkmıyor.
+
+200
+00:33:58,095 --> 00:33:59,355
+Şöyle geri döneyim bakayım.
+
+201
+00:34:00,656 --> 00:34:02,296
+Artık çok yoruldunuz herhalde.
+
+202
+00:34:08,371 --> 00:34:09,651
+sorunuz var mı diye kadar?
+
+203
+00:34:14,003 --> 00:34:15,503
+yok hocam.
+
+204
+00:34:15,503 --> 00:34:16,263
+yok peki.
+
+205
+00:34:18,143 --> 00:34:19,343
+tamam peki.
+
+206
+00:34:20,023 --> 00:34:23,123
+o zaman burada size ben şeyi sorayım.
+
+207
+00:34:23,243 --> 00:34:30,363
+bu yöntemin yani user-based veya item-based yöntemin sizce problem yaşayacağı noktalar ne olabilir?
+
+208
+00:34:35,155 --> 00:34:40,155
+Hocam, film ve kullanıcı sayısı çok fazla olunca belki yavaş çalışabilir.
+
+209
+00:34:40,155 --> 00:34:46,155
+Çok doğru. Birinci problem aslında...
+
+210
+00:34:54,291 --> 00:35:17,371
+Sparsity problemi aslında söylediğiniz. O da şu, yani Netflix'i düşünün. Burada diyelim ki işte milyon tane film var, şey kullanıcı var. Kullanıcılar milyon tane. Herhalde filmlerde yani on binlerce falan vardır. Bilmiyorum.
+
+211
+00:35:17,371 --> 00:35:40,351
+Bayağı bir şey var orada çünkü. Bunlar da itemlarınız olsun. Aslında çok büyük bir matriziniz var. Fakat bir kişinin en fazla seyredeceği film diyelim ki işte gerçi bu kapalılık zamanında herkes şey yaptı herhalde ne var ne yok seyretmeye başladı.
+
+212
+00:35:40,351 --> 00:35:51,211
+zevkten falan da seçici olmaktan da uzaklaşıp diyelim ki burada ağa kişisi topu topu 200 film izliyor.
+
+213
+00:35:52,631 --> 00:36:01,171
+200 bile hani fazla, ten tağ olsun, terayda bu da 10 binlerce falan olabilir yani bilmiyorum bayağı bir şey var çünkü diziler, filmler, bilmem neler.
+
+214
+00:36:01,171 --> 00:36:02,372
+Bir sürü bir şeyler var.
+
+215
+00:36:02,372 --> 00:36:06,071
+veya Amazon'u düşünün diyelim ki Amazon'un ürünlerini düşünün.
+
+216
+00:36:06,452 --> 00:36:13,391
+On binlerce ürün var. Çarşaftan işte bilmem kitaba, kaleme, aklınıza ne gelirse bir sürü ürün var.
+
+217
+00:36:13,931 --> 00:36:21,172
+Ve milyonlarca yani milyar bile olabilir Amazon'da dünya çapında değerlendirdiğimizde kullanıcı var.
+
+218
+00:36:21,172 --> 00:36:31,132
+Fakat bir kullanıcının aslında yaptığı alışverişte elli tane, yüz tane şey var, ürün var, farklı ürün var.
+
+219
+00:36:31,131 --> 00:36:54,791
+Şimdi burada arkadaşınızın söylediği gibi öncelikle temel problem kullanıcı benzerliğine bakacaksak yani ağ kişisi kimlere benziyor ya bakacaksak bu gerçek dünyada kullanılamayan bir yöntem. Neden? Çünkü gerçek dünyada yani orada milyonlarca kişi arasından size benzeyen birini bulmaya çalışmak son derece yavaş bir şey.
+
+220
+00:36:54,791 --> 00:37:09,971
+Birinci problem bu burada. Aslında item to item'da da aslında öyle. Orada on binlerce item var ama sizler diyelim ki topu topu işte elli tane ürün almışsınız.
+
+221
+00:37:09,971 --> 00:37:19,452
+Yani onu bile yapmayız. Genellikle aldığımız işte kitap alıyoruzdur on tane falan yani on farklı ürün alıyoruzdur belki.
+
+222
+00:37:19,452 --> 00:37:35,752
+Yani dolayısıyla şey ilk problem şeyin çok fazla büyük olması, eleman sayısının çok fazla olması yani matrisin büyüklüğü problem karmaşıklık açısından.
+
+223
+00:37:36,272 --> 00:37:43,491
+İkincisi de matrisin boşluğu problem yani bu matrisin bayağı sparski matris. Ekranı görüyor musunuz?
+
+224
+00:37:44,812 --> 00:37:45,752
+Evet hocam.
+
+225
+00:37:45,751 --> 00:38:13,211
+bir an gitti gibi oldu. Bayağı sparski matris yani çok büyük boşluklar var. Dolayısıyla iki yaklaşımda burada sıkıntı çekiyor. User-based, item-based de sıkıntı çekiyor. Hem boşlukların fazlalığından ötürü hem de şeyin büyüklüğünden ötürü. Yani user-to-user yapmaya çalışsanız orada karşılaştırmanız gereken benzerlik olmak için milyonlarca kişi var.
+
+226
+00:38:13,211 --> 00:38:24,691
+ve burada da çok büyük boşluklar var aslında. Yani herkesin ortak izlediği bir şeyleri bulmaya çalıştığımızda çok fazla boşluklar var. Birinci problem bu. İkinci ne olabilir?
+
+227
+00:38:25,831 --> 00:38:26,571
+Cold start.
+
+228
+00:38:27,491 --> 00:38:41,251
+Evet kesinlikle ikinci problemimiz cold start problemi. Cold start problemi nedir? Cold start problemi de yeni bir item'ı nasıl önereceğim veya yeni bir kullanıcıya ne önereceğim?
+
+229
+00:38:43,211 --> 00:38:47,111
+Yani ikisi de var. Yeni item'ı da önermesi zor.
+
+230
+00:38:47,472 --> 00:38:59,371
+yeni kullanıcıya bir şey önermesi zor. O kullanıcıya benzer kişileri bulabilmek için önce o kullanıcının bir şeyler izlemesi, bir şeyler alması falan gerekiyor.
+
+231
+00:38:59,892 --> 00:39:07,371
+Dolayısıyla Code Start problemi de bu yaklaşımda bir problem. Bir süre biriktirmeniz gerekiyor bir şeyler.
+
+232
+00:39:13,371 --> 00:39:14,371
+Başka...
+
+233
+00:39:13,972 --> 00:39:16,351
+aklınıza gelen başka ne problem olabilir?
+
+234
+00:39:25,012 --> 00:39:32,992
+Süreç içerisinde hep aynı önerilerde bulunması bir problem olabilir mi hocam? Sömürü ve keşif diye ifade edilen.
+
+235
+00:39:34,631 --> 00:39:36,611
+Son söylediğinizi duyamadım.
+
+236
+00:39:37,972 --> 00:39:47,591
+Süreç içerisinde, yani zaman ilerledikçe sürekli aynı önerilerde bulunması bir problem olabilir mi? Sömürü ve keşif diye ifade ediliyor bildiğim kadarıyla ama.
+
+237
+00:39:47,591 --> 00:39:59,831
+Evet o da bir problem doğru sürekli şeyleri aynı şeyleri öneriyor olması doğru o da bir problem başka
+
+238
+00:40:06,003 --> 00:40:07,263
+Güzel, o da doğru.
+
+239
+00:40:10,023 --> 00:40:12,863
+Hocam şöyle bir düşüncem var ama ne kadar doğru bilmiyorum.
+
+240
+00:40:15,183 --> 00:40:19,823
+Kullanıcı ve film sayısı çok fazla arttığı zaman bunlar biz eksi bir ile bir arasında sıkıştırıyoruz ya.
+
+241
+00:40:19,983 --> 00:40:22,524
+Birbirine yakın çok filmler çıkabilir belki.
+
+242
+00:40:22,903 --> 00:40:29,924
+Yani aslında aynı kullanıcı, onlar öğrenmemesi lazım ama çok fazla olduğu için yakın çıkıyor birbirine.
+
+243
+00:40:30,924 --> 00:40:31,643
+Aynı şey.
+
+244
+00:40:35,443 --> 00:40:39,904
+bir son söylediğinizi yine duyamadım ben.
+
+245
+00:40:41,083 --> 00:40:48,843
+Hocam, şöyle, kullanıcı ve film sayısı çok fazla olduğu zaman, mesela reyting alıyoruz ya, ortalama işte en çok benzeyen reyting.
+
+246
+00:40:50,603 --> 00:41:02,864
+Eksi bir ile bir arasında tüm kullanıcıları çarpışta, filmleri sıkıştırdığımız zaman, hani aynı o birine benzeyen reyting sayısı çok fazla olan kişi olabilir, kullanıcı olabilir yani.
+
+247
+00:41:02,864 --> 00:41:21,503
+Aslında o çok kötü olmayabilir. Yani birbirine benzeyen kullanıcı sayısı fazla olursa zaten onların önerdiğini öneriyor. O o kadar çok kötü olmayabilir. Ama şey kötü olabilir aslında.
+
+248
+00:41:21,503 --> 00:41:40,363
+belki çok fazla izleyince şu anda bence o oldu ama rating veriyorsun yani rating verdiğin için o da bir problem olmaz. Artık her önüne geleni izliyorsun çok aslında zevkine uygunluğu karışıyor.
+
+249
+00:41:40,363 --> 00:41:44,603
+şeyde artık reyting yok çünkü farkındaysanız şeyler reyting yapmıyorlar.
+
+250
+00:41:45,103 --> 00:41:47,703
+Netflix'te ilk başta başladığında reyting alıyordu.
+
+251
+00:41:47,844 --> 00:41:49,603
+Şimdi sadece like this like yapıyor.
+
+252
+00:41:50,343 --> 00:41:51,583
+Yani daha böyle kesin bir şey.
+
+253
+00:41:51,703 --> 00:41:54,283
+Belki onunla bir sıkıntı oluyor mudur onu bilemedim.
+
+254
+00:41:54,443 --> 00:41:58,823
+Yani o kadar karışmaya başlıyor mudur, düşüyor mudur onu bilemedim.
+
+255
+00:41:59,823 --> 00:42:01,483
+Şey sıkıntısı var.
+
+256
+00:42:06,452 --> 00:42:33,591
+Yani bu da aslında bir problem. First Trader sıkıntısı çok mesela kıyıda köşede kalmış bir şeyi oylayan kimse olmayabilir. Yani az önce aslında aynı önerilerle benzeyen bir mantık burada. Hani hep aynı şeyleri öneriyor dediniz ya, dedi ya bir arkadaşınız. O aslında bu mantık oradaki ile kesişen bir mantık.
+
+257
+00:42:33,591 --> 00:42:48,292
+yani hep aynı şeyler önerildiği için bazı şeyler hiç dikkat çekmemeye başlayabilir. Burada da şey var yani yine böyle işte çok böyle ne bileyim aşırı sanat gibi bir film var.
+
+258
+00:42:48,292 --> 00:43:00,651
+Aslında izleseniz çok beğeneceksiniz ama kimse uğraşıp izlemiyor, kimse izlemeyince kimse önermiyor falan. Bir de köşede kalıyor. Yani sadece hani cold start aslında bu ama bu farklı bir cold start.
+
+259
+00:43:00,651 --> 00:43:09,731
+Film orada duruyor aslında yani çok uzun zamandır duruyor fakat izlemeyince izlenmiyor farkına varılmıyor yani bu da bir problem
+
+260
+00:43:17,972 --> 00:43:19,972
+Bir de şey var
+
+261
+00:43:25,204 --> 00:43:42,843
+çok böyle nedir? Özel zevkleri olan kişilere de bir şey önermek çok zor olabilir. Mesela çok okuduğu kitaplar diyelim ki genelliğin yaptığı seçimlere benzemiyor.
+
+262
+00:43:42,843 --> 00:43:55,003
+Yani ne bileyim diyelim şeyle ilgili felsefe ile ilgili kitap okuyanların, felsefe kitabı okuyan birisi ama böyle yine bir alt başlık aslında.
+
+263
+00:43:55,204 --> 00:44:01,143
+fakat orada bile seçim yapanların hiç tercih etmeyeceği şeyler seçiyor.
+
+264
+00:44:01,143 --> 00:44:05,163
+Yani o zevke benzeyen çok kişi yok.
+
+265
+00:44:05,284 --> 00:44:06,823
+O zaman da zorluk olabilir.
+
+266
+00:44:06,943 --> 00:44:09,303
+Bu çok büyük bir problem olduğunu düşünmüyorum ben.
+
+267
+00:44:09,384 --> 00:44:16,983
+Çünkü artık kullanım sayısı çok fazla arttığında mutlaka birilerine benzeyen, çok nadirdir birilerine benzeyen birileri çıkıyor.
+
+268
+00:44:17,343 --> 00:44:21,244
+Burada şeylerin ben sıkıntı olabileceğini düşünüyorum.
+
+269
+00:44:21,384 --> 00:44:22,983
+Siz de fark ediyorsunuzdur.
+
+270
+00:44:22,983 --> 00:44:30,583
+mesela Netflix izleyicisiyseniz Netflix'te kullanıcı tanımlıyorsunuz aslında.
+
+271
+00:44:32,043 --> 00:44:37,244
+Dolayısıyla onun sebebi aslında o kullanıcının zevkini anlamak için o kullanıcı tanımlatıyor.
+
+272
+00:44:37,244 --> 00:44:44,103
+Çocuk kullanıcılar dışında mesela ebeveynlerin izledikleriyle gençlerin izledikleri aynı tür şeyler değil.
+
+273
+00:44:44,204 --> 00:44:48,064
+Dolayısıyla o kullanıcılara bakarak aslında size bir şeyler öneriyor.
+
+274
+00:44:48,064 --> 00:45:05,324
+Fakat şey de genelde tembellikten ötürü kişiler filmi izlerken siz yapıyor musunuz mesela kullanıcı değiştirmiyorlar kullanıcı değiştirmezsen bu sefer karışıyor aynı şeyin içerisinde
+
+275
+00:45:05,324 --> 00:45:14,183
+Vurdulu Kırdulu filmler işte bilmem şey filmler komedi filmleri bilmem neler yani 3-4 farklı kişinin zevkleri bir arada olabiliyor
+
+276
+00:45:14,183 --> 00:45:27,723
+o da mesela şey bir şey değil aslında. Değerlendirmeyi yapmak için zorlaştırıcı bir özellik bence. Değil mi? Yani orada öyle de bir sıkıntı var.
+
+277
+00:45:27,723 --> 00:45:44,123
+Peki, yani bunlar şey olan genel olarak kolaboratif filtrelerin şeylerin de memory bezelerinde sıkıntı olan genel problemler
+
+278
+00:45:44,123 --> 00:45:55,803
+Şimdi kolaboratif filtrelerin ikinci türü şey filtreler, model tabanlı filtreler
+
+279
+00:45:55,803 --> 00:46:15,803
+model tabanlı filtrelerdeki mantık şöyle bir mantık. Burada deniyor ki şey de nedir? Genelde aslında başka özellikleri de dikkate alarak şey yapmak lazım, öneride bulunmak lazım.
+
+280
+00:46:15,803 --> 00:46:29,783
+sadece kullanıcı bilgilerini değerlendirerek önermek yerine başka özelliklerini de kullanıcıların değerlendirerek öneride bulunmak lazım.
+
+281
+00:46:29,783 --> 00:46:36,783
+Dolayısıyla model tabanlı filtreler bayağı şey gibi nedir?
+
+282
+00:46:38,443 --> 00:46:45,503
+Makine öğrenmesi yöntemlerini kullanarak modellere göre şey öneriyorlar.
+
+283
+00:46:45,803 --> 00:47:10,443
+model kurarak, şuraya geri geleyim, ürün öneriyorlar. Model tavanlı sistemlerin yaptığı şeyler genellikle işte PCA, ondan sonra Singular Value Decomposition, Neural Network, Matrix Factorization gibi
+
+284
+00:47:10,443 --> 00:47:19,783
+yöntemler kullanıyorlar ve boyut azaltıyorlar öncelikle.
+
+285
+00:47:27,123 --> 00:47:44,423
+ve bu sayede aslında az önce konuştuğumuz gereksiz olan şeyi nedir? Gereksiz olan sparsity problemini çözmeye çalışıyorlar.
+
+286
+00:47:44,423 --> 00:47:55,483
+Şimdi modelde kolaboratif filtrinde bir şey var yaklaşımlar genellikle
+
+287
+00:48:01,139 --> 00:48:12,579
+clustering tabanlı olabiliyor. Ondan sonra matrix factorization
+
+288
+00:48:15,092 --> 00:48:17,092
+tabanlı olabiliyor.
+
+289
+00:48:22,164 --> 00:48:29,164
+Bu, iste singular, value decomposition kullanılar.
+
+290
+00:48:33,972 --> 00:48:35,972
+olasılıksal
+
+291
+00:48:37,331 --> 00:48:41,972
+Matrix Factorization kullanıyorlar.
+
+292
+00:48:47,315 --> 00:49:17,295
+ondan sonra. Üçüncüsü ve şu anda çok artık popüler olanı Deep Learning tabanlı. Ondan sonra bunlar da şey kullanıyorlar, multi-leared neural network kullanıyorlar. Şimdi burada şey, matrix spektronizasyonla yapılan şey şu aslında. Şimdi normalde bizim bu çok kullanılan yaklaşımlardan birisi Amazon'un açtığı bir şey,
+
+293
+00:49:17,315 --> 00:49:40,275
+2009-2010 yıllarında galiba bir yarışma vardı işte satış miktarını arttıran bir recommendation sistem önerisi yani recommendation sisteminde satış miktarını arttıracak işte şey yapana nedir yöntem bulana öneri diye bu orada önerilmiş yöntem yalamıyorsam.
+
+294
+00:49:40,275 --> 00:49:55,375
+şimdi o madde benim burada diyelim ki 100 lira karşı movie şeyim var matrisim var ve bu bayağı bir spars matrisi az önce konuştuğumuz gibi ürün sayısı çok fazla olduğu için buna R matrisi diyelim.
+
+295
+00:49:55,375 --> 00:50:00,255
+bunu matriz factorization ile şu hale getiriyor.
+
+296
+00:50:00,735 --> 00:50:02,435
+Şurada yine user'sımız var.
+
+297
+00:50:02,935 --> 00:50:04,195
+Bir dakika şöyle yapayım.
+
+298
+00:50:07,536 --> 00:50:13,915
+Şurada diyelim en tane user'ımız varsa bu en tane satırdan oluşuyor yine.
+
+299
+00:50:13,915 --> 00:50:21,595
+Fakat burada azaltılmış bir boyutta tamamı dolu.
+
+300
+00:50:22,235 --> 00:50:24,635
+Şurası işte birinci user'ımız mesela.
+
+301
+00:50:25,375 --> 00:50:47,355
+Yani bu Sparsky matrisken bu tamamı dolu hiç boşluk olmayan kullanıcılar için bir matris genelde işte şeyle singular value decomposition vesaire kullanılarak yapılan bir şey şöyle bir hale getiriliyor.
+
+302
+00:50:47,356 --> 00:50:51,275
+Şurası da D satırdan oluşan
+
+303
+00:50:51,275 --> 00:50:59,795
+Ve her sütun bu sefer
+
+304
+00:51:03,668 --> 00:51:12,707
+bir filmi göstermek üzere böyle bir şeye eşit oluyor. Yani
+
+305
+00:51:16,788 --> 00:51:31,288
+R matrisi N'e emlik bir matrisken U matrisi N çarpı D'lik ondan sonra V matrisi de D çarpı emlik bir matris aslında.
+
+306
+00:51:31,288 --> 00:51:58,288
+yani aslında şunu şey yaptığınızda çarptığınızda orijinal R matrisini elde ediyorsunuz ama aradaki fark bu spars bir matrisken bu tamamı dolu iki matris aslında. Bunlar tamamı dolu iki matris. Ondan sonra bu şekilde şey yapılıyor. Bu matrisler kullanılarak işlem yapılıyor.
+
+307
+00:51:58,288 --> 00:52:11,267
+burada aslında şeyle yani geçen hafta gördüğümüz kinesi komponent analizi veya singular value decomposition ile burada şeyler kullanılıyor.
+
+308
+00:52:11,267 --> 00:52:24,548
+Sadece buradan üretilmiş şu şey ana matristen üretilmiş azaltılmış özellikler kullanılıyor ve böylece şey olmuş oluyor.
+
+309
+00:52:24,548 --> 00:52:35,148
+yani o spars matris programı giderilmiş oluyor. Burada sadece önemli çıkartılmış bilgiler kullanılmış oluyor.
+
+310
+00:52:36,067 --> 00:52:43,207
+Şimdi bu clustering based dediği de aslında şey falan değil yani cluster oluşturmakla falan ilgisi yok.
+
+311
+00:52:43,207 --> 00:52:46,207
+Bu K tane...
+
+312
+00:52:49,588 --> 00:53:01,227
+en benzer şey kullanılıyor burada da. Yani k-neurisneybrut bu aslında. En benzer örnek kullanılıyor.
+
+313
+00:53:05,235 --> 00:53:29,255
+kullanılıyor. Yani cluster tabanlı demesinin sebebi aslında cluster'lar benzer örneklerden oluşturulmuş oluyor. Şimdi en popüleri şu anda deep learning tabanlı çünkü bayağı başarısı yüksek bunların. Deep learning tabanlı tavsiye sistemleri şu anda en popüler olarak kullanılanları bunlar.
+
+314
+00:53:29,255 --> 00:53:47,655
+Şimdi genel olarak şeyler tavsiye sistemleriyle ilgili genel vereceğim bilgiler bu yönde. Benim bu konuyla ilgili görüşüm dediğim gibi son yıllarda bence bu çok önemli bir noktada tavsiye sistemleri konusu.
+
+315
+00:53:47,655 --> 00:53:59,175
+son yıllarda bu konularla ilgili çok çalışma yapılıyor. Çünkü şey önemli yani internet üzerinden sizin de gördüğünüz gibi şey çok artmış durumda.
+
+316
+00:53:59,175 --> 00:54:08,935
+Yani şu anda her şey internet üzerinden e-commerce ile yürüyor veya işte şey de öyle yani illa satış olması gerekmiyor.
+
+317
+00:54:08,935 --> 00:54:18,635
+veya mesela Spotify, YouTube vs. de kimlerin neyi izlediğini çünkü oralara reklam koyacaklar ona göre.
+
+318
+00:54:19,455 --> 00:54:25,935
+Kime ne önereceğim? Mesela YouTube'da da diyelim ki müzik dinliyorsunuz veya işte bir takım videoları izliyorsunuz.
+
+319
+00:54:25,935 --> 00:54:35,175
+Size recommend ediyor yani orada dikkat ediyorsunuz. O recommendation'lar hep bu makine öğrenmesi yöntemleriyle yapılıyor.
+
+320
+00:54:35,175 --> 00:54:50,835
+ve buradaki hedef şu ne kadar iyi çünkü mesela YouTube'u düşünün YouTube'da milyarlarca video var yani sizin her şeyi karıştırıp da bulmaya çalışmanız aslında mümkün değil.
+
+321
+00:54:50,835 --> 00:55:05,115
+O sizin izlediğiniz şeylere bakarak sizi rekomend ediyor yeni bir şey çıktığında ondan sonra veya işte daha önceki yaptığınız şeylere bakarak seçimlere bakarak sizi rekomend ediyor.
+
+322
+00:55:05,175 --> 00:55:11,275
+Dolayısıyla şu anda bu bayağı şey bir konu, recommendation bayağı popular bir konu.
+
+323
+00:55:11,335 --> 00:55:14,915
+Çünkü öbür türlü kişilerin şey yapması çok zor.
+
+324
+00:55:16,075 --> 00:55:22,255
+Nedir? Büyük bilgi içerisinden kendi başına arayarak en uygununu bulması çok zor.
+
+325
+00:55:22,255 --> 00:55:26,456
+Tabi burada şey faktörünü de unutmamamız gerekiyor bence.
+
+326
+00:55:27,315 --> 00:55:30,235
+Ben onun da çok yapıldığına inanıyorum.
+
+327
+00:55:31,235 --> 00:55:34,435
+Orada, arada büyük bir ihtimalle şey de oluyor gibi geliyor bana.
+
+328
+00:55:34,435 --> 00:55:46,555
+yani belki çok da size önerilmeyecek bir şey satın almanız için arada onları da azıcık azıcık öneriyor gibi geliyor.
+
+329
+00:55:46,735 --> 00:55:52,235
+Çünkü öbür türlü de mesela o ürünün popülerliğinin artmasını sağlayamayacak.
+
+330
+00:55:52,235 --> 00:56:01,975
+Yani şey oluyordur gibi geliyor işte ne bileyim bu en çok bu satıyor falan gibi bir şey arada karışıyor olabilir.
+
+331
+00:56:01,975 --> 00:56:09,795
+belki o en çok satmıyor ama yönlendirildiğinde insanlar çok da seçici değillerse onu tercih edebiliyorlar diye düşünüyorum.
+
+332
+00:56:10,135 --> 00:56:11,655
+Sormakisiniz bir şey var mı böyle kadar?
+
+333
+00:56:16,947 --> 00:56:34,208
+orada mısınız? Bazen gidiyor çünkü. Evet hocam. Vallahi bayağı korkuyorum bazen. Kaçırıyorum sizi diye. Peki, şimdi o zaman toparlayalım birazcık. Genel olarak şeyi değerlendirelim.
+
+334
+00:56:34,208 --> 00:56:55,488
+yani makine öğrenmesinde ne yapılmalı, nasıl yapılmalı, nelere dikkat edilmeli onlarla ilgili size genel uzun yıllardır böyle okuduğum, yapılan araştırmalardan takip ettiğim vesaire nereye gidiyor, ne olmalı bununla ilgili kapanış tavsiyelerini bulacağım.
+
+335
+00:56:55,488 --> 00:57:10,227
+Birincisi şöyle, öncelikle şey değil, yani ilk başladığında bu konular sizin de bildiğiniz gibi daha böyle belli alanlarda çözüm üretmek üzerine kuruluydu.
+
+336
+00:57:10,368 --> 00:57:21,348
+Yani yapay zekanın bir alt başlığı, problemlerin insan gibi öğrenerek çözülmesiyle ilgili yaklaşımlar.
+
+337
+00:57:21,348 --> 00:57:32,767
+başlangıçta aslında olay daha çok işte yüz tanıdım, parmak izi tanıdım, işte ne bileyim insansız taşıt efendim söyleneni anladım doğal dil işleme falan.
+
+338
+00:57:32,767 --> 00:57:39,547
+Bunlar daha böyle insan gibi davranan sistemler için yapılan çalışmalardı.
+
+339
+00:57:40,188 --> 00:57:44,227
+Fakat şu anda sizin de gördüğünüz gibi olay şeye kaymış durumda.
+
+340
+00:57:44,668 --> 00:57:47,928
+Yani big data ile birlikte kullanılmasına kaymış durumda.
+
+341
+00:57:47,927 --> 00:58:05,887
+Neden? Çünkü ortada çok büyük bir veri var. Bu verinin değerlendirilmesine ilgi çıkartılması çok zor. Ondan ötürü artık ağırlıklı olarak makine öğrenmesi konuları, yöntemleri buralarda kullanılıyor.
+
+342
+00:58:05,887 --> 00:58:13,287
+mesela bir hiç eskiden X olmayan saldırı tespit sistemleri diyelim ki A saldırısı tespiti.
+
+343
+00:58:13,287 --> 00:58:20,567
+Orada eskiden string match tabanlı şeyler yapıyordu.
+
+344
+00:58:20,667 --> 00:58:28,247
+Yani belli saldırılar var diyelim ki zaten işte onları şey yaparak algoritma ile tespit etmek mümkün.
+
+345
+00:58:28,248 --> 00:58:38,248
+ama ne oluyor? Siz onu tespit edince saldırı yapan da farklı bir saldırı ile karşınıza çıkabiliyor.
+
+346
+00:58:38,567 --> 00:58:52,388
+O zaman ne yapmanız lazım? O zaman yapılması gereken şey normale uymayan, mesela anomali detection, normale uymayan, normale benzemeyen durumu tahmin etmeye çalışmak gibi.
+
+347
+00:58:52,388 --> 00:59:05,647
+Dolayısıyla yani burada yapay zekanın kullanılması aslında makine öğrenmesinin kullanılması tamamen şey yani artık büyük veri var.
+
+348
+00:59:05,647 --> 00:59:12,147
+Büyük veride sürekli çözüm üretmeye çalışmak için büyük veriden anlam çıkartmanın gerekmesinden.
+
+349
+00:59:12,287 --> 00:59:14,128
+Mesela bu tavsiye sistemleri de öyle.
+
+350
+00:59:14,548 --> 00:59:16,347
+Niye tavsiye sistemi yapıyorsunuz?
+
+351
+00:59:16,408 --> 00:59:20,668
+Çünkü milyonlarca ürünü nasıl göstereceksiniz?
+
+352
+00:59:20,668 --> 00:59:27,108
+Yani kişilerin oradan aradığını bulmasını nasıl sağlayacaksınız ona yardımcı olmaya çalışıyorsunuz.
+
+353
+00:59:27,147 --> 00:59:29,867
+Netflix'te her gün onlarca film yayınlanıyor konuyor.
+
+354
+00:59:30,828 --> 00:59:42,108
+Yani bir kişinin kendisine uygun olanı bulmasını sağlamak için ona yardımcı olursanız o zaman şeyi daha çok tercih edilir.
+
+355
+00:59:42,107 --> 00:59:51,747
+yani nedir? Netflix üzerinden ne bileyim gidip de bilmem ne TV işte bir sürü aslında bu tür yayın yapan şey var.
+
+356
+00:59:51,867 --> 00:59:58,987
+Oradan izlemezse diyelim ki Netflix'ten ister niye daha aslında iyi hizmet alıyordur.
+
+357
+00:59:59,327 --> 01:00:03,167
+Dolayısıyla yani şu anda bugün öğrenmesini kullanımı.
+
+358
+01:00:03,731 --> 01:00:22,351
+bu şekilde. Burada da gittikçe şeye kaymaya başladı. Daha ilk başlardaki yöntemler tam matematik yöntemlerdi. Yani tamamen istatistik, istatistiğe dayalı olan çözümler vardı makine öğrenmesinde.
+
+359
+01:00:22,351 --> 01:00:27,351
+şimdi yavaş yavaş derin öğrenmeyle şeye doğru gidiliyor.
+
+360
+01:00:27,951 --> 01:00:32,631
+Yani yine tabii ki matematik, ağır matematik, yine istatistik vs.
+
+361
+01:00:32,631 --> 01:00:44,311
+Ama daha insan gibi davranan öyle hani her şeyi işte 0.8 binden şöyle oldu, 0.7 böyle oldu o zaman şöyle gibi matematiksel şeyler yerine
+
+362
+01:00:44,311 --> 01:00:48,171
+daha sezgisel çözümlere gidilmeye çalışılıyor.
+
+363
+01:00:48,171 --> 01:00:58,251
+o yüzden de daha belki başarılar yükseliyor olabilir. Dolayısıyla o yüzden de şey derin öğrenme iyi ama burada da şunu unutmamanız lazım.
+
+364
+01:00:58,891 --> 01:01:07,511
+Derin öğrenme şey değil yani her şeyin çözümü de derin öğrenme değil. Bu da yavaş yavaş şey yapılıyor, ortaya konuluyor.
+
+365
+01:01:07,511 --> 01:01:15,452
+Yani derin öğrenme yapabilmeniz için öncelikle şey olması lazım, çok fazla örneğiniz olması lazım.
+
+366
+01:01:15,452 --> 01:01:27,632
+yani o kadar örneğinizin olmadığı problemler için diyelim ki bir hastalık teşhisi için zaten 100 tane hasta verisi topladıysanız şey de çok iyi bir şey değil aslında.
+
+367
+01:01:27,632 --> 01:01:39,592
+Yok işte ben o veriyi bilmem şey kullanıp, GAN kullanıp ondan sonra Generative Adversarial Network çoğaltırım bilmem ne yaparım falan.
+
+368
+01:01:39,592 --> 01:01:47,291
+onlar da bence çok çok etkili değil. O zaman belki klasik öğrenme yani hep şeyi denemenizi tavsiye ederim.
+
+369
+01:01:47,291 --> 01:02:01,912
+Klasik makine öğrenmesi yöntemleriyle elde ettiğiniz sonuçları makine öğrenmesinin bir alt kolu olan derin öğrenmeyle elde ettiğiniz sonuçlarla karşılaştırıp hangisi daha efektifse onu kullanmanızı tavsiye ederim.
+
+370
+01:02:01,912 --> 01:02:09,831
+pek çok yerde bir destek vektör makinesiyle veya bir de sıradan en basit decision tree ile elde ettiğimiz sonuç,
+
+371
+01:02:09,931 --> 01:02:13,771
+derin öğrenme ile elde ettiğimiz sonuçta daha iyi çıkabiliyor.
+
+372
+01:02:14,052 --> 01:02:15,931
+Yani bunlara dikkat etmenizi öneririm.
+
+373
+01:02:16,332 --> 01:02:19,411
+İkincisi sizler lisans üstü doktor öğrencisiniz.
+
+374
+01:02:19,411 --> 01:02:21,411
+Şeye takılmayın lütfen.
+
+375
+01:02:21,411 --> 01:02:34,451
+yani işte Python'da Lego gibi yani şeyleri projelerimizi yaparken Lego gibi onu alırım altında bunu kullanırım değil.
+
+376
+01:02:34,451 --> 01:02:48,171
+Aslında esas problemler şey problemler yani mesela az önce konuştuğumuz ne bileyim şeyi nasıl çözeceğim işte cold start problemini burada çözmek için ne yapabilirim?
+
+377
+01:02:48,172 --> 01:02:59,632
+veya işte bu metric spektronizasyon çok iyi bir şey diyelim ki o sparsitik programını çözmek için ne yapabilirdim gibi şeylere odaklanın.
+
+378
+01:02:59,692 --> 01:03:10,371
+Çünkü master doktora yaparken aslında şey orada yani sizin çözüm bulmanız gereken yoksa şey 15-20 yıl önce de kaldı bir data setim var.
+
+379
+01:03:10,371 --> 01:03:17,211
+Bu data setime işleminden A yöntemini uyguladım başarımı %80 oldu, B yöntemini uyguladım %90 oldu.
+
+380
+01:03:17,211 --> 01:03:28,631
+o çok ilk zamanlarda yapılan şeylerde şu anda uygulamalarımızdaki problemleri çözmeye yönelmeye odaklanmanız gerekiyor.
+
+381
+01:03:28,631 --> 01:03:43,651
+Onun için de bence şey çok önemli yani datayı alma aşamasından başlayarak yapılacak iyileştirmelerle fark yaratmaya çalışmak çok önemli.
+
+382
+01:03:43,651 --> 01:03:52,551
+Yani şimdi mesela işte derin öğrenme sizin için özellik seçimini derin öğrenme yapıyor. Fakat pek çok yeni çalışmada şey kullanılıyor.
+
+383
+01:03:52,724 --> 01:04:02,283
+Peki özellik seçiminde ben de verin öğrenmeye verirken şöyle bir ön işlem yapsam başarıyı nasıl arttırım?
+
+384
+01:04:02,283 --> 01:04:09,883
+Yani bir taraftan inek verdim, öbür taraftan hamburger çıktığı yerine benim müdahalelerim neyi değiştirebilir?
+
+385
+01:04:09,943 --> 01:04:16,383
+Bayes olmadan müdahale edeceksiniz ama şeyi de bozmayacaksınız, şartlandırmayacaksınız da gibi.
+
+386
+01:04:16,383 --> 01:04:25,064
+Dolayısıyla tezlerinizi falan yaparken eğer şeyi kullanacaksanız, makine öğrenmesi kullanacaksanız bu mantıkla düşünmenizi tavsiye ederim.
+
+387
+01:04:25,224 --> 01:04:34,764
+Yani Python'da verdim, sınıflandırdı falan yerine problemler neler? Ben bu problemleri nasıl iyileştirebilirim?
+
+388
+01:04:35,383 --> 01:04:39,584
+İyileştirmeniz de gerekmiyor. Bazen bakıp şunu da söyleyebilirsiniz.
+
+389
+01:04:39,584 --> 01:05:07,683
+Vallahi şöyle şöyle bir şey önerdim denedim ama olmadı. O da bir şeydir. Çünkü pek çok araştırmacıya şeyi gösterir. Yani o yöne gitmemeniz gerektiğini gösterir. Gitmemesi gerektiğini gösterir. Bu şekilde yaklaşmanızı öneririm ben. Yani şu anda birazcık olay şey yapıldı çünkü. Her herkes makine öğrenmesi yapıyor ve yapanların tek yaptığı şey bir data sete bir yöntem uygulamak.
+
+390
+01:05:07,683 --> 01:05:16,304
+halbuki olay bu değil yani kesinlikle çok daha şey kapsamlı ve yapılması gereken çok fazla iş var.
+
+391
+01:05:16,664 --> 01:05:18,383
+Buraya kadar sormak istediğiniz bir şey var mı?
+
+392
+01:05:21,940 --> 01:05:26,099
+Peki, o zaman şimdi değerlendirmeyle ilgili konuşalım.
+
+393
+01:05:28,659 --> 01:05:30,679
+Konuşalım mı? Değerlendirmeyle ilgili.
+
+394
+01:05:31,639 --> 01:05:32,299
+Evet hocam.
+
+395
+01:05:34,099 --> 01:05:38,780
+Şimdi, bir tane daha ödev vereceğimi söylemiştim.
+
+396
+01:05:38,940 --> 01:05:45,280
+FİNE için çok basit bir recommendation sistemle, FİNE anlattığım ile ilgili gerçekten çok basit bir şey hazırladım.
+
+397
+01:05:45,280 --> 01:05:47,319
+Ödev hazırladım. Şöyle düşündüm.
+
+398
+01:05:47,319 --> 01:06:16,440
+bunu yani sizlerle konuşmuştuk şey yapalım diye sınavlar çok iyi olmuyor bu uzaktan yapılan sınavlar diye şöyle basit bir ödev vereceğim o ödev sınavın yüzde kırkını oluşturacak final sınavının şimdi iki tane ödev verdik onlar ikinci vize bir vizeniz var iki ödev ikinci vize şimdi bir ödev vereceğim o ödevi de bayağı uzun zaman vereceğim
+
+399
+01:06:16,440 --> 01:06:30,160
+aslında bir günde yapabileceğiniz basitlikte bir ödev ama çok uzun bir zaman vereceğim. Baya basitleştirdim de eskiden MovieDB database'ini kullandırarak recommendation yaptırıyordum.
+
+400
+01:06:31,120 --> 01:06:42,660
+Günlerce uğraşıyorlardı falan ama bu sefer bu imkansızlıkların farkında olduğum için uzaktan eğitimin güçlüklerinin sizdeki sıkıntılarının farkında olduğum için baya basite indirgedim.
+
+401
+01:06:42,660 --> 01:06:59,039
+ondan sonra onu yapmanızı isteyeceğim. O da finalin %40'ını bu ödev oluşturacak. %60'ını da sınav oluşturacak. Var mı sorunuz?
+
+402
+01:07:03,347 --> 01:07:04,407
+sorunuz var mı?
+
+403
+01:07:04,907 --> 01:07:06,287
+hocam sınav hangi gün belli?
+
+404
+01:07:07,847 --> 01:07:09,667
+ilan ettiler mi bilmiyorum.
+
+405
+01:07:10,127 --> 01:07:12,287
+ben de bilmiyorum açıkçası.
+
+406
+01:07:13,287 --> 01:07:16,407
+bölüm ilan ediyor ama hazırlıyorlardı.
+
+407
+01:07:16,507 --> 01:07:17,787
+en son hazırlıyorlardı.
+
+408
+01:07:17,887 --> 01:07:18,827
+ilan edildi mi?
+
+409
+01:07:19,187 --> 01:07:19,868
+şey biliyor musun?
+
+410
+01:07:20,028 --> 01:07:21,448
+[öğrenci] ilan edildi mi?
+
+411
+01:07:21,487 --> 01:07:22,127
+sen biliyor musun?
+
+412
+01:07:23,427 --> 01:07:25,787
+hafta yasalı saat 10'da hocam.
+
+413
+01:07:25,907 --> 01:07:27,747
+hafta yasalı mı?
+
+414
+01:07:28,307 --> 01:07:28,727
+aynen.
+
+415
+01:07:29,927 --> 01:07:31,627
+çok hızlı olmuş bu.
+
+416
+01:07:31,627 --> 01:07:32,507
+evet.
+
+417
+01:07:33,347 --> 01:08:01,388
+Bana da bir bendeniz geldi. Yani şey yazıyorlardı da ben açıkçası çok bakmadım. Utku Bey, sınav programına Utku Bey hazırlıyor. O işte taslaklar gönderiyordu. İşte şöyle iyi mi, böyle iyi mi falan diye. Ben normalde sınav günlerine itiraz etmediğim için açıkçası dikkat etmemiştim. Yayınlanmış demek ki. Peki. Tamam. Oldu öyle yani. Benim söyleyeceklerim bu kadar. Sormak isteneniz bir şey varsa cevap vereyim.
+
+418
+01:08:01,387 --> 01:08:06,327
+Hocam bu vereceğiniz ödev ikinci ödevden farklı bir ödev
+
+419
+01:08:06,327 --> 01:08:13,267
+Şimdi soruyu sorarken sen de herhalde ne kadar saçma olduğunu fark etmişsindir
+
+420
+01:08:13,267 --> 01:08:15,527
+Aynı ödevi niye vereyim?
+
+421
+01:08:15,727 --> 01:08:18,847
+Hayır yani üçüncü bir ödev daha vereceksin
+
+422
+01:08:18,847 --> 01:08:22,787
+Üç ödev olacak toplamda
+
+423
+01:08:22,787 --> 01:08:23,147
+Evet
+
+424
+01:08:23,147 --> 01:08:24,267
+Tamam
+
+425
+01:08:24,267 --> 01:08:29,347
+Hocam ikinci ödeyle ilgili bir şey soracaktım
+
+426
+01:08:29,347 --> 01:08:29,747
+Doğru
+
+427
+01:08:29,748 --> 01:08:41,267
+Bu Spotify müzik parçaları KMİS yöntemiyle ilgili özelliklere baktığımızda kategorik özellikler varsa OneHot Enkoding uygulayınız demişsiniz.
+
+428
+01:08:42,048 --> 01:08:42,288
+Evet.
+
+429
+01:08:43,068 --> 01:08:48,388
+Kategorik olarak sadece artist isimleri kaldı. Diğerleri hepsi nümerik tane.
+
+430
+01:08:49,127 --> 01:08:51,687
+Artist isim kullanmıyor musunuz zaten?
+
+431
+01:08:52,428 --> 01:08:56,208
+Hani ID ve normalde isimleri zaten sildik. Onları kullanmadım.
+
+432
+01:08:56,208 --> 01:09:00,487
+Artistsinleri kaldı. Onları da silersek kategorik bir özellik kalmayacak gibi.
+
+433
+01:09:00,727 --> 01:09:02,987
+He özelliği var o kategorik.
+
+434
+01:09:03,828 --> 01:09:04,288
+Ne var?
+
+435
+01:09:04,828 --> 01:09:06,807
+He. Anahtar.
+
+436
+01:09:08,388 --> 01:09:15,068
+Anladım. He. Şimdi şöyle söyleyeyim öncelikle. Ben gerçekten geneline baktım.
+
+437
+01:09:15,068 --> 01:09:24,448
+Orada işte şeyler vardı. Özellikler, akustik özellikler vardı. Hepsine tek tek bakmadım özelliklerin şeyleri.
+
+438
+01:09:24,447 --> 01:09:52,827
+akustikle ilgili olan özellikler hep şey özelliklerdi zaten, sayı özelliklerdi. Şunu söyledim, öyle değerlendirin lütfen. Bir özellik eğer uniqueness oluşturuyorsa onu kullanmamamız lazım. Ama mesela artist adı şeyse, mesela şarkı adı kullanamazsınız. Çünkü o unique bir bilgi. Şarkının ID'si unique bir bilgi. İşte günden key'i bilmiyorum. Key neydi, neye karşılık? Neye karşılık key?
+
+439
+01:09:54,447 --> 01:09:55,307
+Neyi gösteriyor?
+
+440
+01:09:55,307 --> 01:10:02,207
+Ben de tam olarak bilmiyorum hani müzik kavramı da hani müzik anahtarı gibi hani sol, la
+
+441
+01:10:02,207 --> 01:10:17,227
+O mesela kullanılabilir yani şimdi bakmadan söylüyorum ben ama mesela şarkıcı adı da aslında özelliktir çünkü o unique değil aslında yani o şarkıcının söylediği diyelim ki 50 tane şey var
+
+442
+01:10:17,227 --> 01:10:22,127
+Ortalama 5 tane hocam 34 bin şarkıcı var yani farklı şarkıcı
+
+443
+01:10:22,127 --> 01:10:44,767
+34.000 şarkı. Orada şunu yapabilirsiniz, size şunu söyleyeyim. Normalde yapılanı söylüyorum şu anda. Normalde Anad Encoding ile 34.000 yeni özellik ekleyebilirsiniz. Birinci yapabileceğiniz şey bu. O iyi bir şey olmuyor genelde. Yani o özelliği kullanmayabilirsiniz.
+
+444
+01:10:47,155 --> 01:10:58,215
+34 bin şarkıcı var ise 34 bin tane yeni özellik eklemeniz lazım. Vanhat Enco Link'de çözebilmek için değil mi? 34 bin yeni özellik eklemeniz lazım.
+
+445
+01:10:58,415 --> 01:11:13,655
+Şimdi bunu yapabilirsiniz ama genellikle böyle bu kadar çok artıyorsa bunu eklemek başarıyı düşürüyor. Deneyebilirsiniz. Bir de şeyi deneyebilirsiniz. O özelliği çıkardım, başarılı ne oldu? Onu deneyebilirsiniz. Bunu yapabilirsiniz. İkisinden dırın.
+
+446
+01:11:13,655 --> 01:11:23,315
+size bırakıyorum yani ben soruyu size sordum size bırakıyorum yani çözümlerinizi tamamen size bırakıyorum.
+
+447
+01:11:23,315 --> 01:11:30,315
+Sonuçta zaten hakikaten raporunuzda yazdıklarınıza göre değerlendireceğim. İkisini de yapabilirsiniz.
+
+448
+01:11:30,516 --> 01:11:38,455
+İşe yetiyordur mesela güzel öneriyordur o zaman yani klaster ediyordur. Spotify gerçekten kullanıyor bu arada.
+
+449
+01:11:38,455 --> 01:11:40,235
+cluster ediyor.
+
+450
+01:11:41,696 --> 01:11:43,315
+Clusterlar oluşturuyor.
+
+451
+01:11:44,095 --> 01:11:46,275
+Ona göre size öneriyor.
+
+452
+01:11:46,655 --> 01:11:49,996
+O da yani clusterların üzerinden öneriyor Spotify'da.
+
+453
+01:11:51,095 --> 01:11:52,376
+Bu kullanılan bir yöntem.
+
+454
+01:11:52,475 --> 01:11:53,995
+Görmüşsünüzdür şey yaparken.
+
+455
+01:11:54,175 --> 01:11:56,696
+İnternette search ettiyseniz görmüşsünüzdür.
+
+456
+01:11:59,815 --> 01:12:00,096
+Peki.
+
+457
+01:12:01,096 --> 01:12:05,855
+Şeyde ödevde şey user-based yani bu kullanılan değil aslında bunu konuştuk.
+
+458
+01:12:05,855 --> 01:12:16,915
+genelde hani şeyler bunu kullanmıyorlar. İşte Netflix'dir, şudur budur şu anda user-based kullanılan bir yöntem değil ama basitçe şeyi görmenizi istedim.
+
+459
+01:12:16,915 --> 01:12:22,795
+Yani hani böyle bir sistemin temelde nasıl çalıştığını görmenizi istedim.
+
+460
+01:12:22,795 --> 01:12:36,376
+Minapart'ın da şey yaparsınız nedir? Yani bir takım hesapları hazır kullanabilirsiniz ama şeyleri yapmayın.
+
+461
+01:12:36,376 --> 01:12:46,336
+Yani varyans, bu varyans hesabını kendiniz yapabilirsiniz. Yani alt tarafı ortalama hesaplayıp ortalama çıkartacaksınız falan.
+
+462
+01:12:46,475 --> 01:12:51,995
+Korkunç bir şey yok orada. Basit bir şey yani dediğim gibi zor bir şey değil. Uzun süre vereceğim ama yani
+
+463
+01:12:51,995 --> 01:13:11,355
+finallerin sonuna kadar süre vereceğim. Böyle bir ara oturup yaparsınız diye düşünüyorum. Onu biliyor olamazsınız. Finaller iki hafta ama değil mi? Evet hocam. Tamam. Peki var mı aklınıza takılan başka bir şey? Sormayı sormayın.
+
+464
+01:13:11,355 --> 01:13:18,055
+Hocam bu ayın 12'sinde olan... Sesim geliyor mu?
+
+465
+01:13:18,495 --> 01:13:19,816
+Geliyor geliyor gayet iyi geliyor.
+
+466
+01:13:20,995 --> 01:13:30,376
+Hocam şimdi ayın 12'sinde sınav varmış sanırım da. Bu ödev tarihinde son gün ayın 12'si ya. Onu uzatabilir misiniz acaba? Sıkışmasa, başka dersler falan da var.
+
+467
+01:13:35,412 --> 01:14:03,871
+uzun vermiştim süreyi. Şimdi on ikisine kadar yapanlar için şey adil bir şey olmayacak. Çünkü yapmış olan zorlandı, sıkıştı ve yaptı. On ikisine daha bir hafta var yani. Neyin pazarlığı bu? On ikisine bir hafta var. Haftarı böyle. Kaniyiz yapacaksın. Yani şey değil.
+
+468
+01:14:03,871 --> 01:14:06,191
+Yani başka şeyler var
+
+469
+01:14:06,191 --> 01:14:07,991
+Artı eksi üç günün var biliyorsun
+
+470
+01:14:07,991 --> 01:14:10,772
+Yani artı eksi değil de artı üç günümüz var
+
+471
+01:14:10,772 --> 01:14:12,391
+Üç gün geç verme hakkımız var
+
+472
+01:14:12,391 --> 01:14:13,991
+O hakkını kullanabilirsin
+
+473
+01:14:13,991 --> 01:14:18,991
+Tamam mı? Peki
+
+474
+01:14:18,991 --> 01:14:24,331
+Artı üç hakkınızı artı beşe çıkartırım
+
+475
+01:14:24,331 --> 01:14:27,351
+Onu yapabilirim mesela
+
+476
+01:14:27,351 --> 01:14:28,691
+İster misiniz öyle bir şey?
+
+477
+01:14:30,791 --> 01:14:32,691
+Sonuçta puan kırılacak ama değil mi hocam?
+
+478
+01:14:32,691 --> 01:14:47,251
+Ama şimdi yapana da yazık şimdi bir grup insan oturdu yaptı bayağı bir uğraştı baksanıza şeyi bilen var şu anda 34 bin tane şarkıcı olduğunu bilen kişi büyük bir ihtimalle ödevi yarılamıştır diye düşünüyorum
+
+479
+01:14:47,251 --> 01:14:49,492
+Hocam son bir şey sorabilir miyim ben?
+
+480
+01:14:49,751 --> 01:14:50,551
+Tabii buyurun
+
+481
+01:14:50,551 --> 01:14:59,291
+Ne de bu elbow metot kullanırken inertiye diye bir özellik var biz bunu kendimiz mi hesaplayacağız yoksa modelin o özelliğini kullanabilir miyiz?
+
+482
+01:14:59,291 --> 01:15:05,471
+Çok ilginç, siz de beni böyle mi duyuyorsunuz? Bana sesim boğup geliyor, bir daha söyler misin?
+
+483
+01:15:06,031 --> 01:15:14,391
+Şöyle, şey hesaplarken, orada K'yı hesaplayınca, yani K'nın, Osman K'yı bulacağız.
+
+484
+01:15:15,191 --> 01:15:21,011
+Orada K-Mins'in kendi içerisinde inertiye diye bir özelliği var, attribütü var.
+
+485
+01:15:22,051 --> 01:15:25,871
+Bunu biz kendimiz mi hesaplayacağız, yoksa nasıl yapacağız onu?
+
+486
+01:15:25,871 --> 01:15:44,712
+şey yani inertia dediğin şey örneklerin merkeze uzaklıklarının karesi yani ona göre herhalde onu şey mi yapıyor ona göre mi hata hesabını yaparken kullanıyorsun herhalde değil mi?
+
+487
+01:15:45,231 --> 01:15:50,551
+Aynen öyle şey sum of scored error diye zaten geçiyor. Biz kendimiz hesaplayacağız değil mi?
+
+488
+01:15:50,551 --> 01:16:09,132
+Yani onu hazır kullanmam bana çok bir şey fark etmez. Kendisi inertiyeyi hesaplıyorsa hazır kullanabilirsin. Tamamdır hocam teşekkür eder. Çok önemli değil benim için. Önemli olan siz şeye dikkat edin. Orada elbohu çizdirerek görebilirsiniz.
+
+489
+01:16:09,132 --> 01:16:34,732
+tabii şeyle de görürsünüz de sayılara bakarak da görürsünüz de aslında elbolu gerçekten çizdirdiğinizde görüyorsunuz tamam artık buradan dönüş oldu diye bir de unutmayın orada elbolu dönüşün neresi olduğunu düzgün belirlemeniz çok önemli çünkü k sayısını arttırdığımızda her örnek bir sınıf bir klastere yerleşirse hatanız sıfır olur aslında.
+
+490
+01:16:34,731 --> 01:17:02,511
+Yani K'yı arttırdığımızda hata bir noktadan sonra gittikçe düşmeye başlayacak. Ama siz bunu istemiyorsunuz. Değil mi? Yani siz istiyorsunuz ki ben tam dönüşü bulayım. Çünkü şeyin hatanın en düşük olduğu yeri bulmayı hedeflerseniz her örnek bir klastra yerleştiğinde her örneğin klastra merkezine mesafesi sıfır olacağı için hatamız sıfır olur.
+
+491
+01:17:02,511 --> 01:17:11,511
+Sizin istediğiniz bu değil. Tam böyle dönüşü bulmak istiyorsunuz. Yani hata düştü, düştü, düştü, düştü. Bir noktadan sonra artık yavaş yavaş düşmeye başlıyor.
+
+492
+01:17:11,531 --> 01:17:26,811
+Ve şöyle bir durum var hocam. Mesela 10'dan başlıyor. 10'dan 5'e hızlı bir geçiş yapıyor. Daha sonra işte 5'den 3'e iniyor. 3'den 2.5'e iniyor. 2.5'dan 2'ye iniyor. Mesela biz o 2.5 aralığını alacak mıyız? Daha sonra mesela 2.5'dan 2.4'e iniyor.
+
+493
+01:17:26,811 --> 01:17:28,891
+2.5 ne?
+
+494
+01:17:29,460 --> 01:17:41,119
+mesela örnek olarak söyledi. Mesela 10'dan 5'e böyle hızlı bir düşüş yapıyor. Daha sonra 2'şer 2'şer inerken bir anda birer birer inmeye başlıyor. Sonra yarım inmeye başlıyor gibi oluyor.
+
+495
+01:17:41,119 --> 01:17:55,720
+Yani biz ona bakarak karar vermemiz lazım. Benim ezbere görmeden bir şey söylememe ince. O şey gerçekten öyle. Yani bir dönüm noktası aslında en iyi sonucu veriyor. Bunu görmeniz açısından.
+
+496
+01:17:55,720 --> 01:18:24,559
+aslında ben şey istedim ödevde şu anda şey çok kullanılıyor K-Means aslında en basit yöntemlerden birisi ama hani bu etiketlemeyle ilgili önce klasterlara ayıralım ondan sonra klasterların sonucuna göre etiketleme yapalım falan gibi işlerde de çok kullanılıyor ve onlarda da K'yı bilemiyorsunuz yani kaç gruba ayıreceğinizi genellikle bilemiyorsunuz o yüzden bu elbo yöntemini anlamamız da iyi olacak diye düşünüyorum.
+
+497
+01:18:24,559 --> 01:18:26,979
+Peki başka var mı aklınıza katılan sorun?
+
+498
+01:18:27,679 --> 01:18:51,879
+Hocam benim ödevle alakalı değil ama sınavla alakalı. Hocam orada bizim girdilerimiz belli bir formatta olacaktı sınavda. Ben okudum ama sınav sırasında sonradan kontrol ettiğimde fark ettim. Bazen böyle cümle falan kurmuşum bazı sorularda. Siz onları elli mi okudunuz ya da otomatik olarak mı şey yaptınız? Dediğim ben biraz düşük geldi. Ondan dolayı merak ettim.
+
+499
+01:18:51,879 --> 01:19:07,900
+Bu konuyu açtığın için teşekkür ederim. Öncelikle şunu söyleyeyim. Ben tek tek girdim, baktım çünkü şey orada şu anda galiba string match yapıyormuş ama Aygürtme'yi ilk tasarladıklarında yanlış yapmışlar.
+
+500
+01:19:07,899 --> 01:19:23,159
+string match çalışmıyordu. Ben hatta bunu şey yaptım [öğrenci]'e sormuştum. Çünkü ilk baktığımda ben en yüksek not 30 gördüm yüz üzerinden. Nasıl oluyor diye girdim baktım hiçbir string match'i yapmamış.
+
+501
+01:19:23,159 --> 01:19:32,919
+Aygertman'ın string match'i çalışmıyordu. Yani orada artı artı eksi yazıyorsunuz ya, onu doğru cevapla eşleyemiyordu sistem.
+
+502
+01:19:32,919 --> 01:19:42,820
+O yüzden ben girdim tek tek sizin yazdıklarınıza bakıp puanı öyle verdim. Orada şunu yapmadım mesela onu söyleyeyim o sizin savunuluğunuz artık.
+
+503
+01:19:42,979 --> 01:19:50,320
+Mesela birisi şöyle bir şey yazmış işte binden ne olursa öyle oluyor ömrü olursa böyle oluyor cevap sayı isteniyor senden.
+
+504
+01:19:50,320 --> 01:20:13,780
+o kadar açıklamanın sonuna bir de yaz yani de ki sonuçta 3 de mesela değil mi? O yok. Onlara puan vermedim açık ve net söyleyeyim. Düşük geldiyse o olabilir. Ama açıklama yazıp da sonunda buna göre mesela şey sorusunda vardı öyle birkaç kişide destek vektör makinesiyle ilgili hangi örnekleri kaldırırsam sınır değişir mi ne öyle bir soru vardı.
+
+505
+01:20:13,779 --> 01:20:36,460
+orada mesela şunu yazmış. İşte dinlen. O da enteresan. En ortadaki örneklerden dinlenmeyi kaldırırsan öyle olur. Öbürünü kaldırırsan böyle olur. Peki sonuç? Sonuç yok. Kaç tanesini kaldırırsan? O sonuç yok. Ona puan vermedin mesela. Ama yoksa açıklayıp açıklayıp da sonunda bir olur, üç olur diyenlere kesinlikle verdin. Sen ne yapmıştın?
+
+506
+01:20:36,460 --> 01:20:44,599
+Pardon mikrofonu açmamışım. Ben sonuç olarak şey vermişim hocam.
+
+507
+01:20:45,400 --> 01:20:54,299
+Tamam o zaman onları yok yok tabii tabii onlara kesinlikle verdim. Açıklama yazıp da sonucunu yazmayanlara şey yapmadım ama vermedim.
+
+508
+01:20:54,299 --> 01:21:05,060
+Anladım. Peki bunların bir de doğru sonuçları paylaşmam şansınız varsa en azından şu an sistemden görebiliyoruz biz verdiğimiz cevapları. Doğrularıyla bir karşılaştırırız. Belki öyle yararlı olabilir.
+
+509
+01:21:06,460 --> 01:21:13,460
+olabilir. Evet, şeyden sonra yapabilirim onu. Tamam. Finalden sonra...
+
+510
+01:21:13,408 --> 01:21:17,467
+yaparım. Hem finalen, hem hüzeyi şey yaparım. Doğrularını açıklayayım.
+
+511
+01:21:17,487 --> 01:21:17,927
+Finalden?
+
+512
+01:21:17,927 --> 01:21:18,227
+Finalden.
+
+513
+01:21:19,227 --> 01:21:25,587
+Hayır tabii ki. Finalden önce açıklarsam. Benim soru kaynağım kalmadı arkadaşlar. Ben ne soracağım?
+
+514
+01:21:25,887 --> 01:21:27,887
+Hayır hocam. Soruları biz görüyoruz zaten şu an.
+
+515
+01:21:28,227 --> 01:21:36,527
+Hayır, hayır. Şimdi bakları da söylersem ben ne soracağım? Finalden soracağım. Ya çok karmaşık sorular yok da aslında.
+
+516
+01:21:36,947 --> 01:21:41,427
+Yok ben de o yüzden merak ediyorum. Bir yerde küçük hatalar yaptığım için muhtemelen.
+
+517
+01:21:41,427 --> 01:22:01,067
+özellikle yani bakacağım ne yaptığına çok merak ettim neleri yanlış yapmışsın diye bakacağım gerçekten. Bir kişi daha bana sordu çünkü ben yüksek bekliyordum diye onu kimse de baktım bir şey değişmedi. Demek ki şey doğru şey olabilir yani doğru zannettiğimiz şeylerle ilgili hatalar olabilir bakarım ona ben.
+
+518
+01:22:01,067 --> 01:22:06,727
+Destek vektör makinesinde biraz şey vardı. O soruda vardı galiba biraz.
+
+519
+01:22:08,128 --> 01:22:08,667
+Evet olabilir.
+
+520
+01:22:08,667 --> 01:22:13,808
+Sınır nasıl değişirdi? Sınır nasıl değişirdi de iki cevabı da kabul ettim bu arada.
+
+521
+01:22:13,808 --> 01:22:20,668
+Onu da söyleyeyim. Aslında orada tek doğru cevap vardı ama iki mantıklı cevap olduğu için bir diğerini de üç diğerini de kabul ettim.
+
+522
+01:22:21,808 --> 01:22:24,168
+Hocam orada sınır nasıl değişirdi? Peki açıklar mısınız onu?
+
+523
+01:22:25,268 --> 01:22:25,948
+Açıklamam.
+
+524
+01:22:26,727 --> 01:22:29,227
+İlk seksenle dik mi almamız gerekiyor yoksa?
+
+525
+01:22:29,227 --> 01:22:37,607
+Aa evet evet. Ne o? Y mi oluyor? Y'ye paralel almanız gerekiyordu. Yani bakınca görülüyor zaten değil mi sınırlar?
+
+526
+01:22:37,607 --> 01:22:39,668
+Yani çapraz falan olamıyor değil mi hocam?
+
+527
+01:22:40,208 --> 01:22:40,927
+Duyamadım.
+
+528
+01:22:41,448 --> 01:22:43,107
+Çapraz falan hani olabiliyor mu?
+
+529
+01:22:43,107 --> 01:22:57,827
+Çapraz olmuyor yok yok. Yani şeye paralel ol normalde nedir? Ben onu özellikle bir hata yapmamak için hesaplanmış bir örnek üzerinden aldım. Gerçekten şey dümdüz Y'ye paralel.
+
+530
+01:22:57,827 --> 01:23:00,867
+Hocam hangi sorudan bahsediyorsunuz?
+
+531
+01:23:01,867 --> 01:23:06,448
+Destek vektör makinesinde artı ekstra şeyler vardı, örnekler vardı.
+
+532
+01:23:07,227 --> 01:23:10,727
+Orada sınır nereden geçer gibi bir soru vardı galiba.
+
+533
+01:23:11,268 --> 01:23:16,947
+Daha doğrusu kaç örneği kaldırırsak sınır değişir mi? Öyle bir şey vardı.
+
+534
+01:23:17,128 --> 01:23:18,567
+Tamam, şimdi gördüm ben de.
+
+535
+01:23:19,427 --> 01:23:22,447
+Peki, başka yoksa sorunuz burada bırakabiliriz.
+
+536
+01:23:23,547 --> 01:23:26,047
+Hocam son bir soru sorabilir miyim?
+
+537
+01:23:26,047 --> 01:23:28,607
+Finali test mi düşünüyorsunuz?
+
+538
+01:23:29,368 --> 01:23:35,768
+Yine böyle düşünüyorum. Yani test de olabilir de soruları çözüp cevap yazmak şeklinde düşünüyorum.
+
+539
+01:23:38,467 --> 01:23:39,587
+Anladım hocam. Sağ olun.
+
+540
+01:23:40,387 --> 01:23:46,768
+Sadece bir kod yazdığımız bölüm olacak. O %40 dedik dersin başında. Yani bir yerlerinde dersin bir yerlerinde.
+
+541
+01:23:47,288 --> 01:23:54,747
+%40'ı ödev oluşturur. Dediğim gibi ödev için özellikle ekstra süre vereceğim ki sıkıntı yaşamayın diye var. Başka sorunuz?
+
+542
+01:23:54,747 --> 01:23:56,167
+İnert'den sonra ne olacak değil mi hocam?
+
+543
+01:23:56,647 --> 01:23:59,747
+Tabii tabii yani onu şimdi ben vereceğim koyacağım sisteme.
+
+544
+01:24:00,927 --> 01:24:10,568
+Yani onu bana zor olacak çünkü bizim not ilanın tarihimiz var ya okuma açısından yani onu yetiştirme açısından ama önemli değil.
+
+545
+01:24:10,568 --> 01:24:16,447
+Pazar akşamına kadar veririm ondan sonra ama şeyi geçmemeniz gerekir orada.
+
+546
+01:24:17,128 --> 01:24:22,467
+Orada ek süre veremem çünkü not ilan için süre var ya onu geçmemesi gerekir.
+
+547
+01:24:23,988 --> 01:24:31,087
+yani not ilan etmek için de, not sisteme girmek için de bir süre var ya, onu geçmemesi gerekir. Peki başka sorunuz var mı?
+
+548
+01:24:31,507 --> 01:24:36,547
+Hocam, nihayet not değerlendirmesi final faaliyetleri için %40, geri kalan için %40.
+
+549
+01:24:36,547 --> 01:24:42,607
+Şöyle dedim, birinci vize, onu biz değiştiremiyormuşuz, öyle de bir şey söylediler.
+
+550
+01:24:42,727 --> 01:24:48,687
+Vizelerin %60'ı, finalin %40'ı şeklinde bir genel değerlendirme var.
+
+551
+01:24:48,687 --> 01:25:05,988
+Ben burada vize 1'i vize 1 olarak sayıp iki ödevinizi vize 2 olarak sayacağım. Finalin de %40'ını yapacağınız ödev olarak verip %60'ını sınav olarak sayacağım.
+
+552
+01:25:05,988 --> 01:25:17,668
+Yani vize de gördüyseniz sınavda genel böyle ezber mezber bir şey yok. Genel dersi dinleyen, anlayanın rahatlıkla yapabileceği, kıyıda köşede kalmış bir şeyler değil.
+
+553
+01:25:17,668 --> 01:25:23,388
+çünkü lisanslı öğrencisiniz benim için önemli olan genel olarak anlamış olmanızdır.
+
+554
+01:25:25,407 --> 01:25:26,727
+Pardon hocam, teşekkür ederim.
+
+555
+01:25:27,828 --> 01:25:40,187
+Peki, o zaman teşekkür ederim. Dersi burada bitiriyorum. Zor bir dönemdi. Hepiniz için bunun farkındayım. O yüzden katıldığınız için çok teşekkür ederim.
+
+556
+01:25:40,187 --> 01:25:49,267
+ödevleri yaparken gösterdiğiniz hassasiyet için, dersi dinlediğiniz için teşekkür ederim.
+
+557
+01:25:49,267 --> 01:25:53,887
+Umarım önümüzdeki dönem her şey daha iyi olur sizin için de.
+
+558
+01:25:54,927 --> 01:25:58,367
+Final sınavlarında da başarılar diliyorum.
+
+559
+01:26:00,647 --> 01:26:03,447
+Kolaylıklar diliyorum hem ödevlerde hem de sınavlarda.
+
+560
+01:26:03,988 --> 01:26:04,607
+Görüşmek üzere.
+
+561
+01:26:04,627 --> 01:26:05,447
+Biz teşekkür ederiz hocam.
+
+562
+01:26:05,488 --> 01:26:06,187
+Teşekkürler hocam.
+
+563
+01:26:06,387 --> 01:26:08,307
+Çok teşekkürler hocam.
+
+564
+01:26:08,547 --> 01:26:09,267
+Görüşmek üzere.
+
+565
+01:26:09,267 --> 01:26:11,107
+Çok teşekkürler. Görüşmek üzere.

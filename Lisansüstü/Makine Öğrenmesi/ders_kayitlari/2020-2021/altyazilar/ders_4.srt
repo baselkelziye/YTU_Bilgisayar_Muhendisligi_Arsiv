@@ -1,0 +1,3231 @@
+1
+00:00:08,820 --> 00:00:10,060
+Günaydın arkadaşlar.
+
+2
+00:00:12,999 --> 00:00:13,639
+Günaydın.
+
+3
+00:00:41,716 --> 00:00:45,275
+ve bu vansiyyaya başlıyor.
+
+4
+00:01:15,060 --> 00:01:15,819
+vekik.
+
+5
+00:01:19,540 --> 00:01:20,100
+Evet
+
+6
+00:01:35,987 --> 00:01:57,887
+Şimdi arada dediğim gibi geçen sefer de ses verin. Çünkü bu full screen yapınca şeyi göremiyorum ben. Öbür tarafı göremiyorum. Sadece bir kayıt olduğunu görüyorum. O yüzden arada orada olduğunuzu bilmeye ihtiyacım var. Başlayabiliriz sanıyorum. Birazcık daha kişi sayısı arttı.
+
+7
+00:01:57,887 --> 00:02:07,967
+Şimdi bugün en yakın komşuluktan bahsedeceğim size
+
+8
+00:02:17,268 --> 00:02:33,427
+genel olarak şeyin daha faydalı olabileceğini düşündüğüm için yazarak anlatmanı o şekilde yapıyorum. Slide gerektiren daha çok görüntünün ön planda olduğu konularda slide ile anlatacağım.
+
+9
+00:02:33,427 --> 00:02:50,427
+konumuz şu diyelim ki şöyle iki özellikli bir örnek kümemiz olsun elimde. X1 ve X2 özellikleri olan bir örnek kümemiz olsun elimde. Elimizde bir gereksiz şey oldu.
+
+10
+00:02:55,443 --> 00:03:00,963
+şunlar da bizim bilinmeyen iki sınıfa ait örneklerimiz olsun.
+
+11
+00:03:21,268 --> 00:03:25,427
+şöyle şu A sınıfı, bu B sınıfı bunlar etiketli verilerimiz.
+
+12
+00:03:26,228 --> 00:03:30,228
+ve burada da bilmediğimiz ne olduğunu bilmediğimiz
+
+13
+00:03:30,228 --> 00:03:33,287
+dur onu birazcık daha şey yapayım
+
+14
+00:03:33,287 --> 00:03:38,887
+sonra sınır durumlarla sonra uğraşırız
+
+15
+00:03:38,887 --> 00:03:40,927
+bilmediğimiz bir örneğimiz var.
+
+16
+00:03:41,087 --> 00:03:42,387
+şöyle bir örneğimiz var.
+
+17
+00:03:42,387 --> 00:03:50,707
+şimdi bu örnek için hangi sınıfa ait olduğunu düşünürsünüz.
+
+18
+00:03:55,027 --> 00:03:56,487
+sizden cevap bekliyorum bu arada.
+
+19
+00:03:56,508 --> 00:03:57,187
+A sınıf hocam.
+
+20
+00:03:57,627 --> 00:03:58,147
+A sınıf.
+
+21
+00:03:58,447 --> 00:04:10,187
+A sınıf. Neden? Şimdi baktığınız zaman aslında x1 ve x2 özellikleri genel olarak A sınıfına ait örneklere daha çok yakın bir noktada duruyor.
+
+22
+00:04:10,187 --> 00:04:16,607
+Veya desem ki işte şurada bir örneğimiz var. Hemen dersiniz ki bilinmeyen örneğimiz.
+
+23
+00:04:16,607 --> 00:04:25,087
+Hemen dersiniz ki bu örnekte A dediniz, bu bilinmeyen örnekte B sınıfıdır dersiniz.
+
+24
+00:04:25,228 --> 00:04:31,068
+Neden? Çünkü A sınıfından oldukça uzakta duruyor, B sınıfının oldukça yakında duruyor.
+
+25
+00:04:31,068 --> 00:04:35,187
+Şimdi biz geçen haftalarda önce decision tree'yi gördük.
+
+26
+00:04:35,248 --> 00:04:46,388
+Karar ağaçlarıyla özelliklerin üzerinden ilerleyerek bilinmeyen bir örneğin daha önceki örneklerin istatiksel durumlarından
+
+27
+00:04:46,388 --> 00:04:53,827
+bağlı olarak bilinmeyen bir örneği nasıl sınıflandıracağımızı gördük. Bayes teoreminde de aslında benzer bir şekilde aynı yapı vardı.
+
+28
+00:04:54,368 --> 00:05:15,688
+Orada da yine daha önceki olasılıklar vardı elimizde, eğitim örneklerimizle ilgili. Bu olasılıklara göre bir model oluşturduk ve ondan sonra bilinmeyen bir örnek geldiğinde hangi sınıfa daha benzer olduğuna o şekilde karar verdik.
+
+29
+00:05:15,687 --> 00:05:29,747
+Şimdi bu tür eski bilgi bir şekilde bir sıkıntı var anlayamadım. Bir dakika yazarken de oluyor. Neyse şu tarafı mı kullansam? Allah Allah.
+
+30
+00:05:37,779 --> 00:05:39,159
+Bu şekilde
+
+31
+00:05:39,159 --> 00:05:48,219
+Anlaşılmaz bir sıkıntıyla boğuşuyorum. Bir yerde bir şey açık kaldı herhalde.
+
+32
+00:05:50,620 --> 00:05:52,019
+Parametrik metotlar
+
+33
+00:05:52,019 --> 00:05:56,019
+Yani niçin böyle oluyor?
+
+34
+00:06:03,572 --> 00:06:15,091
+Arkadaşlar, bana bir saniye şey verir misiniz? Şunu bir toparlamaya çalışacağım. Bir saniye. Yazamıyorum çünkü sıkıntı oldum.
+
+35
+00:06:25,843 --> 00:06:47,843
+Neyse, biraz böyle idare edelim. Bakın, toparlar belki. Parametrik metotlar, mesela işte şey, Bayes, decision tree, bunlar daha önceki bilgiye göre bir model oluşturan, parametrelerden faydalanarak model oluşturan metotlardır.
+
+36
+00:06:47,843 --> 00:06:58,184
+Şimdi bugün göreceğimiz K en yakın komşuluk ise non-parametrik bir metot. Buradaki olay şu.
+
+37
+00:07:02,355 --> 00:07:25,715
+elimizde özellikle az eğitim örneği varsa eğitimde hiçbir şey yapmıyoruz. Eğitimde yaptığımız şey sadece şeyleri, elimizdeki bütün örnekleri biriktirmek üzerine kolay. Yani üzeri etiketli olan örnekleri sadece biriktiriyoruz. Başka hiçbir şey yapmıyoruz.
+
+38
+00:07:25,715 --> 00:07:38,515
+Fakat sahmin sırasında yaptığımız şey verilen bir K değeri için şeyi belirlemeye çalışmak.
+
+39
+00:07:39,075 --> 00:07:46,055
+Elimizdeki bilinmeyen örneğin en çok benzediği K örneği bulmaya çalışmak.
+
+40
+00:08:14,932 --> 00:08:18,091
+şey üzerinden
+
+41
+00:08:18,091 --> 00:08:23,932
+örnek üzerinden hangi
+
+42
+00:08:23,932 --> 00:08:26,091
+örnek üzerinden
+
+43
+00:08:36,467 --> 00:08:45,268
+hangi sınıf daha bastığınızda, bir major voting yapıyoruz, hangi sınıf daha bastığınızda, o sınıfın bilinmeyen örneğimizin sınıfı olduğunu kabul ediyoruz.
+
+44
+00:08:45,348 --> 00:08:59,507
+O zaman bir kere daha üzerinden geçersem, örneğin şöyle bir şey yaptınız, bu X'in bilmediğiniz örneğimiz ve elimizdeki training example'ları var.
+
+45
+00:08:59,507 --> 00:09:12,907
+işte x1, y1, x2, y2, xn, yn olmak üzere eğitim örnekleriniz var. Bunlar üzerinde hiçbir şey yapmıyorsunuz.
+
+46
+00:09:12,907 --> 00:09:24,907
+Sadece elinizdeki bilinmeyen x örneğinin bu örneklere ne kadar benzediğini hesaplıyorsunuz.
+
+47
+00:09:28,307 --> 00:09:38,307
+arkasından da en çok benzediği K tanesini çıkartıyorsunuz.
+
+48
+00:09:44,436 --> 00:10:03,755
+Diyelim ki, işte en çok benzeyen örnekler x2, k eşittir 3 aldığımızı varsayalım. En çok benzeyen örnekler x2, x5 ve x9 olsun. x2 A sınıfına ait olsun. x5 B sınıfına ait olsun. x9 da A sınıfına ait olsun.
+
+49
+00:10:03,755 --> 00:10:16,055
+o zaman çoğunluk A sınıfı olduğu için bilinmeyen örneğin sınıfını A olarak tespit etmiş oluyoruz.
+
+50
+00:10:16,235 --> 00:10:21,135
+Şimdi yaptığımız şey bu. O zaman eğitim aşamasında burada biz hiçbir şey yapmıyoruz.
+
+51
+00:10:21,635 --> 00:10:26,075
+Şey bir parametrik olmayan bir yöntem, K'ye yakın komşuluk.
+
+52
+00:10:26,075 --> 00:10:31,656
+Yani öncesinde hiçbir şey yapmıyorsunuz. Sadece etiketle eğitim verilmesi var.
+
+53
+00:10:31,655 --> 00:10:42,595
+sadece test aşamasında elinizdeki bilinmeyen örneğinizin eğitim örneklerinizin tamamına mesafesini benzerliğini hesaplıyorsunuz.
+
+54
+00:10:43,275 --> 00:10:54,895
+Ve en benzer olan K tane örnek içerisinde çoğunluk hangi sınıfa ait ise örneğinizin o sınıfa ait olduğuna karar veriyorsunuz.
+
+55
+00:10:54,895 --> 00:10:58,755
+O zaman burada iki tane ana problemimiz var.
+
+56
+00:10:58,755 --> 00:11:16,895
+K'yı nasıl seçeceğiz? Birinci şeyimiz bu. Karar vermemiz gereken birinci konu bu. Birinci şey atmamız gereken konu. K'yı nasıl seçeceğimiz?
+
+57
+00:11:27,635 --> 00:11:34,635
+İkinci karar vereceğimiz şey de benzerliği nasıl ölçeceğimiz?
+
+58
+00:11:37,587 --> 00:11:38,487
+İki tane şey var.
+
+59
+00:11:38,948 --> 00:11:40,548
+Şimdi önce şeyden başlayalım.
+
+60
+00:11:41,767 --> 00:11:46,888
+Neden K'ye yakın komşulukta bizim yapmaya çalıştığımız, yani böyle bir şeyin avantajı ne?
+
+61
+00:11:47,287 --> 00:11:48,747
+Böyle bir şey şundan yapılıyor.
+
+62
+00:11:48,747 --> 00:11:57,508
+Mesela diyelim ki şurada bir tane mavi B sınıfına ait örneğimiz olsaydı.
+
+63
+00:11:57,667 --> 00:12:01,287
+A'ya çok, şu bilinmeyen örneğe çok yakın bir örneğimiz olsaydı.
+
+64
+00:12:01,287 --> 00:12:19,308
+Şimdi size sorsam ben bu bilinmeyen örnek hangi sınıfa daha yakındır ve kime daha çok benziyor hangi sınıfta söyleyeyim desem belki diyeceksiniz ki yakınımda çok yakın bir B örneği var o zaman bu B sınıfına aittir diyeceksiniz.
+
+65
+00:12:19,987 --> 00:12:21,927
+Bu şimdi olabilecek bir şey.
+
+66
+00:12:22,307 --> 00:12:25,247
+Yani belki bir parazitten ötürü olabilir.
+
+67
+00:12:25,527 --> 00:12:32,847
+Yani B sınıfının bir örneği B sınıfının genel örneklerinden uzakta A sınıfına daha yakın bir yerde olabilir.
+
+68
+00:12:33,627 --> 00:12:38,207
+Belki de gerçekten yani örneklerden birisinin parazit olması gerekmiyor.
+
+69
+00:12:38,347 --> 00:12:39,127
+Durumu bu şekilde.
+
+70
+00:12:39,127 --> 00:12:47,887
+Şimdi bu durumda siz en benzer örneğe yakınlığına göre karar verecek olursanız yanlış bir karar verebilirsiniz.
+
+71
+00:12:47,887 --> 00:12:53,247
+Yani şurası K eşittir 1 için B sınıfına ait dediğimiz durum.
+
+72
+00:12:53,687 --> 00:13:04,007
+Ama ben örneğin K eşittir 3 deseydim, örneğin A sınıfında olduğunu karar verecektik.
+
+73
+00:13:04,307 --> 00:13:06,387
+Halbuki daha mantıklı gözüküyor size.
+
+74
+00:13:07,627 --> 00:13:10,367
+K'nın 3 olduğu durum daha mantıklı gözüküyor.
+
+75
+00:13:10,507 --> 00:13:10,687
+Neden?
+
+76
+00:13:10,687 --> 00:13:18,347
+Çünkü baktığımız zaman bu örneğin A sınıfına ait olması, örnek genel olarak A sınıfına yakın.
+
+77
+00:13:19,227 --> 00:13:27,507
+Buradaki şu B sınıfına ait olan örnek aslında kendi sınıfından uzaklaşmış durumda.
+
+78
+00:13:27,948 --> 00:13:31,367
+O zaman karnıyakın komşulun mantığı bu aslında.
+
+79
+00:13:31,367 --> 00:13:41,948
+Yani bazı durumlarda şey olabilir, bilinmeyen örneğin yakınında aslında ait olmadığı sınıfa ait örnekler de olabilir.
+
+80
+00:13:42,147 --> 00:13:44,448
+Yani şöyle de bir şey olabilirdi aslında.
+
+81
+00:13:46,468 --> 00:13:49,007
+Bir tane daha çizeyim mesela.
+
+82
+00:13:50,587 --> 00:13:52,948
+Şimdi şöyle bir şey yaptığımızı düşünelim.
+
+83
+00:13:52,948 --> 00:14:02,147
+Bu sefer şunu sileyim.
+
+84
+00:14:03,248 --> 00:14:06,127
+Şöyle şurayı bir sileyim, bir temizleyeyim, bir daha yapayım.
+
+85
+00:14:06,808 --> 00:14:09,147
+Şöyle bir durum için görelim.
+
+86
+00:14:11,108 --> 00:14:17,188
+Şu örneklerimiz buradayken şöyle iki tane kaçmış örneğimiz olsun B sınıfına ait.
+
+87
+00:14:17,188 --> 00:14:22,347
+Ve şurada da bilinmeyen örneğimiz olsun.
+
+88
+00:14:25,875 --> 00:14:46,335
+şimdi ben K eşittir 3 desem yine şey kazanıyor aslında mavi kazanıyor. K eşittir 3 için mavi kazanıyor. Ama örneğin K eşittir 5 desem o zaman bakacaksınız şöyle ne oldu?
+
+89
+00:14:46,335 --> 00:15:11,815
+en yakındaki şöyle çevreliyim. Şunlar en yakınındaki beş komşusuysa üçü kırmızı ikisi mavi. Dediniz ki bu mavis müfağıttır. Yine çünkü burada gözle de baktığınızda iki özellik için her şey çok kolaydır. Böyle iki boyutlu uzayı görsel olarak görüp değerlendirmek anlamak çok kolaydır. O yüzden iki boyutlu uzayda sadece iki özellik varken bunu gösteriyorum.
+
+90
+00:15:11,815 --> 00:15:20,955
+Gözle de baktığınızda neyi görüyorsunuz aslında? Yani bu bilinmeyen örnek kırmızı A sınıfına daha çok benziyor. A sınıfına daha yakın görüyorsunuz.
+
+91
+00:15:20,955 --> 00:15:37,956
+İşte K'ın yakın komşulukta yapılmaya çalışılan şey şu bu. Yani öyle uygun bir K değeri belirleyelim ki biz bu şekilde aslında kendi sınıfının çok da yakınında durmayan eğitim örnekleri olduğunda doğru sınıflandırmayı yapabilsin.
+
+92
+00:15:37,956 --> 00:15:44,956
+genel karakteristiklere göre bilinmeyen örneğin sınıflandırılmasını sağlasın.
+
+93
+00:15:45,456 --> 00:15:56,396
+Bundan ötürü de K'a en yakın komşuluk çok başarılı olan yine şimdi hatırlarsanız ilk ders size demiştim ki aslında makine öğrenmesinde çok fazla yöntem var.
+
+94
+00:15:56,396 --> 00:16:02,256
+Ben size bunların en başarılı olanların dönem içerisinde anlatacağım.
+
+95
+00:16:02,255 --> 00:16:09,795
+K en yakın komşuluk da bu açıdan baktığımızda en başarılı yöntemlerden birisi.
+
+96
+00:16:10,175 --> 00:16:13,596
+Şimdi o zaman gelelim şeyi anladık yani bir K değeri olmalı.
+
+97
+00:16:13,596 --> 00:16:18,615
+Bu K değeri de en yakın K komşuyu göstermeye.
+
+98
+00:16:18,715 --> 00:16:30,455
+Daha sonra ben bu en yakın K komşu içimden çoğunluk hangi sınıfa aitse bilinmeyen örneğin o sınıfa ait olduğu kararını vereceğim.
+
+99
+00:16:30,455 --> 00:16:37,875
+Şimdi buraya kadar bir soru yoksa K'yı nasıl seçeceğiz ve mesafeyi nasıl hesaplayacağız onlara geçeceğim.
+
+100
+00:16:40,375 --> 00:16:41,395
+Soru var mı?
+
+101
+00:16:46,548 --> 00:17:04,808
+yok peki tamam o zaman buradan devam ediyorum. Peki o zaman K'yı nasıl seçeceğiz? Önce şeyden başlayalım isterseniz K'yı nasıl seçeceğizden önce. Mesafe hesabından başlayalım.
+
+102
+00:17:04,808 --> 00:17:18,068
+Şimdi benzerliği nasıl ölçacağız? Benzerliği ölçmek için mesafe yöntemleri var. Bunlardan birincisi Minkowski Distance
+
+103
+00:17:23,508 --> 00:17:24,508
+ve
+
+104
+00:17:28,884 --> 00:17:40,884
+Minkowski distance dediğimiz zaman şu şekilde hesaplanıyor. Diyelim ki bir örneğimizin en tane özelliği var ise...
+
+105
+00:17:44,243 --> 00:18:00,264
+bir örneğinizin en tane özelliği varsa, Minkowski Distance'ı, xi eksi, y'nin p'inci kuvveti, bölü, bir bölü p olarak hesaplanıyor.
+
+106
+00:18:00,264 --> 00:18:13,283
+Bu x sizin, diyelim ki, training example'unuz olsun. Aslında şurada şey diyeyim de kafanız karışmasın. Biz y'yi hep şey için kullanıyoruz ya,
+
+107
+00:18:14,243 --> 00:18:23,223
+şöyle x iyi diyelim, x new diyelim, şöyle, şöyle yapıyorum.
+
+108
+00:18:27,731 --> 00:18:38,731
+Peki sizin training eksempliniz olsun. Bu iyiyince özelliği demek.
+
+109
+00:18:43,796 --> 00:18:54,895
+bilinmeyen örneğimiz olsun. Mesafe bulma bu şekilde yapılıyor. Eğer burada P1 ise bu Manhattan Distance
+
+110
+00:18:58,804 --> 00:19:07,804
+ve iki ise, public distance olarak kullanılıyor.
+
+111
+00:19:10,451 --> 00:19:23,651
+Şimdi Manhattan Distance bunları mutlaka bir yerlerde görmüşsünüzdür ama şey olarak anlatacağım ki bir kere daha anlatacağım ki mutlaka hepinizin notlarında bulunsun.
+
+112
+00:19:25,031 --> 00:19:30,472
+Eğer grid benzeri bir petiniz var ise aslında Manhattan Distance kullanılıyor.
+
+113
+00:19:30,472 --> 00:19:48,352
+yani ne demek? Bu sizin X örneğiniz ise bu da sizin bilmediğiniz X new örneğiniz ise Manhattan distance bu ikisi arasındaki mesafe şu şekilde hesaplanıyor.
+
+114
+00:19:57,811 --> 00:19:59,191
+Şöyle diyeyim, bir dakika
+
+115
+00:20:11,284 --> 00:20:39,544
+D'ye tane özelliğiniz varsa bütün özelliklerin, aralarındaki farkların mutlak değerlerinin toplamı olarak hesaplanıyor. O yüzden bir noktamız burasıysa, diğer noktamız da burasıysa aslında mesafe dediğimiz şey şuradan, yani şu mesafeyle, şu mesafe değerlendirilerek bulunmuş oluyor.
+
+116
+00:20:39,544 --> 00:21:00,544
+Diyelim ki şimdi hemen bir örnek üzerinde göstereyim. X örneğinizin 3 tane özelliği var. X'nin y örneğinizin de 3 tane özelliği var. O zaman bunların distansı...
+
+117
+00:21:06,099 --> 00:21:17,959
+3-2 artı, 5-1 artı, 1-6 olarak hesaplanıyor. 1, 5, 5 daha 10. Aralarındaki mesafenin 10 olduğu bulunuyor.
+
+118
+00:21:18,299 --> 00:21:28,520
+Şimdi bu şekilde k-i yakın komşulukta yaptığımız şey, bütün örneklerin bilinmeyen örneği mesafesini hesaplayıp mesafeleri, bakın burada distance hesaplıyoruz.
+
+119
+00:21:28,520 --> 00:21:33,879
+Bir benzerlik bulma vardı, bir de mesafe bulma vardı. Mesafe bulmadı.
+
+120
+00:21:33,879 --> 00:21:42,699
+mesafeleri küçükten büyüğe diziyorsunuz. En küçük, en yakın, en benzer örneklemektir ve en benzer kağıt aynısını seçiyorsunuz.
+
+121
+00:21:42,699 --> 00:21:53,659
+Şimdi birinci kullanabileceğimiz yöntem Manhattan Distance mesafe ölçmek için. Bu Minkowski mesafe yöntemlerinde.
+
+122
+00:21:53,659 --> 00:22:09,179
+ikincisi de öplik distance. Şimdi öplik distance şeyden Manhattan'dan daha hassastır, daha iyidir ve genellikle k-in yakın komşulukta öplik distance kullanılır.
+
+123
+00:22:09,179 --> 00:22:22,299
+Fakat şey istendiğinde yani hız önemli olduğunda çünkü öplik distance'da olan şey şimdi böyle bir x örneğimiz var bir de x-mim örneğimiz var.
+
+124
+00:22:22,299 --> 00:22:23,299
+Evet
+
+125
+00:22:26,900 --> 00:22:29,900
+şöyle yapayım, öbürüm gibi yapayım, aynısını yapayım.
+
+126
+00:22:40,788 --> 00:22:53,807
+Bütün özelliklerim bu sefer farklarının kareleri alınır ve ondan sonra bunun kare kürkü alınır. Şimdi tabii bundan fark edeceğiniz üzere buradaki işlem çok daha fazla.
+
+127
+00:22:53,807 --> 00:23:05,167
+Menetinde sadece mutlak bir yer alıyorduk. Mutlak bir yer almamızın sebebi de farkı, negatif veya pozitif olması bizim için önemli. Biz sadece mesafenin büyüklüğünü anlamaya çalışıyoruz. O yüzden mutlak bir yer alıyorduk.
+
+128
+00:23:05,167 --> 00:23:32,347
+Burada ise farkların karelerinin toplamının kare köpünü aldığınız için yapılan işlemlik daha fazla olduğundan eğer hırsız sizin için önemli ise o zaman Manhattan Business kullanmak yani çok hassas bir şey yoksa da sizin için önemli ise Manhattan Business kullanmak daha zaman açısından efektif oluyor.
+
+129
+00:23:32,347 --> 00:23:49,087
+Şimdi burada yaptığımız şey şu 3-2'nin karesi artı 5-1'in karesi artı 1-6'nın karesinin kare kökü ona da baktığımız zaman 1 artı 16 artı 5 kere 5 25
+
+130
+00:23:49,087 --> 00:24:01,347
+5 daha 11 12 3 1 42'nin kare kökü o da ne eder işte 6 6 kere 6 36 6 oraya 49'a 7 var
+
+131
+00:24:01,347 --> 00:24:28,148
+6.6 falan gibi bir şeyler öbür ne etmişti? 10 etmişti öbür mesafe. Doğru hesapladım değil mi? 1, 5, 4, 16, 1, 5, 25, 6, 5 daha 11, 12, 1, 3, 4, 42 tamam. 42 olduğuna göre 36'ya 6 uzak, 49'a 7 uzak. Pardon 6.4 falan etmesi lazım değil mi? Yanılıyor muyum?
+
+132
+00:24:28,148 --> 00:24:44,148
+muhtemelen öyle bir şeydir. Hay Allah'ım yarabbim. 6.4. Peki. Şimdi K'ın yakın komşulukta en çok kullanabileceğiniz mesafeler bunlar.
+
+133
+00:24:44,148 --> 00:24:57,728
+Bunun dışında Heming Distance var. Heming Distance'daysa bu biraz daha farklı. Pek K'ın komşulukta çok kullanılan bir şey de değil aslında.
+
+134
+00:24:58,148 --> 00:25:18,427
+yöntemde değil aslında. Hem ikli sınıfta yaptığınız örnekle özelliklerin aynılığına bakmanız. Yani eğer iki özellik aynı ise mesafe birdir o iki özelliğin birbirine mesafesi. Şey ise farklı ise sıfırdır.
+
+135
+00:25:18,427 --> 00:25:34,747
+baktığınız zaman şöyle bir şey olarak göstereyim. Genellikle kategorik özellikler için aslında şey çok kullanılır. Nedir? Hem ikimizsiniz çok kullanılabilir.
+
+136
+00:25:34,747 --> 00:26:01,087
+Diyelim ki sizin iki tane özelliğiniz olsun, X örneğimiz, Ankara, İzmir, İstanbul, X-New özelliğinizde Ankara, Diyarbakır, Muğla.
+
+137
+00:26:01,088 --> 00:26:11,987
+Şimdi bunlar eşit, bunlar değil. O zaman buradaki bir sıfır sıfır
+
+138
+00:26:20,115 --> 00:26:31,595
+Buradaki distance'ınız 1 olarak hesaplanır. Özellikle kategorik şeylerde, özelliklerde bu çok daha uygun bir ölçme şeklidir. Buraya kadar sormak istediğiniz bir şey var mı?
+
+139
+00:26:37,239 --> 00:26:37,779
+Orada mısınız?
+
+140
+00:26:39,399 --> 00:26:40,440
+Evet hocam.
+
+141
+00:26:40,839 --> 00:26:42,480
+Hocam bir şey söyleyebilir miyim ben?
+
+142
+00:26:42,859 --> 00:26:43,219
+Doğru.
+
+143
+00:26:43,679 --> 00:26:49,320
+Burada mesela sadece bu tarz bir şey de kullanılabilir herhalde değil mi Hemingdison?
+
+144
+00:26:49,539 --> 00:26:52,980
+Sonuçta bütün örneklerin hiçbir özellikleri tam olarak aynı olmuyor.
+
+145
+00:26:53,139 --> 00:26:54,519
+Yani üst üste binmiş olmuyorlar.
+
+146
+00:26:55,059 --> 00:26:56,019
+Evet çok haklısın.
+
+147
+00:26:56,099 --> 00:26:58,379
+Genel olarak kategoriklerde kullanılıyor Hemingdison.
+
+148
+00:26:58,379 --> 00:27:04,759
+Yani kategorik özelliklerin değerlendirilmesiyle ilgili size bana denkodik falan başka şeyler de anlatacağım.
+
+149
+00:27:04,759 --> 00:27:11,459
+Ama en temel şekliyle Heming Distance şeyde kullanılıyor.
+
+150
+00:27:12,779 --> 00:27:16,259
+Böyle kategorik özelliklerin varsa eşiteler bir diyorsun.
+
+151
+00:27:16,480 --> 00:27:18,279
+Aynen farklılısalar sıfır diyorsun.
+
+152
+00:27:18,699 --> 00:27:20,480
+Şimdi bir de koste.
+
+153
+00:27:20,599 --> 00:27:21,039
+Hocam.
+
+154
+00:27:21,559 --> 00:27:21,939
+Buyurun.
+
+155
+00:27:22,139 --> 00:27:22,239
+Evet.
+
+156
+00:27:22,459 --> 00:27:23,379
+Bir şey sorabilir miyim?
+
+157
+00:27:23,859 --> 00:27:24,059
+Tabii.
+
+158
+00:27:24,259 --> 00:27:29,599
+Burada mesela ikinci şeyde İzmir ve İzmir olsaydı Distance'ı nasıl gösteriyorduk?
+
+159
+00:27:31,520 --> 00:27:33,139
+Yani bir bir sıfırda.
+
+160
+00:27:34,759 --> 00:27:38,259
+İkincisi de Diyarbakır yerine İzmir mi olsaydı?
+
+161
+00:27:38,259 --> 00:27:38,419
+Evet.
+
+162
+00:27:39,719 --> 00:27:40,099
+Tamam.
+
+163
+00:27:41,679 --> 00:27:44,499
+Ankara, İzmir, İstanbul.
+
+164
+00:27:47,679 --> 00:27:52,139
+Ankara, İzmir, mesela Muğla böyle olsaydı.
+
+165
+00:27:52,819 --> 00:27:54,560
+Şimdi o zaman toplamını alıyorsun.
+
+166
+00:27:54,719 --> 00:27:55,959
+Güzel. İlk sordun.
+
+167
+00:27:56,099 --> 00:27:57,719
+1-1-0.
+
+168
+00:27:58,579 --> 00:28:02,319
+O zaman distance'ınız 2 oluyor.
+
+169
+00:28:03,319 --> 00:28:03,959
+Tamam.
+
+170
+00:28:03,959 --> 00:28:11,119
+Yani aslında buradaki olay özetle kaç tane özellik benzer yani benzer özelliklerin toplamını alıyorsun.
+
+171
+00:28:11,259 --> 00:28:15,759
+Kaç tane özellik benzer, benzer özelliklerin toplamını alıyorsun.
+
+172
+00:28:16,479 --> 00:28:21,039
+Şimdi bir de kosan distance'ı anlatacağım.
+
+173
+00:28:21,199 --> 00:28:27,259
+Bu genellikle döküman sınıflandırma için kullanılıyor.
+
+174
+00:28:27,259 --> 00:28:30,379
+Yani genellikle hani başka yerlerde de biz bunu kullanıyoruz.
+
+175
+00:28:33,959 --> 00:28:35,739
+şey olarak
+
+176
+00:28:35,739 --> 00:28:37,879
+document classification dışında da
+
+177
+00:28:37,879 --> 00:28:39,779
+cosine distance kullanıyoruz. Ama
+
+178
+00:28:39,779 --> 00:28:42,279
+cosine distance aslında genel olarak
+
+179
+00:28:42,279 --> 00:28:43,319
+şey için kullanılıyor.
+
+180
+00:28:43,879 --> 00:28:45,980
+Döküman sınıflandırma için kullanılıyor.
+
+181
+00:28:46,079 --> 00:28:47,899
+Burada yaptığımız şey aslında
+
+182
+00:28:47,899 --> 00:28:50,459
+şu. Şimdi bu sizin x örneğimizse
+
+183
+00:28:50,459 --> 00:28:51,999
+bu da bilinmeyen
+
+184
+00:28:51,999 --> 00:28:54,019
+örneğimizse bu ikisinin
+
+185
+00:28:54,019 --> 00:28:56,079
+yakınlığını aralarındaki açıya
+
+186
+00:28:56,079 --> 00:28:58,259
+bakarak çözmüş oluyorsunuz.
+
+187
+00:28:58,759 --> 00:29:00,079
+Benzerliğini buna bakarak
+
+188
+00:29:00,079 --> 00:29:02,200
+mesafesini buna bakarak çözmüş
+
+189
+00:29:02,200 --> 00:29:04,700
+oluyorsunuz. Neden şeyde kullanmışlar
+
+190
+00:29:04,700 --> 00:29:05,039
+bunu?
+
+191
+00:29:06,420 --> 00:29:08,300
+Döküman sınıflandırmada kullanmışlar.
+
+192
+00:29:08,379 --> 00:29:10,119
+Çünkü döküman sınıflandırmada şöyle
+
+193
+00:29:10,119 --> 00:29:12,080
+bir şey oluyor. Diyelim ki işte
+
+194
+00:29:12,080 --> 00:29:13,640
+A dökümanında
+
+195
+00:29:13,640 --> 00:29:16,280
+bir kelimeden 20 tane olsun
+
+196
+00:29:16,280 --> 00:29:18,200
+B dökümanında da 50 tane olsun.
+
+197
+00:29:19,520 --> 00:29:20,399
+Mesafe çokmuş
+
+198
+00:29:20,399 --> 00:29:21,840
+gibi gözükebiliyor orada.
+
+199
+00:29:22,319 --> 00:29:24,520
+Halbuki relatif olarak
+
+200
+00:29:24,520 --> 00:29:26,140
+B dökümanın
+
+201
+00:29:26,140 --> 00:29:27,800
+daha büyük olduğu için onda
+
+202
+00:29:27,800 --> 00:29:30,000
+o kelime 50 defa geçmiş
+
+203
+00:29:30,000 --> 00:29:31,599
+A dökümanın daha küçük olduğu için
+
+204
+00:29:31,599 --> 00:29:33,619
+20 defa geçmiş. O yüzden
+
+205
+00:29:33,619 --> 00:29:36,060
+mesafenin büyüklüğü
+
+206
+00:29:36,060 --> 00:29:38,039
+değil aslında
+
+207
+00:29:38,039 --> 00:29:39,840
+burada önemli olan benzerlik
+
+208
+00:29:39,840 --> 00:29:41,519
+hocak. Yani mesafenin büyüklüğü
+
+209
+00:29:41,519 --> 00:29:43,700
+dediğimizde birinde 20 defa, birinde
+
+210
+00:29:43,700 --> 00:29:45,359
+50 defa geçtiği için aslında
+
+211
+00:29:45,359 --> 00:29:47,659
+benzemiyor gibi gözükebilecekler.
+
+212
+00:29:48,420 --> 00:29:49,039
+Halbuki
+
+213
+00:29:49,039 --> 00:29:51,619
+bu şekilde cosine distance'da
+
+214
+00:29:51,619 --> 00:29:53,099
+benzerliklerini
+
+215
+00:29:53,099 --> 00:29:55,879
+şey şeklinde
+
+216
+00:29:55,879 --> 00:29:58,219
+iki vektörün
+
+217
+00:29:58,219 --> 00:30:00,039
+özellikleri
+
+218
+00:30:00,039 --> 00:30:01,619
+vektör olarak düşünürsek
+
+219
+00:30:01,619 --> 00:30:03,179
+iki vektörün
+
+220
+00:30:03,179 --> 00:30:05,159
+aralarındaki
+
+221
+00:30:05,159 --> 00:30:07,939
+açı ne kadar yakın olduklarını
+
+222
+00:30:07,939 --> 00:30:09,700
+ölçmek için kullanılmış oluyor.
+
+223
+00:30:10,599 --> 00:30:11,959
+Burada şöyle bir şey var.
+
+224
+00:30:12,079 --> 00:30:13,700
+Diyelim ki bu x
+
+225
+00:30:13,700 --> 00:30:15,640
+bu da x'nin iki tane
+
+226
+00:30:15,640 --> 00:30:17,599
+işte benzerliği
+
+227
+00:30:17,599 --> 00:30:19,280
+ölçülecek örneğiniz olsun.
+
+228
+00:30:20,099 --> 00:30:21,259
+Bunların benzerliğini
+
+229
+00:30:21,259 --> 00:30:23,819
+kosan similarity'de şu şekilde
+
+230
+00:30:23,819 --> 00:30:25,159
+ölçebiliyoruz.
+
+231
+00:30:26,996 --> 00:30:33,956
+dot product ile yazacak olursak bunları, dot product ile gösterecek olursak,
+
+232
+00:30:33,956 --> 00:30:38,096
+kosinus theta, kosinus theta eşittir.
+
+233
+00:30:39,715 --> 00:30:40,135
+X.
+
+234
+00:30:42,135 --> 00:30:43,655
+X'in o bölü.
+
+235
+00:30:45,756 --> 00:30:46,715
+X.
+
+236
+00:30:51,188 --> 00:31:06,047
+bu şekilde hesaplıyoruz. Mesela şöyle bir örnek üzerinden göstereyim size nasıl yapıldığını. Diyelim ki iki tane döküman parçamız olsun.
+
+237
+00:31:20,243 --> 00:31:25,743
+Bunu belki doğal dil işlemede anlatmışlardır size. Anlatıldı mı yoksa daha gelmedi mi?
+
+238
+00:31:29,523 --> 00:31:30,863
+doğal bir işlem alan var mı?
+
+239
+00:31:30,884 --> 00:31:31,903
+yok henüz geldik.
+
+240
+00:31:32,764 --> 00:31:34,723
+tamam, tamam şöyle.
+
+241
+00:31:36,163 --> 00:31:38,603
+şimdi burada önce şeyi çıkartıyoruz.
+
+242
+00:31:38,723 --> 00:31:41,484
+yine Bayes'de yaptık, yanayı Bayes'de gördük.
+
+243
+00:31:41,583 --> 00:31:46,423
+önce bir sözlüğü çıkartıyoruz kelimelerden.
+
+244
+00:31:52,372 --> 00:32:12,132
+Tabii bunu şöyle düşünün. Aynı mantıkla sözlük baştan çıkartılmış şey için, training example'lar için sözlük baştan çıkartılır. Her zaman bu böyledir. Yani işlem yaparken asla sözlük çıkartmayın. Öyle yapanlar var işlem yaparken. Yani gerçekten var.
+
+245
+00:32:12,132 --> 00:32:21,971
+Şimdi böyle sözde söyleyince size ya niye insan işlem yaparken sözlük çıkarsın gibi geliyor olabilir ama bu çok sık yapılan bir hata.
+
+246
+00:32:21,971 --> 00:32:34,091
+Şimdi şöyle başlayalım. Data, digital economy is new of oil.
+
+247
+00:32:39,380 --> 00:32:47,380
+ha iki tane var burada pardon özür dilerim. Doküman 2'ye bakıyorum.
+
+248
+00:32:47,380 --> 00:32:57,380
+Pardon şurada bir tane var.
+
+249
+00:33:01,395 --> 00:33:09,155
+Şimdi, şu X olsun, şu da X new olsun.
+
+250
+00:33:18,932 --> 00:33:19,411
+şimdi
+
+251
+00:33:19,411 --> 00:33:23,511
+dot product'ları bunun
+
+252
+00:33:23,511 --> 00:33:24,832
+x new
+
+253
+00:33:34,420 --> 00:33:36,420
+D tane özelliğin var.
+
+254
+00:33:46,996 --> 00:33:47,996
+1 çarpı 1 artı 1 çarpı 0 artı 1 çarpı 0 artı 1 çarpı 0 artı 1 çarpı 0 artı 1 çarpı 0 artı 1 çarpı 0 artı 1 çarpı 0 artı 1 çarpı 0 artı 1 çarpı 0 artı 1 çarpı 0 artı 1 çarpı 0 artı 1 çarpı 0 artı 1 çarpı 0 artı 1 çarpı 0 artı 1 çarpı 0 artı 1 çarpı 0 artı 1 çarpı 0 artı 1 çarpı 0 artı 1 çarpı 0 artı 1 çarpı 0 artı 1 çarpı 0 artı 1 çarpı 0 artı 1 çarpı 0 artı 1 çarpı 0 artı 1 çarpı 0 artı 1 çarpı 0 artı 1 çarpı 0 artı 1 çarpı 0 artı 1 çarpı 0 artı 1 çarpı 1 çarpı 0 artı 1 çarpı 1 çarpı 0 artı 1 çarpı 1 çarpı 0 artı 1 çarpı 1
+
+255
+00:34:15,507 --> 00:34:18,547
+eşittir. 3 çıkmış bu.
+
+256
+00:34:27,059 --> 00:34:39,059
+Şimdi bu üç sayfayı çevirirsen şey olacak değil mi? Neyse şey yapmaya çalışayım. yazarak anlatırım.
+
+257
+00:34:41,139 --> 00:35:05,459
+y eşittir 1'den d'ye x'i'nin karesi 1 artı 1 artı 1 artı 1 2 3 4 tane 1 var. 0 artı 1 artı 1 artı 2'nin karesi. 2 en son d'den 2 tane vardı x'i kınanında. Ne etti? 2 3 4 5 6 4 daha kök 10 etti.
+
+258
+00:35:05,459 --> 00:35:21,099
+aynı şekilde şey için yaptığımızda i eşitti birden d ile x new için yaptığımızda o da 4 tane 1 var orada.
+
+259
+00:35:21,099 --> 00:35:33,199
+Karakök 4. Pardon kaç tane 1 var? 1, 2, 3, 4. Evet 4 tane var. Karakök 4. O zaman kosan similoritesi şu şekilde.
+
+260
+00:35:39,635 --> 00:35:46,635
+ve
+
+261
+00:35:57,844 --> 00:36:23,883
+O da şuna eşit. Az önce x çarpı x'ini bu 3 olarak bulduk. Yani şu 3 dediğimiz şey, d tane özellik için karşılıklı olan özelliklerin çarpımlarının toplamı o 3 olarak çıktı. Şeylerin de dot product olarak x'in ikisi kök 10 çıktı.
+
+262
+00:36:23,883 --> 00:36:41,183
+çıktı. X-N, unikisi de kök 4 çıktı. İşte bu 3 bölü 2 kök 10. O da 0.47 çıkıyormuş.
+
+263
+00:36:43,643 --> 00:36:52,683
+Şimdi bu şey için eğer elinizdeki mesafesini açmak istediğimiz bilgiler dökümansa yine K'ın yakın komşulukla
+
+264
+00:36:52,684 --> 00:37:20,583
+elinizdeki bütün dökümanlar için kosünüs benzerliğine, kosan similarity kullanarak şey olarak yakınlıkları açısal olarak şu şekilde yani herhangi bir şekilde noktaların arasındaki mesafeyi Manhattan veya ÖPBİT'le ölçmek yerine kosan similarity ile ölçüp ondan sonra işte distance'ı en küçük olandan en büyük olana disip en benzer k tanesine alarak şeyi kullanabilirsiniz.
+
+265
+00:37:20,583 --> 00:37:35,543
+mesafe hesabını kullanabilirsiniz. Bu da bu şekilde yapılabilecek bir şey. Bunun dışında işte Mahalonobis Distance falan var. Mahalonobis Distance, covariance bilgisini de kullanan bir dismin.
+
+266
+00:37:35,543 --> 00:37:49,924
+Fakat bu genel olarak şeylerde kullanılmıyor. Yani kan yakın komşulukta tercih edilen bir şey değil, yöntem değil. O yüzden şey yapmayacağım.
+
+267
+00:37:49,923 --> 00:38:02,163
+onu burada girmeyeceğim. İleride başka bir noktada girebiliriz. Şimdi birinci olarak o zaman bizim göreceğimiz şey mesafe olarak ne kullanacağız fayin yakın komşulukta?
+
+268
+00:38:02,643 --> 00:38:16,603
+Özetlersek fayin yakın komşulukta ideal mesafe ölçme yöntemi, öplik distans. Eğer daha hızlı olsun istiyorsanız, çok hassas değilse yapacağımız iş,
+
+269
+00:38:16,603 --> 00:38:30,163
+yani çok hastası olmamak nedir? Zaten örnekler güzel yerleşmişlerdir. Böyle hani birbirine çok yakın farklı sınıftan örneğiniz yoktur, endişe etmiyorsunuzdur karışıklık olması yönünde.
+
+270
+00:38:30,163 --> 00:38:40,263
+O zaman Manhattan Distance da kullanabilirsiniz. Üçüncü olarak kategorik özellikleriniz varsa Heming Distance kullanabilirsiniz.
+
+271
+00:38:40,263 --> 00:38:49,243
+dördüncü olarak doküman türü bilgileri sınıflandırmak istiyorsanız mesafe ölçümü için kosan similareti kullanabilirsiniz.
+
+272
+00:38:49,383 --> 00:38:51,303
+Buraya kadar sormak istediğiniz bir şey var mı?
+
+273
+00:38:54,263 --> 00:38:57,263
+Peki o zaman isterseniz şimdi bir ara verelim.
+
+274
+00:38:57,803 --> 00:38:58,924
+Şeyde devam edelim.
+
+275
+00:38:59,864 --> 00:39:02,983
+Nedir? Kaç şu anda? 11'e 20 var.
+
+276
+00:39:03,403 --> 00:39:08,224
+Şeyi belirlerken işte K'yı nasıl belireceğiz falan onları konuşmak için bir dinlenelim.
+
+277
+00:39:08,223 --> 00:39:12,543
+11-20 var. 11-5 kralıya kadar 15 ekip araya yapabiliriz.
+
+278
+00:39:16,532 --> 00:39:17,111
+Uygun mu?
+
+279
+00:39:19,551 --> 00:39:20,892
+Olur hocam.
+
+280
+00:39:21,311 --> 00:39:22,251
+Tamam, peki.
+
+281
+00:54:53,492 --> 00:55:00,791
+Evet arkadaşlar, tekrar devam edelim kaldığımız yerden. Ekran paylaşım sizinle. Oradasınız değil mi?
+
+282
+00:55:03,631 --> 00:55:04,751
+Evet hocam.
+
+283
+00:55:05,251 --> 00:55:09,031
+Tamam peki. Bakalım.
+
+284
+00:55:10,932 --> 00:55:11,611
+Hocam.
+
+285
+00:55:12,252 --> 00:55:12,731
+Evet.
+
+286
+00:55:13,252 --> 00:55:21,451
+Cross-alienist testiniz kullanmamızın sebebi iki farklı örneğin boyutunun farklı olması mı? Tam olarak o kısmı anlamadım da.
+
+287
+00:55:21,451 --> 00:55:30,832
+Hayır hayır, posisimististansı kullanmanızın yani tam olarak boyutun farklı olması da değil aslında o etkenlerden birisi
+
+288
+00:55:30,832 --> 00:55:37,332
+Doküman sınıflandırırken şey yapmak istemiyorsun aynen yani boyutun farklı olması da önemli
+
+289
+00:55:37,332 --> 00:55:45,011
+Öklet distance yaptığında o birebir mesafe ölçüyor gerçekten mesafenin kaç olduğunu ölçüyor
+
+290
+00:55:45,011 --> 00:55:50,111
+O magnitude ölçüyor aslında büyüklük ölçüyor öklet distance yaptığınızda
+
+291
+00:55:50,111 --> 00:56:05,852
+kosei similarity yaptığımızda ise o yani birbirine ne kadar benzediğini açı olarak ölçüyor. O yüzden de şeyler etkilenmiyor dediğim şey doğru. Yani bir dokümanda bir kelime beş tane geçmiş, on tane geçmişten etkilenmiyor.
+
+292
+00:56:05,852 --> 00:56:23,032
+genel olarak çünkü büyüklük yani eğer öpliklisiniz östeydin sen o büyüklüklerin farkını alarak ilerlediği için şey yapmış olacaktın yani gerçekten farklıymış gibi gözükecekti.
+
+293
+00:56:23,032 --> 00:56:30,691
+ama bu tamamen benzerliği yakınlığa bakarak ölçüyor.
+
+294
+00:56:30,691 --> 00:56:41,691
+Yani büyüklüklerin arasındaki farka bakarak değil, vektör normları üzerinden benzerlik ölçerek buluyor.
+
+295
+00:56:42,352 --> 00:56:52,752
+Bu yüzden de daha şey olmuş oluyor, öplik distance'a göre, mesafe ölçümüne göre daha başarılı bir sonuç vermiş oluyor.
+
+296
+00:56:52,751 --> 00:56:55,211
+daha benzerliği yakalayan bir sonuç vermiş oluyor.
+
+297
+00:56:55,851 --> 00:56:59,751
+Peki hocam normalize edip menültüme kullansaydık.
+
+298
+00:57:00,751 --> 00:57:04,791
+Şimdi yok o normalize de etsen değişmeyecekti.
+
+299
+00:57:04,911 --> 00:57:06,391
+Şimdi onu anlatacağım zaten.
+
+300
+00:57:06,591 --> 00:57:08,031
+Normalizasyonu anlatacağım.
+
+301
+00:57:09,611 --> 00:57:16,712
+Normalize de etsen yine de şeylerde, dokümanlarda, cosine similarity türü yani
+
+302
+00:57:16,712 --> 00:57:21,671
+doküman sınıflandırmada göreceksiniz onu büyük bir ihtimalle doğal değişimde bir sürü yollarda böyle
+
+303
+00:57:21,671 --> 00:57:32,471
+en temel mesafe ölçerek sadece bir benzerlik bulacaksanız diğer doküman sınıflandırmadaki doğal bir işlemde göreceğimiz bir sürü yöntem var.
+
+304
+00:57:32,571 --> 00:57:42,631
+Onlardan birisi değil de sadece k-N yakın komşuluk kullanacağım ve iki dokümanın benzerliğini ölçeceğim diyorsanız o zaman kosayn simüleri de kullanmanız gerekiyor.
+
+305
+00:57:42,631 --> 00:57:51,611
+yoksa başka yöntemler kullanırsınız. Yani Naiv Bayez'e mesela döküman sınıflandırmada kullanılan temel yöntemlerden birisi.
+
+306
+00:57:51,611 --> 00:58:01,611
+Şimdi arkadaşınızın söylediği şey meselesini anlatmak istiyorum. Zaten önce onu anlatacaktım şeye geçmeden Kaan Yakın komşulara.
+
+307
+00:58:01,611 --> 00:58:20,492
+Şimdi elimizdeki özellikleri düşünelim. Diyelim ki şeyler var. Elimizde öğrencilerin mesela bilgileri var. Ondan sonra benzerliklerine göre bulutlamak istiyoruz.
+
+308
+00:58:20,492 --> 00:58:34,411
+mesela X öğrencisinin özellikler de şey olsun diyelim ki GPA olsun ondan sonra işte ne olsun mesela?
+
+309
+00:58:36,911 --> 00:58:44,471
+Yaş olsun ondan sonra işte ağırlık olsun.
+
+310
+00:58:44,471 --> 00:58:46,471
+3 tane özellik olsun.
+
+311
+00:58:46,691 --> 00:58:51,331
+Şey işte çocuğun başarısıyla yaşının ve şeyinin nedir?
+
+312
+00:58:52,211 --> 00:58:58,331
+ağırlığının böyle enteresan, anlamsız özellikler olsun, değerlendirilmesine yönelik bir şey olsun.
+
+313
+00:58:58,451 --> 00:59:05,911
+Şimdi bakın, cilberi dediğimiz şey diyelim ki 3.2 oluyor, işte 2.8 oluyor. Bu minimalde bir şey, 0 ile 4 arasında değişen bir şey.
+
+314
+00:59:06,471 --> 00:59:14,831
+H dediğimiz şey, işte 29 oluyor, 21 oluyor bu ağırlığı şeyde. Bir de hate olsun şurada.
+
+315
+00:59:22,260 --> 00:59:34,439
+kilosu diyelim ki işte 57 oluyor, 95 oluyor. Boyda işte 152 oluyor, işte 195 oluyor, bu şekilde oluyor.
+
+316
+00:59:34,439 --> 00:59:49,499
+Şimdi şurada sizin gördüğünüz gibi 0.1 bile oynasa çok büyük bir fark oluşuyor aslında. Yani 0.1 değil mi? 0.4 oynasa 4 üzerinden GPA değerlendirildiği için çok büyük bir fark oluşuyor.
+
+317
+00:59:49,499 --> 01:00:05,559
+AGE'de mesela işte bir yaş, iki yaş çok önemli değil ama o yüzden hani buradaki şey bir yaş, iki yaş çok önemli değil ama burada bir puan çok büyük bir farkı gösteriyor.
+
+318
+01:00:05,559 --> 01:00:20,919
+aynı şekilde boyda da boyun 193 cm olmasıyla 192 cm olması çok büyük bir fark değil ama orada da böyle onar onar diyelim ki 193'e karşılık 180 dediğimizde aslında bu önemli bir fark.
+
+319
+01:00:20,919 --> 01:00:32,319
+Şimdi burada neyi görüyorsunuz? Aslında farklı özellikler için şeyler farklı. Nedir? Benzerliklerin ölçülmesindeki önem farklı.
+
+320
+01:00:32,319 --> 01:00:51,219
+Yani diyelim ki x1 örneğiniz işte 3.2, 29, 57, işte 170 ise x2 örneğiniz 2.9
+
+321
+01:00:56,019 --> 01:00:58,740
+2.3 28
+
+322
+01:01:04,467 --> 01:01:23,127
+ise mesela şurada şu çok büyük fark aslında gümbürtüye gidiyor. Çünkü burada büyük değerler olduğu için buradaki aslında çok çok büyük olan fark eğer bu büyük değerler birbirine benziyorsa arada kaynayıp gidecek.
+
+323
+01:01:23,127 --> 01:01:34,668
+hiç o fark anlaşılmayacak. X1 ile X2 birbirine çok benzermiş gibi değerlendirecek. Ama siz baktığınızda zaten topu topu dört özellik var ve birinde ciddi bir fark oluştuğunu gözle görebiliyorsunuz.
+
+324
+01:01:34,668 --> 01:01:40,328
+Şimdi onun için bu durumdan kurtulmak için bu tür mesafe ölçümü yapılan yöntemlerde
+
+325
+01:01:40,328 --> 01:01:42,127
+...
+
+326
+01:01:45,715 --> 01:01:54,375
+normalizasyon veya standartizasyon yaparak önce örneklerinizi eşit aralığa getirmeniz gerekir.
+
+327
+01:01:54,375 --> 01:02:06,935
+Yani bunlar 3.2, 2.3 arasındaki fark çok çok büyük iken 29 ve 28 arasındaki fark çok küçük iken siz distance alsanız çünkü ne yapıyorsunuz aslında?
+
+328
+01:02:06,935 --> 01:02:24,235
+x1 ile x2'nin distance'ını alsanız diyeceksiniz ki 3.2 eksi 2.3 artı işte 29 karesi mesela artı 29 eksi 28'in karesi artı 57 eksi 79'un karesi artı 170 eksi 160'ın karesinin kare kökü diyeceksiniz.
+
+329
+01:02:24,235 --> 01:02:34,095
+Yaptığınız şey bu. O zaman baktığınız zaman şuradaki bilgi aslında sizin için çok da önemli olmayacak. Bunlar daha ağırlıklı olarak benzerliğe etkileyecekler.
+
+330
+01:02:34,095 --> 01:02:56,295
+Bunu engellemek için şey yapmadan önce, datayı kullanmadan önce önce bütün eğitim örneklerini normalizasyon veya standartizasyondan eşit oranlara getirmeniz gerekir. Arkasından da test edeceğiniz örneği işleme sokmadan önce normalizasyondan veya standartizasyondan geçirmeniz gerekir.
+
+331
+01:02:56,295 --> 01:03:01,055
+Şimdi önce şeyden bahsedeyim, normalizasyonun nasıl yapıldığından bahsedeyim.
+
+332
+01:03:06,003 --> 01:03:19,483
+kullanabileceğiniz normalizasyonda iki tane genel yaklaşım var. Birincisi, min-max normalizasyonunu 0-1 aralığına getirdiğimizde
+
+333
+01:03:24,947 --> 01:03:26,947
+O zaman
+
+334
+01:03:30,675 --> 01:03:49,116
+bir XE örneği için önce şey buluyorsunuz her özellik için o özelliğin minimum ve maksimum değerini buluyorsunuz elinizdeki eğitim örneklerinde her özellik için
+
+335
+01:03:49,907 --> 01:04:02,328
+o özelliğin şeyini buluyorsunuz, minimum ve maksimum değerini buluyorsunuz. Daha sonra bütün özellikleri bu minimum ve maksimum değerine göre normalize ediyorsunuz.
+
+336
+01:04:02,387 --> 01:04:11,907
+0-1 aralığına getirmiş oluyorsunuz. İkincisi bunun 0 merkeze gelecek şekilde, eksi 1-1 aralığına normalizasyon.
+
+337
+01:04:11,907 --> 01:04:19,948
+genelde 0-1 kullanılıyor ama ben bir yerlerde karşımıza çıkar, eksi 1-1'i de göstereyim.
+
+338
+01:04:30,739 --> 01:04:52,699
+Şimdi bunu yaptığınız zaman o az önce gördüğünüz gibi şurada gördüğünüz işte GPA de 0-1 aralığına gelmiş oluyor. İşte HATE de 0-1 aralığına gelmiş oluyor. O zaman bunlar oransal olarak şey oldukları için 0-1 aralığında yer aldıkları için etkileri daha net anlaşılıyor.
+
+339
+01:04:52,699 --> 01:05:02,719
+Yani 3.2'nin 2.3'e göre mesafesinin etkisi her şey 0.1 aralığına bütün özellikler 0.1 aralığına geldiği için daha net anlaşılıyor.
+
+340
+01:05:02,839 --> 01:05:05,979
+Dolayısıyla bu mutlaka yapmanız gereken bir şey.
+
+341
+01:05:06,179 --> 01:05:14,359
+Çünkü bunu yapmazsanız aslında mesela şurada gördüğünüz gibi önemli olan bir fark kaybolur gider.
+
+342
+01:05:14,539 --> 01:05:16,159
+Neden? Çünkü bu fark nedir aslında?
+
+343
+01:05:16,159 --> 01:05:45,299
+baktığımızda 0.9. Yani şurada şey olsa iki kişinin ağırlıkları arasındaki diyelim ki şöyle bir şeyimiz olsa bir başka örnekte şöyle bir ne diyeyim şöyle bir örnekte birinci örnekte diyelim ki şöyle sizin datanız ikinci örnekte de şöyle olduğunu varsayın bayağı 1.8 falan yapayım şunu.
+
+344
+01:05:45,299 --> 01:06:14,199
+1.8 yapayım ama ağırlıkları 170'e, 172 mesela buradaki fark 2, buradaki fark şey ne bileyim 10, ondan ötürü aslında şu daha benzer 1.8'e göre baya artık kötüleşmiş 1.8 olmuş ama şu fark büyük olduğu için bu 1.8 kayboldu gitti yani şuradaki fark 2 olduğu için toplam mesafeye baktığınızda bu buradaki büyük fark kaybolup gitti.
+
+345
+01:06:14,199 --> 01:06:25,439
+onu önlemek için normalizasyon yaptığınızda bütün özellikleri kendi minimum ve kendi maksimumlarına göre 0-1 aralığına çektiğinizde şeyi önlemiş oldunuz.
+
+346
+01:06:25,439 --> 01:06:31,739
+Bu özellikler arasındaki büyük farkı önlemiş oldunuz.
+
+347
+01:06:31,739 --> 01:06:46,799
+Şimdi birinci yapabileceğiniz şey bu. İkinci yapabileceğiniz şey de bu özelliklerin arasındaki farkı ortadan kaldırmak için normalizasyon benzeri yaklaşımda standartizasyon.
+
+348
+01:06:46,799 --> 01:06:51,019
+Şimdi eğer buna Z-score normalizasyon da deniyor.
+
+349
+01:06:56,563 --> 01:07:11,643
+Eğer elinizdeki örneklerin veri dağılımının, gauss dağılımı olduğu biliniyor ise daha iyi sonuç veriyor örneklerimizi standartizasyon işleminden geçirmeniz.
+
+350
+01:07:11,643 --> 01:07:24,683
+Burada yaptığımız şey her örnekten ortalama çıkartılıp standart sapmaya bölüyoruz. Böylece ortalama sıfır standart sapma da bir oluyor.
+
+351
+01:07:24,683 --> 01:07:34,763
+Şimdi D tane eğitim örneğimiz varsa önce bu eğitim örneklerinin ortalamasını alıyoruz.
+
+352
+01:07:34,763 --> 01:07:39,263
+Bu eğitim örneklerimiz.
+
+353
+01:07:48,275 --> 01:08:01,015
+D adet eğitim örneğimiz var. Şimdi her özellik için, bakın buradaki şu, iyinci özellik, çok özür dilerim, iyinci değil. Evet, doğru, iyinci.
+
+354
+01:08:01,435 --> 01:08:11,935
+D'inci örneğin, iyinci özelliği için ortalama alıyorsunuz. Yani bu şu demek, diyelim ki sizin işte iki tane eğitim örneğimiz olsun,
+
+355
+01:08:11,935 --> 01:08:22,496
+işte birincisindeki data 1, 3, 5 olsun. İkinci kisindeki de 2, 4, ne bileyim işte 6 olsun.
+
+356
+01:08:24,316 --> 01:08:38,795
+Müğünüz ne olacak o zaman? 3 bölü 2, 7 bölü 2, 11 bölü 2. Müğünüz bu olacak. Yani ne yapacaksınız? Her özellik için ayrı ayrı ortalama olacaksınız.
+
+357
+01:08:38,796 --> 01:08:53,055
+O zaman birinci yapacağımız şey eğitim örnekleri için ortalama belirlemek. Arkasından standart sapma eğitim örnekleri için. Standart sapmamız ne olur hatırlarsınız bunu istatistik derslerinden.
+
+358
+01:08:53,055 --> 01:09:16,055
+D tane örneğim varsa bir bölü şey bu D örnek sayısını gösteriyor. D eşittir birden işte kaç tane örneğimiz varsa oraya kadar giderken her örnek için iyinci özelliğin
+
+359
+01:09:16,055 --> 01:09:32,155
+inci özelliğe ait ortalamadan çıkartılmasının farklarının karesi. Bunu bu şekilde yaptığınız zaman eğitim örnekleriniz için standart satmayı bulmuş olursunuz.
+
+360
+01:09:45,555 --> 01:09:58,915
+ve buna göre de D tane örneğimiz varsa, ince özelliği bu örneğin. Şöyle diyeyim hatta, o zaman ince.
+
+361
+01:10:02,452 --> 01:10:16,332
+birinci özelliğin yeni değeri şu şekilde belirlenir. Eski değeri eksi ortalama bölü standart satma. Bunu şeyden hatırlarsınız.
+
+362
+01:10:18,412 --> 01:10:31,591
+Yine istatistik derslerinden hatırlarsınız. Bu şekilde yaptığımız zaman bu standart bir zasyon olmuş oluyor. Z-skorn normalization oluyor.
+
+363
+01:10:32,452 --> 01:10:44,832
+Bu şekilde yaptığınız zaman da şeyi sağlamış oluyorsunuz örneklerinizi aynı aralığa getirmiş, özelliklerinizi aynı aralığa getirmiş oluyorsunuz. Peki hangisini kullanacaksınız?
+
+364
+01:10:45,191 --> 01:10:51,371
+Aslında dağılımınız, göz dağılımı ise standartizasyon değilse normalizasyon kullanılıyor.
+
+365
+01:10:52,371 --> 01:10:57,731
+Fakat şey yaparak, şimdi dağılımınızın ne olduğunu her seferinde bilmek zorunda değilsiniz.
+
+366
+01:10:57,731 --> 01:11:15,651
+Yani Gauss dağılımı dediğimiz şey normal dağılım. Aslında gerçek dünyada pek çok olay Gauss dağılımına göre bulunuyor şeyde. O yüzden topladığımız örneklerde de bu mantıkta olması daha doğrudur. Yani Gauss dağılımında olması demek ne demek?
+
+367
+01:11:15,651 --> 01:11:24,551
+diyelim ki bir sanıftaki öğrencilerin boyundan bahsediyorsanız işte 40 öğrenciniz varsa çoğunluğu orta boyludur.
+
+368
+01:11:25,191 --> 01:11:30,991
+Az sayıda şey vardır yani orta boy kavramı da değişir yani çoğunluk aynı boydadır.
+
+369
+01:11:31,071 --> 01:11:33,591
+Orta boydan kasıt bu yakın boy boylardadır.
+
+370
+01:11:33,591 --> 01:11:44,631
+Diyelim ki işte kız öğrencilere bakıyorsunuz çoğunun boy ortalaması işte 1.58 ile 1.63 arasında değişiyordur ama az sayıda daha kısa boyda olan kişi vardır.
+
+371
+01:11:44,632 --> 01:11:51,032
+yine az sayıda da çok daha uzun boyda olan işte 1.70-1.75 boylarında olan kişi vardır.
+
+372
+01:11:51,032 --> 01:12:02,132
+Bu da üst dağılımı yani büyük bir grubun yaklaşık benzer özelliklerde özellik değerlerinde olması, küçük bir grubun da uçlarda olması gağız dağılımı.
+
+373
+01:12:02,212 --> 01:12:10,291
+Şimdi gağız dağılımınız varsa daha hassas normalizasyon şekli standartizasyon yapmaktır.
+
+374
+01:12:10,291 --> 01:12:16,312
+ama datanız da üst dağılımında değilse o zaman da klasik min-max normalizasyonu yaparsınız.
+
+375
+01:12:16,791 --> 01:12:22,491
+Datanız ne dağılımda olduğunu bilmiyorsunuz. Bununla uğraşmak veya bunu çözümlemek de istemiyorsunuz.
+
+376
+01:12:22,791 --> 01:12:31,651
+O zaman şunu yaparsınız. Bir datayı min-max normalizasyonuyla normalize edip başarı ölçersiniz.
+
+377
+01:12:31,651 --> 01:12:39,291
+Bir de standartizasyonla normalize edip başarı ölçersiniz. Hangisi daha iyisi onu kullanırsınız. Buraya kadar soru var mı?
+
+378
+01:12:40,291 --> 01:12:43,172
+Hocam ben soracağım bir soru.
+
+379
+01:12:43,291 --> 01:12:43,591
+Buyurun.
+
+380
+01:12:44,471 --> 01:12:52,931
+Mesela inputumuzun özelliklerinden biri katılabilir, diğerleri de sürekli değişkenler, sayısal değişkenler.
+
+381
+01:12:52,931 --> 01:12:57,931
+O zaman bir kısmını normalize edip kategoriyi ayrı mı bırakıyoruz?
+
+382
+01:12:58,471 --> 01:13:00,172
+Böyle örnekler oluyor mu?
+
+383
+01:13:00,595 --> 01:13:15,235
+Şimdi güzel bir soru. Aslında bu böyle kullanılıyor dediğim doğru. Yani kategorik özelliklerin varsa onları hiç ellemeyip onları şey yaptığında oluyor.
+
+384
+01:13:15,235 --> 01:13:35,715
+yani Heming Distance ile 0-1 olarak kullandığım da oluyor fakat genellikle bu yöntemlerde yani K'ye yakın komşuluk falan genellikle daha çok sayısal şeylerle değeri olan özelliklerle kullanılan yöntemlerdir.
+
+385
+01:13:35,715 --> 01:13:55,615
+yani şey çok da böyle yani ya mesela döküman sınıflandırıyorsundur az önceki gibi mesela döküman sınıflandırırken biz orada şeyleri saydık aslında kelimelerin kaçer defa kullanıldığını saydık o da aslında kategorik özellik gibi yani şey değil orada bir sayısal bir bilgi yoktu.
+
+386
+01:13:55,616 --> 01:14:05,335
+genelde ikisi çok birbirine karışmaz ama karışırsa aynen dediğin gibi şeyler için, kategorikler için 0-1 kullanılıyor.
+
+387
+01:14:05,335 --> 01:14:08,595
+Onlara çok dikkat etmeniz gerekiyor sınıflandırma yaparken.
+
+388
+01:14:09,335 --> 01:14:13,216
+Yani şeye bakın lütfen. Ben hep bunu söylerim.
+
+389
+01:14:13,316 --> 01:14:18,155
+Bu yöntemleri uygularken sizin datanız, sizin probleminiz nedir?
+
+390
+01:14:18,595 --> 01:14:21,235
+Buna bakarak karar vermeniz çok önemli.
+
+391
+01:14:21,235 --> 01:14:33,575
+mesela çoğunluğu kategorikse işte ileriki haftalarda anlatacağım o one-hot encoding falan filan onlarla kategorik özellikleri sayıya çevirip sayıları sayı kullanmak olabilir.
+
+392
+01:14:34,176 --> 01:14:39,415
+Az sayıda kategorik özellik varsa onları nasıl değerlendireceğinize şartlarınıza göre bakarsınız.
+
+393
+01:14:39,415 --> 01:14:51,176
+Yani aslında bir çete yok elinizdeki bilgiye göre ama senin dediğini toparlayacak olursak az sayıda kategorik özellik varsa aynen onları 0-1 hemiklisiniz yapıp şeye ekleyebilirsin.
+
+394
+01:14:51,235 --> 01:15:07,396
+duruma ekleyerek kullanabilirsin. Peki şimdi geldik şeye başka bir burada söyleyeceğim bir şey var mıydı? Yoktu tamam. K'yı nasıl seçerize geldik?
+
+395
+01:15:11,347 --> 01:15:22,567
+Şimdi öncelikle K'nınızın tek sayıda olması iyi bir şeydir. Yani K'yı 1, 3, 5, 7 falan gibi bir takım sayılar kullanarak seçmeniz gerekir.
+
+396
+01:15:25,067 --> 01:15:36,567
+Genelde K'nın gideceği yer işte 7'yi geçti mi bozulur. Yani K 9, 11 falan dediğiniz zaman çok da başarılı sonuçlar alamazsınız. Neden öyle yapamazsınız?
+
+397
+01:15:36,567 --> 01:15:51,107
+yapamazsınız. Çünkü şöyle bir şey var. Kanun çok küçük olması da iyiydi. Yine iki özellik üzerinden göstereceğim. Diyelim ki şu şekilde örneklerimiz var.
+
+398
+01:16:07,155 --> 01:16:25,756
+şurada bilinmeyen örneğiniz olsun. Şimdi K'nın şey olması da çok iyi değil. Küçük olması, mesela burada K'yı 1 yaptığınız zaman aslında kırmızı, dur bir dakika, şöyle birazcık sizi şartlayayım şu anda.
+
+399
+01:16:26,215 --> 01:16:36,435
+K'yı 1 yaptığınız zaman şu anda kırmızı sınıfına daha çok benziyor. Fakat K'yı 3 yapsanız mesela maviye daha çok benzeyecek gibi.
+
+400
+01:16:37,155 --> 01:16:45,496
+Yani şey, kanun çok küçük olması, bir olması falan parazit açısından uygun bir şey değildir.
+
+401
+01:16:45,496 --> 01:16:54,115
+Çünkü elinizde eğer parazitli bir şey varsa, örnek grubu varsa hemen yanlış sınıflandırma yapılabilir.
+
+402
+01:16:54,475 --> 01:16:58,215
+Ama K'yı da çok büyük aldığınız zaman bu sefer dağılmaya başlar.
+
+403
+01:16:58,215 --> 01:17:08,395
+yani K'yı 9-11 falan aldığınız zaman aslında çok da benzemeyen örnekler işin içine girip sınıflandırma başarısını bozmaya başlayabilirler.
+
+404
+01:17:08,755 --> 01:17:12,295
+O yüzden kanun genelde 1 ile 7 arasında olması iyidir.
+
+405
+01:17:12,615 --> 01:17:15,475
+Peki en iyi K'yı nasıl seçeceğiz?
+
+406
+01:17:15,475 --> 01:17:31,435
+bunun için yapılan şey bizim decision tree'de de gördüğümüz aslında elinizdeki datanın training, validation ve testing için 3 parça halinde kullanılması
+
+407
+01:17:31,435 --> 01:17:41,895
+ve önce şeyle biz burada tabi şey yapmıyoruz kan yakın komşulukta eğitmiyoruz ama bir eğitim datamız var aslında
+
+408
+01:17:41,895 --> 01:17:52,115
+diyelim ki işte D1, D2, D3, işte D14 burada eğitim datam var. Validation'da da işte D15'den D20'ye doğrulama datam var.
+
+409
+01:17:52,435 --> 01:18:00,895
+Şimdi bu doğrulama datasıyla tek tek k-niyetin komşulukla bütün elindeki doğrulama datasını sınıflandırıp farklı k değerleri için başarı ölçersiniz
+
+410
+01:18:00,895 --> 01:18:07,255
+ve şeye bakarsınız yani hangi k değeri için en yüksek başarı alındığına bakarsınız.
+
+411
+01:18:07,255 --> 01:18:34,075
+sonra elinizdeki test datasıyla da şeysiz olarak, önyargısız olarak oluşmuş model için başarıyı ölçer söylersiniz. Yani burada yapılması gereken şey bu. Burada bu training validation testing için elinizdeki data nasıl ayrılır, ne yapılır, ne edilir onu birkaç hafta sonra özel model selection ile ilgili bir ders yapıp orada anlatacağım nasıl yapıldığını.
+
+412
+01:18:34,075 --> 01:18:47,876
+ama şimdi burada sadece bilmeniz gereken şey farklı K değerleri için sistemin başarısını ölçüp en uygun K değerini ona göre belirlemenin en doğru çözüm olacağı.
+
+413
+01:18:51,188 --> 01:18:55,727
+Buraya kadar sormak istediğiniz bir şey var mı?
+
+414
+01:19:03,283 --> 01:19:06,803
+peki şimdi bir yapacağınız iş daha
+
+415
+01:19:12,787 --> 01:19:19,787
+özelliklere ağırlık eklemek olabilir.
+
+416
+01:19:44,148 --> 01:20:07,347
+belki bazı özellikleriniz diğerlerinden daha değerliyse o zaman özelliğe ağırlık ekleyebilirsiniz. Böylece o özelliğin şey olmasını sağlayabilirsiniz. Daha etkili olmasını sağlayabilirsiniz. Peki özelliğe ağırlığı nasıl etkileyeceksiniz?
+
+417
+01:20:07,347 --> 01:20:11,827
+orada şeye bakarak ekleyebilirsiniz.
+
+418
+01:20:11,827 --> 01:20:31,747
+Yani yine farklı ağırlık değerleriyle deneyerek hangisinde yani daha önemli olduğunu düşündüğünüz, daha ağırlıklı olduğunu düşündüğünüz bir şeyiniz varsa ağırlık ekleyerek, farklı ağırlıklarla deneyerek hangisinde daha başarılı olduğuna bakabilirsiniz.
+
+419
+01:20:31,747 --> 01:20:38,828
+birinci yapabileceğiniz şey bu. İkinci yapabileceğiniz şey de doğrudan şey yapmak.
+
+420
+01:20:42,828 --> 01:20:45,148
+Bir dakika özür dilerim.
+
+421
+01:20:57,427 --> 01:21:21,627
+şeylerin, o özelliklerin farkının karesinin ağırlık olarak eklemek. Yani şurada o özelliklerin farklarının karesini faydaya ekleyebilirsiniz bir bölüm şeklinde. Burada ne olacak çünkü? Bu fark ne kadar küçükse ağırlık o kadar büyük olacak.
+
+422
+01:21:21,627 --> 01:21:34,167
+Yani şeyler ne kadar benziyorsa, bilinmeyen örnekteki kağıncı özellikle sizin bildiğiniz örnekteki kağıncı özellikle birbirine ne kadar benziyorsa değil mi?
+
+423
+01:21:34,468 --> 01:21:40,187
+Bu fark ne kadar küçükse bir bölü olmasından ötürü ağırlık o kadar yüksek olacak ve etkileyecek.
+
+424
+01:21:40,187 --> 01:21:42,207
+O zaman demek ki iki tür yapabilirsiniz.
+
+425
+01:21:42,207 --> 01:21:52,347
+ya ağırlığı deneysel olarak belirleyebilirsiniz ya da bununla hiç uğraşmadan doğrudan bu şekilde bir bağıntıyla şeye ekleyebilirsiniz.
+
+426
+01:21:53,108 --> 01:21:57,707
+Özelliğin yanına ağırlık olarak ekleyebilirsiniz.
+
+427
+01:21:58,227 --> 01:22:00,327
+Buraya kadar sormak istediğiniz bir şey var mı?
+
+428
+01:22:03,327 --> 01:22:05,567
+Peki devam ediyor edeyim mi?
+
+429
+01:22:09,716 --> 01:22:17,595
+ediyorum peki. Şimdi şeye gelelim o zaman konuşalım.
+
+430
+01:22:27,988 --> 01:22:39,187
+Kain'in konuşuluğun sizce şeyi nedir? Nedir? Karmaşıklığı nedir?
+
+431
+01:22:44,340 --> 01:22:44,999
+ve son soru.
+
+432
+01:22:50,484 --> 01:23:03,364
+Sadece bir örnek için karmaşıklığı söyleseniz bana. Yani X örneğinin X'in bilinmeyen örneğe olan mesafesinin hesaplanması değil midir şey?
+
+433
+01:23:03,864 --> 01:23:09,883
+Bir örnek için mesafe hesabı. Yani bir örnek için yaptığımız işlem nedir? Bir örneğe mesafe hesabı.
+
+434
+01:23:09,883 --> 01:23:12,563
+Burada karmaşıklık nedir sizce?
+
+435
+01:23:13,603 --> 01:23:14,763
+Enkare mi?
+
+436
+01:23:18,324 --> 01:23:20,283
+D tane özelliğiniz var.
+
+437
+01:23:20,484 --> 01:23:22,943
+bir örnek için mesafe hesaplıyorsunuz.
+
+438
+01:23:26,836 --> 01:23:27,775
+1 değil mi hocam?
+
+439
+01:23:28,375 --> 01:23:28,595
+ne?
+
+440
+01:23:31,075 --> 01:23:31,756
+1
+
+441
+01:23:31,756 --> 01:23:46,735
+aynen öyle. Aslında o D'dir. Bu da arkadaşınızın dediği gibi. D özellik eğer bu böyle ene bağlı çok büyük bir sayı değilse 1 denebilir. Bakın bunda dikkat edin yalnız.
+
+442
+01:23:46,735 --> 01:24:08,795
+Yani O1 diyebilmeniz için D'nin bayağı küçük olması gerekir. Bu da böyle özellik sayısı da çok büyüyebilen bir şeyse yani böyle büyüyebilenden kastım bin de deseniz aslında özellik sayısı küçüktür ama böyle on binler yüz binler falan gibi böyle büyüyen bir sayısa onu öyle D bırakmanız gerekir.
+
+443
+01:24:08,795 --> 01:24:17,415
+ama eğer özellik sayımız az ise ki normalde zaten beklenen şey budur örneklerde o zaman o birdir şimdi bir örnek için.
+
+444
+01:24:18,415 --> 01:24:23,095
+Peki şey için nedir?
+
+445
+01:24:38,100 --> 01:24:54,259
+en tane training example'ımız varsa bir en yakın komşuluğun şeyi nedir? karmaşıklığı nedir? bir go ile gösterirsek. Bunu söyleyebilirsiniz.
+
+446
+01:24:54,860 --> 01:24:55,659
+n çarpı d.
+
+447
+01:24:56,639 --> 01:25:05,899
+aynen öyle. n çarpı d. Şimdi bakın burada tekrar tekrar aynı şeyi söylüyorum. Aslında eğer d'niz küçükse bu n'dir.
+
+448
+01:25:05,899 --> 01:25:15,600
+Buna çok dikkat etmeniz gerekir. D'iniz büyükse N kareye kadar gider çünkü o yüzden N' diye göstermemiz anlaşılırlık açısından daha doğrudur.
+
+449
+01:25:15,600 --> 01:25:21,979
+Eğer D küçük bir sabitse, 10, 100 neyse öyle bir sabitse karmaşıklığımız N'dir.
+
+450
+01:25:24,119 --> 01:25:24,780
+Peki
+
+451
+01:25:24,780 --> 01:25:31,780
+ve
+
+452
+01:25:35,923 --> 01:25:45,224
+o zaman artık bunu sormaya da gerekiyor. K en yakın komşuluk dediğimiz zaman karmaşıklığımız K çarpı N çarpı D'dir.
+
+453
+01:25:47,603 --> 01:25:54,283
+Şimdi aslında karmaşıklık burada gördüğünüz gibi en yani aslında K yakın komşuluk şeydir.
+
+454
+01:25:54,283 --> 01:26:08,963
+şeyse örnek sayınız, eğitim örnek sayınız az ise hızlıdır ama eğitimdeki örnek sayınız fazlaysa yavaşlar bu arada onu söylemedim lazy learning.
+
+455
+01:26:08,963 --> 01:26:21,023
+Neden? Çünkü öğrenmiyor bir şey. Sadece eğitim örnekleriniz geliyor duruyor orada. Sadece test aşamasında tek tek bütün eğitim örneklerinizle bir karşılaştırma yapıyorsunuz.
+
+456
+01:26:21,023 --> 01:26:33,843
+Şimdi bundan ötürü de burada şöyle bir sıkıntı var. Eğitim örneğinizde ne kadar çok örneğiniz var ise yani bu N ne kadar büyür ise o kadar çok karşılaştırma yapıyorsunuz.
+
+457
+01:26:33,843 --> 01:26:46,443
+Aslında K-Komşuluk ilk kullanılmaya başlandığı eski dönemlerde şey falan deniyordu. Eski dokümanları görürseniz bir yerlerde karşınıza çıkarsa görürsünüz.
+
+458
+01:26:46,443 --> 01:26:52,503
+işte eğitim örneği sayısı 20-30-40 falan gibi küçük sayılarsa kullanılması uygun bir falan deniyordu.
+
+459
+01:26:52,943 --> 01:27:05,403
+Ama yeni dünyada tabii ki örnekler o kadar az oldu mu da genellemeye gitmek zorlaştığı için daha çok sayıda örnek için K'an yakın komşuluğu kullanmak istiyorsunuz.
+
+460
+01:27:05,403 --> 01:27:13,103
+O zaman peki şimdi ne yapmamayız? Yani daha iyi bir şey yapamaz mıyız süreden kazanmak için?
+
+461
+01:27:13,104 --> 01:27:17,084
+buraya baktığınız zaman süreden kazanmak için ne yapabilirsiniz?
+
+462
+01:27:21,619 --> 01:27:29,379
+Çok basit bir cevap, onu söyleyeyim de. Bak, üzerine böyle oklar çiziyorum. Ne yaparsınız?
+
+463
+01:27:29,519 --> 01:27:31,019
+Hocam, yeni bir kere mi hesaplarız?
+
+464
+01:27:31,519 --> 01:27:32,299
+Ne yaparız?
+
+465
+01:27:34,199 --> 01:27:42,699
+Örnek şey, training seti bir kere hesaplayıp, hafızada tutarız. Hani, K-H için her seferinde hesaplama yapmayız gibi bir yöntem var.
+
+466
+01:27:42,699 --> 01:27:48,319
+Ama onu yapamazsın ki. Bilinmeyen örneğin her seferinde yeni bir örnek. Onu yapamazsın.
+
+467
+01:27:48,319 --> 01:28:05,160
+Yani eğitim örneklerini hiçbir zaman eğitemiyorsun. Yani eğitim örnekleri sadece duruyor bilinmeyen örnek geldiğinde bilinmeyen örneğin bütün örneklere mesafesine bakarak işte hangi sınıfa ait olabileceğini buluyorsun.
+
+468
+01:28:05,160 --> 01:28:20,579
+orada da bir sürü hikayeniz var. Şimdi bütün örneklere mesafesine bakıyorsunuz. Arkasından en çok benzediği veya en çok mesafesi en küçük olan K tane örneği seçiyorsunuz.
+
+469
+01:28:20,579 --> 01:28:31,160
+Yani orada bir sıralama deneyelim de K'ancı büyük bulma var, birinci büyük bulma, ikinci büyük bulma veya ilk K elemanı sıralama gibi bir iş de yapıyorsunuz.
+
+470
+01:28:31,160 --> 01:28:36,119
+Dolayısıyla böyle yüklü bir işiniz var. Burada işinizi zorlaştıran kim?
+
+471
+01:28:36,980 --> 01:28:38,579
+Enin karmaşıklığı mı hocam?
+
+472
+01:28:39,600 --> 01:28:50,939
+Enin büyüklüğü yani örnek sayınızın büyüklüğü. Şimdi ben o zaman örnek sayımı azaltmayı deneyebilirim. Buradaki soru şu örnek sayımı nasıl azaltmalıyım?
+
+473
+01:28:50,939 --> 01:28:58,480
+Şey iyi bir şey değil onu söyleyeyim yani benim 500 örneğim var. Hadi bunun 100 tanesini random'u seçelim iyi bir şey değil.
+
+474
+01:28:58,480 --> 01:29:13,319
+daha şey olan nedir? Daha efektif olan eleme yöntemleri neler olabilir? Şimdi bir ara verelim. 11.30. Kaçta başladık biz? 10 kalı mı başladık?
+
+475
+01:29:13,319 --> 01:29:14,520
+5 kala başladık hocam.
+
+476
+01:29:14,520 --> 01:29:23,459
+5.35 tamam. Şimdi yeni konuya başlamadan önce ara veriyorum ki birazcık böyle bir şey yapın diye. Yani yeni değil de sonuçta yeni bir şey anlatacağım şimdi.
+
+477
+01:29:23,459 --> 01:29:35,599
+birazcık bir ferahlayın, bir çay falan alın. Bu sefer ama arayı kısa vereceğim. 11.30 benim saatim. 10 dakika yeter herhalde. Yeter mi? 5 mi? Yeter mi? Mini kara olsun yani.
+
+478
+01:29:37,420 --> 01:29:39,379
+5 olur hocam sizin için uygunsa.
+
+479
+01:29:39,980 --> 01:29:45,119
+Tamam oldu. 36 o zaman. 31 oldu şu anda. 36 da geri geleceğim ben. Tamam mı?
+
+480
+01:29:45,119 --> 01:29:45,879
+Evet hocam.
+
+481
+01:35:04,659 --> 01:35:06,659
+Evet, geri geldim.
+
+482
+01:35:11,252 --> 01:35:18,752
+Şimdi önce şunu göstermek istiyorum size.
+
+483
+01:35:21,747 --> 01:35:25,407
+Orada mısınız? Bir ses verin bana, biri ses versin.
+
+484
+01:35:25,827 --> 01:35:26,747
+Evet hocam.
+
+485
+01:35:27,527 --> 01:35:28,587
+Orada mıydı yagran?
+
+486
+01:35:29,527 --> 01:35:36,827
+Şimdi, şeyi düşünelim. Yine iki tane özelliğimiz olsun basitçe.
+
+487
+01:35:43,923 --> 01:35:45,923
+çok iyi.
+
+488
+01:35:56,020 --> 01:36:25,020
+her örnek, eğitim setinizde bulunan her örnek için bir sınır çizmek isteseydim şöyle bir şey çizerdim. Mesela şu ikisinin arasında bir sınır var. Biraz yumruk çizebilirim. Eşit bölmeye çalışıyorum kendince ama tabii oluyor, oluyor, olmuyor ayrı. Şu ikisinin arasında şöyle bir sınır var. Bu ikisinin arasında böyle bir sınır var. İşte ne bileyim, şurada...
+
+489
+01:36:27,764 --> 01:36:39,163
+Şöyle bir başka örnek olsun. Bu ikisinin arasında şöyle bir sınır var. Bak bunu yapamayacağım şimdi.
+
+490
+01:36:50,676 --> 01:36:52,676
+ne demek istediğimi anlatabildim sanıyorum.
+
+491
+01:36:59,988 --> 01:37:08,847
+varanayı diyagrama göre belirleniyor. Aslında şeyleri de baz istasyonlarının kapsama alanı belirlenirken varanayı diyagrama göre belirleniyor.
+
+492
+01:37:08,847 --> 01:37:25,127
+Yani şey buluyorum, iki tane baz istasyonunun tam ortasından geçen bir sınır olduğu varsayılıyor. Yani işte ne bileyim bu sınıra kadar olan bir baz istasyonunun kapsama alanında,
+
+493
+01:37:25,127 --> 01:37:28,427
+diğer sınıra kadar olan diğer bası stasyonunun kapsama anlamında gibi.
+
+494
+01:37:28,507 --> 01:37:33,727
+Yani network tercih de baronu diyagramını görmüş olabilirsiniz bu şeylerle ilgili, bu konularla ilgili.
+
+495
+01:37:33,727 --> 01:37:47,727
+Burada da şey aslında yani ben varsayalım ki her örneğin karar sınırını belirlemek isteseydim diğer örneklere göre bu karar sınırları bu şekilde olmalıydı.
+
+496
+01:37:48,287 --> 01:37:51,367
+Şimdi bir tane daha eklemek istiyorum ki size bir şey anlatacağım.
+
+497
+01:37:51,367 --> 01:37:55,047
+Diyelim ki şurada şöyle bir örnek daha var.
+
+498
+01:37:57,947 --> 01:37:58,487
+Şurada böyle.
+
+499
+01:38:01,687 --> 01:38:05,367
+Şurada da şöyle bir örnek daha var.
+
+500
+01:38:07,207 --> 01:38:08,967
+Peki şimdi size soruyorum.
+
+501
+01:38:11,147 --> 01:38:12,327
+Şöyle seçeyim.
+
+502
+01:38:14,967 --> 01:38:17,208
+Bilinmeyen bir x örneğimiz var.
+
+503
+01:38:17,208 --> 01:38:22,888
+şu örneğin sınıflandırmaya katkısı nedir?
+
+504
+01:38:27,380 --> 01:38:43,380
+Bir kere önce varonayı diagramı nasıl oluşturduğumu anladınız mı? Var olan örnekler arasında ki sınırlar varonayı diagramı ile yaptığımız şey bizim.
+
+505
+01:38:46,260 --> 01:39:06,979
+Hocam bence etkisi bilmiyorum ama yüksektir gibi görünüyor. Çünkü X'i mesela sıfır noktasına yaklaştıran şey o, örnek o. O kalktığında ortalama sağa doğru kayacak ya da ne bileyim X2 açısından da öyle. Aşağı doğru çeken değer bence o. Çok da uzak değil ortalamaya.
+
+506
+01:39:08,339 --> 01:39:15,020
+Ortalamayla ilgilenmemiş. Şöyle sorayım sana. Peki tamam şöyle size hepinize soruyorum peki.
+
+507
+01:39:15,020 --> 01:39:30,940
+şey özellikle karman çorman olmasın diye ışıkla soracağım size. Peki şurada bir örneğin dur şurada bir örneğin olsa nerede olsa
+
+508
+01:39:40,627 --> 01:39:46,847
+Şurada bir örneğimiz olsa bu uzaktaki örneği ya da şöyle gösterirsem belki daha rahat olacak.
+
+509
+01:39:46,927 --> 01:39:49,267
+Varona'yı üzerinden miydi? Şöyle göstereyim.
+
+510
+01:39:49,647 --> 01:39:53,707
+Bak şimdi şurada şöyle örneklerimiz var. Bunlar A sınıfına ait.
+
+511
+01:39:54,968 --> 01:39:59,427
+Belki gözünüzün önünde o zaman daha çok iyi canlanır. Bunlar da B sınıfına ait.
+
+512
+01:40:01,308 --> 01:40:04,808
+Daha çok örnek koyunca daha çok net anlaşılacağını biliyorum.
+
+513
+01:40:04,808 --> 01:40:08,548
+Burada az örnek var ya haklısın kafa karıştırıyor olabilir az örnek olması.
+
+514
+01:40:08,548 --> 01:40:14,747
+Şimdi bak, şurada şöyle bir örnek olsun, şurada da şöyle bir örnek olsun.
+
+515
+01:40:15,208 --> 01:40:15,787
+Tamam, tamam.
+
+516
+01:40:16,367 --> 01:40:21,087
+Şimdi bilinmeyen örneğinizde şurada olsun.
+
+517
+01:40:22,047 --> 01:40:28,708
+Bilinmeyen örneğiniz buradayken şu örneklerin sınıflandırmaya bir katkısı var mı?
+
+518
+01:40:30,668 --> 01:40:30,988
+Yok.
+
+519
+01:40:31,848 --> 01:40:32,708
+Yok, neden yok?
+
+520
+01:40:32,707 --> 01:40:39,967
+Çünkü bu tarafta eğer şey diyecek olursak, şuna A sınıfı, buna da B sınıfı diyecek olursak,
+
+521
+01:40:40,607 --> 01:40:45,708
+baktığımız zaman sizin de gördüğünüz gibi şu tarafta hiç A sınıfından örnek olmadığına göre
+
+522
+01:40:45,708 --> 01:40:51,007
+buradaki örneklerin sınıflandırmaya katkısı yok aslında.
+
+523
+01:40:51,727 --> 01:40:53,047
+Bunları iptal edebilirsiniz.
+
+524
+01:40:53,407 --> 01:40:57,308
+Az önce şey konuştuk ya, bizim karmaşıklığımızı ne meydana getiriyor?
+
+525
+01:40:57,308 --> 01:41:07,547
+Şuradaki ne? Örnek sayısı şey yapıyor, belirliyor. Bizim K'a yakın komşuluktaki işlem yükümüzü örnek sayısı belirliyor.
+
+526
+01:41:07,627 --> 01:41:12,528
+Şimdi örnek sayımızı azaltmak istiyoruz ama onu da mantıklı azaltmak istiyoruz.
+
+527
+01:41:12,668 --> 01:41:19,208
+Şimdi diyelim ki elimizde 100 örnek var. Bunları random seçsek belki çok işe yarar örneklerin de gitmesine sebep olabiliriz.
+
+528
+01:41:19,267 --> 01:41:21,168
+Şimdi mantıklı bir çözüm bulmaya çalışıyoruz.
+
+529
+01:41:21,168 --> 01:41:26,168
+O zaman önce bir problemi anlayalım. Yani azaltmakta neleri azaltmalıyım?
+
+530
+01:41:26,168 --> 01:41:28,888
+Redundant olan işe yaramayan örnekleri azaltmadım.
+
+531
+01:41:28,968 --> 01:41:31,788
+Ona da baktığınız zaman mesela şunu görüyorsunuz.
+
+532
+01:41:32,047 --> 01:41:35,668
+Burada ben bir örnek sınıflandırmak istesem şu örneklerin hiçbir katkısı yok.
+
+533
+01:41:35,767 --> 01:41:36,867
+Neden hiçbir katkısı yok?
+
+534
+01:41:37,187 --> 01:41:39,788
+Çünkü şöyle olsa katkısı olurdu o örneklerim.
+
+535
+01:41:40,127 --> 01:41:43,308
+Diyelim ki buralarda A sınıfından örnekler devam ediyor.
+
+536
+01:41:44,187 --> 01:41:44,708
+Tamam mı?
+
+537
+01:41:45,248 --> 01:41:51,907
+O zaman şuradaki B sınıfına ait örneklerinizin bir katkısı olurdu.
+
+538
+01:41:51,907 --> 01:41:54,767
+Çünkü burada da başka örnekler var.
+
+539
+01:41:54,767 --> 01:41:58,027
+bunlara karşı karışmayı önleyecek.
+
+540
+01:41:58,547 --> 01:41:59,327
+Anlatabildim mi?
+
+541
+01:41:59,648 --> 01:42:04,027
+Yine aynı mantıkla buradaki örneklerin de kimseye bir faydası yok.
+
+542
+01:42:04,407 --> 01:42:07,947
+Çünkü zaten burada şey yok.
+
+543
+01:42:07,947 --> 01:42:12,068
+Yani A sınıfından bu çevrede A sınıfından örnek yok.
+
+544
+01:42:12,627 --> 01:42:15,928
+Dolayısıyla bu örnekler fazla aslında.
+
+545
+01:42:16,148 --> 01:42:18,307
+Yani bunlar gereksiz duruma gerekliyor.
+
+546
+01:42:18,667 --> 01:42:21,607
+Aynı mantıkla işte şuradaki örneklerde baktığım zaman
+
+547
+01:42:21,607 --> 01:42:23,667
+şey olduğunu görebiliyorum.
+
+548
+01:42:23,787 --> 01:42:25,267
+Gereksiz olduğunu görebiliyorum.
+
+549
+01:42:25,367 --> 01:42:27,727
+Çünkü bu tarafta da B sınıfından örnek yok.
+
+550
+01:42:27,827 --> 01:42:30,727
+Ama şimdi bunu böyle sözle söylemek kolay ama
+
+551
+01:42:30,727 --> 01:42:32,227
+hangilerine eleyeceğim?
+
+552
+01:42:32,387 --> 01:42:32,907
+Bu önemli.
+
+553
+01:42:33,068 --> 01:42:34,507
+Şimdi ben burada gözle baktığımda
+
+554
+01:42:34,507 --> 01:42:36,927
+ayı ve kitapının örnekler gereksiz diyorum ama
+
+555
+01:42:36,927 --> 01:42:40,068
+hangilerine eleyeceğime sayısal olarak
+
+556
+01:42:40,068 --> 01:42:41,947
+karar vermem lazım.
+
+557
+01:42:42,568 --> 01:42:45,627
+Şimdi bu varan ayı diagramı bana şeyi veriyor aslında.
+
+558
+01:42:45,627 --> 01:42:54,488
+Yani aynı sınıfa ait olan örneklerin nasıl gruplandığını görmeme sağladı burada.
+
+559
+01:42:54,728 --> 01:43:05,687
+Yani baktığım zaman Varona'yı komşuları aynı sınıftaysa o zaman diyelim ki benim Varona'yı komşularım değil mi?
+
+560
+01:43:05,827 --> 01:43:12,047
+Baktığımız zaman aynı sınıftaysa o zaman bunların bir kısmını yok etmemde bir sakınca yok demektir.
+
+561
+01:43:12,047 --> 01:43:15,148
+Yani bunun bütün komşuları aynı sınıfta çünkü değil mi?
+
+562
+01:43:15,147 --> 01:43:22,807
+O zaman demek ki bu örneği kaldırsan hiçbir tehlike oluşturmayacak bu. Anlatabildim mi ne demek istediğimi? Böyle söyleyince daha iyi anlaşıldı mı?
+
+563
+01:43:23,667 --> 01:43:24,267
+Evet hocam.
+
+564
+01:43:24,267 --> 01:43:32,267
+Bunun mesela bütün komşuları aynı sınıfa ait varonayı komşuları. Varonayı komşusu demek...
+
+565
+01:43:32,884 --> 01:43:56,323
+eşittir bir için en yakınındaki komşuları demek. Aynı sınıfa ait. O zaman bunu da kaldırsam bir zarar vermemiş olacağım. Çünkü şey yani bu civarda tehlike yaratacak başka bir sınıfa ait örnek yok. Bu arada ben bunu hep şey için gösterdim. İki sınıf için gösterdim. Tabii ki biliyorsunuz yani rahat anlaşılsın diye iki sınıf için gösterdim.
+
+566
+01:43:56,323 --> 01:44:24,863
+burada şey de olabilirdi multiple class yani ister 3 sınıfımız olur ister 5 sınıfımız olur yani k-N yakın komşulukta istediğiniz kadar çok sınıfımız olabilir onunla ilgili bir şeyimiz yok bizim sınırımız yok bizim hiçbir problem yok orada kaç sınıfımız olacağıyla ilgili peki şimdi o zaman çıkartı şey yapabileceğim nedir
+
+567
+01:44:26,323 --> 01:44:31,303
+örnekleri elemek için kullanabileceğim şeylere bakalım.
+
+568
+01:44:31,303 --> 01:44:46,123
+Şimdi örnekleri elemek için kullanabilecek yöntemlerden birisi edited instance based learning.
+
+569
+01:44:51,604 --> 01:45:12,503
+Burada yapmaya çalıştığımız şey gereksiz özellikler, örneklerden kurtulmak. Birincisi incremental glation. Burada yaptığımız şey önce elinizdeki bütün örneklerle başlamak.
+
+570
+01:45:23,155 --> 01:45:41,375
+ve her seferinde bir örnek için k-i yakın komşulukla sınıflandırma yaparak, yani o örneğiniz bir test örneğinizmiş gibi, k-i yakın komşulukla sınıflandırma yaparak, eğer doğru sınıflandırılıyorsa o örneği çıkarmak.
+
+571
+01:46:18,484 --> 01:46:31,324
+yaptığımız şey şöyle göstereyim. Şimdi şey yapayım, hadi 3 sınıf üzerinden göstereyim. Şimdi baştan bütün eğitim datanızla başlıyorsunuz. Bu sizin bütün eğitim datanız olsun.
+
+572
+01:46:47,315 --> 01:46:55,035
+Sırayla bütün örneklerinizi her seferinde bir örneğinizi şey yaparak nedir?
+
+573
+01:46:55,696 --> 01:46:57,055
+Silerek bakıyorsunuz.
+
+574
+01:46:57,095 --> 01:46:59,915
+Onu sınıflandırarak bakıyorsunuz.
+
+575
+01:46:59,915 --> 01:47:01,196
+Mesela şöyle söyleyeyim.
+
+576
+01:47:02,115 --> 01:47:08,916
+Diyelim ki işte şu örneğiniz için bunu en yakın komşulukla sınıflandırdınız.
+
+577
+01:47:09,656 --> 01:47:15,715
+Doğru sınıflandırmıyorsa bunun anlamı demek ki çevresinde hep kendisiyle aynı sınıflandıran örnekler var.
+
+578
+01:47:15,715 --> 01:47:35,356
+O zaman bunu silebilirsiniz. Ama mesela şu örneğe baktığınızda bu örnek sınırda bir örnek. Hem şey komşuları var A sınıfından şöyle sınıfları da yazalım. Şurası A sınıfı olsun. Şurası B sınıfı olsun. Burası da C sınıfı olsun.
+
+579
+01:47:35,355 --> 01:47:41,575
+Şimdi baktığınız zaman şu örneğe bunun hem A sınıfından hem B sınıfından örnekleri var.
+
+580
+01:47:41,715 --> 01:47:46,475
+Bunu silerseniz bu yanlış bir şey olacak.
+
+581
+01:47:46,655 --> 01:47:51,855
+Gerçekten de K'ye yakın komşulukla sınıflandırdığınızda şeyi görüyorsunuz.
+
+582
+01:47:51,915 --> 01:48:03,415
+Diyelim ki işte ne bileyim K eşittir 5 için sınıflandırdığınızda burada şeyin yanlış sınıflandığını aslında A sınıfına daha çok benzediğini görüyorsunuz.
+
+583
+01:48:03,415 --> 01:48:06,536
+o zaman demek ki bu örnek silinmemesi gereken bir örnek.
+
+584
+01:48:06,655 --> 01:48:11,955
+Ama şeye baktığınızda işte şuradaki bir örnek, o da silinmeyebilir şu şeyden ötürü.
+
+585
+01:48:12,375 --> 01:48:21,835
+Değil mi ki şuradaki bir örneğe baktığınızda bütün çevrisi B sınıf örnekleriyle çevrili olduğu için
+
+586
+01:48:21,835 --> 01:48:28,915
+bunu silerseniz kimseye bir zararı yok veya işte şunu silerseniz bunu silmenin kimseye bir zararı yok gibi.
+
+587
+01:48:28,915 --> 01:48:31,615
+Birinci yapacağımız şey incremental relation.
+
+588
+01:48:31,615 --> 01:48:33,835
+her seferinde bir örnek
+
+589
+01:48:33,835 --> 01:48:36,415
+seçiyorsunuz. Onu sınıflandırıyorsunuz.
+
+590
+01:48:36,495 --> 01:48:37,635
+Doğru sınıflanıyorsa
+
+591
+01:48:37,635 --> 01:48:39,835
+çevresinde farklı
+
+592
+01:48:39,835 --> 01:48:41,955
+sınıftan bir eğitim
+
+593
+01:48:41,955 --> 01:48:43,715
+örneği yok demektir. O zaman
+
+594
+01:48:43,715 --> 01:48:45,515
+onu gönül rahatlığıyla seçiyorsunuz.
+
+595
+01:48:45,555 --> 01:48:46,335
+Soru var mı burada?
+
+596
+01:48:46,555 --> 01:48:47,915
+Hocam bir şey sorabilir miyim?
+
+597
+01:48:48,315 --> 01:48:48,735
+Buyurun.
+
+598
+01:48:49,135 --> 01:48:51,775
+Mavi'den bir tane seçtiğimiz zaman
+
+599
+01:48:51,775 --> 01:48:54,215
+bir tanesini seçtik.
+
+600
+01:48:54,995 --> 01:48:56,315
+Şimdi bu K'ya 5
+
+601
+01:48:56,315 --> 01:48:57,036
+seçtik diyelim.
+
+602
+01:48:57,935 --> 01:48:59,635
+Bir tanesi maviden çıktı.
+
+603
+01:48:59,635 --> 01:49:01,195
+iki tane sıkıntımızdan çıktı. Bu sefer
+
+604
+01:49:01,195 --> 01:49:03,435
+mavisin nafından diyebiliyoruz.
+
+605
+01:49:03,915 --> 01:49:05,135
+Ama iki tane sıkıntımızdan çıktı.
+
+606
+01:49:05,575 --> 01:49:07,295
+Bunu silecek miyiz yoksa silmiyor muyuz?
+
+607
+01:49:08,635 --> 01:49:09,755
+Onu siliyorsun.
+
+608
+01:49:09,875 --> 01:49:11,415
+Orada zaten önemli olan
+
+609
+01:49:11,415 --> 01:49:13,515
+K'yı kaç seçtiğin
+
+610
+01:49:13,515 --> 01:49:15,555
+dediğin o
+
+611
+01:49:15,555 --> 01:49:16,575
+anlamda doğru.
+
+612
+01:49:17,395 --> 01:49:19,575
+K'yı küçük seçmemen
+
+613
+01:49:19,575 --> 01:49:21,695
+gerekir. Yani silme işlemi
+
+614
+01:49:21,695 --> 01:49:22,915
+yapacaksan
+
+615
+01:49:22,915 --> 01:49:25,695
+kanun işte beş beş falan öyle bir şey
+
+616
+01:49:25,695 --> 01:49:27,095
+seçilmesi lazım ki
+
+617
+01:49:27,095 --> 01:49:29,255
+değil mi? Şey olduğunda
+
+618
+01:49:29,256 --> 01:49:32,256
+sildiğinde
+
+619
+01:49:32,256 --> 01:49:35,235
+bir hataya sebep olmasın.
+
+620
+01:49:37,795 --> 01:49:38,856
+Anladım hocam.
+
+621
+01:49:39,235 --> 01:49:40,576
+Silmesek daha mantıklı değil mi?
+
+622
+01:49:41,176 --> 01:49:41,935
+Efendim?
+
+623
+01:49:42,396 --> 01:49:43,896
+Silmesek daha mantıklı değil mi?
+
+624
+01:49:44,256 --> 01:49:46,455
+Bu sefer mesela K'yı 5 seçtik.
+
+625
+01:49:46,856 --> 01:49:48,976
+5'i de komşuysa aynıysa
+
+626
+01:49:48,976 --> 01:49:49,896
+kalsın diyoruz.
+
+627
+01:49:50,735 --> 01:49:52,176
+Mesela bir tanesi farklıysa silmeyelim.
+
+628
+01:49:52,616 --> 01:49:54,116
+Bu demek ki sınırda diyebiliriz yani.
+
+629
+01:49:55,795 --> 01:49:56,856
+Hayır. Şimdi sen
+
+630
+01:49:56,856 --> 01:49:58,795
+önce modelini oluşturdun.
+
+631
+01:49:58,795 --> 01:49:59,995
+modelini oluşturdu.
+
+632
+01:50:00,000 --> 01:50:07,319
+o zaman K'yı 5 seçtim bir kere. Yani şimdi ilk başta model oluştururuz dedik ya K'nın kaç olacağına karar veririz dedik.
+
+633
+01:50:07,799 --> 01:50:13,539
+Modeli seçtin, K'yı da 5 olarak belirledim bir kere. Tamam mı? Modelin bitti. Modelin hazır şu anda.
+
+634
+01:50:13,539 --> 01:50:21,379
+Şimdi modeli seçtikten sonra şeye bakıyorsun, diyorsun ki tamam K5 için bu en iyi sınıflandırmayı verdi bana.
+
+635
+01:50:21,379 --> 01:50:25,859
+Şimdi bu noktada kardeş için şeye bakayım diyorsun.
+
+636
+01:50:27,199 --> 01:50:33,399
+Aslında eğitim örneği olmasına gerek olmayan örneklere bakayım diyorsun.
+
+637
+01:50:33,979 --> 01:50:41,659
+Orada da burada bakarken K en yakın komşusuyla aynı olmayan noktaları ediyorsun.
+
+638
+01:50:41,659 --> 01:50:45,319
+Yani orada bir sıkıntı yok.
+
+639
+01:50:45,319 --> 01:50:56,619
+yani zaten bir tane komşusu işte şey kırmızı dört tanesi bilmem neyse şunu yapabilirsin bunlar aslında hep deneyerek bakıp görebileceğiniz şey.
+
+640
+01:50:56,619 --> 01:51:07,879
+Mesela çok hassas davranıyorsundur dersin ki ben işte K5 için beş komşusu birden aynı olmayanlara bakacağım dersin.
+
+641
+01:51:08,000 --> 01:51:12,619
+Yani onu yapabilirsin. K yakın komşusuyla aynı olmayanları.
+
+642
+01:51:19,764 --> 01:51:47,063
+olan olmayanları koruyacağım dersin mesela. Bunu şeyle yapın ama yani ben hep onu tavsiye ediyorum. Sonuçta bir model kuruyorsunuz. Bunu bir kere kuracaksınız. O yüzden bunu deneyerek yapın. Yani şey yaptığınızda başarı nasıl değişti? Kardeş için işte majority vote yaptınız. Doğru sınıflanıyorsa şey dediniz nedir?
+
+643
+01:51:47,063 --> 01:52:00,944
+dili dediğim dediniz. Bir bunu deneyebilirsiniz. Bir de dersiniz ki en yakın komşusu birden aynı sınıfta ise ondan sonra o zaman ele dersiniz, bunu da dersiniz.
+
+644
+01:52:00,944 --> 01:52:10,243
+Yani bunun temelde prensibi doğru sınıflandırılmasıdır. Doğru sınıflandırılması yeterdir. Ama deneyip bakabilirsiniz.
+
+645
+01:52:10,583 --> 01:52:16,304
+Yani tamamen bütün komşularıyla aynıysa koru değilse sil deyip başarı ölçüp bakabilirsiniz.
+
+646
+01:52:16,303 --> 01:52:32,683
+Burada bizim hedefimiz sonuçta bu gereksiz bir örnekse eni küçültmeye çalışıyoruz biz. Bundan kurtulmam, o örneği harcamak olmaz. Ama rağmen seçsem belki çok işe yarar bir sınır örneğini harcayacaktım.
+
+647
+01:52:34,683 --> 01:52:38,663
+Hocam K'yı nasıl 5 belirlediğimizi tekrar söyleyebilir misiniz acaba?
+
+648
+01:52:38,664 --> 01:53:03,664
+Tabii onu en başlarda söyledim. Bir dakika. Halt, uçuzka burada söyledim. Şöyle belirledik, K'yı seçtik. Elimizdeki eğitim örnekleri var, validation, doğrulama örnekleri var, test örnekleri var. Bunların nasıl yapılacağını onu da söyledim geçen ders. İleride model selection diye ayrı bir derste anlatacağım.
+
+649
+01:53:03,663 --> 01:53:10,543
+anlatacağım yani örnekleri eğitim, doğrulama ve test için nasıl bölmelisiniz, bu işlemleri nasıl yapmalısınız anlatacağım.
+
+650
+01:53:10,863 --> 01:53:13,783
+Şimdi sadece kısaca söylüyorum burada.
+
+651
+01:53:14,583 --> 01:53:15,663
+K'yi şöyle belirliyorsunuz.
+
+652
+01:53:16,983 --> 01:53:27,963
+Bu doğrulama örneklerinizin her biri için K'ye yakın komşulukla sınıflandırma yapıyorsunuz ve K eşitlik 1 için bir sınıflandırma yapıp başarı ölçüyorsunuz.
+
+653
+01:53:27,963 --> 01:53:46,603
+K eşitleri 3 için bütün bu doğrulama örneklerinizin hepsiyle sınıflandırma yapıp başarı ölçüyorsunuz. 5 için, 7 için. 9 için de yaparsınız da 9'u geçtikten sonra zaten iyi bir başarı asla yani genellikle elde edemezsiniz. Asla diye de çok katiyici merak etmeyin.
+
+654
+01:53:46,603 --> 01:53:54,403
+sonunda hangi k değeri için sınıflandırma başarınız en yüksek ise o k'yı kullanıyorsunuz.
+
+655
+01:53:54,403 --> 01:54:08,484
+Ondan sonra da test örnekleriyle o k için sınıflandırma başarınızı hesaplayıp tarafsız bir şekilde diyorsunuz ki artık hiçbir parametre değişikliğine girmeden diyorsunuz ki
+
+656
+01:54:08,484 --> 01:54:13,243
+işte k çıktı 5 için ekürüsim 0.92 çıktı falan filan.
+
+657
+01:54:13,243 --> 01:54:24,383
+yani k'yı belirlerken yaptığımız şey farklı k değerleri için başarı ölçüp en yüksek k hangisinde ise k'yı o olarak kabul etmek. Oldu mu?
+
+658
+01:54:26,704 --> 01:54:32,103
+Evet oldu hocam. Aslında bir nevi deniyoruz yani aslında k'nın değerini sonuca göre belirliyoruz. Bilmiyoruz.
+
+659
+01:54:32,103 --> 01:54:53,463
+Tabii şimdi model selectionlarda yapılan şey hep budur. Neden budur? Çünkü senin problemine göre hangi kanun daha iyi olacağı değişir. Yani başka mesela yapaylı öğren ağlarında da katman sayısını belirlerken işte karar ağacını gördük, ağacı budarken vesaire hep aslında deneyerek yaparsınız.
+
+660
+01:54:53,463 --> 01:55:09,064
+yani model seçimlerinde farklı parametrelerle elinizdeki modelin başarısını ölçersiniz ve hangi parametrelerle en başarılı sonucu elde ediyorsanız o modeli kullanırsınız.
+
+661
+01:55:09,064 --> 01:55:14,064
+Yani makine öğrenmesinde bu hep böyle olur. Neden? Çünkü yani...
+
+662
+01:55:14,707 --> 01:55:32,427
+probleminize göre örneklerinizin dağılımı değişir, karar sanırlarının dağılımı değişir vs. işte ne bileyim birinde lineerdir, birinde non-lineerdir ama non-lineerde gauss dağılımı olur olmaz bir sürü farklı senaryo var.
+
+663
+01:55:32,427 --> 01:55:41,048
+bundan ötürü model seçimlerinde hep bu şekilde bir doğrulama kümesiyle başarı ölçülerek en iyi model belirlemiş.
+
+664
+01:55:41,048 --> 01:55:52,647
+Yani K'yı ezbere belirleyemezsiniz. Ne bileyim bir üst sanım probleminde elinizdeki örnekler için K3 için en yüksek başarıyı elde ediyorsunuzdur.
+
+665
+01:55:52,647 --> 01:56:06,707
+bambaşka işte ne bileyim bir ne olsun problem işte diyelim ki kredi kartı sahtekarlığı tespitinde K'ın yakın komşuluk kullanıyorsunuzdur orada K5 için en iyi sonucu elde ediyorsunuzdur gibi.
+
+666
+01:56:06,707 --> 01:56:17,167
+K'ın yakın komşulukla ilgili unutmamanız gereken bir şey bu örnek sayısının çok olduğu durumlar için tercih edilen bir yöntem değil.
+
+667
+01:56:17,167 --> 01:56:23,667
+daha çok eğitim örneklerimizin sayısı az bunları çoğaltamıyorsunuz.
+
+668
+01:56:23,667 --> 01:56:30,568
+İşte hani konuşuyoruz ya işte ne bileyim hastalık teşhisi için görüntüler üzerinde işlem yapıyorsunuz.
+
+669
+01:56:30,928 --> 01:56:34,288
+Zaten bulabildiğiniz görüntü sayısı yüzü geçmiyor falan.
+
+670
+01:56:34,727 --> 01:56:43,788
+Yani bu gibi durumlarda uygundur ama işte binlerce on binlerce örneğimiz varsa iyi bir sonuç alacağımız yöntem değil k-neakim konuşuluk.
+
+671
+01:56:43,787 --> 01:57:04,527
+çünkü iki açıdan şey değil. Birincisi eğiterek bir model oluşturmuyorsunuz. İkincisi de test aşamasında işlem yükünüz çok fazla. Her örnek için, özellik sayınız da fazlaysa düşünün. Ortada bir model olmadığı için tek tek karşılaştırma yapmanız gerekiyor.
+
+672
+01:57:04,527 --> 01:57:16,527
+Şimdi İnkrenat'ın burada birisi top down da öbürü bottom up şey ile başlıyorsunuz nedir boş bir küme ile başlıyorsunuz
+
+673
+01:57:26,260 --> 01:57:27,380
+arkasından
+
+674
+01:57:34,868 --> 01:57:58,147
+Her eğitim örneği için, yani tek tek başlayıp, diğer eğitim örnekleri tarafından doğru sınıflandırılıyor mu ona bakıyorsunuz. Doğru sınıflandırılıyorsa, siliyorsunuz, yanlış sınıflandırıyorsa, demek ki bu bir korunması gereken, sınır oluşturabilecek bir örnek diyerek koruyorsunuz.
+
+675
+01:58:45,811 --> 01:59:02,811
+Burada yaptığınızda boş başlayıp yanlış sınıflandırılıyorsa eklemek, doğru sınıflandırılıyorsa silmek. Öbürünün tam tersi.
+
+676
+01:59:11,699 --> 01:59:13,839
+Buraya kadar sormak istediğiniz bir şey var mı?
+
+677
+01:59:22,068 --> 01:59:24,068
+örnek üzerinden olur.
+
+678
+01:59:40,212 --> 01:59:41,351
+bir şey yapalım.
+
+679
+01:59:51,731 --> 01:59:58,731
+ve
+
+680
+01:59:59,380 --> 02:00:02,159
+örneklerimizi çizelim. İki sınıf için yapayım önce.
+
+681
+02:00:17,235 --> 02:00:21,815
+Şimdi şöyle siyahlar memoridekileri göstersin tamam mı?
+
+682
+02:00:21,835 --> 02:00:23,415
+O şekilde yapacağım siyahlar.
+
+683
+02:00:23,415 --> 02:00:25,115
+Şimdi bunu seçtiniz.
+
+684
+02:00:27,635 --> 02:00:29,415
+Bunu koruyorsunuz.
+
+685
+02:00:30,295 --> 02:00:36,275
+Ondan sonra çünkü bu ilk seçtiğiniz örnek, bellekteki koruduğunuz ilk örnek.
+
+686
+02:00:36,375 --> 02:00:37,455
+Bunu koruyorsunuz.
+
+687
+02:00:38,055 --> 02:00:40,375
+Şimdi ikinci olarak bunu seçtiniz.
+
+688
+02:00:42,135 --> 02:00:43,775
+Bunu sınıflandırdınız.
+
+689
+02:00:43,955 --> 02:00:46,656
+Yanlış sınıflandıracak büyük bir ihtimalle.
+
+690
+02:00:46,656 --> 02:00:49,796
+Çünkü burada bu var. O yüzden bunu da koruyorsunuz.
+
+691
+02:00:50,235 --> 02:00:57,655
+Mesela bunu seçtiniz. Ondan sonra işte K eşittir 1 için işte bakıyorsunuz.
+
+692
+02:00:58,215 --> 02:01:00,875
+Bu doğru sınıflandırılıyorsa bunu koruyorsunuz.
+
+693
+02:01:01,295 --> 02:01:06,655
+Bunu seçtiniz. İşte doğru sınıflandırılıyorsa siliyorsunuz.
+
+694
+02:01:07,535 --> 02:01:11,895
+Bunu seçtiniz. Yanlış sınıflandırılıyorsa koruyorsunuz ki bu da doğru sınıflandırılacak.
+
+695
+02:01:12,076 --> 02:01:14,576
+Dur doğru sınıflandırılanları da sileyim ben.
+
+696
+02:01:14,576 --> 02:01:17,195
+mesela bunu sildiniz
+
+697
+02:01:17,195 --> 02:01:19,316
+doğru sınıflandırdı, bunu sildiniz
+
+698
+02:01:19,316 --> 02:01:20,776
+doğru sınıflandırdı
+
+699
+02:01:20,776 --> 02:01:23,356
+ondan sonra işte
+
+700
+02:01:23,356 --> 02:01:26,916
+ne bileyim
+
+701
+02:01:26,916 --> 02:01:28,396
+şunu seçtiniz
+
+702
+02:01:28,396 --> 02:01:33,335
+doğru sınıflandırıyorsa siliyorsunuz
+
+703
+02:01:33,335 --> 02:01:35,555
+yanlış sınıflandırıyorsa koruyorsunuz
+
+704
+02:01:35,555 --> 02:01:37,155
+şimdi burada tabi şöyle bir şey
+
+705
+02:01:37,155 --> 02:01:38,136
+yapmanız lazım
+
+706
+02:01:38,136 --> 02:01:39,096
+önce
+
+707
+02:01:39,096 --> 02:01:42,855
+incremental growth'un tersliği o
+
+708
+02:01:42,855 --> 02:01:45,795
+zero şeyi var, başlangıç problemi var.
+
+709
+02:01:46,215 --> 02:01:50,055
+O yüzden ilk önce mesela K eşittir 3 ise
+
+710
+02:01:50,055 --> 02:01:54,255
+her sınıftan 3'er örnek seçerek başlamanız lazım.
+
+711
+02:01:54,435 --> 02:01:57,595
+Mesela şöyle olsun, 3 tane bunları seçmiş olalım.
+
+712
+02:01:58,095 --> 02:01:59,175
+Ondan sonra başlayalım.
+
+713
+02:01:59,235 --> 02:02:01,295
+Yoksa çünkü doğru olmayacak bu.
+
+714
+02:02:01,435 --> 02:02:02,715
+Şöyle yapalım bir saniye.
+
+715
+02:02:10,036 --> 02:02:37,275
+şimdi daha iyi olacak. K eşittir 3 için diyelim ki 3 tane örnek seçtik başlangıçta. Ondan sonra şimdi üzerine ekleye ekleye gidelim. Diyelim ki işte bunu seçtik. Bu K eşittir 3 için doğru sınıflandırılıyor. Bunu sildik mesela. Ne bileyim işte şunu seçtik. Bu yanlış sınıflandırılıyor.
+
+716
+02:02:37,275 --> 02:03:02,915
+şuradaki iki tanesi daha yakın. Bunu koruduk mesela. Aynı şekilde işte bunu koruduk. K eşittir 3 için işte belki şu iki tanesi şu iki tanesi şey yapıyor. Daire diyor. Bu bir tanesi şey diyor. Nedir? A sınıfı da diyor. O zaman bunu koruduk gibi.
+
+717
+02:03:02,915 --> 02:03:17,115
+Ama ne bileyim işte şunu seçtiğinizde bu artık çevresi hep şeylerle kendi sınıfına ait örneklerle dolu olduğu için doğru sınıflandırılıyor.
+
+718
+02:03:17,215 --> 02:03:24,615
+Bunu sildiğiniz gibi tek tek örnekleri ekleye ekleye karar veriyorsunuz.
+
+719
+02:03:24,616 --> 02:03:42,216
+buradaki sıkıntı şu aslında. Her ikisinde de var o sıkıntı da. Incremental growth'ta yani şeyden başlamazsanız, şuralardaki örneklerden başlarsanız, başlangıçta bunları seçerek gidecek mecburen.
+
+720
+02:03:42,216 --> 02:04:12,196
+halbuki şeyde nedir incremental diletion'da öyle bir sıkıntı yok yani orada şey var nedir bir örneği sildiğiniz zaman yani nerede olduğunun önemi yok zaten bütün kümeyle başladığınız için başlangıçta bütün örnekler kümede olduğu için mesela buradaysa da doğru silersiniz buradaysa da silmezsiniz zaten bu böyle ama burada boş şeyle başlamışlar.
+
+721
+02:04:12,216 --> 02:04:26,515
+her seferinde bir örnek ekleyerek bu eklediğiniz örnek doğru sınıflandırılıyorsa sil yanlışsa kalsın dediğiniz için burada gereksiz örnekleri alma ihtimaliniz var yani böyle bir ihtimal var burada.
+
+722
+02:04:27,095 --> 02:04:30,356
+İki yöntemde kullanılabilir yöntemler.
+
+723
+02:04:31,116 --> 02:04:37,235
+Üçüncü yapabileceğiniz şey de K-Dimensional Tree.
+
+724
+02:04:37,235 --> 02:05:00,735
+Şimdi bu birazcık daha zor bir yöntem. KD-TRI'yi belki veri yapıları derslerinde görmüş olabilirsiniz. Burada yaptığımız şey aslında şey karboniklu bir ağaç oluşturuyorsunuz ve şeyi belirliyorsunuz aslında.
+
+725
+02:05:00,735 --> 02:05:10,815
+biz normalde kaynakın komşulukta bütün örneklerle mesafeyi tek tek ölçüp en çok benzeyenleri buluyoruz falan ya
+
+726
+02:05:10,815 --> 02:05:14,256
+burada yapmadan şöyle bir şey yapıyorsunuz.
+
+727
+02:05:14,336 --> 02:05:19,315
+Yani diyorsunuz ki diyelim ki örneklerim işte böyle dursun.
+
+728
+02:05:23,636 --> 02:05:45,976
+ben bir ağaç üzerinden ilerleyerek şey diyebilirim diyorsunuz. Mesela iki özelliğim olsun. Ağacı oluştururum. X bir büyüktür 6 ise bir takım örneklerle hiç karşılaştırmam. Yani hangi region içerisinde olduğunu benim örneğimin bulurum.
+
+729
+02:05:45,976 --> 02:05:50,115
+Burada şöyle yalnız, yani dur ağacı bir daha çizeyim ben size.
+
+730
+02:05:57,108 --> 02:05:59,207
+sakince ağ çizeceğim size.
+
+731
+02:06:00,588 --> 02:06:06,967
+Şöyle 0, 2, 4, 6, 8, 10.
+
+732
+02:06:25,203 --> 02:06:31,883
+Yani çok uğraşmadan çizeceğim. Şöyle ikiye dörtte bir nokta olsun. Mesela işte
+
+733
+02:06:31,883 --> 02:06:37,203
+şurada bir nokta olsun. Bundan sonra
+
+734
+02:06:37,203 --> 02:06:42,203
+şurada bir nokta olsun.
+
+735
+02:06:52,435 --> 02:06:54,995
+Yani şöyle yapıyor
+
+736
+02:07:00,212 --> 02:07:10,212
+her nokta için bir şey belirliyor, sınır belirliyor. Mesela işte şurada bir nokta olsun.
+
+737
+02:07:16,532 --> 02:07:34,532
+Böylece gereksiz bölümlere girmemiş oluyor. Yani ne bileyim, şurada bir nokta için bu tarafa bakmamış oluyor. İşte mesela diyor ki...
+
+738
+02:07:36,307 --> 02:07:54,007
+işte x1 büyüktür 6 ise ondan sonra x1 büyüktür 6 ise ondan sonra bakacağın şey işte burası diyelim ki 5 olsun şurası 5 olsun işte x1 büyüktür 6 ise şeyi kontrol et
+
+739
+02:07:59,060 --> 02:08:18,799
+x2 büyüktür 5 mi onu kontrol et. İşte x2 büyüktür 5 ise işte burası x1 büyüktür 6 şu f noktası olsun x1 büyüktür 6 f noktası olsun x1 büyüktür 6 ise şurayla hiç ilgilenmiyor. Şuradaki noktalar için işlere bakıyor.
+
+740
+02:08:18,799 --> 02:08:40,740
+mesela X2 büyüktür F'de 5'te şu H noktası olsun. X2 büyüktür 5'te H noktası olsun. Ondan sonra orada mesela X1 büyüktür 9 diyelim ki işte X1'in 9'dan büyük olduğu noktada G noktası olsun.
+
+741
+02:08:40,740 --> 02:08:54,659
+X19'dan büyükse ondan sonra işte bu böyle bütün noktaları içeriyecek şekilde devam ediyor ve ona göre snoutlandırmayı bu ağaç üzerinde ilerleyerek yapıyor.
+
+742
+02:08:54,659 --> 02:09:09,560
+Anlatabildim mi? Önce yani burada eğitim örnekleriyle bir ağaç oluşturuyorsunuz aslında. Bu ağacı oluşturarak aradığımız örneğin hangi bölgede olduğunu bulmaya çalışıyorsunuz.
+
+743
+02:09:09,560 --> 02:09:17,299
+böylece o bölgeye göre sınıflandırma yapacaksınız. Yani bu tarafta olan bir örnek için sol tarafa bakmamış oluyorsunuz.
+
+744
+02:09:17,299 --> 02:09:38,019
+Bir baştan eğitim örneklerinizden D boyutlu bir ağaç oluşturuyorsunuz. İşte iki şey KDT'li dediği pardon K boyutlu ağaç KDT'li dediğinde şey işte özelliklerinize bağlı olarak bir ağaç oluşturuyorsunuz.
+
+745
+02:09:38,019 --> 02:09:48,199
+kaç tane özelliğimiz varsa ondan sonra da bilinmeyen örneğinizi yaparken bu ağaç üzerinde ilerleyerek şey sağlamış oluyorsunuz.
+
+746
+02:09:48,299 --> 02:09:57,240
+Yani tek tek her örnekle karşılaştırma yapmak yerine bilinmeyen örneğinizin hangi bölgeye denk geldiğini bulmuş oluyorsunuz.
+
+747
+02:09:58,459 --> 02:10:01,259
+Tabii bunun şöyle bir şeyi var.
+
+748
+02:10:01,640 --> 02:10:07,360
+Özellik sayınızı arttığında böyle bir ağacı oluşturmak çok zor ve kompleks bir işlem.
+
+749
+02:10:07,360 --> 02:10:18,460
+çünkü o zaman burada iki özellik varken tabii gözle gördüğümüzde işimiz kolay ama özellik sayımız arttığında böyle bir ağacı oluşturmak zor bir işlem.
+
+750
+02:10:18,460 --> 02:10:25,259
+O yüzden aslında bu şey için tercih edilen bir yöntem değil.
+
+751
+02:10:26,640 --> 02:10:32,360
+Özellik sayısının fazla olduğu durumlar için çok da tercih edilen bir yöntem değil.
+
+752
+02:10:32,360 --> 02:10:49,300
+bunu işte veri yapılır derslerinden hatırlarsanız öncelikle kuyrukla falan oluşturuyorlar bu KDT'yi. Ondan sonra yani o yüzden şey bir yöntem değil aslında. Çok da kolay bir yöntem.
+
+753
+02:10:49,299 --> 02:10:58,899
+Şimdi size şey yapayım bir tane ben de olan şeylerden bir tane.
+
+754
+02:11:12,948 --> 02:11:19,607
+Bir dakika şöyle yapayım. Önce stop share diyeyim. Bir tane örnek göstereceğim size de bir dakika.
+
+755
+02:11:42,899 --> 02:11:43,539
+çınırma.
+
+756
+02:12:18,484 --> 02:12:25,563
+Şimdi daha rahat anlaşılacağını düşündüğüm bir örnek üzerinden göstermek istiyorum. Şu anda ekranımı görüyor musunuz?
+
+757
+02:12:28,803 --> 02:12:30,003
+Evet, gördüm.
+
+758
+02:12:30,343 --> 02:12:40,283
+Şimdi bakın, burada daha rahat anlayabileceğinizi tahmin ediyorum. Şimdi buradaki gördüğünüz ABCD, FGH falan eğitim örneklerimiz bizim aslında.
+
+759
+02:12:40,283 --> 02:12:48,463
+Şimdi önce sağ tarafta gördüğümüz şey eğitim örneklerinden bir ağaç oluşturulmuş halde.
+
+760
+02:12:48,903 --> 02:12:53,083
+Mesela F noktası bakın burası X1 büyüktür 6 olan nokta.
+
+761
+02:12:53,603 --> 02:13:02,463
+X1 büyüktür 6 iken X2'nin 10'dan büyük olduğu nokta C noktası.
+
+762
+02:13:02,463 --> 02:13:08,263
+Çünkü F bakın 6'dan yukarıya doğru X ekseni boyunca bir sınır çizdi.
+
+763
+02:13:08,263 --> 02:13:20,943
+X1'in 6'dan büyük olduğu taraf, küçük olduğu taraf diye. 6'dan küçük olduğu tarafta X2'nin ilk gördüğümüz nokta X2'nin 10'dan büyük olduğu nokta.
+
+764
+02:13:20,943 --> 02:13:33,263
+Orası bizim C noktamız. Şimdi o da ne yaptı? Yatayda böldü. X2'nin 10'dan büyük olduğu tarafta A ve B var. 10'dan küçük olduğu tarafta da D ve E var.
+
+765
+02:13:33,263 --> 02:13:54,103
+bu sefer onları ayırdı. Mesela işte x2 ondan büyükken işte ne bileyim x2 dörtten büyükse işte bilmem şeyse nedir x1 üçten büyükse falan diye böyle ağacınız gördüğünüz gibi gidiyor.
+
+766
+02:13:54,103 --> 02:14:02,463
+Şimdi bir kere ağacı bir kere en başta oluşturuyorsunuz. Ağacı oluşturduktan sonra bilmediğimiz örnek geldi. Burada ikiye üç örneği geldi.
+
+767
+02:14:02,463 --> 02:14:32,103
+bakın anlatmaya çalıştığı şey bu. 2'ye 3 örneğinin bulunduğu bölgeye bakın. Bu örnek için İ ile J ile H ile G ile tek tek mesafe karşılaştırılması yapmasına gerek yok. Bölgesi belli. Şimdi bu bölgeye gitmeye çalışıyor. Diyor ki işte X bir altıdan büyük mü? Hayır. Ondan sonra X bir altıdan büyük olmadığına göre
+
+768
+02:14:32,103 --> 02:14:42,523
+X2 10'dan sol taraf işte hayır kısmı diye algıladım şu anda bakınca öyle gözüküyor.
+
+769
+02:14:42,523 --> 02:14:59,823
+Evet öyle. X1 6'dan büyük mü? Hayır. X2 10'dan büyük mü? Hayır. X2 4'den büyük mü? Hayır.
+
+770
+02:14:59,823 --> 02:15:09,424
+ondan sonra 4'ten büyük olmadığına göre x2 4'ten büyük olmadığına göre burada sınıflandırma sonu erdi.
+
+771
+02:15:09,424 --> 02:15:23,064
+Bakın solda x2 4'ten büyük mü? Hayır. Sınıflandırma sonu erdi ve bunu işte şey olarak e hangi sınıfa aitse e ve f hangi sınıfa aitse ona göre şey yapacak.
+
+772
+02:15:23,064 --> 02:15:30,724
+yani diğer küçük örneklerle ilgilenmeyecek. E'ye bağlı olarak E ile F'ye hangi sınıfa aitse o sınıfa ait olduğunu söyleyecek.
+
+773
+02:15:30,823 --> 02:15:38,344
+Çünkü burada gördüğünüz gibi X2 büyük müdür 4'ten hayırsa burada artık bir sınıf belirlenmiş oldu.
+
+774
+02:15:38,924 --> 02:15:45,683
+Bu sınıfı gösteriyor. Hangi sınıfsa onu söyleyecek. Yaprağa geldiğinizde decision tree ile sınıftır ya.
+
+775
+02:15:45,683 --> 02:16:04,223
+hangi sınıfsa örneğiniz onu söyleyecek. Bu şekilde bir ağaç oluşturuyor. Baya karar ağacı gibi bir ağaç oluşturuyor. Yaprakta sınıflar olacak şekilde. Siz sadece bu ağacı kullanarak sınıflandırmanızı yapmış oluyorsunuz. Bu anlaşıldı biraz karışık aslında.
+
+776
+02:16:07,083 --> 02:16:10,683
+Hocam karar ağaçlarından belirgin bir fark var mı?
+
+777
+02:16:12,307 --> 02:16:30,387
+karar ağaçlarından farkı şu, karar ağaçlarında şeye göre yapıyorduk biz, özelliklerin durumuna göre, olasılıklarına göre vs. yapıyorduk. Bu yaptığımız sadece mesafeye göre bir ağaç belirleme.
+
+778
+02:16:30,387 --> 02:16:55,528
+Yani burada şey yok nedir karar ağaçlarındaki gibi özellik seçme yok. Her düğüm bir örneği içeriyor. Yani karar ağaçlarında düğümler neyi içerirdi? Özellikleri içerirdi. İşte rengi bilmem işte ne bileyim işte hava sıcak mı? Yani sıcaklık, rüzgar vesaire hatırlıyor musunuz?
+
+779
+02:16:55,527 --> 02:17:18,528
+özelliği içeride. Burada bizim düğümlerimiz örnekleri içeriyor. Düğümler örnekleri içeriyor ve biz burada şeye göre ilerliyoruz. Yani örneklerin konumlarına göre ilerliyoruz. Karar ağacı kullanıyorsun ama bizim alışık olduğumuz karar ağacından farkı bu.
+
+780
+02:17:18,528 --> 02:17:26,748
+örneklerin, çünkü mesafi ya bizim buradaki derdimiz, mesela bu da Manhattan Business'da yapılmış, örneklerin konumuna göre ilerliyoruz.
+
+781
+02:17:28,248 --> 02:17:33,068
+Hocam burada K'nın bir önemi yok değil mi? 3 veya 5 seçmemiz hiçbir şey ifade etmeyecek.
+
+782
+02:17:34,308 --> 02:17:43,968
+Yine burada da önce aslında K'yı seçtin, bitti yani o modeli karar verdin. K eşittir 3 için eğitim örneklerine TRI'ye aktarıyorsun.
+
+783
+02:17:43,967 --> 02:18:05,427
+mesela K'yı 3 seçtim eğitim örneklerine triye aktarıyorsun. Burada karmaşıklık logaritmik oluyor. Eğitim örneklerinizdeki örnek sayısı n ise ortalamada log n karmaşıklıkla şey yapabiliyorsunuz.
+
+784
+02:18:05,427 --> 02:18:15,287
+nedir? İşlem yapabiliyorsunuz. Neden? Çünkü her seferinde ağaç üzerinde olduğunuz için bir grup bilgiyi elediğinizden bu bir binary tree.
+
+785
+02:18:15,287 --> 02:18:26,547
+Binary tree olduğu için ortalamada log-n karmaşıklıkla şey yapmış oluyorsunuz. Aradığınız bir elemanın hangisinin faayeti olduğunu bulmuş oluyorsunuz.
+
+786
+02:18:26,547 --> 02:18:43,027
+ama ağaç eğer iyi oluşmazsa en kötü durumda da yine en karmaşıklıkla eğitim örnekleriniz en adetse en karmaşıklıkla bilinmeyen örneğinizin hangisinin faayeti olduğunu bulmuş oluyorsunuz.
+
+787
+02:18:44,607 --> 02:18:50,127
+Bunun üzerinde çok durmuyorum. Dediğim gibi özellik sayısı çok arttığında bu oldukça zor.
+
+788
+02:18:50,127 --> 02:19:01,807
+yani algoritmik olarak yani isterseniz hani bir gün size anlatabilirim algoritmik olarak ağacın nasıl oluşturulduğunu, priority Q'larla falan oluşturuyor.
+
+789
+02:19:03,167 --> 02:19:09,687
+Zaten benden diğer algoritma olanlar biliyorlardır öncelik bir meselesini. İsterseniz bir gün anlatırım.
+
+790
+02:19:11,687 --> 02:19:13,147
+Ya da anlatmam.
+
+791
+02:19:13,147 --> 02:19:20,968
+çok detay gibi olacak ama mesela burada 6'yı seçmemizin sebebi en ortadaki olması mıydı?
+
+792
+02:19:20,968 --> 02:19:25,808
+Yani F örneğinden başlamamızın sebebi en ortalama olduğu için mi?
+
+793
+02:19:29,567 --> 02:19:33,447
+Aslında şöyle ben de o detaya girmek istemedim.
+
+794
+02:19:33,547 --> 02:19:36,727
+Branch and Bound yöntemiyle şey yapıyor.
+
+795
+02:19:37,168 --> 02:19:42,528
+Yani kimin kökte olacağına yani Branch and Bound'da artık çok bilmiyorum.
+
+796
+02:19:42,528 --> 02:19:52,168
+algoritma analizinde falan gördünüz mü? Şeydekiler yine gördüler. İleri de algoritma almış olan varsa içimizde benden. Onlar branch and bound'u da gördüler.
+
+797
+02:19:53,067 --> 02:19:59,328
+Şeyin nedir? Düğümlerin nasıl belirleneceğine de branch and bound'la karar veriyor. Yani kökte hangi düğüm olacak?
+
+798
+02:20:00,000 --> 02:20:11,759
+işte sonra bir sonraki düğüm hangisi olacak? Yani en iyi düğümü belirlemek için burada decision tree'deki gibi information gain kullanılmıyor da branch and bound da belirleniyor.
+
+799
+02:20:11,759 --> 02:20:21,939
+O yüzden ona girmek istedim. Bu tamamen bir algoritmik şey olduğu için tasarım makine öğrenmesinden biraz daha farklı.
+
+800
+02:20:21,939 --> 02:20:51,919
+buna girmek istemedi ama şeyi görmenizi istedim yani böyle bir KDT ile de böyle bir çözünün yapılabildiğini çünkü diğer yöntemlerde hep eğitim öğretlerini tamamıyla karşılaştırmak zorunda kalıyoruz ama burada hiç gereksiz olan örneklerle bakmıyorsunuz bile o yüzden güzel yani çok ilgilenirseniz şey yapabilirsiniz araştırabilirsiniz hani KDT'yi nasıl oluşturacağımı
+
+801
+02:20:51,939 --> 02:21:07,400
+diye sorunuz olursa o zaman ben size mutlaka anlatırım. Burada şimdi ayırtmaya girmek istemediğim için şey yapmadım, uzatmadım. Sadece kavram olarak bilmeniz benim için yeterli. Peki şimdi o zaman başka sorunuz var mı aklınıza takılan?
+
+802
+02:21:07,400 --> 02:21:14,459
+Bu mantığı şey olarak anlamanız yeterli dediğim gibi benim için.
+
+803
+02:21:14,459 --> 02:21:26,339
+Yani bir ağaca yerleştirirseniz eğitim örneklerini mesafelere göre yani mesafe bilgisine göre yapılacak şekilde şeyi görmüş oluyorsunuz.
+
+804
+02:21:26,559 --> 02:21:32,660
+Bir taraftan mesela x-1-1-6 dediğiniz anda bir grup bilgiyi elemiş oluyorsunuz.
+
+805
+02:21:32,699 --> 02:21:36,380
+Hiç onlarla oradaki örneklerle işlem yapmamış oluyorsunuz.
+
+806
+02:21:36,379 --> 02:21:47,099
+bu da ortalama durumda yani average case'de karmaşıklığın en tane eğitim örneğimiz varsa log N'e inmesine imkan sağlıyor.
+
+807
+02:21:49,019 --> 02:21:53,599
+Evet soru varsa alayım yoksa bugünlük bu kadar anlatacaklarım.
+
+808
+02:21:58,548 --> 02:22:07,407
+Peki, çok teşekkür ederim. Haftaya görüşmek üzere o zaman. Görüşürüz hocam. Görüşürüz. Teşekkürler, iyi günler.

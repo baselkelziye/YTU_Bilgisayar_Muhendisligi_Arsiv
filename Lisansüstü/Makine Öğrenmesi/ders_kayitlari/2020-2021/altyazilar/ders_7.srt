@@ -1,0 +1,3999 @@
+1
+00:00:03,572 --> 00:00:04,991
+Güzel bir arkadaşla.
+
+2
+00:00:49,844 --> 00:00:52,544
+Evet, 15 kişi oluyor yaklaşık sanırım.
+
+3
+00:00:54,483 --> 00:00:55,983
+Herkese günaydın arkadaşlar.
+
+4
+00:00:59,123 --> 00:01:01,363
+Bugün yapay nöron ağlarından bahsedeceğim.
+
+5
+00:01:01,463 --> 00:01:02,724
+Ekranını görüyor musunuz?
+
+6
+00:01:03,963 --> 00:01:05,463
+Görüyoruz hocam. Günaydın.
+
+7
+00:01:06,083 --> 00:01:06,743
+Günaydın.
+
+8
+00:01:07,364 --> 00:01:10,203
+Şimdi önce şeyden başlayalım.
+
+9
+00:01:11,684 --> 00:01:13,903
+Biyolojik nöron nedir?
+
+10
+00:01:14,583 --> 00:01:16,883
+Nereden bu yapay nöron ağlarına gelinmiş?
+
+11
+00:01:16,883 --> 00:01:17,783
+Oradan başlayalım.
+
+12
+00:01:17,783 --> 00:01:22,663
+Yapay zeka çalışmalarında aslında hedef başlanmıştı.
+
+13
+00:01:23,083 --> 00:01:30,643
+İnsanlık beyninin beşli organlarıyla yaptığı işleri bilgisayara yaptırma çalışmaları.
+
+14
+00:01:31,783 --> 00:01:37,423
+En klasik çalışmalar, parmak izi tanıdım, yüz tanıdım vesaire gibi.
+
+15
+00:01:38,083 --> 00:01:42,243
+Veya doğal değiştireme ders aldıysanız orada görmüşsünüzdür.
+
+16
+00:01:42,323 --> 00:01:45,123
+Eliza diye bir psikolog vardı size sorular soruyor.
+
+17
+00:01:45,123 --> 00:01:50,684
+sorunları aldığı cevaplara göre kendisi de yorumlar yapıyor falan.
+
+18
+00:01:52,204 --> 00:01:57,763
+Bunlar da hep işte yapılan şey insanın gördüğü gibi görme işlemini yapabilen,
+
+19
+00:01:57,884 --> 00:02:02,903
+duyduğu gibi duyma işlemini yapabilen veya duyduğu cümleyi yorumlama işlemini yapabilen
+
+20
+00:02:02,903 --> 00:02:04,403
+sistemler kurmak üzerine.
+
+21
+00:02:05,483 --> 00:02:13,943
+Fakat başlangıçta bu sistemler çok şey oluyor böyle matematiğe dayalı ama
+
+22
+00:02:13,943 --> 00:02:20,903
+biraz böyle insanın aslında davrandığı gibi davranmayan sistemler oluyor.
+
+23
+00:02:21,043 --> 00:02:24,244
+Şimdi insanın davrandığından kast edilen şey ne?
+
+24
+00:02:24,384 --> 00:02:26,223
+Aslında biz ilk derste görmüştük.
+
+25
+00:02:26,323 --> 00:02:28,564
+İlk derste de ben bundan bahsetmiştim size.
+
+26
+00:02:29,903 --> 00:02:34,803
+İnsanların aslında özelliği öğrenebilme özelliği.
+
+27
+00:02:34,803 --> 00:02:41,303
+Yani biz öğrendiklerimiz sayesinde tanıma yapabiliyoruz, anlayabiliyoruz vs.
+
+28
+00:02:41,303 --> 00:02:48,024
+Dolayısıyla yapay zeka çalışmalarında kısa bir süre sonra aslında şey başlıyor.
+
+29
+00:02:50,543 --> 00:03:04,763
+O zaman biz insan beyninin öğrenme özelliğine sahip sistemler geliştirelim diye bir şey başlıyor, yol başlıyor.
+
+30
+00:03:04,763 --> 00:03:09,383
+Burada da aslında insan beyninin özelliği ne?
+
+31
+00:03:09,504 --> 00:03:13,903
+İnsan beyninde işte burada gördüğümüz temel yapı.
+
+32
+00:03:15,343 --> 00:03:16,883
+Nöronlar var.
+
+33
+00:03:17,724 --> 00:03:19,843
+Şu bir nöron.
+
+34
+00:03:25,524 --> 00:03:42,784
+Ondan sonra bu nöronlar birbirlerine bağlılar ve insan beyninde yaklaşık 10 üzeri 11 nöron var ve her nöron 10 üzeri 4 nörona bağlı.
+
+35
+00:03:42,784 --> 00:03:55,043
+Ve bunlar aslında bizim öğrenmemizi, hafıza bellekte bilgileri tutmamızda bir aktivite gerçekleştirmemizi sağlıyorlar.
+
+36
+00:03:55,524 --> 00:04:06,123
+Her hücrenin bir aksonu var. Ondan sonra aksonlar aslında hücrelerdeki bilgilerin diğer hücrelere aktarılmasını sağlıyorlar.
+
+37
+00:04:07,404 --> 00:04:23,643
+Hücrelere gelen sinyaller aslında ağırlıklı olarak toplanıyorlar ve bu ağırlıklı toplan, belli bir eşik seviyesinin üzerinde ise aksona pozitif sinyal gönderiyor.
+
+38
+00:04:23,643 --> 00:04:26,183
+pozitif sinyal diğer hücrelere aktarılıyor.
+
+39
+00:04:27,063 --> 00:04:29,204
+Eğer negatifse çekinik kalıyor.
+
+40
+00:04:29,343 --> 00:04:30,424
+Yani bir işlem yapmıyor.
+
+41
+00:04:30,524 --> 00:04:41,503
+Dolayısıyla bu hücreye gelen sinyallerin ağırlıklı toplamının bir anman ifade etmesine göre bir işlem yapılıyor veya yapılmıyor.
+
+42
+00:04:42,983 --> 00:04:47,783
+Nöronlar gelen sinyalleri bu da dendritler ile topluyorlar.
+
+43
+00:04:47,783 --> 00:04:58,103
+Ve bu sinapsiler aslında ağırlıklı olarak şeyi belirliyorlar.
+
+44
+00:04:58,183 --> 00:05:02,483
+Genel bir aktivitenin yapılıp yapılılmasına karar verilmesini belirliyorlar.
+
+45
+00:05:02,523 --> 00:05:04,163
+Bu biyolojik bir nöronun yapısı.
+
+46
+00:05:04,723 --> 00:05:06,983
+Soma denilen şey, hücrenin kendisi.
+
+47
+00:05:08,803 --> 00:05:10,423
+Bu biyolojik nöronun yapısı.
+
+48
+00:05:10,423 --> 00:05:22,623
+Şeyde de yapay zeka çalışmalarında da deniyor ki madem insanların bu şekilde düşünmesini, karar vermesini, kolunu bacağını oynatmasını vesaire nöronlar sağlıyor.
+
+49
+00:05:22,743 --> 00:05:30,483
+Biz de bu yapıyı yapay olarak gerçekleştirmeye çalışalım ve yapay nörona çalışmaları başlıyor.
+
+50
+00:05:30,483 --> 00:05:39,563
+Bu arada bu çalışmalar aslında zannedildiği gibi böyle çok yakın zamanlarda falan, 40'lı yıllar 1940'ların sonlarında falan başlıyor aslında.
+
+51
+00:05:39,663 --> 00:05:40,824
+Çok eski çalışmalar.
+
+52
+00:05:41,503 --> 00:05:43,904
+Burada da şöyle bir şey daha var.
+
+53
+00:05:44,083 --> 00:05:55,483
+Aslında nöronlar aslında birlikte çalışarak aktiviteler gerçekleşmesinin bir şey yapılmasını sağlıyorlar.
+
+54
+00:05:55,483 --> 00:06:03,983
+Dolayısıyla birbirine bağlı paralel çalışabilen dağıtık bir sistem aslında insan beynindeki nöron yapısı.
+
+55
+00:06:04,723 --> 00:06:11,283
+Dolayısıyla yapay nöronlarda da benzer bir mantığın oluşturulmasına çalışıyor.
+
+56
+00:06:11,283 --> 00:06:19,903
+Yani çok sayıda nöron olsun bunlar birbirine bağlı olsun paralel çalışabilme dağıtık çalışabilme özelliği olsun.
+
+57
+00:06:19,903 --> 00:06:33,043
+Çünkü biz nasıl şu anda mesela beni dinlerken aynı zamanda belki not tutuyorsunuz, not alıyorsunuz, belki o sırada ne bileyim işte pencere açıksa ve soğuksa üşüdüğünüzü düşünüyorsunuz.
+
+58
+00:06:33,083 --> 00:06:38,063
+Yani aynı anda farkına varmadan insanlar paralel pek çok işi yapabiliyorlar.
+
+59
+00:06:39,363 --> 00:06:42,343
+İlk yapay nöronlar çalışmalarında hedef bu aslında.
+
+60
+00:06:42,343 --> 00:06:49,923
+Fakat sonra donanımların yetersizliği nedeniyle bu hedefe varılamıyor.
+
+61
+00:06:50,063 --> 00:06:57,883
+Çok küçük o mevcut donanımlarla karşılaştırılabilecek yapay nörona modelleri kullanıyor.
+
+62
+00:06:57,963 --> 00:07:04,683
+Çok uzun yıllar yani 2000'lerin işte başlarına kadar hep şey kullanıyor.
+
+63
+00:07:04,823 --> 00:07:10,823
+Yani klasik işte şimdi birazdan göreceksiniz çok basit seviyede yapay nörona modelleri kullanılıyor.
+
+64
+00:07:10,823 --> 00:07:18,783
+Fakat daha sonra birden bir ekibin aklına şey geliyor diyorlar ki yani artık donanımlar çok kuvvetli.
+
+65
+00:07:18,883 --> 00:07:22,823
+Biz niye yapay nöron ağlarını...
+
+66
+00:07:22,836 --> 00:07:39,516
+aslında ilk planlandığı gibi bütün gücüyle kullanmıyoruz diyorlar. Bir de tabii işin içine şey de giriyor artık. Büyük veri de var. Yani ortada çok büyük bir veri var. İnsanın aslında en önemli özelliği öğrendikçe genellemeye gidebilmesi.
+
+67
+00:07:39,516 --> 00:07:51,036
+Mesela küçük bebekleri, küçük çocukları düşünün. Evin içinde ilk defa işte anne baba kavramlarını öğrenen çocuk.
+
+68
+00:07:51,536 --> 00:07:56,096
+Pek çok küçük işte bir buçuk iki yaşında yavaş yavaş konuşmaya başlamış çocuk.
+
+69
+00:07:56,196 --> 00:08:02,075
+Sokakta gördüğü bütün kadınlara da anne diye hitap edebilir yani gördüğü bütün şeyde.
+
+70
+00:08:02,815 --> 00:08:06,615
+Ama çünkü işte ne bileyim bir anne modeli var onun gözünde.
+
+71
+00:08:06,615 --> 00:08:23,855
+o modeldeki kişi annedir diye ama sonra zaman içerisinde daha çok insan tanıcıda, daha çok insan gördükçe aslında orada bir karakteristik çıkarmayı öğrenir ve işte onlara başka şekilde hitap edildiğini vesaire bunları anlayabilir hale gelir.
+
+72
+00:08:23,856 --> 00:08:40,615
+Mantık bu aslında yani biz ne kadar çok şey örnek görürsek bir şeyle ilgili bilgiyle ilgili o kadar çok genellemeye gidebiliyoruz ve anlamı daha iyi anlayabiliyoruz.
+
+73
+00:08:40,615 --> 00:08:45,955
+bu yeni derin öğrenme çalışmalarında da iki şeyden faydalanıyor.
+
+74
+00:08:46,135 --> 00:09:01,416
+Yani hem yapay nöron ağlarının mimarisi kullanılıyor hem de çok fazla, çok büyük sayıda veriyle besleyerek aslında insanın yaptığı gibi genellemeye gidilmesi sağlanmış oluyor.
+
+75
+00:09:08,340 --> 00:09:09,340
+ne?
+
+76
+00:09:12,083 --> 00:09:13,324
+Koptu mu bir noktadan?
+
+77
+00:09:13,643 --> 00:09:15,083
+Ekran paylaşımı kesildi.
+
+78
+00:09:16,023 --> 00:09:17,044
+Sadece ekran paylaşımı kesildi.
+
+79
+00:09:17,044 --> 00:09:18,223
+Sesiniz geliyordu.
+
+80
+00:09:19,423 --> 00:09:21,803
+Tamam, bir dakika. Geri şey yapayım onu.
+
+81
+00:09:22,443 --> 00:09:27,004
+Bir an çünkü yine sizi kaybetmiş gibi o. Kayıt etmiyor galiba ama.
+
+82
+00:09:28,703 --> 00:09:30,163
+Öyle mi acaba? Ne oldu?
+
+83
+00:09:30,403 --> 00:09:32,184
+Şimdi tekrar, kayıt tekrar.
+
+84
+00:09:32,844 --> 00:09:34,823
+Kayıt gitti gibi.
+
+85
+00:09:36,083 --> 00:09:38,903
+Bir daha ekranı paylaşmaya çalışayım.
+
+86
+00:09:38,903 --> 00:09:41,203
+zaten bir şey göstermiyorum ekranda sadece.
+
+87
+00:09:42,483 --> 00:09:46,464
+Biyolojik nöron duruyordu ama.
+
+88
+00:09:47,683 --> 00:09:47,843
+Evet.
+
+89
+00:09:57,331 --> 00:09:59,331
+hem duyuyor hem de görüyor musunuz şu anda?
+
+90
+00:10:00,611 --> 00:10:00,891
+Evet.
+
+91
+00:10:01,851 --> 00:10:03,911
+Tamam, sıkıntı yok o zaman arkadaşlar.
+
+92
+00:10:05,391 --> 00:10:12,671
+Şimdi baktığınız zaman aslında şöyle bir şey var. Bunun üzerinde göstereyim ben size.
+
+93
+00:10:14,012 --> 00:10:21,371
+Bizim burada biyolojik nöron da Soma dediğimiz şey, şimdi o da oradan hep mesaj çıkartıyor üzerine yazdıkça.
+
+94
+00:10:21,771 --> 00:10:24,971
+Yapay nöronlar da nörona karşı düşüyor.
+
+95
+00:10:24,971 --> 00:10:35,852
+Dendrit dediğimiz şey şurada bir uçuk nöronda aslında girişe yapay nöron ağlarında girişe karşılık düşüyor.
+
+96
+00:10:35,852 --> 00:10:39,852
+Çünkü dendritler aracılığıyla giriş bilgileri alınıyor.
+
+97
+00:10:40,651 --> 00:10:51,811
+Akson şeyde nöronda toplanan bilginin çıkışı, sinepste gelen bilgilerin etkisi ağırlığı aslında.
+
+98
+00:10:51,811 --> 00:11:10,571
+buradaki mantık bu şekilde. Şimdi ben artık yazarak anlatmaya geçiyorum. Sonra tekrar anlatacak görseller olduğu zaman onlara geri döneceğim.
+
+99
+00:11:10,571 --> 00:11:32,771
+Şimdi şöyle bir şey, en basit bir yapay nörunu çizersek perceptron, bu şey Mark Klok ve Pitts tarafından önerilmiş bir şey aslında yapay nöron mantığı.
+
+100
+00:11:32,771 --> 00:11:44,851
+şöyle ki şimdi şurada bizim bir toplayıcımız var. Ondan sonra burada girişimiz var, girişlerimiz var.
+
+101
+00:11:44,851 --> 00:12:10,431
+giriş denilen şey aslında x denilen şey bir input vektörü vektör bu aslında ve şu şekilde işte x0, x1, x2, xN şeklinde özellikleri geçen hafta aslında regresyonda da gördüğümüz şey
+
+102
+00:12:10,431 --> 00:12:30,811
+bunlar bizim özelliklerimiz. Mesela bir tanıma sisteminde diyelim ki işte efendim kişinin yaşı, boyu, kilosu vs. dediğimiz şey özellikler veya işte bir ses bilgisi, tek boyutlu bir ses bilgisi özellik veya görüntüde işte bir resim, iki boyutlu bir resim özelliklerimiz sizin.
+
+103
+00:12:30,811 --> 00:12:36,871
+X dediğimiz şey özellik vektörü yani vektör olarak bu bilgiyi sisteme veriyoruz biz.
+
+104
+00:12:36,871 --> 00:12:55,351
+Bu bilgi önce toplanıyor, arkasından çıkış bir eşik seviyesine bağlı olarak üretiliyor ve aslında activation fonksiyonları var.
+
+105
+00:12:55,351 --> 00:13:11,731
+Bunları birazdan anlatacağım size. Çıkışın aktif mi, pasif mi olduğunu göstermek için kullanılan, girişten gelen, toplanan bilginin aktif mi, pasif mi olduğunu gösteren activation fonksiyonları var. Bunlardan bahsedeceğim.
+
+106
+00:13:11,731 --> 00:13:24,931
+Peki bütün özellikler aynı etkide mi? Hayır değil. Bütün özellikler aynı etkide değil. Dolayısıyla aslında her özelliğe bağlı olan şeyler var.
+
+107
+00:13:25,351 --> 00:13:40,591
+ağırlıklar var. Bu ağırlıklar özelliğin etkisini belirliyor ve buna bağlı olarak da şey değişiyor. Yani sınıflandırma sağlanmış oluyor. Her sınıf için durum değişiyor.
+
+108
+00:13:40,591 --> 00:13:45,091
+Şimdi matematik olarak şeye bakacak olursak,
+
+109
+00:13:46,227 --> 00:14:14,568
+Şimdi bizim iki tane vektörümüz var. Şurada dedik ya şeyler aslında şurada V1, X1 artı V2, X2 artı VN, XN toplam aslında İ eşittir. Birden N'e kadar X, Y, Y dediğimiz şey yani gelen girişler ve bu girişlere bağlı olan ağırlıklar için toplam bu.
+
+110
+00:14:14,568 --> 00:14:19,707
+Biz bunu hatırlarsınız, hatırlamıyorsanız da şu anda hatırlatayım.
+
+111
+00:14:20,808 --> 00:14:22,847
+Dat product diyoruz hatırlarsanız.
+
+112
+00:14:23,568 --> 00:14:24,608
+Dat product.
+
+113
+00:14:28,275 --> 00:14:29,715
+diyoruz.
+
+114
+00:14:31,635 --> 00:14:34,615
+Ve şu şekilde gösteriyoruz.
+
+115
+00:14:34,815 --> 00:14:35,716
+İşte İ eşittir.
+
+116
+00:14:35,795 --> 00:14:38,036
+Birden N'e en tane özelliğimiz varsa
+
+117
+00:14:38,036 --> 00:14:40,236
+VİX'i eşittir.
+
+118
+00:14:40,395 --> 00:14:43,595
+İşte V1X1 artı VN
+
+119
+00:14:43,595 --> 00:14:46,216
+XN şeklinde gösteriyoruz.
+
+120
+00:14:46,216 --> 00:14:48,415
+Yani ne demek?
+
+121
+00:14:48,536 --> 00:14:55,375
+Bu her özelliği, o özelliğe bağlı olan ağırlık değeriyle çarparak bir sonuç elde ediyoruz.
+
+122
+00:14:55,375 --> 00:15:08,175
+ve sonra aslında y eşittir fx diye gösteriliyor bu. Yani y aslında y eşittir birden en en x'i ve y.
+
+123
+00:15:08,175 --> 00:15:22,795
+Fakat burada bizim için önemli olan şey aslında bunun bir activation f şöyle activation fonksiyonundan geçmiş ağır.
+
+124
+00:15:22,796 --> 00:15:38,076
+yani işte mesela şöyle bir şey diyebilirsin. Vx büyüktür 0 ise y eşittir 1 olsun. Ondan sonra Vx küçük eşittir 0 ise işte y eşittir eksi 1 olsun diyebilirsin.
+
+125
+00:15:38,636 --> 00:15:50,076
+Şimdi bunların nasıl olacağını göstereceğim. Şimdi eğer şu şekilde yaparsak
+
+126
+00:15:58,388 --> 00:16:16,867
+büyük x şeye eşit olsun, i eşittir birden ve x'ye eşit olsun. Eğer büyük x bir threshold'dan büyükse artı bir, eğer küçükse de eksi bir olduğunu varsayalım.
+
+127
+00:16:16,867 --> 00:16:37,627
+Bu aslında perceptron modeli temel olarak böyle. Buradaki kullanılan fonksiyon ne aslında? Activation fonksiyonu. Sign fonksiyonu sizin de gördüğünüz gibi sıfırdan büyükse şey, yani bir threshold'dan büyükse artı bir, değilse eksidir şeklinde.
+
+128
+00:16:37,627 --> 00:16:47,147
+Şimdi bunu şöyle yapabiliriz.
+
+129
+00:16:50,147 --> 00:16:57,947
+Sine fonksiyonu i eşitti bir denene v i x i artı v sıfır.
+
+130
+00:16:58,067 --> 00:17:05,487
+Bu da treş olduğu bir v sıfır ağırlık değeri gibi kullanabiliriz.
+
+131
+00:17:05,487 --> 00:17:11,487
+o zaman iki sınıflı bir sınıflandırıcı elde edebiliriz.
+
+132
+00:17:11,587 --> 00:17:20,907
+Mesela y eşittir şeyse artı birse örneğin klas A'dır deriz.
+
+133
+00:17:21,468 --> 00:17:23,667
+Eksi birse de klas B'dir deriz.
+
+134
+00:17:24,127 --> 00:17:29,387
+O zaman iki sınıflı bir sınıflandırıcı elde etmiş oluruz.
+
+135
+00:17:30,207 --> 00:17:33,847
+Şimdi burada da iki özellik için gösteriyorum.
+
+136
+00:17:33,847 --> 00:17:58,928
+çünkü iki boyutlu uzayda göstermek her zaman daha kolay. X1, X2 diyelim ki bizim özelliklerimiz olsun. Şurası VX, VXI artı V0 eşittir 0 olan yer. Bunun üstü Y eşittir 1 olan bölge. Altı da Y eşittir eksi 1 olan bölge.
+
+137
+00:17:58,928 --> 00:18:12,908
+O zaman ben şöyle lineal bir ayırım yapabilmiş oldum. Şurada diyelim ki benim bir A sınıfına ait örneklerim var. Şurada da diyelim ki bir B sınıfına ait olan örneklerim var.
+
+138
+00:18:19,763 --> 00:18:33,583
+ne olmuş oldu? Ben bu şeyleri, örnekleri lineer olarak iki sınıfta ayırmış oldum. Buraya kadar sormak istediğiniz bir şey var mı?
+
+139
+00:18:36,115 --> 00:18:44,336
+Buraya kadar sormak istediğiniz bir şey var mı arkadaşlar? Takip edebiliyor musunuz beni?
+
+140
+00:18:44,895 --> 00:18:45,715
+Evet, sorabiliyor muyum.
+
+141
+00:18:46,376 --> 00:18:46,775
+Efendim?
+
+142
+00:18:47,855 --> 00:18:50,835
+Bias'la threshold burada aynı anlamama gelmiş oldu?
+
+143
+00:18:51,015 --> 00:18:54,296
+Evet, evet, aynı şey. Bayes'le threshold aynı anlama geliyor.
+
+144
+00:18:54,296 --> 00:19:04,456
+Yani şeyde Bayes kullanmıştık sıfıra oturtmak için, koordinat sisteminde sıfıra oturtmak için, kaydırmak için Bayes kullanmıştık.
+
+145
+00:19:04,456 --> 00:19:20,995
+Buradaki şey de aslında anlam gibi düşünülebilir. Yani burada da V0 dediğimiz şey aslında bir eşik seviyesini gösteriyor ve ona bağlı olarak çıkışın ne olacağı belirleniyor.
+
+146
+00:19:21,995 --> 00:19:23,255
+Tamam hocam.
+
+147
+00:19:23,255 --> 00:19:45,516
+Şimdi bu aslında lineer ayırıyor sınıfları. Yani perceptronun yapabildiği şey aslında iki tane sınıfım var ve ben bunları yani ikiden fazla da sınıfımız olabilir de önemli olan benim lineer ayrılabilen bir sınıflandırma yapabilmem.
+
+148
+00:19:52,596 --> 00:20:08,275
+Burası dediğim gibi şey olan taraf, fx'in sıfırdan büyük olduğu taraf, bu taraf da fx'in sıfırdan küçük veya sıfıra, şurası eşit olduğu yer, sıfıra eşit olduğu yer.
+
+149
+00:20:08,275 --> 00:20:35,815
+Peki, şu da aslında bu ayırım şeyini hyperplane deniyor. Yani şu sıfır olduğu yer, çok duyarsanızdur şeyi, şurası hyperplane. Yani iki sınıfı birbirinden ayıran sınır çizgisi aslında bizim hyperplane'imiz. Onu daha düzgün yazmaya çalışıyorum. Biraz kötü oldu. Aşağıya gelince biraz yazması zorlaşıyor.
+
+150
+00:20:35,815 --> 00:20:37,615
+Şurası bizim hyperplane'imiz
+
+151
+00:20:37,615 --> 00:20:45,815
+Hocam bu doğru sıfırdan geçmiyor değil mi?
+
+152
+00:20:45,815 --> 00:20:50,735
+Yok hayır bunun sıfırdan geçmesi gerekmiyor yani sıfırdan geçmiyor hayır
+
+153
+00:20:50,735 --> 00:21:01,816
+Ve şey de olabilir yine burada yani lineer ayrılabilen birden fazla sınıfınız da olabilir şey olması gerekmiyor
+
+154
+00:21:01,816 --> 00:21:07,956
+nedir? İki sınıf olması gerekmiyor ama şimdi bizim bu problemimizde biz iki sınıfı inceliyoruz.
+
+155
+00:21:07,956 --> 00:21:12,235
+İşte artı birler bir sınıfı gösteriyor, eksi birler bir sınıfı gösteriyor.
+
+156
+00:21:12,816 --> 00:21:17,216
+Çok sınıf meselesinden daha sonra bahsedeceğim.
+
+157
+00:21:17,295 --> 00:21:21,435
+Buraya kadar bir sıkıntı var mı? Sormak istediğiniz, aklınıza takılan bir şey var mı?
+
+158
+00:21:24,276 --> 00:21:28,536
+Peki. O zaman şeyle devam ediyorum.
+
+159
+00:21:31,816 --> 00:21:41,496
+hata hesabının nasıl yapıldığı ile. Şimdi bu aslında şeyle aynı. Linear regresyonla aynı.
+
+160
+00:21:41,496 --> 00:21:52,435
+Bir tane bizim bir cost-fompsiyonumuz var. Cost-fompsiyonumuz nedir? Bizim hesapladığımız çıkışın istenilen çıkışa ne kadar yakın olduğudur.
+
+161
+00:21:53,396 --> 00:21:59,076
+Bu da işte şeye bağlı olarak nedir?
+
+162
+00:22:04,723 --> 00:22:22,543
+Bu bizim şeyimiz, G. örnek için istenilen çıkışımız. Bu da G. örnek için hesaplanan çıkışımız. F'de şeyi gösteriyor. Nedir? Turu gösteriyor. Kaçıncı tur olduğunu gösteriyor.
+
+163
+00:22:22,543 --> 00:22:45,363
+işte bu aslında sum of super error dediği karesini alıyorsunuz. Neden karesini alıyorsunuz? İşte hatanın pozitif olması ve şeyi daha da abartması için aslında şu aslında bizim hatamız yani beklenen çıkışla hesaplanan çıkış arasındaki fark karesini alırsanız hata daha çok büyüyor.
+
+164
+00:22:45,363 --> 00:22:56,404
+onun için karesini alıyorsunuz. Bunun başına bir tane bir bölüki koyuyoruz. O da şey yapmak için. Şimdi türev aldığınız zaman bize kolaylık sağlasın diye.
+
+165
+00:22:56,404 --> 00:22:57,404
+gradient descent, overfitting, gradient descent, overfitting, gradient descent, overfitting,
+
+166
+00:23:03,571 --> 00:23:29,231
+şöyle bir işte türev alıyoruz aslında. Yani geçen derste gördüğümüz mantığın aynısı aslında. İşte bir, iki, karesi. İşte burada y, j dediğimiz şey v, i, j, x, i. Yani j'inci şey için, tur için v, j, i, x, i.
+
+167
+00:23:29,231 --> 00:23:59,211
+işte onun şeye göre türevini aldığınızda buraları hızlı geçiyorum çünkü şey değil nereden geldiğini görün diye yoksa yani çok da şey değil önemli değil ağırlığa göre şeyini aldığınızda türevini aldığınızda o zaman şeyi elde etmiş oluyorsunuz hesaplanan çıkış eksi şey gerçekten istenilen çıkış eksi hesaplanan çıkış çarkı x iyi elde etmiş oluyorsunuz.
+
+168
+00:23:59,231 --> 00:24:04,152
+o da aslında
+
+169
+00:24:09,332 --> 00:24:11,911
+şey vermiş oluyor bize yani
+
+170
+00:24:15,796 --> 00:24:25,695
+aslında değişimin ne olması gerektiğini vermiş oluyor. Ağırlığa bağlı olarak ondan sonra değişimin ne olması gerektiğini vermiş oluyor.
+
+171
+00:24:26,355 --> 00:24:35,296
+Şimdi bu gradient descent ama şey kullanılıyor aslında. Şimdi gradient descent'teki mantık şu, yine bunu biliyorsunuz.
+
+172
+00:24:35,296 --> 00:24:49,516
+şu bizim ağırlığımızsa, bu da bizim hatamızsa, bizim yapmaya çalıştığımız şey işte ağırlık, başta random bir değerle belirleniyor. İteratif olarak ilerleyecek çünkü ağırlık.
+
+173
+00:24:49,516 --> 00:25:02,376
+Ağırlık, ilk ağırlık değerleri için bizim hatamız çok büyük. Biz yavaş yavaş ağırlığı değiştirerek global minimuma yani hatanın en az olduğu yere inmeyi istiyoruz.
+
+174
+00:25:02,375 --> 00:25:12,775
+gradient descent ne yaptı şey bu. Şeyde, Deltorum diye bir şey, bir rol, Hofloin'in rolü.
+
+175
+00:25:22,483 --> 00:25:41,483
+ve orada deniyor ki bu T anındaki delta VT diyeyim şuraya T anındaki ağırlıksa bizim elimizdeki ağırlıksa
+
+176
+00:25:41,483 --> 00:25:56,283
+Bt artı o az önce hesapladığımız değişim miktarını bir öğrenme oranıyla çarpalım.
+
+177
+00:25:58,123 --> 00:26:00,884
+Şeyimiz pardon şunu çizeyim özür dilerim.
+
+178
+00:26:00,884 --> 00:26:02,723
+Şeyimiz nedir?
+
+179
+00:26:04,723 --> 00:26:07,123
+Deltamız, değişimimiz bu olsun deniyor.
+
+180
+00:26:07,244 --> 00:26:09,524
+Şöyle yapayım bir dakika bir daha söyleyeyim.
+
+181
+00:26:09,523 --> 00:26:26,303
+Şimdi T anında bir şey hesapladık az önce. Nedir? Değişim hesapladık. Değişim de neye eşitti? X, i çarpı, y, j, eksi.
+
+182
+00:26:32,788 --> 00:26:34,988
+yeter güçüydü.
+
+183
+00:26:39,635 --> 00:26:42,255
+ve tamten dersin de söylüyor, yungluğunlarınızı söylüyor.
+
+184
+00:26:49,491 --> 00:27:08,111
+istenilen çıkışla hesaplanan çıkış arasındaki fark çarpı x'i aslında şurası bizim error'ümüz. Ondan sonra ağırlığın nasıl değişmesi gerektiğini gösteriyordu.
+
+185
+00:27:08,111 --> 00:27:19,291
+Ama burada şey nedir, gradient'teki sıkıntı ben ne kadar büyük bir adımla ilerleyeceğim buna karar vermek gerekiyor.
+
+186
+00:27:19,491 --> 00:27:25,212
+O yüzden başıma bir learning rate'e gidiyoruz. Aslında bunları yine geçen hafta iner regresyonda görmüştük.
+
+187
+00:27:25,631 --> 00:27:44,672
+O zaman T artı bir anındaki inci özelliğin ağırlık değeri, T anındaki inci özelliğin ağırlık değeri artı learning rate çarpı istenilen çıkış eksi hesaplanan çıkış olarak belirleniyor.
+
+188
+00:27:44,672 --> 00:27:48,672
+Şu bizim learning rate'imiz.
+
+189
+00:27:49,491 --> 00:27:56,252
+Buraya kadar sormak istediğiniz bir şey var mı? Bu da dert yapuralı.
+
+190
+00:28:07,188 --> 00:28:22,267
+Aslında gradient descent öğrenme kuralı fakat burada bir değişim içine şey ekledik, learning rate ekledik ki şeyin ne kadar hatayı nasıl azaltacağınıza karar vermek için.
+
+191
+00:28:22,727 --> 00:28:24,587
+Bu kadar sormak istiyorsanız bir şey var mı?
+
+192
+00:28:27,927 --> 00:28:33,727
+Hocam bu learning rate pozitif mi olmak? Pozitif mi olacak?
+
+193
+00:28:33,727 --> 00:28:49,728
+Evet, learning rate sıfırla bir arasında değişen bir oran aslında. Sıfıra ne kadar yakınsa, yani bu tarafa yakın olduğunda yavaş öğrenme, bire yakın olduğunda hızlı öğrenme.
+
+194
+00:28:49,728 --> 00:28:55,888
+aslında bunu geçen hafta yine şeyde anlatmıştım gradient descent meselesinde anlatmıştım.
+
+195
+00:28:56,228 --> 00:29:02,428
+Şimdi şöyle bir şey var aslında o değeri çok da şey değil nedir?
+
+196
+00:29:03,308 --> 00:29:07,068
+Düzgün bir eğri değil ağırlığa göre hatanın değişimi.
+
+197
+00:29:08,028 --> 00:29:19,507
+Bazı yerlerde işte ne bileyim sanki şey gibi olabilir hata azalıyor gibi olabilir ama sonra tekrar şey olacaktır istenilen hata yükselebilir.
+
+198
+00:29:19,507 --> 00:29:26,207
+yani şuradaki mesela duruma bakarsanız hata böyle düşüyor gibi oldu yok bir ağırlık değeri sonra tekrar biraz yükselebiliyor.
+
+199
+00:29:26,347 --> 00:29:29,667
+Burası aslında lokal minimum, şurası da global minimum.
+
+200
+00:29:30,247 --> 00:29:33,908
+Şimdi burada sizin yapmanız gereken iki tane şey var.
+
+201
+00:29:33,908 --> 00:29:38,747
+Birincisi lokal minimuma takılmamak, ikincisi de global minimumu atlayıp gitmemek.
+
+202
+00:29:38,807 --> 00:29:39,947
+Atlayıp gitmek nedir?
+
+203
+00:29:40,268 --> 00:29:46,548
+Şimdi ben böyle büyük büyük hatayı değiştirirsem, dur atlamadım hayalden şöyle atlayacağı şekle getireyim.
+
+204
+00:29:46,548 --> 00:29:57,427
+büyük büyük değiştirirsen mesela şöyle şurada benim global minimum diyelim ki şöyle atladım.
+
+205
+00:29:57,927 --> 00:30:03,607
+Niçin atlayamıyorum acaba ama anlamamız ne demek istediğimi de şöyle yapayım bir daha şöyle.
+
+206
+00:30:05,268 --> 00:30:14,768
+Diyelim ki şurada atladın şuraya geçtin gittin mesela adımın çok büyük global minimumu atlayarak geçip gidebilirsin.
+
+207
+00:30:14,767 --> 00:30:42,047
+bunu önlemek için bir learning rate konuluyor. Yapılan şey şu iteratif olarak ilerlendiği için learning rate'i baştan büyük alıyorsun. Böylece hızlı hızlı başta yani şuralarda yavaş ilerlemesinin anlamı yok aslında. Hızlı hızlı ilerlesin. Ama işte ne bileyim belli bir iterasyon sonra yavaşlayarak learning rate'i küçültürseniz çünkü şimdi neden o da şimdi bak learning rate küçük olursa ağırlığın değişimi yavaş olur.
+
+208
+00:30:42,048 --> 00:31:03,807
+Çünkü bunu 0,1 aldığımı düşün. Buradaki error çarpı x'i giriş değerini 0,1 ile çarparsan ne olacak? Ağırlık t artı 1 anımı yavaş değişerek gidecek. Ama 0,9 alırsan değil mi bu çok etkili olacak şurası. Çok etkili olacak. Ağırlık hızı büyük değişecek. Yani ağırlığın değişimi büyük olacak.
+
+209
+00:31:03,807 --> 00:31:30,567
+Dolayısıyla iterasyonların başında ağırlığı büyük büyük değiştiriyorsun. İlerledikçe yavaş yavaş değiştiriyorsun ki şuraya yaklaştığında burada böyle yavaşça insin buraya şey yapmasın diye. Nedir? Kaçıp gitmesin. Buradan böyle pat diye lokal minimuma atlayıp yani ağırlığın aslında en uygun olduğu yere atlayıp başka bir ağırlık noktasına geçmesin diye. Bu anlaşıldı mı acaba?
+
+210
+00:31:30,567 --> 00:31:37,207
+ne yapmaya çalıştığımız, learning, creating anlamı falan bunlar anlaşıldı mı acaba?
+
+211
+00:31:39,987 --> 00:31:40,707
+Evet hocam.
+
+212
+00:31:41,207 --> 00:31:43,727
+Tamam peki. O zaman devam ediyoruz.
+
+213
+00:31:45,076 --> 00:32:04,416
+Şimdi şu şeye geri dönelim, slide'a geri dönelim. Şimdi burada biyolojik nöronu gördük. Şimdi bu aslında şey, işte asıl biraz belki bugünün işte ikinci, üçüncü saatinde göreceğimiz multi-layer, bir perceptron yapısı.
+
+214
+00:32:04,416 --> 00:32:34,395
+burada işte bir şey var şöyle bir yazacağım o da bana yazma diyecek input layer var ondan sonra burada bir hidden layer var çok can sıkıcı burada da bir output layer var böyle bir şey var yapı var aslında şimdi burada şeyi görüyorsunuz işte biyolojik nöron da soma dediğimiz şey nöron aslında yapay nöron da karşılık olarak dendrik denilen yani hücre
+
+215
+00:32:34,395 --> 00:32:39,195
+hücrede gelen bilgileri toplayan şeyi biz yapay nöron da input diyoruz.
+
+216
+00:32:39,576 --> 00:32:50,796
+Akson denen yani hücrede toplanan verinin pozitif veya negatif olarak dışarıya iletilmesini sağlayan şeyi yapıya output diyoruz.
+
+217
+00:32:50,876 --> 00:32:56,135
+Sinems'ler de her gelen giriş bilgisinin ne kadar etkili olduğunu belirliyorlar.
+
+218
+00:32:56,135 --> 00:33:05,195
+biz de buna yapay nöron ağında ağırlık diyoruz ve bu şekilde az önce gördüğümüz şekilde böyle bir şey üretmiş oluyoruz.
+
+219
+00:33:05,296 --> 00:33:08,995
+Yapay nöron yapısı üretmiş oluyoruz.
+
+220
+00:33:09,436 --> 00:33:13,656
+Şimdi bizim buradaki activation function'ımız time function demiştik.
+
+221
+00:33:13,656 --> 00:33:17,355
+Şimdi farklı başka neler olabilir activation function fonksiyonları?
+
+222
+00:33:18,135 --> 00:33:19,315
+Bunlara birlikte bir bakalım.
+
+223
+00:33:19,796 --> 00:33:21,355
+Mesela step fonksiyonu olabilir.
+
+224
+00:33:21,355 --> 00:33:30,016
+bir step fonksiyonu dediğimizde eğer çıkışa yalnız V0 yani eşik seviyesi dahil burada buna dikkat edin lütfen.
+
+225
+00:33:30,756 --> 00:33:37,576
+Eşik seviyesi dahil olmak üzere V0 artı V1 çarpı X2 artı V2 çarpı X2 şeklinde ilerliyor.
+
+226
+00:33:39,395 --> 00:33:48,735
+Eğer çıkışta elde ettiğiniz değer 0'dan büyükse çıkışı 1, küçükse 0'u üretirseniz step function,
+
+227
+00:33:48,735 --> 00:33:57,516
+sign function az önce kullandığımız sigmoid şeyde kullanacağız ileride mantı ve yedi perceptron da kullanacağız.
+
+228
+00:33:58,175 --> 00:34:06,255
+1,1 artı y üzeri eksi x. Geçen ders yine şeyde de görmüştünüz hatırlarsanız lojistik regresyonda kullanmıştık.
+
+229
+00:34:06,255 --> 00:34:15,315
+S harfine benziyor aslında bakın burada gördüğünüz gibi. Buradaki önemli sign function'da gördüğümüz ani bir geçiş sağlıyor.
+
+230
+00:34:15,315 --> 00:34:25,795
+yani ya x'i bir yapıyorsunuz ya artı bir yapıyorsunuz. Aynı bir geçiş sağlıyor. Sigma ipte gördüğümüz ise yavaş geçiş sağlıyor.
+
+231
+00:34:25,935 --> 00:34:34,035
+Çıkışta 0, 1 değil negatif veya pozitif bir değer üretmiş oluyorsunuz aslında.
+
+232
+00:34:38,735 --> 00:34:44,775
+Linear function'da da output'unuz x'e bağlı olarak linear bir output oluyor.
+
+233
+00:34:44,775 --> 00:35:09,215
+hangileri çok kullanıyor? Perceptron, sign function kullanıyor aslında. Multi-layered perceptron da yani daha doğrusu tek katmanlı perceptron yani şu anda gördüğümüz şey tek bir katman var, bir nöronumuz var, bu nörona gelen girişler var ve çıkışımız var. Bu single-layered perceptron, sign function kullanır genel olarak. Problemler bu şekilde çözülür.
+
+234
+00:35:09,215 --> 00:35:17,635
+sigmoid kullanmanız da mateliyot perceptron da gerekecek. Şimdi bunun nasıl olduğunu göstereceğiz.
+
+235
+00:35:19,035 --> 00:35:31,076
+Şimdi perceptron 1958'miş bu arada. Yapay nöron ağının ilk eğitim şeklinin gösterilmesi 1958 yılıymış perceptron da.
+
+236
+00:35:31,076 --> 00:35:42,355
+işte bu az önce benim gösterdiğim şey mesela iki girişimiz var. Bu girişler için ağırlık genel olarak toplanıyor ve bir eşik seviyesinden geçilerek yeğe çıkışını
+
+237
+00:35:44,755 --> 00:36:12,715
+getiriyorum. Şimdi bu Rosenblatt'ınkisi benim başta söylediğim, Akkulokla Pils'in yapayının modeline dayanan bir yapı. Şimdi bunun şeyini göstereceğim size. Nasıl? Liner, ayrılma nedir vesaire. Bunun nasıl yapıldığını göstereceğim. Fakat saate baktım 10.40 mı olmuş? Ara vereyim mi, vermeyeyim mi? İhtiyacınız var mı? Araya ihtiyacınız var mı?
+
+238
+00:36:14,755 --> 00:36:16,596
+olabilir hocam.
+
+239
+00:36:18,375 --> 00:36:18,956
+İstersin.
+
+240
+00:36:19,816 --> 00:36:21,895
+Peki tamam vereyim ondan sonra devam edin.
+
+241
+00:36:24,895 --> 00:36:29,055
+Dikkatiniz dağılmasın çünkü perceptronun öğrenme modelini anlatacağım.
+
+242
+00:36:29,855 --> 00:36:31,336
+Sıfırdan şeyle başlayayım.
+
+243
+00:36:31,436 --> 00:36:32,696
+Tamam 10 dakikada veriyorum.
+
+244
+00:47:12,019 --> 00:47:25,999
+Geri geldim. Evet, şimdi şöyle şey üzerinden, bir örnek üzerinden perceptronun öğrenme şeyinin nasıl olduğunu, mantığının nasıl olduğunu anlatayım size.
+
+245
+00:47:25,999 --> 00:47:40,999
+Şimdi şöyle yapacağız. Ne öğrensin? Mesela ent öğrensin. İki tane girişimiz var. x1, x2. Şöyledir hatırlarsanız doğruluk tablosu.
+
+246
+00:47:42,019 --> 00:47:59,479
+0-0 iken 0, 0-1 iken 0, 1-0 iken 0 ve 1-1 iken 1 olacak. Şurada bizim işte burada toplandığı, bu da bir eşik seviyesinden geçti ve burada bir y çıkışı elde ettik.
+
+247
+00:47:59,479 --> 00:48:21,179
+Şimdi bunu genelde şöyle yapıyorlar. Çeşit çeşit gösterimler görebilirsiniz. Şurada işte V1 ve V2 ağırlıklarımız var. X1, X2, V1, V2. Bir de şey yapıyorlar. X0 eşittir, eksi 1 olan. Şimdi eşik seviyesinde mesele nedir?
+
+248
+00:48:21,179 --> 00:48:27,819
+shape fonksiyonunda, sine function'da eşik seviyesindeki durum nedir?
+
+249
+00:48:27,919 --> 00:48:31,219
+X, C, V'yi toplam X, C, V'yi büyüktür.
+
+250
+00:48:31,319 --> 00:48:32,159
+Duyuyor musunuz bu arada?
+
+251
+00:48:32,319 --> 00:48:33,879
+Ben şimdi konuşmaya başladım ama.
+
+252
+00:48:34,759 --> 00:48:35,899
+Duyuyoruz hocam.
+
+253
+00:48:35,959 --> 00:48:36,399
+Tamam.
+
+254
+00:48:36,939 --> 00:48:47,279
+X, C, V'yi eğer büyüktür, işte bir büyük eşik bir streç olsa Y eksi bir olur.
+
+255
+00:48:47,279 --> 00:48:59,959
+ondan sonra küçüktür, pardon büyüktür, türeş olsa bir y-1 olur. Küçüktür türeş olsa da y-1 olur diye bir mantık var.
+
+256
+00:49:00,059 --> 00:49:07,539
+Şimdi bunun sonuçta bir program yazacaksınız bilgisayar ortamında yapacaksınız. İş kolay olsun diye şöyle görebilirsiniz.
+
+257
+00:49:07,539 --> 00:49:21,219
+Yani temel aslında şey bu, kural bu. Yani X girişlerim için bu girişlere bağlı olan ağırlıkların çarpımların toplamı eşik seviyesinden büyükse çıkış 1 olsun değilse çıkış eksi 1 olsun.
+
+258
+00:49:21,219 --> 00:49:33,740
+Aslında buradaki kural bu. Ama bunu kod yazarken kolay olsun diye şöyle görebilirsiniz. Yani farklı yerlerde, farklı şekillerde gördüğümüz evse aynı kapıya çıkıyor aslında.
+
+259
+00:49:33,740 --> 00:49:50,019
+bazısı böyle bir şey ekliyor. V0 ağırlığı için her zaman eksi bir olan bir X0 girişi ekliyor ve eşik seviyesini bu şekilde bir ağırlık olarak gösteriyor.
+
+260
+00:49:50,019 --> 00:50:02,139
+Yani bunu böyle de görebilirsiniz. Bazısında bu X0'ı şey yapanı da görebilirsiniz. X0'ı 1 olarak ekliyorlar. X0'ı 1 ekliyor.
+
+261
+00:50:02,139 --> 00:50:12,059
+o zaman ne oluyor? Ağırlık ona göre değişiyor. Yani x'ın eksi bir veya bir olması aslında değişen şey ağırlık olacağı için durumu çok etkileniyor.
+
+262
+00:50:12,059 --> 00:50:17,839
+Bazılarında eşik seviyesi sabit tutuluyor. Sadece ağırlıklar değişiyor.
+
+263
+00:50:18,420 --> 00:50:44,180
+Bunlar varyasyonlar. Yani farklı dökümanlarda bunların hepsini görebilirsiniz. Bazılarında da ağırlık da, eşik seviyesi de ağırlık gibi. Yani hem buradaki gibi böyle ayrı bir eşik seviyesi var hem de diğer ağırlıklar gibi update ediliyor. Bunlar çeşitli varyasyonlar. Yani farklı bir şekilde görüp de şey düşünmeyin. Yani bu niye böyle oldu diye düşünmeyin.
+
+264
+00:50:44,180 --> 00:50:52,000
+çünkü sizin de matematik karşılığından anlayacağınız gibi aslında hepsi aynı kapıya çıkıyor.
+
+265
+00:50:52,800 --> 00:50:54,579
+Şimdi peki öğrenme nasıl oluyor?
+
+266
+00:50:54,579 --> 00:51:13,699
+Yani o zaman mesela şurada bir, o zaman biz şey halini yaparsak, ne de şurada değil de şurada çizdim ben zaten, şu halini yaparsak bir V0 girişimiz olduğunu, eşik seviyesini V0 ile gösterildiğini ve bunun şey olduğunu düşünelim.
+
+267
+00:51:13,699 --> 00:51:22,059
+ağırlıklar gibi update edildiğini düşünüyorum. Şimdi öğrenme nasıl oluyor? Öğrenme şöyle oluyor. Birinci adım initialization.
+
+268
+00:51:25,920 --> 00:51:30,699
+Initialization'da yaptığımız şey ağırlıkları...
+
+269
+00:51:33,640 --> 00:51:33,960
+Pardon.
+
+270
+00:51:36,179 --> 00:51:39,500
+Pardon. Bir yere bastım. Siri çalışmaya başladı.
+
+271
+00:51:43,219 --> 00:51:43,780
+neyse.
+
+272
+00:51:46,779 --> 00:51:47,379
+Ağırlıkları
+
+273
+00:51:53,139 --> 00:52:03,020
+genellikle eksi 0,5 ile artı 0,5 arasında değişen random değerlerle ilklendiriyoruz.
+
+274
+00:52:03,219 --> 00:52:06,419
+Birinci yaptığımız şey bu.
+
+275
+00:52:06,419 --> 00:52:13,459
+Şimdi burada ilk olarak ağırlıkları ilklendirdik.
+
+276
+00:52:13,560 --> 00:52:18,219
+Arkasından çıkışın ne olacağını hesaplayacağız.
+
+277
+00:52:18,379 --> 00:52:22,419
+Şimdi ikinci yapacağımız şey...
+
+278
+00:52:33,204 --> 00:52:46,723
+Şimdi T anındaki çıkışı hesaplamak. Çıkış ne olacak? Step fonksiyonundan, sign fonksiyonundan, pardon özür dilerim sign demiştik.
+
+279
+00:52:48,863 --> 00:52:58,964
+sign fonksiyonundan geçecek. i eşittir sıfırdan n'e kadar. x, i, v, i olacak.
+
+280
+00:52:58,964 --> 00:53:09,803
+Böylece ağırlıkları hesaplayacağız. Ondan sonra da ağırlıkları aktif etmemiz gerekiyor.
+
+281
+00:53:14,228 --> 00:53:34,107
+Öğrenme, bakın bu mantıklarda, şimdi öğrenme nasıl oluyor? Tıpkı şeyde de böyleydi. Regresyonda da böyleydi. Öğrenme tamamen ağırlıkların değişmesi. Çünkü sizin zaten X girişleriniz veya çıkışlarınız sabit bilgiler. Öğrenmeyi nasıl sağlayabilirsiniz? Ağırlıkları değiştirerek sağlayabilirsiniz.
+
+282
+00:53:34,107 --> 00:53:43,187
+ağırlıkların değişimine göre bir network'nüz ent işlemi yapabilir, başka ağırlıklarla or işlemi yapabilir falan.
+
+283
+00:53:43,187 --> 00:53:52,807
+Yani ağırlıklar aslında verilen girişler için istenilen çıkışları elde edince ağırlıklar artık set edilmiş oluyor, yerleşmiş oluyor.
+
+284
+00:53:53,247 --> 00:54:01,088
+Dolayısıyla sizin verdiğiniz girişler için bilinmeyen bir örnekte istenilen çıkışların elde edilmesi sağlanıyor.
+
+285
+00:54:01,088 --> 00:54:22,547
+Şimdi ağırlıkları nasıl değiştireceğiz? İlincin özelliğe bağlı olan ağırlık T artı 1 anında T anındaki değeri artı T anındaki delta kuralına göre ağırlık değişimi miktarı olacak.
+
+286
+00:54:22,547 --> 00:54:48,967
+T anındaki ağırlık değişimi miktarı nedir? İşte learning rate çarpı T anındaki hata çarpı T anındaki X giriş değeri neyse yani aslında T anında değil bu sonuçta X giriş değeri hep aynı yani onun sanki T anında değişiyormuş gibi söylemeyeyim de ben.
+
+287
+00:54:48,967 --> 00:54:53,448
+X, Y giriş değeri her neyse o olacak.
+
+288
+00:54:54,807 --> 00:55:01,187
+Şimdi burada baktığınız zaman R örneğe eşit.
+
+289
+00:55:05,876 --> 00:55:15,275
+gerçek çıkış eksi hesaplanan çıkışa eşit.
+
+290
+00:55:16,716 --> 00:55:18,615
+Şimdi buradan neyi görüyorsunuz?
+
+291
+00:55:18,615 --> 00:55:27,476
+Eğer gerçek çıkış hesaplanan çıkıştan büyükse error sıfırdan büyük oluyor.
+
+292
+00:55:27,476 --> 00:55:30,076
+ondan sonra
+
+293
+00:55:30,076 --> 00:55:33,396
+eğer şeyse
+
+294
+00:55:33,396 --> 00:55:35,355
+küçükse
+
+295
+00:55:35,355 --> 00:55:38,835
+error sıfırdan küçük oluyor
+
+296
+00:55:38,835 --> 00:55:40,076
+bu neyi değiştiriyor
+
+297
+00:55:40,076 --> 00:55:42,436
+sizin de burada göreceğiniz gibi
+
+298
+00:55:42,436 --> 00:55:44,596
+error sıfırdan büyükse
+
+299
+00:55:44,596 --> 00:55:48,255
+ağırlık artacak
+
+300
+00:55:48,255 --> 00:55:50,675
+çünkü pozitif bir delta V
+
+301
+00:55:50,675 --> 00:55:51,816
+oluşacağından
+
+302
+00:55:51,816 --> 00:55:54,556
+error pozitifse pozitif bir delta V
+
+303
+00:55:54,556 --> 00:55:55,216
+oluşacağından
+
+304
+00:55:55,216 --> 00:55:57,616
+burada T artı bir anındaki ağırlık artacak.
+
+305
+00:55:58,295 --> 00:56:00,216
+Bu da neyi sağlayacak aslında?
+
+306
+00:56:01,315 --> 00:56:05,515
+Y çıkış değerinin büyümesini ve target'e yaklaşmasını sağlayacak.
+
+307
+00:56:05,756 --> 00:56:14,515
+Aksi şekilde eğer şey küçükse, target hesaplanandan küçük çıkıyorsa error negatif çıkacak.
+
+308
+00:56:14,916 --> 00:56:17,015
+Error negatif çıkınca bu da neyi sağlayacak?
+
+309
+00:56:17,155 --> 00:56:18,795
+Ağırlığı küçültmenizi sağlayacak.
+
+310
+00:56:18,896 --> 00:56:20,155
+Ağırlığın değeri azalacak.
+
+311
+00:56:20,655 --> 00:56:24,895
+Bu delta V negatif olacağı için T artı bir anındaki ağırlık azalacak.
+
+312
+00:56:24,895 --> 00:56:26,535
+Ağırlık azalınca ne olacak?
+
+313
+00:56:27,135 --> 00:56:32,295
+Y çıkışı target'a yaklaşacak şekilde küçülmeye başlayacak.
+
+314
+00:56:32,575 --> 00:56:33,495
+Bu anlaşıldı mı?
+
+315
+00:56:33,675 --> 00:56:48,035
+Yani weight training'de bizim yaptığımız şey o zaman bu şekilde ağırlıkların gerçek çıkışı elde edebilecek şekilde azaltılmasını veya arttırılmasını sağlamak.
+
+316
+00:56:48,035 --> 00:56:50,035
+Dördüncü adımda da...
+
+317
+00:56:53,652 --> 00:57:13,011
+Iteration, ondan sonra, Iteration'da yaptığımız şey, şeyden devam etmek aslında. İkinci adımdan devam etmek, şey olana kadar, convergence olana kadar, ikinci adımdan devam etmek.
+
+318
+00:57:13,011 --> 00:57:24,911
+Convergence'dan kastedilen şey ne? Convergence'dan kastedilen şey işte hatanın belirlenen bir şeyin altına düşmesi.
+
+319
+00:57:27,391 --> 00:57:36,371
+Eşik seviyesinin altına düşmesi. Şimdi burada size şey görnek üzerinde göstereceğim.
+
+320
+00:57:36,371 --> 00:57:44,571
+bakın ent öğrenen perceptron yapısını
+
+321
+00:57:44,571 --> 00:57:51,691
+buradaki yalnız şuraya dikkat edin yine uyaracak beni ama threshold sabit olarak 0.2 alınmış
+
+322
+00:57:51,691 --> 00:57:58,391
+şey gibi yani az önce biz V0'ca ayrı bir ağırlık olarak eşlik seviyesini alırız dedik ama
+
+323
+00:57:58,391 --> 00:58:04,331
+burada threshold sabit alınmış threshold değişmiyor sadece ağırlıklar değişiyor
+
+324
+00:58:04,332 --> 00:58:11,812
+Şimdi üzerine yazmaya çekmiyorum, durmadan düzelttiği için. Ama şuradan başlayarak anlatıyorum, şuradan başlıyorum.
+
+325
+00:58:12,692 --> 00:58:17,672
+Şimdi ipok demek, geçen dersin elineği, regrosy, regresyonda görmüştük aslında.
+
+326
+00:58:18,851 --> 00:58:26,552
+Şey demek, bir tur dönmek demek. Yani bizim ent işlemi için aslında dört tane giriş örneğimiz var.
+
+327
+00:58:26,552 --> 00:58:30,192
+bu giriş örneklerimiz 00, 01, 01, 01, 01.
+
+328
+00:58:31,571 --> 00:58:42,391
+Ve şey, baktığınız zaman, şuradan şimdi şey yazayım, şuraya kenara ben not alacağım ki size çözeceğim çünkü.
+
+329
+00:58:43,172 --> 00:58:55,431
+V1'i 03 olarak random set etmiş, V2'yi 0.1 olarak random set etmiş, learning rate'i 0.1, trash oldu da 0.2 olarak kalmış.
+
+330
+00:58:55,431 --> 00:58:57,971
+Şimdi bakın şeyi göstereceğim size.
+
+331
+00:59:03,471 --> 00:59:08,532
+Şimdi biz şunu aklınızda tuttunuz sadece.
+
+332
+00:59:09,071 --> 00:59:11,331
+Hata neye eşitti?
+
+333
+00:59:12,131 --> 00:59:17,991
+Hesaplanan çıkış çarpı, gerçek çıkış eksi hesaplanan çıkışı eşitti.
+
+334
+00:59:18,411 --> 00:59:23,771
+Delta V'yi de learning rate çarpı, hata çarpı x2 x'i şeklindeydi.
+
+335
+00:59:23,771 --> 00:59:42,951
+Şimdi bu mantığa göre şeye bir bakalım bu birden ağırlıkları için A'a şey göstererek bakalım şu çünkü 0-0 için ne olacağı çok belli şu 0-1'i gösteriyorum ben şeye A ve 0-1 için hatanın nasıl hesaplandığını gösteriyorum.
+
+336
+00:59:42,952 --> 00:59:53,952
+Şimdi x1'iniz 0 olsun, x2'iniz 1 olsun, i eşittir 1'den 2'ye, x'i çarpı v'yi neye eşit olacak?
+
+337
+00:59:54,631 --> 00:59:59,832
+Burada v1'iniz 0.3, v2'iniz de x'i 0.1.
+
+338
+00:59:59,831 --> 01:00:13,571
+o zaman neye eşit olacak? 0 çarpı 0.3 eksi 0.2 çarpı 1 yani eksi 0.2'ye eşit olacak.
+
+339
+01:00:13,571 --> 01:00:25,191
+Şimdi hatada neye eşit olacak? Delta V'ye neye eşit olacak? 0.1 çarpı, ha şey Y'ye bakalım öncelikle.
+
+340
+01:00:25,191 --> 01:00:28,231
+Şimdi buradan Y neye eşit olacak?
+
+341
+01:00:28,791 --> 01:00:37,951
+Eksi 0.2 küçüktür threshold'dan threshold 0.2 idi çünkü Y'mizde 0'a eşit olacak.
+
+342
+01:00:38,071 --> 01:00:48,911
+Şimdi Y'miz 0. O zaman delta V'yi neye eşit? 0.1 çarpı hesaplanan çıkışla istenilen çıkış ikisi de 0 olduğu için çarpı
+
+343
+01:00:50,612 --> 01:00:57,871
+x i, şimdi x bir için delta v bir o zaman
+
+344
+01:01:04,851 --> 01:01:24,971
+0.3 pardon özür dilerim delta V1 neye eşit oldu? 0'a eşit oldu. V1 0.3 olarak kaldı. Şimdi x2 için delta V2'ye bakalım. Delta V2 ne olacak? O da 0 olacak.
+
+345
+01:01:24,971 --> 01:01:38,651
+dolayısıyla pardon o 0 mu oluyor? x2 1 çünkü özür dilerim. x2 için delta v2 0.1
+
+346
+01:01:48,340 --> 01:01:52,340
+sıfır oldu. Ha, o da bir doğru. Kesinlikle o da bir.
+
+347
+01:01:54,340 --> 01:01:56,340
+Özür dilerim.
+
+348
+01:02:04,659 --> 01:02:24,659
+Bu arada V2 0'ıymış arkadaşlar. Özür dilerim. Ben yanlış yazmışım. Niye beni siz uyarmıyorsunuz? Şu 0.1'miş. Şurada da 0.1. Hata yaptığım zaman beni uyarın lütfen. Siz takip etmiyor musunuz?
+
+349
+01:02:24,659 --> 01:02:46,399
+x2 delta v2 şimdi 0 olduğu için v2 de 0.1 olacak. Şimdi bu değişmedi. Bir de şey için bakalım. x1 eşittir 1, x2 eşittir 1 için bakalım. Çünkü ilk 3 adımda şey değişmiyor.
+
+350
+01:02:46,399 --> 01:03:09,719
+nedir? Ya da yapayım mı? Orada mısınız? Evet hocam. Tamam. x1 eşittir 1, x2 eşittir 0 için yapayım. x1 eşittir 1, x2 eşittir 0 için 1 çarpı 0.3 şimdi şey görmemizi istiyorum, hata görmemizi istiyorum.
+
+351
+01:03:09,719 --> 01:03:28,799
+1 çarpı 0.3 ve 2-0.1'de, 0.1 çarpı 0 eşittir ne olacak? 0.3 olacak. Thresh olduğumuz da 0.2 idi. 0.3 büyüktür 0.2 olduğu için çıkışımız 1 olacak.
+
+352
+01:03:28,799 --> 01:03:48,939
+Şimdi biz bu giriş için çıkışın ne olmasını istiyorduk aslında? 0 olmasını istiyorduk. Şimdi bu durumda error ne aslında? İstenilen çıkış eksi, target çıkış eksi hesaplanan çıkış yani 0-1, error'ımız eksi 1 oldu şu anda.
+
+353
+01:03:48,939 --> 01:04:03,779
+Tamam mı? O zaman delta V1 neye eşit olacak? 0.1 çarpı 0-1 çarpı 1'e eşit olacak. O da nedir?
+
+354
+01:04:04,560 --> 01:04:16,320
+Eksi 0.1. O zaman V1 neye eşit olacak? 0.3-0.1 0.2'ye eşit olacak. V1 değişti. Delta V2 neye eşit olacak?
+
+355
+01:04:16,320 --> 01:04:32,140
+0.1 learning rateimizde 0-1 errorumuz şarpı 0 bu x2'miz o zaman bu neye eşit olacak 0'a v2 değişmeyecek x'i 0.1 olarak kalacak.
+
+356
+01:04:32,659 --> 01:04:34,600
+Buraya kadar sonra istediğiniz bir şey var mı?
+
+357
+01:04:35,980 --> 01:04:39,779
+Şimdi x1-1 x2-1 için bakalım ne olacağına.
+
+358
+01:04:39,779 --> 01:04:49,539
+x1, 1, x2, 1 için ikisi de 1 olduğu için 0.3-01 o da eşittir 0.2.
+
+359
+01:04:52,719 --> 01:05:01,179
+0.2 yani küçük eşittir 0.2 olduğundan ötürü çıkış 0 olacak.
+
+360
+01:05:01,179 --> 01:05:28,479
+tam denk düşürmüş. Yani bu da yine şeye bakar. Çok da böyle büyük eşit derseniz 1 dersiniz, küçük eşit derseniz 0 dersiniz. 0 olacak. Şimdi o zaman y'imiz 0 ise delta v1'imiz 0, 1. Bu sefer istenilen çıkış 1, gerçek çıkış 0. Çarpı x1 yani 0, 3. O neye eşit olacak?
+
+361
+01:05:28,479 --> 01:05:30,839
+Pardon
+
+362
+01:05:36,083 --> 01:05:48,384
+çarpı 1, o da 0.1'e eşit olacak. O zaman t artı 1 anındaki v1 değeri 0.3 artı
+
+363
+01:05:55,411 --> 01:06:06,991
+0.1 öğrenme kuralı 1. 0.3 artı 0.1 0.4 olacak.
+
+364
+01:06:12,115 --> 01:06:37,975
+Pardon, 0-2 demiştik. Şurada 0-3 olacak. Arkadaşlar, valla hiç patkınız yok şu yani bana. 0-2. Şuradaki 0-2 idi çünkü. Delta V2 neye eşit olacak? 0-1 çarpı 1, eksi 0 çarpı 1. O da 0.1'e eşit olacak. O zaman V2 neye eşit olacak? Eksi 0.1'di. Eksi 0.1 artı 0.1, 0'a eşit olacak.
+
+365
+01:06:37,975 --> 01:07:03,455
+Şimdi bakımda da yavaş yavaş ağırlıkların nasıl değiştiğini görüyorsunuz. Burası anlaşıldı mı acaba? Her adımda delta V'yi hesaplıyoruz. Delta V'yi hesaplayabilmek için önce çıkışı hesaplıyoruz. Çıkışın ne olacağını hesaplıyoruz. Ona bağlı olarak da ağırlığın nasıl değişeceğini hesaplıyoruz. Şimdi onun şeyi üzerinde göstermek istiyorum.
+
+366
+01:07:03,455 --> 01:07:05,535
+Hocam
+
+367
+01:07:05,535 --> 01:07:12,155
+Bizim yaptığımız örnekte biz niye gerçek değerlerinden çıkartmadık hiç?
+
+368
+01:07:13,355 --> 01:07:18,515
+Nasıl gerçek değerlerinden çıkartmadık? Gerçek değerlerinden çıkardık. Nerede? Söyler misin bana?
+
+369
+01:07:19,015 --> 01:07:25,015
+Tabii ki hocam. Ben bir yanlış anladın mı bilmiyorum ama y'yi hesapladık ya. Mesela ilk başta eksi 0.2 bulduk.
+
+370
+01:07:25,015 --> 01:07:25,755
+Evet.
+
+371
+01:07:25,755 --> 01:07:36,336
+Bizim hesapladığımız değer, bir de bunun x0, x2 işte 1 iken bir değer olması gerekmiyor muydu? Ve ondan x0.2 çıkartmamız gerekiyordu?
+
+372
+01:07:38,455 --> 01:07:51,556
+Hayır, işte anlattım ya, şuradan anlattım dikkat edersen şöyle bir daha söyleyeyim. Dedim ki sonuçta farklı farklı şifrelerle hesap yapılıyor.
+
+373
+01:07:51,555 --> 01:08:21,476
+Şimdi bunların hepsi doğru hesaplar. Bazısı şey yapıyor, yanlış mı anlayam seni bilmiyorum. Threshold'u da ağırlık olarak katıp bir toplam hesaplıyor. O toplama göre devam ediyor. Bazısı da direkt şey yapıyor bazı örneklerde de. Direkt threshold'la, şurada gördüğüm gibi threshold'la şey yapıp fark alıp ondan sonra işte ona göre artı bir veya eksi bir, artı bir
+
+374
+01:08:21,476 --> 01:08:29,735
+veya 0 kullanıyor. Şimdi bu örnek şey kullanıyor, yani artı bir 0 kullanıyor, step function, şuradan göstermek istiyorum.
+
+375
+01:08:29,955 --> 01:08:34,636
+Onu sormak istememiştim. Neyi soruyorsun? Tabloyatı mı görmesiniz hocam tekrar?
+
+376
+01:08:35,235 --> 01:08:42,276
+Şeyim, evet. Şimdi biz burada x1, 0 ve x2, 1 iken bir değer hesap alalım değil mi?
+
+377
+01:08:42,276 --> 01:08:48,515
+Evet, x0, 2. Bir de x1, 0, x2, 1 iken bir gerçek değer olması lazımdı.
+
+378
+01:08:48,515 --> 01:08:52,715
+Buna karşılık gelen 0.2, 0.2
+
+379
+01:08:52,715 --> 01:08:55,476
+Değil mi?
+
+380
+01:08:55,955 --> 01:09:02,535
+Hocam slide'daki tabloya gelebilir misiniz peki? Oradaki y-desired vardı ya, onu demek istiyorum.
+
+381
+01:09:04,215 --> 01:09:05,515
+Şunu mu diyorsun?
+
+382
+01:09:07,655 --> 01:09:08,415
+Evet.
+
+383
+01:09:10,695 --> 01:09:14,195
+Biz bu değerden bizim hesapladığımızı çıkartmamız gerekmiyor mu?
+
+384
+01:09:14,196 --> 01:09:38,436
+Hayır, niye gereksin bir dakika? Şimdi bak, hayır tabii ki ama sen olayı şey yapmamışsın ki, eksi 0.2 senin hesapladığın çıkış değeri ama biz ne dedik? Bu çıkış değerinin threshold'a göre durumuna bakacağız dedik. Değil mi? 0.2'yi kullanmıyorsun, hiçbir zaman öyle bir şey yok.
+
+385
+01:09:38,435 --> 01:09:50,335
+Şimdi ne yapman lazım? Eğer threshold'tan büyükse bir işlem yapacağım, küçükse bir işlem yapacağım. Onun için bu da threshold'tan çıkartıyorsun. Yani threshold'a göre durumuna bakıyorsun.
+
+386
+01:09:52,455 --> 01:09:54,815
+Tamam. Başta yanlış anlamışım o zaman.
+
+387
+01:09:55,055 --> 01:09:59,975
+Tamam. Yani mutlaka hani dedik ya bir aktivasyon olması için threshold
+
+388
+01:10:00,000 --> 01:10:21,399
+ve 3-shot'tan büyükse şey yapıyorsun, 0 üretiyorsun, şey 1 üretiyorsun, 3-shot'tan küçükse eksi 1 üretiyorsun veya işte step function kullanıyorsan 3-shot'tan büyükse 1, küçükse 0 üretiyorsun. Bu anlaşıldı mı? Bir kere daha anlatmanı ister misiniz?
+
+389
+01:10:21,399 --> 01:10:26,719
+Ben anladım hocam ama benim de bir sorum olacaktı
+
+390
+01:10:26,719 --> 01:10:33,279
+Burada küçük eşittirin hangi tarafta olduğu niye bu kadar önemsiz? Benim biraz o kafamı karıştırıyor
+
+391
+01:10:33,279 --> 01:10:37,079
+Mesela bir ile sıfır demek arasında fark var yani küçük eşittir olduğu zaman
+
+392
+01:10:37,079 --> 01:10:40,459
+Çünkü o neden biliyor musun? Yani o bir anlık bir şey
+
+393
+01:10:40,459 --> 01:10:44,080
+Sen zaten ağırlığı biraz oynatsan artık sınıf değişmiş olacak
+
+394
+01:10:44,080 --> 01:10:48,099
+Yani değil mi? Şimdi aslında yani şundan ötürü çok önemli
+
+395
+01:10:48,099 --> 01:11:07,619
+Şimdi şurası ve x'i eşittir 0 noktası. Burası mesela işte signum kullanıyorsan sign-conclusion kullanıyorsan büyüktür 0. Burası da küçüktür 0 olan yer. Tamam mı? Şöyle.
+
+396
+01:11:07,619 --> 01:11:34,759
+seninkisi tam şunun üzerine geldi aslında eşittir çıktığında. Dolayısıyla çok da önemli değil. Zaten biraz ağırlığı oynatırsan ya bu tarafa kaçacak ya bu tarafa kaçacak. Yani o bir adım, iterasyonun bir adımında tam eşittir sıfır olup üzerine denk gelecek. Zaten bizim için önemli olan sola veya sağa kaçması. Yani hyperplay'ne çok yakın olması iyi bir şey değil aslında. Değil mi?
+
+397
+01:11:34,759 --> 01:12:00,119
+yani haykut reyden ne kadar uzaksak aslında o kadar daha şey bir şeydir. Tam üzerinde olması yani bu tarafa da ayıp olabilir, bu tarafa da ayıp olabilir. O yüzden çok üzerinde girmiyor. Yani gerçekten bunları böyle çeşit çeşit görürsünüz. Birisi büyüktür sıfırlar, birisi büyükeşittir sıfırlar. Yani bunları çeşit çeşit görürsünüz. Çok takılmamanız lazım.
+
+398
+01:12:00,119 --> 01:12:05,659
+dediğim gibi yani o bir an sonra zaten ağırlığı değiştirdiğin anda ya o tarafa ya öbür tarafa gidecek.
+
+399
+01:12:06,079 --> 01:12:15,000
+İterasyonun devamında da hangi tarafta olması daha doğruysa ya sürekli azalacak yerine yerleşecek ya biraz daha artı artı yerine yerleşecek.
+
+400
+01:12:15,639 --> 01:12:16,500
+Bu anlaşıldı mı?
+
+401
+01:12:16,559 --> 01:12:18,119
+Anladım. Teşekkür ederim hocam.
+
+402
+01:12:18,979 --> 01:12:19,699
+Rica ederim.
+
+403
+01:12:21,039 --> 01:12:25,059
+Şimdi şeyi bir kere daha söylemek istiyorum arkadaşlar.
+
+404
+01:12:25,059 --> 01:12:29,399
+Şunu yazarak söyleyeyim çünkü belki genel olarak da sıkıntı vardır.
+
+405
+01:12:29,399 --> 01:12:53,859
+Şimdi burada şeyi yaparken ağırlıkların değişimini yaparken bir kere önce şeye karar vermeniz gerekiyor. Y çıkışını nasıl hesaplayacağınıza karar vermeniz gerekiyor. Şimdi birinde step function var. Bunları gösterdim ama nasıl geçtim belki önemini anlamamış olabilirsiniz. Step function yaparsanız aslında şöyle.
+
+406
+01:12:58,899 --> 01:13:12,899
+şurası eğer artı birse, şurası da sıfırsa, şu benim x eksenim, bu da y eksenim. Step function yaparsanız aslında şöyle, eğer x...
+
+407
+01:13:18,131 --> 01:13:24,271
+büyük eşittir sıfırsa bir, sıfırsa x küçüktür sıfırsa sıfır.
+
+408
+01:13:24,411 --> 01:13:32,731
+Stepple kullanırsa o. Şimdi ben önce şeyi göstereceğim. Nedir? Sadece perceptronu, tek katmanlı perceptronu göstereceğim.
+
+409
+01:13:33,231 --> 01:13:38,131
+Sign function kullanırsanız da...
+
+410
+01:13:42,100 --> 01:13:49,159
+şu x'imiz, şurası 0, şurası yine artı birimiz olsun.
+
+411
+01:13:57,427 --> 01:14:06,327
+şurası da eksi birimiz olsun. Şurası artı bir, şurası eksi bir, şurası x ekseniniz, burası y ekseniniz.
+
+412
+01:14:06,327 --> 01:14:18,268
+Side function kullanırsanız da eğer x büyük eşittir sıfırsa bir üretiyor. Eğer x küçüktür sıfırsa eksi bir üretiyor.
+
+413
+01:14:18,407 --> 01:14:24,348
+Şimdi bunlar kullanabileceğiniz fonksiyonlar. En çok kullanılan, lineal çok kullanılmıyor.
+
+414
+01:14:24,348 --> 01:14:30,288
+şey için tek katkanlı perceptron için kullanabileceklerini step function veya sign function.
+
+415
+01:14:30,687 --> 01:14:33,688
+Şimdi bu dönemde olan x'in ne olduğu?
+
+416
+01:14:33,688 --> 01:14:37,308
+Şimdi bazı dokümanlarda x'i şey görürsünüz.
+
+417
+01:14:39,527 --> 01:14:49,108
+x, i eşitti sıfırdan n'e kadar n benim özellik sayım.
+
+418
+01:14:51,407 --> 01:14:51,987
+Tamam mı?
+
+419
+01:14:51,987 --> 01:15:03,467
+x'i çarpı v'i görürsünüz. O da x0 v0 artı x1 v1 xn
+
+420
+01:15:07,764 --> 01:15:32,163
+V-N'dir. Şimdi burada benim az önce arkadaşınızın sorusundan anladığım belki genel olarak anlaşılmamış olabilir. V0 trash olduğunuzdur. Bunu bilgisayar ortamında hesaplarken çok uğraşmamak için X0'da bunu böyle ağırlık gibi eklerler. Aslında trash olduğunuzdur.
+
+421
+01:15:32,163 --> 01:15:56,563
+Yani çünkü x1, x2, x3 dediğiniz şey sizin özellikleriniz. x0'da her zaman artı bir veya eksi bir olarak verilen giriş değeridir. Yani bu bir özellik değil. Yani x1'iniz, x2'iniz, x3'iniz gerçek özellik değerlerini gösteriyor. Ama x0 threshold'a bağlı. Ya artı bir ya da eksi bir alınır.
+
+422
+01:15:56,563 --> 01:16:26,043
+Şimdi x'i 1 alırsanız bu ne olacak? Çıkışın yani x'i ve y eşittir 1 denene x'i ve y eksi v sıfır olacak. If x sıfır eşittir x'i birse işte o zaman çıkış ona göre hesaplanmış olacak. Değilse eğer x sıfır artı birse artı v sıfır olacak falan filan. Sonuçta burada eşik seviyesi şeyin bir parçası olarak kullanılıyor.
+
+423
+01:16:26,043 --> 01:16:54,103
+birinci gösterimi şekli bu. İkincisinde de şöyle bir şey var. i eşittir birden N, x, i, eksi threshold var. Yani bu şey demenin bir başka yolu. Yani onu da üçüncü olarak yazıyor. i eşittir birden N, x, i, pardon ya v'yi yazmamışım bak hiç söyleyemiyorsunuz. x, i, v büyük müdür threshold? Üçüncü şekli de bu. Bu soru.
+
+424
+01:16:54,103 --> 01:17:03,523
+büyükse işte bilinen artı bir al veya işte büyükse artı bir küçükse sıfır al veya büyükse artı bir küçükse eksi bir al gibi.
+
+425
+01:17:03,523 --> 01:17:12,083
+Yani bunu dokümanlarda üç şekilde de gösterebilirsiniz. Bu anlaşıldı mı acaba? Burada önemli olan şey şu aslında.
+
+426
+01:17:12,083 --> 01:17:29,103
+sizin gerçek girişleriniz ve bu gerçek girişlere bağlı olan ağırlık değerlerinin dat product'ı yani X, E, V, Y'lerin toplamı bir eşik seviyesinden büyükse bir aktivasyon olacak.
+
+427
+01:17:30,323 --> 01:17:37,504
+Büyükse veya eşitse veya işte büyükse bu da tamamen az önce arkadaşınız sordu.
+
+428
+01:17:37,503 --> 01:17:45,683
+yani sizin nasıl yazdığınıza bağlı çünkü bir nokta sonra zaten o oturacak yerine.
+
+429
+01:17:47,103 --> 01:17:53,003
+Bir aktivasyon yapılacak, küçükse başka aktivasyon yapılacak. Bu anlaşıldı mı acaba?
+
+430
+01:17:54,763 --> 01:17:55,563
+Anlaşıldı.
+
+431
+01:17:56,223 --> 01:18:01,503
+Tamam. Yani olay bu. Yani bunların bütün varyasyonlarını farklı dokümanlarda görebilirsiniz.
+
+432
+01:18:02,543 --> 01:18:07,103
+Ama sizin de gördüğünüz gibi matematiksel olarak hepsi aynı kapıya çıkıyor.
+
+433
+01:18:07,503 --> 01:18:22,603
+Tamam mı? Yani hepsinde aslında iki output üretiliyor. Üretilen output'a bakarak siz A sınıfına verdiğiniz örneğin A sınıfına mı B sınıfına mı ait olduğuna karar vermiş oluyorsunuz.
+
+434
+01:18:22,963 --> 01:18:32,143
+Örneğin çıkış işte bir çıkarsa diyorsunuz ki A sınıfıdır, çıkış eksi bir çıkarsa B sınıfıdır diyorsunuz. Yani bunun gibi bir şey. Anlaşıldı mı bu şimdi?
+
+435
+01:18:32,143 --> 01:18:51,603
+Şimdi bu örnekte örnek güzel olduğu için genelde tane tane örnek yapan kimse yok o yüzden bunu aldım. Bu örnekte iki tane bakın çıkış sınıfımız var şuradan görün. Sıfır bir sınıfı temsil ediyor çıkıştaki bir de başka sınıfı temsil ediyor.
+
+436
+01:18:51,603 --> 01:19:02,043
+Bu örnekte eşit seviyesini burada gördüğünüz 0,2 şeklinde ayrı bir şey olarak kullanıyor.
+
+437
+01:19:02,043 --> 01:19:06,463
+Yani V0 ağırlığı falan gibi bildiğiniz ayrı ağırlık olarak kullanıyor.
+
+438
+01:19:06,931 --> 01:19:31,291
+ve şey olarak da, nedir? Activation function olarak da step function'u kullanıyor. Yani eğer x, y, y, y'lerin toplama eşik seviyesi sıfırdan büyük veya eşikse çıkış bir olacak, değilse çıkış sıfır olacak şeklinde bir şey yapıyor.
+
+439
+01:19:31,291 --> 01:19:48,031
+Buna bağlı olarak da bakın şunu görmek istemiyorum. Bu online learning aslında her adımda sizin de gördüğünüz gibi şurada her adımda ağırlık değerleri değişiyor. Yani başlangıçta 0-0-1 ile başladı.
+
+440
+01:19:48,031 --> 01:19:53,751
+3. adımda şimdi ilk 2 adımda hata 0 olduğu için ağırlıklar değişmiyor değil mi?
+
+441
+01:19:53,811 --> 01:20:02,071
+Hata 0 ise ağırlığı değiştirilmezsiniz ama 3. adımda hata eksi 1 olduğu için ağırlık şey oluyor
+
+442
+01:20:02,071 --> 01:20:08,511
+V1 ağırlığı 0-2'ye V2 ağırlığı da eksi 0-1'e düşüyor.
+
+443
+01:20:08,511 --> 01:20:17,771
+Neden? Çünkü hatanın eksi 1 olması demek hesapladığımız gerçek çıkıştan büyük demek ki ağırlığı azaltmamız gerekiyor demek.
+
+444
+01:20:18,031 --> 01:20:29,131
+son adımda da gerçek çıkış 0 halbuki 1-1 için çıkışın 1 olması gerekir ya hata 1 olduğu için bakın ne oluyor bu sefer?
+
+445
+01:20:29,131 --> 01:20:35,472
+V1 ve V2 bir önceki adıma göre büyüyorlar çünkü ne olması gerekir?
+
+446
+01:20:36,731 --> 01:20:46,731
+Gerçek çıkış 0 istenilen çıkış 1 ise ağırlıkları arttıracaksınız ki gerçek çıkış istenilen çıkışa yaklaşsın.
+
+447
+01:20:46,731 --> 01:20:49,691
+Şimdi birinci turun sonunda böyle olmuş.
+
+448
+01:20:49,691 --> 01:20:53,071
+Şimdi aslında mantıklı ve regresyondakine aynı.
+
+449
+01:20:53,271 --> 01:20:55,571
+Tur, tur aynı örnekler için dönersiniz.
+
+450
+01:20:55,731 --> 01:20:59,151
+Şimdi burada bizim eğitim kümemizde dört tane örnek var.
+
+451
+01:20:59,511 --> 01:21:05,171
+O yüzden yeni ağırlıklarla aynı dört örnek için yeni bir tur dönüyoruz.
+
+452
+01:21:05,571 --> 01:21:09,051
+Bakın burada mesela ağırlıklar şurada görüyorsunuz.
+
+453
+01:21:09,331 --> 01:21:11,691
+Şöyle şurada görüyorsunuz.
+
+454
+01:21:11,691 --> 01:21:17,871
+ağırlıklar işte 0-3-0-0'dan başladı.
+
+455
+01:21:17,991 --> 01:21:20,671
+Hata 0 olduğu için ilk turda değişmedi.
+
+456
+01:21:20,792 --> 01:21:22,671
+İkinci turda hata 0 değişmedi.
+
+457
+01:21:23,251 --> 01:21:29,011
+Üçüncü turda çıkış 1 olunca hatada eksi 1 oldu.
+
+458
+01:21:29,011 --> 01:21:31,372
+Öyle olunca bakın yine ne yaptınız?
+
+459
+01:21:31,491 --> 01:21:32,771
+Hatanın eksi 1 olması.
+
+460
+01:21:33,751 --> 01:21:36,951
+Ağırlıkları azaltıyorsunuz ki gerçek çıkışa yaklaşın.
+
+461
+01:21:37,591 --> 01:21:39,831
+Dördüncü adımda hata 0 oldu.
+
+462
+01:21:39,931 --> 01:21:41,071
+Ağırlıkları ellemediniz.
+
+463
+01:21:41,071 --> 01:21:44,271
+Buraya kadar sormak istediğiniz bir şey var mı? Anladınız mı mantığı?
+
+464
+01:21:46,691 --> 01:21:48,611
+Elde çözmemi ister misiniz bir daha?
+
+465
+01:21:49,611 --> 01:21:54,931
+Bir kere daha elde çözebilir miyiz hocam? Bir örneği farklı bir örnek de olabilir oradan herhangi bir.
+
+466
+01:21:55,851 --> 01:21:56,271
+Peki.
+
+467
+01:21:58,851 --> 01:21:59,971
+Şöyle yapalım.
+
+468
+01:22:35,572 --> 01:22:41,072
+Şimdi şeyden ötürü elle hesaplayacağım için bunu böyle yapmak zorunda değilsiniz.
+
+469
+01:22:43,832 --> 01:22:54,092
+Ağırlığı şeyi eşit seviyesine ayrı tutsam olur mu? Elle hesaplamaya şey olacağı için. Uzun sürmesin diye. Sıkıncası yoksa ayrı tutabilir miyim eşit seviyesine?
+
+470
+01:22:54,592 --> 01:22:55,271
+Olur hocam.
+
+471
+01:22:56,211 --> 01:23:04,211
+Tamam. Mantığı anladığınızı kabul ediyorum. Teta'yı şey alalım bakın. 0.3 alalım.
+
+472
+01:23:05,572 --> 01:23:15,652
+onu sabit bırakacağım. Dediğim gibi sadece şey olmasın diye mantığını anladığınız için çok fazla şey değişirse belki hızlı yakınseyamam onunla uğraşmamak için.
+
+473
+01:23:16,452 --> 01:23:25,752
+Çünkü kafamdan hesapladım şu anda ne olması gerektiğini. Or yapacağım şimdi size. Dur, or yapacağım. Tete'yi o zaman sıfır çalışsam olmaz.
+
+474
+01:23:26,671 --> 01:23:29,691
+Dur, tete'yi sıfır bir alayım.
+
+475
+01:23:29,691 --> 01:23:35,391
+alt yapayım, alt yapayım onu yapayım.
+
+476
+01:23:35,391 --> 01:23:37,091
+Oraya yapayım.
+
+477
+01:23:43,507 --> 01:23:45,507
+doğru yaparsam da hemen çalışacak.
+
+478
+01:23:46,627 --> 01:23:47,868
+Sıfır çalayım şunu.
+
+479
+01:23:49,707 --> 01:23:51,387
+Sıfır çalayım ki hemen olmasın.
+
+480
+01:23:51,407 --> 01:23:53,808
+Hemen olmasın istiyorum da görün bir kaç adım diye.
+
+481
+01:23:54,268 --> 01:23:55,327
+Sıfır çalayım şunu.
+
+482
+01:23:55,968 --> 01:23:56,928
+Yedik çıkışım.
+
+483
+01:23:57,348 --> 01:24:01,207
+Sıfır, sıfır, sıfır, sıfır, bir, sıfır, bir, sıfır.
+
+484
+01:24:05,287 --> 01:24:09,747
+Sıfır, bir, bir, bir.
+
+485
+01:24:09,747 --> 01:24:21,747
+şey yapayım isterseniz onu da orada şimdi sizin önünüzdeki örnekte step function kullanılmış onu 0-1 artı 1 de yapabilirim hangisini tercih edersiniz?
+
+486
+01:24:22,747 --> 01:24:26,747
+Step olsun bence de hocam bu or değil de end olmadı mı?
+
+487
+01:24:27,747 --> 01:24:28,747
+Hakikaten yani.
+
+488
+01:24:35,859 --> 01:24:38,379
+Evet, step function kullanıyorum.
+
+489
+01:24:44,659 --> 01:24:46,379
+buna göre yapacağım.
+
+490
+01:24:54,355 --> 01:25:21,995
+1 ve 0 olacak. Şimdi bakın, şöyle yapıyorum. 0.2 çarpı, şöyle göstereyim bir dakika. x1 eşittir 0, x2 eşittir 0. İlk örneği gösterdim. 0 küçüktür 0.2'den. Dolayısıyla y 0 oldu. Error 0 oldu. Hiçbir şey değişmedi.
+
+491
+01:25:21,995 --> 01:25:45,536
+Şimdi x1 eşittir 0, x2 eşittir 1 için yapıyorum. 0 çarpı 0.2 artı 1 çarpı 0.2 0.2 küçüktür 0.3'den y eşittir 0 oldu. Error ne oldu şu anda? 1 oldu değil mi?
+
+492
+01:25:45,536 --> 01:26:04,716
+Şimdi learning rate'i de mesela 0.3 alayım. Delta V1 işte T eşittir bir anında. Delta V1 neye eşit oldu?
+
+493
+01:26:04,716 --> 01:26:21,175
+V1'imiz 0.2'ydi. 0.2 artı 0.3 learning rate'imiz şartlı. Error'ümüz 1, X1'imiz 0, delta V1 0.2'ye eşit oldu.
+
+494
+01:26:21,175 --> 01:26:42,036
+Delta V2 T eşittir bir anında. V2 mi 0.2 idi. Artı 0.3 çarkı error 1. Ondan sonra X2'de 1 0.5 oldu mesela. Delta V2 0.5 oldu.
+
+495
+01:26:42,036 --> 01:27:10,255
+delta V2 değil pardon V2 şunu şöyle yazayım V1T artı V2T eşittir 1 bu şekilde oldu. Şimdi geldik üçüncü örneği göstermeye x1 eşittir 1 bak hemen yakın sıcak çünkü öyle seçtim x2 eşittir 0 ne olacak 1 çarpı 0.2 artı 0 çarpı 0.5
+
+496
+01:27:10,255 --> 01:27:34,615
+çiftir 0.3, y eşittir 0, error 1 oldu. O zaman v1, t eşittir 2 anı bu. Neye eşit oldu? 0.2 artı 0.3 learning rate, bir hata çarpı 1, v1, 0.5'e eşit oldu.
+
+497
+01:27:34,615 --> 01:27:43,216
+t'ye eşittir 2 anında v2, x2 0 olduğu için değişmeyecek, 0.5 olarak kalacak.
+
+498
+01:27:43,216 --> 01:27:56,216
+Şimdi şeye bakıyoruz, x'e 1 eşittir 1, x2 eşittir 1, ikisi için baktığımızda, x1 1, x2 eşittir 1 için baktığımızda,
+
+499
+01:27:56,216 --> 01:28:23,576
+1 çarpı 0.5 artı 1 çarpı 0.5 o da eşittir 1 ediyor. Büyüktür 0.3'den. Y 1 oldu. Error 0 oldu. Error 0 olunca V1 T eşittir 3 aynı kaldı 0.5.
+
+500
+01:28:23,576 --> 01:28:33,036
+V2T eşittir 3 aynı kaldı 0.5
+
+501
+01:28:39,188 --> 01:28:42,247
+Şimdi bir sonraki tura geçeceğiz.
+
+502
+01:28:42,727 --> 01:28:47,128
+Bir sonraki tura geçtiğimizde şimdi sizin gördüğünüz gibi şöyle bakın.
+
+503
+01:28:47,128 --> 01:28:48,367
+Şöyle bakın.
+
+504
+01:28:48,627 --> 01:28:52,847
+X1, V1 eşittir 0.5 oldu şu anda bu turun sonunda.
+
+505
+01:28:53,467 --> 01:28:56,327
+X2, V2 eşittir 0.5 oldu.
+
+506
+01:28:57,608 --> 01:29:03,487
+Ve şeyde, theta'da 0.3'tü.
+
+507
+01:29:03,807 --> 01:29:05,528
+Şimdi ne olacak bir sonraki turda?
+
+508
+01:29:05,528 --> 01:29:08,128
+x1 0
+
+509
+01:29:08,128 --> 01:29:10,507
+x2 0 iken
+
+510
+01:29:10,507 --> 01:29:12,388
+0 küçüktür
+
+511
+01:29:12,388 --> 01:29:13,807
+0 3 olduğu
+
+512
+01:29:13,807 --> 01:29:16,728
+0 3 olduğu için
+
+513
+01:29:16,728 --> 01:29:17,927
+çıkış 0 olacak.
+
+514
+01:29:18,347 --> 01:29:19,188
+Şuraya yazayım.
+
+515
+01:29:19,728 --> 01:29:20,568
+Şöyle yazayım.
+
+516
+01:29:21,307 --> 01:29:23,007
+v1 eşittir 0 5
+
+517
+01:29:23,007 --> 01:29:24,347
+şurası x1
+
+518
+01:29:24,347 --> 01:29:27,088
+şurası v2 eşittir 0 5
+
+519
+01:29:27,088 --> 01:29:28,167
+şurası x2
+
+520
+01:29:28,167 --> 01:29:29,147
+ve
+
+521
+01:29:29,147 --> 01:29:32,607
+theta da
+
+522
+01:29:32,607 --> 01:29:34,387
+0 3. Şimdi bakın
+
+523
+01:29:34,387 --> 01:29:37,307
+x1 eşittir 0 ikinci turu gösteriyorum.
+
+524
+01:29:37,427 --> 01:29:40,147
+x2 eşittir 0 için çıkış ne olur?
+
+525
+01:29:40,267 --> 01:29:45,207
+0 küçüktür 0.3 y eşittir 0 olacak burada.
+
+526
+01:29:46,527 --> 01:29:46,827
+Değil mi?
+
+527
+01:29:48,467 --> 01:29:55,987
+Şimdi x1 eşittir 0 x2 eşittir 1 için 0.5 büyüktür 0.3 y ne olacak?
+
+528
+01:29:56,287 --> 01:29:56,827
+1 olacak.
+
+529
+01:29:57,767 --> 01:30:01,767
+x1 eşittir 1 x2 eşittir 0 için ne olacak?
+
+530
+01:30:01,768 --> 01:30:04,208
+0.5 büyüktür 0.3
+
+531
+01:30:04,208 --> 01:30:05,268
+y yine 1 olacak.
+
+532
+01:30:06,068 --> 01:30:08,068
+x1 eşittir 1, x2 eşittir
+
+533
+01:30:08,068 --> 01:30:09,888
+1 için 0.5
+
+534
+01:30:09,888 --> 01:30:11,868
+artı 0.5 büyüktür
+
+535
+01:30:11,868 --> 01:30:14,007
+0.3, y eşittir 1 olacak.
+
+536
+01:30:14,128 --> 01:30:16,048
+Şimdi bu ne oldu? Bu turun
+
+537
+01:30:16,048 --> 01:30:17,908
+sonunda hiç hata yok. Bu turda
+
+538
+01:30:17,908 --> 01:30:19,887
+toplam hataya baktığımızda
+
+539
+01:30:19,887 --> 01:30:21,708
+bu turun sonunda
+
+540
+01:30:21,708 --> 01:30:23,768
+hiç hata yok. O zaman
+
+541
+01:30:23,768 --> 01:30:25,647
+devam etmenize gerek kalmayacak.
+
+542
+01:30:25,787 --> 01:30:27,787
+Öğrenme tamamlandı. Gerçekten şuraya
+
+543
+01:30:27,787 --> 01:30:29,868
+baktığımızda bunun or
+
+544
+01:30:29,868 --> 01:30:31,887
+öğrenmiş bir network olduğunu
+
+545
+01:30:31,887 --> 01:30:34,128
+görüyorsunuz. Bu anlaşıldı mı?
+
+546
+01:30:35,387 --> 01:30:36,128
+Anlaşıldı.
+
+547
+01:30:37,287 --> 01:30:37,988
+Herkes
+
+548
+01:30:37,988 --> 01:30:39,048
+anladı mı? Devam edebilir mi?
+
+549
+01:30:39,048 --> 01:30:42,088
+Hocam anlaşıldı. Efendim? Evet hocam.
+
+550
+01:30:42,647 --> 01:30:43,908
+Güzel, harika.
+
+551
+01:30:45,007 --> 01:30:45,667
+O zaman
+
+552
+01:30:45,667 --> 01:30:47,527
+şimdi bu örnek için bakalım yine.
+
+553
+01:30:47,967 --> 01:30:48,647
+Bakın bunda
+
+554
+01:30:48,647 --> 01:30:51,467
+dört tur döndü.
+
+555
+01:30:51,688 --> 01:30:54,008
+Beşinci turda bu da öğrendi.
+
+556
+01:30:54,087 --> 01:30:55,807
+Hata tamamen sıfır oldu.
+
+557
+01:30:56,027 --> 01:30:57,727
+Yani dört turda hala
+
+558
+01:30:57,727 --> 01:30:59,667
+dördüncü turda hata vardı. Beşinci
+
+559
+01:30:59,667 --> 01:31:01,688
+şurada artık hata sıfır oldu.
+
+560
+01:31:02,107 --> 01:31:03,527
+Bakın dikkat edecek olursanız
+
+561
+01:31:03,527 --> 01:31:05,807
+Initial Wates der 0-1-0-1
+
+562
+01:31:05,807 --> 01:31:07,947
+Giriş 0-0 için
+
+563
+01:31:07,947 --> 01:31:09,607
+çıkış 0
+
+564
+01:31:09,607 --> 01:31:11,287
+hata 0
+
+565
+01:31:11,287 --> 01:31:13,167
+Giriş 0-1 için
+
+566
+01:31:13,167 --> 01:31:16,188
+çıkış 0
+
+567
+01:31:16,188 --> 01:31:17,827
+bu şey yapıyor
+
+568
+01:31:17,827 --> 01:31:19,307
+farkındaysanız yani
+
+569
+01:31:19,307 --> 01:31:23,947
+threshold 0-2
+
+570
+01:31:23,947 --> 01:31:25,207
+pardon özür dilerim.
+
+571
+01:31:25,548 --> 01:31:27,647
+Learning Wates'ın. Şöyle
+
+572
+01:31:27,647 --> 01:31:28,147
+bakın
+
+573
+01:31:28,147 --> 01:31:30,567
+x2 1 iken
+
+574
+01:31:30,567 --> 01:31:33,287
+ağırlığı 0 1 olduğu için
+
+575
+01:31:33,287 --> 01:31:35,267
+0 1 küçüktür 0 2'den
+
+576
+01:31:35,267 --> 01:31:36,267
+çıkış 0 oluyor.
+
+577
+01:31:36,787 --> 01:31:37,847
+x1 1 iken
+
+578
+01:31:37,847 --> 01:31:41,107
+ay içim şişti. x1 1 iken
+
+579
+01:31:41,107 --> 01:31:42,867
+threshold 0 2 olduğu için
+
+580
+01:31:42,867 --> 01:31:45,187
+0 1 küçüktür 0 2 olduğundan
+
+581
+01:31:45,187 --> 01:31:46,207
+çıkış 0 oluyor.
+
+582
+01:31:46,787 --> 01:31:48,587
+Hem x1 hem x2 1 iken
+
+583
+01:31:48,587 --> 01:31:50,627
+0 1 artı 0 2
+
+584
+01:31:50,627 --> 01:31:53,067
+o 0 2
+
+585
+01:31:53,067 --> 01:31:56,567
+büyük eşittir 0 2
+
+586
+01:31:56,567 --> 01:31:58,067
+şartını sağladığında
+
+587
+01:31:58,067 --> 01:32:00,287
+çıkış bir oluyor. Yani toplam
+
+588
+01:32:00,287 --> 01:32:01,367
+0-2
+
+589
+01:32:01,367 --> 01:32:04,207
+eşit olduğu için, eşik
+
+590
+01:32:04,207 --> 01:32:05,687
+seviyesine eşit olduğu için
+
+591
+01:32:05,687 --> 01:32:08,487
+çıkış bir oluyor. Hata 0 oluyor.
+
+592
+01:32:09,087 --> 01:32:09,447
+Dört
+
+593
+01:32:09,447 --> 01:32:12,147
+işlem boyunca da yani
+
+594
+01:32:12,147 --> 01:32:14,087
+bu ipokta hiç
+
+595
+01:32:14,087 --> 01:32:16,347
+şey olmadığı için, hata
+
+596
+01:32:16,347 --> 01:32:18,427
+olmadığı için öğrenmeyi
+
+597
+01:32:18,427 --> 01:32:20,207
+burada kesebiliriz. Böylece
+
+598
+01:32:20,207 --> 01:32:22,087
+bu da end öğrendi. Bakın
+
+599
+01:32:22,087 --> 01:32:24,087
+end öğrendiğinde ağırlıklar
+
+600
+01:32:24,087 --> 01:32:26,127
+0-1-0-1 aklınızda olsun.
+
+601
+01:32:26,128 --> 01:32:38,128
+Şöyle göstereyim Mendi'de. Neydi? Ağırlıklar 0,1. 0,1. Theta'da...
+
+602
+01:32:39,828 --> 01:32:42,707
+0.2. O zaman ne oldu?
+
+603
+01:32:43,267 --> 01:32:48,447
+x1 0 x2 0 iken 0 küçüktür 0 2 oldu.
+
+604
+01:32:49,168 --> 01:32:54,867
+x1 0 x2 1 iken 0.1 küçüktür 0 2 oldu.
+
+605
+01:32:54,867 --> 01:33:00,607
+x1 1 x2 0 iken 0.1 küçüktür 0 2 oldu.
+
+606
+01:33:01,008 --> 01:33:08,767
+x1 1 x2 1 iken 0.2 eşit olduğundan şey oldu nedir?
+
+607
+01:33:09,828 --> 01:33:13,787
+bir oldu. Şu sıfır, şu sıfır,
+
+608
+01:33:13,927 --> 01:33:16,107
+şu sıfır, şu bir ve böylece
+
+609
+01:33:16,107 --> 01:33:17,528
+bir turun sonunda
+
+610
+01:33:17,528 --> 01:33:19,008
+hiç hata oluşmadığı için
+
+611
+01:33:19,008 --> 01:33:21,548
+öğrenme tamamlanmış oldu.
+
+612
+01:33:21,927 --> 01:33:23,868
+Buraya kadar sormak istediğiniz bir şey var mı?
+
+613
+01:33:25,487 --> 01:33:27,328
+Hocam ben bir şey sormak istiyorum.
+
+614
+01:33:27,328 --> 01:33:28,927
+Bu ipokla
+
+615
+01:33:28,927 --> 01:33:31,328
+iterasyon arasındaki fark nedir?
+
+616
+01:33:31,548 --> 01:33:33,307
+Mesela burada belki diğer
+
+617
+01:33:33,307 --> 01:33:34,887
+tablodan anlayabiliriz de
+
+618
+01:33:34,887 --> 01:33:36,447
+oraya bir bakabilir miyiz?
+
+619
+01:33:36,887 --> 01:33:37,368
+Bir dakika.
+
+620
+01:33:37,367 --> 01:33:39,367
+Evet.
+
+621
+01:33:41,367 --> 01:33:41,567
+Yani...
+
+622
+01:33:41,567 --> 01:33:43,367
+Pardon.
+
+623
+01:33:45,347 --> 01:33:46,367
+Ben şöyle diyecektim.
+
+624
+01:33:46,607 --> 01:33:48,927
+Mesela 5 kere 4 20 tane
+
+625
+01:33:48,927 --> 01:33:51,067
+iterasyon oldu. 5 tane
+
+626
+01:33:51,067 --> 01:33:52,688
+ipok oldu gibi mi? Evet.
+
+627
+01:33:53,087 --> 01:33:54,967
+Şöyle ipok denilen şey şu.
+
+628
+01:33:55,507 --> 01:33:57,027
+Senin diyelim ki 30 tane
+
+629
+01:33:57,027 --> 01:33:58,387
+eğitim örneğin var.
+
+630
+01:33:59,207 --> 01:34:01,447
+30 eğitim örneğini gösteriyorsun.
+
+631
+01:34:01,787 --> 01:34:03,067
+Bir ipok tamamlamış
+
+632
+01:34:03,067 --> 01:34:03,548
+oluyorsun.
+
+633
+01:34:04,207 --> 01:34:06,688
+30 eğitim örneğini gösterdim.
+
+634
+01:34:07,368 --> 01:34:10,508
+Her örnek için ağırlıkları değiştirdin.
+
+635
+01:34:10,548 --> 01:34:13,207
+Her örneği gösterdiğinde ağırlıkları değiştirdin.
+
+636
+01:34:13,707 --> 01:34:16,488
+Ve toplam bir hataya baktım.
+
+637
+01:34:16,628 --> 01:34:22,128
+Çünkü yani şundan ötürü diyelim ki bir örneği gösterdiğinde hiç hata oluşmadı.
+
+638
+01:34:22,728 --> 01:34:26,408
+Bu demek değildir ki sen artık öğrenmeyi tamamladın değil mi?
+
+639
+01:34:26,407 --> 01:34:37,907
+Yani bütün örnekleri gösterdiğinde artık hata olmuyorsa veya hata işte senin birinde girdiğim minimum değerin altında oluyorsa o zaman öğrenme tamamlanmıştır.
+
+640
+01:34:38,287 --> 01:34:47,687
+Burada yapmaya çalıştığı şey, uyandığı, kok dediği şey, bütün örnekleri, eğitim setindeki bütün örnekleri gösterdiğinde bir turu tamamlamış oluyorsun.
+
+641
+01:34:48,927 --> 01:34:50,167
+Tamam, iterasyon?
+
+642
+01:34:50,167 --> 01:34:52,107
+yani
+
+643
+01:34:52,107 --> 01:34:54,628
+iterasyon aslında bir örneği göstermek
+
+644
+01:34:54,628 --> 01:34:56,727
+iterasyon yani bir örneği gösterdim
+
+645
+01:34:56,727 --> 01:34:58,128
+bir iterasyon yaptım yani
+
+646
+01:34:58,128 --> 01:35:00,107
+işte t eşittir 3 anı
+
+647
+01:35:00,107 --> 01:35:02,507
+t eşittir 4 anı işte bir örneği
+
+648
+01:35:02,507 --> 01:35:04,107
+gösterdim t 3'tü
+
+649
+01:35:04,107 --> 01:35:05,548
+yani zaman
+
+650
+01:35:05,548 --> 01:35:07,967
+3. örneği gösterdi falan
+
+651
+01:35:07,967 --> 01:35:09,027
+iterasyon o
+
+652
+01:35:09,027 --> 01:35:11,507
+tamam bir sorum daha var
+
+653
+01:35:11,507 --> 01:35:13,587
+şöyle sınıflandırma
+
+654
+01:35:13,587 --> 01:35:15,667
+veya regresyon olması
+
+655
+01:35:15,667 --> 01:35:18,307
+problemin az önceki adımlarda
+
+656
+01:35:18,307 --> 01:35:19,747
+nerede bizi
+
+657
+01:35:19,747 --> 01:35:21,908
+yani nerede değişiklik yapıyoruz?
+
+658
+01:35:22,227 --> 01:35:23,667
+Yoksa adımlar hep aynı mı?
+
+659
+01:35:24,247 --> 01:35:25,848
+Step function seçimi
+
+660
+01:35:25,848 --> 01:35:28,107
+orada mı bir değişiklik yapmamız
+
+661
+01:35:28,107 --> 01:35:29,208
+gerekiyor? Yani program
+
+662
+01:35:29,208 --> 01:35:31,628
+regresyonsa veya
+
+663
+01:35:31,628 --> 01:35:34,087
+sınıflandırmaysa nasıl bir fark var
+
+664
+01:35:34,087 --> 01:35:36,107
+bu işlem adımlarında? Şimdi şöyle
+
+665
+01:35:36,107 --> 01:35:37,867
+regresyonda
+
+666
+01:35:37,867 --> 01:35:39,708
+farkındaysan bir
+
+667
+01:35:39,708 --> 01:35:41,887
+gerçek değer üretici kartıyor
+
+668
+01:35:41,887 --> 01:35:42,467
+aslında.
+
+669
+01:35:44,048 --> 01:35:45,887
+Yani regresyonda olan şey o.
+
+670
+01:35:45,967 --> 01:35:48,107
+İkisi de öğrenmek için evet ağırlıkları
+
+671
+01:35:48,107 --> 01:35:49,328
+değiştiriyor falan da.
+
+672
+01:35:49,747 --> 01:35:51,807
+Regresyonda gerçek bir çıkış üretiyor.
+
+673
+01:35:52,348 --> 01:35:53,887
+Onu sen output olarak
+
+674
+01:35:53,887 --> 01:35:55,727
+kullanıyorsun. Buradaysa
+
+675
+01:35:55,727 --> 01:35:57,567
+aynen step function veya işte
+
+676
+01:35:57,567 --> 01:35:59,348
+sign function dediğin şey
+
+677
+01:35:59,348 --> 01:36:01,527
+bir artı bir
+
+678
+01:36:01,527 --> 01:36:03,828
+eksi bir veya işte artı bir sıfır dediğimde
+
+679
+01:36:03,828 --> 01:36:05,768
+artı bir mesela senin bir sınıfını
+
+680
+01:36:05,768 --> 01:36:08,007
+gösteriyor. Hani şurada dedik ya
+
+681
+01:36:08,007 --> 01:36:10,048
+bir saniye
+
+682
+01:36:10,048 --> 01:36:11,727
+yani öğrenme için
+
+683
+01:36:11,727 --> 01:36:13,408
+altını değiştirmek için ikisi de
+
+684
+01:36:13,408 --> 01:36:16,167
+gradient bir sen kullanıyordun ve oradan benziyorlarmış
+
+685
+01:36:16,167 --> 01:36:17,428
+gibi göz gözüküyor ama
+
+686
+01:36:17,428 --> 01:36:19,048
+aslında olay şu
+
+687
+01:36:19,048 --> 01:36:28,048
+Yani burada şöyle göstermek istiyorum. Bak dikkat edersen burada bizim iki tanesi...
+
+688
+01:36:28,048 --> 01:36:30,688
+Bir şey göremiyorum ama görüyorum artık.
+
+689
+01:36:30,688 --> 01:36:36,488
+Yine mi gitti pardon bir saniye. Şey oynayınca şeyi kaybediyor bazen.
+
+690
+01:36:39,923 --> 01:37:08,043
+Uyarım beni kaybederse olur mu? Yani ben bir şey kapatmıyorum. Kendisi kaybediyor bazen. Tamam. Şu görüyor musun? Evet hocam. Tamam. Şimdi bak burada şeyin yaptığı, yani gradient descent şey için kullanılıyor. Şimdi regresyonda da öğrenme ağırlıklarla oluyor aslında. Yani ağırlıkları değiştirecek. Çünkü neyi değiştireceksin? Şimdi girişleri değiştiremezsin, çıkışları değiştiremezsin. Ağırlıklarla oluyor.
+
+691
+01:37:08,043 --> 01:37:25,123
+Burada bir eşik seviyesi mantığı var. Hesatlanan çıkış, yani şu hesapladığın çıkış bir eşik seviyesinden büyükse bir sınıfa aittir diyorsun. İşte değilse bir diğer sınıfa aittir diyorsun. O sınıfı ya artı bir, eksi birle gösterirsin ya artı bir, sıfırla gösterirsin.
+
+692
+01:37:25,124 --> 01:37:34,403
+şu işte senin şey çizgin oluyor, hyperclaim senin decision boundary'in oluyor, karar sınırı çizgini oluyor.
+
+693
+01:37:34,403 --> 01:37:40,684
+Karar sınırı çizgisinin bir tarafı bir sınıfı gösteriyor, bir tarafı diğer sınıfı gösteriyor.
+
+694
+01:37:40,824 --> 01:37:48,284
+Öğrenme denilen şey, burada yapaylı olan anda öğrenme denilen şey karar sınırını nereye koyacağına karar vermen.
+
+695
+01:37:48,743 --> 01:37:51,663
+Yani o da şöyle de olabiliyor mesela.
+
+696
+01:37:55,539 --> 01:37:57,059
+şöyle göstereyim.
+
+697
+01:37:59,619 --> 01:38:07,779
+Yani diyelim ki senin şurada bir ağ sınıfın var. Zaten destek vektör makinelerini anlatırken, aa evet haklısınız falan diyeceksiniz.
+
+698
+01:38:07,939 --> 01:38:15,259
+Oradaki iyi öğrenme ve daha iyi öğrenme arasındaki fark aslında karar sınırının yeri tarafından geliniyor.
+
+699
+01:38:15,619 --> 01:38:21,800
+Mesela şurada bir karar sınırı, doğru bir karar sınırı, şurada bir doğru karar sınırı, bu da bir doğru karar sınırı.
+
+700
+01:38:21,800 --> 01:38:36,859
+Önemli olan burada senin karar sınırıyla şu A sınıfıyla B sınıfını birbirinden ayıracak bir hyperplay'i elde etmen önemli ama aslında
+
+701
+01:38:36,859 --> 01:38:46,319
+Yani doğru yere koyduğunda hyperplay'ini hesapladığın çıkış, istenilen çıkışa yaklaşmış oluyor hatta minimize edilmiş oluyor
+
+702
+01:38:46,319 --> 01:39:05,919
+oldu mu acaba? Yani birinde eksi bir artı bir üretmek demek A sınıfı B sınıfı demek. Öbürü gerçek sayı üretiyor. Yani ne bileyim 0.4 üretiyor, 0.7 üretiyor. Biz normalize ettiğimiz için 0.1 arasında kalabilir. Onu sen tekrar normal değere dönüştürürsün gibi. Anlaşıldı mı?
+
+703
+01:39:06,400 --> 01:39:07,699
+Evet hocam. Sağ olun.
+
+704
+01:39:08,120 --> 01:39:13,939
+Tamam. Peki. Ara vereyim mi 10 dakika? Çünkü şeye geçeceğim, maltı değere geçeceğim.
+
+705
+01:39:13,940 --> 01:39:17,539
+Hocam bu regresyonla ilgili küçük bir örnek çözebilir misiniz?
+
+706
+01:39:19,720 --> 01:39:24,080
+Regresyonla ilgili ama şey anlatıyorum. Regresyonla ilgili örnek çözmeyi yok.
+
+707
+01:39:24,080 --> 01:39:24,720
+Yok bir şey yok.
+
+708
+01:39:25,080 --> 01:39:35,080
+Burada çok kolaydır. Çünkü artı bir, eksibi diyorsun çıkıyor. Sen en iyisi regresyonla ilgili örneğe bak. Yani bu mantığı anlatırsanız elle çözersiniz.
+
+709
+01:39:35,080 --> 01:39:46,900
+şu anda elimde hazır. Hazır değil, bu da hazır değil. Kafadan çözdüm de regresyonda şey üreteceğim ya, gerçek çıkış üreteceğim falan. Öyle bir hazır şey yok. Bakayım, bulursam çözerim.
+
+710
+01:39:48,080 --> 01:39:58,639
+Tamam. Öyle bir örnek bulursam çözerim. Mantığı anlamanız önemli. Mantığı anladırsanız şey yok, sıkıntı yok. Ara vereyim mi şey için, mantığı verir için?
+
+711
+01:39:58,639 --> 01:40:04,939
+Hocam bir sorun daha olacak o zaman. Şimdi yaptığımız zaman bu aktifasyon fonksiyonu mu değişiyor yani?
+
+712
+01:40:06,019 --> 01:40:06,859
+Ne yaptığın zaman?
+
+713
+01:40:07,079 --> 01:40:09,140
+Regresyon işlemi yapmak istersek.
+
+714
+01:40:09,840 --> 01:40:12,159
+Aktifasyon fonksiyonu yok regresyonu yok.
+
+715
+01:40:12,179 --> 01:40:14,159
+Yok değil, direkt aktivasyon fonksiyonu çıkarıyoruz.
+
+716
+01:40:14,739 --> 01:40:17,799
+Evet, lojistalık için kullanıyorsun aktivasyon fonksiyonu.
+
+717
+01:40:17,879 --> 01:40:18,159
+Tamam.
+
+718
+01:40:18,159 --> 01:40:19,579
+Sımbı olsun diye kullanıyoruz.
+
+719
+01:40:20,400 --> 01:40:23,019
+Peki, var mı aklınızda başka bir şey?
+
+720
+01:40:26,836 --> 01:40:46,516
+ara vereyim mi? Olur hocam. Olur hocam. Tamam ben bu sefer şey yapalım. 10 mu vereyim? 10 vereyim yani. Aslında mantıklı, neref, perceptron da mantık aynı. O yüzden çok uzun sürmeyecek. O yüzden şey yapayım. 12'ye, 5 kalıya kadar ara veriyorum o zaman. Tamam.
+
+721
+01:55:47,315 --> 01:55:49,135
+Evet arkadaşlar buradasınız değil mi?
+
+722
+01:55:51,215 --> 01:55:51,835
+Evet hocam.
+
+723
+01:55:52,835 --> 01:56:00,435
+Şimdi şeyden bahsedeceğim size. Neden multilayır perceptron gerekmiş, ne olmuş ondan bahsedeceğim.
+
+724
+01:56:01,236 --> 01:56:03,035
+Bir şey sorabilir miyim ben başlamadan önce?
+
+725
+01:56:03,695 --> 01:56:04,736
+Sorabilirsin evet.
+
+726
+01:56:05,675 --> 01:56:17,095
+Şimdi az önceki perceptron algoritmasını ent için Excel'de ben oluşturdum. Dediğiniz gibi beşinci iterasyonda doğru sonuçları verdi.
+
+727
+01:56:17,315 --> 01:56:23,716
+ancak diner olarak ayırması gerekmiyor muydu?
+
+728
+01:56:25,216 --> 01:56:26,795
+Liner ayırdı zaten.
+
+729
+01:56:29,036 --> 01:56:36,896
+Yani sonuçta çizgi fonksiyonumuz 0, 1, x artı 0, 1, y eşittir 0 şeklinde bir şey oluşmadı mı?
+
+730
+01:56:39,635 --> 01:56:44,135
+0, 1, x artı 0, 1, y eşittir 0.
+
+731
+01:56:44,135 --> 01:57:07,915
+hani dolarlıklar 0-1 olarak sonuçlandık galiba değil mi? Evet peki. Bu çizgiyi çizdiğimiz zaman şey. Bir de şey var ama eşik seviyesi de var değil mi? X1V1 artı X2V2 eksi teta. Teta var tamam. Teta'yı ben dikkate almamışım ondan kaynaklanacağım. Tamam teşekkür ederim. Rica ederim.
+
+732
+01:57:07,915 --> 01:57:33,095
+Şimdi şeye gelelim. Bu perceptron, single layer perceptron lineer ayırıyor. Az önce arkadaşınızın da söylediği gibi aslında bizim burada yaptığımız şey şu. Şurada bizim bir hyperplane'imiz var. Şurası diyelim ki A snoutumuz olsun. Şurada da B snoutumuz olsun. İşte or, ent gibi şeylerdi.
+
+733
+01:57:33,095 --> 01:57:58,836
+işte bu benim hyperplane'im yani karar sınırı, ikisini birbirinden ayıran karar sınırı ve hyperplane'imin aslında şeyi burada x1 ve x2 benim şeylerimken, iki tane özelliyimken kolay olsun diye genelde hep iki özellikle gösteriyoruz ki iki boyutta uzaydan olduğunu rahat takip edelim diye
+
+734
+01:57:58,836 --> 01:58:05,996
+x1 çarpı v1 artı x2 çarpı v2 eksi teta eşittir sıfır hyperplane'in olduğu yer.
+
+735
+01:58:05,996 --> 01:58:17,296
+İşte hyperplane'in x1 v1 artı x2 v2 eksi teta'nın sıfırdan büyük olduğu yer bir sınıfı küçük olduğu yerde öbür sınıfı gösteriyor aslında.
+
+736
+01:58:18,496 --> 01:58:23,836
+O zaman aslında şöyle bir şey lineer olması da şu aslında şöyle göstereyim.
+
+737
+01:58:23,835 --> 01:58:38,175
+x1 ve x2 özellikleriniz için işte şurası sıfır noktası, burası bir noktası, burası da bir noktasıysa örneğin entde diyelim ki
+
+738
+01:58:38,175 --> 01:58:48,075
+ha tabi şurası da bir noktası olacak x1'in ve x2'nin bir olduğu nokta entde diyelim ki şöyle bir hyperplane'iniz olabiliyor
+
+739
+01:58:48,075 --> 01:58:56,055
+şu tarafı A sınıfı yani output'un 1 olduğu sınıf şu tarafı da B sınıfı output'un 0 olduğu sınıf.
+
+740
+01:58:56,595 --> 01:59:08,655
+Diyelim ki or içinde şöyle bir şey oluyor. X1 özelliğimiz, X2 özelliğimiz işte 0, 0. Şurası 1, 1 ve şurası da 1 olmak üzere.
+
+741
+01:59:08,655 --> 01:59:20,616
+orada da mesela şöyle bir şey oluyor. A sınıfınız işte çıkışın 1 olduğu sınıf, B sınıfınız da çıkışın 0 olduğu sınıf.
+
+742
+01:59:20,616 --> 01:59:29,195
+Şimdi gelelim egzor problemine. Egzor neydi hatırlarsanız şöyle şey hatırlatayım size.
+
+743
+01:59:30,068 --> 01:59:46,367
+x1, x2 ve y6'ı için bakarsanız 0, 0 için 0, 0, 1 için 1, 1, 0 için 1, 1, 1 için 0. Yani girişler aynı iken çıkış 0, girişler farklı iken çıkışın 1 olduğu durum egzor dediğimiz şey.
+
+744
+01:59:46,367 --> 01:59:55,287
+Şimdi o mantıkla düşünecek olursak, az önceki ent ve or için düşünecek olursak bizim 2 tane özelliğimiz var. x1, x2, 2 tane özelliğimiz var.
+
+745
+01:59:55,287 --> 02:00:03,288
+şuralarda birler. Şimdi bu sefer durum değişti. 0-0 için 0 istiyorsunuz. 1-1 için 1 istiyorsunuz.
+
+746
+02:00:06,588 --> 02:00:19,327
+Ama 0-1 için, ben ne dedim az önce? 0-0 için ve 1-1 için 0 istiyorsunuz. 0-1 ve 1-0 için de 1 istiyorsunuz.
+
+747
+02:00:19,327 --> 02:00:37,827
+Şimdi böyle bir yani A sınıfınız çıkışların sıfır olduğu durumu gösteriyor. Şu A sınıfınız, şu A sınıfınız, ay pardon, şu A sınıfınız, şunlar da
+
+748
+02:00:42,484 --> 02:01:00,563
+B sınıfımız mesela. Şimdi bakarsanız bunları lineal ayırabilmenize imkan yok. Çünkü şöyle bir şey var. Yani iki sınıf karar sınıfı çizmek istesek böyle bir durum var aslında. O zaman ne yapacağız? Şimdi bunu matematiksel olarak da gösterirsek şöyle bir şey var.
+
+749
+02:01:00,563 --> 02:01:15,004
+x1 0 x2 0 iken x1 çarpı v1 artı x2 çarpı v2 küçüktür threshold yani 0 threshold 0'dan büyük demek bu aslında.
+
+750
+02:01:17,143 --> 02:01:22,744
+Şimdi şuna bakarsak x2 çarpı v2
+
+751
+02:01:27,412 --> 02:01:56,811
+büyüktür, threshold diyorsunuz. X1, V1 artı X'i V2 küçüktür, threshold. Burada X2 çarpı V2 büyüktür, threshold diyorsunuz. Çünkü burası sıfır. Burada X1 çarpı V1 artı sıfır büyüktür, threshold diyorsunuz. Burada tekrar diyorsunuz ki, yani şunu şöyle diyeyim, bu yanıltmasın sizi. Şunu kaldırıyorum. Şu satırı kaldırıyorum. Çünkü sıfır oldukları için oradan bir şey çıkartamazsınız.
+
+752
+02:01:56,811 --> 02:02:19,952
+kafanız karışmasın şuraya odaklanın. X1 artı V1 artı X2 çarpı V2 küçüktür threshold diyorum. Şimdi burada görüyorsunuz bir taraftan tek başına X2 V2'nin tek başına X2 çarpı V2'nin threshold'dan büyük olabileceğini söylüyorsunuz.
+
+753
+02:02:19,951 --> 02:02:31,951
+tek başına x1 çarpı v1'in threshold'dan büyük olabileceğini söylüyorsunuz ama bunların ikisinin toplamının threshold'dan küçük olması gerektiğini söylüyorsunuz.
+
+754
+02:02:32,511 --> 02:02:40,931
+Anlatabildim mi problemi? Yani tek başına birer birer bakıldığında threshold'dan büyük olacaklar, toplamını aldığınızda threshold'dan küçük olacaklar.
+
+755
+02:02:40,931 --> 02:02:50,351
+yani egzorun durumu bunu gerektiriyor. O zaman bunu perceptronla tek katmanlı yani şunu nasıl almanız mümkün değil.
+
+756
+02:02:50,351 --> 02:02:55,531
+Tek katmanlı single layer perceptronla böyle bir şeyi
+
+757
+02:02:55,531 --> 02:03:02,531
+ve
+
+758
+02:03:02,996 --> 02:03:29,575
+sağlamanız mümkün değil. Bu nedenle lineer ayrılamayan sınıflandırma problemleri için multi-layered perceptron kullanılabilir. Şimdi bir de şunu söyleyeyim yani tek yapay nöronal perceptron değil bir sürü başka şeyler de var birkaçını göstereceğim ben ders boyunca size.
+
+759
+02:03:29,575 --> 02:03:40,716
+bu şey en temel, derin öğrenmede de en çok kullanılan yapay nöron ağa mimarisi.
+
+760
+02:03:41,576 --> 02:03:43,955
+Monteneyat perceptronundaki mantık şu.
+
+761
+02:03:44,196 --> 02:03:46,095
+Şimdi egzor için göstereyim size.
+
+762
+02:03:48,595 --> 02:03:51,496
+Bu benim X1 girişim.
+
+763
+02:03:52,775 --> 02:03:55,595
+Bu da benim X2 girişim.
+
+764
+02:04:05,011 --> 02:04:20,011
+Şimdi o zaman şuraya bir hidden layer ekliyorum. Şimdi bu benim input değerim. Araya bir hidden layer ekledim. Bu da benim output değerim. Oldu mu?
+
+765
+02:04:23,011 --> 02:04:32,171
+Hidden layer sayısı mesela yine derin öğrenmenin, derinliğinin sebeplerinden birisi katman sayısının fazla olması.
+
+766
+02:04:32,171 --> 02:04:39,831
+hidden layer sayısı fazlalaştırılabilir ihtiyaca göre. Şimdi burada şey noktasına geliyoruz.
+
+767
+02:04:39,831 --> 02:04:49,372
+İşte bu ilk yapay nörona çalışmalarında aslında bu insan beyni gibi düşünüldüğünden çok katmanlı bir nörona düşünülüyor.
+
+768
+02:04:49,751 --> 02:04:58,891
+Fakat sizin de gördüğünüz gibi burada matematiksel işlemler çok. Şurası V1, şurası V2, şurası V2.
+
+769
+02:04:58,891 --> 02:05:04,791
+mesela şurada bir threshold olacak, burada bir threshold olacak.
+
+770
+02:05:06,271 --> 02:05:09,692
+Şey desek mesela buna theta 1 diyelim, theta 2 diyelim, theta 3.
+
+771
+02:05:09,692 --> 02:05:12,031
+3 tane de threshold'unuzun olması lazım.
+
+772
+02:05:14,231 --> 02:05:19,872
+Matematiksel işlemler çok olduğu için tabii ki aslında bir smoothlandırma probleminde 2 özellik yok.
+
+773
+02:05:19,991 --> 02:05:26,551
+Genellikle çok sayıda özellik var ve buna göre işte özellik sayısı kadar da ağırlığımız var.
+
+774
+02:05:26,552 --> 02:05:29,732
+bütün bu ağırlıkların update edilmesi gerekiyor öğrenme için.
+
+775
+02:05:29,732 --> 02:05:38,552
+O yüzden uzun yıllar tek katman hidden layer olarak yani multi-perceptron da bir tane hidden layer kullanılıyordu.
+
+776
+02:05:38,672 --> 02:05:43,372
+Sonra zaman içerisinde bu işte derin öğrenmelerle bu yapı değişti.
+
+777
+02:05:43,711 --> 02:05:46,232
+Şimdi burada temel öğrenme şu şekilde oluyor.
+
+778
+02:05:47,571 --> 02:05:53,452
+Buradan girişten başlayarak ileriye doğru bir çıkış hesaplanıyor.
+
+779
+02:06:00,020 --> 02:06:07,119
+hatada çıkış katmanından başlayarak katman katman geriye doğru düzeltiliyor.
+
+780
+02:06:11,731 --> 02:06:39,251
+tamam mı? Yani çıkışı hesaplarken başlıyorsunuz. Şurada mesela x1 çarpı v1 artı x2 çarpı v2'nin teta 1'den büyüklüğünü küçüklüğünü kontrol ederek bir outkutur ediyorsunuz. Burada x1 çarpı v1, x2 çarpı v2'yi teta 2 için kontrol ediyorsunuz. Burada da teta 3 için buradaki çıkışın, buraya gelen çıkışın, şuradaki tabii ağırlıklar var.
+
+781
+02:06:39,251 --> 02:06:45,151
+Burada mesela ne diyeyim şuna V4 diyeyim, V3 diyeyim pardon.
+
+782
+02:06:48,171 --> 02:06:51,831
+Şurada da ağırlıklarınız var. Şu V3 olsun, şu da V4 olsun.
+
+783
+02:06:52,771 --> 02:06:57,531
+Şu noktadaki çıkış artık burada giriş olarak kullanılıyor.
+
+784
+02:06:57,631 --> 02:07:02,551
+Bu noktadaki çıkışın V3 ile çarpımı, buradaki çıkışın V4 ile çarpımı.
+
+785
+02:07:02,551 --> 02:07:06,831
+Bunu bu sefer bu teta 3 eşik seviyesiyle karşılaştırıyorsunuz.
+
+786
+02:07:06,831 --> 02:07:10,091
+Böylece bir çıkış hesaplıyorsunuz.
+
+787
+02:07:10,431 --> 02:07:18,331
+Çıkışın hatasını hesaplayıp geriye doğru o hatayı düzeltecek şekilde ağırlıkları update ediyorsunuz.
+
+788
+02:07:18,412 --> 02:07:19,711
+Burada yapılan şey bu.
+
+789
+02:07:20,431 --> 02:07:23,731
+Şimdi bunun nasıl olduğunu birlikte değerlendirelim.
+
+790
+02:07:29,555 --> 02:07:44,555
+Yine örnek üzerinden göstereceğim ama önce şeyden bahsedeyim. O işlemleri nasıl yapılacağından bahsedeyim. Şimdi burada da yine önce bir initialization yapıyorsunuz.
+
+791
+02:07:44,555 --> 02:07:59,916
+Ha önce şey söyleyeyim pardon pardon. Şimdi burada şey yapabilmeniz için lineer olmayan bir durum olduğu için kullanılan activation fonksiyonu sigmoid.
+
+792
+02:08:03,636 --> 02:08:24,875
+az öncekilerde lineer durumlar vardı. Yani bir girişimiz var. Bu girişteki ağırlıklara göre dat-pro-dact'ı hesaplayıp eşik seviyesiyle karşılaştırıyorduk. Lineer bir durum vardı. Burada lineer olmayan bir durum olduğu için eşik seviyesi hesaplamada sigmoik fonksiyonu kullanılıyor.
+
+793
+02:08:24,875 --> 02:08:47,415
+sigmaik dediğimiz şey aslında y bir bölü bir artı eksponansiyel eksi x demek. Şu eksi x aslında bizim çıkış değerimiz. Daha doğrusu dot product diyeyim ve kafanız karışmasın çünkü çıkış y aslında.
+
+794
+02:08:54,452 --> 02:08:59,671
+şimdi onun ne olacağını göstereyim. Y eşittir.
+
+795
+02:09:05,108 --> 02:09:07,267
+sigmoik demeyeyim de ondan sonra diyeyim.
+
+796
+02:09:07,808 --> 02:09:25,907
+1 bölü 1 artı E üzeri i eşittir eksi i eşittir birden N'e x, i, v, i eksi teta.
+
+797
+02:09:28,547 --> 02:09:32,647
+Şimdi bu az önce söylediğim şeyler burada da geçerli.
+
+798
+02:09:33,067 --> 02:09:34,787
+Yani bunu böyle yazabilirsiniz.
+
+799
+02:09:35,108 --> 02:09:56,448
+işte şey diyebilirsiniz i eşittir 0'dan n, x'i, v'yi diyebilirsiniz, x0 şey pardon v0 threshold olmak üzere bunların hepsi mümkün v0 threshold olmak üzere bu şekilde gösterebilirsiniz ama sonuçta y çıkışını hesaplarken sigmoid fonksiyonu kullanıyoruz.
+
+800
+02:09:56,448 --> 02:09:58,707
+Buraya kadar sormak istediğiniz bir şey var mı?
+
+801
+02:10:01,567 --> 02:10:10,707
+Peki. Şimdi aynı mantıkla burada da şey yapıyorsunuz. Önce initialize ediyorsunuz. Ondan sonra çıkışları hesaplıyorsunuz.
+
+802
+02:10:11,027 --> 02:10:17,727
+Arkasından da geriye dönerek hatayı düzeltiyorsunuz.
+
+803
+02:10:19,008 --> 02:10:25,288
+Şimdi şey üzerinden, slide'lar üzerinden anlatabilir miyim eğer şey olacaksa sizin için?
+
+804
+02:10:25,288 --> 02:10:35,707
+bunu da bu arada mutlaka paylaşacağım. Çünkü diğerlerimizin ne kadar anlattıklarında sıraltılar biraz süs içinde. Ama burada ciddi örnekler var. Elinizin altında olmasını isterim.
+
+805
+02:10:38,188 --> 02:10:54,707
+Şimdi şöyle göstereyim. Adım adım anlatıyorum şimdi. İlk yapılacak şey ağırlıkların initialize edilmesi. Genelde eksi 05 artı 05 arasında küçük değerlerle initialize etmenizi yeterli.
+
+806
+02:10:55,288 --> 02:11:06,088
+yeterli. Ama bu örnekte, bu da verilen örnekte, x2.4 bölü yiyinci nörona gelen giriş miktarı olarak söylenmiş.
+
+807
+02:11:06,468 --> 02:11:19,527
+Yani mesela iki tane girişiniz varsa x2.4 bölü iki şeklinde çözülebilir. Şimdi burada kullanılan yöntemin adı backpropagation yöntemi olarak isimlendiriliyor.
+
+808
+02:11:19,527 --> 02:11:34,548
+backpropagation denmesinin sebebi hatanın geriye doğru propagate ederek çözülmesi. Burada sizin de gördüğünüz gibi az önce benim yazdığım şey aslında bu. Bir input layer'ınız, bir hidden layer'ınız, bir output layer'ınız var.
+
+809
+02:11:34,548 --> 02:11:49,727
+dikkat edin input layer'ındaki bütün girişler bu hidden layer'daki bütün düğümlere dikkat edin burada hidden layer'daki bütün düğümlere bağlılar aslında.
+
+810
+02:11:50,848 --> 02:12:01,928
+Aynı şekilde output layer'ınızda kaç tane şey varsa output'unuz varsa onlara da hidden layer'daki bütün düğümler onlara da bağlı.
+
+811
+02:12:01,927 --> 02:12:13,727
+Şimdi size şöyle bir soru sorayım. Diyelim ki 0'dan 9'a sayıları sınıflandırmak istiyorsunuz.
+
+812
+02:12:13,727 --> 02:12:22,187
+İşte elde yazılmış sayılar var 0'dan 9'a 10 tane sayımız var. Çıkışta kaç nöronunuz olması gerekir?
+
+813
+02:12:26,484 --> 02:12:36,703
+10. Çok güzel değil mi? 10 sınıfımız var. Yani 0, 1, 2, 3, 4, 5, 6, 7, 8, 9. Biraz daha iyileştirmek isterseniz çıkışta kaç neuronunuz olur?
+
+814
+02:12:41,908 --> 02:12:52,527
+çünkü 10 nöron ne demek? İşte 0 için bir nöron aktif olacak çıkıştakilerden, geri kalanları 0 olacak. 1 için 1 aktif olacak, geri kalanları 0 olacak falan.
+
+815
+02:12:52,527 --> 02:13:02,828
+Onun yerine 10 tane çıkışınız varsa, outputta kaç nöron olursa da aslında 10 farklı çıkışı gösterebilirsiniz?
+
+816
+02:13:03,428 --> 02:13:04,908
+4.
+
+817
+02:13:04,908 --> 02:13:06,147
+4 aynen 4 değil mi?
+
+818
+02:13:06,467 --> 02:13:08,067
+4, 2 üzeri 4, 16.
+
+819
+02:13:08,707 --> 02:13:17,187
+Yani işte binary olarak 0'dan 9'a sayıları binary olarak gösterdiğimizi düşünecek olursak değil mi?
+
+820
+02:13:17,187 --> 02:13:19,047
+Yani şöyle bir şey demek istiyorum.
+
+821
+02:13:19,747 --> 02:13:21,167
+Şöyle pardon yazamadım.
+
+822
+02:13:21,707 --> 02:13:26,487
+Mesela outputta 4 tane nöronunuz olsa, şunlar bizim output nöronlarımız.
+
+823
+02:13:26,948 --> 02:13:30,847
+0, 0, 0 iken 0 sayısını gösterir.
+
+824
+02:13:30,847 --> 02:13:53,547
+birken işte bir sayısını gösterir gibi değil mi? İki sayısını gösterir gibi. Dört altlıkta da gerçekleştirebilirsiniz. On altlıkta da gerçekleştirebilirsiniz. Bu iyileştirmedir aslında. Önemli değil. Ama sonuçta çıkışta altlık sayınız şeye göre sınıf sayınıza bağlı olarak vermeniz gereken bir bilgi. Buraya kadar bir soru var mı?
+
+825
+02:13:53,547 --> 02:14:11,208
+bu Matta-değer perceptronundaki öğrenme algoritmasına backpropagation denmesinin sebebi hatanın geriye doğru giderek çıkış katmanından giriş katmanına doğru katman katman geriye doğru giderek çözülmesi.
+
+826
+02:14:11,208 --> 02:14:19,708
+Yani ağırlıkların önce çıkışa gelen şu ağırlıklar değiştiriliyor, arkasından girişe giden ağırlıklar değiştiriliyor.
+
+827
+02:14:19,707 --> 02:14:49,687
+Peki şimdi Initiation Step'inde bu sefer Network'te bir sürü ağırlığımız var. Yani sadece girişlere bağlı ağırlıklar yok. Ara katmanlarda bulunan ağırlık değerleri de var. Bunların hepsini random değerlerle initialize ediyorsunuz. Arkasından activation fonksiyonu şeyleri hesaplıyorsunuz. Her çıkış düğümü için çıkış değerini hesaplıyorsunuz. Şimdi bakın burada
+
+828
+02:14:49,707 --> 02:15:16,527
+Kafanız karışırsa beni uyarın lütfen. Şurada da bir çıkış var. Buradaki çıkış nedir? Burada şöyle x yazayım. x eşittir. x1, pardon. x1, v1 artı x2, v2 eksi theta 1'dir burası mesela.
+
+829
+02:15:16,527 --> 02:15:40,147
+o zaman Y'e neye eşit olur? 1 bölü 1 artı E üzeri eksi X buna eşit olur. Bu şuradaki çıkışı veriyor bize. Anlatabildim mi? Aynı şekilde buradaki çıkış bu sefer ne? Şöyle X neye eşit burada? X1 ve 1 artı X2 ve 2 eksi teta 2'ye eşit bu sefer.
+
+830
+02:15:40,147 --> 02:15:57,927
+oldu mu? Yani sonuçta bu şekilde bütün şeyleri hesaplamanız gerekiyor. Bütün katmanlardaki düğümler için çıkışları hesaplanmanız gerekiyor.
+
+831
+02:16:00,727 --> 02:16:09,727
+Hesaplarken kullanacağınız activation fonksiyonunu bu şekilde. Bu da output değerinde hesaplayacağınız şey.
+
+832
+02:16:10,147 --> 02:16:13,947
+çıkış değeri.
+
+833
+02:16:14,947 --> 02:16:17,487
+Şimdi buraya kadar bir sorun var mı? Yok herhalde.
+
+834
+02:16:17,487 --> 02:16:20,207
+Şimdi aslında önemli olan kısım geliyor.
+
+835
+02:16:21,127 --> 02:16:28,487
+Şimdi bakın ağırlıkları update ederken çıkış katmanından başlıyoruz.
+
+836
+02:16:29,387 --> 02:16:35,987
+Şimdi bu output değerinin şeyi, hata update'i.
+
+837
+02:16:38,548 --> 02:16:53,307
+bunu elle çizsem daha rahat edersiniz. Buradan anlıyor musunuz? Elle çizebilirim. İyi mi böyle? Anlıyor musunuz? Çizeyim mi elle?
+
+838
+02:16:54,027 --> 02:16:56,827
+Buradan anlatın hocam. Sıkıntı olursa şey yapalım.
+
+839
+02:16:56,827 --> 02:17:26,367
+Tamam peki bakın bu şu anda output layer'ının hata düzeltmesi yani YK dediği şey gerçek çıkış hesaplanmış gerçek çıkış ve yine burada türev olarak aslında ben bazen bazı seneler türev'in alınıp nasıl bu hale geldiğini de anlatıyorum ama türev alınarak bulunan delta miktarı bu aslında.
+
+840
+02:17:26,827 --> 02:17:41,327
+1-G, K, P dediği bizim hesapladığımız çıkış çarpı error. Error dediği de istenilen, D desire bunda ise istenilen çıkış eksi hesaplanan çıkış.
+
+841
+02:17:41,327 --> 02:17:50,567
+Şimdi bu sefer bizim kullanacağımız şey bu, error gradienti bu.
+
+842
+02:17:54,164 --> 02:18:17,703
+Buna göre de alfa bizim learning rateimizde delta V'yi bu şekilde alfa çarpı YG'yi hesapladığımız çıkış çarpı error gradient şeklinde yapıyoruz. Ondan sonra şu YG denilen şey ne biliyor musunuz? Ne o YG sizce?
+
+843
+02:18:22,739 --> 02:18:25,720
+gizli katmanın, hidden layer'dan gelen ağırlık.
+
+844
+02:18:26,579 --> 02:18:41,939
+Aynen. Yeşil dediğimiz şey, onun için çizeyim mi dedim size? Yeşil şurası. Şu ağırlığı düzeltiyoruz mesela. Yeşil şurası. Giriş yani aslında. Olur mu? Anladınız mı?
+
+845
+02:18:44,160 --> 02:18:49,639
+Çizmeden anlatsam hala oluyor mu şu anda da? Peki.
+
+846
+02:18:49,639 --> 02:19:11,320
+Yani önce Outlook Layer için hata hesaplıyoruz ve Outlook Layer için ağırlıkları update ediyoruz. Update ederken önce error gradientini hesapladık. Ondan sonra şöyle yapayım ben bir türlü içme sinmedi. Ben bunu çizeceğim size.
+
+847
+02:19:11,319 --> 02:19:14,779
+bakın şimdi
+
+848
+02:19:14,779 --> 02:19:17,879
+şurası x1
+
+849
+02:19:17,879 --> 02:19:20,699
+şurası x2
+
+850
+02:19:20,699 --> 02:19:25,119
+bu iki girişimiz varken tek katmanlı
+
+851
+02:19:25,119 --> 02:19:32,719
+mesela Exor için yaptığınız bir tek gizli katmanlı bir multivayered perceptron aslında
+
+852
+02:19:32,719 --> 02:19:33,820
+şimdi
+
+853
+02:19:33,820 --> 02:20:03,799
+ve
+
+854
+02:19:44,659 --> 02:19:47,979
+A kutlayır için error gradientini hesaplıyoruz.
+
+855
+02:19:47,979 --> 02:19:56,699
+T anındaki
+
+856
+02:20:13,843 --> 02:20:15,843
+Şimdi şu error
+
+857
+02:20:15,843 --> 02:20:29,843
+Şimdi şurası yk çıkışı, t anındaki şeyi hesaplıyoruz. Bu error. O zaman weight correction
+
+858
+02:20:32,051 --> 02:20:34,051
+şu şekilde
+
+859
+02:20:53,172 --> 02:21:14,012
+şimdi VJK dediği şurası aslında. Mesela şurası V1K, diyelim ki şu da V2K, şurası, şurası Y1, şurası da Y2. Yani şurada oluşan çıkış, bu da burada oluşan çıkış. Oldu mu?
+
+860
+02:21:14,012 --> 02:21:22,692
+Dolayısıyla şurada söylenilen YJ şu aslında.
+
+861
+02:21:25,212 --> 02:21:33,032
+Giriş aslında. O katmanın output'a giden giriş aslında. O da bir önceki katmanın çıkışı.
+
+862
+02:21:33,911 --> 02:21:36,231
+Ve JK dediği de şu.
+
+863
+02:21:41,332 --> 02:21:51,931
+oldu mu? Şimdi daha rahat anlaşıldı mı acaba? Buna göre, şimdi ilk yaptığınız bakın ne yaptınız? Dedik ya hata geriye doğru düzeltiliyor diye. Önce bakın ne yaptınız?
+
+864
+02:21:52,391 --> 02:22:02,051
+Çıkış katmanına gelen ağırlıkları düzelttiniz. İlk yaptığınız şey bu. Ondan sonra ikinci olarak
+
+865
+02:22:02,051 --> 02:22:06,411
+Hidden layer için
+
+866
+02:22:13,075 --> 02:22:15,015
+örgü radyağımızını hesaplayacağız.
+
+867
+02:22:17,335 --> 02:22:18,895
+Şimdi burada da
+
+868
+02:22:23,796 --> 02:22:29,475
+y, j, t benim buradaki hesapladığım çıkışı. Yani şu hidden layer'ın çıkışı mesela y'dir.
+
+869
+02:22:31,515 --> 02:22:35,155
+1- y, j, t
+
+870
+02:22:35,155 --> 02:22:37,075
+1-
+
+871
+02:23:00,531 --> 02:23:04,091
+yaşı, baksin, yaşı, karar ağaç
+
+872
+02:23:11,667 --> 02:23:17,667
+bir saniye rica edeceğim.
+
+873
+02:23:21,667 --> 02:23:22,667
+Şurası
+
+874
+02:23:27,219 --> 02:23:34,219
+ve
+
+875
+02:23:42,484 --> 02:23:54,984
+ve şurada K eşittir birden L7 değil, alt kutu layerındaki çıkış sayı.
+
+876
+02:23:58,227 --> 02:24:01,827
+ve Jika dediğinde
+
+877
+02:24:01,827 --> 02:24:09,387
+Akut devrimdeki
+
+878
+02:24:11,700 --> 02:24:16,700
+giden ağırlıklar. Tamam mı? Şimdi buna göre...
+
+879
+02:24:20,979 --> 02:24:24,440
+Hidden mirror için error gradientini hesaplıyorum.
+
+880
+02:24:24,440 --> 02:24:28,819
+VEJT artı 1 eşittir.
+
+881
+02:24:30,519 --> 02:24:41,279
+VEJT artı alfa XIT çarpı T.
+
+882
+02:24:41,279 --> 02:24:44,259
+şimdi bakın burada
+
+883
+02:24:44,259 --> 02:24:45,859
+şunları artık
+
+884
+02:24:45,859 --> 02:24:47,599
+mesela V1
+
+885
+02:24:47,599 --> 02:24:50,419
+1
+
+886
+02:24:50,419 --> 02:24:51,639
+V1 2
+
+887
+02:24:51,639 --> 02:24:52,820
+V2 1
+
+888
+02:24:52,820 --> 02:24:53,879
+V2 2
+
+889
+02:24:53,879 --> 02:24:54,879
+bu ağırlıkları
+
+890
+02:24:54,879 --> 02:24:56,399
+update edeceğim
+
+891
+02:24:56,399 --> 02:24:58,639
+GJ dediği
+
+892
+02:24:58,639 --> 02:24:59,719
+şuradaki çıkış
+
+893
+02:24:59,719 --> 02:25:01,979
+VIG dediği
+
+894
+02:25:01,979 --> 02:25:03,380
+mesela V1 1'i
+
+895
+02:25:03,380 --> 02:25:04,219
+şurada
+
+896
+02:25:04,219 --> 02:25:05,759
+V1 1'i veya
+
+897
+02:25:05,759 --> 02:25:07,799
+V2 2'yi update edeceğim
+
+898
+02:25:07,799 --> 02:25:09,319
+V2 1'i update edeceğim
+
+899
+02:25:09,320 --> 02:25:11,680
+bu ağırlıkların nasıl update edildiği.
+
+900
+02:25:12,180 --> 02:25:14,919
+Buradaki error gradienti hesaplanırken
+
+901
+02:25:14,919 --> 02:25:20,500
+dikkat edin şuradan gelen hata kullanılarak hesaplanıyor.
+
+902
+02:25:20,599 --> 02:25:24,700
+LJT dediği mesela şu noktadaki çıkış değeri
+
+903
+02:25:24,700 --> 02:25:30,719
+ama bu şuradan gelen hata yani buradan gelen hata
+
+904
+02:25:30,719 --> 02:25:35,359
+şurası bu şekilde bir hata hesabı yapılıyor.
+
+905
+02:25:35,359 --> 02:25:41,479
+Bu birazcık böyle karışık bir konu şey üzerinde de göstereyim isterseniz.
+
+906
+02:25:44,239 --> 02:25:50,739
+Burada bakın bu çıkış katmanındaki hata hesabı.
+
+907
+02:25:51,939 --> 02:25:56,579
+Bu da ara katmandaki hidden air'deki hatanın hesabı.
+
+908
+02:25:57,399 --> 02:26:00,019
+Ve buna göre ağırlıklar update ediliyor.
+
+909
+02:26:00,119 --> 02:26:01,399
+Buraya kadar soru var mı?
+
+910
+02:26:01,399 --> 02:26:05,700
+arkasından da
+
+911
+02:26:05,700 --> 02:26:07,999
+ağırlıkları update edildikten sonra
+
+912
+02:26:07,999 --> 02:26:09,840
+yine kormojeniz sağlamana kadar
+
+913
+02:26:09,840 --> 02:26:11,779
+yani işte hata belli bir
+
+914
+02:26:11,779 --> 02:26:13,679
+eşit seviyesinin altına düşene kadar
+
+915
+02:26:13,679 --> 02:26:14,959
+veya olmayana kadar
+
+916
+02:26:14,959 --> 02:26:17,700
+işlem devam ediyor. Bakın şimdi burada
+
+917
+02:26:17,700 --> 02:26:19,739
+Expressive Orch'in şey
+
+918
+02:26:19,739 --> 02:26:21,319
+görüyorsunuz
+
+919
+02:26:21,319 --> 02:26:23,639
+yapıyı görüyorsunuz işte bu hidden
+
+920
+02:26:23,639 --> 02:26:26,060
+değeriniz, input değeriniz, output değeriniz
+
+921
+02:26:26,059 --> 02:26:32,559
+ben bunu şey yapabiliyor muyum?
+
+922
+02:26:32,719 --> 02:26:33,659
+Kopi desen.
+
+923
+02:26:36,119 --> 02:26:38,319
+Böyle çekten size gönderemiyor muyum?
+
+924
+02:26:42,036 --> 02:26:44,036
+oluyor mu bu?
+
+925
+02:26:50,484 --> 02:27:09,803
+orada mısınız? Hocam dosya paylaş diye bir şey vardı galiba chatten ama onun için. Ha dur, evet dur öyle yapayım bir saniye. Çünkü ben şimdi size bunu gönderirim, gönderirim derim. Dur, nerede çekti? Dosya, ee nerede? Yok öyle bir şey.
+
+926
+02:27:15,379 --> 02:27:16,379
+çiftçok
+
+927
+02:27:22,899 --> 02:27:24,779
+paylaşılıyordu aslında bir dakika.
+
+928
+02:27:25,259 --> 02:27:30,779
+Bizde var da sizde yok sanırım. Çünkü fal diye bir ikon gözüküyor mesaj kısmında.
+
+929
+02:27:31,899 --> 02:27:44,599
+Tamam. Neyse şey koyarım. Online kampüsteki yere koyarım. Bunu görmenizi istiyorum. Birazcık karışık bir durum.
+
+930
+02:27:44,599 --> 02:27:55,440
+Peki şimdi burada mesela örnek ağırlık değerleriyle bir exor işinin nasıl olduğu gösteriliyor.
+
+931
+02:27:55,859 --> 02:28:07,899
+Bakın şeye bakın y3 için x1, v1, 3, x2, v2, 3, eksi teta 3, eksi 1 bölü 1 artı e üzeri eksi işte şey nedir?
+
+932
+02:28:07,899 --> 02:28:19,719
+x1, v1, 3 artı x2, v3, v2, 3 eksi teta 3 şeklinde y3'ün nasıl hesaplandığı, y4'ün nasıl hesaplandığı falan bunlar gözüküyor.
+
+933
+02:28:19,719 --> 02:28:27,779
+Şimdi ben bunu sizinle paylaşırım. Bu da böyle tek tek anlatmanın çok anlamı yok. Böylece şöyle yapın bence.
+
+934
+02:28:28,319 --> 02:28:37,639
+Yani bir tarafa elle çizin, bir tarafa bu slide'ları alın ve tek tek elinizle y1, y2, y3'ün nasıl olduğunu görün.
+
+935
+02:28:37,899 --> 02:28:58,639
+bu şekilde yaparsanız yani şey daha rahat olur. Yani mesela şöyle demek istiyor aslında. Y3 şurası, Y4 şurası aslında yani sizin de gayet netkı olduğunuz gibi onların tek tek nasıl hesaplandığını gösteriyor.
+
+936
+02:28:58,639 --> 02:29:11,559
+Şimdi baktığımız zaman da mesela aslında şunu görün şeyi de göstereceğim zaten bu hesaplamaları bir tabloya koymuş bu slide'larda yine bunu da göstereceğim size
+
+937
+02:29:11,559 --> 02:29:19,199
+Mesela ilkok sayısı arttıkça hatanın sanat süperlerinin nasıl azaldığını gösteriyor
+
+938
+02:29:19,199 --> 02:29:33,980
+200 ipoca geldiğinde hatta 10 üzeri eksi 3'e düşmüş. İlk başladığında hatta işte 10 üzeri 0 ile 10 üzeri 1 arası yani 3 falan herhalde orası yarıdan biraz daha az gözüküyor.
+
+939
+02:29:33,980 --> 02:29:39,979
+Sonra yavaş yavaş önce 1'e iniyor. Arkasından işte daha da azalmış oluyor.
+
+940
+02:29:39,980 --> 02:29:50,739
+ve şeyde de egzor öğrenme için, bu verilen girişler için en son aşamada gerçek çıkışlar.
+
+941
+02:29:51,840 --> 02:30:00,299
+Şimdi sigmoid olduğu için bakın az önce bir 0, 1 veya 0, eksi bir, artı bir şeklinde çıkışlar veriyorduk.
+
+942
+02:30:00,299 --> 02:30:10,599
+step veya sign function kullanmamıza bağlı olarak ama sigmoid sonuçta bir şey sayı üretiyor.
+
+943
+02:30:11,599 --> 02:30:20,259
+Nedir? Kesili sayı üretiyor. O yüzden gerçek çıkışlarımız bu şekilde bir bölgür artıya yüzele eksiksel ne geliyorsa o.
+
+944
+02:30:20,759 --> 02:30:27,499
+İşte hatayı hesaplıyor. Mesela son neyinde hata hinde bire düşmüş ve o noktada da kesmiş.
+
+945
+02:30:27,499 --> 02:30:36,259
+Bu da öğrenilmiş ağırlıklar. Exor'u öğrendiğinde öğrenilmiş ağırlıklar bunlar.
+
+946
+02:30:39,259 --> 02:30:56,659
+Bu da şeyler, decision boundary'ler. A'da 3. hidden neuron, yani 3. hidden neuron dediği, şu da 3. hidden neuron için mesela decision boundary'i bu şekilde edilmiş.
+
+947
+02:30:56,659 --> 02:31:02,539
+İşte B şifresinde dördüncü yedimler için mesajı bağlamak görüyorsunuz.
+
+948
+02:31:03,019 --> 02:31:06,159
+C resiminde de o ikisinin birleşimi dikkat edin.
+
+949
+02:31:06,260 --> 02:31:08,760
+A'nın ve B'nin birleşimi aslında o.
+
+950
+02:31:08,899 --> 02:31:16,120
+Fark ettiğimiz gibi o ikisi birleşerek çıkıştaki durumu oluşturuyorlar.
+
+951
+02:31:16,219 --> 02:31:17,879
+Buradaki mesele bu.
+
+952
+02:31:22,036 --> 02:31:37,675
+Yani bu kullanılan çok fazla bir şey değil. Daha hızlı öğrensin diye sigmoid fonksiyonu yine yerine hypopalic tangent kullanılabiliyor. İşte A ve B sabit olmak üzere. Bu da yapılabilecek bir şey.
+
+953
+02:31:37,675 --> 02:31:59,175
+Ayrıca momentum değeri ekleyebiliyorsunuz. Momentum değeri de alfayı daha büyük, alfa buçuksa yavaş öğreniyorsunuz ama momentum eklendiğinde alfayı da daha büyük alabiliyorsunuz.
+
+954
+02:31:59,175 --> 02:32:18,375
+momentum'da 0-1 arasında bir değer. Genellikle 0-9 falan alabiliyorsunuz. Momentum değerini 0-9, alfayı 0-5 gibi bir değer alabilerek eğitiminizi gerçekleştirebilirsiniz.
+
+955
+02:32:18,376 --> 02:32:34,675
+Yani burada iPhone'un dışında bir de momentum değeri olabilirsiniz. Momentum değeri de daha hızlı aslında öğrenebilmenizi sağlıyor. Mesela az öncekinde kaç hipop 200'lerde falan yalanıyorsam hatırlamıyorum.
+
+956
+02:32:34,675 --> 02:32:53,175
+200'ü geçtikten sonra 224 hipokta öğrenmiş. Momentum eklediğinizde mesela işte 120 hipokta hatta 10 üzeri eksi 3'e gelmiş. Ondan sonra burning rate'i de kaç almış? 0,2 almış galiba burada.
+
+957
+02:32:53,175 --> 02:33:05,315
+dolayısıyla momentum kat sayısı sabite ekleyerek şu şekilde gördüğünüz gibi daha hızlı öğrenmesini sağlayabilirsiniz.
+
+958
+02:33:06,536 --> 02:33:09,896
+Buraya kadar sormak istediğiniz bir şey var mı?
+
+959
+02:33:15,636 --> 02:33:18,596
+aklınıza takılan sormak istediğiniz bir şey var mı?
+
+960
+02:33:22,484 --> 02:33:30,803
+Peki. Şimdi o zaman haftaya vize haftası. Biz sınavla ilgili konuştuk mu sizle?
+
+961
+02:33:32,343 --> 02:33:33,123
+Hayır hocam.
+
+962
+02:33:33,423 --> 02:33:34,183
+Konuşmadık hocam.
+
+963
+02:33:35,123 --> 02:33:37,463
+Aa, konuşmadık. Nasıl aklım sizle?
+
+964
+02:33:40,164 --> 02:33:41,244
+Kaç dersler?
+
+965
+02:33:41,263 --> 02:33:44,623
+O hafta bir ödev vereceğinizi söylemişti. Ödevlere başlarız demişti.
+
+966
+02:33:44,623 --> 02:33:49,843
+Aa, ödevlere başlarız demiştik. Peki, tamam. O zaman bu hafta ben ödevi veririm.
+
+967
+02:33:49,843 --> 02:33:57,203
+vizeyi de şey yaparız birazcık daha ilerlesin. Önümüzdeki haftadan sonraki hafta bir vize yaparız olur mu?
+
+968
+02:33:58,523 --> 02:34:06,323
+Hocam vize artı final şeklinde mi olacak yoksa tek bir sınav mı olacak? Sanki dönemin başında ödev vereceğiz tek sınav olacak gibi konuşmuştuk.
+
+969
+02:34:06,323 --> 02:34:07,363
+Demiş miyim öyle bir şey?
+
+970
+02:34:07,363 --> 02:34:07,803
+Orada.
+
+971
+02:34:08,543 --> 02:34:13,423
+Olsun vize de yapayım. Yani vizeyle ilgili sıkıntımız sizin de çok iyi bindiğiniz gibi.
+
+972
+02:34:13,423 --> 02:34:24,303
+böyle şeyden ötürü yani ortak sınavlarda ortak hareketlerden ötürü çok efektif olmaması gibi problemler var.
+
+973
+02:34:24,743 --> 02:34:29,664
+Ama makine öğrenmesinde şey çok da iyi olmuyor.
+
+974
+02:34:29,943 --> 02:34:37,263
+Yani bir vizede böyle şurada lafla anlatılan şeyleri bir de elle çözdüğünüz zaman sizin için daha etkili ve kalıcı oluyor.
+
+975
+02:34:37,704 --> 02:34:38,863
+Özel bir vize yaparız.
+
+976
+02:34:38,924 --> 02:34:42,664
+Önümüzdeki hafta değil de ondan sonraki hafta bir vize yaparız.
+
+977
+02:34:42,664 --> 02:35:00,943
+yani şey yapabiliriz diye düşünüyorum. Kameralar açık falan yani bilmiyorum. Bizim şey de konuşulmadı. Önümüzdeki hafta vize haftası için nasıl bir yol izleneceğe de konuşulmadı. Bir çözüm üretiriz. Önümüzdeki hafta konuşuruz onun nasıl yapacağımızı. Bir sonraki hafta bir vize yaparız tamam mı?
+
+978
+02:35:02,183 --> 02:35:02,844
+Peki hocam.
+
+979
+02:35:04,403 --> 02:35:05,043
+Teşekkürler.
+
+980
+02:35:05,644 --> 02:35:09,123
+Hocam ben de bir şey soracaktım da vize olacaksa peki ödevler olacak mı?
+
+981
+02:35:09,123 --> 02:35:35,463
+Tabii canım. Hep zaten öyleydi. Bir yıl öncesinde bu iş bir vize bir final ödevlerle yürüyordu. Ders dışında şey söylemiş olabilirim. Şimdi ben onu hatırlayamadım açıkçası. Vize yapmayız demiş olabilirim. Ama yani vize yapalım çünkü bunu da şundan ötürü istiyorum. Dersler çok şey geçiyor. Yani verimli bir verimsizim ben hiçbir şey anlamıyorum. Çünkü sınıfta ders yaparken bol miktarda soru olurdu.
+
+982
+02:35:35,463 --> 02:35:43,043
+ona göre bir şeyler konuşur işte oradan daha çok anlaşılması bence sağlanırdı.
+
+983
+02:35:43,403 --> 02:35:44,743
+Burada ben bir şey anlatıyorum.
+
+984
+02:35:44,863 --> 02:35:47,363
+Büyük ihtimalle bir kısmın sadece bilgisayarı açık.
+
+985
+02:35:47,543 --> 02:35:49,984
+Bazısı dinliyor, bazısı dinlemiyor gibi bir şey oluyor.
+
+986
+02:35:50,564 --> 02:35:56,403
+Bu ders özgürlüğü genel olarak diğer arkadaşlarımdan da, hoca arkadaşlarımdan da duyduğum genel bir sıkıntı.
+
+987
+02:35:56,403 --> 02:36:05,123
+Yani buradaki esas olan sizin bu dönem bu şekilde yaşanacak yani bu dönem derken kim bilir ne kadar bir dönem.
+
+988
+02:36:05,123 --> 02:36:25,763
+belki önümüzde bir dönem, belki önümüzde bir sene. Ama yani önemli olan size en faydalı olacak şekli sağlamaya çalışmak. Böyle de çok şey olma ihtimali düşük olabilir. Çünkü ödevlerle ilgili sıkıntı da onda da her şey internette var. Yani bir grup hiç öğrenmeden ilerleyebilir.
+
+989
+02:36:25,763 --> 02:36:42,183
+Tabii ki lisans üstündeki öğrenci zaten bilinçli öğrenci. Yani buraya bir şeyler öğrenmek, kendini geliştirmek için geliyor ama yani bizim de yönlendirmemiz gerekiyor. Çok uzun anlattım ama evet her güzel medyeler etkili oldu.
+
+990
+02:36:42,584 --> 02:36:53,263
+Önümüzdeki hafta ben şey veririm, ödevi veririm. Yani şey, pardon özellikle bu hafta ödevi veririm. Önümüzdeki hafta da bizle ilgili konuşuruz. Olur mu?
+
+991
+02:36:55,763 --> 02:36:57,084
+Tamam hocam.
+
+992
+02:36:57,424 --> 02:37:00,163
+Hocam ödevin duyurusu nereden yapacaksınız?
+
+993
+02:37:00,743 --> 02:37:08,543
+Şey yükleniyor, biz lisansa yapıyoruz onu, yapabiliyoruz. O online yıldızda ödevi yüklüyorsunuz. Öğrenciler de geri atlatacak.
+
+994
+02:37:08,543 --> 02:37:09,463
+Anadolu, tamam.
+
+995
+02:37:09,463 --> 02:37:13,823
+O şekilde yapabiliyoruz. Belki başka derslerde yapmış olabilirsiniz zaten.
+
+996
+02:37:14,804 --> 02:37:23,064
+Tamamdır. Tamam. Peki, oldu. Teşekkürler hocam. Ben teşekkür ederim. Haftaya görüşmek üzere. Hepinize güzel bir gün.
+
+997
+02:37:23,144 --> 02:37:25,604
+Slider'ı bu hafta paylaşabilir miyim?
+
+998
+02:37:25,623 --> 02:37:28,103
+Bu hafta paylaşacağım. Evet, şimdi paylaşacağım bunu. Tamam.
+
+999
+02:37:28,943 --> 02:37:29,443
+Teşekkür ederim.
+
+1000
+02:37:31,183 --> 02:37:34,804
+Online yıldızdan paylaşacağım şimdi. Teşekkürler.
