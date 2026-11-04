@@ -1,0 +1,2143 @@
+1
+00:14:54,836 --> 00:15:01,675
+Günaydın arkadaşlar. Nasılsınız? Umarım herkes iyidir, sağlığımız yerindedir.
+
+2
+00:15:02,296 --> 00:15:02,875
+Günaydın hocam.
+
+3
+00:15:02,935 --> 00:15:04,836
+Merhaba hocam. İyi, siz nasılsınız?
+
+4
+00:15:05,575 --> 00:15:15,756
+Ben de iyiyim, çok teşekkürler. Geçen hafta ders yapamadık, bir toplantı var direktörlükte. O yüzden yetişemedim ben, yani yetişemeyeceğim zaten biliyordum da.
+
+5
+00:15:15,756 --> 00:15:27,615
+ama merak etmeyin şey yapacağım onu telafi edeceğim. Bir dakika dur bakayım. Tamam. Ekranımı görüyorsunuz. Görüyor musun?
+
+6
+00:15:27,615 --> 00:15:44,876
+Gördücü. Tamam oldu. Şimdi biz en son şeyden bahsediyorduk. Unsupervised Learning'den bahsediyorduk ve şey demiştik yani bizim buradaki unsupervised learning'de hedefimiz aslında elimizde örnek şeyler var.
+
+7
+00:15:44,875 --> 00:16:04,995
+bilgiler var fakat bunların hangisinin faiz olduğunu bilmiyoruz. Yani aslında şöyle bir şey var. Bize verilen data sadece giriş bilgileri fakat çıkışlar hakkında bir bilgi yok.
+
+8
+00:16:04,995 --> 00:16:12,955
+O zaman biz bu bilgileri kullanarak nasıl bir öğrenme gerçekleştirebiliriz, nasıl bir işlem yapabiliriz?
+
+9
+00:16:12,955 --> 00:16:42,935
+Burada yapılan şey bilgileri benzerliklerine göre gruplamak oluyor demiştik ve şöyle bir şey göstermiştik diyelim ki iki özelliği olan örneklerimiz olsun bunlar işte birbirlerine göre benzerliklerine birbirlerine benzerliklerine göre gruplanabiliyorlarsa bu bir unsupervised learning yani bu grubun adını söylememizde
+
+10
+00:16:42,955 --> 00:16:59,275
+gerekmiyor ama en azından grupta kimlerin olabileceğini bilebiliyoruz. Burada önemli olan şey bu bilgiden biz nasıl faydalanabiliriz? İki türlü faydalanabiliriz.
+
+11
+00:16:59,275 --> 00:17:12,776
+Ya sadece gruplamak yetiyordur bize. Örneğin müşterilerin harcama bilgilerine göre gruplanmasını istiyoruzdur. Sonra bu gruplarla ilgili bir takım işlemler yapacağız.
+
+12
+00:17:12,955 --> 00:17:23,475
+yapacak olabiliriz. Yani illa o gruba bir isim vermemiz gerekmiyor. Birbirlerine benzerliklerini görmemiz, benzer grupta yer alan kişileri görmemiz gerekiyor.
+
+13
+00:17:23,855 --> 00:17:29,196
+Ya öyle bir şey vardır. Yani etiket koymadan kullanmaya devam ederiz elimizdeki bu bilgiye.
+
+14
+00:17:29,196 --> 00:17:41,556
+İkinci olarak da bunu konuşmuştuk. Şu anda aslında en çok ihtiyaç duyulan durum verilerin etiketlenmesinin güçlüğünden kaynaklanan
+
+15
+00:17:41,556 --> 00:17:44,016
+öğrenme işlemleri.
+
+16
+00:17:44,175 --> 00:17:49,356
+Yani artık büyük veriyle çalışıldığında etiketleme çok zaman alıcı.
+
+17
+00:17:49,815 --> 00:17:55,755
+Bazen de zamanın ötesinde şey problemli bir iş.
+
+18
+00:17:55,856 --> 00:17:57,416
+Yani nasıl etiketleyeceğiz?
+
+19
+00:17:57,916 --> 00:18:03,455
+Bunların herkes tarafından aynı şekilde etiketlenemeyen veriler de var.
+
+20
+00:18:03,455 --> 00:18:09,636
+Çünkü özellik sayısı arttıkça evdeki veriyi değerlendirmek de zorlaşıyor.
+
+21
+00:18:09,636 --> 00:18:15,136
+yani çok da kolay değil aslında bazı bunlarda etiket koymak.
+
+22
+00:18:15,496 --> 00:18:17,556
+O zaman şöyle bir şey yapmak mümkün.
+
+23
+00:18:17,936 --> 00:18:26,035
+Önce etiketlemeden benzerliklerine göre gruplamak, arkasından o grubun özelliklerine bakarak
+
+24
+00:18:26,708 --> 00:18:39,227
+grubun etiketinin ne olacağına karar vermek. Şu anda en çok kullanılan unsupervised learning'in en çok kullanıldığı durumlardan birisi bu aslında.
+
+25
+00:18:40,048 --> 00:18:53,607
+Dolayısıyla şey oldu yani son yıllarda aslında başlangıçta unsupervised learning o kadar da ihtiyaç duyulan bir şey olmasa da yaklaşım olmasa da son yıllarda önemi iyice arttı.
+
+26
+00:18:53,607 --> 00:19:16,687
+Şimdi biz geçen haftalarda şeyi görmüştük, yapay nöron ağlarını görmüştük ve orada perceptron yapısının önce single layer, arkasından da multi layer perceptron yapısında insan beyninin aslında çalışma şeklinin nasıl bilgisayar ortamında simüle edileceğini görmüştük.
+
+27
+00:19:16,687 --> 00:19:33,947
+Şimdi bugün size şeyden bahsedeceğim. Unsupervised Learning'de kullanılan en çok bilinen, en çok tercih edilen yöntemlerden birisi olan self-organizing
+
+28
+00:19:37,587 --> 00:20:00,848
+MEP'ten bahsedeceğim. Aslında bu bir kompetitif learning yaklaşımı. Şimdi kompetitif ve learning dediğimiz şey nedir? Burada bizim yapmaya çalıştığımız şey etiketi olmayan çıkış nöronlarım var.
+
+29
+00:20:00,848 --> 00:20:07,968
+çıkış nöronlarını giriş nöronlarına benzetmeye çalışarak grupluyorum.
+
+30
+00:20:07,968 --> 00:20:19,587
+Burada işte winner takes all, kazanan her şeyi alır mantığı, iki tür yaklaşım var aslında kompetitif learningde.
+
+31
+00:20:20,247 --> 00:20:29,327
+Birincisinde giriş nöronuna en çok benzeyen çıkış nöronu kazanıyor ve giriş nöronuna daha benzer hale getiriliyor.
+
+32
+00:20:29,327 --> 00:20:42,407
+getiriliyor. İkincisinde ise sadece en çok benzeyen çıkış nöronu değil, bu çıkış nöronuna yakın olan yani aslında insan beynindeki çalışma gibi
+
+33
+00:20:42,407 --> 00:20:54,668
+çıkış nöronuna yakın olan nöronlar da giriş nöronuna benzeyecek şekilde değiştiriliyorlar. Yani insan beyninde de bir nöronun şey olduğu,
+
+34
+00:20:54,668 --> 00:21:09,848
+birbiriyle bağlantılı olduğu, iletişimde olduğu diğer nöronlar vardır. Dolayısıyla tek başına bir tek nöronun aktif olması değil, ona komşu olan nöronların da etkilenmesi sağlanacak şekilde işlem ediliyor.
+
+35
+00:21:09,848 --> 00:21:13,047
+Şimdi ben önce size şeyi göstereyim.
+
+36
+00:21:18,099 --> 00:21:43,339
+Evet, çözememişim bu problemi. Şimdi sıkıntı şu ki, geçenlerde de yaşamıştım ben bunu. Kalemi şarja takmayı unutmuşum. Aslında onun için 15 dakika geç başladık. Denediğimde şey yapmadım, çalışmadım. Bir 15 dakika şarj ettim. Tek 15 dakika şarjda da bu kadar oluyor. Neyse bakalım ne olacak.
+
+37
+00:21:43,339 --> 00:21:49,120
+Şimdi diyelim ki çok sıkıntıda kalırsak 15 dakika daha şey yaparız
+
+38
+00:21:54,516 --> 00:21:56,435
+şurası sizin output'unuz olsun
+
+39
+00:22:03,476 --> 00:22:16,675
+Yani bu ne demek? Üç tane cluster istiyorsunuz demek. Bu da sizin inputunuz olsun. Bu da ne demek? Örneklerinizin iki tane özelliği var demek.
+
+40
+00:22:16,675 --> 00:22:39,635
+Şimdi her şeyden, özellikten yani her girişin her özelliğinden şeye çıkıştaki her nörona bu bir D yazıyor burada output lattice tek boyutlu çıkış şeyi nedir yapısı.
+
+41
+00:22:39,635 --> 00:22:47,775
+burada her özellikten çıkıştaki her nörona bağlantı var.
+
+42
+00:22:47,775 --> 00:22:50,316
+Mesela bunu şöyle de yapabilirsiniz.
+
+43
+00:22:50,455 --> 00:22:59,376
+Şeyi nasıl yapacağınıza, komşulukları nasıl değerlendireceğinize, tasarımı yaparken, ağa tasarlarken siz karar veriyorsunuz.
+
+44
+00:22:59,415 --> 00:23:03,156
+Bakın komşuluklara göre diyelim ki şimdi 9 tane çıkışımız var.
+
+45
+00:23:03,275 --> 00:23:05,775
+Yani 9 tane klasterımız olsun istiyorsunuz.
+
+46
+00:23:07,295 --> 00:23:08,776
+O zaman şöyle yapabiliyorsunuz.
+
+47
+00:23:08,775 --> 00:23:26,315
+yapabiliyorsunuz. Yine iki özellik olduğunu varsayalım. Bu sizin, şurası input katmanınız, şurası da output katmanınız. O zaman şöyle yapabiliyorsunuz.
+
+48
+00:23:33,748 --> 00:23:35,248
+gittikçe kötüleşiyor.
+
+49
+00:23:40,627 --> 00:23:51,627
+yine her girişten her çıkışa bağlantı var. Bu da iki boyutlu
+
+50
+00:23:53,619 --> 00:24:13,359
+çıkış kafesini gösteriyor. Şimdi burada şeyleriniz, bağlantılarınızın tabii ki öğrenme, klasterin şeylerle olacak, ağırlıkların değiştirilmesiyle olacak.
+
+51
+00:24:13,359 --> 00:24:24,239
+şurada girişlerden çıkışlara ağırlıklarımız var. Ağırlıklar update edilerek çıkışlar girişlere benzetilmeye çalışılacak.
+
+52
+00:24:24,239 --> 00:24:39,959
+Burada yapılan şey o ve gruplama bu şekilde sağlanacak. Yani gelen bilinmeyen örnekler için çıkış bilgileri, giriş bilgilerini benzetilecek şekilde
+
+53
+00:24:39,960 --> 00:25:03,800
+öğrenme ağırlıkların değiştirilmesiyle olacak. Yaptığımız şey bu. Bu da ne demek? Şu demek, diyelim ki burası sizin X girişiniz olsun, bu da sizin VI ağırlığınız olsun.
+
+54
+00:25:03,800 --> 00:25:17,800
+Ben işte şeyde competitive learning de yapmaya çalıştığım şey T anında eğer benim Vİ ağırlığım buradaysa dur şunu şöyle yapalım bir saniye
+
+55
+00:25:17,800 --> 00:25:21,880
+şu benim
+
+56
+00:25:25,587 --> 00:25:49,167
+X girişim olsun. T anında ve İ ağırlığın buradaysa öğrenme şu aslında. Yani T artı bir anında şeyi ve İ ağırlığını aslında şeyden hiçbir farkı yok mantığın. Perseptron'daki gibi. Yani öğrenme her zaman burada ağırlıkların şey yapılmasıyla, update edilmesiyle sağlanıyor.
+
+57
+00:25:49,167 --> 00:25:59,907
+Buradaki öğrenmede mantık ağırlıkların giriş bilgisine benzeyecek şekilde değiştirilmesi.
+
+58
+00:25:59,907 --> 00:26:09,907
+Yani Vİ'den, T1 anındaki Vİ'ye gelme, yani T anında buradaydınız, şuradaydınız, T1 anında şuraya gelmek istiyorsunuz.
+
+59
+00:26:09,907 --> 00:26:29,988
+Bu nasıl olacak? Şöyle bu şey olmak üzere learning rate olmak üzere x-vint buradaki şey fark. Şuradaki şey nedir?
+
+60
+00:26:35,220 --> 00:27:03,819
+Learning Rate'imiz bu. Ne kadar ağırlıkların ne kadar hızlı değişeceğini belirliyoruz. O zaman bizim yapacağımız şey, göstermemiz her sisteme gösterdiğimiz her yeni örnek için çıkışları, girişlere benzetecek şekilde şeyi değiştirmeye çalışmak, ağırlıkları değiştirmeye çalışmak bir convergence noktasında da artık öğrenme tamamlanmış oluyor.
+
+61
+00:27:03,819 --> 00:27:08,859
+o zaman şey olunca galiba daha iyi oluyor şuralarda
+
+62
+00:27:12,596 --> 00:27:16,056
+çok iyi algılayamıyordu. Ortalarda mı daha iyi?
+
+63
+00:27:20,051 --> 00:27:25,351
+artık hiçbir yerde mi? Ortalarda daha iyi galiba. Ne yapsam?
+
+64
+00:27:29,748 --> 00:27:36,748
+ve
+
+65
+00:27:43,571 --> 00:27:53,931
+şey, sözle söyleyeyim mi burasını? O sırada biraz bir beş dakika şarjda kalır. Ben adım adım işlem yapacak işlemleri sözle söyledim. Not alıp işsiz olun.
+
+66
+00:27:54,492 --> 00:28:02,252
+Şimdi ilk yapmamız gereken şey, şeyi kullanacaktım, tahta kullanır gibi kullanacaktım ama sözle anlatayım. O sırada biraz şarj edeyim.
+
+67
+00:28:02,252 --> 00:28:08,752
+ilk aklınız gereken şey giriş örneklerini önünde bir normalize edeceksiniz.
+
+68
+00:28:09,012 --> 00:28:15,531
+Yani işte oradaki özellikleri normalize ederek şeye getireceksiniz.
+
+69
+00:28:15,752 --> 00:28:20,131
+Yani daha önce bundan bahsetmiştik şey olmaması lazım.
+
+70
+00:28:20,272 --> 00:28:25,932
+Diyelim ki birisi boyunuzu gösteriyor işte 183 olarak bir değeri var.
+
+71
+00:28:25,932 --> 00:28:29,432
+Birisi işte ne bileyim yaşınızı gösteriyor.
+
+72
+00:28:29,612 --> 00:28:30,991
+Onun da değeri 22.
+
+73
+00:28:30,991 --> 00:28:48,432
+Biliyorsunuz bu gibi durumlarda eğer şeyler özellikler normalize değilse ağırlıklarından ötürü farklı durumlar oluşmasına yani istenmeyen bir şekilde sonuçların yanlış değerlendirilmesine yol açarlar.
+
+74
+00:28:48,432 --> 00:29:00,271
+O yüzden her zaman yaptığınız gibi burada da önce giriş bilgilerini normalize edeceksiniz. Yani işte bunu min max aralığına veya 0-1 aralığına normalize edebilirsiniz.
+
+75
+00:29:00,271 --> 00:29:09,671
+İkinci olarak yapacağımız şey elinizdeki etiketsiz olan giriş örneklerinden birini random olarak seçeceksiniz.
+
+76
+00:29:09,671 --> 00:29:23,391
+Ve bu giriş örneğinin çıkışa benzerliğini bulacaksınız.
+
+77
+00:29:23,391 --> 00:29:32,811
+Şimdi burada benzerlik ölçümü için sadece girişin ağırlığa benzerliği bulunuyor.
+
+78
+00:29:32,811 --> 00:29:38,851
+Yani aslında bizim benzerlik ölçümü için kullandığımız şey, şöyle yapınca oluyor mu? O da olmuyor.
+
+79
+00:29:39,531 --> 00:29:43,252
+X- ve Y'ye bakarak benzerliği ölçmek.
+
+80
+00:29:43,252 --> 00:30:10,751
+Yani yaptığımız şey tek şey olur, lip distance ile şeye bakarak X girişinin VJ ağırlık değerini, mesafesini ölçerek şey yapmak, en benzer olduğu çıkış nöronunu bulmaya çalışmak, arkasından en benzer olduğu nöron hangisi ise bunun ağırlıklarını değiştireceğiz.
+
+81
+00:30:10,751 --> 00:30:16,111
+yaptığımız şey bu. Şimdi o zaman şöyle bir yazarsam.
+
+82
+00:30:19,923 --> 00:30:33,923
+yapabilirim en azından. Şimdi şöyle düşünelim. Tamam. Şimdi benim D özellikten oluşan
+
+83
+00:30:35,188 --> 00:30:42,188
+ve
+
+84
+00:30:58,163 --> 00:31:01,203
+D özellikten oluşan bir giriş vektörüm var.
+
+85
+00:31:05,203 --> 00:31:07,243
+Şeyi bulmaya çalışıyorum.
+
+86
+00:31:07,663 --> 00:31:11,803
+Hangi çıkış nöronuna daha çok benzediğini bulmaya çalışıyorum.
+
+87
+00:31:12,283 --> 00:31:13,624
+VJ'de
+
+88
+00:31:13,624 --> 00:31:20,084
+J eşittir birden N'e kadar
+
+89
+00:31:20,084 --> 00:31:22,004
+aslında
+
+90
+00:31:22,004 --> 00:31:25,903
+N tane nöronun var.
+
+91
+00:31:25,903 --> 00:31:33,423
+Hocam çok pardon bölüyorum da bir arkadaşımız yazmış chatten şimdi tabletinizin şarjı %1
+
+92
+00:31:37,203 --> 00:31:38,123
+merkezli, örtü.
+
+93
+00:32:47,476 --> 00:33:05,496
+Arkadaşlar, duyuyor musunuz, bağlı mısınız? Siz tamam, bağlısınız. Bu çok eziyet oluyor çünkü o sırada şeyi çıkartınca iPad'in de şarjı bitti. Bir 15 dakika ara verelim. Sizin için de zevksiz bir hal aldığını tahmin ediyorum.
+
+94
+00:33:06,215 --> 00:33:15,715
+Ben yazmaya çalışıp da yazamadıkça ben bir şarj edeyim her ikisini de doğru düzgün devam edelim. Tek başına o ilk 15 dakika yetmedi çünkü.
+
+95
+00:33:15,715 --> 00:33:20,115
+10.45'de, dur 15 dakika, 10.50'de devam ederiz olur mu?
+
+96
+00:33:21,816 --> 00:33:23,115
+Tamam hocam.
+
+97
+00:33:23,295 --> 00:33:24,735
+Tamam, haydi görüşmek üzere.
+
+98
+00:51:47,668 --> 00:51:51,567
+Evet arkadaşlar, bir geldim. Bakalım ne kadar idare edeceğiz.
+
+99
+00:52:06,900 --> 00:52:35,119
+Evet, şimdi kaldığım yerden devam etmek istiyorum. Aslında bizim ilk istediğimiz şey birden D'ye kadar input vektör aslında özelliklerimiz ve bizim yapmaya çalıştığımız şey i. input gösterildiğinde j. nöronu yaklaştırmaya çalışmak.
+
+100
+00:52:35,119 --> 00:52:49,740
+yani şunlar benim çıkış nöronlarımsa bu da benim işte az önce konuştuğum gibi X özelliklerimse yapmaya çalıştığım şey şeyi nedir?
+
+101
+00:52:49,740 --> 00:52:51,559
+İşte dur şöyle yapayım.
+
+102
+00:52:52,339 --> 00:53:00,300
+Yinci inputu yani şu input dediğim örneği Jinci nörona yaklaştırmaya çalışmak.
+
+103
+00:53:00,299 --> 00:53:27,879
+burada aslında bunun için yapmaya çalıştığım şey benim eğer D tane özelliğim var ise bu D tane özellik için iyinci örneğin bütün şeylere bu nörona gelen yani şu mesela şurası V11 ondan sonra işte
+
+104
+00:53:30,300 --> 00:53:36,080
+şurası V2-1 olmak üzere mesafelerini hesaplayacağız.
+
+105
+00:53:36,080 --> 00:53:51,580
+Yani J'inci nöron için mesela işte birinci nörona olan mesafe, ikinci nörona olan mesafe, üçüncü nörona olan mesafe bunları ayrı ayrı hesaplayacağız.
+
+106
+00:53:51,580 --> 00:54:10,519
+ve ondan sonra aslında bu şu demek X giriş örneğinin J. nörona distance'ını hesaplayacağız demek ve bizim bulmak istediğimiz şey minimum distance'lı şey, nöron.
+
+107
+00:54:10,519 --> 00:54:24,699
+yani kim daha yakınsa giriş örneğine kim daha çok benziyorsa winner takes all onun ağırlık değerlerini giriş örneğine benzeyecek şekilde değiştireceğiz.
+
+108
+00:54:24,699 --> 00:54:34,199
+Giriş örneğine benzeyecek şekilde demek ne demek? Örneğin şu kazanan nöron bu olsun.
+
+109
+00:54:34,200 --> 00:54:46,060
+O zaman bu nöronun T artı bir anındaki ağırlıklarını şu şekilde arttıracağız.
+
+110
+00:54:57,940 --> 00:55:14,200
+bunu bu şekilde arttıracağız ve bu şey olana kadar nedir? Eğer ağırlık değerleri değişmiyorsa artık öğrenilmiş demektir. Bu zamana kadar devam edeceğiz.
+
+111
+00:55:14,200 --> 00:55:29,099
+Şimdi burada aslında öğrenme iki türlü yapılabiliyor. Birincisi hard learning. Hard learning'de yapılan şey sadece en çok benzeyen nöronun ağırlıklarını değiştirmek.
+
+112
+00:55:38,387 --> 00:55:51,787
+ikincisi ise soft learning. Burada yapılan şey az önce konuştuğumuz gibi şeylerin sadece kazanan nöronun değil onun komşularını da değiştirmek.
+
+113
+00:56:05,108 --> 00:56:11,108
+Peki o zaman burada şey sorusuna geliyoruz. Komşuluk meselesini nasıl anlayacağız?
+
+114
+00:56:11,108 --> 00:56:15,108
+Şimdi şöyle
+
+115
+00:56:15,108 --> 00:56:17,108
+...
+
+116
+00:56:17,748 --> 00:56:37,527
+şu distance'ın değişimi olsun. Bu da neighborhood'ın değişimi olsun. Şimdi şöyle yaptığınızda bu hard learning yani sadece şey değişiyor.
+
+117
+00:56:41,268 --> 00:57:06,268
+neighborhood sadece bu şekilde bir ve sıfır. Yani jinci nöronsa bir değilse sıfır şeklinde. Soft olduğunda şu şey, soft olduğunda ise bu yavaş değişiyor. Yani şöyle komşuluklar...
+
+118
+00:57:05,715 --> 00:57:08,575
+Şuraya yazamadım.
+
+119
+00:57:13,811 --> 00:57:31,131
+komşuların da değeri birlikte değişiyor. Şimdi komşuluk için ne yapılabilir? Komşuluk için en iyisi aslında Goals fonksiyonunu kullanmak. O zaman diyelim ki şöyle bir şey diyebilirsiniz komşuluk için.
+
+120
+00:57:33,271 --> 00:57:36,912
+Diyelim ki Goals dağılımına göre
+
+121
+00:57:41,811 --> 00:57:44,071
+bir komşuluk fonksiyonunuz olur.
+
+122
+00:57:54,643 --> 00:57:57,104
+şu şeydir biliyorsunuz genişliği.
+
+123
+00:57:59,303 --> 00:58:01,343
+şu da D sıfır noktası.
+
+124
+00:58:02,523 --> 00:58:03,423
+ondan sonra
+
+125
+00:58:03,423 --> 00:58:05,763
+bu
+
+126
+00:58:10,387 --> 00:58:30,207
+şu komşuluğu zamanla azaltırsınız. Yani şöyle bir şey demek istiyorum. Şimdi baktınız ya, şurası aslında komşuluk mesafesini gösteriyor. Başlangıçta biliyorsunuz ilk başlarda, initial durumlarda aslında olay daha yeni başladığı için
+
+127
+00:58:30,207 --> 00:58:40,887
+normalde ki ağırlık değerleri genellikle random değerlerle belirlendiği için ağırlık değerleri gerçek girişlere uzak.
+
+128
+00:58:41,007 --> 00:58:46,627
+Dolayısıyla update'leri yaparken, komşuluğu değerlendirirken şey alabilirsiniz.
+
+129
+00:58:46,627 --> 00:58:54,147
+Yani burada görüldüğü gibi mesafeyi geniş alabilirsiniz bu komşuluklara bakarken.
+
+130
+00:58:54,147 --> 00:59:01,967
+ama zamanla bu şeyi azaltarak, nedir, sigma'yı azaltarak şöyle bir şey yapabilirsiniz.
+
+131
+00:59:01,967 --> 00:59:08,627
+Sadece daha yakındaki komşuların değerinin değişmesini sağlayabilirsiniz.
+
+132
+00:59:09,568 --> 00:59:23,968
+Bu sayede de şey yaptığımızda sadece en çok benzeyen nöronla birlikte adımlar ilerledikçe sadece en çok benzeyen nöronla birlikte ona en yakın olan komşular azaltılıyor.
+
+133
+00:59:24,148 --> 00:59:40,148
+Dolayısıyla komşuluğu belirlemek için kullanılabilecek şeylerden birisi bu GOS fonksiyonudur. O zaman da şöyle olur. Herhangi bir ağırlık değerinin değişmesini belirlerken şöyle belirlersiniz.
+
+134
+00:59:40,147 --> 01:00:02,787
+t-nci adındaki değeri artı işte komşuluk değeri neighborhood function'ı ondan sonra işte ondan sonrası aynı öğrenme oranı çarpı işte x'i eksi ve i'ci dersiniz.
+
+135
+01:00:02,787 --> 01:00:11,127
+Böylece işin içine yakındaki komşuların değişmesi durumunu da katmış olursunuz.
+
+136
+01:00:11,207 --> 01:00:13,427
+Buraya kadar sormak istediğiniz bir şey var mı?
+
+137
+01:00:20,307 --> 01:00:40,867
+Peki. Şimdi şeyde, öğrenme de aslında biliyorsunuz öğrenme oranları aslında ne kadar hızlı öğreneceğini belirliyor. Biz buradaki şeyin öğrenme oranı meselesinin aslında şeyden bir farkı yok. Backpropagation'da vesaire kullandığımız öğrenme oranı meselesinden farkı yok.
+
+138
+01:00:40,867 --> 01:01:05,168
+yani bu bire ne kadar yakın olursa ağırlık o kadar fazla değişecek. O zaman öğrenmede o kadar hızlı olacak. Ama biz neyi istiyoruz? Yani şimdi benim X girişim şuradaysa, işte ağırlık değerim de buradaysa, işte bunun ben yavaş yavaş şöyle değişmesini, X'e yaklaşmasını isterim.
+
+139
+01:01:05,168 --> 01:01:19,248
+çünkü geçip gitmesin diye ama başlangıçta çok uzak olduğu için öğrenme oranını şey yaparsam, öğrenme oranını yüksek tutarsam hızla yaklaşır ikisi.
+
+140
+01:01:19,248 --> 01:01:29,108
+Sonra yavaş yavaş doğru yere ulaşmasını sağlarım. O yüzden bunu başlangıçta şey yapmak mümkün.
+
+141
+01:01:29,107 --> 01:01:40,287
+Yani bir şöyle diyeyim zamana bağlı olarak öğrenme oranını da değiştirmek mümkün.
+
+142
+01:01:47,987 --> 01:01:59,687
+mesela H de şeye göre değişecek ya, H, I, J de T'ye göre, zamana göre değişecek ya, zamanla azaltılacak.
+
+143
+01:01:59,868 --> 01:02:06,767
+Yani şu H, I, J'ye şey dedik, E üzeri eksi D kare bölü 2 D kare.
+
+144
+01:02:06,767 --> 01:02:26,267
+bunu da zamana göre azalmasını şöyle yapabilirsiniz. Başlangıçta bir değerden başlatırsınız. Ondan sonra zamana göre şu bir T11 sabit olmak üzere T'de işte kaçıncı iterasyonda olduğunuzu şu iterasyonu gösteriyor.
+
+145
+01:02:26,267 --> 01:02:30,227
+gösterecek şekilde şey yapabilirsiniz.
+
+146
+01:02:31,767 --> 01:02:35,267
+GAUSE evrenizin şu şeyin.
+
+147
+01:02:38,387 --> 01:02:41,047
+Düzgün olmadı dur bir dakika şöyle yapalım.
+
+148
+01:02:43,547 --> 01:02:43,987
+Şöyle.
+
+149
+01:02:47,387 --> 01:02:53,627
+Şimdi bu ne kadar genişse o kadar komşuluğa bakıyor.
+
+150
+01:02:53,627 --> 01:02:59,227
+az önce konuştuğumuz gibi bunu T'ye bağlı olarak zaman içerisinde daraltabilirsiniz.
+
+151
+01:02:59,388 --> 01:03:02,208
+Daraltarak yakın komşuluğa bakmasını sağlayabilirsiniz.
+
+152
+01:03:02,348 --> 01:03:14,747
+Bunun da yapmanın yolu birinci adımda seçtiğiniz sigma neyse, fi neyse işte neyse bunun zamana bağlı olarak şu şekilde küçültmektir değerini.
+
+153
+01:03:14,747 --> 01:03:18,708
+O zaman baktığı komşuluk böyle değişecek.
+
+154
+01:03:18,708 --> 01:03:29,328
+aynı mantıkla buradaki bu komşuluk bilgisini şeyde de kullanırsanız öğrenme oranında da kullanırsanız öğrenme oranını baştan çok büyük başlatıp daha sonra küçültebilirsiniz.
+
+155
+01:03:29,708 --> 01:03:31,508
+Buraya kadar sormak istediğiniz bir şey var mı?
+
+156
+01:03:34,407 --> 01:03:40,728
+Oradasınız değil mi? Bakıyorum. Herkes beni duyuyor. Bir sıkıntı yok değil mi? Birisi cevap verebilir mi?
+
+157
+01:03:42,008 --> 01:03:42,968
+Duyuyoruz hocam.
+
+158
+01:03:43,848 --> 01:03:47,627
+Tamam harika. Şimdi o zaman bir tane örnek üzerinde göstermek istiyorum.
+
+159
+01:03:47,627 --> 01:03:52,028
+Diyelim ki 4 tane cluster oluşturmak istiyorsunuz.
+
+160
+01:03:52,487 --> 01:03:55,447
+Ve burası sizin output unitiniz olsun.
+
+161
+01:03:57,447 --> 01:04:00,627
+Ve 2 tane de özelliği olan örnekleriniz var.
+
+162
+01:04:00,728 --> 01:04:02,767
+Burası da input unitiniz olsun.
+
+163
+01:04:06,848 --> 01:04:08,288
+Tam tersi.
+
+164
+01:04:11,923 --> 01:04:13,563
+dur geri alın
+
+165
+01:04:20,563 --> 01:04:30,803
+tam tersini yapacaktım. Çünkü kolay olsun istemiştim. O yüzden şu output unitiniz...
+
+166
+01:04:31,764 --> 01:04:39,163
+dört özellikli şeyleriniz var. Örnekleriniz var. Şu da input unitiniz.
+
+167
+01:04:49,588 --> 01:04:50,967
+şu da input ümitimiz.
+
+168
+01:04:51,687 --> 01:04:53,048
+Bir tane klasterınız olacak.
+
+169
+01:04:53,647 --> 01:04:55,727
+Şimdi örnekleriniz
+
+170
+01:05:02,483 --> 01:05:06,063
+şu şekilde verilmiş
+
+171
+01:05:18,228 --> 01:05:38,047
+dört tane örneğimiz var. Bunlar bu şekilde verilmiş ve N-Brut'un da kolay olması açısından sıfır aldığımızı varsayalım. Yani komşuluğa hiç bakmayacağız. Hard learning yapacağız. Sadece kazanan çıkışın ağırlıkları değişecek.
+
+172
+01:05:38,047 --> 01:06:02,908
+Şimdi öğrenme oranını da şöyle başlangıçta ilk işte dört adım için bir ile dört adım arasında 0.6 aldığımızı işte sonra yavaş yavaş azaltıldığını varsayalım.
+
+173
+01:06:02,908 --> 01:06:12,207
+ve işe ilk başladığımız zaman da ağırlıkların şu şekilde random belirlendiğini varsayalım.
+
+174
+01:06:23,443 --> 01:06:30,443
+ve
+
+175
+01:06:29,588 --> 01:06:43,468
+0.2, 0.6, 0.5, 0.9, ondan sonra 0.8, 0.4, 0.7 ve 0.3 olarak belirlendiğini varsayalım.
+
+176
+01:06:44,387 --> 01:06:51,907
+Unit 1 dediği output 1 oraya gelen ağırlıklar sırasıyla 0.2, 0.6, 0.5, 0.9.
+
+177
+01:06:51,907 --> 01:06:59,667
+ikinci şeye gelen cluster'a gelen ağırlıklar da 08, 04, 07, 03.
+
+178
+01:06:59,667 --> 01:07:05,707
+Şimdi şöyle bir şey yapalım. İyi bir örneği geldiğinde.
+
+179
+01:07:11,731 --> 01:07:31,492
+ne olacak? Bir ona bakalım. Şimdi birinci şey olan distance şu şekilde olacak. İşte nokta 2 eksi birin karesi artı nokta 6 eksi birin karesi
+
+180
+01:07:39,284 --> 01:07:48,004
+artı nokta 5 eksi sıfırın karesi artı nokta 9 eksi sıfırın karesinin kare kökü olacak.
+
+181
+01:07:48,643 --> 01:07:56,884
+Bu şey olan birinci nörona olan mesafe.
+
+182
+01:07:56,884 --> 01:08:11,624
+2. nöron olan mesafede 0.8-1'in karesi artı 0.4-1'in karesi artı 0.7-0'ın karesi artı 0.3-0'ın karesi olacak.
+
+183
+01:08:11,624 --> 01:08:25,124
+Şimdi bakıldığında bu 1.86 çıkmış bu da 0.98 çıkmış o zaman bu bizim şeyimiz olacak binarımız 2. nöronmuş.
+
+184
+01:08:25,124 --> 01:08:35,063
+Zaten baktığımızda da ikinci nörona birazcık daha benziyor gibi.
+
+185
+01:08:36,563 --> 01:08:41,263
+Dolayısıyla bizim birinci girişimiz ikinci nörona daha çok benziyor gibi.
+
+186
+01:08:42,023 --> 01:08:46,063
+O yüzden 0.98'e ikinci nöron kazanıyor.
+
+187
+01:08:46,563 --> 01:08:49,243
+Ağırlıklarını da şu şekilde değiştiriyoruz.
+
+188
+01:08:54,131 --> 01:09:08,031
+Şimdi 0.8.4.7.3 artı 0.6 çarpı öğrenme oranı bu.
+
+189
+01:09:08,031 --> 01:09:16,211
+1, 1, 0, 0, 0, 0, 8, 0, 4, 7, 3.
+
+190
+01:09:16,511 --> 01:09:21,992
+Şimdi şurası V2T idi.
+
+191
+01:09:22,492 --> 01:09:24,371
+Bu da delta V.
+
+192
+01:09:26,371 --> 01:09:27,451
+Ne olacak?
+
+193
+01:09:27,631 --> 01:09:30,271
+İşte 0,6 öğrenme oranım benim.
+
+194
+01:09:30,751 --> 01:09:36,071
+Çarpı işte X-VT olmuş olacak.
+
+195
+01:09:36,071 --> 01:09:41,191
+o zaman bu şeyler hesaplandığımda şu şekilde çıkmış.
+
+196
+01:09:42,251 --> 01:09:49,671
+Nokta 92, nokta 76, nokta 28, nokta 12.
+
+197
+01:09:49,671 --> 01:09:51,651
+Şimdi burada şeyi görmenizi istiyorum.
+
+198
+01:09:53,191 --> 01:09:58,951
+Baktığımız zaman bizim aslında İ1 girişimiz 1100.
+
+199
+01:09:59,291 --> 01:10:02,191
+Şurada gördüğünüz gibi İ1 girişimiz 1100.
+
+200
+01:10:02,191 --> 01:10:22,011
+Şimdi İ2'ye neye benzedi ikinci ağırlıklar? V2 yani şu output unitine olan ikinci klastere olan ağırlıklar neye benzedi? Bakın 0.92, 0.76 buradaki İ1'in 1.1 değerlerine yaklaştı. 0.28, 0.12 bunlar da 0.0 değerlerine yaklaştı.
+
+201
+01:10:22,011 --> 01:10:39,651
+başlangıçta ikinci klasterın ağırlıkları şu şekilde 0.8, 0.4, 0.7, 0.3 şeklindeydi. Ne oldu? Şu ikisi büyüdü. Yani şeye yaklaştı. Şu birinci örneğe benzemeye başladı. Şu ikisi de küçüldü. Şu şekilde sıfıra yaklaştı.
+
+202
+01:10:39,651 --> 01:11:00,711
+anlatmaya çalıştığım şey buydu. Burada olan şey her gelen örnek için ağırlık değerlerini işte şeye göre hangi ağırlık değerleri bu örneğe daha çok benziyorsa bu örneğe daha da çok benzetmek için değiştiriyorsunuz.
+
+203
+01:11:00,711 --> 01:11:15,711
+yaptığınız şey bu. Bu anlaşıldı mı? Bir daha üzerinden geçeyim mi? Şöyle göstereyim. Şimdi bizim şurada update'imiz şu şekilde olacaktı. Şuradan başlayayım. Önce şeyi hesaplıyorduk.
+
+204
+01:11:15,712 --> 01:11:27,992
+bütün her örneğin şeye, her örnek için ağırlık değerlerinin bu örneğe mesafesini hesaplıyorduk.
+
+205
+01:11:27,992 --> 01:11:44,111
+Yani eğer şu benim V1, V2, V3 olarak yani aslında V1 dediğim şey, V1, V2, V2 dediğim şey, V1, V2, V2 falan şeklinde
+
+206
+01:11:44,111 --> 01:11:52,791
+aslında şu VJ'yi doğrudan şey gösteriyor, hangi çıkıştan bahsettiğimi gösteriyor, şu J'in Coutput.
+
+207
+01:11:53,352 --> 01:12:02,671
+Direkt burada öğrenme ağırlıklar şeyi temsil ediyor, çıkış sınıflarını temsil ediyor, ağırlıkların değiştirilmesiyle oluyor.
+
+208
+01:12:02,671 --> 01:12:18,771
+kim kazanırsa kim daha çok benziyorsa onun ağırlıklarını şu şekilde burada gördüğünüz şekilde bu kazanan J dediğim aslında şurada J dediğim şey benim şuradaki J winning nöron.
+
+209
+01:12:25,140 --> 01:12:32,140
+onun ağırlıklarını update ediyorum. Aslında eğer şey...
+
+210
+01:12:33,619 --> 01:12:59,300
+Neybrut 0's da sadece binik nöronun ağırlıklarını update ediyorum. Şeyse de değilse de zaten Neybrut 0 alınmadıysa da burada gördüğünüz şekilde komşuluğa göre bir update var. Yani 0 aldıysan bu hiç değişmeyecek demektir. Almadıysan da ona göre bir değişim var. Şimdi burada anladınız mı ne yaptığımızı? Anlatıp tekrar etmemi ister misiniz?
+
+211
+01:13:03,604 --> 01:13:04,543
+Anladık hocam.
+
+212
+01:13:05,263 --> 01:13:09,343
+Tamam, peki. O zaman uzun iterasyonlar sonrasında
+
+213
+01:13:16,595 --> 01:13:18,595
+şöyle bir şey olmuş
+
+214
+01:13:22,323 --> 01:13:44,323
+unit 1, 0, 0, 0, 5, 1, 0 unit 2 de 1.0, 0, 5, 0, 0 haline gelmiş. Şimdi benim örneklerim şeydi, input örneklerim şu şekildeydi baktığınız zaman.
+
+215
+01:13:44,323 --> 01:13:48,844
+i1'im 1, 1, 0, 0'dı.
+
+216
+01:13:49,323 --> 01:13:52,244
+i2'im 0, 0, 0, 1'di.
+
+217
+01:13:52,783 --> 01:13:56,664
+i3'üm de 1, 0, 0, 0'dı.
+
+218
+01:13:56,664 --> 01:14:00,523
+i4'üm 0, 0, 1, 1'di.
+
+219
+01:14:01,184 --> 01:14:03,743
+O zaman ben şunu görüyorum.
+
+220
+01:14:03,743 --> 01:14:27,383
+Aslında i1 ile i3 unit 2 klasterında yani ikinci klasterda baktığım zaman çünkü i1 ile i3'e bakarsanız bunlar şeye daha yakın i1 ile i3 unit 2'ye daha yakın daha benzer durumda
+
+221
+01:14:27,383 --> 01:14:44,483
+i2 ile i4 de unit 1'e daha yakın durumda baktığınız zaman şey olarak i2 ve i4 de unit 1'e daha benzer, daha yakın olarak belirlenmiş oluyor.
+
+222
+01:14:44,483 --> 01:14:47,483
+Bu şekilde clusteringinizi yapmış oluyorsunuz.
+
+223
+01:14:47,483 --> 01:14:51,723
+Yani şöyle baktığınız zaman şurada gelen işte
+
+224
+01:14:58,644 --> 01:15:14,064
+4 özellikli girişleriniz için gelen örneklerin şeyine baktığınızda, clustering'inize baktığınızda i1 ile i3, unit 2'ye yakın, i2 ile i4 de unit 1'e yakın.
+
+225
+01:15:14,064 --> 01:15:34,123
+Şimdi yeni bir örnek gelirse, bilinmeyen bir örnek gelirse, örneğin i5 işte 1, 1, 1, 0 geldi. Böyle bir örnek gelirse o zaman bunun distansı, birinci şey olan distansı, birinci ünite olan distansı ne olacak?
+
+226
+01:15:34,123 --> 01:15:58,263
+0-1'in karesi artı 0-1'in karesi artı 0-5-1'in karesi artı 1-0'ın karesi bu 3.25 etmiş.
+
+227
+01:15:58,263 --> 01:16:12,084
+2'ye olan distance'ı da 1.25 etmiş. Bu durumda baktığınızda şimdi zaten daha benzer gibi duruyor baktığınızda.
+
+228
+01:16:12,084 --> 01:16:27,343
+Yani çok yakın olmasa da i5 unit 2'ye daha çok benzer gibi duruyor. i5'in o zaman unit 2 klastrımda yer alabileceğini, ona daha çok benzer olduğunu görmüş oluyoruz.
+
+229
+01:16:27,343 --> 01:16:30,743
+buraya kadar sormak isteniniz bir şey var mı?
+
+230
+01:16:31,663 --> 01:16:39,504
+Hocam bilinmeyen bir örnek geldiğinde unit 2'ye ait olduğunu bulduk ya. Peki sistemi güncelliyor muyuz ağırlıkları?
+
+231
+01:16:40,083 --> 01:16:50,823
+Güzel bir soru. Şimdi bu senin şeyinle ilgili, amacınla, hedefinle ilgili. Eğer öğrenme devam ediyor ise güncelleyebilirsin.
+
+232
+01:16:50,824 --> 01:16:55,184
+yapmaya çalıştığın şey sadece yani öğrenme tamamlanmış.
+
+233
+01:16:55,184 --> 01:17:00,383
+Sen sadece işte yeni bir örnek geldiğinde onun kime benzediğini bulmak istiyorsun.
+
+234
+01:17:00,804 --> 01:17:02,783
+O zaman hiçbir şeyi değiştirmezsin.
+
+235
+01:17:02,944 --> 01:17:04,983
+Bu tamamen gerçekten bu böyle.
+
+236
+01:17:06,044 --> 01:17:08,343
+Senin şeyinle ilgili, hedefinle ilgili.
+
+237
+01:17:08,744 --> 01:17:11,783
+Şimdi şey yapılıyor ya, oralarda da çok dikkat etmek lazım.
+
+238
+01:17:12,823 --> 01:17:18,444
+Bazı çalışmalarda şey deniyor işte bu öğrenmeye devam etsin, yeni gelenleri de öğrensin deniyor.
+
+239
+01:17:18,444 --> 01:17:29,964
+onu da çok boşu boş bırakmamak lazım çünkü yeni gelenleri öğrensin dediğimizde aslında şöyle bir şey vardır. Stability, plasticity dilema diye bir şey vardır.
+
+240
+01:17:29,964 --> 01:17:42,203
+Yani hem stable kalacaksın yani şeyi öğrendiğinden çok kopmayacaksın. Hem de plasticity dediği de hem de esnek olacaksın.
+
+241
+01:17:42,203 --> 01:18:01,983
+yeni gelenleri de öğrenerek daha genellemeye gidebilir hale geleceksin. Oralarda çok dikkat etmek gerekiyor. Yani yeni gelen bir örneğin öğrenmek uygun olur diye düşünüyorsan bunu da ekleyecek şekilde öğrenmeni update etmeyesin.
+
+242
+01:18:01,983 --> 01:18:07,724
+ama sadece yeni gelenin benzerliğini bulmak benim için yeterli. Ben öğrenmek istemiyorum.
+
+243
+01:18:07,843 --> 01:18:14,063
+Öğrenilmiş yapımın aslında iyi oturduğunu düşünüyorum dersen öğrenmezsin. Bilmiyorum cevabı oldu mu sorun?
+
+244
+01:18:14,523 --> 01:18:15,663
+Anladım hocam, evet oldu.
+
+245
+01:18:16,603 --> 01:18:20,584
+Peki, şimdi şeyle devam etmek istiyorum ben.
+
+246
+01:18:21,403 --> 01:18:24,644
+Şimdi aslında şöyle bir şey yapacaktım, onu en sona bıraktım.
+
+247
+01:18:25,443 --> 01:18:28,743
+Gözlümünün mixture modeli de unsupervised learning'de anlatacaktım.
+
+248
+01:18:28,743 --> 01:18:36,383
+fakat onu sona bıraktım anlatacağım konular bittikten sonra anlatacağım çünkü o biraz daha böyle hani
+
+249
+01:18:38,931 --> 01:18:44,211
+şu anda özellikle son şeylerde daha da az kullanılıyor göğsünün içi model.
+
+250
+01:18:44,791 --> 01:18:53,031
+Önce sözde ne olduğundan bahsedeyim. Ondan sonra ileride vaktimiz kalırsa, yani önce konuyu bilmeniz için bahsedeyim.
+
+251
+01:18:53,111 --> 01:18:59,772
+İleride vaktimiz kalırsa onu anlatacağım. Dediğim gibi hani çok da böyle artık çok fazla kullanılmıyor.
+
+252
+01:19:00,192 --> 01:19:06,071
+Rahatlığından ötürü genelde herkes işte k-means kullanıyor. Şimdi derin öğrenmede otoenkoder çıktı falan.
+
+253
+01:19:06,071 --> 01:19:22,112
+O yüzden sadece genel bir bilgi vereyim. Gaussian Mixed model şu, diyelim ki aslında sizin dışarıdan gördüğünüz bu örnekler bilinmeyen, sınıfları belli olmayan etiketsiz örnekleriniz var.
+
+254
+01:19:22,112 --> 01:19:42,571
+Ama bunlar aslında şu iki Gaussian dağılımına sahip olan örneklerin aslında iki cluster'a benzerliklerine göre dağılmış olduğu şeye ait, iki cluster'ın durumuna ait dağılımlar
+
+255
+01:19:42,571 --> 01:19:54,431
+Gözün Mixture modelinin yaptığı şey bu şeyleri clusterların yani clusterdaki örnekleri bulup clusterları çıkarmaya çalışmak.
+
+256
+01:19:54,571 --> 01:20:02,711
+Yani ben dışarıdan şunu görüyorum çünkü neden? Örneklerim etiketsiz. O yüzden Mixture bir model görüyorum, Mixture bir bilgi görüyorum.
+
+257
+01:20:02,711 --> 01:20:16,472
+yapmaya çalıştığım şey yine Kavniis benzeri bir yaklaşımla expectation, maximization aslında orada yapılan şey şeyleri çıkarmaya çalışmak yani burada iki klaster var bunları bulmaya çalışmak.
+
+258
+01:20:16,472 --> 01:20:28,431
+Bunun Kavniis'ten farkı burada aslında Kavniis'te çok belirgin bir şekilde şeyleri ayırmak vardı yani klasterları ayırmak vardı.
+
+259
+01:20:28,431 --> 01:20:41,152
+burada hangi tarafa daha yakın olduğuna bakılıyor. Yani yakınlık bilgisi de işin içine giriyor ve aslında K-Means'ten çok daha başarılı bir clustering yapıyor Gaussian mixture model.
+
+260
+01:20:41,771 --> 01:20:54,931
+Pek çok çalışmada önce K-Means yapılıp clusterlar bulunuyor. Onun üzerinden Gaussian mixture model geçirilerek şey iyileştiriliyor, clustering sonuçları iyileştiriliyor.
+
+261
+01:20:54,931 --> 01:21:09,051
+Fakat dediğim gibi son yıllarda belki şeyden ötürü, iştenmikinin fazlalığından veya o kadar hassasiyete gerek kalmadığından ötürü, şeyde çok kullanılırdı mesela görüntüde çok kullanılırdı,
+
+262
+01:21:09,051 --> 01:21:17,471
+gözsün, x-chim model, clustering yapılması hissen de çok fazla kullanılmıyor. O yüzden ben bunu anlatıyorum aslında.
+
+263
+01:21:17,471 --> 01:21:35,531
+sona atacağım bütün hani asıl önemli olan bilinmesinin daha öncelikli olduğunu düşündüğüm daha çok kullanılan şeyler bittikten sonra, yöntemler bittikten sonra zaman kalırsa ki kalır büyük bir ihtimalle bundan da bahsedeceğim.
+
+264
+01:21:35,531 --> 01:21:43,271
+Şimdi buraya kadar sormak istediğiniz bir şey var mı? Unsupervised learning ile ilgili aklınıza takılan öğrenmek istediniz.
+
+265
+01:21:43,271 --> 01:21:47,372
+Sonuçta bu self-organizing map'ti, competitive learning dediğimiz şey.
+
+266
+01:21:47,372 --> 01:21:50,471
+Self-organized map'ti.
+
+267
+01:21:51,431 --> 01:21:58,831
+Yaptığımız şey bir, onu özetleyeyim şurada.
+
+268
+01:22:06,963 --> 01:22:13,904
+Bir initialization yaptık ve ağırlık değerlerine ilk değerler atadık.
+
+269
+01:22:21,043 --> 01:22:38,283
+ikincisi sampling yaptık. Bir x vektörü alınır. Yani işte bir x vektörünü sisteme göstermiş oluruz.
+
+270
+01:22:38,283 --> 01:23:02,343
+üçüncüsü competition yani işte bu X örneğinin en çok benzediği ağırlık vektörü belirleniyor. Ondan sonra dördüncüsü de updating kazanan en çok benzeyen nöron ve komşularının ağırlıkları değişiyor.
+
+271
+01:23:02,343 --> 01:23:11,623
+yani burada ya komşuluk değeri sıfır alınarak veya işte bir komşuluk fonksiyonu kullanılarak komşuluklarının ağırlıkları değişiyor.
+
+272
+01:23:11,623 --> 01:23:25,404
+Beşincisi de adaptation, kazanan ve komşuları girişe daha çok benzer halde geliyorlar.
+
+273
+01:23:25,404 --> 01:23:44,124
+ve bu işlem şey olana kadar nedir konverjans sağlanana kadar yani işte şey ağırlık değerleri artık belli bir miktardan daha fazla değişmeyene kadar ikinci adımdan yeni bir örnek gösterilerek devam ediyor.
+
+274
+01:23:44,883 --> 01:23:54,003
+Peki şimdi burada başka soracak bir şeyimiz yoksa bir 10 dakika ara verelim şeyle devam edeceğim reinforcement learning ile devam edeceğim. Uygun mudur?
+
+275
+01:23:57,747 --> 01:24:10,487
+olur hocam. Tamam peki o zaman. O arada ben de şarj işlemlerimi tekrardan yapayım. Bu yüzde bire inmiş yazık çünkü. Tamam hadi on dakika sonra görüşürüz. On beş, yirmi beş, otuz beşte.
+
+276
+01:36:32,243 --> 01:36:39,383
+Şimdi arkadaşlar, şimdi size şeyden bahsedeceğim, reinforcement learning'den bahsedeceğim.
+
+277
+01:36:41,243 --> 01:36:48,764
+Reinforcement learning, şimdi normalde biz şeyi gördük, supervised learning'de işte bizim şeylerimiz var.
+
+278
+01:36:49,403 --> 01:36:55,223
+Aslında X girişlerimiz var ve bu X girişleri için şeylerimiz veriliyor.
+
+279
+01:36:56,504 --> 01:36:58,523
+Çıkışların ne olacağı bize veriliyor.
+
+280
+01:36:59,503 --> 01:37:04,723
+Unsupervised learning'te de sadece giriş bilgileri veriliyor.
+
+281
+01:37:04,843 --> 01:37:09,563
+Biz bu giriş bilgilerine göre elimizdeki örnekleri grupluyoruz.
+
+282
+01:37:09,563 --> 01:37:22,303
+Aslında baktığımızda her ikisinde de ağırlıklı olarak işte istatiksel bilgilere göre yani geçmişteki durumlara göre, örneklere göre bir öğrenme işlemi gerçekleştiriliyor burada.
+
+283
+01:37:22,303 --> 01:37:24,703
+şeyde ise
+
+284
+01:37:24,703 --> 01:37:26,703
+reinforcement learning'de ise
+
+285
+01:37:26,703 --> 01:37:28,743
+aslında gerçek
+
+286
+01:37:28,743 --> 01:37:30,503
+dünyadaki öğrenmeye
+
+287
+01:37:30,503 --> 01:37:32,663
+daha çok benzeyen bir yapı var.
+
+288
+01:37:32,863 --> 01:37:34,723
+Nedir? Mesela şeyi
+
+289
+01:37:34,723 --> 01:37:36,543
+düşünün. İşte bir tane
+
+290
+01:37:36,543 --> 01:37:37,483
+köpeğiniz var.
+
+291
+01:37:38,783 --> 01:37:40,523
+Köpeğinizi eğitiyorsunuz. Eğer
+
+292
+01:37:40,523 --> 01:37:42,803
+işte sopa atıp
+
+293
+01:37:42,803 --> 01:37:44,823
+sopayı geri getirmesini öğretmeye
+
+294
+01:37:44,823 --> 01:37:46,743
+çalışıyorsunuz. Eğer sopayı
+
+295
+01:37:46,743 --> 01:37:47,883
+geri getirirse
+
+296
+01:37:47,883 --> 01:37:50,743
+ona işte diyelim ki kemik veriyorsunuz.
+
+297
+01:37:50,743 --> 01:37:58,864
+O zaman ne oluyor? O bir ödül alarak, ödül alıyor için o şeyi yapması gerektiğini öğreniyor.
+
+298
+01:37:59,364 --> 01:38:05,104
+Yani işte sopayı atıldığında gider geri getirirsem ben buradan ödül alacağım diye.
+
+299
+01:38:05,604 --> 01:38:09,083
+Bunun yapması gerektiğini öğreniyor.
+
+300
+01:38:09,443 --> 01:38:13,623
+Şimdi şey burada, Re-Course Learning tamamen bu aslında.
+
+301
+01:38:13,623 --> 01:38:19,983
+Yani ödül ceza mekanizmasıyla pekiştirmeli öğrenme denilen şey Türkçe'de.
+
+302
+01:38:20,443 --> 01:38:23,623
+Eskiden ödül ceza ile öğrenme diye başlamıştı.
+
+303
+01:38:23,723 --> 01:38:29,163
+Fakat şimdi pekiştirmeli öğrenme en çok kullanılan şeyi Türkçe karşılığı.
+
+304
+01:38:29,983 --> 01:38:36,203
+Burada yapılan şey ödül ve ceza mekanizmasıyla aslında şeylerde olduğu gibi,
+
+305
+01:38:36,363 --> 01:38:41,044
+supervised learning'te olduğu gibi tam bir etiket yok burada.
+
+306
+01:38:41,044 --> 01:38:52,784
+sadece yapılan şeylere karşı, hareketlere yapılan işlere karşı bir ödül veya ceza kazanmak var.
+
+307
+01:38:53,144 --> 01:38:56,023
+Burada yapılan şey mantık bu.
+
+308
+01:38:56,023 --> 01:39:01,004
+O zaman da niye bu kadar peki son yıllarda çok popüler oldu?
+
+309
+01:39:01,404 --> 01:39:04,984
+Çünkü oyunlarda çok kullanılabilir bir yapı bu aslında.
+
+310
+01:39:05,484 --> 01:39:11,023
+Yani önce aslında şeylerde kullanılarak başlandı, robotik çalışmalarında kullanılarak başlandı.
+
+311
+01:39:11,044 --> 01:39:25,824
+Nedir? Çünkü robotik çalışmalarında, diyelim ki işte bir şeyde, ne bileyim, zihir bazların olduğu bir bölgede bir şeyin çalışmasını istiyorsunuz.
+
+312
+01:39:25,883 --> 01:39:28,904
+Robotun bir takım işler yapmasını istiyorsunuz.
+
+313
+01:39:29,243 --> 01:39:33,243
+Fakat ona şeyi söyleyemiyorsunuz.
+
+314
+01:39:33,363 --> 01:39:35,924
+Yani bir etiketleme bir şey yok.
+
+315
+01:39:35,923 --> 01:39:42,063
+Mesela diyorsunuz ki işte o bölgede işte bilmem ne taşını getirirsen ödüldür bu.
+
+316
+01:39:42,443 --> 01:39:44,523
+İşte duvara çarparsan cezadır.
+
+317
+01:39:44,983 --> 01:39:51,863
+Bu şekilde ödül ve ceza mekanizmasıyla yapacağı işe yönlendiriyorsunuz.
+
+318
+01:39:51,943 --> 01:39:52,783
+Mesela nedir?
+
+319
+01:39:53,003 --> 01:40:00,023
+İşte diyelim ki işte bir şirket var sürekli müşterilerine mail gönderiyor.
+
+320
+01:40:00,000 --> 01:40:20,719
+gönderiyor veya sürekli müşterilerine promosyon satışlarından mesajlar gönderiyor. Eğer şey azalırsa, insanların ilgisinin azaldığını görürse bunu aslında çok yaptığını fark edip ondan sonra ne yapıyor?
+
+321
+01:40:20,719 --> 01:40:27,000
+diyor ki demek ki benim bu kadar çok sürekli mesajlarla karşı tarafı bezdirmemem gerekiyor.
+
+322
+01:40:27,239 --> 01:40:42,180
+Unsubscribe falan oluyoruz ya beğenmediğimiz zaman çok fazla mesaj bombardımanı eğer bir şey tarafından oluyorsak firma tarafından yani pek çoğumuzun yaptığı şey ortamdan unsubscribe olup uzaklaşmak.
+
+323
+01:40:42,180 --> 01:40:48,619
+Yani o da bakıyor diyor ki aa yani müşteri kaybetmeye başlıyorum o zaman ben bu mesaj bombardımanını keseyim diyor.
+
+324
+01:40:48,619 --> 01:40:55,139
+yani bu aslında gerçekten reinforcement learning ile yapılan bir şey.
+
+325
+01:40:55,759 --> 01:41:09,159
+Veya şey düşünün bu gerçekten olan bir uygulama bunu Adobe'nin yanılmıyorsam ve Ali Baba'nın da hatırlamıyorum yaptığı uygulamalardan biri değişik ve güzel bir uygulama aslında.
+
+326
+01:41:09,159 --> 01:41:36,579
+örnek şöyle normalde bu şeyler var ya dijital advertising'de sayfaları reklam veriyorlar firmalar işte ne bileyim Nike mesela siz sayfada gezinirken diyelim ki spor ayakkabı diye keyword verdiniz Nike size şak diye orada siz de bunu çok sık yaşıyorsunuzdur sağ köşede bir Nike reklamı görür hale geliyorsunuz.
+
+327
+01:41:36,579 --> 01:41:48,739
+Şimdi bu reklamların gösterilmesi nasıl oluyor aslında? Şöyle oluyor. Hedef kullanıcıyı aslında belirliyorlar öncelikle. Mesela nedir?
+
+328
+01:41:48,739 --> 01:42:05,199
+İşte diyelim ki şu türdeki kullanıcılar aslında Nike ayakkabı alan kullanıcılar ama bilmem başka türdeki kullanıcılar ne bileyim çok özel ne var bilmiyorum. Basketbol ayakkabısı mesela özel bir ayakkabı.
+
+329
+01:42:05,199 --> 01:42:14,399
+diyelim ki onlara otur ayakkabıları gösteriyor. İşte bir başkasına daha moda olan aslında sporla çok da ilgisi olmayan spor ayakkabıları gösteriyor falan.
+
+330
+01:42:14,779 --> 01:42:20,019
+O nasıl oluyor? Sizin soru çektiğiniz kelimelerden şeye bakıyorlar. Profilimizi çıkartıyorlar aslında.
+
+331
+01:42:20,619 --> 01:42:27,839
+Genel olarak şeyle yaptığımız aramalardan falan. Profilimizi çıkartıyorlar. Peki reklam nasıl çıkıyor?
+
+332
+01:42:27,839 --> 01:42:30,039
+reklamda işte şey oluyor.
+
+333
+01:42:32,459 --> 01:42:40,160
+Şeyler reklam verenler açık arttırmaya giriyorlar aslında sayfalardaki reklam yerleri için.
+
+334
+01:42:40,660 --> 01:42:47,139
+Eğer kim daha iyi şey veriyorsa, fiyat veriyorsa onun reklamı gözüküyor.
+
+335
+01:42:47,419 --> 01:42:48,959
+Şimdi orada şöyle bir şey var.
+
+336
+01:42:48,959 --> 01:43:09,039
+mesela diyelim ki Nike diyor ki ben şu tür kullanıcılara diyor ondan sonra reklamımı göstermek istiyorum diyor ve açık arttırmaya da işte onun için belli bir parayla giriyor diyelim ki işte ben 100 lirayla girdim ondan sonra işte kazanırsam reklamım orada gözüksün diye.
+
+337
+01:43:09,039 --> 01:43:20,319
+tamam burada ne oldu? Şey yaptı işte ne bileyim basketbol oynadığı çok belli veya işte o tür sporlarla ilgilenme çok belli.
+
+338
+01:43:20,319 --> 01:43:32,279
+NBA maçlarıyla ilgili şeyleri takip eden falan böyle işte gençlere spor ayakkabına yakın spor ayakkabısını öneriyor mesela.
+
+339
+01:43:33,179 --> 01:43:38,819
+Fakat bir süre sonra alan olmuyor. Yani ne yapması lazım o zaman?
+
+340
+01:43:39,039 --> 01:43:40,659
+stratejisini değiştirmesi lazım.
+
+341
+01:43:40,759 --> 01:43:41,459
+Az alınıyor.
+
+342
+01:43:41,619 --> 01:43:47,500
+Yani onu tahmin ettiği kadar aslında belirlediği hedef kitle aslında çok doğru bir hedef kitle değil.
+
+343
+01:43:48,019 --> 01:43:52,879
+Veya şey doğru değil yani pazarlama zamanı doğru değil.
+
+344
+01:43:52,879 --> 01:43:55,659
+Yani o dönemde o gün alınmıyor bir şekilde.
+
+345
+01:43:55,988 --> 01:44:02,847
+ne bileyim mesela şu anda yani spor salonları kapalı, insanlar oynamıyor, etmiyor, senin o reklamı vermenin orada anlamı yok.
+
+346
+01:44:03,167 --> 01:44:09,147
+Şimdi dual-sporn-wise learning de takip edebilmeniz mümkün değil ama reinforcement learning de burada böyle bir şey var.
+
+347
+01:44:09,267 --> 01:44:14,647
+Yani bir ceza var aslında yani ürünüm alınmıyor. E ceza varsa o zaman benim ne yapmam lazım?
+
+348
+01:44:14,647 --> 01:44:20,908
+Bir açık arttırmadan çekilmem lazım. Yani orada öyle boş boş reklam vermeye devam etmemen lazım.
+
+349
+01:44:20,908 --> 01:44:44,848
+zamana göre durumu değerlendirip bundan çekilmem lazım. Ya da işte ne bileyim belki ödediğim şeyi düşürmem lazım. Yani işte sürekli ne bileyim sürekli 100 lira ödeyeceğim yerde baktım reklamın yayınlanmıyor o zaman işte 50'ye düşürüp ödeyeceğim parayı. Yani oluyorsa yayınlayıp olmuyorsa da zaten ben bir şeyi kazanmıyorum demem lazım.
+
+350
+01:44:44,848 --> 01:44:51,548
+bilmiyorum bu örnek aklımıza yaptı mı? Yani buradaki olay şu bunu supervised örnekle yapmak çok mümkün değil.
+
+351
+01:44:52,188 --> 01:44:56,728
+Zamanına göre değişimin ötesinde burada ben şeyi görmek istiyorum.
+
+352
+01:44:56,888 --> 01:45:00,748
+Yani olmuyorsa yani burada bir ceza var çünkü.
+
+353
+01:45:01,668 --> 01:45:04,727
+Olmuyorsa şöyle yap, oluyorsa işte bilmem böyle yap.
+
+354
+01:45:04,888 --> 01:45:09,928
+Yani mesela şeyse oradan çok iyi satış alıyorsam aman bu şeyi kaçırmamak lazım.
+
+355
+01:45:09,927 --> 01:45:18,367
+veya işte aslında çok iyi satış alacağım ama şey olmuyor, çıkarttırmada önerdiğim para yetmiyor, o zaman onu arttırman lazım falan gibi.
+
+356
+01:45:18,367 --> 01:45:21,667
+Aslında bu da yaptığımız şey böyle bir mantık.
+
+357
+01:45:23,007 --> 01:45:31,367
+Şimdi o zaman reinforcement learning aslında şeye göre zaten yayınları okuduğunuzda şunu görüyorsunuz, gittikçe yüzünüzü parlıyor.
+
+358
+01:45:31,367 --> 01:45:49,067
+parlıyor çünkü bu aslında gerçek insan öğrenmesi. Şartlara göre ödül ve cezayla ne yapacağına karar verme aslında buradaki şey bu. Mantık bu. O zaman şöyle bir şey var. Bir observation.
+
+359
+01:45:53,108 --> 01:45:54,108
+ve
+
+360
+01:45:57,684 --> 01:46:13,463
+observation'a göre bir action alıyorsunuz. Ve bir şey oluyor size. Bir de reward'unuz var. Hiç silgim çalışmıyor valla.
+
+361
+01:46:22,036 --> 01:46:46,555
+aslında şöyle baktığınız zaman üç tane bileşenimiz var bizim. Şurası eğer gerçek dünya olduğunu varsayalım. Burada da bir tane robotumuz olduğunu varsayalım. Şöyle oluyor. Bir durum var. Ben bir durumdayım. Bu durumda bulunduğum duruma göre bir action alıyorum.
+
+362
+01:46:46,555 --> 01:46:57,075
+ve buna göre de bana bir reward geliyor.
+
+363
+01:46:57,075 --> 01:47:06,036
+Yani yaptığım işin karşılığında ödül veya ceza geliyor.
+
+364
+01:47:06,036 --> 01:47:07,396
+O zaman
+
+365
+01:47:13,779 --> 01:47:17,779
+hangi durumdayım? Ondan sonra bu durumdaysam...
+
+366
+01:47:25,779 --> 01:47:47,359
+ne yapmam doğru olur? Ne yapmam gereken hareket ne? Mesela işte duvara çarptıysam işte geri döneceğim. Yerdeki taşı işte robot olarak düşündüğümüzde ulaştıysam alacağım falan gibi yapacağım action'a karar verme. Bu action'ı yapınca ne olacak tabii?
+
+367
+01:47:51,380 --> 01:47:53,679
+yeni bir state'e geçmiş olacağım.
+
+368
+01:47:54,419 --> 01:47:57,199
+ve bu state'in uygunluğuna göre
+
+369
+01:48:01,140 --> 01:48:28,539
+ödül veya ceza alacağım. Ve asıl önemli olan bu ödül ve ceza aslında reinforcement learning iteratif bir şey. Ödül veya cezaya göre aslında ben öğrenme gerçekleştirmiş olacağım ve öğrenme tamamlanana kadar aslında şeyi devam ettireceğim.
+
+370
+01:48:28,539 --> 01:48:37,480
+Yani öğrenmenin tamamlanması aslında belli bir noktadan sonra ne yapacağımı öğrenmiş olacağım.
+
+371
+01:48:37,480 --> 01:48:50,019
+Yani köpeğin şeyi almayı öğrenmesi gibi atılan sopayı gidip geri alması gerektiğini öğrenmesi gibi ne yapacağımı öğrenmiş olacağım.
+
+372
+01:48:50,019 --> 01:48:59,079
+Şimdi aslında burada yaklaşım, kullanılan yaklaşım Markov Decision Process. Nedir Markov Decision Process?
+
+373
+01:48:59,659 --> 01:49:07,640
+Aslında bir kararı verirken o kararı etkileyen arkada belli bir süre yapılan işler var.
+
+374
+01:49:08,479 --> 01:49:17,039
+Ama biz eğer bunların hepsini değerlendirmeye kalkarsak çok büyük bir olasılık hesabı yapmak gerekecek.
+
+375
+01:49:17,040 --> 01:49:34,860
+O yüzden bunun histerisine bakarken yani ne kadar geriye gidip ne kadar geriye bakılacak diye bakarken sadece T anının T artı bir anını etkilediğini kabul edersek
+
+376
+01:49:34,860 --> 01:49:46,140
+o zaman Markov decision prosesi yani şöyle T artı bir anındaki durumu sadece T anı etkiler.
+
+377
+01:49:46,140 --> 01:50:00,619
+Yani biz şunu varsayıyoruz yani bütün T'ye kadar olan bütün şeyler aslında sadece şeyle gösterilebilir. Bunların hepsi şu şekilde ST ile gösterilebilir.
+
+378
+01:50:00,619 --> 01:50:16,459
+Yani daha önceliğe gitmeye kalkarsanız çünkü şey çok büyümüş olur. Yani T'yi T-1 ekliyor, T-1 T-2 ekliyor diye daha çok geçmişe gitmeye kalkarsanız hesabınız çok büyümüş olur.
+
+379
+01:50:16,459 --> 01:50:31,639
+o yüzden şöyle bir şey düşünmek gerekir. 1'den T'ye kadar olan history sadece T anındaki durum ile gösterilsin ve oradan da T artı 1 anının durumu oluşturursun.
+
+380
+01:50:32,479 --> 01:50:40,279
+Yani geçmiş durumlar dikkate alınmasın. Sadece bir önceki durum dikkate alınsın.
+
+381
+01:50:40,279 --> 01:50:56,339
+o zaman bu Markle Decision proses oluyor. İşte dört tane bizim parametremiz var burada. Burada işte state action aslında state transition function.
+
+382
+01:51:00,339 --> 01:51:05,879
+Yani bir state'den bir state'e nasıl geçeceğinize karar vermek.
+
+383
+01:51:22,771 --> 01:51:38,831
+hiçbir şekilde yazamadım artık. Yani ST artı 1 anında olan şey, aslında orada onu yazacaktım, şeye bağlı, sadece T anında olan şeye bağlı. State Transition Function'da yazmaya çalıştığım şey oydu. T artı 1 anında olan şey.
+
+384
+01:51:38,831 --> 01:51:44,011
+sadece T anında olan duruma bağlı ve immediate rewards var burada.
+
+385
+01:51:44,011 --> 01:51:51,112
+Yani T anında bir action yaptım, T artı bir anında hemen onun ödülünü veya cezasını alacağım şeklinde.
+
+386
+01:51:51,531 --> 01:51:56,771
+O zaman burada S state gösteriyor, environment state'ini gösteriyor.
+
+387
+01:51:56,931 --> 01:51:59,751
+E, A olabilecek action'ı gösteriyor.
+
+388
+01:52:00,091 --> 01:52:06,531
+T, nasıl bir transition function'la bir durumdan bir durumuna geçeceğinizi gösteriyor.
+
+389
+01:52:06,531 --> 01:52:19,471
+buraya da reward function'u gösteriyor. Şimdi ben size bugün en çok kullanılan şey olan öğrenme modellerinden birisi olan Q-Learning'i anlatacağım.
+
+390
+01:52:19,471 --> 01:52:28,271
+Q-Learning aslında aktif learning şu anda şeyde de kullanılan yaklaşım, derin öğrenmede de kullanılan yaklaşım.
+
+391
+01:52:28,271 --> 01:52:39,351
+O yüzden ve kolay olduğu için en çok kullanılan reinforcement learning yöntemi onu bulmaya çalışacağım.
+
+392
+01:52:39,352 --> 01:52:57,432
+Yani burada yapılan şey ben bir şeydeyken, state'deyken yapabileceğim action'lar neyse bunlardan en şeylisini seçmek, en ne diyeyim yüksek getirisi olanını seçmek.
+
+393
+01:52:57,432 --> 01:53:01,852
+Her zaman aslında yapılmaya çalışılan şey bu.
+
+394
+01:53:02,252 --> 01:53:04,172
+Şimdi bir örnek üzerinde göstereceğim.
+
+395
+01:53:04,172 --> 01:53:14,132
+diyelim ki şöyle bir şeyiniz olsun, robotunuz olsun ve robotunuz bulunduğu noktadan dışarı çıkmaya çalışıyor.
+
+396
+01:53:14,652 --> 01:53:18,212
+Şöyle bir kapalı odalar olduğunu varsayalım.
+
+397
+01:53:20,932 --> 01:53:24,452
+Şurası hedefiniz dışarı çıkmak istediğiniz yer.
+
+398
+01:53:24,452 --> 01:53:27,452
+F state'i.
+
+399
+01:53:42,420 --> 01:53:45,599
+şurası E
+
+400
+01:53:51,412 --> 01:54:07,991
+Şöyle bir şeyiniz var, yapınız var. Aslında state'iniz burada oda, bulunduğunuz oda. Action'ınız da bir odadan diğerine geçiş.
+
+401
+01:54:13,619 --> 01:54:40,559
+Yaptığınız şey bu. Şimdi şeyde reinforcement learning de sizin yapmanız gereken şey ödülü ve cezayı belirlemek. Yani ne olursa ödül diyeceksiniz ve ne kadar bir ödül diyeceksiniz, ne olursa ceza diyeceksiniz ve cezanız ne kadar olacak. Buna karar vermek gerekiyor.
+
+402
+01:54:40,559 --> 01:54:51,899
+Şimdi bizim için bu da mantıken ödül aslında hedefe ulaşmaksa şey yapmanız gerekiyor.
+
+403
+01:54:51,899 --> 01:55:04,719
+Yani mesela diyebilirsiniz ki doğrudan çıkışa giden kapıların ödülü 100, diğerlerinin 0 diyebilirsiniz mesela.
+
+404
+01:55:04,719 --> 01:55:29,359
+Yani o zaman ne olacak? B'den F'ye giderseniz 100'nüz var. Ondan sonra işte E'den F'ye 100 var. E ile F arasındaki bağlantı 100 ve F yani F'deyseniz 100 bunun dışındakiler 0 diyebilirsiniz.
+
+405
+01:55:29,359 --> 01:55:38,660
+Şimdi burada şöyle hareket etmeniz gerekiyor. Başlangıçta bir reward matrisiniz var bu durumu belirteceğiniz.
+
+406
+01:55:42,163 --> 01:56:12,143
+Şöyle yapayım. Hiç sağamayacağım çünkü. Bir reward matrisiniz var. Şimdi bu A, B, C, D, E ve F durumlarınız için
+
+407
+01:56:05,555 --> 01:56:17,075
+Şimdi eğer bir bağlantı varsa mesela burada A'dan E'ye bağlantı var sıfır.
+
+408
+01:56:18,455 --> 01:56:21,395
+İşte B'den D'ye bağlantı var sıfır.
+
+409
+01:56:21,395 --> 01:56:30,635
+Diğerleri için nal yani burada bir bağlantı yoksa graf bu çünkü aslında bu şöyle bir graf yani buradaki şeyiniz şöyle bir grafınız var aslında sizin.
+
+410
+01:56:30,635 --> 01:56:41,295
+A, E bu reward matrix de bu grafın aslında matrisi, düğümler ve düğümler arasındaki bağlantıları gösteren matrisiniz var sizin burada.
+
+411
+01:56:41,436 --> 01:56:42,815
+Şöyle bir şey aslında bu.
+
+412
+01:56:43,416 --> 01:56:45,535
+Şöyle bir matrisiniz var aslında sizin.
+
+413
+01:56:46,355 --> 01:56:53,096
+Ona bağlı olarak da şimdi B ile F arasındaki bağlantının değeri 100.
+
+414
+01:56:53,195 --> 01:56:55,195
+B'den F'ye bağlantı var çünkü.
+
+415
+01:56:55,195 --> 01:56:59,515
+İşte C'den D'ye bağlantı var.
+
+416
+01:56:59,515 --> 01:57:01,835
+İşte D'den C'ye bağlantı var.
+
+417
+01:57:02,815 --> 01:57:04,975
+D'den B'ye bağlantı var.
+
+418
+01:57:06,155 --> 01:57:09,155
+Ondan sonra ne var?
+
+419
+01:57:10,075 --> 01:57:11,816
+D'den B'ye bağlantı yok pardon.
+
+420
+01:57:14,815 --> 01:57:16,496
+D'den B'ye bağlantı var mı?
+
+421
+01:57:16,515 --> 01:57:17,515
+Ha varmış pardon.
+
+422
+01:57:17,736 --> 01:57:19,096
+Onu unutmuşum şurada.
+
+423
+01:57:19,755 --> 01:57:21,655
+D'den B'ye bağlantı var değil mi?
+
+424
+01:57:22,555 --> 01:57:23,795
+D'den B'ye var.
+
+425
+01:57:23,935 --> 01:57:24,636
+C'ye var.
+
+426
+01:57:24,975 --> 01:57:26,475
+E'ye var.
+
+427
+01:57:26,475 --> 01:57:31,155
+E'den A'ya var
+
+428
+01:57:31,155 --> 01:57:33,295
+o zaman A'dan
+
+429
+01:57:33,295 --> 01:57:35,475
+E'yi koymuştuk. E'den A'ya var
+
+430
+01:57:35,475 --> 01:57:37,636
+D'ye var
+
+431
+01:57:37,636 --> 01:57:39,655
+ve önemli olan
+
+432
+01:57:39,655 --> 01:57:41,276
+E'den F'ye 100
+
+433
+01:57:41,276 --> 01:57:43,496
+buradaki bağlantımızda. F'den F'ye
+
+434
+01:57:43,496 --> 01:57:43,975
+100
+
+435
+01:57:43,975 --> 01:57:47,555
+F'den B'ye var
+
+436
+01:57:47,555 --> 01:57:49,736
+ondan sonra
+
+437
+01:57:49,736 --> 01:57:51,335
+ve E'ye var. Bu şekilde bir
+
+438
+01:57:51,335 --> 01:57:52,916
+aslında şeyiniz var
+
+439
+01:57:52,916 --> 01:57:55,595
+bağlantı matrisiniz var
+
+440
+01:57:55,596 --> 01:58:04,055
+Ondan sonra bu R reward matrisiniz.
+
+441
+01:58:09,363 --> 01:58:23,523
+ve bizim yapmaya çalıştığımız aslında bir noktadan bir noktaya gitmenin gerçekte ödül ve ceza değerini belirleyen Q matrisini elde etmeye çalışmak.
+
+442
+01:58:23,643 --> 01:58:28,723
+Yapmaya çalışacağımız şey bu. Q matrisini de şu şekilde oluşturacağız.
+
+443
+01:58:29,863 --> 01:58:37,583
+Bulunduğumuz durum için yapmaya çalıştığımız, aldığımız action'ın değerini şu şekilde belirleyeceğiz.
+
+444
+01:58:39,363 --> 01:58:52,843
+R matrisimiz vardı ya bu immediate reward'u gösteriyor. Yani biz state'deyken yaptığımız action'ın cezası ödülü nedir onu gösteriyor.
+
+445
+01:58:52,843 --> 01:58:59,243
+Yine öğrenme oranı çarpı bir sonraki durumun
+
+446
+01:59:02,644 --> 01:59:21,863
+en iyi şey neyse, action'ı neyse yani bir sonraki durumda yapabileceğim en iyi action neyse onun değeri. Şimdi benim yapmaya çalıştığım şey bu. Şimdi Q'nun Q'su bu arada quality'den geliyor.
+
+447
+01:59:21,863 --> 01:59:26,984
+Quality learning aslında buradaki Q
+
+448
+01:59:26,984 --> 01:59:38,523
+Yani yapmaya çalıştığım şey her durum için bir sonraki yapacağım action'ın en iyi sonuç getiren action olması
+
+449
+01:59:38,523 --> 01:59:43,184
+en iyi sonuç getiren action'ı seçmek üzerine kolu
+
+450
+01:59:43,184 --> 01:59:44,644
+yapmaya çalıştığım şey bu
+
+451
+01:59:44,644 --> 01:59:50,644
+Şimdi o zaman burada bir şey işte şu da learning parametresi
+
+452
+01:59:50,644 --> 01:59:57,644
+ve
+
+453
+01:59:56,051 --> 02:00:09,151
+şöyle bir örnek üzerinden bunun üzerinde göstereyim nasıl bir şey yaptığımızı. Bir kere öncelikle başlangıçta Q matrisinizin sıfıra set edilmiş olması gerekiyor.
+
+454
+02:00:14,228 --> 02:00:16,228
+bu Q matrisiniz
+
+455
+02:00:20,051 --> 02:00:39,831
+sıfıra set edilmiş olması gerekiyor. Diyelim ki işte öğrenme parametresi de 0,8 olarak alınmış olsun. Şimdi varsayalım ki, başladık şimdi yapmaya, random olarak başlangıçta B'de olsun.
+
+456
+02:00:39,831 --> 02:00:54,051
+ve yine random olarak B'deyken random F'ye gitmek seçilsin. Action'ımız F'ye gitme olsun.
+
+457
+02:00:54,051 --> 02:01:16,991
+O zaman işte B bulunduğum state, F'de gideceğim yer, action'ım, F'x'e. O zaman bu şeyin B'den F'ye gitmenin ödül veya ceza olarak değeri, immediate reward yani aslında B'den F'ye gitmenin bir değeri var şu anda benim için.
+
+458
+02:01:16,991 --> 02:01:43,251
+artı 0.8 çarpı öğrenme oranı 0.8 çarpı şunlardan birisi. Şimdi F'den sonra nereye gidebilirim? F'den B'ye gitmenin Q değeri, F'den E'ye gitmenin Q değeri yani en iyi F'deyken yapabileceğim actionların şu anda tanımlanmış olan değerlerinden en iyisini seçeceğim.
+
+459
+02:01:43,251 --> 02:01:53,171
+şimdi B'den F'ye gitmenin rewardu 100'dü zaten fakat şu anda daha Q matrisim initial durumda olduğu için 0.
+
+460
+02:01:53,171 --> 02:01:59,772
+O zaman şimdi B'den F'ye gitmenin değerini 80 olarak belirledim.
+
+461
+02:01:59,871 --> 02:02:03,671
+Yani şurası 80 oldu şu anda birinci adımın sonunda.
+
+462
+02:02:09,363 --> 02:02:17,943
+Pardon, çok özür dilerim. Niye 80 olsun? 80 nereden çıktı? 100 orası. Niye 80 yazdım? Hiç bilmiyorum arkadaşlar. Valla.
+
+463
+02:02:19,103 --> 02:02:25,643
+Çünkü şey, 0.8'i 1 ile çarptım zannettim yanılmıyorsam. Öyle bir şey olmadığına göre.
+
+464
+02:02:26,723 --> 02:02:33,883
+Şimdi şurası 100. Yani şurası 0 ise bu şu anda 100 olduğu için.
+
+465
+02:02:33,883 --> 02:02:46,983
+B'den F'ye gitmenin şu anda öğrenilmiş ödülü cezada olabilirdi bu. Biz burada cezalara sıfır dediğimiz için hiç negatif bir şey çıkmayacak.
+
+466
+02:02:47,603 --> 02:02:58,283
+Dedik ya hani şey yüz olsun, cezada sıfır olsun, çıkışa gitmek yüz olsun, cezada sıfır olsun diye. Bizim negatif bir şeyimiz hiç olmayacak şu anda.
+
+467
+02:02:58,283 --> 02:03:06,823
+ama B'den F'ye gitmenin öğrenilmiş değeri 100 oldu şu anda.
+
+468
+02:03:07,583 --> 02:03:10,023
+Buna göre işte 100'ü yazdım.
+
+469
+02:03:10,443 --> 02:03:14,523
+Arkasından F'e zaten vardığım için bu episod bitti.
+
+470
+02:03:15,483 --> 02:03:18,224
+Ondan sonra bir sonraki episota geçtim.
+
+471
+02:03:20,643 --> 02:03:25,944
+Yani yeni bir başlangıç durumdan yeni bir sona gitmeye çalışacağım.
+
+472
+02:03:25,944 --> 02:03:34,923
+yine random olarak bir başlangıç durumu belirledim. Buradaki başlangıç durumu D olarak belirlendi.
+
+473
+02:03:39,444 --> 02:04:03,583
+buradan gidebileceğiniz 3 tane yer var aslında. B, işte C ve E var. Random olarak B seçilsin. Bunlar hep random. Yani başlangıçta, episodu başlattığınızda ilk state'imiz ve bu state'ten alacağımız action'a random belirliyorsunuz.
+
+474
+02:04:33,619 --> 02:04:35,019
+Hocanın şarjı bitti sanırım.
+
+475
+02:12:06,228 --> 02:12:32,527
+çok özür dilerim. Bu eski bir bilgisayar olduğu için şarjının tutması da uzun sürüyor. Kapandı, kapandıktan sonra tekrar toparlanması da uzun sürüyor. O yüzden böyle sıkıntılarla yaşıyorum. Baya biliyorum zaten sıkıntılı bir ders oldu. Umarım ki çok bunanmamışsınızdır.
+
+476
+02:12:32,527 --> 02:12:35,807
+Şu sesimi duyup ekranımı da görüyor musunuz?
+
+477
+02:12:39,956 --> 02:13:02,556
+Tamam, şimdi şeyi göstereceğim. D'den başladığınız random olarak bir sonraki tool'da 3 tane seçenek var. B'ye, C'ye, B'ye gidebilirsiniz. Yine random seçiyor. D'den B'ye gitmenin öğrenme değerini göreceğiz.
+
+478
+02:13:02,556 --> 02:13:22,216
+şimdi onun değeri bir immediate reward'umuz var. D'den B'ye gittiğiniz zaman alabileceğiniz bir ödül var. Bir de 0.8 çarpı şeyi görmek maksimum işte B'den D'ye gidebilir bunun ödülü neydi?
+
+479
+02:13:22,215 --> 02:13:40,435
+B'ye geldikten sonra B'den F'ye gidebilir. Bunun ödülüne bunları görmek. Şimdi bu şey yani şu anlama geliyor. Ben D'den B'ye gittiğimde aslında ne kadar iyi bir iş yapmış oluyorum bunu anlamaya çalışıyorum.
+
+480
+02:13:40,435 --> 02:14:08,695
+Şimdi bizim D'den B'ye gitmemizin 0'dı. Verdiğimiz rewardu, bu baştan bizim belirlediğimiz reward 0'dı. 0.8 çarpı. D'den B'ye gitmek şu an için 0 Q değeri ama D'den F'ye gitmenin 100'dü. Dolayısıyla D'den B'ye gitmenin değeri 80 olarak belirlendi ve D'den B'ye biz o zaman Q matrisinde 80 olarak update ettik.
+
+481
+02:14:08,695 --> 02:14:23,956
+Yani burada IQ matrisinin yapmaya çalıştığı şey tecrübelerden ne öğrenildiyse onu güncel olarak saklamak için uzun vadede şeyi anlamaya çalışmak için.
+
+482
+02:14:23,956 --> 02:14:32,075
+Yani bulunulan bir noktadan hedefe ulaşmanın değerini öğrenmeye çalışıyoruz.
+
+483
+02:14:32,075 --> 02:14:43,495
+Şimdi uzun uzun böyle bu şeyleri denediğimizde yani bir random başlangıç noktasından ondan sonra bir başka random pardon şunu bitireyim önce
+
+484
+02:14:43,495 --> 02:14:56,155
+o zaman aslında maksimumunu seçtiğimizde B'den F'ye gitmek en iyi olduğundan D'den B'ye gitmeyi random belirlemiştik ama bir sonraki adına
+
+485
+02:14:56,155 --> 02:15:07,575
+özür dilerim tamamen toparlıyorum arkadaşlar şurada B'den F'ye gitmekte random seçilecek burada
+
+486
+02:15:07,575 --> 02:15:23,775
+yani değeri hesaplarken maksimumunu yazıyoruz ama episodları ilerletirken sonuç hedefe ulaşana kadar yine böyle olabilecek seçimlerin arasında
+
+487
+02:15:23,775 --> 02:15:26,055
+random ilerleyerek gidiyoruz.
+
+488
+02:15:26,275 --> 02:15:32,835
+Yani çünkü gelişi güzel yollar deniyor ya hangisinden aslında en sonuca ulaştıracağını bilmediğimiz için
+
+489
+02:15:32,835 --> 02:15:35,935
+B'den F'ye gitmeyi seçmiş olsun.
+
+490
+02:15:36,435 --> 02:15:49,335
+Ondan sonra bunu yaptığımızda işte bunun değeri B'den F'ye gitmenin immediate reward'u 0.8 çarpı maksimum işte F'den B'ye gitmesi.
+
+491
+02:15:49,555 --> 02:15:52,935
+Çünkü F'den gidebileceği yerler B'ye gidebilir.
+
+492
+02:15:52,935 --> 02:15:54,775
+işte fedan
+
+493
+02:16:06,195 --> 02:16:27,195
+E'ye gidebilir ve B'den F'ye gidebilir. Bunların hepsi için olan duruma baktığımızda B'den F'ye gitmenin değeri 100 ediyor. O zaman B'den F'ye gitmenin değerini zaten 100'dü.
+
+494
+02:16:31,572 --> 02:16:50,511
+onu ellemiyoruz. Bunu böyle şeyleri uzun öğrenmeler sonucunda update ettiğimizde ondan sonra state action, şurası state, şurası alınan action olmak üzere Q matrisinin değeri şu hale geliyor.
+
+495
+02:17:00,180 --> 02:17:04,859
+şu A, B, C, D, E, F değerleri için şurada
+
+496
+02:17:08,755 --> 02:17:12,075
+şu hale geliyor. QE 80
+
+497
+02:17:13,116 --> 02:17:16,955
+BD 64
+
+498
+02:17:17,455 --> 02:17:18,735
+100
+
+499
+02:17:18,735 --> 02:17:22,075
+%
+
+500
+02:17:25,492 --> 02:17:52,211
+şurası CD 64, işte DB 80, DC 51, 80. Şöyle şeyi görmenizi istiyorum. E 64, E de 64, E F 100, ondan sonra FB 80, FE 80, FF 100.
+
+501
+02:17:52,211 --> 02:17:59,391
+Şimdi baktığınız zaman aslında şöyleydi, evin halini göstereyim tekrardan.
+
+502
+02:17:59,832 --> 02:18:09,172
+Şurada A odamız vardı. A'dan şuradaki E odasına bir çıkış vardı. E'den direkt F'ye çıkılıyordu.
+
+503
+02:18:09,892 --> 02:18:19,831
+A ile B'nin arası kapalı. B'den direkt F'ye çıkılıyordu. Gole çıkılıyordu esas ulaşılmak istenilen D.
+
+504
+02:18:19,832 --> 02:18:24,111
+ve şurada da bir kapalı C odası vardı.
+
+505
+02:18:24,852 --> 02:18:35,852
+Dikkat ederseniz mesela D'den C'ye gitmenin bedeli sağladığı kazanç 51.
+
+506
+02:18:35,852 --> 02:18:41,631
+Çünkü D'den C'ye gitmenin hiçbir anlamı yok ama D'den B'ye gitmenin sağladığı kazanç,
+
+507
+02:18:43,532 --> 02:18:47,051
+şurada kapıyı unuttum D ile bir arasında da bir kapı var.
+
+508
+02:18:47,051 --> 02:19:00,992
+D'den B'ye gitmenin sağladığı kazanç 80 veya E'den A'ya gitmenin sağladığı, kapanıp kalacağı için E'den A'ya gidildiğinde aslında 64 ama A'dan E'ye gitmeninkisi 80.
+
+509
+02:19:00,992 --> 02:19:18,971
+yani uzun iterasyonlar sonunda bu şekilde Q matrisi yani şey matrisi bir yerden bir yere gitmenin gerçek ödül ve cezasının belirlendiği öğrenme matrisi bu şekilde elde ediliyor.
+
+510
+02:19:18,971 --> 02:19:40,352
+Bu arada aslında uzun episodlar sonrasında Q matrisindeki değerler yüzü geçiyor aslında. Bu normalize edilmiş bir matris. Ona dikkat etmenizi isterim. Çünkü elle hesaplarsanız değerlerin büyüdüğünü göreceksiniz.
+
+511
+02:19:40,352 --> 02:19:45,872
+şeyle, min-max normalizasyonuyla en yük değerim yüze getirilmiş hali.
+
+512
+02:19:45,872 --> 02:19:52,911
+Şimdi bunu kullanarak öğrendiğinin tamamlandığı hali bu, convergence hali.
+
+513
+02:19:57,172 --> 02:20:21,611
+bunu kullanarak şeyi varsayalım. C'de olduğunu varsayalım. Robotumuzun C'de olduğunu varsayalım. Şimdi ne olacak? C'deyken dışarı çıkmak için en büyüğü seçeceğinden D'ye gidecek. C'den. Zaten C'den gidebilecek tek yer değil de yani birden fazla seçenek olsa D'ye gidecekti.
+
+514
+02:20:21,611 --> 02:20:51,551
+şimdi D'deyken iki yere gidebilir ya B'ye gidecek 80 ya E'ye gidecek 80 şeyin çok anlamı yok C'ye gitmesinin anlamı yok çünkü 51 zaten onun şeyi ikisi de aynı ikisinden birini seçebilirsiniz B ile E diyelim ki B'yi seçti B'yi seçtiği zaman B'den gidebilecek D'ye gidebilir 64 F'ye gidebilir 100 o zaman D kapalı 64
+
+515
+02:20:51,551 --> 02:21:02,271
+çünkü F büyük olduğu için F100. O zaman ne yaptı? Baktığınız zaman C'den B'ye gitti, D'den B'ye gitti, B'den de F'ye gitti.
+
+516
+02:21:02,271 --> 02:21:19,731
+Çıkışa ulaşmış oldu. Yani convergence halinden sonra Q matrisinde bulunduğumuz state neyse o state'den bir sonraki state'e nasıl geçeceğimize karar verirken en yüksek değerli action'ı seçiyoruz.
+
+517
+02:21:19,731 --> 02:21:34,571
+yapmamız gereken şey bu. Yani bizim yapmak istediğimiz şey, şeyden, bulunduğumuz sitekten.
+
+518
+02:21:39,123 --> 02:21:49,123
+minimum yolu bulmak. Minimum yolu bulmak için de olabilecek şeylerden, yollardan aslında en uygununu seçmiş oluyoruz.
+
+519
+02:21:49,123 --> 02:22:06,183
+O zaman bizim yaptığımız şey, başlangıçta, onu bir özetleyeyim şu anda, öğrenme parametresini ve reward metricsini biz belirliyoruz.
+
+520
+02:22:06,183 --> 02:22:20,964
+Bu kullanış tarafından tecrübelerle belirlenmesi gereken bir şey, nasıl olması gerektiğini. Q-Matrisini de başlangıçta sıfırla ilklendiriyoruz.
+
+521
+02:22:20,964 --> 02:22:33,463
+Arkasından her öğrenme adımında bir tane random state seçiyoruz.
+
+522
+02:22:39,028 --> 02:22:46,147
+şeye erişene kadar ulaşmak istediğim
+
+523
+02:24:40,531 --> 02:25:04,771
+Arkadaşlar, yine bir şey kurban oldum. Alkede'nin kapağında, onun açılması uzun sürüyor. O yüzden şimdi sözle tamamlayacağım. Arkasından önümüzdeki haftanın başında şey yaparım, yine üzerinden geçerek başlarız. Yoksa yine çok uzayacak. Zaten tamamlayacaktım. O zaman son tamamlıyorum.
+
+524
+02:25:04,771 --> 02:25:17,971
+Q matrisini sıfırla iplendiriyoruz. Sonra her episotta, episodları convergence olana kadar yani artık Q matrisindeki değerleriniz değişmeyene kadar tekrarlıyorsunuz.
+
+525
+02:25:17,971 --> 02:25:34,971
+bir random initial state'den başlıyorsunuz ve hedefe ulaşana kadar olası şeylerden bir sonraki action'lardan birini şey yapıyorsunuz, random olarak belirliyorsunuz.
+
+526
+02:25:35,631 --> 02:25:46,771
+Ondan sonra buraya gitmenin Q değerini hesaplayarak Q matrisinizi şey yapıyorsunuz, update ediyorsunuz.
+
+527
+02:25:46,771 --> 02:26:00,411
+yaptığımız şey bu ve oradan da çıkışa gidene kadar işte olası yollar üzerinden şey yaparak random yollardan birini seçerek çıkışa gidene kadar ilerliyorsunuz.
+
+528
+02:26:01,051 --> 02:26:10,051
+Yaptığımız şey bu Q-Learnik'te. Bugün burada keselim başka bir sorunuz yoksa. Önümüzdeki hafta devam ederiz. Var mı sorunuz burada?
+
+529
+02:26:22,067 --> 02:26:23,067
+Sorunuz var mı?
+
+530
+02:26:26,708 --> 02:26:27,907
+Yok hocam, teşekkürler.
+
+531
+02:26:28,307 --> 02:26:36,767
+Tamam, ben teşekkür ederim. O zaman önümüzdeki hafta devam ederiz. Bugünkü aksaklık için özür dilerim. Gerçekten şeyi fark etmemiştim.
+
+532
+02:26:37,887 --> 02:26:47,228
+iPad'in şarjının bittiğini. Dediğim gibi biraz eski olduğu için şarjı kendiliğinden durduk yerde bitiyor ve şarj olması da çok zor ve uzun zaman alıyor.
+
+533
+02:26:48,287 --> 02:26:52,947
+Sabah çok geç fark ettim ben şarjının bittiğini.
+
+534
+02:26:52,947 --> 02:27:02,248
+o zaman önümüzdeki hafta kaldığımız yerden devam etmek üzere size güzel bir hafta diliyorum. Haftaya görüşürüz.
+
+535
+02:27:02,908 --> 02:27:03,428
+Görüşürüz.
+
+536
+02:27:03,428 --> 02:27:05,147
+Teşekkürler hocam.

@@ -1,0 +1,2799 @@
+1
+00:00:52,595 --> 00:00:58,235
+Günaydın arkadaşlar. Biraz herkes bağlanabilsin diye birkaç dakika bekliyorum.
+
+2
+00:00:58,556 --> 00:00:58,995
+Günaydın.
+
+3
+00:01:00,915 --> 00:01:02,115
+Günaydın hocam.
+
+4
+00:01:02,715 --> 00:01:03,635
+Teşekkürler.
+
+5
+00:01:15,379 --> 00:01:27,379
+Evet, başlayalım isterseniz. Bugün Füçür özellik seçiminden bahsedeceğim. Özellik seçiminin nasıl yapılması gerektiğinden bahsedeceğim.
+
+6
+00:01:27,379 --> 00:01:37,379
+Şimdi şöyle öncelikle... Bir saniye, şey paylaşır hale gidelim.
+
+7
+00:01:43,603 --> 00:01:54,223
+Öncelikle şöyle düşünelim. Diyelim ki bir öğrenme modeli hazırlayacağız. Ne yapıyoruz biz aslında bu öğrenme modeliyle ilgili? Önce bir veri kümesi hazırlığı yapıyoruz. Yani veri topluyoruz.
+
+8
+00:01:54,963 --> 00:02:12,663
+Veriyi toplarken yapmamız gereken şey ne? O veriyle ilgili önemli bütün bilgileri elde etmeye çalışma. Nedir? Bu işte mesela bir yüz tanıma işlemi yapıyorsa o kişinin işte farklı açılardan çekilmiş,
+
+9
+00:02:12,663 --> 00:02:14,143
+fotoğraflarını kullanırız.
+
+10
+00:02:14,543 --> 00:02:16,703
+O da özellik olarak ne kullanabiliriz?
+
+11
+00:02:16,784 --> 00:02:19,523
+Yani hangi bilgileri kullanabiliriz?
+
+12
+00:02:19,523 --> 00:02:27,263
+İşte ne bileyim belki burnunun büyüklüğü işte daha önce bunları konuşmuştuk.
+
+13
+00:02:27,343 --> 00:02:31,903
+İki gözün arasındaki mesafe falan gibi şöyle işte şeyler vardır.
+
+14
+00:02:34,303 --> 00:02:37,063
+İlk başta yapılan yüz tanıma çalışmaları böyle mesela.
+
+15
+00:02:37,523 --> 00:02:40,023
+Böyle üçgenler falan filan var şöyle işte.
+
+16
+00:02:40,023 --> 00:02:44,863
+o üçgenlerin mesafelerine göre aslında ilk başta tanıma yapıyor.
+
+17
+00:02:45,203 --> 00:02:51,203
+Bunlar göre özellikle bizim çıkardığımız tanıma için faydalı olacağını düşündüğümüz özellikler.
+
+18
+00:02:51,303 --> 00:02:59,643
+Yani aslında bu veri kümesi hazırlanırken ilk önce biz el ile yani manual olarak bir şey yapıyoruz.
+
+19
+00:03:00,083 --> 00:03:01,743
+Özellikle toplama işlemi yapıyoruz.
+
+20
+00:03:01,743 --> 00:03:06,603
+Yani veri kümesi hazırlama demek aslında örnekler topluyoruz.
+
+21
+00:03:06,603 --> 00:03:13,983
+örnekleri toplarken de bizim için önemli olduğunu düşündüğümüz özelliklerine göre topluyoruz.
+
+22
+00:03:14,044 --> 00:03:25,824
+Mesela işte ne bileyim bir banka müşterisinden bahsederken diyoruz ki bu müşteriye ait bütün bilgileri ben bir kullanayım diyelim ki işte bir şeyi belirleyeceksiniz.
+
+23
+00:03:25,824 --> 00:03:37,004
+müşterilerine, işte müşterilerinizi şeye göre bankadaki hesaplarını kullanış alışkanlıklarına göre gruplamak istiyorsunuz.
+
+24
+00:03:37,004 --> 00:03:44,724
+Ne yapıyorsunuz? Diyorsunuz ki işte bütün transaction'ını, bu müşterinin ben toparlayayım, alayım bunları kullanayım diyorsunuz.
+
+25
+00:03:44,764 --> 00:03:55,044
+Peki bu ne kadar doğru? Yani benim hissiyatla seçtiğim özellikler acaba gerçekten şey mi, kullanılması gereken özellikler mi?
+
+26
+00:03:55,044 --> 00:04:21,044
+Şimdi artık şeyi öğrendik, biz bir makine öğrenmesiyle bir tanıma, sınıflandırma, işte clustering işlemi yaparken hedefimiz aynı sınıfta olan, aynı olan bilgileri olabildiğince bir arada olmasını sağlamak, farklılığın da olabildiğince uzakta olmasını sağlamak.
+
+27
+00:04:21,044 --> 00:04:27,324
+yani sınıf içi benzerliğin çok sınıflar arası benzerliğin az olduğu bir sistem kurmaya çalışıyoruz.
+
+28
+00:04:27,324 --> 00:04:34,624
+Biz yaptığımız bütün işte makine öğrenmesi modellerinde ana hedefimiz bu.
+
+29
+00:04:35,064 --> 00:04:45,484
+Şimdi o zaman burada en önemli noktalardan birisi de aslında veri kümesini oluşturan örneklerimizin özellikleri.
+
+30
+00:04:45,483 --> 00:04:52,623
+özellikleri seçerken şu bizim için önemli. Mesela şöyle iki sınıfa ait bilgileriniz olsun.
+
+31
+00:04:57,939 --> 00:05:04,539
+birer özellikleri olduğunu düşünelim bunların. Böyle bir özellik olduğu için tek boyutta uzayda gösterebiliyorum.
+
+32
+00:05:04,999 --> 00:05:14,939
+Diyelim ki bu özelliklerin bir şu şekilde olması var, bir de bu şekilde olması var. Hangisini tercih edersiniz? Bunu tercih edersiniz.
+
+33
+00:05:14,939 --> 00:05:26,039
+Niye? Burada baktığınız zaman şey görüyorsunuz. Yani seçtiğiniz özelliklere göre A sınıfıyla B sınıfı gayet iyi birbirinden ayrılmış.
+
+34
+00:05:26,039 --> 00:05:38,679
+şerb ki burada şeye göre seçtiğiniz özellikler aralarında gayet net bir şekilde korrelasyon olan, benzerlik olan özellikler.
+
+35
+00:05:39,879 --> 00:05:45,179
+Yani mesela ne bileyim işte bir yüz tanıma işlemi yapıyorsanız göz rengini kullanmamanız lazım.
+
+36
+00:05:45,179 --> 00:05:55,599
+Tamam belki bazı noktalarda ayır dedici gibi gözükse de yani mani göz bir kişiyi tanımanız için şey bir özellik değil, ayır dedici bir özellik değil.
+
+37
+00:05:55,599 --> 00:06:03,719
+farklı insanlarda ortak bulunabilen bir özellik. O zaman bizim özellik seçiminde şuna dikkat etmemiz gerekiyor.
+
+38
+00:06:03,719 --> 00:06:15,719
+Tamam ilk özellikleri biz toparlayacağız, elde etmeye çalışacağız ama bunların içerisinden sonra ayırt edici olan, karakteristik olan özellikleri çıkarmamız gerekir.
+
+39
+00:06:15,880 --> 00:06:20,419
+Şimdi bunu nasıl yapabiliriz? Karakteristik olan özellikleri çıkartma işlemini nasıl yapabiliriz?
+
+40
+00:06:20,419 --> 00:06:33,039
+birincisi mehnul yapabiliriz yani hissiyatla yapabiliriz. Hissiyatla yapmak ne kadar doğru? Aslında çok uzun yıllar makine öğrenmesinde bu iş böyle yapılıyordu ve çok da doğru bir şey değildi.
+
+41
+00:06:33,039 --> 00:06:53,219
+yani işte en ayırt edici olduğu düşünülen özellikler yani hissiyat derken tabii ki öncesinde bir gözlem vesaire var ama çok da böyle matematiksel temellere dayanmadan işte şu özellikleri seçtim deyip seçilen özellikler üzerinden işlemler yapılıyordu.
+
+42
+00:06:53,219 --> 00:07:10,139
+Burada tabii şey kontrolü yapılmadığı için bu özelliklerin tamamı görünüşe göre aralarında bir bağlantı yok ama bunun sağlaması matematiksel olarak yapılmadığı için bu bir şey yaratıyordu.
+
+43
+00:07:10,600 --> 00:07:20,100
+Sıkıntı yaratıyordu. Belki de özelliklerin bu şekilde matematiksel değerlendirmeyle seçilmesi yapılsa daha başarılı modeller elde edilecek.
+
+44
+00:07:20,100 --> 00:07:27,999
+Şimdi artık şey bayağı iyi bir şekilde özellik seçme yöntemleri gayet iyi bir şekilde kullanılıyor.
+
+45
+00:07:28,300 --> 00:07:30,079
+Şimdi önce şuradan başlayalım.
+
+46
+00:07:33,100 --> 00:07:46,859
+Elimizdeki şeyleri değerlendirirken, özellikleri değerlendirirken iki tür özellik var aslında bizim değerlendirebileceğimiz.
+
+47
+00:07:46,859 --> 00:07:47,380
+bir şey.
+
+48
+00:07:51,764 --> 00:07:57,264
+Kategorik özellikler, ikincisi de nümerik özellikler.
+
+49
+00:07:57,264 --> 00:08:07,443
+Kategorik özellik dediğimiz şey işte mesela şeyden bahsediyorsak diyelim ki bir şekilden bahsediyorsunuz.
+
+50
+00:08:07,503 --> 00:08:13,463
+Diyorsunuz ki yuvarlak işte şey nedir elips, kare diyorsunuz.
+
+51
+00:08:13,543 --> 00:08:19,063
+Bu kategorik bir özellik veya işte bir kişinin yaşadığı şehirden bahsediyorsunuz.
+
+52
+00:08:19,123 --> 00:08:21,203
+İstanbul, Ankara, İzmir diyorsunuz.
+
+53
+00:08:21,203 --> 00:08:37,063
+Bu kategorik bir özellik. Kategorik özellik demek ne demek? Bunların arasında bir ölçüm yapamazsınız. Yani biri birine göre şey diyemezsiniz. Yani İstanbul'la Ankara arasındaki mesafe üçtür diyemezsiniz.
+
+54
+00:08:37,063 --> 00:08:46,143
+Tamam arasında bir kilometre mesafesi var ama bu İstanbul'da Ankara'nın benzerliğini gösteren bir şey değil, mesafe değil.
+
+55
+00:08:46,484 --> 00:08:49,883
+Halbuki şey düşünecek olursak nedir?
+
+56
+00:08:50,063 --> 00:08:59,503
+İşte iki kişinin kilolarını karşılaştırıyor olsak işte biri 45 kilo bile 57 kilo dediğimiz zaman bunlar nümerik ölçülebilir şeyler.
+
+57
+00:08:59,503 --> 00:09:05,003
+bunlar arasında bir mesafe hesabı yapabilmek, benzerliği değerlendirmek mümkün.
+
+58
+00:09:05,124 --> 00:09:10,383
+Ama bu kategorik özelliklerde şey yapabilmek çok mümkün değil.
+
+59
+00:09:10,383 --> 00:09:17,463
+Yani kare daireye ne kadar benziyor falan gibi bir karşılaştırma yapmak çok da mümkün değil.
+
+60
+00:09:17,803 --> 00:09:21,203
+Şimdi birinci türde olabilen şeyler kategorik özelliklerimiz.
+
+61
+00:09:21,323 --> 00:09:25,003
+İkinci türde olan özelliklerimiz de numarik özelliklerimiz.
+
+62
+00:09:25,003 --> 00:09:41,303
+Az önce konuştuğumuz gibi kişinin yaşı, kilosu, bir evin yüz ölçümü, müşterinin yaptığı harcama miktarı bunlar üzerinde matematiksel işlemler yapılabilen ve karşılaştırılabilen özellikler.
+
+63
+00:09:41,624 --> 00:09:47,283
+Peki o zaman özellikleri kullanırken biz modellerde nasıl kullanabiliriz?
+
+64
+00:09:47,283 --> 00:09:56,483
+bugüne kadar ki derslerde gördüğünüz gibi bazı kategorik özellikler modellerin içerisinde doğrudan kullanılabiliyor.
+
+65
+00:09:56,603 --> 00:10:05,543
+Mesela karar ağacı dediğiniz zaman karar ağacını net bir şekilde kategorik özelliği kullanabiliyorsunuz.
+
+66
+00:10:05,543 --> 00:10:12,143
+Neden? Çünkü orada işte İstanbul'da kaç kişi oturuyor yani istatistik giriyor işin içine.
+
+67
+00:10:12,143 --> 00:10:21,223
+İstanbul'da oturan kişi sayısı falan dediğiniz zaman o başka bir noktaya geliyor ve kategorik özelliği kullanabilir hale geliyorsunuz.
+
+68
+00:10:21,303 --> 00:10:26,143
+Veya işte Nayibayez yönteminde yine kategorik özelliği kullanabiliyorsunuz.
+
+69
+00:10:26,883 --> 00:10:31,423
+Yine aynı mantıkla işte mesela kelimeleri kullanıyorduk.
+
+70
+00:10:31,503 --> 00:10:37,023
+Orada kelimelerin kullanım sıklıklarından hani doküman sınıflandırma örneği yapmıştık Nayibayez ile.
+
+71
+00:10:37,023 --> 00:10:39,383
+kelimelerin kullanım sıklıkları
+
+72
+00:10:39,383 --> 00:10:41,443
+dediğin zaman aslında o özellik
+
+73
+00:10:41,443 --> 00:10:42,723
+kategorik özellik ama
+
+74
+00:10:42,723 --> 00:10:45,723
+şey olarak kullanabilir hale geliyorsunuz.
+
+75
+00:10:45,783 --> 00:10:47,124
+Sayısal olarak yani
+
+76
+00:10:47,124 --> 00:10:49,603
+özelliğin kendisini değil de
+
+77
+00:10:49,603 --> 00:10:51,624
+yöntem şeye dayalı
+
+78
+00:10:51,624 --> 00:10:53,624
+olduğu için işte frekansa
+
+79
+00:10:53,624 --> 00:10:55,523
+frekansa falan bakmaya
+
+80
+00:10:55,523 --> 00:10:57,323
+dayalı olduğu için kullanabilir hale
+
+81
+00:10:57,323 --> 00:10:59,823
+geliyorsunuz. İkinci yapabileceğiniz
+
+82
+00:10:59,823 --> 00:11:01,603
+şey kategorik özelliklerle ilgili
+
+83
+00:11:01,603 --> 00:11:03,663
+bu da yine böyle son yıllarda çok popüler
+
+84
+00:11:03,663 --> 00:11:05,723
+oldu ama avantaj ve dezavantajları
+
+85
+00:11:05,723 --> 00:11:17,583
+mantajları aslında tartışılır olarak şeyleri, kategorik özellikleri şey yapmak,
+
+86
+00:11:18,503 --> 00:11:21,703
+nümerik özellik haline getirmeye çalışmak.
+
+87
+00:11:22,903 --> 00:11:24,723
+Nasıl nümerik hale getiriliyor?
+
+88
+00:11:24,803 --> 00:11:25,803
+İki tane yolu var.
+
+89
+00:11:25,803 --> 00:11:35,803
+Bu kalem artık dönem sonunda kendini tamamen bıraktı.
+
+90
+00:11:36,503 --> 00:11:37,683
+Bayağı zor yazılıyor artık.
+
+91
+00:11:38,383 --> 00:11:43,343
+Birincisi integer encoding.
+
+92
+00:11:47,635 --> 00:11:52,036
+ikincisi de One-Hot Encoding.
+
+93
+00:11:56,532 --> 00:12:25,751
+İntegre Renk Koding'de yaptığımız şey şu. Diyelim ki işte şeylerimiz var. İşte renklerden, renk demeyin renk çünkü sayısalda gösterilen ama ölçüme olarak düşünmeyin de diyelim ki meyvelerin renkleri özellik olarak saklanmış. Yani özel bir görüntü bilgisinden değil de sadece düz özellik olarak saklandığını düşünün.
+
+94
+00:12:26,532 --> 00:12:44,331
+Diyelim ki burada işte red, green, blue denmiş. Burada da işte red için bir diyelim, green için iki diyelim, blue için üç diyelim gibi bir şey kullanılmış.
+
+95
+00:12:46,112 --> 00:12:52,951
+Şimdi bu şekilde bunu ben sayısal hale çevirdim. Sayısal hale çevirmem demek ne demek?
+
+96
+00:12:52,951 --> 00:13:03,791
+o zaman şey olarak yani matematik işlem gerektiren algoritmalarda da makine öğrenmesi algoritmalarında da artık kullanabileceğim demek.
+
+97
+00:13:06,191 --> 00:13:15,511
+Fakat bu aslında yine ölçme için iyi bir şey değil yani kırmızının yeşile mesafesi birdir gibi bir şey yok aslında.
+
+98
+00:13:16,351 --> 00:13:22,591
+Sadece sayısal hale dönüştürdüm gibi bir şey var, avantajı var.
+
+99
+00:13:22,591 --> 00:13:39,871
+şeye dikkat etmeniz lazım. Nasıl bir yerde kullanacağınıza dikkat etmeniz lazım. Çünkü unutmamanız gereken şey burada. Ben bunu tamam 1-2-3 diye gösterdim. Fakat mesafe ölçmeye kalkarsam aralarındaki işte ne bileyim öklük distance falan tehlikeli.
+
+100
+00:13:39,871 --> 00:13:52,111
+Yani çünkü şey değil nedir mavi kırmızıya iki benziyor falan gibi bir şey söz konusu değil aslında. İkinci yaklaşım bu daha çok kullanılan bir yaklaşım.
+
+101
+00:13:52,111 --> 00:14:11,391
+OneHot Encoding yaklaşımı. OneHot Encoding'de yapılan şey, şeyleri şu şekilde yapmak. Bu sefer diyelim ki 3 tane özelliğinizin alabileceği 3 tane değer var. Red, Green, Blue bunlar.
+
+102
+00:14:11,392 --> 00:14:25,091
+özelliğinizin alabileceği üç farklı değer. Onu şöyle yapıyorsunuz. Üç farklı özellik ekliyorsunuz. Yani red bir özellik, green bir özellik, blue bir özellik.
+
+103
+00:14:25,091 --> 00:14:34,091
+Diyelim ki bir örneğiniz kırmızı elmanız var. Onun redini bir yapıyorsunuz, greenini buluyorsunuz, sıfır yapıyorsunuz.
+
+104
+00:14:34,091 --> 00:14:47,752
+Diyelim ki işte yeşil bir ıspanağınız var. Onun özelliklerinde yeşili bir yapıyorsunuz, kırmızıyla maviyi sıfır yapıyorsunuz gibi.
+
+105
+00:14:47,752 --> 00:14:56,171
+Şimdi bunun sakıncası ne? Bunun sakıncası şu. Bununla bir kere having distance yapmanız mümkün.
+
+106
+00:14:59,764 --> 00:15:14,583
+Yani işte aynılar bir farklılarsız şey, distance hesabı yaparken aynıların distance'ı sıfır, farkların distance'ı bir mantığıyla, Heming distance mantığıyla bundan şey yapmak mümkün.
+
+107
+00:15:14,583 --> 00:15:28,563
+Ayrıca burada normal mesafe hesapları da yapabilirsiniz, öbür distance falan. Çünkü iki farklı örneğin, birisi kırmızıysa öbürü yeşilse, baktığınız zaman şuradaki şey distance'ı nedir?
+
+108
+00:15:28,563 --> 00:15:34,163
+redlerin arasındaki distance bir olacak, greenlerin arasındaki distance da bir olacak.
+
+109
+00:15:34,163 --> 00:15:38,183
+E iyi işte bunların farklılıklarını çıkarabilmiş olacağız.
+
+110
+00:15:38,984 --> 00:15:40,944
+Bu şu anda çok kullanılan bir yaklaşım.
+
+111
+00:15:41,023 --> 00:15:43,903
+Bunun sakıncası, ne olabilir sizce bunun sakıncası?
+
+112
+00:15:52,052 --> 00:15:54,831
+Çok fazla sıfır olan şey olacak içerisinde.
+
+113
+00:15:57,071 --> 00:16:05,611
+Güzel, çok fazla sıfır olandan da öte çok fazla özellik oluyor.
+
+114
+00:16:05,611 --> 00:16:17,831
+Yani şey varsa eğer, diyelim ki işte bir örneğimiz, ne bileyim şeylerde biz bunu çok yaşadık, o banka müşterileri meselesinde çok yaşadık.
+
+115
+00:16:17,831 --> 00:16:29,271
+Diyelim ki işte hangi ülkede yapıldı, hadi 80 farklı ülke var, hangi şehirde yapıldı, işte bilmem ne kadar şehir var, hangi semtde yapıldı.
+
+116
+00:16:29,471 --> 00:16:30,751
+Yani bunun sonu gelmiyor.
+
+117
+00:16:31,291 --> 00:16:44,791
+Bütün bu özellikler kullanılmaya kalkarsa özellik sayınız diyelim ki bizde mesela bu kredi kartı sahtekarlığı projesinde biz sanıyorum 40 özellikle başlıyorduk.
+
+118
+00:16:44,791 --> 00:16:51,791
+yani bir şey sahtekarlıkla ilgili müşterinin yaptığı transakşınlarla yaklaşık 40 özellikle başlıyorduk.
+
+119
+00:16:52,571 --> 00:16:54,791
+Sonra yaklaşık 4000 özelliğe kadar çıkıyorduk.
+
+120
+00:16:55,531 --> 00:17:00,951
+Çünkü dediğim gibi yani Huvan Hatay İnkoding'de şehirleri çevirdim.
+
+121
+00:17:01,331 --> 00:17:03,272
+O zaman her şehir bir özellik oluyor.
+
+122
+00:17:04,831 --> 00:17:10,111
+İşte olay o şehirde olmuşsa o şehir bir değilse o şehir sıfır.
+
+123
+00:17:10,191 --> 00:17:13,171
+Yani bütün diğer şehirler sıfır falan böyle bir şey oluyor.
+
+124
+00:17:13,171 --> 00:17:38,411
+Aynen yani bir kere çoğunluğu çok sıfır olan bir özellik kümesi oluyor elinizde. İkincisi de yani özelliklerin bu kadar artması iyi bir şey değil. Yani şimdi şey yaparken bir tanıma sistemi yani veya işte öğrenme modeli kurduğunuzda hedefiniz karakteristik özellikleri kullanmak. Özellikler ne kadar karakteristikse o kadar iyi.
+
+125
+00:17:38,412 --> 00:18:08,391
+Orada da şey iyi bir şey değildir yani çok az özellikle çalışmak iyi bir şey değildir yani işte diyelim ki işte bir bu şey meselesinde sahtekarlık meselesinde sadece ne kadar harcama yaptığına ve saat kaçta harcama yaptığına bakarak kredi kartı sahtekarlığı tespit etmek çok da kolay bir şey değil ama onun içine işte hangi şehirde yapılmış, hangi alışveriş hangi şehirde yapılmış.
+
+126
+00:18:08,412 --> 00:18:21,831
+Hangi firmada yapılmış, ondan sonra ne kadar harcanmış, kaç defa yapılmış neyse böyle bir sürü özellik eklediğiniz zaman olay birazcık daha anlaşılabilir hale gelir.
+
+127
+00:18:21,831 --> 00:18:23,412
+Bu tamam, burada mesele yok.
+
+128
+00:18:23,591 --> 00:18:26,751
+Yani özelliklerin az olmaması iyi bir şey.
+
+129
+00:18:26,871 --> 00:18:39,391
+Ama bu şekilde türetilmiş özelliklerin kullanılması, özellik sayısının bu şekilde binlere, üç binlere, beş binlere çıkması aslında şey bir şey de değil.
+
+130
+00:18:39,391 --> 00:18:41,891
+Yani çok da iyi bir şey değil.
+
+131
+00:18:41,971 --> 00:18:43,492
+Hem hız açısından iyi bir şey değil.
+
+132
+00:18:43,492 --> 00:18:54,031
+Çünkü özellik sayımızı arttıkça yavaşlayacak sistem bunların üzerinde iş yaparken hem de şey açısından iyi değil, nedir?
+
+133
+00:18:55,331 --> 00:19:01,812
+Modelin başarısını etkilemesi açısından iyi değil bu şekilde onun tekrardan değerlendirilmesi gerekir.
+
+134
+00:19:01,891 --> 00:19:10,531
+Peki tamam şimdi o zaman şeyi anladık, özelliklerimizi nasıl kullanabileceğimizi anladık, kategorik olabilir, nümerik olabilir bunu anladık.
+
+135
+00:19:10,531 --> 00:19:14,291
+Şimdi gelelim peki o zaman madem bir şey var.
+
+136
+00:19:14,932 --> 00:19:25,151
+Özellik seçme gibi bir şey yapılması gerekiyor. O zaman bu nasıl olacak? Şimdi ondan bahsedelim.
+
+137
+00:19:25,971 --> 00:19:31,891
+Şimdi dediğim gibi bizim için önemli olan şeyi seçmeye çalışmak. Karakteristik özellikler.
+
+138
+00:19:31,891 --> 00:19:53,411
+Karakteristik dediğiniz zaman ne olmalı? İki tane temel konu var. Birincisi sınıflar arası işte şeyi çok arttıracaksınız, farkı çok arttıracaksınız, sınıf içi benzerliği çok arttıracaksınız. Birincisi bunu sağlamamız lazım. İkincisi de yani hani her iki sınıfta da şey olan özellikleri kullanmamanız lazım.
+
+139
+00:19:53,411 --> 00:19:58,772
+Ortak geçebilen, o yüzden bir ayırt ediciliği olmayan özellikleri kullanmamız lazım.
+
+140
+00:19:58,891 --> 00:20:01,231
+Birincisi bunun olmasını sağlamamız lazım.
+
+141
+00:20:01,691 --> 00:20:06,772
+İkincisi de o özelliğin o sınıf için ayırt ediciliğine bakmanız lazım.
+
+142
+00:20:07,311 --> 00:20:13,832
+Yani bu şu demek işte tamam öbür sınıfla da ilgisi yok bu özelliğin belki.
+
+143
+00:20:14,012 --> 00:20:16,411
+Öbür sınıfta çok geçen bir özellik değil.
+
+144
+00:20:16,631 --> 00:20:18,152
+İki sınıfınız var A ve B.
+
+145
+00:20:18,591 --> 00:20:22,531
+Bir özelliğimiz A sınıfında daha çok geçmiş bir özellik.
+
+146
+00:20:22,531 --> 00:20:28,091
+Ama baktığınız zaman aslında ayır edicilik açısından çok da önemli bir bilgi sağlamıyor.
+
+147
+00:20:28,332 --> 00:20:32,512
+Yani o sınıf için de çok özellik, ayır ediciliği özellik değil.
+
+148
+00:20:33,411 --> 00:20:39,331
+Dolayısıyla özelliğin hem sınıf içinde iyi olması lazım hem de sınıflar arasında ayır ediciliği sağlaması lazım.
+
+149
+00:20:39,751 --> 00:20:40,531
+Peki bunu nasıl sağlayacağız?
+
+150
+00:20:41,251 --> 00:20:42,932
+İki tane ana yaklaşımımız var.
+
+151
+00:20:43,071 --> 00:20:46,612
+Birincisi öncelikle oradan başlamak gerekiyor.
+
+152
+00:20:47,512 --> 00:20:49,271
+Özellikleri azaltacağız bir kere.
+
+153
+00:20:49,271 --> 00:20:51,152
+Burada yapmamız gereken şey bu.
+
+154
+00:20:51,152 --> 00:21:05,211
+Bu azaltmaktan kastettiğimiz şey öncelikle elimizdeki ham özelliklerden anlamlı karakteristik olan özellikleri çıkartmak.
+
+155
+00:21:05,332 --> 00:21:07,452
+Burada iki temel yaklaşım var.
+
+156
+00:21:07,851 --> 00:21:11,312
+Birincisi feature selection, ikincisi de feature extraction.
+
+157
+00:21:11,311 --> 00:21:28,232
+Feature Selection dediğimiz şey şu. Diyelim ki benim bir X örneğim var ve ben bunu aldım X örneğine. Bu D tane şeyden oluşuyor, özellikten oluşuyor bu örnek.
+
+158
+00:21:28,232 --> 00:21:35,232
+Feature Selection ile benim yaptığım şey bunların içinden...
+
+159
+00:21:42,612 --> 00:21:50,211
+ya da şöyle diyeyim şu N olsun bu M olsun böyle birazcık yanlış oldu çünkü.
+
+160
+00:21:52,471 --> 00:22:05,691
+Feature Selection'da bizim yaptığımız şey aslında en küçüktür, bayağı küçüktür, en olacak şekilde şeyleri seçmek, ayırt edici özellikleri seçmek.
+
+161
+00:22:05,691 --> 00:22:31,612
+Burada bir dönüşüm yok. Mesela işte boyu seçtim, kiloyu seçtim, yaşı seçtim gibi bir şey işlemimiz var bizim. Özelliklerin seçilmesi işlemimiz var. Feature Extraction'da yaptığımız ise yine burada benim en tane özelliğim var ama Extraction yöntemlerini kullandığımda bu özelliklerden farklı
+
+162
+00:22:31,612 --> 00:22:45,391
+yeni özellikler oluşturdu. Bu N tane, bu M tane. Bunlar şey değil artık. Baştaki özelliklerle hiç ilgisi olmayan özellikler.
+
+163
+00:22:45,391 --> 00:22:52,372
+Yani boy, yaş, kilo diye verdiğim şeyler. Öbür tarafta farklı bilgiler olarak yer alıyorlar.
+
+164
+00:22:52,372 --> 00:23:05,812
+Fakat yine burada da bizim hedefimiz yeni taraftaki, yeni elimdeki de şeyler, özellikler, baştaki özelliklerden daha az sayıda ve daha ayırt edici olan özellikler.
+
+165
+00:23:05,812 --> 00:23:15,372
+Önce şeyle başlayalım, feature selection ile başlayalım. Yani özellikleri dönüştürmeden sadece eleyerek kullanmaktan başlayalım.
+
+166
+00:23:15,371 --> 00:23:28,071
+Şimdi filter, feature selection dediğinizde 3 tane temel kullanabileceğiniz yaklaşım var. Birincisi filter yaklaşımı, ikincisi wrapper yaklaşımı.
+
+167
+00:23:31,859 --> 00:23:36,780
+üçüncüsü de embedded yaklaşım.
+
+168
+00:23:40,788 --> 00:24:08,947
+Şimdi filter yaklaşımında yaptığınız şey az önce işte bu konuştuğumuz şekilde şey yapmak, istatiksel olarak evdeki özellikleri değerlendirerek daha çok bu özelliklerin şeyde bu nedir? Model için ayırt ediciliğini belirlemeye çalışmak.
+
+169
+00:24:08,947 --> 00:24:22,267
+ve bunun içinde ayırt edicilikten bahsediyorsak ilk bahsedebileceğimiz şey aslında bu özellikler için aralarında korrelasyon olup olmadığına bakabilirsiniz.
+
+170
+00:24:22,267 --> 00:24:25,288
+En çok kullanılan filter metotlardan birisi.
+
+171
+00:24:26,087 --> 00:24:30,128
+Şey yapayım öncelikle aslında bir dakika şunu şöyle göstereyim.
+
+172
+00:24:30,567 --> 00:24:33,487
+Şimdi filter metotlarda yapılan şey şu aslında.
+
+173
+00:24:33,487 --> 00:24:44,527
+Şimdi sizin diyelim ki şeyleriniz var topladığımız örneklere ait özellikleriniz var. Bunlar sizin topladığınız örneklerin bütün özellikleri.
+
+174
+00:24:44,527 --> 00:24:51,027
+filter metodun yaptığı bunların içinden bir alt küme seçiliyor.
+
+175
+00:24:51,027 --> 00:24:56,968
+Yani bir takım özellikler eleniyor, gereksiz oldukları ispatlanarak.
+
+176
+00:24:57,447 --> 00:25:05,047
+Ondan sonra bunların içerisinden bir alt küme seçiliyor ve öğrenme algoritmalarınıza bu seçilmiş özellikler veriliyor.
+
+177
+00:25:06,967 --> 00:25:08,167
+Burada yapılan şey bu.
+
+178
+00:25:08,167 --> 00:25:18,047
+Şimdi en çok kullanılan şeylerden birisi, filter metotlardan birisi, correlation.
+
+179
+00:25:20,167 --> 00:25:23,347
+Şimdi ona girmeden önce size şeyi hatırlatacağım.
+
+180
+00:25:23,467 --> 00:25:24,867
+Bunu hatırlattım emin değilim.
+
+181
+00:25:25,227 --> 00:25:32,207
+Herhalde biliyorsunuzdur ama özellikle doktor yeterlik sınavına girecek olanlara en çok sorulan sorulardan birisidir bu.
+
+182
+00:25:32,207 --> 00:25:39,227
+o yüzden makine öğrenmesi sorulmuyor bu arada istatistik dersi içerisinden sorulan sorulardan birisidir.
+
+183
+00:25:39,227 --> 00:25:42,008
+O yüzden bir kısacık hatırlatacağım.
+
+184
+00:25:42,468 --> 00:25:44,328
+Şimdi şeyden başlayalım.
+
+185
+00:25:44,868 --> 00:25:53,467
+Korrelasyon aslında bilgilerin birlikte değişimi birbirlerine göre değerlendirilmesini sağlamak için kullanılan bir şey.
+
+186
+00:25:53,788 --> 00:25:55,907
+Şimdi diyelim ki şöyle düşünelim öncelikle.
+
+187
+00:25:57,888 --> 00:25:59,868
+Diyelim ki en tane örneğiniz var.
+
+188
+00:26:04,243 --> 00:26:22,243
+bu örneklerinizin şeyini görmek istiyorsunuz işte dağılımlı durumunu görmek istiyorsunuz bunu diyorsunuz nasıl bu örnekler hakkında bir fikir yürütebilirim ilk yapabileceğim şey ortalamasını alırım diyorsunuz.
+
+189
+00:26:24,819 --> 00:26:27,819
+Bu aslında expected value.
+
+190
+00:26:32,243 --> 00:26:56,424
+ve bu size işte o sınıf hakkında, o sınıftaki örnekler hakkında bir bilgi veriyor. Yani işte ne bileyim ortalaması 3'tür, 5'tür nedir? İşte İstanbul'da Ocak ayındaki şey nedir? Hava sıcaklığı ortalaması işte 12 derecedir. Yani fena bilgi değil. Size böyle bir bilgi veriyor veya işte şeyde nedir?
+
+191
+00:26:56,424 --> 00:27:05,004
+makine öğrenmesi dersinde sınıfın ortalaması 55'tir. Yani o fena olmayan bir bilgi veriyor.
+
+192
+00:27:05,004 --> 00:27:24,723
+Fakat burada şöyle bir şey var. Diyelim ki bir A örneğiniz, A sınıfındaki örnekleriniz var. Bunlar şöyle 4, 6, 7, 12, 15. Bunlar A sınıfındaki örnekleriniz.
+
+193
+00:27:24,723 --> 00:27:26,624
+Bunlar da B sınıfındaki
+
+194
+00:27:31,284 --> 00:27:38,284
+ve
+
+195
+00:27:51,380 --> 00:27:53,299
+9-10
+
+196
+00:28:03,892 --> 00:28:29,931
+aynı şeyleri yaptım, pardon. Şöyle yaparsam olacak. B3, 7, 12, 15, bölü 5, 3. Şunu da şöyle yaparsam olacak. Özür diliyerek. 1, 2, 4 dersem 6, 7. Niye böyle olduk? 4, 5, 4, 4, 1 dersem olacak.
+
+197
+00:28:29,931 --> 00:28:42,611
+Şimdi bunun da ortalaması 3, bunun da ortalaması 3 fakat ikisi de birbirine benzemeyen iki örnek grubu.
+
+198
+00:28:42,691 --> 00:28:48,591
+Dolayısıyla demek ki ortalama aslında dağılım hakkında bir bilgi vermiyor.
+
+199
+00:28:48,591 --> 00:28:54,551
+O zaman bizim başka bir ölçme şekli bulmamız lazım. Nedir o da? Varyansına bakmak.
+
+200
+00:28:54,551 --> 00:29:07,031
+diyelim ki elinizdeki örneklerin varyansı aslında şeyi verir size yani standarttan ne kadar sapıldığını ortalamadan ne kadar uzaklaşıldığını verir.
+
+201
+00:29:07,031 --> 00:29:15,011
+Varyans zaten standart sapmanın karesi şu şekilde değil mi? Hatırlarsınız bunu.
+
+202
+00:29:15,011 --> 00:29:20,251
+x-mü x'in karesi o da neye eşittir?
+
+203
+00:29:20,851 --> 00:29:27,811
+i eşittir birden n'e x-mü x'in karesi bölü n-1.
+
+204
+00:29:27,811 --> 00:29:35,611
+Eğer incelemeyi bütün data üzerinde yapıyorsanız n'e bölersiniz, temsili bir grup üzerinde yapıyorsanız n-1'e bölersiniz.
+
+205
+00:29:35,612 --> 00:29:46,091
+bu şekilde ortalamadan ne kadar uzaklaşıldığını görmüş olursunuz.
+
+206
+00:29:46,211 --> 00:29:48,572
+Çünkü her örnek için burada yaptığımız şey ne?
+
+207
+00:29:49,392 --> 00:29:53,932
+Her örneğin ortalamadan ne kadar uzakta olduğunu ölçüyorsunuz.
+
+208
+00:29:54,012 --> 00:29:56,772
+Böylece şey anlamlı bir hale geliyor.
+
+209
+00:29:56,772 --> 00:30:02,211
+Yani standarttan ne kadar sapıldığını, iki grubun aslında dağılma farklıydı.
+
+210
+00:30:02,332 --> 00:30:04,392
+Burada A'la B'nin dağılma farklıydı.
+
+211
+00:30:04,392 --> 00:30:13,671
+fakat biz ortalamadan bunu anlayamadık. O yüzden bu şekilde bunu anladık. Peki varyans buysa, co-varyans şimdi anlamlı bir noktaya geliyoruz.
+
+212
+00:30:13,671 --> 00:30:23,472
+Biz aslında neyi merak ediyoruz? Elimizdeki özelliklerin birbirlerine göre durumlarını aslında merak ediyoruz.
+
+213
+00:30:23,632 --> 00:30:31,571
+Yani bu şu da olabilir, elimizdeki bir özelliğin o sınıfa göre durumunu merak ediyor olabiliriz
+
+214
+00:30:31,571 --> 00:30:36,131
+veya elimizdeki iki özelliğin birbirlerine göre durumunu merak ediyoruz.
+
+215
+00:30:38,631 --> 00:30:44,831
+Şimdi önce kovaryansa bakalım. İki özelliğin birlikte değişimini görmek istiyorsak,
+
+216
+00:30:46,731 --> 00:30:55,071
+mesela işte şeyde ilkokula giden çocuklarda genelde şey oldukça boyları uzarken kiloları da artar.
+
+217
+00:30:55,071 --> 00:30:57,551
+Yani onlar o yaşta gelişme çağında.
+
+218
+00:30:57,552 --> 00:31:02,872
+burada bir şey vardır, birlikte bir değişme hikayesi vardır.
+
+219
+00:31:02,872 --> 00:31:19,932
+Ko varyansı da şimdi varyansı gördük. Ko varyans bunun birlikte değişimi olduğuna göre x'i eksi ortalama, y'i eksi ortalama bölü yine n veya n-1 fark etmez.
+
+220
+00:31:19,931 --> 00:31:30,791
+bu şekilde yaptığımız zaman neyi gördük? İpsin ve yeğenin aslında birbirlerine göre değişimini gördük.
+
+221
+00:31:30,791 --> 00:31:37,751
+Şimdi burada bu covariance şeyde korrelasyon kas sayısı da
+
+222
+00:31:44,531 --> 00:32:03,191
+aslında bize şeyi verecek. İki özelliğin veya işte bir sınıfın bir özelliğin bir sınıfa göre Koreli olup olmadığını, birbirleriyle aralarında ilişki olup olmadığını gösterecek.
+
+223
+00:32:03,191 --> 00:32:14,971
+Şimdi bunun için en çok kullanılan şeylerden, korrelasyon yöntemlerinden, korrelasyon kat sayısı yöntemlerinden birisi Pearson Correlation Coefficient.
+
+224
+00:32:14,971 --> 00:32:22,292
+Duymuş muydunuz bilmiyorum. Pearson Correlation Coefficient. Şöyle R dersek.
+
+225
+00:32:27,316 --> 00:32:42,755
+iki tane özelliğin birbirlerine göre değişimi veya bir özelliğin bulunduğu sınıfın durumuna göre değişimini ölçmek için kullanılan şey, korelasyon ölçme yöntemi.
+
+226
+00:32:43,316 --> 00:32:52,615
+Bu şeyi gösteriyor, papyrus'in korelasyon iki değişken arasındaki lineer bağıntıyı gösteriyor.
+
+227
+00:32:53,076 --> 00:32:57,236
+Normalde eksi bir ile artı bir arasında değişiyor.
+
+228
+00:32:57,316 --> 00:33:11,316
+ve eğer sıfırdan büyükse pozitif olarak korele olduklarını birbirleriyle mesela işte çocukların diyelim ki boyları artarken kuralarının da artması pozitif korelasyon.
+
+229
+00:33:12,316 --> 00:33:21,255
+İşte negatif korelasyon diyelim ki işte çok sigara içerseniz ömrünüzün kısalması negatif korelasyon.
+
+230
+00:33:26,387 --> 00:33:44,767
+işte ne bileyim yağmur yağdığı günler şey olması televizyonda işte ne bileyim özel bir film pembe panter oynaması hiç ilgisi yok yani ikisi arasında hiç ilgisi yok.
+
+231
+00:33:44,767 --> 00:34:09,707
+ilgisi olmayan, korele olmayan bilgiler. Şimdi bu lineal olarak Pearson coefficient şeyi ölçtüğü için, lineal ilişkiyi ölçtüğü için iki değişken arasında diyelim ki şöyle olsun, şu sizin x değişkeniniz olsun, şu da y değişkeniniz olsun, x'in ve y'nin birbirlerine göre değişimleri şöyle olsun mesela, şu noktalar olsun.
+
+232
+00:34:09,707 --> 00:34:25,167
+önce doğruyu çizdim ben çok tutturamıyorum genelde. Eğer mesela bu şey gösteriyor gerçekten bu iki özellik birbirleriyle çok koreli olan iki özellik.
+
+233
+00:34:25,167 --> 00:34:38,127
+Yani işte ne bileyim gerçekten boy arttıkça klonun da çok fazla arttığının görülmesi. Bunlar aralarında çok koreli olan özellikler.
+
+234
+00:34:38,127 --> 00:34:48,627
+şöyle yaptığınız zaman da yani X özelliğiyle Y özelliğinin birbirlerine göre durumuna baktığınızda yine önce çizgimi çizeyim ondan sonra şey yapayım.
+
+235
+00:34:49,068 --> 00:34:51,407
+Şunlar diyelim ki sizin özellikleriniz olsun.
+
+236
+00:34:52,468 --> 00:35:00,127
+Yani işte ne bileyim X üçgen Y yedi olmuş X dörtgen Y bilmem on iki olmuş falan gibi böyle şey olmuş.
+
+237
+00:35:00,127 --> 00:35:02,468
+Bunları hiçbir şekilde bir yere oturtamıyorsunuz.
+
+238
+00:35:02,707 --> 00:35:05,447
+Dur birazcık oturttum yalnız onu düzelteyim.
+
+239
+00:35:06,147 --> 00:35:07,627
+İlgisiz yapmak istiyordun.
+
+240
+00:35:14,900 --> 00:35:19,419
+lineal bir ilişki yok burada aslında gördüğünüz gibi.
+
+241
+00:35:28,211 --> 00:35:47,911
+mesela bu şey binergeşki yok burada sıfır korrelasyonun sıfır olduğu durum bu şekilde bir de şey var negatif korrelasyon az önce konuştuğumuz biri artarken öbürünün azalması
+
+242
+00:35:59,155 --> 00:36:08,416
+mesela bu da bu şekilde negatif korelasyon. Şimdi yapabileceğiniz filter metotlardan birincisi bu.
+
+243
+00:36:08,416 --> 00:36:19,756
+Şeye ölçebilirsiniz. İki özellik arasında korelasyonu ölçebilirsiniz ve şeye bakabilirsiniz.
+
+244
+00:36:19,756 --> 00:36:30,975
+Eğer bunlar çok aralarındaki şeyler, korrelasyon fazlaysa demek ki özelliklerin ikisini birden kullanmanız gerekmiyor.
+
+245
+00:36:30,975 --> 00:36:38,935
+Yani aralarında fazla korrelasyon olan özellikler varsa birini kullanmanız yeterli olacak demektir.
+
+246
+00:36:38,935 --> 00:36:49,955
+şey ise iki farklı sınıftaki iki özellik arasında iki farklı sınıfta olan düzeltiyorum öyle söylememem gerekiyor.
+
+247
+00:36:49,955 --> 00:37:01,735
+Bir özelliğin bulunduğu sınıf için korrelasyonu yüksekse o zaman da şey o özellik o sınıf için kullanılabilir bir özellik.
+
+248
+00:37:01,815 --> 00:37:07,555
+Genellikle şeyler değerlendirilir özelliklerin birbirlerine göre durumları değerlendirilir ve şeye bakılır.
+
+249
+00:37:07,556 --> 00:37:15,376
+yani korrelasyonu yüksek olan özelliklerin şey olması uygundur, birinden birinin tercih edilmesi uygundur.
+
+250
+00:37:15,376 --> 00:37:23,336
+Birinci yapabileceğiniz şey bu, ikinci yapabileceğiniz şey filter metotlarda key square test.
+
+251
+00:37:23,836 --> 00:37:30,615
+Şimdi key square test kategorik özellikler için kullanılabilen bir yöntem.
+
+252
+00:37:30,615 --> 00:37:46,956
+Burada yapılan şey şey yapmak, bir özelliğin o sınıf için uygun olup olmadığına karar vermek, o sınıfta kullanılmasının uygun olup olmadığına karar vermek.
+
+253
+00:37:47,655 --> 00:37:51,135
+Bağıntısı şu şekilde ondan sonra şimdi üzerimde konuşalım.
+
+254
+00:38:22,483 --> 00:38:28,803
+şu observed frequency dediği şey bu özelliğin
+
+255
+00:38:33,108 --> 00:38:49,687
+aldığı değerlerin işte sınıfta ne kadar geçtiği aslında ondan sonra inci sınıfta ne kadar geçtiği aslında şurada bir de şey var tabii çünkü onu unuttum da o yüzden bir dakika
+
+256
+00:38:54,099 --> 00:38:59,879
+diyelim ki en tane sınıfınız var. Observed Frequency E şu.
+
+257
+00:39:12,947 --> 00:39:26,408
+expected frequency. Bu da expected frequency. Şimdi bu mantığa göre bir tane örnek üzerinden yapayım size.
+
+258
+00:39:28,687 --> 00:39:37,628
+Şeyi hatırlarsınız böyle ilk başta gördüğümüz bir şey vardı. Tenis oynasın mı, oynamasın mı problemi vardı.
+
+259
+00:39:37,628 --> 00:39:48,008
+14 tane şey yapmayacağım sadece özellikleri hatırlatacağım size. 14 gün boyunca alınmış şeyler vardı.
+
+260
+00:39:50,907 --> 00:40:02,208
+Gözlemler vardı. O gözlemlere göre şey oluyordu işte birinci gün rüzgarla işte günden hava sıcak, güneşli, nem şöyle falan filan diye hatırla.
+
+261
+00:40:02,207 --> 00:40:11,507
+hatırlıyor musunuz? Şeyler vardı, ölçümler vardı. Bu ölçümlerin sonuna göre karar veriliyordu.
+
+262
+00:40:13,547 --> 00:40:17,507
+Tenis oynayıp oynamamasına. Biz bunu karar ağaçlarında görmüştük.
+
+263
+00:40:17,507 --> 00:40:27,787
+Şimdi burada şey için, A-Book özelliğine ne kadar uygun olduğuna karar vermek için,
+
+264
+00:40:27,787 --> 00:40:32,267
+key square hesabının nasıl yapılacağını göstereceğim.
+
+265
+00:40:32,267 --> 00:40:36,287
+Şimdi alt book'un aldığı 3 tane değer varmış.
+
+266
+00:40:36,427 --> 00:40:38,927
+Çok şey yapmayacağım, sadece göstereceğim.
+
+267
+00:40:39,107 --> 00:40:44,927
+Sunny, overcast ve reyni o zaman hatırlarsanız belki örneği.
+
+268
+00:40:45,087 --> 00:40:53,267
+3 tane değer varmış ve bu 3 değer için 2 sınıftaki dağılım şu şekildeymiş.
+
+269
+00:41:03,539 --> 00:41:06,539
+şu Y sınıfı, şu non sınıfı
+
+270
+00:41:17,364 --> 00:41:29,244
+5 günün, 2 gününde hava güneşliymiş ve şey 7 şeymiş daha doğrusu yanlış söyledim.
+
+271
+00:41:29,763 --> 00:41:34,103
+Güneşli olan 5 günün, 2 gününde tenis oynamış, 3 gününde oynamamış.
+
+272
+00:41:34,103 --> 00:41:38,143
+Orkest olan 4 günün, 4'ünde oynamış.
+
+273
+00:41:38,823 --> 00:41:42,103
+Reyn olan 5 günün, 3'ünde oynamış.
+
+274
+00:41:42,763 --> 00:41:43,663
+Şöyle bir şey var.
+
+275
+00:41:43,663 --> 00:41:50,483
+yes'in toplamı 9, no'nun toplamı da 5 şeklinde.
+
+276
+00:41:50,483 --> 00:41:51,243
+Şimdi
+
+277
+00:41:51,244 --> 00:41:52,364
+de...
+
+278
+00:41:56,500 --> 00:42:02,779
+şey,
+
+279
+00:42:01,204 --> 00:42:04,204
+Sunny can yes'in expected values'u
+
+280
+00:42:04,204 --> 00:42:07,603
+Sunny can
+
+281
+00:42:07,603 --> 00:42:13,343
+yes'in expected values'u
+
+282
+00:42:13,343 --> 00:42:14,204
+5 bölü
+
+283
+00:42:14,204 --> 00:42:18,204
+14 çarpı
+
+284
+00:42:18,204 --> 00:42:19,204
+5
+
+285
+00:42:30,996 --> 00:42:32,035
+3.21
+
+286
+00:42:46,003 --> 00:43:12,283
+Bu 2-3.21. 2 defa oynamış. Expected values'u da 3.21'di. 2-3.21'in karesi bölü expected values'u 3.21 artı işte diğerleri için de yaptığımız zaman no için 3-expected values'u 1.79'muş. 3-1.79'un karesi bölü 1.79.
+
+287
+00:43:12,283 --> 00:43:23,543
+bu sunny yes, bu sunny no, artı işte overcast için yapıyorum.
+
+288
+00:43:23,543 --> 00:43:41,544
+Orada da 4-257'in karesi artı işte 0-1.43'ün karesi bölü 1.43 artı 3-3.21'in karesi.
+
+289
+00:43:42,283 --> 00:43:55,763
+bölü 3-21. Tek tek hepsi için şeyleri, expected value'larını hesaplayıp, işte kaç defa geçmiş expected value'unun karesi böyle expected value.
+
+290
+00:43:56,323 --> 00:44:11,224
+Mesela Outlook'un key square değeri 3.129 çıkmış. Arkasından wind için yapıldığında, onunkisi de 3.62 çıkmış.
+
+291
+00:44:12,283 --> 00:44:22,003
+Şimdi bu ikisini karşılaştırdığınızda 3.62, 3.12'den daha büyük olduğu için şu kararı verebiliriz.
+
+292
+00:44:22,423 --> 00:44:26,463
+Eğer iki özellikten birisi seçilecekse 1000 seçilmeli.
+
+293
+00:44:26,883 --> 00:44:32,044
+Yani burada yaptığınız şey key square ile şeyi belirlemeye çalışıyorsunuz.
+
+294
+00:44:32,423 --> 00:44:36,163
+Hangi özelliğin daha önemli olduğunu belirlemeye çalışıyorsunuz.
+
+295
+00:44:36,163 --> 00:44:40,103
+Burada şey yapabilirsiniz işte ne yapabilirsiniz?
+
+296
+00:44:40,103 --> 00:44:54,243
+farklı, şurada şey yaptık ya, feature selection'da şöyle bir şey dedik, feature'ları seçtik, ondan sonra learning algoritmasını uyguladık, arkasından da performans ölçersiniz.
+
+297
+00:44:54,243 --> 00:45:08,703
+Şimdi şunu yapabilirsiniz, diyelim ki bütün özelliklerle performansı ölçtünüz, arkasından işte key square değeri en düşük olan özelliği çıkarttınız, performansı öyle ölçtünüz,
+
+298
+00:45:08,703 --> 00:45:32,043
+baktığınız biraz daha yüksek çıkıyor o zaman o özelliği çıkartabilirsiniz. İşte şeyi çıkarttınız işte en yüksek şey key square'e en düşük olan iki özelliği çıkarttınız ölçtünüz daha iyi çıktı özellik o zaman şey performans o zaman o iki özelliği birden çıkartabilirsiniz gibi şey yapabilirsiniz.
+
+299
+00:45:32,043 --> 00:45:42,743
+Yani key square ile bulduğunuz şeyler içerisinden, özellikler içerisinden azaltı azaltı şey yapabilirsiniz.
+
+300
+00:45:44,683 --> 00:45:50,643
+Gidebilirsiniz. Bunlar işte mesela information gain aynı şekilde.
+
+301
+00:45:50,803 --> 00:45:56,123
+Bunlar hep daha istatiksel durumlara, filter metotlar, istatiksel bilgilere bağlı şeyler.
+
+302
+00:45:56,123 --> 00:46:13,423
+mesela karar ağacında kullandığımız information gain'in de filtr metodlardan birisi. Her özelliğin information gain'ini hesaplayıp yine information gain'i küçük olan özellikleri gözden çıkartarak kullanabilirsiniz.
+
+303
+00:46:14,163 --> 00:46:15,944
+Buraya kadar sormakseniz bir şey var mı?
+
+304
+00:46:16,864 --> 00:46:18,463
+Hocam ben bir şey sorabilir miyim?
+
+305
+00:46:18,603 --> 00:46:18,803
+Tabii.
+
+306
+00:46:18,803 --> 00:46:23,323
+Bu 21.1.79 frekans hesabını nasıl yapmıştık?
+
+307
+00:46:24,403 --> 00:46:51,863
+Şuradan şey yaptık, uzun uzun uğraşmadım. Bir bak hesapla hesaplayamazsam açık hesaplarım. Observed frequency dediği, kaç defa geçtiği, şu iki mesela şeyi, expected frequency de işte Sunny Yes'in şeyi, beklendik değeri, şu expected frequency, şurada şeyler vardı ya, expected value'lar vardı ya, expected frequency'si de o.
+
+308
+00:46:51,863 --> 00:46:58,823
+hemen hızlıca hesapla eğer olmazsa onun nasıl olduğunu aradan sonra tekrar üzerinden geçebilirim.
+
+309
+00:46:59,123 --> 00:47:06,403
+Orada bir hesaplarız. Sunny, yes diye, expected value. Onu hiç kullanmadık değil mi? 3.2 ondan sanırım.
+
+310
+00:47:07,783 --> 00:47:10,463
+Ha o oradan geliyor. Bu da ne? No'nun ikisi.
+
+311
+00:47:14,739 --> 00:47:39,479
+Bu da ne olamakisi. Bir bak şeyde, arada bak, şimdi biraz ara vereceğim zaten bir. Bir daha sonra göremeyeyim hocam. Şimdi biz mesela böyle ayırıyoruz ya, belli özellikleri seçiyoruz, etkisi en çok olanları. Ama diyelim ki bütün özellikler bir şekilde en iyi etkiliyor yani. Hani mesela bütün hepsini kullandığımızda daha iyi sonuç verecek. Seçim yapmanızın sebebi sadece performans mı?
+
+312
+00:47:39,479 --> 00:48:08,280
+Evet evet yani aslında şöyle bir şey var birincisi gerçekten şey çok olmuyor aslında yani senin seçtiğin bütün özelliklerin hepsinin şahane olması çok da karşılaşılan bir şey değil mutlaka bir tane iki tane gidiyor hem de bazen bakıyorsun 20 özellikle başlıyorsun 3 özelliğe yayınlıyorsun ve çok iyi bir performans elde ediyorsun yani öyle bir şey gerçek dünyada çok değil yani çünkü
+
+313
+00:48:08,279 --> 00:48:15,439
+özellik sayısı boyut arttıkça senin göz, yani bizim sen derken bizlerin gözünden şey kaçabiliyor.
+
+314
+00:48:15,439 --> 00:48:20,139
+Aradaki relation'ın ölçülmesi imkansızlaşıp kaçabiliyor.
+
+315
+00:48:20,539 --> 00:48:25,699
+Dolayısıyla bizim burada özellik azaltmadaki sebebimiz performansı iyileştirmek aslında.
+
+316
+00:48:26,279 --> 00:48:32,600
+Performansı iyileştiğini bu şeylerde, filter metotlarda, şurada bak gel başa geleyim, şöyle anlıyorsun aslında.
+
+317
+00:48:33,100 --> 00:48:37,719
+Seçtiğin özelliklerde modelini oluşturuyorsun, bakıyorsun performansına.
+
+318
+00:48:38,280 --> 00:49:07,500
+ondan sonra bir de şey yaparak bakıyorsun bu hani etkisinin az olacağını diyelim ki Pearson Coefficient'da Key Square'da Information Game'de herhangi bir yöntemle ölçtü etkisinin az olacağını gördüğün özelliklerin var o zaman onları çıkartıp bir daha başarı ölçüyorsun baktım ki başarı bir de gerçekten sıçrıyor başarı yani onu görüyorsun mesela ne bileyim %70'lerdeyken birden %80'lere falan en az çıkıyor diyelim ki
+
+319
+00:49:07,499 --> 00:49:09,639
+o zaman o özellikleri kullanmıyorsun.
+
+320
+00:49:11,619 --> 00:49:13,399
+Anladım hocam. Teşekkür ederim.
+
+321
+00:49:14,159 --> 00:49:20,159
+Ben teşekkür ederim. O zaman şimdi bir 10 dakika ara verelim isterseniz. Ondan sonra devam ederiz.
+
+322
+00:49:20,259 --> 00:49:29,299
+Şeylerle nedir? Aslında feature extraction'la biraz o refer metotları falan söyledim. Ondan sonra extraction'a geçeriz.
+
+323
+01:05:03,860 --> 01:05:28,939
+Şimdi ikinci yapabileceğiniz yaklaşım şey, wrapper yaklaşımları. Wrapper yaklaşımında feature selection için ikinci yapabileceğiniz. Bu çok zahmetli olduğu için aslında çok kullanılan bir yaklaşım değil. Ama yani yöntemlerden birisi bu. O yüzden şey yapacağım.
+
+324
+01:05:28,939 --> 01:05:36,940
+Şimdi az önceki de feature subset selection'da genel olarak istatiksel yaklaşımları kullanırız demiştik.
+
+325
+01:05:36,940 --> 01:05:52,940
+Orada bizim yaptığımız şey yani doğrudan istatiksel olarak önemli olmadığını düşündüğümüz özellikleri çıkartıp sistemin performansını ölçerek bir şey yapıyorduk.
+
+326
+01:05:54,080 --> 01:05:58,540
+İşte gerçekten gereksizse bu özellikleri kullanmama kararı veriyorduk.
+
+327
+01:05:58,540 --> 01:06:05,380
+Burada ise başka bir yaklaşım var. Şöyle önce bir şeklini çizeyim üzerinde anlatacağım.
+
+328
+01:06:45,940 --> 01:06:48,920
+Şimdi bakın burada şöyle bir şey yapıyorduk. Beni duyuyorsunuz değil mi?
+
+329
+01:06:51,459 --> 01:06:52,499
+Evet hocam.
+
+330
+01:06:52,559 --> 01:06:55,360
+Tamam. Şimdi bakın burada şöyle bir şey yapıyorduk.
+
+331
+01:06:55,360 --> 01:07:15,119
+Filtr metotlarda bir şekilde istatiksel yaklaşımlar, key-sucur-alpearson, co-efficient, information gain vs. bir takım yöntemlerle daha az önemli olan veya aslında kullanmamız gereken özellikleri çıkartıp.
+
+332
+01:07:15,119 --> 01:07:17,179
+bunun içerisinden seçim yapıyorduk.
+
+333
+01:07:17,739 --> 01:07:31,739
+Ve ondan sonra yani öğrenme algoritmasına verip diyelim ki K-N yapım konuştukları bir sınıflandırma yapıp şeyi ölçüyorduk, başarıyı ölçüyorduk ve gerçekten bu özellikleri çıkartmanın etkisini değerlendirmiş oluyorduk.
+
+334
+01:07:32,039 --> 01:07:33,479
+Şimdi burada böyle bir mantık yok.
+
+335
+01:07:33,479 --> 01:07:34,819
+Burada şöyle bir şey var.
+
+336
+01:07:34,819 --> 01:07:54,779
+özellikleri şeye bakmadan, değerine, önemine bakmadan ekleyerek veya çıkartarak başarılı ölçülüyor ve işte çıkartmak daha başarılı yükseltiyorsa o zaman o özellik çıkartıyor veya eklemek başarıyı arttırıyorsa o özellik ekleniyor.
+
+337
+01:07:54,779 --> 01:08:01,419
+Yani burada bir ölçüm yapılmadan aslında böyle bir karar verilmiş oluyor.
+
+338
+01:08:01,419 --> 01:08:11,199
+Şimdi bunun için kullanılan yöntemlerden birisi sequential forward selection
+
+339
+01:08:17,171 --> 01:08:30,971
+Burada yaptığımız şey şu, hiçbir özelliği seçmeden, boş küme, hiçbir özellik seçilmeden başlıyorsunuz. Arkasından şöyle bir şey yapıyorsunuz.
+
+340
+01:08:30,971 --> 01:08:46,831
+sadece bir özellik ile elinizdeki bütün özelliklerinizle tek tek deneyerek bir özellik ile model başarısını ölçüyorsunuz.
+
+341
+01:09:01,108 --> 01:09:11,108
+Şimdi hiç özelliğiniz yok iken oradaki özelliklerden her biri için tek tek tek özellik ile önce modelin başarısını ölçtünüz.
+
+342
+01:09:11,868 --> 01:09:18,987
+En iyi olan özelliği seçtiniz ve model şu anda bir tek o özellikten oluşuyor.
+
+343
+01:09:18,987 --> 01:09:27,108
+İkinci adımda bu özellik varken geri kalan özellikler içerisinden her biri için tek tek şey deniyorsunuz.
+
+344
+01:09:27,108 --> 01:09:47,108
+DM5 özelliğimiz kalmıştı. Tek tek bu birinci özelliğin yanına ekleyerek başarı ölçüyorsunuz. Böylece iki özellikli bir şeyiniz oluyor, modeliniz oluyor. En başarılı senaryo hangisiyse o ikinci özelliği eklemiş oluyorsunuz.
+
+345
+01:09:47,108 --> 01:09:54,608
+bunu bu şekilde başarı artmayana kadar tekrar ediyorsunuz.
+
+346
+01:09:54,988 --> 01:09:56,727
+Şimdi o zaman ne oldu?
+
+347
+01:09:57,727 --> 01:10:04,907
+Bir önceki duruma göre en iyi başarıyı sağlayan özelliği de kümeme ekledim.
+
+348
+01:10:04,907 --> 01:10:08,387
+Ve işte K'yi bir arttırdım.
+
+349
+01:10:08,468 --> 01:10:12,788
+Bir sonraki özellik ekleme işlemine gideceğim.
+
+350
+01:10:12,788 --> 01:10:20,788
+bu şekilde başarı artmayana kadar ikinci adımdan özellik ekleyip deniyorum.
+
+351
+01:10:20,788 --> 01:10:29,087
+Şimdi birinci yapabileceğimiz şey sequential forward selection, ikincisi sequential backward elimination.
+
+352
+01:10:30,548 --> 01:10:37,148
+Tahmin edeceğiniz üzere burada da önce bütün özellikler varken başarı ölçüyorsunuz.
+
+353
+01:10:37,148 --> 01:10:49,148
+arkasından bir özellik çıkartıp ondan sonra şeyi deniyorsunuz. İlk durumda bütün özellikleriniz var. Ondan sonra en kötü özelliği çıkartıyorsunuz.
+
+354
+01:10:55,604 --> 01:11:02,604
+Yani tek tek bütün özellikleri çıkartıp başarıyı ölçüyorsunuz aslında yaptığınız şey bu.
+
+355
+01:11:14,420 --> 01:11:32,739
+bunu da başarı hiç değişmeyene kadar tekrar yapıyorsunuz. Şimdi buradaki sıkıntı ne? Buradaki sıkıntı az önceki şey yapıyordu, yani bir mantığı vardı. Zaten özelliğin değeri hakkında bir fikrimiz olduğu için e-arsit olduğunu düşündüğümüz özelliklere çıkartıyorduk.
+
+356
+01:11:32,739 --> 01:11:45,079
+buradaysa yani işte şöyle diyelim ki 5 tane özelliğimiz vardı. Birinci aşamada en başarıyı sağlayan, en başarılı özelliği seçtiniz.
+
+357
+01:11:45,199 --> 01:11:53,100
+Diyelim ki şurada dördüncü özelliği seçtiniz başarıyı en yüksek yapan. Dördüncü özelliği buraya aldınız, geri döndünüz.
+
+358
+01:11:53,659 --> 01:11:58,859
+Ondan sonra dörtle birlikte başarı sağlayan ikinci özelliği tek tek bütün kombinasyonlarla denediniz.
+
+359
+01:11:58,859 --> 01:12:11,319
+diyelim ki 5 çıktı, işte 5'i buraya eklediniz falan. Yani bu iş aslında özellik sayımız özellikle çok fazlaysa son derece şey bir iş, yani vakit alan bir iş.
+
+360
+01:12:11,439 --> 01:12:22,579
+Dolayısıyla aslında efektif değil, şey de önemli burada. Başlangıçta belki şöyle bir sıkıntı var, bu her zaman bu egzostif yöntemlerin sıkıntısıdır aslında.
+
+361
+01:12:22,579 --> 01:12:31,920
+Diyelim ki ilk seçtiğiniz özellik en yüksek başarıyı sağlayan özellik işte ona bağlı olarak diğerlerini seçiyorsunuz.
+
+362
+01:12:31,920 --> 01:12:43,219
+Halbuki başka bir özellik daha az değersizken belki o seçilseydi başka bir özellik kombinasyonu daha yüksek başarıyı verecekti.
+
+363
+01:12:43,299 --> 01:12:44,559
+Bilmiyorum anlatabildim mi?
+
+364
+01:12:45,099 --> 01:12:50,619
+Yani ilk seçilen özelliğinize bağlı olarak belki bazı özellikleri eliniz kullanamadınız.
+
+365
+01:12:50,619 --> 01:12:55,939
+halbuki başka bir kombinasyonla daha yüksek bir başarı elde edecektiniz.
+
+366
+01:12:56,719 --> 01:13:03,499
+Bu şeyin sıkıntısı veya işte backward elimination'da da ilk başta erediğiniz bir özelliği
+
+367
+01:13:03,499 --> 01:13:11,999
+halbuki o kalsaydı başka bir şeyde kombinasyonla daha iyi bir sonuç verecekti.
+
+368
+01:13:12,920 --> 01:13:18,059
+Bunu birazcık şey yapabilmek için plus L minus R selection diye bir şey var.
+
+369
+01:13:18,059 --> 01:13:33,099
+L ve R sizin belirleyeceğiniz değerler. Eğer L ve R'den büyükse şey yapıyorsunuz, forward selection yapıyorsunuz.
+
+370
+01:14:20,595 --> 01:14:22,595
+ve şeye zaviyem.
+
+371
+01:14:50,420 --> 01:15:02,420
+Burada yaptığımız şey şu, L'ye göre durumu aslında nereden başlamak istediniz? Yani önce ekleyerek mi başlayacağınızı yoksa çıkartarak mı başlayacağınızı gösteriyor.
+
+372
+01:15:02,420 --> 01:15:18,920
+Diyelim ki L işte R'den büyükse şey yapıyorsunuz, işte L 3 diyelim ki 3 defa ekleme yapıyorsunuz, forward selection yapıyorsunuz, arkasından 2 defa şey yapıyorsunuz,
+
+373
+01:15:18,920 --> 01:15:31,839
+çıkarma, backward elimination yapıyorsunuz. Ondan sonra işte bakıyorsunuz şey değil, nedir modernizm başarısına oturmamış başarısı. İkiden tekrar böyle devam ediyorsunuz. Döne döne devam ediyorsunuz.
+
+374
+01:15:31,839 --> 01:15:48,820
+Bu sayede şeyi sağlamış oluyorsunuz. Yani acaba eklediğim özellikler hani hepsi iyi miydi? Eklediklerimin içerisinden üç tane ekledim. Ondan sonra işte bir tane çıkartayım bakayım. Bunlar hepsi iyi değil belki bir araya geldiğinde.
+
+375
+01:15:48,920 --> 01:16:16,720
+ekleyip çıkartarak gidebiliyorsunuz. Bu ikisi de mümkün. Bir de buna çok benzeyen şey var. Bir directional search var. Burada yaptığımız şey de şu. Hem şeyi çalıştırıyorsunuz. SFS'de hem de şey, backwards elimination ikisini paralel çalıştırıyorsunuz.
+
+376
+01:16:16,719 --> 01:16:36,479
+Ondan sonra birisi şey yaparken, best picture'ı seçip eklerken birisi de çıkartıyor. Böylece diyelim ki işte bir iki bir iki on tane özelliğimiz oldu. Ondan sonra işte o on özelliğinin içerisinde kötü birisi varsa backward elimination çıkartıyor.
+
+377
+01:16:36,479 --> 01:16:57,019
+ekliyor. İşte kalanların içerisinde iyi bir özellik varsa forward selection ekliyor. Bu şekilde ekleye çıkartı daha böyle hani sadece ekleyerek gitmek veya sadece çıkartarak gitmek yerine ekleye çıkartı birlikte gidilmiş oluyor. Buraya kadar sormak istediniz bir şey var mı?
+
+378
+01:17:04,115 --> 01:17:17,675
+O zaman şeyle devam edebilir miyim? Özellik future extraction'la devam edebilir miyim?
+
+379
+01:17:23,444 --> 01:17:40,944
+Peki ediyorum. Özellik seçiminde yani şimdi genelde şeyler çok daha kullanılıyor dediğim gibi. Eğer özellik seçecekseniz işte bu key square'dir, korrelasyondur, Pearson correlation coefficient'tir falan bunlar daha çok kullanılıyor.
+
+380
+01:17:40,944 --> 01:17:45,663
+Bunlar da genelde şöyle kullanılıyor, nasıl kullanılıyor derseniz iki türlü yapılıyor.
+
+381
+01:17:46,663 --> 01:17:50,464
+Birinde ayrı ayrı bir şeyler de deniliyor.
+
+382
+01:17:51,183 --> 01:17:54,223
+Yani işte Pearson'la bir model oluşturuluyor.
+
+383
+01:17:54,324 --> 01:17:57,784
+Pearson Correlation Coefficient'la bir model oluşturuluyor.
+
+384
+01:17:58,243 --> 01:18:03,363
+Diyelim ki Information Gain'ine bakarak özelliklere denet bir model oluşturuluyor.
+
+385
+01:18:04,543 --> 01:18:07,944
+Efendim işte Key Square'ına bakarak bir model oluşturuluyor.
+
+386
+01:18:07,944 --> 01:18:22,964
+Onların da birbirlerine göre başarıları değerlendiriyor. Yani bu şekilde hani şey de yapılmıyor. Sadece Pearson'ı seçeyim onunla da özelliklerimi belirleyeyim falan filan diye yapılmıyor.
+
+387
+01:18:22,964 --> 01:18:26,383
+Yani kategorikse mesela genelde Pearson kullanılıyor.
+
+388
+01:18:27,024 --> 01:18:29,944
+Kategorik özelliklerimiz varsa Pearson kullanılıyor.
+
+389
+01:18:30,424 --> 01:18:31,863
+Key Square kullanılıyor falan.
+
+390
+01:18:32,723 --> 01:18:38,944
+Yani şeylerin hangi özelliklerin seçileceğine bakarken de bunlar şey olarak kullanılıyor.
+
+391
+01:18:39,723 --> 01:18:42,804
+Nedir? Hibrit olarak kullanılıp karar veriliyor.
+
+392
+01:18:43,204 --> 01:18:51,744
+Şimdi özellikleri seçmenin bir yolu da işte extraction dediğimiz şey dönüştürerek kullanma.
+
+393
+01:18:51,743 --> 01:18:56,743
+daha az boyutlu bir uzaya indirerek kullanma.
+
+394
+01:18:57,603 --> 01:19:03,103
+Şimdi burada yine bizim yapmak istediğimiz şey Koreli özelliklerden kurtulmaya çalışma.
+
+395
+01:19:04,843 --> 01:19:10,143
+Burada yapmak istediğimiz şey Koreli özellikleri,
+
+396
+01:19:10,863 --> 01:19:16,743
+Ankoreli olan daha az sayıda farklı ama yani baştakinde var olmayan
+
+397
+01:19:16,743 --> 01:19:21,063
+daha az sayıda özelliğe dönüştürmek.
+
+398
+01:19:21,743 --> 01:19:31,503
+Ve burada bizim yapmak istediğimiz şey seçtiğimiz özelliklerin an korele olmasını sağlamaya çalışmak.
+
+399
+01:19:31,804 --> 01:19:37,823
+Şimdi bunun için en çok kullanılan yöntemlerden birisi principal komponent analiz yöntemi.
+
+400
+01:19:37,963 --> 01:19:45,683
+Özellik azaltmak için en çok kullanılan yöntemlerden birisi principal komponent analiz yöntemi.
+
+401
+01:19:45,683 --> 01:19:56,403
+Hala özellikle sinyal üzerinde sinyallerle çalışırken çok kullanılan özellik dönüştürme yöntemlerinden birisi.
+
+402
+01:19:57,243 --> 01:20:01,403
+Şimdi principal komponent analiz aslında şeye dayanıyor.
+
+403
+01:20:01,583 --> 01:20:06,463
+Biliyor musunuz bilmiyorum daha önce kullandınız mı veya duydunuz mu?
+
+404
+01:20:07,043 --> 01:20:11,943
+Aygın veri ve aygın vektör kavramlarına dayanıyor.
+
+405
+01:20:11,944 --> 01:20:36,903
+Yani karakteristik, Aygın aslında Almanca'daki on kelimesinin karakteristik kelimesinin karşılığı Aygın diye bilgisinin şeyi, karakteristik bilgilerin çıkartılması, Ankoreli bilgilerin yani elimizdeki şeylerin özellikler için bu özelliklerin işte transformasyonlardan,
+
+406
+01:20:36,903 --> 01:20:40,203
+herhangi transformasyonlardan
+
+407
+01:20:40,203 --> 01:20:41,643
+geçmişse de
+
+408
+01:20:41,643 --> 01:20:45,623
+değeri değişmeyen bir alt
+
+409
+01:20:45,623 --> 01:20:48,123
+kümesini evde etmek aslında
+
+410
+01:20:48,123 --> 01:20:49,523
+elinizdeki özellikleri.
+
+411
+01:20:50,523 --> 01:20:52,623
+Şimdi burada diyelim ki
+
+412
+01:20:52,623 --> 01:20:53,463
+A sizin
+
+413
+01:20:53,463 --> 01:20:56,223
+bir matrisinizse
+
+414
+01:20:56,223 --> 01:20:58,163
+eğer
+
+415
+01:20:58,163 --> 01:21:01,143
+şu şekilde
+
+416
+01:21:01,143 --> 01:21:05,343
+bu bir
+
+417
+01:21:05,343 --> 01:21:07,503
+madresinizse
+
+418
+01:21:07,503 --> 01:21:11,823
+şu şekilde bir eşitlik yazabiliyorsam
+
+419
+01:21:11,823 --> 01:21:12,983
+bu eşitlikte
+
+420
+01:21:12,983 --> 01:21:13,884
+lambda
+
+421
+01:21:14,547 --> 01:21:27,968
+scalar x'de vektörse, A matris iken lambda scalar x'de vektörse bu lambda scalarına aygın veriyor. x vektörüne de aygın vektör deniyor.
+
+422
+01:21:30,968 --> 01:21:41,308
+Bizim yapmaya çalıştığımız şey bu A matrisi için A matrisinin aygın veriyor ve aygın vektörlerini bulmaya çalışmak.
+
+423
+01:21:41,308 --> 01:21:49,167
+bu da aslında lineer cevirde gösterilen bir konu. Ne yaparsınız çözmek için?
+
+424
+01:21:49,707 --> 01:22:05,088
+A-X-Landa-X eşittir 0 dersiniz. Bunu X parantezine almak için A-İ-Landa ki burada identity matrix'tir, birim matris yani.
+
+425
+01:22:05,087 --> 01:22:29,207
+çarpı x yani ya da şöyle yazayım dur şöyle yapayım ki şey olsun çarpı x eşittir 0 dersek o zaman buradan determinantını çözersek
+
+426
+01:22:29,207 --> 01:22:39,327
+sıfıra eşitleyip çözersek oradan x'leri çıkartabiliriz. Şimdi birim matris dediğiniz şey nedir?
+
+427
+01:22:39,327 --> 01:22:46,467
+Diyelim ki 2'ye 2 ise bu. Hatırlarsanız şöyle bir şeydir. 1, 0, 0, 1 yani birim matris dediğiniz şey.
+
+428
+01:22:46,587 --> 01:22:57,987
+Diagonal 1, geri kalanı 0 olan matris aslında. Dolayısıyla eğer A2'ye 2 ise aslında çözmeniz gereken şey şöyle bir şey.
+
+429
+01:22:57,987 --> 01:23:08,587
+A11-Lambda, A12, A21, A22-Lambda bunu çözmeye çalışmak.
+
+430
+01:23:08,587 --> 01:23:22,908
+O da işte A11-Lambda şöyledir ya A22-Lambda-A12, A21 eşittir sıfırı çözmeye çalışmak.
+
+431
+01:23:23,447 --> 01:23:27,287
+Bunu eğer çözersem şeyleri bulmuş olurum.
+
+432
+01:23:27,988 --> 01:23:34,868
+şöyle bir madresiniz var ise
+
+433
+01:23:43,731 --> 01:23:45,972
+şu aslında aynı mektörünüz
+
+434
+01:23:56,532 --> 01:24:06,332
+O zaman işte 1-Lambda 2, 2, 1-Lambda, x1, x2, eşittir 0 dersem
+
+435
+01:24:06,332 --> 01:24:15,891
+işte 1-Lambdanın karesi şuradan, x4, eşittir 0'ı çözmem gerekiyor.
+
+436
+01:24:16,452 --> 01:24:24,091
+Bunu çözersem, görüyorsunuz zaten sizde bu şeyden, Lambda 1 ne olur? Lambda 1'in 1, eksi 1 olması gerekir.
+
+437
+01:24:24,091 --> 01:24:47,131
+Lambda 2'nin de 3'te 3 olması gerekir. Bunu çözerseniz. 1-Lambda kare eşittir 4'ü çözüyorsunuz çünkü. Ondan sonra ya eksi 1 ya 3 olur. Bunlar sizin eigen veriyorlarınız. Bunları yerine koyarak da eigen vektörlerinizi bulabilirsiniz.
+
+438
+01:24:47,131 --> 01:24:54,032
+yerine koyduğunuzda da şöyle işte 2, 2, lambda, eksi, 1 ise bu.
+
+439
+01:25:00,595 --> 01:25:09,135
+eşittir 0, 0 derseniz, mesela işte V1 aygün vektörü, buradan 1-1 çıkmış.
+
+440
+01:25:10,215 --> 01:25:24,755
+İşte öbüründen de V2 aygün vektörü, 1-1 çıkmış. Dolayısıyla bu aygün vektörler aslında şey olan, ayırt edici bilgiyi gösteren şeyler nedir?
+
+441
+01:25:24,755 --> 01:25:33,755
+azaltılmış özellikler. Şimdi şöyle diyelim ki X1, X2 özelliklerimiz olsun. Bunlar örneklerimiz.
+
+442
+01:25:34,575 --> 01:25:45,975
+Aslında biz buradan daha az bu bilgiyi ifade eden Ankoreli şeyler, özellikler çıkartmaya çalışıyoruz.
+
+443
+01:25:47,636 --> 01:25:52,615
+PCA'in yapmaya çalıştığı şey aslında şeyi bulmaya çalışmak.
+
+444
+01:25:52,616 --> 01:25:57,436
+datanın en çok değiştiği yönü bulmaya çalışmak.
+
+445
+01:25:57,536 --> 01:26:00,356
+Mesela burada birincisi bu, birinci bileşen bu.
+
+446
+01:26:00,796 --> 01:26:03,156
+Principal component bileşenimiz bu.
+
+447
+01:26:03,735 --> 01:26:05,576
+Ondan sonra ikinci bileşen bu.
+
+448
+01:26:06,396 --> 01:26:07,555
+Böyle devam edebilir.
+
+449
+01:26:07,695 --> 01:26:11,575
+Eğer ben bunu böyle devam ettirirsem ne bileyim şöyle de bir şey çıkar belki falan.
+
+450
+01:26:11,575 --> 01:26:20,536
+Bizim bulmaya çalıştığımız bu datayı temsil edecek principal componentları, ana bileşenleri bulmaya çalışmak.
+
+451
+01:26:20,535 --> 01:26:38,995
+Şimdi bu aslında bunun popüler olması, prensipo komponent analizmin popüler olması şeyle oluyor. 1990 falan yanılmıyorsam yüz tanımayla oluyor. O zamana kadar ilk dersin başında söylediğim gibi yüz tanımada hep şey falan kullanıyor.
+
+452
+01:26:38,996 --> 01:26:48,276
+işte bir yüzde önce gözlerin yerini bul, burnunun ağzının yerini bul ondan sonra işte burada üçgenler oluştur.
+
+453
+01:26:49,456 --> 01:26:54,835
+Mesafeleri bu üçgenlere göre farklı bir sürü işte üçgenler var.
+
+454
+01:26:54,936 --> 01:27:00,276
+O üçgenlere göre mesafeleri sakla ve bu mesafeleri ayırt edici özellik olarak kullan.
+
+455
+01:27:00,276 --> 01:27:05,616
+Yani ilk yapılan çalışmalar aslında böyle mesafe ölçmek üzerine.
+
+456
+01:27:05,615 --> 01:27:11,935
+fakat bu tabii şey mantığına haykırı yani insanlar birbirlerini bu şekilde tanımıyorlar.
+
+457
+01:27:13,095 --> 01:27:19,575
+Diyelim ki büyüs tanıma işlemi yaparken kimse kimsenin iki gözünün arasındaki mesafeyi aklında tutmuyor.
+
+458
+01:27:19,575 --> 01:27:21,555
+Genel bilgiye bakılıyor.
+
+459
+01:27:21,555 --> 01:27:47,255
+o zaman işte çok meşhurdur şey Matthew Turk ve Alex bu şey 20. yüzyılın en şey olan paperlarından birisi en çok yön değiştiren hani çalışmaların yönünü değiştiren paperlarından birisi seçilmiş ilk yüz paper içerisinde seçilmiş bir çalışma yalanıyorsa.
+
+460
+01:27:47,256 --> 01:28:01,856
+bunlar diyorlar ki yani insanlar yüzünün tamamını değerlendiriyor. O zaman biz de yüzünün tamamını değerlendirelim. Tamam peki yüzünün tamamını değerlendirelim. O zaman yani şunun tamamını nasıl değerlendireceğiz?
+
+461
+01:28:01,856 --> 01:28:16,795
+Çünkü burada da şöyle bir şey var. Diyelim ki yüzdeki yanak bölgesi, alım bölgesi çok fazla yer tutuyor. Yani her pikseli, yüzün üzerindeki her pikseli bir özellik olarak kullanmaya kalkarsak o piksellerin çoğunluğunu,
+
+462
+01:28:16,795 --> 01:28:25,775
+yanaktır, adımdır, herkes de ortak olan bir bilgi tutuyor. O zaman oradan ayırt ediciliği yakalamak çok zor.
+
+463
+01:28:26,195 --> 01:28:36,896
+Peki diyorlar biz yüzüm piksellerinin tamamından karakteristik bilgiyi çıkartabilir miyiz? Böyle bir şey yapabilir miyiz?
+
+464
+01:28:36,895 --> 01:28:47,175
+ve çok yaratıcı bir şekilde şunu yapıyorlar. Diyorlar ki işte diyelim ki beş kişi var tanımak istediğiniz Ali, Ayşe, Fatma, işte İbrahim neyse.
+
+465
+01:28:47,935 --> 01:28:56,755
+Bunların yüz fotoğraflarının birbirlerine göre değişimi nedir birbirlerine göre değişim? Covariance.
+
+466
+01:28:57,235 --> 01:29:21,695
+buradan covariance matrisinden şeyi çıkartıyorlar, aygın velileri, aygın vektörleri ve bunu özellik olarak kullanıyorlar. Böylece şeyi yakalamış oluyorlar. Yani insanların yüzlerindeki karakteristik bilgiyi yakalamış ve kullanmış oluyorlar.
+
+467
+01:29:21,695 --> 01:29:33,935
+bu açıdan da şey önemli. Bu çalışma önemli. Arkasından da ondan sonra işte hep şey oluyor.
+
+468
+01:29:37,935 --> 01:29:45,355
+Bu şey kullanılmış oluyor. Şimdi bir saniye size bununla ilgili bir örnek hazırlamamışım bir şekilde.
+
+469
+01:29:45,535 --> 01:29:48,135
+Ben burada var zannediyorum. Bir saniye beklerseniz.
+
+470
+01:29:56,435 --> 01:30:00,215
+Evet, bir tane örnek üzerinden göstereceğim size.
+
+471
+01:30:12,916 --> 01:30:16,195
+bir dakika
+
+472
+01:30:34,100 --> 01:30:53,259
+Bu çok güzel bir örnek. Bu da iki örnek üzerinden göstererek anlatmak istiyorum. Şimdi bu çok basit bir şekilde. Ben böyle sayfa çevirdikçe gözleriniz çok kötü oluyor değil mi? Üzerinde de ooo eyvah eyvah ben bunu böyle yazmışım. O da öyle size save etmişim. Sonra güzel olmuş bu. Orada mısınız? Ekranımı görüyor musunuz?
+
+473
+01:30:54,620 --> 01:30:56,319
+Evet hocam.
+
+474
+01:30:56,319 --> 01:31:15,619
+Tamam. Şimdi bakın kesebilirsiniz istediğiniz yerde. Yapılmak istenilen şey şu. Bunu da sizin için de boyayayım şimdi. Burada dört tane sınıfınız var. Şöyle x1, x2, x3, x4 diye. Bu y de bilinmeyen bir örnek. Bilinmeyen örneğinizi sınıflandırmak istiyorsunuz.
+
+475
+01:31:15,620 --> 01:31:33,100
+yapmak istediğiniz şey de şey yapmak. Öncelikle nedir? Aygün veriyor, aygün vektörlerle özellikleri azaltıp ondan sonra bu özellikleri azalttıktan sonra tanıma işlemine geçmek.
+
+476
+01:31:33,100 --> 01:31:44,839
+Şimdi burada piksel renkleri 0 ile 255 arasında değişiyor. 0 siyahı 255 beyazı gösteriyor. Dolayısıyla yani şuraya baktığımızda 0'a yakın bir renkle saklı bu.
+
+477
+01:31:44,839 --> 01:32:12,379
+bakalım. X1'e bakalım nasılmış X1. Mesela 225, 229, 48 X satırı. Şurası 225, burası 229, burası da 48'miş. Yani bakın burası siyaha şey, 48 olan yer, şurası siyaha yakın olan yer. 225 beyaza yakın. Neydi öbürü? Bir dakika. 225, 229.
+
+478
+01:32:12,379 --> 01:32:22,379
+şu 229 dediği birazcık daha böyle beyaza yakın şurası falan böyle bunların 0 ile 255 arasında değişen değerleri var.
+
+479
+01:32:22,719 --> 01:32:29,519
+Şimdi olay şöyle bizim yapmak istediğimiz şey şeyden başlatayım size.
+
+480
+01:32:34,739 --> 01:32:49,779
+şöyle başlatayım, anlatayım. Şimdi bizim ilk yapmak istediğimiz şey şu. Hatırlarsanız ilk derste dedik ki iki özelliğin birbirlerine göre değişimini görmek için kovaryansına bakarız.
+
+481
+01:32:49,779 --> 01:32:54,580
+X, covariance, X, Y yani nedir covariance, X, Y dediğim şey?
+
+482
+01:32:55,000 --> 01:33:07,960
+Y1 denene kadar değişirken X, Y, Y, Y, yani ortalama bölü işte N, N-Eksi birene ise bu iki özelliğin birbirlerine göre değişimini gösterir.
+
+483
+01:33:07,960 --> 01:33:14,479
+Peki benim üç tane bilgim olsaydı bunların birbirlerine göre değişimine nasıl bakacaktım?
+
+484
+01:33:14,559 --> 01:33:19,459
+İki, üç örneğim olsaydı bunların birbirlerine göre değişime nasıl bakacaktım?
+
+485
+01:33:19,779 --> 01:33:21,539
+O zaman şöyle bakacaktım.
+
+486
+01:33:21,539 --> 01:33:27,519
+Diyecektim ki, şöyle diyecektim, pardon.
+
+487
+01:33:35,155 --> 01:33:55,315
+Kovariyans matrisi kuracaktım o zaman. Diyecektim ki, X'in X'e göre değişimi, X'in Y'ye göre değişimi, X'in Z'ye göre değişimi, Y'nin X'e göre değişimi. Böyle bunları şey yapacaktım.
+
+488
+01:33:55,315 --> 01:34:19,615
+hepsine tek tek bakacakmışım. Bu mantık da ona dayanıyor. Benim burada tanımak istediğim yüzlerim var. Yüz tanıma için kullanacağım. Az önce şey yapmıştık yüz tanıma. Yüz tanımak için kullanacağım. O zaman diyor ki tamam eğer bunu yapacaksam diyor. Bütün yüzlerin birbirlerine göre değişimine bakarsak diyor.
+
+489
+01:34:19,615 --> 01:34:22,655
+o zaman birbirine göre değişimidir.
+
+490
+01:34:22,755 --> 01:34:23,475
+Kova ayanısı.
+
+491
+01:34:23,535 --> 01:34:30,435
+O kova ayanısını da içinden principal komponentları çıkartırsak özellikleri bulmuş oluyoruz.
+
+492
+01:34:30,735 --> 01:34:33,615
+O zaman işlem adımlarını şöyle yapalım.
+
+493
+01:34:33,715 --> 01:34:35,336
+Şimdi bir training aşaması var.
+
+494
+01:34:35,755 --> 01:34:40,775
+Training aşaması işte principal komponentların elde edildiği aşama.
+
+495
+01:34:41,975 --> 01:34:44,016
+Diyelim ki yüz tanıma yapacaksınız.
+
+496
+01:34:44,016 --> 01:35:03,355
+elinizde N çarpı N ve matrislerde şöyle yüzleriniz var. Şu N çarpı N'lik bir matris ve N tane de kişi var tanımasını yapmak istediğiniz.
+
+497
+01:35:03,355 --> 01:35:14,595
+en tane de kişi var. Şimdi birinci yapacağımız iş o zaman madem bunların birbirlerine göre değişimlerine bakacağız.
+
+498
+01:35:14,975 --> 01:35:30,755
+Bunları matristen bir şeye nedir? Tek boyutlu vektöre dönüştürelim. Diyelim ki bunlar işte A diyelim, birinci kişiye A diyelim, ikinci kişiye B diyelim böyle olsunlar.
+
+499
+01:35:30,755 --> 01:35:47,355
+önce tek boyutlu hale getiriyoruz şeyleri, matrisleri. Şimdi bunu şöyle düşünün. Eğer elimdeki banka datası olsaydı, transaction'lar olsaydı bunlar zaten tek boyutlu halde bununla uğraşmayacaktım.
+
+500
+01:35:47,355 --> 01:36:00,415
+Ben sadece şimdi size görsel göstereceğim. Böyle aklınızda kolay kalsın diye yüz tanımı en çok kullanıldığı yerde orası. Oradan şey yapmak istedim, anlatmak istedim.
+
+501
+01:36:00,755 --> 01:36:13,555
+Diyelim ki işte Ali, Banu, Hüseyin falan böyle elinizde kişileriniz var. Bunlar böyle en boyutlu ve en kare boyutlu vektör haline getiriyorsunuz.
+
+502
+01:36:13,555 --> 01:36:20,795
+Şimdi covariance size ne diyor? Covariance diyor ki işte şey ortalama çıkartacaksın bu bilgiden diyor.
+
+503
+01:36:20,855 --> 01:36:27,935
+A kişisinden A'nın ortalamasını, B kişisinden B'nin ortalamasını. O zaman ortalama çıkarmak için
+
+504
+01:36:33,300 --> 01:36:37,300
+ortalama yüzü hesaplıyoruz
+
+505
+01:36:40,020 --> 01:36:41,260
+M kişi vardı
+
+506
+01:36:52,595 --> 01:36:57,755
+ve ortalamayı bütün görüntülerden çıkartıyoruz.
+
+507
+01:37:23,347 --> 01:37:28,347
+herkesin ortalamayı çıkarttığı...
+
+508
+01:37:36,787 --> 01:37:50,427
+bir matrise yerleştiriyoruz. Şimdi bakın bu kadar kolay olduğunu göreceksiniz. Bu ortalama çıkmış, mean center deniyor buna. Yüzleri bir matrise yerleştiriyoruz.
+
+509
+01:37:50,427 --> 01:38:05,587
+Ve eğer bu matrisi transpozisiyle çarparsam neyi elde etmiş olurum? Herkesin birbirine göre durumunu gösteren covariance matrisini elde etmiş olurum. Olay bundan ibaret.
+
+510
+01:38:09,140 --> 01:38:15,620
+arkasından covariance matrisinin
+
+511
+01:38:15,620 --> 01:38:21,140
+eigenvalue ve vektörlerini az önce gördüğümüz gibi
+
+512
+01:38:21,140 --> 01:38:22,379
+eigenvalue'larını
+
+513
+01:38:22,379 --> 01:38:26,959
+ve eigenvektörlerini
+
+514
+01:38:26,959 --> 01:38:29,839
+bulacağım. Bu kadar basit.
+
+515
+01:38:30,980 --> 01:38:31,219
+Ve
+
+516
+01:38:31,219 --> 01:38:34,279
+eigenvalue'ları
+
+517
+01:38:34,279 --> 01:38:37,320
+sıfırdan farklı olan eigenvalue'ları
+
+518
+01:38:37,320 --> 01:38:51,099
+büyükten küçüğe sıralayıp en büyük yüzde işte x tanesini alacağım.
+
+519
+01:38:51,099 --> 01:39:05,900
+Yani mesela diyelim ki en büyük şeyi alacağım diyelim ki işte ne bileyim yüzde yetmişini alacağım o şekilde şeyi yapmış olacağım.
+
+520
+01:39:07,320 --> 01:39:32,839
+seçimimi yapmış olacağım. Şimdi bunu buraya kadar soru yoksa o örnek üzerinde göstermek istiyorum. Bakın şu şekilde adım adım göstereyim. Şimdi birinci adımda şurada şeyleriniz var. O üçe üçlük matrislerinizi dokuza birlik vektör haline getirdik. Ortalamasını bulduk bu vektörlerin.
+
+521
+01:39:32,839 --> 01:39:39,339
+işte birinci satırın ortalaması şurada, ikinci satırın ortalaması burada şeklinde.
+
+522
+01:39:40,159 --> 01:39:46,339
+Ortalamayı şeylerden çıkardık, her vektörden çıkardık.
+
+523
+01:39:46,339 --> 01:39:54,860
+Yani işte şurada gördüğünüz gibi 225-171, yani şuradaki 225-171,5, 53.50'yi verdi.
+
+524
+01:39:55,439 --> 01:40:00,679
+Bu şekilde bütün örnekleri mean centered ortalama çıkartılmış hale getirdik.
+
+525
+01:40:00,680 --> 01:40:16,300
+arkasından bunları şurası birinci vektörümüzün mean center tahliği, şurası ikinci vektörümüzün mean center tahliği bu şekilde yan yana yerleştirdik. Böylece yan yana yerleştirdiğimizde ne oldu?
+
+526
+01:40:16,300 --> 01:40:28,819
+9'a 4'lük çünkü 4 tane örneğim vardı. 9'a 4'lük bir matriz elde etmiş oldum. 9 özellik yani 9 piksel var. 9'a 4'lük. Ay eyvah ne olduk.
+
+527
+01:40:36,724 --> 01:40:37,724
+çok ileri gittim.
+
+528
+01:40:56,851 --> 01:40:58,851
+bu şekilde
+
+529
+01:41:02,260 --> 01:41:28,839
+yaptığım zaman 9'a 4'lük bir şey elde ettim. Nedir? Matris elde ettim. Kovariyans matrisi şurada gördüğünüz gibi şu kovariyans matrisiniz daha doğrusu 9'a 4 ile 4'e 9'u çarpınca 9'a 9'luk bir kovariyans matrisiniz var burada.
+
+530
+01:41:28,839 --> 01:41:35,539
+kovaryans matrisinin eigen value'larını ve eigen vektörlerini buluyoruz.
+
+531
+01:41:36,039 --> 01:41:40,280
+Bulduğunuz zaman işte 3 tane eigen value varmış.
+
+532
+01:41:40,960 --> 01:41:43,940
+Lambda, 1, lambda, 2, lambda, 3, 0'dan farklı olan.
+
+533
+01:41:44,579 --> 01:41:47,120
+Bunları büyükten küçüğe dizliyoruz.
+
+534
+01:41:47,120 --> 01:41:50,699
+Bütün şey bulduğunuz eigen şeyleri, value'ları.
+
+535
+01:41:51,139 --> 01:41:54,879
+Bunlara karşılık düşen eigen vektörler sizin yeni özellikleriniz oluyor.
+
+536
+01:41:54,879 --> 01:42:13,579
+Şimdi 9 satırdan oluşan aygın mektörleriniz var. 3 tane seçtiğiniz için de 9'a 3'lük bir aygın mektör şeyiniz oldu. Nedir? Matrisiniz oldu. Bunlar şimdi sizin aygın mektörleriniz.
+
+537
+01:42:13,579 --> 01:42:31,980
+Şimdi geldik şeye bu aygın vektörleri kullanmaya. Şimdi elinizde sizin A vesaire gibi şeyleriniz var. Nedir? Mean centered görüntüleriniz var.
+
+538
+01:42:31,980 --> 01:42:43,999
+Şimdi bunları aygın space'e geçirmek için şöyle yapıyorsunuz. O belirlediğiniz aygın vektörlerle bu mean centered, az önceki mean centered
+
+539
+01:42:48,083 --> 01:42:57,483
+imiciniz şu. Bu da seçtiğiniz aygın vektörleriniz. Bunları çarpıyorsunuz. Böylece artık bu şekilde
+
+540
+01:42:57,483 --> 01:43:07,543
+eigen space'e geçmiş oluyorsunuz. Yani özellikleriniz tamamen bu A matrisinin özellikleri baştan değişmiş oldu.
+
+541
+01:43:07,543 --> 01:43:36,083
+şurada gördüğümüz şey yani B transpoze ile bu şununla az önceki mean center görüntüyü çarptınız artık elimizde bu 9'da 3'tü şey olunca transpozesi 3'e 9, 3'e 9'u da 9'da 1 ile çarpınca 3'e 1'lik bir şey elde ettiniz.
+
+542
+01:43:36,083 --> 01:43:47,563
+şu aynıs space'e geçerek özellik elde etmiş oldunuz. Artık bundan sonra bu özellikleri kullanacaksınız. Baştaki ana 3'e 3'lük makinesi değil, bu özellikleri kullanacaksınız.
+
+543
+01:43:47,964 --> 01:43:49,903
+Buraya kadar sormak istediğiniz bir şey var mı?
+
+544
+01:44:00,467 --> 01:44:07,467
+Hocam? Evet. Her bir vektör için iki tane aydın veyluğu var ya, en büyük olanı mı seçiyoruz?
+
+545
+01:44:07,467 --> 01:44:17,467
+Hayır, bir dakika şöyle, bir dakika yukarı geleyim. Şurada her bir vektör için bir tane aydın veyluğu var.
+
+546
+01:44:17,467 --> 01:44:25,467
+Şöyle mesela, burada lambda karar edilme işlemi yapmıştık ya, oradan iki tane lambda geliyordu.
+
+547
+01:44:25,467 --> 01:44:54,688
+Hayır hayır, şimdi kaç tane kökün varsa o kadar algın velyon oluyor. Orada bizim iki kökümüz vardı, iki algın velyonumuz oldu. O iki algın velyonuza karşılıklı iki algın vektör seçtik. Şimdi burada da sonuçta senin şurada covariance matrisinden kaç tane şey çıkacaksa, kaç kökün varsa o kadar algın velyon çıkacak.
+
+548
+01:44:54,687 --> 01:45:03,227
+X değerleri değil mi? Kaç kökün varsa o kadar aygın value'un çıkacak. O aygın value'ların içerisinden de sen şeyi seçeceksin.
+
+549
+01:45:03,907 --> 01:45:10,688
+Sıfırdan büyük olan, pozitif olan aygın value'lara karşılık düşen aygın vektörleri seçeceksin.
+
+550
+01:45:11,747 --> 01:45:12,367
+Anladım hocam.
+
+551
+01:45:13,667 --> 01:45:18,007
+Onları da seçerken şimdi resim göstereceğim size anlamamız için.
+
+552
+01:45:18,008 --> 01:45:28,607
+şöyle en yüksek değere sahip olan eigen value'nun karşılığı olan eigen vector bu en değerli principal component gösteriyor.
+
+553
+01:45:28,607 --> 01:45:44,967
+Hani az önce göstermiştim ya diyelim ki dedim şöyle noktalarınız olsaydı şu şey şu direction yani bu noktaları temsil eden şu principal component en karakteristik principal component.
+
+554
+01:45:44,967 --> 01:45:56,667
+şu principal component mesela ikinci değerli karakteristik principal component bunu devam ettirirseniz mesela şu da var ama artık bu o kadar değerli değil gibi
+
+555
+01:45:56,667 --> 01:46:06,268
+şimdi burada da en değerli principal componentımız şu aslında yani bu aygın vektör en değerli özelliklere en ayırt edici özelliklere sahip
+
+556
+01:46:06,267 --> 01:46:13,667
+Aygın vektörün değeri düştükçe buna karşılık düşen Aygın vektör de daha şey olmuş oluyor.
+
+557
+01:46:13,667 --> 01:46:21,387
+Değeri düşmüş oluyor. O yüzden pozitif olan bütün Aygın vektör veliyoları seçmeniz doğru bir şey değil.
+
+558
+01:46:21,927 --> 01:46:30,147
+O deneysel belirleniyor. Yani yine modelin başarısına göre genellikle işte ilk %60'ını %70'ini seçmek doğru bir şey.
+
+559
+01:46:30,487 --> 01:46:35,107
+Şimdi bu şekilde örneklerini Aygın Space'e geçirdim.
+
+560
+01:46:35,107 --> 01:46:38,307
+ve boyut azaltması yaptım.
+
+561
+01:46:38,307 --> 01:46:46,188
+Yani az önce 9 tane piksel, 9 piksel için 9 özelliğini varken şu anda 3 özelliğe indirmiş oldum.
+
+562
+01:46:46,787 --> 01:46:49,607
+Peki bilinmeyen örneği nasıl tanıyacağım?
+
+563
+01:46:50,988 --> 01:46:59,227
+Bilinmeyen örnek için yani şey geldiğinizde, test aşamasına geldiğinizde bilinmeyen örneğiniz Y örneği.
+
+564
+01:47:00,527 --> 01:47:04,068
+Aynı işlemleri Y'ye de yapmanız gerekiyor.
+
+565
+01:47:04,067 --> 01:47:16,067
+Yani ne yapacaksınız? Önce y'yi tek boyutlu hale getireceksiniz. Arkasından mean center tâle getireceksiniz.
+
+566
+01:47:25,939 --> 01:47:46,499
+arkasından da eigen space'e geçireceksiniz. Yani seçtiğim eigen vektörlerle çarpacağım. Bunu yaptıktan sonra artık bitti işim. Bundan sonra bunu öğrenme modelime verebilirim.
+
+567
+01:47:46,499 --> 01:47:51,019
+işte ne bileyim K en yakın komşuluk yapıyorsam K en yakın komşuluğa veririm.
+
+568
+01:47:51,159 --> 01:47:55,159
+İşte destek vektör makinesi yapıyorsam destek vektör makinesine veririm.
+
+569
+01:47:55,620 --> 01:47:59,660
+Artık benim elimde kullanacağım özellikler bunlar.
+
+570
+01:47:59,660 --> 01:48:05,419
+Yani bu başlangıçtaki verilen Y bilgisini illa görüntü olması gerekmiyor.
+
+571
+01:48:05,499 --> 01:48:09,999
+Ne yapıyorsam yani indirgedim artık ben bunu kullanabilirim.
+
+572
+01:48:10,300 --> 01:48:13,739
+Şimdi şu örnek üzerinde tekrar oraya dönecek olursak
+
+573
+01:48:13,739 --> 01:48:19,160
+Aynı şekilde bakın şurada benim Y ne olduğunu bilmediğim şu görüntüm.
+
+574
+01:48:20,359 --> 01:48:23,459
+Şu şeklim vardı, Y şeklim vardı.
+
+575
+01:48:24,639 --> 01:48:31,480
+Şimdi baktığınız zaman önce Y'yi 9'a 1'lik bir vektöre çevirdim.
+
+576
+01:48:32,139 --> 01:48:36,919
+Arkasından bunu mean center'da hale getirdim, ortalama çıkarttım.
+
+577
+01:48:36,919 --> 01:48:44,019
+arkasından da şeyle çarparak, eigenvektörle çarparak eigenspace'e geçirdim.
+
+578
+01:48:44,019 --> 01:48:48,699
+Bunu yaptıktan sonra bu örnekte sadece şey alıyor, öklit distance alıyor.
+
+579
+01:48:49,259 --> 01:48:54,959
+Öklit distance'ı şurada gördüğünüz gibi var olan bütün örneklere mesafesini ölçüyor.
+
+580
+01:48:56,019 --> 01:48:59,299
+Mesafesini ölçtüğünde de en düşük x2 çıkmış.
+
+581
+01:48:59,419 --> 01:49:01,619
+Yani x2 olan mesafesi en düşük çıkmış.
+
+582
+01:49:02,059 --> 01:49:03,999
+Gelin bakalım x2'ye mi benziyor?
+
+583
+01:49:03,999 --> 01:49:09,999
+gerçekten de şuna baktığınız zaman en çok X2'ye benzediğini görebiliyorsunuz.
+
+584
+01:49:11,160 --> 01:49:13,359
+Buraya kadar sormak isteneniz bir şey var mı?
+
+585
+01:49:15,999 --> 01:49:17,999
+Aklınıza takılan...
+
+586
+01:49:23,636 --> 01:49:25,376
+buradan sormak istediğiniz.
+
+587
+01:49:26,515 --> 01:49:28,556
+Niye eksiklandırma değerlerini kullanmıyoruz?
+
+588
+01:49:29,975 --> 01:49:31,976
+Duyamadım. Bir daha söyleyebilir misin?
+
+589
+01:49:32,215 --> 01:49:34,115
+Eksiklandırma değerlerini niye kullanmıyoruz?
+
+590
+01:49:35,035 --> 01:49:37,335
+Yani niye artılar seçiyoruz sadece?
+
+591
+01:49:39,915 --> 01:49:44,295
+Çünkü şey olarak özelliklerin zaten şey olması gerekiyor.
+
+592
+01:49:44,955 --> 01:49:53,575
+Artıları seçmenin sebebi büyük, pozitif ve büyük olanlar aslında anlam ifade ettikleri için.
+
+593
+01:49:53,636 --> 01:50:01,716
+tanımada sadece şeyleri seçiyorsun, pozitifleri seçiyorsun. Onları da aslında şeylere çok bakmadım açıkçası.
+
+594
+01:50:01,976 --> 01:50:07,755
+Negatif herhangi bir özelliği uygulayıp da ne oluyor diye hiç bakmadım bugüne kadar.
+
+595
+01:50:07,755 --> 01:50:15,095
+Aslında bakılıp şeyi de görülebilir, sonuç görülebilir. Onların da büyükten küçüğe diziyorsun.
+
+596
+01:50:15,095 --> 01:50:24,676
+şimdi şey göstereceğim bir dakika şuradan örnek üzerinde göstereceğim size.
+
+597
+01:50:33,844 --> 01:50:51,043
+Bakın şu ortalama yüz. Ortalama yüz aslında göreceğiniz üzere şey nedir böyle gerçekten bir insan yüzüne benziyor yani gerçek bir yüz gibi.
+
+598
+01:50:52,643 --> 01:51:03,063
+Benzerliklerin fazla olduğu yerler daha belirgin. Mesela göz bölgesi belirgin ama dudak bölgesinde insanların yüzünün daha küçük ve daha büyük olmasına göre
+
+599
+01:51:03,063 --> 01:51:13,283
+o dudak bölgesi birazcık belirginliği bozulmuş bir bölge. Bakın şu şey gösteriyor. Birinci aygın mektür, ikinci aygın mektür, üçüncü aygın mektür.
+
+600
+01:51:13,283 --> 01:51:33,043
+Şimdi birinci daha böyle insan yüzüne benzer bir şey. İki de bozulmalar başlıyor. Hadi üçle dört de fena değil. Dikkat ederseniz dörtte şey çıkıyor. Sakallı kişiler varmış. Onlardan ötürü o karakteristik ortaya çıkmaya başlıyor.
+
+601
+01:51:33,063 --> 01:51:57,143
+ama sonra yavaş yavaş şey oluyor yani aslında yani dört de çok şey değil yavaş yavaş bozulmaya başlıyor. Ondan sonra o yüzden aslında şeyin sebebi o yani nedir seçtiğiniz aygın vektörlerin sayısını arttırdıkça aslında az önceki noktaya geliyoruz.
+
+602
+01:51:57,143 --> 01:52:13,183
+karakteristik olmayan özellikleri de seçmeye başlıyorsunuz. O yüzden de genelde bu model seleksyonda olduğu gibi işte 5 aygın vektör seçtim, başarıyı ölçtüm, 10 seçtim, başarıyı ölçtüm denilerek bakılıyor.
+
+603
+01:52:13,183 --> 01:52:22,403
+mesela şurada bu X kişisini eigen space'e geçirmenin nasıl olduğu 8 tane eigen vektör alınmış mesela burada.
+
+604
+01:52:23,543 --> 01:52:39,323
+İşte bu 8 vektör için yapılan işlemin sonucu bunların toplamı şöyle bir eigen space'e geçtiğinde aslında şöyle bir görüntü onun sayısal değerlerin görüntüye dönüşmüş hali o şekilde.
+
+605
+01:52:39,323 --> 01:52:48,483
+bu şekilde o zaman sizin başlangıçta olan elinizdeki özelliklerden gereksizler bu şekilde ilanmış oluyor.
+
+606
+01:52:48,823 --> 01:52:51,383
+Şimdi bu eskiden şeyde çok kullanılıyordu.
+
+607
+01:52:52,363 --> 01:52:54,263
+Sinyal işlemede çok kullanılıyordu.
+
+608
+01:52:54,263 --> 01:52:59,883
+Yani mesela görüntüde dediğim gibi yüz tanımayla başlamış kullanılmaya.
+
+609
+01:52:59,883 --> 01:53:14,963
+ondan sonra daha sonra ses sinyallerinde de eldeki ses sinyalini azaltarak kullanmak için karakteristiklerini çıkarmak için sinyalin azaltılmasını da kullanıyordu.
+
+610
+01:53:14,963 --> 01:53:22,323
+Şimdi şeyde de kullanılıyor yani normal düz datada mesela bu banka datasında falan çok karşınıza çıkar.
+
+611
+01:53:23,363 --> 01:53:29,383
+Burada şöyle bir avantaj da var datayı dönüştürüyorsunuz ya orijinal data kayboluyor.
+
+612
+01:53:29,383 --> 01:53:59,303
+Mesela şeyi olan ne bileyim güvenlik açısından tek tek böyle şeyde öyle bir endişe var ya işte banka datasında odatanın her ne kadar şey yapıyorlar işte dönüştürüyorlar yani işte orada kimlik bilgilerini bilinen neleri falan görmüyorsunuz aslında ama yine de reverse engineering yapıp yani çok isteseniz
+
+613
+01:53:59,303 --> 01:54:07,743
+bir şeyin nedir? Bilginin bir kartın sahibinin kim olduğunu isterseniz bulursunuz yani.
+
+614
+01:54:10,131 --> 01:54:24,111
+ne bileyim işte çok böyle stalker bir kişilikseniz işte gittiği ülkeler, alışveriş yaptığı yerler falan işte oralardan geri giderek kartın sahibini bulabilirsiniz.
+
+615
+01:54:24,592 --> 01:54:35,571
+O bilgiler açık bilgiler yani ortada açık olan bilgiler ama mesela dikkat edin o tür data paylaşılan public datalarda şey oluyor,
+
+616
+01:54:35,571 --> 01:54:44,191
+Principle Component Analize dönüştürmüş oluyorlar. Hem karakteristik özellik çıkıyor hem de orijinal özellik. Oradasınız değil mi?
+
+617
+01:54:46,551 --> 01:54:47,731
+Evet hocam.
+
+618
+01:54:48,911 --> 01:54:51,451
+Görüntüm gitti sadece ama görüntümü görmüyorsunuz değil mi?
+
+619
+01:54:52,411 --> 01:54:53,391
+Yok görmüyoruz hocam.
+
+620
+01:54:54,471 --> 01:54:56,831
+Tamam zaten şey nedir?
+
+621
+01:54:58,931 --> 01:55:02,771
+Dönebilirim gerçi yani görebilirsiniz orayı.
+
+622
+01:55:02,771 --> 01:55:11,331
+onları dönüştürerek kullanıyorlar. Şu anda çok yapılan bir şey. Principal component analize, özellik azaltma.
+
+623
+01:55:11,331 --> 01:55:24,432
+Şimdi bunun bir tane daha iyisi var. Principal component analizden daha başarılı olan özellik çıkartma yöntemlerinden birisi, dönüştürme yöntemlerinden.
+
+624
+01:55:24,891 --> 01:55:27,831
+Ne olduğu hakkında fikir üretecek var mı, duymuş olan?
+
+625
+01:55:32,724 --> 01:55:34,263
+TSNE olabilir mi hocam?
+
+626
+01:55:35,483 --> 01:55:35,783
+Ne?
+
+627
+01:55:36,783 --> 01:55:37,543
+TSNE.
+
+628
+01:55:39,423 --> 01:55:42,403
+TSNE nedir? Uzun halini söyleyebilir misin?
+
+629
+01:55:45,423 --> 01:55:54,883
+Şöyle hocam, görselleştirme tolulardan bir tanesiydi. PCI ve TSNE ikisi de 3 boyutta görselleştirme yapıyorduk da. Oradan aklımda kalmış.
+
+630
+01:55:55,883 --> 01:56:00,763
+Tamam, yok valla bilmiyorum. TSNE'nin açık halini bilmiyorum. Efendim?
+
+631
+01:56:00,763 --> 01:56:05,423
+C-NN, communication on neural network diye hani genelde yürütü.
+
+632
+01:56:05,423 --> 01:56:07,244
+D-N-N, özür dilerim.
+
+633
+01:56:07,523 --> 01:56:12,443
+Communication on neural network özellik dönüştürme yöntemi değil.
+
+634
+01:56:13,224 --> 01:56:14,764
+Onunla ilgili bir dakika sonra.
+
+635
+01:56:15,264 --> 01:56:17,003
+C-C-N-E
+
+636
+01:56:17,003 --> 01:56:22,323
+Yani şimdi bak bu kadar ders dinliyorsunuz.
+
+637
+01:56:22,404 --> 01:56:26,383
+Ben PCA demiyorum, principle component analiz ediyorum.
+
+638
+01:56:26,383 --> 01:56:29,523
+Şimdi sana diyorum ki onun açık halini açık halini bana söylemen lazım.
+
+639
+01:56:37,395 --> 01:56:38,115
+açık hali mi?
+
+640
+01:56:38,835 --> 01:56:40,755
+Hocam bilmiyorum bir saniye bakacağım, bir şey diyeceğim.
+
+641
+01:56:41,735 --> 01:56:47,175
+Tamam. Şimdi bir kere ne olur bana şey yapmayın, o en kötüsü, tool'lar üzerinden konuşmayın.
+
+642
+01:56:47,316 --> 01:56:53,755
+Çünkü mesela VEKA'da destek vektör makinelerine SVM demiyorlar, SMO diyorlar.
+
+643
+01:56:53,755 --> 01:56:57,715
+O başka bir şeyin kısaltılmış, unuttun mu en kısaltılmış olduğunu hatta.
+
+644
+01:56:58,595 --> 01:57:03,395
+Siz lütfen, yani siz lisans üstü öğrencisiniz, yöntemleri isimleriyle bilin.
+
+645
+01:57:03,395 --> 01:57:13,116
+oralarda geçtiği şekliyle şey yapmayın. Tool'larda geçen şeylerini kullanmayın lütfen.
+
+646
+01:57:14,315 --> 01:57:18,756
+Onu bilin tabii ki yani bilmem ne tool'un da bu şekilde geçiyor bilmek önemli.
+
+647
+01:57:18,756 --> 01:57:21,175
+Peki ben size söylüyorum şu anda.
+
+648
+01:57:26,131 --> 01:57:42,392
+Şu anda principal component analiz gibi özellikleri dönüştürerek kullanma için, dönüştürmek için en çok kullanılan ve principal component analizden daha başarılı olan yaklaşım o tenkodur yaklaşımı.
+
+649
+01:57:42,392 --> 01:57:55,831
+Şimdi oradaki mantık şu, aslında CNN diyenler de fena bir şey söylemediler. Derin öğrenmede şöyle bir yola gidiliyor aslında. O yüzden de derin öğrenme o kadar daha başarılı.
+
+650
+01:57:56,131 --> 01:58:24,212
+pek çok klasik öğrenme yöntemine göre. Klasik öğrenme yöntemlerinde aslında şey var işte burada sizin sample'larınız var yapamadığım. Bunlar pre-processing'den geçiyor. Ondan sonra feature selection veya extraction yapılıyor.
+
+651
+01:58:26,131 --> 01:58:36,131
+ondan sonra burada da bir model seleksyonu yapılıyor. Yani model işte hani kainan mı kullanacağım, decision tree'i mi kullanacağım falan model oluyor.
+
+652
+01:58:36,471 --> 01:58:47,091
+Şimdi klasik makine öğrenmesi yöntemlerinde bu şekilde derin öğrenmede yapılan şey şunu da içeriye almak.
+
+653
+01:58:47,091 --> 01:58:58,352
+yani siz hep o örneği veriyorum çok güzel göz önüne getiriyor. Bir taraftan ineği veriyorsunuz öbür taraftan hamburger çıkıyor gibi.
+
+654
+01:58:58,352 --> 01:59:07,371
+Yani şeyde siz belirlerken özellik seçimini burada da çünkü bakın az önce bayağı zahmetli işlerden bahsettim.
+
+655
+01:59:07,451 --> 01:59:12,551
+Her şeye göre de başarı değişecek. Özellikleri menu seçerseniz başarı ayrı olur.
+
+656
+01:59:12,551 --> 01:59:18,111
+Filter metotlardan biriyle seçerseniz ayrı olur, wrapperla seçerseniz ayrı olur.
+
+657
+01:59:18,111 --> 01:59:27,191
+Yani özellikle seçme şeklinize göre şey değişecek, başarınız değişecek veya extraction yaparsanız başarınız ayrı olur.
+
+658
+01:59:30,291 --> 01:59:36,691
+Fakat derin öğrenme diyor ki sen o işi bana bırak, sen ver diyor ben özellikleri senin için seçerim.
+
+659
+01:59:36,691 --> 01:59:40,311
+o convolution neural network'te bahsettiğimiz şey o.
+
+660
+01:59:40,391 --> 01:59:48,292
+Convolution neural network'te kullanılan filtrelerle aslında en uygun özellikler o convolution dediği şey
+
+661
+01:59:48,292 --> 01:59:52,811
+görüntüye uygulanan convolution işlemi.
+
+662
+01:59:53,271 --> 01:59:56,871
+En iyi özellikler sistemin içerisinde seçiliyor.
+
+663
+01:59:56,871 --> 02:00:03,651
+Şimdi autoencoded da aslında bir unsupervised learning yöntemi, eğitmensiz bir öğrenme yöntemi.
+
+664
+02:00:03,651 --> 02:00:12,051
+fakat o özellik seçme aşamasında kesilirse çok gayet iyi özellikler veriyor.
+
+665
+02:00:12,051 --> 02:00:17,691
+Aslında şeyde de bu çok yapılan bir şey, derin öğrenmede de şey yapılıyor.
+
+666
+02:00:17,951 --> 02:00:28,991
+Yani özellik seçme yapıldıktan sonra derin öğrenme modele geçmeden kesilip o özellikler kullanılarak diyelim ki işte destek vektör makinesiyle binden ne?
+
+667
+02:00:30,231 --> 02:00:32,411
+Yine mi kaybettim sizi orada mısınız?
+
+668
+02:00:33,651 --> 02:00:35,911
+Orada mısınız?
+
+669
+02:00:36,131 --> 02:00:37,351
+Buradayız hocam.
+
+670
+02:00:37,991 --> 02:00:40,471
+Ekran gidince korkuyorum siz de gittiniz diye.
+
+671
+02:00:42,471 --> 02:00:54,351
+Şey oluyor yani derin öğrenmede özellikler seçildikten sonra kesilip o özellikler kullanılarak klasik makine öğrenmesi yöntemleri kullanıldığı da oluyor.
+
+672
+02:00:54,751 --> 02:00:55,571
+Bu da böyle bir şey.
+
+673
+02:00:55,572 --> 02:01:08,012
+Peki bir de şey vardı aslında unuttum şimdi feature selection'da filter dedik, wrapper dedik bir de embedded metotlar vardı onu anlatmayı unuttum çünkü önem vermediğim için olsa gerek
+
+674
+02:01:08,012 --> 02:01:13,372
+Embedded dediği şey şu, şurada var mı? Ha şurada embedded metotlar vardı
+
+675
+02:01:13,372 --> 02:01:21,352
+Embedded dediği şey yöntemin içerisinde özellikler seçilirse sizin gayet iyi bildiğiniz embedded hangi yöntem var mesela?
+
+676
+02:01:26,131 --> 02:01:31,891
+Yöntemin içinde özelliklerin seçildiği bir öğrenme yöntemi ismi söyleyebilir misiniz?
+
+677
+02:01:37,235 --> 02:02:07,215
+karar ağaçları mı? Evet, kesinlikle karar ağacında işte en iyi özelliği köke koyduk, ondan sonra aşağı doğru indik. Orada bütün özellikleri kullanmıyoruz aslında. Bir noktada yani şeyi sağlayabildiysek, bütün örneklerin sınıflandırılabilmesini sağlayabildiysek kestik. Kestiğimiz noktada belki de bütün özellikler düğümlerde yer almadı. O embedded bir yöntem yani şeylerin bütün özelliklerin seçilmemesi özellik seçiyorsunuz demektir.
+
+678
+02:02:07,235 --> 02:02:14,235
+o da embedik bir yöntem aslında. Mesela random forest ben ona anlatmıyorum ama anlatılabilirim aslında.
+
+679
+02:02:14,715 --> 02:02:23,776
+Random forest, embedik bir yöntem. Peki o zaman şöyle yapalım isterseniz bugün için burada bırakalım.
+
+680
+02:02:24,136 --> 02:02:32,456
+Şimdi size şöyle şeyler söyleyeceğim tembel bir hocamız olarak. Aslında tembel değilim. Gerçekten sanıyorum hepimiz bu dönemde aynı şeyi yaşıyoruz.
+
+681
+02:02:32,455 --> 02:02:39,955
+sabahtan akşam 9'da kadar falan sürekli hiç aralıksız çalışıyorum. Yine de bitmiyor hiçbir şey.
+
+682
+02:02:39,955 --> 02:02:46,615
+Yani çalışıyorum derken master's test sınavı oluyor, işte günden doktorat izlemesi oluyor, o oluyor, bu oluyor.
+
+683
+02:02:46,715 --> 02:02:51,375
+Durmadan sabahtan akşama ders dışında, derslerin dışında bir sürü şey oluyor.
+
+684
+02:02:51,515 --> 02:02:56,335
+Şunu fark ettim, siz de fark etmişsinizdir diye tahmin edip çoğunuz çalışıyorsunuz.
+
+685
+02:02:56,335 --> 02:03:25,935
+Şimdi normal bir üniversitedeyken yani şu anda biz online'ız ya diyelim ki birisi toplantıya gelebilecekse geliyordu gelemeyecekse o toplantı yapılmıyordu veya işte onun gelmesi de önemli biz de gidebiliriz diyelim ki bir toplantıya ama işte ne bileyim şey oluyor diyelim ki Ankara'da TÜBİTAK hakemiği oluyor veya Ankara'da TÜBİTAK paneli oluyor o gün bütün gün Ankara'dasın yani zaten sabahtan gittin uçak veya otobüs her neyse gittin geldim
+
+686
+02:03:25,935 --> 02:03:54,956
+bütün gün gitti. Şimdi şöyle oluyor. İşte sabahtan diyorum ki TÜBİTAK paneli oluyor. Ankara'da olması gereken panel. İşte iki saat sonra gündemle toplantısı oluyor. Şimdi mekân, şey mefhumu kalktığından beri, yer mefhumu kalktığından beri şey tamamen hala orada olduğunuzu ümit etmek istiyorum. Yer mefhumu ortadan kalktığından beri tamamen her şey değişti. Sanıyorum sizin için de öyle.
+
+687
+02:03:54,956 --> 02:04:06,715
+sabahtan akşama sürekli bir toplantı orada bir şey burada bir şey. O yüzden sizin çok basit olan şey sınavlarınızı bile değerlendirmesini ilan edemedim.
+
+688
+02:04:06,715 --> 02:04:15,215
+Halbuki baktım. [öğrenci] bu arada oradaysan [öğrenci] orada mısın? [öğrenci] burada mı bugün?
+
+689
+02:04:15,215 --> 02:04:32,915
+Hala düzeltmemişler. Sizlerin notları yanlış gözüküyor şeyde. Siz görmüyorsunuz da ben görüyorum. Sınav hesaplarımız, puanlamamız yanlış gözüküyor sistemde.
+
+690
+02:04:33,915 --> 02:04:43,375
+Bir hata daha söylediler hoca arkadaşlardan. Bu not hesabı değil de onunla ilgili bir şey söylediler. Bir şey daha yanlış yapıyormuş sistem şu anda.
+
+691
+02:04:43,375 --> 02:04:48,775
+hatta dedik ki bunu uyaralım da ondan sonra sorun olmasın ama ne olduğunu unuttum.
+
+692
+02:04:49,176 --> 02:04:53,055
+Neyse sonuçta sizin notlarınızı şey yapacağım.
+
+693
+02:04:54,176 --> 02:04:58,935
+Bugün size buyuracağım, ödev vereceğim demiştim.
+
+694
+02:04:58,935 --> 02:05:00,495
+Tabii ki onu haliyle vereceğim.
+
+695
+02:05:00,655 --> 02:05:07,015
+Onu da bugün aynı şekilde duyurmayı planlıyorum.
+
+696
+02:05:07,116 --> 02:05:12,015
+Haftaya bir kolaboratif filtering'i anlatacağım.
+
+697
+02:05:13,375 --> 02:05:36,616
+Ondan sonra o da son yıllarda artık çok popüler kullanılıyor. Bir de şeyi çok basitçe derin öğrenme kavramlarını. Onun için ayrı bir ders var. Muhtemelen ilgilenenler o dersi alıyorlardır. Ama temel olarak derin öğrenme nedir, nasıl kullanılıyor, mantıklar ne oluyor onlardan çok basitçe bir giriş şeklinde bahsedeceğim.
+
+698
+02:05:37,235 --> 02:05:39,075
+Bu kadar sormak istediğiniz bir şey var mı?
+
+699
+02:05:46,644 --> 02:05:48,644
+Peki, o zaman size güzel bir gün diliyorum.
+
+700
+02:05:50,543 --> 02:05:51,004
+İyi hafta da.

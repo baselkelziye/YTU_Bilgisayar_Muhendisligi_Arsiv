@@ -1,0 +1,2315 @@
+1
+00:00:33,716 --> 00:00:36,295
+Evet, sayı oldukça arttı. Günaydın arkadaşlar.
+
+2
+00:00:38,395 --> 00:00:39,355
+Günaydın hocam.
+
+3
+00:00:39,735 --> 00:00:40,255
+Günaydın.
+
+4
+00:00:41,115 --> 00:00:43,075
+Güzel bir gün diliyorum sizi.
+
+5
+00:00:44,235 --> 00:00:46,835
+Şeyi görüyor musunuz şu anda? Notbuku açtım.
+
+6
+00:00:47,835 --> 00:00:49,575
+Evet hocam.
+
+7
+00:00:51,175 --> 00:00:51,495
+Güzel.
+
+8
+00:00:53,136 --> 00:00:56,515
+Bugün linear regresyondan bahsedeceğim size.
+
+9
+00:00:56,515 --> 00:01:03,335
+Şimdi bugüne kadar gördüğümüz konularda hep sınıflandırma üzerinden gittik.
+
+10
+00:01:03,335 --> 00:01:13,295
+Yani işte ne bileyim mesela bir kişinin yüz ifadesinden işte mutlu mu kızgın mı olduğunu anla dediğimizde orada çıkışta bir sınıflar var.
+
+11
+00:01:13,695 --> 00:01:17,436
+Yani mutlu olması bir sınıf, kızgın olması bir sınıf.
+
+12
+00:01:17,955 --> 00:01:26,195
+Siz yapacağınız, kullanacağınız öğrenme modeliyle bir yüz ifadesinin hangi sınıfa ait olduğunu bulmaya çalışıyorsunuz.
+
+13
+00:01:26,195 --> 00:01:36,256
+veya işte bir e-mail spam midir değil midir dediğimizde aynı şekilde iki tane sınıfınız var spam olan mailler ve olmayan mailler.
+
+14
+00:01:37,355 --> 00:01:41,156
+Elinizdeki mailin hangi sınıfa ait olduğunu bilmeye çalışıyorsunuz.
+
+15
+00:01:41,896 --> 00:01:51,275
+Fakat şimdi problemler her zaman bu şekilde sonucu sınıflandırmayla biten problemler olmayabilir.
+
+16
+00:01:51,275 --> 00:02:13,216
+mesela bir filmin şeyini bilmek istiyorsunuz, reytingini bilmek istiyorsunuz yani işte 4 mi olacak 5 mi olacak bir değer bilmek istiyorsunuz veya bir bölgedeki evin fiyatını tahmin etmek istiyorsunuz.
+
+17
+00:02:13,216 --> 00:02:16,336
+Şimdi böyle bir durumda ne yapacaksınız?
+
+18
+00:02:17,076 --> 00:02:31,135
+Şimdi bir önceki durum yani sınıflandırma durumunda aslında bizim elimizde X girişi olarak, giriş bilgisi olarak diskrit veya sürekli veri var.
+
+19
+00:02:31,135 --> 00:02:39,635
+Mesela işte ses tanıma yapıyorum. Oradaki veri sürekli bir veri aslında. Yani sesinden kişinin kim olduğunu anlamaya çalışıyorsunuz.
+
+20
+00:02:39,635 --> 00:03:00,995
+girişte elimizde sürekli bir veri var. Veya diskret veri dediğimiz mesela şeyden bahsediyorsunuz işte yine diyelim ki kişi tanımadan bahsediyorsunuz işte boyu diyorsunuz kilosu diyorsunuz yaşılıyorsunuz vesaire bunlar diskret veriler.
+
+21
+00:03:00,995 --> 00:03:06,255
+Ama giriş veriniz diskret veya kontinüste olsa
+
+22
+00:03:06,255 --> 00:03:06,675
+Hocam
+
+23
+00:03:06,675 --> 00:03:07,936
+Efendim
+
+24
+00:03:07,936 --> 00:03:10,995
+Sesiniz gelmiyor her konuşuyorsanız
+
+25
+00:03:11,596 --> 00:03:13,475
+Sesim mi gelmiyor?
+
+26
+00:03:13,615 --> 00:03:14,956
+Gelmiyor hocam
+
+27
+00:03:14,956 --> 00:03:20,255
+Evet baktım mikrofonum açık sana mı gelmiyor?
+
+28
+00:03:20,775 --> 00:03:22,516
+Duyuyor mu herkes rahatlıkla?
+
+29
+00:03:22,695 --> 00:03:24,096
+Evet hocam
+
+30
+00:03:24,096 --> 00:03:25,415
+Gayet net duyuyoruz hocam
+
+31
+00:03:25,415 --> 00:03:29,535
+Sesimi duymayan kimdi?
+
+32
+00:03:30,995 --> 00:03:34,035
+Tabii sesimi duymadığı için söyleyemeyecek ki
+
+33
+00:03:34,035 --> 00:03:36,456
+[öğrenci] yazmıştı sanırım arkadaş
+
+34
+00:03:41,395 --> 00:04:07,115
+Peki. Bir dakika. Mesaj da yazmış herhalde. Bir dakika bakayım. Hocam, sesiniz gelmiyor. Ha, evet. [öğrenci]. Arkadaşlar, bir şey rica edeceğim. Şimdi bunu ben daha önce de söyledim ama şeyin, iPad'imin ekranı küçük olduğum için ben full screen'e geçiyorum yazarken. Öyle olunca şeyleri falan görmüyorum.
+
+35
+00:04:07,115 --> 00:04:17,455
+chat mesajlarınızı falan görmüyorum. Şey yapın yani dersi bölmeniz önemli değil aslında benim için iyi bir şeydi çünkü kendimi çok yanlış hissediyorum sadece ben konuşuyorum.
+
+36
+00:04:18,275 --> 00:04:24,756
+Şeyi bile özledim yani bunu özleyeceğimi tahmin etmezdim ama sınıfta öğrenciler kendi arasında konuşurdu.
+
+37
+00:04:25,296 --> 00:04:36,616
+Uğultu olurdu. Hani susun falan derdik ama yani onu bile özledim. O yüzden şey yapmayın yani chatten değil de bana mesajlarınızı sesli söyleyeyim göremiyorum çünkü.
+
+38
+00:04:36,615 --> 00:04:59,535
+Yani benim şu anda dersle ilgili görebildiğim tek şey, şeyle ilgili Zoom tarafından bir köşede kayıt butonu var. O yanıyor, onu görebiliyorum. O yüzden hatta sizin sınıfta da oldu galiba birkaç defa farklı sınıflarda. Ben kopup gitmişim, kendi kendime anlatıyorum. Öğrenci başka yerde, ben başka yerdeyim. Sizle de yaşadık biz bunu.
+
+39
+00:05:02,535 --> 00:05:06,195
+Bak mesela cevap yok, yaşadık mı, yaşamadık mı, ben hareket etmiştim.
+
+40
+00:05:06,616 --> 00:05:07,895
+Yaşadık hocam evet
+
+41
+00:05:07,895 --> 00:05:11,675
+Evet öyle bir şey oldu o yüzden şey yapın lütfen chatten
+
+42
+00:05:11,675 --> 00:05:14,916
+Tabi arkadaş benim sesimi duyamadığı için
+
+43
+00:05:14,916 --> 00:05:15,815
+Sessiz soru
+
+44
+00:05:15,815 --> 00:05:19,895
+Şimdi geldi mi?
+
+45
+00:05:19,976 --> 00:05:20,696
+Duyuyorum hocam
+
+46
+00:05:20,696 --> 00:05:23,095
+Tamam harika sevindim
+
+47
+00:05:23,095 --> 00:05:25,735
+Problemlere veya soru sorun lütfen
+
+48
+00:05:25,735 --> 00:05:28,696
+Yani çünkü anlatırken soru sormanız önemli
+
+49
+00:05:28,696 --> 00:05:35,296
+Diğer arkadaşlarınızın da belki anlamadığı ama anlamadığını da fark etmediği bir şey olabilir
+
+50
+00:05:35,295 --> 00:05:46,275
+soru da sorun. Tamam peki şimdi şeyden bahsediyorduk toparlıyorum. Diyordum ki sınıflandırmada girişleriniz mesela boy, kilo, yaş vesaire gibi diskret verilerde olabilir.
+
+51
+00:05:46,275 --> 00:05:57,995
+veya işte diyelim ki ses tanıyorsunuz o tek boyutlu bir şey vektör aslında giriş veriniz ama çıkışta sınıf istiyoruz.
+
+52
+00:05:57,995 --> 00:06:06,215
+Yani bu ses kime aittir? İşte bu mail siten midir gibi sınıf bilgisi istiyoruz.
+
+53
+00:06:06,215 --> 00:06:17,035
+bunu yaptığımız zaman bu classification, regression'da olan ise yine X'de girişlerimiz discrete veya continuous olabilir.
+
+54
+00:06:17,035 --> 00:06:25,215
+Yani işte ne bileyim bir bölgedeki hava sıcaklıklarından mesela bahsediyorsunuzdur.
+
+55
+00:06:25,275 --> 00:06:30,415
+O discrete veridir veya işte yine bu ses yapısındaki gibi sürekli olan veriniz olabilir.
+
+56
+00:06:30,415 --> 00:06:38,055
+Ama bizim burada çıkışta istediğimiz şey kontinüüs bir bilgi. Kontinüüs olması ne demek?
+
+57
+00:06:38,055 --> 00:06:50,615
+Şimdi ben örneğin bir filmin reytingini söylüyorsam, bu da artık bir sınıf söylemiyorum, reytingi 3'tür, 3.5'tür, 4'tür gibi bir değer söylüyorum.
+
+58
+00:06:50,616 --> 00:06:57,416
+bunu yaptığım zaman o aslında şey haline gelmiş oluyor.
+
+59
+00:06:58,675 --> 00:07:01,375
+Sürekli bir çıkış haline gelmiş oluyor.
+
+60
+00:07:01,616 --> 00:07:04,095
+Yani artık şöyle düşünelim.
+
+61
+00:07:04,916 --> 00:07:08,476
+Diyelim ki işte burada yıl bilgisi var.
+
+62
+00:07:08,476 --> 00:07:12,476
+Burada da işte Beşiktaş'ta.
+
+63
+00:07:19,252 --> 00:07:45,592
+ev fiyatı bilgisi var. Şimdi mesela ölçmüşler böyle işte. Bunlar eğitim örneklerimiz bizim eğitim örneklerimiz. Beşiktaş'ta ev fiyatları. Tabi aslında burada biraz sahte bir şey yapıyoruz. Çünkü paranın değerine bağlı olarak fiyat hep artıyor gibi gözüküyor. Belki oransal olarak o kadar büyük bir artış olmuyor fiyatta ama.
+
+64
+00:07:45,592 --> 00:08:14,891
+Şimdi biz burada mesela işte 2020 yılında kaç olacak dediğimizde yine N regresyonla yapılan aslında bir Y eşittir FX ile verilen X değerlerine göre Y çıkışının ne olacağını öğrenmek bir F fonksiyonuyla Y çıkışının ne olacağını öğrenmek ve buna göre de işte 2020 yılında diyelim ki
+
+65
+00:08:14,891 --> 00:08:18,151
+evin fiyatının ne olacağını tahmin etmek.
+
+66
+00:08:18,671 --> 00:08:21,151
+Linear regresyonda bizim yaptığımız şey bu.
+
+67
+00:08:21,151 --> 00:08:29,911
+Linear olması linear bir şeyle doğru uydurarak yani linear olarak bir tahminde bulunmak.
+
+68
+00:08:30,211 --> 00:08:37,031
+Dolayısıyla bizim burada yaptığımız şey önceden yine bir şeyimiz var.
+
+69
+00:08:37,491 --> 00:08:43,811
+X girişleri ve bu X girişleri için olması gereken Y çıkışları.
+
+70
+00:08:43,811 --> 00:08:58,351
+Bunlar bizim training setimiz. Bunlar var zaten bizim elimizde. Ona göre biz bir X'den Y'ye ulaşmamızı sağlayan mapping yapıyoruz.
+
+71
+00:08:58,351 --> 00:09:09,071
+Yani işte şunu yapıyoruz bütün X, Y, X girişleri için elimizdeki işte en tane şey var eğitim örneği var.
+
+72
+00:09:09,711 --> 00:09:16,351
+Bütün bu eğitim örnekleri için X, Y girişleri için uygun Y, Y çıkışını bulmaya çalışıyoruz.
+
+73
+00:09:16,351 --> 00:09:25,692
+Şimdi peki bu nasıl olacak? Buna bakmamız lazım. Şöyle bir dakika.
+
+74
+00:09:30,100 --> 00:09:39,779
+Şimdi burada bizim x değerlerimiz aslında ve y değerlerimiz önceden verilmiş olan şeyler.
+
+75
+00:09:40,020 --> 00:09:48,479
+Ben benim yapmak istediğim öyle bir mapping yapayım ki verilen x'ler için istenilen y'lere ulaşmamı sağlasın.
+
+76
+00:09:48,479 --> 00:09:55,759
+Yani şöyle bir şekilde düşünecek olursan, şunlar benim x'lerim, bunlar da y'lerim.
+
+77
+00:09:55,759 --> 00:09:58,979
+ben şöyle bir şey yapmak istiyorum.
+
+78
+00:09:59,559 --> 00:10:06,079
+XY ikililerim için bir mapping yapmak istiyorum.
+
+79
+00:10:07,199 --> 00:10:13,960
+Şimdi burada X'ler independent olan değişkenler.
+
+80
+00:10:13,960 --> 00:10:16,799
+Yani şeyler birbirinden bağımsız.
+
+81
+00:10:17,299 --> 00:10:18,320
+Nedir?
+
+82
+00:10:22,611 --> 00:10:42,751
+Örneğin işte biraz evvelki örnekte yıl değerleri aslında birbirinden bağımsız olan bilgiler. Ama o yıla bağlı olarak çıkış değerleri olan el fiyatları yıla bağlı olan bilgiler.
+
+83
+00:10:42,751 --> 00:10:48,131
+Dolayısıyla x'ler bağımsız değişkenler, y'ler de bağımlı değişkenler olsun.
+
+84
+00:10:48,131 --> 00:11:03,611
+Şimdi ben burada Y çıkışım bilinmeyen, Y üsü diyeyim de kafanız karışmasın şimdi Y şey olan eğitim örneğindeki olduğu için karışmasın.
+
+85
+00:11:03,611 --> 00:11:18,091
+Bir şekilde bir dönüşüm sağlayacağım. Burada bunu sağlamak için kullandığım değişkenler ağırlık değeri olarak kullandığım değişkenler.
+
+86
+00:11:18,091 --> 00:11:26,091
+Yani o x'in y, x'den y'ye ulaşmak için kullandığım ağırlık değerleri şurada da bir hata değerim var.
+
+87
+00:11:29,812 --> 00:11:37,431
+Şimdi bizim hedefimiz hatayı minimum yapmak.
+
+88
+00:11:43,412 --> 00:12:08,551
+hata niyansında y üstü eksi y değil mi? Normalde bizim hata dediğimiz şey bu. Bunu tabii şeye alalım, mutlak değeri alalım. Çünkü şey önemli değil. Hatanın negatif veya pozitif olması önemli değil. Bizim için hata. Bu bizim istenen çıkışımız.
+
+89
+00:12:08,551 --> 00:12:13,071
+Bu da hesaplanan çıkışımız.
+
+90
+00:12:14,371 --> 00:12:17,611
+Aslında bizim yapmaya çalıştığımız şey hatayı minimaliz etmek.
+
+91
+00:12:17,611 --> 00:12:27,952
+Şimdi burada bizim burada ağırlık değerlerini hatayı minimaliz edecek şekilde tespit etmemiz aslında öğrenme olan şey.
+
+92
+00:12:28,891 --> 00:12:37,691
+Yani öğrenme aslında uygun ağırlık değerlerini elde etmek burada yapmaya çalıştığımız şey.
+
+93
+00:12:38,551 --> 00:12:50,751
+şeyleri uygun ağırlık değerlerini minimize etmek. Şimdi burada hata demek ki bizim doğru noktaya ulaşmamızı sağlayacak.
+
+94
+00:12:50,751 --> 00:12:58,991
+hata için kullanılan fonksiyon da daha doğrusu hata hesabı için kullanılan bağıntı da
+
+95
+00:12:58,991 --> 00:13:05,331
+sum of squared'ı hataların karelerinin toplamı.
+
+96
+00:13:08,171 --> 00:13:19,731
+Şöyle, şimdi en tane eğitim örneği için hata hesaplayacaksam, şu benim en örnek sayım olsun.
+
+97
+00:13:20,751 --> 00:13:25,031
+en tane örneğim olduğunu düşünelim.
+
+98
+00:13:25,031 --> 00:13:42,031
+Şimdi mantıken baktığımız zaman yi dediğim şey benim istenen çıkışımsa fx i de hesaplanan çıkışsa hatta bu ikisinin farkı.
+
+99
+00:13:42,031 --> 00:13:47,771
+Farkların karelerinin toplamı dediğimiz zaman bu hale geliyor.
+
+100
+00:13:47,772 --> 00:14:02,652
+Burada fx'i dediğim şey bunu şey yaparsam birden N'e kadar i eşittir birden N'e yi eksi ve transpoze eksi aslında bu da yapmak istediğim şey bu.
+
+101
+00:14:02,652 --> 00:14:13,512
+Şimdi burada biz hatayı minimize etmek istiyoruz. Bunun için eğer bu ifadenin türevini şey yaparsam
+
+102
+00:14:13,511 --> 00:14:31,651
+Bir dakika ne oldu buna? Neyse onu yapamadım. Şunun türevini sıfıra eşitlersen minimum değere ulaşabilirim. Yapmak istediğim şey hatanın minimum olması. O yüzden de türev sıfıra eşitlenerek minimuma ulaşabilirim.
+
+103
+00:14:31,651 --> 00:14:38,491
+Şimdi burada hatayı minimize etmek için kullanılan yöntem gradient descent yöntemi.
+
+104
+00:14:47,668 --> 00:15:15,607
+Şimdi şöyle bir şey düşünelim. Bunlar benim ağırlık değerlerim olsun. Bu da hata miktarı olsun. Şimdi bir kere öğrenme nasıl olacak? Biz başlangıçta sadece elimizde x'ler y'ler var ama ben istiyorum ki öyle bir y üstü bulayım ki buradaki şey ağırlık değerleri çok uygun olsun.
+
+105
+00:15:15,607 --> 00:15:24,567
+y-y üstü hatası minimize olsun istiyorum. Bunun için de ağırlık değerlerini iteratif olarak değiştiriyorum.
+
+106
+00:15:24,567 --> 00:15:31,267
+Şimdi burada ilk işe başladığım zaman diyelim ki yüksek bir hatayla başlıyorum.
+
+107
+00:15:31,267 --> 00:15:37,887
+mesela V1 için ya da şöyle yapayım bir dakika.
+
+108
+00:15:39,747 --> 00:15:40,528
+Şöyle yapayım.
+
+109
+00:15:43,007 --> 00:15:47,987
+Diyelim ki V1 değeri için işte hata büyük.
+
+110
+00:15:47,987 --> 00:15:55,627
+Ondan sonra işte ikinci bakılan V2 değeri için hata işte birazcık daha
+
+111
+00:15:55,627 --> 00:15:58,587
+dur V2 oraya koymayayım, şuraya koyayım.
+
+112
+00:15:58,587 --> 00:16:11,848
+küçüldü. Hata birazcık daha küçüldü. Hata böyle azalıyor. Fakat burada şöyle bir durum vardır. Mesela hata şöyle azalır.
+
+113
+00:16:12,587 --> 00:16:18,608
+Ondan sonra tam da çizemedim ama şöyle yapayım. Önce çizip ondan sonra üzerine yaparsam.
+
+114
+00:16:18,607 --> 00:16:20,407
+şöyle
+
+115
+00:16:20,407 --> 00:16:26,367
+şimdi bakın şöyle tamam şimdi
+
+116
+00:16:26,367 --> 00:16:28,767
+mesela önce hatanız buradaydı
+
+117
+00:16:28,767 --> 00:16:31,127
+şimdi yavaş yavaş düşmeye başladı
+
+118
+00:16:31,127 --> 00:16:33,187
+düşmeye başladı
+
+119
+00:16:33,187 --> 00:16:36,227
+birazcık daha düştü
+
+120
+00:16:36,227 --> 00:16:39,307
+ondan sonra
+
+121
+00:16:39,307 --> 00:16:41,547
+böyle düştü
+
+122
+00:16:41,547 --> 00:16:44,307
+şimdi burası sizin global minimumunuz
+
+123
+00:16:47,860 --> 00:16:52,860
+bundan sonra devam ederseniz eğer hata artmaya başlayacak.
+
+124
+00:16:53,360 --> 00:17:07,319
+Şimdi peki burada gradient descent ile bizim yaptığımız şey ağırlıkları her adımda hataya göre ağırlıkları değiştirmemiz.
+
+125
+00:17:07,319 --> 00:17:16,139
+gradient descent aslında bize şeyi gösteriyor. Ağırlıkları ne yönde değiştireceğimizi gösteriyor.
+
+126
+00:17:16,139 --> 00:17:30,540
+Dolayısıyla bizim burada yapmamız gereken şey gradient descent yöntemiyle ağırlıkları iteratif olarak hata minimum olana kadar değiştirmek.
+
+127
+00:17:30,540 --> 00:17:41,499
+Şimdi burada önemli olan şey bizim için global minimuma ulaşmak. Şuralarda bakın mesela şurada gördüğünüz şey aslında bir lokal minimum.
+
+128
+00:17:41,499 --> 00:17:44,459
+onlara takılıp kalmamamız lazım.
+
+129
+00:17:44,459 --> 00:17:47,179
+Veyahut da şey de yapmamamız lazım.
+
+130
+00:17:47,360 --> 00:17:48,479
+Yani şurada tehlikeli bir şey.
+
+131
+00:17:48,799 --> 00:17:55,160
+Şak diye şurada global minimumu geçip şuradan devam etmememiz lazım.
+
+132
+00:17:55,319 --> 00:18:03,020
+Yani ağırlıkların değerini iteratif olarak değiştirirken şey dengesini iyi yakalamamız lazım.
+
+133
+00:18:03,160 --> 00:18:06,580
+Çok yavaş hareket edersek iterasyonumuz çok fazla olur.
+
+134
+00:18:06,699 --> 00:18:10,179
+Yani ağırlıkları çok küçük aralıklarla değiştirirsek.
+
+135
+00:18:10,179 --> 00:18:32,479
+yani ne bileyim bir önceki ağırlık 3'tü işte şimdi 3.05 yaptım sonra 3.1 yaptım sonra işte efendim 3.15 yaptım gibi küçük küçük değiştirirsek uzun sürecek ama uzun sürmesin diye büyük değiştirirsek pat diye şuradaki global minimumu atlayıp şeye geçebiliriz başka bir noktaya geçebiliriz.
+
+136
+00:18:32,479 --> 00:18:41,719
+o yüzden o dengeyi iyi yakalamamız lazım. Şimdi onu nasıl yapacağından da konuşacağım. Ama önce şu ağırlık meselesine birazcık daha dikkatle bakalım.
+
+137
+00:18:42,719 --> 00:18:52,479
+Şimdi şurada şöyle ben önce çizeceğim ondan sonra üzerine nokta koyacağım çünkü çok güzel koyamıyorum noktaları.
+
+138
+00:18:52,479 --> 00:19:02,699
+Şimdi aslında burada ye eşittir. Diyelim ki şey var bir özelliğimiz olsun.
+
+139
+00:19:10,003 --> 00:19:25,924
+tek özelliğiniz olsun. Yani şöyle bir X özelliğiniz var. Bu da Y çıkışınız. İşte ne bileyim bir kişinin şeyine bakıyorsunuz, boyuna bakıyorsunuz. Ondan sonra yaşını söylüyorsunuz falan. Böyle enteresan bir şey var.
+
+140
+00:19:25,924 --> 00:19:32,044
+veya az önceki örnekteki gibi yıla bakarak Beşiktaş'taki evin fiyatını tahmin ediyorsunuz.
+
+141
+00:19:32,083 --> 00:19:34,123
+Yani tek özelliğiniz olduğunu varsayalım.
+
+142
+00:19:34,563 --> 00:19:37,024
+Tek özellik için aslında y eşittir.
+
+143
+00:19:37,364 --> 00:19:40,344
+Tek özellik varsa tek de ağırlık var demektir.
+
+144
+00:19:42,163 --> 00:19:45,503
+B1 ağırlığı artı epsilon hata.
+
+145
+00:19:45,503 --> 00:19:49,724
+Y bu aslında gerçek çıkış oluyor aslında.
+
+146
+00:19:49,723 --> 00:20:01,403
+çünkü hatayı da eklersen V1x hesaplanan error'da yani şu y üssü hesaplanan error'ünüz var. Bu da gerçek çıkışınız oluyor.
+
+147
+00:20:02,683 --> 00:20:11,503
+Şimdi burada aslında şu bizim eğrimiz y eşittir V1x artı epsilon bizimkisi bu.
+
+148
+00:20:11,503 --> 00:20:17,743
+Orijinal oturmasını istiyorsak biz bunun orijinal oturmasını istiyorsak bir V0 ekliyoruz.
+
+149
+00:20:17,743 --> 00:20:25,623
+V0'ın buradaki rulü eğrinin doğrunun daha doğrusu orijinal oturmasını sağlamak.
+
+150
+00:20:25,623 --> 00:20:31,803
+O zaman bizim bound'ımız V0 artı V1X artı epsilon oluyor.
+
+151
+00:20:32,663 --> 00:20:45,224
+V0 dediğim şey aslında Y'i eksi V1X'i bölüen entane farklı giriş değeri için.
+
+152
+00:20:45,224 --> 00:20:56,884
+V1 dediğim şey de aslında işte XI, YI-V0 ondan sonra XI'nin karesi.
+
+153
+00:20:58,584 --> 00:21:08,463
+Şimdi bizim yapmamız gereken şey bu ağırlıkları şey olarak hesaplamaya çalışmak, iteratif olarak hesaplamaya çalışmak.
+
+154
+00:21:08,463 --> 00:21:16,023
+Peki bir özellim yoksa birden fazla özellim varsa o zaman ne olacak?
+
+155
+00:21:21,619 --> 00:21:34,319
+işte mesela filmin reytingini tahmin edeceğiz. Filmin çevrildiği yıl, türü, ondan sonra oyuncuları vs. bir sürü özelliğiniz var.
+
+156
+00:21:34,319 --> 00:21:46,399
+öyle bir durumda YV0 artı V1X1 artı işte VKXK artı epsilon.
+
+157
+00:21:46,399 --> 00:21:50,859
+Mesela işte XK filmin çevrildiği yol.
+
+158
+00:21:55,667 --> 00:22:06,607
+işte X1 türü falan gibi bunlar bizim özelliklerimiz. Bizim K tane özelliğimiz var burada mesela.
+
+159
+00:22:09,727 --> 00:22:21,067
+Yapmaya çalışacağımız şey en uygun ağırlıkların belirlenmesi. Şimdi bunun için online diner regresyon yöntemini anlatacağım size.
+
+160
+00:22:28,500 --> 00:22:53,579
+Şöyle, şimdi ilk yapmamız gereken şey ağırlıkları ilklendirmek. Genellikle ağırlıklar, işte diyelim ki D tane özelliğiniz var. Kaç özelliğiniz varsa her özelliğiniz kadar ağırlığınız var.
+
+161
+00:22:53,579 --> 00:23:10,360
+çünkü ağırlıklar özelliklere bağlı, özelliklerin ağırlıkları ve sıfır dediğim şeyde şeyi sağlamak için işte orijine, doğrunun orijine oturmasını sağlamak için başlangıçta ağırlıkları random değerlerle initialize ediyoruz.
+
+162
+00:23:11,260 --> 00:23:22,139
+Genellikle işte böyle sıfır bir arası küçük değerlerle initialize olurlar ve ondan sonra şu şekilde devam ediyoruz.
+
+163
+00:23:22,139 --> 00:23:28,959
+Şimdi bunun birkaç tane yolu var. Şöyle diyelim.
+
+164
+00:23:38,036 --> 00:23:45,036
+bir tane şey seçiyorsunuz. Örnek seçiyorsunuz.
+
+165
+00:23:45,036 --> 00:23:51,275
+yapamadım bir türlü şuraya yazamadım.
+
+166
+00:23:56,627 --> 00:24:09,627
+Bu eğitim örneklerinizden birisini seçiyorsunuz. Ondan sonra, şurada aslında Learning Rate, şurada şey yapalım.
+
+167
+00:24:12,692 --> 00:24:26,591
+Şimdi alfa bizim öğrenme oranımız. Öğrenme oranı ne kadar küçükse, şöyle bir dakika, öğrenme oranımız ne kadar küçükse o kadar yavaş öğreniyor sistem.
+
+168
+00:24:27,291 --> 00:24:34,731
+Alfa öğrenme oranımız. Bire yaklaştıkça hızlı öğrenir, sıfıra yaklaştıkça yavaş öğrenir.
+
+169
+00:24:34,731 --> 00:24:40,111
+Bu hani az önce bahsettiğim şey var ya, gradiyan disendi ağırlıkların değişmesi.
+
+170
+00:24:40,231 --> 00:24:45,711
+Öğrenme aslında ağırlıkların afiyet edilip hatanın minimum olacağı yere yaklaştırılması.
+
+171
+00:24:46,151 --> 00:25:03,351
+Şimdi burada ağırlıkları yavaş değiştirirseniz şöyle şimdi şeye bakalım yine hatayı şöyle şey çizelim bu hata ağırlıkların değişimine göre hatanın değişimini çizelim.
+
+172
+00:25:03,351 --> 00:25:10,791
+Şimdi şey öğrenirseniz, learning rate'iniz küçük olursa bu ağırlıklar yavaş yavaş değişiyor. Hatta yavaş yavaş küçülüyor.
+
+173
+00:25:11,311 --> 00:25:18,431
+Şimdi bu yavaş öğrenmeye sebep oluyor ama global minimumu doğru bulmaya sebep oluyor.
+
+174
+00:25:18,791 --> 00:25:30,531
+Şimdi burada şunu yapıyorlar genellikle, initialization yapıldıktan sonra bir süre, diyelim ki işte ilk 100 iterasyonda alfa büyük oluyor 08-09.
+
+175
+00:25:30,531 --> 00:25:33,471
+Çünkü zaten şey uzak olunduğu biliniyor.
+
+176
+00:25:33,831 --> 00:25:35,911
+Global minimum'a uzak olunduğu biliniyor.
+
+177
+00:25:36,311 --> 00:25:38,791
+Şöyle şöyle kocaman kocaman değişiyor hata.
+
+178
+00:25:39,431 --> 00:25:41,291
+O zaman bir sıkıntı yok yani.
+
+179
+00:25:42,291 --> 00:25:45,991
+Çünkü zaten global minimumdan uzak olunduğu bilindiği için.
+
+180
+00:25:46,131 --> 00:25:49,371
+Sonra belli bir süre sonra learning rate küçülüyor.
+
+181
+00:25:49,811 --> 00:25:52,211
+O zaman böyle yavaş yavaş değişmeye başlıyor.
+
+182
+00:25:52,591 --> 00:25:54,791
+Yavaş yavaş değişmesi bize ne sağlıyor?
+
+183
+00:25:55,351 --> 00:25:58,131
+Şuradaki global minimumun kaçırılmamasını sağlıyor.
+
+184
+00:25:58,131 --> 00:26:09,651
+Çünkü şak diye şuradan şuraya geçse ağırlık değeri birdenbire büyük değişse belki global minimumu kaçırıp iterasyona devam edeceğiz.
+
+185
+00:26:09,751 --> 00:26:10,911
+Bu anlaşıldığı mı bilmiyorum.
+
+186
+00:26:11,731 --> 00:26:18,871
+Yani öğrenme oranı ağırlıkların değişme şeyini belirliyor.
+
+187
+00:26:19,451 --> 00:26:20,811
+Hızını belirliyor.
+
+188
+00:26:20,931 --> 00:26:23,591
+Yavaş veya hızlı değişmesini belirliyor.
+
+189
+00:26:23,591 --> 00:26:34,751
+Ve pek çok çalışmada sabit bir öğrenme oranı kullanmak yerine işte belli bir miktarda ne bileyim ilk 100 iterasyonda işte 08-09 büyük bir alfa.
+
+190
+00:26:35,591 --> 00:26:40,511
+İterasyonlar ilerledikten sonra küçük bir alfa kullanılabilir.
+
+191
+00:26:40,971 --> 00:26:42,491
+Mesela alfa eşittir.
+
+192
+00:26:44,192 --> 00:26:46,831
+Bir bölü iteration dersiniz.
+
+193
+00:26:46,831 --> 00:26:56,091
+Ondan sonra bu şeyi sağlar. İterasyon sayısı arttıkça iPhone'un yavaş yavaş küçülmesini sağlar.
+
+194
+00:26:56,231 --> 00:27:01,891
+Tamam. Şimdi bir şey seçtik. X'i noktasını seçtik.
+
+195
+00:27:02,272 --> 00:27:05,831
+Buna göre şeyleri, ağırlıkları...
+
+196
+00:27:09,172 --> 00:27:30,631
+Elimizde zaten şey var, initial ağırlıklar var. Şimdi vt benim initial ağırlık ve elimdeki t anındaki ağırlığım sayar. Şuna yapacağım. Artı alfa yi eksi fx i ve ondan sonra çarpı x i.
+
+197
+00:27:30,631 --> 00:27:50,111
+bu delta ve şeyin nasıl değişeceğini gösteriyor gradient descent'e göre. Ondan sonra bu learning rule ağırlıkların nasıl değişeceğini gösteriyor.
+
+198
+00:27:50,111 --> 00:28:11,451
+Şimdi burada dikkat ederseniz şu bizim y üstü i'miz yani hesaplanan çıkışımız eğer yi eksi yi üstü i büyüktür sıfır ise yani yi büyüktür yi üstü i ise ne oluyor? Ağırlık artıyor.
+
+199
+00:28:11,451 --> 00:28:23,411
+bakın buraya bakacak olursanız eğer y'i büyükse bu parantezin içi pozitif çıkacağından ötürü bir önceki ağırlık artmış oluyor.
+
+200
+00:28:23,411 --> 00:28:28,191
+Eğer yani şöyle oluyor.
+
+201
+00:28:29,331 --> 00:28:31,051
+Hocam bir tane parantez eksik mi acaba?
+
+202
+00:28:33,172 --> 00:28:36,672
+Evet eksik doğru söyledin. Şuraya bir parantez daha koyayım. Güzel.
+
+203
+00:28:36,672 --> 00:28:43,731
+Şimdi bakın şöyle birazcık şuraya yanıştırarak yapayım da çok iç içe geçti her şey.
+
+204
+00:28:43,731 --> 00:28:51,392
+Oraya dikkat ederseniz yi eksi y üstü i büyüktür sıfırsa bu ne demektir?
+
+205
+00:28:51,472 --> 00:28:57,731
+yi y üstü i'den büyük o zaman vt artı bir artacak demektir.
+
+206
+00:28:57,731 --> 00:29:11,831
+demektir. Değil mi? Eğer Yi eksi, Yi üstü küçüktür sıfırsa VT artı bir azalacak demektir. Ağırlıklarım değişiminden kastettiğimiz şey bu.
+
+207
+00:29:11,831 --> 00:29:40,131
+Ağırlıklarım şey delta V yani hata aslında hesabı çünkü aslında şurada sizin y-fx-i dediğiniz şey yani y-i neye eşit aslında ve transpose x-i'ye eşit vektör oldukları için yani x-i girişin aslında bir vektör değil mi işte boy, yaş, kilo falan kaç tane özellik varsa bir vektör.
+
+208
+00:29:40,131 --> 00:29:55,691
+Dolayısıyla bu bir vektör olduğu için ağırlıkta bir vektör. Yüzyı V transpoze X'i olarak tek boyutlu matris gibi düşünün. Buna eşit. Yani V1 ile X1'in çarpımı artı V2 ile yani şunu diyeyim.
+
+209
+00:29:55,691 --> 00:30:00,671
+V'yi, X'i aslında bu.
+
+210
+00:30:00,831 --> 00:30:02,811
+Y eşittir bir denene V'yi, X'i.
+
+211
+00:30:03,311 --> 00:30:12,331
+Şimdi burada eğer hata yani istenilen çıkış bu, hesaplanan çıkış bu.
+
+212
+00:30:12,411 --> 00:30:17,091
+Bunların ikisinin farkı pozitifse ağırlığı arttıracaksınız demektir.
+
+213
+00:30:17,551 --> 00:30:20,551
+Eğer negatifse ağırlığı azaltacaksınız demektir.
+
+214
+00:30:20,551 --> 00:30:30,111
+Şimdi böyle iteratif olarak işlemi tekrar ediyorsunuz.
+
+215
+00:30:30,111 --> 00:30:33,811
+Nereye kadar? Şimdi orada genellikle yapılan şey
+
+216
+00:30:40,531 --> 00:30:50,671
+hata belli bir epsilon, konvergence dediği şey hata belli bir epsilon'un altına düşene kadar yola devam etmektir.
+
+217
+00:30:51,531 --> 00:30:59,471
+Bazılarında geçen hafta bunu konuşmuştuk, yok 10 bin adım yap falan filan gibi şeyler de olur, hesaplar da olur.
+
+218
+00:31:03,331 --> 00:31:05,931
+Buraya kadar sormak istediğiniz bir şey var mı?
+
+219
+00:31:15,892 --> 00:31:22,892
+yapmak istediğimiz bir şey var mı? Peki...
+
+220
+00:31:25,140 --> 00:31:34,619
+türenini alıp sıfır işlemiştik ya. Burada nerede kullandık onu? Biraz sesini şey yapabilir misin? Boğuluyor ben anlayamıyorum.
+
+221
+00:31:34,619 --> 00:31:44,859
+Fonksiyonun türenini alıp sıfır işlemiştik daha önce söylemiştiniz de. Bu kodda kullanmadık sanırsam. Ne demiştik? Yani vallahi inan ki anlayamıyorum.
+
+222
+00:31:45,640 --> 00:31:51,879
+Hocam şimdi farklarını almıştık daha sonra bunun türeninin sıfır olduğu noktada minimum nokta demiştik.
+
+223
+00:31:52,579 --> 00:31:54,859
+Evet. Ama burada kullanmadık onu.
+
+224
+00:31:55,140 --> 00:31:56,299
+Ben mi göremedim?
+
+225
+00:31:57,919 --> 00:32:20,019
+Şöyle hata aslında şöyle haklısın gradiente göre aslında onu yazmak istemedim de o yüzden uzun olacağı için i eşittir bir denene yi eksi b transpoze eksi'nin karesi hata aslında şöyle
+
+226
+00:32:20,019 --> 00:32:31,719
+1 bölü 2, Yi eksi, Fxi, yani şey onun V transpoze yazayım ona öyle yine.
+
+227
+00:32:31,720 --> 00:32:40,099
+ve transpoze X'in karesi
+
+228
+00:32:40,099 --> 00:32:54,160
+şu inci hata, yani şey, yani şey, inci ağırlık, yani T şöyle diyeyim ya da T artı 1 diyeyim de kapa karışması.
+
+229
+00:32:57,811 --> 00:33:02,011
+aslında şöyle
+
+230
+00:33:03,188 --> 00:33:04,928
+Türev alıyorsun ya
+
+231
+00:33:29,332 --> 00:33:42,111
+yani onun türevini alacaksın. Aslında o yüzden görmüyorsun. Şunun türevini alıyorsun. Türevi sıfıra eşitliyorsun ki hata minimize etsin. Onun türevini aldığında da şöyle bir şey oluyor.
+
+232
+00:33:42,111 --> 00:34:07,192
+yi eksi yani türevini alıp sıfıra eşitlediğinde fx yani şöyle yi eksi ve transpoze x i çarpı şurada bak şey var ya x i o türevden dolayı geldi buraya.
+
+233
+00:34:07,451 --> 00:34:09,071
+Anladım hocam şimdi gördün.
+
+234
+00:34:09,071 --> 00:34:35,391
+Tamam mı? Yani ben onu şey yapmak için anlatmıyorum. Özellikle çünkü orada bir kafa falan karışıyor. O yüzden sadece şey diyerek geçtim. Türevi sıfıra eşitlerseniz hatayı minimize edersiniz dedim. Türevini almak dediğimiz şey şu aslında. Bunun türevini aldığında da burada şu x'i oradan geldi zaten. Türevden geldi. Türevini alıp sıfıra eşit diyorsunuz.
+
+235
+00:34:35,391 --> 00:34:44,651
+sorduğum için teşekkür ederim. Hatayı bu şekilde şey yapmış oluyorsunuz, minimize etmiş oluyorsunuz. Başka soru var mı aklınıza gelen?
+
+236
+00:34:53,876 --> 00:34:55,876
+Peki
+
+237
+00:35:02,036 --> 00:35:13,036
+dediğim gibi alfayı şey alabiliriz, onu söyledim. Bu fixed alabiliriz.
+
+238
+00:35:13,876 --> 00:35:26,395
+sıfırla bir arasında veya şey olabiliriz, bir bölü iyi olabiliriz. Bu şekilde şey olmasını sağlayabiliriz.
+
+239
+00:35:28,975 --> 00:35:38,655
+Yavaş öğrenmesini sağlayabiliriz. Peki o zaman şey yapalım, kırk olmuş. Devam etmeden önce bir on beş dakika ara verelim.
+
+240
+00:35:38,655 --> 00:35:44,815
+çay falan içersiniz. Şimdi sabahleyin şey yapamadıysanız, apar topar hazırlanamadıysanız.
+
+241
+00:35:45,595 --> 00:35:48,455
+10.40, 11.05 kala devam ederiz. Olur mu?
+
+242
+00:35:50,255 --> 00:35:50,935
+Tamamdır.
+
+243
+00:35:50,935 --> 00:35:51,335
+Dur hocam.
+
+244
+00:35:52,255 --> 00:35:52,855
+Teşekkürler.
+
+245
+00:52:57,364 --> 00:53:04,723
+Evet arkadaşlar, buradasınız değil mi? Ekranı paylaşıyorum tekrardan. Evet hocam.
+
+246
+00:53:12,820 --> 00:53:35,259
+Evet, şimdi devam edelim. Şimdi o zaman benim eğer özetleyecek olursa x1'den xd'ye bir input vektörüm varsa bu number of features d tane özellikten oluşan fx neye eşit oluyor o zaman?
+
+247
+00:53:35,259 --> 00:53:50,680
+V0, X0 artı V1, X1 artı V'de X'de Y eşit oluyor ve biz bunu V transpoze X olarak gösteriyoruz.
+
+248
+00:53:50,680 --> 00:54:14,260
+Burada şöyle genel gösterim. Bu V0 genelde X0 eşittir 1 ve her zaman X0 giriş değeri 1 olan bir sanki şeymiş gibi özellikmiş gibi kabul edilir.
+
+249
+00:54:14,259 --> 00:54:25,839
+yani kodlama açısından kolay şey yapılsın, kodlansın diye bu benim X1 örneğim ve buna bağlı şey özelliğim ve ona bağlı olan V1 ağırlık değerim.
+
+250
+00:54:25,839 --> 00:54:44,919
+işte x2 ve 10'a bağlı v2 bu şekilde benim d tane x girişim toplanıyor ve çıkışta bu x girişime ve x girişimden oluşan v ağırlıklarıma bağlı bir şey elde edilmiş oluyor.
+
+251
+00:54:44,919 --> 00:54:47,759
+burada input vektörü bu.
+
+252
+00:54:49,360 --> 00:54:50,419
+Dağıt kutum.
+
+253
+00:54:51,339 --> 00:54:52,639
+Çıkış elde edilmiş oluyor.
+
+254
+00:54:52,639 --> 00:55:08,559
+Yani burada bizim yaptığımız linear regresyonda yaptığımız iş ağırlıkları update ederek bu girişlerden doğru çıkışa ulaşmayı yani hatayı minimize edecek.
+
+255
+00:55:08,559 --> 00:55:18,959
+istenen çıkışa en az hatayla ulaşmamızı sağlayacak y çıkışlarını hesap etmek üzere.
+
+256
+00:55:18,959 --> 00:55:24,120
+Şimdi burada şey yaparken gradient descent de ne için kullanıyoruz?
+
+257
+00:55:24,260 --> 00:55:30,919
+Az önce konuştuğumuz gibi gradient descent'i hatayı minimize etmek için kullanıyoruz.
+
+258
+00:55:31,059 --> 00:55:35,120
+Şimdi orada da onu da özetleyecek olursak.
+
+259
+00:55:35,120 --> 00:55:53,500
+sonuçta bu bizim ağırlıklarımızsa bu da bizim kostumuzsa hatamızsa yani şurada bizim yapmaya çalıştığımız şey şurada gradient şöyle dur bir dakika.
+
+260
+00:55:53,500 --> 00:55:55,980
+Şunu çizip düzelteyim.
+
+261
+00:56:05,076 --> 00:56:05,675
+Şöyle
+
+262
+00:56:05,675 --> 00:56:10,955
+Gradient buna dik böyle
+
+263
+00:56:10,955 --> 00:56:18,076
+Ben işte yola şuradan başladım
+
+264
+00:56:18,076 --> 00:56:20,515
+Şöyle
+
+265
+00:56:26,068 --> 00:56:44,727
+sonra böyle yavaş yavaş şuradan hatayı küçültmeye çalışıyorum. Şimdi bunu yaparken, gradient descent kullanırken yapabileceğiniz 3 farklı yöntem var. Birincisi batch gradient descent.
+
+266
+00:56:49,844 --> 00:57:11,563
+Şimdi burada yaptığımız şey, bütün şeyleri alıyoruz. Eğitim örneklerinin tamamını alıyoruz. Bütün eğitim örnekleri için tek tek hata hesaplıyoruz. Ondan sonra da hatanın ortalamasını alarak ağırlıkları şey yapıyoruz. Update ediyoruz. Yani şöyle yapıyoruz.
+
+267
+00:57:11,563 --> 00:57:27,223
+İPOK dediğim şey bir tur yani işte bin tane örneğim varsa bin tane örneği için tek tek işlem yaptığımda bin örnek bittiğinde bir turu tamamlamış oluyorum.
+
+268
+00:57:27,223 --> 00:57:33,783
+Şimdi şöyle şurası da ortalama hata olsun.
+
+269
+00:57:34,603 --> 00:57:39,983
+İşte şöyle İPOK'lar arttıkça hata düşüyor.
+
+270
+00:57:39,983 --> 00:57:43,163
+Bunun dezavantajı ne olabilir sizce?
+
+271
+00:57:44,483 --> 00:57:52,024
+Yani yaptığım şey şu bin örneğim varsa bin örneğim için şey alıyorum nedir?
+
+272
+00:57:53,704 --> 00:58:03,644
+Hata hesaplıyorum tek tek bütün örnekler için ondan sonra da hataların ortalamasını alıp ağırlıkları bir ipop bittikten sonra update ediyorum.
+
+273
+00:58:03,763 --> 00:58:05,924
+Bunun sıkıntısı ne olabilir sizce?
+
+274
+00:58:10,003 --> 00:58:12,003
+çok fazla zaman gerekiyor.
+
+275
+00:58:13,203 --> 00:58:31,283
+Evet, eğer örnek sayınız çok fazlaysa, yani binlerce örneğiniz varsa şey olması gerekiyor, yani ağırlıkları, şey bin örneği, yani on bin örneği gösterdiniz, bir update ettiniz, on bin örneği gösterdiniz, bir daha update ettiniz.
+
+276
+00:58:31,283 --> 00:58:51,083
+ağırlıklar hem yavaş değişecek çünkü ortalama oluyorsunuz yani aslında şey değil hem yavaş değişecek hem de yani yavaş değişmesi derken işte bir adımda 3.1'dir bir adımda 3.2 oldu şeklinde ağırlıkların şeyi deltası küçük olacak.
+
+277
+00:58:51,083 --> 00:59:00,823
+Birincisi bu. İkincisi de bir update için bir bütün bir örneklerin var olan örneklerin gösterilmesi sisteme gerekecek.
+
+278
+00:59:01,283 --> 00:59:10,143
+Dolayısıyla bu batch gradient descent aslında birazcık şey çalışacak yani yavaş çalışacak.
+
+279
+00:59:10,283 --> 00:59:11,803
+Kullanılıyor mu? Kullanılıyor.
+
+280
+00:59:11,923 --> 00:59:18,184
+Eğer çok binler yani bir milyon örneğimiz yoksa şey kullanıyor.
+
+281
+00:59:18,283 --> 00:59:20,364
+Bu şimdi genel bir yaklaşım yalnız.
+
+282
+00:59:20,523 --> 00:59:28,343
+Mesela derin öğrenmede işte orada yapay nöron ağları da aslında gradient descent kullanıyor ağırlıkların apteti için.
+
+283
+00:59:29,044 --> 00:59:30,963
+Oralardaki sıkıntıyı düşünün.
+
+284
+00:59:31,283 --> 00:59:39,423
+yani şeylerde normalde linear regresyonda o kadar çok örnekle çalışmazsınız da oralarda da gradient descent kullanılıyor.
+
+285
+00:59:39,483 --> 00:59:43,444
+Oradaki sıkıntıyı düşünün bir milyon tane örnekle sistem eğitmeye çalışıyorsunuz.
+
+286
+00:59:43,803 --> 00:59:49,444
+Ağırlıkları eğer bu şekilde 5 gradient descent ile update ederseniz sıkıntı büyük olur.
+
+287
+00:59:49,444 --> 00:59:58,283
+Stokastik gradient descent ile yapılan şey her seferinde bir örneği gösterdik ağırlıkları update ediyoruz.
+
+288
+00:59:58,283 --> 01:00:20,104
+bir örneği gösterdik ağırlıkları update ediyoruz. Şimdi buradaki şeyde problemde aslında yani her örnekte ağırlık update etmek de çok şey değil. Bu da böyle böyle böyle böyle oluyor.
+
+289
+01:00:33,364 --> 01:00:42,204
+Burada her seferinde bir şey gösterdiğimiz için, örnek gösterdiğimiz için o da genellemeye gitmeye engel.
+
+290
+01:00:42,963 --> 01:00:46,843
+Global minimuma çok yaklaşık bir türlü global minimuma gidemiyor olabilir.
+
+291
+01:00:46,983 --> 01:00:49,704
+Her seferinde bir örnek gösteriyorsunuz çünkü öbüründe.
+
+292
+01:00:50,163 --> 01:00:58,223
+Genel durumun yani bir sistemin genel durumu görüp de şey yapmak mümkündü, ağırlıkları update etmek mümkündü.
+
+293
+01:00:58,223 --> 01:01:02,864
+Burada bir örnek gösterdiğiniz çat işte şey yükseliyor.
+
+294
+01:01:03,364 --> 01:01:04,923
+ne bileyim ağırlık değeri artıyor.
+
+295
+01:01:05,023 --> 01:01:07,143
+İkinci örneği gösterdiğiniz ağırlık değeri düşüyor.
+
+296
+01:01:07,244 --> 01:01:09,084
+Üçüncüyü gösterdiğiniz düşüyor.
+
+297
+01:01:09,204 --> 01:01:11,084
+Dördüncüyü gösterdiğiniz artıyor gibi.
+
+298
+01:01:11,564 --> 01:01:15,544
+Aslında stokastik gradient descent'in de böyle bir sıkıntısı var.
+
+299
+01:01:15,643 --> 01:01:17,264
+Yani dalgalana dalgalana gidiyor.
+
+300
+01:01:17,463 --> 01:01:18,463
+Bu da iyi bir şey değil.
+
+301
+01:01:19,663 --> 01:01:26,143
+Bunların yerine önerilen mini-beç gradient descent.
+
+302
+01:01:26,743 --> 01:01:29,704
+Mini-beç gradient descent'te yapılan şey şu.
+
+303
+01:01:30,503 --> 01:01:32,904
+Bir şey seçiyorsunuz.
+
+304
+01:01:32,903 --> 01:01:34,523
+İşte K seçiyorsunuz.
+
+305
+01:01:34,863 --> 01:01:38,383
+Diyelim ki işte K'nız 100, 11 tane de örneğimiz var.
+
+306
+01:01:38,783 --> 01:01:43,383
+100 örnekte bir ağırlıkları update ediyorsunuz ortalama hatayla.
+
+307
+01:01:43,783 --> 01:01:46,623
+Yani 100 örnek için tek tek hata hesaplıyorsunuz.
+
+308
+01:01:46,623 --> 01:01:51,803
+Oradan işte bizim şurada gördüğümüz aslında şey.
+
+309
+01:01:54,943 --> 01:01:58,123
+Ağırlıkları yani bu şey olana.
+
+310
+01:01:58,123 --> 01:01:59,963
+stokastik
+
+311
+01:01:59,963 --> 01:02:01,843
+gradient percent bu ağırlıkları
+
+312
+01:02:01,843 --> 01:02:03,703
+her seferinde update ediyor.
+
+313
+01:02:04,723 --> 01:02:05,323
+Şeyde
+
+314
+01:02:05,323 --> 01:02:07,963
+batch gradient percentte
+
+315
+01:02:07,963 --> 01:02:09,923
+şeyler hata
+
+316
+01:02:09,923 --> 01:02:12,383
+hesaplanıyor. Ortalama sağlamı
+
+317
+01:02:12,383 --> 01:02:14,443
+bir seferde bütün örnekler
+
+318
+01:02:14,443 --> 01:02:16,143
+bittikten sonra update ediliyor ve
+
+319
+01:02:16,143 --> 01:02:17,583
+ikinci tura geçiliyor.
+
+320
+01:02:18,103 --> 01:02:19,943
+Mini batch'te yapılan ise diyelim ki
+
+321
+01:02:19,943 --> 01:02:22,003
+K100 100 tane örnek seçtiniz. Aslında
+
+322
+01:02:22,003 --> 01:02:23,943
+sizin 1 milyon tane örneğimiz vardı.
+
+323
+01:02:24,423 --> 01:02:26,063
+100 örnekte bir ortalama
+
+324
+01:02:26,063 --> 01:02:28,103
+hata ile ağırlıkları
+
+325
+01:02:28,103 --> 01:02:30,443
+update ediyorsunuz. Bunu yaptığınız
+
+326
+01:02:30,443 --> 01:02:31,463
+zamanda
+
+327
+01:02:31,463 --> 01:02:34,603
+hem daha hızlı
+
+328
+01:02:34,603 --> 01:02:36,523
+şeye ulaşmış oluyorsunuz
+
+329
+01:02:36,523 --> 01:02:38,224
+global minimum'a ulaşmış
+
+330
+01:02:38,224 --> 01:02:40,663
+oluyorsunuz. Hem de
+
+331
+01:02:40,663 --> 01:02:42,224
+stokastik gradientin
+
+332
+01:02:42,224 --> 01:02:44,423
+yarattığı gereksiz
+
+333
+01:02:44,423 --> 01:02:46,323
+dalgalanmadan
+
+334
+01:02:46,323 --> 01:02:47,843
+kurtulmuş oluyorsunuz. Hem de
+
+335
+01:02:47,843 --> 01:02:49,304
+batch gradientin yarattığı
+
+336
+01:02:49,304 --> 01:02:52,143
+bütün örnekleri gösterdiğim ağırlıkları
+
+337
+01:02:52,143 --> 01:02:54,143
+update ettiğinin yavaşlığından kurtulmuş
+
+338
+01:02:54,143 --> 01:02:56,143
+oluyorsunuz. Bu anlaşıldı mı acaba?
+
+339
+01:02:56,143 --> 01:02:59,043
+yani tavsiye edilen mini-beç gradyantlı sende.
+
+340
+01:03:06,804 --> 01:03:08,083
+on yözeen.
+
+341
+01:03:14,228 --> 01:03:16,228
+küçük grup seçtiniz
+
+342
+01:03:24,148 --> 01:03:31,347
+bununla eğittiğiniz sistemi
+
+343
+01:03:33,300 --> 01:03:36,059
+mean gradient'ı hesapladınız.
+
+344
+01:04:10,675 --> 01:04:31,615
+Burada da tabii bir şey oluyor aslında. Mini-beach gradient'te de dalgalanma oluyor ama bunun şeyi daha iyi. Yani o da böyle hani böyle dalgalana dalgalana şey yapacak, öğrenecek ama stokastikten ve batchten daha efektif bir şey. Buraya kadar sormak istediğiniz bir şey var mı?
+
+345
+01:04:32,715 --> 01:04:33,875
+Bir şey sorabilir mi hocam?
+
+346
+01:04:34,395 --> 01:04:35,195
+Sorabilirsin.
+
+347
+01:04:35,195 --> 01:04:43,856
+Mini 5'te aldığımız örneğin 100 input değerini, 100 değeri değiştiriyoruz değil mi her seferinde?
+
+348
+01:04:45,275 --> 01:04:46,415
+Her hata hesabından sonra.
+
+349
+01:04:46,415 --> 01:04:51,595
+Evet, evet. Yani şöyle bir şey yapıyorsun. Diyelim ki 1000 tane örneğin var.
+
+350
+01:04:53,216 --> 01:04:55,135
+150 gruplar halinde hata hesaplıyoruz.
+
+351
+01:04:55,415 --> 01:05:01,856
+Aynen öyle. Böyle 150 gruplar yapıyorsun. Bununla yaptın. Burada min error hesapladın.
+
+352
+01:05:01,856 --> 01:05:12,716
+buna göre şeyi update etti. Ondan sonra geçtim buraya bunları aldın. Bununla hesapladın. Aynen öyle.
+
+353
+01:05:14,376 --> 01:05:29,235
+Şeydeki de yani mesela stokastikte yaptığımızdaysa şey yapıyorduk yani tek tek bütün örnekler için yani şu aslında stokastik bizim şuradaki yaptığımız stokastik gradient.
+
+354
+01:05:29,235 --> 01:05:49,695
+örneği gösteriyorsun sisteme hataya göre ağırlıkları update ediyorsun. Bu bizim yaptığımız stokastik gradient. İkinci yapabileceğin ağırlıkları update etmeyip burada hatayı hesaplayıp bütün hepsi bittiğinde bir turun tamamı bittiğinde anladım demek istediğini şey söylüyorsun sen.
+
+355
+01:05:49,695 --> 01:06:01,195
+5 gradient'te aynen 10.000 örneği gösterdin, update ettin. 10.000 örneği tekrar gösteriyorsun. Aynı 10.000 örneği tekrar gösteriyorsun. Onu demek istedim değil mi? Onu demek istedim.
+
+356
+01:06:01,975 --> 01:06:08,895
+Mini 5'teki yüzlük grupları nasıl alıyoruz diye sordum. Yani tek bir grup alıp sürekli onun üzerine mi hata hesaplıyoruz yoksa?
+
+357
+01:06:09,515 --> 01:06:10,075
+Yok, hayır.
+
+358
+01:06:10,415 --> 01:06:11,515
+İkinci yüz, üçüncü yüz.
+
+359
+01:06:12,355 --> 01:06:19,675
+Tamam. Doğru. Aynen öyle. 5 gradient'te ise aynısın. Yani 10.000'i aldın. Ondan sonra dur onu da böyle
+
+360
+01:06:19,675 --> 01:06:28,175
+böyle göstersem yanlış gözlü anlaşılacak. 10.000'i aldın, bitti, başa dönüyorsun, tekrar aynı 10.000'le hata hesabı yapıyorsun.
+
+361
+01:06:28,875 --> 01:06:34,675
+Aynen bunda 100'ü aldın, bir sonraki 100'e geçtin, bir sonraki 100'e geçtin, hepsi bitti tekrar burada da başa dönüp.
+
+362
+01:06:35,955 --> 01:06:45,795
+Yeniden şey çünkü eninde sonunda o da bitecek çünkü. Eğer hala convergence durumu olmadıysa, hata minimize edilmediyse başa dönüp oradan devam ediyorsun.
+
+363
+01:06:45,795 --> 01:06:47,976
+Var mı burada bir sıkıntı başka aklınıza takılan?
+
+364
+01:06:49,675 --> 01:06:59,636
+Şimdi bunun tabi olayı şey için olması, lineer ayrılabilen şeyler için olması nedir?
+
+365
+01:07:00,795 --> 01:07:04,776
+Durumlar için kullanılan bir regresyon modeli olması.
+
+366
+01:07:04,776 --> 01:07:16,175
+Şimdi çok kullanılan aslında pek çok şey tarafından nedir?
+
+367
+01:07:16,175 --> 01:07:30,916
+eğit, öğrenme yapan kişi, yani kişi demeyeyim de veya işte öğrenme işleminde kullanılan en çok kullanılan modellerden birisi lojistik regresyon modeli.
+
+368
+01:07:30,916 --> 01:07:39,536
+Lojistik regresyon aslında şeyden ötürü tercih edilir. Çok basit birincisi. İkincisi de bu bir sınıflandırma.
+
+369
+01:07:39,536 --> 01:07:59,536
+öncelikle onu söyleyeyim şey değil lineer regresyon gibi bir continuous çıkış vermiyor size işte evin fiyatı işte şeydeki Beşiktaş'taki evin fiyatı 2020 yılında işte 3 milyon Türk lirası olacak gibi bir
+
+370
+01:08:00,755 --> 01:08:15,255
+değer veya işte bu filmin reytingi 4.5 olabilir gibi bir değer vermiyor size. Bu da aslında bir sınıflandırma, lojistik regresyonda bir sınıf veriyor size. Fakat bu da şeyde kullanabiliyorsunuz.
+
+371
+01:08:15,255 --> 01:08:27,796
+işte çıkış değeri 0 ile 1 arasında bir değer olduğu için işte 0.8 0.3 gibi bir değer verdiğinden özellikle şeyler bunu çok tercih ediyorlar.
+
+372
+01:08:28,735 --> 01:08:35,776
+Nedir? Skor görmek isteyenler, çıkışta skor görmek isteyenler bu yöntemi çok tercih ediyorlar.
+
+373
+01:08:35,776 --> 01:08:49,575
+mesela işte fraud detection yapılacak bankada orada diyor ki işte ben skor bilmek istiyorum yani fraud tür değildir dediğinizde bu kadar kesin bir şey istemiyorum.
+
+374
+01:08:49,855 --> 01:09:03,276
+Mesela bu 0.4 ihtimalle yani ihtimalle değilim de bunun fraud değeri 0.4'tür bir skor istiyorum veya bunun fraud değeri 0.9'dur skor istiyorum.
+
+375
+01:09:03,276 --> 01:09:05,336
+ben bu skora karar vereceğim diyorlar.
+
+376
+01:09:05,755 --> 01:09:12,436
+Veya ne bileyim işte işe alımlarda bu kişinin işe alınıp alınmamasının doğru olduğuna karar verilecek.
+
+377
+01:09:12,995 --> 01:09:19,016
+İşte önceki yıllardaki tecrübelere göre işe alınan kişilerin şeyleri var.
+
+378
+01:09:19,016 --> 01:09:22,235
+Bu çok kullanılıyor bu ara şeylerde, insan kaynaklarında.
+
+379
+01:09:24,535 --> 01:09:27,175
+Bu TÜBİTAK-TEDEF hakemlikleri yapıyoruz ya biz.
+
+380
+01:09:28,336 --> 01:09:32,135
+Yani en az 4-5 tane böyle projeye hakemlik yaptım ben.
+
+381
+01:09:32,135 --> 01:09:35,595
+ve hep de oralarda lojistik regresyon kullanıyorlardı.
+
+382
+01:09:36,075 --> 01:09:42,895
+Yapılan iş şu, işte önceki işe alımlardaki kişilerin profillerini giriş olarak kullanıyorlar.
+
+383
+01:09:43,535 --> 01:09:52,575
+Ondan sonra işte yeni işe alımdaki kişinin profiline göre bunun işe alınmasının uygunluğuna dair bir skor belirliyorlar.
+
+384
+01:09:52,575 --> 01:10:00,255
+Şimdi size şunu soracağım, bunu o hakemliklerde anlatanlara da soruyorum.
+
+385
+01:10:00,255 --> 01:10:20,795
+Çünkü sizce bu skor çıkışı uygun mudur değil midir? Ne düşünürsünüz bu skor çıkışı hakkında? Yani onun yerine işe al veya alma mı dese daha iyiydi, skor vermesin daha iyi.
+
+386
+01:10:20,795 --> 01:10:30,455
+al ya da alma çok daha kesin olur ve sanki hata payı daha yüksek olur bir skor olması bence daha iyi
+
+387
+01:10:30,455 --> 01:10:35,835
+peki başka yorum alayım sonra ikinci soruya geçeceğim
+
+388
+01:10:35,835 --> 01:10:47,295
+al almamı daha iyi skor mu daha iyi? lütfen yani şey yapma çıkmayın fikir söyleyeyim şey değil doğru yanlış yok çünkü aslında onu da söyleyeyim bu arada
+
+389
+01:10:47,295 --> 01:11:08,815
+Ben de skor derdim. Çünkü en son bittiğinde sıraladığında en yüksek skora sahip olanlara öncelik veriyorsun. Ama al alma dediğinde mesela 10 kişi 10 kişi al dedi, 10 kişi alma dedi. Öbüründe ise 10 üstünden 8'leri alırsın. Daha çok kategori oluşturmuş olursun diye düşünüyorum.
+
+390
+01:11:10,215 --> 01:11:15,655
+Güzel. Peki Fırat için ne dersin? Onun için de yorum yapar mısın? Fırat mı değil mi dediğinde ne dersin?
+
+391
+01:11:20,724 --> 01:11:23,543
+yani kredi kartı dinliyorum.
+
+392
+01:11:24,623 --> 01:11:26,363
+Onu ne demek hocam? Onu çok anlamadım.
+
+393
+01:11:27,003 --> 01:11:34,283
+Mesela kredi kartı, sahpe karında şey, bankalar bunu çok kullanıyorlar. Yine bu denetlemelerde falan hani bittiğimde orada da bunu görüyorum.
+
+394
+01:11:34,283 --> 01:11:48,943
+Çünkü onların şey alışkanlıkları var, daha önceden fraat-fraat olmama kararını elle kişiler tarafından verdiklerinde şey yapıyorlar, bir skor veriyorlar, skor hesaplıyorlar elle, işte kurallar var ellerinde.
+
+395
+01:11:48,943 --> 01:11:56,783
+o kurallara göre bir skor hesaplıyorlar. O skora göre diyor ki bu sahte kullanımdır diyor veya gerçek kullanımdır diyor.
+
+396
+01:11:56,783 --> 01:12:18,323
+Şimdi bunu modele dönüştürdüğümde de diyor ki işte lojistik regresyonla ben bunu modele dönüştürdüğümde de şeyi görüyorum işte mesela 0.8 bu şeydir skoru 0.8 fraudtur kredi kartı sahtekarda bu yapılan işlem fraudtur diyor veya işte 0.3 fraud değildir diyor.
+
+397
+01:12:18,323 --> 01:12:29,023
+ben de diyorum ki sizce bu şekilde 0.8-0.3 falan demesi mi iyi yoksa siz şeyini tercih ederdiniz? Fraud non-fraudunu tercih ederdiniz?
+
+398
+01:12:30,404 --> 01:12:38,503
+Ben hep skoru tercih ederdim ama tabii skor olunca biraz daha insan kararı giriyor işin içine. Sonra bir daha değerlendirmen gerekiyor.
+
+399
+01:12:38,503 --> 01:12:45,683
+Ama şey olabilir mesela normalde standartta işte mesela 10 üstünden hep bu değer 7'dir.
+
+400
+01:12:45,783 --> 01:12:49,444
+Hani ortalama olarak 7'nin üstünde gerçekten prağıt oluyordur.
+
+401
+01:12:50,023 --> 01:12:53,624
+O zaman da hani kendi kararıma göre 7'yi sınır belirlerim.
+
+402
+01:12:53,743 --> 01:12:55,503
+Altını ya da üstünü kendim ayırırım.
+
+403
+01:12:57,043 --> 01:12:58,343
+Çok güzel. Kimdi konuşan?
+
+404
+01:12:58,923 --> 01:12:59,543
+[öğrenci] ben.
+
+405
+01:13:00,203 --> 01:13:02,404
+[öğrenci]. Peki. Başka fikir?
+
+406
+01:13:02,404 --> 01:13:14,963
+Aslında bence bu yaptığımız işlemin önemine göre değişebilir. Mesela diğer örnek kişi alırken evet önceliğin önemi var. Bu yüzden de skor önemli.
+
+407
+01:13:14,963 --> 01:13:25,084
+Hani işte beş kişi alacaksan on kişiyi al gibi bir sonuç tutarsa o kadar belki doğru bir sonuç alamayabiliriz. Hangisinin skoru daha yüksek? Hangisini alırsam daha iyi olur?
+
+408
+01:13:25,084 --> 01:13:39,804
+Fırat mesela o Fırat ise Fırat. Yani biri daha az Fırat, biri daha çok Fırat gibi değerlendirme yapamayız bence. O yüzden ondan Fırat ya da Fırat bir daha mantıklı.
+
+409
+01:13:40,643 --> 01:13:50,744
+Evet, son iki konuşan [öğrenci] konuştu değil mi şimdi? Biraz evvel. [öğrenci] senin adını yazmadı, ilginçtir. Benim bayağı bir enteresan şeylerim oluyor burada.
+
+410
+01:13:50,744 --> 01:13:51,464
+görülmeler.
+
+411
+01:13:52,324 --> 01:13:53,824
+Sunma ilgili tecrübelerim oluyor.
+
+412
+01:13:54,363 --> 01:14:00,304
+Aslında ikinizinkisi de doğruydu ama [öğrenci] aslında benim düşündüğüm şekilde ifade etti.
+
+413
+01:14:00,304 --> 01:14:02,204
+Şimdi buradaki sıkıntı şu.
+
+414
+01:14:02,804 --> 01:14:08,604
+Eğer gerçekten şey varsa hani böyle işte 10 kişi işe alacağım, 50 kişi başvurdu.
+
+415
+01:14:09,184 --> 01:14:12,304
+Bunları bir şekilde sıralamam gerekiyor diyor iseniz.
+
+416
+01:14:12,884 --> 01:14:15,164
+Evet orada skorun faydasını görebilirsiniz.
+
+417
+01:14:15,363 --> 01:14:18,484
+Dediğiniz gibi yüksek sporları sıralarsınız, şey yaparsınız.
+
+418
+01:14:19,063 --> 01:14:20,343
+Ama şöyle düşünün.
+
+419
+01:14:20,743 --> 01:14:26,683
+Bir kişi işe alacaksınız diye düşünün veya fraud-non-fraud meselesini düşünün.
+
+420
+01:14:27,063 --> 01:14:35,663
+Orada şöyle bir şey oluyor aslında sıkıntı şu diyelim ki size 0.7 verdi işe alımı yapacağınız kişiyle ilgili.
+
+421
+01:14:37,083 --> 01:14:38,383
+Alalım mı almayalım mı?
+
+422
+01:14:38,903 --> 01:14:45,023
+Yani aslında burada biz bir binary karar veriyoruz alalım veya almayalım diye fraudtur veya non-fraudtur diye.
+
+423
+01:14:45,023 --> 01:14:49,143
+Şey dediğinizde yine orada insan tecrübesi giriyor işin içine.
+
+424
+01:14:49,143 --> 01:14:56,203
+yani o skoru tamam ben göreyim de ben karar vereyim dediğimizde yine insan tedbesi giriyor işin içine.
+
+425
+01:14:56,203 --> 01:14:59,703
+Ki bu bizim çok da tercih ettiğimiz bir şey mi ona bakmamız lazım.
+
+426
+01:14:59,843 --> 01:15:02,923
+Çünkü insan dediğimiz zaman şey olmuş oluyor.
+
+427
+01:15:03,104 --> 01:15:07,963
+Yani mesela işte ben diyelim ki biraz daha katı düşünebilirim mesela.
+
+428
+01:15:08,183 --> 01:15:10,263
+0.7 ise almıyorum diyebilirim.
+
+429
+01:15:10,644 --> 01:15:23,943
+bir başkası da diyebilir ki, aa yani 0.7 işe 0.5'i aşmış, yani şeye daha yakın, işe al şeyine daha, çıkışına daha yakın, o zaman biz bunu alalım diyebilir.
+
+430
+01:15:24,783 --> 01:15:31,963
+Dolayısıyla şeyi kullanırken dikkat etmeniz lazım, bu skor meselesini kullanırken dikkat etmeniz lazım.
+
+431
+01:15:31,963 --> 01:15:47,743
+Eğer orada bir şey girecekse işin içine muhakeme, farklı kişilerin farklı çıkış değerlendirmesi vs. girecekse bence skor doğru değil ama dediğiniz şekilde [öğrenci]'nin söylediği aslında o içten güzel bir örnekte.
+
+432
+01:15:47,743 --> 01:15:57,644
+hani ben sıralayacaksam tamam o zaman mantıklı yani buna dikkat etmeniz lazım. Ben şeyi çok doğru bulmuyorum her noktada. Skor kullanılmasını doğru bulmuyorum.
+
+433
+01:15:57,783 --> 01:16:10,423
+Çünkü yani skora bakıp da 0.7 ise bilmem fraut sayarım, 0.6 ise fraut sayman falan diye insan kararına giriyorsa iş o zaman tehlikeli.
+
+434
+01:16:10,423 --> 01:16:13,883
+o zaman şunu yapabilirsin, o zaman da şuna bakmamız gerekir.
+
+435
+01:16:14,783 --> 01:16:16,224
+Trash oldu nasıl belirleyeceğiz?
+
+436
+01:16:16,343 --> 01:16:23,864
+Şimdi biraz tersten gittim anlatmayı ama lojistik regresyon dediğim gibi sıfırla bir arasında çıkış üreten bir sınıflandırıcı aslında.
+
+437
+01:16:24,943 --> 01:16:34,504
+Diğer hani sınıflandırıcıların bir kısımdan farkı, diğer yani bizim şimdiye kadar gördüğümüz işte Nayibayez olsun,
+
+438
+01:16:34,504 --> 01:16:39,603
+daha en yakın komşuluk olsun, karar ağacı olsun biz onlar da kesin kararlar veriyorduk.
+
+439
+01:16:39,603 --> 01:16:50,523
+yani diyorduk ki işte bu A sınıfına aittir, bu da B sınıfına aittir diyorduk. Bunun diğerlerine göre farkı 0 ile 1 arasında bir değer üretiyor.
+
+440
+01:16:52,584 --> 01:17:02,283
+Eğer binary classification için kullanılıyor zaten. Mesela işte binary classification'a göre diyelim ki fraud, non-fraud değerlendiriyorsun.
+
+441
+01:17:02,283 --> 01:17:12,283
+diyebiliyorsun ki örneklerinin durumuna göre sıfıra yakınsa fraktör, öbürüye yakınsa nafra attır veya tam tersi.
+
+442
+01:17:12,283 --> 01:17:20,283
+Yani böylece bir tarafa yakınlığına göre şeye karar verebiliyorsun. Altın ne olacağına karar verebiliyorsun.
+
+443
+01:17:20,744 --> 01:17:27,843
+O zaman mantıken aslında 0.5'den büyükler bir sınıfa, küçükler de diğer sınıfa aittir diyebilirsin.
+
+444
+01:17:27,843 --> 01:17:41,504
+veya şimdi burada sizin söylediğiniz şekilde yani sizin bizim hepimizin o işte skoru kişilerin inisiyatifine bırakmak yerine diyebiliriz ki
+
+445
+01:17:41,504 --> 01:17:48,724
+acaba skor ne olduğunda eşik seviyesine ne alırsak en güzel sonuçları bulmuşuz.
+
+446
+01:17:48,724 --> 01:18:10,423
+yani orada da şuna gidebiliriz kişilerin işe alınıp alınmaması ile ilgili şeylerde bir de işin içine şeyi katabiliriz yani eşit seviyesi ne olursa daha doğru seçimler yapılmış ona bakabiliriz.
+
+447
+01:18:10,423 --> 01:18:34,524
+yani nedir? Mesela 0.6 idi eşik seviyesi. Skoru 0.6 idi. İşe aldım. Bir sene sonra memnun olmadım. 0.7 idi. İşe aldım. Memnun olmadım. Ama 0.8 idi. Öyle işte 100 kişiyi işe aldığında bu hep böyle 0.8'i geçenlerin işe alımından memnun oldum.
+
+448
+01:18:34,523 --> 01:18:46,683
+o zaman demek ki benim eşik seviyem 08 olmalı gibi daha yine insan muhakemesinden, insan kararından kurtaracak bir şey yapılabilir.
+
+449
+01:18:47,083 --> 01:18:51,923
+Diyeceksiniz ki memnun oldum olmadım da bir insan muhakemesi değil midir?
+
+450
+01:18:52,243 --> 01:18:53,803
+Ama orada etiketliyorsunuz.
+
+451
+01:18:54,243 --> 01:18:55,263
+Aslında bu da doğru.
+
+452
+01:18:55,783 --> 01:18:57,563
+Etiketlemede de en büyük sıkıntı.
+
+453
+01:18:57,563 --> 01:19:05,584
+insanların etiketlenen verilerde farklılıklar olabiliyor.
+
+454
+01:19:06,292 --> 01:19:35,271
+mesela bu çok klasik hikaye şu anda en çok yapılan yine iş yerlerinde en çok kullanılan şey sentiment analizi. İşte müşterilerin yazdığı yorumları olumlu olumsuz diye sınıflandır. Orada neye olumlu diyeceksiniz, neye olumsuz diyeceksiniz? Kim etiketliyor onları? İnsanlar etiketliyor. Etiketlerken de tabii ki yine orada insanların kendine göre eşik seviyeleri var. Onlar eşinin içine giriyor.
+
+455
+01:19:35,271 --> 01:19:52,351
+mesela işte birinin olumlu vurduğunu öbür nötr diyebiliyor falan yani biraz karışık ama sonuçta benim burada size vurduğumak istediğim buradaki skorunu kullanırken dikkat etmeniz lazım.
+
+456
+01:19:52,351 --> 01:20:02,731
+Yoksa makine öğrenmesinin size sağladığı genellemeye gitme işini bozabilirsiniz. İnsan faktörünü dikkatli kullanmazsanız.
+
+457
+01:20:02,731 --> 01:20:07,132
+Peki, lojistik regresyon, buyurun
+
+458
+01:20:07,132 --> 01:20:12,571
+Ben bir şey sorabilir miyim? Bu iş yapış örneklerinde böyle bir şey kullanılıyor dediniz ya
+
+459
+01:20:12,571 --> 01:20:17,051
+Kullanılıyor değil de, yapıyor firmalar bunu çok yapıyorlar, onu demek istedim
+
+460
+01:20:17,051 --> 01:20:20,211
+Yani kullanıyorlar mı o kısmına inan ki ben de biliyorum
+
+461
+01:20:20,211 --> 01:20:25,751
+Şey ilginç, mesela bir kişiden çok büyük bir beklentiyle alırsın mesela
+
+462
+01:20:25,751 --> 01:20:28,331
+İşte kendini puanlamasını istersin bir şeyde
+
+463
+01:20:28,332 --> 01:20:49,812
+mesela 10 üstünden kendine 10 der belki ama o zaman daha çok beklentiyi düşürme ihtimali var. Yani hani 10'luk bir beklentinin var ama onun gösterdiği 5 diyelim ki. O zaman bu onu geri dönüş olarak negatif besleyecektir. O zaman da çok yüksek skorluların bir kötü etki yaratmış gibi bir durum olmuyor mu?
+
+464
+01:20:49,811 --> 01:20:58,571
+Burada skoru şey vermiyor yalnız dikkatini çekerim. Kişi kendi kendine vermiyor. Burada skoru şey veriyor.
+
+465
+01:21:00,171 --> 01:21:17,191
+Nedir? İşe alan yani işe başvuranın skorla ilgisi yok. İşe alan tarafından şey yapılıyor. Onların önerdiği model genelde bu ara işte çok popüler olan onların önerdiği model şu.
+
+466
+01:21:17,191 --> 01:21:24,331
+İşte daha önceki işe alımlardaki memnuniyetimize göre profilleri etiketleyelim.
+
+467
+01:21:24,531 --> 01:21:27,831
+Yani şu profildeki kişiyi işe aldık, memnun olduk.
+
+468
+01:21:27,911 --> 01:21:30,811
+Şu profildeki kişiyi işe aldık, memnun olmadık.
+
+469
+01:21:30,911 --> 01:21:37,771
+Veya işte şunu işe aldık, bir sene sonra çıktı, işte bu da bir memnuniyetsizlik, bunu aldık çıkmadı falan gibi.
+
+470
+01:21:38,191 --> 01:21:38,811
+Onlar yapıyorlar.
+
+471
+01:21:38,971 --> 01:21:40,551
+Yani etiketlemeyi şey yapmıyor.
+
+472
+01:21:40,771 --> 01:21:42,591
+Kişi kendisine puan vermiyor.
+
+473
+01:21:43,431 --> 01:21:44,411
+İşe alanlar veriyor.
+
+474
+01:21:44,411 --> 01:21:46,271
+Bilmiyorum sorunun cevabı bu muydu ama.
+
+475
+01:21:46,271 --> 01:21:54,071
+Evet evet buydu aslında yani kişiden aldığın zaman her bir özelliğini ne kadar doğruydu aslında onu şey yapmıştım
+
+476
+01:21:54,071 --> 01:22:11,351
+Özelliği kişiden alma şu şekilde yani senin iş başvuru özelliklerini kullanıyor mesela ne bileyim işte mezun olduğun okul işte not ortalaman daha önceki iş tecrübelerin işte ne bileyim işte şeyin konuyla ilgili tecrüben şimdi bunlara birer puanlar veriliyor
+
+477
+01:22:11,351 --> 01:22:17,471
+normalde işte bu puanlara göre aslında seni işe alıp almaya karar veriyorlar ya
+
+478
+01:22:17,471 --> 01:22:21,711
+burada bunlar giriş bilgisi olarak sisteme veriliyor
+
+479
+01:22:21,711 --> 01:22:27,911
+tekrardan söylüyorum yani bunlar da şey değil çok objektif olmayabilir
+
+480
+01:22:27,911 --> 01:22:32,911
+ama işte bunun sonucunda çıkışta da şey çok yapıyorlar bunu insan kaynakları
+
+481
+01:22:32,911 --> 01:22:40,331
+pek çok firmanın şu ara kesildi de bir özellikle son iki sene önceden beri
+
+482
+01:22:40,331 --> 01:22:46,411
+yani bu sene daha hiç öyle gelmedi de trend vaziyetindeydi.
+
+483
+01:22:46,411 --> 01:22:54,511
+İnsan kaynaklarının işe alımlarında lojistik regresyonla makine öğrenmesi yöntemlerini kullanılması şeklinde bir topik vardı.
+
+484
+01:22:55,111 --> 01:22:55,331
+Peki.
+
+485
+01:22:56,571 --> 01:22:56,771
+Efendim?
+
+486
+01:22:58,612 --> 01:22:59,852
+Teşekkür ederim hocam.
+
+487
+01:22:59,931 --> 01:23:00,731
+Rica ederim.
+
+488
+01:23:02,191 --> 01:23:13,271
+Yani böyle şeyler olabilir tabii yapılabilir. Ben beğeniyorum böyle çalışmaları. Şey çok önemli artık şeye bakmanız lazım. Bulunduğunuz şirkette çalışanlar için söylüyorum.
+
+489
+01:23:13,831 --> 01:23:26,071
+Dataya bakın yani büyük data aslında çok güzel tezler çıkar oradan. Çalıştığınız yerde ne kadar büyük data varsa o kadar güzel çalışmalar çıkartılabilir aslında.
+
+490
+01:23:26,071 --> 01:23:31,191
+yani bu da fena bir fikir değil. Şimdi lojistik regresyona gelelim o zaman.
+
+491
+01:23:33,292 --> 01:23:34,251
+Bir şey sorabilir miyim hocam?
+
+492
+01:23:34,551 --> 01:23:35,652
+Tabii sen de sor.
+
+493
+01:23:36,391 --> 01:23:45,911
+Bu online lineer regresyon dedik ilk olarak. Lineer regresyonun başka tek çeşitleri var mı?
+
+494
+01:23:45,911 --> 01:24:01,391
+sağlı falan da var da ben onları eskiden anlatıyordum çok kullanılmıyor aslında yani lineer olmayan online olanı şey olanı işte stokastik hani tek tek örneği göster şey yap onu mu diyorsun yoksa
+
+495
+01:24:01,391 --> 01:24:06,491
+evet yani online derken neyi kastettik onu tamamlayamadım
+
+496
+01:24:06,491 --> 01:24:14,511
+online denilen şey stokastik gradient descent yani şey olanı batch değil de online olanı bir örnek gösteriyorsun
+
+497
+01:24:14,512 --> 01:24:15,172
+Tek tek.
+
+498
+01:24:15,851 --> 01:24:16,732
+Aynen öyle.
+
+499
+01:24:17,272 --> 01:24:17,772
+Tamam hocam.
+
+500
+01:24:17,772 --> 01:24:18,251
+Teşekkür ederim.
+
+501
+01:24:18,891 --> 01:24:25,132
+Şimdi lojistik regresyon da linear decision boundary kullanıyor.
+
+502
+01:24:31,667 --> 01:24:32,348
+şöyle
+
+503
+01:24:35,731 --> 01:24:37,932
+diyelim ki iki sınıfınız var.
+
+504
+01:24:49,779 --> 01:24:50,799
+arası?
+
+505
+01:24:54,420 --> 01:24:58,619
+ve transpoz eksin sıfıra eşit olduğu yerdir.
+
+506
+01:25:04,699 --> 01:25:05,779
+Şurası
+
+507
+01:25:05,779 --> 01:25:12,619
+bu bölge
+
+508
+01:25:13,140 --> 01:25:38,219
+sıfırdan büyük olduğu yerdir. Burası da sıfırdan küçük olduğu yerdir. Şimdi lojistik regresyonda bizim yaptığımız şey şu. Bir saniye şöyle bir örnek yapayım. Şöyle diyelim, bir saniye şuradan.
+
+509
+01:25:38,219 --> 01:25:41,340
+Şimdi burada
+
+510
+01:25:41,340 --> 01:25:44,980
+Şöyle yapayım pardon arkadaşlar
+
+511
+01:25:44,980 --> 01:25:46,340
+Çizmek istedim de
+
+512
+01:25:46,340 --> 01:25:49,199
+Hangisini çizeceğimi bilemedim
+
+513
+01:25:49,199 --> 01:25:50,099
+Yine bizim
+
+514
+01:25:50,099 --> 01:25:53,399
+X1, V1, 1, V0
+
+515
+01:25:53,399 --> 01:26:00,900
+X'de, V'de
+
+516
+01:26:00,900 --> 01:26:04,360
+Şurada bizim bir input vektörümüz var
+
+517
+01:26:04,359 --> 01:26:17,739
+bunu burada topladım ve bir Z çıkışı elde etti.
+
+518
+01:26:17,739 --> 01:26:28,819
+Şimdi lojistik regresyonda aslında bizim kullandığımız fonksiyon, sigmoid fonksiyonu, lojistik function.
+
+519
+01:26:38,292 --> 01:26:51,571
+Şimdi buradaki output'umuz sigmoid olması şu bir kere onu söyleyeyim.
+
+520
+01:26:52,051 --> 01:27:08,812
+S harfine benzediği için buna sigmoid deniyor, sigmoid function deniyor. Ondan sonra bu smooth geçişi sağlıyor.
+
+521
+01:27:12,372 --> 01:27:31,431
+yani çat diye mesela şöyle yapacağınıza mesela işte şöyle tık tık tık mesela bunu yapacağınıza sıfırdan bire şey geçeceğinize hızlı geçeceğinize yavaş geçmenizi sağlıyor.
+
+522
+01:27:31,431 --> 01:27:38,731
+Bu lojistik function'u bu şekilde. Bu şekilde sıfırdan bire değişen değerler oluşturuyorsunuz.
+
+523
+01:27:38,731 --> 01:27:45,691
+az önce skor dediğimiz yani bizim lojistik fonksiyonumuz şu şekilde bir bölü bir artı e üzeri eksi z.
+
+524
+01:27:46,111 --> 01:27:59,991
+Z dediğimiz şey burada şurada yazdığım gibi işte i eşittir bir denene x, y, y, y, y, şu z, şu aslında.
+
+525
+01:27:59,991 --> 01:28:10,372
+logistik fonksiyon kullanarak bu işte sigmoid denmesi S harfine şu şey deniyor buna sigmoid function deniyor.
+
+526
+01:28:11,071 --> 01:28:18,391
+Sigmoid denmesinin sebebi böyle S harfine benzer bir şekilde olmasından ötürü şöyle.
+
+527
+01:28:18,391 --> 01:28:22,092
+Yani tam da çizemedim dur bir daha çizmeye çalışayım bunu.
+
+528
+01:28:29,652 --> 01:28:39,371
+şöyle yani burada gördüğünüz bakın burada sıfırdan bire bir şey geçiş var keskin geçiş var ya sıfırlarımız var ya birlerimiz var.
+
+529
+01:28:39,371 --> 01:28:48,652
+Sıkı poitte yavaş geçişlerimiz var çıkışımız şey oluyor sıfırla bir arasında değişen değerler oluyor.
+
+530
+01:28:59,444 --> 01:29:02,763
+sıfırla bir arasında değişen değerler oluyor.
+
+531
+01:29:10,131 --> 01:29:15,951
+Şimdi burada yaptığımız şey şu
+
+532
+01:29:20,404 --> 01:29:22,963
+Buradan biraz not yazacağım da defteri açtım o yüzden.
+
+533
+01:29:27,315 --> 01:29:37,116
+Bu sefer verilen x girişleri için 0 ile 1 arasında değişen çıkış değerleri öğreniyoruz.
+
+534
+01:29:37,116 --> 01:29:42,795
+Buradaki f'imiz bizim, f'imiz x, v, v değişiyor burada.
+
+535
+01:29:42,795 --> 01:29:57,475
+ve transpoze X, G1 diyeyim şuna, G1, Y'nin 1 olduğu durum, verilen X'ler ve V'ler için Y'nin 1 olduğu durum.
+
+536
+01:29:57,475 --> 01:30:14,815
+Ondan sonra şeyde nedir? Y'nin sıfır olduğu durumda istatiksel yani bu istatik P dediği probability 1-P Y eşittir 1XV şeklinde.
+
+537
+01:30:14,815 --> 01:30:21,176
+bu şey olasılık olduğu için zaten
+
+538
+01:30:25,844 --> 01:30:43,083
+sıfırla bir arasında yani olasılık üretiyor size. Yani işte bu kişinin işe alınmasının skoru ondan sonra işte 0.8 olasılıkla bunu işe alırsan iyi olur gibi bir şey belirtiyor.
+
+539
+01:30:43,083 --> 01:30:52,083
+Şimdi o zaman ne yapmanız gerekiyor? Mesela diyebilirsiniz ki...
+
+540
+01:30:52,083 --> 01:30:52,423
+...
+
+541
+01:30:56,340 --> 01:30:57,080
+eğer
+
+542
+01:30:57,080 --> 01:31:00,559
+pardon arkadaşlar
+
+543
+01:31:00,559 --> 01:31:01,639
+bir türlü yazamadım
+
+544
+01:31:15,572 --> 01:31:37,851
+diyebilirsiniz ki bu theta bir threshold olur. Eğer bu verilen x değerleri için y çıkışının bir olma olasılığını, theta'dan büyükse eğer çıkışı bir diyebilirsiniz, theta'dan küçükse sıfır diyebilirsiniz.
+
+545
+01:31:37,851 --> 01:31:44,331
+böylece bunu binary output olarak kullanabilirsiniz veya şey olarak nedir?
+
+546
+01:31:47,072 --> 01:31:51,911
+Skor olarak bırakırsınız. Kullanıcı kendisine istediğine karar verebilir.
+
+547
+01:31:52,031 --> 01:31:57,612
+Tekrardan söylüyorum şu G1VTX dediği şey şu aslında.
+
+548
+01:31:58,291 --> 01:32:00,072
+Şurada sizin örnekleriniz var.
+
+549
+01:32:01,271 --> 01:32:02,831
+Şu şekilde.
+
+550
+01:32:02,831 --> 01:32:29,971
+şu bizim şeyse eğer GVTX'mizse şurası eşittir sıfırsa G1VTX şurası mesela bir sınıf burası şurası da G2 G0 diyeyim VTX.
+
+551
+01:32:29,972 --> 01:32:40,112
+Dolayısıyla buna göre işte verilen X değerleri için çıkışta size sıfırla bir arası bir şey veriyor.
+
+552
+01:32:40,112 --> 01:32:46,711
+Yerinin bir olma olasılığı, geri kalanı da yerinin sıfır olma olasılığını veriyor bize.
+
+553
+01:32:47,152 --> 01:32:59,292
+Biz verilen olasılık değeri belli bir tıraş yoltuktan büyükse bir sınıfına aittir, küçükse de sıfır sınıfına aittir diye bunu yorumlayabiliriz şeyi.
+
+554
+01:32:59,971 --> 01:33:20,871
+Burada yaptığımız şey bu. Burada da lojistik regresyonun şeyi aynı aslında. Diner regresyondan çok bir farkı yok. Burada yine ağırlıkları baştan küçük değerlerle initialize ediyoruz.
+
+555
+01:33:28,180 --> 01:33:35,180
+ve
+
+556
+01:33:33,235 --> 01:33:34,716
+şurada repeat diyeyim pardon
+
+557
+01:33:39,604 --> 01:34:03,323
+Şimdi bu da online yapıyor. Yani şey olarak stokastik tek tek seçerek yapıyor. Yani şey olsun istiyorsanız bunları örnekleri tek tek ağırlıklarına update etmezsiniz her gelen örnek için. Hatayı hesaplayıp ondan sonra şey yapabilirsiniz.
+
+558
+01:34:03,323 --> 01:34:22,223
+bir bütün örnekler gösterildikten sonra veya işte mini-batch'teki gibi mesela bu online'da her gösterilen bunu yapmanıza gerek yok. Bu çok hikaye update-batch diye.
+
+559
+01:34:42,931 --> 01:34:59,852
+Evet, şimdi buna birlikte bakalım. Burada yaptığı da aslında bu mantık hep aynı aslında onu söyleyeyim. Şeyde de benzerlerini göreceğiz. Yapay nöron ağlarına girdiğimizde perceptron mantığı böyle. Ondan sonra da ağırlıkların update'i benzer bir şekilde olacak.
+
+560
+01:34:59,852 --> 01:35:09,772
+multi-layer perceptron'da da. Yani ağırlıkları initial değerlerle update ediyorsunuz. Bu ağırlıklarla şeyi hesaplıyorsunuz.
+
+561
+01:35:09,772 --> 01:35:21,152
+Fx'i ve i dediği şey ve transpose x'i yani işte i eşittir birden n'e x'i çarpı ve i'yi hesaplıyorsunuz.
+
+562
+01:35:21,151 --> 01:35:43,231
+Fakat burada bizimkisi bu şekilde değil. Şunu yazayım. Burada bizimkisi fxc dediğimiz şey bir bölü bir artı e üzeri eksi birden n'e x'i şunu yazamadım.
+
+563
+01:35:43,231 --> 01:36:09,872
+e üzeri eksi, birden ene x'i ve i. Bu şekilde buradaki f fonksiyonu. Buna göre ağırlıkları çıkış değerini hesaplıyoruz. Ağırlıkları da buna göre update ediyoruz.
+
+564
+01:36:09,871 --> 01:36:12,551
+Buraya kadar sormak istediğiniz bir şey var mı?
+
+565
+01:36:15,311 --> 01:36:16,371
+Soru var mı?
+
+566
+01:36:24,275 --> 01:36:25,115
+yok musunuz?
+
+567
+01:36:28,659 --> 01:36:48,659
+Yok mu? Tamam, peki. Şöyle mi yapayım diye düşünüyorum. Aslında regresyonla ilgili anlatacaklarım bitti. Bir sonra anlatacağım şey yapay nöron ağlarına geçeceğim. Perceptron'u anlatayım mı yoksa burada bugün bırakayım mı?
+
+568
+01:36:48,659 --> 01:37:04,240
+Yani bunu şunu için soruyorum. Eğer yorulduysanız bırakacağım haftaya. Çünkü nöron network artık verin öğrenmeden de ötürü çok önemli olduğundan onu iyi, düzgün anlamanızı istiyorum. Yorulmadıysanız devam edeceğim.
+
+569
+01:37:06,420 --> 01:37:07,539
+Haftaya devam et.
+
+570
+01:37:07,539 --> 01:37:09,279
+Önce de haftaya daha iyi hocam.
+
+571
+01:37:09,359 --> 01:37:11,740
+Evet yeni konu haftaya işlesek sanki daha iyi.
+
+572
+01:37:12,420 --> 01:37:16,880
+Tamam peki. O zaman ben size haftaya ödev de vereceğim artık. Ödevin zamanı geldi.
+
+573
+01:37:16,879 --> 01:37:20,979
+bir ödevle başlayalım haftaya ödevle verelim tamam mı?
+
+574
+01:37:21,579 --> 01:37:22,099
+Peki hocam.
+
+575
+01:37:22,919 --> 01:37:28,499
+Tamam peki oldu. O zaman teşekkür ediyorum katılmanız için. Başka sorunuz yoksa eğer.
+
+576
+01:37:29,159 --> 01:37:31,799
+Sağ olun hocam. Biz teşekkür ediyoruz hocam.
+
+577
+01:37:31,879 --> 01:37:34,259
+Tamam peki o zaman haftaya görüşmek üzere.
+
+578
+01:37:34,899 --> 01:37:35,739
+İyi görüşürüz.
+
+579
+01:37:35,880 --> 01:37:38,599
+Teşekkürler.

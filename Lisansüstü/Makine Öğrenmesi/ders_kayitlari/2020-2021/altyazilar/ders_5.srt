@@ -1,0 +1,2787 @@
+1
+00:00:25,076 --> 00:00:27,076
+İnanay da noja.
+
+2
+00:00:29,908 --> 00:00:30,967
+Günaydın arkadaşlar.
+
+3
+00:00:49,716 --> 00:00:52,716
+ne kadar az kişiyle başladık birazcık bekleyin.
+
+4
+00:00:54,216 --> 00:00:55,716
+Kişi sayısı artsın.
+
+5
+00:01:25,683 --> 00:01:30,624
+Evet bugün size performans ölçümünün nasıl yapılacağından bahsedeceğim.
+
+6
+00:01:31,323 --> 00:01:36,423
+Şimdi bugüne kadar şeyleri gördük, eğitmenli öğrenme yöntemlerini gördük.
+
+7
+00:01:36,903 --> 00:01:41,083
+Ve eğitmenli öğrenme yöntemleriyle nasıl sınıflandırma yapılacağını gördük.
+
+8
+00:01:41,083 --> 00:01:44,743
+Burada karar ağaçlarını görürken bir şeyden bahsettik.
+
+9
+00:01:44,883 --> 00:01:54,683
+Dedik ki karar ağaçları eğer çok seviyesi yüksek olursa ağacın bu şeye yol açabilir.
+
+10
+00:01:54,683 --> 00:02:02,084
+bir overfitting'e yani eğitim başarısının yüksek, test başarısının düşük olduğu duruma yol açabilir.
+
+11
+00:02:02,683 --> 00:02:07,264
+Bunu önlemek için de işte ağacı budamak gerekir dedik.
+
+12
+00:02:07,384 --> 00:02:17,084
+Şimdi burada şeyi gördük biz aslında yani bir modeli biz oluşturduk ama bu modelin başarısı nedir, nasıl ölçeceğiz, nasıl iyileştireceğiz?
+
+13
+00:02:17,683 --> 00:02:22,123
+Bu karar ağacı budama konusu sırasında bundan bahsettik.
+
+14
+00:02:22,123 --> 00:02:33,143
+Şimdi bir modeli eğittikten sonra önemli olan şey aslında o modelinizin ne kadar başarılı olduğudur.
+
+15
+00:02:33,243 --> 00:02:35,323
+Kullanıp kullanmamaya karar vermek için.
+
+16
+00:02:36,823 --> 00:02:47,124
+Karşılaştığımız bir problemin makine öğrenmesi yöntemleriyle çözülmesinde hangi modeli kullanacağımıza karar verirken,
+
+17
+00:02:47,123 --> 00:02:54,323
+karar verirken yani burada işte karar ağacı mı kullanacaksınız K'ye yakın komşuluk mu kullanacaksınız
+
+18
+00:02:54,323 --> 00:03:03,683
+işte ne bileyim Bayez modelini kullanacaksınız buna karar verirken yapılan şey aslında bu modellerin
+
+19
+00:03:03,683 --> 00:03:11,723
+başarılarını ölçüp en iyi modeli bunların içerisinden seçmektir veya K'ye yakın komşulukta
+
+20
+00:03:11,724 --> 00:03:17,283
+Gördük dedik ki acaba K'yı 3 mu almamıyız, 5 mu almamıyız, 7 mu almamıyız, nasıl karar vermeliyiz?
+
+21
+00:03:17,283 --> 00:03:26,164
+Yine burada da en iyi sınıflandırmayı sağlayan en iyi K değerini devrimemek için de yine bir şey yapmamız lazım.
+
+22
+00:03:26,764 --> 00:03:30,044
+Modelimizin başarısını ölçmemiz lazım.
+
+23
+00:03:30,044 --> 00:03:49,463
+Yani hem bir modelin değerlerine göre daha iyi olup olmadığını anlamak için hem de modelin kendisinin farklı parametrelerle değerlendirilip en iyi parametreli modelin seçilmesi için aslında bir şekilde bizim bir değerlendirme yapmamız gerekiyor.
+
+24
+00:03:49,544 --> 00:03:55,943
+Şimdi bugün bu konudan bahsedeceğim. Bu değerlendirmenin nasıl yapılması gerektiği konusundan bahsedeceğim.
+
+25
+00:03:55,943 --> 00:04:04,783
+Şimdi aslında bizim makine öğrenmesinde yapmaya çalıştığımız şey insanların öğrenmesinde olan şeyle aynı.
+
+26
+00:04:04,963 --> 00:04:07,663
+Yani biz istiyoruz ki bir genelleme yapalım.
+
+27
+00:04:08,983 --> 00:04:19,183
+Bu sayede öğrenme aslında insanlar için de gerçek dünyada da öyle de biz bir genelleme yaparız karşılaştığımız olaylarla ilgili.
+
+28
+00:04:19,183 --> 00:04:32,004
+Dolayısıyla hiç bilmediğimiz bir olayla karşılaştığımızda da bu bilgilerimizi kullanarak bir şey yaparız, tahmin yaparız, karar veririz.
+
+29
+00:04:32,003 --> 00:04:45,223
+Örneğin işte kuşların kanatlı olduğunu, işte gagalarını, iki tane ayaklarını vesaire o ayakların özelliklerini zaman içerisinde öğrenip bir genelleme yapıyoruz.
+
+30
+00:04:45,303 --> 00:04:55,003
+Ve hiç karşılaşmadığımızda, hiç görmediğimiz bir tropik kuş gördüğümüzde aklımızdaki kuş imajından ötürü bunun kuş olduğunu anlayabiliriz.
+
+31
+00:04:55,003 --> 00:05:06,103
+Burada bizim yaptığımız şey aslında öğrendiğimiz bilgilerden genellemeye gitmek, genel olan özellikleri çıkartmaya çalışmak.
+
+32
+00:05:07,507 --> 00:05:12,267
+Şimdi burada üç tane şey görüyoruz, öğrenme modeli görüyoruz.
+
+33
+00:05:12,327 --> 00:05:14,507
+İki sınıflı bir problem var.
+
+34
+00:05:14,507 --> 00:05:20,087
+İşte iki balık türü, samon ve levrek sanıyorum Sivas dediği.
+
+35
+00:05:20,507 --> 00:05:22,928
+İki balık türünü birbirinden ayırmak için.
+
+36
+00:05:23,087 --> 00:05:24,787
+İki de özellik kullanılmış.
+
+37
+00:05:24,787 --> 00:05:26,887
+şeyin
+
+38
+00:05:26,887 --> 00:05:28,947
+balığın işte
+
+39
+00:05:28,947 --> 00:05:30,647
+uzunluğu ve
+
+40
+00:05:30,647 --> 00:05:32,347
+şey o nedir
+
+41
+00:05:32,347 --> 00:05:35,427
+pullarının parlaklığından
+
+42
+00:05:35,427 --> 00:05:36,067
+bahsediliyor.
+
+43
+00:05:37,647 --> 00:05:39,567
+İki özellik kullanılmış.
+
+44
+00:05:39,688 --> 00:05:41,947
+İki özelliğe göre bu iki sınıfın
+
+45
+00:05:41,947 --> 00:05:43,567
+ayrılması farklı
+
+46
+00:05:43,567 --> 00:05:45,747
+modellerle nasıl ayrıldığı gösterilmiş.
+
+47
+00:05:45,868 --> 00:05:47,787
+Üç tane model var
+
+48
+00:05:47,787 --> 00:05:49,727
+burada. Birinci modelde böyle lineer
+
+49
+00:05:49,727 --> 00:05:50,947
+bir şekilde ayrılmış.
+
+50
+00:05:51,507 --> 00:05:53,167
+Baktığımız zaman
+
+51
+00:05:53,167 --> 00:06:00,987
+her iki tarafta da karar sınırının her iki tarafında da o sınıfa ait olmayan örnekler olduğunu görüyoruz.
+
+52
+00:06:01,087 --> 00:06:02,607
+Fena bir model değil aslında.
+
+53
+00:06:03,327 --> 00:06:06,548
+Buna baktığınız zaman oldukça başarılı bir model.
+
+54
+00:06:07,307 --> 00:06:15,787
+İkincisinde şöyle şuradaki modele baktığınızda burada bütün örneklerin doğru sınıflandırıldığını görüyoruz.
+
+55
+00:06:15,787 --> 00:06:24,127
+Bu aslında şahane bir model. Bakıyorsunuz bütün salonlar bir tarafta, bütün levrekler öbür tarafta.
+
+56
+00:06:24,908 --> 00:06:29,787
+Üçüncü modelde de biraz daha esnek bir karar sınırı görüyorsunuz.
+
+57
+00:06:30,448 --> 00:06:37,327
+Yine karar sınırının iki tarafında da şeyler var, o sınıfa ait olmayan örnekler var.
+
+58
+00:06:37,327 --> 00:06:48,247
+Fakat sizin de gördüğünüz gibi buradaki karar sınırı aslında sınıfların ayrımına daha uygun, daha esnek bir karar sınırı.
+
+59
+00:06:48,308 --> 00:06:50,747
+Lineara göre daha esnek bir karar sınırı.
+
+60
+00:06:51,147 --> 00:06:53,567
+Şimdi bunun üçünü de bir değerlendirelim.
+
+61
+00:06:53,647 --> 00:06:54,368
+Birlikte bakalım.
+
+62
+00:06:55,268 --> 00:06:59,168
+Şimdi baktığınız zaman şunu görüyoruz aslında.
+
+63
+00:06:59,927 --> 00:07:00,967
+Önce şeyi inceleyelim.
+
+64
+00:07:01,048 --> 00:07:03,287
+Bu en iyi modeli inceleyelim.
+
+65
+00:07:03,347 --> 00:07:06,967
+En iyi modelin nasıl olduğunu görelim.
+
+66
+00:07:06,967 --> 00:07:16,047
+Şimdi en iyi modelde bütün, bunlar bizim eğitim örneklerimiz, bütün eğitim örneklerinin en iyi şekilde sınıflandırıldığını görüyoruz.
+
+67
+00:07:16,127 --> 00:07:17,007
+Hepsi doğru yerde.
+
+68
+00:07:17,427 --> 00:07:19,808
+Fakat şimdi bakın şurada bilinmeyen bir örnek var.
+
+69
+00:07:20,047 --> 00:07:23,827
+Soru işaretini şöyle birazcık daha da büyütyomatta.
+
+70
+00:07:23,967 --> 00:07:25,247
+Herkes görüyor sanıyorum.
+
+71
+00:07:25,927 --> 00:07:27,127
+Bilinmeyen bir örnek var.
+
+72
+00:07:27,247 --> 00:07:29,007
+Yeni gelmiş bir test örneği var.
+
+73
+00:07:29,407 --> 00:07:36,388
+Ve test örneğini bu sınıflandırıcı kırmızı levrek sınıfına ait olduğunu söylüyor bu örneğin.
+
+74
+00:07:36,387 --> 00:07:47,667
+Fakat biz baktığımızda aslında bu bölgenin şeye daha çok benzediğini, somonlar için daha uygun olduğunu,
+
+75
+00:07:47,747 --> 00:07:54,307
+yani en yakınındaki mesela biz burada birkaç en yakın komşuluk yapsaydık bu örneği somon olarak sınıflandırabilirdik belki.
+
+76
+00:07:54,727 --> 00:08:03,147
+Çünkü aslında en yakınında çoğunluk somon sınıfına ait ama arada böyle birkaç tane şey var,
+
+77
+00:08:03,147 --> 00:08:06,808
+O tarafa doğru kaçmış, o bölgeye doğru kaçmış.
+
+78
+00:08:06,808 --> 00:08:14,147
+Biz yani şurada görüyoruz yani sonun şeylerin, nevreklerin genel özelliklerini gösteren örnekler.
+
+79
+00:08:14,228 --> 00:08:21,067
+Bu tarafta şurada çok az bir sayıda o aslında genel özelliklere uymayan örnekler olduğunu görüyoruz.
+
+80
+00:08:21,127 --> 00:08:22,147
+Şimdi buradaki konu şu.
+
+81
+00:08:23,507 --> 00:08:31,267
+Aslında anlatılmaya çalışılan şey bu durum işte bir yanlış model oluşturma.
+
+82
+00:08:31,267 --> 00:08:40,228
+Burada biz eğitim örneklerini en iyi şekilde sınıflandırmaya odaklandığımız için bir ezberleme oluyor burada.
+
+83
+00:08:40,627 --> 00:08:42,147
+Buna biz overfitik diyoruz.
+
+84
+00:08:42,547 --> 00:08:50,667
+Ezberleme oluyor ve eğitim örnekleri çok yüksek başarıyla sınıflandırılırken bilinmeyen örneklere gelindiğinde başarı düşmeye başlıyor.
+
+85
+00:08:51,087 --> 00:08:55,448
+Bizim bir model oluştururken kaçınmamız gereken bir durum bu.
+
+86
+00:08:55,448 --> 00:09:03,248
+Model burada olduğu gibi, bu şeyde olduğu gibi aslında en iyi genellemeyi sağlamalı.
+
+87
+00:09:03,948 --> 00:09:04,948
+Peki bunu nasıl yapacağız?
+
+88
+00:09:05,028 --> 00:09:06,268
+Şimdi burada üç tane...
+
+89
+00:09:06,580 --> 00:09:30,659
+model görüyoruz yine. Bu underfitting, yani yeterince iyi öğrenilmemiş bir model. Bu overfitting çok iyi, fazlasıyla iyi öğrenme olmuş. Buna biz ezberleme diyoruz. Artık böyle bütün örnekler, bu hızlı sınıflandırılana kadar öğrenme devam etmiş.
+
+90
+00:09:30,659 --> 00:09:53,340
+Bu da yine az önceki gibi daha esnek ondan sonra burada şimdilik birazcık daha şahane gözüküyor ama aslında burada farklı sınıflardan örnekler karar sınıfının diğer tarafında da olabilirdi ama sizin de gördüğünüz gibi şeyin modelin yapısını daha iyi gösteren bir karar sınıra elde edilmiş.
+
+91
+00:09:53,339 --> 00:10:21,679
+Şimdi bizim karşılaştığımız hatalarla ilgili iki tane problem var. Birincisi de overfitting problemi, ikincisi de underfitting problemi. Modelin uygun olmaması ile ilgili olan. Overfitting dediğimiz şey eğer bir modeli oluşturduktan sonra başarısını ölçtüğünüzde eğitim başarısı, test başarısından çok yüksek çıkıyorsa burada bir overfitting olması durumundan şüphelenmemiz gerekir.
+
+92
+00:10:21,679 --> 00:10:30,419
+yani neden? Çünkü eğitim örneklerini çok iyi öğrenecek şekilde öğrenmeye devam edilmiş. Biz bunu artık ezberleme diyoruz.
+
+93
+00:10:30,980 --> 00:10:37,440
+Ve genelleme değil ezberleme olmuş artık burada. Çünkü gelen test örneklerinde yüksek bir hata çıkıyor.
+
+94
+00:10:38,899 --> 00:10:44,459
+Peki ne zaman overfitting oluyor? Şimdi overfitting olmasının farklı sebepleri var.
+
+95
+00:10:44,459 --> 00:10:54,839
+mesela az önceki şeyde gördüğümüz gibi şu örnekte gördüğümüz gibi geneli temsil etmeyen örnekler var.
+
+96
+00:10:54,959 --> 00:10:59,279
+Bu örnekler parazitten ötürü de geneli temsil etmiyor olabilirler.
+
+97
+00:10:59,279 --> 00:11:12,459
+İşte şey olabilir işte hep konuşuyoruz bir sınıftaki öğrenci kız öğrencinin içerisinde 1.90 boylu işte ne bileyim 100 kilo olan bir öğrenci de olabilir aslında.
+
+98
+00:11:12,459 --> 00:11:21,119
+bu geneli temsil etmeyen, bu bir parazit değil ama işte anomali de demeyelim, geneli temsil etmeyen bir durumdur.
+
+99
+00:11:21,119 --> 00:11:24,599
+Böyle bir durum da olabilir overfit olması için.
+
+100
+00:11:25,080 --> 00:11:41,279
+Yani bu durum overfit olmasına sebep değil ama o örneğin de doğru sınıflandırılmasını sağlayana kadar eğitime devam etmek veya eğitimin bu şekilde olmasını sağlamak
+
+101
+00:11:41,279 --> 00:11:50,219
+çok overfitting'e sebep oluyor. Mesela öyle bir durumunuz olabilir. İkincisi şey olabilir, özellikleriniz çok fazla olabilir, gereğinden fazla.
+
+102
+00:11:50,803 --> 00:12:00,083
+ayırt edici özelliklerle değil daha da fazla ihtiyaç olmayan, ayırt ediciliği olmayan özelliklerle öğrenmeye devam etmiş olabilirsiniz.
+
+103
+00:12:00,663 --> 00:12:02,563
+Bu gibi sebeplerle overfitting olabilir.
+
+104
+00:12:02,903 --> 00:12:09,863
+Underfitting dediğimiz şey de öğrenme tamamlanmadan aslında şeyi kesmektir.
+
+105
+00:12:10,303 --> 00:12:11,443
+Öğrenmeyi kesmektir.
+
+106
+00:12:11,443 --> 00:12:16,843
+Bu da farkında olmadan aslında şimdi size bunu ben söylediğimde şey değil düşünebilirsiniz.
+
+107
+00:12:16,843 --> 00:12:23,403
+yani bunu kim yaparken öğrenme tamamlanmadan öğrenme nasıl kesilebilir diye düşünebilirsiniz.
+
+108
+00:12:23,403 --> 00:12:33,223
+Şöyle kesilebilir, bazı öğrenme modellerinde öğrenme için iterasyon sayısı da kullanılabilir.
+
+109
+00:12:33,344 --> 00:12:44,223
+Mesela bir yapay nörona modelinde şey de diyebilirsiniz, işte hata belli bir eşlik seviyesinin altına düşene kadar, epsilon değerinin altına düşene kadar öğren de diyebilirsiniz.
+
+110
+00:12:44,223 --> 00:12:57,463
+işte 20 bin adım öğrendi diyebilirsiniz. Şimdi burada 20 bin adım öğren dediğinizde eğer o problem için 20 bin adım öğrenmeye yetmiyorsa underfitting başınıza gelebilir.
+
+111
+00:12:58,164 --> 00:13:10,423
+Şimdi hem uyanmamız için hem de öyle akılda kalıcı bir örnek olması açısından size bununla ilgili zamanında bizim başımıza gelen bir şeyi anlatmak istiyorum, örneği anlatmak istiyorum.
+
+112
+00:13:10,423 --> 00:13:21,623
+yıllar önce ben asistanken bir şey o zaman işte lisans öğrencilerinde bizim ara projelerimizle bitirme projelerimiz var.
+
+113
+00:13:22,623 --> 00:13:26,943
+İki öğrencinin bitirme projesini yönetiyorduk.
+
+114
+00:13:26,943 --> 00:13:31,583
+Proje konuları da şey o zaman işte şeyler falan yoktu.
+
+115
+00:13:31,723 --> 00:13:40,003
+Şimdi ses tanımayla ilgili çok güzel tool'lar var onları kullanarak anında tanıma işini kendiniz uğraşmadan yapabiliyorsunuz.
+
+116
+00:13:40,003 --> 00:14:04,763
+Bunlar kendileri şey yazacaklar işte mouse'un sesle idaresi için bir tasarım yapıyorlardı. İşte yukarı diyorsun mouse inme için yukarı doğru hareket ediyor. Aşağı diyorsun aşağı doğru hareket ediyor. İşte yukarı aşağı sağa sola bir de şey vardı tıkla vardı. Tıkla deyince de işte işlemi yapıyor mouse'un tıklandığında yapılan işlemi neyse onu yapıyor.
+
+117
+00:14:04,763 --> 00:14:15,663
+yapay nörona haklı oluyorlardı o zaman. Fakat bir türlü şey olmuyor sınıfla alınma sonucunda. İyi bir sonuç elde edemiyoruz.
+
+118
+00:14:15,663 --> 00:14:25,283
+İşte böyle aslında literatüre baktığınızda, şimdi ezbere hatırlamıyorum tabii ama diyelim ki %80 başarı olacaksa bunlarınkisi %60'ı bir türlü geçmiyor gibi.
+
+119
+00:14:27,023 --> 00:14:33,063
+Biz sürekli şeye odaklanıyoruz. İşte diyoruz ki acaba eğitimde kullandığımız örnekler mi iyi değil?
+
+120
+00:14:33,063 --> 00:14:37,823
+yaptığımız kayıtlar mı, yukarı aşağı vesaire o kayıtlar mı değil.
+
+121
+00:14:38,743 --> 00:14:47,003
+İşte kodda bir hata mı var işte öyle mi böyle mi biz bir sürü yan şeyin üzerinden geçiyoruz, problemin üzerinden geçiyoruz.
+
+122
+00:14:47,003 --> 00:14:49,503
+Fakat bir türlü bulamıyoruz, başarı yükselmiyor.
+
+123
+00:14:49,503 --> 00:15:12,923
+şeyde yani modelin de doğruluğundan çok eminiz yani çünkü işte kodada baktık modelde zaten basit şey yapıyorlardı işte özellikleri ses için şey vardı Mel Frequency Capström Coefficient diye işte özellikler vardı onları kullanıyorlar.
+
+124
+00:15:12,923 --> 00:15:18,164
+onun üzerinde işte şey yapıyorlar, klasik yapay nörolağ kullanıyorlar.
+
+125
+00:15:18,863 --> 00:15:25,463
+Neyse, nelerden sonra birden böyle kodu artık iyice dikleyerek bakarken
+
+126
+00:15:25,871 --> 00:15:36,371
+Şey fark ettik yani durdurma için şey kullanmamışlar çünkü o da yapılan bir şey yani durdurma için iterasyon sayısı kullanmakta yapılan bir şey.
+
+127
+00:15:36,931 --> 00:15:46,511
+Durdurma için şey kullanmamışlar error belli bir epsilon değerin altına düşerse duru kullanmamışlar adım sayısı kullanmışlar.
+
+128
+00:15:46,511 --> 00:15:51,771
+Yani diyelim ki işte 20 bin adım model itere ediyor öğrenmek için.
+
+129
+00:15:51,892 --> 00:15:55,892
+İterasyon 20 bin adım olunca diyelim ki dur diyorlar.
+
+130
+00:15:56,431 --> 00:16:06,171
+Ve o model için o adım sayısı, verdikleri adım sayısı öğrenmeye yetmemiş underbiting şey, model başarısı düşük.
+
+131
+00:16:06,412 --> 00:16:11,491
+Şimdi bu gerçekten farkına varılmadan rastlanılan bir durumdur.
+
+132
+00:16:11,491 --> 00:16:29,552
+Çünkü bazı çalışmalarda bu yapılır yani iterasyon gerektiren şeylerde denir ki işte bilmem kaç adım olana kadar git epsilon'u bekleme zaten işte epsilon'u o kadar çünkü düşük hataya ulaşması zor olacak ben bari adım sayısını değilim.
+
+133
+00:16:29,611 --> 00:16:33,251
+İşte bu underfitting'e sebep olabilecek problemlerden birisi.
+
+134
+00:16:33,251 --> 00:16:48,191
+Yani modelin çok basit olması demek aslında öğrenmenin genellikle underfittingin olma sebebi öğrenmenin tamamlanmaması, genellemeye gidilemeden öğrenmenin kesilmesi.
+
+135
+00:16:48,191 --> 00:16:52,691
+Şimdi burada mesela bizim karar ağaçlarında gördüğümüz bir overfitting meselesi var.
+
+136
+00:16:52,691 --> 00:16:54,851
+Underfitting'in çözümü kolay.
+
+137
+00:16:55,812 --> 00:17:00,531
+Modelinizi şey yaparsınız, eğitimini daha çok yaparsınız.
+
+138
+00:17:01,151 --> 00:17:02,992
+Veya gerçekten şey de olabilir.
+
+139
+00:17:03,151 --> 00:17:06,052
+Yani öyle bir problemdir ki o model olmuyordur yani.
+
+140
+00:17:06,191 --> 00:17:09,132
+O yüzden underfitting öğrenemiyordur, model öğrenemiyordur.
+
+141
+00:17:10,391 --> 00:17:12,651
+Onu o şekilde anlayıp çözebilirsiniz.
+
+142
+00:17:12,871 --> 00:17:19,191
+Overfitting'de mesela burada işte bizim karar ağaçlarında gördüğümüz overfitting problemi.
+
+143
+00:17:19,191 --> 00:17:24,371
+Bu bizim eğitim örneklerimizin başarısı.
+
+144
+00:17:25,711 --> 00:17:28,191
+Ek üresisi bu da test örneklerimizin.
+
+145
+00:17:29,272 --> 00:17:33,431
+Düğüm sayısı arttıktan sonra belli noktadan sonra artık başarı düşmeye başlıyor.
+
+146
+00:17:33,552 --> 00:17:39,252
+Neden? Çünkü düğüm sayısının artması demek eğitim örneklerindeki her case'in öğrenilmesi.
+
+147
+00:17:39,491 --> 00:17:46,411
+Ama test örneklerinde bu sefer bilinmeyen örneklerde genellemeyi dilemediği için problem yaşanması.
+
+148
+00:17:46,411 --> 00:17:52,771
+İşte burada mesela görüyorsunuz böyle bir parazitli nokta var bunu da öğrenmeye çalışıyor.
+
+149
+00:17:56,371 --> 00:18:06,471
+Yani burada önemli olan şey modeliniz ne kadar kompleks olursa o kadar eğitimde az hatanız olur.
+
+150
+00:18:06,611 --> 00:18:11,551
+Çünkü modelin kompleks olması demek her şeyi öğrenmeye çalışması demek.
+
+151
+00:18:11,551 --> 00:18:18,591
+O zaman da bu aslında yani sıfır eğitim hatası elde edersiniz ama testte hatanız yüksek olur.
+
+152
+00:18:18,691 --> 00:18:23,931
+Neden? Çünkü genellemeye gidilemediği için bilinmeyen örneklerde yani şurada yaşadığınız gibi
+
+153
+00:18:23,931 --> 00:18:29,551
+eğer ben bu noktayı da öğreneyim diye iddia edecek olursam şurada bilinmeyen bir örneğiniz olduğunda
+
+154
+00:18:29,551 --> 00:18:32,771
+ona kırmızı sınıfa değil mavi sınıfa diyecek çaresiz.
+
+155
+00:18:32,891 --> 00:18:37,251
+Çünkü karar sınırı bu noktayı öğrenecek şekilde çizilmiş oluyor.
+
+156
+00:18:38,131 --> 00:18:40,911
+Dolayısıyla yani overfitting'in sıkıntısı bu.
+
+157
+00:18:41,551 --> 00:18:48,931
+Occam-Schreizer makine öğrenmesinde çok referans gösterilen bir şey.
+
+158
+00:18:51,955 --> 00:19:05,275
+iki tane benzer modeliniz varsa basit olanı seçin der. Yani genelleme hatası benzer olan modeliniz varsa basit olanı seçin der.
+
+159
+00:19:05,275 --> 00:19:19,055
+Yani yapılması gereken şey her zaman için şeyi seçmeye çalışmak. Yani kompleks olmayan, çok kompleks olmayan, ezberlemeye gitmeyen modeli elde etmeye çalışmak.
+
+160
+00:19:19,055 --> 00:19:21,075
+Peki biz bunu nasıl yapacağız, nasıl anlayacağız?
+
+161
+00:19:22,215 --> 00:19:27,555
+Şimdi bir kere öncelikle şuna odaklanmanız gerekiyor.
+
+162
+00:19:27,555 --> 00:19:30,875
+Bir, mutlaka buna dikkat etmeniz gerekiyor.
+
+163
+00:19:31,595 --> 00:19:41,855
+Bir makine öğrenmesiyle öğrenme sistemi kurarken önce birden fazla model denemeniz gerekiyor.
+
+164
+00:19:42,675 --> 00:19:44,555
+Yani şunu yapmayın hiçbir zaman.
+
+165
+00:19:44,755 --> 00:19:46,935
+Ben K en yakın komşuluğu denedim.
+
+166
+00:19:46,935 --> 00:20:00,775
+%90'da başarı verdi. O zaman ben bunu kullanayım. Bu doğru bir yaklaşım değil. Çünkü belki orada işte ne bileyim karar ağacı kullandığınızda %91'de 93 başarı elde edeceksiniz.
+
+167
+00:20:00,775 --> 00:20:16,775
+Ve sizin probleminiz için o %3 fark büyük bir farktır. Dolayısıyla bir makine öğrenmesi modeli hazırlayacağınız zaman birden fazla model içerisinde
+
+168
+00:20:16,935 --> 00:20:33,155
+yani birden fazla modeli hazırlayıp bunların içerisinden en başarılısını seçin. Birincisi bu. İkincisi de aynı model için farklı parametreleri deneyip en iyi parametreli modeli seçin.
+
+169
+00:20:33,155 --> 00:20:58,355
+Nedir bu? Burada bahsedilen şey nedir? Mesela işte en yakın komşulukta kanun değerinin ne olacağı, karar ağacında karar ağacının yüksekliğinin ne olacağı gibi şeyleri farklı parametreler için modelimizi başarısını ölçüp en iyi parametreli, en başarılı modeli seçin.
+
+170
+00:20:58,355 --> 00:21:03,255
+Peki burada bu ölçme işlemini nasıl yapacağız?
+
+171
+00:21:03,715 --> 00:21:19,375
+Ölçme işlemini için elinizdeki öğrenme için kullanacağımız eğitim verilerini eğitim ve test için iki parçaya ayırıp kullanmanız gerekir.
+
+172
+00:21:19,375 --> 00:21:31,976
+Yani buradan kastedilen iki parça şu. İkisi birbirine karışmamalı. Yani eğitim datasıyla eğitip ondan sonra test datasıyla başarı ölçmeniz lazım.
+
+173
+00:21:32,155 --> 00:21:36,015
+Yani eğitimde kullandığınız datayı bir de testte kullanmamamız lazım.
+
+174
+00:21:36,015 --> 00:21:47,855
+Yani yine bunu ben böyle söylediğim zaman bundan daha doğal ne olabilirsiniz fakat çoğu defa yanlışlıkla eğitimde kullanılan datanın
+
+175
+00:21:47,855 --> 00:21:59,415
+başarı ölçmek için de kullanıldığını gördüm ben. Bunlar hata ile yapılan ve ondan ötürü de başarı çok yüksek çıkar bakarsınız.
+
+176
+00:21:59,415 --> 00:22:04,635
+Çünkü aynı data hem eğitimde kullanılmış hem testte kullanılmış. Bunun farkında bile değildir yapan kişi.
+
+177
+00:22:05,475 --> 00:22:10,835
+O yüzden bir kere önce şuna odaklanın. Asla eğittiğiniz datayı test için kullanamazsınız.
+
+178
+00:22:12,176 --> 00:22:17,055
+Şimdi birincisi bu. Eğitim datanızı da iki parçaya ayırmanız lazım.
+
+179
+00:22:17,055 --> 00:22:35,695
+Birincisi eğitim, ikincisi doğrulama. Burada önce yapılması gereken şey eğitim datası ile modelin hazırlanması. Örneğin karar ağacınızı eğitim datası ile oluşturdunuz.
+
+180
+00:22:35,695 --> 00:22:43,015
+arkasından doğrulama datası ile ağacı budayacak mısınız?
+
+181
+00:22:43,015 --> 00:22:50,015
+Efendim işte ne bileyim şeyi...
+
+182
+00:22:49,983 --> 00:23:12,603
+k-en yakın komşulukta k-nın değerini mi belirleyeceksiniz, 3 mü 5 mü diye. Ne yapacaksanız bunları yapın doğrulama datasıyla. Yani tuning, ince ayarları yapın doğrulama datasıyla. Arkasından test datasını hiçbir şeye dokunmadan başarı ölçmek için kullanın.
+
+183
+00:23:12,603 --> 00:23:23,603
+Tamam mı? Yani öncelikle demek ki ne yapacaksınız? Bakın bunlar altın kurallar. Bu çok böyle hatalı yapılan bir şeydir.
+
+184
+00:23:26,543 --> 00:23:33,543
+Önce elinizdeki datayı eğitim ve test için birbirine değmeyen iki parçaya ayıracaksınız.
+
+185
+00:23:33,543 --> 00:23:41,483
+arkasından eğitim datanızı da yine eğitim ve doğrulama olarak iki parça ayıracaksınız.
+
+186
+00:23:41,483 --> 00:23:57,563
+Eğitim de modelinizi oluşturacaksınız. Doğrulama ile başarı ölçüp modelin işte budamadır bilmem k'yi belirlemedir vesaire şeyini yapacaksınız, ayarlarını yapacaksınız.
+
+187
+00:23:57,564 --> 00:24:11,204
+tamam artık oldu dediğiniz noktada da test datasıyla başarı ölçüp diyeceksiniz ki işte bu karar ağacı modelimin başarısı şudur diyeceksiniz.
+
+188
+00:24:11,204 --> 00:24:22,083
+Burada şu nokta önemli bakın this set must be misjoint dediği bu şeylerin birbirine karışmaması gerekiyor.
+
+189
+00:24:22,224 --> 00:24:26,104
+Bu datanın birbirine karışmaması gerekiyor bu işler yapılırken.
+
+190
+00:24:26,103 --> 00:24:35,943
+ve şey olması gerekiyor yani eğitim için ayrı doğrulama için ayrı bir aşamada test için ayrı data kullanmanız gerekiyor.
+
+191
+00:24:35,943 --> 00:24:45,183
+Hiç mi karışmayacak? Şimdi hiç karışmayacak ama bir data eğitimde de kullanılabilir, doğrulamada da kullanılabilir, teste de kullanılabilir.
+
+192
+00:24:45,183 --> 00:24:56,403
+ama birbirine değmeden yani aynı data, aynı seansta hem eğitim için hem doğrulama için hem test için kullanılamaz.
+
+193
+00:24:56,403 --> 00:25:02,883
+Yani ikinci bir seferde doğrulama için kullanılan eğitimde, eğitim için kullanılan bilmemlerde bunlar olabilir.
+
+194
+00:25:03,103 --> 00:25:10,623
+Fakat bir aşamada, modelle ilgili bir aşamada, aynı aşamada aynı data hem eğitimde hem testte kullanılamaz.
+
+195
+00:25:10,623 --> 00:25:29,263
+Burada yazan şey bu şey işte bu işlem defalarca tekrarlanır ve ortalama hata elde edilir dediği şey yani bir datayı işte bir eğitimde bir teste vesaire kullanarak başarıyı bu şekilde elde edebilirsiniz.
+
+196
+00:25:30,144 --> 00:25:35,424
+Peki buraya kadar sormak istediğiniz bir şey var mı? Ses çıkmıyor. Orada mısınız?
+
+197
+00:25:36,263 --> 00:25:37,364
+Bir soru sorabilir miyim hocam?
+
+198
+00:25:37,363 --> 00:25:42,383
+Bir soru sorabilir miyim?
+
+199
+00:25:44,543 --> 00:25:46,463
+Aklınıza takılan bir şey var mı?
+
+200
+00:25:47,723 --> 00:25:49,443
+Bilgisayara açıp gittiniz mi?
+
+201
+00:25:50,183 --> 00:25:53,103
+Bir arkadaş soru sormak istiyor hocam ama sana bir ses geldim.
+
+202
+00:25:53,103 --> 00:25:57,663
+Bir saniye sütü tez öğrencimle test çalışması yapıyorduk.
+
+203
+00:25:58,623 --> 00:25:59,923
+Hoca bizi duruyor galiba.
+
+204
+00:26:00,343 --> 00:26:01,243
+Evet galiba duruyor.
+
+205
+00:26:01,243 --> 00:26:04,683
+Şu anda aslında bir unuttum şimdi bilmem ne dersin var ama dedi.
+
+206
+00:26:04,683 --> 00:26:16,243
+bir taraftan onu açık bıraktım dedi. Gerektiğinde gelmiyor mu sesiniz bana? Niye gelmiyor? Bir konuş bakayım [öğrenci].
+
+207
+00:26:17,023 --> 00:26:17,963
+Bir soru sorabilir miyim?
+
+208
+00:26:20,403 --> 00:26:22,943
+Konuşuyor musun şu anda? [öğrenci] yazar mısın?
+
+209
+00:26:25,763 --> 00:26:33,364
+Niye sesiniz bana gelmiyor? Allah Allah. Sonuna kadar açık bu arada arkadaşlar ses bende.
+
+210
+00:26:34,683 --> 00:26:40,023
+Şimdi geldi ama ben sesle oynamadım.
+
+211
+00:26:41,103 --> 00:26:43,323
+Ses geliyor mu hocam şu an?
+
+212
+00:26:43,344 --> 00:26:44,363
+Duyabiliyor musunuz?
+
+213
+00:26:44,903 --> 00:26:47,204
+Evet şu anda duyuyorum ama az önce hiç duymadım sizi.
+
+214
+00:26:47,323 --> 00:26:47,983
+Niye öyle oldu?
+
+215
+00:26:51,859 --> 00:27:20,059
+İndir sorabilir miyim hocam? Evet, sorabilirsin. Veriyeli oradan anlatacağım [öğrenci] eğer, [öğrenci] konuşuyorsa. Konuşan bir şey söyleyebilir miyim? [öğrenci] hocam, ismi yapın. Tamam, biraz daha dur anlatacağım. Eğer orayı anlatmamış olursam hala, o zaman yani istediğin soruya cevap olmazsa, ilerledikten sonra cevap ver. Şimdi o bölme işlerine geleceğim şimdi. Başka? [öğrenci] başka bir şey sordu galiba, [öğrenci] soru.
+
+216
+00:27:23,476 --> 00:27:26,176
+sormadın mı? [öğrenci] sen az önce bir şey sormadın mı?
+
+217
+00:27:26,375 --> 00:27:29,235
+Ses gelmiyor diye belki görürsünüz diye oradan.
+
+218
+00:27:30,135 --> 00:27:36,075
+Tamam oldu bir şekilde anlamadım. İyi ki uyarınız. Ben de çok büyük bir sessizlik var. Kendimi çok huzursuz hissediyorum dedim.
+
+219
+00:27:36,735 --> 00:27:44,775
+Ama yani hiç sesle oynamadım. Nasıl oldu anlamadım bunu. Neyse güzel değil. En azından bir aradayız. Önemli olan o.
+
+220
+00:27:45,555 --> 00:27:52,435
+Şimdi evet [öğrenci]'ın sorusunu açıklayacağım şimdi. Yani ne oranda bölmeliyiz, ne yapmalıyız vesaire. Bu çünkü önemli bir konu.
+
+221
+00:27:52,435 --> 00:28:10,775
+Neden? Çünkü genellikle aslında bizim en büyük problemimiz bu veri kümesinin toparlanmasıdır. Çünkü yani büyük veri kümesi toparlamak zordur. Eşimiz zaten zar zor bir özellikle deyelim ki bir tıbbi problem üzerinde çalışıyorsunuz.
+
+222
+00:28:10,775 --> 00:28:22,495
+işte 50 tane hasta bulunursunuz zaten tuttuklu. Bunların da bir kısmını eğitimde bu verimin bir kısmını doğrulamalı bir kısmını da testte kullanacak olursanız ne olacak o zaman?
+
+223
+00:28:23,275 --> 00:28:33,016
+Zaten az olan datamız daha çok parçalara bölünmüş olacak. Halbuki siz bir genellemeye gitmek istiyorsunuz. Datayı o kadar bölerseniz eğitimde genellemeye gitmekte zorlanacaksınız vs.
+
+224
+00:28:33,016 --> 00:28:38,336
+O zaman bu datayı bu şekilde eğitim ve test için nasıl böleceğiz? Bunlara bakalım.
+
+225
+00:28:38,336 --> 00:28:48,736
+Önce bu genel bir şey de vardı burada. İşte datanın eğitim ve test için bölünmesi, eğitim datası ile eğitim datası validasyon datasını da içeriyor.
+
+226
+00:28:48,735 --> 00:29:02,395
+modelin oluşturulması, arkasından test atasıyla başarının ölçülmesi ve şeye göre işte nedir? Başarının sonuçlarına göre.
+
+227
+00:29:03,215 --> 00:29:08,775
+Gerekiyorsa yani aslında test dediğim gibi hiç karıştırmazsınız işi ama yani orada şunları yapabilirsiniz.
+
+228
+00:29:08,995 --> 00:29:16,155
+Mesela işte modele dönersiniz ya özellikleri de mi daha azaltsam öyle mi yapsam böyle mi yapsam diye de bir şeyler yapabilirsiniz.
+
+229
+00:29:16,156 --> 00:29:43,655
+Şimdi bu benim az önce anlattığım şeyler. Önce işte eğitim datası ile yapıyı oluşturduğunuz parametreleri düzelttiniz. Validation datası parametreleri iyileştirmek için kullanılan bir şey. Arkasından test datası ile de başarıyorsunuz. Fakat klasifiye ile oluştururken test datasını hiçbir şekilde kullanmadınız.
+
+230
+00:29:43,655 --> 00:29:58,195
+işte burada yine az önce anlattıklarım görsel olarak şeyi var. Training setiyle modeli oluşturduğunuz, validation setiyle işte parametreleriyle vesaire oynayarak en iyi modeli elde ettiniz.
+
+231
+00:29:58,195 --> 00:30:13,135
+Öğrenilmiş modeliniz burada. Arkasından test setiyle de başarıyı ölçtünüz. Peki, şimdi bu konumuz işte ne kadar eğitim datanız ne kadar çok olursa o kadar iyi bir
+
+232
+00:30:13,136 --> 00:30:29,056
+modelimiz olacak aslında. Dolayısıyla bizim burada şey elimizdeki datayı train, validation ve test için nasıl böleceğimize iyi karar vermemiz, en optimum şekilde bölmeye çalışmamız var.
+
+233
+00:30:29,056 --> 00:30:42,356
+Şimdi bunun için çeşitli yöntemler var. Bunları adım adım göreceğiz. Birincisi holdout yöntemi. Burada yaptığımız şey şu, elinizdeki datanın üçte ikisini eğitim için bölüyorsunuz.
+
+234
+00:30:42,355 --> 00:31:03,575
+3'te 1'i de test için ayırıyorsunuz. Testi ellemeden bunu bu şekilde yapıyorsunuz. Bu elinizdeki datanız bunun 3'te 1'sini eğitim için ayırdınız. 3'te 1'i de test için ayırdınız. Elinizdeki 3'te 2'yi de yine eğitim ve doğrulama için ayırıyorsunuz.
+
+235
+00:31:03,575 --> 00:31:11,575
+Şimdi burada elinizdeki data küçükse
+
+236
+00:31:13,587 --> 00:31:38,367
+sıkıntı var. Yani bunun üçte ikisini eğitim için ayırdınız, üçte birini test için ayırdınız. Zaten az önce konuştuğumuz problem elinizdeki data küçüktü. O yüzden sıkıntı yaşadınız. O zaman yapabileceğiniz şeylerden birisi şu. Elinizdeki datayı random subsampling, random train ve test için ayırıp defalarca testleri tekrarlamak için.
+
+237
+00:31:38,367 --> 00:32:04,367
+birinci yapabileceğiniz şey bu. Yani şöyle yapıyorsunuz. Data'yı 3'te 2 train, 3'te 1 test diye ayırdınız. Fakat bunu defalarca farklı seçimlerle tekrar ediyorsunuz. Random olarak her aşamada random 3'te 2'yi eğitim için seçiyorsunuz. Random 3'te 1'i test için seçiyorsunuz. Her aşamada modeli oluşturuyorsunuz.
+
+238
+00:32:04,367 --> 00:32:19,668
+ondan sonra ortalama bu işte K defa yaptıysanız bu işlemi E'yi ince aşamadaki hata olmak üzere ortalama hatayı hesaplayarak sistemin başarısını söylüyorsunuz.
+
+239
+00:32:19,668 --> 00:32:38,108
+Birinci yapabileceğiniz şey bu. Burada işte şey problem random seçtiğiniz ama random seçtiğiniz örneklerde şey olabilir. Yani aynı örneği birden fazla defa doğal olarak eğitim tarafında sürekli seçiyor olabilirsiniz.
+
+240
+00:32:38,107 --> 00:32:50,607
+test tarafını da seçmiyor olursunuz. Şimdi bizim buradaki sıkıntılarımızdan birisi şu. Öyle şeyler olabilir ki elinizde az data varsa bu başınıza gelebilecek bir şey.
+
+241
+00:32:51,607 --> 00:33:04,067
+Eğitimde hep iyi örnekler olur mesela. Testte de hep kötü örnekler olabilir. Yani öyle bir dağılım olur ki olmayacak diye bir şey yok. Öyle denk gelir veya tam tersi olur.
+
+242
+00:33:04,067 --> 00:33:14,167
+eğitimde kötü örneklerle eğitirsiniz. Yani genellemeye gitmenize engel olacak. Çok da böyle genelleme için iyi olmayan örneklerle eğitebilirsiniz.
+
+243
+00:33:14,787 --> 00:33:24,867
+Testte de hep iyi örnekler denkmişler. Şimdi bir kere şunu da unutmayın lütfen. Veri kümenizdeki örneklere müdahale etmeniz doğru bir şey değil.
+
+244
+00:33:24,867 --> 00:33:33,167
+Mesela eski çalışmalarda şey yapılırdı ve bunun da iyi olduğunu zannedilirdi. Sonra bunun doğru olmadığı anlaşılırdı.
+
+245
+00:33:34,067 --> 00:33:39,948
+eğitim örneklerinin hep çok iyi örneklerden seçilmesine çalışılır.
+
+246
+00:33:40,047 --> 00:33:52,187
+Mesela bir yüz tanıma işlemi yapacaksın, işte tam karşıdan baksın, işte ışığı harika olsun, işte gözler açık, bilmem ağız şöyle dursun falan filan bunlara dikkat edilir de.
+
+247
+00:33:52,567 --> 00:33:56,467
+Şimdi bunu yaptığınızın sıkıntı ne olur sizce? Size sorayım.
+
+248
+00:33:57,407 --> 00:33:59,707
+Bu kadar böyle harika örneklerle getirsek.
+
+249
+00:33:59,707 --> 00:34:02,467
+Kötü bir örnek geldiği zaman anlayamazsın.
+
+250
+00:34:02,467 --> 00:34:15,987
+Evet şimdi kötü örnek şeyden uzaklaştıkça sizin öğrettiğiniz eğitim datasındaki karakteristikten uzaklaştıkça başarınız düşer.
+
+251
+00:34:15,987 --> 00:34:19,047
+Şimdi mesela bunlara daha çok odaklanıyor.
+
+252
+00:34:19,387 --> 00:34:28,807
+Yani daha karakteristiği yakalamak için müdahalesiz örneklerin eğitimde kullanılmasına daha çok odaklanıyor.
+
+253
+00:34:28,808 --> 00:34:36,268
+böyle hani elle cımbızla tek tek seçmek yerine müdahalesiz örneklerin kullanılmasına daha çok odaklanıyor.
+
+254
+00:34:41,067 --> 00:34:58,267
+Şimdi buradaki subsampling de bizim yapmaya çalıştığımız şey şu, ben elimdeki örnekleri az sayıdaysa özellikle hem eğitimde hem teste kullanayım ki daha iyi bir genellemeye gideyim istiyorum.
+
+255
+00:34:58,547 --> 00:35:26,787
+o zaman da döndüre döndüre yani böyle işte random seçe seçe kullanıyorum. Yaptığım şey bu. Random seçe seçe kullanıyorum. Ama burada yine şöyle bir şey olabiliyor. Random seçerken de aynı örnekler defalarca teste yer almasına rağmen trende yer almayabilir veya tam tersi olabilir. Yani bu aslında çok da şahane bir yaklaşım olmayabilir her zaman. Şimdi dataset'iniz büyükse bu kullanılıyor bir kere onu söyleyeyim. Sıkıntısız kullanılıyor.
+
+256
+00:35:26,787 --> 00:35:43,567
+ama ana problemlerini tekrar edecek olursak birincisi bir takım örneklerin trende veya teste yaranmayışı olabilir. Birincisi bu. İkincisi yine az önce söylediğim gibi çok iyi örnekler eğitimde, çok iyi örnekler testi de olabilir bu sefer.
+
+257
+00:35:43,568 --> 00:36:03,568
+bütün örnekler hem eğitimde hem teste yaranmadı ya bu tabii sıkıntılı bir problem. Bunun önüne geçmemiz gerekir. Biz eğer şeyi sağlayabilirsek bütün örneklerin hem eğitimde hem de teste bulunabilmesini sağlayabilirsek bu daha doğru olur.
+
+258
+00:36:03,567 --> 00:36:26,667
+Bunun için de kullanılan yöntem cross-validation. Şimdi burada yapılan şey elinizdeki bütün örneklerin k-fold cross-validation denilen şey k alt parçaya bölünmesi her adımda bir parçayla test k-1 parçayla eğitim yapılması.
+
+259
+00:36:26,667 --> 00:36:37,207
+Şimdi burada bir şey daha önemli, onu özellikle söylemek istiyorum. Bu parçalar yapılırken stratified hale getirilir.
+
+260
+00:36:38,407 --> 00:36:45,927
+Stratified hale getirilmesi ise şudur, stratified daha önce söylemedi mi? Söylemedim herhalde.
+
+261
+00:36:46,867 --> 00:36:52,747
+Şimdi şöyle düşünün, hiçbir yerde söylemedim mi stratified hale getirilmesi? Söylememişim peki.
+
+262
+00:36:52,747 --> 00:36:55,007
+burada söyleyeyim.
+
+263
+00:36:55,408 --> 00:36:59,667
+Subset are stratified before the cross-validation is per font dediği şey şu.
+
+264
+00:37:00,167 --> 00:37:01,787
+Arkadaşlar şöyle bir şey var.
+
+265
+00:37:01,908 --> 00:37:04,647
+Diyelim ki iki sınıfınız var.
+
+266
+00:37:04,967 --> 00:37:05,707
+Şeyi düşünelim.
+
+267
+00:37:05,908 --> 00:37:08,928
+İşte bu kredi kartı sahtekarlık tespit sistemini düşünelim.
+
+268
+00:37:10,387 --> 00:37:14,128
+A sınıfınız normal datayı temsil ediyor.
+
+269
+00:37:14,128 --> 00:37:22,408
+B sınıfınız da sahtekarlık yapılan datayı, transactionları temsil ediyor.
+
+270
+00:37:22,747 --> 00:37:28,607
+Şimdi biz şey probleminden bahsetmiştik bu yine hastalık teşhisi vesaire meselesinde de olduğu gibi.
+
+271
+00:37:29,107 --> 00:37:33,947
+Sahtekarlık için bir datanız varsa normal işte bin datanız var falan.
+
+272
+00:37:34,467 --> 00:37:39,007
+İşte siz bunları yine bir takım işte şey yapmaya çalıştınız, dengelemeye çalıştınız.
+
+273
+00:37:39,467 --> 00:37:42,947
+Sahtekarlık için bir datanız varsa normal için on datanız var.
+
+274
+00:37:42,947 --> 00:37:55,268
+Şimdi hem şeyde hold out metodunda hem de dikkat edin bakın cross-validation'da şey yapıyorsunuz datayı döndüre döndüre kullanıyorsunuz aslında.
+
+275
+00:37:55,268 --> 00:37:58,987
+Yani bir kısma eğitimde yer alıyor bir kısmı teste yer alıyor değil mi?
+
+276
+00:37:59,947 --> 00:38:10,487
+Şimdi burada data karışıkken yani hiç sınıfına bakmadan şey yaparsanız kullanırsanız şu sıkıntı da olabilir.
+
+277
+00:38:10,488 --> 00:38:24,387
+Ben diyorum ki mesela işte oral olarak 10 normal sınıf bir sahtekarlık sınıfından alsam tamam yine başarılı bir modelim olacak diyorum. Tamam mı? Ama
+
+278
+00:38:27,635 --> 00:38:40,915
+eğitim ve test için datayı ayırırken random da seçsem, bölerek de seçsem, eğer sınıfına bakmadan bir seçimi yaparsam şöyle bir şey olabiliyor.
+
+279
+00:38:40,915 --> 00:38:54,755
+O seçtiğim eğitim datasının içerisinde 10'a 1 oranında olacağına diyelim ki 20'ye 1 oranında 20 normal bir sahtekarlık datası olabilir.
+
+280
+00:38:55,255 --> 00:38:57,396
+Anlatabildim mi? Bunu önlemeniz lazım.
+
+281
+00:38:57,635 --> 00:39:15,415
+Stratified dediğimiz şey bu. Şey yaparken eğitim datasını oluştururken de test datasını oluştururken de diyelim random mı seçiyorsunuz? 10 tane normalden seçeceksiniz, bir tane sahtekarlık olandan seçeceksiniz.
+
+282
+00:39:15,415 --> 00:39:40,716
+işte cross-validation yapıyorsunuz parçalara böleceksiniz oluşturduğunuz o işte k-1 tane eğitim için bir tane test için dediniz ya o k-1 tanenin içerisinde de normal sınıfa ait örnek sayısı 10'sa sahtekarlık sınıfına ait örnek sayısı 1 olacak tamam mı?
+
+283
+00:39:40,716 --> 00:39:50,915
+oranı koruyacaksınız. Stratify bu demek. Yoksa eğer şey yapmadan, sınıfların bulunma oranına bakmadan gelişi güzel seçerseniz farkına varmadan,
+
+284
+00:39:51,455 --> 00:40:00,095
+diyelim ki eğitim datamızda 20 tane normale bir tane sahtekarlık olur. O da sizin arzu ettiğiniz sonucu vermez.
+
+285
+00:40:00,216 --> 00:40:05,735
+Anlatabildim ne demek istediğimi. Buna dikkat edin, bu çok önemli.
+
+286
+00:40:05,735 --> 00:40:11,135
+Anladınız mı? Soru var mı burada aklınıza takılan?
+
+287
+00:40:14,963 --> 00:40:15,803
+Orada mısınız?
+
+288
+00:40:15,903 --> 00:40:16,543
+Anladım hocam.
+
+289
+00:40:17,123 --> 00:40:17,283
+Hı?
+
+290
+00:40:19,243 --> 00:40:20,003
+Yok musun?
+
+291
+00:40:20,444 --> 00:40:21,203
+Anladım hocam.
+
+292
+00:40:21,663 --> 00:40:40,903
+Ben anladım tamam. Peki çok teşekkürler. Herkesin de anladığını varsa yok. Bu önemli çünkü bu gibi şeyler. Şimdi bakın aslında bunlar şey oluyor böyle detay olduğu için aslında ben anlatınca aa ne var ki bunda tabii ki böyle yapılmalı falan diye geliyor olabilir ama gerçek uygulamada farkına varılmıyor.
+
+293
+00:40:40,903 --> 00:40:54,283
+Bunlar problem yaşadıkça ben bunu ona bir diye planlamıştım nasıl oldu da ben eğitim yaparken bu oran bozuldu falan dediğiniz noktada fark ediyorsunuz ki ona dikkat etmemişsiniz mesela.
+
+294
+00:40:54,283 --> 00:41:05,203
+Öyle olunca da başarı oynamış gitmiş yani siz o oranı korumaya çalışmanız gerekirken hiç farkına varmamışsınız öyle bir şey yapmanız gerektiğine.
+
+295
+00:41:05,203 --> 00:41:12,543
+Aslında burada bütün olay detaylarda ben size söyleyeyim makine öğrenmesiyle ilgili yapılan çalışmalarda bütün olay detaylarda saklı.
+
+296
+00:41:13,003 --> 00:41:23,303
+Genel bilgi mutlaka herkesin iyi olması gereken bir şey ama gerçek dünya uygulamalarında başarı detaylarda saklı oluyor.
+
+297
+00:41:23,303 --> 00:41:29,283
+Peki cross-validation devam edeceğim ama sıkılmışsınızdır büyük bir ihtimalle.
+
+298
+00:41:29,423 --> 00:41:31,003
+15 dakika bir ara verelim.
+
+299
+00:41:31,004 --> 00:41:38,324
+10.40 gözüküyor benim saatim. 15 dakika. 11'e 5 kıl devam ederiz. Oldu mu?
+
+300
+00:41:40,644 --> 00:41:42,624
+Tamam hocam.
+
+301
+00:58:19,027 --> 00:58:45,467
+Evet, şimdi kaldığımız yerden devam edelim. Şimdi Holdout metodda şey bu şekilde, yapı bu şekilde bir data setiniz var. Data setinizi önce eğitim ve test için iki ana parçaya bölüyorsunuz. İşte genelde oranlar 3'te 2 eğitim, 3'te 1 test falan gibi olur veya işte bazılarında %80, %20 gibi olur. Yani eğitim ağırlıklı test daha az olacak şekilde.
+
+302
+00:58:45,467 --> 00:58:50,587
+ve burada işte eğitim örnekleriyle bir model oluşturuyorsunuz.
+
+303
+00:58:51,347 --> 00:58:55,767
+Doğrulama örnekleriyle modelin şeylerini belirliyorsunuz.
+
+304
+00:58:56,067 --> 00:59:02,687
+Ya parametrelerini belirliyorsunuz ya işte şeyi belirliyorsunuz.
+
+305
+00:59:02,787 --> 00:59:06,967
+Nedir işte K'n yapım komşuysa K kaç olacak?
+
+306
+00:59:07,167 --> 00:59:12,647
+İşte karar ağacı ise ağacı ne kadar budalmalıyız vesaire bu tür işlemleri yapıyorsunuz.
+
+307
+00:59:12,647 --> 00:59:42,087
+arkasından şeyiniz var işte birden fazla modeliniz var aslında bütün bu modeller için diyelim ki işte karar ağacı, K, en yakın komşuluk, N, Y, S farklı modelleriniz var bütün bu modeller için şeyi belirliyorsunuz en iyi parametreli en iyi modeli belirliyorsunuz ondan sonra da bunlara eğitme hiç karışmamış test datasıyla başarı ölçüp diyorsunuz ki
+
+308
+00:59:42,087 --> 00:59:47,927
+ve sistemimizin başarısı budur. Başarılması ölçüleceğini de birazdan anlatacağım zaten.
+
+309
+00:59:47,927 --> 00:59:51,007
+İşte başarı değerlendirmesinin nasıl yapılacağını.
+
+310
+00:59:51,407 --> 00:59:54,748
+Şimdi Pol Dağıt'ta yaptığımız şey bizim burada bu.
+
+311
+00:59:55,007 --> 00:59:57,047
+Şimdi buradaki sıkıntının ne olduğunu söyledik.
+
+312
+00:59:57,127 --> 01:00:00,667
+Buradaki sıkıntı bu şekilde datayı üç parçaya ayırmak.
+
+313
+01:00:00,767 --> 01:00:04,947
+Elimizde özellikle az data varsa sıkıntılı.
+
+314
+01:00:05,087 --> 01:00:06,187
+Birinci problemimiz bu.
+
+315
+01:00:06,407 --> 01:00:10,327
+İkincisi de işte randomda seçsek öyle denk gelebilir ki
+
+316
+01:00:10,327 --> 01:00:21,167
+eğitimdeki datalar teste yaranmaz, testtekiler eğitimde yaranmaz. Özellikle az örnek varsa eğitim kümlerinizde yeterince iyi bir genellemeye gidememiş olabilirim.
+
+317
+01:00:21,167 --> 01:00:34,707
+Şimdi bunun için önerilen yaklaşım cross-validation, çapraz doğrulama yaklaşımı. Burada şöyle bir, burada iki tane şey var, kullanım var, onu söyleyeyim. Şimdi birincisinde şöyle yapılıyor.
+
+318
+01:00:34,707 --> 01:00:57,347
+Eldeki data K parçaya bölünüyor. K-fold cross-validation yaklaşımında. Şimdi bunu burada mesela 5 parçaya böldüysek 4 parçası eğitim için kullanılıyor, bir parçası test için kullanılıyor.
+
+319
+01:00:57,347 --> 01:01:10,127
+ondan sonra işte 5 parçaya böldüysek 5 defa işlem tekrarlanılarak her örneğin eğitimde ve testte yer alması sağlanıyor ve ortalama hata hesaplanıyor.
+
+320
+01:01:10,127 --> 01:01:20,907
+Şimdi mesela örneğin burada şeyse diyelim ki işte 5 parçaya böldünüz birinci parça test geri kalanı eğitim için ayrıldı.
+
+321
+01:01:20,907 --> 01:01:29,247
+Burada işte 100 tane örneğiniz vardı. Dolayısıyla her adımda 20 parça test için kullanıldı.
+
+322
+01:01:29,747 --> 01:01:34,687
+Ekürisi hesaplanıyor. Şimdi ben size başka başarı ölçme yöntemlerini de göstereceğim.
+
+323
+01:01:34,807 --> 01:01:42,507
+Yani ekürisi dediğim 20 tane örneğim vardı. 11'inde doğru sonucu buldum. O kadar basit bir değerlendirme.
+
+324
+01:01:42,507 --> 01:01:44,607
+Ve ortalama başarı alındığında
+
+325
+01:01:44,608 --> 01:01:46,608
+Música
+
+326
+01:01:45,364 --> 01:01:59,704
+işte %73 sistemin başarısı bulundu. Şimdi burada şey yapılırken data eğitim ve test için bölünürken iki tür yaklaşım var aslında.
+
+327
+01:02:00,223 --> 01:02:09,523
+Birisi şöyle yapıyorlar yani bunu hiç şey yapmadan bu şekilde ayırıp işte bu eğitim datasıdır.
+
+328
+01:02:09,523 --> 01:02:35,023
+her doğrulama datası da budur. Ondan sonra ortalama hata da budur şeklinde böyle bir işlem yapılıyor. Yani döndüre döndüre. Yani ayrı bir test datası kullanılmadan aslında eğitim ve validasyon için işlem yapılarak böyle bir şey yapılıyor. Bir yaklaşım bu. Bir yaklaşımda da yine test datasını ayrı tutup hiç karıştırmadan
+
+329
+01:02:35,023 --> 01:02:44,023
+şey nedir? Cross-validation yaptığınız data içerisinde şey yapılıyor.
+
+330
+01:02:44,023 --> 01:02:49,984
+Yani bu maviler validasyon datası olmak üzere parametreler belirleniyor.
+
+331
+01:02:50,264 --> 01:02:53,183
+Başarı ölçümü farklı parametreler için yapılıyor.
+
+332
+01:02:53,724 --> 01:02:56,563
+Arkasından test datası ile sonuç başarısı veriliyor.
+
+333
+01:02:56,664 --> 01:02:57,524
+Yapılan şey bu.
+
+334
+01:02:57,523 --> 01:03:10,383
+Yani şurada bakacak olursak işte en iyi model belirleniyor, model seçiliyor sonra test datasıyla başarı ölçülüyor.
+
+335
+01:03:10,943 --> 01:03:15,503
+Nasıl peki belirleniyor yapılırken?
+
+336
+01:03:15,683 --> 01:03:17,643
+Aynen az önceki gibi aslında.
+
+337
+01:03:18,203 --> 01:03:21,943
+Mesela işte K parçayı ayırdınız.
+
+338
+01:03:22,463 --> 01:03:25,703
+Bir parçasını ayırıyorsunuz validasyon için.
+
+339
+01:03:25,703 --> 01:03:47,583
+ondan sonra işte geri kalan en eksi bir parçası ile k en yakın komşuluk için mesela işte k'nın farklı değerleriyle her seferinde mesela k'nın bir, üç, beş, yedisi için deneyecekseniz bu k-fold cross-validation'ı bir için ayrı yapacaksınız, üç için ayrı yapacaksınız, beş için ayrı, yedi için ayrı yapacaksınız.
+
+340
+01:03:47,583 --> 01:03:50,803
+her seferinde şunu yapacaksınız.
+
+341
+01:03:50,903 --> 01:03:57,483
+Mesela K3 için yapıyorsanız şeyi 5 parçaya mı böldünüz cross-validation'da?
+
+342
+01:03:57,923 --> 01:04:01,864
+4 parçayla eğittiniz, 1 parçayla test ettiniz, başarı ölçtünüz.
+
+343
+01:04:01,864 --> 01:04:04,743
+Bunu yaptınız, ortalama başarıyı buldunuz.
+
+344
+01:04:04,923 --> 01:04:07,763
+Ne oldu? K eşittir 3 için bir ortalama başarı buldunuz.
+
+345
+01:04:08,243 --> 01:04:14,343
+Aynı şeyi K eşittir 5 için denediniz gibi deneye deneye en ilgun K değerini buldunuz.
+
+346
+01:04:14,343 --> 01:04:25,063
+sonra çıkıp dışarıki şeyle de test ediyorsunuz. Dışarıda kalan parçayla da test ediyorsunuz. Burada yapılan şey bu.
+
+347
+01:04:27,323 --> 01:04:36,763
+Mesela burada şeyden bahsetmiş, en çok kullanılan cross-validation eğer elinizde örnek yeteri kadar varsa tenfold cross-validation'dır.
+
+348
+01:04:36,763 --> 01:04:45,303
+yani elimizdeki örnek kümesini 10 parçaya ayırarak yapılan cross-validation'dir.
+
+349
+01:04:45,303 --> 01:04:49,584
+Sorunuz varsa sorabilirsiniz.
+
+350
+01:04:57,331 --> 01:05:15,272
+arada bir konuşun, ses verin ben yine sizi duymuyorsam eğer sağdan yazın duymuyorsun falan diye. Şimdi o zaman kaç parçaya bölme işini ne yapacağız? K parçaya bölebilirsiniz. K genelde ya 5 alınır ya 10 alınır bölme işi yaparken. Şu şeyi anladınız mı? Pardon.
+
+351
+01:05:19,380 --> 01:05:23,740
+şu meseleyi anladınız mı burayı? Tekrar etmemi ister misiniz?
+
+352
+01:05:28,692 --> 01:05:29,671
+Herkes anlayın.
+
+353
+01:05:29,671 --> 01:05:30,251
+Anladın hocam.
+
+354
+01:05:31,211 --> 01:05:48,692
+Yani K parçayı bölüyorsunuz. K parçanın K-1 parçası ile eğitiyorsunuz. Bir parçası ile validate ediyorsunuz. Ortalama hatayı hesaplıyorsunuz. Bunu işte şeyler için test atasıyla da şey yapıyorsunuz. Başarı ölçüyorsunuz.
+
+355
+01:05:48,692 --> 01:06:11,952
+ortalama hatayı hesaplıyorsunuz. K eşittir 3 için yaptınız. Mesela K'in yakın komşulukta. K 5 için yaptınız. K 7 için yaptınız. Çok farklı K değerleri için yaptınız. En iyisini belirlediniz. Test satısıyla da en iyisinin başarısını ölçüyorsunuz. Yaptığınız şey bu. Mesela burada işte anlatıyor bunun nasıl yapıldığını.
+
+356
+01:06:11,951 --> 01:06:30,671
+Peki şimdi kaç parçaya böleceğiz? Dediğim gibi aslında elinizdeki data el veriyorsa en çok kullanan tenfold cross-validation 10 parçaya bölüp kullanmak. Eğer elinizdeki şeyse, data yetersizse o zaman leave one out cross-validation
+
+357
+01:06:30,671 --> 01:06:47,291
+Limanat cross-validation'da yapılan şey şu elinizdeki data n örnekten oluşuyorsa n-1 ile eğitiyorsunuz, 1 ile doğruluyorsunuz.
+
+358
+01:06:47,291 --> 01:06:54,291
+Yani bir örnekle doğruluyorsunuz her adımda. Böylece bütün örneklerin hem eğitimde hem doğrulamada yer almasını sağlıyorsunuz.
+
+359
+01:06:54,291 --> 01:07:05,011
+hem de az datanız varken çok fazla datanızı eğitim, doğrulama, test vs. için parçalamamış oluyorsunuz. Yaptığımız şey bu.
+
+360
+01:07:06,272 --> 01:07:12,011
+Şimdi genelde bütün model oluşturma sistemlerinde yapılan şudur, onu da söyleyeyim.
+
+361
+01:07:12,552 --> 01:07:19,471
+İşte modeli eğittim, doğruladım, bilmem test ettim, bitti, bütün işim bitti, artık ben modelimi belirledim.
+
+362
+01:07:19,471 --> 01:07:34,491
+dedim ki işte bilmem en iyi model karar ağacıdır. Bu dedim en iyi budanmış karar ağacı da şudur artık elimde ben bu öğrenme modelim bu karar ağacı ile yapılacak dedim.
+
+363
+01:07:35,431 --> 01:07:47,391
+Bunu dedikten sonra genellikle yapılan şey eldeki bütün datayı karıştırıp bununla eğitim sistemi öyle ortaya koymaktır.
+
+364
+01:07:47,391 --> 01:08:07,992
+Bunun da yapılması sebebi şeydir. Hep aynı hikaye. Elimdeki örnek azdı. Ben %60'ıyla eğittim, %40'ıyla test ettim. Olmasın. İş bittikten sonra artık ben bütün parametrelere karar verdim. Ne bileyim, K'ın yakın konuşulukta K3 olacak dedim vs.
+
+365
+01:08:07,992 --> 01:08:18,992
+artık o kararı verdikten sonra elimdeki bütün eğitim hükümesindeki veriler ile sistemi eğitip modeli oluştururum.
+
+366
+01:08:19,872 --> 01:08:22,992
+Böylece hiçbir şeyi boşa harcamamış olurum.
+
+367
+01:08:25,031 --> 01:08:26,611
+Hep yapılan şey budur aslında.
+
+368
+01:08:27,932 --> 01:08:28,172
+Peki.
+
+369
+01:08:30,372 --> 01:08:32,912
+Stratified olmasına dikkat edin dediğim gibi.
+
+370
+01:08:32,912 --> 01:08:41,072
+yani oranlar hep farklı sınıflarda örnekleriniz için oranları korumaya dikkat edin. Bu da önemli bir konu.
+
+371
+01:08:42,111 --> 01:08:54,091
+Leave on out us anlattım. Ha bootstrap. Şimdi yapılabilecek bu datayı eğitim ve test için ayırırken yapılabilecek yaklaşımlardan birisi bootstrap metodu.
+
+372
+01:08:54,091 --> 01:09:01,091
+Bu strepte de yapılan şey şu, yine random seçiyorsunuz ama burada şöyle random seçiyorsunuz
+
+373
+01:09:01,091 --> 01:09:11,091
+Mesela diyorsunuz ki normalde benim 5 tane örneğim vardıysa random seçtiğimde de eğitimde mutlaka 5 örnek olacak diyorsunuz
+
+374
+01:09:11,091 --> 01:09:17,371
+Ondan sonra random 5 tane örnek seçiyorsunuz, aynı örnekten birden fazla seçebilirsiniz
+
+375
+01:09:17,371 --> 01:09:21,951
+Testte de seçilmemiş örnekleri kullanıyorsunuz, burada yaptığınız şey bu
+
+376
+01:09:22,771 --> 01:09:28,631
+ve bunu işte yine KDFA tekrar ediyorsunuz.
+
+377
+01:09:33,395 --> 01:09:58,375
+Farkı tekrardan söyleyeyim. Random seçerken aynı örneği birden fazla defa seçebilirsiniz. Seçilmeyen örnekleri de teste almış oluyorsunuz. Bunlar yani çeşitli yaklaşımlar. Peki en çok hangisi kullanılıyor? Dediğim gibi iyi bir dataset'iniz varsa işte genelde %60 veya %70 train, %30 test olacak şekilde ikiye bölersiniz.
+
+378
+01:09:58,375 --> 01:10:09,655
+train'i de train validasyon diyebilirsiniz. Öyle kullanırsınız. Çok fazla örneğiniz yoksa cross-validation yaparsınız. En çok kullanan yaklaşımlar bunlar.
+
+379
+01:10:10,236 --> 01:10:17,895
+İşte burada ben bir özet çıkartmıştım. Eğer çok örneğiniz varsa train test validation için ayıracaksınız.
+
+380
+01:10:17,895 --> 01:10:29,395
+Bunu bahsetmedim, kısaca bahsedeyim. Ambalans data olması nedir? Bunu ayrı bir ders olarak zaten anlatacağım ama burada da bundan bahsedeyim.
+
+381
+01:10:29,395 --> 01:10:39,455
+Şeye dikkat edilmesi gerekiyor. Hep konuştuğumuz gibi aslında gerçek dünya problemlerinde data oranlı olmayabiliyor.
+
+382
+01:10:39,455 --> 01:10:51,495
+Yani mesela bir yüz tanımı yapacaksanız olan oranlıdır. Çünkü işte 10 kişi tanıyacaksanız 10 kişinin eşit oranda yüz datası elinizde olur. Yani çünkü kontrollü bir şey bu aslında.
+
+383
+01:10:51,495 --> 01:11:10,175
+işte ne bileyim araba modeli tanıyacaksanız o da olur falan ama az bulunan örneklerin olduğu işte sağlık problemleri işte hastalık teşhis ettim vesaire gibi problemlerde her zaman için normal data bulmak hastalık data bulmaktan kolaydır.
+
+384
+01:11:10,175 --> 01:11:23,895
+veya işte bu kredi kartı sahtekarları yok işte bilinen ağ saldırısı mesela ağ saldırısı yapılan orada da normal durum yani günlerce dinlersin network'ü hep normal data vardır.
+
+385
+01:11:24,476 --> 01:11:30,355
+Saldırı datası bulmak daha zordur. Şimdi o zaman peki an balans olduğunda ne yapacaksınız?
+
+386
+01:11:30,355 --> 01:11:42,395
+İki temel yaklaşım var. Birincisi az örnek olan sınıfınızdaki kadar çok örnek olan sınıfınızdaki örnek sayısını azaltabilirsiniz.
+
+387
+01:11:42,395 --> 01:11:52,715
+Bu iyi bir şey değil çünkü zaten az örnek olan sınıfınızda az örnek var. Azaltmayı eşit yapmayıp oransal yapabilirsiniz.
+
+388
+01:11:52,715 --> 01:12:04,175
+Yani örneğin A saldırısı datasında bir tane şey olacaksa saldırı datasına karşılık kaç tane normal data olursa başarılı bir sınıflandırma yapılabiliyor.
+
+389
+01:12:04,775 --> 01:12:06,715
+Bunu ölçersiniz, orana bakarsınız.
+
+390
+01:12:07,415 --> 01:12:19,815
+Yani mesela 1'e 5 oranında iyi başarılı bir modeliniz oluyorsa tamam dersiniz ki biz bu oranı 1'e 5 tutacağız veya 1'e 10 oranında başarılı bir modeliniz oluyorsa tamam biz bu oranı 1'e 10 tutacağız dersiniz.
+
+391
+01:12:19,815 --> 01:12:28,795
+yani öyle serbest bırakmazsınız ne kadar işte bir sınıftan var ne kadar öbür sınıftan var bırakayım öyle kullanayım değil.
+
+392
+01:12:29,315 --> 01:12:40,515
+Buna dikkat edersiniz. Neden? Çünkü mesela saldırı olan sınıftan bir örneğiniz var, malanan sınıftan yüz örneğiniz varsa ciddi bir şey sıkıntısı yaşarsınız.
+
+393
+01:12:40,515 --> 01:12:48,175
+Genellemeye gitme sıkıntısı yaşarsınız. Öbür taraf çok baskın çünkü. O yüzden onların da belli bir oranda olması gerekir.
+
+394
+01:12:48,175 --> 01:13:15,476
+Şimdi birinci yapabileceğiniz şey en iyi oranın ne olacağını bu şekilde yine testlerle belirlemek. İkinci augmentation yapılıyor şu anda çok fazla. Özellikle derin öğrenme modellerinin başarılarının çok yüksek olmasına bağlı olarak şeyleri de var onların işte mesela duymuş olabilirsiniz, duymamışsanız da ben size son derslerde bir derin öğrenme özetleri de geçeceğim.
+
+395
+01:13:15,476 --> 01:13:19,856
+Generative Advisory Network diye bir şey var mesela yaklaşımlarda.
+
+396
+01:13:20,384 --> 01:13:28,783
+Bu sahte data üretiyor. Çok güzel sahte data üretiyor. Mesela sahte data üreterek arttırabilirsiniz elinizdeki örnekleri.
+
+397
+01:13:30,184 --> 01:13:37,384
+Aynı örneği işte ne bileyim değiştire değiştire kullanıp şey yapabilirsiniz, örneğinizi arttırabilirsiniz.
+
+398
+01:13:38,203 --> 01:13:47,884
+Mesela ne bileyim bir görüntü datasında işte görüntüyü biraz sağ çevirerek bir kısmını keserek vesaire arttırabilirsiniz.
+
+399
+01:13:47,884 --> 01:14:11,724
+Bu şekilde öncelikle bir unbalance, balance meselesini de çözmek, başarıyı arttırmak açısından önemli. Üçüncü olarak eğer azlatanız varsa cross-validation kullanın, old out yerine. Dördüncü olarak mutlaka parametreleri belirlemek için test atasını işe hiçbir zaman karıştırmayın.
+
+400
+01:14:11,724 --> 01:14:22,924
+teste sadece başarı ölçün ve en önemlisi işte overfittingden kaçının, overfittingde modelin ezberlemeye gitmesinin önüne geçin.
+
+401
+01:14:23,003 --> 01:14:29,123
+Bunu nasıl anlarsınız? Eğittiniz başarı çok yüksek, test ettiniz başarı çok düşükse overfitte olmuştur.
+
+402
+01:14:29,464 --> 01:14:33,824
+Modelinizi tekrar gözden geçirmeniz gerekiyordur. Soru var mı buraya kadar?
+
+403
+01:14:36,144 --> 01:14:37,223
+Yok hocam.
+
+404
+01:14:37,803 --> 01:14:41,284
+Harika. Anladığınız için mi yok, bayıldığınız için mi yok?
+
+405
+01:14:41,723 --> 01:14:45,723
+Yoksa yani iyi misiniz?
+
+406
+01:14:49,684 --> 01:14:55,684
+İyiyiz hocam.
+
+407
+01:14:55,684 --> 01:14:56,684
+Tamam peki.
+
+408
+01:14:56,684 --> 01:14:57,684
+Efendim?
+
+409
+01:14:57,684 --> 01:14:58,684
+Bir şey sorabilir miyim?
+
+410
+01:14:58,684 --> 01:14:59,684
+Evet tabii.
+
+411
+01:14:59,684 --> 01:15:05,684
+Slide'ları paylaşabilir misin acaba? Ders hazırlık için en azından kullanmak için?
+
+412
+01:15:05,684 --> 01:15:18,684
+Slide'lar ders öncesi hazır olmuyor aslında. Ders tabağı falan ancak bitebiliyor. Çünkü verdiğim bir, iki, üç, dört tane farklı ders var ve farklı ders var.
+
+413
+01:15:18,684 --> 01:15:27,764
+ve farklılarken hepsi birbirinden farklı. Mesela biri görüntü işleme, biri algoritma analizi, birisi makine öğrenmesi, doğrultusu da veri yapıları.
+
+414
+01:15:28,544 --> 01:15:35,303
+Dolayısıyla hepsi için ayrı slide hazırlıyorum. İnan ki sabaha bitiyor slide'lar. Paylaşabilir miyim? Valla paylaşabilirim yani.
+
+415
+01:15:36,803 --> 01:15:45,404
+Yani bir hafta öncesinde bitiyor da şey değil öyle öncesinde çok hazır bir slide'ım yok açıkçası. O şekilde yani olabilir.
+
+416
+01:15:45,403 --> 01:15:48,643
+Ders sonunda da paylaşsanız olur.
+
+417
+01:15:49,683 --> 01:16:04,603
+Şöyle nasılsa kayıt olduğu için pek paylaşma bana nedense şey gelmiyor. Bakayım belki paylaştım. Kaydediliyor. Eskiden paylaşırdım ben dersler bittikten sonra ama şu anda nasılsa kaydedildiği için bilmiyorum. Bakalım belki paylaşırım.
+
+418
+01:16:07,663 --> 01:16:09,463
+Hocam ben de bir şey sorabilir miyim?
+
+419
+01:16:09,743 --> 01:16:10,263
+Buyurun hocam.
+
+420
+01:16:10,264 --> 01:16:17,984
+Mesela modeli işte eğitim test olarak böldük, işte test ettik, parametreleri de optimiz ettik, her şeyden memnunuz.
+
+421
+01:16:18,404 --> 01:16:18,684
+Evet.
+
+422
+01:16:18,684 --> 01:16:27,264
+En son bu gerçek hayata çıkacağı zaman o eğitimle, eğittiğimiz kısmıyla o modeli mi çıkarıyoruz yoksa aynı parametrelerle bütün %100 verisiyetini kullanıp mı?
+
+423
+01:16:28,103 --> 01:16:31,284
+İşte onu söyledim çok güzel, bir kere daha tekrar edeyim.
+
+424
+01:16:31,804 --> 01:16:39,684
+Gerçek dünyaya çıkarırken normalde şey yapılır, yani eğitim değişim için, şimdi sen bütün parametrelerin belirledin ya nasılsa,
+
+425
+01:16:40,263 --> 01:16:48,883
+başka parametreler de var. Mesela yapay nöron ağ kullanıyorsan ileriki haftalarda göreceğiz bunu. A kaç katmanlı olacak?
+
+426
+01:16:48,883 --> 01:17:09,023
+İşte dedimler orada bir takım ayrı şey parametreler de var. Kullanılan parametreler de var. O parametreler ne olacak falan öyle şeyler de var. Bunları belirledin, set ettin. En iyi modelin ne olacağına karar verdin. O bittikten sonra train, test, validation hepsi ne varsa karıştırılır. Sisteme itilir ve gerçek dünyaya öyle verilir.
+
+427
+01:17:10,264 --> 01:17:19,523
+Yani gerçekte yapılan şey odur. Bunun da yapılma sebebi dediğim gibi çok örneğin varsa yapmazsın bunu.
+
+428
+01:17:19,523 --> 01:17:26,904
+Çünkü mesela işte ne bileyim yine aynı örneği veriyorum sık sık ama bu kredi kartı sahtekarını yapıyorsun.
+
+429
+01:17:27,103 --> 01:17:31,404
+İşte bir yıllık data ile çalışmışsın zaten. Çok büyük data var elinde.
+
+430
+01:17:31,844 --> 01:17:37,363
+Yani orada şey gitmeyebilirsin işte bir daha tekrardan eğitimi bilinenliği birleştirdin falama gerek yok.
+
+431
+01:17:37,363 --> 01:17:53,223
+ama genelde çalışılan problemlerin çoğunda data toplamak çok büyük bir sıkıntı. Zaten az datan oluyor. O zaman da gerçek dünyaya çıkacak modeli bütün datayla eğiterek vermek doğru bir yaklaşım.
+
+432
+01:17:54,503 --> 01:17:57,523
+Peki, şimdi gelelim başarıyı nasıl ölçeceğiz?
+
+433
+01:17:57,523 --> 01:18:04,404
+Bu da yine dikkat edilmesi gereken bir şey.
+
+434
+01:18:05,264 --> 01:18:09,563
+İşte bu az önceki konu hangi modelin iyi olduğuna nasıl karar verirken
+
+435
+01:18:09,563 --> 01:18:14,344
+işte yaptınız K'in yakın komşuluk %90 başarı verdi.
+
+436
+01:18:14,344 --> 01:18:18,764
+İşte decision tree %91.5 başarı verdi.
+
+437
+01:18:18,863 --> 01:18:21,783
+Bilmem yapay nöron ağ %92 başarı verdi.
+
+438
+01:18:22,143 --> 01:18:24,344
+O zaman yapay nöron ağını seçer kullanırsınız.
+
+439
+01:18:24,343 --> 01:18:46,063
+kullanırsınız. Bu model evaluation'da yaptığımız şey bu doğrulama testleriyle en uygun modeli, en uygun modelinde en uygun parametrelerini belirlemek. Bunu yaptık. Şimdi geldik. Peki biz bu en uygun meselesine karar verirken başarıyı nasıl ölçmeliyiz kısmına? Önce iki sınıflı bir problemden bakalım.
+
+440
+01:18:47,252 --> 01:18:53,732
+Mutlaka bir confusion, karışıklık matrisi, confusion matrisi oluşturmanız gerekiyor.
+
+441
+01:18:54,131 --> 01:18:59,212
+Confusion matrisi dediğim şey şu, benim iki sınıfım var.
+
+442
+01:18:59,411 --> 01:19:02,451
+Yes, no, binary classification olduğunu düşünelim.
+
+443
+01:19:02,451 --> 01:19:21,772
+Yani işte normal harcama, sahtekarlık harcaması veya normal ağ hareketi, ağ sağlıyorsa hareketi veya işte hasta sağlam falan genelde zaten pek çok şeyde iki sınıf vardır ama olması önemli.
+
+444
+01:19:21,952 --> 01:19:23,531
+Şimdi çok sınıfı da göstereceğim.
+
+445
+01:19:23,531 --> 01:19:34,571
+Diyelim ki böyle iki sınıfınız varsa gerçek sınıfın doğru dediğine siz de doğru diyorsanız sizin sınıflandırma modeliniz de doğru diyorsa bu true pozitiftir.
+
+446
+01:19:35,491 --> 01:19:43,871
+Gerçek sınıfın doğru dediğine sizin şeyiniz modeliniz yanlış diyorsa bu false negatiftir.
+
+447
+01:19:44,411 --> 01:19:49,271
+Yani aslında pozitif olması gerekirken siz yanlış diyorsunuz false negatiftir.
+
+448
+01:19:49,272 --> 01:19:58,351
+gerçek sınıfı yanlış olmasına rağmen sizin modeliniz doğru diyorsa bu false pozitiftir.
+
+449
+01:20:00,652 --> 01:20:10,412
+Yani aslında yanlış olması gerekirken siz doğru dediniz veya gerçek sınıfı yanlışken siz de yanlış diyorsanız bu true negatiftir.
+
+450
+01:20:10,411 --> 01:20:13,631
+Burada önemli olan diagonalin yüksek olması.
+
+451
+01:20:13,811 --> 01:20:19,471
+Yani doğru dediğimiz şeylerin cevapların nedir?
+
+452
+01:20:19,871 --> 01:20:22,231
+Sınıflandırma sonuçlarının yüksek olması.
+
+453
+01:20:23,151 --> 01:20:26,851
+Fakat burada bir tek şey önemli değil.
+
+454
+01:20:27,071 --> 01:20:30,291
+Yani doğruların yüksek olması değil.
+
+455
+01:20:30,471 --> 01:20:32,091
+Yanlışların az olması da önemli.
+
+456
+01:20:32,231 --> 01:20:34,291
+Bakın şu anda bir şey problemi var.
+
+457
+01:20:34,431 --> 01:20:37,591
+Farkındaysanız COVID'de test sonuçları ile ilgili bir şey var.
+
+458
+01:20:37,591 --> 01:20:40,411
+herkes diyor ki
+
+459
+01:20:40,411 --> 01:20:42,511
+dikkat edin
+
+460
+01:20:42,511 --> 01:20:44,551
+test sonuçları yüzde kırk doğru
+
+461
+01:20:44,551 --> 01:20:45,331
+çıkıyor diyor
+
+462
+01:20:45,331 --> 01:20:47,651
+yüzde kırk doğru çıkıyor diyor
+
+463
+01:20:47,651 --> 01:20:48,951
+ama
+
+464
+01:20:48,951 --> 01:20:52,891
+yani true pozitifler konuşuluyor genelde
+
+465
+01:20:52,891 --> 01:20:54,871
+hiç şey konuşulmuyor
+
+466
+01:20:54,871 --> 01:20:56,692
+true negatifler konuşulmuyor
+
+467
+01:20:56,692 --> 01:20:58,371
+mesela veya yanlışların
+
+468
+01:20:58,371 --> 01:20:59,791
+nasıl olduğu ile ilgili
+
+469
+01:20:59,791 --> 01:21:01,351
+bir şey konuşulmuyor
+
+470
+01:21:01,351 --> 01:21:03,612
+yani pozitiflerin
+
+471
+01:21:03,612 --> 01:21:06,192
+yüzde kırk pozitif olanların yüzde kırkına
+
+472
+01:21:06,192 --> 01:21:07,412
+pozitif deniyor ama
+
+473
+01:21:07,412 --> 01:21:10,591
+negatif olanların yüzde kaçına negatif deniyor?
+
+474
+01:21:11,072 --> 01:21:12,872
+Bunu hala öğrenemedik, bilmiyoruz.
+
+475
+01:21:12,992 --> 01:21:15,712
+Yani her zaman şey önemli değildir.
+
+476
+01:21:15,832 --> 01:21:18,031
+True pozitifin ne olduğu önemli değildir.
+
+477
+01:21:18,132 --> 01:21:19,692
+True negatifin ne olduğu da önemli.
+
+478
+01:21:19,932 --> 01:21:20,951
+Probleminize göre.
+
+479
+01:21:21,951 --> 01:21:24,352
+False'ların ne kadar yüksek olduğu da önemlidir.
+
+480
+01:21:24,671 --> 01:21:26,852
+Buna sizin karar vermeniz gerekiyor.
+
+481
+01:21:26,852 --> 01:21:30,752
+Yani sizin için neyin önemli olduğunu sizin karar vermeniz gerekiyor.
+
+482
+01:21:31,292 --> 01:21:35,891
+Mesela burada çok sınıflı bir şey görüyorsunuz.
+
+483
+01:21:35,891 --> 01:21:38,091
+Problemin confusion matrisini görüyorsunuz.
+
+484
+01:21:38,151 --> 01:21:41,211
+Şimdi bakın, confusion matrisini biz niye kullanıyoruz?
+
+485
+01:21:42,211 --> 01:21:44,171
+İki sınıfken zaten sıkıntı yok.
+
+486
+01:21:44,352 --> 01:21:46,752
+Yani doğru demediyse yanlış demiştir.
+
+487
+01:21:46,811 --> 01:21:48,252
+Orada her şey ortada.
+
+488
+01:21:48,431 --> 01:21:56,371
+Fakat çok sınıflı bir problemde confusion matrisi size kimin kimle karıştığı hakkında bilgi verir.
+
+489
+01:21:56,431 --> 01:21:57,552
+Ve bu önemli bir şeydir.
+
+490
+01:21:58,171 --> 01:22:01,332
+Mesela burada activity recognition yapılmış.
+
+491
+01:22:01,472 --> 01:22:03,192
+Burada işte gerçek sınıflar var.
+
+492
+01:22:03,192 --> 01:22:05,071
+Burada da şeyler var.
+
+493
+01:22:05,891 --> 01:22:08,231
+prediktitlarsa tahmin edilen
+
+494
+01:22:08,231 --> 01:22:10,112
+sınıflar var. Şimdi bakıyorsunuz
+
+495
+01:22:10,112 --> 01:22:12,252
+%100, %100, %100 giderken
+
+496
+01:22:12,252 --> 01:22:13,612
+mesela run'ı
+
+497
+01:22:13,612 --> 01:22:15,811
+skip ile karıştırmış.
+
+498
+01:22:17,108 --> 01:22:32,587
+ve Wave 1'i de Wave 2 ile karıştırmış. Şimdi bir model kurarken iş şeyle bitmez. Ben modelin başarısını ölçtüm de bitmez. Sizin burada dönüp bir şeye bakmanız lazım. Yani niçin Run-Laskip'i karıştırıyor veya Wave 1 ile Wave 2'yi niye karıştırıyor?
+
+499
+01:22:33,368 --> 01:22:44,247
+Yani bunu çözmek için Confusion Matris kullanılır. Yani Confusion Matris'e baktığınızda kimin kimle karıştığını görürsünüz ve o problemi çözmeye odaklanırsınız.
+
+500
+01:22:44,247 --> 01:22:52,027
+mesela dersiniz ki V1 ile V2 birbirine çok benzeyen bir hareket. Ben bunları ayırmamalıymışım aslında mesela.
+
+501
+01:22:52,027 --> 01:23:03,987
+Yani bunlar aslında bu kadar detayda ayrılmasın doğru olmayan yani hatayı düşürmek için değil de ayırması doğru olmadığı için o iki sınıfı birleştirmeniz gerekiyor mesela.
+
+502
+01:23:04,487 --> 01:23:12,027
+Veya run-la skip'i niye durmadan birbirine karıştırıyor? Belki yanlış bir özellik kullandınız veya kullanmamız gereken bir özelliği kullanmadınız.
+
+503
+01:23:12,027 --> 01:23:41,608
+kullanmadınız. Buna bakarsınız o zaman. Yani niye karışıyor ki bunlar bu kadar çok? Veya dersiniz ki yok yani bunun çözümü yok. Ben ne yaparsam yapayım rağmen sıkıp birbirine karışacak. Ama bunu görmüş ve bu kararı vermiş olursunuz. Dolayısıyla mutlaka mutlaka matklas problemlerinizde, confusion matkvisinizde hangi klasın hangi klasta karıştığını bakın, geri dönün.
+
+504
+01:23:42,027 --> 01:23:52,887
+ve niye karıştığını anlamaya çalışın. Bunun için de mutlaka şey yapın. Yani 11 örnek karışmış mesela. O 11 örneğe bakın niye karışmış.
+
+505
+01:23:53,927 --> 01:24:00,927
+Oradan şunu yakalayabilirsiniz. Mesela o 11 örnekte örnek bir problem vardır. Ortak bir problem vardır.
+
+506
+01:24:01,527 --> 01:24:08,227
+Mesela oradan şeyi anlayabilirsiniz. Az önce dediğim gibi bir özelliğin az kullanılmış veya çok kullanılmış olabileceğini anlayabilirsiniz.
+
+507
+01:24:08,227 --> 01:24:14,487
+veya işte 10 bir örnek çok kötü örneklerdir. Ne yapsam doğru sınıflandırılmayacaktır.
+
+508
+01:24:14,487 --> 01:24:24,187
+Dersiniz ki insan gözü bile bunu doğru sınıflandırılamaz. Ben bu örnekleri kullanmayayım da diyebilirsiniz, böyle kabul edeyim de diyebilirsiniz.
+
+509
+01:24:24,347 --> 01:24:31,328
+Probleminize göre bu karar verirsiniz. Ama benim en çok gördüğüm hata yeni sistemlerde şey yapılıyor.
+
+510
+01:24:31,328 --> 01:24:54,608
+çok zaten hazır kütüphaneler var. İşte derin öğrenmeyle bilmem ne yaptım. İşte sabah oturuyorsun akşama yüz tanıyan bir sistemin oluyor. Olay senin bir tool'u kullanma becerinle ilgili. Yani işte tool'u nasıl kullanacağını iyi şey yapabilirsen, hızlı çözersen işte sabah oturdun akşama yüz tanıyan bir sistem yazabilirsin yani.
+
+511
+01:24:54,608 --> 01:25:05,208
+fakat oradaki sıkıntı dediğim gibi işte başarıyı da ölçüyor ve diyor ki işte %90 başarıdır. Peki başarısızlığın sebebi neydi? Ne oldu falan bakan yok.
+
+512
+01:25:05,208 --> 01:25:23,747
+Şimdi siz lisans üstü öğrencisi olduğunuz için sizin çalışma şeyiniz aslında hep feature workler olmanın yani yepyeni sıfırdan bir alakası hiç kimsenin yapmadığı bir uygulamayla ilgili bir çalışma yapmıyorsanız özellikle doktor öğrencileri için söylüyorum bunu.
+
+513
+01:25:24,608 --> 01:25:37,447
+yapılmakta olan çalışmalarla ortak, sizde var olan çalışmalarla ilgili bir şeyler yapıyorsanız mutlaka FutureBörg'te bahsedilen problemlere bakmalı ve o problemleri çözmeye yönelmelisiniz.
+
+514
+01:25:37,587 --> 01:25:41,287
+O problemler de genellikle buralardan çok rahat anlaşılır.
+
+515
+01:25:41,287 --> 01:25:49,807
+Yani neyi yapamıyor, ne de yetersiz kalıyor anlamak için bakacağınız şeylerden birisi confusion matrisleridir.
+
+516
+01:25:49,947 --> 01:25:50,968
+Peki devam ediyorum.
+
+517
+01:25:50,968 --> 01:25:54,708
+Peki şimdi başarıyı nasıl ölçeceğiz?
+
+518
+01:25:55,636 --> 01:26:08,315
+Şimdi en temel eğer örnekleriniz çoksa, balansı iyi ayrılmış sınıflarınız varsa en temel kullanacağınız başarı ölçme yöntemi ekürisidir.
+
+519
+01:26:08,315 --> 01:26:20,935
+şey nedir metriye ekürisidir. Ekürisi size şeyi verir. Bütün örneklerin kaçını doğru sınıflandırdınız. Yani true pozitif ve true negatiflerin bütün örneklerin oranını verir.
+
+520
+01:26:20,935 --> 01:26:25,455
+buradan modelinizin ne kadar iyi bir model olduğunu gayet iyi anlayabilirsiniz.
+
+521
+01:26:26,235 --> 01:26:39,356
+Fakat eğer örnekleriniz şeylerde sınıflara balanslı bir şekilde dağılmadıysa ekürisi iyi bir ölçüm şekli değildir.
+
+522
+01:26:39,615 --> 01:26:43,255
+Neden? Çünkü diyelim ki iki sınıflık bir probleminiz var.
+
+523
+01:26:44,215 --> 01:26:49,335
+İşte A sınıfında 9.990 tane örnek var, B sınıfında da 10 tane örnek var.
+
+524
+01:26:49,335 --> 01:26:54,715
+ve modeliniz 10 bin örneğin tamamına A sınıfı diyor.
+
+525
+01:26:55,875 --> 01:26:57,855
+Yani aslında kötü bir sınıflandırma yapıyor.
+
+526
+01:26:59,195 --> 01:27:03,055
+Ve accuracy'yi hesaplıyorsunuz %99.9.
+
+527
+01:27:03,496 --> 01:27:06,115
+Niye? Çünkü zaten B sınıfında 10 tane örnek vardı.
+
+528
+01:27:06,115 --> 01:27:11,235
+Yani her şeye A demesi bir şeyi çok fazla etkilemedi.
+
+529
+01:27:11,815 --> 01:27:14,136
+B sınıfı sayıp zaten 10 tane örneği var.
+
+530
+01:27:15,095 --> 01:27:17,515
+Bu çok sık yapılan bir hatadır yine.
+
+531
+01:27:17,515 --> 01:27:36,095
+eğer balans yoksa başarı ölçtüğünüzde, accuracy ile başarı ölçtüğünüzde yüksek başarı elde etme ihtimaliniz yüksekse belki de aslında sınıflandırma yapamayan bir sisteminiz var. Bunu anlayamazsınız. O zaman başka metriklere bakmamız gerekecek.
+
+532
+01:27:36,095 --> 01:27:53,555
+Şimdi precision var. Precision şeyi veriyor. Bütün pozitif olanlar içerisinde doğru bildiklerinizin oranını veriyor.
+
+533
+01:27:53,555 --> 01:28:17,736
+Yani işte diyelim ki COVID olan bin kişide COVID vardı. Sizin sisteminiz bunun 500'ünü doğru bildiyse precision'ınız %50'dir. Yani gerçekten pozitif olanların içerisinde sizin doğru bilebildikleriniz. Birincisi bu precision.
+
+534
+01:28:21,779 --> 01:28:45,319
+Şimdi mesela aynen burada sizin için şey önemliyse işte bir kişinin test sonucunun pozitif olup olmadığını bilmek önemliyse COVID olanların oranını bilmek önemliyse doğru bilmek COVID olanların oranını doğru bilmek önemliyse precision kullanabilirsiniz.
+
+535
+01:28:45,319 --> 01:28:48,239
+İkindi se, lükun
+
+536
+01:28:54,068 --> 01:29:09,607
+Recall'u yanlış yazmışım galiba. Evet, Recall'u yanlış yazmışım. Zaten ara verecektim. Onu slide'da da düzelteyim. Şimdi ara vereyim, düzeltip yapayım. Olur mu? Bir on bir buçuk, on dakika ara vereyim.
+
+537
+01:29:13,207 --> 01:29:19,207
+On bir buçuk da devam edelim. Slide üzerinde de düzelteyim ki şeylerde böyle kalmasın, notlarınızda böyle kalmasın.
+
+538
+01:29:19,207 --> 01:29:25,147
+Hocam doğru değil mi? Pozitiflerin tamamı doğru olmuyor mu o zaman?
+
+539
+01:29:28,147 --> 01:29:34,408
+True positive artı false negative
+
+540
+01:29:34,408 --> 01:29:42,087
+Aa evet pardon bir an bir şok yaşadım doğru söylüyorsun bir an evet evet
+
+541
+01:29:42,087 --> 01:29:49,027
+True positive artı false negative kesinlikle tamam tamam bir an oraya kısaltıp yazdım çünkü en son az önce
+
+542
+01:29:49,027 --> 01:30:03,468
+P diye bir an bakınca şey oldu. Tamam. Yine de 10 dakika aramı vereceğim. Şimdi oraya onun açık halini de yazarım. O şekilde toparlarız. Tamam. Evet doğru haklısın.
+
+543
+01:41:54,515 --> 01:42:00,115
+Evet, kaldığımız yerden devam edelim. Ekranı paylaşayım sizinle.
+
+544
+01:42:26,003 --> 01:42:29,443
+Görüyorsunuz değil mi ekranı? Herhalde görüyorsunuz.
+
+545
+01:42:31,964 --> 01:42:33,023
+Görünüyor değil mi?
+
+546
+01:42:34,703 --> 01:42:35,964
+Evet hocam.
+
+547
+01:42:36,264 --> 01:42:40,603
+Tamam peki. Buraya şeyi ekledim şu true positive party false negative ekledim.
+
+548
+01:42:40,723 --> 01:42:46,123
+Çünkü yukarıdakiyle karışıyor gibi bir liste kapıldım az önce konuşurken de.
+
+549
+01:42:47,323 --> 01:42:55,723
+Şimdi şöyle precision'da yani buradaki doğru dediklerinin ne kadarı doğru?
+
+550
+01:42:55,723 --> 01:43:07,224
+Yani şey olanların az önceki söyleyiş şeklinde ters gibi geldi bana bilmiyorum nasıl oldu ama yani işte şeyleri ölçüyor.
+
+551
+01:43:07,663 --> 01:43:12,343
+Bin tane COVID hastasını ölçüyor.
+
+552
+01:43:13,063 --> 01:43:17,743
+Bunların işte 500'üne doğru diyor ama aslında 200'ü doğru.
+
+553
+01:43:17,743 --> 01:43:27,843
+Yani precision doğru dediklerin yani true pozitifler artı false pozitifler işte doğru dediklerinin ne kadarı doğru.
+
+554
+01:43:28,543 --> 01:43:31,803
+Recall sensitivity olan da o true pozitif rate.
+
+555
+01:43:31,943 --> 01:43:39,983
+Yani zaten bin kişi pozitifti bunların da 500'ünü doğru bildi şeklinde.
+
+556
+01:43:39,983 --> 01:43:41,983
+Yani doğru dediklerinin ne kadarı doğru değildi.
+
+557
+01:43:42,083 --> 01:43:46,223
+Burada gerçekten bilinen bir bin tane hasta var.
+
+558
+01:43:46,363 --> 01:43:48,683
+Bunların da beş yüzünü doğru bildi şeklinde.
+
+559
+01:43:50,403 --> 01:44:03,883
+Specificity'de tersi yanlış demeyelim de öbür sınıfta olan mesela hasta olanların ne kadarını doğru bildi.
+
+560
+01:44:04,123 --> 01:44:07,143
+Yani gerçekten hasta olanların ne kadarını doğru bildi gibi.
+
+561
+01:44:07,923 --> 01:44:09,563
+True negative rate.
+
+562
+01:44:09,563 --> 01:44:14,783
+Yani recall true positive rate'i gerçek pozitiflerin ne kadarını doğru bildi.
+
+563
+01:44:14,923 --> 01:44:19,803
+Specificity de true negative rate'i gerçek negatiflerin ne kadarını doğru bildi.
+
+564
+01:44:20,603 --> 01:44:30,724
+Precision ise doğru dediklerinin ne kadarı yani predict ettiklerinin doğru diye predict ettiklerinin ne kadarı doğru onu gösteriyor.
+
+565
+01:44:31,224 --> 01:44:32,763
+Şimdi burada şöyle bir şey var.
+
+566
+01:44:32,763 --> 01:44:37,063
+Aslında bazı çalışmalarda işte precision daha önemli olabilir.
+
+567
+01:44:37,563 --> 01:44:41,623
+Bazılarında da recall daha önemli olabilir.
+
+568
+01:44:44,243 --> 01:44:47,003
+Bu sizin çalışmadan ne beklediğinize bağlı.
+
+569
+01:44:47,084 --> 01:44:50,543
+Dediğim gibi bazısında şeyi bilmek isteyebilirsiniz.
+
+570
+01:44:50,724 --> 01:44:53,183
+Doğruların ne kadarını bildiğini bilmek isteyebilirsiniz.
+
+571
+01:44:53,183 --> 01:44:58,023
+Bazılarında da doğru dediklerinin ne kadarının doğru olduğunu bilmek isteyebilirsiniz.
+
+572
+01:44:58,963 --> 01:45:02,864
+Mesela bu COVID meselesinde sizce hangisini kullanmak daha doğru olur?
+
+573
+01:45:03,283 --> 01:45:06,103
+Yani pozitiflerin oranını bilmek istiyoruz.
+
+574
+01:45:06,103 --> 01:45:07,483
+Hangisi sizce daha iyi?
+
+575
+01:45:11,188 --> 01:45:15,168
+pozitiflerin, yani hasta olanların oranı da bilmek istiyoruz. Hangisi daha iyi?
+
+576
+01:45:16,927 --> 01:45:18,027
+Rikol mu hocam?
+
+577
+01:45:19,408 --> 01:45:21,648
+Yo, soruyorum yani. Sizce hangisi daha iyi?
+
+578
+01:45:26,195 --> 01:45:53,335
+Aslında ikisi de aynı amaca hizmet ediyor ama şeyleri farklı. Yani kullanılış şekilleri farklı. Çünkü precision'da şöyle bir şey var. Yani 100 kişiye pozitif dedi, bunun 50'si doğruysa, şey sıkıntı demektir. Yani 100 kişiye pozitif dedi, 50'si doğru, 50 tane yanlış kişiye pozitif demiş.
+
+579
+01:45:53,335 --> 01:45:58,175
+Yani burada bahsettiği it is useful and the cost of false positive is high dediği şey bu.
+
+580
+01:45:58,315 --> 01:46:02,635
+Yani aslında hasta olmayan 50 kişiye de hasta diyor mesela burada.
+
+581
+01:46:04,376 --> 01:46:07,435
+Yani diyelim ki kanser tedavisi uyguluyor.
+
+582
+01:46:08,335 --> 01:46:12,575
+Hasta olmayan 50 kişiye daha kansersin deyip kanser tedavisi uyguluyor.
+
+583
+01:46:15,096 --> 01:46:20,575
+Yani o aslında bir şey, sıkıntı.
+
+584
+01:46:20,575 --> 01:46:48,175
+sıkıntı veya tam tersini düşünün. 100 pozitiften yani ikisi de olabilir. Yani recall the precision da kullanılıyor zaten o yüzden. 100 kişi hasta. Sen 20'sini bilebiliyorsun. Gerçekte 100 kişi hasta. Recall'un kullanım şeyinde de 20'sini bilebiliyorsun. 80 kişiyi bilemiyorsun. Yani orada büyük bir sıkıntı var bilemediklerinden ötürü. Pozitif olan 80 kişiyi. Sen şey diyorsun şimdi recall'da da onu görüyorum ben şimdi.
+
+585
+01:46:48,175 --> 01:46:59,055
+100 tane hasta var. Sen 20'sini doğru bilebiliyorsun, 80'ini bilemiyorsun. Yine bu COVID meselesinde 80 kişiyi bilemedin, onlar hasta.
+
+586
+01:46:59,635 --> 01:47:04,875
+Ancak hastalıkları çok ilerleyecek, ciğerine inecek bilmem ne o noktada fark edeceksin mesela.
+
+587
+01:47:04,875 --> 01:47:17,915
+O yüzden pek çok çalışmada hem precision hem Rikol'un bilinmesi uygundur. Bunun içinde F-measure diye bir şey var, harmonik ortalama.
+
+588
+01:47:18,175 --> 01:47:42,875
+bu şey hem precision hem recall'u birlikte kullanıyor. Buna F1 score deniyor. Ve çalışmalarda bu birlikte yani precision recall'un doğruluk oranlarının F1 score'u da kullanılıyor şey için. Sadece precision ve sadece recall değil F1 score'u da kullanılıyor.
+
+589
+01:47:42,875 --> 01:48:06,875
+Peki ne zaman accuracy ne zaman F1 score? Eğer true positive ve true negative is more important dediği yani bunları yakalamanız daha önemliyse ve sınıflarda yaklaşık eşit oranlarda örnekleriniz varsa accuracy kullanmanız doğru ama kaçırdıklarınızı bilmek sizin için önemliyse F1 score kullanılıyor.
+
+590
+01:48:06,875 --> 01:48:30,395
+kullanılıyor. Yani kaçırdıklarınızı bilmekten kastettiğim dediğim gibi yani işte hasta olmasına rağmen sağlam denenler veya hasta olmamasına rağmen hasta denenleri bilmek bizim için önemli ise o zaman F-score kullanmak. Yani yanlış sınıflandırılanların önemi büyükse F-score kullanılıyor.
+
+591
+01:48:30,395 --> 01:48:42,556
+Peki şimdi ROC curve şimdi bunları bir de şey görmek isteyeceğiz yaptığımız şeylerin sonuçlarını da görmek isteyeceğiz
+
+592
+01:48:42,556 --> 01:48:58,395
+Şimdi bir kere öncelikle şöyle bir şey var önce şeyden bahsedeyim ROC curve denilen şey aslında 2. Dünya Savaşı'nda şey için kullanıyor radar operatörleri tarafından kullanıyor
+
+593
+01:48:58,395 --> 01:49:00,455
+işte
+
+594
+01:49:02,003 --> 01:49:16,183
+o şeyin radarın tespitlerinin nesne veya parazit olup olmadığının değerlendirilmesi için kullanılıyor. Daha sonra da tıbbi uygulamalarda, radyolojide, görüntülemede kullanılmaya başlıyor.
+
+595
+01:49:16,183 --> 01:49:18,344
+ve sonra şeye giriyor.
+
+596
+01:49:19,443 --> 01:49:23,443
+Nedir? Makine öğrenmesi uygulamalarına da giriyor.
+
+597
+01:49:24,063 --> 01:49:34,283
+Aslında ROC curve denilen şey false-pozitif oranının true-pozitif oranına göre olan durumunun görselleştirilmesi.
+
+598
+01:49:35,143 --> 01:49:42,263
+Baktığınız zaman işte burası false-pozitif oranı, burası da true-pozitif oranı,
+
+599
+01:49:42,263 --> 01:49:58,243
+x-80'i false pozitif, y-10'i de true pozitif oranı olmak üzere bunun farklı eşik seviyesi değerleri için durumları gösteriyor.
+
+600
+01:49:58,243 --> 01:50:06,243
+Önce bundan bahsedeyim ben. Diyelim ki işte bir hastalık teşhisinde...
+
+601
+01:50:06,243 --> 01:50:09,643
+Bir saniye
+
+602
+01:50:17,171 --> 01:50:45,171
+Burası specificity. Ondan sonra burası da sensitivity olsun. Şimdi bunlar hasta olan kişiler, maviler hasta olan kişiler, kırmızılar da sağlam olan kişiler. Şimdi şöyle bir sonucumuz olsaydı, bir dakika önce onu bulmak istiyorum. Var mı öyle bir sonucumuz? Şöyle bir sonucumuz olsaydı, bu ideal durum.
+
+603
+01:50:45,171 --> 01:50:52,212
+Yani hastalarla, true negatiflerle, true pozitiflerin hiçbirbirine karışmadığı durum ideal durum.
+
+604
+01:50:52,352 --> 01:50:54,971
+Gerçek dünyada böyle bir durum yok.
+
+605
+01:50:55,151 --> 01:50:59,892
+Dolayısıyla bir eşik seviyesi genelde biz belirlemek zorunda kalırız.
+
+606
+01:51:00,012 --> 01:51:07,231
+Yani bir şey yaparken, karar verirken eşik seviyesi belirlemek zorunda kalırız.
+
+607
+01:51:07,231 --> 01:51:17,311
+işte ROC curve'de o eşik seviyesinin ne alınması gerektiğine karar vermemiz için kullanılan bir şey aslında.
+
+608
+01:51:17,851 --> 01:51:22,431
+Şimdi bakalım eşik seviyesini burası da aldığımızda ne olacak?
+
+609
+01:51:23,032 --> 01:51:26,551
+Bu eşik seviyesinden büyük olan herkese hasta diyeceğiz.
+
+610
+01:51:27,111 --> 01:51:35,071
+Eşik seviyesi burada olduğuna göre altındaki herkese de şey diyeceğiz, negatif yani sağlam diyeceğiz.
+
+611
+01:51:35,072 --> 01:51:42,552
+Peki ben eşik seviyesini yani bunlar true pozitifler, bunlar false pozitifler, true negatifler ve false negatifler
+
+612
+01:51:42,552 --> 01:51:47,192
+Eşik seviyesinin ne olması iyi olur?
+
+613
+01:51:47,412 --> 01:51:49,091
+ROC kör bunu gösteriyor
+
+614
+01:51:49,091 --> 01:51:53,871
+Aslında işte şuralar ideal noktalar
+
+615
+01:51:53,871 --> 01:52:02,072
+İşte farklı eşik seviyeleri için false pozitifin true pozitife oranını görmüş oluyorsunuz
+
+616
+01:52:02,071 --> 01:52:29,892
+baktığınız zaman şurası aslında ideal yeri gösteriyor. Specificity'nin ve şeyin sensitivity'nin yüksek olduğu nokta ideal durumu gösteriyor. Bu ROC eğiliniz sizin şeyler için nedir? Farklı eşik seviyeleri için şeyi gösteriyor. Bize false positive'in true positive'i oranını gösteriyor.
+
+617
+01:52:29,892 --> 01:52:37,892
+işte false positive 0.2, chem true positive de nem 0.6 oldu falan gibi bu oranları gösteriyor.
+
+618
+01:52:37,892 --> 01:52:42,511
+En iyi yer şuralarda falan olması aslında ideal case'e oralarda olması.
+
+619
+01:52:44,412 --> 01:52:49,591
+İşte bu zaten şey her şeyin doğru olması ki böyle bir şey mümkün değil.
+
+620
+01:52:49,591 --> 01:52:58,231
+bu şeyin altı da area under the curve dediği AUC'de şeyi gösteriyor.
+
+621
+01:52:58,231 --> 01:53:03,771
+Bu ROC elimizin altındaki alanı gösteriyor.
+
+622
+01:53:04,151 --> 01:53:14,052
+Şimdi bir kere zaten şey yüzde elli burası yani yüzde elli demek yazı türü atsan daha iyi demek.
+
+623
+01:53:14,272 --> 01:53:18,972
+Mesela yine ben bu şeyi örnek vereceğim COVID meselesini örnek vereceğim.
+
+624
+01:53:18,972 --> 01:53:33,072
+orada baktığınızda deniyor ki işte true pozitif oranı %40 deniyor. %40 demek yazı true'nun olasılığı %50 olduğuna göre %40 demek random kararda daha kötü demek.
+
+625
+01:53:33,072 --> 01:53:42,472
+Dolayısıyla pek çok doktor zaten o testlere hiçbir şekilde güvenilmemesi gerektiğini söylüyor ki ben de aynı fikirdeyim.
+
+626
+01:53:42,471 --> 01:53:52,531
+Çünkü test sonucu %40 çıkıyorsa neyine güveneceksin? Yani yazı turu asla pozitif olduğuna ilgili daha doğru bir karar verebilirsin.
+
+627
+01:53:54,191 --> 01:54:05,851
+Araya under curve de 0 ile 1 arası değer alıyor. Eğer 0 ise yani şey yok demektir. Yani işte alanını alacak bir şey yok demektir.
+
+628
+01:54:06,355 --> 01:54:09,816
+Bütün verdiğiniz kararların yanlış olduğunu gösterir.
+
+629
+01:54:10,836 --> 01:54:18,236
+%100 doğru olduğunda da bir yani bütün şeylerin aynı yerlerin üzerinden geçiyorum doğru olduğunu gösterir.
+
+630
+01:54:18,236 --> 01:54:24,735
+Yani aslında şöyle bir ROC eğriniz varsa bu güzel bir eğridir.
+
+631
+01:54:25,075 --> 01:54:30,235
+Böyle de bir eğriniz varsa bu da kötüdür, kötü olduğunu gösterir.
+
+632
+01:54:31,895 --> 01:54:34,795
+Bu mesela en iyi durum.
+
+633
+01:54:34,795 --> 01:54:37,995
+Yani %100 başarı bulduğunuz bir durum.
+
+634
+01:54:39,835 --> 01:54:42,475
+Bu da en kötü durum.
+
+635
+01:54:43,955 --> 01:54:44,795
+Şöyle göstereyim.
+
+636
+01:54:45,475 --> 01:54:46,955
+Mesela ideal case bu.
+
+637
+01:54:47,495 --> 01:54:51,375
+Yani true negatifler, true pozitiflerden tamamen ayrı zaten.
+
+638
+01:54:51,995 --> 01:54:53,555
+Hiçbirbirlerine hiç karışmıyorlar.
+
+639
+01:54:53,896 --> 01:54:55,055
+%100 başarı var.
+
+640
+01:54:55,555 --> 01:54:57,975
+Eşik seviyesinde tam buradan geçiriyorsunuz.
+
+641
+01:54:58,095 --> 01:54:59,335
+Kimse kimseye karışmıyor.
+
+642
+01:54:59,896 --> 01:55:01,195
+O zaman bu ideal aslında.
+
+643
+01:55:01,275 --> 01:55:02,635
+Bu olabilecek bir şey değil.
+
+644
+01:55:02,635 --> 01:55:05,935
+Burada ise mesela eşik seviyesini burada almışsınız.
+
+645
+01:55:07,575 --> 01:55:12,155
+İşte ROC'si %70 çıkıyor.
+
+646
+01:55:13,036 --> 01:55:15,396
+Bu şeyi gösteriyor.
+
+647
+01:55:15,915 --> 01:55:20,296
+%70 oranında pozitiflerle negatifleri ayırabildiğini gösteriyor.
+
+648
+01:55:20,415 --> 01:55:23,635
+Yani bir takım şeyler burada kalmış.
+
+649
+01:55:25,296 --> 01:55:27,255
+Negatifler pozitif tarafına geçmiş.
+
+650
+01:55:27,335 --> 01:55:29,775
+Bir takım pozitifler de negatif tarafına geçmiş.
+
+651
+01:55:29,775 --> 01:55:33,135
+%70 oranında doğru sınıflandırma olduğunu gösteriyor.
+
+652
+01:55:33,576 --> 01:55:34,775
+Mesela böyle bir şey yapıyorsunuz.
+
+653
+01:55:35,436 --> 01:55:36,815
+ROCC %50.
+
+654
+01:55:37,495 --> 01:55:39,536
+Pozitiflerle negatifler karışmış.
+
+655
+01:55:40,216 --> 01:55:41,576
+Bu en kötü durum mesela.
+
+656
+01:55:43,255 --> 01:55:45,615
+Doğrularla yanlışları hiçbir şekilde ayıramıyor.
+
+657
+01:55:45,936 --> 01:55:47,735
+Dolayısıyla yazı true efekti.
+
+658
+01:55:48,415 --> 01:55:50,195
+Random seçim efekti.
+
+659
+01:55:51,576 --> 01:55:56,895
+Bu da şey yani bu zaten böyle bir modeliniz varsa o modeli bırakın gidin.
+
+660
+01:55:56,895 --> 01:55:57,655
+Neden?
+
+661
+01:55:57,655 --> 01:56:02,775
+Çünkü true pozitiflerin hepsine true negatif diyor, true negatiflerin hepsine de pozitif diyor.
+
+662
+01:56:02,855 --> 01:56:03,995
+Zaten böyle bir şey olmaz.
+
+663
+01:56:04,555 --> 01:56:06,715
+Yani böyle bir modeliniz yoktur büyük bir ihtimalle.
+
+664
+01:56:07,275 --> 01:56:11,435
+ROC'niz de bu şekilde çıkıyor şey olursa.
+
+665
+01:56:11,875 --> 01:56:16,655
+Yani ideali şöyle bir ROC eğrisi elde etmeniz.
+
+666
+01:56:17,076 --> 01:56:19,435
+Burada genelde şu yapılır.
+
+667
+01:56:19,515 --> 01:56:22,995
+ROC eğrisi çizilerek eşik seviyesinin en iyi olduğu,
+
+668
+01:56:22,995 --> 01:56:31,275
+Yani tek bir model üzerinde çalışıyorsanız en iyi ışık seviyesinin ne olduğunu belirlemek için kullanabilirsiniz.
+
+669
+01:56:33,315 --> 01:56:48,535
+Birden fazla modeliniz varsa da hangi modelin en iyi olduğuna karar vermek için her modelin false positive rate'ine, true positive rate'ine göre durumu için bir nokta oluşturursunuz.
+
+670
+01:56:48,535 --> 01:57:00,155
+Ve şeyi görürsünüz oradan yani en iyi false positive rate'e ve true positive rate'e göre en iyi modelin hangisi olduğunu ROC eğrisi üzerinde görebilirsiniz.
+
+671
+01:57:00,355 --> 01:57:02,135
+Tekrardan söylüyorum.
+
+672
+01:57:02,755 --> 01:57:06,295
+Burada o slide var zannediyordum ama o slide'ı koymamışım.
+
+673
+01:57:06,395 --> 01:57:08,255
+Bir daha şuraya da bakayım var mı yok mu diye.
+
+674
+01:57:09,975 --> 01:57:11,315
+Geri gidiyorum şu anda.
+
+675
+01:57:13,095 --> 01:57:13,655
+Yok.
+
+676
+01:57:14,495 --> 01:57:17,595
+Yani şurada söyleyeyim.
+
+677
+01:57:17,595 --> 01:57:33,595
+Mesela bunlar şey olsaydı, farklı öğrenme modelleri olsaydı, işte diyelim ki bu K en yakın komşuluk için aldığınız false positive rating'in true positive rating'e göre değişim kurduğunuz modelin bütün örnekleri için,
+
+678
+01:57:33,595 --> 01:57:42,715
+diyelim ki bu K en yakın komşuluğun oranı, bu diyelim ki işte decision training'in oranı, işte bugünden yapaylı oran ağının oranı falan.
+
+679
+01:57:44,787 --> 01:57:57,668
+en iyisi ideali mesela şu, burada şu aslında fena olmayanı. Çünkü true positive rate'inin false positive rate'ine oranı yani şey %80'e %20 gibi.
+
+680
+01:57:58,227 --> 01:58:06,287
+Burada true positive rate artıyor ama false positive rate'i de artıyor. Bunu tercih etmiyorsanız ideali şuralardır. Yani bu tabii en iyisi.
+
+681
+01:58:06,287 --> 01:58:22,008
+Dolayısıyla farklı modeller için fospozitif oranının, trupozitif oranına göre değişimine bakarak ROC eğrisi üzerinde her modelin birbirine göre durumunu da değerlendirebilmiş olursunuz.
+
+682
+01:58:22,008 --> 01:58:24,868
+Bu ne kadar sormak istediğiniz bir şey var mı?
+
+683
+01:58:31,444 --> 01:58:32,743
+Evet, soru var mı?
+
+684
+01:58:50,996 --> 01:59:15,836
+Peki. Çok az soruyorsunuz. Beni çok endişelendiren bir durum. Anlattıklarımı rahat takip edebiliyor musunuz? Önemli olan o bari, o oluyor mu? Çünkü sınıfta olunca, yüzler yüzleri görünce insan çok rahat anlıyor. Anlaşılıp anlaşılmadığını vs. Peki. O zaman ölçümleri arada anlatmak istedim.
+
+685
+01:59:15,836 --> 01:59:25,016
+bir de şey var tabii aslında farklı yöntemler için farklı hata ölçüm şekilleri var hataların nasıl hesaplanacağı da değişiyor.
+
+686
+01:59:25,016 --> 01:59:41,016
+Yani buradaki performans metrikleri işte precision recall vesaire genel şeyler başarı ölçümleri ama hatanın nasıl hesaplanacağı vesaire de yöntemden yönteme değişiklik gösteriyor.
+
+687
+01:59:41,016 --> 01:59:49,275
+Bunlardan da bahsedeceğim. Modeli hazırlarken hata hesaplarından vesaire de bahsedeceğim.
+
+688
+01:59:49,275 --> 01:59:57,095
+O zaman bugünlük anlatacaklarım bu kadar. Önümüzdeki hafta devam ederiz.
+
+689
+01:59:57,436 --> 02:00:08,735
+Şeyleri gördüğümüz için, model başarılarının ölçülmesini gördüğünüz için önümüzdeki hafta artık ilk ödevi vererek devam edelim.
+
+690
+02:00:08,735 --> 02:00:10,515
+Soru var mı?
+
+691
+02:00:13,515 --> 02:00:15,795
+Yok hocam teşekkür ederiz.
+
+692
+02:00:16,235 --> 02:00:16,996
+Ben teşekkür ederim.
+
+693
+02:00:16,996 --> 02:00:17,915
+Teşekkürler hocam.
+
+694
+02:00:18,295 --> 02:00:18,895
+Teşekkürler.
+
+695
+02:00:19,415 --> 02:00:21,435
+Görüşmek üzere o zaman haftaya.
+
+696
+02:00:22,375 --> 02:00:23,375
+İyi günler hepinize.
+
+697
+02:00:23,635 --> 02:00:24,375
+İyi günler hocam.

@@ -1,0 +1,2779 @@
+1
+00:00:07,764 --> 00:00:09,143
+Günaydın arkadaşlar.
+
+2
+00:00:10,923 --> 00:00:11,923
+Günaydın [öğrenci].
+
+3
+00:00:24,532 --> 00:00:36,111
+Tamam. Evet, bugün sınavdan sonra yeni bir öğrenme modeline geçiyoruz. Eğitmensiz öğrenme, supervised learning'den bahsedeceğim.
+
+4
+00:00:37,031 --> 00:00:44,191
+Şimdi aslında eski uygulamalarda eğitmensiz öğrenme çok da ihtiyaç duyulan bir şey değildi.
+
+5
+00:00:44,191 --> 00:00:59,491
+fakat bu özellikle son 4-5 yıldır büyük verinin makine öğrenmesi ile çok kullanılmasıyla birlikte eğitmensiz öğrenme de çok ön plana çıkan öğrenme modellerinden birisi oldu.
+
+6
+00:00:59,491 --> 00:01:10,351
+Önce şeyden bahsetmek istiyorum. Eğitmenli öğrenme ile eğitmensiz öğrenme arasındaki fark ne? Öğrenme yöntemleri nasıl değişiyor?
+
+7
+00:01:10,351 --> 00:01:23,951
+bugüne kadar gördüğümüz K en yakın komşuluk, işte decision tree, destek vektör makineleri, yapay neuronaları gibi yapay neuronaları derken onun da eğitmensiz olanları var.
+
+8
+00:01:23,951 --> 00:01:32,531
+O yüzden ayırt etmek lazım. Gördüğümüz perceptron, multivir perceptron yapısı eğitmenli öğrenme yöntemleriydi.
+
+9
+00:01:32,531 --> 00:01:45,131
+yani orada ne var? Aslında bizim elimizdeki datada girişler ve bu girişler için beklenen çıkış değerleri etiketli olarak veriliyor.
+
+10
+00:01:45,731 --> 00:01:54,212
+Örneğin bir fotoğraf verildiğinde bu fotoğrafın işte Ayşe'ye ait olduğu, Ali'ye ait olduğu veya bir döküman sınıflandırma sistemi isteniyorsa
+
+11
+00:01:54,212 --> 00:02:11,511
+o dökümanın işte diyelim ki magazin haberleriyle ilgili olduğu, spor haberleriyle ilgili olduğu gibi çıkıştaki sınıflandırma sonucunun ne olmasının gerektiği etiketli olarak veriliyor.
+
+12
+00:02:11,511 --> 00:02:19,612
+Şimdi bunlar eğitmenli öğrenme yöntemleri. Peki ama ya bizim elimizde, pardon nasıl oldu bu? Bir dakika.
+
+13
+00:02:26,548 --> 00:02:35,147
+ya bizim elimizde sadece örnekler var fakat bu örnekler etiketsizse ne yapacağız?
+
+14
+00:02:36,627 --> 00:02:43,907
+Bir kere önce şeyden başlayalım. Neden elimizde sadece örnekler olur da bunlar etiketsiz olur?
+
+15
+00:02:43,907 --> 00:02:55,947
+Bunun farklı sebepleri var. En temel sebebi etiketlemek için evde çok büyük veri olduğunda zaman ve kaynaklar etiketlemeye yetmiyordu.
+
+16
+00:02:55,947 --> 00:03:10,467
+mesela işte bir diyelim ki işletmenin müşterilerini alışveriş yapma karakteristiklerine göre gruplamak istediğinizi düşünün.
+
+17
+00:03:11,027 --> 00:03:22,247
+Yani buna el ve etiketlemek yani bunlar çok alan müşteriler, bunlar az alan müşteriler veya işte ne bileyim bunlar daha farklı çeşitli alan müşteriler diye etiketlemek.
+
+18
+00:03:22,247 --> 00:03:42,527
+Birincisi çok güç bir iş bu kararı verip etiketlemek. İkincisi de çok zaman alıcı bir iş. Diyelim ki bir milyon müşteri varsa bunları tek tek bu şekilde etiketlemeye çalışmak son derece zaman alıcı ve o kaynağı etiketleyecek kişileri bulması zor bir işlem.
+
+19
+00:03:42,527 --> 00:03:52,167
+şey de önemli mesela örüntünün karakteristiği zaman içerisinde değişiyorsa da etiketlemek zor.
+
+20
+00:03:53,067 --> 00:03:59,807
+Yani diyelim ki işte yine harcama karakteristiklerine göre şeyleri gruplamak istiyorsunuz.
+
+21
+00:03:59,807 --> 00:04:04,307
+Buradan devam edeceksiniz banka müşterilerine gruplamak istiyorsunuz.
+
+22
+00:04:04,367 --> 00:04:10,907
+Diyelim ki başta elde etiketlediniz fakat işte iş değiştirince veya ne bileyim işte
+
+23
+00:04:10,908 --> 00:04:19,988
+şey olunca, öğrenciyken mezun olunca vs. çeşitli sebeplerle bu karakteristikler zamana göre değişebilir.
+
+24
+00:04:20,107 --> 00:04:23,287
+O zaman bunları sürekli güncellemek zorundan kalacağız.
+
+25
+00:04:23,287 --> 00:04:27,027
+Bir de gerçekten etiketi olmayan veri olabilir.
+
+26
+00:04:27,228 --> 00:04:31,367
+Mesela nedir? Şey yapmak istiyorsunuzdur.
+
+27
+00:04:31,607 --> 00:04:38,148
+Cep telefonunuzdaki resimleri benzerliklerine göre gruplamak istiyorsunuzdur.
+
+28
+00:04:38,147 --> 00:04:46,687
+genelde çünkü aynı yerde çok fazla resim çekiyoruz. En güzel pozu yakalamak için çok fazla resim çekiyoruz.
+
+29
+00:04:46,807 --> 00:05:01,767
+Aslında bunlar içerik olarak birbirine benzeyen görüntüler. Ama işte ne bileyim belki aynı ortamda işte birinde ayakta duruyorsunuz, birinde oturuyorsunuz, birinde sağa bakıyorsunuz, birinde eliniz kaldırmışsınız falan.
+
+30
+00:05:01,768 --> 00:05:12,228
+birebir aynı değiller aslında. Mesela bunlar da etiketlenmesine gerek olmayan verilir ama birbirlerine benzerliklerine göre bunları gruplayıp şey yapabilirsiniz.
+
+31
+00:05:12,228 --> 00:05:25,548
+Yani en azından bir şey hiyerarşi sağlayabilirsiniz benzerlik gruplarına göre. Sonuçta bizim yapacağımız bazı çalışmalarda elimizde örnekler var.
+
+32
+00:05:25,548 --> 00:05:29,747
+fakat bu örneklerin bir sınıfı yok, etiketi yok.
+
+33
+00:05:29,747 --> 00:05:36,628
+Ve bizim için bunların benzerliklerine göre gruplamak daha doğru bir karar.
+
+34
+00:05:37,368 --> 00:05:40,068
+Yine ilk verdiğim örneğe döneceğim.
+
+35
+00:05:40,068 --> 00:05:45,408
+Mesela şeylerin diyelim ki işte şey için.
+
+36
+00:05:45,939 --> 00:06:12,059
+getir için şey yapıyorsunuz, müşterileri benzerliklerine göre, alış benzerliklerine göre gruplamak istiyorsunuz. Yani bunu el de yapmak çok zor. Neye göre gruplayacağınıza karar verip, usta kişileri bulup, oturtup da gruplatmak isteseniz bile, sınırsız kaynağınız olsa da yapmak çok zor. Ama şunu derseniz, yani harcama benzerliklerine göre grupla, benzerler aynı grubun içerisinde yer alsınlar.
+
+37
+00:06:12,059 --> 00:06:21,120
+ben sonra bu grupları kendim gözle değerlendireceğim, buradan bir sonuç çıkartacağım derseniz bu daha doğru bir çözüm olacaktır.
+
+38
+00:06:21,120 --> 00:06:32,439
+O zaman demek ki etiketi olmayan herhangi bir sebeple etiketleyemediğimiz için vakit yokluğundan veya kaynak yetersizinden veya etiketlemek,
+
+39
+00:06:32,559 --> 00:06:41,059
+elle etiketlemesi güç problemler olduğu için elimizde sınıf bilgisi yoksa
+
+40
+00:06:41,059 --> 00:06:52,539
+o zaman biz eğitmensiz öğrenme yöntemleriyle bu elimizdeki örnekleri birbirlerine benzerliklerine göre gruplayabiliriz.
+
+41
+00:06:52,599 --> 00:06:55,279
+Mesela burada gördüğünüz sosyal ağ analizi.
+
+42
+00:06:55,279 --> 00:07:05,319
+Diyelim ki sosyal ağ kullanan kişileri kullanma benzerliklerine göre gruplama veya pazar segmentasyonu şu anda en çok yapılan şey bu.
+
+43
+00:07:05,319 --> 00:07:13,599
+müşterilerin harcama benzerliklerine göre gruplama ki o gruplara daha sonra tavsiyelerde bulunabilmek için.
+
+44
+00:07:15,059 --> 00:07:17,819
+Peki nasıl yapacağız eğitmensiz öğrenmeyi?
+
+45
+00:07:17,819 --> 00:07:26,999
+Eğitmensiz öğrenmede yapılan işlem örnekleri birbirlerine benzerliklerine göre aynı gruba almak.
+
+46
+00:07:26,999 --> 00:07:35,459
+Bu da bizim hedefimiz sınıf içi benzerliklerin çok, sınıflar arası benzerliklerin az olmasını sağlamak.
+
+47
+00:07:35,539 --> 00:07:47,839
+İyi bir gruplamada mutlaka önemli olan, bakın burada birbirine benzeyen örnekler, bir aradalar, sınıf içi benzerliklerin çok yani within class.
+
+48
+00:07:52,211 --> 00:07:53,751
+similarity deniyor buna.
+
+49
+00:07:57,172 --> 00:07:59,672
+Sınıf içi benzerliklerinin çok.
+
+50
+00:08:00,411 --> 00:08:03,172
+Sınıflar arası, o da between class similarity.
+
+51
+00:08:07,764 --> 00:08:31,923
+sınıflar arası benzerliklerin az olduğu gruplar elde etmek. Şimdi klastere Türkçe'de öbekleme olarak karşılık bulunmuş. Bunu bilmiyorum yani böyle kullanabiliriz öbekleme olarak. Ben genelde grup veya işte klastere demeyi çok tercih ediyorum.
+
+52
+00:08:31,923 --> 00:08:43,043
+mesela burada işte gruplar arası benzerlik az, grup içi benzerlik çok olmalıdır dediğimizde
+
+53
+00:08:43,043 --> 00:08:47,003
+benimki şurada solda ve sağda aynı örnekleri görüyorsunuz
+
+54
+00:08:47,003 --> 00:08:52,344
+soldaki gruplama gibi gruplama baktığımızda biz gözle de baktığımızda
+
+55
+00:08:52,344 --> 00:08:58,104
+üç grubun da oldukça şey olduğunu iyi belirlendiğini
+
+56
+00:08:58,104 --> 00:09:02,784
+benzerlerin bir arada benzemeyenlerin diğer farklı gruplarda olduğunu görüyoruz.
+
+57
+00:09:03,504 --> 00:09:07,683
+Sağdaysa yine 3 grup var. Yani orada bir sıkıntı yok. Yine 3 grup var.
+
+58
+00:09:07,683 --> 00:09:12,564
+Fakat baktığımızda burada aslında mesela şuraya bakıyorsunuz.
+
+59
+00:09:12,643 --> 00:09:18,484
+Burada bu iki örneğin ayrı gruplarda olması için bir sebep yok.
+
+60
+00:09:18,863 --> 00:09:22,683
+Veya şuradaki iki örneğin ayrı gruplarda olması için bir sebep yok.
+
+61
+00:09:22,683 --> 00:09:31,723
+şu iki örnekte niye aynı sınıfta yani birbirlerine çok da benzemiyorlar bunların da aynı sınıfta olmasına gerekiyor.
+
+62
+00:09:31,723 --> 00:09:38,283
+Yani şu mesafe bu mesafe bu mesafeden daha çok demek ki burada bir terslik var aslında.
+
+63
+00:09:38,723 --> 00:09:47,344
+Dolayısıyla şey yaparken bu etiketsiz verileri benzerliklerine göre gruplarken olabildiğince optimum bir çözüm üretmemiz lazım.
+
+64
+00:09:47,343 --> 00:10:02,663
+Şimdi bu büyük bir ihtimalle eğer benzer dersler hani veri madenci gibi vesaire lisans eğitiminizde veya başka zamanda böyle dersler aldıysanız çok karşınıza çıkmıştır diye tahmin ediyorum.
+
+65
+00:10:02,663 --> 00:10:18,183
+K-Ortalama bu eğitmensiz öğrenme yöntemlerinin kolaylığı ve başarılı sonucu nedeniyle en çok tercih edilen yöntem.
+
+66
+00:10:18,183 --> 00:10:27,803
+Burada K-Ortalama ile yapılan şey, burada bakın solda etiketsiz örnekler görüyoruz.
+
+67
+00:10:27,803 --> 00:10:35,323
+K ortalamanın yaptığı örnekleri benzerliklerine göre K gruba yerleştirmek.
+
+68
+00:10:35,423 --> 00:10:42,643
+Mesela burada K eşittir 3 için şurada gördüğünüz 3 tane grubumuz var.
+
+69
+00:10:43,323 --> 00:10:45,443
+K tane gruba yerleştirmek.
+
+70
+00:10:46,783 --> 00:10:48,643
+Peki bunu nasıl yapıyoruz?
+
+71
+00:10:50,043 --> 00:10:51,703
+Adım adım inceleyelim birlikte.
+
+72
+00:10:51,703 --> 00:10:57,463
+Şimdi burada bizim için önemli olan şey benzerleri aynı gruba almaya çalışmak.
+
+73
+00:10:57,803 --> 00:11:05,323
+Bunun için örneğin pardon nasıl oldu yine elimdeyince şey oluyor.
+
+74
+00:11:05,543 --> 00:11:18,103
+Diyelim ki burada K eşittir 3 için bir gruplama yapmak istiyoruz benzerliklerine göre şeyleri.
+
+75
+00:11:18,183 --> 00:11:25,143
+Mesela şöyle düşünün diyelim ki banka müşterilerine harcama karakteristiklerine göre gruplamak istiyorsunuz.
+
+76
+00:11:25,143 --> 00:11:31,903
+diyorsunuz ki işte az harcayanlar, orta seviyede harcayanlar ve çok harcayanlar.
+
+77
+00:11:31,983 --> 00:11:33,183
+Üç tane grubunuz var.
+
+78
+00:11:34,403 --> 00:11:36,323
+Ama tabii ki siz şeyi bilmiyorsunuz.
+
+79
+00:11:36,423 --> 00:11:42,423
+Yani ne olunca, az harcama ne olunca orta, ne olunca yüksek olduğunu bilmiyorsunuz.
+
+80
+00:11:42,483 --> 00:11:43,903
+Böyle bir eşik seviyelerimiz yok.
+
+81
+00:11:44,003 --> 00:11:47,063
+Siz de bunu kendi kendine yapmasını istiyorsunuz.
+
+82
+00:11:47,063 --> 00:11:52,063
+Şimdi ortalama yönteminin çalışma prensibi şu şekilde.
+
+83
+00:11:52,063 --> 00:12:05,203
+başlangıçta K tane merkez alınıyor şey olarak, random olarak K tane merkez alınıyor. Bunlar bizim merkezlerimiz. Ondan sonra
+
+84
+00:12:07,091 --> 00:12:31,791
+örnek setimizde eğitim yok aslında burada da eğitim gibi düşünebiliriz aslında. İterasyonlarla şey yapılıyor, gruplama işlemi yapılıyor. Bütün örnekler en yakın merkez neresiyse onun olduğu şeyin dahil ediliyor, klastra dahil ediliyor.
+
+85
+00:12:31,791 --> 00:12:39,511
+Yakınlık için genellikle kullanılan, mesafe ölçmek için kullanılan yöntemler en çok öğret kullanılıyor.
+
+86
+00:12:45,235 --> 00:13:13,515
+daha hassas olmasına gerek yok ve daha da hızlı olsun diye düşünüyorsanız da Manhattan Business kullanılıyor. Böylece her örneğin merkeze, 3 merkeze mesafesi hesaplanıyor ve arkasından en yakın olduğu, yani mesafenin en az olduğu cluster belirleniyor.
+
+87
+00:13:13,515 --> 00:13:23,215
+ve örneğin bu klastere ait olduğu kabul ediliyor.
+
+88
+00:13:23,815 --> 00:13:30,835
+Arkasından, şurada bir örnek vardı ona baktım.
+
+89
+00:13:31,295 --> 00:13:38,735
+Arkasından tekrardan, şimdi örnekler yer değiştirdikleri için her sınıfın ortalaması tekrardan belirleniyor.
+
+90
+00:13:38,735 --> 00:13:54,756
+Şimdi o zaman ne oldu? Şurada baktığınız zaman sınıflar cluster merkezleri yer değiştirdi.
+
+91
+00:13:54,756 --> 00:14:04,375
+Yani şuralarda bir yerdeydi, şuradaydı. Mesela bu buraya doğru kaydı, bu buradaydı, şöyle kaydı.
+
+92
+00:14:04,375 --> 00:14:16,475
+öbür üçüncü merkez de buradaydı böyle kaydı. Neye göre kaydı? Örneklerin yer değiştirmesine göre, örneklerin hangi klastere ait olduğuna göre kaydı.
+
+93
+00:14:16,475 --> 00:14:30,096
+Ondan sonra örnekler tekrardan şey yapılıyor, en yakın oldukları klastere belirleniyor ve buna göre tekrardan klastere merkezleri belirleniyor.
+
+94
+00:14:30,096 --> 00:14:49,975
+şimdi ben örneğin bir örnek koydum ama konuştum ama örneği bulamadım. O yüzden şurada size şey üzerinde göstermek istiyorum. Örnek üzerinde neden bahsettiğimi göstermek istiyorum. Şey görüyorsunuz değil mi şu anda çizdiğimi? Görüyor musunuz?
+
+95
+00:14:49,975 --> 00:14:50,995
+Evet hocam
+
+96
+00:14:50,995 --> 00:14:57,256
+Diyelim ki iki özelliğiniz olsun x1 ve x2 iki özelliğiniz olsun
+
+97
+00:14:57,256 --> 00:15:04,176
+mesela kişilerin harcama miktarı ve günde ne kadar harcama yaptıkları
+
+98
+00:15:04,176 --> 00:15:07,795
+diyelim ki iki tane özelliklerine göre bulutlamak isteyeceğiz
+
+99
+00:15:07,795 --> 00:15:09,596
+şurası
+
+100
+00:15:09,596 --> 00:15:13,755
+iki diyeyim
+
+101
+00:15:47,155 --> 00:15:59,155
+örneklerim şöyle olsun x1, 2, 1 x2, 3 dur.
+
+102
+00:16:01,299 --> 00:16:22,799
+x2, 2, 3, x3, 3, 2, x4, 5, 2, x5, 7, 2, ilk başta şeyle göstereceğim, sonra göz kararı yapacağız sizinle. x6, 7, 3.
+
+103
+00:16:25,879 --> 00:16:28,659
+Bir tane de şey yapayım, bir dakika.
+
+104
+00:16:36,820 --> 00:16:38,820
+x7'de 8-2 olsun.
+
+105
+00:16:40,820 --> 00:16:48,320
+Şimdi başlangıçta önce diyelim ki burada biz k'yı 2 belirledik. İki tane klaster oluşturmak istediğimiz düşünelim.
+
+106
+00:16:48,320 --> 00:16:52,820
+Randa iki tane klaster merkezi belirliyoruz.
+
+107
+00:16:52,820 --> 00:16:57,820
+Mesela işte merkezin biri burası da olsun.
+
+108
+00:16:58,820 --> 00:16:59,820
+m1
+
+109
+00:17:03,283 --> 00:17:22,163
+3-2 oldu. Birisi de burası olsun. Tabii ben random belirlemedim. Kendimce kötü bir şey yaptım ki hani birazcık böyle karışık olsun diye. Bu şekilde olsun. Şimdi K-Means'teki mean şeyden geliyor aslında.
+
+110
+00:17:22,163 --> 00:17:38,523
+sınıfların merkezi sınıftaki örneklerin ortalama değerine eşit. Yani minordan geliyor. K-minis de ki yani o yüzden de mü olarak sınıf merkezleri genelde gösteriliyor.
+
+111
+00:17:38,523 --> 00:17:44,343
+buna yaşadık. Şimdi birinci iterasyonda
+
+112
+00:17:48,115 --> 00:18:07,415
+birinci iterasyonda, mü birimiz 3-2, mü ikimiz de 8-2 olarak random belirlenmiştik, initialize ettik. Arkasından şimdi bütün örneklerin mesafelerini ölçeceğiz. Distance, x1'in mümire mesafesi.
+
+113
+00:18:07,415 --> 00:18:21,095
+ben şimdi şey olması açısından Manhattan yapacağım. 2 saat karelerini, kare köklerini bilmem ne uğraşmamak için Manhattan yapacağım ama normalde dediğim gibi yani hassasiyet gerekiyorsa öklüt yapılıyor.
+
+114
+00:18:21,095 --> 00:18:35,215
+Ne olacak? x-3 artı 2-3 artı 1-2. O da neye eşittir? 2. x1'in mu2'ye mesafesi nedir?
+
+115
+00:18:37,415 --> 00:18:56,336
+2-8 artı 1-2 o da neye eşit? 6, şey bir daha 7'ye eşit. Şey olarak yazayım. X2'nin mü 1'e mesafesi neye eşit?
+
+116
+00:18:56,336 --> 00:19:11,456
+2-3, 1, 3-2, 1, 2, mü 2'ye mesafesi, 2-8, 6, 3-2, 1, 7
+
+117
+00:19:16,307 --> 00:19:19,307
+x üçün kisi 0 zaten
+
+118
+00:19:19,307 --> 00:19:41,568
+3-8-5
+
+119
+00:19:41,568 --> 00:19:42,568
+3-8-5-5
+
+120
+00:19:29,428 --> 00:19:31,628
+x dördünki 5-3
+
+121
+00:19:31,628 --> 00:19:32,987
+2
+
+122
+00:19:32,987 --> 00:19:34,987
+3
+
+123
+00:19:37,140 --> 00:19:39,919
+5-8, 3
+
+124
+00:19:46,900 --> 00:19:50,479
+x5'in ikisi, 7-3, 4
+
+125
+00:19:50,479 --> 00:19:55,479
+Hocam bölüyorum ama x4'ünki 3 olacak sanırım.
+
+126
+00:19:56,120 --> 00:19:58,259
+Hangisi? Kaça? x4'ün m1'i mi?
+
+127
+00:19:59,299 --> 00:19:59,719
+Evet.
+
+128
+00:20:00,619 --> 00:20:03,139
+5- niye?
+
+129
+00:20:04,039 --> 00:20:07,219
+Pardon. 2'ye bakmışım sanırım. Tamam, pardon.
+
+130
+00:20:07,339 --> 00:20:09,519
+Hata olursa uyarın ama ben çünkü...
+
+131
+00:20:09,519 --> 00:20:11,559
+Ben de kontrol ediyordum da bu karşıtı.
+
+132
+00:20:11,559 --> 00:20:16,820
+Evet, evet. Çünkü hızlı hızlı yaparken hata yapma ihtimali yüksek.
+
+133
+00:20:16,900 --> 00:20:22,780
+x6'nınkisi 7, 3, 4, 5,
+
+134
+00:20:26,420 --> 00:20:48,879
+şeyinkisi de X6'nın M7'ye mesafesi 2. Zaten X7'ninkisi doğal olarak M1'e mesafesi fazla olacak 5. Kendisi zaten X7'nin M2'ye pardon şurada M2 yazacaktık. Onu da M7 yazmışım.
+
+135
+00:20:48,879 --> 00:21:10,739
+M2'ye mesafesi sıfır. Şimdi buna göre bakarak şöyle bir şuraya X1'in M2'ye şurayı şöyle şey yapayım da orada bir yer açayım kendime. X1'in M2'ye mesafesini neydi sildim onu ben. 2, 6, 7 miydi? 7 tamam.
+
+136
+00:21:10,739 --> 00:21:30,619
+Şimdi cluster 1 diyorum, cluster 2 diyorum ya da şöyle şuraya bile derim aslında çok yerim var. Şöyle diyeyim cluster 1 diyorum şuraya da cluster 2 diyorum.
+
+137
+00:21:30,619 --> 00:22:00,319
+Şimdi birinci iterasyon sonunda bakalım. Şimdi x1 m1'e gitti. x1'i cluster 1'e yazdım. x2 m1'e gitti. x3 aynı zaten oranı kendisiydi merkez. x4, x5, x6 ve x7.
+
+138
+00:22:00,619 --> 00:22:13,359
+Şimdi burada x1, x2, x3, x4, m1'e, şey cluster 1'e gitti. x5, x6, x7, cluster 2'ye gitti. O zaman m1 şuna eşit olacak.
+
+139
+00:22:13,359 --> 00:22:35,979
+2, 4, 7, 12 bölü 4, 3. Yani şöyle 2, 4, 7, 12 bölü 4, 3. Y'si de 1, 4, 6, 8 bölü 4, 2. 3'e 2 olacak.
+
+140
+00:22:35,979 --> 00:23:05,080
+Yani çok komik. 4, 8, bir hata mı yaptım? 4, 7, 12, 4, 4, 6, 8, neyse değişmedi. İstediğim olmayacak mı acaba? Dur bakayım. İkinci adım da olabilir belki. M2'ye bakalım. M2'de şöyle. 7, 14, 22 bölü 3. 7 nokta kaç ediyor?
+
+141
+00:23:05,080 --> 00:23:29,020
+7.3 mü ediyor? 7.4, 22.3. Öbürü de 7.3. 7.3 kaç eder? O da 2.3 ediyormuş. 7.3'e 2.3 etti. Şimdi onları şey yapalım. 3'e 2 burada kaldı. Bu değişmedi.
+
+142
+00:23:29,019 --> 00:23:43,599
+öbürü 7.3'e 2.3 oldu. Şöyle şuralara geldi. Yani şuradan şöyle kalktı, şuraya geldi.
+
+143
+00:23:45,059 --> 00:23:54,559
+Şimdi aslında istediğim olmadı. Bir sefer de doğru yere oturdu. Ben şey yapmak istemiştim ama
+
+144
+00:23:54,559 --> 00:24:04,520
+x4'ü ikinci adımda ikinci klastere kaymasını istemiştim ama öyle bir oturtmuşum ki.
+
+145
+00:24:04,943 --> 00:24:19,263
+O olmayacak. Çok merkeze oturtmuşum onu. Neyse, önemi yok. Şimdi burada M1-3-2 oldu ama M2 değişti. İşlemin şey olduğu sürece değiştiriyorsun, ilerletiyorsunuz.
+
+146
+00:24:19,263 --> 00:24:34,763
+Mihinler değiştiği sürece demek ki şeyler oynuyor, merkezler oynuyor. Bunun anlamı merkezler oynuyorsa örneklerde sınıf değiştirebilirler. O yüzden bu süre boyunca değiştiriyorsunuz.
+
+147
+00:24:34,943 --> 00:24:40,984
+Şimdi bakalım bizim büyük ihtimalle değişmeyecek. Ben çok da güzel seçmedim şeyleri anladığım kadarıyla örneklere.
+
+148
+00:24:41,644 --> 00:24:51,003
+3'e 2 olunca sadece şeye bakmamız lazım. X1, X2, X3 zaten açık ara yakındılar. Şu X4'ün durumuna bakalım bir.
+
+149
+00:24:51,664 --> 00:25:04,484
+X4, m1'e şöyle yapayım. Şimdi X1, X2, X3 zaten sizin de gördüğünüz üzere yerlerinden ötürü şu 3 noktanın
+
+150
+00:25:04,483 --> 00:25:13,443
+şu merkeze yakın olma ihtimali yok. Onlar değişmeyecek. Ben şunun değiştirebileceğini düşünmüştüm ama kafadan hesapladığım için olmadı.
+
+151
+00:25:13,443 --> 00:25:36,204
+X4'ün mühüre mesafesi 2. Şu anda X4'ün mühüre mesafesi şu değerlerde 2.3 artı 2.3 artı 0.3 2.6.
+
+152
+00:25:36,203 --> 00:25:47,503
+demek ki x4 değer değiştirmedi. O zaman şöyle oldu. Bu bir seferde yerleşti. Sadece merkez değişti. Şöyle iki tane klasterımız oldu.
+
+153
+00:25:47,623 --> 00:25:54,243
+Klaster bir, klaster iki olarak iki klasterımız oldu. Bunun nasıl yapıldığını anladınız mı? Burada sormak isteniz bir şey var mı?
+
+154
+00:25:59,059 --> 00:26:26,400
+Yok, peki. Şimdi o zaman şey diyorum, burada geri dönüyorum. Şimdi belki hani ilk defa dinleyen varsa daha rahat anlayabilir. Bakın burada merkezler şu şeyde ikinci adımda örneklerin hangi klastra kaydığına bağlı olarak tabii ki o klastırdaki örneklerin, yeni örneklerin ortalaması, yeni durumun daha doğrusu yeni örneklerinde,
+
+155
+00:26:26,400 --> 00:26:31,879
+o klasrdaki bütün örneklerin ortalaması alındığında merkezler hafif hafif kaymaya başlayacak.
+
+156
+00:26:32,199 --> 00:26:34,600
+Şimdi bunu ne zamana kadar sürdürmeniz gerekir?
+
+157
+00:26:34,600 --> 00:26:36,359
+İki tane seçeneğimiz var.
+
+158
+00:26:36,519 --> 00:26:39,379
+Ya bir iterasyon sayısı belirlersiniz.
+
+159
+00:26:39,859 --> 00:26:43,640
+Örneğin maksimum iterasyon 500 olana kadar dersiniz.
+
+160
+00:26:44,199 --> 00:26:46,159
+Ya da şey belirlersiniz.
+
+161
+00:26:46,379 --> 00:26:50,679
+Daha doğrusu üç tane merkez değişmeyene kadar dersiniz.
+
+162
+00:26:51,140 --> 00:26:54,100
+Üçüncü olarak da bir hata belirlersiniz.
+
+163
+00:26:54,099 --> 00:27:11,119
+şeyler nedir? Bir önceki merkezin bir sonraki merkeze göre durumu belli bir şeyden, epsilon'dan küçük olana kadar devam edersiniz. Bunlar seçebileceğiniz yöntemler.
+
+164
+00:27:11,119 --> 00:27:23,379
+Şimdi burada şuradan itibaren bakın çünkü yukarısını anlatacağım size. Her örneğin mesafesini hesaplıyorsun.
+
+165
+00:27:23,379 --> 00:27:35,159
+mesafeyi böyle grupluyorsunuz. Buna göre merkezleri değiştiriyorsunuz ve eğer clusterlarda şey varsa, hareket varsa başa dönüp tekrar ediyorsunuz.
+
+166
+00:27:35,539 --> 00:27:46,759
+Eğer clusterlerde hareket yoksa yani örnekler yerlerine yerleşmişse o zaman şeyi kesiyorsunuz, iterasyonları kesiyorsunuz.
+
+167
+00:27:46,759 --> 00:27:53,619
+İşte burada mesela burada daha adım adım göstermiştim.
+
+168
+00:27:54,039 --> 00:27:56,959
+Rastgele k-adet klaster merkezi belirlediniz.
+
+169
+00:27:57,639 --> 00:28:04,619
+Arkasından işte örnekleri klaster merkezinin bulunduğu klastra yerleştirdiniz.
+
+170
+00:28:04,619 --> 00:28:15,599
+Mesela şöyle bir örnek için şu klaster mavi sınıfına kırmızı sınıfından daha yakın olduğu için mavinin bir elemanı olacaktır.
+
+171
+00:28:15,599 --> 00:28:29,939
+arkasından şimdi merkez buydu birinci durumda ve bu merkeze yakalanan örnekler mavi uzak olan kırmızıya yakalanan örneklerde kırmızıyla gösteriliyor.
+
+172
+00:28:29,939 --> 00:28:40,059
+Şimdi ne oldu? Sizin de rahatlıkla görebileceğiniz gibi şöyle bir durum için merkez buradan buraya kaydı mavinin merkeze.
+
+173
+00:28:40,059 --> 00:28:53,399
+böyle bir durum içinde kırmızının merkezi buradan buraya kaydı. Bu işlem böyle devam ettikçe en sonunda mesela şöyle olmuş.
+
+174
+00:28:57,907 --> 00:29:22,088
+tabi o da kayacak tekrardan merkez yine oynamıştır eminim ki bir kere daha. Bu şekilde olmuş. Bir dakika. Ha yok olmamış daha. Daha devam ediyormuş. Bakayım en son bittiği herhalde şurası. Kaya kaya daha gitmiş bitmiş. En son şu şekilde cluster merkezleri bulunmuş.
+
+175
+00:29:22,088 --> 00:29:42,387
+Yani şöyle bir bakacak olursanız başlangıçta şöyle adım adım göstereyim. Merkezlere nasıl kaydım? Biraz daha kaydı. Tamamen başka bir hal alıyor bakın. Yani şöyle giderken birdenbire şöyle olmaya başladı. Dikkat edin.
+
+176
+00:29:42,387 --> 00:29:47,448
+ve işte biraz daha kaydı en sonunda.
+
+177
+00:29:48,088 --> 00:29:53,047
+Yani hiç aslında başlangıca başladığınızda şöyle gibi duruyordu örnekler hatırlarsanız.
+
+178
+00:29:53,607 --> 00:30:00,308
+Ama şimdi tamamen farklı bir şekilde iki tane klaster elde ettiniz.
+
+179
+00:30:00,308 --> 00:30:04,027
+Baktığınız zaman da oldukça mantıklı klasterların durumu.
+
+180
+00:30:04,027 --> 00:30:12,927
+düzgün bir bölükleme işleminin gerçekleştiğini görüyoruz.
+
+181
+00:30:12,927 --> 00:30:16,487
+Buraya kadar sormak istediniz bir şey var mı?
+
+182
+00:30:24,115 --> 00:30:30,715
+Peki, devam ediyorum o zaman. Şimdi burada her zaman başarılı bir ürtleme yapılmayabiliyor.
+
+183
+00:30:30,715 --> 00:30:46,835
+Şey, öbekleme yapılmayabiliyor. Bunun sebebi, başlangıçta, yani sebepleri tabii çok birden fazla sebebi var. Sebeplerden biri, başlangıçta merkezlerin landın nereden başladığı olabilir.
+
+184
+00:30:46,835 --> 00:30:50,475
+mesela merkezi şuradan başlatmışsınız.
+
+185
+00:30:51,035 --> 00:30:53,835
+Dolayısıyla yani şuradan başlatmışsınız merkezi.
+
+186
+00:30:54,755 --> 00:30:56,815
+Kaya kaya şuraya kayabilmiş merkez.
+
+187
+00:30:57,555 --> 00:31:08,635
+Dolayısıyla mesela aslında beklediğimiz öbekleme şöyle olması efektifken merkezin konumundan ötürü sağa doğru kayabilmiş.
+
+188
+00:31:08,635 --> 00:31:10,375
+Çünkü şimdi neden?
+
+189
+00:31:10,815 --> 00:31:12,395
+Şöyle bakacak olursanız.
+
+190
+00:31:12,395 --> 00:31:24,155
+Şimdi ben başlangıçta initial randomliği böyle alırsam ne olacak mantıken? Şu örnek şuna yakın, şu örnekte şuna yakın, bu buna yakın, bu da buna yakın.
+
+191
+00:31:24,155 --> 00:31:40,135
+Buna göre üç örneğin ortalamasını aldığınızda bu merkez buraya geldi. Buradaki merkez de buraya geldi. Gayet de güzel işte yani yine ölçtüğünüzde bu örnek bu merkeze yakın, bunlar da bu merkeze yakın.
+
+192
+00:31:40,135 --> 00:32:04,515
+aynı mantıklı böyle baktığınızda şöyle bir clustering görüyorsunuz. Gayet de mantıklı aslında çünkü örneklerin eğer bizim görmek istediğimiz şey örneklerin hangi merkeze daha yakın olduğuna bakarak bir öbekleme ise işte onu yapmış olduk ama bu tamamen initial değerlerin şeyiyle ilgili oldu.
+
+193
+00:32:04,516 --> 00:32:20,876
+random belirlenirken de nerede durduklarıyla ilgili oldu. Aslında ben buna baktığımda efektif öbeklemenin şu şekilde olduğunu galet net görebiliyorum aslında. Mesela bu problemlerden birisi.
+
+194
+00:32:20,875 --> 00:32:34,875
+Bunun dışında problemler de var onlardan da bahsedeyim. Mesela şeyler olabilir. Öbekleme sonuçlarında şöyle göstereyim.
+
+195
+00:32:43,571 --> 00:32:46,211
+diyelim ki K'yı 3 belirlediğimiz için
+
+196
+00:32:46,211 --> 00:32:50,951
+dur biraz hile yapmak istiyorum
+
+197
+00:32:55,731 --> 00:33:21,451
+çünkü söylemek istediğim şey bu. K'yı 3 belirlediğim için şurada 3 tane sınıf yapıyor. Ama aslında ben görüyorum ki şu sınıf buraya dahil olabilirdi. Buraya benziyor aslında. Mesela bu da şeyle ilgili bir şey. Ben çünkü K3 olsun dedim. Aslında gerçekte 3 grup yok, 2 grup var. Mesela böyle bir durumda ne yapabilirsiniz?
+
+198
+00:33:21,451 --> 00:33:25,031
+bunu anlamak için şunu yapabilirsiniz.
+
+199
+00:33:26,631 --> 00:33:28,772
+Cluster'lardaki örnek sayılarına bakarsınız.
+
+200
+00:33:28,871 --> 00:33:30,171
+Yani bu bir anomali değil bu arada.
+
+201
+00:33:30,931 --> 00:33:32,191
+Hani bir de şey durumu var.
+
+202
+00:33:32,511 --> 00:33:37,571
+Yani şurada bir örnek olsaydı, hani bunu ayrı bir cluster yapması olabilirdi.
+
+203
+00:33:38,251 --> 00:33:40,351
+Çünkü çok uzaktalar birbirlerine.
+
+204
+00:33:40,452 --> 00:33:41,412
+Yani az örnek var.
+
+205
+00:33:41,531 --> 00:33:44,011
+Tamam burada iki tane örnek var ama uzaktalar.
+
+206
+00:33:44,011 --> 00:33:46,571
+O yüzden onu ayrı cluster yapması mantıklı.
+
+207
+00:33:46,572 --> 00:34:04,132
+ama şurada yakında bir klaster var ve buna ayrı bir klaster yapıyor. Bu anomali falan değil. Böyle bir durumda mesela böyle bir durum oluşup oluşmadığını anlamak için yapmanız gereken şey klasterlardaki örnekleri sayarsınız.
+
+208
+00:34:04,132 --> 00:34:21,612
+Bir klaster'ın içerisindeki örnek sayısı belli bir eşik seviyesinin altındaysa örneğin her klasterda 100'er örneğimiz var. Sizin eşik seviyeniz 10 mesela yani diyelim ki 1000 tane örneğimiz var. 3 tane veya 4 tane klastera yayacaksınız.
+
+209
+00:34:21,612 --> 00:34:33,331
+Ve diyorsunuz ki yani bir klasterda ondan az örnek olmamalı. Çünkü 4 klaster o kadar çok örneği yaydığınızda çok da şey bir, üniform bir dağılım yok demektir.
+
+210
+00:34:33,331 --> 00:34:46,051
+o zaman diyorsunuz ki eğer bir cluster'daki örnek sayısı az ise eşik seviyesinin altındaysa ve yakınında yine orada da bir eşik seviyesi vermemiz gerekir.
+
+211
+00:34:46,711 --> 00:34:51,812
+Belli bir mesafede başka bir cluster var ise onunla birleştirebilirsin diyorsunuz.
+
+212
+00:34:51,812 --> 00:34:58,672
+Fakat burada şey sıkıntı yani işte o eşik seviyelerini nasıl belirleyeceksiniz o da ayrı bir konu.
+
+213
+00:34:58,671 --> 00:35:20,991
+çünkü bunlar deneysel olarak belirlenir. Hangi mesafeden itibaren birleştirmek mantıklıdır. Ne kadar örnek bir sınıfta varsa şey yapmak doğrudur. O örneği yeni bir klast ile eklemek doğrudur gibi şeyler deneysel olarak belirlenir.
+
+214
+00:35:20,991 --> 00:35:28,911
+orada da tabii işin içine böyle statik işler girdi mi çok dikkatli çalışmanız gerekir.
+
+215
+00:35:28,911 --> 00:35:37,452
+Yani o deneysel belirlemeler sonra ileride yanlış şeylere yol açmasın, sebeplere yol açmasın.
+
+216
+00:35:37,631 --> 00:35:41,011
+Şimdi burada en önemli sıkıntılardan biri bu şey meselesi.
+
+217
+00:35:41,351 --> 00:35:43,551
+K'yı baştan set etmek zorunda olmanız.
+
+218
+00:35:43,631 --> 00:35:50,671
+Yani sizin baştan işte mesela gelir grubuna göre ben banka müşterilerini gruplayacağım ama 3 grup var dediğiniz zaman
+
+219
+00:35:50,672 --> 00:35:55,992
+o zaman siz şey yapıyorsunuz yani illaki 3 grup olacak diyorsunuz.
+
+220
+00:35:56,291 --> 00:35:57,952
+Orada belki şöyle bir şey oluyor.
+
+221
+00:35:58,812 --> 00:36:02,511
+Mesela küçük bir grubun açıkta kalması da önemli.
+
+222
+00:36:02,972 --> 00:36:06,431
+Yani k eşittir aslında 2 olmalıydının ötesinde.
+
+223
+00:36:06,752 --> 00:36:09,412
+k eşittir aslında 5 olmalıydı da olabilir.
+
+224
+00:36:09,871 --> 00:36:13,931
+Yani siz 3 dediğiniz için mesela işte burada da başka gruplar olsun.
+
+225
+00:36:14,371 --> 00:36:16,151
+Şunu birleştirmek zorunda kalıyor.
+
+226
+00:36:16,151 --> 00:36:20,252
+Ama 3 değil de 5 deseydiniz şunları ayrı yapacaktı belki.
+
+227
+00:36:20,251 --> 00:36:38,511
+Anlatabildim mi? Yani K'yı baştan belirlemek bazen doğru. Yani mesela şunu yapmak istiyorsunuz. İstiyorsunuz ki ne bileyim mesela iki tür dökümanım var zaten.
+
+228
+00:36:38,511 --> 00:36:44,131
+işte şey dokümanlar, fake, şu ara çok moda ya, fake haber sınıflandırma.
+
+229
+00:36:44,131 --> 00:36:48,851
+Yani daha doğrusu bir haberin sahte olup olmadığını tespit etme.
+
+230
+00:36:49,271 --> 00:36:53,252
+Mesela fake olanlar, fake olmayanlar. İki cluster var orada, belli zaten.
+
+231
+00:36:54,291 --> 00:37:20,911
+yani yarı fake diye bir şey olamaz ama bazen de işte gelir grubuna göre gruplandırdım, efendim işte öğrencileri başarılarına göre gruplandırdım falan böyle şeyler dediğinizde aslında oralarda kaç klaster olduğunu bilmiyorsunuz ve şu anda bu dönemde günlük gerçek iş dünyasında kullanılan uygulamaların çoğunda da durum böyle yani bir gruplama ihtiyacımız var.
+
+232
+00:37:20,911 --> 00:37:33,131
+işte sosyal akıllıcılarını benzerliklerine göre, müşterileri harcamalarına göre bilmem işte şeyleri, öğrencileri başarılarına göre falan gruplama ihtiyacımız var.
+
+233
+00:37:33,131 --> 00:37:48,771
+Fakat kaç grup olduğunu bilmiyoruz aslında. O zaman K'yı bizim belirlememiz en iyi olan K'nın sistem tarafından yani kaç grup olacağının sistem tarafından belirlenmesi lazım.
+
+234
+00:37:48,771 --> 00:37:50,832
+Buraya kadar sormak istediğiniz bir şey var mı?
+
+235
+00:37:53,431 --> 00:37:55,571
+Hocam benim aslında bir sorum var.
+
+236
+00:37:57,012 --> 00:37:57,451
+Tamam.
+
+237
+00:37:58,311 --> 00:38:08,211
+Belki ileride bahsedeceğim, böyle bir şey konuştular ama şimdi mesela biz diyelim ki K'yı çok büyük alırız, 20 alırız diyelim ki ama belki daha az sınıf vardı.
+
+238
+00:38:08,211 --> 00:38:24,751
+ondan sonra bu her bir 20 sınıf için gene ortalamalarını sanki bir noktaymış gibi koyup bunun üstünden tekrar bir K ortalama hesaplatıp diyelim ki 2'ye indirebiliriz ya da 3'e indirebilir miyiz? Böyle bir yaklaşım nasıl olur?
+
+239
+00:38:24,751 --> 00:38:50,751
+Evet çok güzel şimdi onu anlatacağım zaten aslında K'yı otomatik olarak nasıl belirleyebiliriz yani ön yargılı olarak burada 3 sınıf olmasını istiyorum demek yerine sistemin kendi kendine efektif K'yı belirlemesini nasıl sağlayabiliriz isterseniz aramayayım şöyle bir çayma için bir ferahlayın çok uzun anlatınca dikkat dağılıyor sanıyorum çünkü olur mu ister misiniz istemez misiniz anlatabilirim ben
+
+240
+00:38:50,751 --> 00:38:54,911
+Olur hocam
+
+241
+00:38:54,911 --> 00:39:02,711
+Tamam oldu o zaman benim saatimi 43-10 dakika versen 10 dakika yeter mi? 15 mi vereyim?
+
+242
+00:39:04,611 --> 00:39:06,291
+15 olsun hocam
+
+243
+00:39:06,291 --> 00:39:11,851
+Peki tamam o zaman 2 dakika daha vereyim ki kafa karışmasın 11'de görüşürüz tekrardan
+
+244
+00:39:11,851 --> 00:39:15,471
+Kolay gelsin size de 15 dakika sonra görüşürüz
+
+245
+00:56:37,972 --> 00:56:50,091
+Evet arkadaşlar, geri geldim. Şimdi önce şeyi söyleyip öyle devam edeyim. Kart olamadan aslında ben basitçe şey dedim, en yakın, her örnek en yakın olduğu sınıfa dahil edilir dedim.
+
+246
+00:56:50,091 --> 00:57:04,991
+Ben dedim veya örgüt pist nasıl hata hesabı yapıldıktan sonra. Ama aslında burada hata hesabı için şey, yani çok fazla, ben uygulamalarda bunu kullanıldığını görmüyorum ama
+
+247
+00:57:04,991 --> 00:57:27,931
+X cluster içerisindeki bir örnekse C'i işte iyinci cluster ise ondan sonra M'i de iyinci cluster'ın merkezi ise bütün örnekler için sum of squared error hesaplanıyor ve bu şeyi gösteriyor.
+
+248
+00:57:27,931 --> 00:57:36,211
+yani K-Cluster için bütün örneklerin yerleştirdikleri sınıfa göre hata miktarı gösteriyor.
+
+249
+00:57:36,312 --> 00:57:44,931
+Burada tabii bizim şeyimiz yapmak istediğimiz şey hatanın minimum olmasını sağlamak.
+
+250
+00:57:45,611 --> 00:57:48,931
+Buna göre sınıflara, elemanlara yerleştirmek.
+
+251
+00:57:48,931 --> 00:57:59,571
+yerleştirmek. Yani o da aslında dediğim gibi her örneği şey yaptıkça kendisine en yakın olan klastere yerleştirdikçe ne oluyor? Bu distance küçülüyor.
+
+252
+00:57:59,571 --> 00:58:11,611
+Buna bağlı olarak da toplam hata küçülmüş oluyor. Yani oradaki olay bu. Şimdi gelelim az önce bıraktığımız yere k değerinin nasıl belirleneceğini.
+
+253
+00:58:11,611 --> 00:58:39,412
+Şimdi problemi bir kez daha söylemek istiyorum. Bu da bizim problemimiz. Zaten elimdeki örneklerin karakteristiği hakkında da çok bilgi sahibi değilsem kendi fikrime göre bir şey yapıp diyelim ki K değerine işte herhalde 3 klaster vardır diye belirlemeye çalıştığında aslında birbirlerine çok benzemeyen örneklerinde
+
+254
+00:58:39,411 --> 00:58:42,551
+aynı klastra gelmesine sebep olabilir.
+
+255
+00:58:43,151 --> 00:58:47,271
+Mesela bizim kullandığımız bir örneği vereyim size.
+
+256
+00:58:48,972 --> 00:58:56,231
+Şeylerin kredi kartı sahtekarlı ile ilgili bahsetmiştim daha önce yaptığımız bir çalışması vardı.
+
+257
+00:58:56,332 --> 00:59:00,631
+BKM'li gerçek data üzerinde yaptığımız bir çalışmaydı.
+
+258
+00:59:00,632 --> 00:59:11,912
+orada sahtekarlık işlemlerini önce benzerliklerine göre gruplayıp oradan bir takım işlemler yaptık.
+
+259
+00:59:12,452 --> 00:59:20,872
+Orada bizim şey bilmemize imkan yoktu yani kaç tur şey var, karikat sahtekarlığı var bunu bilmemize imkan yoktu.
+
+260
+00:59:20,871 --> 00:59:50,851
+Yani yapabileceğimiz en iyi şey şey demek olabilir de işte küçük sahtekarlıklar işte ne bileyim 1 lira ile 10 lira arası değişen işte orta büyüklükte sahtekarlıklar çok büyük olan sahtekarlıklar ama bunu yaptığımız zaman bu işin sadece bir boyutu halbuki işin içine bu sahtekarlığın yapılma sıklığı, yapılma saati, zamanı, ne tür bir iş yerinde yapıldığı gibi bir sürü bilgi.
+
+261
+00:59:50,871 --> 01:00:00,451
+giriyor. Şimdi boyut arttıkça yani dikkate alınması gereken özellik sayısı arttıkça bunu menu yapabilmek çok mümkün değil.
+
+262
+01:00:00,451 --> 01:00:14,951
+Biz o yüzden tamamen şimdi anlatacağım gibi farklı K değerleriyle el yol yöntemi kullanarak en uygun K değerini belirledik ve ona göre sahtekarlıkları benzerliklerine göre kurumladık.
+
+263
+01:00:14,951 --> 01:00:23,332
+Peki nasıl belirledik? Yapacağınız şey şu aslında, başlıyorsunuz iki plaster'dan başlıyorsunuz yani birden başlamak
+
+264
+01:00:24,019 --> 01:00:50,039
+çok da gerekli değil yani tek klaster demek, her şey aynı grupta demek. İkiden başlıyorsunuz. Ondan sonra işte bir maksimum klaster sayısı belirli. Diyelim ki 20. Çok da abartmamak lazım. Ondan sonra yani tabii ihtiyacınıza göre değişir. Çok daha fazla klaster olmasını bekliyorsanız, zannediyorsanız 50-60-70 nereye kadar gidiyorsa yapabilirsiniz.
+
+265
+01:00:50,039 --> 01:01:05,919
+şeyler için nedir? Farklı klasterlar için tek tek k-means çalıştırıyorsunuz ve şey yapıyorsunuz hata hesabı yapıyorsunuz.
+
+266
+01:01:05,919 --> 01:01:11,179
+Hata hesabı için genellikle viting klaster sum of error kullanılıyor BCSS.
+
+267
+01:01:11,179 --> 01:01:29,979
+Bu da yapılan şey şu her klasterdaki örneklerin bulundukları klastera göre mesafelerinin işte karelerinin toplamının toplamı şeyi veriyor.
+
+268
+01:01:29,979 --> 01:01:33,740
+Yani within klaster sum of error veriyor.
+
+269
+01:01:33,740 --> 01:01:54,439
+Yani şöyle şimdi buradaki bir PI örneği C1 klasterı içinde yer alıyor. O zaman bu C1 klasterı içerisindeki örneklerin merkeze mesafelerinin karelerinin toplamı bir klaster için olan değeri veriyor.
+
+270
+01:01:54,439 --> 01:02:06,719
+arkasından işte C2 klaster içerisindeki bütün örneklerin C2 klasterın merkezine mesafesi klaster 2 için hatayı veriyor.
+
+271
+01:02:07,200 --> 01:02:11,679
+C3 için aynı şekilde yani 3 tane klaster'ımı hesapladım topladım.
+
+272
+01:02:11,679 --> 01:02:15,819
+Bu bana bittim klaster samof error veriyor.
+
+273
+01:02:16,259 --> 01:02:19,200
+Şimdi diyelim ki K eşittir 3 için bir hata buldunuz.
+
+274
+01:02:19,200 --> 01:02:33,840
+aynı şekilde işte k-eşittir 4 için buldunuz, 5 için buldunuz. Bunların elbol yöntemi şeyin düşüşün yavaşladığı yer.
+
+275
+01:02:33,839 --> 01:02:42,739
+Yani şimdi şöyle cluster sayısı arttıkça bakın burada çok ufak şeyler var, düşüşler var.
+
+276
+01:02:43,119 --> 01:02:48,699
+Yani çok bariz bir şekilde şuradan şöyle geldi büyük değişimlerle geldi.
+
+277
+01:02:48,839 --> 01:02:54,359
+Çünkü o sırada örneklerin yerleri doğru değildi aslında cluster'lar.
+
+278
+01:02:54,359 --> 01:03:04,979
+ama bundan sonra cluster sayısını arttıkça hata çok da fazla bariz değişmemeye başladı.
+
+279
+01:03:05,439 --> 01:03:08,999
+Şimdi burada şöyle bir durum da var.
+
+280
+01:03:10,960 --> 01:03:12,659
+Hata ne zaman sıfır olur?
+
+281
+01:03:14,339 --> 01:03:16,219
+Daha doğrusu çözüm hata sıfır olur mu?
+
+282
+01:03:18,919 --> 01:03:22,359
+Her bir örnek cluster olursa hata sıfır olur hocam.
+
+283
+01:03:22,359 --> 01:03:48,899
+Aynen. Eğer her bir örneği artık öyle bir şey ki 100 tane örneğiniz var K'yı da 100 yaptınız. Her bir örnek bir sınıftaysa o sınıfın kendisinin zaten merkezi o örnek olacak. Merkeze uzaklığı da 0 olacak. O zaman hata da 0 olacak. Yani buradan biz şunu anlıyoruz. Yani K'yı durmadan arttırmak aslında iyi bir şey değil. Bir optimum nokta bulmanız lazım.
+
+284
+01:03:48,899 --> 01:03:56,619
+Ego birsek bildiğiniz gibi yani bu birseğin olduğu yer optimum nokta aslında.
+
+285
+01:03:56,619 --> 01:04:02,939
+O zaman ne yapıyoruz demek ki? Sınıflar arası toplam hatayı hesaplıyoruz.
+
+286
+01:04:03,499 --> 01:04:14,379
+O da işte her örneğin bulunduğu sınıftaki merkeze, işte merkeze olan mesafesinin karelerinin toplamı.
+
+287
+01:04:15,476 --> 01:04:32,755
+Eğer örnekler doğrusu klasterlar içerisindeyse bu mesafeler küçük olacak demektir. Öyle olunca da yani k eşittir 3 için elde ettiğiniz değerle k eşittir 5 için elde ettiğiniz değer farklı çıkacaktır örneğin.
+
+288
+01:04:32,755 --> 01:04:49,135
+bunu böyle bir şekilde de belirliyorlar. Eğer her örnek, onu dedim tek güme de olsa 0 olur. Şurası optimal. Şöyle belirleyebiliyorlar. Bir dakika.
+
+289
+01:04:49,135 --> 01:05:15,415
+Tamam şöyle. Şimdi şurası bir klaster olduğu durum. Şurada diyelim ki en fazla 10 klaster denemiştiniz. 10 klaster olduğu durum. En az klaster numarasıyla, sayısıyla en çok klaster sayısı arasında burada gördüğünüz gibi bir birleştiriyorsunuz. Bir doğru ile birleştiriyorsunuz bunu.
+
+290
+01:05:15,415 --> 01:05:24,376
+ve her cluster için hatanın bu doğruya olan mesafesini hesaplıyorsunuz.
+
+291
+01:05:25,455 --> 01:05:32,516
+Şimdi dirsek ya ne olması gerekir? Dirseğin mesafesi en uzun olması gerekir.
+
+292
+01:05:35,815 --> 01:05:41,095
+Optimum cluster sayısı da orası. Bu anlaşıldı mı?
+
+293
+01:05:45,684 --> 01:06:03,643
+Bakın tekrar, burada bu örnekte aslında daha güzel gözüküyor. Aslında K'yı arttırdıkça bakın görüyorsunuz şey sabitlenme. Yani şu değil zaten onu beklemiyoruz biz. Yani şöyle onu da beceremedim. Biraz yukarı doğru şey oldu.
+
+294
+01:06:03,643 --> 01:06:15,903
+şöyle olmasını beklemiyoruz aslında. Yani bu noktadan itibaren şu, evroldan itibaren hatanın değişmemesi değil bizim beklediğimiz.
+
+295
+01:06:15,903 --> 01:06:32,184
+Hata değişecek, değişmek zorunda çünkü cluster sayısını arttırdıkça şey olabilir yani az önce konuştuğumuz gibi bir noktada zaten 10 örneğin varsa, 10 tane de cluster dersem hata 0 olur zaten.
+
+296
+01:06:32,184 --> 01:06:42,544
+Optimumu bulmak istiyoruz. Bunun için yani elbol birsek aslında en optimum yer. Onu bulmak için de yapılabilecek şeylerden birisi.
+
+297
+01:06:42,544 --> 01:07:11,103
+buradan böyle bir doğru çiziyorsun. Ondan sonra o doğrunun yani en çok cluster sayısıyla en az cluster sayısına olan doğrunun doğruya hata şeylerinin değerlerine göre en uzak olduğu şey mesafe size optimum cluster sayısını veriyor.
+
+298
+01:07:11,103 --> 01:07:27,364
+Evet bu şekilde yani artık eskisi gibi değil eskiden genelde K sabit alınırdı. Baştan belirlenmiş bir K değeri oldu da artık eskisi gibi değil artık genellikle K değeri bu şekilde şey olarak belirleniyor.
+
+299
+01:07:28,443 --> 01:07:37,343
+Farklı K değerlerin içinden en iyisi seçilerek belirleniyor. Burada onunla ilgili bir şey yarık kod ile durumu gösterdi.
+
+300
+01:07:37,343 --> 01:07:42,863
+Limit value dediğimiz şey sizin tahmini söyleyeceğiz.
+
+301
+01:07:43,023 --> 01:07:44,403
+Yani onu vermek zorundasınız.
+
+302
+01:07:45,523 --> 01:07:47,943
+Maksimum cluster sayınız.
+
+303
+01:07:51,956 --> 01:08:21,296
+İkiden başlattınız K'yı. Yani bir de diyebilirsiniz ama. K-MİS, bu şeydi. Bunu aslında ben bizim bir çalışmadan aldım. Kendi miç denmiş. Görüntülerde biz K-MİS yapıyorduk. Başka bir çalışmada K-MİS ile şey yapıyorduk. Görüntüleri renk gruplarına ayırıyorduk. Kaç renkten, kaç farklı renkten oluşuyor şeklinde bir şey yapıyorduk.
+
+304
+01:08:21,296 --> 01:08:34,136
+orada kaç farklı renkten kasıt yani açık pembeyle birazcık daha açık pembenin aynı klasterda olmasını istiyorduk. O yüzden bu da kendim hiç kalmış. Önemli değil herhangi bir data için geçerli.
+
+305
+01:08:34,136 --> 01:09:00,055
+k-means'ı uyguluyorsunuz ve şey hesaplıyorsunuz o k değeri için hata hesaplıyorsunuz. Bunu böyle bütün değerler için tekrar ediyorsunuz. Arkasından en küçük vcss ile en büyük vcss indeksi arasına yani i eşittir 1 ile i eşittir k arasına doğru çiziyorsunuz.
+
+306
+01:09:00,055 --> 01:09:15,055
+ondan sonra ve burada da diğer K değerlerimiz var zaten. Bunların hepsinin bu doğruya mesafesini hesaplayarak en yüksek mesafe kimse, optimum K değeri odur diye söylüyorsunuz.
+
+307
+01:09:15,875 --> 01:09:17,715
+Bu ne kadar sormak istediğiniz bir şey var mı?
+
+308
+01:09:27,572 --> 01:09:54,572
+Peki, o zaman şimdi şey soracağım. K ortalama yönetiminin karmaşıklığı nedir sizce? Bir tur için, yani bir turdan kastettiğim şey, diyelim ki K eşittir 3 dediniz, elbol olarak düşünmeyin de. 3 klastra ayırmak istiyorsunuz. Ne diyeyim size? N tane örneğiniz var. D tane özelliğiniz var.
+
+309
+01:09:56,020 --> 01:09:59,020
+karmaşıklığınız ne olur sizce?
+
+310
+01:10:01,020 --> 01:10:03,020
+en çarpıda
+
+311
+01:10:03,020 --> 01:10:05,020
+heee
+
+312
+01:10:07,020 --> 01:10:09,020
+evet
+
+313
+01:10:11,020 --> 01:10:12,020
+o kadar mı?
+
+314
+01:10:12,020 --> 01:10:14,020
+çarpı 3
+
+315
+01:10:15,020 --> 01:10:18,020
+bir şey daha olması gerekir mi?
+
+316
+01:10:18,020 --> 01:10:20,020
+evet
+
+317
+01:10:21,363 --> 01:10:25,403
+Evet, bir şey daha olması gerekir mi?
+
+318
+01:10:32,275 --> 01:10:35,035
+Şimdi, N örnek sayınız
+
+319
+01:10:39,347 --> 01:10:41,107
+k-cluster sayınız
+
+320
+01:10:41,107 --> 01:10:43,847
+i de
+
+321
+01:10:43,847 --> 01:10:48,907
+iterasyon sayınız olmalı. Yani kaç iterasyon yapıyorsanız o. d de
+
+322
+01:10:48,907 --> 01:10:50,987
+özellik sayınız
+
+323
+01:10:50,987 --> 01:10:53,747
+i de
+
+324
+01:10:54,452 --> 01:11:07,271
+Dolayısıyla K-Means'in şeyi karmaşıklığı. Özellikle doktora yapanlar dikkat etsizler. Yeterli sınavlarında çok sorulur karmaşıklıkları, algoritmaları karmaşıklıkları.
+
+325
+01:11:09,711 --> 01:11:22,671
+Şimdi tabii burada diyeceksiniz ki bu nedir? Aslında bu tamamen şeye bağlı. Eğer özellik sayınız az ise, cluster sayınız az ise,
+
+326
+01:11:22,671 --> 01:11:27,452
+iterasyon sayınız fazlaysa N karedir.
+
+327
+01:11:29,071 --> 01:11:31,571
+İterasyon da çabuk yakınsıyorsa N'dir.
+
+328
+01:11:31,672 --> 01:11:36,132
+Yani N ile N kare arasında bir şey olur genelde karmaşıklık.
+
+329
+01:11:36,132 --> 01:11:44,471
+Yani şeyi ya sabitleri karmaşıklıklarda çok dikkate alıyorsunuz ya ama siz bunu böyle yazmalısınız.
+
+330
+01:11:44,672 --> 01:11:46,371
+Sonra da açıklamasını yapmalısınız.
+
+331
+01:11:46,831 --> 01:11:48,992
+Çünkü cluster sayısı genelde azdır.
+
+332
+01:11:48,991 --> 01:11:58,711
+özellik sayısı da şeydir yani sonsuza gitmez işte 30 özelliğimiz vardır, 100 özelliğimiz vardır, ne bileyim 500 özelliğimiz vardır.
+
+333
+01:11:58,711 --> 01:12:08,991
+Ama iterasyon sayınız çok oluyorsa mesela n kareye kadar yolu var, iterasyon sayınız az oluyorsa bunların hepsi küçük sahib derse n diye düşünebilirsiniz.
+
+334
+01:12:09,411 --> 01:12:11,411
+Peki buraya kadar sormak istediniz bir şey var mı?
+
+335
+01:12:15,988 --> 01:12:45,807
+Şimdi k-means clustering aslında partition clustering olarak geçen bir şey. Yani bu flat clustering aslında. Flat clusteringden kast edilen şey. Burada bir hiyerarşi yok. Her şey aynı seviyede kabul ediliyor. Mesela işte ne bileyim bir resmi az önce konuştuğumuz renk benzerliklerine göre gruplayıp işte mavi tonları, yeşil tonları, kırmızı tonları diye renk benzerliklerine göre grupladığımızda bu partition clustering seviye.
+
+336
+01:12:45,988 --> 01:12:58,708
+renk işte hepsi renk hepsi aynı seviyede olan bir iki. Şimdi clustering de ikinci tür bu resim burada bir şekilde bir yanlışlıkla kalmış o ikinci bir örnek nasıl olmuş anlamadım.
+
+337
+01:12:59,087 --> 01:13:09,068
+Hierarşik clustering olur o da olur. Hierarşik clustering de olan şey mesela şurada animal yazıyor aslında bunun altında.
+
+338
+01:13:09,067 --> 01:13:17,567
+şeyin, class-stilling yaparken elinizdeki örnekleri bir reyerarşiye göre gruplama.
+
+339
+01:13:17,567 --> 01:13:27,007
+Mesela üstte yanlışlıkla yapışan resimde meyveleri benzerliklerine göre mesela elmalar var, ondan sonra portakallar var.
+
+340
+01:13:27,107 --> 01:13:32,767
+Bunların altından da elmalar kendi içinde, portakallar kendi içinde gruplanıyor olabilir.
+
+341
+01:13:32,767 --> 01:13:50,767
+Bu alttaki örnek daha açıklayıcı bir örnek. Canlıları diyelim ki hayvanlar ve bitkiler de insanı karıştırmayarak grupluyoruz. Sonra işte hayvanları da omurgalılar, omurgasızlar diye gruplayabiliriz.
+
+342
+01:13:50,767 --> 01:14:08,967
+işte meyvelerin çekirdek üretenler, spor üretenler diye gruplayabiliriz gibi. Eğer bir hiyerarşi varsa yapıda o zaman hiyerarşik clustering yöntemleri kullanabiliriz.
+
+343
+01:14:08,967 --> 01:14:27,367
+şeye geri döneceğim bu arada onu söyleyeyim. Şimdi bugün unsupervised learning giriş dersi önümüzdeki hafta flat clustering ile ilgili yeni yöntemlerken, yeni derken daha farklı yöntemler anlatacağım.
+
+344
+01:14:27,367 --> 01:14:35,267
+Gözler, mixture, self-organizing, map gibi farklı clustering yöntemlerinden de bahsedeceğim.
+
+345
+01:14:35,267 --> 01:14:52,088
+Peki, hiyerarşik öbekleme yapacağımız zaman bunu iki şekilde yapabiliyorsunuz. Birincisi elinizdeki örneklerden bir örnekten en örneğe giderek yani birleştirerek yapabiliyorsunuz.
+
+346
+01:14:52,087 --> 01:15:07,367
+İkincisi de bütün örnekleri tek bir şey gibi kabul ederek yani en örneğinizi bir klaster olarak kabul ederek ondan sonra alt öbekler oluşturabiliyorsunuz.
+
+347
+01:15:07,427 --> 01:15:10,707
+Bu ihtiyacınıza göre yapabileceğiniz bir şey.
+
+348
+01:15:11,487 --> 01:15:18,227
+Şimdi burada aslında en çok kullanılanı eglomeratif hiyerarşik klasterlik yani birleştirerek öbekleme.
+
+349
+01:15:18,227 --> 01:15:33,327
+bahsettiğim şey bu. Yani diyelim ki işte şöyle bir yapınız olduğunu düşün. ABCDEF örneklerimiz var. Bunların hepsini başlangıçta bir klaster gibi düşünüyorsunuz.
+
+350
+01:15:33,327 --> 01:15:45,967
+Arkasından benzerliklerine göre grupluyorsunuz ve bunu bütün örnekler tek bir klasterda olana kadar devam ettirebilirsiniz.
+
+351
+01:15:45,967 --> 01:16:08,447
+nerede duracağınıza da yine siz karar verebilirsiniz. Mesela diyebilirsiniz ki ben şurada duracağım bu benim için yeterliydi. İşte A, B, C, A bir sınıfta, B, C bir sınıfta, D, E bir sınıfta, F bir yerde falan gibi yani hangi seviyede duracağınıza siz karar verebilirsiniz.
+
+352
+01:16:08,819 --> 01:16:29,779
+Şimdi burada mesafe ölçmek için farklı yaklaşımlar kullanılıyor. Şeyden farklı olarak, kanunin sebebi ki işte bir şey kullanabiliriz. Genellikle öplik distance kullanılır kanunin ise. İşte hızlı olsun, çok da hassasiyete ihtiyacınız yok derseniz de Manhattan distance kullanılır.
+
+353
+01:16:29,779 --> 01:16:45,779
+Burada dört farklı şey nedir? Ölçme şekli var. Minimum distance, maximum distance, average distance ve mean distance olarak.
+
+354
+01:16:45,779 --> 01:16:56,279
+Şimdi önce minimum distansa bakalım. Bu şey olarak da geçiyor. Nearest neighbor single linkage olarak da geçiyor.
+
+355
+01:16:56,279 --> 01:17:17,639
+Aslında minimum distance'da yaptığınız şey şeylerin nedir? İki cluster'daki en yakın örneklerin mesafesini bulmak ve ondan sonra da şey yapmak.
+
+356
+01:17:17,639 --> 01:17:30,760
+Şöyle söyleyeyim bir dakika. Şöyle diyelim ki bu ara bir adım olsun.
+
+357
+01:17:34,355 --> 01:17:44,696
+birleştiriyoruz ya, kimle kimi birleştireceğimize karar vereceğiz. Şimdi burada 3 tane klaster var. Hangi klasterları birbirlerini birleştireceğimize karar vereceğiz.
+
+358
+01:17:44,696 --> 01:17:55,635
+Şimdi A, B ve C klasterlarımız olsun. A ve B'ye bakıyoruz. Şöyle ben hile yapacağım yine kolay ölçülsün, gözünüzü daha rahat görsün diye.
+
+359
+01:17:55,635 --> 01:18:03,695
+A sınıfı ile B sınıfındaki bütün örneklerin birbirlerine mesafesine bakılır.
+
+360
+01:18:04,575 --> 01:18:06,215
+En yakın iki örnek bu ikisi.
+
+361
+01:18:06,895 --> 01:18:08,475
+Yani bütün örneklere bakacaksınız.
+
+362
+01:18:09,475 --> 01:18:13,555
+O zaman bu distance alınacak demektir.
+
+363
+01:18:14,755 --> 01:18:20,396
+B ile C'nin bütün örneklerinin birbirlerine, dur birazcık burada da hile yapalım şöyle.
+
+364
+01:18:37,779 --> 01:18:39,779
+şurada da şöyle bir şey olsun.
+
+365
+01:18:42,996 --> 01:19:06,135
+yani bütün kombinasyonları deniyorsunuz haliyle çok yavaş bir şey. Şurada da mesela B ile C arasında en yakın iki örnek şu ikisi. İşte A ile B arasında en yakın iki örnek şu ikisi. Yani bütün örneklerin birbirlerine göre mesafelerine baktınız. A'nın bütün örneklerine, B'nin bütün örneklerine göre mesafesi.
+
+366
+01:19:06,135 --> 01:19:21,295
+işte B'nin C'ye göre, A'nın C'ye göre bütün kombinasyonları denediniz. Ondan sonra bütün mesafeler içerisinden en kısasını alıyorsunuz ve şeye bakıyorsunuz hangi klasterları birleştireceğinize karar veriyorsunuz.
+
+367
+01:19:21,295 --> 01:19:31,935
+Burada görünüşe göre şu en kısa mesafe yani öyle olmasına hileyle çalıştım.
+
+368
+01:19:31,935 --> 01:19:38,856
+ondan sonra ve ona göre diyorsunuz ki o zaman ben A ile C'yi birleştireyim mesela.
+
+369
+01:19:42,484 --> 01:20:05,484
+Mesela burada şeyi göstermiş. Şurada bir tane parazitli örnekten ötürü ondan sonra böyle bir birleşme yani bunun iki sınıfı şurada gördüğünüz şu örnekten ötürü şu iki klasterı şöyle birleştirmiş mesela şöyle bir şey olmuş.
+
+370
+01:20:05,484 --> 01:20:35,463
+cluster sayısı 3 iken böyle bir gruplama olmuş. Şimdi birinci yapabileceğiniz agglomeratif clustering de tekrardan söylüyorum. Önce sizin şu şeye bakacak olursak şuradan bir önce olaya bakalım. Her clustering'ı bir örnekten ibaret kabul ediyoruz başlangıçta. En örnek en clustering. Arkasından şey yapıyoruz işte bütün örneklerin bütün clustering'lara mesafelerine bakıyoruz ve mesela şurada şu ikisi arasında
+
+371
+01:20:35,484 --> 01:21:02,484
+arasındaki mesafe zaten gözle görülüyor en kısa o zaman bu ikisini birleştiriyoruz bu bir klaster oldu ondan sonra tekrardan bütün klasterlerdeki bütün örneklerin birbirine mesafesine bakıyoruz yani şunun şuna şuraya şuraya işte buraya ondan sonra buraya bütün örnekler için deniyoruz ve en kısa mesafeli iki klaster'ı birleştirerek böyle devam ediyoruz yaptığımız şey bu soru var mı?
+
+372
+01:21:02,484 --> 01:21:06,263
+Birinci ön tamam mı?
+
+373
+01:21:10,355 --> 01:21:39,235
+Peki. İkincisi, complete linkage by the snaver. Burada da şey yapıyoruz, tam tersi olarak maksimum mesafelere bakıyoruz. Yani hangi iki klaster'ı birleştireceğimize karar vermek için klaster'lardaki bütün örneklerin diğer klaster'lardaki bütün örneklere mesafesine bakıp bu sefer her klaster için diğer klaster'lara olan en uzak mesafeleri veriliyoruz.
+
+374
+01:21:39,235 --> 01:21:50,015
+mesela şurada D1 klasterındaki şu örnekle D2 klasterındaki şu örnek en uzak iki mesafe.
+
+375
+01:21:50,536 --> 01:21:56,355
+İşte bu D2 ile D3'ün arasındaki en uzak mesafe.
+
+376
+01:21:56,975 --> 01:21:59,435
+Tabi D1 ile D3'e yapsam o daha da uzağa gidecek.
+
+377
+01:21:59,435 --> 01:22:00,635
+Mesela herhalde şudur.
+
+378
+01:22:01,055 --> 01:22:05,415
+D1 ile D3 arasında da herhalde şu ikisi de diye tahmin ediyorum.
+
+379
+01:22:05,415 --> 01:22:13,295
+gözüksün diye dıştan yay çetişsin yani düz şey yapacaksınız yani bayağı distance hesabı yapacaksınız.
+
+380
+01:22:14,555 --> 01:22:25,795
+Bunları böyle hesapladıktan sonra bu sefer de yine şey olan en uzak mesafelerin en küçüğünü alıyorsunuz haliyle yani en yakın iki klasterı birleştireceğiniz için.
+
+381
+01:22:25,795 --> 01:22:37,855
+Burada işte D1 ile D2'nin distansı D2 ile D3'den küçük olduğu için o hele yani burada özellikle gerek duymamış ama o zaten D1 ile D3'den haydi haydi küçük.
+
+382
+01:22:37,975 --> 01:22:44,795
+D1 ile D3 birbirine bayağı mesafeli olduğum için. O zaman ne yapıyorsunuz? Bir sonraki adımda D1 ile D2'yi birleştiriyorsunuz.
+
+383
+01:22:47,515 --> 01:22:48,195
+Devam edeyim mi?
+
+384
+01:22:53,300 --> 01:22:55,959
+Peki sizden ses çıkmadığına göre devam ediyorum.
+
+385
+01:22:57,020 --> 01:23:00,719
+Şimdi haliyle bu iki yöntemle son derece masraflı.
+
+386
+01:23:00,719 --> 01:23:11,699
+Yani tek tek işte şey hesaplamak, bütün örneklerin, bütün plasterlardaki örneklere, mesafeleri bilmem onların en küçüğü, en büyüğü bilmemesi.
+
+387
+01:23:12,239 --> 01:23:13,720
+Bunlar çok masraflı.
+
+388
+01:23:13,720 --> 01:23:24,060
+O yüzden kullanabilecek yöntemlerden birisi mean average veya işte mean classing.
+
+389
+01:23:25,140 --> 01:23:26,719
+Average'de şey yapıyorsunuz.
+
+390
+01:23:27,500 --> 01:23:36,739
+Diyelim ki iyi örnekleriniz, inci klasirdeki örnekler x'ler, jinci klasirdeki örnekler y'ler.
+
+391
+01:23:36,739 --> 01:23:41,660
+Hiç böyle şeyleri hesaplamadan nedir?
+
+392
+01:23:41,660 --> 01:23:44,560
+tek tek örneklerin birbirlerine
+
+393
+01:23:44,560 --> 01:23:46,000
+mesafelerinin
+
+394
+01:23:46,000 --> 01:23:47,180
+şeyini
+
+395
+01:23:47,180 --> 01:23:50,320
+en küçüğünü en büyüğünü hesaplamadan
+
+396
+01:23:50,320 --> 01:23:52,360
+average'ını hesaplıyorsunuz.
+
+397
+01:23:52,420 --> 01:23:53,599
+Bütün örnekler için.
+
+398
+01:23:53,599 --> 01:23:55,599
+Yinci klasterdaki ve Jinci klasterdaki
+
+399
+01:23:56,459 --> 01:23:58,100
+bütün örnekler için
+
+400
+01:23:58,100 --> 01:23:59,759
+average'ı hesaplıyorsunuz.
+
+401
+01:23:59,960 --> 01:24:01,719
+Hangisinin average'ı daha küçükse
+
+402
+01:24:01,719 --> 01:24:05,259
+yani distance'ların
+
+403
+01:24:05,259 --> 01:24:07,139
+average'ını hesaplıyorsunuz.
+
+404
+01:24:07,179 --> 01:24:09,679
+Hangisinin average'ı daha küçükse onu alıyorsunuz.
+
+405
+01:24:09,679 --> 01:24:12,639
+birinci yapabileceğiniz şey bu
+
+406
+01:24:12,639 --> 01:24:14,499
+ikincisi ve
+
+407
+01:24:14,499 --> 01:24:16,039
+bence daha güzel
+
+408
+01:24:16,039 --> 01:24:18,399
+yani bunu yapmak şeye sağlıyor
+
+409
+01:24:18,399 --> 01:24:19,819
+öbüründe tek tek
+
+410
+01:24:19,819 --> 01:24:22,319
+her şeyin mesafesini
+
+411
+01:24:22,319 --> 01:24:24,939
+hesaplayıp en küçüğünü falan buluyordunuz ya
+
+412
+01:24:24,939 --> 01:24:25,599
+burada
+
+413
+01:24:25,599 --> 01:24:28,479
+en küçüğü bulmak yerine
+
+414
+01:24:28,479 --> 01:24:30,179
+her
+
+415
+01:24:30,179 --> 01:24:32,499
+klasterın yani şunu demek
+
+416
+01:24:32,499 --> 01:24:34,379
+istiyorum şu masraflı
+
+417
+01:24:34,379 --> 01:24:36,579
+bir şey burada şunu yapıyorsunuz
+
+418
+01:24:36,579 --> 01:24:38,559
+bu örnek için örneği düşünelim
+
+419
+01:24:38,559 --> 01:24:40,859
+bütün klasterlara
+
+420
+01:24:40,859 --> 01:24:43,259
+mesafesini hesaplıyorsunuz. Bu örnek için
+
+421
+01:24:43,259 --> 01:24:45,719
+bütün klasterlara mesafesini hesaplıyorsunuz.
+
+422
+01:24:46,119 --> 01:24:47,119
+Sonra da D1
+
+423
+01:24:47,119 --> 01:24:48,419
+içerisindeki
+
+424
+01:24:48,419 --> 01:24:50,799
+hangi örnek D2
+
+425
+01:24:50,799 --> 01:24:53,059
+içerisindeki hangi örneğe en kısa
+
+426
+01:24:53,059 --> 01:24:55,259
+mesafededir? Bunu hesaplıyorsunuz.
+
+427
+01:24:55,739 --> 01:24:57,259
+Bilinen D1'deki hangisi
+
+428
+01:24:57,259 --> 01:24:59,259
+D3 en kısa mesafededir? Bunu hesaplıyorsunuz
+
+429
+01:24:59,839 --> 01:25:01,439
+gibi veya en uzak
+
+430
+01:25:01,439 --> 01:25:03,379
+o şekilde. Ama bu
+
+431
+01:25:03,379 --> 01:25:05,679
+average'de öyle değil. Örnekleri
+
+432
+01:25:05,679 --> 01:25:07,739
+bütün örnekleri birbirlerine mesafesini
+
+433
+01:25:07,740 --> 01:25:09,800
+hesapladınız. Ondan sonra
+
+434
+01:25:09,800 --> 01:25:11,740
+birinci klastırları, ikinci klastırın
+
+435
+01:25:12,540 --> 01:25:13,520
+arasındaki
+
+436
+01:25:13,520 --> 01:25:15,939
+mesafelerin ortalamasını aldınız.
+
+437
+01:25:16,120 --> 01:25:16,499
+Hiç öyle
+
+438
+01:25:16,499 --> 01:25:19,579
+en küçük bulma, en büyük bulma
+
+439
+01:25:19,579 --> 01:25:21,660
+falan o tür işlere girmeden ortalama
+
+440
+01:25:21,660 --> 01:25:23,680
+aldınız. Birinci yaklaşım bunu
+
+441
+01:25:23,680 --> 01:25:25,020
+bu şekilde yapmak olabilir.
+
+442
+01:25:25,600 --> 01:25:27,840
+İkinci ve en basiti aslında
+
+443
+01:25:27,840 --> 01:25:29,900
+K-Milise benzeyen
+
+444
+01:25:29,900 --> 01:25:31,300
+bir yaklaşım.
+
+445
+01:25:32,579 --> 01:25:34,120
+Şu D1 klastırımız,
+
+446
+01:25:34,240 --> 01:25:35,740
+şu da D2 klastırımız.
+
+447
+01:25:35,740 --> 01:25:38,639
+D1 klasterınızın ortalamasını aldınız.
+
+448
+01:25:38,760 --> 01:25:40,320
+Yani centranı belirlediniz.
+
+449
+01:25:40,900 --> 01:25:43,240
+D2 klasterınızın ortalamasını aldınız.
+
+450
+01:25:43,380 --> 01:25:44,919
+Yani centranı belirlediniz.
+
+451
+01:25:45,439 --> 01:25:46,700
+Şurada da D3 olsun.
+
+452
+01:25:46,919 --> 01:25:48,740
+Onun centranı belirlediniz.
+
+453
+01:25:50,040 --> 01:25:52,740
+Centrların birbirlerine mesafesine bakıyorsunuz.
+
+454
+01:25:53,579 --> 01:25:55,180
+Yani gayet mantıklı bir şekilde.
+
+455
+01:25:55,419 --> 01:25:56,740
+Mesela şunlar sizin centrarınız.
+
+456
+01:25:57,900 --> 01:26:00,620
+Şunu daha yakın, şunu daha yakın, işte şunu daha yakın.
+
+457
+01:26:01,120 --> 01:26:04,300
+Hangisi daha yakınsa o iki klasteri mesela
+
+458
+01:26:04,300 --> 01:26:11,439
+şurada şu iki
+
+459
+01:26:11,439 --> 01:26:12,479
+klaster'ı
+
+460
+01:26:12,479 --> 01:26:15,660
+birleştiriyorsunuz. Yaptığınız şey
+
+461
+01:26:15,660 --> 01:26:17,760
+bu. Buraya kadar sormak istediğiniz
+
+462
+01:26:17,760 --> 01:26:18,559
+bir şey var mı?
+
+463
+01:26:20,400 --> 01:26:21,499
+Hocam benim aslında
+
+464
+01:26:21,499 --> 01:26:22,320
+bir sorum var.
+
+465
+01:26:23,479 --> 01:26:25,859
+Birkaç tane farklı yöntem var ya
+
+466
+01:26:25,859 --> 01:26:27,359
+mesela en masraflısında
+
+467
+01:26:27,359 --> 01:26:29,439
+en doğru yöntem diyebilir miyiz aslında?
+
+468
+01:26:29,859 --> 01:26:31,419
+Kesin mesela olması
+
+469
+01:26:31,419 --> 01:26:33,499
+gereken oydu da mesela bunu yaptığımızda
+
+470
+01:26:33,499 --> 01:26:35,240
+farklı bir sonuç çıktı diyelim ki.
+
+471
+01:26:35,999 --> 01:26:37,559
+O zaman öbürü doğrudur diyebilir
+
+472
+01:26:37,559 --> 01:26:38,039
+miyiz?
+
+473
+01:26:40,539 --> 01:26:41,380
+Kime doğru diyeceğiz
+
+474
+01:26:41,380 --> 01:26:43,960
+anlamadım. En masraflısına.
+
+475
+01:26:44,279 --> 01:26:44,899
+Bu aslında
+
+476
+01:26:44,899 --> 01:26:47,859
+en yolu için bunu seçtik gibi oldu ama.
+
+477
+01:26:48,435 --> 01:27:02,175
+Yani şimdi açık söyleyeyim, şey yapmadan, bu gibi durumlarda aslında deneme yapmadan konuşmak çok doğru değil. Ben olsam nasıl yapardım? Şöyle yapardım.
+
+478
+01:27:02,175 --> 01:27:24,776
+her yani eglomeratif bir class-triving kullanacaksam her mesafe hesabı için ayrı ayrı hata hesaplardım class-triving sonuçlarında. Ondan sonra hangisi iyi onu öyle seçerdim ama hissiyatın şeyin nedir mean distance'ın yeterince iyi bir sonuç vereceği yönünde.
+
+479
+01:27:24,776 --> 01:27:35,156
+çünkü yani mean sonuçta en uzak en yakın falan demene gerek yok çünkü sınıfın merkezini gösteriyor yani senin şurada zaten şu kadar örneğin varsa değil mi?
+
+480
+01:27:35,776 --> 01:27:39,995
+Hangi dağılımda olursa olsun o sana şurada merkezi veriyor.
+
+481
+01:27:39,995 --> 01:27:43,516
+E şurada da başka örneklerin var o da buradaki merkezi veriyor.
+
+482
+01:27:43,935 --> 01:27:50,375
+Merkezlerin yakınlığı aslında şeyi başarıyla söyler diye düşünüyorum.
+
+483
+01:27:50,375 --> 01:28:00,215
+yani mutlaka ufak tefek kaçaklar oluyordur da ama tahminim bunun hem daha hızlı hem de daha efektif olacağı yönünde.
+
+484
+01:28:00,215 --> 01:28:05,055
+Ama bu gibi şeylerde hep temkinli konuşmak gerekir.
+
+485
+01:28:05,695 --> 01:28:10,915
+Çünkü şey elinizdeki datanın modeline göre bazen durumlar değişiyor.
+
+486
+01:28:11,075 --> 01:28:18,195
+Yani çok ezbere bir şey söyleyip de mean distance'a göre hesaplayın demek doğru bir yaklaşımdır.
+
+487
+01:28:18,195 --> 01:28:32,315
+çünkü makine öğrenmesinde elinizdeki örneklerin dağılımına, durumuna göre, ne bileyim özellik sayınızı, özelliklerinizin durumuna göre elde edeceğiniz sonuç değişebilir.
+
+488
+01:28:32,675 --> 01:28:42,935
+Zaten o yüzden şey yapılıyor, bakın yavaş yavaş bu konularla artık ilgilenmeye başladıysanız veya zaten ilgileniyorduysanız,
+
+489
+01:28:42,935 --> 01:28:58,396
+ben size performans metriklerini anlatmıştım. Hani işte ekürüsü, presijenlik ol falan bunlara bakarak işte karar ağacı mı kullansak, k-ne yakın komşuluk mu kullansak bilmem ne karar verilir demiştim.
+
+490
+01:28:58,396 --> 01:29:06,456
+Aslında bu bütün şeyler için de geçerli. Yani parametrelerin belirlenmesi için de geçerli.
+
+491
+01:29:06,456 --> 01:29:17,416
+mesela ne bileyim şeye bakıp agnomeratif clustering'de nasıl bir mesafe ölçme kullanacağınızı belirlemek için de bunu yapabilirsiniz.
+
+492
+01:29:17,416 --> 01:29:26,816
+Yani farklı şeylerle, mesafe hesaplarıyla hesaplarsınız, bakarsınız en iyi sonucu hangisiyle alıyorsunuz.
+
+493
+01:29:26,876 --> 01:29:29,516
+Mesela şey diyoruz ya, o da çok doğru değil.
+
+494
+01:29:29,516 --> 01:29:38,516
+ben hani çok hassas değilse meynetin kullanı diyorum ya çok hassas olup olmadığına nasıl karar vereceksiniz?
+
+495
+01:29:39,195 --> 01:29:49,676
+Yani hani çok yuvarlak bir laf çok hassas değilse o yüzden bir soru sordun uzun bir cevap aldın ama kesin bir doğru yok yani bu işlerde.
+
+496
+01:29:50,796 --> 01:29:52,736
+Örneklere çok bağlı bu sistemler.
+
+497
+01:29:52,736 --> 01:30:00,016
+Bir de hocam etiket olmadığı için de şimdi hani ortalamayı ne kadar doğru bulduğumuz da ayrı bir problem
+
+498
+01:30:00,016 --> 01:30:10,135
+Hiç sorma yani etiketsiz olduğu için gerçek dünyada biz bunu gerçekten şey yaptık yani çok yaşadık
+
+499
+01:30:10,135 --> 01:30:16,396
+yani K'yı doğru aldın mı, K'yı 5 aldın mı öyle oldu, 6 aldın mı böyle oldu
+
+500
+01:30:16,395 --> 01:30:22,535
+yani tam olarak neyin aslında en efektif olduğunu ölçmek bunlar da gerçekten zor.
+
+501
+01:30:22,695 --> 01:30:28,995
+Yani gerçekten etiket yoksa hani o iş baya zor aslında.
+
+502
+01:30:30,355 --> 01:30:41,455
+Öyle yani hata hesaplıyorsun da yani aslında bilmiyorsun ki gerçekte sonucun ne olduğunu ama mantıken şey iyi çıkar bence.
+
+503
+01:30:41,455 --> 01:30:43,755
+İyi çıkar gibi düşünüyorum.
+
+504
+01:30:46,395 --> 01:30:48,035
+Devam edeyim mi? Edebileyim mi?
+
+505
+01:30:48,384 --> 01:30:50,223
+Evet hocam, teşekkür ederim hocam.
+
+506
+01:30:50,223 --> 01:30:51,124
+Rica ederim.
+
+507
+01:30:51,823 --> 01:30:58,583
+Şimdi bölerek öbeklemede, mesela devizli hiyerarşik öbekleme,
+
+508
+01:30:59,003 --> 01:31:02,583
+burada şeyle başlıyorsunuz, bir tane ekmeyle başlıyorsunuz,
+
+509
+01:31:03,283 --> 01:31:07,503
+ondan sonra bunu yine şey yapıyorsunuz,
+
+510
+01:31:08,463 --> 01:31:14,043
+örneklerin birbirlerine, benzerliklerine göre şey nedir,
+
+511
+01:31:15,863 --> 01:31:17,724
+böyle böyle gidiyorsunuz.
+
+512
+01:31:17,724 --> 01:31:22,983
+Mesela K-MIS mantığını düşünecek olursak önce iki klastere bölmek istiyorsunuz.
+
+513
+01:31:23,064 --> 01:31:26,584
+Aynı mantıkla işte iki tane klastere merkeze aldım.
+
+514
+01:31:26,683 --> 01:31:29,724
+Benzer örnekleri iki klastere yerleştirdim.
+
+515
+01:31:30,144 --> 01:31:35,263
+Sonra diyelim ki işte bu elimdekini iki klastere, şunu iki klastere daha böleceğim.
+
+516
+01:31:35,724 --> 01:31:40,663
+Aynı mantıkla yani K-MIS'teki gibi böyle böyle tek kalana kadar gidebilirsiniz.
+
+517
+01:31:40,663 --> 01:31:47,903
+Burada da aslında şöyle yani hangi seviyede keseceğinize siz karar veriyorsunuz.
+
+518
+01:31:47,963 --> 01:31:51,983
+Mesela diyebilirsiniz ki aslında şu seviye benim için yeterliydi.
+
+519
+01:31:52,643 --> 01:31:59,763
+Çünkü işte hatanın en uygun olduğu yeri burası olarak buldum diyebilirsiniz.
+
+520
+01:31:59,983 --> 01:32:02,483
+Yani daha fazla bölünmesini istemiyorum.
+
+521
+01:32:02,964 --> 01:32:05,523
+Bu seviye benim için yeterli diyebilirsiniz.
+
+522
+01:32:05,523 --> 01:32:21,623
+Şimdi buradaki sıkıntı da aslında hiyerarşik klasterliklerde. Genellikle siz hiyerarşinizi biliyorsunuz. Yani hani şu şey örneğinde bahsedilen mantık o mantık. Mesela gerçekten siz diyelim ki işte camları böleceksiniz.
+
+523
+01:32:21,623 --> 01:32:34,523
+Şeyde kesmek istiyorsanız, omurgalılar, omurgasızlar gibi bir seviyede kesmek istiyorsanız, ikinci seviyede kesiyorsunuz şey işini, cluster işini.
+
+524
+01:32:34,623 --> 01:32:37,683
+Ama daha detaya mesela bunun da aşağısına inersin mesela.
+
+525
+01:32:37,823 --> 01:32:40,823
+Köpekleri de köpek türlerine göre sınıflandırsın gibi.
+
+526
+01:32:41,323 --> 01:32:45,583
+Yani ona siz karar veriyorsunuz yine hangi seviyede kesmek istediğinize.
+
+527
+01:32:46,043 --> 01:32:47,723
+Genellikle siz karar veriyorsunuz.
+
+528
+01:32:47,763 --> 01:32:49,104
+Çok da başı hoş bir sistem.
+
+529
+01:32:49,104 --> 01:32:50,583
+Değil bu sistem.
+
+530
+01:32:51,623 --> 01:33:04,244
+Veya işte şeyde kesiyorsunuz mesela ne bileyim ben size şey örneği vereyim görüntü işlemede biz bunu görüntüleri bölüklemede kullanırız.
+
+531
+01:33:04,583 --> 01:33:09,803
+Diyelim ki renk özelliklerine göre bölükleyeceksiniz bunlar sizin resimdeki pikselleriniz olsun.
+
+532
+01:33:11,083 --> 01:33:17,884
+Diyelim ki bu pikselleriniz artık aynı renkte şunlar o zaman burada kesiyorsun aslında.
+
+533
+01:33:18,723 --> 01:33:26,423
+Olmasaydı yani işte bunlar diyelim ki açık maviler, koyu maviler bir kademe daha gidecektin gibi.
+
+534
+01:33:27,143 --> 01:33:31,143
+Ya da bunlar da kendi içinde homojen değiller hala karışıklar.
+
+535
+01:33:31,844 --> 01:33:35,663
+Gideceksin ama ne bileyim şu noktada bunların hepsi aynı renkte mesela.
+
+536
+01:33:36,204 --> 01:33:39,184
+Burada durduracaksın daha fazla bölmene gerek kalmadı yani.
+
+537
+01:33:39,184 --> 01:33:42,964
+İşte burada iki piksel var, burada iki piksel var.
+
+538
+01:33:43,083 --> 01:33:45,764
+Bunlar aynı renkteler yani aynı özellikteler.
+
+539
+01:33:45,763 --> 01:33:47,863
+o zaman orada durduracaksın gibi.
+
+540
+01:33:48,663 --> 01:33:49,683
+Aynı mantıkla
+
+541
+01:33:49,683 --> 01:33:52,043
+diğer aşık plastiklikte öyle bir karar
+
+542
+01:33:52,043 --> 01:33:54,363
+veriyorsun. Yani sınıf içi
+
+543
+01:33:54,363 --> 01:33:56,443
+benzerlik çoksa, sınıflar arası
+
+544
+01:33:56,443 --> 01:33:57,923
+benzerlik az ise yani
+
+545
+01:33:57,923 --> 01:34:00,403
+hata hesabı yapıyorsun. Az önce hatayı
+
+546
+01:34:00,403 --> 01:34:02,203
+göstermiştik ya plastikler için
+
+547
+01:34:02,203 --> 01:34:04,383
+hata hesabını. Sum of squared
+
+548
+01:34:04,383 --> 01:34:06,183
+error'dan hata hesabı yapıyorsun.
+
+549
+01:34:06,723 --> 01:34:08,343
+Hata mesela yeteri
+
+550
+01:34:08,343 --> 01:34:10,583
+kadar küçükse artık kesiyorsun
+
+551
+01:34:10,583 --> 01:34:12,483
+orada en alt
+
+552
+01:34:12,483 --> 01:34:14,063
+daha alt seviyelere inmeyi.
+
+553
+01:34:14,063 --> 01:34:16,143
+Soru var mı buraya kadar?
+
+554
+01:34:18,823 --> 01:34:21,863
+Yani hiyerarşikten çok şey kullanılıyor.
+
+555
+01:34:21,983 --> 01:34:34,923
+Flat clustering yani işte Kamiiz türü birbirine eşit örnekler, eşit seviyedeki örneklerin öbeklenmesi çok fazla yapılıyor.
+
+556
+01:34:36,343 --> 01:34:39,543
+Mesela şimdi size bir takım uygulama örnekleri vereyim.
+
+557
+01:34:39,543 --> 01:34:44,163
+Mesela gerçekten ilk yıllarda Kamiiz şeyde çok kullanılıyordu.
+
+558
+01:34:45,268 --> 01:34:56,507
+bu tür eğitmensiz öğrenme görüntüler üzerinde çok kullanılıyordu. Çünkü görüntüde renk benzerliklerine göre gruplamak için çok kullanılıyordu.
+
+559
+01:34:56,507 --> 01:35:08,207
+Oradaki sıkıntı da şu, yani diyelim ki şeyleri gruplayacaksınız, işte ne bileyim doğa resimleri, şehir resimleri bilmem ne.
+
+560
+01:35:08,207 --> 01:35:18,387
+işte doğal isimlerinde şeyler var ne bileyim maviler denizdir işte gökyüzüdür yeşiller falan ağırlıkta.
+
+561
+01:35:18,887 --> 01:35:23,628
+Şehir isimlerinde de işte griler ne bileyim araçlar şunlar bunlar ağırlıkta.
+
+562
+01:35:24,067 --> 01:35:26,287
+Renklerinin benzerliklerine göre grupluyorsun.
+
+563
+01:35:26,487 --> 01:35:31,167
+Çünkü aslında neyle karşılaşacağını bilemediğim için öğretebilmene imkan yok.
+
+564
+01:35:31,167 --> 01:35:39,207
+grupluyorsun arkasından elinde doğa resimleri ve işte şehir resimleri diye iki tane grubun oluyor.
+
+565
+01:35:39,207 --> 01:35:45,787
+Şehir resimleri diye iki grubun oluyor. Etiketlemeyi grupladıktan sonra yapıyorsun. Pek çok çalışmada öyle yapılıyor.
+
+566
+01:35:45,967 --> 01:35:56,067
+Yani önce gruplanıyor sonra o gruptaki örneklere bakılıp bunlar işte şu duruma ait örnekler diye etiketlemeyi sonra yapabiliyorsun.
+
+567
+01:35:56,067 --> 01:36:17,027
+Şimdi şu tür şeylerde kullanılmaya başlandı. Mesela bu fake news meselesi baya son yıllarda önem kazanandı bunu. Sahte haberler mesela Twitter'da orada burada sahte haber şey yapıyorlar ya, yayıp böyle bir ortalığı bir hareketlendiriyorlar. Ondan sonra o haberlerin gerçek olmadığı ortaya çıkıyor.
+
+568
+01:36:17,027 --> 01:36:36,527
+Burada mesela yine haberlerle ilgili işte haberin başlığı, o soğusuna göre benzerliklerine göre fake haberler ve şeyleri haberlerin benzerliklerine göre gruplayıp fake haberi anlama için kullanılıyor.
+
+569
+01:36:36,527 --> 01:36:53,667
+mesela spam e-mail tahmininde yine aynı mantıkla mailler benzerliklerine göre gruplanıp spam olanların anlaşılması için bir sonraki aşamada bu gruplama sonuçları da bilgi olarak veriliyor.
+
+570
+01:36:54,367 --> 01:36:58,167
+Eğitmenli öğrenme sistemine bilgi olarak veriliyor.
+
+571
+01:36:58,167 --> 01:37:14,768
+İşte ne bileyim döküman gruplamada yine aynı şekilde eskiden bunları tek tek etiketleyerek spor haberleri, magazin haberleri bilmem işte siyaset haberleri falan diye gruplama yaparken
+
+572
+01:37:14,768 --> 01:37:23,447
+burada serbest bırakıyorsun, k-i da bilmiyorsun, dökümanları benzerliklerine göre grupluyorsun, arkasından o grupları etiketleyebilirsin artık.
+
+573
+01:37:23,447 --> 01:37:36,487
+yani grubun içerisindeki dökümanlara bakıp eğer bir etiketleme ihtiyacın varsa ha burada siyaset haberleri var, burada magazin haberleri var diye bir etiketleme yapabilirsin.
+
+574
+01:37:36,487 --> 01:37:50,187
+Tabi en çok parladığı konu bu konu, pazarlamadaki kişiselleştirme. Çünkü eskiden biliyorsunuzdur bu veri madenciler bir alanında böyle birazcık zorlama şeyler yapılırdı.
+
+575
+01:37:50,187 --> 01:37:57,348
+işte üniversiteyi bitirmiş işte rekar büyükşehirde yaşayan bilmem şudur budur kişiler şöyle harcama yapıyor falan.
+
+576
+01:37:57,348 --> 01:38:01,167
+Sonra bunun aslında çok da şey olmadığı görüldü.
+
+577
+01:38:01,367 --> 01:38:12,648
+Yani öyle söylendiği gibi o kadar da öyle gruplar olmadığı aslında farklı özelliklerdeki insanların aynı gruplarda yer alabildiği görüldü.
+
+578
+01:38:13,027 --> 01:38:15,488
+O zaman şimdi şey çok yapılıyor gerçekten.
+
+579
+01:38:15,488 --> 01:38:31,327
+işte getirin diyelim ki müşterilerini gruplama. Getirin müşterilerini gruplarken şey yapılabiliyor işte önce farklı K değerleriyle işte bakılıyor kaç farklı grup var.
+
+580
+01:38:31,327 --> 01:38:37,208
+Ondan sonra diyelim ki onun üzerinden devam ediyorsun. Mesela her gruba farklı bir şey önerme.
+
+581
+01:38:37,684 --> 01:38:58,524
+bu sefer grupların içerisinde gruplara ürün önermek yapıyorsun mesela. Böyle bir şey yapabiliyorsun. Ya da işte harcama profillerine bakıp mesela çok yapılan, yapılmaya çalışılan bir şey harcama profillerine göre bir basamak yukarıya taşımaya çalışma.
+
+582
+01:38:58,524 --> 01:39:11,024
+yani öyle ürünler öneriyim ki bu harcama profilindeki kişiyi biraz daha çok harcatayım ne yaparsam daha çok harcatırım gibi veya şeyi anlamaya çalışma.
+
+583
+01:39:11,024 --> 01:39:21,423
+İşte çördü analizinde falan da yani bu müşteriyi kaybetmek üzereyimi anlamaya çalışma, müşterileri gruplayarak şeyi anlamaya çalışma.
+
+584
+01:39:21,423 --> 01:39:33,883
+işte hani şey yapan hani sadık müşterilerle sadık olmayan müşterileri benzerliklerine göre gruplama yani bunları yapma.
+
+585
+01:39:33,883 --> 01:39:46,083
+Bunlar da bayağı şey artık eğitmensiz öğrenme yöntemleri bayağı şey olarak kullanılıyor, aktif olarak şu anda kullanılıyor.
+
+586
+01:39:46,783 --> 01:39:48,003
+Var mı aklınızda bir soru?
+
+587
+01:39:53,011 --> 01:39:55,011
+hiç soru sormuyorsunuz.
+
+588
+01:39:58,355 --> 01:39:58,976
+Ne da.
+
+589
+01:40:06,739 --> 01:40:15,739
+çok açık olduğunu zannetmiyorum anlattıklarımı. büyük bir ihtimalle aklınıza soru mu gelmiyor? niye sormuyorsunuz? bilmiyor musunuz? ne oluyor?
+
+590
+01:40:18,323 --> 01:40:20,203
+Hocam pekiştirmeniz lazım biraz.
+
+591
+01:40:21,223 --> 01:40:30,523
+Pekiştirmeniz lazım peki, tamam. Ama sorun işte yani. Bu aklınıza takılanı sorarsanız pekişir. Yoksa ben anlatırsam size sormazsanız o yani çok sorun.
+
+592
+01:40:30,784 --> 01:40:38,183
+Sınıfta soruluyor çünkü. Yüz yüze görmeyince mi sorulmuyor? Bilmiyorum ki. Sınıfta öğrenciler daha çok soruluyor.
+
+593
+01:40:38,543 --> 01:40:47,923
+Hocam benim aslında bir sorum var da bu biraz ödevle de ilgili oluyor. Hani saate haber tespitinde mesela bizim verdiğiniz ödevde de bununla ilgiliydi.
+
+594
+01:40:48,323 --> 01:40:59,404
+Benim kafama şey takıldım. Mesela bir şey diyelim ki seçimler var yakın zamanda ve seçimlerle ilgili çok fazla sahte haber çıkıyor.
+
+595
+01:41:00,063 --> 01:41:10,743
+Bu doğal olarak seçimlerle ilgili çıkan bir haberin sahte olarak hemen değerlendirmesine sebep olmaz mı? Özellikle classroom kullandığımızda, etiketli olmadığında.
+
+596
+01:41:12,323 --> 01:41:15,823
+Tam anlamadım. Yani niye öyle olsun diye düşündüm.
+
+597
+01:41:15,823 --> 01:41:30,764
+Ya mesela bin tane varsa dokuz yüz tanesi sahte diyelim ki hani yani büyük bir çoğunluğu sahte olduğu için hani o topikte çıkabilecek herhangi bir haber sahte olarak değerlendirilmez mi? Ama belki doğrular da vardı.
+
+598
+01:41:30,763 --> 01:41:48,663
+Ama içeriğine ne bakıyorsun? Sizinkiler şey ama zaten orada sizin varmanız gereken noktalardan birisi de sadece başlığa bakarak yani az bilgiyle bu yaptığınız sınıflandırmanın ne kadar doğru olduğuydu.
+
+599
+01:41:48,663 --> 01:41:49,663
+onda yani öyle bir sıkıntı var yani siz sadece başlığa bakıyorsunuz ya içeriye de bakmıyorsunuz ama yine de olur mesela haberine bağlı mesela ne bileyim şey diyorsan ne diyeyim mesela işte George Bush mesela oyları çaldı diyorsun diyelim ki o da sahte bir haber yani onu o başlıktaki benzer haberlere sahte dediği
+
+600
+01:42:18,663 --> 01:42:48,643
+için doğru olur. Yani o kadar bir problem olmaz. Ama sadece başlığa baktığı için çok az. Şimdi oradaki sıkıntı o aslında. Az kelimeye bakıyor ya. Az şey var elimde. Az sample var. Az sample'dan ötürü onun başarısı çok yüksek olmaz. Daha çok sample olsa daha çok bilgi çıkartacaksın. Şey bile sıkıntı. Twitter falan gibi böyle kelime sayısı kısıtlı bilgilerdeki sınıflandırma başarıları bile sıkıntı aslında.
+
+601
+01:42:48,663 --> 01:42:55,423
+başlık iyice sıkıldı. Yani yanlış yapar tabii canım. Onu bekliyorsun zaten yanlış yapsın diye.
+
+602
+01:42:56,184 --> 01:43:05,163
+Ama yine biz biliyoruz mesela hangileri fake hangileri değil diye ama mesela kendi kendine class, çirink bu yöntemi kullandığımızda
+
+603
+01:43:05,163 --> 01:43:14,583
+yoğunluklu olarak hangi topikte sahte haber varsa çıkan örnekte de denediğimizde ona eğilmeyecek mi?
+
+604
+01:43:15,060 --> 01:43:17,359
+kendi kendine kümelendiği şeyleri.
+
+605
+01:43:17,359 --> 01:43:41,799
+Onu, onu, onu, onu söyleyen ama şimdi söylenmez ki öyle. Onu hemen söyleyelim isek zaten hayat çok kolay olurdu. Yani onu şey yapıp bakmak lazım. Ne oluyor, yu. Aslında makine öğrenmesinin bence en eğlenceli kısmı da orası. Şeyde bitmemesi konu. Yani önce bir sınıflandırıp, yani klaster edeceğim, klaster'ın durumuna bakacaksın. Şimdi ben ezberi hakikaten söyleyeyim. Ben çünkü şeyle çalışmadım.
+
+606
+01:43:41,799 --> 01:44:04,659
+hani fake virus ile çalışsaydım sana şunu söyleyebilirdim ya evet öyle oluyor böyle oluyor diyebilirdim. Yani datayı çok bağlı çünkü makine öğrenmesindeki problemler. Onu bilmeden sana söyleyeyim ama zaten yapılması gereken şey de o cluster'larda serbest bırakılmıyor. Mesela onu cluster ediyorsun arkasından onu sınıflandırıcıya verip kullanıyorsun.
+
+607
+01:44:04,659 --> 01:44:31,299
+yani klaster ettim zaten etiketsiz ya etiketsizse nereden biliyorsun hangisi fake hangisi değil onları o klasterleri kullanarak bir adım sonra sınıflandırıcıda değerlendirme yapıyorsun ama orada da iyi klaster yapamadığını görürsen önce şeyine bakıyorsun sebeplerine bakıyorsun yani niye iyi klaster olmuyor ona göre çözmeye gidiyorsun yani şimdi ezbere bir şey demek mümkün değil orada.
+
+608
+01:44:31,299 --> 01:44:47,859
+bir görmek lazım. Mesela sizden de hani ödevde benim beklediğim şey oydur. Bir yapın, elde ettiğiniz sonuçlara bakın ve sonra söyleyin yani nelerde takılıyor, başarıyı ne düşürüyor, ne olduğu için yanlış sınıflandırıyor falan.
+
+609
+01:44:48,780 --> 01:44:59,299
+Oradan zaten hani ARGE çalışmaları da öyle oluyor. Bir sonraki adımda o problem nasıl çözülür? Şimdi burada da klasterda kötü klaster ediyorsa etiketsiz...
+
+610
+01:44:59,299 --> 01:45:00,539
+Evet ya, kastım diye.
+
+611
+01:45:00,639 --> 01:45:02,280
+Şimdi moduna gel dedim, moduna gel dedim.
+
+612
+01:45:02,899 --> 01:45:04,899
+Yerinizin mikrofonu açık arkadaşlar.
+
+613
+01:45:05,839 --> 01:45:10,060
+Kötü klaster ediyorsa o zaman bir adım sonra şeye bakmanız lazım.
+
+614
+01:45:10,240 --> 01:45:13,019
+Yani ne oluyor da kötü klaster ediyor?
+
+615
+01:45:13,140 --> 01:45:15,079
+Belki de o problem şeye hiç uygun değil.
+
+616
+01:45:15,420 --> 01:45:18,339
+Senin dediğin gibi klasterın hiç uygun olmuyor da bilir.
+
+617
+01:45:18,599 --> 01:45:19,939
+Ama şu anda çok kullanıyorlar.
+
+618
+01:45:20,119 --> 01:45:23,959
+Belki üstü önce klaster edip sonra klasifiye etmeyi çok kullanıyorlar.
+
+619
+01:45:25,819 --> 01:45:27,099
+Anladım hocam.
+
+620
+01:45:27,099 --> 01:45:44,299
+Evet aslında uzun bir konuşmayla sonu bir yere bağlanmamış bir cevap verdim sana ama genelde dediğim gibi şeyler hep böyle yani makine öğrenmesinde tek uzaktan bakarak bir şeyin doğrusunu söylemek mümkün değil.
+
+621
+01:45:44,299 --> 01:45:55,499
+Çok iyi analiz yani onun başarılı şey gibi bu geçen gün bunu konuşuyorduk hani şimdi böyle bazı doktorlar oluyor daha iyi teşhis koyduğunu düşünüyorsunuz.
+
+622
+01:45:55,500 --> 01:46:10,100
+yani temel problemlerde herkes aynı şeyi söylüyor ve sıkıntı yok ama daha özel diyelim ki işte belirtilerin birazcık daha farklı vesaire veya daha az bulunup bir sıkıntıda bir doktor daha güzel teşhis koyuyor.
+
+623
+01:46:10,100 --> 01:46:15,660
+O aslında şeyden onu yapabiliyor yani sebep-sonuç ilişkisini iyi değerlendiriyor falan.
+
+624
+01:46:16,100 --> 01:46:18,039
+Şimdi bu makine öğrenmesi de öyle aslında.
+
+625
+01:46:18,920 --> 01:46:20,660
+Herkes olayı şey zannediyor.
+
+626
+01:46:21,119 --> 01:46:22,899
+Yani işte elimde örnekler var.
+
+627
+01:46:22,899 --> 01:46:25,539
+Herkes değil şimdi, böyle demek de güzel olmadı.
+
+628
+01:46:25,720 --> 01:46:30,799
+Çoğunluk şu anda özellikle işletmelerde ben bunu şeylerde çok görüyorum.
+
+629
+01:46:31,420 --> 01:46:37,239
+TEDEB değerlendirmelerinde veya Yerinde AGE Merkezi değerlendirmelerinde çok görüyorum.
+
+630
+01:46:37,239 --> 01:46:45,560
+Yani işte bir data var. Bu datayı da şeyde ne bileyim, Python'da verdim ben sınıflandırıcılara veya derin öğrenmeye.
+
+631
+01:46:45,659 --> 01:46:48,019
+O da bana sınıflandırdığı olarak görüyorlar.
+
+632
+01:46:48,019 --> 01:46:56,139
+fakat aslında başarılı olan çalışmalarda orada yaptığımız şey önemli, analizler önemli.
+
+633
+01:46:56,139 --> 01:47:01,119
+Yani ne bileyim başarısız oldu, niye başarısız oldu mesela?
+
+634
+01:47:01,859 --> 01:47:09,059
+Yani hangi örnek türlerinde ne sıkıntı çıkıyor, hangi özelliklerle ilgili ne problem oluyor?
+
+635
+01:47:10,979 --> 01:47:12,139
+Bunlara bakıp...
+
+636
+01:47:12,479 --> 01:47:31,379
+öyle aslında şey yapmanız önemli. Şimdi size çok ilginç bir tane örnek anlatayım. Geçen gün değerlendirdiğim bir TÜBİTAK projesiyle ilgiliydi. Şey anlatacağım sadece, çok basit bir kısmını anlatacağım.
+
+637
+01:47:31,379 --> 01:47:56,739
+hiçbir şekilde şeyden falan bahsetmeyeceğim. Yöntemden şundan bundan bahsetmeyeceğim. Şeyi yapan bir proje, yurt dışı aramaların sahte olup olmadığını anlamaya yönelik bir proje. Şöyle bir şey yapıyorlar. Şimdi bilmiyordum ne ne sahtekarlıklar var. Yurt dışı aramalarında şeyler var, servis sağlayıcılar var.
+
+638
+01:47:56,739 --> 01:48:06,679
+normalde diyelim ki bu servis sağlayıcı yurt dışından gelen bir arama için Türksele 1 euro ödüyor.
+
+639
+01:48:06,879 --> 01:48:12,519
+Ama yurt içi arama için diyelim ki 10 cent ödüyor.
+
+640
+01:48:14,059 --> 01:48:18,160
+Bunu şeye çeviriyorlar, yurt içi aramaymış gibi gösteriyorlar.
+
+641
+01:48:18,319 --> 01:48:22,200
+Arama Almanya'dan gelmiş halbuki ve Türksele 10 cent ödüyorlar.
+
+642
+01:48:22,200 --> 01:48:31,799
+ve çok sayıda servis sağlayıcı olduğu için hani bunu kiminkisi gerçek, kiminkisi sahte, nedir ne değildir ayırmak mümkün değil.
+
+643
+01:48:32,500 --> 01:48:35,020
+Şimdi anlatırken şey diye anlattılar.
+
+644
+01:48:36,960 --> 01:48:40,960
+Sahteler, ellerinde etiketli olarak sahteler var.
+
+645
+01:48:41,579 --> 01:48:45,920
+Geri kalanını da sahte değil diye düşünmüşler.
+
+646
+01:48:45,920 --> 01:48:49,640
+Doğru mu, yanlış mı sizce? Böyle deyince hemen cevap verirsiniz ama.
+
+647
+01:48:52,200 --> 01:48:54,219
+Bak bir daha söyleyeyim.
+
+648
+01:48:54,619 --> 01:48:55,420
+Şeyler var.
+
+649
+01:48:55,500 --> 01:49:01,460
+Ellerinde yakaladıkları aslında yurt içi arama olmayan, yurt dışı arama olduğu belli olan aramalar var.
+
+650
+01:49:01,560 --> 01:49:03,259
+Bunları etiketlemişler sahfe diye.
+
+651
+01:49:03,939 --> 01:49:06,140
+Geri kalanın tamamına da sahfe değil demişler.
+
+652
+01:49:06,219 --> 01:49:07,119
+Doğru mu, yanlış mı?
+
+653
+01:49:08,420 --> 01:49:09,140
+Yanlış hocam.
+
+654
+01:49:09,220 --> 01:49:10,479
+Geri kalanında sahfe olabilir.
+
+655
+01:49:11,619 --> 01:49:11,880
+Evet.
+
+656
+01:49:11,979 --> 01:49:13,619
+Ve bunu hiç kimse fark etmemiş.
+
+657
+01:49:14,420 --> 01:49:19,000
+Türk Telekom hatta demiş ki, biz buna şey yapmıyorduk bile.
+
+658
+01:49:19,000 --> 01:49:20,000
+Yani.
+
+659
+01:49:22,200 --> 01:49:30,520
+Ben hani toplantıda söylemiştim bir sonraki toplantıda dediler ki Türk Telekom'da çok şaşırdılar ya biz buna hiç böyle bakmamıştık dediler dediler.
+
+660
+01:49:30,520 --> 01:49:42,259
+Yani çünkü aynen yani o sahte olmayanların tamamının sahte olmadığını ve yönelttim ki şey neden?
+
+661
+01:49:42,259 --> 01:49:52,780
+çünkü onların da içerisinden gerçekten sahne olmadığını bildiğin şey seçmen gerekir.
+
+662
+01:49:53,399 --> 01:49:55,659
+Temiz örnek seçmen gerekir değil mi?
+
+663
+01:49:55,759 --> 01:49:59,759
+Yoksa yani onların içerisinde tespit edilememiş olanlar olabilir mesela.
+
+664
+01:49:59,899 --> 01:50:03,759
+Şimdi ona bağlı olarak tabii başarı düşük oluyor, bilmem ne falan filan.
+
+665
+01:50:04,259 --> 01:50:06,219
+Yani hep şey çok önemli.
+
+666
+01:50:06,500 --> 01:50:10,099
+Benim hep tavsiyem, makine öğrenmesi derslerini çok tavsiye ediyorum.
+
+667
+01:50:10,099 --> 01:50:37,599
+DAT'ı çok iyi analiz etmelisiniz. Yoksa herkes şeyi yapıyor, bir DAT'a geldi, hop sınıflandırdım karar ağacıyla, böyle sınıflandırmıştı, bir sonuç elde ettim. Çok yapılan bir şey. Önemli olan, yani hele master tezi, doktorat tezi falan yaparken bunlar çok önemli hale geliyor. Sizin DAT'ı nasıl analiz ettiğiniz, nasıl değerlendirdiğiniz falan çok önemli hale geliyor. İşte böyle. Haftaya görüşürüz o zaman.
+
+668
+01:50:37,599 --> 01:50:41,099
+Hocam ben gene ödeviyle ilgili bir şey sorsam olur mu?
+
+669
+01:50:42,119 --> 01:50:45,799
+Sor ama cevap verir miyim bilmem ödevi yapıl ondan sonra söyle
+
+670
+01:50:45,799 --> 01:50:52,319
+Tamam hocam şimdi bu Python'da yapacağız demiştiniz ya hazırlık aneleri kullanabiliriz değil mi?
+
+671
+01:50:52,319 --> 01:51:00,539
+Ben mesela threshold şey hesabı için entropi hesabı için falan böyle bir elle yapayım dedim ama olacak gibi değil sanki kullanabiliriz
+
+672
+01:51:00,539 --> 01:51:08,539
+Çok iyi, evle yapardın sen ya, şeyleri hazır kullanın dedim, NIOBA yazınlenme, decision tree onları hazır kullanın dedim ama entropi, 4.
+
+673
+01:51:08,756 --> 01:51:12,756
+yapamıyorsam da yaparsınız gibi diye düşünmüştüm ben.
+
+674
+01:51:13,176 --> 01:51:17,415
+Onu da kullanıyor. O da kütüphane onu da buluyormuş. O yüzden sorayım dedim.
+
+675
+01:51:19,155 --> 01:51:28,555
+E kullan, tamam, olur. Yani aslında olasılık çarpı logaritma olasılık şeklinde. Olur, tamam, kullanılma sorun değil o kadar.
+
+676
+01:51:29,176 --> 01:51:38,355
+Bir şey daha soracağım hocam. Verdiğimiz dataset içinde farklı diller vardı da aşağı doğru Rusça falan vardı. Gerçi onları dahil etmeyin demiştiniz sanırım.
+
+677
+01:51:38,355 --> 01:51:39,995
+Ödev'de de öyleydi.
+
+678
+01:51:41,035 --> 01:51:41,915
+Demiştim işte.
+
+679
+01:51:42,815 --> 01:51:44,375
+Dahil etmeyin demiştim.
+
+680
+01:51:45,095 --> 01:51:49,975
+Evet aslında şey test örneğini çekerken gene ikinci blok gibi alacağız değil mi?
+
+681
+01:51:50,295 --> 01:51:53,775
+Yoksa hani kalan data setin üstünden mi test gibi yapacağız?
+
+682
+01:51:53,775 --> 01:51:55,635
+Vallahi şu anda ezbere bilmiyorum.
+
+683
+01:51:55,775 --> 01:51:56,835
+Ne yazdıysan öyle yap.
+
+684
+01:51:56,936 --> 01:51:59,375
+Farklı bir şey yapıyorsam data seti hatırlamıyorum çünkü.
+
+685
+01:51:59,795 --> 01:52:01,395
+Farklı bir şey yapıyorsam da açıklama yap.
+
+686
+01:52:01,475 --> 01:52:04,455
+Ben zaten sizin yaptıklarınızı değerlendirerek karar vereceğim.
+
+687
+01:52:04,555 --> 01:52:05,515
+Hiç sıkıntı yok yani.
+
+688
+01:52:06,535 --> 01:52:07,135
+Tamam hocam.
+
+689
+01:52:07,155 --> 01:52:07,775
+Problem olmaz.
+
+690
+01:52:07,776 --> 01:52:21,855
+Yani datasette Rusça olanlarla iş yapıyorsan onu yazarsın dersin ki ben bunu İngilizcelerle, Rusça örnekle iş yaptım bak böyle oldu dersin ona bakarım yani ben şu anda dataseti tam hatırlamıyorum çünkü neresinde ne vardı ezberi hatırlamıyorum
+
+691
+01:52:21,855 --> 01:52:24,476
+Olur mu?
+
+692
+01:52:24,976 --> 01:52:25,656
+Teşekkür ederim
+
+693
+01:52:25,656 --> 01:52:29,936
+Ben teşekkür ederim güzel bir gün diliyorum hepimize haftaya görüşmek üzere
+
+694
+01:52:29,936 --> 01:52:31,016
+İkincisi de sağ olun
+
+695
+01:52:31,016 --> 01:52:32,135
+Çok teşekkür ederim
