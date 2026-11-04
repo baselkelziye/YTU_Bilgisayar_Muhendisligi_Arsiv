@@ -1,0 +1,1803 @@
+1
+00:00:49,939 --> 00:00:56,799
+Evet, kıymetli gençler. Selamun aleyküm. Hayırlı, bereketli günler diliyorum.
+
+2
+00:00:59,999 --> 00:01:01,059
+Sesim geliyor mu?
+
+3
+00:01:02,599 --> 00:01:04,159
+Hocam, sesimiz gelmiyor.
+
+4
+00:01:05,879 --> 00:01:09,239
+Bir dakika, ses gelmiyor mu? Niye gelmiyor? Sesim gelmiyor mu şu anda?
+
+5
+00:01:11,679 --> 00:01:11,960
+Ses?
+
+6
+00:01:12,319 --> 00:01:13,579
+Geliyor hocam sesimiz.
+
+7
+00:01:14,419 --> 00:01:15,200
+Evet, selamun aleyküm.
+
+8
+00:01:15,439 --> 00:01:16,459
+Hala gelmiyor hocam.
+
+9
+00:01:18,219 --> 00:01:18,799
+Allah Allah.
+
+10
+00:01:18,799 --> 00:01:21,439
+Hocam sesinizi ben duyabiliyorum ama
+
+11
+00:01:21,439 --> 00:01:23,359
+Ben de duyuyorum hocam
+
+12
+00:01:23,359 --> 00:01:24,339
+Anladım
+
+13
+00:01:24,339 --> 00:01:30,359
+Evet duyanlar sesi yapabilirler, selam alabilirler en azından
+
+14
+00:01:30,359 --> 00:01:32,019
+Gençler selamun aleyküm
+
+15
+00:01:32,019 --> 00:01:33,800
+Aleyküm selam hocam
+
+16
+00:01:33,800 --> 00:01:34,379
+Aleyküm selam
+
+17
+00:01:34,379 --> 00:01:36,319
+Aleyküm selam hocam
+
+18
+00:01:36,319 --> 00:01:39,859
+Evet nasılsınız gençler? İyisin inşallah
+
+19
+00:01:44,659 --> 00:01:46,039
+İyiyiz hocam.
+
+20
+00:01:47,319 --> 00:01:48,939
+Bizler de iyiyiz çok şükür, hamdolsun.
+
+21
+00:01:50,399 --> 00:02:03,459
+Evet, arkadaşlar, bugünkü ziyafetimizde ne var? Arkadaşlar dahil oluyorlar, evet. Her geçen dakika ilerliyor. Ben hemen zamanı iyi değerlendirmek adına sizlerle paylaşayım.
+
+22
+00:02:04,059 --> 00:02:09,539
+Dün anlatıkla ilgili bir sorunuz var mı arkadaşlar? Hocam, anlamadım nasıldır diye.
+
+23
+00:02:09,539 --> 00:02:13,479
+sormak istediğin bir şey var mı?
+
+24
+00:02:13,979 --> 00:02:16,840
+Akşam hocam çalıştığım şuralara takıldım dediğiniz bir şey var mı?
+
+25
+00:02:20,915 --> 00:02:35,195
+Şimdi sizlere bugün bir kitap paylaşıyorum arkadaşlar. Çok güzel bir kitap, çok güzel bir kaynak. PDF'ini buldum. Burada görüyor musun şu anda?
+
+26
+00:02:50,515 --> 00:03:04,535
+uzayda vektörler, doğru düzem denklemler. Bu da serilerle başlamamış. Seriler kısmı yok. Yerine yakalan kısımlar var. Bolca sorular var. Çözümleri var arkadaşlar. Bu soruların çözümleri var. Bununla ilgili şöyle bakacağız.
+
+27
+00:03:04,535 --> 00:03:14,935
+düzemde bekliyorlar, uzayda bekliyorlar, uzayda doğru denklemleri, düzem denklemleri, bunlarla ilgili sorular var arkadaşlar.
+
+28
+00:03:14,935 --> 00:03:24,335
+Bolca çözersiniz. Yani hepsi çözülmeniz gerekmiyor ama en azından belli başlı konuları anlamak açısından güzel bir kaynak, güzel bir eser.
+
+29
+00:03:26,455 --> 00:03:29,555
+Faydalı olur diye düşünüyorum inşallah bu zaman zarfında.
+
+30
+00:03:34,099 --> 00:04:03,599
+Evet, limit ve sürekli, kısmı türevler, zincir kuralı, kapalı olarak tanımlanan fonksiyonların türevi, yönlü türevler, kısmı türevlerin geometrik anlamı, iki deşkili fonksiyonlarla Taylor aşırı, maksimum minimumlar, çok katlı integral ile geçiyor ve eğrisel integral ile bitiyor. Buraya gitmiyor. Siz şu integral ile bitiyorsunuz arkadaşlar. 165 de bitiyor. 165 sayfalık buradaki kısmıyla. Şöyle giriş yapalım istersen şöyle. Mesela çok güzel renk vermesi çok iyi. Bakın, vektör nedir?
+
+31
+00:04:03,599 --> 00:04:19,239
+çalışma kadar da olsa iyi, güzel yani şöyle bir kımızı renkli ediliyor. Evet, vektör. Tamam, maksak vektör burada göstermiş. Bir p vektörü var, değil mi?
+
+32
+00:04:21,079 --> 00:04:29,839
+p vektörü. Vektörlerin eşitliği, iki vektör birbirine eşitliğe ne olması lazım? Birincinin birinci, ikinci, ikinci eşitliği olması lazım. Böyle temelden almış arkadaşlar.
+
+33
+00:04:29,839 --> 00:04:33,879
+sizler için belki çok basit gelebilir ama hızlı geçersiniz bu kısımları.
+
+34
+00:04:35,019 --> 00:04:37,559
+Tamam, bir sayıyla şey yapalım vektörü.
+
+35
+00:04:38,359 --> 00:04:41,600
+Bir vektörün normal boyu, boyu uzunluğu nedir?
+
+36
+00:04:41,719 --> 00:04:42,859
+Bakın, bu şekilde yapılıyor.
+
+37
+00:04:43,419 --> 00:04:45,579
+Bilim vektörler, bilim vektörün neydi arkadaşlar?
+
+38
+00:04:45,780 --> 00:04:47,639
+Bir vektör, bir vektör olması için ne olması gerekiyordu?
+
+39
+00:04:48,559 --> 00:04:52,499
+Bir u vektörü bilim ise, bunun boyu 1 olması gerekiyor.
+
+40
+00:04:52,839 --> 00:04:53,699
+Yani boyu ne demek?
+
+41
+00:04:54,219 --> 00:04:58,079
+Bir u vektörümüz şu olsun, u vektörümüz diyelim ki ne olsun?
+
+42
+00:04:59,839 --> 00:05:03,399
+A1, A2 olsun.
+
+43
+00:05:03,399 --> 00:05:04,119
+Böyle olsun.
+
+44
+00:05:04,419 --> 00:05:07,219
+Bu onun şeyi ne olur, bu yine olur.
+
+45
+00:05:11,156 --> 00:05:35,695
+A kare artı B kare. Pardon. A1'in karesi, A2'nin karesi şeklinde duydu. Sıkılar çarpım, evet iki tane vektör var. U ve B olsun. Sıkılar çarpımları birinci ile birinci birleşen, ikinci ile ikinci çarpım şeklindeydi. Yani bunları tekrar etmek adına ve sorular çözmek adına güzel arkadaşlar. Bakın. Buraları hızlı geçelim. Bak burada.
+
+46
+00:05:39,603 --> 00:05:41,003
+test soruları da var bakın burada.
+
+47
+00:05:51,540 --> 00:06:01,540
+vektörlerle ilgili sorular. vektörler doğru ve düzen denklemleriyle ilgili yine işlemler var burada. Bunlar da ilgili görülüyor.
+
+48
+00:06:02,619 --> 00:06:12,540
+kürenin denklemi. uzaydaki nokta arasındaki uzaklık. yani uzayda bulduğumuz zaman değişiyor.
+
+49
+00:06:12,540 --> 00:06:25,720
+üç birleşenli olduğu zaman bu ikisi arasındaki uzaklığı nasıl alıyoruz? Birinciyle, birincilerle, birincilerle, ikincilerle, ikinciler arasındaki farkının karesi, üçüncüyle, üçüncü birleşenler arasındaki farkının karesi şeklinde, kara kökü şeklinde alıyoruz.
+
+50
+00:06:28,900 --> 00:06:37,220
+Üç boyutlu olduğu zaman boyutta da şimdi akare, b kare, birinciye kare şeklinde çıkıyor değil mi? Üçüncü birleşenler, birleşenlerin karesi ve kara kökü şeklinde yapıyoruz.
+
+51
+00:06:37,220 --> 00:06:41,940
+uzaydaki vektör bu şekildeydi.
+
+52
+00:06:41,940 --> 00:06:48,600
+Lambda'lar çarpımı. Bunlar arkadaşlar. Paralel ve dik vektörler. Paralel ise nasıldı? Bak bunlar.
+
+53
+00:06:52,300 --> 00:07:00,659
+Temelim yok diyen arkadaşlar çok basit görebiliyor. Eğer vektörler çarpımla ilgili, evet normdaki şeklinde, eğer iki vektörün vektörler çarpımı neydi arkadaşlar?
+
+54
+00:07:01,060 --> 00:07:03,359
+Çarpı şeklini gösteriyor. Birincini boyu, ikincini boyu.
+
+55
+00:07:03,359 --> 00:07:11,099
+aralardaki iki vektör arasındaki açının nesi? Sinüs arkadaşlar. Vektör çapında sinüsü,
+
+56
+00:07:11,700 --> 00:07:20,239
+Sklar çapında neydi arkadaşlar? U çapı V o sayıda, onun boyu, benim boyu, aradaki açının nesiydi?
+
+57
+00:07:23,956 --> 00:07:26,215
+Gençler, kim söyleyecek? Mikrofonu açıp
+
+58
+00:07:33,555 --> 00:07:47,995
+Sıkılar çarpımda neydi arkadaşlar iş çarpımda? Vektörler çarpımda iki vektör arasındaki açının sinüsüydü. Sıkılar çarpımda iki vektör arasındaki açının kosünüsüydü arkadaşlar.
+
+59
+00:07:52,435 --> 00:08:15,095
+perma çarpım, evet, 3 tane burada A vektörü, A, B, C, uzayda 3 vektör verilmiş ve bunlar karma çarpımı, A, 3 çarpım, B çarpı C şeklinde, karma çarpım, B ile C arasında vektörler çarpım, diğeri de skala çarpım, A ile bunlar arasındaki skala çarpım, o zaman bunlar nasıl yapılıyor?
+
+60
+00:08:15,095 --> 00:08:24,136
+A, B çarpanı C oluyor, A vektörü yazılıyor, B yazılıyor, C yazılıyor. Bu şekildeki determinat olarak veriliyor.
+
+61
+00:08:30,132 --> 00:08:50,611
+Evet. Bu karma çarpımı bize neyi veriyormuş? Karma çarpımı bize neyi veriyor arkadaşlar? Evet. ABC'nin nesil boyutu? Şu alanı veriyor bize. Bakın. Ne diyor? Hacim. ABC vektörlerinin üzerinde kurulan paralel yüzünün hacmi.
+
+62
+00:08:50,611 --> 00:08:52,611
+Birincisi.
+
+63
+00:09:04,947 --> 00:09:11,487
+A burası, A, B, B ve C.
+
+64
+00:09:17,716 --> 00:09:36,875
+A burası, B burası, C burası. Bu açıda bu taraftan ışığı almışız. Bu karma çarpı dediğimiz şey neyi veriyor bize? A çarpı B çarpı C neyi veriyor bize? Diyor ki bu vektörler üzerine kurulan paralel yüzünün hacmini veriyor.
+
+65
+00:09:36,875 --> 00:09:42,095
+Bu cismin hacmi, şekilde görülüyor gibi bakın
+
+66
+00:09:42,095 --> 00:09:52,835
+Eğer ABC vektörleri aynı düzendeyse dikkat edip ABC vektörleri aynı düzendeyse o zaman neyi veriyoruz dikkat edip nereye gitmesi lazım sıfıra gitmesi lazım
+
+67
+00:09:52,835 --> 00:09:57,875
+Yani bu özellikleri arkadaşlar sorunda problemde yapma şansımız var
+
+68
+00:09:57,875 --> 00:09:59,436
+Örnekler bunlar var
+
+69
+00:09:59,436 --> 00:10:01,835
+Örneklere geçiyoruz
+
+70
+00:10:12,532 --> 00:10:41,711
+Uzayda doğru denklemleri arkadaşlar. Uzayda doğru vektörel denklem. Bakın, yapmıştık. Katlıjen denklem. Parametrik denklem. Verilen vektörler var. Bunun katlıjen denklemini nasıl buluruz? Parametrik denklem. Aşağıdakilerden hangisidir? Arkadaşlar, bunlardan da sorular gelebilir. Bunlardan çözmüştük. Bakın. İki noktası verilen doğrun denklemi. İki doğrunun paralel olma koşulu.
+
+71
+00:10:41,711 --> 00:10:49,712
+Eğer iki tane doğru birbirine paralel ise, yani şu doğru, D bir doğrusu, D iki doğrusu paralel ise, nedir arkadaşlar? Bu bileşenlerin oranı birbirine eşittir.
+
+72
+00:10:52,011 --> 00:10:58,511
+A'nın P'ye, B'nin Q'ye, bunlar birbirine oranları eşittir. Bileşenlerin oranı eşit olması lazım.
+
+73
+00:11:05,172 --> 00:11:33,891
+iki doğrunun dik olma koşulunu biliyordunuz zaten. İş çarpanlar sıfır olacaktı. Çünkü aradaki açının kosküsü olduğu için. Bir noktanın bir doğru yalan uzaklığı. Yani bu arkadaşlar bir nevi şeyden sonra, ne dolar liseden sonra size çok gerekli yani bunlar. Doğrunun ana artiği, düzlemin ana artiği. Bunlar mühendis kalanında altyapı olarak kullanacağı şeyler. Onun için bunu ders için değil, öğrenmek için yaparsanız, testin için daha faydalı olur.
+
+74
+00:11:35,172 --> 00:11:42,512
+Evet, çözümler de burada var arkadaşlar. O sorular var, soruların çözümler de var burada. Hepsi ayrıntı bir şekilde.
+
+75
+00:11:43,052 --> 00:11:46,392
+Hepsini uğraşıp karşılaştırma şansımız var. Hatta şekilli bile var.
+
+76
+00:11:46,392 --> 00:11:48,212
+Şekilli bile vermiş.
+
+77
+00:12:02,323 --> 00:12:05,443
+etraflı ve detaylı. Bu kadar detaylı. Bu kadar çok soru ile
+
+78
+00:12:05,443 --> 00:12:10,943
+karşılaşmış olacaksınız. Evet, düzlemle. Burada bir noktanın düzleme olan uzaklığı.
+
+79
+00:12:12,183 --> 00:12:18,123
+Aşağıdakiler de hangisidir? Arkadaşlar, bak, bir noktanın, A noktasının, bu düzleme,
+
+80
+00:12:18,783 --> 00:12:21,664
+bu düzleme olan uzaklığı nedir? Nasıl buluyorduk?
+
+81
+00:12:22,924 --> 00:12:23,584
+D uzaklığı.
+
+82
+00:12:25,683 --> 00:12:26,883
+Ne diyoruz?
+
+83
+00:12:28,283 --> 00:12:29,084
+A x 0
+
+84
+00:12:32,788 --> 00:12:48,907
+B'ye sıfır, artı C, Z sıfır, artı D, bölü, kök içinde akar artı, B kar artı C kare şeklinde, akar artı, B kar artı C kare şeklinde, buluyorduk.
+
+85
+00:12:49,487 --> 00:12:55,227
+Bir noktanın bir düzlem olduğundan uzaklığı, iki düzlem dikkat ederseniz, bu iki düzlem paralel olması için ne olması lazım arkadaşlar?
+
+86
+00:12:59,764 --> 00:13:28,703
+bu iki dizem, bak dikkat et, A, B, C doğru. Bu da A, B, C'de aynı. Sadece ne farklı? Buradaki sapi sayı D1, diğer nedir? D2. O zaman bu iki dizem arasındaki uzaklığı biz nasıl buluyoruz? Buralar aynı kalma koşuluyla arkadaşlar. Sınavda bazen çeldirici oluyor. Şuraları iki katını alıyor. Şurası iki aldı, şurası iki katı, şurası iki katı mesela diyelim. Ne yapıyoruz burada? İkisinin farkına alacaktı. Bu sınavda D2 bölü 2 diyememiz lazım.
+
+87
+00:13:28,703 --> 00:13:53,703
+D2 bölü 2 eksi 2 diyeceğiz. Yani D2 eksi D1 diye, dikkat et, D1 bölü kök içinde A kare artı B kare artı C kare, uzaklık, iki düzen arasındaki uzaklık. Eğer bu iki varsa o zaman ne diyeceğiz? D2 bölü 2 diyeceğiz yani normal düşürmek için, D1'e düşürmek için.
+
+88
+00:13:57,043 --> 00:14:15,283
+Böyle manipülasyonlar yapılabilir. Bak diyor ki, düzenin arasındaki açı, normal arasındaki açıdır. Yani düzenin arasındaki açı ne demek? Normallerle bakıyoruz biz. Bu düzenin normal nedir? Normal bir, bakıyoruz buraya. 1, 1, 0. Şu düzenin normaline bakın.
+
+89
+00:14:15,283 --> 00:14:17,823
+bir düzen diyelim.
+
+90
+00:14:20,744 --> 00:14:25,443
+İkinci düzen de sevinç sıra normal nedir? Bunun normal ne olur mesela? Normal bir diyelim.
+
+91
+00:14:27,283 --> 00:14:29,724
+Üç, eksi dört, on iki.
+
+92
+00:14:33,323 --> 00:14:35,584
+Normal iki, şıran normal nedir mesela?
+
+93
+00:14:37,584 --> 00:14:41,163
+Üç, eksi dört, artı on iki.
+
+94
+00:14:41,163 --> 00:14:57,703
+bu iki vektör aynı, dikkat etsen, paralel birbirine paralel, evet, eğer düzenin normal ne bir, ne iki bulsa, bu iki düzen arasındaki açıyı bulmak için aynı bildiğimiz gibi, ne bir ile ne iki arasındaki açıya bakıyoruz biz,
+
+95
+00:14:57,703 --> 00:14:59,043
+Sıkılar çarpı.
+
+96
+00:14:59,963 --> 00:15:01,923
+Sıkılar çarpından bulabiliriz. Neydi?
+
+97
+00:15:02,444 --> 00:15:03,243
+Ne bir çarpı, ne iki?
+
+98
+00:15:05,543 --> 00:15:09,764
+Ne birinin uzunluğu, ne ikinin uzunluğu, aradaki açının koordinatörü.
+
+99
+00:15:13,023 --> 00:15:14,663
+Oyları zaten biliyoruz.
+
+100
+00:15:17,224 --> 00:15:18,863
+Normal şartlar da yapabiliriz değil mi arkadaşlar?
+
+101
+00:15:19,283 --> 00:15:19,904
+Var mı soru sola?
+
+102
+00:15:21,944 --> 00:15:22,404
+Gençler.
+
+103
+00:15:26,355 --> 00:15:28,275
+Evet, mikrofonla ses verebilir miyiz?
+
+104
+00:15:35,508 --> 00:15:37,047
+Allah Allah, sesin gitmiyor abi.
+
+105
+00:15:50,707 --> 00:15:57,267
+Evet gençler [öğrenci], [öğrenci], [öğrenci].
+
+106
+00:16:01,076 --> 00:16:03,455
+[öğrenci], gençler burada mıyız?
+
+107
+00:16:06,476 --> 00:16:06,755
+[öğrenci]?
+
+108
+00:16:08,275 --> 00:16:09,076
+Burada mıydım hocam?
+
+109
+00:16:10,036 --> 00:16:11,815
+Neyse, seri miyorsunuz? Anlaşıldı mı peki?
+
+110
+00:16:16,211 --> 00:16:16,931
+başlıyor hocam.
+
+111
+00:16:19,371 --> 00:16:28,071
+Evet, basit size hızlı geçelim. Yoksa yapacağız yani. Çünkü ilerleyen bir yerlerde işlerimiz var. Durmayalım. Yoksa anlamıyorsanız da tekrar yapmakta fayda var yani.
+
+112
+00:16:33,043 --> 00:16:34,284
+Evet, [öğrenci]. Ne yapalım?
+
+113
+00:16:38,548 --> 00:17:04,667
+şu iki vektör var. Mesela bunu nasıl yapıyoruz? N1 çarpı N2. N1 çarpı N2 şu. Bak, N1'le N2. Bunun önce skala çarpını alıyoruz. N1 çarpı N2. Skala çarpı nedir? Bu birinciyle birinciyi çarpıyoruz. Bak, birinciyle birinci. Ne olur? İki çarpı bir. Artı, ikinciyle ikinci, birle bir çarpasın. Bir çarpı bir. Artı, eksi ikiyle sıfır çarpıyoruz. O da sıfır oluyor zaten. Sıfır.
+
+114
+00:17:04,667 --> 00:17:33,588
+sıfır. Bu da ne olur? İki bir daha üç yapar. Sıkıra çarpı bulduk. Peki sıkıra çarpı nasıldı? Bak, sıkıra çarpı ne bulduk burayı biz? Üç bulduk. Üç. Eşittir. Ne birinin normu nedir? Ne birinin normu. Şu ne birinin normunu alıyoruz bakın. Ne birinin normu. Kök içinde. Birin karesi. İkinci bileşiğinin karesi.
+
+115
+00:17:34,667 --> 00:18:01,667
+Zaten sıfır oldu. O ne yapar? Kük 2 yapar. O zaman kük 2 çarpı n2'nin normu nedir? n2'nin aynı şekilde yapıyoruz. 2'nin karesi 4, x2'nin karesi 4, 1'nin karesi 1, 4, 1 daha 5. Kük 5 yapıyor. Kük 5 çarpı aradaki açıdan kosilojik. Buradan ne olur? 3 bölü ise kosilojik.
+
+116
+00:18:05,140 --> 00:18:07,739
+üç mülöğe, kök al.
+
+117
+00:18:29,203 --> 00:18:40,203
+Evet gençler bakın, burada bunlar çözersin, çözümleri var zaten. Bunların dışında şimdi şey gelelim.
+
+118
+00:18:42,132 --> 00:18:49,031
+Evet, iki düzen arasındaki düzen beklemi. Vektör değerli fonksiyonlar. Evet. Vektör değerli fonksiyonlar.
+
+119
+00:18:56,435 --> 00:19:02,916
+f t değerli vektör değerleri nasıl arkadaşlar? Dedi ki vektör değerli fonksiyonlar, f'i şöyle tanımlayabiliriz.
+
+120
+00:19:06,915 --> 00:19:16,116
+Real değişkenli vektör değerli, yani burada şöyle bir i kümesi diyelim, ya da d diyelim, d denin alt kümesi, real sayıların alt kümesi.
+
+121
+00:19:16,116 --> 00:19:26,115
+Burada nereye gidecek? r kübe gidecek. Yani t'yi alıyor, t elemanı alıyor, eleman d den alıyor, d dene götürüyor, f t'ye götürüyor.
+
+122
+00:19:26,435 --> 00:19:29,055
+F'te dediğimiz nedir?
+
+123
+00:19:31,555 --> 00:19:49,595
+F'te dediğimiz, F'te dediğimiz, küçük F, F1T, I artı, GT, J artı, HT, K.
+
+124
+00:20:01,811 --> 00:20:03,651
+bu şekilde adan ediyoruz sevgili arkadaşlar.
+
+125
+00:20:08,948 --> 00:20:14,948
+Peki, bu vektör değerli fonksiyonların boyunu nasıl buluyoruz? Boyunu da bu şekilde buluyoruz sevgili arkadaşlar, bakın.
+
+126
+00:20:14,948 --> 00:20:25,948
+F'ten boyu, kök içerisinde birinci bileşenin aynı şekilde mutlak değeri karısı, ikinci bileşenin mutlak değeri karısı, üçüncü bileşenin karısı şeklinde yazıyoruz arkadaşlar.
+
+127
+00:20:25,948 --> 00:20:34,948
+Limitini alırsak vektör değerli limitleri bu şekilde yazıyorduk. Yani üç bileşenlerin limit ayrı ayrı limitlerine eşit bir tanesi limit olmasa limit yoktur diyebiliyoruz.
+
+128
+00:20:34,948 --> 00:20:37,948
+Sürekliliği vardı zaten.
+
+129
+00:20:41,683 --> 00:20:43,683
+vektörle fonksiyonlar limitler ver.
+
+130
+00:20:54,516 --> 00:20:56,136
+Evet burada bolca örnek var arkadaşlar.
+
+131
+00:20:56,355 --> 00:20:57,055
+Şekiller de var.
+
+132
+00:20:58,615 --> 00:21:00,275
+Vektör değerli fonksiyonların türevi içinden
+
+133
+00:21:00,275 --> 00:21:02,615
+şey geçerli bakın. Vektör değerli
+
+134
+00:21:02,615 --> 00:21:04,356
+fonksiyonların türevi ayrı ayrı birleşimlerin
+
+135
+00:21:04,356 --> 00:21:06,615
+tek tek türevlerini arıyoruz. Bu türevler mevcutsa
+
+136
+00:21:06,615 --> 00:21:08,775
+o zaman bu vektör değerli fonksiyonların
+
+137
+00:21:08,775 --> 00:21:10,655
+türevlerini elde etmiş oluyoruz.
+
+138
+00:21:12,395 --> 00:21:14,375
+İki tane vektör değerli fonksiyonların
+
+139
+00:21:14,375 --> 00:21:15,215
+dikkat ederseniz
+
+140
+00:21:15,215 --> 00:21:18,276
+skaler çarpımın türevi
+
+141
+00:21:18,276 --> 00:21:20,495
+normal iki çarpımın türevi
+
+142
+00:21:20,495 --> 00:21:22,436
+gibi birinci türevi ve ikinci
+
+143
+00:21:22,436 --> 00:21:24,455
+çarpımının ikinci türeviyle
+
+144
+00:21:24,516 --> 00:21:27,056
+Birincinin çarpımının toplamına eşittir.
+
+145
+00:21:27,975 --> 00:21:28,995
+Vektör çarpımda ise,
+
+146
+00:21:29,655 --> 00:21:30,716
+bak vektör çarpımda ise,
+
+147
+00:21:31,216 --> 00:21:32,455
+vektör çarpımın türevindeyse,
+
+148
+00:21:32,696 --> 00:21:34,016
+vektör çarpımın türevi nasıl ediyoruz?
+
+149
+00:21:34,115 --> 00:21:34,935
+Birincinin türeviyle,
+
+150
+00:21:35,795 --> 00:21:37,615
+ikincinin vektör çarpımı artı,
+
+151
+00:21:38,216 --> 00:21:40,075
+ikincinin vektör türeviyle,
+
+152
+00:21:40,575 --> 00:21:43,096
+efendim, birincinin çarpımına eşittir,
+
+153
+00:21:43,135 --> 00:21:45,536
+vektör çarpımına eşittir şeklini bulabiliyoruz.
+
+154
+00:21:48,495 --> 00:21:50,535
+Uzay eğilerinin uzunluğu,
+
+155
+00:21:50,535 --> 00:21:52,696
+evet, uzay eğilerinin uzunluğu arkadaşlar,
+
+156
+00:21:53,175 --> 00:21:55,096
+Sınavda girebilecek sorulardan bir tanesi arkadaşlar.
+
+157
+00:21:56,196 --> 00:21:57,236
+Bak uzayda eğri var.
+
+158
+00:21:57,536 --> 00:21:59,615
+T parümetiz ama vektör değerlidir bu da.
+
+159
+00:22:00,136 --> 00:22:01,435
+Bundan uzunluğunu biz nasıl yapıyoruz?
+
+160
+00:22:01,575 --> 00:22:02,155
+L uzunluğunu.
+
+161
+00:22:03,295 --> 00:22:05,255
+O eğrinin türevini alıyoruz.
+
+162
+00:22:05,495 --> 00:22:06,376
+Ve normunu alıyoruz.
+
+163
+00:22:06,916 --> 00:22:07,995
+Norm ne demektir?
+
+164
+00:22:08,495 --> 00:22:08,916
+Bu da şu.
+
+165
+00:22:09,295 --> 00:22:10,376
+Mesela yerine koyarsam.
+
+166
+00:22:10,895 --> 00:22:11,676
+L işittir diyorum.
+
+167
+00:22:12,776 --> 00:22:13,475
+A'dan B'ye.
+
+168
+00:22:15,155 --> 00:22:16,056
+Kök içinde.
+
+169
+00:22:18,635 --> 00:22:19,975
+X'in türevinin.
+
+170
+00:22:21,096 --> 00:22:21,776
+Kalesi.
+
+171
+00:22:21,775 --> 00:22:26,415
+Y'nin türevinin t'ye göre türevinin nesi karesi?
+
+172
+00:22:27,315 --> 00:22:30,935
+Artı Z'nin türevinin t'ye göre türevinin karesi?
+
+173
+00:22:32,615 --> 00:22:34,295
+D'ye şekilde yazmış oluyoruz.
+
+174
+00:22:38,036 --> 00:22:44,155
+integral işlemini aynı şeyi geçiyor arkadaşlar. Yine vektör değerli fonksiyonların integralini de ayrı ayrı integral ile şekilde yazabiliyoruz.
+
+175
+00:22:48,019 --> 00:22:55,019
+Burada örnekler var arkadaşlar. Basit örnekler. Bunu da çok rahat halledebilirsiniz.
+
+176
+00:23:24,819 --> 00:23:35,499
+çözümler. Evet. Velen elinin nesine istiyor bizden? Evet. Aşıkla bakıyoruz şurada.
+
+177
+00:23:51,892 --> 00:24:09,392
+tt'nin uzunluğu, bak eğri vermiş arkadaşlar. Eğri'nin tt'ni nasıl yapıyoruz biz? Türevini alıyoruz. Türevinin boyunu alıyoruz. Bak türevinin boyunu nasıl alıyoruz arkadaşlar? Birincinin karesi, yani şunun türevi dediğim zaman, türevinin normu, şu geliyor arkadaşlar.
+
+178
+00:24:09,392 --> 00:24:29,392
+türevinin normal demek, kök içinde, a kare, sin karete, artı b kare, yine a kare, pardon, a kare, koç karete.
+
+179
+00:24:33,587 --> 00:24:39,947
+bu da akrapernelin arasında sin karataya birleştir. O zaman ne olarak çıkar? Olar çıkmış oluyor.
+
+180
+00:24:41,848 --> 00:24:55,167
+Dolayısıyla bu E-D'nin T-T'ini bulalım dersek, T-T'in oluyor. R'nin türevi bölü, R'nin boyuna eşittir. Bunu da getip yerine koyduğumuz zaman bu ibadet çıkıyor.
+
+181
+00:25:06,228 --> 00:25:06,728
+geçiyoruz.
+
+182
+00:25:14,836 --> 00:25:29,075
+Evet, vektör değerli fonksiyonları sürektsizlik noktaları. Bakın burada sürektsizlik noktalar yok. Polinom şeklinde de tüm redde süreklidir. Burada attakine paydara sıfır işleyen değerler sürektsizlik noktalardır. Değil mi? Vası da bunlar.
+
+183
+00:25:34,387 --> 00:25:37,707
+Şimdi buradan nereye gidiyoruz arkadaşlar, sevgili gençler?
+
+184
+00:25:43,859 --> 00:25:48,260
+çok değişkenli fonksiyonlar. Tam hükümesi libidde sürekli arkadaşlar.
+
+185
+00:25:52,051 --> 00:26:06,191
+sürekli çok değişkenli fonksiyonlar. Dün biz kısmi türev ve katlı integralde geçmiş olduk. Bunlar da arkadaşlar, tanım kümlesi çok önemli. Bakın burada detaylı olarak şeylerini görebiliyoruz. Sevgili arkadaşlar, kıymetli gençler.
+
+186
+00:26:09,511 --> 00:26:19,631
+Özellikleri var. Çok değişkenli fonksiyonlardaki özellikler de aynı şekilde geçerli. Yani diyelim ki bir çok değişkenli fonksiyonlar limitiyle biz diğer fonksiyonların limitiyle L2 diyelim.
+
+187
+00:26:19,631 --> 00:26:36,531
+bunların toplamların limiti, bunların limitler toplamına eşittir. Farkı yine aynı şekilde eşittir. Çarpımlar yine debi çarpı eşittir. Yani birçok esnek, rahat bir şekilde bütün taraflara gidebiliyor.
+
+188
+00:26:36,531 --> 00:26:44,971
+150'ler çizildik arkadaşlar. Bakın tek kanatı şunlar. Şu şekilde burada grafikte vermiş mesela bu.
+
+189
+00:26:44,971 --> 00:26:51,751
+Silindirlik olarak verilmiş. Küre olarak bakın. Merkez orijinal olan yarışçapta A olan küre.
+
+190
+00:26:51,751 --> 00:26:59,352
+Küre çizelim bakın. Burada da x kare bölü A kare, y kare bölü B kare.
+
+191
+00:27:04,307 --> 00:27:10,467
+z kare bölü c kare. Yani x'i a'da kesiyor, y'i b'de kesiyor, z'i de c'de kesiyor.
+
+192
+00:27:12,648 --> 00:27:13,587
+Sayresel silindir.
+
+193
+00:27:16,228 --> 00:27:16,707
+Şu.
+
+194
+00:27:23,635 --> 00:27:49,435
+Z'şitir A, bak Z'şitir A x kare bu ne demek? Bu şekilde bir şekil ya. Normal parabol değil mi? Ama uzayda olunca iş değişiyor. Uzayda olunca böyle y'ye taraf dahil oluyor. Yani normal şartlarda bizim şu şekildeki bir normal z karedeki şeyimiz bu. Ama de r küpte olduğu zaman bu ne oluyor? Böyle son sakada gidiyor. Sınırsız olarak devam ediyor.
+
+195
+00:27:49,435 --> 00:27:51,715
+Tövbe, tüm dağda dağını geçti.
+
+196
+00:27:55,316 --> 00:27:56,335
+bu şekilde devam ediyoruz.
+
+197
+00:28:40,372 --> 00:28:56,292
+Bakın, açma, çözdüğümüz sorulardan yine aynı şekilde gelebilecek sorulardan fx'ye var. ln x kare artı y kare eksi 4 fonksiyonunun tamamen olması için ne olması lazım? ln'in içindeki ifadeye ne olması gerekiyor? 0'dan büyük olması koşulu var. Bak, burada koymuşuz buradan.
+
+198
+00:28:57,151 --> 00:29:09,571
+Dolayısıyla bu bölgenin neresidir? Çemberinin dış bölgesidir. Çünkü 4'ten büyük dediğine göre, yani 2 olan şu bölge arkadaşlar, şu yeşil olan bölge. Yani böyle sınıra değil, dışarı doğru gidiyor yani.
+
+199
+00:29:10,372 --> 00:29:24,151
+yani şekil güzel olsun diye sınanlamışlar. Yani şu, şuradaki dairen dışındaki eşitlik var mı? Eşitlik yok o zaman. Burası da böyle kapalı olacak.
+
+200
+00:29:26,912 --> 00:29:28,232
+Ve dış bilgi.
+
+201
+00:29:32,011 --> 00:29:38,671
+Bunlarla ilgili arkadaşlar bol soru demiştim çözünüz. Bak burada en izin istemediğiniz kadar örnek var. Çözüm örnekler hem de çözümleri de var.
+
+202
+00:29:38,671 --> 00:29:41,412
+bunlardan faydalanabilirsiniz sevgili arkadaşlar.
+
+203
+00:29:46,952 --> 00:29:50,751
+Geldik arkadaşlar kısmı türeve. Dün kısmı türevden bahsettim. Bakın.
+
+204
+00:29:53,611 --> 00:30:00,691
+A, R, R, Kren'in alt kümesi olsun. A'dan nereye? R sayılara bir dönüşüm. Z eşitli, fx, fx fonksiyonu için.
+
+205
+00:30:01,631 --> 00:30:05,111
+Eğer şu limit mevcut ise, bak burada nerede artış var sevgili arkadaşlar?
+
+206
+00:30:05,111 --> 00:30:31,991
+arkadaşlar, birincisi x'te, x'teki artış var, h kadar artış var, ikinciye bak, b bursa bursa aynı, ikinciye değişmiyor, o zaman neye göre türe bu, x'e göre türe, birleşene göre türe, yani birinci birleşene göre türe diyoruz, şu şekilde gösteriyor, bu limit mevcutsa tabii ki, ya da d pürü, dx diyoruz, yahut da,
+
+207
+00:30:31,991 --> 00:30:35,591
+f'in x'e göre diyoruz.
+
+208
+00:30:38,491 --> 00:30:41,751
+Bu şekilde, şu şekilde de bireride gösterdi arkadaşlar.
+
+209
+00:30:43,751 --> 00:30:44,751
+Ne diyoruz?
+
+210
+00:30:45,411 --> 00:30:49,071
+f'in x değişkenine göre ab noktasındaki kısmı türev ediyoruz.
+
+211
+00:30:54,291 --> 00:31:23,632
+benzer şekilde. Bu sefer de nedir? K sıfıra giderken ikinci birleşeninde artış vermiş. Buna da biz ne diyoruz? F'in y'ye göre kısmı türevi. Yani bu limit meclis ise F'in y'ye göre kısmı türevi diyoruz. Yazmış oluyoruz. Bakın, y'iştir B düzlemi, z'iştir F'i x'i y'lisi, z'iştir F'i x'i yüzeyi. Arkadaşlar, bu düzlem yüzeyi burada. Diyoruz ki, şu alt kısımda türev aldığı zaman buna paralel olacak.
+
+212
+00:31:23,632 --> 00:31:33,111
+y'yi sıfır alıyoruz. Bu sefer x'e t' olarak geçen doğruyu alıyoruz. Diğerinde de x'i sabit tutup y'ye göre türev olarak bulmuş oluyoruz.
+
+213
+00:31:34,052 --> 00:31:41,872
+Yüksek mertebeden kısmı türevler yedik sevgili arkadaşlar. Evet burada şurası önemli arkadaşlar.
+
+214
+00:31:42,652 --> 00:31:48,031
+Burada x'x diyor mesela x'ye diyor. Önce hangisine göre alacağız? Önce şu ikinciye göre alıyoruz arkadaşlar.
+
+215
+00:31:52,051 --> 00:32:11,812
+Bak, burada ne olmuş? Önce y diyoruz. Şu kısmı şöyle f'in x y'ye göre diyor. x y'ye göre. Burada ne yapacağız? Önce f'in x'ye göre türevi alacağız. Daha sonra çıkan şeyi y'ye göre türevi alacağız.
+
+216
+00:32:11,812 --> 00:32:16,072
+D'e
+
+217
+00:32:21,299 --> 00:32:31,560
+v bölü. Önce x'e göre arıyorsun, sonra bunu arıyorsun. Bu nedir? d kareye bölü.
+
+218
+00:32:37,556 --> 00:32:38,375
+Çeğitliğiniz.
+
+219
+00:32:42,483 --> 00:32:51,483
+Bu arkadaşlar, dün söylemiştim. f'in x'den y'ye göre, y'den y'den x'e göre, işte olmaz. Ne lazımdı?
+
+220
+00:32:54,003 --> 00:33:23,983
+fxy, fy, fxx, fy, bunlar ne olması lazım? Bu aralıkta sürekli hisseler. Sürekli hisseler, o zaman bunlar eşittir. Yani önce x'e göre astım, sonra y'ye astım, ya da önce y'ye göre astım, sonra x'e göre astım, fark etmiyor. Eşittir. Ne zaman? Bunun fonksiyonu, bakın kendisi, x'den y'ye, y'den x'e, bu türevleri sürekliyse, kendisi de türevleri sürekliyse, kısmi türevleri sürekliyse,
+
+221
+00:33:24,003 --> 00:33:26,783
+bunlar birleşittir şeklinde söyleyebiliyoruz.
+
+222
+00:33:36,115 --> 00:33:53,095
+Aşağıdaki kurularda, fonksiyonların karşılanda yazılı, kısmi türevlerin tanımdan yararlanarak hesaplayınız. Nasıl hesaplayacağız sevgili arkadaşlar? Bak buraya. F'in x'e göre kısmi türevi. x'e göre kısmi türevi alırsak ne olur? Bakın. F'in x'e göre kısmi türevi alıyorum ben.
+
+223
+00:33:57,203 --> 00:34:25,943
+x küp, ne olur? 3x kare, çarpı yi sabit gibi, diğer teşkini sabit gibi görüyoruz. Artı, x'e görürsak, x'in türev biridir, y küp. Değil mi? Buraya alıyoruz. x, 6x, y kare. Burada, bu türevde ne diyoruz? Bir, bir koyarsanız ne çıkarır? x'ine bir, y'ye yerine bir çıkarsanız, o zaman, f'in x'e görür türev,
+
+224
+00:34:25,943 --> 00:34:40,544
+bir, bir, bir koyarsak ne çıkar? İkisini bir, bir koyduk, üç yapar. Artı, bir, eksi altı. O da ne yapar? Eksi dokuz? Yok. Eksi üç, eksi iki yapar.
+
+225
+00:34:46,547 --> 00:34:49,167
+bu şekilde de bunları çözebildiniz arkadaşlar.
+
+226
+00:35:05,108 --> 00:35:33,327
+eğer Laplace denklemi arkadaşlar, Laplace denklemi fonksiyonun ikinci türevlerinin toplamı 0 ise ve işçi sağladığını gösteririz. Mesela fonksiyon vermiş şu. Bu fonksiyonu gerçekten iki dava türevi alasak, yani z x x artı z y y sıfır olayım. Eğer 0 eşitse o zaman Laplace denklemi sağlıyor diyoruz. x'e göre türevi alasak ne olur? 2 x yapar. Bir daha alırsak, çünkü x'e x demek ki de iki dava türevi almak demektir.
+
+227
+00:35:33,327 --> 00:35:57,847
+Önce bir cütle varıyoruz, zx diyoruz, ne olur? 2x. Bir daha alırsak, 2 yaparız. Z'nin i'ye göre alırsak ne olur? x2'ye, değil mi? Bakın. Bir daha alırsak, x2. Bunları tuplasak, ne olur?
+
+228
+00:36:07,284 --> 00:36:08,284
+orduna sağlıyor.
+
+229
+00:36:08,483 --> 00:36:11,583
+Lopra sekemi sağlayıp, bütün örnekleri aynı şekilde koyabiliriz.
+
+230
+00:36:11,923 --> 00:36:12,883
+Görme şansınızla arkadaşlar.
+
+231
+00:36:18,835 --> 00:36:20,215
+çözümler burada var arkadaşlar.
+
+232
+00:36:33,492 --> 00:36:55,252
+arkadaşlar işlem hatası yapmamak lazım. Bol işlem yapmak. Bu da fonksiyon verilmiş. X'e göre türevini alıyoruz. Daha sonra Y'ye göre türevini alıyoruz. Y'ye göre türevini alıyoruz. Daha sonra X'ye göre türevini alıyoruz. Eşit diyoruz. Bakıyoruz ki eşit mi? Bakıyoruz ki eşittir gerçekten. O zaman fonksiyon kendisi birinci kısmı türevleri yeter sürekli olduğu için bunu yapabiliyoruz diyoruz.
+
+233
+00:36:55,252 --> 00:37:05,771
+Benzidir örnekler var arkadaşlar. Yani her bir konuyla ilgili yaklaşık bir 10-15 tane örnek var ya çözülmüş örnekler.
+
+234
+00:37:33,172 --> 00:38:03,151
+Evet. Çok değişkenli fonksiyonlarla ilgili devam ediyoruz. Şimdi bunların kısmi türevleri var arkadaşlar. Trabzon'a göre şimdi parametrik olarak tepildiği zaman çözümleri var. Zincir kuralı var. Bir ara verelim. Şu zincirini vereyim ben size arkadaşlar. Olur mu? Bu sorularda arada çözersiniz. Ondan sonra şey yaparız. Yani ne diyoruz? Haftaya. Boşluklar doldurmuş oluruz ya. Genel bir taraftan geçeceğiz. Şimdi bir mola verelim sevgili arkadaşlar. Tamam mı?
+
+235
+00:38:03,172 --> 00:38:10,392
+sorumuz var mı şu ana kadar? Anladıklarla ilgili kafanıza takılan anlamadığınız bir yeri var mı?
+
+236
+00:38:16,340 --> 00:38:17,340
+Peki
+
+237
+00:57:47,251 --> 00:58:10,831
+Sesim geliyor mu gençler? Merhabalar tekrar bakıyorum. Evet, afiyet olsun. [öğrenci], [öğrenci], [öğrenci], [öğrenci], [öğrenci], [öğrenci], mikrofonlar çalışıyorsa arkadaşlar mikrofonları açalım lütfen.
+
+238
+00:58:10,831 --> 00:58:17,012
+[öğrenci], [öğrenci], [öğrenci], [öğrenci],
+
+239
+00:58:24,692 --> 00:58:28,131
+Evet [öğrenci] buradasında yazılmak için mikrofon açın.
+
+240
+00:58:28,311 --> 00:58:29,251
+Açılar görse şöyle.
+
+241
+00:58:30,092 --> 00:58:31,531
+Tabii imkanlar dahilinde.
+
+242
+00:58:32,652 --> 00:58:34,091
+Evet sevgili gençler devam ediyoruz.
+
+243
+00:58:34,471 --> 00:58:36,771
+Şeyimize ne ceksi kaldığımız yerden devam ediyoruz.
+
+244
+00:58:37,511 --> 00:58:38,811
+Buraya kadar bir sorumuz var ama
+
+245
+00:58:38,811 --> 00:58:43,731
+hocam şu kısımda biraz anlamadım dediğiniz bir yer varsa söyleyin arkadaşlar.
+
+246
+00:58:44,792 --> 00:58:46,551
+Çünkü bizler sizler için varız burada.
+
+247
+00:58:47,651 --> 00:58:49,251
+Sizler anlayasınız diye uğraşıyoruz biz.
+
+248
+00:58:49,251 --> 00:58:57,131
+Yani burada siz de bu güzel cümle, bu mübarek [öğrenci] gününde siz de ölemek için ulaşıyorsunuz.
+
+249
+00:58:58,011 --> 00:58:59,552
+En güzel ziyafet ne arkadaşlar?
+
+250
+00:59:00,131 --> 00:59:01,692
+İlim ziyafeti, bilim ziyafeti.
+
+251
+00:59:02,451 --> 00:59:04,351
+Bu anlamda şanslısınız.
+
+252
+00:59:04,511 --> 00:59:05,171
+Ben de şanslıyım.
+
+253
+00:59:05,272 --> 00:59:08,351
+Sizler gibi güzel gençlerle birlikte olmaktan mutluyum.
+
+254
+00:59:09,711 --> 00:59:10,751
+Zincir kuralı arkadaşlar.
+
+255
+00:59:11,311 --> 00:59:13,351
+Çok değişkenli fokusunda da zincir kuralı.
+
+256
+00:59:13,991 --> 00:59:16,131
+Yani kısmı terev dedik bir de bunun zinciri varmış.
+
+257
+00:59:16,271 --> 00:59:16,811
+Bu nasıl oluyor?
+
+258
+00:59:17,011 --> 00:59:18,192
+Bakın burada sevgili arkadaşlar.
+
+259
+00:59:19,092 --> 00:59:20,331
+Z eşitir fx'ye.
+
+260
+00:59:21,111 --> 00:59:21,851
+Z neye bağlı?
+
+261
+00:59:23,131 --> 00:59:24,611
+Dikkat et. Z neye bağlı?
+
+262
+00:59:24,712 --> 00:59:25,991
+X ve y'ye bağlı.
+
+263
+00:59:26,471 --> 00:59:28,692
+Z fonksiyonu. F fonksiyonu x ve y'ye bağlı. Doğru mu?
+
+264
+00:59:29,391 --> 00:59:30,412
+X neye bağlı? Bakın.
+
+265
+00:59:31,971 --> 00:59:32,611
+X neye bağlı?
+
+266
+00:59:33,331 --> 00:59:34,732
+X de u ve v'ye bağlı.
+
+267
+00:59:35,311 --> 00:59:35,952
+Y neye bağlı?
+
+268
+00:59:36,471 --> 00:59:37,931
+O da h u ve v'ye bağlı.
+
+269
+00:59:39,011 --> 00:59:40,632
+Dolayısıyla bazen zincirleme
+
+270
+00:59:40,632 --> 00:59:42,931
+birbirine bağlı olan nesneler oluyor.
+
+271
+00:59:43,111 --> 00:59:44,251
+Tabiattaki olaylarda da
+
+272
+00:59:44,251 --> 00:59:46,132
+gerçekten çok zincirleme
+
+273
+00:59:46,131 --> 00:59:48,091
+kurallar var. Yani havanın sıcaklığı,
+
+274
+00:59:48,671 --> 00:59:50,151
+iç sıcaklık, dış sıcaklık,
+
+275
+00:59:51,351 --> 00:59:51,691
+aradaki
+
+276
+00:59:51,691 --> 00:59:53,371
+malzemenin kalitesi,
+
+277
+00:59:54,091 --> 00:59:55,931
+bütün faktörler şey yapıyor,
+
+278
+00:59:56,291 --> 00:59:57,931
+oraya karışıyor. Yani
+
+279
+00:59:57,931 --> 01:00:00,171
+dolayısıyla kısmı integrasyonunda
+
+280
+01:00:00,171 --> 01:00:02,071
+bakın f fonksiyonunun
+
+281
+01:00:02,071 --> 01:00:03,431
+neye göre? U'ya göre düzeleliği.
+
+282
+01:00:04,911 --> 01:00:06,071
+Dolayısıyla f'in U'ya göre
+
+283
+01:00:06,071 --> 01:00:07,511
+dediği zaman, bak z eşittir,
+
+284
+01:00:09,331 --> 01:00:09,671
+f
+
+285
+01:00:09,671 --> 01:00:11,331
+x'ye
+
+286
+01:00:11,331 --> 01:00:13,071
+x eşittir,
+
+287
+01:00:13,071 --> 01:00:17,011
+x'e
+
+288
+01:00:17,011 --> 01:00:18,491
+G
+
+289
+01:00:18,491 --> 01:00:20,811
+U ve V
+
+290
+01:00:20,811 --> 01:00:22,851
+y'e
+
+291
+01:00:22,851 --> 01:00:25,171
+H
+
+292
+01:00:25,171 --> 01:00:27,571
+U ve V
+
+293
+01:00:27,571 --> 01:00:29,552
+Şimdi şimdi şey yapacağım.
+
+294
+01:00:29,651 --> 01:00:30,871
+Bak z'in
+
+295
+01:00:30,871 --> 01:00:32,692
+U'ya göre temin ediyor.
+
+296
+01:00:32,811 --> 01:00:34,711
+Z diyorum neye bağlı?
+
+297
+01:00:35,711 --> 01:00:36,791
+Z x'e bağlı.
+
+298
+01:00:36,791 --> 01:00:37,492
+X neye bağlı?
+
+299
+01:00:39,151 --> 01:00:40,731
+Hem U'ya bağlı hem de
+
+300
+01:00:40,731 --> 01:00:41,852
+B'ye bağlı.
+
+301
+01:00:41,852 --> 01:00:43,632
+O zaman bakın
+
+302
+01:00:43,632 --> 01:00:46,632
+DZ ya da DF
+
+303
+01:00:46,632 --> 01:00:48,072
+İki tane şey geçerli
+
+304
+01:00:48,072 --> 01:00:48,692
+DF bölü
+
+305
+01:00:48,692 --> 01:00:51,852
+DU'ya götürdüğü zaman
+
+306
+01:00:51,852 --> 01:00:53,531
+F direkt U'ya bağlı değil
+
+307
+01:00:53,531 --> 01:00:56,192
+F neye bağlı? X ve Y'ye bağlı
+
+308
+01:00:56,192 --> 01:00:58,292
+O zaman ne diyoruz?
+
+309
+01:00:58,352 --> 01:00:58,592
+F
+
+310
+01:00:58,592 --> 01:01:01,132
+U'ya
+
+311
+01:01:01,132 --> 01:01:03,391
+U neye bağlı?
+
+312
+01:01:06,031 --> 01:01:06,912
+X'e bağlı
+
+313
+01:01:06,912 --> 01:01:09,272
+Artı
+
+314
+01:01:09,272 --> 01:01:11,552
+DF neye bağlı? Başka?
+
+315
+01:01:11,852 --> 01:01:13,852
+İçin, hadi.
+
+316
+01:01:13,852 --> 01:01:15,852
+Hadi.
+
+317
+01:01:19,603 --> 01:01:28,743
+ye balı, yeni balı, yeni balı, yeni balı, evet.
+
+318
+01:01:32,724 --> 01:02:00,263
+B için aynı şeyi yazarız arkadaşlar. Bak B için de aynı şeyi, benzer şeyi, daha olursa aynı şeyi diye benzer şeyi yazabiliriz. Burada var. Zilci kuralı bu arkadaşlar. Örnek üzerinde görelim isterseniz. Bak burada kimyasal maddeler arasındaki gelişikleri de kullanılıyor. Şekilde görüldüğü gibi. Mesela bakın, burada Z, F, X, Z'ye bağlı. X, Trabzon'a, Y, Trabzon'a bağlı. Bakın.
+
+319
+01:02:00,263 --> 01:02:03,043
+D, Z'nin de T görevini alsak ne olur?
+
+320
+01:02:03,543 --> 01:02:08,764
+D, Z'nin, D, Trabzon'a bak, D, Trabzon'a göre türevi.
+
+321
+01:02:10,523 --> 01:02:15,983
+D, Z'nin, X'e göre türevi, X'in, Trabzon'a göre türevi.
+
+322
+01:02:17,043 --> 01:02:23,343
+Z'nin, Y'ye göre türevi, Y'nin, Trabzon'a göre türevi.
+
+323
+01:02:25,543 --> 01:02:29,663
+Bu şekilde, kısmi türevi almış olduklar arkadaşlar, zincir kuralıyla.
+
+324
+01:02:30,263 --> 01:02:42,263
+Yani burada bağlı ama değiştiriyoruz bakın u bu sefer ne oluyor? 3 tane değişken var x, y, z var x de trabizona, y, trabizona, z de trabizona bağlı bir fonksiyon farklı farklı fonksiyonlar
+
+325
+01:02:42,263 --> 01:02:57,263
+O zaman biz bunu nasıl yazıyoruz? Bakın u'nun x'e x'in trabizona u'nun y'ye y'nin trabizona u'nun z'ye değil mi? Bak u dediğimiz burada u neye bağlı? x'e bağlı, y'ye bağlı ve z'ye bağlı
+
+326
+01:02:57,264 --> 01:03:07,423
+Zer'in Trabzon'a göre şekilde ne yapıyoruz? Üçlü olarak zincir kuralıyla çözmüş oluyoruz arkadaşlar. Türe bu şekilde alınıyor kısmi türe. Zincir kuralıyla bu şekilde alınmaktadır.
+
+327
+01:03:19,059 --> 01:03:43,879
+bak o da tekli olarak var. Y nereye bağlı? Fx'e bağlı başka? X nereye bağlı? U ve V'ye bağlı. Urfa'ya ve Van'a bağlı. Dolayısıyla bu işe Urfa'ya olarak alırsak nedir? Y nereye bağlı? Bakıyoruz. Y x'e bağlı. X nereye bağlı? X de U'ya bağlı. V'ye göre alırsak, Y'ye bağlı bu şekilde yazabiliriz.
+
+328
+01:03:48,851 --> 01:03:58,851
+kapalı fonksiyonlar için nasıldı? Tek değişken fonksiyonlar da biliyordunuz arkadaşlar ilk dönem. Burada da çok değişken fonksiyonlar için nasıl yazıyoruz?
+
+329
+01:04:03,251 --> 01:04:21,432
+nasıl yazılır arkadaşlar sevgili gençler? Bak dikkat et. Z pölü, dx. Eksi fonksiyonu, f'nin nereye göre? x'e göre. f'nin nereye göre? z'ye göre. Diğerlerini sabit olarak arıyoruz. Bu şekilde.
+
+330
+01:04:22,191 --> 01:04:25,951
+Kapan fonksiyonlar, türev ve danış oluyoruz. Yani fx'i z'ye 0 olarak alırsak.
+
+331
+01:04:29,396 --> 01:04:50,835
+sıfır olarak ele alırsak bu şekilde şöyle bir şey oluyoruz. Şimdi sevgili gençler, f fonksiyonu x sıfır, y sıfır noktasında türev fonksiyonu olsun. Eğer l x dediğimiz, bak, f x sıfır, y sıfır, f'in x'i görüntü, x sıfır, y sıfır, x x, y sıfır, f'in y'i görüntü, y sıfır, y sıfır.
+
+332
+01:04:50,835 --> 01:05:05,215
+Fokşon'a fen'in lineerleşmişi diyoruz. Yani Fokşon'un değer yine lineer değer aynıdır. Yaklaşımına fen'in x0 noktası da lineer yaklaşımı diyoruz sevgili arkadaşlar.
+
+333
+01:05:07,455 --> 01:05:11,715
+Bu ne demektir? Bunun demek istediği şeyi ben size şöyle açıklayayım.
+
+334
+01:05:15,092 --> 01:05:18,592
+Burada yapayım arkadaşlar. Şu paylaşımı bırakayım.
+
+335
+01:05:22,003 --> 01:05:25,323
+Evet, bir nerde olsun, şimdi şurada yazayım ben.
+
+336
+01:05:27,583 --> 01:05:28,603
+Dur, boş cezafada.
+
+337
+01:05:36,148 --> 01:05:37,187
+ben şimdi durduruyorum.
+
+338
+01:05:39,327 --> 01:05:40,608
+Size bir yeni bir tahta açayım.
+
+339
+01:06:15,123 --> 01:06:17,063
+Eşene paraşım, görüyor musunuz arkadaşlar?
+
+340
+01:06:24,659 --> 01:06:25,679
+boşaltıda
+
+341
+01:06:25,679 --> 01:06:29,140
+şöyle söyleyeyim ben, linearizasyon diyor.
+
+342
+01:06:40,371 --> 01:06:43,112
+generalizasyon, yaklaşık hesaplama.
+
+343
+01:06:46,111 --> 01:06:48,672
+Yaklaşık hesaplama.
+
+344
+01:06:52,436 --> 01:07:17,215
+nasıl hesaplıyoruz arkadaşlar? Türevden faydalanarak bu işi yapıyoruz. Tamam, o da şu. İlk dönem görmüştünüz. Tek değişkenli fonksiyonlarda, dinarizasyon, defansiyer teknikleri falan görmüştük. Burada çok değişkenli fonksiyonlar olduğu için, dinarizasyon nasıl? Diyoruz ki, bir FXF fonksiyonumuz, fonksiyonumuz, bir AB aralığında, civanda,
+
+345
+01:07:21,076 --> 01:07:22,095
+TÜ evlen ediyorsun.
+
+346
+01:07:26,420 --> 01:07:37,279
+bilgi olsun. Yani şöyle söyleyeyim arkadaşlar bak. Buradaki temel ders şu. Yani fonksiyonun diyelim ki bir fonksiyonumuz var.
+
+347
+01:07:38,931 --> 01:07:51,611
+şurası x ekseni, şurası y ekseni, şurası z ekseni. Şu fonksiyonumuz var. Fonksiyonun AB noktasında diyelim ki AB noktasındaki değeri bilinmiyor.
+
+348
+01:07:53,191 --> 01:07:59,891
+Fonksiyonun yüzeyi var şurada. Bu noktası ki değeri bilinmiyor. Buna biz ne yapıyoruz? Nelerle yaklaşıyoruz arkadaşlar?
+
+349
+01:07:59,891 --> 01:08:08,831
+doğrularla, düzenlerle yaklaşıyoruz. Daha şeyde doğrularla yaklaşıyoruz. Burada düzenlerle yaklaşacağız. Yaklaşık değer buluyoruz.
+
+350
+01:08:08,831 --> 01:08:15,551
+Av'daki norma değeri yok ama yaklaşık değeri var burada. Yaklaşık değer nedir? Şudur. Linear zasyon dedik. Linear integral demek.
+
+351
+01:08:15,551 --> 01:08:19,091
+Doğruyla düzenler buluyor. Yani dx'ye,
+
+352
+01:08:19,091 --> 01:08:21,231
+işitir.
+
+353
+01:08:23,292 --> 01:08:24,812
+F, A, B, artı
+
+354
+01:08:24,812 --> 01:08:26,652
+F'in
+
+355
+01:08:26,652 --> 01:08:28,071
+x'i görü kısmi türevi
+
+356
+01:08:28,071 --> 01:08:30,472
+AB noktasında
+
+357
+01:08:30,472 --> 01:08:32,571
+x, x, A
+
+358
+01:08:32,571 --> 01:08:34,792
+artı F'in y'i görü kısmi türevi
+
+359
+01:08:34,792 --> 01:08:37,891
+yine AB noktasında
+
+360
+01:08:37,891 --> 01:08:40,152
+çarpı y, x, b
+
+361
+01:08:40,152 --> 01:08:43,332
+budur.
+
+362
+01:08:49,460 --> 01:09:17,759
+Yani fonksiyonun fx'ye yaklaşık neye eşitir? Lx'ye eşitir. Böyle bir noktadaki değeri yaklaşık da yapmak için biz ne yapıyoruz? Bundan faydalanıyoruz. Bize ne lazım? Fonksiyonun x'e göre kısmi türevini olmak lazım. y'ye göre kısmi türevini alıp y'ye eksi beş şekilde çarpıyoruz. Linear teknevi buluyoruz. Daha sonra bu noktasal teknevi nedir? Bunu hesaplıyoruz. Arkadaşlar, örnekler üzerinde görebiliriz.
+
+363
+01:09:21,268 --> 01:09:22,147
+Var mı sorusuna?
+
+364
+01:09:38,163 --> 01:10:08,143
+geldik. Tam diferansiyel. Tam diferansiyel arkadaşlar ilk dönem görmüştük. Hatırladınız bunu. Tek değişkenli fonksiyonlar için yapıyorduk. Çok değişkenli fonksiyonlar için de bu şekilde oluyor. Yani biz z'nin artışı, d artışı demek. D, d, d gibi. D, z, 5'tir. F'in x'i bir kısmi türevi. D, x, f'in y'ye gülü kısmi türevi.
+
+365
+01:10:08,163 --> 01:10:09,323
+D.
+
+366
+01:10:11,663 --> 01:10:18,283
+Yani Z'deki artış, bakın arkadaşlar, Z'deki artış bu kadar oluyor.
+
+367
+01:10:18,884 --> 01:10:22,244
+Karesini alsak, bunu elde ediyoruz arkadaşlar.
+
+368
+01:10:25,483 --> 01:10:30,303
+Tamam, şunu tekrar türev alırsak, tekrar şuraya, tekrar türev alırsak, türev alırsak,
+
+369
+01:10:30,363 --> 01:10:31,004
+buraya elde ediyoruz.
+
+370
+01:10:31,863 --> 01:10:38,143
+ZXX, DX kare, ZY, D kare, bakın, onu da iki tane Z'de,
+
+371
+01:10:38,163 --> 01:10:39,364
+6DXD
+
+372
+01:10:44,435 --> 01:10:45,375
+Evet, yaşayın.
+
+373
+01:10:49,971 --> 01:10:55,771
+yani mantığı bu. Eninci kuvveti, ikinci kuvveti, ikinci kuvveti arıyoruz. Bu şekilde, geç çıkmıştırıyoruz.
+
+374
+01:11:00,051 --> 01:11:28,711
+Önnek üzerinde görebiliriz mesela diyelim ki, ana seler vermiş, fonksiyonun birinci ve ikinci mtb'den tam differansiyonu hesaplayınız. Bak bu da aşağıdaki fonksiyonun birinci ve ikinci mtb'den tam differansiyonu hesaplayınız. Tam differansiyonu nasıldı? df diyoruz. f'in x'e göre kısmi türevi değil mi? dx. f'in y'e göre kısmi türevi değil. tam differansiyonu bu.
+
+375
+01:11:30,051 --> 01:11:58,651
+Dolayısıyla x'e göre türevine alsak ne olur arkadaşlar? x kümül türevi ne olur? 3x kare. 3x kare. Başka? x'i 5y kare. Başka? Artı 3y. Artı 4 değil mi? 4x'ten x'e göre aldığımız için 4. y'ye göre asla 0 oluyor. D'ye de 0 oluyor. Buraya göre türevini aldık.
+
+376
+01:12:06,836 --> 01:12:33,455
+bir şekilde ne yapmış olduk arkadaşlar? F'in y'ye göre de aynı şekilde alıyoruz. Ve çarpı dx diyoruz. Tam defansiyel alıyoruz. Burası da ne diyeceğiz? Şöyle dx diyoruz. Artı y'ye göre türevini alıyoruz. Bu aynı fonksiyonun tamamını y'ye göre. İkisi sarttık gibi görüyoruz. Türevini alıyoruz. Yerine yazıyoruz. Artı d diyoruz. Bu tam defansiyel almış oldu. Bunu biz nerede kullanıyoruz? Gençler, şurada kullanıyoruz.
+
+377
+01:12:33,455 --> 01:12:45,415
+diyoruz ki taban yarı çapı 10 santim, taban yarı çapı 10 santim, yüksekliği 30 santim olan bir koordinin, bak taban yarı çapı 10 santim.
+
+378
+01:12:52,532 --> 01:13:02,811
+taban yarışı 10 santim, yüksekliği 30 santim olan bir koninin tabanı 3 santim, 3 milimetre arttırılırsa
+
+379
+01:13:14,163 --> 01:13:42,743
+Evet. Yarı çapı olsa yüksekliği 30 cm olan bir koninin yüksekliği 3 mm artırır. Bak, yüksekliği 3 mm artırır. Taban yarış çapı da 1 mm azaltırsa, hacmi kaç cm küp değişir? Evet, çok orijinal bir soru. Taban yarış çapı yüksekliği olan bir koni. Yüksekliği 3 mm artırılır. Değil mi? Yüksekliği 3 mm artırılıyor.
+
+380
+01:13:44,163 --> 01:13:54,744
+H yüksekliği 3 mm artırılıyor, 3 mm artırılıyor, yani delta H diyor bu yani, D H diye bir ismiyle, delta H, bu kadar artırılıyor.
+
+381
+01:13:55,303 --> 01:14:04,823
+Şey ise, taban yarış çapı ise 1 mm azaltılıyor, taban yarış çapı R diyelim, o zaman ne olur?
+
+382
+01:14:04,823 --> 01:14:10,083
+D R, R ne kadar azaltılıyor? Eksi, eksi diyoruz, 1 mm azaltılıyor.
+
+383
+01:14:10,083 --> 01:14:19,483
+bitti. Kone'nin hacmiydi arkadaşlar. Kone'nin hacmi formülü neydi? Ve işittir bana söyler misiniz?
+
+384
+01:14:29,268 --> 01:14:30,268
+gençler.
+
+385
+01:14:30,268 --> 01:14:35,268
+Re kare haç bölü üç.
+
+386
+01:14:35,268 --> 01:14:36,268
+Hacimi.
+
+387
+01:14:36,268 --> 01:14:39,268
+Kutinin hacmi nedir?
+
+388
+01:14:39,268 --> 01:14:42,268
+Re kare, re kare.
+
+389
+01:14:42,268 --> 01:14:45,268
+Pi re kare miydi? Pi var mıydı?
+
+390
+01:14:45,268 --> 01:14:48,268
+Pi re kare haç bölü üç değil mi?
+
+391
+01:14:48,268 --> 01:14:51,268
+Evet, tamam doğru. Seyidi var da ondan doğru. Aferin.
+
+392
+01:14:51,268 --> 01:14:54,268
+Üç. Tamam, çok güzel bak.
+
+393
+01:14:54,268 --> 01:14:56,268
+Fonksiyon verdi. Neye bağlı fonksiyon?
+
+394
+01:14:56,268 --> 01:14:58,268
+Hacim neye bağlı?
+
+395
+01:14:58,268 --> 01:15:10,927
+R ve H'e bağlı. R ve H'e bağlı. Arkadaşlar doğru mu? R ve H'e bağlı. R ve H'e bağlı gençler.
+
+396
+01:15:25,684 --> 01:15:26,563
+Tamam, sözünüz gitti.
+
+397
+01:16:12,404 --> 01:16:13,524
+geliyor mu sesim şu anda?
+
+398
+01:16:15,343 --> 01:16:16,463
+Şu an geliyor hocam.
+
+399
+01:16:16,603 --> 01:16:23,103
+Geliyoruz. Aferin. Bak şimdi burada ne var? Şimdi bu verdi, biz ne diyoruz? Hacim ne kadar değişir?
+
+400
+01:16:26,996 --> 01:16:28,996
+taban yarış çapı ne diyor?
+
+401
+01:16:31,675 --> 01:16:33,675
+taban yarış çapı neydi arkadaşlar?
+
+402
+01:16:34,835 --> 01:16:36,836
+10 santim. Yüksekliği neymiş?
+
+403
+01:16:38,515 --> 01:16:41,275
+30 santim. Bunu hacmiye de önce bunu bulalım.
+
+404
+01:16:41,275 --> 01:16:42,715
+taban yarış çapı 10 ise,
+
+405
+01:16:43,315 --> 01:16:47,555
+10 ise 10'un karesini yapar, 100 yapar. Değil mi? Yüksekliği de 30.
+
+406
+01:16:50,195 --> 01:16:51,195
+10.
+
+407
+01:16:51,596 --> 01:16:53,996
+Ne yapar? Hacmi ne buluyoruz arkadaşlar?
+
+408
+01:16:53,996 --> 01:16:55,996
+Bakın, yerlerine koyarsak.
+
+409
+01:16:55,996 --> 01:17:10,196
+pi çarpanı, yarı çarp, on, onun karensi yüz yaptı, haş, otuz, üç, bu üçte götürür, ne olur?
+
+410
+01:17:12,095 --> 01:17:25,975
+Bin, pi, birim küp, hacmi buymuş, diyor ki, yüksekliğini azaltı diyor arkadaşlar, otuz santim, yok şeyi, kaç bilir?
+
+411
+01:17:25,996 --> 01:17:42,396
+3 milim artırırsa, yüksekliği haç, 3 milim artırırsa, tamam, 3 milim artırırsa, o zaman ne diyelim? Delta haç dediğimiz artma miktarı, 3 milim artırırsa, bu da 1 milim azaltırsa, yarı çapta 1 milimetre azaltırsa, hacmi ne kadar değişir?
+
+412
+01:17:44,055 --> 01:17:45,115
+Tamam, bunu nasıl yapacağız?
+
+413
+01:17:47,115 --> 01:17:54,775
+Bunu şöyle yapıyoruz arkadaşlar, şu boş tahta tahta da ben, ya pi mecburen yapacağım ben, bana biraz söyleyin, boş bir tahta alayım.
+
+414
+01:17:55,996 --> 01:17:57,996
+Evet
+
+415
+01:18:05,971 --> 01:18:27,691
+Evet, neydi bana bir şey? V'ş'tir. V'ş'tir. Pi, V kare, H bölü 3, koordinat hacmiydi. Bu V neye bağlı? R ve H'a bağlı. Şimdi dv yaparsak, dv ne olur?
+
+416
+01:18:31,636 --> 01:18:34,356
+verin. Şuraya götürevi.
+
+417
+01:18:39,444 --> 01:19:02,523
+dR artı V'nin h'e göre türevi dH. Bu şekilde yazıyor. Artma miktarı budur. Peki V'nin R göre türevi ne olur? R göre türevi alırsak. 2 yazıyorum. 2P R çarpı H bölü 3 dR. R'nin artışı neydi arkadaşlar? Yarı çarpanın artışı.
+
+418
+01:19:02,523 --> 01:19:06,903
+eksi bir milimetre, eksi bir milimetre diyordu.
+
+419
+01:19:07,864 --> 01:19:12,624
+Tabi birimler aynı olması lazım. Birisi santim, diğeri milimetre ise hepsi de aynı birime çevirmek lazım.
+
+420
+01:19:12,624 --> 01:19:18,263
+Ben şu anda bilmiyorum. Bakın, artı, V'nin haşa göre türevi ne olur?
+
+421
+01:19:18,403 --> 01:19:23,024
+V'nin haşa göre türevi ne olur? V'nin haşa göre türevi ne olur?
+
+422
+01:19:25,043 --> 01:19:28,103
+Pi r kare bölü 3 olur. Değil mi?
+
+423
+01:19:28,103 --> 01:19:54,423
+h'n türev 1'dir, diğer kasa gibi gelir. Yani pi, re kare bölü 3, çarpı dh. dh kaç milim diye yükseklik? 3 milimetre azaltılıyor mu da arttırılıyordu? O da 3 milimetre. Çarpı 3. Eğer buna da h aynıysa, böyle çarptığım zaman ne elde etmiş olayım ben? Arkadaşlar, dv'yi elde etmiş oldum yani. ddeki artışı elde etmiş oldum.
+
+424
+01:19:54,423 --> 01:20:24,403
+bu fark. Artı da olabilir, ekside olabilir. Yani azalmış mı, arttırmış mı, bu çarptığı zaman çıkan sonuçtur. Ama şuralara dikkat edin. Şu milimetreydi çünkü. Bunlar milimetreydi. Eksi bir milimetreydi. Diğerler milimetre miydi, santimetre miydi bu? H ve önceki rev h. O zaman bunlarda aynı bilme çevirmemiz lazım arkadaşlar. Milimetreleri bu saat ne yapıyoruz? Santimetre çeviriyoruz arkadaşlar. O zaman sağlıklı bir sonuç buluyoruz. Ve de ki hacimdeki artış bu kadardır diyor. Eğer artı çıkıyorsa
+
+425
+01:20:24,403 --> 01:20:53,843
+çıkıyorsa artıştır. Negatif çıkıyorsa dev dediğimiz bu V'deki hacimdeki artış ya da azarış negatif çıkıyorsa o zaman bu kadar azalama demektir. Son durumdaki değer nedir derse o zaman V ile V'deki artışı koyduğu zaman bize neyi verir? Son tarihdeki hacmi verir bize. Son durumdaki hacim bulur der. Yani şey yüksekliği ve çapı artıp azaldıktan sonraki son durumdaki hacmi nedir dersek bu
+
+426
+01:20:53,843 --> 01:20:59,603
+Bu gerçek ve değerine biz ne yapıyoruz? Bir de ve'deki atış değerini koyuyoruz. Bu şekilde acayetmiş oluyoruz.
+
+427
+01:21:03,507 --> 01:21:04,967
+Tamam mı gençler? Bu sorumuz
+
+428
+01:21:26,579 --> 01:21:36,119
+Evet mesela örnekler var burada arkadaşlar. Bakın. Şurada örnekler var mesela. Bunları hem dinlerizasyonla hem tam differensiyelde çözme şansı var arkadaşlar.
+
+429
+01:21:39,359 --> 01:21:41,040
+Bakın. Bakın.
+
+430
+01:21:43,420 --> 01:21:44,719
+Evet gençler.
+
+431
+01:21:48,724 --> 01:22:18,583
+Evet gençler, var mı bir sorunuz? Sormak istediğin başka bir şey var mı? Burada paylaşabiliriz. Bu kısmi türev ile ilgili de sorular çözün arkadaşlar. Daha sonra haftaya ilerliyoruz. Kısmi türev ile beraber bir de çıkmış sınav sorularını çözeceğiz sizlere arkadaşlar. Geçmiş yıllarda çıkmış sınav soruları. Bir de kendinize yapamadığı sorular varsa onları getiriyorsunuz. Bunları birlikte çözüyoruz arkadaşlar. Bakın çözümler burada. H ve C burada. Bunlar milimetre hepsini çevirmiş.
+
+432
+01:22:18,583 --> 01:22:23,383
+ve sorucu buluşuz. Tamam mı? Gençler.
+
+433
+01:22:31,507 --> 01:22:59,287
+linearizasyonla ilgili örnekler var. Evet, devam ediyor. Çok değişkenli fonksiyonlarda çünkü evet, zinci kuralından sonra limitler var. Limitlerle ilgili örnekler var arkadaşlar bu kitapta. Yani çok kapsamlı, güzel detayla anlatmış fazla örnek var ama önemli bir kısım çözerseniz işinize çok yarayacaktır düşünüyorum ben. Daha sonra zaten Noma Klasik bizim üniversitenin soruları vardı. Onları da çözerseniz inşallah güzel bir skora imzalmış olursunuz.
+
+434
+01:22:59,287 --> 01:23:26,267
+hem siz mutlu olsunuz hem de ben mutlu olmuş olurum. Ama temel amaç öğrenmek zorunda arkadaşlar. Tek şey söylemek istedim mi? Söyleyeceğim şeyler bunlar. Evet. İsmi türevlerine soru zaten şeye geçiş olacak. Bunlarla ilgili bol bol örnekler çözeceğiz arkadaşlar. Ama siz ne kadar çözerseniz o kadar işimiz kolaylaşacak sevgili gençler.
+
+435
+01:23:26,267 --> 01:23:34,307
+anlaşıldı mı? [öğrenci], [öğrenci], [öğrenci]
+
+436
+01:23:34,307 --> 01:23:40,567
+anlaşıldı hocam
+
+437
+01:23:40,567 --> 01:23:41,947
+peki
+
+438
+01:23:41,947 --> 01:23:43,747
+teşekkür ediyorum
+
+439
+01:23:43,747 --> 01:23:45,948
+hepinize görüşmek üzere diyorum
+
+440
+01:23:45,948 --> 01:23:47,827
+haftaya inşallah nasip olursa
+
+441
+01:23:47,827 --> 01:23:49,147
+kısmet olursa inşallah
+
+442
+01:23:49,147 --> 01:23:50,188
+gençler
+
+443
+01:23:50,188 --> 01:23:51,728
+ben sizlere dua ediyorum
+
+444
+01:23:51,728 --> 01:23:53,047
+sizlere de dua alışalım inşallah
+
+445
+01:23:53,047 --> 01:23:55,327
+kendinize iyi bakın
+
+446
+01:23:55,327 --> 01:23:56,247
+evdekilere selam
+
+447
+01:23:56,247 --> 01:24:03,347
+söyleyin. Ramazanızda mübarek olsun. Ama çalışmayı ihmal etmeyelim. Gençler bak birikmeden konu konu ilerliyoruz.
+
+448
+01:24:03,707 --> 01:24:14,247
+Hakikaten güzel. Konular güzel. Zevkli konular. Ama ne kadar yoğunlaşırsanız o kadar güzel olacak yani. Her alanda planlı programına gitmek lazım.
+
+449
+01:24:14,487 --> 01:24:24,588
+Başkanın temeli arkadaşlar plan ve program ve icraat tabii ki. Plan yapıyorum ama yapamıyorum. Değil. İradeyle durmak lazım. İrade eğitimini göstermek lazım.
+
+450
+01:24:24,587 --> 01:24:29,667
+bunu zaten siz başardınız ki buralara kadar geldiniz. Bundan sonra da yapacağınıza ben inanıyorum.
+
+451
+01:24:30,707 --> 01:24:31,987
+Görüşmek üzere. Allah'a emanet olun.
