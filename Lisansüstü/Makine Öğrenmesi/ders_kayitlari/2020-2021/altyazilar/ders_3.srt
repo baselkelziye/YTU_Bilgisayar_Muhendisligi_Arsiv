@@ -1,0 +1,3963 @@
+1
+00:00:09,492 --> 00:00:13,510
+Günaydın. Günaydın arkadaşlar.
+
+2
+00:00:55,828 --> 00:01:01,587
+Evet, bir 12 kişi olduğuna göre derste başlayabilirim artık. Günaydın. Nasılsınız, iyi misiniz?
+
+3
+00:01:06,292 --> 00:01:06,771
+Güzel.
+
+4
+00:01:07,131 --> 00:01:07,652
+Sağ olun.
+
+5
+00:01:08,070 --> 00:01:08,611
+Siz nasılsınız?
+
+6
+00:01:09,350 --> 00:01:10,191
+Teşekkür ederim.
+
+7
+00:01:10,531 --> 00:01:10,772
+Sağ olun.
+
+8
+00:01:10,831 --> 00:01:11,090
+Gerçekten.
+
+9
+00:01:12,391 --> 00:01:13,611
+Günaydın herkese.
+
+10
+00:01:14,831 --> 00:01:20,430
+Bugün şeyden devam edeceğim. Ekranımı görüyor mu? Herkes overfitting in decision trees yazıyor.
+
+11
+00:01:20,831 --> 00:01:21,730
+Görüyoruz hocam.
+
+12
+00:01:21,930 --> 00:01:22,552
+Evet, görüyoruz.
+
+13
+00:01:23,010 --> 00:01:32,370
+Tamam, harika. Şimdi geçen hafta en son şeyde kalmıştık. Karar ağaçlarından bahsederken overfitting olduğunda ne yapmalıyız?
+
+14
+00:01:32,370 --> 00:01:38,391
+ondan oraya gelmiştik, orada bırakmıştık geçen hafta en son. Şimdi oradan devam edeceğim.
+
+15
+00:01:38,512 --> 00:01:56,950
+Şimdi öncelikle overfitting dediğimiz şey ne? Overfitting dediğimiz şey bir öğrenme sisteminde, sistemde eğitimi tamamladığımızda eğitim başarısının diyelim ki %90 olduğunu varsayalım.
+
+16
+00:01:56,950 --> 00:02:14,991
+bu çok iyi bir şey yani iyi bir eğitim yapmışsınız tamamlamışsınız fakat sonra bu modelinizde örnekleri test etmeye başlıyorsunuz ve eğitimde başarı %90 iken testte başarının %60'lara %70'lere düşebildiğini görüyorsunuz.
+
+17
+00:02:14,991 --> 00:02:21,651
+o zaman bu durumda aklınıza gelmesi gereken şey bir overfitting probleminin olmasıdır.
+
+18
+00:02:21,651 --> 00:02:27,170
+Overfitting dediğimiz şey gereğinden fazla öğrenmektir.
+
+19
+00:02:27,270 --> 00:02:39,931
+Şimdi normalde bizim öğrenmeyle kastettiğimiz şey öğrendilmesini istediğimiz bilgiyle ilgili karakteristiklerin anlaşılmasıdır.
+
+20
+00:02:39,931 --> 00:02:52,151
+Böylece eğer siz karakteristikleri anlarsanız bilinmeyen bir örnek geldiğinde onun ne olduğunu doğru bir şekilde tahmin edebilirsiniz.
+
+21
+00:02:52,151 --> 00:03:15,111
+Fakat eğer gereğinden fazla öğrenirseniz bu ezberlemeye gider ve ezberleme olduğunda da aslında diyelim ki A sınıfına ait olan bir örneği fazla detaylı öğrenildiği için artık karakteristiği de kaybetmeye başlayıp fazla detaylı öğrenildiği için B sınıfında zannedebilirsiniz.
+
+22
+00:03:15,110 --> 00:03:36,991
+Bunun sebepleri neler olabilir? Birincisi şey yapmış olabilirsiniz. Parazitli veya şeyleri temsil etmeyen bu sınıfa ait örnekleri tam da temsil etmeyen örneklerle eğitim yapmış olabilirsiniz.
+
+23
+00:03:36,991 --> 00:03:45,991
+eğitim setindeki bütün örnekleriniz için doğru cevap veren bir sistem kurmaya çalışmış olabilirsiniz.
+
+24
+00:03:45,991 --> 00:03:55,931
+Çünkü şöyle bir şey var, diyelim ki kız öğrencileri erkek öğrencilerinden boy ve kilosuna göre ayırmaya yarayan bir öğrenme sistemi kurduğunuzu düşünün.
+
+25
+00:03:56,431 --> 00:04:06,591
+Genel olarak baktığınızda işte diyorsunuz ki kız öğrencilerde boy diyelim ki 1.55 ile 1.75 arasında genellikle değişiyor.
+
+26
+00:04:06,592 --> 00:04:11,911
+şu kiloda 45 ile 100 arasında değişiyor. Böyle bir dağılım olduğunu düşünelim.
+
+27
+00:04:12,211 --> 00:04:19,312
+Ama altla ayrılarda var. Mesela işte 1.85 boyunda 80 kilo bir kız öğrenci var.
+
+28
+00:04:19,430 --> 00:04:22,831
+Veya işte 1.90 boyunda 120 kilo bir kız öğrenci var.
+
+29
+00:04:22,930 --> 00:04:29,112
+Bu aslında bir erkek öğrencilerin bilgilerine daha yakın bir bilgi olmasına rağmen
+
+30
+00:04:29,110 --> 00:04:37,271
+bunu da illa ki benim modelim öğrensin derseniz yavaş yavaş şeyden karakteristikten uzaklaşmaya başlıyorsunuz demektir.
+
+31
+00:04:37,271 --> 00:04:41,511
+Onu da doğru bilsin dediğiniz zaman karakteristikten uzaklaşmaya başlıyorsunuz.
+
+32
+00:04:41,550 --> 00:04:46,831
+İşte bunu çok yaptığınız zaman overfitting'e gitmiş oluyorsunuz ve o zaman ne oluyor?
+
+33
+00:04:47,050 --> 00:04:56,050
+Tamam eğitimde verdiğimiz bütün örnekleri sisteminiz %100'e yakın başarıyla doğru biliği olabilir ama teste geldiğinizde başarınız düşüyor.
+
+34
+00:04:56,050 --> 00:04:58,930
+Şimdi karar ağaçlarında baktığımızda
+
+35
+00:05:01,043 --> 00:05:11,523
+her şeyi doğru yapan bir sistem kurabilmek için ne olacak? Bütün şartları sağlamaya çalışacağından ağacınızdaki düğüm sayısı artacak overfitting olduğunda.
+
+36
+00:05:11,523 --> 00:05:22,903
+Şimdi burada bir şey görüyorsunuz, grafik görüyorsunuz. Burada ağaçtaki düğümlere göre başarının nasıl değiştiğini görüyorsunuz.
+
+37
+00:05:22,903 --> 00:05:31,942
+eğitim örneklerimiz buradaki koyu çizgiyle gösterilen örnekler, test örnekleri kesikli çizgiyle gösterilen.
+
+38
+00:05:31,942 --> 00:05:40,903
+Baktığınız zaman karar ağacındaki düğüm sayısı 10'a çıktığında başarının oldukça güzel bir şekilde arttığını görüyoruz.
+
+39
+00:05:41,762 --> 00:05:45,403
+20'ye çıktığında yine artmış bir miktar.
+
+40
+00:05:45,403 --> 00:05:54,663
+sonra işte şeyi arttırdıkça nedir düğüm sayısını arttırdıkça gittikçe yükselen bir başarı görüyoruz.
+
+41
+00:05:54,744 --> 00:06:06,862
+Ama test başarısına baktığımız zaman tamam güzel düğüm sayısı arttıkça test başarısı artmamış ama belli bir noktadan sonra önce test başarısı sabit kalmış sonra düşmeye başlamış.
+
+42
+00:06:06,862 --> 00:06:22,163
+Bu düşmenin olduğu yer aslında overfitting'in olduğu yer. Yani büyüm sayısı arttıkça tamam bütün eğitim örneklerini başarıyla öğrendi ama test örneklerinde artık sıkıntı çıkmaya başladı. Çünkü model karakteristiği temsil etmiyor.
+
+43
+00:06:22,163 --> 00:06:49,163
+Şimdi burada işte hata eğitim örneklerinde az, test örneklerinde fazlaysa işte overfittingin olası sebepleri şeyli data, parazitli yani burada noise de aslında buradaki parazit şey değil yani bizim sinyal işlemede gördüğümüz bir parazit gibi düşünmeyin de şeye benzemeyen data.
+
+44
+00:06:49,163 --> 00:07:02,802
+örnek setindeki diğer örneklere benzemeyen data. Az önce konuştuğumuz gibi işte 1.90 boyunda 90 kilo ağırlığında bir kız öğrenci aslında o sınıf için parazitli bir data olmuş oluyor.
+
+45
+00:07:03,583 --> 00:07:15,163
+Training setin küçük olması, şimdi aslında küçük olması da şöyle bir problem yaratıyor. Eğer elinizdeki örnek sayısı azsa karakteristikleri yakalayamayabilirsiniz.
+
+46
+00:07:15,163 --> 00:07:28,523
+Yani şansınız varsa karakteristikleri gösterecek kadar güzel örnekler vardır eğitim kümenizde. Ama genellikle bu kadar şanslı olunmaz. O zaman az örnek varsa karakteristik çıkartmanız zorlaşır.
+
+47
+00:07:28,523 --> 00:07:35,963
+O zaman ne yapacağız peki karar ağacında? Çünkü ben öğrenmeyi, öğrenme bitene kadar devam ettiriyorum değil mi?
+
+48
+00:07:36,083 --> 00:07:45,642
+Yani artık bütün yapraklarda sadece sınıflar olana kadar ben öğrenmeyi devam ettirmek zorundayım ki model oluşsun.
+
+49
+00:07:46,124 --> 00:07:52,182
+O zaman eğitimde overfitting olmaması için ne yapmam gerekiyor?
+
+50
+00:07:52,182 --> 00:08:15,223
+3 tane yol var bunun için genellikle kullanılan. Geçen hafta burada kalmıştık aslında. Bir genel tekrar yaptım. Reduced error pruning, early stopping, rule post pruning. Şimdi reduced error pruningten bahsetmiştik. Burada yapılan şey öncelikle ağacı oluşturup ondan sonra budamak üzerine. Peki budamayı neye göre yapacağız?
+
+51
+00:08:15,223 --> 00:08:24,822
+Şimdi aslında ileriki haftalarda şeyi göreceğiz eğitim ve test için örneklerin nasıl kullanıldığını göreceğiz.
+
+52
+00:08:24,983 --> 00:08:27,043
+Şimdi burada basitçe bir bahsedeyim.
+
+53
+00:08:27,562 --> 00:08:30,562
+Şimdi diyelim ki elinizde 100 tane örneğiniz var.
+
+54
+00:08:31,262 --> 00:08:36,202
+Bu örnekler aslında sizin hem eğitim için hem test için kullanacağınız örnekler.
+
+55
+00:08:36,202 --> 00:08:40,923
+Burada Reduced Error Pruning'de bizim yaptığımız örnekleri.
+
+56
+00:08:41,748 --> 00:09:08,527
+Eğitim, doğrulama ve test için 3 parçaya ayırmak. Diyelim ki genelde işte %70'ini şey için ayırırsınız, eğitim için ayırırsınız, %30'unu da test için ayırırsınız. O %70'in de elinizdeki 100 örnek varsa, %70'in de diyelim ki işte %60'ını train için, eğitim için, %40'ını da doğrulama için ayırırsınız.
+
+57
+00:09:08,527 --> 00:09:21,787
+Şimdi burada önemli olan bu yapıda bahsediyorum. Daha sonra şeylerden falan cross-validation vs. farklı yöntemlerden de bahsedeceğim.
+
+58
+00:09:21,787 --> 00:09:34,788
+Burada şey yapıyorsunuz. Kimse kimse hiçbir örneğe karışmayınca eğitim örnekleriyle eğitiyorsunuz. Doğrulama örnekleriyle modelinizi iyileştiriyorsunuz.
+
+59
+00:09:34,787 --> 00:09:45,106
+iş bittikten sonra da test örnekleriyle bağımsız olarak başarıyı ölçüp modelinizin başarısını söylüyorsunuz.
+
+60
+00:09:45,147 --> 00:09:46,006
+Yaptığımız şey bu.
+
+61
+00:09:47,167 --> 00:09:52,667
+Şimdi burada önce eğitim örneklerimizle ağacımızı eğittik.
+
+62
+00:09:53,567 --> 00:10:02,447
+Diyelim ki şu soldaki bir bizim geçen hafta gördüğümüz bu tenis oynasın mı oynamasın mı örneği.
+
+63
+00:10:02,447 --> 00:10:15,386
+şey nedir eğitimi tamamlanmış bir ağaç. Bunun doğrulama örnekleriyle başarısını ölçtüğünüzde %75 başarı bulunmuş.
+
+64
+00:10:15,386 --> 00:10:30,607
+Şimdi bundan sonra Reduced Overfitting'de yaptığınız şey şu. Alttan başlıyorsunuz yani yapraklardan başlıyorsunuz. Yukarı doğru budayarak başarı ölçüyorsunuz ve başarı iyileşene kadar budamaya devam ediyorsunuz.
+
+65
+00:10:30,607 --> 00:10:37,427
+artık bir şey değişmediğinde ve artık başarı düşmeye başladığında bu da demektir ki artık karakteristikleri bozmaya başlamışsınız.
+
+66
+00:10:37,846 --> 00:10:40,626
+O zaman da şeyi kesiyorsunuz.
+
+67
+00:10:40,927 --> 00:10:42,788
+Şimdi şurada bir tane şöyle bir örnek vardı.
+
+68
+00:10:42,868 --> 00:10:45,567
+Onu aslında göstermek istiyorum.
+
+69
+00:10:45,706 --> 00:10:47,788
+Mesela overfitting'e sebep olan bir örnek.
+
+70
+00:10:48,128 --> 00:10:52,447
+Şimdi diyelim ki ağacınız böyleydi şu aşamada ve böyle bir örnek daha geldi.
+
+71
+00:10:52,548 --> 00:10:53,866
+Eğitim örneği daha geldi.
+
+72
+00:10:54,408 --> 00:11:00,027
+Outlook, sunny, temperature, hot, humidity, normal, wind, strong, play, tennis, snow.
+
+73
+00:11:00,027 --> 00:11:15,607
+Şimdi bakalım, Outlook Sunny, Humidity Normal ise biz yes demişiz. Bu diyor ki hayır no olacak diyor. O zaman ne olacak? Normalde hem yes hem no olduğu için bu ağaç aşağı doğru uzayacak böyle. Buradaki sıkıntı bu.
+
+74
+00:11:15,607 --> 00:11:16,687
+Şimdi bakalım
+
+75
+00:11:20,466 --> 00:11:46,947
+o örneği de göstereceğim. Şimdi bakalım. Diyoruz ki burayı budayalım. Burayı budamak demek ne demek? Burada şey vardı, outlook şeyken, sunnyken, ondan sonra bir de nememak vardı. Burada diyoruz ki tamam, outlook sunnyken don't play diyeceğiz. Don't play diyeceğimize nasıl karar vereceğiz? Orada şuna göre karar veriyorsunuz.
+
+76
+00:11:46,947 --> 00:11:56,226
+Nem varken diyelim ki 3 gün nem yüksekken 3 gün şey yapmış, oynamamış, bir gün oynamış mesela.
+
+77
+00:11:57,346 --> 00:12:04,148
+Çoğunluk oynamamasında olduğu için don't play'e yaprak olarak belirliyorsunuz.
+
+78
+00:12:04,586 --> 00:12:08,807
+Bunu bir kere daha söylüyorum. Şimdi burayı budadınız, budanın yaprak olması lazım.
+
+79
+00:12:09,327 --> 00:12:14,368
+Hangi sınıf diyeceksiniz? Play mi, don't play mi diyeceksiniz? Ona şu şekilde karar veriyorsunuz.
+
+80
+00:12:14,366 --> 00:12:43,327
+Çoğunluk kimdeyse o. Mesela nem yüksekken 3 gün oynamamış, 1 gün oynamış. O zaman diyorsunuz ki çoğunluk oynamamış demek ki. O zaman outlook sun iken oynamadı diyorsunuz. Bu ağacı bu şekilde budadık. Burayı kaldırdık. Budadıktan sonra tekrar doğrulama örneklerinizle başarıyı ölçüyorsunuz ve başarı %80 çıkmış. İyi demek ki burayı budamanın avantajını gördüm.
+
+81
+00:12:43,327 --> 00:12:46,488
+Hocam bir şey sorabilir miyim?
+
+82
+00:12:47,687 --> 00:12:53,548
+Buradaki budama yaparken eğitim örneklerine bakarak mı karar veriyoruz yoksa validation data'ya bakarak mı?
+
+83
+00:12:54,628 --> 00:13:01,067
+Tabii tabii validation'a yani şimdi bakın eğittiniz bitti tamam mı? Artık eğittiniz bitti.
+
+84
+00:13:01,527 --> 00:13:04,847
+Validation'la başarıyı ölçtük yüzde yetmiş beş çıktı.
+
+85
+00:13:05,947 --> 00:13:09,567
+Yani artık eğittikten sonra eğitim örneklerinizde hiç işiniz yok.
+
+86
+00:13:09,567 --> 00:13:13,386
+çünkü o şeyi karıştırır, durumu karıştırır.
+
+87
+00:13:13,466 --> 00:13:17,106
+Eğittiniz diyelim ki bu modelin başarısı %90'dı, eğittiniz bitti.
+
+88
+00:13:17,846 --> 00:13:25,986
+Arkasından geldiniz, şeyle validation örnekleriyle başarıyı ölçtünüz, %75 çıktı.
+
+89
+00:13:26,586 --> 00:13:35,106
+Bu şu demek yani eğitim örneklerinin hepsini çok iyi öğrenmiş olabilir ama test ettiğinde aslında validation set dediğinizde bir tür test örnekleri bunlar.
+
+90
+00:13:35,106 --> 00:13:50,246
+yani artık sadece test ediyorsunuz çünkü. Doğrulama örnekleriyle test ettim. Başarı %75. O zaman dedim ki bir budayım ben burayı. Şurayı budadım. Masum görünüyor değil mi? Görünüyor mu Masum?
+
+91
+00:13:50,246 --> 00:14:04,706
+Evet. Burayı budadım. Budadıktan sonra başarıyı ölçtüm. %80. Dedim ki tamam demek ki burayı budadığım zaman daha iyi oluyor dedim. Yani hiç eğitim örneklerine geri dönmüyorum artık. Eğitim bitti benim için.
+
+92
+00:14:05,106 --> 00:14:19,246
+Şimdi geldim, validation hep böyledir. Validation eğitimle oluşturduğunuz modelin ince ayarının yapılmasıdır. Farklı parametrelerle işte ağaçsa ağacı bu diyarak vesaire.
+
+93
+00:14:19,246 --> 00:14:35,246
+ağacın şeyin modelinizin eğitimle elde ettiğiniz modelinizin işte bu karar ağacı da olur, k-n yakın komşuluk da olur neyse yaptığınız yöntem hangisi ise kullandığınız onun sonuçların iyileştirilmesidir doğrulamaya yapılan şey.
+
+94
+00:14:35,246 --> 00:14:41,866
+Şimdi geliyorum burası zaten budan yani budanmış demin de burası zaten tek yan burada yapabileceğiniz bir şey yok.
+
+95
+00:14:41,947 --> 00:14:47,067
+Oğur kesse oynamış orada zaten uzayan bir ağaç yok orada altı ağaç yok.
+
+96
+00:14:47,067 --> 00:15:06,326
+Şimdi geldim bu sağ tarafa. Sağ tarafı deniyorum. Şimdi burada da burayı budayacağım. Yine aynı şekilde çoğunluğa bakıyorum. Mesela Win Strong iken diyelim ki burada da iki gün oynamamış. Week iken altı gün oynamış. Çoğunluk kimde?
+
+97
+00:15:07,220 --> 00:15:21,339
+oynaması durumunda. O zaman diyorum ki, outlook renken oynamış diyorum. Yani buradaki çoğunluk kimse, onu sınıfın etiketi olarak belirliyorum, oynamıştır diyorum.
+
+98
+00:15:21,339 --> 00:15:36,859
+Şimdi tekrar şeyi ölçüyorum. Nedir? Başarıyı ölçüyorum. Dikkat edin yalnız, burada da şeyi ellemedim. Sol taraf duruyor. Sol taraf dururken bakıyorum ne olup bittiğine.
+
+99
+00:15:36,859 --> 00:15:53,940
+yani orijinal ağacın üzerinden budama yapıyorum şu anda. Ondan sonra doğrulama başarısını ölçüyorum. Burada %70 çıkıyor. Neydi halbuki bir adım önce? %75'ti eğitim ağacının üzerinde.
+
+100
+00:15:53,938 --> 00:16:13,158
+başarı şeydi, %75'ti. O zaman bu şekilde şeyi budamak, bindi budamak bana iyi gelmedi demektir. Demek ki o tarafı budamamak gerekiyor.
+
+101
+00:16:13,158 --> 00:16:18,798
+ondan sonra şunu da yaparak devam edebilirsiniz.
+
+102
+00:16:19,859 --> 00:16:28,139
+Bildim budanmadığının budanmamasının doğru olduğunu gördük ama şeyi de deneyip bakabilirsiniz.
+
+103
+00:16:28,958 --> 00:16:35,339
+Sol tarafı budamıştık ya, sol taraf budalı iken bir faydası olur mu ama olmayacağını göreceksiniz.
+
+104
+00:16:35,339 --> 00:16:40,798
+Çünkü o bambaşka bir koşulu değerlendiriyor, bambaşka bir kuralı değerlendiriyor.
+
+105
+00:16:40,798 --> 00:16:47,879
+yani altlık'un reyken olduğu kuralı değerlendirdiği için birbirlerini etkilemediklerini göreceksiniz.
+
+106
+00:16:47,879 --> 00:16:59,678
+Şimdi bu şekilde ağacımın başarısı %80 ben bunu şey diye modelimin yeni hali diye kabul ediyorum.
+
+107
+00:16:59,678 --> 00:17:15,419
+bundan sonra yapmanız gereken şey, olaya hiç karışmamış olan test örnekleri ile başarı ölçüp demeniz ki bu karar ağacının ekürüzisi şu kadardır demeniz.
+
+108
+00:17:15,419 --> 00:17:31,380
+Yani ne yaptınız? Train ile eğittiniz, validation ile budadınız, son halini verdiniz. Hiçbir şeye karışmamış, hiçbir şekilde modelin eğitiminde düzeltilmesinde kullanılmamış bağımsız bir data ile da test ettiniz.
+
+109
+00:17:31,380 --> 00:17:41,599
+Buraya kadar soru var mı? Anladınız mı? Peki ses çıkmamasını anlamı olarak kabul ediyorum.
+
+110
+00:17:41,598 --> 00:17:57,598
+Peki mesela şurada şu büyük çizgiler şeyi gösteriyor, test datasını gösteriyor.
+
+111
+00:17:57,598 --> 00:18:09,898
+bu da validation'ı pruning sırasındaki durumu gösteriyor.
+
+112
+00:18:09,898 --> 00:18:18,979
+Yani fazla da prune ederseniz de yine başarı düştüğünü görüyorsunuz.
+
+113
+00:18:19,078 --> 00:18:25,959
+Yani aslında pruning'i de şurada, şey yanlış söyledim özür dilerim.
+
+114
+00:18:25,959 --> 00:18:31,838
+pruning'i de şurada kesmeniz lazım. Ondan fazla aşağı düştüğünde yine başarı düşebilir.
+
+115
+00:18:34,838 --> 00:18:50,118
+Şurası aslında 20 düğüm varken ağaçta iyiymiş. 20'den aşağıya indiğiniz zaman bir şey fark etmeyecek.
+
+116
+00:18:52,818 --> 00:18:55,239
+Buraya kadar sormak istediğiniz bir şey var mı?
+
+117
+00:19:01,682 --> 00:19:07,823
+Peki yani bakın prune ettiniz, ettiniz, ettiniz, ettiniz böyle de ettikçe başarınız yükseldi.
+
+118
+00:19:07,942 --> 00:19:12,443
+Bir noktadan sonra artık prune ettiğinizde başarınız değişmiyor.
+
+119
+00:19:12,443 --> 00:19:18,222
+Artık orada şeyi kesebilirsiniz ağacı, budamayı kesebilirsiniz.
+
+120
+00:19:19,523 --> 00:19:23,923
+Şimdi early stopping'de yapılan şey şu.
+
+121
+00:19:24,083 --> 00:19:30,083
+Burada da bakın bu eğitim datanız siyah olan, kırmızı olan test datanız, yeşil olan da doğrulama datanız.
+
+122
+00:19:30,083 --> 00:19:36,084
+Early Stopping'de ağacınızı büyütürken şeyleri tutuyorsunuz.
+
+123
+00:19:36,703 --> 00:19:41,084
+Her seferinde daha ağacı büyütürken başarı hesaplayarak büyütüyorsunuz.
+
+124
+00:19:42,044 --> 00:19:51,084
+Her yeni eklediğiniz şeyle birlikte, alt düğümle birlikte başarıyı ölçerek büyütüyorsunuz.
+
+125
+00:19:51,903 --> 00:19:53,084
+Ve şeye bakıyorsunuz.
+
+126
+00:19:54,442 --> 00:19:57,942
+Yani aslında Reduced Error Pruning'den çok büyük bir farkı yok.
+
+127
+00:19:57,942 --> 00:20:05,763
+başarının düşmeye başladığı yerde diyorsunuz ki sınıflandırıcım budur.
+
+128
+00:20:05,763 --> 00:20:14,022
+Yani yaptığınız şey şu tekrardan ağacı sonuna kadar eğitim datanızda ağacı sonuna kadar oluşturmaya devam ediyorsunuz.
+
+129
+00:20:14,124 --> 00:20:18,763
+Fakat her aşamada başarıyı ölçüp tutuyorsunuz.
+
+130
+00:20:19,282 --> 00:20:26,903
+Ağaç bittikten sonra başarının düşmeye başladığı noktadaki ağacınıza geri dönüyorsunuz.
+
+131
+00:20:27,942 --> 00:20:34,323
+Reduced Error Pruning'de ağacı oluşturup budaya budaya geri dönüyordunuz.
+
+132
+00:20:34,482 --> 00:20:42,663
+Buradaysa da ağaç oluşurken başarıyı hesaplaya hesaplaya oluşturuyorsunuz ağacınızı.
+
+133
+00:20:42,663 --> 00:20:53,803
+Ve ağaç bittikten sonra başarının en uygun olduğu yerde ağacı kesiyorsunuz.
+
+134
+00:20:53,803 --> 00:21:01,942
+Mesela burada kesmiş çünkü buradan sonra artık bakıyorsunuz test datası gittikçe test datasında da validation'da da başarı düşmüş.
+
+135
+00:21:02,063 --> 00:21:05,442
+Türeğinde yüksek ama bu noktadan sonra düşmüş.
+
+136
+00:21:05,823 --> 00:21:07,282
+Buradaki ağaca geri dönüyorsunuz.
+
+137
+00:21:07,323 --> 00:21:11,383
+Şimdi bu bence çok da pratik bir şey değil çünkü bir sürü bilgi tutmanız gerekiyor.
+
+138
+00:21:12,163 --> 00:21:16,522
+Ondansa budamak daha efektif gibi.
+
+139
+00:21:16,522 --> 00:21:28,563
+Üçüncü yapabileceğiniz şey yine datayı eğitim işte doğrulama ve test için burada train validation demiş ama aslında üç parçaya ayırmak doğrusudur başarı ölçmek için.
+
+140
+00:21:29,222 --> 00:21:39,522
+Ondan sonra oluşturuyorsunuz ve ondan sonra eğittiğiniz eğitimi tamamlanmış ağacı kurallara çeviriyorsunuz.
+
+141
+00:21:39,522 --> 00:21:53,363
+Mesela işte Outlooku Sen'i ise Humidity'si, Hysa, Don't Play, Norma'sa Play, Overcast'ı Play vs. gibi böyle kurallarınızı yazıyorsunuz.
+
+142
+00:21:53,363 --> 00:22:09,722
+Ondan sonra her kural için şeyi hesaplıyorsunuz, doğrulama başarısını hesaplıyorsunuz ve ona göre yine neyi atıp neyi atmayacağınızı,
+
+143
+00:22:09,722 --> 00:22:18,722
+Bu da şey yaptığı gibi bütün şeyleri, kuralları bağımsız olarak değerlendiriyorsunuz.
+
+144
+00:22:19,722 --> 00:22:24,343
+Ve şeyleri koruyarak gidiyorsunuz bu sefer.
+
+145
+00:22:24,823 --> 00:22:32,063
+Mesela burada Humidity Highs'a Don't Play %75'e çıkmasını sağlıyormuş doğrulama başarısının.
+
+146
+00:22:32,063 --> 00:22:42,323
+Mesela bunu mutlaka kullanmanız gerekir gibi başarıyı düşüren bu sefer kuralları elemek yoluna gidiyorsunuz.
+
+147
+00:22:46,804 --> 00:22:57,623
+ondan sonra da şey yapıyorsunuz burada, işte kuralları büyükten küçüğe dizip işte belli bir mesela işçilik seviyesinin altındaki kuralları atabilirsiniz.
+
+148
+00:22:57,863 --> 00:23:08,223
+Bu şekilde şeyi belirliyorsunuz, ağacınızı belirliyorsunuz. Ben bunların içerisinde en çok şeyi tercih ediyorum, medyist error pruning tercih ediyorum.
+
+149
+00:23:08,223 --> 00:23:22,462
+çünkü işlem açısından çok daha kolay bir şekilde yapılıyor ama rule post-pruning de çok kullanılan yöntemlerden birisi.
+
+150
+00:23:22,462 --> 00:23:31,442
+Çünkü bir kere ağacı kuralları çevirdikten sonra yani ayrı ayrı aslında şey reduce terör pruning'e de benzeyen bir şey.
+
+151
+00:23:31,442 --> 00:23:42,962
+ayrı ayrı başarıları hesaplıyorsunuz. Ondan sonra başarıları büyükten küçüğe dizip belli bir bölümünü alarak ağacınızı oluşturuyorsunuz.
+
+152
+00:23:43,262 --> 00:23:53,604
+Zaten burada da most frequent use method demiş. Yani çok kullanılan bu da yöntemlerden birisi.
+
+153
+00:23:54,182 --> 00:23:57,923
+Şimdi toparlayacak olursak karar ağaçlarıyla ilgili bilgileri.
+
+154
+00:23:57,923 --> 00:24:18,903
+Karar ağaçları aslında en öncelikli şeyi özellikle lineer ayrılamayan sınıflar için karar sınırlarının çok efektif olarak oluşturabilmesini sağlıyor.
+
+155
+00:24:19,002 --> 00:24:24,222
+Bunu görmüştük dersin başında. Şöyle bir bulayım onu size.
+
+156
+00:24:30,036 --> 00:24:33,734
+Yani şöyle şeyler, sınırlar göstermiştik size.
+
+157
+00:24:34,234 --> 00:24:40,275
+Yani mesela böyle sınırı çok belli olmayan bir, burada gördüğünüz gibi lineer de ayrılmıyor,
+
+158
+00:24:40,375 --> 00:24:44,255
+non-lineer ayırmak için bağıntılarla bunu sağlamamız gerekecek vesaire.
+
+159
+00:24:44,674 --> 00:24:49,575
+Gayet güzel karar ağacında bunu kontrollerle bölebilir hale geliyorsunuz.
+
+160
+00:24:49,635 --> 00:24:56,914
+Bu şimdi çok güzel bir özellik ve karar ağacının da başarısının yüksek olmasının önemli sebeplerinden birisi bu.
+
+161
+00:24:56,914 --> 00:25:23,494
+Birincisi bu karar ağacı için önemli bir şey, avantaj. İkincisi karar ağaçlarının kategorik özelliklerle rahat çalışabiliyor olması. İleriki haftalarda şeyi göreceğiz. Kategorik olan özelliklerin kategorik olmayan özellikler haline çevrilmesinin nasıl olduğunu göreceğiz.
+
+162
+00:25:23,494 --> 00:25:40,734
+Oradaki problemleri vesaire göreceğiz. Burada doğrudan kategorik özelliklerle çalışabiliyor olmak güzel bir şey. Sürekli olan özellikler için mesela işte ne bileyim sıcaklık değeri 20'den 50'ye kadar gidiyor falan.
+
+163
+00:25:40,734 --> 00:25:44,414
+eşik seviyeleriyle hareket edebilmek güzel bir özellik.
+
+164
+00:25:44,474 --> 00:25:50,095
+20'den büyükse mesela sıcaklık 20'den büyükse oyna değilse oynama vesaire gibi
+
+165
+00:25:50,095 --> 00:25:57,875
+eşik seviyeleri kullanarak da sürekli değer alan özellikleri kullanabilmemiz önemli bir şey.
+
+166
+00:25:59,335 --> 00:26:06,075
+Kurallara çevrilebilmesi, bu şekilde işte budamalarla vesaire parazitlerden kurtulabilmesi
+
+167
+00:26:06,076 --> 00:26:11,155
+Bunlar önemli ve iyi özellikler ve şey de kolay.
+
+168
+00:26:11,615 --> 00:26:20,855
+Bir karar ağacını bir kere oluşturduktan sonra sizin de algoritma derslerinden falan hatırlayacağınız üzere ağaçların en önemli avantajlarından birisi.
+
+169
+00:26:21,336 --> 00:26:27,215
+Ağacın bir tarafından gidiyorsan öbür tarafı tamamen değerlendirmeden elemişsin demektir.
+
+170
+00:26:27,215 --> 00:26:41,654
+Yani burada mesela işte diyelim ki şöyle bir ağacınız varsa siz Outlook Sunny'si artık bu taraflara hiç bakmıyorsunuz demektir.
+
+171
+00:26:42,056 --> 00:26:45,454
+Bu da özellikle büyük ağaçlarda çok önemli bir avantaj.
+
+172
+00:26:45,635 --> 00:26:54,695
+Yani bir grup bilgiyi hiç şey yapmadan değerlendirmeden eleyebiliyor olmak hız açısından çok önemli bir avantaj.
+
+173
+00:26:54,695 --> 00:27:14,734
+Bunlar şeylerin avantajları. En temel bence dezavantajları da birincisi çok büyük karar ağaçlarının işte kurala çevrilmesi, anlaşılması vesaire zor olması.
+
+174
+00:27:14,734 --> 00:27:41,134
+İkincisi ağaca yeni örnekler geldiğinde ağacın yeniden oluşturma ihtiyacının olması yani yeni örneğe göre ağaca şey yapmaya çalışmak işte yeni düğüm eklemeye çalışmak veya yani şey yeni düğüm demeyeyim de aşağıya doğru büyütmeye çalışmak sıkıntılı genellikle incremental olamayan bir yapısı var karar ağaçlarının.
+
+175
+00:27:41,134 --> 00:27:48,115
+Ve yine bir dezavantajlarından birisi ki ben bunun çok da önemli bir dezavantaj olduğunu düşünmüyorum.
+
+176
+00:27:49,694 --> 00:27:56,134
+Özelliklerinizin sayısının bilinen belli bir sayı olması.
+
+177
+00:27:56,255 --> 00:27:58,934
+Ona göre çünkü karar ağacın oluşacak.
+
+178
+00:27:59,075 --> 00:28:06,015
+Yani karar ağacında biliyorsunuz her şey o düğümler özellikler olduğu için her şey düğümlerle ilgili.
+
+179
+00:28:06,015 --> 00:28:11,375
+Dolayısıyla özelliklerinizin de fix uzunlukta olması gerekiyor.
+
+180
+00:28:11,454 --> 00:28:14,934
+Yani 8 özellik varsa 8 özellik için iş yapıyor gibi.
+
+181
+00:28:15,454 --> 00:28:16,934
+Bunlar da dezavantajları.
+
+182
+00:28:17,934 --> 00:28:27,234
+Sonuçta karar ağaçları çok sık kullanılan çok başarılı yöntemlerden birisi.
+
+183
+00:28:27,335 --> 00:28:29,075
+Buraya kadar sormak istediniz bir şey var mı?
+
+184
+00:28:33,714 --> 00:28:35,714
+Anlaşılmayan bir şey var mı?
+
+185
+00:28:43,284 --> 00:28:47,284
+Peki.
+
+186
+00:28:47,284 --> 00:29:02,163
+Peki. O zaman bugün aslında şeyden bahsedeceğim. Nedir? Bayes teoriminden bahsedeceğim size.
+
+187
+00:29:08,242 --> 00:29:09,282
+ve şişesine.
+
+188
+00:29:28,914 --> 00:29:30,954
+Şu anda görüyor musunuz filleri?
+
+189
+00:29:32,655 --> 00:29:32,914
+Evet.
+
+190
+00:29:32,914 --> 00:29:33,075
+Tamam.
+
+191
+00:29:35,674 --> 00:29:35,994
+Şimdi
+
+192
+00:29:35,994 --> 00:29:38,615
+Bayes teoremi de yani
+
+193
+00:29:38,615 --> 00:29:41,234
+benim makine öğrenmesinde
+
+194
+00:29:41,234 --> 00:29:43,315
+öğrenmek için seçtiğim
+
+195
+00:29:43,315 --> 00:29:44,815
+modeller
+
+196
+00:29:44,815 --> 00:29:47,194
+genellikle en çok başarılı
+
+197
+00:29:47,194 --> 00:29:49,256
+olan ve kullanılan modellerin
+
+198
+00:29:49,256 --> 00:29:51,275
+derste anlatmayı seçiyorum.
+
+199
+00:29:51,414 --> 00:29:53,154
+Çünkü aslında yani çok sayıda
+
+200
+00:29:53,154 --> 00:29:55,035
+artık öğrenme modeli var ama
+
+201
+00:29:55,035 --> 00:29:56,075
+en başarılarını
+
+202
+00:29:56,075 --> 00:29:58,375
+seçmeye çalışıyorum.
+
+203
+00:29:58,375 --> 00:30:00,714
+ders için. Şimdi burada
+
+204
+00:30:00,714 --> 00:30:01,935
+diyelim ki
+
+205
+00:30:01,935 --> 00:30:04,694
+iki tane sınıfımız var.
+
+206
+00:30:04,795 --> 00:30:06,494
+Filler ve ayılar olmak üzere
+
+207
+00:30:06,494 --> 00:30:08,515
+iki tane sınıfımız var. Biz şunu
+
+208
+00:30:08,515 --> 00:30:10,474
+öğrendik. Eğitmenli öğrenmede
+
+209
+00:30:10,474 --> 00:30:12,256
+bizim özelliklerimiz var
+
+210
+00:30:12,256 --> 00:30:14,795
+ve etiketlerimiz var.
+
+211
+00:30:15,674 --> 00:30:16,414
+Dolayısıyla bizim
+
+212
+00:30:16,414 --> 00:30:17,835
+yapmak istediğimiz şey
+
+213
+00:30:17,835 --> 00:30:20,515
+verilen özellikler için
+
+214
+00:30:20,515 --> 00:30:22,474
+bilinmeyen bir örneğin ne olduğunu
+
+215
+00:30:22,474 --> 00:30:24,515
+belirlemeye çalışmak. Şimdi bunu
+
+216
+00:30:24,515 --> 00:30:26,434
+yapmak için iki tür
+
+217
+00:30:26,434 --> 00:30:28,075
+sınıflandırıcı var.
+
+218
+00:30:28,375 --> 00:30:33,075
+Birincisi diskriminatif klasifierler.
+
+219
+00:30:33,075 --> 00:30:47,635
+Diskriminatif klasifierlerde olan şey şu, bilinmeyen örneğin özellikleri verildiğinde bunun hangi sınıfa dahil olacağı bulunmaya çalışıyor.
+
+220
+00:30:47,734 --> 00:30:54,255
+Yani özelliklerden gidilerek hangi sınıfa ait olduğunu bulunmaya çalışılıyor.
+
+221
+00:30:54,255 --> 00:31:10,276
+İşte k-yakın komşuluk, yapay nöronaları, lineer regresyon vs. bunlar şey hatta şu anda gördüğümüz karar ağaçları bunlar hep generatif klasifierler.
+
+222
+00:31:10,276 --> 00:31:33,215
+Yani yapmaya çalışılan şey, şeyler verildiğinde özellikler, pardon diskriminatif klasifierler, burada yapılmaya çalışılan şey örneklerin özellikleri verildiğinde buradan şeyi öğrenmek, özelliklere karşılık düşen sınıfı öğrenmek,
+
+223
+00:31:33,214 --> 00:31:40,894
+daha sonra bilinmeyen bir örnek geldiğinde o örneklerin özelliği için hangi sınıfa ait olduğunu karar vermek.
+
+224
+00:31:41,214 --> 00:31:50,276
+Dediğim gibi yapay naronağları, diner, regresyon, karar ağaçları, kaingin konşuluk vs. bildiğimiz pek çok yöntem aslında bu şekilde çalışıyor.
+
+225
+00:31:50,954 --> 00:31:57,694
+İkinci tür öğrenme yöntemlerinin ikinci türü de generatif klasifierler.
+
+226
+00:31:57,694 --> 00:32:03,615
+Generatif klasifierlerde mantıktan tersi şekilde çalışıyor.
+
+227
+00:32:04,576 --> 00:32:06,595
+Oradaki mantık şu şekilde.
+
+228
+00:32:08,155 --> 00:32:09,875
+Şey için özür dilerim.
+
+229
+00:32:11,755 --> 00:32:15,694
+Mesela fil sınıfı için diyelim ki sizin şeyleriniz var.
+
+230
+00:32:17,355 --> 00:32:20,276
+Bilinmeyen bir örneğe ait özellikleriniz var.
+
+231
+00:32:20,276 --> 00:32:26,996
+İşte diyorsunuz ki boyu şu kadar ağırlığı bu kadar rengi de böyle olan bir hayvan gördüm.
+
+232
+00:32:26,996 --> 00:32:29,236
+bu fil midir, ayı mıdır diyorsunuz.
+
+233
+00:32:30,115 --> 00:32:31,375
+Cenevatif klasifierler
+
+234
+00:32:31,375 --> 00:32:32,455
+şöyle çalışıyorlar.
+
+235
+00:32:34,276 --> 00:32:35,516
+Hayvan fil ise
+
+236
+00:32:35,516 --> 00:32:38,955
+boyu böyleyken
+
+237
+00:32:38,955 --> 00:32:41,174
+işte ağırlığı şöyleyken, rengi de
+
+238
+00:32:41,174 --> 00:32:42,736
+böyleyken
+
+239
+00:32:42,736 --> 00:32:45,276
+sınıfın fil
+
+240
+00:32:45,276 --> 00:32:46,736
+sınıfı olma
+
+241
+00:32:46,736 --> 00:32:48,875
+olasılığı nedir?
+
+242
+00:32:50,474 --> 00:32:51,035
+Hayvan
+
+243
+00:32:51,035 --> 00:32:52,996
+şey ise, ayı ise
+
+244
+00:32:52,996 --> 00:32:55,315
+bu bilgiler için
+
+245
+00:32:55,315 --> 00:32:56,414
+olasılık nedir?
+
+246
+00:32:56,996 --> 00:32:59,996
+Yani burada yapılmaya çalışılan şey...
+
+247
+00:33:00,480 --> 00:33:18,980
+elinizdeki örneğin hangi sınıfa daha çok benzediğini bulmaya çalışmak. Bakın öbüründe yönümüz şu şekildeydi. Örneğin özellikler verildi. Siz buradan tak diye gidiyordunuz. İşte diyordunuz ki bu fildir diyordunuz, bitiriyordunuz.
+
+248
+00:33:18,980 --> 00:33:29,378
+Burada ise yapılmaya çalışılan şey şu, verilen özellikler için sınıftan yola çıkarak geri gidiyorsunuz.
+
+249
+00:33:29,439 --> 00:33:37,500
+Bu sınıf için acaba elimdeki örneğin bu sınıfa benzemesi ne kadar benziyor?
+
+250
+00:33:37,500 --> 00:33:41,398
+İşte bu sınıf için elimdeki örnek bu sınıfa ne kadar benziyor?
+
+251
+00:33:41,798 --> 00:33:48,798
+Hangi sınıfa daha çok benziyorsa o zaman benim örneğim bu sınıfa aittir diyorsunuz.
+
+252
+00:33:48,798 --> 00:34:03,298
+Yani burada generatif klasifier'larda yapılan şey Y sınıfından X özelliklerinin olasılığını verilen Y için X özelliklerinin olasılığını bularak ilerlemek.
+
+253
+00:34:03,298 --> 00:34:16,498
+Burada en çok bilinen yöntem bunun için Bayes yöntemi. Bayes'inle birlikte Nayib Bayes'de var ve Hidden Markov model de aynı şekilde çalışıyor.
+
+254
+00:34:16,498 --> 00:34:29,679
+Yani bilinmeyen bir örnek için sınıftan geriye doğru giderek elinizdeki örneğin hangi sınıfa daha çok benzediğini bulmaya çalışıyor.
+
+255
+00:34:30,480 --> 00:34:40,418
+Tekrar düşünecek olursak diskriminatiflerde şey yapılıyor doğrudan verilen özellikler için şu sınıfa aittir deniyor.
+
+256
+00:34:40,418 --> 00:34:48,298
+jeneratiflerde ise sınıftan yola çıkarak o sınıfa ne kadar benzediği bulunmaya çalışılıyor.
+
+257
+00:34:49,018 --> 00:35:03,798
+Şimdi burada şeyi keseceğim, slide üzerinden anlatmayı keseceğim, not şey yaparak, kendimce tahta kullanarak anlatmaya çalışacağım.
+
+258
+00:35:03,798 --> 00:35:32,699
+o yüzden o şey de değiştirmem gerekiyor bilgisayarı da değiştirmem gerekiyor. Bu noktada ara verelim bir 10 dakika vereyim yani birinci ders arasını şimdi vereyim. Öbür bilgisayara geçeceğim çünkü. Nasılsa 40 dakika falan gibi olduğu bir ara veriyorum 10 dakika. 10 dakika sonra tekrar devam edeceğim. Olur mu? Tamam. Çok teşekkürler.
+
+259
+00:35:33,798 --> 00:35:39,898
+buradan kapatıyorum öbür taraftan tekrar öteceğim. Yani siz bilmiyorum bağlı durabiliyor musunuz nasıl olacak onu bilmiyorum.
+
+260
+00:48:31,508 --> 00:48:32,266
+biliyor musunuz?
+
+261
+00:48:36,563 --> 00:48:39,563
+11'e inmiş şey kısmı.
+
+262
+00:48:43,563 --> 00:48:51,563
+Hocam merhaba. Ben de şey, Çiğet'ten yazıyordum. Sanırım koptuk bir ara, baya düştük ben tekrar girdim.
+
+263
+00:48:53,563 --> 00:48:56,563
+Hocam başka linkler de var galiba.
+
+264
+00:48:56,563 --> 00:48:57,563
+Nasıl?
+
+265
+00:48:57,563 --> 00:49:04,563
+Bizi attı, daha sonra biz bu Zoom linkine girdik. Siz başka bir yerde girdiniz anladığım kadarıyla.
+
+266
+00:49:04,563 --> 00:49:08,563
+Başka bir yer ne noktadan beri bu böyle?
+
+267
+00:49:08,563 --> 00:49:11,563
+15-20 dakikada falan galiba
+
+268
+00:49:11,563 --> 00:49:15,563
+Aa kaydet gitmeden ne oldu bu?
+
+269
+00:49:15,563 --> 00:49:20,563
+Şu an mesela sizin ekranınızı göremiyorum eğer ekran paylaştıysanız
+
+270
+00:49:20,563 --> 00:49:21,563
+Öyle mi?
+
+271
+00:49:21,563 --> 00:49:24,563
+Evet sadece sesinizi duyuyorum. Az önce hiç sesinizi duyamıyorduk
+
+272
+00:49:24,563 --> 00:49:29,563
+Az önce sesi duyamıyordun şimdi de ekranı mı göremiyorsun? Bir dakika
+
+273
+00:49:29,563 --> 00:49:31,563
+Az önce ikisi de yoktu. Şu an sesiniz geldi
+
+274
+00:49:31,563 --> 00:49:35,943
+Tamam ne oldu acaba ya?
+
+275
+00:49:39,943 --> 00:49:41,443
+Şu anda duyuyor musun?
+
+276
+00:49:43,623 --> 00:49:44,784
+Şu an siz sizi duyuyoruz.
+
+277
+00:49:44,802 --> 00:49:48,202
+Evet hocam duyuyoruz. Görüntü de geliyor sanırım şu an.
+
+278
+00:49:52,302 --> 00:49:56,963
+Ben de diyorum ben konuşuyorum falan kimse bir ses çıkarmıyor.
+
+279
+00:49:56,963 --> 00:50:03,443
+Hatta dedim ki neredesiniz falan dedim bir noktada mesela bu ekranı görmüş müydünüz?
+
+280
+00:50:03,443 --> 00:50:07,043
+Hocam en son örneğe tam başladığımız zaman beni attı.
+
+281
+00:50:09,943 --> 00:50:11,104
+Şurada mı attı?
+
+282
+00:50:12,184 --> 00:50:12,443
+Evet.
+
+283
+00:50:12,663 --> 00:50:13,523
+Evet hocam burada.
+
+284
+00:50:13,543 --> 00:50:17,003
+Örneğini başında attı hocam. Bu örneği baştan çözersek çok iyi olur.
+
+285
+00:50:17,663 --> 00:50:22,923
+Baştan çözerim de bir dakika. Geriye kaç kişi gelebilmiş? Ha on üç kişi gözüküyor.
+
+286
+00:50:23,202 --> 00:50:26,163
+Peki ne olur? Sizler mi dışarı attı sizi?
+
+287
+00:50:26,963 --> 00:50:32,363
+Aynen hocam muhtemelen şimdi sabah 2-3 tane farklı tabletten ve bilgisayardan link açtınız ya
+
+288
+00:50:32,363 --> 00:50:36,742
+3 tane açmadım hayır canım 2-3 tane açmadım ben
+
+289
+00:50:36,742 --> 00:50:46,682
+kapatıp çıktım kapatıp çıktım hatta şey dedi ya [öğrenci] kapatıp çıktığınız için kaydedemedi ilk anlattıklarınızı dedi
+
+290
+00:50:46,682 --> 00:50:54,202
+sabahleyin anlattım oradan kapattım yani kapatıp başka tarafta tekrar açtım 2-3 link falan yok
+
+291
+00:50:54,202 --> 00:51:21,103
+Yok yok. Şey diyeceğim şimdi şöyle. Şu an sadece fikir yürütüyorum. Online Yıldız'da biz hemen katıl dediğimiz zaman, derse katıl dediğimiz zaman sabahki ilk açtığınız yayına bağlanıyor olabilir. Bir kısım arkadaşı oraya bağlanmıştır. Bir kısım arkadaş da o yayını kapatıp daha sonra bilgisayardan açmıştınız ya. İkinci yayına bağlanmıştır diye tahmin ediyorum. Bir kısım arkadaşlar diğer tarafta bekliyordur diye tahmin ediyorum ama bir fikrim yok.
+
+292
+00:51:21,103 --> 00:51:27,383
+Yok ben tekrardan girdim. Tekrar katıla bastım. Buraya girdik. Yani o link yine buraya yönlendiriyor galiba.
+
+293
+00:51:27,603 --> 00:51:32,842
+Ama biz katıldırdıktan sonra bir 10-15 dakika da bekliyoruz. Hani hocanın ekranı meselesini duymuyorduk. Ben katıldım mesela.
+
+294
+00:51:32,842 --> 00:51:40,983
+Hayır ama katıldım bir dakika. Katıldım. Bir saniye yanlış yere bastım. Katıldım şunları gördün ama değil mi sen?
+
+295
+00:51:41,523 --> 00:51:44,583
+Bu kısmı gördük. Zaten bizi şeyde atlıyor. Örneğe başlarken atmıştı.
+
+296
+00:51:44,784 --> 00:51:45,443
+Örnekle atmıştı.
+
+297
+00:51:45,443 --> 00:51:50,963
+Tamam yani buraya girdiniz aslında. Burada bir sıkıntı olmadı. Değil mi?
+
+298
+00:51:51,103 --> 00:51:56,103
+Yok hocam sanırım siz de düştünüz ama hani şey fark etmediniz bizim olmadığımızı
+
+299
+00:51:56,963 --> 00:51:58,302
+Iııı
+
+300
+00:51:58,515 --> 00:52:20,175
+herhalde. Çünkü ben yukarıda şeyi görüyorum, o kaydediyordu. Bir daha zoom'a geri döndüm, şeyden çıktım şimdi. O kaydediyor, kaydettiğini görüyordum ben. Aslında nasıl oldu ben de bilmiyorum. Şey oldu belki, yani ne bileyim okuluna falan mı bağlantı ama ne yapıldığını ben bilmiyorum. Çünkü ben şeyi görüyorum, bir tek onu görebiliyorum.
+
+301
+00:52:20,175 --> 00:52:30,356
+full screen yaptığım için kayıt ettiğine dair ekranı görüyorum. O yüzden ben size de şey diyordum, chatte yazdığınızda onları göremiyordum.
+
+302
+00:52:30,596 --> 00:52:38,454
+Çünkü full screen yapıyorum rahat yazabilmek için. Ama yukarıda kaydı görüyordum. Neyse ne olduysa şu anda kaç kişi var?
+
+303
+00:52:39,934 --> 00:52:49,135
+13 kişi var. Bir tarafa mesaj yazmak falan. Ha bir şey grubu kurmuştunuz galiba. WhatsApp grubu var değil mi?
+
+304
+00:52:50,175 --> 00:53:15,416
+var mıydı? Yoktu galiba. Ben yokum WhatsApp durumda. Neyse ama 13 kişi bağlanabildiğine göre bakayım şimdi [öğrenci] bağlanamamış. [öğrenci] bağlanamıyorsa şey durum kötü. [öğrenci] çünkü şeyde olduğu için, üzerinde olduğu için o genelde ne yapsam olur acaba ya hay Allah. [öğrenci] ulaşabilirsiniz ona bir sorun. Muhtemelen onlar.
+
+305
+00:53:15,416 --> 00:53:30,435
+[öğrenci] bende erişim bilgileri yok yani telefonu falan öyle bir erişim bilgileri yok. Nasıl olacak bilmiyorum. Kaydediyor şu anda ama. 13 kişi var. Şimdi sabah 27 kişiyle başlamıştık.
+
+306
+00:53:30,515 --> 00:53:37,614
+İsterseniz hocam mail listesi varsa o zaman yapılacak maksimum şeydir. Gesis'ten falan sınıf listesine direkt bu linki mail atabilirsiniz hocam.
+
+307
+00:53:37,614 --> 00:53:44,074
+Linki değildir. Sonuçta onlar o linki... Siz görmüyor musunuz ki o linki?
+
+308
+00:53:44,074 --> 00:53:49,074
+Aslında evet hocam. Ben o linkten tekrar girdiğimde buraya bağlanıyor aslında. Orada bir problem yok.
+
+309
+00:53:50,255 --> 00:53:56,695
+Hocam şöyle bir problem var. Şimdi siz örneğe ilk başladığınız zaman beni attı direkt. Sistem otomatik.
+
+310
+00:53:56,695 --> 00:54:02,155
+Sonra ben katıl dediğim zaman bağlandım. Ama mesela sizin anlatınızı göremiyordum.
+
+311
+00:54:02,155 --> 00:54:12,435
+Sadece bu boş bir ekrana bakıyordum. Sesinizi de duyamıyordum. Hani sizi de göremiyordum. Birkaç tane arkadaş hatta şey yazmıştı. Hocalar acaba farklı bir linktene nasıl ulaşabiliriz gibi.
+
+312
+00:54:13,635 --> 00:54:31,435
+Ben o ara işte yukarıda kayıdı da görüyordum işin kötüsü. Yani kayıt ayrı bir şey olarak görüyor ama şu anda mesela dediğim gibi sabah derste 27 kişi vardı. Şu anda 13 kişi var. Yani şeyi de biliyorum insanlar bazen dinlemiyorlar ama dinlemeseler bile en azından şeyi koruyorlar.
+
+313
+00:54:32,155 --> 00:54:35,555
+hay Allah ne yapsam acaba?
+
+314
+00:54:38,074 --> 00:54:39,435
+Arkadaşlar görür belki.
+
+315
+00:54:40,096 --> 00:54:40,414
+Nasıl?
+
+316
+00:54:41,074 --> 00:54:42,735
+Gisizten mail atın herkese.
+
+317
+00:54:43,396 --> 00:54:56,795
+Tamam bir saniye o zaman siz bir iki dakika bekleyin arkadaşlar şu anda bir iki dakika bekleyin hemen ben bir gisizten mail gönderirim çünkü bütün derste şey olmasın gitmesin yani.
+
+318
+00:54:56,795 --> 00:55:19,096
+belki bilmiyorum yani zoom'dan kaynaklı bir şey olmaz da demek ki ben buradan bu dersi aldım bir tarafı kapatıp bir tarafı açarsan her şey alt üst oluyor. O eskiden de öyleydi de zoom'da değildi yani zoom'da böyle bir problem yok. Uzen'da öyle kapatıp tekrar açınca problem olurdu.
+
+319
+00:55:19,096 --> 00:55:25,756
+Hocam Zoom'da aslında şey yapmanız lazımdır. Sabah dersi kapatırken başka birisini host yapır.
+
+320
+00:55:26,536 --> 00:55:31,956
+Ya kapatmam. Yani benim aklıma o gelmedi öyle bir şey olabileceğim.
+
+321
+00:55:33,556 --> 00:55:40,615
+Yani niye kapatayım bir daha? Ben rahat edeyim diye kapatmıştım. Kapatmam bir daha öyle bir durumda.
+
+322
+00:55:40,615 --> 00:55:43,994
+Onu host yap öbürünü bilmem ne yap. Bir de onlarla.
+
+323
+00:55:43,994 --> 00:55:49,494
+Aynı linkten mi girdiniz?
+
+324
+00:55:51,668 --> 00:56:03,247
+arkadaşlar. Hocam direkt derse katıl dedim ben ve işte boş bir ekran'a bakıyordum. Bir arkadaşımla konuştum, başka bir host açıkmış, orada öğrenciler falan varmış, buraya haber vereyim falan dedi.
+
+325
+00:56:03,987 --> 00:56:14,787
+Bilmiyorum. Başka bir host, işte ben bir tane görüyorum. Hocam geldik, diğer şuna kapatmak. [öğrenci] başımıza ne geldi?
+
+326
+00:56:14,787 --> 00:56:19,668
+Evet hocam biz orada bekliyoruz 10 kişiyi
+
+327
+00:56:19,668 --> 00:56:26,387
+Arka tarafta da farklı bir sınıf gözükmüyor sizin için
+
+328
+00:56:26,387 --> 00:56:30,927
+Neyse bir bant var arkadaşlar herhalde
+
+329
+00:56:30,927 --> 00:56:33,726
+Ben çünkü kapattım sonra tekrar bağlandım
+
+330
+00:56:33,726 --> 00:56:37,467
+Önce düzgün bir şekilde şeyden çıktım
+
+331
+00:56:37,467 --> 00:56:38,967
+Ne olduğunu da söyleyeyim size
+
+332
+00:56:38,967 --> 00:56:40,287
+Zoom'dan
+
+333
+00:56:40,287 --> 00:57:05,146
+şey o end session falan gibi bir şey var ya herkes için kapatıyorsunuz. Bütün herkes için kapattım ki ortalık karışmasın diye. Herkes için kapattım. Ondan sonra şey yaptım yani öbür taraftan tekrardan açtım. Benim tahminim tekrardan açtığımda hepinizin aynı linkten tekrar bağlanabileceğimiz yönündeydi. Ama bir ortalık karışmış anladığım kadarıyla.
+
+334
+00:57:05,146 --> 00:57:06,927
+Başta bağlandık zaten
+
+335
+00:57:06,927 --> 00:57:11,086
+Onu da anlamadım ki ben
+
+336
+00:57:11,086 --> 00:57:15,247
+Bağlandıysanız hele hiç kopmaması gerekiyordu
+
+337
+00:57:15,247 --> 00:57:17,407
+Siz düştünüz hocam
+
+338
+00:57:17,407 --> 00:57:19,567
+Sistem otomatik hostluğu bana verdi
+
+339
+00:57:19,567 --> 00:57:22,387
+Biz de sınıf kapanmasın diye bekledik ama
+
+340
+00:57:22,387 --> 00:57:25,787
+Onunla ilgili de şöyle bir şey söyleyeyim
+
+341
+00:57:25,787 --> 00:57:27,007
+Ben düştüğümü anlamadım
+
+342
+00:57:27,007 --> 00:57:29,106
+Çünkü o kayıt şeyi var ya
+
+343
+00:57:29,106 --> 00:57:30,146
+Kırmızı
+
+344
+00:57:30,146 --> 00:57:32,007
+Kayıt da yanıyor sürekli
+
+345
+00:57:32,007 --> 00:57:32,987
+O hiç kapanmadı
+
+346
+00:57:32,987 --> 00:57:34,827
+Ben düştüğümü anlamadım
+
+347
+00:57:34,827 --> 00:57:35,827
+bir noktada hiç ses çıkmayınca soru sordum çünkü hiç ses çıkmayınca full screen'di döndüm farklı spotlara baktım birden böyle şey ses gelmeye başladı hocam biz yoktuk geri geldik falan diye neyse başımıza bir macera geldi ben şu anda şey geri dönüyorum o zaman biz şeyde kaldık COVID verisi üzerine örnek
+
+348
+00:58:04,828 --> 00:58:19,168
+Başta anlatırsanız çok iyi olur. Anlatacağım ama şey bulamıyorum bir seferde. Dur bir dakika. Stop share diyeyim önce değil mi? Bir dakika. Stop share diyeyim. Şimdi tekrar başlatıyorum şehri.
+
+349
+00:58:28,403 --> 00:58:34,623
+şimdi görüyor mu herkes? Arkadaşlar, ekranımı görüyor musunuz? Ben göremiyorum hocam.
+
+350
+00:58:35,364 --> 00:58:38,842
+Ben gelmedi. Bana da gelmedi hocam.
+
+351
+00:58:38,842 --> 00:58:43,063
+Share content, screen, start dedi.
+
+352
+00:58:46,868 --> 00:59:14,128
+Hadi bakalım şimdi bir daha geliyorum. Geldi mi? Şu anda görür müsünüz? Evet. Evet. Şu anda geldi hocam. Görüyoruz ekranı. O zaman şimdi örnek üzerinden anlatıyordum. Örnek de fena karışmış durumda. Çünkü üzerimde yaza yaza anlattım. Ben şöyle yapıp tekrar anlatayım size. Bir dakika. Clear ettim bütün sayfayı.
+
+353
+00:59:14,128 --> 00:59:24,408
+bilir ettim. Ondan sonra şimdi tekrar anlatayım size. Şimdi konu şuydu, örnekte yaptığım şey şuydu.
+
+354
+00:59:24,408 --> 00:59:26,527
+Efendim?
+
+355
+00:59:34,034 --> 00:59:35,574
+Arkadaşlar orada mısınız?
+
+356
+00:59:36,996 --> 00:59:37,775
+Ben de yapacağım.
+
+357
+00:59:38,114 --> 00:59:39,295
+Evet.
+
+358
+00:59:39,855 --> 00:59:41,914
+Buradayım. Belki mikrofonu açık kalacak.
+
+359
+00:59:42,655 --> 00:59:48,775
+Mikrofonu mu açık kalacak? Tamam. Peki tamam arkadaşlar. O zaman geri dönüyorum. Şimdi soru şöyle bir soruydu.
+
+360
+00:59:48,775 --> 00:59:59,876
+Dedim ki bir toplulukta bulunan kişilerin COVID olma olasılığı binde sekizmiş. Böyle bir şey varmış.
+
+361
+00:59:59,876 --> 01:00:10,235
+Bu toplulukta COVID-ken test sonucu pozitif çıkanların olasılığı %98'miş
+
+362
+01:00:15,027 --> 01:00:37,086
+%98'miş. Şey olanların olasılığı gerçekten COVID değilken sonucuda negatif çıkanların olasılığı %97'miş. Bir kişi test yaptırıyor, test pozitif çıkıyor.
+
+363
+01:00:37,086 --> 01:01:02,748
+Covid mi? Covid değil mi? Size sorulan soru bu. Şimdi buradan olayı şöyle baştan başlatıyorum. İki tane sınıfımız var. Birisi şeyler. Şimdi videolarımızı kapatabilir misiniz? Bana sesler geliyor sürekli çünkü. Kapatırsanız sevineceğim. Arada yalnız ses verin yine de siz bana.
+
+364
+01:01:02,747 --> 01:01:16,146
+bize sorulan iki tane sınıf var. Birisi COVID olanlar, bir de olmayanlar. Test pozitif çıktığına göre biz buna COVID mi demeliyiz, COVID değil mi demeliyiz? Bu soruluyor. Soru bu.
+
+365
+01:01:16,146 --> 01:01:32,726
+Önce bir takım bilgileri çıkartalım. Eğer bir topluluktaki binde 8 kişi COVID oluyor ise binde 992 kişi de sağlam demektir.
+
+366
+01:01:32,726 --> 01:01:51,527
+Eğer COVID olanların %98'inin testi pozitif çıktıysa, yani gerçekten COVID olanların bu aslında true pozitif, COVID gen testin pozitif çıkması
+
+367
+01:01:51,527 --> 01:01:58,726
+COVID olanların %98'inin testi pozitif çıktıysa demek ki
+
+368
+01:02:04,979 --> 01:02:06,579
+Covid-ken pozitif çıktı.
+
+369
+01:02:09,519 --> 01:02:11,338
+Covid değilken
+
+370
+01:02:17,619 --> 01:02:35,800
+negatif çıkanlar %97 olduğuna göre COVID değilken pozitif çıkanlar da %3 olacak. COVIDken pozitif çıkanlar %98 olduğuna göre COVIDken negatif çıkanlar da %2 olacak.
+
+371
+01:02:35,800 --> 01:02:52,219
+Şimdi elimdeki durumlar bunlar değil mi? Bir kişi COVID-ken %98 olasılıkla pozitif çıkıyorsa COVID-ken %2 olasılıkla da negatif diyeceğiz biz buna demek ki. Öbürü de tam tersi. Şimdi buraya kadar bir sıkıntı var mı?
+
+372
+01:02:57,266 --> 01:02:57,847
+yok hocam.
+
+373
+01:02:57,847 --> 01:02:58,106
+var mı?
+
+374
+01:02:58,547 --> 01:02:59,766
+hayır
+
+375
+01:02:59,766 --> 01:03:09,547
+şimdi bize sorulan soru, şunu bulmamız isteniyor, testin sonucu, mikrofonu kapatır mısın?
+
+376
+01:03:13,524 --> 01:03:16,422
+Kuşu olan arkadaş, mikrofonu kapatabilir mi?
+
+377
+01:03:20,275 --> 01:03:35,295
+pozitifse COVID mi değil mi bunu bulmaya çalışıyoruz. Şimdi bunu şeyle bulmaya çalışacağız. Az önceki şurada yaptığımız şekilde şöyle bulmaya çalışacağız. Onu yazayım.
+
+378
+01:03:35,295 --> 01:03:48,715
+art maksimum diyeceğiz. İki tane sınıfımız var. Covid ve Covid olmak üzere iki tane sınıfımız var. Diyeceğiz ki P diyeceğiz.
+
+379
+01:03:53,972 --> 01:04:02,051
+COVID-ken pozitif olma olasılığı çarpı pozitifin olasılığı P
+
+380
+01:04:02,051 --> 01:04:09,891
+COVID-pozitifken COVID-değil olma olasılığı pardon
+
+381
+01:04:15,444 --> 01:04:36,323
+negatifken, pozitifken COVID olmama olasılığı çarpı çok özür dilerim arkadaşlar, şuraya yanlış yazdım. COVID olmama olasılığı diyeceğim. Şimdi ben bunları hesaplayıp hangisinin değeri daha büyükse onu alacağım. Yapmam gereken şey bu.
+
+382
+01:04:36,323 --> 01:04:42,203
+Şimdi o zaman pozitifken COVID olma olasılığı bizim için neye eşitmiş?
+
+383
+01:04:58,034 --> 01:04:59,055
+bu da
+
+384
+01:05:25,427 --> 01:05:53,768
+Bu hesabı yaparken payda da iki tarafta da P pozitif olduğu için bunu eleyebilirim. Ben o zaman bir pozitifken COVID olma olasılığı çarpı COVID olma olasılığına bakacağım. Bir de pozitifken COVID olmama olasılığı çarpı COVID olmama olasılığına bakacağım. Şimdi bunlar benim elimde var. Pozitifken COVID olma olasılığı, pardon ya çok özür dilerim arkadaşlar. Yanlış yazdım şurayı. Zaten soru o.
+
+385
+01:05:59,411 --> 01:06:00,032
+şöyle
+
+386
+01:06:10,418 --> 01:06:13,958
+çok özür dilerim. Zaten sorulan şey o yanlış yazdım şurayı.
+
+387
+01:06:14,739 --> 01:06:15,418
+Düzeltiyorum.
+
+388
+01:06:28,148 --> 01:06:40,148
+Şimdi bana sorulan pozitifken COVID olma olasılığı ise bunu bu şekilde yazabilirim. COVIDken yani sınıf COVIDken pozitif olma olasılığı çarpı COVID olma olasılığı.
+
+389
+01:06:40,547 --> 01:06:45,367
+Sınıf COVID değilken pozitif olma olasılığı çarpı COVID olmama olasılığı.
+
+390
+01:06:45,367 --> 01:06:57,908
+Şimdi COVIDken pozitif olma olasılığı 0.98'miş. Topluluktaki kişilerin COVID olma olasılığı binde 8'miş. Bu 0.98 çarpı binde 8. Orada mısınız?
+
+391
+01:06:57,908 --> 01:06:59,068
+nasıl bir kere sorayım?
+
+392
+01:07:00,347 --> 01:07:01,287
+Evet hocam.
+
+393
+01:07:01,287 --> 01:07:27,527
+Tamam. Bu 0.0078. Şimdi öbürüne bakıyoruz. COVID değilken pozitif olma olasılığı 0.03 çarpı COVID olmama olasılığı 0.992. O zaman bunları da çarparsam 0.03 çarpı
+
+394
+01:07:27,527 --> 01:07:47,947
+0.0992 0.029 çıkıyormuş. O zaman 0.029 büyüktür, 0.0078 olduğu için ben bu hastaya sonuç pozitif çıkmasına rağmen COVID değildir diyeceğim.
+
+395
+01:07:47,947 --> 01:07:59,987
+çünkü ikisinin maksimum epostöriyere göre ikisinin olasılıklarını karşılaştırdığımda şeyin daha yüksek olduğunu görüyorum.
+
+396
+01:08:00,146 --> 01:08:06,507
+Pozitifken COVID olmamanın daha yüksek olduğunu görüyorum. O zaman bu hastaya COVID değil mi işleyeceğim?
+
+397
+01:08:06,507 --> 01:08:12,387
+Şimdi o zaman bu Bayes teoremiyle benim yaptığım şey gözlem sonucum test sonucuydu.
+
+398
+01:08:12,387 --> 01:08:21,806
+Test sonucu verildiğinde elimdeki örneğin hangi sınıfa daha benzer olduğunu Bayes teoreniyle ölçmüş oldum.
+
+399
+01:08:22,007 --> 01:08:23,907
+Şimdi buraya kadar sormak istediğiniz bir şey var mı?
+
+400
+01:08:28,595 --> 01:08:43,335
+yoksa devam ediyorum. Şimdi ikinci şey, tam bunu sorduğumda zaten sizin olmadığını fark ettim. Çünkü soruyu sordum, sınıftan ses çıkmadı. Yine aynı Bayes Teorim ile Monty Hall problem diye bir soru var.
+
+401
+01:08:43,335 --> 01:08:50,034
+bu şey aslında Türkiye'de de televizyonlarda, yarışma programlarında yapılan bir şey.
+
+402
+01:08:50,275 --> 01:08:55,335
+Kapılar var, kapıların arkasında da bir tanesinin arkasında büyük ödül var.
+
+403
+01:08:55,655 --> 01:09:01,414
+Şimdi üç tane kapı var, iki kapının arkasında keçi var, bir kapının arkasında da araba var.
+
+404
+01:09:01,414 --> 01:09:12,414
+Şimdi burada yarışmacı A kapısını seçiyor ve Monti de C kapısını açıyor.
+
+405
+01:09:13,335 --> 01:09:42,135
+C kapısını açıyor. Şimdi benim elimde iki tane kapı kaldı. A kapısı ve B kapısı. Monty bana soruyor. A'da mı kalacaksın, B'ye mi geçeceksin diye. Benim sorduğum soru şuydu. Hangisi daha karlı olur? Yani A'da mı kalsam benim için daha iyi? Yoksa ödül B'nin arkasında mı olabilir? B'ye mi geçersen? Daha iyi. Soru buydu. Bunu birlikte çözelim istemiştim.
+
+406
+01:09:42,136 --> 01:09:46,496
+önce tahmin alayım sizce A'da mı kalsın B'ye mi geçsin?
+
+407
+01:09:46,555 --> 01:09:47,855
+A'da kalmalı.
+
+408
+01:09:47,855 --> 01:09:48,375
+B'ye geçsin.
+
+409
+01:09:48,375 --> 01:09:50,256
+Kalmamalı. Peki niye?
+
+410
+01:09:50,795 --> 01:09:52,355
+Bence B'ye geçmedi.
+
+411
+01:09:54,355 --> 01:09:56,414
+Olasılık olarak A'da kalması daha yüksek.
+
+412
+01:09:57,875 --> 01:10:03,216
+Yok %33'tü. Şimdi birini açtı %66'ya çıkmadı mı B'de olmalı.
+
+413
+01:10:09,684 --> 01:10:14,243
+İki Asa Hocam, aynı soruyu bir tane filmde görmüştüm. Sormuştum, ağda kalıyordu.
+
+414
+01:10:15,604 --> 01:10:16,164
+Ağda mı?
+
+415
+01:10:16,644 --> 01:10:19,403
+Ben değiştiriyordu diye hatırlıyorum.
+
+416
+01:10:19,762 --> 01:10:21,163
+Filmde mi değiştiriyordu?
+
+417
+01:10:21,484 --> 01:10:22,503
+Yok, ağda kalıyordu diye.
+
+418
+01:10:22,722 --> 01:10:23,622
+Evet, değiştiriyordu.
+
+419
+01:10:27,623 --> 01:10:34,783
+Peki, o zaman bakalım ağda mı kalmalı, geçmeli mi ona bakalım o zaman beraber.
+
+420
+01:10:34,783 --> 01:10:38,882
+Şimdi öncelikle bütün kapıların olasılıklarına bakalım.
+
+421
+01:10:39,684 --> 01:11:00,483
+önce işe başladığınız zaman hangi kapının arkasında değil mi işe ilk başladığınız zaman hangi kapıyı açacağımıza karar verirken bir şey yok burada bildiğimiz bir şey yok bütün kapıların olasılıkları aynı bir bölüm 3.
+
+422
+01:11:00,483 --> 01:11:06,323
+Şimdi ben şeyi seçiyorum nedir?
+
+423
+01:11:12,628 --> 01:11:27,527
+A'nın arkasındayken C'yi mi açtı dedim ben size. C'yi açtı demişim. A'nın arkasındayken C'yi açma olasılığı ne?
+
+424
+01:11:34,227 --> 01:11:43,188
+araba A'nın arkasında. Ben A'yı seçtim. A'nın arkasındayken C'yi açma olması da nedir?
+
+425
+01:11:44,532 --> 01:11:45,490
+1 bölü 2.
+
+426
+01:11:46,371 --> 01:11:50,751
+Gayet güzel. A'nın arkasındayken C'yi açma olasılığı 1 bölü 2'dir.
+
+427
+01:11:53,252 --> 01:12:02,971
+B'nin arkasındayken C'yi açma olasılığı nedir?
+
+428
+01:12:03,150 --> 01:12:03,890
+1 bölü 2.
+
+429
+01:12:06,551 --> 01:12:07,310
+1'dir.
+
+430
+01:12:07,952 --> 01:12:09,771
+Ben A'yı seçtim ya.
+
+431
+01:12:10,110 --> 01:12:11,251
+Şimdi ben A'yı seçtim.
+
+432
+01:12:11,650 --> 01:12:14,191
+O ya B'yi açacak ya da C'yi açacak.
+
+433
+01:12:14,532 --> 01:12:18,412
+şey üzerimden yapabilir miyim?
+
+434
+01:12:18,490 --> 01:12:20,511
+B'yi açsın çünkü çok karıştıracağım.
+
+435
+01:12:20,631 --> 01:12:22,150
+Ben yine kafadan yapıyorum burayı.
+
+436
+01:12:23,432 --> 01:12:24,171
+Karıştıracağım.
+
+437
+01:12:24,310 --> 01:12:27,032
+A'nın arkasındayken B'yi açma olasılığı
+
+438
+01:12:27,032 --> 01:12:30,551
+1 bölü 2'dir.
+
+439
+01:12:30,650 --> 01:12:33,032
+B'nin arkasındayken B'yi açma olasılığı
+
+440
+01:12:33,032 --> 01:12:34,171
+0'dır değil mi?
+
+441
+01:12:36,911 --> 01:12:39,191
+C'nin arkasındayken
+
+442
+01:12:39,191 --> 01:12:42,951
+B'yi açma olasılığı da 1'dir.
+
+443
+01:12:42,951 --> 01:13:03,171
+Çünkü siz A'yı seçtiniz, A'yı açamaz, B'nin arkasındaysa mecbur C'yi açacak değil mi? Başka şansı yok. Eğer araba C'nin arkasındaysa A'yı açamayacağına göre yapabileceği tek şey B'yi açmak.
+
+444
+01:13:03,171 --> 01:13:05,791
+Şimdi B'yi açma olasılığı birdir.
+
+445
+01:13:06,171 --> 01:13:09,832
+Şimdi o zaman ben şunu soruyorum aslında.
+
+446
+01:13:09,971 --> 01:13:11,230
+Bana sorulan şey şu.
+
+447
+01:13:12,711 --> 01:13:22,230
+Tam tersi araba B'nin arkasındaysa A'yı açma olasılığı.
+
+448
+01:13:23,810 --> 01:13:30,011
+Araba B'nin arkasındaysa pardon B'yi açma olasılığı.
+
+449
+01:13:30,011 --> 01:13:32,650
+B'yi mi açayım, C'yi mi açayım karar vermek için.
+
+450
+01:13:33,511 --> 01:13:34,070
+Araba
+
+451
+01:13:38,898 --> 01:13:39,818
+ve,
+
+452
+01:13:42,994 --> 01:14:11,994
+B'yi açtığında arabanın C'nin arkasında olma olasıdır. Şimdi birincisi bana şeyi veriyor. B kapısını açtı fakat araba A'nın arkasındaydı. Bunun olasılığını veriyor. B kapısını açtı. Araba B'nin arkasındaydı. B kapısını açtı. Araba C'nin arkasındaydı. Şimdi ben bunlara bakacağım. Hangisinin olasılığı daha yüksekse onu seçeceğim. Şimdi B kapısını açtı. Araba B'nin arkasındasının olasıdır.
+
+453
+01:14:11,994 --> 01:14:33,475
+olasılığı sıfır bir kere. Yani böyle bir şey zaten olsa açmayacak o kapıyı o belli. O zaman benim için önemli olan B'yi açtığında hangisinin olasılığı daha yüksek? A'nın arkasında olma olasılığı mı? C'nin arkasında olma olasılığı mı? Ona göre karar vereceğim. Şimdi buna bakacak olursam şöyle bakalım şuradan.
+
+454
+01:14:39,891 --> 01:14:53,150
+B'nin arkasındayken A'yı açma olasılığına bakalım. O neye eşittir?
+
+455
+01:14:56,468 --> 01:15:10,666
+A'nın arkasındayken B'yi açma olasılığı bölü, çarpı A'nın arkasında olma olasılığı bölü, B'yi açma olasılığı şeye bakacak olursak,
+
+456
+01:15:20,435 --> 01:15:26,295
+B'yi açtığında arabanın C'nin arkasında olma olasılığı neye eşit?
+
+457
+01:15:30,131 --> 01:15:39,371
+araba C'nin arkasındayken B'yi açma olasılığı, arabanın C'nin arkasında olma olasılığı, bölü B'yi açma olasılığı.
+
+458
+01:15:39,650 --> 01:15:44,131
+Şimdi yine burada şeyi...
+
+459
+01:15:53,810 --> 01:16:04,810
+şu olasılığı kaldırıyoruz. Bununla işimiz yok. Bununla kaldırıyoruz. Şeye bakıyoruz. Şimdi...
+
+460
+01:16:05,266 --> 01:16:16,666
+araba ağanın arkasındayken B'yi açma olasılığı 1 bölü 2
+
+461
+01:16:19,730 --> 01:16:25,490
+A'nın arkasındayken B'yi açma olasılığı 1 bölü 2.
+
+462
+01:16:26,672 --> 01:16:33,050
+Şeyin olasılığı da, arabanın A'nın arkasında olma olasılığı da 1 bölü 3.
+
+463
+01:16:33,050 --> 01:16:37,332
+Bölü bu B'yi açma olasılığı.
+
+464
+01:16:40,451 --> 01:16:47,871
+Burada da araba C'nin arkasındayken B'yi açma olasılığı 1.
+
+465
+01:16:58,644 --> 01:17:05,644
+ve
+
+466
+01:17:06,483 --> 01:17:26,483
+Burada da C'nin olasılığı da 1 bölü 3. Baktığınız zaman 1 bölü 2 çarpı 1 bölü 3 küçüktür 1 bölü 3'ten. O zaman demek ki neymiş? C'ye geçmesi gerekiyormuş.
+
+467
+01:17:27,572 --> 01:17:29,331
+C'ye geçmeli. Tamam.
+
+468
+01:17:30,051 --> 01:17:31,911
+Buraya kadar sormak sizin bir şey var mı?
+
+469
+01:17:33,051 --> 01:17:34,551
+Anladınız mı? Orada mısınız?
+
+470
+01:17:36,952 --> 01:17:38,452
+Evet hocam buradayız.
+
+471
+01:17:38,572 --> 01:17:43,271
+Tamam. Yani yapmaya çalıştığınız şey hep aynı mantıkla ilerliyorsunuz.
+
+472
+01:17:43,810 --> 01:17:52,451
+Size verilen bilgi, dışarıdan verilen data B kapısının açılmış olmasının datası.
+
+473
+01:17:52,451 --> 01:17:59,110
+Sizin bulmaya çalıştığınız şey B kapısı açıldıysa 3 tane sınıfınız var.
+
+474
+01:17:59,990 --> 01:18:01,650
+Buradaki şuraya yazayım.
+
+475
+01:18:02,072 --> 01:18:03,470
+Sınıflarınız neler?
+
+476
+01:18:05,810 --> 01:18:12,252
+Arabanın A'nın arkasında olması, B'nin arkasında olması ve C'nin arkasında olması.
+
+477
+01:18:13,072 --> 01:18:18,050
+Zaten B'yi açtıysa arabanın B'nin arkasında olması mümkün değil.
+
+478
+01:18:18,050 --> 01:18:21,791
+Siz şuna bakacaksınız. Hangisinin olasılığı daha yüksek?
+
+479
+01:18:21,791 --> 01:18:32,890
+Yani B açıldığında A'nın arkasında olma olasılığı şey arabanın A'da olma olasılığı daha yüksek C'de olma olasılığı daha yüksek onu hesaplayacaksınız.
+
+480
+01:18:33,310 --> 01:18:35,072
+Onun için de ne yapacaksınız?
+
+481
+01:18:35,530 --> 01:18:48,331
+Araba A'nın arkasındayken B'yi açma olasılığı ki o 1 bölü 2 idi zaten ve A'nın arkasında olma olasılığı da 1 bölü 3 idi.
+
+482
+01:18:49,050 --> 01:18:53,650
+Araba C'nin arkasındayken B'yi açma olasılığı o birdi.
+
+483
+01:18:53,931 --> 01:18:58,191
+Yani araba zaten C'nin arkasındaysa açabileceği tek kapı B.
+
+484
+01:18:58,351 --> 01:18:59,911
+Çünkü A'yı da siz seçtiniz.
+
+485
+01:19:00,691 --> 01:19:02,871
+C'nin olasılığı da bir bölümüştü.
+
+486
+01:19:02,871 --> 01:19:08,291
+Bu mantıkla baktığımızda görüyoruz ki C'ye geçmesi daha doğru.
+
+487
+01:19:08,610 --> 01:19:09,530
+Mantık bu şekilde.
+
+488
+01:19:10,011 --> 01:19:12,070
+Buraya kadar sormak istediğiniz bir şey var mı?
+
+489
+01:19:14,011 --> 01:19:17,711
+Hocam aslında benim bu COVID örneğinde bir sorun vardı ama.
+
+490
+01:19:18,331 --> 01:19:28,331
+Bir kardemiz sonuna göre şimdi pozitif birine COVID değilsin mi demiş olduk yani 0-29.
+
+491
+01:19:28,331 --> 01:19:32,150
+Maalesef. Burada aslında size şunu göstermeye çalışıyor.
+
+492
+01:19:32,550 --> 01:19:39,911
+Covid olmayana, hayır pozitif olana Covid değilsin demiş oldu pozitif ölçülene.
+
+493
+01:19:40,591 --> 01:19:44,730
+Yani dedik ki pozitif ölçümler hep yanlış sonuç veriyor büyük ihtimalle.
+
+494
+01:19:45,230 --> 01:19:49,512
+O yüzden pozitif ölçtük ama sen aslında Covid değilsin demiş olduk.
+
+495
+01:19:50,230 --> 01:19:55,650
+Onun da sebebi şu aslında toplumda dikkat edersen oradan bozuluyor.
+
+496
+01:19:55,652 --> 01:20:16,832
+Covid olmayanların olasılığı çok yüksek olduğu için çünkü olanların olasılığı binde 8 olmayanların olasılığı binde 992 öyle olduğu için yapılan hata daha şey oluyor dikpete çarpıyor.
+
+497
+01:20:16,831 --> 01:20:22,771
+Çünkü yapılan hata ne? Covid'de olmayan insanlara pozitif denmiş olması durumu.
+
+498
+01:20:23,230 --> 01:20:28,351
+Covid olmayan insanlara pozitif denme olasılığı %3'müş.
+
+499
+01:20:29,591 --> 01:20:34,831
+Şimdi toplumda da zaten bin kişiden 992'si Covid değilse,
+
+500
+01:20:35,530 --> 01:20:40,072
+sen de bunların %3'üne pozitif dediysem olasılık büyüyor.
+
+501
+01:20:40,310 --> 01:20:43,230
+Sıkıntı orada. Anlatabildim mi sebebini?
+
+502
+01:20:43,572 --> 01:20:44,351
+Anladım hocam.
+
+503
+01:20:44,351 --> 01:21:00,652
+Şu olasılık büyük ya yani COVID olmayanların sayısı fazla ya o sayı fazlayken sen oradaki insanların %3'üne yanlış değişik koyduysan yani zaten binde 3 gibi oluyor dikkat edersen.
+
+504
+01:21:00,652 --> 01:21:03,471
+bin kişi var zaten
+
+505
+01:21:03,471 --> 01:21:04,711
+992 kişi var
+
+506
+01:21:04,711 --> 01:21:07,512
+992 kişi var toplumda
+
+507
+01:21:07,512 --> 01:21:09,851
+olasılık olarak hasta olmayan
+
+508
+01:21:09,851 --> 01:21:11,452
+bunların yüzde üçüne
+
+509
+01:21:11,452 --> 01:21:13,452
+zaten sen şey demiş
+
+510
+01:21:13,452 --> 01:21:13,990
+oluyorsun
+
+511
+01:21:13,990 --> 01:21:17,231
+hasta demiş oluyorsun
+
+512
+01:21:17,231 --> 01:21:18,172
+ondan ötürü
+
+513
+01:21:18,172 --> 01:21:21,351
+şey olmuş oluyor yani olasılık daha yüksek
+
+514
+01:21:21,351 --> 01:21:21,952
+çıkmış oluyor
+
+515
+01:21:23,123 --> 01:21:30,282
+Tabii. Burada toplumdaki tüm insanların sayısı yerine sadece vaka sayısını asak daha doğru sonuç elde etmez miyiz?
+
+516
+01:21:32,282 --> 01:21:44,923
+Ya toplum dediği öyle aslında. Yani şey diyorsun. Çok yüksek bir değer ya bu %98. Onun yerine vaka sayısı içerisindeki pozitif.
+
+517
+01:21:44,923 --> 01:21:48,583
+%98 yalnız Covid olanların pozitif olanların.
+
+518
+01:21:49,923 --> 01:21:51,063
+Tamam hocam.
+
+519
+01:21:51,063 --> 01:21:59,762
+%98 gerçekten COVID olduğu bilinen kişilerin sonucunun pozitif çıkma olması.
+
+520
+01:21:59,762 --> 01:22:09,182
+Diyeceksin ki bu ne yaman çelişkidir COVID olduğunu biliyorsak testin sonucu yani zaten pozitif.
+
+521
+01:22:09,182 --> 01:22:25,382
+Yani şunu diyebilirsiniz, ben sadece testin sonucunun pozitif, minegritif mi çıktığına bakarak karar vereceksem, COVID olup olmama konusunda yanlış yaptığını nasıl anlayacağım diyebilirsiniz.
+
+522
+01:22:25,382 --> 01:22:38,484
+Şu anda şeyler anlaşılıyor mesela, test sonuçları %40 oranla doğru fakat MR çektiklerinde, akciğer klinlerinde şey gözüküyor,
+
+523
+01:22:39,182 --> 01:22:50,443
+Covid olanlarda can kırığı gibi bir görüntü oluşuyor. Oradan anlıyorlar yani testin ötesinde esas şüphelenenler de akciğerden anlıyorlar.
+
+524
+01:22:50,443 --> 01:23:01,243
+Ben de onu soracaktım hocam bu binde 8 verisini oradan alıyorlar değil mi? Çünkü yani testten başka çareleri yoksa yani farklı bir yöntemi bulmaları gerekiyor. O da MR demek.
+
+525
+01:23:01,243 --> 01:23:25,943
+Onu ifade etmeye çalıştım da yani başka bir şekilde onu doğrulamaları gerekiyor. Birkaç şekli olabilir. Birisi mesela işte testi negatif çıkmıştır. Şu anda yapılan şeyler onlar mesela arka arka birkaç test yapıyorlar veya işte hastalık belirtilerini tam gösteriyor, oradan anlıyorlar falan gibi şeyler.
+
+526
+01:23:25,943 --> 01:23:33,623
+Bir de tabii bu mantıkla hiç ölçemediklerimiz de mutlaka vardır yani. Öyle bir durum oluşuyordur.
+
+527
+01:23:33,623 --> 01:23:37,623
+Şimdi...
+
+528
+01:23:56,724 --> 01:23:58,724
+hala ekranımı görüyor musunuz?
+
+529
+01:23:59,724 --> 01:24:00,724
+Evet hocam.
+
+530
+01:24:00,724 --> 01:24:01,724
+Evet.
+
+531
+01:24:01,724 --> 01:24:06,724
+Tamam, burada bak biraz yavaş. Normalde öbür tarafta yavaş gösteriyor da.
+
+532
+01:24:07,724 --> 01:24:15,724
+Şimdi Nayibayez'e geçeceğim. Nayibayez-Kasipay'a geçeceğim. İsterseniz ara vereyim. O açılana kadar bir 10 dakika ara vereyim mi?
+
+533
+01:24:17,724 --> 01:24:19,724
+İsterseniz verebilirim.
+
+534
+01:24:19,724 --> 01:24:32,943
+bulamayacağım. Siz de çay may bir şey alırsınız. Tamam o zaman bir şey yaptım. Yani 10 dakika yeter ki. 10 dakika öyle verdim.
+
+535
+01:34:54,483 --> 01:35:07,722
+Evet, şimdi tekrar geri döndük. Şeyi açtım. Herkes görüyor musun? Ayubayızkızı fayrı.
+
+536
+01:35:08,435 --> 01:35:09,454
+Tamam, devam edin.
+
+537
+01:35:09,895 --> 01:35:14,475
+Şimdi olay şu, Nayibayız klasifi ayırı nedir?
+
+538
+01:35:14,475 --> 01:35:28,975
+Diyelim ki elimizdeki datadaki özellikler çok fazla ve bunların birbirlerine göre durumlarını bilmiyoruz.
+
+539
+01:35:29,055 --> 01:35:32,155
+Yani bunlar aslında birbirlerine bağlı özellikler.
+
+540
+01:35:32,255 --> 01:35:35,414
+Bunların birbirlerine göre durumunu bilmiyoruz.
+
+541
+01:35:35,534 --> 01:35:38,375
+Şöyle bir önce şuradan şey yapayım sonra geri döneyim.
+
+542
+01:35:38,435 --> 01:35:57,095
+Yani diyelim ki işte şöyledir soğuk aldığınız için farklı özellikler var elimizde ve bu özelliklerin birlikte bulunma olasılıkları hakkında bir şartlı olasılık çıkartmak gerçekten zor.
+
+543
+01:35:57,095 --> 01:36:15,476
+Yani işte ateşi varsa burnunun akma olasılığı, kas ağrısı varsa ondan sonra burnunun akma olasılığı gibi bunların birbirlerine göre şartlı olasılığını bulmak aslında bayağı problemli bir şey.
+
+544
+01:36:16,034 --> 01:36:22,515
+Bunun yerine biz diyoruz ki varsayalım ki bunların hepsi birbirinden bağımsız özellikler olsun.
+
+545
+01:36:22,515 --> 01:36:38,816
+Bağımsız özellik dediğimiz şey neydi? Mesela az önce dedik ki yazı tura attığımız zaman aslında bunlar birbirinden bağımsız özelliklerdir. Yazı gelme olasılığıyla tura gelme olasılığı birbirinden bağımsız özelliklerdir, birbirine bağlı olmayan özelliklerdir.
+
+546
+01:36:38,815 --> 01:36:50,815
+veya şey dediğimizde yine konuştuk, lisans üstü sınavına geçen birisinin yüksek mühendisi olma olasılığı dediğimizde bunlar birbirine bağlıdırlar.
+
+547
+01:36:51,515 --> 01:36:53,895
+Yani birbirine bağlı olan özelliklerdir.
+
+548
+01:36:54,274 --> 01:36:58,075
+Şimdi biz burada diyoruz ki bu este öğreninde şöyle bir şey yapalım,
+
+549
+01:36:58,875 --> 01:37:05,694
+öğrendiklerimizin birbirini etkilemediğini, birbirinden bağımsız olduğunu varsayalım.
+
+550
+01:37:05,694 --> 01:37:30,954
+Eğer bunu dersek bir C sınıfında X1'den X5'e 5 tane özellik varsa C sınıfında bu özelliklerin olma olasılığı C var iken yani sınıf C sınıfı iken örneğin sınıf kiraz ağacı iken yaprağın kırmızı ince bilmem vesaire olma olasılığı
+
+551
+01:37:30,956 --> 01:37:54,854
+bütün şeylerin özellikler için C sınıfı için X1 olma olasılığı çarpı, C sınıfı için X2 olma olasılığı, C sınıfı için X3 olma olasılığı gibi her özelliğin verilen sınıf için o özelliğin sağlanma olasılıklarının çarpımına eşittir.
+
+552
+01:37:54,854 --> 01:38:10,114
+Yani baktığımız zaman yaptığımız şey şartlı olasılık kullanacağız ama sadece C sınıfı için X1'in olma olasılığı, çarpı C sınıfı için X2'in olma olasılığı şeklinde yapacağız.
+
+553
+01:38:10,114 --> 01:38:27,335
+Bu şekilde bir şey yaptığım zaman, sınıflandırıcı yaptığım zaman bu naiv bayez, yani aslında naiv olması basit, çok karmaşık olmayan bir yaklaşım olması naiv bayez klasifier olarak geçiyor.
+
+554
+01:38:27,454 --> 01:38:37,095
+Yani özelliklerinin birbirinden bağımsız olduğu varsayılarak yapılan sınıflandırma şekli naiv bayez klasifier deniyor.
+
+555
+01:38:37,095 --> 01:38:46,315
+Ve NMIS Classifier, döküman sınıflandırmada başarısı çok yüksek olan, %100'lere yakın başarılar verebilen bir sınıflandırıcı.
+
+556
+01:38:48,534 --> 01:38:54,375
+Kullanıldığı farklı şeylere örnek vereyim size, durumlara örnek vereyim.
+
+557
+01:38:54,515 --> 01:38:57,975
+Mesela mail spam mi değil mi? İki sınıfımız var.
+
+558
+01:39:00,372 --> 01:39:11,310
+spam olması veya olmaması özellik olarak kelimeleri kullanıyorum ve kelimelerin hepsinin birbirinden bağımsız olduğunu varsayıyorum.
+
+559
+01:39:12,091 --> 01:39:20,211
+Ve bu şekilde bana bir döküman verildiğinde bu dökümanın spam non-spam olduğunu tespit etmeye çalışıyorum.
+
+560
+01:39:20,211 --> 01:39:25,990
+Aslında Nayibayez'in parlamasına sebep olan uygulama da bu uygulama.
+
+561
+01:39:25,990 --> 01:39:37,251
+bu span filterler için NAYI Bayez'de bir sınıflandırıcı yapılıyor ve bu sınıflandırıcının başarısı çok yüksek çıkınca dikkat çekiyor.
+
+562
+01:39:37,251 --> 01:39:48,150
+Aslında yani eskiden de kullanılan bir şey ama bu span filterler asıl dikkat çekmeye başladığı dönem onunla başlıyor döküman sınıflandırmada.
+
+563
+01:39:48,150 --> 01:39:58,431
+Mesela işte bir şeyin yazının, yazarının kadın ve erkek mi olduğunu tahmin etmek istiyorsunuz.
+
+564
+01:39:58,671 --> 01:40:09,412
+Yine aynı şekilde iki sınıfınız var. Kadın yazarlara ait dökümanlardan oluşan bir sınıf. Erkek yazarlara ait dökümanlardan oluşan bir sınıf.
+
+565
+01:40:09,412 --> 01:40:15,711
+Bilinmeyen örneğin hangi sınıfa daha yakın olduğuna bakarken May Bayes'i bahaya kullanıyorsunuz.
+
+566
+01:40:15,711 --> 01:40:37,470
+yine iki sınıflı bir sınıflandırıcı bu da. Bir film yorumunun pozitif mi, negatif mi olması. Yine bunlar da çok başarılı gerçekten. Şimdi derin öğrenmeyle de doğal değişime dersinde bunları siz de bir daha doküman sınıflandırma konusunu doğal değişim alanlar daha detaylı olarak görüyorlardır.
+
+567
+01:40:37,470 --> 01:41:02,650
+derin öğrenmeyle de çok yüksek başarılar elde ediliyor ama Bayes genellikle işte bu duygu analizi şey mi yazdı ne bileyim alaycı mı yazdı normal mi yazdı çok yapılan şu ara uygulamalardan veya bir şeyin altına ürünün altına yazılan bir ürünün altına yazılan bir ürünün hakaret içeriyor mu içermiyor mu gibi çok farklı şeyleri var.
+
+568
+01:41:02,650 --> 01:41:14,291
+Döküman sınıflandırma uygulamaları var veya işte bir dökümanın şeyini anlama içeriğinin işte ekonomiyle ilgili mesela bir haber dökümanı, ekonomiyle ilgili bir haber mi?
+
+569
+01:41:15,172 --> 01:41:27,650
+İşte sanatla ilgili bir haber mi? Politik haber mi? Bunu sınıflandırma gibi aklınıza gelebilecek çok farklı yazı sınıflandırma yöntemde
+
+570
+01:41:27,650 --> 01:41:54,911
+N-Y-B-E-Z yöntemi çok başarılı bir şekilde kullanılıyor. Klasik karar ağacıdır, kan yakın komşuluktur, destek vektör makineleridır, klasik yapay nörona, derin öğrenme mimarisinde olmayan klasik yapay nörona çalışmalarıyla karşılaştırıldığında genelde bu basitlikte bir şeyde,
+
+571
+01:41:54,911 --> 01:42:08,550
+yani özelliklerin diğerlerinde de birbirinden bağımsız değerlendirilen kelimeler olduğunu varsayarsak pek çok yöntemden çok daha yüksek başarıyla sınıflandırmayı yapıyor.
+
+572
+01:42:08,550 --> 01:42:22,851
+Şimdi peki bakalım dediğimiz gibi VJ bizim J. sınıfımızı gösteriyorsa A1'den A'yine kadar da A atribütün kısaltılmışı en tane özelliğin var ise
+
+573
+01:42:22,851 --> 01:42:34,791
+Nayib Bayes özelliklerin olasılıkların verilen sınıf için o özelliğin olma olasılığının çarpımına eşit olduğu varsayılıyor.
+
+574
+01:42:34,791 --> 01:42:38,990
+istatiksel olarak birbirinden bınırsız özellikler olduğu varsayılıyor.
+
+575
+01:42:39,351 --> 01:42:41,452
+Öncelikle burada yalnız şunu da unutmayın.
+
+576
+01:42:42,211 --> 01:42:46,191
+Bu çok da doğru bir varsayım olmayabilir.
+
+577
+01:42:47,131 --> 01:42:51,092
+Örneğin ne bileyim az önce şey vardı bir örnek vardı.
+
+578
+01:42:53,426 --> 01:43:10,028
+şey dediğinizde, Donald Trump dediğinizde mesela, Donald kelimesini ayrı Trump'ı ayrı değerlendirmenin etkisiyle Donald Trump'ı birlikte değerlendirmenin etkisi aslında şey olacaktır, farklı olacaktır.
+
+579
+01:43:10,028 --> 01:43:17,108
+Yani bu şekilde, bu basitlikte yapılan bir sınıflandırıcı için yüksek bir şekilde.
+
+580
+01:43:17,947 --> 01:43:20,768
+Şimdi peki o zaman sınıflandırıcıyı nasıl kuracaksınız?
+
+581
+01:43:20,768 --> 01:43:44,227
+J tane sınıfımız var ise yine az önce yaptığımız gibi maksimum etroposteriyelüde dedik ki işte bütün sınıflar için hesaplanır, verilen özellikler için sınıfın olasılığı hesaplanır. Bunların en yüksek olanı bizim bilmeyen öğrenimizin hangisine sahip olduğundan yeri.
+
+582
+01:43:44,227 --> 01:43:50,547
+Burada da aynı şekilde aynı yaklaşım maksimum ve toposter yolu yaklaşım kullanılıyor.
+
+583
+01:43:51,747 --> 01:43:58,666
+J tane sınıfın varsa, J tane de özelliğin varsa, J sınıfın iyi özelliği için
+
+584
+01:43:58,666 --> 01:44:05,186
+Hocam bir mikrofon açık ama çok karışıyor bir arkadaşım.
+
+585
+01:44:05,186 --> 01:44:11,067
+Tamam. Herkes mikrofonu kapatabilir mi arkadaşlar? Birinizin mikrofonu açıkmış.
+
+586
+01:44:14,962 --> 01:44:28,163
+Peki o zaman hangi sınıfın olasılığı verilen özellikler için daha yüksekse bilmediğimiz örneğin o sınıfa ait olduğu varsayılacak.
+
+587
+01:44:28,163 --> 01:44:31,762
+Şimdi buradan açık haline yazdığımız zaman ne oluyor?
+
+588
+01:44:32,783 --> 01:44:40,262
+Bu şekilde J sınıfının olasılığı, J sınıfı için A özelliklerinin olasılığı neye eşit oluyor?
+
+589
+01:44:40,262 --> 01:44:49,184
+Aslında bütün şeylerin çarpımlarına eşit oluyor.
+
+590
+01:44:49,324 --> 01:44:57,023
+V, J iken A, Y olma olasılıklarının çarpımları çarpı J. sınıfın olasılığına eşit olmuş oluyor.
+
+591
+01:44:57,644 --> 01:45:00,342
+Şimdi öğrenmeyi nasıl yapacağız?
+
+592
+01:45:00,342 --> 01:45:10,363
+Şimdi öğrenme için öncelikle elinizde kaç sınıfınız varsa o sınıfa ait örneklerinizin olması lazım.
+
+593
+01:45:10,523 --> 01:45:18,483
+Önce eğitimde yapacağımız şey bütün bu örnekler için önce her sınıfın olasılığını bulmak.
+
+594
+01:45:18,484 --> 01:45:32,563
+mesela az önce nasıl kapı açma meselesinde 3 kapı varsa arabanın herhangi bir kapının arkasında olma olasılığına 1 bölü 3 dedik.
+
+595
+01:45:32,563 --> 01:45:37,224
+Burada da örneklerin sınıflarda olma olasılığı.
+
+596
+01:45:37,644 --> 01:45:47,523
+Şimdi normalde eşit sayıda örnek varsa A sınıfınızda ve B sınıfınızda eşit sayıda örnek varsa sınıfların olasılığı 1 bölü 2'dir.
+
+597
+01:45:47,523 --> 01:45:51,824
+Yani A sınıfının da olası bir bölü 2'dir, B sınıfının da olası bir bölü 2'dir.
+
+598
+01:45:51,903 --> 01:45:56,762
+Ama diyelim ki işte hastalık teşhisiyle ilgili bir çalışma yapıyorsunuz.
+
+599
+01:45:57,542 --> 01:46:05,324
+Hasta kişilere ait örnekleriniz 1 iken, sağlam kişilere ait örnekleriniz 4.
+
+600
+01:46:05,543 --> 01:46:07,783
+Sağlam kişilere ait örnekleriniz 4.
+
+601
+01:46:07,783 --> 01:46:19,783
+O zaman hasta sınıfının olasılığı 1 bölü 5, sağlam sınıfının olasılığı 4 bölü 5 gibi orada örnek sayımıza bağlı olarak farklı bir dağılım söz konusu olacak.
+
+602
+01:46:20,203 --> 01:46:27,382
+Şimdi normalde zaten mülkülse mesela döküman sınıflandırmalarda o kadar büyük sıkıntı yok.
+
+603
+01:46:28,824 --> 01:46:35,222
+Örnek sayılarınızı yaklaşık eşit tutmaya çalışmanızda fayda var.
+
+604
+01:46:35,222 --> 01:46:51,222
+Ve her ağ özelliği için verilen sınıfta bu bahsedilen ağ özelliğinin olma olasılığını hesaplıyorsunuz.
+
+605
+01:46:52,042 --> 01:46:54,703
+Şimdi bunu nasıl yapılacağını bir örnek üzerinde görelim.
+
+606
+01:46:54,824 --> 01:47:01,904
+O geçen haftaki karar ağaçlarımda gördüğümüz şey örneği, tenis oynasın oynamasın örneği.
+
+607
+01:47:01,904 --> 01:47:10,224
+Şimdi sol tarafta şeyi görüyorsunuz işte 14 gün için değerleri görüyorsunuz.
+
+608
+01:47:10,703 --> 01:47:16,543
+Kırmızılar oynadığı, tenis oynadığı günlere ait, siyahlarda oynamadığı günlere ait.
+
+609
+01:47:16,923 --> 01:47:23,443
+Şimdi burada öncelikle sınıfların olasılığı, yesin olasılığı 9 bölü 14, 9 gün oynamış çünkü.
+
+610
+01:47:23,623 --> 01:47:27,023
+No'nun olasılığı 5 bölü 14, sınıfların olasılığı bu şekilde.
+
+611
+01:47:27,023 --> 01:47:30,283
+arkasında her sınıf için
+
+612
+01:47:30,283 --> 01:47:32,703
+dikkat edin özelliklerin
+
+613
+01:47:32,703 --> 01:47:34,684
+olasılıklarını çıkarıyoruz
+
+614
+01:47:34,684 --> 01:47:35,962
+şimdi birincisi
+
+615
+01:47:35,962 --> 01:47:37,904
+temperature için
+
+616
+01:47:37,904 --> 01:47:40,684
+şey olduğunda
+
+617
+01:47:40,684 --> 01:47:42,904
+sınıf yes iken
+
+618
+01:47:42,904 --> 01:47:44,844
+işte sıcaklığın
+
+619
+01:47:44,844 --> 01:47:46,623
+havanın sıcak olma
+
+620
+01:47:46,623 --> 01:47:47,922
+olasılığı 2 bölü 9
+
+621
+01:47:47,922 --> 01:47:50,023
+mal donma olasılığı 4 bölü 9
+
+622
+01:47:50,023 --> 01:47:52,103
+cool olma olasılığı 3 bölü 9
+
+623
+01:47:52,103 --> 01:47:54,243
+işte play no iken
+
+624
+01:47:54,243 --> 01:47:56,844
+play sınıf no iken
+
+625
+01:47:56,842 --> 01:48:00,342
+Haps 2 bölü 5, Mâret 2 bölü 5, Q 1 bölü 5.
+
+626
+01:48:02,342 --> 01:48:03,783
+Her sınıf için
+
+627
+01:48:04,372 --> 01:48:12,230
+her özelliğin aldığı değerlerin olasılıklarını böyle ayrı ayrı hesaplıyoruz.
+
+628
+01:48:12,810 --> 01:48:21,831
+Şimdi öncelikle bunu yapıyoruz. Bu benim eğitim, yaptığım şey bu eğitim işlemi. Ondan sonra bunu bir kere hazırlıyorum.
+
+629
+01:48:22,051 --> 01:48:27,650
+14 tane eğitim örneği için bu olasılık değerlerini hazırlıyorum. Bu önceki durumu gösteriyor.
+
+630
+01:48:27,650 --> 01:48:37,912
+Yani daha önceden olasılıkların ne olduğunu gösteriyor. Şimdi geldik test etme kısmına. Testte de şöyle bir örnek verilmiş bana.
+
+631
+01:48:37,912 --> 01:48:55,350
+Alt bu kısa yiymiş, temperature'ı bulmuş, midi ise haymış, midi ise front'mış. Bu örnek hangi sınıfa aittir? Yani bu şartlar verildiğinde kişi tenis oynamış mıdır, oynamamış mıdır? Bu soruluyor.
+
+632
+01:48:55,350 --> 01:49:05,810
+Şimdi bakalım buna. Burada bize ne diyor? Verilen bir sınıf için her özelliğin olasılığını ayrı ayrı hesaplayacağız.
+
+633
+01:49:06,212 --> 01:49:10,912
+Şimdi önce yes sınıfı için hesaplayalım. Arkasından no sınıfı için hesaplayalım.
+
+634
+01:49:11,731 --> 01:49:16,211
+Sınıf yes iken, şimdi mouse'u gözükmüyor maalesef. Burada böyle bir sıkıntı var.
+
+635
+01:49:17,011 --> 01:49:22,631
+Mouse'u görmüyorsunuz ama sol tarafta şey gördüğünüzü tahmin ediyorum.
+
+636
+01:49:22,631 --> 01:49:32,211
+Play eşittir yes iken, tamam bak şöyle büyütürsem neden bahsettiğim daha güzel gözükecek herhalde, büyük görüyorsunuz sanıyorum
+
+637
+01:49:32,211 --> 01:49:42,251
+Play yes iken Outlook'un sunny, çünkü demiş ya Outlook'un sunny, Outlook'un sunny olma olası 2 bölü 9'muş
+
+638
+01:49:42,251 --> 01:49:48,791
+bunu şuradan görelim, bakın Outlook'un sunny olma olası da şurada görüyorsunuz
+
+639
+01:49:48,791 --> 01:49:57,631
+Play-Yes iken Outlook'un Sunny olması orası 2 bölü 9, Play-No iken Outlook'un Sunny olması da 3 bölü 5'miş.
+
+640
+01:49:58,190 --> 01:50:06,570
+Şimdi geldik buraya. Şimdi önce Yes için yapıyorum. Birinci özelliğim Outlook'un Sunny olması durumu.
+
+641
+01:50:07,051 --> 01:50:13,570
+Play-Yes iken Outlook'un Sunny olma durumu 2 bölü 9'muş. İkinci özelliğim Temperature'ın Full olma durumu.
+
+642
+01:50:13,570 --> 01:50:29,490
+Play-yesken temperature-full olma durumu da 3 bölü 9'muş az önce hesapladık. Böyle hepsi var. Nemin hay olma, bindin su çok olma durumları bunlar tek tek var ve sınıfın yes olma olasılığı da 9 bölü 14.
+
+643
+01:50:29,490 --> 01:50:40,190
+Aynı şeyleri no için yapıyorum. Aynı şekilde play no iken verilen özellik değerleri için olasılıkları hesaplıyorum.
+
+644
+01:50:40,190 --> 01:50:46,951
+Ve arkasından maksimum ve posteriori ile alttaki şeye bakın lütfen.
+
+645
+01:50:46,952 --> 01:51:04,270
+verilen X üstü örneği için yes'in olasılığı neye eşitmiş? Yes can sunny, yes can cool, yes can high, yes can strong olma olasılıkları çarpı plain yes olma olasılığı.
+
+646
+01:51:04,270 --> 01:51:11,431
+Bunun değeri 10.000'de 53 çıkıyormuş hesaplamalara sonucunda.
+
+647
+01:51:11,431 --> 01:51:26,172
+ikincisine baktığımız zaman verilen X örneğine ait özellikler için ne olma olasılığı da işte 10.000'de 206 çıkıyormuş.
+
+648
+01:51:26,172 --> 01:51:40,490
+Bu durumda bu örnek için maksimum postüryörü MEP'e baktığımız zaman vermemiz gereken cevap tenis oynamaması olabilir.
+
+649
+01:51:40,490 --> 01:51:53,291
+Yani eğer bu şeyler verildiyse, Outlook, Sanitum, Purchase, Kovac, Winter, Stronk verildiyse, tenis oynamamalı demeliyiz cevabımız.
+
+650
+01:51:53,291 --> 01:51:54,872
+Sınıfımız no olmalı.
+
+651
+01:51:55,411 --> 01:51:57,811
+Ve arkadaş, sormak istediğiniz bir şey var mı?
+
+652
+01:52:03,636 --> 01:52:04,735
+Devam ediyorum.
+
+653
+01:52:07,435 --> 01:52:13,815
+Şimdi bu örnekte Mayubayes-Gespire'ı nasıl sınıflandırdığını anladınız.
+
+654
+01:52:13,815 --> 01:52:39,655
+C benim sınıfımı gösteriyorsa, N tane örneğim varsa, özelliğim varsa her özelliğin bu sınıfta bulunma olasılığının çarpımlarının sınıf olasılığıyla çarpılması bana Neubayez'e göre o örneğin o sınıfa ne kadar benzediğini gösteriyor.
+
+655
+01:52:39,655 --> 01:52:48,376
+Peki şimdi gelelim döküman sınıflandırmak istediğimizde özellikleri nasıl kullanacağız?
+
+656
+01:52:48,815 --> 01:52:52,095
+Önce yapmamız gereken şey şu, orada mısınız?
+
+657
+01:52:54,255 --> 01:52:54,935
+Evet hocam.
+
+658
+01:52:55,435 --> 01:53:00,515
+Güzel. Yapmanız gereken şey şu, diyelim ki şey yapmak istiyorsunuz,
+
+659
+01:53:00,515 --> 01:53:04,176
+işte spamdan spam iki tane sınıfınız olduğunu varsayalım.
+
+660
+01:53:04,175 --> 01:53:15,234
+verilen bir şeyin mail'in mail dokümanının spam olup olmadığını tespit etmek istiyoruz.
+
+661
+01:53:15,234 --> 01:53:25,154
+Şimdi burada biz az önce dedik ki özelliklerimiz bilgilerimiz C sınıfı için X özelliklerinin olma olasılığı.
+
+662
+01:53:25,555 --> 01:53:27,095
+Şimdi bunu nasıl hesaplayacağız?
+
+663
+01:53:27,255 --> 01:53:29,175
+Şimdi öncelikle şunu yapmalısınız.
+
+664
+01:53:29,176 --> 01:53:38,914
+Diyelim ki 100 tane spam mail alırsınız, 100 tane de non-spam mail alırsınız.
+
+665
+01:53:39,516 --> 01:53:46,216
+Bu mailleri alt alta ekleyerek bir sınıf verisi oluşturursunuz.
+
+666
+01:53:46,355 --> 01:53:55,155
+Mesela burada da recreate mega deployment for topic G by concatenating all dogs English topic dediği şey bu.
+
+667
+01:53:55,154 --> 01:54:03,154
+Yani ant alta 100 tane spam mail eklediniz ve o spam sınıfının örneklerini oluşturdunuz.
+
+668
+01:54:03,475 --> 01:54:05,914
+Şimdi kelimelerimiz özellik olacak.
+
+669
+01:54:06,454 --> 01:54:14,555
+Burada mutlaka yapılması gereken şey stop work denilen işte e'dir, indir, dı'dır.
+
+670
+01:54:15,234 --> 01:54:19,716
+Hem spam'de hem non spam'de geçme olasılığı yüksek olan.
+
+671
+01:54:19,716 --> 01:54:34,636
+Bu yüzden sınıflandırma başarısını düşürecek olan yani her iki sınıfta da karşınıza çıkma olasılığı benzer olan dolayısıyla sınıflar arası benzerliği azaltacak olan kelimeleri önce elersiniz.
+
+672
+01:54:34,636 --> 01:54:42,716
+Stop word dediğimiz dıdır, iftir, edir bu tür kelimeleri öncelikle bir elersiniz.
+
+673
+01:54:42,716 --> 01:54:55,435
+kalan kelimeler için iki tarafta birden sperm ve non-sperm sınıflarınızdaki bütün var olan kelimeler için bir sözlük oluşturursunuz.
+
+674
+01:54:55,435 --> 01:55:03,815
+Ve bu sözlükte her kelimenin her iki sınıfta da bulunma olasılığını saklarsınız.
+
+675
+01:55:04,176 --> 01:55:07,355
+Şimdi bulunma olasılığı dediğiniz şey nedir aslında?
+
+676
+01:55:07,355 --> 01:55:20,855
+O kelimelerin sayısı, kelimelerin A sınıfında olma sayısı bölü A sınıfındaki kelime sayısı size neyi verir?
+
+677
+01:55:21,296 --> 01:55:25,055
+A sınıfında o kelimenin bulunma olasılığını verir.
+
+678
+01:55:25,055 --> 01:55:42,516
+Aynı şekilde her kelime için bir kelimenin B sınıfında kaç defa geçtiği bölü B sınıfındaki farklı kelime sayısı size neyi verir?
+
+679
+01:55:44,136 --> 01:55:47,595
+O kelimenin B sınıfında olma olası olanı verir.
+
+680
+01:55:47,595 --> 01:56:00,595
+Bu şekilde öncelikle ne yaparsınız? Her iki sınıf için ayrı ayrı bütün kelimelerin...
+
+681
+01:56:00,592 --> 01:56:06,350
+sözlükte bulunan bütün kelimelerin olasılıklarını hesaplarsınız.
+
+682
+01:56:08,131 --> 01:56:12,871
+Mesela burada bir özel durumu gösteriyor.
+
+683
+01:56:13,471 --> 01:56:18,810
+Diyelim ki pozitif sınıfında fantastik kelimesi hiç geçmemiş.
+
+684
+01:56:18,810 --> 01:56:20,351
+O zaman ne olacak?
+
+685
+01:56:20,351 --> 01:56:38,271
+count'u sıfır olduğu için aşağıda gördüğünüz olasılıkta bütün kelimelerin ayrı ayrı değerlendirilmesini gerektirdiği için birdenbire sıfırla çarptığınızda o sınıf için olasılık değeri ne çıkacak?
+
+686
+01:56:38,271 --> 01:56:40,690
+sıfır çıkacak. Şimdi bunu da
+
+687
+01:56:40,690 --> 01:56:42,851
+önlememiz gerekiyor. Biz dedik ki
+
+688
+01:56:42,851 --> 01:56:43,592
+burada
+
+689
+01:56:43,592 --> 01:56:46,792
+iyinci kelime
+
+690
+01:56:46,792 --> 01:56:49,011
+için iyinci kelimenin
+
+691
+01:56:49,011 --> 01:56:49,672
+jinci
+
+692
+01:56:49,672 --> 01:56:52,851
+sınıfta kaç defa geçtiği
+
+693
+01:56:53,411 --> 01:56:54,851
+bölü jinci
+
+694
+01:56:54,851 --> 01:56:56,792
+sınıftaki toplam kelime
+
+695
+01:56:56,792 --> 01:56:58,711
+sayısı bana o
+
+696
+01:56:58,711 --> 01:57:00,592
+kelimenin o sınıfta olma
+
+697
+01:57:00,592 --> 01:57:02,612
+olasılığını verir dedim. Ama
+
+698
+01:57:02,612 --> 01:57:04,851
+ya o kelime o sınıfta hiç geçmiyorsa
+
+699
+01:57:04,851 --> 01:57:06,811
+mesela burada olduğu
+
+700
+01:57:06,811 --> 01:57:09,230
+gibi fantastik gezme kelimesi.
+
+701
+01:57:09,492 --> 01:57:11,911
+Pozitif sınıfında hiç yok, negatif sınıfında var.
+
+702
+01:57:12,351 --> 01:57:13,112
+O zaman ne olacak?
+
+703
+01:57:13,252 --> 01:57:16,752
+Pozitif sınıfın olasılığı birdenbire çarpımdan ödülü sıfır olacak.
+
+704
+01:57:17,311 --> 01:57:21,492
+Bunu önlemek için şöyle bir ekleme yapılır.
+
+705
+01:57:21,492 --> 01:57:25,371
+Sadece bu sıfır çarpımından kurtulmak için.
+
+706
+01:57:26,832 --> 01:57:30,212
+Bazı çalışmalarda payı ve paydaya bir eklenir.
+
+707
+01:57:30,211 --> 01:57:41,610
+Bazı çalışmalarda da paya bir paydaya bu ve toplam farklı kelime sayısı eklenir.
+
+708
+01:57:42,371 --> 01:57:46,831
+Burada iki çizgi arasındaki ve sizin de bildiğiniz gibi şeyi gösterir.
+
+709
+01:57:47,310 --> 01:57:50,011
+Toplam farklı kelime sayısını gösterir.
+
+710
+01:57:50,451 --> 01:57:53,350
+Buna Laplace Estimator deniyor.
+
+711
+01:57:53,350 --> 01:58:04,671
+Ama şeyi kolaylaştırmak için payın sıfır olması durumundan kurtulmayı sağlamak için yapılan bir yaklaşım.
+
+712
+01:58:04,671 --> 01:58:06,310
+Genelde şeyi kullanıyorlar.
+
+713
+01:58:07,391 --> 01:58:13,171
+Paydaya bir eklemek yerine farklı kelime sayısını eklemeyi kullanıyorlar.
+
+714
+01:58:14,592 --> 01:58:14,831
+Peki.
+
+715
+01:58:15,350 --> 01:58:18,190
+O zaman eğitimi nasıl yapacağız?
+
+716
+01:58:18,291 --> 01:58:19,811
+Önce bir sözlük hazırladık.
+
+717
+01:58:19,811 --> 01:58:27,511
+Sözlükte her kelimenin her sınıfta bulunma olasılığını hesapladık.
+
+718
+01:58:27,570 --> 01:58:28,952
+Burada gördüğünüz gibi.
+
+719
+01:58:30,612 --> 01:58:35,291
+Ve bir de sınıfların olasılığını ayrı ayrı hesapladık.
+
+720
+01:58:35,291 --> 01:58:42,051
+Şimdi burada bunun bir psodo şey üzerinden görelim nasıl olduğunu.
+
+721
+01:58:43,311 --> 01:58:49,350
+Önce bütün şeyleri, kelimeleri, toplumları vesaire topladık.
+
+722
+01:58:49,350 --> 01:58:56,990
+Burada token derken mesela şeyler de kullanılabilir, ne bileyim çalışmanızda gerekli olduğunu düşünüyorsunuzdur.
+
+723
+01:58:57,092 --> 01:59:05,831
+Kelime olmayan işte ünlemdir, soru işaretidir, sayıdır bunları da sözlüğünüzde kullanabilirsiniz.
+
+724
+01:59:06,032 --> 01:59:07,532
+Bu da olabilecek bir şey.
+
+725
+01:59:07,532 --> 01:59:25,650
+Ondan sonra sınıf olasılıklarını hesapladık ve her sınıfta bütün kelimelerin bulunma olasılıklarını hesapladık ve hazır bekliyoruz.
+
+726
+01:59:25,650 --> 01:59:52,311
+Şimdi bilinmeyen bir örnek geldiği zaman yapmamız gereken şey bu örnekteki bütün kelimeler için şu hesabı yapmak, A sınıfı verildiğinde bu kelimelerin bulunma olasılıkları, B sınıfı verildiğinde bu kelimelerin bulunma olasılıklarını kullanarak hangi sınıfın olasılığının daha yüksek olduğunu anlamak.
+
+727
+01:59:52,311 --> 01:59:56,791
+Şimdi bunun için bir örnek üzerinden göstereceğim.
+
+728
+01:59:56,891 --> 01:59:58,551
+Hala ekranımı görüyor musunuz?
+
+729
+01:59:59,828 --> 02:00:09,146
+görüyorsunuz. Tamam. Şimdi bunu bir örnek üzerinden göstereceğim. Diyelim ki iki tane sınıfınız olsun.
+
+730
+02:00:13,547 --> 02:00:22,487
+Tamamen bu bir şey örneği yani öyle çok anlamlı bir örnek değil. A sınıfındaki kelimeleriniz bunlar olsun.
+
+731
+02:00:36,498 --> 02:00:38,498
+Şimdi bu da B sınıfımız olsun.
+
+732
+02:00:50,836 --> 02:01:02,095
+Şimdi İngilizce'de aslında olay çok daha kolay. Çünkü onlar şey yapıyorlar, ING'yi yani işte reyn olarak değerlendiriliyor falan.
+
+733
+02:01:02,636 --> 02:01:07,315
+Ve sonlardaki S'leri atıyorlar, cats'i cat olarak değerlendiriyor.
+
+734
+02:01:07,315 --> 02:01:12,954
+Ve yani çok fazla bir aslında eklerle ilgili sıkıntı yaşamıyorlar.
+
+735
+02:01:12,954 --> 02:01:31,954
+Halbuki Türkçe'de bu bayağı bir sıkıntı geliyorum geldin gelir misin neyse bir sürü durum var. Bu aslında Türkçe'de bir ön problem bu ayıklamanın yapılması. Şimdi bilinmeyen örneğimde şöyle bir örnek.
+
+736
+02:01:47,538 --> 02:02:08,078
+Şimdi önce vokabulariyi oluşturuyorum. Vokabulari tamamen her iki tarafta da geçen stop word olmayan kelimeler. İşte cat var, crab var, crawl var.
+
+737
+02:02:12,819 --> 02:02:13,739
+isteyir var.
+
+738
+02:02:18,418 --> 02:02:28,359
+rain ve dog var. Bunlar şimdi benim her iki tarafta da hem A sınıfında hem de B sınıfında bulunan kelimelerim.
+
+739
+02:02:28,359 --> 02:02:40,378
+Şimdi önce sınıfların olasılığına bakalım. Sınıfların olasılığı 1 bölü 2 çünkü yaklaşık olarak eşit sayıda kelimeden oluşuyorlar.
+
+740
+02:02:40,378 --> 02:02:52,399
+çok detaya girmeden işte birinde şeyde geçen vokabileri de geçen dört kelime var öbüründe vokabileri de geçen üç kelime var.
+
+741
+02:02:52,399 --> 02:02:57,960
+Dolayısıyla yaklaşık eşit sayıda oluşturdukları için bir bölü iki diyebiliriz.
+
+742
+02:02:57,960 --> 02:03:14,680
+farklı kelime sayısı, vokabilerideki kelime sayısı 6, A sınıfındaki toplam kelime sayısı 4, B sınıfındaki toplam kelime sayısı da 3.
+
+743
+02:03:14,680 --> 02:03:18,539
+Bunlar benim ilk çıkardığım şeyler.
+
+744
+02:03:18,538 --> 02:03:32,479
+Şimdi her kelime için o kelimenin verilen sınıf için o sınıfta o kelimenin olma olasılığını hesaplarken şu bounty'yi kullanacağım.
+
+745
+02:03:32,479 --> 02:03:41,239
+Demiştik ya kelimenin sınıfta bulunma sayısı bölü sınıftaki toplam kelime sayısı.
+
+746
+02:03:51,730 --> 02:04:01,492
+ve bu da V'mizde bizim 6 idi. Bunu bu şekilde yapacağız. Toplam kelime sayısı 6 idi. Vokabularıdaki bu şekilde yapacağız.
+
+747
+02:04:01,492 --> 02:04:12,252
+Şimdi A sınıfı için baktığımızda şöyle şey yapalım. Şimdi bizim neydi ve Naif Bayez neydi?
+
+748
+02:04:12,252 --> 02:04:31,190
+arg-maksimum her sınıf için ayrı ayrı o sınıfın olasılığı çarpı her özellik için verilen özellik verilen sınıf için o özelliğin olma olasılığı.
+
+749
+02:04:31,190 --> 02:04:34,752
+PVJ çarpı
+
+750
+02:04:38,739 --> 02:04:59,739
+Şimdi şeyimiz bu. Kullanacağımız bantımız bu. Şimdi bunu A sınıfı için önce yapıyorum. A sınıfı için önce yapıyorum. P A çarpı
+
+751
+02:05:02,386 --> 02:05:07,567
+A sınıfında cat'in olma olasılığı çarpı çünkü cat var.
+
+752
+02:05:09,106 --> 02:05:14,146
+A sınıfında dog'un olma olasılığı.
+
+753
+02:05:14,146 --> 02:05:17,146
+Şimdi burada şöyle hareket ediyorsunuz.
+
+754
+02:05:18,087 --> 02:05:20,148
+Vokabileride olan kelimeler için iş yapabilirsiniz.
+
+755
+02:05:20,828 --> 02:05:27,568
+Bir de o var yani bütün kelimelerin mutlaka vokabileride olması gerekmiyor baktığım dokümanda.
+
+756
+02:05:27,568 --> 02:05:37,667
+Şimdi it yok vokabuları da, mice yok, olan kelimeler, cat var, dog var, buri yok, bonzu yok.
+
+757
+02:05:37,927 --> 02:05:42,627
+Ondan ötürü sadece cat ve dog için iş yapabilirim.
+
+758
+02:05:43,047 --> 02:05:49,686
+Bunun olasılığı bir bölü iki çarpı bir tane cat kelimesi var A sınıfında.
+
+759
+02:05:49,846 --> 02:05:51,027
+Bir artı bir bölü.
+
+760
+02:05:51,686 --> 02:05:55,568
+A sınıfındaki toplam kelime sayısı dört artı altı.
+
+761
+02:05:55,568 --> 02:05:57,867
+dok için bakıyorum
+
+762
+02:05:57,867 --> 02:05:59,748
+A sınıfında dok kelimesi yok
+
+763
+02:05:59,748 --> 02:06:00,448
+o zaman
+
+764
+02:06:00,448 --> 02:06:02,927
+1 bölü
+
+765
+02:06:02,927 --> 02:06:05,386
+4 artı 6
+
+766
+02:06:05,386 --> 02:06:06,386
+o da ne etti
+
+767
+02:06:06,386 --> 02:06:09,288
+1 bölü
+
+768
+02:06:09,288 --> 02:06:11,447
+100 etti
+
+769
+02:06:11,447 --> 02:06:13,667
+o da 0 tam
+
+770
+02:06:13,667 --> 02:06:15,867
+0 1 A sınıfı için bu şekilde
+
+771
+02:06:15,867 --> 02:06:17,788
+buldum. B sınıfı için
+
+772
+02:06:17,788 --> 02:06:19,788
+aynı şekilde P B çarpı
+
+773
+02:06:20,507 --> 02:06:21,947
+P ket
+
+774
+02:06:21,947 --> 02:06:23,788
+B sınıfı verilmişken
+
+775
+02:06:23,788 --> 02:06:31,927
+ve B sınıfı verilmişken dogun olasılığı yine aynı şekilde 1 bölü 2 çarpı.
+
+776
+02:06:32,627 --> 02:06:35,007
+Şimdi B sınıfında 3 örnek vardı.
+
+777
+02:06:36,068 --> 02:06:43,806
+1 artı 1 bölü 3 artı 6 çarpı 1 artı 1 bölü 3 artı 6.
+
+778
+02:06:44,427 --> 02:06:45,487
+O da ne çıkmış?
+
+779
+02:06:46,087 --> 02:06:50,226
+İşte 0'dan 0, 24 çıkmış.
+
+780
+02:06:50,226 --> 02:07:07,226
+O zaman bunlara baktığımızda ne diyebilirim ben? B sınıfına ait bir örnek diyebilirim. B sınıfının olasılığı daha yüksek çıktığı için D sınıfına ait bir örnek diyebilirim.
+
+781
+02:07:07,226 --> 02:07:18,707
+Bu şekilde gördüğünüz gibi Mayıs sınıflandırıcısını döküman sınıflandırmak için kullandığımızda yaptığımız şey bu.
+
+782
+02:07:18,707 --> 02:07:23,188
+Yani önce yapmanız gereken şey bir vokabuları oluşturacaksınız.
+
+783
+02:07:23,867 --> 02:07:27,867
+Bulunan bütün sınıflar, diyorum ki işte döküman sınıflandırıyoruz.
+
+784
+02:07:28,627 --> 02:07:35,328
+Bu döküman politika haberlerine ait, sanat haberlerine ait, spor haberlerine ait.
+
+785
+02:07:35,328 --> 02:07:37,367
+bir dört beş tane sınıfımız var.
+
+786
+02:07:37,828 --> 02:07:39,188
+Bütün sınıflardaki
+
+787
+02:07:39,188 --> 02:07:41,447
+bütün kelimeler için bir vokabileri
+
+788
+02:07:41,447 --> 02:07:43,507
+oluşturacaksınız.
+
+789
+02:07:44,108 --> 02:07:45,068
+Arkasından
+
+790
+02:07:45,068 --> 02:07:47,226
+her sınıf için
+
+791
+02:07:47,226 --> 02:07:48,748
+ayrı ayrı
+
+792
+02:07:48,748 --> 02:07:51,226
+vokabilerdeki kelimelerin
+
+793
+02:07:51,226 --> 02:07:53,386
+verilen sınıf için
+
+794
+02:07:53,386 --> 02:07:55,287
+o sınıfta bulunma
+
+795
+02:07:55,287 --> 02:07:56,507
+olasılıklarını
+
+796
+02:07:56,507 --> 02:07:59,447
+şey yapacaksınız.
+
+797
+02:07:59,627 --> 02:08:01,867
+Önce çıkartacaksınız.
+
+798
+02:08:01,988 --> 02:08:03,047
+Kaç tane geçiyor?
+
+799
+02:08:03,947 --> 02:08:09,407
+Mesela A sınıfında ket geçme olasıdır, A sınıfında dol geçme olasıdır,
+
+800
+02:08:09,407 --> 02:08:16,367
+A sınıfında krep geçme olasıdır gibi.
+
+801
+02:08:17,087 --> 02:08:22,407
+Bütün kelimeleriniz için A ve B sınıfında bu işlemi yapacaksınız.
+
+802
+02:08:22,507 --> 02:08:25,747
+Bütün sınıflarınızı ve bütün kelimeleriniz için bu işlemi yapacaksınız.
+
+803
+02:08:26,186 --> 02:08:28,726
+Böylece eğitiminizi tamamlamış olacaksınız.
+
+804
+02:08:28,726 --> 02:08:31,688
+bilinmeyen bir örnek geldiğinde
+
+805
+02:08:31,688 --> 02:08:35,207
+önce bilinmeyen örneğinizde
+
+806
+02:08:35,207 --> 02:08:38,067
+vokabileride bulunan kelimeleri çıkartacaksınız.
+
+807
+02:08:38,188 --> 02:08:41,507
+Vokabileride bulunan iki tane kelimemiz var bizim
+
+808
+02:08:41,507 --> 02:08:42,266
+ket ve do.
+
+809
+02:08:42,587 --> 02:08:44,947
+Sadece bu kelimeler için işlem yapabilirim.
+
+810
+02:08:45,047 --> 02:08:47,627
+Vokabileride bulunan kelimeleri çıkartacaksınız.
+
+811
+02:08:48,167 --> 02:08:49,926
+Arkasından bu kelimeler için
+
+812
+02:08:49,926 --> 02:08:51,646
+her sınıf için
+
+813
+02:08:53,364 --> 02:09:04,163
+bilinmeyen örneğinizin o sınıfa benzeme olasılığını bu şekilde, o sınıfta olma olasılığını bu şekilde hesaplayacaksınız.
+
+814
+02:09:04,163 --> 02:09:15,682
+ve burada hangisi büyükse onu alacağız. Burada tam binde 24 daha büyük olduğundan baktığımız örneğin B sınıfına ait bir örnek olduğuna karar verdik.
+
+815
+02:09:16,043 --> 02:09:18,083
+Bu ne kadar sormak istediğiniz bir şey var mı?
+
+816
+02:09:23,123 --> 02:09:42,783
+Peki. Dediğim gibi Bayes çok başarılı sınıflandırıcılardan biri. Farklı uygulamalarda da başarılı sonuçlar alıyor. Mesela biz bu kredi kartı sahtekarlığı için bir çalışma yapmıştık.
+
+817
+02:09:42,783 --> 02:09:52,863
+orada işte farklı yaklaşık 30 bankadan alınan verilerden BKM için bir çalışma yapmıştık.
+
+818
+02:09:52,963 --> 02:10:00,422
+Orada da ilginç bir şekilde klasik yöntemlerde Nayibayız oldukça yüksek başarı vermişti.
+
+819
+02:10:00,422 --> 02:10:06,002
+Yani bazı durumlarda Nayibayız bazı durumlarda karar ağacı yüksek başarı veriyordu.
+
+820
+02:10:06,643 --> 02:10:10,643
+Başarısı son derece iyi bir yöntem.
+
+821
+02:10:10,644 --> 02:10:13,524
+Peki başka sormakseniz bir şey var mı buraya kadar?
+
+822
+02:10:18,226 --> 02:10:27,827
+yok. O zaman günlük burada bitirebiliriz. Haftaya görüşmek üzere. İyi günler hepimize.
+
+823
+02:10:28,467 --> 02:10:29,068
+Teşekkürler.
+
+824
+02:10:30,426 --> 02:10:31,507
+Görüşürüz hocam.
+
+825
+02:10:32,207 --> 02:10:34,087
+Görüşmek üzere. İyi günler.
+
+826
+02:10:41,684 --> 02:10:42,483
+Müzik
+
+827
+02:11:01,460 --> 02:11:03,499
+Evet, şimdi
+
+828
+02:11:13,076 --> 02:11:28,475
+Evet, şeyi görüyorsunuz değil mi? Bir dakika. Yalnız şöyle bir şey oluyor. Ben bunu açtığım zaman mesajlarınızı göremiyorum. Çünkü çok küçük olursa da küçük olduğu için şey yapamıyorum. Şu anda duyuyor musunuz ve görüyor musunuz?
+
+829
+02:11:31,516 --> 02:11:32,496
+Duyuyoruz hocam.
+
+830
+02:11:32,496 --> 02:11:33,256
+Görüyoruz hocam.
+
+831
+02:11:33,655 --> 02:11:36,815
+Görüyorsunuz tamam peki. O zaman başlayabilirim.
+
+832
+02:11:36,815 --> 02:11:59,994
+Şimdi Bayes teoremi şeye dayanıyor yani olasılık kullanmaya da ya da bir yaklaşım. O yüzden çok basit bir şekilde şeyden bahsedeceğim. Olasılıkla ilgili bilgilerden bahsedeceğim. Hatırlatma yapacağım size. Oradan devam edeceğim.
+
+833
+02:11:59,994 --> 02:12:01,435
+Şimdi öncelikle
+
+834
+02:12:01,435 --> 02:12:07,414
+Hocam baştan o zaman bir şey söyleyebilir miyim?
+
+835
+02:12:07,994 --> 02:12:08,335
+Söyle
+
+836
+02:12:08,335 --> 02:12:16,115
+Siz şimdi dersi kapattınız ya bu tip durumlarda hocam ilk oturum kaydı görünmüyor
+
+837
+02:12:16,115 --> 02:12:18,135
+Öyle mi?
+
+838
+02:12:18,715 --> 02:12:24,815
+Böyle bir ihtiyaç olursa hocam sınıftan birini host yapıp siz öyle çıkın
+
+839
+02:12:24,815 --> 02:12:27,796
+geri geldiğinizde hostluğu geri alın
+
+840
+02:12:27,796 --> 02:12:32,215
+Tamam peki bilmiyordum böyle olduğunu. Aa çok ilginç.
+
+841
+02:12:32,615 --> 02:12:35,876
+Ben de anlamadım ilk etapta sınıfı kapatacağınızı.
+
+842
+02:12:36,215 --> 02:12:53,855
+Tamam şey yapmam zaten öyle bir şey. Aslında bu tarafta da yapabilirdim ama şey olduğu için yani iPad'te küçük olduğu için ben sıkıntı çekeceğimden ötürü normal bilgisayarda yapmak istedim. Tamam bir daha şey yapmam o zaman. Arada kesip bir taraftan bir tarafa geçmem.
+
+843
+02:12:53,855 --> 02:12:55,235
+Sıkıntı ödü.
+
+844
+02:12:55,235 --> 02:12:58,395
+Bir kısmı saydım. Haftaya link olarak atarım hocam buraya.
+
+845
+02:12:59,195 --> 02:13:01,976
+Tamam. Tamam canım. Peki teşekkürler bilgi için.
+
+846
+02:13:02,055 --> 02:13:13,855
+Peki. Şimdi bu S bizim özellik uzayımız olsun. Özellik uzayı dediğimiz şey problemde alınabilecek bütün değerleri gösteriyor.
+
+847
+02:13:13,855 --> 02:13:21,975
+Mesela işte bir oyun zarından bahsediyorsak S özellik uzayındaki bilgiler işte 1, 2, 3, 4, 5, 6.
+
+848
+02:13:21,975 --> 02:13:28,515
+çünkü zarın 600'ü var gelebilecek sayılar bu şekilde olduğu için.
+
+849
+02:13:29,576 --> 02:13:41,914
+A'da random değişken bu özellik uzayında alınabilecek değerlerden herhangi birisi.
+
+850
+02:13:41,914 --> 02:13:49,615
+Şimdi o zaman bu durumda PA dediğimiz şey mümkün bütün olaylar içerisinde A'nın olma olasılığı.
+
+851
+02:13:49,615 --> 02:13:58,555
+O zaman örneğin zarın dört gelme olasılığı dediğimiz zaman
+
+852
+02:14:02,195 --> 02:14:09,215
+yani ağın 4 olma olasılığı dediğimiz zaman bu nedir? Klasik bildiğiniz bir bölü 6'dır.
+
+853
+02:14:09,215 --> 02:14:18,975
+Her zaman için şunu yine biz biliyoruz. 0 ile 1 arasında bir olasılık değeri her zaman 0 ile 1 arasında olur.
+
+854
+02:14:18,975 --> 02:14:34,015
+ve burada da buna yine şey olan bu durumda olasılıkların toplamı bir özellik uzayındaki olasılıkların toplamı her zaman bir olmak zorundadır.
+
+855
+02:14:34,015 --> 02:14:47,115
+Şimdi buradan devam edersek, elimizdeki değişkenler için iki tür şey söyleyebiliriz.
+
+856
+02:14:47,115 --> 02:14:54,695
+Birincisi bu değişkenlerin birbiriyle bağlantılı olması, ikincisi de bağlantısız olması.
+
+857
+02:14:55,775 --> 02:15:04,635
+Mesela şey dediğimiz zaman öğrencinin lisansüstü giriş sınavını kazanması.
+
+858
+02:15:12,404 --> 02:15:20,043
+ve yüksek mühendisi olması bunlar birbiriyle bağlantılı iki olay.
+
+859
+02:15:23,443 --> 02:15:35,864
+ama zarın yazı gelmesi pardon zar değil de para değil mi? O yazı gelen paraydı. Zarla başladım bir an.
+
+860
+02:15:38,243 --> 02:15:51,103
+Paranın yazı gelmesi ve tura gelmesi bunlar independent olaylar. Bunların birbiriyle bir bağlantısı yok. Yani yazı gelmesiyle tura gelmesi arasında bir bağlantı yok.
+
+861
+02:15:51,103 --> 02:16:20,882
+Şimdi devam edersek joint probability iki olayın birlikte doğru olma olasını yani A gibi bir durumunuz var ve B gibi bir durumunuz var bu ikisinin de birlikte doğru olma olasını mesela işte başınız ağırken aynı zamanda da diyelim ki işte burnunuzun akması grip belirtilerinden bahsediyoruz.
+
+862
+02:16:20,882 --> 02:16:31,884
+her ikisinin de aynı anda sağlanması durumu. Şimdi burada A kesişim B diyoruz. A kesişim B şöyle baktığımız zaman bu sizin
+
+863
+02:16:37,884 --> 02:16:49,202
+S özellik uzayınızsa, sample speyinizse, örnek uzayınızsa, pardon özellik yanlış söylüyorum örnek uzayınızsa şu A kümeniz bu da B kümenizse
+
+864
+02:16:49,202 --> 02:17:02,782
+Eğer bunlar kesişiyorlarsa şu şekilde birbiriyle şeysiz de olabilirler. Bu kesişimi boş küme olduğu durum.
+
+865
+02:17:02,782 --> 02:17:21,782
+Burada şöyle bir şey varsa eğer bir kesişim kümesi varsa A kesişim B aslında şuna eşit B iken A'nın olma olasılığı çarpı B'nin olma olasılığı.
+
+866
+02:17:23,782 --> 02:17:27,003
+Şimdi burada o zaman yeni bir kavram var.
+
+867
+02:17:27,003 --> 02:17:32,384
+şartlı olasılık B'yken A'nın olma olasılığı.
+
+868
+02:17:48,916 --> 02:17:52,454
+B iken A'nın olma olasılığı.
+
+869
+02:17:52,454 --> 02:18:14,655
+Evet şimdi baktığınız zaman B'nin olasılığı sıfırdan büyük iken B iken A'nın olma olasılığı A ve B'nin birlikte olma olasılığı bölü B'nin olma olasılığını eşitir.
+
+870
+02:18:14,655 --> 02:18:19,354
+Şimdi bunu diğerlerini zaten genelde biliyorsunuzdur.
+
+871
+02:18:19,416 --> 02:18:23,295
+Mutlaka aklınızda tutmaya çalışın.
+
+872
+02:18:24,295 --> 02:18:38,694
+B şartı sağlanırken A'nın da olma olasılığı, A ile B'nin birlikte olma olasılıkları bölüm, B'nin olma olasına bölme sebebiniz normalizasyonu sağlamak için.
+
+873
+02:18:40,694 --> 02:18:43,175
+Normalizasyonu sağlamak için bölüyorsunuz.
+
+874
+02:18:44,655 --> 02:19:01,215
+Eğer mesela işte baş ağrısı diyelim ki bir kişinin baş ağrısı olması olasılığı bir bölü olmuş.
+
+875
+02:19:05,354 --> 02:19:10,735
+Nezde olma olasılığı bir bölü kırkmış.
+
+876
+02:19:10,735 --> 02:19:19,816
+örneğin baş ağrısı nezleyken baş ağrısı olma olasılığı da 1 bölü 2'ymiş.
+
+877
+02:19:19,816 --> 02:19:26,216
+Yani bağımsız olarak bir kişide baş ağrısı olma olasılığı 1 bölü 10 olsun,
+
+878
+02:19:27,014 --> 02:19:30,475
+bağımsız olarak nezle olma olasılığı 1 bölü 40 olsun.
+
+879
+02:19:30,975 --> 02:19:33,095
+Bu da şartlı olasılık.
+
+880
+02:19:33,275 --> 02:19:39,456
+Yani nezleyken yani nezle olmuş bir kere nezleyken baş ağrısının olma olasılığı da
+
+881
+02:19:39,456 --> 02:19:40,916
+diyelim ki 1 bölü 2 olsun.
+
+882
+02:19:41,014 --> 02:19:43,496
+Buna şartlı olasılık
+
+883
+02:19:43,496 --> 02:19:45,235
+deniyor. Eğer
+
+884
+02:19:45,235 --> 02:19:46,475
+A ve B
+
+885
+02:19:46,475 --> 02:19:48,335
+şeyse
+
+886
+02:19:48,335 --> 02:19:50,514
+bağımsız iki
+
+887
+02:19:50,514 --> 02:19:53,435
+olay ise o zaman
+
+888
+02:19:53,435 --> 02:19:56,275
+P A
+
+889
+02:19:56,275 --> 02:19:59,656
+P B iken A'ya
+
+890
+02:19:59,656 --> 02:20:01,296
+eşit
+
+891
+02:20:01,296 --> 02:20:02,376
+demektir.
+
+892
+02:20:07,282 --> 02:20:14,282
+Peki. Şimdi gelelim şeye.
+
+893
+02:20:15,666 --> 02:20:22,666
+Diyelim ki bir bahçede 200 kiraz ağacı var.
+
+894
+02:20:26,291 --> 02:20:28,291
+120'de erik ağacı var.
+
+895
+02:20:29,291 --> 02:20:37,291
+ve yerde bir yaprak buluyorsunuz. Ne kiraz ağacı yaprağını tanıyorsunuz, ne de erik ağacı yaprağını tanıyorsunuz.
+
+896
+02:20:37,291 --> 02:20:44,291
+Ben size sorsam, yaprak hangi ağaca aittir diye ne dersiniz?
+
+897
+02:20:49,426 --> 02:21:04,847
+Tekrar soruyorum. 200 tane kiraz ağacı var bahçede. 120 tane de erik ağacı var. Yerde de bir yaprak var. Ya kiraza ait olacak ya erik ağacına ait olacak. Ne dersiniz? Yaprak hangi ağaca ait? Kiraz.
+
+898
+02:21:04,847 --> 02:21:22,067
+Kiraz dersiniz. Neden kiraz dersiniz? Şimdi yaprağın kiraza ait olma olasılığı 200 bölü 320, 50'ye ait olma olasılığı da 120 bölü 320.
+
+899
+02:21:22,067 --> 02:21:35,127
+Şimdi 200 bölü 320, 120 bölü 320'den büyük olduğu için hemen dersiniz ki ben kiraz diyeyim de şansımı arttırayım. Yani kiraz olabiliyor de olmayabilirim ama ben şansımı arttırayım.
+
+900
+02:21:35,127 --> 02:21:51,807
+Şimdi burada aslında yani keşke elimde bir şey daha olsaydı, özellik daha olsaydı, daha doğrusu elimde bir özellik olsaydı ben şu anda sadece şeyden gidiyorum yani kiraz ağaçlarının daha fazla olmasından gidiyorum.
+
+901
+02:21:51,807 --> 02:22:08,987
+Ama o yaprağı görüyorum, yaprağın işte ne bileyim ince uzun olabilir efendim mesela şimdi sonbahar kırmızı bazı yapraklar kırmızı oluyor sonbaharda bazıları sarı oluyor. Diyelim ki kırmızı oluyor olabilir vesaire. Yani gözlemlediğim bir özelliği de olabilir.
+
+902
+02:22:08,987 --> 02:22:30,407
+Peki ben hem şeyi kullansaydım, oradaki ağaçların sayısına bağlı olarak ağacın hangi, yaprağın hangi ağaca ait olabileceğini hem onu kullansaydım hem de gördüğüm özellikleri kullanarak bir bilgi çıkarabilseydim acaba daha başarılı bir sınıflandırma yapar mıydım?
+
+903
+02:22:30,407 --> 02:22:38,307
+Evet tabii ki yapardım. Yani burada sadece kiraz ve eriklerin bulunma durumuna göre karar veriyorum.
+
+904
+02:22:38,307 --> 02:22:48,707
+Halbuki gördüğüm özellikler de var. Bu özellikleri de kullanırsam daha doğru bir sınıflandırma yapabilirim.
+
+905
+02:22:49,067 --> 02:22:53,627
+Bayes teoremi buna dayanıyor. Bayes teoremi diyor ki,
+
+906
+02:22:58,420 --> 02:23:17,459
+bir A durumunun B şartı sağlanıyorken A durumunun olma olasılığı A şartı sağlanıyorken B'nin olma olasılığı çarpı A'nın olma olasılığı bölü B'nin olma olasılığına eşittir diyor.
+
+907
+02:23:17,459 --> 02:23:25,680
+Şimdi bu PA bilmediğimiz bilgi aslında. Ben çünkü A'yı merak ediyorum.
+
+908
+02:23:25,680 --> 02:23:26,998
+A'yı merak ediyorum.
+
+909
+02:23:29,800 --> 02:23:32,680
+Bu A iken B olma olasılığı...
+
+910
+02:23:37,203 --> 02:23:50,343
+daha önceden bilinmeyen örneğin bir şey yapma olasılığı, hangi sınıfa ait olduğu olasılığı, yani şöyle yazayım ben önce bunu.
+
+911
+02:23:50,343 --> 02:24:07,462
+Şimdi yaprağa ait bilgileri gördünüz. Bu data yaprağın özellikleri, yaprağın özelliklerini gördünüz.
+
+912
+02:24:07,462 --> 02:24:13,802
+Ve şimdi hangi ağaca ait diye soruyorsunuz.
+
+913
+02:24:13,802 --> 02:24:28,222
+Hangi ağaca ait diye soruyorsunuz. Bulmak istediğimiz şey bu. Sınıfını merak ediyorsunuz. Kiraz mıdır, erik midir diye. Hangi ağaca ait olduğunu bulmak istiyorsunuz.
+
+914
+02:24:28,222 --> 02:24:35,823
+Şimdi bu da diyor ki, önceden elinde bir takım olasılıklar var diyor. Bunu kullan diyor.
+
+915
+02:24:40,180 --> 02:24:44,639
+Bu olasılıklar ben şeyi biliyorum.
+
+916
+02:24:44,838 --> 02:24:50,898
+Birincisi sınıfların olasılıklarını biliyorum.
+
+917
+02:24:52,959 --> 02:24:56,139
+Yani P kirazı değil mi?
+
+918
+02:24:56,799 --> 02:24:59,238
+Ve P eriyi biliyorum.
+
+919
+02:24:59,418 --> 02:25:04,119
+Bu elimde zaten önceden elimde olan olasılık.
+
+920
+02:25:04,119 --> 02:25:18,838
+Şeyi de biliyorum, P işte attribute 1, attribute 2 vs. kirazken kirazın sağlanan özelliklerinin olasılığını biliyorum.
+
+921
+02:25:20,619 --> 02:25:27,860
+Aynı erik itken bu erikte verdiğim özelliklerin olma olasılığını biliyorum.
+
+922
+02:25:27,860 --> 02:25:34,079
+Yani şöyle mesela ben dedim ki yaprağın özelliklerine işte kırmızı dedim.
+
+923
+02:25:35,299 --> 02:25:37,520
+Ne bileyim bir özellik daha söyleyeyim.
+
+924
+02:25:37,599 --> 02:25:40,279
+İnce dedim mesela ince bir yaprak dedim.
+
+925
+02:25:41,739 --> 02:25:45,120
+Şimdi ben daha önceden elimde şeyler var.
+
+926
+02:25:45,318 --> 02:25:50,998
+Mesela işte kırmızı ve ince olan yaprakların kiraz ağacına ait olma olasılıkları.
+
+927
+02:25:50,998 --> 02:25:58,760
+işte kırmızı ve ince olan yaprakların erik ağacına ait olma olasılıkları gibi bilgileri önceden ben toplamışım.
+
+928
+02:25:58,899 --> 02:26:00,699
+Zaten var benim elimde bu bilgiler.
+
+929
+02:26:01,738 --> 02:26:10,680
+O zaman şimdi ben yaprağın özelliklerini görüyorum, gözledim ve hangi sınıfa ait olduğunu bulmak istiyorum.
+
+930
+02:26:10,680 --> 02:26:28,639
+O zaman diyorum ki eğer kiraz ağacı için bu özelliklerin sağlanma olasılığını ve kiraz ağacının olasılığını çarpar, ondan sonra da bu işte data dediğim özelliklere bölersem bir olasılık elde ederim.
+
+931
+02:26:28,639 --> 02:26:37,940
+Erik ağacı için kırmızı ve ince yaprağın, erik ağacının kırmızı ve ince yaprağa sahip olma olasılığını hesaplar.
+
+932
+02:26:38,440 --> 02:26:47,838
+Erik ağacının olasılığıyla çarpar ve dataya da bölersem, datanın olasılığına da bölersem yani bu işte kırmızının incenin olasılığına bölersem
+
+933
+02:26:47,838 --> 02:26:55,078
+bu sefer de erik ağacının, yaprağın erik ağacına ait olma olasılığını bulurum.
+
+934
+02:26:55,078 --> 02:27:01,459
+hangisinin olasılığı daha fazlaysa o zaman benim örneğim o sınıfa aittir demektir diyorum.
+
+935
+02:27:01,459 --> 02:27:14,338
+Dolayısıyla ben bilinmeyen bir örneğin yaprağın özellikleri verildiğinde hangi sınıfa ait olduğunu bulmak için şeyden gidiyorum farkındaysanız.
+
+936
+02:27:14,340 --> 02:27:27,220
+sınıfta geriye doğru giderek elimdeki özelliklere göre örneğin hangi sınıfa daha çok benzediğini bulmaya çalışıyorum.
+
+937
+02:27:27,738 --> 02:27:29,818
+Yapmaya çalıştığım şey bu.
+
+938
+02:27:30,300 --> 02:27:34,040
+Şimdi buraya kadar çok karışık gelmiş olabilir.
+
+939
+02:27:34,659 --> 02:27:37,860
+Biraz şey yaparak buna da Bayez Teoremi deniyor.
+
+940
+02:27:37,979 --> 02:27:40,399
+Yani Bayez Teoremi şudur.
+
+941
+02:27:40,399 --> 02:27:55,840
+B özellikleri verildiğinde A sınıfını yani bu özelliklerin hangi sınıfa daha çok örneğimizin hangi sınıfa daha çok benzediğini bulmaya çalışmak, yapmaya çalıştığımız şey bu.
+
+942
+02:27:55,838 --> 02:28:03,119
+Şimdi burada şöyle bakacak olursak dikkatinizi çekerse şimdi şunu yazayım.
+
+943
+02:28:03,779 --> 02:28:06,099
+P A iken B dedik.
+
+944
+02:28:07,318 --> 02:28:15,738
+P B iken A çarpı P A bölü P B.
+
+945
+02:28:15,918 --> 02:28:17,478
+Önce bunu bir yazayım.
+
+946
+02:28:18,459 --> 02:28:20,779
+Ondan sonra şuna bakalım.
+
+947
+02:28:20,779 --> 02:28:25,779
+Şimdi ben dedim ki şunlar benim özelliklerim olsun.
+
+948
+02:28:25,838 --> 02:28:25,939
+Tamam.
+
+949
+02:28:28,756 --> 02:28:45,855
+ben örneğimin hangi sınıfa ait olduğunu bulacağım. Yani A aslında sınıfı gösteriyor. İşte A1'in kiraz sınıfı, A2'in de erik sınıfı. Şimdi ben bunu bulmaya çalışacağım.
+
+950
+02:28:45,855 --> 02:29:05,174
+dikkat ederseniz P ve her ikisinde de ortak fayda. O zaman aslında değil mi? Her ikisinde de verilen özellikler için örneğimin A1 ve A2 aslında A gibi gösteriyor.
+
+951
+02:29:05,174 --> 02:29:19,354
+örneğimin A1 sınıfına mı ait A2 sınıfına mı ait olduğunu bulmaya istediğimde Pb her ikisinde de ortak olan bilgi o zaman şeyi değiştirmeyeceğinden bunu iptal edebilirim.
+
+952
+02:29:19,354 --> 02:29:30,975
+Durumu değiştirmeyeceğimden hangi tarafa daha çok benzediğini değiştirmeyeceğimden çünkü ikisinde de B'ye bölüyorsak bu zaten normalizasyon için kullanılıyor.
+
+953
+02:29:30,975 --> 02:29:53,976
+durumu değiştirmeyeceğim. Ben PV'yi kullanmayabilirim. O zaman elimdeki örneğin hangi sınıfa daha çok benzediğini kullanmak için her sınıfa benzerliğini ölçsem ve hangisi benzerlik daha büyükse onu kullansam,
+
+954
+02:29:53,976 --> 02:29:57,775
+bu bana yeterli olur.
+
+955
+02:29:57,876 --> 02:29:59,736
+Unknown class diyelim buraya.
+
+956
+02:30:01,775 --> 02:30:03,315
+Ne yapacağım demek ki?
+
+957
+02:30:10,738 --> 02:30:16,918
+bu y1, y2, y en tane klas olsun.
+
+958
+02:30:21,236 --> 02:30:23,236
+bu büyük ye
+
+959
+02:30:32,114 --> 02:30:41,496
+verilen özellikler için hangi sınıfa ait olduğunu bulmaya çalışıyoruz. Bu neye eşit olacak o zaman?
+
+960
+02:30:56,818 --> 02:31:08,739
+Bizim söylediğimiz, madem ki x hepsinde geçiyor, o zaman bunu iptal edebilirim. x benim gözlemlediğim özelliklerim çünkü.
+
+961
+02:31:08,739 --> 02:31:38,459
+O zaman bilinmeyen sınıfın hangisi olduğunu bulmak için bütün sınıflar için şeyi deneyeceğim, olasılıkları hesaplayacağım ve hangisi için olasılık daha fazlaysa maksimum olanını pardon şurada şeyi şunu kaldırıyorum şöyle olasılığın hangisi daha fazlaysa onu alacağım.
+
+962
+02:31:38,738 --> 02:31:40,978
+Bu da
+
+963
+02:31:45,139 --> 02:31:58,759
+maksimum ve posteriori estimate yapmak gereken şey bu. Şimdi buna göre bir tane örnek üzerinden şey yapalım, bakalım nasıl olduğuna bakalım.
+
+964
+02:31:58,759 --> 02:32:18,199
+Şimdi diyelim ki bir şey olan çok böyle gündemde olan COVID üzerinden yapalım. Bir hasta laboratuvar testleri yapıyor ve bu test sonuçları şu şekilde çıkıyor.
+
+965
+02:32:18,199 --> 02:32:22,639
+pozitif çıkıyor daha doğrusu. Test sonucu pozitif çıkıyor.
+
+966
+02:32:22,639 --> 02:32:28,019
+Hasta pozitif şey midir? Covid'indir değil midir? Buna karar vereceğiz.
+
+967
+02:32:28,139 --> 02:32:34,158
+Yapmaya çalıştığımız şey şu. Yani bir test yapalım. Test sonuçları pozitif çıkmış.
+
+968
+02:32:34,279 --> 02:32:36,838
+Hasta Covid'dir değil midir? Buna karar vereceğiz.
+
+969
+02:32:36,838 --> 02:32:50,779
+Şimdi önceki bilgiler şunlar toplumda bulunan kişilerin binde sekizinde COVID var. Bu önceki bilgi.
+
+970
+02:32:50,779 --> 02:32:59,360
+bugüne kadar yapılan şeyler sonucunda, bildirimler sonucunda
+
+971
+02:34:13,083 --> 02:34:16,623
+Hocanın interneti mi kesildi? Plan var mı?
+
+972
+02:34:16,863 --> 02:34:18,263
+Galiba hocağa düştü ya.
+
+973
+02:34:20,403 --> 02:34:27,903
+Diğerinde bir tane link atmışsın, oradan mı izleyebileceğiz? İki ayrı ders ayrı şekilde kayıt olabilecek mi?
+
+974
+02:34:29,844 --> 02:34:31,543
+Bu ilk ders.
+
+975
+02:34:32,344 --> 02:34:35,083
+Siz bende bu katını geleceksiniz de.
+
+976
+02:34:36,163 --> 02:34:38,844
+Link açılmıyor bende, kayıt yok diyor.
+
+977
+02:34:40,063 --> 02:34:41,043
+Herkes de öyle mi?
+
+978
+02:34:41,043 --> 02:34:43,483
+Tamam bakmadım da bir bakayım o zaman
+
+979
+02:34:54,844 --> 02:34:55,883
+Ben görebiliyorum.
+
+980
+02:34:58,023 --> 02:35:01,344
+Ben de görüyorum. 35 dakika.
+
+981
+02:35:05,755 --> 02:35:07,755
+O zaman bende problem var.
+
+982
+02:35:08,695 --> 02:35:10,895
+Görünüyoruz. 35 dakikalık bir kayıt şeklinde.
+
+983
+02:35:11,375 --> 02:35:12,355
+Tamam, teşekkürler.
+
+984
+02:35:12,736 --> 02:35:16,295
+Rica ederim. Teşekkürler [öğrenci] bu arada link için.
+
+985
+02:35:17,096 --> 02:35:17,695
+Rica ederim.
+
+986
+02:44:53,275 --> 02:44:55,275
+Hocanın bağlanmasını bekliyoruz.
+
+987
+02:45:36,572 --> 02:45:39,711
+Onca farklı bir linkten falan bağlanmış olabilir mi acaba?
+
+988
+02:45:42,291 --> 02:45:44,691
+Yok, onu kontrol ettim. Şu an tekrar oturum var.
+
+989
+02:53:34,139 --> 02:53:37,219
+sanırım ders devam ediyormuş.
+
+990
+02:53:38,179 --> 02:53:49,139
+Ben hocaya mesaj attım da ona da cevap vermedi. Şimdi bu oturumu kapatıyorum ben. Normalde bizim tarafta farklı bir oturum gözükmüyor ama belki bir sıkıntı var.
+
+991
+02:53:49,139 --> 02:53:50,139
+Tamam.
