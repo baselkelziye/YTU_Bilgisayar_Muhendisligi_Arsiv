@@ -39,6 +39,7 @@
 
 #### 📚 Faydalı Olabilecek Kaynaklar
 
+- 📄 **Ders Kayıtları:** [Atatürk İlkeleri ve İnkılap Tarihi 1 Ders Kayıtları Altyazıları](./Atat%C3%BCrk%20%C4%B0lkeleri%20ve%20%C4%B0nk%C4%B1lap%20Tarihi%201/ders_kayitlari/) ✨
 - 📄 [Genel Çıkmış Sorular](https://drive.google.com/drive/folders/1imIiwx0xxIPWREGP-YqotnFdUku8Ealf)
   - ℹ️ Kaynaklar öğrenciler tarafından oluşturulmuştur. Bundan dolayı içeriklerin doğruluğu garanti edilemez.
 
