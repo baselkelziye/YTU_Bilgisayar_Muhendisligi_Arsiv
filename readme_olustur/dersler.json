@@ -7094,7 +7094,12 @@
             "yil": 0,
             "donem": "yok",
             "tip": "Lisansüstü",
-            "dersi_veren_hocalar": [],
+            "dersi_veren_hocalar": [
+                {
+                    "kisaltma": "BD",
+                    "ad": "Prof. Dr. Banu Diri"
+                }
+            ],
             "guncel_mi": true,
             "faydali_olabilecek_kaynaklar": [
                 "**Ders Kayıtları:** [Doğal Dil İşlemeye Kavramsal Bir Bakış Ders Kayıtları Altyazıları](./ders_kayitlari/)"
