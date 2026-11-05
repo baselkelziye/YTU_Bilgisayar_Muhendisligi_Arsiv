@@ -32,7 +32,7 @@ Aşağıdaki tabloda her bir dersin konusu ile kısa ve genişletilmiş notları
 | **Ders 10** | Eğitmensiz Öğrenme: K-Means, Dirsek Yöntemi ve Hiyerarşik Öbekleme | [Markdown](kisa_notlar/markdown/ders_10_ozet.md) · [PDF](kisa_notlar/ders_10_ozet.pdf) | [Markdown](genisletilmis_notlar/markdown/ders_10_genisletilmis.md) · [PDF](genisletilmis_notlar/ders_10_genisletilmis.pdf) |
 | **Ders 12** | Öz Düzenleyici Haritalar, Pekiştirmeli Öğrenme ve Q-Öğrenme | [Markdown](kisa_notlar/markdown/ders_12_ozet.md) · [PDF](kisa_notlar/ders_12_ozet.pdf) | [Markdown](genisletilmis_notlar/markdown/ders_12_genisletilmis.md) · [PDF](genisletilmis_notlar/ders_12_genisletilmis.pdf) |
 | **Ders 13** | Özellik Seçimi, Filtre ve Sarmalayıcı Yöntemler ve Temel Bileşen Analizi | [Markdown](kisa_notlar/markdown/ders_13_ozet.md) · [PDF](kisa_notlar/ders_13_ozet.pdf) | [Markdown](genisletilmis_notlar/markdown/ders_13_genisletilmis.md) · [PDF](genisletilmis_notlar/ders_13_genisletilmis.pdf) |
-| **Ders 14** | Tavsiye Sistemleri, İşbirlikçi Filtreleme ve Dönem Değerlendirmesi | [Markdown](kisa_notlar/markdown/ders_14_ozet.md) · [PDF](kisa_notlar/ders_14_ozet.pdf) | — |
+| **Ders 14** | Tavsiye Sistemleri, İşbirlikçi Filtreleme ve Dönem Değerlendirmesi | [Markdown](kisa_notlar/markdown/ders_14_ozet.md) · [PDF](kisa_notlar/ders_14_ozet.pdf) | [Markdown](genisletilmis_notlar/markdown/ders_14_genisletilmis.md) · [PDF](genisletilmis_notlar/ders_14_genisletilmis.pdf) |
 
 > [!NOTE]
 > 9 numaralı kayıt (1 Aralık 2020, vize) ve 11 numaralı kayıt (15 Aralık 2020, ders yapılmadı) arşivde yoktur.
