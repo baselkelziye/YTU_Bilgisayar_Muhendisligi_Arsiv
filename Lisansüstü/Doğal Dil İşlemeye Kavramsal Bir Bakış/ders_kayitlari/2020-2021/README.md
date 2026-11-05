@@ -9,26 +9,30 @@
 * **Akademik Yıl:** 2020-2021
 * **Şube:** BLM5105 - 1
 
-Bu dizin, ilgili ders kayıtlarının altyazı özetlerini, çalışma notlarını ve PDF kaynaklarını içermektedir.
+Bu dizin, ilgili ders kayıtlarının altyazılarını, kısa notlarını ve genişletilmiş notlarını içermektedir.
+
+* **Kısa not:** Tekrar için. Dersin konuları, hocanın vurguları ve kısa tekrar maddeleri.
+* **Genişletilmiş not:** Dersi izlemeden öğrenmek için. Dersin anlatım akışını baştan sona, örnekleri ve soru-cevaplarıyla anlatır.
+* `altyazilar/`: ders kayıtlarının altyazıları (.srt). Notların PDF'leri `kisa_notlar/` ve `genisletilmis_notlar/` klasörlerinde, markdown kaynakları bu klasörlerin içindeki `markdown/` klasöründedir.
 
 ## 📚 Ders Müfredatı ve Belge Dizini
 
-Aşağıdaki tabloda her bir dersin konusu, kaynak markdown dosyası ve doğrudan indirilebilir PDF formatındaki derlenmiş halleri listelenmiştir. Ders numaraları, kayıt arşivindeki ders kaydı sıra numaralarıdır (hafta numarası değildir).
+Aşağıdaki tabloda her bir dersin konusu ile kısa ve genişletilmiş notlarının markdown ve PDF halleri listelenmiştir. Ders numaraları, kayıt arşivindeki ders kaydı sıra numaralarıdır (hafta numarası değildir).
 
-| Ders No | Ders İçeriği / Konu Başlıkları | Kaynak Notlar (Markdown) | Çalışma Dosyası (PDF) |
+| Ders No | Ders İçeriği / Konu Başlıkları | Kısa Not | Genişletilmiş Not |
 | :---: | :--- | :---: | :---: |
-| **Ders 1** | Doğal Dil İşlemeye Genel Bakış ve Dersin İşleyişi | [Özet](altyazi_ozetleri/ders_1_ozet.md) | [PDF (İndir)](ders_1_ozet.pdf) |
-| **Ders 3** | Dilbiliminin Esasları, Biçim Bilim ve Chomsky Hiyerarşisi | [Özet](altyazi_ozetleri/ders_3_ozet.md) | [PDF (İndir)](ders_3_ozet.pdf) |
-| **Ders 4** | Düzenli İfadeler ve Biçimbilimsel Analiz | [Özet](altyazi_ozetleri/ders_4_ozet.md) | [PDF (İndir)](ders_4_ozet.pdf) |
-| **Ders 5** | Sentaktik Analiz, Ağaç Derlemleri ve Dil Modellerine Giriş | [Özet](altyazi_ozetleri/ders_5_ozet.md) | [PDF (İndir)](ders_5_ozet.pdf) |
-| **Ders 6** | N-Gram Modelleri, Yumuşatma Teknikleri, Kelime Anlam Belirsizliği ve WordNet | [Özet](altyazi_ozetleri/ders_6_ozet.md) | [PDF (İndir)](ders_6_ozet.pdf) |
-| **Ders 7** | Kelime Gösterimleri, Kelime Gömmeleri ve Metin Sınıflandırma | [Özet](altyazi_ozetleri/ders_7_ozet.md) | [PDF (İndir)](ders_7_ozet.pdf) |
-| **Ders 8** | Metin İşleme Algoritmaları ve Bilgiye Erişim Modelleri | [Özet](altyazi_ozetleri/ders_8_ozet.md) | [PDF (İndir)](ders_8_ozet.pdf) |
-| **Ders 9** | Gizli Anlamsal İndeksleme, Performans Ölçütleri ve Bilgi Çıkarımı | [Özet](altyazi_ozetleri/ders_9_ozet.md) | [PDF (İndir)](ders_9_ozet.pdf) |
-| **Ders 10** | Vize Başlangıcı | [Özet](altyazi_ozetleri/ders_10_ozet.md) | [PDF (İndir)](ders_10_ozet.pdf) |
-| **Ders 11** | Seminer Sunumları: Metin Benzerliği, Metin Kümeleme, Twitter Görüş Analizi, Alaycılık Tespiti ve Soyutlayıcı Özetleme | [Özet](altyazi_ozetleri/ders_11_ozet.md) | [PDF (İndir)](ders_11_ozet.pdf) |
-| **Ders 12** | Seminer Sunumları: Kelime Gömmelerinin İyileştirilmesi, Sosyal Mühendislik Tespiti, Çok Kipli Duygu Analizi ve ÖSYM Sorularının Çözümü | [Özet](altyazi_ozetleri/ders_12_ozet.md) | [PDF (İndir)](ders_12_ozet.pdf) |
-| **Ders 13** | Seminer Sunumları: Duygu Tespiti Yaklaşımları, Konu Bölümleme, Türkçe Kelime Bölümleme ve Bağımlılık Tabanlı Dil Modelleri | [Özet](altyazi_ozetleri/ders_13_ozet.md) | [PDF (İndir)](ders_13_ozet.pdf) |
+| **Ders 1** | Doğal Dil İşlemeye Genel Bakış ve Dersin İşleyişi | [Markdown](kisa_notlar/markdown/ders_1_ozet.md) · [PDF](kisa_notlar/ders_1_ozet.pdf) | [Markdown](genisletilmis_notlar/markdown/ders_1_genisletilmis.md) · [PDF](genisletilmis_notlar/ders_1_genisletilmis.pdf) |
+| **Ders 3** | Dilbiliminin Esasları, Biçim Bilim ve Chomsky Hiyerarşisi | [Markdown](kisa_notlar/markdown/ders_3_ozet.md) · [PDF](kisa_notlar/ders_3_ozet.pdf) | — |
+| **Ders 4** | Düzenli İfadeler ve Biçimbilimsel Analiz | [Markdown](kisa_notlar/markdown/ders_4_ozet.md) · [PDF](kisa_notlar/ders_4_ozet.pdf) | — |
+| **Ders 5** | Sentaktik Analiz, Ağaç Derlemleri ve Dil Modellerine Giriş | [Markdown](kisa_notlar/markdown/ders_5_ozet.md) · [PDF](kisa_notlar/ders_5_ozet.pdf) | — |
+| **Ders 6** | N-Gram Modelleri, Yumuşatma Teknikleri, Kelime Anlam Belirsizliği ve WordNet | [Markdown](kisa_notlar/markdown/ders_6_ozet.md) · [PDF](kisa_notlar/ders_6_ozet.pdf) | — |
+| **Ders 7** | Kelime Gösterimleri, Kelime Gömmeleri ve Metin Sınıflandırma | [Markdown](kisa_notlar/markdown/ders_7_ozet.md) · [PDF](kisa_notlar/ders_7_ozet.pdf) | — |
+| **Ders 8** | Metin İşleme Algoritmaları ve Bilgiye Erişim Modelleri | [Markdown](kisa_notlar/markdown/ders_8_ozet.md) · [PDF](kisa_notlar/ders_8_ozet.pdf) | — |
+| **Ders 9** | Gizli Anlamsal İndeksleme, Performans Ölçütleri ve Bilgi Çıkarımı | [Markdown](kisa_notlar/markdown/ders_9_ozet.md) · [PDF](kisa_notlar/ders_9_ozet.pdf) | — |
+| **Ders 10** | Vize Başlangıcı | [Markdown](kisa_notlar/markdown/ders_10_ozet.md) · [PDF](kisa_notlar/ders_10_ozet.pdf) | — |
+| **Ders 11** | Seminer Sunumları: Metin Benzerliği, Metin Kümeleme, Twitter Görüş Analizi, Alaycılık Tespiti ve Soyutlayıcı Özetleme | [Markdown](kisa_notlar/markdown/ders_11_ozet.md) · [PDF](kisa_notlar/ders_11_ozet.pdf) | — |
+| **Ders 12** | Seminer Sunumları: Kelime Gömmelerinin İyileştirilmesi, Sosyal Mühendislik Tespiti, Çok Kipli Duygu Analizi ve ÖSYM Sorularının Çözümü | [Markdown](kisa_notlar/markdown/ders_12_ozet.md) · [PDF](kisa_notlar/ders_12_ozet.pdf) | — |
+| **Ders 13** | Seminer Sunumları: Duygu Tespiti Yaklaşımları, Konu Bölümleme, Türkçe Kelime Bölümleme ve Bağımlılık Tabanlı Dil Modelleri | [Markdown](kisa_notlar/markdown/ders_13_ozet.md) · [PDF](kisa_notlar/ders_13_ozet.pdf) | — |
 
 > [!NOTE]
 > 2 numaralı kayıt (15 Ekim 2020) arşivde yoktur, o hafta ders yapılmamıştır; 29 Ekim 2020 resmî tatildir.
