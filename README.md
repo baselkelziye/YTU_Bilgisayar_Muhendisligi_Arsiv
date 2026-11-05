@@ -3056,6 +3056,8 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
   - 🏷️ **Ders Tipi:** Lisansüstü
   - ⭐ **Yıldız Sayıları:**
       - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+  - 👨‍🏫 👩‍🏫 **Dersi Yürüten Akademisyenler:**
+    - [BD](#-prof-dr-banu-diri)
   - 📂 [Ders Klasörü](./Lisans%C3%BCst%C3%BC/Do%C4%9Fal%20Dil%20%C4%B0%C5%9Flemeye%20Kavramsal%20Bir%20Bak%C4%B1%C5%9F)
 
 
@@ -3541,6 +3543,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
   - 📖 [Doğal Dil İşlemeye Giriş](#-doğal-dil-i̇şlemeye-giriş)
   - 📖 [Seminer ve Meslek Etiği](#-seminer-ve-meslek-etiği)
   - 📖 [Veri Sıkıştırma](#-veri-sıkıştırma)
+  - 📖 [Doğal Dil İşlemeye Kavramsal Bir Bakış](#-doğal-dil-i̇şlemeye-kavramsal-bir-bakış)
 - ⭐ **Yıldız Sayıları:**
   - 🎭 Dersi Zevkli Anlatır Mı:	★★★★★★★★☆☆
   - 🛣️ Dersi Kolay Geçer Miyim:	★★★★★★★☆☆☆
