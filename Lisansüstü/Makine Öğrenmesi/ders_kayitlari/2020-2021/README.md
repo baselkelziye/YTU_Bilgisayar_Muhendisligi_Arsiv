@@ -23,7 +23,7 @@ Aşağıdaki tabloda her bir dersin konusu ile kısa ve genişletilmiş notları
 | :---: | :--- | :---: | :---: |
 | **Ders 1** | Makine Öğrenmesine Giriş: Öğrenme Türleri, Veri Toplama ve Ön İşleme | [Markdown](kisa_notlar/markdown/ders_1_ozet.md) · [PDF](kisa_notlar/ders_1_ozet.pdf) | [Markdown](genisletilmis_notlar/markdown/ders_1_genisletilmis.md) · [PDF](genisletilmis_notlar/ders_1_genisletilmis.pdf) |
 | **Ders 2** | Eğitmenli Öğrenme ve Karar Ağaçları: Entropi, Bilgi Kazancı ve ID3 | [Markdown](kisa_notlar/markdown/ders_2_ozet.md) · [PDF](kisa_notlar/ders_2_ozet.pdf) | [Markdown](genisletilmis_notlar/markdown/ders_2_genisletilmis.md) · [PDF](genisletilmis_notlar/ders_2_genisletilmis.pdf) |
-| **Ders 3** | Karar Ağaçlarında Budama, Bayes Teoremi ve Naive Bayes Sınıflandırıcısı | [Markdown](kisa_notlar/markdown/ders_3_ozet.md) · [PDF](kisa_notlar/ders_3_ozet.pdf) | — |
+| **Ders 3** | Karar Ağaçlarında Budama, Bayes Teoremi ve Naive Bayes Sınıflandırıcısı | [Markdown](kisa_notlar/markdown/ders_3_ozet.md) · [PDF](kisa_notlar/ders_3_ozet.pdf) | [Markdown](genisletilmis_notlar/markdown/ders_3_genisletilmis.md) · [PDF](genisletilmis_notlar/ders_3_genisletilmis.pdf) |
 | **Ders 4** | K En Yakın Komşu, Mesafe Ölçüleri ve Normalizasyon | [Markdown](kisa_notlar/markdown/ders_4_ozet.md) · [PDF](kisa_notlar/ders_4_ozet.pdf) | — |
 | **Ders 5** | Model Değerlendirme, Çapraz Doğrulama ve Başarı Ölçüleri | [Markdown](kisa_notlar/markdown/ders_5_ozet.md) · [PDF](kisa_notlar/ders_5_ozet.pdf) | — |
 | **Ders 6** | Doğrusal Regresyon, Gradyan İnişi ve Lojistik Regresyon | [Markdown](kisa_notlar/markdown/ders_6_ozet.md) · [PDF](kisa_notlar/ders_6_ozet.pdf) | — |
