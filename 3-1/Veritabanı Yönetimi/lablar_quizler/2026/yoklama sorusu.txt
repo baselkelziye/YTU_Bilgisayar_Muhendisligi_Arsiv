@@ -1,0 +1,6 @@
+En yüksek maaşı alan ilk 3 çalışanın adını, soyadını ve maaşını listeleyiniz.
+
+SELECT fname, lname, salary
+FROM employee
+ORDER BY salary DESC
+LIMIT 3;
