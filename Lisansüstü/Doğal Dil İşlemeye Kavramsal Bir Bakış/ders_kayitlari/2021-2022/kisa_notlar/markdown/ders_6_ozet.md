@@ -77,7 +77,7 @@
 - Veri: BBC haber veri kümesi. 5 alan (iş, eğlence, politika, spor, teknoloji), toplam 2225 belge.
 - Yöntem (R dilinde):
   - Temizlik: URL, noktalama, gereksiz boşluk ve stop word silinir.
-  - Kök bulma (stemming): örneğin "education" → "educat".
+  - Kök bulma (stemming): örneğin "education" → öğrencinin söylediği "educate" (Porter kök bulucu büyük olasılıkla "educ" verir).
   - `tm` paketiyle belge-terim matrisi oluşturulur.
   - Duygu puanı için 2006 olumlu ve 4783 olumsuz kelimelik bir duygu sözlüğü kullanılır. Her kelime sözlükle karşılaştırılıp puanlanır.
 - Sonuçlar: Örneğin iş kategorisinde 510 makaleden 262'si pozitif, 214'ü negatif, 34'ü nötr çıkmıştır.
