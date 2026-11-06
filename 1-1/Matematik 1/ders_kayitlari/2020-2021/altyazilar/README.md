@@ -45,4 +45,4 @@ Dersler 6 Ekim 2020 Salı günü başlamıştır. Ders haftada iki gün (Salı v
 - 1. vize: 21 Kasım 2020 Cumartesi 15.00, online test.
 - 2. vize: 25 Aralık 2020 Cuma 16.00, online test.
 
-**Not:** İsterseniz bu kayıtları NotebookLM gibi bir araca atıp daha istifadeli hale getirebilirsiniz.
+**Not:** İsterseniz bu kayıtları Gemini Notebook gibi bir araca atıp daha istifadeli hale getirebilirsiniz.

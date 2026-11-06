@@ -1,6 +1,6 @@
 # Ayrık Matematik Ders Kayıtları & Çalışma Özetleri
 
-> **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+> **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
 
 ### 📋 Genel Bilgiler
 * **Ders:** Ayrık Matematik (BLM2521)
@@ -334,4 +334,4 @@ Aşağıdaki tabloda her bir dersin konusu, kaynak markdown dosyası ve doğruda
     - Durma noktası belliyse (ör. ilk hatada çık, şifre uzunluğu) bitiş durumu konur.
   - Kendinize alıştırma yapın: sola kaydırma, iki bitlik sayıları toplama, çıkarma makineleri.
 
-**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

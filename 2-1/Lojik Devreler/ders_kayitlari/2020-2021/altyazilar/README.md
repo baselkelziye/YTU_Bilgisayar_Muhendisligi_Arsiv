@@ -35,4 +35,4 @@ Dersler 14 Ekim 2020 günü başlamıştır. Dosya adlarındaki `ders_x.srt` ifa
 - 7. hafta kayıt bulunmamaktadır.
 - 14. hafta kayıt bulunmamaktadır.
 
-**Not:** İsterseniz bu kayıtları NotebookLM gibi bir araca atıp daha istifadeli hale getirebilirsiniz.
+**Not:** İsterseniz bu kayıtları Gemini Notebook gibi bir araca atıp daha istifadeli hale getirebilirsiniz.

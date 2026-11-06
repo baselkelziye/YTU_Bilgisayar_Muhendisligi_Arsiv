@@ -1,6 +1,6 @@
 # Seminer ve Meslek Etiği Ders Kayıtları & Çalışma Özetleri
 
-> **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+> **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
 
 ### 📋 Genel Bilgiler
 * **Ders:** Seminer ve Meslek Etiği (BLM3042)
@@ -162,4 +162,4 @@ Aşağıdaki tabloda her bir dersin konusu, kaynak markdown dosyası ve doğruda
   - Hocaya göre Word belgeleri, Excel dosyaları, fotoğraflar (EXIF), CD/DVD tarihleri ve e-posta çıktıları tek başına adli kanıt sayılmaz.
     - Bunların üst verileri (metadata) kolayca değiştirilebilir. Hoca, Ergenekon ve Balyoz davalarının bu tür kanıtlar yüzünden çöktüğünü söylüyor.
 
-**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

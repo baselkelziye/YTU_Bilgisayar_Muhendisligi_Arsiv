@@ -1,6 +1,6 @@
 # Bilişim Sistemleri Güvenliği Ders Kayıtları & Çalışma Özetleri
 
-> **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi daha verimli çalışabilirsiniz.
+> **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi daha verimli çalışabilirsiniz.
 
 ### Genel Bilgiler
 
@@ -517,4 +517,4 @@ Bu derste işlenen akademik bir içerik bulunmamaktadır.
 - Hash fonksiyonları, verinin kısa ve sabit uzunlukta özetini üretir. Bütünlük kontrolü, dosya karşılaştırma, parola saklama ve imza süreçlerinde temel bileşendir. Güvenli hash fonksiyonlarının çakışmaya dayanıklı ve tersine çevrilmesi pratikte imkansız olması beklenir.
 - Açık anahtar kriptografisinde public key paylaşılabilir, private/secret key ise korunur. Sertifika altyapısı, bu anahtarların kimliklerle güvenilir biçimde eşlenmesini sağlar. TLS ve kod imzalama gibi pratik sistemler bu modele dayanır.
 
-> **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi daha verimli çalışabilirsiniz.
+> **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi daha verimli çalışabilirsiniz.

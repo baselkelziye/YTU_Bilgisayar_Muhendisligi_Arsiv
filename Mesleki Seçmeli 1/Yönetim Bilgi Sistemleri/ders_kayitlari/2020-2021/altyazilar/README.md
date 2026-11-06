@@ -26,4 +26,4 @@ Dersler 8 Ekim 2020 Perşembe günü başlamıştır. Dosya adlarındaki `ders_x
 - 4. hafta (29 Ekim 2020, Cumhuriyet Bayramı) kayıt bulunmamaktadır.
 - 8. hafta (26 Kasım 2020) kayıt bulunmamaktadır.
 
-**Not:** İsterseniz bu kayıtları NotebookLM gibi bir araca atıp daha istifadeli hale getirebilirsiniz.
+**Not:** İsterseniz bu kayıtları Gemini Notebook gibi bir araca atıp daha istifadeli hale getirebilirsiniz.

@@ -1,6 +1,6 @@
 # Biyoenformatiğe Giriş Ders Kayıtları & Çalışma Özetleri
 
-> **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi daha verimli çalışabilirsiniz.
+> **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi daha verimli çalışabilirsiniz.
 
 ## Genel Bilgiler
 
@@ -172,4 +172,4 @@
   - Genom konumları, hizalama sonuçları, gen ifade matrisleri, protein yapıları ve biyolojik ağlar farklı görselleştirme teknikleri gerektirir.
   - Görsel temsil, eğilimleri, aykırı değerleri, kümelenmeleri ve ilişkileri hızlı fark etmeyi sağlar. Bu nedenle biyoenformatikte analiz kadar sunum ve keşif arayüzü de önemlidir.
 
-> **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi daha verimli çalışabilirsiniz.
+> **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi daha verimli çalışabilirsiniz.

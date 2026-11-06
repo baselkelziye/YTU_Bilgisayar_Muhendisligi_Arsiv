@@ -1,6 +1,6 @@
 # Yapay Zeka Ders Kayıtları & Çalışma Özetleri
 
-> **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+> **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
 
 ### 📋 Genel Bilgiler
 * **Ders:** Yapay Zeka
@@ -56,7 +56,7 @@ Aşağıdaki tabloda her bir dersin konusu, kaynak markdown dosyası ve doğruda
   - Ders boyunca kavramlar birbirine bağlanacaktır.
     - Arama, bilgi gösterimi ve öğrenme gibi konular farklı görünse de hepsi akıllı davranış üretme amacı etrafında birleşir.
 * **Detaylı Açıklamalar:** Yapay zeka, karmaşık problemleri çözmek amacıyla insan zekasını taklit eden veya bağımsız akıllı sistemler geliştirmeyi hedefleyen çok disiplinli bir alandır. Ders kapsamında yapay zekanın sadece tek bir algoritma veya modelden (örneğin sadece derin öğrenme) ibaret olmadığı, aksine arama algoritmaları, oyun teorisi, bilgi gösterimi, makine öğrenmesi ve pekiştirmeli öğrenme gibi geniş bir yelpazeyi kapsadığı anlatılır. Zekanın tanımı yapılırken; algılama, muhakeme, problem çözme ve adapte olma yetenekleri tartışılır. Yapay zekaya yaklaşım biçimleri dört ana grupta ele alınır: İnsan gibi düşünenler, insan gibi davrananlar (Turing testi odaklı), rasyonel düşünenler (mantık kuralları odaklı) ve rasyonel davrananlar (hedefe yönelik en iyi kararı veren etmenler). Problemlerin doğru temsil edilmesi, çözüm uzayının verimli taranabilmesi için ilk ve en kritik adımdır.
-* **NotebookLM Çalışma Notu:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM veya benzeri bir yapay zeka aracına yükleyerek ders üzerinde daha verimli çalışabilirsiniz.
+* **Gemini Notebook Çalışma Notu:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook veya benzeri bir yapay zeka aracına yükleyerek ders üzerinde daha verimli çalışabilirsiniz.
 
 ### 🔹 Ders 2: Yapay Zekanın Tarihsel Gelişimi ve Etmen (Agent) Mantığı
 * **Genel Konular:**
@@ -80,7 +80,7 @@ Aşağıdaki tabloda her bir dersin konusu, kaynak markdown dosyası ve doğruda
   - Bilgi temsili ile öğrenme arasındaki fark önemlidir.
     - Bazı sistemler kurallarla çalışırken bazı sistemler örneklerden örüntü öğrenir.
 * **Detaylı Açıklamalar:** Yapay zekanın gelişimi tarihsel olarak sembolik (symbolic) ve bağlantıcı (connectionist) yaklaşımların çekişmesi ve işbirliği ile şekillenmiştir. Sembolik yapay zeka mantıksal kurallar ve bilgi ağaçları üzerine kurulurken, bağlantıcı yaklaşım yapay sinir ağları ve makine öğrenmesi gibi veri tabanlı örüntü tanıma modellerini temel alır. Modern yapay zekanın merkezinde "Etmen" (Agent) kavramı bulunur. Bir etmen; ortamı algılayıcılar (sensors) vasıtasıyla okuyan, bu algıları işleyerek kararlar alan ve aktüatörler (actuators) aracılığıyla ortamda eylemler gerçekleştiren bir sistemdir. Etmen tasarımı yapılırken ortamın yapısı (tamamen/kısmen gözlemlenebilir, deterministik/stokastik, statik/dinamik, ayrık/sürekli vb.) kullanılacak algoritmayı doğrudan belirler.
-* **NotebookLM Çalışma Notu:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM veya benzeri bir yapay zeka aracına yükleyerek ders üzerinde daha verimli çalışabilirsiniz.
+* **Gemini Notebook Çalışma Notu:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook veya benzeri bir yapay zeka aracına yükleyerek ders üzerinde daha verimli çalışabilirsiniz.
 
 ### 🔹 Ders 3: Arama Problemlerine Giriş, Durum Uzayı ve Kör Arama (BFS, DFS)
 * **Genel Konular:**
@@ -104,7 +104,7 @@ Aşağıdaki tabloda her bir dersin konusu, kaynak markdown dosyası ve doğruda
   - Çözümün bulunması ile en iyi çözümün bulunması aynı şey değildir.
     - Maliyetli problemlerde bulunan ilk çözüm her zaman en uygun çözüm olmayabilir.
 * **Detaylı Açıklamalar:** Yapay zekada birçok problem bir arama problemi olarak modellenebilir. Bir arama problemi; başlangıç durumu (initial state), geçiş modeli ve operatörler (actions), hedef testi (goal test) ve yol maliyeti (path cost) bileşenlerinden oluşur. Tüm olası durumların oluşturduğu yapıya durum uzayı (state space) denir. Kör arama (uninformed/blind search) yöntemleri hedefe giden yol hakkında ek sezgisel bilgiye sahip olmayan, sadece durum uzayını sistematik olarak tarayan algoritmalardır. BFS (Breadth-First Search - Enlemesine Arama) durum uzayını seviye seviye arayarak en kısa yolu bulmayı garanti eder (optimaldir) ancak bellek gereksinimi üsteldir. DFS (Depth-First Search - Derinlemesine Arama) ise bir dal boyunca en derine kadar gider; bellek tüketimi düşüktür ancak sonsuz döngülere girebilir ve optimal yolu bulması garanti değildir.
-* **NotebookLM Çalışma Notu:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM veya benzeri bir yapay zeka aracına yükleyerek ders üzerinde daha verimli çalışabilirsiniz.
+* **Gemini Notebook Çalışma Notu:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook veya benzeri bir yapay zeka aracına yükleyerek ders üzerinde daha verimli çalışabilirsiniz.
 
 ### 🔹 Ders 4: Sezgisel (Informed) Arama: Maliyet Tabanlı Arama, Sezgisel Fonksiyonlar ve A* Algoritması
 * **Genel Konular:**
@@ -128,7 +128,7 @@ Aşağıdaki tabloda her bir dersin konusu, kaynak markdown dosyası ve doğruda
   - Arama algoritmalarında optimalite ve verimlilik ayrımı önemlidir.
     - Hızlı çalışan bir yöntem her zaman en iyi çözümü garanti etmeyebilir.
 * **Detaylı Açıklamalar:** Sezgisel (informed) arama yöntemleri, kör aramalardan farklı olarak, hedefe olan kalan mesafeyi tahmin eden sezgisel fonksiyonlardan (h(n)) yararlanır. Maliyet tabanlı aramada (Uniform Cost Search) sadece başlangıçtan bulunulan düğüme kadar olan maliyet (g(n)) dikkate alınırken, A* algoritması hem geçmiş maliyeti (g(n)) hem de gelecekteki tahmini maliyeti (h(n)) birleştiren bir değerlendirme fonksiyonu (f(n) = g(n) + h(n)) kullanır. A* algoritmasının optimal ve eksiksiz (complete) olması için sezgisel fonksiyonun kabul edilebilir (admissible - gerçek maliyeti asla aşmayan) ve tutarlı (consistent - üçgen eşitsizliğini sağlayan) olması gerekir. Doğru tasarlanmış bir sezgisel fonksiyon, arama uzayını dramatik şekilde daraltarak performansı artırır.
-* **NotebookLM Çalışma Notu:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM veya benzeri bir yapay zeka aracına yükleyerek ders üzerinde daha verimli çalışabilirsiniz.
+* **Gemini Notebook Çalışma Notu:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook veya benzeri bir yapay zeka aracına yükleyerek ders üzerinde daha verimli çalışabilirsiniz.
 
 ### 🔹 Ders 5: Lokal Arama Yöntemleri: Tepe Tırmanma (Hill Climbing) ve Lokal/Global Optimum Sınırları
 * **Genel Konular:**
@@ -152,7 +152,7 @@ Aşağıdaki tabloda her bir dersin konusu, kaynak markdown dosyası ve doğruda
   - Değerlendirme fonksiyonu yalnızca teknik ayrıntı değildir.
     - Yanlış kalite ölçütü, algoritmanın yanlış çözümleri iyi sanmasına neden olabilir.
 * **Detaylı Açıklamalar:** Lokal arama algoritmaları, hedefe giden yolu saklamak yerine sadece mevcut durumu (current state) ve onun komşularını inceleyerek çalışır. Bu nedenle bellek gereksinimleri son derece azdır (O(1)) ve çok büyük durum uzaylarında tercih edilirler. Tepe Tırmanma (Hill Climbing) algoritması, her adımda mevcut durumun komşuları arasından değeri (uygunluğu) en yüksek olan duruma geçerek sürekli "yukarı" tırmanır. Ancak bu algoritma lokal optimum (yerel en iyi) noktalarına, düzlüklere (plateau) veya sırtlara (ridge) takılarak küresel en iyiye (global optimum) ulaşamayabilir. Bu problemleri aşmak için rastgele adımlarla tırmanma, tavlama benzetimi (simulated annealing) veya lokal ışın arama (local beam search) gibi yöntemler kullanılır.
-* **NotebookLM Çalışma Notu:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM veya benzeri bir yapay zeka aracına yükleyerek ders üzerinde daha verimli çalışabilirsiniz.
+* **Gemini Notebook Çalışma Notu:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook veya benzeri bir yapay zeka aracına yükleyerek ders üzerinde daha verimli çalışabilirsiniz.
 
 ### 🔹 Ders 6: Genetik Algoritmalar: Evrimsel Arama, Kromozom Temsili ve Uygunluk Fonksiyonu
 * **Genel Konular:**
@@ -176,7 +176,7 @@ Aşağıdaki tabloda her bir dersin konusu, kaynak markdown dosyası ve doğruda
   - Genetik algoritmalar kesin çözüm garantisi vermekten çok iyi aday çözümler üretmeye yöneliktir.
     - Özellikle büyük ve karmaşık arama uzaylarında kullanışlıdır.
 * **Detaylı Açıklamalar:** Genetik algoritmalar (Genetic Algorithms), doğadaki evrimsel süreçleri ve doğal seçilim mekanizmasını taklit eden popülasyon tabanlı bir lokal arama ve optimizasyon yöntemidir. Arama uzayındaki olası çözümler "kromozom" (genellikle bit dizileri veya reel sayı dizileri) olarak temsil edilir. Algoritma; başlangıç popülasyonunun oluşturulması, her bireyin kalitesini ölçen uygunluk (fitness) fonksiyonunun hesaplanması, rulet tekerleği veya turnuva gibi yöntemlerle ebeveyn seçimi, çaprazlama (crossover - gen değişimi) ve mutasyon (rastgele genetik değişim) adımlarıyla yeni nesiller üretir. Başarının anahtarı, problemin kromozom üzerinde doğru şekilde kodlanması ve çeşitliliğin korunarak lokal minimumlardan kaçınılmasıdır.
-* **NotebookLM Çalışma Notu:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM veya benzeri bir yapay zeka aracına yükleyerek ders üzerinde daha verimli çalışabilirsiniz.
+* **Gemini Notebook Çalışma Notu:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook veya benzeri bir yapay zeka aracına yükleyerek ders üzerinde daha verimli çalışabilirsiniz.
 
 ### 🔹 Ders 7: Oyun Teorisi ve Karar Verme: İki Oyunculu Sıfır Toplamlı Oyunlar ve Minimax
 * **Genel Konular:**
@@ -200,7 +200,7 @@ Aşağıdaki tabloda her bir dersin konusu, kaynak markdown dosyası ve doğruda
   - Derinlik sınırı pratikte önemlidir.
     - Büyük oyun ağaçlarında tüm olasılıkları sona kadar aramak mümkün olmayabilir; değerlendirme fonksiyonları gerekir.
 * **Detaylı Açıklamalar:** Yapay zekada oyun oynama problemleri, rakibin de akıllı ve rasyonel davrandığı dinamik ve düşmanca (adversarial) arama problemleri olarak ele alınır. İki oyunculu sıfır toplamlı (zero-sum) oyunlarda bir oyuncunun kazancı diğerinin kaybına eşittir. Minimax algoritması, bu tür oyunlarda karar vermek için kullanılır. MAX oyuncusu kendi kazancını maksimize etmeye çalışırken, MIN oyuncusu MAX'ın kazancını minimize etmeye çalışır. Oyun ağacının tamamını taramak üstel zaman alacağından (O(b^d)), performansı artırmak için Alfa-Beta Budama (Alpha-Beta Pruning) yöntemi uygulanır. Alfa-Beta budama, optimal kararı değiştirmeden ağacın değerlendirilmesi gerekmeyen dallarını budayarak arama süresini yarı yarıya azaltabilir.
-* **NotebookLM Çalışma Notu:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM veya benzeri bir yapay zeka aracına yükleyerek ders üzerinde daha verimli çalışabilirsiniz.
+* **Gemini Notebook Çalışma Notu:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook veya benzeri bir yapay zeka aracına yükleyerek ders üzerinde daha verimli çalışabilirsiniz.
 
 ### 🔹 Ders 8: Bilgi Gösterimi ve Akıl Yürütme: Veri-Bilgi Ayrımı ve Bilgi İşleme Modelleri
 * **Genel Konular:**
@@ -228,7 +228,7 @@ Aşağıdaki tabloda her bir dersin konusu, kaynak markdown dosyası ve doğruda
   - Kurallar açık ve uygulanabilir olmalıdır.
     - Belirsiz veya eksik kural yapıları çıkarımı zorlaştırır.
 * **Detaylı Açıklamalar:** Bilgi gösterimi (Knowledge Representation), akıllı sistemlerin dünyadaki olguları anlayıp çıkarım yapabilmesi için bilgiyi yapılandırılmış bir biçimde saklama yöntemidir. Veri (data) ham gözlemlerden oluşurken, bilgi (knowledge) bu verilerin bir bağlam içinde işlenip anlamlandırılması ve kurallarla ilişkilendirilmesiyle oluşur. Bilgi tabanlı etmenler (Knowledge-based agents), bir bilgi tabanına (Knowledge Base - KB) yeni bilgileri ekleme (TELL) ve bilgi tabanından çıkarım yapma (ASK) yeteneğine sahiptir. Bilgi gösteriminde önermeler mantığı (propositional logic), birinci dereceden mantık (First-Order Logic - FOL), ontolojiler ve anlamsal ağlar (semantic networks) gibi yapılar kullanılır. Çıkarım motorları (inference engines) bu kuralları işleterek yeni ve gizli bilgileri üretir.
-* **NotebookLM Çalışma Notu:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM veya benzeri bir yapay zeka aracına yükleyerek ders üzerinde daha verimli çalışabilirsiniz.
+* **Gemini Notebook Çalışma Notu:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook veya benzeri bir yapay zeka aracına yükleyerek ders üzerinde daha verimli çalışabilirsiniz.
 
 ### 🔹 Ders 10: Makine Öğrenmesine Giriş: Veriden Örüntü Öğrenme, Sınıflandırma vs. Regresyon
 * **Genel Konular:**
@@ -254,7 +254,7 @@ Aşağıdaki tabloda her bir dersin konusu, kaynak markdown dosyası ve doğruda
   - Sınıflandırma, regresyon ve kümeleme birbirine karıştırılmamalıdır.
     - Her biri farklı çıktı yapısı ve farklı değerlendirme mantığı gerektirir.
 * **Detaylı Açıklamalar:** Makine öğrenmesi, açık kurallar yazmak yerine verilerden örüntüler (patterns) ve ilişkiler öğrenen algoritmaların tasarımıyla ilgilenir. Temel olarak denetimli öğrenme (supervised learning), denetimsiz öğrenme (unsupervised learning) ve pekiştirmeli öğrenme (reinforcement learning) olmak üzere üç sınıfa ayrılır. Denetimli öğrenmede model, girdilerin ve bunlara karşılık gelen hedef etiketlerin (labels) bulunduğu bir veri kümesiyle eğitilir. Çıktı değişkeni sürekli/sayısal bir değer ise problem bir regresyon (regression), kategorik/sınıfsal bir değer ise bir sınıflandırma (classification) problemidir. Modelin başarısı, eğitim verisine aşırı uyum sağlamadan (overfitting) yeni ve görülmemiş verilere genelleme (generalization) yapabilme yeteneğiyle ölçülür.
-* **NotebookLM Çalışma Notu:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM veya benzeri bir yapay zeka aracına yükleyerek ders üzerinde daha verimli çalışabilirsiniz.
+* **Gemini Notebook Çalışma Notu:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook veya benzeri bir yapay zeka aracına yükleyerek ders üzerinde daha verimli çalışabilirsiniz.
 
 ### 🔹 Ders 11: Sınıflandırma Karar Yapıları: Karar Ağaçları
 * **Genel Konular:**
@@ -280,7 +280,7 @@ Aşağıdaki tabloda her bir dersin konusu, kaynak markdown dosyası ve doğruda
   - Eğitim başarısı tek başına yeterli değildir.
     - Modelin yeni örneklerdeki davranışı makine öğrenmesinin asıl meselesidir.
 * **Detaylı Açıklamalar:** Sınıflandırma problemlerinde en yaygın ve açıklanabilir (explainable) modellerden biri Karar Ağaçlarıdır (Decision Trees). Karar ağaçları, veri kümesini belirli özniteliklere göre alt kümelere bölerek ağaç yapısında kurallar oluşturur. Bölme işlemi yapılırken her adımda en homojen alt grupları elde etmek amaçlanır. Bunun için bilgi kazancı (Information Gain) ve entropi (Entropy) veya Gini katsayısı gibi metriklere başvurulur. Entropi, veri kümesindeki belirsizliği/düzensizliği ölçer. Bölme sonrasında entropideki düşüş bilgi kazancını verir. En yüksek bilgi kazancını sağlayan öznitelik kök veya düğüm olarak seçilir. Karar ağaçları, veri hazırlığı gereksiniminin azlığı ve kararların görselleştirilebilir olması nedeniyle son derece güçlüdür ancak aşırı büyüdüklerinde overfitting riski taşırlar; bu durum budama (pruning) yöntemleriyle engellenir.
-* **NotebookLM Çalışma Notu:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM veya benzeri bir yapay zeka aracına yükleyerek ders üzerinde daha verimli çalışabilirsiniz.
+* **Gemini Notebook Çalışma Notu:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook veya benzeri bir yapay zeka aracına yükleyerek ders üzerinde daha verimli çalışabilirsiniz.
 
 ### 🔹 Ders 12: Sınıflandırma Sınırları: YSA ve Kümeleme
 * **Genel Konular:**
@@ -308,7 +308,7 @@ Aşağıdaki tabloda her bir dersin konusu, kaynak markdown dosyası ve doğruda
   - Regresyon ağaçları ve karar ağaçları benzer yapıyı farklı çıktı türleri için kullanır.
     - Sınıflandırmada yapraklar sınıf, regresyonda ise sayısal tahmin üretebilir.
 * **Detaylı Açıklamalar:** Veri noktalarını sınıflarına göre ayıran geometrik çizgilere veya hiper-düzlemlere karar sınırları (decision boundaries) denir. Bazı problemler (örneğin AND/OR mantıksal kapıları) tek bir doğruyla ayrılabilirken (doğrusal karar sınırı), XOR gibi problemler doğrusal olmayan (non-linear) karar sınırları gerektirir. Yapay Sinir Ağları (YSA), doğrusal olmayan bu karmaşık fonksiyonları öğrenmek için tasarlanmış, biyolojik beyin hücrelerinden esinlenen modellerdir. Çok katmanlı algılayıcılar (MLP) aktivasyon fonksiyonları (Sigmoid, ReLU, Tanh) kullanarak doğrusal olmayan ilişkileri başarıyla modeller. Denetimsiz öğrenmede ise etiketlenmemiş verileri benzerliklerine göre gruplamak için K-Ortalamalar (K-Means) ve hiyerarşik kümeleme gibi Kümeleme (Clustering) algoritmaları kullanılır.
-* **NotebookLM Çalışma Notu:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM veya benzeri bir yapay zeka aracına yükleyerek ders üzerinde daha verimli çalışabilirsiniz.
+* **Gemini Notebook Çalışma Notu:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook veya benzeri bir yapay zeka aracına yükleyerek ders üzerinde daha verimli çalışabilirsiniz.
 
 ### 🔹 Ders 13: Pekiştirmeli Öğrenme (Reinforcement Learning)
 * **Genel Konular:**
@@ -336,5 +336,5 @@ Aşağıdaki tabloda her bir dersin konusu, kaynak markdown dosyası ve doğruda
   - Q tablosu durum-eylem değerlerini temsil eder.
     - Q-learning sürecinde bu değerler deneyimle güncellenerek daha iyi kararlar üretir.
 * **Detaylı Açıklamalar:** Pekiştirmeli öğrenme (Reinforcement Learning - RL), bir ajanın deneme-yanılma yoluyla bir ortamda (environment) en yüksek uzun vadeli toplam ödülü (reward) almak için eylemler gerçekleştirdiği makine öğrenmesi dalıdır. RL modeli; etmen, ortam, durum (state), eylemler (actions) ve ödül (reward) bileşenlerinden oluşur ve genellikle Markov Karar Süreçleri (MDP) çerçevesinde modellenir. Etmen, her durumda hangi eylemi seçeceğini belirleyen bir politika (policy) takip eder. Keşif (exploration - yeni yollar deneme) ve sömürü (exploitation - bilinen en iyi yolu kullanma) arasındaki dengeyi kurmak RL'de en kritik zorluktur. Q-Öğrenme (Q-Learning) gibi algoritmalar, durum-eylem değer fonksiyonunu (Q-tablosu) güncelleyerek optimal politikayı öğrenir.
-* **NotebookLM Çalışma Notu:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM veya benzeri bir yapay zeka aracına yükleyerek ders üzerinde daha verimli çalışabilirsiniz.
+* **Gemini Notebook Çalışma Notu:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook veya benzeri bir yapay zeka aracına yükleyerek ders üzerinde daha verimli çalışabilirsiniz.
 

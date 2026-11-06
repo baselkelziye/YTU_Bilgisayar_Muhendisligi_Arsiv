@@ -1,6 +1,6 @@
 # Sistem Analizi ve Tasarımı Ders Kayıtları & Çalışma Özetleri
 
-> **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+> **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
 
 ### 📋 Genel Bilgiler
 * **Ders:** Sistem Analizi ve Tasarımı (BLM2042)
@@ -371,4 +371,4 @@ Aşağıdaki tabloda her bir dersin konusu, kaynak markdown dosyası ve doğruda
     - Hoca J grubuna "Bir iş ayrımı yapmadınız mı?" diye sordu.
 * **Detaylı Açıklamalar:** Bu derste son altı grubun dönem projesi sunumları yapıldı. Hoca sunumlar sırasında fizibilite, gelir modeli ve ekip çalışması üzerine sorular sordu. Dersin sonunda dönemi değerlendirdi ve final sınavı hakkında kısa bilgi verdi.
 
-**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

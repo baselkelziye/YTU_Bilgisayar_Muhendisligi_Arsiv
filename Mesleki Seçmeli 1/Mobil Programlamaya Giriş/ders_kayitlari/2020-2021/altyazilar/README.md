@@ -26,4 +26,4 @@ Ders kayıtları 10 Mart 2021 Çarşamba günü başlamıştır. Dosya adlarınd
 - 10. hafta (12 Mayıs 2021) kayıt bulunmamaktadır.
 - 11. hafta (19 Mayıs 2021) 19 Mayıs Atatürk'ü Anma Gençlik ve Spor Bayramı nedeniyle ders yapılmamıştır.
 
-**Not:** İsterseniz bu kayıtları NotebookLM gibi bir araca atıp daha istifadeli hale getirebilirsiniz.
+**Not:** İsterseniz bu kayıtları Gemini Notebook gibi bir araca atıp daha istifadeli hale getirebilirsiniz.

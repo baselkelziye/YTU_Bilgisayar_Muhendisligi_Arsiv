@@ -28,4 +28,4 @@ Dersler 1 Mart 2023 Çarşamba günü başlamıştır. Ders haftada bir gün (Ç
 
 Altyazılardaki öğrenci adları `[öğrenci]` olarak maskelenmiştir.
 
-**Not:** İsterseniz bu kayıtları NotebookLM gibi bir araca atıp daha istifadeli hale getirebilirsiniz.
+**Not:** İsterseniz bu kayıtları Gemini Notebook gibi bir araca atıp daha istifadeli hale getirebilirsiniz.

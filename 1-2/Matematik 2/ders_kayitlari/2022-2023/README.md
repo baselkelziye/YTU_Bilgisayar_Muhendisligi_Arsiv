@@ -1,6 +1,6 @@
 # Matematik 2 Ders Kayıtları & Çalışma Özetleri
 
-> **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+> **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
 
 ### 📋 Genel Bilgiler
 * **Ders:** Matematik 2 (MAT1072)
@@ -67,7 +67,7 @@ Aşağıdaki tabloda her bir dersin konusu, kaynak markdown dosyası ve doğruda
     - Birincisi $1$, ikincisi $0$'dır.
   - $\sin(n\pi)$ bir dizidir ve her terimi $0$'dır, yani dizi $0$'a yakınsar. $\sin(\pi x)$ fonksiyonunun $x\to\infty$ için limiti ise yoktur.
     - Fark $n$'nin doğal sayı olmasıdır.
-* **Detaylı Açıklamalar:** NotebookLM notu: İsterseniz bu özeti ve ders kaydını NotebookLM gibi bir araca atıp daha istifadeli hale getirebilirsiniz.
+* **Detaylı Açıklamalar:** Gemini Notebook notu: İsterseniz bu özeti ve ders kaydını Gemini Notebook gibi bir araca atıp daha istifadeli hale getirebilirsiniz.
 
 ### 🔹 Ders 2: Seri Toplamları ve Yakınsaklık Testleri: İntegral, Karşılaştırma, Oran ve Kök Testleri
 * **Genel Konular:**
@@ -85,7 +85,7 @@ Aşağıdaki tabloda her bir dersin konusu, kaynak markdown dosyası ve doğruda
     - Büyük seri yakınsaksa küçük seri yakınsaktır. Küçük seri ıraksaksa büyük seri ıraksaktır. Ters yönler bir şey söylemez.
   - Testler bir "paraşüt" gibidir: biri cevap vermezse diğeri denenir.
     - Bazı sorular yalnız tek bir testle çözülür. Bu yüzden hepsini bilmek gerekir.
-* **Detaylı Açıklamalar:** NotebookLM notu: İsterseniz bu özeti ve ders kaydını NotebookLM gibi bir araca atıp daha istifadeli hale getirebilirsiniz.
+* **Detaylı Açıklamalar:** Gemini Notebook notu: İsterseniz bu özeti ve ders kaydını Gemini Notebook gibi bir araca atıp daha istifadeli hale getirebilirsiniz.
 
 ### 🔹 Ders 3: Alterne Seriler, Mutlak ve Şartlı Yakınsaklık, Kuvvet Serileri
 * **Genel Konular:**
@@ -220,7 +220,7 @@ Aşağıdaki tabloda her bir dersin konusu, kaynak markdown dosyası ve doğruda
   - Taraf değiştirirken işaretlere dikkat edin.
     - İşaret hatası sizi yanlış şıkka götürür. Ne kadar çok soru çözerseniz hata o kadar azalır.
   - Birim teğet vektör sınavlarda çıkan bir soru tipidir.
-* **Detaylı Açıklamalar:** İsterseniz bu özeti NotebookLM gibi bir araca atıp daha istifadeli hale getirebilirsiniz.
+* **Detaylı Açıklamalar:** İsterseniz bu özeti Gemini Notebook gibi bir araca atıp daha istifadeli hale getirebilirsiniz.
 
 ### 🔹 Ders 10: Temel Yüzeyler, Seviye Eğrileri ve Çok Değişkenli Fonksiyonlarda Limit ve Süreklilik
 * **Genel Konular:**
@@ -260,7 +260,7 @@ Aşağıdaki tabloda her bir dersin konusu, kaynak markdown dosyası ve doğruda
     - Sonuçlar farklıysa limit yoktur, iş biter. Aynıysa $y=kx$, $y=kx^2$ gibi yollar denenir.
   - Şıklarda 0, 1, 2 gibi sayılar verilip doğru cevap "limit yoktur" olabilir. $k$'ya bağlı sonuç çıkınca limit yoktur.
   - Limit yoksa fonksiyon o noktada sürekli değildir.
-* **Detaylı Açıklamalar:** İsterseniz bu özeti NotebookLM gibi bir araca atıp daha istifadeli hale getirebilirsiniz.
+* **Detaylı Açıklamalar:** İsterseniz bu özeti Gemini Notebook gibi bir araca atıp daha istifadeli hale getirebilirsiniz.
 
 ### 🔹 Ders 12: Vektör ve Düzlem Tekrarı, Zincir Kuralı, Lineerleştirme ve Tam Diferansiyel
 * **Genel Konular:**
@@ -299,7 +299,7 @@ Aşağıdaki tabloda her bir dersin konusu, kaynak markdown dosyası ve doğruda
     - Test sorusunda doğru şıkkı hemen bulmanızı sağlar.
   - Taylor açılımında sınavda en fazla ikinci mertebeye kadar sorulur.
   - Kısıtlanmış değişkenlerde önce hangi değişkenin bağımlı, hangisinin bağımsız olduğunu belirleyin. "Bunlar çok önemli."
-* **Detaylı Açıklamalar:** İsterseniz bu kayıtları NotebookLM gibi bir araca atıp daha istifadeli hale getirebilirsiniz.
+* **Detaylı Açıklamalar:** İsterseniz bu kayıtları Gemini Notebook gibi bir araca atıp daha istifadeli hale getirebilirsiniz.
 
 ### 🔹 Ders 14: Yönlü Türev, Gradyan ve Vektör Uygulamaları
 * **Genel Konular:**
@@ -318,7 +318,7 @@ Aşağıdaki tabloda her bir dersin konusu, kaynak markdown dosyası ve doğruda
     - Eksenler boyunca ve $y=mx$ doğruları boyunca bakın. Sonuç $m$'ye bağlıysa limit yoktur.
   - Her konudan 10, 20, 30 soru çözün.
     - Okuduğunuzu soruya dönüştürmezseniz kalıcı olmaz.
-* **Detaylı Açıklamalar:** İsterseniz bu kayıtları NotebookLM gibi bir araca atıp daha istifadeli hale getirebilirsiniz.
+* **Detaylı Açıklamalar:** İsterseniz bu kayıtları Gemini Notebook gibi bir araca atıp daha istifadeli hale getirebilirsiniz.
 
 ### 🔹 Ders 15: Yönlü Türev, Uzay Eğrileri, Tanım Kümesi ve Limit Üzerine Soru Çözümü
 * **Genel Konular:**
@@ -336,7 +336,7 @@ Aşağıdaki tabloda her bir dersin konusu, kaynak markdown dosyası ve doğruda
   - Limit ve süreklilik sorusu hem vizede hem finalde "banko" geliyor.
   - Test sınavında zamanla yarışılıyor.
     - Hangi yöntemi iyi biliyorsanız onu kullanın.
-* **Detaylı Açıklamalar:** İsterseniz bu kayıtları NotebookLM gibi bir araca atıp daha istifadeli hale getirebilirsiniz.
+* **Detaylı Açıklamalar:** İsterseniz bu kayıtları Gemini Notebook gibi bir araca atıp daha istifadeli hale getirebilirsiniz.
 
 ### 🔹 Ders 16: Ekstremum Değerler, İkinci Türev Testi, İki Değişkenli Taylor Açılımı ve Kısıtlı Kısmi Türevler
 * **Genel Konular:**
@@ -376,7 +376,7 @@ Aşağıdaki tabloda her bir dersin konusu, kaynak markdown dosyası ve doğruda
   - Çok katlı integral kütle, ağırlık merkezi, hacim ve yüzey alanı hesaplarında kullanılır.
   - Tek katlı integral bilgisi eksik olan tekrar etmelidir.
     - Çift katlı integral sonunda tek katlı integrale indirgenerek çözülür.
-* **Detaylı Açıklamalar:** İsterseniz bu kayıtları NotebookLM gibi bir araca atıp daha istifadeli hale getirebilirsiniz.
+* **Detaylı Açıklamalar:** İsterseniz bu kayıtları Gemini Notebook gibi bir araca atıp daha istifadeli hale getirebilirsiniz.
 
 ### 🔹 Ders 21: İntegrasyon Sırasını Değiştirme, Jacobian ve Kutupsal Koordinatlarla Değişken Dönüşümü
 * **Genel Konular:**
@@ -418,7 +418,7 @@ Aşağıdaki tabloda her bir dersin konusu, kaynak markdown dosyası ve doğruda
     - Çok değişkenli fonksiyonda kısmi türevler var olup fonksiyon süreksiz olabilir.
   - $f_{xy}=f_{yx}$ her zaman doğru değildir.
     - Kısmi türevler sürekli ise eşittir.
-* **Detaylı Açıklamalar:** İsterseniz bu kayıtları NotebookLM gibi bir araca atıp daha istifadeli hale getirebilirsiniz.
+* **Detaylı Açıklamalar:** İsterseniz bu kayıtları Gemini Notebook gibi bir araca atıp daha istifadeli hale getirebilirsiniz.
 
 ### 🔹 Ders 23: Final Hazırlığı: Kuvvet Serileri, Kutupsal Alan, Yönlü Türev ve Çok Katlı İntegral Soruları
 * **Genel Konular:**
@@ -436,7 +436,7 @@ Aşağıdaki tabloda her bir dersin konusu, kaynak markdown dosyası ve doğruda
   - $e^{x^2}$ gibi integrali alınamayan fonksiyonlarda çıkış yolu integrasyon sırasını değiştirmektir.
   - Final için: en az bir bölge dönüşümü (Jacobian) sorusu, bir kutupsal koordinat sorusu, bir integrasyon sırası değiştirme sorusu gelir.
     - Ayrıca limit, kısmi türev ve zincir kuralından soru gelir.
-* **Detaylı Açıklamalar:** İsterseniz bu kayıtları NotebookLM gibi bir araca atıp daha istifadeli hale getirebilirsiniz.
+* **Detaylı Açıklamalar:** İsterseniz bu kayıtları Gemini Notebook gibi bir araca atıp daha istifadeli hale getirebilirsiniz.
 
 ### 🔹 Ders 24: Parametrik Denklemler: Teğet, İkinci Türev, Alan ve Yay Uzunluğu
 * **Genel Konular:**
@@ -455,7 +455,7 @@ Aşağıdaki tabloda her bir dersin konusu, kaynak markdown dosyası ve doğruda
   - İkinci türevde inceliği: $\dfrac{dy}{dx}$, $t$'ye bağlı bir ifadedir.
     - Doğrudan $x$'e göre türevi alınamaz. Önce $t$'ye göre türev alınır, sonra $\dfrac{dx}{dt}$'ye bölünür.
   - Parametrik alan, yay uzunluğu ve iki eğri arası alan finalde gelebilecek soru tipleri.
-* **Detaylı Açıklamalar:** İsterseniz bu kayıtları NotebookLM gibi bir araca atıp daha istifadeli hale getirebilirsiniz.
+* **Detaylı Açıklamalar:** İsterseniz bu kayıtları Gemini Notebook gibi bir araca atıp daha istifadeli hale getirebilirsiniz.
 
 ### 🔹 Ders 25: Final Hazırlığı: Kutupsal Alan İntegralleri, Seri Testleri ve Kuvvet Serileri
 * **Genel Konular:**
@@ -476,7 +476,7 @@ Aşağıdaki tabloda her bir dersin konusu, kaynak markdown dosyası ve doğruda
     - Çizgili sınır dahil değil demektir.
   - Rasyonel genel terimli serilerde pratik kural (limit karşılaştırmaya dayanır):
     - Paydanın derecesi paydan 2 veya daha fazla büyükse seri yakınsak.
-* **Detaylı Açıklamalar:** İsterseniz bu kayıtları NotebookLM gibi bir araca atıp daha istifadeli hale getirebilirsiniz.
+* **Detaylı Açıklamalar:** İsterseniz bu kayıtları Gemini Notebook gibi bir araca atıp daha istifadeli hale getirebilirsiniz.
 
 ### 🔹 Ders 26: Final Hazırlığı: Zincir Kuralı, Teğet Düzlem, Lineerleştirme, Yönlü Türev ve Ekstremumlar
 * **Genel Konular:**
@@ -494,7 +494,7 @@ Aşağıdaki tabloda her bir dersin konusu, kaynak markdown dosyası ve doğruda
   - Noktanın $z_0$ değerini fonksiyondan hesaplamayı unutmayın.
   - Yönlü türevin en büyük değeri $|\nabla f|$, en küçük değeri $-|\nabla f|$'dir.
     - İkisi tam zıt işaretli olmalı.
-* **Detaylı Açıklamalar:** İsterseniz bu kayıtları NotebookLM gibi bir araca atıp daha istifadeli hale getirebilirsiniz.
+* **Detaylı Açıklamalar:** İsterseniz bu kayıtları Gemini Notebook gibi bir araca atıp daha istifadeli hale getirebilirsiniz.
 
 ### 🔹 Ders 27: Final Hazırlığı: Vektör Fonksiyonları, Yay Uzunluğu, Tanım Bölgesi, Limit ve Süreklilik Soruları
 * **Genel Konular:**
@@ -532,4 +532,4 @@ Aşağıdaki tabloda her bir dersin konusu, kaynak markdown dosyası ve doğruda
     - Jacobian'dan gelen $r$ en sık unutulan şey.
   - Şıklar genelde yalnız sınırlarla ayrışır. $r$ ve $\theta$ sınırlarını doğru bulmak yeterli.
 
-**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

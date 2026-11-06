@@ -26,4 +26,4 @@ Dersler 1 Mart 2023 Çarşamba günü başlamıştır. Ders haftada bir kez (Ça
 
 - 9 numaralı ders kaydı (26 Nisan 2023) kayıt arşivinde bulunmamaktadır. Bu hafta birinci vize haftasıdır ve ders yapılmamıştır.
 
-**Not:** İsterseniz bu kayıtları NotebookLM gibi bir araca atıp daha istifadeli hale getirebilirsiniz.
+**Not:** İsterseniz bu kayıtları Gemini Notebook gibi bir araca atıp daha istifadeli hale getirebilirsiniz.

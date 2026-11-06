@@ -1,0 +1,41 @@
+# Ders 11 Çalışma Özeti
+
+## Genel Konular
+
+- Makine öğrenmesi problem türlerinin pekiştirilmesi
+  - Sınıflandırma ve regresyon ayrımı çeşitli örnekler üzerinden yeniden ele alınır.
+- Etiket ve çıktı değişkeni
+  - Bir problemin türünü belirlerken etiketin adına değil, etiketin temsil ettiği anlam ve değer türüne bakılması gerektiği anlatılır.
+- Model seçimi
+  - Farklı algoritmaların farklı veri yapıları ve problem türleri için uygun olabileceği vurgulanır.
+- Sınıflandırmaya giriş
+  - Verileri sınıflara ayıran karar sınırları ve sınıflandırma modellerinin genel mantığı açıklanır.
+- Karar ağaçları
+  - Veriyi sorular veya koşullar üzerinden bölerek sınıflandırma yapan yorumlanabilir modeller olarak ele alınır.
+- Model başarısı ve genelleme
+  - Eğitim verisindeki başarı ile gerçek başarı arasında fark olabileceği; genellemenin temel hedef olduğu belirtilir.
+
+## Hocanın Özellikle Vurguladığı Kısımlar
+
+- Problem türüne yalnızca etiket adına bakarak karar verilmez.
+  - Sayı gibi görünen bir çıktı sınıf etiketi olabilir, isim gibi görünen bir çıktı da farklı biçimde modellenebilir.
+- Sınıflandırma ve regresyon ayrımı kavramsal olarak anlaşılmalıdır.
+  - Çıktının kategorik mi sürekli mi olduğu temel belirleyicidir.
+- Karar ağaçları yorumlanabilirlik açısından önemlidir.
+  - Modelin hangi koşullarla karar verdiğini görmek çoğu zaman mümkündür.
+- Eğitim başarısı tek başına yeterli değildir.
+  - Modelin yeni örneklerdeki davranışı makine öğrenmesinin asıl meselesidir.
+
+## Kısa Tekrar Notları
+
+- Sınıflandırma kategorilere, regresyon sayısal değerlere yöneliktir.
+- Problem türünü çıktı değişkeninin anlamı belirler.
+- Karar ağaçları koşullarla veriyi dallara ayırır.
+- Yorumlanabilir modeller karar sürecini açıklamada avantaj sağlar.
+- Makine öğrenmesinde temel varsayım, eğitim verisinden öğrenilen örüntünün yeni veriye aktarılabilmesidir.
+
+## Detaylı Açıklamalar (Daha Fazla Detay İsteyenler İçin)
+
+Sınıflandırma problemlerinde en yaygın ve açıklanabilir (explainable) modellerden biri Karar Ağaçlarıdır (Decision Trees). Karar ağaçları, veri kümesini belirli özniteliklere göre alt kümelere bölerek ağaç yapısında kurallar oluşturur. Bölme işlemi yapılırken her adımda en homojen alt grupları elde etmek amaçlanır. Bunun için bilgi kazancı (Information Gain) ve entropi (Entropy) veya Gini katsayısı gibi metriklere başvurulur. Entropi, veri kümesindeki belirsizliği/düzensizliği ölçer. Bölme sonrasında entropideki düşüş bilgi kazancını verir. En yüksek bilgi kazancını sağlayan öznitelik kök veya düğüm olarak seçilir. Karar ağaçları, veri hazırlığı gereksiniminin azlığı ve kararların görselleştirilebilir olması nedeniyle son derece güçlüdür ancak aşırı büyüdüklerinde overfitting riski taşırlar; bu durum budama (pruning) yöntemleriyle engellenir.
+
+* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

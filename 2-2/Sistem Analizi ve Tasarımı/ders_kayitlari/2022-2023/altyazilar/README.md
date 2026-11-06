@@ -26,4 +26,4 @@ Dersler 28 Şubat 2023 Salı günü başlamıştır. Ders haftada bir kez (Salı
 
 - 25 Nisan 2023 haftasına ait kayıt bulunmamaktadır. Bu hafta vize haftasına denk gelmektedir.
 
-**Not:** İsterseniz bu kayıtları NotebookLM gibi bir araca atıp daha istifadeli hale getirebilirsiniz.
+**Not:** İsterseniz bu kayıtları Gemini Notebook gibi bir araca atıp daha istifadeli hale getirebilirsiniz.

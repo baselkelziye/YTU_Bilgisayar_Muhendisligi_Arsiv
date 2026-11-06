@@ -24,4 +24,4 @@ Dersler 1 Mart 2023 Çarşamba günü başlamıştır. Ders haftada bir gün (Ç
 - 5 Nisan 2023 (6. ders) hoca konferansta olduğu için ders yapılmamıştır.
 - 9, 11 ve 13 numaralı ders kayıtları bu şubenin kayıt arşivinde bulunmamaktadır.
 
-**Not:** İsterseniz bu kayıtları NotebookLM gibi bir araca atıp daha istifadeli hale getirebilirsiniz.
+**Not:** İsterseniz bu kayıtları Gemini Notebook gibi bir araca atıp daha istifadeli hale getirebilirsiniz.
