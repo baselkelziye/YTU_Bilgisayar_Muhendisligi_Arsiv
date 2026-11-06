@@ -1,0 +1,2024 @@
+1
+00:01:32,879 --> 00:01:39,239
+Günaydın, derste başlamadan önce biraz daha arkadaşlarınızın artmasını bekliyorum ve
+
+2
+00:01:39,239 --> 00:01:45,000
+slighta yükleyeceğim bugün üzerinde duracağımız konuyu.
+
+3
+00:01:45,000 --> 00:01:55,959
+Karar destek sistemleri ve bunun için gerekli bilgisayar altyapısı ve bununla ilişkili
+
+4
+00:01:55,959 --> 00:02:00,640
+bilgisayar mühendisindeki konular üzerinde duracağız bugün.
+
+5
+00:02:00,840 --> 00:02:10,360
+Vermal enciliği dersini alanlar vardır belki bu konuda daha geniş bilgisayar olabilirsiniz.
+
+6
+00:02:10,360 --> 00:02:16,319
+Biz sadece temel kavramlarından söz edeceğiz bugün.
+
+7
+00:02:16,319 --> 00:05:37,670
+Sunuma başlamadan önce, derste başlamadan önce dün projelerinizi ödev olarak sisteme tanıttım.
+
+8
+00:05:37,829 --> 00:05:44,629
+Başlangıç bitiş tarihi dün yerleştirdiğim için dünden itibaren başladı.
+
+9
+00:05:44,629 --> 00:05:53,069
+Ve 24'üne kadar yüklemeniz gerekiyor diye belirttim.
+
+10
+00:05:53,069 --> 00:06:01,069
+Ancak son iki hafta yani 12. haftadaki dersimizi yükleyin diye belirttim.
+
+11
+00:06:01,069 --> 00:06:06,829
+Ama biz son iki hafta sunumlarımızı yapacağız demiştik.
+
+12
+00:06:07,829 --> 00:06:17,199
+7. Ocak ve 31 Aralık.
+
+13
+00:06:17,199 --> 00:06:35,839
+Bugünlerde sunumunuzu yapacağınız için belki bu 24'ündeki teslimi 28 Aralık olarak değiştirebilirim.
+
+14
+00:06:35,839 --> 00:07:04,620
+Projedeki yapacağınız işlerde daha önce söylediğim gibi bu konuda satılan en az 3 paket hakkında farklı yazılım evlerinin satışını yaptığı alternatif fizibilite tablosu hazırlayacaksınız.
+
+15
+00:07:04,860 --> 00:07:07,860
+Ve onlar hakkında kısa bir bilgi vereceksiniz.
+
+16
+00:07:07,860 --> 00:07:18,980
+Ondan sonra da kendi hazırlayacağınız yazılımın fizibilitesini ve proje planını oluşturacaksınız.
+
+17
+00:07:18,980 --> 00:07:27,459
+Ve akabinde de sizin hazırlayacağınız sistemin gereksinim analizi,
+
+18
+00:07:27,459 --> 00:07:44,360
+yani daha önceki sistem analizi ve yazılım mühendisliği derslerinde yaptığınız gibi gereksinim analizi, tasarımı ve gerçekleştirilmesini oluşturacaksınız.
+
+19
+00:07:44,360 --> 00:07:57,360
+Sunumda da bütün gruptaki arkadaşlar hazırladıkları sistem hakkında kısaca bilgi verecekler ve sunumda herkesin bulunması gerekiyor.
+
+20
+00:07:57,600 --> 00:08:02,230
+Sorunuz var mı proje ile ilgili?
+
+21
+00:08:02,230 --> 00:08:05,230
+Bunları yazılı olarak da belirttim.
+
+22
+00:08:05,230 --> 00:08:15,230
+Zaten derslerde de hep konuştuklarımızda ama yazılı olarak elinizde olmasını istemiştiniz.
+
+23
+00:08:15,230 --> 00:08:26,230
+Ve ben de projelerinizi sisteme yüklemenizi istiyorum çünkü öyle takibi daha kolay olacak.
+
+24
+00:08:26,470 --> 00:08:31,230
+Evet bu konuda bir şey yok herhalde.
+
+25
+00:08:31,230 --> 00:08:36,230
+Hocam bizim projeyi kabul ettiniz mi?
+
+26
+00:08:36,230 --> 00:08:39,230
+Son bir kere göndermiştik de.
+
+27
+00:08:39,230 --> 00:08:41,230
+Evet en son ne dediniz?
+
+28
+00:08:41,230 --> 00:08:45,230
+Yine tam içime silmedi hatırlıyorum ama unuttum şimdi ne yazdığınızı.
+
+29
+00:08:45,230 --> 00:08:48,230
+Şey tedarik zinciri diye yazmıştık.
+
+30
+00:08:48,230 --> 00:08:51,230
+Evet yani tedarik zincir işim çok genel bir şey.
+
+31
+00:08:51,470 --> 00:09:00,470
+Şimdi dikkat ederseniz projeyi yazılı olarak baktığınızda gereksinim analizi tasarımı ve kodunu yazacaksınız.
+
+32
+00:09:00,470 --> 00:09:12,470
+Yani sizden artık o kadar çok anlaşılmadı ki bu konu diğer arkadaşlarınız tarafından anlaşıldı da sizin tarafınızdan biraz zor anlaşıldı.
+
+33
+00:09:12,470 --> 00:09:17,470
+Doğrudur hocam tedarik zincirini seçmemizin sebebi altında bir sürü şey var.
+
+34
+00:09:17,710 --> 00:09:20,710
+Hangisini yazacağımızı bilemedik yani.
+
+35
+00:09:20,710 --> 00:09:23,710
+Öğretim var satı sipariş.
+
+36
+00:09:23,710 --> 00:09:26,710
+Ona karar vermek için de çalışmanız gerekiyor.
+
+37
+00:09:26,710 --> 00:09:35,710
+Tedarik zinciri ile ilgili birkaç yazılım evinin paket tanımına baksanız altında hangisini seçeceğinizi görebilirsiniz.
+
+38
+00:09:35,710 --> 00:09:38,710
+Ama öyle bir çalışma olmadı demek ki.
+
+39
+00:09:38,710 --> 00:09:45,179
+Oldu aslında hocam biraz ama geç oldu.
+
+40
+00:09:45,179 --> 00:09:47,179
+Eksik oldu geç oldu.
+
+41
+00:09:47,419 --> 00:10:00,600
+Tamam şimdi sınavlarınızda yüzlise girdim görmüşsünüzdür herhalde.
+
+42
+00:10:00,600 --> 00:10:04,480
+Evet hocam.
+
+43
+00:10:04,480 --> 00:10:08,850
+Hocam günaydın.
+
+44
+00:10:08,850 --> 00:10:09,850
+Evet.
+
+45
+00:10:09,850 --> 00:10:16,850
+Hocam biz de son olarak proje konusunu güncellemiştik de sipariş işleme dedik.
+
+46
+00:10:16,850 --> 00:10:18,850
+Evet evet aldım.
+
+47
+00:10:18,850 --> 00:10:20,850
+Onayladınız mı yani?
+
+48
+00:10:20,850 --> 00:10:21,850
+Evet evet.
+
+49
+00:10:21,850 --> 00:10:23,850
+Tamamdır teşekkür ederim.
+
+50
+00:10:24,090 --> 00:10:27,139
+Tamam.
+
+51
+00:10:27,139 --> 00:10:29,139
+Evet şimdi derse başlayacağız artık.
+
+52
+00:10:29,139 --> 00:11:53,669
+Evet az önce de söylediğim gibi bu büyük bir konumuz karar verme sürecini daha zenginleştirmek.
+
+53
+00:11:53,909 --> 00:12:14,379
+Yazılım sistemleri tarafından iyi olan bir firmada yani dijital firma için karar verme yönetimdeki karar verme işini nasıl daha iyileştireceği
+
+54
+00:12:14,620 --> 00:12:26,620
+Ve bunun için bilgi sistemleri alt yapısının hangi özelliklerde olması gerektiği üzerine olacak bugünkü konumuz.
+
+55
+00:12:26,620 --> 00:12:50,019
+Burada hedef bilgi sistemleri yöneticilerin daha iyi karar vermesine nasıl yardımcı olacaklar.
+
+56
+00:12:50,259 --> 00:13:07,259
+Özellikle günlük işlerin dışında değişimler gerçekleştiğinde bu kararlarında bu tür kararlarında bilgi sistemleri nasıl yardımcı olacaklar.
+
+57
+00:13:07,259 --> 00:13:11,259
+Bunun üzerinde duracağız.
+
+58
+00:13:11,500 --> 00:13:18,500
+Grup karar vermede daha etkin olarak nasıl kullanılırlar.
+
+59
+00:13:18,500 --> 00:13:28,500
+Grup karar destek sistemleri gibi bir alt başlığı da var karar destek sistemlerinin.
+
+60
+00:13:28,740 --> 00:13:45,740
+Burada daha yüksek seviyedeki üst yönetimdeki karar verme işinde özel karar verme sistemleri nasıl oluşturulabilir.
+
+61
+00:13:45,740 --> 00:13:55,740
+Ve bunun için destek nasıl sağlanır bunun üzerinde durulacak.
+
+62
+00:13:55,980 --> 00:14:09,740
+Yönetimde hangi tür durumlarda daha zenginleştirilmiş karar vermeye ihtiyaç var.
+
+63
+00:14:09,980 --> 00:14:28,980
+Üst yönetim bilgi sistemleri, executive information üst yönetimdeki bilgi gereksinimlerinde karar destek sistemlerinde daha zenginleştirmeye gitmek gerekiyor.
+
+64
+00:14:29,220 --> 00:14:44,220
+Özellikle karar verme süreçlerinin yönetimi raporlanması için daha iyi sistemler yaratmak gerekir.
+
+65
+00:14:44,460 --> 00:15:00,600
+Bir defa karar destek sistemleri dediğimizde biz bunu sistem analiz edersin dediğimizde bilgi sistemi tipi olarak görmüştük.
+
+66
+00:15:00,600 --> 00:15:07,600
+Buradaki özellikler nelerdir? Bunların tekrar biraz daha ayrıntılı üzerinden geçelim.
+
+67
+00:15:07,840 --> 00:15:09,840
+Öncelikle basitten başlayalım.
+
+68
+00:15:09,840 --> 00:15:28,840
+Bir defa karar destek sistemleri bir kurumun orta kademe yönetiminden itibaren orta kademe ve üst yönetimindeki karar sistemlerinde yardımcı olacak sistemlerdir.
+
+69
+00:15:29,080 --> 00:15:40,080
+Burada analitik yazılım araçları ve modelleri ve veri birleşerek işlem görecektir.
+
+70
+00:15:40,320 --> 00:16:07,320
+Örneğin herhangi bir karar destek sisteminde o konuyla ilişkili günlük uygulamalardan saklanan, arşivlenen veri, analitik araçlar ve karar modelleri birleştirilerek kullanılır hale gelecek.
+
+71
+00:16:07,559 --> 00:16:18,559
+Karar destek sistemleri yarı yapılandırılmış ya da yapılandırılmamış kararları destekler.
+
+72
+00:16:18,559 --> 00:16:25,559
+Yani önceden yarım tanımlanmış yapıları destekler.
+
+73
+00:16:25,799 --> 00:16:43,799
+Özellikle üst yönetim bilgi sistemi seviyesinde bir karar mekanizması oluşturuluyorsa bu yapılandırılmamış ve yarı yapılandırılmışın anlamını önce söyleyeyim.
+
+74
+00:16:44,039 --> 00:16:54,039
+Yapılandırılmamıştan kasıt önceden yazılım hazırlanırken tanımlanmamış olan sorgular.
+
+75
+00:16:57,039 --> 00:17:12,039
+Bu nasıl olacak? Özellikle üst yönetim bilgi sistemi yapısında olduğunda karar mekanizması üst yöneticilerin anlık sorularına cevap verecek hale gelmesidir.
+
+76
+00:17:12,279 --> 00:17:32,279
+Bu yazılımı hazırlarken belirtilmemiş sorgulara da, anlık sorgulara da yani unstructured kararlar durumunda hizmet verecek bir yapıda olmasıdır.
+
+77
+00:17:32,519 --> 00:17:48,519
+Semi-structure yarı yapılandırılmışta karar destek sistemi sırasında hemen hemen tanımlanmış sorgulara cevap verecek durumda olmasıdır.
+
+78
+00:17:48,519 --> 00:17:58,519
+Yönetim bilgi sistemleriyle karar destek sistemleri arasında da bir farklılık var.
+
+79
+00:17:58,759 --> 00:18:24,740
+Yönetim bilgi sistemleri verinin normal akışına dayanan raporları hazırlar ve kurumun genel kontrolüne yardımcı olacak şekilde çalışır.
+
+80
+00:18:24,980 --> 00:18:51,269
+Karar destek sistemleri ise daha yarı belirlenmiş ya da üst yönetim bilgi sistemleri çerçevesindeyse rastgele sorgulara cevap verecek şekilde,
+
+81
+00:18:51,509 --> 00:19:11,509
+daha esnek, hızlı cevap verecek, modellere dayalı bir sistem ve başka bir özelliği de sonuçları grafikle göstermesidir.
+
+82
+00:19:11,750 --> 00:19:35,750
+Ve bu karar destek sistemlerinde genellikle yani yönetim bilgi sistemi bütün kurum için uygulanacak yapıdadır ama karar destek sistemi belli problemlere cevap verecek bir yapıdadır.
+
+83
+00:19:35,990 --> 00:19:57,990
+Ve model driving decision support sistem kavramı da şudur, what if gibi yani ne olursa eğer ne olursa sonuç ne olur gibi bir model kurulup,
+
+84
+00:19:58,230 --> 00:20:16,230
+bu model çerçevesinde sistemdeki sorguları analiz etmesi ve sonuçları yorumlaması üzerine çalışan bir karar destek sistemi yapısı,
+
+85
+00:20:16,470 --> 00:20:24,470
+senaryo bazlı çalışan karar destek sistemi yapısı diyebiliriz buna,
+
+86
+00:20:26,470 --> 00:20:36,470
+what if senaryosu sonuçtan başa giderek de şu sonucu almak için ne yapmamız gerekir,
+
+87
+00:20:36,710 --> 00:20:48,019
+veya what if analizinde ise ne yaparsak sonuç ne olur şeklinde senaryolar oluşturulmasıdır.
+
+88
+00:20:48,259 --> 00:21:09,900
+Bu model yönelimli karar destek sistemleri, data driving decision support sistem burada da büyük veri tabanlarında önceden hazırlanmış büyük veri tabanlarında
+
+89
+00:21:10,140 --> 00:21:36,140
+faydalı bilgiyi çıkarmak, analiz etmek üzere ve kullanıcıya sunmak üzere karar sistemleri ve bu noktada da data mining yaklaşımından faydalanmış oluyoruz.
+
+90
+00:21:36,380 --> 00:21:58,710
+Bu da büyük veri tabanlarındaki modelleri, örnekleri ve ilişkileri bulmaya yarıyor.
+
+91
+00:21:58,950 --> 00:22:26,819
+Burada davranışlarından yola çıkarak daha önceki kuralları ortaya çıkarak bunları yürüterek bir ilişki veya gizli bilgiyi bulmaya yarayan uygulamalar, veri madenciliği uygulamaları.
+
+92
+00:22:27,059 --> 00:22:35,059
+Bu da karar destek sistemleri içinde yer alan çalışmalarda.
+
+93
+00:22:35,059 --> 00:23:13,779
+Evet, bir hava yolları kargo sisteminin optimize edilmesi çalışmalarında bir karar destek sistemi örneği görüyoruz.
+
+94
+00:23:14,019 --> 00:23:31,509
+Burada bir veri tabanı var, büyük bir veri tabanı var kargolarla ilişkili işlemlerde.
+
+95
+00:23:31,750 --> 00:23:41,750
+Rezervasyon sistemi ile ilişkili çalışıyor, rezervasyon sisteminden alınan bilgilerle beslenen bir veri tabanı var.
+
+96
+00:23:41,990 --> 00:23:55,990
+Uçuş listesi bilgileri var, yine bu veri tabanına aktarılan rezervasyon bilgileri var.
+
+97
+00:23:56,230 --> 00:24:18,230
+Ve bu rezervasyondaki kargo büyüklüğü ve oranı olduğu bu rezervasyon sisteminde işte yolcuların bilet alması ve kargo işlemleri konusundaki tanımlamaları yer alıyor.
+
+98
+00:24:18,470 --> 00:24:46,470
+Ve bu şekilde optimize ederek kargo ile ilişkili çalışmaları herhangi bir sorgu olduğunda şuradaki kargo birimine cevap verecek.
+
+99
+00:24:46,710 --> 00:24:56,710
+Bunların sorularına cevap verecek bir sistem yaratıyor, karar destek sistemi yaratıyor.
+
+100
+00:24:56,710 --> 00:25:12,710
+Uygulamaların bir parçası olarak yani bu aslında bir yönetim bilgi sistemi bütünündeki çalışmaların karar destek yapısı çarşı arasında ilerliyor.
+
+101
+00:25:12,950 --> 00:25:22,950
+Şimdi karar destek sistemlerinde hangi tip işlemler gerçekleşir?
+
+102
+00:25:22,950 --> 00:25:42,230
+Burada association, bağlılık ilişkisi bir olaya hangi durumlar bağlıdır?
+
+103
+00:25:42,470 --> 00:26:01,470
+Sequence, burada zamana bağlı olarak bir olayların sıralanması hangi sırada gerçekleşir, bu sıralama işlemini gerçekleştiren yapı.
+
+104
+00:26:05,650 --> 00:26:35,769
+Classification, burada da bir grubu tanımlamak için bu gruba ait olan her bir parçanın özelliklerinin tanımlanması, sınıflandırma kavraması.
+
+105
+00:26:36,009 --> 00:26:46,009
+Bunların hepsi bizim pek çok araştırmamızda kullanılan işlemler.
+
+106
+00:26:49,009 --> 00:26:59,009
+Yazılım ehendisliği uygulamalarında da bu karar destek sistemlerinden faydalanılıyor.
+
+107
+00:26:59,250 --> 00:27:11,250
+Birçok alanda, işletmelerdeki birçok uygulamada association rule'lar geliştiriliyor.
+
+108
+00:27:11,250 --> 00:27:20,250
+Bağlılık, farklı olaylar arasındaki bağlılığı tanımlamak için.
+
+109
+00:27:20,490 --> 00:27:26,490
+Sequence sıralama işlemleri gerçekleştiriliyor.
+
+110
+00:27:26,490 --> 00:27:37,490
+Classification, sınıflandırma birlik gruplara ayırarak bu grupların elemanı olmak için kuralları.
+
+111
+00:27:37,730 --> 00:28:06,730
+Classification'a benzerdir ama bir grub tanıma değil, veri içindeki farklı grupların keşfedilmesi, grub tanımlamadan önce clustering işlemi gerçekleştiriliyor.
+
+112
+00:28:06,970 --> 00:28:16,970
+Şimdi bakarsak, veri tabanı gerekiyor, bir transaction processing sistemden beslenebilir bu veri tabanı.
+
+113
+00:28:17,970 --> 00:28:21,970
+Dış ortamdaki veriyi kullanabilir.
+
+114
+00:28:26,720 --> 00:28:41,720
+Karar destek sistemi içinde, bir karar destek sistemi veri tabanının olması gerekiyor.
+
+115
+00:28:41,720 --> 00:28:49,720
+Bu veri tabanı çok geniş bir büyüklük perspektifinde olabilir.
+
+116
+00:28:49,960 --> 00:28:58,210
+Bir excel tablosu da olabilir, doğrudan uygulamaların aktarıldığı.
+
+117
+00:28:58,210 --> 00:29:05,210
+Transaction processing sistemden çıkan sonuçların tutulduğu bir veri tabanı da olabilir.
+
+118
+00:29:05,210 --> 00:29:12,210
+Bu veri tabanına dışarıdan veri girişi de gerçekleştirilebilir.
+
+119
+00:29:12,210 --> 00:29:19,210
+Ve çalıştırılacak sistem kullanıcıya cevap verecek.
+
+120
+00:29:19,450 --> 00:29:26,450
+Tabi şurada aslında böyle bir gidiş de olmalı, kullanıcının sorduğu soru da olmalı.
+
+121
+00:29:26,450 --> 00:29:33,450
+Kullanıcı ara birimi, ekran, grafik, interfez.
+
+122
+00:29:33,450 --> 00:29:43,450
+Ve altta çalışacak uygulama da karar destek sistemi, yazılım sistemi,
+
+123
+00:29:43,690 --> 00:29:50,690
+modeller, olap tulları, veri madenciliği tulları bunlardan oluşan,
+
+124
+00:29:50,690 --> 00:29:58,690
+bunlardan biri ya da hepsi olabilir bir karar destek sistemi yazılımı var.
+
+125
+00:29:58,690 --> 00:30:05,690
+Kullanıcı ara yüzü vasıtasıyla bir sorgu gönderdiğinde,
+
+126
+00:30:05,690 --> 00:30:11,690
+altta karar destek sistemi, yazılım sistemi çalışacak.
+
+127
+00:30:11,930 --> 00:30:19,930
+Burada karar modelleri, olap tulları, veri madenciliği tulları altta çalışabilir.
+
+128
+00:30:19,930 --> 00:30:29,930
+Ve bu sistem veriyi, karar destek sistemi veri tabanı aktaracak.
+
+129
+00:30:29,930 --> 00:30:34,930
+Bu veri tabanı da günlük uygulamaların yürütüldüğü,
+
+130
+00:30:35,930 --> 00:30:45,930
+işlemsel bilgi sistemlerinden aktarılacak bilgiyle hazırlanacak yapıdadır.
+
+131
+00:30:45,930 --> 00:30:50,930
+Bu karar destek sistemi yapısının biraz daha basitini,
+
+132
+00:30:50,930 --> 00:30:54,930
+biz sistem analizi dersimizde de görmüştük.
+
+133
+00:30:54,930 --> 00:31:03,930
+Buradaki araçlar da dediğimizde, modeller olarak kısaca belirttiğimiz yapıda,
+
+134
+00:31:03,930 --> 00:31:05,930
+neler var?
+
+135
+00:31:05,930 --> 00:31:13,930
+Az önce model yönelimli karar destek yapısı kapsamında gördüğümüz,
+
+136
+00:31:13,930 --> 00:31:20,930
+what-if, goal-seeking gibi senaryo yapısı olabilir,
+
+137
+00:31:20,930 --> 00:31:25,930
+simülasyonlar olabilir, istatistiksel fonksiyonlar olabilir,
+
+138
+00:31:25,930 --> 00:31:34,930
+finansal fonksiyonlar olabilir, böyle modeller yerleştirilmiştir.
+
+139
+00:31:34,930 --> 00:31:40,930
+Ayrıca olap tulları diyoruz, online analytical processing.
+
+140
+00:31:40,930 --> 00:31:49,930
+Bu olap tulları da aslında online analytical processing diyoruz,
+
+141
+00:31:49,930 --> 00:31:55,930
+işte anında analitik işlemler gerçekleştirme.
+
+142
+00:31:55,930 --> 00:32:18,930
+Bu yapı genellikle iki boyuttan daha fazla boyut üzerinde sorgulama yapacak bir küp yapısı şeklinde tanımlanacaktır.
+
+143
+00:32:18,930 --> 00:32:22,930
+Olap küpleri de diyebiliriz.
+
+144
+00:32:22,930 --> 00:32:31,930
+Mesela bir ürünün satış durumlarını incelemek için,
+
+145
+00:32:31,930 --> 00:32:41,930
+bir tarafta satış bölgesi, bir tarafta ürünün renk skalası, bir tarafta büyüklük skalası gibi,
+
+146
+00:32:41,930 --> 00:32:59,930
+hangi ürünün, hangi boyuttaki, hangi renginden, hangi bölgede ne kadar satış yapıldı şeklindeki sorgulamalara hazır hale getirilmiş bir veri tabanı örneğinden bahsediyoruz olap küplerinde.
+
+147
+00:32:59,930 --> 00:33:10,930
+Yani daha hızlı sorgulama yapmaya hazır hale getirilmiş bir veri örneği diyebiliriz.
+
+148
+00:33:10,930 --> 00:33:27,779
+Evet, burada tekrar karar destek sistemi elemanlarından az önceki şekilde söylediklerimizi burada da görebiliriz.
+
+149
+00:33:27,779 --> 00:33:34,779
+Karar destek sistemi elemanları dediğimizde karar destek sistemi veri tabanında
+
+150
+00:33:34,779 --> 00:34:05,339
+kurumdaki karar destek sisteminde bulunan sorulara cevap verecek uygulamalardan tarihsel veri veya o anlık verinin bir toplamı diyebiliriz.
+
+151
+00:34:05,339 --> 00:34:09,340
+Bu karar destek sistemi veri tabanına.
+
+152
+00:34:09,340 --> 00:34:18,340
+Bu bir küçük, hani perspektifi çok genişlemiştim, büyüklük perspektifi.
+
+153
+00:34:18,340 --> 00:34:22,340
+Bu bir PC'deki Excel tablosu da olabilir.
+
+154
+00:34:22,340 --> 00:34:34,340
+Çok büyük bir data warehouse da olabilir ya da şimdi daha çok gündemde olan big data da olabilir karar destek sisteminden.
+
+155
+00:34:34,340 --> 00:34:49,690
+Model dediğimizde, model olaylar arasında ilişkileri veya olayların elemanlarını gösteren yapıdır.
+
+156
+00:34:49,690 --> 00:35:01,690
+Özetleyen yapıdır. Bir de duyarlılık analizleri gerçekleştirilir karar destek sistemlerinde.
+
+157
+00:35:01,690 --> 00:35:20,690
+İşte burada what if senaryoları ve sonuca dayalı, sonuç, hedefi arayan şu, şu hedef için ne olmalıdır?
+
+158
+00:35:20,690 --> 00:35:28,690
+Go seeking analizleri gerçekleştirebilir, hedef arama analizleri.
+
+159
+00:35:28,690 --> 00:35:50,690
+Burada çıktılar için mesela what if analizinde, çıktılar üzerinde bir veya daha fazla faktör değiştiğinde etki ne oluştur?
+
+160
+00:35:50,690 --> 00:36:02,690
+Bunun, bu sorguların saptanması diyebiliriz, duyarlılık yapılması, senaryo analizleri.
+
+161
+00:36:02,690 --> 00:36:30,750
+Mesela burada satış fiyatları üzerinde her bir birimin değişen maliyetleri ne olabilir?
+
+162
+00:36:30,750 --> 00:36:37,750
+Hangi durumlarda nasıl değişebilir?
+
+163
+00:36:37,750 --> 00:36:58,750
+Ortalama satış fiyatı her bir birimdeki değişim ve toplam maliyet şeklinde bir analiz gerçekleştirildi.
+
+164
+00:36:58,750 --> 00:37:57,010
+Sorunuz var mı? Buraya kadar sorunuz var mı arkadaşlar? Bugün sesle de bir problem olmadı herhalde değil mi?
+
+165
+00:37:57,010 --> 00:37:59,010
+Duyabiliyorsunuz.
+
+166
+00:37:59,010 --> 00:38:02,579
+Duyuyoruz hocam.
+
+167
+00:38:02,579 --> 00:38:04,579
+Tamam teşekkür ederim.
+
+168
+00:38:04,579 --> 00:38:45,920
+Mesela bazı karar destek sistemi uygulamaları, bir bankada müşteri profillerinin çıkarılması, sınıflandırma gerçekleştirme veya sadece o grup özelliklerinin çıkarılması
+
+169
+00:38:45,920 --> 00:39:10,920
+gibi sigorta şirketinde bir fraut fark etme ve müşteri satın alma örnekleri üzerinde çalışma.
+
+170
+00:39:10,920 --> 00:39:29,920
+Bu birçok bankacılıkta, sigortacılıkta bu fraut fiyatı oldukça fazla kullanılan bir karar destek sistemi örneği olabilir.
+
+171
+00:39:29,920 --> 00:39:46,789
+Yine bir markette veya bir firmada promosyon seçimi karar destek sistemi uygulaması olabilir.
+
+172
+00:39:46,789 --> 00:40:09,789
+Bir tren şirketinde tren rotalarına karar vermek. Bu aslında bütün ulaşım işlerinde transport güzergah kararı, gemi taşımacılığında önemli.
+
+173
+00:40:09,789 --> 00:40:26,789
+Mesela petrol-doğalgaz şirketlerinin potansiyel sondaj alanlarının değerlendirilmesi, tahmin edilmesi işleminde.
+
+174
+00:40:26,789 --> 00:40:46,789
+Yine tekstil firmaları için, satış mazlacılık için stoklara karar vermek.
+
+175
+00:40:46,789 --> 00:41:09,789
+Yani stok işinin gerçekleştirilmesi değil, o rutin işlem transaction processing sistem ya da MIS bünyesinde gerçekleşen envanterdeki stoklara karar verme bir karar destek sistemi uygulamasıdır.
+
+176
+00:41:09,789 --> 00:41:34,789
+Uçuş firmalarda uçuş listelerinin oluşturulması, yolcu talep tahmininin gerçekleştirilmesi, hangi hatta ne kadar yolcu olabilir buna karar vermek önemli.
+
+177
+00:41:34,789 --> 00:41:45,789
+O zaman uçuş listelerini ne kadar sık aralıkla gerçekleştirecekler, buna karar vermek oldukça önemli.
+
+178
+00:41:45,789 --> 00:42:06,789
+Burada bunun için bu gerçekleşsin, ona göre önce 4 saatte bir uçuş koyalım bakalım ne olacak, ona göre değiştirelim şeklinde gerçek hayatta uygulanamaz ama bir simülasyon içinde buna cevap bulunabilir.
+
+179
+00:42:06,789 --> 00:42:25,789
+Ve bu tür simülasyonlar yani gerçek sistem üzerinde deneme yapmak pahalı olduğu, riskli olduğu durumlarda simülasyon yaparak karar destek sistemi çerçevesinde karar mekanizmaları kurulacak.
+
+180
+00:42:25,789 --> 00:42:35,789
+Yine savunma anlaşmaları analizlerinde karar destek sistemleri kullanılabilir.
+
+181
+00:42:35,789 --> 00:42:56,980
+Karar destek sistemi, fiyatlandırma kararları için fiyatlandırmada nasıl karar verilecek?
+
+182
+00:42:56,980 --> 00:43:20,130
+Burada benzer ürünlerin mesela bu sezonun bir mağazada giyim ürünlerine fiyatına karar verilecek.
+
+183
+00:43:20,130 --> 00:43:46,130
+Ne yapılacak? Benzer parçalar geçmiş satış verilerinde birkaç yılın verisinde analiz edilecek satışları ve yazılım mevsim talep eğrisini oluşturacak her bir parça için ve tahmin edecek.
+
+184
+00:43:46,130 --> 00:44:11,690
+Acaba biz farklı fiyatlarda ne kadar satabiliriz bu tahminleri oluşturacak her bir parça için? Ona göre fiyat belirlemesi gerçekleştirecek.
+
+185
+00:44:11,690 --> 00:44:27,690
+Daha önceki yıllarda hangi fiyattan ne kadar satılmıştı ve talep eğrisi nasıl oluşur buna göre fiyat belirleyecek.
+
+186
+00:44:27,690 --> 00:44:35,690
+Burada karar destek sisteminin faydası olacaktır.
+
+187
+00:44:35,690 --> 00:45:04,960
+Nasıl bir müşteri taleplerine göre duyarlık analizi gerçekleştirip ve fiyat değişiklikleri olduğunda tarihsel satış verisini kullanacak.
+
+188
+00:45:04,960 --> 00:45:18,960
+Farklı fiyat değişikliklerine göre müşteri talebi nasıl olacaktır buna göre bir duyarlık analizi gerçekleştirecektir.
+
+189
+00:45:18,960 --> 00:45:26,960
+Yani fiyat belirleme kararlarında bir karar destek sistemi oluşturulabilir.
+
+190
+00:45:26,960 --> 00:45:43,940
+Yine bizim derste gördüğümüz supply chain management var bunun içinde de bir karar destek sistemi uygulaması oluşturabiliriz.
+
+191
+00:45:43,940 --> 00:45:51,940
+Karar destek sistemi bu zincir içinde biliyoruz sınavda da şeklini sormuştum.
+
+192
+00:45:51,940 --> 00:46:23,559
+İşte ham madde alım yaptığımız farklı seviyedeki firmalardan ürünü alıp üretimde kullanıp sonra dağıtıma aktarana kadar müşteriye dağıtıma kadar olan akışta nasıl karar destek sistemi kuruluşu yapılabilir.
+
+193
+00:46:23,559 --> 00:46:37,559
+Bir defa envanter stok seviyelerini modellemekte yardımcı olabilir karar destek sistemi.
+
+194
+00:46:37,559 --> 00:46:46,559
+Envanter'de stoklama seviyelerini nasıl oluşturacağız?
+
+195
+00:46:46,559 --> 00:46:56,559
+Ürün planlamasını nasıl gerçekleştireceğiz?
+
+196
+00:46:56,559 --> 00:47:12,449
+Hangi üründen ne kadar üretilmelidir, hangi renkte, hangi boyutta bu ürün için iş listesi kararlarını verebiliriz.
+
+197
+00:47:12,449 --> 00:47:19,449
+Ayrıca tedarik zincirini düşünürseniz transportasyon ulaşım da bunun içinde.
+
+198
+00:47:19,449 --> 00:47:24,449
+Acaba nasıl ulaştırmalıyız, dağıtımı nasıl yapmalıyız?
+
+199
+00:47:24,449 --> 00:47:33,449
+Üretimden sonra dağıtım firması, toptancı firma ve müşteri silsilesi vardı.
+
+200
+00:47:33,449 --> 00:47:41,449
+İşte bu aşamadaki ulaşımı nasıl sağlamak daha kârlı olur.
+
+201
+00:47:41,449 --> 00:47:45,449
+Burada da yine karar destek sistemi kullanılabilir.
+
+202
+00:47:45,449 --> 00:48:13,969
+Ayrıca firmalar yine envanter dönüşlerinde, toplam tedarik zinciri maliyetlerinde ve ürün oluşturma süresinde
+
+203
+00:48:13,969 --> 00:48:28,440
+yeni performans oluşturmakta karar destek sistemini kullanabilir.
+
+204
+00:48:28,440 --> 00:48:40,039
+Evet, şimdi burada farklı örnekler var, daha özenleştirilmiş örnekler.
+
+205
+00:48:40,039 --> 00:48:52,039
+Burada siz de etrafınızdaki firmalardan örnekler oluşturabilirsiniz.
+
+206
+00:48:52,039 --> 00:49:06,039
+Şimdi bu karar destek sistemi için genel örnekler verdik, şurada özellikle yeni örnekleri de siz geliştirebilirsiniz.
+
+207
+00:49:06,039 --> 00:49:18,039
+Sonuçta şimdi iyice anlaşıldığı karar destek sistemi yapısı nedir, nerede kullanılır, yönetim bilgi sisteminden farklılığı nedir,
+
+208
+00:49:18,039 --> 00:49:34,039
+yönetim bilgi sistemi içinde de var karar destek yapısı ama ayrıca tek bir karar içinde bu şekilde karar destek sistemini bir ayrı bilgi sistemi olarak da görüyoruz.
+
+209
+00:49:34,039 --> 00:49:47,039
+Şimdi burada bir segmentasyon müşteri analizi gerçekleştiren bir yapıda karar destek sistemini göreceğiz.
+
+210
+00:49:47,039 --> 00:50:01,739
+Bundan önce bir ara verelim biz. Sorunuz var mı aradan önce?
+
+211
+00:50:01,739 --> 00:50:09,800
+Aradan önce sorunuz var mı?
+
+212
+00:50:09,800 --> 00:50:15,980
+Yok hocam.
+
+213
+00:50:15,980 --> 00:50:22,719
+Sorunuz var mı?
+
+214
+00:50:22,719 --> 00:50:24,719
+Yok hocam.
+
+215
+00:50:24,719 --> 00:50:27,719
+Tamam o zaman 10 dakika ara veriyoruz.
+
+216
+00:50:27,719 --> 01:05:02,449
+Evet mikrofonu açtım.
+
+217
+01:05:02,449 --> 01:05:05,449
+Derste devam edebiliriz.
+
+218
+01:05:05,449 --> 01:05:10,760
+Bu arada katılımcı sitesine bakayım.
+
+219
+01:05:11,760 --> 01:05:26,730
+[öğrenci] MH burada mı?
+
+220
+01:05:26,730 --> 01:05:44,389
+Evet siz sıkıştırarak koymuşsunuz dosyayı ama açılamadı.
+
+221
+01:05:44,389 --> 01:05:52,389
+Tekrar bana sınavda yüklediğiniz dosyayı mail ile atmanızı istiyorum.
+
+222
+01:05:52,389 --> 01:06:02,059
+[öğrenci] MH derste görünüyor ama duyuyor mu beni?
+
+223
+01:06:02,059 --> 01:06:38,039
+[öğrenci] MH burada mı?
+
+224
+01:06:38,039 --> 01:06:42,349
+Neyse dersin sonunda bir daha sorarım.
+
+225
+01:06:42,349 --> 01:06:45,349
+Derste devam ediyoruz.
+
+226
+01:06:45,349 --> 01:07:14,380
+Müşteri analizi ve segmentasyonu bu sisteme bu sistem bir karar destek sistemi.
+
+227
+01:07:14,380 --> 01:07:28,380
+Müşteri gruplarının analiz edilmesi için kullanılan veri saklama ortamı,
+
+228
+01:07:28,380 --> 01:07:37,380
+müşteri veri ambarı, veri ambarı yapısında bir defa legacy data var.
+
+229
+01:07:37,380 --> 01:07:49,380
+Yani büyük kurumdaki temel uygulamalar olan müşteri bilgi sisteminden gelen veri,
+
+230
+01:07:49,380 --> 01:08:02,380
+burada müşterilerle ilgili saklanan veri, web sitesinden gelen satış verileri,
+
+231
+01:08:03,380 --> 01:08:14,380
+ve ERP uygulaması temelinde olan veri data warehouse içinde var.
+
+232
+01:08:14,380 --> 01:08:30,380
+Burada böyle bir sisteme sorular sorduğumuzda karar destek sistemi yapısında hangi işlemler gerçekleştirecek?
+
+233
+01:08:30,380 --> 01:08:32,380
+Bunu görelim.
+
+234
+01:08:32,380 --> 01:08:48,779
+En sık işlem yapan müşterilerimiz kimlerdir?
+
+235
+01:08:48,779 --> 01:09:10,430
+Bizim toptan satış outletlerimize en yakında yaşayanlar mı bunlar?
+
+236
+01:09:10,430 --> 01:09:20,430
+Bu müşteriler nasıl yeniden sınıflandırabiliriz bunları?
+
+237
+01:09:20,430 --> 01:09:29,430
+Her bir sınıfı nasıl daha iyileştirebiliriz?
+
+238
+01:09:29,430 --> 01:09:35,430
+Şimdi bu sorulara analizler gerçekleştirecek.
+
+239
+01:09:35,430 --> 01:10:15,380
+Bir defa en üstteki bizim en fazla alışveriş yapan müşterilerimizin en üstteki %25'i kullanacağız.
+
+240
+01:10:15,380 --> 01:10:20,380
+İstatistiksel analiz gerçekleştirerek.
+
+241
+01:10:20,380 --> 01:10:32,380
+Bunlar arasında yerle satış sıklığı arasında korrelasyon oluşturacağız.
+
+242
+01:10:32,380 --> 01:10:40,380
+Bir korrelasyon var mı? Yani daha yakındakiler daha mı çok alışveriş yapıyorlar?
+
+243
+01:10:40,380 --> 01:10:52,380
+Yeni müşteri üçüncü soru için yeni müşteri segmentleri oluşturacağız.
+
+244
+01:10:52,380 --> 01:11:07,380
+Müşteriler yakında yaşamayan sık alışveriş yapan müşteriler.
+
+245
+01:11:07,380 --> 01:11:27,380
+Bu bir mağazaya yakında olan müşteriler, mağazanın yakınında oturan ama sık alışveriş yapmayan müşteriler diye segmentler oluşturacağız.
+
+246
+01:11:27,380 --> 01:11:34,380
+Yani veri grupları segmentasyon gerçekleştireceğiz.
+
+247
+01:11:34,380 --> 01:11:48,380
+Burada da veri tabanından her bir müşteri segmenti için ayrı ayrı sorgulama gerçekleştireceğiz.
+
+248
+01:11:48,380 --> 01:11:52,380
+Bu müşterilerin durumu nedir şeklinde.
+
+249
+01:11:52,380 --> 01:12:08,380
+Ve işte müşteri analizi de segmentasyon gerçekleştirmesi için bir karar destek sistemi uygulaması bu şekilde yürümüş olacak.
+
+250
+01:12:08,380 --> 01:12:25,819
+Müşteri ilişkileri yönetimi karar destek sistemi yapısı için oldukça fazla örnekler teşkil ediyor.
+
+251
+01:12:25,819 --> 01:12:43,819
+Yani müşteri ilişkilerinde bu veri madenciliğin satış verileri üzerinde, müşteri özellikleri üzerinde en fazla örnekleri olan alanlardan bir tanesi.
+
+252
+01:12:43,819 --> 01:13:06,420
+Müşteri ilişkileri yönetimi için karar destek sistemi uygulamasında tarihsel veriyi kullanarak ve gelecekte ki koşullar için varsayımlar yaparak
+
+253
+01:13:06,420 --> 01:13:22,420
+bazı olayların çıktığı için tahminler yürüterek veri madenciliği tekniklerini kullanabiliyoruz.
+
+254
+01:13:22,420 --> 01:13:34,420
+Böylece gerçekleşecek işlemleri tahmin edebiliyoruz.
+
+255
+01:13:34,420 --> 01:13:49,420
+Veri görüntüleme işlemi ve coğrafi bilgi sistemlerinde de yine karar destek sistemleri kullanıyoruz.
+
+256
+01:13:49,420 --> 01:14:18,420
+Burada da paternler ve büyük verinin grafik formda, grafik şekillerle veriyi göstererek verinin yapısı hakkında, ilişkileri hakkında kullanıcılara yardımcı olmak gerekiyor.
+
+257
+01:14:18,420 --> 01:14:29,420
+Yani grafikle bu analizlerden çıkan sonuçları gösterebiliyoruz.
+
+258
+01:14:29,420 --> 01:14:54,539
+Coğrafi bilgi sistemleri yapısında burada karar verme ve planlamayı daha fazla geliştirmek üzere,
+
+259
+01:14:54,539 --> 01:15:11,539
+haritalar kullanarak buradaki veriyi göstermek, analiz etmek işini gerçekleştiren yazılım sistemleri,
+
+260
+01:15:11,539 --> 01:15:31,539
+haritalar üzerinde, işte mesela bu veriyi haritayla göstermek, mesela HES uygulamaları, işte harita üzerinden hasta sıklığının gösterilmesi,
+
+261
+01:15:31,539 --> 01:15:50,229
+coğrafi bilgi sistemi uygulaması veya en fazla kullanılan yön bulma işlemleri, araba yönlendirme sistemleri,
+
+262
+01:15:50,229 --> 01:16:17,229
+müşteri karar destek sistemi yapısında var olan ya da potansiyel müşterinin karar verme sürecini desteklemek üzere yine uygulamalar gerçekleştirilebilir.
+
+263
+01:16:17,229 --> 01:16:30,609
+Bir de karar destek sistemi yapısında, karar destek sistemi tiplerinde grup karar destek sistemleri var.
+
+264
+01:16:30,609 --> 01:16:58,010
+Bu bir interaktif bilgisayar tabanlı, yapılandırılmamış problemlere karar oluştururken karar vericilerin bir grup halinde bir arada çalışmasını sağlayacak, kolaylaştıracak bir sistem, grup karar verme sistemleri.
+
+265
+01:16:58,010 --> 01:17:14,180
+Bu grup karar verme sistemleri GDSS nasıl çalışıyor? Yani her zaman için tek kişi karar vermiyor.
+
+266
+01:17:14,180 --> 01:17:31,180
+Bu modellerden çıkan büyük verinin kullanıldığı karar destek sistemi uygulamalarına bir kişi soru sorup cevap almıyor.
+
+267
+01:17:31,180 --> 01:17:52,619
+Bir grup, birbirinden uzakta da olabilecek bir grup karar vereceği zaman böyle bir sistemi, özellikteki bilgi sistemini grup karar destek sistemleri diyoruz.
+
+268
+01:17:52,619 --> 01:18:44,140
+Grup karar destek elemanları arasından, yazılım araçları arasından, bunun en olacağı açısından işte beyl fırtınası araçları, fikir yöneticileri, sorgu toolları, elektronik anket sistemleri,
+
+269
+01:18:44,140 --> 01:19:09,390
+bütün bunlar hangi öncelikleri bunun yapılması, paydaşların tanımlanması ve analiz edilmesi araçları, kuralların oluşturulması, grup sözlüklerinin oluşturulması,
+
+270
+01:19:09,390 --> 01:19:24,390
+bunların hepsi grup karar destek sisteminin, şimdi hepsinde tek tek bakarsak yani grup karar verme ortamını oluşturmak için hangi elemanlar gerekli?
+
+271
+01:19:24,390 --> 01:19:42,390
+Bir defa donanım olarak konferans desteği sağlamalı ve elektronik olarak bu farklı karar vericileri bir araya getirecek bir yapı olması gerekiyor.
+
+272
+01:19:42,390 --> 01:19:59,390
+Yazılım araçları açısından bilgi toplama, seviyelendirme ve öncelikleri aramayı düzenleyen toollar olmalı.
+
+273
+01:19:59,390 --> 01:20:23,390
+İnsan faktörü açısından bir defa buradaki donanım ve yazılımı destekleyecek, kullandıracak elemanlar olmalı, çalışanlar olmalı.
+
+274
+01:20:23,390 --> 01:20:37,390
+Ve bu da buradaki katılımcıların da bu kolaylıklar hakkında, destek hizmetleri hakkında eğitilmiş olması gerekli.
+
+275
+01:20:37,390 --> 01:20:55,390
+GDSS için elektronik anketler düzenleyebilmek gerekiyor. Beyin fırtınası gerçekleştirecek yazılım araçları altyapısı olmalı.
+
+276
+01:20:55,390 --> 01:21:05,390
+Yine fikirlerin yönetimi için anket araçlarını söylemiştik zaten.
+
+277
+01:21:05,390 --> 01:21:26,840
+Öncelikler varsa bu karar vermede bunları set etmek gerekiyor, belirlemek gerekiyor baştan, onu sağlayacak araçlar olması gerekiyor.
+
+278
+01:21:26,840 --> 01:21:48,840
+Ve her bir paydaş, yani grup karar verme sisteminde bulunacak her bir paydaş tanımlanacak ve analiz yapabilecek, analiz edilebilecek.
+
+279
+01:21:48,840 --> 01:22:04,840
+Kuralların belirleneceği, yerleştireceği araçlar olmalı ve grup sözlüyü bu çalışma ile ilişkili bir sözlük oluşturması.
+
+280
+01:22:04,840 --> 01:22:11,840
+Bunların bir kısmı zaten çok yakın birbirine, tekrarlı gibi aslında başka bir türlü söylemiş gibi oluyoruz.
+
+281
+01:22:11,840 --> 01:22:38,840
+Ama burada baktığımızda bu grup karar verme işlemini kotarabilmek için uygun donanım altyapısı, yazılım araçları yani her bir kişinin çalışmasını sağlamak üzere bilgi toplama, seviyelendirme, öncelikleri arama gibi işler gerçekleştirecek yazılım araçları.
+
+282
+01:22:38,840 --> 01:22:48,840
+Katılımcılar üzerinde bir temel eğitim verilmesi gerekiyor bunu sağlayabilmek için.
+
+283
+01:22:48,840 --> 01:23:15,439
+Sorgu anket, elektronik anketlerin oluşturulması ve bu anketlerin böyle çok basit olarak değerlendirilmesi için tullar, beyin fırsınası gerçekleştireceği zaman buna destek sağlayan tullar gibi araçlar olmalı.
+
+284
+01:23:15,439 --> 01:23:35,439
+Ayrıca öncelikleri belirleyecek, kuralları oluşturacak, paydaşları tanıtacak ve analizi gerçekleştirecek elemanların olması gerekiyor.
+
+285
+01:23:35,439 --> 01:23:54,439
+Bu grup karar destek sistemi toplantılarında her bir paydaşa bir workstation ya da katılım yapacağı bir donanım verilmesi gerekiyor.
+
+286
+01:23:54,439 --> 01:23:59,439
+Ve bağlantının, networkun sağlanmış olması gerekiyor.
+
+287
+01:23:59,439 --> 01:24:22,439
+Burada grup daha sonradan gerçekleştirecekler ve bununla ilişkili veri belirtilmiş olacak.
+
+288
+01:24:22,439 --> 01:24:38,319
+Yine bu grup karar verme işlemini grafik olarak gösterecek tarımlar olması gerekiyor.
+
+289
+01:24:38,319 --> 01:24:46,319
+Şimdi bunun grup sistem tullarına baktığımızda yani nasıl destekleyecek?
+
+290
+01:24:46,319 --> 01:24:52,319
+Şurada bir oturum yöneticisi var.
+
+291
+01:24:52,319 --> 01:25:00,319
+Oturumu planlıyor ve grup etkileşimli olarak çalışacak.
+
+292
+01:25:00,319 --> 01:25:07,319
+Neler yapılacak, hangi işlemleri yapılacak bir fikir üretilecek.
+
+293
+01:25:07,319 --> 01:25:23,319
+Bu fikir üzerinde analiz yapılacak, önceliklendirme yapılacak ve kurallar geliştirilecek.
+
+294
+01:25:23,319 --> 01:25:33,319
+Ve kurum hafızasına bu fikirler yerleştirilirken kurumsal hafıza da bilgi alınabilecek.
+
+295
+01:25:33,319 --> 01:25:39,319
+Tekrar buradaki kararlar kurumsal hafızaya yerleştirilecek.
+
+296
+01:25:39,319 --> 01:25:48,319
+Yine oturum planlaması sırasında da buradan bilgi alınacak ve oturum planı da buraya aktarılacak.
+
+297
+01:25:48,319 --> 01:26:09,319
+Kurumsal analiz işlemi, grafik gösterimi, grup sözlüyü yani burada bu fikir üretimini gerçekleştirirken konuyla ilişkili sözlük,
+
+298
+01:26:09,319 --> 01:26:28,319
+özet senaryo, bilgiye erişim ve kişisel verimlilik bilgilerinin de buraya aktarılması gerekecek.
+
+299
+01:26:28,319 --> 01:26:33,319
+Fikir üretme işi, işte beyin fırtınası ile fikir üretiliyor.
+
+300
+01:26:33,319 --> 01:26:43,319
+Konu hakkında bir çerçeve çiziliyor.
+
+301
+01:26:43,319 --> 01:26:56,319
+Fikirin organize edilmesi için, bu fikri oluşturabilmek için olaylar analiz ediliyor.
+
+302
+01:26:56,319 --> 01:27:05,319
+Ve burada da grup bu fikirleri not alıyor.
+
+303
+01:27:05,319 --> 01:27:28,069
+Önceliklendirmede seçim gerçekleştirecek, alternatifler değerlendirilecek, anketler gerçekleştirecek
+
+304
+01:27:28,069 --> 01:27:46,069
+ve grup tarafından bir matriz oluşturulacak fikirleri önceliklendirmek için ve bir kural gerçekleştirecek bunun hakkında.
+
+305
+01:27:46,069 --> 01:27:53,069
+Grup sistem toolları bu şekilde çalışacak yapılar.
+
+306
+01:27:53,069 --> 01:28:14,069
+Zaten şu grup sistem araçlarının yapısına baktığımızda şuradaki her bir komponenti burada sağlanmış olduğunu görüyoruz.
+
+307
+01:28:14,069 --> 01:28:40,010
+Bu daha da zenginleştirebilir, daha işbirlikçi bir ortam yaratılabilir, katılımcıların sayısı artabilir.
+
+308
+01:28:40,010 --> 01:28:52,069
+Burada organize etme ve fikirleri değerlendirme ve organize etmedi.
+
+309
+01:28:52,069 --> 01:29:14,390
+Toplantı sonuçlarını tutmada daha tanımlı metotlar kullanır yazılım araçları.
+
+310
+01:29:14,390 --> 01:29:27,270
+Fikirler daha artabilir ve böylece daha zenginleştirme olabilir.
+
+311
+01:29:27,270 --> 01:29:37,270
+Burada bir kurumsal hafızadan söz ediyoruz.
+
+312
+01:29:37,270 --> 01:29:43,270
+Bunu biraz açıklayalım.
+
+313
+01:29:43,270 --> 01:29:57,680
+Bir kurumdaki gerçekleşen, daha önce gerçekleşmiş işlemler arşivde bulunur.
+
+314
+01:29:57,680 --> 01:30:06,680
+Bunları karar vermede kullanabiliriz.
+
+315
+01:30:06,680 --> 01:30:31,060
+Kurumun bu arşiv versisine öğrenme işleminin gerçekleştirecek şekilde saklanması kurumsal hafıza oluyor.
+
+316
+01:30:31,060 --> 01:30:42,060
+Karar verme sistemleri yarı yapılandırılmış olduğunda decision support sistem olarak kullanılıyor.
+
+317
+01:30:42,060 --> 01:30:56,060
+Yapılandırılmamış anlık kararlar içinde zaman zaman bu executive information sistem ve decision support sistem arasında geçişler söz konusu olabiliyor.
+
+318
+01:30:56,060 --> 01:31:04,060
+Burada üst yönetime bilgi sağlamak hedeflenir ilk başta.
+
+319
+01:31:04,060 --> 01:31:09,060
+Executive üst yönetim destek sistemlerinde.
+
+320
+01:31:09,060 --> 01:31:20,060
+Biz bunu ISS executive support sistem kurumlarda bilgi sistemi yapısı olarak görüyoruz.
+
+321
+01:31:20,060 --> 01:31:33,060
+Ama burada executive information sistem olarak bizim sistem analizi kitabımızda yer alıyor.
+
+322
+01:31:33,060 --> 01:31:38,060
+İkisi aynı anlamda kullanılıyor.
+
+323
+01:31:38,060 --> 01:31:47,060
+Yani üst yönetim bilgi sistemi, üst yönetim destek sistemi aynı anlamda kullanılıyor.
+
+324
+01:31:47,060 --> 01:31:52,060
+Bunu her iki şekilde de ifade edebilirsiniz.
+
+325
+01:31:52,060 --> 01:32:05,060
+ISS de, EIS de aynı executive information sistem ve executive support sistem aynı şeyleri ifade ediyor.
+
+326
+01:32:05,060 --> 01:32:14,979
+Burada buraya kadar sorunuz var mı?
+
+327
+01:32:14,979 --> 01:32:25,220
+Executive information sistem yapısına kurumlarda geçmeden önce sorunuz var mı?
+
+328
+01:32:25,220 --> 01:32:55,170
+Evet teşekkürler [öğrenci], aferdiğin için.
+
+329
+01:32:55,170 --> 01:33:14,100
+Evet devam ediyorum.
+
+330
+01:33:14,100 --> 01:33:28,100
+Executive support sistem yapısı bu üst yönetim için bilgi gereksinimlerini hedefliyor.
+
+331
+01:33:28,100 --> 01:33:37,100
+Burada sadece iç kaynaklar değil dış kaynaklardan da gelen veri var.
+
+332
+01:33:37,100 --> 01:33:38,100
+İkisi birleştiriliyor.
+
+333
+01:33:38,100 --> 01:33:43,100
+Bu zaten executive information sistem üzerinde durmuştuk daha önce de.
+
+334
+01:33:43,100 --> 01:33:53,100
+Ama buradaki karar mekanizması nasıl, ikisi arasındaki farklılıkları nedir o yüzden tekrar üzerinde duruyoruz.
+
+335
+01:33:53,100 --> 01:34:00,659
+Evet iç ve dış kaynaklardan olan veri birleştiriliyor.
+
+336
+01:34:00,659 --> 01:34:07,659
+Genelleştirilmiş bir hesaplama sistemi yaratılıyor.
+
+337
+01:34:07,659 --> 01:34:10,659
+Ve bir iletişim ortamı yaratılıyor.
+
+338
+01:34:10,659 --> 01:34:12,659
+Bunlarda da ne hedefleniyor?
+
+339
+01:34:12,659 --> 01:34:34,420
+Problemlerin farklı değişim aralıklarına nasıl uygulanabileceği ile ilişkili bir hesaplama sistemi yaratılıyor.
+
+340
+01:34:34,420 --> 01:34:43,420
+Yani veriye daha kolay ulaşabileceğimiz bir ortam her an ulaşılabilecek bir ortam yaratılıyor.
+
+341
+01:34:43,420 --> 01:35:33,460
+Bunu yaparken kullanıcıların veriye daha hızlı erişeceği bir hazır erişim kapsamında olan bir yapı oluşturabilmek için.
+
+342
+01:35:33,460 --> 01:35:55,579
+Kurumsal performansı izler, aktiviteleri izler, anlık problemler üzerinde durur, fırsatları tanımlar, trendleri tahmin eder.
+
+343
+01:35:55,579 --> 01:36:05,579
+Kurumdaki rolü nedir?
+
+344
+01:36:05,579 --> 01:36:16,579
+Bir defa bütün kurumdan veriyi bir arada alır.
+
+345
+01:36:16,579 --> 01:36:39,859
+Veriyi seçmek, erişmek ve düzenlemek üzere yöneticilere hizmet sunar.
+
+346
+01:36:39,859 --> 01:36:42,859
+Bunun anlamı nedir?
+
+347
+01:36:42,859 --> 01:37:03,859
+Tüm organizasyon hakkında birleşik veri bulunduran sistem daha hazır ulaşılabilecek gibi büyük veri halinde kurumla ilişkili ve dış ortamla ilişkili veriyi
+
+348
+01:37:03,859 --> 01:37:24,859
+yöneticilerin seçmesine, erişmesine ve özel olarak birleştirmesine hizmet verir, yöneticilerin daha kolay bu işi yapmasına, erişim gerçekleştirmesine hazır hale getirir.
+
+349
+01:37:24,859 --> 01:37:56,380
+Ve aynı şekilde, aynı veriye farklı bakış açılarıyla herhangi bir boyutta bakılabilmesini sağlar.
+
+350
+01:37:56,380 --> 01:38:11,380
+Bu noktada kurumda sistem yapısı kullanırken drill down işlemi gerçekleştirilir.
+
+351
+01:38:11,380 --> 01:38:31,939
+Yani bir özet veriyi daha ayrıntılı, daha ayrıntılı detaylara ulaştırmak.
+
+352
+01:38:31,939 --> 01:38:54,939
+Mesela drill down deyince, şu örnek gelir aklımıza, biz yöneticilere bu senenin sonbahar ayındaki satış verisini sunabiliriz.
+
+353
+01:38:54,939 --> 01:39:04,939
+Ama bizim sistemimizde oluşturduğumuz veri saklama ortamında öyle bir olanak olacak ki,
+
+354
+01:39:04,939 --> 01:39:28,989
+işte bu olap küpleriyle bir daha ayrıntıya indiğimizde hangi bölgede, hangi aydaki sonbaharın her 3 ayındaki farklı satışları görelim bölgelere göre.
+
+355
+01:39:28,989 --> 01:39:54,989
+Daha az satış olan bir bölgede, bu sonbahar içeren 3 ay içinden hangisinde daha az satış olmuşsa, o bölgenin o aydaki satışlarını daha ayrıntılı olarak görelim.
+
+356
+01:39:54,989 --> 01:40:09,989
+Ve o bölgedeki şehirler içinde de ilerleyebilir, hangi şehirde daha az satış olmuş, buradaki satışları görebilelim.
+
+357
+01:40:09,989 --> 01:40:26,989
+Yani giderek bir kademe bir kademe daha özet veriler, bir kademe bir kademe daha ayrıntılı veriye ulaşılabilme yeteneği, drill down veri sondajı diyoruz.
+
+358
+01:40:26,989 --> 01:40:50,739
+Şimdi ESS'i yani executive support sistemi nasıl oluşturacağız ve kuruma nasıl bir hizmeti olacak, bir defa kullanımını kolaylaştırmak gerekiyor.
+
+359
+01:40:50,739 --> 01:41:10,760
+Ortamdan izleyerek bilgi alma özelliği, iç ve dış kaynaklardan bilgi alabilme özelliğini katmamız gerekecek.
+
+360
+01:41:10,760 --> 01:41:32,359
+Faydası ne olacaktır? Tabii ki olabilecek trendlere analiz etmek ve kıyaslamakla daha hızlı ulaşmış olacağız.
+
+361
+01:41:32,359 --> 01:41:48,359
+Daha fazla veriyi daha açık hale getirmiş olacak ve daha anlaşılır hale getirmiş olacak.
+
+362
+01:41:48,359 --> 01:41:58,770
+Mesela drill down da kademe kademe daha netleştiriyor veriyi, karar vermeyi hızlandırmış olacak.
+
+363
+01:41:58,770 --> 01:42:10,770
+Sorgulara daha hızlı cevap verir hale gelince, gelecek ile ilişkili daha hızlı tahmin yapılabilecek.
+
+364
+01:42:10,770 --> 01:42:27,770
+Böylece yönetim performansı gelişmiş olacak, yönetici daha kontrol yeteneği artacak ve aktiviteleri daha iyi izleyebilecek.
+
+365
+01:42:27,770 --> 01:42:46,460
+Böylece yazılım sistemleri ile yönetilen bir firma için, eğer executive support sistem kurulmuşsa,
+
+366
+01:42:46,460 --> 01:43:10,460
+burada pazar koşullarındaki değişimler daha iyi fark edilecek ve iş gücü daha iyi izlenebilecek.
+
+367
+01:43:10,460 --> 01:43:24,460
+Yani feedback sistemi, geri besleme oluşturulması daha fazla görülebilecek.
+
+368
+01:43:24,460 --> 01:43:47,819
+Burada firmanın performansını analiz etmek için birçok ölçümler var.
+
+369
+01:43:47,819 --> 01:44:10,819
+Bunlara ilave eden müşteri ve iç işlem süreçleri gibi, büyüme miktarları gibi, ek işletmecilik perspektiflerinden de ölçümler yapılabilecek bu sistem sayesinde.
+
+370
+01:44:10,819 --> 01:44:48,649
+Evet, burada herkes için bunu önümüzdeki haftaya kadar ödev şeklinde veriyorum.
+
+371
+01:44:48,649 --> 01:45:07,649
+Stratejik performans yönetim araçları kurumsal sistemler için, burada mesela SAP'nin altında bir ürün var, stratejik performans yönetim aracı olarak.
+
+372
+01:45:07,649 --> 01:45:33,649
+Bunun dışında, sektörde bu amaçla kurumsal bir sistemin stratejik performans yönetim aracı olarak çalışan başka bir uygulama var mı, başka bir yazılım ürünü var mı?
+
+373
+01:45:33,649 --> 01:45:42,649
+Bu yazılım ürünü hakkında bilgi araştırmanızı istiyorum.
+
+374
+01:45:42,649 --> 01:45:55,649
+Önümüzdeki hafta, derste bunu sözlü olarak hazırlayan arkadaşlarınızdan sunmasını isteyeceğim.
+
+375
+01:45:55,649 --> 01:46:06,270
+Yani sunmasını derken sadece bunların tanıtımını yapmanızı isteyeceğim.
+
+376
+01:46:06,270 --> 01:46:12,270
+Hangi araçtır, hangi firma tarafından üretilir, ne yapar?
+
+377
+01:46:12,270 --> 01:46:24,100
+Bunun üzerinde biraz çalışmanızı istiyorum, örnek vermenizi istiyorum.
+
+378
+01:46:24,100 --> 01:46:32,140
+Evet, şimdi bu konuyu tamamlamış olduk.
+
+379
+01:46:32,140 --> 01:46:42,140
+Bu konuyu tamamladım, bir 10 dakika ara verelim tekrar, başka bir konuya geçeceğiz.
+
+380
+01:46:42,140 --> 01:46:46,710
+Sorunuz var mı buraya kadar?
+
+381
+01:46:46,710 --> 02:03:11,390
+Şimdi, farklı bir konu üzerinde duracağız demiştim.
+
+382
+02:03:11,390 --> 02:03:45,460
+Şimdi, az önce karar verme sistemleri üzerinde durduk ve bu karar verme sistemleri, karar destek sistemleri ve daha üst seviye de karar vermeyi kolaylaştıracak üst yönetim bilgi sistemleriydi ya da üst yönetim destek sistemleri.
+
+383
+02:03:45,460 --> 02:04:03,140
+Bu sistemlerin kurumda bilgi sistemlerini yeniden organize etme sırasında da faydalanıyoruz.
+
+384
+02:04:03,140 --> 02:04:31,140
+Ama bu bölümde, özellikle üzerinde duracağımız şey, bir kurumda yeniden tasarım, re-ingenering çalışmaları gerçekleştirdiğimizde,
+
+385
+02:04:31,140 --> 02:04:54,140
+re-organizasyon çalışmaları gerçekleştirdiğimizde, bilgi sistemlerini nasıl daha etkin kullanıyoruz, bir işletmecilik stratejisini nasıl oluşturuyoruz
+
+386
+02:04:54,140 --> 02:05:15,140
+ve şirkette yeni bir organizasyon, yeni bir yapılanmaya geçildiğinde, bilgi sisteminin yeniden yapılanmaya, katkısını, bilgi sistemlerini bu re-organizasyonun içine nasıl yerleştiririz.
+
+387
+02:05:15,140 --> 02:05:31,140
+Tabii ki burada bilgi sistemlerinde de yeniden yapılanmaya gidilecek, bir de işin o tarafından bakmak gerekiyor ve böylece bizim işletmecilik planlarımıza,
+
+388
+02:05:31,140 --> 02:05:46,140
+bilgi sistemin stratejisini de eklememiz gerekecek. Yeni bir bilgi sistemi oluşturmak için gerekli adımlar nelerdir, bunun üzerinde duracağız ayrıca.
+
+389
+02:05:46,140 --> 02:06:15,890
+Bilgi sistemleri oluşturmak için alternatif metotlar nelerdir ve bu uygulamaları daha hızlı birçok firmada dönüşüm yaşandı.
+
+390
+02:06:15,890 --> 02:06:32,890
+Bundan 10 sene öncesinde daha fazla oldu, günümüzde de olmaktı. Uygulamalar elektronik sistemler, web sistemleri üzerine dönüşmüş durumda.
+
+391
+02:06:32,890 --> 02:06:49,890
+İşte bu dönüşümde yeni sistemleri oluştururken kullanılan teknikler neler oldu? Sistemlerin geliştirmesinde temel riskler nelerdir?
+
+392
+02:06:49,890 --> 02:07:00,890
+Tabii ki belirsizlikler var ki riskler doğuyor. Riskler belirsizliklerden doğar. Yazılım ehendisliğinde de bu konuda konuşmuştuk.
+
+393
+02:07:00,890 --> 02:07:23,890
+Bu iş süreçleri ve yeni sistemler geliştirmede stratejik etkileri saptama gerekecek.
+
+394
+02:07:23,890 --> 02:07:43,890
+Şimdi bilgi sistemleri planlaması dediğimizde neden bahsediyoruz? Bir yol haritası belirleme için.
+
+395
+02:07:43,890 --> 02:07:57,890
+Yol haritası belirleme ve bunun gerçek duruma, yönetim stratejisine, gerçekleştirme planlarımıza ve bütçeye uygun olması lazım.
+
+396
+02:07:57,890 --> 02:08:12,890
+Yeni sistem, bilgi sistemi stratejilerini yaratmak için bütün bunlara uygun yol haritamız ne olmalıdır?
+
+397
+02:08:12,890 --> 02:08:29,159
+İşletmecilik sistem planlaması veya işletmecilik sistemlerinin planlanması kurumsal analiz oluşturuyoruz.
+
+398
+02:08:29,159 --> 02:08:56,659
+Ve kurum çerçevesindeki bilgi gereksinimlerini önce analiz etmemiz gerekiyor. Bu noktada sizler yazılım sorumlusu olarak kurum bir organizasyon bir işletme içinde çalıştığınızda
+
+399
+02:08:56,659 --> 02:09:11,899
+kurumun bilgi gereksinimlerine göre bilgi sistemlerinin yapılanması üzerinde planlama yapmak zorunda kalabilirsiniz.
+
+400
+02:09:11,899 --> 02:09:34,899
+Kararlar vermek zorunda kalabilirsiniz. Burada hem bilgi sistemlerinin birbiriyle uyumu çalışması konusunda bilgi sahibi olmanız gerekiyor hem de işletmecilik yapısı, o kurumun tanınması gerekiyor.
+
+401
+02:09:34,899 --> 02:10:03,300
+Bu amaçla zaten size sistem işletmeci, işletme kurum içinde sistem kuruluşu yapacak yazılımcıların yetenekleri konusunda bir sürü soru sormuştum sınavda da.
+
+402
+02:10:03,300 --> 02:10:18,729
+İşte bu yetenekler bu konuda karar verici olmanızla faydalı olacaktır. Bu maddes üzerinde durmayalım.
+
+403
+02:10:18,729 --> 02:10:38,729
+Stratejik analiz gerçekleştirirken kritik başarı faktörleri belirlenir. Yani bir kurumun bilgi gereksinimlerini oluşturmakta kritik başarı faktörleri ortaya çıkarılır.
+
+404
+02:10:38,729 --> 02:10:49,729
+Bu da kolaylıkla tanımlanabilir işlemsel hedefler oluşturmaktır.
+
+405
+02:10:49,729 --> 02:11:18,729
+Bunu sayısal olarak ifade etmek, endüstri, firma, yönetim, çevre ortamı bütün bunlarla şekillenen hedeflerin sayısal olarak tanımlanabilmesi kritik başarı faktörü.
+
+406
+02:11:18,729 --> 02:11:30,729
+Burada kurumun bilgi gereksinimlerini saptamak için de biz kritik başarı faktörlerini kullanıyoruz.
+
+407
+02:11:30,729 --> 02:11:46,729
+Şöyle bir süreç geçiyor. Bilgi sistemlerini geliştirmek üzere kritik başarı faktörlerinin kullanılmasında.
+
+408
+02:11:46,729 --> 02:12:02,729
+Kurumdaki her bir yönetici kritik başarı faktörlerini hesaplıyor ve bunlar birleştiriliyor. Her bir kişisel başarı faktörü analiz ediliyor.
+
+409
+02:12:02,729 --> 02:12:22,729
+Ve birleştiriliyor. Bir ortak kurumun, şirketin kritik başarı faktörü geliştiriliyor ve daha kesin bir tanımı yapılıyor şirketin kritik başarı faktörlerinin.
+
+410
+02:12:22,729 --> 02:12:49,729
+Bu karar destek sistemi ve veri tabanına tanımlanıyor ve bilgi sistemlerinin geliştirilmesi için önceliklendirme yapılacağı zaman bu kritik başarı faktörleri kullanılıyor.
+
+411
+02:12:49,729 --> 02:13:12,729
+Böylece yeni bir sistem kuruluşu yapılacağı zaman hangi kritik başarı faktörü, hangi seçimin başarı faktörü nedir?
+
+412
+02:13:12,729 --> 02:13:25,729
+Bunu sağlayabilmek üzere kullanacağımız bir değer çıkıyor karşımıza ve bu da bir kişi tarafından değil.
+
+413
+02:13:25,729 --> 02:13:38,729
+Pek çok yöneticinin ortak tek tek verdiği kritik başarı faktörü hesaplamalarını birleştirerek kurumun başarı faktörünü bulmasıyla gerçekleşiyor.
+
+414
+02:13:38,729 --> 02:14:00,760
+Kurumsal değişim ve sistem geliştirmede otomasyon oluşturmak tabi ki bunun hızı daha fazla.
+
+415
+02:14:00,760 --> 02:14:24,199
+İşlemlerin dönüşümüne seviyede işletme süreçlerindeki re-engineering çalışması burada.
+
+416
+02:14:24,199 --> 02:14:42,199
+İşletmecilik süreçlerindeki gerçekçi tasarım nedir? İşletme süreçlerinde nasıl bir değişiklik, yeniden tasarlama söz konusu olacak?
+
+417
+02:14:42,199 --> 02:14:58,199
+Yani işletmede var olan işleyişi yenileyerek yönetim kademelerinin yapılandırılması, departmanların işleyişi gibi yeniden yapılanmaya gidilebilir.
+
+418
+02:14:58,199 --> 02:15:02,199
+Kurumsal değişimin içinde bu da yaralı.
+
+419
+02:15:02,199 --> 02:15:15,199
+Paradingma kayması bu daha radikal bir yeniden bir kavram yaratmak.
+
+420
+02:15:15,199 --> 02:15:33,199
+Yani işletmenin var olan doğrularının değişmesi, yapılanmanın daha fazla değişikliğe uğraması.
+
+421
+02:15:33,199 --> 02:15:46,199
+Şimdi kurumsal değişiklikleri şöyle kademelendirebiliriz. Az önce kelimeler olarak verdiklerimizi şekil olarak bu daha iyi özetliyor.
+
+422
+02:15:46,199 --> 02:15:52,199
+Kurumda bir otomasyona geçilebilir.
+
+423
+02:15:52,199 --> 02:16:09,199
+Bu otomasyon birbiriyle ilişkilendirilerek daha bütün kurumu daha gerçekçi bir şekilde bütün kurumu etkileyebilir.
+
+424
+02:16:09,199 --> 02:16:27,199
+Re-engineering kurumdaki yapılanmanın değişmesi, iş süreçlerinin değişmesi, paradigma kayması ise hedeflerinin değişmesi, doğrularının değişmesi anlamında.
+
+425
+02:16:27,199 --> 02:16:44,200
+Riske baktığımızda sadece işletmedeki iş süreçleri aynı kalsın, sadece belli bilgi sistemleri ile daha iyi çalışır hale getirelim.
+
+426
+02:16:44,200 --> 02:16:57,200
+Bu arada risk en az, rastrenalizasyon da daha fazla, re-engineering de daha fazla, paradigma kaymasında en fazla risk olacak.
+
+427
+02:16:57,200 --> 02:17:12,200
+Ama geri dönüşler yani eğer daha doğru değişiklikler yapılmışsa geri dönüşlerimiz daha fazla olacak.
+
+428
+02:17:12,200 --> 02:17:29,200
+Yani ödüller daha fazla olacak. İşte bunların karar vericiler içinde yazılım bilgi sistemleri sorumluları da olacak.
+
+429
+02:17:29,200 --> 02:17:59,639
+İş süreçleri, işletmecilik süreçlerini re-engineering çalışmalarında workflow management önemli bir yer kaplıyor.
+
+430
+02:17:59,639 --> 02:18:27,639
+İş yakışı yönetimi aslında bir kurumda bütün işlerin devam etmesi için, hangi işi gerçekleştirmek için, hangi adımlar silsilesi uygulanıyor.
+
+431
+02:18:27,639 --> 02:18:48,639
+Burada streamlining business procedure'den kastettiğimiz işletmecilik süreçlerindeki bu artışlık yapılması gereken alt işlemler sürecinden bahsetmiş oluyoruz.
+
+432
+02:18:48,639 --> 02:18:59,639
+Ve burada belgelerin kolaylıkla taşınabilmesi bir yerden bir yere.
+
+433
+02:18:59,639 --> 02:19:09,639
+Şimdi bu workflow management çok eski yıllarda evrak takibi yazılımları vardı.
+
+434
+02:19:09,639 --> 02:19:24,639
+Şimdi tabii ki workflow management'la sadece evrağın bir yerden bir yere gitmesi, kolaylıkla taşınmasının dışında bütün iş adımlarının gerçekleştirilmesi.
+
+435
+02:19:24,639 --> 02:19:44,950
+Bizim yaklaşık 25-30 sene önce evrak takibi olarak iş yakışı yönetimi şeklinde yenilenmiş oluyor bir anlamda.
+
+436
+02:19:44,950 --> 02:20:13,709
+Etkim bir engineering çalışmasında, iş yakışı yönetiminde değişiklikler olacak.
+
+437
+02:20:13,709 --> 02:20:39,780
+Etkim bir engineering adımlarında neler olmalı, stratejik vizyonu geliştirmek üzere üst yönetim stratejik vizyonunu geliştirmek ihtiyacındadır.
+
+438
+02:20:39,780 --> 02:21:04,780
+Etkim bir engineering gerçekleştirebilmek için yönetim var olan süreçlerin hangi temellere göre performansı nedir bunu ölçebilmek anlayabilmek durumundadır.
+
+439
+02:21:04,780 --> 02:21:28,969
+Bilgi teknolojilerinde başlangıçtan süreç tasarımına kadar bilgi teknolojilerinin kullanımı gereklidir.
+
+440
+02:21:28,969 --> 02:21:47,969
+Ve IT bilgi teknolojileri yapısı, işletmecilik, iş süreçleri değişimini destekleyecek şekilde hazırlanmalıdır.
+
+441
+02:21:47,969 --> 02:22:03,260
+Eğer bunlar gerçekleştirilirse etkim bir engineering çalışması oluşturulabilir.
+
+442
+02:22:03,260 --> 02:22:13,209
+Mesela şunu daha iyi görülecek hale getireyim.
+
+443
+02:22:13,209 --> 02:22:20,209
+Amerika'daki mortgage sürecinin yeniden tasarlanması.
+
+444
+02:22:20,209 --> 02:22:34,000
+Range engineering yapılmadan önce iş süreçlerinin yapısı şu şekilde işliyordu.
+
+445
+02:22:34,000 --> 02:22:48,000
+Range engineering yapıldıktan sonra işleyişini bir veri akış diagramında göstererek belirtmişler.
+
+446
+02:22:48,000 --> 02:23:12,700
+Burada önceki yapılandırmada çok fazla artışık, masadan masaya kağıt aktarımının gerçekleştiği bir yapı söz konusu.
+
+447
+02:23:12,700 --> 02:23:33,360
+Burada da range engineering'den sonra ekip yaklaşımı ve bilgi sistemlerinin daha iyi kullanımıyla yeniden tasarlanmış halini görüyoruz.
+
+448
+02:23:33,360 --> 02:23:45,360
+Burada süreç daha uzun, evrak takibinin gerçekleştirilmesi şeklinde görebiliyoruz.
+
+449
+02:23:45,360 --> 02:24:12,280
+Bunu bizde şimdi elektronik bilgi sistemine geçildi üniversite içinde bu örneğe benzer şekilde bir örnek oluşturabiliriz.
+
+450
+02:24:12,280 --> 02:24:26,280
+Önümüzdeki hafta için bunu baz alarak bir örnek oluşturmanızı istiyorum.
+
+451
+02:24:26,280 --> 02:24:29,280
+Bunu kimden isteyelim?
+
+452
+02:24:29,280 --> 02:24:54,829
+[öğrenci] burada mı?
+
+453
+02:24:54,829 --> 02:25:05,760
+[öğrenci], Artut.
+
+454
+02:25:05,760 --> 02:25:18,219
+Şimdi bu örneği görünce şu örneği tekrar getiriyorum ekrana.
+
+455
+02:25:18,219 --> 02:25:28,219
+Şimdi Amerika'da mortgage sisteminin yeniden tasarımında evrak takibini görebiliyoruz.
+
+456
+02:25:28,219 --> 02:25:34,219
+Nasıl bir yapılanma vardı daha sonra nasıl şekli değişti?
+
+457
+02:25:34,219 --> 02:25:57,219
+Bu örneği üniversitede EBSS sistemini kullanmadan olan durum ve EBSS sistemini kullandığımız durum karşılaştırmasını buradaki gibi yapmanızı isteyeceğim sizden.
+
+458
+02:25:57,219 --> 02:26:11,030
+Önümüzdeki hafta bu konuda bize bir şekilde bilgi verin.
+
+459
+02:26:11,030 --> 02:26:42,079
+Üniversitedeki hangisi konusunda daha çok bilgin var senin ona göre tamam.
+
+460
+02:26:42,079 --> 02:27:03,149
+Yani istediğim eski kullanılan süreç yönetimi üniversitedeki evrak akışı, iş akışı sistemiyle, öğrenci sistemi için olabilir ya da tüm evraklar için olabilir.
+
+461
+02:27:03,149 --> 02:27:08,149
+Hangisi üzerinde daha kolay yapabilirseniz, daha hakimseniz.
+
+462
+02:27:08,149 --> 02:27:20,149
+Şu anda EBSS üzerinden yürüyen iş süreci hakkında bir kıyaslama, böyle bir geçiş şekli yapmanızı istiyorum.
+
+463
+02:27:20,149 --> 02:27:44,069
+Evet teşekkür ederim.
+
+464
+02:27:44,069 --> 02:28:06,069
+Bu arada business process management toplam kalite yönetimi ve işletmecilik süreç yönetimi bunlar hep işletmelerdeki süreç iyileştirme sistemleri.
+
+465
+02:28:06,069 --> 02:28:14,069
+Ve yine çok konuşulan Six Sigma kavramı.
+
+466
+02:28:14,069 --> 02:28:49,719
+Business process management kurumlarda, işletmeciliğin birçok alanında gereken artımlı iş değişikliklerini sağlayan sistem.
+
+467
+02:28:50,719 --> 02:29:13,719
+Business process management sayesinde kurumdaki birçok iş alanında değişiklik gerektiğinde bunu küçük artımlarla, süreçlerle yönetme işi business process management.
+
+468
+02:29:13,719 --> 02:29:38,340
+Bu bir metodoloji kurumun iç işletmecilik süreçlerinde iyileştirmek için veya diğer şirketlerle paylaşımlı süreçlerini iyileştirmek için
+
+469
+02:29:38,340 --> 02:29:57,340
+kurumun ihtiyaçlarını dikkate alarak bir metodoloji sağlıyor bu değişim için. Buna göre değişiklikler gerçekleştirilebiliyor.
+
+470
+02:29:57,340 --> 02:30:13,340
+Toplam kalite yönetimi de bir süreç iyileştirmesi için başka bir kavram. Birçok şirket toplam kalite yönetimine göre yönetiliyor.
+
+471
+02:30:13,340 --> 02:30:36,059
+Bu kavramda da bir kurumdaki tüm çalışanlar tarafından paylaşılacak bir kalite kontrolundan sorumluluk yaratan bir kavram.
+
+472
+02:30:36,059 --> 02:31:03,059
+Yani burada yazılımdaki kalite kontrol, ürün kontrolü hepsi birleşerek kurumdaki tüm çalışanlar ve tüm alanlar kalite kontrolünden sorumlu olacak şekilde
+
+473
+02:31:03,059 --> 02:31:24,059
+bir kavram oluşturma toplam kalite yönetimi hatta işte bazı kitaplar yazılım kalite kontrolü için toplam kalite kontrolü altında yazılım kalite kontrolü gibi bölümler içeridir.
+
+474
+02:31:24,059 --> 02:31:58,120
+Yine Six Sigma'da kaliteyi göstermek üzere, kaliteyi belirlemek üzere başta bir ölçüm şekli.
+
+475
+02:31:58,120 --> 02:32:19,120
+Az önce toplam kalite yönetimine, bilgi sistemlerinin ya da yazılım kalite kontrol sistemlerinin bütünleşik olması ile ilişkili pek çok kitap kitap alt bölümü var demiştim.
+
+476
+02:32:19,120 --> 02:32:30,120
+Şimdi biraz bundan söz edelim, toplam kalite yönetimine bilgi sistemleri nasıl katkı sağlayabilir?
+
+477
+02:32:30,120 --> 02:32:57,120
+Ürün ve üretim süreçlerini basitleştirmek, bir benchmark, bir kıyaslama sistemleri yaratmak, müşteri taleplerini, ürün ve hizmetleri geliştirmek üzere bir rehber olarak kullanmak,
+
+478
+02:32:57,120 --> 02:33:20,620
+müşteri taleplerini de dikkate almak, döngü süresini azaltmak, tasarımın kalite ve hassaslığını arttırmak,
+
+479
+02:33:20,620 --> 02:33:38,620
+üretimi, yani tasarımdaki kaliteyi iyileştirmek, bilgi sistemlerinin katkısını söyleyeceğimiz için, üretiminin daha hatasız olmasını sağlamak,
+
+480
+02:33:38,620 --> 02:34:08,819
+bütün bunlar bilgi sistemlerinin toplam kalite yönetimine getirdiği katkılar, bilgi sistemlerinin kullanımıyla toplam kaliteyi daha kolay gerçekleştirebilir hale geliyor.
+
+481
+02:34:08,819 --> 02:34:23,819
+Bu strateji bölümünde bugün için üzerinde duracaklarımız bu kadar. Sorunuz var mı?
+
+482
+02:34:23,819 --> 02:34:53,780
+Öncelikle her iki derste de bir karar sistemlerinden bahsettik. Öncelikle karar destek sistemleri ve üst yönetim bilgi sistemleri yapılanması,
+
+483
+02:34:53,780 --> 02:35:10,780
+bunların altındaki bilgi teknolojileri ile ilişkili kavramlar, data mining ile ilişkili kavramlar üzerinde durduk. Bir karar yapısı nasıl olur bunu gördük.
+
+484
+02:35:10,780 --> 02:35:34,059
+Daha sonra bir kurumu yeniden tasarladığımız zaman bilgi sistemleri üzerinde nasıl karar oluşturuyoruz, bilgi sistemleri stratejisini nasıl oluşturuyoruz, bir de kurumu yeniden tasarlarken bilgi sistemlerinin rolü nedir?
+
+485
+02:35:34,059 --> 02:35:58,340
+Bunu üzerinde durduk. Bugün her iki konuyu işlemiş olduk. Herkes ile ilişkili sorunuz var mı? Dersi bitirebiliriz o zaman.
+
+486
+02:35:58,340 --> 02:36:16,709
+Merhaba, yazılım kalite süreci dersi ile ilgili bir düzeltme yapacağım ama projem için sorunum var. Mail dağıttım hocam size. Bir Toy Assembler projesi var arkadaşımla ilgili.
+
+487
+02:36:16,709 --> 02:36:26,139
+Onu ekleyebilir misiniz ben? Neyi ekleyeceğim?
+
+488
+02:36:26,139 --> 02:36:36,139
+Yazılım kalitede [öğrenci] ile mail dezen belirttim hocam. Oraya onun üzerinde çalıştık. Bir bakarım mail'e. Efendim hocam.
+
+489
+02:36:36,139 --> 02:36:48,139
+Ama proje grubunuzu çok olduysa verdiğiniz. Şimdi şu saatte eklemeniz biraz olmayabilir. Bir bakacağım.
+
+490
+02:36:48,139 --> 02:36:56,139
+Yok hocam. Arkadaş zaten onun üzerinde çalışıyordu. Bir sorunum olmuştu da o yüzden ona geçiş yapacağım yani.
+
+491
+02:36:56,139 --> 02:36:59,139
+Konunuzu değiştireceksiniz.
+
+492
+02:36:59,139 --> 02:37:06,139
+Konu zaten belli. Sadece tek başına yapıyordu. Ben ona iki kişi beraber yapacağız.
+
+493
+02:37:06,139 --> 02:37:12,139
+Toy Assembler projesine onun üzerinde çalışıyormuş.
+
+494
+02:37:12,139 --> 02:37:17,139
+Yani şu saatte verdiyseniz olmaz.
+
+495
+02:37:17,139 --> 02:37:20,139
+Yok. Önceden yapmıştık hocam.
+
+496
+02:37:20,139 --> 02:37:27,139
+Hayır hayır. Grubunuzu yeni bugün daha ekleme yaptıysanız olmaz. Onu daha önce söylemiştim.
+
+497
+02:37:27,139 --> 02:37:29,139
+Yok. Grub da var hocam. Önceden...
+
+498
+02:37:29,139 --> 02:37:32,139
+Ben bugünize cevap veririm. Bakıp cevap veririm.
+
+499
+02:37:32,139 --> 02:37:34,139
+Tamam. Teşekkürler hocam.
+
+500
+02:37:34,139 --> 02:37:37,139
+Tamam. Siz kimdiniz? Göremedim şu anda. Katılımcılara bakmıyorum.
+
+501
+02:37:37,139 --> 02:37:39,139
+[öğrenci].
+
+502
+02:37:39,139 --> 02:37:40,139
+Tamam. Bakacağım.
+
+503
+02:37:40,139 --> 02:37:42,139
+Teşekkürler hocam. İyi günler.
+
+504
+02:37:42,139 --> 02:37:45,139
+Bakacağım. Evet. Başka sorusu olan var mı?
+
+505
+02:37:45,139 --> 02:38:04,049
+Evet. Dersi bitiriyorum o zaman.
+
+506
+02:38:04,049 --> 02:38:06,049
+Evet. İyi günler.
+
