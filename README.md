@@ -3438,6 +3438,8 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
     - ✅ Dersi Kolay Geçer Miyim: ★★★★☆☆☆☆☆☆
     - 🎯 Ders Mesleki Açıdan Gerekli Mi: ★★★★☆☆☆☆☆☆
       - ℹ️ Yıldızlar 9 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+  - 👨‍🏫 👩‍🏫 **Dersi Yürüten Akademisyenler:**
+    - [EU](#-dr-erkan-uslu)
   - 📂 [Ders Klasörü](./1-2/Devre%20Teorisi%20ve%20Elektronik%20Devreler/Devre%20Teorisi)
   - ℹ️ Dersin içeriği güncel değil
     - Bu ders artık müfredata dahil değildir. Ya tamamen kaldırılmış, ya ismi ve içeriği güncellenmiş ya da birleştirilmiş olabilir.
@@ -4227,6 +4229,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
   - 📖 [Bilgisayar Organizasyonu](#-bilgisayar-organizasyonu)
   - 📖 [Sayısal İşaret İşleme](#-sayısal-i̇şaret-i̇şleme)
   - 📖 [Olasılıksal Robotik](#-olasılıksal-robotik)
+  - 📖 [Devre Teorisi](#-devre-teorisi)
 - ⭐ **Yıldız Sayıları:**
   - 🎭 Dersi Zevkli Anlatır Mı:	★★★★★☆☆☆☆☆
   - 🛣️ Dersi Kolay Geçer Miyim:	★★★★☆☆☆☆☆☆
