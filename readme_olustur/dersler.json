@@ -7255,7 +7255,12 @@
             "yil": 0,
             "donem": "yok",
             "tip": "Lisansüstü",
-            "dersi_veren_hocalar": [],
+            "dersi_veren_hocalar": [
+                {
+                    "kisaltma": "OK",
+                    "ad": "Prof. Dr. Oya Kalıpsız"
+                }
+            ],
             "guncel_mi": true,
             "faydali_olabilecek_kaynaklar": [
                 "**Ders Kayıtları:** [Yazılım Proje Yönetimi Ders Kayıtları Altyazıları](./ders_kayitlari/)"
