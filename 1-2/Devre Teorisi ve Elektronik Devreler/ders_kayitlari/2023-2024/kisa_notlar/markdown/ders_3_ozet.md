@@ -2,11 +2,7 @@
 
 ## Genel Konular
 
-- Duyurular
-  - Hoca o hafta Ankara'da olduğu için ders online yapıldı. Hoca dersi ilk kez tablet üzerinden anlattı. Bulunduğu ortam nedeniyle kısık sesle konuştu; bazı öğrenciler sesi düşük duyduğunu yazdı.
-  - Gelecek hafta Yunus Hoca soru çözümü yapacak: RL, RC, RLC ve Thevenin/Norton konularından. Katılım çok önemli. Ders büyük olasılıkla yüz yüze olacak; online olursa Classroom'dan duyurulacak.
-  - Vizeler bayramdan hemen sonra. Bayramda çalışın. Bölüm, pazartesi gününü vize için boş bırakmaya çalıştı, salı günü sınav var. Servis derslerinin sınavlarına bölüm müdahale edemiyor.
-  - Dualite konusu işlenmeyecek, sorumlu değilsiniz.
+- Dualite konusu işlenmeyecek, sorumlu değilsiniz.
 - Birinci ve ikinci dereceden devreler
   - RC ve RL devrelerinde tek bir enerji depolayan eleman (bir kondansatör veya bir bobin) vardı. Kondansatörde $i_C = C\frac{dv_C}{dt}$, bobinde $v_L = L\frac{di_L}{dt}$ ilişkisinden birinci dereceden diferansiyel denklem çıkıyordu.
   - Devrede iki enerji depolayan eleman (bir L ve bir C, iki C veya iki L) olunca türevin türevi alınmak zorunda kalınır ve **ikinci dereceden** (second order) denklem oluşur.
@@ -26,13 +22,13 @@
     - Grafik 3.5 V'tan başlayıp 5 V'ta oturur.
   - Örnek 3 (slayt 14): $V_1 = 2$ V (anahtarla), $R_1 = 5$ kΩ, düğümden toprağa $L_2 = 40$ µH, düğümden $L_1 = 10$ µH ve $R_2 = 5$ kΩ üzerinden $V_2 = 5$ V. Anahtar $t_0$'da kapanıyor.
     - Önce: yalnız $V_2$ var. $L_2$ kısa devre olduğu için $V_2$, $R_2$ üzerinden 1 mA akıtır. $i_{L1} = -1$ mA (ok yönüne göre), $i_{L2} = 1$ mA, $v_{L1} = v_{L2} = 0$.
-    - Sonra: $V_1$ de $R_1$ üzerinden kısa devre düğümüne 0.4 mA ekler. $i_{L1}$ yine $-1$ mA, $i_{L2} = 1.4$ mA.
+    - Sonra: $V_1$ de $R_1$ üzerinden kısa devre düğümüne 0.4 mA ekler. $i_{L1}$ sınır değeri olarak yine $-1$ mA (geçişte yaklaşık $-0.84$ mA'ye çıkıp döner), $i_{L2} = 1.4$ mA.
   - Örnek 4 (slayt 17): $V_1 = 1$ V, $L_1 = 10$ µH, paralel $C_1 = C_2 = 1$ µF, $R_1 = 1$ kΩ, $V_2 = 5$ V (anahtarla), $R_2 = 3$ kΩ. Hoca $V_2$'nin $t = 0$'da devreden çıkarıldığı senaryoyu çözdü.
     - Önce: net $5 - 1 = 4$ V, toplam direnç 4 kΩ, akım 1 mA. $i_L = -1$ mA, $v_C = 4$ V.
     - Sonra: yalnız 1 V kalır, akım yok. $v_C(\infty) = 1$ V, $i_L(\infty) = 0$.
 - Geçişin üç biçimi
   - İki enerji depolayan eleman enerjiyi birbirine aktarır: kondansatör boşalırken bobini, bobin boşalırken kondansatörü besler. Bu yüzden sistem salınım yapabilir.
-  - Aşırı sönümlü (overdamped): başta hızlı değişir ama son değere geç oturur. Salınım yok.
+  - Aşırı sönümlü (overdamped): son değere geç oturur. Salınım yok. Hoca "başta çok hızlı düşer" dedi; aşağıdaki Grafik yorumu notuna bakın.
   - Kritik sönümlü (critically damped): salınım yapmadan son değere en hızlı oturan durum.
   - Az sönümlü (underdamped): son değer etrafında salınım yaparak, zamanla sönümlenerek oturur.
 - Kaynaksız seri RLC (source-free series RLC)
@@ -54,7 +50,7 @@
     - $\alpha > \omega_0$ (seri devrede $C > \frac{4L}{R^2}$): aşırı sönümlü. İki gerçek, negatif kök.
     - $\alpha = \omega_0$ ($C = \frac{4L}{R^2}$): kritik sönümlü. Tek (çift) kök $s = -\alpha$.
     - $\alpha < \omega_0$ ($C < \frac{4L}{R^2}$): az sönümlü. Kökün içi negatif, karmaşık kökler: $s_{1,2} = -\alpha \pm j\omega_d$, $\omega_d = \sqrt{\omega_0^2 - \alpha^2}$ (sönümlü doğal frekans). $e^{j\omega_dt} = \cos\omega_dt + j\sin\omega_dt$ olduğu için cevapta sinüs ve kosinüs, yani salınım çıkar.
-  - Direnç büyükse $\alpha$ büyür, enerji dirençte çabuk harcanır, L ve C birbirini besleyemez: aşırı sönüm. Direnç küçükse L ve C birbirini besler: salınım.
+  - Direnç büyükse $\alpha$ büyür, L ve C birbirini besleyemez: aşırı sönüm. Hoca "deşarj hızlı" dedi; python ile hesaplandı, L ve C sabitken $\alpha$ büyüdükçe yavaş kök sıfıra yaklaşır, yani deşarj uzar. Direnç küçükse L ve C birbirini besler: salınım.
 - Kaynaksız paralel RLC
   - Akım kaynağı $I_s$ çıkarılıyor. Başlangıçta bobin kısa devre olduğu için $i_L = I_s$, sonra 0'a iner.
   - KCL: $\frac{v}{R} + i_L + C\frac{dv}{dt} = 0$, $v = L\frac{di_L}{dt}$. Sonuç: $\frac{d^2i_L}{dt^2} + \frac{1}{RC}\frac{di_L}{dt} + \frac{1}{LC}i_L = 0$.
@@ -93,11 +89,11 @@
 
 ### Ders sonrası notlar
 
-- **Örneklerin kontrolü:** Örneklerin sınır değerleri ders sonrasında devreler yeniden çözülerek kontrol edildi. Örnek 2 (3.5 V → 5 V), Örnek 3 ($i_{L2}$: 1 mA → 1.4 mA) ve Örnek 4 (4 V → 1 V) doğrudur.
+- **Örneklerin kontrolü:** Örneklerin sınır değerleri ders sonrasında devreler yeniden çözülerek kontrol edildi. Örnek 2 (3.5 V → 5 V) ve Örnek 3 ($i_{L2}$: 1 mA → 1.4 mA) doğrudur. Örnek 4'te 4 V, kondansatör düğümü 5 V'a 1 kΩ üzerinden bağlıysa çıkar; 3 kΩ üzerinden bağlıysa 2 V olur. <!-- BELİRSİZ: Örnek 4 şeması altyazıda yok, slayt görülmedi. -->
 - **Örnek 2'de akım işareti:** Slaytta $i_L(-\infty) = 0.3$ mA yazıyor. Akım $V_2$'den $V_1$'e doğru, yani slayttaki ok yönünün tersine akar. Ok yönüne göre doğrusu $-0.3$ mA'dır. Hoca da derste bunu belirtti.
 - **Slayt metinleri:** Örnek 3'te "uzun süre açık, $t_0$'da açılıyor", Örnek 4'te "uzun süre kapalı, $t = 0$'da kapanıyor" yazıyor. Bu ifadeler kendi içinde çelişkili. Şekildeki anahtar işaretine ve hocanın anlatımına göre Örnek 3'te anahtar $t_0$'da kapanıyor, Örnek 4'te $V_2$ $t = 0$'da devreden çıkıyor.
 - **Sönüm durumunun karıştırılması:** Hoca bir yerde "alfa çok büyükse underdamped" dedi. Doğrusu: $\alpha > \omega_0$ ise **aşırı** sönümlüdür (overdamped). Az sönüm (underdamped) $\alpha < \omega_0$ durumudur. Hoca ilerleyen kısımda doğrusunu anlattı.
-- **Grafik yorumu:** Slayttaki grafikte (1'den 0'a inen üç eğri) kritik sönümlü eğri başta en yavaş düşer ama salınım yapmadan son değere en çabuk oturur. Aşırı sönümlü eğri başta çok hızlı düşer, sonra yavaşlar ve geç oturur. Az sönümlü eğri sıfırın altına inip salınır.
+- **Grafik yorumu:** Slayttaki grafikte (1'den 0'a inen üç eğri) kritik sönümlü eğri başta en yavaş düşer ama salınım yapmadan son değere en çabuk oturur. Hoca aşırı sönümlü eğrinin başta çok hızlı düştüğünü söyledi. Python ile hesaplandı: aynı $\omega_0$ ve sıfır başlangıç akımında aşırı sönümlü eğri kritikten her an yavaştır, ilk düşüşü en hızlı olan az sönümlüdür. Slayt grafiği büyük olasılıkla farklı koşullarla çizilmiştir. Az sönümlü eğri sıfırın altına inip salınır.
 - **$\omega_0$ ve salınım:** Hoca "$\omega_0$ ne kadar yüksekse o kadar salınım yapar" dedi. Salınımın olup olmayacağını tek başına $\omega_0$ değil, $\alpha$ ile $\omega_0$'ın karşılaştırması belirler. Salınım varsa frekansı $\omega_d$'dir.
 
 * **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
