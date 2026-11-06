@@ -1,0 +1,2326 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ayrık Matematik — Matematik Dili</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,400;0,600;0,700;1,500&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#0B1220;
+    --text:#F1F5F9;
+    --surface: color-mix(in srgb, var(--bg) 88%, var(--text) 12%);
+    --surface-2: color-mix(in srgb, var(--bg) 80%, var(--text) 20%);
+    --border: color-mix(in srgb, var(--bg) 68%, var(--text) 32%);
+    --muted: color-mix(in srgb, var(--text) 62%, var(--bg) 38%);
+    --accent:#FBBF24;
+    --accent-2:#60A5FA;
+    --true:#34D399;
+    --false:#F87171;
+    --radius: 16px;
+    --serif: 'Fraunces', Georgia, serif;
+    --sans: 'Inter', system-ui, sans-serif;
+    --mono: 'IBM Plex Mono', ui-monospace, monospace;
+  }
+  *{box-sizing:border-box;}
+  html,body{height:100%;}
+  body{ margin:0; background:var(--bg); color:var(--text); font-family:var(--sans); overflow:hidden; transition: background .25s ease, color .25s ease; }
+  ::selection{ background:var(--accent); color:#1a1a1a; }
+
+  .topbar{ position:fixed; top:0; left:0; right:0; height:56px; display:flex; align-items:center; justify-content:space-between; padding:0 20px; background: color-mix(in srgb, var(--bg) 92%, black 8%); border-bottom:1px solid var(--border); z-index:50; }
+  .topbar-left{ display:flex; align-items:center; gap:12px; font-family:var(--mono); font-size:13px; color:var(--muted); }
+  .topbar-left .mark{ font-family:var(--serif); font-style:italic; font-size:16px; color:var(--text); font-weight:600; }
+  .topbar-right{ display:flex; align-items:center; gap:10px; }
+  .icon-btn{ width:36px; height:36px; border-radius:10px; border:1px solid var(--border); background:var(--surface); color:var(--text); display:flex; align-items:center; justify-content:center; cursor:pointer; font-size:16px; transition: transform .15s ease, background .15s ease; }
+  .icon-btn:hover{ background:var(--surface-2); transform:translateY(-1px); }
+  .icon-btn:active{ transform:translateY(0); }
+  .progress-track{ position:fixed; top:56px; left:0; right:0; height:3px; background:var(--surface); z-index:49; }
+  .progress-fill{ height:100%; background:linear-gradient(90deg, var(--accent-2), var(--accent)); width:0%; transition:width .35s ease; }
+
+  .settings-panel{ position:fixed; top:64px; right:20px; width:250px; background:var(--surface); border:1px solid var(--border); border-radius:14px; padding:16px; z-index:60; box-shadow:0 10px 30px rgba(0,0,0,.35); display:none; flex-direction:column; gap:14px; }
+  .settings-panel.open{ display:flex; }
+  .settings-panel h4{ margin:0; font-size:12px; letter-spacing:.03em; color:var(--muted); font-weight:600; }
+  .swatch-row{ display:flex; align-items:center; justify-content:space-between; gap:10px; }
+  .swatch-row label{ font-size:13px; color:var(--text); }
+  .swatch-row input[type="color"]{ width:40px; height:30px; border:1px solid var(--border); border-radius:8px; background:none; cursor:pointer; padding:0; }
+  .preset-row{ display:flex; gap:8px; flex-wrap:wrap; }
+  .preset-dot{ width:26px; height:26px; border-radius:50%; cursor:pointer; border:2px solid var(--border); }
+  .reset-btn{ margin-top:4px; padding:8px 10px; border-radius:8px; border:1px solid var(--border); background:transparent; color:var(--text); font-size:12px; cursor:pointer; font-family:var(--sans); }
+  .reset-btn:hover{ background:var(--surface-2); }
+
+  .deck{ position:relative; width:100%; height:100%; padding-top:56px; }
+  .slide{ position:absolute; inset:0; top:56px; display:none; padding: 44px clamp(22px, 6vw, 92px) 88px; overflow-y:auto; }
+  .slide.active{ display:block; animation: fade .35s ease; }
+  @keyframes fade{ from{opacity:0; transform:translateY(6px);} to{opacity:1; transform:translateY(0);} }
+  .slide-inner{ max-width:1040px; margin:0 auto; }
+
+  .kicker{ font-family:var(--mono); font-size:12px; color:var(--muted); letter-spacing:.04em; margin-bottom:9px; }
+  h1.slide-title{ font-family:var(--serif); font-weight:600; font-size:clamp(24px,3.2vw,38px); margin:0 0 6px; line-height:1.15; }
+  .slide-title em{ font-style:italic; color:var(--accent); }
+  .subtitle{ color:var(--muted); font-size:15px; margin:0 0 22px; max-width:80ch; }
+  p{ line-height:1.58; font-size:14.5px; }
+  .lead{ font-size:16px; line-height:1.65; }
+
+  .grid2{ display:grid; grid-template-columns:1.05fr .95fr; gap:24px; align-items:start; }
+  @media (max-width:820px){ .grid2{ grid-template-columns:1fr; } }
+  .grid3{ display:grid; grid-template-columns:1fr 1fr 1fr; gap:13px; }
+  @media (max-width:900px){ .grid3{ grid-template-columns:1fr; } }
+
+  .card{ background:var(--surface); border:1px solid var(--border); border-radius:var(--radius); padding:15px 17px; }
+  .card h3{ margin-top:0; font-family:var(--serif); font-weight:600; font-size:16px; }
+  .formula{ font-family:var(--mono); font-size:14px; background:var(--surface-2); border:1px solid var(--border); border-radius:10px; padding:3px 9px; display:inline-block; }
+  .formula-big{ font-family:var(--mono); font-size:17px; text-align:center; padding:10px; background:var(--surface-2); border:1px solid var(--border); border-radius:12px; margin:9px 0; }
+
+  ul.clean{ padding-left:19px; margin:7px 0; }
+  ul.clean li{ margin-bottom:6px; line-height:1.48; font-size:14px; }
+
+  table.tt{ border-collapse:collapse; width:100%; margin:11px 0; font-family:var(--mono); font-size:13px; }
+  table.tt th, table.tt td{ border:1px solid var(--border); padding:6px 8px; text-align:center; }
+  table.tt th{ background:var(--surface-2); font-weight:600; }
+  table.tt td.res{ font-weight:600; }
+  table.tt td.left{ text-align:left; }
+
+  .examples{ margin-top:26px; padding-top:16px; border-top:1px dashed var(--border); }
+  .examples-head{ display:flex; align-items:center; gap:10px; margin-bottom:11px; }
+  .examples-head .dot{ width:9px; height:9px; border-radius:50%; background:var(--accent); }
+  .examples-head h4{ margin:0; font-family:var(--serif); font-weight:600; font-size:16px; }
+  details.q{ background:var(--surface); border:1px solid var(--border); border-radius:12px; padding:10px 14px; margin-bottom:8px; }
+  details.q summary{ cursor:pointer; font-size:13.5px; list-style:none; display:flex; align-items:baseline; gap:10px; }
+  details.q summary::-webkit-details-marker{ display:none; }
+  details.q summary .qnum{ font-family:var(--mono); color:var(--accent-2); font-weight:600; flex:0 0 auto; }
+  details.q summary .arrow{ margin-left:auto; color:var(--muted); font-size:12px; transition:transform .2s ease; }
+  details.q[open] summary .arrow{ transform:rotate(90deg); }
+  .answer{ margin-top:8px; padding-top:8px; border-top:1px solid var(--border); font-size:13px; color:var(--muted); line-height:1.5; }
+  .answer b{ color:var(--text); }
+
+  table.laws{ width:100%; border-collapse:collapse; font-size:12.5px; margin-top:7px;}
+  table.laws td, table.laws th{ padding:6px 8px; border-bottom:1px solid var(--border); text-align:left; vertical-align:top; }
+  table.laws th{ color:var(--muted); font-weight:600; font-size:11px; text-transform:uppercase; letter-spacing:.03em;}
+  table.laws td.f{ font-family:var(--mono); }
+  table.laws.small td, table.laws.small th{ padding:5px 7px; font-size:11.5px; }
+
+  .two-col-list{ display:grid; grid-template-columns:1fr 1fr; gap:9px 20px; }
+  @media (max-width:600px){ .two-col-list{ grid-template-columns:1fr; } }
+
+  .step-list{ counter-reset:step; list-style:none; padding-left:0; margin:9px 0; }
+  .step-list li{ counter-increment:step; position:relative; padding-left:30px; margin-bottom:7px; font-size:13.5px; line-height:1.45; }
+  .step-list li::before{ content:counter(step); position:absolute; left:0; top:-1px; width:20px; height:20px; border-radius:50%; background:var(--surface-2); border:1px solid var(--border); display:flex; align-items:center; justify-content:center; font-family:var(--mono); font-size:11px; color:var(--accent-2); }
+
+  .chip{ display:inline-flex; align-items:center; gap:5px; font-family:var(--mono); font-size:10.5px; padding:2px 8px; border-radius:999px; margin-right:5px; margin-bottom:4px; }
+  .chip.ok{ background:color-mix(in srgb, var(--true) 20%, transparent); color:var(--true); border:1px solid color-mix(in srgb, var(--true) 50%, transparent); }
+  .chip.no{ background:color-mix(in srgb, var(--false) 20%, transparent); color:var(--false); border:1px solid color-mix(in srgb, var(--false) 50%, transparent); }
+  .pill{ display:inline-block; min-width:22px; padding:2px 8px; border-radius:999px; font-weight:700; font-size:12px; }
+  .pill.T{ background: color-mix(in srgb, var(--true) 22%, transparent); color:var(--true); border:1px solid color-mix(in srgb, var(--true) 55%, transparent); }
+  .pill.F{ background: color-mix(in srgb, var(--false) 22%, transparent); color:var(--false); border:1px solid color-mix(in srgb, var(--false) 55%, transparent); }
+
+  .venn-wrap{ display:flex; flex-direction:column; align-items:center; gap:6px; }
+  .venn-wrap svg{ width:100%; max-width:170px; }
+  .venn-label{ font-family:var(--mono); font-size:11.5px; color:var(--muted); text-align:center; }
+  .venn-row{ display:flex; gap:14px; justify-content:space-around; flex-wrap:wrap; margin-top:8px; }
+
+  .section-divider{ height:100%; display:flex; flex-direction:column; align-items:center; justify-content:center; text-align:center; }
+  .section-divider .num{ font-family:var(--mono); color:var(--accent); font-size:15px; letter-spacing:.06em; }
+  .section-divider h1{ font-family:var(--serif); font-size:clamp(30px,5vw,52px); font-weight:600; margin:14px 0; }
+  .section-divider p{ color:var(--muted); font-size:15px; max-width:60ch; }
+
+  .method-tag{ display:inline-flex; align-items:center; gap:6px; font-family:var(--mono); font-size:11px; padding:3px 8px; border-radius:999px; border:1px solid var(--border); color:var(--accent-2); margin-bottom:7px; }
+
+  .title-slide{ height:100%; display:flex; flex-direction:column; align-items:center; justify-content:center; text-align:center; }
+  .title-slide .huge{ font-family:var(--serif); font-size:clamp(30px,5.6vw,58px); font-weight:600; line-height:1.1; }
+  .title-slide .huge em{ font-style:italic; color:var(--accent); }
+  .title-slide .sub{ font-family:var(--mono); color:var(--muted); font-size:15px; margin-top:14px; letter-spacing:.02em; }
+  .title-slide .topics{ margin-top:36px; display:flex; gap:10px; flex-wrap:wrap; justify-content:center; max-width:760px;}
+  .title-slide .topics span{ font-family:var(--mono); font-size:12px; padding:6px 12px; border-radius:999px; border:1px solid var(--border); color:var(--muted); }
+  .title-slide .topics span.current{ color:var(--accent); border-color:var(--accent); }
+
+  .bottombar{ position:fixed; bottom:0; left:0; right:0; height:64px; display:flex; align-items:center; justify-content:center; gap:18px; background: color-mix(in srgb, var(--bg) 92%, black 8%); border-top:1px solid var(--border); z-index:50; }
+  .nav-btn{ display:flex; align-items:center; gap:8px; padding:9px 18px; border-radius:999px; border:1px solid var(--border); background:var(--surface); color:var(--text); cursor:pointer; font-family:var(--sans); font-size:14px; font-weight:500; }
+  .nav-btn:hover{ background:var(--surface-2); }
+  .nav-btn:disabled{ opacity:.35; cursor:not-allowed; }
+  .slide-counter{ font-family:var(--mono); font-size:13px; color:var(--muted); min-width:56px; text-align:center; }
+  .dots{ display:flex; gap:3px; max-width:340px; flex-wrap:wrap; justify-content:center; }
+  .dots .d{ width:5px; height:5px; border-radius:50%; background:var(--border); cursor:pointer; transition:.2s;}
+  .dots .d.active{ background:var(--accent); width:13px; border-radius:4px; }
+  @media (max-width:960px){ .dots{ display:none; } .settings-panel{ right:10px; left:10px; width:auto; } }
+
+
+  /* ===== Pen / annotation layer ===== */
+  #penCanvas{ position:fixed; left:0; top:56px; width:100%; height:calc(100% - 120px); z-index:40; pointer-events:none; touch-action:none; }
+  #penCanvas.on{ pointer-events:auto; cursor:crosshair; }
+  #penCanvas.t-eraser{ cursor:cell; }
+  #penCanvas.t-laser{ cursor:none; }
+  #boardLayer{ position:fixed; left:0; top:56px; width:100%; height:calc(100% - 120px); background:var(--bg); z-index:39; display:none; }
+  #boardLayer.on{ display:block; }
+  #boardLayer::after{ content:"Boş tahta — özgürce yazın (slaytlara dönmek için B)"; position:absolute; left:50%; top:10px; transform:translateX(-50%); font-family:var(--mono); font-size:12px; color:var(--muted); opacity:.7; }
+  #penToolbar{ position:fixed; left:10px; top:50%; transform:translateY(-50%); z-index:45; display:none; flex-direction:column; gap:7px; padding:9px; width:100px; background:var(--surface); border:1px solid var(--border); border-radius:14px; box-shadow:0 10px 30px rgba(0,0,0,.35); max-height:calc(100% - 130px); overflow-y:auto; }
+  #penToolbar.open{ display:flex; }
+  .pt-grid{ display:grid; grid-template-columns:repeat(2, 36px); gap:6px; justify-content:center; }
+  .pt-btn{ width:36px; height:36px; border-radius:10px; border:1px solid var(--border); background:var(--surface-2); color:var(--text); cursor:pointer; font-size:16px; display:flex; align-items:center; justify-content:center; padding:0; transition:background .15s ease; }
+  .pt-btn:hover{ background:color-mix(in srgb, var(--surface-2) 70%, var(--accent-2) 30%); }
+  .pt-btn.active{ outline:2px solid var(--accent); background:color-mix(in srgb, var(--accent) 22%, var(--surface-2)); }
+  .pt-colors{ display:grid; grid-template-columns:repeat(2, 36px); gap:7px 6px; justify-content:center; justify-items:center; }
+  .pt-color{ width:26px; height:26px; border-radius:50%; border:2px solid var(--border); cursor:pointer; padding:0; transition:transform .12s ease; }
+  .pt-color:hover{ transform:scale(1.12); }
+  .pt-color.active{ border-color:var(--accent); box-shadow:0 0 0 2px var(--accent); transform:scale(1.1); }
+  .pt-custom{ position:relative; width:26px; height:26px; border-radius:50%; border:2px solid var(--border); cursor:pointer; overflow:hidden; background:conic-gradient(#ef4444,#f59e0b,#a3e635,#22d3ee,#3b82f6,#a855f7,#ef4444); }
+  .pt-custom.active{ border-color:var(--accent); box-shadow:0 0 0 2px var(--accent); }
+  .pt-custom input{ position:absolute; inset:-6px; width:44px; height:44px; opacity:0; cursor:pointer; border:0; padding:0; }
+  .pt-sep{ height:1px; background:var(--border); margin:1px 0; flex:0 0 auto; }
+  .pt-dot{ display:block; border-radius:50%; background:var(--text); }
+  .pt-label{ font-family:var(--mono); font-size:9px; letter-spacing:.06em; color:var(--muted); text-align:center; text-transform:uppercase; }
+  #laserDot{ position:fixed; width:16px; height:16px; border-radius:50%; background:rgba(239,68,68,.9); box-shadow:0 0 14px 6px rgba(239,68,68,.5); pointer-events:none; z-index:46; display:none; transform:translate(-50%,-50%); }
+  .icon-btn.active{ outline:2px solid var(--accent); background:color-mix(in srgb, var(--accent) 22%, var(--surface)); }
+  #penHint{ position:fixed; left:122px; top:50%; transform:translateY(-50%); z-index:45; font-family:var(--mono); font-size:11px; color:var(--muted); background:var(--surface); border:1px solid var(--border); border-radius:8px; padding:6px 9px; display:none; max-width:200px; line-height:1.5; }
+  #penHint.show{ display:block; }
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="topbar-left">
+    <span class="mark">Ayrık Matematik</span>
+    <span>/ Bölüm 4 — Matematiğin Dili</span>
+  </div>
+  <div class="topbar-right">
+    <span class="slide-counter" id="counterTop">01 / 58</span>
+    <button class="icon-btn" id="penToggle" title="Kalem / slayt üzerine yaz (D)">✏️</button>
+    <button class="icon-btn" id="settingsBtn" title="Görünümü değiştir">🎨</button>
+  </div>
+</div>
+<div class="progress-track"><div class="progress-fill" id="progressFill"></div></div>
+
+<div class="settings-panel" id="settingsPanel">
+  <h4>Görünüm</h4>
+  <div class="swatch-row"><label for="bgPicker">Arka plan rengi</label><input type="color" id="bgPicker" value="#0B1220"></div>
+  <div class="swatch-row"><label for="textPicker">Yazı rengi</label><input type="color" id="textPicker" value="#F1F5F9"></div>
+  <h4>Hazır temalar</h4>
+  <div class="preset-row" id="presetRow"></div>
+  <button class="reset-btn" id="resetBtn">Varsayılana dön</button>
+</div>
+
+<div class="deck" id="deck">
+
+<!-- 0 TITLE -->
+<section class="slide active" data-index="0">
+  <div class="title-slide">
+    <div class="sub">DERS 4 · {x | P(x)} · A∪B · aRb · f:X→Y</div>
+    <div class="huge">Matematiğin <em>Dili</em></div>
+    <div class="sub">Rosen &amp; Johnsonbaugh — Kümeler · Diziler · Sayı Sistemleri · Bağıntılar · Fonksiyonlar</div>
+    <div class="topics">
+      <span>1 · Giriş</span><span>2 · Mantık ve İspat</span><span>3 · Boole Cebri</span>
+      <span class="current">4 · Matematiğin Dili</span><span>5 · Sayı Teorisi</span>
+      <span>6 · Algoritmalar</span><span>7 · Graf Teorisi</span><span>8 · Ağaçlar</span>
+    </div>
+  </div>
+</section>
+
+<!-- SECTION DIVIDER: SETS -->
+<section class="slide" data-index="1">
+  <div class="section-divider">
+    <div class="num">BÖLÜM I</div>
+    <h1>Kümeler <em style="font-style:italic; color:var(--accent);">(Sets)</em></h1>
+    <p>Tanım, gösterim, kardinalite, alt kümeler, küme işlemleri, kartezyen çarpım ve bit dizileriyle temsil.</p>
+  </div>
+</section>
+
+<!-- 2 SET DEFINITION -->
+<section class="slide" data-index="2">
+  <div class="slide-inner">
+    <div class="kicker">4.1</div>
+    <h1 class="slide-title">Küme <em>(Set)</em> Nedir?</h1>
+    <p class="subtitle">Ayrık matematiğin en temel yapı taşı — her şey kümelerle başlar.</p>
+    <div class="grid2">
+      <div>
+        <p class="lead"><b>Tanım:</b> Ayrık nesnelerden oluşmuş topluluğa <b>küme (set)</b> denir. Kümenin her bir üyesine <b>eleman (element)</b> denir.</p>
+        <p>Kümeler iki temel şekilde gösterilir:</p>
+        <ul class="clean">
+          <li><b>Liste şeklinde (Roster method):</b> Elemanlar tek tek yazılır. Örnek: A = {1,3,5,7}</li>
+          <li><b>Tanım şeklinde (Set-builder):</b> Elemanların ortak özelliği verilir. Örnek: B = {x | x = 2k+1, 0&lt;k&lt;3}</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>B kümesini açalım</h3>
+        <p style="margin:0;">B = {x | x=2k+1, 0&lt;k&lt;3} → k=1,2 için: x=2(1)+1=3, x=2(2)+1=5</p>
+        <div class="formula-big">B = {3, 5}</div>
+      </div>
+    </div>
+    <div class="examples">
+      <div class="examples-head"><span class="dot"></span><h4>Örnek Sorular</h4></div>
+      <details class="q"><summary><span class="qnum">S1.</span> C = {x | x tek bir tamsayı, 0&lt;x&lt;10} kümesini liste şeklinde yazın.<span class="arrow">▶</span></summary>
+        <div class="answer">C = {1, 3, 5, 7, 9}</div></details>
+      <details class="q"><summary><span class="qnum">S2.</span> A = {2,4,6,8} kümesini tanım (set-builder) şeklinde yazın.<span class="arrow">▶</span></summary>
+        <div class="answer">A = {x | x = 2k, 0&lt;k&lt;5, k tamsayı}</div></details>
+    </div>
+  </div>
+</section>
+
+<!-- 3 FINITE/INFINITE -->
+<section class="slide" data-index="3">
+  <div class="slide-inner">
+    <div class="kicker">4.2</div>
+    <h1 class="slide-title">Sonlu ve Sonsuz Kümeler</h1>
+    <p class="subtitle">Bir kümenin eleman sayısı sınırlı mı, sınırsız mı?</p>
+    <div class="grid2">
+      <div class="card">
+        <h3>Sonlu Kümeler (Finite Sets)</h3>
+        <p style="margin:0 0 6px;">Eleman sayısı sayılabilir ve sonludur.</p>
+        <ul class="clean" style="margin-bottom:0;">
+          <li>A = {1, 2, 3, 4}</li>
+          <li>B = {x | x tamsayı, 1&lt;x&lt;4} = {2,3}</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>Sonsuz Kümeler (Infinite Sets)</h3>
+        <p style="margin:0 0 6px;">Eleman sayısı sınırsızdır.</p>
+        <ul class="clean" style="margin-bottom:0;">
+          <li>Z = {tamsayılar} = {…,−3,−2,−1,0,1,2,3,…}</li>
+          <li>S = {x | x gerçek sayı, 1&lt;x&lt;4} = (1,4)</li>
+        </ul>
+      </div>
+    </div>
+    <div class="examples">
+      <div class="examples-head"><span class="dot"></span><h4>Örnek Sorular</h4></div>
+      <details class="q"><summary><span class="qnum">S1.</span> "Ayın günleri kümesi" sonlu mudur, sonsuz mudur?<span class="arrow">▶</span></summary>
+        <div class="answer"><b>Sonlu</b> — bir ayda en fazla 31 gün vardır, bu sabit ve sınırlı bir sayıdır.</div></details>
+      <details class="q"><summary><span class="qnum">S2.</span> {x | x asal sayı} kümesi sonlu mudur? Neden?<span class="arrow">▶</span></summary>
+        <div class="answer"><b>Sonsuzdur</b> — Bölüm 2'de (İspat, Slayt 2.9) Euclid'in çelişki ile ispatıyla gördüğümüz gibi, sonsuz sayıda asal sayı vardır.</div></details>
+    </div>
+  </div>
+</section>
+
+<!-- 4 SPECIAL SETS -->
+<section class="slide" data-index="4">
+  <div class="slide-inner">
+    <div class="kicker">4.3</div>
+    <h1 class="slide-title">Bazı Önemli Kümeler</h1>
+    <p class="subtitle">Boş küme ve evrensel küme — küme cebrinin iki "uç noktası".</p>
+    <div class="grid2">
+      <div class="card">
+        <h3>Boş Küme (Empty Set)</h3>
+        <p style="margin:0;">Elemanı olmayan kümedir. <span class="formula">∅</span> veya <span class="formula">{ }</span> ile gösterilir. "Null set" veya "void set" adını da alır.</p>
+      </div>
+      <div class="card">
+        <h3>Evrensel Küme (Universal Set)</h3>
+        <p style="margin:0 0 8px;">Bahsettiğimiz gruptaki bütün elemanları içine alan kümedir; <span class="formula">U</span> ile gösterilir.</p>
+        <ul class="clean" style="margin-bottom:0;">
+          <li>U = {tüm doğal sayılar}</li>
+          <li>U = {tüm gerçek sayılar}</li>
+          <li>U = {x | x doğal sayı, 1&lt;x&lt;10}</li>
+        </ul>
+      </div>
+    </div>
+    <div class="examples">
+      <div class="examples-head"><span class="dot"></span><h4>Örnek Sorular</h4></div>
+      <details class="q"><summary><span class="qnum">S1.</span> "Karesi negatif olan gerçek sayılar kümesi" hangi özel kümeye örnektir?<span class="arrow">▶</span></summary>
+        <div class="answer"><b>Boş küme (∅)</b> — hiçbir gerçek sayının karesi negatif olamaz.</div></details>
+      <details class="q"><summary><span class="qnum">S2.</span> {∅} kümesi boş küme ile aynı mıdır?<span class="arrow">▶</span></summary>
+        <div class="answer">Hayır! {∅}, içinde <b>bir eleman</b> (boş kümenin kendisi) bulunan bir kümedir — |{∅}|=1, oysa |∅|=0.</div></details>
+    </div>
+  </div>
+</section>
+
+<!-- 5 CARDINALITY -->
+<section class="slide" data-index="5">
+  <div class="slide-inner">
+    <div class="kicker">4.4</div>
+    <h1 class="slide-title">Kardinalite <em>(Cardinality)</em></h1>
+    <p class="subtitle">Bir kümenin "büyüklüğünü" ölçen sayı.</p>
+    <div class="grid2">
+      <div class="card">
+        <h3>Tanım</h3>
+        <p style="margin:0;">Bir A kümesinin kardinalitesi, o kümenin eleman sayısıdır ve <span class="formula">|A|</span> ile gösterilir.</p>
+        <ul class="clean">
+          <li>A = {1,2,3} ise |A| = 3</li>
+          <li>B = {x | x doğal sayı, 1&lt;x&lt;9} ise |B| = 7</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>Sonsuz Kardinalite</h3>
+        <ul class="clean" style="margin-bottom:0;">
+          <li><b>Sayılabilir (Countable):</b> doğal sayılar, tamsayılar gibi</li>
+          <li><b>Sayılamayan (Uncountable):</b> gerçek sayılar gibi</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card" style="margin-top:12px;">
+      <h3>Dikkat çekici örnekler</h3>
+      <table class="tt" style="font-family:var(--sans); font-size:13px;">
+        <tr><td class="left">S = {1,2,3}</td><td>|S| = 3</td></tr>
+        <tr><td class="left">S = {3,3,3,3,3}</td><td>|S| = 1 <span style="color:var(--muted);">(tekrarlar sayılmaz)</span></td></tr>
+        <tr><td class="left">S = ∅</td><td>|S| = 0</td></tr>
+        <tr><td class="left">S = {∅, {∅}, {∅,{∅}}}</td><td>|S| = 3</td></tr>
+      </table>
+    </div>
+    <div class="examples">
+      <div class="examples-head"><span class="dot"></span><h4>Örnek Sorular</h4></div>
+      <details class="q"><summary><span class="qnum">S1.</span> S={2,2,4,4,4,6} ise |S| kaçtır?<span class="arrow">▶</span></summary>
+        <div class="answer">Bir küme her elemanı yalnızca bir kez sayar (tekrar yoktur): S={2,4,6}, <b>|S|=3</b>.</div></details>
+      <details class="q"><summary><span class="qnum">S2.</span> S={∅,{1,2}} kümesinin kardinalitesi kaçtır?<span class="arrow">▶</span></summary>
+        <div class="answer">S'nin iki elemanı vardır: ∅ ve {1,2} (bu ikinci eleman kendisi bir kümedir). <b>|S|=2</b>.</div></details>
+    </div>
+  </div>
+</section>
+
+<!-- 6 SUBSETS -->
+<section class="slide" data-index="6">
+  <div class="slide-inner">
+    <div class="kicker">4.5</div>
+    <h1 class="slide-title">Altkümeler <em>(Subsets)</em></h1>
+    <p class="subtitle">Bir kümenin "içinde" başka bir küme olması ne demektir?</p>
+    <div class="grid2">
+      <div class="card">
+        <h3>Tanım</h3>
+        <p style="margin:0 0 8px;">Eğer X kümesinin bütün elemanları Y kümesi içerisinde yer alıyorsa, X'e Y'nin bir <b>alt kümesi (subset)</b> denir: <span class="formula">X ⊆ Y</span>, yani <span class="formula">∀x((x∈X)→(x∈Y))</span>.</p>
+        <p style="margin:0;"><b>Eşitlik:</b> X=Y ⟺ X⊆Y ve Y⊆X.</p>
+      </div>
+      <div class="card">
+        <h3>Öz Alt Küme (Proper Subset)</h3>
+        <p style="margin:0 0 8px;">X⊆Y iken Y⊆X <b>değilse</b> (yani X≠Y), X'e Y'nin <b>öz alt kümesi</b> denir: <span class="formula">X ⊂ Y</span>.</p>
+        <p style="margin:0; font-size:12.5px; color:var(--muted);"><b>Gözlem:</b> Her küme kendisinin bir alt kümesidir (X⊆X), ama kendisinin öz alt kümesi değildir.</p>
+      </div>
+    </div>
+    <div class="card" style="margin-top:12px;">
+      <h3>Notasyon özeti</h3>
+      <p style="margin:0;"><span class="formula">x∈S</span>: "x, S'nin bir elemanıdır." &nbsp; <span class="formula">x∉S</span>: "x, S'nin bir elemanı değildir." &nbsp; <span class="formula">A⊆B</span>: "A, B'nin bir alt kümesidir."</p>
+    </div>
+    <div class="examples">
+      <div class="examples-head"><span class="dot"></span><h4>Örnek Sorular</h4></div>
+      <details class="q"><summary><span class="qnum">S1.</span> A={1,2}, B={1,2,3} için A⊆B ve A⊂B doğru mudur?<span class="arrow">▶</span></summary>
+        <div class="answer">Evet, ikisi de doğrudur — A'nın tüm elemanları B'de var, ve A≠B olduğundan A, B'nin öz alt kümesidir.</div></details>
+      <details class="q"><summary><span class="qnum">S2.</span> ∅, her kümenin alt kümesi midir? Neden?<span class="arrow">▶</span></summary>
+        <div class="answer">Evet — ∀x((x∈∅)→(x∈Y)) önermesi, ∅'de hiç eleman olmadığından "boş doğruluk" (Bölüm 2, Mantık) gereği her zaman doğrudur.</div></details>
+    </div>
+  </div>
+</section>
+
+<!-- 7 VENN DIAGRAM & MEMBERSHIP -->
+<section class="slide" data-index="7">
+  <div class="slide-inner">
+    <div class="kicker">4.6</div>
+    <h1 class="slide-title">Venn Diyagramları</h1>
+    <p class="subtitle">Kümeleri ve aralarındaki ilişkileri görsel olarak temsil etme yöntemi.</p>
+    <div class="grid2">
+      <div class="card">
+        <h3>Nedir?</h3>
+        <p style="margin:0;">Bir Venn şeması, verilen iki (veya daha fazla) kümenin grafiksel gösterimidir. Birleşim, kesişim, fark, simetrik fark ve tümleyen gibi işlemler Venn diyagramıyla görsel olarak tanımlanabilir.</p>
+      </div>
+      <div class="card">
+        <h3>X ⊆ Y ilişkisi</h3>
+        <div class="venn-wrap">
+          <svg viewBox="0 0 160 110">
+            <circle cx="80" cy="55" r="48" fill="none" stroke="var(--accent-2)" stroke-width="2"/>
+            <circle cx="65" cy="55" r="22" fill="var(--true)" fill-opacity=".3" stroke="var(--true)" stroke-width="2"/>
+            <text x="120" y="30" font-family="IBM Plex Mono, monospace" font-size="13" fill="var(--text)">Y</text>
+            <text x="60" y="59" font-family="IBM Plex Mono, monospace" font-size="12" fill="var(--text)">X</text>
+          </svg>
+          <div class="venn-label">X, tamamen Y'nin içinde → X⊆Y</div>
+        </div>
+      </div>
+    </div>
+    <div class="examples">
+      <div class="examples-head"><span class="dot"></span><h4>Örnek Sorular</h4></div>
+      <details class="q"><summary><span class="qnum">S1.</span> Venn diyagramında iki daire hiç kesişmiyorsa, bu iki küme hakkında ne söyleyebiliriz?<span class="arrow">▶</span></summary>
+        <div class="answer">Kümeler <b>ayrık (disjoint)</b>tır — ortak elemanları yoktur, kesişimleri boş kümedir.</div></details>
+      <details class="q"><summary><span class="qnum">S2.</span> Bir Venn diyagramında X dairesi tamamen Y dairesinin dışındaysa ne çıkarabiliriz?<span class="arrow">▶</span></summary>
+        <div class="answer">X ve Y ayrıktır (X∩Y=∅) ve aynı zamanda X⊄Y, Y⊄X'dir (hiçbiri diğerinin alt kümesi değildir).</div></details>
+    </div>
+  </div>
+</section>
+
+<!-- 8 POWER SET -->
+<section class="slide" data-index="8">
+  <div class="slide-inner">
+    <div class="kicker">4.7</div>
+    <h1 class="slide-title">Kuvvet Kümesi <em>(Power Set)</em></h1>
+    <p class="subtitle">Bir kümenin tüm alt kümelerinden oluşan yeni bir küme.</p>
+    <div class="grid2">
+      <div class="card">
+        <h3>Tanım</h3>
+        <p style="margin:0 0 8px;">X kümesinin power set'i, X'in bütün alt kümelerinin kümesidir: <span class="formula">P(X) = {A | A⊆X}</span>.</p>
+        <p style="margin:0;"><b>Teorem:</b> Eğer |X|=n ise, |P(X)|=2ⁿ.</p>
+      </div>
+      <div class="card">
+        <h3>Örnek: X = {1,2,3}</h3>
+        <div class="formula-big" style="font-size:13px; text-align:left;">
+        P(X) = {∅, {1}, {2}, {3}, {1,2}, {1,3}, {2,3}, {1,2,3}}
+        </div>
+        <p style="margin:0; font-size:12.5px; color:var(--muted);">|X|=3 → |P(X)|=2³=8 alt küme. ✓</p>
+      </div>
+    </div>
+    <div class="card" style="margin-top:12px;">
+      <h3>Diğer örnekler</h3>
+      <table class="tt" style="font-family:var(--sans); font-size:12.5px;">
+        <tr><td class="left">S={a}</td><td class="left">2ˢ = {∅, {a}}</td></tr>
+        <tr><td class="left">S={a,b}</td><td class="left">2ˢ = {∅, {a}, {b}, {a,b}}</td></tr>
+        <tr><td class="left">S=∅</td><td class="left">2ˢ = {∅}</td></tr>
+        <tr><td class="left">S={∅,{∅}}</td><td class="left">2ˢ = {∅, {∅}, {{∅}}, {∅,{∅}}}</td></tr>
+      </table>
+    </div>
+    <div class="examples">
+      <div class="examples-head"><span class="dot"></span><h4>Örnek Sorular</h4></div>
+      <details class="q"><summary><span class="qnum">S1.</span> |X|=5 ise |P(X)| kaçtır?<span class="arrow">▶</span></summary>
+        <div class="answer">2⁵ = <b>32</b>.</div></details>
+      <details class="q"><summary><span class="qnum">S2.</span> P(∅) kümesinin kardinalitesi kaçtır ve neden P(∅)≠∅?<span class="arrow">▶</span></summary>
+        <div class="answer">|P(∅)|=2⁰=1, çünkü P(∅)={∅} — boş kümenin kendisi, boş kümenin bir alt kümesi olduğundan P(∅) tek elemanlı bir kümedir, boş küme değildir.</div></details>
+    </div>
+  </div>
+</section>
+
+<!-- 9 UNION -->
+<section class="slide" data-index="9">
+  <div class="slide-inner">
+    <div class="kicker">4.8</div>
+    <h1 class="slide-title">Küme İşlemleri: Birleşim <em>(Union)</em></h1>
+    <p class="subtitle">İki kümenin tüm elemanlarını bir araya toplama işlemi.</p>
+    <div class="grid2">
+      <div class="card">
+        <h3>Tanım</h3>
+        <div class="formula-big">X ∪ Y = { x | x∈X veya x∈Y }</div>
+        <p style="margin:0;">Örnek: X={Ayşe,Lale,Zeynep}, Y={Lale,Deniz} ise <span class="formula">X∪Y = {Ayşe,Lale,Zeynep,Deniz}</span>.</p>
+      </div>
+      <div class="card">
+        <h3>Venn Diyagramı</h3>
+        <div class="venn-wrap">
+          <svg viewBox="0 0 170 110">
+            <circle cx="65" cy="55" r="42" fill="var(--true)" fill-opacity=".32" stroke="var(--accent-2)" stroke-width="2"/>
+            <circle cx="105" cy="55" r="42" fill="var(--true)" fill-opacity=".32" stroke="var(--accent-2)" stroke-width="2"/>
+            <text x="45" y="59" font-family="IBM Plex Mono, monospace" font-size="13" fill="var(--text)">X</text>
+            <text x="120" y="59" font-family="IBM Plex Mono, monospace" font-size="13" fill="var(--text)">Y</text>
+          </svg>
+          <div class="venn-label">Her iki dairenin kapladığı tüm alan</div>
+        </div>
+      </div>
+    </div>
+    <div class="examples">
+      <div class="examples-head"><span class="dot"></span><h4>Örnek Sorular</h4></div>
+      <details class="q"><summary><span class="qnum">S1.</span> A={1,2,3}, B={3,4,5} ise A∪B nedir?<span class="arrow">▶</span></summary>
+        <div class="answer">A∪B = <b>{1,2,3,4,5}</b> (ortak eleman 3 sadece bir kez yazılır).</div></details>
+      <details class="q"><summary><span class="qnum">S2.</span> A∪∅ her zaman neye eşittir?<span class="arrow">▶</span></summary>
+        <div class="answer">A∪∅ = <b>A</b> — boş küme, birleşim işleminde "nötr eleman"dır (Bölüm 3'teki Boole cebri özdeşlik kanununa benzer: p∨Y≡p).</div></details>
+    </div>
+  </div>
+</section>
+
+<!-- 10 INTERSECTION -->
+<section class="slide" data-index="10">
+  <div class="slide-inner">
+    <div class="kicker">4.9</div>
+    <h1 class="slide-title">Küme İşlemleri: Kesişim <em>(Intersection)</em></h1>
+    <p class="subtitle">İki kümenin ortak elemanlarını bulma işlemi.</p>
+    <div class="grid2">
+      <div class="card">
+        <h3>Tanım</h3>
+        <div class="formula-big">X ∩ Y = { x | x∈X ve x∈Y }</div>
+        <p style="margin:0;">Örnek: X={Ayşe,Lale,Zeynep}, Y={Lale,Deniz} ise <span class="formula">X∩Y = {Lale}</span>.</p>
+      </div>
+      <div class="card">
+        <h3>Ayrık Kümeler (Disjoint)</h3>
+        <p style="margin:0 0 8px;">X∩Y=∅ ise X ve Y kümeleri <b>ayrık (disjoint)</b> kümelerdir.</p>
+        <p style="margin:0;">Örnek: X={z: z rektördür}, Y={z: z bu sınıfta oturuyor} ise X∩Y=∅ (bir rektörün aynı anda sınıfta oturan bir öğrenci olması beklenmez).</p>
+      </div>
+    </div>
+    <div class="card" style="margin-top:12px;">
+      <div class="venn-row">
+        <div class="venn-wrap">
+          <svg viewBox="0 0 170 110">
+            <circle cx="65" cy="55" r="42" fill="none" stroke="var(--accent-2)" stroke-width="2"/>
+            <circle cx="105" cy="55" r="42" fill="none" stroke="var(--accent-2)" stroke-width="2"/>
+            <path d="M 85 15 A 42 42 0 0 1 85 95 A 42 42 0 0 1 85 15 Z" fill="var(--true)" fill-opacity=".4"/>
+          </svg>
+          <div class="venn-label">X∩Y ≠ ∅ (kesişen kümeler)</div>
+        </div>
+        <div class="venn-wrap">
+          <svg viewBox="0 0 170 110">
+            <circle cx="50" cy="55" r="35" fill="var(--true)" fill-opacity=".25" stroke="var(--accent-2)" stroke-width="2"/>
+            <circle cx="130" cy="55" r="35" fill="var(--true)" fill-opacity=".25" stroke="var(--accent-2)" stroke-width="2"/>
+          </svg>
+          <div class="venn-label">X∩Y = ∅ (ayrık kümeler)</div>
+        </div>
+      </div>
+    </div>
+    <div class="examples">
+      <div class="examples-head"><span class="dot"></span><h4>Örnek Sorular</h4></div>
+      <details class="q"><summary><span class="qnum">S1.</span> A={1,2,3,4}, B={3,4,5,6} ise A∩B nedir?<span class="arrow">▶</span></summary>
+        <div class="answer">A∩B = <b>{3,4}</b>.</div></details>
+      <details class="q"><summary><span class="qnum">S2.</span> "Çift sayılar" ve "tek sayılar" kümeleri ayrık mıdır?<span class="arrow">▶</span></summary>
+        <div class="answer">Evet, ayrıktır — hiçbir sayı aynı anda hem çift hem tek olamaz, kesişimleri ∅'dir.</div></details>
+    </div>
+  </div>
+</section>
+
+<!-- 11 COMPLEMENT -->
+<section class="slide" data-index="11">
+  <div class="slide-inner">
+    <div class="kicker">4.10</div>
+    <h1 class="slide-title">Tümleyen <em>(Complement)</em></h1>
+    <p class="subtitle">Bir kümenin "dışında kalan her şey".</p>
+    <div class="grid2">
+      <div class="card">
+        <h3>Tanım</h3>
+        <div class="formula-big">X̄ = { z | z∉X }</div>
+        <p style="margin:0;">Örnek: X={z: z uzun boyludur} ise X̄={z: z uzun boylu değildir}.</p>
+      </div>
+      <div class="card">
+        <h3>Evrensel küme ile ilişkisi</h3>
+        <p style="margin:0 0 8px;">Evrensel küme U içinde, A kümesinin tümleyeni: <span class="formula">Aᶜ = U − A</span>.</p>
+        <div class="formula-big" style="font-size:14px;">X ∪ X̄ = U &nbsp;&nbsp; X ∩ X̄ = ∅</div>
+      </div>
+    </div>
+    <div class="examples">
+      <div class="examples-head"><span class="dot"></span><h4>Örnek Sorular</h4></div>
+      <details class="q"><summary><span class="qnum">S1.</span> U={1,...,10}, A={2,4,6,8,10} ise Aᶜ nedir?<span class="arrow">▶</span></summary>
+        <div class="answer">Aᶜ = <b>{1,3,5,7,9}</b>.</div></details>
+      <details class="q"><summary><span class="qnum">S2.</span> (Aᶜ)ᶜ her zaman neye eşittir?<span class="arrow">▶</span></summary>
+        <div class="answer">(Aᶜ)ᶜ = <b>A</b> — bu, "gerektirme (involution)" özelliğidir; Bölüm 1'deki çift olumsuzlama kanunuyla (¬(¬p)≡p) birebir aynı yapıdadır.</div></details>
+    </div>
+  </div>
+</section>
+
+<!-- 12 DIFFERENCE + SYMMETRIC DIFFERENCE -->
+<section class="slide" data-index="12">
+  <div class="slide-inner">
+    <div class="kicker">4.11</div>
+    <h1 class="slide-title">İki Kümenin Farkı ve Simetrik Fark</h1>
+    <p class="subtitle">Kümeler arasında "çıkarma" işlemi ve "sadece birine ait olan" elemanları bulma.</p>
+    <div class="grid2">
+      <div class="card">
+        <h3>Fark (Difference)</h3>
+        <div class="formula-big" style="font-size:14px;">X − Y = { x | x∈X ve x∉Y }</div>
+        <p style="margin:0;">Fark, X kümesine göre Y'nin <b>göreceli tümleyeni (relative complement)</b> olarak da adlandırılır.</p>
+      </div>
+      <div class="card">
+        <h3>Simetrik Fark (Symmetric Difference)</h3>
+        <div class="formula-big" style="font-size:14px;">X ⊕ Y = (X−Y) ∪ (Y−X)</div>
+        <p style="margin:0;">"Exclusive or" (XOR) gibi çalışır — <b>sadece birine ait</b> olan elemanları verir: X⊕Y = {z | (z∈X∧z∉Y)∨(z∈Y∧z∉X)}.</p>
+      </div>
+    </div>
+    <div class="examples">
+      <div class="examples-head"><span class="dot"></span><h4>Örnek Sorular</h4></div>
+      <details class="q"><summary><span class="qnum">S1.</span> A={1,2,3,4}, B={3,4,5} ise A−B ve B−A nedir?<span class="arrow">▶</span></summary>
+        <div class="answer">A−B = <b>{1,2}</b>. B−A = <b>{5}</b>.</div></details>
+      <details class="q"><summary><span class="qnum">S2.</span> Aynı A ve B için A⊕B nedir?<span class="arrow">▶</span></summary>
+        <div class="answer">A⊕B = (A−B)∪(B−A) = {1,2}∪{5} = <b>{1,2,5}</b>.</div></details>
+    </div>
+  </div>
+</section>
+
+<!-- 13 SET PROPERTIES I -->
+<section class="slide" data-index="13">
+  <div class="slide-inner">
+    <div class="kicker">4.12</div>
+    <h1 class="slide-title">Küme İşlemlerinin Özellikleri I</h1>
+    <p class="subtitle">U evrensel küme; A, B, C ⊆ U olsun. Bu kanunlar, Bölüm 1 ve 3'teki mantık/Boole cebri kanunlarıyla birebir aynı yapıdadır!</p>
+    <table class="laws">
+      <tr><th>Kanun</th><th>Form</th></tr>
+      <tr><td>Birleşme (Associativity)</td><td class="f">(A∪B)∪C = A∪(B∪C) &nbsp;|&nbsp; (A∩B)∩C = A∩(B∩C)</td></tr>
+      <tr><td>Değişme (Commutativity)</td><td class="f">A∪B = B∪A &nbsp;|&nbsp; A∩B = B∩A</td></tr>
+      <tr><td>Dağılma (Distributive)</td><td class="f">A∪(B∩C) = (A∪B)∩(A∪C) &nbsp;|&nbsp; A∩(B∪C) = (A∩B)∪(A∩C)</td></tr>
+      <tr><td>Özdeşlik (Identity)</td><td class="f">A∪∅ = A &nbsp;|&nbsp; A∩U = A</td></tr>
+    </table>
+    <div class="examples">
+      <div class="examples-head"><span class="dot"></span><h4>Örnek Sorular</h4></div>
+      <details class="q"><summary><span class="qnum">S1.</span> Bölüm 1'de gördüğümüz p∨(q∧r)≡(p∨q)∧(p∨r) kanunu, küme cebrindeki hangi kanuna karşılık gelir?<span class="arrow">▶</span></summary>
+        <div class="answer"><b>Dağılma kanununa</b>: A∪(B∩C)=(A∪B)∩(A∪C) — ∨↔∪, ∧↔∩ eşleşmesiyle birebir aynı yapı.</div></details>
+      <details class="q"><summary><span class="qnum">S2.</span> A∩U her zaman neye eşittir ve bu Bölüm 3'teki hangi Boole kanununa benzer?<span class="arrow">▶</span></summary>
+        <div class="answer">A∩U=<b>A</b> — Boole cebrindeki x∧1=x (birim/identity kanunu) ile aynı yapıdadır; U, ∩ için "nötr eleman"dır.</div></details>
+    </div>
+  </div>
+</section>
+
+<!-- 14 SET PROPERTIES II -->
+<section class="slide" data-index="14">
+  <div class="slide-inner">
+    <div class="kicker">4.13</div>
+    <h1 class="slide-title">Küme İşlemlerinin Özellikleri II</h1>
+    <p class="subtitle">Tümleyen, idempotent, bound, absorption, involution ve De Morgan kanunları.</p>
+    <table class="laws">
+      <tr><th>Kanun</th><th>Form</th></tr>
+      <tr><td>Tümleyen (Complement)</td><td class="f">A∪Aᶜ = U &nbsp;|&nbsp; A∩Aᶜ = ∅</td></tr>
+      <tr><td>Idempotent</td><td class="f">A∪A = A &nbsp;|&nbsp; A∩A = A</td></tr>
+      <tr><td>Bound laws</td><td class="f">A∪U = U &nbsp;|&nbsp; A∩∅ = ∅</td></tr>
+      <tr><td>İçine alma (Absorption)</td><td class="f">A∪(A∩B) = A &nbsp;|&nbsp; A∩(A∪B) = A</td></tr>
+      <tr><td>Gerektirme (Involution)</td><td class="f">(Aᶜ)ᶜ = A</td></tr>
+      <tr><td>0/1 Kanunu</td><td class="f">∅ᶜ = U &nbsp;|&nbsp; Uᶜ = ∅</td></tr>
+      <tr><td>De Morgan (kümeler için)</td><td class="f">(A∪B)ᶜ = Aᶜ∩Bᶜ &nbsp;|&nbsp; (A∩B)ᶜ = Aᶜ∪Bᶜ</td></tr>
+    </table>
+    <div class="examples">
+      <div class="examples-head"><span class="dot"></span><h4>Örnek Sorular</h4></div>
+      <details class="q"><summary><span class="qnum">S1.</span> A=(1,2,3), B=(2,3) için (A∪B)ᶜ ile Aᶜ∩Bᶜ'nin eşit olduğunu U={1,2,3,4,5} evreninde doğrulayın.<span class="arrow">▶</span></summary>
+        <div class="answer">A∪B={1,2,3}, (A∪B)ᶜ={4,5}. Aᶜ={4,5}, Bᶜ={1,4,5}. Aᶜ∩Bᶜ={4,5}. İkisi de <b>{4,5}</b> — eşit. ✓</div></details>
+      <details class="q"><summary><span class="qnum">S2.</span> A∪(A∩B)=A kanununun (absorption) Bölüm 3'teki karşılığı nedir?<span class="arrow">▶</span></summary>
+        <div class="answer">Boole cebrindeki <b>yutma (absorption)</b> kanunu: x∨(xy)=x — birebir aynı yapı.</div></details>
+    </div>
+  </div>
+</section>
+
+<!-- 15 CARTESIAN PRODUCT -->
+<section class="slide" data-index="15">
+  <div class="slide-inner">
+    <div class="kicker">4.14</div>
+    <h1 class="slide-title">Kartezyen Çarpım <em>(Cartesian Product)</em></h1>
+    <p class="subtitle">İki kümeden sıralı ikililer (çiftler) üretme işlemi.</p>
+    <div class="grid2">
+      <div class="card">
+        <h3>Tanım</h3>
+        <div class="formula-big" style="font-size:14px;">A × B = { (a,b) | a∈A ve b∈B }</div>
+        <p style="margin:0;"><b>Önemli:</b> A×B ≠ B×A (sıra önemlidir!) ve |A×B| = |A|·|B|.</p>
+      </div>
+      <div class="card">
+        <h3>Örnek</h3>
+        <p style="margin:0 0 8px; font-size:13px;">A={Celal,Lale,Lamia}, B={Banu,Vedat}</p>
+        <div class="formula-big" style="font-size:11.5px; text-align:left;">
+        A×B = {&lt;Celal,Banu&gt;, &lt;Lale,Banu&gt;, &lt;Lamia,Banu&gt;,<br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;Celal,Vedat&gt;, &lt;Lale,Vedat&gt;, &lt;Lamia,Vedat&gt;}
+        </div>
+      </div>
+    </div>
+    <div class="examples">
+      <div class="examples-head"><span class="dot"></span><h4>Örnek Sorular</h4></div>
+      <details class="q"><summary><span class="qnum">S1.</span> A={1,2}, B={x,y} için A×B'yi yazın ve |A×B|'yi bulun.<span class="arrow">▶</span></summary>
+        <div class="answer">A×B = {(1,x),(1,y),(2,x),(2,y)}. |A×B|=2×2=<b>4</b>.</div></details>
+      <details class="q"><summary><span class="qnum">S2.</span> A×B ile B×A neden genelde farklıdır?<span class="arrow">▶</span></summary>
+        <div class="answer">Çünkü sıralı ikililerde (a,b)≠(b,a) (a≠b iken) — A×B'de ilk eleman A'dan, ikinci eleman B'den gelir; B×A'da bu sıra tersine döner.</div></details>
+    </div>
+  </div>
+</section>
+
+<!-- 16 GENERALIZED UNION/INTERSECTION + INCLUSION-EXCLUSION -->
+<section class="slide" data-index="16">
+  <div class="slide-inner">
+    <div class="kicker">4.15</div>
+    <h1 class="slide-title">Genelleştirilmiş Birleşim/Kesişim ve İçerme-Dışlama</h1>
+    <p class="subtitle">Birden fazla kümeyi birleştirme ve "kaç eleman var?" sorusuna cevap verme.</p>
+    <div class="grid2">
+      <div class="card">
+        <h3>Genelleştirilmiş İşlemler</h3>
+        <div class="formula-big" style="font-size:14px;">A₁∪A₂∪…∪Aₙ = ⋃ᵢ₌₁ⁿ Aᵢ</div>
+        <div class="formula-big" style="font-size:14px;">A₁∩A₂∩…∩Aₙ = ⋂ᵢ₌₁ⁿ Aᵢ</div>
+      </div>
+      <div class="card">
+        <h3>İçerme-Dışlama (İki Küme)</h3>
+        <div class="formula-big" style="font-size:14px;">s(A∪B) = s(A) + s(B) − s(A∩B)</div>
+        <p style="margin:0; font-size:12.5px; color:var(--muted);">Ortak elemanlar iki kez sayılmasın diye bir kez çıkarılır.</p>
+      </div>
+    </div>
+    <div class="card" style="margin-top:12px;">
+      <h3>Örnek: Bilgisayar Bilimlerinde 217 öğrenci</h3>
+      <p style="margin:0 0 8px;">157 kişi CS125, 145 kişi CS173 alıyor, 98 kişi her ikisini de alıyor. Kaç kişi <b>hiçbirini</b> almıyor?</p>
+      <div class="formula-big" style="font-size:15px;">217 − (157+145−98) = 217 − 204 = 13</div>
+      <p style="margin:8px 0 0; font-size:12.5px; color:var(--muted);">Sadece CS125: 157−98=59. Sadece CS173: 145−98=47. İkisi: 98. Hiçbiri: 13. Toplam: 59+47+98+13=217 ✓</p>
+    </div>
+    <div class="card" style="margin-top:10px;">
+      <h3>Üç Küme İçin Genelleme</h3>
+      <div class="formula-big" style="font-size:13px;">|A∪B∪C| = |A|+|B|+|C| −|A∩B|−|A∩C|−|B∩C| +|A∩B∩C|</div>
+    </div>
+    <div class="examples">
+      <div class="examples-head"><span class="dot"></span><h4>Örnek Sorular</h4></div>
+      <details class="q"><summary><span class="qnum">S1.</span> Bir sınıfta 30 öğrenci var; 18'i matematik, 15'i fizik, 8'i her ikisini seviyor. Kaç öğrenci hiçbirini sevmiyor?<span class="arrow">▶</span></summary>
+        <div class="answer">|A∪B|=18+15−8=25. Hiçbirini sevmeyen: 30−25=<b>5</b>.</div></details>
+      <details class="q"><summary><span class="qnum">S2.</span> Üç küme formülünde neden |A∩B∩C| en sonda tekrar +ile eklenir?<span class="arrow">▶</span></summary>
+        <div class="answer">Çünkü A∩B∩C'deki elemanlar, |A∩B|, |A∩C|, |B∩C| terimlerinde <b>üç kez</b> çıkarılmış olur (her ikili kesişimde bir kez sayılıp çıkarılır), ama aslında sadece 3 kez fazladan sayılmıştı (|A|,|B|,|C|'de). Dengeyi kurmak için bir kez geri eklenir.</div></details>
+    </div>
+  </div>
+</section>
+
+<!-- 17 BIT STRINGS -->
+<section class="slide" data-index="17">
+  <div class="slide-inner">
+    <div class="kicker">4.16</div>
+    <h1 class="slide-title">Bit Dizileriyle Küme İşlemleri</h1>
+    <p class="subtitle">Kümeleri bilgisayarda 0/1 dizileriyle temsil etmek — Bölüm 3'teki Boole cebrine doğrudan bağlanır.</p>
+    <div class="card">
+      <h3>Örnek: U={x₁,x₂,x₃,x₄,x₅,x₆}, A={x₁,x₃,x₅,x₆}, B={x₂,x₃,x₆}</h3>
+      <table class="tt">
+        <tr><th></th><th>x₁</th><th>x₂</th><th>x₃</th><th>x₄</th><th>x₅</th><th>x₆</th></tr>
+        <tr><td class="left">A</td><td>1</td><td>0</td><td>1</td><td>0</td><td>1</td><td>1</td></tr>
+        <tr><td class="left">B</td><td>0</td><td>1</td><td>1</td><td>0</td><td>0</td><td>1</td></tr>
+        <tr><td class="left">A∪B <span style="color:var(--muted);">(bit-wise OR)</span></td><td class="res">1</td><td class="res">1</td><td class="res">1</td><td class="res">0</td><td class="res">1</td><td class="res">1</td></tr>
+        <tr><td class="left">A∩B <span style="color:var(--muted);">(bit-wise AND)</span></td><td class="res">0</td><td class="res">0</td><td class="res">1</td><td class="res">0</td><td class="res">0</td><td class="res">1</td></tr>
+      </table>
+      <p style="margin:8px 0 0; font-size:12.5px; color:var(--muted);">A elemanı U'da varsa 1, yoksa 0 yazılır. Birleşim = bit-wise OR, kesişim = bit-wise AND — bu, tam olarak Bölüm 3'teki Boole toplamı ve çarpımına karşılık gelir.</p>
+    </div>
+    <div class="examples">
+      <div class="examples-head"><span class="dot"></span><h4>Örnek Sorular</h4></div>
+      <details class="q"><summary><span class="qnum">S1.</span> Yukarıdaki bit dizilerinden A∪B'nin küme olarak karşılığını yazın.<span class="arrow">▶</span></summary>
+        <div class="answer">1'lerin olduğu pozisyonlar x₁,x₂,x₃,x₅,x₆ → A∪B=<b>{x₁,x₂,x₃,x₅,x₆}</b>.</div></details>
+      <details class="q"><summary><span class="qnum">S2.</span> Aᶜ'nin bit dizisi nasıl elde edilir?<span class="arrow">▶</span></summary>
+        <div class="answer">A'nın bit dizisindeki her bitin tersini alarak (NOT işlemi): A=101011 → Aᶜ=<b>010100</b>.</div></details>
+    </div>
+  </div>
+</section>
+
+<!-- SECTION DIVIDER: SEQUENCES -->
+<section class="slide" data-index="18">
+  <div class="section-divider">
+    <div class="num">BÖLÜM II</div>
+    <h1>Düzenli Diziler ve Dizgiler <em style="font-style:italic; color:var(--accent);">(Sequences &amp; Strings)</em></h1>
+    <p>Sıralı listeler, artan/azalan diziler, alt diziler, sigma/pi gösterimi ve string kavramı.</p>
+  </div>
+</section>
+
+<!-- 19 SEQUENCES DEFINITION -->
+<section class="slide" data-index="19">
+  <div class="slide-inner">
+    <div class="kicker">4.17</div>
+    <h1 class="slide-title">Düzenli Diziler <em>(Sequences)</em></h1>
+    <p class="subtitle">Sıralı bir listeyi göstermek için kullanılan ayrık yapı.</p>
+    <div class="grid2">
+      <div class="card">
+        <h3>Tanım</h3>
+        <p style="margin:0;">N elemanlı bir dizinin gösterimi: <span class="formula">sₙ</span>, n'nin bir fonksiyonu olup n=1,2,3,… Eğer s={sₙ|n=1,2,3,…} sıralı bir diziyse: s₁ birinci elemanı, s₂ ikinci elemanı, … sₙ n. elemanı gösterir.</p>
+      </div>
+      <div class="card">
+        <h3>Örnekler</h3>
+        <p style="margin:0 0 6px; font-size:13px;">1) sₙ = 1/n, n=1,2,3,… → 1, ½, 1/3, ¼, 1/5, 1/6,…</p>
+        <p style="margin:0; font-size:13px;">2) sₙ = n²+1, n=1,2,3,… → 2, 5, 10, 17, 26, 37, 50,…</p>
+      </div>
+    </div>
+    <div class="examples">
+      <div class="examples-head"><span class="dot"></span><h4>Örnek Sorular</h4></div>
+      <details class="q"><summary><span class="qnum">S1.</span> sₙ = 2n−1 dizisinin ilk 5 elemanını yazın.<span class="arrow">▶</span></summary>
+        <div class="answer">1, 3, 5, 7, 9 (n=1,2,3,4,5 için).</div></details>
+      <details class="q"><summary><span class="qnum">S2.</span> sₙ=(−1)ⁿ dizisinin ilk 4 elemanı nedir?<span class="arrow">▶</span></summary>
+        <div class="answer">n=1: −1, n=2: 1, n=3: −1, n=4: 1 → <b>−1, 1, −1, 1</b>.</div></details>
+    </div>
+  </div>
+</section>
+
+<!-- 20 INCREASING/DECREASING -->
+<section class="slide" data-index="20">
+  <div class="slide-inner">
+    <div class="kicker">4.18</div>
+    <h1 class="slide-title">Artan ve Azalan Diziler</h1>
+    <p class="subtitle">Bir dizinin elemanları büyüyor mu, küçülüyor mu?</p>
+    <div class="grid2">
+      <div class="card">
+        <h3>Tanımlar</h3>
+        <ul class="clean" style="margin-bottom:0;">
+          <li><b>Artan (increasing):</b> her n için sₙ &lt; sₙ₊₁</li>
+          <li><b>Azalan (decreasing):</b> her n için sₙ &gt; sₙ₊₁</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>Örnekler</h3>
+        <p style="margin:0 0 6px; font-size:13px;">sₙ=4−2n (n=1,2,3,…) → 2, 0, −2, −4, −6,… <b>azalan</b></p>
+        <p style="margin:0; font-size:13px;">sₙ=2n−1 (n=1,2,3,…) → 1, 3, 5, 7, 9,… <b>artan</b></p>
+      </div>
+    </div>
+    <div class="examples">
+      <div class="examples-head"><span class="dot"></span><h4>Örnek Sorular</h4></div>
+      <details class="q"><summary><span class="qnum">S1.</span> sₙ=1/n dizisi artan mıdır, azalan mıdır?<span class="arrow">▶</span></summary>
+        <div class="answer"><b>Azalan</b> — 1&gt;½&gt;1/3&gt;… her adımda küçülür.</div></details>
+      <details class="q"><summary><span class="qnum">S2.</span> sₙ=(−1)ⁿ dizisi artan ya da azalan mıdır?<span class="arrow">▶</span></summary>
+        <div class="answer">Hiçbiri — değerler sürekli −1 ve 1 arasında salınım yapar, ne monoton artar ne azalır.</div></details>
+    </div>
+  </div>
+</section>
+
+<!-- 21 SUBSEQUENCES -->
+<section class="slide" data-index="21">
+  <div class="slide-inner">
+    <div class="kicker">4.19</div>
+    <h1 class="slide-title">Düzenli Altdiziler <em>(Subsequences)</em></h1>
+    <p class="subtitle">Bir dizinin elemanlarından, sıralamayı bozmadan seçilen alt küme.</p>
+    <div class="card">
+      <h3>Tanım ve Örnek</h3>
+      <p style="margin:0 0 8px;">Bir s dizisinin alt dizisi t={tₙ}, sıralama düzeni aynı kalmak şartıyla s'nin elemanlarından elde edilir.</p>
+      <p style="margin:0 0 4px; font-size:13px;">s = {sₙ=n | n=1,2,3,…} → 1,2,3,4,5,6,7,8,…</p>
+      <p style="margin:0; font-size:13px;">t = {tₙ=2n | n=1,2,3,…} → 2,4,6,8,10,12,14,16,… → <b>t, s'nin bir alt dizisidir</b></p>
+    </div>
+    <div class="examples">
+      <div class="examples-head"><span class="dot"></span><h4>Örnek Sorular</h4></div>
+      <details class="q"><summary><span class="qnum">S1.</span> s=1,2,3,4,5,6,7,8,… dizisinin tek indeksli elemanlarından oluşan alt diziyi (1,3,5,7,…) tanımlayın.<span class="arrow">▶</span></summary>
+        <div class="answer">t={tₙ = 2n−1 | n=1,2,3,…}</div></details>
+      <details class="q"><summary><span class="qnum">S2.</span> 3,1,4,1,5,9,2,6 dizisi kendi elemanlarından oluşan 3,4,5,9 alt dizisi geçerli bir alt dizi midir?<span class="arrow">▶</span></summary>
+        <div class="answer">Evet — orijinal sıralama korunduğu (3, sonra 4, sonra 5, sonra 9 — hepsi orijinal dizideki göreceli sırasını koruyor) sürece bu geçerli bir alt dizidir.</div></details>
+    </div>
+  </div>
+</section>
+
+<!-- 22 SIGMA/PI NOTATION -->
+<section class="slide" data-index="22">
+  <div class="slide-inner">
+    <div class="kicker">4.20</div>
+    <h1 class="slide-title">Toplam (Sigma) ve Çarpım (Pi) Gösterimi</h1>
+    <p class="subtitle">Bir dizinin elemanlarını kısa ve öz şekilde toplama/çarpma gösterimi.</p>
+    <div class="grid2">
+      <div class="card">
+        <h3>Sigma (Toplam) Gösterimi</h3>
+        <div class="formula-big" style="font-size:16px;">Σₖ₌₁ᵐ aₖ = a₁+a₂+…+aₘ</div>
+        <p style="margin:0; font-size:12.5px; color:var(--muted);">Yunan alfabesinden Σ (sigma) harfi kullanılır.</p>
+      </div>
+      <div class="card">
+        <h3>Pi (Çarpım) Gösterimi</h3>
+        <div class="formula-big" style="font-size:16px;">∏ₖ₌₁ᵐ aₖ = a₁·a₂·…·aₘ</div>
+        <p style="margin:0; font-size:12.5px; color:var(--muted);">Yunan alfabesinden Π (pi) harfi kullanılır.</p>
+      </div>
+    </div>
+    <div class="examples">
+      <div class="examples-head"><span class="dot"></span><h4>Örnek Sorular</h4></div>
+      <details class="q"><summary><span class="qnum">S1.</span> Σₖ₌₁⁴ k² değerini hesaplayın.<span class="arrow">▶</span></summary>
+        <div class="answer">1²+2²+3²+4² = 1+4+9+16 = <b>30</b>.</div></details>
+      <details class="q"><summary><span class="qnum">S2.</span> ∏ₖ₌₁⁵ k değerini hesaplayın (bu ifade neyi temsil eder?).<span class="arrow">▶</span></summary>
+        <div class="answer">1·2·3·4·5=<b>120</b> — bu aslında 5! (5 faktöriyel) ile aynı şeydir.</div></details>
+    </div>
+  </div>
+</section>
+
+<!-- 23 STRINGS -->
+<section class="slide" data-index="23">
+  <div class="slide-inner">
+    <div class="kicker">4.21</div>
+    <h1 class="slide-title">Dizgi-Katar <em>(String)</em></h1>
+    <p class="subtitle">Bir küme üzerinden tanımlanmış sonlu bir eleman dizisi.</p>
+    <div class="grid2">
+      <div class="card">
+        <h3>Temel Tanımlar</h3>
+        <p style="margin:0 0 6px; font-size:13px;">X={a,b,c} olsun; α=bbaccc, X kümesi üzerinden tanımlı bir string. Kısaca: <span class="formula">α = b²ac³</span>.</p>
+        <p style="margin:0;">String'in <b>uzunluğu (length)</b>, eleman sayısıdır: <span class="formula">|α|</span>. α=b²ac³ ise |α|=6.</p>
+        <p style="margin:6px 0 0;">Eleman içermeyen string, <b>boş string (null string)</b> adını alır: <span class="formula">λ</span> (lambda).</p>
+      </div>
+      <div class="card">
+        <h3>X*, X⁺ ve Birleştirme (Concatenation)</h3>
+        <ul class="clean" style="margin-bottom:8px;">
+          <li>X* = {X üzerindeki tüm stringler, λ dahil}</li>
+          <li>X⁺ = X* − {λ} (boş olmayan tüm stringler)</li>
+        </ul>
+        <p style="margin:0 0 6px; font-size:13px;">Birleştirme: α ve β'nın birleştirilmesi αβ, β'nın α'nın arkasına eklenmesidir.</p>
+        <p style="margin:0; font-size:13px;">Örnek: α=bbaccc, β=caaba → αβ=bbaccccaaba=b²ac⁴a²ba. Kısaca: |αβ|=|α|+|β|.</p>
+      </div>
+    </div>
+    <div class="examples">
+      <div class="examples-head"><span class="dot"></span><h4>Örnek Sorular</h4></div>
+      <details class="q"><summary><span class="qnum">S1.</span> α=aab, β=bba olsun. αβ ve |αβ| nedir?<span class="arrow">▶</span></summary>
+        <div class="answer">αβ = <b>aabbba</b>. |αβ|=|α|+|β|=3+3=<b>6</b>.</div></details>
+      <details class="q"><summary><span class="qnum">S2.</span> λα ve αλ ifadeleri neye eşittir?<span class="arrow">▶</span></summary>
+        <div class="answer">λα = αλ = <b>α</b> — boş string, birleştirme işleminde "nötr eleman"dır (tıpkı toplamada 0, çarpmada 1 gibi).</div></details>
+    </div>
+  </div>
+</section>
+
+<!-- SECTION DIVIDER: NUMBER SYSTEMS -->
+<section class="slide" data-index="24">
+  <div class="section-divider">
+    <div class="num">BÖLÜM III</div>
+    <h1>Sayı Sistemleri <em style="font-style:italic; color:var(--accent);">(Number Systems)</em></h1>
+    <p>İkili (binary), onaltılık (hexadecimal) ve sekizli (octal) sistemler arası dönüşüm ve aritmetik.</p>
+  </div>
+</section>
+
+<!-- 25 NUMBER SYSTEMS INTRO -->
+<section class="slide" data-index="25">
+  <div class="slide-inner">
+    <div class="kicker">4.22</div>
+    <h1 class="slide-title">Sayı Sistemlerine Giriş</h1>
+    <p class="subtitle">Her sayı sistemi bir "taban" (base) üzerine kuruludur — ondalık sistemle karşılaştıralım.</p>
+    <div class="card">
+      <h3>Decimal (Base 10) Sistem — 45238 örneği</h3>
+      <table class="tt" style="font-family:var(--sans); font-size:13px;">
+        <tr><th>Basamak</th><th>Değer</th><th>Hesap</th></tr>
+        <tr><td>8</td><td>bir</td><td>8×1 = 8</td></tr>
+        <tr><td>3</td><td>on</td><td>3×10 = 30</td></tr>
+        <tr><td>2</td><td>yüz</td><td>2×100 = 200</td></tr>
+        <tr><td>5</td><td>bin</td><td>5×1000 = 5000</td></tr>
+        <tr><td>4</td><td>on bin</td><td>4×10000 = 40000</td></tr>
+      </table>
+      <p style="margin:8px 0 0; font-size:12.5px; color:var(--muted);">Bilgisayarlar için önemli diğer sistemler: <b>İkili (binary, taban 2)</b> — bitler 0 ve 1'den oluşur; <b>Onaltılık (hexadecimal, taban 16)</b>; <b>Sekizli (octal, taban 8)</b>.</p>
+    </div>
+    <div class="examples">
+      <div class="examples-head"><span class="dot"></span><h4>Örnek Sorular</h4></div>
+      <details class="q"><summary><span class="qnum">S1.</span> 3721 sayısındaki her basamağın konum değerini (birler,onlar,...) belirtin.<span class="arrow">▶</span></summary>
+        <div class="answer">1→birler (1×1), 2→onlar (2×10), 7→yüzler (7×100), 3→binler (3×1000).</div></details>
+      <details class="q"><summary><span class="qnum">S2.</span> Bilgisayarların neden ikili (binary) sistemi kullandığını Bölüm 3'teki Boole cebriyle ilişkilendirin.<span class="arrow">▶</span></summary>
+        <div class="answer">Çünkü elektronik devrelerdeki anahtarlar sadece iki durumda olabilir (açık/kapalı) — bu, Boole cebrindeki {0,1} kümesiyle birebir örtüşür (Bölüm 3, Slayt 3.1-3.2).</div></details>
+    </div>
+  </div>
+</section>
+
+<!-- 26 BINARY TO DECIMAL -->
+<section class="slide" data-index="26">
+  <div class="slide-inner">
+    <div class="kicker">4.23</div>
+    <h1 class="slide-title">İkili (Binary) Sayı Sistemi — Binary'den Decimal'e</h1>
+    <p class="subtitle">Her basamağı 2'nin kuvvetiyle çarpıp toplayarak dönüşüm.</p>
+    <div class="card">
+      <h3>Örnek: 1101011₂ = ?₁₀</h3>
+      <table class="tt" style="font-family:var(--sans); font-size:13px;">
+        <tr><th>Basamak (sağdan)</th><th>Bit</th><th>2'nin kuvveti</th><th>Değer</th></tr>
+        <tr><td>1.</td><td>1</td><td>2⁰</td><td>1</td></tr>
+        <tr><td>2.</td><td>1</td><td>2¹</td><td>2</td></tr>
+        <tr><td>3.</td><td>0</td><td>2²</td><td>0</td></tr>
+        <tr><td>4.</td><td>1</td><td>2³</td><td>8</td></tr>
+        <tr><td>5.</td><td>0</td><td>2⁴</td><td>0</td></tr>
+        <tr><td>6.</td><td>1</td><td>2⁵</td><td>32</td></tr>
+        <tr><td>7.</td><td>1</td><td>2⁶</td><td>64</td></tr>
+      </table>
+      <div class="formula-big" style="font-size:16px;">1+2+0+8+0+32+64 = 107 (taban 10)</div>
+    </div>
+    <div class="examples">
+      <div class="examples-head"><span class="dot"></span><h4>Örnek Sorular</h4></div>
+      <details class="q"><summary><span class="qnum">S1.</span> 1011₂ sayısını decimal'e çevirin.<span class="arrow">▶</span></summary>
+        <div class="answer">1×2³+0×2²+1×2¹+1×2⁰ = 8+0+2+1 = <b>11</b>.</div></details>
+      <details class="q"><summary><span class="qnum">S2.</span> 100000₂ sayısı hangi decimal değere karşılık gelir?<span class="arrow">▶</span></summary>
+        <div class="answer">1×2⁵ = <b>32</b> (sadece en soldaki bit 1 olduğundan, sonuç direkt o basamağın kuvvetidir).</div></details>
+    </div>
+  </div>
+</section>
+
+<!-- 27 DECIMAL TO BINARY -->
+<section class="slide" data-index="27">
+  <div class="slide-inner">
+    <div class="kicker">4.24</div>
+    <h1 class="slide-title">Decimal'den Binary'e</h1>
+    <p class="subtitle">Ardışık ikiye bölme yöntemi — kalanlar ters sırada okunur.</p>
+    <div class="card">
+      <h3>Örnek: 73₁₀ = ?₂</h3>
+      <div class="formula-big" style="text-align:left; font-size:13.5px; line-height:1.75;">
+73 = 2×36 + kalan <b>1</b><br>
+36 = 2×18 + kalan <b>0</b><br>
+18 = 2×9 + kalan <b>0</b><br>
+9 = 2×4 + kalan <b>1</b><br>
+4 = 2×2 + kalan <b>0</b><br>
+2 = 2×1 + kalan <b>0</b><br>
+1 = 2×0 + kalan <b>1</b>
+      </div>
+      <p style="margin:0 0 8px;">Kalanlar <b>ters sırada</b> (aşağıdan yukarıya) okunur: 1,0,0,1,0,0,1</p>
+      <div class="formula-big" style="font-size:16px;">73₁₀ = 1001001₂</div>
+    </div>
+    <div class="examples">
+      <div class="examples-head"><span class="dot"></span><h4>Örnek Sorular</h4></div>
+      <details class="q"><summary><span class="qnum">S1.</span> 25₁₀ sayısını binary'e çevirin.<span class="arrow">▶</span></summary>
+        <div class="answer">25=2×12+1, 12=2×6+0, 6=2×3+0, 3=2×1+1, 1=2×0+1. Kalanlar ters sırada: <b>11001₂</b>.</div></details>
+      <details class="q"><summary><span class="qnum">S2.</span> Bulduğunuz 11001₂ sonucunu tekrar decimal'e çevirerek doğrulayın.<span class="arrow">▶</span></summary>
+        <div class="answer">1×16+1×8+0×4+0×2+1×1 = 16+8+0+0+1 = <b>25</b>. ✓</div></details>
+    </div>
+  </div>
+</section>
+
+<!-- 28 BINARY ADDITION -->
+<section class="slide" data-index="28">
+  <div class="slide-inner">
+    <div class="kicker">4.25</div>
+    <h1 class="slide-title">İkili (Binary) Toplama</h1>
+    <p class="subtitle">Elde (carry) mantığıyla ikilik sistemde toplama işlemi.</p>
+    <div class="grid2">
+      <div class="card">
+        <h3>Toplama Tablosu</h3>
+        <table class="tt">
+          <tr><th>+</th><th>0</th><th>1</th></tr>
+          <tr><td>0</td><td>0</td><td>1</td></tr>
+          <tr><td>1</td><td>1</td><td>10</td></tr>
+        </table>
+        <p style="margin:8px 0 0; font-size:12.5px; color:var(--muted);">1+1=10₂ (yani decimal 2) — bu, bir sonraki basamağa "elde" (carry) götürür.</p>
+      </div>
+      <div class="card">
+        <h3>Örnek: 100101₂ + 110011₂</h3>
+        <div class="formula-big" style="text-align:right; font-size:15px; line-height:1.8;">
+&nbsp;&nbsp;&nbsp;<span style="color:var(--muted); font-size:12px;">111 &nbsp;(elde)</span><br>
+&nbsp;&nbsp;100101₂<br>
++ 110011₂<br>
+<b style="color:var(--accent);">10110002</b>
+        </div>
+      </div>
+    </div>
+    <div class="examples">
+      <div class="examples-head"><span class="dot"></span><h4>Örnek Sorular</h4></div>
+      <details class="q"><summary><span class="qnum">S1.</span> 1011₂ + 0110₂ işlemini yapın.<span class="arrow">▶</span></summary>
+        <div class="answer">1011+0110: sağdan başla: 1+0=1, 1+1=10(0 yaz,1 elde), 0+1+1(elde)=10(0 yaz,1 elde), 1+0+1(elde)=10. Sonuç: <b>10001₂</b> (decimal: 11+6=17, 10001₂=16+1=17 ✓).</div></details>
+      <details class="q"><summary><span class="qnum">S2.</span> Binary toplamada "elde" (carry) ne zaman oluşur?<span class="arrow">▶</span></summary>
+        <div class="answer">İki bitin toplamı 2 (yani 10₂) veya daha büyük olduğunda oluşur — yani 1+1 ya da 1+1+1(önceki elde) durumlarında.</div></details>
+    </div>
+  </div>
+</section>
+
+<!-- 29 HEXADECIMAL -->
+<section class="slide" data-index="29">
+  <div class="slide-inner">
+    <div class="kicker">4.26</div>
+    <h1 class="slide-title">Hexadecimal (Onaltılık) Sayı Sistemi</h1>
+    <p class="subtitle">Taban 16 — 0'dan 9'a rakamlar, 10'dan 15'e kadar A-F harfleri kullanılır.</p>
+    <div class="card">
+      <h3>Decimal ↔ Hexadecimal karşılığı</h3>
+      <table class="tt" style="font-size:12px;">
+        <tr><th>Decimal</th><td>0</td><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td><td>7</td><td>8</td><td>9</td><td>10</td><td>11</td><td>12</td><td>13</td><td>14</td><td>15</td></tr>
+        <tr><th>Hex</th><td>0</td><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td><td>7</td><td>8</td><td>9</td><td>A</td><td>B</td><td>C</td><td>D</td><td>E</td><td>F</td></tr>
+      </table>
+      <p style="margin:8px 0 0; font-size:12.5px; color:var(--muted);">Hexadecimal, bilgisayarlarda bellek adresleri ve renk kodları (#FF5733 gibi) için yaygın kullanılır — 4 bit'lik bir binary grubu tam olarak 1 hex rakama karşılık gelir.</p>
+    </div>
+    <div class="examples">
+      <div class="examples-head"><span class="dot"></span><h4>Örnek Sorular</h4></div>
+      <details class="q"><summary><span class="qnum">S1.</span> Decimal 14 sayısının hexadecimal karşılığı nedir?<span class="arrow">▶</span></summary>
+        <div class="answer"><b>E</b>.</div></details>
+      <details class="q"><summary><span class="qnum">S2.</span> Hex "B" hangi decimal sayıya karşılık gelir?<span class="arrow">▶</span></summary>
+        <div class="answer"><b>11</b>.</div></details>
+    </div>
+  </div>
+</section>
+
+<!-- 30 HEX <-> DECIMAL CONVERSION -->
+<section class="slide" data-index="30">
+  <div class="slide-inner">
+    <div class="kicker">4.27</div>
+    <h1 class="slide-title">Hexadecimal ↔ Decimal Dönüşümü</h1>
+    <p class="subtitle">16'nın kuvvetleriyle çarpma (hex→dec) ve ardışık 16'ya bölme (dec→hex).</p>
+    <div class="grid2">
+      <div class="card">
+        <h3>Hexadecimal'den Decimal'e: 3A0B₁₆</h3>
+        <div class="formula-big" style="text-align:left; font-size:12.5px; line-height:1.7;">
+B(11)×16⁰ = 11<br>
+0×16¹ = 0<br>
+A(10)×16² = 2560<br>
+3×16³ = 12288
+        </div>
+        <div class="formula-big" style="font-size:15px;">Toplam = 14859₁₀</div>
+      </div>
+      <div class="card">
+        <h3>Decimal'den Hexadecimal'e: 2345₁₀</h3>
+        <div class="formula-big" style="text-align:left; font-size:12.5px; line-height:1.7;">
+2345 = 146×16 + kalan 9<br>
+146 = 9×16 + kalan 2
+        </div>
+        <div class="formula-big" style="font-size:15px;">2345₁₀ = 929₁₆</div>
+      </div>
+    </div>
+    <div class="examples">
+      <div class="examples-head"><span class="dot"></span><h4>Örnek Sorular</h4></div>
+      <details class="q"><summary><span class="qnum">S1.</span> FF₁₆ sayısının decimal karşılığını bulun.<span class="arrow">▶</span></summary>
+        <div class="answer">F(15)×16¹+F(15)×16⁰ = 240+15 = <b>255</b>.</div></details>
+      <details class="q"><summary><span class="qnum">S2.</span> 100₁₀ sayısını hexadecimal'e çevirin.<span class="arrow">▶</span></summary>
+        <div class="answer">100=6×16+4 → 6=0×16+6. Kalanlar ters sırada: <b>64₁₆</b> (kontrol: 6×16+4=100 ✓).</div></details>
+    </div>
+  </div>
+</section>
+
+<!-- 31 HEX ADDITION + OCTAL -->
+<section class="slide" data-index="31">
+  <div class="slide-inner">
+    <div class="kicker">4.28</div>
+    <h1 class="slide-title">Hexadecimal Toplama ve Sekizli (Octal) Sistem</h1>
+    <p class="subtitle">Hex'te toplama, 16'ya göre elde mantığıyla çalışır; octal ise taban 8 kullanır.</p>
+    <div class="grid2">
+      <div class="card">
+        <h3>Hexadecimal Toplama: 23A₁₆ + 8F₁₆</h3>
+        <div class="formula-big" style="text-align:right; font-size:15px; line-height:1.8;">
+&nbsp;&nbsp;23A₁₆<br>
++&nbsp;&nbsp;8F₁₆<br>
+<b style="color:var(--accent);">2C9₁₆</b>
+        </div>
+        <p style="margin:0; font-size:12px; color:var(--muted);">A(10)+F(15)=25=16+9 → yaz 9, 1 elde. 3+8+1(elde)=12=C. 2+0=2.</p>
+      </div>
+      <div class="card">
+        <h3>Octal (Taban 8) Sistem</h3>
+        <p style="margin:0 0 8px;">Sadece 0-7 rakamları kullanılır. Her octal basamak, 3 bit'lik bir binary grubuna karşılık gelir.</p>
+        <div class="formula-big" style="font-size:14px;">17₈ = 1×8 + 7 = 15₁₀</div>
+        <p style="margin:0; font-size:12px; color:var(--muted);">Dönüşüm mantığı binary/hex ile birebir aynıdır, sadece taban 8 kullanılır.</p>
+      </div>
+    </div>
+    <div class="examples">
+      <div class="examples-head"><span class="dot"></span><h4>Örnek Sorular</h4></div>
+      <details class="q"><summary><span class="qnum">S1.</span> 25₈ sayısını decimal'e çevirin.<span class="arrow">▶</span></summary>
+        <div class="answer">2×8+5 = <b>21</b>.</div></details>
+      <details class="q"><summary><span class="qnum">S2.</span> A5₁₆ + 1B₁₆ işlemini yapın.<span class="arrow">▶</span></summary>
+        <div class="answer">5+B(11)=16=10+6 → yaz 6, 1 elde. A(10)+1+1(elde)=12=C. Sonuç: <b>C0₁₆</b>.</div></details>
+    </div>
+  </div>
+</section>
+
+<!-- SECTION DIVIDER: RELATIONS -->
+<section class="slide" data-index="32">
+  <div class="section-divider">
+    <div class="num">BÖLÜM IV</div>
+    <h1>Bağıntılar <em style="font-style:italic; color:var(--accent);">(Relations)</em></h1>
+    <p>Tanım/değer kümeleri, özellikler, ters ve bileşke, denklik bağıntıları, sıralama bağıntıları, kapalılık ve matris temsili.</p>
+  </div>
+</section>
+
+<!-- 33 RELATIONS DEFINITION -->
+<section class="slide" data-index="33">
+  <div class="slide-inner">
+    <div class="kicker">4.29</div>
+    <h1 class="slide-title">Bağıntılar <em>(Relations)</em></h1>
+    <p class="subtitle">İki küme arasındaki elemanları eşleştiren yapı — kartezyen çarpımın bir alt kümesi.</p>
+    <div class="grid2">
+      <div class="card">
+        <h3>Tanım</h3>
+        <p style="margin:0 0 8px;">X ve Y verilen iki küme olsun; kartezyen çarpımları X×Y, (x,y) çiftlerinden oluşur. R, X×Y'nin bir alt kümesi olarak verilirse, R'ye X'ten Y'ye bir <b>ikili bağıntı (binary relation)</b> denir.</p>
+      </div>
+      <div class="card">
+        <h3>Örnek</h3>
+        <p style="margin:0 0 6px; font-size:13px;">X={1,2,3}, Y={a,b}</p>
+        <div class="formula-big" style="font-size:14px;">R = {(1,a),(1,b),(2,b),(3,a)}</div>
+        <p style="margin:0; font-size:12.5px; color:var(--muted);">R, X ve Y arasında bir bağıntıdır.</p>
+      </div>
+    </div>
+    <div class="examples">
+      <div class="examples-head"><span class="dot"></span><h4>Örnek Sorular</h4></div>
+      <details class="q"><summary><span class="qnum">S1.</span> X={1,2}, Y={a,b,c} için X×Y'nin tüm elemanlarını (olası maksimum bağıntıyı) yazın.<span class="arrow">▶</span></summary>
+        <div class="answer">X×Y = {(1,a),(1,b),(1,c),(2,a),(2,b),(2,c)} — 6 eleman.</div></details>
+      <details class="q"><summary><span class="qnum">S2.</span> Bir bağıntı, X×Y'nin herhangi bir alt kümesi olabilir mi, yoksa özel bir yapıya mı sahip olmalı?<span class="arrow">▶</span></summary>
+        <div class="answer">Herhangi bir alt kümesi olabilir — hatta ∅ (boş bağıntı) veya X×Y'nin tamamı (tam bağıntı) bile geçerli bir bağıntıdır.</div></details>
+    </div>
+  </div>
+</section>
+
+<!-- 34 DOMAIN/RANGE -->
+<section class="slide" data-index="34">
+  <div class="slide-inner">
+    <div class="kicker">4.30</div>
+    <h1 class="slide-title">Tanım ve Değer Kümesi <em>(Domain &amp; Range)</em></h1>
+    <p class="subtitle">Bir bağıntının hangi elemanları "kullandığını" gösteren iki küme.</p>
+    <div class="grid2">
+      <div class="card">
+        <h3>Tanımlar</h3>
+        <div class="formula-big" style="font-size:13px;">Dom(R) = {x∈X | (x,y)∈R olacak bir y∈Y vardır}</div>
+        <div class="formula-big" style="font-size:13px;">Rng(R) = {y∈Y | (x,y)∈R olacak bir x∈X vardır}</div>
+      </div>
+      <div class="card">
+        <h3>Örnek</h3>
+        <p style="margin:0 0 6px; font-size:13px;">X={1,2,3}, Y={a,b}, R={(1,a),(1,b),(2,b)}</p>
+        <div class="formula-big" style="font-size:14px;">Dom(R)={1,2} &nbsp; Rng(R)={a,b}</div>
+        <p style="margin:0; font-size:12px; color:var(--muted);">3 elemanı hiçbir çiftte görünmediğinden Dom(R)'de yer almaz.</p>
+      </div>
+    </div>
+    <div class="examples">
+      <div class="examples-head"><span class="dot"></span><h4>Örnek Sorular</h4></div>
+      <details class="q"><summary><span class="qnum">S1.</span> X={1,2,3}, Y={a,b,c,d}, R={(1,a),(1,d),(2,a),(2,b),(2,c)} için Dom(R) ve Rng(R)'yi bulun.<span class="arrow">▶</span></summary>
+        <div class="answer">Dom(R)={1,2}. Rng(R)={a,b,c,d}.</div></details>
+      <details class="q"><summary><span class="qnum">S2.</span> Dom(R)=X olması ne anlama gelir?<span class="arrow">▶</span></summary>
+        <div class="answer">X'in <b>her</b> elemanının, bağıntıda en az bir çiftte (birinci koordinat olarak) yer aldığı anlamına gelir — hiçbir X elemanı "kullanılmamış" değildir.</div></details>
+    </div>
+  </div>
+</section>
+
+<!-- 35 RELATION EXAMPLE GRAPH -->
+<section class="slide" data-index="35">
+  <div class="slide-inner">
+    <div class="kicker">4.31</div>
+    <h1 class="slide-title">Bağıntılara Örnek — Graf Gösterimi</h1>
+    <p class="subtitle">Bir bağıntı, iki küme arasında oklarla da görselleştirilebilir.</p>
+    <div class="card">
+      <h3>X={1,2,3}, Y={a,b,c,d}, R={(1,a),(1,d),(2,a),(2,b),(2,c)}</h3>
+      <svg viewBox="0 0 300 160" style="width:100%; max-width:360px; display:block; margin:10px auto;">
+        <circle cx="40" cy="30" r="16" fill="var(--surface-2)" stroke="var(--border)"/><text x="40" y="35" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="13" fill="var(--text)">1</text>
+        <circle cx="40" cy="80" r="16" fill="var(--surface-2)" stroke="var(--border)"/><text x="40" y="85" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="13" fill="var(--text)">2</text>
+        <circle cx="40" cy="130" r="16" fill="var(--surface-2)" stroke="var(--border)"/><text x="40" y="135" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="13" fill="var(--text)">3</text>
+        <circle cx="260" cy="15" r="16" fill="var(--surface-2)" stroke="var(--border)"/><text x="260" y="20" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="13" fill="var(--text)">a</text>
+        <circle cx="260" cy="55" r="16" fill="var(--surface-2)" stroke="var(--border)"/><text x="260" y="60" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="13" fill="var(--text)">b</text>
+        <circle cx="260" cy="95" r="16" fill="var(--surface-2)" stroke="var(--border)"/><text x="260" y="100" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="13" fill="var(--text)">c</text>
+        <circle cx="260" cy="135" r="16" fill="var(--surface-2)" stroke="var(--border)"/><text x="260" y="140" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="13" fill="var(--text)">d</text>
+        <g stroke="var(--accent-2)" stroke-width="1.5" fill="none">
+          <line x1="56" y1="30" x2="244" y2="15"/>
+          <line x1="56" y1="30" x2="244" y2="135"/>
+          <line x1="56" y1="80" x2="244" y2="15"/>
+          <line x1="56" y1="80" x2="244" y2="55"/>
+          <line x1="56" y1="80" x2="244" y2="95"/>
+        </g>
+      </svg>
+      <p style="margin:0; font-size:12.5px; color:var(--muted);">3'ten çıkan hiçbir ok yok — 3, Dom(R)'de değil. d'ye giren tek ok var (1'den) — ok yönü, ilişkinin yönünü gösterir.</p>
+    </div>
+    <div class="examples">
+      <div class="examples-head"><span class="dot"></span><h4>Örnek Sorular</h4></div>
+      <details class="q"><summary><span class="qnum">S1.</span> Grafikte "2"den kaç ok çıkıyor ve bu ne anlama gelir?<span class="arrow">▶</span></summary>
+        <div class="answer">3 ok (a,b,c'ye) — 2 elemanı, R bağıntısında üç farklı Y elemanıyla ilişkilendirilmiştir.</div></details>
+      <details class="q"><summary><span class="qnum">S2.</span> Bu graf gösterimi ile matris gösterimi arasındaki ilişki nedir? (Slayt 4.45'i önizleyin)<span class="arrow">▶</span></summary>
+        <div class="answer">Her iki gösterim de aynı bilgiyi taşır — graf'taki her ok, matriste karşılık gelen (satır,sütun) hücresinde bir "1" olarak görünür.</div></details>
+    </div>
+  </div>
+</section>
+
+<!-- 36 REFLEXIVE -->
+<section class="slide" data-index="36">
+  <div class="slide-inner">
+    <div class="kicker">4.32</div>
+    <h1 class="slide-title">Bağıntı Özellikleri I — <em>Reflexive</em></h1>
+    <p class="subtitle">Bir bağıntının kendine has özelliklerini incelemeye başlıyoruz. R, A kümesi üzerinde bir bağıntı olsun.</p>
+    <table class="laws">
+      <tr><th>Özellik</th><th>Tanım</th></tr>
+      <tr><td><b>Reflexive (Yansıma)</b></td><td class="f">Her x∈A için (x,x)∈R</td></tr>
+      <tr><td><b>Nonreflexive</b></td><td class="f">Bazı x∈A için (x,x)∉R</td></tr>
+      <tr><td><b>Irreflexive</b></td><td class="f">Her x∈A için (x,x)∉R</td></tr>
+    </table>
+    <div class="examples">
+      <div class="examples-head"><span class="dot"></span><h4>Örnek Sorular</h4></div>
+      <details class="q"><summary><span class="qnum">S1.</span> A={1,2,3}, R={(1,1),(2,2),(3,3),(1,2)} bağıntısı reflexive midir?<span class="arrow">▶</span></summary>
+        <div class="answer">Evet, <b>reflexive</b>dir — A'nın her elemanı x için (x,x)∈R sağlanıyor: (1,1),(2,2),(3,3) hepsi mevcut.</div></details>
+      <details class="q"><summary><span class="qnum">S2.</span> A={1,2,3}, R={(1,1),(2,2)} bağıntısı nonreflexive mi yoksa irreflexive mi?<span class="arrow">▶</span></summary>
+        <div class="answer"><b>Nonreflexive</b> — (3,3)∉R olduğundan tam reflexive değil, ama (1,1) ve (2,2) mevcut olduğundan tam irreflexive de değil (irreflexive için HİÇBİR (x,x) olmamalı).</div></details>
+    </div>
+  </div>
+</section>
+
+<!-- 37 SYMMETRIC/ANTISYMMETRIC -->
+<section class="slide" data-index="37">
+  <div class="slide-inner">
+    <div class="kicker">4.33</div>
+    <h1 class="slide-title">Bağıntı Özellikleri II — <em>Symmetric, Antisymmetric</em></h1>
+    <p class="subtitle">Bağıntının "ikili yönü" simetrik mi, yoksa tek yönlü mü?</p>
+    <div class="grid2">
+      <div class="card">
+        <h3>Symmetric (Simetrik)</h3>
+        <p style="margin:0;">R, A üzerinde <b>simetrik</b>tir eğer x,y∈A için (x,y)∈R olduğunda (y,x)∈R de sağlanıyorsa (ya da x=y).</p>
+      </div>
+      <div class="card">
+        <h3>Antisymmetric (Antisimetrik)</h3>
+        <p style="margin:0;">R, A üzerinde <b>antisimetrik</b>tir eğer (x,y)∈R ve (y,x)∈R olması, ancak x=y olduğunda mümkünse.</p>
+      </div>
+    </div>
+    <div class="examples">
+      <div class="examples-head"><span class="dot"></span><h4>Örnek Sorular</h4></div>
+      <details class="q"><summary><span class="qnum">S1.</span> A={1,2,3}, R={(1,2),(2,1),(1,1)} bağıntısı simetrik midir?<span class="arrow">▶</span></summary>
+        <div class="answer">Evet, <b>simetrik</b>tir — (1,2)∈R iken (2,1)∈R de var; (1,1) için x=y olduğundan koşul otomatik sağlanır.</div></details>
+      <details class="q"><summary><span class="qnum">S2.</span> "≤" bağıntısı (a≤b) antisimetrik midir? Neden?<span class="arrow">▶</span></summary>
+        <div class="answer">Evet, <b>antisimetrik</b>tir — a≤b ve b≤a aynı anda sağlanıyorsa, bu ancak a=b olduğunda mümkündür (sayılar teorisinden bilinen bir gerçek).</div></details>
+    </div>
+  </div>
+</section>
+
+<!-- 38 TRANSITIVE -->
+<section class="slide" data-index="38">
+  <div class="slide-inner">
+    <div class="kicker">4.34</div>
+    <h1 class="slide-title">Bağıntı Özellikleri III — <em>Transitive</em></h1>
+    <p class="subtitle">"Zincirleme" özelliği — a'dan b'ye, b'den c'ye gidiliyorsa a'dan c'ye de gidilebilir mi?</p>
+    <div class="card">
+      <h3>Tanım</h3>
+      <p style="margin:0;">R, A üzerinde <b>geçişkendir (transitive)</b> eğer (x,y)∈R ve (y,z)∈R olduğunda (x,z)∈R de sağlanıyorsa, tüm x,y,z∈A için.</p>
+    </div>
+    <div class="examples">
+      <div class="examples-head"><span class="dot"></span><h4>Örnek Sorular</h4></div>
+      <details class="q"><summary><span class="qnum">S1.</span> R={(1,2),(2,3),(1,3)} bağıntısı transitive midir?<span class="arrow">▶</span></summary>
+        <div class="answer">Evet — (1,2) ve (2,3) varken (1,3) de mevcut, koşul sağlanıyor.</div></details>
+      <details class="q"><summary><span class="qnum">S2.</span> R={(1,2),(2,3)} (yani (1,3) olmadan) bağıntısı transitive midir?<span class="arrow">▶</span></summary>
+        <div class="answer">Hayır, <b>değildir</b> — (1,2)∈R ve (2,3)∈R olmasına rağmen (1,3)∉R, bu yüzden geçişkenlik koşulu ihlal edilir.</div></details>
+    </div>
+  </div>
+</section>
+
+<!-- 39 PROPERTY DETERMINATION EXAMPLE -->
+<section class="slide" data-index="39">
+  <div class="slide-inner">
+    <div class="kicker">4.35</div>
+    <h1 class="slide-title">Özellik Belirleme — Uygulamalı Örnek</h1>
+    <p class="subtitle">A={1,2,3,4} üzerinde, a=b² ise (a,b)∈R bağıntısını inceleyelim.</p>
+    <div class="grid2">
+      <div class="card">
+        <h3>Bağıntıyı Yazalım</h3>
+        <p style="margin:0 0 8px;">a=b² koşulunu A={1,2,3,4} içinde sağlayan çiftler: 1=1² → (1,1). 4=2² → (4,2).</p>
+        <div class="formula-big">R = {(1,1), (4,2)}</div>
+      </div>
+      <div class="card">
+        <h3>Özellik Kontrolü</h3>
+        <table class="tt" style="font-family:var(--sans); font-size:12.5px;">
+          <tr><td class="left">Reflexive</td><td><span class="pill F">Yok</span></td></tr>
+          <tr><td class="left">Nonreflexive</td><td><span class="pill T">Var</span></td></tr>
+          <tr><td class="left">Irreflexive</td><td><span class="pill F">Yok</span></td></tr>
+          <tr><td class="left">Symmetric</td><td><span class="pill F">Yok</span></td></tr>
+          <tr><td class="left">Antisymmetric</td><td><span class="pill T">Var</span></td></tr>
+          <tr><td class="left">Transitive</td><td><span class="pill T">Var</span> <span style="color:var(--muted); font-size:11px;">(A={ } koşulu boş sağlanır)</span></td></tr>
+        </table>
+      </div>
+    </div>
+    <div class="examples">
+      <div class="examples-head"><span class="dot"></span><h4>Örnek Sorular</h4></div>
+      <details class="q"><summary><span class="qnum">S1.</span> R={(1,1),(4,2)} bağıntısının neden irreflexive olmadığını açıklayın.<span class="arrow">▶</span></summary>
+        <div class="answer">Irreflexive olması için HİÇBİR (x,x) çiftinin bulunmaması gerekir, ama (1,1)∈R mevcuttur — bu yüzden irreflexive değildir (ama tam reflexive de değildir, çünkü (2,2),(3,3),(4,4) eksik → nonreflexive).</div></details>
+      <details class="q"><summary><span class="qnum">S2.</span> Bu bağıntının neden transitive olduğunu (görünürde zincirleme bir örnek olmamasına rağmen) açıklayın.<span class="arrow">▶</span></summary>
+        <div class="answer">Transitive koşulu ((x,y)∈R ve (y,z)∈R ise (x,z)∈R), R içinde "(x,y) ve (y,z)" biçiminde eşleşen bir çift <b>bulunmadığında boş doğruluk (Bölüm 1)</b> gereği otomatik sağlanır — R={(1,1),(4,2)}'de 1 ve 4'ün "ikinci koordinatları" (1 ve 2) hiçbir çiftin "ilk koordinatı" değildir, bu yüzden zincirleme hiç kurulamaz ve koşul boş yere sağlanır.</div></details>
+    </div>
+  </div>
+</section>
+
+<!-- 40 INVERSE -->
+<section class="slide" data-index="40">
+  <div class="slide-inner">
+    <div class="kicker">4.36</div>
+    <h1 class="slide-title">Bağıntının Tersi <em>(Inverse)</em></h1>
+    <p class="subtitle">Bir bağıntının yönünü tersine çevirme.</p>
+    <div class="grid2">
+      <div class="card">
+        <h3>Tanım</h3>
+        <p style="margin:0;">X'ten Y'ye bir R bağıntısının tersi (inversi), Y'den X'e olup <span class="formula">R⁻¹</span> ile gösterilir: <span class="formula">R⁻¹ = {(y,x) | (x,y)∈R}</span>.</p>
+      </div>
+      <div class="card">
+        <h3>Örnek</h3>
+        <p style="margin:0 0 6px; font-size:13px;">R = {(1,a),(1,d),(2,a),(2,b),(2,c)}</p>
+        <div class="formula-big" style="font-size:13px;">R⁻¹ = {(a,1),(d,1),(a,2),(b,2),(c,2)}</div>
+      </div>
+    </div>
+    <div class="examples">
+      <div class="examples-head"><span class="dot"></span><h4>Örnek Sorular</h4></div>
+      <details class="q"><summary><span class="qnum">S1.</span> R={(1,2),(3,4)} ise R⁻¹ nedir?<span class="arrow">▶</span></summary>
+        <div class="answer">R⁻¹ = <b>{(2,1),(4,3)}</b>.</div></details>
+      <details class="q"><summary><span class="qnum">S2.</span> (R⁻¹)⁻¹ her zaman neye eşittir?<span class="arrow">▶</span></summary>
+        <div class="answer">(R⁻¹)⁻¹ = <b>R</b> — tersin tersi orijinal bağıntıyı geri verir (Bölüm 3'teki çift tümleyen kanununa benzer bir yapı).</div></details>
+    </div>
+  </div>
+</section>
+
+<!-- 41 COMPOSITION -->
+<section class="slide" data-index="41">
+  <div class="slide-inner">
+    <div class="kicker">4.37</div>
+    <h1 class="slide-title">Bağıntının Bileşkesi <em>(Composition)</em></h1>
+    <p class="subtitle">Bir bağıntıyı kendisiyle art arda uygulama.</p>
+    <div class="grid2">
+      <div class="card">
+        <h3>Tanım</h3>
+        <div class="formula-big" style="text-align:left; font-size:13px; line-height:1.7;">
+R¹ = R<br>
+R² = R∘R<br>
+R³ = R²∘R<br>
+…<br>
+Rⁿ = Rⁿ⁻¹∘R
+        </div>
+      </div>
+      <div class="card">
+        <h3>Örnek</h3>
+        <p style="margin:0 0 6px; font-size:13px;">R={(1,1),(2,1),(3,2),(4,3)}</p>
+        <div class="formula-big" style="font-size:12.5px;">R² = R∘R = {(1,1),(2,1),(3,1),(4,2)}</div>
+        <div class="formula-big" style="font-size:12.5px;">R³ = R²∘R = {(1,1),(2,1),(3,1),(4,1)}</div>
+      </div>
+    </div>
+    <div class="examples">
+      <div class="examples-head"><span class="dot"></span><h4>Örnek Sorular</h4></div>
+      <details class="q"><summary><span class="qnum">S1.</span> R²'deki (4,2) çiftinin nasıl elde edildiğini açıklayın.<span class="arrow">▶</span></summary>
+        <div class="answer">R'de (4,3) var, ve R'de (3,2) var → 4→3→2 zinciriyle R²'de (4,2) oluşur.</div></details>
+        <details class="q"><summary><span class="qnum">S2.</span> R³'te tüm çiftlerin ikinci elemanı neden 1'e "yakınsıyor"?<span class="arrow">▶</span></summary>
+        <div class="answer">Çünkü R bağıntısı bir zincirleme yapı kurar (4→3→2→1→1→…) ve her bileşke bir adım daha ilerletir — üç adım sonra tüm elemanlar zincirin sonunda birikmiş olan 1'e ulaşır.</div></details>
+    </div>
+  </div>
+</section>
+
+<!-- 42 PROPERTY TABLE EXAMPLES -->
+<section class="slide" data-index="42">
+  <div class="slide-inner">
+    <div class="kicker">4.38</div>
+    <h1 class="slide-title">Özellik Tablosu — Altı Bağıntı Örneği</h1>
+    <p class="subtitle">A={1,2,3,4} üzerinde farklı bağıntıların özelliklerini karşılaştıralım (R=reflexive, S=symmetric, AS=antisymmetric, T=transitive; N önekiyle olumsuzu).</p>
+    <table class="laws small">
+      <tr><th>Bağıntı</th><th>Özellikler</th></tr>
+      <tr><td class="f">{(2,2)(2,3)(2,4)(3,2)(3,3)(3,4)}</td><td>NR, NS, NAS, T</td></tr>
+      <tr><td class="f">{(1,1)(1,2)(2,1)(2,2)(3,3)(4,4)}</td><td>R, S, NAS, T</td></tr>
+      <tr><td class="f">{(2,4)(4,2)}</td><td>IR, S, NAS, NT</td></tr>
+      <tr><td class="f">{(1,2)(2,3)(3,4)}</td><td>IR, NS, AS, NT</td></tr>
+      <tr><td class="f">{(1,1)(2,2)(3,3)(4,4)}</td><td>R, S, AS, T</td></tr>
+      <tr><td class="f">{(1,3)(1,4)(2,3)(2,4)(3,1)(3,4)}</td><td>IR, NS, NAS, NT</td></tr>
+    </table>
+    <div class="examples">
+      <div class="examples-head"><span class="dot"></span><h4>Örnek Sorular</h4></div>
+      <details class="q"><summary><span class="qnum">S1.</span> {(1,1)(2,2)(3,3)(4,4)} bağıntısı neden hem simetrik hem antisimetriktir?<span class="arrow">▶</span></summary>
+        <div class="answer">Bu bağıntıda sadece (x,x) formunda çiftler var. Simetrik koşulu (x=y ise otomatik sağlanır) ve antisimetrik koşulu ((x,y),(y,x)∈R ise x=y — burada zaten x=y) ikisi de aynı anda sağlanabilir; bu iki özellik birbirini dışlamaz.</div></details>
+      <details class="q"><summary><span class="qnum">S2.</span> {(2,4)(4,2)} bağıntısı neden antisimetrik değildir?<span class="arrow">▶</span></summary>
+        <div class="answer">(2,4)∈R ve (4,2)∈R olduğu halde 2≠4'tür — bu, antisimetrik tanımını doğrudan ihlal eder.</div></details>
+    </div>
+  </div>
+</section>
+
+<!-- 43 EQUIVALENCE RELATION -->
+<section class="slide" data-index="43">
+  <div class="slide-inner">
+    <div class="kicker">4.39</div>
+    <h1 class="slide-title">Denklik Bağıntısı <em>(Equivalence Relation)</em></h1>
+    <p class="subtitle">Üç özelliği birlikte taşıyan özel ve çok önemli bir bağıntı türü.</p>
+    <div class="grid2">
+      <div class="card">
+        <h3>Tanım</h3>
+        <p style="margin:0;">R bağıntısı üzerinde <b>reflexive, symmetric ve transitive</b> özellikleri birlikte mevcutsa, bu bir <b>denklik bağıntısıdır (equivalence relation)</b>.</p>
+      </div>
+      <div class="card">
+        <h3>Örnek: A={1,2,3}</h3>
+        <p style="margin:0 0 6px; font-size:12.5px;">R={(1,1)(2,2)(3,3)(1,2)(2,1)(1,3)(3,1)(2,3)(3,2)}</p>
+        <div class="two-col-list" style="font-size:12.5px;">
+          <div><span class="chip ok">✓</span> Reflexive</div>
+          <div><span class="chip ok">✓</span> Symmetric</div>
+          <div><span class="chip ok">✓</span> Transitive</div>
+          <div><span class="chip no">✗</span> Antisymmetric</div>
+        </div>
+        <div class="formula-big" style="font-size:14px;">EQUIVALENCE RELATION → EVET</div>
+      </div>
+    </div>
+    <div class="examples">
+      <div class="examples-head"><span class="dot"></span><h4>Örnek Sorular</h4></div>
+      <details class="q"><summary><span class="qnum">S1.</span> Bir denklik bağıntısı neden aynı anda antisimetrik de olabilir mi (genel olarak)?<span class="arrow">▶</span></summary>
+        <div class="answer">Yalnızca çok özel durumlarda (örneğin R sadece (x,x) çiftlerinden oluşuyorsa — "eşitlik" bağıntısı) hem denklik hem antisimetrik olabilir. Genel olarak simetri ve antisimetri (x≠y olan çiftler için) birbiriyle çelişir.</div></details>
+      <details class="q"><summary><span class="qnum">S2.</span> "Aynı doğum yılında olmak" bağıntısı bir denklik bağıntısı mıdır?<span class="arrow">▶</span></summary>
+        <div class="answer">Evet — herkes kendisiyle aynı yılda doğmuştur (reflexive), A ve B aynı yılda doğmuşsa B ve A da öyledir (symmetric), A-B ve B-C aynı yılda ise A-C de aynı yıldadır (transitive).</div></details>
+    </div>
+  </div>
+</section>
+
+<!-- 44 EQUIVALENCE EXAMPLES -->
+<section class="slide" data-index="44">
+  <div class="slide-inner">
+    <div class="kicker">4.40</div>
+    <h1 class="slide-title">Denklik Bağıntısı — İki Karşılaştırmalı Örnek</h1>
+    <p class="subtitle">Bir örnek denklik bağıntısı değil, diğeri evet — farkı görelim.</p>
+    <div class="grid2">
+      <div class="card">
+        <h3>Örnek 1 — DEĞİL: xRy ⟺ x−y=5</h3>
+        <p style="margin:0 0 6px; font-size:12.5px;">X={tamsayılar}. Alt örnek: X={1,6}, R={(6,1)}.</p>
+        <div class="two-col-list" style="font-size:12px;">
+          <div><span class="chip no">✗</span> Irreflexive</div>
+          <div><span class="chip ok">✓</span> Antisymmetric</div>
+          <div><span class="chip ok">✓</span> Transitive</div>
+        </div>
+        <div class="formula-big" style="font-size:13px;">Denklik Bağıntısı DEĞİLDİR</div>
+        <p style="margin:0; font-size:12px; color:var(--muted);">Reflexive olmadığı (x−x=0≠5) için otomatik elenir.</p>
+      </div>
+      <div class="card">
+        <h3>Örnek 2 — EVET: X={1,...,6}</h3>
+        <p style="margin:0 0 6px; font-size:12px;">R={(1,1)(1,3)(1,5)(3,1)(3,3)(3,5)(5,1)(5,3)(5,5)(2,2)(2,6)(6,2)(6,6)(4,4)}</p>
+        <div class="two-col-list" style="font-size:12px;">
+          <div><span class="chip ok">✓</span> Reflexive</div>
+          <div><span class="chip ok">✓</span> Symmetric</div>
+          <div><span class="chip ok">✓</span> Transitive</div>
+        </div>
+        <div class="formula-big" style="font-size:13px;">Denklik Bağıntısı EVET</div>
+      </div>
+    </div>
+    <div class="examples">
+      <div class="examples-head"><span class="dot"></span><h4>Örnek Sorular</h4></div>
+      <details class="q"><summary><span class="qnum">S1.</span> Örnek 2'deki bağıntı, X'i hangi "gruplara" (denklik sınıflarına) ayırıyor?<span class="arrow">▶</span></summary>
+        <div class="answer">{1,3,5}, {2,6}, {4} — her grup içindeki elemanlar birbiriyle ilişkili, farklı gruplar arasında ilişki yok.</div></details>
+      <details class="q"><summary><span class="qnum">S2.</span> Bir denklik bağıntısının "denklik sınıfları" kavramı neden önemlidir?<span class="arrow">▶</span></summary>
+        <div class="answer">Çünkü bir denklik bağıntısı, kümeyi otomatik olarak birbirinden <b>ayrık (disjoint)</b> alt gruplara böler — her eleman tam olarak bir sınıfa aittir. Bu, matematikte "eşdeğer" nesneleri gruplamanın temel yoludur (örn. kesirlerde 1/2=2/4=3/6 aynı denklik sınıfındadır).</div></details>
+    </div>
+  </div>
+</section>
+
+<!-- 45 PARTIAL ORDER + HASSE -->
+<section class="slide" data-index="45">
+  <div class="slide-inner">
+    <div class="kicker">4.41</div>
+    <h1 class="slide-title">Sıralama Bağıntısı <em>(Partial Order)</em> ve Hasse Diyagramları</h1>
+    <p class="subtitle">Reflexive + antisymmetric + transitive = bir sıralama yapısı.</p>
+    <div class="grid2">
+      <div class="card">
+        <h3>Tanım</h3>
+        <p style="margin:0;">R bağıntısı üzerinde <b>reflexive, antisymmetric ve transitive</b> özellikleri mevcutsa, bu bir <b>sıralama bağıntısıdır (partial order relation)</b>.</p>
+        <p style="margin:8px 0 0; font-size:12.5px; color:var(--muted);"><b>Hasse Diyagramları</b>, Alman matematikçi Helmut Hasse tarafından geliştirilmiş, sıralama bağıntılarını görselleştiren bir yöntemdir.</p>
+      </div>
+      <div class="card">
+        <h3>Örnek: "x, y'yi böler" bağıntısı</h3>
+        <p style="margin:0 0 6px; font-size:12.5px;">A={1,2,3,4}, R: x|y ⟺ (x,y)∈R</p>
+        <div class="formula-big" style="font-size:12px;">R={(1,1)(1,2)(1,3)(1,4)(2,2)(2,4)(3,3)(4,4)}</div>
+        <div class="two-col-list" style="font-size:12px;">
+          <div><span class="chip ok">✓</span> Reflexive</div>
+          <div><span class="chip ok">✓</span> Antisymmetric</div>
+          <div><span class="chip ok">✓</span> Transitive</div>
+        </div>
+        <p style="margin:6px 0 0; font-size:12px;"><b>PARTIAL ORDER: EVET</b></p>
+      </div>
+    </div>
+    <div class="examples">
+      <div class="examples-head"><span class="dot"></span><h4>Örnek Sorular</h4></div>
+      <details class="q"><summary><span class="qnum">S1.</span> Sıralama bağıntısı ile denklik bağıntısı arasındaki fark nedir?<span class="arrow">▶</span></summary>
+        <div class="answer">Her ikisi de reflexive ve transitive'dir, ama denklik bağıntısı <b>symmetric</b> iken sıralama bağıntısı <b>antisymmetric</b>'tir — bu, "eşdeğerlik" (simetrik ilişki) ile "sıra/hiyerarşi" (yönlü ilişki) arasındaki temel farktır.</div></details>
+      <details class="q"><summary><span class="qnum">S2.</span> "⊆" (alt küme olma) bağıntısı bir sıralama bağıntısı mıdır?<span class="arrow">▶</span></summary>
+        <div class="answer">Evet — her küme kendisinin alt kümesidir (reflexive), A⊆B ve B⊆A ise A=B (antisymmetric), A⊆B ve B⊆C ise A⊆C (transitive).</div></details>
+    </div>
+  </div>
+</section>
+
+<!-- 46 HASSE DIAGRAM EXAMPLE -->
+<section class="slide" data-index="46">
+  <div class="slide-inner">
+    <div class="kicker">4.42</div>
+    <h1 class="slide-title">Hasse Diyagramı — Uygulamalı Örnek</h1>
+    <p class="subtitle">R: {(a,b) | a≤b}, X={1,2,3,4} — önce reflexive, sonra transitive özellikler çıkarılır.</p>
+    <div class="grid2">
+      <div class="card">
+        <h3>Bağıntı</h3>
+        <div class="formula-big" style="font-size:11.5px;">R={(1,1)(2,2)(3,3)(4,4)(1,2)(1,3)(1,4)(2,3)(2,4)(3,4)}</div>
+        <div class="two-col-list" style="font-size:12.5px;">
+          <div><span class="chip ok">✓</span> Reflexive</div>
+          <div><span class="chip ok">✓</span> Antisymmetric</div>
+          <div><span class="chip ok">✓</span> Transitive</div>
+        </div>
+        <p style="margin:6px 0 0; font-size:12.5px;"><b>Partial Order ✓</b></p>
+      </div>
+      <div class="card">
+        <h3>Hasse Diyagramı Çizim Kuralı</h3>
+        <ol class="step-list">
+          <li>Önce yansıma (reflexive) döngülerini (x,x) çiziminden çıkarın — hepsi zaten örtüktür, çizilmez.</li>
+          <li>Sonra geçişkenlik (transitive) ile elde edilebilen fazladan okları çıkarın — sadece "doğrudan" ilişkiler çizilir.</li>
+          <li>Kalan ilişkiler, alttan üste doğru yönlü oklarla gösterilir (1→2→3→4).</li>
+        </ol>
+        <svg viewBox="0 0 120 195" style="width:100%; max-width:150px; display:block; margin:8px auto;">
+          <defs>
+            <marker id="hasseArrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto">
+              <path d="M0,0 L8,4 L0,8 Z" fill="var(--accent-2)"/>
+            </marker>
+          </defs>
+
+          <!-- okler: alttan uste (1→2, 2→3, 3→4) -->
+          <line x1="60" y1="156" x2="60" y2="135" stroke="var(--accent-2)" stroke-width="1.8" marker-end="url(#hasseArrow)"/>
+          <line x1="60" y1="106" x2="60" y2="85"  stroke="var(--accent-2)" stroke-width="1.8" marker-end="url(#hasseArrow)"/>
+          <line x1="60" y1="56"  x2="60" y2="35"  stroke="var(--accent-2)" stroke-width="1.8" marker-end="url(#hasseArrow)"/>
+
+          <!-- dugumler -->
+          <circle cx="60" cy="20"  r="14" fill="var(--surface-2)" stroke="var(--accent-2)"/><text x="60" y="25"  text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="12" fill="var(--text)">4</text>
+          <circle cx="60" cy="70"  r="14" fill="var(--surface-2)" stroke="var(--accent-2)"/><text x="60" y="75"  text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="12" fill="var(--text)">3</text>
+          <circle cx="60" cy="120" r="14" fill="var(--surface-2)" stroke="var(--accent-2)"/><text x="60" y="125" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="12" fill="var(--text)">2</text>
+          <circle cx="60" cy="170" r="14" fill="var(--surface-2)" stroke="var(--accent-2)"/><text x="60" y="175" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="12" fill="var(--text)">1</text>
+        </svg>
+      </div>
+    </div>
+    <div class="examples">
+      <div class="examples-head"><span class="dot"></span><h4>Örnek Sorular</h4></div>
+      <details class="q"><summary><span class="qnum">S1.</span> Hasse diyagramında "1"den "4"e doğrudan bir çizgi neden çizilmez?<span class="arrow">▶</span></summary>
+        <div class="answer">Çünkü 1≤2≤3≤4 zinciri zaten bu ilişkiyi (transitive özellik sayesinde) ima eder — Hasse diyagramı sadece "gereksiz olmayan" en kısa ilişkileri gösterir, gereksiz/türetilebilir çizgileri çizmez.</div></details>
+      <details class="q"><summary><span class="qnum">S2.</span> Hasse diyagramında ok yönü neden genellikle gösterilmez?<span class="arrow">▶</span></summary>
+        <div class="answer">Çünkü sıralama her zaman "alttan üste" olarak kabul edilir (bir kural olarak); bu yüzden klasik Hasse diyagramı oksuz çizilir. Bu slaytta yönü öğretmek için oklar özellikle gösterilmiştir: 1→2→3→4.</div></details>
+    </div>
+  </div>
+</section>
+
+<!-- 47 CLOSURE + WARSHALL -->
+<section class="slide" data-index="47">
+  <div class="slide-inner">
+    <div class="kicker">4.43</div>
+    <h1 class="slide-title">Kapalılık <em>(Closure)</em> ve Warshall Algoritması</h1>
+    <p class="subtitle">Eksik bir özelliği (örn. transitive) bir bağıntıya "eklemenin" yöntemi.</p>
+    <div class="grid2">
+      <div class="card">
+        <h3>Kapalılık Nedir?</h3>
+        <p style="margin:0;">Verilen bir bağıntı reflexive, symmetric ya da transitive özelliklerine sahip değilse, bağıntının bu özelliklere sahip olmasını sağlama işlemine <b>kapalılık (closure)</b> denir. En sık kullanılanı <b>transitive closure</b>'dır.</p>
+      </div>
+      <div class="card">
+        <h3>Örnek: Eksik Bağıntı</h3>
+        <p style="margin:0 0 8px; font-size:12.5px;">R={(b,a)(b,c)(c,a)(c,d)(d,c)}</p>
+        <p style="margin:0; font-size:12.5px; color:var(--muted);">Bu bağıntı transitive değildir — örneğin (b,c)∈R ve (c,a)∈R olduğu halde (b,a) zaten var ama (c,d) ve (d,c) döngüsünden türeyen bazı ilişkiler eksik kalabilir. Warshall algoritması bu eksiklikleri sistematik olarak tamamlar.</p>
+      </div>
+    </div>
+    <div class="card" style="margin-top:12px;">
+      <h3>Warshall Algoritması (Stephen Warshall)</h3>
+      <div class="formula-big" style="text-align:left; font-size:12.5px; line-height:1.65;">
+procedure warshall<br>
+W = M_R &nbsp;<span style="color:var(--muted);">(bağıntının matrisi)</span><br>
+for k=1 to n<br>
+&nbsp;&nbsp;for i=1 to n<br>
+&nbsp;&nbsp;&nbsp;&nbsp;for j=1 to n<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Wᵢⱼ = Wᵢⱼ ∨ (Wᵢₖ ∧ Wₖⱼ)
+      </div>
+      <p style="margin:8px 0 0; font-size:12.5px; color:var(--muted);">Mantık: "i'den k'ya ve k'dan j'ye gidilebiliyorsa, i'den j'ye de gidilebilir" kuralını, tüm ara nokta (k) seçenekleri için sistematik olarak kontrol eder — Bölüm 6'daki (Algoritmalar) iteratif algoritma analizi tekniklerini doğrudan kullanır.</p>
+    </div>
+    <div class="examples">
+      <div class="examples-head"><span class="dot"></span><h4>Örnek Sorular</h4></div>
+      <details class="q"><summary><span class="qnum">S1.</span> Warshall algoritmasının üç iç içe döngüsünün (n değişkenli) zaman karmaşıklığı nedir?<span class="arrow">▶</span></summary>
+        <div class="answer"><b>O(n³)</b> — üç iç içe döngü, her biri n kez çalıştığından (Bölüm 6, Slayt 6.21'deki matris toplamı analizine benzer mantık).</div></details>
+        <details class="q"><summary><span class="qnum">S2.</span> Wᵢⱼ = Wᵢⱼ ∨ (Wᵢₖ ∧ Wₖⱼ) formülündeki ∨ ve ∧ neyi temsil eder?<span class="arrow">▶</span></summary>
+        <div class="answer">Bölüm 3'teki Boole cebri işlemleridir — ∨ (OR) "zaten var mıydı YA DA yeni bir yol bulundu mu", ∧ (AND) "hem i'den k'ya HEM k'dan j'ye gidilebiliyor mu" sorularını cevaplar.</div></details>
+    </div>
+  </div>
+</section>
+
+<!-- 48 MATRIX REPRESENTATION -->
+<section class="slide" data-index="48">
+  <div class="slide-inner">
+    <div class="kicker">4.44</div>
+    <h1 class="slide-title">Matris Bağıntıları</h1>
+    <p class="subtitle">Bir bağıntıyı 0/1'lerden oluşan bir matrisle temsil etme.</p>
+    <div class="grid2">
+      <div class="card">
+        <h3>Kural</h3>
+        <ul class="clean" style="margin-bottom:0;">
+          <li>X kümesinin elemanları, matrisin <b>satırlarını</b> oluşturur.</li>
+          <li>Y kümesinin elemanları, matrisin <b>sütunlarını</b> oluşturur.</li>
+          <li>i. satırdaki x ile j. sütundaki y ilişkiliyse aᵢⱼ=1, değilse aᵢⱼ=0.</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>Örnek: X={1,2,3}, Y={a,b,c,d}</h3>
+        <p style="margin:0 0 6px; font-size:12px;">R={(1,a),(1,d),(2,a),(2,b),(2,c)}</p>
+        <table class="tt" style="font-size:12px;">
+          <tr><th></th><th>a</th><th>b</th><th>c</th><th>d</th></tr>
+          <tr><td>1</td><td>1</td><td>0</td><td>0</td><td>1</td></tr>
+          <tr><td>2</td><td>1</td><td>1</td><td>1</td><td>0</td></tr>
+          <tr><td>3</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+        </table>
+      </div>
+    </div>
+    <div class="card" style="margin-top:12px;">
+      <h3>X'ten X'e bağıntı — Kare Matris</h3>
+      <p style="margin:0 0 6px; font-size:12.5px;">X={a,b,c,d}, R={(a,a),(b,b),(c,c),(d,d)} — bu bir "eşitlik" bağıntısıdır, matrisi köşegen (diagonal) bir matristir:</p>
+      <table class="tt" style="font-size:12px; max-width:280px;">
+        <tr><th></th><th>a</th><th>b</th><th>c</th><th>d</th></tr>
+        <tr><td>a</td><td>1</td><td>0</td><td>0</td><td>0</td></tr>
+        <tr><td>b</td><td>0</td><td>1</td><td>0</td><td>0</td></tr>
+        <tr><td>c</td><td>0</td><td>0</td><td>1</td><td>0</td></tr>
+        <tr><td>d</td><td>0</td><td>0</td><td>0</td><td>1</td></tr>
+      </table>
+    </div>
+    <div class="examples">
+      <div class="examples-head"><span class="dot"></span><h4>Örnek Sorular</h4></div>
+      <details class="q"><summary><span class="qnum">S1.</span> Reflexive bir bağıntının matrisinde köşegen üzerinde ne olmalıdır?<span class="arrow">▶</span></summary>
+        <div class="answer">Köşegenin (aᵢᵢ) <b>tamamı 1</b> olmalıdır — çünkü her x için (x,x)∈R gereklidir.</div></details>
+      <details class="q"><summary><span class="qnum">S2.</span> Simetrik bir bağıntının matrisi hangi geometrik özelliğe sahiptir?<span class="arrow">▶</span></summary>
+        <div class="answer">Matris, köşegene göre <b>simetriktir</b> (aᵢⱼ=aⱼᵢ) — matrisin transpozu kendisine eşittir.</div></details>
+    </div>
+  </div>
+</section>
+
+<!-- SECTION DIVIDER: FUNCTIONS -->
+<section class="slide" data-index="49">
+  <div class="section-divider">
+    <div class="num">BÖLÜM V</div>
+    <h1>Fonksiyonlar <em style="font-style:italic; color:var(--accent);">(Functions)</em></h1>
+    <p>Bire-bir, örten, bijective fonksiyonlar, ters fonksiyon, bileşke, üstel/logaritmik fonksiyonlar, floor/ceiling.</p>
+  </div>
+</section>
+
+<!-- 50 FUNCTIONS DEFINITION -->
+<section class="slide" data-index="50">
+  <div class="slide-inner">
+    <div class="kicker">4.45</div>
+    <h1 class="slide-title">Fonksiyonlar <em>(Functions)</em></h1>
+    <p class="subtitle">Bir fonksiyon, bağıntının özel (ve çok kullanışlı) bir türüdür.</p>
+    <div class="grid2">
+      <div class="card">
+        <h3>Tanım</h3>
+        <p style="margin:0 0 8px;">A ve B kümeler olsun. A'dan B'ye bir f fonksiyonu, A'nın <b>her</b> elemanına B'den <b>tam olarak bir</b> eleman atar: <span class="formula">f: X → Y</span>.</p>
+        <p style="margin:0;">X'e f'nin tanım kümesi (Dom(f)=X), Y'ye f'nin değer kümesi (Rng(f)=Y) denir.</p>
+      </div>
+      <div class="card">
+        <h3>Örnek</h3>
+        <p style="margin:0 0 6px; font-size:12.5px;">Dom(f)=X={a,b,c,d}, Rng(f)=Y={1,3,5}</p>
+        <div class="formula-big" style="font-size:13px;">f(a)=f(b)=3, f(c)=5, f(d)=1</div>
+      </div>
+    </div>
+    <div class="examples">
+      <div class="examples-head"><span class="dot"></span><h4>Örnek Sorular</h4></div>
+      <details class="q"><summary><span class="qnum">S1.</span> Bir fonksiyonda aynı x değerine iki farklı y ataması yapılabilir mi?<span class="arrow">▶</span></summary>
+        <div class="answer">Hayır — fonksiyon tanımı, her x için <b>tam olarak bir</b> y ataması gerektirir; iki farklı y ataması fonksiyon tanımını ihlal eder.</div></details>
+      <details class="q"><summary><span class="qnum">S2.</span> Aynı y değerine birden fazla x'in eşlenmesi (f(a)=f(b)=3 gibi) fonksiyon tanımını bozar mı?<span class="arrow">▶</span></summary>
+        <div class="answer">Hayır, bozmaz — fonksiyon tanımı sadece her x'in <i>tek</i> bir y'ye gitmesini şart koşar; birden fazla x'in aynı y'ye gitmesi tamamen geçerlidir (bu, "bire-bir olmayan" bir fonksiyon örneğidir, Slayt 4.49'da göreceğiz).</div></details>
+    </div>
+  </div>
+</section>
+
+<!-- 51 FUNCTION OR NOT + ARITHMETIC -->
+<section class="slide" data-index="51">
+  <div class="slide-inner">
+    <div class="kicker">4.46</div>
+    <h1 class="slide-title">Fonksiyon mu, Değil mi? + Fonksiyon Aritmetiği</h1>
+    <p class="subtitle">Bir bağıntının fonksiyon olup olmadığını kontrol etme ve fonksiyonlar üzerinde işlemler.</p>
+    <div class="grid2">
+      <div class="card">
+        <h3>Fonksiyon Testi</h3>
+        <p style="margin:0 0 6px; font-size:12.5px;">X={1,2,3}, Y={a,b,c}</p>
+        <div style="font-size:12.5px;">
+          <div><span class="chip ok">✓ EVET</span> R={(1,a),(2,b),(3,a)} — her x tek bir y'ye gidiyor</div>
+          <div style="margin-top:6px;"><span class="chip no">✗ HAYIR</span> R={(1,a),(2,b),(3,c),(1,b)} — 1, hem a'ya hem b'ye gidiyor!</div>
+        </div>
+      </div>
+      <div class="card">
+        <h3>Fonksiyon Aritmetiği</h3>
+        <p style="margin:0 0 6px; font-size:12.5px;">f₁(x)=x², f₂(x)=x−x²</p>
+        <div class="formula-big" style="font-size:13px;">f₁+f₂ = x²+(x−x²) = x</div>
+        <div class="formula-big" style="font-size:13px;">f₁·f₂ = x²(x−x²) = x³−x⁴</div>
+      </div>
+    </div>
+    <div class="examples">
+      <div class="examples-head"><span class="dot"></span><h4>Örnek Sorular</h4></div>
+      <details class="q"><summary><span class="qnum">S1.</span> f(x)=2x+1, g(x)=x−3 için (f+g)(x) nedir?<span class="arrow">▶</span></summary>
+        <div class="answer">(f+g)(x) = (2x+1)+(x−3) = <b>3x−2</b>.</div></details>
+      <details class="q"><summary><span class="qnum">S2.</span> R={(1,a),(2,a),(3,a)} bir fonksiyon mudur?<span class="arrow">▶</span></summary>
+        <div class="answer">Evet — her x (1,2,3) tam olarak bir y'ye (hepsi a'ya) gidiyor; aynı y'ye birden fazla x'in gitmesi sorun değildir.</div></details>
+    </div>
+  </div>
+</section>
+
+<!-- 52 ONE-TO-ONE -->
+<section class="slide" data-index="52">
+  <div class="slide-inner">
+    <div class="kicker">4.47</div>
+    <h1 class="slide-title">Bire-Bir Fonksiyonlar <em>(One-to-one / Injective)</em></h1>
+    <p class="subtitle">Farklı girdiler, her zaman farklı çıktılar üretir.</p>
+    <div class="grid2">
+      <div class="card">
+        <h3>Tanım</h3>
+        <p style="margin:0 0 8px;">f:X→Y <b>bire-bir (one-to-one)</b>'dir eğer her y∈Y sadece bir x∈X değerine karşılık geliyorsa.</p>
+        <p style="margin:0;"><b>Alternatif tanım:</b> x₁≠x₂ iken f(x₁)≠f(x₂) (farklı girdiler her zaman farklı çıktılar üretir).</p>
+      </div>
+      <div class="card">
+        <h3>Örnekler</h3>
+        <p style="margin:0 0 6px; font-size:13px;">1) f(x)=2x (gerçek sayılardan kendisine) → <b>bire-bir</b>dir.</p>
+        <p style="margin:0; font-size:13px;">2) f(x)=x² (gerçek sayılardan kendisine) → <b>bire-bir değildir</b>, çünkü her x için f(x)=f(−x) (örn. f(2)=f(−2)=4).</p>
+      </div>
+    </div>
+    <div class="examples">
+      <div class="examples-head"><span class="dot"></span><h4>Örnek Sorular</h4></div>
+      <details class="q"><summary><span class="qnum">S1.</span> f(x)=x+5 (gerçek sayılardan kendisine) bire-bir midir?<span class="arrow">▶</span></summary>
+        <div class="answer">Evet — x₁≠x₂ ise x₁+5≠x₂+5 her zaman doğrudur.</div></details>
+      <details class="q"><summary><span class="qnum">S2.</span> f(x)=|x| (mutlak değer) bire-bir midir?<span class="arrow">▶</span></summary>
+        <div class="answer">Hayır — f(3)=f(−3)=3, farklı girdiler aynı çıktıyı üretiyor.</div></details>
+    </div>
+  </div>
+</section>
+
+<!-- 53 ONTO -->
+<section class="slide" data-index="53">
+  <div class="slide-inner">
+    <div class="kicker">4.48</div>
+    <h1 class="slide-title">Örten Fonksiyonlar <em>(Onto / Surjective)</em></h1>
+    <p class="subtitle">Değer kümesindeki her elemana en az bir kez "ulaşılıyor" mu?</p>
+    <div class="card">
+      <h3>Tanım</h3>
+      <p style="margin:0;">f:X→Y <b>örten (onto)</b>'dur eğer her y∈Y için, f(x)=y olacak en az bir x∈X mevcutsa. Başka bir deyişle, Rng(f)=Y'nin <b>tamamı</b> kapsanmalıdır.</p>
+    </div>
+    <div class="examples">
+      <div class="examples-head"><span class="dot"></span><h4>Örnek Sorular</h4></div>
+      <details class="q"><summary><span class="qnum">S1.</span> f:ℝ→ℝ, f(x)=x³ fonksiyonu örten midir?<span class="arrow">▶</span></summary>
+        <div class="answer">Evet — her gerçek sayı y için, y=x³ denklemini sağlayan bir x (küp kökü) her zaman vardır.</div></details>
+      <details class="q"><summary><span class="qnum">S2.</span> f:ℝ→ℝ, f(x)=x² fonksiyonu neden örten değildir?<span class="arrow">▶</span></summary>
+        <div class="answer">Çünkü negatif sayılar (örn. y=−4) için f(x)=y'yi sağlayan hiçbir gerçek x yoktur — Rng(f) sadece negatif olmayan sayılardan oluşur, ℝ'nin tamamını kapsamaz.</div></details>
+    </div>
+  </div>
+</section>
+
+<!-- 54 BIJECTIVE -->
+<section class="slide" data-index="54">
+  <div class="slide-inner">
+    <div class="kicker">4.49</div>
+    <h1 class="slide-title">Bijective Fonksiyonlar</h1>
+    <p class="subtitle">Hem bire-bir hem örten olan "mükemmel eşleşme".</p>
+    <div class="grid2">
+      <div class="card">
+        <h3>Tanım</h3>
+        <p style="margin:0 0 8px;">f:X→Y <b>bijective</b>'dir eğer f hem one-to-one hem de onto ise.</p>
+        <ul class="clean" style="margin-bottom:0;">
+          <li>f(x)=ax+b (lineer fonksiyon, a≠0) — bijective</li>
+          <li>f(x)=x³ — bijective</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>Dört Olası Durum (görsel özet)</h3>
+        <table class="laws small">
+          <tr><td>Bire-bir, örten değil</td><td class="f">X'ten Y'ye "eksik kapsama"</td></tr>
+          <tr><td>Bire-bir değil, örten</td><td class="f">Bazı y'ler birden fazla x alır</td></tr>
+          <tr><td>Ne bire-bir ne örten</td><td class="f">Hem çakışma hem eksik kapsama</td></tr>
+          <tr><td>Bijective</td><td class="f">Her x↔y "mükemmel eşleşme"</td></tr>
+        </table>
+      </div>
+    </div>
+    <div class="examples">
+      <div class="examples-head"><span class="dot"></span><h4>Örnek Sorular</h4></div>
+      <details class="q"><summary><span class="qnum">S1.</span> f(x)=2x+3 (ℝ'den ℝ'ye) bijective midir?<span class="arrow">▶</span></summary>
+        <div class="answer">Evet — lineer bir fonksiyon (a=2≠0) olduğundan hem bire-bir hem örtendir, dolayısıyla bijective'dir.</div></details>
+      <details class="q"><summary><span class="qnum">S2.</span> f(x)=x² (ℝ'den ℝ⁺∪{0}'a, yani sadece negatif olmayan sayılara) örten midir? Bire-bir midir?<span class="arrow">▶</span></summary>
+        <div class="answer">Bu tanım kümesiyle <b>örtendir</b> (her negatif olmayan y'ye ulaşılabilir) ama hala <b>bire-bir değildir</b> (f(2)=f(−2)=4) — dolayısıyla bijective değildir.</div></details>
+    </div>
+  </div>
+</section>
+
+<!-- 55 INVERSE FUNCTION -->
+<section class="slide" data-index="55">
+  <div class="slide-inner">
+    <div class="kicker">4.50</div>
+    <h1 class="slide-title">Ters Fonksiyon <em>(Inverse Function)</em></h1>
+    <p class="subtitle">Bir fonksiyonun "geri döndürülmesi" — ama her zaman mümkün değildir.</p>
+    <div class="grid2">
+      <div class="card">
+        <h3>Tanım</h3>
+        <p style="margin:0 0 8px;">y=f(x) fonksiyonunun tersi f⁻¹, <span class="formula">{(y,x) | y=f(x)}</span> olarak tanımlanır.</p>
+        <p style="margin:0;"><b>Önemli:</b> f⁻¹'in bir fonksiyon olması gerekmez! Örnek: f(x)=x² ise f⁻¹(4)=±2 — tek bir değer olmadığından tersi bir fonksiyon değildir.</p>
+      </div>
+      <div class="card">
+        <h3>Ne Zaman Fonksiyondur?</h3>
+        <p style="margin:0 0 8px;">Eğer f <b>bijective</b> (hem bire-bir hem örten) ise, f⁻¹ de bir fonksiyondur.</p>
+        <div class="formula-big" style="font-size:13px;">f={(1,a),(2,c),(3,b)} → f⁻¹={(a,1),(c,2),(b,3)}</div>
+        <div class="formula-big" style="font-size:13px;">f(x)=x+1 → f⁻¹(x)=x−1</div>
+      </div>
+    </div>
+    <div class="examples">
+      <div class="examples-head"><span class="dot"></span><h4>Örnek Sorular</h4></div>
+      <details class="q"><summary><span class="qnum">S1.</span> f(x)=3x−2 fonksiyonunun tersini bulun.<span class="arrow">▶</span></summary>
+        <div class="answer">y=3x−2 → x=(y+2)/3. Değişken adlarını değiştirirsek: <b>f⁻¹(x)=(x+2)/3</b>.</div></details>
+      <details class="q"><summary><span class="qnum">S2.</span> f(x)=x² (tüm ℝ üzerinde) neden tersi bir fonksiyon olmaz, ama f(x)=x² (sadece x≥0 için) tersi bir fonksiyon olur?<span class="arrow">▶</span></summary>
+        <div class="answer">Tanım kümesini x≥0 ile kısıtlarsak, f artık <b>bire-bir</b> olur (her negatif olmayan x için f(x) tektir ve farklı x'ler farklı f(x) üretir) — bu da f⁻¹(x)=√x'in geçerli bir fonksiyon olmasını sağlar.</div></details>
+    </div>
+  </div>
+</section>
+
+<!-- 56 COMPOSITION OF FUNCTIONS -->
+<section class="slide" data-index="56">
+  <div class="slide-inner">
+    <div class="kicker">4.51</div>
+    <h1 class="slide-title">Fonksiyonların Bileşkesi</h1>
+    <p class="subtitle">İki fonksiyonu art arda uygulama — önce g, sonra f.</p>
+    <div class="grid2">
+      <div class="card">
+        <h3>Tanım</h3>
+        <div class="formula-big" style="font-size:14px;">f∘g(x) = f(g(x))</div>
+        <p style="margin:0;">g:X→Y ve f:Y→Z verilmişse, bileşke f∘g:X→Z şeklindedir.</p>
+      </div>
+      <div class="card">
+        <h3>Örnek</h3>
+        <p style="margin:0 0 6px; font-size:13px;">g(x)=x²−1, f(x)=3x+5</p>
+        <div class="formula-big" style="font-size:13px;">f∘g(x) = f(g(x)) = 3(x²−1)+5 = 3x²+2</div>
+      </div>
+    </div>
+    <div class="card" style="margin-top:12px;">
+      <h3>Özellikler</h3>
+      <p style="margin:0;"><b>Birleşme özelliği vardır:</b> <span class="formula">f∘(g∘h) = (f∘g)∘h</span>. <b>Ama değişme özelliği yoktur:</b> <span class="formula">f∘g ≠ g∘f</span> (genel olarak).</p>
+    </div>
+    <div class="examples">
+      <div class="examples-head"><span class="dot"></span><h4>Örnek Sorular</h4></div>
+      <details class="q"><summary><span class="qnum">S1.</span> f(x)=x+1, g(x)=2x için g∘f(x) ve f∘g(x)'i bulup eşit olup olmadığını kontrol edin.<span class="arrow">▶</span></summary>
+        <div class="answer">g∘f(x)=g(x+1)=2(x+1)=2x+2. f∘g(x)=f(2x)=2x+1. <b>Farklıdır</b> — bileşkenin değişme özelliği olmadığını doğrular.</div></details>
+      <details class="q"><summary><span class="qnum">S2.</span> f(x)=x−3, g(x)=x+3 için f∘g(x) nedir? Bu size ne düşündürüyor?<span class="arrow">▶</span></summary>
+        <div class="answer">f∘g(x)=f(x+3)=(x+3)−3=<b>x</b>. Bu, g'nin f'in (ya da tam tersi) tersi olduğunu gösterir — f∘g(x)=x özdeşliği, f ve g'nin birbirinin tersi olduğunun bir işaretidir.</div></details>
+    </div>
+  </div>
+</section>
+
+<!-- 57 EXPONENTIAL/LOGARITHMIC -->
+<section class="slide" data-index="57">
+  <div class="slide-inner">
+    <div class="kicker">4.52</div>
+    <h1 class="slide-title">Üstel ve Logaritmik Fonksiyonlar</h1>
+    <p class="subtitle">Birbirinin tersi olan iki temel fonksiyon ailesi.</p>
+    <div class="card">
+      <h3>f(x)=2ˣ ve g(x)=log₂x</h3>
+      <div class="formula-big" style="font-size:14px;">f∘g(x) = f(log₂x) = 2^(log₂x) = x</div>
+      <div class="formula-big" style="font-size:14px;">g∘f(x) = g(2ˣ) = log₂(2ˣ) = x</div>
+      <p style="margin:8px 0 0; font-size:12.5px; color:var(--muted);">Her iki bileşke de "x" özdeşliğini verdiğinden, üstel ve logaritmik fonksiyonlar <b>birbirinin tersidir</b>.</p>
+    </div>
+    <div class="examples">
+      <div class="examples-head"><span class="dot"></span><h4>Örnek Sorular</h4></div>
+      <details class="q"><summary><span class="qnum">S1.</span> log₂(2⁵) değerini hesaplayın.<span class="arrow">▶</span></summary>
+        <div class="answer">g∘f(5)=5 özdeşliğine göre doğrudan <b>5</b>.</div></details>
+      <details class="q"><summary><span class="qnum">S2.</span> f(x)=eˣ fonksiyonunun tersi hangi fonksiyondur?<span class="arrow">▶</span></summary>
+        <div class="answer"><b>Doğal logaritma, g(x)=ln(x)</b> — aynı üstel-logaritmik ters ilişki, taban e için de geçerlidir.</div></details>
+    </div>
+  </div>
+</section>
+
+<!-- 58 STRING INVERSE + FLOOR/CEILING -->
+<section class="slide" data-index="58">
+  <div class="slide-inner">
+    <div class="kicker">4.53</div>
+    <h1 class="slide-title">String'in Tersi, Floor ve Ceiling Fonksiyonları</h1>
+    <p class="subtitle">Bölüm II'deki string kavramına dönüş, ve tamsayıya yuvarlama fonksiyonları.</p>
+    <div class="grid2">
+      <div class="card">
+        <h3>String'in Tersi (Inverse)</h3>
+        <p style="margin:0 0 8px;">α=x₁x₂…xₙ ∈ X* ise, tersi: <span class="formula">f(α) = α⁻¹ = xₙxₙ₋₁…x₂x₁</span> — string ters sırada yazılır.</p>
+        <p style="margin:0; font-size:12.5px;">(αβ)⁻¹ = β⁻¹α⁻¹ (dikkat: sıra da tersine döner!)</p>
+      </div>
+      <div class="card">
+        <h3>Floor (⌊x⌋) ve Ceiling (⌈x⌉)</h3>
+        <p style="margin:0 0 6px; font-size:12.5px;"><b>Floor:</b> x'e eşit veya ondan küçük en büyük tamsayı.<br><b>Ceiling:</b> x'e eşit veya ondan büyük en küçük tamsayı.</p>
+        <table class="tt" style="font-size:12px;">
+          <tr><th>x</th><th>⌊x⌋</th><th>⌈x⌉</th></tr>
+          <tr><td>8.3</td><td>8</td><td>9</td></tr>
+          <tr><td>3.1</td><td>3</td><td>4</td></tr>
+          <tr><td>−1/2</td><td>−1</td><td>0</td></tr>
+          <tr><td>7</td><td>7</td><td>7</td></tr>
+          <tr><td>−8.7</td><td>−9</td><td>−8</td></tr>
+        </table>
+      </div>
+    </div>
+    <div class="examples">
+      <div class="examples-head"><span class="dot"></span><h4>Örnek Sorular</h4></div>
+      <details class="q"><summary><span class="qnum">S1.</span> α=abc string'inin tersini bulun.<span class="arrow">▶</span></summary>
+        <div class="answer">α⁻¹ = <b>cba</b>.</div></details>
+      <details class="q"><summary><span class="qnum">S2.</span> ⌊−3.2⌋ ve ⌈−3.2⌉ değerlerini bulun.<span class="arrow">▶</span></summary>
+        <div class="answer">⌊−3.2⌋=<b>−4</b> (−3.2'den küçük en büyük tamsayı). ⌈−3.2⌉=<b>−3</b> (−3.2'den büyük en küçük tamsayı).</div></details>
+    </div>
+  </div>
+</section>
+
+<!-- 59 SUMMARY -->
+<section class="slide" data-index="59">
+  <div class="slide-inner">
+    <div class="kicker">Özet</div>
+    <h1 class="slide-title">Bölüm 4'ün Özeti — <em>Matematiğin Dili</em></h1>
+    <p class="subtitle">Bu araçlar (kümeler, bağıntılar, fonksiyonlar), ilerideki tüm konuların (Sayı Teorisi, Graf Teorisi, Ağaçlar) ortak dilini oluşturur.</p>
+    <div class="two-col-list">
+      <div class="card">
+        <h3>Öğrendiklerimiz</h3>
+        <ul class="clean" style="margin-bottom:0;">
+          <li>Küme tanımı, kardinalite, alt kümeler, power set</li>
+          <li>Küme işlemleri (∪,∩,−,⊕,ᶜ) ve özdeşlik kanunları</li>
+          <li>Kartezyen çarpım, içerme-dışlama, bit dizileriyle temsil</li>
+          <li>Diziler, alt diziler, sigma/pi gösterimi, string kavramı</li>
+          <li>Binary/hexadecimal/octal sayı sistemleri ve dönüşümler</li>
+          <li>Bağıntılar: reflexive/symmetric/transitive özellikleri</li>
+          <li>Denklik bağıntısı, sıralama bağıntısı, Hasse diyagramları</li>
+          <li>Kapalılık, Warshall algoritması, matris temsili</li>
+          <li>Fonksiyonlar: bire-bir, örten, bijective, ters, bileşke</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>Sırada ne var?</h3>
+        <p style="margin:0 0 10px;">Bölüm 5 — <b>Sayı Teorisi</b> konusunda şunları göreceğiz:</p>
+        <ul class="clean" style="margin-bottom:0;">
+          <li>Tamsayılar ve asal sayılar</li>
+          <li>En büyük ortak bölen (GCD) — Euclid algoritmasını hatırlayın (Bölüm 6)</li>
+          <li>Modüler aritmetik ve bölme</li>
+        </ul>
+      </div>
+    </div>
+    <div class="examples">
+      <div class="examples-head"><span class="dot"></span><h4>Genel Tekrar Soruları</h4></div>
+      <details class="q"><summary><span class="qnum">S1.</span> A={1,2,3,4,5}, B={4,5,6,7} için A∪B, A∩B, A−B, A⊕B'yi bulun.<span class="arrow">▶</span></summary>
+        <div class="answer">A∪B={1,2,3,4,5,6,7}. A∩B={4,5}. A−B={1,2,3}. A⊕B={1,2,3,6,7}.</div></details>
+      <details class="q"><summary><span class="qnum">S2.</span> f(x)=x²+1 fonksiyonunun (ℝ'den ℝ'ye) bire-bir ve örten olup olmadığını belirleyin.<span class="arrow">▶</span></summary>
+        <div class="answer">Bire-bir değildir (f(1)=f(−1)=2). Örten değildir (f(x)≥1 her zaman, y=0 gibi değerlere ulaşılamaz). Dolayısıyla bijective de değildir.</div></details>
+      <details class="q"><summary><span class="qnum">S3.</span> A={1,2,3,4} üzerinde R={(1,2),(2,1),(3,3),(4,4)} bağıntısının hangi özelliklere sahip olduğunu belirleyin.<span class="arrow">▶</span></summary>
+        <div class="answer">Reflexive değil ((2,2) yok). Symmetric ((1,2) ve (2,1) var; (3,3),(4,4) x=y). Antisymmetric değil ((1,2) ve (2,1) var ama 1≠2). Transitive ((1,2),(2,1) varken (1,1) gerekirdi ama yok — <b>transitive değildir</b>).</div></details>
+    </div>
+  </div>
+</section>
+
+</div>
+
+<div class="bottombar">
+  <button class="nav-btn" id="prevBtn">← Önceki</button>
+  <div class="dots" id="dots"></div>
+  <span class="slide-counter" id="counterBottom">01 / 58</span>
+  <button class="nav-btn" id="nextBtn">Sonraki →</button>
+</div>
+
+<script>
+(function(){
+  var slides = Array.prototype.slice.call(document.querySelectorAll('.slide'));
+  var total = slides.length;
+  var current = 0;
+  var counterTop = document.getElementById('counterTop');
+  var counterBottom = document.getElementById('counterBottom');
+  var progressFill = document.getElementById('progressFill');
+  var prevBtn = document.getElementById('prevBtn');
+  var nextBtn = document.getElementById('nextBtn');
+  var dotsWrap = document.getElementById('dots');
+  function pad(n){ return n < 10 ? '0'+n : ''+n; }
+  for(var i=0;i<total;i++){
+    var d = document.createElement('div');
+    d.className = 'd' + (i===0 ? ' active' : '');
+    d.dataset.i = i;
+    d.addEventListener('click', function(){ goTo(parseInt(this.dataset.i,10)); });
+    dotsWrap.appendChild(d);
+  }
+  function render(){
+    slides.forEach(function(s, i){ s.classList.toggle('active', i === current); });
+    var label = pad(current+1) + ' / ' + pad(total);
+    counterTop.textContent = label;
+    counterBottom.textContent = label;
+    progressFill.style.width = ((current) / (total-1) * 100) + '%';
+    prevBtn.disabled = current === 0;
+    nextBtn.disabled = current === total - 1;
+    Array.prototype.forEach.call(dotsWrap.children, function(d,i){ d.classList.toggle('active', i === current); });
+    document.querySelector('.slide.active').scrollTop = 0;
+  }
+  function goTo(i){ if(i < 0 || i >= total) return; current = i; render(); }
+  prevBtn.addEventListener('click', function(){ goTo(current-1); });
+  nextBtn.addEventListener('click', function(){ goTo(current+1); });
+  document.addEventListener('keydown', function(e){
+    if(e.key === 'ArrowRight' || e.key === 'PageDown'){ goTo(current+1); }
+    else if(e.key === 'ArrowLeft' || e.key === 'PageUp'){ goTo(current-1); }
+    else if(e.key === 'Home'){ goTo(0); }
+    else if(e.key === 'End'){ goTo(total-1); }
+  });
+  render();
+
+  var root = document.documentElement;
+  var settingsBtn = document.getElementById('settingsBtn');
+  var panel = document.getElementById('settingsPanel');
+  var bgPicker = document.getElementById('bgPicker');
+  var textPicker = document.getElementById('textPicker');
+  var resetBtn = document.getElementById('resetBtn');
+  var presetRow = document.getElementById('presetRow');
+  var DEFAULT_BG = '#0B1220';
+  var DEFAULT_TEXT = '#F1F5F9';
+  var presets = [
+    {bg:'#0B1220', text:'#F1F5F9', name:'Gece Mavisi'},
+	{bg:'#F8F9FA', text:'#1A1A1A', name:'Kampüs Beyazı ve Koyu Gri'},
+	{bg:'#000000', text:'#FFD700', name:'Siyah ve Altın Sarısı'},
+	{bg:'#F4F6F9', text:'#0F172A', name:'Kırık Beyaz ve Gece Mavisi'},
+	{bg:'#0B132B', text:'#FFEE58', name:'Koyu Lacivert ve Odak Sarısı'},
+    {bg:'#F4F1EA', text:'#1A1A1A', name:'Kağıt'},
+    {bg:'#111111', text:'#F5F5F5', name:'Siyah'},
+    {bg:'#0F2417', text:'#E8F5E9', name:'Koyu Yeşil'},
+    {bg:'#FFFFFF', text:'#0B1220', name:'Beyaz Tahta'},
+    {bg:'#1B1035', text:'#F3E8FF', name:'Mor Gece'},
+	{bg:'#F1F5F9', text:'#0F172A', name:'Bulutlu Gün Modu'},
+	{bg:'#FEF08A', text:'#1E293B', name:'Fosforlu Vurgu Modu'},
+	{bg:'#FFFFFF', text:'#000000', name:'Güneş Işığı Modu'}
+  ];
+  presets.forEach(function(p){
+    var dot = document.createElement('div');
+    dot.className = 'preset-dot';
+    dot.style.background = p.bg;
+    dot.style.borderColor = p.text;
+    dot.title = p.name;
+    dot.addEventListener('click', function(){ applyTheme(p.bg, p.text); });
+    presetRow.appendChild(dot);
+  });
+  function applyTheme(bg, text){
+    root.style.setProperty('--bg', bg);
+    root.style.setProperty('--text', text);
+    bgPicker.value = bg;
+    textPicker.value = text;
+    try{ localStorage.setItem('dil-slides-theme', JSON.stringify({bg:bg, text:text})); }catch(e){}
+  }
+  settingsBtn.addEventListener('click', function(){ panel.classList.toggle('open'); });
+  document.addEventListener('click', function(e){
+    if(!panel.contains(e.target) && e.target !== settingsBtn && panel.classList.contains('open')){ panel.classList.remove('open'); }
+  });
+  bgPicker.addEventListener('input', function(){ applyTheme(bgPicker.value, textPicker.value); });
+  textPicker.addEventListener('input', function(){ applyTheme(bgPicker.value, textPicker.value); });
+  resetBtn.addEventListener('click', function(){ applyTheme(DEFAULT_BG, DEFAULT_TEXT); });
+  try{
+    var saved = localStorage.getItem('dil-slides-theme');
+    if(saved){ var parsed = JSON.parse(saved); if(parsed && parsed.bg && parsed.text){ applyTheme(parsed.bg, parsed.text); } }
+  }catch(e){}
+})();
+</script>
+
+
+<div id="boardLayer"></div>
+<canvas id="penCanvas"></canvas>
+<div id="laserDot"></div>
+<div id="penToolbar">
+  <div class="pt-grid">
+    <button class="pt-btn" data-tool="pointer" title="İşaretçi — soruları aç, kaydır (V)">🖱️</button>
+    <button class="pt-btn" data-tool="pen" title="Kalem (P)">✏️</button>
+    <button class="pt-btn" data-tool="highlighter" title="Fosforlu kalem (H)">🖍️</button>
+    <button class="pt-btn" data-tool="eraser" title="Silgi — çizgiyi komple siler (E)">🧽</button>
+    <button class="pt-btn" data-tool="laser" title="Lazer işaretçi (L)">🔴</button>
+  </div>
+  <div class="pt-sep"></div>
+  <div class="pt-label">Renk</div>
+  <div class="pt-colors" id="ptColors"></div>
+  <div class="pt-sep"></div>
+  <div class="pt-label">Kalınlık</div>
+  <div class="pt-grid">
+    <button class="pt-btn" data-size="2" title="İnce (-)"><span class="pt-dot" style="width:4px;height:4px"></span></button>
+    <button class="pt-btn" data-size="4" title="Orta"><span class="pt-dot" style="width:8px;height:8px"></span></button>
+    <button class="pt-btn" data-size="8" title="Kalın"><span class="pt-dot" style="width:14px;height:14px"></span></button>
+    <button class="pt-btn" data-size="14" title="Çok kalın (+)"><span class="pt-dot" style="width:20px;height:20px"></span></button>
+  </div>
+  <div class="pt-sep"></div>
+  <div class="pt-grid">
+    <button class="pt-btn" id="ptUndo" title="Geri al (Ctrl+Z)">↶</button>
+    <button class="pt-btn" id="ptClear" title="Bu slayttaki yazıyı temizle (C)">🗑️</button>
+    <button class="pt-btn" id="ptBoard" title="Boş tahta aç/kapat (B)">▭</button>
+    <button class="pt-btn" id="ptEye" title="Yazıyı göster/gizle">👁️</button>
+    <button class="pt-btn" id="ptClose" title="Kalemi kapat (Esc)">✕</button>
+  </div>
+</div>
+<div id="penHint">Kalem açık. <b>V</b> ile işaretçiye geç (soru kutularını aç, kaydır), <b>P</b> ile tekrar yaz. Rakam tuşları renk seçer. Yazılar her slaytta ayrı kalır.</div>
+
+<script>
+(function(){
+  var COLORS = [
+    ['#FFFFFF','Beyaz'], ['#111111','Siyah'], ['#FBBF24','Sarı'], ['#F97316','Turuncu'],
+    ['#EF4444','Kırmızı'], ['#EC4899','Pembe'], ['#A855F7','Mor'], ['#3B82F6','Mavi'],
+    ['#22D3EE','Turkuaz'], ['#22C55E','Yeşil'], ['#A3E635','Açık yeşil'], ['#9CA3AF','Gri']
+  ];
+  var canvas = document.getElementById('penCanvas'), ctx = canvas.getContext('2d');
+  var board = document.getElementById('boardLayer'), tb = document.getElementById('penToolbar');
+  var laser = document.getElementById('laserDot'), hint = document.getElementById('penHint');
+  var toggleBtn = document.getElementById('penToggle'), colorsBox = document.getElementById('ptColors');
+  var state = { open:false, tool:'pointer', color:'#FBBF24', size:4, boardOn:false, hidden:false };
+  var store = {}, hist = {};
+  var cur = null, erasing = null, raf = 0, customWrap = null, customInput = null;
+  // Donanım silgisi algılandıktan sonra normal kalem ucuna dönüşü takip et.
+  var hardwareEraserMode = false;
+
+  function slideEl(){ return document.querySelector('.slide.active'); }
+  function key(){ if(state.boardOn) return 'board'; var s = slideEl(); return 's' + (s ? s.getAttribute('data-index') : '0'); }
+  function sTop(){ if(state.boardOn) return 0; var s = slideEl(); return s ? s.scrollTop : 0; }
+  function rect(){ return canvas.getBoundingClientRect(); }
+  function arr(o,k){ if(!o[k]) o[k] = []; return o[k]; }
+
+  function resize(){
+    var dpr = window.devicePixelRatio || 1, r = rect();
+    canvas.width = Math.round(r.width * dpr); canvas.height = Math.round(r.height * dpr);
+    ctx.setTransform(dpr,0,0,dpr,0,0); redraw();
+  }
+  function toPx(p){ return [p[0] * rect().width, p[1] - sTop()]; }
+
+  function drawStroke(st){
+    var pts = st.points; if(!pts.length) return;
+    ctx.save();
+    ctx.lineCap = 'round'; ctx.lineJoin = 'round'; ctx.strokeStyle = st.color; ctx.fillStyle = st.color;
+    var hl = st.tool === 'highlighter';
+    ctx.globalAlpha = hl ? 0.35 : 1;
+    var lw = hl ? st.size * 5 : st.size; ctx.lineWidth = lw;
+    var p0 = toPx(pts[0]);
+    if(pts.length === 1){ ctx.beginPath(); ctx.arc(p0[0], p0[1], lw/2, 0, Math.PI*2); ctx.fill(); ctx.restore(); return; }
+    ctx.beginPath(); ctx.moveTo(p0[0], p0[1]);
+    for(var i = 1; i < pts.length - 1; i++){
+      var a = toPx(pts[i]), b = toPx(pts[i+1]);
+      ctx.quadraticCurveTo(a[0], a[1], (a[0]+b[0])/2, (a[1]+b[1])/2);
+    }
+    var last = toPx(pts[pts.length-1]); ctx.lineTo(last[0], last[1]);
+    ctx.stroke(); ctx.restore();
+  }
+  function redraw(){
+    var r = rect(); ctx.clearRect(0, 0, r.width, r.height);
+    if(state.hidden) return;
+    (store[key()] || []).forEach(drawStroke);
+  }
+  function schedule(){ if(raf) return; raf = requestAnimationFrame(function(){ raf = 0; redraw(); }); }
+
+  function pt(e){ var r = rect(); return [ (e.clientX - r.left) / r.width, e.clientY - r.top + sTop() ]; }
+
+  function eraseAt(e){
+    var r = rect(), x = e.clientX - r.left, y = e.clientY - r.top, list = arr(store, key()), removed = [];
+    for(var i = list.length - 1; i >= 0; i--){
+      var hit = list[i].points.some(function(p){ var q = toPx(p); var dx = q[0]-x, dy = q[1]-y; return dx*dx + dy*dy < 18*18; });
+      if(hit){ removed.push(list.splice(i,1)[0]); }
+    }
+    if(removed.length){ erasing = erasing || []; erasing = erasing.concat(removed); schedule(); }
+  }
+
+  canvas.addEventListener('pointerdown', function(e){
+    if(!state.open) return;
+    // Bazı tablet kalemleri silgi ucunu Pointer Events'te ayrı araç olarak bildirir.
+    // Destekleyen tarayıcılarda araç seçimini otomatik olarak silgiye çevir.
+    var hardwareEraser = (e.pointerType === 'eraser') ||
+      (e.pointerType === 'pen' && (e.button === 5 || (e.buttons & 32) === 32));
+    if(hardwareEraser){
+      e.preventDefault();
+      hardwareEraserMode = true;
+      state.tool = 'eraser';
+      applyUI();
+    } else if(e.pointerType === 'pen' && hardwareEraserMode){
+      // Aynı kalem tekrar normal ucuna çevrildi: otomatik olarak kaleme dön.
+      hardwareEraserMode = false;
+      state.tool = 'pen';
+      applyUI();
+    }
+    if(state.tool === 'pointer') return;
+    e.preventDefault(); if(canvas.setPointerCapture){ try{ canvas.setPointerCapture(e.pointerId); }catch(_){} }
+    if(state.tool === 'pen' || state.tool === 'highlighter'){
+      cur = { tool:state.tool, color:state.color, size:state.size, points:[pt(e)] };
+      arr(store, key()).push(cur); schedule();
+    } else if(state.tool === 'eraser'){ erasing = []; eraseAt(e); }
+    else if(state.tool === 'laser'){ moveLaser(e); }
+  });
+  canvas.addEventListener('pointermove', function(e){
+    if(!state.open) return;
+    // Kalemin silgi ucu hareket sırasında ayrıca bildiriliyorsa silmeyi sürdür.
+    if(e.pointerType === 'eraser' ||
+       (e.pointerType === 'pen' && (e.buttons & 32) === 32)){
+      if(state.tool !== 'eraser'){ state.tool = 'eraser'; applyUI(); }
+    }
+    if(state.tool === 'laser'){ moveLaser(e); return; }
+    if(cur){ cur.points.push(pt(e)); schedule(); }
+    else if(erasing){ eraseAt(e); }
+  });
+  function endStroke(){
+    if(cur){ arr(hist, key()).push({type:'add', stroke:cur}); cur = null; }
+    if(erasing){ if(erasing.length) arr(hist, key()).push({type:'remove', list:erasing}); erasing = null; }
+    if(state.tool === 'laser') laser.style.display = 'none';
+  }
+  canvas.addEventListener('pointerup', endStroke);
+  canvas.addEventListener('pointercancel', endStroke);
+  canvas.addEventListener('pointerleave', function(){ if(state.tool === 'laser') laser.style.display = 'none'; });
+  function moveLaser(e){ laser.style.display = 'block'; laser.style.left = e.clientX + 'px'; laser.style.top = e.clientY + 'px'; }
+
+  canvas.addEventListener('wheel', function(e){
+    var s = slideEl(); if(s && !state.boardOn){ s.scrollTop += e.deltaY; schedule(); }
+    e.preventDefault();
+  }, { passive:false });
+  Array.prototype.forEach.call(document.querySelectorAll('.slide'), function(s){ s.addEventListener('scroll', schedule); });
+
+  function undo(){
+    var h = arr(hist, key()), a = h.pop(); if(!a) return;
+    var list = arr(store, key());
+    if(a.type === 'add'){ var i = list.indexOf(a.stroke); if(i > -1) list.splice(i,1); }
+    else { a.list.forEach(function(s){ list.push(s); }); }
+    redraw();
+  }
+  function clearInk(){
+    var list = arr(store, key()); if(!list.length) return;
+    arr(hist, key()).push({type:'clear', list:list.splice(0, list.length)}); redraw();
+  }
+
+  // ---- colour palette (12 presets + free colour picker) ----
+  COLORS.forEach(function(c, i){
+    var b = document.createElement('button');
+    b.className = 'pt-color'; b.setAttribute('data-color', c[0]); b.style.background = c[0];
+    b.title = c[1] + (i < 10 ? ' (' + ((i + 1) % 10) + ')' : '');
+    b.addEventListener('click', function(){ pickColor(c[0]); });
+    colorsBox.appendChild(b);
+  });
+  customWrap = document.createElement('label'); customWrap.className = 'pt-custom'; customWrap.title = 'İstediğin rengi seç';
+  customInput = document.createElement('input'); customInput.type = 'color'; customInput.value = '#FBBF24';
+  customInput.addEventListener('input', function(){ customWrap.style.background = customInput.value; pickColor(customInput.value); });
+  customWrap.appendChild(customInput); colorsBox.appendChild(customWrap);
+
+  function pickColor(c){ state.color = c; if(state.tool !== 'highlighter') state.tool = 'pen'; if(!state.open) state.open = true; applyUI(); }
+  function isPreset(c){ return COLORS.some(function(p){ return p[0].toLowerCase() === c.toLowerCase(); }); }
+
+  function applyUI(){
+    var drawing = state.open && state.tool !== 'pointer';
+    canvas.classList.toggle('on', drawing);
+    canvas.classList.toggle('t-eraser', state.tool === 'eraser');
+    canvas.classList.toggle('t-laser', state.tool === 'laser');
+    tb.classList.toggle('open', state.open);
+    toggleBtn.classList.toggle('active', state.open);
+    board.classList.toggle('on', state.boardOn);
+    Array.prototype.forEach.call(tb.querySelectorAll('[data-tool]'), function(b){ b.classList.toggle('active', b.getAttribute('data-tool') === state.tool); });
+    Array.prototype.forEach.call(tb.querySelectorAll('[data-color]'), function(b){ b.classList.toggle('active', b.getAttribute('data-color').toLowerCase() === state.color.toLowerCase()); });
+    customWrap.classList.toggle('active', !isPreset(state.color));
+    Array.prototype.forEach.call(tb.querySelectorAll('[data-size]'), function(b){ b.classList.toggle('active', +b.getAttribute('data-size') === state.size); });
+    document.getElementById('ptBoard').classList.toggle('active', state.boardOn);
+    document.getElementById('ptEye').classList.toggle('active', state.hidden);
+    if(state.tool !== 'laser') laser.style.display = 'none';
+    redraw();
+  }
+  function setTool(t){ state.tool = t; if(!state.open) state.open = true; applyUI(); }
+  function openPen(v){
+    state.open = v;
+    if(!v){ state.boardOn = false; }
+    if(v && state.tool === 'pointer') state.tool = 'pen';
+    if(v){ hint.classList.add('show'); setTimeout(function(){ hint.classList.remove('show'); }, 4500); }
+    applyUI();
+  }
+
+  toggleBtn.addEventListener('click', function(){ openPen(!state.open); });
+  Array.prototype.forEach.call(tb.querySelectorAll('[data-tool]'), function(b){ b.addEventListener('click', function(){ setTool(b.getAttribute('data-tool')); }); });
+  Array.prototype.forEach.call(tb.querySelectorAll('[data-size]'), function(b){ b.addEventListener('click', function(){ state.size = +b.getAttribute('data-size'); applyUI(); }); });
+  document.getElementById('ptUndo').addEventListener('click', undo);
+  document.getElementById('ptClear').addEventListener('click', clearInk);
+  document.getElementById('ptBoard').addEventListener('click', function(){ state.boardOn = !state.boardOn; applyUI(); });
+  document.getElementById('ptEye').addEventListener('click', function(){ state.hidden = !state.hidden; applyUI(); });
+  document.getElementById('ptClose').addEventListener('click', function(){ openPen(false); });
+
+  document.addEventListener('keydown', function(e){
+    var tag = (e.target && e.target.tagName) || '';
+    if(tag === 'INPUT' || tag === 'TEXTAREA') return;
+    var k = e.key.toLowerCase();
+    if((e.ctrlKey || e.metaKey) && k === 'z'){ if(state.open){ e.preventDefault(); undo(); } return; }
+    if(e.ctrlKey || e.metaKey || e.altKey) return;
+    if(k === 'd'){ openPen(!state.open); return; }
+    if(!state.open) return;
+    if(k === 'escape'){ openPen(false); }
+    else if(k === 'p') setTool('pen');
+    else if(k === 'h') setTool('highlighter');
+    else if(k === 'e') setTool('eraser');
+    else if(k === 'l') setTool('laser');
+    else if(k === 'v') setTool('pointer');
+    else if(k === 'b'){ state.boardOn = !state.boardOn; applyUI(); }
+    else if(k === 'c') clearInk();
+    else if(k.length === 1 && k >= '0' && k <= '9'){
+      var idx = k === '0' ? 9 : (+k - 1);
+      if(COLORS[idx]) pickColor(COLORS[idx][0]);
+    }
+    else if(k === '+' || k === '='){ state.size = Math.min(14, state.size + 2); applyUI(); }
+    else if(k === '-'){ state.size = Math.max(2, state.size - 2); applyUI(); }
+  });
+
+  new MutationObserver(function(){ redraw(); }).observe(document.getElementById('deck'), { attributes:true, subtree:true, attributeFilter:['class'] });
+  window.addEventListener('resize', resize);
+  resize(); applyUI();
+  window.__pen = { state:state, store:store, undo:undo, clearInk:clearInk, key:key };
+})();
+</script>
+</body>
+</html>

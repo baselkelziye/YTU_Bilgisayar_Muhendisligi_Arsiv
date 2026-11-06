@@ -1,0 +1,2462 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ayrık Matematik — Algoritmalar ve Karmaşıklık</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,400;0,600;0,700;1,500&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#0B1220; --text:#F1F5F9;
+    --surface: color-mix(in srgb, var(--bg) 88%, var(--text) 12%);
+    --surface-2: color-mix(in srgb, var(--bg) 80%, var(--text) 20%);
+    --border: color-mix(in srgb, var(--bg) 68%, var(--text) 32%);
+    --muted: color-mix(in srgb, var(--text) 62%, var(--bg) 38%);
+    --accent:#FBBF24; --accent-2:#60A5FA; --true:#34D399; --false:#F87171;
+    --radius: 16px; --serif: 'Fraunces', Georgia, serif; --sans: 'Inter', system-ui, sans-serif; --mono: 'IBM Plex Mono', ui-monospace, monospace;
+  }
+  
+  .queue-viz {
+                display: grid;
+                grid-template-columns: 100px 1fr 100px;
+                gap: 14px;
+                align-items: center;
+            }
+            .queue-end {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 6px;
+            }
+            .queue-end .port {
+                width: 72px;
+                height: 38px;
+                border: 1px solid var(--border);
+                border-radius: 12px;
+                background: var(--surface);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font: 600 12px var(--mono);
+            }
+            .queue-end .hint {
+                font-size: 11px;
+                color: var(--muted);
+                text-align: center;
+            }
+            .queue-track {
+                display: flex;
+                gap: 8px;
+                align-items: center;
+                padding: 18px;
+                border: 1px solid var(--border);
+                border-radius: 18px;
+                background: linear-gradient(
+                    180deg,
+                    var(--surface),
+                    color-mix(in srgb, var(--surface) 75%, var(--bg) 25%)
+                );
+                position: relative;
+                min-height: 92px;
+            }
+            .queue-track:before {
+                content: "";
+                position: absolute;
+                left: 18px;
+                right: 18px;
+                top: 50%;
+                height: 2px;
+                background: color-mix(in srgb, var(--accent-2) 45%, transparent);
+                z-index: 0;
+            }
+            .qcell {
+                position: relative;
+                z-index: 1;
+                width: 62px;
+                height: 56px;
+                border-radius: 13px;
+                border: 1px solid var(--border);
+                background: var(--bg);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font: 700 18px var(--mono);
+                box-shadow: 0 7px 16px rgba(0, 0, 0, 0.16);
+            }
+            .qcell.front {
+                border-color: var(--accent-2);
+                box-shadow:
+                    0 0 0 3px color-mix(in srgb, var(--accent-2) 15%, transparent),
+                    0 7px 16px rgba(0, 0, 0, 0.16);
+            }
+            .qcell.rear {
+                border-color: var(--accent);
+                box-shadow:
+                    0 0 0 3px color-mix(in srgb, var(--accent) 14%, transparent),
+                    0 7px 16px rgba(0, 0, 0, 0.16);
+            }
+            .qtag {
+                position: absolute;
+                top: -11px;
+                font: 600 9px var(--mono);
+                letter-spacing: 0.05em;
+                color: var(--muted);
+                background: var(--surface);
+                padding: 2px 6px;
+                border-radius: 8px;
+                border: 1px solid var(--border);
+            }
+            .queue-arrow {
+                font: 700 25px var(--mono);
+                color: var(--accent-2);
+                text-align: center;
+            }
+            .queue-step-grid {
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                gap: 12px;
+                margin-top: 8px;
+            }
+            .queue-step {
+                padding: 13px;
+                border: 1px solid var(--border);
+                border-radius: 15px;
+                background: var(--surface);
+                position: relative;
+            }
+            .queue-step .n {
+                font: 700 10px var(--mono);
+                color: var(--accent);
+                letter-spacing: 0.06em;
+            }
+            .queue-mini {
+                display: flex;
+                gap: 5px;
+                margin: 10px 0 5px;
+                min-height: 34px;
+                align-items: center;
+            }
+            .queue-mini span {
+                width: 31px;
+                height: 29px;
+                border: 1px solid var(--border);
+                border-radius: 7px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font: 600 11px var(--mono);
+                background: var(--bg);
+            }
+            .queue-step p {
+                margin: 0;
+                font-size: 12px;
+                color: var(--muted);
+                line-height: 1.45;
+            }
+            .stack-viz {
+                display: grid;
+                grid-template-columns: 1fr 150px 1fr;
+                gap: 22px;
+                align-items: center;
+            }
+            .stack-side {
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+            }
+            .stack-note {
+                padding: 12px 14px;
+                border: 1px solid var(--border);
+                border-radius: 14px;
+                background: var(--surface);
+            }
+            .stack-note b {
+                display: block;
+                font-size: 12px;
+                margin-bottom: 4px;
+            }
+            .stack-note span {
+                font-size: 11px;
+                color: var(--muted);
+                line-height: 1.45;
+            }
+            .stack-column {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 5px;
+            }
+            .stack-top {
+                font: 700 10px var(--mono);
+                color: var(--accent);
+                letter-spacing: 0.08em;
+                margin-bottom: 2px;
+            }
+            .stack-box {
+                width: 128px;
+                height: 48px;
+                border: 1px solid var(--border);
+                background: var(--bg);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font: 700 17px var(--mono);
+                position: relative;
+                box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+            }
+            .stack-box:first-of-type {
+                border-radius: 13px 13px 5px 5px;
+                border-color: var(--accent);
+            }
+            .stack-box:last-of-type {
+                border-radius: 5px 5px 13px 13px;
+            }
+            .stack-base {
+                width: 148px;
+                height: 9px;
+                border-radius: 5px;
+                background: color-mix(in srgb, var(--accent-2) 50%, var(--border) 50%);
+                margin-top: 3px;
+            }
+            .stack-arrow {
+                font: 700 26px var(--mono);
+                color: var(--accent-2);
+                text-align: center;
+            }
+			
+			.flowwide .node {
+                border: 1px solid var(--border);
+                background: var(--surface-2);
+                border-radius: 10px;
+                padding: 9px 12px;
+                font-family: var(--mono);
+                font-size: 12px;
+            }
+			
+			.flowwide {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 8px;
+                flex-wrap: wrap;
+                margin: 18px 0;
+            }
+			
+			.flowwide .arr {
+                color: var(--accent);
+                font-size: 18px;
+            }
+  
+  *{box-sizing:border-box;}
+  html,body{height:100%;}
+  body{ margin:0; background:var(--bg); color:var(--text); font-family:var(--sans); overflow:hidden; transition: background .25s ease, color .25s ease; }
+  ::selection{ background:var(--accent); color:#1a1a1a; }
+  .topbar{ position:fixed; top:0; left:0; right:0; height:56px; display:flex; align-items:center; justify-content:space-between; padding:0 20px; background: color-mix(in srgb, var(--bg) 92%, black 8%); border-bottom:1px solid var(--border); z-index:50; }
+  .topbar-left{ display:flex; align-items:center; gap:12px; font-family:var(--mono); font-size:13px; color:var(--muted); }
+  .topbar-left .mark{ font-family:var(--serif); font-style:italic; font-size:16px; color:var(--text); font-weight:600; }
+  .topbar-right{ display:flex; align-items:center; gap:10px; }
+  .icon-btn{ width:36px; height:36px; border-radius:10px; border:1px solid var(--border); background:var(--surface); color:var(--text); display:flex; align-items:center; justify-content:center; cursor:pointer; font-size:16px; transition: transform .15s ease, background .15s ease; }
+  .icon-btn:hover{ background:var(--surface-2); transform:translateY(-1px); }
+  .progress-track{ position:fixed; top:56px; left:0; right:0; height:3px; background:var(--surface); z-index:49; }
+  .progress-fill{ height:100%; background:linear-gradient(90deg, var(--accent-2), var(--accent)); width:0%; transition:width .35s ease; }
+  .settings-panel{ position:fixed; top:64px; right:20px; width:250px; background:var(--surface); border:1px solid var(--border); border-radius:14px; padding:16px; z-index:60; box-shadow:0 10px 30px rgba(0,0,0,.35); display:none; flex-direction:column; gap:14px; }
+  .settings-panel.open{ display:flex; }
+  .settings-panel h4{ margin:0; font-size:12px; letter-spacing:.03em; color:var(--muted); font-weight:600; }
+  .swatch-row{ display:flex; align-items:center; justify-content:space-between; gap:10px; }
+  .swatch-row label{ font-size:13px; color:var(--text); }
+  .swatch-row input[type="color"]{ width:40px; height:30px; border:1px solid var(--border); border-radius:8px; background:none; cursor:pointer; padding:0; }
+  .preset-row{ display:flex; gap:8px; flex-wrap:wrap; }
+  .preset-dot{ width:26px; height:26px; border-radius:50%; cursor:pointer; border:2px solid var(--border); }
+  .reset-btn{ margin-top:4px; padding:8px 10px; border-radius:8px; border:1px solid var(--border); background:transparent; color:var(--text); font-size:12px; cursor:pointer; font-family:var(--sans); }
+  .reset-btn:hover{ background:var(--surface-2); }
+  .deck{ position:relative; width:100%; height:100%; padding-top:56px; }
+  .slide{ position:absolute; inset:0; top:56px; display:none; padding: 44px clamp(22px, 6vw, 92px) 88px; overflow-y:auto; }
+  .slide.active{ display:block; animation: fade .35s ease; }
+  @keyframes fade{ from{opacity:0; transform:translateY(6px);} to{opacity:1; transform:translateY(0);} }
+  .slide-inner{ max-width:1040px; margin:0 auto; }
+  .kicker{ font-family:var(--mono); font-size:12px; color:var(--muted); letter-spacing:.04em; margin-bottom:9px; }
+  h1.slide-title{ font-family:var(--serif); font-weight:600; font-size:clamp(24px,3.2vw,38px); margin:0 0 6px; line-height:1.15; }
+  .slide-title em{ font-style:italic; color:var(--accent); }
+  .subtitle{ color:var(--muted); font-size:15px; margin:0 0 22px; max-width:80ch; }
+  p{ line-height:1.58; font-size:14.5px; }
+  .lead{ font-size:16px; line-height:1.65; }
+  .grid2{ display:grid; grid-template-columns:1.05fr .95fr; gap:24px; align-items:start; }
+  @media (max-width:820px){ .grid2{ grid-template-columns:1fr; } }
+  .grid3{ display:grid; grid-template-columns:1fr 1fr 1fr; gap:13px; }
+  @media (max-width:900px){ .grid3{ grid-template-columns:1fr; } }
+  .card{ background:var(--surface); border:1px solid var(--border); border-radius:var(--radius); padding:15px 17px; }
+  .card h3{ margin-top:0; font-family:var(--serif); font-weight:600; font-size:16px; }
+  .formula {
+                font-family: var(--mono);
+                font-size: 15px;
+                background: var(--surface-2);
+                border: 1px solid var(--border);
+                border-radius: 10px;
+                padding: 3px 9px;
+                display: inline-block;
+            }
+            .formula-big {
+                font-family: var(--mono);
+                font-size: 22px;
+                text-align: center;
+                padding: 14px;
+                background: var(--surface-2);
+                border: 1px solid var(--border);
+                border-radius: 12px;
+                margin: 14px 0;
+            }
+  ul.clean{ padding-left:19px; margin:7px 0; }
+  ul.clean li{ margin-bottom:6px; line-height:1.48; font-size:14px; }
+  table.tt{ border-collapse:collapse; width:100%; margin:11px 0; font-family:var(--mono); font-size:13px; }
+  table.tt th, table.tt td{ border:1px solid var(--border); padding:6px 8px; text-align:center; }
+  table.tt th{ background:var(--surface-2); font-weight:600; }
+  table.tt td.res{ font-weight:600; }
+  table.tt td.left{ text-align:left; }
+  .examples{ margin-top:26px; padding-top:16px; border-top:1px dashed var(--border); }
+  .examples-head{ display:flex; align-items:center; gap:10px; margin-bottom:11px; }
+  .examples-head .dot{ width:9px; height:9px; border-radius:50%; background:var(--accent); }
+  .examples-head h4{ margin:0; font-family:var(--serif); font-weight:600; font-size:16px; }
+  details.q{ background:var(--surface); border:1px solid var(--border); border-radius:12px; padding:10px 14px; margin-bottom:8px; }
+  details.q summary{ cursor:pointer; font-size:13.5px; list-style:none; display:flex; align-items:baseline; gap:10px; }
+  details.q summary::-webkit-details-marker{ display:none; }
+  details.q summary .qnum{ font-family:var(--mono); color:var(--accent-2); font-weight:600; flex:0 0 auto; }
+  details.q summary .arrow{ margin-left:auto; color:var(--muted); font-size:12px; transition:transform .2s ease; }
+  details.q[open] summary .arrow{ transform:rotate(90deg); }
+  .answer{ margin-top:8px; padding-top:8px; border-top:1px solid var(--border); font-size:13px; color:var(--muted); line-height:1.5; }
+  .answer b{ color:var(--text); }
+  table.laws{ width:100%; border-collapse:collapse; font-size:12.5px; margin-top:7px;}
+  table.laws td, table.laws th{ padding:6px 8px; border-bottom:1px solid var(--border); text-align:left; vertical-align:top; }
+  table.laws th{ color:var(--muted); font-weight:600; font-size:11px; text-transform:uppercase; letter-spacing:.03em;}
+  table.laws td.f{ font-family:var(--mono); }
+  table.laws.small td, table.laws.small th{ padding:5px 7px; font-size:11.5px; }
+  .two-col-list{ display:grid; grid-template-columns:1fr 1fr; gap:9px 20px; }
+  @media (max-width:600px){ .two-col-list{ grid-template-columns:1fr; } }
+  .step-list{ counter-reset:step; list-style:none; padding-left:0; margin:9px 0; }
+  .step-list li{ counter-increment:step; position:relative; padding-left:30px; margin-bottom:7px; font-size:13.5px; line-height:1.45; }
+  .step-list li::before{ content:counter(step); position:absolute; left:0; top:-1px; width:20px; height:20px; border-radius:50%; background:var(--surface-2); border:1px solid var(--border); display:flex; align-items:center; justify-content:center; font-family:var(--mono); font-size:11px; color:var(--accent-2); }
+  .method-tag{ display:inline-flex; align-items:center; gap:6px; font-family:var(--mono); font-size:11px; padding:3px 8px; border-radius:999px; border:1px solid var(--border); color:var(--accent-2); margin-bottom:7px; }
+  .method-tag.stack{ color:var(--accent); }
+  .trace{ font-family:var(--mono); font-size:13.5px; line-height:2; text-align:center; }
+  .trace .arrow-down{ color:var(--muted); font-size:11.5px; }
+  .trace .hl{ color:var(--accent); font-weight:700; }
+  .chip{ display:inline-flex; align-items:center; gap:5px; font-family:var(--mono); font-size:10.5px; padding:2px 8px; border-radius:999px; margin-right:5px; margin-bottom:4px; }
+  .chip.ok{ background:color-mix(in srgb, var(--true) 20%, transparent); color:var(--true); border:1px solid color-mix(in srgb, var(--true) 50%, transparent); }
+  .chip.no{ background:color-mix(in srgb, var(--false) 20%, transparent); color:var(--false); border:1px solid color-mix(in srgb, var(--false) 50%, transparent); }
+  .title-slide{ height:100%; display:flex; flex-direction:column; align-items:center; justify-content:center; text-align:center; }
+  .title-slide .huge{ font-family:var(--serif); font-size:clamp(30px,5.6vw,58px); font-weight:600; line-height:1.1; }
+  .title-slide .huge em{ font-style:italic; color:var(--accent); }
+  .title-slide .sub{ font-family:var(--mono); color:var(--muted); font-size:15px; margin-top:14px; letter-spacing:.02em; }
+  .title-slide .topics{ margin-top:36px; display:flex; gap:10px; flex-wrap:wrap; justify-content:center; max-width:720px;}
+  .title-slide .topics span{ font-family:var(--mono); font-size:12.5px; padding:6px 12px; border-radius:999px; border:1px solid var(--border); color:var(--muted); }
+  .title-slide .topics span.current{ color:var(--accent); border-color:var(--accent); }
+  .section-divider{ height:100%; display:flex; flex-direction:column; align-items:center; justify-content:center; text-align:center; }
+  .section-divider .num{ font-family:var(--mono); color:var(--accent); font-size:15px; letter-spacing:.06em; }
+  .section-divider h1{ font-family:var(--serif); font-size:clamp(28px,4.6vw,48px); font-weight:600; margin:14px 0; }
+  .section-divider p{ color:var(--muted); font-size:15px; max-width:60ch; }
+  .bottombar{ position:fixed; bottom:0; left:0; right:0; height:64px; display:flex; align-items:center; justify-content:center; gap:18px; background: color-mix(in srgb, var(--bg) 92%, black 8%); border-top:1px solid var(--border); z-index:50; }
+  .nav-btn{ display:flex; align-items:center; gap:8px; padding:9px 18px; border-radius:999px; border:1px solid var(--border); background:var(--surface); color:var(--text); cursor:pointer; font-family:var(--sans); font-size:14px; font-weight:500; }
+  .nav-btn:hover{ background:var(--surface-2); }
+  .nav-btn:disabled{ opacity:.35; cursor:not-allowed; }
+  .slide-counter{ font-family:var(--mono); font-size:13px; color:var(--muted); min-width:56px; text-align:center; }
+  .dots{ display:flex; gap:3px; max-width:340px; flex-wrap:wrap; justify-content:center; }
+  .dots .d{ width:5px; height:5px; border-radius:50%; background:var(--border); cursor:pointer; transition:.2s;}
+  .dots .d.active{ background:var(--accent); width:13px; border-radius:4px; }
+  @media (max-width:960px){ .dots{ display:none; } .settings-panel{ right:10px; left:10px; width:auto; } }
+
+
+  /* ===== Pen / annotation layer ===== */
+  #penCanvas{ position:fixed; left:0; top:56px; width:100%; height:calc(100% - 120px); z-index:40; pointer-events:none; touch-action:none; }
+  #penCanvas.on{ pointer-events:auto; cursor:crosshair; }
+  #penCanvas.t-eraser{ cursor:cell; }
+  #penCanvas.t-laser{ cursor:none; }
+  #boardLayer{ position:fixed; left:0; top:56px; width:100%; height:calc(100% - 120px); background:var(--bg); z-index:39; display:none; }
+  #boardLayer.on{ display:block; }
+  #boardLayer::after{ content:"Boş tahta — özgürce yazın (slaytlara dönmek için B)"; position:absolute; left:50%; top:10px; transform:translateX(-50%); font-family:var(--mono); font-size:12px; color:var(--muted); opacity:.7; }
+  #penToolbar{ position:fixed; left:10px; top:50%; transform:translateY(-50%); z-index:45; display:none; flex-direction:column; gap:7px; padding:9px; width:100px; background:var(--surface); border:1px solid var(--border); border-radius:14px; box-shadow:0 10px 30px rgba(0,0,0,.35); max-height:calc(100% - 130px); overflow-y:auto; }
+  #penToolbar.open{ display:flex; }
+  .pt-grid{ display:grid; grid-template-columns:repeat(2, 36px); gap:6px; justify-content:center; }
+  .pt-btn{ width:36px; height:36px; border-radius:10px; border:1px solid var(--border); background:var(--surface-2); color:var(--text); cursor:pointer; font-size:16px; display:flex; align-items:center; justify-content:center; padding:0; transition:background .15s ease; }
+  .pt-btn:hover{ background:color-mix(in srgb, var(--surface-2) 70%, var(--accent-2) 30%); }
+  .pt-btn.active{ outline:2px solid var(--accent); background:color-mix(in srgb, var(--accent) 22%, var(--surface-2)); }
+  .pt-colors{ display:grid; grid-template-columns:repeat(2, 36px); gap:7px 6px; justify-content:center; justify-items:center; }
+  .pt-color{ width:26px; height:26px; border-radius:50%; border:2px solid var(--border); cursor:pointer; padding:0; transition:transform .12s ease; }
+  .pt-color:hover{ transform:scale(1.12); }
+  .pt-color.active{ border-color:var(--accent); box-shadow:0 0 0 2px var(--accent); transform:scale(1.1); }
+  .pt-custom{ position:relative; width:26px; height:26px; border-radius:50%; border:2px solid var(--border); cursor:pointer; overflow:hidden; background:conic-gradient(#ef4444,#f59e0b,#a3e635,#22d3ee,#3b82f6,#a855f7,#ef4444); }
+  .pt-custom.active{ border-color:var(--accent); box-shadow:0 0 0 2px var(--accent); }
+  .pt-custom input{ position:absolute; inset:-6px; width:44px; height:44px; opacity:0; cursor:pointer; border:0; padding:0; }
+  .pt-sep{ height:1px; background:var(--border); margin:1px 0; flex:0 0 auto; }
+  .pt-dot{ display:block; border-radius:50%; background:var(--text); }
+  .pt-label{ font-family:var(--mono); font-size:9px; letter-spacing:.06em; color:var(--muted); text-align:center; text-transform:uppercase; }
+  #laserDot{ position:fixed; width:16px; height:16px; border-radius:50%; background:rgba(239,68,68,.9); box-shadow:0 0 14px 6px rgba(239,68,68,.5); pointer-events:none; z-index:46; display:none; transform:translate(-50%,-50%); }
+  .icon-btn.active{ outline:2px solid var(--accent); background:color-mix(in srgb, var(--accent) 22%, var(--surface)); }
+  #penHint{ position:fixed; left:122px; top:50%; transform:translateY(-50%); z-index:45; font-family:var(--mono); font-size:11px; color:var(--muted); background:var(--surface); border:1px solid var(--border); border-radius:8px; padding:6px 9px; display:none; max-width:200px; line-height:1.5; }
+  #penHint.show{ display:block; }
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="topbar-left"><span class="mark">Ayrık Matematik</span><span>/ Bölüm 4 — Algoritmalar ve Karmaşıklık</span></div>
+  <div class="topbar-right"><span class="slide-counter" id="counterTop">01 / 62</span><button class="icon-btn" id="penToggle" title="Kalem / slayt üzerine yaz (D)">✏️</button>
+    <button class="icon-btn" id="settingsBtn" title="Görünümü değiştir">🎨</button></div>
+</div>
+<div class="progress-track"><div class="progress-fill" id="progressFill"></div></div>
+<div class="settings-panel" id="settingsPanel">
+  <h4>Görünüm</h4>
+  <div class="swatch-row"><label for="bgPicker">Arka plan rengi</label><input type="color" id="bgPicker" value="#0B1220"></div>
+  <div class="swatch-row"><label for="textPicker">Yazı rengi</label><input type="color" id="textPicker" value="#F1F5F9"></div>
+  <h4>Hazır temalar</h4><div class="preset-row" id="presetRow"></div>
+  <button class="reset-btn" id="resetBtn">Varsayılana dön</button>
+</div>
+
+<div class="deck" id="deck">
+
+<!-- 0 TITLE -->
+<section class="slide active" data-index="0">
+  <div class="title-slide">
+    <div class="sub">DERS 4 · T(n) · O(g(n)) · aₙ=c₁aₙ₋₁+c₂aₙ₋₂ · T(n)=aT(n/b)+f(n)</div>
+    <div class="huge">Algoritmalar<br>ve <em>Karmaşıklık</em></div>
+    <div class="sub">Rosen &amp; Johnsonbaugh — Algorithms, Complexity, Recurrence Relations &amp; Master Theorem</div>
+    <div class="topics">
+      <span>1 · Logic</span><span>2 · Proof</span><span>3 · Logic Circuits</span>
+      <span class="current">4 · Algorithms</span><span>5 · Graphs</span><span>6 · Trees</span><span>7 · Finite State Machines</span>
+    </div>
+  </div>
+</section>
+
+<!-- 1 -->
+<section class="slide" data-index="1"><div class="slide-inner">
+  <div class="kicker">4.1</div>
+  <h1 class="slide-title">Algoritma <em>Nedir?</em></h1>
+  <p class="subtitle">Adını Fars matematikçi El-Harezmi'den (Al-Khowarizmi, MS 780–850) alan bu kavram, bilgisayar biliminin temel taşıdır.</p>
+  <div class="grid2">
+    <div>
+      <p class="lead"><b>Tanım:</b> Algoritma, hesaplama yapmak veya bir problemi çözmek için sonlu (finite) ve kesin (precise) komutlar/buyruklar kümesidir.</p>
+      <p>Algoritma adımları; </br> doğal dil, </br><b>sözde kod (pseudocode)</b>, </br>akış şeması veya </br>bir programlama diliyle ifade edilebilir.  </br>Sözde kod, doğal dil açıklaması ile gerçek kodlama arasında bir ara basamaktır ve algoritmanın süresini, kullanılan dilden bağımsız olarak analiz etmemizi sağlar.</p>
+    </div>
+    <div class="card"><h3>Algoritmanın altı temel özelliği</h3>
+      <table class="laws small">
+        <tr><td><b>Giriş</b> (Input)</td><td>Belirli bir kümeden giriş değerleri alır</td></tr>
+        <tr><td><b>Çıkış</b> (Output)</td><td>Belirli bir kümeden çıktı (çözüm) üretir</td></tr>
+        <tr><td><b>Doğruluk</b> (Correctness)</td><td>Her girdi için doğru çıktı üretmelidir</td></tr>
+        <tr><td><b>Sonluluk</b> (Finiteness)</td><td>Sınırlı sayıda adımdan sonra durmalıdır</td></tr>
+        <tr><td><b>Etkililik</b> (Effectiveness)</td><td>Her adım kesin ve sınırlı sürede uygulanabilmeli</td></tr>
+        <tr><td><b>Genellik</b> (Generality)</td><td>İstenen formdaki tüm problemler için çalışmalıdır</td></tr>
+      </table>
+    </div>
+  </div>
+  <div class="examples"><div class="examples-head"><span class="dot"></span><h4>Örnek Sorular</h4></div>
+    <details class="q"><summary><span class="qnum">S1.</span> Sonsuz döngüye giren bir program, algoritmanın hangi özelliğini ihlal eder?<span class="arrow">▶</span></summary>
+      <div class="answer"><b>Sonluluk (Finiteness)</b> — bir algoritma, herhangi bir girdi için mutlaka sınırlı sayıda adımdan sonra sonlanmalıdır; sonsuz döngü bu şartı ihlal eder.</div></details>
+    <details class="q"><summary><span class="qnum">S2.</span> "Sadece pozitif tamsayılar için çalışan bir sıralama algoritması" hangi özellik açısından sınırlıdır?<span class="arrow">▶</span></summary>
+      <div class="answer"><b>Genellik (Generality)</b> — algoritma, istenen türdeki (örneğin tüm tamsayılar) her girdi için değil, sadece dar bir alt küme için çalışıyorsa genellik özelliği zayıflar.</div></details>
+  </div>
+</div></section>
+
+<!-- 2 -->
+<section class="slide" data-index="2"><div class="slide-inner">
+  <div class="kicker">4.2</div>
+  <h1 class="slide-title">Örnek: Maksimum Değeri Bulma Algoritması</h1>
+  <p class="subtitle">Sonlu bir tamsayı dizisindeki en büyük değeri bulan klasik algoritma.</p>
+  <div class="grid2">
+    <div class="card"><h3>Çözüm adımları</h3>
+      <ol class="step-list">
+        <li>Dizinin ilk elemanı geçici maksimum değer olarak seçilir.</li>
+        <li>Bir sonraki eleman geçici maksimumla karşılaştırılır; büyükse geçici maksimuma atanır.</li>
+        <li>Dizinin son elemanına kadar önceki adım tekrarlanır.</li>
+        <li>Algoritma sonlandığında dizideki en büyük sayı bulunmuş olur.</li>
+      </ol>
+    </div>
+    <div class="card"><h3>Sözde kod</h3>
+      <div class="formula-big" style="text-align:left; font-size:13px; line-height:1.65;">
+procedure max(a₁, a₂, …, aₙ: integers)<br>&nbsp;&nbsp;max := a₁<br>&nbsp;&nbsp;for i := 2 to n<br>&nbsp;&nbsp;&nbsp;&nbsp;if max &lt; aᵢ then max := aᵢ<br>&nbsp;&nbsp;return max &nbsp;{max, dizideki en büyük elemandır}</div>
+    </div>
+  </div>
+  <div class="examples"><div class="examples-head"><span class="dot"></span><h4>Örnek Sorular</h4></div>
+    <details class="q"><summary><span class="qnum">S1.</span> Dizi [3, 7, 2, 9, 5] için algoritmayı adım adım izleyip max değerinin nasıl 9 olarak bulunduğunu gösterin.<span class="arrow">▶</span></summary>
+      <div class="answer">max=3 (başlangıç) → 7&gt;3, max=7 → 2&gt;7 değil → 9&gt;7, max=9 → 5&gt;9 değil. Sonuç: <b>max=9</b>.</div></details>
+    <details class="q"><summary><span class="qnum">S2.</span> Bu algoritmanın "temel işlemi" (basic operation) nedir ve n elemanlı bir dizi için kaç kez çalışır?<span class="arrow">▶</span></summary>
+      <div class="answer">Temel işlem, <b>karşılaştırmadır</b> ("max &lt; aᵢ"). Döngü i=2'den n'e kadar çalıştığından, karşılaştırma tam olarak <b>n−1</b> kez yapılır.</div></details>
+  </div>
+</div></section>
+
+<!-- 3 -->
+<section class="slide" data-index="3"><div class="slide-inner">
+  <div class="kicker">4.3</div>
+  <h1 class="slide-title">Doğrusal Arama ve Euclid Algoritması</h1>
+  <p class="subtitle">İki klasik algoritma: eleman arama ve en büyük ortak bölen (GCD) hesaplama.</p>
+  <div class="grid2">
+    <div class="card"><h3>Doğrusal Arama (Linear Search)</h3>
+      <p style="margin:0 0 8px;">Aranan x sayısını dizinin elemanlarını baştan başlayarak birer birer inceler.</p>
+      <div class="formula-big" style="text-align:left; font-size:12.5px; line-height:1.65;">i := 1<br>while (i ≤ n and x ≠ aᵢ)<br>&nbsp;&nbsp;i := i + 1<br>if i ≤ n then location := i<br>else location := 0</div>
+    </div>
+    <div class="card"><h3>Euclid Algoritması — gcd(m,n)</h3>
+      <p style="margin:0 0 8px;">Temel özdeşlik: <span class="formula">gcd(m,n) = gcd(n, m mod n)</span>, n=0 olana kadar tekrarlanır.</p>
+      <div class="formula-big" style="font-size:13.5px;">gcd(60,24) = gcd(24,12) = gcd(12,0) = 12</div>
+      <div class="formula-big" style="text-align:left; font-size:12.5px; line-height:1.65;">while n ≠ 0 do<br>&nbsp;&nbsp;r ← m mod n<br>&nbsp;&nbsp;m ← n<br>&nbsp;&nbsp;n ← r<br>return m</div>
+    </div>
+  </div>
+  <div class="examples"><div class="examples-head"><span class="dot"></span><h4>Örnek Sorular</h4></div>
+    <details class="q"><summary><span class="qnum">S1.</span> gcd(105, 45) değerini Euclid algoritmasıyla adım adım hesaplayın.<span class="arrow">▶</span></summary>
+      <div class="answer">gcd(105,45)=gcd(45, 105 mod 45)=gcd(45,15)=gcd(15, 45 mod 15)=gcd(15,0)=<b>15</b>.</div></details>
+    <details class="q"><summary><span class="qnum">S2.</span> Doğrusal aramada en kötü durum (worst case) kaç karşılaştırma gerektirir ve ne zaman oluşur?<span class="arrow">▶</span></summary>
+      <div class="answer">En kötü durumda x, dizide yoktur (ya da son elemandır) ve <b>n</b> karşılaştırma yapılır — tüm dizi taranır.</div></details>
+  </div>
+</div></section>
+
+<!-- 4 NEW: Binary Search -->
+<section class="slide" data-index="4"><div class="slide-inner">
+  <div class="kicker">4.4</div>
+  <h1 class="slide-title">İkili Arama <em>(Binary Search)</em></h1>
+  <p class="subtitle">Sıralı bir dizide, her adımda arama alanını yarıya indiren çok daha hızlı bir arama yöntemi.</p>
+  <div class="grid2">
+    <div class="card"><h3>İteratif Sözde Kod</h3>
+      <div class="formula-big" style="text-align:left; font-size:12px; line-height:1.6;">
+procedure binarySearch(a₁,…,aₙ: artan sıralı, x)<br>
+&nbsp;&nbsp;i:=1, j:=n<br>
+&nbsp;&nbsp;while i&lt;j<br>
+&nbsp;&nbsp;&nbsp;&nbsp;m := ⌊(i+j)/2⌋<br>
+&nbsp;&nbsp;&nbsp;&nbsp;if x&gt;aₘ then i:=m+1 else j:=m<br>
+&nbsp;&nbsp;if x=aᵢ then location:=i else location:=0</div>
+    </div>
+    <div class="card"><h3>Özyinelemeli (Recursive) Sözde Kod</h3>
+      <div class="formula-big" style="text-align:left; font-size:12px; line-height:1.6;">
+binarySearch(a, x, low, high):<br>
+&nbsp;&nbsp;if low&gt;high return −1<br>
+&nbsp;&nbsp;mid := ⌊(low+high)/2⌋<br>
+&nbsp;&nbsp;if a[mid]=x return mid<br>
+&nbsp;&nbsp;else if x&lt;a[mid]<br>
+&nbsp;&nbsp;&nbsp;&nbsp;return binarySearch(a,x,low,mid−1)<br>
+&nbsp;&nbsp;else return binarySearch(a,x,mid+1,high)</div>
+    </div>
+  </div>
+  <div class="card" style="margin-top:12px;"><h3>Örnek: [2,5,8,12,16,23,38,56,72,91] içinde 23 aranıyor</h3>
+    <p style="margin:0;">low=0,high=9,mid=4 (16): 23&gt;16 → low=5. low=5,high=9,mid=7 (56): 23&lt;56 → high=6. low=5,high=6,mid=5 (23): <b>Bulundu!</b> — sadece 3 karşılaştırmada, 10 elemanlı dizide sonuca ulaşıldı.</p>
+  </div>
+  <div class="examples"><div class="examples-head"><span class="dot"></span><h4>Örnek Sorular</h4></div>
+    <details class="q"><summary><span class="qnum">S1.</span> İkili arama neden dizinin <b>sıralı</b> olmasını gerektirir?<span class="arrow">▶</span></summary>
+      <div class="answer">Çünkü algoritma, aranan değeri ortadaki elemanla karşılaştırıp "sol yarıda mı sağ yarıda mı" kararını verir — bu karar, dizi sıralı değilse anlamsız hale gelir ve doğru sonuç garanti edilemez.</div></details>
+    <details class="q"><summary><span class="qnum">S2.</span> 16 elemanlı sıralı bir dizide ikili arama en fazla kaç karşılaştırma gerektirir?<span class="arrow">▶</span></summary>
+      <div class="answer">log₂16=4, yani en fazla <b>4-5 karşılaştırma</b> yeterlidir — her adımda arama alanı yarıya indiği için (bu ilişkiyi Slayt 4.31 ve 4.39'da rekürans bağıntısıyla formalize edeceğiz).</div></details>
+  </div>
+</div></section>
+
+<!-- 5 -->
+<section class="slide" data-index="5"><div class="slide-inner">
+  <div class="kicker">4.5</div>
+  <h1 class="slide-title">Temel Veri Yapıları ve Yığın <em>(Stack)</em></h1>
+  <p class="subtitle">İlerleyen slaytlarda kullanacağımız temel veri yapısı: Stack (LIFO).</p>
+  <div class="grid2">
+    <div class="card"><h3>Temel veri yapıları</h3>
+      <ul class="clean" style="margin-bottom:0;"><li>Listeler: Dizi (Array), Bağlantılı liste (Linked List), String</li><li>Yığın (Stack) · Kuyruk (Queue) · Öncelik kuyruğu (Priority Queue)</li><li>Çizge (Graf) · Ağaçlar (Trees) · Kümeler (Sets)</li></ul>
+    </div>
+    <div class="card"><h3>Yığın (Stack)</h3>
+      <p style="margin:0 0 8px;"><b>LIFO</b> (Last In, First Out) prensibine göre çalışır — son eklenen ilk çıkar.</p>
+      <ul class="clean" style="margin-bottom:0;"><li>İki temel işlem: <b>push</b> (ekle), <b>pop</b> (çıkar)</li><li>Arama algoritmalarında, matematiksel ifadelerin dönüşümünde kullanılır</li><li>Bu bölümde odaklanacağımız iki uygulama: (1) matematiksel ifadelerin notasyonlar arası dönüşümü, (2) ifadelerin işlem önceliğine göre değerlendirilmesi</li></ul>
+    </div>
+  </div>
+  <div class="examples"><div class="examples-head"><span class="dot"></span><h4>Örnek Sorular</h4></div>
+    <details class="q"><summary><span class="qnum">S1.</span> Sırasıyla push(5), push(8), pop(), push(3), pop() işlemleri yapılıyor. Son pop() hangi değeri döndürür?<span class="arrow">▶</span></summary>
+      <div class="answer">push(5)→[5], push(8)→[5,8], pop()→8 döner, yığın [5], push(3)→[5,3], pop()→<b>3</b> döner.</div></details>
+    <details class="q"><summary><span class="qnum">S2.</span> Stack (LIFO) ile Queue (FIFO) arasındaki temel fark nedir?<span class="arrow">▶</span></summary>
+      <div class="answer">Stack'te en son eklenen eleman ilk çıkar (LIFO); Queue'da ise en önce eklenen eleman ilk çıkar (FIFO) — bir market kuyruğu gibi düşünülebilir.</div></details>
+  </div>
+</div></section>
+
+<!-- 6 -->
+<section class="slide" data-index="6"><div class="slide-inner">
+  <div class="kicker">4.6</div>
+  <h1 class="slide-title">Infix, Prefix, Postfix Notasyonları</h1>
+  <p class="subtitle">Aynı matematiksel ifadeyi yazmanın üç farklı sırası — operatörün operandlara göre konumu değişir.</p>
+  <div class="grid3">
+    <div class="card"><h3>Infix</h3><p style="margin:0 0 6px; font-size:13px;">Operatör, iki operandın <b>ortasında</b>.</p><div class="formula-big" style="font-size:15px;">A + B</div></div>
+    <div class="card"><h3>Prefix <span style="font-weight:400; font-size:10.5px; color:var(--muted);">(Polish Notation)</span></h3><p style="margin:0 0 6px; font-size:13px;">Operatör, iki operandın <b>önünde</b>.</p><div class="formula-big" style="font-size:15px;">+ A B</div></div>
+    <div class="card"><h3>Postfix <span style="font-weight:400; font-size:10.5px; color:var(--muted);">(Reverse Polish)</span></h3><p style="margin:0 0 6px; font-size:13px;">Operatör, iki operandın <b>sonunda</b>.</p><div class="formula-big" style="font-size:15px;">A B +</div></div>
+  </div>
+  <div class="card" style="margin-top:13px;"><h3>Neden postfix/prefix'e ihtiyaç duyarız?</h3>
+    <p style="margin:0 0 10px;">Infix ifadelerde operatör önceliğinin (işlem sırası) çözümlenmesi bilgisayar için zordur — parantez ve öncelik kurallarını sürekli takip etmek gerekir. Postfix/prefix notasyonlarda ise <b>parantezlere hiç gerek yoktur</b> ve ifade, sırasıyla okunduğunda tek bir doğru sonuca ulaşılır. Bu yüzden derleyiciler, infix ifadeleri önce postfix/prefix'e çevirip öyle hesaplar.</p>
+    <p style="margin:0;"><b>Hatırlatma — operatör önceliği:</b> 1) ^ (üs alma), 2) ×, ÷, 3) +, − (parantez her zaman önceliklidir).</p>
+  </div>
+  <div class="examples"><div class="examples-head"><span class="dot"></span><h4>Örnek Sorular</h4></div>
+    <details class="q"><summary><span class="qnum">S1.</span> "A − B" ifadesinin prefix ve postfix karşılıklarını yazın.<span class="arrow">▶</span></summary><div class="answer">Prefix: <b>− A B</b>. Postfix: <b>A B −</b>.</div></details>
+    <details class="q"><summary><span class="qnum">S2.</span> Postfix ve prefix'te parantezlere neden ihtiyaç duyulmaz?<span class="arrow">▶</span></summary><div class="answer">Çünkü operatörün hangi operandlara ait olduğu, ifadedeki <b>konumundan</b> zaten netleşir — belirsizlik oluşmaz.</div></details>
+  </div>
+</div></section>
+
+<section class="slide" data-index="7">
+                <div class="slide-inner">
+                    <div class="kicker">03.1 · LİSTELER</div>
+                    <h1 class="slide-title">Array ve Linked List</h1>
+                    <p class="subtitle">Temel karşılaştırma</p>
+                    <div class="compare">
+                        <div class="card">
+                            <h3>Array</h3>
+                            <p style="margin-bottom: 0">
+                                Diziler belleğe ardışıl olarak yerleştirilir; rastgele veya sıralı erişime uygundur.
+                            </p>
+                        </div>
+                        <div class="card">
+                            <h3>Linked List</h3>
+                            <p style="margin-bottom: 0">
+                                Bağlı listeler belleğin ardışıl olmayan hücrelerinde tutulabilir; sıralı erişim
+                                yaklaşımı baskındır.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="slide" data-index="8">
+                <div class="slide-inner">
+                    <div class="kicker">03.2 · QUEUE</div>
+                    <h1 class="slide-title">Queue — Kuyruk</h1>
+                    <p class="subtitle">FIFO / LILO prensibi</p>
+                    <div class="viz-shell">
+                        <div class="viz-label">Kuyruğun mantığı</div>
+                        <div class="queue-viz">
+                            <div class="queue-end">
+                                <div class="port">ENQUEUE</div>
+                                <div class="hint">Yeni öğe buradan girer</div>
+                            </div>
+                            <div class="queue-track">
+                                <div class="qcell rear"><span class="qtag">REAR</span>A</div>
+                                <div class="qcell">B</div>
+                                <div class="qcell">C</div>
+                                <div class="qcell front"><span class="qtag">FRONT</span>D</div>
+                            </div>
+                            <div class="queue-end">
+                                <div class="port">DEQUEUE</div>
+                                <div class="hint">İlk giren önce çıkar</div>
+                            </div>
+                        </div>
+                        <div class="formula-big">FIFO = First In → First Out   |   LILO = Last In → Last Out</div>
+                        <div class="card">
+                            <h3>Temel işlemler</h3>
+                            <p style="margin-bottom: 0">
+                                Enqueue = kuyruğun sonuna ekleme; Dequeue = kuyruğun başından çıkarma. Queue dizi veya
+                                bağlı liste ile oluşturulabilir.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="slide" data-index="9">
+                <div class="slide-inner">
+                    <div class="kicker">03.3 · QUEUE</div>
+                    <h1 class="slide-title">FIFO’yu adım adım görelim</h1>
+                    <p class="subtitle">Enqueue A, B, C; ardından dequeue</p>
+                    <div class="viz-shell">
+                        <div class="queue-step-grid">
+                            <div class="queue-step">
+                                <div class="n">ADIM 01</div>
+                                <div class="queue-mini"></div>
+                                <p>Başlangıç: boş queue</p>
+                            </div>
+                            <div class="queue-step">
+                                <div class="n">ADIM 02</div>
+                                <div class="queue-mini"><span>A</span></div>
+                                <p>enqueue(A)</p>
+                            </div>
+                            <div class="queue-step">
+                                <div class="n">ADIM 03</div>
+                                <div class="queue-mini"><span>A</span><span>B</span></div>
+                                <p>enqueue(B)</p>
+                            </div>
+                            <div class="queue-step">
+                                <div class="n">ADIM 04</div>
+                                <div class="queue-mini"><span>A</span><span>B</span><span>C</span></div>
+                                <p>enqueue(C)</p>
+                            </div>
+                            <div class="queue-step">
+                                <div class="n">ADIM 05</div>
+                                <div class="queue-mini"><span>B</span><span>C</span></div>
+                                <p>dequeue() → A çıkar</p>
+                            </div>
+                            <div class="queue-step">
+                                <div class="n">ADIM 06</div>
+                                <div class="queue-mini"><span>C</span></div>
+                                <p>dequeue() → B çıkar</p>
+                            </div>
+                        </div>
+                        <div class="formula-big">A → B → C    ⇒    önce A, sonra B, sonra C</div>
+                    </div>
+                </div>
+            </section>
+            <section class="slide" data-index="10">
+                <div class="slide-inner">
+                    <div class="kicker">03.4 · QUEUE</div>
+                    <h1 class="slide-title">Queue uygulamaları</h1>
+                    <p class="subtitle">Temel kullanım alanları</p>
+                    <div class="topic-grid">
+                        <div class="card">
+                            <h3>Process sıralama</h3>
+                            <p>İşlerin geliş sırasına göre işlenmesi.</p>
+                        </div>
+                        <div class="card">
+                            <h3>Arama algoritmaları</h3>
+                            <p>Bekleyen düğümlerin sıraya alınması gibi kullanımlar.</p>
+                        </div>
+                        <div class="card">
+                            <h3>Tamponlama</h3>
+                            <p>Üretici ile tüketici arasındaki bekleyen öğeler.</p>
+                        </div>
+                        <div class="card">
+                            <h3>Adalet / sıra</h3>
+                            <p>Önce gelenin önce hizmet alması gereken senaryolar.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="slide" data-index="11">
+                <div class="slide-inner">
+                    <div class="kicker">03.5 · QUEUE</div>
+                    <h1 class="slide-title">Circular queue fikri</h1>
+                    <p class="subtitle">Dizi tabanlı kuyrukta alanı verimli kullanma</p>
+                    <div class="flowwide">
+                        <div class="node">0</div>
+                        <div class="node">1</div>
+                        <div class="node">2</div>
+                        <div class="node">3</div>
+                        <div class="node">4</div>
+                        <div class="arr">↻</div>
+                    </div>
+                    <div class="card">
+                        <h3>Temel düşünce</h3>
+                        <p style="margin-bottom: 0">
+                            rear dizinin sonuna geldiğinde, uygun koşullarda başa sarılabilir. Böylece boşalan hücreler
+                            yeniden kullanılabilir.
+                        </p>
+                    </div>
+                </div>
+            </section>
+			
+			<section class="slide" data-index="12">
+                <div class="slide-inner">
+                    <div class="kicker">03.6 · STACK</div>
+                    <h1 class="slide-title">Stack — Yığın</h1>
+                    <p class="subtitle">LIFO / FILO prensibi</p>
+                    <div class="viz-shell">
+                        <div class="stack-viz">
+                            <div class="stack-side">
+                                <div class="stack-note">
+                                    <b>Push</b><span>Yeni öğe her zaman en üste eklenir.</span>
+                                </div>
+                                <div class="stack-arrow">→</div>
+                                <div class="stack-note">
+                                    <b>Pop</b><span>Yalnızca top konumundaki öğe çıkarılır.</span>
+                                </div>
+                            </div>
+                            <div class="stack-column">
+                                <div class="stack-top">TOP ↓</div>
+                                <div class="stack-box">C</div>
+                                <div class="stack-box">B</div>
+                                <div class="stack-box">A</div>
+                                <div class="stack-base"></div>
+                            </div>
+                            <div class="stack-side">
+                                <div class="stack-note"><b>LIFO</b><span>Last In → First Out</span></div>
+                                <div class="stack-note"><b>FILO</b><span>First In → Last Out</span></div>
+                            </div>
+                        </div>
+                        <div class="formula-big">push(A) → push(B) → push(C) → pop() = C</div>
+                        <div class="card">
+                            <h3>Temel fikir</h3>
+                            <p style="margin-bottom: 0">
+                                Stack dizi veya bağlı liste ile kurulabilir; erişim noktası <b>top</b> olarak düşünülür.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="slide" data-index="13">
+                <div class="slide-inner">
+                    <div class="kicker">03.7 · STACK</div>
+                    <h1 class="slide-title">Stack’i adım adım görelim</h1>
+                    <p class="subtitle">Push / pop işlemlerinin durumu</p>
+                    <div class="viz-shell">
+                        <div class="stack-viz">
+                            <div class="stack-column">
+                                <div class="stack-top">TOP</div>
+                                <div class="stack-box">C</div>
+                                <div class="stack-box">B</div>
+                                <div class="stack-box">A</div>
+                                <div class="stack-base"></div>
+                            </div>
+                            <div class="stack-arrow">↑<br /><span style="font-size: 11px">POP</span></div>
+                            <div class="stack-column">
+                                <div class="stack-top">POP SONRASI</div>
+                                <div class="stack-box">B</div>
+                                <div class="stack-box">A</div>
+                                <div class="stack-base"></div>
+                            </div>
+                        </div>
+                        <div class="formula-big">Top = C   →   pop() = C   →   yeni top = B</div>
+                        <p class="lead center-title">Stack'in temel kuralı: <b>en üstteki öğe önce çıkar.</b></p>
+                    </div>
+                </div>
+            </section>
+            <section class="slide" data-index="14">
+                <div class="slide-inner">
+                    <div class="kicker">03.8 · STACK</div>
+                    <h1 class="slide-title">Stack kullanım alanları</h1>
+                    <p class="subtitle">İki temel uygulama ve çağrı yığını bağlantısı</p>
+                    <div class="viz-shell">
+                        <div class="compare">
+                            <div class="card">
+                                <h3>① İfadeler</h3>
+                                <p>
+                                    Infix → postfix / prefix dönüşümleri, operatör önceliği ve ifade değerlendirme
+                                    işlemleri.
+                                </p>
+                                <div class="expr-strip">
+                                    <span class="token">A</span><span class="token op">+</span
+                                    ><span class="token">B</span>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <h3>② Çağrı yığını</h3>
+                                <p>
+                                    Recursive çağrılarda her fonksiyon çağrısının kendi durumu stack üzerinde tutulur.
+                                </p>
+                                <div class="stack-column">
+                                    <div class="stack-box">f(3)</div>
+                                    <div class="stack-box">f(2)</div>
+                                    <div class="stack-box">f(1)</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <h3>③ Sistematik kullanım</h3>
+                            <p style="margin-bottom: 0">
+                                Stack; matematiksel ifadelerin dönüşümü/değerlendirilmesi ve işlemci-sistem
+                                mekanizmalarıyla ilişkilendirilir.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+<!-- 12 -->
+<section class="slide" data-index="15"><div class="slide-inner">
+  <div class="kicker">4.7</div>
+  <h1 class="slide-title">Postfix İfadenin <em>Manuel</em> Değerlendirilmesi</h1>
+  <p class="subtitle">Stack kullanmadan, kalem-kağıt üzerinde postfix ifadeyi hesaplama yöntemi.</p>
+  <div class="grid2">
+    <div class="card"><span class="method-tag">MANUEL YÖNTEM</span><h3>"İç-içe üçlüyü bul, sadeleştir" tekniği</h3>
+      <ol class="step-list"><li>İfadeyi soldan sağa tarayın; <b>"a b op"</b> biçiminde bir grup arayın.</li><li>Bulduğunuz ilk grubu hesaplayın: a op b.</li><li>Bu üç öğeyi hesapladığınız <b>tek sayı</b> ile değiştirin.</li><li>İfade tek bir sayıya inene kadar 1-3 arasını tekrarlayın.</li></ol>
+    </div>
+    <div class="card"><h3>Örnek: 6 3 + 5 2 − *</h3>
+      <div class="trace">6&nbsp;3&nbsp;<span class="hl">+</span>&nbsp;5&nbsp;2&nbsp;−&nbsp;*<br><span class="arrow-down">↓ "6 3 +" grubu → 9</span><br><span class="hl">9</span>&nbsp;5&nbsp;2&nbsp;<span class="hl">−</span>&nbsp;*<br><span class="arrow-down">↓ "5 2 −" grubu → 3</span><br>9&nbsp;<span class="hl">3</span>&nbsp;*<br><span class="arrow-down">↓ "9 3 *" grubu → 27</span><br><b style="color:var(--accent); font-size:17px;">27</b></div>
+      <p style="margin:8px 0 0; font-size:12.5px; color:var(--muted);">Bu ifade, (6+3)×(5−2)=9×3=<b>27</b> infix ifadesine karşılık gelir.</p>
+    </div>
+  </div>
+  <div class="examples"><div class="examples-head"><span class="dot"></span><h4>Örnek Sorular</h4></div>
+    <details class="q"><summary><span class="qnum">S1.</span> Postfix ifade "4 2 3 * +" öğesini manuel yöntemle adım adım hesaplayın.<span class="arrow">▶</span></summary><div class="answer">"2 3 *" grubu bulunur → 6. İfade: "4 6 +" → <b>10</b>.</div></details>
+    <details class="q"><summary><span class="qnum">S2.</span> Manuel yöntemde her zaman ifadenin <i>solundaki</i> ilk "a b op" grubunu mu seçmeliyiz?<span class="arrow">▶</span></summary><div class="answer">Evet — geçerli bir postfix ifadede soldan sağa tarayarak bulduğunuz <i>ilk</i> tam grup her zaman doğru sıradaki işlemdir.</div></details>
+  </div>
+</div></section>
+
+<!-- 8 -->
+<section class="slide" data-index="16"><div class="slide-inner">
+  <div class="kicker">4.8</div>
+  <h1 class="slide-title">Postfix Manuel — Daha Karmaşık Bir Örnek</h1>
+  <p class="subtitle">İç içe geçmiş operatörler içeren bir postfix ifadeyi manuel çözelim.</p>
+  <div class="card"><h3>Postfix ifade: 2 5 3 6 + * * 15 2 − /</h3>
+    <div class="trace" style="text-align:left; max-width:520px; margin:0 auto;">
+      2&nbsp;5&nbsp;3&nbsp;6&nbsp;<span class="hl">+</span>&nbsp;*&nbsp;*&nbsp;15&nbsp;2&nbsp;−&nbsp;/<br><span class="arrow-down">↓ "3 6 +" → 9</span><br>
+      2&nbsp;5&nbsp;<span class="hl">9</span>&nbsp;*&nbsp;*&nbsp;15&nbsp;2&nbsp;−&nbsp;/<br><span class="arrow-down">↓ "5 9 *" → 45</span><br>
+      2&nbsp;<span class="hl">45</span>&nbsp;*&nbsp;15&nbsp;2&nbsp;−&nbsp;/<br><span class="arrow-down">↓ "2 45 *" → 90</span><br>
+      <span class="hl">90</span>&nbsp;15&nbsp;2&nbsp;−&nbsp;/<br><span class="arrow-down">↓ "15 2 −" → 13</span><br>
+      90&nbsp;<span class="hl">13</span>&nbsp;/<br><span class="arrow-down">↓ "90 13 /" → 6,92</span><br>
+      <b style="color:var(--accent); font-size:17px;">≈ 6,92</b>
+    </div>
+  </div>
+  <div class="examples"><div class="examples-head"><span class="dot"></span><h4>Örnek Sorular</h4></div>
+    <details class="q"><summary><span class="qnum">S1.</span> Postfix ifade "8 4 2 / −" ifadesini manuel yöntemle hesaplayın.<span class="arrow">▶</span></summary><div class="answer">"4 2 /" → 2. İfade: "8 2 −" → <b>6</b>.</div></details>
+    <details class="q"><summary><span class="qnum">S2.</span> Bu manuel yöntem, ifadede kaç operatör varsa kaç "sadeleştirme adımı" gerektirir?<span class="arrow">▶</span></summary><div class="answer">Tam olarak <b>operatör sayısı kadar</b> adım gerekir.</div></details>
+  </div>
+</div></section>
+
+<!-- 9 -->
+<section class="slide" data-index="17"><div class="slide-inner">
+  <div class="kicker">4.9</div>
+  <h1 class="slide-title">Prefix İfadenin <em>Manuel</em> Değerlendirilmesi</h1>
+  <p class="subtitle">Postfix ile simetrik ama ters yönde çalışan bir teknik.</p>
+  <div class="grid2">
+    <div class="card"><span class="method-tag">MANUEL YÖNTEM</span><h3>"İç-içe üçlüyü bul, sadeleştir" (ters yön)</h3>
+      <ol class="step-list"><li>İfadede <b>"op a b"</b> biçiminde bir grup arayın — genelde en sağdaki/en içteki tam grup budur.</li><li>Bulduğunuz grubu hesaplayın: a op b.</li><li>Bu üç öğeyi tek bir sayıyla değiştirin.</li><li>İfade tek bir sayıya inene kadar tekrarlayın.</li></ol>
+    </div>
+    <div class="card"><h3>Örnek: * + 6 3 − 5 2</h3>
+      <div class="trace">*&nbsp;<span class="hl">+</span>&nbsp;6&nbsp;3&nbsp;−&nbsp;5&nbsp;2<br><span class="arrow-down">↓ "+ 6 3" grubu → 9</span><br>*&nbsp;<span class="hl">9</span>&nbsp;<span class="hl">−</span>&nbsp;5&nbsp;2<br><span class="arrow-down">↓ "− 5 2" grubu → 3</span><br>*&nbsp;9&nbsp;<span class="hl">3</span><br><span class="arrow-down">↓ "* 9 3" grubu → 27</span><br><b style="color:var(--accent); font-size:17px;">27</b></div>
+    </div>
+  </div>
+  <div class="examples"><div class="examples-head"><span class="dot"></span><h4>Örnek Sorular</h4></div>
+    <details class="q"><summary><span class="qnum">S1.</span> Prefix ifade "+ 4 * 2 3" ifadesini manuel yöntemle hesaplayın.<span class="arrow">▶</span></summary><div class="answer">"* 2 3" grubu → 6. İfade: "+ 4 6" → <b>10</b>.</div></details>
+    <details class="q"><summary><span class="qnum">S2.</span> Prefix'te neden genelde <i>sağdan</i> başlayarak grup aramak daha kolaydır?<span class="arrow">▶</span></summary><div class="answer">Çünkü prefix'te operatörler soldan sağa "dıştan içe" sıralanır — en içteki (ilk yapılacak) operatörler sağa doğru yer alır.</div></details>
+  </div>
+</div></section>
+
+<!-- 10 -->
+<section class="slide" data-index="18"><div class="slide-inner">
+  <div class="kicker">4.10</div>
+  <h1 class="slide-title">Prefix Manuel — İkinci Örnek</h1>
+  <p class="subtitle">Daha fazla operatör içeren bir ifadeyle pratik yapalım.</p>
+  <div class="card"><h3>Prefix ifade: − * 2 + 3 4 5</h3>
+    <div class="trace">−&nbsp;*&nbsp;2&nbsp;<span class="hl">+</span>&nbsp;3&nbsp;4&nbsp;5<br><span class="arrow-down">↓ "+ 3 4" grubu → 7</span><br>−&nbsp;<span class="hl">*</span>&nbsp;2&nbsp;<span class="hl">7</span>&nbsp;5<br><span class="arrow-down">↓ "* 2 7" grubu → 14</span><br>−&nbsp;<span class="hl">14</span>&nbsp;5<br><span class="arrow-down">↓ "− 14 5" grubu → 9</span><br><b style="color:var(--accent); font-size:17px;">9</b></div>
+    <p style="margin:10px 0 0; font-size:12.5px; color:var(--muted);">Karşılık gelen infix ifade: (2×(3+4))−5 = 14−5 = <b>9</b>. ✓</p>
+  </div>
+  <div class="examples"><div class="examples-head"><span class="dot"></span><h4>Örnek Sorular</h4></div>
+    <details class="q"><summary><span class="qnum">S1.</span> Prefix ifade "/ − 20 5 3" ifadesini manuel yöntemle hesaplayın.<span class="arrow">▶</span></summary><div class="answer">"− 20 5" grubu → 15. İfade: "/ 15 3" → <b>5</b>.</div></details>
+    <details class="q"><summary><span class="qnum">S2.</span> "− * 2 + 3 4 5" örneğinde, yanlışlıkla "− 4 5" grubunu ilk adımda seçseydiniz ne olurdu?<span class="arrow">▶</span></summary><div class="answer">Yanlış sonuç çıkardı — "4", "+ 3 4" grubunun bir parçasıdır ve önünde bir operatör bulunmaz.</div></details>
+  </div>
+</div></section>
+
+<!-- 11 -->
+<section class="slide" data-index="19"><div class="slide-inner">
+  <div class="kicker">4.11</div>
+  <h1 class="slide-title">Infix → Postfix <em>Manuel</em> Dönüşümü</h1>
+  <p class="subtitle">"Tam Parantezleme Yöntemi" — stack kullanmadan, kağıt üzerinde adım adım dönüşüm.</p>
+  <div class="grid2">
+    <div class="card"><span class="method-tag">MANUEL YÖNTEM</span><h3>Adımlar</h3>
+      <ol class="step-list"><li>İfadeyi, operatör önceliğine göre <b>tam parantezli</b> hale getirin.</li><li><b>En içteki</b> parantezden başlayarak, her "(A op B)" grubunu "AB op" ile değiştirin.</li><li>Dıştan içe doğru tüm gruplar dönüştürülene kadar 2. adımı tekrarlayın.</li><li>Tüm parantezler kalktığında elinizde postfix ifade vardır.</li></ol>
+    </div>
+    <div class="card"><h3>Örnek: A + B * C</h3>
+      <div class="trace" style="text-align:left; max-width:420px; margin:0 auto;">A + B * C<br><span class="arrow-down">↓ tam parantezleme</span><br>( A + ( B * C ) )<br><span class="arrow-down">↓ en içteki (B*C) → BC*</span><br>( A + BC* )<br><span class="arrow-down">↓ dıştaki → ABC*+</span><br><b style="color:var(--accent); font-size:16px;">A B C * +</b></div>
+    </div>
+  </div>
+  <div class="examples"><div class="examples-head"><span class="dot"></span><h4>Örnek Sorular</h4></div>
+    <details class="q"><summary><span class="qnum">S1.</span> "(A + B) * C" ifadesini tam parantezleme yöntemiyle postfix'e çevirin.<span class="arrow">▶</span></summary><div class="answer">İçteki (A+B)→AB+. Dıştaki (AB+ * C)→AB+C*. Sonuç: <b>A B + C *</b>.</div></details>
+    <details class="q"><summary><span class="qnum">S2.</span> Parantezlerin postfix sıralamasını nasıl değiştirdiğini açıklayın.<span class="arrow">▶</span></summary><div class="answer">Parantezler önceliği değiştirdiği için postfix ifadenin sırası da değişir: "A B + C *" (toplama önce) — oysa parantezsiz "A+B*C" için postfix "A B C * +" idi.</div></details>
+  </div>
+</div></section>
+
+<!-- 12 -->
+<section class="slide" data-index="20"><div class="slide-inner">
+  <div class="kicker">4.12</div>
+  <h1 class="slide-title">Infix → Prefix <em>Manuel</em> Dönüşümü</h1>
+  <p class="subtitle">Aynı parantezleme yöntemi, bu kez operatörü grubun <b>başına</b> taşıyarak.</p>
+  <div class="grid2">
+    <div class="card"><span class="method-tag">MANUEL YÖNTEM</span><h3>Adımlar</h3>
+      <ol class="step-list"><li>İfadeyi tam parantezli hale getirin.</li><li>En içteki parantezden başlayarak, her "(A op B)" grubunu "op AB" ile değiştirin.</li><li>Dıştan içe doğru tüm gruplar dönüştürülene kadar tekrarlayın.</li><li>Parantezler kalktığında elinizde prefix ifade vardır.</li></ol>
+    </div>
+    <div class="card"><h3>Örnek: A + B * C</h3>
+      <div class="trace" style="text-align:left; max-width:420px; margin:0 auto;">A + B * C<br><span class="arrow-down">↓ tam parantezleme</span><br>( A + ( B * C ) )<br><span class="arrow-down">↓ en içteki (B*C) → *BC</span><br>( A + *BC )<br><span class="arrow-down">↓ dıştaki → +A*BC</span><br><b style="color:var(--accent); font-size:16px;">+ A * B C</b></div>
+    </div>
+  </div>
+  <div class="card" style="margin-top:13px;"><h3>Alternatif kısayol: "Ters Çevirme" yöntemi</h3>
+    <p style="margin:0;">Bir başka pratik teknik: (1) infix ifadeyi <b>tersten yazın</b> (ve varsa "(" ile ")" işaretlerini birbirleriyle değiştirin), (2) bu ters ifadeyi postfix'e çevirin, (3) elde ettiğiniz postfix ifadenin token sırasını tekrar tersine çevirin. Sonuç, aranan prefix ifadedir.</p>
+  </div>
+  <div class="examples"><div class="examples-head"><span class="dot"></span><h4>Örnek Sorular</h4></div>
+    <details class="q"><summary><span class="qnum">S1.</span> "(A − B) / C" ifadesini parantezleme yöntemiyle prefix'e çevirin.<span class="arrow">▶</span></summary><div class="answer">İçteki (A−B)→−AB. Dıştaki (−AB /C)→/−ABC. Sonuç: <b>/ − A B C</b>.</div></details>
+    <details class="q"><summary><span class="qnum">S2.</span> Prefix "+ A * B C" ile postfix "A B C * +" ifadelerini karşılaştırın.<span class="arrow">▶</span></summary><div class="answer">Operand sırası (A,B,C) aynı kalır — sadece operatörlerin konumu değişir.</div></details>
+  </div>
+</div></section>
+
+<!-- 13 -->
+<section class="slide" data-index="21"><div class="slide-inner">
+  <div class="kicker">4.13</div>
+  <h1 class="slide-title">Postfix ↔ Prefix <em>Manuel</em> Dönüşümü</h1>
+  <p class="subtitle">İki notasyon arasında doğrudan geçiş — infix'i "köprü" olarak kullanan pratik teknik.</p>
+  <div class="card"><span class="method-tag">MANUEL YÖNTEM</span><h3>Adımlar (köprü yöntemi)</h3>
+    <ol class="step-list"><li>Kaynak ifadeyi "iç-içe üçlüyü bul" tekniğiyle sadeleştirin — sayı hesaplamak yerine <b>parantezli bir infix grubu</b> oluşturun.</li><li>Bu işlemi tekrarlayarak <b>tam parantezli infix ifadeye</b> ulaşın.</li><li>Elde ettiğiniz infix ifadeyi hedef notasyona göre dönüştürün.</li></ol>
+  </div>
+  <div class="grid2" style="margin-top:13px;">
+    <div class="card"><h3>Örnek: Postfix → Prefix</h3><p style="margin:0 0 6px; font-size:13px;">Postfix: <span class="formula">A B + C *</span></p>
+      <div class="trace" style="font-size:12.5px;">"A B +" → (A+B)<br>İfade: (A+B) C *<br>"(A+B) C *" → ((A+B)*C)<br><span class="arrow-down">↓ infix'ten prefix'e</span><br><b style="color:var(--accent);">* + A B C</b></div>
+    </div>
+    <div class="card"><h3>Örnek: Prefix → Postfix</h3><p style="margin:0 0 6px; font-size:13px;">Prefix: <span class="formula">* + A B C</span></p>
+      <div class="trace" style="font-size:12.5px;">"+ A B" → (A+B)<br>İfade: * (A+B) C<br>"* (A+B) C" → ((A+B)*C)<br><span class="arrow-down">↓ infix'ten postfix'e</span><br><b style="color:var(--accent);">A B + C *</b></div>
+    </div>
+  </div>
+  <div class="examples"><div class="examples-head"><span class="dot"></span><h4>Örnek Sorular</h4></div>
+    <details class="q"><summary><span class="qnum">S1.</span> Postfix "A B − C /" ifadesini köprü yöntemiyle prefix'e çevirin.<span class="arrow">▶</span></summary><div class="answer">"A B −"→(A−B). İfade: (A−B) C /. →((A−B)/C). Prefix: <b>/ − A B C</b>.</div></details>
+    <details class="q"><summary><span class="qnum">S2.</span> İki dönüşüm neden "simetrik" görünüyor?<span class="arrow">▶</span></summary><div class="answer">Çünkü her ikisi de aynı ara adımı (tam parantezli infix ifade) kullanır.</div></details>
+  </div>
+</div></section>
+
+<!-- 14 -->
+<section class="slide" data-index="22"><div class="slide-inner">
+  <div class="kicker">4.14</div>
+  <h1 class="slide-title">Stack Tabanlı Infix Değerlendirme</h1>
+  <p class="subtitle">Manuel yöntemlerden sonra, bilgisayarların gerçekte kullandığı <b>algoritmik</b> (stack tabanlı) yaklaşımı görelim.</p>
+  <div class="grid2">
+    <div class="card"><span class="method-tag stack">STACK YÖNTEMİ</span><h3>Yaklaşım: İki Stack Kullan</h3>
+      <ul class="clean" style="margin-bottom:0;"><li><b>Operand stack:</b> Sayıları takip eder.</li><li><b>Operatör stack:</b> İşlemleri (+, −, *, /, ^) takip eder.</li></ul>
+      <p style="margin-top:7px; font-size:12.5px; color:var(--muted);">Öncelik sırası: 1) ^ (üs alma), 2) ×, ÷, 3) +, −. Parantezler bu sırayı geçersiz kılar.</p>
+    </div>
+    <div class="card"><h3>Algoritma</h3>
+      <ol class="step-list"><li>Karakter bir <b>operand</b> ise → operand stack'e push et.</li><li>Karakter bir <b>operatör</b> ise → operatör stack boşsa push et; değilse, mevcut karakterin önceliği stack tepesindekinden düşükse önce "İşle" (process) yap, sonra push et.</li><li>Karakter "(" ise → operatör stack'e push et.</li><li>Karakter ")" ise → eşleşen "(" bulunana kadar "İşle" yap, sonra "(" işaretini de çıkar.</li></ol>
+    </div>
+  </div>
+  <div class="card" style="margin-top:13px;"><h3>"İşle" (Process) ve Sonuç</h3>
+    <p style="margin:0;">Operatör stack'ten bir operatör, operand stack'ten iki sayı pop edilir, işlem yapılır, sonuç operand stack'e geri push edilir. İfade tamamen tarandıktan sonra, operatör stack boşalana kadar "İşle" tekrarlanır. Operand stack'te kalan <b>tek değer</b>, ifadenin sonucudur.</p>
+  </div>
+  <div class="examples"><div class="examples-head"><span class="dot"></span><h4>Örnek Sorular</h4></div>
+    <details class="q"><summary><span class="qnum">S1.</span> "2 + 3 * 4" ifadesi taranırken, "*" karakterine gelindiğinde operatör stack'te "+" varsa ne yapılır?<span class="arrow">▶</span></summary><div class="answer">"*" önceliği "+"dan yüksek olduğundan, "*" doğrudan operatör stack'e push edilir.</div></details>
+    <details class="q"><summary><span class="qnum">S2.</span> ")" karakteriyle karşılaşıldığında algoritma neden eşleşen "(" bulunana kadar işlem yapar?<span class="arrow">▶</span></summary><div class="answer">Çünkü parantez içindeki tüm işlemlerin, parantez dışına çıkmadan tamamlanmış olması gerekir.</div></details>
+  </div>
+</div></section>
+
+<!-- 15 -->
+<section class="slide" data-index="23"><div class="slide-inner">
+  <div class="kicker">4.15</div>
+  <h1 class="slide-title">Stack Tabanlı Değerlendirme — Örnek</h1>
+  <p class="subtitle">Infix: 2 * (5 * (3+6)) / 15 - 2 ifadesinin stack tablosuyla adım adım çözümü. <b>Her iki stack de üst solda gösterilmiştir</b> (soldaki eleman en son eklenendir).</p>
+  <div class="card"><table class="tt" style="font-size:11.5px;">
+    <tr><th>Token</th><th>İşlem</th><th>Operand Stack<br><small>(üst solda)</small></th><th>Operatör Stack<br><small>(üst solda)</small></th></tr>
+    <tr><td>2</td><td class="left">Operand stack'e push</td><td>2</td><td></td></tr>
+    <tr><td>*</td><td class="left">Operatör stack'e push</td><td>2</td><td>*</td></tr>
+    <tr><td>(</td><td class="left">Operatör stack'e push</td><td>2</td><td>( *</td></tr>
+    <tr><td>5</td><td class="left">Operand stack'e push</td><td>5 2</td><td>( *</td></tr>
+    <tr><td>*</td><td class="left">Üstte "(" var → işlem yapılmaz, operatör stack'e push</td><td>5 2</td><td>* ( *</td></tr>
+    <tr><td>(</td><td class="left">Operatör stack'e push</td><td>5 2</td><td>( * ( *</td></tr>
+    <tr><td>3</td><td class="left">Operand stack'e push</td><td>3 5 2</td><td>( * ( *</td></tr>
+    <tr><td>+</td><td class="left">Üstte "(" var → operatör stack'e push</td><td>3 5 2</td><td>+ ( * ( *</td></tr>
+    <tr><td>6</td><td class="left">Operand stack'e push</td><td>6 3 5 2</td><td>+ ( * ( *</td></tr>
+    <tr><td>)</td><td class="left">İşle: 3+6=9, "(" pop edilir</td><td>9 5 2</td><td>* ( *</td></tr>
+    <tr><td>)</td><td class="left">İşle: 5*9=45, "(" pop edilir</td><td>45 2</td><td>*</td></tr>
+    <tr><td>/</td><td class="left">Üstteki "*" ile öncelik eşit → önce işlenir: 2*45=90; sonra "/" push edilir</td><td>90</td><td>/</td></tr>
+    <tr><td>15</td><td class="left">Operand stack'e push</td><td>15 90</td><td>/</td></tr>
+    <tr><td>-</td><td class="left">Üstteki "/" önceliği yüksek → önce işlenir: 90/15=6; sonra "-" push edilir</td><td>6</td><td>-</td></tr>
+    <tr><td>2</td><td class="left">Operand stack'e push</td><td>2 6</td><td>-</td></tr>
+    <tr><td>(son)</td><td class="left">Kalan operatörler işlenir: 6-2=4</td><td><b>4</b></td><td></td></tr>
+  </table></div>
+  <div class="examples"><div class="examples-head"><span class="dot"></span><h4>Örnek Sorular</h4></div>
+    <details class="q"><summary><span class="qnum">S1.</span> Tabloda "/" karakterine gelindiğinde neden önce "*" işlenip sonra "/" push ediliyor?<span class="arrow">▶</span></summary><div class="answer">"/" ve "*" aynı önceliğe sahiptir; eşit önceliklerde soldan sağa değerlendirme kuralı gereği önce "*" işlenir.</div></details>
+    <details class="q"><summary><span class="qnum">S2.</span> Bu stack tabanlı yöntemle Slayt 4.7-4.10'daki manuel yöntem arasındaki temel fark nedir?<span class="arrow">▶</span></summary><div class="answer">Stack yöntemi <b>infix</b> ifadeyi doğrudan değerlendirebilir ve iki ayrı stack ile önceliği otomatik yönetir. Manuel yöntemler ise postfix/prefix ifadeler üzerinde, önceliğin zaten yapıda gömülü olmasından yararlanır.</div></details>
+    <details class="q"><summary><span class="qnum">S3.</span> 5. satırda ("*" geldiğinde) neden hiçbir şey işlenmeden push ediliyor?<span class="arrow">▶</span></summary><div class="answer">Operatör stack'inin üstünde "(" vardır. "(" bir sınır işaretidir: kapanış parantezi gelene kadar altındaki operatörlerle karşılaştırma yapılmaz. Bu yüzden yeni operatör doğrudan push edilir.</div></details>
+  </div>
+</div></section>
+
+<!-- SECTION DIVIDER: ANALYSIS -->
+<section class="slide" data-index="24">
+  <div class="section-divider">
+    <div class="num">BÖLÜM A</div>
+    <h1>Algoritma Analizi ve <em style="font-style:italic; color:var(--accent);">Asimptotik Notasyon</em></h1>
+    <p>Temel işlem, Büyük-O/Omega/Theta/küçük-o, en kötü/ortalama/en iyi durum, ve klasik algoritmaların (arama, sıralama) analizleri.</p>
+  </div>
+</section>
+
+<!-- 17 -->
+<section class="slide" data-index="25"><div class="slide-inner">
+  <div class="kicker">4.16</div>
+  <h1 class="slide-title">Algoritma Analizi: Yaklaşımlar ve Temel İşlem</h1>
+  <p class="subtitle">Bir algoritmanın "iyiliğini" nasıl ölçeriz?</p>
+  <div class="grid2">
+    <div class="card"><h3>Analiz konuları ve yaklaşımlar</h3>
+      <p style="margin:0 0 8px; font-size:13px;"><b>Konular:</b> Doğruluk, Zaman, Bellek, En iyi çözüm (optimality).</p>
+      <p style="margin:0;"><b>Yaklaşımlar:</b></p>
+      <ul class="clean" style="margin-bottom:0;"><li><b>Teorik analiz:</b> Girdi boyutunun fonksiyonu olarak, temel işlemin tekrar sayısı matematiksel olarak belirlenir.</li><li><b>Kaba (deneysel) analiz:</b> Bir girdi seçilip, zaman birimi veya temel işlem sayısı ölçülerek deneysel veri toplanır.</li></ul>
+    </div>
+    <div class="card"><h3>Karmaşıklık ve Temel İşlem</h3>
+      <p style="margin:0 0 8px;">Karmaşıklık, veri kümesi büyüdüğünde yürütme maliyetinin nasıl değiştiğini gösteren <b>asimptotik</b> bir ifadedir; gerçek zaman/bellek değil, <b>değişim eğilimi</b> önemlidir.</p>
+      <ul class="clean" style="margin-bottom:0; font-size:13px;"><li>Yürütme maliyeti → <b>zaman karmaşıklığı</b></li><li>Bellek kullanım maliyeti → <b>alan karmaşıklığı</b></li></ul>
+    </div>
+  </div>
+  <div class="card" style="margin-top:13px;"><h3>Yürütme Zamanı T(n)</h3>
+    <p style="margin:0;">T(n), n (girdi boyutu) cinsinden ifade edilen çalışma zamanı fonksiyonudur. Örnek büyüme türleri: <span class="formula">T(n)=1</span> (sabit), <span class="formula">T(n)=log n</span> (logaritmik), <span class="formula">T(n)=n</span> (doğrusal), <span class="formula">T(n)=n²</span> (karesel).</p>
+  </div>
+  <div class="examples"><div class="examples-head"><span class="dot"></span><h4>Örnek Sorular</h4></div>
+    <details class="q"><summary><span class="qnum">S1.</span> Bir algoritmanın "en iyi çözüm" (optimality) özelliği ne anlama gelir?<span class="arrow">▶</span></summary><div class="answer">Aynı problemi çözen diğer tüm algoritmalar arasında (belirli bir ölçüte göre) en verimli olup olmadığını ifade eder.</div></details>
+    <details class="q"><summary><span class="qnum">S2.</span> Teorik analiz, kaba (deneysel) analize göre neden genelde tercih edilir?<span class="arrow">▶</span></summary><div class="answer">Çünkü donanımdan ve belirli bir test girdisinden <b>bağımsız</b>, genel bir sonuç verir.</div></details>
+  </div>
+</div></section>
+
+<!-- 18 NEW: Best/Worst/Average -->
+<section class="slide" data-index="26"><div class="slide-inner">
+  <div class="kicker">4.17</div>
+  <h1 class="slide-title">En Kötü, En İyi ve Ortalama Durum Analizi</h1>
+  <p class="subtitle">Bir algoritmanın performansı, girdiye bağlı olarak değişebilir — üç farklı senaryo tanımlarız.</p>
+  <div class="grid2">
+    <div class="card"><h3>Üç Durum</h3>
+      <ul class="clean" style="margin-bottom:0;">
+        <li><b>En kötü durum (worst case):</b> Algoritmanın <i>en çok</i> işlem yaptığı senaryo — genelde garanti vermek için kullanılır.</li>
+        <li><b>En iyi durum (best case):</b> Algoritmanın <i>en az</i> işlem yaptığı senaryo.</li>
+        <li><b>Ortalama durum (average case):</b> Tüm olası girdiler üzerinden beklenen (ortalama) işlem sayısı.</li>
+      </ul>
+    </div>
+    <div class="card"><h3>Örnek: Doğrusal Arama</h3>
+      <p style="margin:0 0 6px; font-size:13px;">n elemanlı bir dizide x aranıyor.</p>
+      <table class="tt" style="font-size:12px;">
+        <tr><th class="left">Durum</th><th>Karşılaştırma</th></tr>
+        <tr><td class="left">En iyi (x=a₁)</td><td>1 → Ω(1)</td></tr>
+        <tr><td class="left">En kötü (x yok/son)</td><td>n → O(n)</td></tr>
+        <tr><td class="left">Ortalama (x rastgele konumda)</td><td>(n+1)/2 → O(n)</td></tr>
+      </table>
+    </div>
+  </div>
+  <div class="card" style="margin-top:12px;"><h3>Ortalama durum nasıl hesaplanır?</h3>
+    <p style="margin:0;">x'in dizide eşit olasılıkla her pozisyonda olduğunu varsayarsak: ortalama karşılaştırma sayısı = (1+2+…+n)/n = [n(n+1)/2]/n = <b>(n+1)/2</b> — bu da O(n) mertebesindedir (Bölüm 2'deki Gauss toplamı formülünü hatırlayın!).</p>
+  </div>
+  <div class="examples"><div class="examples-head"><span class="dot"></span><h4>Örnek Sorular</h4></div>
+    <details class="q"><summary><span class="qnum">S1.</span> Neden genelde "en kötü durum" analizi tercih edilir, "ortalama durum" değil?<span class="arrow">▶</span></summary>
+      <div class="answer">En kötü durum, algoritmanın performansı hakkında <b>garanti</b> verir — "hiçbir zaman bundan daha kötü olmaz" diyebiliriz. Ortalama durum ise girdilerin dağılımı hakkında varsayımlar gerektirir (örn. "her pozisyon eşit olasılıklı"), ki bu varsayım her zaman gerçekçi olmayabilir.</div></details>
+    <details class="q"><summary><span class="qnum">S2.</span> İkili aramanın (Slayt 4.4) en iyi durumu nedir?<span class="arrow">▶</span></summary>
+      <div class="answer">En iyi durum: aranan eleman tam olarak ilk "mid" (ortadaki) elemansa, tek bir karşılaştırmada bulunur → <b>Ω(1)</b>.</div></details>
+  </div>
+</div></section>
+
+<!-- 19 -->
+<section class="slide" data-index="27"><div class="slide-inner">
+  <div class="kicker">4.18</div>
+  <h1 class="slide-title">Asimptotik Notasyon: Büyük-O <em>(Big-O)</em></h1>
+  <p class="subtitle">Bir fonksiyonun büyüme hızının <b>üst sınırını</b> ifade eden matematiksel araç.</p>
+  <div class="grid2">
+    <div class="card"><h3>Formal Tanım</h3>
+      <p style="margin:0 0 8px;">f ve g, ℤ⁺ (veya ℝ⁺) kümesinden ℝ'ye tanımlı fonksiyonlar olsun.</p>
+      <div class="formula-big" style="font-size:14px;">∃ C, k ∈ ℝ⁺ öyle ki ∀x&gt;k için: f(x) ≤ C·g(x)</div>
+      <p style="margin:0;">Bu koşulu sağlayan C ve k sabitleri varsa, <span class="formula">f(x) = O(g(x))</span> yazılır.</p>
+    </div>
+    <div class="card"><h3>Sezgisel anlamı</h3>
+      <p style="margin:0;">f(x) = O(g(x)), "f, yeterince büyük x değerleri için, g'nin sabit bir katından <b>daha hızlı büyümez</b>" demektir. Algoritmanın <b>en kötü durum</b> performansının üst sınırını ifade etmek için kullanılır — pratikte en sık kullanılan asimptotik notasyondur.</p>
+    </div>
+  </div>
+  <div class="card" style="margin-top:13px;"><h3>Örnek: T(n) = 4n + 6 için T(n) = O(n) olduğunu gösterelim</h3>
+    <p style="margin:0;">n≥1 için 4n+6 ≤ 4n+6n = 10n olduğundan, C=10 ve k=1 seçilebilir. Her n&gt;1 için 4n+6 ≤ 10·n sağlandığından, <b>T(n) = O(n)</b> gösterilmiş olur.</p>
+  </div>
+  <div class="examples"><div class="examples-head"><span class="dot"></span><h4>Örnek Sorular</h4></div>
+    <details class="q"><summary><span class="qnum">S1.</span> T(n) = 4n² + 4n + 2 fonksiyonu için T(n) = O(n²) olduğunu gösteren C ve k sabitlerini bulun.<span class="arrow">▶</span></summary><div class="answer">n≥1 için 4n²+4n+2 ≤ 10n². C=10, k=1: her n&gt;1 için sağlanır.</div></details>
+    <details class="q"><summary><span class="qnum">S2.</span> "C ve k sabitlerinin var olması" koşulu neden yeterlidir?<span class="arrow">▶</span></summary><div class="answer">Tanım "uygun bir C ve k'nin var olduğunu göstermeniz yeterli" der — hangisini seçtiğiniz önemli değildir.</div></details>
+  </div>
+</div></section>
+
+<!-- 20 NEW: Big-O properties -->
+<section class="slide" data-index="28"><div class="slide-inner">
+  <div class="kicker">4.19</div>
+  <h1 class="slide-title">Büyük-O'nun Özellikleri</h1>
+  <p class="subtitle">Karmaşık ifadeleri analiz ederken sürekli kullanacağımız üç temel kural.</p>
+  <table class="laws">
+    <tr><th>Özellik</th><th>İfade</th></tr>
+    <tr><td><b>Geçişkenlik (Transitivity)</b></td><td class="f">f=O(g) ve g=O(h) ⟹ f=O(h)</td></tr>
+    <tr><td><b>Toplam Kuralı (Sum Rule)</b></td><td class="f">f₁=O(g₁), f₂=O(g₂) ⟹ f₁+f₂=O(max(g₁,g₂))</td></tr>
+    <tr><td><b>Çarpım Kuralı (Product Rule)</b></td><td class="f">f₁=O(g₁), f₂=O(g₂) ⟹ f₁·f₂=O(g₁·g₂)</td></tr>
+  </table>
+  <div class="card" style="margin-top:12px;"><h3>Toplam kuralının ispat fikri</h3>
+    <p style="margin:0;">f₁=O(g₁) ⟹ ∃C₁,k₁: f₁≤C₁g₁. f₂=O(g₂) ⟹ ∃C₂,k₂: f₂≤C₂g₂. x&gt;max(k₁,k₂) için: f₁+f₂ ≤ C₁g₁+C₂g₂ ≤ (C₁+C₂)·max(g₁,g₂). C=C₁+C₂ ve k=max(k₁,k₂) seçilerek f₁+f₂=O(max(g₁,g₂)) ispatlanır.</p>
+  </div>
+  <div class="examples"><div class="examples-head"><span class="dot"></span><h4>Örnek Sorular</h4></div>
+    <details class="q"><summary><span class="qnum">S1.</span> f(n)=O(n) ve g(n)=O(n²) ise, f(n)·g(n) hangi mertebededir?<span class="arrow">▶</span></summary><div class="answer">Çarpım kuralı: O(n)·O(n²) = <b>O(n³)</b>.</div></details>
+    <details class="q"><summary><span class="qnum">S2.</span> Geçişkenlik özelliği pratikte neden kullanışlıdır?<span class="arrow">▶</span></summary><div class="answer">Bir fonksiyonun büyük-O'sunu ara bir fonksiyon üzerinden dolaylı olarak ispatlamamızı sağlar — örneğin f=O(n log n) ve n log n=O(n²) biliniyorsa, geçişkenlikle doğrudan f=O(n²) sonucuna ulaşırız, f'yi n² ile doğrudan karşılaştırmaya gerek kalmaz.</div></details>
+  </div>
+</div></section>
+
+<!-- 21 -->
+<section class="slide" data-index="29"><div class="slide-inner">
+  <div class="kicker">4.20</div>
+  <h1 class="slide-title">Büyük-Omega <em>(Ω)</em> ve Büyük-Theta <em>(θ)</em></h1>
+  <p class="subtitle">Büyük-O'nun tamamlayıcıları: alt sınır ve "sıkı" (tam) sınır.</p>
+  <div class="grid2">
+    <div class="card"><h3>Büyük-Omega (Ω) — Alt Sınır</h3>
+      <div class="formula-big" style="font-size:14px;">∃ C, k ∈ ℝ⁺ öyle ki ∀x&gt;k için: f(x) ≥ C·g(x)</div>
+      <p style="margin:0;">f(x)=Ω(g(x)), "f, en az g kadar hızlı büyür" demektir — algoritmanın <b>en iyi durum</b> alt sınırını ifade eder.</p>
+    </div>
+    <div class="card"><h3>Büyük-Theta (θ) — Sıkı Sınır</h3>
+      <div class="formula-big" style="font-size:14px;">f(x)=θ(g(x)) ⟺ f(x)=O(g(x)) ∧ f(x)=Ω(g(x))</div>
+      <p style="margin:0;">f, hem g'nin büyük-O'su hem de büyük-Omega'sıysa, f ve g <b>aynı büyüme mertebesindedir</b>.</p>
+    </div>
+  </div>
+  <div class="card" style="margin-top:13px;"><h3>Üç notasyonun karşılaştırması</h3>
+    <table class="laws"><tr><th>Notasyon</th><th>Anlamı</th><th>Benzetme</th></tr>
+      <tr><td class="f">O(g(n))</td><td>Üst sınır (en kötü ihtimalle bu kadar)</td><td>≤</td></tr>
+      <tr><td class="f">Ω(g(n))</td><td>Alt sınır (en iyi ihtimalle bu kadar)</td><td>≥</td></tr>
+      <tr><td class="f">θ(g(n))</td><td>Sıkı sınır (tam olarak bu mertebede)</td><td>=</td></tr>
+    </table>
+  </div>
+  <div class="examples"><div class="examples-head"><span class="dot"></span><h4>Örnek Sorular</h4></div>
+    <details class="q"><summary><span class="qnum">S1.</span> T(n)=4n+6 için T(n)=Ω(n) olduğunu gösterin.<span class="arrow">▶</span></summary><div class="answer">Her n≥1 için 4n+6 ≥ 4n. C=4, k=1: sağlanır. <b>T(n)=Ω(n)</b>.</div></details>
+    <details class="q"><summary><span class="qnum">S2.</span> T(n)=4n+6 için hem O(n) hem Ω(n) gösterildiğine göre, hangi θ ifadesini yazabiliriz?<span class="arrow">▶</span></summary><div class="answer"><b>T(n)=θ(n)</b>.</div></details>
+  </div>
+</div></section>
+
+<!-- 22 NEW: little-o little-omega -->
+<section class="slide" data-index="30"><div class="slide-inner">
+  <div class="kicker">4.21</div>
+  <h1 class="slide-title">Küçük-o <em>(little-o)</em> ve Küçük-omega <em>(little-ω)</em></h1>
+  <p class="subtitle">Büyük-O/Omega'nın "kesin/gevşek" (strict) versiyonları — f ve g'nin büyüme hızları arasında kesin fark olduğunu ifade ederler.</p>
+  <div class="grid2">
+    <div class="card"><h3>Küçük-o Tanımı</h3>
+      <div class="formula-big" style="font-size:14px;">f(x) = o(g(x)) ⟺ lim(x→∞) f(x)/g(x) = 0</div>
+      <p style="margin:0;">f, g'den <b>kesinlikle daha yavaş</b> büyür (f, g'nin sabit bir katı bile değildir; oran sıfıra gider).</p>
+    </div>
+    <div class="card"><h3>Küçük-omega Tanımı</h3>
+      <div class="formula-big" style="font-size:14px;">f(x) = ω(g(x)) ⟺ lim(x→∞) f(x)/g(x) = ∞</div>
+      <p style="margin:0;">f, g'den <b>kesinlikle daha hızlı</b> büyür.</p>
+    </div>
+  </div>
+  <div class="card" style="margin-top:12px;"><h3>Büyük-O ile Farkı</h3>
+    <p style="margin:0;">f=O(g), f'nin g'den <b>en fazla</b> sabit kat kadar hızlı büyüdüğünü söyler (f=g bile olabilir). f=o(g) ise f'nin g'den <b>kesinlikle</b> daha yavaş olduğunu garanti eder (f=g olamaz). Örnek: n=O(n) doğrudur (f=g), ama n=o(n) <b>yanlıştır</b> (oran 1'e gider, 0'a değil). Buna karşın n=o(n²) <b>doğrudur</b> (n/n²=1/n→0).</p>
+  </div>
+  <div class="examples"><div class="examples-head"><span class="dot"></span><h4>Örnek Sorular</h4></div>
+    <details class="q"><summary><span class="qnum">S1.</span> log n = o(n) ifadesi doğru mudur?<span class="arrow">▶</span></summary><div class="answer">Evet — lim(log n)/n = 0 (logaritma, doğrusaldan kesinlikle daha yavaş büyür).</div></details>
+    <details class="q"><summary><span class="qnum">S2.</span> n² = ω(n) ifadesi doğru mudur?<span class="arrow">▶</span></summary><div class="answer">Evet — lim n²/n = lim n = ∞, n², n'den kesinlikle daha hızlı büyür.</div></details>
+  </div>
+</div></section>
+
+<!-- 23 -->
+<section class="slide" data-index="31"><div class="slide-inner">
+  <div class="kicker">4.22</div>
+  <h1 class="slide-title">Fonksiyonların Büyüme Sıralaması</h1>
+  <p class="subtitle">En yavaş büyüyenden en hızlı büyüyene, karşılaştığımız temel fonksiyon aileleri.</p>
+  <div class="card"><h3>Büyüme mertebesine göre sıralama (yavaştan hızlıya)</h3>
+    <div class="formula-big" style="font-size:12px; line-height:1.9;">10000 &lt; log(log n) &lt; (log n)² &lt; n²(log n)³ &lt; 8n³+17n²+111 ≈ n³+n(log n)² &lt; (1.5)ⁿ &lt; 2ⁿ &lt; 2ⁿ(n²+1) &lt; n!</div>
+    <p style="margin:10px 0 0; font-size:12.5px; color:var(--muted);">Genel prensip: sabit &lt; logaritmik &lt; polinomsal (nᶜ) &lt; üstel (cⁿ) &lt; faktöriyel (n!).</p>
+  </div>
+  <div class="card" style="margin-top:13px;"><h3>Alt programlardan oluşan algoritmaların karmaşıklığı — Toplama/Max Kuralı</h3>
+    <table class="laws small">
+      <tr><td class="f">f1→O(nᶜ), f2→O(nᵈ), 1&lt;c&lt;d</td><td class="f">max(O(nᶜ),O(nᵈ)) → O(nᵈ)</td></tr>
+      <tr><td class="f">f1→O(log n), f2→O(n)</td><td class="f">max(O(log n),O(n)) → O(n)</td></tr>
+      <tr><td class="f">f1→O(2ⁿ), f2→O(n)</td><td class="f">max(O(2ⁿ),O(n)) → O(2ⁿ)</td></tr>
+    </table>
+  </div>
+  <div class="examples"><div class="examples-head"><span class="dot"></span><h4>Örnek Sorular</h4></div>
+    <details class="q"><summary><span class="qnum">S1.</span> f(n)=n² ve g(n)=2ⁿ fonksiyonlarından hangisi daha hızlı büyür?<span class="arrow">▶</span></summary><div class="answer">2ⁿ (üstel), n²'den (polinomsal) her zaman daha hızlı büyür.</div></details>
+    <details class="q"><summary><span class="qnum">S2.</span> İki ardışık bölüm O(n log n) ve O(n²) ise, toplam karmaşıklık nedir?<span class="arrow">▶</span></summary><div class="answer">max(O(n log n), O(n²)) = <b>O(n²)</b>.</div></details>
+  </div>
+</div></section>
+
+<!-- 24 NEW: Polynomial theorem -->
+<section class="slide" data-index="32"><div class="slide-inner">
+  <div class="kicker">4.23</div>
+  <h1 class="slide-title">Polinomlar için Genel Büyük-O Teoremi</h1>
+  <p class="subtitle">Her polinomun büyük-O'su, sadece en yüksek dereceli terimiyle belirlenir — tek tek analiz etmeye gerek yok!</p>
+  <div class="card"><h3>Teorem</h3>
+    <p style="margin:0 0 8px;">f(x) = aₙxⁿ + aₙ₋₁xⁿ⁻¹ + … + a₁x + a₀ bir polinom olsun (aₙ≠0). O halde:</p>
+    <div class="formula-big" style="font-size:16px;">f(x) = O(xⁿ)</div>
+  </div>
+  <div class="card" style="margin-top:12px;"><h3>İspat Fikri</h3>
+    <p style="margin:0;">x&gt;1 için üçgen eşitsizliğiyle: |f(x)| ≤ |aₙ|xⁿ+|aₙ₋₁|xⁿ⁻¹+…+|a₀| = xⁿ(|aₙ|+|aₙ₋₁|/x+…+|a₀|/xⁿ) ≤ xⁿ(|aₙ|+|aₙ₋₁|+…+|a₀|) (çünkü x&gt;1 iken 1/xᵏ≤1). C=|aₙ|+…+|a₀| ve k=1 seçilirse f(x)=O(xⁿ) ispatlanır.</p>
+  </div>
+  <div class="examples"><div class="examples-head"><span class="dot"></span><h4>Örnek Sorular</h4></div>
+    <details class="q"><summary><span class="qnum">S1.</span> f(x)=7x⁵−3x³+2x−9 fonksiyonunun büyük-O'sunu, teoremi doğrudan kullanarak yazın.<span class="arrow">▶</span></summary><div class="answer">En yüksek derece 5 olduğundan, doğrudan <b>f(x)=O(x⁵)</b> yazılabilir — tek tek terimleri analiz etmeye gerek yoktur.</div></details>
+    <details class="q"><summary><span class="qnum">S2.</span> Bu teorem, algoritma analizinde neden pratik bir kısayoldur?<span class="arrow">▶</span></summary><div class="answer">Bir algoritmanın T(n)'i polinom formundaysa, sadece en yüksek dereceli terime bakarak (diğer terimleri ihmal ederek) doğrudan büyük-O sonucuna ulaşabiliriz — Slayt 4.18-4.19'daki gibi C,k sabitlerini her seferinde yeniden bulmaya gerek kalmaz.</div></details>
+  </div>
+</div></section>
+
+<!-- 25 -->
+<section class="slide" data-index="33"><div class="slide-inner">
+  <div class="kicker">4.24</div>
+  <h1 class="slide-title">Büyük-O Hesaplama — Uygulamalı Örnekler I</h1>
+  <p class="subtitle">Karmaşık ifadelerin büyük-O'sunu adım adım bulma pratiği.</p>
+  <div class="card" style="margin-bottom:13px;"><h3>Örnek 1: f(n) = 3n·log(n!) + (n²+3)·log n</h3>
+    <ol class="step-list"><li>3n·log(n!): 3n → O(n), log(n!) → O(n log n). Çarpım: O(n)·O(n log n) = O(n² log n).</li><li>(n²+3)·log n: (n²+3) → O(n²), log n → O(log n). Çarpım: O(n² log n).</li><li>Toplam: max(O(n² log n), O(n² log n)) = <b>O(n² log n)</b>.</li></ol>
+  </div>
+  <div class="card"><h3>Örnek 2: F(x) = (x+1)·log(x²+1) + 3x²</h3>
+    <ol class="step-list"><li>(x+1) → O(x). log(x²+1) → O(log x²) = O(2 log x) = O(log x).</li><li>(x+1)·log(x²+1) → O(x)·O(log x) = O(x log x).</li><li>3x² → O(x²).</li><li>Toplam: max(O(x log x), O(x²)) = <b>O(x²)</b>.</li></ol>
+  </div>
+  <div class="examples"><div class="examples-head"><span class="dot"></span><h4>Örnek Sorular</h4></div>
+    <details class="q"><summary><span class="qnum">S1.</span> g(n) = 5n³ + 2n log n + 100 fonksiyonunun büyük-O'sunu bulun.<span class="arrow">▶</span></summary><div class="answer">En hızlı büyüyen terim 5n³'tür. Sonuç: <b>O(n³)</b>.</div></details>
+    <details class="q"><summary><span class="qnum">S2.</span> h(n) = n·2ⁿ + n¹⁰⁰ fonksiyonunun büyük-O'sunu bulun.<span class="arrow">▶</span></summary><div class="answer">Sonuç: <b>O(n·2ⁿ)</b>. Üstel fonksiyonlar, dereceleri ne kadar yüksek olursa olsun her zaman polinomları geçer.</div></details>
+  </div>
+</div></section>
+
+<!-- 26 NEW: Big-O examples II -->
+<section class="slide" data-index="34"><div class="slide-inner">
+  <div class="kicker">4.25</div>
+  <h1 class="slide-title">Büyük-O Hesaplama — Uygulamalı Örnekler II</h1>
+  <p class="subtitle">İki örnek daha — bu kez sadeleştirme adımı gerektiren ifadeler.</p>
+  <div class="card" style="margin-bottom:13px;"><h3>Örnek 3: f(n) = (n+1)log(n+1) − n</h3>
+    <ol class="step-list"><li>(n+1) → O(n). log(n+1) → O(log n).</li><li>(n+1)log(n+1) → O(n)·O(log n) = O(n log n).</li><li>−n terimi, büyüklük olarak O(n)'dir; O(n log n)'in yanında "gölgede kalır" (n log n, n'den daha hızlı büyür).</li><li>Toplam: <b>O(n log n)</b>.</li></ol>
+  </div>
+  <div class="card"><h3>Örnek 4: T(n) = n² + n·2ⁿ + 5</h3>
+    <p style="margin:0;">Üç terim var: n² (polinomsal), n·2ⁿ (üstel×polinom), 5 (sabit). Büyüme sıralamasına göre (Slayt 4.22) üstel terimler her zaman kazanır: <b>T(n) = O(n·2ⁿ)</b>.</p>
+  </div>
+  <div class="examples"><div class="examples-head"><span class="dot"></span><h4>Örnek Sorular</h4></div>
+    <details class="q"><summary><span class="qnum">S1.</span> f(n) = 2ⁿ + n! fonksiyonunun büyük-O'sunu bulun.<span class="arrow">▶</span></summary><div class="answer">n!, 2ⁿ'den daha hızlı büyür (Slayt 4.22'deki sıralamaya göre). Sonuç: <b>O(n!)</b>.</div></details>
+    <details class="q"><summary><span class="qnum">S2.</span> f(n)=(log n)¹⁰⁰ ile g(n)=n^0.01 fonksiyonlarından hangisi büyük n için daha büyüktür?<span class="arrow">▶</span></summary><div class="answer">Yeterince büyük n için <b>g(n)=n^0.01</b> daha büyük olur — herhangi bir pozitif üslü polinom, sonunda herhangi bir dereceden logaritmik ifadeyi geçer (log n = o(n^ε) her ε&gt;0 için).</div></details>
+  </div>
+</div></section>
+
+<!-- 27 NEW: Growth table -->
+<section class="slide" data-index="35"><div class="slide-inner">
+  <div class="kicker">4.26</div>
+  <h1 class="slide-title">Büyüme Mertebeleri — Sayısal Karşılaştırma</h1>
+  <p class="subtitle">Soyut O() gösterimini somut sayılarla görmek, sezgiyi güçlendirir.</p>
+  <div class="card">
+    <table class="tt" style="font-size:12px;">
+      <tr><th>n</th><th>log₂n</th><th>n</th><th>n log₂n</th><th>n²</th><th>2ⁿ</th></tr>
+      <tr><td>10</td><td>3.3</td><td>10</td><td>33</td><td>100</td><td>1.024</td></tr>
+      <tr><td>20</td><td>4.3</td><td>20</td><td>86</td><td>400</td><td>1.048.576</td></tr>
+      <tr><td>50</td><td>5.6</td><td>50</td><td>282</td><td>2.500</td><td>~10¹⁵</td></tr>
+      <tr><td>100</td><td>6.6</td><td>100</td><td>664</td><td>10.000</td><td>~10³⁰</td></tr>
+    </table>
+    <p style="margin:8px 0 0; font-size:12.5px; color:var(--muted);">n=100'de bile 2ⁿ, "astronomik" bir sayı olur — bu, üstel zamanlı bir algoritmanın neden n biraz büyüdüğünde "pratikte kullanılamaz" hale geldiğini somut olarak gösterir.</p>
+  </div>
+  <div class="examples"><div class="examples-head"><span class="dot"></span><h4>Örnek Sorular</h4></div>
+    <details class="q"><summary><span class="qnum">S1.</span> Bir bilgisayar saniyede 10⁹ işlem yapabiliyorsa, n=50 için O(2ⁿ) bir algoritma kaç saniye sürer (yaklaşık)?<span class="arrow">▶</span></summary><div class="answer">2⁵⁰≈10¹⁵ işlem. 10¹⁵/10⁹=10⁶ saniye ≈ <b>11.5 gün</b> — pratikte kullanılamaz bir süre.</div></details>
+    <details class="q"><summary><span class="qnum">S2.</span> Tabloya göre n=100 için O(n²) bir algoritma ile O(n log n) bir algoritma arasındaki fark nedir?<span class="arrow">▶</span></summary><div class="answer">O(n²)≈10.000 işlem, O(n log n)≈664 işlem — n²'li algoritma, n log n'li algoritmadan yaklaşık <b>15 kat</b> daha fazla işlem gerektirir.</div></details>
+  </div>
+</div></section>
+
+<!-- 28 -->
+<section class="slide" data-index="36"><div class="slide-inner">
+  <div class="kicker">4.27</div>
+  <h1 class="slide-title">İteratif Algoritmaların Analizi</h1>
+  <p class="subtitle">Döngü içeren (recursive olmayan) algoritmaların çalışma zamanını hesaplama yöntemi.</p>
+  <div class="grid2">
+    <div class="card"><h3>Genel Adımlar</h3>
+      <ol class="step-list"><li>Girdi boyutu (n) belirlenir.</li><li>Algoritmanın temel işlemi saptanır.</li><li>En kötü, ortalama ve en iyi durum analizleri n'e göre yapılır.</li><li>Temel işlemin kaç kez çalıştığı toplanarak T(n) elde edilir.</li><li>T(n), asimptotik notasyonla ifade edilir.</li></ol>
+    </div>
+    <div class="card"><h3>Örnek: Ortalama Bulma (BulOrta)</h3>
+      <div class="formula-big" style="text-align:left; font-size:11.5px; line-height:1.7;">toplam=0 &nbsp;<span style="color:var(--muted);">// 1 işlem(=)</span><br>for (k=0; k&lt;n; k++) &nbsp;<span style="color:var(--muted);">// 2n+2 işlem(1=,n+1 &lt,n ++)  </span><br>&nbsp;&nbsp;toplam += A[k] &nbsp;<span style="color:var(--muted);">// 2n işlem (+= ve [])</span><br>ortalama = toplam/n &nbsp;<span style="color:var(--muted);">// 2 işlem(= ve /)</span></div>
+      <div class="formula-big" style="font-size:15px;">T(n) = 1+(2n+2)+2n+2 = <b>4n + 5 = n</b></div>
+    </div>
+  </div>
+  <div class="examples"><div class="examples-head"><span class="dot"></span><h4>Örnek Sorular</h4></div>
+    <details class="q"><summary><span class="qnum">S1.</span> "for (k=0; k&lt;n; k++)" döngüsünde neden toplam işlem sayısı "2n+2" olarak hesaplanıyor?<span class="arrow">▶</span></summary><div class="answer">k=0 ataması 1 kez, koşul kontrolü (k&lt;n) n+1 kez, k++ artırımı n kez çalışır. Toplam: 1+(n+1)+n = 2n+2.</div></details>
+    <details class="q"><summary><span class="qnum">S2.</span> T(n)=4n+6 fonksiyonunun büyük-O'su nedir?<span class="arrow">▶</span></summary><div class="answer"><b>T(n)=O(n)</b> — Slayt 4.18'de tam olarak ispatlanmıştı.</div></details>
+  </div>
+</div></section>
+
+<!-- 29 -->
+<section class="slide" data-index="37"><div class="slide-inner">
+  <div class="kicker">4.28</div>
+  <h1 class="slide-title">İteratif Analiz — Diğer Örnekler</h1>
+  <p class="subtitle">En küçük eleman bulma ve matris toplama algoritmalarının analizi.</p>
+  <div class="grid2">
+    <div class="card"><h3>En Küçük Elemanı Bulma</h3>
+      <div class="formula-big" style="text-align:left; font-size:11px; line-height:1.65;">enkucuk=A[0] &nbsp;<span style="color:var(--muted);">// 1</span><br>for (k=1;k&lt;n;k++) &nbsp;<span style="color:var(--muted);">// 2n</span><br>&nbsp;&nbsp;if (A[k]&lt;enkucuk) &nbsp;<span style="color:var(--muted);">// n-1</span><br>&nbsp;&nbsp;&nbsp;&nbsp;enkucuk=A[k] &nbsp;<span style="color:var(--muted);">// en kötü n-1</span></div>
+      <div class="formula-big" style="font-size:14px;">T(n) = 1+2n+(n−1)+(n−1) = <b>4n</b></div>
+    </div>
+    <div class="card"><h3>Matris Toplamı (n×m)</h3>
+      <div class="formula-big" style="text-align:left; font-size:11px; line-height:1.65;">for (i=0;i&lt;n;i++) &nbsp;<span style="color:var(--muted);">// 2n+2</span><br>&nbsp;&nbsp;for (j=0;j&lt;m;j++) &nbsp;<span style="color:var(--muted);">// (2m+2)n</span><br>&nbsp;&nbsp;&nbsp;&nbsp;C[i][j]=A[i][j]+B[i][j] &nbsp;<span style="color:var(--muted);">// 2mn</span></div>
+      <div class="formula-big" style="font-size:13px;">T(n)=4mn+4n+2 &nbsp;→ m=n: <b>T(n)=4n²+4n+2</b></div>
+    </div>
+  </div>
+  <div class="examples"><div class="examples-head"><span class="dot"></span><h4>Örnek Sorular</h4></div>
+    <details class="q"><summary><span class="qnum">S1.</span> Matris toplamı için m=n alındığında T(n)=4n²+4n+2 fonksiyonunun büyük-O'sunu bulun.<span class="arrow">▶</span></summary><div class="answer"><b>O(n²)</b> — en yüksek dereceli terim baskındır.</div></details>
+    <details class="q"><summary><span class="qnum">S2.</span> "En küçük elemanı bulma" algoritmasında "enkucuk=A[k]" satırının en kötü durumda kaç kez çalıştığı neden "belli değil" deniyor?<span class="arrow">▶</span></summary><div class="answer">Sadece A[k] mevcut en küçükten <i>küçükse</i> çalışır — dizinin içeriğine bağlıdır. En kötü durumda (azalan sıra) n−1 kez çalışabilir.</div></details>
+  </div>
+</div></section>
+
+<!-- 30 NEW: Bubble sort -->
+<section class="slide" data-index="38"><div class="slide-inner">
+  <div class="kicker">4.29</div>
+  <h1 class="slide-title">İteratif Analiz — Kabarcık Sıralaması <em>(Bubble Sort)</em></h1>
+  <p class="subtitle">İç içe döngülerle çalışan klasik bir sıralama algoritması.</p>
+  <div class="grid2">
+    <div class="card"><h3>Sözde Kod</h3>
+      <div class="formula-big" style="text-align:left; font-size:11.5px; line-height:1.65;">for i:=1 to n−1<br>&nbsp;&nbsp;for j:=1 to n−i<br>&nbsp;&nbsp;&nbsp;&nbsp;if A[j]&gt;A[j+1]<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A[j],A[j+1] yer değiştir</div>
+      <p style="margin:0; font-size:12.5px; color:var(--muted);">Mantık: bitişik elemanları karşılaştırıp yanlış sıradaysa yer değiştirir; her geçişte en büyük eleman "yükselerek" doğru yerine gider.</p>
+    </div>
+    <div class="card"><h3>Analiz</h3>
+      <p style="margin:0 0 8px;">Temel işlem: karşılaştırma (A[j]&gt;A[j+1]). İç döngü i. geçişte (n−i) kez çalışır.</p>
+      <div class="formula-big" style="font-size:13px;">T(n) = (n−1)+(n−2)+…+1 = n(n−1)/2</div>
+      <div class="formula-big" style="font-size:15px;">T(n) = O(n²)</div>
+    </div>
+  </div>
+  <div class="examples"><div class="examples-head"><span class="dot"></span><h4>Örnek Sorular</h4></div>
+    <details class="q"><summary><span class="qnum">S1.</span> n=5 elemanlı bir dizi için Bubble Sort'un yapacağı toplam karşılaştırma sayısını hesaplayın.<span class="arrow">▶</span></summary><div class="answer">n(n−1)/2 = 5×4/2 = <b>10</b> karşılaştırma.</div></details>
+    <details class="q"><summary><span class="qnum">S2.</span> Bubble Sort'un en iyi durumu (dizi zaten sıralıysa) hâlâ O(n²) midir?<span class="arrow">▶</span></summary><div class="answer">Standart (optimize edilmemiş) versiyonda evet, çünkü tüm karşılaştırmalar yine de yapılır. Ancak "swap yapılmadıysa erken dur" optimizasyonu eklenirse, en iyi durum O(n)'e iner.</div></details>
+  </div>
+</div></section>
+
+<!-- 31 NEW: Insertion sort -->
+<section class="slide" data-index="39"><div class="slide-inner">
+  <div class="kicker">4.30</div>
+  <h1 class="slide-title">İteratif Analiz — Ekleme Sıralaması <em>(Insertion Sort)</em></h1>
+  <p class="subtitle">Her elemanı, önceki sıralanmış kısmın doğru yerine "sokan" algoritma.</p>
+  <div class="grid2">
+    <div class="card"><h3>Sözde Kod</h3>
+      <div class="formula-big" style="text-align:left; font-size:11.5px; line-height:1.65;">for i:=2 to n<br>&nbsp;&nbsp;anahtar:=A[i]; j:=i−1<br>&nbsp;&nbsp;while j&gt;0 and A[j]&gt;anahtar<br>&nbsp;&nbsp;&nbsp;&nbsp;A[j+1]:=A[j]; j:=j−1<br>&nbsp;&nbsp;A[j+1]:=anahtar</div>
+    </div>
+    <div class="card"><h3>Analiz — En Kötü vs En İyi</h3>
+      <p style="margin:0 0 6px; font-size:13px;"><b>En kötü durum</b> (dizi azalan sırada): her eleman en başa kadar kaydırılır → 1+2+…+(n−1)=n(n−1)/2 → <b>O(n²)</b>.</p>
+      <p style="margin:0; font-size:13px;"><b>En iyi durum</b> (dizi zaten sıralı): iç döngü hiç çalışmaz, sadece dış döngü n−1 kez döner → <b>O(n)</b>.</p>
+    </div>
+  </div>
+  <div class="examples"><div class="examples-head"><span class="dot"></span><h4>Örnek Sorular</h4></div>
+    <details class="q"><summary><span class="qnum">S1.</span> Insertion Sort'un en iyi durumunun O(n) olması neden Bubble Sort'tan (optimizasyonsuz) daha avantajlı olabilir?<span class="arrow">▶</span></summary><div class="answer">Çünkü neredeyse sıralı olan diziler için (pratikte sık karşılaşılan bir durum), Insertion Sort doğal olarak hızlı çalışır — sadece birkaç eleman yer değiştirir, oysa optimizasyonsuz Bubble Sort yine de tüm karşılaştırmaları yapar.</div></details>
+    <details class="q"><summary><span class="qnum">S2.</span> Insertion Sort'un ortalama durumu hangi mertebededir?<span class="arrow">▶</span></summary><div class="answer">Ortalama durumda da <b>O(n²)</b>'dir — rastgele sıralı bir dizide, her eleman ortalama olarak yaklaşık yarı yola kadar kaydırılır, bu da yine n²/4 mertebesinde bir işlem sayısına karşılık gelir.</div></details>
+  </div>
+</div></section>
+
+<!-- 32 NEW: Binary search iterative O(log n) -->
+<section class="slide" data-index="40"><div class="slide-inner">
+  <div class="kicker">4.31</div>
+  <h1 class="slide-title">İteratif Analiz — İkili Arama: O(log n)</h1>
+  <p class="subtitle">Her adımda arama alanı yarıya iniyorsa, kaç adımda 1'e ulaşılır?</p>
+  <div class="card"><h3>Analiz</h3>
+    <p style="margin:0 0 8px;">Başlangıç arama alanı n. Her karşılaştırmadan sonra alan yarıya iner: n → n/2 → n/4 → … → 1.</p>
+    <p style="margin:0 0 8px;">Kaç adımda n'den 1'e ulaşırız? n/2ᵏ=1 olacak k'yı bulmalıyız:</p>
+    <div class="formula-big" style="font-size:16px;">2ᵏ = n &nbsp;⟹&nbsp; k = log₂n</div>
+    <div class="formula-big" style="font-size:16px;">T(n) = O(log n)</div>
+  </div>
+  <div class="examples"><div class="examples-head"><span class="dot"></span><h4>Örnek Sorular</h4></div>
+    <details class="q"><summary><span class="qnum">S1.</span> 1.000.000 elemanlı sıralı bir dizide ikili arama en fazla kaç karşılaştırma gerektirir (yaklaşık)?<span class="arrow">▶</span></summary><div class="answer">log₂(1.000.000)≈20 — sadece yaklaşık <b>20 karşılaştırma</b> yeterlidir; bu, doğrusal aramanın (en kötü 1.000.000 karşılaştırma) inanılmaz bir hızlanmasıdır!</div></details>
+    <details class="q"><summary><span class="qnum">S2.</span> Dizi boyutu iki katına çıkarsa (n→2n), ikili aramanın karşılaştırma sayısı nasıl değişir?<span class="arrow">▶</span></summary><div class="answer">log₂(2n)=log₂2+log₂n=1+log₂n — sadece <b>1 karşılaştırma daha</b> gerekir! Bu, logaritmik büyümenin ne kadar "yavaş" olduğunun çarpıcı bir göstergesidir.</div></details>
+  </div>
+</div></section>
+
+<!-- 33 NEW: sorting comparison table -->
+<section class="slide" data-index="41"><div class="slide-inner">
+  <div class="kicker">4.32</div>
+  <h1 class="slide-title">Sıralama Algoritmaları — Karşılaştırma Tablosu</h1>
+  <p class="subtitle">Şimdiye kadar gördüğümüz (ve birazdan göreceğimiz) sıralama algoritmalarını bir arada toplayalım.</p>
+  <table class="laws">
+    <tr><th>Algoritma</th><th>En İyi</th><th>Ortalama</th><th>En Kötü</th><th>Alan</th></tr>
+    <tr><td>Bubble Sort</td><td class="f">O(n²)*</td><td class="f">O(n²)</td><td class="f">O(n²)</td><td class="f">O(1)</td></tr>
+    <tr><td>Insertion Sort</td><td class="f">O(n)</td><td class="f">O(n²)</td><td class="f">O(n²)</td><td class="f">O(1)</td></tr>
+    <tr><td>Merge Sort <span style="color:var(--muted); font-size:10px;">(Slayt 4.41)</span></td><td class="f">O(n log n)</td><td class="f">O(n log n)</td><td class="f">O(n log n)</td><td class="f">O(n)</td></tr>
+    <tr><td>Quicksort <span style="color:var(--muted); font-size:10px;">(Slayt 4.42)</span></td><td class="f">O(n log n)</td><td class="f">O(n log n)</td><td class="f">O(n²)</td><td class="f">O(log n)</td></tr>
+  </table>
+  <p style="margin:8px 0 0; font-size:12px; color:var(--muted);">*Erken durma optimizasyonu olmadan.</p>
+  <div class="examples"><div class="examples-head"><span class="dot"></span><h4>Örnek Sorular</h4></div>
+    <details class="q"><summary><span class="qnum">S1.</span> 10 milyon elemanlı bir dizi sıralanacaksa, Insertion Sort mu yoksa Merge Sort mu tercih edilmelidir?<span class="arrow">▶</span></summary><div class="answer"><b>Merge Sort</b> — O(n log n), O(n²)'den çok daha hızlıdır ve büyük veri kümelerinde Insertion/Bubble Sort pratikte kullanılamaz hale gelir (Slayt 4.26'daki büyüme tablosunu hatırlayın).</div></details>
+    <details class="q"><summary><span class="qnum">S2.</span> Quicksort'un en kötü durumu neden O(n²)'ye düşer, ortalama durumu O(n log n) iken?<span class="arrow">▶</span></summary><div class="answer">Kötü bir "pivot" seçimi (örn. her zaman dizinin en küçük/en büyük elemanı) durumunda, dizi dengesiz ikiye bölünür (1 ve n−1 parçalarına) — bu da Insertion Sort'unkine benzer bir n(n-1)/2 türü davranışa yol açar (Slayt 4.42'de detaylandıracağız).</div></details>
+  </div>
+</div></section>
+
+<!-- SECTION DIVIDER: RECURSION -->
+<section class="slide" data-index="42">
+  <div class="section-divider">
+    <div class="num">BÖLÜM B</div>
+    <h1>Özyinelemeli Algoritmalar ve <em style="font-style:italic; color:var(--accent);">Rekürans Bağıntıları</em></h1>
+    <p>Rekürans tanımı ve sınıflandırması, çözüm yöntemleri, Master Teoremi, klasik özyinelemeli algoritmalar ve tasarım paradigmaları.</p>
+  </div>
+</section>
+
+<!-- 35 -->
+<section class="slide" data-index="43"><div class="slide-inner">
+  <div class="kicker">4.33</div>
+  <h1 class="slide-title">Özyinelemeli Algoritma Analizi ve Rekürans Bağıntısı</h1>
+  <p class="subtitle">Kendi kendini çağıran algoritmaların çalışma süresi nasıl ifade edilir?</p>
+  <div class="grid2">
+    <div class="card"><h3>Analiz Adımları</h3>
+      <ol class="step-list"><li>Girdi boyutu (n) belirlenir.</li><li>Temel işlem saptanır.</li><li>Temel işlemin, aynı boyuttaki farklı girdilere göre değişip değişmediği kontrol edilir.</li><li>Uygun bir başlangıç koşuluyla bir <b>rekürans bağıntısı</b> kurulur.</li><li>Bağıntı uygun bir yöntemle çözülür; T(n), asimptotik notasyonla ifade edilir.</li></ol>
+    </div>
+    <div class="card"><h3>Rekürans Bağıntısı Nedir?</h3>
+      <p style="margin:0 0 8px;">Bir dizinin içinde kendisinden bir parça bulunuyorsa, o diziye <b>rekürans bağıntısı (özyineli dizi)</b> denir.</p>
+      <div class="two-col-list" style="font-size:12.5px;">
+        <div><span class="chip no">✗ değil</span> aₙ=5n+1 <span style="color:var(--muted);">(kapalı form)</span></div>
+        <div><span class="chip ok">✓ evet</span> aₙ=2aₙ₋₁+3 <span style="color:var(--muted);">(kendi parçası)</span></div>
+      </div>
+    </div>
+  </div>
+  <div class="examples"><div class="examples-head"><span class="dot"></span><h4>Örnek Sorular</h4></div>
+    <details class="q"><summary><span class="qnum">S1.</span> factorial(n) fonksiyonu için rekürans bağıntısını yazın.<span class="arrow">▶</span></summary><div class="answer">T(n) = T(n−1) + 3, <b>T(0) = 1</b>.</div></details>
+    <details class="q"><summary><span class="qnum">S2.</span> aₙ=3aₙ₋₁+aₙ₋₂ (rekürans) ile aₙ=2ⁿ−n+1 (kapalı form) arasındaki fark nedir?<span class="arrow">▶</span></summary><div class="answer">İlki önceki terimlere ihtiyaç duyar; ikincisi n'e bağlı doğrudan bir formüldür — rekürans çözme sürecinin hedefi birinciden ikinciye ulaşmaktır.</div></details>
+  </div>
+</div></section>
+
+<!-- 36 NEW: Recursive examples factorial/fibonacci -->
+<section class="slide" data-index="44"><div class="slide-inner">
+  <div class="kicker">4.34</div>
+  <h1 class="slide-title">Özyinelemeli Algoritma Örnekleri: Faktöriyel ve Fibonacci</h1>
+  <p class="subtitle">Kendi kendini çağıran fonksiyonlara iki temel örnek.</p>
+  <div class="grid2">
+    <div class="card"><h3>Faktöriyel (tek özyinelemeli çağrı)</h3>
+      <div class="formula-big" style="text-align:left; font-size:12.5px; line-height:1.6;">factorial(n):<br>&nbsp;&nbsp;if n=0 return 1<br>&nbsp;&nbsp;return n * factorial(n−1)</div>
+      <p style="margin:0; font-size:12.5px; color:var(--muted);">Rekürans: T(n)=T(n−1)+O(1) → <b>O(n)</b>.</p>
+    </div>
+    <div class="card"><h3>Fibonacci (iki özyinelemeli çağrı)</h3>
+      <div class="formula-big" style="text-align:left; font-size:12.5px; line-height:1.6;">fib(n):<br>&nbsp;&nbsp;if n=0 return 0<br>&nbsp;&nbsp;if n=1 return 1<br>&nbsp;&nbsp;return fib(n−1) + fib(n−2)</div>
+      <p style="margin:0; font-size:12.5px; color:var(--muted);">Rekürans: T(n)=T(n−1)+T(n−2)+O(1) — bir sonraki slaytta analiz edeceğiz.</p>
+    </div>
+  </div>
+  <div class="examples"><div class="examples-head"><span class="dot"></span><h4>Örnek Sorular</h4></div>
+    <details class="q"><summary><span class="qnum">S1.</span> factorial(4) çağrısının açılımını (her adımı) yazın.<span class="arrow">▶</span></summary><div class="answer">factorial(4)=4×factorial(3)=4×3×factorial(2)=4×3×2×factorial(1)=4×3×2×1×factorial(0)=4×3×2×1×1=<b>24</b>.</div></details>
+    <details class="q"><summary><span class="qnum">S2.</span> fib(4) çağrısı, fib(2)'yi kaç kez hesaplar (tekrar tekrar)?<span class="arrow">▶</span></summary><div class="answer">fib(4)=fib(3)+fib(2). fib(3)=fib(2)+fib(1). Toplamda fib(2), <b>2 kez</b> ayrı ayrı hesaplanır — bu "tekrar eden alt problem" durumu, bir sonraki slaytta göreceğimiz verimsizliğin kaynağıdır.</div></details>
+  </div>
+</div></section>
+
+<!-- 37 NEW: Fibonacci exponential + memoization -->
+<section class="slide" data-index="45"><div class="slide-inner">
+  <div class="kicker">4.35</div>
+  <h1 class="slide-title">Fibonacci'nin Üstel Zaman Problemi ve <em>Memoization</em></h1>
+  <p class="subtitle">Basit görünen bir özyineleme, neden bu kadar yavaş çalışabilir?</p>
+  <div class="grid2">
+    <div class="card"><h3>Neden Üstel Zaman?</h3>
+      <p style="margin:0 0 8px;">T(n)=T(n−1)+T(n−2)+O(1) rekürans bağıntısı, Fibonacci dizisinin kendisine çok benzer bir büyüme sergiler. Recursion tree'de her seviyede düğüm sayısı yaklaşık <b>φⁿ</b> (φ≈1.618, altın oran) mertebesinde artar.</p>
+      <div class="formula-big" style="font-size:15px;">T(n) = O(φⁿ) ≈ O(1.618ⁿ)</div>
+      <p style="margin:0; font-size:12px; color:var(--muted);">Sebep: aynı alt problemler (örn. fib(2)) defalarca yeniden hesaplanır — büyük bir israf!</p>
+    </div>
+    <div class="card"><h3>Çözüm: Memoization / Dinamik Programlama</h3>
+      <p style="margin:0 0 8px;">Her fib(k) sonucunu bir kez hesaplayıp <b>saklarsak (memoize)</b>, aynı alt problem tekrar hesaplanmaz.</p>
+      <div class="formula-big" style="font-size:14px;">Memoized fib(n) → O(n)</div>
+      <p style="margin:0; font-size:12px; color:var(--muted);">Ya da tamamen iteratif (döngüyle, saklama alanı kullanarak) yazılırsa da O(n) zaman ve O(1) alan ile çözülebilir — özyinelemenin "zarafeti" ile performans arasındaki klasik ödünleşim.</p>
+    </div>
+  </div>
+  <div class="examples"><div class="examples-head"><span class="dot"></span><h4>Örnek Sorular</h4></div>
+    <details class="q"><summary><span class="qnum">S1.</span> Memoization ile fib(n) hesaplamanın O(n) olmasının nedeni nedir?<span class="arrow">▶</span></summary><div class="answer">Her farklı n değeri için fib(n) sadece <b>bir kez</b> hesaplanır ve saklanır; 0'dan n'e kadar toplam n farklı değer olduğundan, toplam hesaplama n adımda tamamlanır.</div></details>
+    <details class="q"><summary><span class="qnum">S2.</span> Bu örnek, "özyinelemeli çözüm her zaman verimlidir" iddiasını nasıl çürütür?<span class="arrow">▶</span></summary><div class="answer">Naif (saklamasız) özyinelemeli Fibonacci, üstel zaman alırken, aynı problemi iteratif ya da memoized bir yaklaşımla O(n)'de çözebiliriz — bu, özyinelemenin <i>şık</i> olmasının, her zaman <i>verimli</i> olması anlamına gelmediğini gösterir.</div></details>
+  </div>
+</div></section>
+
+<!-- 38 -->
+<section class="slide" data-index="46"><div class="slide-inner">
+  <div class="kicker">4.36</div>
+  <h1 class="slide-title">Rekürans Bağıntılarının Sınıflandırılması</h1>
+  <p class="subtitle">Bir rekürans bağıntısını çözmeden önce dört kritere göre sınıflandırmalıyız — hangi çözüm tekniğini kullanacağımızı bu belirler.</p>
+  <div class="grid2">
+    <div class="card"><h3>1) Derece (Order)</h3>
+      <p style="margin:0 0 6px; font-size:12.5px;">aₙ'nin kendisinden <b>sonraki kaç terime</b> bağlı olması, bağıntının derecesini verir.</p>
+      <table class="tt" style="font-family:var(--sans); font-size:11.5px;">
+        <tr><td class="left">aₙ = 5aₙ₋₁ + n²</td><td>1. derece</td></tr>
+        <tr><td class="left">aₙ = 3aₙ₋₁ − 5aₙ₋₂</td><td>2. derece</td></tr>
+        <tr><td class="left">aₙ = 3aₙ₋₁ + aₙ₋₃ + 3ⁿ</td><td>3. derece</td></tr>
+        <tr><td class="left">aₙ = 2aₙ₋₄ + 1</td><td>4. derece</td></tr>
+      </table>
+    </div>
+    <div class="card"><h3>2) Homojen / Homojen Değil</h3>
+      <p style="margin:0 0 6px; font-size:12.5px;">Sadece aₙ terimlerinden oluşuyorsa <b>homojendir</b>.</p>
+      <div style="font-size:12px;">
+        <div><span class="chip ok">✓</span> aₙ = 3aₙ₋₁</div>
+        <div><span class="chip ok">✓</span> aₙ = aₙ₋₁ − 2aₙ₋₂</div>
+        <div><span class="chip no">✗</span> aₙ = 3aₙ₋₁ + n·aₙ₋₂ + 3ⁿ</div>
+        <div><span class="chip no">✗</span> aₙ = aₙ₋₁ + 2aₙ₋₃ − 4</div>
+        <div><span class="chip no">✗</span> aₙ = aₙ₋₂ + n³ + n²</div>
+      </div>
+    </div>
+  </div>
+  <div class="grid2" style="margin-top:11px;">
+    <div class="card"><h3>3) Lineer / Lineer Olmayan</h3>
+      <p style="margin:0 0 6px; font-size:12.5px;">aₙ'li terimlerin üslerinin alınması veya birbirleriyle çarpılması <b>lineerliği bozar</b>.</p>
+      <div style="font-size:12px;">
+        <div><span class="chip ok">✓</span> aₙ = 5aₙ₋₂ + n·aₙ₋₃ + n²</div>
+        <div><span class="chip no">✗</span> aₙ = (aₙ₋₁)² + 3n</div>
+        <div><span class="chip no">✗</span> (aₙ)³ = aₙ₋₁ + aₙ₋₂</div>
+      </div>
+    </div>
+    <div class="card"><h3>4) Sabit Katsayılı / Değil</h3>
+      <p style="margin:0 0 6px; font-size:12.5px;">aₙ'li ifadeler, n'li bir birey ile çarpım durumunda ise <b>sabit katsayılı değildir</b>.</p>
+      <div style="font-size:12px;">
+        <div><span class="chip ok">✓</span> aₙ = 3aₙ₋₁ + 5aₙ₋₂ + n−7</div>
+        <div><span class="chip no">✗</span> aₙ = n·aₙ₋₁ + 3aₙ₋₂ + 5ⁿ</div>
+      </div>
+    </div>
+  </div>
+  <div class="examples"><div class="examples-head"><span class="dot"></span><h4>Örnek Sorular</h4></div>
+    <details class="q"><summary><span class="qnum">S1.</span> aₙ = 2aₙ₋₁ + 3aₙ₋₃ bağıntısının derecesini ve homojen olup olmadığını belirleyin.<span class="arrow">▶</span></summary><div class="answer">En uzak terim aₙ₋₃ olduğundan <b>3. derece</b>. Ekstra terim olmadığından <b>homojendir</b>.</div></details>
+    <details class="q"><summary><span class="qnum">S2.</span> aₙ = n·aₙ₋₁ + 3aₙ₋₂ + 5ⁿ bağıntısı neden karakteristik kök tekniğiyle doğrudan çözülemez?<span class="arrow">▶</span></summary><div class="answer">Çünkü <b>sabit katsayılı değildir</b> — n·aₙ₋₁ teriminde katsayı sabit değildir.</div></details>
+  </div>
+</div></section>
+
+<!-- 39 -->
+<section class="slide" data-index="47"><div class="slide-inner">
+  <div class="kicker">4.37</div>
+  <h1 class="slide-title">Rekürans Çözümü I — <em>Forward &amp; Backward Substitution</em></h1>
+  <p class="subtitle">"Desen bul, tahmin et, doğrula" (guessing and checking) — en sezgisel çözüm yöntemi.</p>
+  <div class="grid2">
+    <div class="card"><h3>Forward Substitution — Örnek</h3>
+      <p style="margin:0 0 7px; font-size:12.5px;">T(n) = T(n−1) + 1, T(1) = 2</p>
+      <div class="formula-big" style="text-align:left; font-size:12px; line-height:1.6;">T(1) = 2 &nbsp;(başlangıç)<br>T(2) = T(1)+1 = 3<br>T(3) = T(2)+1 = 4<br>T(4) = T(3)+1 = 5<br>T(5) = T(4)+1 = 6</div>
+      <p style="margin:0;"><b>Desen (Tahmin):</b> T(n) = n + 1</p>
+      <p style="margin:6px 0 0; font-size:12px; color:var(--muted);"><b>Doğrulama:</b> T(n)=T(n−1)+1=[(n−1)+1]+1=n+1 ✓, T(1)=1+1=2 ✓</p>
+    </div>
+    <div class="card"><h3>Backward Substitution — Aynı Örnek</h3>
+      <p style="margin:0 0 7px; font-size:12.5px;">Aynı bağıntıyı bu kez geriye doğru açalım:</p>
+      <div class="formula-big" style="text-align:left; font-size:11.5px; line-height:1.55;">T(n) = T(n−1)+1<br>&nbsp;= [T(n−2)+1]+1<br>&nbsp;= [[T(n−3)+1]+1]+1<br>&nbsp;= ... = [...[T(n−k)+1]...]+1 &nbsp;[k tane 1]</div>
+      <p style="margin:0;">k = n−1 alınırsa: T(n) = T(1) + (n−1) = 2 + (n−1) = <b>n + 1</b></p>
+    </div>
+  </div>
+  <div class="card" style="margin-top:11px;"><h3>Ek örnek — Faktöriyel (Backward Substitution)</h3>
+    <p style="margin:0;">T(n)=T(n−1)+3, T(0)=1 → T(n)=T(n−1)+3=T(n−2)+6=…=T(n−k)+3k. k=n olduğunda: T(n)=T(0)+3n=1+3n → <b>T(n)=3n+1</b> — O(n).</p>
+  </div>
+  <div class="examples"><div class="examples-head"><span class="dot"></span><h4>Örnek Sorular</h4></div>
+    <details class="q"><summary><span class="qnum">S1.</span> T(n)=3n+1 sonucunu n=4 için doğrudan yineleme ile doğrulayın.<span class="arrow">▶</span></summary><div class="answer">T(0)=1, T(1)=4, T(2)=7, T(3)=10, T(4)=13. Formül: 3(4)+1=<b>13</b>. ✓</div></details>
+    <details class="q"><summary><span class="qnum">S2.</span> Forward ve backward substitution arasındaki temel fark nedir?<span class="arrow">▶</span></summary><div class="answer">Forward, temel durumdan başlayıp <b>yukarı doğru</b> sayısal değerler üretir. Backward, T(n)'den başlayıp geriye doğru <b>cebirsel açılım</b> yaparak genel formülü ispatlar.</div></details>
+  </div>
+</div></section>
+
+<!-- 40 -->
+<section class="slide" data-index="48"><div class="slide-inner">
+  <div class="kicker">4.38</div>
+  <h1 class="slide-title">Rekürans Çözümü II — <em>Recursion Tree Method</em></h1>
+  <p class="subtitle">Özyinelemenin her seviyede kaç alt probleme dallandığını görsel olarak takip etme yöntemi.</p>
+  <div class="grid2">
+    <div class="card"><h3>Yöntem</h3>
+      <p style="margin:0;">Özyineleme ağacı yöntemi, her seviyede düğümlerin genişletildiği ağaç formunda bir gösterimdir. Genelde bağıntının <b>ikinci terimi</b> kök olarak kabul edilir. Özellikle <b>Böl ve Fethet</b> algoritmalarında çok faydalıdır.</p>
+    </div>
+    <div class="card"><h3>Örnek: T(n) = 4T(n/2) + n</h3>
+      <div class="formula-big" style="text-align:left; font-size:12px; line-height:1.7;">Seviye 0: iş = n<br>Seviye 1: 4 alt problem, her biri n/2 → toplam iş = 2n<br>Seviye 2: 16 alt problem, her biri n/4 → toplam iş = 4n<br>… (log₂n seviye, her seviyede iş bir öncekinin 2 katı)</div>
+    </div>
+  </div>
+  <div class="card" style="margin-top:11px;"><h3>Toplam işin hesaplanması</h3>
+    <p style="margin:0 0 8px;">Seviyelerin toplamı: n + 2n + 4n + … (log₂n terim) — oranı 2 olan bir geometrik seri:</p>
+    <div class="formula-big" style="font-size:13.5px;">T(n) = n·(2^(log₂n) − 1)/(2−1) = n(n−1) = n² − n</div>
+    <div class="formula-big" style="font-size:16px;">T(n) = θ(n²)</div>
+  </div>
+  <div class="examples"><div class="examples-head"><span class="dot"></span><h4>Örnek Sorular</h4></div>
+    <details class="q"><summary><span class="qnum">S1.</span> T(n)=4T(n/2)+n bağıntısında ağacın kaç seviyesi vardır ve neden?<span class="arrow">▶</span></summary><div class="answer"><b>log₂n</b> seviye — her seviyede problem boyutu yarıya iner.</div></details>
+    <details class="q"><summary><span class="qnum">S2.</span> Her seviyede iş neden bir öncekinin tam olarak 2 katı oluyor?<span class="arrow">▶</span></summary><div class="answer">Dallanma faktörü a=4 iken bölme faktörü b=2'dir. Net etki: 4/2=2 kat.</div></details>
+  </div>
+</div></section>
+
+<!-- 41 NEW: recursion tree II -->
+<section class="slide" data-index="49"><div class="slide-inner">
+  <div class="kicker">4.39</div>
+  <h1 class="slide-title">Recursion Tree — İkinci Örnek: T(n) = T(n/2) + 1</h1>
+  <p class="subtitle">İkili aramanın (Slayt 4.4, 4.31) rekürans bağıntısını ağaç yöntemiyle doğrulayalım.</p>
+  <div class="card"><h3>Ağaç Analizi</h3>
+    <div class="formula-big" style="text-align:left; font-size:12.5px; line-height:1.75;">Seviye 0: 1 düğüm, iş = 1<br>Seviye 1: 1 düğüm (n/2 boyutunda), iş = 1<br>Seviye 2: 1 düğüm (n/4 boyutunda), iş = 1<br>… taban durumuna (boyut=1) kadar</div>
+    <p style="margin:0 0 8px;">Bu kez dallanma yok (a=1) — her seviyede sadece <b>1</b> düğüm var, ve her düğümün işi sabit (1). Toplam seviye sayısı yine log₂n:</p>
+    <div class="formula-big" style="font-size:16px;">T(n) = 1×log₂n = θ(log n)</div>
+    <p style="margin:8px 0 0; font-size:12.5px; color:var(--muted);">Bu sonuç, Slayt 4.31'de iteratif olarak bulduğumuz O(log n) sonucuyla birebir örtüşüyor — aynı algoritmanın iki farklı analiz yöntemiyle (iteratif sayma ve recursion tree) aynı sonuca ulaşması, doğruluğumuzu teyit eder.</p>
+  </div>
+  <div class="examples"><div class="examples-head"><span class="dot"></span><h4>Örnek Sorular</h4></div>
+    <details class="q"><summary><span class="qnum">S1.</span> T(n)=4T(n/2)+n (Slayt 4.38) ile T(n)=T(n/2)+1 arasındaki temel yapısal fark nedir?<span class="arrow">▶</span></summary><div class="answer">İlkinde her seviyede dallanma (4 alt problem) var ve iş seviyeden seviyeye artıyor (θ(n²) sonucu). İkincisinde dallanma yok (tek dal) ve iş her seviyede sabit kalıyor (θ(log n) sonucu) — dallanma faktörünün sonucu ne kadar dramatik etkilediğini gösterir.</div></details>
+    <details class="q"><summary><span class="qnum">S2.</span> T(n)=2T(n/2)+1 bağıntısının recursion tree ile çözümü nedir?<span class="arrow">▶</span></summary><div class="answer">Seviye k'de 2ᵏ düğüm var, her biri iş=1 yapıyor → seviye toplamı=2ᵏ. Toplam: 1+2+4+…+n (log n seviye, n=2^(log n)) = 2n−1 = <b>θ(n)</b>.</div></details>
+  </div>
+</div></section>
+
+<!-- 42 NEW: Master Theorem -->
+<section class="slide" data-index="50"><div class="slide-inner">
+  <div class="kicker">4.40</div>
+  <h1 class="slide-title">Master Teoremi <em>(Divide and Conquer)</em></h1>
+  <p class="subtitle">T(n)=aT(n/b)+f(n) biçimindeki rekürans bağıntılarını, recursion tree çizmeden doğrudan çözen genel formül.</p>
+  <div class="card">
+    <p style="margin:0 0 10px;">T(n) = aT(n/b) + f(n) biçiminde bir bağıntı olsun; burada a≥1, b&gt;1 sabitlerdir. f(n)'i <span class="formula">n^(log_b a)</span> ile karşılaştırın:</p>
+    <table class="laws">
+      <tr><th>Durum</th><th>Koşul</th><th>Sonuç</th></tr>
+      <tr><td>1</td><td class="f">f(n) = O(n^(log_b a − ε)), bir ε&gt;0 için</td><td class="f">T(n) = θ(n^(log_b a))</td></tr>
+      <tr><td>2</td><td class="f">f(n) = θ(n^(log_b a))</td><td class="f">T(n) = θ(n^(log_b a) · log n)</td></tr>
+      <tr><td>3</td><td class="f">f(n) = Ω(n^(log_b a + ε)) ve düzenlilik koşulu*</td><td class="f">T(n) = θ(f(n))</td></tr>
+    </table>
+    <p style="margin:8px 0 0; font-size:12px; color:var(--muted);">*Düzenlilik koşulu: yeterince büyük n için a·f(n/b) ≤ c·f(n) olacak bir c&lt;1 sabiti vardır.</p>
+  </div>
+  <div class="card" style="margin-top:11px;"><h3>Sezgisel yorum</h3>
+    <p style="margin:0;">n^(log_b a), "alt problemlerin toplam işi" ile f(n) "her seviyede birleştirme işi"ni karşılaştırır: Durum 1'de alt problemler baskındır (yapraklarda iş yoğunlaşır); Durum 2'de ikisi dengededir (her seviyede eşit iş — Slayt 4.40'daki gibi); Durum 3'te birleştirme adımı baskındır.</p>
+  </div>
+  <div class="examples"><div class="examples-head"><span class="dot"></span><h4>Örnek Sorular</h4></div>
+    <details class="q"><summary><span class="qnum">S1.</span> T(n)=4T(n/2)+n bağıntısında a,b,f(n) değerlerini belirleyip hangi duruma girdiğini söyleyin.<span class="arrow">▶</span></summary><div class="answer">a=4,b=2,f(n)=n. n^(log₂4)=n². f(n)=n=O(n^(2−1)) olduğundan <b>Durum 1</b> geçerlidir → T(n)=θ(n²) (Slayt 4.38'deki recursion tree sonucuyla tam örtüşüyor!).</div></details>
+    <details class="q"><summary><span class="qnum">S2.</span> Master Teoremi her T(n)=aT(n/b)+f(n) bağıntısını çözer mi?<span class="arrow">▶</span></summary><div class="answer">Hayır — f(n), üç durumdan hiçbirine tam olarak uymuyorsa (örneğin durum 1 ile 2 arasında "boşlukta" kalıyorsa) Master Teoremi bir sonuç vermez; bu durumlarda recursion tree ya da başka yöntemler (Akra-Bazzi gibi) gerekir.</div></details>
+  </div>
+</div></section>
+
+<!-- 43 NEW: Master theorem examples -->
+<section class="slide" data-index="51"><div class="slide-inner">
+  <div class="kicker">4.41</div>
+  <h1 class="slide-title">Master Teoremi — Uygulamalı Örnekler</h1>
+  <p class="subtitle">Üç farklı bağıntıya teoremi uygulayarak sonuçları hızlıca bulalım.</p>
+  <table class="laws">
+    <tr><th>Bağıntı</th><th>a, b, f(n)</th><th>n^(log_b a)</th><th>Durum</th><th>Sonuç</th></tr>
+    <tr><td class="f">T(n)=2T(n/2)+n</td><td class="f">a=2,b=2,f(n)=n</td><td class="f">n¹=n</td><td>2 (f(n)=θ(n))</td><td class="f">θ(n log n)</td></tr>
+    <tr><td class="f">T(n)=T(n/2)+1</td><td class="f">a=1,b=2,f(n)=1</td><td class="f">n⁰=1</td><td>2 (f(n)=θ(1))</td><td class="f">θ(log n)</td></tr>
+    <tr><td class="f">T(n)=4T(n/2)+n</td><td class="f">a=4,b=2,f(n)=n</td><td class="f">n²</td><td>1 (f(n)=O(n^(2−ε)))</td><td class="f">θ(n²)</td></tr>
+  </table>
+  <p style="margin:10px 0 0; font-size:12.5px; color:var(--muted);">Her üç sonuç da daha önce recursion tree yöntemiyle (Slayt 4.38, 4.39) veya doğrudan (merge sort, ikili arama) bulduğumuz sonuçlarla <b>birebir uyuşuyor</b> — Master Teoremi'nin bu bağıntıları çok daha hızlı çözdüğünü gösteriyor.</p>
+  <div class="examples"><div class="examples-head"><span class="dot"></span><h4>Örnek Sorular</h4></div>
+    <details class="q"><summary><span class="qnum">S1.</span> T(n)=3T(n/2)+n bağıntısını Master Teoremi ile çözün.<span class="arrow">▶</span></summary><div class="answer">a=3,b=2,f(n)=n. n^(log₂3)≈n^1.585. f(n)=n=O(n^(1.585−ε)) → <b>Durum 1</b> → T(n)=θ(n^1.585) (bu, Karatsuba çarpma algoritmasının karmaşıklığıdır!).</div></details>
+    <details class="q"><summary><span class="qnum">S2.</span> T(n)=8T(n/2)+n² bağıntısını Master Teoremi ile çözün.<span class="arrow">▶</span></summary><div class="answer">a=8,b=2,f(n)=n². n^(log₂8)=n³. f(n)=n²=O(n^(3−1)) → <b>Durum 1</b> → T(n)=θ(n³).</div></details>
+  </div>
+</div></section>
+
+<!-- 44 NEW: Merge sort -->
+<section class="slide" data-index="52"><div class="slide-inner">
+  <div class="kicker">4.42</div>
+  <h1 class="slide-title">Merge Sort — Özyinelemeli Bir Sıralama Algoritması</h1>
+  <p class="subtitle">"Böl ve Fethet" (Divide and Conquer) paradigmasının klasik örneği.</p>
+  <div class="grid2">
+    <div class="card"><h3>Algoritma</h3>
+      <ol class="step-list"><li>Dizi 1 veya 0 elemanlıysa zaten sıralıdır, olduğu gibi döndür.</li><li>Diziyi iki eşit yarıya böl.</li><li>Her yarıyı <b>özyinelemeli</b> olarak sırala.</li><li>İki sıralı yarıyı tek bir sıralı diziye <b>birleştir (merge)</b>.</li></ol>
+    </div>
+    <div class="card"><h3>Rekürans Bağıntısı</h3>
+      <div class="formula-big" style="font-size:15px;">T(n) = 2T(n/2) + cn</div>
+      <p style="margin:0;">2T(n/2): iki yarıyı sıralamak. cn: birleştirme (merge) adımı, n elemanı doğrusal zamanda birleştirir.</p>
+      <div class="formula-big" style="font-size:16px;">Master Teoremi (Durum 2) → T(n) = θ(n log n)</div>
+    </div>
+  </div>
+  <div class="examples"><div class="examples-head"><span class="dot"></span><h4>Örnek Sorular</h4></div>
+    <details class="q"><summary><span class="qnum">S1.</span> Merge Sort'un neden her zaman (en iyi, en kötü, ortalama) θ(n log n) olduğunu açıklayın (Bubble/Insertion Sort'un aksine).<span class="arrow">▶</span></summary><div class="answer">Çünkü bölme her zaman diziyi tam olarak yarıya böler ve birleştirme adımı her zaman tam olarak n işlem gerektirir — girdinin sırasından (sıralı mı, ters mi) bağımsızdır, bu yüzden en iyi/en kötü/ortalama durum arasında fark yoktur.</div></details>
+    <details class="q"><summary><span class="qnum">S2.</span> Merge Sort'un alan karmaşıklığı neden O(n)'dir (Quicksort'un O(log n)'ine kıyasla)?<span class="arrow">▶</span></summary><div class="answer">Birleştirme (merge) adımı, iki yarıyı birleştirmek için genelde <b>ekstra bir dizi</b> (geçici bellek) gerektirir — bu da toplamda O(n) ekstra alana yol açar. Quicksort ise "yerinde" (in-place) çalışabildiğinden sadece özyineleme yığını için O(log n) alan kullanır.</div></details>
+  </div>
+</div></section>
+
+<!-- 45 NEW: Quicksort -->
+<section class="slide" data-index="53"><div class="slide-inner">
+  <div class="kicker">4.43</div>
+  <h1 class="slide-title">Quicksort — Özyinelemeli Bir Sıralama Algoritması</h1>
+  <p class="subtitle">Bir "pivot" seçip diziyi ona göre bölen, pratikte çok hızlı çalışan algoritma.</p>
+  <div class="grid2">
+    <div class="card"><h3>Algoritma</h3>
+      <ol class="step-list"><li>Diziden bir <b>pivot</b> eleman seç.</li><li>Diziyi, pivottan küçükler ve büyükler olacak şekilde iki parçaya ayır (partition).</li><li>İki parçayı <b>özyinelemeli</b> olarak sırala.</li><li>Ekstra birleştirme adımına gerek yoktur — parçalar zaten yerli yerindedir.</li></ol>
+    </div>
+    <div class="card"><h3>En İyi/Ortalama vs En Kötü Durum</h3>
+      <p style="margin:0 0 6px; font-size:13px;"><b>Dengeli bölünme</b> (iyi pivot): T(n)=2T(n/2)+n → Master Teoremi Durum 2 → <b>θ(n log n)</b>.</p>
+      <p style="margin:0; font-size:13px;"><b>Dengesiz bölünme</b> (kötü pivot, örn. dizi zaten sıralı ve pivot hep en küçük eleman): T(n)=T(n−1)+n → (Slayt 4.39'daki forward substitution tekniğiyle) → <b>θ(n²)</b>.</p>
+    </div>
+  </div>
+  <div class="examples"><div class="examples-head"><span class="dot"></span><h4>Örnek Sorular</h4></div>
+    <details class="q"><summary><span class="qnum">S1.</span> T(n)=T(n−1)+n rekürans bağıntısını forward substitution ile çözün.<span class="arrow">▶</span></summary><div class="answer">T(n)=n+(n−1)+(n−2)+…+1=n(n+1)/2 → <b>θ(n²)</b> (Bölüm 2'deki Gauss toplamı formülüyle birebir aynı!).</div></details>
+    <details class="q"><summary><span class="qnum">S2.</span> Quicksort'un en kötü durumunu önlemek için hangi pratik strateji kullanılır?<span class="arrow">▶</span></summary><div class="answer">Pivotu <b>rastgele</b> seçmek (ya da "medyan-of-three" gibi akıllı seçim stratejileri kullanmak) — bu, kötü şanslı (dengesiz) bölünme olasılığını pratikte çok düşürür ve ortalama durumda θ(n log n) performansı garanti altına alır.</div></details>
+  </div>
+</div></section>
+
+<!-- 46 NEW: Tower of Hanoi -->
+<section class="slide" data-index="54"><div class="slide-inner">
+  <div class="kicker">4.44</div>
+  <h1 class="slide-title">Tower of Hanoi — Klasik Özyineleme Örneği</h1>
+  <p class="subtitle">Üç çubuk arasında disk taşıma bulmacası — özyinelemeli düşüncenin en ünlü örneklerinden biri.</p>
+  <div class="grid2">
+    <div class="card"><h3>Problem ve Özyinelemeli Çözüm</h3>
+      <p style="margin:0 0 8px;">n disk, A çubuğundan C çubuğuna, B'yi yardımcı olarak kullanarak taşınacak (her seferinde 1 disk, büyük disk küçüğün üstüne asla konmayacak).</p>
+      <ol class="step-list"><li>Üstteki n−1 diski A'dan B'ye taşı (yardımcı: C).</li><li>Kalan en büyük diski A'dan C'ye taşı.</li><li>n−1 diski B'den C'ye taşı (yardımcı: A).</li></ol>
+    </div>
+    <div class="card"><h3>Rekürans Bağıntısı ve Çözümü</h3>
+      <div class="formula-big" style="font-size:15px;">T(n) = 2T(n−1) + 1, &nbsp; T(1)=1</div>
+      <p style="margin:0 0 6px; font-size:12.5px;">Backward substitution (Slayt 4.37'deki yöntemle):</p>
+      <div class="formula-big" style="text-align:left; font-size:11.5px; line-height:1.5;">T(n)=2T(n−1)+1=4T(n−2)+3=8T(n−3)+7=…=2ᵏT(n−k)+(2ᵏ−1)</div>
+      <p style="margin:0;">k=n−1 alınırsa: T(n)=2ⁿ⁻¹T(1)+(2ⁿ⁻¹−1)=2ⁿ⁻¹+2ⁿ⁻¹−1=<b>2ⁿ−1</b></p>
+    </div>
+  </div>
+  <div class="card" style="margin-top:11px;"><h3>Efsane ve Ölçek</h3>
+    <p style="margin:0;">Efsaneye göre 64 diskli bir Hanoi kulesini çözmek 2⁶⁴−1≈1.8×10¹⁹ hamle gerektirir — saniyede 1 hamle yapılsa bile bu, evrenin yaşından (≈1.4×10¹⁰ yıl) çok daha uzun sürer! Bu, üstel zamanlı bir algoritmanın (Slayt 4.27'deki büyüme tablosuyla tutarlı) pratikte ne kadar "imkansız" hale gelebileceğinin çarpıcı bir örneğidir.</p>
+  </div>
+  <div class="examples"><div class="examples-head"><span class="dot"></span><h4>Örnek Sorular</h4></div>
+    <details class="q"><summary><span class="qnum">S1.</span> n=4 disk için Tower of Hanoi'nin gerektirdiği minimum hamle sayısını hesaplayın.<span class="arrow">▶</span></summary><div class="answer">2⁴−1=<b>15</b> hamle.</div></details>
+    <details class="q"><summary><span class="qnum">S2.</span> T(n)=2T(n−1)+1 bağıntısını Bölüm 3'teki (İspat) tümevarım yöntemiyle T(n)=2ⁿ−1 olarak doğrulayın.<span class="arrow">▶</span></summary><div class="answer"><b>Temel adım:</b> T(1)=2¹−1=1 ✓. <b>Tümevarım adımı:</b> T(k)=2ᵏ−1 varsayılırsa, T(k+1)=2T(k)+1=2(2ᵏ−1)+1=2^(k+1)−2+1=2^(k+1)−1 ✓. Böylece formül her n için ispatlanmış olur — Bölüm 2'deki matematiksel tümevarım tekniğinin doğrudan bir uygulaması.</div></details>
+  </div>
+</div></section>
+
+<!-- 47 -->
+<section class="slide" data-index="55"><div class="slide-inner">
+  <div class="kicker">4.45</div>
+  <h1 class="slide-title">Homojen Rekürans — <em>Karakteristik Denklemin Türetilmesi</em></h1>
+  <p class="subtitle">İkinci derece ve daha yüksek dereceli, sabit katsayılı, homojen rekürans bağıntıları için.</p>
+  <div class="grid2">
+    <div class="card"><h3>Karakteristik denklem nereden geliyor?</h3>
+      <p style="margin:0 0 8px; font-size:13px;">aₙ = 3aₙ₋₁ + 4aₙ₋₂ bağıntısını ele alalım. Çözümün <span class="formula">aₙ = rⁿ</span> biçiminde olacağını varsayalım:</p>
+      <div class="formula-big" style="text-align:left; font-size:12.5px; line-height:1.6;">aₙ₋₂ = 1, aₙ₋₁ = r, aₙ = r²<br>r² = 3r + 4 &nbsp;→&nbsp; r² − 3r − 4 = 0</div>
+    </div>
+    <div class="card"><h3>Karakteristik Kök Tekniğinin Kullanım Alanları</h3>
+      <ul class="clean" style="margin-bottom:0;"><li>İkinci derece ve daha büyük dereceli rekürans bağıntılarının çözümünde kullanılır.</li><li>Sabit katsayılı ve <b>homojen</b> rekürans bağıntılarında doğrudan kullanılır.</li><li>Homojen <b>olmayan</b> bağıntılarda ise, bağıntıyı önce homojen hale getirmek için kullanılır.</li></ul>
+    </div>
+  </div>
+  <div class="card" style="margin-top:11px;"><h3>Köklerin durumuna göre genel çözüm formülleri</h3>
+    <table class="laws">
+      <tr><th>Derece</th><th>Kök durumu</th><th>Genel çözüm aₙ⁽ʰ⁾</th></tr>
+      <tr><td>2. derece</td><td class="f">r₁ ≠ r₂</td><td class="f">c₁r₁ⁿ + c₂r₂ⁿ</td></tr>
+      <tr><td>2. derece</td><td class="f">r₁ = r₂</td><td class="f">c₁r₁ⁿ + c₂r₂ⁿ·n</td></tr>
+      <tr><td>3. derece</td><td class="f">r₁≠r₂≠r₃</td><td class="f">c₁r₁ⁿ+c₂r₂ⁿ+c₃r₃ⁿ</td></tr>
+      <tr><td>3. derece</td><td class="f">r₁=r₂=r₃</td><td class="f">c₁r₁ⁿ+c₂r₂ⁿ·n+c₃r₃ⁿ·n²</td></tr>
+      <tr><td>3. derece</td><td class="f">r₁=r₂≠r₃</td><td class="f">c₁r₁ⁿ+c₂r₂ⁿ·n+c₃r₃ⁿ</td></tr>
+    </table>
+  </div>
+  <div class="examples"><div class="examples-head"><span class="dot"></span><h4>Örnek Sorular</h4></div>
+    <details class="q"><summary><span class="qnum">S1.</span> r²−3r−4=0 denkleminin köklerini bulun.<span class="arrow">▶</span></summary><div class="answer">(r−4)(r+1)=0 → <b>r=4, r=−1</b>.</div></details>
+    <details class="q"><summary><span class="qnum">S2.</span> Genel çözümde neden eşit köklü durumda ekstra bir "n" çarpanı eklenir?<span class="arrow">▶</span></summary><div class="answer">c₁rⁿ+c₂rⁿ tek bir sabitmiş gibi sadeleşir — iki bağımsız başlangıç koşulunu sağlamak için iki bağımsız sabite ihtiyaç vardır; "n" çarpanı ikinci bağımsız çözümü garanti eder.</div></details>
+  </div>
+</div></section>
+
+<!-- 48 -->
+<section class="slide" data-index="56"><div class="slide-inner">
+  <div class="kicker">4.46</div>
+  <h1 class="slide-title">Homojen Rekürans — İki Tam Çözümlü Örnek</h1>
+  <p class="subtitle">Farklı kökler ve eşit kökler durumlarını, başlangıç koşullarıyla birlikte tam olarak çözelim.</p>
+  <div class="grid2">
+    <div class="card"><h3>Örnek 1 — Farklı Kökler</h3>
+      <p style="margin:0 0 7px; font-size:12px;">aₙ=3aₙ₋₁+10aₙ₋₂, a₀=5, a₁=8</p>
+      <div class="formula-big" style="text-align:left; font-size:11.5px; line-height:1.55;">1.adım: aₙ=aₙ⁽ʰ⁾<br>2.adım: r²=3r+10 → r²−3r−10=0<br>&nbsp;&nbsp;(r−5)(r+2)=0 → r=5, r=−2<br>&nbsp;&nbsp;aₙ=c₁5ⁿ+c₂(−2)ⁿ<br>3.adım: a₀=5 → c₁+c₂=5<br>&nbsp;&nbsp;a₁=8 → 5c₁−2c₂=8<br>&nbsp;&nbsp;7c₁=18 → c₁=18/7, c₂=17/7</div>
+      <div class="formula-big" style="font-size:14px;">aₙ = (18/7)·5ⁿ + (17/7)·(−2)ⁿ</div>
+    </div>
+    <div class="card"><h3>Örnek 2 — Eşit Kökler</h3>
+      <p style="margin:0 0 7px; font-size:12px;">aₙ=−4aₙ₋₁−4aₙ₋₂, a₀=3, a₁=5</p>
+      <div class="formula-big" style="text-align:left; font-size:11.5px; line-height:1.55;">1.adım: aₙ=aₙ⁽ʰ⁾<br>2.adım: r²=−4r−4 → r²+4r+4=0<br>&nbsp;&nbsp;(r+2)²=0 → r₁=r₂=−2<br>&nbsp;&nbsp;aₙ=c₁(−2)ⁿ+c₂(−2)ⁿ·n<br>3.adım: a₀=3 → c₁=3<br>&nbsp;&nbsp;a₁=5 → −2c₁−2c₂=5<br>&nbsp;&nbsp;−2c₂=11 → c₂=−11/2</div>
+      <div class="formula-big" style="font-size:14px;">aₙ = 3·(−2)ⁿ − (11/2)·(−2)ⁿ·n</div>
+    </div>
+  </div>
+  <div class="examples"><div class="examples-head"><span class="dot"></span><h4>Örnek Sorular</h4></div>
+    <details class="q"><summary><span class="qnum">S1.</span> Örnek 1'deki aₙ formülünü n=2 için hesaplayıp a₂=3a₁+10a₀ ile karşılaştırın.<span class="arrow">▶</span></summary><div class="answer">Rekürans: a₂=3(8)+10(5)=74. Formül: (18/7)25+(17/7)4=518/7=<b>74</b>. ✓</div></details>
+    <details class="q"><summary><span class="qnum">S2.</span> Örnek 2'de a₁=−2c₁−2c₂=5 denklemine nasıl ulaşıldığını açıklayın.<span class="arrow">▶</span></summary><div class="answer">aₙ=c₁(−2)ⁿ+c₂(−2)ⁿn formülünde n=1 yazılır ve c₁=3 yerine konularak a₁=5 eşitliğinden c₂ çözülür.</div></details>
+  </div>
+</div></section>
+
+<!-- 49 NEW: third order example -->
+<section class="slide" data-index="57"><div class="slide-inner">
+  <div class="kicker">4.47</div>
+  <h1 class="slide-title">Homojen Rekürans — Üçüncü Derece Örneği</h1>
+  <p class="subtitle">Üç farklı kök içeren bir 3. derece homojen bağıntıyı tam olarak çözelim.</p>
+  <div class="card"><h3>aₙ=6aₙ₋₁−11aₙ₋₂+6aₙ₋₃, a₀=2, a₁=5, a₂=15</h3>
+    <div class="formula-big" style="text-align:left; font-size:12.5px; line-height:1.6;">
+Karakteristik denklem: r³=6r²−11r+6 → r³−6r²+11r−6=0<br>
+Faktörize: (r−1)(r−2)(r−3)=0 → r₁=1, r₂=2, r₃=3 (üç farklı kök)<br>
+Genel çözüm: aₙ = c₁·1ⁿ + c₂·2ⁿ + c₃·3ⁿ = c₁+c₂2ⁿ+c₃3ⁿ
+    </div>
+    <p style="margin:0 0 8px;">Başlangıç koşullarını uygulayalım:</p>
+    <div class="formula-big" style="text-align:left; font-size:12px; line-height:1.6;">
+a₀=2: c₁+c₂+c₃=2<br>
+a₁=5: c₁+2c₂+3c₃=5<br>
+a₂=15: c₁+4c₂+9c₃=15<br>
+(2.denk−1.denk): c₂+2c₃=3 &nbsp;&nbsp;&nbsp; (3.denk−2.denk): c₂+3c₃=5<br>
+Farkları çıkar: c₃=2 → c₂=3−4=−1 → c₁=2−(−1)−2=1
+    </div>
+    <div class="formula-big" style="font-size:16px;">aₙ = 1 − 2ⁿ + 2·3ⁿ</div>
+  </div>
+  <div class="examples"><div class="examples-head"><span class="dot"></span><h4>Örnek Sorular</h4></div>
+    <details class="q"><summary><span class="qnum">S1.</span> Bulunan formülü a₀ için hesaplayıp verilen a₀=2 koşulunu doğrulayın.<span class="arrow">▶</span></summary><div class="answer">a₀=1−1+2(1)=1−1+2=<b>2</b>. ✓</div></details>
+    <details class="q"><summary><span class="qnum">S2.</span> Bu bağıntı neden 3. derece bir karakteristik denklem gerektirir?<span class="arrow">▶</span></summary><div class="answer">Bağıntı aₙ₋₁, aₙ₋₂ ve aₙ₋₃'e (üç önceki terime) bağlı olduğundan, aₙ=rⁿ varsayımı r³=6r²−11r+6 biçiminde <b>üçüncü dereceden</b> bir denklem üretir — bu da üç kök ve üç bağımsız sabit (c₁,c₂,c₃) gerektirir, dolayısıyla üç başlangıç koşuluna (a₀,a₁,a₂) ihtiyaç duyulur.</div></details>
+  </div>
+</div></section>
+
+<!-- 50 -->
+<section class="slide" data-index="58"><div class="slide-inner">
+  <div class="kicker">4.48</div>
+  <h1 class="slide-title">Homojen Olmayan Rekürans — <em>Özel Çözüm Tahmin Kuralları</em></h1>
+  <p class="subtitle">Genel çözüm = homojen çözüm + özel çözüm: <span class="formula">aₙ = aₙ⁽ʰ⁾ + aₙ⁽ᵒ̈⁾</span>.</p>
+  <div class="card">
+    <table class="laws">
+      <tr><th>Sabit terimin türü</th><th>Özel çözüm tahmini (aₙ⁽ᵒ̈⁾)</th><th>Not</th></tr>
+      <tr><td>Sabit sayı (örn. +5)</td><td class="f">A</td><td>Polinomun derecesi ne ise, tahmin de aynı derecede olur</td></tr>
+      <tr><td>n'e bağlı polinom (örn. 3n+4)</td><td class="f">An + B</td><td>Polinom derecesiyle eşleşen genel bir polinom tahmin edilir</td></tr>
+      <tr><td>Üstel, k homojen kökü değilse</td><td class="f">A·kⁿ</td><td>k, karakteristik denklemin bir kökü değilse doğrudan kullanılır</td></tr>
+      <tr><td>Üstel, k homojen kökü ise (1 kez)</td><td class="f">A·n·kⁿ</td><td>Çakışma varsa "n" çarpanı eklenir</td></tr>
+      <tr><td>Üstel, k homojen kökü ise (2 kez)</td><td class="f">A·n²·kⁿ</td><td>Çift kök çakışmasında "n²" çarpanı eklenir</td></tr>
+    </table>
+  </div>
+  <div class="card" style="margin-top:11px;"><h3>Genel çözüm süreci (4 adım)</h3>
+    <ol class="step-list"><li>aₙ⁽ᵍ⁾ = aₙ⁽ʰ⁾ + aₙ⁽ᵒ̈⁾ yazılır.</li><li>Sabit terim atılarak homojen kısım karakteristik kök tekniğiyle bulunur.</li><li>Yukarıdaki tabloya göre aₙ⁽ᵒ̈⁾ tahmin edilir; orijinal bağıntıya yerine konularak katsayılar bulunur.</li><li>aₙ = aₙ⁽ʰ⁾ + aₙ⁽ᵒ̈⁾ yazılıp başlangıç koşullarıyla c₁,c₂ sabitleri bulunur.</li></ol>
+  </div>
+  <div class="examples"><div class="examples-head"><span class="dot"></span><h4>Örnek Sorular</h4></div>
+    <details class="q"><summary><span class="qnum">S1.</span> aₙ=2aₙ₋₁+3aₙ₋₂+n² bağıntısı için aₙ⁽ᵒ̈⁾ hangi genel formda tahmin edilmelidir?<span class="arrow">▶</span></summary><div class="answer">Sabit terim n² (2. derece polinom) olduğundan: <b>aₙ⁽ᵒ̈⁾ = An² + Bn + C</b>.</div></details>
+    <details class="q"><summary><span class="qnum">S2.</span> Homojen kökler {3,−1} iken sabit terim 3ⁿ ise, neden A·3ⁿ yerine A·n·3ⁿ kullanılır?<span class="arrow">▶</span></summary><div class="answer">3, zaten homojen çözümün bir kökü — A·3ⁿ kullanılsaydı homojen çözümle çakışırdı. "n" çarpanı bu çakışmayı önler.</div></details>
+  </div>
+</div></section>
+
+<!-- 51 -->
+<section class="slide" data-index="59"><div class="slide-inner">
+  <div class="kicker">4.49</div>
+  <h1 class="slide-title">Homojen Olmayan — Örnek: Sabit Terim</h1>
+  <p class="subtitle">aₙ = 2aₙ₋₁ + 3aₙ₋₂ + 5, a₀=4, a₁=10 — dört adımda tam çözüm.</p>
+  <div class="grid2">
+    <div class="card"><h3>1-2. Adım: Homojen kısım</h3>
+      <div class="formula-big" style="text-align:left; font-size:12px; line-height:1.6;">aₙ⁽ᵍ⁾=aₙ⁽ʰ⁾+aₙ⁽ᵒ̈⁾<br>aₙ=2aₙ₋₁+3aₙ₋₂ → r²=2r+3<br>r²−2r−3=0 → (r−3)(r+1)=0<br>r=3, r=−1<br>aₙ⁽ʰ⁾=c₁·3ⁿ+c₂·(−1)ⁿ</div>
+    </div>
+    <div class="card"><h3>3. Adım: Özel çözüm (sabit terim=5)</h3>
+      <div class="formula-big" style="text-align:left; font-size:12px; line-height:1.6;">aₙ⁽ᵒ̈⁾=A (sabit tahmin)<br>A=2A+3A+5 → −4A=5 → A=−5/4</div>
+    </div>
+  </div>
+  <div class="card" style="margin-top:11px;"><h3>4. Adım: Genel çözüm ve başlangıç koşulları</h3>
+    <div class="formula-big" style="font-size:14px;">aₙ = c₁·3ⁿ + c₂·(−1)ⁿ − 5/4</div>
+    <p style="margin:0 0 6px; font-size:12.5px;">a₀=4 → c₁+c₂−5/4=4 → c₁+c₂=21/4<br>a₁=10 → 3c₁−c₂−5/4=10 → 3c₁−c₂=45/4<br>Topla: 4c₁=66/4=33/2 → c₁=33/8, c₂=9/8</p>
+    <div class="formula-big" style="font-size:14.5px;">aₙ = (33/8)·3ⁿ + (9/8)·(−1)ⁿ − 5/4</div>
+  </div>
+  <div class="examples"><div class="examples-head"><span class="dot"></span><h4>Örnek Sorular</h4></div>
+    <details class="q"><summary><span class="qnum">S1.</span> A=2A+3A+5 denkleminde aₙ,aₙ₋₁,aₙ₋₂ yerine neden hepsinin "A" yazıldığını açıklayın.<span class="arrow">▶</span></summary><div class="answer">aₙ⁽ᵒ̈⁾=A sabit bir fonksiyon olarak tahmin edildi — bir sabit fonksiyonun "bir önceki terimi" yine kendisidir.</div></details>
+    <details class="q"><summary><span class="qnum">S2.</span> Bulunan aₙ formülünü n=0 için hesaplayıp a₀=4 koşulunu doğrulayın.<span class="arrow">▶</span></summary><div class="answer">aₙ = 33/8 + 9/8 − 10/8 = 32/8 = <b>4</b>. ✓</div></details>
+  </div>
+</div></section>
+
+<!-- 52 -->
+<section class="slide" data-index="60"><div class="slide-inner">
+  <div class="kicker">4.50</div>
+  <h1 class="slide-title">Homojen Olmayan — Polinom ve Üstel Terimli Örnekler</h1>
+  <p class="subtitle">Aynı 4 adımı, farklı sabit terim türleriyle tekrar uygulayalım.</p>
+  <div class="grid2">
+    <div class="card"><h3>Örnek — Polinom Terim (derece eşleştirme)</h3>
+      <p style="margin:0 0 6px; font-size:12px;">aₙ=aₙ₋₁+2aₙ₋₂+3n+4, a₀=5, a₁=7</p>
+      <div class="formula-big" style="text-align:left; font-size:11px; line-height:1.55;">Homojen: r²=r+2 → (r−2)(r+1)=0 → r=2,−1<br>aₙ⁽ʰ⁾=c₁2ⁿ+c₂(−1)ⁿ<br>Özel: aₙ⁽ᵒ̈⁾=An+B (3n+4 ile aynı derece)<br>Yerine koy, katsayıları eşitle:<br>&nbsp;&nbsp;n katsayısı: A=3A+3 → A=−3/2<br>&nbsp;&nbsp;sabit: B=−5A+3B+4 → B=−23/4</div>
+      <div class="formula-big" style="font-size:13px;">aₙ⁽ᵒ̈⁾ = −(3/2)n − 23/4</div>
+    </div>
+    <div class="card"><h3>Örnek — Üstel Terim (kök çakışmıyor)</h3>
+      <p style="margin:0 0 6px; font-size:12px;">aₙ=−4aₙ₋₁−3aₙ₋₂+2·5ⁿ, a₀=6, a₁=10</p>
+      <div class="formula-big" style="text-align:left; font-size:11px; line-height:1.55;">Homojen: r²=−4r−3 → (r+3)(r+1)=0 → r=−3,−1<br>"5", homojen köklerinden ({−3,−1}) biri değil → YOK<br>Özel: aₙ⁽ᵒ̈⁾=A·5ⁿ (n çarpanı gerekmez)<br>Yerine koy: 25A=−20A−3A+50 → 48A=50 → A=25/24</div>
+      <div class="formula-big" style="font-size:13px;">aₙ⁽ᵒ̈⁾ = (25/24)·5ⁿ</div>
+    </div>
+  </div>
+  <div class="card" style="margin-top:11px;"><h3>Karşılaştırma: Kök çakışması olsaydı ne değişirdi?</h3>
+    <p style="margin:0;">Eğer sabit terim 2·5ⁿ yerine 2·(−3)ⁿ olsaydı, "−3" zaten bir homojen kök olduğundan, tahmin <span class="formula">A·n·(−3)ⁿ</span> biçiminde yapılmalıydı — Slayt 4.48'deki kural burada devreye girer.</p>
+  </div>
+  <div class="examples"><div class="examples-head"><span class="dot"></span><h4>Örnek Sorular</h4></div>
+    <details class="q"><summary><span class="qnum">S1.</span> Polinom örneğinde "n katsayısı: A=3A+3" denklemine nasıl ulaşıldığını kısaca açıklayın.<span class="arrow">▶</span></summary><div class="answer">An+B, A(n−1)+B ve A(n−2)+B ifadeleri bağıntıya yerine konup n'li ve sabit terimler ayrı ayrı eşitlenir.</div></details>
+    <details class="q"><summary><span class="qnum">S2.</span> Üstel örnekte "5" sayısının homojen kökler kümesinde olup olmadığını neden kontrol ederiz?<span class="arrow">▶</span></summary><div class="answer">Çünkü eğer 5 bir homojen kök olsaydı, A·5ⁿ tahmini homojen çözümle örtüşür ve denklemi sağlayamazdı.</div></details>
+  </div>
+</div></section>
+
+<!-- 53 -->
+<section class="slide" data-index="61"><div class="slide-inner">
+  <div class="kicker">4.51</div>
+  <h1 class="slide-title">Sayı Dizilerini Rekürans Bağıntısına Dönüştürme</h1>
+  <p class="subtitle">Bazen bize doğrudan bir sayı dizisi verilir ve ondan bir rekürans bağıntısı yazmamız beklenir.</p>
+  <div class="grid2">
+    <div class="card"><h3>Örnek: 4, 7, 13, 25, 49, 97, …</h3>
+      <p style="margin:0 0 8px; font-size:13px;">Ardışık terimler arasındaki ilişkiyi arayalım: 7=2(4)−1, 13=2(7)−1, 25=2(13)−1, 49=2(25)−1 …</p>
+      <div class="formula-big" style="font-size:14px;">a₀=4, &nbsp; aₙ=2aₙ₋₁−1, &nbsp; n≥1</div>
+    </div>
+    <div class="card"><h3>Pratik: 1, 3, 7, 17, 41, 99, 239, …</h3>
+      <p style="margin:0 0 8px; font-size:13px;">İlk iki terimi başlangıç koşulu olarak alıp, kalan terimlerin önceki <b>iki</b> terimle ilişkisini arayın.</p>
+      <p style="margin:0; font-size:12.5px; color:var(--muted);">İpucu: 7 = 2(3)+1, 17 = 2(7)+3, 41 = 2(17)+7 …</p>
+    </div>
+  </div>
+  <div class="card" style="margin-top:11px;"><h3>Genel strateji</h3>
+    <ol class="step-list"><li>İlk birkaç terimi başlangıç koşulu olarak not edin.</li><li>aₙ'yi, aₙ₋₁ (ve gerekirse aₙ₋₂) cinsinden ifade eden bir cebirsel ilişki arayın.</li><li>Bulduğunuz ilişkiyi birkaç terim daha ile <b>doğrulayın</b>.</li></ol>
+  </div>
+  <div class="examples"><div class="examples-head"><span class="dot"></span><h4>Örnek Sorular</h4></div>
+    <details class="q"><summary><span class="qnum">S1.</span> "Pratik" kutusundaki 1, 3, 7, 17, 41, 99, 239 dizisi için rekürans bağıntısını bulun.<span class="arrow">▶</span></summary><div class="answer">a₀=1, a₁=3, <b>aₙ=2aₙ₋₁+aₙ₋₂, n≥2</b>. Doğrulama: a₂=2(3)+1=7 ✓, a₃=2(7)+3=17 ✓.</div></details>
+    <details class="q"><summary><span class="qnum">S2.</span> a₀=4, aₙ=2aₙ₋₁−1 bağıntısını kullanarak dizinin 7. terimini (a₆) hesaplayın.<span class="arrow">▶</span></summary><div class="answer">a₁=7,a₂=13,a₃=25,a₄=49,a₅=97,a₆=2(97)−1=<b>193</b>.</div></details>
+  </div>
+</div></section>
+
+<!-- 54 NEW: common mistakes -->
+<section class="slide" data-index="62"><div class="slide-inner">
+  <div class="kicker">4.52</div>
+  <h1 class="slide-title">Rekürans Çözümünde Yaygın Hatalar</h1>
+  <p class="subtitle">Bölüm 2'deki "Yaygın İspat Hataları" sistematiğinin rekürans bağıntılarına özel versiyonu.</p>
+  <div class="grid2">
+    <div class="card"><h3>Hata 1: Temel Durumu Unutmak</h3>
+      <p style="margin:0;">Genel çözümü bulup, başlangıç koşullarını (a₀, a₁, …) uygulamayı unutmak — c₁, c₂ sabitleri olmadan çözüm eksiktir.</p>
+    </div>
+    <div class="card"><h3>Hata 2: Kök Çakışmasını Gözden Kaçırmak</h3>
+      <p style="margin:0;">Homojen olmayan bir bağıntıda, üstel sabit terimin tabanının homojen köklerden biriyle çakışıp çakışmadığını kontrol etmemek (Slayt 4.48'deki "n çarpanı" kuralını atlamak).</p>
+    </div>
+  </div>
+  <div class="grid2" style="margin-top:11px;">
+    <div class="card"><h3>Hata 3: Polinom Derecesini Yanlış Tahmin Etmek</h3>
+      <p style="margin:0;">Sabit terim n² iken özel çözümü sadece An+B (1. derece) olarak tahmin etmek — derece eşleşmediğinde denklem sistemi çözülemez.</p>
+    </div>
+    <div class="card"><h3>Hata 4: İşaret Hataları</h3>
+      <p style="margin:0;">Karakteristik denklemi kurarken (özellikle negatif katsayılı bağıntılarda) işaret hatası yapmak — örn. r²=−4r−4'ü r²−4r−4=0 olarak yanlış yazmak.</p>
+    </div>
+  </div>
+  <div class="examples"><div class="examples-head"><span class="dot"></span><h4>Örnek Sorular</h4></div>
+    <details class="q"><summary><span class="qnum">S1.</span> Bir öğrenci aₙ=c₁3ⁿ+c₂(−1)ⁿ genel çözümünü buluyor ama başlangıç koşullarını hiç kullanmadan "işim bitti" diyor. Bu neden eksiktir?<span class="arrow">▶</span></summary><div class="answer">c₁ ve c₂ hâlâ <b>bilinmeyen</b> sabitlerdir — sonsuz sayıda (c₁,c₂) çifti bu genel formu sağlar. Belirli bir dizi elde etmek için başlangıç koşullarının (a₀,a₁) kullanılması <b>zorunludur</b>; aksi halde çözüm "ailesi" bulunmuş olur, tek bir çözüm değil.</div></details>
+    <details class="q"><summary><span class="qnum">S2.</span> aₙ=2aₙ₋₁+3ⁿ bağıntısında homojen kök 2'dir ve sabit terim 3ⁿ'dir. Öğrenci yine de A·n·3ⁿ tahmini yapıyor. Bu hata mıdır?<span class="arrow">▶</span></summary><div class="answer">Evet, hatadır — "n çarpanı" kuralı sadece sabit terimin tabanı (burada 3), homojen köklerden biriyle (burada 2) <b>çakıştığında</b> uygulanır. 3≠2 olduğundan çakışma yoktur, doğru tahmin sadece <b>A·3ⁿ</b> olmalıdır.</div></details>
+  </div>
+</div></section>
+
+<!-- 55 NEW: proving recursive correctness -->
+<section class="slide" data-index="63"><div class="slide-inner">
+  <div class="kicker">4.53</div>
+  <h1 class="slide-title">Özyinelemeli Algoritmanın Doğruluğunu Tümevarımla İspatlama</h1>
+  <p class="subtitle">Bölüm 2'deki (İspat) matematiksel tümevarım tekniği, özyinelemeli algoritmaların doğruluğunu kanıtlamak için birebir kullanılır.</p>
+  <div class="card">
+    <h3>İddia: factorial(n) fonksiyonu, her n≥0 için n! değerini doğru hesaplar</h3>
+    <ol class="step-list">
+      <li><b>Temel Adım (n=0):</b> factorial(0), tanım gereği doğrudan 1 döndürür. 0!=1 olduğundan doğrudur. ✓</li>
+      <li><b>Tümevarım Hipotezi:</b> factorial(k)'nin, bir k≥0 için doğru şekilde k! döndürdüğünü varsayalım.</li>
+      <li><b>Tümevarım Adımı:</b> factorial(k+1), tanım gereği (k+1)*factorial(k) döndürür. Hipoteze göre factorial(k)=k!, dolayısıyla factorial(k+1)=(k+1)·k!=(k+1)! — bu tam olarak istenen sonuçtur. ✓</li>
+      <li>Temel adım ve tümevarım adımı tamamlandığından, factorial(n) her n≥0 için doğru çalışır. ∎</li>
+    </ol>
+  </div>
+  <div class="card" style="margin-top:11px;"><h3>Neden bu kadar önemli?</h3>
+    <p style="margin:0;">Bir özyinelemeli fonksiyonun <b>tanımının kendisi</b> zaten tümevarımsal bir yapıya sahiptir (temel durum + kendi üzerinden tanım) — bu yüzden özyinelemeli algoritmaların doğruluk ispatı, neredeyse her zaman matematiksel tümevarımın <b>doğal bir uygulamasıdır</b>. Bu, "algoritmik düşünme" (Bölüm 1'deki ders tanıtımında bahsedilen) becerisinin tam da kalbindedir: bir algoritma tasarlamak, gerekli zaman/belleği analiz etmek, ve <b>her zaman doğru sonucu üreteceğini ispatlamak</b>.</p>
+  </div>
+  <div class="examples"><div class="examples-head"><span class="dot"></span><h4>Örnek Sorular</h4></div>
+    <details class="q"><summary><span class="qnum">S1.</span> Tower of Hanoi çözümünün (Slayt 4.44) T(n)=2ⁿ−1 formülünü tümevarımla nasıl ispatladığımızı hatırlayın — bu ispat hangi iki adımdan oluşuyordu?<span class="arrow">▶</span></summary><div class="answer">Temel adım (n=1: T(1)=2¹−1=1 ✓) ve tümevarım adımı (T(k)=2ᵏ−1 varsayılıp T(k+1)=2T(k)+1=2^(k+1)−1 gösterilmesi) — Slayt 4.44'teki S2'de tam olarak yapmıştık.</div></details>
+    <details class="q"><summary><span class="qnum">S2.</span> fib(n) fonksiyonunun (Slayt 4.34) her zaman n≥0 için Fibonacci dizisinin n. terimini ürettiğini ispatlamak için hangi tümevarım türü (normal mi güçlü mü) gereklidir?<span class="arrow">▶</span></summary><div class="answer"><b>Güçlü tümevarım</b> gereklidir (Bölüm 2, Slayt 2.19) — çünkü fib(k+1)'i hesaplamak için sadece fib(k)'ye değil, aynı zamanda fib(k−1)'e de ihtiyaç vardır; bu yüzden temel adımda iki durum (n=0 ve n=1) ayrıca doğrulanmalı ve tümevarım hipotezi hem k hem k−1 için varsayılmalıdır.</div></details>
+  </div>
+</div></section>
+
+<!-- 56 NEW: design paradigms -->
+<section class="slide" data-index="64"><div class="slide-inner">
+  <div class="kicker">4.54</div>
+  <h1 class="slide-title">Algoritma Tasarım Paradigmaları I</h1>
+  <p class="subtitle">Şimdiye kadar gördüğümüz algoritmalar, aslında birkaç genel "tasarım felsefesi"nin örnekleridir.</p>
+  <div class="grid3">
+    <div class="card"><h3>Kaba Kuvvet (Brute Force)</h3>
+      <p style="margin:0; font-size:13px;">Tüm olası çözümleri sırayla dener, en basit ama genelde en yavaş yaklaşımdır. Örnek: Doğrusal Arama (Slayt 4.3).</p>
+    </div>
+    <div class="card"><h3>Böl ve Fethet (Divide and Conquer)</h3>
+      <p style="margin:0; font-size:13px;">Problemi küçük alt problemlere böler, her birini özyinelemeli çözer, sonuçları birleştirir. Örnek: İkili Arama, Merge Sort, Quicksort.</p>
+    </div>
+    <div class="card"><h3>Açgözlü (Greedy)</h3>
+      <p style="margin:0; font-size:13px;">Her adımda "o an için en iyi görünen" seçimi yapar, geri dönmez. Her zaman optimal sonuç garantilemez, ama hızlıdır.</p>
+    </div>
+  </div>
+  <div class="card" style="margin-top:12px;"><h3>Bu paradigmaları nasıl tanırız?</h3>
+    <p style="margin:0;">Bir algoritmanın rekürans bağıntısı T(n)=aT(n/b)+f(n) biçimindeyse, genelde <b>Böl ve Fethet</b>'tir (Master Teoremi, Slayt 4.40 doğrudan uygulanır). Algoritma hiç geriye dönmeden, anlık en iyi seçimi yapıyorsa <b>Açgözlü</b>'dür. Tüm olasılıkları tek tek deniyorsa <b>Kaba Kuvvet</b>'tir.</p>
+  </div>
+  <div class="examples"><div class="examples-head"><span class="dot"></span><h4>Örnek Sorular</h4></div>
+    <details class="q"><summary><span class="qnum">S1.</span> Merge Sort ve Quicksort hangi tasarım paradigmasına örnektir?<span class="arrow">▶</span></summary><div class="answer"><b>Böl ve Fethet (Divide and Conquer)</b> — ikisi de problemi küçük parçalara bölüp özyinelemeli çözüyor.</div></details>
+    <details class="q"><summary><span class="qnum">S2.</span> Doğrusal Arama neden "kaba kuvvet" örneğidir?<span class="arrow">▶</span></summary><div class="answer">Çünkü hiçbir "akıllı" kısayol kullanmadan, dizinin her elemanını sırayla dener — en basit, en direkt yaklaşımdır.</div></details>
+  </div>
+</div></section>
+
+<!-- 57 NEW: DP vs Greedy -->
+<section class="slide" data-index="65"><div class="slide-inner">
+  <div class="kicker">4.55</div>
+  <h1 class="slide-title">Algoritma Tasarım Paradigmaları II — Açgözlü vs Dinamik Programlama</h1>
+  <p class="subtitle">Bozuk para verme problemiyle iki paradigma arasındaki kritik farkı görelim.</p>
+  <div class="grid2">
+    <div class="card"><h3>Dinamik Programlama (Dynamic Programming)</h3>
+      <p style="margin:0;">Bir problemi, <b>tekrar eden alt problemlere</b> ayırıp her alt problemin sonucunu <b>saklayarak (memoization)</b> yeniden hesaplamayı önler. Fibonacci'nin memoized versiyonu (Slayt 4.35) tam olarak bu paradigmanın bir örneğidir.</p>
+    </div>
+    <div class="card"><h3>Problem: 6 birimlik bozuk para, madeni paralar {1,3,4}</h3>
+      <p style="margin:0 0 6px; font-size:13px;"><b>Açgözlü yaklaşım</b> (her zaman en büyük parayı seç): 4+1+1 = <b>3 para</b>.</p>
+      <p style="margin:0; font-size:13px;"><b>Dinamik Programlama</b> (tüm kombinasyonları sistematik değerlendirir): 3+3 = <b>2 para</b> — daha optimal!</p>
+    </div>
+  </div>
+  <div class="card" style="margin-top:11px;"><h3>Neden Açgözlü Burada Başarısız Oluyor?</h3>
+    <p style="margin:0;">Açgözlü algoritma, "şu an en büyük parayı almak" kararının <b>geleceği</b> nasıl etkileyeceğini hesaba katmaz — sadece o anki en iyi seçime bakar. Dinamik Programlama ise tüm alt problemleri (1,2,3,4,5,6 birimlik her ara toplamı) sistematik olarak değerlendirip gerçek optimumu bulur. (Not: ABD para birimi {25,10,5,1} gibi bazı sistemlerde açgözlü yaklaşım tesadüfen her zaman optimaldir — ama bu her para sistemi için garanti değildir.)</p>
+  </div>
+  <div class="examples"><div class="examples-head"><span class="dot"></span><h4>Örnek Sorular</h4></div>
+    <details class="q"><summary><span class="qnum">S1.</span> Madeni paralar {1,5,6} olduğunda, 10 birimlik bozuk para için açgözlü ve DP yaklaşımlarını karşılaştırın.<span class="arrow">▶</span></summary><div class="answer">Açgözlü: 6+1+1+1+1=<b>5 para</b>. DP (optimal): 5+5=<b>2 para</b> — açgözlü burada da başarısız oluyor.</div></details>
+    <details class="q"><summary><span class="qnum">S2.</span> Dinamik Programlama ile "iç-içe üçlüyü bul" (Slayt 4.7) manuel postfix değerlendirme yöntemi arasında kavramsal bir benzerlik var mı?<span class="arrow">▶</span></summary><div class="answer">Evet — ikisi de "alt sonuçları hesapla, sakla (yerine koy), büyük probleme doğru ilerle" mantığıyla çalışır. Fark, DP'nin optimize etmek istediği bir hedefi (en az para sayısı gibi) olmasıdır; postfix değerlendirmede ise hedef sadece doğru sayısal sonuca ulaşmaktır.</div></details>
+  </div>
+</div></section>
+
+<!-- 58 NEW: Space Complexity -->
+<section class="slide" data-index="66"><div class="slide-inner">
+  <div class="kicker">4.56</div>
+  <h1 class="slide-title">Alan Karmaşıklığı <em>(Space Complexity)</em></h1>
+  <p class="subtitle">Zaman kadar önemli bir diğer kaynak: bellek kullanımı — özellikle özyinelemede kritik hale gelir.</p>
+  <div class="grid2">
+    <div class="card"><h3>Özyinelemede Yığın (Stack) Kullanımı</h3>
+      <p style="margin:0 0 8px;">Her özyinelemeli çağrı, bir <b>çağrı çerçevesi (call frame)</b> oluşturur ve bu, fonksiyon çağrı yığınında (call stack) yer kaplar. Fonksiyon geri dönene kadar bu bellek serbest bırakılmaz.</p>
+      <ul class="clean" style="margin-bottom:0; font-size:13px;">
+        <li>factorial(n) özyinelemeli: <b>O(n)</b> yığın derinliği (n iç içe çağrı)</li>
+        <li>factorial(n) iteratif (döngülü): <b>O(1)</b> alan — hiç iç içe çağrı yok</li>
+      </ul>
+    </div>
+    <div class="card"><h3>Sıralama Algoritmalarında Alan Karşılaştırması</h3>
+      <table class="tt" style="font-size:12px;">
+        <tr><th class="left">Algoritma</th><th>Alan</th></tr>
+        <tr><td class="left">Bubble/Insertion Sort</td><td>O(1)</td></tr>
+        <tr><td class="left">Merge Sort</td><td>O(n)</td></tr>
+        <tr><td class="left">Quicksort (özyineleme yığını)</td><td>O(log n) ort.</td></tr>
+      </table>
+      <p style="margin:8px 0 0; font-size:12px; color:var(--muted);">Merge Sort'un O(n) ekstra alan gerektirmesi, onu bellek kısıtlı ortamlarda Quicksort'a göre dezavantajlı kılabilir.</p>
+    </div>
+  </div>
+  <div class="examples"><div class="examples-head"><span class="dot"></span><h4>Örnek Sorular</h4></div>
+    <details class="q"><summary><span class="qnum">S1.</span> Neden özyinelemeli bir algoritma, eşdeğer iteratif versiyonundan genelde daha fazla alan kullanır?<span class="arrow">▶</span></summary><div class="answer">Çünkü her özyinelemeli çağrı, geri dönene kadar belleği tutan bir çağrı çerçevesi oluşturur — n derinliğinde bir özyineleme, O(n) toplam çağrı çerçevesi biriktirir. İteratif bir döngü ise sadece sabit sayıda değişken kullanır (O(1) alan).</div></details>
+    <details class="q"><summary><span class="qnum">S2.</span> Fibonacci'yi (Slayt 4.34) naif özyinelemeli olarak hesaplarken alan karmaşıklığı nedir — zaman karmaşıklığından (O(φⁿ)) daha mı iyi, daha mı kötü?<span class="arrow">▶</span></summary><div class="answer">Alan karmaşıklığı sadece <b>O(n)</b>'dir (en derin özyineleme zinciri n uzunluğundadır) — zaman karmaşıklığından (O(φⁿ), üstel) çok daha iyidir. Bu, "zaman israfı" ile "alan israfı"nın her zaman aynı oranda artmadığını gösterir; Fibonacci'de asıl problem tekrarlanan hesaplamalar (zaman), yığın derinliği (alan) değildir.</div></details>
+  </div>
+</div></section>
+
+<!-- 59 -->
+<section class="slide" data-index="67"><div class="slide-inner">
+  <div class="kicker">4.57</div>
+  <h1 class="slide-title">Problemlerin Karmaşıklığı: Çözülebilir, Çözülemez, Çözümsüz</h1>
+  <p class="subtitle">Bir algoritmanın var olması, onun <i>pratikte kullanılabilir</i> olduğu anlamına gelmez.</p>
+  <div class="grid2">
+    <div class="card"><h3>Çözülebilir Problemler (Tractable)</h3>
+      <p style="margin:0;">Polinomsal en kötü durum karmaşıklığına sahip bir algoritma ile çözülebilen problemlere <b>çözülebilir (tractable)</b> denir. Ancak büyük-O tahminindeki polinom yüksek dereceli (100. derece gibi) ya da katsayılar aşırı büyükse, algoritma yine de pratikte uzun sürebilir.</p>
+    </div>
+    <div class="card"><h3>Çözülemez Problemler (Intractable)</h3>
+      <p style="margin:0;">En kötü durum polinomsal zaman karmaşıklığına sahip bir algoritma ile çözülemeyen problemlere <b>çözülemez (intractable)</b> denir. Pratikte bu tür problemlerin üstesinden gelmenin bir yolu, <b>kesin çözüm yerine yaklaşık çözümler</b> aramaktır.</p>
+    </div>
+  </div>
+  <div class="card" style="margin-top:11px;"><h3>Çözümü Bulunmayan Algoritmalar (Unsolvable)</h3>
+    <p style="margin:0;">Hiçbir algoritmanın çözemediği bazı problemler mevcuttur — bunlara <b>çözümü bulunamayan (unsolvable)</b> problemler denir. Çözümü bulunamayan problemlerin varlığına ilk kanıt, <b>sonlanma (halting) probleminin</b> çözülemez olduğunu gösteren büyük İngiliz matematikçi ve bilgisayar bilimci <b>Alan Turing</b> tarafından sağlanmıştır.</p>
+  </div>
+  <div class="examples"><div class="examples-head"><span class="dot"></span><h4>Örnek Sorular</h4></div>
+    <details class="q"><summary><span class="qnum">S1.</span> Polinomsal zaman karmaşıklığına sahip bir algoritmanın her zaman "pratikte hızlı" olacağı garanti edilir mi?<span class="arrow">▶</span></summary><div class="answer">Hayır — eğer polinomun derecesi çok yüksekse veya katsayıları aşırı büyükse, nispeten küçük girdilerde bile makul zamanda çözülmesi garanti edilmez.</div></details>
+    <details class="q"><summary><span class="qnum">S2.</span> "Sonlanma problemi" (halting problem) ne anlama gelir?<span class="arrow">▶</span></summary><div class="answer">"Verilen herhangi bir program ve girdi için, bu programın sonunda duracağını mı yoksa sonsuza kadar çalışacağını mı belirleyen genel bir algoritma var mıdır?" sorusudur. Turing, böyle bir algoritmanın var olamayacağını ispatlamıştır.</div></details>
+  </div>
+</div></section>
+
+<!-- 60 -->
+<section class="slide" data-index="68"><div class="slide-inner">
+  <div class="kicker">4.58</div>
+  <h1 class="slide-title">P ve NP Problem Sınıfları</h1>
+  <p class="subtitle">Bilgisayar biliminin en önemli açık problemlerinden birinin arkasındaki kavramlar.</p>
+  <div class="grid2">
+    <div class="card"><h3>Tanımlar</h3>
+      <ul class="clean" style="margin-bottom:0;">
+        <li>Çözülebilir problemlerin <b>P sınıfına</b> ait olduğu söylenir — polinom zamanda <b>çözülebilen</b> problemler.</li>
+        <li>Polinomsal zamanda <b>kontrol edilebilen</b> bir çözüme sahip problemler <b>NP sınıfına</b> ait olduğu söylenmektedir.</li>
+        <li>NP kısaltması, <i>belirli olmayan polinomsal zamanlı</i> (nondeterministic polynomial time) anlamına gelir.</li>
+      </ul>
+    </div>
+    <div class="card"><h3>NP-Complete ve NP-Hard</h3>
+      <p style="margin:0 0 8px; font-size:13px;">Problemlerin herhangi biri polinomsal en kötü-durum zaman algoritmalarıyla çözülebildiğinde, NP sınıfındaki <b>tüm</b> problemler de polinomsal zamanda çözülebilir. Bu özelliği taşıyan problemlere <b>NP-tam</b> denir.</p>
+      <p style="margin:0;"><b>NP-Hard</b>, polinomsal zamanda bir çözümü olduğunu ispatlayamadığımız karar problemlerinin karmaşıklık sınıfıdır.</p>
+    </div>
+  </div>
+  <div class="card" style="margin-top:11px;"><h3>"P = NP mi?" sorusu</h3>
+    <p style="margin:0;">P sınıfı, kesinlikle NP sınıfının bir alt kümesidir (P⊆NP). Ama tersi, yani <b>her NP problemi aynı zamanda P sınıfında mıdır</b> (P=NP mi?), hâlâ kanıtlanmamış, bilgisayar biliminin en önemli açık sorularından biridir.</p>
+  </div>
+  <div class="examples"><div class="examples-head"><span class="dot"></span><h4>Örnek Sorular</h4></div>
+    <details class="q"><summary><span class="qnum">S1.</span> Bir problemin NP sınıfında olması ile P sınıfında olması arasındaki temel fark nedir?<span class="arrow">▶</span></summary><div class="answer">P sınıfı, çözümün kendisinin polinom zamanda bulunabildiği problemleri kapsar. NP sınıfı ise, önerilen bir çözümün doğru olup olmadığının polinom zamanda kontrol edilebildiği problemleri kapsar.</div></details>
+    <details class="q"><summary><span class="qnum">S2.</span> Eğer bir NP-complete problem için polinom zamanlı bir çözüm bulunsaydı, bunun sonucu ne olurdu?<span class="arrow">▶</span></summary><div class="answer">P=NP olduğunu kanıtlardı — NP sınıfındaki <i>tüm</i> problemler de polinom zamanda çözülebilir hale gelirdi.</div></details>
+  </div>
+</div></section>
+
+<!-- 61 SUMMARY -->
+<section class="slide" data-index="69"><div class="slide-inner">
+  <div class="kicker">Özet</div>
+  <h1 class="slide-title">Bölüm 4'ün Özeti — <em>Algoritmalar ve Karmaşıklık</em></h1>
+  <p class="subtitle">Bir sonraki bölümde bu araçları Graf Teorisi'ndeki algoritmalara (en kısa yol, ağaç gezinme) uygulayacağız.</p>
+  <div class="two-col-list">
+    <div class="card"><h3>Öğrendiklerimiz</h3>
+      <ul class="clean" style="margin-bottom:0;">
+        <li>Algoritma tanımı, özellikleri, sözde kod (Max, Doğrusal/İkili Arama, Euclid)</li>
+        <li>Infix/Prefix/Postfix: <b>manuel</b> değerlendirme ve dönüşüm + stack tabanlı yöntem</li>
+        <li>Temel işlem, T(n), Büyük-O/Omega/Theta, küçük-o/omega, büyüme sıralaması</li>
+        <li>En kötü/ortalama/en iyi durum analizi</li>
+        <li>İteratif algoritmalar: BulOrta, BulEnkucuk, Matris, Bubble/Insertion Sort, İkili Arama</li>
+        <li>Rekürans bağıntılarının sınıflandırılması ve çözüm yöntemleri (substitution, recursion tree, karakteristik kök)</li>
+        <li>Master Teoremi ve Böl-Fethet algoritmaları (Merge Sort, Quicksort)</li>
+        <li>Fibonacci, Tower of Hanoi, memoization/dinamik programlama</li>
+        <li>Özyinelemeli algoritmaların tümevarımla doğruluk ispatı</li>
+        <li>Tasarım paradigmaları (Kaba Kuvvet, Böl-Fethet, Açgözlü, DP), alan karmaşıklığı</li>
+        <li>P, NP, NP-complete, NP-hard problem sınıfları</li>
+      </ul>
+    </div>
+    <div class="card"><h3>Sırada ne var?</h3>
+      <p style="margin:0 0 10px;">Bölüm 5 — <b>Graf Teorisi</b> konusunda şunları göreceğiz:</p>
+      <ul class="clean" style="margin-bottom:0;">
+        <li>Yol ve döngüler, Hamiltonian ve Euler döngüsü</li>
+        <li>En kısa yol algoritmaları (bu bölümdeki karmaşıklık analizini uygulayacağız)</li>
+        <li>Graf izomorfizmi</li>
+      </ul>
+    </div>
+  </div>
+  <div class="examples"><div class="examples-head"><span class="dot"></span><h4>Genel Tekrar Soruları</h4></div>
+    <details class="q"><summary><span class="qnum">S1.</span> Infix "(A + B) * (C - D)" ifadesini manuel yöntemle hem postfix hem prefix'e çevirin.<span class="arrow">▶</span></summary><div class="answer">Postfix: <b>A B + C D − *</b>. Prefix: <b>* + A B − C D</b>.</div></details>
+    <details class="q"><summary><span class="qnum">S2.</span> T(n)=2T(n/2)+n² bağıntısını Master Teoremi ile çözün.<span class="arrow">▶</span></summary><div class="answer">a=2,b=2,f(n)=n². n^(log₂2)=n. f(n)=n²=Ω(n^(1+1)) ve düzenlilik koşulu sağlandığından <b>Durum 3</b> → T(n)=θ(n²).</div></details>
+    <details class="q"><summary><span class="qnum">S3.</span> aₙ=6aₙ₋₁−9aₙ₋₂ bağıntısının karakteristik denklemini kurup köklerini bulun. Kaç bağımsız sabit gerekir?<span class="arrow">▶</span></summary><div class="answer">r²=6r−9 → (r−3)²=0 → r₁=r₂=3 (eşit kök). Genel çözüm aₙ=c₁3ⁿ+c₂3ⁿn biçiminde olduğundan <b>2 bağımsız sabit</b> gerekir.</div></details>
+  </div>
+</div></section>
+
+</div>
+
+<div class="bottombar">
+  <button class="nav-btn" id="prevBtn">← Önceki</button>
+  <div class="dots" id="dots"></div>
+  <span class="slide-counter" id="counterBottom">01 / 62</span>
+  <button class="nav-btn" id="nextBtn">Sonraki →</button>
+</div>
+
+<script>
+(function(){
+  var slides = Array.prototype.slice.call(document.querySelectorAll('.slide'));
+  var total = slides.length;
+  var current = 0;
+  var counterTop = document.getElementById('counterTop');
+  var counterBottom = document.getElementById('counterBottom');
+  var progressFill = document.getElementById('progressFill');
+  var prevBtn = document.getElementById('prevBtn');
+  var nextBtn = document.getElementById('nextBtn');
+  var dotsWrap = document.getElementById('dots');
+  function pad(n){ return n < 10 ? '0'+n : ''+n; }
+  for(var i=0;i<total;i++){
+    var d = document.createElement('div');
+    d.className = 'd' + (i===0 ? ' active' : '');
+    d.dataset.i = i;
+    d.addEventListener('click', function(){ goTo(parseInt(this.dataset.i,10)); });
+    dotsWrap.appendChild(d);
+  }
+  function render(){
+    slides.forEach(function(s, i){ s.classList.toggle('active', i === current); });
+    var label = pad(current+1) + ' / ' + pad(total);
+    counterTop.textContent = label;
+    counterBottom.textContent = label;
+    progressFill.style.width = ((current) / (total-1) * 100) + '%';
+    prevBtn.disabled = current === 0;
+    nextBtn.disabled = current === total - 1;
+    Array.prototype.forEach.call(dotsWrap.children, function(d,i){ d.classList.toggle('active', i === current); });
+    document.querySelector('.slide.active').scrollTop = 0;
+  }
+  function goTo(i){ if(i < 0 || i >= total) return; current = i; render(); }
+  prevBtn.addEventListener('click', function(){ goTo(current-1); });
+  nextBtn.addEventListener('click', function(){ goTo(current+1); });
+  document.addEventListener('keydown', function(e){
+    if(e.key === 'ArrowRight' || e.key === 'PageDown'){ goTo(current+1); }
+    else if(e.key === 'ArrowLeft' || e.key === 'PageUp'){ goTo(current-1); }
+    else if(e.key === 'Home'){ goTo(0); }
+    else if(e.key === 'End'){ goTo(total-1); }
+  });
+  render();
+  var root = document.documentElement;
+  var settingsBtn = document.getElementById('settingsBtn');
+  var panel = document.getElementById('settingsPanel');
+  var bgPicker = document.getElementById('bgPicker');
+  var textPicker = document.getElementById('textPicker');
+  var resetBtn = document.getElementById('resetBtn');
+  var presetRow = document.getElementById('presetRow');
+  var DEFAULT_BG = '#0B1220';
+  var DEFAULT_TEXT = '#F1F5F9';
+  var presets = [
+    {bg:'#0B1220', text:'#F1F5F9', name:'Gece Mavisi'},
+	{bg:'#F8F9FA', text:'#1A1A1A', name:'Kampüs Beyazı ve Koyu Gri'},
+	{bg:'#000000', text:'#FFD700', name:'Siyah ve Altın Sarısı'},
+	{bg:'#F4F6F9', text:'#0F172A', name:'Kırık Beyaz ve Gece Mavisi'},
+	{bg:'#0B132B', text:'#FFEE58', name:'Koyu Lacivert ve Odak Sarısı'},
+    {bg:'#F4F1EA', text:'#1A1A1A', name:'Kağıt'},
+    {bg:'#111111', text:'#F5F5F5', name:'Siyah'},
+    {bg:'#0F2417', text:'#E8F5E9', name:'Koyu Yeşil'},
+    {bg:'#FFFFFF', text:'#0B1220', name:'Beyaz Tahta'},
+    {bg:'#1B1035', text:'#F3E8FF', name:'Mor Gece'},
+	{bg:'#F1F5F9', text:'#0F172A', name:'Bulutlu Gün Modu'},
+	{bg:'#FEF08A', text:'#1E293B', name:'Fosforlu Vurgu Modu'},
+	{bg:'#FFFFFF', text:'#000000', name:'Güneş Işığı Modu'}
+  ];
+  presets.forEach(function(p){
+    var dot = document.createElement('div');
+    dot.className = 'preset-dot';
+    dot.style.background = p.bg;
+    dot.style.borderColor = p.text;
+    dot.title = p.name;
+    dot.addEventListener('click', function(){ applyTheme(p.bg, p.text); });
+    presetRow.appendChild(dot);
+  });
+  function applyTheme(bg, text){
+    root.style.setProperty('--bg', bg);
+    root.style.setProperty('--text', text);
+    bgPicker.value = bg;
+    textPicker.value = text;
+    try{ localStorage.setItem('algo-slides-theme', JSON.stringify({bg:bg, text:text})); }catch(e){}
+  }
+  settingsBtn.addEventListener('click', function(){ panel.classList.toggle('open'); });
+  document.addEventListener('click', function(e){
+    if(!panel.contains(e.target) && e.target !== settingsBtn && panel.classList.contains('open')){ panel.classList.remove('open'); }
+  });
+  bgPicker.addEventListener('input', function(){ applyTheme(bgPicker.value, textPicker.value); });
+  textPicker.addEventListener('input', function(){ applyTheme(bgPicker.value, textPicker.value); });
+  resetBtn.addEventListener('click', function(){ applyTheme(DEFAULT_BG, DEFAULT_TEXT); });
+  try{
+    var saved = localStorage.getItem('algo-slides-theme');
+    if(saved){ var parsed = JSON.parse(saved); if(parsed && parsed.bg && parsed.text){ applyTheme(parsed.bg, parsed.text); } }
+  }catch(e){}
+})();
+</script>
+
+
+<div id="boardLayer"></div>
+<canvas id="penCanvas"></canvas>
+<div id="laserDot"></div>
+<div id="penToolbar">
+  <div class="pt-grid">
+    <button class="pt-btn" data-tool="pointer" title="İşaretçi — soruları aç, kaydır (V)">🖱️</button>
+    <button class="pt-btn" data-tool="pen" title="Kalem (P)">✏️</button>
+    <button class="pt-btn" data-tool="highlighter" title="Fosforlu kalem (H)">🖍️</button>
+    <button class="pt-btn" data-tool="eraser" title="Silgi — çizgiyi komple siler (E)">🧽</button>
+    <button class="pt-btn" data-tool="laser" title="Lazer işaretçi (L)">🔴</button>
+  </div>
+  <div class="pt-sep"></div>
+  <div class="pt-label">Renk</div>
+  <div class="pt-colors" id="ptColors"></div>
+  <div class="pt-sep"></div>
+  <div class="pt-label">Kalınlık</div>
+  <div class="pt-grid">
+    <button class="pt-btn" data-size="2" title="İnce (-)"><span class="pt-dot" style="width:4px;height:4px"></span></button>
+    <button class="pt-btn" data-size="4" title="Orta"><span class="pt-dot" style="width:8px;height:8px"></span></button>
+    <button class="pt-btn" data-size="8" title="Kalın"><span class="pt-dot" style="width:14px;height:14px"></span></button>
+    <button class="pt-btn" data-size="14" title="Çok kalın (+)"><span class="pt-dot" style="width:20px;height:20px"></span></button>
+  </div>
+  <div class="pt-sep"></div>
+  <div class="pt-grid">
+    <button class="pt-btn" id="ptUndo" title="Geri al (Ctrl+Z)">↶</button>
+    <button class="pt-btn" id="ptClear" title="Bu slayttaki yazıyı temizle (C)">🗑️</button>
+    <button class="pt-btn" id="ptBoard" title="Boş tahta aç/kapat (B)">▭</button>
+    <button class="pt-btn" id="ptEye" title="Yazıyı göster/gizle">👁️</button>
+    <button class="pt-btn" id="ptClose" title="Kalemi kapat (Esc)">✕</button>
+  </div>
+</div>
+<div id="penHint">Kalem açık. <b>V</b> ile işaretçiye geç (soru kutularını aç, kaydır), <b>P</b> ile tekrar yaz. Rakam tuşları renk seçer. Yazılar her slaytta ayrı kalır.</div>
+
+<script>
+(function(){
+  var COLORS = [
+    ['#FFFFFF','Beyaz'], ['#111111','Siyah'], ['#FBBF24','Sarı'], ['#F97316','Turuncu'],
+    ['#EF4444','Kırmızı'], ['#EC4899','Pembe'], ['#A855F7','Mor'], ['#3B82F6','Mavi'],
+    ['#22D3EE','Turkuaz'], ['#22C55E','Yeşil'], ['#A3E635','Açık yeşil'], ['#9CA3AF','Gri']
+  ];
+  var canvas = document.getElementById('penCanvas'), ctx = canvas.getContext('2d');
+  var board = document.getElementById('boardLayer'), tb = document.getElementById('penToolbar');
+  var laser = document.getElementById('laserDot'), hint = document.getElementById('penHint');
+  var toggleBtn = document.getElementById('penToggle'), colorsBox = document.getElementById('ptColors');
+  var state = { open:false, tool:'pointer', color:'#FBBF24', size:4, boardOn:false, hidden:false };
+  var store = {}, hist = {};
+  var cur = null, erasing = null, raf = 0, customWrap = null, customInput = null;
+  // Donanım silgisi algılandıktan sonra normal kalem ucuna dönüşü takip et.
+  var hardwareEraserMode = false;
+
+  function slideEl(){ return document.querySelector('.slide.active'); }
+  var SL = Array.prototype.slice.call(document.querySelectorAll('.slide'));
+  function key(){ if(state.boardOn) return 'board'; var s = slideEl(); var i = s ? SL.indexOf(s) : 0; return 's' + (i < 0 ? 0 : i); }
+  function offY(){ if(state.boardOn) return 0; var s = slideEl(); if(!s) return 0; return s.getBoundingClientRect().top - rect().top; }
+  function layout(){
+    var tbar = document.querySelector('.topbar'), bbar = document.querySelector('.bottombar');
+    var top = tbar ? tbar.getBoundingClientRect().bottom : 56;
+    var bot = bbar ? bbar.getBoundingClientRect().top : (window.innerHeight - 64);
+    [canvas, board].forEach(function(el){ el.style.top = top + 'px'; el.style.height = Math.max(100, bot - top) + 'px'; });
+  }
+  function sTop(){ if(state.boardOn) return 0; var s = slideEl(); return s ? s.scrollTop : 0; }
+  function rect(){ return canvas.getBoundingClientRect(); }
+  function arr(o,k){ if(!o[k]) o[k] = []; return o[k]; }
+
+  function resize(){
+    layout();
+    var dpr = window.devicePixelRatio || 1, r = rect();
+    canvas.width = Math.round(r.width * dpr); canvas.height = Math.round(r.height * dpr);
+    ctx.setTransform(dpr,0,0,dpr,0,0); redraw();
+  }
+  function toPx(p){ return [p[0] * rect().width, p[1] - sTop() + offY()]; }
+
+  function drawStroke(st){
+    var pts = st.points; if(!pts.length) return;
+    ctx.save();
+    ctx.lineCap = 'round'; ctx.lineJoin = 'round'; ctx.strokeStyle = st.color; ctx.fillStyle = st.color;
+    var hl = st.tool === 'highlighter';
+    ctx.globalAlpha = hl ? 0.35 : 1;
+    var lw = hl ? st.size * 5 : st.size; ctx.lineWidth = lw;
+    var p0 = toPx(pts[0]);
+    if(pts.length === 1){ ctx.beginPath(); ctx.arc(p0[0], p0[1], lw/2, 0, Math.PI*2); ctx.fill(); ctx.restore(); return; }
+    ctx.beginPath(); ctx.moveTo(p0[0], p0[1]);
+    for(var i = 1; i < pts.length - 1; i++){
+      var a = toPx(pts[i]), b = toPx(pts[i+1]);
+      ctx.quadraticCurveTo(a[0], a[1], (a[0]+b[0])/2, (a[1]+b[1])/2);
+    }
+    var last = toPx(pts[pts.length-1]); ctx.lineTo(last[0], last[1]);
+    ctx.stroke(); ctx.restore();
+  }
+  function redraw(){
+    var r = rect(); ctx.clearRect(0, 0, r.width, r.height);
+    if(state.hidden) return;
+    (store[key()] || []).forEach(drawStroke);
+  }
+  function schedule(){ if(raf) return; raf = requestAnimationFrame(function(){ raf = 0; redraw(); }); }
+
+  function pt(e){ var r = rect(); return [ (e.clientX - r.left) / r.width, e.clientY - r.top - offY() + sTop() ]; }
+
+  function eraseAt(e){
+    var r = rect(), x = e.clientX - r.left, y = e.clientY - r.top, list = arr(store, key()), removed = [];
+    for(var i = list.length - 1; i >= 0; i--){
+      var hit = list[i].points.some(function(p){ var q = toPx(p); var dx = q[0]-x, dy = q[1]-y; return dx*dx + dy*dy < 18*18; });
+      if(hit){ removed.push(list.splice(i,1)[0]); }
+    }
+    if(removed.length){ erasing = erasing || []; erasing = erasing.concat(removed); schedule(); }
+  }
+
+  canvas.addEventListener('pointerdown', function(e){
+    if(!state.open) return;
+    // Bazı tablet kalemleri silgi ucunu Pointer Events'te ayrı araç olarak bildirir.
+    // Destekleyen tarayıcılarda araç seçimini otomatik olarak silgiye çevir.
+    var hardwareEraser = (e.pointerType === 'eraser') ||
+      (e.pointerType === 'pen' && (e.button === 5 || (e.buttons & 32) === 32));
+    if(hardwareEraser){
+      e.preventDefault();
+      hardwareEraserMode = true;
+      state.tool = 'eraser';
+      applyUI();
+    } else if(e.pointerType === 'pen' && hardwareEraserMode){
+      // Aynı kalem tekrar normal ucuna çevrildi: otomatik olarak kaleme dön.
+      hardwareEraserMode = false;
+      state.tool = 'pen';
+      applyUI();
+    }
+    if(state.tool === 'pointer') return;
+    e.preventDefault(); if(canvas.setPointerCapture){ try{ canvas.setPointerCapture(e.pointerId); }catch(_){} }
+    if(state.tool === 'pen' || state.tool === 'highlighter'){
+      cur = { tool:state.tool, color:state.color, size:state.size, points:[pt(e)] };
+      arr(store, key()).push(cur); schedule();
+    } else if(state.tool === 'eraser'){ erasing = []; eraseAt(e); }
+    else if(state.tool === 'laser'){ moveLaser(e); }
+  });
+  canvas.addEventListener('pointermove', function(e){
+    if(!state.open) return;
+    // Kalemin silgi ucu hareket sırasında ayrıca bildiriliyorsa silmeyi sürdür.
+    if(e.pointerType === 'eraser' ||
+       (e.pointerType === 'pen' && (e.buttons & 32) === 32)){
+      if(state.tool !== 'eraser'){ state.tool = 'eraser'; applyUI(); }
+    }
+    if(state.tool === 'laser'){ moveLaser(e); return; }
+    if(cur){ cur.points.push(pt(e)); schedule(); }
+    else if(erasing){ eraseAt(e); }
+  });
+  function endStroke(){
+    if(cur){ arr(hist, key()).push({type:'add', stroke:cur}); cur = null; }
+    if(erasing){ if(erasing.length) arr(hist, key()).push({type:'remove', list:erasing}); erasing = null; }
+    if(state.tool === 'laser') laser.style.display = 'none';
+  }
+  canvas.addEventListener('pointerup', endStroke);
+  canvas.addEventListener('pointercancel', endStroke);
+  canvas.addEventListener('pointerleave', function(){ if(state.tool === 'laser') laser.style.display = 'none'; });
+  function moveLaser(e){ laser.style.display = 'block'; laser.style.left = e.clientX + 'px'; laser.style.top = e.clientY + 'px'; }
+
+  canvas.addEventListener('wheel', function(e){
+    var s = slideEl(); if(s && !state.boardOn){ s.scrollTop += e.deltaY; schedule(); }
+    e.preventDefault();
+  }, { passive:false });
+  Array.prototype.forEach.call(document.querySelectorAll('.slide'), function(s){ s.addEventListener('scroll', schedule); });
+
+  function undo(){
+    var h = arr(hist, key()), a = h.pop(); if(!a) return;
+    var list = arr(store, key());
+    if(a.type === 'add'){ var i = list.indexOf(a.stroke); if(i > -1) list.splice(i,1); }
+    else { a.list.forEach(function(s){ list.push(s); }); }
+    redraw();
+  }
+  function clearInk(){
+    var list = arr(store, key()); if(!list.length) return;
+    arr(hist, key()).push({type:'clear', list:list.splice(0, list.length)}); redraw();
+  }
+
+  // ---- colour palette (12 presets + free colour picker) ----
+  COLORS.forEach(function(c, i){
+    var b = document.createElement('button');
+    b.className = 'pt-color'; b.setAttribute('data-color', c[0]); b.style.background = c[0];
+    b.title = c[1] + (i < 10 ? ' (' + ((i + 1) % 10) + ')' : '');
+    b.addEventListener('click', function(){ pickColor(c[0]); });
+    colorsBox.appendChild(b);
+  });
+  customWrap = document.createElement('label'); customWrap.className = 'pt-custom'; customWrap.title = 'İstediğin rengi seç';
+  customInput = document.createElement('input'); customInput.type = 'color'; customInput.value = '#FBBF24';
+  customInput.addEventListener('input', function(){ customWrap.style.background = customInput.value; pickColor(customInput.value); });
+  customWrap.appendChild(customInput); colorsBox.appendChild(customWrap);
+
+  function pickColor(c){ state.color = c; if(state.tool !== 'highlighter') state.tool = 'pen'; if(!state.open) state.open = true; applyUI(); }
+  function isPreset(c){ return COLORS.some(function(p){ return p[0].toLowerCase() === c.toLowerCase(); }); }
+
+  function applyUI(){
+    var drawing = state.open && state.tool !== 'pointer';
+    canvas.classList.toggle('on', drawing);
+    canvas.classList.toggle('t-eraser', state.tool === 'eraser');
+    canvas.classList.toggle('t-laser', state.tool === 'laser');
+    tb.classList.toggle('open', state.open);
+    toggleBtn.classList.toggle('active', state.open);
+    board.classList.toggle('on', state.boardOn);
+    Array.prototype.forEach.call(tb.querySelectorAll('[data-tool]'), function(b){ b.classList.toggle('active', b.getAttribute('data-tool') === state.tool); });
+    Array.prototype.forEach.call(tb.querySelectorAll('[data-color]'), function(b){ b.classList.toggle('active', b.getAttribute('data-color').toLowerCase() === state.color.toLowerCase()); });
+    customWrap.classList.toggle('active', !isPreset(state.color));
+    Array.prototype.forEach.call(tb.querySelectorAll('[data-size]'), function(b){ b.classList.toggle('active', +b.getAttribute('data-size') === state.size); });
+    document.getElementById('ptBoard').classList.toggle('active', state.boardOn);
+    document.getElementById('ptEye').classList.toggle('active', state.hidden);
+    if(state.tool !== 'laser') laser.style.display = 'none';
+    redraw();
+  }
+  function setTool(t){ state.tool = t; if(!state.open) state.open = true; applyUI(); }
+  function openPen(v){
+    state.open = v;
+    if(!v){ state.boardOn = false; }
+    if(v && state.tool === 'pointer') state.tool = 'pen';
+    if(v){ hint.classList.add('show'); setTimeout(function(){ hint.classList.remove('show'); }, 4500); }
+    applyUI();
+  }
+
+  toggleBtn.addEventListener('click', function(){ openPen(!state.open); });
+  Array.prototype.forEach.call(tb.querySelectorAll('[data-tool]'), function(b){ b.addEventListener('click', function(){ setTool(b.getAttribute('data-tool')); }); });
+  Array.prototype.forEach.call(tb.querySelectorAll('[data-size]'), function(b){ b.addEventListener('click', function(){ state.size = +b.getAttribute('data-size'); applyUI(); }); });
+  document.getElementById('ptUndo').addEventListener('click', undo);
+  document.getElementById('ptClear').addEventListener('click', clearInk);
+  document.getElementById('ptBoard').addEventListener('click', function(){ state.boardOn = !state.boardOn; applyUI(); });
+  document.getElementById('ptEye').addEventListener('click', function(){ state.hidden = !state.hidden; applyUI(); });
+  document.getElementById('ptClose').addEventListener('click', function(){ openPen(false); });
+
+  document.addEventListener('keydown', function(e){
+    var tag = (e.target && e.target.tagName) || '';
+    if(tag === 'INPUT' || tag === 'TEXTAREA') return;
+    var k = e.key.toLowerCase();
+    if((e.ctrlKey || e.metaKey) && k === 'z'){ if(state.open){ e.preventDefault(); undo(); } return; }
+    if(e.ctrlKey || e.metaKey || e.altKey) return;
+    if(k === 'd'){ openPen(!state.open); return; }
+    if(!state.open) return;
+    if(k === 'escape'){ openPen(false); }
+    else if(k === 'p') setTool('pen');
+    else if(k === 'h') setTool('highlighter');
+    else if(k === 'e') setTool('eraser');
+    else if(k === 'l') setTool('laser');
+    else if(k === 'v') setTool('pointer');
+    else if(k === 'b'){ state.boardOn = !state.boardOn; applyUI(); }
+    else if(k === 'c') clearInk();
+    else if(k.length === 1 && k >= '0' && k <= '9'){
+      var idx = k === '0' ? 9 : (+k - 1);
+      if(COLORS[idx]) pickColor(COLORS[idx][0]);
+    }
+    else if(k === '+' || k === '='){ state.size = Math.min(14, state.size + 2); applyUI(); }
+    else if(k === '-'){ state.size = Math.max(2, state.size - 2); applyUI(); }
+  });
+
+  new MutationObserver(function(){ redraw(); }).observe(document.getElementById('deck'), { attributes:true, subtree:true, attributeFilter:['class'] });
+  window.addEventListener('resize', resize);
+  resize(); applyUI();
+  window.addEventListener('load', resize); setTimeout(resize, 400);
+  window.__pen = { state:state, store:store, undo:undo, clearInk:clearInk, key:key };
+})();
+</script>
+</body>
+</html>

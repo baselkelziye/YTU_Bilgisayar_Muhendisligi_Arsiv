@@ -1,0 +1,1823 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ayrık Matematik — Mantık (Logic)</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,400;0,600;0,700;1,500&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#0B1220;
+    --text:#F1F5F9;
+    --surface: color-mix(in srgb, var(--bg) 88%, var(--text) 12%);
+    --surface-2: color-mix(in srgb, var(--bg) 80%, var(--text) 20%);
+    --border: color-mix(in srgb, var(--bg) 68%, var(--text) 32%);
+    --muted: color-mix(in srgb, var(--text) 62%, var(--bg) 38%);
+    --accent:#FBBF24;
+    --accent-2:#60A5FA;
+    --true:#34D399;
+    --false:#F87171;
+    --radius: 16px;
+    --serif: 'Fraunces', Georgia, serif;
+    --sans: 'Inter', system-ui, sans-serif;
+    --mono: 'IBM Plex Mono', ui-monospace, monospace;
+  }
+
+  *{box-sizing:border-box;}
+  html,body{height:100%;}
+  body{
+    margin:0;
+    background:var(--bg);
+    color:var(--text);
+    font-family:var(--sans);
+    overflow:hidden;
+    transition: background .25s ease, color .25s ease;
+  }
+  ::selection{ background:var(--accent); color:#1a1a1a; }
+
+  /* ---------- Top chrome ---------- */
+  .topbar{
+    position:fixed; top:0; left:0; right:0; height:56px;
+    display:flex; align-items:center; justify-content:space-between;
+    padding:0 20px;
+    background: color-mix(in srgb, var(--bg) 92%, black 8%);
+    border-bottom:1px solid var(--border);
+    z-index:50;
+  }
+  .topbar-left{ display:flex; align-items:center; gap:12px; font-family:var(--mono); font-size:13px; color:var(--muted); }
+  .topbar-left .mark{ font-family:var(--serif); font-style:italic; font-size:16px; color:var(--text); font-weight:600; }
+  .topbar-right{ display:flex; align-items:center; gap:10px; }
+
+  .icon-btn{
+    width:36px; height:36px; border-radius:10px;
+    border:1px solid var(--border);
+    background:var(--surface);
+    color:var(--text);
+    display:flex; align-items:center; justify-content:center;
+    cursor:pointer; font-size:16px;
+    transition: transform .15s ease, background .15s ease;
+  }
+  .icon-btn:hover{ background:var(--surface-2); transform:translateY(-1px); }
+  .icon-btn:active{ transform:translateY(0); }
+
+  .progress-track{
+    position:fixed; top:56px; left:0; right:0; height:3px;
+    background:var(--surface); z-index:49;
+  }
+  .progress-fill{
+    height:100%; background:linear-gradient(90deg, var(--accent-2), var(--accent));
+    width:0%; transition:width .35s ease;
+  }
+
+  /* ---------- Settings panel ---------- */
+  .settings-panel{
+    position:fixed; top:64px; right:20px; width:250px;
+    background:var(--surface); border:1px solid var(--border);
+    border-radius:14px; padding:16px; z-index:60;
+    box-shadow:0 10px 30px rgba(0,0,0,.35);
+    display:none; flex-direction:column; gap:14px;
+  }
+  .settings-panel.open{ display:flex; }
+  .settings-panel h4{ margin:0; font-size:12px; letter-spacing:.03em; color:var(--muted); font-weight:600; text-transform:none;}
+  .swatch-row{ display:flex; align-items:center; justify-content:space-between; gap:10px; }
+  .swatch-row label{ font-size:13px; color:var(--text); }
+  .swatch-row input[type="color"]{
+    width:40px; height:30px; border:1px solid var(--border); border-radius:8px;
+    background:none; cursor:pointer; padding:0;
+  }
+  .preset-row{ display:flex; gap:8px; flex-wrap:wrap; }
+  .preset-dot{
+    width:26px; height:26px; border-radius:50%; cursor:pointer;
+    border:2px solid var(--border);
+  }
+  .reset-btn{
+    margin-top:4px; padding:8px 10px; border-radius:8px; border:1px solid var(--border);
+    background:transparent; color:var(--text); font-size:12px; cursor:pointer; font-family:var(--sans);
+  }
+  .reset-btn:hover{ background:var(--surface-2); }
+
+  /* ---------- Deck ---------- */
+  .deck{
+    position:relative; width:100%; height:100%;
+    padding-top:56px;
+  }
+  .slide{
+    position:absolute; inset:0; top:56px;
+    display:none;
+    padding: 48px clamp(24px, 6vw, 96px) 90px;
+    overflow-y:auto;
+  }
+  .slide.active{ display:block; animation: fade .35s ease; }
+  @keyframes fade{ from{opacity:0; transform:translateY(6px);} to{opacity:1; transform:translateY(0);} }
+
+  .slide-inner{ max-width:980px; margin:0 auto; }
+
+  .kicker{
+    font-family:var(--mono); font-size:12px; color:var(--muted);
+    letter-spacing:.04em; margin-bottom:10px;
+  }
+  h1.slide-title{
+    font-family:var(--serif); font-weight:600; font-size:clamp(28px,4vw,44px);
+    margin:0 0 6px; line-height:1.1;
+  }
+  .slide-title em{ font-style:italic; color:var(--accent); }
+  .subtitle{ color:var(--muted); font-size:16px; margin:0 0 28px; max-width:70ch; }
+
+  p{ line-height:1.65; font-size:15.5px; }
+  .lead{ font-size:17px; line-height:1.7; }
+
+  .grid2{ display:grid; grid-template-columns:1.1fr .9fr; gap:32px; align-items:start; }
+  @media (max-width:820px){ .grid2{ grid-template-columns:1fr; } }
+  .grid3{ display:grid; grid-template-columns:1fr 1fr 1fr; gap:18px; }
+  @media (max-width:900px){ .grid3{ grid-template-columns:1fr; } }
+
+  .card{
+    background:var(--surface); border:1px solid var(--border);
+    border-radius:var(--radius); padding:20px 22px;
+  }
+  .card h3{ margin-top:0; font-family:var(--serif); font-weight:600; font-size:18px; }
+
+  .formula{
+    font-family:var(--mono); font-size:15px; background:var(--surface-2);
+    border:1px solid var(--border); border-radius:10px; padding:3px 9px; display:inline-block;
+  }
+  .formula-big{
+    font-family:var(--mono); font-size:22px; text-align:center; padding:14px;
+    background:var(--surface-2); border:1px solid var(--border); border-radius:12px; margin:14px 0;
+  }
+
+  ul.clean{ padding-left:20px; margin:10px 0; }
+  ul.clean li{ margin-bottom:8px; line-height:1.55; font-size:15px; }
+
+  /* ---------- truth tables ---------- */
+  table.tt{ border-collapse:collapse; width:100%; margin:14px 0; font-family:var(--mono); font-size:14px; }
+  table.tt th, table.tt td{ border:1px solid var(--border); padding:8px 12px; text-align:center; }
+  table.tt th{ background:var(--surface-2); font-weight:600; }
+  table.tt td.res{ font-weight:600; }
+  .pill{ display:inline-block; min-width:26px; padding:2px 8px; border-radius:999px; font-weight:700; font-size:12.5px; }
+  .pill.T{ background: color-mix(in srgb, var(--true) 22%, transparent); color:var(--true); border:1px solid color-mix(in srgb, var(--true) 55%, transparent); }
+  .pill.F{ background: color-mix(in srgb, var(--false) 22%, transparent); color:var(--false); border:1px solid color-mix(in srgb, var(--false) 55%, transparent); }
+
+  /* ---------- examples box ---------- */
+  .examples{
+    margin-top:34px; padding-top:22px; border-top:1px dashed var(--border);
+  }
+  .examples-head{ display:flex; align-items:center; gap:10px; margin-bottom:14px; }
+  .examples-head .dot{ width:9px; height:9px; border-radius:50%; background:var(--accent); }
+  .examples-head h4{ margin:0; font-family:var(--serif); font-weight:600; font-size:17px; }
+
+  details.q{
+    background:var(--surface); border:1px solid var(--border); border-radius:12px;
+    padding:12px 16px; margin-bottom:10px;
+  }
+  details.q summary{
+    cursor:pointer; font-size:14.5px; list-style:none; display:flex; align-items:baseline; gap:10px;
+  }
+  details.q summary::-webkit-details-marker{ display:none; }
+  details.q summary .qnum{ font-family:var(--mono); color:var(--accent-2); font-weight:600; flex:0 0 auto; }
+  details.q summary .arrow{ margin-left:auto; color:var(--muted); font-size:12px; transition:transform .2s ease; }
+  details.q[open] summary .arrow{ transform:rotate(90deg); }
+  .answer{
+    margin-top:10px; padding-top:10px; border-top:1px solid var(--border);
+    font-size:14px; color:var(--muted); line-height:1.6;
+  }
+  .answer b{ color:var(--text); }
+
+  /* ---------- venn / svg ---------- */
+  .venn-wrap{ display:flex; flex-direction:column; align-items:center; gap:6px; }
+  .venn-wrap svg{ width:100%; max-width:180px; }
+  .venn-label{ font-family:var(--mono); font-size:12px; color:var(--muted); text-align:center; }
+  .venn-row{ display:flex; gap:18px; justify-content:space-between; margin-top:10px; flex-wrap:wrap; }
+  .venn-row .venn-wrap{ flex:1; min-width:120px; }
+
+  /* ---------- law table ---------- */
+  table.laws{ width:100%; border-collapse:collapse; font-size:13.5px; margin-top:10px;}
+  table.laws td, table.laws th{ padding:9px 10px; border-bottom:1px solid var(--border); text-align:left; }
+  table.laws th{ color:var(--muted); font-weight:600; font-size:12px; text-transform:uppercase; letter-spacing:.03em;}
+  table.laws td.f{ font-family:var(--mono); }
+
+  .badge{
+    display:inline-flex; align-items:center; gap:6px; font-family:var(--mono); font-size:12px;
+    padding:3px 9px; border-radius:999px; border:1px solid var(--border); color:var(--muted);
+  }
+
+  .two-col-list{ display:grid; grid-template-columns:1fr 1fr; gap:10px 24px; }
+  @media (max-width:600px){ .two-col-list{ grid-template-columns:1fr; } }
+
+  .center-title{ text-align:center; }
+
+  .step-list{ counter-reset:step; list-style:none; padding-left:0; margin:12px 0; }
+  .step-list li{
+    counter-increment:step; position:relative; padding-left:34px; margin-bottom:10px; font-size:14.5px; line-height:1.55;
+  }
+  .step-list li::before{
+    content:counter(step); position:absolute; left:0; top:-1px;
+    width:22px; height:22px; border-radius:50%; background:var(--surface-2); border:1px solid var(--border);
+    display:flex; align-items:center; justify-content:center; font-family:var(--mono); font-size:12px; color:var(--accent-2);
+  }
+
+  /* ---------- title slide ---------- */
+  .title-slide{
+    height:100%; display:flex; flex-direction:column; align-items:center; justify-content:center; text-align:center;
+  }
+  .title-slide .huge{ font-family:var(--serif); font-size:clamp(38px,7vw,72px); font-weight:600; line-height:1.05; }
+  .title-slide .huge em{ font-style:italic; color:var(--accent); }
+  .title-slide .sub{ font-family:var(--mono); color:var(--muted); font-size:15px; margin-top:14px; letter-spacing:.02em; }
+  .title-slide .topics{ margin-top:44px; display:flex; gap:10px; flex-wrap:wrap; justify-content:center; max-width:720px;}
+  .title-slide .topics span{
+    font-family:var(--mono); font-size:12.5px; padding:6px 12px; border-radius:999px;
+    border:1px solid var(--border); color:var(--muted);
+  }
+  .title-slide .topics span.current{ color:var(--accent); border-color:var(--accent); }
+
+  /* ---------- bottom nav ---------- */
+  .bottombar{
+    position:fixed; bottom:0; left:0; right:0; height:64px;
+    display:flex; align-items:center; justify-content:center; gap:18px;
+    background: color-mix(in srgb, var(--bg) 92%, black 8%);
+    border-top:1px solid var(--border);
+    z-index:50;
+  }
+  .nav-btn{
+    display:flex; align-items:center; gap:8px;
+    padding:9px 18px; border-radius:999px;
+    border:1px solid var(--border); background:var(--surface);
+    color:var(--text); cursor:pointer; font-family:var(--sans); font-size:14px; font-weight:500;
+  }
+  .nav-btn:hover{ background:var(--surface-2); }
+  .nav-btn:disabled{ opacity:.35; cursor:not-allowed; }
+  .slide-counter{ font-family:var(--mono); font-size:13px; color:var(--muted); min-width:56px; text-align:center; }
+  .dots{ display:flex; gap:5px; max-width:280px; flex-wrap:wrap; justify-content:center; }
+  .dots .d{ width:6px; height:6px; border-radius:50%; background:var(--border); cursor:pointer; transition:.2s;}
+  .dots .d.active{ background:var(--accent); width:16px; border-radius:4px; }
+
+  @media (max-width:900px){
+    .dots{ display:none; }
+    .settings-panel{ right:10px; left:10px; width:auto; }
+  }
+
+
+  /* ===== Pen / annotation layer ===== */
+  #penCanvas{ position:fixed; left:0; top:56px; width:100%; height:calc(100% - 120px); z-index:40; pointer-events:none; touch-action:none; }
+  #penCanvas.on{ pointer-events:auto; cursor:crosshair; }
+  #penCanvas.t-eraser{ cursor:cell; }
+  #penCanvas.t-laser{ cursor:none; }
+  #boardLayer{ position:fixed; left:0; top:56px; width:100%; height:calc(100% - 120px); background:var(--bg); z-index:39; display:none; }
+  #boardLayer.on{ display:block; }
+  #boardLayer::after{ content:"Boş tahta — özgürce yazın (slaytlara dönmek için B)"; position:absolute; left:50%; top:10px; transform:translateX(-50%); font-family:var(--mono); font-size:12px; color:var(--muted); opacity:.7; }
+  #penToolbar{ position:fixed; left:10px; top:50%; transform:translateY(-50%); z-index:45; display:none; flex-direction:column; gap:7px; padding:9px; width:100px; background:var(--surface); border:1px solid var(--border); border-radius:14px; box-shadow:0 10px 30px rgba(0,0,0,.35); max-height:calc(100% - 130px); overflow-y:auto; }
+  #penToolbar.open{ display:flex; }
+  .pt-grid{ display:grid; grid-template-columns:repeat(2, 36px); gap:6px; justify-content:center; }
+  .pt-btn{ width:36px; height:36px; border-radius:10px; border:1px solid var(--border); background:var(--surface-2); color:var(--text); cursor:pointer; font-size:16px; display:flex; align-items:center; justify-content:center; padding:0; transition:background .15s ease; }
+  .pt-btn:hover{ background:color-mix(in srgb, var(--surface-2) 70%, var(--accent-2) 30%); }
+  .pt-btn.active{ outline:2px solid var(--accent); background:color-mix(in srgb, var(--accent) 22%, var(--surface-2)); }
+  .pt-colors{ display:grid; grid-template-columns:repeat(2, 36px); gap:7px 6px; justify-content:center; justify-items:center; }
+  .pt-color{ width:26px; height:26px; border-radius:50%; border:2px solid var(--border); cursor:pointer; padding:0; transition:transform .12s ease; }
+  .pt-color:hover{ transform:scale(1.12); }
+  .pt-color.active{ border-color:var(--accent); box-shadow:0 0 0 2px var(--accent); transform:scale(1.1); }
+  .pt-custom{ position:relative; width:26px; height:26px; border-radius:50%; border:2px solid var(--border); cursor:pointer; overflow:hidden; background:conic-gradient(#ef4444,#f59e0b,#a3e635,#22d3ee,#3b82f6,#a855f7,#ef4444); }
+  .pt-custom.active{ border-color:var(--accent); box-shadow:0 0 0 2px var(--accent); }
+  .pt-custom input{ position:absolute; inset:-6px; width:44px; height:44px; opacity:0; cursor:pointer; border:0; padding:0; }
+  .pt-sep{ height:1px; background:var(--border); margin:1px 0; flex:0 0 auto; }
+  .pt-dot{ display:block; border-radius:50%; background:var(--text); }
+  .pt-label{ font-family:var(--mono); font-size:9px; letter-spacing:.06em; color:var(--muted); text-align:center; text-transform:uppercase; }
+  #laserDot{ position:fixed; width:16px; height:16px; border-radius:50%; background:rgba(239,68,68,.9); box-shadow:0 0 14px 6px rgba(239,68,68,.5); pointer-events:none; z-index:46; display:none; transform:translate(-50%,-50%); }
+  .icon-btn.active{ outline:2px solid var(--accent); background:color-mix(in srgb, var(--accent) 22%, var(--surface)); }
+  #penHint{ position:fixed; left:122px; top:50%; transform:translateY(-50%); z-index:45; font-family:var(--mono); font-size:11px; color:var(--muted); background:var(--surface); border:1px solid var(--border); border-radius:8px; padding:6px 9px; display:none; max-width:200px; line-height:1.5; }
+  #penHint.show{ display:block; }
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="topbar-left">
+    <span class="mark">Ayrık Matematik</span>
+    <span>/ Bölüm 1 — Mantık</span>
+  </div>
+  <div class="topbar-right">
+    <span class="slide-counter" id="counterTop">01 / 24</span>
+    <button class="icon-btn" id="penToggle" title="Kalem / slayt üzerine yaz (D)">✏️</button>
+    <button class="icon-btn" id="settingsBtn" title="Görünümü değiştir">🎨</button>
+  </div>
+</div>
+<div class="progress-track"><div class="progress-fill" id="progressFill"></div></div>
+
+<div class="settings-panel" id="settingsPanel">
+  <h4>Görünüm</h4>
+  <div class="swatch-row">
+    <label for="bgPicker">Arka plan rengi</label>
+    <input type="color" id="bgPicker" value="#0B1220">
+  </div>
+  <div class="swatch-row">
+    <label for="textPicker">Yazı rengi</label>
+    <input type="color" id="textPicker" value="#F1F5F9">
+  </div>
+  <h4>Hazır temalar</h4>
+  <div class="preset-row" id="presetRow"></div>
+  <button class="reset-btn" id="resetBtn">Varsayılana dön</button>
+</div>
+
+<div class="deck" id="deck">
+
+  <!-- 0 — TITLE -->
+  <section class="slide active" data-index="0">
+    <div class="title-slide">
+      <div class="sub">DERS 1 · ¬ ∧ ∨ ⊕ → ↔ ∀ ∃</div>
+      <div class="huge">Mantık<br><em>(Logic)</em></div>
+      <div class="sub">Rosen &amp; Johnsonbaugh — Discrete Mathematics, Ch. 1</div>
+      <div class="topics">
+        <span class="current">1 · Logic</span>
+        <span>2 · Proof</span>
+        <span>3 · Logic Circuits</span>
+        <span>4 · Algorithms</span>
+        <span>5 · Graphs</span>
+        <span>6 · Trees</span>
+        <span>7 · Finite State Machines</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- 1 — PROPOSITIONS -->
+  <section class="slide" data-index="1">
+    <div class="slide-inner">
+      <div class="kicker">1.1</div>
+      <h1 class="slide-title">Önerme <em>(Proposition)</em> Nedir?</h1>
+      <p class="subtitle">Mantığın temel yapı taşı: doğru ya da yanlış olduğu kesin olarak söylenebilen bildirim cümleleri.</p>
+
+      <div class="grid2">
+        <div>
+          <p class="lead"><b>Tanım:</b> Bir <b>önerme</b>, ya doğru ya da yanlış olan — ikisi birden olmayan — bildirim cümlesidir. Doğruluk değeri <span class="formula">D (True)</span> veya <span class="formula">Y (False)</span> olarak gösterilir.</p>
+          <p>Önermeleri genelde küçük harflerle gösteririz: <span class="formula">p, q, r, s ...</span></p>
+          <div class="card">
+            <h3>Neden önemli?</h3>
+            <p style="margin:0;">Bilgisayar bilimi, devre tasarımı, algoritma doğrulama ve yapay zekadaki <i>bilgi tabanlı sistemler</i> hep önermeler mantığı üzerine kuruludur. "Doğru/Yanlış" ikili yapısı, bit (0/1) mantığının matematiksel temelidir.</p>
+          </div>
+        </div>
+        <div class="card">
+          <h3>Önerme mi, değil mi?</h3>
+          <table class="tt" style="font-family:var(--sans); font-size:13.5px;">
+            <tr><th style="text-align:left;">Cümle</th><th>Önerme mi?</th></tr>
+            <tr><td style="text-align:left;">"Ankara, Türkiye'nin başkentidir."</td><td><span class="pill T">EVET</span></td></tr>
+            <tr><td style="text-align:left;">"2 + 2 = 5"</td><td><span class="pill T">EVET</span></td></tr>
+            <tr><td style="text-align:left;">"x + 1 = 3"</td><td><span class="pill F">HAYIR</span></td></tr>
+            <tr><td style="text-align:left;">"Lütfen kapıyı kapat."</td><td><span class="pill F">HAYIR</span></td></tr>
+            <tr><td style="text-align:left;">"Bugün hava çok güzel!"</td><td><span class="pill F">HAYIR</span></td></tr>
+          </table>
+          <p style="font-size:13px; color:var(--muted); margin-bottom:0;">"x + 1 = 3" bir <b>önerme değildir</b> çünkü x'in değerine göre doğru ya da yanlış olur — buna <b>yüklem (predicate)</b> denir ve ileride işleyeceğiz.</p>
+        </div>
+      </div>
+
+      <div class="examples">
+        <div class="examples-head"><span class="dot"></span><h4>Örnek Sorular</h4></div>
+        <details class="q">
+          <summary><span class="qnum">S1.</span> Aşağıdaki cümlelerden hangileri önermedir? (a) "Paris, Fransa'nın başkentidir." (b) "x &gt; 5" (c) "1 + 1 = 2" (d) "Bu cümle yanlıştır."<span class="arrow">▶</span></summary>
+          <div class="answer">
+            <p><b>(a)</b> Önermedir — doğru değeri D.<br>
+            <b>(b)</b> Önerme değildir — x tanımsız, bir yüklemdir.<br>
+            <b>(c)</b> Önermedir — doğru değeri D.<br>
+            <b>(d)</b> Klasik bir <b>paradokstur</b> (Liar Paradox); kendi kendine referans verdiği için standart iki-değerli mantıkta önerme kabul edilmez.</p>
+          </div>
+        </details>
+        <details class="q">
+          <summary><span class="qnum">S2.</span> "Bu üniversitede en az bir öğrenci Python bilir." cümlesi bir önerme midir? Neden?<span class="arrow">▶</span></summary>
+          <div class="answer">Evet, önermedir. Cümle belirsiz görünse de, gerçek dünyada kontrol edilebilir kesin bir doğruluk değeri (D ya da Y) taşır — kimin bildiği belirsiz olması onu önerme olmaktan çıkarmaz.</div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- 2 — NOT -->
+  <section class="slide" data-index="2">
+    <div class="slide-inner">
+      <div class="kicker">1.2</div>
+      <h1 class="slide-title">Değil — Olumsuzlama <em>(¬p)</em></h1>
+      <p class="subtitle">En basit ama en temel bağlaç: bir önermenin doğruluk değerini tersine çevirir.</p>
+
+      <div class="grid2">
+        <div class="card">
+          <h3>Tanım ve tablo</h3>
+          <p style="margin:6px 0;"><span class="formula">¬p</span> okunuşu: "p değil" / "değil p". p doğruysa ¬p yanlış, p yanlışsa ¬p doğrudur.</p>
+          <table class="tt"><tr><th>p</th><th>¬p</th></tr>
+            <tr><td><span class="pill T">D</span></td><td><span class="pill F">Y</span></td></tr>
+            <tr><td><span class="pill F">Y</span></td><td><span class="pill T">D</span></td></tr>
+          </table>
+          <p style="margin-bottom:0; font-size:14px;">Boole cebirinde ¬p yerine sıkça <span class="formula">p'</span> veya <span class="formula">p̄</span> gösterimi de kullanılır — devre tasarımında bunu göreceğiz.</p>
+        </div>
+        <div class="card">
+          <h3>Venn ile görselleştirme</h3>
+          <div class="venn-wrap">
+            <svg viewBox="0 0 160 140">
+              <rect x="4" y="4" width="152" height="120" rx="10" fill="none" stroke="var(--border)" stroke-width="2"/>
+              <circle cx="80" cy="65" r="42" fill="var(--true)" fill-opacity=".28" stroke="var(--true)" stroke-width="2"/>
+              <text x="80" y="68" text-anchor="middle" font-family="var(--mono)" font-size="13" fill="var(--text)">p</text>
+            </svg>
+            <div class="venn-label">Yeşil alan = p doğru<br>Kutunun geri kalanı = ¬p doğru</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="examples">
+        <div class="examples-head"><span class="dot"></span><h4>Örnek Sorular</h4></div>
+        <details class="q">
+          <summary><span class="qnum">S1.</span> p = "Bugün Pazartesi'dir." önermesinin ¬p karşılığını Türkçe olarak yazın.<span class="arrow">▶</span></summary>
+          <div class="answer">¬p = "Bugün Pazartesi değildir."</div>
+        </details>
+        <details class="q">
+          <summary><span class="qnum">S2.</span> ¬(¬p) her zaman p'ye eşit midir? Bunu neden "çift olumsuzlama" (double negation) kanunu olarak adlandırıyoruz?<span class="arrow">▶</span></summary>
+          <div class="answer">Evet. p doğruysa ¬p yanlış, ¬(¬p) tekrar doğru olur; p yanlışsa aynı mantıkla ¬(¬p) yanlış kalır. İki kez tersini almak orijinal değeri geri verir — bu yüzden <b>¬(¬p) ≡ p</b> bir kanun olarak kabul edilir.</div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3 — AND -->
+  <section class="slide" data-index="3">
+    <div class="slide-inner">
+      <div class="kicker">1.3</div>
+      <h1 class="slide-title">Ve — Konjunksiyon <em>(p ∧ q)</em></h1>
+      <p class="subtitle">İki önermeyi birleştirir; sadece <b>her ikisi de doğru</b> olduğunda doğrudur — "en zayıf halka" mantığı.</p>
+
+      <div class="grid2">
+        <div class="card">
+          <h3>Doğruluk tablosu</h3>
+          <table class="tt"><tr><th>p</th><th>q</th><th>p∧q</th></tr>
+            <tr><td><span class="pill T">D</span></td><td><span class="pill T">D</span></td><td class="res"><span class="pill T">D</span></td></tr>
+            <tr><td><span class="pill T">D</span></td><td><span class="pill F">Y</span></td><td class="res"><span class="pill F">Y</span></td></tr>
+            <tr><td><span class="pill F">Y</span></td><td><span class="pill T">D</span></td><td class="res"><span class="pill F">Y</span></td></tr>
+            <tr><td><span class="pill F">Y</span></td><td><span class="pill F">Y</span></td><td class="res"><span class="pill F">Y</span></td></tr>
+          </table>
+          <p style="margin-bottom:0;">Günlük dil: p = "Ders çalıştım.", q = "Sınava girdim." → <span class="formula">p∧q</span> = "Hem ders çalıştım hem sınava girdim."</p>
+        </div>
+        <div class="card">
+          <h3>Venn diyagramı — kesişim</h3>
+          <div class="venn-wrap">
+            <svg viewBox="0 0 180 140">
+              <rect x="4" y="4" width="172" height="120" rx="10" fill="none" stroke="var(--border)" stroke-width="2"/>
+              <circle cx="70" cy="62" r="42" fill="none" stroke="var(--accent-2)" stroke-width="2"/>
+              <circle cx="110" cy="62" r="42" fill="none" stroke="var(--accent-2)" stroke-width="2"/>
+              <path d="M 90 22 A 42 42 0 0 1 90 102 A 42 42 0 0 1 90 22 Z" fill="var(--true)" fill-opacity=".4"/>
+              <text x="52" y="66" font-family="var(--mono)" font-size="13" fill="var(--text)">p</text>
+              <text x="124" y="66" font-family="var(--mono)" font-size="13" fill="var(--text)">q</text>
+            </svg>
+            <div class="venn-label">Yeşil kesişim = p∧q doğru olan bölge</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="examples">
+        <div class="examples-head"><span class="dot"></span><h4>Örnek Sorular</h4></div>
+        <details class="q">
+          <summary><span class="qnum">S1.</span> p=D, q=Y, r=D iken p ∧ q ∧ r ifadesinin değerini bulun.<span class="arrow">▶</span></summary>
+          <div class="answer">Konjunksiyon zincirinde bir tane bile Y varsa sonuç Y'dir. q=Y olduğundan <b>sonuç Y</b>.</div>
+        </details>
+        <details class="q">
+          <summary><span class="qnum">S2.</span> "p∧q doğruysa, p de tek başına doğrudur." iddiası her zaman geçerli midir? Doğruluk tablosuyla açıklayın.<span class="arrow">▶</span></summary>
+          <div class="answer">Evet, her zaman geçerlidir. p∧q'nun D olduğu tek satır p=D,q=D satırıdır — bu satırda p zaten D'dir. Bu, (p∧q)→p'nin bir totoloji olmasının nedenidir (Slayt 12'de yeniden göreceğiz).</div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4 — OR (inclusive) -->
+  <section class="slide" data-index="4">
+    <div class="slide-inner">
+      <div class="kicker">1.4</div>
+      <h1 class="slide-title">Veya — Kapsayıcı Disjunksiyon <em>(p ∨ q)</em></h1>
+      <p class="subtitle"><b>En az biri</b> doğru olduğunda doğrudur; ikisi de doğruyken bile doğrudur — "kapsayıcı veya" (inclusive or).</p>
+
+      <div class="grid2">
+        <div class="card">
+          <h3>Doğruluk tablosu</h3>
+          <table class="tt"><tr><th>p</th><th>q</th><th>p∨q</th></tr>
+            <tr><td><span class="pill T">D</span></td><td><span class="pill T">D</span></td><td class="res"><span class="pill T">D</span></td></tr>
+            <tr><td><span class="pill T">D</span></td><td><span class="pill F">Y</span></td><td class="res"><span class="pill T">D</span></td></tr>
+            <tr><td><span class="pill F">Y</span></td><td><span class="pill T">D</span></td><td class="res"><span class="pill T">D</span></td></tr>
+            <tr><td><span class="pill F">Y</span></td><td><span class="pill F">Y</span></td><td class="res"><span class="pill F">Y</span></td></tr>
+          </table>
+          <p style="margin-bottom:0;">Örnek: "Kahve ya da çay içebilirsiniz." — İkisini de isteyen bir müşteri bu cümleyi yalanlamış olmaz; matematiksel ∨ tam olarak böyle çalışır.</p>
+        </div>
+        <div class="card">
+          <h3>Venn diyagramı — birleşim</h3>
+          <div class="venn-wrap">
+            <svg viewBox="0 0 180 140">
+              <rect x="4" y="4" width="172" height="120" rx="10" fill="none" stroke="var(--border)" stroke-width="2"/>
+              <circle cx="70" cy="62" r="42" fill="var(--true)" fill-opacity=".32" stroke="var(--accent-2)" stroke-width="2"/>
+              <circle cx="110" cy="62" r="42" fill="var(--true)" fill-opacity=".32" stroke="var(--accent-2)" stroke-width="2"/>
+              <text x="52" y="66" font-family="var(--mono)" font-size="13" fill="var(--text)">p</text>
+              <text x="124" y="66" font-family="var(--mono)" font-size="13" fill="var(--text)">q</text>
+            </svg>
+            <div class="venn-label">Her iki dairenin kapladığı tüm alan = p∨q doğru</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="examples">
+        <div class="examples-head"><span class="dot"></span><h4>Örnek Sorular</h4></div>
+        <details class="q">
+          <summary><span class="qnum">S1.</span> p=Y, q=Y iken p∨q'nun değerini bulun ve bunun neden ∧'dan farklı davrandığını açıklayın.<span class="arrow">▶</span></summary>
+          <div class="answer">p∨q = Y∨Y = <b>Y</b>. ∨'nin yanlış olması için <i>ikisinin de</i> yanlış olması gerekir — bu tek satırda gerçekleşir; ∧ ise dört satırdan üçünde yanlıştır. ∨, ∧'ya göre "sağlanması daha kolay" bir koşuldur.</div>
+        </details>
+        <details class="q">
+          <summary><span class="qnum">S2.</span> p ∨ q ∨ r zincirinin yanlış (Y) olduğu tek durumu belirtin.<span class="arrow">▶</span></summary>
+          <div class="answer">Sadece <b>p=Y, q=Y, r=Y</b> olduğunda sonuç Y'dir; diğer 7 kombinasyonun hepsinde en az bir değişken D olduğundan sonuç D olur.</div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5 — XOR -->
+  <section class="slide" data-index="5">
+    <div class="slide-inner">
+      <div class="kicker">1.5</div>
+      <h1 class="slide-title">Dışlayıcı Veya — <em>XOR (p ⊕ q)</em></h1>
+      <p class="subtitle">Sadece <b>tam olarak biri</b> doğru olduğunda doğrudur — "ya biri ya diğeri, ikisi birden değil".</p>
+
+      <div class="grid2">
+        <div class="card">
+          <h3>Doğruluk tablosu</h3>
+          <table class="tt"><tr><th>p</th><th>q</th><th>p⊕q</th></tr>
+            <tr><td><span class="pill T">D</span></td><td><span class="pill T">D</span></td><td class="res"><span class="pill F">Y</span></td></tr>
+            <tr><td><span class="pill T">D</span></td><td><span class="pill F">Y</span></td><td class="res"><span class="pill T">D</span></td></tr>
+            <tr><td><span class="pill F">Y</span></td><td><span class="pill T">D</span></td><td class="res"><span class="pill T">D</span></td></tr>
+            <tr><td><span class="pill F">Y</span></td><td><span class="pill F">Y</span></td><td class="res"><span class="pill F">Y</span></td></tr>
+          </table>
+          <p style="margin:0 0 8px;"><b>Fark:</b> p∨q'dan tek farkı, p=D ve q=D satırında ∨'nin D, ⊕'nin ise Y vermesidir.</p>
+          <div class="formula">p ⊕ q ≡ (p∨q) ∧ ¬(p∧q)</div>
+        </div>
+        <div class="card">
+          <h3>Venn diyagramı — simetrik fark</h3>
+          <div class="venn-wrap">
+            <svg viewBox="0 0 180 140">
+              <rect x="4" y="4" width="172" height="120" rx="10" fill="none" stroke="var(--border)" stroke-width="2"/>
+              <circle cx="70" cy="62" r="42" fill="var(--true)" fill-opacity=".32" stroke="var(--accent-2)" stroke-width="2"/>
+              <circle cx="110" cy="62" r="42" fill="var(--true)" fill-opacity=".32" stroke="var(--accent-2)" stroke-width="2"/>
+              <path d="M 90 22 A 42 42 0 0 1 90 102 A 42 42 0 0 1 90 22 Z" fill="var(--surface)"/>
+              <text x="52" y="66" font-family="var(--mono)" font-size="13" fill="var(--text)">p</text>
+              <text x="124" y="66" font-family="var(--mono)" font-size="13" fill="var(--text)">q</text>
+            </svg>
+            <div class="venn-label">Kesişim "oyulmuştur" — sadece birine ait bölgeler doğru</div>
+          </div>
+          <p style="font-size:13px; color:var(--muted); margin:10px 0 0;">Gerçek hayattan örnek: bir anahtarla iki lambayı seri kontrol eden devrede "tam olarak biri açık" mantığı XOR ile modellenir — bu, Logic Circuits konusunda tekrar karşımıza çıkacak.</p>
+        </div>
+      </div>
+
+      <div class="examples">
+        <div class="examples-head"><span class="dot"></span><h4>Örnek Sorular</h4></div>
+        <details class="q">
+          <summary><span class="qnum">S1.</span> "Menüden ya çorba ya da salata seçebilirsiniz (ikisi birden değil)." cümlesini ∨ mi yoksa ⊕ mi daha doğru modeller?<span class="arrow">▶</span></summary>
+          <div class="answer">⊕ (XOR) modeller, çünkü ikisinin birden seçilmesi burada açıkça yasaklanmıştır — bu günlük dildeki "dışlayıcı veya" kullanımının klasik bir örneğidir.</div>
+        </details>
+        <details class="q">
+          <summary><span class="qnum">S2.</span> p ⊕ p ve p ⊕ ¬p ifadelerinin değerlerini bulun ve yorumlayın.<span class="arrow">▶</span></summary>
+          <div class="answer">p⊕p: p ile kendisi her zaman aynı değeri taşır, "tam olarak biri doğru" koşulu asla sağlanamaz → <b>her zaman Y</b> (çelişki). p⊕¬p: p ile ¬p her zaman farklı değerlere sahiptir, yani her zaman "tam olarak biri doğru" → <b>her zaman D</b> (totoloji).</div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- 6 — NAND / NOR -->
+  <section class="slide" data-index="6">
+    <div class="slide-inner">
+      <div class="kicker">1.6</div>
+      <h1 class="slide-title">NAND <em>(↑)</em> ve NOR <em>(↓)</em></h1>
+      <p class="subtitle">AND ve OR'ın "değili" — az bilinir ama Logic Circuits konusunda çok önemli olacaklar: <b>evrensel kapılar</b>.</p>
+
+      <div class="two-col-list">
+        <div class="card">
+          <h3>NAND — <span class="formula">p ↑ q ≡ ¬(p∧q)</span></h3>
+          <table class="tt"><tr><th>p</th><th>q</th><th>p↑q</th></tr>
+            <tr><td><span class="pill T">D</span></td><td><span class="pill T">D</span></td><td class="res"><span class="pill F">Y</span></td></tr>
+            <tr><td><span class="pill T">D</span></td><td><span class="pill F">Y</span></td><td class="res"><span class="pill T">D</span></td></tr>
+            <tr><td><span class="pill F">Y</span></td><td><span class="pill T">D</span></td><td class="res"><span class="pill T">D</span></td></tr>
+            <tr><td><span class="pill F">Y</span></td><td><span class="pill F">Y</span></td><td class="res"><span class="pill T">D</span></td></tr>
+          </table>
+          <p style="margin-bottom:0; font-size:13.5px;">AND'in tam tersi — sadece ikisi de doğruyken yanlıştır.</p>
+        </div>
+        <div class="card">
+          <h3>NOR — <span class="formula">p ↓ q ≡ ¬(p∨q)</span></h3>
+          <table class="tt"><tr><th>p</th><th>q</th><th>p↓q</th></tr>
+            <tr><td><span class="pill T">D</span></td><td><span class="pill T">D</span></td><td class="res"><span class="pill F">Y</span></td></tr>
+            <tr><td><span class="pill T">D</span></td><td><span class="pill F">Y</span></td><td class="res"><span class="pill F">Y</span></td></tr>
+            <tr><td><span class="pill F">Y</span></td><td><span class="pill T">D</span></td><td class="res"><span class="pill F">Y</span></td></tr>
+            <tr><td><span class="pill F">Y</span></td><td><span class="pill F">Y</span></td><td class="res"><span class="pill T">D</span></td></tr>
+          </table>
+          <p style="margin-bottom:0; font-size:13.5px;">OR'ın tam tersi — sadece ikisi de yanlışken doğrudur.</p>
+        </div>
+      </div>
+
+      <div class="card" style="margin-top:16px;">
+        <h3>Neden "evrensel kapı" deniyor?</h3>
+        <p style="margin:0;">Yalnızca NAND (ya da yalnızca NOR) kullanarak ¬, ∧ ve ∨ bağlaçlarının <b>hepsini yeniden inşa edebilirsiniz</b>:</p>
+        <ul class="clean" style="margin-bottom:0;">
+          <li><span class="formula">¬p ≡ p ↑ p</span></li>
+          <li><span class="formula">p ∧ q ≡ (p↑q) ↑ (p↑q)</span></li>
+          <li><span class="formula">p ∨ q ≡ (p↑p) ↑ (q↑q)</span></li>
+        </ul>
+        <p style="font-size:13px; color:var(--muted); margin:10px 0 0;">Bu özellik, entegre devrelerin neden çoğunlukla tek tip NAND kapılarından üretildiğini açıklar — Logic Circuits konusunda pratik uygulamasını göreceğiz.</p>
+      </div>
+
+      <div class="examples">
+        <div class="examples-head"><span class="dot"></span><h4>Örnek Sorular</h4></div>
+        <details class="q">
+          <summary><span class="qnum">S1.</span> p=D, q=Y iken p↑q ve p↓q değerlerini hesaplayın.<span class="arrow">▶</span></summary>
+          <div class="answer">p∧q = Y → p↑q = ¬Y = <b>D</b>.<br>p∨q = D → p↓q = ¬D = <b>Y</b>.</div>
+        </details>
+        <details class="q">
+          <summary><span class="qnum">S2.</span> p↑p ifadesinin ¬p'ye eşdeğer olduğunu doğruluk tablosuyla gösterin.<span class="arrow">▶</span></summary>
+          <div class="answer">p=D→p∧p=D→p↑p=¬D=Y=¬p ✓. p=Y→p∧p=Y→p↑p=¬Y=D=¬p ✓. İki satırda da eşleştiği için <b>p↑p ≡ ¬p</b> doğrulanmış olur.</div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- 7 — CONDITIONAL -->
+  <section class="slide" data-index="7">
+    <div class="slide-inner">
+      <div class="kicker">1.7</div>
+      <h1 class="slide-title">Koşullu Önerme <em>(p → q)</em></h1>
+      <p class="subtitle">"Eğer p ise, q" — p'ye <b>hipotez</b>, q'ya <b>sonuç</b> denir. Mantığın en "yanıltıcı" ama en kullanışlı bağlacı.</p>
+
+      <div class="grid2">
+        <div class="card">
+          <h3>Doğruluk tablosu</h3>
+          <table class="tt"><tr><th>p</th><th>q</th><th>p→q</th></tr>
+            <tr><td><span class="pill T">D</span></td><td><span class="pill T">D</span></td><td class="res"><span class="pill T">D</span></td></tr>
+            <tr><td><span class="pill T">D</span></td><td><span class="pill F">Y</span></td><td class="res"><span class="pill F">Y</span></td></tr>
+            <tr><td><span class="pill F">Y</span></td><td><span class="pill T">D</span></td><td class="res"><span class="pill T">D</span></td></tr>
+            <tr><td><span class="pill F">Y</span></td><td><span class="pill F">Y</span></td><td class="res"><span class="pill T">D</span></td></tr>
+          </table>
+          <p style="margin-bottom:0; font-size:14px;"><b>Sadece</b> p doğru ve q yanlışken yanlıştır — bu tek satırı ezberlemek yeterlidir.</p>
+        </div>
+        <div class="card">
+          <h3>"Boş doğruluk" (vacuous truth)</h3>
+          <p style="margin:0 0 10px;">p yanlışsa, p→q otomatik olarak doğrudur — sonuç ne olursa olsun.</p>
+          <div class="formula-big" style="font-size:15px;">"Eğer ay peynirden yapılmışsa,<br>ben de milyarderim."</div>
+          <p style="margin:0; font-size:14px;">p ("ay peynirden yapılmıştır") yanlış olduğu için, q ne olursa olsun bu ifade <b>doğru</b> kabul edilir. Bu, ilk bakışta garip görünse de matematiksel ispatlarda tutarlılığı korur.</p>
+        </div>
+      </div>
+
+      <div class="card" style="margin-top:16px;">
+        <h3>p → q'nun farklı okunuş biçimleri</h3>
+        <p style="margin:0;">Aynı şey şu şekillerin hepsiyle ifade edilebilir: "p ise q", "p, q için yeterlidir", "q, p için gereklidir", "q, p olduğu sürece", "p olmadıkça q gerçekleşmez değildir" (dikkatli okuyun!), "sadece p ise q".</p>
+      </div>
+
+      <div class="examples">
+        <div class="examples-head"><span class="dot"></span><h4>Örnek Sorular</h4></div>
+        <details class="q">
+          <summary><span class="qnum">S1.</span> "n asal sayı olması, n'nin 1'den büyük olması için yeterlidir." ifadesini p→q formunda yazın.<span class="arrow">▶</span></summary>
+          <div class="answer">p = "n asal sayıdır", q = "n &gt; 1" olsun. İfade: <b>p → q</b> ("n asal ise n &gt; 1").</div>
+        </details>
+        <details class="q">
+          <summary><span class="qnum">S2.</span> p=Y iken p→q'nun her zaman D olmasının neden makul olduğunu bir örnekle açıklayın.<span class="arrow">▶</span></summary>
+          <div class="answer">Örnek: "Eğer bugün yağmur yağarsa, dersi iptal ederim." Öğretmen bunu söylediğinde, yağmur yağmazsa (p=Y) sözünü tutup tutmadığı sorgulanamaz — söz zaten "yağmur yağarsa" koşuluna bağlıydı. Koşul gerçekleşmediği için söz "bozulmamış" (D) sayılır.</div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- 8 — CONVERSE / INVERSE / CONTRAPOSITIVE -->
+  <section class="slide" data-index="8">
+    <div class="slide-inner">
+      <div class="kicker">1.8</div>
+      <h1 class="slide-title">Karşıt, Ters, Çelişki</h1>
+      <p class="subtitle"><i>Converse, Inverse, Contrapositive</i> — p → q'dan türetilen üç önerme, ispat tekniklerinin temelini oluşturur.</p>
+
+      <div class="grid2">
+        <div class="card">
+          <h3>Tanımlar</h3>
+          <table class="laws">
+            <tr><th>İsim</th><th>Form</th></tr>
+            <tr><td>Orijinal</td><td class="f">p → q</td></tr>
+            <tr><td>Karşıt (Converse)</td><td class="f">q → p</td></tr>
+            <tr><td>Ters (Inverse)</td><td class="f">¬p → ¬q</td></tr>
+            <tr><td>Çelişki (Contrapositive)</td><td class="f">¬q → ¬p</td></tr>
+          </table>
+          <p style="margin-top:12px; margin-bottom:0; font-size:14px;">
+            <b>Kritik nokta:</b> p→q, sadece <b>kendi çelişkisiyle (¬q→¬p)</b> mantıksal olarak denktir. Karşıt ve ters, orijinal önermeyle denk <b>değildir</b>.
+          </p>
+        </div>
+        <div class="card">
+          <h3>Doğruluk tablosuyla karşılaştırma</h3>
+          <table class="tt" style="font-size:12.5px;">
+            <tr><th>p</th><th>q</th><th>p→q</th><th>q→p</th><th>¬q→¬p</th></tr>
+            <tr><td><span class="pill T">D</span></td><td><span class="pill T">D</span></td><td><span class="pill T">D</span></td><td><span class="pill T">D</span></td><td><span class="pill T">D</span></td></tr>
+            <tr><td><span class="pill T">D</span></td><td><span class="pill F">Y</span></td><td><span class="pill F">Y</span></td><td><span class="pill T">D</span></td><td><span class="pill F">Y</span></td></tr>
+            <tr><td><span class="pill F">Y</span></td><td><span class="pill T">D</span></td><td><span class="pill T">D</span></td><td><span class="pill F">Y</span></td><td><span class="pill T">D</span></td></tr>
+            <tr><td><span class="pill F">Y</span></td><td><span class="pill F">Y</span></td><td><span class="pill T">D</span></td><td><span class="pill T">D</span></td><td><span class="pill T">D</span></td></tr>
+          </table>
+          <p style="margin-bottom:0; font-size:13px; color:var(--muted);">p→q ile ¬q→¬p sütunları birebir aynı — q→p sütunu 2. ve 3. satırda farklı!</p>
+        </div>
+      </div>
+
+      <div class="card" style="margin-top:16px;">
+        <h3>Örnek: "Eğer bugün Cuma ise, yarın Cumartesi'dir."</h3>
+        <ul class="clean" style="margin-bottom:0;">
+          <li><b>Karşıt:</b> "Eğer yarın Cumartesi ise, bugün Cuma'dır." (farklı bir iddia, tesadüfen burada da doğru)</li>
+          <li><b>Ters:</b> "Eğer bugün Cuma değilse, yarın Cumartesi değildir."</li>
+          <li><b>Çelişki:</b> "Eğer yarın Cumartesi değilse, bugün Cuma değildir." — orijinaliyle her zaman aynı doğruluk değerine sahiptir.</li>
+        </ul>
+      </div>
+
+      <div class="examples">
+        <div class="examples-head"><span class="dot"></span><h4>Örnek Sorular</h4></div>
+        <details class="q">
+          <summary><span class="qnum">S1.</span> "Eğer n çift sayıysa, n² çift sayıdır." önermesinin çelişkisini (contrapositive) yazın.<span class="arrow">▶</span></summary>
+          <div class="answer">Çelişki: "Eğer n² çift değilse (tek ise), n çift değildir (tek'tir)." Bu, orijinal önermeyle mantıksal olarak tamamen denktir ve genelde ispatlamak daha kolaydır — Proof konusunda "çelişki ile ispat" olarak kullanacağız.</div>
+        </details>
+        <details class="q">
+          <summary><span class="qnum">S2.</span> Karşıt (converse) önermenin orijinal önermeyle neden denk olmadığını, bir karşı örnekle gösterin.<span class="arrow">▶</span></summary>
+          <div class="answer">p = "x köpektir", q = "x memelidir" olsun. p→q ("köpekse memelidir") her zaman doğrudur. Ama karşıtı q→p ("memeliyse köpektir") yanlıştır — çünkü kedi de bir memelidir ama köpek değildir. Bu, karşıtın orijinalden farklı bir iddia olduğunu net gösterir.</div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- 9 — BICONDITIONAL -->
+  <section class="slide" data-index="9">
+    <div class="slide-inner">
+      <div class="kicker">1.9</div>
+      <h1 class="slide-title">Çift Koşullu Önerme <em>(p ↔ q)</em></h1>
+      <p class="subtitle">"p, ancak ve ancak q" — p ve q <b>aynı</b> doğruluk değerine sahip olduğunda doğrudur.</p>
+
+      <div class="grid2">
+        <div class="card">
+          <h3>Doğruluk tablosu</h3>
+          <table class="tt"><tr><th>p</th><th>q</th><th>p↔q</th></tr>
+            <tr><td><span class="pill T">D</span></td><td><span class="pill T">D</span></td><td class="res"><span class="pill T">D</span></td></tr>
+            <tr><td><span class="pill T">D</span></td><td><span class="pill F">Y</span></td><td class="res"><span class="pill F">Y</span></td></tr>
+            <tr><td><span class="pill F">Y</span></td><td><span class="pill T">D</span></td><td class="res"><span class="pill F">Y</span></td></tr>
+            <tr><td><span class="pill F">Y</span></td><td><span class="pill F">Y</span></td><td class="res"><span class="pill T">D</span></td></tr>
+          </table>
+          <div class="formula">p ↔ q ≡ (p→q) ∧ (q→p)</div>
+        </div>
+        <div class="card">
+          <h3>⊕ ile ilişkisi</h3>
+          <p style="margin:0 0 10px;">↔, aslında ⊕'nin tam tersidir — sütunları karşılaştırın:</p>
+          <table class="tt" style="font-size:13px;"><tr><th>p</th><th>q</th><th>p⊕q</th><th>p↔q</th></tr>
+            <tr><td><span class="pill T">D</span></td><td><span class="pill T">D</span></td><td><span class="pill F">Y</span></td><td><span class="pill T">D</span></td></tr>
+            <tr><td><span class="pill T">D</span></td><td><span class="pill F">Y</span></td><td><span class="pill T">D</span></td><td><span class="pill F">Y</span></td></tr>
+            <tr><td><span class="pill F">Y</span></td><td><span class="pill T">D</span></td><td><span class="pill T">D</span></td><td><span class="pill F">Y</span></td></tr>
+            <tr><td><span class="pill F">Y</span></td><td><span class="pill F">Y</span></td><td><span class="pill F">Y</span></td><td><span class="pill T">D</span></td></tr>
+          </table>
+          <p style="margin:8px 0 0;" class="formula">p ↔ q ≡ ¬(p ⊕ q)</p>
+        </div>
+      </div>
+
+      <div class="examples">
+        <div class="examples-head"><span class="dot"></span><h4>Örnek Sorular</h4></div>
+        <details class="q">
+          <summary><span class="qnum">S1.</span> p=D, q=Y iken p↔q ve p⊕q'nun değerlerini bulup karşılaştırın.<span class="arrow">▶</span></summary>
+          <div class="answer">p↔q = <b>Y</b> (değerleri farklı). p⊕q = <b>D</b> (tam olarak biri doğru). Bu, ↔ ile ⊕'nin her zaman birbirinin tam tersi olduğunu doğrular.</div>
+        </details>
+        <details class="q">
+          <summary><span class="qnum">S2.</span> "Bir üçgen eşkenardır, ancak ve ancak üç kenarı da eşit uzunluktaysa." ifadesini p↔q formunda sembolize edin.<span class="arrow">▶</span></summary>
+          <div class="answer">p = "üçgen eşkenardır", q = "üç kenarı eşit uzunluktadır". İfade: <b>p ↔ q</b>. Bu aslında bir tanımdır (definition) — matematikte tanımlar genelde ↔ ile ifade edilir çünkü çift yönlü bir eşdeğerliktir.</div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- 10 — COMPOUND / PRECEDENCE -->
+  <section class="slide" data-index="10">
+    <div class="slide-inner">
+      <div class="kicker">1.10</div>
+      <h1 class="slide-title">Bileşik Önermeler ve Operatör Önceliği</h1>
+      <p class="subtitle">Parantezsiz uzun ifadeleri doğru okuyabilmek için işlem önceliğini bilmek gerekir.</p>
+
+      <div class="grid2">
+        <div class="card">
+          <h3>Öncelik sırası (yüksekten düşüğe)</h3>
+          <table class="laws">
+            <tr><th>Sıra</th><th>Operatör</th><th>Sembol</th></tr>
+            <tr><td>1</td><td>Parantez</td><td class="f">( )</td></tr>
+            <tr><td>2</td><td>Değil</td><td class="f">¬</td></tr>
+            <tr><td>3</td><td>Ve</td><td class="f">∧</td></tr>
+            <tr><td>4</td><td>Veya / XOR</td><td class="f">∨ , ⊕</td></tr>
+            <tr><td>5</td><td>Koşullu</td><td class="f">→</td></tr>
+            <tr><td>6</td><td>Çift koşullu</td><td class="f">↔</td></tr>
+          </table>
+          <p style="font-size:13px; color:var(--muted); margin-bottom:0;">Aynı önceliğe sahip birden fazla operatör varsa genelde soldan sağa işlem yapılır — ama netlik için parantez kullanmak her zaman önerilir.</p>
+        </div>
+
+        <div class="card">
+          <h3>Adım adım örnek</h3>
+          <div class="formula-big">¬p ∧ q → r ∨ ¬q</div>
+          <p style="margin:0 0 8px;">Bu ifade parantezlerle şu şekilde okunur:</p>
+          <div class="formula-big">( (¬p) ∧ q ) → ( r ∨ (¬q) )</div>
+          <ol class="step-list">
+            <li>Önce ¬ uygulanır → ¬p ve ¬q</li>
+            <li>Sonra ∧ uygulanır → (¬p)∧q</li>
+            <li>Sonra ∨ uygulanır → r∨(¬q)</li>
+            <li>En son → bağlar bu iki parçayı</li>
+          </ol>
+        </div>
+      </div>
+
+      <div class="examples">
+        <div class="examples-head"><span class="dot"></span><h4>Örnek Sorular</h4></div>
+        <details class="q">
+          <summary><span class="qnum">S1.</span> p ∨ q ∧ r ifadesine tam parantez ekleyin.<span class="arrow">▶</span></summary>
+          <div class="answer">∧, ∨'den önceliklidir → doğru okunuş: <b>p ∨ (q ∧ r)</b> — yani "p veya (q ve r)".</div>
+        </details>
+        <details class="q">
+          <summary><span class="qnum">S2.</span> p=D, q=Y, r=D iken p ∨ q ∧ ¬r ifadesinin değerini adım adım hesaplayın.<span class="arrow">▶</span></summary>
+          <div class="answer">1) ¬r = Y<br>2) q ∧ ¬r = Y ∧ Y = Y<br>3) p ∨ (sonuç) = D ∨ Y = <b>D</b></div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- 11 — BUILDING TRUTH TABLES -->
+  <section class="slide" data-index="11">
+    <div class="slide-inner">
+      <div class="kicker">1.11</div>
+      <h1 class="slide-title">Çok Değişkenli Doğruluk Tabloları Kurmak</h1>
+      <p class="subtitle">n değişkenli bir ifadenin doğruluk tablosu <span class="formula">2ⁿ</span> satır içerir. Sistemli kurmayı öğrenelim.</p>
+
+      <div class="card">
+        <h3>Kural: n değişken → 2ⁿ satır</h3>
+        <div class="two-col-list">
+          <div>
+            <p style="margin:0;">1 değişken → 2 satır<br>2 değişken → 4 satır<br>3 değişken → 8 satır<br>4 değişken → 16 satır</p>
+          </div>
+          <div>
+            <p style="margin:0;">Satırları karıştırmadan sistemli sıralamak için: en sağdaki sütun her satırda değişsin, soldaki sütunlar yarım yarıma bloklar halinde değişsin (ikili sayı sayma mantığı).</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="card" style="margin-top:16px;">
+        <h3>Örnek: (p ∨ q) ∧ ¬r için tablo (3 değişken, 8 satır)</h3>
+        <table class="tt" style="font-size:13px;">
+          <tr><th>p</th><th>q</th><th>r</th><th>p∨q</th><th>¬r</th><th>(p∨q)∧¬r</th></tr>
+          <tr><td><span class="pill T">D</span></td><td><span class="pill T">D</span></td><td><span class="pill T">D</span></td><td><span class="pill T">D</span></td><td><span class="pill F">Y</span></td><td class="res"><span class="pill F">Y</span></td></tr>
+          <tr><td><span class="pill T">D</span></td><td><span class="pill T">D</span></td><td><span class="pill F">Y</span></td><td><span class="pill T">D</span></td><td><span class="pill T">D</span></td><td class="res"><span class="pill T">D</span></td></tr>
+          <tr><td><span class="pill T">D</span></td><td><span class="pill F">Y</span></td><td><span class="pill T">D</span></td><td><span class="pill T">D</span></td><td><span class="pill F">Y</span></td><td class="res"><span class="pill F">Y</span></td></tr>
+          <tr><td><span class="pill T">D</span></td><td><span class="pill F">Y</span></td><td><span class="pill F">Y</span></td><td><span class="pill T">D</span></td><td><span class="pill T">D</span></td><td class="res"><span class="pill T">D</span></td></tr>
+          <tr><td><span class="pill F">Y</span></td><td><span class="pill T">D</span></td><td><span class="pill T">D</span></td><td><span class="pill T">D</span></td><td><span class="pill F">Y</span></td><td class="res"><span class="pill F">Y</span></td></tr>
+          <tr><td><span class="pill F">Y</span></td><td><span class="pill T">D</span></td><td><span class="pill F">Y</span></td><td><span class="pill T">D</span></td><td><span class="pill T">D</span></td><td class="res"><span class="pill T">D</span></td></tr>
+          <tr><td><span class="pill F">Y</span></td><td><span class="pill F">Y</span></td><td><span class="pill T">D</span></td><td><span class="pill F">Y</span></td><td><span class="pill F">Y</span></td><td class="res"><span class="pill F">Y</span></td></tr>
+          <tr><td><span class="pill F">Y</span></td><td><span class="pill F">Y</span></td><td><span class="pill F">Y</span></td><td><span class="pill F">Y</span></td><td><span class="pill T">D</span></td><td class="res"><span class="pill F">Y</span></td></tr>
+        </table>
+        <p style="margin-bottom:0; font-size:13px; color:var(--muted);">İpucu: karmaşık ifadeyi önce alt parçalara bölün (yardımcı sütunlar açın), sonra son sütunu bu alt sonuçlardan hesaplayın.</p>
+      </div>
+
+      <div class="examples">
+        <div class="examples-head"><span class="dot"></span><h4>Örnek Sorular</h4></div>
+        <details class="q">
+          <summary><span class="qnum">S1.</span> 4 değişkenli bir ifadenin doğruluk tablosu kaç satır içerir?<span class="arrow">▶</span></summary>
+          <div class="answer">2⁴ = <b>16 satır</b>.</div>
+        </details>
+        <details class="q">
+          <summary><span class="qnum">S2.</span> Yukarıdaki tabloyu kullanarak (p∨q)∧¬r ifadesinin bir totoloji mi, çelişki mi, yoksa olumsallık mı olduğunu belirleyin.<span class="arrow">▶</span></summary>
+          <div class="answer">Son sütunda hem D hem Y değerleri var (bazı satırlar D, bazıları Y) → bu bir <b>olumsallıktır (contingency)</b>.</div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- 12 — TAUTOLOGY / CONTRADICTION / CONTINGENCY -->
+  <section class="slide" data-index="12">
+    <div class="slide-inner">
+      <div class="kicker">1.12</div>
+      <h1 class="slide-title">Totoloji, Çelişki, Olumsallık</h1>
+      <p class="subtitle"><i>Tautology, Contradiction, Contingency</i> — bir bileşik önermenin doğruluk tablosundaki "genel karakteri".</p>
+
+      <div class="two-col-list" style="margin-bottom:20px;">
+        <div class="card">
+          <h3>Totoloji (Tautology)</h3>
+          <p style="margin:6px 0;">Bileşenlerinin değerlerinden bağımsız olarak <b>her zaman doğru</b>.</p>
+          <div class="formula">p ∨ ¬p</div>
+        </div>
+        <div class="card">
+          <h3>Çelişki (Contradiction)</h3>
+          <p style="margin:6px 0;">Bileşenlerinin değerlerinden bağımsız olarak <b>her zaman yanlış</b>.</p>
+          <div class="formula">p ∧ ¬p</div>
+        </div>
+        <div class="card" style="grid-column:1 / -1;">
+          <h3>Olumsallık (Contingency)</h3>
+          <p style="margin:6px 0;">Bazı durumlarda doğru, bazı durumlarda yanlış — çoğu bileşik önerme bu kategoridedir (bir önceki slayttaki örnek gibi).</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <h3>Doğruluk tablosuyla ispat: p ∨ ¬p bir totolojidir</h3>
+        <table class="tt"><tr><th>p</th><th>¬p</th><th>p ∨ ¬p</th></tr>
+          <tr><td><span class="pill T">D</span></td><td><span class="pill F">Y</span></td><td class="res"><span class="pill T">D</span></td></tr>
+          <tr><td><span class="pill F">Y</span></td><td><span class="pill T">D</span></td><td class="res"><span class="pill T">D</span></td></tr>
+        </table>
+        <p style="margin-bottom:0; font-size:14px;">Son sütun tamamen D → totoloji. Bu prensip mantıksal denkliği ispatlamak için de kullanılır: <span class="formula">A ↔ B</span> bir totoloji ise A ve B mantıksal olarak denktir.</p>
+      </div>
+
+      <div class="examples">
+        <div class="examples-head"><span class="dot"></span><h4>Örnek Sorular</h4></div>
+        <details class="q">
+          <summary><span class="qnum">S1.</span> (p ∧ q) → p ifadesinin totoloji olup olmadığını doğruluk tablosuyla gösterin.<span class="arrow">▶</span></summary>
+          <div class="answer">4 satırın hepsinde p∧q → p sonucu D çıkar. <b>Sonuç: totolojidir.</b></div>
+        </details>
+        <details class="q">
+          <summary><span class="qnum">S2.</span> (p ∨ q) ∧ (¬p ∧ ¬q) ifadesinin bir çelişki olduğunu gösterin.<span class="arrow">▶</span></summary>
+          <div class="answer">Bu ifade "p veya q doğru" ile "p de q de yanlış"ı aynı anda istiyor — birbirini dışlayan iki koşul. Dört satırın hepsinde sonuç Y çıkar, dolayısıyla <b>çelişkidir</b>.</div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- 13 — BOOLEAN BRIDGE -->
+  <section class="slide" data-index="13">
+    <div class="slide-inner">
+      <div class="kicker">1.13</div>
+      <h1 class="slide-title">Önerme Cebiri <em>(Boole Cebiri Köprüsü)</em></h1>
+      <p class="subtitle">D/Y gösterimi ile devre tasarımında kullanılan 1/0 gösterimi arasındaki köprü — Logic Circuits konusuna hazırlık.</p>
+
+      <div class="grid2">
+        <div class="card">
+          <h3>Eşdeğer gösterimler</h3>
+          <table class="laws">
+            <tr><th>Mantık</th><th>Boole cebiri</th><th>Devre / bit</th></tr>
+            <tr><td>Doğru (D)</td><td class="f">1</td><td class="f">açık / HIGH</td></tr>
+            <tr><td>Yanlış (Y)</td><td class="f">0</td><td class="f">kapalı / LOW</td></tr>
+            <tr><td>∧</td><td class="f">·  (çarpım gibi)</td><td class="f">AND kapısı</td></tr>
+            <tr><td>∨</td><td class="f">+  (toplam gibi)</td><td class="f">OR kapısı</td></tr>
+            <tr><td>¬p</td><td class="f">p'  veya p̄</td><td class="f">NOT kapısı</td></tr>
+          </table>
+        </div>
+        <div class="card">
+          <h3>Neden bu köprü önemli?</h3>
+          <p style="margin:0;">Az sonra göreceğimiz <b>önerme cebiri kanunları</b> (identity, domination, idempotent, distributive...), birebir Boole cebirinin kanunlarıdır. Bunları şimdi öğrenmek, Logic Circuits konusunda Karnaugh haritalarıyla devre sadeleştirmesi yaparken doğrudan işimize yarayacak.</p>
+        </div>
+      </div>
+
+      <div class="examples">
+        <div class="examples-head"><span class="dot"></span><h4>Örnek Sorular</h4></div>
+        <details class="q">
+          <summary><span class="qnum">S1.</span> p=1, q=0 (Boole gösterimiyle) iken p∧q ve p∨q değerlerini bulun.<span class="arrow">▶</span></summary>
+          <div class="answer">p∧q = 1·0 = <b>0</b>. p∨q = 1+0 = <b>1</b> (Boole cebirinde 1+1=1 olduğuna dikkat — bu, sıradan aritmetikten farklıdır!).</div>
+        </details>
+        <details class="q">
+          <summary><span class="qnum">S2.</span> Boole cebirinde "1+1", sıradan aritmetikteki "1+1"den neden farklıdır?<span class="arrow">▶</span></summary>
+          <div class="answer">Boole cebirinde + sembolü ∨ (OR) anlamına gelir, sayısal toplama değil. D∨D = D olduğundan, Boole gösteriminde <b>1+1 = 1</b>'dir — "taşma" (carry) kavramı yoktur çünkü değerler sadece {0,1} kümesinde kalır.</div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- 14 — LAWS I -->
+  <section class="slide" data-index="14">
+    <div class="slide-inner">
+      <div class="kicker">1.14</div>
+      <h1 class="slide-title">Önerme Cebiri Kanunları I — <em>Özdeşlik ve Baskınlık</em></h1>
+      <p class="subtitle"><i>Identity &amp; Domination laws</i> — p'nin D veya Y ile birleşiminde neler olduğunu anlatan temel kanunlar.</p>
+
+      <div class="grid2">
+        <div class="card">
+          <h3>Özdeşlik Kanunları (Identity)</h3>
+          <div class="formula-big" style="font-size:19px;">p ∧ D ≡ p</div>
+          <div class="formula-big" style="font-size:19px;">p ∨ Y ≡ p</div>
+          <p style="margin:0; font-size:14px;">D, ∧ için "nötr eleman"dır (1 ile çarpım gibi); Y, ∨ için "nötr eleman"dır (0 ile toplam gibi). p'yi değiştirmezler.</p>
+        </div>
+        <div class="card">
+          <h3>Baskınlık Kanunları (Domination)</h3>
+          <div class="formula-big" style="font-size:19px;">p ∨ D ≡ D</div>
+          <div class="formula-big" style="font-size:19px;">p ∧ Y ≡ Y</div>
+          <p style="margin:0; font-size:14px;">D, ∨'yi "domine eder" — sonucu her zaman D yapar. Y, ∧'yı domine eder — sonucu her zaman Y yapar. p'nin değeri önemsizleşir.</p>
+        </div>
+      </div>
+
+      <div class="card" style="margin-top:16px;">
+        <h3>Doğruluk tablosuyla doğrulama: p ∧ D ≡ p</h3>
+        <table class="tt"><tr><th>p</th><th>D (sabit)</th><th>p ∧ D</th></tr>
+          <tr><td><span class="pill T">D</span></td><td><span class="pill T">D</span></td><td class="res"><span class="pill T">D</span></td></tr>
+          <tr><td><span class="pill F">Y</span></td><td><span class="pill T">D</span></td><td class="res"><span class="pill F">Y</span></td></tr>
+        </table>
+        <p style="margin-bottom:0; font-size:13px; color:var(--muted);">Son sütun, p sütununun birebir aynısı → kanun doğrulanmış olur.</p>
+      </div>
+
+      <div class="examples">
+        <div class="examples-head"><span class="dot"></span><h4>Örnek Sorular</h4></div>
+        <details class="q">
+          <summary><span class="qnum">S1.</span> p ∨ D ≡ D kanununu, p=Y için tek satırlık bir doğruluk tablosuyla doğrulayın.<span class="arrow">▶</span></summary>
+          <div class="answer">p=Y iken p∨D = Y∨D = <b>D</b>. Sonuç, kanunun öngördüğü gibi p'nin değerinden bağımsız olarak D çıktı.</div>
+        </details>
+        <details class="q">
+          <summary><span class="qnum">S2.</span> Devre tasarımı açısından "p ∧ Y ≡ Y" kanununun pratik anlamı nedir? (İpucu: bir AND kapısının bir girişi sabit 0'a bağlanırsa çıkış ne olur?)<span class="arrow">▶</span></summary>
+          <div class="answer">Bir AND kapısının girişlerinden biri her zaman 0 (Y) ise, diğer girişin değeri ne olursa olsun çıkış her zaman 0'dır. Bu, bir devre girişini "kilitlemenin" (devre dışı bırakmanın) yollarından biridir — Logic Circuits konusunda pratik uygulamasını göreceğiz.</div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- 15 — LAWS II -->
+  <section class="slide" data-index="15">
+    <div class="slide-inner">
+      <div class="kicker">1.15</div>
+      <h1 class="slide-title">Önerme Cebiri Kanunları II — <em>Yinelenme, Çift Olumsuzlama, Değişme, Birleşme</em></h1>
+      <p class="subtitle">Sıralamanın ve tekrarların sonucu değiştirmediğini gösteren kanunlar.</p>
+
+      <div class="grid3">
+        <div class="card">
+          <h3>İdempotent</h3>
+          <div class="formula">p ∨ p ≡ p</div>
+          <div class="formula" style="margin-top:6px;">p ∧ p ≡ p</div>
+          <p style="font-size:13px; margin:10px 0 0;">Bir önermeyi kendisiyle birleştirmek hiçbir şey değiştirmez.</p>
+        </div>
+        <div class="card">
+          <h3>Çift Olumsuzlama</h3>
+          <div class="formula">¬(¬p) ≡ p</div>
+          <p style="font-size:13px; margin:10px 0 0;">Tersin tersi, orijinali geri verir.</p>
+        </div>
+        <div class="card">
+          <h3>Değişme (Commutative)</h3>
+          <div class="formula">p∨q ≡ q∨p</div>
+          <div class="formula" style="margin-top:6px;">p∧q ≡ q∧p</div>
+          <p style="font-size:13px; margin:10px 0 0;">Sıra önemli değildir.</p>
+        </div>
+      </div>
+
+      <div class="card" style="margin-top:16px;">
+        <h3>Birleşme (Associative)</h3>
+        <div class="two-col-list">
+          <div class="formula-big" style="font-size:16px;">(p∨q)∨r ≡ p∨(q∨r)</div>
+          <div class="formula-big" style="font-size:16px;">(p∧q)∧r ≡ p∧(q∧r)</div>
+        </div>
+        <p style="margin:6px 0 0; font-size:14px;">Üç veya daha fazla terimi ∧ ya da ∨ ile birleştirirken, parantezleri nereye koyduğunuz sonucu değiştirmez — bu yüzden <span class="formula">p∨q∨r</span> yazmak parantezsiz de güvenlidir.</p>
+      </div>
+
+      <div class="examples">
+        <div class="examples-head"><span class="dot"></span><h4>Örnek Sorular</h4></div>
+        <details class="q">
+          <summary><span class="qnum">S1.</span> p ∧ p ∧ p ifadesini idempotent kanununu kullanarak sadeleştirin.<span class="arrow">▶</span></summary>
+          <div class="answer">p∧p≡p kanunu iki kez uygulanır: p∧p∧p ≡ (p∧p)∧p ≡ p∧p ≡ <b>p</b>.</div>
+        </details>
+        <details class="q">
+          <summary><span class="qnum">S2.</span> Değişme kanunu neden → (koşullu) için geçerli değildir? p→q ile q→p'nin farklı olduğunu hatırlayarak açıklayın.<span class="arrow">▶</span></summary>
+          <div class="answer">Değişme kanunu sadece ∧ ve ∨ için geçerlidir çünkü bu operatörler simetriktir. → simetrik değildir — p→q ile q→p (karşıt) farklı önermelerdir (Slayt 8'de gördüğümüz gibi), bu yüzden "→'nin değişme özelliği vardır" demek yanlış olur.</div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- 16 — LAWS III -->
+  <section class="slide" data-index="16">
+    <div class="slide-inner">
+      <div class="kicker">1.16</div>
+      <h1 class="slide-title">Önerme Cebiri Kanunları III — <em>Dağılma ve Yutma</em></h1>
+      <p class="subtitle"><i>Distributive &amp; Absorption laws</i> — cebirsel sadeleştirmenin en güçlü araçları.</p>
+
+      <div class="grid2">
+        <div class="card">
+          <h3>Dağılma (Distributive)</h3>
+          <div class="formula-big" style="font-size:16px;">p∧(q∨r) ≡ (p∧q)∨(p∧r)</div>
+          <div class="formula-big" style="font-size:16px;">p∨(q∧r) ≡ (p∨q)∧(p∨r)</div>
+          <p style="margin:0; font-size:13.5px;">Sıradan cebirdeki dağılma kuralına (a(b+c)=ab+ac) çok benzer — ama burada ∨'nin de ∧ üzerine dağılabildiğine dikkat edin, bu sıradan cebirde yoktur!</p>
+        </div>
+        <div class="card">
+          <h3>Yutma (Absorption)</h3>
+          <div class="formula-big" style="font-size:16px;">p∨(p∧q) ≡ p</div>
+          <div class="formula-big" style="font-size:16px;">p∧(p∨q) ≡ p</div>
+          <p style="margin:0; font-size:13.5px;">q ne olursa olsun, p zaten sonucu belirlemeye yetiyorsa q "yutulur" ve ifadeden kaybolur.</p>
+        </div>
+      </div>
+
+      <div class="card" style="margin-top:16px;">
+        <h3>Doğruluk tablosuyla doğrulama: p∨(p∧q) ≡ p</h3>
+        <table class="tt"><tr><th>p</th><th>q</th><th>p∧q</th><th>p∨(p∧q)</th></tr>
+          <tr><td><span class="pill T">D</span></td><td><span class="pill T">D</span></td><td><span class="pill T">D</span></td><td class="res"><span class="pill T">D</span></td></tr>
+          <tr><td><span class="pill T">D</span></td><td><span class="pill F">Y</span></td><td><span class="pill F">Y</span></td><td class="res"><span class="pill T">D</span></td></tr>
+          <tr><td><span class="pill F">Y</span></td><td><span class="pill T">D</span></td><td><span class="pill F">Y</span></td><td class="res"><span class="pill F">Y</span></td></tr>
+          <tr><td><span class="pill F">Y</span></td><td><span class="pill F">Y</span></td><td><span class="pill F">Y</span></td><td class="res"><span class="pill F">Y</span></td></tr>
+        </table>
+        <p style="margin-bottom:0; font-size:13px; color:var(--muted);">Son sütun, p sütununun birebir aynısı → kanun doğrulanır.</p>
+      </div>
+
+      <div class="examples">
+        <div class="examples-head"><span class="dot"></span><h4>Örnek Sorular</h4></div>
+        <details class="q">
+          <summary><span class="qnum">S1.</span> p∧(q∨r) ifadesini dağılma kanunuyla açın.<span class="arrow">▶</span></summary>
+          <div class="answer">p∧(q∨r) ≡ <b>(p∧q)∨(p∧r)</b></div>
+        </details>
+        <details class="q">
+          <summary><span class="qnum">S2.</span> p∧(p∨q) ifadesini yutma kanunuyla sadeleştirin.<span class="arrow">▶</span></summary>
+          <div class="answer">Yutma kanunu doğrudan uygulanır: p∧(p∨q) ≡ <b>p</b>.</div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- 17 — LAWS IV: DE MORGAN & NEGATION -->
+  <section class="slide" data-index="17">
+    <div class="slide-inner">
+      <div class="kicker">1.17</div>
+      <h1 class="slide-title">Önerme Cebiri Kanunları IV — <em>De Morgan ve Olumsuzlama</em></h1>
+      <p class="subtitle">Mantığın en çok kullanılan kanunu: bir bileşik ifadenin değilini "içeri dağıtmak".</p>
+
+      <div class="grid2">
+        <div class="card">
+          <h3>De Morgan Kanunları</h3>
+          <div class="formula-big" style="font-size:16px;">¬(p∧q) ≡ ¬p∨¬q</div>
+          <div class="formula-big" style="font-size:16px;">¬(p∨q) ≡ ¬p∧¬q</div>
+          <p style="margin:0; font-size:13.5px;">Kural: değili alırken bağlaç değişir (∧↔∨) ve olumsuzluk her terime dağıtılır.</p>
+        </div>
+        <div class="card">
+          <h3>Olumsuzlama Kanunları (Negation)</h3>
+          <div class="formula-big" style="font-size:16px;">p ∨ ¬p ≡ D</div>
+          <div class="formula-big" style="font-size:16px;">p ∧ ¬p ≡ Y</div>
+          <p style="margin:0; font-size:13.5px;">Bir önerme ile kendi değili birleştirildiğinde: ∨ ile her zaman doğru (totoloji), ∧ ile her zaman yanlış (çelişki) çıkar.</p>
+        </div>
+      </div>
+
+      <div class="card" style="margin-top:16px;">
+        <h3>Doğruluk tablosuyla doğrulama: ¬(p∧q) ≡ ¬p∨¬q</h3>
+        <table class="tt" style="font-size:13px;"><tr><th>p</th><th>q</th><th>p∧q</th><th>¬(p∧q)</th><th>¬p</th><th>¬q</th><th>¬p∨¬q</th></tr>
+          <tr><td><span class="pill T">D</span></td><td><span class="pill T">D</span></td><td><span class="pill T">D</span></td><td class="res"><span class="pill F">Y</span></td><td><span class="pill F">Y</span></td><td><span class="pill F">Y</span></td><td class="res"><span class="pill F">Y</span></td></tr>
+          <tr><td><span class="pill T">D</span></td><td><span class="pill F">Y</span></td><td><span class="pill F">Y</span></td><td class="res"><span class="pill T">D</span></td><td><span class="pill F">Y</span></td><td><span class="pill T">D</span></td><td class="res"><span class="pill T">D</span></td></tr>
+          <tr><td><span class="pill F">Y</span></td><td><span class="pill T">D</span></td><td><span class="pill F">Y</span></td><td class="res"><span class="pill T">D</span></td><td><span class="pill T">D</span></td><td><span class="pill F">Y</span></td><td class="res"><span class="pill T">D</span></td></tr>
+          <tr><td><span class="pill F">Y</span></td><td><span class="pill F">Y</span></td><td><span class="pill F">Y</span></td><td class="res"><span class="pill T">D</span></td><td><span class="pill T">D</span></td><td><span class="pill T">D</span></td><td class="res"><span class="pill T">D</span></td></tr>
+        </table>
+        <p style="margin-bottom:0; font-size:13px; color:var(--muted);">¬(p∧q) ve ¬p∨¬q sütunları birebir aynı → kanun doğrulanır.</p>
+      </div>
+
+      <div class="examples">
+        <div class="examples-head"><span class="dot"></span><h4>Örnek Sorular</h4></div>
+        <details class="q">
+          <summary><span class="qnum">S1.</span> "Ali hem çalışkan hem de dürüst değildir." cümlesini De Morgan kanunuyla açın.<span class="arrow">▶</span></summary>
+          <div class="answer">p="Ali çalışkandır", q="Ali dürüsttür". Cümle: ¬(p∧q) ≡ <b>¬p∨¬q</b> = "Ali çalışkan değildir ya da dürüst değildir (ya da ikisi de)."</div>
+        </details>
+        <details class="q">
+          <summary><span class="qnum">S2.</span> ¬(p∨¬q) ifadesini De Morgan ve çift olumsuzlama kanunlarını kullanarak sadeleştirin.<span class="arrow">▶</span></summary>
+          <div class="answer">¬(p∨¬q) ≡ ¬p∧¬(¬q) ≡ <b>¬p∧q</b> (De Morgan, sonra çift olumsuzlama).</div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- 18 — APPLYING LAWS -->
+  <section class="slide" data-index="18">
+    <div class="slide-inner">
+      <div class="kicker">1.18</div>
+      <h1 class="slide-title">Kanunları Uygulama — <em>Sadeleştirme Alıştırmaları</em></h1>
+      <p class="subtitle">Şimdiye kadar öğrendiğimiz tüm kanunları bir arada kullanarak karmaşık ifadeleri sadeleştirelim.</p>
+
+      <div class="card" style="margin-bottom:16px;">
+        <h3>Örnek 1: ¬(p → q) ifadesini sadeleştirelim</h3>
+        <p style="margin:0;">
+          ¬(p → q) &nbsp;≡&nbsp; ¬(¬p ∨ q) &nbsp;&nbsp;<span style="color:var(--muted);font-size:13px;">(koşulun eşdeğeri: p→q ≡ ¬p∨q)</span><br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;≡&nbsp; ¬(¬p) ∧ ¬q &nbsp;&nbsp;<span style="color:var(--muted);font-size:13px;">(De Morgan)</span><br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;≡&nbsp; <b>p ∧ ¬q</b> &nbsp;&nbsp;<span style="color:var(--muted);font-size:13px;">(çift olumsuzlama)</span>
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Örnek 2: (p ∧ q) ∨ (p ∧ ¬q) ifadesini sadeleştirelim</h3>
+        <p style="margin:0;">
+          (p∧q) ∨ (p∧¬q) &nbsp;≡&nbsp; p ∧ (q ∨ ¬q) &nbsp;&nbsp;<span style="color:var(--muted);font-size:13px;">(dağılma kanunu — tersten)</span><br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;≡&nbsp; p ∧ D &nbsp;&nbsp;<span style="color:var(--muted);font-size:13px;">(olumsuzlama kanunu: q∨¬q≡D)</span><br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;≡&nbsp; <b>p</b> &nbsp;&nbsp;<span style="color:var(--muted);font-size:13px;">(özdeşlik kanunu)</span>
+        </p>
+      </div>
+
+      <div class="examples">
+        <div class="examples-head"><span class="dot"></span><h4>Örnek Sorular</h4></div>
+        <details class="q">
+          <summary><span class="qnum">S1.</span> p∨(¬p∧q) ifadesini sadeleştirin. (İpucu: önce dağılma, sonra olumsuzlama kanunu)<span class="arrow">▶</span></summary>
+          <div class="answer">p∨(¬p∧q) ≡ (p∨¬p)∧(p∨q) &nbsp;<span style="color:var(--muted);">(dağılma)</span><br>
+          ≡ D∧(p∨q) &nbsp;<span style="color:var(--muted);">(olumsuzlama)</span><br>
+          ≡ <b>p∨q</b> &nbsp;<span style="color:var(--muted);">(özdeşlik)</span></div>
+        </details>
+        <details class="q">
+          <summary><span class="qnum">S2.</span> ¬(¬p∧¬q)∨q ifadesini De Morgan, çift olumsuzlama ve yutma kanunlarıyla sadeleştirin.<span class="arrow">▶</span></summary>
+          <div class="answer">¬(¬p∧¬q) ≡ ¬(¬p)∨¬(¬q) ≡ p∨q &nbsp;<span style="color:var(--muted);">(De Morgan + çift olumsuzlama)</span><br>
+          Böylece ifade: (p∨q)∨q ≡ p∨(q∨q) ≡ p∨q &nbsp;<span style="color:var(--muted);">(birleşme + idempotent)</span><br>
+          Sonuç: <b>p∨q</b></div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- 19 — PREDICATES -->
+  <section class="slide" data-index="19">
+    <div class="slide-inner">
+      <div class="kicker">1.19</div>
+      <h1 class="slide-title">Yüklemler <em>(Predicates)</em></h1>
+      <p class="subtitle">"x + 1 = 3" gibi değişken içeren, üzerinde nicel ifade kurabileceğimiz cümleler.</p>
+
+      <div class="grid2">
+        <div>
+          <div class="card" style="margin-bottom:16px;">
+            <h3>Yüklem (Predicate) tanımı</h3>
+            <p style="margin:6px 0;">P(x) formundaki, x'in değerine göre doğru ya da yanlış olan ifadedir. Değişken(ler) yerine bir değer konduğunda ortaya bir önerme çıkar.</p>
+            <div class="formula">P(x): "x asal sayıdır"</div>
+            <p style="margin-top:10px; margin-bottom:0; font-size:14px;">P(2) → D &nbsp;&nbsp;&nbsp; P(4) → Y</p>
+          </div>
+          <div class="card">
+            <h3>Tanım Kümesi (Domain)</h3>
+            <p style="margin:0;">Niceleyicilerin "hangi evren üzerinde" konuştuğunu belirtir — çoğu zaman <span class="formula">x ∈ ℤ</span> veya <span class="formula">x ∈ ℝ</span> gibi. Tanım kümesi değişirse önermenin doğruluk değeri de değişebilir!</p>
+          </div>
+        </div>
+        <div class="card">
+          <h3>Çok değişkenli yüklemler</h3>
+          <p style="margin:0 0 10px;">Yüklemler birden fazla değişken de içerebilir:</p>
+          <div class="formula">Q(x, y): "x, y'den büyüktür"</div>
+          <p style="margin:10px 0 0;">Q(5, 3) → D &nbsp;&nbsp;&nbsp; Q(2, 8) → Y</p>
+          <p style="margin-top:14px; margin-bottom:0; font-size:13.5px; color:var(--muted);">Bu, birazdan göreceğimiz "iç içe niceleyiciler" konusunun temelini oluşturur.</p>
+        </div>
+      </div>
+
+      <div class="examples">
+        <div class="examples-head"><span class="dot"></span><h4>Örnek Sorular</h4></div>
+        <details class="q">
+          <summary><span class="qnum">S1.</span> P(x): "x² &gt; 10" yüklemi için P(3) ve P(4)'ün doğruluk değerlerini bulun.<span class="arrow">▶</span></summary>
+          <div class="answer">P(3): 3²=9, 9&gt;10 yanlış → <b>Y</b>. P(4): 4²=16, 16&gt;10 doğru → <b>D</b>.</div>
+        </details>
+        <details class="q">
+          <summary><span class="qnum">S2.</span> R(x,y): "x + y = 10" yüklemi için R(4,6) ve R(4,5) değerlerini bulun.<span class="arrow">▶</span></summary>
+          <div class="answer">R(4,6): 4+6=10 → <b>D</b>. R(4,5): 4+5=9≠10 → <b>Y</b>.</div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- 20 — QUANTIFIERS -->
+  <section class="slide" data-index="20">
+    <div class="slide-inner">
+      <div class="kicker">1.20</div>
+      <h1 class="slide-title">Niceleyiciler <em>(Quantifiers)</em></h1>
+      <p class="subtitle">Bir yüklemin tanım kümesindeki elemanlar için "ne kadar sıklıkla" doğru olduğunu ifade eden operatörler.</p>
+
+      <div class="grid2">
+        <div>
+          <div class="card" style="margin-bottom:16px;">
+            <h3>Evrensel Niceleyici <span class="formula">∀x P(x)</span></h3>
+            <p style="margin:6px 0;">"Her x için P(x) doğrudur." Tek bir karşı örnek (counterexample) bile bunu çürütmeye yeter.</p>
+            <div class="venn-wrap" style="align-items:flex-start;">
+              <svg viewBox="0 0 260 70" style="max-width:100%;">
+                <rect x="4" y="4" width="252" height="62" rx="10" fill="none" stroke="var(--border)" stroke-width="2"/>
+                <circle cx="30" cy="35" r="9" fill="var(--true)"/><circle cx="60" cy="35" r="9" fill="var(--true)"/>
+                <circle cx="90" cy="35" r="9" fill="var(--true)"/><circle cx="120" cy="35" r="9" fill="var(--true)"/>
+                <circle cx="150" cy="35" r="9" fill="var(--true)"/><circle cx="180" cy="35" r="9" fill="var(--true)"/>
+                <circle cx="210" cy="35" r="9" fill="var(--true)"/><circle cx="240" cy="35" r="9" fill="var(--true)"/>
+              </svg>
+              <div class="venn-label">Tüm elemanlar P özelliğini sağlıyor → ∀x P(x) = D</div>
+            </div>
+          </div>
+          <div class="card">
+            <h3>Varlıksal Niceleyici <span class="formula">∃x P(x)</span></h3>
+            <p style="margin:6px 0;">"P(x)'i sağlayan en az bir x vardır." Tek bir örnek bulmak, doğruluğu kanıtlamaya yeter.</p>
+            <div class="venn-wrap" style="align-items:flex-start;">
+              <svg viewBox="0 0 260 70" style="max-width:100%;">
+                <rect x="4" y="4" width="252" height="62" rx="10" fill="none" stroke="var(--border)" stroke-width="2"/>
+                <circle cx="30" cy="35" r="9" fill="var(--border)"/><circle cx="60" cy="35" r="9" fill="var(--border)"/>
+                <circle cx="90" cy="35" r="9" fill="var(--accent)"/><circle cx="120" cy="35" r="9" fill="var(--border)"/>
+                <circle cx="150" cy="35" r="9" fill="var(--border)"/><circle cx="180" cy="35" r="9" fill="var(--border)"/>
+                <circle cx="210" cy="35" r="9" fill="var(--border)"/><circle cx="240" cy="35" r="9" fill="var(--border)"/>
+              </svg>
+              <div class="venn-label">Sadece bir eleman yeterli → ∃x P(x) = D</div>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <h3>Bir sayı doğrusu üzerinde karşılaştırma</h3>
+          <p style="margin:0 0 10px;">P(x): "x pozitiftir", tanım kümesi = {−2, −1, 0, 1, 2}</p>
+          <table class="tt" style="font-size:13px;">
+            <tr><th>x</th><th>−2</th><th>−1</th><th>0</th><th>1</th><th>2</th></tr>
+            <tr><td>P(x)</td><td><span class="pill F">Y</span></td><td><span class="pill F">Y</span></td><td><span class="pill F">Y</span></td><td><span class="pill T">D</span></td><td><span class="pill T">D</span></td></tr>
+          </table>
+          <p style="margin:10px 0 0;">∀x P(x) → <span class="pill F">Y</span> (hepsi doğru değil)<br>∃x P(x) → <span class="pill T">D</span> (en az biri doğru: x=1 ya da x=2)</p>
+        </div>
+      </div>
+
+      <div class="examples">
+        <div class="examples-head"><span class="dot"></span><h4>Örnek Sorular</h4></div>
+        <details class="q">
+          <summary><span class="qnum">S1.</span> Tanım kümesi tüm tamsayılar iken ∀x (x² ≥ 0) önermesi doğru mudur?<span class="arrow">▶</span></summary>
+          <div class="answer">Evet, <b>doğru (D)</b>. Herhangi bir tamsayının karesi her zaman negatif olamaz (0 dahil), bu yüzden karşı örnek yoktur.</div>
+        </details>
+        <details class="q">
+          <summary><span class="qnum">S2.</span> Tanım kümesi tüm gerçek sayılar iken ∃x (x² = -1) önermesi doğru mudur? Tanım kümesi karmaşık sayılar (ℂ) olsaydı ne değişirdi?<span class="arrow">▶</span></summary>
+          <div class="answer">Gerçek sayılarda <b>yanlış (Y)</b> — hiçbir gerçek sayının karesi negatif olamaz. Ama tanım kümesi ℂ olsaydı, x = i (sanal birim) bu koşulu sağlar ve önerme <b>D</b> olurdu.</div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- 21 — NESTED QUANTIFIERS -->
+  <section class="slide" data-index="21">
+    <div class="slide-inner">
+      <div class="kicker">1.21</div>
+      <h1 class="slide-title">İç İçe Niceleyiciler</h1>
+      <p class="subtitle"><i>Nested Quantifiers</i> — birden fazla değişken içeren önermeler. Sıra <b>çok</b> önemlidir!</p>
+
+      <div class="card" style="margin-bottom:16px;">
+        <h3>Sıra neden önemli?</h3>
+        <div class="two-col-list">
+          <div>
+            <div class="formula-big" style="font-size:16px;">∀x ∃y P(x, y)</div>
+            <p style="font-size:14px; margin:0;">"Her x için, o x'e <b>özel</b> bir y bulunabilir." — y, x'e bağlı olabilir.</p>
+          </div>
+          <div>
+            <div class="formula-big" style="font-size:16px;">∃y ∀x P(x, y)</div>
+            <p style="font-size:14px; margin:0;">"<b>Tek bir</b> y vardır ki, her x için işe yarar." — çok daha güçlü/kısıtlayıcı bir iddia.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <h3>Somut örnek: P(x,y): "x + y = 0", tanım kümesi ℝ</h3>
+        <ul class="clean" style="margin-bottom:0;">
+          <li><span class="formula">∀x ∃y (x+y=0)</span> → <span class="pill T">D</span> — her x için y = −x seçilebilir (x'e göre değişir, bu normal).</li>
+          <li><span class="formula">∃y ∀x (x+y=0)</span> → <span class="pill F">Y</span> — tüm x'ler için aynı anda geçerli tek bir y yoktur (x değiştikçe y de değişmeli).</li>
+        </ul>
+      </div>
+
+      <div class="examples">
+        <div class="examples-head"><span class="dot"></span><h4>Örnek Sorular</h4></div>
+        <details class="q">
+          <summary><span class="qnum">S1.</span> "Her öğrencinin sevdiği bir öğretmen vardır." ifadesini ∀ ve ∃ ile sembolize edin.<span class="arrow">▶</span></summary>
+          <div class="answer">S(x,y): "x öğrencisi y öğretmenini sever" olsun. İfade: <b>∀x ∃y S(x,y)</b> — her öğrenci x için, (o öğrenciye özel olabilecek) bir öğretmen y vardır.</div>
+        </details>
+        <details class="q">
+          <summary><span class="qnum">S2.</span> "Tüm öğrencilerin ortak sevdiği bir öğretmen vardır." ifadesi bir önceki soruyla aynı mıdır? Sembolize edin.<span class="arrow">▶</span></summary>
+          <div class="answer">Hayır, farklıdır ve çok daha güçlü bir iddiadır: <b>∃y ∀x S(x,y)</b> — tek bir y öğretmeni vardır ki bu öğretmeni <i>tüm</i> öğrenciler sever. Bu önerme doğruysa bir önceki soru da otomatik doğru olur, ama tersi geçerli değildir.</div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- 22 — NEGATING QUANTIFIERS -->
+  <section class="slide" data-index="22">
+    <div class="slide-inner">
+      <div class="kicker">1.22</div>
+      <h1 class="slide-title">Niceleyicilerin Değilini Almak</h1>
+      <p class="subtitle">De Morgan kanunlarının niceleyicilere genellenmiş hâli — ispatlarda (özellikle çelişki ile ispatta) sürekli kullanılır.</p>
+
+      <div class="card" style="margin-bottom:18px;">
+        <table class="laws">
+          <tr><th>İfade</th><th>Değili</th></tr>
+          <tr><td class="f">¬∀x P(x)</td><td class="f">≡ ∃x ¬P(x)</td></tr>
+          <tr><td class="f">¬∃x P(x)</td><td class="f">≡ ∀x ¬P(x)</td></tr>
+        </table>
+        <p style="margin-top:12px; margin-bottom:0; font-size:14px;"><b>Kural:</b> Değili alırken ∀ ↔ ∃ yer değiştirir ve olumsuzluk yükleme "içeri girer".</p>
+      </div>
+
+      <div class="card">
+        <h3>Adım adım örnek</h3>
+        <p style="margin:0 0 10px;">Önerme: "Bütün kuşlar uçabilir." &nbsp;→&nbsp; <span class="formula">∀x (Kuş(x) → Uçabilir(x))</span></p>
+        <p style="margin:0;">
+          Değili: ¬∀x (Kuş(x) → Uçabilir(x))<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;≡ ∃x ¬(Kuş(x) → Uçabilir(x)) &nbsp;<span style="color:var(--muted); font-size:13px;">(∀'in değili → ∃)</span><br>
+          &nbsp;&nbsp;&nbsp;&nbsp;≡ ∃x (Kuş(x) ∧ ¬Uçabilir(x)) &nbsp;<span style="color:var(--muted); font-size:13px;">(koşulun değili, Slayt 18)</span>
+        </p>
+        <p style="margin-top:10px; margin-bottom:0;">Sonuç: "Uçamayan en az bir kuş vardır." (Örn: penguen!) — bu, günlük dildeki sezgimizle birebir örtüşür.</p>
+      </div>
+
+      <div class="examples">
+        <div class="examples-head"><span class="dot"></span><h4>Örnek Sorular</h4></div>
+        <details class="q">
+          <summary><span class="qnum">S1.</span> "Herkes matematik dersini sever." önermesinin değilini sembolik ve sözel olarak yazın.<span class="arrow">▶</span></summary>
+          <div class="answer">S(x): "x matematiği sever." Orijinal: ∀x S(x). Değili: <b>∃x ¬S(x)</b> — "Matematik dersini sevmeyen en az bir kişi vardır."</div>
+        </details>
+        <details class="q">
+          <summary><span class="qnum">S2.</span> ¬∃x (x² &lt; 0) ifadesini sadeleştirip sözel olarak açıklayın (tanım kümesi ℝ).<span class="arrow">▶</span></summary>
+          <div class="answer">¬∃x (x²&lt;0) ≡ ∀x ¬(x²&lt;0) ≡ <b>∀x (x² ≥ 0)</b>. Sözel: "Hiçbir gerçek sayının karesi negatif değildir" ↔ "Her gerçek sayının karesi sıfır veya pozitiftir." Bu önerme <b>doğrudur (D)</b>.</div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- 23 — SUMMARY -->
+  <section class="slide" data-index="23">
+    <div class="slide-inner">
+      <div class="kicker">Özet</div>
+      <h1 class="slide-title">Bölüm 1'in Özeti — <em>Mantık</em></h1>
+      <p class="subtitle">Bir sonraki bölümde bu araçları kullanarak matematiksel <b>ispat teknikleri</b> geliştireceğiz.</p>
+
+      <div class="two-col-list">
+        <div class="card">
+          <h3>Öğrendiklerimiz</h3>
+          <ul class="clean" style="margin-bottom:0;">
+            <li>Önerme tanımı ve doğruluk değerleri</li>
+            <li>¬, ∧, ∨, ⊕ temel bağlaçları ve doğruluk tabloları</li>
+            <li>NAND / NOR ve evrensel kapı fikri</li>
+            <li>→, ↔ ve karşıt / ters / çelişki ilişkileri</li>
+            <li>Operatör önceliği ve çok değişkenli doğruluk tabloları</li>
+            <li>Totoloji · Çelişki · Olumsallık ayrımı</li>
+            <li>Önerme cebiri kanunları (özdeşlik, baskınlık, idempotent, değişme, birleşme, dağılma, yutma, De Morgan, olumsuzlama)</li>
+            <li>Yüklemler, ∀ / ∃ niceleyicileri ve iç içe kullanımları</li>
+            <li>Niceleyicilerin değilini alma kuralları</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Sırada ne var?</h3>
+          <p style="margin:0 0 10px;">Bölüm 2 — <b>Proof (İspat)</b> konusunda şunları göreceğiz:</p>
+          <ul class="clean" style="margin-bottom:0;">
+            <li>Doğrudan ispat</li>
+            <li>Çelişki ile ispat (contradiction)</li>
+            <li>Çelişki (contrapositive) ile ispat</li>
+            <li>Tümevarım (induction) ile ispat</li>
+            <li>Vaka analizi (proof by cases)</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="examples">
+        <div class="examples-head"><span class="dot"></span><h4>Genel Tekrar Soruları</h4></div>
+        <details class="q">
+          <summary><span class="qnum">S1.</span> ¬(p ∧ q) → (¬p ∨ ¬q) ifadesinin bir totoloji olduğunu, mantıksal denklik kanunlarını kullanarak (doğruluk tablosu kullanmadan) gösterin.<span class="arrow">▶</span></summary>
+          <div class="answer">De Morgan kanunundan ¬(p∧q) ≡ ¬p∨¬q. Bu durumda ifade A → A biçimine indirgenir (burada A = ¬p∨¬q). Herhangi bir A için A→A her zaman doğrudur. Dolayısıyla ifade bir <b>totolojidir</b>.</div>
+        </details>
+        <details class="q">
+          <summary><span class="qnum">S2.</span> "Bu sınıftaki her öğrenci, en az bir dersten geçmiştir." önermesini sembolize edin, sonra değilini alıp sözel olarak yorumlayın.<span class="arrow">▶</span></summary>
+          <div class="answer">
+            G(x,y): "x öğrencisi y dersinden geçmiştir." Orijinal: <b>∀x ∃y G(x,y)</b>.<br>
+            Değili: ¬∀x∃y G(x,y) ≡ ∃x ¬∃y G(x,y) ≡ <b>∃x ∀y ¬G(x,y)</b>.<br>
+            Sözel: "Hiçbir dersten geçmemiş en az bir öğrenci vardır."
+          </div>
+        </details>
+        <details class="q">
+          <summary><span class="qnum">S3.</span> p∨q∨(p∧q) ifadesini kanunları kullanarak sadeleştirin.<span class="arrow">▶</span></summary>
+          <div class="answer">p∨(q∨(p∧q)) — q∨(p∧q) kısmına yutma kanunu (q formunda: A∨(A∧B)≡A, burada A=q, B=p) uygulanabilir mi diye bakalım: aslında yutma kanunu p∨(p∧q)≡p biçimindedir; burada terimler p,q,p∧q. p∧q zaten p∨q tarafından "yutulur" çünkü p∨q doğruyken p∧q'nun doğru/yanlış olması sonucu etkilemez, p∨q yanlışken de p∧q zaten yanlıştır. Sonuç: <b>p∨q</b>.</div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+</div>
+
+<div class="bottombar">
+  <button class="nav-btn" id="prevBtn">← Önceki</button>
+  <div class="dots" id="dots"></div>
+  <span class="slide-counter" id="counterBottom">01 / 24</span>
+  <button class="nav-btn" id="nextBtn">Sonraki →</button>
+</div>
+
+<script>
+(function(){
+  var slides = Array.prototype.slice.call(document.querySelectorAll('.slide'));
+  var total = slides.length;
+  var current = 0;
+
+  var counterTop = document.getElementById('counterTop');
+  var counterBottom = document.getElementById('counterBottom');
+  var progressFill = document.getElementById('progressFill');
+  var prevBtn = document.getElementById('prevBtn');
+  var nextBtn = document.getElementById('nextBtn');
+  var dotsWrap = document.getElementById('dots');
+
+  function pad(n){ return n < 10 ? '0'+n : ''+n; }
+
+  for(var i=0;i<total;i++){
+    var d = document.createElement('div');
+    d.className = 'd' + (i===0 ? ' active' : '');
+    d.dataset.i = i;
+    d.addEventListener('click', function(){ goTo(parseInt(this.dataset.i,10)); });
+    dotsWrap.appendChild(d);
+  }
+
+  function render(){
+    slides.forEach(function(s, i){ s.classList.toggle('active', i === current); });
+    var label = pad(current+1) + ' / ' + pad(total);
+    counterTop.textContent = label;
+    counterBottom.textContent = label;
+    progressFill.style.width = ((current) / (total-1) * 100) + '%';
+    prevBtn.disabled = current === 0;
+    nextBtn.disabled = current === total - 1;
+    Array.prototype.forEach.call(dotsWrap.children, function(d,i){
+      d.classList.toggle('active', i === current);
+    });
+    document.querySelector('.slide.active').scrollTop = 0;
+  }
+
+  function goTo(i){
+    if(i < 0 || i >= total) return;
+    current = i;
+    render();
+  }
+
+  prevBtn.addEventListener('click', function(){ goTo(current-1); });
+  nextBtn.addEventListener('click', function(){ goTo(current+1); });
+
+  document.addEventListener('keydown', function(e){
+    if(e.key === 'ArrowRight' || e.key === 'PageDown'){ goTo(current+1); }
+    else if(e.key === 'ArrowLeft' || e.key === 'PageUp'){ goTo(current-1); }
+    else if(e.key === 'Home'){ goTo(0); }
+    else if(e.key === 'End'){ goTo(total-1); }
+  });
+
+  render();
+
+  /* ---------- Settings / theme ---------- */
+  var root = document.documentElement;
+  var settingsBtn = document.getElementById('settingsBtn');
+  var panel = document.getElementById('settingsPanel');
+  var bgPicker = document.getElementById('bgPicker');
+  var textPicker = document.getElementById('textPicker');
+  var resetBtn = document.getElementById('resetBtn');
+  var presetRow = document.getElementById('presetRow');
+
+  var DEFAULT_BG = '#0B1220';
+  var DEFAULT_TEXT = '#F1F5F9';
+
+  var presets = [
+    {bg:'#0B1220', text:'#F1F5F9', name:'Gece Mavisi'},
+	{bg:'#F8F9FA', text:'#1A1A1A', name:'Kampüs Beyazı ve Koyu Gri'},
+	{bg:'#000000', text:'#FFD700', name:'Siyah ve Altın Sarısı'},
+	{bg:'#F4F6F9', text:'#0F172A', name:'Kırık Beyaz ve Gece Mavisi'},
+	{bg:'#0B132B', text:'#FFEE58', name:'Koyu Lacivert ve Odak Sarısı'},
+    {bg:'#F4F1EA', text:'#1A1A1A', name:'Kağıt'},
+    {bg:'#111111', text:'#F5F5F5', name:'Siyah'},
+    {bg:'#0F2417', text:'#E8F5E9', name:'Koyu Yeşil'},
+    {bg:'#FFFFFF', text:'#0B1220', name:'Beyaz Tahta'},
+    {bg:'#1B1035', text:'#F3E8FF', name:'Mor Gece'},
+	{bg:'#F1F5F9', text:'#0F172A', name:'Bulutlu Gün Modu'},
+	{bg:'#FEF08A', text:'#1E293B', name:'Fosforlu Vurgu Modu'},
+	{bg:'#FFFFFF', text:'#000000', name:'Güneş Işığı Modu'}
+  ];
+  presets.forEach(function(p){
+    var dot = document.createElement('div');
+    dot.className = 'preset-dot';
+    dot.style.background = p.bg;
+    dot.style.borderColor = p.text;
+    dot.title = p.name;
+    dot.addEventListener('click', function(){ applyTheme(p.bg, p.text); });
+    presetRow.appendChild(dot);
+  });
+
+  function applyTheme(bg, text){
+    root.style.setProperty('--bg', bg);
+    root.style.setProperty('--text', text);
+    bgPicker.value = bg;
+    textPicker.value = text;
+    try{
+      localStorage.setItem('logic-slides-theme', JSON.stringify({bg:bg, text:text}));
+    }catch(e){}
+  }
+
+  settingsBtn.addEventListener('click', function(){ panel.classList.toggle('open'); });
+  document.addEventListener('click', function(e){
+    if(!panel.contains(e.target) && e.target !== settingsBtn && panel.classList.contains('open')){
+      panel.classList.remove('open');
+    }
+  });
+
+  bgPicker.addEventListener('input', function(){ applyTheme(bgPicker.value, textPicker.value); });
+  textPicker.addEventListener('input', function(){ applyTheme(bgPicker.value, textPicker.value); });
+  resetBtn.addEventListener('click', function(){ applyTheme(DEFAULT_BG, DEFAULT_TEXT); });
+
+  try{
+    var saved = localStorage.getItem('logic-slides-theme');
+    if(saved){
+      var parsed = JSON.parse(saved);
+      if(parsed && parsed.bg && parsed.text){ applyTheme(parsed.bg, parsed.text); }
+    }
+  }catch(e){}
+})();
+</script>
+
+
+<div id="boardLayer"></div>
+<canvas id="penCanvas"></canvas>
+<div id="laserDot"></div>
+<div id="penToolbar">
+  <div class="pt-grid">
+    <button class="pt-btn" data-tool="pointer" title="İşaretçi — soruları aç, kaydır (V)">🖱️</button>
+    <button class="pt-btn" data-tool="pen" title="Kalem (P)">✏️</button>
+    <button class="pt-btn" data-tool="highlighter" title="Fosforlu kalem (H)">🖍️</button>
+    <button class="pt-btn" data-tool="eraser" title="Silgi — çizgiyi komple siler (E)">🧽</button>
+    <button class="pt-btn" data-tool="laser" title="Lazer işaretçi (L)">🔴</button>
+  </div>
+  <div class="pt-sep"></div>
+  <div class="pt-label">Renk</div>
+  <div class="pt-colors" id="ptColors"></div>
+  <div class="pt-sep"></div>
+  <div class="pt-label">Kalınlık</div>
+  <div class="pt-grid">
+    <button class="pt-btn" data-size="2" title="İnce (-)"><span class="pt-dot" style="width:4px;height:4px"></span></button>
+    <button class="pt-btn" data-size="4" title="Orta"><span class="pt-dot" style="width:8px;height:8px"></span></button>
+    <button class="pt-btn" data-size="8" title="Kalın"><span class="pt-dot" style="width:14px;height:14px"></span></button>
+    <button class="pt-btn" data-size="14" title="Çok kalın (+)"><span class="pt-dot" style="width:20px;height:20px"></span></button>
+  </div>
+  <div class="pt-sep"></div>
+  <div class="pt-grid">
+    <button class="pt-btn" id="ptUndo" title="Geri al (Ctrl+Z)">↶</button>
+    <button class="pt-btn" id="ptClear" title="Bu slayttaki yazıyı temizle (C)">🗑️</button>
+    <button class="pt-btn" id="ptBoard" title="Boş tahta aç/kapat (B)">▭</button>
+    <button class="pt-btn" id="ptEye" title="Yazıyı göster/gizle">👁️</button>
+    <button class="pt-btn" id="ptClose" title="Kalemi kapat (Esc)">✕</button>
+  </div>
+</div>
+<div id="penHint">Kalem açık. <b>V</b> ile işaretçiye geç (soru kutularını aç, kaydır), <b>P</b> ile tekrar yaz. Rakam tuşları renk seçer. Yazılar her slaytta ayrı kalır.</div>
+
+<script>
+(function(){
+  var COLORS = [
+    ['#FFFFFF','Beyaz'], ['#111111','Siyah'], ['#FBBF24','Sarı'], ['#F97316','Turuncu'],
+    ['#EF4444','Kırmızı'], ['#EC4899','Pembe'], ['#A855F7','Mor'], ['#3B82F6','Mavi'],
+    ['#22D3EE','Turkuaz'], ['#22C55E','Yeşil'], ['#A3E635','Açık yeşil'], ['#9CA3AF','Gri']
+  ];
+  var canvas = document.getElementById('penCanvas'), ctx = canvas.getContext('2d');
+  var board = document.getElementById('boardLayer'), tb = document.getElementById('penToolbar');
+  var laser = document.getElementById('laserDot'), hint = document.getElementById('penHint');
+  var toggleBtn = document.getElementById('penToggle'), colorsBox = document.getElementById('ptColors');
+  var state = { open:false, tool:'pointer', color:'#FBBF24', size:4, boardOn:false, hidden:false };
+  var store = {}, hist = {};
+  var cur = null, erasing = null, raf = 0, customWrap = null, customInput = null;
+  // Donanım silgisi algılandıktan sonra normal kalem ucuna dönüşü takip et.
+  var hardwareEraserMode = false;
+
+  function slideEl(){ return document.querySelector('.slide.active'); }
+  function key(){ if(state.boardOn) return 'board'; var s = slideEl(); return 's' + (s ? s.getAttribute('data-index') : '0'); }
+  function sTop(){ if(state.boardOn) return 0; var s = slideEl(); return s ? s.scrollTop : 0; }
+  function rect(){ return canvas.getBoundingClientRect(); }
+  function arr(o,k){ if(!o[k]) o[k] = []; return o[k]; }
+
+  function resize(){
+    var dpr = window.devicePixelRatio || 1, r = rect();
+    canvas.width = Math.round(r.width * dpr); canvas.height = Math.round(r.height * dpr);
+    ctx.setTransform(dpr,0,0,dpr,0,0); redraw();
+  }
+  function toPx(p){ return [p[0] * rect().width, p[1] - sTop()]; }
+
+  function drawStroke(st){
+    var pts = st.points; if(!pts.length) return;
+    ctx.save();
+    ctx.lineCap = 'round'; ctx.lineJoin = 'round'; ctx.strokeStyle = st.color; ctx.fillStyle = st.color;
+    var hl = st.tool === 'highlighter';
+    ctx.globalAlpha = hl ? 0.35 : 1;
+    var lw = hl ? st.size * 5 : st.size; ctx.lineWidth = lw;
+    var p0 = toPx(pts[0]);
+    if(pts.length === 1){ ctx.beginPath(); ctx.arc(p0[0], p0[1], lw/2, 0, Math.PI*2); ctx.fill(); ctx.restore(); return; }
+    ctx.beginPath(); ctx.moveTo(p0[0], p0[1]);
+    for(var i = 1; i < pts.length - 1; i++){
+      var a = toPx(pts[i]), b = toPx(pts[i+1]);
+      ctx.quadraticCurveTo(a[0], a[1], (a[0]+b[0])/2, (a[1]+b[1])/2);
+    }
+    var last = toPx(pts[pts.length-1]); ctx.lineTo(last[0], last[1]);
+    ctx.stroke(); ctx.restore();
+  }
+  function redraw(){
+    var r = rect(); ctx.clearRect(0, 0, r.width, r.height);
+    if(state.hidden) return;
+    (store[key()] || []).forEach(drawStroke);
+  }
+  function schedule(){ if(raf) return; raf = requestAnimationFrame(function(){ raf = 0; redraw(); }); }
+
+  function pt(e){ var r = rect(); return [ (e.clientX - r.left) / r.width, e.clientY - r.top + sTop() ]; }
+
+  function eraseAt(e){
+    var r = rect(), x = e.clientX - r.left, y = e.clientY - r.top, list = arr(store, key()), removed = [];
+    for(var i = list.length - 1; i >= 0; i--){
+      var hit = list[i].points.some(function(p){ var q = toPx(p); var dx = q[0]-x, dy = q[1]-y; return dx*dx + dy*dy < 18*18; });
+      if(hit){ removed.push(list.splice(i,1)[0]); }
+    }
+    if(removed.length){ erasing = erasing || []; erasing = erasing.concat(removed); schedule(); }
+  }
+
+  canvas.addEventListener('pointerdown', function(e){
+    if(!state.open) return;
+    // Bazı tablet kalemleri silgi ucunu Pointer Events'te ayrı araç olarak bildirir.
+    // Destekleyen tarayıcılarda araç seçimini otomatik olarak silgiye çevir.
+    var hardwareEraser = (e.pointerType === 'eraser') ||
+      (e.pointerType === 'pen' && (e.button === 5 || (e.buttons & 32) === 32));
+    if(hardwareEraser){
+      e.preventDefault();
+      hardwareEraserMode = true;
+      state.tool = 'eraser';
+      applyUI();
+    } else if(e.pointerType === 'pen' && hardwareEraserMode){
+      // Aynı kalem tekrar normal ucuna çevrildi: otomatik olarak kaleme dön.
+      hardwareEraserMode = false;
+      state.tool = 'pen';
+      applyUI();
+    }
+    if(state.tool === 'pointer') return;
+    e.preventDefault(); if(canvas.setPointerCapture){ try{ canvas.setPointerCapture(e.pointerId); }catch(_){} }
+    if(state.tool === 'pen' || state.tool === 'highlighter'){
+      cur = { tool:state.tool, color:state.color, size:state.size, points:[pt(e)] };
+      arr(store, key()).push(cur); schedule();
+    } else if(state.tool === 'eraser'){ erasing = []; eraseAt(e); }
+    else if(state.tool === 'laser'){ moveLaser(e); }
+  });
+  canvas.addEventListener('pointermove', function(e){
+    if(!state.open) return;
+    // Kalemin silgi ucu hareket sırasında ayrıca bildiriliyorsa silmeyi sürdür.
+    if(e.pointerType === 'eraser' ||
+       (e.pointerType === 'pen' && (e.buttons & 32) === 32)){
+      if(state.tool !== 'eraser'){ state.tool = 'eraser'; applyUI(); }
+    }
+    if(state.tool === 'laser'){ moveLaser(e); return; }
+    if(cur){ cur.points.push(pt(e)); schedule(); }
+    else if(erasing){ eraseAt(e); }
+  });
+  function endStroke(){
+    if(cur){ arr(hist, key()).push({type:'add', stroke:cur}); cur = null; }
+    if(erasing){ if(erasing.length) arr(hist, key()).push({type:'remove', list:erasing}); erasing = null; }
+    if(state.tool === 'laser') laser.style.display = 'none';
+  }
+  canvas.addEventListener('pointerup', endStroke);
+  canvas.addEventListener('pointercancel', endStroke);
+  canvas.addEventListener('pointerleave', function(){ if(state.tool === 'laser') laser.style.display = 'none'; });
+  function moveLaser(e){ laser.style.display = 'block'; laser.style.left = e.clientX + 'px'; laser.style.top = e.clientY + 'px'; }
+
+  canvas.addEventListener('wheel', function(e){
+    var s = slideEl(); if(s && !state.boardOn){ s.scrollTop += e.deltaY; schedule(); }
+    e.preventDefault();
+  }, { passive:false });
+  Array.prototype.forEach.call(document.querySelectorAll('.slide'), function(s){ s.addEventListener('scroll', schedule); });
+
+  function undo(){
+    var h = arr(hist, key()), a = h.pop(); if(!a) return;
+    var list = arr(store, key());
+    if(a.type === 'add'){ var i = list.indexOf(a.stroke); if(i > -1) list.splice(i,1); }
+    else { a.list.forEach(function(s){ list.push(s); }); }
+    redraw();
+  }
+  function clearInk(){
+    var list = arr(store, key()); if(!list.length) return;
+    arr(hist, key()).push({type:'clear', list:list.splice(0, list.length)}); redraw();
+  }
+
+  // ---- colour palette (12 presets + free colour picker) ----
+  COLORS.forEach(function(c, i){
+    var b = document.createElement('button');
+    b.className = 'pt-color'; b.setAttribute('data-color', c[0]); b.style.background = c[0];
+    b.title = c[1] + (i < 10 ? ' (' + ((i + 1) % 10) + ')' : '');
+    b.addEventListener('click', function(){ pickColor(c[0]); });
+    colorsBox.appendChild(b);
+  });
+  customWrap = document.createElement('label'); customWrap.className = 'pt-custom'; customWrap.title = 'İstediğin rengi seç';
+  customInput = document.createElement('input'); customInput.type = 'color'; customInput.value = '#FBBF24';
+  customInput.addEventListener('input', function(){ customWrap.style.background = customInput.value; pickColor(customInput.value); });
+  customWrap.appendChild(customInput); colorsBox.appendChild(customWrap);
+
+  function pickColor(c){ state.color = c; if(state.tool !== 'highlighter') state.tool = 'pen'; if(!state.open) state.open = true; applyUI(); }
+  function isPreset(c){ return COLORS.some(function(p){ return p[0].toLowerCase() === c.toLowerCase(); }); }
+
+  function applyUI(){
+    var drawing = state.open && state.tool !== 'pointer';
+    canvas.classList.toggle('on', drawing);
+    canvas.classList.toggle('t-eraser', state.tool === 'eraser');
+    canvas.classList.toggle('t-laser', state.tool === 'laser');
+    tb.classList.toggle('open', state.open);
+    toggleBtn.classList.toggle('active', state.open);
+    board.classList.toggle('on', state.boardOn);
+    Array.prototype.forEach.call(tb.querySelectorAll('[data-tool]'), function(b){ b.classList.toggle('active', b.getAttribute('data-tool') === state.tool); });
+    Array.prototype.forEach.call(tb.querySelectorAll('[data-color]'), function(b){ b.classList.toggle('active', b.getAttribute('data-color').toLowerCase() === state.color.toLowerCase()); });
+    customWrap.classList.toggle('active', !isPreset(state.color));
+    Array.prototype.forEach.call(tb.querySelectorAll('[data-size]'), function(b){ b.classList.toggle('active', +b.getAttribute('data-size') === state.size); });
+    document.getElementById('ptBoard').classList.toggle('active', state.boardOn);
+    document.getElementById('ptEye').classList.toggle('active', state.hidden);
+    if(state.tool !== 'laser') laser.style.display = 'none';
+    redraw();
+  }
+  function setTool(t){ state.tool = t; if(!state.open) state.open = true; applyUI(); }
+  function openPen(v){
+    state.open = v;
+    if(!v){ state.boardOn = false; }
+    if(v && state.tool === 'pointer') state.tool = 'pen';
+    if(v){ hint.classList.add('show'); setTimeout(function(){ hint.classList.remove('show'); }, 4500); }
+    applyUI();
+  }
+
+  toggleBtn.addEventListener('click', function(){ openPen(!state.open); });
+  Array.prototype.forEach.call(tb.querySelectorAll('[data-tool]'), function(b){ b.addEventListener('click', function(){ setTool(b.getAttribute('data-tool')); }); });
+  Array.prototype.forEach.call(tb.querySelectorAll('[data-size]'), function(b){ b.addEventListener('click', function(){ state.size = +b.getAttribute('data-size'); applyUI(); }); });
+  document.getElementById('ptUndo').addEventListener('click', undo);
+  document.getElementById('ptClear').addEventListener('click', clearInk);
+  document.getElementById('ptBoard').addEventListener('click', function(){ state.boardOn = !state.boardOn; applyUI(); });
+  document.getElementById('ptEye').addEventListener('click', function(){ state.hidden = !state.hidden; applyUI(); });
+  document.getElementById('ptClose').addEventListener('click', function(){ openPen(false); });
+
+  document.addEventListener('keydown', function(e){
+    var tag = (e.target && e.target.tagName) || '';
+    if(tag === 'INPUT' || tag === 'TEXTAREA') return;
+    var k = e.key.toLowerCase();
+    if((e.ctrlKey || e.metaKey) && k === 'z'){ if(state.open){ e.preventDefault(); undo(); } return; }
+    if(e.ctrlKey || e.metaKey || e.altKey) return;
+    if(k === 'd'){ openPen(!state.open); return; }
+    if(!state.open) return;
+    if(k === 'escape'){ openPen(false); }
+    else if(k === 'p') setTool('pen');
+    else if(k === 'h') setTool('highlighter');
+    else if(k === 'e') setTool('eraser');
+    else if(k === 'l') setTool('laser');
+    else if(k === 'v') setTool('pointer');
+    else if(k === 'b'){ state.boardOn = !state.boardOn; applyUI(); }
+    else if(k === 'c') clearInk();
+    else if(k.length === 1 && k >= '0' && k <= '9'){
+      var idx = k === '0' ? 9 : (+k - 1);
+      if(COLORS[idx]) pickColor(COLORS[idx][0]);
+    }
+    else if(k === '+' || k === '='){ state.size = Math.min(14, state.size + 2); applyUI(); }
+    else if(k === '-'){ state.size = Math.max(2, state.size - 2); applyUI(); }
+  });
+
+  new MutationObserver(function(){ redraw(); }).observe(document.getElementById('deck'), { attributes:true, subtree:true, attributeFilter:['class'] });
+  window.addEventListener('resize', resize);
+  resize(); applyUI();
+  window.__pen = { state:state, store:store, undo:undo, clearInk:clearInk, key:key };
+})();
+</script>
+</body>
+</html>
