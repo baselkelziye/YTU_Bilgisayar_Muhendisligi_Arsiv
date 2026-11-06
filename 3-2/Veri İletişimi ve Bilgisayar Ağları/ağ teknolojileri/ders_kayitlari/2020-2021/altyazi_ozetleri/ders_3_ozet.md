@@ -66,4 +66,4 @@ Traffic throttling, modern ve etkili bir yöntemdir. Router, çıkış kuyruğun
 
 Load shedding en son çare olarak uygulanır. Eğer tüm yöntemler yetersiz kalırsa ve buffer dolmuşsa, router gelen paketleri drop eder. Bu, "yangına benzin dökmek" gibidir çünkü zaten tıkanık olan network'e ek bir retransmission yükü bindirir. Ancak başka çare kalmamıştır. Paket drop kararı önemlidir: gerçek zamanlı uygulamalar (video) için en yeni paketler düşürülür (süt mantığı — son kareden devam edilir), veri aktarımı (dosya indirme) için en eski paketler düşürülür (şarap mantığı — sıra korunmalı).
 
-* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

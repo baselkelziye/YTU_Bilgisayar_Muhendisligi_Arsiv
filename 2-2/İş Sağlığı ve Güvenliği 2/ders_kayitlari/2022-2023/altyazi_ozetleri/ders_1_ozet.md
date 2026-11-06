@@ -73,4 +73,4 @@
 - **50'den az çalışanı olan işyerleri:** Eski düzenlemede (4857 sayılı İş Kanunu) işyeri hekimi ve iş güvenliği uzmanı çalıştırma yükümlülüğü 50 ve daha fazla çalışanı olan işyerleri içindi. 2012'de çıkan 6331 sayılı İSG Kanunu, çalışan sayısına bakmadan bütün işyerlerini kapsama aldı.
 - **5×5 L tipi matriste 20 ve 25 puan:** Yaygın kullanılan tabloda 20-25 aralığı "tolerans gösterilemez risk" olarak geçer. Bu aralıkta risk kabul edilebilir seviyeye inene kadar iş başlatılmaz veya işe ara verilir. Derste 20 için "hemen eyleme geç" denmesi bir örnektir. Kullanılan tabloya göre değişir.
 
-**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

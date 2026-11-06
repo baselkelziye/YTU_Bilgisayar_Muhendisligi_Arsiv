@@ -113,4 +113,4 @@ Laboratuvardaki 5 × 5 harita için (1,1)'den (4,4)'e sonuç -55 çıktı. Bu, s
 - **İki çağrılı üs almanın toplamı:** Hoca toplam işi $\log n \cdot 2^{\log n}$ gibi ifade etti. Bu çarpım $n \log n$ eder. Doğrusu düzeylerin toplamıdır: $\sum_{i=0}^{\log_2 n} 2^i = 2n - 1$. Hocanın vardığı $n$ sonucu doğrudur.
 - **Sınav saati:** Ders 20'de vize 09.00 olarak duyurulmuştu. Bu derste 10.00'a alınması tartışıldı ama karar verilmedi.
 
-* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

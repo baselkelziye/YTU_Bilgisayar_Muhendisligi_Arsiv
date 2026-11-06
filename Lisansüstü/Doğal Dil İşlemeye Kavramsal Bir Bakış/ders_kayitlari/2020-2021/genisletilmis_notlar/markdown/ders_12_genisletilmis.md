@@ -445,4 +445,4 @@ Bu derste beş çalışma incelendi. Birinci sunumda kelime gömmelerinin duygu 
 
 > **Ders sonrası not:** Altyazıda bozuk geçen terimlerin doğru yazımları: "Refining for the Embedding for the Sentiment Analyze" = "Refining Word Embeddings for Sentiment Analysis"; "Stanford Sentinel Treebank" = Stanford Sentiment Treebank; "SIBO, Sibov" = CBOW; "Skip-crumb, SkipCrab, Zikip Krab" = skip-gram; "Glow, GLOV" = GloVe; "Penington" = Pennington; "Seader Plus Plus" = SEADer++; "simspell PY" = SymSpellPy; "MOSSİ" = MOSI; "Föntüvek" = büyük olasılıkla word2vec; "Asterix database" = AsterixDB; "sentiment 141" = Sentiment140; "Eczema" = XML; "Apache Point" = Apache POI; "tecelere" = hecelere; "mehnatın uzaklığı" = Manhattan uzaklığı; "Levinstein" = Levenshtein; "Jakart" = Jaccard; "holistik sahileleştirme" = bütünsel indirgeme; "Starlink/sterlang" = büyük olasılıkla StarLang (danışmanın doğal dil işleme kütüphanesi).
 
-**Not:** İsterseniz bu kayıtları NotebookLM gibi bir araca atıp daha istifadeli hale getirebilirsiniz.
+**Not:** İsterseniz bu kayıtları Gemini Notebook gibi bir araca atıp daha istifadeli hale getirebilirsiniz.

@@ -38,4 +38,4 @@
 - Altyazıdaki "Information Rutable" ve "web tamamenlik" ifadeleri bozuk çeviri. Doğrusu Information Retrieval dersi ve benzeri lisans dersi.
 - "Yıldız Eduteri" ifadesi bozuk geçiyor. Üniversitenin yeni online eğitim sistemi kastediliyor.
 
-**Not:** İsterseniz bu kayıtları NotebookLM gibi bir araca atıp daha istifadeli hale getirebilirsiniz.
+**Not:** İsterseniz bu kayıtları Gemini Notebook gibi bir araca atıp daha istifadeli hale getirebilirsiniz.

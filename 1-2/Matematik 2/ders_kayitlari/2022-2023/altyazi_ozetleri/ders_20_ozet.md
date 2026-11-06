@@ -147,4 +147,4 @@ $$\iint_D (x+y)\,dA=\int_0^1\!\int_0^x (x+y)\,dy\,dx$$
 - **Aradaki haftalar:** Dersin başında 1. vizenin soruları çözülüyor. Bir öğrenci notların ne zaman açıklanacağını soruyor, hoca "muhtemelen bu hafta" diyor. Yani 1. vize 18 Nisan (ders 16) ile 2 Mayıs arasında yapılmış. Arşivde 24 Nisan kaydı boş, 18 ve 19 numaralı kayıtlar yok; bu arada Ramazan Bayramı (21-23 Nisan) ve 1 Mayıs tatili var. Vizenin kesin tarihi altyazıda geçmiyor.
 - Kalan konular için hoca "üç ya da dört haftamız var, integral iki haftada biter, sonra genel soru çözeriz" dedi. Jacobian sonraki haftaya kaldı.
 
-İsterseniz bu kayıtları NotebookLM gibi bir araca atıp daha istifadeli hale getirebilirsiniz.
+İsterseniz bu kayıtları Gemini Notebook gibi bir araca atıp daha istifadeli hale getirebilirsiniz.

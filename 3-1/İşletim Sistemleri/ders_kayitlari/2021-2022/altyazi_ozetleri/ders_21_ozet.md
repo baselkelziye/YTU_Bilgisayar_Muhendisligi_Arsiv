@@ -164,4 +164,4 @@ SRTF (slayt 6.17): $P_1$ (0, 8), $P_2$ (1, 4), $P_3$ (2, 9), $P_4$ (3, 5), paran
 - Hoca Windows için "çok işlemcili sistemlerde doğrudan spinlock" dedi. Kitaba göre Windows çekirdeği tek işlemcide kesmeleri maskeler, çok işlemcide spinlock kullanır. Kullanıcı düzeyinde ise dispatcher nesneleri (mutex, semafor, olay) sağlar.
 - Altyazıdaki "pound profit" bounded buffer, "reader-siters" readers-writers, "DynicG0" dining philosophers, "trueput" throughput, "konsümer" consumer demektir.
 
-**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

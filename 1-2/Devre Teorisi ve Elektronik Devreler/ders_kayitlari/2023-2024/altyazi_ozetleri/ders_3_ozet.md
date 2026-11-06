@@ -100,4 +100,4 @@
 - **Grafik yorumu:** Slayttaki grafikte (1'den 0'a inen üç eğri) kritik sönümlü eğri başta en yavaş düşer ama salınım yapmadan son değere en çabuk oturur. Aşırı sönümlü eğri başta çok hızlı düşer, sonra yavaşlar ve geç oturur. Az sönümlü eğri sıfırın altına inip salınır.
 - **$\omega_0$ ve salınım:** Hoca "$\omega_0$ ne kadar yüksekse o kadar salınım yapar" dedi. Salınımın olup olmayacağını tek başına $\omega_0$ değil, $\alpha$ ile $\omega_0$'ın karşılaştırması belirler. Salınım varsa frekansı $\omega_d$'dir.
 
-* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

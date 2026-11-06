@@ -241,4 +241,4 @@
   - Altyazıdaki "6. Edward" büyük olasılıkla VII. Edward, "Sir Green" Sir Edward Grey, "Sazanov" Sazonov, "risotto lojası" Macedonia Risorta locası, "Orit" ise Ohri'dir.
   - Hoca Balkan ittifakının devrimden "iki yıl sonra" kurulduğunu söyledi. Balkan ittifakı büyük olasılıkla 1912'de tamamlandı.
 
-**Not:** İsterseniz bu özeti NotebookLM gibi bir araca atıp daha istifadeli hale getirebilirsiniz.
+**Not:** İsterseniz bu özeti Gemini Notebook gibi bir araca atıp daha istifadeli hale getirebilirsiniz.

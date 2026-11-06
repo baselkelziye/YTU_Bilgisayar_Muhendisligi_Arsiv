@@ -134,4 +134,4 @@
 - **Ömür (duration) terimleri:** Derste öbekteki bellek için "static duration" denildi. C standardında üç tür vardır: yerel değişkenler için otomatik (automatic), global ve `static` değişkenler için statik (static), `malloc` ile alınan bellek için ayrılmış/dinamik (allocated) ömür. `malloc` belleği "dinamik"tir.
 - **Biçim belirteci uyuşmazlığı:** `double` bir değeri `%d` ile yazdırmak da tanımsız davranıştır. Görülen sayı bit dizisinin yanlış yorumlanmasından gelir ve sistemden sisteme değişir.
 
-* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

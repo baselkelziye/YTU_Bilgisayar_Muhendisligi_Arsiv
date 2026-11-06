@@ -191,4 +191,4 @@
 - **Çarpıcı ROM'u:** Hoca "kontrol edin" dedi. 15 bit yetmez; çarpım en fazla $65025$ olur ve 16 bit gerekir. $2^{16} \times 16$ doğrudur.
 - **Örnek 2:** Kayıtta tahtadaki ifadeler tam okunmuyor. Yukarıdaki 4 terimli çözüm tüm seçenekler denenerek bulundu. $F_1$ ve $F_2$ doğrudan alınırsa en az 5, $F_1'$ ile $F_2$ (ya da $F_1$ ile $F_2'$) alınırsa en az 4 terim gerekir.
 
-**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

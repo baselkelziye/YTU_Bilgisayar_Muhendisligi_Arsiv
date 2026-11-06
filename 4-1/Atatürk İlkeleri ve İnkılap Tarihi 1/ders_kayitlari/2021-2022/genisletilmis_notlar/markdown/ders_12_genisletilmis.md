@@ -426,4 +426,4 @@ Bu derste 1908 Devrimi'nin ardından gelen ilk büyük kırılma izlendi. İttih
 
 Hocanın ana tezi, İttihatçıların olumsuz siyasi mirası ile Cumhuriyet'e yol açan olumlu tarihsel mirasının ayrı ayrı değerlendirilmesi gerektiğidir. Sonraki derste Balkan travmasının I. Dünya Savaşı'na girişi nasıl etkilediği ve bu sürece dair eleştiriler ele alınacak.
 
-**Not:** İsterseniz bu kayıtları NotebookLM gibi bir araca atıp daha istifadeli hale getirebilirsiniz.
+**Not:** İsterseniz bu kayıtları Gemini Notebook gibi bir araca atıp daha istifadeli hale getirebilirsiniz.

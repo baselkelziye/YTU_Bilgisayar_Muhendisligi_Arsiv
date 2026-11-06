@@ -126,4 +126,4 @@ Tek bir işlemci çekirdeği bir anda yalnızca bir iş yapabilir. Çoklu progra
 - FTP portu derste önce 23 olarak söylendi, bir öğrenci 21 olduğunu belirtti. Doğrusu 21'dir (veri için 20). SSH 22, Telnet 23'tür.
 - Kaba kuvvet saldırısı (brute force attack), şifre gibi bir bilgiyi çok sayıda deneme yaparak bulmaya çalışmaktır. Derste bundan hemen sonra anlatılan "bir porta çok sayıda istek gönderip sistemi cevap veremez hâle getirmek" ise hizmet engelleme (Denial of Service, DoS) saldırısıdır.
 
-* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

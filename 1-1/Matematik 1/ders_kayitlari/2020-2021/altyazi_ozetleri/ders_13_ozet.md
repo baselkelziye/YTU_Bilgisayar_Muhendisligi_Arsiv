@@ -236,4 +236,4 @@ $$\left(1+\frac4u\right)^{u\cdot\frac{2x+3}{x+3}}\to \left(e^4\right)^2=e^8$$
 - **Belirsizlik adı:** Altyazıda "indeterminate form" sık sık "in the terminat form" diye bozuk geçiyor. Aynı kavramdır.
 - **Yoklama:** Ders sırasında hoca yoklama aldı (01:40-01:43). Öğrenci adları özete alınmadı.
 
-**Not:** İsterseniz bu kayıtları NotebookLM gibi bir araca atıp daha istifadeli hale getirebilirsiniz.
+**Not:** İsterseniz bu kayıtları Gemini Notebook gibi bir araca atıp daha istifadeli hale getirebilirsiniz.

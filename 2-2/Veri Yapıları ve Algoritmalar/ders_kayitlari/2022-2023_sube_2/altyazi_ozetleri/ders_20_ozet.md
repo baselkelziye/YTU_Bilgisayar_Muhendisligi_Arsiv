@@ -283,4 +283,4 @@ void applyUnion(int belongs[], int c1, int c2) {
 - Kruskal yönsüz graflarda çalışır. Kodda yalnız alt üçgen ($j < i$) gezildiği için her kenar bir kez listeye girer.
 - Hoca tahtada matris için "dense matris" dedi; kastedilen yoğun graftır.
 
-**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

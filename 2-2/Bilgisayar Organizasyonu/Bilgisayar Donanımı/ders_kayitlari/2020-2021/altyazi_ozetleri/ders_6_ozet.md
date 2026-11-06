@@ -322,4 +322,4 @@ POP X
 - **Lojik sola kaydırma yönü:** Hoca "sola kaydırmada da seri giriş 0" dedi. Doğru: lojik sola kaydırmada en düşük bite 0 girer, en yüksek bit carry'ye gider.
 - **Bir öğrencinin onluk tabanda tümleyen benzetmesi:** $4 - 2$ için $2$'nin 10'a tümleyeni $8$; $4 + 8 = 12$, elde atılınca sonuç $2$. Benzetme doğrudur. 8 bit ikili sayıda tümleme $2^8 = 256$'ya göre yapılır.
 
-**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

@@ -32,4 +32,4 @@
 - Öz nitelik seçimi ile öz nitelik çıkarımı arasındaki fark önemlidir. Seçim yöntemlerinde mevcut kolonlardan bazıları korunur; çıkarım yöntemlerinde ise veriyi daha iyi temsil eden yeni eksenler veya bileşenler elde edilir. Bu ayrım, PCA gibi yöntemlere geçiş için temel oluşturur.
 - Aykırı değerler veri indirgeme sırasında dikkatli ele alınmalıdır. Nadir ama anlamlı davranışları temsil eden gözlemler yanlışlıkla çıkarılırsa model problem için kritik bilgiyi kaybedebilir.
 
-* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

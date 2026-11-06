@@ -185,4 +185,4 @@ Yığın, o ana kadar okunan dizgide hangi harfin kaç tane fazla olduğunu tuta
 - **$\$$ ve yığın alfabesi:** $\$$ yığına konduğu için $\Gamma$'nın bir elemanıdır. Sipser'da $\$$, ilk geçişte ($\varepsilon, \varepsilon \to \$$) yığına itilir. Bu derste $\$$ en baştan yığında kabul edilir.
 - **Doğrulama:** $M_1$, $M_2$ ve $M_3$ Python ile simüle edildi. 8 sembole kadar bütün $\{a,b\}$ dizgilerinde sırasıyla $\{a^nb^n\}$, çift uzunluklu palindromlar ve $a$ sayısı $b$ sayısına eşit dizgiler dilini tanıdıkları doğrulandı.
 
-**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz. Ders İngilizce anlatılmıştır; altyazı da büyük ölçüde İngilizcedir.
+**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz. Ders İngilizce anlatılmıştır; altyazı da büyük ölçüde İngilizcedir.

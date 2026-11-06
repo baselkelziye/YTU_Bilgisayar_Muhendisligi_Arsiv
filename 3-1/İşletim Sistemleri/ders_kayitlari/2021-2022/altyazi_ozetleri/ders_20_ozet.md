@@ -163,4 +163,4 @@ Derste 5 girildi. Ebeveyn "Child with PID: ... sent 5" yazdı.
 - Derste süreç ağacı "büyükbaba, amca, amca çocuğu" benzetmesiyle anlatıldı ve karışıklık oldu. Doğru ağaç yukarıda: P'nin iki çocuğu var (C1 ve C2), C2'nin bir çocuğu var (C3).
 - Anlatılamayan FIFO ve sinyal konuları için `BLM3011_Uygulama_3.pdf` slaytlarına bakın. Sonraki uygulamanın başında telafi yapılacağı söylendi.
 
-**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

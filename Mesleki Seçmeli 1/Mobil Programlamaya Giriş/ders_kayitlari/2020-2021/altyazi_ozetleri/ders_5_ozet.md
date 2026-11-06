@@ -70,4 +70,4 @@ Aynı anda bir activity'nin yetmediği durumlarda, activity'nin ikiye bölünüp
 
 Dersin kod felsefesi açıklanmıştır: Ders sırasında gerçekleştirilecek faaliyetler, bir hafta bir özellik ekleyip bir yapı kurup, arkasından onun üzerine başka şeyler ekleyerek ilerleme şeklinde olacaktır. Örneğin login mekanizmasıyla başlanacak, login giriş ekranı tasarlanacak, sonra başka bir ekrana geçilecektir. Bunlar daha sonra ödev olarak alınma potansiyeli taşımaktadır. Bu yüzden ders sırasında gerçekleştirilen faaliyetlerin zamandan tasarruf ve öğrenme kolaylığı sağlayacağı belirtilmiştir.
 
-* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

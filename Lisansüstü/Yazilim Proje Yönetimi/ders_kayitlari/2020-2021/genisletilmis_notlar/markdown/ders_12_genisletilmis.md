@@ -536,4 +536,4 @@ Bu derste aynı konuya, yani yazılım projesinin başarısına üç farklı aç
 
 Uygulama sunumlarında derste görülen belgelerin küçük projelerde nasıl hazırlandığı görüldü: risk tablosu, WBS, Gantt şeması, kalite ölçüleri, fonksiyon noktası ve COCOMO tahmini. Kavramsal olarak akılda kalması gereken nokta şudur: Şelale modeli üst düzey aşamaları sıraya koyar, ama alt iş adımları paralel de yürüyebilir. Uygulama sunumları sonraki derste devam edecek.
 
-**Not:** İsterseniz bu kayıtları NotebookLM gibi bir araca atıp daha istifadeli hale getirebilirsiniz.
+**Not:** İsterseniz bu kayıtları Gemini Notebook gibi bir araca atıp daha istifadeli hale getirebilirsiniz.

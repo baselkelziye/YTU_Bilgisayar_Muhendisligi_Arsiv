@@ -118,4 +118,4 @@ Deadlock ile başa çıkma yöntemleri dört kategoride incelenir:
 
 Hoca, modern OS'lerin bu konudaki yaklaşımını açıklar: "İşletim sistemi deadlock engellemek, deadlock'tan kaçınmak veya deadlock çözmek için eğer kabul edilen sınırların dışında işlem gücü harcıyorsa, o zaman bunun bir anlamı kalmayacak. Geldiğimiz nokta bu."
 
-* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

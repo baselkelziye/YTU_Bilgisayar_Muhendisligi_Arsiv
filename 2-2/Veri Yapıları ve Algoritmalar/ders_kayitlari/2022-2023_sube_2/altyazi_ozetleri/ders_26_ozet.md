@@ -187,4 +187,4 @@ Sonuç: `1 2 2 3 3 4 8`.
 - Slayttaki örnekte counting sort'un yerleştirme adımı dizinin başından yapıldı. Bu şekilde eşit elemanların sırası tersine döner ve algoritma kararlı olmaz. Kararlılık için yerleştirme adımı dizinin sonundan başa doğru yapılmalıdır. Radix sort'un doğru çalışması bu kararlılığa bağlıdır.
 - Counting sort'un bellek karmaşıklığı $O(n + k)$'dir: $k$ boyutlu sayaç dizisi ve $n$ boyutlu çıktı dizisi.
 
-**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

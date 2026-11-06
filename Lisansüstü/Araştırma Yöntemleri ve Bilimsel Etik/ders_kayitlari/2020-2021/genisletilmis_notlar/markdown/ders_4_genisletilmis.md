@@ -391,4 +391,4 @@ Bu derste bilimsel yazının amacı tek bir fikre bağlandı: Yaptığınız iş
 
 Bölümlerin her birinin kendi işi vardır. Başlık kısa bir etikettir, özet makalenin kopyalanmamış mini versiyonudur, giriş motivasyon ve katkıyı ortaya koyar, materyal ve yöntem çalışmayı tekrarlanabilir kılar, sonuçlar yalnızca bulguları verir, tartışma sonuçları sebep-sonuç ilişkisiyle açıklar, teşekkür kısmı katkı verenleri ve alınan desteği belirtir, kaynaklar da ilgili çalışmaları gösterir. Yazarlık hakkı ise yazıyı yazmakla değil, zihinsel katkıyla kazanılır. Hoca dersin devamında etik konularının ve sunum tekniklerinin de ele alınacağını belirtti.
 
-**Not:** İsterseniz bu kayıtları NotebookLM gibi bir araca atıp daha istifadeli hale getirebilirsiniz.
+**Not:** İsterseniz bu kayıtları Gemini Notebook gibi bir araca atıp daha istifadeli hale getirebilirsiniz.

@@ -165,4 +165,4 @@
 - Sınav: Şubat 2023 depremlerinden sonra 2022-2023 Bahar dönemi uzaktan yürütüldü. Derste öğrenciler finalin çevrim içi olacağını belirtti ve hoca bunu kabul etti.
 - Altyazıdaki "etalyası" ifadesi "ısı", "Springler" ifadesi "sprinkler", "Bileve" ifadesi "BLEVE" demektir.
 
-* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

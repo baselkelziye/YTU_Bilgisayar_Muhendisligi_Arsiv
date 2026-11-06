@@ -39,4 +39,4 @@
 - Precision ve recall farklı başarı boyutlarını ölçer. Precision yanlış alarmı, recall ise kaçırılan pozitifleri anlamak için önemlidir. F-measure bu iki ölçütü tek sayıda birleştirerek model karşılaştırmayı kolaylaştırır.
 - ROC eğrisi, farklı threshold değerlerinde modelin yakalama oranı ile yanlış alarm oranı arasındaki değişimi gösterir. İyi bir sınıflayıcı yüksek true positive rate ve düşük false positive rate üretmelidir.
 
-* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

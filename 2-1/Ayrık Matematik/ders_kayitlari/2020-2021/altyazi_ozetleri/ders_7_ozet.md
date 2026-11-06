@@ -356,4 +356,4 @@ public static int[] selectionsort(int[] A, int n) {
 - **Hanoi kuleleri:** $n$ diskte en az $2^n - 1$ hamle gerekir. Karmaşıklık $O(2^n)$'dir.
 - Bütün sayısal örnekler (31, 4, 28, 16, $4n+6$, $4n$, $2n^2+9n+2$, $4n^2+4n+2$, $3^7 < 7!$, araya ekleme adımları) Python ile kontrol edildi.
 
-**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

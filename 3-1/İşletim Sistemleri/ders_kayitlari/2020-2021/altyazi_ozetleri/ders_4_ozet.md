@@ -91,4 +91,4 @@ Sistem çağrıları beş ana kategoride sınıflandırılır: Process Control (
 
 Hoca, OS hizmetlerinin nasıl sunulduğunu şekilsel olarak gösterir: Hardware → Operating System (services) → System Calls (arayüz) → Kullanıcı. Bu yapı modern tüm OS'lerde aynıdır.
 
-* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

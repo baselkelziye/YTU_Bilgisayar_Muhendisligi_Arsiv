@@ -152,4 +152,4 @@ Ağaç:                    Bağlı gösterim:
   - Klasik bubble sort (her geçişte büyük elemanı sona taşıyan sürüm): sondaki küçük eleman her geçişte yalnızca bir adım sola gider. Eleman en küçükse $n$ geçiş gerekir. En kötü durum $O(n^2)$'dir.
   - Bu yüzden ifade bu sürüm için yanlıştır.
 
-**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

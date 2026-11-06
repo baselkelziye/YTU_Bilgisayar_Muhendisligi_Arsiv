@@ -103,4 +103,4 @@ Bir öğrencinin önerisiyle önemli bir özel durum ele alınır. x1 ve x2 eşi
 
 Ders sonunda bir sonraki derse kadar çözülmek üzere kenar uzunlukları verilen bir üçgenin türünü (eşkenar, ikizkenar, çeşitkenar ve istenirse dik üçgen) belirleyen algoritmanın akış diyagramı ödev olarak verilir. Hoca, bir sonraki derslerde for ve while döngülerinin anlatılacağını ve bunlarla birlikte artık birçok problemin çözülebileceğini belirtir.
 
-* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

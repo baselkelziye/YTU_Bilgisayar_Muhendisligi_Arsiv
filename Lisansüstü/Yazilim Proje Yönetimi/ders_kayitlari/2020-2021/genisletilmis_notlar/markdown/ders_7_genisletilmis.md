@@ -450,4 +450,4 @@ Bu tekrar dersi, proje yönetiminin yalnızca bir plan belgesi hazırlamak olmad
 
 Dersin ikinci yarısında planın dayandığı konular hatırlatıldı: ekip ve organizasyon yapıları, belirsizlik nedeniyle PERT'in tercih edilmesi, LOC ve işlev noktasıyla ölçüm, maliyet tahmin yöntemleri, risk tablosu ve önlemler. Bu konuları birbirine bağlayan düşünce, planlananı ölçülebilir kılmak ve gerçekleşenle karşılaştırmaktır.
 
-**Not:** İsterseniz bu kayıtları NotebookLM gibi bir araca atıp daha istifadeli hale getirebilirsiniz.
+**Not:** İsterseniz bu kayıtları Gemini Notebook gibi bir araca atıp daha istifadeli hale getirebilirsiniz.

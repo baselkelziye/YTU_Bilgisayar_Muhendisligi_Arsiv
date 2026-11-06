@@ -255,4 +255,4 @@ Her adımda ziyaret edilen bir düğüme bağlı ve henüz ziyaret edilmemiş bi
 - **Huffman eşit frekanslar:** Huffman ağacı tek değildir. Eşit toplamlar olduğunda farklı ağaçlar ve farklı kodlar çıkabilir. Ama toplam bit sayısı her zaman en küçük değerdir. Bu örnekte Python ile kurulan Huffman ağacı da 135 bit verdi.
 - **Kontrol:** Huffman kod uzunlukları ve 135 bit, kodların önek kodu olması, Prim sonucu (2400), DFS ve BFS çıktıları ile dizi indisleri Python ile doğrulandı.
 
-**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

@@ -133,4 +133,4 @@ Kapının açılıp açılmadığını sürekli denemek meşgul beklemedir. Koş
 - POSIX semaforunun değeri gerçekten negatif olamaz. Ders kitabındaki (Silberschatz) semafor gerçeklemesinde ise değer negatif olabilir. Negatif değerin mutlak değeri bekleyen süreç sayısını verir.
 - Modern sistemlerde `fork` belleği hemen kopyalamaz; yazmada kopyalama (copy-on-write) kullanır. Yine de thread oluşturmaktan daha maliyetlidir.
 
-**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

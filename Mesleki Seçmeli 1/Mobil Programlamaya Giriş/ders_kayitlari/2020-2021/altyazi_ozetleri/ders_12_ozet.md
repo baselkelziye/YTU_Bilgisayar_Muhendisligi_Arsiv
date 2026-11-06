@@ -159,4 +159,4 @@ Hareketsizlik hesaplama (su terazisi örneği) detaylı olarak verilmiştir. Tel
 
 Jiroskop ve accelerometer farkı açıklanmıştır. Jiroskop belirli bir eksendeki açısal hızı rad/s cinsinden verir (X, Y, Z etrafında ne kadar hızlı dönüyorsunuz). İvme ölçer doğrusal ivmeyi ölçer. İvme ölçer yeterli olduğunda jiroskop bilgisine ihtiyaç duyulmayabilir. Düşme veya aktivite hareketlerini tanımada jiroskop kullanılır; yürüme/koşma gibi 3 eksende hareket eden detaylı analizler için jiroskop + manyetometre birlikte kullanılır.
 
-* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

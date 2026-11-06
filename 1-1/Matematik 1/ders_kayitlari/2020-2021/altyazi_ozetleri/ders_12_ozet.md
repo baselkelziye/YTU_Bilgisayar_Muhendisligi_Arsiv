@@ -210,4 +210,4 @@
 - **Alıştırma 11:** Altyazıda paydaki terim "$\ln$ 1 plus ekstrem" diye bozuk geçiyor. Doğru soru tahtadaki gibi $\ln(1 + x^2) + x$'tir.
 - Altyazıda bir döngü var (00:14:08). Bu kısım altyazıda anlaşılmıyor; içerik tahtadan tamamlandı.
 
-**Not:** İsterseniz bu kayıtları NotebookLM gibi bir araca atıp daha istifadeli hale getirebilirsiniz.
+**Not:** İsterseniz bu kayıtları Gemini Notebook gibi bir araca atıp daha istifadeli hale getirebilirsiniz.

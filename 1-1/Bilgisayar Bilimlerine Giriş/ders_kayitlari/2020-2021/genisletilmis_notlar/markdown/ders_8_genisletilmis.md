@@ -409,4 +409,4 @@ Bu derste iki problem üzerinden akış diyagramı çizmenin ve bir algoritmayı
 
 Doğru denklemi örneğinde ise önce kağıt üzerindeki çözüm yazıldı, sonra paydanın sıfır olabileceği durum işlemden önce kontrol edilerek çözüm genelleştirildi. Bilgisayarın yalnız bilinen değerlerle dört işlem, mod, kontrol ve bunların tekrarını yapabildiği, bu yüzden bilinmeyen $x$ içeren bir ifadeyi hesaplayamadığı görüldü. Hoca sonraki adımları da açıkladı: for ve while döngüleri anlatılıp algoritmik notasyonlar bitirilecek, bol soru çözülecek, ardından dizilere, matrislere ve karakter gruplarına geçilecek. Armstrong sayısı problemi de ileride her basamak sayısı için genelleştirilecek.
 
-**Not:** İsterseniz bu kayıtları NotebookLM gibi bir araca atıp daha istifadeli hale getirebilirsiniz.
+**Not:** İsterseniz bu kayıtları Gemini Notebook gibi bir araca atıp daha istifadeli hale getirebilirsiniz.

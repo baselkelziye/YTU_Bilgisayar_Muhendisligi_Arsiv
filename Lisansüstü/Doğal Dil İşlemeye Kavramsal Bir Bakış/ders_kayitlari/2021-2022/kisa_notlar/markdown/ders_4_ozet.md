@@ -229,4 +229,4 @@
 - 6. sunumda "Logran-McDonough" Loughran-McDonald, "Effective Space" AffectiveSpace, "smotiviren" büyük olasılıkla SMOTE'tur.
 - 6. sunumda Random Forest için "regülasyon" denmiştir. Doğrusu regresyondur (regression).
 
-**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

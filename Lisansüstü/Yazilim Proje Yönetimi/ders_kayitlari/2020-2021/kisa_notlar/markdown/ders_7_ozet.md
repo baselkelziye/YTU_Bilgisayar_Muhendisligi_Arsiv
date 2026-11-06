@@ -237,4 +237,4 @@
 - Bir öğrenci ilişki tiplerini sayarken "start to finish to start" gibi karışık ifadeler kullandı. Dört tip şunlardır: FS, SS, FF, SF.
 - Hoca 5. derste ara sınavın "büyük ihtimalle test usulü" olacağını söylemişti. Bu derste klasik sınav düşündüğünü söyledi. Kesin şekil sınav sistemine yüklenen sorulardan anlaşılacak.
 
-**Not:** İsterseniz bu kayıtları NotebookLM gibi bir araca atıp daha istifadeli hale getirebilirsiniz.
+**Not:** İsterseniz bu kayıtları Gemini Notebook gibi bir araca atıp daha istifadeli hale getirebilirsiniz.

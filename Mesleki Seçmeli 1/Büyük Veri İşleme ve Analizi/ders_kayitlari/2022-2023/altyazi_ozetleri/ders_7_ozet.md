@@ -176,4 +176,4 @@ $$\left(1 - \frac{1}{t}\right)^{d} = \left(\left(1 - \frac{1}{t}\right)^{t}\righ
 - **Sayısal örneğin sonucu.** Hocanın $0.393^5$ hesabını söylediği kısım altyazıda bozuk. Sonuç yaklaşık $0.0094$, yani yaklaşık %1.
 - **DGIM örneğindeki sayılar.** Tahtadaki örnekte blok sayıları altyazıda karışık geçiyor (önce "25 bit", sonra "23 bit"). Bu yüzden özette yalnız yöntem verildi.
 
-**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

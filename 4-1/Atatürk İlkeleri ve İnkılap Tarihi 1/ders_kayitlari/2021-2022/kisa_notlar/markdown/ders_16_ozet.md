@@ -223,4 +223,4 @@
 - **Müzisyenler:** Hoca bir yerde "caz ve piyano çalıyor" diyor. Bu tanım Vagif Mustafazade'ye uyar. Müslüm Magomayev bir bariton (opera ve pop) şarkıcısıdır.
 - **Altyazıda adı net olmayan eserler:** "Talular", "Palastır", "Gezi Türkiye" ve "İran'da soruyor çiçekler" ifadelerinin hangi esere karşılık geldiği altyazıdan anlaşılmıyor. Tam liste için AVESİS'teki 13. slayta bakın.
 
-**Not:** İsterseniz bu kayıtları NotebookLM gibi bir araca atıp daha istifadeli hale getirebilirsiniz.
+**Not:** İsterseniz bu kayıtları Gemini Notebook gibi bir araca atıp daha istifadeli hale getirebilirsiniz.

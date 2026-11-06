@@ -229,4 +229,4 @@ $$d=\frac{|\overrightarrow{PS}\times\vec v|}{|\vec v|}.$$
 
 ---
 
-İsterseniz bu özeti NotebookLM gibi bir araca atıp daha istifadeli hale getirebilirsiniz.
+İsterseniz bu özeti Gemini Notebook gibi bir araca atıp daha istifadeli hale getirebilirsiniz.

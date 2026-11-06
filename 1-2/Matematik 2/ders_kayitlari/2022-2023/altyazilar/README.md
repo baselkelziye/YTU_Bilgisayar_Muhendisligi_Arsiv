@@ -39,4 +39,4 @@ Dersler 27 Şubat 2023 Pazartesi günü başlamıştır. Ders haftada iki gün (
 - 17 numaralı kayıt (24 Nisan 2023) 4 dakikalık ve konuşmasızdır; altyazısı yoktur.
 - 18 ve 19 numaralı kayıtlar arşivde yoktur. Bu dönem Ramazan Bayramı (21-23 Nisan 2023), 1. vize ve 1 Mayıs tatiline denk gelmektedir. 1. vize 18 Nisan ile 2 Mayıs 2023 arasında yapılmıştır.
 
-**Not:** İsterseniz bu kayıtları NotebookLM gibi bir araca atıp daha istifadeli hale getirebilirsiniz.
+**Not:** İsterseniz bu kayıtları Gemini Notebook gibi bir araca atıp daha istifadeli hale getirebilirsiniz.

@@ -387,4 +387,4 @@ for i ← 1 to n-1 do
 - Sıralı aramanın ortalama formülü slaytta $(\sum_{i=1}^{n} n)/n$ yazıyor. Doğrusu $(\sum_{i=1}^{n} i)/n = (n + 1)/2$'dir.
 - Bağlantı problemindeki dizi çözümü literatürde quick-find (union-find'ın bir sürümü) olarak bilinir. Sorgu $O(1)$'dir, ama her birleştirme bütün diziyi taradığı için $O(n)$'dir.
 
-**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

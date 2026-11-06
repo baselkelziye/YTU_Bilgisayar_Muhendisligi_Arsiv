@@ -26,4 +26,4 @@ Ders haftada bir kez (Pazartesi) yapılmıştır. Dosya adlarındaki `ders_x.srt
 - 1 numaralı ders kaydı (5 Ekim 2020 haftası) bu şubenin kayıt arşivinde bulunmamaktadır.
 - 8 numaralı ders kaydı (23 Kasım 2020 haftası) bulunmamaktadır. Bu hafta vize haftasına denk gelmektedir.
 
-**Not:** İsterseniz bu kayıtları NotebookLM gibi bir araca atıp daha istifadeli hale getirebilirsiniz.
+**Not:** İsterseniz bu kayıtları Gemini Notebook gibi bir araca atıp daha istifadeli hale getirebilirsiniz.

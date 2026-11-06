@@ -140,4 +140,4 @@ Algorithm arrayMax(A, n)                 # işlem
 - **Kitap adları:** Altyazıdaki "Stephen Scanlon" Steven Skiena'dır (*The Algorithm Design Manual*). "Robert Sedgwick" Robert Sedgewick'tir (*Algorithms*).
 - **Altyazı hataları:** "Pissoda code", "püsöde kod" sözde kod (pseudocode); "Divide-Concure" divide and conquer; "breach and bounce" branch and bound; "8-Quint" 8 vezir (8 queens); "nebsek" knapsack (sırt çantası) problemidir.
 
-**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

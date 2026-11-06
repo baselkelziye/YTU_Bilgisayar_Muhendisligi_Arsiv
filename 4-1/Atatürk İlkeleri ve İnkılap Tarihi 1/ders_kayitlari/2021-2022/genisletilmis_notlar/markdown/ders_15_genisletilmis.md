@@ -513,4 +513,4 @@ Bu derste Sevr Antlaşması, "uygulansaydı ne olurdu?" sorusu üzerinden incele
 
 Dersin ikinci ekseni uluslararası koşullardı. Almanya ve Orta Doğu anlaşmazlıkları Sevr'i geciktirerek iki değerli yıl kazandırdı. İtalya ile Fransa cepheden koptu, İngiltere Yunanistan'ı yalnız bıraktı. En büyük şans ise 1917 Ekim Devrimi'ydi: Hem Çarlık Rusyası ortadan kalktı hem de Sovyetlerle yardım kanalı kuruldu. Hoca dersi işgalin bedelleri ve Nezahat Onbaşı, Tayyar Rahmiye, Şerife Bacı ile Mehmet Cemil Efendi'nin hikâyeleriyle bağladı. Müfredat bu dersle bitti. Sonraki derste toparlayıcı bir değerlendirme ile kitap ve belgesel içeren bir öneri listesi sunulacak.
 
-**Not:** İsterseniz bu kayıtları NotebookLM gibi bir araca atıp daha istifadeli hale getirebilirsiniz.
+**Not:** İsterseniz bu kayıtları Gemini Notebook gibi bir araca atıp daha istifadeli hale getirebilirsiniz.

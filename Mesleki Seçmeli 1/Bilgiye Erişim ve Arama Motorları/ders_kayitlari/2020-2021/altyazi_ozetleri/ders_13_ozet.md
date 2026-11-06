@@ -81,4 +81,4 @@
 - **Öneri değerlendirmesi:** Hocanın istediği değerlendirme için yaygın ölçütler: bekletilen (hold-out) puanlarda RMSE ya da MAE, ilk $k$ öneride precision@k ve recall@k.
 - **Kişisel bilgiler:** Kayıtta öğrencilerin adları, öğrenci numaraları ve ekranlarındaki belgeler görünüyor. Özete bunların hiçbiri alınmadı.
 
-**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

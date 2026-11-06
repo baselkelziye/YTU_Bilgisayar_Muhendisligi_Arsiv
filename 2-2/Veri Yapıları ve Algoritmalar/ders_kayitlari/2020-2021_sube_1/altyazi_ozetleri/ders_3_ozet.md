@@ -426,4 +426,4 @@ Hangi algoritmalar kararlı?
 - Klasik Shell Sort adım dizisinin ($n/2, n/4, \dots$) en kötü durumu $n^2$'dir. Knuth dizisi ($h = 3h + 1$: 1, 4, 13, 40, ...) en kötü durumda $O(n^{3/2})$ verir. $O(n \log^2 n)$ sonucu Pratt dizisine aittir.
 - Java'da ilkel tipler (`int[]` gibi) için `Arrays.sort` çift pivotlu Quick Sort kullanır ve küçük parçalarda Insertion Sort'a geçer. Nesne dizilerinde ise kararlı bir Merge Sort türevi (TimSort) kullanılır.
 
-**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

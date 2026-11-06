@@ -247,4 +247,4 @@ for (i = 0; i < 10; i++);
 - **`%[^\n]`:** Derste bu ifade bir düzenli ifade (regular expression) olarak anıldı. C'de buna "scanset" denir. Yalnızca köşeli parantez içindeki karakter kümesini tanır, tam bir düzenli ifade değildir.
 - **`scanf`'te `&` ve diziler:** Derste string okurken `&` kullanılsa da olacağı söylendi. Pratikte çoğu derleyicide çalışır, ama `&kelime`'nin tipi `char *` değil, "dizi pointer'ı"dır ve `gcc -Wall` bu satır için uyarı verir. Doğru kullanım `scanf("%s", kelime);` şeklindedir.
 
-* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

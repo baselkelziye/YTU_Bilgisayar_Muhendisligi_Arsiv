@@ -162,4 +162,4 @@
 - Kısa yol örneğinde hoca ara değerleri bir an "2" diye okudu, sonra düzeltti. Doğru sonuç $\{1, 3, 3, 1\}$'dir (Python ile doğrulandı).
 - Kayıtta yaklaşık 01:00 civarında hoca bir değişim öğrencisiyle not belgesi hakkında İngilizce konuşuyor. Bu kısım ders içeriği değildir.
 
-**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi daha verimli çalışabilirsiniz.
+**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi daha verimli çalışabilirsiniz.

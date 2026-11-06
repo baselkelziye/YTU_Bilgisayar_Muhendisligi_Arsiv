@@ -272,4 +272,4 @@
   - Altyazıdaki "Gazi Muhtarpaşa" Gazi Ahmed Muhtar Paşa'dır. "Eleşkilit" Eleşkirt'tir. "Beselabya/Beserapya" Besarabya'dır. "Nibolu" Niğbolu'dur. "Ayas-ı Stefanos" Ayastefanos'tur.
   - Ruslardan sonra "Didin bölgesine doğru yarma" denen yer altyazıda net değil.
 
-**Not:** İsterseniz bu özeti NotebookLM gibi bir araca atıp daha istifadeli hale getirebilirsiniz.
+**Not:** İsterseniz bu özeti Gemini Notebook gibi bir araca atıp daha istifadeli hale getirebilirsiniz.

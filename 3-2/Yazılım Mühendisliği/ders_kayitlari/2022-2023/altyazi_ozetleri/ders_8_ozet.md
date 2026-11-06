@@ -167,4 +167,4 @@ Tasarım kararları:
 - **Diploma numarası tipi.** Diploma ve kimlik numaraları hesaplamada kullanılmaz ve başında 0 ya da harf olabilir. Bu yüzden `int` yerine `String` tutulması daha güvenlidir.
 - **"Gizli bilgi" terimi.** Asistanın "hidden information" dediği şey yerleşik bir UML terimi değildir. UML'de bir ilişki, uçtaki rol adıyla zaten bir niteliği temsil eder. Aynı bilgiyi hem ilişki hem nitelik olarak yazmak gereksiz tekrardır. Asistanın önerdiği gibi tek biçimde göstermek yeterlidir.
 
-**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

@@ -203,4 +203,4 @@ DISTRIBUTION-COUNTING-SORT(A, l, u)
 - Final sınavı pazartesi, online, vizeye benzer biçimde.
 - Ödev ve proje notları finale kadar OBS'ye girilecek.
 
-**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

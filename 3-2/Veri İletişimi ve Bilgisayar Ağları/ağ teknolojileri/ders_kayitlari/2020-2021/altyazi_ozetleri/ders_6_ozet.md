@@ -77,4 +77,4 @@ Adres sınıfları (classful), internet'in ilk tasarımından kalan bir mirastı
 
 Subnet'leme, büyük bir network bloğunu daha küçük parçalara bölme işlemidir. Örneğin, bir üniversitenin /16 prefix'i (örn. 144.122.0.0/16) varsa, fakültelere /24 prefix'leri (örn. 144.122.1.0/24, 144.122.2.0/24) atanabilir. Bu, routing'i de kolaylaştırır: dış dünya sadece /16'yı bilir, iç yapıyı üniversitenin router'ları yönetir.
 
-* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

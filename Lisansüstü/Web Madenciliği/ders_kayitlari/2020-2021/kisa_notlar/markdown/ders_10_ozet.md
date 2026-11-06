@@ -236,4 +236,4 @@ Tohum URL'ler
 - "Birthday DB" büyük olasılıkla Berkeley DB, "notch crawler" büyük olasılıkla Apache Nutch. İkisi de altyazıdan çıkarılmıştır.
 - Hoca örnek kodu Perl ile yazar. Slayttaki kod büyük olasılıkla ders kitabındaki örnektir.
 
-**Not:** İsterseniz bu kayıtları NotebookLM gibi bir araca atıp daha istifadeli hale getirebilirsiniz.
+**Not:** İsterseniz bu kayıtları Gemini Notebook gibi bir araca atıp daha istifadeli hale getirebilirsiniz.

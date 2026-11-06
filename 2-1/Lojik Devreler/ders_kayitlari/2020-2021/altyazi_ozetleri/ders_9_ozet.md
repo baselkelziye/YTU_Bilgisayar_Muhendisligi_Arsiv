@@ -37,4 +37,4 @@
 - D flip-flop, tek veri girişine sahip olduğu için register ve bellek tasarımlarında yaygın kullanılır. Saat kenarında girişteki veri çıkışa aktarılır ve bir sonraki etkin saate kadar saklanır.
 - T flip-flop giriş aktif olduğunda durum değiştirir. Bu özellik sayaç tasarımlarında kullanışlıdır.
 
-* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

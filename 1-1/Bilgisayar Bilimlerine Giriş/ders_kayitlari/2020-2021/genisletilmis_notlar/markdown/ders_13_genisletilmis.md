@@ -465,4 +465,4 @@ Bu derste algoritma tasarımından C diline geçildi. Önce programlama dillerin
 
 Hoca kurallardan yalnızca yazımla ilgili olanları hızlıca anlattığını, kod yazabilecek noktaya gelindiğini düşündüğünü söyledi. C'ye dair başka özellikler de ilerleyen derslerde anlatılacak ve uygulama derslerinde birlikte kod yazılacak. Bu aşamada algoritma tasarlamak kod yazmaktan daha önemlidir. Yine de çözülen akış diyagramlarını bugün öğrenilen bilgilerle yavaş yavaş koda dönüştürmek gerekir.
 
-**Not:** İsterseniz bu kayıtları NotebookLM gibi bir araca atıp daha istifadeli hale getirebilirsiniz.
+**Not:** İsterseniz bu kayıtları Gemini Notebook gibi bir araca atıp daha istifadeli hale getirebilirsiniz.

@@ -122,4 +122,4 @@
 - Kayıtta 01:47-01:49 ve 02:29-02:31 arası anlaşılmıyor. Bu kısımlarda Türkçe konuşma var ve altyazı bozuk.
 - Dersin sonunda bir öğrenci fonksiyon kısmını Türkçe istedi. Hoca kısaca Türkçe anlattı: tanım kümesi (domain), değer kümesi (codomain), görüntü kümesi (range). Kardinalitenin Türkçesi için "eleman sayısı" dendi.
 
-**Not:** Bu ders İngilizce anlatılmıştır. İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+**Not:** Bu ders İngilizce anlatılmıştır. İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

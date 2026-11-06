@@ -231,4 +231,4 @@ $$x_{i+1} = (x_i - t_i \cdot B^{M-1}) \cdot B + t_{i+M}$$
 - **`rightSkip` indisi.** Arama kodunda `rightSkip[t[i + j]]` yazıldı. Tablo `offset` ile kurulduğu için burada da `rightSkip[t[i + j] - offset]` kullanılmalıdır. Aksi halde `'A'` için 65. göze bakılır ve 26 boyutlu dizinin dışına çıkılır.
 - **`rightSkip` başlangıç değeri.** Hoca "tablonun tamamını sıfırlıyorum" dedi ama $-1$ yazdı. Doğrusu $-1$'dir; 0 yazılırsa örüntüde olmayan karakterler 0. indiste varmış gibi görünür.
 
-**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

@@ -237,4 +237,4 @@ $2^4 = 16$ veri değeri $2^5 = 32$ olası koddan seçilir. Kalan kodların bir k
 - **DAC ve SAC:** Hoca C harfinin "converter" olabileceğini söylüyor. C, yoğunlaştırıcı (concentrator) anlamına gelir.
 - **FDDI standardı:** Hoca FDDI'ı "ANSI–ITU standardı" diye anıyor. FDDI, ANSI X3T9.5 komitesinde geliştirildi ve sonradan ISO 9314 olarak standartlaştı.
 
-**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

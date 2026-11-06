@@ -269,4 +269,4 @@ $$x_{d,i}' = \frac{x_{d,i} - \mu_i}{\sigma_i}$$
 - **Mahalanobis:** "covariance bilgisini de kullanan" mesafe olarak anıldı: $d = \sqrt{(x - y)^T \Sigma^{-1} (x - y)}$.
 - Ders yaklaşık 10:05'te başladı. 10:40 civarında 15 dakika, 11:30'da 5 dakika ara verildi.
 
-NotebookLM gibi bir araca altyazı dosyasını yükleyerek bu ders hakkında daha ayrıntılı soru-cevap yapabilirsiniz.
+Gemini Notebook gibi bir araca altyazı dosyasını yükleyerek bu ders hakkında daha ayrıntılı soru-cevap yapabilirsiniz.

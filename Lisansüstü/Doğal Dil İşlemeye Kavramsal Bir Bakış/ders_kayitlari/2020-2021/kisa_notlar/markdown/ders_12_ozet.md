@@ -217,4 +217,4 @@ $$\mathrm{overlap}(A,B) = \frac{|A \cap B|}{\min(|A|,|B|)}$$
 - 1. sunumda "Tri-LSTM" diye geçen modeli hoca ve sunucu tanımaz. Bu adın büyük olasılıkla ağaç yapılı LSTM (Tree-LSTM) olduğu düşünülebilir. Altyazıdan kesin değildir.
 - 1. sunumda "CBOW daha az veride, skip-gram daha çok veride" denir. 13. derste aktarılan Mikolov'un ifadesine göre ise skip-gram küçük eğitim verisinde iyi çalışır. CBOW daha hızlıdır ve sık geçen kelimelerde daha iyidir.
 
-**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

@@ -163,4 +163,4 @@ $$f(x) = \begin{cases} \dfrac{x}{x^2+1}, & -\pi < x < \dfrac{\pi}{2} \\[2mm] \df
 - **Örnek 3'ün ödev cevabı:** $\dfrac{1}{u(u+1)^2}$ için $A = 1$, $C = -1$, $B = -1$. Kontrol: $1 = A(u+1)^2 + Bu(u+1) + Cu$; $u=0 \Rightarrow A=1$, $u=-1 \Rightarrow C=-1$, $u^2$ katsayısı $A + B = 0 \Rightarrow B = -1$.
 - Altyazının bazı kısımları döngüye girmiş ya da bozuk (ör. 00:25:10-00:26:39, 00:34:53, 00:49:13 civarı). Bu kısımlar altyazıda anlaşılmıyor; içerik tahta görüntüsü ve bağlamla tamamlandı.
 
-**Not:** İsterseniz bu kayıtları NotebookLM gibi bir araca atıp daha istifadeli hale getirebilirsiniz.
+**Not:** İsterseniz bu kayıtları Gemini Notebook gibi bir araca atıp daha istifadeli hale getirebilirsiniz.

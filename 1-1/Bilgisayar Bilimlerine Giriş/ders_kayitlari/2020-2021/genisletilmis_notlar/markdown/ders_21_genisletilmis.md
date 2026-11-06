@@ -355,4 +355,4 @@ Bu derste iki sıralı diziyi birleştirme problemi öğrenci çözümleri üzer
 
 Hoca öğrencilerin iki sıralı diziyi birleştiren kodu yazıp doğru çalışıp çalışmadığını kontrol etmelerini önerdi. Sonraki derslerde algoritmalara biraz ara verilip işletim sistemi, ağ (network) ve belki işlemci mimarisi hakkında bilgiler konuşulacak. Ardından daha önce görülen aramanın daha etkili bir hâli olan ikili arama (binary search) algoritması işlenecek.
 
-**Not:** İsterseniz bu kayıtları NotebookLM gibi bir araca atıp daha istifadeli hale getirebilirsiniz.
+**Not:** İsterseniz bu kayıtları Gemini Notebook gibi bir araca atıp daha istifadeli hale getirebilirsiniz.

@@ -95,4 +95,4 @@
 - **Final tarihi:** Hoca "bugün pazartesi, öbür pazartesi sınavlar başlıyor" dedi. Buna göre final 11 Ocak 2021 Pazartesi olmalı. Kesin tarih ve saati okul sistemindeki duyurudan doğrulayın.
 - **Tablo:** Hocanın "tablo" dediği, büyük olasılıkla çalışan sayısına göre gereken çalışan temsilcisi ve diğer görevlilerin sayısını veren tablodur. Ders kaydında tablonun içeriği gösterilmedi.
 
-* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

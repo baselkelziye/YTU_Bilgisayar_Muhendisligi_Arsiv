@@ -95,4 +95,4 @@
 - **Alt küme toplamı için daha iyi yöntem:** Sayılar pozitif tam sayılarsa, problem dinamik programlamayla $n \cdot k$ adımda çözülür ($k$ hedef toplam). Bu, $2^n$'den çok daha iyidir ama $k$ çok büyükse yine pahalıdır. Genel durumda problem NP-tamdır.
 - **Gezgin satıcıda bütün rotalar:** Başlangıç şehri sabitlenip rotanın iki yönü aynı sayılırsa farklı rota sayısı $\frac{(n-1)!}{2}$'dir. Mertebesi yine $n!$'dir.
 
-* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

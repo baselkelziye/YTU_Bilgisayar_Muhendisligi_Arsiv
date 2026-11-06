@@ -158,4 +158,4 @@ Biletli --[koltuk dolu, başkasına verilemez]--> (bitir)
 - Etkinlik diyagramında da dolu koltuk seçme ve 12 saat içinde ödememe alternatifleri ile ödeme adımı yer almıyor. Senaryonun tamamı için bunların karar düğümleriyle eklenmesi gerekir.
 - Altyazıdaki "UMS sınıf şeması" UML, "plussac/klas" class demektir.
 
-**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

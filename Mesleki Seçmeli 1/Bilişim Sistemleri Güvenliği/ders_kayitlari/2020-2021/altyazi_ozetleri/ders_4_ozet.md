@@ -45,4 +45,4 @@
 - Least privilege, kullanıcıdan uygulamaya, prosesten domaine kadar her özne için geçerlidir. Örneğin bir domain yalnızca kendi cookie değerlerini okuyabilmelidir; bir uygulama başka uygulamanın verisini değiştirememelidir; bir proses başka prosesin belleğini okuyamamalıdır.
 - Unix güvenlik modelinde subject olarak kullanıcılar ve prosesler, object olarak dosyalar ve dosya gibi temsil edilen kaynaklar, operation olarak read, write ve execute kullanılır. Bu model daha sonraki erişim kontrol mekanizmalarının temelini oluşturur.
 
-* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

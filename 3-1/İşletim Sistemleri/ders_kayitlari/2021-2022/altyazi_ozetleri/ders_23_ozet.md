@@ -164,4 +164,4 @@ POSIX gerçek zamanlı zamanlama için `SCHED_FIFO` ve `SCHED_RR` sunar. Hoca ay
 - Turnaround grafiğindeki değerler: $q=3$ için 10,75 ve $q=5$ için 12,25. Derste "11'in altı" ve "12" dendi.
 - Rate monotonic bound'u derste formül olarak yazılmadı. Doğru formül $N(2^{1/N}-1)$'dir.
 
-**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

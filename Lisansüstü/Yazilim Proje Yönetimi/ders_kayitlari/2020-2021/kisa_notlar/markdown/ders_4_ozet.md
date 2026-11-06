@@ -309,4 +309,4 @@ Proje bitişi
 - Gantt diyagramı Henry Gantt tarafından 1910'larda geliştirilmiştir; hocanın verdiği tarih doğrudur.
 - Altyazıdaki "Dant şaması", "gaz şavası" Gantt şemasıdır. "Kaze aracı" CASE aracıdır.
 
-**Not:** İsterseniz bu kayıtları NotebookLM gibi bir araca atıp daha istifadeli hale getirebilirsiniz.
+**Not:** İsterseniz bu kayıtları Gemini Notebook gibi bir araca atıp daha istifadeli hale getirebilirsiniz.

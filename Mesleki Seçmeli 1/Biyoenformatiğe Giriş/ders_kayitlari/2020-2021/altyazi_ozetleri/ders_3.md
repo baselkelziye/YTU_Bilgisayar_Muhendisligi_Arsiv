@@ -39,4 +39,4 @@
 - Hücre, zarla çevrili karmaşık bir sistemdir ve içinde farklı organeller ile moleküler mekanizmalar bulunur. Biyoenformatik analizlerde hücre tipleri, gen ifadesi ve protein üretimi gibi kavramların veri düzeyinde karşılıkları vardır.
 - Genom, transkriptom ve proteom ayrımı veri türlerini anlamak açısından önemlidir. Genom nispeten kalıcı genetik bilgiyi temsil ederken transkriptom ve proteom hücre tipi, zaman, çevresel koşul ve hastalık durumuna göre değişebilir.
 
-* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

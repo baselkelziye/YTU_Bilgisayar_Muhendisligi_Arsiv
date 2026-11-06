@@ -465,4 +465,4 @@ Bu derste proje planının parçaları bir kez daha izlendi: Sorun müşteriyle 
 
 Dersin son bölümü planın zaman boyutuna geçti. WBS, seçilen süreç modeline uygun bir hiyerarşi kurar. Gantt diyagramı bu hiyerarşiye süre, kaynak ve faaliyetler arası ilişkileri ekler. Başlangıçlar çoğu zaman tarihle değil ilişkiyle verilir, toplam süre de buradan hesaplanır. Hoca sonraki derste zaman planlaması, WBS ve kullanılacak iş planlama araçları üzerinde duracağını söyledi.
 
-**Not:** İsterseniz bu kayıtları NotebookLM gibi bir araca atıp daha istifadeli hale getirebilirsiniz.
+**Not:** İsterseniz bu kayıtları Gemini Notebook gibi bir araca atıp daha istifadeli hale getirebilirsiniz.

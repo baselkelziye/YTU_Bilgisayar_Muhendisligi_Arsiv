@@ -285,4 +285,4 @@ $$F_1 = \frac{2 \cdot P \cdot R}{P + R}$$
 - Hoca slaytların genelde ders sabahına kadar hazırlandığını, dört farklı ders (görüntü işleme, algoritma analizi, makine öğrenmesi, veri yapıları) verdiği için önceden paylaşamadığını söyledi. Ders kaydedildiği için paylaşmaya gerek görmediğini ama belki paylaşabileceğini ekledi.
 - Ders 10:05 civarında başladı. 10:40'ta 15 dakika, 11:20 civarında 10 dakika ara verildi.
 
-NotebookLM gibi bir araca altyazı dosyasını yükleyerek bu ders hakkında daha ayrıntılı soru-cevap yapabilirsiniz.
+Gemini Notebook gibi bir araca altyazı dosyasını yükleyerek bu ders hakkında daha ayrıntılı soru-cevap yapabilirsiniz.

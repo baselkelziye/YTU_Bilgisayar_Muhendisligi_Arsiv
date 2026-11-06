@@ -256,4 +256,4 @@
 - Hoca basitlik, iletişim, geri besleme ve cesaret değerlerinin bütün çevik modellerde bulunduğunu söyledi. Bu dört değer XP'ye aittir. XP'nin ikinci sürümünde beşinci değer olarak saygı (respect) eklenmiştir. Çevik Manifesto'nun dört değeri farklıdır.
 - Altyazıda "test driving development" ve "test drive on development" geçer. Doğrusu Test Driven Development'tır.
 
-**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

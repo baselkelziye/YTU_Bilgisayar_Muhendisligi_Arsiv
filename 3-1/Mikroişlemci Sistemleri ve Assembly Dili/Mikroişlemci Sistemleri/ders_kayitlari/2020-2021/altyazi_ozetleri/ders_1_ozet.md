@@ -57,4 +57,4 @@ Flag register'ı işlem sonuçlarının durumunu saklar ve koşullu dallanma (ju
 **Veri Yolu vs. Adres Yolu:**
 Bir mikroişlemcide veri yolu (data bus) ve adres yolu (address bus) farklı kavramlardır. Veri yolu, CPU'nun registerlarına tek cycle'da kaç bitlik verinin aktarılabileceğini belirler. Adres yolu ise kaç farklı bellek bloğunun adreslenebileceğini belirler (2^n). 8086'da 16 veri ucu ve 20 adres ucu vardır. 8088'de ise 8 veri ucu ve 20 adres ucu bulunur; 16 bitlik registerı doldurmak için 2 cycle gerekir, bu da performans kaybı yaratır.
 
-* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

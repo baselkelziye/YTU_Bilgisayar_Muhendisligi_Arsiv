@@ -472,4 +472,4 @@ Sunumlarda hocanın tekrar ettiği kaygılar şunlardır: verinin nereden geldi�
 - "Sentence Complulation", "Sentence Compression" = Sentence Completion. "Piotr Mirovski" = Piotr Mirowski. "Anchester" = ancestor. "Thomas Mikolov" = Tomas Mikolov. "Kurskal" = Kruskal.
 - "Binkliyor" = büyük olasılıkla Bing Liu'nun görüş sözlüğü (opinion lexicon); altyazıdan kesin değildir.
 
-**Not:** İsterseniz bu kayıtları NotebookLM gibi bir araca atıp daha istifadeli hale getirebilirsiniz.
+**Not:** İsterseniz bu kayıtları Gemini Notebook gibi bir araca atıp daha istifadeli hale getirebilirsiniz.

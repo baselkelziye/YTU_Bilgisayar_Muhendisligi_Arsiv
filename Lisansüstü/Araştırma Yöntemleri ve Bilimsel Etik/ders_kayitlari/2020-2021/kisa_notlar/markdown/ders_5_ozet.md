@@ -196,4 +196,4 @@
 - Hocanın verdiği ilaç grafiği örneği kitaptaki izoniyazid (isoniazid), streptomisin (streptomycin) ve ikisinin birlikte kullanıldığı tedavi karşılaştırmasıdır. Altyazıda ilaç adları bozuk yazılmış.
 - TÜBİTAK 1002'nin değerlendirme ölçütleri yıllar içinde güncellendi. Başvuruda programın o yılki değerlendirme formu esas alınmalıdır.
 
-**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

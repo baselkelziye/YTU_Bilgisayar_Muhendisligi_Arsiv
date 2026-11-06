@@ -97,4 +97,4 @@ Multilevel Feedback Queue, en genel algoritmadır. Process'ler CPU-bound ise alt
 
 Convoy effect (FCFS) ve starvation (priority scheduling) algoritmaların tipik problemleridir. Aging ve uygun quantum seçimi bunlara karşı geliştirilen tekniklerdir.
 
-* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

@@ -55,4 +55,4 @@
 - Değişiklik yönetimi, kapsam kaymasının önlenmesi için gereklidir. Proje yöneticisi değişiklik talebini analiz eder; ancak değişikliğin kabul edilip edilmeyeceği çoğu durumda sponsor veya yönlendirme mekanizması tarafından kararlaştırılır.
 - Öğrenilen dersler, proje boyunca ve sonunda edinilen deneyimlerin kayıt altına alınmasıdır. Benzer projelerde hataların tekrarlanmamasını, iyi uygulamaların aktarılmasını ve kurumsal hafızanın gelişmesini sağlar.
 
-* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

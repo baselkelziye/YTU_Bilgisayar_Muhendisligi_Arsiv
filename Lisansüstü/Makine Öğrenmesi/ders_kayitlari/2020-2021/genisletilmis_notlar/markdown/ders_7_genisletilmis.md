@@ -446,4 +446,4 @@ XOR problemi tek katmanlı perceptron'un sınırını gösterdi: XOR'un sınıfl
 
 > **Ders sonrası not:** Altyazıdaki bozulmalar: "Mark Klok ve Pitts" McCulloch ve Pitts, "Hofloin'in rolü" Widrow-Hoff kuralı, "Deltorum" delta rule, "Dat product" dot product, "egzor" XOR, "ent" AND, "ipok" epoch, "trash/treş/tıraş olduğu" threshold, "Bayes" (bias sorusunda) bias, "time function" ve "side function" sign function, "shape fonksiyonu" step fonksiyonu, "sigmoik/sıkı poit" sigmoid, "Monteneyat/Matta-değer/maltı" multi-layer, "hypopalic tangent" hyperbolic tangent, "iPhone" ve "burning rate" ise öğrenme oranı ($\alpha$) ya da learning rate'tir. "Kormojeniz" convergence (yakınsama), "Outlook Layer/kutlayır" output layer demektir. Slaytta başlangıç aralığındaki "x2.4" ifadesi $2{,}4 / F_i$'dir.
 
-**Not:** İsterseniz bu kayıtları NotebookLM gibi bir araca atıp daha istifadeli hale getirebilirsiniz.
+**Not:** İsterseniz bu kayıtları Gemini Notebook gibi bir araca atıp daha istifadeli hale getirebilirsiniz.

@@ -415,4 +415,4 @@ Dersin başındaki soru-cevap da aynı mantığı proje önerilerine taşıdı. 
 
 Hoca, bilimsel yazımın bir de değerlendirme süreci olduğunu hatırlattı. Sıradaki konular şunlardır: Bilimsel yayının değerlendirme süreci ve etik yönergeleri, ardından sunum teknikleri.
 
-**Not:** İsterseniz bu kayıtları NotebookLM gibi bir araca atıp daha istifadeli hale getirebilirsiniz.
+**Not:** İsterseniz bu kayıtları Gemini Notebook gibi bir araca atıp daha istifadeli hale getirebilirsiniz.

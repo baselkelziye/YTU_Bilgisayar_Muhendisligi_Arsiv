@@ -396,4 +396,4 @@ $$P(B)\,P(cat \mid B)\,P(dog \mid B) = \frac{1}{2}\cdot\frac{1+1}{3+6}\cdot\frac
 - Altyazıdaki "Nayibayez / Mayıs sınıflandırıcısı" Naive Bayes'tir.
 - Altyazıdaki "Hidden Markov model" Saklı Markov Modeli'dir.
 
-**Not:** İsterseniz bu kayıtları NotebookLM gibi bir araca atıp daha istifadeli hale getirebilirsiniz.
+**Not:** İsterseniz bu kayıtları Gemini Notebook gibi bir araca atıp daha istifadeli hale getirebilirsiniz.

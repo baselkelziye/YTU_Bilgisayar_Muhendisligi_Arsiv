@@ -522,4 +522,4 @@ Bu derste bilgi erişimi bölümü tamamlandı ve web crawling bölümüne giril
 
 İkinci yarıda doküman koleksiyonunun nasıl oluştuğu konuşuldu. Crawler tohum URL'lerden başlar, sayfaları indirip içlerinden yeni URL'ler çıkarır ve bir durma ölçütüne kadar devam eder. Bunu yaparken `robots.txt` kurallarına uyar. Crawler'lar universal ve preferential diye ayrılır, preferential olanlar da focused ve topical diye ikiye ayrılır. Sonraki işlenecek derste crawler'lar daha kapsamlı ele alınacaktır. Link analizi ve PageRank tablosunun ayrıntıları ise web yapı madenciliği konuşulurken görülecektir.
 
-**Not:** İsterseniz bu kayıtları NotebookLM gibi bir araca atıp daha istifadeli hale getirebilirsiniz.
+**Not:** İsterseniz bu kayıtları Gemini Notebook gibi bir araca atıp daha istifadeli hale getirebilirsiniz.

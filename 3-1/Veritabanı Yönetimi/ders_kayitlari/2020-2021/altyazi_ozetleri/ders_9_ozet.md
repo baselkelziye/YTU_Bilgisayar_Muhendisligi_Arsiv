@@ -70,4 +70,4 @@
 
 ---
 
-**Not:** Bu özet NotebookLM kullanılarak ses kayıtlarından oluşturulmuştur.
+**Not:** Bu özet Gemini Notebook kullanılarak ses kayıtlarından oluşturulmuştur.

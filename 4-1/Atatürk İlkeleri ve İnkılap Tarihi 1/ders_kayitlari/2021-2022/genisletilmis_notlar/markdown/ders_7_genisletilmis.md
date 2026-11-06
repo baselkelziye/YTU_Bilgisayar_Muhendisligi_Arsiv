@@ -480,4 +480,4 @@ Bu derste ıslahat hareketlerinin neden doğduğu, Osmanlı modernleşmesinin na
 
 Son bölümde Bab-ı Hümayun'dan Bab-ı Âli'ye geçiş, nezaretler, III. Selim'in Nizam-ı Cedid'i, Mühendishane-i Berr-i Hümayun ve daimi elçilikler ile II. Mahmud'un Yeniçeriliği tasfiyesi, mektepleri, posta teşkilatı, Takvim-i Vekayi, nüfus sayımı ve karantina teşkilatı anlatıldı. Hocanın ana tezi şudur: Bu yenilikler Osmanlı'nın yıkılışını engelleyemedi, ama ömrünü uzattı ve kurulacak yeni devletin temellerini attı.
 
-**Not:** İsterseniz bu kayıtları NotebookLM gibi bir araca atıp daha istifadeli hale getirebilirsiniz.
+**Not:** İsterseniz bu kayıtları Gemini Notebook gibi bir araca atıp daha istifadeli hale getirebilirsiniz.

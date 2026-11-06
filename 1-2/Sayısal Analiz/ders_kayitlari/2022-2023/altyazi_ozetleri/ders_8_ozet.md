@@ -102,4 +102,4 @@
 - **Doğru denklemi formülü:** $B$ için ayrıca $B = \frac{b\,f(a) - a\,f(b)}{b - a}$ yazılabilir. Örnekte $\frac{6 \cdot 5 - 2 \cdot 13}{4} = 1$.
 - **Tarih:** Vize tarihi derste "26 Nisan, pazartesi" diye geçti. 2023'te 26 Nisan çarşambadır. Pazartesi 24 Nisan'dır. Kesin tarih için o dönemin duyurularına bakın.
 
-* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

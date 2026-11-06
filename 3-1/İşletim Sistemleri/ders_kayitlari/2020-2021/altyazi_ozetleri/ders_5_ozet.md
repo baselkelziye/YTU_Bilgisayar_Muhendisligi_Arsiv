@@ -85,4 +85,4 @@ Hoca, process'ler arası parent-child ilişkisini ağaç yapısı şeklinde aç�
 
 Kuyruk yapıları OS'nin temel veri yapılarından biridir. Ready queue, I/O device queues (her cihaz için ayrı) linked list olarak implemente edilir. Process'ler kuyruklara eklenir, uygun koşul sağlandığında kuyruktan çıkarılır. Multi-core sistemlerde her core için ayrı ready queue olabilir; bu durum senkronizasyon problemlerini beraberinde getirir.
 
-* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

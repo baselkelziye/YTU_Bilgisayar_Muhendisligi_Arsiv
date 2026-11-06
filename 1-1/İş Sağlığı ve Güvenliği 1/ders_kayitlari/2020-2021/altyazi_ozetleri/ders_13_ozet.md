@@ -385,4 +385,4 @@
 - **Yüksek gerilim hatları:** Sunumda "beyin tümörü riski 7 kat" ve "bir mahalledeki düşüklerin nedeni yüksek gerilim hattı çıktı" gibi iddialar yer aldı. Bunlar bilimsel olarak kanıtlanmış değildir. IARC, çok düşük frekanslı manyetik alanları "insanda olası kanserojen" (Grup 2B) olarak sınıflandırır. Bunun dayanağı çocukluk çağı lösemisiyle zayıf bir istatistiksel ilişkidir. Nedensellik gösterilmemiştir.
 - **Süt izni ve doğum izni:** 4857 sayılı Kanun md. 74'e göre doğum izni toplam 16 haftadır (doğumdan önce 8, sonra 8 hafta). Çoğul gebelikte doğumdan önceki süreye 2 hafta eklenir. Süt izni günde 1,5 saattir.
 
-* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

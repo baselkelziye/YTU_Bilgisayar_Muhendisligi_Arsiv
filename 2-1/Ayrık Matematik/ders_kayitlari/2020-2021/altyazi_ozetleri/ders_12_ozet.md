@@ -193,4 +193,4 @@
 - **Doğrulama:** Dijkstra sonuçları, Königsberg dereceleri, $K_4$, elmas, $C_4$ ve $W_4$ kromatik polinomları Python ile kontrol edildi. Polinomlar $k=0,\dots,5$ için tek tek boyama sayılarak doğrulandı.
 - Altyazıdaki "öler" Euler, "hil graf" wheel (tekerlek) çizgesi, "pentant" pendant, "Dishkstra" Dijkstra, "kromotik" kromatik, "dilatation/deletition contraction" deletion-contraction demektir.
 
-**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

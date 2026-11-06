@@ -551,4 +551,4 @@ Bu derste web içerik madenciliğinin bilgi erişimi tarafına girildi. Bilgi er
 
 Hoca bir sonraki konuyu da haber verdi. İki bilgi erişimi modeli, doküman ve sorgu gösterimi ile sıralama konuşulduktan sonra sıra, taranan dokümanlar üzerinde indekslemeden önce hangi ön işleme adımlarının yapıldığına (text preprocessing), sonra da indeks üzerindeki dokümanlarla kelimeler arasındaki benzerliğin bulunup sıralanmasına gelecektir. Dönem projeleri için de hoca, seçilen algoritma ve veri setiyle önerilerin netleştirilmesini istedi.
 
-**Not:** İsterseniz bu kayıtları NotebookLM gibi bir araca atıp daha istifadeli hale getirebilirsiniz.
+**Not:** İsterseniz bu kayıtları Gemini Notebook gibi bir araca atıp daha istifadeli hale getirebilirsiniz.

@@ -94,4 +94,4 @@ Thread dezavantajları da önemlidir: Senkronizasyon karmaşıklığı (paylaş�
 
 Multi-core sistemler ve threading konusu da vurgulanır. Modern işlemcilerde Hyper-Threading teknolojisi ile her fiziksel çekirdek 2 mantıksal thread (iki register seti) barındırır. Bu sayede bir thread I/O veya bellek erişimi için beklerken, diğer thread hesaplama yapabilir. ALU birden fazlaysa (4-8), aynı anda farklı aritmetik işlemler yapılabilir.
 
-* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

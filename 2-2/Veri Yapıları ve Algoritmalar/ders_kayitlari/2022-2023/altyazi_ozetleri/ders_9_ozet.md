@@ -416,4 +416,4 @@ int dequeue(queue *q)
 - **Önceliklerde eşitlik:** Örnek 1'de `-` geldiğinde yığındaki `+` eşit öncelikli olduğu için çıkarıldı. Bu, aynı öncelikli işlemlerin soldan sağa yapılmasını sağlar. `+`, `-`, `*`, `/` için kural "üstteki eşit veya daha öncelikliyse çıkar" şeklindedir.
 - **Postfix çözümünde atlanan adım:** Hoca derste önce 2'yi postfix ifadeye yazmayı unuttu, sonra çözümde 3'ü yığında bıraktı; ikisini de kendisi fark edip düzeltti. Yukarıdaki tablolar düzeltilmiş hâlidir.
 
-**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

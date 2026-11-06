@@ -106,4 +106,4 @@ Baud rate, saniyedeki bit değişim sayısıdır (bps). Bir bitin transfer süre
 **Parity Kontrol Mekanizması:**
 Parity biti, veri bitlerinin içerisindeki 1 sayısını even veya odd kurala göre tamamlayan bir ekk bitidir. Gönderici taraf parity bitini hesaplayıp pakete ekler. Alıcı taraf aynı kuralı uygulayarak gelen veriyi kontrol eder; kural bozulmuşsa hata var demektir. Bu yöntem sadece tek bitlik hataları yakalar; iki bit birden bozulursa parity değişmez ve hata fark edilmez.
 
-* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

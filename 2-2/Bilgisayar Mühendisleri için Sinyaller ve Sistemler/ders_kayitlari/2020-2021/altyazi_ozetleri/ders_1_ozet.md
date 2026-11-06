@@ -187,4 +187,4 @@ Ders iki ana dala ayrılır. Sürekli zamanda konvolüsyon integrali, diferansiy
 - **IEEE 754:** Derste "IEEE 744" dendi. Standardın doğru adı IEEE 754'tür.
 - **Ses dosyası boyutu:** Yukarıdaki 5,05 MB hesabı tek kanal (mono) içindir ve Python ile doğrulandı. Stereo kayıtta boyut iki katına çıkar.
 
-**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

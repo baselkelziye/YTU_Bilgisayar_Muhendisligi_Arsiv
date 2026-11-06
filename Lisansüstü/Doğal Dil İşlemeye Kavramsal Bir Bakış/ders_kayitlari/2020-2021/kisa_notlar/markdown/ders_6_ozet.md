@@ -509,4 +509,4 @@ $$sim_{L}(c_1, c_2) = \frac{2 \log(p(lcs(c_1, c_2)))}{\log(p(c_1)) + \log(p(c_2)
 - Hoca korelasyon tablosunu "100 çiftin 80'ine yakınında bilgisayar ile insan aynı benzerliği vermiş" diye yorumladı. 0,82 bir korelasyon katsayısıdır, doğru tahmin edilen çiftlerin oranı değildir. Yöntemin puanlarının insan puanlarıyla güçlü biçimde birlikte değiştiğini gösterir.
 - Altyazıda "Advanced smoothing" ve "Erdogan smoothing" geçen yerler "add-one smoothing", "good touring" geçen yerler "Good-Turing", "KeyNet" geçen yer "KeNet", "Lee Kock ve Shadorov" geçen yer "Leacock & Chodorow", "Hu Palmer" geçen yer "Wu & Palmer", "Jean-Condrat" geçen yer "Jiang-Conrath" olmalıdır.
 
-**Not:** İsterseniz bu kayıtları NotebookLM gibi bir araca atıp daha istifadeli hale getirebilirsiniz.
+**Not:** İsterseniz bu kayıtları Gemini Notebook gibi bir araca atıp daha istifadeli hale getirebilirsiniz.

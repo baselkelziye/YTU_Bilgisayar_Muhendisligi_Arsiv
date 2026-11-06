@@ -160,4 +160,4 @@ Ders sonrasında denendi: 1 2 3 4 5 dizisi 5 4 3 2 1 oldu. 1 2 3 2 1 palindrom, 
 - **XOR swap'ın sınırı:** Derste XOR'un taşma gibi sorunları olmayabileceği söylendi. Doğrudur: XOR taşma yapmaz, sıfırla da sorun çıkmaz. İki değişkenin değeri eşit olsa bile doğru çalışır (5 ve 5 ile denendi). Sorun yalnızca iki ifadenin aynı bellek hücresini göstermesidir (ör. `dizi[i]` ile `dizi[j]`, `i == j` iken): ilk adımda değer sıfırlanır ve kaybolur. Ayrıca XOR yalnızca tam sayı tiplerinde kullanılabilir.
 - **İşaretli tam sayı taşması:** Toplama-çıkarma yönteminde taşma C standardına göre tanımsız davranıştır (undefined behavior). Pratikte çoğu derleyicide değer "sarılır" ve swap yine doğru sonuçlanır, ama buna güvenilmemelidir.
 
-* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

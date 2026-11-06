@@ -43,4 +43,4 @@
 
 - Kayıt tablosunda 9. dersten sonraki kayıt 20 Mayıs 2021 tarihlidir. 13 Mayıs 2021 Perşembe, Ramazan Bayramı'nın ilk günüdür. Bu, hocanın "bayram nedeniyle ders olmayacak" duyurusuyla uyumludur.
 
-**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

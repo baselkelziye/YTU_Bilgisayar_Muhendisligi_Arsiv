@@ -193,4 +193,4 @@
 - Bursiyer aylık tutarları, 1002 bütçe üst sınırı ve seyahat kuralları zamanla değişir. Altyazıdaki rakamlar 2021 dönemine ait ve öğrencilerin aktarımıdır. Güncel değerler için 1002 programının güncel uygulama esaslarına bakılmalı.
 - Öneren kuruluş genelde projenin sunulduğu ve yürütüleceği kurumdur (burada üniversite). Destekleyen kuruluşlar ise projeye ayni ya da nakdi katkı veren diğer kurumlardır. Kesin tanım için hocanın da dediği gibi mevzuata bakılmalı.
 
-**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

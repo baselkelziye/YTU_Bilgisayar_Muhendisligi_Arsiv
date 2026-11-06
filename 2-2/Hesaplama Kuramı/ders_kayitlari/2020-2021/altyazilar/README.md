@@ -28,4 +28,4 @@ Dersler 9 Mart 2021 Salı günü başlamıştır. Ders haftada bir kez (Salı) y
 - 8 numaralı ders kaydı (27 Nisan 2021 haftası) bulunmamaktadır. Bu hafta vize haftasına denk gelmektedir.
 - 11 Mayıs 2021 haftasına ait kayıt bulunmamaktadır. Bu hafta Ramazan Bayramı haftasına denk gelmektedir.
 
-**Not:** İsterseniz bu kayıtları NotebookLM gibi bir araca atıp daha istifadeli hale getirebilirsiniz.
+**Not:** İsterseniz bu kayıtları Gemini Notebook gibi bir araca atıp daha istifadeli hale getirebilirsiniz.

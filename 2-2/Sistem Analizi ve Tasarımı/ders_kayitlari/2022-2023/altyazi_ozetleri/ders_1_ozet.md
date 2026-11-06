@@ -187,4 +187,4 @@ Hoca dersi deprem sonrası çevrim içi döneme dair bir değerlendirmeyle açt�
   - "Rototip" kelimesi "rotatif"tir.
   - Altyazıda "NovaSQL" geçiyor; kastedilen NoSQL.
 
-**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

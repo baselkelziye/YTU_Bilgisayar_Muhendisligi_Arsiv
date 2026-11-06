@@ -34,4 +34,4 @@
 - Bilgisayar mühendisliği açısından biyoenformatikte önemli olan yalnızca biyolojik sonuçları görmek değil, bu sonuçların hangi veri temsilleri ve algoritmalarla üretildiğini anlamaktır. DNA veya protein dizileri, bilgisayar belleğinde harf dizileri gibi tutulabilir; böylece arama, eşleştirme, hizalama ve örüntü bulma işlemleri programlama teknikleriyle gerçekleştirilebilir.
 - Dersin genel akışı, önce temel biyolojik kavramları tanıtıp sonra bu kavramlar üzerinde kullanılan hesaplamalı yöntemlere geçecek biçimdedir. Bu nedenle moleküler biyoloji kavramları ile programlama ve algoritma kavramları birlikte ele alınır.
 
-* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

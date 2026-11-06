@@ -601,4 +601,4 @@ Dersin ilk bölümünde veri sıkıştırma tamamlandı. Sıkıştırma, kodlama
 
 Son bölümde algoritma kavramına girildi. Algoritma; sıralı, belirsizlik içermeyen, uygulanabilir ve sonlanan adımlar kümesidir. Bir problemin birden fazla algoritması olabilir ve ilk hedef doğru çalışan bir çözümdür. Derste akış diyagramı sembolleri, işlemler, atama ile karşılaştırma ayrımı ve iki örnek görüldü. Bundan sonra önce akış diyagramı, ardından C kullanılacaktır. Bir sonraki derste, üç basamaklı bir sayının basamaklarının küpleri toplamının kendisine eşit olup olmadığını bulan algoritma çözülecektir.
 
-**Not:** İsterseniz bu kayıtları NotebookLM gibi bir araca atıp daha istifadeli hale getirebilirsiniz.
+**Not:** İsterseniz bu kayıtları Gemini Notebook gibi bir araca atıp daha istifadeli hale getirebilirsiniz.

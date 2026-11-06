@@ -133,4 +133,4 @@ Monitör kavramı detaylı açıklanır. Monitör, bir sınıf (class) benzeri y
 
 C kod örnekleri üzerinden mesaj kuyruğu ve paylaşımlı bellek kullanımı gösterilir. `mq_open`, `mq_send`, `mq_receive`, `mq_close` fonksiyonları ile message queue kullanımı; `shm_open`, `mmap`, `ftruncate` fonksiyonları ile shared memory kullanımı açıklanır.
 
-* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

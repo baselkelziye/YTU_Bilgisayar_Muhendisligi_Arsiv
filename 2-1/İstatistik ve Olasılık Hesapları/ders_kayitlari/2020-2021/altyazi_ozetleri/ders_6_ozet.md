@@ -129,4 +129,4 @@
 - Chebyshev eşitsizliği kitaplarda çoğunlukla $P(|X - \mu| \ge \varepsilon) \le \sigma^2/\varepsilon^2$ olarak verilir. "$>$" ile yazılan hâli de doğrudur, çünkü daha küçük bir olayın olasılığıdır.
 - Ders sonundaki sohbet bölümünde (yaklaşık 02:46:00 sonrası) konuşma Türkçe. Altyazı bu bölümde büyük ölçüde anlamsız ve döngülü.
 
-* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilirsiniz. Bu ders İngilizce anlatılmıştır; altyazı da İngilizcedir.
+* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilirsiniz. Bu ders İngilizce anlatılmıştır; altyazı da İngilizcedir.

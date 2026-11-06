@@ -121,4 +121,4 @@
 - **$2^n$ ile kaba kuvvet:** Kaba kuvvet her zaman üstel değildir. Sıralı arama da bir kaba kuvvet yöntemidir ve $O(n)$'dir. Şifre kırmadaki kaba kuvvet ise anahtar uzunluğuna göre üstel büyür.
 - **Altyazı hataları:** "Algoritmanizm" algoritma analizi, "Neto-Vi-i-Lot" ve "Viner search" binary search, "Gip sort" heap sort, "Mert Sort" merge sort, "Insurge Sult" insertion sort demektir.
 
-**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

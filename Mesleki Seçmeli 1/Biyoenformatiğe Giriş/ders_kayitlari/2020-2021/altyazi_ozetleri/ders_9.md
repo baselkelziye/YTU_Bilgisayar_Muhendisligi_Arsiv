@@ -38,4 +38,4 @@
 - İlk adım matrisin kurulması ve başlatılmasıdır. Başlatma biçimi seçilen hizalama türüne göre değişebilir. Daha sonra matris, belirlenen puanlama şemasına göre satır satır veya sütun sütun doldurulur.
 - Matris doldurulduktan sonra en iyi skoru veren yoldan geriye doğru izleme yapılır. Bu izleme, hangi karakterlerin eşleştiğini, nerede boşluk açıldığını ve hangi uyuşmazlıkların kabul edildiğini gösteren hizalamayı üretir.
 
-* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

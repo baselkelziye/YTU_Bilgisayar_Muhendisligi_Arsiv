@@ -81,4 +81,4 @@
 
 - **Platform Bağımsızlık ve Sürücü Seçimi:** ODBC (Open Database Connectivity) ve JDBC (Java Database Connectivity) katmanları, farklı veritabanları arasında platform bağımsızlık sağlamak için kullanılır. Her veritabanı için özel bir sürücü gerekir; bu sürücüler, uygulama programı ile veritabanı arasındaki iletişimi yönetir. Doğru sürücü seçimi, performans ve uyumluluk açısından önemlidir.
 
-* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

@@ -221,4 +221,4 @@ $$f(x,y)\approx f(a,b)+f_x(x-a)+f_y(y-b)+\frac{1}{2!}\Big[f_{xx}(x-a)^2+2f_{xy}(
 
 ---
 
-İsterseniz bu kayıtları NotebookLM gibi bir araca atıp daha istifadeli hale getirebilirsiniz.
+İsterseniz bu kayıtları Gemini Notebook gibi bir araca atıp daha istifadeli hale getirebilirsiniz.

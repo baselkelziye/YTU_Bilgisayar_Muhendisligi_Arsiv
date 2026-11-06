@@ -185,4 +185,4 @@
 - Tekrar kısmında hoca "0–28 arasında beş gözlem" ve "28–42 arasında 9 gözlem" dedi. Doğrusu 14–28 aralığında 5, 28–42 aralığında 8 gözlemdir. Verinin en büyük değeri 135 değil, 139'dur.
 - Zincir kuralı yazılırken altyazıda çarpanlar arasında "plus" geçiyor. Olabilirlik bir çarpımdır, toplam değildir.
 
-* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz. Bu ders İngilizce anlatıldığı için altyazı da İngilizcedir.
+* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz. Bu ders İngilizce anlatıldığı için altyazı da İngilizcedir.

@@ -347,4 +347,4 @@ CSG     ENDS
 - Ertesi gün (24 Ekim 2025) yüz yüze derste bu konular tahtada tekrar edilecek. `SelSort` DEBUG'da çalıştırılıp bellek değişimleri gösterilecek.
 - Bu Cuma laboratuvarla ilgili soru verilecek. Önümüzdeki haftalarda laboratuvar çalışmaları başlıyor. Kod yazıp DEBUG ile denemeye başlayın.
 
-**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

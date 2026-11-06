@@ -179,4 +179,4 @@ Geçiş yöntemleri:
 - **USİS süresi:** Derste "18 sene" dendi. 2003–2021 arası 18, 2003–2022 arası 19 yıldır. Hocanın "19 senenin 16'sı bakım" hesabı ikinci aralığa uyar.
 - **Kalite faktörü listesi:** Sayılan 11 faktör McCall'un kalite modelindeki faktörlerle örtüşür. "Güvenlik" faktörü McCall modelinde "bütünlük" (integrity) olarak geçer.
 
-**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

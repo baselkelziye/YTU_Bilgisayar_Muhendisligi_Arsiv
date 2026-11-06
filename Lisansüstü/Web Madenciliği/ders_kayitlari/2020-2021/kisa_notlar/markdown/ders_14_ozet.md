@@ -253,4 +253,4 @@ Sunucu/uygulama günlükleri + site içeriği
 - Altyazıda uygulama sunucusu "ISS" diye geçer. Doğrusu büyük olasılıkla Microsoft IIS.
 - Ders girişinde hoca link analizine "geçtiğimiz hafta başlamıştık" der. Önceki kayıtlarda konu iki derse yayılmıştır: sosyal ağ ölçüleri 15 Aralık'ta, co-citation ve PageRank 29 Aralık'ta işlendi.
 
-**Not:** İsterseniz bu kayıtları NotebookLM gibi bir araca atıp daha istifadeli hale getirebilirsiniz.
+**Not:** İsterseniz bu kayıtları Gemini Notebook gibi bir araca atıp daha istifadeli hale getirebilirsiniz.

@@ -137,4 +137,4 @@ Hoca, "sıcak denizlere inmek" anlatımının basitleştirilmiş (vülgerize) ol
 
 ---
 
-İsterseniz bu özeti NotebookLM gibi bir araca atıp daha istifadeli hale getirebilirsiniz.
+İsterseniz bu özeti Gemini Notebook gibi bir araca atıp daha istifadeli hale getirebilirsiniz.

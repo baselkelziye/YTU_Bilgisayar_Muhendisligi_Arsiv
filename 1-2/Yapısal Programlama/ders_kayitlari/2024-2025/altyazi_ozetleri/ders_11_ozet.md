@@ -127,4 +127,4 @@ long long fastpow(long long x, int y) {
 - **Fibonacci indeksi:** Derste temel durumlar $F(0) = F(1) = 1$ alındı. Bu durumda dizi 1, 1, 2, 3, 5, 8 olur ve $F(4) = 5$, $F(5) = 8$'dir. Döngülü sürümün ilk hâli 5. terim için 13 verdi. Hoca bunun indeks kaymasından kaynaklandığını gördü ve kodu düzeltti. Döngülü ve özyinelemeli sürümler aynı indekslemeyle aynı sonucu vermelidir.
 - **`while (head != NULL)` ile yazdırma:** Bir öğrencinin önerisi doğrudur. Döngü koşulu `head != NULL` olursa son düğüm de döngü içinde yazdırılır, döngüden sonra ayrıca yazdırmaya gerek kalmaz. Derste ilk hâlde koşul `head->next != NULL` olduğu için son eleman ayrıca yazdırılmak zorunda kalmıştı.
 
-* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

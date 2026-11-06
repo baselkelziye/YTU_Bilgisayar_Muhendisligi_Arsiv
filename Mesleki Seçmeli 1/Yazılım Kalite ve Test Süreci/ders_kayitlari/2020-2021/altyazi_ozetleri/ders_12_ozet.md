@@ -483,4 +483,4 @@ Süreci ölç -> Süreci analiz et -> Gerekirse süreci değiştir -> (tekrar ö
 - İnceleme hızlarındaki "40 adam-saat" Sommerville'de yaklaşık 500 satırlık kodun incelenmesi için verilen iş gücüdür.
 - Altyazıda "Summerville" diye geçen Sommerville, "MacCol" ve "Makkol" diye geçen McCall, "Ecolons Partitioning" diye geçen equivalence partitioning, "Yuz kez" diye geçen use case, "data seconds diagramı" diye geçen sequence diyagramıdır.
 
-**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

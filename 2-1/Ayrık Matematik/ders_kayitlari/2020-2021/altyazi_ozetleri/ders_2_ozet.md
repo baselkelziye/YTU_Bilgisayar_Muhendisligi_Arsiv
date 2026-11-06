@@ -221,4 +221,4 @@ Bu ifadenin tam tablosu: $(p,q) = (0,0)$ için 1, diğer üç satır için 0.
 - **Doğrulama.** Denklikler, roller coaster tablosu, totoloji tablosu, $n^3 - n$, toplam formülleri ve karşı örnekler Python ile kontrol edildi.
 - **Altyazı hataları:** "Bağınlı" Banu Diri, "aksiyon" aksiyom, "Champaign hot and muddy" slaytta "hot and muggy"dir.
 
-**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

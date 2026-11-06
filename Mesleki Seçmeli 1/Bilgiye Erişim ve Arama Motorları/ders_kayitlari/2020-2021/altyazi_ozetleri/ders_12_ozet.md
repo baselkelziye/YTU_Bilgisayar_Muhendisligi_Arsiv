@@ -224,4 +224,4 @@ $$a=L^{T}L\,a,\qquad h=L\,L^{T}h$$
 - **Zaman sezgisinde "en az 3 sayfa":** Hoca 30 dakika ve sayfa başına 10 dakika sınırından "en az 3 sayfa" sonucunu çıkarmaya çalıştı, sonra düzeltti. İki sınır birbirinden bağımsızdır. Sayfa sayısı için bir alt sınır yoktur.
 - **Kaynak:** Bölüm numaraları Bing Liu'nun *Web Data Mining* kitabıyla uyumludur. 12. bölüm (Web Usage Mining) Bamshad Mobasher tarafından yazılmıştır.
 
-**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

@@ -256,4 +256,4 @@ for k = 1 to n
 - **Boş bağıntı:** Boş bağıntı yansımasız, simetrik, ters simetrik ve geçişlidir (koşullar boş yere sağlanır). Boş olmayan bir kümede yansımalı değildir.
 - Derste kullanılan bütün bağıntı örneklerinin özellikleri, $R^2$/$R^3$ ve Warshall ara matrisleri Python ile tek tek kontrol edildi. Yukarıdaki tablolar bu kontrolün sonucudur.
 
-**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

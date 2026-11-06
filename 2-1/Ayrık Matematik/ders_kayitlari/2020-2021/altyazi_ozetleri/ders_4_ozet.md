@@ -272,4 +272,4 @@ Onaltılık toplama: $23A_{16} + 8F_{16}$:
 - Sekizlik taban yalnız fen alanlarında kullanılmaz. Örneğin Unix dosya izinleri (`chmod 755`) sekizlik yazılır.
 - İçerme-dışarma sorusu (13 öğrenci), toplam/çarpım soruları (1, 60, 48), taban dönüşümleri ve onaltılık toplama ($2C9_{16}$) Python ile doğrulandı. Kuvvet kümesi kodu çalıştırılıp çıktısı kontrol edildi.
 
-**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

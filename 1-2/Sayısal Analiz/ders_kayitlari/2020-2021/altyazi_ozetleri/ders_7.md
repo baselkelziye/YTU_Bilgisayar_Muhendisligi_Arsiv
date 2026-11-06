@@ -38,4 +38,4 @@ Cholesky öncesinde LU ayrıştırması tekrar edildi. Gauss eliminasyonu kullan
 
 Sınav hazırlığı konusunda detaylı bilgi verildi. Sınav klasik usulde, 4-5 soru ile yapılacaktır. Çözümlerin okunabilir olması ve PDF olarak taranması zorunludur. Online sistem dışında mail ile gönderilen dosyalar kabul edilmeyecektir. Sınav sonrası yükleme listesi ilan edilecek; listede adı olmayanlar kanıtla birlikte mail atmalıdır.
 
-* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

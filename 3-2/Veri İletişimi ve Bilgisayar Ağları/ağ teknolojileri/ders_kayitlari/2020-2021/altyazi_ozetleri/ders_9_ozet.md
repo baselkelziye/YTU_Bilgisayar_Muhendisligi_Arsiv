@@ -95,4 +95,4 @@ Connection establishment, güvenilir bir bağlantının kurulması sürecidir. E
 
 Hoca, gecikmiş paketler için pratik bir sınır koyma gerekliliğini vurgular. Network'te bir paketin en fazla ne kadar gecikebileceğini bilemeyiz; bu nedenle bir üst sınır (timeout) belirlenir. Bu süreyi aşan paket "kayıp" sayılır ve yeniden gönderilir. Bu, basit ama etkili bir yaklaşımdır; gerçek dünyada da benzer şekilde çalışır (örn. bir mektup uzun süre gelmezse, karşı taraf "gelmemiş" sayar).
 
-* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

@@ -135,4 +135,4 @@
 - Risk değerlendirmesi en geç şu sürelerde yenilenir: çok tehlikeli 2 yıl, tehlikeli 4 yıl, az tehlikeli 6 yıl (Ders 11'de anlatıldı).
 - Altyazıdaki "isterlendirmesi", "izlerlendirmesi" ifadeleri "risk değerlendirmesi" demektir.
 
-* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

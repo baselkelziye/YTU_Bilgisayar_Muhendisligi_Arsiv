@@ -96,4 +96,4 @@ Jitter yönetimi, gerçek zamanlı uygulamaların en önemli sorunlarından biri
 
 TCP, transport katmanının en karmaşık ve en yaygın protokolüdür. Connection-oriented yapısı, sliding window ile akış kontrolü, retransmission ile güvenilirlik sağlar. Uygulamalar, TCP üzerinden güvenli bir byte stream olarak iletişim kurar. TCP, network katmanının güvenilmezliğini tamamen soyutlar; uygulama, paket kaybı, sırasız gelme gibi sorunlarla uğraşmak zorunda kalmaz.
 
-* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

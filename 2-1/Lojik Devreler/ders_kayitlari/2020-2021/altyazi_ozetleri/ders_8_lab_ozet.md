@@ -31,4 +31,4 @@
 - Karnaugh haritası iki biçimi de sadeleştirmek için kullanılabilir. `1`lerin gruplandırılması çarpımlar toplamı biçiminde sade terimler verirken, `0`ların gruplandırılması toplamlar çarpımı biçiminde sade çarpanlar verir.
 - Devre kurulumunda seçilen sade biçime uygun kapı yapısı tercih edilir. SOP genellikle AND-OR veya NAND-NAND, POS ise OR-AND veya NOR-NOR yapısına uygundur.
 
-* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

@@ -593,4 +593,4 @@ Bu derste dönem boyunca işlenen proje yönetimi konuları dokuz farklı projed
 
 Hocanın sorularının ortak noktası takiptir: planlanan ile gerçekleşenin kilometre taşlarında karşılaştırılması ve risklerin etki ile olasılığa göre ayıklanması. Hoca ayrıca derste anlaşılamayan yerlerin, daha anlaşılır örnekler içerdiğini söylediği tavsiye kitabından tamamlanabileceğini belirtti.
 
-**Not:** İsterseniz bu kayıtları NotebookLM gibi bir araca atıp daha istifadeli hale getirebilirsiniz.
+**Not:** İsterseniz bu kayıtları Gemini Notebook gibi bir araca atıp daha istifadeli hale getirebilirsiniz.

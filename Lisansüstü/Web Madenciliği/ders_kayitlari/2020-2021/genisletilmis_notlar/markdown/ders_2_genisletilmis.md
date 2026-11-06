@@ -442,4 +442,4 @@ Bu derste çalışılacak veri tanındı. Web'in tarihi, papyon yapısı ve eri�
 
 Hocaya göre bu slayt seti, derste işlenecek konuların önemli bir kısmının özetidir. Gelecek hafta kitabın 2. bölümü işlenecek: birliktelik kuralları (association rules) ve sıralı örüntüler (sequential patterns). Bunlar, web madenciliğinde yaygın kullanılan, veriden birliktelik kuralı ve sıralı kural çıkarma teknikleridir. Hangi algoritmaların ve veri kümelerinin kullanıldığı ayrıntılı konuşulacak. Sonra kitabın bölümleri aynı sırayla izlenecek. Hocanın hedefi, dönem sonunda fikir madenciliği (opinion mining) ve duygu analizine (sentiment analysis) kadar gelmektir.
 
-**Not:** İsterseniz bu kayıtları NotebookLM gibi bir araca atıp daha istifadeli hale getirebilirsiniz.
+**Not:** İsterseniz bu kayıtları Gemini Notebook gibi bir araca atıp daha istifadeli hale getirebilirsiniz.

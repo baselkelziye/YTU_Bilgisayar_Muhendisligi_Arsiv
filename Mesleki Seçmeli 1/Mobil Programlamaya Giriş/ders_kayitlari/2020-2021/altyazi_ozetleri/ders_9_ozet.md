@@ -137,4 +137,4 @@ Dosya okuma/yazma işlemleri kod üzerinden açıklanmıştır. getFileStream fi
 
 Cache kullanımı detaylı olarak ele alınmıştır. Cache dizini sonradan silinmesi sorun yaratmayacak, kalıcı olması gerekmeyen dosyalar için uygundur. İnternetten indirilen yüksek boyutlu dosyalar işlendikten sonra cache'de tutulabilir. İşletim sistemi bellek yetersiz kaldığında cache dizinlerini otomatik temizler (garbage collector kadar sık değildir, belli bir oranı doldurmuş olmanız gerekir). Normal dizinlerde tek tek dosya kontrolü gerekir, cache'de toplu silme yapılabilir. Bu, pil ömrü için avantaj sağlar.
 
-* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

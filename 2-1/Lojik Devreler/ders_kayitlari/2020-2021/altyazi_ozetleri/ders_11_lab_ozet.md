@@ -24,4 +24,4 @@
 - Bu laboratuvar içeriği, sayaç devresinin pratikte nasıl doğrulanacağını öne çıkarır. Öğrenci yalnızca devreyi kurmakla kalmaz, saat darbeleri sonucunda oluşan durumları da izler.
 - Reset ve başlangıç koşulu, sayaçların doğru döngüden başlaması için önemlidir. Yanlış reset bağlantısı sayaç dizisinin beklenmeyen bir durumdan başlamasına veya geçersiz durumda kalmasına neden olabilir.
 
-* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

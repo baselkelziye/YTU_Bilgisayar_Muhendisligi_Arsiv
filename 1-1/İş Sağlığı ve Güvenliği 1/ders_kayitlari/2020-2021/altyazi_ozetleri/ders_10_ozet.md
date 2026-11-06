@@ -151,4 +151,4 @@
 - **İstatistiklerdeki sıçrama:** 2013'ten önce yıllık bildirilen iş kazası sayısı 60-80 bin civarındaydı. 2013'ten itibaren bildirim sistemi değişti ve iş göremezlik gerektirmeyen kazalar da kayda girmeye başladı. Bu yüzden sayılar 190 binin üzerine çıktı. Bu artış kazaların aniden çoğaldığı anlamına gelmez. Meslek hastalığı sayısının düşüklüğü de tanı ve bildirim eksikliğini gösterir.
 - **"1802'de kurulan kimya şirketi":** Sunumdaki örnek büyük olasılıkla DuPont'tur. Şirket 1802'de barut üreticisi olarak kuruldu. Güvenlik kültürüyle bilinir.
 
-* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

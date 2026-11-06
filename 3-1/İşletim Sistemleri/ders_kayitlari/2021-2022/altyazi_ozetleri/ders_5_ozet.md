@@ -350,4 +350,4 @@ Laboratuvar planlaması bir iki hafta içinde yapılacak. Uygulamaların 5. veya
 - **`read` ve dosya tanımlayıcısı:** Hocanın da vurguladığı gibi `read` bir `FILE *` değil, tam sayı bir dosya tanımlayıcısı alır. `FILE *` alan karşılık fonksiyon `fread`'dir.
 - **Altyazı hataları:** "interroft/interhub/InterRap" interrupt, "COSIX" POSIX, "OSX tarafından" POSIX standardı, "Ayo" G/Ç (I/O), "Pink" ping demektir.
 
-**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

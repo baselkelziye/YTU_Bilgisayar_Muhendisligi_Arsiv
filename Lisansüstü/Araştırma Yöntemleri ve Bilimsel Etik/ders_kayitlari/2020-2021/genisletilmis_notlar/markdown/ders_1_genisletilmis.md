@@ -166,4 +166,4 @@ Bu ders, araştırma yöntemleri ve bilimsel etik konularının genel haritasın
 
 Konuların sırası bir araştırmanın silsilesini izliyor: Fikir ve tarama, projelendirme ve destek başvurusu, işin yapılması, bilimsel çıktının yazılması, yayın yerinin seçilmesi, değerlendirme süreci ve sunum. Bu derste en çok üzerinde durulan nokta, bir destek başvurusunda belirleyici olanın öznel beğeni değil, gerçek bir Ar-Ge niteliği ve formun istenen biçimde doldurulması olduğudur. Sonraki derslerde bu başlıklar sırayla işlenmeye başlanıyor.
 
-**Not:** İsterseniz bu kayıtları NotebookLM gibi bir araca atıp daha istifadeli hale getirebilirsiniz.
+**Not:** İsterseniz bu kayıtları Gemini Notebook gibi bir araca atıp daha istifadeli hale getirebilirsiniz.

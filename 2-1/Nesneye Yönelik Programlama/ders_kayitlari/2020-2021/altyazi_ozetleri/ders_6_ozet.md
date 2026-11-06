@@ -248,4 +248,4 @@ kitaplik.tumRaflariGoster();
 - **Yazım farkı:** Koddaki metot adları UML ile tam aynı değil (`rafGoster(int)` - UML'de `gosterRaf(int)`; `KitapSilSiraNo` büyük harfle başlıyor). Laboratuvarda UML'deki adları birebir kullanın. Metot adları küçük harfle başlar (camelCase).
 - Kod Java 25 ile derlenip çalıştırıldı; ekleme, silme ve arama beklenen sonucu verdi.
 
-**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

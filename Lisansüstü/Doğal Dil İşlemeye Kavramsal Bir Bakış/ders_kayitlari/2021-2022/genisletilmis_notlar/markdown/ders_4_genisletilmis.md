@@ -539,4 +539,4 @@ Dersin altı sunumu duygu analizi ve metin işleme etrafında toplanır. İlk ü
 
 Hocanın sorularından çıkan ortak ders şudur: Bir makale okunurken amacı, yayın yeri, yazarları, veri setinin kökeni ve küçük veri gibi zayıf noktaları sorgulanmalıdır. Son bölümde bu sorgulama yayın sürecine bağlanır: Dergi seçimi, hakem süreci ve fikrin önceliğini korumak.
 
-**Not:** İsterseniz bu kayıtları NotebookLM gibi bir araca atıp daha istifadeli hale getirebilirsiniz.
+**Not:** İsterseniz bu kayıtları Gemini Notebook gibi bir araca atıp daha istifadeli hale getirebilirsiniz.

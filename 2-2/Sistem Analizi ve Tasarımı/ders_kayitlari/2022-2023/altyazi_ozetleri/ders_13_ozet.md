@@ -135,4 +135,4 @@ Bu derste son altı grubun dönem projesi sunumları yapıldı. Hoca sunumlar s�
 - Altyazıdaki "KBKK" 6698 sayılı Kişisel Verilerin Korunması Kanunu'dur (KVKK).
 - G grubunun maliyeti altyazıda tam anlaşılmıyor. İki bilgisayar (2×2750 dolar) ve yazılım (11 000 dolar) toplamı 16 500 dolar eder. Açıklanan toplam 17 234 dolar. Aradaki 734 dolarlık fark büyük ihtimalle MongoDB Atlas'ın yıllık ücretidir, ama aylık tutar kayıtta net duyulmuyor.
 
-**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi daha verimli çalışabilirsiniz.
+**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi daha verimli çalışabilirsiniz.

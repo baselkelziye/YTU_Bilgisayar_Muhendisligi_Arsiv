@@ -354,4 +354,4 @@
   - MAX 9'da 2024'teki sorun yazılım değil, gövdedeki kapı tıpasının kopmasıydı.
 - **ABD elektrik kesintisi:** Hocanın andığı olay büyük olasılıkla 2003 Kuzeydoğu Amerika kesintisidir. Bir alarm yazılımındaki yarış durumu (race condition) hatası olayın büyümesine katkı yaptı.
 
-**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

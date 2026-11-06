@@ -178,4 +178,4 @@
 - **Örnek 3:** $y=kx$ boyunca sonuç $k$'ya bağlı değil, 0 çıkar. Bu, limitin var olduğunu göstermez. Limitin yokluğunu $y=kx^2$ yolu gösterir.
 - **Karışık türev:** Hoca teoremi "sürekliyse eşittir, yoksa değildir" diye özetledi. Doğru ifade: süreklilik eşitlik için yeterli koşuldur. Süreklilik yoksa eşitlik bozulabilir, ama her zaman bozulmaz.
 
-İsterseniz bu özeti NotebookLM gibi bir araca atıp daha istifadeli hale getirebilirsiniz.
+İsterseniz bu özeti Gemini Notebook gibi bir araca atıp daha istifadeli hale getirebilirsiniz.

@@ -95,4 +95,4 @@ Readback command ile status okunduğunda 8-bitlik bir veri elde edilir: D0 = OUT
 **Cascade (Kademeli) Bağlantı Örneği:**
 2 MHz clock ile 1 Hz pulse üretmek istendiğinde, tek counter maksimum 65.535 sayabildiğinden 2.000.000 / 65.535 ≈ 30 Hz'den daha düşük frekans üretilemez. Bu nedenle iki counter kullanılır: Counter 0'a 2000 yüklenirse, her 2000 sayım sonrası bir pulse üretir (2 MHz / 2000 = 1 kHz). Bu pulse Counter 1'in clock girişi olarak bağlanırsa ve Counter 1'e de 1000 yüklenirse, Counter 1 her 1000 pulse'da bir çıkış üretir (1 kHz / 1000 = 1 Hz). Bu yöntemle istenilen düşük frekans elde edilir.
 
-* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

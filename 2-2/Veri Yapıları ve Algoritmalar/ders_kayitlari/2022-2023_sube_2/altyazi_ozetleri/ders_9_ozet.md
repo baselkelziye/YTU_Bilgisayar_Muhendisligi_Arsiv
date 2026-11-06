@@ -215,4 +215,4 @@ int dequeue(int *x) {
 - **Dairesel kuyrukta doluluk:** İki koşul tek ifadeyle de yazılabilir: `(rear + 1) % SIZE == front`.
 - **Bağlı listeyi ters çevirme:** Derste "previous" ve "next" sözcükleri karışık kullanıldı. Tek yönlü listede standart yöntem üç işaretçi (`prev`, `cur`, `next`) ile her düğümün `next` alanını bir öncekine çevirmektir.
 
-**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

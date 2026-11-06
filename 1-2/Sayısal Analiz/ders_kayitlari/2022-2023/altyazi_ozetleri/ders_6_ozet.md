@@ -100,4 +100,4 @@
 - **Ödevin cevabı (kontrol için, önce kendiniz çözün):** 3/8 kuralının $n = 2$ hâliyle aynı noktaları ($h = 1$, $x = 0, 1, \ldots, 6$) kullanırsak trapez 1.0769, Simpson 1/3 ($n = 6$) 1.0605 verir. Gerçek değer 1.1092'dir. Bu örnekte az sayıda nokta ile trapez, Simpson'dan daha yakın çıkmıştır. "Simpson her zaman daha iyidir" kuralı $h$ yeterince küçükken geçerlidir. Fonksiyon kaba bir ızgarada iyi temsil edilemiyorsa bu sıralama bozulabilir.
 - **3/8 kuralında "n":** Slayttaki $n$, 3/8 kuralının kaç kez uygulandığını (alt aralık sayısını) gösterir. Her alt aralık kendi içinde 3 parçaya bölünür. Yani $n = 2$ için toplam 6 parça, 7 nokta kullanılır. Simpson 1/3'teki $n$ ise doğrudan parça sayısıdır.
 
-* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

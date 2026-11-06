@@ -291,4 +291,4 @@ plt.show()
 - Hız sabitleyici örneğinde "aslında türev alıyoruz" dendi. Şekildeki yapı hata ile orantılı (oransal, P) bir denetleyicidir.
 - Kayıtta quiz sorusunun 1000 Hz örnekleme şıkkı tam okunamıyor. Doğru ayrık ifade $x[n]=100\sin(\pi n/2+\pi/2)$'dir.
 
-**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi daha verimli çalışabilirsiniz.
+**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi daha verimli çalışabilirsiniz.

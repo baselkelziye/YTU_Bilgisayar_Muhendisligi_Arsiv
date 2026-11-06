@@ -177,4 +177,4 @@ Bazen belirsizlik giderilemez. Bu dillere doğası gereği belirsiz denir.
 - Altyazıda "$F$ can be $E$ or $A$" diye geçen kural $F \to (E) \mid a$'dır.
 - C'de sarkan else, en yakın eşleşmemiş if'e bağlanır. Belirsizlik bu dil kuralıyla çözülür.
 
-**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz. Ders İngilizce anlatılmıştır; altyazı da büyük ölçüde İngilizcedir.
+**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz. Ders İngilizce anlatılmıştır; altyazı da büyük ölçüde İngilizcedir.

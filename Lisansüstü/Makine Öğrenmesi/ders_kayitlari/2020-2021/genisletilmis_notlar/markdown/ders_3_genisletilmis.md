@@ -520,4 +520,4 @@ Dersin ilk kısmında karar ağaçlarındaki aşırı öğrenmeye karşı kullan
 
 > **Ders sonrası not:** Altyazıda "Nayibayez", "Mayıs sınıflandırıcısı" gibi geçen yöntem Naive Bayes'tir; "Hidden Markov model" Saklı Markov Modeli'dir.
 
-**Not:** İsterseniz bu kayıtları NotebookLM gibi bir araca atıp daha istifadeli hale getirebilirsiniz.
+**Not:** İsterseniz bu kayıtları Gemini Notebook gibi bir araca atıp daha istifadeli hale getirebilirsiniz.

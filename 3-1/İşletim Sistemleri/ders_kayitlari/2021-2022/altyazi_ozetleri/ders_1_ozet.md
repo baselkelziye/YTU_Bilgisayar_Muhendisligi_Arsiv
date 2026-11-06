@@ -253,4 +253,4 @@ Bağımsız sistemler (düğümler, node) birbirine bağlanarak bir küme (clust
 - **Kitap adları:** Altyazıdaki "Şilber Şats", "Shivershots" Silberschatz demektir. Stallings'in kitabının tam adı *Operating Systems: Internals and Design Principles*.
 - **Altyazı hataları:** "Donalım" donanım, "Trinter" printer, "Havuk" Harvard, "InterRap/interrap" interrupt, "XRStM" bilgisayar sistemi demektir.
 
-**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

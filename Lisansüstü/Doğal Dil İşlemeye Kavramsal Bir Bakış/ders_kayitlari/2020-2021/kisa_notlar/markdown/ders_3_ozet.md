@@ -433,4 +433,4 @@ Aux  : does, is, are, do ...
 - Altyazıda sözcük birim için "LSTM olarak da geçer" yazıyor. Bu büyük ihtimalle "lexeme" kelimesinin yanlış yazımıdır. LSTM bir sinir ağı modelidir.
 - Altyazıda dil bilimcinin adı "Narmu Shomsky" olarak geçiyor. Doğrusu Noam Chomsky.
 
-İsterseniz bu kayıtları NotebookLM gibi bir araca atıp daha istifadeli hale getirebilirsiniz.
+İsterseniz bu kayıtları Gemini Notebook gibi bir araca atıp daha istifadeli hale getirebilirsiniz.

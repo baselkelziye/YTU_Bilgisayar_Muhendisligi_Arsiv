@@ -150,4 +150,4 @@ Tarih: 21 Mayıs 2026 Perşembe. Kurban Bayramı öncesi online yapılan ders. S
 - Ödev 2'de RLHF benzeri cevap sıralama ve gömme yöntemleri kullanılmıştı.
 - Fatih Amasyalı'nın grubunun dil modellerini kodlarıyla anlatan bir video serisi ve ileri RAG teknikleri kaynakları paylaşılacak.
 
-**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

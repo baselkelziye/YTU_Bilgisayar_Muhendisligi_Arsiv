@@ -143,4 +143,4 @@
 - Bootstrap yöntemi için altyazıda "chapter 10.33" geçiyor. Bölüm numarası tanıma hatası olabilir; kitabın içindekilerinden kontrol edin.
 - 00:18:04–00:20:48, 02:12:44–02:16:29 ve 02:18:20–02:25:28 arasındaki Türkçe konuşmalar İngilizce modunda bozuk çevrildi; bu kısımlarda uzun döngüler var. Özette yalnızca anlaşılır kısımlar kullanıldı.
 
-* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz. Bu ders İngilizce anlatıldığı için altyazı da İngilizcedir.
+* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz. Bu ders İngilizce anlatıldığı için altyazı da İngilizcedir.

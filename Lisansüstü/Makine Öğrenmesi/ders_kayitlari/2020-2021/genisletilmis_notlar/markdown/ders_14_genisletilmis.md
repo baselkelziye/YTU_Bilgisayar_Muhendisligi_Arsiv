@@ -364,4 +364,4 @@ Bu yöntemlerin ölçek, seyreklik, soğuk başlangıç, hep aynı önerileri ya
 
 > **Ders sonrası not:** Altyazıda yanlış geçen terimlerin doğru yazımları: "Cosine Simulator" = cosine similarity; "metric spektronizasyon" / "matrix spektronizasyon" = matrix factorization; "kinesi komponent analizi" = principal component analysis (temel bileşen analizi); "K-N, R-S, Neybrut" ve "k-neurisneybrut" = k-nearest neighbor; "Orecibe Vedic" = Recep İvedik; "First Trader" = muhtemelen "first rater" (bir ürünü ilk puanlayan) sorunu; "Osman K" = optimum K; "inertiye" = inertia; "KMİS", "K-Mins" = k-means; "Anad Encoding", "Vanhat Enco Link" = one-hot encoding; "elbo" = elbow.
 
-**Not:** İsterseniz bu kayıtları NotebookLM gibi bir araca atıp daha istifadeli hale getirebilirsiniz.
+**Not:** İsterseniz bu kayıtları Gemini Notebook gibi bir araca atıp daha istifadeli hale getirebilirsiniz.

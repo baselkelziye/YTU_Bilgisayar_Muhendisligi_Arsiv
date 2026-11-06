@@ -316,4 +316,4 @@ $$C_w(n) = C_w(1) + \log_2 n = \log_2 n + 1 \Rightarrow C_w(n) = O(\log_2 n)$$
 - **Üstel zaman ve NP:** derste üstel zamanlı algoritmalar "nondeterministik polinomsal (NP) algoritmalar" olarak anıldı. Bu iki kavram aynı şey değildir. NP, çözümü polinom zamanda doğrulanabilen karar problemleri sınıfıdır. NP problemlerinin bilinen çözümleri çoğu zaman üstel zamanlıdır ama "üstel zaman" ile "NP" eş anlamlı değildir. Ayrıntısı algoritma analizi dersinde görülecek.
 - **İkili aramada `left` güncellemesi:** altyazıda "left'i mid−1 yapacaksınız" gibi duyuluyor. Ekrandaki akış diyagramında doğrusu yazılıdır: `x < a[m]` değilse `l = m + 1`.
 
-**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

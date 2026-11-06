@@ -59,4 +59,4 @@
 
 - **Dekoder Enable Koşulları:** 74HC138 gibi 3-8 dekoderlerde 3 enable pini vardır: G1 (aktif yüksek), G2A ve G2B (aktif düşük). Dekoderin çalışması için G1=1, G2A=0, G2B=0 olmalıdır. Bu koşullar sağlandıktan sonra CBA girişindeki binary değere karşılık gelen çıkış low olur.
 
-* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

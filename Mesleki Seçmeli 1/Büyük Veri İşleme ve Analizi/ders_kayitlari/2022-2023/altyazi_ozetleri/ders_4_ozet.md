@@ -147,4 +147,4 @@ her satır r için:
 - **Aday olma koşulu.** Hoca bir yerde "bantların %80'inden fazlası aynı kovaya düşerse aday" dedi. Standart LSH'de en az bir bantta aynı kovaya düşmek yeterlidir. Hata hesabındaki "20 bandın hiçbirinde" ifadesi de bu standart tanıma dayanır. 0.8 değeri bant oranı değil, benzerlik eşiğidir.
 - **Hash fonksiyonu örneği.** Tablodaki değerler hocanın derste söylediği sayılardan yeniden kuruldu. 3. satırda $h_1 = 3$, $h_2 = 7 \bmod 5 = 2$.
 
-**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

@@ -146,4 +146,4 @@
 - **Elektron yükü:** Elektronun yükü $-1.602 \times 10^{-19}$ C'dir. Derste büyüklüğü $1.6 \times 10^{-19}$ olarak kullanıldı. İşaret, elektronların akım yönünün tersine hareket etmesinin nedenidir.
 - **Altyazıdaki hatalar:** Altyazıda "AC süreklisini zoidal hal" ifadesi "AC sürekli sinüzoidal hâl", "süper düğün" ifadesi "süper düğüm", "grant" ifadesi "ground", "I-Tripleen" ifadesi "IEEE", "3-5 toplam 8 volt" ifadesi "3 artı 5, toplam 8 volt" olarak okunmalıdır.
 
-* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

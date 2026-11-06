@@ -541,4 +541,4 @@ Bu derste bir problemin çözümü üç aşamada izlendi: kağıt üzerinde dü�
 
 İkinci kısımda iki boyutlu diziler, yani matrisler tanıtıldı ve satır satır saklandıkları gösterildi. Kolon toplamları sorusu, dış döngüde sütunlar, iç döngüde satırlar dönerek çözüldü. Simetri sorusu ise köşegenin üstüne bakmanın yettiğini ve `flag` ile erken çıkışı gösterdi. Hoca, bundan sonraki süreçte matrislerle ilgili başka sorular çözüleceğini ve artık program yazılabilecek noktaya gelindiğini söyledi. Dinamik bellek ayırma da ileride görülecektir.
 
-**Not:** İsterseniz bu kayıtları NotebookLM gibi bir araca atıp daha istifadeli hale getirebilirsiniz.
+**Not:** İsterseniz bu kayıtları Gemini Notebook gibi bir araca atıp daha istifadeli hale getirebilirsiniz.

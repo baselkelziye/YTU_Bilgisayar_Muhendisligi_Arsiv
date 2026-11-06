@@ -426,4 +426,4 @@ Bu derste önce üçgen türü problemi üzerinden karşılaştırmaların ikili
 
 Hoca sonraki derste for ve while ile örnek problemlere devam edileceğini söyledi. Ardından karakterlerle ilgili işler yapılacak ve string konusu konuşulacak, sonra dizilere geçilecek. Dizilerden sonra C programlama diliyle ilgili temel bilgiler verilmeye başlanacak.
 
-**Not:** İsterseniz bu kayıtları NotebookLM gibi bir araca atıp daha istifadeli hale getirebilirsiniz.
+**Not:** İsterseniz bu kayıtları Gemini Notebook gibi bir araca atıp daha istifadeli hale getirebilirsiniz.

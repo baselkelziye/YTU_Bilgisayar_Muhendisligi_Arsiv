@@ -29,4 +29,4 @@
 - Mevcut durumdan sonraki duruma geçiş için seçilen flip-flopun hangi girişlere ihtiyaç duyduğu belirlenir. Bu giriş fonksiyonları Karnaugh haritalarıyla sadeleştirilerek daha az kapılı devre elde edilir.
 - Simülasyon aşamasında devreye saat darbeleri verilir ve çıkışların istenen sırayı takip edip etmediği kontrol edilir. Bu test, teorik tablo ile pratik devreyi karşılaştırır.
 
-* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

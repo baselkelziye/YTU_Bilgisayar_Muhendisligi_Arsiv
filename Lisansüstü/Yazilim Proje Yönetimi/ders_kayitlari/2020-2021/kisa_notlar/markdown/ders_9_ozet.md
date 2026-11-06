@@ -143,4 +143,4 @@
 - 2. sunumda Yol 1'in ortalaması yaklaşık 144-146 gün olarak verildi. Simülasyonun beklenen süresi ise 174 gün olarak söylendi. Bu iki değer altyazıdaki hâliyle tutarlı görünmüyor; 174 gün kötümser değere (176) çok yakın. Kesin değerler makaledeki tablodan kontrol edilmeli.
 - Sunumda "rastgele sayılar yerine yüksek benzerliğe sahip sözde rastgele sayılar" deniyor. Bilgisayarda üretilen rastgele sayılar zaten sözde rastgeledir; bu bir seçenek değil, olağan durumdur.
 
-**Not:** İsterseniz bu kayıtları NotebookLM gibi bir araca atıp daha istifadeli hale getirebilirsiniz.
+**Not:** İsterseniz bu kayıtları Gemini Notebook gibi bir araca atıp daha istifadeli hale getirebilirsiniz.

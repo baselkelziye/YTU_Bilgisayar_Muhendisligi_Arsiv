@@ -37,4 +37,4 @@
 - Biyoenformatik verileri, genom konumları, hizalama sonuçları, gen ifade matrisleri, protein yapıları ve ağ ilişkileri gibi farklı biçimlerde olabilir. Bu verilerin her biri için uygun görsel temsil seçmek gerekir.
 - İnsan algısı görsel bilgiyi güçlü biçimde işlediği için grafik arayüzler ve etkileşimli sistemler bilgi aktarımında önemli rol oynar. Özellikle kullanıcıların büyük veri kümelerinde gezinebilmesi için filtreleme, yakınlaştırma ve seçme gibi etkileşim özellikleri gerekir.
 
-* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

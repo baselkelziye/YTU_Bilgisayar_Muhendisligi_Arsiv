@@ -26,4 +26,4 @@ Dersler 11 Mart 2021 Perşembe günü başlamıştır. Ders haftada bir gün (Pe
 
 - 13 Mayıs 2021 haftası için kayıt yoktur; hoca 6 Mayıs dersinde bu haftanın bayram nedeniyle ders olmayacağını duyurmuştur.
 
-**Not:** İsterseniz bu kayıtları NotebookLM gibi bir araca atıp daha istifadeli hale getirebilirsiniz.
+**Not:** İsterseniz bu kayıtları Gemini Notebook gibi bir araca atıp daha istifadeli hale getirebilirsiniz.

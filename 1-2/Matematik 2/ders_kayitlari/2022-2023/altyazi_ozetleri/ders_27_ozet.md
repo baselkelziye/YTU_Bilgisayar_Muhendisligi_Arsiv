@@ -159,4 +159,4 @@ Tarih: 29 Mayıs 2023 (Pazartesi). Dönemin sondan bir önceki dersi. Final haz�
 - Hoca derse paralel bir workshop'un açılışını yapacağı için ders biraz erken bitti.
 - Ertesi gün (30 Mayıs) saat 11.00'de yeni sorularla devam edilecek.
 
-İsterseniz bu kayıtları NotebookLM gibi bir araca atıp daha istifadeli hale getirebilirsiniz.
+İsterseniz bu kayıtları Gemini Notebook gibi bir araca atıp daha istifadeli hale getirebilirsiniz.

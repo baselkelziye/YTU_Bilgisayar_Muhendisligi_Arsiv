@@ -111,4 +111,4 @@ Departman ve employee tabloları arasındaki ilişkide, departman numarası gün
 
 Birden fazla DML komutu (INSERT, UPDATE, DELETE) ile tetiklenen bir trigger fonksiyonunda, hangi işlemin gerçekleştiği TG_OP kontrolü ile anlaşılır. DELETE işleminde old.saları ile silinen maaş toplamdan çıkarılır; INSERT işleminde new.saları toplama eklenir; UPDATE işleminde ise hem old.saları çıkarılıp hem new.saları eklenerek güncelleme yapılır. Bu sayede tek bir trigger fonksiyonu ile birden fazla işlem türü yönetilebilir.
 
-* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

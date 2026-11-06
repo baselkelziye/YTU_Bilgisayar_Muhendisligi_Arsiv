@@ -587,4 +587,4 @@ Bu derste gözetimsiz öğrenmenin web verisine nasıl uygulandığı görüldü
 
 Hocanın dersin başından sonuna tekrarladığı mesaj şudur: Tek bir doğru algoritma yoktur. Farklı kategorilerden algoritmalar farklı uzaklık fonksiyonlarıyla denenmeli, sonuçlar etiket varsa entropi ve saflıkla, yoksa küme içi yakınlık ve kümeler arası ayrıklıkla karşılaştırılmalıdır. Gelecek hafta web içerik madenciliğine (web content mining), bilgi erişimi (information retrieval) bölümüyle başlanacak, tarayıcılardan (crawler) da bahsedilecektir. Kosinüs benzerliği orada çok kullanılacaktır.
 
-**Not:** İsterseniz bu kayıtları NotebookLM gibi bir araca atıp daha istifadeli hale getirebilirsiniz.
+**Not:** İsterseniz bu kayıtları Gemini Notebook gibi bir araca atıp daha istifadeli hale getirebilirsiniz.

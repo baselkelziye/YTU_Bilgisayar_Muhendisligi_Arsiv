@@ -351,4 +351,4 @@ Bu derste üç sıralama algoritması konuşuldu. Bubble sort, yan yana elemanla
 
 Insertion sort'un yalnızca mantığı anlatıldı: Her eleman, kağıt dizer gibi olması gereken pozisyona yerleştirilir. Algoritmayı kendi başınıza kurmaya çalışmanız isteniyor. İyileştirilmiş bubble sort ve insertion sort'un çözümüne bir sonraki derste bakılacak, sonra yeni konuya geçilecektir.
 
-**Not:** İsterseniz bu kayıtları NotebookLM gibi bir araca atıp daha istifadeli hale getirebilirsiniz.
+**Not:** İsterseniz bu kayıtları Gemini Notebook gibi bir araca atıp daha istifadeli hale getirebilirsiniz.

@@ -140,4 +140,4 @@ Derste Ctrl+C'ye basıldığında program durmadı, yalnız işleyicinin mesajı
 - FIFO'yu sunucu oluşturuyorsa istemci önce çalıştırılmamalıdır. FIFO dosyası yokken `open` hata verir. Derste bir öğrenci bunu fark etti.
 - FIFO dosyası `mkfifo`'ya verilen yolda oluşur. Derste `/tmp` altında oluşması örnek kodda o yolun seçilmesinden kaynaklanır.
 
-**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

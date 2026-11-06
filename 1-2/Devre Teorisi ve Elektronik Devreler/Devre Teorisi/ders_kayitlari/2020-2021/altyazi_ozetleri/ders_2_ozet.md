@@ -188,4 +188,4 @@
 - **Örnek 12'deki gerilim:** Derste önce 10 A, 5 Ω'a bölündü ve $v = 10$ V bulundu. Bir öğrenci bunu fark etti. Doğrusu $v = 10 \cdot 5 = 50$ V'tur. Her 10 Ω'luk dirençten 5 A geçer.
 - **Altyazıdaki hatalar:** Altyazıda "10 kanunu" ifadesi "Ohm kanunu", "Kirşof" ifadesi "Kirchhoff", "nod" ifadesi "node (düğüm)", "10 metre" ifadesi "ohmmetre" olarak okunmalıdır. Hocanın "fasulye elemanı" dediği şey, slaytlarda türü belirtilmeyen genel bir devre elemanını gösteren fasulye biçimli semboldür.
 
-* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

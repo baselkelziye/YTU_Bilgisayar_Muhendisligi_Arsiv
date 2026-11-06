@@ -232,4 +232,4 @@ Permütasyonlar        Girdi matrisi     İmza matrisi M
 - Altyazının bozuk olduğu yerler (00:43:47 civarı tek kelimelik bloklar, 00:48:44 civarı tekrar, 01:28:45 civarı) özetlenmedi.
 - Kalınan yer: 3. bölüm, 12. slayt, MinHashing'in gerçeklenmesi (implementation). Sonra LSH işlenecek.
 
-**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

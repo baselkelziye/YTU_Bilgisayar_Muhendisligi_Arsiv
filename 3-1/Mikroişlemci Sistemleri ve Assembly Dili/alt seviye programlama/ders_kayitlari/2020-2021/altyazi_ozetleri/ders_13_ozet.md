@@ -28,4 +28,4 @@
 
 Donanımsal kesmeler, klavye, zamanlayıcı veya disk gibi dış donanım birimlerinden gelen asenkron sinyallerdir. Bu kesmeler işlemcinin INTR (Interrupt Request) veya NMI (Non-Maskable Interrupt) pinleri üzerinden iletilir. Çoklu donanım kesmelerini ve önceliklerini yönetmek için 8259A PIC (Programmable Interrupt Controller - Programlanabilir Kesme Denetleyicisi) yongası kullanılır. CLI (Clear Interrupt Flag) komutuyla maskelenebilir kesmeler (INTR) devre dışı bırakılırken, STI (Set Interrupt Flag) komutuyla tekrar etkinleştirilir. NMI ise hayati donanım hataları için kullanılır ve maskelenemez (CLI'dan etkilenmez).
 
-* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

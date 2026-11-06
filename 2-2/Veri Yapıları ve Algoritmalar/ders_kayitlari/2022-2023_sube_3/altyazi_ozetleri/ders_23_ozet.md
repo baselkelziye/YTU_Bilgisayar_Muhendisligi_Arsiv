@@ -247,4 +247,4 @@ RELAX(u, v, w)
 - Hoca, iletişimin üniversitenin resmî kanalı (Online Yıldız) üzerinden yürümesini istiyor; ayrı bir Classroom açılmasını doğru bulmuyor.
 - Vize kodlarının okunması seçim görevleri nedeniyle gecikti. Kalan 10-15 kod 2-3 gün içinde okunacak.
 
-**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

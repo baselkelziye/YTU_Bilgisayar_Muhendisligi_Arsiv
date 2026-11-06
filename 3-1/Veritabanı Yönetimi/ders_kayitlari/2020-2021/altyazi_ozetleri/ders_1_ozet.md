@@ -103,4 +103,4 @@
 
 - **NoSQL ve esnek veri ortamları**: İlişkisel model katı kuralları olan bir modeldir — tablo yapısı, nitelikler, veri tipleri bellidir. Ancak günümüzde IoT sistemleri, sosyal medya, GPS verisi gibi ortamlarda veri çok hızlı üretilmekte, sürekli güncellenmekte ve çeşitlilik göstermektedir. Bir şehirdeki milyonlarca mobil aracın 30-60 saniyede bir ürettiği GPS verisi, kaza anında belirli bir bölgeye yoğunlaşan sorgu paternleri, uzamsal veri özellikleri — bunlar ilişkisel modelin katılığını kaldırmaz. NoSQL ("Not Only SQL") bu esnek ihtiyaçlara cevap olarak ortaya çıkmıştır: şema yok, key-value, doküman, graf tabanlı modeller söz konusudur. Ancak NoSQL SQL'i tamamen değiştirmemiştir; hâlâ ilişkisel model yaygın kullanımdadır.
 
-* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

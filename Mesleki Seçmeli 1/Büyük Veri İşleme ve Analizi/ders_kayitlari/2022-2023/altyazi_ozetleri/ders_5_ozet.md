@@ -179,4 +179,4 @@
 - **Birleştirici kümeleme örneği.** Koordinatlar hocanın derste okuduğu değerlerdir. Altyazıda ilk merkez önce "1.1" diye geçiyor; $(1, 2)$ ile $(2, 1)$'in ortalaması $(1.5, 1.5)$'tir.
 - **Kayıttaki eksikler.** Hiyerarşik kümelemenin üç sorusunun anlatıldığı kısım ve bazı Türkçe açıklamalar altyazıda bozuk. Bu kısımlar kitaptaki standart tanıma göre verildi.
 
-**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

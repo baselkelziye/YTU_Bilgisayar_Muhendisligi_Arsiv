@@ -695,4 +695,4 @@ Hoca sonraki haftalarda dilbilimin esasları, gramer ve diller, düzenli ifadele
 
 > **Ders sonrası not:** Hocanın İTÜ'deki çalışmaları sürdüren hoca için söylediği "Gülşen Hoca", İTÜ Doğal Dil İşleme grubunu yöneten Gülşen Eryiğit'tir. Hocanın tanıttığı boru hattı bu grubun "ITU Turkish NLP Pipeline" aracıdır.
 
-**Not:** İsterseniz bu kayıtları NotebookLM gibi bir araca atıp daha istifadeli hale getirebilirsiniz.
+**Not:** İsterseniz bu kayıtları Gemini Notebook gibi bir araca atıp daha istifadeli hale getirebilirsiniz.

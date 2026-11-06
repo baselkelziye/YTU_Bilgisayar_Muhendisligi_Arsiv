@@ -53,4 +53,4 @@ BSR modu özellikle Mod 1 ve Mod 2 handshake mekanizmalarında Port C'nin handsh
 **Keypad Tarama Algoritması:**
 Pull-up dirençli bir keypad'de tarama işlemi şu adımlarla yapılır: 1) Sütun portundan bir sütunu 0 yap (diğer sütunlar 1). 2) Satır portunu oku. 3) Hangi satırda 0 varsa o satır-sütun kesişimindeki tuşa basılmış demektir. 4) Bir sonraki sütuna geç ve tekrar et. Pull-down dirençli yapıda ise sütunlar 1 ile taranır ve satırlarda 1 kontrol edilir. Hangi tuşa basıldığının belirlenmesi için satır-sütun kombinasyonundan tuş indeksi hesaplanır. Bu tarama işlemi sürekli bir döngü içinde veya interrupt tabanlı olarak gerçekleştirilebilir.
 
-* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

@@ -119,4 +119,4 @@ Geliştirme yaklaşımlarını karşılaştırmak için kullanılan kriterler ho
 
 Hoca, dersin ilerleyen bölümlerinde bir cross-platform framework tasarımı için nelere dikkat edilmesi gerektiğini sormuştur. Öğrencilerden gelen cevaplar: kolay kodlanabilir programlama dili, çoklu mobil platform desteği (responsive değil, multiple platform support), zengin UI, güvenlik, düşük enerji tüketimi, native özelliklere erişim (night mode, sensör verisi, kamera) şeklinde olmuştur. Backend iletişim desteği de eklenmiştir. Frontend ve backend kavramları kısaca açıklanmıştır.
 
-* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

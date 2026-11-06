@@ -140,4 +140,4 @@ Formül slaytı kayıtta net görünmüyor. Aşağıdaki standart formüller bu 
 - **Y-Δ formülleri:** Formüller derste net okunamadığı için standart hâlleri bu özete eklendi. Kendi slaytınızdaki harf düzeniyle karşılaştırın.
 - **Düğüm analizi sayıları:** Örnek 1'in düğüm gerilimleri ve akımları slayttaki denklemlerden yeniden hesaplanarak kontrol edilmiştir.
 
-* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

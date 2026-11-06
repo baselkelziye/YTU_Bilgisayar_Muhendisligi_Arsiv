@@ -101,4 +101,4 @@
 - **`scanf("%s")` güvenliği:** `%s` boşlukta durur ve dizi boyutunu kontrol etmez. Uzun girişte dizi taşar. `char pattern[10]` için `scanf("%9s", pattern)` yazmak daha güvenlidir.
 - **Belirsiz kalan yer:** Asistanın 00:54 civarındaki anlatımı (altyazıda "üçer, üçer…" tekrarı) ses kalitesi nedeniyle anlaşılamadı. O sırada ekranda girdi ve çekirdek matrislerini okuyan iç içe döngüler yazılıyordu. Anlatımın 3×3 çekirdekle ilgili olduğu tahmin ediliyor.
 
-* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

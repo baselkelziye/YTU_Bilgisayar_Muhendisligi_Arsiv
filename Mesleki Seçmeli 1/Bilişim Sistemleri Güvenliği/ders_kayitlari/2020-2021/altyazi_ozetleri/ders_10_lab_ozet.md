@@ -28,4 +28,4 @@
 - Laboratuvar düzeyinde ağ güvenliği, paketlerin başlık ve içerik alanlarını inceleyerek anlaşılır. Kaynak/hedef IP, MAC adresi, port numarası, TCP bayrakları ve DNS cevapları saldırı türünü sınıflandırmada kullanılır.
 - Web güvenliği uygulamalarında tarayıcıdan çıkan HTTP isteği ile sunucunun veritabanına gönderdiği sorgu arasında bağlantı kurmak önemlidir. Bu ilişki kurulmadan SQL injection, CSRF veya cookie tabanlı saldırıların etkisi tam anlaşılamaz.
 
-* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

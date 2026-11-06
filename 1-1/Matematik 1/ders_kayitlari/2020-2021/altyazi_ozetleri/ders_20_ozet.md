@@ -229,4 +229,4 @@
 - 00:04:54, 01:19:41 ve 01:21:19 civarında altyazı döngüye giriyor. Bu kısımların akışı sonraki cümlelerden kuruldu.
 - 00:57:14 ile 01:12:02 arası ara verilmiş.
 
-**Not:** İsterseniz bu kayıtları NotebookLM gibi bir araca atıp daha istifadeli hale getirebilirsiniz.
+**Not:** İsterseniz bu kayıtları Gemini Notebook gibi bir araca atıp daha istifadeli hale getirebilirsiniz.

@@ -187,4 +187,4 @@ Tablo $(n+1)(W+1)$ hücredir. Zaman ve bellek $\Theta(nW)$'dir.
 - **Sırt çantası karmaşıklığı:** $\Theta(nW)$ sözde polinomdur (pseudo-polynomial). $W$ çok büyükse tablo da çok büyür. Hocanın "bellek ihtiyacını önceden hesaplayın" uyarısı bu durum için önemlidir.
 - Tahta karelerindeki tablo değerleri ve iki örneğin sonuçları (17 ve 37) Python ile doğrulandı.
 
-**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

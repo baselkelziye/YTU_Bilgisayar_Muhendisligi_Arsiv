@@ -37,4 +37,4 @@
 - Sayaçlar, belirli bir durum dizisini saat darbeleriyle izleyen sıralı devrelerdir. Senkron sayaçlarda bütün flip-floplar aynı anda tetiklenir; bu, asenkron yapılara göre zamanlama analizini daha düzenli hale getirir.
 - Kullanılmayan durumlar için devrenin güvenli biçimde geçerli durumlara dönmesi veya bu durumların önemsiz kabul edilmesi tasarım tercihine bağlıdır.
 
-* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

@@ -398,4 +398,4 @@ ID3(örnekler, özellikler):
 - Occam'ın usturasının sözü hocanın çevirisinde "bilgilere gereğinden fazla önem vermeyin" diye geçiyor. Sözün tam çevirisi: "Varlıklar gereğinden fazla çoğaltılmamalıdır."
 - Altyazıda "Ayata" IATA olmalıdır.
 
-**Not:** İsterseniz bu kayıtları NotebookLM gibi bir araca atıp daha istifadeli hale getirebilirsiniz.
+**Not:** İsterseniz bu kayıtları Gemini Notebook gibi bir araca atıp daha istifadeli hale getirebilirsiniz.

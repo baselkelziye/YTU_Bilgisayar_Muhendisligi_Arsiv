@@ -326,4 +326,4 @@ void hanoi(int n, char kaynak, char hedef, char yardimci) {
 - Hanoi'de hamle sayısı $2^n - 1$'dir (5 disk için 31 hamle). Yineleme denklemi $T(n) = 2T(n-1) + 1$ olduğu için karmaşıklık $O(2^n)$'dir.
 - Her özyinelemeli algoritma, açık bir yığın (stack) kullanılarak döngüyle de yazılabilir. Hoca "döngüde önceki adıma değer döndürülemez" derken doğrudan karşılığın olmadığını kastediyor.
 
-**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

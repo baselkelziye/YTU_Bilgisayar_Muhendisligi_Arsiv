@@ -441,4 +441,4 @@ Bu derste önce rank prestige'in matris biçimi hatırlatıldı. Ardından akade
 
 Random walk yorumu, PageRank'in bir rastgele gezginin durağan dağılımı olduğunu gösterdi. Markov zinciri teoremi yakınsamanın ve tekliğin koşullarını verdi. Spider trap ve dead end bu koşulları bozduğu için teleport ve sanal linkler eklendi ve Google matrisine ulaşıldı. Popülerite tabanlı metriklerin diğeri olan HITS bu derste işlenmedi, yalnız adı anıldı.
 
-**Not:** İsterseniz bu kayıtları NotebookLM gibi bir araca atıp daha istifadeli hale getirebilirsiniz.
+**Not:** İsterseniz bu kayıtları Gemini Notebook gibi bir araca atıp daha istifadeli hale getirebilirsiniz.

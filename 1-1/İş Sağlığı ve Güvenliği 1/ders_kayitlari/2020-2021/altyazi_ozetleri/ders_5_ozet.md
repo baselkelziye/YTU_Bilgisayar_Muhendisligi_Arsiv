@@ -81,4 +81,4 @@
 - **DSP eğitimi ve sınavı:** Hoca 90 saatlik eğitimi ve DSP sınavının geçme notunun 60'a düşürüldüğünü söyledi. Eğitimin uzaktan ve yüz yüze dağılımı ile geçme notu yönetmelikte değişebilir. Güncel değerleri kontrol edin.
 - **Ofis çalışanlarının eğitim süresi:** Derste "8 saat" dendi. Bu süre az tehlikeli sınıf için asgari eğitim süresidir. Tehlikeli sınıfta 12, çok tehlikeli sınıfta 16 saattir (Ders 7'deki tabloya bakın).
 
-* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

@@ -440,4 +440,4 @@ Ders, Mondros Mütarekesi'nin görünürde nazik ama içerikte sert yapısından
 
 Ardından direnişin örgütlenmesi izlendi: Yerel cemiyetler, vatansever subaylar, Mustafa Kemal'in lider olma nedenleri, Samsun, Amasya, Erzurum, Sivas, Misak-ı Millî ve İstanbul'un işgalinden sonra açılan TBMM. İzmir'in ve İstanbul'un işgali, hocaya göre İtilaf'ın mücadeleyi güçlendiren iki büyük hatasıdır. Üç cephedeki sonuçtan sonra hoca, Kurtuluş Savaşı üzerine üç tezi ve tarih bilincinin önemi konusundaki kişisel değerlendirmesini anlattı. Hoca, İtilaf Devletleri arasındaki ayrılıkların kullanılması, ABD'nin tutumu ve İngiltere'nin Yunanistan'ı öne sürmesi gibi konulara gelecek hafta daha ayrıntılı döneceğini söyledi.
 
-**Not:** İsterseniz bu kayıtları NotebookLM gibi bir araca atıp daha istifadeli hale getirebilirsiniz.
+**Not:** İsterseniz bu kayıtları Gemini Notebook gibi bir araca atıp daha istifadeli hale getirebilirsiniz.

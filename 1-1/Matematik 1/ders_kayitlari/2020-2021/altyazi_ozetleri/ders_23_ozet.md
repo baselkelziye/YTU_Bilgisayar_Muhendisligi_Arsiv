@@ -223,4 +223,4 @@ $$\frac{A}{x-1} + \frac{Bx+C}{x^2+1}$$
 - **Tek-çift çarpımı:** Hoca bir an "iki tek fonksiyonun çarpımı... tek" dedi, hemen düzeltti. Doğrusu: tek × tek = çift, tek × çift = tek.
 - Altyazının bazı yerleri döngüye girmiş ya da bozuk (ör. 02:14:52, 02:21:29 civarı). Bu kısımlar altyazıda anlaşılmıyor; içerik tahta anlatımından ve bağlamdan kuruldu.
 
-**Not:** İsterseniz bu kayıtları NotebookLM gibi bir araca atıp daha istifadeli hale getirebilirsiniz.
+**Not:** İsterseniz bu kayıtları Gemini Notebook gibi bir araca atıp daha istifadeli hale getirebilirsiniz.

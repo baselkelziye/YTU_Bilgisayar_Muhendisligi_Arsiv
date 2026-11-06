@@ -184,4 +184,4 @@
 - Projeler finalde teslim edilir. Yetişmezse bütünleme sınavına girilir.
 - Bazı öğrenciler derse katılamadığını bildirmiştir. Hoca Zoom katılımcı sınırı olabileceğini düşünüp izin verir.
 
-İsterseniz bu özeti NotebookLM gibi bir araca atıp daha istifadeli hale getirebilirsiniz.
+İsterseniz bu özeti Gemini Notebook gibi bir araca atıp daha istifadeli hale getirebilirsiniz.

@@ -270,4 +270,4 @@
   - Cevap: $L = e^0 = 1$.
 - Altyazıda birkaç yerde döngü var (ör. 00:13:11, 00:26:09, 00:43:04, 00:44:31). Bu kısımlar altyazıda anlaşılmıyor; içerik ekran görüntüsü ve çevredeki anlatımdan tamamlandı.
 
-**Not:** İsterseniz bu kayıtları NotebookLM gibi bir araca atıp daha istifadeli hale getirebilirsiniz.
+**Not:** İsterseniz bu kayıtları Gemini Notebook gibi bir araca atıp daha istifadeli hale getirebilirsiniz.

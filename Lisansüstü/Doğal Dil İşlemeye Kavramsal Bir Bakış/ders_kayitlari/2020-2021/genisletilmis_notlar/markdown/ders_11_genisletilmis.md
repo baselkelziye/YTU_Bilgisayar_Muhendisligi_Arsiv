@@ -498,4 +498,4 @@ Hocanın sunumlar boyunca verdiği geri bildirimler ayrıca bir araştırma yön
 
 > **Ders sonrası not:** Altyazıda bozuk geçen bazı terimlerin doğru yazımları: "Jakart/CACAT" = Jaccard; "KMİS/Kermin's/Kamins" = K-means; "MNF" = NMF; "TvP" = Tweepy; "Latent tricklet" = Latent Dirichlet; "RUJ/Rooch/RUGE/ROG" = ROUGE; "Rooch" = ROUGE; "CVM" = SVM; "Grating Boosting" = Gradient Boosting; "submax" = softmax; "Spice Tutu Text" = speech-to-text; "Sörvey" = survey.
 
-**Not:** İsterseniz bu kayıtları NotebookLM gibi bir araca atıp daha istifadeli hale getirebilirsiniz.
+**Not:** İsterseniz bu kayıtları Gemini Notebook gibi bir araca atıp daha istifadeli hale getirebilirsiniz.

@@ -93,4 +93,4 @@ Bir soruda belirli bir adres aralığına ROM/RAM yerleştirilecekse:
 3. Sabit olan üst adres pinleri (örn. A11-A19) ve M/IO̅, A0, BHE gibi kontrol pinleri adres çözümleme mantığına (NAND/NOR kapıları veya dekoder) girer.
 4. ROM ise sadece OE (veya CS) adres çözülür; RAM ise hem WE hem RE için ayrı mantık kurulur.
 
-* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

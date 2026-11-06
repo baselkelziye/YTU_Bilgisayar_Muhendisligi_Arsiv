@@ -294,4 +294,4 @@ Doğu Sorunu, zayıflayan Osmanlı'nın mirasının kime kalacağı sorusudur. O
 
 Beş büyük güç içinde süreci açan devlet, hocaya göre Çarlık Rusyası'dır. Bunun iki yüzü vardır. Birincisi avantajıdır: Osmanlı Hristiyanlarıyla din ve soy bağı, yani Pan-Ortodoksluk ve Pan-Slavizm. Hoca bunların bir inanç değil, çıkarların aracı olduğunu kendi yorumu olarak vurguladı. İkincisi zorunluluğudur: Baltık, Kuzey Buz Denizi, Pasifik, Batı, Basra ve Hint yönleri kapalı olan Rusya için geriye yalnız Osmanlı coğrafyası, Boğazlar ve Doğu Akdeniz kalıyordu. Süveyş Kanalı'yla değeri daha da artan bu su yolları, büyük güçlerin bölge üzerindeki rekabetinin de nedenidir.
 
-**Not:** İsterseniz bu kayıtları NotebookLM gibi bir araca atıp daha istifadeli hale getirebilirsiniz.
+**Not:** İsterseniz bu kayıtları Gemini Notebook gibi bir araca atıp daha istifadeli hale getirebilirsiniz.

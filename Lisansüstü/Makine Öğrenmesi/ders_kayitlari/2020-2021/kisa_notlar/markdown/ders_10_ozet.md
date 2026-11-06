@@ -269,4 +269,4 @@ $$d_{mean}(C_i, C_j) = \lVert \mathbf{m}_i - \mathbf{m}_j \rVert$$
 - **Ara:** Ders 10:43'te 15 dakikalık ara verildi (yaklaşık 00:39-00:56).
 - **Kayıt:** Hocanın kayıtlara itirazı yok.
 
-> **Not:** Bu özeti ve dersin altyazı dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+> **Not:** Bu özeti ve dersin altyazı dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

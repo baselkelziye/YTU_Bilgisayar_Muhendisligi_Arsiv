@@ -191,4 +191,4 @@ Hocanın sonucu: III. Selim ve II. Mahmud'un yenilikleri Osmanlı'nın yıkılı
 
 ---
 
-İsterseniz bu özeti NotebookLM gibi bir araca atıp daha istifadeli hale getirebilirsiniz.
+İsterseniz bu özeti Gemini Notebook gibi bir araca atıp daha istifadeli hale getirebilirsiniz.

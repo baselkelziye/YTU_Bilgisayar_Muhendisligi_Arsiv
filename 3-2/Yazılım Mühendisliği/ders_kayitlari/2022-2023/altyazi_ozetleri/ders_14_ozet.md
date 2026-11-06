@@ -81,4 +81,4 @@
 - Bir grup controller-service-repository katmanları arasındaki ilişkiyi bileşim (composition) olarak çizdi. Bu katmanlar genellikle bağımlılık enjeksiyonuyla (dependency injection) birbirine verilir; servis repository'nin yaşam döngüsünün sahibi değildir. Bu yüzden ilişki ya da bağımlılık olarak gösterilmesi daha doğrudur.
 - Altyazıdaki "Ecail" agile, "artificial/ardışıl diagram" sıralama diyagramı, "Malston" milestone demektir.
 
-**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

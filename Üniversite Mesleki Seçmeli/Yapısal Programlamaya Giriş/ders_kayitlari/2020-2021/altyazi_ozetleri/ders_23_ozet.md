@@ -47,4 +47,4 @@ int ucluVar(int dizi[], int n, int i, int kalanSayi, int kalanEnerji){
 
 - Fonksiyon en fazla $\binom{n}{3}$ üçlüyü dener, yani en kötü durumda $n^3$ mertebesindedir. Üç iç içe döngüyle yazılan çözümle aynı mertebededir. Bu soruda istenen performans değil, özyinelemeli düşünmedir.
 
-* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

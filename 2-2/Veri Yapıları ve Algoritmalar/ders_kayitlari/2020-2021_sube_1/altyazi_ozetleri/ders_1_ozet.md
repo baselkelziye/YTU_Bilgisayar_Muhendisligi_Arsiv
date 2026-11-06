@@ -304,4 +304,4 @@ int main(void) {
 - Eratosthenes yaklaşık MÖ 276-194 yılları arasında yaşamıştır. Hocanın "MÖ 200 falan" tahmini bu aralıkla uyumludur.
 - Kalburda dizi 0'dan $n$'ye kadar indislendiği için `A` dizisi en az $n + 1$ gözlü olmalıdır.
 
-**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

@@ -101,4 +101,4 @@
 - **Mikrofon örneğindeki karışıklık:** Hoca yüksek frekansları süzmenin sesi kalınlaştıracağını söyledi, bu doğrudur (alçak geçiren filtre). Ardından "alçak geçiren filtre uygularsam bas unsurlar sönümlenir, ses ince çıkar" dedi. Bas (düşük frekans) bileşenlerini süzen filtre **yüksek geçiren** filtredir. Alçak geçiren filtre basları geçirir.
 - **Şönt eleman varsayımı:** Endüktansın yüksek frekansları geçirdiği yorumu, endüktansın çıkışa paralel (şönt) bağlı olduğu devre için geçerlidir. Endüktans girişle çıkış arasına seri bağlanırsa durum tersine döner: düşük frekansları geçirir.
 
-* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

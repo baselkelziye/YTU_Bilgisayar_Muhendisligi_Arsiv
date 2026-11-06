@@ -89,4 +89,4 @@ Güncel diller hakkında JavaScript'in özellikle ön yüz geliştirmede, Python
 
 Son olarak akreditasyon kavramı açıklanır. Akreditasyon, bir kurumun belirlenmiş standartlara uygun hizmet verdiğinin bir kuruluş tarafından denetlenip belgelenmesidir. Ürün ve işletmelerde TSE'nin verdiği belgeler buna benzer. Mühendislik eğitiminde Türkiye'de MÜDEK, uluslararası alanda ABET bu rolü üstlenir. Kurum başvuru yapar, akreditasyon kuruluşu yerinde inceleme yapar ve standartlar sağlanıyorsa belirli bir süre için akreditasyon verir. Hoca, akreditasyonun önemli ama tek başına belirleyici olmadığını, asıl önemli olanın kalite anlayışını kurum kültürü hâline getirmek olduğunu belirtir.
 
-* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

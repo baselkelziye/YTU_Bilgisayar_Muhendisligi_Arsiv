@@ -194,4 +194,4 @@
 - **Switch ve router:** Hoca "switch'i router olarak da kullanabilirsiniz" dedi. Bu yalnızca katman 3 (L3) switch'ler için geçerlidir. Sıradan (L2) bir switch IP yönlendirmesi yapmaz.
 - **A sınıfı:** A sınıfı adres alanı toplam IPv4 alanının yarısıdır. Ancak yalnızca 126 kullanılabilir A sınıfı ağ vardır. 0 ve 127 ayrılmıştır; 127.x.x.x geri döngü (loopback) içindir.
 
-**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

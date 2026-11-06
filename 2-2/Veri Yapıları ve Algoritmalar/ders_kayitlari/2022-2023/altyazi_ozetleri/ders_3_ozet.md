@@ -272,4 +272,4 @@ $$1 + 2 + \dots + (n-1) = \frac{n(n-1)}{2} \Rightarrow O(n^2)$$
 - Hoca Java'nın sıralamada quicksort kullandığını söyledi. Java, ilkel tiplerde (int, double) Dual-Pivot Quicksort, nesnelerde ise TimSort (merge sort + insertion sort) kullanır. Küçük parçalarda insertion sort kullanımı doğrudur.
 - `i++` ile `i = i + 1` arasındaki hız farkı günümüz derleyicilerinde genelde yoktur. Optimizasyon açıkken ikisi de aynı makine koduna çevrilir. Hocanın söylediği, derleyicinin optimizasyon yapmadığı durumda geçerlidir.
 
-**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

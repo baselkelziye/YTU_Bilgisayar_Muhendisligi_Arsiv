@@ -403,4 +403,4 @@ B-tree türleri veri tabanı indekslerinde standart olarak kullanılır.
 - Ders yüz yüze sınıfta başlayacaktı. Sınıfta kimse olmadığı için ders online devam etti.
 - 1. ödevin teslimi tamamlandı. Sonraki ödevlerde de anlatım videosu istenecek.
 
-**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

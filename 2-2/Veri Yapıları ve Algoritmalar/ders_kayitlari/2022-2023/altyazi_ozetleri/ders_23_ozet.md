@@ -245,4 +245,4 @@ for (i = 0; i < N; i++)
 - **Key-indexed counting örneğinde sayma.** Hoca sayarken birkaç kez karıştırdı (örneğin F'yi 9 yerine 10'dan başlattı, son adımda D'yi 7'den başlattı). Doğru değerler yukarıdaki tablolardadır: ilk örnekte F 9'dan, LSD'nin son adımında D 6'dan başlar.
 - **Soru 12'deki alternatif.** $B$'nin elemanları bir özet tablosuna (hash table) konursa ortak elemanlar ortalama $O(N + M)$ sürede bulunabilir. Ders kapsamında beklenen cevap ikili aramadır.
 
-**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

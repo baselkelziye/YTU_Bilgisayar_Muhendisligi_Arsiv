@@ -293,4 +293,4 @@ $$h'(x) = \frac{f'(x)g(x) - f(x)g'(x)}{g(x)^2}$$
   - Toplam 7 yatay teğet.
 - Altyazıda birkaç yerde döngü var (ör. 00:04:16, 01:34:00, 01:42:05, 01:45:27). Bu kısımlar altyazıda anlaşılmıyor; içerik çevredeki anlatımdan tamamlandı.
 
-**Not:** İsterseniz bu kayıtları NotebookLM gibi bir araca atıp daha istifadeli hale getirebilirsiniz.
+**Not:** İsterseniz bu kayıtları Gemini Notebook gibi bir araca atıp daha istifadeli hale getirebilirsiniz.

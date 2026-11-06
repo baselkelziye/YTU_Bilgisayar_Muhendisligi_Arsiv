@@ -186,4 +186,4 @@ Bu yapı tek bit hatasını düzeltir. Tüm çok bitli hata kombinasyonlarını 
 - **CRC-32'nin Hamming mesafesi:** Hocanın adını hatırlayamadığı çalışma, Philip Koopman'ın 2002 tarihli "32-Bit Cyclic Redundancy Codes for Internet Applications" makalesidir. Makale, IEEE 802.3 CRC-32'nin birçok çerçeve boyunda Hamming mesafesinin 4 olduğunu, daha iyi polinomlarla 6'ya çıkılabileceğini gösterir.
 - **Bozuk altyazı:** Ders sonunda hocanın saydığı ileri hata düzeltme kodlarından biri altyazıda "binary formal regional codes" diye bozuk çıkmış. Kodun adı kayıttan anlaşılamıyor; büyük olasılıkla BCH veya konvolüsyonel kodlar kastediliyor.
 
-**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

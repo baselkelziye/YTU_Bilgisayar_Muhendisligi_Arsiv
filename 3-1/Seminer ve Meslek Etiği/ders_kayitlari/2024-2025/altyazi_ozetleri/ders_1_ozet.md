@@ -234,4 +234,4 @@
 - **"Aynı nehirde iki kez yıkanılmaz":** Bu söz Herakleitos'a atfedilir.
 - **Altyazı hataları:** "Didaktif" deductive, "Nijel" nicel, "DELT metodu" Delphi metodu, "panentiz" parantez, "dildenin/fasüklüğünde" cildinin/fasikülünde, "İmrat/İmran" IMRAD, "Related Workday" related work, "terör türet araması" literatür taraması, "Shiftinger" Springer, "KTP Yılız Eritre" kütüphane (YTÜ) adresi, "tüphanenin proksesi" kütüphanenin proxy'si anlamındadır.
 
-**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

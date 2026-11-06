@@ -44,4 +44,4 @@
 - C/C++ ortamında pointer kullanımı, manuel bellek yönetimi, sınır kontrolünün programcıya bırakılması ve düşük seviyeli sistem kütüphanelerinin yaygınlığı bu saldırı sınıfını önemli hale getirir. Modern diller üst seviyede güvenli görünse bile çalışma zamanı ve sistem çağrıları bu düşük seviyeli bileşenlerle etkileşir.
 - Bellek düzeninin bilinmesi saldırgan için değerlidir. Paylaşılan kütüphanelerin yüklenme bölgesi, executable başlangıcı, stack büyüme yönü ve endian düzeni exploit oluşturma sürecinde doğrudan kullanılır.
 
-* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

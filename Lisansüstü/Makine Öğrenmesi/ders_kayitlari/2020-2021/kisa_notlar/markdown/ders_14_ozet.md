@@ -188,4 +188,4 @@ Hoca öğrencilere sordu, şu sorunlar konuşuldu:
 - **Altyazı yanlış okumaları:** "Cosine Simulator" = cosine similarity, "metric spektronizasyon" = matrix factorization, "Osman K" = optimum K, "inertiye" = inertia, "Aygürtme / Aygertman" = online sınav sistemi (adı altyazıdan net değil).
 - **Ders yapılmayan gün:** bu derste geçmiyor. Canlı ders sekmesi başta açılmadı, hoca bunu "dönem bitti" işareti olarak yorumladı.
 
-NotebookLM gibi bir araca altyazı dosyasını yükleyerek bu ders hakkında daha ayrıntılı soru-cevap yapabilirsiniz.
+Gemini Notebook gibi bir araca altyazı dosyasını yükleyerek bu ders hakkında daha ayrıntılı soru-cevap yapabilirsiniz.

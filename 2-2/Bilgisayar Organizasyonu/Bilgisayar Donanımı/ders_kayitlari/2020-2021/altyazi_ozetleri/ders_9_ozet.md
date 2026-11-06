@@ -265,4 +265,4 @@
 - **Lojik bloğun seçme uçları:** Ekrandaki şekle göre lojik bloğun $S_0$ girişine $C_{in}$, $S_1$ girişine $S_0$ bağlıdır. Bu yüzden lojik işlemler $S_2 = 1$ iken $S_0$ ve $C_{in}$ ile seçilir.
 - Altyazıda "Manon" Mano, "Kuyuz" quiz, "Data Path Unity" datapath unit, "Carnot Map/Karnomep" Karnaugh haritası, "TUS/Tuz komplement" two's complement (ikiye tümleyen) demektir.
 
-* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

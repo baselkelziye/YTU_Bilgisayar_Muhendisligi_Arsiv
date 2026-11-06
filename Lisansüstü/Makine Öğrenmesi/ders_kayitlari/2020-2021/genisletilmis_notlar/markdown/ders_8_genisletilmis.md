@@ -405,4 +405,4 @@ Doğrusal ayrılamayan veride kernel fonksiyonları (polinom, Gaussian, RBF) ör
 
 > **Ders sonrası not:** Altyazıdaki bozulmalar: "Bayes" bias, "V" ve "v" ağırlık $w$, "hyperclaim/hyperplay" hyperplane, "Laurentian multiplier/laranjin şarpanları/larynge'nin makluları" Lagrange multipliers (Lagrange çarpanları), "L-Net" LeNet, "silek" slack, "sine fonksiyonu/sinir sonksiyonu" sign fonksiyonu, "göğüsün kernel/Gowsing kernel" Gaussian kernel, "Non-linearly-sacorable" non-linearly separable, "Monti Class/Mantiklas" multi-class, "One Against Sog/olun" one-against-all, "kreğe örneği/QERI" query (sorgu) örneği, "altlayır/alt-layır" outlier demektir.
 
-**Not:** İsterseniz bu kayıtları NotebookLM gibi bir araca atıp daha istifadeli hale getirebilirsiniz.
+**Not:** İsterseniz bu kayıtları Gemini Notebook gibi bir araca atıp daha istifadeli hale getirebilirsiniz.

@@ -36,4 +36,4 @@
 - Flip-flop türü seçildiğinde her durum biti için gerekli giriş fonksiyonları çıkarılır. Bu fonksiyonlar Karnaugh haritasıyla sadeleştirilir ve kapı düzeyinde kurulur.
 - Tasarım doğrulamasında yalnızca geçerli durumlar değil, kullanılmayan durumlara girildiğinde devrenin ne yaptığı da incelenmelidir. Bu yaklaşım daha güvenilir devreler tasarlamayı sağlar.
 
-* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

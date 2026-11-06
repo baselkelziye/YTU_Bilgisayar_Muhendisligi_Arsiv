@@ -589,4 +589,4 @@ Bir sonraki derste rank prestige denklemini çözen kuvvet yinelemesi yöntemi v
 
 > **Ders sonrası not:** "Authenticate" büyük olasılıkla iThenticate'tir. Hocanın bu araçların atıf analizi yaptığı yönündeki sözü altyazıdan doğrulanamıyor. Bu tür intihal denetim araçları büyük olasılıkla ağırlıklı olarak metin eşleştirmeye dayanır.
 
-**Not:** İsterseniz bu kayıtları NotebookLM gibi bir araca atıp daha istifadeli hale getirebilirsiniz.
+**Not:** İsterseniz bu kayıtları Gemini Notebook gibi bir araca atıp daha istifadeli hale getirebilirsiniz.

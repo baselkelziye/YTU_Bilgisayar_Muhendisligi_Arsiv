@@ -183,4 +183,4 @@
 - Hoca konuları 4.–5. hafta civarında bitirmek istediğini söylüyor. Cümle altyazıda tam anlaşılmıyor.
 - Bazı geçişlerin sözlü anlatımı (ör. 00:09:36–00:09:58 ve 01:21:02, 01:35:16) altyazıda döngüye girmiş. Bu kısımlar altyazıda anlaşılmıyor. Çözümler ekrandaki yazıdan tamamlandı.
 
-**Not:** İsterseniz bu kayıtları NotebookLM gibi bir araca atıp daha istifadeli hale getirebilirsiniz.
+**Not:** İsterseniz bu kayıtları Gemini Notebook gibi bir araca atıp daha istifadeli hale getirebilirsiniz.

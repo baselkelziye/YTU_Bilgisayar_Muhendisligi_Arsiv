@@ -43,4 +43,4 @@ Hoca kendi geçmişinden yola çıkarak meslek lisesinde öğrendiği algoritma 
 
 Dersin sonunda programlama ortamı, kaynak kitaplar ve kurslar hakkındaki sorular cevaplanır. Hoca, derste anlatılmayan bir konunun sorulmayacağını ve temel C bilgisinin dersler ve ödevlerle yeterince öğrenilebileceğini söyler. Bir sonraki derste, birinci dönemin algoritma konularının bir tekrarıyla başlanacaktır.
 
-* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

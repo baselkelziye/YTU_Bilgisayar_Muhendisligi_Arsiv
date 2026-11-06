@@ -156,4 +156,4 @@ Tekrar eden elemanların hepsi silinmek istenirse (ör. `1 3 5 5 5 7`), önce ka
 
 Hoca, bubble sort'un daha akıllıca hâle nasıl getirilebileceğini düşünmeyi öğrencilere bıraktı. Ders sonrasında yapılan kontrolde arama, ekleme, silme ve bubble sort algoritmaları rastgele dizilerle denendi ve hepsi doğru sonuç verdi.
 
-* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

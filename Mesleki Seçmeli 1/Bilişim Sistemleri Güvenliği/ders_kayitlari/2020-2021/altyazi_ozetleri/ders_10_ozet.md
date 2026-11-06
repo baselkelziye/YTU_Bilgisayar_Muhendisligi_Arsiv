@@ -42,4 +42,4 @@
 - IP protokolü paket taşımada hedef adrese odaklanır. Kaynak adresin doğruluğu ağ genelinde zorunlu olarak doğrulanmadığında saldırgan sahte kaynak IP kullanabilir. Bu, özellikle UDP tabanlı amplifikasyon saldırılarında hedefe yüksek hacimli cevap yönlendirmek için kullanılır.
 - TCP SYN flood saldırısında saldırgan çok sayıda bağlantı başlatır, fakat handshake'i tamamlamaz. Sunucu yarım açık bağlantılar için kaynak ayırdığı için kapasite tükenebilir. SYN cookie, bağlantı bilgisini sunucu belleğinde tutmak yerine doğrulanabilir bir değer olarak istemciye yansıtarak bu riski azaltır.
 
-* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

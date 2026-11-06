@@ -144,4 +144,4 @@ int fakt(int n){
 - **Negatif sayıyla faktöriyel:** Derste yazılan `fakt`'ta `n` negatifse `if` koşulu sağlanmaz ve `n * fakt(n - 1)` sonsuza kadar devam eder (stack overflow). Ya koşul `if (n < 2) return 1;` olarak yazılmalı ya da negatif girişler fonksiyon çağrılmadan önce engellenmelidir.
 - **Büyük asal sayılar ve şifreleme:** Hoca, büyük bir asal sayıya sahip olmanın daha küçük şifreleri çözmeyi kolaylaştırdığını söyledi. RSA gibi şifrelemelerin güvenliği, iki büyük asal sayının çarpımını çarpanlarına ayırmanın zorluğuna dayanır. Daha büyük bir asal sayıyı bilmek, bu çarpımı ayırmaya yardım etmez.
 
-* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

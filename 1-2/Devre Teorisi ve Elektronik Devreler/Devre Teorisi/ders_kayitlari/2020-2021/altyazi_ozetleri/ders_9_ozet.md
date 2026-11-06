@@ -129,4 +129,4 @@
 - **Örnek 4'ün cevabı (kontrol için, derste çözülmedi):** Kaynakların artı uçlarının üstte olduğu ve sağdaki kaynağın $t = 0$'da devreden çıktığı varsayımıyla: $t < 0$'da üst düğüm 4 V, $i_L = -1$ mA (ok yönüne göre), $v_C = 4$ V, $v_L = 0$, $i_{C1} = i_{C2} = 0$. $t \to \infty$'da yalnız $V_1$ kalır, C açık olduğu için akım yok: $i_L = 0$, $v_C = 1$ V. Slayt hem "uzun süre kapalı" hem "$t = 0$'da kapanıyor" diyor; hoca derste sağdaki kaynağın devreden çıktığını söyledi.
 - **"Kritik sönüm en hızlı oturur" ifadesi:** Bu, salınım yapmadan oturan durumlar arasında doğrudur. Az sönümlü bir devre son değere ilk kez daha erken ulaşabilir ama etrafında salınır.
 
-* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

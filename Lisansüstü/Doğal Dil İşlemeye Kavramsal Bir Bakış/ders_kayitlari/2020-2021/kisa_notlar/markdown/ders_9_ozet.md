@@ -417,4 +417,4 @@ $$
 - Altyazıdaki "Namajigoro" Uganda'nın başkenti için söyleniyor. Uganda'nın başkenti Kampala'dır.
 - Altyazıdaki "laten semantik indexing/LST" LSI, "portrait stammer" Porter stemmer, "Ludus" Loodos, "Frogle" Froogle, "but" (beyzbol/yarasa) "bat" demektir.
 
-İsterseniz bu kayıtları NotebookLM gibi bir araca atıp daha istifadeli hale getirebilirsiniz.
+İsterseniz bu kayıtları Gemini Notebook gibi bir araca atıp daha istifadeli hale getirebilirsiniz.

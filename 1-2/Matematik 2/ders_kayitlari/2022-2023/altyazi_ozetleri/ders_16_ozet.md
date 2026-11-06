@@ -180,4 +180,4 @@ $$f(x,y)\approx 1+x+\frac{x^2}{2}-\frac{1}{2}\left(y-\frac{\pi}{2}\right)^2$$
 - Örnek 9'un $(\partial w/\partial y)_z$ kısmı derste bitmedi. Bu durumda $y,z$ bağımsızdır, $x$ bağımlıdır: $\dfrac{\partial x}{\partial y}=-\dfrac{F_y}{F_x}=-\dfrac{\sin z}{z\cos x}$. $(0,1,\pi)$'de $\sin\pi=0$ olduğu için bu sıfırdır ve $\left(\dfrac{\partial w}{\partial y}\right)_z=2y=2$.
 - Ders "Bayramdan sonra görüşmek üzere" diye bitti.
 
-İsterseniz bu kayıtları NotebookLM gibi bir araca atıp daha istifadeli hale getirebilirsiniz.
+İsterseniz bu kayıtları Gemini Notebook gibi bir araca atıp daha istifadeli hale getirebilirsiniz.

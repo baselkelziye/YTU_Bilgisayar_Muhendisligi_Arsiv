@@ -333,4 +333,4 @@ int fonksiyon(int n) {
 - Logaritmanın tabanı Big-O sonucunu değiştirmez. Farklı tabanlar arasında yalnız sabit bir çarpan vardır.
 - Hoca Huffman örneğinde kodlama dizisini okurken bir yerde "B'nin kodu 0, 0" dedi. Tahtadaki ağaca göre `b`'nin kodu tek bit `0`'dır.
 
-**Not:** İsterseniz bu kayıtları NotebookLM gibi bir araca atıp daha istifadeli hale getirebilirsiniz.
+**Not:** İsterseniz bu kayıtları Gemini Notebook gibi bir araca atıp daha istifadeli hale getirebilirsiniz.

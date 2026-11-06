@@ -243,4 +243,4 @@ Ders bu noktada süre dolduğu için bitti. Sadeleştirme ve kullanılmayan duru
 - Seri toplayıcının 12 clock sonucu doğrudur. İkinci 4 clock sonunda C flip-flop'unda 0 kalır; çünkü birinci sayı 0 ile toplanırken elde oluşmaz. Bu yüzden son toplama doğru başlar.
 - Senkron sayıcının denklemlerinin genel hâli: $D_{A_i} = A_i \oplus A_{i-1}A_{i-2}\cdots A_0$.
 
-**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

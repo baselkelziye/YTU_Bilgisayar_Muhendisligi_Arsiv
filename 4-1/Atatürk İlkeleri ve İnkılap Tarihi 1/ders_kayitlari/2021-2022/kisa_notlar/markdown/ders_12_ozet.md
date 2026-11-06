@@ -168,4 +168,4 @@
   - "Macelistan, Bosma" = Avusturya-Macaristan, Bosna-Hersek
   - "Hürriyet ve İttihat ve İttihat Fırkası" = Hürriyet ve İtilaf Fırkası
 
-**Not:** İsterseniz bu kayıtları NotebookLM gibi bir araca atıp daha istifadeli hale getirebilirsiniz.
+**Not:** İsterseniz bu kayıtları Gemini Notebook gibi bir araca atıp daha istifadeli hale getirebilirsiniz.

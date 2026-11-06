@@ -352,4 +352,4 @@ void printPreorder(NODE *treeNode)
 - `createQueue` ve `newNode` kodlarındaki `malloc` dönüş değeri kontrol edilmemiştir. Hoca bunu bilerek yazmadığını söyledi. Gerçek kodda `NULL` kontrolü yapılmalıdır.
 - Derste yazılan kuyruk kodu, `isEmpty` eklenerek ajan tarafından `gcc -Wall` ile derlendi ve küçük bir `main` ile denendi. `isEmpty` derste yazılmamıştır.
 
-**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

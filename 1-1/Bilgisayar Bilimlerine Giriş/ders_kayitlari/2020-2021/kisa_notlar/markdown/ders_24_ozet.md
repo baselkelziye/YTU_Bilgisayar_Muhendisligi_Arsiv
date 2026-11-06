@@ -99,4 +99,4 @@ int simetrik_mi(int bag[][2], int K)
 
 Derste ikinci dereceden denklemin kök formülü hatırlanamadı. Kökler $x_{1,2} = \dfrac{-b \pm \sqrt{\Delta}}{2a}$, $\Delta = b^2 - 4ac$ formülüyle bulunur. Bir öğrencinin söylediği gibi $2a$'ya bölünür.
 
-* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

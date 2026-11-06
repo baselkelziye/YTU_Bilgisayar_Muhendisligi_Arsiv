@@ -229,4 +229,4 @@ Test senaryosu (test case):
 - Hoca başta hataların "%50'si, 65'i" tasarımda yapılır diye düzeltir. Slayttaki değer %65'tir.
 - Whisper "Fagan"ı bir yerde "Şafozy" diye, "stub" sözcüğünü "Stop/Stab", "koçan"ı "Koçan", "bilim testi"ni birim testi yerine yazmıştır.
 
-**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

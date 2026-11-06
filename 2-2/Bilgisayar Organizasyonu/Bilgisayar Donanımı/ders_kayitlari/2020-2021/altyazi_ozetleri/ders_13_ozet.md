@@ -186,4 +186,4 @@
 - TLB'nin bir cache olduğu, fully associative, direct mapped veya set associative tasarlanabileceği derste doğru anlatıldı.
 - FIFO ve LRU sayıları, örnek 3 ve 4'teki bütün adres hesapları Python ile doğrulandı. Tablo değerleri ekran karelerinden okundu.
 
-**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi daha verimli çalışabilirsiniz.
+**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi daha verimli çalışabilirsiniz.

@@ -121,4 +121,4 @@
 - Sürekli uzayda "1 bölü sonsuz = 0" bir sezgidir, kesin bir hesap değildir. Kesin açıklama, sürekli dağılımlar konusunda yoğunluk fonksiyonu (density function) ile yapılır.
 - Kayıtta yaklaşık 06:30-11:20, 52:00-01:00:00 ve 01:29-01:31 arası Türkçe tekrar kısımları büyük ölçüde anlaşılmıyor. Bu kısımlarda altyazı bozuk. Anlaşılan kısımlar yukarıda özetlendi.
 
-**Not:** Bu ders İngilizce anlatılmıştır. İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+**Not:** Bu ders İngilizce anlatılmıştır. İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

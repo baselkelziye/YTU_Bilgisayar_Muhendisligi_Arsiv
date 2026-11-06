@@ -84,4 +84,4 @@
 - Bağımlılık (dependency), ilişki (association), toplama (aggregation) ve bileşim (composition) farklı çizgilerle gösterilir. Bağımlılık kesikli ok ile çizilir ve en zayıf ilişkidir.
 - Kabul ile kısıt arasındaki ayrım: kabul, doğruluğu kanıtlanmadan varsayılan koşuldur (ör. "fiyatlar süreç boyunca değişmez"). Kısıt, çözümü sınırlayan koşuldur (ör. "yalnızca kredi kartıyla ödeme").
 
-**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

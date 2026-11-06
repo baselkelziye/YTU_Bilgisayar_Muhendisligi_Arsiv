@@ -596,4 +596,4 @@ $$P(w_k|v_j) = \frac{n_k + 1}{n_j + |V|}$$
 - Hoca frekans dağılımı grafiğini anlatırken "sol taraf önemsiz ve düşük frekanslı, stop words" dedi. Stop words yüksek frekanslı kelimelerdir. Düşük frekanslı uç ise kişiye özel ya da nadir kelimelerdir.
 - Altyazıda geçen bazı terimlerin doğruları: "SIBO/Sibov" → CBOW, "hat/hatvan gösterimi" → one-hot, "Mikalov" → Mikolov, "Glow/Globe" → GloVe, "Ludus" → Loodos, "Rapper/röper" → wrapper, "Vega" → Weka, "K-MINS/Kamins" → k-means, "Rolter/Reuter" → Reuters, "ModUp" → ModApte, "Nayibayes" → Naive Bayes, "Advanced smoothing" → add-one smoothing.
 
-**Not:** İsterseniz bu kayıtları NotebookLM gibi bir araca atıp daha istifadeli hale getirebilirsiniz.
+**Not:** İsterseniz bu kayıtları Gemini Notebook gibi bir araca atıp daha istifadeli hale getirebilirsiniz.

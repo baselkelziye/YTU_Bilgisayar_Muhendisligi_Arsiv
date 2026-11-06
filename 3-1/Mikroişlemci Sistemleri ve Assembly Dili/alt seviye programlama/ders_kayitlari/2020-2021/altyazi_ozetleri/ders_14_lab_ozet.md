@@ -102,4 +102,4 @@
 
 - Dersin genel vurgusu, assembly dilinin hem bilgisayarın alt seviyede nasıl çalıştığını anlamak hem de gerektiğinde performans kritik bölümleri optimize etmek için önemli olduğudur. Yüksek seviyeli dillerle yazılan programlar sonuçta makine komutlarına dönüştürülür. Bu dönüşümü anlamak; gömülü sistemler, gerçek zamanlı uygulamalar, yapay zeka, görüntü işleme veya düşük kaynaklı donanımlar gibi alanlarda daha bilinçli programlama yapılmasını sağlar.
 
-* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

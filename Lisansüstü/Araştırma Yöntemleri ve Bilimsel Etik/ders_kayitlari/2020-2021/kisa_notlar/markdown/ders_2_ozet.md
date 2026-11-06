@@ -188,4 +188,4 @@ $$IF_{1992} = \frac{\text{1992'de, 1990 ve 1991 yayınlarına yapılan atıf say
 - Q1-Q4 sorusunu hoca cevaplamadı. Q1-Q4, bir dergi kategorisindeki dergilerin etki faktörüne (ya da Scopus'ta SJR değerine) göre sıralanıp dörde bölünmesidir. Q1 en üst %25'tir.
 - Altyazıda geçen "Elseverin Journal Finder'ı" doğru; hoca öncesinde "LCR" diyor, bu da Elsevier olmalı.
 
-İsterseniz bu kayıtları NotebookLM gibi bir araca atıp daha istifadeli hale getirebilirsiniz.
+İsterseniz bu kayıtları Gemini Notebook gibi bir araca atıp daha istifadeli hale getirebilirsiniz.

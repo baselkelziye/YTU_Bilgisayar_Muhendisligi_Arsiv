@@ -124,4 +124,4 @@ Tarih: 16 Mayıs 2023 (Salı). İntegral konusu bir önceki derste bitti. Bu der
 - 00:29:47-00:50:39 arası mola.
 - Ders "haftaya" diye bitiyor. Sonraki ders 22 Mayıs Pazartesi.
 
-İsterseniz bu kayıtları NotebookLM gibi bir araca atıp daha istifadeli hale getirebilirsiniz.
+İsterseniz bu kayıtları Gemini Notebook gibi bir araca atıp daha istifadeli hale getirebilirsiniz.

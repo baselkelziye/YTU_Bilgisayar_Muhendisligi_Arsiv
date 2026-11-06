@@ -219,4 +219,4 @@
 - Ders boyunca hocanın internet bağlantısı kesik kesik. Bazı açıklamalar ve 00:12:03, 00:16:17, 02:18:12 civarındaki kısımlar altyazıda anlaşılmıyor.
 - 01:02:16 ile 01:21:15 arası ara verilmiş.
 
-**Not:** İsterseniz bu kayıtları NotebookLM gibi bir araca atıp daha istifadeli hale getirebilirsiniz.
+**Not:** İsterseniz bu kayıtları Gemini Notebook gibi bir araca atıp daha istifadeli hale getirebilirsiniz.

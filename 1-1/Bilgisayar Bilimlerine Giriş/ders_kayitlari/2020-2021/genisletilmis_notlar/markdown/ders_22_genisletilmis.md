@@ -555,4 +555,4 @@ Bu derste bilgisayar donanımından işletim sistemine doğru ilerlendi. CPU'nun
 
 Hoca, işletim sistemlerinde küçük bir kısmın kaldığını söyledi. Bu kısım iki hafta sonra tamamlanacak, ardından ağ (network) konusuna geçilecek ve ders bir algoritmayla bitirilecektir.
 
-**Not:** İsterseniz bu kayıtları NotebookLM gibi bir araca atıp daha istifadeli hale getirebilirsiniz.
+**Not:** İsterseniz bu kayıtları Gemini Notebook gibi bir araca atıp daha istifadeli hale getirebilirsiniz.

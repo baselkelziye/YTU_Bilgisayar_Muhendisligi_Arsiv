@@ -38,4 +38,4 @@ Sayısal integralde ise trapez kuralı, Simpson 1/3 ve Simpson 3/8 kuralı ele a
 
 Sınav sorularının çözümünde hatalı denklem üretimi ve global değişken kullanımı tartışıldı. Global değişken kullanımı, yapısal programlama prensiplerine aykırıdır ve dördüncü sınıfa kadar kullanılmamalıdır.
 
-* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

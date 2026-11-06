@@ -164,4 +164,4 @@ Bu ilk ders, Atatürk İlkeleri ve İnkılap Tarihi'ni bir Osmanlı-Türkiye mod
 
 Aynı günün ikinci bölümü kavramsal girişe ayrıldı: devlet, devlet yönetim biçimleri ve rejim kavramları. Sonraki hafta Osmanlı'nın siyasi ve idari yapısı, ardından Doğu Sorunu ele alınacak.
 
-**Not:** İsterseniz bu kayıtları NotebookLM gibi bir araca atıp daha istifadeli hale getirebilirsiniz.
+**Not:** İsterseniz bu kayıtları Gemini Notebook gibi bir araca atıp daha istifadeli hale getirebilirsiniz.

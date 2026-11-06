@@ -38,4 +38,4 @@
 - Çarpımlar toplamı biçimindeki bir fonksiyon NAND ile gerçekleştirilirken önce her çarpım teriminin NAND çıkışı alınır. Son katmanda bu ara sonuçlar tekrar NAND'lanarak OR etkisi De Morgan üzerinden sağlanır. Böylece AND-OR devresi yerine NAND-NAND yapısı elde edilir.
 - Karnaugh haritası örneklerinde `1` olan hücreler en büyük gruplar halinde seçilir. Her grup, değişmeyen değişkenlerden oluşan bir sade terim üretir. Bu terimler sonradan seçilen kapı teknolojisine uygun biçimde dönüştürülür.
 
-* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

@@ -123,4 +123,4 @@ Uzun bir bus hattında sinyal belirli bir mesafeden sonra zayıflar. Repeater, z
 - Hoca, WhatsApp gibi anlık mesajlaşma uygulamalarının eşler arası mı yoksa sunucu üzerinden mi çalıştığından emin olmadığını, bildiği kadarıyla bir sunucu kullanıldığını söyledi. Uçtan uca şifreleme, mesajın sunucudan geçse bile yalnızca iki uç tarafından okunabilmesi demektir. Mesajın eşler arası iletildiği anlamına gelmez.
 - Derste bahsedilen IP adresleri IPv4 adresleridir. Bugün 128 bitlik IPv6 adresleri de kullanılmaktadır.
 
-* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

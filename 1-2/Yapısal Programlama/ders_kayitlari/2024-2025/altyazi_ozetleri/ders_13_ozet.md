@@ -102,4 +102,4 @@
 - **RAM ve disk hızı:** Derste verilen frekans rakamları (RAM için "10 MHz", disk için "kHz") yalnızca büyüklük farkını anlatmak için kullanılan kaba benzetmelerdir. Asıl mesaj doğrudur: diske erişim RAM'e erişimden kat kat yavaştır. SSD'ler HDD'lerden çok hızlıdır ama yine de RAM'den yavaştır.
 - **IPv4 adres sayısı:** $2^{32} \approx 4.3$ milyar adres eder. Derste kaba hesap olarak $2^{30} \approx 10^9$ kullanıldı.
 
-* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

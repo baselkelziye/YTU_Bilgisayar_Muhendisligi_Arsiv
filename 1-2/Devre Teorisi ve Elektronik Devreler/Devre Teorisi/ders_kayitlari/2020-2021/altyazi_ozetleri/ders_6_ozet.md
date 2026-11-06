@@ -126,4 +126,4 @@
 - **Örnek 25'te işaret hatası:** İlk çözümde $V_{TH} = -4$ V bulundu. Hata bağımlı kaynağın kutuplarının ters alınmasından geliyordu. Düzeltilmiş kısıt $V_2 = 3V_1$ ile $V_1 = \frac{20}{3}$ V, $V_2 = 20$ V ve $V_{TH} = 20$ V olur (açık devrede 2 Ω'dan akım akmaz).
 - **Kapasite enerjisi:** Derste bir yerde "1/2 C çarpı $V_C$ kare bölü 2" dendi. Doğrusu $w = \frac{1}{2}Cv^2$'dir; ikinci kez 2'ye bölünmez.
 
-* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

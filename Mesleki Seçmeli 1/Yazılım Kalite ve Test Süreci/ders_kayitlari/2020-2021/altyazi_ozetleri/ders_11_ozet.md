@@ -296,4 +296,4 @@
 - DevOps çevik (agile) yaklaşımla birlikte anılır. Altyazıda "Ecel" diye geçen ifade "agile" kelimesidir.
 - Altyazıda "Makkol" diye geçen McCall kalite modelidir. "Presman" ise Pressman'ın yazılım mühendisliği kitabıdır.
 
-**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

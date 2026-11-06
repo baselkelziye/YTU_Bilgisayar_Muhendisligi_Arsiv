@@ -776,4 +776,4 @@ Altyazıda bozuk geçen terimlerin doğru yazımları:
 - "Motion information": altyazıda bilgi içeriği yaklaşımı için geçiyor. "Mutual information" anlamına gelir, ama slayttaki yöntem türü "Info. Content" olarak yazılıdır.
 - Altyazıda çok anlamlılık başlığında "eş anlamlılık" geçiyor. Polysemy'nin Türkçesi çok anlamlılıktır.
 
-**Not:** İsterseniz bu kayıtları NotebookLM gibi bir araca atıp daha istifadeli hale getirebilirsiniz.
+**Not:** İsterseniz bu kayıtları Gemini Notebook gibi bir araca atıp daha istifadeli hale getirebilirsiniz.

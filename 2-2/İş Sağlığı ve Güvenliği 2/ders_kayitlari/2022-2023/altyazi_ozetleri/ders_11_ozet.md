@@ -129,4 +129,4 @@
 - Yenileme süreleri İSG Risk Değerlendirmesi Yönetmeliği md. 12'de yer alır.
 - Altyazıdaki "tecrüt, dilatım" ifadeleri "tecrit (izolasyon)" demektir. "Beyaz ev sendromu" ifadesi **beyaz parmak hastalığı**dır.
 
-* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

@@ -325,4 +325,4 @@ $$z_i = \frac{x_i - \mu}{\sigma}$$
 - "Bebek bezi ve bira" örneği veri madenciliği literatüründe çok anlatılır ama bir şehir efsanesi olarak da bilinir.
 - Hoca derin öğrenme ile kurulan Go programını anıyor; bu, DeepMind'ın AlphaGo programıdır (2016).
 
-**Not:** İsterseniz bu kayıtları NotebookLM gibi bir araca atıp daha istifadeli hale getirebilirsiniz.
+**Not:** İsterseniz bu kayıtları Gemini Notebook gibi bir araca atıp daha istifadeli hale getirebilirsiniz.

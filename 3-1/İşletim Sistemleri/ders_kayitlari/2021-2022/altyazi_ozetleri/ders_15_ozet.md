@@ -106,4 +106,4 @@ echo $degisken1 $degisken2 $degisken3 $degisken4
 - Ters tırnak yerine bugün daha çok `$(komut)` biçimi kullanılır. İkisi aynı işi yapar.
 - Altyazıdaki "5", "beş" ve "şart programı" ifadeleri "shell" ve "shell programı", "AWS" ise AVESİS demektir.
 
-**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

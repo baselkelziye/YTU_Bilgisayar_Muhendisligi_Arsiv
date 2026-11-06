@@ -100,4 +100,4 @@ Pipe ve yönlendirme kavramları açıklanır. `|` operatörü bir komutun çık
 
 Shell script'in temelleri ele alınır. `#!/bin/bash` shebang satırı, `echo "mesaj"` ekrana yazar, `degisken="deger"` atama yapar, `$degisken` ile erişilir. `if [ koşul ]; then ... fi` koşul yapısıdır. Koşul ifadelerinde `[ ]` kullanılır. `if [ $# -gt 3 ]` argüman sayısı 3'ten büyük mü kontrol eder. `if [ -f dosya ]` dosya var mı kontrol eder. `if [ -d dizin ]` dizin var mı kontrol eder.
 
-* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

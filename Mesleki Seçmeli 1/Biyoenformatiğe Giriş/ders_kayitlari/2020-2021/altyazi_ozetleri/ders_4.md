@@ -38,4 +38,4 @@
 - Adım adım iyileştirme yaklaşımı, karmaşık analizleri yönetilebilir hale getirir. Örneğin bir FASTA dosyasındaki dizileri analiz etmek için önce dosya okuma, sonra başlık satırlarını ayırma, sonra dizi karakterlerini birleştirme, sonra belirli motifleri arama gibi alt adımlar tanımlanabilir.
 - Perl'in biyoenformatikte yaygınlaşmasının temel nedeni, metin ve karakter dizileri üzerinde güçlü işlemler sunmasıdır. Biyolojik diziler de çoğu zaman harf dizileri olarak temsil edildiği için Perl'in düzenli ifade ve örüntü eşleme özellikleri bu alanda kullanışlıdır.
 
-* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

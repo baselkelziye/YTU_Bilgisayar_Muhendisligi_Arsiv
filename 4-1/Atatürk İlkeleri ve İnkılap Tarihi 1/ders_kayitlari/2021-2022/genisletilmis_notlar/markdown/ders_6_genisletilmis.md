@@ -247,4 +247,4 @@ Bu derste Doğu Sorunu, büyük güçlerin çıkarları üzerinden izlendi. Kü�
 
 Hoca Trablusgarp, Balkan ve Birinci Dünya savaşlarını bu sürecin tasfiye aşaması olarak yorumladı. Büyük güçlerin istediği çözüm olan Sevr, Kurtuluş Savaşı ile bozuldu ve Doğu Sorunu Türkiye açısından Lozan'la kapandı. Kapitülasyonların reddi, millet sisteminin tasfiyesi ve yurttaşlık kavramı da hocaya göre bu tarihsel deneyimin cevabıdır. Hocanın derste verdiği akılda kalıcı ölçüt Palmerston'ın sözüdür: Devletlerin kalıcı olan tek şeyi çıkarlarıdır.
 
-**Not:** İsterseniz bu kayıtları NotebookLM gibi bir araca atıp daha istifadeli hale getirebilirsiniz.
+**Not:** İsterseniz bu kayıtları Gemini Notebook gibi bir araca atıp daha istifadeli hale getirebilirsiniz.

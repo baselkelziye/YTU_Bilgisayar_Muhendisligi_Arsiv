@@ -520,4 +520,4 @@ Bu derste işlem verisinden popüler birliktelikleri ve kuralları çıkarma pro
 
 Tablo verisi işlem biçimine çevrilerek aynı algoritmaya verilebilir. Kuralın sağ tarafına etiket konunca da sınıf birliktelik kuralları elde edilir. Dersin sonunda kısaca tanıtılan sıralı örüntü madenciliği gelecek hafta işlenecek.
 
-**Not:** İsterseniz bu kayıtları NotebookLM gibi bir araca atıp daha istifadeli hale getirebilirsiniz.
+**Not:** İsterseniz bu kayıtları Gemini Notebook gibi bir araca atıp daha istifadeli hale getirebilirsiniz.

@@ -170,4 +170,4 @@ System.out.println(listem.getRemovedItems());   // [9, 36, 9, 25]
 - `MyArrayList<Integer>` üzerinde `remove(3)` çağrısı 3 değerini değil, 3. indeksteki elemanı siler. `Integer` listesinde değere göre silmek için `remove(Integer.valueOf(3))` yazılır.
 - Kayıtta 00:11:12 civarı ("Ich sehe so, Jack") ve 00:38:35 civarı ("And it's just public") anlamsız transkripsiyon parçalarıdır. Bu anlarda asistan kod yazıyor.
 
-* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

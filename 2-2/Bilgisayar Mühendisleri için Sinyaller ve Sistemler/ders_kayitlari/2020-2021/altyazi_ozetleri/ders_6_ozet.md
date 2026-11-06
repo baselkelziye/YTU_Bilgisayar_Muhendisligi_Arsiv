@@ -149,4 +149,4 @@
 - Kare dalga katsayıları sayısal integralle doğrulandı: $b_1 = 2/\pi \approx 0.6366$, $b_3 \approx 0.2122$, $b_5 \approx 0.1273$; çift $k$'lar için $c_k = 0$.
 - Derste "$c_k$ integrali bir konvolüsyondur" dendi. Daha doğrusu bu bir iç çarpım (korelasyon) işlemidir: işaret, $e^{-jk\omega_0 t}$ ile çarpılıp bir periyot boyunca integre edilir. Ters çevirme ve kaydırma yoktur.
 
-**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi daha verimli çalışabilirsiniz.
+**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi daha verimli çalışabilirsiniz.

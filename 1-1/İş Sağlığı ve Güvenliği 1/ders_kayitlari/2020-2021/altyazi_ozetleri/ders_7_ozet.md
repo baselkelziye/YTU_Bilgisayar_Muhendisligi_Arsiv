@@ -195,4 +195,4 @@
 - **4857 md. 71 ayrıntısı:** Sunumda 14 yaşındaki çocukların yalnızca sanat, kültür ve reklam işlerinde çalışabileceği söylendi. Bu sınırlama 14 yaşını doldurmamış çocuklar içindir. Çocukların çalışma süresi günde 7, haftada 35 saati geçemez. 15 yaşını doldurmuş çocuklar için günde 8, haftada 40 saate çıkarılabilir. Sunumdaki "haftada 48 saat" yanlıştır.
 - **Çocuk işçi istatistikleri:** "168 milyon çocuk işçi" sayısı ILO'nun 2013 raporundaki (2012 verisi) tahmindir. Sonraki raporlarda sayı 152 milyon (2016) ve 160 milyon (2020) olarak verildi. BM Çocuk Hakları Sözleşmesi 1989'da kabul edildi. Bugün 196 tarafı vardır. Türkiye için verilen "2 milyon" sayısı doğrulanamadı.
 
-* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

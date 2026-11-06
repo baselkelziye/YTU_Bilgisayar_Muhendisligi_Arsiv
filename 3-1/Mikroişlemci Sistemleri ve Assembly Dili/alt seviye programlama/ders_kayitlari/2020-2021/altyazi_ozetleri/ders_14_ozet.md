@@ -26,4 +26,4 @@
 
 Yüksek seviyeli diller (C/C++ gibi) geliştirme kolaylığı sağlarken, Assembly dili maksimum donanım kontrolü ve hız sunar. Bu iki dünyayı birleştirmek için Inline Assembly (satır içi assembly) kullanılır. C/C++ kodu içinde __asm veya asm anahtar kelimeleriyle assembly blokları açılır. Bu sayede C değişkenlerine doğrudan assembly komutlarıyla erişilebilir, registerlar manipüle edilebilir. Inline assembly, özellikle görüntü işleme filtreleri, kriptografik algoritmalar veya donanım sürücüsü yazımı gibi performans kritik kısımları optimize etmek için tercih edilir. Ancak derleyicinin register tahsis (register allocation) optimizasyonları ile çakışmamak için kullanılan registerların bildirilmesi önemlidir.
 
-* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

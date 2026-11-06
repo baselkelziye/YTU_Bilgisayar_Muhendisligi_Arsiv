@@ -229,4 +229,4 @@ $$L=\int_\alpha^\beta\sqrt{r^2+\left(r'\right)^2}\,d\theta.$$
 
 ---
 
-İsterseniz bu özeti NotebookLM gibi bir araca atıp daha istifadeli hale getirebilirsiniz.
+İsterseniz bu özeti Gemini Notebook gibi bir araca atıp daha istifadeli hale getirebilirsiniz.

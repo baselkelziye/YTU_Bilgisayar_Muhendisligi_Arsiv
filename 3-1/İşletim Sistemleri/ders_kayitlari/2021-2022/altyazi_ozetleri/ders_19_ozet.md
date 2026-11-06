@@ -189,4 +189,4 @@ $P_0$ `wait(S)` yapar ve kesilir. $P_1$ `wait(Q)` yapar. Şimdi $P_0$ $Q$'yu, $P
 - Hoca PowerPC'de `compare_and_swap` biçiminde komutlar olduğunu söyledi. PowerPC atomik işlemleri `lwarx`/`stwcx.` (load-linked/store-conditional) komut çiftiyle yapar. Doğrudan `compare_and_swap` biçimindeki komut x86'daki `CMPXCHG`'dir.
 - Altyazıdaki "aydan potent" eşgüçlü (idempotent), "shape memory" paylaşımlı bellek (shared memory), "malta korunumuz" çok çekirdek (multi-core), "require" `acquire`, "weight" `wait` demektir.
 
-**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

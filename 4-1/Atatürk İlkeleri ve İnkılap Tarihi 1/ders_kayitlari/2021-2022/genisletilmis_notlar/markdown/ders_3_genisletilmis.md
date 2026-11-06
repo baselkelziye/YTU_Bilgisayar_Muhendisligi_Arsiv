@@ -299,4 +299,4 @@ Bu derste klasik çağ Osmanlı devletinin mantığı kuruldu. Osmanlı, Doğu d
 
 Padişahın gücünün kaynağı iki yetkidir. Siyaseten katl can güvencesini ortadan kaldırır; bürokraside mutlak itaat, idare-i maslahat ve liyakatin bozulması bundan doğar. Müsadere mal güvencesini ortadan kaldırır; özel mülkiyetin ve Müslüman-Türk burjuvazisinin gecikmesi bundan doğar. Bunları tamamlayan devşirme ise yerli aristokrasinin yerine kökeninden koparılmış bir yönetici sınıf koyarak hanedanı rakipsiz kılar. Modernleşme konularını anlamak için başlangıç noktası bu düzendir. Dersin ikinci bölümünde, aynı gün **millet sistemi** ele alınacaktır.
 
-**Not:** İsterseniz bu kayıtları NotebookLM gibi bir araca atıp daha istifadeli hale getirebilirsiniz.
+**Not:** İsterseniz bu kayıtları Gemini Notebook gibi bir araca atıp daha istifadeli hale getirebilirsiniz.

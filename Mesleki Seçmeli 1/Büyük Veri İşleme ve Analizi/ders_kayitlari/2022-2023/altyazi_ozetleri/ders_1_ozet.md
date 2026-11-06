@@ -110,4 +110,4 @@ Tarih: 1 Mart 2023 Çarşamba. Online ders (Zoom), saat 09.00. Dersin ilk bölü
 - Kayıtta 00:34:24 civarındaki bir bölüm ve 00:48:26 civarı bozuk (döngüye girmiş altyazı). Bu kısımlar özetlenmedi.
 - Hoca "Mining Massive Data Sets" dersinin adını söylerken altyazıda kelimeler karışmış. Doğru ad: Mining of Massive Datasets (Stanford CS246).
 
-**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

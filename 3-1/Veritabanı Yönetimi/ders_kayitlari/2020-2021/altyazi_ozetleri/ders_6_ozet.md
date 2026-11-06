@@ -192,4 +192,4 @@
 
 - **Operatör Sırası ve İlişkisel Cebir Ağacı:** Operatörlerin uygulanma sırası önemlidir. Sigma (yatay filtre) ve Pi (dikey filtre) yer değiştiremez — önce Pi uygulanırsa filtreleme için gerekli nitelikler kaybolabilir. İki Sigma kendi arasında yer değiştirebilir. Sort işlemi çoğu zaman outmost (en dış) operatördür, yani diğer işlemler bittikten sonra uygulanır. Sort niteliklerinin sırası sonucu değiştirir: önce A'ya göre sonra B'ye göre sıralamak ile önce B'ye göre sonra A'ya göre sıralamak farklı sonuçlar üretir.
 
-* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

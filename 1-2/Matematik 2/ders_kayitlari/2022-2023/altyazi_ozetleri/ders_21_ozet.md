@@ -138,4 +138,4 @@ $$\iint_B dx\,dy=\int_2^3\!\int_1^4\frac13\,du\,dv=\frac13\cdot3\cdot1=1$$
 - Altyazıda "Trabzon" diye geçen kelime değişken adıdır ($u$ dönüşümü). Bazı yerlerde $\theta$ "teta", $\varphi$ "fi" diye geçiyor.
 - Ders "yarın görüşmek üzere" diye bitti. Sonraki ders 9 Mayıs Salı.
 
-İsterseniz bu kayıtları NotebookLM gibi bir araca atıp daha istifadeli hale getirebilirsiniz.
+İsterseniz bu kayıtları Gemini Notebook gibi bir araca atıp daha istifadeli hale getirebilirsiniz.

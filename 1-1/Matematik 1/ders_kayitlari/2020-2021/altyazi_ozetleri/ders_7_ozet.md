@@ -241,4 +241,4 @@
 - Kayıtta kısa ara verildiği için 02:08 ile 02:21 arası boştur.
 - Bazı bölümlerin sözlü anlatımı (ör. 00:21:41, 00:27:14, 00:34:19, 01:43:44, 02:29:09) altyazıda döngüye girmiş. Bu kısımlar altyazıda anlaşılmıyor. Çözümler ekrandaki ders notlarından tamamlandı.
 
-**Not:** İsterseniz bu kayıtları NotebookLM gibi bir araca atıp daha istifadeli hale getirebilirsiniz.
+**Not:** İsterseniz bu kayıtları Gemini Notebook gibi bir araca atıp daha istifadeli hale getirebilirsiniz.

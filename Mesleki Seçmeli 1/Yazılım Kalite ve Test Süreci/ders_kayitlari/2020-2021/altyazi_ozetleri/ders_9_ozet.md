@@ -260,4 +260,4 @@
 - Scrum'da koşu süresi en fazla bir aydır. İki hafta yaygın bir seçimdir. XP'de de 1-2 haftalık iterasyonlar vardır.
 - Hocanın verdiği firma düzeyleri ders tarihindeki (Aralık 2020) bilgilerdir. Güncel düzeyler CMMI Institute'un yayımladığı değerlendirme listesinden kontrol edilmelidir.
 
-**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

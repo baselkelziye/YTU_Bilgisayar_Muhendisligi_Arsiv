@@ -213,4 +213,4 @@ Hoca bu konu için evde çözülecek iki ardışıl devre tasarım sorusu payla�
 - Derste bir yerde "SR flip-flop" denip sonra "SR latch" diye düzeltildi. Ayrım sembolden yapılır: clock girişinde kenar tetikleme üçgeni yoksa eleman latch'tir, varsa flip-flop'tur.
 - Sayısal örnekler (84 - 67, 6 - 13, 6 + 13, 70 + 80) ve Mealy state table'ı Python ile kontrol edildi; sonuçlar derstekiyle aynı.
 
-**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

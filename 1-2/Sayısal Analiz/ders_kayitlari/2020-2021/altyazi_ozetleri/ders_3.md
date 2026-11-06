@@ -34,4 +34,4 @@ Bağl hatası, hatanın büyüklüğünü gerçek değere göre orantılamanız�
 
 Kayan nokta gösterimi, bilgisayarda reel sayıların saklanma biçimidir. Normalize edilmiş formatta, birgülden sonra bir anlamlı basamak yer alır ve kalan basamaklar exponent (üs) ile ifade edilir. Bu gösterim sayesinde hem büyük hem de küçük sayılar aynı formatta işlenebilir.
 
-* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

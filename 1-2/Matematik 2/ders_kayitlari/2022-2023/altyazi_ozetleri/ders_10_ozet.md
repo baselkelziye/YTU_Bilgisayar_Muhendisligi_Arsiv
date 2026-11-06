@@ -212,4 +212,4 @@ Kısmi türevlere sonraki derste devam edilecek.
 - **Ardışık limit:** Hoca "$L_1=L_2$ ise iki katlı limit vardır" dedi. Doğru ifade: iki ardışık limit eşittir. Bu, limitin varlığını garanti etmez.
 - **Örnek 3:** Kök içindeki ifade ve bölgenin çizimi altyazıda net anlaşılmıyor.
 
-İsterseniz bu özeti NotebookLM gibi bir araca atıp daha istifadeli hale getirebilirsiniz.
+İsterseniz bu özeti Gemini Notebook gibi bir araca atıp daha istifadeli hale getirebilirsiniz.

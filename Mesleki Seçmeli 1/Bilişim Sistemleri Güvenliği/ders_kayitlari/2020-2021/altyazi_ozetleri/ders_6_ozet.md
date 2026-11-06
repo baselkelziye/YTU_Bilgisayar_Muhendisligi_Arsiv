@@ -40,4 +40,4 @@
 - Same Origin Policy, web güvenliğinin temel erişim kontrol mekanizmasıdır. Bir sayfa başka kaynağa istek gönderebilir; ancak cevabın okunması origin politikasına bağlıdır. Bu ayrım CSRF, XSS ve cookie theft gibi saldırıları anlamak için önemlidir.
 - Cookie'lerin domain ve path kapsamı doğru belirlenmezse bir alt alan adı veya farklı yol beklenmeyen cookie değerlerine erişebilir ya da onları gönderebilir. Bu nedenle cookie kapsamı en az yetki ilkesiyle uyumlu ayarlanmalıdır.
 
-* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

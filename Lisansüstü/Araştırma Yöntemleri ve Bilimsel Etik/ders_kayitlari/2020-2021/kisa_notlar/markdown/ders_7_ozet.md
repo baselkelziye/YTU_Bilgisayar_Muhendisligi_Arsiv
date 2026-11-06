@@ -267,4 +267,4 @@
 - Hocanın aktardığı kabul puanı eşikleri o tarihteki hakem bilgilendirmesine dayanıyor. Güncel eşikler için TÜBİTAK'ın güncel duyurularına bakılmalı.
 - Altyazının 00:31:43 civarındaki "Negros" kelimesi anlamsız bir Whisper hatasıdır.
 
-**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

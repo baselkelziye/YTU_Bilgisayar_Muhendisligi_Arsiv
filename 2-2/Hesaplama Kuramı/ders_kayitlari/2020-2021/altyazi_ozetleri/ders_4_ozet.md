@@ -131,4 +131,4 @@ DFA'nın durumlarına NFA durum kümelerinin adı verilir. Başlangıç durumu $
 - Alt küme yapısında başlangıç durumu, $q_0$'dan $\varepsilon$ geçişleriyle ulaşılabilen bütün durumların kümesidir ($\varepsilon$-kapanışı, epsilon closure). Bu örnekte $q_0$'dan $\varepsilon$ geçişi olmadığı için küme $\{q_0\}$'dır.
 - $(ab)^*(aa \cup \varepsilon)$ ifadesinin hocanın verdiği $(ab)^*\{aa\} \cup (ab)^*$ ile aynı dili verdiği, 8 sembole kadar bütün dizgilerde Python ile denendi.
 
-**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz. Ders İngilizce anlatılmıştır; altyazı da büyük ölçüde İngilizcedir.
+**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz. Ders İngilizce anlatılmıştır; altyazı da büyük ölçüde İngilizcedir.

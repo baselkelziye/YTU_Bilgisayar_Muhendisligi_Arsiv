@@ -213,4 +213,4 @@ HEAPSORT(A, n)
 - **Heap space:** Java'daki heap alanı, `new` ile oluşturulan nesnelerin tutulduğu dinamik bellek alanıdır. Değişkenlerin adreslerinin tutulduğu yer değildir. Veri yapısı olan heap ile ilgisi yoktur.
 - **Heap sort:** Yerinde (in-place) çalışır ama kararlı (stable) değildir.
 
-**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

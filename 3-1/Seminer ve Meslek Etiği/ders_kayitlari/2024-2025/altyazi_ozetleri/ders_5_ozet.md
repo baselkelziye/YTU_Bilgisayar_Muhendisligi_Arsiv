@@ -236,4 +236,4 @@
 - **Rektör seçimi:** Seçimler 2016'da 676 sayılı KHK ile kaldırıldı. 2018'den beri rektörü Cumhurbaşkanı atıyor. Hoca bu değişikliği "başkanlık sistemiyle birlikte" olarak anlattı; seçimlerin kalkması bundan iki yıl önce oldu.
 - **"Gerçek bir bilimsel katkı":** Hocanın verdiği tanım genel çerçevedir. Uluslararası yaygın ölçüt ICMJE yazarlık kriterleridir. Bu ölçüte göre yazar, hem çalışmaya katkı vermeli, hem metni yazmalı veya eleştirel olarak gözden geçirmeli, hem son hali onaylamalı, hem de çalışmanın sorumluluğunu üstlenmelidir.
 
-**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

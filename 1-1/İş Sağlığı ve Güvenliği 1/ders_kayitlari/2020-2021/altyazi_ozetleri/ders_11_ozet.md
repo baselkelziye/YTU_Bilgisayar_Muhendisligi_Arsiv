@@ -235,4 +235,4 @@
 - **2018 istatistikleri:** Sunumdaki değerler SGK verilerine dayanıyor. Kaynağa göre küçük farklar olabilir. Kesin değerleri SGK istatistik yıllığından kontrol edin.
 - **Meslek hastalıkları hastaneleri:** Kuruluş yılları ve bugünkü durumları (bazıları sonradan başka hastanelere bağlandı) sunumda tam net değil. Güncel bilgiyi kontrol edin.
 
-* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

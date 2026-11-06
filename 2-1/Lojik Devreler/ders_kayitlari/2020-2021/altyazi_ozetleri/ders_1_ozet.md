@@ -55,4 +55,4 @@ Derste lojik devrelerin altyapısını oluşturan sayısal işaret işleme (digi
 
 DC/AC ayrımı da temel bir kavram olarak işlenmiştir. Herhangi bir işaret, sabit bir DC seviye ile sıfır ortalamalı AC salınımın toplamı şeklinde modellenebilir. Bu ayrım Fourier analizindeki f=0 bileşenine (DC) ve f>0 bileşenlerine (AC harmonikleri) karşılık gelir.
 
-* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

@@ -346,4 +346,4 @@ Sırada C programlama var. Hoca, akış diyagramıyla çözülen algoritmaların
 
 > **Hocanın vurgusu:** Bu dersi çalışmanın en güvenilir yolu, dersi dinleyip notunu kendiniz almak ve çözülmüş algoritmaları kapatıp kendiniz yeniden çözmeye çalışmaktır.
 
-**Not:** İsterseniz bu kayıtları NotebookLM gibi bir araca atıp daha istifadeli hale getirebilirsiniz.
+**Not:** İsterseniz bu kayıtları Gemini Notebook gibi bir araca atıp daha istifadeli hale getirebilirsiniz.

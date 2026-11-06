@@ -303,4 +303,4 @@
 - Bir öğrenci test süreci adımlarını sayarken kara kutu testini de bir adım olarak saydı. Kara kutu testi bir adım değil, test tipidir.
 - Whisper altyazıda "bilim testi" geçer; doğrusu "birim testi"dir. "Arfa testi" de "alfa testi"dir.
 
-**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

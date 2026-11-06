@@ -168,4 +168,4 @@ $$A=0{,}8\begin{pmatrix}1/2&1/2&0\\1/2&0&0\\0&1/2&1\end{pmatrix}+0{,}2\begin{pma
 - **Eksik kayıt:** Hoca prestij metriklerini (derece prestiji, yakınlık prestiji, sıra prestiji) ve ortak atıfın başlangıcını "geçen hafta" anlattığını söylüyor. Ders 10'un kaydı merkezilik metrikleriyle bitiyor. Prestij metriklerinin anlatıldığı ders bu şubenin kayıtlarında yok.
   - Kitaptaki tanımlar: derece prestiji $P_D(i)=\frac{d_I(i)}{n-1}$ (giriş derecesi). Yakınlık prestiji, $i$'ye ulaşabilen düğümlerin oranının, bu düğümlerin $i$'ye ortalama uzaklığına bölümüdür.
 
-**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

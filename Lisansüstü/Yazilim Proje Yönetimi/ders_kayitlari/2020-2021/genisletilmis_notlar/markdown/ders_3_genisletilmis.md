@@ -500,4 +500,4 @@ Bu derste yazılım proje planının ne olduğu ve nasıl oluşturulduğu görü
 
 Dersin son kısmında proje planının net içerik listesi ve risk kategorileri işlendi. Ürün büyüklüğü, işletmecilik, müşteri, süreç, teknik ve personel başlıklarındaki sorular hem riskleri hem varsayım ve kısıtları belirlemek için kullanılabilir. Hoca önümüzdeki hafta risk analizine ve varsayım-kısıt konusuna devam edeceğini, zaman çizelgesi ve aktiviteler arası ilişkiler üzerinde de duracağını söyledi.
 
-**Not:** İsterseniz bu kayıtları NotebookLM gibi bir araca atıp daha istifadeli hale getirebilirsiniz.
+**Not:** İsterseniz bu kayıtları Gemini Notebook gibi bir araca atıp daha istifadeli hale getirebilirsiniz.

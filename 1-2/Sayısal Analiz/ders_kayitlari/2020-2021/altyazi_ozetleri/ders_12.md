@@ -38,4 +38,4 @@ Sonlu farklar, sayısal analizin temel konularından biridir. Sürekli fonksiyon
 
 İnterpolasyon konusuna giriş yapıldı. Elimizdeki ayrık veri noktalarından geçen bir fonksiyon üretilerek aradaki değerler tahmin edilebilir. Bu tahmin her zaman doğru olmayabilir, ancak hiçbir veri olmamaktan daha iyidir. Sonlu farklar, interpolasyon methodlarının temelini oluşturur.
 
-* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

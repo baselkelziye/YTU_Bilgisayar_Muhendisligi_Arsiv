@@ -41,4 +41,4 @@ Ekstrapolasyon konusu da kısaca ele alındı; verilen aralığın dışında ka
 
 Dersin sonunda sayısal analizin tüm konuları (hata analizi, eşitlik çözümü, integral, türev, interpolasyon, regresyon) gözden geçirildi ve hangi konunun ne zaman işlendiği özetlendi.
 
-* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

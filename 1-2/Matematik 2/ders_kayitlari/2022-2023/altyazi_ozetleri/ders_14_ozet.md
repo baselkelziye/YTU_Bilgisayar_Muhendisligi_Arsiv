@@ -176,4 +176,4 @@ $$D_{\vec u}f(P_0)=\nabla f(P_0)\cdot\vec u.$$
 
 ---
 
-İsterseniz bu kayıtları NotebookLM gibi bir araca atıp daha istifadeli hale getirebilirsiniz.
+İsterseniz bu kayıtları Gemini Notebook gibi bir araca atıp daha istifadeli hale getirebilirsiniz.

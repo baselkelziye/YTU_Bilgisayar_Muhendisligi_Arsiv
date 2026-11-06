@@ -47,4 +47,4 @@
 - **Tekil matris:** Gauss-Jordan ile ters alırken bir satır tamamen sıfır olursa (determinant sıfır) ters yoktur (Ders 4). Kodunuz bu durumda sıfıra bölmek yerine anlamlı bir mesaj vermeli.
 - **Gösterimdeki Gauss-Seidel sisteminin çözümü:** $3x + y = 11$ ve $2x + 5y = 16$ sisteminin çözümü $x = 3$, $y = 2$'dir.
 
-* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

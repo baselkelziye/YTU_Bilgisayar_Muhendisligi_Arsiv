@@ -129,4 +129,4 @@ $$C_w(n) = C_w(\lfloor n/2 \rfloor) + 1,\quad C_w(1) = 1 \;\Rightarrow\; C_w(n) 
 - **Kaba kuvvet EBOB:** Bilinen kaba kuvvet yöntemi, $t = \min(m, n)$'den başlayıp iki sayıyı da bölen ilk $t$'yi bulana kadar $t$'yi azaltmaktır (ardışık tam sayı kontrolü). Öğrencinin ilk söylediği mod alarak yer değiştirme yöntemi Öklid algoritmasıdır, kaba kuvvet değil.
 - **İkili arama formülünün kontrolü:** Python ile $n = 1, 2, 7, 8, 100$ için bağıntı 1, 2, 3, 4, 7 verdi. Bu, $\lfloor \log_2 n \rfloor + 1$ ve $\lceil \log_2(n+1) \rceil$ ile aynıdır.
 
-**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

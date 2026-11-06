@@ -225,4 +225,4 @@ public class OgrenciKart extends Kart {
 - **Interface'lerdeki default metotlar:** Hoca "yeni Java sürümlerinde interface'e default metot yazılabilir" dedi. Bu özellik Java 8 ile geldi.
 - **`sin(i, c + s, i)` çalışırken hoca "4 nasıl çalıştı?" diye şaşırdı.** Yukarıdaki not bunun nedenini açıklar. Bütün çağrılar Java ile çalıştırılıp doğrulandı.
 
-* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

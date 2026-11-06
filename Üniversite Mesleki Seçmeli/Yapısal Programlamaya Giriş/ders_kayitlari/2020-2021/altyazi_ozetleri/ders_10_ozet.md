@@ -160,4 +160,4 @@ Ders sonrasında denendi: `B[0]=1`, `B[1]=1`, `B[3]=2`, `B[6]=1`, `B[8]=2`, `B[9
 - **Sıralılık kontrolünde eşit elemanlar:** Derste kurulan şart `a[i] < a[i+1]`'dir. Bu şartla 1 2 2 3 gibi eşit elemanlı sıralı bir dizi "sıralı değil" olarak görülür. Küçükten büyüğe sıralılık için `a[i] <= a[i+1]` kullanılmalıdır. Ders sonrasında 1 3 3 5 8 9 dizisi bu şartla "sıralı" çıktı.
 - **`printf` ve `%lf`:** Derste `double` yazdırırken `%lf` kullanıldı. `printf`'te `float` değerler zaten `double`'a çevrildiği için `%f` yeterlidir. `%lf`, `printf`'te C99'dan beri `%f` ile aynı anlamdadır. C89'da `printf` için tanımlı değildir (`gcc -std=c89 -pedantic` uyarı verir). `scanf`'te ise `double` okumak için `%lf` zorunludur.
 
-* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

@@ -35,4 +35,4 @@
 - Sonraki adım, fonksiyonu Boolean cebri veya Karnaugh haritası ile sadeleştirmektir. Sadeleşmiş ifade hangi kapılarla kurulacaksa ona uygun dönüşümler yapılır. Örneğin yalnızca belirli bir kapı türü kullanılacaksa De Morgan dönüşümleri ve NOT elde etme yöntemleri devre tasarımında kullanılır.
 - Simülasyon programında girişler değiştirilerek çıkışın doğruluk tablosuyla uyuşup uyuşmadığı gözlenir. Bu adım, cebirsel çözümün devre düzeyinde doğru çalıştığını doğrular.
 
-* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

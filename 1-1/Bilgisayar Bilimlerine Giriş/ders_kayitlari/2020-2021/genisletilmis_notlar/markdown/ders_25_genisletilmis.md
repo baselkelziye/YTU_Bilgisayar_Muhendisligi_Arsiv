@@ -439,4 +439,4 @@ Dersin ilk yarısında dönem projesi olan Kızma Birader oyununun kuralları, t
 
 İkinci yarıda iki küçük C programı birlikte yazıldı. Kelime karşılaştırmada null karakterinin her harften küçük olması, sütun yazdırmada satır ve sütun indislerinin ayrımı, süslü parantezlerin önemi ve kontrol amaçlı `printf` ile hata ayıklama görüldü. Kısa kelimelerin bittiği yerden sonrasını okuma sorunu bir sonraki derse bırakıldı.
 
-**Not:** İsterseniz bu kayıtları NotebookLM gibi bir araca atıp daha istifadeli hale getirebilirsiniz.
+**Not:** İsterseniz bu kayıtları Gemini Notebook gibi bir araca atıp daha istifadeli hale getirebilirsiniz.

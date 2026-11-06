@@ -230,4 +230,4 @@ Sonraki konu Bölüm 2: ilişkilendirme kuralı madenciliği (association rule m
   - 01:25–01:26 arasındaki İngilizce cümleler, hocanın Türkçe söylediklerinin bozuk çevirisidir.
   - "Filiqr", "Filikl" Flickr; "Begok words", "Beghoff" bag of words; "online.yelubis.edu" Online Yıldız demektir.
 
-**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

@@ -292,4 +292,4 @@ tüm özellikler --> alt küme seçimi (istatistik) --> öğrenme algoritması -
   - Bir sonraki hafta işbirlikçi filtreleme (collaborative filtering) ve derin öğrenmeye kısa bir giriş yapılacak.
 - **Tatil:** bu derste geçmiyor.
 
-NotebookLM gibi bir araca altyazı dosyasını yükleyerek bu ders hakkında daha ayrıntılı soru-cevap yapabilirsiniz.
+Gemini Notebook gibi bir araca altyazı dosyasını yükleyerek bu ders hakkında daha ayrıntılı soru-cevap yapabilirsiniz.

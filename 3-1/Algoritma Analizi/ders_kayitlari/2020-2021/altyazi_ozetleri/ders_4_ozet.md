@@ -81,4 +81,4 @@ Sonuç sabit olduğu için iki fonksiyon aynı derecede büyür: $\frac{1}{2}n(n
 - **Hafıza değil zaman:** Bir öğrenci insertion sort'taki $O(n^2)$'nin bellek karmaşıklığı olup olmadığını sordu. Burada konuşulan zaman (işlem sayısı) karmaşıklığıdır. Insertion sort ek bellek olarak yalnız $O(1)$ kullanır (yerinde, in-place sıralama).
 - **Altyazı hataları:** "InSocial Sort", "Insurgent Sort", "Insolution sort" insertion sort demektir. "Eurich K" average case'tir.
 
-**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

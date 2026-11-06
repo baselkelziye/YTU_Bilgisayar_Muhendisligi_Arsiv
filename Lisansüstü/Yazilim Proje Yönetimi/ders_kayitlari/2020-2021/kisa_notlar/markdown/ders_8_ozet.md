@@ -24,4 +24,4 @@
 
 - Hoca sınav süresini "yetmiş dakika" diye söyledi. Çeyrek geçe başlayıp 10.30'da biten bir sınav 75 dakikadır. Kesin başlangıç saati altyazıda geçmiyor.
 
-**Not:** İsterseniz bu kayıtları NotebookLM gibi bir araca atıp daha istifadeli hale getirebilirsiniz.
+**Not:** İsterseniz bu kayıtları Gemini Notebook gibi bir araca atıp daha istifadeli hale getirebilirsiniz.

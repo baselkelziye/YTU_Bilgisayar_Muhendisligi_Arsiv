@@ -315,4 +315,4 @@ void deleteNode(int value)
 - Dairesel listede arama yaparken aranan değer yoksa döngü sonsuza kadar sürebilir. Bu yüzden döngü, başa dönülünce (`current == head`) durdurulmalıdır.
 - Kaydın 00:57 civarında görüntü sorunu nedeniyle yaklaşık 2,5 dakikalık bir kesinti var.
 
-**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

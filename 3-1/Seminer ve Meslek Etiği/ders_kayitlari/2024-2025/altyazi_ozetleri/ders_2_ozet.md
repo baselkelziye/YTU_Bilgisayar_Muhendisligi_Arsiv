@@ -194,4 +194,4 @@
 - **Sözlerin kaynağı:** "21. yüzyılın cahilleri" sözünü Alvin Toffler *Future Shock* kitabında psikolog Herbert Gerjuoy'dan alıntılar. Einstein, Konfüçyüs ve Hz. Ali'ye atfedilen sözlerin kaynağı tartışmalıdır.
 - **Altyazı hataları:** "COSGAP/Cosgap" KOSGEB, "T-DEP" TEYDEB, "R-G" Ar-Ge, "BIG" BiGG, "TÜBİTAN" TÜBİTAK, "Alvin Tochter" Alvin Toffler, "Spinov" spin-off, "Gireşimcilik/gelişimci" girişimcilik/girişimci, "izbilite" fizibilite, "enovasyon" inovasyon, "algın öğrenimi" algın eğitim (informal), "Aristo kulesinin" Aristoteles okulunun anlamındadır.
 
-**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

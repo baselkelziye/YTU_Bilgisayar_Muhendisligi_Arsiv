@@ -246,4 +246,4 @@ Hocanın araştırma soruları:
 - **Prim örneği:** Hoca ikinci örnekte bir adımda yanlış kenarı işaretledi. Bir öğrenci uyardı, hoca düzeltti. Tablo düzeltilmiş hâliyle verildi.
 - **`break` kullanımı:** `while` içinde `break` kullanmamak hocanın tercih ettiği bir stil kuralıdır. C dilinde hata değildir; sınavda hocanın tercihine uyun.
 
-**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

@@ -38,4 +38,4 @@ Trigonometrik fonksiyonlar (sin, cos, tan vb.), logaritmik fonksiyonlar ve üste
 
 Kök bulma yöntemlerinin (bisection, regula falsi, Newton-Raphson) uygulanabilmesi için önce fonksiyonun bilgisayarda temsil edilmesi gerekir. Bu temsil sayesinde fonksiyonun belirli noktalardaki değerleri hesaplanabilir ve iteratif yöntemler çalıştırılabilir.
 
-* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

@@ -247,4 +247,4 @@ public boolean kitapEkle(Kitap[] k) {
   - Kapasite 8 ile denendiğinde 8 kitap listelendi: ID'ler `0..3` ve `5..8`. Adlar `"Java" + i` olduğu için ikinci grubun adları da `Java0..Java3` olur.
 - **Tip dönüşümü sorusu:** Bir öğrenci "s sıfır olsa da olmuyor değil mi?" diye sordu. Değişkenler için cevap doğrudur. İstisna: derleme zamanında bilinen sabitlerde daraltma yapılabilir. Örnek: `final short s = 3; byte b = s;` derlenir.
 
-**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

@@ -435,4 +435,4 @@ Hoca bir sonraki iki hafta uygulama saatinde kod yazacağını söyledi. Böylec
 
 > **Hocanın vurgusu:** Hem soru sorun hem fikir üretin. Sadece sorarak bir yere varamazsınız, sadece fikir üreterek de bir yere varamazsınız. Fikrinizin doğruluğu ve yanlışlığı konuşuldukça gelişirsiniz.
 
-**Not:** İsterseniz bu kayıtları NotebookLM gibi bir araca atıp daha istifadeli hale getirebilirsiniz.
+**Not:** İsterseniz bu kayıtları Gemini Notebook gibi bir araca atıp daha istifadeli hale getirebilirsiniz.

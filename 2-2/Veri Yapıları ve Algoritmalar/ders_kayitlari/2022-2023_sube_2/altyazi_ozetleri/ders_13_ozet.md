@@ -217,4 +217,4 @@ Hoca bunları gelecek haftaya alıştırma olarak bıraktı:
 - **Max heap'te en küçük:** Hoca en küçüğün "son seviyede" olduğunu söyledi. Doğrusu: en küçük eleman bir yapraktadır. Complete ağaçta yapraklar son seviyede ve sondan bir önceki seviyenin sağ tarafında olabilir. Dizide `n/2 + 1`'den `n`'e kadar olan gözlere bakmak yeter.
 - **Ortadan silme:** Kök dışında bir eleman silinirken yerine gelen son eleman, ebeveyninden büyük olabilir. Bu durumda aşağı değil yukarı yönlü düzeltme (up-heap) gerekir.
 
-**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

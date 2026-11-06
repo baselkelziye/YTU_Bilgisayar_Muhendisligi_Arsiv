@@ -37,4 +37,4 @@ Dersler 8 Mart 2021 Pazartesi günü başlamıştır. Ders haftada iki kez (Paza
 - 22 numaralı ders kaydı (24 - 31 Mayıs 2021 arası) kayıt arşivinde bulunmamaktadır. Bu aralıkta 25 Mayıs ek dersi ve 28 Mayıs vize sınavı vardır.
 - 10 ve 14 Mayıs 2021 tarihlerine ait kayıt bulunmamaktadır. Bu hafta Ramazan Bayramı'na denk gelmektedir.
 
-**Not:** İsterseniz bu kayıtları NotebookLM gibi bir araca atıp daha istifadeli hale getirebilirsiniz.
+**Not:** İsterseniz bu kayıtları Gemini Notebook gibi bir araca atıp daha istifadeli hale getirebilirsiniz.

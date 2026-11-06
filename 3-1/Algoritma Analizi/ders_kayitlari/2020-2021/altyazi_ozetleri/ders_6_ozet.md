@@ -92,4 +92,4 @@ $$
 - **$\log n!$ yaklaşımı:** Bir öğrencinin önerdiği $\log n! - \log n$ yolu da doğrudur. $\log n! \in \Theta(n \log n)$ olduğu için sonuç aynıdır.
 - **Alıştırma 2 doğrulama:** $n = 1, 3, 9, 27, 81$ için $x(n) = 1, 2, 3, 4, 5$ çıkar. Bu, $\log_3 n + 1$ ile aynıdır (Python ile kontrol edildi).
 
-**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

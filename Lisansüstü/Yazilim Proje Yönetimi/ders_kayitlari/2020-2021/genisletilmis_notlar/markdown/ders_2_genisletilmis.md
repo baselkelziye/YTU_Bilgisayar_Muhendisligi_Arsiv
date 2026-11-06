@@ -595,4 +595,4 @@ Bu derste yazılım proje yönetimi, önce yazılım mühendisliği içindeki ye
 
 Dersin ikinci yarısında proje yönetiminin yol haritası kuruldu: başlama (anlama ve tanımlama), planlama, yürütme ile izleme ve kontrol, kapanış. Bu süreçlerin yazılım geliştirme adımlarıyla karıştırılmaması gerektiği özellikle vurgulandı. Başlama sürecinde proje beratı ve paydaşlar, planlama sürecinde ise WBS, zaman yönetimi (Gantt, PERT, kritik yol) ve maliyet yönetimi görüldü. Hoca, yazılım projeleri için gereken diğer bilgi alanlarına, bu arada iletişim yönetimine, sonraki derslerde devam edeceğini söyledi. Proje organizasyonunun ayrıntıları da planlama aşamasındaki ekip yapısı kurulurken ele alınacak.
 
-**Not:** İsterseniz bu kayıtları NotebookLM gibi bir araca atıp daha istifadeli hale getirebilirsiniz.
+**Not:** İsterseniz bu kayıtları Gemini Notebook gibi bir araca atıp daha istifadeli hale getirebilirsiniz.

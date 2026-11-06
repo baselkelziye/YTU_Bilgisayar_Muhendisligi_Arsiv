@@ -500,4 +500,4 @@ Dersin ilk yarısında, birliktelik kurallarının göz ardı ettiği sıra bilg
 
 Gelecek hafta gözetimsiz öğrenme tarafından kümeleme algoritmaları hızlıca işlenecek, sonra bilgi erişimi (information retrieval) konusuna girilecek. Regresyon ve PCA'nın ayrıntısına girilmeyecek. Ardından makine öğrenmesi algoritmalarının web madenciliğindeki kullanımlarına geçilecek: önce web içerik madenciliği (web content mining), sonra web link analizi ve web yapı madenciliği (web structure mining), son olarak web kullanım madenciliği (web usage mining).
 
-**Not:** İsterseniz bu kayıtları NotebookLM gibi bir araca atıp daha istifadeli hale getirebilirsiniz.
+**Not:** İsterseniz bu kayıtları Gemini Notebook gibi bir araca atıp daha istifadeli hale getirebilirsiniz.

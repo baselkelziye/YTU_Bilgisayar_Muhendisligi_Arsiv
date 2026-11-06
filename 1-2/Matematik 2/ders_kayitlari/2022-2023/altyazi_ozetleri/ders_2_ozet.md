@@ -242,4 +242,4 @@
   - Kök testiyle $\sqrt[n]{a_n}\to\dfrac23<1$.
 - **Testlerin adları:** Hoca "Abel kök testi" gibi duyulan bir ad kullanıyor. Kök testi Cauchy kök testi olarak bilinir. Oran testi D'Alembert oran testidir.
 
-NotebookLM notu: İsterseniz bu özeti ve ders kaydını NotebookLM gibi bir araca atıp daha istifadeli hale getirebilirsiniz.
+Gemini Notebook notu: İsterseniz bu özeti ve ders kaydını Gemini Notebook gibi bir araca atıp daha istifadeli hale getirebilirsiniz.

@@ -312,7 +312,7 @@ Bu derste sunulan beş çalışmanın ortak ekseni metinden anlam çıkarmaktır
 
 Hocanın sunumlar arasında öne çıkardığı noktalar şunlardır: denetimli ve denetimsiz yöntem ayrımı net olmalıdır, en azından K-Means bilinmelidir, PCA bir özellik çıkarma yöntemidir ve kümeleme modeli değildir. Çalışmaların başarı değerleri de bağlamıyla okunmalıdır; aynı yöntem bazı hisselerde veya dillerde çok iyi, bazılarında düşük sonuç verebilir.
 
-**Not:** İsterseniz bu kayıtları NotebookLM gibi bir araca atıp daha istifadeli hale getirebilirsiniz.
+**Not:** İsterseniz bu kayıtları Gemini Notebook gibi bir araca atıp daha istifadeli hale getirebilirsiniz.
 
 ## 9. Ders Sonrası Notlar
 

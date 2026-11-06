@@ -266,4 +266,4 @@ Bir öğrenci RAM'den çıkarılan sürecin nereye gittiğini sordu. Cevap: ikin
 - **Heap büyümesi:** Derste "segment dolunca yeni segment açılıyor" denildi. Bu bir basitleştirmedir. Gerçekte heap, bellek ayırıcının isteğiyle (`brk`/`sbrk` ya da `mmap`) büyütülür. Ayrıntı bellek yönetimi bölümünde.
 - **fork sonrası:** Linux'ta süreçler ve iş parçacıkları aynı `task_struct` yapısıyla temsil edilir. Derste "fork bir süreç yaratıyor ama arkada bir thread var" denmesinin anlamı budur.
 
-**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

@@ -148,4 +148,4 @@
 - **Doğrulama:** Beş durumlu makinenin `101011` için `001000` çıktısı ve seri toplayıcı tablosu Python ile kontrol edildi. Toplayıcı, en düşük bitten başlayarak bütün 4 bitlik sayı çiftleri için doğru toplamı verdi.
 - Altyazıdaki "row 0/row 1" $s_0/s_1$, "stake/X-Tate" state, "sonu durum makineleri" sonlu durum makineleri, "A putu/ağa kut" output demektir.
 
-**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

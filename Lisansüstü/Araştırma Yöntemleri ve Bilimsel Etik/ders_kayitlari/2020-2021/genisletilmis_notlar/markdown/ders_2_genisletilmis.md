@@ -346,4 +346,4 @@ Bu derste literatür taraması için gereken kaynağa nasıl ulaşılacağı gö
 
 Dersin ikinci yarısı bu sistemin zayıf noktalarını gösterdi. Yayıncılık ticarileştiği için sahte indeksler, kopya dergiler ve para karşılığı yayın yapan yerler ortaya çıkmıştır. Etki faktörü ve h-indeksi kullanılan ölçütlerdir, ama ikisi de manipüle edilebilir ve tek başına ölçüt olmamalıdır. Hoca, etik dışı durumların dersin etik kısmında örneklerle, bilimsel yazımla ilgili konuların da ilerleyen derslerde ele alınacağını belirtti.
 
-**Not:** İsterseniz bu kayıtları NotebookLM gibi bir araca atıp daha istifadeli hale getirebilirsiniz.
+**Not:** İsterseniz bu kayıtları Gemini Notebook gibi bir araca atıp daha istifadeli hale getirebilirsiniz.

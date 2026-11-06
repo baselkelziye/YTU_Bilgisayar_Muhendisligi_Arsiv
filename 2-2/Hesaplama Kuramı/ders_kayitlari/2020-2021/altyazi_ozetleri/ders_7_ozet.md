@@ -158,4 +158,4 @@ Sonuç $a^* b (a \cup b)^*$. Bu ifade 10 sembole kadar bütün dizgilerde makine
 - GNFA'da başlangıç durumu için hoca "kendisine ok yok" dedi. Sipser'daki koşul daha geniştir: başlangıç durumuna **hiçbir** durumdan ok gelmez.
 - GNFA örneğinin sonunda altyazıda "$a^* b (a \cup b) b^*$" gibi bir ifade geçiyor. Kareye ve hesaba göre doğru sonuç $a^* b (a \cup b)^*$'dır.
 
-**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz. Ders İngilizce anlatılmıştır; altyazı da büyük ölçüde İngilizcedir.
+**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz. Ders İngilizce anlatılmıştır; altyazı da büyük ölçüde İngilizcedir.

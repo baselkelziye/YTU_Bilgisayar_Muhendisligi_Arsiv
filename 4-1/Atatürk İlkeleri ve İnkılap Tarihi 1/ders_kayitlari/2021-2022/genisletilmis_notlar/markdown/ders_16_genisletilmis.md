@@ -345,4 +345,4 @@ Bu derste yeni bir tarih konusu işlenmedi. Hoca, dönem boyunca ana hatlarıyla
 
 Listenin arkasındaki düşünce, üniversitenin yalnız meslek öğreten bir kurum olmadığıdır. Belgeseller ve kitaplar boyunca tekrar eden soru da budur: İnsan nasıl sorgulamayı bırakır, nasıl manipüle olur, bilimle ve akılla düşünmek neden gereklidir? Hoca bir şehri gezerken de bir kitabı seçerken de bilerek ve öğrenerek hareket edilmesini istiyor.
 
-**Not:** İsterseniz bu kayıtları NotebookLM gibi bir araca atıp daha istifadeli hale getirebilirsiniz.
+**Not:** İsterseniz bu kayıtları Gemini Notebook gibi bir araca atıp daha istifadeli hale getirebilirsiniz.

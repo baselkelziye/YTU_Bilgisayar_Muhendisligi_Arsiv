@@ -139,4 +139,4 @@
 - **Gauss-Seidel sürçmesi:** Ders sonunda "Gauss-Seidel yöntemi sondan başlayarak çözüyor" denildi. Kastedilen Gauss eliminasyonudur. Gauss-Seidel dolaylı (iteratif) bir yöntemdir ve sonraki derslerde işlenecektir.
 - **Kısmi pivotlama:** Hocanın "$(1,1)$ gözündeki 0'dan satır değiştirerek kurtul" uyarısının genel hâli kısmi pivotlamadır. Her sütunda mutlak değerce en büyük elemanı olan satır köşegene getirilir. Böylece sıfıra bölme önlenir ve yuvarlama hataları azalır.
 
-* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

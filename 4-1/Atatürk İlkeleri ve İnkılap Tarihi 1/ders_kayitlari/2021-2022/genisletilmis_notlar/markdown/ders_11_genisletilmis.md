@@ -441,4 +441,4 @@ Ders, devrim ve ihtilal ayrımıyla başladı ve 24 Temmuz 1908'i otokrasiden me
 
 Dersin ikinci yarısı devrimin sonuçlarına ve dış tepkiye ayrıldı. İçeride basın ve toplumsal hayatta büyük bir canlanma yaşanırken dışarıda toprak kayıpları, Rusya'nın Balkan hamlesi ve hocanın İngiliz kaynaklı saydığı kara propaganda geldi. Hoca bunu emperyalizm üzerinden yorumladı. Önümüzdeki hafta devrimin Cumhuriyet'e giden yoldaki yeri ve İttihat ve Terakki'ye yöneltilen eleştiriler nedenleriyle birlikte tartışılacak.
 
-**Not:** İsterseniz bu kayıtları NotebookLM gibi bir araca atıp daha istifadeli hale getirebilirsiniz.
+**Not:** İsterseniz bu kayıtları Gemini Notebook gibi bir araca atıp daha istifadeli hale getirebilirsiniz.

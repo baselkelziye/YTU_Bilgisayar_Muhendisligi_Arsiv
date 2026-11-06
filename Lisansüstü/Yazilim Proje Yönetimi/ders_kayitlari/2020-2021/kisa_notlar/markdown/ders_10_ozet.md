@@ -207,4 +207,4 @@
 - 5. sunumda Scrum sprintinin "ortalama 3-4 hafta" olduğu söylendi. Scrum Guide'a göre sprint en fazla bir aydır; pratikte genelde 2-4 haftadır.
 - 5. sunumdaki 4 çekirdek ve 6 yardımcı bilgi alanı ayrımı sunumun kaynağına ait. PMBOK 10 bilgi alanını böyle iki gruba ayırmaz; entegrasyon yönetimi PMBOK'ta diğer alanları birleştiren alan olarak geçer.
 
-**Not:** İsterseniz bu kayıtları NotebookLM gibi bir araca atıp daha istifadeli hale getirebilirsiniz.
+**Not:** İsterseniz bu kayıtları Gemini Notebook gibi bir araca atıp daha istifadeli hale getirebilirsiniz.

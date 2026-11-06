@@ -40,4 +40,4 @@
 
 Pekiştirmeli öğrenme (Reinforcement Learning - RL), bir ajanın deneme-yanılma yoluyla bir ortamda (environment) en yüksek uzun vadeli toplam ödülü (reward) almak için eylemler gerçekleştirdiği makine öğrenmesi dalıdır. RL modeli; etmen, ortam, durum (state), eylemler (actions) ve ödül (reward) bileşenlerinden oluşur ve genellikle Markov Karar Süreçleri (MDP) çerçevesinde modellenir. Etmen, her durumda hangi eylemi seçeceğini belirleyen bir politika (policy) takip eder. Keşif (exploration - yeni yollar deneme) ve sömürü (exploitation - bilinen en iyi yolu kullanma) arasındaki dengeyi kurmak RL'de en kritik zorluktur. Q-Öğrenme (Q-Learning) gibi algoritmalar, durum-eylem değer fonksiyonunu (Q-tablosu) güncelleyerek optimal politikayı öğrenir.
 
-* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

@@ -242,4 +242,4 @@
 - **$[1,1,1,1]*[1,1,1]$:** Altyazıda sonuç "1, 2, 3, 3, 3, 3, 3, 2, 1" gibi geçiyor. Doğru sonuç $[1,2,3,3,2,1]$, yani 6 örnektir.
 - Sayısal sonuçlar Python ile doğrulandı. Bunlar: $e^{-t}$ örneğinin $c_k$ formülü ($c_0 \approx 0.316$, $c_1 \approx 0.063 - 0.198j$), kare dalga katsayıları, $t*t^2 = t^4/12$, konvolüsyon dizileri, örnekleme sonuçları, $4/3$ enerjisi, EKOK 24 ve EBOB değerleri (50, 100, 10).
 
-**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi daha verimli çalışabilirsiniz.
+**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi daha verimli çalışabilirsiniz.

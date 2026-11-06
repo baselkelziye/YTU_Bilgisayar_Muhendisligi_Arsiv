@@ -527,4 +527,4 @@ Bu derste önce işletim sisteminin kalan konuları görüldü. RAM'den büyük 
 
 İkinci yarıda bilgisayarların birbiriyle konuşmasına geçildi. Ağlar ölçeğe göre PAN'dan WAN'a kadar sınıflandırıldı, bus ve star topolojileri görüldü. Repeater, bridge, switch ve router'ın görevleri ayrıldı. Protokoller, OSI modeli ve TCP-UDP farkı anlatıldı. Süreçler arası iletişimde istemci-sunucu ve eşler arası mimariler karşılaştırıldı, bulut bilişim, internetin katmanlı yapısı, IP adresleri ve DNS ile ders tamamlandı. Hoca bu konunun kalan birkaç noktasını ve binary search algoritmasını bir sonraki derste anlatacağını söyledi.
 
-**Not:** İsterseniz bu kayıtları NotebookLM gibi bir araca atıp daha istifadeli hale getirebilirsiniz.
+**Not:** İsterseniz bu kayıtları Gemini Notebook gibi bir araca atıp daha istifadeli hale getirebilirsiniz.

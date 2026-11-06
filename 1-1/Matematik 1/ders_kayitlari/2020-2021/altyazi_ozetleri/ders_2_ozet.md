@@ -213,4 +213,4 @@ $$\lim_{x\to0}x\sin\frac1x=\lim_{t\to\pm\infty}\frac{\sin t}{t}=0$$
 
 ---
 
-İsterseniz bu özeti NotebookLM gibi bir araca atıp daha istifadeli hale getirebilirsiniz.
+İsterseniz bu özeti Gemini Notebook gibi bir araca atıp daha istifadeli hale getirebilirsiniz.

@@ -195,4 +195,4 @@
 - Altyazıda "teta het", "Bayes of theta hat" gibi geçen terim "bias" (yanlılık) demektir. "Bayes" teoremiyle ilgisi yoktur.
 - 00:27:38–00:34:31 ve 01:13:57–01:20:03 arasındaki Türkçe açıklamalar İngilizce modunda bozuk çevrildi; bu kısımlarda uzun döngüler var. Özette yalnızca anlaşılır kısımlar kullanıldı.
 
-* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz. Bu ders İngilizce anlatıldığı için altyazı da İngilizcedir.
+* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz. Bu ders İngilizce anlatıldığı için altyazı da İngilizcedir.

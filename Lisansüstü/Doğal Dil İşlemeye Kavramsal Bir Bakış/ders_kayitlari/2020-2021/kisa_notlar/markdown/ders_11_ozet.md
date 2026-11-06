@@ -310,4 +310,4 @@ $$A \approx U\,V^{T}, \qquad U \ge 0,\; V \ge 0$$
 - 3. sunumda nötr sınıftaki düşük duyarlılığın nedeni olarak etiket eşiklerinin seçimi tahmin edilir. Makale bu eşikleri raporlamadığı için bu yalnızca bir yorumdur.
 - 4. sunumun (İngilizce) altyazısının büyük bölümü döngüye girmiştir. Özetteki bilgiler okunabilen kısımlar ve slaytlarla sınırlıdır.
 
-**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

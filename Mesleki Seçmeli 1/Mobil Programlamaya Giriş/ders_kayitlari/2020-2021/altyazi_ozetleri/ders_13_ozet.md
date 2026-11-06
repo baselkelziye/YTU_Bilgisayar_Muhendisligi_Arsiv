@@ -126,4 +126,4 @@ AlarmManager ve WorkManager karşılaştırması yapılmıştır. AlarmManager b
 
 Service bileşeni kısaca açıklanmıştır. Android'in dört temel bileşeninden biri (activity, service, broadcast receiver, content provider). Kullanıcı arayüzüne sahip olmayan, uzun süre kullanıcı ile interaksiyon olmadan çalışan yapı. Günümüzde en son başvurulan komponentlerden biri (alternatif çözümler çıkmasıyla). Örnek: sağlık bilgilerini arka planda takip eden uygulama; GPS, accelerometer, gyroscope, magnetometer gibi sensörlerden faydalanır.
 
-* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

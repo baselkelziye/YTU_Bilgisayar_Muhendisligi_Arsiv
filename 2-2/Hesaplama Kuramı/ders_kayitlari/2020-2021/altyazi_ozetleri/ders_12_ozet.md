@@ -225,4 +225,4 @@ $q_011 \vdash \$q_01 \vdash \$\$q_0\square \vdash \$q_1\$ \vdash \$1q_2\square \
 - Altyazıdaki "drink machines" ve "string machine" ifadeleri "Turing machines" demektir. "Sankar Kauru" anlamsız bir altyazı hatasıdır.
 - `aabb`, $x + y$ ve $2x$ makineleri ile ev çalışması çözümü Python ile simüle edilerek doğrulandı.
 
-**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz. Ders İngilizce anlatılmıştır; altyazı da büyük ölçüde İngilizcedir.
+**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz. Ders İngilizce anlatılmıştır; altyazı da büyük ölçüde İngilizcedir.

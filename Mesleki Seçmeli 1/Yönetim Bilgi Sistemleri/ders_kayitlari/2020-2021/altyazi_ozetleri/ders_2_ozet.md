@@ -50,4 +50,4 @@
 - Analiz aşamasında iş gereksinimleri, bilgi ihtiyaçları, kullanıcı beklentileri ve alternatif çözümler belirlenir. Tasarım aşamasında kullanıcı arayüzü, sistem arayüzleri ve veri tabanı yapısı tasarlanır. Gerçekleştirme aşamasında kodlama, test, veri dönüşümü, eğitim, belgeleme ve kurulum yapılır.
 - Fizibilite çalışmasında geliştirme maliyetleri ile işletim maliyetleri ayrılır. Geliştirme maliyetleri personel, donanım, yazılım lisansı, eğitim ve kurulum gibi kalemleri içerir. İşletim maliyetleri bakım, altyapı sürekliliği ve destek maliyetlerini kapsar. Fayda tarafında hata oranının düşmesi, işlem hızının artması, müşteri memnuniyeti ve daha iyi karar verme gibi unsurlar değerlendirilir.
 
-* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

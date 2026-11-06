@@ -119,4 +119,4 @@ Critical section problemi, bir process'in paylaşılan kaynağa eriştiği kod b
 
 **Dining-Philosophers**: 5 filozof, 5 çubuk. Her filozof düşünür veya yer. Yemek için 2 çubuk gerekir. Klasik çözüm deadlock'a yol açar. Asimetrik çözüm: tek numaralı filozoflar önce sol, çift numaralılar önce sağ çubuğu alır. Bu da kaynak dengesizliğine yol açar. Daha iyi çözüm: sırayı değiştirmek.
 
-* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

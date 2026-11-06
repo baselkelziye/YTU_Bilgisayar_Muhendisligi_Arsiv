@@ -164,4 +164,4 @@ int main()
 - **İnterpolasyon aramasının karmaşıklığı:** $\log \log n$, düzgün dağılmış veride ortalama durum karmaşıklığıdır. En kötü durumda (ör. değerler üstel artıyorsa) interpolasyon araması $n$ adıma kadar çıkabilir. Bu yüzden veri dağılımı bilinmiyorsa ikili arama daha güvenlidir.
 - **İkili aramada en kötü durum:** Tam olarak $\lfloor \log_2 n \rfloor + 1$ karşılaştırmadır. Hoca da "artı 1"in algoritma analizi dersinde ele alınacağını söyledi.
 
-* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

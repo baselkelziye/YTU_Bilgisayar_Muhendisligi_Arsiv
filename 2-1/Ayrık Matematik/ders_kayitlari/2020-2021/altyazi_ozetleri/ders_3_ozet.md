@@ -214,4 +214,4 @@ Dört değişkende ($AB$ sütunda, $CD$ satırda):
 - Üçüncü alıştırmanın video çözümünde 2 numaralı minterm tek başına alınmıştı. Doğrusu 2 ve 10'u kenar komşuluğuyla birleştirmektir: $\overline{B}C\overline{D}$. Hoca bu düzeltmeyi de mail ile göndereceğini söyledi.
 - Bütün Karnaugh örnekleri ve alıştırmaları, olası bütün asal terim (prime implicant) kombinasyonları denenerek Python ile doğrulandı.
 
-**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

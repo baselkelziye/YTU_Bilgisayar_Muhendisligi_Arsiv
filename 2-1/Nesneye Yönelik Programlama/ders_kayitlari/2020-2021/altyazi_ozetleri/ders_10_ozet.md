@@ -238,4 +238,4 @@ public abstract double bakiyeGuncelle();
 - Kaydın başındaki Veri Yapıları ödevi: Rakam görülünce önceki o kadar karakteri silerek kodlanmış bir string'i çözme sorusu. Öğrenciler yığın (stack) ile çözüldüğünü anlattı.
 - Altyazıdaki "akbit" Akbil, "vakiye/baki" bakiye, "Kulina", "Nesneye Yelene bir şey olmuş" gibi parçalar NetBeans'teki sorunla ilgili anlaşılmayan cümlelerdir.
 
-* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

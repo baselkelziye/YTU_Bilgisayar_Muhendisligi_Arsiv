@@ -356,4 +356,4 @@ int pop(STACK *s, int *x)
 
 - **Dairesel kuyrukta dolu/boş ayrımı:** derste `front` ve `rear` aynı gözü gösterince kuyruğun dolu olduğu söylendi. Ancak bu gösterimde `rear` bir sonraki boş gözü gösterdiği için kuyruk boşken de `front == rear` olur. Yalnızca bu eşitliğe bakarak dolu ve boş durumu ayırt edilemez. Yaygın iki çözüm vardır: kuyruktaki eleman sayısını ayrı bir sayaçta tutmak ya da bir gözü hep boş bırakıp `(rear + 1) % MAX == front` durumunu "dolu" saymak. Dairesel kuyruk fonksiyonlarını yazarken bunu hesaba katın.
 
-**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

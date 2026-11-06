@@ -136,4 +136,4 @@
   - $A \cap B^c = A \setminus B$ olduğu için $P(A \setminus B) = P(A) - P(A \cap B)$.
 - Kayıtta 01:16-01:17, 01:47 ve yaklaşık 02:27-02:50 arası büyük ölçüde anlaşılmıyor. Bu kısımlarda Türkçe konuşma var ve altyazı bozuk. Türkçe tekrarın anlaşılan kısımları yukarıda özetlendi.
 
-**Not:** Bu ders İngilizce anlatılmıştır. İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+**Not:** Bu ders İngilizce anlatılmıştır. İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

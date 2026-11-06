@@ -593,4 +593,4 @@ Bu derste sekiz araştırma projesi önerisi dinlendi. Konular tarım (besleme i
 
 Sunumlarda tekrar eden proje önerisi öğeleri şunlardı: araştırma sorusu ve hipotez, literatürdeki boşluk ve özgün değer, iş paketleri ve süreleri, olasılıklarına ya da önemlerine göre sıralanmış riskler ve B planları, akademik, ekonomik, toplumsal ve çevresel etki, bütçe. Veri neredeyse her projede ana zorluk olarak öne çıktı. Grupların çözümleri saha çalışması, sentetik veri, kurumdan temin ve açık veri setlerini birleştirmek oldu. Birkaç proje de yeni veri setini literatüre kazandırmayı ayrı bir katkı olarak sundu. Ders sonrası notlar ise bir öneride kaynak gösterilen sayıların ve kullanılan kavramların tek tek doğrulanması gerektiğini gösteriyor. Bu ders dönemin son dersiydi ve derste sonraki bir konuya dair akademik bağlantı kurulmadı.
 
-**Not:** İsterseniz bu kayıtları NotebookLM gibi bir araca atıp daha istifadeli hale getirebilirsiniz.
+**Not:** İsterseniz bu kayıtları Gemini Notebook gibi bir araca atıp daha istifadeli hale getirebilirsiniz.

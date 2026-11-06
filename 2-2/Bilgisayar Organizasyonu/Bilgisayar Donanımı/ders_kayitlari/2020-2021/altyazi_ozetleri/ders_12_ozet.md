@@ -152,4 +152,4 @@
 - Miss durumunda bloğun cache'e yazılmasının ayrıca süre eklemediği söylendi. Bu, dersteki basit modelin varsayımıdır. Gerçek sistemlerde blok yükleme (ve write-back'te dirty bloğun geri yazılması) miss cezasının bir parçasıdır.
 - Tüm sayısal sonuçlar (12.5 ns, 20 ve 2 cycle, 0x8014 için tag 2 ve index 1, bitiş tablosu) Python ile doğrulandı.
 
-**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi daha verimli çalışabilirsiniz.
+**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi daha verimli çalışabilirsiniz.

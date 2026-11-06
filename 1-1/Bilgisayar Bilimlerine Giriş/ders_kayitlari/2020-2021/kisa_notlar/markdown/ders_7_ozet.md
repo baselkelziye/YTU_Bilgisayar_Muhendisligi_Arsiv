@@ -150,4 +150,4 @@ Son bölümde algoritma kavramına giriş yapılır. Algoritma; sıralı, belirs
 
 Ders sonunda bir sonraki ders için bir problem verilir. Problem, üç basamaklı bir sayının (örneğin 125, 722, 893) basamaklarının küpleri toplamının sayının kendisine eşit olup olmadığını bulan algoritmanın akış diyagramını çizmektir. Sayı tek bir sayı olarak okunur, rakam rakam verilmez. Yalnızca dört işlem, `mod`, `div` ve karşılaştırma operatörleri kullanılır. Hoca bu sayılara "kübik sayı" der. Bir öğrenci bu tür sayıların literatürde Armstrong sayısı olarak geçtiğini söyler. Hoca bunu kontrol edip bir sonraki derste bilgi vereceğini belirtir.
 
-* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

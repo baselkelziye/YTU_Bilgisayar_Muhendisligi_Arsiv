@@ -228,4 +228,4 @@ else
 - Hoca Sedgewick'in *An Introduction to the Analysis of Algorithms* kitabının Java ağırlıklı olduğunu söyledi. Java ağırlıklı olan, Sedgewick ve Wayne'in *Algorithms* kitabıdır. *An Introduction to the Analysis of Algorithms* (Sedgewick ve Flajolet) matematiksel analize odaklanır.
 - Sıralı dizide doğrusal arama kodunda döngü `i < n - 1` ile sınırlandığında son eleman da çıkıştaki `a[i] == x` kontrolüyle yakalanır. Döngü `i < n` ile yazılırsa, çıkışta `a[n]` okunarak sınır ihlali yapılabilir.
 
-**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

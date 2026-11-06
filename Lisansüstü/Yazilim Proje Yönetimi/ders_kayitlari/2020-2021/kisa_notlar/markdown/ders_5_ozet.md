@@ -186,4 +186,4 @@
 - Boehm'in orijinal COCOMO çalışması literatürde 63 projeye dayanır; hoca 64 dedi.
 - CPM ve PERT'in karmaşıklık karşılaştırmasındaki cümle altyazıda karışık ("CPM PERT'den daha karmaşık CPM'e göre"). Genel kabul: PERT üç süre tahmini kullandığı için CPM'den daha karmaşıktır; CPM tek süre kullanır.
 
-**Not:** İsterseniz bu kayıtları NotebookLM gibi bir araca atıp daha istifadeli hale getirebilirsiniz.
+**Not:** İsterseniz bu kayıtları Gemini Notebook gibi bir araca atıp daha istifadeli hale getirebilirsiniz.

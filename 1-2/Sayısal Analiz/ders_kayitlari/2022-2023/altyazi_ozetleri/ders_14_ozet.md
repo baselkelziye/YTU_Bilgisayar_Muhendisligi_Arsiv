@@ -42,4 +42,4 @@
 - **`int` hatası neden olur?** C'de `int a = 0.1;` ataması 0 değerini verir ve `1/2` gibi tam sayı bölmeleri 0 sonucunu üretir. Sayısal yöntemlerde katsayılar, adım uzunluğu $h$ ve ara sonuçlar hep ondalıklı olduğundan `double` kullanılmalıdır. Döngü sayaçları ve dizi indisleri ise `int` kalabilir.
 - **Ortak fonksiyonlarda dizi aktarımı:** C'de bir diziyi fonksiyona gönderince dizinin boyutu kaybolur, yalnızca ilk elemanın adresi gider. `sizeof(dizi)` fonksiyon içinde işaretçinin boyutunu verir. Bu yüzden boyutu (ör. polinomun derecesi) ayrı bir parametre olarak gönderin. Gösterimdeki "yalnızca ilk iki katsayıyı alıyor" belirtisi bu tür bir boyut veya aktarım hatasına benziyor.
 
-* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

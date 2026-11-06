@@ -41,4 +41,4 @@
 - Kanonik gösterimlerde fonksiyon, doğruluk tablosundaki satır numaralarıyla ifade edilebilir. `F(x,y,z)=Σm(0,4)` biçimi fonksiyonun 0 ve 4 numaralı mintermlerde `1` olduğunu anlatır. Bu satırlar ikili karşılıklarına çevrilerek açık çarpım terimleri yazılır.
 - Karnaugh haritası, komşuluk ilişkilerini görsel hale getirir. Komşu `1` grupları büyüdükçe sadeleşen terimde daha fazla değişken elenir. Bu nedenle en büyük geçerli grupları seçmek önemlidir.
 
-* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

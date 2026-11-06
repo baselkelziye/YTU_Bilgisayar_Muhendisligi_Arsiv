@@ -126,4 +126,4 @@
 - **Kısa sınav Q5 slaytı:** Çözümün ② numaralı denkleminde $60(i_2 - i_3)$ yazıyor. O koldaki direnç 40 Ω'dur. Sayısal sonuçlar ($i_1 = i_2 = -0.1$, $i_3 = -0.25$, $i_a = -0.05$ A) 40 Ω ile Python'da yeniden çözüldü ve doğrulandı.
 - **Doğrulama:** Bu özetteki op-amp örnekleri ve kısa sınavın Q2, Q4, Q5 sonuçları numpy ile yeniden hesaplandı. Q3 için yalnızca hocanın çözüm belgesindeki sonuçlar aktarıldı.
 
-* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

@@ -167,4 +167,4 @@
 - Önceki haftadan sunumu kalan öğrenci derse gelmemiş ve hocaya dönüş yapmamıştır. Hoca, öğrenci son sunumdan sonra da gelmezse seminerini vermemiş sayacağını kayda geçirir.
 - Ders "finalde görüşmek üzere" diye biter.
 
-İsterseniz bu özeti NotebookLM gibi bir araca atıp daha istifadeli hale getirebilirsiniz.
+İsterseniz bu özeti Gemini Notebook gibi bir araca atıp daha istifadeli hale getirebilirsiniz.

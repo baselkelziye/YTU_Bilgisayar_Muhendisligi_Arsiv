@@ -117,4 +117,4 @@ i = 0; while (name2[i]) { name3[i] = name2[i] - c; i++; } name3[i] = '\0';
 - **Tuz-biber gürültüsü için daha iyi filtre:** Bu tür gürültüde pencerenin ortalaması yerine ortancası (medyanı) alınır (median filter). Gürültülü uç değerler ortanca değeri etkilemediği için kenarlar korunur ve resim bulanıklaşmaz.
 - **Filtrede kenarlar:** Döngüler `n - filtre` sınırında bittiği için resmin son satır ve sütunları işlenmez. Ayrıca sonuç pencerenin merkezine değil sol üst köşesine yazılır. Bu yüzden resim yarım pencere kadar kayar. Pencere merkezli yazmak için `i` ve `j` `filtre / 2`'den başlatılıp pencere `i - filtre/2`'den `i + filtre/2`'ye gezdirilir.
 
-* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

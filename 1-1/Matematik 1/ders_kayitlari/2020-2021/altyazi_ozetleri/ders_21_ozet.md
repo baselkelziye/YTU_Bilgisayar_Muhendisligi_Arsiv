@@ -246,4 +246,4 @@
 - 00:17:41 ile 00:55:21 arası ders yapılamadı (kalem ve internet sorunu). 01:58:11 ile 02:10:45 arası ara verilmiş.
 - 01:46:44 civarında hoca yoklama alıyor. Bu kısım derse ait bilgi içermiyor.
 
-**Not:** İsterseniz bu kayıtları NotebookLM gibi bir araca atıp daha istifadeli hale getirebilirsiniz.
+**Not:** İsterseniz bu kayıtları Gemini Notebook gibi bir araca atıp daha istifadeli hale getirebilirsiniz.

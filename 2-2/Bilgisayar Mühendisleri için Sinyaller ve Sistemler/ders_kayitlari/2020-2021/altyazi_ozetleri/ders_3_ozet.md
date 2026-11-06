@@ -209,4 +209,4 @@ $$\int_{-2}^{3}f(t)\big(2+\delta(t+1)-3\delta(t-1)+2\delta(t+3)\big)dt=2\int_{-2
 - Derste anlatılan "gözü yüz üzerinde arama" örneği teknik olarak korelasyondur (template matching). Konvolüsyondan farkı, kayan sinyalin ters çevrilmemesidir.
 - Altyazıda bazı karmaşık sayı örnekleri (ör. "3 artı 6j") ve "Psevur bağıntısı" (Pisagor bağıntısı) anlaşılmıyor. Tahtadaki örnek kayıtta tam okunamıyor.
 
-**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi daha verimli çalışabilirsiniz.
+**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi daha verimli çalışabilirsiniz.

@@ -256,4 +256,4 @@ int peek(struct stack *s, int *x)
 - Bir dizide iki yığında dolu olma kontrolü, gerçekleştirmeye göre `top1 == top2` ya da `top1 + 1 == top2` gibi yazılır. Önemli olan iki yığının aynı göze yazmamasıdır.
 - Kaydın 00:25:53 ve 02:09:58 civarındaki "Altyazı M." satırları altyazı hatasıdır, derste söylenmemiştir.
 
-**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

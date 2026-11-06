@@ -374,4 +374,4 @@ Bu derste bir makalenin yolculuğunu izledik. Yazar önce ORCID gibi kolaylıkla
 
 İkinci kısımda YÖK yönergesi üzerinden hangi davranışların etik dışı olduğunu gördük: intihal, sahtecilik, çarpıtma, tekrar yayın, dilimleme, haksız yazarlık ve "diğer" ihlaller. Etik kurulunun nasıl oluştuğunu ve incelemenin nasıl yürüdüğünü öğrendik. Gizlilik, masumiyet ve niyet ile hata ayrımı bu sürecin temelidir. Bir sonraki derste sunum teknikleri işlenecek. Bu dersteki yönergeler sunumu da orada kötü örnek olarak kullanılacak.
 
-**Not:** İsterseniz bu kayıtları NotebookLM gibi bir araca atıp daha istifadeli hale getirebilirsiniz.
+**Not:** İsterseniz bu kayıtları Gemini Notebook gibi bir araca atıp daha istifadeli hale getirebilirsiniz.

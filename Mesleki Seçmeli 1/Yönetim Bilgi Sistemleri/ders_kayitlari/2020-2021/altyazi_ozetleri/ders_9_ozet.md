@@ -45,4 +45,4 @@
 - Bilgi yönetimi sistemleri, kurumda oluşan açık ve örtük bilgiyi düzenlemeye yöneliktir. Dokümanlar, uzmanlık bilgisi, geçmiş proje deneyimleri, karar kayıtları ve kurumsal prosedürler bilgi yönetimi içinde değerlendirilebilir.
 - Kurumsal yapay zeka uygulamaları, bilgi yönetiminin daha ileri düzeyidir. Kurumsal veriden örüntü çıkarma, öneri üretme, risk belirleme, tahmin yapma ve karar seçeneklerini değerlendirme gibi işlevler bu kapsamda düşünülebilir.
 
-* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

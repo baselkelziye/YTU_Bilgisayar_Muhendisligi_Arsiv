@@ -255,4 +255,4 @@ Graf, düğümleri iki ayrık kümeye ($V_1 \cap V_2 = \emptyset$) bölünebiliy
 - **Kruskal ve Prim:** Hoca Kruskal'ı "Prim algoritmasının devamı" diye anlattı. İkisi aynı problemi çözen ayrı algoritmalardır. Prim tek bir ağacı büyütür. Kruskal ise ayrı ağaçlar (orman) oluşturup bunları birleştirir. Bu yüzden Kruskal'da ara adımlarda birden fazla ağaç görülmesi normaldir.
 - **Kontrol:** Kruskal örneklerinin toplamları (12 ve 22), entropi ve bilgi kazancı değerleri, alt dalların kazançları, benzerlik tablosu ve Catalan sayıları Python ile doğrulandı.
 
-**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

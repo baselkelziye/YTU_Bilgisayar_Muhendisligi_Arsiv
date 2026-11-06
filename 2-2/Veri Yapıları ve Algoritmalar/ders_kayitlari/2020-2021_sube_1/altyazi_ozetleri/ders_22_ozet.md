@@ -297,4 +297,4 @@ void quickSort(int a[], int l, int r)
 - **Quicksort'un ek yeri:** Quicksort ek dizi kullanmaz. Ancak özyineleme yığını (stack) ortalamada $O(\log n)$, en kötü durumda $O(n)$ yer tutar.
 - **Matrisin $n$'inci kuvveti:** Hoca bunun böl ve yönete girmediğini söyledi. Ancak $A^n$, $A^{n/2}$ bir kez hesaplanıp karesi alınarak $O(\log n)$ matris çarpımıyla bulunabilir (tekrarlı kare alma, repeated squaring). Bu yöntem kaynaklarda azalt ve yönet (decrease and conquer) ya da böl ve yönet örneği olarak geçer. Aynı yöntemle tek bir Fibonacci sayısı da $O(\log n)$'de hesaplanabilir. Quizdeki soru ise $n$'e kadar **tüm** Fibonacci sayılarını üretmekti; bu iş sıralıdır ve böl ve yönete uygun değildir.
 
-**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

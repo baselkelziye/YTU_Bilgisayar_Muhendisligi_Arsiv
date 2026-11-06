@@ -118,4 +118,4 @@
 - **Çoklu regresyonda logaritma tabanı:** Tablodaki değerler 10 tabanlı logaritmadır ($\log 2 = 0.301$). Bu yüzden $a_0 = 10^{1.7475} = 55.9$'dur. Derste sözlü olarak "$e$ üzeri 1.74" dendi. $e^{1.7475} = 5.74$ olurdu ve yanlış sonuç verirdi. Logaritmayı hangi tabanda aldıysanız geri dönüşü aynı tabanla yapın. Kesin hesapla $a_0 = 55.97$, $a_1 = 2.616$, $a_2 = 0.537$. Ayrıca tablodaki $\sum x_1^2$ (0.954) ile matristeki değer (0.924) uyuşmuyor. Doğrusu yaklaşık 0.955'tir.
 - **Parabol örneğinde tablo:** $x = 6$ satırında $x^2 y$ değeri 1118 yazılmış. Doğrusu $36 \cdot 33 = 1188$'dir. Toplam (5700) doğru değerle tutar.
 
-* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

@@ -225,4 +225,4 @@
 - 4. sunumdaki "Levit" modeli Harold Leavitt'in organizasyonel değişim modelidir (Leavitt's diamond).
 - Altyazıda "Ecal", "Ejel", "heyecan" diye geçen terim "agile" (çevik) olmalıdır.
 
-**Not:** İsterseniz bu kayıtları NotebookLM gibi bir araca atıp daha istifadeli hale getirebilirsiniz.
+**Not:** İsterseniz bu kayıtları Gemini Notebook gibi bir araca atıp daha istifadeli hale getirebilirsiniz.

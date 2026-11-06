@@ -185,4 +185,4 @@ Adımlar:
 - **k'ıncı en küçük elemanda heap kurma:** $O(n)$ maliyet, diziye `buildMinHeap` uygulanırsa geçerlidir. Derste yapıldığı gibi elemanlar tek tek eklenirse kurma $O(n \log n)$ olur.
 - **`isCompleteUtil` açıklaması:** Hoca indeks $n$'i aşınca ağacın "dengeli olmadığını" söyledi. Kontrol edilen özellik denge değil, ağacın complete olmasıdır.
 
-**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

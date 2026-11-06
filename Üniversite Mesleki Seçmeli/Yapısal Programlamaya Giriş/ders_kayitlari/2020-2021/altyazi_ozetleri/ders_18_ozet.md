@@ -135,4 +135,4 @@ int gcd(int x, int y){
 - **Kaba kuvvet closest pair:** Tahtadaki taslakta `i` ve `j` 1'den 1000'e kadar gidiyordu. Bu durumda `i == j` için uzaklık 0 olur ve en küçük uzaklık her zaman 0 çıkar. `j` `i + 1`'den başlatılmalıdır. Bu hem hatayı giderir hem de her çifti bir kez inceler: $\frac{n(n-1)}{2}$ karşılaştırma. Ayrıca her nokta en az bir kez okunmak zorunda olduğu için bu problem $\log n$ veya sabit zamanda çözülemez. En iyi bilinen genel çözüm, böl ve yönet ile çalışan $n \log n$ algoritmasıdır.
 - **Dönüş değeri:** Derste programın sonunda "Process exited ... with return value 2" görüldü. `main`'in sonunda `return 0;` olmadığında C89'da dönüş değeri belirsizdir.
 
-* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

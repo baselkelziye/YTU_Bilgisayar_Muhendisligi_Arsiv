@@ -275,4 +275,4 @@ Döngüden önce `x` son düğümü (9) gösterir. İç döngü $M-1$ adım iler
 - Bu dönem laboratuvar dersi yok.
 - İlk ödev bir sonraki hafta tanımlanacak. Değerlendirmeler Nisan'a ertelendiği için teslim Mart sonu ya da Nisan başı olabilir.
 
-**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

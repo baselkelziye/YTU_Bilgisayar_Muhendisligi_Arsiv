@@ -249,4 +249,4 @@
 - Hoca spiral modeli waterfall ile prototipin birleşimi olarak tanımladı. Boehm'in spiral modeli yinelemeli prototiplemeyi waterfall'un sistematik adımlarıyla birleştirir ve her turda risk analizi içerir. Tanım bu anlamda doğrudur.
 - Çevik benimseme makalesinin yayın yeri altyazıda "2021 International System Science" diye geçiyor. Büyük olasılıkla HICSS (Hawaii International Conference on System Sciences) kastediliyor.
 
-**Not:** İsterseniz bu kayıtları NotebookLM gibi bir araca atıp daha istifadeli hale getirebilirsiniz.
+**Not:** İsterseniz bu kayıtları Gemini Notebook gibi bir araca atıp daha istifadeli hale getirebilirsiniz.

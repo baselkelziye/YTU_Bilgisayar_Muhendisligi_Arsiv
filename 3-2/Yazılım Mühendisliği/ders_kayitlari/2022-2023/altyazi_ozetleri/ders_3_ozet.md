@@ -286,4 +286,4 @@ Ana başarı senaryosu: sıralı iş adımları (algoritma düzeyinde)
 - **Use case seviyesi:** Slayttaki "EBP" = Elementary Business Process (temel iş süreci). Larman'ın kitabında kullanıcı hedefi seviyesindeki use case'ler için kullanılır.
 - **Türkiye'deki firma düzeyleri** hocanın derste aktardığı bilgilerdir. Sertifikalar süreli olduğu için güncel durum farklı olabilir.
 
-**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

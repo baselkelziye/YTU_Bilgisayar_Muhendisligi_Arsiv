@@ -561,4 +561,4 @@ Bu derste insertion sort'un akış diyagramı, hatalı denemeler üzerinden adı
 
 Sonraki örnekler üç algoritmik bakış açısı verdi. Histogramda çok sayıda sayaç bir dizide toplandı ve matris yalnızca bir kez gezildi. Şifrelemede döngüsel yapı modüler aritmetikle çözüldü. İki sıralı diziyi birleştirmede iki indisle $N + M$ adımda sonuca varıldı. Birleştirmenin akış diyagramı öğrencilere bırakıldı. Hoca önümüzdeki hafta muhtemelen işletim sistemi ve ağ konularının işleneceğini, bir hafta sonra algoritmik problemlere dönüleceğini söyledi.
 
-**Not:** İsterseniz bu kayıtları NotebookLM gibi bir araca atıp daha istifadeli hale getirebilirsiniz.
+**Not:** İsterseniz bu kayıtları Gemini Notebook gibi bir araca atıp daha istifadeli hale getirebilirsiniz.

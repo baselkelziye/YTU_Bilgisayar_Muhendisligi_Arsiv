@@ -134,4 +134,4 @@ else if strcmp(hashTable[newItem.index].value, newItem.value) == 0:   #önceden 
 - **Boş gözde aramayı bitirmek:** Bu kural yalnız tablodan silme yapılmıyorsa doğrudur. Silme olsaydı, silinen gözler "silindi" (tombstone) diye işaretlenmeliydi.
 - Altyazıda "H tablosu", "haç tablosu" diye geçen terim hash tablosu, "Sudo kodu" diye geçen terim sözde koddur.
 
-**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

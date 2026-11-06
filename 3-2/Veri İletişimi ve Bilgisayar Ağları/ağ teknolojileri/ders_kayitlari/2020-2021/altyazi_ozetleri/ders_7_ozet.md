@@ -91,4 +91,4 @@ MPLS, modern internet omurgasında yaygın kullanılan bir teknolojidir. Temel f
 
 OSPF ve BGP, internet'in iki routing seviyesini oluşturur. OSPF, bir organizasyonun kendi iç ağında kullanılır; alanlara (area) bölünmüş hiyerarşik bir yapıdadır, area 0 her zaman backbone'dur. BGP, farklı organizasyonların ağları arası routing için kullanılır; burada teknik kriterler yerine politik, ticari, kurumsal kurallar ön plana çıkar.
 
-* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

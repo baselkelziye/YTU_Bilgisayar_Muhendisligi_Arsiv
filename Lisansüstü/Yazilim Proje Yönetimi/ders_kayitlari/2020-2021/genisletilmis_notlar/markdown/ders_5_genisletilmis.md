@@ -484,4 +484,4 @@ Dersin ilk yarısında proje planı araçlar üzerinden yeniden kuruldu. Gantt v
 
 İkinci yarıda bu planın bütçesine geçildi. Bilirkişi takdiri ve Delphi uzman görüşüne, istatistik modeller bitmiş proje arşivine dayanır. Analiz yöntemi hepsiyle birlikte kullanılabilir ve bol süre vermenin sonucunu birleştirme şaşkınlığıyla açığa çıkarır. COCOMO ve Putnam gibi modeller bir büyüklük girdisi ister. Bu girdi ya doğrudan ölçülen LOC ya da dolaylı ölçülen işlev noktasıdır. Hoca ayrıca sonraki bölümlerde insan kaynağının görevlendirilmesi ve ekip yapısı üzerinde duracağını söylemişti.
 
-**Not:** İsterseniz bu kayıtları NotebookLM gibi bir araca atıp daha istifadeli hale getirebilirsiniz.
+**Not:** İsterseniz bu kayıtları Gemini Notebook gibi bir araca atıp daha istifadeli hale getirebilirsiniz.

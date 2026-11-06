@@ -212,4 +212,4 @@ $$f(\mathbf{z}) = \sum_{i \in SV} \alpha_i y_i \, K(\mathbf{x}_i, \mathbf{z}) + 
 - **Ders düzeni:** Hocanın bilgisayarının şarjı ve internet bağlantısı birkaç kez kesildi. 00:32-00:46 arası bağlantı koptu; bir öğrenci 10 dakika ara verildiğini duyurdu. 01:13-01:20 ve 01:48-01:49 arasında da kopma var. Hoca bir süre yazamadan, slayttan anlattı.
 - **Kayıt:** Hoca kayıtlara karşı değil. Online eğitim sistemindeki yazılım hakkındaki eleştirilerini "kayıtlara geçecek ama" diyerek dile getirdi.
 
-> **Not:** Bu özeti ve dersin altyazı dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+> **Not:** Bu özeti ve dersin altyazı dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

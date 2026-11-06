@@ -519,4 +519,4 @@ Bu derste beş makale üzerinden risk yönetimi, ekonomik göstergeler, kaynak p
 
 Dördüncü ve beşinci sunumlar dağıtık çalışmaya odaklandı. Küresel geliştirme riskleri Leavitt'in modeline göre altı kategoride toplandı. Çevik ve Scrum'ın dağıtık ekiplerde uygulanması da yüz yüze iletişim, Scrum of Scrums, sık sürüm ve ayrıntılı gereksinim gibi derslerle özetlendi. Sunumlar boyunca hocanın biçimsel uyarısı da akılda tutulmalıdır: İyi bir makale sunumu kaynağını baştan gösterir, metni okumaz, en önemli noktaları özetler. Kalan makale sunumları ve uygulama projelerinin anlatımı sonraki derse kaldı.
 
-**Not:** İsterseniz bu kayıtları NotebookLM gibi bir araca atıp daha istifadeli hale getirebilirsiniz.
+**Not:** İsterseniz bu kayıtları Gemini Notebook gibi bir araca atıp daha istifadeli hale getirebilirsiniz.

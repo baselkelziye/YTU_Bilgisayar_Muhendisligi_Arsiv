@@ -50,4 +50,4 @@
 - İşletmelerde satış-pazarlama, üretim, finans, muhasebe ve insan kaynakları gibi temel fonksiyonlar bilgi sistemlerinden destek alır. Satış tahminleri, pazar analizleri, reklam planlamaları, üretim planlaması, yatırım kararları ve çalışan performans takibi bu destek alanlarına örnektir.
 - MIS'in teknik yönü; bilgisayar bilimi, algoritmalar, veri tabanı, veri madenciliği, yapay zeka ve yöneylem araştırmasıyla ilişkilidir. Davranışsal yönü ise çalışan psikolojisi, kurum kültürü, ekonomik kararlar ve toplumsal yapı gibi faktörleri dikkate alır.
 
-* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

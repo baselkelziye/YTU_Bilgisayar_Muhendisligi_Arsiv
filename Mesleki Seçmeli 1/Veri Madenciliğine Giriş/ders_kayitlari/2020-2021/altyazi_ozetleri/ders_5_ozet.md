@@ -32,4 +32,4 @@
 - Entropi, bir düğümdeki belirsizliği ifade eder. Bilgi kazancı ise bir öz nitelikle bölme yapıldığında belirsizliğin ne kadar azaldığını gösterir. Yüksek bilgi kazancı sağlayan öz nitelik, düğüm seçimi için güçlü adaydır.
 - Karar ağacı yorumlanabilir olduğu için avantajlıdır; ancak küçük değişikliklere duyarlı olabilir ve fazla büyüdüğünde eğitim verisine aşırı uyum sağlayabilir. Bu nedenle budama veya durma koşulları önem kazanır.
 
-* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

@@ -41,4 +41,4 @@
 - Sistem çağrılarının güvenlik etkisi farklıdır. Dosya açma çağrısı yalnızca okuma modunda daha düşük riskli görünse de hassas veri sızdırabilir; yazma, silme, proses öldürme veya yetki değiştirme ise kalıcı ve yıkıcı etki oluşturabilir.
 - Zararlı yazılımlar sanal makine, sandbox, anormal zamanlama, kısıtlı donanım veya özel dosya izleri gibi göstergelerden analiz ortamında olduklarını anlayabilir. Bu nedenle sandbox tasarımında yalnızca kısıtlama değil, ortamın gerçekçi görünmesi de önemlidir.
 
-* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

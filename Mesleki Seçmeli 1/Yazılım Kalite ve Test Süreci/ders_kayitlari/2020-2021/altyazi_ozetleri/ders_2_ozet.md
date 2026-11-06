@@ -202,4 +202,4 @@ Gözden geçirme genelde şu durak noktalarında yapılır: sistem analizi, yaz�
 - ISO 9126 yazılım ürün kalitesi standardıdır. Günümüzde yerini ISO/IEC 25010 almıştır.
 - Whisper bazı adları bozmuştur: "MacGol/Makkol/McColl" McCall, "maccape/makyip" McCabe, "hashtag/high stat" Halstead, "mental model" incremental (artımlı) model, "Mindstone" milestone, "Kamba" Kanban.
 
-**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

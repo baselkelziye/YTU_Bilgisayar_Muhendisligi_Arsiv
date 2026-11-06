@@ -148,4 +148,4 @@
 - Bazı bölümlerin sözlü anlatımı (ör. 00:12:40–00:13:10, 00:16:15–00:16:45, 00:59:04) altyazıda döngüye girmiş. Bu kısımlar altyazıda anlaşılmıyor.
 - Hoca derste yoklama ya da sınav tarihi duyurmadı. Sınav öncesi genel alıştırmalar yapılacağını tekrarladı.
 
-**Not:** İsterseniz bu kayıtları NotebookLM gibi bir araca atıp daha istifadeli hale getirebilirsiniz.
+**Not:** İsterseniz bu kayıtları Gemini Notebook gibi bir araca atıp daha istifadeli hale getirebilirsiniz.

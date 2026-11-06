@@ -249,4 +249,4 @@ durum (s_t) --> eylem (a_t) --> yeni durum (s_t+1) --> ödül/ceza (r)
 - **Ders yapılmayan gün:** hoca derse "Geçen hafta ders yapamadık, direktörlükte toplantı vardı" diyerek başladı ve telafi edeceğini söyledi. Bu, 15 Aralık 2020'deki ders 11'in yapılmadığını gösteriyor.
 - **Sonraki ders:** hoca Q-öğrenmenin üzerinden bir sonraki dersin başında tekrar geçeceğini söyledi.
 
-NotebookLM gibi bir araca altyazı dosyasını yükleyerek bu ders hakkında daha ayrıntılı soru-cevap yapabilirsiniz.
+Gemini Notebook gibi bir araca altyazı dosyasını yükleyerek bu ders hakkında daha ayrıntılı soru-cevap yapabilirsiniz.

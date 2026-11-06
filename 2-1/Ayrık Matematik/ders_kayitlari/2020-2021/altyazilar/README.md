@@ -26,4 +26,4 @@ Dersler 9 Ekim 2020 Cuma günü başlamıştır. Ders haftada bir gün (Cuma) on
 - 8 numaralı ders kaydı bu şubenin kayıt arşivinde bulunmamaktadır (27 Kasım 2020 haftası).
 - 1 Ocak 2021 resmî tatil olduğu için ders yapılmamıştır.
 
-**Not:** İsterseniz bu kayıtları NotebookLM gibi bir araca atıp daha istifadeli hale getirebilirsiniz.
+**Not:** İsterseniz bu kayıtları Gemini Notebook gibi bir araca atıp daha istifadeli hale getirebilirsiniz.

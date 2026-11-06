@@ -112,4 +112,4 @@ void bubble(void *arr, size_t n, size_t eb, int (*cmp)(const void *, const void 
 - **`-lpthread` ve `-pthread`:** Derste verilen `-lpthread` kütüphaneyi bağlar. Günümüzde gcc için önerilen bayrak, hem derleme hem bağlama ayarlarını yapan `-pthread`'dir.
 - **Değişken uzunluklu dizi:** Genel swap'teki `char temp[nbytes];` C99'un değişken uzunluklu dizi (VLA) özelliğidir. Büyük `nbytes` değerlerinde stack taşabilir. Hocanın dediği gibi `malloc` kullanmak daha güvenlidir.
 
-* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

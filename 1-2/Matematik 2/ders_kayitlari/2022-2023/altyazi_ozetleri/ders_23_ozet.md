@@ -176,4 +176,4 @@ Tarih: 15 Mayıs 2023 (Pazartesi). Konular bitti. Ders, final hazırlığı içi
 - Örnek 15'te soru $G$ fonksiyonu ile kapalı tanımlı. Hocanın tahtada bulduğu $\dfrac1z$ sonucu doğrudur.
 - 00:34:21-00:47:29 ve 01:29:01-01:39:06 arası mola.
 
-İsterseniz bu kayıtları NotebookLM gibi bir araca atıp daha istifadeli hale getirebilirsiniz.
+İsterseniz bu kayıtları Gemini Notebook gibi bir araca atıp daha istifadeli hale getirebilirsiniz.

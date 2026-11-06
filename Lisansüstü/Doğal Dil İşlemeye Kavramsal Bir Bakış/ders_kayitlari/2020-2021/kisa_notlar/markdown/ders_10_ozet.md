@@ -28,4 +28,4 @@
 
 - Kayıt bu kısa konuşmadan sonra bitiyor. Vizenin kendisi ve sonrasında ders yapılıp yapılmadığı kayıtta yoktur.
 
-İsterseniz bu kayıtları NotebookLM gibi bir araca atıp daha istifadeli hale getirebilirsiniz.
+İsterseniz bu kayıtları Gemini Notebook gibi bir araca atıp daha istifadeli hale getirebilirsiniz.

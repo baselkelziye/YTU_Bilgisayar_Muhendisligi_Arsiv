@@ -200,4 +200,4 @@
 - Altyazıda kitap adı "Barron", "Barun" ve "Barone" gibi farklı yazılmış. Doğru adı Baron'dur.
 - 00:51:41 ile 00:52:51 arasındaki Türkçe duyuru, İngilizce modunda bozuk çevrildi. Anlamlı kısım: ikinci vize 17 Aralık'ta, ikinci quiz sürpriz.
 
-* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz. Bu ders İngilizce anlatıldığı için altyazı da İngilizcedir.
+* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz. Bu ders İngilizce anlatıldığı için altyazı da İngilizcedir.

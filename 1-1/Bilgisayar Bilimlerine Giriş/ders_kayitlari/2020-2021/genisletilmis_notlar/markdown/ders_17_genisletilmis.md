@@ -481,4 +481,4 @@ Bu derste birinci ara sınavın test ve yazılı soruları çözüldü. Test bö
 
 Hoca, sınavda çözülemese bile bu soruları oturup sıfırdan yeniden çözmenin bir yatırım olduğunu söyler. Sonraki derste matrislerle devam edileceğini, birkaç yeni bilgi verileceğini ve yeni algoritmik problemlere geçileceğini belirtir.
 
-**Not:** İsterseniz bu kayıtları NotebookLM gibi bir araca atıp daha istifadeli hale getirebilirsiniz.
+**Not:** İsterseniz bu kayıtları Gemini Notebook gibi bir araca atıp daha istifadeli hale getirebilirsiniz.

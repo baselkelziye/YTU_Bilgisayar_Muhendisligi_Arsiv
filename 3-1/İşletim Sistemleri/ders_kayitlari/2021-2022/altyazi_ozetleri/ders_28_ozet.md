@@ -158,4 +158,4 @@ Intel 8086'da dört segment yazmacı vardır: CS (code segment), DS (data segmen
 - Koruma kontrolündeki sınır koşulu: geçerli adresler $base \le a < base + limit$ aralığındadır. Slayttaki örnekte son geçerli adres 420939'dur.
 - Sayfalama, sayfa tablosu yapıları (hiyerarşik, hash, ters), Intel ve ARM mimarileri bu derste işlenmedi. Hoca bu kısımları da finale dahil etti, kitaptan çalışılmalı.
 
-**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

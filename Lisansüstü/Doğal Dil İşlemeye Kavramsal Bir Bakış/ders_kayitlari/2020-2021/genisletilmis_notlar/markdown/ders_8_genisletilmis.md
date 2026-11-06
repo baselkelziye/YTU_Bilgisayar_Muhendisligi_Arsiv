@@ -711,4 +711,4 @@ Sıradaki konu cebirsel modellerden LSA'dır. Hoca bunu önemli bir konu olarak 
 
 > **Ders sonrası not (yazımlar):** Altyazıda bozuk geçen terimlerin doğruları: "Bullun/boğulun" Boolean, "kosan simularite" cosine similarity, "Lievenstein" Levenshtein, "safiks tri" suffix tree, "fazi" fuzzy, "TRI/tria/treya" trie, "kubik" QBIC, "Webseq" WebSEEk, "AskGives" Ask Jeeves, "AnswerBuzz" AnswerBus, "Hidenmarko" Hidden Markov. Altyazıda "NLP 28 yaşıyla" geçen yer Ann'dir. "It is what is it" diye geçen belge, konum bilgisine göre "it is what it is"tir.
 
-**Not:** İsterseniz bu kayıtları NotebookLM gibi bir araca atıp daha istifadeli hale getirebilirsiniz.
+**Not:** İsterseniz bu kayıtları Gemini Notebook gibi bir araca atıp daha istifadeli hale getirebilirsiniz.

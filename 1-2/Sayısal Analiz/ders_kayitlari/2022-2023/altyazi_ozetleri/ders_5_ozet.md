@@ -143,4 +143,4 @@
 - **Alıştırma ve ödev 2'nin cevapları (kontrol için, önce kendiniz çözün):** $f(x) = x^2$, $x = 1$, $h = 0.1$ alınırsa ileri fark 2.1, geri fark 1.9, merkezi fark 2'dir. $f(x) = 2x^2 + 1$, $x = 2$, $h = 0.1$ için ileri fark 8.2, geri fark 7.8, merkezi fark 8, Taylor ileri fark formülü $\frac{-3 \cdot 9 + 4 \cdot 9.82 - 10.68}{0.2} = 8$. İkinci derece polinomlarda merkezi fark ve $O(h^2)$ formülleri tam sonucu verir. $e^x$ için Taylor ileri fark formülü 2.7085 verir (basit ileri farktan çok daha yakın).
 - **Ödev 1 kontrolü:** Ödevdeki üç formül doğrudur. $f(x) = x^3$, $x = 1$, $h = 0.1$ ile deneyince $f' \approx 3$, $f'' \approx 6$, $f''' = 6$ çıkar.
 
-* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

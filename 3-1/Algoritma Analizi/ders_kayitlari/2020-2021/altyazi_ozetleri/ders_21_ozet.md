@@ -215,4 +215,4 @@ bfs(v):
 - Ağırlıklı grafta kenar olmayan yer için derste "bazen eksi değer" de dendi. Negatif değer gerçek bir negatif ağırlıkla karışabilir. Bu yüzden genelde $\infty$ (çok büyük bir sayı) kullanılır.
 - Altyazıda "Bread-first", "Brad First" diye geçen terim breadth-first, "Dev-first" diye geçen terim depth-first, "Pistoda" ve "Fisoda" diye geçen terim sözde kod, "asayklik" diye geçen terim acyclic'tir.
 
-**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

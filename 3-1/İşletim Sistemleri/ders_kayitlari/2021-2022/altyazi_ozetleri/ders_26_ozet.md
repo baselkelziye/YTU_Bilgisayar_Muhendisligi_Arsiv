@@ -190,4 +190,4 @@ Bu çözüm derste verilmedi; hocanın sorduğu soru için eklendi.
 - "Bütün kaynaklar tek kopyalıysa döngü deadlock demektir" ifadesi için yalnız döngüdeki kaynakların tek kopyalı olması yeterlidir.
 - Bekleme çizgesi derste karışık anlatıldı ("R3'ten P5'e" gibi). Doğru kenarlar yukarıdaki "Tespit" kısmında, slayt karesine göre verildi.
 
-**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

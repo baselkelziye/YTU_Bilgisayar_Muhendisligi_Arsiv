@@ -107,4 +107,4 @@
 - **MSDS:** Türkiye'deki güncel adı "Güvenlik Bilgi Formu"dur (GBF, İngilizcede SDS).
 - **Parlama ve yanma noktası:** Parlama noktası, sıvının buharının bir ateş kaynağıyla anlık alev aldığı en düşük sıcaklıktır. Yanma noktası, alevin sürekli yanmaya devam ettiği sıcaklıktır ve parlama noktasından biraz yüksektir.
 
-**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

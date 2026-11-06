@@ -125,4 +125,4 @@ Arama her zaman root'tan başlar. Her düğümde local binary search yapılarak 
 - Uzamsal (spatial) ve çok boyutlu (multi-dimensional) index yapıları vardır
 - Bu konu hem klasik hem de güncel araştırma konusudur
 
-* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

@@ -121,4 +121,4 @@ Derste tahtada doldurulan tablonun doğru sonuçları ders sonrasında hesapland
 - **Slayttaki çarpma örneği:** $15.7136 \times 10^3$, $0.157136 \times 10^{-5}$ olarak yazılmış. Virgül sola iki basamak kaydığı için üs 2 artar: $0.157136 \times 10^5$. Hoca derste de bu satırın yanlış olduğunu fark etti.
 - **Yuvarlama hatasının tanımı:** Derste yuvarlama hatası, aynı sayının yuvarlanmış ve kesilmiş hâlleri arasındaki fark olarak anlatıldı. Genel tanımı, gerçek değer ile sınırlı sayıda basamakla gösterilen değer arasındaki farktır. Örneğin $\pi$ 3.1416 olarak alınırsa yuvarlama hatası $3.14159265\ldots - 3.1416 \approx -0.0000073$'tür.
 
-* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

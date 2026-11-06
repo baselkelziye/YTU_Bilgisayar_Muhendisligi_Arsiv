@@ -187,4 +187,4 @@
 - Final tarihi bu derste verilmedi. Hoca haftaya da final soruları çözüleceğini söyledi.
 - Hoca kayıtların paylaşılmasına itiraz etmedi.
 
-İsterseniz bu kayıtları NotebookLM gibi bir araca atıp daha istifadeli hale getirebilirsiniz.
+İsterseniz bu kayıtları Gemini Notebook gibi bir araca atıp daha istifadeli hale getirebilirsiniz.

@@ -142,4 +142,4 @@ Senkronizasyon mekanizmalarının işlerliğini test etmek için üç klasik pro
 
 **Monitörler**, semaforlardan daha üst seviye bir senkronizasyon yapısıdır. Semaforlarla doğru kullanım sorunları vardır (sıra karıştırma, unutma). Monitör, sınıf (class) benzeri bir yapıdır: paylaşılan değişkenler + bu değişkenler üzerinde çalışan prosedürler içerir. Monitörde herhangi bir anda sadece bir proses aktif olabilir; bu mutual exclusion'ı otomatik sağlar. Koşul değişkenleri (condition variables) ile senkronizasyon sağlanır.
 
-* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

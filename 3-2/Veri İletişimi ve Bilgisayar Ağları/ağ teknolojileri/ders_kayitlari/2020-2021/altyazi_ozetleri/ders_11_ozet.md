@@ -59,4 +59,4 @@ Two army problem, eş zamanlı karar verme problemlerinin klasik örneğidir. İ
 
 3-way handshake (DR → DR → ACK) ile bağlantı sonlandırma, normal koşullarda çalışır. Her iki taraf bir timer başlatır; bu timer, ağda hâlâ dolaşan paketlerin (farklı yollardan farklı gecikmelerle) hedefe ulaşmasını bekleyecek kadar uzun olmalıdır. Ancak ağ çok kötü durumdaysa (her iki taraf da timeout'a uğrarsa), bağlantı zorla kapatılır ve olası veri kaybı kabul edilir.
 
-* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

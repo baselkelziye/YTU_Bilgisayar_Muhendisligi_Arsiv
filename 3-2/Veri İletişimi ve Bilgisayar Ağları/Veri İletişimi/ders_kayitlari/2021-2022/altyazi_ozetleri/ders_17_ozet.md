@@ -177,4 +177,4 @@
 - **Zil gerilimi:** Hoca 70–80 V dedi. Sabit hatlarda zil sinyali genellikle 75–90 V (etkin değer), 20–25 Hz'lik alternatif gerilimdir. Hat normalde yaklaşık 48 V DC ile beslenir.
 - **Crossbar ölçeği:** $N$ uçlu tam bir crossbar yaklaşık $N^2$ anahtar ister; 3000 uç için yaklaşık 9 milyon anahtar gerekir. Hocanın "her biri için 3000 anahtar" ifadesi bu toplamla tutarlıdır.
 
-**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

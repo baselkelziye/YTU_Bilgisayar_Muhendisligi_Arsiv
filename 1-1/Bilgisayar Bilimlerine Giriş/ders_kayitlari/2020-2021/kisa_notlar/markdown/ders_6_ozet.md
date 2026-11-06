@@ -111,4 +111,4 @@ Karakterler için en bilinen tablo ASCII'dir. Her karaktere bir sayı karşılı
 
 Resimler piksellerden oluşan, yüksekliği ve genişliği olan matrisler olarak saklanır. Her piksel 1 byte ile ifade edilirse 1920×1080 bir resim 1920 × 1080 byte yer kaplar. Saniyede 30 kare olan bir videoda bu miktar her saniye için 30 ile çarpılır. Ses ise genellikle zamana bağlı şiddet değerlerinden oluşan tek boyutlu bir dizi olarak saklanır. Bu veriler çok yer kapladığı için sıkıştırılır. Kayıpsız sıkıştırmada veri açıldığında birebir aynısı elde edilir. Kayıplı sıkıştırmada ise insanın algılayamayacağı ayrıntılar atılır. MP3 formatının duyulmayan sesleri saklamaması buna örnektir. Kayıplı yöntemler çoğunlukla ses, görüntü ve videoda kullanılır.
 
-* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

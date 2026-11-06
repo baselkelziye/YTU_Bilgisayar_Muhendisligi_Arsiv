@@ -107,4 +107,4 @@ Dizilerle çözülen ilk problemde N öğrencinin final notları bir diziye okun
 
 Ders sonunda 365 günlük sıcaklık verisinden en sıcak ve en soğuk günü bulma problemi alıştırma olarak verilir. Hoca çözüm fikrini sözel olarak anlatır: ilk değer hem maksimum hem minimum kabul edilir, sonraki her değer bu değerlerle karşılaştırılır ve gerekirse güncellenir. Dışarıdan sabit bir başlangıç değeri vermek, değer aralığının bilinmediği durumlarda yanlış sonuç verebileceği için önerilmez. Bilgisayarın verileri insan gibi bir bakışta göremediği, her değeri tek tek karşılaştırması gerektiği vurgulanır.
 
-* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

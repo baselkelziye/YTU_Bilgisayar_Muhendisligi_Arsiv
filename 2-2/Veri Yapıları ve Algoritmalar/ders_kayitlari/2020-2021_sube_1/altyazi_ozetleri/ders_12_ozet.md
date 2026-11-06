@@ -146,4 +146,4 @@ for (i = 0; i < N; i++)
 - Asistan adres için `int` yerine `long` gibi daha büyük bir tamsayı tipi gerekebileceğini söyledi. C'de adres bir işaretçi (pointer) tipinde tutulur. 64 bit sistemlerde işaretçi genellikle 8 bayt, `int` genellikle 4 bayttır.
 - Yukarıdaki kod parçasında `N`, `M` ve `test` matrisi kodun ekranda görünmeyen kısmında tanımlıdır. Parça kod olduğu için derlenmedi.
 
-**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

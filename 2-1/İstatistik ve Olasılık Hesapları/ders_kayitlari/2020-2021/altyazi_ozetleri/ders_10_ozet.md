@@ -181,4 +181,4 @@
 - İkinci vize tarihi: 9. derste vize 17 Aralık olarak duyurulmuştu. Bu kayıtta 17 Aralık'ta bir quiz yapıldı ve hoca ikinci vizenin gelecek hafta olduğunu söyledi. 11. kayıt (24 Aralık) bir sınav oturumudur.
 - Ara verme saati altyazıda "3.30 a.m." gibi bozuk geçiyor. Ders öğleden sonra yapıldığı için bu bir tanıma hatasıdır.
 
-* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz. Bu ders İngilizce anlatıldığı için altyazı da İngilizcedir.
+* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz. Bu ders İngilizce anlatıldığı için altyazı da İngilizcedir.

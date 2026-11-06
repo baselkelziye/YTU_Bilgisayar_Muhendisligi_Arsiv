@@ -1,6 +1,6 @@
 # Mikroişlemci Sistemleri Ders Kayıtları & Çalışma Özetleri
 
-> **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi daha verimli çalışabilirsiniz.
+> **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi daha verimli çalışabilirsiniz.
 
 ## Genel Bilgiler
 
@@ -532,4 +532,4 @@ R-2R merdiven direnç ağı, binary girişlerin her bir bitini analog gerilime d
 **DRAM'de Row/Column Multiplexing:**
 DRAM'de adres pinleri hem satır hem sütun seçimi için kullanılır. İlk olarak satır adresi latch'lenir (RAS), ardından sütun adresi latch'lenir (CAS). Bu multiplexing sayesinde daha az pin ile daha büyük kapasite adreslenebilir.
 
-* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

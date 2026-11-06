@@ -267,4 +267,4 @@ KONTROL: IN   AL, 0A9h    ; status register'ı oku
 - **SRAM hücresi:** Hoca "SR latch" dedi. Tipik SRAM hücresi çapraz bağlı iki eviriciden oluşan bir latch'tir (6 transistör). Mantık olarak doğru.
 - Altyazıda "Manon" Mano, "IORID" I/O Read/I/O Write, "Eknolci/Ekne oluş" acknowledge, "Baskrent" bus grant, "SET Asosyatif" set associative demektir.
 
-* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

@@ -189,4 +189,4 @@ Hoca saydam kutu ve kara kutu testinin yanında üçüncü bir tür olarak gri k
 - **ISO kalite modeli.** Güncel yazılım kalite modeli ISO/IEC 25010'dur. Bu model 2011'de ISO/IEC 9126'nın yerini aldı.
 - Altyazıda "bilim testi" diye geçen terim **birim testi**dir (unit test).
 
-**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

@@ -184,4 +184,4 @@
 - Hoca ilk uygulamanın tamamen komut satırından çalıştığını söyledi. Berners-Lee büyük olasılıkla 1990'da grafik arayüzlü bir tarayıcı-düzenleyici de yazmıştır.
 - Hoca statik web'i indeksli web ile eşitledi. Bu eşitlik büyük olasılıkla kesin değildir: hocanın dinamik web örneği olan haber siteleri de arama motorlarında çıkar.
 
-**Not:** İsterseniz bu kayıtları NotebookLM gibi bir araca atıp daha istifadeli hale getirebilirsiniz.
+**Not:** İsterseniz bu kayıtları Gemini Notebook gibi bir araca atıp daha istifadeli hale getirebilirsiniz.

@@ -133,4 +133,4 @@ Hata bitleri: Parity Error (D3), alınan veride parity uyumsuzluğu olduğunu g�
 **Baud Rate Faktörünün Anlamı:**
 Asenkron modda 8251'in clock pini, doğrudan baud rate'e eşit olmak zorunda değildir. ×1, ×16 veya ×64 faktörleri ile clock frekansı baud rate'in katları olarak seçilebilir. ×16 ve ×64 faktörleri, alıcı tarafın her bit süresince birden fazla örnekleme yapmasını sağlar. Bu, bit geçişlerinin daha güvenilir tespit edilmesini ve hata oranının düşürülmesini sağlar. Örneğin 9600 baud asenkron iletişim için ×64 faktörü seçilirse clock frekansı 9600 × 64 = 614.400 Hz olmalıdır.
 
-* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

@@ -242,4 +242,4 @@ Dijkstra(G, s, w)
 - **İkinci örnekte `pred` değeri.** Hoca bir yerde "A'ya D'den gelindi" dedi. Doğrusu "D'ye A'dan gelindi" ($2 + 5 = 7$); hoca hemen ardından bunu doğru yazdı.
 - **Kenar listesinde CE ve BE.** Hoca sıralı listeyi yazarken son kenarı önce "DE24" dedi. Öğrencinin uyarısıyla doğrusunun BE24 olduğu, CE'nin de 23 olduğu düzeltildi.
 
-**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

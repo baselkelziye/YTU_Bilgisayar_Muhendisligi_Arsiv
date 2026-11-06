@@ -232,4 +232,4 @@ $$\lim_{x\to0}\frac{\sqrt{2+\sin x}-\sqrt{1+\cos x}}{\tan x}=\frac{1}{2\sqrt2}$$
 
 ---
 
-İsterseniz bu özeti NotebookLM gibi bir araca atıp daha istifadeli hale getirebilirsiniz.
+İsterseniz bu özeti Gemini Notebook gibi bir araca atıp daha istifadeli hale getirebilirsiniz.

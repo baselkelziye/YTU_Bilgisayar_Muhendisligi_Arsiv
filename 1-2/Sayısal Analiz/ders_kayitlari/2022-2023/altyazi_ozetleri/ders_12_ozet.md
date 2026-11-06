@@ -52,4 +52,4 @@
 - **Gösterimdeki matrisin tersi:** $\begin{bmatrix} 1 & 2 & 3 \\ 4 & 5 & 6 \\ 7 & 2 & 9 \end{bmatrix}^{-1} = \begin{bmatrix} -0.9167 & 0.3333 & 0.0833 \\ -0.1667 & 0.3333 & -0.1667 \\ 0.75 & -0.3333 & 0.0833 \end{bmatrix}$. Kendi kodunuzu sınamak için kullanabilirsiniz.
 - **Kendi kodunuzu sınamak için:** Hocanın yaptığı gibi kökleri bilinen polinomlar seçin (ör. $(x - a)(x - b)$ çarpımı) ve farklı başlangıç değerleriyle farklı köklerin bulunduğunu kontrol edin. Ders 5'te söylendiği gibi kök içermeyen bir aralık ve çok dar bir aralık da deneyin.
 
-* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

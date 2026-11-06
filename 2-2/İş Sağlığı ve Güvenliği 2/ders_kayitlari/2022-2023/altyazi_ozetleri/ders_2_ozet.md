@@ -128,4 +128,4 @@
 - **Silikozisin nedeni:** Altyazıda "silistoz" geçiyor. Doğrusu: silikozis, kristal silika (silisyum dioksit, kuvars) tozunun akciğerde birikmesiyle oluşur.
 - **Kurşun ve trafik polisleri:** Bu örnek kurşunlu benzinin yaygın olduğu döneme aittir. Kurşunlu benzin Türkiye'de 2000'li yıllarda kullanımdan kalktı.
 
-**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

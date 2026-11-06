@@ -235,4 +235,4 @@ Hoca, algoritmaların davranışını görmek için şu denemeleri önerdi:
 - Quick Sort'un sıralı dizide $n^2$'ye düşmesi, pivotun ilk veya son eleman seçildiği basit sürüm için geçerlidir. Rastgele pivot veya üçün ortancası (median-of-three) gibi seçimlerle bu durum büyük ölçüde önlenir.
 - C'de çalışma süresi ölçmek için örneğin `time.h` içindeki `clock()` fonksiyonu kullanılabilir. Altyazıda hocanın adını verdiği fonksiyon anlaşılmıyor.
 
-**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

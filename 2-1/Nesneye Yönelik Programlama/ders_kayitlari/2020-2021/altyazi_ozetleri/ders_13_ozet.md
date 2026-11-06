@@ -229,4 +229,4 @@ String t = s.write();                   // dönüş tipi String olur
 - **Python karşılaştırma metotları:** `__lt__` "less than" demektir. Derste "lower than" dendi.
 - **Hocanın `IDatabase r = new OracleDB();` satırında aldığı hata** IDE'nin geç derlemesinden kaynaklandı. "Build" sonrası düzeldi. Kodda hata yoktu.
 
-* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

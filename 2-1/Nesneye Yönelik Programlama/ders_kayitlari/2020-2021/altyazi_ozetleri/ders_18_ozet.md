@@ -204,4 +204,4 @@ b1.Click += B1_Click;
 - İç sınıflarda `static` metot tanımlanamayacağı bilgisi Java 15 ve öncesi için doğrudur. Java 16'dan itibaren iç sınıflarda statik üyeler tanımlanabilir.
 - Ders sonundaki soru-cevapta iç sınıfların bellek maliyeti konuşuldu. `static` olmayan iç sınıfın her nesnesi dış sınıf nesnesine gizli bir referans tutar. Bağlı listedeki `Node` gibi dış nesneye ihtiyaç duymayan sınıflar `private static class Node<Item>` olarak yazılırsa bu referans olmaz. Statik iç sınıf dış sınıfın tip parametresini göremediği için kendi tip parametresini (`<Item>`) alır.
 
-* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

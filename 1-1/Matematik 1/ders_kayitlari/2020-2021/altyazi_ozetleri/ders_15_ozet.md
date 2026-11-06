@@ -28,4 +28,4 @@
 - Bu kayıt bir derse değil, ders yapılmayan bir güne aittir. Konu çalışması için önceki ve sonraki derslere bakın.
 - Kaydın sonundaki konuşma derse ait değil. Altyazıda kısmen anlaşılmıyor.
 
-**Not:** İsterseniz bu kayıtları NotebookLM gibi bir araca atıp daha istifadeli hale getirebilirsiniz.
+**Not:** İsterseniz bu kayıtları Gemini Notebook gibi bir araca atıp daha istifadeli hale getirebilirsiniz.

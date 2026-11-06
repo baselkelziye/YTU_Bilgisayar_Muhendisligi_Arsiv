@@ -437,4 +437,4 @@ Bu derste birlikte iki program yazıldı. İlkinde bir veri setinin en küçük 
 
 İkincisinde medyanın ne olduğu, neden önemli olduğu ve bulunurken nelere dikkat edileceği konuşuldu. Ana fikir, problemin ne istediğini doğru tespit edip gereksiz işi yapmamaktır: Medyan için sıralama ortaya kadar yapılır. Kod yazarken hata çıktığında nasıl düzeltileceği de birlikte görüldü. Hoca, bir sonraki derste ağ ve internetle ilgili kalan birkaç bilgiyi paylaşacağını ve ardından ikili arama (binary search) algoritmasını çözeceğini söyledi.
 
-**Not:** İsterseniz bu kayıtları NotebookLM gibi bir araca atıp daha istifadeli hale getirebilirsiniz.
+**Not:** İsterseniz bu kayıtları Gemini Notebook gibi bir araca atıp daha istifadeli hale getirebilirsiniz.

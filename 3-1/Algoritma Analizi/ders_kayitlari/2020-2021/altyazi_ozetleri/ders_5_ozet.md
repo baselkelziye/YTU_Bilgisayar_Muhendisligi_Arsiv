@@ -157,4 +157,4 @@ $$A(2^k) = A(2^{k-1}) + 1 = A(2^{k-2}) + 2 = \dots = A(2^{k-i}) + i$$
 - **$A(n)$ ile basamak sayısı farkı:** $A(n)$ toplama sayısıdır ve $\lfloor \log_2 n \rfloor$'dir. Algoritmanın döndürdüğü basamak sayısı ise $\lfloor \log_2 n \rfloor + 1$'dir. İkisi aynı şey değildir.
 - **Toplamada temel işlem:** Bir öğrenci "iki toplama olsaydı $+2$ mi yazardık?" diye sordu. Hoca genelde bir işlem seçildiğini söyledi. Aslında her çağrıda $c$ sabit sayıda işlem yapılıyorsa $+c$ yazılır. Sonuç yine aynı büyüme derecesini verir: $\Theta(n)$ ya da $\Theta(\log n)$.
 
-**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

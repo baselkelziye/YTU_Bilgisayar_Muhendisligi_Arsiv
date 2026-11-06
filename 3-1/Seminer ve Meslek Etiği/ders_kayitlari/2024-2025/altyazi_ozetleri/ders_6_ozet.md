@@ -310,4 +310,4 @@
 - **KVKK ve açık rıza:** KVKK md. 5, açık rıza dışında da işleme şartları sayar: sözleşmenin ifası, hukuki yükümlülük, meşru menfaat gibi. KVK Kurulu, hizmetin açık rıza şartına bağlanmasını hukuka aykırı bulmaktadır.
 - **KVKK md. 9 değişikliği:** Yurt dışına aktarımı düzenleyen md. 9, 2024'te 7499 sayılı kanunla değiştirildi. Artık yeterlilik kararı ve uygun güvenceler gibi açık rıza dışı aktarım yolları da var. Hocanın "her şey açık rızaya bağlı" eleştirisi bu değişiklikten önceki metne daha çok uyuyor.
 
-**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

@@ -364,4 +364,4 @@ Hocanın sorularındaki ortak çizgi, bir makalenin sonuçlarını olduğu gibi 
 
 > **Ders sonrası not:** 4. sunumdaki adlar: "math language / NBERT" çok dilli BERT (Multilingual BERT, mBERT), "Perspert" ParsBERT, "Cameron BERT" CamemBERT, "KovBERT" büyük olasılıkla ConvBERT, "Tribank" Treebank, "Stanford Quarlesming" SQuAD. Makale yazarları altyazıda bozuk geçtiği için not metnine yazılmadı. "BERT-Base daha çok OpenAI'a benzeyen taraf" ifadesi, BERT-Base'in OpenAI GPT ile karşılaştırılabilir boyutta tasarlanmasına işaret eder.
 
-**Not:** İsterseniz bu kayıtları NotebookLM gibi bir araca atıp daha istifadeli hale getirebilirsiniz.
+**Not:** İsterseniz bu kayıtları Gemini Notebook gibi bir araca atıp daha istifadeli hale getirebilirsiniz.

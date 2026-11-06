@@ -274,4 +274,4 @@
   - $a=\dfrac{32}{100}$, $r=\dfrac1{100}$.
   - Toplam $\dfrac{32/100}{1-1/100}=\dfrac{32}{99}$.
 
-NotebookLM notu: İsterseniz bu özeti ve ders kaydını NotebookLM gibi bir araca atıp daha istifadeli hale getirebilirsiniz.
+Gemini Notebook notu: İsterseniz bu özeti ve ders kaydını Gemini Notebook gibi bir araca atıp daha istifadeli hale getirebilirsiniz.

@@ -240,4 +240,4 @@ $$S=2\pi\int_1^3\frac{2}{x}\sqrt{1+\frac{4}{x^4}}\,dx$$
 - **Hesaplanan sonuçlar:** Hoca çoğu integrali ödev bıraktı. Sayısal sonuçlar ($\frac{13\sqrt{13}-8}{27}$, $\frac{\pi}{6}(5\sqrt5-1)$, $\frac92$, $\frac{72\pi}{5}$, $\frac{16\pi}{3}$, $\frac{162\pi}{5}$, $\frac{81\pi}{2}$, $\frac{8\pi}{3}$, $16\pi\ln3-8\pi$) bu özette hesaplandı.
 - **Altyazı:** Yaklaşık 00:05:01, 00:16:26-00:16:51, 00:45:41, 01:43:23 ve 02:46:34 civarında altyazı tekrar döngüsüne giriyor ("birçok birçok", "İnteklisi", "bu bölümde"). Bu kısımlar altyazıda anlaşılmıyor. Formüller hocanın sonraki anlatımından ve tahtadan kuruldu.
 
-**Not:** İsterseniz bu kayıtları NotebookLM gibi bir araca atıp daha istifadeli hale getirebilirsiniz.
+**Not:** İsterseniz bu kayıtları Gemini Notebook gibi bir araca atıp daha istifadeli hale getirebilirsiniz.

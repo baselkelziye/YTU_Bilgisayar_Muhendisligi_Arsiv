@@ -116,4 +116,4 @@
 
 - **Aggregate Fonksiyon Kullanımı:** Sales departmanında kaç kişi çalıştığını ve toplam/minimum/maksimum/ortalama maaşları bulmak için SUM, MIN, MAX, AVG ve COUNT fonksiyonları kullanılır. `SELECT SUM(salary), MIN(salary), MAX(salary), AVG(salary), COUNT(*) FROM employee, department WHERE dname = 'Sales' AND dnumber = dno` sorgusuyla tek satırlık bir sonuç elde edilir.
 
-* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

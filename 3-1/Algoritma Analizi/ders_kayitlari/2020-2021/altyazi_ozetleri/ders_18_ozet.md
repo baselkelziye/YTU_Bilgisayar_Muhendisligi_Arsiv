@@ -156,4 +156,4 @@ return F[n,m]
 - Altyazıda "Napsack", "Nepsek" diye geçen terim knapsack, "remote coin collection" diye geçen terim robot coin collection, "koyun" diye geçen kelime coin (para) anlamındadır.
 - Ekran kayıt cihazının saatinde görünen "9 January" tarihi cihaz ayarıdır. Dersin tarihi 2 Aralık 2020'dir.
 
-**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

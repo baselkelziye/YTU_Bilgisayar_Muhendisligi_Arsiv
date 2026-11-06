@@ -98,4 +98,4 @@
 - **Örnek 2'nin ($x$: 2…10) sonucu:** Derste formül kuruldu ama sonuç sözle verilmedi ve tahtadaki sadeleştirmede $\frac{32}{4}$ yazılıp $2!$ unutulmuş gibi görünüyor. Doğrusu $\frac{(x-2)(x-4)}{2^2 \cdot 2!}32 = 4(x-2)(x-4)$'tür. Sonuç $F(x) = 10 + 20(x - 2) + 4(x - 2)(x - 4) = 4x^2 - 4x + 2$. Kontrol: $F(2) = 10$, $F(8) = 226$, $F(10) = 362$. Hocanın "8 koydum, 226 verdi" kontrolü bu fonksiyonla tutar. $F(3) = 26$.
 - **"Gregory daha yakın sonuç verir" ifadesi:** Hoca Lagrange'ı anlatırken Gregory'nin daha yakın sonuç verdiğini söyledi. Aynı noktaların tamamı kullanılırsa iki yöntem de aynı polinomu bulur (yukarıdaki "teklik" notuna bakın). Fark yalnızca elle hesaplarken hata yapma olasılığındadır. Gregory-Newton'da fark tablosu erken sabitlenirse daha az işlem yapılır.
 
-* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

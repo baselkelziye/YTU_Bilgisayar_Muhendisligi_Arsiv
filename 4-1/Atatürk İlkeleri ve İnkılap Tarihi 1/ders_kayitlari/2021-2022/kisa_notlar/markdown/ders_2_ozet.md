@@ -145,4 +145,4 @@
 - Hoca derste rastgele öğrenci seçip soru soruyor (teokrasi, "mono" sözcüğü gibi).
 - Slaytlar hafta sonu sisteme yüklenecek.
 
-**Not:** İsterseniz bu kayıtları NotebookLM gibi bir araca atıp daha istifadeli hale getirebilirsiniz.
+**Not:** İsterseniz bu kayıtları Gemini Notebook gibi bir araca atıp daha istifadeli hale getirebilirsiniz.

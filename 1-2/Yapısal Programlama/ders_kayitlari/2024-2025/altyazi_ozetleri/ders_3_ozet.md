@@ -127,4 +127,4 @@
 - **`switch` ve string:** `switch` içinde `char c[2] = "ab"` gibi bir dizi kullanılamaz. Derleme hatası verir.
 - **İç içe `if` sorusu:** Slayttaki `if(a<b) if(a<c) return a; else return c; else if(b<c) return b; else return c;` yapısında `else return c;` iç `if`'e bağlanır. Bu kod üç sayının en küçüğünü doğru döndürür, bütün dallara ulaşılabilir.
 
-* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

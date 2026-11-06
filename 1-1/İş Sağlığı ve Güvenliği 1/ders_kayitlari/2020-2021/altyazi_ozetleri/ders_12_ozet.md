@@ -309,4 +309,4 @@
 - **REBA puanları:** Sunumdaki puan aralıkları ses kalitesi yüzünden net değil. Standart REBA tablosu: 1 ihmal edilebilir risk, 2-3 düşük risk (önlem gerekebilir), 4-7 orta risk (önlem gerekli), 8-10 yüksek risk (yakında önlem), 11-15 çok yüksek risk (hemen önlem). RULA'da 1-2 kabul edilebilir, 3-4 ileri inceleme, 5-6 yakında değişiklik, 7 hemen değişiklik gerekir.
 - **Ultrases ve infrases:** Altyazıda "otrosonlar" ve "iprosantlar" diye geçen kelimeler ultrases ve infrasestir.
 
-* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

@@ -187,4 +187,4 @@
   - "İhonya" = İyonya
   - "Türk'ün Ateşli İmtihanı" = Türk'ün Ateşle İmtihanı
 
-**Not:** İsterseniz bu kayıtları NotebookLM gibi bir araca atıp daha istifadeli hale getirebilirsiniz.
+**Not:** İsterseniz bu kayıtları Gemini Notebook gibi bir araca atıp daha istifadeli hale getirebilirsiniz.

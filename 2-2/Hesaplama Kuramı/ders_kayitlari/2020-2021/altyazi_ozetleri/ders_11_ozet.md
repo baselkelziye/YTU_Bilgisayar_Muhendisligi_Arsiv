@@ -214,4 +214,4 @@ Fikir: En soldaki $a$'yı $x$ yap. Sağa gidip ilk $b$'yi $y$ yap. Sola dönüp 
 - **$\Gamma$ ve $\$$:** Hoca yığın alfabesinin $\$$'ı içermediğini söyledi. $\$$ yığına yazıldığı için yığın alfabesinin bir elemanıdır. Yalnız giriş alfabesinde yer almaz.
 - **Doğrulama:** Örnek gramerin PDA'sı Python ile simüle edildi. 6 sembole kadar bütün $\{a,b\}$ dizgilerinde gramerle aynı dili tanıdığı doğrulandı. $a^*$ makinesi ve $\{a^nb^n \mid n \ge 1\}$ makinesi de 8 sembole kadar bütün dizgilerde doğru çalıştı.
 
-**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz. Ders İngilizce anlatılmıştır; altyazı da büyük ölçüde İngilizcedir.
+**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz. Ders İngilizce anlatılmıştır; altyazı da büyük ölçüde İngilizcedir.

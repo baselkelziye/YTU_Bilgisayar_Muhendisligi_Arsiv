@@ -34,4 +34,4 @@
 - Yöntemin naive olarak adlandırılmasının nedeni, öz nitelikler arasında koşullu bağımsızlık varsayımı yapmasıdır. Bu varsayım hesaplamayı kolaylaştırır ve özellikle metin sınıflama gibi yüksek boyutlu problemlerde pratik avantaj sağlar.
 - KNN tarafında model açık biçimde parametre öğrenmez; eğitim örneklerini saklar ve yeni örnek geldiğinde yakınlık hesabı yapar. Bu nedenle ölçekleme, uzaklık metriği ve K değeri kritik hale gelir.
 
-* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

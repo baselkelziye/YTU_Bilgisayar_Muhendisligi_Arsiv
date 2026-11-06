@@ -29,4 +29,4 @@
 - Laboratuvar içeriğinde saldırgan bakış açısıyla önce zafiyetin varlığı doğrulanır, ardından sorgu yapısı anlaşılır. Kolon sayısı, veri tipleri ve dönen sonuç alanları belirlendikten sonra `UNION` gibi yöntemlerle sistem tablolarından bilgi elde edilir.
 - Savunma tarafında yalnızca belirli karakterleri filtrelemek saldırıyı tamamen durdurmayabilir. Farklı kodlama biçimleri, yorum işaretleri, alternatif SQL söz dizimleri veya uygulama mantığı filtreleri aşabilir. Bu nedenle SQL komutu ile kullanıcı verisinin yapısal olarak ayrılması gerekir.
 
-* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

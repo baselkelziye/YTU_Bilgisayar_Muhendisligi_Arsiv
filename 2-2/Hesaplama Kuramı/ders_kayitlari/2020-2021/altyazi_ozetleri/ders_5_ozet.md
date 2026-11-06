@@ -166,4 +166,4 @@ $$m! < m! + k \le m! + m < m! + m \cdot m! = (m+1)!$$
 - Özette hoca "otomat tasarlayamazsanız bu, dilin düzenli olduğunu göstermez" dedi. Kastedilen: dilin düzenli **olmadığını** göstermez.
 - Alt küme yapısında başlangıç durumu $q_0$'ın $\varepsilon$-kapanışıdır. Bu örnekte $q_0$'dan $\varepsilon$ geçişi olmadığı için küme $\{q_0\}$'dır.
 
-**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz. Ders İngilizce anlatılmıştır; altyazı da büyük ölçüde İngilizcedir.
+**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz. Ders İngilizce anlatılmıştır; altyazı da büyük ölçüde İngilizcedir.

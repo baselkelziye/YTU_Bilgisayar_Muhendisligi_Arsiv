@@ -38,4 +38,4 @@
 - Perl'de basit bir örnekte bir değişkene `success` değeri atanıp daha sonra bu değişkenin `success` örüntüsüyle eşleşip eşleşmediği kontrol edilebilir. Bu küçük örnek, daha karmaşık biyolojik dizilerde motif aramanın temel mantığını gösterir.
 - Eşleme ve değiştirme işlemleri yalnızca arama için değil, verinin yeniden biçimlendirilmesi için de kullanılır. Biyoenformatik dosyalarında gereksiz karakterlerin temizlenmesi, belirli formatların dönüştürülmesi veya rapor üretimi bu tekniklerle yapılabilir.
 
-* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

@@ -191,4 +191,4 @@ $$\vec n_1\times\vec n_2=\begin{vmatrix}\vec i&\vec j&\vec k\\3&-1&1\\1&2&-4\end
 
 ---
 
-İsterseniz bu özeti NotebookLM gibi bir araca atıp daha istifadeli hale getirebilirsiniz.
+İsterseniz bu özeti Gemini Notebook gibi bir araca atıp daha istifadeli hale getirebilirsiniz.

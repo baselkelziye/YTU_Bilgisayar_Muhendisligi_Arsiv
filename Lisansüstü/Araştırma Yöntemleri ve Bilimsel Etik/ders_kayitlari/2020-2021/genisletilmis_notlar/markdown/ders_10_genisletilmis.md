@@ -489,4 +489,4 @@ Bu derste sekiz proje önerisi dinlendi: COVID-19 tanısında veri kaynaklı yan
 
 Hocanın asıl vurgusu ise içerikten çok aktarımdaydı. Sunum, raporun okunması değildir. Süre, slayt sayısı, konuşma hızı, tanıtım, kapanış ve soru-cevap sunum hazırlığının parçasıdır. Hoca, önümüzdeki hafta da sunumların aynı biçimde süreceğini söyledi.
 
-**Not:** İsterseniz bu kayıtları NotebookLM gibi bir araca atıp daha istifadeli hale getirebilirsiniz.
+**Not:** İsterseniz bu kayıtları Gemini Notebook gibi bir araca atıp daha istifadeli hale getirebilirsiniz.

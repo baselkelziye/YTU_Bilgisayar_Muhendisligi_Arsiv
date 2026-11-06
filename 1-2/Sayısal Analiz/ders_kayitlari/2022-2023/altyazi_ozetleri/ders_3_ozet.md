@@ -149,4 +149,4 @@
 - **Vize sorusunda maksimum kontrolü:** Bulunan noktanın maksimum mu minimum mu olduğu ikinci türevle de anlaşılır. $V$'nin 4'e bölünmüş hâlinin ikinci türevi $6x - 12$'dir. $x = 1$'de $-6 < 0$ (maksimum), $x = 3$'te $6 > 0$ (minimum).
 - **Radyan-derece:** Slayttaki "$\sin 5 \to \frac{900}{\pi}$" notu, hesap makinesi derece modundaysa 5 radyanın dereceye çevrilmesidir: $5 \cdot \frac{180}{\pi} = \frac{900}{\pi} \approx 286.48°$. Hesap makinesi radyan modundaysa doğrudan $\sin 5 = -0.9589$ hesaplanır.
 
-* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

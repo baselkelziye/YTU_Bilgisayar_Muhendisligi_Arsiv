@@ -37,4 +37,4 @@
 - Protein dizileri DNA dizilerine göre bazı durumlarda daha anlamlı sonuç verebilir; çünkü protein alfabesi daha büyüktür ve amino asitlerin biyofiziksel özellikleri üzerinden işlevsel yorum yapılabilir. Buna karşılık DNA dizileri, genetik varyasyonların ve düzenleyici bölgelerin incelenmesinde doğrudan önemlidir.
 - Homoloji kavramı özellikle dikkatli kullanılmalıdır. İki dizi benzer olabilir; ancak homoloji, ortak evrimsel köken iddiası içerir. Bu nedenle hizalama sonuçları biyolojik bilgiyle birlikte değerlendirilmelidir.
 
-* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

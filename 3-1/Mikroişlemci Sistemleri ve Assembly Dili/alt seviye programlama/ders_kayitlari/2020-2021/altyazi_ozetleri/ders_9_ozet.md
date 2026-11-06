@@ -26,4 +26,4 @@
 
 Assembly'de döngüler LOOP komutu ile kurulur. LOOP Hedef komutu çalıştırıldığında, CX register'ının değeri otomatik olarak 1 azaltılır. Eğer CX sıfır değilse, belirtilen hedef etikete kısa dallanma (short jump -128 ile +127 byte sınırlarında) yapılır. Koşullu döngüler olan LOOPE/LOOPZ (Zero Flag 1 ve CX sıfır değilse döngüye devam et) ve LOOPNE/LOOPNZ (Zero Flag 0 ve CX sıfır değilse döngüye devam et) daha karmaşık arama ve karşılaştırma döngülerinde kullanılır. Döngülerin içinde register çakışmalarını (özellikle CX'in iç içe döngülerde bozulmasını) engellemek için dış döngünün sayacı stack'e push edilir, iç döngü bittiğinde pop edilerek geri yüklenir.
 
-* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

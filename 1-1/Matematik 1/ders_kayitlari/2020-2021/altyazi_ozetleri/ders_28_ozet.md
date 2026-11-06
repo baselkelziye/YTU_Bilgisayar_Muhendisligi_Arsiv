@@ -232,4 +232,4 @@ $$\int\frac{2\,dt}{2t^2+8}=\int\frac{dt}{t^2+4}=\frac12\arctan\frac t2+C=\frac12
 - **Hesaplanan sonuçlar:** $b=2$, $2\pi e^b$, $-\frac{16}{5}$, $\frac{8\pi}{3}$ ve Örnek A'nın sonucu bu özette hesaplandı ya da doğrulandı.
 - **Altyazı:** Yaklaşık 00:14:35'te ("ikinci olarak" döngüsü) ve 01:44:36-01:44:55 arasında altyazı anlaşılmıyor. Soru metinleri ekrandaki PDF'ten alındı.
 
-**Not:** İsterseniz bu kayıtları NotebookLM gibi bir araca atıp daha istifadeli hale getirebilirsiniz.
+**Not:** İsterseniz bu kayıtları Gemini Notebook gibi bir araca atıp daha istifadeli hale getirebilirsiniz.

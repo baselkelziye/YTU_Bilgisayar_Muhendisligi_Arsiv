@@ -28,4 +28,4 @@ Dersler 8 Ekim 2020 Perşembe günü başlamıştır. Ders haftada bir kez (Per�
 
 - 29 Ekim 2020 haftasına ait kayıt bulunmamaktadır. Bu tarih Cumhuriyet Bayramı'na denk gelmektedir.
 
-**Not:** İsterseniz bu kayıtları NotebookLM gibi bir araca atıp daha istifadeli hale getirebilirsiniz.
+**Not:** İsterseniz bu kayıtları Gemini Notebook gibi bir araca atıp daha istifadeli hale getirebilirsiniz.

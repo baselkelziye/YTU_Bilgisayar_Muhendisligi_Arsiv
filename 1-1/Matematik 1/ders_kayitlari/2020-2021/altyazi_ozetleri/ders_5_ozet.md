@@ -231,4 +231,4 @@
 - Ders notlarının (slaytların) hocanın Avesis sayfasında olduğu söyleniyor. Öğrenciler buradan indirmeli.
 - Kaydın başındaki "x−1" örneğinin ve birkaç geçişin sözlü anlatımı altyazıda döngüye girmiş. Bu kısımlar altyazıda anlaşılmıyor.
 
-**Not:** İsterseniz bu kayıtları NotebookLM gibi bir araca atıp daha istifadeli hale getirebilirsiniz.
+**Not:** İsterseniz bu kayıtları Gemini Notebook gibi bir araca atıp daha istifadeli hale getirebilirsiniz.

@@ -223,4 +223,4 @@
 - Konfigürasyon yönetiminin dört klasik işlemi tanımlama, değişiklik kontrolü, durum raporlama (status accounting) ve denetimdir (audit). Altyazıda değişiklik kontrolü ile raporlama arasında boşluk vardır; denetim adımı bu boşlukta anlatılmış olabilir.
 - Whisper altyazıda "makyayip/MacGabe" McCabe, "hashtag metriği" Halstead, "Çitember Kemerer" Chidamber-Kemerer, "REEE" IEEE olarak düzeltilmelidir.
 
-**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

@@ -229,4 +229,4 @@ $$\text{Güvenirlik} = \frac{\text{başarılı işletim süresi}}{\text{toplam i
 - Bu derste hoca ölümcül ve büyük hatalarda teste genelde devam edilmediğini söyledi. Ders 4'teki slaytta ise kritik ve büyük hatalarda testin devam ettiği, ama yazılımın düzeltilmeden teslim edilmediği yazıyordu. Hoca bu sınırın kuruma göre değiştiğini de belirtti.
 - Whisper altyazıda "haştat/hashtag metriği" Halstead, "makyap/Maccape" McCabe, "Musa Bezik" Musa Basic, "Lidlout" Littlewood, "Çitember Kemerer" Chidamber-Kemerer, "Prespa" Pressman olarak düzeltilmelidir.
 
-**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

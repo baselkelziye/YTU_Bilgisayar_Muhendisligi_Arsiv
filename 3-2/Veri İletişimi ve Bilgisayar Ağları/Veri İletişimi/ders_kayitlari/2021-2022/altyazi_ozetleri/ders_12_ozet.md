@@ -170,4 +170,4 @@ Gönderici tüm pencereyi yollayıp hiç ACK alamazsa zaman aşımından sonra P
 - **Selective Repeat pencere sınırı:** Derste yalnız Go-Back-N için geçerli $2^n - 1$ sınırı anlatıldı. Selective Repeat'te pencere en fazla $2^{n-1}$ olabilir. Aksi halde alıcı yeni çerçeveyi eski çerçevenin tekrarı sanabilir.
 - **$W \ge 2a+1$ ifadesi:** Hoca bu koşulu "bant genişliği–gecikme çarpımının iki katı artı 1" diye anlatıyor. Doğrusu, $a$'nın çerçeve sayısı cinsinden ifade edilmiş yayılma gecikmesi olduğudur. Yani $a$, bant genişliği–gecikme çarpımının çerçeve boyuna bölünmüş halidir.
 
-**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

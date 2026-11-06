@@ -182,4 +182,4 @@
 - **Kanal sayısı:** 2,4 GHz'te Avrupa ve Türkiye'de 13 kanal kullanılabilir. 14. kanal yalnızca Japonya'da, 802.11b için vardır.
 - **WMAN:** Hocanın "hayata geçmedi" dediği uzak mesafeli kablosuz şehir ağı fikri, IEEE 802.16 (WiMAX) olarak standartlaştı ve bir dönem bazı ülkelerde kullanıldı. Ayrıntısı ders 19'daki öğrenci sunumunda var.
 
-**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

@@ -36,4 +36,4 @@
 - Paralel yüklemeli registerlarda tüm bitler aynı anda register içine alınır. Seri girişli yapılarda ise veri bit bit alınır ve istenen konuma kaydırılır.
 - Kontrol girişlerinin senkron veya asenkron olması önemlidir. Asenkron clear gibi girişler saat beklemeden register içeriğini değiştirebilirken, senkron load saat kenarında etkili olur.
 
-* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

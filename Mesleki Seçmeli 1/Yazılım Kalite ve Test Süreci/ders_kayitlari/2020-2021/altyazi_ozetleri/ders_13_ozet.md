@@ -161,4 +161,4 @@ Hata bildirim formu doldurulur
 - %60 kapsam hedefi grubun kendi seçimidir. Evrensel bir eşik yoktur. Hedef, projenin riskine ve kod türüne göre test planında gerekçesiyle yazılmalıdır.
 - Altyazıda araç adları bozuk geçer. Doğruları: "Çay" Chai, "İstanbul CS" Istanbul, "GT metrics" GTmetrix, "First Content Mode Paint" First Contentful Paint, "Mongo's" Mongoose, "BigRibs" bcrypt, "Sinan" Sinon, "FASC API" FastAPI, "kosans simerite" cosine similarity, "Hiroku" Heroku, "Verika / Weberichka / WebExCambient" Vevericka.
 
-**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

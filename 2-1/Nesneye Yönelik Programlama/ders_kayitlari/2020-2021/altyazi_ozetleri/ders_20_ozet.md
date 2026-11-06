@@ -211,4 +211,4 @@ public void testGetName() {
 - **Thread-safe koleksiyonlar:** `Vector` ve `Hashtable` eski sınıflardır. Bugün genellikle `ConcurrentHashMap`, `CopyOnWriteArrayList` veya `Collections.synchronizedList(...)` tercih edilir.
 - **Alice-Bob demosu:** Derste kodun ekrandaki sürümünde sonuç 1950 ve 1900 olarak çıktı. Başlangıç bakiyesi kayıtta net görünmüyor. Mantık aynıdır: senkronizasyon yoksa çekimlerden biri kaybolabilir.
 
-* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

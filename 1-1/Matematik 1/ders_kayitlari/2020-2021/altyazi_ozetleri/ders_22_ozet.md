@@ -172,4 +172,4 @@ $$L = \lim_{x\to 0} \frac{\displaystyle\int_0^x \frac{\sin^2 t}{\cos t}\,dt}{\ta
 - **Örnek 5:** Hocanın ilk söylediği "$\ln2\cdot\ln3$" yanlış. Doğru cevap $2\ln 3 = \ln 9$.
 - **Riemann toplamı:** Alt toplamda sol uç noktalar ($i = 0, \dots, n-1$), üst toplamda sağ uç noktalar ($i = 1, \dots, n$) alınır. Artan $x^3$ için $i = 1..n$ toplamı üst toplamdır. Limitte ikisi de $\tfrac14$ verir.
 
-**Not:** İsterseniz bu kayıtları NotebookLM gibi bir araca atıp daha istifadeli hale getirebilirsiniz.
+**Not:** İsterseniz bu kayıtları Gemini Notebook gibi bir araca atıp daha istifadeli hale getirebilirsiniz.

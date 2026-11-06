@@ -185,4 +185,4 @@ Slayttaki örnek grafın kenarları:
 - **MST benzersizliği:** Örnek grafta c-e ve e-f kenarlarının ikisi de 3 ağırlıklıdır. Bu yüzden birden fazla MST vardır (biri e-f yerine c-e içerir). Toplam ağırlık yine 43'tür.
 - **Soru 3:** Düğümü listeden çıkarmak belleği serbest bırakmaz. C'de bellek sızıntısını önlemek için çıkarılan düğüm önce geçici bir işaretçide tutulup `free` edilmelidir. Soru yalnız kodun ne yaptığını sorduğu için bu sınavda puan getirmedi.
 
-**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

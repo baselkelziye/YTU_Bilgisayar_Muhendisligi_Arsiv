@@ -76,4 +76,4 @@ Soru dosyası (`nyp.lab1-2021.pdf`) kayıtta yaklaşık 00:02:30'da ekranda gös
 - UML'de `Urun` alanlarının tipleri yazılmamış (`ID`, `ad`, `fiyat`). Constructor'dan tipler anlaşılıyor: `int ID`, `String ad`, `double fiyat`, `static int zamSayisi`.
 - Oturum ekran saatine göre yaklaşık 18:57'de başladı. Süre bitişi için kayıtta "sekizi beş geçe" örneği geçiyor. Kesin teslim saatini Online Yıldız'daki ödev sayfasından kontrol edin.
 
-**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

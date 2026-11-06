@@ -121,4 +121,4 @@
 
 - **Join Mantığı:** Cartesian Product iki tablonun tüm satır kombinasyonlarını üretir. Bu ürünün çoğu anlamsızdır. Join, bu anlamsız satırları bir yükleme (predicate) göre filtreler. Çoğu zaman bu yükleme yabancı anahtar = primary key eşitliğidir. Örneğin Employee × Project çarpımında sadece Employee.Project = Project.Code şartını sağlayan satırlar anlamlıdır.
 
-* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

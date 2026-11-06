@@ -256,4 +256,4 @@ int findBigChild(int heap[], int parent, int n) {
 - Derse hâlâ kayıtlı görünmeyen öğrenciler, ödev yayınlanmadan önce UZEM'e başvurarak eklenebilir.
 - Final sınavları yüz yüze yapılacak.
 
-**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

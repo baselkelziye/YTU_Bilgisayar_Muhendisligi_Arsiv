@@ -316,4 +316,4 @@ return x
 - **Sayma problemi:** Hoca bölgeleri yerleştirirken iki kez sayı karıştırdı ("Fransızca toplamı 76", "kalan 20 kişi"). Slayttaki Venn şemasındaki değerler (19, 26, 10, 10, 8, 32, 35) doğrudur ve verilerle tutarlıdır.
 - Taban/tavan tablosu, küme işlemleri, toplamlar, ters fonksiyonlar, EBOB ve bağıntı özellikleri Python ile kontrol edildi.
 
-**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

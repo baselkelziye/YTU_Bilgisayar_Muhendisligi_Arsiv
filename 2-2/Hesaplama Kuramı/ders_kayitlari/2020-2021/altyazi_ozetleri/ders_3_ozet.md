@@ -173,4 +173,4 @@ Tahta karesinden alınan DFA (`001` içeren):
 - Hoca DFA tanımında "her durumda her sembol için bir geçiş" dedi. Tam ifade: her durumda her sembol için **tam olarak bir** geçiş.
 - Yukarıdaki tablolar (tek sayıda 1, `001` içeren/içermeyen, `ab` önek, $awa$) 8 sembole kadar bütün dizgilerde Python simülasyonuyla denendi. Hepsi beklenen dili kabul ediyor.
 
-**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz. Ders İngilizce anlatılmıştır; altyazı da büyük ölçüde İngilizcedir.
+**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz. Ders İngilizce anlatılmıştır; altyazı da büyük ölçüde İngilizcedir.

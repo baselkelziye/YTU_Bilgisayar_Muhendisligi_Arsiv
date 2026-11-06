@@ -146,4 +146,4 @@ void *runner(void *param) {
 - Linux'ta ve POSIX'te `fork()` yalnızca çağıran iş parçacığını kopyalar. Bütün iş parçacıklarını kopyalayan sürüm bazı eski UNIX sistemlerinde (Solaris'teki `forkall()` gibi) bulunur.
 - Amdahl hesabı ($0.25$ seri, $N=2$ → $1.6$) Python ile doğrulandı.
 
-**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

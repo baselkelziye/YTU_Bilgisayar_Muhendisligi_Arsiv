@@ -106,4 +106,4 @@
   - CO₂ zehirli değildir ama boğucudur. Ortamdaki oksijeni azaltır. Yüksek derişimde solunumu bozar. Yanmaz.
 - Altyazıdaki "redobaktyk", "Kırtlara" gibi ifadeler konuşma tanıma hatasıdır. Anlamları kayıttan çıkarılamadı.
 
-* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

@@ -60,4 +60,4 @@ Apple cihazlarının ana işlemciye ek olarak bir "co-processor" (yardımcı iş
 
 Son olarak mobil yazılım tarafına kısaca değinilmiş; uygulamaların (applications) mobil yazılım başlığı altında incelendiği, uygulama geliştirme tekniklerinin dersin ilerleyen haftalarında detaylı olarak anlatılacağı belirtilmiştir.
 
-* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

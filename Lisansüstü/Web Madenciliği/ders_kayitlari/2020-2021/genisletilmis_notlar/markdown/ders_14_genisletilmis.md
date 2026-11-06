@@ -572,4 +572,4 @@ Bu derste önce link analizinin son algoritması olan HITS görüldü. PageRank 
 
 İkinci bölümde web kullanım madenciliğine geçildi. Tıklama akışı verisi günlüklerden, CRM veri tabanlarından ve site içeriğinden gelir, eksik ve dağınıktır. Veri temizleme, page view, oturum ve kullanıcı belirleme, yol tamamlama, bölüm belirleme ve bütünleştirme adımlarıyla kullanıcı işlem veritabanı kurulur. Oturumlar zaman ya da gezinme tabanlı sezgilerle, kullanıcılar çerez, giriş, yazılım ajanı, gömülü oturum kimliği ya da IP ve agent ile belirlenir. Bu veritabanı üzerinde birliktelik kuralları, sıralı örüntüler, kümeleme ve sınıflandırma çalıştırılır, örüntü analiziyle sonuçlar kullanıcı davranışını tanımlamakta kullanılır hale getirilir.
 
-**Not:** İsterseniz bu kayıtları NotebookLM gibi bir araca atıp daha istifadeli hale getirebilirsiniz.
+**Not:** İsterseniz bu kayıtları Gemini Notebook gibi bir araca atıp daha istifadeli hale getirebilirsiniz.

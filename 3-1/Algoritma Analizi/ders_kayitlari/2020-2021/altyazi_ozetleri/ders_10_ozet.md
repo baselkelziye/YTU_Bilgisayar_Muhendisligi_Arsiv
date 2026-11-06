@@ -132,4 +132,4 @@ HoarePartition(A[l..r])
 - **Merge sort kesin değer:** $n = 2^k$ için $C_w(n) = n\log_2 n - n + 1$. Python ile $n = 2, 4, 8, 16, 32$ için 1, 5, 17, 49, 129 elde edildi. Formülle aynıdır.
 - **Teorik alt sınır:** Karşılaştırmaya dayalı sıralamada en kötü durumda en az $\lceil \log_2 n! \rceil \approx n\log_2 n - 1{,}44n$ karşılaştırma gerekir. Merge sort'un en kötü durumu bu sınıra yakındır.
 
-**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

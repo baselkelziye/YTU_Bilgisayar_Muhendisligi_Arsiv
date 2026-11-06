@@ -65,4 +65,4 @@ ADC, FF'den başlayarak aşağıya doğru sayan bir counter ile dahili DAC üzer
 **Kesme Vektör Tablosu Detayları:**
 8086'da belleğin en başında (00000H-003FFH) bulunan 1024 byte'lık alandır. Her kesme tipi 4 byte yer kaplar: ilk 2 byte offset (IP), sonraki 2 byte segment (CS) bilgisidir. Tip numarası × 4 ile efektif adres hesaplanır. Örneğin tip 40 için: 40H × 4 = 100H adresine subroutine'in CS:IP değeri yazılır. Rezerve kesmeler (tip 0-31) sistem tarafından kullanılır; tip 32-255 arası kullanıcı tanımlı kesmeler için ayrılır.
 
-* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

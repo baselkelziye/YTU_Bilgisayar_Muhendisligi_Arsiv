@@ -88,4 +88,4 @@
 
 - **EXTRACT ile Tarih İşlemleri:** Date tipindeki sütunlardan yıl, ay, gün gibi bileşenleri çekmek için EXTRACT fonksiyonu kullanılır. Bu fonksiyon, tarih bazlı analizlerde ve raporlamalarda işe yarar. Örnek: `EXTRACT(YEAR FROM B_date)` ifadesi, doğum tarihinden yılı çeker.
 
-* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

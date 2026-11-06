@@ -164,4 +164,4 @@ Assembly dilinde bir yazmacı sıfırlamanın iki yolu vardır: `SUB A, A` ve `X
 - **AND ve OR sembolleri.** AND $\land$ (ters V), OR $\lor$ (V) ile gösterilir. Slaytta AND için `^` işareti kullanılmıştır.
 - **Altyazı hataları:** "Rose'nin kitabı" Rosen'dir. "AVSİZ" AVESİS'tir. "Nifton" Newton'dur; bir öğrenci slayttaki resmin aslında George Washington olduğunu söyledi.
 
-**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

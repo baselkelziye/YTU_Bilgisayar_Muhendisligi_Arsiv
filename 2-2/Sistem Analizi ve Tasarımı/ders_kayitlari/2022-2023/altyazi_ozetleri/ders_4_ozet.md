@@ -254,4 +254,4 @@ Ders, fizibiliteden sonra gelen gereksinim analizi aşamasının ilk adımı ola
 - **Extend oku yönü:** Bankacılık örneğinde (slayt 22) ok Calculate Bonus'tan Deposit Funds'a doğrudur. Bu UML'de doğrudur: extend okunu genişleten senaryo genişletilene doğru çizer. Include okunu ise içeren senaryo içerilene doğru çizer (Deposit Funds → Update Balance).
 - **Soru sıralaması:** Kaynaklarda tümevarım yaklaşımına "piramit", tümdengelim yaklaşımına "huni" yapısı denir. Hocanın anlatımı bununla uyumlu.
 
-**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

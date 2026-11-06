@@ -251,4 +251,4 @@ Bir öğrenci, A'nın gönderdiği çerçevede adres alanına neden A yazıldı�
 - **ABM'nin tanımlı olmaması:** Hoca dengeli yapılandırmanın HDLC'nin temel sürümünde tanımlı olmadığını söylüyor. ABM, HDLC'nin standart üç modundan biridir. LAPB gibi yaygın protokoller doğrudan ABM kullanır.
 - **ARM'de ikinciller:** Hoca ARM'de ikincillerin birincilden onay almadan kendi aralarında konuşabildiğini söylüyor. ARM'de ikincil izin beklemeden iletim başlatabilir ama yine yalnız birincille haberleşir.
 
-**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

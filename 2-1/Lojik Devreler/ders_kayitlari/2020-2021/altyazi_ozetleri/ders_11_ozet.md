@@ -36,4 +36,4 @@
 - Senkron sayaçlarda bütün flip-floplar aynı saat kenarında tetiklenir. Bu nedenle giriş fonksiyonlarının tasarımı daha fazla analiz gerektirse de zamanlama davranışı daha kontrollüdür.
 - Mod-N sayaç tasarımında kullanılmayan durumlar oluşabilir. Bu durumların resetlenmesi veya geçerli döngüye yönlendirilmesi güvenilir çalışma için önemlidir.
 
-* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

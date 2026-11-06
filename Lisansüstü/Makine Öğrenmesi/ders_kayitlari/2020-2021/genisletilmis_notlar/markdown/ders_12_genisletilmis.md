@@ -455,4 +455,4 @@ Dersin ikinci yarısında pekiştirmeli öğrenmeye geçildi. Etiket yerine eyle
 
 > **Ders sonrası not:** Altyazıda bozuk geçen terimlerin doğru yazımları: "self-organizing MEP" = self-organizing map, "kompetitif" = competitive, "Goals/GOS/GAUSE fonksiyonu" = Gauss fonksiyonu, "Neybrut/N-Brut" = neighborhood (komşuluk), "binarımız/binik nöron" = winner (kazanan) nöron, "lip distance" = Öklid (Euclidean) distance, "Gözlümünün mixture/Gözün Mixture/gözsün x-chim model" = Gaussian mixture model, "Kavniis" = k-means, "iştenmikinin" = işlem yükünün, "Re-Course Learning" = reinforcement learning, "dual-sporn-wise learning" = supervised learning, "Markle Decision proses" = Markov decision process, "zihir bazların" = (anlaşılmıyor; robotun çalışacağı bir bölge), "Q-Learnik" = Q-learning, "nal" = null, "Ali Baba" = Alibaba (şirket).
 
-**Not:** İsterseniz bu kayıtları NotebookLM gibi bir araca atıp daha istifadeli hale getirebilirsiniz.
+**Not:** İsterseniz bu kayıtları Gemini Notebook gibi bir araca atıp daha istifadeli hale getirebilirsiniz.

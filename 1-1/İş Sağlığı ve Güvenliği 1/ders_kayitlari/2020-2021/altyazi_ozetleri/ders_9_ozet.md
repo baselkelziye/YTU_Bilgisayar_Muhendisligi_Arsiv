@@ -150,4 +150,4 @@
 - **İşyeri hekimliği belgesi için diğer yollar:** Sunumda Bakanlıkta 8 yıl çalışmak veya iş ve meslek hastalıkları alanında uzmanlık gibi yollardan söz edildi. Güncel İşyeri Hekimi ve Diğer Sağlık Personelinin Görev, Yetki, Sorumluluk ve Eğitimleri Hakkında Yönetmelik'teki koşulları kontrol edin.
 - **İş hijyenisti = İGU mu?** Bir sunumda "Batıda iş hijyenisti olan kişiye bizde iş güvenliği uzmanı diyoruz" denildi. Görev alanları kısmen örtüşür ama aynı meslek değildir. İGU daha geniş bir güvenlik yönetimi rolüdür. İş hijyenistliği ayrı bir uzmanlıktır.
 
-* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

@@ -147,4 +147,4 @@ Bu derste öğrenci grupları dönem projelerini sundu. Her sunumdan sonra hoca 
 - Restoran grubunda her masaya bir çalışan ve bir bilgisayar düşüyor. Bu, eşzamanlı sipariş sorununu çözmez, sadece donanım maliyetini artırır. Çok kullanıcılı sistemde ortak veri tabanı ve eşzamanlılık kontrolü gerekir.
 - Bazı sunumlarda altyazı gürültülü. İsimler ve tutarlar altyazıdan alındı, kayıtta yanlış duyulmuş olabilir.
 
-**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi daha verimli çalışabilirsiniz.
+**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi daha verimli çalışabilirsiniz.

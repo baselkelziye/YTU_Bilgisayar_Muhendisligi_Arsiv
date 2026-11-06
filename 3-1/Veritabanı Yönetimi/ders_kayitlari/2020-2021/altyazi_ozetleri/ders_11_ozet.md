@@ -74,4 +74,4 @@
 
 - **Kesişim (Intersect) Uygulaması:** Hem "Operating System projesinde çalışan" hem de "Software departmanında çalışan" kişilerin bulunması istendiğinde, iki ayrı sorgu yazılmış ve bu sorgular `where` koşullarında eşlenerek kesişim oluşturulmuştur. SQL'deki INTERSECT operatörüne karşılık gelmektedir.
 
-* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

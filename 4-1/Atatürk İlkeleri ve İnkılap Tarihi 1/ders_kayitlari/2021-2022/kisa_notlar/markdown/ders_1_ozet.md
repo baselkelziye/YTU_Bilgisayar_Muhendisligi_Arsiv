@@ -102,4 +102,4 @@
 - Ders pandemi nedeniyle online yapılıyor. Hoca ortak derslerde 4-5 bin öğrenci olduğunu, sınıf kapasitesinin yetmediğini söylüyor.
 - İkinci ders aynı gün yaklaşık 15 dakikalık aradan sonra başlıyor.
 
-**Not:** İsterseniz bu kayıtları NotebookLM gibi bir araca atıp daha istifadeli hale getirebilirsiniz.
+**Not:** İsterseniz bu kayıtları Gemini Notebook gibi bir araca atıp daha istifadeli hale getirebilirsiniz.

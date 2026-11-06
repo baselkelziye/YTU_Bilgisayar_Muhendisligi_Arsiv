@@ -36,4 +36,4 @@ Proje ile ilgili sorular yanıtlandı. Sayısal integral hesaplamasında Simpson
 
 Kod yapısı açısından, header file'lar ile farklı C dosyalarının linklenmesi anlatıldı ancak projede tek bir C dosyası kullanılması istendi. Benzerlik kontrolü ve değerlendirme kolaylığı için tek dosya tercih edilmektedir.
 
-* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

@@ -252,4 +252,4 @@ Bu bölüm derste sorulan bir soru üzerine konuşuldu.
   - `P4` ise PGM değil, siyah-beyaz PBM'nin ikili biçimidir.
 - **Run bölünce komşu run'lar (ajan notu):** Bir pikseli değiştirdikten sonra yeni değer komşu run'ın değeriyle aynıysa iki run birleştirilmelidir. Örnek: `10 90` ve ardından `1 90` oluşursa `11 90` yazılır. Böylece kodlama en kısa hâlinde kalır.
 
-**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

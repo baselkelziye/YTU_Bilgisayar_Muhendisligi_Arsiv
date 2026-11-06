@@ -202,4 +202,4 @@ Blok diyagramı (tahtadan, kareden doğrulandı):
 - Hoca finali önce "midterm" diye andı, sonra düzeltti. Kastedilen finaldir.
 - Bu dersteki çeşitler ve ispatlar (kalma seçeneği, yarı sonsuz şerit, çok izli şerit, benzetim) Linz'in *An Introduction to Formal Languages and Automata* kitabının 10. bölümündeki anlatımla aynı sıradadır.
 
-**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz. Ders İngilizce anlatılmıştır; altyazı da büyük ölçüde İngilizcedir.
+**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz. Ders İngilizce anlatılmıştır; altyazı da büyük ölçüde İngilizcedir.

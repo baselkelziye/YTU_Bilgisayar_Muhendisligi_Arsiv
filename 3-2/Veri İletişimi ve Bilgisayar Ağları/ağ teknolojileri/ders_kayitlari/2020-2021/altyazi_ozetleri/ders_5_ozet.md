@@ -66,4 +66,4 @@ Fragmentasyon konusu önemlidir. Her ağın MTU (Maximum Transmission Unit) değ
 
 Routing'in iki seviyede yapılması, internet'in ölçeklenebilirliği için kritiktir. Bir kurumun kendi iç ağında (intradomain) herhangi bir routing protokolü kullanılabilir (RIP, OSPF, IS-IS). Ancak farklı kurumların ağları arasında (interdomain) ortak bir protokol gerekir; bu BGP'dir (Border Gateway Protocol). Hoca, "her network'ün kendi routing fikri olabilir, ama genel internet için ortak bir protokol şart" der.
 
-* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

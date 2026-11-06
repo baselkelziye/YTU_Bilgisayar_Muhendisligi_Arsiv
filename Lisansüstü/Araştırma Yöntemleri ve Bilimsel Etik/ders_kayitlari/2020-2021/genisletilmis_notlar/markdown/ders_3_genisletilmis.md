@@ -407,4 +407,4 @@ Bu derste bir araştırmanın maddi kaynağının nereden sağlanabileceği gör
 
 Dersin asıl mesajı, programlar değişse de sistematiğin aynı kalmasıdır. Başvuru formu sorulara, hakem formu cevap anahtarına benzer. Form alanları büyük ölçüde ortaktır: amaç ve hedefler ölçülebilir olmalı, literatür karşılaştırmalı anlatılmalı, özgün değer açıkça gösterilmeli, proje yönetimi iş paketleri ve B planlarıyla desteklenmeli, ekip işe uygun olmalı, olanaklar açıkça ortaya konmalı ve yaygın etki üç açıdan düşünülmelidir. Kurallar yaşayan bilgi olduğu için başvurudan önce programın güncel sayfasına bakılmalıdır.
 
-**Not:** İsterseniz bu kayıtları NotebookLM gibi bir araca atıp daha istifadeli hale getirebilirsiniz.
+**Not:** İsterseniz bu kayıtları Gemini Notebook gibi bir araca atıp daha istifadeli hale getirebilirsiniz.

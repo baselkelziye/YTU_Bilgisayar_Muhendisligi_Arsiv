@@ -445,4 +445,4 @@ Bu derste proje planının maliyet ve organizasyon kısımları tamamlandı. Mal
 
 Organizasyon tarafında ekip büyüklüğü ekip yapısını belirler: Küçük ekipler için demokratik veya şeflik, ondan büyükler için hiyerarşik yapı uygundur. Hiyerarşik yapı da işe, ortama ve kurumun amaçlarına göre fonksiyonel, proje veya matris biçiminde kurulur. Çevik yaklaşımlar bu klasik kalıplara uymaz. Son olarak planın içeriği sıralandı ve planın bir kez yazılıp bırakılmadığı, kilometre taşlarında gerçekleşenle karşılaştırılıp revize edildiği vurgulandı. Sonraki hafta plan için bir örnek çalışmaya bakılabilecek.
 
-**Not:** İsterseniz bu kayıtları NotebookLM gibi bir araca atıp daha istifadeli hale getirebilirsiniz.
+**Not:** İsterseniz bu kayıtları Gemini Notebook gibi bir araca atıp daha istifadeli hale getirebilirsiniz.

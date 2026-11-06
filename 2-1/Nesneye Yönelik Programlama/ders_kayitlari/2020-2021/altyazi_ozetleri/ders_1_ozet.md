@@ -151,4 +151,4 @@ static void degistir(Kitap k) {
 - **Java ME ve Android:** Android uygulamaları Java ile yazılır ama Java ME kullanmaz. Android'in kendi SDK'sı vardır.
 - **Yazar adları:** Kitap ve yazar adları altyazıdan alındı. Satın almadan veya aramadan önce adları kontrol edin.
 
-**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

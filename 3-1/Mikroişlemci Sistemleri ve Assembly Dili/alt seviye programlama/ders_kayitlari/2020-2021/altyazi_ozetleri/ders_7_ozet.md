@@ -28,4 +28,4 @@
 
 Hafıza segmentleri, kod ve verinin mantıksal olarak ayrılmasını sağlar. Program şablonunda .CODE, .DATA ve .STACK direktifleri ile bu bölümler tanımlanır. Başlangıç değeri atanmayan değişkenler için ? sembolü kullanılarak sadece yer ayrılması sağlanır. Yığın (Stack) belleği, LIFO (Last In First Out - Son Giren İlk Çıkar) prensibiyle çalışan geçici bir depolama alanıdır. Stack işlemleri PUSH ve POP komutları ile yürütülür. PUSH komutu SP'yi (Stack Pointer) 2 azaltarak veriyi yığına yazar; POP komutu ise yığından veriyi okuyup SP'yi 2 artırır. Yığın, fonksiyon çağrılarında geri dönüş adreslerini saklamak, register durumlarını korumak ve lokal değişkenler oluşturmak için donanım tarafından otomatik olarak da kullanılır.
 
-* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

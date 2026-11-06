@@ -237,4 +237,4 @@ $$P(\text{cümle}) = \prod_{i} P\big(w_i \mid A(w_i)\big)$$
 - 6. sunumda veri setinin 225 doküman içerdiği söylenir. 3. sunumdaki aynı BBC veri seti 2225 dokümandır. Doğrusu büyük olasılıkla 2225'tir.
 - 3. ve 6. sunumlar aynı BBC veri seti ve benzer sözlük tabanlı yöntemle çalışır. İş kategorisi için verilen sayılar (274/205/31 ve 262/214/34) farklı çalışmalara aittir.
 
-**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

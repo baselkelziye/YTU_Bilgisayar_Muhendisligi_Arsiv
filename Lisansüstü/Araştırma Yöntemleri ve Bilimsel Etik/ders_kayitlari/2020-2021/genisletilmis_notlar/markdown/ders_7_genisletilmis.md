@@ -383,4 +383,4 @@ Bu derste bilimsel bir sunumun baştan sona nasıl kurulduğu ele alındı. Haz�
 
 Soru-cevap kısmı aynı titizliği proje başvurusuna taşıdı. Sunum başvurunun anlattığını anlatır. Örnekler sonucu bilinmeden örnek alınmaz. Bölümler arasında tekrar yapılmaz. Hakem sürecinden geçmiş kaynaklar tercih edilir ve bilgi referans verilse bile özgün ifadeyle yazılır. 1002 gibi bir programda da odak, ürünün kendisi değil işin Ar-Ge niteliğidir. Sonraki ders de aynı konuda soru-cevap olarak devam edecektir.
 
-**Not:** İsterseniz bu kayıtları NotebookLM gibi bir araca atıp daha istifadeli hale getirebilirsiniz.
+**Not:** İsterseniz bu kayıtları Gemini Notebook gibi bir araca atıp daha istifadeli hale getirebilirsiniz.

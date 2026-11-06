@@ -91,4 +91,4 @@ While ile çözümde bir `unique` bayrağı 1 olarak başlatılır. Dış döng�
 
 Ders sonunda karakter dizilerine giriş yapılır. Tam sayı dizisinde sayılar doğrudan saklanırken karakter dizisinde karakterlerin ASCII karşılıkları saklanır. Örneğin `'1'` karakteri bellekte 49 değeriyle tutulur. Rakam ve harf karakterleri tabloda art arda geldiği için karakter sabitleri arasındaki farklar hesaplamada kullanılabilir: `'1' - '0'` sayısal olarak 1'dir. Bu bilgiyle çözülmek üzere, rakam karakterlerinden oluşan bir diziyi tek bir tam sayıya (örneğin `'3','0','5'` → 305) çeviren algoritmanın akış diyagramı alıştırma olarak verilir.
 
-* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

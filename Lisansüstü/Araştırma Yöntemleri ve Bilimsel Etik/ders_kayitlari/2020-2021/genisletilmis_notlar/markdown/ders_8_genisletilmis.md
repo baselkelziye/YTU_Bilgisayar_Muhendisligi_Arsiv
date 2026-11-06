@@ -345,4 +345,4 @@ Bu dersin sorularının çoğu formun bir alanından başladı, cevaplar ise ayn
 
 Bütçe de aynı mantıkla okunur. Destek, gerçek bir ihtiyaç için istenir. Elde olan şey yeniden istenmez, elde olan belirtilip eksik olan gerekçelendirilir. Seyahat kalemi projenin yürütülmesi içindir, konferansa gitmek için değildir. Sunum ise başvurunun uzman bir kitleye yapılan sunumudur. Hocanın bütün ders boyunca tekrar ettiği uyarı, atıf biçimi ve alt başlık gibi ayrıntılara takılıp projenin içeriğini unutmamaktır: "Mış gibi yapmayın. Olanı yapın ve tarifleyin."
 
-**Not:** İsterseniz bu kayıtları NotebookLM gibi bir araca atıp daha istifadeli hale getirebilirsiniz.
+**Not:** İsterseniz bu kayıtları Gemini Notebook gibi bir araca atıp daha istifadeli hale getirebilirsiniz.

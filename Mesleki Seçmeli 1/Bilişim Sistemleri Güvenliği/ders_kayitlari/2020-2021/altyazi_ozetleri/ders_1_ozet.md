@@ -44,4 +44,4 @@
 - Saldırıların arkasında ekonomik motivasyon bulunur. Ele geçirilmiş sistemler kiralanabilir, hedef makinelerde belirli kodların yüklenmesi için ödeme alınabilir, hassas veriler satılabilir veya veriler şifrelenerek fidye istenebilir.
 - Zoom benzeri uygulamalarda tarayıcının yerel istemciyi başlatması kullanım kolaylığı sağlar; ancak yerel web sunucusu gibi ara mekanizmalar doğru sınırlandırılmazsa başka web siteleri bu mekanizmaya istek gönderebilir. Bu durum güvenlik tasarımında otomasyon ile yetki kontrolünün birlikte düşünülmesi gerektiğini gösterir.
 
-* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

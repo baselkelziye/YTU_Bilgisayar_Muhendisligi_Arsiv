@@ -149,4 +149,4 @@ Kabukta kod blokları süslü parantezle ya da girintiyle değil, anahtar kelime
 - `tr`, `awk`, `for` ve `while` örneklerinin çıktıları bash'te çalıştırılarak doğrulandı.
 - Bu uygulamada kabuk fonksiyonları (`17_function.sh`) gösterilmedi. Slaytlarda da yok.
 
-**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

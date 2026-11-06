@@ -466,4 +466,4 @@ Son olarak lojistik regresyonu gördük. Adında regresyon geçse de bir sınıf
 
 > **Ders sonrası not:** Hocanın hakemlik yaptığı programlar altyazıda "TÜBİTAK-TEDEF" diye geçiyor. Büyük olasılıkla TÜBİTAK TEYDEB (Teknoloji ve Yenilik Destek Programları Başkanlığı, sanayi Ar-Ge projeleri) kastediliyor.
 
-**Not:** İsterseniz bu kayıtları NotebookLM gibi bir araca atıp daha istifadeli hale getirebilirsiniz.
+**Not:** İsterseniz bu kayıtları Gemini Notebook gibi bir araca atıp daha istifadeli hale getirebilirsiniz.

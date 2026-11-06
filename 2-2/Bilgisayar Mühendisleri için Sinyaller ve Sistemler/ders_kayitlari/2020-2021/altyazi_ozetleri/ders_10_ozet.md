@@ -249,4 +249,4 @@ plot(t, y)          % plot(y) yazılırsa yatay eksen örnek numarası olur
 - Hoca DFT maliyetini anlatırken 4 dakikalık CD kalitesinde müzik için "240 milyon örnek" dedi. Doğru hesap: $4\times60\times44\,100\approx10.6$ milyon örnek (tek kanal). Ana fikir değişmez: $N^2$ işlem çok büyüktür.
 - Altyazıdaki "Şans'ın kitabı" büyük ihtimalle Schaum serisi (Hsu, *Signals and Systems*) kitabıdır.
 
-**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi daha verimli çalışabilirsiniz.
+**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi daha verimli çalışabilirsiniz.

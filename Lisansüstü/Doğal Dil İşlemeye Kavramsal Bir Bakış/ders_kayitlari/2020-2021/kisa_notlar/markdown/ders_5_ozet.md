@@ -485,4 +485,4 @@ $$P(w_1 w_2 w_3 w_4) \approx P(w_1) \times P(w_2|w_1) \times P(w_3|w_2) \times P
 - Altyazıda Woody Allen örneği "I have gap" olarak geçiyor. Slayttaki doğru örnek "I have a gub" ifadesidir.
 - Altyazıda "Romanca" geçen dil, slayttaki tabloda "Romanian" yani Rumencedir.
 
-**Not:** İsterseniz bu kayıtları NotebookLM gibi bir araca atıp daha istifadeli hale getirebilirsiniz.
+**Not:** İsterseniz bu kayıtları Gemini Notebook gibi bir araca atıp daha istifadeli hale getirebilirsiniz.

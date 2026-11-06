@@ -145,4 +145,4 @@
 - **Faz farkı örneğindeki sayılar:** Periyot 500 iken $-28.8°$ faz, $\frac{28.8}{360} \cdot 500 = 40$ birimlik gecikmeye, $14.4°$ ise 20 birimlik öne kaymaya karşılık gelir. Hoca bir yerde "frekansı 500" dedi, hemen ardından "periyodu 500" olarak düzeltti.
 - **RMS kontrolü:** Genliği 5 olan sinüs için sayısal hesap $3.5355 \approx 5/\sqrt{2}$ verdi.
 
-* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

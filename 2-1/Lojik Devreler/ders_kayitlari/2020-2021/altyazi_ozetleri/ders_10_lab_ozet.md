@@ -29,4 +29,4 @@
 - Seçilen flip-flop türüne göre her bit için gerekli giriş fonksiyonları çıkarılır. Bu fonksiyonlar sadeleştirilip kapı devresi olarak kurulur.
 - Simülasyonda saat darbeleri uygulanarak devrenin her adımda hangi duruma geçtiği gözlenir. Doğru tasarımda durumlar teorik sırayla ilerler.
 
-* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

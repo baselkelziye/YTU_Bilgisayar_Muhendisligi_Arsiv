@@ -98,4 +98,4 @@
 - **Makrolarda parantez:** `#define topla(x, y) x + y` gibi parantezsiz bir makro `2 * topla(3, 4)` ifadesinde `2 * 3 + 4 = 10` verir. Doğrusu `((x) + (y))` biçiminde parantezli yazmaktır; o zaman sonuç 14 olur.
 - **Uygulamayı yapan kişi:** Kayıtta asistanın adı net anlaşılamadığı için özette adı verilmedi.
 
-* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

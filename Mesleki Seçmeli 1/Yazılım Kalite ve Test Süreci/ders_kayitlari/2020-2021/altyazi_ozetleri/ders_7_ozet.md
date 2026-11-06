@@ -347,4 +347,4 @@
 - Hoca bütünlük testinde stub kavramını yukarıdan aşağıya yaklaşımla açıkladı. Aşağıdan yukarıya yaklaşımda üst modülün yerini sürücü (driver) alır.
 - Hoca büyük hatalarda teslimin durumunu açıkça söylemedi. Orta hatalarla bile teslime yalnız bazen gidildiğini belirtti.
 
-**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

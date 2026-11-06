@@ -173,4 +173,4 @@ $A = \{aa, bb\}$ ve $B = \{0, 11\}$ için:
 - **Güvercin yuvası örneği:** Python ile denendi. 1-11 arasından seçilen bütün 7'li gruplarda toplamı 12 olan bir ikili var. 6 sayı seçilince bu garanti yoktur (ör. $\{1, 2, 3, 4, 5, 6\}$).
 - **Tümevarım örneği:** Formül $n = 1, \dots, 199$ için Python ile kontrol edildi, doğru.
 
-**Not:** Bu ders İngilizce anlatılmıştır. İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+**Not:** Bu ders İngilizce anlatılmıştır. İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

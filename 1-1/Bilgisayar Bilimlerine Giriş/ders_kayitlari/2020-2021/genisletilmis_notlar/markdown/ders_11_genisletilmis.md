@@ -348,4 +348,4 @@ Bu derste bir dizi üzerinde iki temel karar verildi. En sıcak ve en soğuk gü
 
 Dersin sonunda karakter dizilerine geçildi. Karakterler bellekte ASCII karşılıklarıyla tutulur, ama hesaplarda sayısal değerler yerine karakter sabitleri ve aralarındaki farklar kullanılır. Konuya perşembe günü daha ayrıntılı devam edilecek ve artık yavaş yavaş programlamaya da geçilecektir. Karakter dizisini tam sayıya çevirme alıştırması da o derste konuşulacaktır.
 
-**Not:** İsterseniz bu kayıtları NotebookLM gibi bir araca atıp daha istifadeli hale getirebilirsiniz.
+**Not:** İsterseniz bu kayıtları Gemini Notebook gibi bir araca atıp daha istifadeli hale getirebilirsiniz.

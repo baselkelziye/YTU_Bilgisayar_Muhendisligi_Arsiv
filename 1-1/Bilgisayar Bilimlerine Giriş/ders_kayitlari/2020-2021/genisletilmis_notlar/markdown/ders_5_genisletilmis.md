@@ -508,4 +508,4 @@ Bu derste bilginin bilgisayarda hangi biçimde saklandığı adım adım kuruldu
 
 Ardından sayıların bilgisayardaki gösterimleri genişletildi. Negatif tam sayılar için ikiye göre tümleyen, üs alanı için excess gösterimi görüldü ve bu ikisi, kesirli sayıları saklayan kayan nokta gösteriminde bir araya geldi. Hoca sonraki derste kesme hatası (truncation error) problemini ve kayan noktayla ilgili birkaç ayrıntıyı konuşacağını, belki bazı örnekler çözeceğini söyledi. Onun ardından muhtemelen algoritmaya giriş yapılacak: algoritma nedir, nasıl tasarlanır ve nasıl ifade edilir.
 
-**Not:** İsterseniz bu kayıtları NotebookLM gibi bir araca atıp daha istifadeli hale getirebilirsiniz.
+**Not:** İsterseniz bu kayıtları Gemini Notebook gibi bir araca atıp daha istifadeli hale getirebilirsiniz.

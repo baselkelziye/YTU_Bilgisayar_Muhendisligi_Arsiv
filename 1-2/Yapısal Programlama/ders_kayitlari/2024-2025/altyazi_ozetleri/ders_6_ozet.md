@@ -104,4 +104,4 @@
 - **`main` argüman kontrolü:** Derste yalnızca `argc == 1` kontrol edildi. Program `argv[3]`'e eriştiği için en az 3 argüman gerekir: kontrol `if (argc < 4)` olmalıdır. Aksi hâlde 1-2 argümanla çalıştırılınca var olmayan bir argümana erişilir. Ayrıca `atoi("5B")` 5, `atoi("B5")` ve `atoi("abc")` 0 döndürür (gcc ile denendi). Hatalı girişi ayırt etmek için `strtol` kullanılabilir.
 - **`fflush(stdin)`:** Hem uygulamada hem ek derste `scanf` sonrası kalan Enter karakterini temizlemek için `fflush(stdin)` kullanıldı. Standart C'de `fflush` yalnızca çıkış akışları için tanımlıdır; `stdin` için davranış Windows'a özgüdür. Taşınabilir yol `scanf(" %c", &c)` (`%c`'den önce boşluk) veya `while (getchar() != '\n');` kullanmaktır.
 
-* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

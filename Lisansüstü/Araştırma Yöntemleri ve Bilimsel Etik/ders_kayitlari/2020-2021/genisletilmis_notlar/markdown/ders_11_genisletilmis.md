@@ -507,4 +507,4 @@ Bu derste sekiz proje önerisi dinlendi: genetik algoritmayla turizm rotası, ra
 
 Hocanın değerlendirmesi ise içerikten çok sunumun kendisine yöneldi: slayttan okumamak, prova yapmak, süreye uymak, dinleyiciye saygı göstermek ve kullanılacak ekipmanı önceden denemek. Sunumlar sonraki haftalarda da sürecektir; hoca dersi "haftaya görüşmek üzere" diyerek kapattı.
 
-**Not:** İsterseniz bu kayıtları NotebookLM gibi bir araca atıp daha istifadeli hale getirebilirsiniz.
+**Not:** İsterseniz bu kayıtları Gemini Notebook gibi bir araca atıp daha istifadeli hale getirebilirsiniz.

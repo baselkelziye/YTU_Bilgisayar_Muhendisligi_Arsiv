@@ -241,4 +241,4 @@ structure:    <id3, 2, [2, 8]>
 - "Hashtag olarak tutmak" ifadesi hash tablosu (hash table) demektir.
 - Hoca precision'ı ilk anda "relevant olanların sayısı" diye tanımlamış, sonra oran olarak düzeltmiştir. Doğrusu: getirilen dokümanlar içinde ilgili olanların oranıdır.
 
-**Not:** İsterseniz bu kayıtları NotebookLM gibi bir araca atıp daha istifadeli hale getirebilirsiniz.
+**Not:** İsterseniz bu kayıtları Gemini Notebook gibi bir araca atıp daha istifadeli hale getirebilirsiniz.

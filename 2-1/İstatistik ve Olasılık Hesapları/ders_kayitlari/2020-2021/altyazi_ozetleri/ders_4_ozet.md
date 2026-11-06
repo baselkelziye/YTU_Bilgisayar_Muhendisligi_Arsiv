@@ -155,4 +155,4 @@
   - $P(A \cup B \cup C) = P(A) + P(B) + P(C) - P(A \cap B) - P(A \cap C) - P(B \cap C) + P(A \cap B \cap C)$.
 - Yaklaşık 00:43:00 ile 00:50:30 arası deneme sınavı bölümünde konuşma Türkçe. Altyazı bu bölümde anlamsız ve döngülü. Bu kısımdan konu içeriği çıkmaz.
 
-* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilirsiniz. Bu ders İngilizce anlatılmıştır; altyazı da İngilizcedir.
+* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilirsiniz. Bu ders İngilizce anlatılmıştır; altyazı da İngilizcedir.

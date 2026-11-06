@@ -37,4 +37,4 @@
 - Komut satırı araçları daha teknik bir kullanım gerektirir; ancak çok sayıda dosya üzerinde aynı işlemi yürütme, analizleri betiklerle otomatikleştirme ve sonuçları başka araçlarla birleştirme gibi avantajlara sahiptir. Bu nedenle büyük ölçekli analizlerde komut satırı kültürü daha güçlüdür.
 - Ders, öğrencilerin hem hazır araçları tanımasını hem de bu araçların arkasındaki veri yapısı, algoritma ve programlama mantığını anlamasını hedefler. Bu yaklaşım, biyoenformatik problemlerinin yalnızca biyolojik değil aynı zamanda mühendislik problemi olarak da görülmesini sağlar.
 
-* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

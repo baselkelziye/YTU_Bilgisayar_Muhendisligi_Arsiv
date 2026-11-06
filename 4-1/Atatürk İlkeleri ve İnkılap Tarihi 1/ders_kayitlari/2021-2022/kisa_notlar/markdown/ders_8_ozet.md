@@ -201,4 +201,4 @@
   - Hoca Suriye-Lübnan olaylarının tarihini "1867" diye söyledi. Olaylar 1860'tadır.
   - Hoca, şeyhülislamlığın Bâb-ı Meşihat'a dönüşmesini Tanzimat'la birlikte anlattı. Bu düzenleme II. Mahmud döneminde (1826) yapıldı; hoca da "Sultan II. Mahmud" diyerek bunu belirtti.
 
-**Not:** İsterseniz bu özeti NotebookLM gibi bir araca atıp daha istifadeli hale getirebilirsiniz.
+**Not:** İsterseniz bu özeti Gemini Notebook gibi bir araca atıp daha istifadeli hale getirebilirsiniz.

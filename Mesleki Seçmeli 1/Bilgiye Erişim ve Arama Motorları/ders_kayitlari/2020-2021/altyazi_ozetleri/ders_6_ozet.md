@@ -147,4 +147,4 @@ Arama motorlarının başarısı üç şeye dayanır:
 - Durak kelime çıkarma ve kök bulmanın indeks boyutuna etkisi için verilen yüzdeler (%30, %40–50) kaba tahminlerdir. Gerçek oran dile, koleksiyona ve indeksin neyi saydığına (sözlük boyutu ya da posting sayısı) bağlıdır.
 - Ters indeksteki konum bilgisi gerçekte bir liste olabilir. Bir kelime dokümanda birden çok kez geçerse tüm konumları tutulur.
 
-**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

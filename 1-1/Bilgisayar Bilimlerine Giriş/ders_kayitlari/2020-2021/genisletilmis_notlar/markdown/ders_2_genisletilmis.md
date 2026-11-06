@@ -325,4 +325,4 @@ Bu giriş buluşmasında hoca, Bilgisayar Bilimlerine Giriş dersine ve bilgisay
 
 Öğrenme tarafında hocanın tavsiyesi nettir: Not almak, yazarak tekrar etmek, örnekleri çözüme bakmadan yeniden çözmek ve hata yapmaktan çekinmemek. Bölümün kapsamı açısından bilgisayar mühendisliği yazılım ve donanımı birlikte görerek resmin bütününü göstermeyi hedefler. Güncel bilgi için İngilizce kaynak takibi önemlidir. Dersin ayrıntılı işleyişi ve kitaplar sonraki derste paylaşılacak. Algoritma ve akış diyagramı konuları da dersin ilerleyen bölümlerinde işlenecek.
 
-**Not:** İsterseniz bu kayıtları NotebookLM gibi bir araca atıp daha istifadeli hale getirebilirsiniz.
+**Not:** İsterseniz bu kayıtları Gemini Notebook gibi bir araca atıp daha istifadeli hale getirebilirsiniz.

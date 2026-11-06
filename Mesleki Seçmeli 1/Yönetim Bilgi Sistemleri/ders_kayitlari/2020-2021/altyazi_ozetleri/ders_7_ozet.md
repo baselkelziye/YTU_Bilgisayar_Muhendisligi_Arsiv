@@ -48,4 +48,4 @@
 - ERP, MRP ve MRP II'nin daha kurumsal ve kapsamlı hale gelmiş biçimi olarak düşünülebilir. ERP sisteminde satış siparişi girildiğinde stok kontrolü, üretim planı, muhasebe kaydı, faturalama ve sevkiyat gibi işlemler birbirine bağlı biçimde ilerleyebilir.
 - ERP'nin sağladığı bütünleşme, yönetim bilgi sistemleri için güçlü bir veri altyapısı oluşturur. Yöneticiler farklı departmanlardan gelen veriyi ayrı ayrı toplamak yerine sistem içinden raporlayabilir, karşılaştırabilir ve karar destek süreçlerinde kullanabilir.
 
-* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

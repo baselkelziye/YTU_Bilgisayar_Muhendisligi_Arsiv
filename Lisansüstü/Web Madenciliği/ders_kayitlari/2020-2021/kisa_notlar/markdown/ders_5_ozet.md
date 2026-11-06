@@ -294,4 +294,4 @@ $$dist(x_i, x_j) = \frac{r - q}{r}$$
 - Hoca DBSCAN'ı hiyerarşik algoritma örneği olarak saymıştır. DBSCAN aslında yoğunluk tabanlı (density-based) bir algoritmadır. Bisecting K-Means ise bölücü hiyerarşik yapıda çalışan bir K-Means türevidir.
 - Hoca entropi örneğinde ders sonunda ortalamadan bahsetmiştir. Genelde küme boyutlarıyla ağırlıklı ortalama alınır.
 
-**Not:** İsterseniz bu kayıtları NotebookLM gibi bir araca atıp daha istifadeli hale getirebilirsiniz.
+**Not:** İsterseniz bu kayıtları Gemini Notebook gibi bir araca atıp daha istifadeli hale getirebilirsiniz.

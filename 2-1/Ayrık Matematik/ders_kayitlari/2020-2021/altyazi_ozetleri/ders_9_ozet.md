@@ -252,4 +252,4 @@ Genel çözüm: $a_n = a_n^{(h)} + a_n^{(ö)}$. Önce homojen kısım çözülü
 - **Karmaşıklık sorusu:** Dış döngü $i = n/2, \dots, n$ için $n/2 + 1$ kez döner. İç döngü $\lfloor\log_2 n\rfloor + 1$ kez döner. Tam sayım $\Theta(n^2\log n)$'dir; sonuç değişmez.
 - Bütün örneklerin sayısal sonuçları ($a_5 = 58$, $C$ katsayıları, dizilerin terimleri, Karnaugh sadeleştirmesi, 432) Python ile kontrol edildi.
 
-**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

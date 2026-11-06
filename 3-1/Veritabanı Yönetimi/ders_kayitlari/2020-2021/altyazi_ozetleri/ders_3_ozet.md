@@ -193,4 +193,4 @@
 
 - **Company Veritabanı Tasarımı**: Fabrika veritabanı örneğinde gereksinim listesinden varlık setleri ve bağıntılar adım adım çıkarılmıştır. Department, Project, Employee, Dependent varlık setleri; Works_for, Manages, Works_on, Controls, Supervises bağıntıları oluşturulmuştur. Dependent zayıf varlık olarak tanımlanmıştır çünkü istenen niteliklerle (isim, cinsiyet, doğum tarihi, ilişki) biricik anahtar seçilememiştir. Name, bir işçinin çocukları arasında ayırt edici nitelik olarak seçilmiştir.
 
-* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

@@ -84,4 +84,4 @@
 - Bu derste puanlama dışında yeni bir İSG kavramı işlenmedi. Kanun'a giriş Ders 4'te başladı.
 - Kayıttaki uzun puan dağıtımı ve mola bölümleri bu özette atlandı.
 
-- **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+- **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

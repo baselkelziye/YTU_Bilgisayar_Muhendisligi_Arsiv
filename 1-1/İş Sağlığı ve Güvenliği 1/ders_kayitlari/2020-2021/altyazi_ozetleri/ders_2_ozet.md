@@ -97,4 +97,4 @@
 - Kanunun güncel metni mevzuat.gov.tr adresinden "6331" aranarak bulunabilir.
 - Not dağılımı bu derste geçici olarak açıklandı. Ders 3'te 20 sınav + 20 sunum + 20 katkı + 40 final olarak netleşti.
 
-- **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+- **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

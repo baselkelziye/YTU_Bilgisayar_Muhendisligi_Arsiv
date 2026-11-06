@@ -595,4 +595,4 @@ Metin içindeki notlara ek olarak:
 
 > **Ders sonrası not:** Altyazıdaki bozuk yazımlar: "laten semantik indexing" ve "LST" LSI, "portrait stammer" Porter stemmer, "aygın value" eigenvalue, "Bull'un model" Boole modeli, "MOOC" MUC, "Ludus" Loodos, "Frogle" Froogle, "but" bat, "Kumpertino" Cupertino, "Jed/Jack Brown" Jane Brown. "Sinet" adı büyük olasılıkla CNET'tir, kesin değildir.
 
-**Not:** İsterseniz bu kayıtları NotebookLM gibi bir araca atıp daha istifadeli hale getirebilirsiniz.
+**Not:** İsterseniz bu kayıtları Gemini Notebook gibi bir araca atıp daha istifadeli hale getirebilirsiniz.

@@ -43,4 +43,4 @@
 - Savunma üretirken yalnızca zafiyeti kapatmak değil, zafiyetin neden oluştuğunu anlamak gerekir. Mevcut kodu tamamen yeniden yazmak çoğu durumda maliyetlidir; bu nedenle platform seviyesinde DEP/NX, ASLR benzeri mekanizmalar veya uygulama içine eklenen runtime kontroller pratik hale gelir.
 - Güvenlik tedbirlerinin önemli bir bölümü saldırganın kod çalıştırmasını engeller; ancak yanlış girdi geldiğinde programı durdurabilir. Bu durum hizmet kesintisi anlamına gelse de sistemin tamamen ele geçirilmesinden daha düşük risklidir.
 
-* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

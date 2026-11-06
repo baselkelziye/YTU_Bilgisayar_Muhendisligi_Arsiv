@@ -297,4 +297,4 @@ carCount--;
 - Hoca "public kullanırsak kalıtıma gerek yok" dedi. Kastedilen, `protected` anahtar kelimesinin bilgiyi yalnızca alt sınıflara açmak için kullanıldığıdır. Kalıtımın amacı yalnızca erişim değildir; ortak davranışı paylaşmak ve polymorphism sağlamaktır.
 - Altyazıdaki "Nive/near" `new`, "segmenter" `setCar`, "dinamik binding" dynamic binding, "Isarılayışı" "is-a ilişkisi", "hez" "has" demektir. "Lazar" lazer yazıcıdır.
 
-* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

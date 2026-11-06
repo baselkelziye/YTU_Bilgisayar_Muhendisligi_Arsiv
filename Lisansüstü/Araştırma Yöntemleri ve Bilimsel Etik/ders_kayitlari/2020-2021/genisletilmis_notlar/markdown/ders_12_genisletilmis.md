@@ -618,4 +618,4 @@ Bu ders sekiz farklı alandan proje önerisini aynı iskelet üzerinde gösterdi
 
 Hocanın derste yaptığı tek içerik yorumu risk yönetimi üzerineydi. 7. sunumda öngörülen bir risk sunum günü gerçekleşmiş, grup da B planını anlatmıştı. Hoca sunumların sonuna gelindiğini söyleyerek dersi kapattı.
 
-**Not:** İsterseniz bu kayıtları NotebookLM gibi bir araca atıp daha istifadeli hale getirebilirsiniz.
+**Not:** İsterseniz bu kayıtları Gemini Notebook gibi bir araca atıp daha istifadeli hale getirebilirsiniz.

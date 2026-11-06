@@ -32,4 +32,4 @@
 - Normalizasyon, özellikle uzaklık temelli yöntemlerde önemlidir. Bir öz niteliğin değer aralığı diğerlerinden çok büyükse, uzaklık hesabını baskılayabilir. Bu durumda algoritma gerçekte daha önemli olan özellikleri görmezden gelebilir.
 - Aykırı değerler hem hata kaynağı hem de bilgi kaynağı olabilir. Örneğin ölçüm hatası olan bir değer temizlenebilir; fakat dolandırıcılık, saldırı tespiti veya arıza analizi gibi problemlerde aykırı değerler asıl ilgilenilen sınıfı temsil edebilir.
 
-* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

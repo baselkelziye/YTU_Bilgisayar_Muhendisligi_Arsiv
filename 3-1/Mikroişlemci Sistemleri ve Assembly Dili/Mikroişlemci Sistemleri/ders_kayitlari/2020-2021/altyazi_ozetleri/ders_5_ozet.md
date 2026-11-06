@@ -57,4 +57,4 @@ Mod 1 ve Mod 2'de interruptların üretilmesi için INTE (Interrupt Enable) bayr
 **Status Word ile Yazılımsal Handshake Kontrolü:**
 Handshake sinyallerini donanımsal olarak interrupt'a bağlamak yerine yazılımsal olarak da kontrol edilebilir. Bunun için Port C'den okuma yapılır (status word okuma). Status word'ün ilgili bitleri IBF, OBF, ACK gibi sinyallerin güncel durumunu gösterir. Örneğin bir veri göndermeden önce OBF bitini kontrol ederek output buffer'ın boş olup olmadığı anlaşılır. Buffer boşsa yeni veri yazılabilir. Benzer şekilde veri okumadan önce IBF bitine bakılarak buffer'da yeni veri olup olmadığı kontrol edilir. Bu yöntem polling (yoklama) olarak adlandırılır ve interrupt'a alternatif bir yaklaşımdır.
 
-* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

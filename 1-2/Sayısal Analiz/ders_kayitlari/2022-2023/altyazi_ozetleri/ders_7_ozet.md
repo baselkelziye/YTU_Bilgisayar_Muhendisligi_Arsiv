@@ -110,4 +110,4 @@
 - **Hata yayılması tablosunda indis:** Slaytta son sütundaki eleman $\Delta^6 f_1 - 20\varepsilon$ yazıyor. 7 nokta ($x_0, \ldots, x_6$) ile tek bir 6. fark vardır, o da $\Delta^6 f_0$'dır. Katsayı ve işaret ($-20\varepsilon$) doğrudur.
 - **Vize tarihi:** Önceki derste vizenin 9. haftaya kayabileceği konuşulmuştu. Bu derste "bayramdan sonra, üniversitenin vize haftasında" dendi. Kesin tarih için duyuruları takip edin.
 
-* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

@@ -232,4 +232,4 @@ return max
 - Hoca "n log n karmaşıklığında quick sort" dedi. Quick sort ortalama durumda $O(n \log n)$, en kötü durumda $O(n^2)$'dir. Heap sort ve merge sort her durumda $O(n \log n)$'dir.
 - Kayıt ikinci oturumun sonunda bitiyor. 14.50'de başlayacağı söylenen üçüncü oturum kayıtta yok.
 
-**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

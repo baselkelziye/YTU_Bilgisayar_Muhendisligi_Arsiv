@@ -55,4 +55,4 @@
 - Finans-muhasebe sistemleri nakit akışı, stok değerleme, finansal kayıtların tutulması, kısa dönem bütçe ve uzun dönem karlılık planlama gibi faaliyetleri destekler.
 - İnsan kaynakları sistemleri çalışan kayıtları, yetenek envanteri, eğitim bilgileri, performans izleme, ücret-katma değer değerlendirmesi ve uzun dönem insan kaynağı planlamasını kapsar.
 
-* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

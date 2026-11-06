@@ -123,4 +123,4 @@ Adapter'ın temel metotları açıklanmıştır. onCreateViewHolder her item iç
 
 ViewHolder'ın dinamik oluşumu konusunda bir öğrencinin sorusu üzerine, "Creates only as many ViewHolders as are needed to display on screen portion of the dynamic content" ifadesi açıklanmıştır. RecyclerView sadece ekranda görünen kadar ViewHolder oluşturur, scroll edildikçe ekranın dışına çıkan item'ların ViewHolder'ları yeni gelen item'lar tarafından yeniden kullanılır. Bu temel prensibin dinamik bir şekilde gerçekleştiği vurgulanmıştır.
 
-* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

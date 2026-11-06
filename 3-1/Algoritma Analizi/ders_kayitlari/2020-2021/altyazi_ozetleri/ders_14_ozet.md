@@ -199,4 +199,4 @@ Tahtada başarılı arama için iki eğri çizildi: yatay eksende $\alpha$ (0,2-
 - **Tahtadaki küçük kod hataları:** `createNode` içinde `size(struct node)` yazılmış; doğrusu `sizeof(struct node)`. Yer açılamadığında `exit(0)` yerine hata kodu (`exit(1)` ya da `EXIT_FAILURE`) döndürmek daha doğrudur. `strcpy` 40 karakterden uzun isimde taşma yapar; `strncpy` ya da uzunluk kontrolü kullanılmalıdır.
 - Altyazıda "Spread Chaining", "LinkedIn liste" diye geçen terimlerin doğruları: separate chaining, linked list.
 
-**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

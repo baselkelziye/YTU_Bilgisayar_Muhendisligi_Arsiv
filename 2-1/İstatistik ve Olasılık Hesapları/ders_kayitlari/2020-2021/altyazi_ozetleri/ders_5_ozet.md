@@ -124,4 +124,4 @@
 - Varyans sezgisi örneğinde hoca $\mathrm{Var}(X_2)$ için önce "4000" dedi. Doğrusu $2000^2 = 4\,000\,000$.
 - Yaklaşık 01:44:30-01:53:40 arasındaki Türkçe tekrar bölümünde ve quiz oturumunda altyazı yer yer bozuk ve döngülü. Bu kısımlar özetlenirken yalnızca anlaşılır cümleler kullanıldı.
 
-* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilirsiniz. Bu ders İngilizce anlatılmıştır; altyazı da İngilizcedir.
+* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilirsiniz. Bu ders İngilizce anlatılmıştır; altyazı da İngilizcedir.

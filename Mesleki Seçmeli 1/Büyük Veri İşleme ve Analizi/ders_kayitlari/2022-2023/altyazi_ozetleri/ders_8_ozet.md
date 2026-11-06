@@ -170,4 +170,4 @@
 - Hoca "3 denklem, 3 bilinmeyen var, tek çözüm yok" dedi. Bunun nedeni denklemlerin bağımlı ve homojen olmasıdır. $r = 0$ ve onun her katı da çözümdür. Toplamın 1 olması koşulu çözümü tekleştirir.
 - Altyazıda "Patriot", "patron", "Payt-Rank" diye geçen terimler PageRank'tir.
 
-**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

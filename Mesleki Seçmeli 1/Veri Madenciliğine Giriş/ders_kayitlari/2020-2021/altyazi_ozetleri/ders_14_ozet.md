@@ -36,4 +36,4 @@
 - Confidence kuralın koşullu güvenilirliğini gösterse de tek başına yanıltıcıdır. Çok yaygın bir ürün sonuç tarafında yer alıyorsa birçok öncül için yüksek confidence verebilir. Lift gibi ölçütler, ilişkinin rastlantısal veya doğal yaygınlıktan kaynaklanıp kaynaklanmadığını ayırt etmeye yardım eder.
 - Birliktelik kurallarının çıktısı çoğu zaman çok sayıda kuraldır. Bu nedenle minimum support, minimum confidence ve lift gibi eşikler belirlenerek hem istatistiksel hem de pratik açıdan anlamlı kurallar seçilir.
 
-* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

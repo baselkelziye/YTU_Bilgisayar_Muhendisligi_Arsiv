@@ -62,4 +62,4 @@ Distance Vector, klasik internet algoritmasıdır. Her düğüm (router) sadece 
 
 Hoca, distance vector'ün eski bir algoritma olduğunu ve bugün hâlâ bazı yerlerde kullanıldığını vurgular. Sensör ağlar veya küçük ölçekli dinamik topolojiler için hâlâ geçerli bir seçenek olabilir.
 
-* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

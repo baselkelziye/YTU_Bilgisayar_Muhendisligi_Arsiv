@@ -214,4 +214,4 @@ Genel dönüştürme sırası: $\varepsilon$-üretimlerini sil, birim üretimler
 - **GNF'ye dönüştürme:** Derste gösterilen yöntem (terminaller için $T_a$, $T_b$ eklemek) yalnız her kural zaten bir terminalle başlıyorsa işe yarar. $S \to AB$ ya da sol özyinelemeli $A \to Aa$ gibi kurallarda önce sol özyineleme kaldırılmalı ve değişkenler sıralanarak yerine koyma yapılmalıdır. Kitaptaki "GNF'yi bulmak daha zordur" notu bu genel durum içindir.
 - **Doğrulanan örnekler:** Yerine koyma, boşa giden değişken, birim üretim, yararsız üretim, CNF ve GNF örneklerinin hepsinde eski ve yeni gramerlerin aynı dili ürettiği Python ile denendi. Hepsi doğru çıktı.
 
-**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz. Ders İngilizce anlatılmıştır; altyazı da büyük ölçüde İngilizcedir.
+**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz. Ders İngilizce anlatılmıştır; altyazı da büyük ölçüde İngilizcedir.

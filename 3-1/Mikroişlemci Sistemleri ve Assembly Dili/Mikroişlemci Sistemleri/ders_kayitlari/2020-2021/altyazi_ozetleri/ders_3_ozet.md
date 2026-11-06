@@ -54,4 +54,4 @@ Control word 8 bitlik bir değerdir ve 8255'in kontrol yazmacına gönderilir. D
 **BHE ile 16 Bit Veri Yolu Oluşturma:**
 8255 gibi 8 bitlik çevre birimlerini 16 bitlik veri yoluna bağlamak için BHE ve A0 pinleri birlikte kullanılır. Çift adreslerde (A0=0) alt 8 bit (D0-D7) üzerinden veri aktarımı yapılır. Tek adreslerde (A0=1) üst 8 bit (D8-D15) üzerinden veri aktarımı yapılır. Bir 8255'i çift adreslere, başka bir 8255'i tek adreslere yerleştirerek veya BHE'yi anahtarlama elemanı olarak kullanarak 8 bitlik iki cycle'da 16 bitlik veri yolu elde edilir. Sorularda "çift adresleri kullanın" denildiğinde A0=0 şartı chip select devresine eklenir.
 
-* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

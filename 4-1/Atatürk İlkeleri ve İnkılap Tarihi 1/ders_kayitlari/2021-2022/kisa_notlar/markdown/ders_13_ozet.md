@@ -169,4 +169,4 @@
   - "Glory of the Pets" = Paths of Glory, "Kurt Douglas" = Kirk Douglas, "kurup firması" = Krupp
   - "Batı Terakkiya" = Batı Trakya, "Çanakya'lı" = Çanakkale
 
-**Not:** İsterseniz bu kayıtları NotebookLM gibi bir araca atıp daha istifadeli hale getirebilirsiniz.
+**Not:** İsterseniz bu kayıtları Gemini Notebook gibi bir araca atıp daha istifadeli hale getirebilirsiniz.

@@ -409,4 +409,4 @@ Dersin ana tarihleri şöyledir:
 
 Hoca önümüzdeki derste II. Abdülhamid dönemini, ardından II. Meşrutiyet'i işleyeceğini söyledi. Kanun devleti ve hukuk devleti ayrımına, hocanın sınav uyarısı nedeniyle özellikle dikkat edin.
 
-**Not:** İsterseniz bu kayıtları NotebookLM gibi bir araca atıp daha istifadeli hale getirebilirsiniz.
+**Not:** İsterseniz bu kayıtları Gemini Notebook gibi bir araca atıp daha istifadeli hale getirebilirsiniz.

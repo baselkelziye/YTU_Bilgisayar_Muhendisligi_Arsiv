@@ -35,4 +35,4 @@
 - Market sepeti analizinde her alışveriş bir işlem olarak düşünülür. İşlemlerde hangi ürünlerin birlikte yer aldığı incelenir. Örneğin bir ürün grubunu alan kullanıcıların başka bir ürünü de alma eğilimi varsa, bu ilişki öneri veya kampanya tasarımında kullanılabilir.
 - Support ve confidence, kuralların anlamlılığını değerlendirmek için temel ölçütlerdir. Support kuralın veri genelinde ne kadar yaygın olduğunu, confidence ise öncül gerçekleştiğinde sonucun ne kadar güvenilir biçimde görüldüğünü açıklar.
 
-* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

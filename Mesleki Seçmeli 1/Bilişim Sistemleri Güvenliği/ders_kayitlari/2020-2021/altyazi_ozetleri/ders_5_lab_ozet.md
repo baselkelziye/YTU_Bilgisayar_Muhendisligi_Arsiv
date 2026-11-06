@@ -28,4 +28,4 @@
 - Laboratuvar içeriğinde buffer overflow saldırısının yalnızca kavramsal değil, çalışma zamanı üzerinde nasıl gözlemlendiği vurgulanır. Girdi uzunluğu artırıldığında programın stack üzerinde hangi alanları ezdiği, dönüş adresinin nasıl etkilendiği ve saldırganın kontrol akışını nasıl yönlendirebildiği incelenir.
 - Modern sistemlerde exploitin başarısı bellek korumalarıyla doğrudan ilişkilidir. ASLR adresleri rastgeleleştirir, stack canary dönüş adresinden önce beklenmeyen değişimi fark eder, NX/DEP veri alanlarının kod gibi çalıştırılmasını engeller. Bu mekanizmaların etkisini anlamak güvenli geliştirme ve zafiyet analizi için gereklidir.
 
-* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

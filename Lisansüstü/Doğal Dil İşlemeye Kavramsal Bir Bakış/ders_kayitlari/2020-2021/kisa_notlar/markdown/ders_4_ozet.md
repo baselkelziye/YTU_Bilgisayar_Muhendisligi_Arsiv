@@ -408,4 +408,4 @@
 - Hoca bir yerde "Gülşen Hoca'nın şu an İTÜ'de" olduğunu söyledi. Altyazıda adı "Gülşen ... Er Yiğit Cebiroğlu" olarak geçiyor; doğrusu Gülşen Cebiroğlu Eryiğit.
 - Altyazıda kitap yazarının adı "Vasit Mabiyev" olarak geçiyor. Doğrusu Vasıf Nabiyev.
 
-İsterseniz bu kayıtları NotebookLM gibi bir araca atıp daha istifadeli hale getirebilirsiniz.
+İsterseniz bu kayıtları Gemini Notebook gibi bir araca atıp daha istifadeli hale getirebilirsiniz.

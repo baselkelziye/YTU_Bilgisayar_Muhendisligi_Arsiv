@@ -249,4 +249,4 @@ $$cosine(d_j, q) = \frac{\langle d_j \cdot q \rangle}{\|d_j\| \times \|q\|} = \f
 - Hoca ilgililik geri bildiriminde önce tıklanan linkleri ilgili saymıştır. Öğrencinin itirazı üzerine düzeltmiştir. Doğrusu yukarıda anlatıldığı gibidir.
 - Hoca opinion mining bölümünü bir yerde "chapter 11" diye anmıştır. Kitabın baskısına göre bölüm numarası değişebilir.
 
-**Not:** İsterseniz bu kayıtları NotebookLM gibi bir araca atıp daha istifadeli hale getirebilirsiniz.
+**Not:** İsterseniz bu kayıtları Gemini Notebook gibi bir araca atıp daha istifadeli hale getirebilirsiniz.

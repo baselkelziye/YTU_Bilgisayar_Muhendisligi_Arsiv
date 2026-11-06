@@ -77,4 +77,4 @@
   - **RIGHT JOIN:** Sağ tablonun tüm satırlarını, sol tabloyla eşleşenleri de ekler
   - **FULL OUTER JOIN:** Her iki tablonun tüm satırlarını, eşleşmeyenleri NULL ile döndürür
 
-* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

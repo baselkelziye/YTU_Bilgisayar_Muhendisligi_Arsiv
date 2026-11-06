@@ -135,4 +135,4 @@
 - Hoca bu dönemde 13:00 dersine 5-10 dakika gecikmeli başlayabileceğini, 14:00 dersinin ise zamanında başlayacağını söylüyor.
 - İkinci bölümde (aynı gün, 14:00) millet sistemi işlenecek.
 
-**Not:** İsterseniz bu kayıtları NotebookLM gibi bir araca atıp daha istifadeli hale getirebilirsiniz.
+**Not:** İsterseniz bu kayıtları Gemini Notebook gibi bir araca atıp daha istifadeli hale getirebilirsiniz.

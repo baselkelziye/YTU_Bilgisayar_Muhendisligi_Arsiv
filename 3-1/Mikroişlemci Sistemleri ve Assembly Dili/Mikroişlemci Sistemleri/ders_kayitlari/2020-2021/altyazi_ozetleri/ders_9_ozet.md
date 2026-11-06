@@ -86,4 +86,4 @@ Mod 0'dan farklı olarak, OUT pinini sıfıra indirmek için GATE ucunun 0'dan 1
 **Mod 2 - Rate Generator (Pulse Üreteci):**
 Sayma değeri 1 olduğunda OUT 1'den 0'a düşer, bir clock sonra otomatik olarak 0'dan 1'e yükselir. Bu şekilde bir clock pulse'ı genişliğinde bir darbe (pulse) üretilmiş olur. Bu işlem periodik olarak tekrarlanır. GATE = 0 olduğunda sayma duraklar. Yeni sayma değeri mevcut cycle bitince etkin olur. Belirli bir frekansta pulse üretmek için kullanılır.
 
-* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

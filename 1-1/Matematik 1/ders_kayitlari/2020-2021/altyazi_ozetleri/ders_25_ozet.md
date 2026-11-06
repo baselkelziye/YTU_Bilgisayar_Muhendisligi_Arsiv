@@ -175,4 +175,4 @@ $$A = \int_a^b |f(x) - g(x)|\,dx = \int_a^{c_1}(f - g)\,dx + \int_{c_1}^{c_2}(g 
 - **Örnek 3:** $\int\csc t\,dt = -\ln|\csc t + \cot t| + C$ (ya da $\ln|\csc t - \cot t| + C$). Hoca işaretini yazmadı.
 - Altyazının bazı kısımları döngüye girmiş ya da bozuk (ör. 00:34:44, 00:35:14-00:35:44, 00:40:41 civarı). Bu kısımlar altyazıda anlaşılmıyor; içerik bağlamdan kuruldu.
 
-**Not:** İsterseniz bu kayıtları NotebookLM gibi bir araca atıp daha istifadeli hale getirebilirsiniz.
+**Not:** İsterseniz bu kayıtları Gemini Notebook gibi bir araca atıp daha istifadeli hale getirebilirsiniz.

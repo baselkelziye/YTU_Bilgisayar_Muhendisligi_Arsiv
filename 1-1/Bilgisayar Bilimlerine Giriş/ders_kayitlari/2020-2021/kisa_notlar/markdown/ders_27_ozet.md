@@ -106,4 +106,4 @@ int main()
 
 Derste `%3.2f` biçimindeki 3'ün "noktadan önceki kısım için ayrılan alan" olduğu söylendi. C'de bu sayı, sayının nokta ve kesirli kısım dahil toplam en az kaç karakter genişliğinde yazdırılacağını belirtir. Örneğin `%7.2f` ile 3.14159, başına üç boşluk eklenerek `   3.14` olarak yazdırılır.
 
-* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

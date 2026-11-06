@@ -163,4 +163,4 @@ $$pred(a,p) = \bar{r}_a + \frac{\sum_{b \in N} sim(a,b)\,(r_{b,p} - \bar{r}_b)}{
 - **$\Omega(n)$ ifadesi:** $2n^3 - 7n + 1 \in \Omega(n)$ doğrudur ama zayıf bir alt sınırdır. En sıkı alt sınır $\Omega(n^3)$'tür.
 - **Altyazı hataları:** "Mertzort" merge sort, "Insurgent Sort" insertion sort, "Quake Sort" quick sort, "Divide and Confure/Concur" divide and conquer, "Yusos" USİS demektir.
 
-**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

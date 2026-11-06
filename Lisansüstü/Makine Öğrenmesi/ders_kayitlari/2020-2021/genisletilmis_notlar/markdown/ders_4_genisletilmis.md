@@ -523,4 +523,4 @@ K tek sayı ve genelde 1 ile 7 arasında seçilir; en iyi değer doğrulama küm
 
 > **Ders sonrası not:** Altyazıda "öplik distance", "Heming", "kosan similarity", "Varona'yı diyagramı", "Mahalonobis", "incremental glation" gibi geçen terimlerin doğru yazımı sırasıyla Euclidean (Öklid) distance, Hamming, cosine similarity, Voronoi diyagramı, Mahalanobis ve incremental deletion'dır.
 
-**Not:** İsterseniz bu kayıtları NotebookLM gibi bir araca atıp daha istifadeli hale getirebilirsiniz.
+**Not:** İsterseniz bu kayıtları Gemini Notebook gibi bir araca atıp daha istifadeli hale getirebilirsiniz.

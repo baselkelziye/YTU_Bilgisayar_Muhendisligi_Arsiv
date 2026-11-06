@@ -44,4 +44,4 @@
 - Not ağırlığı için derste "%60 final, %40" ifadesi geçti. Kayıtta hangi bileşenin %40 olduğu net değildir. Güncel ağırlığı ders sayfasından veya hocadan kontrol edin.
 - Sınav haftası 24 Nisan 2023 ile başlar. 21-23 Nisan 2023 Ramazan Bayramı'na denk gelir.
 
-* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

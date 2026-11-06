@@ -141,4 +141,4 @@
 - **Lab örneğinde Norton kaynağı:** Slaytta Norton kaynağı "$V_{TH}/R_{TH} - 1$ A" gibi okunuyor. Kastedilen $I_N = V_{TH}/R_{TH} = 10/10 = 1$ A'dir.
 - **Doğrulama:** Vize Q1, Q2, Q3, Q4, Q5, Q7, Q8 ve Q10, laboratuvar örneği ve Example 03 Python (numpy) ile yeniden hesaplandı. Sonuçlar hocanın cevaplarıyla uyumlu. Q6'nın şekilleri kayıtta tam görünmediği için yalnızca hocanın verdiği değerler yazıldı.
 
-* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

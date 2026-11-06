@@ -78,4 +78,4 @@ Graf (kareden okundu): C1 → C2, C1 → C3, C2 → C4, C3 → C4, C3 → C5, C4
 - **Kaynak silme yönteminin karmaşıklığı:** Her düğümün giriş derecesi (in-degree) saklanır, kaynaklar bir kuyrukta tutulursa yöntem $\Theta(|V|+|E|)$ sürede çalışır. Bu yönteme Kahn algoritması da denir.
 - Altyazıda "Decrease and Concure" diye geçen terim decrease and conquer, "popping off order" diye geçen terim popping-off order (çıkarma sırası) anlamındadır.
 
-**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

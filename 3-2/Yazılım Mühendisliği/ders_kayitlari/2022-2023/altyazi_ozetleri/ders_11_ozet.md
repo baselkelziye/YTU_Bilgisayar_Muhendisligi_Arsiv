@@ -178,4 +178,4 @@
 - Slayttaki tabloda 7 ve 8 numaralı risklerin etkisi ve olasılığı "Orta" olarak yazılmış. Ancak aynı slayttaki grafikte küçük etki-düşük olasılık bölgesine konmuşlar ve "izlenmesine gerek yok" denmiş. Tablo ile grafik bu iki riskte tutarsız.
 - Hocanın "şeflik sistemi" dediği yapı literatürde baş programcı ekibi (chief programmer team), "demokratik" dediği ise egosuz (egoless) ekip olarak geçer.
 
-**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

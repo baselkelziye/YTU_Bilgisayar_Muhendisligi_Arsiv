@@ -291,4 +291,4 @@ void addEdge(struct Graph* graph, int src, int dest)
 - Slayttaki kodda `malloc` sonucu kontrol edilmiyor ve `malloc` için `<stdlib.h>` gerekir. Gerçek kodda `NULL` kontrolü yapılmalıdır.
 - Altyazıda Whisper bazı terimleri bozmuştur: "pet" = path, "spelling tree" = spanning tree, "Kurzcal / Pruskal / Kuruskal" = Kruskal, "digri" = degree.
 
-**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

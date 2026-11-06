@@ -158,4 +158,4 @@ Satırlar BACDB, sütunlar BDCB. Tablo Python ile doğrulandı:
 - Levenshtein'ın makalesi 1965'te Rusça yayımlandı, İngilizcesi 1966'da çıktı.
 - Altyazıda "Levenstein" diye geçen ad Levenshtein, "Delayed", "dilation" diye geçen terim delete (silme), "Long and Subsequence" diye geçen terim longest common subsequence'dir.
 
-**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

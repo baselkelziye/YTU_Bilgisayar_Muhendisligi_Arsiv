@@ -246,4 +246,4 @@ public String toString() {
 - **`Math.round(-2.5)`:** Java'da sonuç `-2`'dir (`Math.floor(x + 0.5)` mantığı). "5 ve üstü yukarı yuvarlanır" kuralı negatif sayılarda farklı görünür.
 - **Hocanın UML sıralama diyagramı düzeltmesi:** Önceki derste "response" denen ok aslında request (mesaj gönderme) okudur. Cevap oku reply/response olarak adlandırılır.
 
-**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

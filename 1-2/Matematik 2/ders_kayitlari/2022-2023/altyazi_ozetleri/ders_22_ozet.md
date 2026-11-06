@@ -148,4 +148,4 @@ Tarih: 9 Mayıs 2023 (Salı). Ders, önceki günün (iki katlı integralde deği
 - Örnek 5'te altyazıda $u$ için "sıfırdan eksi pi'ye" deniyor. Bu, $-\pi\le u\le0$ aralığıdır.
 - 00:58:46-00:59:44 arasında hocanın sesi gitmiş. Seri sorusunun bu kısmı altyazıda yok.
 
-İsterseniz bu kayıtları NotebookLM gibi bir araca atıp daha istifadeli hale getirebilirsiniz.
+İsterseniz bu kayıtları Gemini Notebook gibi bir araca atıp daha istifadeli hale getirebilirsiniz.

@@ -83,4 +83,4 @@ Hoca dersi yaklaşık 8 bölüme ayırır:
 - Whisper bazı adları bozmuştur. Doğruları: "Makkol" McCall, "Makkep" McCabe, "hashtag metriği" muhtemelen Halstead metrikleri, "Spray/Sprower model" spiral model, "Reizability/J-Yuzubility" reusability, "Presma" Pressman, "Summerville" Sommerville.
 - Altyazıda dersin adı "yazılım kayıta" diye geçer; doğrusu "yazılım kalite"dir.
 
-**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

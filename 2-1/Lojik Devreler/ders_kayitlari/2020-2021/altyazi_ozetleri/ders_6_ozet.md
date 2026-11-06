@@ -38,4 +38,4 @@
 - Multiplexer devreleri fonksiyon gerçekleştirme amacıyla da kullanılabilir. Seçme hatları değişkenlerin bir kısmını temsil ederken veri girişlerine sabit `0`, `1` veya diğer değişkenler bağlanabilir.
 - Toplayıcı ve çıkarıcı devreler aritmetik işlemlerin lojik kapılarla kurulabileceğini gösterir. Toplam/fark bitleri çoğunlukla XOR mantığına, elde/borç bitleri ise AND-OR kombinasyonlarına dayanır.
 
-* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

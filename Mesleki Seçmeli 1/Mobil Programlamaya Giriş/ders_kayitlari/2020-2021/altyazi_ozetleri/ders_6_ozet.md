@@ -105,4 +105,4 @@ IntentFilter ve manifest bildirimi detaylı olarak anlatılmıştır. Kendi uygu
 
 Hoca, login ekranından başarı giriş sonrası menü ekranına geçiş örneği vererek Explicit intent kullanımını somutlaştırmıştır. Intent'in o andaki context'i (bulunulan activity) alıp hedef activity'nin ismini (package.ClassName formatında) yazdığını açıklamıştır. putExtra ile UserID gibi bilgiler eklendiğini, bu bilgilerin yeni ekranda "Hoş geldiniz X kişisi" gibi mesajlar için kullanılabileceğini belirtmiştir. Eğer 3 defa hatalı giriş yapılırsa toast mesajıyla kullanıcıya bilgi verildiğini ve finish ile uygulamanın destroy edildiğini (ödev kapsamında), ya da butonun disable edileceğini söylemiştir.
 
-* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

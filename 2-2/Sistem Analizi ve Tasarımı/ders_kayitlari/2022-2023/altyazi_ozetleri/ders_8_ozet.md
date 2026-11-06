@@ -314,4 +314,4 @@ Kodlama:
 - **Yaratıcı kalıbının şartları:** Derste "içeriyorsa, kaydını tutuyorsa ve kullanıyorsa ve başlangıç verilerine sahipse" diye söylendi. Bu şartların hepsinin birlikte sağlanması gerekmez. Biri bile yeterlidir. En güçlü aday, A'yı içeren veya birleştiren (aggregate) sınıftır.
 - **Altyazıdaki bozuk terimler:** "wireless UML" = Violet UML, "opet" = `opt`, "alete" = `alt`, "golf kalıpları" = GoF kalıpları, "grass block" = GRASP, "gut class" = god class, "SDLC sınıf" = "bir sınıf", "artificial diagram" = ardışıl diyagram, "Mac Payment" = `makePayment`.
 
-**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi daha verimli çalışabilirsiniz.
+**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi daha verimli çalışabilirsiniz.

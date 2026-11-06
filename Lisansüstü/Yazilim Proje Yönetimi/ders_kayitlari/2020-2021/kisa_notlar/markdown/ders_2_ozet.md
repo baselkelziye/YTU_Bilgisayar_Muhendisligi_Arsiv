@@ -290,4 +290,4 @@
 - Hocanın sıraladığı dört yönetim tarzı Hersey-Blanchard durumsal liderlik modelindeki tarzlara karşılık gelir: yönlendirme (directing/telling), koçluk (coaching), destekleme (supporting), delege etme (delegating). Hoca "delege edici" için "şu şöyle yapılacak diye sert söylemek" dedi. Bu tarif modelde yönlendirme (directing) tarzına uyar. Delege etmede yönetici işi ve kararı ekip üyesine bırakır.
 - Altyazıdaki "Türksel faturaları" büyük olasılıkla Turkcell faturalarıdır.
 
-**Not:** İsterseniz bu kayıtları NotebookLM gibi bir araca atıp daha istifadeli hale getirebilirsiniz.
+**Not:** İsterseniz bu kayıtları Gemini Notebook gibi bir araca atıp daha istifadeli hale getirebilirsiniz.

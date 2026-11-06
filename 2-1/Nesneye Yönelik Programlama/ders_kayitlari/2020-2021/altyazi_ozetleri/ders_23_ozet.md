@@ -79,4 +79,4 @@ public class Ser {
 - Kayıt kısa bir sınav oturumudur. Sınav sorusunun ayrıntıları altyazıdan ve ekrandaki PDF'ten ("NYP LAB-4 2021") alındı.
 - Altyazının 00:05:36'daki "Thank you." satırı büyük olasılıkla Whisper'ın sessiz bölümde ürettiği bir halüsinasyondur.
 
-* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

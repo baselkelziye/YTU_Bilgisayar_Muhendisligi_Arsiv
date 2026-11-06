@@ -226,4 +226,4 @@ Programcılar Lideri    programcı             programcı
 - Hoca PERT ve CPM için "aynı işi yapıyorlar" dedi. İkisi de kritik yolu bulur. Fark şudur: PERT belirsiz süreler için üç tahminle çalışır, CPM süreleri kesin kabul eder.
 - COCOMO örneğindeki formülde slaytta üsler normal yazılmış. Hoca 1,20 değerinin üs olduğunu belirtti.
 
-**Not:** İsterseniz bu kayıtları NotebookLM gibi bir araca atıp daha istifadeli hale getirebilirsiniz.
+**Not:** İsterseniz bu kayıtları Gemini Notebook gibi bir araca atıp daha istifadeli hale getirebilirsiniz.

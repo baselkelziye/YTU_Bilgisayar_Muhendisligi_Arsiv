@@ -384,4 +384,4 @@ Bu derste döngülerle iki problem çözüldü. Armstrong sayılarında adım sa
 
 Dersin ikinci yarısında sabit, değişken ve dizi ayrımı yapıldı. Dizi aynı tipte birçok değeri bellekte arka arkaya saklar, indisi C'de 0'dan, akış diyagramlarında 1'den başlar. Algoritma 8'de okuma, toplama ve kontrol döngüleriyle dizinin ilk kullanımı görüldü. 365 günlük sıcaklık alıştırması ise ilk elemanla başlayan maksimum ve minimum bulma fikrini getirdi. Hoca sonraki derste dizilerle ilgili çok daha fazla ve daha ayrıntılı örnek çözüleceğini söyledi.
 
-**Not:** İsterseniz bu kayıtları NotebookLM gibi bir araca atıp daha istifadeli hale getirebilirsiniz.
+**Not:** İsterseniz bu kayıtları Gemini Notebook gibi bir araca atıp daha istifadeli hale getirebilirsiniz.

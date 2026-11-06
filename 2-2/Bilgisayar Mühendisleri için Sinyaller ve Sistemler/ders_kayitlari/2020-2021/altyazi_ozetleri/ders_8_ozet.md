@@ -221,4 +221,4 @@ subplot(4,1,4); plot(t, y + y1 + y2 + y3)
 - **MATLAB'de kosinüs çizimi:** Derste $10\cos(2\pi\,100\,t)$ adım 0.1 ile çizilince düzensiz göründü ve hoca sebebi bulamadı. Muhtemel sebep örnekleme aralığıdır. 100 Hz için $T_s = 0.1$ s çok büyüktür (Nyquist için $T_s < 0.005$ s gerekir). Bu durumda örtüşme (aliasing) olur ve sinüzoid doğru görünmez.
 - Sayısal sonuçlar Python ile doğrulandı. Bunlar: $[1,1,1]*[1,1] = [1,2,2,1]$, kare dalga $c_k$ değerleri ($c_1 = -j/\pi \approx -0.318j$, $c_2 = 0$, $c_3 \approx -0.106j$), $\sin^3$ katsayıları, yarım dalga katsayıları ve EBOB(648, 672) = 24.
 
-**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi daha verimli çalışabilirsiniz.
+**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi daha verimli çalışabilirsiniz.

@@ -135,4 +135,4 @@
 - **Alerjik toz örneği:** Slayttaki örnekler arasında cam yünü de sayıldı. Cam yünü organik bir toz değildir. Daha çok deri ve solunum yolu tahrişi yapan yapay mineral liftir.
 - **Silikozis:** Altyazıda "silistoz" geçiyor. Doğrusu: silikozis, kristal silika (kuvars) tozunun akciğerde birikmesiyle oluşur.
 
-**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

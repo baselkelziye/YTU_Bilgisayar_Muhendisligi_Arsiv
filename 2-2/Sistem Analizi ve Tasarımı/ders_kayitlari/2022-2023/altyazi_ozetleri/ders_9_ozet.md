@@ -210,4 +210,4 @@ Bir öğrenci rapor için şablon veya örnek istedi. Hoca örnek vermeyeceğini
 - **"2024'ten beri":** Hoca ilişki özniteliği örneğinde başka bölüme geçişi varsayımsal olarak "2024'ten beri" diye anlattı. Ders 2023'te kaydedildi. Bu yalnız bir örnek.
 - **Ortalama:** Vize ortalaması (82) bir öğrencinin OBS'den gördüğü değerdir. Hoca doğrulamadı.
 
-**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi daha verimli çalışabilirsiniz.
+**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi daha verimli çalışabilirsiniz.

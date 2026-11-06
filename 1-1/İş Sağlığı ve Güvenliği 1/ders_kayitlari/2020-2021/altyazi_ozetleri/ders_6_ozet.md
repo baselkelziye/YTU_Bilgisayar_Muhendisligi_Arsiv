@@ -109,4 +109,4 @@
 - **Bakanlığın adı:** Sunumda "Çalışma ve Sosyal Güvenlik Bakanlığı" dendi. Ders tarihinde (Kasım 2020) bakanlığın adı Aile, Çalışma ve Sosyal Hizmetler Bakanlığı idi. 2021'de yeniden Çalışma ve Sosyal Güvenlik Bakanlığı oldu.
 - **Kaynak gösterilmeyen sayılar:** Sunumlarda geçen bazı istatistikler (müfettiş başına işçi sayısı, uzman/hekim bulunduran işletme sayıları, AB ülkelerindeki kaza artış oranları, esnek çalışma oranları) doğrulanamadı. Bunları kesin bilgi olarak ezberlemeyin.
 
-* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

@@ -39,4 +39,4 @@
 - Divisive yöntem ters yönde çalışır. Başlangıçta tüm veri tek kümedir ve sonra alt gruplara ayrılır. Bu yaklaşım teorik olarak anlamlı olsa da hangi ayrımın yapılacağını belirlemek daha zor olduğu için agglomerative yaklaşım daha uygulanabilir görülür.
 - Linkage seçimi sonuç üzerinde doğrudan etkilidir. Single linkage zincirleme etki yaratabilir; complete linkage daha sıkı kümeler üretme eğilimindedir; average linkage iki uç yaklaşım arasında denge sağlar.
 
-* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

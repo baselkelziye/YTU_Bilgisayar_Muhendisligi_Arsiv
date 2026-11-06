@@ -127,4 +127,4 @@ double pv3(double x, int y){        /* temp olmadan */
 - **`temp`'li hızlı üs alma ve çağrı sayısı:** $\log_2 n$ derinlik doğrudur. Tam çağrı sayısı $\lfloor \log_2 n \rfloor + 2$'dir ($y = 0$'a kadar inildiği için). Mertebe değişmez.
 - **Özyineleme ve sıralama:** $n \log n$ sıralamaları mümkün kılan özyinelemenin kendisi değil, problemi eşit parçalara bölme fikridir. Merge sort iteratif olarak da (aşağıdan yukarıya, bottom-up) yazılabilir ve yine $n \log n$'dir.
 
-* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

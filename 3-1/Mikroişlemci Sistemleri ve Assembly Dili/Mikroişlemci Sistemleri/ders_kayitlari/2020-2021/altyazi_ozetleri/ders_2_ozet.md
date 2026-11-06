@@ -55,4 +55,4 @@
 **Kesme (Interrupt) Sistemi:**
 8086'da iki tür kesme giriş pin'i bulunur. INTR pini programlanabilir kesme girişidir; Interrupt Enable Flag (IF) bayrağı 1 olduğunda bu pin üzerinden gelen kesme istekleri kabul edilir, 0 olduğunda göz ardı edilir. NMI (Non-Maskable Interrupt) pini ise maskelenemez kesme girişidir; IF durumuna bakılmaksızın her zaman etkindir ve kritik sistem olaylarında (güç kesintisi, donanım hatası gibi) kullanılır. Bir kesme oluştuğunda mikroişlemci mevcut işlemi durdurur, kesme vektör tablosundan ilgili kesme hizmet rutininin adresini alır ve o adrese dallanır.
 
-* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

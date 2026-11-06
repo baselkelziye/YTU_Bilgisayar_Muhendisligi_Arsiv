@@ -244,4 +244,4 @@ $$P(y = 0 \mid x, v) = 1 - P(y = 1 \mid x, v)$$
 - **TÜBİTAK:** hocanın hakemlik yaptığı programlar altyazıda "TÜBİTAK-TEDEF" diye geçiyor. Büyük olasılıkla TÜBİTAK TEYDEB (sanayi Ar-Ge projeleri) kastediliyor.
 - Ders 10:00 civarında başladı. 10:40'ta 15 dakika ara verildi. Ders 11:35 civarında bitti.
 
-NotebookLM gibi bir araca altyazı dosyasını yükleyerek bu ders hakkında daha ayrıntılı soru-cevap yapabilirsiniz.
+Gemini Notebook gibi bir araca altyazı dosyasını yükleyerek bu ders hakkında daha ayrıntılı soru-cevap yapabilirsiniz.

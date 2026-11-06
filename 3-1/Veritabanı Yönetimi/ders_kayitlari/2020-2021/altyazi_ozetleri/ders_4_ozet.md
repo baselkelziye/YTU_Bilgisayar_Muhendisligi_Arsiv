@@ -155,4 +155,4 @@ Yabancı anahtar, ER diyagramındaki bağıntıların ilişkisel modele taşınm
 
 İma bütünlük kısıtı ihlali durumunda sistem default olarak işlemi reddeder. Ancak SQL'de ON DELETE ve ON UPDATE ile farklı davranışlar tanımlanabilir: Cascade (zincirleme güncelleme/silme), Set NULL (NULL yap), Set Default (varsayılan değere ayarla). Hangi davranışın seçileceği, iş kurallarına ve küçük dünyanın gereksinimlerine bağlıdır.
 
-* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

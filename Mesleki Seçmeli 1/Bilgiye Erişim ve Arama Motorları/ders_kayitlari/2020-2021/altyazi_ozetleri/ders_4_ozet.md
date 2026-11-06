@@ -308,4 +308,4 @@ Algorithm k-means(k, D)
   - 00:58 civarındaki "bu kategori için" tekrarları ve 01:19–01:20 arasındaki "the biggest thing is that" tekrarları anlamsızdır.
   - "Naive-Payacin", "Biosyn" Naive Bayesian / Bayes; "bias computer" buys_computer; "divide and contour" divide and conquer; "ELBOV" elbow; "Suleid" silhouette; "K-Mins" k-means demektir.
 
-**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

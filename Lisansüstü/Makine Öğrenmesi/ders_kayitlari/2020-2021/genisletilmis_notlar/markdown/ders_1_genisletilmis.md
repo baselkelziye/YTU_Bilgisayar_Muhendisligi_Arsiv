@@ -515,4 +515,4 @@ Bu derste makine öğrenmesinin neden gerektiği, kural tabanlı sistemlerin sı
 
 Dersin ikinci yarısında bir öğrenme sisteminin uçtan uca adımları ele alındı: problemi anlama ve yöntem seçme, verinin toplanabilir olduğundan emin olma, örnek çeşitliliği ve ana senaryolar, verinin eğitim-doğrulama-test olarak bölünmesi, eksik veri, dengesiz sınıflar, veri tipleri, ön işleme, normalizasyon, varsayımlar, özellik seçimi ve hata ölçütünün probleme göre seçimi. Hoca bu konuların çoğunun (mesafe ölçüleri, veri bölme yöntemleri, model seçimi ve başarı ölçütleri, yapay sinir ağları, destek vektör makineleri ve derin öğrenme) ilerleyen derslerde ayrıntılı işleneceğini belirtti.
 
-**Not:** İsterseniz bu kayıtları NotebookLM gibi bir araca atıp daha istifadeli hale getirebilirsiniz.
+**Not:** İsterseniz bu kayıtları Gemini Notebook gibi bir araca atıp daha istifadeli hale getirebilirsiniz.

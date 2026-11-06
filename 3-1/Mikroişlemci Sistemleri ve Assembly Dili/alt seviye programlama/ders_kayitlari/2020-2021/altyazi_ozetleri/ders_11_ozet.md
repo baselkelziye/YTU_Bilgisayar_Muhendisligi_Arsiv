@@ -28,4 +28,4 @@
 
 Alt programlara parametre aktarımı üç temel yöntemle yapılır: registerlar üzerinden (hızlı ama sınırlı sayıda), ortak bellek alanları (global değişkenler) üzerinden (modülerliği azaltır) ve stack (yığın) üzerinden (güvenli ve sınırsız). Stack üzerinden parametre aktarımında, çağıran program parametreleri sırayla stack'e push eder ve ardından CALL komutunu çalıştırır. Yordam içinde, parametrelere ve lokal değişkenlere erişmek için BP (Base Pointer) register'ı kullanılır. BP değeri stack frame'in taban noktası olarak belirlenir (MOV BP, SP ile). Yordam sonlandığında stack'in temizlenmesi gerekir. Bu temizlik, çağıran program tarafından (ADD SP, X ile) veya yordamın kendisi tarafından (RET X komutuyla) gerçekleştirilir.
 
-* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

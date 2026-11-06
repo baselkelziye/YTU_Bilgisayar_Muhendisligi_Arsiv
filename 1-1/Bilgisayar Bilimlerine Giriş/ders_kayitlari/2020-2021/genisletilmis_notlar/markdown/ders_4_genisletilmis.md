@@ -423,4 +423,4 @@ Ders, CPU'nun kontrol birimi ve ALU'dan oluşan yapısıyla başladı, GPU'nun n
 
 Dersin ikinci yarısı bilgisayar organizasyonuna ayrıldı. Donanımın üzerinde makine dili, işletim sistemi, sistem yazılımları ve uygulama yazılımları yer alır. İşlemciler RISC ya da CISC komut setleriyle çalışır. Programlama dilleri makine kodundan assembly'ye, oradan yöntemsel dillere doğru insana yaklaşır; bunun karşılığında iyi bir çevirici ihtiyacı doğar. Kalan slaytlardan sonra sıradaki konu verinin nasıl saklandığıdır: hangi tiplerin kullanıldığı, tam sayıların, kesirli sayıların ve harflerin bilgisayarda nasıl tutulduğu konuşulacak, boyutların üzerinden de bir kez daha geçilecektir.
 
-**Not:** İsterseniz bu kayıtları NotebookLM gibi bir araca atıp daha istifadeli hale getirebilirsiniz.
+**Not:** İsterseniz bu kayıtları Gemini Notebook gibi bir araca atıp daha istifadeli hale getirebilirsiniz.

@@ -33,4 +33,4 @@
 - Hoca bu kayıtta Türkçe konuşuyor. Altyazı İngilizce ayarla üretildiği için ilk cümle dışındaki satırlar Türkçe konuşmanın bozuk İngilizce çevirisidir ("I'm going to ask you a question" gibi). Bu satırları birebir alıntı olarak kullanmayın.
 - Bu kayıttan çalışılacak bir konu çıkmaz.
 
-* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilirsiniz. Bu şubenin dersleri İngilizce anlatılmıştır; bu kayıttaki kısa konuşma ise Türkçedir.
+* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilirsiniz. Bu şubenin dersleri İngilizce anlatılmıştır; bu kayıttaki kısa konuşma ise Türkçedir.

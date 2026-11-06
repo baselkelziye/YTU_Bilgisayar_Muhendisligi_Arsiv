@@ -112,4 +112,4 @@ Bellekler elektrik kesildiğinde bilgiyi koruyup korumamalarına göre ayrılır
 
 Son olarak şifreleme örneği üzerinden yazılım ve donanım çözümleri karşılaştırılır. Şifreleme bir CPU/GPU üzerinde yazılımla yapılabileceği gibi, bankalarda kullanılan HSM gibi yalnızca bu iş için tasarlanmış özel donanımlarla da yapılabilir. Özel donanım standart bir mimari kullanmadığı için hem daha güvenli hem de daha hızlıdır. iOS ile Android karşılaştırması bu ilkeyi gösterir: belirli donanımlar için yazılan iOS, çok farklı donanımlarda çalışması gereken Android'e göre daha düşük donanımla benzer performans verebilir. Sonuç olarak, mümkünse bir iş için özel donanım kullanmak işi hızlandırır ve daha güvenli bir çözüm sağlar.
 
-* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

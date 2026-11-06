@@ -115,4 +115,4 @@ if koşul yapıları detaylı açıklanır. `if [ koşul ]; then ... elif [ koş
 
 Döngüler (loops) shell'in güçlü özelliklerindendir. `for` döngüsü: `for i in 1 2 3 4 5; do echo $i; done` (1'den 5'e kadar yazdır). `for i in {1..5}` range sözdizimi daha okunabilir. `{1..10..2}` step sözdizimi (2'şer artarak). `while` döngüsü koşul doğru olduğu sürece tekrarlanır. `until` koşul yanlış olduğu sürece tekrarlanır. `for dosya in $(ls); do ... done` komut çıktısı üzerinde döngü kurar.
 
-* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

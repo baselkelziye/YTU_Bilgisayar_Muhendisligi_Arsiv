@@ -251,4 +251,4 @@ Bu yöntemle daha kaliteli sonuçlar elde edildiği gösterilmiştir.
 - Doğal dil sorusu alan arama motoru olarak anılan site Ask Jeeves (bugün Ask.com).
 - Altyazıda TF anlatımının bir kısmı (yaklaşık 01:54:30–01:55:15) bozuk. Formül slayttaki ve hocanın Türkçe tekrarındaki tanıma göre verildi.
 
-**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

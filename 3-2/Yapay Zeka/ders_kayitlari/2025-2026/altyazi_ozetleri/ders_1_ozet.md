@@ -149,4 +149,4 @@ Tarih: 19 Mart 2026 Perşembe. Ramazan Bayramı arifesinde online yapılan ders.
 - Gelecek hafta yerel arama (local search) algoritmaları işlenecek: doğadan esinlenen yöntemler, genetik algoritma, fonksiyonların minimum/maksimum noktalarını bulma.
 - Konuyu kitaptan (3. bölüm) tekrar edin. Labirentte BFS, DFS, UCS, best-first ve A*'ın hangi kareleri deneyeceği çalışma sorusu olarak verildi.
 
-**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

@@ -47,4 +47,4 @@
 - Veri madenciliği sınıflandırma, kümeleme, birliktelik kuralları, tahmin ve aykırı değer analizi gibi teknikleri içerebilir. CRM'de müşteri segmentasyonu, finans alanında risk tahmini, satışta kampanya hedefleme ve üretimde kalite problemi tahmini gibi örneklerde kullanılabilir.
 - İş zekası sistemleri, yönetim bilgi sistemleri ve karar destek sistemleriyle yakından ilişkilidir. Raporlar, grafikler, gösterge panoları ve etkileşimli analizler karar vericilerin bilgiyi daha hızlı yorumlamasını sağlar.
 
-* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

@@ -203,4 +203,4 @@ Ders, bilgi sistemi geliştirme sürecinin ilk iki aşamasını anlatır: ön in
 - **Varsayılan çalışma saatleri:** Altyazıda "13-15" diye geçiyor. MS Project'in varsayılanı 08:00-12:00 ve 13:00-17:00'dir.
 - Dersin sonunda hoca asistana "Ercan Hoca" diye teşekkür ediyor gibi görünüyor; altyazı hatası, kastedilen Elçin Hoca.
 
-**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

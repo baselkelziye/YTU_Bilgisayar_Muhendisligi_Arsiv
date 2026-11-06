@@ -40,4 +40,4 @@
 - Evrimsel süreçte bazı bölgeler mutasyonlara daha toleranslıyken bazı bölgeler korunur. Korunan bölgelerin belirlenmesi, genin hangi kısmının kritik olduğunu anlamaya yardımcı olur. Bu bilgi kanser gibi hastalık durumlarında mutasyonların etkisini yorumlamak için de kullanılabilir.
 - Çoklu hizalama hesaplama açısından zordur; çünkü her yeni dizi, olası hizalama durumlarının sayısını artırır. Bu nedenle kullanılan yöntemler çoğu zaman optimal sonucu garanti etmez; ancak biyolojik olarak yeterince iyi ve hesaplama açısından uygulanabilir sonuçlar üretir.
 
-* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

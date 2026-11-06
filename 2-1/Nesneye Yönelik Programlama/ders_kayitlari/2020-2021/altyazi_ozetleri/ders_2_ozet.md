@@ -124,4 +124,4 @@ public class Kitap {
 - **Dosya adı kuralı:** Dosya adı ile aynı olma zorunluluğu `public` sınıflar içindir. Bir dosyada `public` olmayan başka sınıflar da olabilir.
 - **Döngü değişkeni:** Hoca C'de `for (int i = 0; ...)` yazmayın demişti. C99 ve sonrası bu yazımı destekler. Eski derleyici ayarlarında hata verebilir. Java'da her zaman geçerlidir.
 
-**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

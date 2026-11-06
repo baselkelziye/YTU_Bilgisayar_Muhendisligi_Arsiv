@@ -241,4 +241,4 @@
 - **Uzman çalıştırma yükümlülüğü:** 6331'in 6. maddesine göre işveren, İSG hizmetleri için iş güvenliği uzmanı ve işyeri hekimi görevlendirir. 50'den az çalışanı olan az tehlikeli işyerleri için yükümlülük birkaç kez ertelendi. Güncel durumu kontrol edin.
 - **Parmak çıtlatma:** Hoca bunun kişisel görüş olduğunu açıkça söyledi. Tıbbi bir öneri olarak alınmamalı.
 
-- **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+- **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

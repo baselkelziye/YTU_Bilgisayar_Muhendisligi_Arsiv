@@ -353,4 +353,4 @@ Bu derste yazılım proje yönetiminin üç bileşeni tanıtıldı: proje yönet
 
 Sonraki derste tam olarak konuya girilecek: Proje nedir? Neler projedir, neler değildir? Proje başarı faktörleri nelerdir, yani bir projeye başarılı demek için ne gerekir? Ardından proje yönetimi yol haritasının adımları tanıtılacak.
 
-**Not:** İsterseniz bu kayıtları NotebookLM gibi bir araca atıp daha istifadeli hale getirebilirsiniz.
+**Not:** İsterseniz bu kayıtları Gemini Notebook gibi bir araca atıp daha istifadeli hale getirebilirsiniz.

@@ -30,4 +30,4 @@
 - Sadeleşmiş ifade doğrudan standart AND-OR kapılarıyla kurulabileceği gibi NAND veya NOR gibi tek tip kapılarla da kurulabilir. Bu durumda De Morgan dönüşümleri devre gerçekleme aşamasında kullanılır.
 - Simülasyonda tüm giriş kombinasyonlarının denenmesi, hem Karnaugh sadeleştirmesinin hem de devre bağlantılarının doğru olduğunu gösterir.
 
-* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

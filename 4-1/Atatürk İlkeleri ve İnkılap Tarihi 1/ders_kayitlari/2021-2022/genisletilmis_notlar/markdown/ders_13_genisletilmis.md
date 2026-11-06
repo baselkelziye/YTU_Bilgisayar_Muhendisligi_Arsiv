@@ -485,4 +485,4 @@ Bu derste Birinci Dünya Savaşı'nın üç temel nedeni görüldü: emperyalist
 
 Cephelerde ana çizgi şuydu: Savaşın kaderi Marne ve siper savaşlarıyla 1914'te belirginleşti, uzayan savaş kaynakları geniş olan İtilaf'ın lehine döndü. Osmanlı; Galiçya, Kafkas ve Kanal'da ağır kayıp verdi, hocaya göre bunların bir kısmı Almanya'nın çıkarına hizmet etti. Çanakkale nadir bir başarı oldu, ama savaşın sonu Mondros Mütarekesi'ne çıktı. Hoca dersi Noel ateşkesi ve Atatürk'ün savaş sözü üzerinden kendi değerlendirmesiyle kapattı ve gelecek hafta Kurtuluş Savaşı'nın işleneceğini söyledi.
 
-**Not:** İsterseniz bu kayıtları NotebookLM gibi bir araca atıp daha istifadeli hale getirebilirsiniz.
+**Not:** İsterseniz bu kayıtları Gemini Notebook gibi bir araca atıp daha istifadeli hale getirebilirsiniz.

@@ -178,4 +178,4 @@ Hata bulma maliyeti süreç ilerledikçe artar, hata bulma olasılığı ise dü
 - **Eşdeğer bölümleme örneği.** Örnekteki aralıklar keyfî seçilmiş. Gerçekte bölümler spesifikasyondaki farklı davranışlara göre çıkarılır. Ayrıca geçersiz bölümler de test edilmelidir: 1'den küçük ve 100'den büyük değerler. Altyazıda 85 iki aralıkta birden geçiyor; aralıklar örtüşmemelidir.
 - **Döngü testinde "yuvarlanmış" döngü.** Altyazıda "iç içe yuvarlanmış" diye geçen ifade muhtemelen bitişik (concatenated) ya da yapısız (unstructured) döngüleri kastediyor. Standart sınıflama: basit, iç içe (nested), bitişik (concatenated) ve yapısız (unstructured) döngüler.
 
-**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

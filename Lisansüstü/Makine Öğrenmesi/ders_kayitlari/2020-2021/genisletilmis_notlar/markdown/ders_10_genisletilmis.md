@@ -365,4 +365,4 @@ Ardından hiyerarşik öbekleme anlatıldı. Birleştirici yöntem tek örnekli 
 
 > **Ders sonrası not:** Altyazıda bozuk geçen terimlerin doğru yazımları: "K-Minis/K-MİS/Kamiiz" = K-means, "öğret/öplik" = Öklid (Euclidean), "Manhattan Business" = Manhattan distance, "elbol/evrol" = elbow, "eglomeratif/agnomeratif" = agglomerative, "devizli" = divisive, "complete linkage by the snaver" = complete linkage (farthest neighbor), "Gözler, mixture" = Gaussian mixture, "çördü analizi" = churn analizi, "TEDEB" = TEYDEB, "Yerinde AGE Merkezi" = Ar-Ge merkezi, "multivir perceptron" = multilayer perceptron, "yapay neuronaları" = yapay sinir ağları.
 
-**Not:** İsterseniz bu kayıtları NotebookLM gibi bir araca atıp daha istifadeli hale getirebilirsiniz.
+**Not:** İsterseniz bu kayıtları Gemini Notebook gibi bir araca atıp daha istifadeli hale getirebilirsiniz.

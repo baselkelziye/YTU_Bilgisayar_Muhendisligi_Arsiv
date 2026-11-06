@@ -167,4 +167,4 @@
 - **Kısa sınavın başlangıç koşulu:** Anahtar ve $5$ V kaynağı, $L$'nin sağ ucundaki ($R$ ile ortak) düğüme bağlı. Bu yüzden $t < 0$'da $R$ doğrudan $5$ V'a bağlıdır. $C$ açık devre olduğundan $L$ kolundan akım akmaz. $i_L(0^-) = 0$ cevabı doğrudur. Çözümler Python ile de doğrulandı (diferansiyel denklem ve başlangıç koşulları sağlanıyor).
 - **Örnek 54 ve 56'nın kontrolü:** Örnek 54 için $\mathbf{V}_1 = 4.472\angle 63.43°$ V, $\mathbf{I} = 0.8944\angle -26.57°$ A. Örnek 56 için $\mathbf{I}_a = 0.2828\angle 75°$ A, $\mathbf{V}_{OC} = 7.071\angle -15°$ V, $\mathbf{I}_{SC} = 0.1060\angle -2.01°$ A. Slayttaki değerler doğrudur.
 
-* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

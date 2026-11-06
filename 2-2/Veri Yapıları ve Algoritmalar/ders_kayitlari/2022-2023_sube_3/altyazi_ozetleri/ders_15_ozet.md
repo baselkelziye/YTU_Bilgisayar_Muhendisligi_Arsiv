@@ -245,4 +245,4 @@ Girdi: $n$ elemanlı, tekrarsız, sırasız bir dizi ve $k \le n$.
 - **Hoca max heap çözümünü anlatırken** "minimum 4 elemanı tut" dedi. Burada 4 yalnız örnekteki $k$ değeridir; genel hâli "en küçük $k$ eleman"dır.
 - **`extract_max` kodu:** Slayttaki sürüm heap boşken kontrol yapmıyor. Gerçek kodda `heap_size < 1` ise hata döndürülmelidir.
 
-**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

@@ -793,4 +793,4 @@ Metin sınıflandırma tarafında ise izlenecek yol şöyle özetlenebilir: doğ
 
 > **Ders sonrası not:** Altyazıda bozuk geçen terimlerin doğruları: "SIBO/Sibov" = CBOW, "hatvan/van hat" = one-hot, "Mikalov" = Mikolov, "Glow/Globe" = GloVe, "Ludus" = Loodos, "Rapper/röper" = wrapper, "Vega" = Weka, "K-MINS/Kamins" = k-means, "Rolter/Reuter" = Reuters, "ModUp/mod apte" = ModApte, "Nayibayes" = Naive Bayes, "Advanced smoothing" = add-one smoothing, "AFI" = AFE, "Alberto, Roberto" = ALBERT, RoBERTa.
 
-**Not:** İsterseniz bu kayıtları NotebookLM gibi bir araca atıp daha istifadeli hale getirebilirsiniz.
+**Not:** İsterseniz bu kayıtları Gemini Notebook gibi bir araca atıp daha istifadeli hale getirebilirsiniz.

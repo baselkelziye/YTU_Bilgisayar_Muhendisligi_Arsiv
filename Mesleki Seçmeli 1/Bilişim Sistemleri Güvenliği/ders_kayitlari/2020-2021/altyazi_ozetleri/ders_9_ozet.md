@@ -38,4 +38,4 @@
 - TCP, uygulamaya kesintisiz byte akışı sunar; alıcı bir seferde bir byte, yüz byte veya bin byte okuyabilir. Bu nedenle uygulama protokolleri kendi mesaj sınırlarını doğru tanımlamalıdır. UDP ise hızlı ve düşük maliyetlidir; fakat kayıp, tekrar veya sıra bozulması uygulama tarafından ele alınmalıdır.
 - DNS, kullanıcıların alan adıyla hizmetlere ulaşmasını sağlar. Ancak DNS cevabı yanlışsa kullanıcı doğru alan adını yazmış olsa bile yanlış IP'ye gidebilir. Bu nedenle DNS güvenliği, ağ tabanlı saldırıların anlaşılmasında merkezi öneme sahiptir.
 
-* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

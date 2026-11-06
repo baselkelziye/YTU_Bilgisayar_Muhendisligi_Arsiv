@@ -218,4 +218,4 @@ public class Person {
 - Altyazıdaki "Avesiz/Abisis" Avesis, "NetBeast" NetBeans, "InterC" IntelliJ, "Bulobna/Bolugna" Bologna, "palaces" Avesis sayfası demektir.
 - 02:33 civarında altyazıda "Aziz Sancar'a bir soru... İntroduğum" gibi tekrar eden satırlar var. Bu kısım sequence diagram'ın okunmasıdır; altyazı bozuktur.
 
-* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

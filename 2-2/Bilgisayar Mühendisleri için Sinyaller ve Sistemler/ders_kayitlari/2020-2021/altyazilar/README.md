@@ -28,4 +28,4 @@ Dersler 4 Ağustos 2021 Çarşamba günü başlamıştır. Ders haftada iki gün
 
 - Bu şubenin bütün ders kayıtları mevcuttur.
 
-**Not:** İsterseniz bu kayıtları NotebookLM gibi bir araca atıp daha istifadeli hale getirebilirsiniz.
+**Not:** İsterseniz bu kayıtları Gemini Notebook gibi bir araca atıp daha istifadeli hale getirebilirsiniz.

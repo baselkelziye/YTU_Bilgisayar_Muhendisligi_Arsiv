@@ -80,4 +80,4 @@ Ders sonrasında Python ile kontrol edildi:
 - **Ortanca için sıralama:** 9 elemanın ortancası için bütün diziyi sıralamak gerekmez. Ortadaki elemana kadar bir seçme sıralaması (selection sort) yeterlidir: 5 tur yeterli olur. Büyük pencerelerde bu fark hız kazandırır.
 - **Küçültmede örtüşme (aliasing):** Her iki pikselden birini atmak, ince desenli bölgelerde titreşimli (moiré) görüntülere yol açabilir. Daha düzgün küçültme için önce 2 × 2'lik bloğun ortalaması alınır.
 
-* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

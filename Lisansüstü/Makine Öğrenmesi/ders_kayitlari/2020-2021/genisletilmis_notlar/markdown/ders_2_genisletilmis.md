@@ -685,4 +685,4 @@ Bu derste eğitmenli öğrenmenin temel yapısı kuruldu: Etiketli bir veri küm
 
 > **Ders sonrası not:** Altyazıda "Ayata" diye geçen kurum IATA'dır (Uluslararası Hava Taşımacılığı Birliği).
 
-**Not:** İsterseniz bu kayıtları NotebookLM gibi bir araca atıp daha istifadeli hale getirebilirsiniz.
+**Not:** İsterseniz bu kayıtları Gemini Notebook gibi bir araca atıp daha istifadeli hale getirebilirsiniz.

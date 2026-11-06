@@ -162,4 +162,4 @@
 - 00:38:01, 00:51:33 ve 01:33:58 civarında altyazı döngüye giriyor. Bu kısımlar altyazıda anlaşılmıyor. Sonraki cümlelerden anlatılan yer kurulabildi.
 - 00:58:44 ile 01:10:26 arası ara verilmiş.
 
-**Not:** İsterseniz bu kayıtları NotebookLM gibi bir araca atıp daha istifadeli hale getirebilirsiniz.
+**Not:** İsterseniz bu kayıtları Gemini Notebook gibi bir araca atıp daha istifadeli hale getirebilirsiniz.

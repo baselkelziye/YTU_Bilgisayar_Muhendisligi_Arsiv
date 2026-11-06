@@ -272,4 +272,4 @@ $$\lim_{x\to c}f(x)=\lim_{x\to c}\frac{f(x)}{g(x)}\cdot g(x)=L\cdot 0=0$$
 
 ---
 
-İsterseniz bu özeti NotebookLM gibi bir araca atıp daha istifadeli hale getirebilirsiniz.
+İsterseniz bu özeti Gemini Notebook gibi bir araca atıp daha istifadeli hale getirebilirsiniz.

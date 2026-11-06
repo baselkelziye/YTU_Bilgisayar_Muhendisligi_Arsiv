@@ -256,4 +256,4 @@ public class TestCustomException {
 - **Hoca birden fazla `catch` için "özelden genele yazmak gerekiyor diye biliyorum" dedi.** Bu doğrudur ve yukarıdaki derleme hatasıyla doğrulandı.
 - **`retainAll` örneği:** `[1, 2, 3, 4]` listesinde `retainAll([2, 3])` sonucu `[2, 3]` olur. `put` örneği: Boş haritada `put("k","v1")` `null`, ardından `put("k","v2")` `"v1"` döndürür (Java ile doğrulandı).
 
-* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

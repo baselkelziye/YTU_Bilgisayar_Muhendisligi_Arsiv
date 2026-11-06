@@ -174,4 +174,4 @@
 - Altyazıdaki bozuk adlar: "Appure", "Appiori", "Apiary", "Epriori" doğrusu Apriori; "Secure Pattern Mining" doğrusu Sequential Pattern Mining; "Candidate Jam/Chain" doğrusu candidate-gen; "Absel" doğrusu up-sell; "Veka" doğrusu Weka.
 - Hoca algoritmanın en fazla elemanlı sık kümeyi bulup kuralları ondan çıkardığını söyledi. Kurallar büyük olasılıkla bütün sık kümelerden üretilir. Yalnız en büyük kümeden yazılırsa daha küçük bir sık kümenin kuralları kaçar.
 
-**Not:** İsterseniz bu kayıtları NotebookLM gibi bir araca atıp daha istifadeli hale getirebilirsiniz.
+**Not:** İsterseniz bu kayıtları Gemini Notebook gibi bir araca atıp daha istifadeli hale getirebilirsiniz.

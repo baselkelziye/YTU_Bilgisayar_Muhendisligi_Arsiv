@@ -93,4 +93,4 @@ Direct vs Indirect Communication karşılaştırması yapılır. Direct communic
 
 Mailbox (Posta Kutusu) modeli detaylı açıklanır. Mailbox bir kuyruktur; mesajlar mailbox'a bırakılır, alıcı mailbox'tan alır. Mailbox'ın kapasitesi, öncelik yönetimi, mesaj sıralaması gibi tasarım kararları vardır. Kapasite sıfır ise "randevu" modeli uygulanır: gönderici ve alıcı aynı anda hazır olmalıdır. Kapasite sınırlı ise belirli sayıda mesaj kuyrukta bekleyebilir.
 
-* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

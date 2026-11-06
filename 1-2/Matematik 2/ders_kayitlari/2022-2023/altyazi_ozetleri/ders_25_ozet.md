@@ -292,4 +292,4 @@ $$\int_0^{1/2}\frac{\ln(1-x)}{x}dx=-\left(\frac12+\frac{1}{2^2\cdot4}+\frac{1}{3
 - Alan sorularında derste yalnız integraller kuruldu. Bu özetteki sayısal değerleri ben hesapladım.
 - 00:32-00:45 ve 01:14-01:24 arasında mola var.
 
-İsterseniz bu kayıtları NotebookLM gibi bir araca atıp daha istifadeli hale getirebilirsiniz.
+İsterseniz bu kayıtları Gemini Notebook gibi bir araca atıp daha istifadeli hale getirebilirsiniz.

@@ -217,4 +217,4 @@ $$G = \beta A + (1-\beta)\frac{1}{N}\, e\, e^T$$
 - Google matrisinde $\beta$ için hocanın verdiği değer 0,8. PageRank'in özgün makalesinde sönüm katsayısı (damping factor) genelde 0,85 alınır.
 - Hoca stokastik matrisi bu derste sütun toplamı 1 olacak biçimde kurar (sütun = bağlantı veren). Önceki derslerdeki komşuluk matrisinde satırlar bağlantı verendi. Gösterim farkına dikkat.
 
-**Not:** İsterseniz bu kayıtları NotebookLM gibi bir araca atıp daha istifadeli hale getirebilirsiniz.
+**Not:** İsterseniz bu kayıtları Gemini Notebook gibi bir araca atıp daha istifadeli hale getirebilirsiniz.

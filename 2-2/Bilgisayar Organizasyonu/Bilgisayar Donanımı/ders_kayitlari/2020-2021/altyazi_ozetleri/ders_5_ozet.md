@@ -217,4 +217,4 @@
 - **"Pardon 4 milyon byte" ifadesi:** IBM 360 örneğinde 16 M bayt, 32 bitlik kelimelerle $4\text{M} \times 32$ bit olarak yazılır. Kelime sayısı 4 M'dir, bayt sayısı yine 16 M'dir.
 - **PAL örneği:** $Z$'nin kalan iki terimi altyazıda karışık okunuyor. Kitaptaki örnekle uyumlu biçimi: $Z = ABC' + A'B'CD' + AC'D' + A'B'C'D = W + AC'D' + A'B'C'D$.
 
-**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

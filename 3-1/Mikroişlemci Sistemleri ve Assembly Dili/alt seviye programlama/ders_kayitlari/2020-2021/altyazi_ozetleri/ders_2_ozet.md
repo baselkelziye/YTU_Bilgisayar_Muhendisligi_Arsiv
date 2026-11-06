@@ -28,4 +28,4 @@
 
 8086 işlemcisi 20-bitlik adres hattına (1 MB adres uzayı) sahip olmasına rağmen registerları 16-bittir. Bu nedenle 1 MB'lık fiziksel belleğe erişebilmek için segmentasyon tekniği kullanılır. Fiziksel Adres = (Segment * 16) + Offset (veya Segment << 4 + Offset) formülüyle hesaplanır. Bellekte veri tanımlamak için DB (Define Byte - 8 bit) ve DW (Define Word - 16 bit) direktifleri kullanılır. Değişken tanımlamalarında isimlerin rakamla başlayamaması, büyük/küçük harf duyarlılığı (derleyiciye bağlı) ve hexadecimal değerlerde harfle başlayan sayıların başına sıfır (0) konulması zorunluluğu gibi kurallar mevcuttur. Örneğin, 0AH yazılmazsa derleyici bunu AH register'ı veya bir değişken adı olarak algılayıp hata verecektir.
 
-* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

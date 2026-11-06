@@ -36,4 +36,4 @@
 - Çıkarıcı devrelerde fark biti, girişlerin farklılığına bağlıdır; borç biti ise çıkarılan değerin mevcut bitten büyük olduğu durumları temsil eder. Bu nedenle borç fonksiyonu ayrı analiz edilmelidir.
 - Decoder ve multiplexer gibi bloklar, yalnızca belirli bir iş yapan elemanlar değil, genel Boolean fonksiyonları gerçekleştirmek için de kullanılabilen yapı taşlarıdır.
 
-* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

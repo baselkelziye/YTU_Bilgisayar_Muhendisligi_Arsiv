@@ -283,4 +283,4 @@ QuickSort(A[l..r])        // ilk çağrı: l = 0, r = n-1
 - Merge sort'un "her zaman $O(n \log n)$" olması, klasik yukarıdan aşağı (top-down) sürümü içindir. Ek bellek ihtiyacı $O(n)$'dir.
 - Altyazıda Whisper bazı terimleri bozmuştur: "nörd sort / mörç / WordSort" = merge sort, "Divayden konkur / Tüvalden konkur" = divide and conquer, "Digrizen Komupuru" = decrease and conquer, "off comes razor" = Occam's razor.
 
-**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

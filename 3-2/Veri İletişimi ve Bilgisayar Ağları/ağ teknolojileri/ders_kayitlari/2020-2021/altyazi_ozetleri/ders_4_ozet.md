@@ -70,4 +70,4 @@ CBR, VBR, ABR kavramları ATM'den gelir. Günümüzdeki uygulamalar bu kategoril
 
 Noisy neighbor kavramı modern ağlarda özellikle bulut bilişim ve veri merkezlerinde önemlidir. Bir uygulama, diğerlerinin kaynağını tüketirse, "komşu" etkisi yaratır. Aynı fiziksel linki veya router'ı paylaşan uygulamalar birbirlerini yavaşlatabilir. QoS, bu durumu uygulama tiplerini tanıyarak ve farklı politikalar uygulayarak çözmeye çalışır.
 
-* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

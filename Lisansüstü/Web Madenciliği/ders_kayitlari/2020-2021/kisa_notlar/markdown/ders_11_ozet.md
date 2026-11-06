@@ -241,4 +241,4 @@ $$P_P(i)=\frac{|I_i|/(n-1)}{\sum_{j \in I_i} d(j,i)\,/\,|I_i|}$$
 - Hoca 5. düğümün satırını okurken "A11 ve A12 değerleri 1" dedi. Doğrusu $A_{51}=A_{52}=1$ olmalıdır, çünkü okunan satır 5. satırdır.
 - Hoca anlatımda yalnız "yol" ve "path sayısı" der. Bu nottaki "en kısa yol" ifadesi altyazıda geçmez. Sayılan yollar büyük olasılıkla ders kitabındaki gibi en kısa yollardır.
 
-**Not:** İsterseniz bu kayıtları NotebookLM gibi bir araca atıp daha istifadeli hale getirebilirsiniz.
+**Not:** İsterseniz bu kayıtları Gemini Notebook gibi bir araca atıp daha istifadeli hale getirebilirsiniz.

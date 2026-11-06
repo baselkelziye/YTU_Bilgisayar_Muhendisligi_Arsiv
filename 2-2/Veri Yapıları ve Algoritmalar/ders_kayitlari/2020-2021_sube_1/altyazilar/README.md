@@ -37,4 +37,4 @@ Dersler 8 Mart 2021 Pazartesi günü başlamıştır. Ders haftada iki gün (Paz
 - 10-14 Mayıs 2021 haftası için kayıt yoktur; hoca 5 Mayıs dersinde bu haftanın bayram tatili olduğunu duyurmuştur.
 - 19 Mayıs 2021 Çarşamba resmî tatildir.
 
-**Not:** İsterseniz bu kayıtları NotebookLM gibi bir araca atıp daha istifadeli hale getirebilirsiniz.
+**Not:** İsterseniz bu kayıtları Gemini Notebook gibi bir araca atıp daha istifadeli hale getirebilirsiniz.

@@ -28,4 +28,4 @@ Dersler 8 Ekim 2020 Perşembe günü başlamıştır. Dosya adlarındaki `ders_x
 - 4. hafta 29 Ekim Cumhuriyet Bayramı resmi tatili nedeniyle ders yapılmamış ve kayıt bulunmamaktadır.
 - 8. hafta vize haftası olduğu için kayıt bulunmamaktadır.
 
-**Not:** İsterseniz bu kayıtları NotebookLM gibi bir araca atıp daha istifadeli hale getirebilirsiniz.
+**Not:** İsterseniz bu kayıtları Gemini Notebook gibi bir araca atıp daha istifadeli hale getirebilirsiniz.

@@ -206,4 +206,4 @@
 - Diferansiyel denklem örneğinin katsayıları slayt karesinden alındı ($y'(0) = -5$). Çözüm $y(t) = -5e^{-t} + 5e^{-2t}$ başlangıç koşullarını sağlar (Python ile kontrol edildi).
 - Dikdörtgen örneğinin sonucu sayısal konvolüsyonla doğrulandı: $y(0.5) = 3$, $y(1.5) = 6$, $y(2.5) = 3$, $y(3.5) = 0$.
 
-**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi daha verimli çalışabilirsiniz.
+**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi daha verimli çalışabilirsiniz.

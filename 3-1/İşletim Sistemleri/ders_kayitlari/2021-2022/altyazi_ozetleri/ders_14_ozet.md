@@ -308,4 +308,4 @@ Amaç, yerel bir fonksiyon çağrısını dağıtık bir ortamda da aynı kolayl
 - **Port örnekleri:** Altyazıda "21-22" diye geçen yerde 21 FTP, 22 SSH'tır.
 - **Altyazı hataları:** "Mac" = Mach; "PostX" ve "COSIX" = POSIX; "LPC/ALPC" = Advanced Local Procedure Call; "dpc channel" = ALPC kanalı.
 
-**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

@@ -166,4 +166,4 @@
 - Altyazıdaki bazı bozuk yazımlar: "Requistia" = Reconquista, "Maria Todorovay" = Maria Todorova, "Averlos sırflısı" = Averof zırhlısı, "Zoharap Efendi" = Zohrab Efendi, "Safvifi" = Safevi, "Şiirler" = Şiiler, "Bas" = Bask, "Paks Osmanlı/Pax Osman'a" = Pax Ottomana, "bu şairin evlenmesinin yazarı" = *Şair Evlenmesi*'nin yazarı, "Adil Enerşiti, Minir Özkul" = Adile Naşit, Münir Özkul.
 - Hoca bu ders slaytlarının yüklenmesinin geciktiğini, geçen haftanın ve bu haftanın slaytlarını hafta sonuna kadar yükleyeceğini söylüyor.
 
-**Not:** İsterseniz bu kayıtları NotebookLM gibi bir araca atıp daha istifadeli hale getirebilirsiniz.
+**Not:** İsterseniz bu kayıtları Gemini Notebook gibi bir araca atıp daha istifadeli hale getirebilirsiniz.

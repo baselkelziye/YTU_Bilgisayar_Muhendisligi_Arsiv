@@ -205,4 +205,4 @@
 - $H(\frac{\pi}{2})$'nin genliği 1, fazı $-0.927$ rad ($=-2\tan^{-1}\frac12$) olarak doğrulandı.
 - $[1,1,1,\dots]$ ile $[1,-1,2,-1,1]$ konvolüsyonu Python ile doğrulandı: $[1,0,2,1,2,2,2]$.
 
-**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi daha verimli çalışabilirsiniz.
+**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi daha verimli çalışabilirsiniz.

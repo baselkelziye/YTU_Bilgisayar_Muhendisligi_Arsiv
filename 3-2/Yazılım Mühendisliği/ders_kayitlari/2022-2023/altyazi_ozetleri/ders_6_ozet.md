@@ -189,4 +189,4 @@ Ardışıl şema ve işbirliği şeması birlikte etkileşim şemaları olarak a
 - **Durum ile eylemin karıştırılmaması.** Durum şemasında kutular durumları (beklemede, ödeme bekleniyor) gösterir. Eylemler ise oklar üzerindeki olay ve eylem etiketleriyle gösterilir.
 - **"Ekspert kalıbı".** Altyazıda "ekspert kalıbı" diye geçen kalıbın İngilizce adı Information Expert'tir.
 
-**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

@@ -247,4 +247,4 @@ for p <- 2 to floor(sqrt(n)) do
 - Algoritma özelliklerinden "fitness" diye geçen terimin doğrusu sonluluk (finiteness)'tur.
 - Altyazıda "Hidmet H" diye geçen kütüphane `math.h`'tir. Rapor uzantısı `.pdf`'dir.
 
-**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

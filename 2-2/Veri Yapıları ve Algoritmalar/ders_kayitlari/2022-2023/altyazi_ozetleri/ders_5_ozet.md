@@ -347,4 +347,4 @@ head -> [5 | 1250] -> [7 | 1300] -> [8 | NULL]
 - **Hanoi Kuleleri:** $n$ disk için en az $2^n - 1$ hamle gerekir; 4 disk için bu 15 hamledir.
 - **Dizi toplamının iteratif hâli:** Fonksiyon `n - 1` ile çağrıldığı için döngü `i <= n` ile yazıldı. Fonksiyon eleman sayısıyla çağrılırsa döngü `i < n` olmalıdır.
 
-**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

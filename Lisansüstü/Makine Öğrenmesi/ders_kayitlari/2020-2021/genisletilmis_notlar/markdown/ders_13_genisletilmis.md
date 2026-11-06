@@ -553,4 +553,4 @@ Hoca bir sonraki derste işbirlikçi filtrelemeyi (collaborative filtering) anla
 
 > **Ders sonrası not:** Altyazıda bozuk geçen terimlerin doğru yazımları: "Füçür" = feature, "Nayibayez" = Naive Bayes, "İntegre Renk Koding" = integer encoding, "Huvan Hatay İnkoding / OneHot" = one-hot encoding, "having distance / Heming distance" = Hamming distance, "öklük distance / öklit distance" = Euclidean (Öklid) distance, "papyrus'in korelasyon" = Pearson korelasyonu, "key square / key-sucur" = chi-square (ki-kare), "A-Book / alt book" = Outlook, "reyni" = rainy, "orkest" = overcast, "Information Game" = information gain, "egzostif" = exhaustive, "Aygın / aygün" = eigen, "principal komponent analiz" = principal component analysis, "o tenkodur" = autoencoder, "communication on neural network" = convolutional neural network, "VEKA" = WEKA.
 
-**Not:** İsterseniz bu kayıtları NotebookLM gibi bir araca atıp daha istifadeli hale getirebilirsiniz.
+**Not:** İsterseniz bu kayıtları Gemini Notebook gibi bir araca atıp daha istifadeli hale getirebilirsiniz.

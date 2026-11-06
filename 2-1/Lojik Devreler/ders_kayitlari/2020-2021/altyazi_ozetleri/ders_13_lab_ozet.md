@@ -30,4 +30,4 @@
 - Register veya sayaç benzeri yapılarda devrenin doğru çalışması için saat ve kontrol girişleri kritik önemdedir. Her saat darbesinden sonra çıkışların beklenen duruma geçip geçmediği kontrol edilmelidir.
 - Karnaugh haritası, sıralı devrelerde flip-flop giriş fonksiyonlarının sadeleştirilmesinde kullanılır. Bu sayede daha az kapı ile aynı davranışı veren devreler kurulabilir.
 
-* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

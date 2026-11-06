@@ -526,4 +526,4 @@ Başarı ölçümünde karışıklık matrisi temeldir; çok sınıflı probleml
 
 > **Ders sonrası not:** Altyazıda "Occam-Schreizer" geçen ilke Occam'ın usturası (Occam's razor), "Generative Advisory Network" diye geçen yöntem Generative Adversarial Network (GAN), "ekürisi" diye geçen ölçü accuracy, "Limanat cross-validation" diye geçen yöntem leave-one-out cross-validation, "Pol Dağıt" diye geçen yöntem holdout, "Rikol" diye geçen ölçü recall, "ROCC" diye geçen kısaltma ROC'dir. "FutureBörg" ise makalelerin future work (gelecek çalışmalar) bölümüdür.
 
-**Not:** İsterseniz bu kayıtları NotebookLM gibi bir araca atıp daha istifadeli hale getirebilirsiniz.
+**Not:** İsterseniz bu kayıtları Gemini Notebook gibi bir araca atıp daha istifadeli hale getirebilirsiniz.

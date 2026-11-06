@@ -38,4 +38,4 @@
 
 Makine öğrenmesi, açık kurallar yazmak yerine verilerden örüntüler (patterns) ve ilişkiler öğrenen algoritmaların tasarımıyla ilgilenir. Temel olarak denetimli öğrenme (supervised learning), denetimsiz öğrenme (unsupervised learning) ve pekiştirmeli öğrenme (reinforcement learning) olmak üzere üç sınıfa ayrılır. Denetimli öğrenmede model, girdilerin ve bunlara karşılık gelen hedef etiketlerin (labels) bulunduğu bir veri kümesiyle eğitilir. Çıktı değişkeni sürekli/sayısal bir değer ise problem bir regresyon (regression), kategorik/sınıfsal bir değer ise bir sınıflandırma (classification) problemidir. Modelin başarısı, eğitim verisine aşırı uyum sağlamadan (overfitting) yeni ve görülmemiş verilere genelleme (generalization) yapabilme yeteneğiyle ölçülür.
 
-* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

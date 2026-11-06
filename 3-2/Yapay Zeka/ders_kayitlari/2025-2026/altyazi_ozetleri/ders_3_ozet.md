@@ -179,4 +179,4 @@ Tarih: 4 Haziran 2026 Perşembe. Online ders, dönemin son konu anlatımı. Sür
 - Projelerin son günü bu dersin günüydü. Projeler kısa sürede asistanlara iletilecek.
 - Etik slaytı daha sonra paylaşılacak. Önyargı araçları ve çevrim içi kurslar için slayttaki kaynaklar incelenebilir.
 
-**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

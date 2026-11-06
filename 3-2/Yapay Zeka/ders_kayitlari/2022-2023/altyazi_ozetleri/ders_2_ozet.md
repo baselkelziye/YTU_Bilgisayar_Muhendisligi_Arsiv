@@ -36,4 +36,4 @@
 
 Yapay zekanın gelişimi tarihsel olarak sembolik (symbolic) ve bağlantıcı (connectionist) yaklaşımların çekişmesi ve işbirliği ile şekillenmiştir. Sembolik yapay zeka mantıksal kurallar ve bilgi ağaçları üzerine kurulurken, bağlantıcı yaklaşım yapay sinir ağları ve makine öğrenmesi gibi veri tabanlı örüntü tanıma modellerini temel alır. Modern yapay zekanın merkezinde "Etmen" (Agent) kavramı bulunur. Bir etmen; ortamı algılayıcılar (sensors) vasıtasıyla okuyan, bu algıları işleyerek kararlar alan ve aktüatörler (actuators) aracılığıyla ortamda eylemler gerçekleştiren bir sistemdir. Etmen tasarımı yapılırken ortamın yapısı (tamamen/kısmen gözlemlenebilir, deterministik/stokastik, statik/dinamik, ayrık/sürekli vb.) kullanılacak algoritmayı doğrudan belirler.
 
-* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

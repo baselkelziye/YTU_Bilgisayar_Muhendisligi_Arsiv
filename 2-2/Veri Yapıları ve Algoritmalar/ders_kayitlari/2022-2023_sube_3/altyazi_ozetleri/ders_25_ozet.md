@@ -246,4 +246,4 @@ int horspool(char *text, char *pat, int table[]) {
 - Final sınavı online olacak. 2 ya da 3 oturum olabilir: bir oturum kısa cevaplı sorular, ayrıca 1-2 algoritma veya kodlama sorusu.
 - Proje, 19 Mayıs tatili ve hocanın hastalığı nedeniyle gecikti. En geç ertesi gün duyurulacak. Geç verildiği için beklentiler buna göre azaltılacak.
 
-**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

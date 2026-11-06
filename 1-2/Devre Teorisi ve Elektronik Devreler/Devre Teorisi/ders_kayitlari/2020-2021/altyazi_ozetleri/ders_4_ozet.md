@@ -204,4 +204,4 @@
 - **SCR:** Hoca slayttaki "SCR" kısaltmasını hatırlayamadı. Bu bağlamda SCR, silisyum kontrollü doğrultucudur (tristör), doğrusal olmayan bir yarı iletken elemandır. "Seçici katalitik indirgeme" anlamıyla ilgisi yoktur.
 - **Altyazıdaki hatalar:** "Super Machine" ifadesi "süper mesh", "Norton TV'nin" ifadesi "Norton, Thevenin", "Matlak" ifadesi "MATLAB", "online yıldız edi terden" ifadesi "online.yildiz.edu.tr'den" olarak okunmalıdır.
 
-* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

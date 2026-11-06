@@ -61,4 +61,4 @@ Hocalar, derste iki temel yaklaşımı vurgular: (1) Kavramların nereden geldi�
 
 Dersin sonunda yıl içi değerlendirme hakkında bilgi verilir: iki vize (büyük olasılıkla test şeklinde), ödevler, lab çalışmaları ve bir proje olacağı belirtilir. Derslere %80 devam zorunluluğu vardır. Tüm değerlendirme detayları ilerleyen haftalarda netleşecektir.
 
-* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

@@ -76,4 +76,4 @@ Scheduling kavramı ele alınır: CPU'yı hangi process'in ne zaman kullanacağ�
 
 Hocanın vurguladığı önemli bir nokta: Process ve thread kavramları sıklıkla karıştırılır. Process = programın çalışan hali; thread = process içindeki bağımsız akış. Bir process birden fazla thread barındırabilir; her thread aynı process'in kaynaklarını paylaşır.
 
-* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

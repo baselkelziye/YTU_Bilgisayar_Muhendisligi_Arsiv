@@ -247,4 +247,4 @@ Yapı diyagramı ön tasarımda modüllerin iç algoritmasını göstermez. Yaln
 - **Satın almada vergi avantajı:** Derste amortismanın "gelir vergisinden" düşüldüğü söylendi. Şirketlerde amortisman gider olarak yazılır ve vergi matrahını azaltır. Şirketin türüne göre bu kurumlar vergisi de olabilir.
 - Altyazıda bazı kelimeler bozuk geçiyor: "Hibrit", "DRV", "slide map", "gülümlü" (güdümlü), "A altyapısı" (ağ altyapısı), "sonucu" (sunucu). Özette doğru hâlleri kullanıldı. "DRV" ifadesinin hangi belgeyi kastettiği kayıttan anlaşılmıyor.
 
-**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi daha verimli çalışabilirsiniz.
+**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi daha verimli çalışabilirsiniz.

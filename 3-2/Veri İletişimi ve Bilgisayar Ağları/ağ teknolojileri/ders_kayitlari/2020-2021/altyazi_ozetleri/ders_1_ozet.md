@@ -47,4 +47,4 @@ Paket kavramı: Network açısından bakıldığında, "veri" paket adı verilen
 
 Connectionless vs Connection-oriented: TCP/IP dünyasında network katmanı connectionless'tır. Ancak her katmanda bu seçim yapılabilir. Örneğin, network katmanı connectionless olsa bile, üstündeki transport katmanında TCP kullanılarak connection-oriented servis sağlanabilir. Bu, katmanlı yapının esnekliğini gösterir.
 
-* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

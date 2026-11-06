@@ -35,4 +35,4 @@ Taylor serisi açılımı, sayısal analizin temel araçlarından biridir. Bir f
 
 Hassasiyet karşılaştırması örneğinde, farklı ölçüm araçlarıyla yapılan ölçümlerin bağ hatası üzerinden değerlendirilmesi gösterildi. Örneğin 100 kg ile tartımda 100 kg hata ve 0.01 gram ile tartımda 5 gram hata, her ikisi de %0.2 bağ hatası vermektedir; bu da her iki ölçümün de aynı hassasiyete sahip olduğunu gösterir.
 
-* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

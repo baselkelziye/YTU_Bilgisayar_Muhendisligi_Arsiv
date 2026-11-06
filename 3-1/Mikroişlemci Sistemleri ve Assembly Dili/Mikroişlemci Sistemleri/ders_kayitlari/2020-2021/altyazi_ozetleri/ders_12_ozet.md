@@ -86,4 +86,4 @@ Bir IR pinine kesme geldiğinde: (1) 8259 IRR (Interrupt Request Register) regis
 **Assembly'de Kesme Vektör Tablosuna Subroutine Yazma:**
 Kullanıcı tanımlı bir kesmenin (örneğin tip 40) vektör tablosundaki adresi hesaplanır: 40H × 4 = 100H. LEA komutu ile subroutine'in efektif adresi alınır. Extra segment (ES) 0 olarak ayarlanır (vektör tablosu 0. segmentte). Offset değeri [100H] adresine, CS değeri [102H] adresine yazılır. Böylece tip 40 kesmesi oluştuğunda CPU bu adresteki subroutine'e dallanır.
 
-* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

@@ -529,4 +529,4 @@ Bu derste II. Abdülhamid dönemi, hocanın "ne Kızıl Sultan ne Ulu Hakan" çe
 
 Bu kırılma Osmanlıcılığı bitirdi ve İttihad-ı İslam'ı resmî ideoloji yaptı. Hocaya göre bu politika dağılmayı yalnızca geciktirdi ve I. Dünya Savaşı onun da sonunu getirdi. Abdülhamid'in kendisi için hocanın vardığı değerlendirme ikilidir: Eğitim ve altyapıda modernleşmeyi hızlandırdığı için gerici değildi, ama otokrasi, sansür, jurnal ve liyakat yerine sadakat nedeniyle istibdat eleştirisi haklıydı. Sonraki bağlantı, Jön Türkler ve Makedonya sorunudur.
 
-**Not:** İsterseniz bu kayıtları NotebookLM gibi bir araca atıp daha istifadeli hale getirebilirsiniz.
+**Not:** İsterseniz bu kayıtları Gemini Notebook gibi bir araca atıp daha istifadeli hale getirebilirsiniz.

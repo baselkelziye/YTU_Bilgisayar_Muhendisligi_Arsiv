@@ -299,4 +299,4 @@ $$f(x) = \begin{cases} \dfrac{e^{ax} - 1}{x}, & x \neq 0 \\ 1, & x = 0 \end{case
 - **Örnek 1 (yarım çember):** Altyazıda "$f'(1)$, 0" geçiyor. Doğrusu $f'(1)$ yoktur (payda sıfır); $x = 1$ bu yüzden kritik noktadır.
 - Altyazıda birkaç kısa döngü ve anlaşılmayan yer var (ör. 00:32:44, 00:44:02, 02:39:44-02:41:09). Bu kısımlar altyazıda anlaşılmıyor; içerik ekran görüntüleri ve çevredeki anlatımdan tamamlandı.
 
-**Not:** İsterseniz bu kayıtları NotebookLM gibi bir araca atıp daha istifadeli hale getirebilirsiniz.
+**Not:** İsterseniz bu kayıtları Gemini Notebook gibi bir araca atıp daha istifadeli hale getirebilirsiniz.

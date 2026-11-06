@@ -202,4 +202,4 @@
 - Hoca length'in "unique" sayıldığını söyledi. Doğrusu büyük olasılıkla, aynı öğe farklı elemanlarda geçiyorsa her geçişin ayrı sayılmasıdır.
 - Hoca, PCA'nın etiketle ilişkisi düşük öz nitelikleri eleyen kısım olduğu sorusuna "evet" dedi. Doğrusu büyük olasılıkla şudur: PCA gözetimsizdir, etiketi kullanmaz.
 
-**Not:** İsterseniz bu kayıtları NotebookLM gibi bir araca atıp daha istifadeli hale getirebilirsiniz.
+**Not:** İsterseniz bu kayıtları Gemini Notebook gibi bir araca atıp daha istifadeli hale getirebilirsiniz.

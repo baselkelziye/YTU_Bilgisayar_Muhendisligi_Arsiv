@@ -239,4 +239,4 @@ $$\Delta w_{jk}(p) = \beta \, \Delta w_{jk}(p-1) + \alpha \, y_j(p)\, \delta_k(p
 - **Ders düzeni:** Ders 10:40 ve 11:55 civarında iki arayla yapıldı. Ekran paylaşımı birkaç kez koptu; kopmalar içerik kaybına yol açmadı. Gizli katman formülünün anlatıldığı 02:22-02:24 arası altyazıda kopuk; formüller slayttaki standart gösterimden verildi.
 - **Kayıt:** Hoca kayıtların sonradan izlenebilmesini avantaj olarak görüyor; itirazı yok.
 
-> **Not:** Bu özeti ve dersin altyazı dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+> **Not:** Bu özeti ve dersin altyazı dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

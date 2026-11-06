@@ -46,4 +46,4 @@
 - İnsan kaynakları uygulamaları yalnızca çalışan kayıtları ve bordro işlemleriyle sınırlı değildir. İşe alım, yetenek analizi, kariyer planlama, eğitim planlama, performans değerlendirme ve proje verimliliği ölçme gibi daha geniş işlevler de içerir.
 - Sistem düşüncesi, karmaşık bir kurumu daha anlaşılır alt parçalara ayırmayı sağlar. Üniversite örneğinde rektörlük, fakülteler, bölümler ve ana bilim dalları alt sistem olarak düşünülebilir. İşletme örneğinde ise müşteri destek sistemi; sipariş girişi, ürün kataloğu, müşteri bakım ve sipariş alma gibi alt sistemlerden oluşabilir.
 
-* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

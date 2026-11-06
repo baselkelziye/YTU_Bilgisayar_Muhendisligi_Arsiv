@@ -618,4 +618,4 @@ Bu dersin ilk kısmı sentaktik analizdi. Morfolojik analizden gelen etiketli ke
 
 > **Ders sonrası not:** "Teknik Üniversite'deki Gülşen Hoca", İTÜ'den Gülşen Eryiğit'tir. Morfolojik çıktıda hocanın "kopu" diye okuyup ne olduğunu bilmediğini söylediği etiket büyük olasılıkla Cop (copula, ek eylem) etiketidir, kesin değildir. "Eşref Hoca'nın kitabı" da büyük olasılıkla Eşref Adalı'nın Türkçe doğal dil işleme kitabıdır, altyazıdan kesinleşmiyor.
 
-**Not:** İsterseniz bu kayıtları NotebookLM gibi bir araca atıp daha istifadeli hale getirebilirsiniz.
+**Not:** İsterseniz bu kayıtları Gemini Notebook gibi bir araca atıp daha istifadeli hale getirebilirsiniz.

@@ -241,4 +241,4 @@ plt.legend(); plt.axis('equal'); plt.show()
 - Python kod örneği hatırlatma amaçlı eklendi, derste yazılmadı.
 - Kontrol edilen sonuçlar (Python ile): Örnek 1 ve 2'nin katsayıları, çalışma sorusunun çözümü, konvolüsyon, kapsamlı örneğin $h[n]$ ve basamak cevabı, $0.3$'lü ve $F(z)$'li ters dönüşümler, iki başlangıç koşullu fark denklemi.
 
-**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi daha verimli çalışabilirsiniz.
+**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi daha verimli çalışabilirsiniz.

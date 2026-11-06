@@ -665,4 +665,4 @@ Dersin ilk yarısında düzenli ifadeler, tür 3 düzenli dillerin pratik yazım
 
 İkinci yarıda biçimbilimsel analiz anlatıldı. Kelime, biçimbirimlerine ayrılır. Bunun için sözlük, biçim dizimi kuralları ve imla kuralları gerekir. Çözümleme sonlu durum otomatlarıyla yapılır: Bir kök adayı seçilir ve geri kalanlar otomatta bitiş durumuna ulaşırsa kök kabul edilir. İngilizcede sözlük tabanlı yapı büyük ölçüde yeterlidir. Türkçede ise sondan eklemeli yapı ve ses olayları nedeniyle büyük otomatlar gerekir. Çözümleme tek başına cümledeki doğru anlamı vermez. Bunun için bağlılık analizi ve anlamsal analiz gerekir.
 
-**Not:** İsterseniz bu kayıtları NotebookLM gibi bir araca atıp daha istifadeli hale getirebilirsiniz.
+**Not:** İsterseniz bu kayıtları Gemini Notebook gibi bir araca atıp daha istifadeli hale getirebilirsiniz.

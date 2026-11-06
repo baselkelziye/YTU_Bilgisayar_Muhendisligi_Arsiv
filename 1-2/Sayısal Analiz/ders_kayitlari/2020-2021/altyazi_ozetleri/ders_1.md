@@ -36,4 +36,4 @@ Sayısal analiz dersi, bilgisayar bilimleri ve mühendislikte karşılaşılan m
 
 Hoca, dersin ilk haftasında kendi akademik geçmişini ve çalışma alanlarını paylaşarak öğrencilerin derse olan ilgisini artırmayı hedefler. Sinyal işleme, makine öğrenmesi ve veri madenciliği gibi alanlarda yaptığı çalışmalar, sayısal analizin gerçek yaşam uygulamalarını örnekler.
 
-* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

@@ -192,4 +192,4 @@ Adım büyüklüğü anahtara bağlı olduğu için aynı adrese düşen anahtar
   - $h_2(k)$ ile $m$ aralarında asal olmalıdır. Böylece sınama dizisi bütün gözleri gezer. $m$ asal seçilirse bu koşul kendiliğinden sağlanır.
 - **"Separate chaining tablo dolunca kullanılır" cevabı:** Hoca bunu kabul edilebilir saydı. Ayrık zincirleme bir alternatif yöntemdir. Açık adreslemeyle devam ediliyorsa doğru çözüm yeniden hashlemedir.
 
-**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

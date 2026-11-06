@@ -530,4 +530,4 @@ Bu derste dizilerdeki dört temel işlem, sıralı ve sırasız diziler için ay
 
 Son olarak sıralama problemine geçildi ve yan yana elemanları karşılaştırıp her turda en büyüğü sona taşıyan bubble sort kuruldu. Bir sonraki derste bubble sort tekrar edilecek, iyileştirilmiş bir versiyonu konuşulacak ve selection sort'a geçilecek. Hoca öğrencilerden bubble sort'u daha akıllıca hâle getirmenin yolunu düşünmelerini istedi.
 
-**Not:** İsterseniz bu kayıtları NotebookLM gibi bir araca atıp daha istifadeli hale getirebilirsiniz.
+**Not:** İsterseniz bu kayıtları Gemini Notebook gibi bir araca atıp daha istifadeli hale getirebilirsiniz.

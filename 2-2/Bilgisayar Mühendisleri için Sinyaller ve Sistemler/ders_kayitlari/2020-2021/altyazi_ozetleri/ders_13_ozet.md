@@ -308,4 +308,4 @@
 - **Son değer teoremi:** Teorem yalnız $sX(s)$'nin bütün kutupları sol yarı düzlemdeyse geçerlidir. Örneğin $x(t) = e^{t}u(t)$ için $\lim_{s\to 0} s \cdot \frac{1}{s-1} = 0$ çıkar ama sinyal sonsuza gider.
 - **Kutup için "sonsuza gitmek":** Kutupta $|H(s)|$ sonsuza gider. Bu, sistemin zaman cevabının sonsuza gittiği anlamına gelmez. Zaman cevabının davranışını kutbun s-düzlemindeki yeri belirler.
 
-**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi daha verimli çalışabilirsiniz.
+**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi daha verimli çalışabilirsiniz.

@@ -200,4 +200,4 @@ Bir yazılım projesinin üç tarafı vardır: müşteri, yönetim ve yazılım 
 - **Altyazıdaki bozuk yerler:** "Code şu commercial order şerf" = COTS (Commercial Off-The-Shelf). "IR diagramı" = ER (Entity-Relationship) diyagramı. "Software Matrix" = software metrics. "Jizk analizan" = risk analizi. "PEST" = test.
 - **Yazılım ve aşınma:** Pressman'a göre yazılım aşınmaz (wear out) ama bozulur (deteriorate). Her değişiklik yeni hatalar getirebilir ve yazılımın hata oranı zamanla yükselir.
 
-**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

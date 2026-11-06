@@ -276,4 +276,4 @@ $f(x)=\sum a_n(x-c)^n$, $|x-c|<R$ olsun.
   - Sonuç: $\dfrac1{2+x}=\sum_{n=0}^\infty\dfrac{(-1)^n(x-1)^n}{3^{n+1}}$.
   - Koşul: $\left|\frac{x-1}3\right|<1$, yani $-2<x<4$.
 
-NotebookLM notu: İsterseniz bu özeti ve ders kaydını NotebookLM gibi bir araca atıp daha istifadeli hale getirebilirsiniz.
+Gemini Notebook notu: İsterseniz bu özeti ve ders kaydını Gemini Notebook gibi bir araca atıp daha istifadeli hale getirebilirsiniz.

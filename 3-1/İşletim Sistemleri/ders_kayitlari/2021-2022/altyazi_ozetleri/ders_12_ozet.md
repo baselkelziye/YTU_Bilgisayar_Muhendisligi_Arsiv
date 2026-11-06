@@ -243,4 +243,4 @@ Modern işletim sistemleri ikisini de sunar. Seçim ihtiyaca göre yapılır:
 - **`atexit`:** Altyazıda "add exit" diye geçiyor. Fonksiyonun adı `atexit`'tir; bir sistem çağrısı değil, C standart kütüphanesi fonksiyonudur.
 - **Altyazı hataları:** "inter-hap" = interrupt; "Redicue" = ready queue; "şehit memory" = shared memory; "Gatred Demon" = `kthreadd`.
 
-**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

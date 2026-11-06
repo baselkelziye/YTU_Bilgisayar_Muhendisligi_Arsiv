@@ -113,4 +113,4 @@ Statik linking'de program derlenirken tüm kütüphane fonksiyonları programa e
 
 Swapping, bellek yönetiminin temel tekniklerinden biridir. Uzun süre I/O yapacak veya bekleyecek bir process'in belleği diske yazılır; process kontrol blok bellekte kalır. Bekleme bittiğinde process geri yüklenir. Swapping maliyetlidir (tüm bellek dışarı yazılıp okunmalı); relocation ile hızlandırılabilir. Modern OS'lerde normalde kullanılmaz; sadece bellek doluluğu eşik değeri aşıldığında (örn. %80-85) devreye girer.
 
-* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

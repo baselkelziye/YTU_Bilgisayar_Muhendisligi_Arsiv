@@ -221,4 +221,4 @@
 - 1. uygulama sunumunda sprintler arası ilişki "start-to-finish" diye anlatıldı. Bir sprint bitince diğerinin başladığı anlatıldığına göre doğru terim finish-to-start'tır.
 - 3. uygulama sunumundaki "IT-FIL standartları" IEEE standartları olmalıdır. Tasarım aracı "DataGrid" ise JetBrains'in DataGrip aracıdır.
 
-**Not:** İsterseniz bu kayıtları NotebookLM gibi bir araca atıp daha istifadeli hale getirebilirsiniz.
+**Not:** İsterseniz bu kayıtları Gemini Notebook gibi bir araca atıp daha istifadeli hale getirebilirsiniz.

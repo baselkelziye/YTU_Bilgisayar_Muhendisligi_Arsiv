@@ -303,4 +303,4 @@ S
 - Altyazıda Esperanto'nun yaratıcısı "Zamenkov" olarak geçiyor. Doğrusu Zamenhof.
 - Hoca 5N1K sorularını sayarken bir an takıldı. Altı soru: kim, ne, nerede, ne zaman, nasıl, neden (niçin).
 
-İsterseniz bu kayıtları NotebookLM gibi bir araca atıp daha istifadeli hale getirebilirsiniz.
+İsterseniz bu kayıtları Gemini Notebook gibi bir araca atıp daha istifadeli hale getirebilirsiniz.

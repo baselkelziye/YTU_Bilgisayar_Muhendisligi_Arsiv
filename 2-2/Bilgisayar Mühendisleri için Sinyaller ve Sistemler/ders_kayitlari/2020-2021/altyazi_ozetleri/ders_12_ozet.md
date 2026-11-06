@@ -283,4 +283,4 @@
 - Bu özetteki dönüşüm sonuçları ($\frac{4s}{(s^2+4)^2}$, $\frac{s+5}{s^2+8s+19}$ ayrıştırması, $\frac{s^2}{s^2+9}$ ayrıştırması) Python ile sayısal olarak kontrol edildi.
 - Kayıtta geçen ödev metni ve "Laplace Transform Definition" slaytı ekran karelerinden okundu.
 
-**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi daha verimli çalışabilirsiniz.
+**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi daha verimli çalışabilirsiniz.

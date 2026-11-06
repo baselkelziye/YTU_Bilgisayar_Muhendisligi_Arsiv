@@ -252,4 +252,4 @@
 - **Ekran karesinden alınan donanım çözümü:** Slaytta veri tehlikesi algılanınca pipeline'ın bekletildiği (stall) ve "bubble" gönderildiği gösteriliyor. Hoca bunu sözlü olarak "sonucu doğrudan aktaran blok" diye özetledi. İki yaklaşım da (stall ve forwarding) donanım çözümüdür.
 - Altyazıda "Bilseyer donanımı" Bilgisayar Donanımı, "IORit" I/O Read/Write, "end shaking" handshaking, "Eknolci/Ekne oluş" acknowledge, "TOOS Komplement" two's complement demektir.
 
-* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

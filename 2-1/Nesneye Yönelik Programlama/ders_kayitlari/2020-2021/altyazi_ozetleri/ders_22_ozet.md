@@ -241,4 +241,4 @@ public void actionPerformed(ActionEvent e) {
 - **MVP'nin kökeni:** Sunumda "Intelligent Inc." diye geçen şirket Taligent'tır (Apple, IBM ve HP ortaklığı). MVP 1990'ların başında burada ortaya çıktı.
 - **Façade:** Kelime Fransızcadan gelir ve "cephe, ön yüz" demektir. Yazılımda Façade aynı zamanda bir tasarım kalıbının adıdır: karmaşık bir alt sistemi tek ve basit bir arayüzün arkasına saklar.
 
-* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

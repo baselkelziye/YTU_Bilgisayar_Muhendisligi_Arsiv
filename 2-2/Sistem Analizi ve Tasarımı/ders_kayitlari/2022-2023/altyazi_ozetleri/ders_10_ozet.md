@@ -221,4 +221,4 @@
   - Şelale, gereksinimleri baştan net ve kararlı olan projeler için uygundur.
   - Gereksinimleri belirsiz veya değişken projelerde yinelemeli ve çevik modeller daha uygundur.
 
-**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

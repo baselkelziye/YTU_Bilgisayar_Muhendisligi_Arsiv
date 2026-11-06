@@ -92,4 +92,4 @@
 - **Polinom değeri:** $2 + 4x - 7x^4$ için $P(2) = 2 + 8 - 112 = -102$'dir (gcc ile doğrulandı).
 - **Sütun kopyalama sürümünde bellek:** Matris çarpımında her sütun için `tmp = malloc(...)` yapılıyorsa, işi biten `tmp` `free` edilmelidir; aksi hâlde her çağrıda bellek sızar. En basit ve önerilen yol üç iç içe döngüdür.
 
-* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

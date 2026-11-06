@@ -362,4 +362,4 @@ Bu derste ağ konusunun kalan başlıkları tamamlandı. IP adreslerinden ve ala
 
 Hoca kapanışta, ikinci sınıftan itibaren hocaların hangi konularda çalıştığına bakmayı ve ilgi duyulan alanda araştırma gruplarına katılmak için hocalarla görüşmeyi tavsiye etti. Ara ve bitirme projelerinde de insanı geliştirecek ve özgeçmişte iyi duracak konular seçilmesini önerdi.
 
-**Not:** İsterseniz bu kayıtları NotebookLM gibi bir araca atıp daha istifadeli hale getirebilirsiniz.
+**Not:** İsterseniz bu kayıtları Gemini Notebook gibi bir araca atıp daha istifadeli hale getirebilirsiniz.

@@ -109,4 +109,4 @@ Multilevel Feedback Queue, en genel algoritmadır. Process'ler CPU-bound ise alt
 
 Multi-processor scheduling, birden fazla işlemci olduğunda devreye girer. Asymmetric multiprocessing'de sadece bir işlemci scheduling yapar. Symmetric multiprocessing'de (SMP) her işlemci kendi kararını verebilir. Processor affinity, process'in belirli bir işlemcide kalma isteğidir (cache reuse için). Load balancing, işlemciler arası yük dağılımıdır.
 
-* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

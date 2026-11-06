@@ -405,4 +405,4 @@ Dağılma başladığında Osmanlıcılık ve İttihad-ı İslam bu boşluğu do
 
 Gelecek hafta Osmanlı diplomasisinin meselesi olan Doğu Sorunu işlenecek. Hoca bunun da çok önemli ve kritik bir konu olduğunu, mutlaka bilinmesi gerektiğini söyledi.
 
-**Not:** İsterseniz bu kayıtları NotebookLM gibi bir araca atıp daha istifadeli hale getirebilirsiniz.
+**Not:** İsterseniz bu kayıtları Gemini Notebook gibi bir araca atıp daha istifadeli hale getirebilirsiniz.

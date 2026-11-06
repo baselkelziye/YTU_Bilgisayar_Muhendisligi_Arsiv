@@ -50,4 +50,4 @@
 - NOT kapısı girişin tersini üretir. Lojik yorumda bu, bir durumun yokluğunu varlığa veya varlığını yokluğa çevirmek anlamına gelir.
 - Türetilmiş kapılar temel kapılardan elde edilir. NAND ve NOR özellikle önemlidir; çünkü birçok devre yalnızca bu kapılar kullanılarak kurulabilir. XOR ve XNOR ise eşitlik/farklılık ilişkilerini ifade ettiği için karşılaştırma ve aritmetik devrelerde sık kullanılır.
 
-* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

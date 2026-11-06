@@ -1,6 +1,6 @@
 # Matematik 1 Ders Kayıtları & Çalışma Özetleri
 
-> **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+> **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
 
 ### 📋 Genel Bilgiler
 * **Ders:** Matematik 1 (MAT1071)
@@ -70,7 +70,7 @@ Aşağıdaki tabloda her bir dersin konusu, kaynak markdown dosyası ve doğruda
     - Doğrusu limit kavramıyla konuşmaktır.
   - Kuralları özdeş (identical) olan iki fonksiyon aynı fonksiyon olmayabilir.
     - Tanım kümeleri farklı olabilir.
-* **Detaylı Açıklamalar:** İsterseniz bu özeti NotebookLM gibi bir araca atıp daha istifadeli hale getirebilirsiniz.
+* **Detaylı Açıklamalar:** İsterseniz bu özeti Gemini Notebook gibi bir araca atıp daha istifadeli hale getirebilirsiniz.
 
 ### 🔹 Ders 2: Sonsuz Limitler, Asimptotlar, Limitin Kesin Tanımı ve Süreklilik
 * **Genel Konular:**
@@ -90,7 +90,7 @@ Aşağıdaki tabloda her bir dersin konusu, kaynak markdown dosyası ve doğruda
   - Üniversitede açılar derece değil radyan olarak düşünülür. $\theta$ bir gerçel sayıdır.
   - Düşey asimptot için sonlu bir noktaya yaklaşırken limitin $\pm\infty$ olması gerekir.
     - Sonlu bir değer çıkarsa düşey asimptot yoktur.
-* **Detaylı Açıklamalar:** İsterseniz bu özeti NotebookLM gibi bir araca atıp daha istifadeli hale getirebilirsiniz.
+* **Detaylı Açıklamalar:** İsterseniz bu özeti Gemini Notebook gibi bir araca atıp daha istifadeli hale getirebilirsiniz.
 
 ### 🔹 Ders 3: Temel Trigonometrik Limit, Ara Değer Teoremi ve Süreksizlik Türleri
 * **Genel Konular:**
@@ -110,7 +110,7 @@ Aşağıdaki tabloda her bir dersin konusu, kaynak markdown dosyası ve doğruda
   - $\frac{\sin u}{u}$ kuralını kullanmak için $x\to a$ iken $u\to0$ olmalı.
     - Bu koşulu mutlaka kontrol edin.
   - $1-\cos(\dots)$ görürseniz ve belirsizlik $\frac00$ ise eşleniği $1+\cos(\dots)$ ile çarpıp bölün.
-* **Detaylı Açıklamalar:** İsterseniz bu özeti NotebookLM gibi bir araca atıp daha istifadeli hale getirebilirsiniz.
+* **Detaylı Açıklamalar:** İsterseniz bu özeti Gemini Notebook gibi bir araca atıp daha istifadeli hale getirebilirsiniz.
 
 ### 🔹 Ders 4: Limit ve Süreklilik Alıştırmaları: Süreksizlik Türleri ve Tanım Kümesi
 * **Genel Konular:**
@@ -130,7 +130,7 @@ Aşağıdaki tabloda her bir dersin konusu, kaynak markdown dosyası ve doğruda
   - Bir iddia bir örnekle çürütülebilir, ama bir örnekle doğrulanamaz.
   - Yalnız kaldırılabilir süreksizlik giderilebilir.
     - Sonsuz veya sıçrama süreksizliği olan fonksiyon sürekli hâle getirilemez.
-* **Detaylı Açıklamalar:** İsterseniz bu özeti NotebookLM gibi bir araca atıp daha istifadeli hale getirebilirsiniz.
+* **Detaylı Açıklamalar:** İsterseniz bu özeti Gemini Notebook gibi bir araca atıp daha istifadeli hale getirebilirsiniz.
 
 ### 🔹 Ders 5: Türevin Tanımı, Türevlenebilme ve Süreklilik, Türev Kuralları ve Zincir Kuralı
 * **Genel Konular:**
@@ -566,4 +566,4 @@ Aşağıdaki tabloda her bir dersin konusu, kaynak markdown dosyası ve doğruda
   - **Has olmayan integral:** Has olmayan integrallerle ilgili en az iki soru bekleniyor.
     - Biri yorum tipi (öncüllü) soru olacak; hoca bunun ihtimaline %98 diyor.
 
-**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

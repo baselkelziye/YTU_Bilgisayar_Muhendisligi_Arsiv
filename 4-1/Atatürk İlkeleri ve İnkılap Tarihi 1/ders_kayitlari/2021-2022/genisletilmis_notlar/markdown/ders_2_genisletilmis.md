@@ -316,4 +316,4 @@ Ders, devletin insanlık kadar eski olmadığı tespitiyle başladı. Tarım dev
 
 Hoca, gelecek hafta klasik dönem Osmanlı devlet, toplum ve hukuk düzenine geçileceğini söyledi. Bu derste işlenen kavramlar orada kullanılacak: Osmanlı klasik dönemde nasıl bir yönetim biçimiydi? Hoca şimdiden monarşi olduğunu söyledi, ama nasıl bir monarşi olduğu, devlet ve hukuk düzeni ile millet sisteminin nasıl işlediği gelecek dersin konusudur.
 
-**Not:** İsterseniz bu kayıtları NotebookLM gibi bir araca atıp daha istifadeli hale getirebilirsiniz.
+**Not:** İsterseniz bu kayıtları Gemini Notebook gibi bir araca atıp daha istifadeli hale getirebilirsiniz.

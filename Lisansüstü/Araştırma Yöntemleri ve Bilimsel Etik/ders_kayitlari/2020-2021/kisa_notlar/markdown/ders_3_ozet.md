@@ -190,4 +190,4 @@
 - Kalkınma Bakanlığı 2018'de kapatıldı. Kalkınma ajansları bugün Sanayi ve Teknoloji Bakanlığı'na bağlı.
 - Altyazıda geçen "Teknogüneşim 1512" ve "Big Bar" TÜBİTAK 1512 BiGG (Bireysel Genç Girişim) programıdır.
 
-İsterseniz bu kayıtları NotebookLM gibi bir araca atıp daha istifadeli hale getirebilirsiniz.
+İsterseniz bu kayıtları Gemini Notebook gibi bir araca atıp daha istifadeli hale getirebilirsiniz.

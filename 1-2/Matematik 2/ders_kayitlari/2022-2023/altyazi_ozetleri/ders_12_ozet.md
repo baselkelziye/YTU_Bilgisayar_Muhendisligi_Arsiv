@@ -165,4 +165,4 @@ Hoca bunu ayrı bir tahtada çizerek açıkladı. Tek değişkenli fonksiyonlard
 - **Vektörel çarpım:** Hoca bir yerde "vektörel çarpım çarpı şeklini gösteriyor" dedi. $\vec u\times\vec v$ bir vektördür; boyu $\|\vec u\|\|\vec v\|\sin\theta$'dır.
 - **Laplace denklemi:** Altyazıda $z_y$ için "$x2$" gibi bozuk bir ifade geçiyor. Doğrusu $z_y=-2y$, $z_{yy}=-2$.
 
-İsterseniz bu özeti NotebookLM gibi bir araca atıp daha istifadeli hale getirebilirsiniz.
+İsterseniz bu özeti Gemini Notebook gibi bir araca atıp daha istifadeli hale getirebilirsiniz.

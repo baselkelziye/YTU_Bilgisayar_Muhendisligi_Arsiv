@@ -285,4 +285,4 @@ void HeapSort(int Heap[], int n)
 - Slaytta "Heapify the array ⇒ N" yazıyor, anlatımda ise heap kurmanın $O(n \log n)$ olduğu söylendi. İkisi farklı yöntemlere karşılık gelir. Elemanları tek tek ekleyerek (sift up) kurmak $O(n \log n)$'dir. Diziyi aşağıdan yukarıya sift down ile heap yapmak (Floyd yöntemi) $O(n)$'dir. Her iki durumda da heap sort toplamda $O(n \log n)$'dir.
 - Derste ekleme örneğinden sonra min heap "1, 4, 8, 5, 9" diye okundu. Dizideki gerçek sıra `[1, 4, 9, 8, 5]`'tir (ağaçta 1 kök, 4 ve 9 çocukları, 8 ve 5 de 4'ün çocukları).
 
-**Not:** İsterseniz bu kayıtları NotebookLM gibi bir araca atıp daha istifadeli hale getirebilirsiniz.
+**Not:** İsterseniz bu kayıtları Gemini Notebook gibi bir araca atıp daha istifadeli hale getirebilirsiniz.

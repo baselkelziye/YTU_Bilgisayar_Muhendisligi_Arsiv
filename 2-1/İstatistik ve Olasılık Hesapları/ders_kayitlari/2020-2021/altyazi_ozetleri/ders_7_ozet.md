@@ -31,4 +31,4 @@
 - Kayıttan sınavda yaşanan sorunun ne olduğu ve nasıl çözüldüğü anlaşılmıyor.
 - Kayıtta konuşan ikinci kişinin kim olduğu belli değil.
 
-**Not:** Bu ders İngilizce anlatılmıştır; bu kayıttaki konuşmalar ise çoğunlukla Türkçedir. İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+**Not:** Bu ders İngilizce anlatılmıştır; bu kayıttaki konuşmalar ise çoğunlukla Türkçedir. İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

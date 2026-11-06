@@ -175,4 +175,4 @@
 - Bir öğrenci "PMBOK sertifikası" dedi. PMBOK bir bilgi kılavuzudur, sertifika değildir. Kastedilen PMI'ın PMP sertifikasıdır. Hoca da PMP sertifikasından bahsetti. Çevik projeler için PMI'ın ayrı sertifikası PMI-ACP'dir.
 - Ders başında yaşanan ekran paylaşımı sorunu nedeniyle ilk slayt anlatımı kesildi ve yeniden başlandı (yaklaşık 00:15-00:21). Bu aralığın bir kısmı altyazıda yok.
 
-**Not:** İsterseniz bu kayıtları NotebookLM gibi bir araca atıp daha istifadeli hale getirebilirsiniz.
+**Not:** İsterseniz bu kayıtları Gemini Notebook gibi bir araca atıp daha istifadeli hale getirebilirsiniz.

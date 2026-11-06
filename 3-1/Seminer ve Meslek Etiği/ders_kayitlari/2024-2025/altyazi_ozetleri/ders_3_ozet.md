@@ -233,4 +233,4 @@
   - Anayasa md. 20 özel hayatın gizliliğini, md. 22 haberleşme hürriyetini korur. İnsan Hakları Evrensel Beyannamesi'nde ilgili madde 12'dir. Kişisel veriler için ayrıca 6698 sayılı KVKK vardır.
 - **Altyazı hataları:** "edirgen" edilgen, "sider suç" siber suç, "tüçler/tuçlu" suçlar/suçlu, "ferakende" perakende, "Pidye" fidye, "troyan" trojan, "dildosu/DDoS" DDoS, "Mernist/Mernes" MERNİS, "ISK listeleri" seçmen listeleri, "Tool Factor Authentication" two-factor authentication, "otentik eşinden ... otorizasyon" authentication ve authorization, "FUŞ/puş" fuhuş, "Emrensel Bildirgesi" Evrensel Beyannamesi, "sendiko" sendika anlamındadır.
 
-**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

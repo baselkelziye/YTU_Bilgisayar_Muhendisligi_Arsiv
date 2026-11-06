@@ -219,4 +219,4 @@ $$V=2\pi\int_0^1 (y+1)(y-y^2)\,dy=\frac{\pi}{2}$$
 - **Hesaplanan sonuçlar:** Hoca integralleri ödev bıraktı. Özetteki sayısal sonuçlar ($9/2$, $72\pi/5$, $31\pi/5$, $163\pi/15$, $\pi^2$, $8\pi^2$, $4\pi^2$, $\pi/6$, $\pi/2$) bu özette hesaplandı.
 - **Altyazı:** Pul yönteminin anlatıldığı yerde (yaklaşık 00:09:20-00:10:20) ve kabuk yöntemi sonrasında (yaklaşık 01:11:40-01:12:10) altyazı anlamsız Türkçe tekrarlara giriyor. Bu kısımlar altyazıda anlaşılmıyor; formüller hocanın sonraki anlatımından ve tahtadan kuruldu.
 
-**Not:** İsterseniz bu kayıtları NotebookLM gibi bir araca atıp daha istifadeli hale getirebilirsiniz.
+**Not:** İsterseniz bu kayıtları Gemini Notebook gibi bir araca atıp daha istifadeli hale getirebilirsiniz.

@@ -204,4 +204,4 @@ public class Car {
 - **`==` ve sarmalayıcı sınıflar:** Bir öğrenci `Integer` ve `String` için `==`'ın çalıştığını söyledi. Bu yanıltıcıdır. Aynı metin sabitleri (`"Java" == "Java"`) ve -128..127 arasındaki `Integer` değerleri önbellekten aynı nesneyi gösterdiği için `true` çıkabilir. `new` ile oluşturulan nesnelerde sonuç `false` olur. İçerik karşılaştırması için her zaman `equals` kullanın.
 - **Yanlış yapıcı örneği:** Hoca yanlış örneği önce "execution error", sonra "compile time error" diye nitelendi. Aynı imzalı iki yapıcı derleme hatasıdır.
 
-**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

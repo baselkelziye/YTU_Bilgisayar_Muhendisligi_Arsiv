@@ -160,4 +160,4 @@ Tarih: 30 Mayıs 2023 (Salı). Dönemin son dersi. Final için çok katlı integ
 - Çözülen sorular dersten sonra asistan tarafından AVES'e yüklenecek.
 - Hoca gelecek dönemin yüz yüze olacağını söyledi.
 
-İsterseniz bu kayıtları NotebookLM gibi bir araca atıp daha istifadeli hale getirebilirsiniz.
+İsterseniz bu kayıtları Gemini Notebook gibi bir araca atıp daha istifadeli hale getirebilirsiniz.

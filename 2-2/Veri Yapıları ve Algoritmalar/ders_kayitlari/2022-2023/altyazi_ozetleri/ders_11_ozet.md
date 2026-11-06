@@ -288,4 +288,4 @@ struct node *search(struct node *root, int value) {
 - Sınavların online olacağı söylendi.
 - Uygulama/laboratuvar dersleri hakkında henüz bölümden bilgi gelmediği söylendi. Ertesi günkü uygulama yapılmayacak. Sonraki haftalarda online soru çözümü şeklinde yapılabilir.
 
-**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

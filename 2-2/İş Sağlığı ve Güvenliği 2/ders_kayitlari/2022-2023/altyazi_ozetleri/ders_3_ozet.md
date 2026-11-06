@@ -100,4 +100,4 @@
 - **Masa yüksekliği:** Altyazıda "600 cm" geçiyor. Slaytta sabit masa için 680 mm, ayarlanabilir masa için 640-740 mm, klavye ortası için 710-740 mm yazıyor.
 - **Çalışan temsilcisi sayısı:** Derste sayı net verilmedi. 6331 sayılı Kanun md. 20'ye göre: 2-50 çalışan için 1, 51-100 için 2, 101-500 için 3, 501-1000 için 4, 1001-2000 için 5, 2001 ve üzeri için 6 temsilci seçilir.
 
-**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

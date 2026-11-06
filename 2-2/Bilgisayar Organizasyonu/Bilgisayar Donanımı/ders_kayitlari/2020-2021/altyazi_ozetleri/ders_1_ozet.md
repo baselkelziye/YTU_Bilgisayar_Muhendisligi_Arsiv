@@ -243,4 +243,4 @@ Derste 01 durumu için önce NAND dendi. Bir öğrencinin uyarısıyla doğrusun
   - $Z = W_3 + W_2 + W_1 + W_0$
 - Soru 2, 3 ve 4'ün minterm ve MUX giriş tabloları Python ile kontrol edildi; derste bulunan sonuçlarla aynı.
 
-**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

@@ -545,4 +545,4 @@ Bu derste bir tarayıcının neden gerekli olduğundan başlayıp nasıl yazıla
 
 Ölçek büyüdükçe çözüm de değişir. Sıralı tarayıcıdan çok iş parçacıklı eş zamanlı tarayıcıya, oradan DNS önbelleği, eşzamansız soket ve yazılım tabanlı anahtarlar kullanan evrensel tarayıcıya geçilir. Evrensel tarayıcıda kapsam ile güncellik arasında bir politika seçilir. Tercihli tarayıcılar ise önem ölçüsüne göre çalışır ve düşük tarama boyutundaki duyarlılıklarıyla karşılaştırılır. Gelecek derste 7. bölüm olan bağlantı analizine (link analysis) geçilecektir.
 
-**Not:** İsterseniz bu kayıtları NotebookLM gibi bir araca atıp daha istifadeli hale getirebilirsiniz.
+**Not:** İsterseniz bu kayıtları Gemini Notebook gibi bir araca atıp daha istifadeli hale getirebilirsiniz.

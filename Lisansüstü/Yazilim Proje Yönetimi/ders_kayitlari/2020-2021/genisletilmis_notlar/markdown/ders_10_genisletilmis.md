@@ -595,4 +595,4 @@ Bu derste beş makale üzerinden çevik proje yönetiminin farklı yüzleri gör
 
 Hocanın dersteki iki değerlendirmesi de bu tabloyu tamamlıyor. Benimseme konusu kurumlar için önemli hale gelmiştir. Uzaktan çalışma gibi hızla değişen bir konuda 2016 tarihli bir çalışma, son iki yılın deneyimlerini içeren yayınlarla birlikte okunmalıdır. Dersin başında anlatılan plan ve SRS içeriği ise dönem boyunca görülen konuların uygulamadaki karşılığıdır: projeyi anlama, tanımlama, planlama ve planı gereksinim analizine kadar takip etme.
 
-**Not:** İsterseniz bu kayıtları NotebookLM gibi bir araca atıp daha istifadeli hale getirebilirsiniz.
+**Not:** İsterseniz bu kayıtları Gemini Notebook gibi bir araca atıp daha istifadeli hale getirebilirsiniz.

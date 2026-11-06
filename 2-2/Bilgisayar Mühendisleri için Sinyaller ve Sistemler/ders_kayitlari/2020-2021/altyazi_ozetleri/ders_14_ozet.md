@@ -257,4 +257,4 @@ y = filter(b, a, xx);
 - $X(z)=\frac{1}{z+1.2}$ örneğinde işaretin genliği büyür ($|-1.2|>1$). Bu, kutbun birim çemberin dışında olmasından kaynaklanır. Nedensel bir sistemde böyle bir kutup kararsızlık demektir.
 - Kontrol edilen sayısal sonuçlar (Python ile): $F(s)$ örneğinin kısmi kesirleri ve $f(0)=0$, $f(\infty)=\frac14$; slayt 26 konvolüsyonu; $\frac{1}{z+1.2}$'nin ilk değerleri; iki terimli örneğin birleşik ifadesi.
 
-**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi daha verimli çalışabilirsiniz.
+**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi daha verimli çalışabilirsiniz.

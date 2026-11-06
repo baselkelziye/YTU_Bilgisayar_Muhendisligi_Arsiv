@@ -47,4 +47,4 @@
 - MRP sistemleri üretimde hangi ürünü üretmek için hangi ham maddelerin gerektiğini, bu ham maddelerin ne zaman ve ne miktarda tedarik edileceğini planlar. ERP ise yalnızca üretimi değil, finans, insan kaynakları, satış, tedarik ve müşteri ilişkileri gibi tüm kurumsal süreçleri bütünleştiren daha kapsamlı bir yapıdır.
 - Tedarik zinciri yönetimi, satın alma, üretim, depolama, dağıtım ve müşteri teslimi gibi birbirine bağlı halkalardan oluşur. Bu zincirdeki bilgi akışının doğru yönetilmesi stok fazlasını, gecikmeyi, maliyet artışını ve müşteri memnuniyetsizliğini azaltabilir.
 
-* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

@@ -232,4 +232,4 @@ title('My First Signal','fontsize', 20)
 - **DTMF:** Derste 3 tuşu için bir yerde "1697 Hz" geçiyor. Doğrusu 697 Hz ve 1477 Hz.
 - **Hooke yasası:** Derste yay örneğinde $F = -kx$ hatırlatıldı. İşaret, yay kuvvetinin uzamaya ters yönde olduğunu gösterir.
 
-**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

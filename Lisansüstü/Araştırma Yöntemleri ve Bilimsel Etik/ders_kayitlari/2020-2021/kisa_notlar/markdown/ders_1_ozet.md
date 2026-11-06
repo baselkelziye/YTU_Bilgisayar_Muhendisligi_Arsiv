@@ -119,4 +119,4 @@ Bilimsel veriye erişim -> fikir -> literatür taraması -> projelendirme
 - Hoca devamsızlık hesabında 14 haftanın %30'unu "dört küsur hafta" diyor: $14 \times 0{,}30 = 4{,}2$ hafta. Yani en fazla 4 hafta devamsızlık yapılabilir; 5. hafta sınırı aşar.
 - Hoca slaytta 15. haftaya kadar giden planın eski sunumdan kaldığını, dönemin 14 hafta olduğunu belirtiyor.
 
-İsterseniz bu kayıtları NotebookLM gibi bir araca atıp daha istifadeli hale getirebilirsiniz.
+İsterseniz bu kayıtları Gemini Notebook gibi bir araca atıp daha istifadeli hale getirebilirsiniz.

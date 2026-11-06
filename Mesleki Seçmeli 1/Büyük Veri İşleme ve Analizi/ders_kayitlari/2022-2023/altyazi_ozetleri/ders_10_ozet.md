@@ -209,4 +209,4 @@
 - **Kitapların sırası:** "Touching the Void" (1988), "Into Thin Air"den (1997) yaklaşık dokuz yıl önce yayımlandı. Hoca "birkaç yıl önce" dedi.
 - **Kayıt kesintisi:** Okul internetindeki sorun nedeniyle bağlantı koptu. Kayıtta yaklaşık 4 dakikalık bir kesinti var (00:31-00:36). Ayrıca birkaç yerde altyazı döngüye girmiş. O kısımlar özete alınmadı.
 
-**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

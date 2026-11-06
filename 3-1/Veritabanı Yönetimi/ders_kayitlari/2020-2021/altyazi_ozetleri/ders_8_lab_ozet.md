@@ -71,4 +71,4 @@
 
 - **Commit ve Autocommit**: Varsayılan olarak her executeUpdate sonrasında değişiklikler otomatik commit edilir. Ancak birden fazla DML işlemini bir arada çalıştırıp tek seferde commit etmek istenirse `connection.setAutoCommit(false)` yapılarak autocommit kapatılır, işlemler tamamlandıktan sonra `connection.commit()` ile manuel commit yapılır.
 
-* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

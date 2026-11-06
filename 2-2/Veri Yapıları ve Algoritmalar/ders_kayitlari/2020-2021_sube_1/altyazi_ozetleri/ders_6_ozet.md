@@ -32,4 +32,4 @@
 
 - Yer karmaşıklığı genellikle girişin kendisi dışında kullanılan ek bellek (auxiliary space) için verilir. Girişi saklayan dizi de sayılırsa, her algoritma en az $O(n)$ yer kullanmış olur. Hangi tanımın kullanıldığı soruda belirtilmelidir.
 
-**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

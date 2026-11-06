@@ -481,4 +481,4 @@ Bu derste önce dersin kapsamı ve hedefi görüldü: Dönem sonunda bir problem
 
 Dersin son bölümünde von Neumann mimarisinin temel birimleri, donanım ve yazılım ayrımı, özel donanımın genel amaçlı donanıma üstünlüğü, işletim sisteminin kaynak yönetimi rolü, bellek türleri, giriş ve çıkış birimleri ile sensörler ele alındı. Hoca bilgisayarın birimlerinde kalındığını, sonraki derste bu konuların sürdürüleceğini ve ardından dersin teorik konularına geçileceğini söyledi.
 
-**Not:** İsterseniz bu kayıtları NotebookLM gibi bir araca atıp daha istifadeli hale getirebilirsiniz.
+**Not:** İsterseniz bu kayıtları Gemini Notebook gibi bir araca atıp daha istifadeli hale getirebilirsiniz.

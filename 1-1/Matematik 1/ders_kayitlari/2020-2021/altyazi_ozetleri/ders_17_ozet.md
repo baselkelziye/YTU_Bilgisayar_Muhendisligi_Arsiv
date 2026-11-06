@@ -243,4 +243,4 @@ $$\int\frac{\sec x(\sec x+\tan x)}{\sec x+\tan x}\,dx$$
 - **Arcsec:** Bazı kaynaklar $\displaystyle\int\frac{du}{|u|\sqrt{u^2-1}}=\operatorname{arcsec}|u|+C$ biçimini kullanır. Hocanın yazdığı biçim $u>1$ için geçerlidir.
 - **Altyazı:** Büküm noktası ve yerine koyma bölümlerinde (yaklaşık 00:30, 01:58, 02:19) altyazı döngüye giriyor ya da Türkçe-İngilizce karışık bozuluyor. Bu yerler tahtadan tamamlandı.
 
-**Not:** İsterseniz bu kayıtları NotebookLM gibi bir araca atıp daha istifadeli hale getirebilirsiniz.
+**Not:** İsterseniz bu kayıtları Gemini Notebook gibi bir araca atıp daha istifadeli hale getirebilirsiniz.

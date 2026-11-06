@@ -318,4 +318,4 @@ Ders, tek bağlı listeden düğüm silme konusuna geçilirken sona erdi.
 - `createNode` içinde `printf` kullanıldığı için `#include <stdio.h>` de gerekir. Tahtada yalnız `stdlib.h` yazılı.
 - `exit(0)` normalde başarılı çıkışı belirtir. Hata durumunda `exit(1)` veya `exit(EXIT_FAILURE)` kullanmak daha doğrudur.
 
-**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

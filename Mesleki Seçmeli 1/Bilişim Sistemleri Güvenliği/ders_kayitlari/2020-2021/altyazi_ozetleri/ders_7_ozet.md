@@ -44,4 +44,4 @@
 - Secret token validation, sunucunun ürettiği ve kullanıcının formuna yerleştirdiği gizli token'ın istekle birlikte geri gelmesini bekler. Saldırgan token'ı bilemediği için geçerli istek oluşturamaz. SameSite cookie de tarayıcı düzeyinde ek koruma sağlar.
 - SQL injection, web uygulamasının kullanıcı girdisini SQL sorgusuna doğrudan eklemesiyle oluşur. Girdi veri olarak değil komut parçası olarak yorumlandığında saldırgan sorgu koşulunu değiştirebilir, tabloları sorgulayabilir veya hassas veri elde edebilir.
 
-* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

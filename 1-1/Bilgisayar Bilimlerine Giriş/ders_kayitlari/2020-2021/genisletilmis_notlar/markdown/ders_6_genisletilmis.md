@@ -410,4 +410,4 @@ Dersin ilk yarısında kayan nokta gösterimi üç örnekle pekiştirildi. Sıra
 
 İkinci yarıda veri ile bilgi ayrıldı ve bilgisayarda saklanan veri türleri gözden geçirildi. Karakterler ASCII ve UTF-8 tablolarıyla kodlanır. Değerler ezberlenmez, karakter sabitleri ve aralarındaki farklar kullanılır. Bir sayının karakter olarak ve sayı olarak kapladığı alan farklıdır: 333 için 3 byte ve 2 byte, 4782 için 4 byte ve 2 byte. Resimler piksellerden oluşan matrislerle, sesler tek boyutlu dizilerle saklanır. Bu veriler çok yer kapladığı için kayıpsız ya da kayıplı yöntemlerle sıkıştırılır. Hoca sıkıştırma konusunun bir sonraki derste konuşulacağını, ardından kısa bir konudan sonra algoritmanın ne olduğu, nasıl tasarlandığı ve nasıl ifade edildiği konularına geçileceğini söyledi.
 
-**Not:** İsterseniz bu kayıtları NotebookLM gibi bir araca atıp daha istifadeli hale getirebilirsiniz.
+**Not:** İsterseniz bu kayıtları Gemini Notebook gibi bir araca atıp daha istifadeli hale getirebilirsiniz.

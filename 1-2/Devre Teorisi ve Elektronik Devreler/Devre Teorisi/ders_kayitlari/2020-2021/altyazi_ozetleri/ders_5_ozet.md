@@ -126,4 +126,4 @@
 - **Güç birimi:** Kısa devre durumunda "güç sıfır volt" dendi; güç vat (W) cinsindendir.
 - **Örnek 14'teki güç sorusu:** Slayt yükte harcanan gücü de soruyor ama $R_L$ değeri verilmediği için derste hesaplanmadı. $R_L$ verilirse $P_L = \left(\frac{8}{9 + R_L}\right)^2 R_L$; en büyük değer $R_L = 9$ Ω'da $\frac{8^2}{4\cdot 9} \approx 1.78$ W'tır.
 
-* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

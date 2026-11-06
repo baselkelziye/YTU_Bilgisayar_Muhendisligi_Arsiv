@@ -34,4 +34,4 @@
 - Saldırgan yorum işaretleriyle sorgunun kalan kısmını devre dışı bırakabilir veya `UNION` ile kendi seçtiği sorgu sonuçlarını mevcut sorguya ekletebilir. Bu yöntemle veritabanı sürümü, aktif kullanıcı, tablo adları, kolon adları ve hassas kayıtlar adım adım elde edilebilir.
 - Güvenli tasarım açısından parametreli sorgular, prepared statement kullanımı, hata mesajlarını gizleme, minimum veritabanı yetkisi ve girdi doğrulama birlikte uygulanmalıdır.
 
-* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

@@ -248,4 +248,4 @@ $N$ karakterli metinde $M$ karakterli örüntü arama maliyeti:
 - C dilinde ayrı bir `string` tipi yoktur. Metin, `'\0'` ile biten `char` dizisi olarak tutulur.
 - Rabin-Karp'ta özet karşılaştırması bir konumu $O(1)$'de eler. Çakışma olduğunda karakter karşılaştırması gerektiği için en kötü durum yine $O(nm)$'dir. Mod için büyük bir asal seçmek çakışma olasılığını düşürür.
 
-**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

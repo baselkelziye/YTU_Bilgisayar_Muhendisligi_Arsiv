@@ -302,4 +302,4 @@ Derste önce proje yönetiminin aşamaları netleşti: hazırlık (anlama ve tan
 
 İki sunum da bu çerçevenin farklı yerlerine değdi. İlki, proje yöneticisi unvanı Scrum ve XP'de teoride kalkmış olsa da ankete katılanların %67'sinin projesinde hâlâ bir proje yöneticisi bulunduğunu, bu varlığın ekip büyüklüğü ve dağıtık çalışmayla ilişkili olduğunu gösterdi. İkincisi, PERT'in üç süre tahminini Monte Carlo simülasyonuyla birleştirerek süre dağılımı ve kritik yol olasılıkları elde etmeyi anlattı, ama sonucun yine tahminlerin kalitesine bağlı olduğunu da hatırlattı. Hoca iki sunumu da iyi buldu ve sonraki sunumlar için örnek olduklarını söyledi.
 
-**Not:** İsterseniz bu kayıtları NotebookLM gibi bir araca atıp daha istifadeli hale getirebilirsiniz.
+**Not:** İsterseniz bu kayıtları Gemini Notebook gibi bir araca atıp daha istifadeli hale getirebilirsiniz.

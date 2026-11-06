@@ -377,4 +377,4 @@ Dersin sonunda bir öğrenci birinci soruya döndü.
 
 Vize sorusunda ise iki temel beceri öne çıktı: karakterden sayısal değeri karakter sabitleriyle elde etmek (`c - '0'`, `c - 'A' + 10`) ve üssü yeniden hesaplamak yerine çarpanı 1'den başlatıp her turda 16 ile çarpmak. Hoca, kağıtlardaki hataların bazı konuların henüz oturmadığını gösterdiğini söyledi ve anlaşılmayan yerlerin tekrar haftasında sorulmasını istedi. Perşembe günkü derste tekrar amacıyla birkaç örnek soru çözüleceğini belirtti.
 
-**Not:** İsterseniz bu kayıtları NotebookLM gibi bir araca atıp daha istifadeli hale getirebilirsiniz.
+**Not:** İsterseniz bu kayıtları Gemini Notebook gibi bir araca atıp daha istifadeli hale getirebilirsiniz.

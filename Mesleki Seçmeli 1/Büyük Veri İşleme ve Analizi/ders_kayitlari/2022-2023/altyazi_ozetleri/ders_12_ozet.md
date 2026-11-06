@@ -204,4 +204,4 @@ for (her sepet):
 - **Altyazı sorunu:** Örnekteki son sık çift altyazıda "J and J" diye geçiyor. Kitaptaki örnekte bu çift $\{c, j\}$'dir.
 - **Multihash bellek ihtiyacı:** Hoca multihash'in "naive ve Apriori'den az bellek" kullandığını söyledi. Kitaptaki asıl karşılaştırma PCY iledir. Her tablo yarı boyutta olduğu için kova sayıları büyür. Multihash, ortalama kova sayısı $s$'den çok küçükse fayda sağlar.
 
-**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

@@ -200,4 +200,4 @@ Dersin sonunda bir öğrenci $q^r = 2$ hesabını sordu. Hoca Türkçe açıklad
   - $\sqrt{2}^{\sqrt{2}}$ irrasyonelse derste verilen seçim kullanılır.
   - Hangi durumun doğru olduğunu bilmeden teorem ispatlanmış olur. Bu yüzden bu örnek ders kitaplarında çoğu zaman yapıcı olmayan ispat örneği olarak geçer.
 
-**Not:** Bu ders İngilizce anlatılmıştır. İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+**Not:** Bu ders İngilizce anlatılmıştır. İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

@@ -32,4 +32,4 @@
 - Veri madenciliği yöntemleri, eldeki problemin yapısına göre ayrılır. Eğer geçmiş örneklerin sınıf etiketleri biliniyorsa sınıflama yapılabilir. Etiket yoksa örnekler benzerliklerine göre kümelenebilir. Birliktelik analizi ise özellikle hangi öğelerin birlikte görülme eğiliminde olduğunu bulmak için kullanılır.
 - Bu giriş dersi, sonraki haftalarda işlenecek ön işleme, boyut indirgeme, sınıflama, kümeleme ve birliktelik kuralları konularının kavramsal temelini oluşturur.
 
-* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

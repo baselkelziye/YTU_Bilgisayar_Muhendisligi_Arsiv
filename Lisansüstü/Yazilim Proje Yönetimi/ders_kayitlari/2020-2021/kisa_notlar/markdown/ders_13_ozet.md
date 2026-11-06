@@ -229,4 +229,4 @@
 - 7. uygulamadaki model adı altyazıda "bir model" diye geçiyor. Havacılık bağlamında büyük ihtimalle V modelidir, ama altyazıdan kesin değil.
 - Devam kuralında tam 4 derse katılan öğrencinin durumu açık söylenmedi ("4'ten az" ve "5-8" arası tanımlandı).
 
-**Not:** İsterseniz bu kayıtları NotebookLM gibi bir araca atıp daha istifadeli hale getirebilirsiniz.
+**Not:** İsterseniz bu kayıtları Gemini Notebook gibi bir araca atıp daha istifadeli hale getirebilirsiniz.

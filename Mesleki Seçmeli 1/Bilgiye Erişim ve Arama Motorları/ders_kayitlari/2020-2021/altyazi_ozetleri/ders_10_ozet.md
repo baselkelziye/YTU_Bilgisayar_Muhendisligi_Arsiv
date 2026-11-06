@@ -187,4 +187,4 @@ $$C_D=\frac{\sum_{i}\left[d_{\max}-d(i)\right]}{(n-1)(n-2)}$$
 - **HITS'in kullanımı:** Hoca HITS'in daha sonra Yahoo tarafından kullanıldığını söyledi. HITS'i Jon Kleinberg (Cornell) 1998'de yayımladı. Ticari kullanımı en çok bilinen arama motoru Teoma'dır (sonra Ask.com). Yahoo'nun HITS kullandığına dair yaygın bir kaynak yok.
 - **Altyazı hatası:** Kayıtta "odd degree" ve "alt degree" geçen yerler "out degree" (çıkış derecesi) olmalıdır.
 
-**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

@@ -158,4 +158,4 @@ değilse:
 - $step = (N + i - value + 1) \bmod N$ ifadesi, eleman tam $N$. denemede yerleşmişse 0 verir. Bu durum yalnızca tablonun tamamen dolu olduğu uç durumda ortaya çıkabilir. Tablo yarı yarıya dolu tutulduğunda bu durum oluşmaz. Her durumda doğru sonuç için $step = (N + i - value) \bmod N + 1$ yazılabilir (ajan notu).
 - C örneğindeki gibi boş gözü 0 ile gösterirseniz, $x = 0$ değeri tabloya konamaz. Gerçek uygulamada boş göz için ayrı bir işaret (ör. -1 veya ayrı bir dolu/boş dizisi) kullanılır.
 
-**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

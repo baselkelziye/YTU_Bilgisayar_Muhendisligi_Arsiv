@@ -25,4 +25,4 @@ Dersler 15 Ekim 2020 Perşembe günü başlamıştır. Ders haftada bir gün (Pe
 - 29 Ekim 2020 resmî tatil olduğu için ders yapılmamıştır.
 - 17 ile 24 Aralık arasında anlatılan prestij metrikleri konusu kayıtlarda yer almamaktadır.
 
-**Not:** İsterseniz bu kayıtları NotebookLM gibi bir araca atıp daha istifadeli hale getirebilirsiniz.
+**Not:** İsterseniz bu kayıtları Gemini Notebook gibi bir araca atıp daha istifadeli hale getirebilirsiniz.

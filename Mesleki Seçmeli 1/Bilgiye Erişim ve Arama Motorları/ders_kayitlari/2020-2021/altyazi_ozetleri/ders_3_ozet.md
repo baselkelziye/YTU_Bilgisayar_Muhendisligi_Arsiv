@@ -217,4 +217,4 @@ Değerler Python ile hesaplanıp doğrulandı.
   - 01:58–02:00 arasında tekrar eden "the three of the three" satırları ve bozuk İngilizce cümleler, hocanın Türkçe anlattığı kısmın hatalı çevirisidir.
   - "Agrava" Agrawal, "AppRory" Apriori, "download closure" downward closure, "pre-cooked K item item sets" frequent $k$-itemsets demektir.
 
-**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

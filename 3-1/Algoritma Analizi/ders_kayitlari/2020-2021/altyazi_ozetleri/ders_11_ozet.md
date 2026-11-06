@@ -128,4 +128,4 @@ Bir anahtar (key) hash fonksiyonuna verilir. Fonksiyon bir adres üretir. Değer
 - **Hashing karmaşıklığı:** $O(1)$ ortalama durumdur. Kötü bir hash fonksiyonunda bütün anahtarlar aynı adrese düşerse en kötü durum $O(n)$ olur.
 - Altyazıda "Best Gaze", "Divide and Concur", "Core Partition", "collusion" diye geçen terimlerin doğruları: best case, divide and conquer, Hoare partition, collision.
 
-**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

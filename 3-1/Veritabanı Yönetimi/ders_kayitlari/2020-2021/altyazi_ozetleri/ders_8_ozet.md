@@ -125,4 +125,4 @@ MAC'de ise hem kullanıcının hem de verinin bir güvenlik seviyesi vardır. Ve
 
 Gerçek hayatta binlerce kullanıcı ve onlarca tablo vardır. Her bir kullanıcıya tek tek yetki tanımlamak hem zaman alıcıdır hem de hata yapmaya açıktır. Roller (role) tanımlayarak bu sorun çözülür. Örneğin "Dekan" rolü, "Profesör" rolü, "Öğrenci" rolleri tanımlanır. Her role belirli yetkiler verilir, ardından kullanıcılar bu rollere atanır. Bir kişi hem Dekan hem de Profesör rolünde olabilir. Kişiler değiştiğinde rollerin yeniden tanımlanmasına gerek kalmaz, sadece yeni kişi ilgili role atanır.
 
-* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

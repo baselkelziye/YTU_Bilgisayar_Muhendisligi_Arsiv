@@ -447,4 +447,4 @@ $$
 - Hoca bir sonraki konuyu bir yerde "LSTM" diye söylüyor. Ders sonunda bunun cebirsel model LSA olduğu anlaşılıyor.
 - Altyazıdaki "Bullun/boğulun model" Boole (Boolean) modeli, "kosan simularite" kosinüs benzerliği, "Lievenstein" Levenshtein, "safiks tri" suffix tree demektir.
 
-İsterseniz bu kayıtları NotebookLM gibi bir araca atıp daha istifadeli hale getirebilirsiniz.
+İsterseniz bu kayıtları Gemini Notebook gibi bir araca atıp daha istifadeli hale getirebilirsiniz.

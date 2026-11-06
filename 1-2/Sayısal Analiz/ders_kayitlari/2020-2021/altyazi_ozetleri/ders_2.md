@@ -37,4 +37,4 @@ Matris işlemleri özellikle denklem takımlarının çözümünde ve matris ter
 
 Uygulama açısından Python ve MedLab araçlarından yararlanılacak olup, projeler C dilinde yazılacaktır. Fonksiyonların bilgisayarda temsili için veri yapıları kullanımı önemlidir; polinom fonksiyonları dizilerle modellenebilir.
 
-* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

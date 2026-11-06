@@ -726,4 +726,4 @@ Bir sonraki adım Tür 3'ün pratik karşılığı olan düzenli ifadelerdir.
 
 > **Ders sonrası not:** Altyazıda bozuk geçen terimlerin doğru yazımları: "Shomsky", "Narmu Shomsky" = Noam Chomsky; "NLTL kit" = NLTK; "LSTM" (sözcük birim için) = lexeme, LSTM bir sinir ağı modelidir; "bronluk korpus" = Brown corpus; "embedding durumlar" = ambiguous durumlar; "Santos" = sentence; "Hidden Markov" için "D-Dimarkov"; "clini" = Kleene; "tribank" = treebank; "ruled" = root; "word phrase" = verb phrase; "Excellary carry" = auxiliary; "kilgen, kili" uyum dışı ek listesinde okunmuyor; "word1vec" burada büyük ihtimalle Word gibi bir kelime işlemcinin yanlış yazımıdır.
 
-**Not:** İsterseniz bu kayıtları NotebookLM gibi bir araca atıp daha istifadeli hale getirebilirsiniz.
+**Not:** İsterseniz bu kayıtları Gemini Notebook gibi bir araca atıp daha istifadeli hale getirebilirsiniz.

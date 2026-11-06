@@ -207,4 +207,4 @@ $$\frac{y'}{y}=\frac13\left[\frac{1}{x+1}+\frac{2x}{x^2+1}-\frac{3x^2}{x^3+1}-\f
 - **Soru 11'in uzantısı:** Hocanın uydurduğu soruda öğrenciler bir işaret hatasını düzeltti ($1-\dfrac{\sin a}{a}$'nın türevinde eksi işareti). Soru bitirilmedi.
 - **Altyazıda anlaşılmayan yerler:** Bazı yerlerde altyazı döngüye giriyor ("bu bölümde...", "yi'ye altyazı..."). Bu kısımlar tahtadaki çözümden tamamlandı.
 
-**Not:** İsterseniz bu kayıtları NotebookLM gibi bir araca atıp daha istifadeli hale getirebilirsiniz.
+**Not:** İsterseniz bu kayıtları Gemini Notebook gibi bir araca atıp daha istifadeli hale getirebilirsiniz.

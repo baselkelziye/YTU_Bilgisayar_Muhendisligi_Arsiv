@@ -38,4 +38,4 @@
 - Mesafe ölçüsü seçimi kritik önemdedir. Nümerik verilerde Öklid veya Manhattan mesafesi kullanılabilirken, ölçek ve korelasyon etkilerini dikkate almak için Mahalanobis mesafesi tercih edilebilir. Metin veya vektör yönelimi önemli olduğunda kosinüs benzerliği anlamlıdır.
 - Binary özelliklerde tüm eşleşmeler aynı öneme sahip olmayabilir. Simple matching tüm eşleşmeleri dikkate alırken, Jaccard yalnızca bir-bir eşleşmelerine odaklanır. Bu nedenle değişkenlerin anlamına göre doğru benzerlik ölçütü seçilmelidir.
 
-* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

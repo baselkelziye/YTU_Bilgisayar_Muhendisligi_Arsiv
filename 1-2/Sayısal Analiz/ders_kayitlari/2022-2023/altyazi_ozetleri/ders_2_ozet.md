@@ -90,4 +90,4 @@
 - **Durma ölçütü:** $\frac{|b - a|}{2^n} \le \varepsilon$ ölçütü ikiye bölme yöntemine özgüdür: $n$ adım sonunda kökü içeren aralığın uzunluğu $\frac{b - a}{2^n}$ olur. Burada $a$ ve $b$ başlangıç aralığının uçlarıdır. Diğer yöntemlerde genellikle ardışık iki yaklaşımın farkına bakılır: $|x_n - x_{n-1}| \le \varepsilon$ veya $\left|\frac{x_n - x_{n-1}}{x_n}\right| \le \varepsilon$.
 - **Polinom örneğinde hatanın sıfır olması:** 4. dereceden polinomun 4. dereceden Taylor açılımı polinomun kendisidir. Bu yüzden 4. terimde hata tam sıfır oldu. Ders 1 notlarında belirtildiği gibi polinomlar sonlu bir Taylor serisine açılır.
 
-* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

@@ -41,4 +41,4 @@
 - Firewall, ağ sınırında veya host üzerinde çalışabilir. Basit kurallar belirli porta gelen trafiği düşürebilir; daha gelişmiş durum bilgili firewall bağlantı durumunu takip eder. Uygulama katmanındaki SQL injection gibi saldırılar için yalnız port filtresi yetmez; içerik analizi veya uygulama güvenliği gerekir.
 - IDS/IPS sistemleri bilinen saldırı imzalarını, anormal trafik hacmini veya protokol dışı davranışı tespit etmeye çalışır. VPN ise iletişimi şifreleyerek dış gözlemciye karşı koruma sağlar; fakat uç nokta ele geçirilmişse tünelin güvenliği saldırıyı engellemez.
 
-* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

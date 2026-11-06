@@ -197,4 +197,4 @@
 - **Ankara'yı tanıyan ilk devlet:** Ankara'yı ilk tanıyan Sovyet Rusya'dır. Fransa, Ankara'yı tanıyan ilk İtilaf devletidir. Hoca ikisini de doğru söylüyor ama bir yerde Fransa için "ilk devlet" ifadesi geçiyor; doğrusu "ilk İtilaf devleti"dir.
 - **Kuveyt:** Altyazıda "kuvvetli bir ülke yoktur" diye geçen yer bağlamdan Kuveyt'tir (Basra vilayetine bağlı küçük bir kasaba).
 
-**Not:** İsterseniz bu kayıtları NotebookLM gibi bir araca atıp daha istifadeli hale getirebilirsiniz.
+**Not:** İsterseniz bu kayıtları Gemini Notebook gibi bir araca atıp daha istifadeli hale getirebilirsiniz.

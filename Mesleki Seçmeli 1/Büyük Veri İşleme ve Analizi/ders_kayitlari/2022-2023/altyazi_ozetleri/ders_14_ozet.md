@@ -36,4 +36,4 @@ Tarih: 31 Mayıs 2023 Çarşamba. Online (Zoom). Bu oturum ders anlatımı deği
 
 - 1. derste gösterilen takvimde 31 Mayıs 2023 (14. hafta) vize mazeret sınavı tarihi olarak geçiyordu. Bu kayıtta ise o gün proje değerlendirmeleri yapılıyor. Mazeret sınavının da aynı gün yapılıp yapılmadığı kayıttan anlaşılmıyor.
 
-**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

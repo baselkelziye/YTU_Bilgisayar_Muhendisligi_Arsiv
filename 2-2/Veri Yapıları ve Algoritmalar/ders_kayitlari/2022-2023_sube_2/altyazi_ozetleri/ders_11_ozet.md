@@ -255,4 +255,4 @@ Tahtadaki ilk taslakta bulunan hatalar:
 - **Dizi boyutu:** Hoca $n$ elemanlık bir BST için en kötü durumda $2^n$ göz gerektiğini söyledi. Tamamen tek tarafa yaslı ağaçta en derin düğümün indeksi $2^n - 2$ olur; yani $2^n - 1$ göz yeter. Sonuç yine üstel büyüklüktedir; dizi gösterimi dengesiz ağaçlar için israflıdır.
 - **Özyineleme ve verimlilik:** Derste özyinelemeli gezinmenin "daha verimli" olduğu söylendi. Özyineleme kodu kısaltır ve kolaylaştırır; çalışma süresi yineli (iterative) çözümle aynı mertebededir ($O(n)$), ek olarak yığın alanı kullanır.
 
-**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
