@@ -2970,6 +2970,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
       - ℹ️ Yıldızlar 1 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
   - 👨‍🏫 👩‍🏫 **Dersi Yürüten Akademisyenler:**
     - [AÖ](#-dr-ayşe-öcal)
+    - [ZCT](#-dr-ziya-cihan-tayşi)
   - 📂 [Ders Klasörü](./Lisans%C3%BCst%C3%BC/Ara%C5%9Ft%C4%B1rma%20Y%C3%B6ntemleri%20ve%20Bilimsel%20Etik)
 
 
@@ -4612,6 +4613,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
   - 📖 [Bilgisayar Bilimlerine Giriş](#-bilgisayar-bilimlerine-giriş--en-popüler-ders-28-oy)
   - 📖 [İşletim Sistemleri](#-i̇şletim-sistemleri)
   - 📖 [Veri İletişimi](#-veri-i̇letişimi)
+  - 📖 [Araştırma Yöntemleri ve Bilimsel Etik](#-araştırma-yöntemleri-ve-bilimsel-etik)
 - ⭐ **Yıldız Sayıları:**
   - 🎭 Dersi Zevkli Anlatır Mı:	★☆☆☆☆☆☆☆☆☆
   - 🛣️ Dersi Kolay Geçer Miyim:	★☆☆☆☆☆☆☆☆☆
