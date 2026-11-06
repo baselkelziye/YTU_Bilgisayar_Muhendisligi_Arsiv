@@ -1,6 +1,6 @@
 # Makine Öğrenmesi Ders Kayıtları & Çalışma Özetleri
 
-> **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+> **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
 
 ### 📋 Genel Bilgiler
 * **Ders:** Makine Öğrenmesi (BLM5110)
@@ -196,7 +196,7 @@ Aşağıdaki tabloda her bir dersin konusu ile kısa ve genişletilmiş notları
     - Arkadaki örnekler sınır nereye konursa konsun doğru sınıflanır; sınıflandırmaya etkileri yoktur. Ön cephedeki örnekler destek vektörleridir.
   - Matematiği ezberlemeniz gerekmiyor; neyin nereden çıktığını bilin.
   - Margini maksimize etmek, $\lVert \mathbf{w} \rVert$'yi minimize etmek demektir.
-* **Detaylı Açıklamalar:** > **Not:** Bu özeti ve dersin altyazı dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+* **Detaylı Açıklamalar:** > **Not:** Bu özeti ve dersin altyazı dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
 
 ### 🔹 Ders 10: Eğitmensiz Öğrenme: K-Means, Dirsek Yöntemi ve Hiyerarşik Öbekleme
 * **Genel Konular:**
@@ -279,4 +279,4 @@ Aşağıdaki tabloda her bir dersin konusu ile kısa ve genişletilmiş notları
     - Komedi izleyen herkes her komediyi sevmez. İşbirlikçi filtreleme bu alt seçimleri yakalamaya çalışır.
 * **Detaylı Açıklamalar:** 1. A kullanıcısının matristeki bütün kullanıcılara benzerliğini tek tek ölç (Pearson ya da kosinüs). 2. Benzerliği ölçerken yalnız iki kullanıcının ortak puanladığı ürünleri kullan. 3. Benzerlikleri büyükten küçüğe sırala, en benzer $K$ kullanıcıyı seç (k-NN mantığı). 4. A'nın izlemediği her ürün için, o ürünü izlemiş benzer kullanıcıların puanlarından tahmin hesapla. 5. Tahmini puanı en yüksek ürünleri (ya da bir eşiğin üstündekileri) öner.
 
-**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

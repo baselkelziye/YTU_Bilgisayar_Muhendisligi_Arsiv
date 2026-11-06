@@ -51,7 +51,7 @@ Her özet dosyası şu formata birebir uymalıdır:
 - Dersteki konuları, kavramları ve varsa kod/devre örneklerini daha uzun ve detaylı paragraflar halinde açıkla.
 - Bu kısım konuyu daha derinlemesine anlamak veya kaçırılan dersi telafi etmek isteyenler için kapsamlı bilgi içermelidir.
 
-* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
 ```
 
 **Önemli:** Eğer bir altyazı dosyasında sadece organizasyonel/lojistik konuşma varsa ve hiç akademik içerik yoksa, dosyayı şu kısa formatta oluştur:
@@ -89,7 +89,7 @@ Dersler [İlk Ders Tarihi] günü başlamıştır. Dosya adlarındaki `ders_x.sr
 
 - 13. hafta kayıt bulunmamaktadır.
 
-**Not:** İsterseniz bu kayıtları NotebookLM gibi bir araca atıp daha istifadeli hale getirebilirsiniz.
+**Not:** İsterseniz bu kayıtları Gemini Notebook gibi bir araca atıp daha istifadeli hale getirebilirsiniz.
 ```
 
 **Önemli:** Her ders satırında `ders_x.srt`: [Gerçek Tarih] formatı kullanılmalıdır. Tarihler, ilk ders başlangıç tarihinden itibaren haftalık periyotla hesaplanır. Hafta sonları, tatiller veya ara sınav haftaları nedeniyle atlanan haftalar varsa tarihler buna göre ayarlanır.

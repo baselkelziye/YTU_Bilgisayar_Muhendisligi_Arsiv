@@ -1,6 +1,6 @@
 # Bilgisayar Bilimlerine Giriş Ders Kayıtları & Çalışma Özetleri
 
-> **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+> **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
 
 ### 📋 Genel Bilgiler
 * **Ders:** Bilgisayar Bilimlerine Giriş (BLM1011)
@@ -718,4 +718,4 @@ Aşağıdaki tabloda her bir dersin konusu ile kısa ve genişletilmiş notları
   - Sıralı dizilerle çalışmak ve log N karmaşıklığında algoritmalar tasarlamak verimliliği çok artırır.
 * **Detaylı Açıklamalar:** Dönemin son dersidir. Ağ konusunun kalan kısımları (IP adresleri, alan adları, internet uygulamaları, mobil haberleşme, akış uygulamaları, web teknolojileri) kısaca anlatılır. Son bölümde binary search algoritması öğrencilere 20 dakika çözdürülür ve birlikte çizilip analiz edilir.
 
-**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

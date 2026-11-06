@@ -24,4 +24,4 @@ Ders kayıtları 9 Mart 2021 Salı günü başlamıştır. Dosya adlarındaki `d
 - 8. hafta (27 Nisan 2021) kayıt bulunmamaktadır.
 - 10. hafta (11 Mayıs 2021) kayıt bulunmamaktadır.
 
-**Not:** İsterseniz bu kayıtları NotebookLM gibi bir araca atıp daha istifadeli hale getirebilirsiniz.
+**Not:** İsterseniz bu kayıtları Gemini Notebook gibi bir araca atıp daha istifadeli hale getirebilirsiniz.

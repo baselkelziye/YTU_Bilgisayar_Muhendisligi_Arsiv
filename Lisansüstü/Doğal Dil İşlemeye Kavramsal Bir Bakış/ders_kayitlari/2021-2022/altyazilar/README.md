@@ -16,4 +16,4 @@ Ders haftada bir gün (Çarşamba) online olarak yapılmıştır. Kayıt arşivi
 
 - 1, 2 ve 3 numaralı kayıtlar ile dönemin önceki haftaları kayıt arşivinde bulunmamaktadır.
 
-**Not:** İsterseniz bu kayıtları NotebookLM gibi bir araca atıp daha istifadeli hale getirebilirsiniz.
+**Not:** İsterseniz bu kayıtları Gemini Notebook gibi bir araca atıp daha istifadeli hale getirebilirsiniz.

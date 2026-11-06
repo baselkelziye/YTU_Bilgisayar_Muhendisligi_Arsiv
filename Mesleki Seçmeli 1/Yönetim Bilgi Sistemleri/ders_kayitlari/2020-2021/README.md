@@ -1,6 +1,6 @@
 # Yönetim Bilgi Sistemleri Ders Kayıtları & Çalışma Özetleri
 
-> **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi daha verimli çalışabilirsiniz.
+> **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi daha verimli çalışabilirsiniz.
 
 ### Genel Bilgiler
 
@@ -524,4 +524,4 @@ Aşağıdaki tabloda her bir dersin konusu, kaynak markdown dosyası ve doğruda
 - Sipariş ve stok yönetiminde ürün miktarı, talep, tedarikçi, müşteri ve depo bilgileri birlikte izlenir. Ürün bittiğinde sistem yeniden tedarik veya üretim ihtiyacını belirleyebilir. Bu süreç doğru tasarlanmadığında sipariş karşılama, müşteri memnuniyeti ve tedarik planlaması olumsuz etkilenir.
 - CRM bağlantılı sistemlerde müşteri talebi, satın alma geçmişi, ürün ilgisi ve destek kayıtları satış süreciyle birlikte ele alınabilir. Böylece müşteri odaklı kararlar stok ve tedarik kararlarıyla ilişkilendirilebilir.
 
-> **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi daha verimli çalışabilirsiniz.
+> **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi daha verimli çalışabilirsiniz.

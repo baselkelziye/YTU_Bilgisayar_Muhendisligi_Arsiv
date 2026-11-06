@@ -1,6 +1,6 @@
 # Bilgisayar Mühendisleri için Sinyaller ve Sistemler Ders Kayıtları & Çalışma Özetleri
 
-> **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+> **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
 
 ### 📋 Genel Bilgiler
 * **Ders:** Bilgisayar Mühendisleri için Sinyaller ve Sistemler (BLM2041)
@@ -414,4 +414,4 @@ Aşağıdaki tabloda her bir dersin konusu, kaynak markdown dosyası ve doğruda
     - Küp varsa $n^2$ ile.
 * **Detaylı Açıklamalar:** b = [1, 0, 0] # pay: z^2 a = [1, -0.75, 0.125] # payda: z^2 - 0.75 z + 0.125 z, p, k = signal.tf2zpk(b, a) plt.scatter(z.real, z.imag, marker='o', label='sıfır') plt.scatter(p.real, p.imag, marker='x', label='kutup') plt.legend(); plt.axis('equal'); plt.show() ```
 
-**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

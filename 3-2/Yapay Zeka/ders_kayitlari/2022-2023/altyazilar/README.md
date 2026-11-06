@@ -26,4 +26,4 @@ Dersler 2 Mart 2023 Perşembe günü başlamıştır. Dosya adlarındaki `ders_x
 - 9. hafta vize haftası olduğu için kayıt bulunmamaktadır.
 - 14. hafta ders yapılmadığı için kayıt bulunmamaktadır.
 
-**Not:** İsterseniz bu kayıtları NotebookLM gibi bir araca atıp daha istifadeli hale getirebilirsiniz.
+**Not:** İsterseniz bu kayıtları Gemini Notebook gibi bir araca atıp daha istifadeli hale getirebilirsiniz.

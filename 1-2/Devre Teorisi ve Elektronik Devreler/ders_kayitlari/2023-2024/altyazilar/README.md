@@ -14,4 +14,4 @@ Dosya adlarındaki `ders_x.srt` ifadesinde `x`, ilgili kaydın kayıt arşivinde
 
 - Bu şubenin kayıt arşivinde yalnızca 3 numaralı ders kaydı bulunmaktadır. Hocanın derste belirttiğine göre ders normalde yüz yüze yapılıyordu; bu hafta zorunlu olarak online yapıldığı için kayıt alınmıştır.
 
-**Not:** İsterseniz bu kayıtları NotebookLM gibi bir araca atıp daha istifadeli hale getirebilirsiniz.
+**Not:** İsterseniz bu kayıtları Gemini Notebook gibi bir araca atıp daha istifadeli hale getirebilirsiniz.

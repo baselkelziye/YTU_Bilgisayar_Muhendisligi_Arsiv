@@ -1,6 +1,6 @@
 # Araştırma Yöntemleri ve Bilimsel Etik Ders Kayıtları & Çalışma Özetleri
 
-> **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+> **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
 
 ### 📋 Genel Bilgiler
 * **Ders:** Araştırma Yöntemleri ve Bilimsel Etik (BLM5004)
@@ -81,7 +81,7 @@ Aşağıdaki tabloda her bir dersin konusu ile kısa ve genişletilmiş notları
     - Scopus'ta da çok değerli dergiler var. Önemli olan indeks değil, gönderilen derginin kendisi.
   - Dergi bulma araçları yalnızca yardımcıdır.
     - Asıl iş:
-* **Detaylı Açıklamalar:** İsterseniz bu kayıtları NotebookLM gibi bir araca atıp daha istifadeli hale getirebilirsiniz.
+* **Detaylı Açıklamalar:** İsterseniz bu kayıtları Gemini Notebook gibi bir araca atıp daha istifadeli hale getirebilirsiniz.
 
 ### 🔹 Ders 3: Araştırma Destekleri: BAP, Kalkınma Ajansları, TÜBİTAK Programları ve Proje Ödevi
 * **Genel Konular:**
@@ -100,7 +100,7 @@ Aşağıdaki tabloda her bir dersin konusu ile kısa ve genişletilmiş notları
     - Çalışmalar karşılaştırılmalı ve sizin projenizle farkları ortaya konmalı.
   - Ar-Ge'de başarısızlık ihtimali vardır.
     - Riskleri ve B planlarını önceden, net olarak yazın.
-* **Detaylı Açıklamalar:** İsterseniz bu kayıtları NotebookLM gibi bir araca atıp daha istifadeli hale getirebilirsiniz.
+* **Detaylı Açıklamalar:** İsterseniz bu kayıtları Gemini Notebook gibi bir araca atıp daha istifadeli hale getirebilirsiniz.
 
 ### 🔹 Ders 4: Bilimsel Yazım: IMRAD Formatı, Makalenin Bölümleri ve Yazarlık Hakkı
 * **Genel Konular:**
@@ -278,4 +278,4 @@ Aşağıdaki tabloda her bir dersin konusu ile kısa ve genişletilmiş notları
   - **Soru-cevap:** Hoca her sunumdan sonra soru olup olmadığını sorar.
     - Çoğu sunumdan sonra soru gelmez ("her zaman olduğu gibi").
 
-**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

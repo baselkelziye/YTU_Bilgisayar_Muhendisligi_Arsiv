@@ -40,4 +40,4 @@ Kayıt arşivindeki ilk ders kaydı 5 Ekim 2020 Pazartesi gününe aittir. Ders 
 - 15 ve 16 numaralı ders kayıtları (23 ve 26 Kasım 2020) kayıt arşivinde bulunmamaktadır. Bu tarihler birinci ara sınav haftasına denk gelmektedir.
 - 29 Ekim 2020 Perşembe günü resmi tatil olduğu için ders yapılmamıştır.
 
-**Not:** İsterseniz bu kayıtları NotebookLM gibi bir araca atıp daha istifadeli hale getirebilirsiniz.
+**Not:** İsterseniz bu kayıtları Gemini Notebook gibi bir araca atıp daha istifadeli hale getirebilirsiniz.

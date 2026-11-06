@@ -1,6 +1,6 @@
 # Veri Yapıları ve Algoritmalar Ders Kayıtları & Çalışma Özetleri
 
-> **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+> **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
 
 ### 📋 Genel Bilgiler
 * **Ders:** Veri Yapıları ve Algoritmalar (BLM2512)
@@ -268,4 +268,4 @@ Aşağıdaki tabloda her bir dersin konusu, kaynak markdown dosyası ve doğruda
     - Eleman sayısı çok büyükse bu bir sorun olabilir. Selection sort, insertion sort, quicksort gibi algoritmalar bu yüzden dizinin kendisi üzerinde çalışır.
 * **Detaylı Açıklamalar:** Varsayım: anahtarlar 0 ile $R-1$ arasında tam sayılardır ve dizi indisi olarak kullanılabilir. Burada $R$ sembol sayısıdır (örnekte `a`-`f`, yani $R = 6$).
 
-**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

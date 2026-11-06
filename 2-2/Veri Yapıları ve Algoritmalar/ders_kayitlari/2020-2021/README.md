@@ -1,6 +1,6 @@
 # Veri Yapıları ve Algoritmalar Ders Kayıtları & Çalışma Özetleri
 
-> **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+> **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
 
 ### 📋 Genel Bilgiler
 * **Ders:** Veri Yapıları ve Algoritmalar
@@ -74,7 +74,7 @@ Aşağıdaki tabloda her bir dersin konusu, kaynak markdown dosyası ve doğruda
   - Öklid algoritması ve asal sayı elemesi temel algoritmik düşünme örnekleridir.
 * **Detaylı Açıklamalar:**
   Derste veri yapıları, algoritmaların üzerinde çalıştığı bilginin organize edilme biçimi olarak tanıtılır. Bir problemin çözümü yalnızca doğru adımları bulmaktan ibaret değildir; verinin nasıl tutulduğu da çözümün maliyetini belirler. Örneğin ilk girenin önce çıkması gereken durumda kuyruk, son girenin önce çıkması gereken durumda yığın, hiyerarşik ilişkilerde ağaç yapıları daha anlamlıdır. Algoritmalar anlatılırken sözde kod ve akış diyagramı gibi temsil biçimlerinin amacı, programlama dilinin ayrıntılarından bağımsız olarak çözüm akışını görünür hale getirmektir. Öklid algoritması ve asal sayı üretimi gibi örnekler, matematiksel bir fikrin adım adım işleyen bir hesaplama sürecine nasıl dönüştürüldüğünü gösterir.
-* **NotebookLM Çalışma Notu:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM veya benzeri bir yapay zeka aracına yükleyerek ders üzerinde daha verimli çalışabilirsiniz.
+* **Gemini Notebook Çalışma Notu:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook veya benzeri bir yapay zeka aracına yükleyerek ders üzerinde daha verimli çalışabilirsiniz.
 
 ### 🔹 Ders 1 Lab
 * **Genel Konular:**
@@ -104,7 +104,7 @@ Aşağıdaki tabloda her bir dersin konusu, kaynak markdown dosyası ve doğruda
   - Dersin ana veri yapıları listeler, stack, queue, ağaçlar, heap ve graflardır.
 * **Detaylı Açıklamalar:**
   Bu kayıt, doğrudan yeni bir teknik konuyu ayrıntılı biçimde işlemekten çok, Veri Yapıları ve Algoritmalar dersinin nasıl çalışılması gerektiğini ve dönem boyunca hangi kavramların izleneceğini açıklar. Dersin merkezinde, verilen bir problemi uygun veri yapısını seçerek ve kendi algoritmik çözümünü kurarak çözme becerisi vardır. Bu nedenle kodlama çalışmalarında hazır kütüphanelerle sonucu almak yerine, bağlantıların, ekleme-silme adımlarının, sıralama veya arama mantığının öğrenci tarafından tasarlanması beklenir. C dili bu uygulamalar için temel dil olarak kullanılır; amaç yalnızca çalışan bir program elde etmek değil, veri yapısının bellekte ve algoritma akışında nasıl yönetildiğini görebilmektir.
-* **NotebookLM Çalışma Notu:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM veya benzeri bir yapay zeka aracına yükleyerek ders üzerinde daha verimli çalışabilirsiniz.
+* **Gemini Notebook Çalışma Notu:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook veya benzeri bir yapay zeka aracına yükleyerek ders üzerinde daha verimli çalışabilirsiniz.
 
 ### 🔹 Ders 2
 * **Genel Konular:**
@@ -133,7 +133,7 @@ Aşağıdaki tabloda her bir dersin konusu, kaynak markdown dosyası ve doğruda
   - Rekürsif fonksiyonlarda maliyet yineleme denklemiyle modellenir.
 * **Detaylı Açıklamalar:**
   Bu derste algoritma analizinin temel amacı, farklı çözüm yollarını adil şekilde karşılaştırabilmektir. Bir programın gerçek çalışma süresi işlemci, derleyici, işletim sistemi ve kodlama ayrıntılarından etkilenir. Teorik analiz bu etkileri dışarıda bırakıp, algoritmanın girdi boyutuna bağlı olarak kaç temel işlem yaptığına odaklanır. Böylece doğrusal, logaritmik, karesel veya üstel büyüyen çözümler birbirinden ayrılır. Rekürsif algoritmalarda ise fonksiyonun daha küçük boyutlu aynı probleme yaptığı çağrılar maliyet hesabına dahil edilir; bu yapı yineleme denklemleriyle ifade edilir.
-* **NotebookLM Çalışma Notu:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM veya benzeri bir yapay zeka aracına yükleyerek ders üzerinde daha verimli çalışabilirsiniz.
+* **Gemini Notebook Çalışma Notu:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook veya benzeri bir yapay zeka aracına yükleyerek ders üzerinde daha verimli çalışabilirsiniz.
 
 ### 🔹 Ders 2 Lab
 * **Genel Konular:**
@@ -153,7 +153,7 @@ Aşağıdaki tabloda her bir dersin konusu, kaynak markdown dosyası ve doğruda
   - Gösterim, algoritmanın mantığını sadeleştirmelidir.
 * **Detaylı Açıklamalar:**
   Bu uygulama kaydında akademik içerik ağırlıklı olarak akış diyagramı yorumlama üzerindedir. Döngülerin ve koşullu dallanmaların görsel gösterimi, algoritma tasarımında hata yakalamayı kolaylaştırır. Ancak diyagramın faydalı olabilmesi için her okun anlamı açık olmalı, döngü gövdesi ile döngü çıkışı birbirine karıştırılmamalıdır.
-* **NotebookLM Çalışma Notu:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM veya benzeri bir yapay zeka aracına yükleyerek ders üzerinde daha verimli çalışabilirsiniz.
+* **Gemini Notebook Çalışma Notu:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook veya benzeri bir yapay zeka aracına yükleyerek ders üzerinde daha verimli çalışabilirsiniz.
 
 ### 🔹 Ders 3
 * **Genel Konular:**
@@ -182,7 +182,7 @@ Aşağıdaki tabloda her bir dersin konusu, kaynak markdown dosyası ve doğruda
   - Çift bağlı listede hem ileri hem geri bağlantı vardır.
 * **Detaylı Açıklamalar:**
   Derste diziler ve bağlı listeler karşılaştırmalı biçimde ele alınır. Dizilerde bir elemana indisle doğrudan erişmek kolaydır; fakat araya eleman eklemek veya ortadan eleman silmek, kalan elemanların kaydırılmasını gerektirebilir. Bağlı listelerde ise elemanlar bellekte ardışık olmak zorunda değildir; bağlantılar yapının mantıksal sırasını belirler. Sıralı bir bağlı listeye ekleme yapılırken uygun konum bulunur, yeni düğümün bağlantısı ayarlanır ve önceki düğüm yeni düğümü gösterecek şekilde güncellenir. Silmede ise hedef düğüm liste dışına alınır ve bellek güvenliği için serbest bırakılır.
-* **NotebookLM Çalışma Notu:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM veya benzeri bir yapay zeka aracına yükleyerek ders üzerinde daha verimli çalışabilirsiniz.
+* **Gemini Notebook Çalışma Notu:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook veya benzeri bir yapay zeka aracına yükleyerek ders üzerinde daha verimli çalışabilirsiniz.
 
 ### 🔹 Ders 3 Lab
 * **Genel Konular:**
@@ -202,7 +202,7 @@ Aşağıdaki tabloda her bir dersin konusu, kaynak markdown dosyası ve doğruda
   - Boş bağlantı listenin sonunu gösterir.
 * **Detaylı Açıklamalar:**
   Uygulama kaydı, bağlı liste işlemlerinde yapılan tipik hataları görünür hale getirir. Bir düğümün bağlantısını değiştirmeden önce hangi bağlantının korunacağı belirlenmelidir. Özellikle araya ekleme ve silme işlemlerinde hem mevcut düğüm hem önceki düğüm bilgisi gerekir. Akış diyagramı üzerinden düşünmek, döngünün hangi koşulda devam edip hangi koşulda çıkacağını netleştirir.
-* **NotebookLM Çalışma Notu:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM veya benzeri bir yapay zeka aracına yükleyerek ders üzerinde daha verimli çalışabilirsiniz.
+* **Gemini Notebook Çalışma Notu:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook veya benzeri bir yapay zeka aracına yükleyerek ders üzerinde daha verimli çalışabilirsiniz.
 
 ### 🔹 Ders 5
 * **Genel Konular:**
@@ -231,7 +231,7 @@ Aşağıdaki tabloda her bir dersin konusu, kaynak markdown dosyası ve doğruda
   - Dairesel kuyruk dizi alanını verimli kullanır.
 * **Detaylı Açıklamalar:**
   Bu derste doğrusal veri yapılarının özel erişim kurallarıyla nasıl farklılaştığı gösterilir. Stack, özellikle geri dönüş gerektiren işlemlerde doğal bir model sunar; fonksiyon çağrılarının çalışma zamanı yığını bunun tipik örneğidir. Parantez dengeleme probleminde her açılış parantezi yığına konur, kapanış parantezi geldiğinde en üstteki öğeyle eşleşme aranır. Queue ise sıraya alma mantığını temsil eder; işlemci kuyrukları, yazdırma kuyrukları ve genişlik öncelikli gezinti gibi örneklerde kullanılır. Dizi tabanlı kuyrukta alanı boşa harcamamak için baş ve son indisleri modüler aritmetik ile döndürülür.
-* **NotebookLM Çalışma Notu:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM veya benzeri bir yapay zeka aracına yükleyerek ders üzerinde daha verimli çalışabilirsiniz.
+* **Gemini Notebook Çalışma Notu:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook veya benzeri bir yapay zeka aracına yükleyerek ders üzerinde daha verimli çalışabilirsiniz.
 
 ### 🔹 Ders 5 Lab
 * **Genel Konular:**
@@ -250,7 +250,7 @@ Aşağıdaki tabloda her bir dersin konusu, kaynak markdown dosyası ve doğruda
   - Veri yapısı davranışı test senaryolarıyla kontrol edilmelidir.
 * **Detaylı Açıklamalar:**
   Bu uygulama kaydı, stack ve queue konularının kodlama tarafına hazırlık niteliğindedir. Akademik olarak öne çıkan nokta, veri yapısının soyut davranışı ile implementasyon ayrıntılarının birlikte düşünülmesidir. Bir yığın diziyle de bağlı listeyle de kurulabilir; ancak dışarıdan görülen davranışın son giren ilk çıkar olması gerekir. Benzer şekilde kuyrukta ekleme ve çıkarma uçlarının ayrılması FIFO düzenini korur.
-* **NotebookLM Çalışma Notu:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM veya benzeri bir yapay zeka aracına yükleyerek ders üzerinde daha verimli çalışabilirsiniz.
+* **Gemini Notebook Çalışma Notu:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook veya benzeri bir yapay zeka aracına yükleyerek ders üzerinde daha verimli çalışabilirsiniz.
 
 ### 🔹 Ders 6
 * **Genel Konular:**
@@ -279,7 +279,7 @@ Aşağıdaki tabloda her bir dersin konusu, kaynak markdown dosyası ve doğruda
   - Inorder gezinti BST'de sıralı çıktı verir.
 * **Detaylı Açıklamalar:**
   Derste ağaçlar, bağlı yapılardan hiyerarşik yapılara geçiş olarak ele alınır. Bir ağacın kökü başlangıç noktasıdır; yapraklar çocuğu olmayan düğümlerdir. İkili ağaçların diziyle gösterimi, heap gibi yapılara temel hazırlar. İkili arama ağacında her düğüm yerleştirilirken mevcut düğümle karşılaştırılır; küçükse sola, büyükse sağa ilerlenir. Bu özellik korunduğunda arama işlemi de aynı karşılaştırma mantığıyla yapılır. Ancak ağaç dengesiz büyürse performans bağlı listeye yaklaşabilir.
-* **NotebookLM Çalışma Notu:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM veya benzeri bir yapay zeka aracına yükleyerek ders üzerinde daha verimli çalışabilirsiniz.
+* **Gemini Notebook Çalışma Notu:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook veya benzeri bir yapay zeka aracına yükleyerek ders üzerinde daha verimli çalışabilirsiniz.
 
 ### 🔹 Ders 6 Lab
 * **Genel Konular:**
@@ -299,7 +299,7 @@ Aşağıdaki tabloda her bir dersin konusu, kaynak markdown dosyası ve doğruda
   - Sıralama ve karşılaştırma işlemleri maliyet doğurur.
 * **Detaylı Açıklamalar:**
   Bu uygulama kaydı, ağaç konusuna geçişte kullanılacak kavramları pekiştirir. Özellikle düğümlerin seviyeleri, ağacın yüksekliği ve alt ağaçların bağımsız birer ağaç gibi değerlendirilebilmesi önemlidir. Kodlama tarafında ise her karşılaştırmanın ve gezinmenin maliyete katkısı olduğu için çözümün karmaşıklığı göz ardı edilmemelidir.
-* **NotebookLM Çalışma Notu:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM veya benzeri bir yapay zeka aracına yükleyerek ders üzerinde daha verimli çalışabilirsiniz.
+* **Gemini Notebook Çalışma Notu:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook veya benzeri bir yapay zeka aracına yükleyerek ders üzerinde daha verimli çalışabilirsiniz.
 
 ### 🔹 Ders 7
 * **Genel Konular:**
@@ -329,7 +329,7 @@ Aşağıdaki tabloda her bir dersin konusu, kaynak markdown dosyası ve doğruda
   - Heap sort karşılaştırmaya dayalı bir sıralama yöntemidir.
 * **Detaylı Açıklamalar:**
   Heap, ağaç yapısının öncelik ilişkisiyle özelleştirilmiş halidir. Max-heap'te en büyük değer kökte, min-heap'te en küçük değer kökte bulunur. Bu özellik, en öncelikli elemanı hızlıca almak için kullanılır. Heap'in complete binary tree olması, onu dizi içinde boşluk bırakmadan saklamayı sağlar. Heap sort algoritmasında önce dizi heap haline getirilir, ardından kökteki eleman sona taşınır ve kalan bölüm yeniden heapify edilir. Böylece sıralı sonuç elde edilir.
-* **NotebookLM Çalışma Notu:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM veya benzeri bir yapay zeka aracına yükleyerek ders üzerinde daha verimli çalışabilirsiniz.
+* **Gemini Notebook Çalışma Notu:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook veya benzeri bir yapay zeka aracına yükleyerek ders üzerinde daha verimli çalışabilirsiniz.
 
 ### 🔹 Ders 7 Lab
 * **Genel Konular:**
@@ -349,7 +349,7 @@ Aşağıdaki tabloda her bir dersin konusu, kaynak markdown dosyası ve doğruda
   - Teorik analiz ile deneysel gözlem birlikte yorumlanmalıdır.
 * **Detaylı Açıklamalar:**
   Bu uygulama kaydı, algoritma analizinin pratik tarafını ele alır. Bir algoritmanın Big-O sınıfı teorik büyüme davranışını gösterirken, gerçek çalışma süresi deneysel ölçümlerle gözlenebilir. Girdi boyutunu kademeli artırmak ve her boyutta çoklu tekrar yapmak, ölçüm gürültüsünü azaltır. Sonuçların grafikleştirilmesi, doğrusal, logaritmik veya karesel büyümenin gözle görülmesini sağlar.
-* **NotebookLM Çalışma Notu:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM veya benzeri bir yapay zeka aracına yükleyerek ders üzerinde daha verimli çalışabilirsiniz.
+* **Gemini Notebook Çalışma Notu:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook veya benzeri bir yapay zeka aracına yükleyerek ders üzerinde daha verimli çalışabilirsiniz.
 
 ### 🔹 Ders 9
 * **Genel Konular:**
@@ -379,7 +379,7 @@ Aşağıdaki tabloda her bir dersin konusu, kaynak markdown dosyası ve doğruda
   - Daha fazla bellek kullanımı daha az karşılaştırma sağlayabilir.
 * **Detaylı Açıklamalar:**
   Substring arama, bir karakter dizisi içinde belirli bir örüntünün hangi konumda geçtiğini bulma problemidir. Brute force yöntemi, örüntüyü metnin her olası konumuna yerleştirip karakter karakter karşılaştırır. Bu yöntem kodlaması kolay olduğu için küçük verilerde yeterli olabilir; fakat büyük metinlerde maliyeti artar. Boyer-Moore ve Horspool yaklaşımlarında uyuşmazlık oluştuğunda örüntünün ne kadar kaydırılabileceği önceden hesaplanan tablolardan yararlanılarak belirlenir. Böylece bazı karakterler hiç karşılaştırılmadan geçilebilir.
-* **NotebookLM Çalışma Notu:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM veya benzeri bir yapay zeka aracına yükleyerek ders üzerinde daha verimli çalışabilirsiniz.
+* **Gemini Notebook Çalışma Notu:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook veya benzeri bir yapay zeka aracına yükleyerek ders üzerinde daha verimli çalışabilirsiniz.
 
 ### 🔹 Ders 9 Lab
 * **Genel Konular:**
@@ -399,7 +399,7 @@ Aşağıdaki tabloda her bir dersin konusu, kaynak markdown dosyası ve doğruda
   - Karakter karşılaştırmaları substring aramada temel maliyettir.
 * **Detaylı Açıklamalar:**
   Bu uygulama kaydı, koşul kurma ve karşılaştırma sayma becerilerini destekler. Bir sayının aralıklara göre sınıflandırılması basit görünse de sınırların dahil olup olmadığı ve aralıkların çakışıp çakışmadığı algoritmanın doğruluğunu belirler. Aynı düşünce substring aramada da görülür: her karakter karşılaştırması maliyete katkı sağlar ve daha iyi algoritmalar gereksiz karşılaştırmaları azaltmaya çalışır.
-* **NotebookLM Çalışma Notu:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM veya benzeri bir yapay zeka aracına yükleyerek ders üzerinde daha verimli çalışabilirsiniz.
+* **Gemini Notebook Çalışma Notu:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook veya benzeri bir yapay zeka aracına yükleyerek ders üzerinde daha verimli çalışabilirsiniz.
 
 ### 🔹 Ders 10
 * **Genel Konular:**
@@ -428,7 +428,7 @@ Aşağıdaki tabloda her bir dersin konusu, kaynak markdown dosyası ve doğruda
   - Rekürsif bölme tek elemana kadar devam eder.
 * **Detaylı Açıklamalar:**
   Greedy algoritmalar, karar anında en avantajlı görünen seçimi yaparak ilerler. Para üstü verme gibi bazı para sistemlerinde bu yaklaşım optimal sonuç verebilir; fakat her problem için garanti yoktur. Divide and conquer yaklaşımı ise problemi daha küçük parçalara ayırır. Merge sort bu yaklaşımın klasik örneğidir: dizi sürekli ikiye bölünür, tek elemanlı parçalar sıralı kabul edilir ve ardından bu parçalar sıralı biçimde birleştirilir. Böylece büyük problem, daha kolay yönetilen alt problemlerin birleşimiyle çözülür.
-* **NotebookLM Çalışma Notu:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM veya benzeri bir yapay zeka aracına yükleyerek ders üzerinde daha verimli çalışabilirsiniz.
+* **Gemini Notebook Çalışma Notu:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook veya benzeri bir yapay zeka aracına yükleyerek ders üzerinde daha verimli çalışabilirsiniz.
 
 ### 🔹 Ders 11
 * **Genel Konular:**
@@ -459,7 +459,7 @@ Aşağıdaki tabloda her bir dersin konusu, kaynak markdown dosyası ve doğruda
   - Küçük partitionlarda insertion sort kullanılabilir.
 * **Detaylı Açıklamalar:**
   Bu derste böl ve yönet yaklaşımının yalnızca mekanik bir ikiye bölme işlemi olmadığı vurgulanır. Substring arama gibi problemlerde örüntü parça sınırlarını aşabileceği için metni bağımsız bölmek doğru sonuç vermeyebilir. Quick sort ise bölme kararını dizinin indislerine değil, pivot değerine göre verir. Partition işlemi, pivotu sıralı dizide bulunması gereken konuma taşır ve kalan alt parçalar aynı yöntemle rekürsif olarak sıralanır. Ortalama durumda hızlıdır; ancak dengesiz bölünmeler performansı düşürür.
-* **NotebookLM Çalışma Notu:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM veya benzeri bir yapay zeka aracına yükleyerek ders üzerinde daha verimli çalışabilirsiniz.
+* **Gemini Notebook Çalışma Notu:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook veya benzeri bir yapay zeka aracına yükleyerek ders üzerinde daha verimli çalışabilirsiniz.
 
 ### 🔹 Ders 11 Lab
 * **Genel Konular:**
@@ -479,7 +479,7 @@ Aşağıdaki tabloda her bir dersin konusu, kaynak markdown dosyası ve doğruda
   - Sol ve sağ sınırlar kodda dikkatli taşınmalıdır.
 * **Detaylı Açıklamalar:**
   Bu uygulama kaydı, sıralama algoritmalarının kod düzeyinde nasıl takip edileceğine odaklanır. Rekürsif algoritmalarda her çağrı kendi alt problem aralığını işler. Merge sort'ta bu aralıklar sıralı biçimde birleştirilir; quick sort'ta ise pivotun etrafında yeniden düzenlenir. Kod yazarken taban durumun doğru kurulması, sol-sağ indislerin doğru verilmesi ve yardımcı fonksiyonların ayrı test edilmesi önemlidir.
-* **NotebookLM Çalışma Notu:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM veya benzeri bir yapay zeka aracına yükleyerek ders üzerinde daha verimli çalışabilirsiniz.
+* **Gemini Notebook Çalışma Notu:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook veya benzeri bir yapay zeka aracına yükleyerek ders üzerinde daha verimli çalışabilirsiniz.
 
 ### 🔹 Ders 12
 * **Genel Konular:**
@@ -511,7 +511,7 @@ Aşağıdaki tabloda her bir dersin konusu, kaynak markdown dosyası ve doğruda
   - BFS kuyruk, DFS rekürsiyon/stack mantığıyla ilişkilidir.
 * **Detaylı Açıklamalar:**
   Graflar, nesneler arasındaki ilişkileri modellemek için kullanılan çok genel veri yapılarıdır. Bir şehir haritasında kavşaklar düğüm, yollar kenar; sosyal ağda kişiler düğüm, takip/arkadaşlık ilişkileri kenar olarak düşünülebilir. Grafın çizimde nasıl göründüğü önemli değildir; hangi düğümlerin hangi kenarlarla bağlı olduğu esastır. Komşuluk listesi her düğümün komşularını saklar ve seyrek graflarda bellek açısından avantajlıdır. Komşuluk matrisi ise iki düğüm arasında kenar olup olmadığını hızlı sorgulatır, fakat daha fazla bellek kullanır.
-* **NotebookLM Çalışma Notu:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM veya benzeri bir yapay zeka aracına yükleyerek ders üzerinde daha verimli çalışabilirsiniz.
+* **Gemini Notebook Çalışma Notu:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook veya benzeri bir yapay zeka aracına yükleyerek ders üzerinde daha verimli çalışabilirsiniz.
 
 ### 🔹 Ders 12 Lab
 * **Genel Konular:**
@@ -531,7 +531,7 @@ Aşağıdaki tabloda her bir dersin konusu, kaynak markdown dosyası ve doğruda
   - Graf konuları BFS, DFS, MST ve shortest path için temel oluşturur.
 * **Detaylı Açıklamalar:**
   Bu uygulama kaydı, önceki algoritmik çözüm yaklaşımlarının soru çözümü üzerinden tekrarlandığı bir oturumdur. Merge sort'un bölme seviyeleri ve substring arama algoritmalarındaki tablo kullanımı öne çıkar. Bu tekrar, graf algoritmalarına geçmeden önce rekürsiyon, tablo okuma ve karşılaştırma sayma becerilerini güçlendirir.
-* **NotebookLM Çalışma Notu:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM veya benzeri bir yapay zeka aracına yükleyerek ders üzerinde daha verimli çalışabilirsiniz.
+* **Gemini Notebook Çalışma Notu:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook veya benzeri bir yapay zeka aracına yükleyerek ders üzerinde daha verimli çalışabilirsiniz.
 
 ### 🔹 Ders 13
 * **Genel Konular:**
@@ -561,7 +561,7 @@ Aşağıdaki tabloda her bir dersin konusu, kaynak markdown dosyası ve doğruda
   - Çevrim oluşturan kenar seçilmez.
 * **Detaylı Açıklamalar:**
   Topological sort, bir işi yapmadan önce yapılması gereken ön koşullar olduğunda kullanılan graf sıralamasıdır. DFS gezintisinde düğümlerin bitiş zamanları, bağımlılıkların doğru sıraya konmasına yardımcı olur. Dersin ana konusu olan minimum spanning tree probleminde ise bütün düğümler bağlı kalmalı, toplam kenar maliyeti en düşük olmalı ve çevrim oluşmamalıdır. Kruskal algoritması bu problemi greedy biçimde çözer: kenarlar ağırlıklarına göre sıralanır ve her kenar, mevcut seçilmiş kenarlarla çevrim oluşturmadığı sürece çözüme eklenir.
-* **NotebookLM Çalışma Notu:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM veya benzeri bir yapay zeka aracına yükleyerek ders üzerinde daha verimli çalışabilirsiniz.
+* **Gemini Notebook Çalışma Notu:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook veya benzeri bir yapay zeka aracına yükleyerek ders üzerinde daha verimli çalışabilirsiniz.
 
 ### 🔹 Ders 13 Lab
 * **Genel Konular:**
@@ -588,7 +588,7 @@ Aşağıdaki tabloda her bir dersin konusu, kaynak markdown dosyası ve doğruda
   - Algoritma seçimi veri özelliklerine bağlıdır.
 * **Detaylı Açıklamalar:**
   Bu uygulama dersi, sıralama algoritmalarını karşılaştırmalı düşünmeyi sağlar. Counting sort, elemanların hangi değerlerden kaç tane olduğunu sayar ve sonuç dizisini bu sayımlara göre kurar. Değer aralığı küçük olduğunda doğrusal zamana yaklaşabilir; ancak büyük aralıkta bellek maliyeti artar. Radix sort ve string sort, sayıları veya karakter dizilerini basamak/konum konum işleyerek sıralar. Bu yöntemler karşılaştırma tabanlı olmadıkları için uygun veri tiplerinde çok verimli olabilir.
-* **NotebookLM Çalışma Notu:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM veya benzeri bir yapay zeka aracına yükleyerek ders üzerinde daha verimli çalışabilirsiniz.
+* **Gemini Notebook Çalışma Notu:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook veya benzeri bir yapay zeka aracına yükleyerek ders üzerinde daha verimli çalışabilirsiniz.
 
 ### 🔹 Ders 14
 * **Genel Konular:**
@@ -617,7 +617,7 @@ Aşağıdaki tabloda her bir dersin konusu, kaynak markdown dosyası ve doğruda
   - Dijkstra negatif ağırlıklarda güvenilir değildir.
 * **Detaylı Açıklamalar:**
   Son teorik derste minimum spanning tree ve shortest path algoritmaları tamamlanır. Prim algoritması bir başlangıç düğümünden yola çıkarak ağacı genişletir; her adımda mevcut ağaçtan dışarıya giden en düşük maliyetli güvenli kenarı seçer. Dijkstra algoritması ise bir kaynak düğümden diğer düğümlere en kısa yolları bulur. Başlangıçta kaynak uzaklığı sıfır, diğerleri sonsuz kabul edilir. Kenarlar incelendikçe relax işlemiyle daha kısa yollar keşfedilir. Negatif kenarlar varsa Dijkstra'nın greedy kesinleştirme mantığı bozulabilir.
-* **NotebookLM Çalışma Notu:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM veya benzeri bir yapay zeka aracına yükleyerek ders üzerinde daha verimli çalışabilirsiniz.
+* **Gemini Notebook Çalışma Notu:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook veya benzeri bir yapay zeka aracına yükleyerek ders üzerinde daha verimli çalışabilirsiniz.
 
 ### 🔹 Ders 14 Lab
 * **Genel Konular:**
@@ -643,4 +643,4 @@ Aşağıdaki tabloda her bir dersin konusu, kaynak markdown dosyası ve doğruda
   - Kod ve rapor birlikte değerlendirilmelidir.
 * **Detaylı Açıklamalar:**
   Bu uygulama kaydı, graf konularının proje düzeyinde nasıl kullanılabileceğini gösterir. Takipçi verisi gibi ilişkisel verilerde her kullanıcı bir düğüm, takip ilişkisi yönlü bir kenar olarak temsil edilir. Bu yapı kurulduktan sonra düğümler arası en kısa yolların hesaplanması, erişilebilirlik ve bağlantı analizleri yapılabilir. Dijkstra gibi algoritmalar, kenar maliyetlerinin uygun olduğu durumlarda bu hesaplamalar için kullanılabilir.
-* **NotebookLM Çalışma Notu:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM veya benzeri bir yapay zeka aracına yükleyerek ders üzerinde daha verimli çalışabilirsiniz.
+* **Gemini Notebook Çalışma Notu:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook veya benzeri bir yapay zeka aracına yükleyerek ders üzerinde daha verimli çalışabilirsiniz.

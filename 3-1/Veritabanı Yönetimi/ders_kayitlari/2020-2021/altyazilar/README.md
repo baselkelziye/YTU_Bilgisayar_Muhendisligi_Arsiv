@@ -32,4 +32,4 @@ Dersler 9 Ekim 2020 Cuma günü başlamıştır. Dosya adlarındaki `ders_x.srt`
 
 - 12. ve 13. hafta kayıtları bulunmamaktadır.
 
-**Not:** İsterseniz bu kayıtları NotebookLM gibi bir araca atıp daha istifadeli hale getirebilirsiniz.
+**Not:** İsterseniz bu kayıtları Gemini Notebook gibi bir araca atıp daha istifadeli hale getirebilirsiniz.
