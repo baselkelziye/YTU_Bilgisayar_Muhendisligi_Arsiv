@@ -44,7 +44,7 @@
 - Semantic web: RDF, OWL gibi XML tabanlı dosyalar. Uygulamaların çıkarım yapmasını sağlar.
 - Precision $= \dfrac{|A \cap B|}{|B|}$, recall $= \dfrac{|A \cap B|}{|A|}$. Burada $A$ ilgili (relevant) dokümanlar, $B$ getirilen (retrieved) dokümanlar.
 - Yaygın ölçüt: ilk 10 sonuçta precision (precision at 10).
-- Ters indeks: kelime ve o kelimeyi içeren sayfaların link listesi.
+- Ters indeks: kelime ve o kelimeyi içeren sayfaların bağlı listesi (linked list; altyazıda "link list").
 - Bag of words: kelime sırası ve doküman yapısı kaybolur, ama basit ve az yer kaplar.
 
 ## Detaylı Açıklamalar
@@ -121,7 +121,7 @@
 
 - Bir öğrenci, arama motorlarının artık anahtar kelimeye bakmayıp bakmadığını sordu. Hoca: Hâlâ anahtar kelimeye de, popülerliğe de bakılıyor.
 - Crawler: sayfaları önceden bulup indiren, içindeki kelimeleri çıkarıp indeksleyen uygulama. Örnekler: Googlebot, MSNbot. Kitapta 8. bölümde ayrıca işlenecek.
-- Ters indeks: birinci kolon kelimeler, ikinci kolon o kelimeyi içeren sayfaların link listesi.
+- Ters indeks: birinci kolon kelimeler, ikinci kolon o kelimeyi içeren sayfaların bağlı listesi (linked list).
 - Arama ham veri üzerinde değil, indeks üzerinde yapılır. Bulunan sayfalar PageRank gibi popülerlik tabanlı bir algoritmayla yeniden sıralanır.
 - TF-IDF: bir kelimenin sayfa içindeki önemini ölçen temel metrik. Kelimenin sayfada bulunduğu yer (başlık, gövde vb.) de önemini etkileyebilir. Günümüz arama motorları bunun çok daha gelişmiş sürümlerini kullanıyor.
 
@@ -180,5 +180,8 @@
 - Altyazıdaki bozuk adlar: "Tim Bernersley" doğrusu Tim Berners-Lee; "N-S-S-A" doğrusu NCSA; "OVL" doğrusu OWL; "dandridge" doğrusu tendrils; "Business of Crowds" ve "Wisdom of Krauts" doğrusu wisdom of crowds.
 - Papyon çalışmasını yapanların adı altyazıda bozuk geçiyor ("Guleme ve Latepi"). Bilinen kaynak, Broder ve arkadaşlarının 2000 tarihli "Graph Structure in the Web" makalesi.
 - Kayıt iki parçadan birleşmiş. Ders yaklaşık 02:13'te bitiyor. Sonrasında dersle ilgisi olmayan kısa konuşmalar var.
+- Hoca IN sayfalarını "link almayan", OUT sayfalarını "link vermeyen" diye tanımladı. Doğrusu büyük olasılıkla bunun çekirdeğe göre geçerli olmasıdır: IN sayfaları çekirdekten link almaz, OUT sayfaları çekirdeğe link vermez.
+- Hoca ilk uygulamanın tamamen komut satırından çalıştığını söyledi. Berners-Lee büyük olasılıkla 1990'da grafik arayüzlü bir tarayıcı-düzenleyici de yazmıştır.
+- Hoca statik web'i indeksli web ile eşitledi. Bu eşitlik büyük olasılıkla kesin değildir: hocanın dinamik web örneği olan haber siteleri de arama motorlarında çıkar.
 
 **Not:** İsterseniz bu kayıtları NotebookLM gibi bir araca atıp daha istifadeli hale getirebilirsiniz.

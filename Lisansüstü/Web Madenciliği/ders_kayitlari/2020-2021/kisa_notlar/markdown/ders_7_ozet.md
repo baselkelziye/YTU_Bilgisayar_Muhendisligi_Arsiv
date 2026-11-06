@@ -77,7 +77,7 @@
   - Çıkarılmaları toplam kelime sayısını ve indeks boyutunu yaklaşık %20-30 azaltır.
 - Kök bulma (stemming):
   - Sondan eklemeli dillerde (örnek: Türkçe) aynı kelimenin farklı ek almış biçimleri olur.
-  - İngilizce örnekler: "user, users, used, using" kelimelerinin kökü "use"tur. "engineering, engineered" kelimelerinin kökü "engineer"dır.
+  - İngilizce örnekler: "user, users, used, using" kelimelerinin kökü "use"tur. "engineering, engineered" kelimeleri de aynı kökten türemiştir.
   - Bu biçimler ayrı kelime olarak alınmaz. Kökü bulunup vektöre kök yazılır.
   - İndeks boyutunu yaklaşık %40-50 azaltır.
   - Stemming kütüphaneleri genelde kural tabanlıdır ve her dil için farklıdır. Ek geldiğinde kökün son harfleri değişebilir. Her durum bir kurala çevrilmelidir.
@@ -89,7 +89,7 @@
 - TF (terim frekansı): kelimenin bir doküman içindeki önemi. Kelime dokümanda ne kadar sık geçiyorsa TF-IDF o kadar yüksek olur.
 - IDF (ters doküman frekansı): kelimenin tüm doküman setindeki önemi. Kelime ne kadar az dokümanda geçiyorsa TF-IDF o kadar yüksek olur.
 - Vektörün boyutu, tüm doküman setinden çıkarılan benzersiz kelime sayısı, yani vocabulary boyutudur.
-- Tüm doküman seti bir matrisle gösterilir:
+- Tüm doküman seti bir matrisle gösterilir (tablodaki sayılar örnek amaçlıdır, derste geçmiyor):
 
 ```
             kelime_1   kelime_2   ...   kelime_V
@@ -128,7 +128,7 @@ $$precision = \frac{|A \cap B|}{|B|} \qquad recall = \frac{|A \cap B|}{|A|}$$
     - İlk sonuç ilgiliyse recall %10, precision %100'dür.
     - İlk iki sonuç ilgiliyse recall $2/10 = \%20$, precision %100'dür.
     - İlk üç sonuç ilgiliyse recall %30, precision %100'dür.
-    - Dördüncü sonuç ilgili değilse recall %40'a çıkarken precision düşmeye başlar.
+    - Dördüncü sonuç ilgili değilse recall %30'da kalır, precision düşer. Hoca burada "%40 olduğu zaman precision düşüyor" demiştir. Recall %40'a ancak dördüncü ilgili doküman gelince çıkar.
   - Tek bir sorguyla değerlendirme yapılmaz. Farklı alanlardan çok sayıda sorgu seçilir. Her sorgu için tablo çıkarılır. Her recall seviyesinde precision değerlerinin ortalaması alınır. Eğri bu ortalama tablodan çizilir.
 
 ### Ters indeks (inverted index)
@@ -180,7 +180,7 @@ structure:    <id3, 2, [2, 8]>
   - Yeni URL'ler de indirilir, ayrıştırılır, yeni URL'ler çıkarılır.
   - Bir durma kriterine (stopping criteria) kadar devam edilir. Örnek: tohum URL'lerden 3 seviye derinliğe inince durmak.
 - Her arama motorunun bir crawler'ı vardır. Örnekler: Google için Googlebot, Bing için MSNbot. İsimleri genelde "bot" ile biter.
-- Crawler'lar sürekli çalıştığı için dünya genelindeki internet bant genişliğini en yoğun kullanan uygulamalardır.
+- Hoca, crawler'ların sürekli çalıştığı için dünya genelindeki internet bant genişliğini en yoğun kullanan uygulamalar olduğunu söylemiştir. Altyazıda bunun için bir ölçüm verilmez.
 - robots.txt:
   - Her uygulama sunucusunda crawler'ın hangi sayfaları indeksleyip hangilerini indeksleyemeyeceğini belirten bir dosya vardır.
   - Bu dosyada crawler'ın sayfayı hangi sıklıkta ziyaret edebileceği bilgisi de vardır. Örnek: "beni günde bir kez ziyaret et".

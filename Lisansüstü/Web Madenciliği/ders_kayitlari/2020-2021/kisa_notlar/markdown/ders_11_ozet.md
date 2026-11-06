@@ -146,7 +146,7 @@ $$C_D=\frac{\sum_{i}\left[d(i^*)-d(i)\right]}{(n-1)(n-2)}$$
 
 ### Degree centrality'nin yakalayamadıkları
 
-- Zincir örneğinde ortadaki düğüm 9 çiftin yolu üzerinde ama degree'si yanındakilerden düşük.
+- Slayttaki oyuncak ağda (büyük olasılıkla iki yanda üçer düğüm: 3+1+3) ortadaki düğüm $3 \times 3 = 9$ çiftin yolu üzerinde ama degree'si yanındakilerden düşük.
 - Başka bir örnekte ortadaki düğümden herkese kolay ulaşılıyor ama degree yanındakilerle eşit.
 - Bu durumları betweenness ve closeness yakalar.
 
@@ -188,7 +188,7 @@ $$C_B(i)=\sum_{j<k}\frac{p_{jk}(i)}{p_{jk}}$$
 - Sayfalar üst sıralara çıkmak için içeriklerine anahtar kelime doldurdu. Yöntem kolay kandırılır hâle geldi.
 - 1997: bağlantıların üzerindeki kelimelere dayalı bir arama motoru patenti alındı.
 - 1997–1998: Cornell'den bir grup ve Stanford'dan bir grup iki algoritma yayımladı.
-  - HITS: sonra Yahoo'nun bağlantı tabanlı algoritması oldu.
+  - HITS: hocaya göre sonra Yahoo'nun bağlantı tabanlı algoritması oldu. Bu bilgi altyazıdan doğrulanamıyor.
   - PageRank: sonra Google'ın bağlantı tabanlı algoritması oldu.
 - Sonuçta sayfalar hem TF-IDF hem bağlantı analizi sonucuna göre sıralanıp kullanıcıya gösterilir.
 - Popülerlik değerleri yalnız arama için değil, web'deki alt toplulukları bulmak, e-posta analizi ve serbest metindeki kelimeler arası ilişki ağını çıkarmak için de kullanılır.
@@ -238,5 +238,7 @@ $$P_P(i)=\frac{|I_i|/(n-1)}{\sum_{j \in I_i} d(j,i)\,/\,|I_i|}$$
 - Hoca rank prestige formülünü anlatırken "PageRank değeri" ile "rank prestige değeri"ni karıştırır, sonra düzeltir. Formüldeki değer rank prestige değeridir.
 - Hoca "daha önceki dört derste" der. Bu derste anlatılanları özetlediği için büyük olasılıkla "bu dersin önceki bölümlerinde" demek ister.
 - Proximity prestige formülü altyazıda dağınık anlatılır. Yukarıdaki formül ders kitabındaki tanımdır.
+- Hoca 5. düğümün satırını okurken "A11 ve A12 değerleri 1" dedi. Doğrusu $A_{51}=A_{52}=1$ olmalıdır, çünkü okunan satır 5. satırdır.
+- Hoca anlatımda yalnız "yol" ve "path sayısı" der. Bu nottaki "en kısa yol" ifadesi altyazıda geçmez. Sayılan yollar büyük olasılıkla ders kitabındaki gibi en kısa yollardır.
 
 **Not:** İsterseniz bu kayıtları NotebookLM gibi bir araca atıp daha istifadeli hale getirebilirsiniz.

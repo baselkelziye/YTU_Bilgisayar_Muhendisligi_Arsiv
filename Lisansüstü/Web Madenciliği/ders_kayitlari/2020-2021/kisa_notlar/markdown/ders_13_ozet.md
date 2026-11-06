@@ -64,7 +64,6 @@
   - $i$ ve $j$ ikisi de aynı $k$ makalesine atıf veriyorsa aralarında ilişki vardır.
   - Hocanın örneği: bir makale İngilizceden Fransızcaya çevrilmiş olsun. TF-IDF ikisi arasında benzerlik bulmaz. Ama ikisi de aynı makalelere atıf verdiği için bibliographic coupling değeri yüksek çıkar.
   - Hesap: $i$ ve $j$ satır vektörlerinin elemanları çarpılır ve toplanır.
-- Bu ölçüler benzer makaleleri bulan araçlarda kullanılır.
 
 ### Web çizgesi ve popülerlik
 
@@ -170,7 +169,7 @@ $$r_y = \frac{r_y}{2} + \frac{r_a}{2}, \quad r_a = \frac{r_y}{2} + r_m, \quad r_
 
 - Çıkmaz düğümden tüm düğümlere (kendisi dahil) sanal bağlantı eklenir.
 - Y, A, M örneğinde M'nin sütunu $[1/3, 1/3, 1/3]^T$ olur. Matris yeniden stokastik olur.
-- Matris biçiminde: $A = M + \dfrac{1}{N}\, e\, a^T$ (tahtada gösterilen yapı).
+- Matris biçiminde: $A = M + \dfrac{1}{N}\, e\, a^T$ (hoca çarpımı ters sırada anlatır, tahtada gösterdiği sonuç matrisi bununla aynıdır).
   - $a$: dışa bağlantı sayısı 0 olan düğümler için 1, diğerleri için 0 olan vektör. Örnekte $a = [0, 0, 1]$.
   - $e$: tüm elemanları 1 olan sütun vektörü. $\frac{1}{N}e$ örnekte $[1/3, 1/3, 1/3]^T$.
   - Çarpım yalnız M sütununda $1/3$ değerleri olan, diğer yerleri 0 olan bir $N \times N$ matristir.

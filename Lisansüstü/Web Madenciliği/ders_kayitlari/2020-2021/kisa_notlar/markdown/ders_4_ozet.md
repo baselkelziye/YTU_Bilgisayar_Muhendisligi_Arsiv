@@ -68,7 +68,7 @@
   - $\{3\} \subseteq \{3,7\}$, $\{4,5\} \subseteq \{4,5,8\}$, $\{8\} \subseteq \{3,8\}$ ve sıra korunuyor.
 - Bir öğrenci, süper sequence'ta {4,5,8} yerine {4}, {5}, {8} ayrı elemanlar olsaydı kapsamanın sürüp sürmeyeceğini sordu.
   - Hoca: Sürmez. {4,5} elemanını tek başına kapsayan bir eleman olmalı.
-- Bir öğrenci length'in tekrarlı mı benzersiz mi sayıldığını sordu. Hoca: Öğeler sayılır. Size ise süslü parantez içindeki eleman sayısıdır.
+- Bir öğrenci length'in tekrarlı mı benzersiz mi sayıldığını sordu. Hoca: "Unique olarak", içindeki öğeler sayılır. Size ise süslü parantez içindeki eleman sayısıdır.
 
 ### Veri formatı ve örnek
 
@@ -199,5 +199,7 @@
 - Kural listesinde hoca kuralların support değerine göre sıralandığını söyledi. Kitaptaki CBA yönteminde kurallar önce confidence, eşitse support değerine göre sıralanır.
 - Naive Bayes örneğinde öznitelik olasılıklarının yalnız ilk ikisi altyazıdan anlaşılıyor. Diğer çarpanlar ve sonuç değerleri slaytta, altyazıda okunmuyor.
 - Altyazıdaki bozuk adlar: "PCI" doğrusu PCA; "GSB" doğrusu GSP; "Prefix Pen" doğrusu PrefixSpan; "Space" doğrusu SPADE; "ISS" doğrusu IIS; "Biasin Teorem" doğrusu Bayes teoremi; "Bias/Vice Computer" doğrusu buys_computer; "K-Fault" doğrusu k-fold; "web 103 mining" doğrusu web usage mining.
+- Hoca length'in "unique" sayıldığını söyledi. Doğrusu büyük olasılıkla, aynı öğe farklı elemanlarda geçiyorsa her geçişin ayrı sayılmasıdır.
+- Hoca, PCA'nın etiketle ilişkisi düşük öz nitelikleri eleyen kısım olduğu sorusuna "evet" dedi. Doğrusu büyük olasılıkla şudur: PCA gözetimsizdir, etiketi kullanmaz.
 
 **Not:** İsterseniz bu kayıtları NotebookLM gibi bir araca atıp daha istifadeli hale getirebilirsiniz.

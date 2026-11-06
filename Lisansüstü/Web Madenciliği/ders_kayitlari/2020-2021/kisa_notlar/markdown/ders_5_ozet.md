@@ -175,7 +175,7 @@ $$SSE = \sum_{j=1}^{k} \sum_{x \in C_j} dist(x, m_j)^2$$
 - Bir öğrenci average link ile centroid yönteminin aynı olup olmadığını sormuştur. Hoca farkı açıklamıştır:
   - Centroid: önce merkez bulunur, sonra merkeze olan uzaklık hesaplanır.
   - Average link: tüm uzaklıklar tek tek bulunur, sonra ortalaması alınır.
-- Hocanın önerisi: aykırı değerler ön işlemede atılabiliyorsa complete link daha ucuzdur. Emin değilseniz birden fazla uzaklık yöntemi deneyin.
+- Hocanın önerisi: aykırı değerler ön işlemede atılabiliyorsa complete link hesaplama açısından büyük olasılıkla daha ucuzdur (hoca cümleyi "computation olarak daha şey" diye yarım bırakır). Emin değilseniz birden fazla uzaklık yöntemi deneyin.
 - Kütüphanelerde bu yöntemler parametre olarak seçilebilir.
 
 ### Uzaklık fonksiyonları
@@ -208,7 +208,7 @@ $$dist(x_i, x_j) = \frac{b + c}{a + b + c + d}$$
 
 $$dist(x_i, x_j) = \frac{b + c}{a + b + c}$$
 
-  - Aynı örnekte uzaklık $3/6$ olur.
+  - Hoca aynı örnekte uzaklığı $3/6$ olarak söylemiştir. Vektörler slaytta olduğu için altyazıdan doğrulanamıyor.
   - Web madenciliğinde yoğun kullanılır.
 - Nominal öznitelikler (ikiden fazla değer alabilen): yine simple matching yaklaşımı kullanılır. $q$ eşleşen öznitelik sayısı, $r$ toplam öznitelik sayısıdır.
 

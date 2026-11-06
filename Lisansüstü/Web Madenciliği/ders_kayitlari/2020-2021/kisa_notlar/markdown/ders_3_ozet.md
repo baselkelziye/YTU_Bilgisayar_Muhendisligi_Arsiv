@@ -17,7 +17,7 @@
 - Proje önerisi 5. haftada isteniyor. Sonrasında yaklaşık 8 haftalık (2 aylık) çalışma süresi var.
 - Bonus: Proje raporu IEEE iki kolonlu konferans formatında bir makaleye dönüştürülür, hoca onaylar ve bir konferansta kabul edilirse harf notu bir basamak yükseltilir. Not açıklandıktan sonra kabul gelse bile hoca bunu yapmaya çalışıyor.
 - Apriori'nin maliyeti algoritmanın kendisinden değil, her seviyede veritabanının diskten baştan sona okunmasından geliyor.
-- Bir kümenin sık olması için iki şart var: destek eşiği aşılmalı ve tüm alt kümeleri sık olmalı.
+- Hoca bir kümenin sık olması için iki şart saydı: destek eşiği aşılmalı ve tüm alt kümeleri sık olmalı. Destek şartı tek başına yeterlidir. Alt küme kontrolü, sayım yapmadan aday elemeye yarar.
 
 ## Kısa Tekrar Notları
 
@@ -167,10 +167,11 @@
 ### Ders sonrası notlar
 
 - Hoca 5 işlemlik örnekte $A \rightarrow D$ için "desteği %100, güvenilirliği %100" dedi. Doğrusu: support %60, confidence %100.
-- Class association rule örneğinde hoca önce $\{\text{game}\} \rightarrow \text{sport}$ için support $2/7$ dedi, sonra bunu yanlış bulup $3/7$ olarak düzeltti. Kitaptaki tanıma göre ilk söylediği doğrudur: sınıf kuralının support değeri, hem $X$'i içeren hem de etiketi $y$ olan işlem sayısının toplam işlem sayısına oranıdır. Bu örnekte $2/7$. Yalnız sol tarafı içeren işlemlerin oranı ($3/7$) kuralın support değeri değildir.
+- Class association rule örneğinde hoca önce $\{\text{game}\} \rightarrow \text{sport}$ için support $2/7$ dedi, sonra bunu yanlış bulup $3/7$ olarak düzeltti. İlk söylediği büyük olasılıkla doğrudur (kitaptaki tanım altyazıdan doğrulanmıyor): sınıf kuralının support değeri, hem $X$'i içeren hem de etiketi $y$ olan işlem sayısının toplam işlem sayısına oranıdır. Bu örnekte $2/7$. Yalnız sol tarafı içeren işlemlerin oranı ($3/7$) kuralın support değeri değildir.
 - Hoca sık küme kontrolünü "sayılarının minimum support'un üzerinde olması" diye anlattı. Doğrusu "eşit veya üzerinde". Örnekte de 4 işlemden 2'sinde geçenler sık sayıldı.
 - Hoca birleştirme adımını anlatırken "1-3 ile 2-5'i merge ediyor" dedi. Standart Apriori'de birleştirme, ilk $k-2$ elemanı aynı olan kümeler arasında yapılır. Hangi adayların çıktığı slayttaki tabloya bağlı, altyazıdan tam anlaşılmıyor.
 - Problem 1993'te tanımlandı. Apriori adıyla bilinen algoritma Agrawal ve Srikant'ın 1994 tarihli çalışmasıdır.
 - Altyazıdaki bozuk adlar: "Appure", "Appiori", "Apiary", "Epriori" doğrusu Apriori; "Secure Pattern Mining" doğrusu Sequential Pattern Mining; "Candidate Jam/Chain" doğrusu candidate-gen; "Absel" doğrusu up-sell; "Veka" doğrusu Weka.
+- Hoca algoritmanın en fazla elemanlı sık kümeyi bulup kuralları ondan çıkardığını söyledi. Kurallar büyük olasılıkla bütün sık kümelerden üretilir. Yalnız en büyük kümeden yazılırsa daha küçük bir sık kümenin kuralları kaçar.
 
 **Not:** İsterseniz bu kayıtları NotebookLM gibi bir araca atıp daha istifadeli hale getirebilirsiniz.

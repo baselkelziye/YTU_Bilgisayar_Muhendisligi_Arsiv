@@ -191,7 +191,7 @@ Sunucu/uygulama günlükleri + site içeriği
 
 - Oyuncak örnek (IP + agent):
   - IP aynı, agent "Internet Explorer 5, Windows 2000" olan kayıtlar birleşince user 1 çıkar.
-  - "Internet Explorer 6, Windows XP Service Pack 1" olan kayıtlar birleşince user 2 çıkar.
+  - "Internet Explorer 6, Windows XP Security Package 1" (büyük olasılıkla Service Pack 1) olan kayıtlar birleşince user 2 çıkar. Altyazıda bu kayıtların IP'si ayrıca söylenmez.
   - Benzer biçimde user 3 bulunur.
 
 ### Yol tamamlama örneği
@@ -249,8 +249,8 @@ Sunucu/uygulama günlükleri + site içeriği
 - Hoca HITS için "spam'e uğrama açısından daha açık" der. Bu HITS'in zayıf yanıdır, avantajı değil. Hoca bunu "diğer önemli avantaj" diye sürdürür ama anlattığı şey (sorgu anında hesap, performans kaybı, konu kayması) de dezavantajdır. HITS'in asıl avantajı sorguya bağlı olmasıdır.
 - Hoca authority ve hub tanımında "e-hub sayfaları link verir" der. Altyazı bozuk. Doğrusu: iyi hub'lar iyi authority'lere bağlantı verir, iyi authority'ler iyi hub'lardan bağlantı alır.
 - Hoca power iteration'da normalizasyondan söz etmez. Ders kitabında her yinelemede $a$ ve $h$ vektörleri normalize edilir. Yoksa değerler büyümeye devam eder.
-- Altyazıda "Security Package 1" geçer. Doğrusu Windows XP Service Pack 1.
-- Altyazıda uygulama sunucusu "ISS" diye geçer. Doğrusu Microsoft IIS.
+- Altyazıda "Security Package 1" geçer. Doğrusu büyük olasılıkla Windows XP Service Pack 1.
+- Altyazıda uygulama sunucusu "ISS" diye geçer. Doğrusu büyük olasılıkla Microsoft IIS.
 - Ders girişinde hoca link analizine "geçtiğimiz hafta başlamıştık" der. Önceki kayıtlarda konu iki derse yayılmıştır: sosyal ağ ölçüleri 15 Aralık'ta, co-citation ve PageRank 29 Aralık'ta işlendi.
 
 **Not:** İsterseniz bu kayıtları NotebookLM gibi bir araca atıp daha istifadeli hale getirebilirsiniz.

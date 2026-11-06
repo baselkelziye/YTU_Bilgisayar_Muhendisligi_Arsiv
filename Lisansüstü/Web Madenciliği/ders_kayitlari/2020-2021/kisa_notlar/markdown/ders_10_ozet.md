@@ -15,7 +15,7 @@
 - Sayfa deposu (page repository) seçenekleri.
 - Eş zamanlı (concurrent) tarayıcılar.
 - Evrensel tarayıcı mimarisi; kapsam (coverage) ile güncellik (freshness) dengesi.
-- Tercihli tarama algoritmaları: Best-First, PageRank tabanlı, Fish Search, Shark Search, InfoSpider.
+- Tercihli tarama algoritmaları: Best-First (büyük olasılıkla Best-N-First), PageRank tabanlı, Fish Search, Shark Search, InfoSpider.
 - Tarama boyutu–duyarlılık (crawl size–recall) grafikleriyle karşılaştırma.
 
 ## Hocanın Özellikle Vurguladığı Kısımlar
@@ -40,7 +40,7 @@
   - İndirilen belge sayısı.
   - Toplam veri boyutu (ör. "şu kadar terabayt").
   - Ağaç derinliği (tohumdan itibaren ör. 6 seviye).
-- `robots.txt`: sitede hangi sayfaların taranabileceğini söyler. Kurala uymayan tarayıcı güvenlik duvarınca işaretlenir ve o siteyi bir daha tarayamaz.
+- `robots.txt`: sitede hangi sayfaların taranabileceğini söyler. Hocaya göre kurala uymayan tarayıcı güvenlik duvarınca işaretlenir ve o siteyi bir daha tarayamaz. Bu büyük olasılıkla her sitede otomatik gerçekleşen bir sonuç değildir.
 - Breadth-first: sınır listesi FIFO kuyruk. Seviye seviye tarar.
 - Depth-first: sınır listesi LIFO yığın. Bir dalı en dibe kadar tarar, sonra başka dala geçer.
 - Tekrar indirmeyi önlemek için daha önce ziyaret edilen URL'ler bir hash tablosunda tutulur.
@@ -144,7 +144,7 @@ Tohum URL'ler
 - Göreli URL: ör. sayfada yalnız `intro.html` geçebilir. Temel URL ile birleştirilip mutlak URL yapılır.
 - Düzgünleştirme (canonicalization):
   - Hoca aynı sayfaya işaret eden 4 farklı URL gösterir.
-  - Farklar: küçük ve büyük harf, standart portun (80) yazılması, önce alt dizine girip sonra köke dönen yol parçası.
+  - Farklar: küçük ve büyük harf, standart portun yazılması, önce alt dizine girip sonra köke dönen yol parçası.
   - Hepsi tek standart biçime çevrilir. Tarayıcı bunların aynı URL olduğunu anlamalı.
 
 ### Sayfa deposu (page repository)
@@ -203,7 +203,7 @@ Tohum URL'ler
   - Benzerlik eşiğin üstündeyse URL listeye eklenir.
 - Algoritmalar:
   - BFS ve DFS tercihli değildir. Kıyaslama (benchmark) için kullanılır.
-  - Best-First: konuya benzer sayfalardan gelen URL'lere yüksek değer verilir. Liste benzerliğe göre sıralıdır. En üstteki URL'ler paralel indirilir.
+  - Best-First (altyazıda "best and first", büyük olasılıkla Best-N-First): konuya benzer sayfalardan gelen URL'lere yüksek değer verilir. Liste benzerliğe göre sıralıdır. En üstteki URL'ler paralel indirilir.
   - PageRank tabanlı: URL'ler anahtar kelimelere ve PageRank değerine göre sıralanır.
   - Fish Search ve onun geliştirilmiş hâli Shark Search: bağlantı metnindeki ve üst sayfadaki kelimelere bakar.
   - InfoSpider: yeni sayfalardan çıkan URL'lerle arar. Topical tarayıcı örneğidir.
@@ -231,9 +231,9 @@ Tohum URL'ler
 
 ### Ders sonrası notlar
 
-- Hoca depth-first için önce "son giren ilk çıkar" listenin sonuna ekleme der. Doğrusu: BFS için FIFO kuyruk, DFS için LIFO yığın kullanılır. Hoca devamında bunu doğru biçimde anlatır.
+- Hoca sınır listesine ekleme adımını anlatırken (00:56:38) "son giren ilk çıkar" listede yeni URL'lerin sona eklendiğini söyler. Sona ekleyip baştan çekmek büyük olasılıkla FIFO'dur. Doğrusu: BFS için FIFO kuyruk, DFS için LIFO yığın kullanılır. Hoca devamında bunu doğru biçimde anlatır.
 - "Glass Modified" altyazı hatasıdır. Doğru HTTP başlığı: `Last-Modified`.
 - "Birthday DB" büyük olasılıkla Berkeley DB, "notch crawler" büyük olasılıkla Apache Nutch. İkisi de altyazıdan çıkarılmıştır.
-- Hoca örnek kodu Perl ile yazar. Slayttaki kod ders kitabındaki örnektir.
+- Hoca örnek kodu Perl ile yazar. Slayttaki kod büyük olasılıkla ders kitabındaki örnektir.
 
 **Not:** İsterseniz bu kayıtları NotebookLM gibi bir araca atıp daha istifadeli hale getirebilirsiniz.

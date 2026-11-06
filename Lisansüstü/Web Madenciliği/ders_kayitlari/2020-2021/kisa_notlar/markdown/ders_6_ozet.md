@@ -222,7 +222,7 @@ $$cosine(d_j, q) = \frac{\langle d_j \cdot q \rangle}{\|d_j\| \times \|q\|} = \f
     - Hangi 3 sitenin kullanılacağı yazılmalıdır. RESTful servisi olan siteler tercih edilmelidir. Yoksa HTML sayfaları ayrıştırılmalıdır.
     - Aynı kitap tek satırda gösterilmelidir. Yanında üç sitenin ikonları ve her sitedeki fiyatı olmalıdır.
 - 5. öneri: müzik ile ilgili yorumlarda duygu analizi.
-  - Fikir: ileride doktora için düşünülen bir Spotify çalışmasına destek olarak tweet'lerde duygu analizi (TextBlob gibi araçlarla). Twitter'ın ücretsiz API'si yalnız son 7 güne izin vermektedir.
+  - Fikir: müzikle ilgili tweet'lerde duygu analizi (TextBlob gibi araçlarla). Twitter'ın ücretsiz API'si yalnız son 7 güne izin vermektedir.
   - Hocanın görüşü:
     - Tweet'leri olumlu ya da olumsuz diye etiketlemek bu ders için anlamlı bir proje değildir. Tweet'lerin karakter sayısı sınırlıdır.
     - Fikir madenciliği yapılacaksa özellik tabanlı fikir madenciliği daha anlamlıdır.
