@@ -1,0 +1,3675 @@
+1
+00:00:40,531 --> 00:01:03,351
+birazcık geciktim çünkü update yapmış, restart etti. Öyle olmadık zamanlarda ediyor biliyorsunuz. Ancak açıldı. Şimdi bugünümüz aslında en son dersimiz, en son haftamız. Biraz mutluyum, dönem bitiyor diye.
+
+2
+00:01:03,351 --> 00:01:10,031
+herhalde birazcık sizde de hissediliyordur ama bunlar biraz sizi zorlayan haftalar olabilir.
+
+3
+00:01:11,031 --> 00:01:15,191
+Projeler, işte sınavlara hazırlanacaksınız.
+
+4
+00:01:15,831 --> 00:01:17,552
+Bunlar da geçecek diyoruz.
+
+5
+00:01:17,552 --> 00:01:21,151
+Bu arada bizim ders projelerimiz ne durumda?
+
+6
+00:01:23,991 --> 00:01:26,371
+Bir bilgi verecek olan var mı durumuyla ilgili?
+
+7
+00:01:26,491 --> 00:01:28,851
+Ben bitirdim, tamamladım, kenara koydum gibi.
+
+8
+00:01:32,628 --> 00:01:34,887
+yok, hepimiz gülüyoruz.
+
+9
+00:01:37,287 --> 00:01:38,588
+Tamamdır, peki.
+
+10
+00:01:39,387 --> 00:01:42,367
+Neyse, bu konuyla ilgili sizlere mail atacağım ilk fırsatta.
+
+11
+00:01:43,487 --> 00:01:47,027
+Şimdi gençler, bugün zorlu bir gün.
+
+12
+00:01:48,287 --> 00:01:52,327
+Bazı sakmalardan dolayı kalabalığız.
+
+13
+00:01:52,327 --> 00:01:54,787
+O yüzden sizden de şöyle bir ricam var.
+
+14
+00:01:54,888 --> 00:02:00,327
+Lütfen sunumlarımızda daha böyle akıcı olalım.
+
+15
+00:02:00,327 --> 00:02:24,367
+olalım. İşte sunumun biraz uzun sürsün diye böyle bazı ağır almalar falan hiç yapmayalım. Bir kişinin sunumu 20 dakikayı geçmesin. Tamam mı? Çünkü 8 kişiyiz. Arada yine küçük bir ara veririz. Çünkü insan şey oluyor, ambele oluyor. Dinle dinle bir yere kadar dinleyebiliyorsun. Dikkatin dağılıyor.
+
+16
+00:02:24,367 --> 00:02:33,467
+Şimdi öncelikle ben bu haftaya izin veriyorum. [öğrenci], günaydın hazır mısın?
+
+17
+00:02:33,467 --> 00:02:34,567
+Günaydın hocam evet.
+
+18
+00:02:35,327 --> 00:02:39,967
+Tamam. Sen share screen yapabiliyor musun?
+
+19
+00:02:40,947 --> 00:02:41,647
+Evet hocam.
+
+20
+00:02:41,867 --> 00:02:43,447
+Tamam hadi seninle başlayalım.
+
+21
+00:02:46,087 --> 00:02:47,607
+Görüyorsunuz sanırım değil mi?
+
+22
+00:02:48,107 --> 00:02:52,127
+Evet görüyorum. Full screen yapıyoruz. Ben görebileyim diye.
+
+23
+00:02:52,127 --> 00:03:21,127
+Tamam, tıklıyorum da biraz algılamadı. Hocam öncelikle ben paper seçerken sizin paylaştıklarınızda PDF olarak vardı. Yılı yazmıyordu, dikkat etmemişim. Çok eski bir papermış, 2000 yılına ait. Ben o yüzden böyle kendi projemde duygu analizi, survey tarzında böyle birkaç çalışmadan bahsedeceğim. O çalışma çok eski olduğu için içime sinmedi.
+
+24
+00:03:21,127 --> 00:03:23,428
+Genel olarak birkaç yıldır
+
+25
+00:03:23,428 --> 00:03:28,087
+Nereden nereye gelindiğini de görmüş oluruz
+
+26
+00:03:28,087 --> 00:03:28,788
+Tamam hocam
+
+27
+00:03:28,788 --> 00:03:30,547
+Şuraya bu gözüyle bakalım o zaman
+
+28
+00:03:30,547 --> 00:03:32,568
+Hadi hoşçakal diyordum
+
+29
+00:03:32,568 --> 00:03:35,047
+Hadi kolay gelsin
+
+30
+00:03:35,047 --> 00:03:42,887
+Şimdi duygu analizini text classification olarak ikisininle birlikte işleyeceğim
+
+31
+00:03:42,887 --> 00:03:49,368
+Böyle bir giriş yaparsak duygu analizini NLP'de yani doğal dil işlemede baktığımız zaman
+
+32
+00:03:49,367 --> 00:03:57,187
+duyguların metinlerde hangi yollarla anlatıldığını ve bu anlatımlarda olumlu veya olumsuz durumları tespit etmemizi sağlıyor.
+
+33
+00:03:57,187 --> 00:04:05,187
+İnsanların görüşlerinin, değerlendirmelerinin ve tutumlarının hesaplanmaya dayalı olarak çalışmasıdır diyebiliriz.
+
+34
+00:04:06,187 --> 00:04:10,467
+Tabii biz insanlar duygularımızı sadece sözcüklerle ifade etmiyoruz.
+
+35
+00:04:10,467 --> 00:04:20,967
+ses tonumuz, mimiklerimiz, el hareketlerimiz ve bazen hatta örneğin heyecanlandığımızda vücud ısımızla da belli ediyoruz.
+
+36
+00:04:21,568 --> 00:04:27,407
+Bu da metnin olarak sadece sözcüklerle duygu analizi yapmanın bir kısıtı olmuş oluyor.
+
+37
+00:04:27,407 --> 00:04:38,727
+Bu nedenle aslında çok çalışılan bir konu olmasına rağmen, literatürde çok çalışma olmasına rağmen biraz geç geliştiğini okudum literatürden.
+
+38
+00:04:38,727 --> 00:04:56,427
+ve bir survey temel olarak aldım. Bu survey 2018 yılına ait bir çalışma. 2014 yılları ile 2017 yılları arasında 50'ye yakın çok fazla yöntemi ele alarak tabloları halinde vermişler.
+
+39
+00:04:56,427 --> 00:05:05,587
+Bu çalışmaları ayrıntılı olarak yazmamışlar. Ben bunlar arasından örneklendirmek için farklı yöntemleri detaylandırdım.
+
+40
+00:05:05,587 --> 00:05:13,367
+Diğerlerini size tablo olarak vereceğim ama dediğim gibi tablolar çok büyüktü o yüzden tabloları biraz küçülterek vereceğim.
+
+41
+00:05:14,420 --> 00:05:25,039
+Şimdi öncelikle duygu teorilerinden bahsetmek istiyorum. Duygu teorilerinde iki çeşit duygu modeli var. Bunlar kategorik ve boyutsal olarak ikiye ayrılıyor.
+
+42
+00:05:25,739 --> 00:05:40,859
+Kategorik modelde genel olarak bir bireyin yüz ifadesine göre, duygu geçişine göre bizim genellikle bildiğimiz sinirli olması, korkması, mutlu olması, şaşırması şeklinde kategoriler bulunuyor.
+
+43
+00:05:40,859 --> 00:05:56,639
+Örneğin burada Ekman modelde 6 temel duygu değerlendirmeye alınırken bir diğer modelde 8 duygu ele alınmış ve bu duygular ise tek bir kategori olarak değil bipolar setler halinde alınmış.
+
+44
+00:05:56,639 --> 00:06:07,639
+Örneğin Joy ve Sadness bir kategori şeklinde alınmış. Sanki tam zıttı gibi değil ama bu şekilde setler oluşturulmuş.
+
+45
+00:06:07,639 --> 00:06:28,280
+Diğer bir model ise boyutsal model. Bu boyutsal modelde örneğin circumplex modeli bulunuyor. Bu model duyguları iki boyutta tanımlamış. İlk boyutu duygunun hoş olup olmadığına bakıyor. Buna göre bir aktivasyon derecesi veriyor.
+
+46
+00:06:28,280 --> 00:06:34,979
+Yani aslında hoş na hoş şeklinde bir sınır koymuşlar aktivasyon derecesini.
+
+47
+00:06:34,979 --> 00:06:40,019
+Diğer boyut ise sakin ve heyecanlı arasında bir aktivasyon derecesi alması.
+
+48
+00:06:40,720 --> 00:06:48,479
+Bu şekilde duygunun pozitif negatif şeklinde sınıflandırılması sağlanmış oluyor bu boyutlar ile.
+
+49
+00:06:48,479 --> 00:06:58,959
+çalışmalar kendi kategorilerini oluşturmuşlar veya bu genel modelleri de kullanan çalışmalar olmuş.
+
+50
+00:07:00,039 --> 00:07:05,719
+Ve bir de her tabii çalışmanın zor kısmı olan veri seti bulmak.
+
+51
+00:07:05,719 --> 00:07:12,679
+Burada da duygu analizinde etiketle yani iyi etiketlenmiş veri seti bulmak zor.
+
+52
+00:07:12,679 --> 00:07:24,759
+Bu nedenle ve çalışmaların da birbirleriyle karşılaştırılmalı çalışmalar gerçekleştirmesi için bazen genel veri setlerini kullanmaları gerekiyor.
+
+53
+00:07:25,159 --> 00:07:29,659
+Bu en çok kullanılan veri setlerinden 3 tanesini örnek olarak verdim.
+
+54
+00:07:29,659 --> 00:07:36,839
+Örneğin ilk International Server on Emotion dataset'i en eski ve güvenilir etiketli bir dataset.
+
+55
+00:07:36,839 --> 00:07:48,780
+farklı kültürel geçmişe sahip katılımcılar tarafından etiketlenen 7666 cümleden oluşmaktı ve 7 farklı duyguyu barındırıyor.
+
+56
+00:07:49,220 --> 00:07:54,520
+Ve burada gördüğünüz gibi çok düzenli bir dağılıma sahip duygular kendi içeri.
+
+57
+00:07:56,520 --> 00:07:56,879
+Buyrun hocam.
+
+58
+00:07:56,879 --> 00:08:00,500
+Bu listeini şu an biz istesek erişebiliyor muyuz?
+
+59
+00:08:00,500 --> 00:08:07,440
+Yani erişiliyordu hocam şeyden bakmıştım Cagle diye bir yer var ya orada indirilmiş
+
+60
+00:08:07,440 --> 00:08:08,899
+Tamam peki
+
+61
+00:08:10,036 --> 00:08:21,595
+Fair Tales ise 185 farklı çocuk öyküsünden toplam 15 bin cümle içeren, 8 farklı duyguyu barındıran bir veri seti.
+
+62
+00:08:22,175 --> 00:08:33,315
+Sonuncu veri seti Sam Ivali ise haberler üzerine, Google haberleri, BBC, CNN gibi haber başlıkları üzerine oluşturulan bir veri seti.
+
+63
+00:08:33,315 --> 00:08:48,775
+Burada da 6 farklı duyguyu barındırıyor ama diğer dataset'lerden farkı her cümle tek bir duygu atamak yerine farklı dereceye sahip duygular atanabiliyor birden fazla.
+
+64
+00:08:48,775 --> 00:08:55,375
+Yani bu cümle sadece örneğin sinirli şeklinde sınıflandırılmıyor. Buna bir derece veriliyor.
+
+65
+00:08:55,376 --> 00:09:00,436
+tam derece şeylerine bakmadım şu an ferazi söylüyorum.
+
+66
+00:09:00,576 --> 00:09:07,195
+Örneğin 0.7 sinirli 0.5 korkmuş şeklinde dereceler ile veriliyor.
+
+67
+00:09:08,116 --> 00:09:18,635
+Ve bunun da aslında dağılımı iyi gibi sadece fair tail'de biraz dağılım bir yerlerine göre daha üniform olmamış.
+
+68
+00:09:18,635 --> 00:09:29,595
+Genel olarak anlatacağım için bir ön işlemler, tabii bu çalışmalar çeşitli ön işlemler kullanmış oluyor.
+
+69
+00:09:30,256 --> 00:09:36,375
+Bu ön işlemleri de aslında derste zaten siz de anlatmıştınız çok ayrıntılı bir şekilde.
+
+70
+00:09:36,375 --> 00:09:43,635
+Eğer çalışmalar kendi korpuslarını oluşturacaksa tabii ki daha çok kapsamlı ön işlem uygulamak zorundalar.
+
+71
+00:09:43,635 --> 00:10:09,716
+ama onun dışında genel olarak tokenization, lemmatization, stemming şeklinde ve functional word yani stop wordlerin kaldırılması, gürültünün kaldırılması mesela cümlelerde link varsa veya kısaltmalar varsa onların açılması şeklinde basit ön işlemlerin uygulanmasıyla eğer özellikle de hazır dataset'ler kullanılıyorsa bu ön işlemler yeterli oluyor.
+
+72
+00:10:09,716 --> 00:10:18,896
+ve şimdi şeylere geldiğim zaman metinsal duygu tespiti yaklaşımları dört ana başlıkta inceleniyor.
+
+73
+00:10:18,896 --> 00:10:27,095
+Bunlar keyword yaklaşımı yani anahtar kelime yaklaşımı metinde duyguları nezli için en basit yaklaşım.
+
+74
+00:10:27,776 --> 00:10:39,696
+Doğrudan metinde duyguları ifade eden kelimelerin varlığına ve sıklığına bakılıyor ve bazı çalışmalar duyguları tanımlayan bu kelimelerden bir sözlük oluyor.
+
+75
+00:10:39,715 --> 00:10:50,195
+oluşturarak bu çalışmaları gerçekleştirmişler. Fakat kelimeler arasında hiçbir ilişkiye bakılmadığı için genellikle yetensiz kalan yöntemler diyebiliriz.
+
+76
+00:10:50,195 --> 00:11:01,435
+Diğeri ise korpus tabanlı ise keyword yaklaşımının bir genişletilmiş versiyonu. Burada kelimelere bir olasılık, ağırlık verilerek işleniyor.
+
+77
+00:11:01,435 --> 00:11:13,595
+Diğeri ise hep bildiğimiz supervised ve unsupervised öğrenme yöntemlerin uygulanması ve bu yöntemlerin birleştirilerek de hibrit yaklaşımlar elde edilmiş.
+
+78
+00:11:15,195 --> 00:11:27,615
+Şimdi önce burada bir tane keyword tabanlı çalışma var ve genelde korpus tabanlı çalışmalardan böyle bir örnek tablo oluşturulmuş.
+
+79
+00:11:27,616 --> 00:11:36,216
+Burada az önce bahsettiğim örneğin dataset'ler de kullanılmış ve bunlar ek olarak tabii ki sosyal medya verileri de kullanılıyor.
+
+80
+00:11:36,595 --> 00:11:44,315
+Ve genellikle able-wish metric olarak da precision, recall, f-score ve temple cross en çok kullanılanlar arasında.
+
+81
+00:11:45,155 --> 00:11:53,015
+Tabii burada korpus olarak inceliyoruz ama en sonunda bir sınıflandırma yapmak için örneğin J48 kullanılmış burada.
+
+82
+00:11:53,015 --> 00:11:56,836
+Bir machine learning yöntemine de ihtiyaç duyuyoruz.
+
+83
+00:11:56,835 --> 00:11:58,835
+Burada ben birinci...
+
+84
+00:11:59,892 --> 00:12:19,091
+birinci çalışmayı detaylandırdım. Bu çalışmada My Personality Project adında bir Facebook verilerinden oluşan bir dataset kullanılmış. Yaklaşık 1 milyon Facebook durumu üzerinde yaş, cinsiyet ve kişilik özellikleri göz önünde bulundurularak duygu analizi yapmışlar.
+
+85
+00:12:19,091 --> 00:12:33,671
+Burada kullanıcıların takip ettikleri, beğendikleri sayfalar, eğitim ve iş geçmişleri gibi bilgiler yer alıyor. 5865 kullanıcının yaklaşık 1 milyon kadar durumu kullanılarak işlenmiş.
+
+86
+00:12:33,671 --> 00:12:51,451
+Şimdi burada bu veri setine ait istatistik sayılar var. Burası önemli aslında. Şimdi kişisel özelliklere göre bir duygu analizi yapacağız dedik. Bu veri setinde kişisel özellikler için 1 ve 5 arasında bir skor bulunuyor.
+
+87
+00:12:51,451 --> 00:13:08,331
+Bu çalışmada bir seti işlenirken VCPR isminde bir data sette kullanılan threshold değerleri ele alınarak bir thresholding yapılmış ve bu kişilik özellikleri 5 farklı kategoriye ayrılmış.
+
+88
+00:13:08,331 --> 00:13:18,392
+Bu şekilde mesela openness insanların yani dışarıya açık olan insanların nasıl paylaşımlar yaptığını değerlendirebileceğiz.
+
+89
+00:13:18,392 --> 00:13:29,792
+ve burada da korpus olarak NRC, hashtag, emotion, leksikon kullanılmış. Bu 10 boyutlu ve 14177 İngilizce kelimeden oluşan bir leksikon.
+
+90
+00:13:30,171 --> 00:13:39,692
+Boyutlarda her birisi bir duyguyu tutuyor. Yani örneğin pozitif, negatif, sinirli şeklinde boyutlar var.
+
+91
+00:13:39,691 --> 00:13:48,251
+her cümle içerideki kelimelere göre diyelim hem pozitif içeriyor hem de joy içeriyor.
+
+92
+00:13:48,611 --> 00:13:51,571
+Bu feature'lar derecelendiriliyor.
+
+93
+00:13:51,571 --> 00:13:56,411
+Bir ağırlık verilerek olasılık kullanılıyor aslında.
+
+94
+00:13:57,211 --> 00:13:59,911
+Farklı değerler alıyor.
+
+95
+00:14:00,631 --> 00:14:03,051
+Kaç tane dil için bu NRC?
+
+96
+00:14:03,611 --> 00:14:08,071
+Bu NRC leksikonu değil mi hocam?
+
+97
+00:14:08,071 --> 00:14:12,551
+NRC birçok dil için var diye hatırlıyorum eğer karıştırmıyorsun.
+
+98
+00:14:12,631 --> 00:14:23,892
+Yok karıştırmıyorsun. Var Türkçe için de var. Ama onu kullanarak çalışma yapmak isteyenler ona ek şeyler de ekleyebiliyor. Bilgisi olsun. Belki ihtiyacınız da olur bir gün.
+
+99
+00:14:24,471 --> 00:14:24,611
+Tamam.
+
+100
+00:14:25,171 --> 00:14:28,431
+Ek şeyler ekleniyor derken önleğin feature eklenmesi gibi değil mi?
+
+101
+00:14:28,431 --> 00:14:37,011
+Kelime kelime. Mesela o sözlükte o kelime yok. Türkçede bir duygu ifade eden bir kelime. Ona ekleyebiliyorsun.
+
+102
+00:14:37,011 --> 00:14:38,972
+derecesini verebiliyorsun.
+
+103
+00:14:39,931 --> 00:14:42,671
+Yani sonuçta zaten bir Excel dosyası gibi bir şey.
+
+104
+00:14:43,271 --> 00:14:46,051
+Onlara ekleme yapabiliyorsun kelimelere.
+
+105
+00:14:49,748 --> 00:15:19,127
+Tamam. Burada da zaten korpus tabanlı bir yaklaşma olduğu için basit bir şekilde ağırlıklandırma yapılıyor. Örneğin cinsiyete, yaş gruplarını ve kişisel özelliklere göre değerlendirmişlerdi. Örneğin burada cinsiyete göre bakarsak SI her bir duygu sınıfı olsun, yani duygu kategorisi olsun ve men ve femel için
+
+106
+00:15:19,127 --> 00:15:27,807
+kadın için bu duygunun olasılığı hesaplanıyor ve bu şekilde de farklı çıkarımlar elde edilmiş.
+
+107
+00:15:27,987 --> 00:15:42,987
+Mesela kadınların erkeklerden daha fazla durum güncellemesi yaptığı, yaş aralıklarına bakıldığında ilginç olarak 41 ve 50 yaş aralığında en çok paylaşımın yapıldığı ve bunun da pozitif paylaşımlar olduğu.
+
+108
+00:15:42,987 --> 00:16:09,867
+Tabi tahmin ettiğimiz gibi nöretik insanların içine kapanık, sinirli insanların daha az paylaşım ve daha az pozitif paylaşımlar yaptığı ve en çok dışarıya dönük olan açık, openness dediğimiz insanların en fazla şu mor çizgi, en fazla paylaşım yaptığı ve pozitif paylaşımlarının da çok olduğunu görüyoruz.
+
+109
+00:16:09,867 --> 00:16:28,687
+Bunları ek olarak yılın ayları da incelenmiş. En çok Aralık ayında pozitif paylaşımın yapıldığı sonucuna varılmış. Ve Pazartesi, Perşembe günleri arasında sinirli ve şaşkınlık duygularının en çok kullanıldığı ortaya çıkarılmış.
+
+110
+00:16:28,687 --> 00:16:54,747
+[öğrenci] yine bir şey sormak istiyorum. Belki söyledin de hatırlayamadım. Aralık ayında en fazla paylaşım yapılmıştı ya. Bu veri seti ya da bu çalışmayı yapanlar ya da şöyle söyleyeyim. Aralık ayı güney yarım kürede çok güzel geçerken kuzey yarım kürede kasvetli ve soğuk geçiyor. Aslında bu verilerin hangi lokasyonlardan alındığı da önemli.
+
+111
+00:16:54,748 --> 00:16:54,868
+Ne?
+
+112
+00:16:55,587 --> 00:17:06,688
+Ben bir şey yordum ama hocam şimdi evet aslında öyle söylüyorsunuz da direkt yılbaşına denk geldiği için yılbaşından kaynaklı gibi düşündüm ben.
+
+113
+00:17:07,488 --> 00:17:09,947
+Olabilir. Benim de o aklıma gelmedi.
+
+114
+00:17:10,608 --> 00:17:10,927
+Okey.
+
+115
+00:17:11,268 --> 00:17:14,947
+Ama siz de haklısınız evet. Sizin düşündüğünüz de benim aklıma gelmemişti.
+
+116
+00:17:14,947 --> 00:17:22,488
+İşte birlikte iş yapmak, çalışmak böyle olur. Birinin düşünmediğini, diğeri, diğerinin düşünmediği hiç o aklıma gelmedi.
+
+117
+00:17:22,487 --> 00:17:34,927
+Yani yılbaşı deyince ben bana pek bir şey ifade etmediği için herhalde hele bu sene evde oturarak sanki dışarıdaydık da neyse hadi devam edelim
+
+118
+00:17:34,927 --> 00:17:54,427
+Tamam hocam. Ve daha sonra bu yaptıkları çıkarımların farklı cinsiyete yaşan kişisel özelliklere, günlere ve aylara bazlı, ay konuşamadım, ayları bazlı olarak bu feature'lere bakmışlardı.
+
+119
+00:17:54,427 --> 00:18:09,027
+ve bunların ne kadar anlamlı olduğunu da ortaya çıkarmak için Pearson Key Square testine tabi tutmuşlar ve 0.01'den düşük olan p-value'ları significant olarak ele almışlar.
+
+120
+00:18:09,027 --> 00:18:18,667
+Bu şekilde az önce örneğimi bahsettiğim çıkarımların ne kadar güvenilir olduğunu ortaya çıkarmış oluyorlar.
+
+121
+00:18:21,172 --> 00:18:44,811
+Şimdi eğer sorunuz yoksa şeye geçiyorum. Öğrenme tabanlı olan yöntemleri. Öğrenme tabanlı olan yöntemlerde bildiğimiz gibi supervised ve unsupervised yaklaşımlar var. Bunlara ek olarak kelime tabanlı olarak işlenen çalışmalar dışında başlık seviyesinde işlenen çalışmalar var.
+
+122
+00:18:44,811 --> 00:19:00,411
+ve yine az önceki datasetlerinden kullanılanlar var ama genellikle sosyal medyadan elde edilen veya kendilerinin oluşturduğu datasetleri kullanmışlar ve farklı diller için çalışmalar gerçekleştirilmiş.
+
+123
+00:19:00,892 --> 00:19:04,731
+Buradan birkaç tane örnek vereceğim.
+
+124
+00:19:04,731 --> 00:19:17,171
+Şimdi burada Arapça tweetler üzerinde bir çalışma yapılmış ama aslında dili önemli değil tweetlerin çünkü emojiler üzerine bir sınıflandırma, bir çalışma gerçekleştirilmiş.
+
+125
+00:19:17,831 --> 00:19:21,251
+Burada yapılan 134 bin tweet kullanılıyor.
+
+126
+00:19:22,251 --> 00:19:24,371
+Bir de şöyle bir şey karşılaştırılmış.
+
+127
+00:19:24,551 --> 00:19:27,411
+Veri setinin bir kısmı manuel olarak etketlenmiş.
+
+128
+00:19:27,551 --> 00:19:32,631
+Bir kısmı ise otomatik olarak etketlenmiş kendi geliştirdikleri yöntemini.
+
+129
+00:19:32,631 --> 00:19:38,311
+Bu ikisi arasındaki başarı farkı da gösterilmeye çalışılmış.
+
+130
+00:19:38,752 --> 00:19:42,011
+Otomatik sınıflandırma için Afin Leksikon kullanılmış.
+
+131
+00:19:42,231 --> 00:19:48,591
+Burada Afin Leksikon her bir emoji karşılık gelen bir ağırlığa sahip.
+
+132
+00:19:48,712 --> 00:19:54,472
+Mesela burada kırık kalp var, heartbroken şu ağırlığa sahip şeklinde bir leksikon.
+
+133
+00:19:54,472 --> 00:19:59,352
+Öncelikle bu emojileri kategorilere ayırıyorlar.
+
+134
+00:19:59,352 --> 00:20:03,011
+ve diyelim ki bir cümlede kalp ve ağlama olsun.
+
+135
+00:20:03,191 --> 00:20:10,832
+Kalp diyelim ki bu arada bu Afin-Mexico eksi 5 ve artı 5 arasında derecelendiriyor bu emojileri.
+
+136
+00:20:11,311 --> 00:20:16,371
+Kalp diyelim ki en yüksek artı 5 olsun, ağlama emojisi de eksi 2 olsun.
+
+137
+00:20:16,371 --> 00:20:28,411
+Direkt bu emojilerin ağırlıklarını yani skorlarını toplayarak o cümleye bir skor atıyor ve hangi kategoriye denk geliyorsa o kategoriyle etiketliyor otomatik labelingde.
+
+138
+00:20:28,411 --> 00:20:38,571
+Fakat tabi bu veri setinin manuel olarak etiketlenmesi zor olduğu için otomatik labeling ile yapılan veri seti 22.000 veriye sahipken
+
+139
+00:20:38,571 --> 00:20:49,532
+manuel labeling ile yapılan 2.000 veriye sahip ve aynı şekilde training ve testing %80 ve %20 olarak ayrılarak işleniyor.
+
+140
+00:20:49,532 --> 00:21:02,871
+Sınıflandırıcı olarak SVM ve NaviPayas yöntemleri kullanılıyor ve otomatik olarak etiketlenen yöntemin daha başarılı sonuçlar elde ettiği söylenmiş.
+
+141
+00:21:02,871 --> 00:21:11,132
+Bunun da nedeni aslında bana açık gibi geldi. Çünkü aslında manuel etiketlenme daha başarılı olur diye düşünürüz.
+
+142
+00:21:11,712 --> 00:21:18,871
+Ama burada sayı o kadar az ki yani 2000 kadar olduğu için büyük ihtimal overfitting olduğunu düşünüyorum.
+
+143
+00:21:19,532 --> 00:21:29,851
+Bu yüzden test başarısı düşük olmuştur diye düşünüyorum. Yoksa manuel, aynı sayıda olsaydı manuel geçerdi gibi düşünüyorum. Siz ne düşünüyorsunuz bilmiyorum hocam.
+
+144
+00:21:30,252 --> 00:21:46,931
+Olabilir. Ben ama şeyi anlayamadım. Şimdi bu emojilerin olduğu yere bakar mısın? Şimdi mesela otomatik şey yapıyor. Otomatik yani bu emojilere bakıyorsa her şeyde, tweette emoji mi var?
+
+145
+00:21:46,931 --> 00:21:54,371
+Ona göre şey yapması lazım, emoji olmayanları eliyor büyük ihtimalle oradan 130-40
+
+146
+00:21:54,371 --> 00:22:10,271
+Evet yani emojileri otomatik etiketlemekte hiçbir şey yok ki. Yani 5 taneden biri varsa Joy'da ona Joy diyor. Peki şöyle olsaydı kalbi kırık, mesela sen demin kalple ağlamayı gösterdin.
+
+147
+00:22:10,271 --> 00:22:19,531
+Kalple ağlama aynı emojide olmaz tweette. Kalbi kırılmış, ayrılmış ve ağlıyor. Belki bu ikisi yan yana olur.
+
+148
+00:22:19,920 --> 00:22:26,019
+n-gram dil ne olur? Nötr olur. Halbuki orada bir şey anlatılıyor yani.
+
+149
+00:22:28,180 --> 00:22:36,199
+Paper'da da bir tane böyle farklı kategorilerden olan verilmişti de örnek olarak. O yüzden ben de direkt kalp ve ağlamayı verdim.
+
+150
+00:22:37,899 --> 00:22:47,039
+Yine [öğrenci] oradan bir şey söyledi. Bu da yani cevap kelle mi nedir bağlanırdı haberlerde bir şey söylerdi.
+
+151
+00:22:47,039 --> 00:22:55,100
+Yine arada bir şey söylüyor [öğrenci]. Seni de göreceğiz sunumunda. Tamam bu arada yarım saat oluyor [öğrenci].
+
+152
+00:22:55,100 --> 00:23:11,519
+Öyle mi? Hemen hızlı anlatıyorum. Ben de söylüyorum ki hızlı hızlı anlatıyorum. Tamam burada da farklı bir yöntem. Bu da şey unsupervised. Az önce gösterdiğim süpervised yöntemdi. Bu da unsupervised bir yöntem.
+
+153
+00:23:11,519 --> 00:23:21,339
+kendileri YouTube yorumlarından bir korpus oluşturuyorlar ve Pointwise Mutual Information metriğini kullanıyorlar.
+
+154
+00:23:21,339 --> 00:23:34,219
+Burada şöyle gösterecek olursam EJ yazıyor burada. EJ her bir duyguyu, buradaki 6 duygudan her birini ve bu SRJ'de bu duyguya ait olan kelimeleri içeriyor.
+
+155
+00:23:34,219 --> 00:23:43,159
+S-word de bütün korpustaki kelimeleri N'de korpustaki satır sayısını temsil ediyor.
+
+156
+00:23:43,159 --> 00:23:52,759
+Yani her bir duygu için Point-Vice Mutual Information hesaplanıyor bu duygular için ayrı ayrı ve maksimum olanı bu cümle için atanıyor.
+
+157
+00:23:52,919 --> 00:24:00,679
+Eğer 0.25'e eşit veya bu değerden küçükse nötr olarak sınıflandırılıyor cümle.
+
+158
+00:24:00,679 --> 00:24:16,119
+Burada unsupervised yaklaşma olduğu için tüm korpus etiketlenmiyor ama bu çalışmanın da başarısını gösterebilmek için bir etiketli alt veri kümesi oluşturularak precision, recall ve accuracy değerleri gösteriliyor.
+
+159
+00:24:16,119 --> 00:24:40,119
+Şimdi burada ben şey olarak aldım bunu hocam. Bu çok uzun matematiğe sahip bir çalışmaydı. Açıkçası hepsini anlamadım ama bunu da eklemek istedim. Farklı bir yaklaşım olduğu için kelime tabanlıdan. Bu başlık tabanlı bir yaklaşım. Öncelikle kelimeleri başlıklar altına kümeliyor.
+
+160
+00:24:40,119 --> 00:24:51,379
+Burada kullanılan model ise B-Term Topic model. B-Term Topic modeli diğer modellerden ayıran en önemli özelliği ise korpus bazında çalışıyor olması.
+
+161
+00:24:51,379 --> 00:25:01,739
+Ve Topic Level'da çalışmamızın avantajı ise örneğin iki cümle düşünün. Birisi benzinin pahalılığından, birisi de bir araba markasının bir özelliğinden bahsediyor.
+
+162
+00:25:01,739 --> 00:25:23,199
+İkisinde de herhangi bir ortak kelime yok fakat ikisinin de konu başlığı otomobil üzerine. Bu cümleleri kaçırmamamızı sağlıyor. Bu şekilde aslında bir kümeleme gibi bitörleri alarak bir kümeleme, ay masumu sizin gibi bulamadım, bitörleri bu kümelere atıyor.
+
+163
+00:25:23,199 --> 00:25:40,440
+Bu kümeleme kısmı ise bir online platformda mevcut. Onun da linkini buraya bıraktım. Metini giriyorsunuz. Kaç tane klaster oluşturmak istediğinize giriyorsunuz ve size böyle bir kelimeleri kümelendiriyor.
+
+164
+00:25:40,439 --> 00:25:50,779
+Şimdi hibrit yaklaşımlar var. Bunlar ana başlıkları da birleştirerek hibrit yaklaşımlar oluşturanlar var.
+
+165
+00:25:52,980 --> 00:26:06,599
+bazı yöntemleri birleştirerek hibrit yaklaşım olarak işleyenler var. Bunlardan şöyle bir örnek vereyim. Bu da baya uzun bir çalışmaydı ama genel olarak anlatmaya çalışacağım.
+
+166
+00:26:06,599 --> 00:26:22,159
+Farklı klasifierler oluşturuluyor. Bu birisi genel olarak kullanan Bag of Word bir base learner olarak seçiliyor. Burada TF-IDF ağırlıkları ve SVM klasifieri kullanılıyor.
+
+167
+00:26:22,159 --> 00:26:45,179
+Word Embedding Base Classifier'da ise CBOV yöntemi tüm kelime ağırlıkları bir olarak ve yine TF-IDF ağırlıkları ve bir de kendi geliştirdikleri kelimelerin ortalmalarına ve standart sapmaları kullanarak kelimelere bir önemlilik, importance değeri verilerek bir ağırlıklandırma yapılıyor.
+
+168
+00:26:45,179 --> 00:26:51,959
+ve bu ağırlıklandırmalar kullanılarak bir ensembl yöntemi oluşturuluyor.
+
+169
+00:26:52,419 --> 00:27:04,139
+Bu BOV klasifier ile örneğin CBOV'un sonuçları birleştirilerek bir ensembl sadece TF-IDF ağırlıklarının kullanılmasıyla bir ensembl oluşturuluyor.
+
+170
+00:27:04,139 --> 00:27:21,139
+ve bu şekilde az önce bahsettiğim veri setleri de özellikle kullanılarak bir karşılaştırma gerçekleştirilerek en iyi kendi geliştirdikleri classifier ağırlığına sahip olan Ensemble yönteminin başarılı olduğunu gösteriyorlar.
+
+171
+00:27:22,259 --> 00:27:31,359
+Bu word2vec için word2vec ve globe sonuçları da vardı. Ben buraya hepsini şey yapmak istemedim.
+
+172
+00:27:31,359 --> 00:27:47,419
+Biraz acele ettim siz söyleyince hocam. Sonuçlarda da genellikle makine öğrenmesi yöntemleri tercih ediliyor ama hibrit yöntemlerdense derin öğrenme ve ensemble yöntemleri daha umut vaat edici olduğu görülüyor.
+
+173
+00:27:47,419 --> 00:28:00,200
+Ve veri seti eksikliğinin de çok öne çıktığını görebiliyoruz. Eğer bir veri seti aslında oluşturulabilirse çok fazla citation alınmasına sağlanabilir.
+
+174
+00:28:01,359 --> 00:28:02,599
+referanslarında bu şekilde.
+
+175
+00:28:06,039 --> 00:28:10,299
+Belki sen yaptığın çalışmayla alırsın o satisfaction'ları.
+
+176
+00:28:10,799 --> 00:28:11,059
+Evet.
+
+177
+00:28:11,679 --> 00:28:12,319
+İnşallah.
+
+178
+00:28:12,679 --> 00:28:16,519
+Peki sen paylaşımını bırakıyorsun [öğrenci].
+
+179
+00:28:16,599 --> 00:28:17,479
+Teşekkür ediyorum.
+
+180
+00:28:17,599 --> 00:28:19,299
+Hiç soru var mı diye de sormuyorum.
+
+181
+00:28:19,459 --> 00:28:21,619
+Çünkü zamanımız çok hızlı aktı.
+
+182
+00:28:23,299 --> 00:28:26,959
+[öğrenci], pardon o geçen hafta anlatıyoruz ödülleri.
+
+183
+00:28:27,039 --> 00:28:27,779
+[öğrenci].
+
+184
+00:28:28,559 --> 00:28:29,559
+[öğrenci] burada mısın?
+
+185
+00:28:30,019 --> 00:28:30,959
+Buradayım hocam.
+
+186
+00:28:30,959 --> 00:28:32,219
+Hemen paylaşıyorum.
+
+187
+00:28:33,439 --> 00:28:33,579
+Heh.
+
+188
+00:28:35,420 --> 00:28:36,439
+Bir saniye.
+
+189
+00:28:36,799 --> 00:28:38,659
+Herkesin ismi büyük büyük ya.
+
+190
+00:28:39,139 --> 00:28:42,619
+Senin resmin olduğu için ismin küçük duruyor.
+
+191
+00:28:43,119 --> 00:28:44,980
+Allah'ım dedim yok mu bu kızcağız?
+
+192
+00:28:46,739 --> 00:28:48,239
+Kaç slide'ın var?
+
+193
+00:28:49,060 --> 00:28:49,659
+Yirmidir.
+
+194
+00:28:50,359 --> 00:28:52,499
+Eyvah. Yirmisi yarım saat sürdü.
+
+195
+00:28:52,959 --> 00:28:53,899
+Yirmi biri ne olacak?
+
+196
+00:28:54,019 --> 00:28:56,239
+Yok kız bu hiç diye düşünüyorum hocam.
+
+197
+00:28:56,420 --> 00:28:57,420
+İyi tamam peki.
+
+198
+00:28:57,819 --> 00:28:59,140
+Ekranımı görebiliyorsunuz değil mi?
+
+199
+00:28:59,140 --> 00:28:59,980
+Görebiliyoruz.
+
+200
+00:29:00,319 --> 00:29:00,619
+Peki.
+
+201
+00:29:00,959 --> 00:29:07,739
+Benim çalışmam aslında bir karşılaştırma çalışması, biraz daha sözler olan bir çalışma.
+
+202
+00:29:08,539 --> 00:29:16,239
+Konu bölümleme algoritmalarının karşılaştırmalı bir çalışması. 2017 yılında bir konferansta yayınlanmış.
+
+203
+00:29:17,519 --> 00:29:27,819
+İlk olarak çalışmada konu segmentasyonundan algoritmalar genel, yani uzun bir değerlendirme yapılmış.
+
+204
+00:29:27,819 --> 00:29:36,079
+Burada çalışmanın amacı kelime anlamlarını analiz etmek için en iyi kelime vektörü temsilini sunan algoritmayı bulabilmek aslında.
+
+205
+00:29:36,079 --> 00:29:50,959
+Bu alanda yapılmış olan çalışmalar var. Hani son yıllarda popüler olarak kullanılan yöntemler var. Bu yöntemlerden hangisinin en iyi sonucu verdiğini bulmaya çalışmışlar. Genelde çalışmalar İngilizce dili için yapılmış.
+
+206
+00:29:51,380 --> 00:29:57,380
+ama yazarlar burada hem İngilizce hem Arapça dili için çalışmışlar.
+
+207
+00:29:58,380 --> 00:30:07,380
+İlk olarak konu segmentasyonu. Konu segmentasyonu bir dökümanı anlamlı olan, anlamlı bölümleri ayırma işlemi olarak tanımlayabiliriz.
+
+208
+00:30:08,380 --> 00:30:15,380
+Çalışmada konu segmentasyonu yöntemlerini içsel ve dışsal olarak iki gruba ayırmışlar.
+
+209
+00:30:15,380 --> 00:30:28,519
+içsel yaklaşımda konu bölümleme sadece bölümlenecek dökümana bağlı iken dışsal bölümleme de ise dış kaynaklarda kullanılabiliyor.
+
+210
+00:30:30,039 --> 00:30:35,900
+Burada en bilinen, en popüler olarak bilinen içsel yaklaşımlar TextTilling ve C99'mur.
+
+211
+00:30:35,900 --> 00:30:41,600
+Diğerleri ise LCSec, F06 ve TopicTilling algoritmaları.
+
+212
+00:30:41,599 --> 00:31:07,740
+LC-SEC sözcük tekrarlarını kullanıyor. F06 ve topic-tilling de text-tilling yöntemini bazalı almışlar. Peki farkları ne? F06'nın text-tilling'den mesela farkı şu. Benzerlik ölçümü için F06 kosinus benzerliğini kullanmak yerine DICE metriğini kullanıyor.
+
+213
+00:31:07,740 --> 00:31:17,219
+En popüler dışsal yaklaşımlar ise LSI, Co-Cranes Network ve Generative Bayezim model olarak gösterilebilir.
+
+214
+00:31:18,219 --> 00:31:20,979
+İlk olarak LSI algoritmasını anlatacağım.
+
+215
+00:31:21,979 --> 00:31:27,400
+İstatistiksel bir algoritma, LSI algoritması ve iki temel adıma dayanan bir algoritma.
+
+216
+00:31:27,479 --> 00:31:28,880
+Bunu derste de görmüştük.
+
+217
+00:31:29,460 --> 00:31:36,140
+İlk olarak terim döküman matrisi oluşturuluyor.
+
+218
+00:31:36,139 --> 00:31:49,659
+Burada satırlar, terimleri, sütunlar, dökümanları ifade ediyor. İkinci adımda da bu oluşturulan matriz, singular value decomposition yöntemiyle 3 tane teklim matrizler ayrılıyor.
+
+219
+00:31:51,039 --> 00:31:58,539
+Burada şöyle bir şey var, LSA Frequency, ağırlıklandırma fonksiyonu ve semantik alan boyutuna dayanan bir algoritma.
+
+220
+00:31:58,539 --> 00:32:07,740
+Burada yine bu çalışmanın yazarı olan Naili daha önce yapmış olduğu bir çalışmada parametre seçiminin konu segmentasyon üzerinde başarılı olduğunu kanıtlamış.
+
+221
+00:32:08,740 --> 00:32:19,540
+Ve çalışmalarında yerel frekansı 3, global frekansı 1, yerel ağırlıklandırma fonksiyonu olarak TIEP, global olarak da IDF seçmişler.
+
+222
+00:32:20,299 --> 00:32:23,100
+Bu çalışmada da bu parametreleri kullanmışlar yine.
+
+223
+00:32:23,100 --> 00:32:36,700
+Word2vec algoritması Mikolov tarafından 2013 yılında önerilen bir algoritmasıdır.
+
+224
+00:32:37,359 --> 00:32:43,100
+Kelimeleri bağlamlarına göre tahmin edilen bir algoritma ve sinir ağa tabanlı olan bir algoritmadır.
+
+225
+00:32:43,100 --> 00:32:46,779
+Seabov ve skipgram olmak üzere iki farklı yaklaşım kullanıyor.
+
+226
+00:32:47,200 --> 00:32:52,760
+İlk olarak Seabov yine bu sinir ağa olduğu için üç katmandan oluşan bir yaklaşım.
+
+227
+00:32:53,100 --> 00:32:58,359
+girdi katmanı, girdi hidden katman, hidden layer ve output layer olmak üzere.
+
+228
+00:32:59,540 --> 00:33:02,439
+C-Ball'da input olarak biz bağlamı veriyoruz.
+
+229
+00:33:03,120 --> 00:33:07,439
+Output olarak kelime, yani bağlamdan kelime tahmini yapıyor.
+
+230
+00:33:07,439 --> 00:33:12,359
+Skit kremisi kelimeyi input olarak veriyoruz.
+
+231
+00:33:12,559 --> 00:33:16,859
+Bize kelimenin konteksini tahmin ediyor.
+
+232
+00:33:18,359 --> 00:33:21,320
+Ve şöyle Mikolo şunu söylüyor.
+
+233
+00:33:21,320 --> 00:33:31,219
+Sıkık gram küçük eğitim verileri için iyi çalışırken SIBO daha hızlı ve sık, frekyünt kelimelerle daha iyi çalıştığını söylemiş.
+
+234
+00:33:33,740 --> 00:33:36,960
+Diğer bir algoritma ise GLOV algoritması.
+
+235
+00:33:37,120 --> 00:33:43,640
+Pennington ve diğerleri tarafından 2014 yılında Word2vec'ten sonra önerilmiş bir algoritma.
+
+236
+00:33:44,279 --> 00:33:47,299
+Yine kelime gösterimlerini öğrenmek için kullanılır.
+
+237
+00:33:47,796 --> 00:34:07,796
+Burada aslında word2vec'den farklı olarak kelimelerin birlikte geçme sıklığı da kullanılıyor. İlk olarak bir x-q-ercurrence matrisi oluşturuluyor. Burada x-i-j ile bahsedilen terim, j kelimesi ile birlikte geçen ilk kelimesinin sıklığı.
+
+238
+00:34:07,796 --> 00:34:21,395
+İkinci adımda ise bu x çarpanlarına ayrılmış. Burada bir hata fonksiyonu oluşturuluyor. Bu hata fonksiyonu güncellenmiş. Şu şekilde bir hata fonksiyonu oluşturmuşlar.
+
+239
+00:34:21,395 --> 00:34:33,516
+Burada w, i, w, j kelime vektörlerimiz x, i, j ise birlikte kullanım maddesi. Bu şekilde bir hata fonksiyonu oluşturmuşlar.
+
+240
+00:34:33,515 --> 00:34:47,815
+ve bu çalışmada önerilen konu bölümleme algoritması aslında şöyle yapmışlar. LST, Word2vec ve Glove algoritmalarını kullanmışlar.
+
+241
+00:34:47,816 --> 00:35:07,556
+Ve bu algoritma 5 adımdan oluşan bir algoritma. İlk olarak ön işlem adımı var. Daha sonra frekans sözlüğü oluşturmuşlar, benzerlik matrisi oluşturmuşlar, sıralama matrisi oluşturmuşlar ve konu sınırlarını belirleme adımıyla bir sistem oluşturmuşlar.
+
+242
+00:35:07,555 --> 00:35:17,635
+İlk olarak ön işlem adında dil tespiti yapılmış, stop words'lar kaldırılmış ve kelime kökleri bulunmuş.
+
+243
+00:35:19,375 --> 00:35:29,055
+Daha sonra frekans sözlüğünde bu sözlük vektörlerden oluşuyor ve her vektör bir cümle ile ilişkilendirilmiş.
+
+244
+00:35:29,055 --> 00:35:35,535
+Eğer bir terim anlamsal alana yoksa boş bir vektör tarafından sunulduğundan bahsedilmiş.
+
+245
+00:35:35,535 --> 00:35:58,575
+Benzerlik maddesinde ise tüm terim çiftleri arasında bir benzerlik hesaplanması. Bu verdiğim verilen similarity formülü ise cümlelerin birbiriyle olan benzerliğini hesaplayan bir formül. Daha sonra bir sıralama maddesi oluşturmuşlar ve Reynar algoritması kullanarak da konu sınırlarını tespit etmişler.
+
+246
+00:36:02,164 --> 00:36:12,863
+Şimdi değerlendirme kısmına geçecek olursam, bu önerdikleri algoritmaları İngilizce ve Arapça diline ait iki farklı doküman üzerinde denemişler.
+
+247
+00:36:13,504 --> 00:36:20,703
+İngilizce'de kullanılan doküman sadece bilgisayar bilimlerine ait makalelerin yer aldığı bir külliyat.
+
+248
+00:36:20,703 --> 00:36:27,203
+Arapça için kullanılan kaynak ise ekonomi, politika, sağlık gibi çeşitli konuların yer aldığı bir külliyat.
+
+249
+00:36:27,203 --> 00:36:41,143
+Şurada gösterdiğim üzere çalışmada eğitim, training ve test seti olmak üzere iki sete ayırmışlar verilerini.
+
+250
+00:36:41,143 --> 00:36:54,323
+Eğitim setini bir anlamsal semantik alan oluşturmak için kullanırlarken test setini bu LSA, WorldTrack ve Global algoritmalarını değerlendirmek için kullanmışlar.
+
+251
+00:36:54,323 --> 00:36:57,963
+ve değerlendirmeleri için
+
+252
+00:36:57,963 --> 00:37:00,823
+window-diff metriyinden yararlanmışlar.
+
+253
+00:37:02,344 --> 00:37:04,524
+İlk olarak word-to-wake algoritmasını
+
+254
+00:37:04,524 --> 00:37:06,123
+değerlendirecek olursak
+
+255
+00:37:06,123 --> 00:37:08,284
+burada daha önce söylediğim gibi
+
+256
+00:37:08,284 --> 00:37:09,363
+iki yaklaşım vardı.
+
+257
+00:37:09,524 --> 00:37:10,824
+Seabow ve Skitgram
+
+258
+00:37:10,824 --> 00:37:13,744
+ve negatif sampling ve hierarchical
+
+259
+00:37:13,744 --> 00:37:16,744
+softmax yaklaşımlarını da kullanmışlar
+
+260
+00:37:16,744 --> 00:37:18,924
+ve her bir yaklaşımda
+
+261
+00:37:18,924 --> 00:37:20,803
+ne kadar hata oranı aldıklarını
+
+262
+00:37:20,803 --> 00:37:22,524
+bir tablo ile göstermişler.
+
+263
+00:37:22,524 --> 00:37:32,664
+Burada gördüğümüz üzere İngilizce için CBOV'da negatif sampling iyiyken Scriptgram'da hierarchical softmax daha iyi sonuç vermiş.
+
+264
+00:37:33,303 --> 00:37:40,164
+Arapça'da ise her iki durumda da hem CBOV hem Scriptgram negatif sampling daha iyi sonuç vermiş.
+
+265
+00:37:40,964 --> 00:37:42,643
+Bunlar yüzde değerler mi?
+
+266
+00:37:42,884 --> 00:37:46,303
+Yüzde evet hocam yüzde koymayı unutmuşum window dipin yanına.
+
+267
+00:37:46,303 --> 00:37:47,083
+Yüzde.
+
+268
+00:37:47,083 --> 00:37:56,363
+İngilizce'de ise CBOF genel olarak hata oranı daha düşük.
+
+269
+00:37:56,823 --> 00:37:59,164
+Bunun nedeni olarak da şunu gösterebiliriz.
+
+270
+00:37:59,244 --> 00:38:04,143
+Daha önce söylediğim gibi CBOF sık kullanan, kelimelerle daha iyi çalışan bir algoritma demiştim.
+
+271
+00:38:05,024 --> 00:38:09,643
+Söylediğim gibi İngilizce bilgisayar bilimlerine ait makalelerden oluşuyor sadece.
+
+272
+00:38:09,643 --> 00:38:14,723
+Bu nedenle de tekrar eden kelime sayısının fazla olmasını bekliyoruz.
+
+273
+00:38:14,723 --> 00:38:17,723
+böylece
+
+274
+00:38:17,723 --> 00:38:19,443
+Sibov, Scriptgram'a göre
+
+275
+00:38:19,443 --> 00:38:20,803
+daha az hata ile
+
+276
+00:38:20,803 --> 00:38:23,303
+daha iyi performans göstererek çalışmış.
+
+277
+00:38:23,943 --> 00:38:24,943
+Arapça için ise
+
+278
+00:38:24,943 --> 00:38:26,903
+Scriptgram, Sibov'a göre daha iyi
+
+279
+00:38:26,903 --> 00:38:28,384
+performans göstermiş.
+
+280
+00:38:31,123 --> 00:38:32,863
+Daha sonra yine İngilizce için
+
+281
+00:38:32,863 --> 00:38:34,464
+LSA, World2Vac ve Global
+
+282
+00:38:34,464 --> 00:38:37,024
+algoritmalarını karşılaştıracak olursak
+
+283
+00:38:37,024 --> 00:38:38,544
+aşağıda yine
+
+284
+00:38:38,544 --> 00:38:40,964
+WindowDiff eğrisini görüyoruz.
+
+285
+00:38:41,063 --> 00:38:43,063
+Burada LSA'nin en yüksek
+
+286
+00:38:43,063 --> 00:38:45,003
+hata oranına sahip olduğunu
+
+287
+00:38:45,003 --> 00:38:47,103
+şuralardan görebiliriz.
+
+288
+00:38:49,384 --> 00:38:50,963
+Word to Back ve Glow birbirine
+
+289
+00:38:50,963 --> 00:38:53,243
+çok yakın bir şekilde ilerlemiş.
+
+290
+00:38:53,483 --> 00:38:55,063
+Burada da yukarıda
+
+291
+00:38:55,063 --> 00:38:57,143
+ortalama sonuçlarını
+
+292
+00:38:57,143 --> 00:38:58,963
+görüyoruz. Average resultları.
+
+293
+00:39:00,703 --> 00:39:02,823
+En düşük semantik alana
+
+294
+00:39:02,823 --> 00:39:05,143
+sahip olan Word to Back algoritması
+
+295
+00:39:05,143 --> 00:39:07,023
+ve yine aynı şekilde en düşük
+
+296
+00:39:07,023 --> 00:39:09,063
+hata oranına sahip olan algoritma
+
+297
+00:39:09,063 --> 00:39:10,664
+Word to Back algoritması.
+
+298
+00:39:11,363 --> 00:39:12,963
+Buradan şu sonucu çıkarabiliyoruz.
+
+299
+00:39:13,063 --> 00:39:20,063
+İngilizce dili için Word2Vac algoritması diğerlerine oranla daha iyi performans gösterdiğini söyleyebiliyoruz.
+
+300
+00:39:21,503 --> 00:39:26,063
+LSE en yüksek hata oranına sahip olan algoritma.
+
+301
+00:39:26,963 --> 00:39:34,384
+Word2Vac ve Glove birbirine çok yakın ama Word2Vac'in semantik alanı da daha düşük.
+
+302
+00:39:35,223 --> 00:39:36,963
+Bu kaç yılına ait bir yayındı?
+
+303
+00:39:37,323 --> 00:39:38,063
+2017 hocam.
+
+304
+00:39:39,063 --> 00:39:42,063
+Buna BERT'e ekleseler durum değişirdi.
+
+305
+00:39:43,063 --> 00:39:44,403
+diye düşünüyorum.
+
+306
+00:39:45,283 --> 00:39:46,963
+Arapça için ise
+
+307
+00:39:46,963 --> 00:39:50,063
+baktığımız zaman
+
+308
+00:39:50,063 --> 00:39:52,623
+en düşük hata oranları
+
+309
+00:39:52,623 --> 00:39:54,823
+Glove'da. Aslında en yüksek
+
+310
+00:39:54,823 --> 00:39:56,723
+hata oranı da yine Glove'da.
+
+311
+00:39:57,323 --> 00:39:58,723
+Ama ortalama bir sonuç
+
+312
+00:39:58,723 --> 00:40:00,003
+elde ettiğimiz için
+
+313
+00:40:00,000 --> 00:40:02,000
+en iyi sonucu Glove vermiş.
+
+314
+00:40:03,319 --> 00:40:04,039
+Yine LSE
+
+315
+00:40:04,039 --> 00:40:05,879
+algoritması anlamsal
+
+316
+00:40:05,879 --> 00:40:08,019
+semantik alan olarak çok büyük.
+
+317
+00:40:08,199 --> 00:40:10,039
+Diğerlerine oranla. Hata
+
+318
+00:40:10,039 --> 00:40:11,819
+oranı da diğerlerine oranla
+
+319
+00:40:11,819 --> 00:40:13,019
+daha fazla.
+
+320
+00:40:14,179 --> 00:40:15,960
+Word2Vac ve Glove
+
+321
+00:40:15,960 --> 00:40:17,840
+birbirine yakın
+
+322
+00:40:17,840 --> 00:40:18,520
+ama
+
+323
+00:40:18,520 --> 00:40:22,139
+hata oranı Word2Vac'e
+
+324
+00:40:22,139 --> 00:40:23,519
+oranla daha düşük
+
+325
+00:40:23,519 --> 00:40:26,199
+kalmış. Bu nedenle yazarlar
+
+326
+00:40:26,199 --> 00:40:27,739
+Arapça dili için Glove
+
+327
+00:40:27,739 --> 00:40:31,939
+algoritmasının diğerlerine göre daha iyi performans gösterdiğini öne sürmüşler.
+
+328
+00:40:33,919 --> 00:40:45,299
+Genel değerlendirmeye bakacak olursak LSA hem Arapça hem İngilizce'de diğer algoritmalara göre daha başarısız kalmış.
+
+329
+00:40:45,959 --> 00:40:50,239
+İngilizce için Word2Vac, Arapça için Glove daha etkili yöntemdir.
+
+330
+00:40:50,239 --> 00:40:53,619
+şöyle bir şey söylemişler
+
+331
+00:40:53,619 --> 00:40:55,779
+kullanılan dilden bağımsız olarak
+
+332
+00:40:55,779 --> 00:40:57,779
+Word2Vac, Glove'a göre daha iyi
+
+333
+00:40:57,779 --> 00:40:59,419
+olduğunu öne sürmüşler
+
+334
+00:40:59,419 --> 00:41:03,839
+Glove algoritması'nın Word2Vac'e göre
+
+335
+00:41:03,839 --> 00:41:06,439
+daha şuradan da gördüğümüz gibi
+
+336
+00:41:06,439 --> 00:41:09,799
+daha büyük anlamsal semantik
+
+337
+00:41:09,799 --> 00:41:11,080
+alana sahip
+
+338
+00:41:11,080 --> 00:41:14,339
+bu durumda bilgiyi öğrenmek için
+
+339
+00:41:14,339 --> 00:41:16,939
+tespit etmek için bir kelimenin anlamını
+
+340
+00:41:16,939 --> 00:41:19,539
+daha fazla bilgiye ihtiyaç duymasına neden
+
+341
+00:41:19,540 --> 00:41:20,260
+oluyormuş.
+
+342
+00:41:22,520 --> 00:41:23,319
+Şöyle
+
+343
+00:41:23,319 --> 00:41:25,319
+böyle bir tablo vardı. Üç tane
+
+344
+00:41:25,319 --> 00:41:27,440
+tablo vardı. Ben buraya bir tanesini örnek
+
+345
+00:41:27,440 --> 00:41:28,419
+olarak koydum.
+
+346
+00:41:29,400 --> 00:41:31,300
+Arapça dili İngilizceye göre
+
+347
+00:41:31,300 --> 00:41:33,660
+daha karmaşık. Gramar açısından
+
+348
+00:41:33,660 --> 00:41:35,779
+çeşitli ve morfolajik
+
+349
+00:41:35,779 --> 00:41:37,059
+olarak karmaşık bir dil.
+
+350
+00:41:38,180 --> 00:41:39,440
+Ve Arapça için
+
+351
+00:41:39,440 --> 00:41:41,620
+kelimeleri yine semantik anlamlarını
+
+352
+00:41:41,620 --> 00:41:43,739
+tespit edebilmek için daha fazla bilgiye
+
+353
+00:41:43,739 --> 00:41:44,739
+ihtiyaç duyuyoruz.
+
+354
+00:41:45,580 --> 00:41:47,699
+Önce de söylediğim gibi Arapça
+
+355
+00:41:47,699 --> 00:41:48,979
+dilinde
+
+356
+00:41:48,979 --> 00:41:51,519
+Glob algoritması daha iyi çalışmıştı.
+
+357
+00:41:52,239 --> 00:41:56,279
+Burada da daha fazla bilgiye ihtiyaç duyduğu için Glob algoritması
+
+358
+00:41:56,279 --> 00:42:01,139
+Arapçada daha iyi çalıştığını iddia etmiş yazarlar.
+
+359
+00:42:03,179 --> 00:42:07,399
+Bir örnek veriyorlar Arapçanın karmaşıklığını göstermek için.
+
+360
+00:42:07,559 --> 00:42:14,339
+Scientist ve çoğul ağır hali olan Scientist aynı kökten gelen iki kelime.
+
+361
+00:42:14,599 --> 00:42:17,919
+Bu iki kelime arasında bir kosünüs benzerliği hesaplanmış.
+
+362
+00:42:17,919 --> 00:42:27,199
+LSE için 0.3, WorldWag ile 0.05 ve Glove ile 0.2 oranında bir benzerlik hesaplanmış.
+
+363
+00:42:27,279 --> 00:42:33,199
+Aslında aynı kök ama benzerlik oranları yani baktığımız zaman düşük kalmış.
+
+364
+00:42:33,919 --> 00:42:41,039
+Yine aynı bağlamda yer alan yani aynı konu bağlamında yer alan Medicine ve Diagnos kelimelerine bakılmış.
+
+365
+00:42:41,039 --> 00:42:48,039
+Burada oranlar çok daha düşük kalmış. En iyi oranı 0.26 ile Glover'e.
+
+366
+00:42:49,859 --> 00:42:57,259
+Yukarıda görülen şekilde kelimelerin anatsal, semantik uzaydaki gösterimlerini görüyoruz.
+
+367
+00:42:57,359 --> 00:43:00,939
+7 tane kelime var ve her bir kelimenin vektörleri verilmiş.
+
+368
+00:43:01,959 --> 00:43:09,119
+Scientist, World ve Universe aynı kökten gelen kelimelermiş. Bunlar da aynı kökten gelen kelimelermiş.
+
+369
+00:43:09,119 --> 00:43:15,799
+Tabi bu Arapça olduğu için çok farklı gibi duruyor İngilizce ama Arapça da aynı kökten geliyorlarmış.
+
+370
+00:43:16,739 --> 00:43:18,779
+Bu şekilde örnek olarak vermişler.
+
+371
+00:43:21,399 --> 00:43:30,599
+Ve yaptıkları çalışmaları konu segmentasyonu alanında daha önceden yapılan olan çalışmalarla karşılaştırmışlar.
+
+372
+00:43:31,179 --> 00:43:36,500
+Dediğim gibi konu segmenterlerini içsel ve dışsal olarak iki gruba ayırabiliriz.
+
+373
+00:43:36,500 --> 00:43:39,440
+baktıkları zaman
+
+374
+00:43:39,440 --> 00:43:40,660
+hem İngilizce ve hem
+
+375
+00:43:40,660 --> 00:43:43,160
+yine Arapça için bakmışlar.
+
+376
+00:43:43,460 --> 00:43:44,580
+İngilizce'de
+
+377
+00:43:44,580 --> 00:43:47,039
+dışsal yaklaşımdaki
+
+378
+00:43:47,039 --> 00:43:49,399
+algoritmaların daha iyi, yine Arapça'da
+
+379
+00:43:49,399 --> 00:43:51,199
+da dışsal grupta olan
+
+380
+00:43:51,199 --> 00:43:52,699
+algoritmaların daha iyi
+
+381
+00:43:52,699 --> 00:43:54,619
+performans gösterdiğini
+
+382
+00:43:55,188 --> 00:44:19,747
+tespit etmişler. Burada da şu sonucu varmışlar. Dışsal algoritmalar içsellere göre daha iyi sonuç veriyor. Bunun nedeni ise dışsal yaklaşımlarda biz dış kaynakları da kullanabildiğimiz için dış bilgi eklemek konu segmentlerinin başarısını artırdığını kanısına varmışlar.
+
+383
+00:44:19,747 --> 00:44:36,088
+Bu şekilde İngilizce ve Arapça arasında çok ciddi özellikle dijital grupta çok ciddi bir hata oranı farkı var. İngilizce'de maksimum %8'lik bir hata varken Arapça'da bu oran %30'a kadar çıkmış.
+
+384
+00:44:36,087 --> 00:44:50,107
+Genel sonuçlara bakacak olursak yazarlar en yaygın olarak bilinen kelime gösterimi alanında en yaygın olarak bilinen LSA, word2vec ve globe algoritmalarını incelemişler.
+
+385
+00:44:50,107 --> 00:44:57,107
+Hangi algoritmanın kelime vektörlerini öğrenmede daha iyi performans gösterdiğini araştırmışlar.
+
+386
+00:44:57,987 --> 00:45:01,207
+İngilizce ve Arapça için çalışmalarını tekrarlamışlar.
+
+387
+00:45:01,207 --> 00:45:09,147
+ve vardıkları sonuçlara göre LST her iki dil içinde en kötü sonucu veren algoritmadır.
+
+388
+00:45:09,747 --> 00:45:14,427
+Word2vec ve Glove'un performansları birbirine yakındır.
+
+389
+00:45:14,427 --> 00:45:20,887
+Ama Word2vec daha küçük semantik alan ile daha iyi sonuç vermiştir.
+
+390
+00:45:22,367 --> 00:45:26,767
+İngilizce için Word2vec, Arapça için Glove daha iyi sonuç vermiştir.
+
+391
+00:45:26,767 --> 00:45:36,667
+ve burada da söylediğim gibi İngilizce dili Arapçaya göre daha iyi performans vermiştir konu segmenterlerinde.
+
+392
+00:45:37,587 --> 00:45:49,427
+Bunun nedeni olarak da Arapça karmaşık bir yapıda bir dil olduğu için İngilizceye göre başarı kısmında geri planda kalmıştır.
+
+393
+00:45:50,187 --> 00:45:54,107
+Kaynaklarımı kadar teşekkür ediyorum. Sorunuz var mı?
+
+394
+00:45:54,107 --> 00:46:15,548
+Ben de teşekkür ediyorum. Yalnız hiç kısa sürmedi [öğrenci] ya da [öğrenci]. Bayağı uzundu. Bir şey diyecektim anlattığına ilgili. Bir makalenin yazarları Araplardan mı oluşuyor?
+
+395
+00:46:17,128 --> 00:46:19,348
+Evet hocam bir daha bir bakayım.
+
+396
+00:46:19,607 --> 00:46:20,307
+Üniversite?
+
+397
+00:46:20,307 --> 00:46:24,827
+Üniversite değil mi bir lab ismi vardı hocam.
+
+398
+00:46:25,827 --> 00:46:26,107
+Tamam.
+
+399
+00:46:26,347 --> 00:46:31,688
+Naili diyor ama sanırım şey Tunus'a ait bir lab ismi vardı.
+
+400
+00:46:32,947 --> 00:46:33,548
+Peki.
+
+401
+00:46:34,447 --> 00:46:40,707
+Şu içsel ve dışsal kaynaklar deyince ben ona birazcık takıldım.
+
+402
+00:46:40,707 --> 00:46:44,647
+İçsel ve dışsal en son cümlelerde şöyle bir şey dedim.
+
+403
+00:46:44,747 --> 00:46:48,628
+Dışsal kaynaklar dışarıdaki bilgileri de kullanıyorsun.
+
+404
+00:46:48,628 --> 00:47:14,807
+İçsel neyi anlayacağım? Yani içsel o nedir? Şöyle hocam bir dokümanı bölümlemek istiyoruz diyelim. İçsel yaklaşım kullanacaksak sadece o dokümanda bulunan bilgileri kullanabiliyoruz. Dışsalda dış kaynakları da biz kullanabiliyoruz. Peki tamam teşekkür ediyorum [öğrenci]. Ben teşekkür ederim.
+
+405
+00:47:14,807 --> 00:47:44,647
+Sırada [öğrenci]. Doğru mu gidiyorum? Evet. [öğrenci]? Tamam buradayım hocam. Buradasın hocam. Bakalım biz de sana chatten dünyanın şeyini yazacağız. Burada olduğumu görmeniz için. Tamam peki. Hadi bakalım. Konu heyecanlı bir konu mu? Konu neydi? Yok hocam ben hiç heyecanlı değilim. Heyecanlı değil. Ama zaman kazandıracak bir konu.
+
+406
+00:47:44,807 --> 00:47:46,287
+Tamam hadi bakalım
+
+407
+00:47:46,287 --> 00:47:50,167
+Ekranı paylaşabildim mi acaba?
+
+408
+00:47:56,052 --> 00:47:57,471
+ekranımı görüyor musunuz hocam?
+
+409
+00:48:20,052 --> 00:48:22,951
+Tamamdır, mikrofonum kapalıymış, boşuna koymuşum.
+
+410
+00:48:22,951 --> 00:48:25,012
+Ben de hocam, duymuyorsunuz sandım.
+
+411
+00:48:25,331 --> 00:48:29,671
+Yok, tamam, bazen boş bulunuyorum. Tamam, hadi başlayabilirsin.
+
+412
+00:48:30,911 --> 00:48:44,711
+Benim konumun başlığı Sentiment Analysis of New Articles, Lexicon Based Approach, IcomED 2019 konferansında yayınlanmış.
+
+413
+00:48:44,711 --> 00:48:48,111
+Yani sözlük tabanlı bir duygu analizi.
+
+414
+00:48:48,111 --> 00:49:05,092
+Özetlersek, modern teknolojik çağda artık yaşam tarzı çeşitliliği arttığından dolayı sosyal medya olsun. İnsanlar her türlü bilgiyi online ortamlara aktarmaktadır.
+
+415
+00:49:05,111 --> 00:49:06,351
+Abi heyecanlı mısın?
+
+416
+00:49:06,831 --> 00:49:07,111
+Yok.
+
+417
+00:49:07,971 --> 00:49:09,291
+Niye sesine öyle geliyor?
+
+418
+00:49:10,952 --> 00:49:14,232
+Telefon bağlı, o yüzden olabilir.
+
+419
+00:49:14,691 --> 00:49:15,412
+Tamam, peki.
+
+420
+00:49:15,412 --> 00:49:22,612
+Biraz sizden gelen şeyleri de böyle yarım yamalak duydum herhalde bağlantı sıkıntısı var
+
+421
+00:49:22,612 --> 00:49:27,371
+Hayır öyle değil titriyormuş gibi sesi
+
+422
+00:49:27,371 --> 00:49:28,891
+Ha yok
+
+423
+00:49:28,891 --> 00:49:32,712
+Heyecanlanma demek istedim
+
+424
+00:49:32,712 --> 00:49:37,212
+Hocam zaten ekran başındayım yani heyecanlanacak bir şey yok ki
+
+425
+00:49:37,212 --> 00:49:40,072
+Ne bileyim ben ben öyle hissettim
+
+426
+00:49:40,072 --> 00:49:42,272
+Hadi devam et bakalım
+
+427
+00:49:42,272 --> 00:49:54,592
+Sosyal medyada oluşan big datalarla artık duygu analizi popülerliği ve araştırma konuları genişlemektedir.
+
+428
+00:49:54,592 --> 00:50:02,712
+Bu çalışmada da BBC haber veri setinden yararlanılarak sözlük tabanlı bir yaklaşım gerçekleştirilmiştir.
+
+429
+00:50:05,111 --> 00:50:11,391
+Fiziksel olarak gazete ve dergiler artık yerini çevrim içi platformlara bıraktı.
+
+430
+00:50:11,391 --> 00:50:18,511
+insanlar daha çok etkileşim halinde ve erişebilirliği daha kolay olduğu için bu yöntemi kullanmaktadır.
+
+431
+00:50:19,671 --> 00:50:31,471
+Duygu analizinde iki popüler yaklaşım vardır. Bunlardan biri leksikon tabanlı yani sözlükler adı yardımıyla.
+
+432
+00:50:31,471 --> 00:50:36,611
+Diğeri de denetimli denetimsiz öğrenme teknikleriyle.
+
+433
+00:50:38,231 --> 00:50:41,731
+Literatürde baktığımızda birçok çalışma vardır.
+
+434
+00:50:42,352 --> 00:50:46,912
+Bu makalede yayınlanan ve benzer olanlardan bahsedecek olursak,
+
+435
+00:50:46,912 --> 00:50:58,791
+bir çalışmada New York Times, BBC, Reuters ve Daily Mail haber verilerinden yararlanılmış.
+
+436
+00:50:58,791 --> 00:51:25,991
+Yaklaşık 69.907 manşetten duygu analizli çıkarılmış. Burada kullanılan yöntem haber başlıklarından duygu analizli çıkarıp olumlu, olumsuz ve nötr duyguya sahip başlıkların acaba popüleriterliği yani okunabilenliği arasında bir ilişkiye rastlanmıştır.
+
+437
+00:51:25,992 --> 00:51:33,652
+Yani burada olumlu ve olumsuz haber başlıklarının daha çekici bir ilgi gördüğü ortaya koyulmuştur.
+
+438
+00:51:33,652 --> 00:51:44,072
+Başka bir çalışmada online haberleri sınıflandırmak için bir yaklaşım geliştirmişlerdir.
+
+439
+00:51:44,852 --> 00:51:53,831
+Cümle düzeyinde duygan ezi yapılmış, duygu kutupluluğu kullanılarak bunlar dinamik bir sözlükten çıkarılmıştır.
+
+440
+00:51:53,831 --> 00:52:02,552
+Başka bir yaklaşımda yine sözle dayalı yaklaşım kullanılarak finansal haberler üzerinde duygu anezi gerçekleştirilmiştir.
+
+441
+00:52:02,552 --> 00:52:17,671
+Diğer bir çalışmada da kelimeleri sınıflandırmak için Python paketleri ve WordNet'deki CentiWordNet 3.0 kullanılarak fikir madenciliği yapılmıştır.
+
+442
+00:52:18,771 --> 00:52:24,831
+Bu çalışmadaki metodolojiye baktığımızda sözlük tabanlı yaklaşım kullanıldı.
+
+443
+00:52:26,031 --> 00:52:31,991
+Ve kelimelerin kutupluluğundan yola çıkarılarak bu duygu analizi gerçekleştirilmiştir.
+
+444
+00:52:33,551 --> 00:52:45,751
+Önceden tanımlanmış kelimeler listesi sözlüğe dayalı yöntemler ve derlem temelli yöntemler olarak incelenmiştir.
+
+445
+00:52:45,751 --> 00:52:55,271
+duygu analizinde belge, cümle ve kelime seviyesinde bir duygu kutupluğu hesaplanmıştır.
+
+446
+00:52:56,371 --> 00:53:03,591
+Metodolojinin grafiğine baktığımızda veri ön işleme çalışması yapılmış.
+
+447
+00:53:03,711 --> 00:53:08,771
+Daha sonra kelimelerin duygu kutupluğu hesaplandı.
+
+448
+00:53:08,771 --> 00:53:15,812
+daha sonra toplam duygu kutuplu hesaplanarak duygu sonucu elde edilmiştir.
+
+449
+00:53:16,931 --> 00:53:22,932
+Veri setine baktığımız zaman BBC haber sitesinin verileri kullanılmış.
+
+450
+00:53:22,932 --> 00:53:26,911
+2004 ve 2005 yılları arasındaki haberleri alınmış.
+
+451
+00:53:27,632 --> 00:53:31,611
+Şu görmüş olduğunuz linkten data sete erişebilirsiniz.
+
+452
+00:53:31,611 --> 00:53:47,811
+Bu dokümanda 2225 belge ve 5 kategoriye ayrılmış bir şekilde verilerden oluşmaktadır. İş, eğlence, politika, spor ve teknoloji kategorilerinde.
+
+453
+00:53:47,812 --> 00:53:59,712
+ün işleme adımında metindeki gürültüler azaltılmış, yanlış yazılmış kelimeler vesaire gibi ön işlemler yapılmış.
+
+454
+00:53:59,712 --> 00:54:07,771
+Sonra RapidMinerTool kullanılarak tokenization yapılmış. Daha sonra noktalı işaretleri atılmış.
+
+455
+00:54:07,771 --> 00:54:21,771
+tamamı büyük harfe dönüştürülmüş kelimelerin. Stop words'ler kaldırılmış. Daha sonra da steaming yapılarak kelimenin kökleri bulunmuş.
+
+456
+00:54:25,771 --> 00:54:36,771
+Sentiment, word'lerin kutupluğu hesaplanırken TF-IDF istatistiksel yöntem de kullanılmış. Bu tekniğe göre kelimeler ağırlıklandırılmış.
+
+457
+00:54:37,771 --> 00:54:52,111
+Duygu puanını atamak için de WordNet sözü kullanıldı. WordNet'in de içeriğinden bahsedeceksek 118.000'den fazla kelime formu ve 90.000'den fazla kelime duygusu içermektedir.
+
+458
+00:54:52,111 --> 00:55:09,091
+Daha sonra toplam sentiment skoru hesaplanmış. Her belge kendi kutupluyla etiketlendi. Kelimeler hem kelime öbeği hem de cümle politikası bunlara toplanmış.
+
+459
+00:55:09,091 --> 00:55:17,432
+Wordnet ve Sentiment ve Önet toolları kullanılmış. Duygu puanları hesaplandı.
+
+460
+00:55:17,431 --> 00:55:30,431
+daha sonra bunların negatif çıkan değerlerine negatif, pozitifliklerine olumlu, sıfır çıkan değerlerine de nötr, tarafsız bir etiket verilmiştir.
+
+461
+00:55:31,251 --> 00:55:34,371
+Sonuçlara baktığımızda beş kategorimiz vardı.
+
+462
+00:55:34,371 --> 00:55:39,351
+İş, eğlence, politika, spor ve teknoloji.
+
+463
+00:55:39,352 --> 00:55:54,092
+İşte 510 tane makaleden 274 tane olumlu, 205 olumsuz ve 31 nötr bir duygu çıkarımı ortaya çıkmış.
+
+464
+00:55:54,092 --> 00:55:59,092
+Bunlara baktığımızda, grafiksel bunları geçiyorum hızlıca.
+
+465
+00:55:59,091 --> 00:56:13,031
+Sonuç olarak iş ve spor kategorilerinde daha olumlu makalelerin sahip olduğu, eğlence ve teknolojinin de olumsuz makalelerden oluştuğu gözlemleştir.
+
+466
+00:56:13,031 --> 00:56:15,971
+Bu kadar benim anlatacaklarım.
+
+467
+00:56:16,980 --> 00:56:40,339
+Bayağı hızlı oldu. Evet, çok hızlı oldu. Bu kadar hızlıyı da bekleyemiyordum. Ama konuda birazcık sevimsiz rastlamış. Evet, sevimsiz. Ben başlığa göre aldım içeri okumadan. Evet, sevimsiz rastlamış. Ya da şöyle söyleyeyim, çok bu konuları çok dinlediğimiz için. Evet, sıkıcı geldi. Evet, sıkkınlık gibi geliyor. Yani bu seninle alakalı değil.
+
+468
+00:56:40,339 --> 00:57:07,160
+Benim yazımda vardı, şöyle bir şey geçiyordu, demin arkadaş da anlattı, Arapçayla İngilizce'yi karşılaştırmışlardı. Genelde duygu analizi İngilizce ve Çince üzerinde çok popülerdi. Arapça ve İtalyanca'da sözlük, duygu sözlüğü kısıtlı olduğu için, yani oranın genişlemesinin gerektiği için.
+
+469
+00:57:07,160 --> 00:57:20,759
+Ya ayı, popülariteli değil de şey yani, daha düşük seviyede çıkması yani, %36'ya kadar bir hata uğramı gibi bir şey çıkmıştı sanırım yanlış, Arapçada
+
+470
+00:57:20,759 --> 00:57:33,660
+Ya tabii ki çıkabilir, bir şöyle, aslında bütün çalışmalar İngilizce üzerine yapılıyor, Çin'de dünya nüfusunun büyük bir çoğunluğunu oluşturduğu İçince de çok fazla çalışma vardır
+
+471
+00:57:33,660 --> 00:57:50,600
+Diğer dillerde çok az da çalışmalar. Bu çalışmaların az olmasının sebebi mesela düşün bizlerde her şeyi nasıl söyleyeyim bir veri setimiz bile yok herhangi bir konuda aradığımızda etiketli bir veri seti yok.
+
+472
+00:57:50,599 --> 00:57:52,579
+Evet onların eksikliği yani bir de
+
+473
+00:57:52,579 --> 00:57:53,979
+Bizleriz.
+
+474
+00:57:54,499 --> 00:57:54,779
+Evet.
+
+475
+00:57:55,219 --> 00:58:13,719
+Bizleriz. Ama şöyle bir şey de var. Ben Türkçe bir çalışma yaptım gönderdiğim vakitte bu sefer de diyor ki sen bunu hangi çalışmaya göre karşılaştırma yapıyorsun? Başarını neye göre kıyasladın? Ben Türkçeyi bir başka dille de kıyaslayamayacağım için böyle arada derede kalıyoruz.
+
+476
+00:58:13,719 --> 00:58:26,599
+Evet etiketsiz verilerin olması, veri setinin olmaması, etiketi veri setinin olmaması, çalışmaların ya da sayının kısıtlı olması çalışmalardaki başarıyı da düşürüyor elbette.
+
+477
+00:58:26,599 --> 00:58:26,819
+Evet.
+
+478
+00:58:28,060 --> 00:58:31,980
+Peki ekran paylaşımını bırakabilirsin.
+
+479
+00:58:32,219 --> 00:58:34,179
+Bıraktım.
+
+480
+00:58:34,360 --> 00:58:43,399
+Şimdi tamam. [öğrenci]. [öğrenci] yok. Baktım dersime bıraktı diye ödevi vermiş.
+
+481
+00:58:43,399 --> 00:58:58,119
+vizelere girmiş. Fakat bugün burada yok. Bilgisi olan var mı? Yok. Tanıyan var mı? Yok. Kendi bilir o zaman.
+
+482
+00:58:58,759 --> 00:59:08,459
+[öğrenci] ödevi verdi ve ben [öğrenci]'ın şimdilik aslında baktığımda baktım niye vizeye falan girmediğini de düşündüm.
+
+483
+00:59:08,459 --> 00:59:17,840
+[öğrenci] geldi mi? Yok bu [öğrenci] değil. [öğrenci]'u tanıyor musun [öğrenci]'u?
+
+484
+00:59:18,379 --> 00:59:19,420
+Tanımıyorum hocam.
+
+485
+00:59:19,980 --> 00:59:32,200
+Tamam. [öğrenci] dersi bıraktığını söyledi. Ondan sonra [öğrenci]. [öğrenci] buradasın.
+
+486
+00:59:34,420 --> 00:59:36,140
+Evet buradayım hocam.
+
+487
+00:59:36,139 --> 00:59:39,999
+Tamam raporun da gelmiş. O zaman sözü sana veriyorum [öğrenci].
+
+488
+00:59:51,411 --> 01:00:13,771
+Ekran geldi sana. Zoom görüyoruz. Hah, geldi. Merhaba arkadaşlar. Benim makalemin başlığı How to Segment Turkish World Sport Text Classification. Biraz telefonunu düzeltebilir misin? Sesini çok gücü alamıyorum.
+
+489
+01:00:13,771 --> 01:00:18,311
+Çok sözel bir makame
+
+490
+01:00:18,311 --> 01:00:24,711
+Daha beter oldu
+
+491
+01:00:24,711 --> 01:00:29,351
+Yani hızlıca bitirilir mi aslında?
+
+492
+01:00:30,691 --> 01:00:32,452
+Yok hızlıca bitirme falan değil
+
+493
+01:00:32,452 --> 01:00:35,651
+Sesin şöyle geliyor
+
+494
+01:00:35,651 --> 01:00:37,411
+Vay vav vav
+
+495
+01:00:37,411 --> 01:00:38,592
+İyi mi?
+
+496
+01:00:39,531 --> 01:00:41,671
+İnternet bağlantı kötü olabilir
+
+497
+01:00:41,671 --> 01:00:49,171
+Onunla ilgili olabilir, doğrudur. Biraz sesini yükseltirsem de daha iyi olacak.
+
+498
+01:00:49,171 --> 01:00:50,151
+Tamam.
+
+499
+01:00:54,311 --> 01:01:06,331
+Doğal dil işlemede Türkçe gibi morfolojik açıdan zengin kelime darjına sahip ve sondan eklemeli dillerde çalıştırırken yapay sinir ağlarına eğitmek zordur, maliyetlidir.
+
+500
+01:01:06,331 --> 01:01:24,551
+Ayrıca bu tür dillerde dillerin sonuna ilgilen yabancı kelimelerin sayısı yapılır. İçerisinde fazla sayıda yabancı kelime bağlanan dillerde yapay istimlerinin eğitilmesi ve sınıflandırıcı algoritmanın yüksek doğal dilimlerinin sonuç vermesi, karar vermesi zor olmaktadır.
+
+501
+01:01:24,551 --> 01:01:30,611
+Bu tür doğal dilimlerinin üstesinden gelmek için doğal dilimlerinin çeşitli kelime segmentasyon yöntemleri geliştirilmiştir.
+
+502
+01:01:30,611 --> 01:01:42,272
+Bu tür sorunları çözülmek için literatürde kelimeleri byte-pair, encoding, avlatmasını kullanarak önceden öğrenilmiş alt kelime birimlerine ayırma yöntemi önerilmiştir.
+
+503
+01:01:42,911 --> 01:01:46,951
+Bu yöntem hem kelime dağacını hem de test süresini azaltmaktadır.
+
+504
+01:01:46,952 --> 01:02:01,891
+Daha önce literatürde Türkçe dokümen sınav sandırması üzerine bir çalışma yapılmış ve bu çalışmada morfolojik, sablılar, boşluk tabanlı ve hibrit yaklaşımlar kullanılarak 4 farklı kelime segmentasyonu yönteminin performanslarına bakılmıştır.
+
+505
+01:02:01,891 --> 01:02:07,891
+Bu makalede ise farklı domenlerde daha modern kelime segmentasyonu yöntemleri kullanılmıştır.
+
+506
+01:02:07,891 --> 01:02:19,132
+Bu yöntemde sınıf performansı üzerinde hepsini daha doğru bir şekilde verilmek için de her bir deney 5 kez tekrarlanmıştır.
+
+507
+01:02:19,132 --> 01:02:29,931
+Özetle bu makalenin amacı Türkçe doküman sınıflandırmada kelime segmentasyon yöntemi seçiminin, burası sınıflandırmada oradakların performansı üzerindeki etkisini araştırmaktır.
+
+508
+01:02:29,931 --> 01:02:39,511
+Geriçler ve yöntemler, bu modelle kullanılan segmentasyon yöntemleri 16 tane var.
+
+509
+01:02:39,511 --> 01:02:51,771
+Word tabanlı, kelime tabanlı segmentasyon, yakın zamana kadar kelimelerin boşlukla ayrıldığı dillerde kelime tabanlı segmentasyon en yaygın olarak kullanılan kelime segmentasyon yöntemleri arasındaydı.
+
+510
+01:02:52,271 --> 01:02:58,191
+Bu yöntem cümle ve kelimeler arasındaki boşluklar aracılığı ile böyle karakter tabanlı kelime segmentasyon,
+
+511
+01:02:58,191 --> 01:03:05,712
+Bu yöntem doğal dil işlemede başarılı kullanmaktadır. Girde olarak verilen metin karakterleri böler.
+
+512
+01:03:06,551 --> 01:03:14,191
+Karakter Ngram tabağın segmentasyon. Bu yöntem doğal dil işlemede bilgi çıkarımı ve metin sonuçlanılmalı sıkça kullanılmaktadır.
+
+513
+01:03:15,231 --> 01:03:24,031
+Girde olarak verilen metin standartlaştırılmadığında verim gidip bu makamede N değeri için 2, 3, 4, 5, 6 ve 7 değerleri verilmiştir.
+
+514
+01:03:24,031 --> 01:03:37,211
+Stem tabağında segment başlar. Bu yöntemde kelimeler önce aralarındaki boşluklara göre ayrılır. Ardından da aldıkları ekler çıkartılır. Bu makalede stem ingilizce işlem için Snowball, Stummer, Algorithm kullanılacak.
+
+515
+01:03:37,844 --> 01:03:51,844
+lemma tabanlı segmentasyon. Bu yöntemde kelimeler önce aralmak boşluklara göre ayrılır. Ardından kelimelerin köklüğü bulundur. Bu makalede lemmatizici işlemi için zemberek ütübücüsü kullanılmıştır.
+
+516
+01:03:51,844 --> 01:04:00,844
+morfolojik tabanlı segmentasyon. Bu yöntemde her kelime gramer kurallarına göre içim birimlerine ayrılır.
+
+517
+01:04:00,844 --> 01:04:11,844
+Morfesör tabağınlı segmentasyon, morfesör kelimeleri morfen benzeri parçalara bören unsperwars bir kelime segmentasyonu adlatmasidir.
+
+518
+01:04:11,844 --> 01:04:17,844
+White-Pair-Encoding tabağınlı segmentasyon, bu alakılma byte dizilerini birleştiren bir veri sıkıştırma adlatmasidir.
+
+519
+01:04:17,844 --> 01:04:28,844
+White-Pair-Encoding tabağınlı segmentasyon, bu alakılma byte dizileri yerine karakterleri veya karakter dizilerini birleştiren bir veri sıkıştırma adlatmasidir.
+
+520
+01:04:28,844 --> 01:04:36,844
+Word, PIS, taban bu segment atarsan. Bu algoritma Korece ve Japonca gibi.
+
+521
+01:04:36,844 --> 01:04:37,844
+Aaa.
+
+522
+01:04:41,492 --> 01:04:43,851
+Ekran karardı, yine geldi.
+
+523
+01:04:46,251 --> 01:04:48,131
+Şu an görünüyor mu ekran?
+
+524
+01:04:48,351 --> 01:04:50,011
+Görünüyor ama ilk slide.
+
+525
+01:04:51,011 --> 01:04:51,571
+Tamam.
+
+526
+01:05:01,204 --> 01:05:13,303
+şu an istediğim şey geldi mi sayfaya? Hayır. Ya da bize mi geç gelecek? Bir şeyler oluyor, bir bekle. Halen ilk sayfayı görüyoruz.
+
+527
+01:05:13,723 --> 01:05:24,063
+Hocam o zaman bir durdurup tekrar gelmez. Başka bir derste de böyle olmuştu. Bulunduğum yerde de internet kötü var.
+
+528
+01:05:33,427 --> 01:05:35,427
+Tamam, geldi.
+
+529
+01:05:35,427 --> 01:05:44,427
+Tamam. Bu algoritma Korece ve Japonca gibi kelimelerin boşlukla ayrılmadığı dillerde kullanılan başka bir kelime segmentasyon algoritmasıdır.
+
+530
+01:05:44,427 --> 01:05:48,427
+Ancak daha sonra bu algoritma İngilizce içinde uygulanmıştır.
+
+531
+01:05:48,427 --> 01:05:56,427
+Unigram Language Model tabanını segmentarttın. Bu algoritma bir tür sub-word segmentasyon algoritmasıdır.
+
+532
+01:05:56,427 --> 01:06:13,527
+Bilgil modeli oluşturmak için kelime bilgisinden yer alınır. Bir kelime segmentasyon örnek, yani bu 16 tane yöntem örneği bir cümle üzerinde. Bunları zaten derslerde gördük.
+
+533
+01:06:13,527 --> 01:06:20,247
+Bir arkadaşlara bakış kalması için şöyle geçeyim. Makalde kullanılan böyle...
+
+534
+01:06:20,247 --> 01:06:26,227
+O tabloyu bir daha açar mısın? Şu morfol bir şey vardı ya.
+
+535
+01:06:26,808 --> 01:06:27,507
+Morfesör mü?
+
+536
+01:06:27,968 --> 01:06:30,347
+Ha. Onun bir örneğini görebilir miyim?
+
+537
+01:06:31,268 --> 01:06:35,867
+Ooo. Şimdi geldi. Morfesör. Kurul.
+
+538
+01:06:35,867 --> 01:06:36,407
+Kurul.
+
+539
+01:06:39,148 --> 01:06:42,687
+Bu sen bunu ne yapıyor bu şimdi burada?
+
+540
+01:06:43,547 --> 01:06:47,828
+Hocam onu ben de anlamadım. Bir arkadaşıma sordum. O da açıklayamadı bana.
+
+541
+01:06:47,828 --> 01:07:03,268
+Şimdi bakalım kurulu mu? Kurulu kök olarak alsak umu var. Pek iyi ama olmadığı ayırmamış. Kapıları ayırmış. Kapananını yorulmuş. Hiç anlamadım ben bundan.
+
+542
+01:07:03,308 --> 01:07:06,328
+Mesela oradaki ne tek başına çok anlamlısı var.
+
+543
+01:07:06,508 --> 01:07:07,987
+Hayır neye görebilirim?
+
+544
+01:07:07,987 --> 01:07:15,808
+Hocam galiba bu segmenter var ya sol tarafta. Buna göre tokenization yapıyor.
+
+545
+01:07:15,807 --> 01:07:26,127
+Ay şeye bakıyoruz, morfesora bakıyoruz. Morfesoru anlayamadım. Neye göre şeyleri böldü diye.
+
+546
+01:07:26,387 --> 01:07:30,967
+Çekim eki ya da yapım eki fark etmiyor. Hatta heceyi de tam bölebilir.
+
+547
+01:07:32,047 --> 01:07:35,727
+Neyse bunu incelemek lazım, bakmak lazım. Tamam sen devam et.
+
+548
+01:07:37,387 --> 01:07:40,967
+Tamam. Bu makale dört farklı veriseleri kullanılmış.
+
+549
+01:07:40,968 --> 01:07:45,608
+Twitter'den oluşan bir veri seti var.
+
+550
+01:07:45,728 --> 01:07:47,588
+Duygu analizli Twitter veri setidir.
+
+551
+01:07:47,687 --> 01:07:53,927
+Bu veri setinde her trik pozitif, negatif ve netromatikleri üç etiketten birini alabiliyor.
+
+552
+01:07:53,927 --> 01:08:01,847
+Bu veri setinde veriler Yıldız Teknik Üniversitesi'nde kemik NLP grup tarafından toplanmış ve etiketlenmiştir.
+
+553
+01:08:02,668 --> 01:08:04,627
+Bir film izleme veri seti var.
+
+554
+01:08:08,648 --> 01:08:14,508
+4.5 puan üzerindekiler olumlu, 1.5 puan altındakiler olumsuz olarak etki etkilenmiş.
+
+555
+01:08:15,508 --> 01:08:21,808
+Bir haber veri seti, bu da Yılmaz Teknik Üniversitesi'nde kemik enerji grup tarafından oluştuğumuz.
+
+556
+01:08:22,207 --> 01:08:24,067
+Bir de ürün inceleme veri seti var.
+
+557
+01:08:24,187 --> 01:08:27,707
+Burada Kegel'de bulunan Türkçe veri seti kullanılmıştır.
+
+558
+01:08:27,907 --> 01:08:31,107
+Bu veri setinde yer alan 1 ile 5 arasında puan veriliyor.
+
+559
+01:08:31,288 --> 01:08:35,948
+5 olumlu, 1 veya 2 ise olumsuz olarak etki etkilenmiş.
+
+560
+01:08:35,947 --> 01:08:56,267
+Burada da bunların bu segmentlere göre oluşan kelime boyutları. Burada da eğitim, validation, test örnek sayıları. Bu makalede 3 farklı yapay sinyalı mimarisi kullanılmıştır.
+
+561
+01:08:56,267 --> 01:09:00,368
+Linear model, CNN tabanlı sınıflandırılıyor.
+
+562
+01:09:01,127 --> 01:09:04,447
+LST tabanlı sınıflandırılıyor.
+
+563
+01:09:04,447 --> 01:09:19,487
+Bu çalışmada over-optimization için dropout kullanılmıştır. Optimizasyon için ise Edeb Optimizer her model için sırasıyla %100-10000-10000 oranlarıyla kullanılmıştır.
+
+564
+01:09:20,427 --> 01:09:25,327
+Donanım limitleri nedeniyle her bir girdi 256 token ile sınıflandırılmıştır.
+
+565
+01:09:25,876 --> 01:09:42,195
+İki katmanlı, çift yönlü LSTM, CNN modeli için ise 100 kernel kullanılmıştır. Bu makalede kelime segmentasyonundan önce yapılan ön işlem aşamasında aşağıdaki adımlar yapılmıştır.
+
+566
+01:09:42,195 --> 01:10:01,695
+Bağlantıları çıkarma, küçük harf yapma, alfabetik karakterleri boşluklarla noktalama şartlarından ayırma, birden çok boşlu, tek bir boşluk haline getirme, ardışık dinlenen karakterleri tek bir karakterle değiştirme, ardışık noktalama boşluklarla değil.
+
+567
+01:10:01,695 --> 01:10:05,635
+4 tane veri seti vardı.
+
+568
+01:10:05,635 --> 01:10:12,115
+Ön işleme, segmentasyon yöntemleri uygulaması, 3 tane algoritma var.
+
+569
+01:10:12,276 --> 01:10:13,935
+En sonunda sonuç çıkıyor.
+
+570
+01:10:14,276 --> 01:10:22,515
+Sonuç olarak bahsedilen 3 farklı sınıflanlanıcı algoritma, bahsedilen her bir kelime segmentasyon yöntemleri kullanılarak eğitilmiştir.
+
+571
+01:10:22,615 --> 01:10:24,015
+16 farklı yöntem vardı.
+
+572
+01:10:24,855 --> 01:10:29,916
+Daha güvenilir sonuç elde edebilmek için de her biri 5 kez tekrar edilmiştir.
+
+573
+01:10:29,916 --> 01:10:40,596
+Bir sonraki sayfada yer alan tabloda da F1 skor ortalamaları ve yanlarında parantez içerisinde de standart sapmaları gösterilmektedir.
+
+574
+01:10:44,096 --> 01:10:52,816
+Bu tablonun söz olarak açıklaması da bu çalışmada Türkçe dokümanlarda kelime segmentasyon yöntemi seçimleri,
+
+575
+01:10:52,816 --> 01:10:59,416
+n-gram, sınavç alışmaların performansı verilmektedir ve yapılan çalışmalar sonucu da şu sonuçlar elde edilmektir.
+
+576
+01:10:59,916 --> 01:11:10,916
+Kullanılacak kelime segmentasyon yönteminin, kullanılacak domen ve yapay sinir ağır mimarisi ile uyumlu olması gerekir. Yöntemin seçimi buna göre yapılmalıdır.
+
+577
+01:11:10,916 --> 01:11:21,916
+Kullanılan sinir ağır mimarisi dizileri modelleyebiliyorsa normalize edilmiş metinlerde en iyi performansı morfolojik analize dayalı segmentasyon yöntemi,
+
+578
+01:11:21,916 --> 01:11:31,916
+Tweetler gibi normalize edilmemiş metinlerde ise en iyi performansı bu anlayamadığımız morfolosur tabanlı segmentasyon yönetimini göstermiştir.
+
+579
+01:11:31,916 --> 01:11:47,916
+Kullanılan sınırı mimarisi dizileri modelleyemiyorsa, LSTM, BERT, PAYER, ENCLING, word2vec, borç tabanlı segmentasyon yönetimleri
+
+580
+01:11:47,915 --> 01:12:05,915
+Girdi olarak verilen metin normalize edildiğinde benzer performanslar gösterebilir. Girdi olarak verilen metin normalize edilmemişse en iyi performansı, karakter n-gram tabağın segmentasyon, özellikle de n-gram'ine 5 verdiğimiz Q-Integram segmentasyon yöntemi göstermektedir.
+
+581
+01:12:17,684 --> 01:12:28,363
+Bitti. Orada mısın? Evet, sesim geliyor mu hocam? Geldi. Valla sunumu bitti, sesim daha iyi geldi.
+
+582
+01:12:28,363 --> 01:12:41,123
+Tamam. Okey. Yani burada da bir anlayamadım, morfe bilmem ne. Peki sana da teşekkür ediyorum.
+
+583
+01:12:41,123 --> 01:12:43,683
+Senin proje konun nedir?
+
+584
+01:12:44,503 --> 01:12:49,783
+Benim habersellerimden aldım, haberleri, katıdım, yerine arayayım.
+
+585
+01:12:51,403 --> 01:12:53,983
+Tamam, ses yine berbat oldu.
+
+586
+01:12:54,523 --> 01:12:56,864
+Peki, bir şey bekliyorum.
+
+587
+01:12:57,123 --> 01:12:59,783
+Yeniden soruyorum, [öğrenci] aramızda mı?
+
+588
+01:13:01,563 --> 01:13:04,044
+[öğrenci] yok.
+
+589
+01:13:05,143 --> 01:13:09,483
+Artık bir daha gelen hiçbir maillere cevap vermeyeceğim bu konularda.
+
+590
+01:13:11,123 --> 01:13:15,923
+Bir dakika şuraya notlarımı alıyorum. Biraz bekleteceğim sizi.
+
+591
+01:13:22,899 --> 01:13:24,619
+Şimdi [öğrenci].
+
+592
+01:13:25,479 --> 01:13:26,939
+Hocam merhaba, sesim geliyor mu?
+
+593
+01:13:27,360 --> 01:13:30,559
+Evet, geliyor. Ama senin raporun bana gelmedi.
+
+594
+01:13:32,059 --> 01:13:34,860
+Hangi raporun hocam? Ha şey, sunum raporu mu?
+
+595
+01:13:35,259 --> 01:13:35,619
+Evet.
+
+596
+01:13:35,959 --> 01:13:37,759
+Bugün göndereceğim hocam, şeyden sonra.
+
+597
+01:13:38,159 --> 01:13:38,679
+Tamam, peki.
+
+598
+01:13:38,699 --> 01:13:39,399
+Dersten sonra.
+
+599
+01:13:39,799 --> 01:13:42,559
+Tamam. Ama mutlaka gelsin [öğrenci].
+
+600
+01:13:43,059 --> 01:13:43,359
+Tamam.
+
+601
+01:13:43,759 --> 01:13:51,639
+Tamam, başlayabilirsin. Ara vermiyorum arkadaşlar. Aramızda o iki arkadaş olmadığı için zaten bir saat kazançtayız.
+
+602
+01:13:51,639 --> 01:13:52,759
+Evet [öğrenci].
+
+603
+01:13:58,996 --> 01:14:00,935
+Şu an ekranımı paylaştım hocam görebiliyor musunuz?
+
+604
+01:14:00,935 --> 01:14:01,775
+Görebiliyoruz.
+
+605
+01:14:11,188 --> 01:14:23,947
+Arkadaşlar, merhaba. Ben [öğrenci]. Yüksek sansı 3. dönemim. Bugün cümle tamamlama için bağımlılık tekrarlayan sinresel dil modelleriyle alakalı bir makaleden bahsedeceğim.
+
+606
+01:14:25,347 --> 01:14:30,487
+Makalenin başlı İngilizce, fakat Türkçe yaşayabildiğim için biraz tuhaf bir başlık oldu.
+
+607
+01:14:30,487 --> 01:14:36,487
+Gördüğünüz gibi. Bugün makaleyle alakalı kısaca makalenin...
+
+608
+01:14:36,987 --> 01:14:38,787
+Efendim hocam?
+
+609
+01:14:38,787 --> 01:14:41,627
+İngilizce sinemakale başlığında okur musun?
+
+610
+01:14:42,047 --> 01:14:44,967
+Okuyacağım hocam şimdi birazdan şurada bahsedeceğim.
+
+611
+01:14:45,387 --> 01:14:45,627
+Tamam.
+
+612
+01:14:46,707 --> 01:14:50,868
+Kısaca makalenin yazılma amacından bahsedeceğim.
+
+613
+01:14:50,868 --> 01:15:02,548
+Sonrasında dil modellerinden, sonrasında tekrarlayan sinera yani RNN'den, sonrasında maksimum entropi modeliyle RNN algoritmasının gerçekleştirilmesinden,
+
+614
+01:15:02,548 --> 01:15:17,967
+devamında bağımlılık tekrarlayan SINRA yani dependency RNN algoritmasından, sonrasında etiketli bağımlılık tekrarlayan SINRA yani labeled dependency RNN'den, veri setinden ve sonrasında da sonuçlardan bahsedeceğim.
+
+615
+01:15:19,728 --> 01:15:25,728
+Makalenin orijinal başlığı Dependency Recurrent Neural Language Modules for Sentence Complulation.
+
+616
+01:15:26,628 --> 01:15:31,488
+Makalenin yayınlayıcısı The Association for Computational Linguistics, kısaltması ACL.
+
+617
+01:15:32,548 --> 01:15:40,168
+Makalenin yazarları Piotr Mirovski ve Andreas Vlachos. Makalenin yayınlandığı tarih ise Aralık 2015.
+
+618
+01:15:43,188 --> 01:15:49,228
+Bu makale çalışmasında RNN algoritmasının cümle tamamladığı performansının arttırılması amaçlanmıştır.
+
+619
+01:15:49,228 --> 01:15:57,988
+Makaleden önce aslında RNN'le benzer bir çalışma yapılıyor ve sonuçları da paylaşılıyor yapılan bir makalede.
+
+620
+01:15:57,987 --> 01:16:06,307
+bu makalede o yazılan makaleye referans ederek aslında o makalede gerçekleştirilen performansı arttırmaya çalışıyor.
+
+621
+01:16:06,647 --> 01:16:07,547
+Temel amacı bu aslında.
+
+622
+01:16:08,147 --> 01:16:17,127
+Bu amacı gerçekleştirmek için de dependency parsing işlemi sonrası ortaya çıkan ağaç yapısı ve ağaçlık kelimelerin etiketleri kullanılarak
+
+623
+01:16:17,127 --> 01:16:20,007
+dependency RNN algoritması uygulanmaya çalışılmıştır.
+
+624
+01:16:22,507 --> 01:16:25,067
+Biraz kısaca dil modellerinden bahsetmek istiyorum.
+
+625
+01:16:25,067 --> 01:16:31,287
+Dil modelleri doğal dilde kullanılan kelimelerin ve cümlelerin olasılık dağılımlarını hesaplamaya ve bulmaya çalışır.
+
+626
+01:16:32,007 --> 01:16:37,747
+Genellikle makine çevirisi, konuşma tanıma ve gramer hatalarının düzeltilmesi gibi konularda kullanılır.
+
+627
+01:16:38,887 --> 01:16:48,187
+Geçmişte aslında dil modelleri gerçekleştirirken count-based modeller yani sayı tabanlı modeller kullanılırken
+
+628
+01:16:48,188 --> 01:17:01,908
+Son günlerde işlemcilerin ve bilgisayarların özelliklerinin çok gelişmesiyle birlikte artık deep-learning yani derin öğrenme yöntemleri ağırlıklı olarak kullanılıyor ve daha iyi sonuçlar verildiği gözlemleniyor.
+
+629
+01:17:04,607 --> 01:17:17,107
+Sayıma dayalı yani count-based dil modelleri n-gram yöntemini kullanarak cümlelerin olasılıklarını hesaplarken sinirsel dil modelleri bunun yanında verideki her bir kelimeyi bir vektöre yerleştirerek ve derin öğrenme yöntemleri kullanarak
+
+630
+01:17:17,107 --> 01:17:20,408
+kelimenin vektördeki diğer kelimelerle olan ilişkisini tanımlıyor.
+
+631
+01:17:22,587 --> 01:17:24,688
+Biraz RNN'den bahsetmek istiyorum.
+
+632
+01:17:25,287 --> 01:17:35,327
+Genelde bir neural network dediğimizde aklımıza bir girdi katmanı, bir hidden katmanı, yani bir gizli katman ve sonuç katmanı,
+
+633
+01:17:35,327 --> 01:17:39,727
+yani input layer, hidden layer ve output layer olarak karşımıza çıkıyor.
+
+634
+01:17:39,727 --> 01:17:52,807
+ve genelde hidden layer dediğimiz zaman da birbirine bağlı ve katman yani seviyesi artabilen bir nörel katmandan bahsediyoruz.
+
+635
+01:17:52,947 --> 01:17:58,727
+Ve bu katmanda aslında sonuçlar genelde girdilere bağlı olmuyor gibi düşünüyoruz.
+
+636
+01:17:58,727 --> 01:18:03,987
+Yani nasıl diyeyim sonuçların girdilerden bağımsız olduğunu düşünüyoruz.
+
+637
+01:18:03,987 --> 01:18:08,667
+Fakat eğer elimizdeki veri seti yani elimizdeki data
+
+638
+01:18:09,136 --> 01:18:35,375
+değerler dizi gibi bir değerse, birbiriyle bağlantılı bir değerse, örneğin hava durumu gibi, doğal dil işlemede kullanılan cümle, kelimeler arasındaki ilişki gibi, olasılık dağılımı gibi bir durum söz konusuysa, burada RNN kullanmak daha mantıklı oluyor. Çünkü aslında her bir önceki sonuç, bir sonraki sonucu etkileyebiliyor ve bizim daha doğru bir sonuç olmamızı sağlıyor diyebiliriz.
+
+639
+01:18:35,375 --> 01:18:44,515
+O yüzden RNN'de çıktığında onları her bir aşamanın giriş katmanında ilave bir girdi olarak kullanılır diyebiliriz.
+
+640
+01:18:46,775 --> 01:18:54,075
+RNN'de yani doğal dil işlemede RNN kullanılırken sunumdaki gibi bir formül yapısı mevcut.
+
+641
+01:18:54,075 --> 01:19:01,216
+Aslında burada bir önceki slide'da bahsettiğim şeyden bahsedebilirim.
+
+642
+01:19:01,255 --> 01:19:04,136
+Bu arada hocam imleci görebiliyor musunuz şu an?
+
+643
+01:19:04,136 --> 01:19:21,955
+Sonundaki imleci tamamdır. Buradaki ST-1 aslında mevcut kelimeden önceki kelimenin sonucunu kullanmamızı sağlıyor ve bu sonucu ağırlık matrisimize çarpıyoruz. Buna ilave olarak ekstra bir girdiğimiz daha oluyor. Bu girdi de aslında mevcut kelimemiz oluyor.
+
+644
+01:19:22,955 --> 01:19:31,275
+Buradaki kısaltmalardan da genel olarak bahsettim. W ağırlık matrisini ifade ederken bu sözlükte ki kelimeler için kullanılan word embedding matrisini
+
+645
+01:19:31,275 --> 01:19:40,576
+V ise çıktığı word embedding madresini temsil ediyor. Aktivasyon fonksiyonu olarak sigmoid fonksiyonu kullanılıyor yani bu çalışmada.
+
+646
+01:19:41,155 --> 01:19:52,755
+Bunun dışında softmax kullanılıyor. Softmax non-linearability kullanılıyor. Ve sonuç olarak da olasılık sonuçları bulunuyor bu şekilde.
+
+647
+01:19:52,755 --> 01:20:01,035
+Bir sonraki sunuda da maksimum entropi modeliyle RNN'in kullanılmasından bahsedeceğim.
+
+648
+01:20:01,035 --> 01:20:11,055
+Aslında ilk RNN uygulaması, RNN'in sadece RNN yani yanında bir Ngram yöntemi olmadan sadece RNN'le bir çalışma yapılmaya çalışılıyor.
+
+649
+01:20:11,475 --> 01:20:16,695
+Sonrasında Thomas Mikolov 2011 yılında Ngram ve RNN'i birleştirmeye çalışıyor.
+
+650
+01:20:16,695 --> 01:20:24,076
+Yani Ngram ve R&N'i birleştirerek daha iyi bir sonuç elde etmeye çalışıyor ve bu çalışmasında başarılı oluyor.
+
+651
+01:20:25,076 --> 01:20:32,375
+R&N ile elde edilen kelime olasılık matrisine kelimelerin Ngram sonuçları eklenerek yeni bir model oluşturuluyor diyebiliriz.
+
+652
+01:20:33,796 --> 01:20:44,915
+Şekredeki formülde de aslında bu en yukarıda yazan şey Ngram konteksi belirtirken bu H fonksiyonu da aslında hash fonksiyonu anlamına geliyor.
+
+653
+01:20:44,915 --> 01:21:01,296
+Aslında eğer korpus çok büyükse, korpusta çok fazla kelime varsa aslında bu n-gramların hesaplanması kitlikçe zorlaşıyor. O yüzden bir hash fonksiyonunun kullanılması çalışmanın performansını artıyor yani süre anlamında. O yüzden böyle bir model geliştirilmiş.
+
+654
+01:21:01,296 --> 01:21:15,236
+Yani aslında n-gram kontekstlerin tekrar tekrar hesaplanmasının önüne geçmek için daha önceden hesaplanmış bir n-gram kontekst varsa bu hash fonksiyon yardımıyla bu hesaplama yapılabiliyor.
+
+655
+01:21:17,616 --> 01:21:23,456
+Makalenin ana konusu olan dependence anonel ise farklı bir yaklaşımla karşımıza çıkıyor.
+
+656
+01:21:23,455 --> 01:21:37,555
+Normalde bir önceki RNN çalışmasında yapılan şey aslında n-gram'a benzer bir yapıda cümledeki kelimeleri bir dizi olarak düşünürsek sıralı bir şekilde işliyor bu kelimeleri.
+
+657
+01:21:37,555 --> 01:21:44,915
+Fakat Dependence RNN ise Dependence'i parsing olayının bize ürettiği veriyi kullanıyor aslında.
+
+658
+01:21:44,915 --> 01:21:57,436
+Yani kelimelerin birbirleriyle olan ilişkilerini ve bu ilişkilerin göz önünde alındığında ortaya çıkan ağaç kullanılıyor ve bu şekilde bir hesaplama yapılmaya çalışılıyor.
+
+659
+01:21:58,716 --> 01:22:03,915
+Ve korpustaki her bir cümlenin dependency parsing kullanılarak bir...
+
+660
+01:22:05,108 --> 01:22:13,108
+parsing tree, yani ayrıştırma ağacı eride ediliyor ve bu ayrıştırma ağacı RNN algoritması ile işlenmeye çalışılıyor.
+
+661
+01:22:14,807 --> 01:22:27,108
+Burada aslında genel olarak formülden bahsedeceğim. Aslında bir cümlenin olasılığının genel formülü formüldeki gibi ve bu formül aslında şunu anlatıyor.
+
+662
+01:22:27,108 --> 01:22:32,108
+Normalde formüle geçmeden önce şeyden bahsetsam daha iyi olacak aslında.
+
+663
+01:22:32,927 --> 01:22:39,688
+Ağaçta bu A-W-E ifadesi aslında şeyi temsil ediyor.
+
+664
+01:22:40,608 --> 01:22:52,707
+Cümledeki bir kelimenin ata kelimeleri yani örneğin veri kelimesini düşünürsek biz bu ağaç yapısında veriye ulaşabilmek için hangi kelimeleri gezeceğiz ve hangi kelimeleri uygulayacağız?
+
+665
+01:22:52,707 --> 01:22:55,347
+O kelimeler aslında bizim ata kelimelerimiz oluyor.
+
+666
+01:22:55,347 --> 01:23:02,607
+örneğin veri kelimesinin oluşturabilmek için öncesinde root'dan başlayacağımızı düşünürsek
+
+667
+01:23:02,607 --> 01:23:08,507
+soft kelimesine, sonrasında binokulars kelimesine, sonrasında ise strong kelimesine vurmamız gerekiyor.
+
+668
+01:23:09,507 --> 01:23:14,108
+[öğrenci], ne diyorsun orada dediğin şeyi anlayamıyorum.
+
+669
+01:23:14,108 --> 01:23:23,147
+Hocam, Anchester kelime diye bir yapı var. Bu da aslında trideki kelimenin üst kelimeleri gibi düşünebiliriz aslında.
+
+670
+01:23:23,148 --> 01:23:25,468
+O kelimeye gidebilmek için uğradığımız kelimeler
+
+671
+01:23:25,468 --> 01:23:30,128
+Tamam, İngilizce dediğinde daha iyi oturdu, ata ata deyince anlayamıyorum
+
+672
+01:23:30,128 --> 01:23:38,167
+Hocam şey çok tuhaf oluyor aslında, yani ifadeler İngilizce genelde ve bunları böyle dönüştürürken nasıl dönüştüreceğimi bilemiyorum
+
+673
+01:23:38,167 --> 01:23:41,667
+Yani o düğünden önce gelen bütün şeyleri kastediyor
+
+674
+01:23:41,667 --> 01:23:43,947
+Evet, evet hocam, aynen
+
+675
+01:23:43,947 --> 01:23:55,047
+ve bu P-W-I-A-W-I ifadesi ise aslında bu ata kelimelerinden sonra W-İ'nin gelme olasılığını hesaplıyor.
+
+676
+01:23:55,608 --> 01:24:00,007
+Okey, anladık. Senin de şansın hep formül bir şeyler denk gelmiş.
+
+677
+01:24:00,227 --> 01:24:06,707
+Evet, aslında formüllerden bahsetmeden de konuyu anlatmak biraz zor çünkü biraz böyle karmışık bir konu.
+
+678
+01:24:06,787 --> 01:24:09,147
+O yüzden formülleri özellikle anlatmak istedim.
+
+679
+01:24:09,148 --> 01:24:16,087
+Bu şekilde hocam. Aslında dependency alanının temel mantığı parsing tree sonrasında
+
+680
+01:24:16,087 --> 01:24:21,947
+Mesela buradaki W-İ olarak hangi kelimeyi referans alalım?
+
+681
+01:24:23,268 --> 01:24:24,988
+Örneğin mesela yani
+
+682
+01:24:24,988 --> 01:24:27,148
+Mesela soğuk dediğim vakit
+
+683
+01:24:27,148 --> 01:24:28,188
+Soğuk alabiliriz, evet
+
+684
+01:24:28,188 --> 01:24:31,408
+Soğuk dediğim vakit, şimdi bu W-Sow
+
+685
+01:24:31,408 --> 01:24:33,887
+Evet, sadece soğuk düşüncesi
+
+686
+01:24:33,887 --> 01:24:36,348
+Atısı nedir?
+
+687
+01:24:36,347 --> 01:24:56,187
+Herhalde bu sovun atasını, şimdi şöyle bakmak lazım, bu sova girenler mi, çıkanlar mı? Oklar var ya, ben bunu ağaca yerleştirdiğim vakit sovun ağacın üstünde kalan düğümlerde hangi kelimeler varsa onlarla birlikte kullanım olasılığını alıyor.
+
+688
+01:24:56,188 --> 01:25:13,648
+Evet hocam kesinlikle aynı. Ve sanırım burada root, so olarak seçilmiş. Sanırım buradaki I kelimesi işte stop first'ten dolayı atılıyor. O yüzden ilk kelimeye default olarak alındığını düşünüyorum. Ama makalede buna dair bir açıklama görmedim.
+
+689
+01:25:16,167 --> 01:25:20,768
+Bu kadarını yazan sen olmadığı için anlamam biraz zor olur zaten.
+
+690
+01:25:26,188 --> 01:25:32,968
+cümlelerin çıkarılması ve cümlelerden de parsing tree'lerin elde edilmesi, dependency parsing sonrasında.
+
+691
+01:25:33,348 --> 01:25:38,768
+Ve bu parsing tree'deki ilişkinin kullanılarak olasılık sonuçlarının hesaplanması.
+
+692
+01:25:38,928 --> 01:25:41,367
+Yani bir cümlenin olasılığının hesaplanması söz konusu.
+
+693
+01:25:43,007 --> 01:25:44,328
+Genel olarak bu şekilde.
+
+694
+01:25:45,768 --> 01:25:49,167
+Bir de buna ilave olarak aslında bir labeled dependency aranen diye bir kavram var.
+
+695
+01:25:49,708 --> 01:25:54,887
+Burada yine başlık biraz tuhaf oldu. Etiketli bağımlılık, tekrardan sinir rahat gibi çevrilme.
+
+696
+01:25:54,887 --> 01:26:03,067
+Burada ise Dependence RNN'e ilave olarak kelimelerin etiketleri de işleme dahil ediliyor.
+
+697
+01:26:03,067 --> 01:26:05,067
+Yani burada biz aslında...
+
+698
+01:26:04,752 --> 01:26:19,691
+Dependency RNN'de şeyi kullanmıyoruz. Kelimenin özle mi olduğu, nesle mi olduğu, yüklenme olduğu, bu tarz kramer bilgilerini kullanmıyoruz. Ama Labeled Dependency RNN'de burada ilave edilerek bir sonuç hesaplanmaya çalışılıyor.
+
+699
+01:26:19,691 --> 01:26:32,752
+ve şeklindeki formüllerden anlayacağımız gibi feature matrisi ve kelime olasılık sonuçlarını kelime etiketlerine bağlayan büyük G matrisi kullanılıyor.
+
+700
+01:26:33,131 --> 01:26:34,851
+Ve bu şekilde bir hesaplama yapmaya çalışılıyor.
+
+701
+01:26:34,971 --> 01:26:38,092
+Yine aslında n-gram yine kullanılıyor.
+
+702
+01:26:40,252 --> 01:26:42,151
+Hash matrisiyle birlikte.
+
+703
+01:26:42,151 --> 01:26:51,011
+Genel olarak bir önceki formüle ilave olarak burada GW ifadesini eklemiş oluyoruz diyebilirim.
+
+704
+01:26:51,011 --> 01:27:05,451
+Yani aslında olasılık daha deminki ifademizin yanında bir de bize ekstra etiketli veriyle beraber bize bir sonuç veren GW ifadesini kullanıyoruz.
+
+705
+01:27:07,491 --> 01:27:09,752
+Genel olarak veri setinden bahsetmek istiyorum.
+
+706
+01:27:09,752 --> 01:27:14,252
+Veri seti 19. yüzyılda yazılan 522 romanlar alınan cümlelerden oluşuyor.
+
+707
+01:27:15,131 --> 01:27:21,091
+Ve veri setindeki kelimelerden oluşan sözlükte iki kelime sayısı 72.846 adet.
+
+708
+01:27:21,912 --> 01:27:26,412
+Ve bu veri setindeki cümlelerden 1040 tanesi test için kullanılıyor.
+
+709
+01:27:27,571 --> 01:27:35,991
+Veri setindeki cümle bölme, POS etiketleme, söz dizimsel ayrıştırma işlemleri için Stanford Core NLP toolkit kullanılıyor.
+
+710
+01:27:35,991 --> 01:27:56,731
+Sonuçlardan bahsetmekle ilgili ise de aslında iki farklı sonuç yani benim sunumun başında bahsettiğim RNN çalışması yani Dependence RNN olmayan normal RNN çalışması ve bu makalede yapılan Dependence RNN ve Labeled Dependence RNN çalışmasının sonuçları karşılaştırılıyor.
+
+711
+01:27:56,731 --> 01:28:02,971
+farklı n-gram seviyeleri için yani 2-gram, 3-gram ve 4-gram seviyeleri için karşılaştırılıyor.
+
+712
+01:28:03,411 --> 01:28:12,031
+Ve sonuçlardan da gördüğümüz gibi aslında yaklaşık %10'luk bir artış gözlemliyoruz ve bu ciddi bir artış aslında.
+
+713
+01:28:13,031 --> 01:28:17,031
+Makalene sonucunda da bundan övünerek bahsediliyor aslında.
+
+714
+01:28:18,252 --> 01:28:23,231
+Ve bu şekilde aslında makale gerçekleştirilmiş oluyor.
+
+715
+01:28:23,231 --> 01:28:44,531
+ve makaleyi yazan iki kişi, sunumun başında bahsettiğim iki kişi bu makaleyi open source olarak GitHub'a yüklüyorlar ve burada paylaştığım linkten bu konuda çalışmak isteyen, bu konuda, bu konunun üzerinde bu konuya bir katkı yapmak isteyen kişiler aslında buradan proje indirip, proje inceleyip üzerine katkı sağlayabilirler.
+
+716
+01:28:44,531 --> 01:28:51,391
+verizletilinkini de ekstradan paylaştım. Bu da aslında Microsoft Research Sentence Compression Challenge'da kullanılan bir VST.
+
+717
+01:28:53,472 --> 01:28:56,011
+Genel olarak hocam bu şekilde kaynaklarım bunlar.
+
+718
+01:28:57,412 --> 01:28:58,791
+Beni dinlediğiniz...
+
+719
+01:28:58,791 --> 01:29:03,431
+Teşekkür ederim. Bir ilk slide'ını açsana yazarlarına bir bakabilirim.
+
+720
+01:29:03,472 --> 01:29:11,651
+Tamam. Hocam bu arada ben makaleyi okuduktan sonra hani Mikolov, Thomas Mikolov'un ne kadar katkı sağladığını gördüm.
+
+721
+01:29:11,651 --> 01:29:35,151
+Bilmiyorum. Mikolov yok. Hayır burada yazar Mikolov değil aslında ama Mikolov'un bu süreçte NLP'nin son yıllardaki gelişim süreci ne kadar çok katkısal olduğunu gördüm. Herhalde Mikolov şeylere çok ünlü şu derin öğrenme kelime embeddinglerinde falan. Biraz hayranlık duydum açıkçası çünkü 39 yaşındermiş bir de.
+
+722
+01:29:35,151 --> 01:29:50,972
+Bazen ben de tamam mikolov değil ama çok basit şeyler oluyor. Bunu başkası buluyor. Ben Kurskal algoritmasına takılmıştım. Çok basit ve kolay algoritma. O buluyor da biz niye bulamıyoruz?
+
+723
+01:29:51,551 --> 01:29:57,391
+Hocam aslında bence önyargılarımız var. Her şeyin bulunduğunu ve bir şey bulmanın çok zor olduğunu düşünüyoruz bence.
+
+724
+01:29:57,391 --> 01:30:01,451
+Ya da tembeliz. Öyle düşünmek.
+
+725
+01:30:01,876 --> 01:30:19,376
+işimize geliyor. Tam duyamadım hocam son cümlenizi. Belki de tembeliz. Öyle düşünmek işimize geliyor. Olabilir. Bahane olarak üretiyor olabiliriz hocam. Evet. Peki, sonuç olan var mı? Yok. Reporunu bekliyorum [öğrenci]. Tamamdır hocam. Çok teşekkür ederim.
+
+726
+01:30:19,376 --> 01:30:35,975
+Şimdi son konuşmacımız geçen hafta sunacaktı arkadaşınız sunamadı [öğrenci] [öğrenci] burada mısın buradasın raporunda göndermişsin Evet son olarak sözü sana veriyorum
+
+727
+01:30:40,404 --> 01:31:09,303
+mikrofonunu aç da buradayım hocam. [öğrenci] bir saniye diyor. Demek ki mikrofonu takıyor. [öğrenci] ya. Tam adına özgü hareket yapıyorsun. Durdun durdun. Şimdilik mi mikrofonu bağlıyorsun? Anlamadım ki. Neyse bir kalkın, bir zıplayın yerinizde. Ben bir öyle yapayım. Bir ileri geri gidip gelim sandalenin orada. Ay insan otur otur da çok kötü oluyor.
+
+728
+01:31:12,916 --> 01:31:20,295
+geldim [öğrenci]. Bu kadar da hareketim zaten bu kadar.
+
+729
+01:31:29,971 --> 01:31:39,871
+Allah Allah başka bir şey daha mı yazdı çete? Buradayım hocam bir saniye. Kaç saniye geçti.
+
+730
+01:31:52,564 --> 01:31:54,643
+başka yerden bağlanıyor.
+
+731
+01:31:55,643 --> 01:31:56,623
+Geliyorum hocam.
+
+732
+01:32:00,504 --> 01:32:09,143
+Hocam şimdi bilgisayardan sunuyu paylaşacağım da. Bilgisayarda mikrofon yok. Telefondan da bağlanıp şey yaptım.
+
+733
+01:32:09,203 --> 01:32:11,484
+Tamam hadi o zaman. Başla bitirelim.
+
+734
+01:32:21,971 --> 01:32:27,611
+görebiliyor musunuz hocam şu an? Görebiliyoruz. Yalnız full screen yaparsan sevinirim.
+
+735
+01:32:34,452 --> 01:33:00,931
+yapınca geliyor mu hocam şu an fullscreen size? Bana gelmedi. Sen öyle mi görüyorsun? İki monitör vardı. Fullscreen deyince diğer monitör de fullscreen yaptı. Neyse hadi devam et. Bozulacak diye korkuyorum. Tamam hocam. Devam et. İki ekran, bir cep telefonu sunum yapıyoruz. Hadi hayır.
+
+736
+01:33:00,931 --> 01:33:19,471
+Hocam ben Documentable Sentiment Analysis from News Artikel adlı makaleyi inceledim. Makale 2017 yılına ait. Hocam arkadan kuş sesi geliyor da böyle telefon görüşmelerinde pek susmuyor. Özür dilerim bunun için.
+
+737
+01:33:19,471 --> 01:33:24,551
+Gelsin hatta güzel güzel öztün de kendimizi tabiatta zannedelim.
+
+738
+01:33:25,291 --> 01:33:27,691
+Tamam hocam. Ölcektir diye tahmin ediyorum hocam.
+
+739
+01:33:28,231 --> 01:33:29,132
+Tamam peki.
+
+740
+01:33:29,132 --> 01:33:50,472
+2017 yılındaki bir makaleyi inceledim hocam. Burada hani makale genel olarak bir veri seti, BBC haber veri seti üzerindeki haberleri analiz ederek olumlu ya da olumsuzluğu hakkında o haberlerin içeriği hakkında bir sonuca varmaya çalışıyor. Bunun için bir çalışma yapılmış.
+
+741
+01:33:51,132 --> 01:33:56,532
+Bu gördüğünüz başkalar üzerinde de ben yaklaşık 10 dakikalık bir sunumumu yapacağım hocam.
+
+742
+01:33:56,532 --> 01:34:07,532
+Günümüzde bu internet üzerinde büyük miktarda veri bulunmaktadır ve bu büyük veri içerisinden ihtiyaç şuradan bilgilere ulaşmak önemli bir konudur.
+
+743
+01:34:08,172 --> 01:34:16,692
+Yapılan bu çalışmada da bu büyük veri üzerinden metinler, haberler analiz edilerek anlamı kutluzluğu hakkında bir sonuca varılmaya çalışılıyor.
+
+744
+01:34:16,691 --> 01:34:27,331
+Duygu analizinde de özner bir bilgiyi çıkarmak için doğal dil işleme, hesaplamalı dil bilim ve metin analizin küçük bir uygulaması, duygu analizi işlemi
+
+745
+01:34:27,331 --> 01:34:33,211
+Duygu analizinde bir kişinin belirli bir konu hakkındaki fikri belirlenmeye çalışılıyor
+
+746
+01:34:33,211 --> 01:34:37,371
+Bu çıkaranların yapılabilmesi için de çeşitli veri kaynakları var
+
+747
+01:34:37,371 --> 01:34:43,271
+Bunlar işte metinler, tweetler, bloglar, sosyal medya, haber makaleleri, ürün yorumları ve benzeri olabilir
+
+748
+01:34:43,271 --> 01:34:49,231
+Bu önerilen sistemde haber makaleleri üzerinden bir çalışma yapılıyor.
+
+749
+01:34:50,951 --> 01:34:58,091
+Duygu analizi genel olarak amaç metin verilerin kutupluluğunu hesaplamaktır.
+
+750
+01:34:58,091 --> 01:35:07,831
+Genel olarak da duygu analizi için makine öğrenmesi, sözcük tabanlı ve dil bilimsel analiz işlemleri uygulanabilmektedir.
+
+751
+01:35:07,831 --> 01:35:22,911
+Makine öğrenmesinde bir düz özellikler kullanarak sınıflandırılmış veri üzerinden veri kümesi eğitilir ve bu eğitilen veri kümesi üzerinden gelen verinin hangi sınıfa ait olduğu saptanarak bir sınıflandırma yapılır hocam.
+
+752
+01:35:22,911 --> 01:35:32,811
+İşte hani olumlu makaleler, olumsuz makaleler şeklinde bir sınıflandırma olursa etkiler. Buradan kolaylıkla hani makineye öğrenmesinin başarısına göre bir sınıflandırma olabilir.
+
+753
+01:35:32,812 --> 01:35:54,252
+Sözcük tabanlı yöntemde de belirli bir kutupluluğa sahip kelime listesi üzerinden çalışılmaktadır. Önerilen sistemde de bu sözcük tabanlı bir yöntem kullanılıyor. O kullandıkları sözcük tabanlıyı ileride vereceğim. Bu sözcük tabanlı yöntemde kelimelerin ağırlığına göre sınıflandırılma yapılıyor ve onun üzerinden çalışıyor.
+
+754
+01:35:54,252 --> 01:36:03,952
+Dil bilimsel analiz yönteminde de kelimelerin ya da cümlelerin olumsuzluk ve metin anatomisi kullanılarak metin yönü analize dilerik bir çıkarım yapmaya çalışılıyor hocam.
+
+755
+01:36:04,812 --> 01:36:08,492
+Duygu analizi seviyeleri de üç tane.
+
+756
+01:36:09,431 --> 01:36:14,192
+Döküman belge seviyesi, cümle seviyesi, varlık ve görünüm seviyesi.
+
+757
+01:36:14,932 --> 01:36:23,052
+Döküman seviyesinde dokümanı tamamen analize edilmektedir ve analiz sonucu negatif ya da pozitif bir sonuca varılmaktadır.
+
+758
+01:36:23,051 --> 01:36:31,991
+Mesela hocam örnek olarak yalnızca bir ürüne ait yorumları içeren bir metin dosyası analiz edilebilir ve analiz sonucu olumlu ya da olumsuz bir sonuç edilebilir.
+
+759
+01:36:32,595 --> 01:36:40,015
+Ama birden fazla ürüne ait yorumların olduğu bir mekin incelemesi durumunda bu düzgün olarak çalışmaz.
+
+760
+01:36:40,015 --> 01:36:55,295
+Çünkü birden fazla ürün yorumu olduğu için hangi ürüne ait, nasıl bir kişiler, birden fazla ürün olduğu zaman bir ürün hakkında olumlu olumsuz bir düşünceye dolayı ulaşamayız.
+
+761
+01:36:56,375 --> 01:37:01,995
+Cümle seviyesinde bu seviyede her cümle işlenmekte ve analiz edilmektedir hocam.
+
+762
+01:37:01,995 --> 01:37:05,015
+pozitif, negatif ya da nötr sonuçlarından biri elde edilir.
+
+763
+01:37:05,936 --> 01:37:10,035
+Nötr cümleler duygu ya da fikir belirtmeyen anlamsız cümlelerdir.
+
+764
+01:37:10,595 --> 01:37:16,316
+Cümle seviyesinde çalışmasının başarısı özellik nesnelik sınıflandırmasında yatmaktadır.
+
+765
+01:37:17,735 --> 01:37:21,136
+Genelliksel algoritmalara eğitim süreçleri için kullanılabilmektedir.
+
+766
+01:37:21,136 --> 01:37:27,915
+Varlık ve görünüm seviyesi özellik tabanlı duygu analizi olarak da adlandırılıyor.
+
+767
+01:37:27,915 --> 01:37:32,755
+Bu bağlık seviyesi duygu analizi görüşün kendisini ifade ediyor.
+
+768
+01:37:33,296 --> 01:37:38,555
+Görüş temellidir ve bir duygu pozitif veya negatif ve bir de targıt hedeften oluşuyor.
+
+769
+01:37:39,115 --> 01:37:42,856
+Hedefi olmayan görüşler gereksiz ya da sınırlık kullanımda oluyor.
+
+770
+01:37:43,015 --> 01:37:44,875
+Bu cümle seviyedeki ne tür denk geliyor?
+
+771
+01:37:45,856 --> 01:37:52,256
+Görüşün hedefi duygunun analizi için bu seviyenin önemini ve amacını belirlemede yardımcı bir etkin olacağım.
+
+772
+01:37:52,255 --> 01:37:54,415
+bu şey yani genel olarak
+
+773
+01:37:54,415 --> 01:37:56,395
+duygu analiz etmek için
+
+774
+01:37:56,395 --> 01:37:58,775
+üç tane yöntem kullanılabiliyor
+
+775
+01:37:58,775 --> 01:38:00,595
+ve bunların da seviye
+
+776
+01:38:00,595 --> 01:38:01,855
+olarak baktığımızda da yine bir
+
+777
+01:38:01,855 --> 01:38:03,795
+üç seviyesi var hocam.
+
+778
+01:38:05,735 --> 01:38:06,555
+Hocam
+
+779
+01:38:06,555 --> 01:38:08,415
+önerilen sistem bir sonraki
+
+780
+01:38:08,415 --> 01:38:10,615
+slide'da grafiğini de
+
+781
+01:38:10,615 --> 01:38:11,415
+vereceğim.
+
+782
+01:38:13,115 --> 01:38:14,515
+Bu makalede hocam
+
+783
+01:38:14,515 --> 01:38:16,815
+daha çok hani şey çok vurgulu yapılıyor.
+
+784
+01:38:17,715 --> 01:38:18,595
+Bir metin
+
+785
+01:38:18,595 --> 01:38:20,415
+işlenmeden önce onların
+
+786
+01:38:20,415 --> 01:38:23,676
+ön işlemden geçirilmesi bayağı bir geçiyor içerisinde.
+
+787
+01:38:23,795 --> 01:38:26,195
+Ön işlemden geçirilmesi önemden bahsediliyor ve
+
+788
+01:38:26,195 --> 01:38:29,435
+önerdikleri sistem pardon sistemde
+
+789
+01:38:29,435 --> 01:38:32,155
+beş aşamadan oluşuyor hocam. Öncelikle
+
+790
+01:38:32,155 --> 01:38:35,515
+verilerin temizlenme yani ön işlem kapsamında
+
+791
+01:38:35,515 --> 01:38:37,195
+verilerin temizlenme işlemi yapılıyor.
+
+792
+01:38:37,735 --> 01:38:41,375
+Yörel stop work gibi anlam içermeyecek, etki etmeyecek kelimeler
+
+793
+01:38:41,375 --> 01:38:44,155
+temizleniyor. Daha sonra bu
+
+794
+01:38:44,155 --> 01:38:47,135
+kelimeleri küçük harfi çeviriyor hepsi.
+
+795
+01:38:47,916 --> 01:38:50,215
+Daha sonra bu küçük harfi çevirilen
+
+796
+01:38:50,215 --> 01:38:58,055
+kelimelerin kök bulma işlemi yapılıyor ve bu kök üzerinden de bir terim doküman matrisi oluşturuluyor.
+
+797
+01:38:59,176 --> 01:39:06,555
+Bu oluşturulan matris bir tane sözlükle karşılaştırılarak bu dokümana ait hocam bir puan ortaya çıkıyor.
+
+798
+01:39:07,475 --> 01:39:16,235
+Ve o puan üzerinden de o makalenin haberin olumlu mu olumsuz mu ne tür mü olduğu hakkında bir bilgi edinilmeye çalışıyor.
+
+799
+01:39:16,235 --> 01:39:22,415
+Yani makaledeki yapılan sistem, önerilen sistem bu şekilde.
+
+800
+01:39:23,875 --> 01:39:30,655
+Bu da az önceki söylediğim işlemlerin algoritması, akış sistem şeması.
+
+801
+01:39:32,715 --> 01:39:39,375
+Deneysel sonuçlara geldiğimiz zaman hocam veri kümesi olarak BBC'nin veri seti kullanılıyor.
+
+802
+01:39:39,375 --> 01:39:47,055
+Bu veri setinde 225 tane döküman içermektedir ve 5 kategoriye ait de veriler var.
+
+803
+01:39:47,155 --> 01:39:49,415
+Business, Entertainment, Sport, Sport, Tech gibi.
+
+804
+01:39:50,456 --> 01:39:53,715
+Her bir sınıfta da 300 lira 400 tane makale bulunmaktadır.
+
+805
+01:39:56,036 --> 01:39:58,595
+Bir sözcük kullanıldığını söylemiştim hocam.
+
+806
+01:39:58,676 --> 01:40:00,435
+Burada da bin kilo sözlüğü kullanılıyor.
+
+807
+01:40:00,435 --> 01:40:02,595
+pozitif ya negatif kelimelerin
+
+808
+01:40:02,595 --> 01:40:05,195
+hani o matrizi çıkardıktan sonra
+
+809
+01:40:05,195 --> 01:40:06,456
+matrizdeki kelimelerin
+
+810
+01:40:06,456 --> 01:40:08,995
+olumlu ya da olumsuzluğunu
+
+811
+01:40:08,995 --> 01:40:11,295
+tespiti için bu sözlüğü
+
+812
+01:40:11,295 --> 01:40:11,835
+kullanıyor.
+
+813
+01:40:12,835 --> 01:40:13,295
+Binkliyor.
+
+814
+01:40:13,295 --> 01:40:15,115
+Pardon bu Binkliyor
+
+815
+01:40:15,115 --> 01:40:17,915
+ne yani?
+
+816
+01:40:18,355 --> 01:40:21,295
+Bu yazarın
+
+817
+01:40:21,295 --> 01:40:23,015
+adı mı Binkliyor'ydu?
+
+818
+01:40:24,316 --> 01:40:25,275
+Hocam
+
+819
+01:40:25,275 --> 01:40:27,475
+direk yani Binkliyor sözcüğü kullanılmıştır
+
+820
+01:40:27,475 --> 01:40:29,795
+diyor. Hani sözlüğün şey olarak da
+
+821
+01:40:29,844 --> 01:40:34,623
+makalede geçen içinde kaç tane pozitif, kaç tane negatif kelime geçti.
+
+822
+01:40:35,443 --> 01:40:37,243
+Referans vermiş mi bu sözü?
+
+823
+01:40:38,104 --> 01:40:39,064
+Efendim hocam?
+
+824
+01:40:39,443 --> 01:40:40,684
+Referans vermiş mi?
+
+825
+01:40:43,323 --> 01:40:43,963
+Makalede.
+
+826
+01:40:44,143 --> 01:40:47,604
+Bir bakayım hocam hemen. Ona tam ben dikkat etmedim açıkçası.
+
+827
+01:40:47,663 --> 01:40:49,043
+Tamam, devam et bakarsın.
+
+828
+01:40:50,184 --> 01:40:54,604
+Baktım, şey yapmamış hocam. Hani geçtiği yerde bir atıfta bulunmamış.
+
+829
+01:40:55,203 --> 01:40:56,703
+Ama ne saçmalık ya?
+
+830
+01:40:58,024 --> 01:40:59,264
+Tamam, devam et sen.
+
+831
+01:40:59,844 --> 01:41:22,663
+Tamam hocam. Daha sonra hocam burada deneysel çalışma sonuçlarını veriyor. Hani o ön işlemden geçirip kök bulma işlemini yapıp bir dokumenteri matri oluşturduktan sonra mesela bu ZINIS kategorisine ait toplamda 510 tane makaleden 262 tanesini olumlu olarak mesela şey yapmış.
+
+832
+01:41:22,663 --> 01:41:26,384
+olumlu olduğunun sonucuna varmış.
+
+833
+01:41:27,724 --> 01:41:34,543
+214 tanesinin negatif, 34 tanesi hakkında bir fikir deşkarında bulunanamamış.
+
+834
+01:41:34,924 --> 01:41:38,024
+Entertainment için de 401 bu rakamlar var.
+
+835
+01:41:38,024 --> 01:41:46,543
+Yani bu rakamları değerlendirdiğiniz zaman hocam, mesela bu entertainment da tek, birbirine çok yakın sonuçlar veriliyor.
+
+836
+01:41:46,823 --> 01:41:48,524
+Hani makale değerlendirmesi de o şekilde.
+
+837
+01:41:48,524 --> 01:41:54,464
+Makale sayısı da aynı, neredeyse pozitif, negatif, diğer
+
+838
+01:41:54,464 --> 01:41:57,464
+Şurada göstereyim
+
+839
+01:41:57,464 --> 01:42:04,983
+Hocam burada mesela entertainment'da tek birbirine doğrudan aynı
+
+840
+01:42:04,983 --> 01:42:09,043
+Doğrudan aynı hocam mesela, doğrudan aynı olanlar var
+
+841
+01:42:09,043 --> 01:42:11,083
+Birbirine yakın sonuçlar var
+
+842
+01:42:11,083 --> 01:42:13,623
+Burada hocam
+
+843
+01:42:13,623 --> 01:42:17,784
+Pardon ben bu grefe hiç anlayamadım
+
+844
+01:42:17,783 --> 01:42:21,863
+Total, Pozitif, Negatif.
+
+845
+01:42:22,163 --> 01:42:24,383
+Ha dağılımlarını söylüyorsun.
+
+846
+01:42:24,383 --> 01:42:25,483
+Evet hocam.
+
+847
+01:42:25,663 --> 01:42:25,763
+Evet.
+
+848
+01:42:25,923 --> 01:42:29,643
+Hani burada bu önerdiği sistemi hocam şey yapıyor.
+
+849
+01:42:30,283 --> 01:42:31,943
+Bu makaleleri uyguluyor.
+
+850
+01:42:32,403 --> 01:42:34,743
+Daha sonra bu makaleler olumlu mu, olumsuz mu?
+
+851
+01:42:35,163 --> 01:42:41,823
+Hani nasıl sınıflandırılmış diye bu elde edilen sonucu şey yapıyor hocam.
+
+852
+01:42:41,943 --> 01:42:42,723
+Hani burada veriyor.
+
+853
+01:42:43,323 --> 01:42:44,043
+O şekilde diyeyim.
+
+854
+01:42:44,043 --> 01:42:56,903
+Buradan da hocam bu sonuçları edindikten sonra da yapılan yazar değerlendirmesinde kutupluluklar olumlu olumsuzluk bir sonuçları elde etti ya
+
+855
+01:42:56,903 --> 01:43:04,263
+bu yaptığı çalışmanın bir makalenin olumlu olumsuz olduğu hakkında kesin bir bilgi vermemektedir.
+
+856
+01:43:04,263 --> 01:43:13,204
+Aslında bu makalede yapılan çalışmada önerdiği sistemin şey olduğundan bahsetmişti oradan. Sonucunda bunu vermiş.
+
+857
+01:43:14,043 --> 01:43:20,043
+Bu yaptığı çalışma olumlu mu olumsuzluğu hakkında kesin bir sonuca varmadığı sonucuna varıyor.
+
+858
+01:43:20,443 --> 01:43:23,704
+Ne demek yani ben boş bir çalışma yaptım mı demek istiyor?
+
+859
+01:43:24,303 --> 01:43:31,043
+Evet hocam hani burada ben de en sonunda onu yazmış ona şaşırdım. Hani çalışmayı yapmış yapmış ve bu yöntem kullanamaz demiş.
+
+860
+01:43:31,823 --> 01:43:37,344
+Yani bu kesin bilgi vermiyor demiş. Hani aslında bu yöntemin kullanılamayacağını göstermiş makalede.
+
+861
+01:43:37,344 --> 01:43:44,403
+kullanabileceğinden çok kullanamayacağını göstermiş ve gelecek çalışmasından bahsetmişler hocam.
+
+862
+01:43:45,103 --> 01:43:52,683
+Cümlelerin puanlarına göre, bu oluşturdukları puanlara göre, anlamsal kusurluğu tanımaya ve makalelerin olumlu ya da olumsuzluğu olduğunu tespitini,
+
+863
+01:43:52,683 --> 01:43:59,803
+farklı makine öğrenmesi, teknikleri uygulamaya odaklanmaktadır diye bir dahaki makalelerdeki şeyi belirtmişler hocam.
+
+864
+01:44:00,883 --> 01:44:02,403
+Gelecek çalışmalarını belirtmişler.
+
+865
+01:44:02,664 --> 01:44:04,603
+Böyle bir çalışma yapmışlar mı?
+
+866
+01:44:05,483 --> 01:44:05,883
+Efendim?
+
+867
+01:44:05,883 --> 01:44:10,803
+Araştırdın mı? Böyle bir çalışma yapmışlar mı? Bizi mi kandırıyorlar?
+
+868
+01:44:12,743 --> 01:44:17,583
+Hocam ben şeyden sonra bakıp size mail ettim açıkçası. Çok araştırma yapıp satı bulamadım.
+
+869
+01:44:17,583 --> 01:44:21,503
+Hiç merak etmedin he? Böyle bir şey yazmış adam gitmiş.
+
+870
+01:44:24,643 --> 01:44:27,723
+Gördün mü [öğrenci]? Bizim ülkeden çıkmaz.
+
+871
+01:44:28,564 --> 01:44:30,564
+Bak merak etmemiş durmuş.
+
+872
+01:44:32,163 --> 01:44:36,103
+Yani hocam, ne diyeyim, hani çok fırsat bulamadım hocam ya.
+
+873
+01:44:36,103 --> 01:44:37,203
+Bakmamışsın işte.
+
+874
+01:44:39,543 --> 01:44:40,364
+Bakmamışsın.
+
+875
+01:44:40,984 --> 01:44:45,463
+Tamam, espri yapıyorum ama çok enteresan bir çalışma yani.
+
+876
+01:44:45,883 --> 01:44:48,803
+Evet, bir şeyin olmayacağını da gösterirsin.
+
+877
+01:44:49,623 --> 01:44:51,283
+Kaç yılının çalışmasıydı bu?
+
+878
+01:44:51,664 --> 01:44:52,904
+2017 hocam.
+
+879
+01:44:53,164 --> 01:44:56,564
+2017, 3 senede belki 3 senede bir şey koymuşlardır.
+
+880
+01:44:56,564 --> 01:44:59,043
+Lütfen dersten sonra bir bak
+
+881
+01:44:59,043 --> 01:45:03,564
+Tamam hocam hemen bakacağım size mail atacağım hocam ben de şu an şey yaptım
+
+882
+01:45:03,564 --> 01:45:06,683
+Konferansmış tamam peki teşekkür ediyorum
+
+883
+01:45:06,683 --> 01:45:08,104
+Soru var mı?
+
+884
+01:45:09,843 --> 01:45:10,924
+Soru yok
+
+885
+01:45:10,924 --> 01:45:16,183
+Okey bu dönemimiz bu şekilde bitti arkadaşlar
+
+886
+01:45:16,183 --> 01:45:20,483
+Dersin sürekli katılım gösteren herkese ayrı ayrı teşekkür ediyorum
+
+887
+01:45:20,483 --> 01:45:27,223
+Bir kişimizin raporu eskut bir kişinin o da tamamlayacak
+
+888
+01:45:27,223 --> 01:45:32,203
+Şimdi final günü projelerinize bakacağım dedim
+
+889
+01:45:32,203 --> 01:45:36,003
+Fakat gördüğünüz gibi çok uzun sürüyor
+
+890
+01:45:36,003 --> 01:45:43,163
+Eğer projesini final tarihinden önce bitiren olursa bana bir mail atsın
+
+891
+01:45:43,163 --> 01:45:48,543
+Belki bir zaman aralığı yaratıp önceden projesine bakarım
+
+892
+01:45:48,543 --> 01:46:07,303
+final günü herkes için bu geçerli. Projenin raporunu sınav evrakı olarak yükleyeceksiniz. Yani ben bir soru soracağım. Sorduğum soru öyle bir soru olacak ki cevabı sizin projenizde yapmış olduğunuz konu olacak.
+
+893
+01:46:07,303 --> 01:46:14,604
+ve raporunuzu sınav evrak olarak ad, soyad hepsi dahil sisteme PDF olarak yükleyeceksiniz.
+
+894
+01:46:15,363 --> 01:46:24,603
+Ve o gün aynı zamanda bir toplantı sesini açıp ya da sınavda olmaz toplantı sesini açıp projelerinize bakacağım ama
+
+895
+01:46:24,603 --> 01:46:30,683
+çok zaman alacağı için önceden bitirenler olursa bana ne olur bilgi versin.
+
+896
+01:46:31,183 --> 01:46:36,203
+Belki bir akşam saati en azından 2-3 kişiyi eritmiş oluruz.
+
+897
+01:46:36,203 --> 01:46:47,623
+Belki bitiremeyip bütün emeği kalacak olanlarınız da olabilir, bütün emeği bırakacağım diyenleriniz de olabilir. Onlar da bana bilgi verir. Evet, biri bir şey soruyordu.
+
+898
+01:46:47,623 --> 01:46:49,963
+Hocam, final tarihi belli oldu mu acaba?
+
+899
+01:46:50,584 --> 01:46:54,504
+Final tarihini Utku Hoca ilan edecekti sayfadan.
+
+900
+01:46:54,864 --> 01:46:56,424
+Evet hocam oldu, hafta yok.
+
+901
+01:46:58,763 --> 01:46:59,864
+Oldu hocam.
+
+902
+01:47:00,123 --> 01:47:05,043
+Oldu değil mi? Oldu. Ama ben şu an hangi gün olduğunu bilmiyorum.
+
+903
+01:47:05,043 --> 01:47:07,963
+Hocam bizimki haftaya hocam aynı gün.
+
+904
+01:47:08,483 --> 01:47:10,403
+Haftaya terşembe hocam öğleden sonra.
+
+905
+01:47:11,543 --> 01:47:12,863
+Terşembe öğleden sonra.
+
+906
+01:47:13,343 --> 01:47:13,924
+Evet hocam.
+
+907
+01:47:14,863 --> 01:47:15,463
+İyi tamam.
+
+908
+01:47:15,463 --> 01:47:15,963
+Oo.
+
+909
+01:47:16,543 --> 01:47:17,463
+Ay o günden.
+
+910
+01:47:19,784 --> 01:47:23,644
+Neyse ya çok kötü olmuş terşembe öğleden sonra haftaya.
+
+911
+01:47:24,064 --> 01:47:24,763
+On dördü mü?
+
+912
+01:47:26,683 --> 01:47:27,663
+Evet hocam on dördü.
+
+913
+01:47:28,103 --> 01:47:30,883
+Tamam o gün başkanışı var onun yerini değiştireceğim.
+
+914
+01:47:31,023 --> 01:47:32,143
+Yani dersin değil.
+
+915
+01:47:32,643 --> 01:47:33,523
+O toplantının.
+
+916
+01:47:33,523 --> 01:47:41,163
+Peki, yani demek ki çarşamba, salı, ne bileyim, bu tarih olursa bana önceden haber versin
+
+917
+01:47:41,163 --> 01:47:49,503
+Başka bana soracağınız bir şey var mı? Yoksa hepinizde sınavlarda başarılar diliyorum
+
+918
+01:47:49,503 --> 01:47:54,203
+İnşallah kazasız belasız bu dönemi de atlatırsınız
+
+919
+01:47:54,203 --> 01:47:59,663
+İyi günler hocam
