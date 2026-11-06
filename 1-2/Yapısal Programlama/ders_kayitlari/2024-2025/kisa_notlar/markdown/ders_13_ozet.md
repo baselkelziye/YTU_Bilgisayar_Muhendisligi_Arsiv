@@ -2,8 +2,7 @@
 
 ## Genel Konular
 
-- Dersi dersin hocası Dr. Ahmet Elbir online anlatıyor (12 Mayıs 2025). Konular: `void` işaretçi, dosya işlemlerine giriş (stream, metin ve ikili dosyalar, `fopen` erişim kipleri, dosya konum göstergesi), dosya kopyalama örneği ve dönem projesinin tanıtımı.
-- Duyurular: sınav çözümleri ve değerlendirmesi çarşamba günü online yapılacak. Cuma sabahı 9-12 arası ek ders var (uygulamaya ve projeye hazırlık).
+- Dersi dersin hocası Dr. Ahmet Elbir anlatıyor. Konular: `void` işaretçi, dosya işlemlerine giriş (stream, metin ve ikili dosyalar, `fopen` erişim kipleri, dosya konum göstergesi), dosya kopyalama örneği ve dönem projesinin tanıtımı.
 - `void` işaretçi (genel işaretçi)
   - Her türden değişkenin adresini tutabilen genel (generic) işaretçidir: `void *ptr;`. `int*`, `float*`, `char*` veya bir yapı işaretçisi yerine kullanılabilir.
   - Ne işe yarar? Türden bağımsız (generic) fonksiyonlar yazmayı sağlar. Örneğin `printIntArray`, `printFloatArray` gibi ayrı ayrı fonksiyonlar yerine tek bir `printArray`. İleride thread konusunda da kullanılacak.
@@ -47,7 +46,7 @@
   - Satır (string): `fgets`/`fputs`.
   - Blok: `fread`/`fwrite`.
   - Biçimli: `fprintf`/`fscanf`.
-  - Satır okumak için karakter karakter okumak yavaştır. Disk, RAM'den çok daha yavaştır. Her karakter için diske gidip gelmek büyük gecikmedir.
+  - Hoca satır okumak için karakter karakter okumayı tavsiye etmedi: disk, RAM'den çok daha yavaştır ve her karakter için diske gidip gelmek büyük gecikmedir (düzeltme için "Ders sonrası notlar"a bakın).
   - "Bir dosya nasıl okunur? Nasıl yazıldıysa öyle." Örneğin CSV dosyası satır satır okunur, sonra virgüllere göre ayrıştırılır (parse). "Bir dosya nasıl yazılır? Nasıl istiyorsanız, ama mühendislik yaparak." Veride virgül olabilecekse ayraç olarak noktalı virgül seçmek daha iyi olabilir.
   - Dosya biçimleri genellikle başlık (header), veri (data) ve bazen son ek (footer) bölümlerinden oluşur. Örnekler: PGM (gri seviye görüntü, başlıkta tür, genişlik, yükseklik, en büyük değer), PPM (renkli), BMP (başlıkta imza, dosya boyutu, genişlik, yükseklik, bit sayısı…).
   - Dosya biçimini tasarlamak geleceği düşünmeyi gerektirir. IPv4 (32 bit adres) yetmiyor, IPv6 (128 bit) daha iyi, ama bütün cihazlar ve ağ altyapısı IPv4 biçimine göre kurulduğu için geçiş zordur.
@@ -57,13 +56,12 @@
   - `printf` ile `stdout`'a, `fprintf(stderr, ...)` ile hata akışına yazıldı. Hata akışı bazı dillerde (ör. Java) ayrı renkte veya farklı sırada görünür.
   - Yol yazarken ters bölü iki kez yazılır: `"C:\\deneme.txt"`.
   - `FILE* openFile(char *fName, char *mode)`: dosyayı açıp işaretçisini döndüren yardımcı fonksiyon. `"w"` kipiyle açılan dosyanın eski içeriğinin silindiği gösterildi.
-  - Dosya kopyalama: `while ((c = getc(fp)) != EOF) putc(c, fp2);`. İlk denemede `feof` ile kurulan döngü sonsuza girdi ve dosya açılamadı. Hoca bunun arka planda dosyayı tutan başka bir programdan kaynaklandığını düşündü, programları kapatıp yeniden çalıştırınca kopyalama çalıştı. `c` değişkeninin `int` olması önemlidir.
-- Dönem projesi (Online Yıldız'da ilan edildi)
+  - Dosya kopyalama: `while ((c = getc(fp)) != EOF) putc(c, fp2);`. <!-- BELİRSİZ: Son döngünün yazımı altyazıda okunmuyor, getc != EOF kalıbı doğrulanamadı. Altyazıda feof'lu döngü, c değişkenine okuma, %c ile yazdırma ve putc geçiyor. --> İlk denemede `feof` ile kurulan döngü sonsuza girdi ve dosya açılamadı. Hoca bunun arka planda dosyayı tutan başka bir programdan kaynaklandığını düşündü, programları kapatıp yeniden çalıştırınca kopyalama çalıştı. `c` değişkeninin `int` olması önemlidir.
+- Dönem projesi
   - Kütüphane otomasyonuna benzer bir veri tabanı uygulaması. Bilgiler hem CSV dosyalarında kalıcı olarak, hem de programda yapılar (struct) ve bağlı listelerde tutulacak.
   - Beş CSV dosyası: yazarlar (ad, soyad, otomatik verilen yazar ID), öğrenciler (ad, soyad, öğrenci numarası, kütüphane puanı), kitaplar (ad, ISBN, adet; her nüsha "ISBN_1" gibi etiketlenir), kitap-yazar eşleştirmesi (ISBN ile yazar ID; yazar silinirse -1) ve ödünç alma işlemleri (nüsha, öğrenci, tarih, işlem türü 0 ödünç / 1 teslim).
   - Kitap 15 günden geç teslim edilirse öğrencinin puanı düşer, cezalı öğrenci listesi çıkarılır.
   - İşlemler: öğrenci ekleme/silme/güncelleme/görüntüleme, kitap ve yazar işlemleri, yazar-kitap eşleştirme. İşlemlerin çoğu ID üzerinden. "OBS'nin küçük ölçekli hâli gibi."
-  - Teslim: kod, rapor ve CSV dosyaları Online Yıldız'a tek bir RAR/ZIP içinde. Bir de video çekilecek, YouTube linki rapora eklenecek. Google Drive, OneDrive, GitHub linki kabul edilmiyor. Video yoksa çok düşük puan alınır.
 
 ## Hocanın Özellikle Vurguladığı Kısımlar
 
@@ -71,8 +69,7 @@
 - `"w"` kipi var olan dosyanın içini siler.
 - `fopen` sonucu `NULL` mı diye mutlaka kontrol edilmeli. `fopen` yapınca hemen `fclose`'u yazın.
 - Bir dosya nasıl yazıldıysa öyle okunur. Dosya biçimini mühendislik yaparak tasarlayın.
-- Satır okumak için karakter karakter okumayın, disk yavaştır.
-- Projede video zorunlu, link olarak yalnızca YouTube kabul ediliyor.
+- Satır okumak için karakter karakter okumayın.
 
 ## Kısa Tekrar Notları
 
@@ -89,7 +86,7 @@
 
 - `feof`, yalnızca bir okuma dosya sonunu geçmeye çalıştıktan sonra doğru (sıfırdan farklı) döner. Döngü `while (!feof(fp)) putc(getc(fp), fp2);` biçiminde yazılırsa, son karakterden sonra bir kez daha `getc` çağrılır. Bu çağrı `EOF` (-1) döndürür ve `putc` bunu `0xFF` baytı olarak hedef dosyaya yazar.
 - Test (derste yazılmadı): 12 baytlık `"Merhaba YTU\n"` dosyası `getc != EOF` döngüsüyle 12 bayt, `!feof` döngüsüyle 13 bayt (sonda fazladan `ff`) kopyalandı.
-- Doğru kalıp derste sonunda kullanılan kalıptır: okuma işleminin sonucunu doğrudan `EOF` ile karşılaştırmak. `c`'nin `char` değil `int` olması gerekir, çünkü `EOF` bir `char` değeri değildir.
+- Doğru kalıp, okuma işleminin sonucunu doğrudan `EOF` ile karşılaştırmaktır. `c`'nin `char` değil `int` olması gerekir, çünkü `EOF` bir `char` değeri değildir.
 
 ### Ders sonrası notlar
 
@@ -100,6 +97,9 @@
 - **Standart akış numaraları:** Derste girdi 0, çıktı 1, hata 2 denildi. Bunlar işletim sistemi düzeyindeki dosya tanımlayıcılarıdır (file descriptor). C'deki `stdin`, `stdout`, `stderr` ise `FILE*` türünde akışlardır.
 - **"Bit okumak":** Derste ikili dosyalardan "bit okumak"tan söz edildi. Dosya işlemlerinde en küçük okuma birimi bayttır, ikili dosyalarda da öyledir. Tek tek bitlere ulaşmak için bayt okunup bit işlemleri (`&`, `>>`) kullanılır.
 - **RAM ve disk hızı:** Derste verilen frekans rakamları (RAM için "10 MHz", disk için "kHz") yalnızca büyüklük farkını anlatmak için kullanılan kaba benzetmelerdir. Asıl mesaj doğrudur: diske erişim RAM'e erişimden kat kat yavaştır. SSD'ler HDD'lerden çok hızlıdır ama yine de RAM'den yavaştır.
-- **IPv4 adres sayısı:** $2^{32} \approx 4.3$ milyar adres eder. Derste kaba hesap olarak $2^{30} \approx 10^9$ kullanıldı.
+- **IPv4 adres sayısı:** $2^{32} \approx 4.3$ milyar adres eder. Derste kaba hesap olarak $2^{30}$ "8 üzeri 10" diye söylendi. Bu doğrudur: $8^{10} = 2^{30} = 1073741824 \approx 10^9$ (python ile hesaplandı).
+- **Karakter karakter okuma ve disk:** Derste "20 defa harddiske git gel yaparsınız" dendi. C kütüphanesi tamponludur, her `getc` diske gitmez. 21 baytlık bir satır `getc` ve `fgets` döngüleriyle okundu, `strace` iki programda da aynı sayıda `read` çağrısı gösterdi (gcc ile denendi). Satır okumak için `fgets` yine de daha uygun kalıptır.
+- **`=` ve `==` önceliği:** Derste `if ((fp = fopen(...)) == NULL)` için "`=` operatörünün `==`'ye üstünlüğü var" dendi (01:47:40). Tersidir: `==` operatörünün önceliği daha yüksektir. Atamayı önce yaptıran parantezdir. Parantezsiz `if (fp = fopen(...) == NULL)` satırı karşılaştırma sonucunu `fp`'ye atamaya çalışır, gcc 15.2 bunu derleme hatası sayar (denendi).
+- **`c`'nin türü:** Derste "integer almakta sıkıntı yok" dendi (02:05:19). `c`'nin `int` olması aslında gereklidir. `A`, `0xFF`, `B` baytlarından oluşan dosya `char c` ile okununca döngü `0xFF`'te durdu ve 1 bayt okundu, `int c` ile 3 bayt okundu (x86-64 üzerinde gcc ile denendi).
 
 * **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

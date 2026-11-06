@@ -2,13 +2,13 @@
 
 ## Genel Konular
 
-- Derste Yapay Zeka bölümünden öğrenciler de var. Geçen haftanın kayıtları Online Yıldız'da yayınlanamadığı için hoca WhatsApp kanalındaki linke (Drive) yükledi.
 - `typedef`
   - Var olan bir C tipine yeni bir isim verir: `typedef long int int32;` sonra `int32 j;`.
   - `#define` gibi bir ön işlemci komutu değildir, bu yüzden `#` ile başlamaz ve `;` ile biter.
   - En çok yapılarla (struct) kullanılır. Örnek: karmaşık sayı yapısı.
     - `struct complexNumber { float real; float imaginary; };` tanımından sonra her kullanımda `struct complexNumber c1;` yazmak gerekir. Fonksiyon parametrelerinde de aynı uzun yazım tekrarlanır.
     - `typedef struct complexNumber { ... } complex;` ile `complex c1, c2;` yazılabilir.
+    - Ayrı satır biçimi: önce `struct complexNumber { ... };`, sonra `typedef struct complexNumber COMPLEX;`. Yeni ad büyük harfle yazıldı, iki biçim de aynı işi görür.
   - Yapıyı kullanan bir fonksiyonun prototipi, yapı tanımından **sonra** yazılmalıdır. Önce yazılırsa tip henüz tanınmaz.
   - `typedef`'i C'yi "Türkçeleştirmek" için (`typedef int tamsayi;`) kullanmak yaygın değildir. Asıl kullanım alanı yapılardır.
 - İfadeler (expressions)
@@ -42,7 +42,7 @@
   - `for(i=0; i<5; i++)` gövdesi 5 kez çalışır, ama karşılaştırma 6 kez yapılır (son karşılaştırma döngüyü bitirir). Algoritma analizinde döngü tekrarı genellikle karşılaştırma sayısı üzerinden hesaplanır.
 - İlişkisel operatörler
   - Sonuç 1 (doğru) veya 0 (yanlış) tam sayısıdır.
-  - Sıfır dışındaki her değer doğru kabul edilir: `if(-5)` çalışır, `while(-1)` sonsuz döngüdür.
+  - Sıfır dışındaki her değer doğru kabul edilir: `if(-5)` çalışır, `while(-1)` sonsuz döngüdür. <!-- BELİRSİZ: Koşuldaki sayı altyazıda "eksi beş, eksi bir" diye geçiyor (00:39:20). Sonuç iki değer için de aynıdır. -->
   - Sayısal analizde sık hata: ondalıklı sayıları `==` ile karşılaştırmak. `while(fark == 0.001)` gibi bir koşul hiçbir zaman beklendiği gibi sağlanmayabilir. Bunun yerine `fabs(beklenen - hesaplanan) < epsilon` gibi bir tolerans kullanılır.
   - Slayt örneği (`int j=0, m=1, n=-1; float x=2.5, y=0.0;`): `j <= m >= n` soldan sağa: `(0 <= 1)` 1, `1 >= -1` 1. Sonuç 1.
 - Mantıksal operatörler ve kısa devre
@@ -58,7 +58,7 @@
   - XOR (`^`): bitler farklıysa 1, aynıysa 0. Şifrelemede (anahtarla veriyi karıştırmada) çok kullanılır. `~` bitleri tersler.
 - Koşul operatörü (`?:`)
   - `z = (x < y) ? x : y;` koşul doğruysa ilk değer, yanlışsa ikinci değer.
-  - Bu örnekte `x == y` durumu ayrıca ele alınmamıştır. Gerekirse operatör iç içe kullanılabilir. Biçim: `v = (x < y) ? A : ((x == y) ? B : C);`.
+  - Bu örnekte `x == y` durumu ayrıca ele alınmamıştır. Gerekirse operatör iç içe kullanılabilir: `v = (x < y) ? x : ((x == y) ? 1 : y);`. Son dal için önce 0 denendi, sonra `y` yazıldı. <!-- BELİRSİZ: Dallar anlatımdan kuruldu (00:53:33-00:54:26). Altyazıdaki "ikisi" büyük olasılıkla "x'i"dir. -->
 - Bellek operatörleri: `*` ve `&`
   - İkili kullanımda `*` çarpma, `&` bit VE'dir. Tekli kullanımda `*p` işaretçinin gösterdiği değer, `&x` değişkenin adresidir (`scanf`'te kullanılır).
 - Kontrol akışı
@@ -67,7 +67,7 @@
   - `switch`: tam sayı (ve `char`, çünkü karakter de bir tam sayıdır) ifadeler üzerinde çalışır. String ve ondalıklı sayı kullanılamaz.
     - Her `case` sonuna `break` konmazsa sonraki case'ler de çalışır (fall-through). Hiçbir case eşleşmezse `default` çalışır.
     - Derste `char c = 'A'` ile `case 65` eşleşti.
-  - **Kural:** `break` yalnızca `switch` içinde kullanılabilir. `continue`, `goto` ve `switch` dışında `break` ödevlerde, laboratuvarda ve sınavlarda kabul edilmez.
+  - **Kural:** Bu derste `break` yalnızca `switch` içinde kullanılır. `continue`, `goto` ve `switch` dışında `break` dilde vardır ve yerine göre gerekebilir, ama algoritma tasarımını bozduğu için kullanılmaz.
   - `while` koşulu baştan yanlışsa hiç çalışmaz. `do-while` en az bir kez çalışır.
   - Boş ifade (null statement): `while((c = getchar()) == ' ');` gövdesi boş bir döngüdür, boşluk dışında bir karakter girilene kadar okur.
   - `for(; i < 5; )` geçerlidir ama okunurluğu bozar. Programlama hileleri değil, herkesin anlayacağı kod yazıyoruz.
@@ -80,8 +80,8 @@
   - Derleme öncesinde makronun geçtiği her yere tanım kopyalanır. Fonksiyon çağrısında olduğu gibi dallanma (jump) ve yığın kullanımı yoktur.
   - Parametreli makrolar:
     - `#define MULT_BY_TWO(a) a+a`: `MULT_BY_TWO(5)` = 10, `MULT_BY_TWO(2*3)` = `2*3+2*3` = 12.
-    - `#define SQR1(x) x*x`: `SQR1(2+3)` = `2+3*2+3` = 11 (25 değil).
-    - `SQR1((2+3))` ve `#define SQR2(x) (x)*(x)` ile `SQR2(2+3)` = 25.
+    - `#define SQR(x) x*x`: `SQR(2*3)` = 36, ama `SQR(2+3)` = `2+3*2+3` = 11 (25 değil).
+    - `SQR((2+3))` ve `#define SQR1(x) (x)*(x)` ile `SQR1(2+3)` = 25.
     - Kural: makro parametrelerini ve makronun tamamını parantez içine alın.
     - `#define MIN(x,y) ((x)<=(y)?(x):(y))`. Dört sayının en küçüğü: `MIN(MIN(2,6), MIN(3,8))` = 2.
   - Makronun avantajları: fonksiyon çağrısı yükü yoktur, tip kısıtı yoktur.
@@ -93,7 +93,7 @@
 
 ## Hocanın Özellikle Vurguladığı Kısımlar
 
-- `break` yalnızca `switch` içinde. `continue`, `goto` ve `switch` dışı `break` kullanan çözümler kabul edilmez.
+- `break` yalnızca `switch` içinde. `continue`, `goto` ve `switch` dışı `break` kullanmayın.
 - `if`, `else`, döngü bloklarında tek satır için bile süslü parantez kullanın.
 - Döngü bitince sayaç değişkeninin son değerine dikkat edin.
 - Ondalıklı sayıları `==` ile karşılaştırmayın, tolerans kullanın.
@@ -106,20 +106,21 @@
 - `m += n + x - y` → `m = m + (n + x - y)`, int'e atanınca kesilir.
 - `for(i=0;i<5;i++)`: gövde 5, karşılaştırma 6 kez.
 - `5 << 1` = 10, `255 >> 3` = 31, `9430 & 5722` = 1106, `9430 | 5722` = 14046.
-- `SQR1(2+3)` = 11, `SQR2(2+3)` = 25, `MULT_BY_TWO(2*3)` = 12.
+- `SQR(2+3)` = 11, `SQR1(2+3)` = 25, `MULT_BY_TWO(2*3)` = 12.
 - `if(j = 0)` hiç çalışmaz, `while(i = 5)` sonsuz döngü.
 
 ## Detaylı Açıklamalar
 
 ### Makro yan etkileri
 
-- Makro argümanı makro içinde iki kez geçiyorsa argümandaki yan etkiler iki kez çalışır. Örnek (derste yazılmadı, `gcc` ile denendi): `int a = 2; int r = SQR2(a++);` satırı `(a++)*(a++)` olur. Bu tanımsız davranıştır. GCC'de r = 6, a = 4 çıktı ve derleyici `-Wsequence-point` uyarısı verdi.
+- Makro argümanı makro içinde iki kez geçiyorsa argümandaki yan etkiler iki kez çalışır. Örnek (derste yazılmadı, `gcc` ile denendi): `int a = 2; int r = SQR1(a++);` satırı `(a++)*(a++)` olur. Bu tanımsız davranıştır. GCC'de r = 6, a = 4 çıktı ve derleyici `-Wsequence-point` uyarısı verdi.
 - `MULT_BY_TWO(a) a+a` dışarıdan parantezsiz olduğu için `3 * MULT_BY_TWO(2)` = `3*2+2` = 8 olur (12 değil). Bu yüzden makronun tamamı da parantez içine alınmalıdır: `#define MULT_BY_TWO(a) ((a)+(a))`.
 
 ### Ders sonrası notlar
 
 - **Kodların kontrolü:** Dersteki örnekler ders sonrasında `gcc` ile derlenip çalıştırıldı. 31.0, `m` = 8, `s` = 2 ve 3, döngü sayıları, bit işlemleri, makro sonuçları ve `MIN(MIN(2,6), MIN(3,8))` = 2 derstekiyle aynıdır.
-- **`SQR1(2+3)` sonucu:** Derste bir an "13 olacaktır" dendi, sonra kod ekranındaki yorumla birlikte 11 olduğu söylendi. Doğrusu `2 + 3*2 + 3` = 11'dir.
+- **`SQR(2+3)` sonucu:** Derste bir an "13 olacaktır" dendi, sonra sınıftan gelen uyarıyla 11 olduğu söylendi. Doğrusu `2 + 3*2 + 3` = 11'dir.
+- **`n %= y + m` satırı:** Slayt örneklerindeki bu satır `float y` ile derlenmez. `%` yalnız tam sayı operand alır, `gcc` "invalid operands to binary %" hatası verdi. <!-- BELİRSİZ: Slaytın bu satırları ve değişken tipleri altyazıda okunmuyor, slaytta tipler farklı olabilir. -->
 - **Kalan operatöründe negatif sayılar:** Derste "kalanın işareti implementasyona bağlı" dendi. Bu C89 için doğruydu. C99'dan beri tam sayı bölmesi sıfıra doğru kesilir ve kalan bölünenin işaretini alır: `-7 % 3` = -1, `7 % -3` = 1, `-7 / 3` = -2.
 - **Hazır makrolar nerede?** Derste `__LINE__` gibi makroların `stdio.h` içinde olduğu söylendi. Bu makrolar hiçbir başlık dosyasında değildir. Derleyicinin ön işlemcisi tarafından önceden tanımlanır (predefined), `#include` olmadan da çalışır.
 - **`MIN(x,y,z)` tanımı:** Ekrandaki kodda `#define MIN(x,y)` ve `#define MIN(x,y,z)` aynı isimle yazılmıştı. C'de makrolar aşırı yüklenemez (overload). Aynı isim yeniden tanımlanırsa uyarı veya hata alınır. Üç sayı için ayrı bir isim kullanın. Çalışma sorusunun bir cevabı (derste yazılmadı, test edildi): `#define MIN3(x,y,z) MIN(MIN(x,y),z)`, `MIN3(3,1,7)` = 1.

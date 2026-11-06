@@ -2,7 +2,7 @@
 
 ## Genel Konular
 
-- Dönemin son dersi (28 Mayıs 2025). Dersi dersin hocası Dr. Ahmet Elbir online anlatıyor. Konular: çok iş parçacıklı (multi-thread) programlama, POSIX thread (`pthread`) kütüphanesi ve `void*` ile genel (generic) fonksiyonlar.
+- Dersi dersin hocası Dr. Ahmet Elbir anlatıyor. Konular: çok iş parçacıklı (multi-thread) programlama, POSIX thread (`pthread`) kütüphanesi ve `void*` ile genel (generic) fonksiyonlar.
 - Önceki dersin konusu: çok dosyalı programların derlenmesi, `make` ve `makefile`.
 - Tek akışlı ve çok akışlı programlar
   - Şimdiye kadarki programlar tek akışlıdır: `main`'den başlar, bir fonksiyona gidilir, o bitince geri dönülür. Herhangi bir anda yalnızca bir fonksiyon çalışır.
@@ -35,7 +35,7 @@
   - Değer döndürme: `pthread_exit(&ret1);` ile iş parçacığı sonlanırken bir adres döndürür. `ret1` örnekte global değişkendir.
   - `pthread_join(tid[0], (void**)&ptr[0]);`: `main`, iş parçacığının bitmesini bekler ve döndürdüğü değeri alır. Örnekte ilk iş parçacığından 100, ikinciden 200 döner.
   - `main` önce biterse program kapanır ve diğer iş parçacıkları işlerini yarıda bırakır. Bu yüzden iş parçacıklarının `main`'e "katılması" (join) gerekir.
-  - `join` iş parçacıklarının bitiş sırasını garanti eder (önce 0, sonra 1…). Ama çalışma sırasında hangi iş parçacığının hangi satırının önce çalışacağını belirlemez.
+  - `join` yalnızca `main`'in iş parçacıklarını hangi sırayla beklediğini belirler. İş parçacıklarının bitiş sırasını ve çalışma sırasında hangi satırın önce çalışacağını belirlemez (düzeltme için "Ders sonrası notlar"a bakın).
   - Örnek 3: 5 iş parçacığı bir döngüde oluşturuluyor ve her birine sıra numarası `(void*)t` olarak gönderiliyor. Fonksiyon içinde `(long)` ile geri çevriliyor. "Hello world" mesajlarının sırası her çalıştırmada farklı olabilir.
   - İş parçacıkları aynı fonksiyonu çalıştırmak zorunda değildir. Biri `f1`, diğeri `f2` olabilir. İkisi de `void*` döndürmelidir.
 - Genel (generic) fonksiyonlar (Stanford CS107 slaytları üzerinden)
@@ -48,16 +48,15 @@
   - Dizinin ilk ve son elemanını değiştirme (`swap_ends`):
     - `void swap_ends(void *arr, size_t nelems, size_t elem_bytes) { swap(arr, (char*)arr + (nelems - 1) * elem_bytes, elem_bytes); }`
     - `void*` üzerinde adres aritmetiği yapılamadığı için dizi `char*`'a çevrilir ve eleman boyutuyla çarpılır.
-    - Çağrı: `int nums[] = {5, 2, 3, 4, 1}; swap_ends(nums, sizeof(nums) / sizeof(nums[0]), sizeof(nums[0]));`.
+    - Çağrı: `int nums[] = {5, 2, 3, 4, 1}; swap_ends(nums, sizeof(nums) / sizeof(nums[0]), sizeof(nums[0]));`. <!-- BELİRSİZ: Dizinin içeriği altyazıda okunmuyor, {5, 2, 3, 4, 1} doğrulanamadı. -->
     - Dizinin eleman boyutu fonksiyon içinde `sizeof` ile bulunamaz, çünkü `void*` ile tür bilgisi kaybolur. Bu yüzden ayrı bir parametre olarak alınır.
   - Genel kabarcık sıralaması (bubble sort):
     - Dizi `void*`, eleman sayısı ve eleman boyutu alınır. Karşılaştırma için bir fonksiyon işaretçisi (artan/azalan, ya da yapılarda yaş, kilo gibi bir alan) verilir. Yer değiştirme için genel swap kullanılır.
     - Bir tur boyunca hiç yer değiştirme yapılmazsa dizi sıralıdır, algoritma erken bitirilebilir. Bunun için bir bayrak (`swapped`) değişkeni kullanılır. Örnek: 2, 5, 4, 6, 7 dizisi bir turda sıralanır, ikinci turda hiç değişiklik olmaz ve durulur.
   - Derste gösterilen `qsort` da bu şekilde geneldir. Diğer uygulamalar: dizi döndürme (rotation), genetik algoritmada çaprazlama.
   - `void*` güçlüdür ama tehlikelidir: tür denetimi yoktur.
-- Sınav ve kapanış
-  - Hoca genel bubble sort yazdırmayacağını, çünkü sınavın test olacağını söyledi. Ama işaretçilerin birbirine dönüştürülmesi ve `sizeof` ile kullanımıyla ilgili ekran çıktısı soruları sorulabilir.
-  - Gelecek hafta bayram tatili, ondan sonraki hafta finaller. Sınav yerlerini sınavdan bir gün önce bölüm sayfasından kontrol edin. Başka sınıfta sınava girilirse kağıt başka hocaya gider ve "sınava girmedi" görünebilir, finalde bunu düzeltmek zordur.
+- Sınav vurgusu
+  - Genel bubble sort yazdırılmayacak. Ama işaretçilerin birbirine dönüştürülmesi ve `sizeof` ile kullanımıyla ilgili ekran çıktısı soruları sorulabilir.
 
 ## Hocanın Özellikle Vurguladığı Kısımlar
 
@@ -66,7 +65,6 @@
 - İş parçacığı fonksiyonu `void*` alıp `void*` döndürür.
 - `void*` dereferans edilemez ve üzerinde aritmetik yapılamaz. `char*`'a çevirip eleman boyutuyla çarpın, kopyalama için `memcpy` kullanın.
 - Final sorularında `void*`, dönüştürme ve `sizeof` ile ilgili ekran çıktısı soruları olabilir.
-- Sınava ilan edilen sınıfta girin.
 
 ## Kısa Tekrar Notları
 
@@ -104,6 +102,7 @@ void bubble(void *arr, size_t n, size_t eb, int (*cmp)(const void *, const void 
 ### Ders sonrası notlar
 
 - **Kodların kontrolü:** Genel `swap`, `swap_ends`, genel kabarcık sıralaması ve slayttaki `pthread_join` örneği gcc ile (`-pthread`) derlenip denendi. `swap_ends` ile `{5, 2, 3, 4, 1}` dizisi `{1, 2, 3, 4, 5}` oldu. İki iş parçacığından 100 ve 200 değerleri alındı. Beş iş parçacıklı "Hello" örneğinde mesajlar bir denemede 1, 2, 0, 4, 3 sırasıyla geldi. Sıranın önceden bilinemeyeceğini doğrular.
+- **`join` ve bitiş sırası:** Derste `join`'in iş parçacıklarının "sırayla tamamlanmasını" sağladığı söylendi (00:50:01-00:50:14). Doğrusu: `join` yalnız `main`'in bekleme sırasını belirler. Denemede 0. iş parçacığı 2 saniye uyurken 1. iş parçacığı önce bitti, `main` yine önce 0.'nın, sonra 1.'nin `join`'inden döndü (gcc ile denendi).
 - **`char`'ın boyutu:** Derste bir an "karakter olsa 8 bayt" dendi. `char` her zaman 1 bayttır. 64 bit sistemde 8 bayt olan işaretçilerdir (`void*`, `char*`).
 - **`size_t`:** Derste "integer türünde" dendi. Daha kesin olarak `size_t` işaretsiz (unsigned) bir tam sayı türüdür, boyut ve sayaç tutmak için kullanılır. `printf` ile `%zu` biçimiyle yazdırılır.
 - **Thread kimliği:** Derste kimliğin genellikle pozitif bir tam sayı olduğu söylendi. POSIX'te `pthread_t` opak (iç yapısı tanımlanmamış) bir türdür. Bu yüzden iki kimlik `==` ile değil `pthread_equal` ile karşılaştırılır. Linux'ta pratikte bir `unsigned long`'dur.

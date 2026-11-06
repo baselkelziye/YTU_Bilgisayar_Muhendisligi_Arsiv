@@ -2,7 +2,7 @@
 
 ## Genel Konular
 
-- Bu kayıt "Yapısal Programlama Uygulama-3"tür (21.04.2025). Uygulamayı bir araştırma görevlisi yaptı. Ahmet Hoca derse yetkiyi verip ayrıldı.
+- Bu kayıt "Yapısal Programlama Uygulama-3"tür. Uygulamayı büyük olasılıkla bir araştırma görevlisi yaptı. <!-- BELİRSİZ: Unvan altyazıda geçmiyor, yalnız "hocam" diye hitap ediliyor (00:04:50). --> Ahmet Hoca derse yetkiyi verip ayrıldı.
 - Kaydın sesi çok düşük ve anlaşılmaz olduğu için bu özet büyük ölçüde ekran paylaşımındaki koddan çıkarıldı.
 - Problem: bir şirketin çalışan bilgilerini saklayan bir veritabanı. Menü üzerinden çalışan ekleme, isme göre arama, kayıt silme, tüm kayıtları listeleme ve sonunda bütün dinamik belleği serbest bırakma işlemleri yapılacak. Aynı işlev iki farklı veri yapısıyla yazılıp karşılaştırılıyor: dinamik dizi ve bağlı liste (linked list).
 - Struct'lar
@@ -61,8 +61,7 @@
   - `#include <stdio.h>`: derleyicinin kendi dizininde aranır. `#include "menu.h"`: önce programın bulunduğu dizinde aranır.
   - Include koruması: `#ifndef MENU_H`, `#define MENU_H`, …, `#endif`. Aynı başlık birden fazla kez dahil edilirse tanımlar tekrar etmesin diye kullanılır.
   - Makro: `#define MENU printf(...); printf(...);`. Satır sonundaki `\` makronun bir sonraki satırda devam ettiğini gösterir. Derlemeden önce (önişlemci aşamasında) `MENU` yazan yere bu ifade kopyalanır.
-  - `calculation.h` içinde `#define topla(x, y) ((x) + (y))` gibi makrolar. `header.c` dosyası `menu.h` ve `calculation.h`'yi dahil ederek bir hesap makinesi menüsü kurar (`switch` ile toplama, çıkarma, çarpma). Böylece programlar birbirinden bağımsız dosyalara ayrılır.
-- Duyuru: Ahmet Hoca'nın (online) dersinin cuma günü yapılacağı söylendi.
+  - `calculation.h` içinde `#define topla(x, y) ((x) + (y))` gibi makrolar. <!-- BELİRSİZ: Altyazıda "x artı y" deniyor (01:28:37), parantezli yazım doğrulanamadı. --> `header.c` dosyası `menu.h` ve `calculation.h`'yi dahil ederek bir hesap makinesi menüsü kurar (`switch` ile toplama, çıkarma, çarpma). Böylece programlar birbirinden bağımsız dosyalara ayrılır.
 
 ## Hocanın Özellikle Vurguladığı Kısımlar
 
@@ -86,7 +85,7 @@
 ### Ders sonrası notlar
 
 - **Kaydın anlaşılırlığı:** Ses çok düşük ve dağınık olduğu için altyazının büyük kısmı anlamsızdır. Kod ve akış ekran görüntülerinden doğrulandı. Altyazıdaki "çarpı çarpı çarpı…" diye kırpılmış tekrar (yaklaşık 00:26:17) `initNewPerson` içinde `malloc(sizeof(PERSON))` satırının yazıldığı ana denk gelir; ekranda kod okunabildiği için içerik kaybı yoktur.
-- **`main`'deki giriş dizileri:** Ekranda ilk sürümde `int Name[100], jobName[100];` yazıyordu ve derleyici "incompatible pointer type" uyarısı verdi. İsimler için `char Name[100], jobName[100];` olmalıdır; bağlı liste sürümünde böyle düzeltildi.
+- **`main`'deki giriş dizileri:** Ekranda ilk sürümde `int Name[100], jobName[100];` yazıyordu ve derleyici "incompatible pointer type" uyarısı verdi. gcc 15.2 bu durumu varsayılan ayarda derleme hatası sayar, `-std=gnu89` ile uyarı verir (denendi). İsimler için `char Name[100], jobName[100];` olmalıdır; bağlı liste sürümünde böyle düzeltildi.
 - **`realloc` kullanımı:** `AddPerson`'da sonuç doğrudan `Data`'ya atanıyor ve `NULL` kontrolü yapılmıyor. Ders 6'da anlatıldığı gibi önce geçici bir işaretçiye alıp kontrol etmek daha güvenlidir.
 - **`SearchDatabase`'in dönüş tipi:** İlk yazıldığında `void` tanımlanmış ama `return i;` içeriyordu; sonra `int` olarak düzeltildi. İndis döndüren fonksiyonun tipi `int` olmalıdır.
 - **Dizide silmede iki hata:** Ekrandaki ilk sürümde (1) kişi bulunamadığında "Person Not Found!" yazıldıktan sonra fonksiyondan çıkılmıyor, `Data[-1]` serbest bırakılmaya çalışılıyordu; `return` eklenmelidir. (2) Kaydırma döngüsü `for (i = pos; i < peopleCount; i++) Data[i] = Data[i + 1];` biçimindeydi; son adımda `Data[peopleCount]` okunur, bu kayıtlı bir eleman değildir. Sınır `i < peopleCount - 1` olmalıdır. Düzeltilmiş hâli (derste yazılmadı) gcc ve AddressSanitizer ile test edildi: "Ali, Ayse, Veli" eklenip "Ayse" silinince "Ali, Veli" kaldı, olmayan isim için "Bulunamadi" yazıldı, bellek hatası çıkmadı.
@@ -96,6 +95,6 @@
 - **Son elemanı silinen yere taşıma:** Bu yöntem kaydırma yapmadığı için $O(1)$'dir ama elemanların sırası değişir. Kayıtların sırası önemliyse kullanılmamalıdır.
 - **Bağlı listede düğümün kendisi:** Silmede `FreePerson(current->Person)` yalnızca kişi verisini serbest bırakır. Düğüm de `malloc` ile oluşturulduğu için ayrıca `free(current)` çağrılmalıdır (ekranda bu satır yazılmaya başlanmıştı).
 - **Makrolarda parantez:** `#define topla(x, y) x + y` gibi parantezsiz bir makro `2 * topla(3, 4)` ifadesinde `2 * 3 + 4 = 10` verir. Doğrusu `((x) + (y))` biçiminde parantezli yazmaktır; o zaman sonuç 14 olur.
-- **Uygulamayı yapan kişi:** Kayıtta asistanın adı net anlaşılamadığı için özette adı verilmedi.
+- **Uygulamayı yapan kişi:** Kayıtta adı net anlaşılamadığı için özette adı verilmedi.
 
 * **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

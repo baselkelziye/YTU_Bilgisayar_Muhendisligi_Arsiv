@@ -3,9 +3,6 @@
 ## Genel Konular
 
 - Dersin ilk yarısı uygulama: Arş. Grv. Muhammet Taha Gökcan iki soru çözdü. İkinci yarıda Dr. Ahmet Elbir string ve matris konularıyla devam etti.
-- Duyurular
-  - Gelecek hafta laboratuvarda, bu haftaya kadarki ve bu hafta işlenecek konulardan quiz tarzında bir soru verilecek ve çözümün yüklenmesi istenecek. Uyulması gereken kurallar ayrıca duyurulacak. Bu haftaki uygulama laboratuvara hazırlıktır.
-  - Bölümün kurucularından Yahya Hoca'nın vefatı nedeniyle ertesi günkü Sayısal Analiz dersi yapılmadı. Telafisi online yapılacak.
 - Asistanın sesi kayıtta yer yer kesik ve anlaşılmaz. Kod ayrıntıları ekran görüntülerinden alındı.
 - Soru 1: Pisagor üçlüsü
   - Verilen bir dizide $a^2 + b^2 = c^2$ eşitliğini sağlayan bir üçlü olup olmadığını bulup ekrana yazdıran program. Örnek dizi: 3, 13, 5, 6, 4, 12, 8.
@@ -63,7 +60,6 @@
   - `arr[1][2]` ile `*(*(arr + 1) + 2)` aynıdır: `arr + 1` ikinci satıra gider, `*(arr+1)` o satırın başlangıç adresidir, `+ 2` iki eleman ilerler, dıştaki `*` değeri getirir.
   - İlk değer verme: `int exap[5][3] = {{1,2,3}, {4}, {5,6,7}};` her iç süslü parantez bir satırdır, eksik elemanlar 0 olur. `int exap[5][3] = {1,2,3,4,5,6,7};` ise elemanları üçer üçer satırlara yerleştirir: 1 2 3 / 4 5 6 / 7 0 0, kalan satırlar 0.
   - İşaretçi dizisi: `char *p[5];` beş işaretçiden oluşan bir dizidir. İşaretçinin işaretçisi: `int **r;`.
-- Ders planı: çarşamba günü dinamik bellek yönetimi (dynamic memory allocation).
 
 ## Hocanın Özellikle Vurguladığı Kısımlar
 
@@ -72,7 +68,6 @@
 - Matrisi fonksiyona gönderirken sütun boyutunu mutlaka yazın.
 - Dizi zaten bir adres olduğu için `scanf("%s", dizi)` içinde `&` kullanılmaz.
 - Değişkenleri blok başında tanımlayın.
-- Laboratuvar sorusuna hazırlıklı gelin.
 
 ## Kısa Tekrar Notları
 
@@ -93,9 +88,10 @@
 ### Ders sonrası notlar
 
 - **Kodların yeniden kurulması:** Ekran görüntülerinden alınan kodlar yeniden yazılıp `gcc` ile çalıştırıldı. Pisagor programı örnek dizide iki üçlü bulur: (3, 5, 4) ve (13, 5, 12). Örüntü eşleme ve matris içinde arama kodları doğru çalışır. `fillMatrix` + `search` ile 5×5 matriste "BC" araması doğru konumları buldu. Örüntü sütun sayısından uzunsa `bound` negatif olur, döngü hiç çalışmaz ve "not found" yazılır.
-- **Konvolüsyon slaydındaki çıktı:** Slayttaki 4×4 girdi (1-16) ve çekirdek `[[1,0,1],[0,-1,1],[-2,1,1]]` için çıktı 2, 2, 2, 2 olarak gösteriliyor. Kesin hesap `[[8, 10], [16, 18]]` verir. Sol üst eleman: $1 + 3 - 6 + 7 - 18 + 10 + 11 = 8$. Çekirdek katsayılarının toplamı 2 olduğu ve girdi doğrusal arttığı için çıktı elemanlarının hepsi eşit olamaz. Slayttaki değerler temsilidir, kendi kodunuzu bu değerlerle sınamayın.
+- **Konvolüsyon slaydındaki çıktı:** Slayttaki 4×4 girdi (1-16) ve çekirdek `[[1,0,1],[0,-1,1],[-2,1,1]]` için çıktı 2, 2, 2, 2 olarak gösteriliyor. Kesin hesap `[[8, 10], [16, 18]]` verir. Sol üst eleman: $1 + 3 - 6 + 7 - 18 + 10 + 11 = 8$. Çekirdek katsayılarının toplamı 2 olduğu ve girdi doğrusal arttığı için çıktı elemanlarının hepsi eşit olamaz. Slayttaki değerler büyük olasılıkla temsilidir, kendi kodunuzu bu değerlerle sınamayın. <!-- BELİRSİZ: Çekirdeğin orta elemanı altyazıda "altı ile iki" diye geçiyor (00:36:02). Bu an için kare yok, -1 doğrulanamadı. Orta eleman 2 olsaydı çıktı [[26, 31], [46, 51]] olurdu (gcc ile hesaplandı). Slayttaki 2, 2, 2, 2 çıktısı da altyazıda geçmiyor. -->
 - **`printf` yerine `scanf`:** Ekranda bir süre `printf("%d", &kernel_size);` satırı görülüyor. Çekirdek boyutunu okumak için `scanf("%d", &kernel_size);` olmalıdır. `printf` değeri okumaz, `kernel_size` değişkeni rastgele değerle kalır.
 - **Versiyon 3 önerisi hakkında uyarı:** Derste "eşleşmeyen karakterden sonrasına atlamak çok daha doğru olur" dendi. Bu basit atlama bazı durumlarda eşleşmeyi kaçırır. Örnek (derste yazılmadı, test edildi): metin "AAAB", örüntü "AAB". İndis 0'dan "AA" eşleşir, 'A' ile 'B' eşleşmez. Eşleşmeyen konumun ötesine atlanırsa indis 1'deki gerçek eşleşme kaçar (doğru cevap 1, atlamalı yöntem -1 verir). Güvenli bir şekilde ileri atlamak için örüntünün kendi içindeki tekrarları hesaba katan Knuth-Morris-Pratt (KMP) algoritması kullanılır.
+- **Geri alma miktarı:** Derste bir yerde "match etmeyen karakter sayısı kadar" geri alınacağı söylendi (01:35:50). Kodda `ptr1`, eşleşen karakter sayısının bir eksiği kadar (`matchCount - 1`) geri alınır. Hiç eşleşme yoksa `ptr1` bir ileri gider, yani yine sonraki başlangıca gelinir (gcc ile denendi: `indexOfV1("ABCABAC", "ABAC")` 3, `indexOfV1("AAAB", "AAB")` 1 döndürdü).
 - **`arr + 1` işaretçinin işaretçisi mi?** Derste `arr + 1` için "işaretçinin işaretçisi" dendi. Teknik olarak `int arr[3][3]` için `arr + 1` tipi `int (*)[3]`'tür: "3 elemanlı int dizisini gösteren işaretçi". `int **` değildir. Bu yüzden statik bir matris `int **` parametreli bir fonksiyona doğrudan gönderilemez. Denemede `sizeof(*(arr+1))` 12 bayt (bir satır), `sizeof(**(arr+1))` 4 bayt verdi.
 - **`rand` ve `srand`:** `srand` çağrılmadan `rand` her çalıştırmada aynı sayı dizisini üretir. Farklı matrisler için `srand(time(NULL));` kullanılır (`<time.h>`).
 - **`scanf("%s")` güvenliği:** `%s` boşlukta durur ve dizi boyutunu kontrol etmez. Uzun girişte dizi taşar. `char pattern[10]` için `scanf("%9s", pattern)` yazmak daha güvenlidir.

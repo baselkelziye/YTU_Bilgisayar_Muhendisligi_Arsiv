@@ -2,7 +2,6 @@
 
 ## Genel Konular
 
-- Bu saat normalde uygulama saati. Konulardan geri kalmamak için birkaç hafta ders olarak kullanılacak. Ders notları ve derste yazılan kodlar paylaşılan linkte.
 - Bilgisayar mimarisi (kısa tekrar)
   - Von Neumann mimarisi: bir işlemci ve bir ana bellek vardır. Programın komutları ve verileri aynı bellekte durur. Ayrıca giriş/çıkış birimleri vardır.
   - İşlemcide aritmetik-mantık birimi (ALU) komutları yürütür (execution). Yazmaçlar (register) işlemci içindeki küçük kayıt alanlarıdır.
@@ -38,7 +37,7 @@
   - Örtük (implicit): derleyici kendiliğinden yapar. `int x = 1; double f = 2.3; double y = x + f;` satırında `x` önce 1.0'a dönüşür. Kodun okunuşundan fark edilmez, bu yüzden daha tehlikelidir.
   - Açık (explicit): `(double)x`. Cast operatörünün önceliği toplamadan yüksektir ve sağdan sola birleşir.
   - `char` (1 bayt) değeri `int` (4 bayt) içine konursa kayıp olmaz. Tersi kayıplıdır.
-  - `double` değeri `int`'e atanınca ondalık kısım atılır (truncation), yuvarlama yapılmaz: `int t = (int)3.3;` 3 olur.
+  - `double` değeri `int`'e atanınca ondalık kısım atılır (truncation), yuvarlama yapılmaz. Derste `int t = (int)z;` denendi ve `t` 2 çıktı: "ikiyi aldı, 0.3'lü kısmı attı". `z` 3.3 olsaydı `t` 3 olurdu (gcc ile denendi). <!-- BELİRSİZ: Java denemesindeki z değeri altyazıda okunmuyor (00:35:30-00:36:00). Hocanın sözünden büyük olasılıkla 2.3'tür. -->
   - Biçim belirteci yanlışsa (ör. `double` için `%d`) anlamsız sayılar görülür.
 - Virgül operatörü
   - Soldan sağa çalışır, ifadenin değeri en sağdaki değerdir.
@@ -46,7 +45,7 @@
   - Ondalık sayılarda virgül yerine nokta kullanın: `2,8` C'de 2.8 değildir.
 - Arttırma operatörleri
   - `x++` (sonek): ifadenin sonunda arttırılır. `++x` (önek): ifadenin başında arttırılır.
-  - Slayttaki örnek: `int x = 3;` iken `y = ++x + 3;` önce x 4 olur, y 7 olur. `z = x++ + 3;` önce z = x + 3 hesaplanır, sonra x bir artar.
+  - Slayttaki örnek: `int x = 3;`, ardından `x++;` ve `++x;` satırları x'i 5 yapar. `y = ++x + 3;` satırında önce x 6 olur, y 9 olur. `z = x++ + 3;` satırında z, x'in eski değeriyle hesaplanır (z = 9), sonra x 7 olur (gcc ile denendi). <!-- BELİRSİZ: Slayt kodu altyazıda yalnız sözlü geçiyor ("3 oldu, 4 oldu, 5 oldu, 6 olacak", 00:43:33-00:43:39). İlk iki arttırma satırı bu anlatımdan kuruldu. -->
   - `printf("%d %d", ++j, --k)` önce değerleri değiştirir: 6 ve 4. `printf("%d %d", j++, k--)` eski değerleri yazar: 5 ve 5, sonraki satırda güncel değerler görülür.
 - İlişkisel ve mantıksal operatörler
   - Sonuç doğruysa 1, yanlışsa 0 üretir. `if` bu değere göre akışı yönlendirir.
@@ -61,12 +60,12 @@
 - Tam sayı bölmesi
   - İki tam sayı bölünürse sonuç tam sayıdır, ondalık kısım atılır: `16/2` 8, `16/3` 5, `15/2` 7 (7.5 yuvarlanıp 8 olmaz).
   - Operandlardan biri ondalıklıysa sonuç ondalıklı olur: `15/2.0` ve `15.0/2` 7.5. `(double)15/2` de 7.5 verir, çünkü cast bölmeden önce yapılır.
-  - `(double)(15/2)` ise önce tam sayı bölmesi yapar: 7.0.
+  - `(double)(15/2)` ise önce tam sayı bölmesi yapar: 7.0 (gcc ile denendi). Derste ekranda 0.0 görüldü. Bu, büyük olasılıkla `printf("%lf", 15/2)` gibi `int` bir değerin `%lf` ile yazdırılmasından gelir: gcc bu satır için uyarı verdi ve 0.000000 yazdı. <!-- BELİRSİZ: 0.0 veren satırın tam yazımı altyazıda okunmuyor (00:53:05). -->
   - Slayt örneği: `b = 15/2;` ile `%d` 7, `%3d` "  7", `%03d` "007". `c = 15.3; d = c/3;` ile `%3.2f` 5.10.
 - Atama: sol değer ve sağ değer
   - Atamada her zaman sağdaki değer sola kopyalanır.
   - Sol taraf (L-value) yalnızca değişken olabilir. Sağ taraf (R-value) değişken, sabit literal (3, 5) veya sabit (const) olabilir. `5 = answer` veya sol tarafta operatör kullanmak hatalıdır.
-- Kapsamlı örnek (`hafta2_impl_expl_cast_operators.c`)
+- Kapsamlı örnek (`hafta2_impl_expl_cast_operators.c`) <!-- BELİRSİZ: Dosya adı altyazıda geçmiyor, kaynağı doğrulanamadı. -->
   - `printf("%d %f", -3/4, -3/4.0)` 0 ve -0.75 yazar.
   - `-3/4 + 2.5` 2.5'tir (tam sayı bölmesi 0 verir). `-3/4.0 + 2.5` 1.75'tir.
   - `1 + 2.5` 3.5'tir: küçük tip büyük tipe dönüşür.
@@ -74,7 +73,7 @@
   - `float f = 15; int j = 5;` ile `j + f + 2.5` ifadesi `%2.2f` ile 22.50 yazar.
   - `j = j + f + 2.5;` sonucu 22 olur (23 değil, kesilir). `j = 2.5;` 2, `j = 999.888888;` 999.
   - `INT_MAX` $2^{31}-1$'dir. İkiye tümleyende sıfır tek ve pozitif taraftadır, bu yüzden pozitif taraf bir eksik biter.
-  - `f = k/j` (k=3, j=2) 1.0, `f = (float)k/j` 1.5.
+  - `f = k/j` (k=3, j=2) 1.0, `f = (float)k/j` 1.5. <!-- BELİRSİZ: Altyazıda yalnız (float)k/j ve 1.5 geçiyor (01:33:15). f = k/j satırı doğrulanamadı, 1.0 sonucu gcc ile denendi. -->
 - İkiye tümleyen (two's complement)
   - Negatif sayı bulmak için bitler terslenir (birler tümleyeni, one's complement), sonra 1 eklenir.
   - Örnek: 86 = `1010110`. -86 için terslenip 1 eklenir: son bayt `10101010`, kalan bitler hep 1.
@@ -106,7 +105,7 @@
 - `15/2` = 7, `15/2.0` = 7.5, `(double)15/2` = 7.5, `(int)3.9` = 3.
 - `return 2,8,7;` 7 döndürür.
 - `%03d` sıfırla doldurur, `%.2f` iki ondalık basamak.
-- `enum {A=3, B, C, D=-6, E, F=10, G}` → 3, 4, 5, -6, -5, 10, 11.
+- `enum {A=3, B, C, D=-6, E, F=10, G}` → 3, 4, 5, -6, -5, 10, 11. <!-- BELİRSİZ: Slayttaki enum adları altyazıda okunmuyor, harfler temsilîdir. Değerler 01:59:19-01:59:40 arasında geçiyor. -->
 
 ## Detaylı Açıklamalar
 
@@ -124,8 +123,8 @@
 - **Bildirim ve tanım:** Derste "değer atanmayan `int x;` yalnızca bildirimdir, değer atanınca tanım olur" dendi. C'de fonksiyon içindeki `int x;` hem bildirim hem tanımdır: bellek ayrılır, sadece başlangıç değeri yoktur (içinde rastgele değer olabilir). Yalnızca bildirim örneği `extern int x;` veya bir fonksiyon prototipidir. `int x = 5;` ilk değer verilmiş (initialized) tanımdır.
 - **Başlık dosyaları:** Başlık dosyaları fonksiyonların gövdesini değil, bildirimlerini (prototiplerini) içerir. Gövdeler derlenmiş kütüphanelerdedir ve bağlama (linking) aşamasında programa eklenir.
 - **`printf` çıkışı:** `printf` standart girişe değil standart çıkışa (stdout) yazar.
-- **`%N1.N2f` biçimi:** N1, virgülden önceki basamak sayısı değil, alanın **toplam en küçük genişliğidir** (nokta ve ondalık basamaklar dahil). Sayı daha uzunsa kesilmez. Örnek: `printf("%2.3f", 4524.3659974)` ve `%8.3f` ikisi de "4524.366" yazar. `%10.3f` "  4524.366", `%010.3f` "004524.366" yazar. Önüne sıfır koymak için `0` bayrağı gerekir.
-- **Sonek arttırma ve performans:** Derste "`x++` assembly seviyesinde daha hızlı" dendi. Tam sayı tipleri için derleyici `x++` ve `++x`'i (sonucu kullanılmadığında) aynı koda çevirir. Bir fark varsa kavramsal olarak `++x` geçici kopya gerektirmediği için daha basittir. `for` döngüsünde hangisini kullandığınız sonucu değiştirmez.
+- **`%N1.N2f` biçimi:** N1, virgülden önceki basamak sayısı değil, alanın **toplam en küçük genişliğidir** (nokta ve ondalık basamaklar dahil). Sayı daha uzunsa kesilmez. Örnek: `printf("%2.3f", 4524.3659974)` ve `%8.3f` ikisi de "4524.366" yazar. `%10.3f` "  4524.366", `%010.3f` "004524.366" yazar. Önüne sıfır koymak için `0` bayrağı gerekir. <!-- BELİRSİZ: Örnek sayı altyazıda "74425366" diye geçiyor (00:48:57). 4524.3659974 doğrulanamadı, çıktılar bu sayıyla gcc'de denendi. -->
+- **Sonek arttırma ve performans:** Büyük olasılıkla derste `x++`'ın assembly seviyesinde daha hızlı olduğu söylendi. <!-- BELİRSİZ: Bu söz ve for döngüsü notu altyazıda bulunamadı. --> Tam sayı tipleri için derleyici `x++` ve `++x`'i (sonucu kullanılmadığında) aynı koda çevirir (`gcc -O0 -S` ile denendi). Bir fark varsa kavramsal olarak `++x` geçici kopya gerektirmediği için daha basittir. `for` döngüsünde hangisini kullandığınız sonucu değiştirmez.
 - **IEEE 754 üssü:** Sayı ikilik tabanda normalize edilir: üs 10'un değil 2'nin kuvvetidir. Örnek: $0.15625 = 1.01_2 \times 2^{-3}$. Tek duyarlıkta üs alanına $-3 + 127 = 124$ yazılır.
 - **ASCII aralığı:** Standart ASCII 7 bittir (0-127). 128-255 arası genişletilmiş (extended) kod sayfalarıdır ve sisteme göre değişir.
 - **Boolean:** C99'dan beri `_Bool` tipi ve `<stdbool.h>` ile `bool`, `true`, `false` vardır. Ders kapsamında 0/1 kullanılır.

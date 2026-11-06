@@ -3,7 +3,6 @@
 ## Genel Konular
 
 - Ders, dinamik bellekle matris çarpımı örneğiyle başlar. Ardından fazla parametreli fonksiyonların sorunları, eski bir alışveriş sepeti örneği, oy sayma algoritmaları ve polinomların dizide tutulması işlenir. Son bölümde struct'lara giriş yapılır.
-- Bu grup register, static, extern depolama sınıflarını işlemişti. Diğer grup işlememiş.
 - Dinamik matris çarpımı
   - Fonksiyonlar: `int **create_matrix(int m, int n)`, `void fill_matrix(int **matrix, int m, int n)`, `void print_matrix(...)`, `int **multiply_matrices(int **m1, int m, int n, int **m2, int k, int l)`.
   - `fill_matrix` neden `void`? Matris zaten oluşturulmuş, işaretçisi parametre olarak geliyor. Aynı işaretçiyi geri döndürmek anlamsızdır.
@@ -15,7 +14,7 @@
   - Çarpım üç iç içe döngüyle yapılır: `m3[i][j] += m1[i][x] * m2[x][j]`, $i < m$, $j < l$, $x < n$.
   - İki vektörün skaler çarpımını yapan yardımcı bir fonksiyonla (`multiply_array(a1, a2, n)`) yazmak denendi. İlk denemede sonuç yanlış çıktı: `m1[i]` bir satırdır, ama `m2`'nin sütunu bellekte bitişik değildir, bir satır gibi gönderilemez. Çözüm: `m2`'nin $j$. sütununu geçici bir diziye (`tmp`) kopyalayıp onu göndermek.
   - Karmaşıklık: en dış döngü $m$, orta $l$, içte kopyalama $n$ + çarpım $n$ = $2n$. Kare matris için $2n^3$. Sabit katsayılar ihmal edilir, yine $O(n^3)$. "$n$ yerine $2n$ olması çok bir şey değiştirmez, $n$'i $n^2$ yapmak ayrı meseledir."
-- `getopt`: komut satırı seçeneklerini (`-a`, `-b`…) ayrıştırıp `switch` ile işlemeyi sağlar. Linux'ta çalışır, sınavda sorulmayacak. Örnek olarak `ls`, `dir /s` gibi komutların parametreleri gösterildi.
+- `getopt`: komut satırı seçeneklerini (`-a`, `-b`…) ayrıştırıp `switch` ile işlemeyi sağlar. Hoca bunun "aslında Linux üzerinde yapılmış" olduğunu söyleyip Windows'ta denedi. Sorulacak bir konu olmadığını da belirtti. Örnek olarak `ls`, `dir /s` gibi komutların parametreleri gösterildi. <!-- BELİRSİZ: Windows denemesinin sonucu altyazıda net değil (00:45:12-00:45:25). -->
 - İyi programlama alışkanlığı: parametre sayısı
   - Bir fonksiyona çok sayıda parametre göndermek iyi bir alışkanlık değildir. Her parametre stack'e kopyalanır.
   - Matris örneğinde `m1, m, n` üçlüsü tek bir "matris" tipiyle tek parametreye indirilebilirdi.
@@ -35,7 +34,7 @@
 - Polinomların dizide tutulması
   - İlk yöntem: dizinin indisi kuvveti, değeri katsayıyı gösterir. `{2, 4, 0, 0, -7}` → $-7x^4 + 4x + 2$.
   - Yazdırma fonksiyonu en yüksek dereceden başlar, katsayısı 0 olan terimleri atlar.
-  - Değer hesaplama: `val += arr[i] * pow(x, i)`. `math.h` kullanılabilir ("regex kütüphanesi kullanmanızı beklemiyoruz ama `pow` kullanabilirsiniz"). `pow` kuvveti $n$ değil $\log n$ adımda hesaplar.
+  - Değer hesaplama: `val += arr[i] * pow(x, i)`. `math.h` kullanılabilir ("regex kütüphanesi kullanmanızı beklemiyoruz ama `pow` kullanabilirsiniz"). Hoca `pow`'un kuvveti $x^{n/2}$ üzerinden $n$ değil $\log n$ adımda hesapladığını söyledi (düzeltme için "Ders sonrası notlar"a bakın).
   - Sorun: sıfır katsayılı terimler de tutulur. İkinci yöntem: yalnızca sıfır olmayan terimler için `[katsayı, kuvvet]` çiftlerinden oluşan iki sütunlu bir matris. Ör. `{{2, 3}, {-4, 1}, {5, 4}}` → $2x^3 - 4x + 5x^4$.
   - Bu tür ilkel verilere bağımlılık (primitive obsession) kodu zorlaştırır. Çözüm: kendi veri tipimiz.
   - Proje için: kütüphane kullanımı serbest değildir ama `math.h` gibi temel fonksiyonlar kullanılabilir.
@@ -47,7 +46,7 @@
     - `struct student { int id; char name[50]; int age; char gender; };` ve `struct student s1;`
     - `typedef struct student STUDENT;` sonra `STUDENT s2;`
     - Tercih edilen: `typedef struct { ... } STUDENT;`. Kendi tiplerimizi büyük harfle yazarız.
-  - Boyut ve hizalama: elemanların toplamı $4 + 50 + 4 + 1 = 59$ byte iken `sizeof` 64 verdi. Derleyici elemanları bellekte hizalar (alignment), araya ve sona boşluk ekler. Karakter alanlarını başa veya sona koymak, boyutları 4'ün katı seçmek (ör. 48) boşluğu azaltır.
+  - Boyut ve hizalama: elemanların toplamı $4 + 50 + 4 + 1 = 59$ byte iken `sizeof` 64 verdi. Derleyici elemanları bellekte hizalar (alignment), araya ve sona boşluk ekler. Karakter alanlarını başa veya sona koymak, boyutları 4'ün katı seçmek (ör. 48) boşluğu azaltır. Son örnekte `char gender` başa alınıp `name[47]` yapılınca $1 + 47 + 4 + 4 = 56$ byte olur, boşluk kalmaz (gcc ile denendi).
   - Elemanlara nokta operatörüyle erişilir: `s1.id`. `scanf`'te `&s1.id`, `&s1.age`, `&s1.gender` (ampersand gerekir), `s1.name` (dizi olduğu için ampersand gerekmez).
   - Struct değişkeni fonksiyona değerle (pass by value) aktarılır: `void print_info(STUDENT s)` içine bütün içerik kopyalanır.
   - Atama: `s2 = s1;` struct'ın bütün içeriğini kopyalar. Derste `s1.id = 0` ve `strcpy(s1.name, "Deneme")` yapıldı, `s2` değişmedi.
@@ -55,12 +54,7 @@
   - Dinamik struct dizisi: `ps1 = (STUDENT*) malloc(n * sizeof(STUDENT));`. Elemanlar `ps1[i].id` ile kullanılır, `scanf("%d", &ps1[i].id)`. İşaretçi üzerinden üyelere erişim için ayrı bir operatör vardır (gelecek ders).
   - Sabit uzunluklu struct dizisi: `STUDENT std_array[MAX];` aynı şekilde kullanılır.
   - `void print_list(STUDENT *list, int n)` hem `malloc`'la hem sabit uzunluklu dizilerle çalışır. İçinde her eleman için `print_info(list[i])` çağrılabilir. Bu bir yazılım mühendisliği tercihidir: küçük performans kaybına karşı daha okunur ve yönetilebilir kod.
-  - Bir struct kendi türünden bir üye içeremez (sonsuz, tanımı bitmemiş tip). Ama kendi türünden bir **işaretçi** içerebilir: `struct student *next;`. Bağlı listeler (linked list) bununla kurulur.
-- Duyurular
-  - Gelecek hafta (bayram nedeniyle) ders tamamen online yapılacak. Diğer gruplar gerideyse sınava yönelik eski konulardan 2-3 soru çözülecek.
-  - Vize klasik olacak. İçerik en geride olan gruba göre belirlenecek. Bu grup konu olarak en öndeki grup. Ayrıntılar gelecek derste verilecek.
-  - Yoklama imzasında yalnızca kendi adınıza imza atın.
-  - Ders kodları OBS ders ayrıntılarına yüklenecek. Eksik haftalar için video kayıtlarına bakmak öğrencinin sorumluluğu.
+  - Bir struct kendi türünden bir üye içeremez (sonsuz, tanımı bitmemiş tip). Ama kendi türünden bir **işaretçi** içerebilir: `struct student *next;`. <!-- BELİRSİZ: Üye adı altyazıda geçmiyor (02:54:14-02:55:10), next burada temsilîdir. --> Bağlı listeler (linked list) bununla kurulur.
 
 ## Hocanın Özellikle Vurguladığı Kısımlar
 
@@ -90,6 +84,7 @@
 - **İşaretçiyle üye erişimi:** Derste "işaretçi kullanırsak nokta değil başka bir operatör kullanılır" dendi. Bu operatör `->`'dir: `ps1->id`, `(*ps1).id` ile aynıdır. Dizi elemanına `ps1[i].id` ile nokta kullanılarak erişilir, çünkü `ps1[i]` bir struct'tır.
 - **Oy sayma versiyon 3'te döngü sınırları:** Derste kullanılan kod `p[i] += oylar[j][i]` biçimindeydi. Dış döngü kişi sayısı $n$'ye, iç döngü parti sayısına kadar gidiyordu. `oylar[kişi][parti]` matrisinde parti toplamı için dış döngü partiler, iç döngü kişiler üzerinde olmalıdır: `for (j = 0; j < partiSay; j++) for (i = 0; i < n; i++) p[j] += oylar[i][j];`. Derste kişi ve parti sayısı ikisi de 10 olduğu için sonuç doğru çıktı; sayılar farklı olsaydı yanlış çıkardı.
 - **Polinom değeri:** $2 + 4x - 7x^4$ için $P(2) = 2 + 8 - 112 = -102$'dir (gcc ile doğrulandı).
-- **Sütun kopyalama sürümünde bellek:** Matris çarpımında her sütun için `tmp = malloc(...)` yapılıyorsa, işi biten `tmp` `free` edilmelidir; aksi hâlde her çağrıda bellek sızar. En basit ve önerilen yol üç iç içe döngüdür.
+- **Sütun kopyalama sürümünde bellek:** Hoca `tmp`'yi her sütun için değil, boyutu sabit olduğu için döngülerin dışında bir kez `malloc` ile açtı (00:38:06-00:38:28). `free(tmp)` yazılmazsa fonksiyonun her çağrısında $n$ tam sayılık alan sızar, bu yüzden fonksiyonun sonunda `free(tmp)` gerekir. En basit ve önerilen yol üç iç içe döngüdür.
+- **`pow` ve $\log n$:** Derste anlatılan $x^{n/2}$ yöntemi hızlı üs almadır ve tam sayı üslere uyar. Standart kütüphanedeki `pow` `double` üs aldığı için büyük olasılıkla farklı bir yöntemle (logaritma ve üstel yaklaşım) yazılmıştır. Gerçekleme kütüphaneye bağlıdır.
 
 * **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
