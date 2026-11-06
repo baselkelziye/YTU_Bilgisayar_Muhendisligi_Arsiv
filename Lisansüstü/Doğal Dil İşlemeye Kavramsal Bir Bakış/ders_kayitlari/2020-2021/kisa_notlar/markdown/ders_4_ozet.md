@@ -170,7 +170,7 @@
 #### Yıldız `*` ve Artı `+`
 
 - `ab*c`: "a" ile başlar, "c" ile biter, arada "b" olmayabilir veya birçok kez tekrar edebilir. "abd" bulunmaz, çünkü "c" zorunlu.
-- Bir öğrencinin sorusu: Bu ifade beş tane "a" ve sonra "c" gelirse bulur mu? Hayır. "a" yalnızca bir kez yazılabilir; birden çok "a" için dışarıda bir döngü gerekir.
+- Bir öğrencinin sorusu: Bu ifade beş tane "a" ve sonra "c" gelirse bulur mu? Dizginin tamamı eşleşecekse hayır: "a" yalnızca bir kez yazılabilir; birden çok "a" için dışarıda bir döngü gerekir. Metin içinde arama yapılırsa (örn. `re.search`) sondaki "ac" parçası bulunur.
 - `[0-9][0-9]*`: en az bir rakam zorunlu, sonra istenildiği kadar rakam gelebilir.
   - Bir öğrenci bunun yerine `+` kullanmanın daha pratik olduğunu söyledi. Hoca onayladı: `[0-9]+` aynı işi yapar ve daha kısadır. Örnek komutları göstermek için uzun hali verilmişti.
 

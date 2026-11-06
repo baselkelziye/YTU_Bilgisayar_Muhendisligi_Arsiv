@@ -220,6 +220,7 @@ $$P(\text{cümle}) = \prod_{i} P\big(w_i \mid A(w_i)\big)$$
 
 ### Ders sonrası notlar
 
+- Emoji puanı örneği: puanları toplamak metnin anlattığı durumu kaçırabilir. Ancak iki emoji de olumsuz puanlıysa toplam nötr değil, olumsuz çıkar. Nötr sonuç yalnız puanlar birbirini götürürse oluşur.
 - Altyazıda geçen bazı terimlerin doğru yazımları:
   - "International Server on Emotion" → ISEAR (International Survey on Emotion Antecedents and Reactions).
   - "Sam Ivali" → büyük olasılıkla SemEval.

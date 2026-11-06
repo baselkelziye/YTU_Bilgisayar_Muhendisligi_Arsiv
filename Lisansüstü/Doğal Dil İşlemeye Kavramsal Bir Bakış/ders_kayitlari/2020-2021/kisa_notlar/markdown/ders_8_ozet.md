@@ -437,6 +437,7 @@ $$
 
 ### Ders sonrası notlar
 
+- Bu derste Levenshtein yerine koyma maliyeti 2 alındı. Yaygın tanımda yerine koyma maliyeti 1'dir; 2 maliyetli biçim bir çeşittir. Sonuçlar seçilen maliyete bağlıdır.
 - Kosinüs benzerliği örneği: hoca "A tabii ki B'ye benzer" dedi ama hesabı tamamlamadı. Hesap tamamlanınca $\cos(A,C) \approx 0{,}97$, $\cos(A,B) \approx 0{,}82$ çıkıyor. Kosinüs benzerliği vektörlerin büyüklüğüne değil yönüne baktığı için A, C'ye daha çok benziyor.
 - Bulanık kesişim örneğinde hoca önce "1; 0,20; 0,50" dedi. İlk eleman $\min(1, 0) = 0$ olmalı. Doğrusu $(0;\ 0{,}20;\ 0{,}50)$.
 - Tahtadaki genişletilmiş Boole örneğinde IDF, logaritma alınmadan $N/n$ olarak hesaplandı (A için 3/2 = 1,5, B için 3/3 = 1). Tanımda logaritma var. Logaritma ile B'nin IDF'si 0 olur.

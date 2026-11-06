@@ -498,6 +498,7 @@ $$sim_{L}(c_1, c_2) = \frac{2 \log(p(lcs(c_1, c_2)))}{\log(p(c_1)) + \log(p(c_2)
 
 ### Ders sonrası notlar
 
+- Slayttaki $sim_{JC}$ formülü adına rağmen bir uzaklık verir. Aynı kavram için 0 çıkar, kavramlar uzaklaştıkça büyür. Jiang-Conrath benzerliği genelde bu değerin tersi ($1/dist_{JC}$) olarak kullanılır.
 - Add-one örneğindeki tutarsızlık: slayttaki sayım tablosunda "gibi eve" ve "eve gidiyorum" ikilileri 1, "gibi gidiyorum" ikilisi 0 görünüyor. Yani tablo "Bugün de her zamanki gibi eve gidiyorum" cümlesinden (6 ikili) çıkarılmış gibi duruyor. Bu tabloya göre $P_{\text{gibi gidiyorum}}$ yumuşatmasız 0, add-one ile $\frac{0+1}{N+49}$ olmalıdır. Slayttaki $\frac{1}{5}$ ve $\frac{2}{54}$ değerleri ise "gibi gidiyorum" ikilisi 1 kez geçmiş gibi hesaplanmış. Öğrencinin "eve" itirazı bu yüzden yerindeydi. Sınavda bu tür bir soruda sayım tablosu ile hesaplanan cümlenin tutarlı olup olmadığına dikkat edin.
 - Hoca üniversite hiyerarşisini önce doğru anlattı: fakültenin üst kavramı rektörlük, bölümün üst kavramı fakültedir. Sonra "fakültenin hypernym'i bölümdür" dedi. Doğrusu: bölüm, fakültenin hyponym'idir. Ayrıca rektörlük-fakülte-bölüm ilişkisi WordNet açısından aslında bir parça-bütün (meronymy) ilişkisine daha yakındır.
 - Hoca "Hypername tam tersi olabilir. Meal'ın altları..." derken hyponym ilişkisini kastediyor.

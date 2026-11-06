@@ -426,7 +426,7 @@ Aux  : does, is, are, do ...
 ### Ders sonrası notlar
 
 - Hoca biçimbilimsel analiz yöntemlerini anlatırken önce bildirimsel ve yordamsal yöntemleri karıştırdı, sonra düzeltti. Doğrusu: bildirimsel yöntemde kelimeler biçimbilimsel bilgileriyle sözlükte tutulur; yordamsal yöntemde yalnızca kökler tutulur, ekler kurallarla bulunur.
-- `((00)+1)*0*` ifadesi "00010010" dizgesini üretmez. `(00)+` yalnızca çift sayıda 0 üretir; dizgede ilk 1'den önce 3 tane 0 var. Dışarıya yıldız eklemek de bunu çözmez. "Her 1'den önce en az iki 0" dilini veren doğru ifadeler: slayttaki ilk ifade `(0)*(001(0)*)^n(0)*` ve daha kısa olarak `(0*001)*0*`.
+- `((00)+1)*0*` ifadesi "00010010" dizgesini üretmez. `(00)+` yalnızca çift sayıda 0 üretir; dizgede ilk 1'den önce 3 tane 0 var. Bütün ifadeye dıştan yıldız eklemek bunu çözer: `(((00)+1)*0*)*` bu dizgeyi üretir. "Her 1'den önce en az iki 0" dilini veren doğru ifadeler: slayttaki ilk ifade `(0)*(001(0)*)^n(0)*` ve daha kısa olarak `(0*001)*0*`.
 - Hoca "determiner" için bir yerde "bağlaç" dedi. Bağlaç "conjunction"dır. "Determiner" belirleyici (belirteç) demektir; hoca da sonra "DET, belirteç" dedi.
 - Hoca Tür 0 diller için "ön yinelemeli sayılabilir" dedi. Doğru terim: özyinelemeli sayılabilir (recursively enumerable).
 - Hoca NLTK'yi yine Stanford Üniversitesi'nin aracı olarak andı. NLTK Pennsylvania Üniversitesi'nde geliştirildi; Stanford'un aracı Stanford CoreNLP'dir.
