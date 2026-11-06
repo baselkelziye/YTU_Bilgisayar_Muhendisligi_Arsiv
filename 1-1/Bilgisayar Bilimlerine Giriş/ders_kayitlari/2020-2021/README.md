@@ -9,39 +9,43 @@
 * **Akademik Yıl:** 2020-2021
 * **Şube:** BLM1011 - 1
 
-Bu dizin, ilgili ders kayıtlarının altyazı özetlerini, çalışma notlarını ve PDF kaynaklarını içermektedir.
+Bu dizin, ilgili ders kayıtlarının altyazılarını, kısa notlarını ve genişletilmiş notlarını içermektedir.
+
+* **Kısa not:** Tekrar için. Dersin konuları, hocanın vurguları ve kısa tekrar maddeleri.
+* **Genişletilmiş not:** Dersi izlemeden öğrenmek için. Dersin anlatım akışını baştan sona, örnekleri ve soru-cevaplarıyla anlatır.
+* `altyazilar/`: ders kayıtlarının altyazıları (.srt). Notların PDF'leri `kisa_notlar/` ve `genisletilmis_notlar/` klasörlerinde, markdown kaynakları bu klasörlerin içindeki `markdown/` klasöründedir.
 
 ## 📚 Ders Müfredatı ve Belge Dizini
 
-Aşağıdaki tabloda her bir dersin konusu, kaynak markdown dosyası ve doğrudan indirilebilir PDF formatındaki derlenmiş halleri listelenmiştir. Ders numaraları, kayıt arşivindeki ders kaydı sıra numaralarıdır (hafta numarası değildir).
+Aşağıdaki tabloda her bir dersin konusu ile kısa ve genişletilmiş notlarının markdown ve PDF halleri listelenmiştir. Ders numaraları, kayıt arşivindeki ders kaydı sıra numaralarıdır (hafta numarası değildir).
 
-| Ders No | Ders İçeriği / Konu Başlıkları | Kaynak Notlar (Markdown) | Çalışma Dosyası (PDF) |
+| Ders No | Ders İçeriği / Konu Başlıkları | Kısa Not | Genişletilmiş Not |
 | :---: | :--- | :---: | :---: |
-| **Ders 2** | Derse Giriş: Algoritma Kavramı, Programlama Dilleri ve Bilgisayar Mühendisliği | [Özet](altyazi_ozetleri/ders_2_ozet.md) | [PDF (İndir)](ders_2_ozet.pdf) |
-| **Ders 3** | Bilgisayarın Tarihçesi, von Neumann Mimarisi, Donanım ve Yazılım | [Özet](altyazi_ozetleri/ders_3_ozet.md) | [PDF (İndir)](ders_3_ozet.pdf) |
-| **Ders 4** | CPU, Bellek Hiyerarşisi, Veri Boyutları ve Bilgisayar Organizasyonu | [Özet](altyazi_ozetleri/ders_4_ozet.md) | [PDF (İndir)](ders_4_ozet.pdf) |
-| **Ders 5** | Mantıksal Kapılar, Sayı Sistemleri, Tümleyen Gösterimleri ve Kayan Nokta | [Özet](altyazi_ozetleri/ders_5_ozet.md) | [PDF (İndir)](ders_5_ozet.pdf) |
-| **Ders 6** | Kayan Nokta Hataları, Veri Türleri, ASCII/UTF-8 ve Veri Sıkıştırmaya Giriş | [Özet](altyazi_ozetleri/ders_6_ozet.md) | [PDF (İndir)](ders_6_ozet.pdf) |
-| **Ders 7** | Veri Sıkıştırma, İletişim Hataları (Parity, Hamming) ve Algoritmaya Giriş | [Özet](altyazi_ozetleri/ders_7_ozet.md) | [PDF (İndir)](ders_7_ozet.pdf) |
-| **Ders 8** | Akış Diyagramı Örnekleri: Armstrong Sayısı, Doğru Denklemi ve Algoritma Analizi | [Özet](altyazi_ozetleri/ders_8_ozet.md) | [PDF (İndir)](ders_8_ozet.pdf) |
-| **Ders 9** | Döngüler: For ve While Notasyonu, Faktöriyel ve Basamak Sayısı | [Özet](altyazi_ozetleri/ders_9_ozet.md) | [PDF (İndir)](ders_9_ozet.pdf) |
-| **Ders 10** | Armstrong Sayıları, Yakıt Tüketimi, Sabitler, Değişkenler ve Diziler | [Özet](altyazi_ozetleri/ders_10_ozet.md) | [PDF (İndir)](ders_10_ozet.pdf) |
-| **Ders 11** | En Sıcak/En Soğuk Gün, Tekrar Eden Eleman, Mantıksal VE/VEYA ve Karakter Dizileri | [Özet](altyazi_ozetleri/ders_11_ozet.md) | [PDF (İndir)](ders_11_ozet.pdf) |
-| **Ders 12** | Karakter Problemleri: Rakamlardan Sayı, Büyük Harfe Çevirme ve Palindrom | [Özet](altyazi_ozetleri/ders_12_ozet.md) | [PDF (İndir)](ders_12_ozet.pdf) |
-| **Ders 13** | C Programlama Diline Giriş: Yapı, Operatörler, Tipler, if ve Döngüler | [Özet](altyazi_ozetleri/ders_13_ozet.md) | [PDF (İndir)](ders_13_ozet.pdf) |
-| **Ders 14** | Kesişim Kümesi, Akış Diyagramından C'ye ve Matrisler | [Özet](altyazi_ozetleri/ders_14_ozet.md) | [PDF (İndir)](ders_14_ozet.pdf) |
-| **Ders 17** | Vize 1 Sorularının Çözümü (Test ve Yazılı Bölüm) | [Özet](altyazi_ozetleri/ders_17_ozet.md) | [PDF (İndir)](ders_17_ozet.pdf) |
-| **Ders 18** | Dizilerde Temel İşlemler: Arama, Ekleme, Silme ve Bubble Sort | [Özet](altyazi_ozetleri/ders_18_ozet.md) | [PDF (İndir)](ders_18_ozet.pdf) |
-| **Ders 19** | Sıralama Algoritmaları: Bubble Sort İyileştirmesi, Selection Sort ve Insertion Sort | [Özet](altyazi_ozetleri/ders_19_ozet.md) | [PDF (İndir)](ders_19_ozet.pdf) |
-| **Ders 20** | Insertion Sort, Histogram, Sezar Şifreleme ve İki Sıralı Diziyi Birleştirme | [Özet](altyazi_ozetleri/ders_20_ozet.md) | [PDF (İndir)](ders_20_ozet.pdf) |
-| **Ders 21** | Birleştirme (Merge) Çözümlerinin İncelenmesi ve Nöbetçi Değer | [Özet](altyazi_ozetleri/ders_21_ozet.md) | [PDF (İndir)](ders_21_ozet.pdf) |
-| **Ders 22** | Bilgisayar Mimarisi, Haberleşme ve İşletim Sistemlerine Giriş | [Özet](altyazi_ozetleri/ders_22_ozet.md) | [PDF (İndir)](ders_22_ozet.pdf) |
-| **Ders 23** | Tekrar Dersi: 3. Ödev ve Vize 1. Sorunun Değerlendirmesi | [Özet](altyazi_ozetleri/ders_23_ozet.md) | [PDF (İndir)](ders_23_ozet.pdf) |
-| **Ders 24** | Tekrar Dersi: Sütun Silme, Kümelerde Bağıntı Özellikleri ve Polinomlar | [Özet](altyazi_ozetleri/ders_24_ozet.md) | [PDF (İndir)](ders_24_ozet.pdf) |
-| **Ders 25** | Dönem Projesi (Kızma Birader) ve Canlı C Kodlama: Kelime Karşılaştırma | [Özet](altyazi_ozetleri/ders_25_ozet.md) | [PDF (İndir)](ders_25_ozet.pdf) |
-| **Ders 26** | İşletim Sistemleri (Paging, Boot, Süreç Yönetimi) ve Bilgisayar Ağları | [Özet](altyazi_ozetleri/ders_26_ozet.md) | [PDF (İndir)](ders_26_ozet.pdf) |
-| **Ders 27** | Canlı C Kodlama: Min/Max ve Kısmi Sıralama ile Medyan | [Özet](altyazi_ozetleri/ders_27_ozet.md) | [PDF (İndir)](ders_27_ozet.pdf) |
-| **Ders 28** | İnternet Uygulamaları, Web Teknolojileri ve Binary Search | [Özet](altyazi_ozetleri/ders_28_ozet.md) | [PDF (İndir)](ders_28_ozet.pdf) |
+| **Ders 2** | Derse Giriş: Algoritma Kavramı, Programlama Dilleri ve Bilgisayar Mühendisliği | [Markdown](kisa_notlar/markdown/ders_2_ozet.md) · [PDF](kisa_notlar/ders_2_ozet.pdf) | [Markdown](genisletilmis_notlar/markdown/ders_2_genisletilmis.md) · [PDF](genisletilmis_notlar/ders_2_genisletilmis.pdf) |
+| **Ders 3** | Bilgisayarın Tarihçesi, von Neumann Mimarisi, Donanım ve Yazılım | [Markdown](kisa_notlar/markdown/ders_3_ozet.md) · [PDF](kisa_notlar/ders_3_ozet.pdf) | [Markdown](genisletilmis_notlar/markdown/ders_3_genisletilmis.md) · [PDF](genisletilmis_notlar/ders_3_genisletilmis.pdf) |
+| **Ders 4** | CPU, Bellek Hiyerarşisi, Veri Boyutları ve Bilgisayar Organizasyonu | [Markdown](kisa_notlar/markdown/ders_4_ozet.md) · [PDF](kisa_notlar/ders_4_ozet.pdf) | [Markdown](genisletilmis_notlar/markdown/ders_4_genisletilmis.md) · [PDF](genisletilmis_notlar/ders_4_genisletilmis.pdf) |
+| **Ders 5** | Mantıksal Kapılar, Sayı Sistemleri, Tümleyen Gösterimleri ve Kayan Nokta | [Markdown](kisa_notlar/markdown/ders_5_ozet.md) · [PDF](kisa_notlar/ders_5_ozet.pdf) | [Markdown](genisletilmis_notlar/markdown/ders_5_genisletilmis.md) · [PDF](genisletilmis_notlar/ders_5_genisletilmis.pdf) |
+| **Ders 6** | Kayan Nokta Hataları, Veri Türleri, ASCII/UTF-8 ve Veri Sıkıştırmaya Giriş | [Markdown](kisa_notlar/markdown/ders_6_ozet.md) · [PDF](kisa_notlar/ders_6_ozet.pdf) | [Markdown](genisletilmis_notlar/markdown/ders_6_genisletilmis.md) · [PDF](genisletilmis_notlar/ders_6_genisletilmis.pdf) |
+| **Ders 7** | Veri Sıkıştırma, İletişim Hataları (Parity, Hamming) ve Algoritmaya Giriş | [Markdown](kisa_notlar/markdown/ders_7_ozet.md) · [PDF](kisa_notlar/ders_7_ozet.pdf) | [Markdown](genisletilmis_notlar/markdown/ders_7_genisletilmis.md) · [PDF](genisletilmis_notlar/ders_7_genisletilmis.pdf) |
+| **Ders 8** | Akış Diyagramı Örnekleri: Armstrong Sayısı, Doğru Denklemi ve Algoritma Analizi | [Markdown](kisa_notlar/markdown/ders_8_ozet.md) · [PDF](kisa_notlar/ders_8_ozet.pdf) | [Markdown](genisletilmis_notlar/markdown/ders_8_genisletilmis.md) · [PDF](genisletilmis_notlar/ders_8_genisletilmis.pdf) |
+| **Ders 9** | Döngüler: For ve While Notasyonu, Faktöriyel ve Basamak Sayısı | [Markdown](kisa_notlar/markdown/ders_9_ozet.md) · [PDF](kisa_notlar/ders_9_ozet.pdf) | [Markdown](genisletilmis_notlar/markdown/ders_9_genisletilmis.md) · [PDF](genisletilmis_notlar/ders_9_genisletilmis.pdf) |
+| **Ders 10** | Armstrong Sayıları, Yakıt Tüketimi, Sabitler, Değişkenler ve Diziler | [Markdown](kisa_notlar/markdown/ders_10_ozet.md) · [PDF](kisa_notlar/ders_10_ozet.pdf) | [Markdown](genisletilmis_notlar/markdown/ders_10_genisletilmis.md) · [PDF](genisletilmis_notlar/ders_10_genisletilmis.pdf) |
+| **Ders 11** | En Sıcak/En Soğuk Gün, Tekrar Eden Eleman, Mantıksal VE/VEYA ve Karakter Dizileri | [Markdown](kisa_notlar/markdown/ders_11_ozet.md) · [PDF](kisa_notlar/ders_11_ozet.pdf) | [Markdown](genisletilmis_notlar/markdown/ders_11_genisletilmis.md) · [PDF](genisletilmis_notlar/ders_11_genisletilmis.pdf) |
+| **Ders 12** | Karakter Problemleri: Rakamlardan Sayı, Büyük Harfe Çevirme ve Palindrom | [Markdown](kisa_notlar/markdown/ders_12_ozet.md) · [PDF](kisa_notlar/ders_12_ozet.pdf) | [Markdown](genisletilmis_notlar/markdown/ders_12_genisletilmis.md) · [PDF](genisletilmis_notlar/ders_12_genisletilmis.pdf) |
+| **Ders 13** | C Programlama Diline Giriş: Yapı, Operatörler, Tipler, if ve Döngüler | [Markdown](kisa_notlar/markdown/ders_13_ozet.md) · [PDF](kisa_notlar/ders_13_ozet.pdf) | [Markdown](genisletilmis_notlar/markdown/ders_13_genisletilmis.md) · [PDF](genisletilmis_notlar/ders_13_genisletilmis.pdf) |
+| **Ders 14** | Kesişim Kümesi, Akış Diyagramından C'ye ve Matrisler | [Markdown](kisa_notlar/markdown/ders_14_ozet.md) · [PDF](kisa_notlar/ders_14_ozet.pdf) | [Markdown](genisletilmis_notlar/markdown/ders_14_genisletilmis.md) · [PDF](genisletilmis_notlar/ders_14_genisletilmis.pdf) |
+| **Ders 17** | Vize 1 Sorularının Çözümü (Test ve Yazılı Bölüm) | [Markdown](kisa_notlar/markdown/ders_17_ozet.md) · [PDF](kisa_notlar/ders_17_ozet.pdf) | [Markdown](genisletilmis_notlar/markdown/ders_17_genisletilmis.md) · [PDF](genisletilmis_notlar/ders_17_genisletilmis.pdf) |
+| **Ders 18** | Dizilerde Temel İşlemler: Arama, Ekleme, Silme ve Bubble Sort | [Markdown](kisa_notlar/markdown/ders_18_ozet.md) · [PDF](kisa_notlar/ders_18_ozet.pdf) | [Markdown](genisletilmis_notlar/markdown/ders_18_genisletilmis.md) · [PDF](genisletilmis_notlar/ders_18_genisletilmis.pdf) |
+| **Ders 19** | Sıralama Algoritmaları: Bubble Sort İyileştirmesi, Selection Sort ve Insertion Sort | [Markdown](kisa_notlar/markdown/ders_19_ozet.md) · [PDF](kisa_notlar/ders_19_ozet.pdf) | [Markdown](genisletilmis_notlar/markdown/ders_19_genisletilmis.md) · [PDF](genisletilmis_notlar/ders_19_genisletilmis.pdf) |
+| **Ders 20** | Insertion Sort, Histogram, Sezar Şifreleme ve İki Sıralı Diziyi Birleştirme | [Markdown](kisa_notlar/markdown/ders_20_ozet.md) · [PDF](kisa_notlar/ders_20_ozet.pdf) | [Markdown](genisletilmis_notlar/markdown/ders_20_genisletilmis.md) · [PDF](genisletilmis_notlar/ders_20_genisletilmis.pdf) |
+| **Ders 21** | Birleştirme (Merge) Çözümlerinin İncelenmesi ve Nöbetçi Değer | [Markdown](kisa_notlar/markdown/ders_21_ozet.md) · [PDF](kisa_notlar/ders_21_ozet.pdf) | [Markdown](genisletilmis_notlar/markdown/ders_21_genisletilmis.md) · [PDF](genisletilmis_notlar/ders_21_genisletilmis.pdf) |
+| **Ders 22** | Bilgisayar Mimarisi, Haberleşme ve İşletim Sistemlerine Giriş | [Markdown](kisa_notlar/markdown/ders_22_ozet.md) · [PDF](kisa_notlar/ders_22_ozet.pdf) | [Markdown](genisletilmis_notlar/markdown/ders_22_genisletilmis.md) · [PDF](genisletilmis_notlar/ders_22_genisletilmis.pdf) |
+| **Ders 23** | Tekrar Dersi: 3. Ödev ve Vize 1. Sorunun Değerlendirmesi | [Markdown](kisa_notlar/markdown/ders_23_ozet.md) · [PDF](kisa_notlar/ders_23_ozet.pdf) | [Markdown](genisletilmis_notlar/markdown/ders_23_genisletilmis.md) · [PDF](genisletilmis_notlar/ders_23_genisletilmis.pdf) |
+| **Ders 24** | Tekrar Dersi: Sütun Silme, Kümelerde Bağıntı Özellikleri ve Polinomlar | [Markdown](kisa_notlar/markdown/ders_24_ozet.md) · [PDF](kisa_notlar/ders_24_ozet.pdf) | [Markdown](genisletilmis_notlar/markdown/ders_24_genisletilmis.md) · [PDF](genisletilmis_notlar/ders_24_genisletilmis.pdf) |
+| **Ders 25** | Dönem Projesi (Kızma Birader) ve Canlı C Kodlama: Kelime Karşılaştırma | [Markdown](kisa_notlar/markdown/ders_25_ozet.md) · [PDF](kisa_notlar/ders_25_ozet.pdf) | [Markdown](genisletilmis_notlar/markdown/ders_25_genisletilmis.md) · [PDF](genisletilmis_notlar/ders_25_genisletilmis.pdf) |
+| **Ders 26** | İşletim Sistemleri (Paging, Boot, Süreç Yönetimi) ve Bilgisayar Ağları | [Markdown](kisa_notlar/markdown/ders_26_ozet.md) · [PDF](kisa_notlar/ders_26_ozet.pdf) | [Markdown](genisletilmis_notlar/markdown/ders_26_genisletilmis.md) · [PDF](genisletilmis_notlar/ders_26_genisletilmis.pdf) |
+| **Ders 27** | Canlı C Kodlama: Min/Max ve Kısmi Sıralama ile Medyan | [Markdown](kisa_notlar/markdown/ders_27_ozet.md) · [PDF](kisa_notlar/ders_27_ozet.pdf) | [Markdown](genisletilmis_notlar/markdown/ders_27_genisletilmis.md) · [PDF](genisletilmis_notlar/ders_27_genisletilmis.pdf) |
+| **Ders 28** | İnternet Uygulamaları, Web Teknolojileri ve Binary Search | [Markdown](kisa_notlar/markdown/ders_28_ozet.md) · [PDF](kisa_notlar/ders_28_ozet.pdf) | [Markdown](genisletilmis_notlar/markdown/ders_28_genisletilmis.md) · [PDF](genisletilmis_notlar/ders_28_genisletilmis.pdf) |
 
 > [!NOTE]
 > Kayıt arşivinde 1, 15 ve 16 numaralı ders kayıtları bulunmamaktadır. 15 ve 16 numaralı kayıtlar birinci ara sınav haftasına (23-26 Kasım 2020) denk gelmektedir.
@@ -101,7 +105,7 @@ Aşağıdaki tabloda her bir dersin konusu, kaynak markdown dosyası ve doğruda
   - Özel donanım, genel amaçlı donanımdan daha hızlı ve güvenlidir
     - Şifreleme algoritmaları yazılımla (standart CPU/GPU üzerinde) ya da donanımla gerçeklenebilir. Bankalarda kullanılan HSM (Hardware Security Module), şifreleme ve şifre çözmeye ayrılmış özel donanımdır.
   - Bilgisayar ile insan arasındaki karar verme farkı
-    - Bilgisayarlar kuralları belli problemlerde tüm olasılıkları insanın yapamayacağı hızda hesaplar. Bu yüzden satrançta dünya şampiyonunu yenebilmiştir.
+    - Bilgisayarlar kuralları belli problemlerde tüm olasılıkları insanın yapamayacağı hızda hesaplar. Bu yüzden satrançta dünya şampiyonunu yenebilmiştir. (Ders sonrası not: satrançta büyük olasılıkla bütün olasılıklar hesaplanamaz, programlar belirli bir derinliğe kadar arama yapar.)
   - Sanallaştırma ve paralel işlem
     - Sanallaştırma (virtualization), boşta duran CPU, bellek ve ağ bant genişliğini verimli kullanmanın en iyi yoludur. Paralel işlem de işleri hızlandırmanın yollarından biridir.
 * **Detaylı Açıklamalar:** Bu derste önce dersin kapsamı ve konu sırası açıklanır, ardından bilgisayarın tarihçesine ve temel bileşenlerine geçilir. Dersin hedefi, öğrencinin dönem sonunda bir problemi anlayıp sınırlarını belirleyebilmesi, bu problem için algoritma tasarlayabilmesi, tasarladığı algoritmanın doğru çalıştığını analiz edebilmesi ve sonunda kodunu yazabilmesidir. Algoritmalar akış diyagramı (şekillerle) ya da sözde kod (yazıyla) ile gösterilir. Bu derste ağırlıklı olarak akış diyagramı kullanılır. Bir algoritmanın analizi, verilen girdi için beklenen çıktının üretilip üretilmediğinin adım adım kontrol edilmesidir. C programlama dili bu derste dilin kendisini öğretmek için değil, tasarlanan algoritmaları bilgisayara aktarmak için kullanılır.
@@ -173,7 +177,7 @@ Aşağıdaki tabloda her bir dersin konusu, kaynak markdown dosyası ve doğruda
   - Kesme hatası (truncation error / round-off error)
     - Mantis alanı yetersiz olduğunda sayının bazı bitleri düşer ve sayı daha düşük hassasiyetle saklanır.
   - Tek ve çift duyarlıklı kayan nokta
-    - Single precision floating point: 32 bit. 1 bit işaret, 8 bit üs, 23 bit mantis. Yaklaşık 10^−37 ile 10^38 aralığını ve noktadan sonra yaklaşık 7 ondalık basamak (decimal digit) hassasiyeti sağlar.
+    - Single precision floating point: 32 bit. 1 bit işaret, 8 bit üs, 23 bit mantis. Yaklaşık 10^−37 ile 10^38 aralığını ve yaklaşık 7 ondalık basamak (decimal digit) hassasiyeti sağlar. Hoca "noktadan sonra" der; büyük olasılıkla toplam anlamlı basamak sayısı kastedilir.
   - Farklı sistemler, farklı kurallar
     - Her bilgi (komut, resim, harf, sayı) 0 ve 1 kombinasyonlarıyla saklanır, ancak bunun için kurallar vardır. Her işlemci mimarisi aynı gösterimi (örneğin ikiye göre tümleyen) kullanmayabilir.
   - Veri ve bilgi
@@ -260,11 +264,11 @@ Aşağıdaki tabloda her bir dersin konusu, kaynak markdown dosyası ve doğruda
   - Döngüler (loops)
     - Döngüler, aynı işlemi defalarca yapmak için kullanılır.
   - For döngüsü notasyonu
-    - Kutunun üst kısmında indisin başlangıç değeri (`I ← 1`) ve artış miktarı (`1`), alt kısmında son değer (`100`) yazar.
+    - Ekrana göre kutunun üst kısmında indisin başlangıç değeri (`I ← 1`) ve artış miktarı (`1`), alt kısmında son değer (`100`) yazar.
   - Örnek: N faktöriyel (for döngüsü)
     - Kağıt üzerinde: `n! = n × (n-1) × (n-2) × ... × 1`. Örnek: 4! = 4 × 3 × 2 × 1.
   - While döngüsü notasyonu
-    - Koşul altıgen bir kutuya yazılır (örn. `X > Y`). Koşul sağlandığı sürece döngü devam eder, sağlanmadığında biter.
+    - Koşul altıgen bir kutuya yazılır. Koşul sağlandığı sürece döngü devam eder, sağlanmadığında biter.
   - Örnek: Bir sayının kaç basamaklı olduğunu bulma (while döngüsü)
     - Sayı sürekli 10'a bölünür (`DIV 10`). Kaç kez bölündüğü sayılır.
 * **Hocanın Vurgusu:**
@@ -293,7 +297,7 @@ Aşağıdaki tabloda her bir dersin konusu, kaynak markdown dosyası ve doğruda
   - Sabitler, değişkenler ve diziler
     - `a = 5` ifadesinde `a` değişken, `5` sabittir (constant). `x = 3.2` ifadesinde `x` kesirli sayı değişkeni, `3.2` kesirli sayı sabitidir.
   - Dizilerin bellekte saklanması
-    - Dizi elemanları bellekte kesintisiz (contiguous) ve arka arkaya saklanır. Aralarına başka veri girmez.
+    - Dizi elemanları bellekte kesintisiz (continuous) ve arka arkaya saklanır. Aralarına başka veri girmez.
   - Algoritma 8: Ortalamanın üstündeki öğrencilerin sırasını bulma
     - Problem: N kişilik sınıfta final notları açıklanmıştır. Ortalamanın altındakiler başarısız, ortalamaya eşit ve üstündekiler başarılıdır. Başarılı öğrencilerin kaçıncı sırada (dizideki indis) olduğu bulunacaktır.
 * **Hocanın Vurgusu:**
@@ -313,11 +317,11 @@ Aşağıdaki tabloda her bir dersin konusu, kaynak markdown dosyası ve doğruda
 * **Genel Konular:**
   - Akış diyagramında üs alma ve fonksiyonlar
     - Üstel gösterim (ör. `2^5`) akış diyagramında kullanılmaz. Bunun yerine for döngüsünde çarpma tekrarlanır: 2^5 için 2 sayısı 5 kez çarpılır.
-  - Algoritma 9: 365 günlük sıcaklıklarda en sıcak ve en soğuk gün
+  - Algoritma 9 (numara altyazıda geçmez): 365 günlük sıcaklıklarda en sıcak ve en soğuk gün
     - START → mesaj → for `I ← 1` ... `365`: giriş `T[I]` (sıcaklıklar T dizisine okunur).
   - Değişken isimleri
     - `count1`, `count2`, `max` gibi belirsiz isimler yerine sakladığı bilgiyi anlatan isimler kullanılmalıdır: `enSicakGun`, `enSogukGun`, `enbuyuk`, `enkucuk`.
-  - Algoritma 10: Dizide tekrar eden eleman olup olmadığını bulma
+  - Algoritma 10 (numara altyazıda geçmez): Dizide tekrar eden eleman olup olmadığını bulma
     - Problem: N elemanlı bir dizide tekrar eden bir eleman varsa "Not unique", yoksa "Unique" yazdırılacaktır. Örnek: `1, 3, 3, 5` tekrarlıdır. `6, 2, 1, 3` tekrarsızdır (unique).
   - Mantıksal VE / VEYA (logical AND / OR)
     - Bir döngünün devam etmesi için iki koşulun birlikte sağlanması gerekiyorsa koşullar `AND` (mantıksal ve) ile bağlanır: `I < N AND unique = 1`.
@@ -364,7 +368,7 @@ Aşağıdaki tabloda her bir dersin konusu, kaynak markdown dosyası ve doğruda
 ### 🔹 Ders 13: C Programlama Diline Giriş: Yapı, Operatörler, Tipler, if ve Döngüler
 * **Genel Konular:**
   - Programlama dilleri
-    - Programlama dilleri biçimsel dillerdir (formal languages): her ifadenin tek bir anlamı vardır. Doğal dillerde (Türkçe, İngilizce) ise bir ifade birden fazla anlama gelebilir.
+    - Programlama dilleri biçimsel dillerdir (formal languages): her ifadenin tek bir anlamı vardır. Doğal dillerde (Türkçe, İngilizce) ise bir ifade birden fazla anlama gelebilir. (Ders sonrası not: hoca doğal dilleri programlama dillerinin üçüncü kategorisi olarak saydı; doğal diller büyük olasılıkla programlama dili değildir, biçimsel dillerin karşıtıdır.)
   - Derlenen ve yorumlanan diller
     - Derlenen diller (compiled languages): kaynak kod (source file) derleyici (compiler) ile nesne koduna (object code) çevrilir. Birden fazla kaynak dosya varsa birden fazla nesne kodu oluşur. Bağlayıcı (linker) bunları tek bir çalıştırılabilir koda (executable) birleştirir. C bu mantıkla çalışır.
   - C programlama dili
@@ -396,7 +400,7 @@ Aşağıdaki tabloda her bir dersin konusu, kaynak markdown dosyası ve doğruda
   - Hangi küme dışta, hangisi içte olmalı?
     - Soru: bir kümede birkaç milyon, diğerinde birkaç eleman varsa döngülerin sırası önemli mi?
   - Kesişim çözümünün C kodu (öğrencinin kodu üzerinden, 01:12:36 – 01:27:06)
-    - Kod OnlineGDB üzerinde birlikte incelendi. Kodun düzeltilmiş hâli "Detaylı Açıklamalar" bölümündedir.
+    - Kod ekranda birlikte incelendi. Kodun düzeltilmiş hâli "Detaylı Açıklamalar" bölümündedir.
   - Çok boyutlu diziler (multi-dimensional arrays)
     - İki boyutlu dizi (2-D array) matristir. Satır sayısı (row number) N, sütun sayısı (column number) M ise ilk göz `mtr[0][0]`, son göz `mtr[N-1][M-1]` olur.
   - Örnek soru: matrisin kolon toplamları
@@ -406,7 +410,7 @@ Aşağıdaki tabloda her bir dersin konusu, kaynak markdown dosyası ve doğruda
 * **Hocanın Vurgusu:**
   - Sınavda verilen örnek değerler yalnızca örnektir.
     - Çözümü örneğin boyutlarına göre değil, genel N ve M için yazın.
-  - Soruda analiz istenirse, örneğin "hangi küme içte olmalı?", cevabı mutlaka analiz yaparak verin. "Olur gibi gözüküyor" demek yetmez.
+  - Soruda analiz istenirse verilen örnek üzerinde, örnek yoksa kendi örneğinizle mutlaka analiz yapın. "Olur gibi gözüküyor" demek yetmez.
   - Adım sayısı belli değilse ve bir koşul sağlandığında döngüden erken çıkmak gerekiyorsa while kullanılır.
     - Kesişim ve simetri sorularında while, gereksiz kontrolleri önler.
   - While'dan çıktıktan sonra neden çıkıldığı bilinmez: eleman bulundu mu, yoksa dizinin sonuna mı gelindi?
@@ -417,7 +421,7 @@ Aşağıdaki tabloda her bir dersin konusu, kaynak markdown dosyası ve doğruda
 
 ### 🔹 Ders 17: Vize 1 Sorularının Çözümü (Test ve Yazılı Bölüm)
 * **Genel Konular:**
-  - Bu ders bir uygulama dersidir. Dersin ilk bölümü sınav ve ödev teslimiyle ilgili konuşmalara ayrılmıştır. Ardından birinci ara sınavın (Vize 1) soruları birlikte çözülür.
+  - Bu ders bir uygulama dersidir. Birinci ara sınavın soruları birlikte çözülür.
   - Test bölümü
     - Soru 1: AND, OR, XOR, "Hepsi" ve NOT seçeneklerinden hangisi veya hangileri, toplamda en az sayıda ikili input için 1 üretir?
   - Yazılı bölüm, soru 1: onaltılık karakter dizisinin onluk karşılığı
@@ -432,16 +436,16 @@ Aşağıdaki tabloda her bir dersin konusu, kaynak markdown dosyası ve doğruda
   - İkiye tümleyen notasyonunda sayının işaretini en soldaki bit belirler.
     - 1 ise sayı negatiftir.
   - ASCII kodlarının sayısal değerlerini (ör. '0' = 48, 'A' = 65) ezberden kullanmayın.
-    - Hoca bunu derste defalarca söyledi. `dizi[i] - '0'` ve `dizi[i] - 'A' + 10` gibi karakter sabitleriyle çalışın. Sayısal değerlerle yazılan çözümlerden puan kırılır.
+    - Hoca bunu derste defalarca söyledi. `dizi[i] - '0'` ve `dizi[i] - 'A' + 10` gibi karakter sabitleriyle çalışın.
   - Adım sayısı belli ise for, belli değilse while kullanılır.
-    - Teknik olarak çalışsa da yanlış döngü türü kavramsal bir hatadır ve bundan sonraki sınavlarda önemli puan kırılır.
-* **Detaylı Açıklamalar:** Dersin ilk yarısında birinci ara sınavın teslim sürecindeki sorunlar konuşulur. Hoca, sınav ve ödev açıklamalarının dikkatle okunmasının önemini vurgular. Ardından test bölümündeki 10 soru sınıfla birlikte, süre tutularak çözülür. Hoca bu çözümün 14 dakika sürdüğünü ve soruların derste anlatılan bilgilerin yorumlanmasıyla çözülebildiğini gösterir. Sonra yazılı bölümdeki iki algoritma sorusunun çözüm yolu tartışılır. Hoca, öğrencilerden bu iki sorunun akış diyagramını ve kodunu bir sonraki derse kadar yeniden çözmelerini ister.
+    - Teknik olarak çalışsa da yanlış döngü türü kavramsal bir hatadır.
+* **Detaylı Açıklamalar:** Hoca, soru açıklamalarının dikkatle okunmasının önemini vurgular. Ardından test bölümündeki 10 soru sınıfla birlikte çözülür. Hoca soruların derste anlatılan bilgilerin yorumlanmasıyla çözülebildiğini gösterir. Sonra yazılı bölümdeki iki algoritma sorusunun çözüm yolu tartışılır. Hoca, öğrencilerden bu iki sorunun akış diyagramını ve kodunu bir sonraki derse kadar yeniden çözmelerini ister.
 
 ### 🔹 Ders 18: Dizilerde Temel İşlemler: Arama, Ekleme, Silme ve Bubble Sort
 * **Genel Konular:**
   - Diziler üzerindeki temel işlemler (basic operations on array)
     - Arama (search): istenen bir bilginin dizide olup olmadığına bakılır.
-  - Ek bilgi: `"A"` ile `'A'` farkı
+  - `"A"` ile `'A'` farkı (öğrenci sorusu, 00:14:25)
     - Çift tırnak (`"A"`) bir karakter grubudur: `A` ve onu izleyen null karakterini içerir. Karakter dizisinde saklanır.
   - Sırasız dizide arama (unsorted array)
     - Akış diyagramı: N ve `Dizi[N]` okunur, aranan X okunur, `I = 1`.
@@ -521,17 +525,13 @@ Aşağıdaki tabloda her bir dersin konusu, kaynak markdown dosyası ve doğruda
 * **Genel Konular:**
   - Akış diyagramı ve kod ilişkisi
     - Önce kodu yazıp sonra akış diyagramını çizmek yanlış bir alışkanlıktır. Algoritma tasarlanırken akış diyagramı çizmek faydalıdır. Ancak çok deneyimli olunca bu adım atlanabilir, ilk yılda atlanmamalıdır.
-  - 3. ödevle ilgili teknik notlar
-    - Matrisin her satırına tek bir kelime okunacağı için `scanf("%s", ...)` yeterlidir. Önceki ödevde boşluklu metin okunduğu için `gets` gerekiyordu.
   - İki sıralı diziyi birleştirme (merge) — öğrenci çözümleri
-    - Birinci çözüm: `I = 1`, `J = 1`. While: `I < N AND J < M`. `Dizi1[I] > Dizi2[J]` ise `result[K] = Dizi2[J]`, `J = J + 1`. Değilse `result[K] = Dizi1[I]`, `I = I + 1`. Ardından `result` yazdırılır.
+    - Birinci çözüm: `I = 1`, `J = 1`. While: `I < N AND J < M`. `Dizi1[I] > Dizi2[J]` ise `result[K] = Dizi2[J]`, `J = J + 1`. Değilse `result[K] = Dizi1[I]`, `I = I + 1`. Ardından `result` yazdırılır. Hoca bu koşulu kabul etti. (Ders sonrası not: indisler 1'den başladığı için büyük olasılıkla `I <= N` ve `J <= M` olmalıdır.)
   - Sınır kontrolü yerine diziye "nöbetçi" eleman eklemek
     - Fikir: iki dizinin sonuna, dizilerin bütün elemanlarından büyük bir değer eklenirse, bir dizinin bitip bitmediğini ayrıca kontrol etmeye ve kalanları ayrıca eklemeye gerek kalmaz.
   - Merge sort'un genel fikri (yalnızca soru üzerine)
     - Sırasız dizi her turda ikiye bölünür, tek eleman kalana kadar bölme sürer. Sonra parçalar sıralı şekilde birleştirilerek yukarı doğru çıkılır. Bu bir böl ve yönet (divide and conquer) yaklaşımıdır ve bu dersin konusu değildir.
 * **Hocanın Vurgusu:**
-  - İkinci ara sınav yapılmayacak.
-    - Ödevler ve dönem projesi değerlendirmede büyük ağırlığa sahip. Ödevlerde kopya tespit edilenler kopya olarak değerlendirilir. Ödevi yapan kişi de mağdur olur, bu yüzden ödevleri kendiniz yapın.
   - Bir işlem hem true hem false kolunda yapılacaksa iki kola ayrı ayrı yazmak yerine kolların birleştiği yere bir kez yazın.
     - Örnek: birleştirmede `K = K + 1`.
   - `A[I] > B[J]` sorusunun cevabı hayır ise bu `A[I] <= B[J]` demektir.
@@ -540,12 +540,14 @@ Aşağıdaki tabloda her bir dersin konusu, kaynak markdown dosyası ve doğruda
     - Gerçekten gereksiz bir değişken varsa kullanmayın, ama bir değişken az kullanmak bu tür durumlarda özel bir kazanç sağlamaz.
   - Nadiren karşılaşılacak bir durum için her seferinde ek kontrol yapmayın.
     - Örneğin "ikinci dizinin ilk elemanı birincinin son elemanından büyükse doğrudan uç uca ekle" kontrolü, 100 seferden belki 7'sinde işe yarar ve 93 kez boşuna yapılır.
-* **Detaylı Açıklamalar:** Dersin ilk yarım saati 3. ödevle ilgili sorulara ve değerlendirme sistemiyle ilgili sohbete ayrılmıştır. Ardından önceki derste verilen "iki sıralı diziyi birleştirme" problemi için öğrencilerin gönderdiği çözümler ekranda incelenir. Son bölümde dizilerin sonuna büyük bir değer ekleyerek sınır kontrolünden kurtulma fikri tartışılır ve doğru döngü koşulu bulunur.
+  - Analizi açık ve düzenli yazın.
+    - Kağıda hızlıca karalanan bir analizde hata görülmez. Bu derste AND ile OR'un karıştırılması ancak düzenli analizle ortaya çıktı.
+* **Detaylı Açıklamalar:** Önceki derste verilen "iki sıralı diziyi birleştirme" problemi için öğrencilerin gönderdiği çözümler ekranda incelenir. Son bölümde dizilerin sonuna büyük bir değer ekleyerek sınır kontrolünden kurtulma fikri tartışılır ve doğru döngü koşulu bulunur.
 
 ### 🔹 Ders 22: Bilgisayar Mimarisi, Haberleşme ve İşletim Sistemlerine Giriş
 * **Genel Konular:**
   - Ödevle ilgili notlar
-    - Sözlük uygulamasında küçük/büyük harf karışık verilirse genelde bütün girdi küçük ya da büyük harfe çevrilir ve sözlük tek biçimde saklanır. Bu ödevde zorunlu değildir.
+    - Sözlük uygulamasında küçük/büyük harf karışık verilirse genelde bütün girdi küçük ya da büyük harfe çevrilir ve sözlük tek biçimde saklanır.
   - Bilgisayar mimarisi (computer architecture)
     - Bilgisayarın işini yapmasını sağlayan bütün birimler mimarinin parçasıdır: CPU (Central Processing Unit), ana bellek (main memory), anakart (motherboard) vb. Anakart, bütün parçaların birbiriyle konuşmasını sağlar.
   - Makine dili ve komut seti
@@ -599,7 +601,7 @@ Aşağıdaki tabloda her bir dersin konusu, kaynak markdown dosyası ve doğruda
   - Kümelerde bağıntı özellikleri
     - Bir küme ve elemanları arasındaki ikili bağıntılar verilir. Örnek küme $\{1, 2, 3, 5, 7\}$, bağıntılar $\{(1,2), (3,5), (2,1), (3,7), (7,3), (1,1), (5,3)\}$.
   - Simetri kontrolü için çözüm 1: bağıntı matrisi
-    - Kümenin elemanları kadar satır ve sütunu olan bir matris kullanılır. Örnek için 7×7. Her $(a, b)$ bağıntısı için `matris[a][b] = 1` yapılır, diğer gözler 0'dır.
+    - Eleman değerlerini indis olarak kullanan bir matris kurulur. Kümenin en büyük elemanı 7 olduğu için örnekte 7×7'lik matris kullanılır; kümede ise 5 eleman vardır. Her $(a, b)$ bağıntısı için `matris[a][b] = 1` yapılır, diğer gözler 0'dır.
   - Simetri kontrolü için çözüm 2: matris kullanmadan
     - Bağıntılar iki sütunlu bir yapıda saklanır.
   - Kümelerle ilgili başka problem örnekleri
@@ -608,15 +610,13 @@ Aşağıdaki tabloda her bir dersin konusu, kaynak markdown dosyası ve doğruda
     - Bir polinomun kökleri bilgisayarla bulunabilir. İkinci dereceden bir denklemde diskriminant $\Delta = b^2 - 4ac$ hesaplanır. $\Delta \ge 0$ ise gerçel kök vardır, $\Delta < 0$ ise yoktur.
 * **Hocanın Vurgusu:**
   - Uç durumları (ilk, orta ve son sütunu silmek gibi) mutlaka deneyin.
-    - Ödevlerde farklı durumlar için ekran çıktısı istenmesinin sebebi budur.
-  - Final soruları muhtemelen ara sınavdan biraz daha zor olacaktır.
-    - İkinci ara sınav yapılmadığı için buna göre hazırlanın.
   - Transpoz kontrolünde bütün matrisi gezmeyin.
     - Köşegenin bir tarafı yeterlidir.
   - İlk eşitsizlikte çıkılabilecek döngülerde while kullanın.
     - Adım sayısı belli değildir.
   - Bir problemi sıralayarak çözmek her zaman akla gelir, ama sıralama maliyetli bir iştir.
     - Gerekmiyorsa sıralamayın.
+  - Karakter sabiti (`'A'`) ile ASCII değeri (65) arasında performans farkı yoktur.
 * **Detaylı Açıklamalar:** Ders kısa tutulmuştur. Önce ara sınavın ikinci sorusunun akış diyagramı gösterilir ve son sütunun silinmesi gibi bir uç durum için algoritmanın doğru çalıştığı analiz edilir. Ardından kümelerde bağıntı kavramı hatırlatılır ve bir bağıntının simetrik olup olmadığını bulan algoritma için iki farklı yaklaşım tartışılır. Kümelerle ilgili başka soru tipleri ve polinomlarla ilgili problemler konuşulur. Son bölümde öğrencilerin C ve işletim sistemleriyle ilgili soruları cevaplanır. Hoca, bir sonraki iki haftanın uygulama derslerinde ekranda C kodu yazacağını söyler.
 
 ### 🔹 Ders 25: Dönem Projesi (Kızma Birader) ve Canlı C Kodlama: Kelime Karşılaştırma
@@ -642,7 +642,7 @@ Aşağıdaki tabloda her bir dersin konusu, kaynak markdown dosyası ve doğruda
     - Öğrenciler de böyle çalışabilir.
   - `\t` bir sekme kadar boşluk bırakır.
     - `%3d`, `%5.2f` gibi formatlı yazımlarla çıktı hizalanabilir.
-* **Detaylı Açıklamalar:** Dersin ilk bölümünde ara sınav sonuçları ve dönem projesi konuşulur. Hoca, proje dokümanındaki kuralları ve öğrencilerin sorularını tek tek cevaplar. Aradan sonra OnlineGDB üzerinde öğrencilerle birlikte iki küçük C programı yazılır. Hoca kodu bilinçli olarak hızlı yazar ve hataların birlikte bulunmasını sağlar.
+* **Detaylı Açıklamalar:** Dersin ilk bölümünde ara sınavda sık görülen hatalar ve dönem projesi konuşulur. Hoca, proje dokümanındaki kuralları ve öğrencilerin sorularını tek tek cevaplar. Aradan sonra online bir derleyici üzerinde öğrencilerle birlikte iki küçük C programı yazılır. Hoca kodu bilinçli olarak hızlı yazar ve hataların birlikte bulunmasını sağlar.
 
 ### 🔹 Ders 26: İşletim Sistemleri (Paging, Boot, Süreç Yönetimi) ve Bilgisayar Ağları
 * **Genel Konular:**
@@ -666,23 +666,23 @@ Aşağıdaki tabloda her bir dersin konusu, kaynak markdown dosyası ve doğruda
   - Süreç geçişi çok sık olursa performans düşer.
   - Kesmeler olmadan bilgisayarın çevresiyle (klavye, fare, diğer süreçler) koordineli çalışması mümkün değildir.
   - Router ile switch'i karıştırmayın: switch aynı tip ağ içinde, router farklı tip ve uzak ağlar arasında çalışır.
-* **Detaylı Açıklamalar:** Ders, önceki derste başlanan işletim sistemi konusuyla devam eder: sayfalama, firmware, açılış süreci, süreçlerin yönetimi, kesmeler ve kilitlenme anlatılır. Arada dersle ilgili bir değerlendirme anketi doldurulur. İkinci yarıda bilgisayar ağlarına geçilir: ağların sınıflandırılması, topolojiler, ağ cihazları, protokoller, süreçler arası iletişim modelleri, bulut bilişim ve internetin yapısı anlatılır. Son bölümde dönem projesiyle ilgili sorular cevaplanır. Kalan birkaç ağ konusu ve binary search bir sonraki derse bırakılmıştır.
+* **Detaylı Açıklamalar:** Ders, önceki derste başlanan işletim sistemi konusuyla devam eder: sayfalama, firmware, açılış süreci, süreçlerin yönetimi, kesmeler ve kilitlenme anlatılır. İkinci yarıda bilgisayar ağlarına geçilir: ağların sınıflandırılması, topolojiler, ağ cihazları, protokoller, süreçler arası iletişim modelleri, bulut bilişim ve internetin yapısı anlatılır. Son bölümde dönem projesiyle ilgili sorular cevaplanır. Kalan birkaç ağ konusu ve binary search bir sonraki derse bırakılmıştır.
 
 ### 🔹 Ders 27: Canlı C Kodlama: Min/Max ve Kısmi Sıralama ile Medyan
 * **Genel Konular:**
   - Dönem projesiyle ilgili sorular
-    - Rapordaki "çözüm" kısmında algoritma değil, kullanılan yaklaşımlar anlatılır: tahtanın nasıl oluşturulduğu, kontrollerin nasıl yapıldığı, hangi tasarımın ne avantaj sağladığı veya neyin yeterince verimli olmadığı. Bir uzunluk sınırı yoktur.
+    - Fonksiyon kullananlar için: değişkenler fonksiyonların içinde (yerel, local) tanımlanmalıdır. Fonksiyonların dışında tanımlanan global değişkenler bu ödevde kullanılmamalıdır. Bir fonksiyonda tanımlanan değişken yalnızca orada geçerlidir. Değişkenler diğer fonksiyonlara parametre olarak iki şekilde aktarılır: adresi gönderilerek ya da değerinin bir kopyası gönderilerek. Bir fonksiyon yalnızca bir değer döndürebilir.
   - Canlı kodlama 1: dizideki en küçük ve en büyük eleman
     - Eleman sayısı `int`, veri seti `float veriSeti[100]` olarak tanımlanır. Elemanlar `scanf("%f", &veriSeti[i])` ile tek tek okunur. `veriSeti[n]` ya da `veriSeti[elemanSayisi]` gibi tek bir göze okumak sık yapılan bir hatadır.
   - Formatlı yazdırma
-    - `%.2f` gibi biçimlerde noktadan sonraki sayı, kesirli kısmın kaç basamak yazdırılacağını belirler. Yazdırılırken yuvarlama yapılır: örneğin 5.99 tam sayıya yuvarlanınca 6, −99.99 da −100 olur.
+    - `%.2f` gibi biçimlerde noktadan sonraki sayı, kesirli kısmın kaç basamak yazdırılacağını belirler. Yazdırılırken yuvarlama yapılır: derste küsurat yazdırılmayan çalıştırmada (büyük olasılıkla `%.0f`) 5.99, 6 ve −99.99, −100 olarak görünür.
   - Medyan (ortanca)
     - Medyan, küçükten büyüğe sıralanmış bir veri grubunda en ortadaki elemandır.
   - Canlı kodlama 2: karakter dizisinin medyanı
     - Veri seti `char` tipindedir ve `%c` ile okunur.
 * **Hocanın Vurgusu:**
-  - Bir algoritma doğru çalışsa bile gereksiz iş yapıyorsa sınavda puan farkı olur.
-    - Örneğin medyan için tüm diziyi sıralayan ile ortasına kadar sıralayan arasında puan farkı olur.
+  - Bir algoritma doğru çalışsa bile gereksiz iş yapmamalıdır.
+    - Örneğin medyan için tüm diziyi sıralamak yerine ortasına kadar sıralamak yeterlidir.
   - İlk akla gelen basit çözümler genelde kaba kuvvet (brute force) yaklaşımlardır.
     - Bazıları zaten verimlidir, ama bazılarının iyileştirilmesi gerekir. Problemin ne istediğini, girdiyi ve çıktıyı doğru tespit edip ona göre çözüm üretin.
   - C büyük-küçük harfe duyarlıdır.
@@ -690,12 +690,10 @@ Aşağıdaki tabloda her bir dersin konusu, kaynak markdown dosyası ve doğruda
   - Kodda yapılan her değişiklikten sonra kod yeniden derlenmelidir.
     - Derlenmezse değişiklik programa yansımaz.
   - Tek işlemli bloklarda süslü parantez zorunlu değildir, ama kullanmak her zaman daha garantidir.
-* **Detaylı Açıklamalar:** Dersin ilk bölümünde dönem projesi raporuyla ve kodun yapısıyla ilgili sorular cevaplanır. Ardından OnlineGDB üzerinde iki program birlikte yazılır: bir veri setinin en küçük ve en büyük elemanını (ve yerini) bulan program ve bir karakter dizisinin medyanını bulan program. Hoca, kodu yazarken bilerek bazı hatalar yapar ve öğrencilerle birlikte bulur.
+* **Detaylı Açıklamalar:** Dersin ilk bölümünde dönem projesinin kod yapısıyla ilgili sorular cevaplanır. Ardından ekranda iki program birlikte yazılır: bir veri setinin en küçük ve en büyük elemanını (ve yerini) bulan program ve bir karakter dizisinin medyanını bulan program. Hoca, kodu yazarken bilerek bazı hatalar yapar ve öğrencilerle birlikte bulur.
 
 ### 🔹 Ders 28: İnternet Uygulamaları, Web Teknolojileri ve Binary Search
 * **Genel Konular:**
-  - Dönem projesi videosu
-    - 3-6 dakikalık bir video çekilir. Kamera açık olmalı ve öğrenci önce kendini tanıtmalıdır.
   - IP adresleri ve alan adları
     - IPv4 adresleri 32 bittir (4 byte). Dünyadaki bütün cihazların benzersiz bir adresle birbirine erişebilmesi için 128 bitlik IPv6'ya geçiş çalışmaları sürmektedir. Nesnelerin interneti (IoT) cihazlarının artması IPv6'yı zorunlu hâle getirmiştir.
   - İnternet uygulamaları ve protokoller
@@ -718,6 +716,6 @@ Aşağıdaki tabloda her bir dersin konusu, kaynak markdown dosyası ve doğruda
   - Döngü koşulundaki `first <= last` yerine `first < last` yazılması da doğru çalışır görünüyor.
     - Çıkışta zaten `A[middle] = X` kontrolü yapıldığı için eşitlik bir tur fazla dönmeye yol açar.
   - Sıralı dizilerle çalışmak ve log N karmaşıklığında algoritmalar tasarlamak verimliliği çok artırır.
-* **Detaylı Açıklamalar:** Dönemin son dersidir. Önce dönem projesinin videosuyla ilgili kurallar açıklanır. Ardından ağ konusunun kalan kısımları (IP adresleri, alan adları, internet uygulamaları, mobil haberleşme, akış uygulamaları, web teknolojileri) kısaca anlatılır. Son bölümde binary search algoritması öğrencilere 20 dakika çözdürülür ve birlikte çizilip analiz edilir.
+* **Detaylı Açıklamalar:** Dönemin son dersidir. Ağ konusunun kalan kısımları (IP adresleri, alan adları, internet uygulamaları, mobil haberleşme, akış uygulamaları, web teknolojileri) kısaca anlatılır. Son bölümde binary search algoritması öğrencilere 20 dakika çözdürülür ve birlikte çizilip analiz edilir.
 
 **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
