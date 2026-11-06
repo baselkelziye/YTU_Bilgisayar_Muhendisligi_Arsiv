@@ -131,7 +131,7 @@
 
 - Bir uygulamaya sonradan yeni özellik eklemek için bırakılan "açık kapıdır". Bu bir tasarım kalıbıdır.
 - NetBeans ve Eclipse'te UML çizimi gibi işlevler plugin ile eklenir.
-- Ders sonunda bir öğrenci (Toygar) ekran paylaşıp IntelliJ'i tanıttı. NetBeans plugin listesinde "PlantUML Integration" ve "Simple UML" gibi eklentiler bulundu.
+- Ders sonunda bir öğrenci ekran paylaşıp IntelliJ'i tanıttı. NetBeans plugin listesinde "PlantUML Integration" ve "Simple UML" gibi eklentiler bulundu.
 
 ### Ders sonrası notlar
 

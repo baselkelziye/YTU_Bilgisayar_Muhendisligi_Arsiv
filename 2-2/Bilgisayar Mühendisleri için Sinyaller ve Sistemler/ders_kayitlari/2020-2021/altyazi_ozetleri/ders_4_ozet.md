@@ -36,7 +36,7 @@
 - Doğrusal ve zamanla değişmez (LTI) sistemler dersin geri kalanının temelidir. Konvolüsyon bunların üzerine kurulur.
 - Nedensel (causal) ile gündelik (casual) kelimelerini karıştırmayın.
 - Anlamadığınız yeri sormaktan çekinmeyin. Hoca bir derste bu soruyu 30-35 kez sorduğunu, çok az geri dönüş aldığını söyledi.
-- İnsan öğrenmesi modelini (integratör + geri besleme) doğru yorumlayan öğrenciye (Kayra) bonus verildi.
+- İnsan öğrenmesi modelini (integratör + geri besleme) doğru yorumlayan öğrenciye bonus verildi.
 
 ## Kısa Tekrar Notları
 

@@ -14,7 +14,7 @@
     - `int B[toplam]` gibi değişkene bağlı boyutla dizi tanımlanmış ve dosya `.cpp` olarak kaydedilmiş. Hoca bunun C'de hata olduğunu, büyük değerlerde segmentation fault alınabileceğini söyler.
     - Dizi fonksiyonun ortasında tanımlanmış. C'de değişkenler başta tanımlanmalıdır.
   - Hoca, iç içe olmayan iki ayrı `for` döngüsünün ($2n$) tek döngüden ($n$) asimptotik olarak farklı olmadığını, ama iç içe iki döngünün $n^2$'ye çıkabileceğini hatırlatır. Ek bir döngüden kaçınmak için yanlış bir boyut kullanmak iyi bir takas değildir.
-  - Zafer'in kodunda bir fonksiyonun parantezi kapanmamış, `j` ilk değersiz kullanılmış ve tanımlanmamış bir değişken var. Kod biçimlendirmesi (girinti, indentation) üzerine kısa bir konuşma geçer.
+  - Bir öğrencinin kodunda bir fonksiyonun parantezi kapanmamış, `j` ilk değersiz kullanılmış ve tanımlanmamış bir değişken var. Kod biçimlendirmesi (girinti, indentation) üzerine kısa bir konuşma geçer.
 - Kodlama standartları üzerine
   - Hoca, C yazım kurallarının (değişkenlerin başta tanımlanması, dizi boyutlarının sabit verilmesi, fonksiyonlara değer aktarımı) kendi uydurduğu bir stil olmadığını, bölümdeki diğer hocaların da bunu istediğini söyler. Örneğin global değişken kullanmamanın işletim sistemlerindeki race condition ile ilgili bir gerekçesi vardır.
   - Tutorial siteleri faydalıdır, ama özel bir durum için doğru görünen bilgiler genele uygulandığında yanlış olabilir. Hoca, derin öğrenme üzerine bir firma seminerinde bir saat içinde 5-6 teknik yanlış duyduğunu anlatır.

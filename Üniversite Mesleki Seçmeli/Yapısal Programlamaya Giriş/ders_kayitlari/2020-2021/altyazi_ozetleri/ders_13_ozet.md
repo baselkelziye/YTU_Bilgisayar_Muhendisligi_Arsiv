@@ -64,10 +64,10 @@
   - `srand` `main`'in başında bir kez çağrılır. `rand` istenildiği kadar çağrılır. `srand`'ı döngüye koymak yaygın bir hatadır ve gereksizdir.
   - Ertesi gün: zar, 52 kart, Gauss dağılımı, robot örneği ve pi sayısının bulunması.
 - Ders sonrası sorular
-  - Zafer: `for` koşulunda `j = n-i-1` yazılmış, `expression is not assignable` hatası ve hep aynı çıktı. Koşulda `==` gerekir. Atama, 0 dışında her değerde doğru sayılır. Ayrıca `exchange` değişkeni 0 ile başlatılıp `while` içinde 1 yapılmış. Ya 1 ile başlatılmalı ya da `do-while` kullanılmalı.
+  - Bir öğrenci: `for` koşulunda `j = n-i-1` yazılmış, `expression is not assignable` hatası ve hep aynı çıktı. Koşulda `==` gerekir. Atama, 0 dışında her değerde doğru sayılır. Ayrıca `exchange` değişkeni 0 ile başlatılıp `while` içinde 1 yapılmış. Ya 1 ile başlatılmalı ya da `do-while` kullanılmalı.
   - Hoca `do-while`'ı önerir: koşul ilk turda kontrol edilmeden bir kez çalışır, ikili aramada ve giriş (login) işlemlerinde aynı kodu iki kez yazmayı önler. MATLAB'da `do-while` yoktur.
   - Tarık: seyrek matris laboratuvar sorusunda büyük satır sayısında program çöküyordu. Dev-C++'ta debug için dosyanın proje olarak açılması gerekti. Hoca, matrisi `MAX`'a göre değil gerçek satır ve sütun sayısına göre yazdırmasını, döngü sınırlarını kontrol etmesini ve boş `else` bırakmamasını söyler. Hata büyük olasılıkla matrisin dışına taşmadır.
-  - Zafer'in insertion sort'u yanlış sıralıyordu. Insertion sort ikinci elemandan (`i = 1`) başlar.
+  - Bir öğrencinin insertion sort'u yanlış sıralıyordu. Insertion sort ikinci elemandan (`i = 1`) başlar.
   - Bir öğrenciye Dev-C++'ta debug kullanımı gösterilir: breakpoint, `Next line`, `Into function`, değişkenin üzerine gelme ve `Add watch`. Değişiklikten sonra debug'dan önce derlemek gerekir.
 - Laboratuvar 2 (aynı gün, asistanlar tarafından)
   - Kurallar: dosya adı `Lab2_ogrenciNo.c` biçiminde olacak, öğrenci adı kodda yazacak. C++ dosyası gönderilmeyecek. `for` içinde değişken tanımlanmayacak, bütün tanımlar fonksiyonun başında olacak. Süre 85 dakika (80 + 5 dakika yükleme). Formdan sonra e-postayla gönderilen ödevler kabul edilmeyecek. Forma sık kullanılan bir e-posta adresi yazılmalı.

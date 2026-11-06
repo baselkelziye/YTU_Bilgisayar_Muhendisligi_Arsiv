@@ -22,7 +22,7 @@
   - `new` ile nesne oluşturma, nesneyi yazdırma, referans mantığı, çöp toplayıcı (garbage collector).
 - UML eklentisi
   - Easy UML eklentisi NetBeans'e elle (`.nbm` dosyalarıyla) kuruldu. Kodu verilen sınıflardan sınıf diyagramı üretildi.
-  - Bir öğrenci (Toygar) ekranını paylaşıp IntelliJ'deki Swing UI Designer ve PlantUML eklentisini gösterdi.
+  - Bir öğrenci ekranını paylaşıp IntelliJ'deki Swing UI Designer ve PlantUML eklentisini gösterdi.
 - `JFrame` ile hazır grafik arayüz formu kısaca gösterildi. Bu konu dönem sonunda işlenecek.
 
 ## Hocanın Özellikle Vurguladığı Kısımlar

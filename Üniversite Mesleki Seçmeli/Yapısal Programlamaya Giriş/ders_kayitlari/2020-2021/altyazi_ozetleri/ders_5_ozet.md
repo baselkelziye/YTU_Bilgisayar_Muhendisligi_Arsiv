@@ -45,7 +45,7 @@
   - Dizi 1, 1, 2, 3, 5, 8, ... diye gider. Her terim kendinden önceki iki terimin toplamıdır. Bazı kaynaklarda dizi 0 ile başlar.
   - Dizi (array) ile çözüm: `F[1] = F[2] = 1`, `F[i] = F[i-1] + F[i-2]`. Döngü N kez döner, ama N elemanlı bir dizi gerekir. N = 10 milyon için 10 milyonluk dizi ayrılır. Bellek açısından verimsizdir.
   - Diziye gerek yoktur, çünkü yalnızca son iki terim lazımdır. Üç değişkenle: `c3 = c1 + c2; c1 = c2; c2 = c3;`.
-  - Zafer'in önerisiyle iki değişkenle: `c2 = c1 + c2; c1 = c2 - c1;`. İkinci satırda `c2 - c1` eski `c2`'yi verir.
+  - Bir öğrencinin önerisiyle iki değişkenle: `c2 = c1 + c2; c1 = c2 - c1;`. İkinci satırda `c2 - c1` eski `c2`'yi verir.
 - Armstrong sayıları (basamaklarının küpleri toplamı kendine eşit olan sayılar)
   - 1'den 999'a kadar her sayı için basamaklar ayrılır: `a = i / 100`, `b = (i % 100) / 10` (veya `(i - a*100) / 10`), `c = i % 10`.
   - C'de tam sayı bölmesi sonucu aşağı yuvarlar (floor). Akış diyagramında bu $\lfloor x \rfloor$ ile gösterilir. $\lceil x \rceil$ ise yukarı yuvarlamadır (ceil).
