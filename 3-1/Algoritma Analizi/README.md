@@ -57,3 +57,4 @@
 ## 👨‍🏫 👩‍🏫 Dersi Yürüten Akademisyenler:
 - MEK
 - MAG
+- AEL

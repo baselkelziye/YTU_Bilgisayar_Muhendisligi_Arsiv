@@ -67,6 +67,7 @@
 #### 👨‍🏫 👩‍🏫 Dersi Yürüten Akademisyenler:
 - MEK
 - MAG
+- AEL
 
 ### 📘 Genel Staj
 

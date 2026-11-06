@@ -896,6 +896,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
     - [MSA](#-doç-dr-mehmet-sıddık-aktaş)
     - [FÇ](#-dr-furkan-çakmak)
     - [YES](#-dr-yunus-emre-selçuk)
+    - [AEL](#-dr-ahmet-elbir--en-popüler-hoca-38-oy)
   - 📂 [Ders Klasörü](./2-1/Nesneye%20Y%C3%B6nelik%20Programlama)
 
 ### 🗓 2. Yıl - Bahar
@@ -1009,6 +1010,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
   - 👨‍🏫 👩‍🏫 **Dersi Yürüten Akademisyenler:**
     - [MEK](#-prof-dr-m-elif-karslıgil)
     - [MAG](#-doç-dr-m-amaç-güvensan)
+    - [AEL](#-dr-ahmet-elbir--en-popüler-hoca-38-oy)
   - 📂 [Ders Klasörü](./3-1/Algoritma%20Analizi)
 
 
@@ -4120,6 +4122,8 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
   - 📖 [Yapısal Programlama](#-yapısal-programlama)
   - 📖 [Yapısal Programlamaya Giriş](#-yapısal-programlamaya-giriş)
   - 📖 [İşletim Sistemleri](#-i̇şletim-sistemleri)
+  - 📖 [Algoritma Analizi](#-algoritma-analizi)
+  - 📖 [Nesneye Yönelik Programlama](#-nesneye-yönelik-programlama)
 - ⭐ **Yıldız Sayıları:**
   - 🎭 Dersi Zevkli Anlatır Mı:	★★★★★★☆☆☆☆
   - 🛣️ Dersi Kolay Geçer Miyim:	★★★★★★☆☆☆☆
