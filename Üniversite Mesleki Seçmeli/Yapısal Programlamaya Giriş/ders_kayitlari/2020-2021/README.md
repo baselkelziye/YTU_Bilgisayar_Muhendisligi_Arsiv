@@ -1,43 +1,47 @@
-# Yapısal Programlamaya Giriş Ders Kayıtları & Çalışma Özetleri
+# Yapısal Prog. Giriş Ders Kayıtları & Çalışma Özetleri
 
 > **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
 
 ### 📋 Genel Bilgiler
-* **Ders:** Yapısal Programlamaya Giriş (BLM1012)
+* **Ders:** Yapısal Prog. Giriş (BLM1012)
 * **Hoca:** Dr. Ahmet Elbir
 * **Dönem:** Bahar
 * **Akademik Yıl:** 2020-2021
 * **Şube:** BLM1012 - 2
 
-Bu dizin, ilgili ders kayıtlarının altyazı özetlerini, çalışma notlarını ve PDF kaynaklarını içermektedir.
+Bu dizin, ilgili ders kayıtlarının altyazılarını, kısa notlarını ve genişletilmiş notlarını içermektedir.
+
+* **Kısa not:** Tekrar için. Dersin konuları, hocanın vurguları ve kısa tekrar maddeleri.
+* **Genişletilmiş not:** Dersi izlemeden öğrenmek için. Dersin anlatım akışını baştan sona, örnekleri ve soru-cevaplarıyla anlatır.
+* `altyazilar/`: ders kayıtlarının altyazıları (.srt). Notların PDF'leri `kisa_notlar/` ve `genisletilmis_notlar/` klasörlerinde, markdown kaynakları bu klasörlerin içindeki `markdown/` klasöründedir.
 
 ## 📚 Ders Müfredatı ve Belge Dizini
 
-Aşağıdaki tabloda her bir dersin konusu, kaynak markdown dosyası ve doğrudan indirilebilir PDF formatındaki derlenmiş halleri listelenmiştir. Ders numaraları, kayıt arşivindeki ders kaydı sıra numaralarıdır (hafta numarası değildir).
+Aşağıdaki tabloda her bir dersin konusu ile kısa ve genişletilmiş notlarının markdown ve PDF halleri listelenmiştir. Ders numaraları, kayıt arşivindeki ders kaydı sıra numaralarıdır (hafta numarası değildir).
 
-| Ders No | Ders İçeriği / Konu Başlıkları | Kaynak Notlar (Markdown) | Çalışma Dosyası (PDF) |
+| Ders No | Ders İçeriği / Konu Başlıkları | Kısa Not | Genişletilmiş Not |
 | :---: | :--- | :---: | :---: |
-| **Ders 1** | Tanışma: Dersin Müfredattaki Yeri, Algoritma Öğrenmek ve Programlama Ortamı | [Özet](altyazi_ozetleri/ders_1_ozet.md) | [PDF (İndir)](ders_1_ozet.pdf) |
-| **Ders 2** | Bilgisayarın Yapısı, Komut Çevrimi, Verinin 0-1 ile Kodlanması ve Algoritmaya Giriş | [Özet](altyazi_ozetleri/ders_2_ozet.md) | [PDF (İndir)](ders_2_ozet.pdf) |
-| **Ders 3** | Sayı Sistemleri, İkiye Tümleme, IEEE 754 ve İyi Algoritmanın Ölçütleri | [Özet](altyazi_ozetleri/ders_3_ozet.md) | [PDF (İndir)](ders_3_ozet.pdf) |
-| **Ders 4** | Akış Diyagramı Örnekleri, Derleme ve Bağlama, C Temelleri, Veri Tipleri ve printf/scanf | [Özet](altyazi_ozetleri/ders_4_ozet.md) | [PDF (İndir)](ders_4_ozet.pdf) |
-| **Ders 5** | Algoritma İyileştirme: Gauss, Hızlı Üs, Pi ve e^x Serileri, Karşıt Örnek, Derleme Aşamaları | [Özet](altyazi_ozetleri/ders_5_ozet.md) | [PDF (İndir)](ders_5_ozet.pdf) |
-| **Ders 6** | Goldbach Kodları, Prosesin Bellek Bölgeleri, Algoritma Karşılaştırma ve Veri Yapılarına Giriş | [Özet](altyazi_ozetleri/ders_6_ozet.md) | [PDF (İndir)](ders_6_ozet.pdf) |
-| **Ders 7** | Swap Yöntemleri, Pisagor Üçlüsü, Floyd Üçgeni, Dizi Ters Çevirme ve Palindromlar | [Özet](altyazi_ozetleri/ders_7_ozet.md) | [PDF (İndir)](ders_7_ozet.pdf) |
-| **Ders 8** | Fonksiyonlar, Prototip, Değerle ve Referansla Çağırma, Bubble Sort ve İkili Arama | [Özet](altyazi_ozetleri/ders_8_ozet.md) | [PDF (İndir)](ders_8_ozet.pdf) |
-| **Ders 9** | İnterpolasyon Araması, Debug, Arama Algoritmalarının Karşılaştırması, Merge ve Lab-1 | [Özet](altyazi_ozetleri/ders_9_ozet.md) | [PDF (İndir)](ders_9_ozet.pdf) |
-| **Ders 10** | Dizilerin Fonksiyonlara Aktarılması, Pointer'lar, Pointer Aritmetiği ve Frekans Hesabı | [Özet](altyazi_ozetleri/ders_10_ozet.md) | [PDF (İndir)](ders_10_ozet.pdf) |
-| **Ders 11** | Matrislerin Fonksiyonlara Aktarılması, Seçim Sistemleri, Sayarak Sıralama, Çoğunluk Elemanı ve Simetrik Matris | [Özet](altyazi_ozetleri/ders_11_ozet.md) | [PDF (İndir)](ders_11_ozet.pdf) |
-| **Ders 12** | Fonksiyon Çağrısında Tip Dönüşümü ve İteratif Algoritmaların Analizi: Temel İşlem ve T(n) | [Özet](altyazi_ozetleri/ders_12_ozet.md) | [PDF (İndir)](ders_12_ozet.pdf) |
-| **Ders 13** | İteratif Algoritmaların Analizi: Toplam Formülleri, Geometrik Seri, Rastgele Sayılara Giriş ve Lab-2 | [Özet](altyazi_ozetleri/ders_13_ozet.md) | [PDF (İndir)](ders_13_ozet.pdf) |
-| **Ders 18** | Fonksiyonlarla Modüler Tasarım: Kesir İşlemleri, Structure Chart, OBEB ve Min-Max Fonksiyonları | [Özet](altyazi_ozetleri/ders_18_ozet.md) | [PDF (İndir)](ders_18_ozet.pdf) |
-| **Ders 19** | Fonksiyon Çağrısı ve Stack, En Yakın Çift Problemi, Çöpçatan ve Doktor Senaryoları, Özyinelemeye Giriş | [Özet](altyazi_ozetleri/ders_19_ozet.md) | [PDF (İndir)](ders_19_ozet.pdf) |
-| **Ders 20** | Özyinelemeli Fonksiyonlar: Faktöriyel, Hızlı Üs Alma, Recursion Tree, Merge Sort ve Final Projesi | [Özet](altyazi_ozetleri/ders_20_ozet.md) | [PDF (İndir)](ders_20_ozet.pdf) |
-| **Ders 21** | Özyinelemeli Algoritmaların Analizi: Recursion Tree, Merge Sort, Recurrence Bağıntıları ve Lab-3 | [Özet](altyazi_ozetleri/ders_21_ozet.md) | [PDF (İndir)](ders_21_ozet.pdf) |
-| **Ders 23** | Laboratuvar 4: Ampul ve Butonlar (Özyinelemeli Üçlü Toplam) | [Özet](altyazi_ozetleri/ders_23_ozet.md) | [PDF (İndir)](ders_23_ozet.pdf) |
-| **Ders 24** | Sepet Analizi, Makrolar, Stringler, Sezar Şifreleme ve Görüntüde Ortalama Filtresi | [Özet](altyazi_ozetleri/ders_24_ozet.md) | [PDF (İndir)](ders_24_ozet.pdf) |
-| **Ders 25** | Diziler ve Dinamik Bellek, Insertion Sort, Bağlı Listeler, Matris Çarpımı ve Zor Problemler | [Özet](altyazi_ozetleri/ders_25_ozet.md) | [PDF (İndir)](ders_25_ozet.pdf) |
-| **Ders 26** | Sepet Analizinde Üçlüler, Kumarbaz Problemi Simülasyonu, Ortanca Filtresi ve Resim Boyutlandırma | [Özet](altyazi_ozetleri/ders_26_ozet.md) | [PDF (İndir)](ders_26_ozet.pdf) |
+| **Ders 1** | Tanışma: Dersin Müfredattaki Yeri, Algoritma Öğrenmek ve Programlama Ortamı | [Markdown](kisa_notlar/markdown/ders_1_ozet.md) · [PDF](kisa_notlar/ders_1_ozet.pdf) | [Markdown](genisletilmis_notlar/markdown/ders_1_genisletilmis.md) · [PDF](genisletilmis_notlar/ders_1_genisletilmis.pdf) |
+| **Ders 2** | Bilgisayarın Yapısı, Komut Çevrimi, Verinin 0-1 ile Kodlanması ve Algoritmaya Giriş | [Markdown](kisa_notlar/markdown/ders_2_ozet.md) · [PDF](kisa_notlar/ders_2_ozet.pdf) | [Markdown](genisletilmis_notlar/markdown/ders_2_genisletilmis.md) · [PDF](genisletilmis_notlar/ders_2_genisletilmis.pdf) |
+| **Ders 3** | Sayı Sistemleri, İkiye Tümleme, IEEE 754 ve İyi Algoritmanın Ölçütleri | [Markdown](kisa_notlar/markdown/ders_3_ozet.md) · [PDF](kisa_notlar/ders_3_ozet.pdf) | [Markdown](genisletilmis_notlar/markdown/ders_3_genisletilmis.md) · [PDF](genisletilmis_notlar/ders_3_genisletilmis.pdf) |
+| **Ders 4** | Akış Diyagramı Örnekleri, Derleme ve Bağlama, C Temelleri, Veri Tipleri ve printf/scanf | [Markdown](kisa_notlar/markdown/ders_4_ozet.md) · [PDF](kisa_notlar/ders_4_ozet.pdf) | [Markdown](genisletilmis_notlar/markdown/ders_4_genisletilmis.md) · [PDF](genisletilmis_notlar/ders_4_genisletilmis.pdf) |
+| **Ders 5** | Algoritma İyileştirme: Gauss, Hızlı Üs, Pi ve e^x Serileri, Karşıt Örnek, Derleme Aşamaları | [Markdown](kisa_notlar/markdown/ders_5_ozet.md) · [PDF](kisa_notlar/ders_5_ozet.pdf) | [Markdown](genisletilmis_notlar/markdown/ders_5_genisletilmis.md) · [PDF](genisletilmis_notlar/ders_5_genisletilmis.pdf) |
+| **Ders 6** | Goldbach Kodları, Prosesin Bellek Bölgeleri, Algoritma Karşılaştırma ve Veri Yapılarına Giriş | [Markdown](kisa_notlar/markdown/ders_6_ozet.md) · [PDF](kisa_notlar/ders_6_ozet.pdf) | [Markdown](genisletilmis_notlar/markdown/ders_6_genisletilmis.md) · [PDF](genisletilmis_notlar/ders_6_genisletilmis.pdf) |
+| **Ders 7** | Swap Yöntemleri, Pisagor Üçlüsü, Floyd Üçgeni, Dizi Ters Çevirme ve Palindromlar | [Markdown](kisa_notlar/markdown/ders_7_ozet.md) · [PDF](kisa_notlar/ders_7_ozet.pdf) | [Markdown](genisletilmis_notlar/markdown/ders_7_genisletilmis.md) · [PDF](genisletilmis_notlar/ders_7_genisletilmis.pdf) |
+| **Ders 8** | Fonksiyonlar, Prototip, Değerle ve Referansla Çağırma, Bubble Sort ve İkili Arama | [Markdown](kisa_notlar/markdown/ders_8_ozet.md) · [PDF](kisa_notlar/ders_8_ozet.pdf) | [Markdown](genisletilmis_notlar/markdown/ders_8_genisletilmis.md) · [PDF](genisletilmis_notlar/ders_8_genisletilmis.pdf) |
+| **Ders 9** | İnterpolasyon Araması, Debug, Arama Algoritmalarının Karşılaştırması, Merge ve Lab-1 | [Markdown](kisa_notlar/markdown/ders_9_ozet.md) · [PDF](kisa_notlar/ders_9_ozet.pdf) | [Markdown](genisletilmis_notlar/markdown/ders_9_genisletilmis.md) · [PDF](genisletilmis_notlar/ders_9_genisletilmis.pdf) |
+| **Ders 10** | Dizilerin Fonksiyonlara Aktarılması, Pointer'lar, Pointer Aritmetiği ve Frekans Hesabı | [Markdown](kisa_notlar/markdown/ders_10_ozet.md) · [PDF](kisa_notlar/ders_10_ozet.pdf) | [Markdown](genisletilmis_notlar/markdown/ders_10_genisletilmis.md) · [PDF](genisletilmis_notlar/ders_10_genisletilmis.pdf) |
+| **Ders 11** | Matrislerin Fonksiyonlara Aktarılması, Seçim Sistemleri, Sayarak Sıralama, Çoğunluk Elemanı ve Simetrik Matris | [Markdown](kisa_notlar/markdown/ders_11_ozet.md) · [PDF](kisa_notlar/ders_11_ozet.pdf) | [Markdown](genisletilmis_notlar/markdown/ders_11_genisletilmis.md) · [PDF](genisletilmis_notlar/ders_11_genisletilmis.pdf) |
+| **Ders 12** | Fonksiyon Çağrısında Tip Dönüşümü ve İteratif Algoritmaların Analizi: Temel İşlem ve T(n) | [Markdown](kisa_notlar/markdown/ders_12_ozet.md) · [PDF](kisa_notlar/ders_12_ozet.pdf) | [Markdown](genisletilmis_notlar/markdown/ders_12_genisletilmis.md) · [PDF](genisletilmis_notlar/ders_12_genisletilmis.pdf) |
+| **Ders 13** | İteratif Algoritmaların Analizi: Toplam Formülleri, Geometrik Seri, Rastgele Sayılara Giriş ve Lab-2 | [Markdown](kisa_notlar/markdown/ders_13_ozet.md) · [PDF](kisa_notlar/ders_13_ozet.pdf) | [Markdown](genisletilmis_notlar/markdown/ders_13_genisletilmis.md) · [PDF](genisletilmis_notlar/ders_13_genisletilmis.pdf) |
+| **Ders 18** | Fonksiyonlarla Modüler Tasarım: Kesir İşlemleri, Structure Chart, OBEB ve Min-Max Fonksiyonları | [Markdown](kisa_notlar/markdown/ders_18_ozet.md) · [PDF](kisa_notlar/ders_18_ozet.pdf) | [Markdown](genisletilmis_notlar/markdown/ders_18_genisletilmis.md) · [PDF](genisletilmis_notlar/ders_18_genisletilmis.pdf) |
+| **Ders 19** | Fonksiyon Çağrısı ve Stack, En Yakın Çift Problemi, Çöpçatan ve Doktor Senaryoları, Özyinelemeye Giriş | [Markdown](kisa_notlar/markdown/ders_19_ozet.md) · [PDF](kisa_notlar/ders_19_ozet.pdf) | [Markdown](genisletilmis_notlar/markdown/ders_19_genisletilmis.md) · [PDF](genisletilmis_notlar/ders_19_genisletilmis.pdf) |
+| **Ders 20** | Özyinelemeli Fonksiyonlar: Faktöriyel, Hızlı Üs Alma, Recursion Tree, Merge Sort ve Final Projesi | [Markdown](kisa_notlar/markdown/ders_20_ozet.md) · [PDF](kisa_notlar/ders_20_ozet.pdf) | [Markdown](genisletilmis_notlar/markdown/ders_20_genisletilmis.md) · [PDF](genisletilmis_notlar/ders_20_genisletilmis.pdf) |
+| **Ders 21** | Özyinelemeli Algoritmaların Analizi: Recursion Tree, Merge Sort, Recurrence Bağıntıları ve Lab-3 | [Markdown](kisa_notlar/markdown/ders_21_ozet.md) · [PDF](kisa_notlar/ders_21_ozet.pdf) | [Markdown](genisletilmis_notlar/markdown/ders_21_genisletilmis.md) · [PDF](genisletilmis_notlar/ders_21_genisletilmis.pdf) |
+| **Ders 23** | Laboratuvar 4: Ampul ve Butonlar (Özyinelemeli Üçlü Toplam) | [Markdown](kisa_notlar/markdown/ders_23_ozet.md) · [PDF](kisa_notlar/ders_23_ozet.pdf) | [Markdown](genisletilmis_notlar/markdown/ders_23_genisletilmis.md) · [PDF](genisletilmis_notlar/ders_23_genisletilmis.pdf) |
+| **Ders 24** | Sepet Analizi, Makrolar, Stringler, Sezar Şifreleme ve Görüntüde Ortalama Filtresi | [Markdown](kisa_notlar/markdown/ders_24_ozet.md) · [PDF](kisa_notlar/ders_24_ozet.pdf) | [Markdown](genisletilmis_notlar/markdown/ders_24_genisletilmis.md) · [PDF](genisletilmis_notlar/ders_24_genisletilmis.pdf) |
+| **Ders 25** | Diziler ve Dinamik Bellek, Insertion Sort, Bağlı Listeler, Matris Çarpımı ve Zor Problemler | [Markdown](kisa_notlar/markdown/ders_25_ozet.md) · [PDF](kisa_notlar/ders_25_ozet.pdf) | [Markdown](genisletilmis_notlar/markdown/ders_25_genisletilmis.md) · [PDF](genisletilmis_notlar/ders_25_genisletilmis.pdf) |
+| **Ders 26** | Sepet Analizinde Üçlüler, Kumarbaz Problemi Simülasyonu, Ortanca Filtresi ve Resim Boyutlandırma | [Markdown](kisa_notlar/markdown/ders_26_ozet.md) · [PDF](kisa_notlar/ders_26_ozet.pdf) | [Markdown](genisletilmis_notlar/markdown/ders_26_genisletilmis.md) · [PDF](genisletilmis_notlar/ders_26_genisletilmis.pdf) |
 
 > [!NOTE]
 > 14, 15, 16 ve 22 numaralı ders kayıtları kayıt arşivinde bulunmamaktadır. 17 numaralı kayıt (3 Mayıs 2021) içeriksiz olduğu için eklenmemiştir.
@@ -92,7 +96,7 @@ Aşağıdaki tabloda her bir dersin konusu, kaynak markdown dosyası ve doğruda
   - "Each CPU has its own instruction set and architecture." Bu cümle not edilmeli ve unutulmamalıdır.
   - Algoritma yazarken (özellikle sözde kod ve akış diyagramında) yalnızca temel işlemler kullanılır: toplama, çıkarma, çarpma, bölme, eşitlik, karşılaştırma ve atama. "Sırala", "karesini al", "5. kuvvetini al" gibi kısa yollar yanlıştır.
     - Bunların nasıl yapılacağı tarif edilmelidir.
-* **Detaylı Açıklamalar:** Ders, Telegram grubu ve sohbet kuralları gibi duyurularla başlar. Hoca, BLM1011'i almamış öğrencilere geçen dönemin ders kayıtlarını izlemelerini önerir. Akış diyagramı notasyonunun diğer kaynaklardan farklı olabileceğini ve bu notasyona uygun problem çözülmesi gerektiğini belirtir. Ardından OneNote üzerinde çizerek konuyu makinenin en temelinden başlatır.
+* **Detaylı Açıklamalar:** Akış diyagramı notasyonunun diğer kaynaklardan farklı olabileceğini ve bu notasyona uygun problem çözülmesi gerektiğini belirtir. Ardından OneNote üzerinde çizerek konuyu makinenin en temelinden başlatır.
 
 ### 🔹 Ders 3: Sayı Sistemleri, İkiye Tümleme, IEEE 754 ve İyi Algoritmanın Ölçütleri
 * **Genel Konular:**
@@ -183,15 +187,15 @@ Aşağıdaki tabloda her bir dersin konusu, kaynak markdown dosyası ve doğruda
     - Öğrenciler, asal dizisini çok büyük tanımladıklarında (ör. bir milyon eleman) programın hata verdiğini gördü. `static` yazınca veya `malloc` kullanınca sorun çözülüyordu.
   - Algoritmaları karşılaştırmak
     - Dört öğrencinin dört farklı Goldbach algoritması (A1, A2, A3, A4) nasıl karşılaştırılır?
-  - Not ve bonus sistemi
-    - Ödevini ilk gösteren öğrencilere bonus verildi. Hoca bir Excel tablosunda bonusları tutar ve dönem sonunda sınırdaki notları yükseltmek için kullanır (ör. 85'ten 90'a). Fırsatlar dönem boyunca farklı şekillerde verilecektir.
   - C standardı uyarısı
-    - `for (int i = 0; ...)` derste kullanılan Dev-C++ (TDM-GCC 4.8.1) ile derlenmez. Ekranda görülen hata: `'for' loop initial declarations are only allowed in C99 mode`. Ödev bu şekilde gönderilirse asistan çalıştıramaz ve puan kırar. Döngü değişkeni yukarıda tanımlanmalıdır.
+    - `for (int i = 0; ...)` derste kullanılan Dev-C++ (TDM-GCC 4.8.1) ile derlenmez. Ekranda görülen hata: `'for' loop initial declarations are only allowed in C99 mode`. Döngü değişkeni yukarıda tanımlanmalıdır.
   - En büyük not problemi
     - N öğrencinin notu girilir ve en büyüğü bulunur. Değişkenler: `grade`, `N`, `max = 0`, `i`.
+  - En büyük ikinci not
+    - Yeni not en büyükten büyükse: önce eski en büyük ikinci sıraya kaydırılır (`max2 = max; max2_i = max_i;`), sonra yeni değer en büyük olur (`max = grade; max_i = i;`).
 * **Hocanın Vurgusu:**
   - Döngü değişkenini `for`'un içinde tanımlamayın.
-    - Derste kullanılan standartta (C89) bu hata verir ve ödeviniz çalıştırılmaz.
+    - Derste kullanılan derleyici ayarında (büyük olasılıkla C89/C90) bu hata verir.
   - Asalları saklamak ile her seferinde yeniden hesaplamak arasında bellek-zaman ödünleşimi vardır.
   - İki algoritma, farklı bilgisayarlarda ölçülen sürelerle karşılaştırılmaz.
     - Zaman ölçümü bile kaba bir analizdir. Asıl ölçüt temel işlem sayısıdır.
@@ -239,7 +243,7 @@ Aşağıdaki tabloda her bir dersin konusu, kaynak markdown dosyası ve doğruda
   - Yerel değişkenler (local variables)
     - Fonksiyonun parametreleri ve içinde tanımlanan değişkenler o fonksiyona özeldir. Başka bir fonksiyondan erişilemez. Fonksiyon bitince serbest kalırlar.
   - Düşük bağlaşım, yüksek uyum (low coupling, high cohesion)
-    - Bir fonksiyon tek bir iş yapmalıdır. Örneğin diziyi sıralayan fonksiyon yazdırmamalıdır. 3 milyon elemanı sıralayıp yazdırmak ağır bir yüktür. Yazdırmak isteyen ayrıca `yazdir` fonksiyonunu çağırır.
+    - Bir fonksiyon tek bir iş yapmalıdır. Örneğin diziyi sıralayan fonksiyon yazdırmamalıdır. 3 milyon elemanı sıralayıp yazdırmak ağır bir yüktür. Yazdırmak isteyen ayrıca `yazdir` fonksiyonunu çağırır. Ders sonrası not: Hoca bunu bağlaşım başlığı altında anlattı. Terim olarak "tek iş" büyük olasılıkla uyuma (cohesion), parçaların birbirine bağımlılığı bağlaşıma (coupling) girer.
 * **Hocanın Vurgusu:**
   - Kod tekrarı en sık yapılan kod kusurlarındandır.
     - Aynı kodu kopyalayıp yapıştırmak yerine fonksiyon yazılmalıdır.
@@ -279,8 +283,6 @@ Aşağıdaki tabloda her bir dersin konusu, kaynak markdown dosyası ve doğruda
 ### 🔹 Ders 10: Dizilerin Fonksiyonlara Aktarılması, Pointer'lar, Pointer Aritmetiği ve Frekans Hesabı
 * **Genel Konular:**
   - Bu derste algoritmaları akış diyagramı yerine C koduyla rahatça yazabilmek için gereken programlama konuları tamamlanır: dizilerin ve matrislerin fonksiyonlara aktarılması, değerle çağırmanın iki sorunu, pointer'lar, referansla çağırma ve pointer aritmetiği. Dersin sonunda bir dizinin sıralı olup olmadığını kontrol etme ve bir dizinin frekanslarını (histogramını) bulma algoritmaları konuşulur.
-  - Değerlendirme hakkında uyarı
-    - Sınavlarda ve laboratuvarlarda sorudaki kısıtlar (ör. "dizi kullanmadan" veya "tek bir diziyle") önemlidir. Kısıtları ihlal eden veya verimsiz bir algoritma, 30-40 puanlık bir sorudan yalnızca 3-5 puan alır. Daha iyi bir çözüm kabul edilir, ama BBG seviyesindeki bir çözüm beklenmez.
   - Dizilerin fonksiyonlara aktarılması (tekrar)
     - Dizi, adıyla gönderildiğinde referansla aktarılır: fonksiyonda yapılan değişiklik orijinal diziye yansır. Dizinin tek bir elemanı ise değerle aktarılır.
   - Ders kitabının "survey" örneği (ortalama, medyan, mod)
@@ -291,6 +293,8 @@ Aşağıdaki tabloda her bir dersin konusu, kaynak markdown dosyası ve doğruda
     - Kitaptaki örnekte döngünün içinde bulununca `return` yapılıyordu. Hoca, "aranan değer `b[middle]`'dan farklı" şartını `while` şartına taşımayı gösterir. Bunun için `middle` döngüden önce hesaplanmalı ya da `do-while` kullanılmalıdır.
   - Matrislerin (iki boyutlu dizilerin) fonksiyonlara aktarılması
     - Parametrede sütun sayısı yazılmak zorundadır: `void printArray(int a[][3])`. Satır sayısı yazılmaz. Sütun sayısı yazılmazsa derleyici hata verir.
+  - Değerle çağırmanın iki sorunu
+    - Birinci sorun: fonksiyon içinde orijinal değişkenler değiştirilemez. Örneğin `swap(x, y)` sonrasında `x` ve `y` aynı kalır.
 * **Hocanın Vurgusu:**
   - Sınavlarda sorudaki kısıtlara uyun. "Ben böyle biliyordum" bir gerekçe değildir.
   - Pointer'ı anlamak için `y` / `yPtr` / `&` / `*` örneği bu konunun en önemli slaytıdır.
@@ -312,7 +316,7 @@ Aşağıdaki tabloda her bir dersin konusu, kaynak markdown dosyası ve doğruda
   - Matrislerin fonksiyonlara gönderilmesi
     - Bu ders için önerilen yol: `void yazdir(int M[][5], int m, int n)`. Sütun sayısı yazılır, satır sayısı yazılmaz. Satır ve sütun sayıları ayrı parametrelerle gelir.
   - C ve C++ uyarısı
-    - Kod C dosyası olarak (`.c`) kaydedilmelidir. Laboratuvarda C++ dosyası gönderen öğrencinin puanı kırılır. C++ C'yi kapsar gibi görünse de derleyiciler açısından farklıdır.
+    - Kod C dosyası olarak (`.c`) kaydedilmelidir. C++ C'yi kapsar gibi görünse de derleyiciler açısından farklıdır.
   - Seçim sistemi örnekleri (V vatandaş, P parti)
     - 1. durum: her vatandaş tek bir partiye oy verir. Vatandaş dizisinde `vatandas[i]` i. vatandaşın oy verdiği partidir. Parti dizisi sıfırlanır ve tek döngüyle `parti[vatandas[i]]++` yapılır. Kazanan, parti dizisindeki en büyük değerdir.
   - Sayarak doğrusal sıralama (linear sort with counting)
@@ -337,7 +341,7 @@ Aşağıdaki tabloda her bir dersin konusu, kaynak markdown dosyası ve doğruda
   - Parametre aktarım mekanizmalarının tekrarı
     - Call by value ve call by reference. Call by reference ile değişkenlerin değeri değiştirilebilir ve bir fonksiyon birden fazla değer döndürebilir. `return` en fazla bir değer döndürür.
   - Fonksiyon çağrısında tip dönüşümü
-    - C bu kontrolü programcıya bırakır. Derleme veya çalışma zamanında hata vermeden dönüşüm yapar. Küçük tipten büyüğe veya büyükten küçüğe dönüşümde veri kaybı olabilir. Bu çok yapılan bir hatadır.
+    - C bu kontrolü programcıya bırakır. Derleme veya çalışma zamanında hata vermeden dönüşüm yapar. Hoca küçük tipten büyüğe dönüşümde de veri kaybı olabileceğini söyledi; doğrusu asıl kayıp büyükten küçüğe dönüşümde olur. Küçükten büyüğe dönüşümde değer korunur. Bu çok yapılan bir hatadır.
   - Doğrusal sıralama ödevine hocanın önerdiği çözüm
     - Algoritma bellek-zaman ödünleşimini (trade-off) gösterir. Herkesin kabul edeceği tek bir çözüm yoktur.
   - İteratif algoritmaların analizi
@@ -358,7 +362,6 @@ Aşağıdaki tabloda her bir dersin konusu, kaynak markdown dosyası ve doğruda
 * **Genel Konular:**
   - Bu kayıt iki bölümden oluşur:
     - Laboratuvardan sonra yapılan ders: iteratif algoritmaların analizine devam (iç içe döngüler, `while` ile katlanarak artan döngüler, `if` içeren döngüler, toplam formülleri), global değişkenlerin neden kullanılmadığı ve rastgele sayılar konusuna giriş.
-  - Hoca, bu grubun diğer gruba göre bazı konularda geride olduğunu söyler. Bu yüzden laboratuvar günü de ders yapılır. Devam alınmaz.
   - Ders başında bir öğrencinin polinom değeri hesaplayan kodu incelenir. `x = 30` gibi büyük değerlerde `printf` beklenmedik bir çıktı veriyordu. Kaynak derste bulunamadı ve ders sonrasına bırakıldı.
   - T'nin değeri ile karmaşıklık
     - Hoca, iki şeyin karıştırılmaması gerektiğini tekrar vurgular. `T`'nin son değeri, toplam veya çarpım sembolünün içine yazılan ifadeye bağlıdır. Karmaşıklık ise temel işlemin kaç kez yapıldığıdır.
@@ -368,6 +371,8 @@ Aşağıdaki tabloda her bir dersin konusu, kaynak markdown dosyası ve doğruda
     - `i` 1, 2, 4, 8, … diye gider, yani $2^0, 2^1, \dots, 2^k$. $2^k = n$ ise $k = \log_2 n$. 0'dan başlandığı için terim sayısı $\log_2 n + 1$'dir.
   - $\sum_{i=0}^{n} i \cdot a^i$ formülü
     - Bir algoritmanın analizinde bu tür, doğrusal ve üstel çarpanı birlikte içeren bir toplam çıkabilir.
+  - `if` içeren döngü: `for i=1:N`, `for j=1:i*i`, `if mod(j,i)==0`, `T=T+1`
+    - $i = 2$ için `j` 1-4 arasında gider, 2 ve 4 sayılır. $i = 3$ için 3, 6, 9, $i = 4$ için 4, 8, 12, 16. Yani her $i$ için `T` $i$ kadar artar.
 * **Hocanın Vurgusu:**
   - `T`'nin son değeri ile algoritmanın karmaşıklığını karıştırmayın.
   - Toplam sembolünü yazmadan önce sınırları bulun: döngü değişkeni nasıl artıyor, kaç terim var?
@@ -388,8 +393,7 @@ Aşağıdaki tabloda her bir dersin konusu, kaynak markdown dosyası ve doğruda
     - Kullanıcıdan iki kesir ($\frac{a}{b}$ ve $\frac{c}{d}$) ve bir operatör (`+`, `-`, `*`, `/`) alınır. Sonuç $\frac{x}{y}$ biçiminde, sadeleştirilmiş olarak yazılır. Örnek: $\frac{22}{38}$ değil, $\frac{11}{19}$.
   - Tasarım tartışmasında çıkan fikirler
     - Toplama, çıkarma, çarpma ve bölme için birer fonksiyon, sadeleştirme için bir fonksiyon, ekrana yazdırma için bir fonksiyon.
-  - Structure chart (Pearson ders kitabındaki Şekil 6.14)
-    - En üstte ana modül (main veya bir test/driver fonksiyonu) vardır. Altında `Get fraction problem`, `Continue?`, `Compute result` ve `Print problem and result` modülleri bulunur.
+  - Structure chart (büyük olasılıkla Pearson ders kitabındaki Şekil 6.14)
   - Programın kodlanması (`Commonfractions.c`)
     - `void get_fraction(int *pay, int *payda)`: pay `scanf("%d", pay)` ile alınır. Payda `do { scanf("%d", payda); } while (*payda == 0);` ile sıfır olmayana kadar tekrar istenir. Koşulda `payda` değil `*payda` yazılmalıdır, çünkü adresin değil içeriğin kontrolü yapılır.
   - Kitaptaki çözüm
@@ -412,8 +416,6 @@ Aşağıdaki tabloda her bir dersin konusu, kaynak markdown dosyası ve doğruda
 * **Genel Konular:**
   - Bayramdan sonraki ilk ders. Konular:
     - Fonksiyon çağrısının arka planı: stack bellek, program counter'ın yedeklenmesi ve fonksiyon kullanmanın maliyeti.
-  - Duyurular
-    - Final sınavı yerine proje yapılacak. Proje Cuma günü Fatih Hoca ile birlikte duyurulacak.
   - Önceki dersin tekrarı
     - Dizide en küçük veya en büyük elemanı bulan fonksiyon değeri `return` ile, indisi pointer ile döndürür. C'de ve Java'da gerçek anlamda call by reference yoktur, C++ ve C#'ta vardır. C'de pointer ile benzeri yapılır.
   - Fonksiyon çağrısının adımları (`a = fakt(5);` örneği)
@@ -423,15 +425,16 @@ Aşağıdaki tabloda her bir dersin konusu, kaynak markdown dosyası ve doğruda
     - Her çağrıda yedekleme ve geri yükleme yapıldığı için zaman kaybı vardır. Bu kayıp nanosaniyeler mertebesindedir. Modülerliğin getirdiği fayda daha önemlidir. Nesneye yönelik dillerde tasarım tamamen bu yapı üzerine kuruludur.
   - Akış diyagramında fonksiyon ve isimlendirme
     - Fonksiyon tanımında başlangıç sembolüne fonksiyon adı ve giriş parametreleri, çıkışına dönüş değerleri yazılır. Teorik olarak birden fazla çıkış olabilir. C'de bu pointer'larla yapılır.
+  - En yakın çift (closest pair) problemi
+    - Öneri sistemlerinin (ör. Spotify'ın haftalık keşif listesi) temelinde yatan problemdir. Hoca, müziklerin akustik özelliklerinden en benzer şarkıların önerilmesini örnek olarak gösterir. Büyük bir müzik veri setinden de söz eder. <!-- BELİRSİZ: Veri setinin boyutu altyazıda bir yerde soru olarak "57.000 müzik müydü?" (00:47:20), başka yerde "milyon tane müzik" (00:54:38) diye geçiyor. -->
 * **Hocanın Vurgusu:**
   - Fonksiyon çağrıları stack'te yedeklenir.
     - Bu küçük bir zaman maliyeti getirir ve stack sınırlıdır.
-  - Vize soruları senaryo şeklinde gelecek.
-    - Uygun veri yapısını (dizi, matris) siz seçeceksiniz.
   - En yakın çift probleminde `j` `i + 1`'den başlar.
     - Her çift için uzaklık değişkenini sıfırlayın.
   - En büyüğü bulmak yeterliyse sıralama yapmayın.
   - Özyinelemeli fonksiyonda durma koşulunu mutlaka yazın.
+  - Proje için şimdiden algoritma araştırmaya başlayın.
 * **Detaylı Açıklamalar:** Derste yazılan fonksiyonlar sabit test verileriyle bir programda toplanıp `gcc -Wall -std=c89 -pedantic` ile denendi:
 
 ### 🔹 Ders 20: Özyinelemeli Fonksiyonlar: Faktöriyel, Hızlı Üs Alma, Recursion Tree, Merge Sort ve Final Projesi
@@ -490,25 +493,22 @@ Aşağıdaki tabloda her bir dersin konusu, kaynak markdown dosyası ve doğruda
 ### 🔹 Ders 23: Laboratuvar 4: Ampul ve Butonlar (Özyinelemeli Üçlü Toplam)
 * **Genel Konular:**
   - Bu kayıt dördüncü ve son laboratuvar sınavıdır (31.05.2021). Ders yapılmadı. Hoca laboratuvardan sonra öğrenciler yorgun olacağı için konulara Cuma günü devam edileceğini söyledi.
-  - Duyurular
-    - İlk üç laboratuvarın puanları bir haftadan kısa sürede açıklandı.
   - Laboratuvar 4 sorusu: ampul ve butonlar
     - Bir ampulün etrafında farklı enerji değerleri veren butonlar var. Ampulün yanması için tam olarak 3 butona basılmalı ve bunların toplamı gerekli enerjiye tam olarak eşit olmalıdır. Eksik de fazla da olursa ampul yanmaz.
 * **Hocanın Vurgusu:**
   - Laboratuvarda istenen yöntemle çözün.
     - Bu soruda önemli olan özyinelemedir.
-  - İlk üç laboratuvarınızdan memnun olsanız da soruyu çözmeye çalışın.
 * **Detaylı Açıklamalar:** Aşağıdaki çözüm derste yazılmadı. Ders sonrasında hazırlandı ve `gcc -Wall -std=c89 -pedantic` ile denendi. Her buton için önce "seç" dalı denenir (kalan sayı ve kalan enerji azalır), olmazsa "seçme" dalı denenir. 3 buton seçildiğinde kalan enerjinin 0 olup olmadığına bakılır:
 
 ### 🔹 Ders 24: Sepet Analizi, Makrolar, Stringler, Sezar Şifreleme ve Görüntüde Ortalama Filtresi
 * **Genel Konular:**
-  - Hoca, bu dersten itibaren kalan üç dersin konularının finalde (projede) sorumlu olunmayacak, ama ileride çok işe yarayacak konular olduğunu söyler. Bu derste işlenenler:
+  - Hoca, bu dersten itibaren kalan üç dersin konularının ileride çok işe yarayacağını söyler. Bu derste işlenenler:
     - Sepet analizi (birliktelik analizi).
   - Proje üzerine sorular
     - Bir öğrenci, geçen yılın YouTube'daki proje videolarında kendi kodlarından çok algoritmanın anlatıldığını söyledi. Hoca, beklentinin hem kodu hem algoritmayı anlatmak ve algoritmaya hâkim olmak olduğunu, başkalarının ne yaptığına değil proje metnine bakılması gerektiğini söyler.
   - Sepet analizi (association analysis, birliktelik analizi)
     - Müşterilerin alışveriş sepetleri (fişleri) analiz edilir. Ürünler marka yerine ürün grubu ID'siyle gösterilir. Bu bir veri madenciliği konusudur. Burada anlatılan algoritma verimli değildir, mantığı göstermek içindir.
-  - Sepet analizinin kodlanması (`Sepetv1.c`)
+  - Sepet analizinin kodlanması (dosya adı büyük olasılıkla `Sepetv1.c`)
     - Her müşteri farklı sayıda ürün aldığı için müşteri × ürün listesi düzensiz (ragged/jagged) bir dizi olur. Bunun yerine her satırı (sepet ID, ürün ID) olan iki sütunlu bir matris kullanılır: `{1,2}, {2,1}, {2,4}, {2,2}, {1,4}, {3,3}, …`.
   - Makrolar
     - `#define` yalnızca sabit tanımlamak için değil, fonksiyon benzeri makrolar için de kullanılır: `#define MYSQR(x) x*x`. Makro bir fonksiyon değildir. Derlemeden önce önişlemci tarafından metin olarak yerine konur (substitution). Hoca bunu "fonksiyona biz gideriz, makro bize gelir" diye özetler.
@@ -526,7 +526,7 @@ Aşağıdaki tabloda her bir dersin konusu, kaynak markdown dosyası ve doğruda
 
 ### 🔹 Ders 25: Diziler ve Dinamik Bellek, Insertion Sort, Bağlı Listeler, Matris Çarpımı ve Zor Problemler
 * **Genel Konular:**
-  - Hocanın kolu ağrıdığı için kod yazmak yerine ağırlıklı olarak teorik konular anlatılır:
+  - Bu derste kod yazmak yerine ağırlıklı olarak teorik konular anlatılır:
     - Dizilerin bellekteki yerleşimi ve dinamik bellek.
   - Veri yapıları ve diziler
     - Veri yapıları, veriyi ihtiyaca göre en uygun şekilde saklamak ve hızlı erişmek içindir. Üç temel algoritmik yapı (sıralı, şartlı, tekrarlı) her zaman yetmez, belleği organize etmek gerekir. En basit veri yapısı dizidir.
