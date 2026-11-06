@@ -27,3 +27,4 @@
 
 ## 👨‍🏫 👩‍🏫 Dersi Yürüten Akademisyenler:
 - AÖ
+- ZCT
