@@ -1,0 +1,1540 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ayrık Matematik — İspat (Proof)</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,400;0,600;0,700;1,500&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#0B1220;
+    --text:#F1F5F9;
+    --surface: color-mix(in srgb, var(--bg) 88%, var(--text) 12%);
+    --surface-2: color-mix(in srgb, var(--bg) 80%, var(--text) 20%);
+    --border: color-mix(in srgb, var(--bg) 68%, var(--text) 32%);
+    --muted: color-mix(in srgb, var(--text) 62%, var(--bg) 38%);
+    --accent:#FBBF24;
+    --accent-2:#60A5FA;
+    --true:#34D399;
+    --false:#F87171;
+    --radius: 16px;
+    --serif: 'Fraunces', Georgia, serif;
+    --sans: 'Inter', system-ui, sans-serif;
+    --mono: 'IBM Plex Mono', ui-monospace, monospace;
+  }
+
+  *{box-sizing:border-box;}
+  html,body{height:100%;}
+  body{
+    margin:0;
+    background:var(--bg);
+    color:var(--text);
+    font-family:var(--sans);
+    overflow:hidden;
+    transition: background .25s ease, color .25s ease;
+  }
+  ::selection{ background:var(--accent); color:#1a1a1a; }
+
+  .topbar{
+    position:fixed; top:0; left:0; right:0; height:56px;
+    display:flex; align-items:center; justify-content:space-between;
+    padding:0 20px;
+    background: color-mix(in srgb, var(--bg) 92%, black 8%);
+    border-bottom:1px solid var(--border);
+    z-index:50;
+  }
+  .topbar-left{ display:flex; align-items:center; gap:12px; font-family:var(--mono); font-size:13px; color:var(--muted); }
+  .topbar-left .mark{ font-family:var(--serif); font-style:italic; font-size:16px; color:var(--text); font-weight:600; }
+  .topbar-right{ display:flex; align-items:center; gap:10px; }
+
+  .icon-btn{
+    width:36px; height:36px; border-radius:10px;
+    border:1px solid var(--border);
+    background:var(--surface);
+    color:var(--text);
+    display:flex; align-items:center; justify-content:center;
+    cursor:pointer; font-size:16px;
+    transition: transform .15s ease, background .15s ease;
+  }
+  .icon-btn:hover{ background:var(--surface-2); transform:translateY(-1px); }
+  .icon-btn:active{ transform:translateY(0); }
+
+  .progress-track{
+    position:fixed; top:56px; left:0; right:0; height:3px;
+    background:var(--surface); z-index:49;
+  }
+  .progress-fill{
+    height:100%; background:linear-gradient(90deg, var(--accent-2), var(--accent));
+    width:0%; transition:width .35s ease;
+  }
+
+  .settings-panel{
+    position:fixed; top:64px; right:20px; width:250px;
+    background:var(--surface); border:1px solid var(--border);
+    border-radius:14px; padding:16px; z-index:60;
+    box-shadow:0 10px 30px rgba(0,0,0,.35);
+    display:none; flex-direction:column; gap:14px;
+  }
+  .settings-panel.open{ display:flex; }
+  .settings-panel h4{ margin:0; font-size:12px; letter-spacing:.03em; color:var(--muted); font-weight:600; text-transform:none;}
+  .swatch-row{ display:flex; align-items:center; justify-content:space-between; gap:10px; }
+  .swatch-row label{ font-size:13px; color:var(--text); }
+  .swatch-row input[type="color"]{
+    width:40px; height:30px; border:1px solid var(--border); border-radius:8px;
+    background:none; cursor:pointer; padding:0;
+  }
+  .preset-row{ display:flex; gap:8px; flex-wrap:wrap; }
+  .preset-dot{ width:26px; height:26px; border-radius:50%; cursor:pointer; border:2px solid var(--border); }
+  .reset-btn{
+    margin-top:4px; padding:8px 10px; border-radius:8px; border:1px solid var(--border);
+    background:transparent; color:var(--text); font-size:12px; cursor:pointer; font-family:var(--sans);
+  }
+  .reset-btn:hover{ background:var(--surface-2); }
+
+  .deck{ position:relative; width:100%; height:100%; padding-top:56px; }
+  .slide{
+    position:absolute; inset:0; top:56px;
+    display:none;
+    padding: 48px clamp(24px, 6vw, 96px) 90px;
+    overflow-y:auto;
+  }
+  .slide.active{ display:block; animation: fade .35s ease; }
+  @keyframes fade{ from{opacity:0; transform:translateY(6px);} to{opacity:1; transform:translateY(0);} }
+
+  .slide-inner{ max-width:1000px; margin:0 auto; }
+
+  .kicker{ font-family:var(--mono); font-size:12px; color:var(--muted); letter-spacing:.04em; margin-bottom:10px; }
+  h1.slide-title{ font-family:var(--serif); font-weight:600; font-size:clamp(26px,3.6vw,42px); margin:0 0 6px; line-height:1.15; }
+  .slide-title em{ font-style:italic; color:var(--accent); }
+  .subtitle{ color:var(--muted); font-size:16px; margin:0 0 26px; max-width:75ch; }
+
+  p{ line-height:1.65; font-size:15.5px; }
+  .lead{ font-size:17px; line-height:1.7; }
+
+  .grid2{ display:grid; grid-template-columns:1.1fr .9fr; gap:28px; align-items:start; }
+  @media (max-width:820px){ .grid2{ grid-template-columns:1fr; } }
+  .grid3{ display:grid; grid-template-columns:1fr 1fr 1fr; gap:16px; }
+  @media (max-width:900px){ .grid3{ grid-template-columns:1fr; } }
+
+  .card{ background:var(--surface); border:1px solid var(--border); border-radius:var(--radius); padding:18px 20px; }
+  .card h3{ margin-top:0; font-family:var(--serif); font-weight:600; font-size:17px; }
+
+  .formula{ font-family:var(--mono); font-size:15px; background:var(--surface-2); border:1px solid var(--border); border-radius:10px; padding:3px 9px; display:inline-block; }
+  .formula-big{ font-family:var(--mono); font-size:19px; text-align:center; padding:12px; background:var(--surface-2); border:1px solid var(--border); border-radius:12px; margin:12px 0; }
+
+  ul.clean{ padding-left:20px; margin:10px 0; }
+  ul.clean li{ margin-bottom:8px; line-height:1.55; font-size:15px; }
+
+  table.tt{ border-collapse:collapse; width:100%; margin:14px 0; font-family:var(--mono); font-size:14px; }
+  table.tt th, table.tt td{ border:1px solid var(--border); padding:7px 10px; text-align:center; }
+  table.tt th{ background:var(--surface-2); font-weight:600; }
+  table.tt td.res{ font-weight:600; }
+  .pill{ display:inline-block; min-width:22px; padding:2px 8px; border-radius:999px; font-weight:700; font-size:12.5px; }
+  .pill.T{ background: color-mix(in srgb, var(--true) 22%, transparent); color:var(--true); border:1px solid color-mix(in srgb, var(--true) 55%, transparent); }
+  .pill.F{ background: color-mix(in srgb, var(--false) 22%, transparent); color:var(--false); border:1px solid color-mix(in srgb, var(--false) 55%, transparent); }
+
+  .examples{ margin-top:32px; padding-top:20px; border-top:1px dashed var(--border); }
+  .examples-head{ display:flex; align-items:center; gap:10px; margin-bottom:14px; }
+  .examples-head .dot{ width:9px; height:9px; border-radius:50%; background:var(--accent); }
+  .examples-head h4{ margin:0; font-family:var(--serif); font-weight:600; font-size:17px; }
+
+  details.q{ background:var(--surface); border:1px solid var(--border); border-radius:12px; padding:12px 16px; margin-bottom:10px; }
+  details.q summary{ cursor:pointer; font-size:14.5px; list-style:none; display:flex; align-items:baseline; gap:10px; }
+  details.q summary::-webkit-details-marker{ display:none; }
+  details.q summary .qnum{ font-family:var(--mono); color:var(--accent-2); font-weight:600; flex:0 0 auto; }
+  details.q summary .arrow{ margin-left:auto; color:var(--muted); font-size:12px; transition:transform .2s ease; }
+  details.q[open] summary .arrow{ transform:rotate(90deg); }
+  .answer{ margin-top:10px; padding-top:10px; border-top:1px solid var(--border); font-size:14px; color:var(--muted); line-height:1.6; }
+  .answer b{ color:var(--text); }
+
+  table.laws{ width:100%; border-collapse:collapse; font-size:13.5px; margin-top:10px;}
+  table.laws td, table.laws th{ padding:8px 10px; border-bottom:1px solid var(--border); text-align:left; vertical-align:top; }
+  table.laws th{ color:var(--muted); font-weight:600; font-size:12px; text-transform:uppercase; letter-spacing:.03em;}
+  table.laws td.f{ font-family:var(--mono); }
+
+  .two-col-list{ display:grid; grid-template-columns:1fr 1fr; gap:10px 24px; }
+  @media (max-width:600px){ .two-col-list{ grid-template-columns:1fr; } }
+
+  .step-list{ counter-reset:step; list-style:none; padding-left:0; margin:12px 0; }
+  .step-list li{ counter-increment:step; position:relative; padding-left:34px; margin-bottom:10px; font-size:14.5px; line-height:1.55; }
+  .step-list li::before{
+    content:counter(step); position:absolute; left:0; top:-1px;
+    width:22px; height:22px; border-radius:50%; background:var(--surface-2); border:1px solid var(--border);
+    display:flex; align-items:center; justify-content:center; font-family:var(--mono); font-size:12px; color:var(--accent-2);
+  }
+
+  .method-tag{
+    display:inline-flex; align-items:center; gap:6px; font-family:var(--mono); font-size:12px;
+    padding:4px 10px; border-radius:999px; border:1px solid var(--border); color:var(--accent-2); margin-bottom:10px;
+  }
+
+  .title-slide{ height:100%; display:flex; flex-direction:column; align-items:center; justify-content:center; text-align:center; }
+  .title-slide .huge{ font-family:var(--serif); font-size:clamp(34px,6.4vw,66px); font-weight:600; line-height:1.05; }
+  .title-slide .huge em{ font-style:italic; color:var(--accent); }
+  .title-slide .sub{ font-family:var(--mono); color:var(--muted); font-size:15px; margin-top:14px; letter-spacing:.02em; }
+  .title-slide .topics{ margin-top:40px; display:flex; gap:10px; flex-wrap:wrap; justify-content:center; max-width:720px;}
+  .title-slide .topics span{ font-family:var(--mono); font-size:12.5px; padding:6px 12px; border-radius:999px; border:1px solid var(--border); color:var(--muted); }
+  .title-slide .topics span.current{ color:var(--accent); border-color:var(--accent); }
+
+  .bottombar{
+    position:fixed; bottom:0; left:0; right:0; height:64px;
+    display:flex; align-items:center; justify-content:center; gap:18px;
+    background: color-mix(in srgb, var(--bg) 92%, black 8%);
+    border-top:1px solid var(--border);
+    z-index:50;
+  }
+  .nav-btn{
+    display:flex; align-items:center; gap:8px; padding:9px 18px; border-radius:999px;
+    border:1px solid var(--border); background:var(--surface); color:var(--text); cursor:pointer;
+    font-family:var(--sans); font-size:14px; font-weight:500;
+  }
+  .nav-btn:hover{ background:var(--surface-2); }
+  .nav-btn:disabled{ opacity:.35; cursor:not-allowed; }
+  .slide-counter{ font-family:var(--mono); font-size:13px; color:var(--muted); min-width:56px; text-align:center; }
+  .dots{ display:flex; gap:4px; max-width:300px; flex-wrap:wrap; justify-content:center; }
+  .dots .d{ width:5px; height:5px; border-radius:50%; background:var(--border); cursor:pointer; transition:.2s;}
+  .dots .d.active{ background:var(--accent); width:14px; border-radius:4px; }
+
+  @media (max-width:960px){
+    .dots{ display:none; }
+    .settings-panel{ right:10px; left:10px; width:auto; }
+  }
+
+
+  /* ===== Pen / annotation layer ===== */
+  #penCanvas{ position:fixed; left:0; top:56px; width:100%; height:calc(100% - 120px); z-index:40; pointer-events:none; touch-action:none; }
+  #penCanvas.on{ pointer-events:auto; cursor:crosshair; }
+  #penCanvas.t-eraser{ cursor:cell; }
+  #penCanvas.t-laser{ cursor:none; }
+  #boardLayer{ position:fixed; left:0; top:56px; width:100%; height:calc(100% - 120px); background:var(--bg); z-index:39; display:none; }
+  #boardLayer.on{ display:block; }
+  #boardLayer::after{ content:"Boş tahta — özgürce yazın (slaytlara dönmek için B)"; position:absolute; left:50%; top:10px; transform:translateX(-50%); font-family:var(--mono); font-size:12px; color:var(--muted); opacity:.7; }
+  #penToolbar{ position:fixed; left:10px; top:50%; transform:translateY(-50%); z-index:45; display:none; flex-direction:column; gap:7px; padding:9px; width:100px; background:var(--surface); border:1px solid var(--border); border-radius:14px; box-shadow:0 10px 30px rgba(0,0,0,.35); max-height:calc(100% - 130px); overflow-y:auto; }
+  #penToolbar.open{ display:flex; }
+  .pt-grid{ display:grid; grid-template-columns:repeat(2, 36px); gap:6px; justify-content:center; }
+  .pt-btn{ width:36px; height:36px; border-radius:10px; border:1px solid var(--border); background:var(--surface-2); color:var(--text); cursor:pointer; font-size:16px; display:flex; align-items:center; justify-content:center; padding:0; transition:background .15s ease; }
+  .pt-btn:hover{ background:color-mix(in srgb, var(--surface-2) 70%, var(--accent-2) 30%); }
+  .pt-btn.active{ outline:2px solid var(--accent); background:color-mix(in srgb, var(--accent) 22%, var(--surface-2)); }
+  .pt-colors{ display:grid; grid-template-columns:repeat(2, 36px); gap:7px 6px; justify-content:center; justify-items:center; }
+  .pt-color{ width:26px; height:26px; border-radius:50%; border:2px solid var(--border); cursor:pointer; padding:0; transition:transform .12s ease; }
+  .pt-color:hover{ transform:scale(1.12); }
+  .pt-color.active{ border-color:var(--accent); box-shadow:0 0 0 2px var(--accent); transform:scale(1.1); }
+  .pt-custom{ position:relative; width:26px; height:26px; border-radius:50%; border:2px solid var(--border); cursor:pointer; overflow:hidden; background:conic-gradient(#ef4444,#f59e0b,#a3e635,#22d3ee,#3b82f6,#a855f7,#ef4444); }
+  .pt-custom.active{ border-color:var(--accent); box-shadow:0 0 0 2px var(--accent); }
+  .pt-custom input{ position:absolute; inset:-6px; width:44px; height:44px; opacity:0; cursor:pointer; border:0; padding:0; }
+  .pt-sep{ height:1px; background:var(--border); margin:1px 0; flex:0 0 auto; }
+  .pt-dot{ display:block; border-radius:50%; background:var(--text); }
+  .pt-label{ font-family:var(--mono); font-size:9px; letter-spacing:.06em; color:var(--muted); text-align:center; text-transform:uppercase; }
+  #laserDot{ position:fixed; width:16px; height:16px; border-radius:50%; background:rgba(239,68,68,.9); box-shadow:0 0 14px 6px rgba(239,68,68,.5); pointer-events:none; z-index:46; display:none; transform:translate(-50%,-50%); }
+  .icon-btn.active{ outline:2px solid var(--accent); background:color-mix(in srgb, var(--accent) 22%, var(--surface)); }
+  #penHint{ position:fixed; left:122px; top:50%; transform:translateY(-50%); z-index:45; font-family:var(--mono); font-size:11px; color:var(--muted); background:var(--surface); border:1px solid var(--border); border-radius:8px; padding:6px 9px; display:none; max-width:200px; line-height:1.5; }
+  #penHint.show{ display:block; }
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="topbar-left">
+    <span class="mark">Ayrık Matematik</span>
+    <span>/ Bölüm 2 — İspat (Proof)</span>
+  </div>
+  <div class="topbar-right">
+    <span class="slide-counter" id="counterTop">01 / 24</span>
+    <button class="icon-btn" id="penToggle" title="Kalem / slayt üzerine yaz (D)">✏️</button>
+    <button class="icon-btn" id="settingsBtn" title="Görünümü değiştir">🎨</button>
+  </div>
+</div>
+<div class="progress-track"><div class="progress-fill" id="progressFill"></div></div>
+
+<div class="settings-panel" id="settingsPanel">
+  <h4>Görünüm</h4>
+  <div class="swatch-row"><label for="bgPicker">Arka plan rengi</label><input type="color" id="bgPicker" value="#0B1220"></div>
+  <div class="swatch-row"><label for="textPicker">Yazı rengi</label><input type="color" id="textPicker" value="#F1F5F9"></div>
+  <h4>Hazır temalar</h4>
+  <div class="preset-row" id="presetRow"></div>
+  <button class="reset-btn" id="resetBtn">Varsayılana dön</button>
+</div>
+
+<div class="deck" id="deck">
+
+  <!-- 0 — TITLE -->
+  <section class="slide active" data-index="0">
+    <div class="title-slide">
+      <div class="sub">DERS 2 · p → q · ¬q → ¬p · ∃ karşı örnek · n = n+1</div>
+      <div class="huge">İspat<br><em>(Proof)</em></div>
+      <div class="sub">Rosen &amp; Johnsonbaugh — Discrete Mathematics · Proof Techniques</div>
+      <div class="topics">
+        <span>1 · Logic</span>
+        <span class="current">2 · Proof</span>
+        <span>3 · Logic Circuits</span>
+        <span>4 · Algorithms</span>
+        <span>5 · Graphs</span>
+        <span>6 · Trees</span>
+        <span>7 · Finite State Machines</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- 1 — WHAT IS A PROOF -->
+  <section class="slide" data-index="1">
+    <div class="slide-inner">
+      <div class="kicker">2.1</div>
+      <h1 class="slide-title">İspat <em>(Proof)</em> Nedir?</h1>
+      <p class="subtitle">Bilgisayar bilimcileri için ispat, sadece bir matematik alıştırması değil — bir algoritmanın <b>her zaman</b> doğru sonuç verdiğini garanti etmenin tek yoludur.</p>
+
+      <div class="grid2">
+        <div>
+          <p class="lead"><b>Tanım:</b> Bir <b>ispat</b>, bir önermenin (teoremin) doğru olduğunu; önceden kabul edilmiş aksiyomlardan, tanımlardan ve daha önce ispatlanmış teoremlerden yola çıkarak, geçerli mantık kurallarıyla (Bölüm 1) gösteren bir akıl yürütme zinciridir.</p>
+          <p>Bir ispat, "muhtemelen doğru" veya "çoğu durumda doğru" demez — <b>her</b> durumda kesin olarak doğru olduğunu gösterir. Bu, bilgisayar biliminde bir algoritmanın doğruluğunu (correctness) kanıtlamak için vazgeçilmezdir.</p>
+        </div>
+        <div class="card">
+          <h3>Temel terimler</h3>
+          <table class="laws">
+            <tr><th>Terim</th><th>Anlamı</th></tr>
+            <tr><td><b>Aksiyom</b> (Axiom)</td><td>Kanıtsız kabul edilen temel varsayım</td></tr>
+            <tr><td><b>Teorem</b> (Theorem)</td><td>İspatlanmış, önemli bir önerme</td></tr>
+            <tr><td><b>Lemma</b></td><td>Büyük bir teoremi ispatlarken kullanılan yardımcı, küçük teorem</td></tr>
+            <tr><td><b>Sonuç</b> (Corollary)</td><td>Bir teoremden doğrudan, kolayca çıkan sonuç</td></tr>
+            <tr><td><b>Sanı</b> (Conjecture)</td><td>Doğru olduğu düşünülen ama henüz ispatlanmamış iddia</td></tr>
+          </table>
+        </div>
+      </div>
+
+      <div class="examples">
+        <div class="examples-head"><span class="dot"></span><h4>Örnek Sorular</h4></div>
+        <details class="q">
+          <summary><span class="qnum">S1.</span> "n asal sayı olduğunda n+2 de asaldır" iddiasını n=3,5 için test ettiğinizde doğru çıkıyor. Bu, iddianın bir ispatı mıdır?<span class="arrow">▶</span></summary>
+          <div class="answer">Hayır. Birkaç örnekte doğru çıkması bir ispat değildir — n=7 için 7+2=9 asal değildir, iddia yanlıştır. Bu, tek tek örnek kontrol etmenin neden "ispat" sayılmadığının klasik göstergesidir (bu slaytlarda ileride "karşı örnek" konusunda tekrar döneceğiz).</div>
+        </details>
+        <details class="q">
+          <summary><span class="qnum">S2.</span> Bir "lemma" ile bir "teorem" arasındaki fark nedir?<span class="arrow">▶</span></summary>
+          <div class="answer">İkisi de ispatlanmış önermelerdir; ancak lemma genelde kendi başına pek ilgi çekmeyen, daha büyük bir teoremi ispatlamak için "araç" olarak kullanılan bir ara sonuçtur. Teorem ise kendi başına önemli kabul edilen bir sonuçtur.</div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- 2 — OVERVIEW OF TECHNIQUES -->
+  <section class="slide" data-index="2">
+    <div class="slide-inner">
+      <div class="kicker">2.2</div>
+      <h1 class="slide-title">İspat Tekniklerine Genel Bakış</h1>
+      <p class="subtitle">Bu bölümde işleyeceğimiz altı temel yaklaşım — her biri farklı bir durumda avantajlıdır.</p>
+
+      <div class="grid3">
+        <div class="card">
+          <h3>1. Doğrudan İspat</h3>
+          <p style="margin:0; font-size:14px;">p'yi doğru varsay, mantıksal adımlarla q'ya ulaş.</p>
+        </div>
+        <div class="card">
+          <h3>2. Dolaylı İspat</h3>
+          <p style="margin:0; font-size:14px;">p→q yerine çelişkisi ¬q→¬p'yi ispatla.</p>
+        </div>
+        <div class="card">
+          <h3>3. Çelişki ile İspat</h3>
+          <p style="margin:0; font-size:14px;">Sonucun yanlış olduğunu varsay, bir çelişkiye ulaş.</p>
+        </div>
+        <div class="card">
+          <h3>4. Karşı Örnek</h3>
+          <p style="margin:0; font-size:14px;">İddiayı çürütmek için tek bir yanlışlayan örnek bulmak yeterlidir.</p>
+        </div>
+        <div class="card">
+          <h3>5. Tüketme Yöntemi</h3>
+          <p style="margin:0; font-size:14px;">Sonlu sayıda durumun her birini tek tek kontrol etmek.</p>
+        </div>
+        <div class="card">
+          <h3>6. Matematiksel Tümevarım</h3>
+          <p style="margin:0; font-size:14px;">Sonsuz sayıda doğal sayı için "domino etkisi" ile ispat.</p>
+        </div>
+      </div>
+
+      <div class="examples">
+        <div class="examples-head"><span class="dot"></span><h4>Örnek Sorular</h4></div>
+        <details class="q">
+          <summary><span class="qnum">S1.</span> "Tüm çift sayılar 2'ye bölünür" gibi sonsuz sayıda durumu kapsayan bir iddiayı tek tek deneyerek (tüketme yöntemiyle) ispatlayabilir miyiz?<span class="arrow">▶</span></summary>
+          <div class="answer">Hayır. Tüketme yöntemi sadece <b>sonlu</b> sayıda durum olduğunda işe yarar. Sonsuz durumlu iddialar için doğrudan ispat, tümevarım gibi genel yöntemler gerekir.</div>
+        </details>
+        <details class="q">
+          <summary><span class="qnum">S2.</span> Bir iddiayı çürütmek (yanlış olduğunu göstermek) için hangi teknik en hızlı sonuç verir?<span class="arrow">▶</span></summary>
+          <div class="answer"><b>Karşı örnek (counterexample)</b> — iddiayı yalanlayan tek bir durum bulmak, iddianın evrensel (∀) olarak yanlış olduğunu göstermeye yeter.</div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3 — DIRECT PROOF METHOD -->
+  <section class="slide" data-index="3">
+    <div class="slide-inner">
+      <div class="kicker">2.3</div>
+      <h1 class="slide-title">Doğrudan İspat <em>(Direct Proof)</em></h1>
+      <p class="subtitle">p→q formundaki bir önermeyi ispatlamanın en doğal yolu: p'den başlayıp adım adım q'ya ulaşmak.</p>
+
+      <div class="grid2">
+        <div class="card">
+          <span class="method-tag">YÖNTEM</span>
+          <h3>Nasıl çalışır?</h3>
+          <ol class="step-list">
+            <li>p'nin (hipotezin) doğru olduğunu <b>varsay</b>.</li>
+            <li>Tanımlar, aksiyomlar ve daha önce bilinen sonuçları kullanarak mantıksal bir adım zinciri kur.</li>
+            <li>Bu zincirin sonunda q'ya (sonuca) ulaş.</li>
+          </ol>
+          <p style="margin:0; font-size:13.5px; color:var(--muted);">Bu, Bölüm 1'deki p→q'nun doğruluk tablosuyla doğrudan ilişkilidir: p yanlışken önerme zaten otomatik doğrudur (boş doğruluk); bu yüzden ispatta sadece <b>p doğruyken</b> q'nun da doğru olduğunu göstermemiz yeterlidir.</p>
+        </div>
+        <div class="card">
+          <h3>Ne zaman tercih edilir?</h3>
+          <p style="margin:0;">Hipotezden sonuca giden adımlar <b>açık ve doğrudan</b> kurulabiliyorsa (örneğin cebirsel manipülasyon, tanım uygulamak) doğrudan ispat en sade seçenektir. Bilgisayar biliminde bir fonksiyonun çıktısının belirli bir özelliği sağladığını göstermek için sıkça kullanılır.</p>
+        </div>
+      </div>
+
+      <div class="examples">
+        <div class="examples-head"><span class="dot"></span><h4>Örnek Sorular</h4></div>
+        <details class="q">
+          <summary><span class="qnum">S1.</span> Doğrudan ispatta neden sadece "p doğruyken" durumunu incelememiz yeterlidir?<span class="arrow">▶</span></summary>
+          <div class="answer">Çünkü p→q, p yanlışken doğruluk tablosunda zaten otomatik olarak D'dir (boş doğruluk, Bölüm 1). İspat açısından tek "riskli" durum p'nin doğru olduğu durumdur — bu durumda q'nun da doğru çıktığını göstermek, önermenin tüm durumlarda doğru olduğunu kanıtlamaya yeter.</div>
+        </details>
+        <details class="q">
+          <summary><span class="qnum">S2.</span> "n bir tamsayıdır" hipotezinden yola çıkarak doğrudan ispat yapmak isteseniz, ilk adımınız ne olurdu?<span class="arrow">▶</span></summary>
+          <div class="answer">İlk adım genelde n'yi tanıma uygun bir cebirsel formda yazmaktır — örneğin "n çifttir" deniyorsa n=2k (k bir tamsayı) yazarak devam ederiz. Bu, tanımı somut bir ifadeye dönüştürerek ispata "giriş kapısı" sağlar.</div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4 — DIRECT PROOF EXAMPLES -->
+  <section class="slide" data-index="4">
+    <div class="slide-inner">
+      <div class="kicker">2.4</div>
+      <h1 class="slide-title">Doğrudan İspat — Örnekler</h1>
+      <p class="subtitle">Bilgisayar bilimcilerinin sıkça karşılaştığı türden iki klasik örnek.</p>
+
+      <div class="card" style="margin-bottom:16px;">
+        <h3>Örnek 1: "İki tek sayının çarpımı tektir."</h3>
+        <p style="margin:0 0 8px;"><b>İddia:</b> m ve n tek tamsayılar ise, mn de tek bir tamsayıdır.</p>
+        <ol class="step-list">
+          <li>m ve n tek olduğundan, tanım gereği m=2k+1 ve n=2j+1 yazılabilir (k,j birer tamsayı).</li>
+          <li>mn = (2k+1)(2j+1) = 4kj + 2k + 2j + 1</li>
+          <li>mn = 2(2kj+k+j) + 1</li>
+          <li>2kj+k+j bir tamsayı olduğundan, mn = 2(tamsayı) + 1 biçimindedir — yani <b>tek</b> sayı tanımını sağlar. ∎</li>
+        </ol>
+      </div>
+
+      <div class="card">
+        <h3>Örnek 2: "n çift ise n² de çifttir."</h3>
+        <ol class="step-list">
+          <li>n çift olduğundan n=2k yazılabilir (k bir tamsayı).</li>
+          <li>n² = (2k)² = 4k² = 2(2k²)</li>
+          <li>2k² bir tamsayı olduğundan n² = 2(tamsayı) biçimindedir — yani <b>çift</b>. ∎</li>
+        </ol>
+      </div>
+
+      <div class="examples">
+        <div class="examples-head"><span class="dot"></span><h4>Örnek Sorular</h4></div>
+        <details class="q">
+          <summary><span class="qnum">S1.</span> "İki çift sayının toplamı çifttir." iddiasını doğrudan ispatlayın.<span class="arrow">▶</span></summary>
+          <div class="answer">m=2k, n=2j (k,j tamsayı) olsun. m+n = 2k+2j = 2(k+j). k+j bir tamsayı olduğundan m+n çifttir. ∎</div>
+        </details>
+        <details class="q">
+          <summary><span class="qnum">S2.</span> "Bir çift sayı ile bir tek sayının çarpımı çifttir." iddiasını doğrudan ispatlayın.<span class="arrow">▶</span></summary>
+          <div class="answer">m=2k (çift), n=2j+1 (tek) olsun. mn = 2k(2j+1) = 2(k(2j+1)). k(2j+1) bir tamsayı olduğundan mn çifttir. ∎</div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5 — INDIRECT (CONTRAPOSITIVE) METHOD -->
+  <section class="slide" data-index="5">
+    <div class="slide-inner">
+      <div class="kicker">2.5</div>
+      <h1 class="slide-title">Dolaylı İspat <em>(Indirect Proof — Çelişki/Contrapositive)</em></h1>
+      <p class="subtitle">Bazen p→q'yu doğrudan göstermek zordur, ama çelişkisi ¬q→¬p'yi göstermek çok daha kolaydır.</p>
+
+      <div class="grid2">
+        <div class="card">
+          <span class="method-tag">YÖNTEM</span>
+          <h3>Nasıl çalışır?</h3>
+          <ol class="step-list">
+            <li>p→q'nun çelişkisinin (contrapositive) <span class="formula">¬q→¬p</span> olduğunu hatırla (Bölüm 1, Slayt 8).</li>
+            <li>¬q'yu (sonucun olumsuzunu) doğru varsay.</li>
+            <li>Mantıksal adımlarla ¬p'ye (hipotezin olumsuzuna) ulaş.</li>
+            <li>p→q ile ¬q→¬p mantıksal olarak <b>denk</b> olduğundan, bu orijinal önermeyi de ispatlamış olur.</li>
+          </ol>
+        </div>
+        <div class="card">
+          <h3>Ne zaman tercih edilir?</h3>
+          <p style="margin:0;">"n² tek ise n tektir" gibi önermelerde, p'den (n² tek) doğrudan q'ya (n tek) gitmek zordur — ama tersten, "n tek değilse (çift ise) n² tek değildir (çifttir)" çok daha kolay gösterilir. <b>Sonuçla ilgili bir olumsuz özellik, hipotezle ilgili bir olumsuz özellikten daha kolay işlenebiliyorsa</b>, dolaylı ispat tercih edilir.</p>
+        </div>
+      </div>
+
+      <div class="examples">
+        <div class="examples-head"><span class="dot"></span><h4>Örnek Sorular</h4></div>
+        <details class="q">
+          <summary><span class="qnum">S1.</span> Dolaylı ispatın geçerliliği hangi mantıksal denkliğe dayanır?<span class="arrow">▶</span></summary>
+          <div class="answer">p→q ≡ ¬q→¬p denkliğine (çelişki/contrapositive denkliği, Bölüm 1, Slayt 8). ¬q→¬p'yi ispatlamak, orijinal p→q'yu ispatlamakla mantıksal olarak tamamen eşdeğerdir.</div>
+        </details>
+        <details class="q">
+          <summary><span class="qnum">S2.</span> "n²-2n+3 negatif değilse n negatif değildir" iddiası için dolaylı ispatın ilk adımı ne olurdu?<span class="arrow">▶</span></summary>
+          <div class="answer">Çelişkiyi (contrapositive) kurarız: "n negatifse, n²-2n+3 negatiftir" — sonra bu yeni önermeyi (genelde daha kolay) doğrudan ispatlamaya çalışırız.</div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- 6 — INDIRECT PROOF EXAMPLE -->
+  <section class="slide" data-index="6">
+    <div class="slide-inner">
+      <div class="kicker">2.6</div>
+      <h1 class="slide-title">Dolaylı İspat — Örnek</h1>
+      <p class="subtitle">Klasik bir örnek: "n² tek ise n tektir" önermesini doğrudan ispatlamak zordur, çelişkisiyle çok kolaydır.</p>
+
+      <div class="card">
+        <h3>İddia: "n bir tamsayı olsun. n² tek ise n tektir."</h3>
+        <p style="margin:0 0 10px;"><b>Neden doğrudan zor?</b> n²=2k+1'den yola çıkıp n'nin tek olduğunu cebirsel olarak göstermek (karekök almak, tamsayılık koşulunu korumak) doğrudan zahmetlidir.</p>
+        <p style="margin:0 0 10px;"><b>Çelişki (contrapositive):</b> "n çift ise n² çifttir." — bunu az önce Slayt 4'te doğrudan ispatlamıştık!</p>
+        <ol class="step-list">
+          <li>Çelişkiyi kur: ¬q→¬p, yani "n çift ise n² çift" önermesini ispatla.</li>
+          <li>n çift olsun → n=2k → n²=4k²=2(2k²) → n² çift. (Slayt 4, Örnek 2 ile birebir aynı ispat!)</li>
+          <li>¬q→¬p ispatlandığına göre, p→q (yani "n² tek ise n tektir") de ispatlanmış olur. ∎</li>
+        </ol>
+      </div>
+
+      <div class="examples">
+        <div class="examples-head"><span class="dot"></span><h4>Örnek Sorular</h4></div>
+        <details class="q">
+          <summary><span class="qnum">S1.</span> "n² 3 ile bölünemiyorsa n de 3 ile bölünemez" önermesinin çelişkisini (contrapositive) yazın.<span class="arrow">▶</span></summary>
+          <div class="answer">Çelişki: "n 3 ile bölünüyorsa, n² de 3 ile bölünür." (Bu, doğrudan ispatlanması çok daha kolay bir önermedir: n=3k → n²=9k²=3(3k²).)</div>
+        </details>
+        <details class="q">
+          <summary><span class="qnum">S2.</span> Yukarıdaki S1'deki çelişkiyi doğrudan ispatlayın, sonra orijinal önermenin de ispatlanmış olduğunu belirtin.<span class="arrow">▶</span></summary>
+          <div class="answer">n=3k (k tamsayı) olsun. n²=(3k)²=9k²=3(3k²). 3k² bir tamsayı olduğundan n² 3 ile bölünür. ∎ Bu, ¬q→¬p'yi ispatladığından, orijinal p→q ("n² 3 ile bölünemiyorsa n de bölünemez") de otomatik olarak ispatlanmış olur.</div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- 7 — CONTRADICTION METHOD -->
+  <section class="slide" data-index="7">
+    <div class="slide-inner">
+      <div class="kicker">2.7</div>
+      <h1 class="slide-title">Çelişki ile İspat <em>(Proof by Contradiction)</em></h1>
+      <p class="subtitle">"Önermenin yanlış olduğunu varsay, imkansız bir sonuca (çelişkiye) ulaş" — matematikteki en güçlü silahlardan biri.</p>
+
+      <div class="grid2">
+        <div class="card">
+          <span class="method-tag">YÖNTEM</span>
+          <h3>Nasıl çalışır?</h3>
+          <ol class="step-list">
+            <li>İspatlamak istediğimiz önerme p olsun. <b>¬p'yi doğru varsayarız</b> (yani p'nin yanlış olduğunu kabul ederiz).</li>
+            <li>Bu varsayımdan yola çıkarak mantıksal adımlarla ilerleriz.</li>
+            <li>Bir çelişkiye ulaşırız — yani hem r hem de ¬r'nin (herhangi bir r için) aynı anda doğru olduğu, mantıksal olarak imkansız bir durum (r∧¬r ≡ Y, Bölüm 1, Slayt 17).</li>
+            <li>Varsayımımız (¬p) bir çelişkiye yol açtığından, <b>yanlış</b> olmalıdır — dolayısıyla p doğrudur. ∎</li>
+          </ol>
+        </div>
+        <div class="card">
+          <h3>Mantıksal temel</h3>
+          <p style="margin:0 0 10px;">Bu yöntem şu totolojiye dayanır:</p>
+          <div class="formula-big">(¬p → (r ∧ ¬r)) → p</div>
+          <p style="margin:0; font-size:13.5px; color:var(--muted);">¬p'nin bir çelişkiye yol açtığını göstermek, p'nin doğru olması gerektiğini kanıtlar — çünkü mantıkta çelişkili bir önerme asla doğru kabul edilemez.</p>
+        </div>
+      </div>
+
+      <div class="examples">
+        <div class="examples-head"><span class="dot"></span><h4>Örnek Sorular</h4></div>
+        <details class="q">
+          <summary><span class="qnum">S1.</span> Çelişki ile ispat ve dolaylı ispat (çelişki/contrapositive) arasındaki temel fark nedir?<span class="arrow">▶</span></summary>
+          <div class="answer">Dolaylı ispat, p→q formundaki bir önermeyi ¬q→¬p'yi ispatlayarak kanıtlar (hâlâ "yapıcı" bir ispattır). Çelişki ile ispat ise, ispatlanacak <i>tüm</i> önermenin (p→q dahil, ama başka türden önermeler için de) olumsuzunu varsayıp doğrudan mantıksal bir imkansızlığa (çelişkiye) ulaşır — daha geneldir ve p→q formunda olmayan önermeler için de kullanılabilir.</div>
+        </details>
+        <details class="q">
+          <summary><span class="qnum">S2.</span> Çelişki ile ispatta ulaşılan "çelişki" tam olarak neye benzer?<span class="arrow">▶</span></summary>
+          <div class="answer">Genellikle bilinen bir gerçeğe ters düşen bir sonuç (örneğin "1=2" gibi imkansız bir eşitlik, ya da bir sayının hem çift hem tek olduğu gösterilmesi gibi r∧¬r biçiminde bir durum) elde edilir.</div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- 8 — CONTRADICTION CLASSIC EXAMPLE: sqrt(2) -->
+  <section class="slide" data-index="8">
+    <div class="slide-inner">
+      <div class="kicker">2.8</div>
+      <h1 class="slide-title">Çelişki ile İspat — Klasik Örnek: √2 İrrasyoneldir</h1>
+      <p class="subtitle">Matematik tarihinin en ünlü ispatlarından biri — Antik Yunan'dan günümüze.</p>
+
+      <div class="card">
+        <h3>İddia: √2 irrasyonel bir sayıdır (rasyonel değildir).</h3>
+        <ol class="step-list">
+          <li><b>Varsayım (¬p):</b> √2'nin <i>rasyonel</i> olduğunu varsayalım. O zaman √2 = a/b yazılabilir; burada a,b tamsayı, b≠0 ve a/b <b>en sade halde</b> (ortak çarpanları olmayan, "sadeleştirilmiş kesir").</li>
+          <li>Her iki tarafın karesini alırız: 2 = a²/b² → a² = 2b².</li>
+          <li>a² = 2b² olduğundan a² çifttir. Slayt 6'daki sonuçla ("n² çiftse n çifttir") a da çift olmalıdır → a = 2k yazılabilir.</li>
+          <li>a=2k'yı yerine koyarız: (2k)² = 2b² → 4k² = 2b² → b² = 2k².</li>
+          <li>b² = 2k² olduğundan b² de çifttir → b de çifttir.</li>
+          <li><b>Çelişki:</b> Hem a hem de b çift çıktı — ama a/b'nin "en sade halde" (ortak çarpanı olmayan) olduğunu varsaymıştık! a ve b'nin ikisinin de çift olması, en az 2 ortak çarpanları olduğu anlamına gelir — bu, varsayımımızla <b>çelişir</b>.</li>
+          <li>Çelişkiye ulaştığımız için başlangıç varsayımımız (√2 rasyoneldir) yanlıştır. Dolayısıyla √2 <b>irrasyoneldir</b>. ∎</li>
+        </ol>
+      </div>
+
+      <div class="examples">
+        <div class="examples-head"><span class="dot"></span><h4>Örnek Sorular</h4></div>
+        <details class="q">
+          <summary><span class="qnum">S1.</span> İspatın 1. adımında "a/b'nin en sade halde olduğunu" varsaymak neden gereklidir?<span class="arrow">▶</span></summary>
+          <div class="answer">Çünkü her rasyonel sayı sonsuz farklı kesirle yazılabilir (1/2=2/4=3/6=...). "En sade hal" varsayımı, ispatın sonunda ulaşacağımız "a ve b'nin ortak çarpanı var" sonucunun, başlangıç varsayımımızla doğrudan çeliştiğini garanti eder — bu adım olmadan çelişki oluşmaz.</div>
+        </details>
+        <details class="q">
+          <summary><span class="qnum">S2.</span> Bu ispat tekniğini kullanarak √3'ün irrasyonel olduğunu göstermeye çalışsaydınız, hangi adım değişirdi?<span class="arrow">▶</span></summary>
+          <div class="answer">Benzer mantık uygulanır: a²=3b² olur, bu da a'nın 3'e bölünebilir olmasını gerektirir (3 asal olduğundan "a² 3'e bölünüyorsa a da bölünür" önermesi geçerlidir). a=3k yazılıp devam edildiğinde b'nin de 3'e bölündüğü bulunur — yine "en sade kesir" varsayımıyla çelişki oluşur.</div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- 9 — CONTRADICTION EXAMPLE 2: infinite primes -->
+  <section class="slide" data-index="9">
+    <div class="slide-inner">
+      <div class="kicker">2.9</div>
+      <h1 class="slide-title">Çelişki ile İspat — Sonsuz Sayıda Asal Sayı Vardır (Euclid)</h1>
+      <p class="subtitle">M.Ö. 300 civarında Euclid tarafından verilen, hâlâ ders kitaplarında kullanılan zarif bir ispat.</p>
+
+      <div class="card">
+        <h3>İddia: Sonsuz sayıda asal sayı vardır.</h3>
+        <ol class="step-list">
+          <li><b>Varsayım (¬p):</b> Sadece <i>sonlu</i> sayıda asal sayı olduğunu varsayalım: p₁, p₂, …, pₙ (tüm asal sayıların tam listesi bu olsun).</li>
+          <li>Şu sayıyı oluşturalım: <span class="formula">N = (p₁·p₂·…·pₙ) + 1</span> — yani tüm bilinen asalların çarpımına 1 ekleyelim.</li>
+          <li>N, listedeki p₁,…,pₙ asallarının hiçbirine tam bölünemez — çünkü herhangi bir pᵢ ile bölündüğünde her zaman 1 kalanı kalır (N = pᵢ·(diğerleri) + 1).</li>
+          <li>Ama her tamsayı (1'den büyükse) en az bir asal çarpana sahiptir. N'nin asal çarpanı, listemizdeki p₁,…,pₙ'den biri <b>olamayacağına</b> göre, listede olmayan <b>yeni bir asal sayı</b> olmalıdır.</li>
+          <li><b>Çelişki:</b> Listemizin "tüm asal sayıları içerdiğini" varsaymıştık, ama listede olmayan bir asal sayı bulduk — bu, varsayımımızla çelişir.</li>
+          <li>Dolayısıyla başlangıç varsayımımız (sonlu sayıda asal vardır) yanlıştır. Sonsuz sayıda asal sayı vardır. ∎</li>
+        </ol>
+      </div>
+
+      <div class="examples">
+        <div class="examples-head"><span class="dot"></span><h4>Örnek Sorular</h4></div>
+        <details class="q">
+          <summary><span class="qnum">S1.</span> p₁=2, p₂=3, p₃=5 olsaydı, N=(2·3·5)+1 sayısını hesaplayıp asal olup olmadığını kontrol edin.<span class="arrow">▶</span></summary>
+          <div class="answer">N = 30+1 = 31. 31 asal bir sayıdır ve {2,3,5} listesinde yer almaz — ispatın öngördüğü gibi, listede olmayan yeni bir asal (bu durumda N'nin kendisi) ortaya çıktı.</div>
+        </details>
+        <details class="q">
+          <summary><span class="qnum">S2.</span> N'nin her zaman asal olması mı gerekir, yoksa sadece "yeni bir asal çarpanı" mı olması gerekir?<span class="arrow">▶</span></summary>
+          <div class="answer">Sadece N'nin, listedeki asallardan farklı <i>bir</i> asal çarpana sahip olması gerekir — N'nin kendisinin asal olması şart değildir. (Örneğin p₁,…,p₆={2,3,5,7,11,13} için N=30031=59×509'dur, kendisi asal değildir ama 59 ve 509 listede olmayan yeni asallardır.)</div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- 10 — COMPARISON: DIRECT vs INDIRECT vs CONTRADICTION -->
+  <section class="slide" data-index="10">
+    <div class="slide-inner">
+      <div class="kicker">2.10</div>
+      <h1 class="slide-title">Üç Yöntemin Karşılaştırılması</h1>
+      <p class="subtitle">Doğrudan, dolaylı ve çelişki ile ispat — hangisini ne zaman seçmeliyiz?</p>
+
+      <table class="laws">
+        <tr><th>Yöntem</th><th>Başlangıç Varsayımı</th><th>Hedef</th><th>En uygun olduğu durum</th></tr>
+        <tr><td><b>Doğrudan</b></td><td class="f">p doğru</td><td>q'ya ulaşmak</td><td>p'den q'ya giden adımlar açık/doğal olduğunda</td></tr>
+        <tr><td><b>Dolaylı (çelişki/contrapositive)</b></td><td class="f">¬q doğru</td><td>¬p'ye ulaşmak</td><td>Sonucun olumsuzu, hipotezin olumsuzundan daha kolay işlendiğinde</td></tr>
+        <tr><td><b>Çelişki ile ispat</b></td><td class="f">¬p doğru</td><td>Bir çelişkiye (r∧¬r) ulaşmak</td><td>p→q formunda olmayan önermelerde veya varsayımı çürütmek doğrudan kanıtlamaktan kolay olduğunda</td></tr>
+      </table>
+
+      <div class="card" style="margin-top:16px;">
+        <h3>Pratik ipucu</h3>
+        <p style="margin:0;">Bir ispata başlarken önce <b>doğrudan ispatı</b> deneyin — en sade ve en "temiz" yoldur. Eğer hipotezden sonuca giden yol belirsizse, sonucun olumsuzundan başlayıp <b>dolaylı ispatı</b> deneyin. İkisi de zorsa (özellikle "sonsuzluk", "irrasyonellik" gibi varlık/yokluk iddialarında), <b>çelişki ile ispat</b> genelde en güçlü seçenektir.</p>
+      </div>
+
+      <div class="examples">
+        <div class="examples-head"><span class="dot"></span><h4>Örnek Sorular</h4></div>
+        <details class="q">
+          <summary><span class="qnum">S1.</span> "√2 irrasyoneldir" gibi bir "yokluk" iddiası (rasyonel bir gösterim yoktur) için neden çelişki ile ispat, doğrudan ispattan daha uygun?<span class="arrow">▶</span></summary>
+          <div class="answer">"Yokluk" iddiaları için doğrudan ispat genelde imkansızdır çünkü "olmayan bir şeyden" başlayıp bir sonuca varamayız. Çelişki ile ispat ise tam tersi bir strateji sunar: "varmış gibi" varsayıp bunun imkansız olduğunu göstererek yokluğu kanıtlar.</div>
+        </details>
+        <details class="q">
+          <summary><span class="qnum">S2.</span> Dolaylı ispat da aslında bir tür "çelişki" mantığı kullanır mı?<span class="arrow">▶</span></summary>
+          <div class="answer">Hayır tam olarak değil — dolaylı ispat, p→q≡¬q→¬p denkliğine dayanan <i>yapıcı</i> bir ispattır (doğrudan ispatın bir varyasyonudur, sadece hipotez ve sonuç yer değiştirir). Çelişki ile ispat ise başlangıçta tüm önermenin olumsuzunu varsayıp mantıksal bir imkansızlığa ulaşmayı hedefler — yapısal olarak farklıdır.</div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- 11 — COUNTEREXAMPLE METHOD -->
+  <section class="slide" data-index="11">
+    <div class="slide-inner">
+      <div class="kicker">2.11</div>
+      <h1 class="slide-title">Karşı Örnek ile Çürütme <em>(Disproof by Counterexample)</em></h1>
+      <p class="subtitle">Bazen görevimiz bir şeyi ispatlamak değil, <b>yanlış olduğunu göstermektir</b> — bunun için tek bir örnek yeterlidir.</p>
+
+      <div class="grid2">
+        <div class="card">
+          <span class="method-tag">YÖNTEM</span>
+          <h3>Nasıl çalışır?</h3>
+          <p style="margin:0 0 10px;">"∀x P(x)" biçimindeki bir iddiayı çürütmek için, P(x)'in yanlış olduğu <b>tek bir x</b> bulmak yeterlidir (Bölüm 1, Slayt 22'deki niceleyici değili hatırlayın):</p>
+          <div class="formula-big">¬∀x P(x) ≡ ∃x ¬P(x)</div>
+          <p style="margin:0; font-size:13.5px; color:var(--muted);">Bu, "her x için doğru" iddiasının, tek bir karşı örnekle (counterexample) yıkılabileceğini gösterir — tüm x'leri denemek gerekmez.</p>
+        </div>
+        <div class="card">
+          <h3>Neden bu kadar güçlü?</h3>
+          <p style="margin:0;">Bir ∀ iddiasını <b>ispatlamak</b> için tüm durumları (ya da genel bir argümanı) göstermeniz gerekirken, onu <b>çürütmek</b> için sadece bir aykırı durum yeterlidir. Bu asimetri, matematikte ve algoritma doğrulamada sürekli kullanılır: bir algoritmanın yanlış olduğunu göstermek için tek bir başarısız test verisi (edge case) yeterlidir.</p>
+        </div>
+      </div>
+
+      <div class="examples">
+        <div class="examples-head"><span class="dot"></span><h4>Örnek Sorular</h4></div>
+        <details class="q">
+          <summary><span class="qnum">S1.</span> "Her asal sayı tektir." iddiasını çürütmek için bir karşı örnek verin.<span class="arrow">▶</span></summary>
+          <div class="answer">n=2 bir karşı örnektir — 2 asal bir sayıdır ama çifttir. Bu tek örnek, iddianın yanlış olduğunu kanıtlamaya yeter.</div>
+        </details>
+        <details class="q">
+          <summary><span class="qnum">S2.</span> Bir karşı örnek bulamamak, iddianın doğru olduğu anlamına gelir mi?<span class="arrow">▶</span></summary>
+          <div class="answer">Hayır! Karşı örnek bulamamak sadece "henüz bulunamadı" demektir — iddiayı kesin olarak ispatlamak için yine de doğrudan ispat, tümevarım gibi genel bir yöntem gerekir. Bu, bilgisayar biliminde "testlerin geçmesi" ile "programın kanıtlanmış doğruluğu" arasındaki farka benzer.</div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- 12 — COUNTEREXAMPLE PRACTICE -->
+  <section class="slide" data-index="12">
+    <div class="slide-inner">
+      <div class="kicker">2.12</div>
+      <h1 class="slide-title">Karşı Örnek — Pratik Örnekler</h1>
+      <p class="subtitle">Yanlış iddiaları karşı örneklerle çürütme pratiği.</p>
+
+      <div class="grid2">
+        <div class="card">
+          <h3>İddia 1: "n²+n+41 her n doğal sayısı için asaldır."</h3>
+          <p style="margin:0 0 8px;">Bu, ünlü bir "yanıltıcı" iddiadır — n=0'dan n=39'a kadar gerçekten hep asal çıkar!</p>
+          <div class="formula-big" style="font-size:16px;">n=40: 40²+40+41 = 1681 = 41²</div>
+          <p style="margin:0; font-size:13.5px;">n=40 için sonuç 41²'dir — asal değildir (41×41). 40 sayısı bir karşı örnektir.</p>
+        </div>
+        <div class="card">
+          <h3>İddia 2: "Her tek sayı asaldır."</h3>
+          <div class="formula-big" style="font-size:16px;">n = 9 = 3 × 3</div>
+          <p style="margin:0; font-size:13.5px;">9 tek bir sayıdır ama asal değildir (3×3'e bölünür) — basit ama etkili bir karşı örnek.</p>
+        </div>
+      </div>
+
+      <div class="card" style="margin-top:16px;">
+        <h3>Karşı örnek bulma stratejileri</h3>
+        <ul class="clean" style="margin-bottom:0;">
+          <li><b>Uç değerleri deneyin:</b> 0, 1, negatif sayılar, çok küçük/büyük değerler.</li>
+          <li><b>"Özel" sayıları deneyin:</b> asal olmayan sayılar, tam kareler, 1'e yakın sayılar.</li>
+          <li><b>İddianın "neden doğru göründüğünü" sorgulayın</b> — genelde ilk birkaç örnekte tesadüfen doğru çıkan iddialar (n²+n+41 gibi) bu şekilde yakalanır.</li>
+        </ul>
+      </div>
+
+      <div class="examples">
+        <div class="examples-head"><span class="dot"></span><h4>Örnek Sorular</h4></div>
+        <details class="q">
+          <summary><span class="qnum">S1.</span> "Her x gerçek sayısı için x² ≥ x" iddiasına bir karşı örnek bulun.<span class="arrow">▶</span></summary>
+          <div class="answer">x=0.5 → x²=0.25, ki 0.25 &lt; 0.5. Bu bir karşı örnektir — iddia 0 &lt; x &lt; 1 aralığındaki tüm sayılar için yanlıştır.</div>
+        </details>
+        <details class="q">
+          <summary><span class="qnum">S2.</span> "İki irrasyonel sayının toplamı her zaman irrasyoneldir" iddiasına bir karşı örnek bulun.<span class="arrow">▶</span></summary>
+          <div class="answer">√2 ve −√2 ikisi de irrasyoneldir, ama toplamları √2+(−√2)=0'dır, ki 0 rasyoneldir. Bu bir karşı örnektir.</div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- 13 — EXHAUSTIVE PROOF METHOD -->
+  <section class="slide" data-index="13">
+    <div class="slide-inner">
+      <div class="kicker">2.13</div>
+      <h1 class="slide-title">Tüketme Yöntemi <em>(Proof by Exhaustion / Cases)</em></h1>
+      <p class="subtitle">"Tek tek deneme yoluyla" ispat — sonlu sayıda durum olduğunda geçerli ve titiz bir yöntem.</p>
+
+      <div class="grid2">
+        <div class="card">
+          <span class="method-tag">YÖNTEM</span>
+          <h3>Nasıl çalışır?</h3>
+          <ol class="step-list">
+            <li>İspatlanacak önerme, <b>sonlu</b> sayıda ayrı duruma (vaka/case) bölünebiliyor olmalı.</li>
+            <li>Bu durumların <b>hepsini</b> kapsadığımızdan emin oluruz (hiçbir durum atlanmamalı).</li>
+            <li>Her bir durumu <b>ayrı ayrı</b> kontrol eder, önermenin o durumda doğru olduğunu gösteririz.</li>
+            <li>Tüm durumlar doğrulandığında, önerme <b>tüm</b> durumlar için ispatlanmış olur. ∎</li>
+          </ol>
+        </div>
+        <div class="card">
+          <h3>Dikkat: Karşı örnekle karıştırmayın!</h3>
+          <p style="margin:0;">Tüketme yöntemi, bir iddiayı <b>ispatlamak</b> için tüm durumları kontrol eder (hepsi doğru çıkmalı). Karşı örnek ise bir iddiayı <b>çürütmek</b> için sadece bir durumun yanlış olduğunu gösterir. Tüketme yöntemi, ancak sonlu ve makul sayıda durum olduğunda pratik bir seçenektir — çok sayıda durum varsa bilgisayar destekli ispatlar (ör. Dört Renk Teoremi) gerekebilir.</p>
+        </div>
+      </div>
+
+      <div class="examples">
+        <div class="examples-head"><span class="dot"></span><h4>Örnek Sorular</h4></div>
+        <details class="q">
+          <summary><span class="qnum">S1.</span> "Her n asal sayı, n≤10 için n çift ya da n tektir" iddiası tüketme yöntemiyle mi yoksa doğrudan ispatla mı daha kolay gösterilir?<span class="arrow">▶</span></summary>
+          <div class="answer">Aslında bu, her tamsayı için zaten doğru olan bir totolojidir (her tamsayı ya çift ya tektir) — bu yüzden ne tüketme ne de özel bir ispat gerekir, doğrudan tanımdan çıkar. Ama "n≤10 olan her asal sayı için özel bir özellik" iddiaları genelde tüketme yöntemine uygundur çünkü sonlu (2,3,5,7 gibi 4 asal) bir küme söz konusudur.</div>
+        </details>
+        <details class="q">
+          <summary><span class="qnum">S2.</span> Tüketme yöntemini kullanırken "hiçbir durumu atlamadığımızdan" nasıl emin oluruz?<span class="arrow">▶</span></summary>
+          <div class="answer">Durumları, birbirini dışlayan (mutually exclusive) ve hep birlikte tüm olasılıkları kapsayan (exhaustive) bir şekilde tanımlamalıyız — örneğin "n mod 3 = 0, 1 veya 2" gibi bir bölümleme, hiçbir tamsayıyı dışarıda bırakmaz çünkü her tamsayının 3'e bölümünden kalan mutlaka bu üç değerden biridir.</div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- 14 — EXHAUSTIVE PROOF EXAMPLE -->
+  <section class="slide" data-index="14">
+    <div class="slide-inner">
+      <div class="kicker">2.14</div>
+      <h1 class="slide-title">Tüketme Yöntemi — Örnek</h1>
+      <p class="subtitle">"Her tamsayının küpü eksi kendisi, 6 ile tam bölünür" iddiasını vaka analiziyle ispatlayalım.</p>
+
+      <div class="card">
+        <h3>İddia: Her n tamsayısı için, n³ − n ifadesi 6 ile tam bölünür.</h3>
+        <p style="margin:0 0 10px;"><b>Strateji:</b> n³−n = n(n−1)(n+1) = (n−1)·n·(n+1) — yani <b>üç ardışık tamsayının çarpımı</b>. 6=2×3 olduğundan, bu çarpımın hem 2'ye hem 3'e bölündüğünü göstermemiz yeterli. n'nin 3'e göre kalanına bakarak durumlara ayıralım (n mod 3):</p>
+        <table class="tt" style="font-family:var(--sans); font-size:13.5px;">
+          <tr><th>Durum</th><th>Açıklama</th><th>3'e bölünme</th></tr>
+          <tr><td>n ≡ 0 (mod 3)</td><td>n zaten 3'e bölünür</td><td class="res"><span class="pill T">✓</span></td></tr>
+          <tr><td>n ≡ 1 (mod 3)</td><td>n−1, 3'e bölünür</td><td class="res"><span class="pill T">✓</span></td></tr>
+          <tr><td>n ≡ 2 (mod 3)</td><td>n+1, 3'e bölünür (çünkü n+1≡0)</td><td class="res"><span class="pill T">✓</span></td></tr>
+        </table>
+        <p style="margin:10px 0 0;">Üç ardışık tamsayıdan biri her zaman çift olduğundan (n veya n±1), çarpım her zaman 2'ye de bölünür. Her üç durumda da (n−1)n(n+1) hem 2'ye hem 3'e bölündüğünden 6'ya da bölünür. ∎</p>
+      </div>
+
+      <div class="examples">
+        <div class="examples-head"><span class="dot"></span><h4>Örnek Sorular</h4></div>
+        <details class="q">
+          <summary><span class="qnum">S1.</span> n=5 için n³−n değerini hesaplayıp 6'ya bölünüp bölünmediğini kontrol edin.<span class="arrow">▶</span></summary>
+          <div class="answer">5³−5 = 125−5 = 120. 120/6=20, tam bölünür. ✓ (n=5≡2 mod 3, tabloya göre n+1=6'nın 3'e bölünmesi bekleniyordu — tutarlı.)</div>
+        </details>
+        <details class="q">
+          <summary><span class="qnum">S2.</span> Bu ispatta neden "üç ardışık tamsayının çarpımı her zaman 2'ye bölünür" iddiasını ayrıca vaka analiziyle göstermemize gerek kalmadı?<span class="arrow">▶</span></summary>
+          <div class="answer">Çünkü herhangi iki ardışık tamsayıdan biri kesinlikle çifttir (tek-çift dönüşümlü gider) — üç ardışık sayı arasında bu her zaman garanti edilir, bu yüzden ayrı bir vaka analizi gerekmez; genel bir gözlem olarak doğrudan kullanılabilir.</div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- 15 — INDUCTION: BIG IDEA -->
+  <section class="slide" data-index="15">
+    <div class="slide-inner">
+      <div class="kicker">2.15</div>
+      <h1 class="slide-title">Matematiksel Tümevarım — Temel Fikir</h1>
+      <p class="subtitle">Sonsuz sayıda doğal sayı için geçerli bir önermeyi, sadece <b>iki adımda</b> ispatlamanın yolu.</p>
+
+      <div class="grid2">
+        <div class="card">
+          <h3>Domino analojisi 🁢</h3>
+          <p style="margin:0 0 10px;">Sonsuz uzunlukta dizilmiş dominoları düşünün. Eğer:</p>
+          <ul class="clean" style="margin-bottom:0;">
+            <li><b>(1)</b> İlk domino devrilirse, ve</li>
+            <li><b>(2)</b> Herhangi bir domino devrildiğinde, ondan sonraki domino da <b>kesinlikle</b> devrilirse,</li>
+          </ul>
+          <p style="margin-top:10px; margin-bottom:0;">o zaman <b>tüm</b> dominolar devrilir — sonsuz sayıda domino olsa bile! İşte matematiksel tümevarımın özü tam olarak budur.</p>
+        </div>
+        <div class="card">
+          <h3>Neden bilgisayar bilimciler için önemli?</h3>
+          <p style="margin:0;">Döngülerin doğruluğunu (loop invariants), özyinelemeli (recursive) algoritmaların doğruluğunu ve veri yapılarının özelliklerini (ör. bir ağaçtaki düğüm sayısı) kanıtlamak için tümevarım <b>vazgeçilmez</b> bir araçtır. Bir sonraki bölümde (Algorithms) recurrence relation'larla birlikte bunu derinlemesine kullanacağız.</p>
+        </div>
+      </div>
+
+      <div class="examples">
+        <div class="examples-head"><span class="dot"></span><h4>Örnek Sorular</h4></div>
+        <details class="q">
+          <summary><span class="qnum">S1.</span> Domino analojisinde "(1) ilk domino devrilir" adımı olmadan sadece "(2)" doğru olsaydı, sonuç ne olurdu?<span class="arrow">▶</span></summary>
+          <div class="answer">Hiçbir şey olmazdı! "(2)" sadece <i>eğer</i> bir domino devrilirse bir sonrakinin de devrileceğini garanti eder — ama hiçbir domino başlangıçta devrilmediyse, zincir hiç başlamaz. Bu yüzden ilk adım (temel adım) mutlaka gereklidir.</div>
+        </details>
+        <details class="q">
+          <summary><span class="qnum">S2.</span> Tümevarımın neden "sonsuz sayıda durumu" sadece "iki adımla" kanıtlayabildiğini sezgisel olarak açıklayın.<span class="arrow">▶</span></summary>
+          <div class="answer">İkinci adım (herhangi bir k için doğruysa k+1 için de doğrudur), bir "zincirleme mekanizması" kurar. Temel adımla (n=1 için doğru) başlayınca, bu mekanizma otomatik olarak n=2, sonra n=3, sonra n=4... şeklinde sonsuza kadar devam eder — tek tek her sayıyı kontrol etmemize gerek kalmaz.</div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- 16 — INDUCTION FORMAL STRUCTURE -->
+  <section class="slide" data-index="16">
+    <div class="slide-inner">
+      <div class="kicker">2.16</div>
+      <h1 class="slide-title">Matematiksel Tümevarım — Formal Yapı</h1>
+      <p class="subtitle">P(n) önermesinin tüm n≥n₀ doğal sayıları için doğru olduğunu ispatlamak.</p>
+
+      <div class="card">
+        <span class="method-tag">YÖNTEM</span>
+        <h3>İki zorunlu adım</h3>
+        <ol class="step-list">
+          <li><b>Temel Adım (Base Case):</b> P(n₀)'ın doğru olduğunu göster (genelde n₀=0 veya n₀=1).</li>
+          <li><b>Tümevarım Adımı (Inductive Step):</b> Herhangi bir k≥n₀ için, <b>"P(k) doğrudur" varsayımını</b> (buna <b>tümevarım hipotezi / induction hypothesis</b> denir) kullanarak <b>P(k+1)'in de doğru olduğunu</b> göster: <span class="formula">P(k) → P(k+1)</span>.</li>
+        </ol>
+        <div class="formula-big" style="font-size:16px;">[P(n₀) ∧ ∀k(P(k)→P(k+1))] → ∀n≥n₀ P(n)</div>
+        <p style="margin:0; font-size:13.5px; color:var(--muted);">Bu iki adım tamamlandığında, P(n)'in tüm n≥n₀ için doğru olduğu sonucuna varılır — bu bir <b>aksiyom</b> olarak kabul edilir (Peano aksiyomlarının bir parçasıdır).</p>
+      </div>
+
+      <div class="examples">
+        <div class="examples-head"><span class="dot"></span><h4>Örnek Sorular</h4></div>
+        <details class="q">
+          <summary><span class="qnum">S1.</span> Tümevarım adımında "P(k) doğrudur" varsaymak, ispatlamak istediğimiz şeyi baştan kabul etmek (döngüsel akıl yürütme) değil midir?<span class="arrow">▶</span></summary>
+          <div class="answer">Hayır — biz P(k)'yi <i>tüm</i> k'ler için doğru kabul etmiyoruz, sadece "eğer P(k) doğruysa, P(k+1) de doğru olur" biçiminde <b>koşullu bir ilişki</b> kuruyoruz. Bu, P(n₀)'ın gerçekten doğru olduğunu ayrıca ispatladığımız temel adımla birleşince, döngüsellik olmadan tüm n'leri kapsar.</div>
+        </details>
+        <details class="q">
+          <summary><span class="qnum">S2.</span> Temel adımı n₀=0 yerine n₀=5 seçseydiniz, ispat neyi kanıtlamış olurdu?<span class="arrow">▶</span></summary>
+          <div class="answer">P(n)'in n=0,1,2,3,4 için değil, sadece <b>n≥5</b> olan tüm tamsayılar için doğru olduğunu kanıtlamış olursunuz — temel adımın başlangıç noktası, ispatın "geçerlilik aralığının" alt sınırını belirler.</div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- 17 — INDUCTION EXAMPLE 1: SUM FORMULA -->
+  <section class="slide" data-index="17">
+    <div class="slide-inner">
+      <div class="kicker">2.17</div>
+      <h1 class="slide-title">Tümevarım — Örnek 1: 1+2+…+n = n(n+1)/2</h1>
+      <p class="subtitle">Gauss'un çocukken bulduğu ünlü formülü tümevarımla ispatlayalım.</p>
+
+      <div class="card">
+        <h3>İddia: Her n≥1 tamsayısı için, 1+2+3+…+n = n(n+1)/2</h3>
+        <ol class="step-list">
+          <li><b>Temel Adım (n=1):</b> Sol taraf: 1. Sağ taraf: 1(1+1)/2 = 2/2 = 1. Eşit → doğru. ✓</li>
+          <li><b>Tümevarım Hipotezi:</b> Bir k≥1 için, 1+2+…+k = k(k+1)/2 olduğunu <b>varsayalım</b>.</li>
+          <li><b>Tümevarım Adımı (P(k+1)'i göster):</b> 1+2+…+k+(k+1) toplamını hesaplayalım:
+            <div class="formula-big" style="font-size:16px; margin:8px 0;">1+2+…+k+(k+1) = [k(k+1)/2] + (k+1)</div>
+          </li>
+          <li>Tümevarım hipotezini kullanarak ilk k terimin toplamını yerine koyduk. Şimdi sağ tarafı sadeleştirelim:
+            <div class="formula-big" style="font-size:16px; margin:8px 0;">= (k+1)[k/2 + 1] = (k+1)(k+2)/2</div>
+          </li>
+          <li>Bu tam olarak P(k+1)'in iddia ettiği formüldür: (k+1)((k+1)+1)/2 = (k+1)(k+2)/2. ✓</li>
+          <li>Temel adım ve tümevarım adımı tamamlandığından, formül <b>her n≥1</b> için doğrudur. ∎</li>
+        </ol>
+      </div>
+
+      <div class="examples">
+        <div class="examples-head"><span class="dot"></span><h4>Örnek Sorular</h4></div>
+        <details class="q">
+          <summary><span class="qnum">S1.</span> n=4 için formülü doğrudan hesaplayıp 1+2+3+4 ile karşılaştırın.<span class="arrow">▶</span></summary>
+          <div class="answer">Formül: 4(4+1)/2 = 20/2 = 10. Doğrudan toplam: 1+2+3+4=10. Eşleşiyor. ✓</div>
+        </details>
+        <details class="q">
+          <summary><span class="qnum">S2.</span> Tümevarım adımının 4. satırında "k(k+1)/2 + (k+1)" ifadesini "(k+1)(k+2)/2"ye dönüştürürken hangi cebirsel işlem yapıldı?<span class="arrow">▶</span></summary>
+          <div class="answer">(k+1) ortak çarpan olarak parantezine alındı: k(k+1)/2+(k+1) = (k+1)[k/2+1] = (k+1)[(k+2)/2] = (k+1)(k+2)/2. Bu, dağılma kanununun (Bölüm 3'teki Boole cebri kanunlarının sayısal karşılığı) tersten uygulanmasıdır.</div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- 18 — INDUCTION EXAMPLE 2: 2^n > n -->
+  <section class="slide" data-index="18">
+    <div class="slide-inner">
+      <div class="kicker">2.18</div>
+      <h1 class="slide-title">Tümevarım — Örnek 2: 2ⁿ &gt; n</h1>
+      <p class="subtitle">Algoritma karmaşıklığı analizinde sürekli karşımıza çıkan bir eşitsizlik — üstel büyümenin doğrusal büyümeyi her zaman geçtiğini gösterir.</p>
+
+      <div class="card">
+        <h3>İddia: Her n≥1 tamsayısı için, 2ⁿ &gt; n</h3>
+        <ol class="step-list">
+          <li><b>Temel Adım (n=1):</b> 2¹=2 ve n=1. 2 &gt; 1 doğrudur. ✓</li>
+          <li><b>Tümevarım Hipotezi:</b> Bir k≥1 için 2ᵏ &gt; k olduğunu varsayalım.</li>
+          <li><b>Tümevarım Adımı (2^(k+1) &gt; k+1'i göster):</b>
+            <div class="formula-big" style="font-size:16px; margin:8px 0;">2^(k+1) = 2 · 2ᵏ</div>
+          </li>
+          <li>Tümevarım hipotezine göre 2ᵏ &gt; k, dolayısıyla:
+            <div class="formula-big" style="font-size:16px; margin:8px 0;">2 · 2ᵏ &gt; 2k</div>
+          </li>
+          <li>k≥1 olduğundan 2k = k+k ≥ k+1'dir (çünkü k≥1). Böylece:
+            <div class="formula-big" style="font-size:16px; margin:8px 0;">2^(k+1) &gt; 2k ≥ k+1</div>
+          </li>
+          <li>Yani 2^(k+1) &gt; k+1 — bu tam olarak P(k+1)'dir. ✓ Temel adım ve tümevarım adımı tamamlandığından, iddia her n≥1 için doğrudur. ∎</li>
+        </ol>
+      </div>
+
+      <div class="examples">
+        <div class="examples-head"><span class="dot"></span><h4>Örnek Sorular</h4></div>
+        <details class="q">
+          <summary><span class="qnum">S1.</span> n=5 için 2ⁿ &gt; n eşitsizliğini doğrudan sayılarla doğrulayın.<span class="arrow">▶</span></summary>
+          <div class="answer">2⁵=32, n=5. 32 &gt; 5 doğrudur. ✓</div>
+        </details>
+        <details class="q">
+          <summary><span class="qnum">S2.</span> Bu eşitsizliğin bir algoritma analizi bağlamında ne anlama geldiğini yorumlayın (ör. O(2ⁿ) ve O(n) karmaşıklıklarını karşılaştırarak).<span class="arrow">▶</span></summary>
+          <div class="answer">Bu, O(2ⁿ) (üstel) zaman karmaşıklığına sahip bir algoritmanın, yeterince büyük n için her zaman O(n) (doğrusal) bir algoritmadan daha fazla işlem yapacağını matematiksel olarak garanti eder — Algorithms bölümünde büyüme mertebelerini karşılaştırırken bu tip ispatlar temel oluşturur.</div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- 19 — STRONG INDUCTION -->
+  <section class="slide" data-index="19">
+    <div class="slide-inner">
+      <div class="kicker">2.19</div>
+      <h1 class="slide-title">Güçlü Tümevarım <em>(Strong Induction)</em></h1>
+      <p class="subtitle">Bazen P(k+1)'i ispatlamak için sadece P(k) yeterli olmaz — P(k)'den önceki <b>tüm</b> değerlere ihtiyaç duyabiliriz.</p>
+
+      <div class="grid2">
+        <div class="card">
+          <span class="method-tag">YÖNTEM</span>
+          <h3>Normal tümevarımdan farkı</h3>
+          <table class="laws">
+            <tr><th></th><th>Tümevarım Hipotezi</th></tr>
+            <tr><td>Normal (zayıf) tümevarım</td><td class="f">Sadece P(k) doğru varsayılır</td></tr>
+            <tr><td>Güçlü tümevarım</td><td class="f">P(n₀), P(n₀+1), …, P(k)'nin <b>hepsi</b> doğru varsayılır</td></tr>
+          </table>
+          <div class="formula-big" style="font-size:15px;">[P(n₀)∧…∧P(k)] → P(k+1)</div>
+        </div>
+        <div class="card">
+          <h3>Ne zaman gerekli?</h3>
+          <p style="margin:0;">P(k+1)'in doğruluğu, sadece bir önceki adıma değil, <b>çeşitli önceki adımlara</b> bağlıysa güçlü tümevarım kullanılır. Örneğin bir sayıyı asal çarpanlarına ayırırken, ya da bir özyinelemeli fonksiyon birden fazla önceki değere bakıyorsa (Fibonacci dizisi gibi: F(n)=F(n-1)+F(n-2)).</p>
+          <p style="margin-top:10px; margin-bottom:0; font-size:13px; color:var(--muted);">Önemli: Normal tümevarım ile güçlü tümevarım aslında <b>mantıksal olarak eşdeğerdir</b> — biri diğerinden türetilebilir. Sadece bazı ispatları yazmak güçlü tümevarımla daha kolaydır.</p>
+        </div>
+      </div>
+
+      <div class="examples">
+        <div class="examples-head"><span class="dot"></span><h4>Örnek Sorular</h4></div>
+        <details class="q">
+          <summary><span class="qnum">S1.</span> Fibonacci dizisi F(n)=F(n-1)+F(n-2) ile ilgili bir özelliği ispatlamak isteseniz, neden normal tümevarım yerine güçlü tümevarım gerekir?<span class="arrow">▶</span></summary>
+          <div class="answer">Çünkü F(k+1)'i hesaplamak için sadece F(k)'ye değil, aynı zamanda F(k-1)'e de ihtiyaç vardır. Normal tümevarım sadece "P(k) doğruysa" bilgisini verir, ama F(k-1) hakkında bir varsayım sağlamaz — bu yüzden güçlü tümevarım (hem P(k) hem P(k-1)'in doğru olduğunu varsayan) gereklidir.</div>
+        </details>
+        <details class="q">
+          <summary><span class="qnum">S2.</span> Güçlü tümevarımda temel adımda kaç değeri ayrıca kontrol etmemiz gerekebilir?<span class="arrow">▶</span></summary>
+          <div class="answer">Tümevarım adımının, geriye doğru en fazla kaç adıma baktığına bağlıdır. Fibonacci örneğinde iki önceki terime bakıldığından, genelde <b>iki</b> temel durum (n=0 ve n=1) ayrıca doğrudan kontrol edilmelidir — tek bir temel durum yeterli olmaz.</div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- 20 — STRONG INDUCTION EXAMPLE -->
+  <section class="slide" data-index="20">
+    <div class="slide-inner">
+      <div class="kicker">2.20</div>
+      <h1 class="slide-title">Güçlü Tümevarım — Örnek: Her Tamsayı Asal Çarpanlara Ayrılabilir</h1>
+      <p class="subtitle">Aritmetiğin Temel Teoremi'nin "varlık" kısmının ispatı — sayı teorisinin temel taşlarından biri.</p>
+
+      <div class="card">
+        <h3>İddia: Her n≥2 tamsayısı, bir veya daha fazla asal sayının çarpımı olarak yazılabilir.</h3>
+        <ol class="step-list">
+          <li><b>Temel Adım (n=2):</b> 2 zaten asaldır — kendisi tek elemanlı bir "asal çarpanlar çarpımı" sayılır. ✓</li>
+          <li><b>Güçlü Tümevarım Hipotezi:</b> 2 ≤ m ≤ k olan <b>her</b> m tamsayısının asal çarpanlara ayrılabildiğini varsayalım.</li>
+          <li><b>Tümevarım Adımı (k+1 için göster):</b> İki durum var:
+            <ul class="clean" style="margin:8px 0 0;">
+              <li><b>Durum A — k+1 asaldır:</b> O zaman kendisi zaten tek elemanlı bir asal çarpanlar çarpımıdır. ✓</li>
+              <li><b>Durum B — k+1 asal değildir:</b> O zaman k+1 = a·b biçiminde yazılabilir, burada 2≤a,b≤k (a ve b, k+1'den küçük tamsayılardır). Güçlü tümevarım hipotezine göre hem a hem de b zaten asal çarpanlara ayrılabilir (çünkü ikisi de k'ya kadar olan aralıkta). Bu iki çarpanlamayı birleştirerek k+1'in de asal çarpanlarını elde ederiz. ✓</li>
+            </ul>
+          </li>
+          <li>Her iki durumda da k+1 asal çarpanlara ayrılabildiğinden, iddia her n≥2 için doğrudur. ∎</li>
+        </ol>
+        <p style="margin-top:10px; margin-bottom:0; font-size:13.5px; color:var(--muted);">Burada normal (zayıf) tümevarım <b>yetersiz</b> kalırdı çünkü a ve b, k+1'den küçük olsa da doğrudan k olmak zorunda değildir — a ve b'nin herhangi bir küçük değer olabileceğini kullanabilmek için güçlü tümevarım şarttır.</p>
+      </div>
+
+      <div class="examples">
+        <div class="examples-head"><span class="dot"></span><h4>Örnek Sorular</h4></div>
+        <details class="q">
+          <summary><span class="qnum">S1.</span> n=12 için, ispattaki "Durum B" mantığını izleyerek 12'nin asal çarpanlarına nasıl ayrıldığını gösterin.<span class="arrow">▶</span></summary>
+          <div class="answer">12 asal değildir → 12=3×4 yazılabilir (a=3,b=4, ikisi de 12'den küçük). Güçlü tümevarım hipotezine göre 3 (zaten asal) ve 4=2×2 (asal çarpanlara ayrılabilir) biliniyor. Birleştirince: 12=3×2×2=2²×3.</div>
+        </details>
+        <details class="q">
+          <summary><span class="qnum">S2.</span> Bu ispat neden sadece "asal çarpanlara ayrılabilir" (varlık) kısmını gösterir, "tek bir şekilde ayrılır" (teklik) kısmını göstermez?<span class="arrow">▶</span></summary>
+          <div class="answer">Çünkü ispat sadece bir çarpanlama <i>bulmanın mümkün olduğunu</i> gösteriyor — a·b şeklinde herhangi bir bölünme bulup, tümevarım hipotezini uyguluyoruz. Çarpanlamanın <i>tek</i> (unique) olduğunu göstermek için ayrı ve daha derin bir ispat (genelde çelişki ile) gereklidir; bu, Aritmetiğin Temel Teoremi'nin ikinci, ayrı bir bileşenidir.</div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- 21 — CHOOSING A TECHNIQUE -->
+  <section class="slide" data-index="21">
+    <div class="slide-inner">
+      <div class="kicker">2.21</div>
+      <h1 class="slide-title">Hangi Teknik Ne Zaman Kullanılır?</h1>
+      <p class="subtitle">Bir ispata başlarken sorabileceğiniz pratik bir karar ağacı.</p>
+
+      <table class="laws">
+        <tr><th>Durum</th><th>Önerilen Teknik</th></tr>
+        <tr><td>Önerme p→q formunda ve hipotezden sonuca giden yol açık</td><td class="f">Doğrudan İspat</td></tr>
+        <tr><td>Önerme p→q formunda ve sonucun olumsuzu, hipotezin olumsuzundan daha kolay işleniyor</td><td class="f">Dolaylı İspat (Çelişki/Contrapositive)</td></tr>
+        <tr><td>"Böyle bir şey yoktur" / "İmkansızdır" türü iddialar (irrasyonellik, sonsuzluk)</td><td class="f">Çelişki ile İspat</td></tr>
+        <tr><td>"Her x için doğrudur" iddiasını yanlışlamak istiyorsunuz</td><td class="f">Karşı Örnek</td></tr>
+        <tr><td>Sonlu ve az sayıda ayrı durum var</td><td class="f">Tüketme Yöntemi</td></tr>
+        <tr><td>Tüm doğal sayılar (n≥n₀) için geçerli bir formül/özellik var</td><td class="f">Matematiksel Tümevarım</td></tr>
+        <tr><td>P(k+1), sadece P(k)'ye değil birden fazla önceki duruma bağlı</td><td class="f">Güçlü Tümevarım</td></tr>
+      </table>
+
+      <div class="examples">
+        <div class="examples-head"><span class="dot"></span><h4>Örnek Sorular</h4></div>
+        <details class="q">
+          <summary><span class="qnum">S1.</span> "Bir özyinelemeli (recursive) fonksiyonun her zaman doğru sonuç verdiğini" ispatlamak istiyorsunuz. Hangi teknik en uygun olur?<span class="arrow">▶</span></summary>
+          <div class="answer">Genelde <b>matematiksel tümevarım</b> (fonksiyon sadece bir önceki değere bakıyorsa) ya da <b>güçlü tümevarım</b> (birden fazla önceki değere bakıyorsa, Fibonacci gibi) kullanılır — özyinelemenin yapısı doğrudan tümevarımın yapısına paralel olduğundan çok doğal bir eşleşme sağlar.</div>
+        </details>
+        <details class="q">
+          <summary><span class="qnum">S2.</span> Bir öğrenci "algoritmam her zaman doğru sonuç veriyor" iddiasını sadece 5 test verisiyle kontrol ederek kanıtladığını söylüyor. Bu neden yeterli bir ispat değildir?<span class="arrow">▶</span></summary>
+          <div class="answer">5 test verisi, tüketme yöntemi anlamında ancak <i>sonlu ve sınırlı</i> bir durum kümesini kapsar. Ama "her zaman doğru" iddiası potansiyel olarak sonsuz sayıda girdiyi kapsar — bu yüzden test etmek, matematiksel tümevarım ya da doğrudan bir doğruluk kanıtı yerine geçmez. Bu, "birkaç örnekte doğru olmanın ispat olmadığı" ilkesinin (Slayt 1) doğrudan bir uygulamasıdır.</div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- 22 — COMMON MISTAKES -->
+  <section class="slide" data-index="22">
+    <div class="slide-inner">
+      <div class="kicker">2.22</div>
+      <h1 class="slide-title">Yaygın İspat Hataları</h1>
+      <p class="subtitle">İspat yazarken en sık düşülen tuzaklar — bunları tanımak, hem kendi ispatlarınızı kontrol etmenizi hem de başkalarınınkini değerlendirmenizi kolaylaştırır.</p>
+
+      <div class="grid2">
+        <div class="card">
+          <h3>Hata 1: Karşıtı orijinalle karıştırmak</h3>
+          <p style="margin:0;">p→q'yu ispatlamak yerine yanlışlıkla karşıtını (q→p) ispatlamak — bunlar mantıksal olarak <b>denk değildir</b> (Bölüm 1, Slayt 8).</p>
+        </div>
+        <div class="card">
+          <h3>Hata 2: Birkaç örnekle genelleme</h3>
+          <p style="margin:0;">"n=1,2,3 için doğru, o halde her n için doğrudur" demek — bu bir ispat değildir (Slayt 1'deki n²+n+41 örneğini hatırlayın).</p>
+        </div>
+        <div class="card">
+          <h3>Hata 3: Döngüsel akıl yürütme</h3>
+          <p style="margin:0;">İspatlamak istediğiniz sonucu, ispatın bir yerinde (fark etmeden) doğru kabul etmek — sonucu kanıtlamak için sonucun kendisini kullanmak.</p>
+        </div>
+        <div class="card">
+          <h3>Hata 4: Temel adımı atlamak (tümevarımda)</h3>
+          <p style="margin:0;">Sadece tümevarım adımını (P(k)→P(k+1)) gösterip temel adımı (P(n₀)) unutmak — domino zinciri başlamadan "devrilme garantisi" hiçbir şey ifade etmez (Slayt 15).</p>
+        </div>
+        <div class="card">
+          <h3>Hata 5: Bölme sırasında sıfır ihtimalini gözden kaçırmak</h3>
+          <p style="margin:0;">Cebirsel adımlarda bir ifadeye bölme yapılıyorsa, o ifadenin <b>asla sıfır olamayacağının</b> ayrıca garanti edilmesi gerekir.</p>
+        </div>
+        <div class="card">
+          <h3>Hata 6: "Açıktır" demek yeterli değildir</h3>
+          <p style="margin:0;">Bir adımı "açıkça doğrudur" diye geçmek, o adımın gerçekten ispatlanmış ya da tanım gereği doğru olduğunu göstermez — her adımın gerekçesi net olmalıdır.</p>
+        </div>
+      </div>
+
+      <div class="examples">
+        <div class="examples-head"><span class="dot"></span><h4>Örnek Sorular</h4></div>
+        <details class="q">
+          <summary><span class="qnum">S1.</span> Bir öğrenci "x²=9 olduğundan x=3'tür" diyor. Bu adımda hangi hata var?<span class="arrow">▶</span></summary>
+          <div class="answer">Eksik durum analizi hatası: x²=9 denkleminin iki çözümü vardır, x=3 <b>veya</b> x=−3. Öğrenci sadece bir olasılığı dikkate almış, diğerini gözden kaçırmıştır — bu, tüketme yönteminde "tüm durumları kapsama" ilkesinin ihlalidir.</div>
+        </details>
+        <details class="q">
+          <summary><span class="qnum">S2.</span> "A=B olduğunu göstermek için her iki tarafı da (A−B) ile çarparız" gibi bir adımda potansiyel tehlike nedir?<span class="arrow">▶</span></summary>
+          <div class="answer">Eğer A=B ise, A−B=0'dır — bu durumda "her iki tarafı (A−B) ile çarpmak" aslında her iki tarafı da 0 ile çarpmak anlamına gelir ve bu, ilişkiyi anlamsızlaştırır (her şeyi 0=0'a indirger, hiçbir şey kanıtlamaz). Bu tip "gizli sıfırla çarpma/bölme" hataları, sahte (yanlış) ispatların klasik kaynağıdır.</div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- 23 — SUMMARY -->
+  <section class="slide" data-index="23">
+    <div class="slide-inner">
+      <div class="kicker">Özet</div>
+      <h1 class="slide-title">Bölüm 2'nin Özeti — <em>İspat Teknikleri</em></h1>
+      <p class="subtitle">Bu araçlar, Algorithms bölümünde göreceğimiz özyineleme ve karmaşıklık analizinin de temelini oluşturacak.</p>
+
+      <div class="two-col-list">
+        <div class="card">
+          <h3>Öğrendiklerimiz</h3>
+          <ul class="clean" style="margin-bottom:0;">
+            <li>İspat, teorem, lemma, sonuç, sanı gibi temel terimler</li>
+            <li>Doğrudan ispat (p'yi varsay, q'ya ulaş)</li>
+            <li>Dolaylı ispat (çelişkiyi/contrapositive'i kullanma)</li>
+            <li>Çelişki ile ispat (¬p'yi varsay, çelişkiye ulaş) — √2 ve sonsuz asal örnekleri</li>
+            <li>Karşı örnek ile çürütme</li>
+            <li>Tüketme yöntemi (sonlu vaka analizi)</li>
+            <li>Matematiksel tümevarım (temel adım + tümevarım adımı)</li>
+            <li>Güçlü tümevarım (birden fazla önceki duruma dayanan ispatlar)</li>
+            <li>Yaygın ispat hataları ve bunlardan kaçınma</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Sırada ne var?</h3>
+          <p style="margin:0 0 10px;">Zaten işlediğimiz Bölüm 3 — <b>Boole Cebri ve Mantık Devreleri</b>'nden sonra, Bölüm 4 — <b>Algorithms</b> konusunda şunları göreceğiz:</p>
+          <ul class="clean" style="margin-bottom:0;">
+            <li>Temel algoritma kavramı ve gösterim biçimleri</li>
+            <li>İteratif algoritmaların matematiksel analizi</li>
+            <li>Özyinelemeli (recursive) algoritmalar ve <b>tümevarımla doğruluk ispatı</b></li>
+            <li>Recurrence relation (yineleme bağıntısı) ile karmaşıklık analizi</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="examples">
+        <div class="examples-head"><span class="dot"></span><h4>Genel Tekrar Soruları</h4></div>
+        <details class="q">
+          <summary><span class="qnum">S1.</span> "Her n≥1 için n² + n her zaman çifttir" önermesini, en uygun bulduğunuz teknikle ispatlayın.<span class="arrow">▶</span></summary>
+          <div class="answer">Doğrudan ispat en uygunudur: n²+n = n(n+1). n ve n+1 ardışık iki tamsayıdır, bu yüzden biri kesinlikle çifttir. Çift bir sayı ile herhangi bir tamsayının çarpımı çift olduğundan (Slayt 4, Örnek 2'ye benzer mantık), n(n+1) her zaman çifttir. ∎</div>
+        </details>
+        <details class="q">
+          <summary><span class="qnum">S2.</span> "Her n doğal sayısı için n! ≥ 2ⁿ⁻¹" iddiasını matematiksel tümevarımla ispatlayın (n≥1).<span class="arrow">▶</span></summary>
+          <div class="answer">
+            <b>Temel adım (n=1):</b> 1!=1, 2⁰=1. 1≥1 doğru. ✓<br>
+            <b>Tümevarım hipotezi:</b> k!≥2^(k-1) olduğunu varsayalım.<br>
+            <b>Tümevarım adımı:</b> (k+1)! = (k+1)·k! ≥ (k+1)·2^(k-1). k≥1 olduğundan k+1≥2, dolayısıyla (k+1)·2^(k-1) ≥ 2·2^(k-1) = 2ᵏ. Böylece (k+1)! ≥ 2ᵏ = 2^((k+1)-1), yani P(k+1) doğrulanır. ∎
+          </div>
+        </details>
+        <details class="q">
+          <summary><span class="qnum">S3.</span> "Her tek sayının karesi tektir" önermesini çürütmeye çalışan bir öğrenciye ne söylerdiniz?<span class="arrow">▶</span></summary>
+          <div class="answer">Bu önerme aslında <b>doğrudur</b> (n=2k+1 için n²=4k²+4k+1=2(2k²+2k)+1, her zaman tek) — çürütülemez. Öğrenciye, önce önermenin doğru olup olmadığını birkaç örnekle (3²=9 tek, 5²=25 tek) sezgisel olarak kontrol etmesini, sonra doğrudan ispatla kesin olarak göstermesini önerirdim; bir karşı örnek arayışının burada sonuç vermeyeceğini çünkü önermenin genel olarak geçerli olduğunu vurgulardım.</div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+</div>
+
+<div class="bottombar">
+  <button class="nav-btn" id="prevBtn">← Önceki</button>
+  <div class="dots" id="dots"></div>
+  <span class="slide-counter" id="counterBottom">01 / 24</span>
+  <button class="nav-btn" id="nextBtn">Sonraki →</button>
+</div>
+
+<script>
+(function(){
+  var slides = Array.prototype.slice.call(document.querySelectorAll('.slide'));
+  var total = slides.length;
+  var current = 0;
+
+  var counterTop = document.getElementById('counterTop');
+  var counterBottom = document.getElementById('counterBottom');
+  var progressFill = document.getElementById('progressFill');
+  var prevBtn = document.getElementById('prevBtn');
+  var nextBtn = document.getElementById('nextBtn');
+  var dotsWrap = document.getElementById('dots');
+
+  function pad(n){ return n < 10 ? '0'+n : ''+n; }
+
+  for(var i=0;i<total;i++){
+    var d = document.createElement('div');
+    d.className = 'd' + (i===0 ? ' active' : '');
+    d.dataset.i = i;
+    d.addEventListener('click', function(){ goTo(parseInt(this.dataset.i,10)); });
+    dotsWrap.appendChild(d);
+  }
+
+  function render(){
+    slides.forEach(function(s, i){ s.classList.toggle('active', i === current); });
+    var label = pad(current+1) + ' / ' + pad(total);
+    counterTop.textContent = label;
+    counterBottom.textContent = label;
+    progressFill.style.width = ((current) / (total-1) * 100) + '%';
+    prevBtn.disabled = current === 0;
+    nextBtn.disabled = current === total - 1;
+    Array.prototype.forEach.call(dotsWrap.children, function(d,i){
+      d.classList.toggle('active', i === current);
+    });
+    document.querySelector('.slide.active').scrollTop = 0;
+  }
+
+  function goTo(i){
+    if(i < 0 || i >= total) return;
+    current = i;
+    render();
+  }
+
+  prevBtn.addEventListener('click', function(){ goTo(current-1); });
+  nextBtn.addEventListener('click', function(){ goTo(current+1); });
+
+  document.addEventListener('keydown', function(e){
+    if(e.key === 'ArrowRight' || e.key === 'PageDown'){ goTo(current+1); }
+    else if(e.key === 'ArrowLeft' || e.key === 'PageUp'){ goTo(current-1); }
+    else if(e.key === 'Home'){ goTo(0); }
+    else if(e.key === 'End'){ goTo(total-1); }
+  });
+
+  render();
+
+  var root = document.documentElement;
+  var settingsBtn = document.getElementById('settingsBtn');
+  var panel = document.getElementById('settingsPanel');
+  var bgPicker = document.getElementById('bgPicker');
+  var textPicker = document.getElementById('textPicker');
+  var resetBtn = document.getElementById('resetBtn');
+  var presetRow = document.getElementById('presetRow');
+
+  var DEFAULT_BG = '#0B1220';
+  var DEFAULT_TEXT = '#F1F5F9';
+
+  var presets = [
+    {bg:'#0B1220', text:'#F1F5F9', name:'Gece Mavisi'},
+	{bg:'#F8F9FA', text:'#1A1A1A', name:'Kampüs Beyazı ve Koyu Gri'},
+	{bg:'#000000', text:'#FFD700', name:'Siyah ve Altın Sarısı'},
+	{bg:'#F4F6F9', text:'#0F172A', name:'Kırık Beyaz ve Gece Mavisi'},
+	{bg:'#0B132B', text:'#FFEE58', name:'Koyu Lacivert ve Odak Sarısı'},
+    {bg:'#F4F1EA', text:'#1A1A1A', name:'Kağıt'},
+    {bg:'#111111', text:'#F5F5F5', name:'Siyah'},
+    {bg:'#0F2417', text:'#E8F5E9', name:'Koyu Yeşil'},
+    {bg:'#FFFFFF', text:'#0B1220', name:'Beyaz Tahta'},
+    {bg:'#1B1035', text:'#F3E8FF', name:'Mor Gece'},
+	{bg:'#F1F5F9', text:'#0F172A', name:'Bulutlu Gün Modu'},
+	{bg:'#FEF08A', text:'#1E293B', name:'Fosforlu Vurgu Modu'},
+	{bg:'#FFFFFF', text:'#000000', name:'Güneş Işığı Modu'}
+  ];
+  
+  presets.forEach(function(p){
+    var dot = document.createElement('div');
+    dot.className = 'preset-dot';
+    dot.style.background = p.bg;
+    dot.style.borderColor = p.text;
+    dot.title = p.name;
+    dot.addEventListener('click', function(){ applyTheme(p.bg, p.text); });
+    presetRow.appendChild(dot);
+  });
+
+  function applyTheme(bg, text){
+    root.style.setProperty('--bg', bg);
+    root.style.setProperty('--text', text);
+    bgPicker.value = bg;
+    textPicker.value = text;
+    try{
+      localStorage.setItem('proof-slides-theme', JSON.stringify({bg:bg, text:text}));
+    }catch(e){}
+  }
+
+  settingsBtn.addEventListener('click', function(){ panel.classList.toggle('open'); });
+  document.addEventListener('click', function(e){
+    if(!panel.contains(e.target) && e.target !== settingsBtn && panel.classList.contains('open')){
+      panel.classList.remove('open');
+    }
+  });
+
+  bgPicker.addEventListener('input', function(){ applyTheme(bgPicker.value, textPicker.value); });
+  textPicker.addEventListener('input', function(){ applyTheme(bgPicker.value, textPicker.value); });
+  resetBtn.addEventListener('click', function(){ applyTheme(DEFAULT_BG, DEFAULT_TEXT); });
+
+  try{
+    var saved = localStorage.getItem('proof-slides-theme');
+    if(saved){
+      var parsed = JSON.parse(saved);
+      if(parsed && parsed.bg && parsed.text){ applyTheme(parsed.bg, parsed.text); }
+    }
+  }catch(e){}
+})();
+</script>
+
+
+<div id="boardLayer"></div>
+<canvas id="penCanvas"></canvas>
+<div id="laserDot"></div>
+<div id="penToolbar">
+  <div class="pt-grid">
+    <button class="pt-btn" data-tool="pointer" title="İşaretçi — soruları aç, kaydır (V)">🖱️</button>
+    <button class="pt-btn" data-tool="pen" title="Kalem (P)">✏️</button>
+    <button class="pt-btn" data-tool="highlighter" title="Fosforlu kalem (H)">🖍️</button>
+    <button class="pt-btn" data-tool="eraser" title="Silgi — çizgiyi komple siler (E)">🧽</button>
+    <button class="pt-btn" data-tool="laser" title="Lazer işaretçi (L)">🔴</button>
+  </div>
+  <div class="pt-sep"></div>
+  <div class="pt-label">Renk</div>
+  <div class="pt-colors" id="ptColors"></div>
+  <div class="pt-sep"></div>
+  <div class="pt-label">Kalınlık</div>
+  <div class="pt-grid">
+    <button class="pt-btn" data-size="2" title="İnce (-)"><span class="pt-dot" style="width:4px;height:4px"></span></button>
+    <button class="pt-btn" data-size="4" title="Orta"><span class="pt-dot" style="width:8px;height:8px"></span></button>
+    <button class="pt-btn" data-size="8" title="Kalın"><span class="pt-dot" style="width:14px;height:14px"></span></button>
+    <button class="pt-btn" data-size="14" title="Çok kalın (+)"><span class="pt-dot" style="width:20px;height:20px"></span></button>
+  </div>
+  <div class="pt-sep"></div>
+  <div class="pt-grid">
+    <button class="pt-btn" id="ptUndo" title="Geri al (Ctrl+Z)">↶</button>
+    <button class="pt-btn" id="ptClear" title="Bu slayttaki yazıyı temizle (C)">🗑️</button>
+    <button class="pt-btn" id="ptBoard" title="Boş tahta aç/kapat (B)">▭</button>
+    <button class="pt-btn" id="ptEye" title="Yazıyı göster/gizle">👁️</button>
+    <button class="pt-btn" id="ptClose" title="Kalemi kapat (Esc)">✕</button>
+  </div>
+</div>
+<div id="penHint">Kalem açık. <b>V</b> ile işaretçiye geç (soru kutularını aç, kaydır), <b>P</b> ile tekrar yaz. Rakam tuşları renk seçer. Yazılar her slaytta ayrı kalır.</div>
+
+<script>
+(function(){
+  var COLORS = [
+    ['#FFFFFF','Beyaz'], ['#111111','Siyah'], ['#FBBF24','Sarı'], ['#F97316','Turuncu'],
+    ['#EF4444','Kırmızı'], ['#EC4899','Pembe'], ['#A855F7','Mor'], ['#3B82F6','Mavi'],
+    ['#22D3EE','Turkuaz'], ['#22C55E','Yeşil'], ['#A3E635','Açık yeşil'], ['#9CA3AF','Gri']
+  ];
+  var canvas = document.getElementById('penCanvas'), ctx = canvas.getContext('2d');
+  var board = document.getElementById('boardLayer'), tb = document.getElementById('penToolbar');
+  var laser = document.getElementById('laserDot'), hint = document.getElementById('penHint');
+  var toggleBtn = document.getElementById('penToggle'), colorsBox = document.getElementById('ptColors');
+  var state = { open:false, tool:'pointer', color:'#FBBF24', size:4, boardOn:false, hidden:false };
+  var store = {}, hist = {};
+  var cur = null, erasing = null, raf = 0, customWrap = null, customInput = null;
+  // Donanım silgisi algılandıktan sonra normal kalem ucuna dönüşü takip et.
+  var hardwareEraserMode = false;
+
+  function slideEl(){ return document.querySelector('.slide.active'); }
+  function key(){ if(state.boardOn) return 'board'; var s = slideEl(); return 's' + (s ? s.getAttribute('data-index') : '0'); }
+  function sTop(){ if(state.boardOn) return 0; var s = slideEl(); return s ? s.scrollTop : 0; }
+  function rect(){ return canvas.getBoundingClientRect(); }
+  function arr(o,k){ if(!o[k]) o[k] = []; return o[k]; }
+
+  function resize(){
+    var dpr = window.devicePixelRatio || 1, r = rect();
+    canvas.width = Math.round(r.width * dpr); canvas.height = Math.round(r.height * dpr);
+    ctx.setTransform(dpr,0,0,dpr,0,0); redraw();
+  }
+  function toPx(p){ return [p[0] * rect().width, p[1] - sTop()]; }
+
+  function drawStroke(st){
+    var pts = st.points; if(!pts.length) return;
+    ctx.save();
+    ctx.lineCap = 'round'; ctx.lineJoin = 'round'; ctx.strokeStyle = st.color; ctx.fillStyle = st.color;
+    var hl = st.tool === 'highlighter';
+    ctx.globalAlpha = hl ? 0.35 : 1;
+    var lw = hl ? st.size * 5 : st.size; ctx.lineWidth = lw;
+    var p0 = toPx(pts[0]);
+    if(pts.length === 1){ ctx.beginPath(); ctx.arc(p0[0], p0[1], lw/2, 0, Math.PI*2); ctx.fill(); ctx.restore(); return; }
+    ctx.beginPath(); ctx.moveTo(p0[0], p0[1]);
+    for(var i = 1; i < pts.length - 1; i++){
+      var a = toPx(pts[i]), b = toPx(pts[i+1]);
+      ctx.quadraticCurveTo(a[0], a[1], (a[0]+b[0])/2, (a[1]+b[1])/2);
+    }
+    var last = toPx(pts[pts.length-1]); ctx.lineTo(last[0], last[1]);
+    ctx.stroke(); ctx.restore();
+  }
+  function redraw(){
+    var r = rect(); ctx.clearRect(0, 0, r.width, r.height);
+    if(state.hidden) return;
+    (store[key()] || []).forEach(drawStroke);
+  }
+  function schedule(){ if(raf) return; raf = requestAnimationFrame(function(){ raf = 0; redraw(); }); }
+
+  function pt(e){ var r = rect(); return [ (e.clientX - r.left) / r.width, e.clientY - r.top + sTop() ]; }
+
+  function eraseAt(e){
+    var r = rect(), x = e.clientX - r.left, y = e.clientY - r.top, list = arr(store, key()), removed = [];
+    for(var i = list.length - 1; i >= 0; i--){
+      var hit = list[i].points.some(function(p){ var q = toPx(p); var dx = q[0]-x, dy = q[1]-y; return dx*dx + dy*dy < 18*18; });
+      if(hit){ removed.push(list.splice(i,1)[0]); }
+    }
+    if(removed.length){ erasing = erasing || []; erasing = erasing.concat(removed); schedule(); }
+  }
+
+  canvas.addEventListener('pointerdown', function(e){
+    if(!state.open) return;
+    // Bazı tablet kalemleri silgi ucunu Pointer Events'te ayrı araç olarak bildirir.
+    // Destekleyen tarayıcılarda araç seçimini otomatik olarak silgiye çevir.
+    var hardwareEraser = (e.pointerType === 'eraser') ||
+      (e.pointerType === 'pen' && (e.button === 5 || (e.buttons & 32) === 32));
+    if(hardwareEraser){
+      e.preventDefault();
+      hardwareEraserMode = true;
+      state.tool = 'eraser';
+      applyUI();
+    } else if(e.pointerType === 'pen' && hardwareEraserMode){
+      // Aynı kalem tekrar normal ucuna çevrildi: otomatik olarak kaleme dön.
+      hardwareEraserMode = false;
+      state.tool = 'pen';
+      applyUI();
+    }
+    if(state.tool === 'pointer') return;
+    e.preventDefault(); if(canvas.setPointerCapture){ try{ canvas.setPointerCapture(e.pointerId); }catch(_){} }
+    if(state.tool === 'pen' || state.tool === 'highlighter'){
+      cur = { tool:state.tool, color:state.color, size:state.size, points:[pt(e)] };
+      arr(store, key()).push(cur); schedule();
+    } else if(state.tool === 'eraser'){ erasing = []; eraseAt(e); }
+    else if(state.tool === 'laser'){ moveLaser(e); }
+  });
+  canvas.addEventListener('pointermove', function(e){
+    if(!state.open) return;
+    // Kalemin silgi ucu hareket sırasında ayrıca bildiriliyorsa silmeyi sürdür.
+    if(e.pointerType === 'eraser' ||
+       (e.pointerType === 'pen' && (e.buttons & 32) === 32)){
+      if(state.tool !== 'eraser'){ state.tool = 'eraser'; applyUI(); }
+    }
+    if(state.tool === 'laser'){ moveLaser(e); return; }
+    if(cur){ cur.points.push(pt(e)); schedule(); }
+    else if(erasing){ eraseAt(e); }
+  });
+  function endStroke(){
+    if(cur){ arr(hist, key()).push({type:'add', stroke:cur}); cur = null; }
+    if(erasing){ if(erasing.length) arr(hist, key()).push({type:'remove', list:erasing}); erasing = null; }
+    if(state.tool === 'laser') laser.style.display = 'none';
+  }
+  canvas.addEventListener('pointerup', endStroke);
+  canvas.addEventListener('pointercancel', endStroke);
+  canvas.addEventListener('pointerleave', function(){ if(state.tool === 'laser') laser.style.display = 'none'; });
+  function moveLaser(e){ laser.style.display = 'block'; laser.style.left = e.clientX + 'px'; laser.style.top = e.clientY + 'px'; }
+
+  canvas.addEventListener('wheel', function(e){
+    var s = slideEl(); if(s && !state.boardOn){ s.scrollTop += e.deltaY; schedule(); }
+    e.preventDefault();
+  }, { passive:false });
+  Array.prototype.forEach.call(document.querySelectorAll('.slide'), function(s){ s.addEventListener('scroll', schedule); });
+
+  function undo(){
+    var h = arr(hist, key()), a = h.pop(); if(!a) return;
+    var list = arr(store, key());
+    if(a.type === 'add'){ var i = list.indexOf(a.stroke); if(i > -1) list.splice(i,1); }
+    else { a.list.forEach(function(s){ list.push(s); }); }
+    redraw();
+  }
+  function clearInk(){
+    var list = arr(store, key()); if(!list.length) return;
+    arr(hist, key()).push({type:'clear', list:list.splice(0, list.length)}); redraw();
+  }
+
+  // ---- colour palette (12 presets + free colour picker) ----
+  COLORS.forEach(function(c, i){
+    var b = document.createElement('button');
+    b.className = 'pt-color'; b.setAttribute('data-color', c[0]); b.style.background = c[0];
+    b.title = c[1] + (i < 10 ? ' (' + ((i + 1) % 10) + ')' : '');
+    b.addEventListener('click', function(){ pickColor(c[0]); });
+    colorsBox.appendChild(b);
+  });
+  customWrap = document.createElement('label'); customWrap.className = 'pt-custom'; customWrap.title = 'İstediğin rengi seç';
+  customInput = document.createElement('input'); customInput.type = 'color'; customInput.value = '#FBBF24';
+  customInput.addEventListener('input', function(){ customWrap.style.background = customInput.value; pickColor(customInput.value); });
+  customWrap.appendChild(customInput); colorsBox.appendChild(customWrap);
+
+  function pickColor(c){ state.color = c; if(state.tool !== 'highlighter') state.tool = 'pen'; if(!state.open) state.open = true; applyUI(); }
+  function isPreset(c){ return COLORS.some(function(p){ return p[0].toLowerCase() === c.toLowerCase(); }); }
+
+  function applyUI(){
+    var drawing = state.open && state.tool !== 'pointer';
+    canvas.classList.toggle('on', drawing);
+    canvas.classList.toggle('t-eraser', state.tool === 'eraser');
+    canvas.classList.toggle('t-laser', state.tool === 'laser');
+    tb.classList.toggle('open', state.open);
+    toggleBtn.classList.toggle('active', state.open);
+    board.classList.toggle('on', state.boardOn);
+    Array.prototype.forEach.call(tb.querySelectorAll('[data-tool]'), function(b){ b.classList.toggle('active', b.getAttribute('data-tool') === state.tool); });
+    Array.prototype.forEach.call(tb.querySelectorAll('[data-color]'), function(b){ b.classList.toggle('active', b.getAttribute('data-color').toLowerCase() === state.color.toLowerCase()); });
+    customWrap.classList.toggle('active', !isPreset(state.color));
+    Array.prototype.forEach.call(tb.querySelectorAll('[data-size]'), function(b){ b.classList.toggle('active', +b.getAttribute('data-size') === state.size); });
+    document.getElementById('ptBoard').classList.toggle('active', state.boardOn);
+    document.getElementById('ptEye').classList.toggle('active', state.hidden);
+    if(state.tool !== 'laser') laser.style.display = 'none';
+    redraw();
+  }
+  function setTool(t){ state.tool = t; if(!state.open) state.open = true; applyUI(); }
+  function openPen(v){
+    state.open = v;
+    if(!v){ state.boardOn = false; }
+    if(v && state.tool === 'pointer') state.tool = 'pen';
+    if(v){ hint.classList.add('show'); setTimeout(function(){ hint.classList.remove('show'); }, 4500); }
+    applyUI();
+  }
+
+  toggleBtn.addEventListener('click', function(){ openPen(!state.open); });
+  Array.prototype.forEach.call(tb.querySelectorAll('[data-tool]'), function(b){ b.addEventListener('click', function(){ setTool(b.getAttribute('data-tool')); }); });
+  Array.prototype.forEach.call(tb.querySelectorAll('[data-size]'), function(b){ b.addEventListener('click', function(){ state.size = +b.getAttribute('data-size'); applyUI(); }); });
+  document.getElementById('ptUndo').addEventListener('click', undo);
+  document.getElementById('ptClear').addEventListener('click', clearInk);
+  document.getElementById('ptBoard').addEventListener('click', function(){ state.boardOn = !state.boardOn; applyUI(); });
+  document.getElementById('ptEye').addEventListener('click', function(){ state.hidden = !state.hidden; applyUI(); });
+  document.getElementById('ptClose').addEventListener('click', function(){ openPen(false); });
+
+  document.addEventListener('keydown', function(e){
+    var tag = (e.target && e.target.tagName) || '';
+    if(tag === 'INPUT' || tag === 'TEXTAREA') return;
+    var k = e.key.toLowerCase();
+    if((e.ctrlKey || e.metaKey) && k === 'z'){ if(state.open){ e.preventDefault(); undo(); } return; }
+    if(e.ctrlKey || e.metaKey || e.altKey) return;
+    if(k === 'd'){ openPen(!state.open); return; }
+    if(!state.open) return;
+    if(k === 'escape'){ openPen(false); }
+    else if(k === 'p') setTool('pen');
+    else if(k === 'h') setTool('highlighter');
+    else if(k === 'e') setTool('eraser');
+    else if(k === 'l') setTool('laser');
+    else if(k === 'v') setTool('pointer');
+    else if(k === 'b'){ state.boardOn = !state.boardOn; applyUI(); }
+    else if(k === 'c') clearInk();
+    else if(k.length === 1 && k >= '0' && k <= '9'){
+      var idx = k === '0' ? 9 : (+k - 1);
+      if(COLORS[idx]) pickColor(COLORS[idx][0]);
+    }
+    else if(k === '+' || k === '='){ state.size = Math.min(14, state.size + 2); applyUI(); }
+    else if(k === '-'){ state.size = Math.max(2, state.size - 2); applyUI(); }
+  });
+
+  new MutationObserver(function(){ redraw(); }).observe(document.getElementById('deck'), { attributes:true, subtree:true, attributeFilter:['class'] });
+  window.addEventListener('resize', resize);
+  resize(); applyUI();
+  window.__pen = { state:state, store:store, undo:undo, clearInk:clearInk, key:key };
+})();
+</script>
+</body>
+</html>

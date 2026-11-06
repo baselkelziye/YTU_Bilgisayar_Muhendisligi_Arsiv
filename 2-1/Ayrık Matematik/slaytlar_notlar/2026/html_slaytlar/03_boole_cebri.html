@@ -1,0 +1,1863 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ayrık Matematik — Boole Cebri ve Mantık Devreleri</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,400;0,600;0,700;1,500&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#0B1220;
+    --text:#F1F5F9;
+    --surface: color-mix(in srgb, var(--bg) 88%, var(--text) 12%);
+    --surface-2: color-mix(in srgb, var(--bg) 80%, var(--text) 20%);
+    --border: color-mix(in srgb, var(--bg) 68%, var(--text) 32%);
+    --muted: color-mix(in srgb, var(--text) 62%, var(--bg) 38%);
+    --accent:#FBBF24;
+    --accent-2:#60A5FA;
+    --true:#34D399;
+    --false:#F87171;
+    --radius: 16px;
+    --serif: 'Fraunces', Georgia, serif;
+    --sans: 'Inter', system-ui, sans-serif;
+    --mono: 'IBM Plex Mono', ui-monospace, monospace;
+  }
+
+  *{box-sizing:border-box;}
+  html,body{height:100%;}
+  body{
+    margin:0;
+    background:var(--bg);
+    color:var(--text);
+    font-family:var(--sans);
+    overflow:hidden;
+    transition: background .25s ease, color .25s ease;
+  }
+  ::selection{ background:var(--accent); color:#1a1a1a; }
+
+  .topbar{
+    position:fixed; top:0; left:0; right:0; height:56px;
+    display:flex; align-items:center; justify-content:space-between;
+    padding:0 20px;
+    background: color-mix(in srgb, var(--bg) 92%, black 8%);
+    border-bottom:1px solid var(--border);
+    z-index:50;
+  }
+  .topbar-left{ display:flex; align-items:center; gap:12px; font-family:var(--mono); font-size:13px; color:var(--muted); }
+  .topbar-left .mark{ font-family:var(--serif); font-style:italic; font-size:16px; color:var(--text); font-weight:600; }
+  .topbar-right{ display:flex; align-items:center; gap:10px; }
+
+  .icon-btn{
+    width:36px; height:36px; border-radius:10px;
+    border:1px solid var(--border);
+    background:var(--surface);
+    color:var(--text);
+    display:flex; align-items:center; justify-content:center;
+    cursor:pointer; font-size:16px;
+    transition: transform .15s ease, background .15s ease;
+  }
+  .icon-btn:hover{ background:var(--surface-2); transform:translateY(-1px); }
+  .icon-btn:active{ transform:translateY(0); }
+
+  .progress-track{
+    position:fixed; top:56px; left:0; right:0; height:3px;
+    background:var(--surface); z-index:49;
+  }
+  .progress-fill{
+    height:100%; background:linear-gradient(90deg, var(--accent-2), var(--accent));
+    width:0%; transition:width .35s ease;
+  }
+
+  .settings-panel{
+    position:fixed; top:64px; right:20px; width:250px;
+    background:var(--surface); border:1px solid var(--border);
+    border-radius:14px; padding:16px; z-index:60;
+    box-shadow:0 10px 30px rgba(0,0,0,.35);
+    display:none; flex-direction:column; gap:14px;
+  }
+  .settings-panel.open{ display:flex; }
+  .settings-panel h4{ margin:0; font-size:12px; letter-spacing:.03em; color:var(--muted); font-weight:600; text-transform:none;}
+  .swatch-row{ display:flex; align-items:center; justify-content:space-between; gap:10px; }
+  .swatch-row label{ font-size:13px; color:var(--text); }
+  .swatch-row input[type="color"]{
+    width:40px; height:30px; border:1px solid var(--border); border-radius:8px;
+    background:none; cursor:pointer; padding:0;
+  }
+  .preset-row{ display:flex; gap:8px; flex-wrap:wrap; }
+  .preset-dot{
+    width:26px; height:26px; border-radius:50%; cursor:pointer;
+    border:2px solid var(--border);
+  }
+  .reset-btn{
+    margin-top:4px; padding:8px 10px; border-radius:8px; border:1px solid var(--border);
+    background:transparent; color:var(--text); font-size:12px; cursor:pointer; font-family:var(--sans);
+  }
+  .reset-btn:hover{ background:var(--surface-2); }
+
+  .deck{ position:relative; width:100%; height:100%; padding-top:56px; }
+  .slide{
+    position:absolute; inset:0; top:56px;
+    display:none;
+    padding: 48px clamp(24px, 6vw, 96px) 90px;
+    overflow-y:auto;
+  }
+  .slide.active{ display:block; animation: fade .35s ease; }
+  @keyframes fade{ from{opacity:0; transform:translateY(6px);} to{opacity:1; transform:translateY(0);} }
+
+  .slide-inner{ max-width:1000px; margin:0 auto; }
+
+  .kicker{ font-family:var(--mono); font-size:12px; color:var(--muted); letter-spacing:.04em; margin-bottom:10px; }
+  h1.slide-title{ font-family:var(--serif); font-weight:600; font-size:clamp(26px,3.6vw,42px); margin:0 0 6px; line-height:1.15; }
+  .slide-title em{ font-style:italic; color:var(--accent); }
+  .subtitle{ color:var(--muted); font-size:16px; margin:0 0 26px; max-width:75ch; }
+
+  p{ line-height:1.65; font-size:15.5px; }
+  .lead{ font-size:17px; line-height:1.7; }
+
+  .grid2{ display:grid; grid-template-columns:1.1fr .9fr; gap:28px; align-items:start; }
+  @media (max-width:820px){ .grid2{ grid-template-columns:1fr; } }
+  .grid3{ display:grid; grid-template-columns:1fr 1fr 1fr; gap:16px; }
+  @media (max-width:900px){ .grid3{ grid-template-columns:1fr; } }
+
+  .card{ background:var(--surface); border:1px solid var(--border); border-radius:var(--radius); padding:18px 20px; }
+  .card h3{ margin-top:0; font-family:var(--serif); font-weight:600; font-size:17px; }
+
+  .formula{ font-family:var(--mono); font-size:15px; background:var(--surface-2); border:1px solid var(--border); border-radius:10px; padding:3px 9px; display:inline-block; }
+  .formula-big{ font-family:var(--mono); font-size:20px; text-align:center; padding:12px; background:var(--surface-2); border:1px solid var(--border); border-radius:12px; margin:12px 0; }
+
+  ul.clean{ padding-left:20px; margin:10px 0; }
+  ul.clean li{ margin-bottom:8px; line-height:1.55; font-size:15px; }
+
+  table.tt{ border-collapse:collapse; width:100%; margin:14px 0; font-family:var(--mono); font-size:14px; }
+  table.tt th, table.tt td{ border:1px solid var(--border); padding:7px 10px; text-align:center; }
+  table.tt th{ background:var(--surface-2); font-weight:600; }
+  table.tt td.res{ font-weight:600; }
+  .pill{ display:inline-block; min-width:22px; padding:2px 8px; border-radius:999px; font-weight:700; font-size:12.5px; }
+  .pill.T{ background: color-mix(in srgb, var(--true) 22%, transparent); color:var(--true); border:1px solid color-mix(in srgb, var(--true) 55%, transparent); }
+  .pill.F{ background: color-mix(in srgb, var(--false) 22%, transparent); color:var(--false); border:1px solid color-mix(in srgb, var(--false) 55%, transparent); }
+
+  .examples{ margin-top:32px; padding-top:20px; border-top:1px dashed var(--border); }
+  .examples-head{ display:flex; align-items:center; gap:10px; margin-bottom:14px; }
+  .examples-head .dot{ width:9px; height:9px; border-radius:50%; background:var(--accent); }
+  .examples-head h4{ margin:0; font-family:var(--serif); font-weight:600; font-size:17px; }
+
+  details.q{ background:var(--surface); border:1px solid var(--border); border-radius:12px; padding:12px 16px; margin-bottom:10px; }
+  details.q summary{ cursor:pointer; font-size:14.5px; list-style:none; display:flex; align-items:baseline; gap:10px; }
+  details.q summary::-webkit-details-marker{ display:none; }
+  details.q summary .qnum{ font-family:var(--mono); color:var(--accent-2); font-weight:600; flex:0 0 auto; }
+  details.q summary .arrow{ margin-left:auto; color:var(--muted); font-size:12px; transition:transform .2s ease; }
+  details.q[open] summary .arrow{ transform:rotate(90deg); }
+  .answer{ margin-top:10px; padding-top:10px; border-top:1px solid var(--border); font-size:14px; color:var(--muted); line-height:1.6; }
+  .answer b{ color:var(--text); }
+
+  table.laws{ width:100%; border-collapse:collapse; font-size:13.5px; margin-top:10px;}
+  table.laws td, table.laws th{ padding:8px 10px; border-bottom:1px solid var(--border); text-align:left; }
+  table.laws th{ color:var(--muted); font-weight:600; font-size:12px; text-transform:uppercase; letter-spacing:.03em;}
+  table.laws td.f{ font-family:var(--mono); }
+
+  .two-col-list{ display:grid; grid-template-columns:1fr 1fr; gap:10px 24px; }
+  @media (max-width:600px){ .two-col-list{ grid-template-columns:1fr; } }
+
+  .step-list{ counter-reset:step; list-style:none; padding-left:0; margin:12px 0; }
+  .step-list li{ counter-increment:step; position:relative; padding-left:34px; margin-bottom:10px; font-size:14.5px; line-height:1.55; }
+  .step-list li::before{
+    content:counter(step); position:absolute; left:0; top:-1px;
+    width:22px; height:22px; border-radius:50%; background:var(--surface-2); border:1px solid var(--border);
+    display:flex; align-items:center; justify-content:center; font-family:var(--mono); font-size:12px; color:var(--accent-2);
+  }
+
+  /* Karnaugh map */
+  table.kmap{ border-collapse:collapse; margin:14px auto; font-family:var(--mono); }
+  table.kmap th, table.kmap td{ border:1px solid var(--border); width:52px; height:44px; text-align:center; font-size:14px; }
+  table.kmap th{ background:var(--surface-2); font-weight:600; font-size:12.5px; }
+  table.kmap th.corner{ font-size:10px; color:var(--muted); background:var(--surface); }
+  table.kmap td.g1{ background: color-mix(in srgb, var(--accent) 38%, transparent); font-weight:700; }
+  table.kmap td.g2{ background: color-mix(in srgb, var(--accent-2) 38%, transparent); font-weight:700; }
+  table.kmap td.g3{ background: color-mix(in srgb, var(--true) 38%, transparent); font-weight:700; }
+  table.kmap td.g4{ background: color-mix(in srgb, var(--false) 38%, transparent); font-weight:700; }
+  table.kmap td.zero{ color:var(--muted); }
+  .legend{ display:flex; gap:14px; flex-wrap:wrap; margin-top:10px; font-family:var(--mono); font-size:12.5px; color:var(--muted); }
+  .legend span{ display:inline-flex; align-items:center; gap:6px; }
+  .legend i{ width:12px; height:12px; border-radius:3px; display:inline-block; }
+
+  /* gate svg */
+  .gate-row{ display:flex; gap:22px; justify-content:space-around; flex-wrap:wrap; margin-top:8px; }
+  .gate-box{ display:flex; flex-direction:column; align-items:center; gap:6px; }
+  .gate-box svg{ width:140px; }
+  .gate-label{ font-family:var(--mono); font-size:12.5px; color:var(--muted); }
+
+  .title-slide{ height:100%; display:flex; flex-direction:column; align-items:center; justify-content:center; text-align:center; }
+  .title-slide .huge{ font-family:var(--serif); font-size:clamp(34px,6.4vw,66px); font-weight:600; line-height:1.05; }
+  .title-slide .huge em{ font-style:italic; color:var(--accent); }
+  .title-slide .sub{ font-family:var(--mono); color:var(--muted); font-size:15px; margin-top:14px; letter-spacing:.02em; }
+  .title-slide .topics{ margin-top:40px; display:flex; gap:10px; flex-wrap:wrap; justify-content:center; max-width:720px;}
+  .title-slide .topics span{ font-family:var(--mono); font-size:12.5px; padding:6px 12px; border-radius:999px; border:1px solid var(--border); color:var(--muted); }
+  .title-slide .topics span.current{ color:var(--accent); border-color:var(--accent); }
+
+  .bottombar{
+    position:fixed; bottom:0; left:0; right:0; height:64px;
+    display:flex; align-items:center; justify-content:center; gap:18px;
+    background: color-mix(in srgb, var(--bg) 92%, black 8%);
+    border-top:1px solid var(--border);
+    z-index:50;
+  }
+  .nav-btn{
+    display:flex; align-items:center; gap:8px; padding:9px 18px; border-radius:999px;
+    border:1px solid var(--border); background:var(--surface); color:var(--text); cursor:pointer;
+    font-family:var(--sans); font-size:14px; font-weight:500;
+  }
+  .nav-btn:hover{ background:var(--surface-2); }
+  .nav-btn:disabled{ opacity:.35; cursor:not-allowed; }
+  .slide-counter{ font-family:var(--mono); font-size:13px; color:var(--muted); min-width:56px; text-align:center; }
+  .dots{ display:flex; gap:4px; max-width:300px; flex-wrap:wrap; justify-content:center; }
+  .dots .d{ width:5px; height:5px; border-radius:50%; background:var(--border); cursor:pointer; transition:.2s;}
+  .dots .d.active{ background:var(--accent); width:14px; border-radius:4px; }
+
+  @media (max-width:960px){
+    .dots{ display:none; }
+    .settings-panel{ right:10px; left:10px; width:auto; }
+  }
+
+
+  /* ===== Pen / annotation layer ===== */
+  #penCanvas{ position:fixed; left:0; top:56px; width:100%; height:calc(100% - 120px); z-index:40; pointer-events:none; touch-action:none; }
+  #penCanvas.on{ pointer-events:auto; cursor:crosshair; }
+  #penCanvas.t-eraser{ cursor:cell; }
+  #penCanvas.t-laser{ cursor:none; }
+  #boardLayer{ position:fixed; left:0; top:56px; width:100%; height:calc(100% - 120px); background:var(--bg); z-index:39; display:none; }
+  #boardLayer.on{ display:block; }
+  #boardLayer::after{ content:"Boş tahta — özgürce yazın (slaytlara dönmek için B)"; position:absolute; left:50%; top:10px; transform:translateX(-50%); font-family:var(--mono); font-size:12px; color:var(--muted); opacity:.7; }
+  #penToolbar{ position:fixed; left:10px; top:50%; transform:translateY(-50%); z-index:45; display:none; flex-direction:column; gap:7px; padding:9px; width:100px; background:var(--surface); border:1px solid var(--border); border-radius:14px; box-shadow:0 10px 30px rgba(0,0,0,.35); max-height:calc(100% - 130px); overflow-y:auto; }
+  #penToolbar.open{ display:flex; }
+  .pt-grid{ display:grid; grid-template-columns:repeat(2, 36px); gap:6px; justify-content:center; }
+  .pt-btn{ width:36px; height:36px; border-radius:10px; border:1px solid var(--border); background:var(--surface-2); color:var(--text); cursor:pointer; font-size:16px; display:flex; align-items:center; justify-content:center; padding:0; transition:background .15s ease; }
+  .pt-btn:hover{ background:color-mix(in srgb, var(--surface-2) 70%, var(--accent-2) 30%); }
+  .pt-btn.active{ outline:2px solid var(--accent); background:color-mix(in srgb, var(--accent) 22%, var(--surface-2)); }
+  .pt-colors{ display:grid; grid-template-columns:repeat(2, 36px); gap:7px 6px; justify-content:center; justify-items:center; }
+  .pt-color{ width:26px; height:26px; border-radius:50%; border:2px solid var(--border); cursor:pointer; padding:0; transition:transform .12s ease; }
+  .pt-color:hover{ transform:scale(1.12); }
+  .pt-color.active{ border-color:var(--accent); box-shadow:0 0 0 2px var(--accent); transform:scale(1.1); }
+  .pt-custom{ position:relative; width:26px; height:26px; border-radius:50%; border:2px solid var(--border); cursor:pointer; overflow:hidden; background:conic-gradient(#ef4444,#f59e0b,#a3e635,#22d3ee,#3b82f6,#a855f7,#ef4444); }
+  .pt-custom.active{ border-color:var(--accent); box-shadow:0 0 0 2px var(--accent); }
+  .pt-custom input{ position:absolute; inset:-6px; width:44px; height:44px; opacity:0; cursor:pointer; border:0; padding:0; }
+  .pt-sep{ height:1px; background:var(--border); margin:1px 0; flex:0 0 auto; }
+  .pt-dot{ display:block; border-radius:50%; background:var(--text); }
+  .pt-label{ font-family:var(--mono); font-size:9px; letter-spacing:.06em; color:var(--muted); text-align:center; text-transform:uppercase; }
+  #laserDot{ position:fixed; width:16px; height:16px; border-radius:50%; background:rgba(239,68,68,.9); box-shadow:0 0 14px 6px rgba(239,68,68,.5); pointer-events:none; z-index:46; display:none; transform:translate(-50%,-50%); }
+  .icon-btn.active{ outline:2px solid var(--accent); background:color-mix(in srgb, var(--accent) 22%, var(--surface)); }
+  #penHint{ position:fixed; left:122px; top:50%; transform:translateY(-50%); z-index:45; font-family:var(--mono); font-size:11px; color:var(--muted); background:var(--surface); border:1px solid var(--border); border-radius:8px; padding:6px 9px; display:none; max-width:200px; line-height:1.5; }
+  #penHint.show{ display:block; }
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="topbar-left">
+    <span class="mark">Ayrık Matematik</span>
+    <span>/ Bölüm 3 — Boole Cebri &amp; Mantık Devreleri</span>
+  </div>
+  <div class="topbar-right">
+    <span class="slide-counter" id="counterTop">01 / 26</span>
+    <button class="icon-btn" id="penToggle" title="Kalem / slayt üzerine yaz (D)">✏️</button>
+    <button class="icon-btn" id="settingsBtn" title="Görünümü değiştir">🎨</button>
+  </div>
+</div>
+<div class="progress-track"><div class="progress-fill" id="progressFill"></div></div>
+
+<div class="settings-panel" id="settingsPanel">
+  <h4>Görünüm</h4>
+  <div class="swatch-row"><label for="bgPicker">Arka plan rengi</label><input type="color" id="bgPicker" value="#0B1220"></div>
+  <div class="swatch-row"><label for="textPicker">Yazı rengi</label><input type="color" id="textPicker" value="#F1F5F9"></div>
+  <h4>Hazır temalar</h4>
+  <div class="preset-row" id="presetRow"></div>
+  <button class="reset-btn" id="resetBtn">Varsayılana dön</button>
+</div>
+
+<div class="deck" id="deck">
+
+  <!-- 0 — TITLE -->
+  <section class="slide active" data-index="0">
+    <div class="title-slide">
+      <div class="sub">DERS 3 · 1 · 0 · + · · · ⁻ · K-HARİTASI</div>
+      <div class="huge">Boole Cebri<br>ve <em>Mantık Devreleri</em></div>
+      <div class="sub">Rosen &amp; Johnsonbaugh — Discrete Mathematics · Boolean Algebra &amp; Combinational Circuits</div>
+      <div class="topics">
+        <span>1 · Logic</span>
+        <span>2 · Proof</span>
+        <span class="current">3 · Logic Circuits</span>
+        <span>4 · Algorithms</span>
+        <span>5 · Graphs</span>
+        <span>6 · Trees</span>
+        <span>7 · Finite State Machines</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- 1 — INTRO -->
+  <section class="slide" data-index="1">
+    <div class="slide-inner">
+      <div class="kicker">3.1</div>
+      <h1 class="slide-title">Boole Cebri <em>(Boolean Algebra)</em> Nedir?</h1>
+      <p class="subtitle">Sadece iki değer üzerinde çalışan, ama tüm modern bilgisayarların temelini oluşturan bir cebir sistemi.</p>
+
+      <div class="grid2">
+        <div>
+          <p class="lead">Boole cebri, değerlerini yalnızca <span class="formula">{0, 1}</span> kümesinden alan değişkenler ve bu değişkenler üzerinde tanımlı işlemlerle çalışır. George Boole'un 19. yüzyılda geliştirdiği bu cebir, Claude Shannon'ın 1937'deki ünlü yüksek lisans tezi ile <b>elektrik anahtarlama devrelerine</b> uygulanmış ve modern dijital elektroniğin matematiksel temeli haline gelmiştir.</p>
+          <p>Bölüm 1'de gördüğümüz önermeler mantığı (¬, ∧, ∨) ile Boole cebri (~, ·, +) arasında <b>birebir bir karşılık</b> vardır — aynı yapıyı farklı bir gösterimle yeniden kullanıyoruz.</p>
+        </div>
+        <div class="card">
+          <h3>Claude Shannon (1916–2001)</h3>
+          <p style="margin:0 0 10px;">"A Symbolic Analysis of Relay and Switching Circuits" (1937) adlı tezinde, Boole cebrinin elektrik anahtarlama devrelerini modellemek için kullanılabileceğini gösterdi. Bu, bilgisayar mühendisliğinin doğuşunda dönüm noktalarından biri kabul edilir.</p>
+          <p style="margin:0; font-size:13.5px; color:var(--muted);">Bu bölümde işleyeceklerimiz: Boole fonksiyonları · gösterim biçimleri · mantık kapıları · Karnaugh haritaları ile sadeleştirme.</p>
+        </div>
+      </div>
+
+      <div class="examples">
+        <div class="examples-head"><span class="dot"></span><h4>Örnek Sorular</h4></div>
+        <details class="q">
+          <summary><span class="qnum">S1.</span> Önermeler mantığındaki ∧, ∨, ¬ operatörlerinin Boole cebrindeki karşılıkları nelerdir?<span class="arrow">▶</span></summary>
+          <div class="answer">∧ (ve) → · (Boole çarpımı), ∨ (veya) → + (Boole toplamı), ¬ (değil) → ~ veya üst çizgi (tümleyen/complement).</div>
+        </details>
+        <details class="q">
+          <summary><span class="qnum">S2.</span> Boole cebrinin dijital elektronikte neden bu kadar temel olduğunu bir cümleyle açıklayın.<span class="arrow">▶</span></summary>
+          <div class="answer">Çünkü bir devredeki her anahtar/transistör sadece iki durumda olabilir (açık/kapalı, 1/0) — Boole cebri tam olarak bu iki-değerli sistemi matematiksel olarak modeller, bu da devre tasarımını cebirsel işlemlere dönüştürmeyi mümkün kılar.</div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- 2 — BASIC OPERATIONS -->
+  <section class="slide" data-index="2">
+    <div class="slide-inner">
+      <div class="kicker">3.2</div>
+      <h1 class="slide-title">Temel İşlemler: Toplam, Çarpım, Tümleyen</h1>
+      <p class="subtitle">Boole cebri {0, 1} üzerinden çalışır; üç temel işlem tanımlanır: <span class="formula">+</span> (Boolean sum), <span class="formula">·</span> (Boolean product), <span class="formula">‾</span> (complement).</p>
+
+      <div class="grid3">
+        <div class="card">
+          <h3>Boole Toplamı <span class="formula">+</span></h3>
+          <table class="tt">
+            <tr><td>1 + 1</td><td class="res"><span class="pill T">1</span></td></tr>
+            <tr><td>1 + 0</td><td class="res"><span class="pill T">1</span></td></tr>
+            <tr><td>0 + 1</td><td class="res"><span class="pill T">1</span></td></tr>
+            <tr><td>0 + 0</td><td class="res"><span class="pill F">0</span></td></tr>
+          </table>
+        </div>
+        <div class="card">
+          <h3>Boole Çarpımı <span class="formula">·</span></h3>
+          <table class="tt">
+            <tr><td>1 · 1</td><td class="res"><span class="pill T">1</span></td></tr>
+            <tr><td>1 · 0</td><td class="res"><span class="pill F">0</span></td></tr>
+            <tr><td>0 · 1</td><td class="res"><span class="pill F">0</span></td></tr>
+            <tr><td>0 · 0</td><td class="res"><span class="pill F">0</span></td></tr>
+          </table>
+        </div>
+        <div class="card">
+          <h3>Tümleyen <span class="formula">‾</span></h3>
+          <table class="tt">
+            <tr><td>0̄</td><td class="res"><span class="pill T">1</span></td></tr>
+            <tr><td>1̄</td><td class="res"><span class="pill F">0</span></td></tr>
+          </table>
+          <p style="margin:8px 0 0; font-size:13px; color:var(--muted);">x̄ yerine x' gösterimi de sık kullanılır.</p>
+        </div>
+      </div>
+
+      <div class="card" style="margin-top:16px;">
+        <h3>Dikkat: 1 + 1 = 1!</h3>
+        <p style="margin:0;">Boole cebrinde "+" işlemi sıradan aritmetik toplama <b>değildir</b> — ∨ (OR) anlamına gelir. Bu yüzden taşma (carry) kavramı yoktur; sonuç her zaman {0,1} kümesinde kalır.</p>
+      </div>
+
+      <div class="examples">
+        <div class="examples-head"><span class="dot"></span><h4>Örnek Sorular</h4></div>
+        <details class="q">
+          <summary><span class="qnum">S1.</span> 1 · 0 + 1 işleminin sonucunu bulun.<span class="arrow">▶</span></summary>
+          <div class="answer">1·0 = 0, sonra 0+1 = <b>1</b>.</div>
+        </details>
+        <details class="q">
+          <summary><span class="qnum">S2.</span> 0̄ · 1 + 0 işleminin sonucunu bulun.<span class="arrow">▶</span></summary>
+          <div class="answer">0̄ = 1, sonra 1·1 = 1, sonra 1+0 = <b>1</b>.</div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3 — WORKED EXAMPLE -->
+  <section class="slide" data-index="3">
+    <div class="slide-inner">
+      <div class="kicker">3.3</div>
+      <h1 class="slide-title">Adım Adım Örnek</h1>
+      <p class="subtitle">Ders notlarından: birden fazla işlemi içeren bir Boole ifadesini adım adım çözelim.</p>
+
+      <div class="card">
+        <h3>Örnek: 1 · 0 + <span style="text-decoration:overline;">(0 + 1)</span> = ?</h3>
+        <ol class="step-list">
+          <li><span class="formula">1 · 0 = 0</span> — önce parantez dışındaki çarpımı hesaplarız.</li>
+          <li><span class="formula">0 + 1 = 1</span> — parantez içini hesaplarız.</li>
+          <li><span class="formula">1̄ = 0</span> — parantezin tümleyenini (üst çizgiyi) alırız.</li>
+          <li><span class="formula">0 + 0 = 0</span> — son toplamı yaparız.</li>
+        </ol>
+        <div class="formula-big">Sonuç = 0</div>
+        <p style="margin:0; font-size:13.5px; color:var(--muted);">İşlem önceliği: önce parantez, sonra tümleyen (‾), sonra çarpım (·), en son toplam (+) — tıpkı Bölüm 1'deki ¬, ∧, ∨ önceliğine benzer.</p>
+      </div>
+
+      <div class="examples">
+        <div class="examples-head"><span class="dot"></span><h4>Örnek Sorular</h4></div>
+        <details class="q">
+          <summary><span class="qnum">S1.</span> 1 · <span style="text-decoration:overline;">(1 + 0)</span> + 0 ifadesini adım adım hesaplayın.<span class="arrow">▶</span></summary>
+          <div class="answer">1+0=1 → 1̄=0 → 1·0=0 → 0+0=<b>0</b>.</div>
+        </details>
+        <details class="q">
+          <summary><span class="qnum">S2.</span> <span style="text-decoration:overline;">(1 · 0)</span> + <span style="text-decoration:overline;">(0 · 1)</span> ifadesinin sonucunu bulun.<span class="arrow">▶</span></summary>
+          <div class="answer">1·0=0 → 0̄=1. 0·1=0 → 0̄=1. Sonuç: 1+1=<b>1</b>.</div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4 — BOOLEAN EXPRESSIONS & FUNCTIONS -->
+  <section class="slide" data-index="4">
+    <div class="slide-inner">
+      <div class="kicker">3.4</div>
+      <h1 class="slide-title">Boole İfadeleri ve Boole Fonksiyonları</h1>
+      <p class="subtitle">Tek değişkenden çok değişkenli sistemlere geçiş — devrelerin matematiksel modeli.</p>
+
+      <div class="card">
+        <h3>Tanım</h3>
+        <p style="margin:0 0 10px;"><span class="formula">B = {0, 1}</span> olsun. <span class="formula">Bⁿ = {(x₁,x₂,…,xₙ) | xᵢ ∈ B, 1 ≤ i ≤ n}</span> — yani 0 ve 1'lerden oluşan tüm n bitlik değerlerin kümesidir.</p>
+        <p style="margin:0 0 10px;">Herhangi bir x değişkeninin değeri B kümesinden ise, alabileceği değerler 0 veya 1'dir. Böyle bir x değişkenine <b>Boole değişkeni</b> denir.</p>
+        <p style="margin:0;"><b>Bⁿ'den B'ye</b> olan bir fonksiyona <b>n. dereceden Boole fonksiyonu</b> denir. Örneğin F(x,y,z), 3. dereceden bir Boole fonksiyonudur.</p>
+      </div>
+
+      <div class="examples">
+        <div class="examples-head"><span class="dot"></span><h4>Örnek Sorular</h4></div>
+        <details class="q">
+          <summary><span class="qnum">S1.</span> F(x,y) = xy 2. dereceden bir Boole fonksiyonu mudur? Neden?<span class="arrow">▶</span></summary>
+          <div class="answer">Evet, çünkü B²'den (x,y ikilileri) B'ye ({0,1}) bir eşleme tanımlar — iki değişkenli olduğu için "2. derece" olarak adlandırılır.</div>
+        </details>
+        <details class="q">
+          <summary><span class="qnum">S2.</span> B³ kümesinde kaç farklı eleman (ikili) vardır? Bunları listeleyin.<span class="arrow">▶</span></summary>
+          <div class="answer">2³ = <b>8</b> eleman: (0,0,0),(0,0,1),(0,1,0),(0,1,1),(1,0,0),(1,0,1),(1,1,0),(1,1,1).</div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5 — EXAMPLE: F(x,y,z) TABLE -->
+  <section class="slide" data-index="5">
+    <div class="slide-inner">
+      <div class="kicker">3.5</div>
+      <h1 class="slide-title">Örnek: F(x,y,z) = xy + z̄</h1>
+      <p class="subtitle">Verilen Boole fonksiyonunun tüm giriş kombinasyonları için değerini bulalım.</p>
+
+      <div class="card">
+        <h3>Doğruluk tablosu</h3>
+        <table class="tt">
+          <tr><th>x</th><th>y</th><th>z</th><th>xy</th><th>z̄</th><th>F(x,y,z)=xy+z̄</th></tr>
+          <tr><td>1</td><td>1</td><td>1</td><td>1</td><td>0</td><td class="res"><span class="pill T">1</span></td></tr>
+          <tr><td>1</td><td>1</td><td>0</td><td>1</td><td>1</td><td class="res"><span class="pill T">1</span></td></tr>
+          <tr><td>1</td><td>0</td><td>1</td><td>0</td><td>0</td><td class="res"><span class="pill F">0</span></td></tr>
+          <tr><td>1</td><td>0</td><td>0</td><td>0</td><td>1</td><td class="res"><span class="pill T">1</span></td></tr>
+          <tr><td>0</td><td>1</td><td>1</td><td>0</td><td>0</td><td class="res"><span class="pill F">0</span></td></tr>
+          <tr><td>0</td><td>1</td><td>0</td><td>0</td><td>1</td><td class="res"><span class="pill T">1</span></td></tr>
+          <tr><td>0</td><td>0</td><td>1</td><td>0</td><td>0</td><td class="res"><span class="pill F">0</span></td></tr>
+          <tr><td>0</td><td>0</td><td>0</td><td>0</td><td>1</td><td class="res"><span class="pill T">1</span></td></tr>
+        </table>
+        <p style="margin-bottom:0; font-size:13.5px; color:var(--muted);">Yöntem: karmaşık ifadeyi alt parçalara bölün (xy ve z̄ için ayrı sütunlar açın), sonra son sütunu bu parçalardan hesaplayın.</p>
+      </div>
+
+      <div class="examples">
+        <div class="examples-head"><span class="dot"></span><h4>Örnek Sorular</h4></div>
+        <details class="q">
+          <summary><span class="qnum">S1.</span> x=1, y=0, z=1 iken F(x,y,z)=xy+z̄'nin değerini tablodan doğrulayın.<span class="arrow">▶</span></summary>
+          <div class="answer">xy=1·0=0, z̄=1̄=0, F=0+0=<b>0</b> — tablonun 3. satırıyla uyuşuyor.</div>
+        </details>
+        <details class="q">
+          <summary><span class="qnum">S2.</span> F(x,y,z) kaç satırda 1 değerini alır? Bu, F'nin daha çok "1" mi yoksa "0" mı ürettiğini gösterir?<span class="arrow">▶</span></summary>
+          <div class="answer">Tabloda 5 satırda F=1, 3 satırda F=0 çıkar. F, verilen 8 durumun çoğunda (5/8) 1 değerini alır.</div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- 6 — EQUALITY, F+G, FG -->
+  <section class="slide" data-index="6">
+    <div class="slide-inner">
+      <div class="kicker">3.6</div>
+      <h1 class="slide-title">Fonksiyon Eşitliği ve İşlemleri</h1>
+      <p class="subtitle">İki Boole fonksiyonunun "aynı" olması ne demektir, ve fonksiyonlar üzerinde nasıl işlem yapılır?</p>
+
+      <div class="grid2">
+        <div class="card">
+          <h3>Eşitlik tanımı</h3>
+          <p style="margin:0;">n değişkenden oluşan iki Boole fonksiyonu F ve G'nin eşit kabul edilebilmesi için, b₁,b₂,…,bₙ, B kümesinin elemanları olduğunda:</p>
+          <div class="formula-big" style="font-size:16px;">F(b₁,…,bₙ) = G(b₁,…,bₙ)</div>
+          <p style="margin:0;">eşitliği <b>her</b> kombinasyon için sağlanmalıdır.</p>
+          <p style="margin-top:10px; margin-bottom:0; font-size:13.5px; color:var(--muted);">Örnek: xy, xy+0 ve xy·1 üç farklı Boole <i>ifadesi</i> olsa da hepsi aynı <i>fonksiyonu</i> temsil eder — birbirine denktirler.</p>
+        </div>
+        <div class="card">
+          <h3>Fonksiyonlar üzerinde işlemler</h3>
+          <div class="formula-big" style="font-size:15px;">(F+G)(x₁,…,xₙ) = F(x₁,…,xₙ) + G(x₁,…,xₙ)</div>
+          <div class="formula-big" style="font-size:15px;">(FG)(x₁,…,xₙ) = F(x₁,…,xₙ)·G(x₁,…,xₙ)</div>
+          <p style="margin:0; font-size:13.5px; color:var(--muted);">İki fonksiyonu toplamak/çarpmak, her giriş kombinasyonunda ayrı ayrı sonuçlarını toplamak/çarpmakla eşdeğerdir.</p>
+        </div>
+      </div>
+
+      <div class="examples">
+        <div class="examples-head"><span class="dot"></span><h4>Örnek Sorular</h4></div>
+        <details class="q">
+          <summary><span class="qnum">S1.</span> F(x,y)=x, G(x,y)=y olsun. (F+G)(1,0) değerini bulun.<span class="arrow">▶</span></summary>
+          <div class="answer">F(1,0)=1, G(1,0)=0. (F+G)(1,0) = 1+0 = <b>1</b>.</div>
+        </details>
+        <details class="q">
+          <summary><span class="qnum">S2.</span> Aynı F ve G için (FG)(1,0) değerini bulun.<span class="arrow">▶</span></summary>
+          <div class="answer">(FG)(1,0) = F(1,0)·G(1,0) = 1·0 = <b>0</b>.</div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- 7 — NUMBER OF BOOLEAN FUNCTIONS -->
+  <section class="slide" data-index="7">
+    <div class="slide-inner">
+      <div class="kicker">3.7</div>
+      <h1 class="slide-title">n. Dereceden Kaç Boole Fonksiyonu Vardır?</h1>
+      <p class="subtitle">Sayma ilkeleriyle şaşırtıcı derecede hızlı büyüyen bir sonuç.</p>
+
+      <div class="grid2">
+        <div class="card">
+          <h3>Formül ve mantığı</h3>
+          <p style="margin:0 0 10px;">n. dereceden bir Boole fonksiyonunun tanım kümesi <span class="formula">2ⁿ</span> farklı ikiliden oluşur (giriş satırı sayısı). Her satır için çıktı bağımsız olarak 0 veya 1 seçilebileceğinden:</p>
+          <div class="formula-big">2^(2ⁿ) farklı fonksiyon</div>
+          <p style="margin:0; font-size:13.5px; color:var(--muted);">Çarpma ilkesi: 2ⁿ satırın her biri için 2 seçenek → 2×2×…×2 (2ⁿ kere) = 2^(2ⁿ).</p>
+        </div>
+        <div class="card">
+          <h3>Derece arttıkça patlayan büyüme</h3>
+          <table class="laws">
+            <tr><th>Derece (n)</th><th>Fonksiyon sayısı</th></tr>
+            <tr><td>1</td><td class="f">4</td></tr>
+            <tr><td>2</td><td class="f">16</td></tr>
+            <tr><td>3</td><td class="f">256</td></tr>
+            <tr><td>4</td><td class="f">65.536</td></tr>
+            <tr><td>5</td><td class="f">4.294.967.296</td></tr>
+            <tr><td>6</td><td class="f">18.446.744.073.709.551.616</td></tr>
+          </table>
+        </div>
+      </div>
+
+      <div class="card" style="margin-top:16px;">
+        <h3>2. dereceden fonksiyonlar (x,y için 16 olasılık)</h3>
+        <p style="margin:0;">2. dereceden bir Boole fonksiyonunun tanım kümesi 4 farklı ikiliden oluşur (00,01,10,11) ve değer kümesi 2 elemanlıdır (B={0,1}). Bu yüzden tam olarak <b>16</b> farklı 2. dereceden Boole fonksiyonu vardır — bunlardan bazıları bize tanıdık gelir: AND (xy), OR (x+y), XOR, NAND, NOR gibi.</p>
+      </div>
+
+      <div class="examples">
+        <div class="examples-head"><span class="dot"></span><h4>Örnek Sorular</h4></div>
+        <details class="q">
+          <summary><span class="qnum">S1.</span> 3. dereceden kaç farklı Boole fonksiyonu olduğunu formülle hesaplayın.<span class="arrow">▶</span></summary>
+          <div class="answer">2^(2³) = 2⁸ = <b>256</b>.</div>
+        </details>
+        <details class="q">
+          <summary><span class="qnum">S2.</span> Neden derece arttıkça fonksiyon sayısı bu kadar hızlı artıyor? (2ⁿ ile 2^(2ⁿ) arasındaki farkı açıklayın)<span class="arrow">▶</span></summary>
+          <div class="answer">2ⁿ, giriş satırı sayısını verir (doğrusal-üstel büyür). Ama fonksiyon sayısı, bu satırların <i>her birine bağımsız</i> bir çıktı atama sayısıdır — bu da "üstelin üsteli" (çift katlı üstel) büyümeye yol açar, bu yüzden n=6'da bile astronomik bir sayıya ulaşırız.</div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- 8 — IDENTITIES I -->
+  <section class="slide" data-index="8">
+    <div class="slide-inner">
+      <div class="kicker">3.8</div>
+      <h1 class="slide-title">Boole Cebri Özdeşlikleri I — <em>Çift Tümleyen ve Yinelenme</em></h1>
+      <p class="subtitle">Devre tasarımlarının sadeleştirilmesinde kullanılan temel kanunlar.</p>
+
+      <div class="grid2">
+        <div class="card">
+          <h3>Çift Tümleyen (Double Complement)</h3>
+          <div class="formula-big" style="font-size:20px;">x̿ = x</div>
+          <p style="margin:0; font-size:14px;">Tümleyenin tümleyeni orijinal değeri geri verir.</p>
+        </div>
+        <div class="card">
+          <h3>Yinelenme (Idempotent)</h3>
+          <div class="formula-big" style="font-size:18px;">x + x = x</div>
+          <div class="formula-big" style="font-size:18px;">x · x = x</div>
+        </div>
+      </div>
+
+      <div class="card" style="margin-top:16px;">
+        <h3>Birim (Identity) Kanunları</h3>
+        <div class="two-col-list">
+          <div class="formula-big" style="font-size:18px;">x + 0 = x</div>
+          <div class="formula-big" style="font-size:18px;">x · 1 = x</div>
+        </div>
+        <p style="margin:0; font-size:14px;">0, toplama için; 1, çarpma için "nötr eleman"dır — x'i değiştirmezler.</p>
+      </div>
+
+      <div class="examples">
+        <div class="examples-head"><span class="dot"></span><h4>Örnek Sorular</h4></div>
+        <details class="q">
+          <summary><span class="qnum">S1.</span> x=0 için x̿=x kanununu doğrudan hesaplayarak doğrulayın.<span class="arrow">▶</span></summary>
+          <div class="answer">0̄=1, sonra 1̄=0. Böylece 0̿=0=x. ✓</div>
+        </details>
+        <details class="q">
+          <summary><span class="qnum">S2.</span> x + x + x ifadesini idempotent kanununu kullanarak sadeleştirin.<span class="arrow">▶</span></summary>
+          <div class="answer">x+x=x kanunu iki kez uygulanır: (x+x)+x = x+x = <b>x</b>.</div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- 9 — IDENTITIES II -->
+  <section class="slide" data-index="9">
+    <div class="slide-inner">
+      <div class="kicker">3.9</div>
+      <h1 class="slide-title">Boole Cebri Özdeşlikleri II — <em>Baskınlık, Değişme, Birleşme</em></h1>
+      <p class="subtitle">Sıralamanın ve aşırı değerlerin sonucu nasıl etkilediğini gösteren kanunlar.</p>
+
+      <div class="grid2">
+        <div class="card">
+          <h3>Baskınlık (Domination)</h3>
+          <div class="formula-big" style="font-size:18px;">x + 1 = 1</div>
+          <div class="formula-big" style="font-size:18px;">x · 0 = 0</div>
+          <p style="margin:0; font-size:14px;">1, toplamayı; 0, çarpımı "domine eder" — x'in değeri önemsizleşir.</p>
+        </div>
+        <div class="card">
+          <h3>Değişme (Commutative)</h3>
+          <div class="formula-big" style="font-size:18px;">x + y = y + x</div>
+          <div class="formula-big" style="font-size:18px;">xy = yx</div>
+          <p style="margin:0; font-size:14px;">Sıra önemli değildir.</p>
+        </div>
+      </div>
+
+      <div class="card" style="margin-top:16px;">
+        <h3>Birleşme (Associative)</h3>
+        <div class="two-col-list">
+          <div class="formula-big" style="font-size:16px;">x + (y+z) = (x+y) + z</div>
+          <div class="formula-big" style="font-size:16px;">x(yz) = (xy)z</div>
+        </div>
+        <p style="margin:0; font-size:14px;">Üç veya daha fazla terimi + ya da · ile birleştirirken parantezlerin yeri sonucu değiştirmez.</p>
+      </div>
+
+      <div class="examples">
+        <div class="examples-head"><span class="dot"></span><h4>Örnek Sorular</h4></div>
+        <details class="q">
+          <summary><span class="qnum">S1.</span> x=0 için x+1=1 kanununu doğrudan hesaplayarak doğrulayın.<span class="arrow">▶</span></summary>
+          <div class="answer">0+1=<b>1</b>. Kanunun öngördüğü gibi, x'in değeri (0) sonucu etkilemedi.</div>
+        </details>
+        <details class="q">
+          <summary><span class="qnum">S2.</span> Devre tasarımında "x·0=0" kanununun pratik anlamı nedir?<span class="arrow">▶</span></summary>
+          <div class="answer">Bir AND kapısının girişlerinden biri sabit 0'a bağlanırsa, diğer giriş ne olursa olsun çıkış her zaman 0 olur — bu, bir devre dalını "kapatmanın" (devre dışı bırakmanın) standart bir yoludur.</div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- 10 — IDENTITIES III -->
+  <section class="slide" data-index="10">
+    <div class="slide-inner">
+      <div class="kicker">3.10</div>
+      <h1 class="slide-title">Boole Cebri Özdeşlikleri III — <em>Dağılma, De Morgan, Yutma</em></h1>
+      <p class="subtitle">Sadeleştirmenin en güçlü araçları — Karnaugh haritalarından önce bunları cebirsel olarak da yapabilmeliyiz.</p>
+
+      <div class="grid2">
+        <div class="card">
+          <h3>Dağılma (Distributive)</h3>
+          <div class="formula-big" style="font-size:16px;">x + yz = (x+y)(x+z)</div>
+          <div class="formula-big" style="font-size:16px;">x(y+z) = xy + xz</div>
+        </div>
+        <div class="card">
+          <h3>De Morgan Kanunları</h3>
+          <div class="formula-big" style="font-size:16px;">(xy)‾ = x̄ + ȳ</div>
+          <div class="formula-big" style="font-size:16px;">(x+y)‾ = x̄ ȳ</div>
+        </div>
+      </div>
+
+      <div class="grid2" style="margin-top:16px;">
+        <div class="card">
+          <h3>Yutma (Absorption)</h3>
+          <div class="formula-big" style="font-size:16px;">x + xy = x</div>
+          <div class="formula-big" style="font-size:16px;">x(x+y) = x</div>
+        </div>
+        <div class="card">
+          <h3>Birim / Sıfır Özellikleri</h3>
+          <div class="formula-big" style="font-size:18px;">x + x̄ = 1</div>
+          <div class="formula-big" style="font-size:18px;">x·x̄ = 0</div>
+        </div>
+      </div>
+
+      <div class="examples">
+        <div class="examples-head"><span class="dot"></span><h4>Örnek Sorular</h4></div>
+        <details class="q">
+          <summary><span class="qnum">S1.</span> De Morgan kanununu kullanarak (xȳ)‾ ifadesini açın.<span class="arrow">▶</span></summary>
+          <div class="answer">(xȳ)‾ ≡ x̄ + (ȳ)‾ ≡ <b>x̄ + y</b> (De Morgan + çift tümleyen).</div>
+        </details>
+        <details class="q">
+          <summary><span class="qnum">S2.</span> x(x+y) ifadesini yutma kanunuyla sadeleştirin.<span class="arrow">▶</span></summary>
+          <div class="answer">Doğrudan yutma kanunu uygulanır: x(x+y) ≡ <b>x</b>.</div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- 11 — VERIFY DISTRIBUTIVE WITH TABLE -->
+  <section class="slide" data-index="11">
+    <div class="slide-inner">
+      <div class="kicker">3.11</div>
+      <h1 class="slide-title">Özdeşlik Doğrulama: x(y+z) = xy + xz</h1>
+      <p class="subtitle">Dağılma kanununu doğruluk tablosuyla doğrulayalım — bu, herhangi bir Boole kanununu ispatlamanın genel yöntemidir.</p>
+
+      <div class="card">
+        <h3>Örnek: x(y+z) = xy + xz doğru mudur?</h3>
+        <table class="tt">
+          <tr><th>x</th><th>y</th><th>z</th><th>y+z</th><th>xy</th><th>xz</th><th>x(y+z)</th><th>xy+xz</th></tr>
+          <tr><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td class="res">1</td><td class="res">1</td></tr>
+          <tr><td>1</td><td>1</td><td>0</td><td>1</td><td>1</td><td>0</td><td class="res">1</td><td class="res">1</td></tr>
+          <tr><td>1</td><td>0</td><td>1</td><td>1</td><td>0</td><td>1</td><td class="res">1</td><td class="res">1</td></tr>
+          <tr><td>1</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td class="res">0</td><td class="res">0</td></tr>
+          <tr><td>0</td><td>1</td><td>1</td><td>1</td><td>0</td><td>0</td><td class="res">0</td><td class="res">0</td></tr>
+          <tr><td>0</td><td>1</td><td>0</td><td>1</td><td>0</td><td>0</td><td class="res">0</td><td class="res">0</td></tr>
+          <tr><td>0</td><td>0</td><td>1</td><td>1</td><td>0</td><td>0</td><td class="res">0</td><td class="res">0</td></tr>
+          <tr><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td class="res">0</td><td class="res">0</td></tr>
+        </table>
+        <p style="margin-bottom:0; font-size:13.5px; color:var(--muted);">Son iki sütun (x(y+z) ve xy+xz) her satırda birebir aynı → kanun doğrulanmıştır. Bu, "iki Boole ifadesinin eşitliğini kanıtlamanın" standart yöntemidir: tüm 2ⁿ satırı karşılaştır.</p>
+      </div>
+
+      <div class="examples">
+        <div class="examples-head"><span class="dot"></span><h4>Örnek Sorular</h4></div>
+        <details class="q">
+          <summary><span class="qnum">S1.</span> x=1,y=0,z=1 satırını tablodan bulup, x(y+z) ve xy+xz'nin bu satırda neden eşit çıktığını açıklayın.<span class="arrow">▶</span></summary>
+          <div class="answer">y+z=0+1=1, x(y+z)=1·1=1. xy=1·0=0, xz=1·1=1, xy+xz=0+1=1. İkisi de <b>1</b> — eşit.</div>
+        </details>
+        <details class="q">
+          <summary><span class="qnum">S2.</span> İkinci dağılma kanunu x+yz=(x+y)(x+z) için kaç satırlık bir tablo gerekir ve neden?<span class="arrow">▶</span></summary>
+          <div class="answer">Üç değişken (x,y,z) olduğundan 2³=<b>8 satır</b> gerekir — her Boole özdeşliği, içerdiği değişken sayısına göre 2ⁿ satırlık tam bir tabloyla doğrulanmalıdır.</div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- 12 — EXTRA IDENTITY A+A'B=A+B -->
+  <section class="slide" data-index="12">
+    <div class="slide-inner">
+      <div class="kicker">3.12</div>
+      <h1 class="slide-title">Ek Özdeşlik: A + A′B = A + B</h1>
+      <p class="subtitle">Sık karşılaşılan ama temel özdeşlik listesinde doğrudan yer almayan, iki farklı şekilde ispatlanabilen faydalı bir kural.</p>
+
+      <div class="grid2">
+        <div class="card">
+          <h3>İspat 1 — Dağılma kanunuyla geriye doğru</h3>
+          <p style="margin:0;">
+            A + A′B<br>
+            &nbsp;&nbsp;≡ (A + A′)(A + B) &nbsp;<span style="color:var(--muted); font-size:13px;">(dağılma kanunu — tersten uygulanır)</span><br>
+            &nbsp;&nbsp;≡ 1 · (A + B) &nbsp;<span style="color:var(--muted); font-size:13px;">(A+A′=1, tümleyen kanunu)</span><br>
+            &nbsp;&nbsp;≡ <b>A + B</b> &nbsp;<span style="color:var(--muted); font-size:13px;">(birim kanunu)</span>
+          </p>
+        </div>
+        <div class="card">
+          <h3>İspat 2 — İleriye doğru açarak</h3>
+          <p style="margin:0;">
+            A·(1+B) + A′B ≡ A + AB + A′B &nbsp;<span style="color:var(--muted); font-size:13px;">(A·1=A, A·B ile dağılma)</span><br>
+            &nbsp;&nbsp;≡ A + B(A + A′) &nbsp;<span style="color:var(--muted); font-size:13px;">(dağılma — B ortak parantez)</span><br>
+            &nbsp;&nbsp;≡ A + B·1 ≡ <b>A + B</b> &nbsp;<span style="color:var(--muted); font-size:13px;">(tümleyen + birim kanunu)</span>
+          </p>
+        </div>
+      </div>
+
+      <div class="card" style="margin-top:16px;">
+        <h3>Neden önemli?</h3>
+        <p style="margin:0;">Bu tip özdeşlikler, Karnaugh haritalarıyla göreceğimiz sadeleştirmelerin cebirsel karşılığıdır. "A′B teriminin B ile birleşerek B'ye dönüşmesi", K-haritasında iki hücrenin birleştirilip ortak bir grup oluşturmasına karşılık gelir.</p>
+      </div>
+
+      <div class="examples">
+        <div class="examples-head"><span class="dot"></span><h4>Örnek Sorular</h4></div>
+        <details class="q">
+          <summary><span class="qnum">S1.</span> A=0, B=1 için A+A′B = A+B kanununu doğrudan hesaplayarak doğrulayın.<span class="arrow">▶</span></summary>
+          <div class="answer">Sol taraf: A+A′B = 0 + 1·1 = 0+1 = 1. Sağ taraf: A+B = 0+1 = 1. İkisi de <b>1</b> — eşit. ✓</div>
+        </details>
+        <details class="q">
+          <summary><span class="qnum">S2.</span> A′ + AB ifadesini benzer bir mantıkla sadeleştirin. (İpucu: A ve B'nin rollerini simetrik düşünün)<span class="arrow">▶</span></summary>
+          <div class="answer">A′+AB ≡ (A′+A)(A′+B) ≡ 1·(A′+B) ≡ <b>A′+B</b> — aynı özdeşliğin A yerine A′ kullanılan simetrik biçimi.</div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- 13 — CONSENSUS THEOREM -->
+  <section class="slide" data-index="13">
+    <div class="slide-inner">
+      <div class="kicker">3.13</div>
+      <h1 class="slide-title">Consensus (Fikir Birliği) Teoremi</h1>
+      <p class="subtitle">AC + A′B + BC = AC + A′B — üçüncü terim aslında <b>gereksizdir</b> (redundant term)!</p>
+
+      <div class="card">
+        <h3>İspat</h3>
+        <p style="margin:0;">
+          AC + A′B + BC ≡ AC + A′B + BC(A + A′) &nbsp;<span style="color:var(--muted); font-size:13px;">(A+A′=1 ile BC'yi çarparız — değişmez)</span><br>
+          &nbsp;&nbsp;≡ AC + A′B + ABC + A′BC<br>
+          &nbsp;&nbsp;≡ AC(1 + B) + A′B(1 + C) &nbsp;<span style="color:var(--muted); font-size:13px;">(ortak parantezlere ayırma)</span><br>
+          &nbsp;&nbsp;≡ AC·1 + A′B·1 &nbsp;<span style="color:var(--muted); font-size:13px;">(baskınlık kanunu: 1+B=1, 1+C=1)</span><br>
+          &nbsp;&nbsp;≡ <b>AC + A′B</b> &nbsp;<span style="color:var(--muted); font-size:13px;">(birim kanunu)</span>
+        </p>
+      </div>
+
+      <div class="card" style="margin-top:16px;">
+        <h3>BC teriminin "gereksiz terim" olmasının şartları</h3>
+        <ul class="clean" style="margin-bottom:0;">
+          <li>Üç farklı değişken olmalı (burada A, B, C)</li>
+          <li>Her bir değişken tam olarak 2 kez tekrarlanmalı</li>
+          <li>Değişkenlerden birinin sadece 1 kez tümleyeni (değili) kullanılmalı — burada A bir yerde A′ olarak geçiyor</li>
+          <li><b>Değili ve kendisi kullanılan değişkenin olmadığı terim gereksiz terimdir</b> — burada A, BC teriminde hiç geçmiyor, bu yüzden BC atılabilir</li>
+        </ul>
+      </div>
+
+      <div class="examples">
+        <div class="examples-head"><span class="dot"></span><h4>Örnek Sorular</h4></div>
+        <details class="q">
+          <summary><span class="qnum">S1.</span> A=1, B=0, C=1 için AC+A′B+BC ile AC+A′B'nin eşit değer verdiğini doğrulayın.<span class="arrow">▶</span></summary>
+          <div class="answer">AC=1·1=1, A′B=0·0=0, BC=0·1=0. Sol taraf: 1+0+0=1. Sağ taraf: AC+A′B=1+0=1. İkisi de <b>1</b>. ✓</div>
+        </details>
+        <details class="q">
+          <summary><span class="qnum">S2.</span> Consensus teoremini pratikte devre tasarımında kullanmanın avantajı nedir?<span class="arrow">▶</span></summary>
+          <div class="answer">Gereksiz terimi (burada BC) devreden çıkarmak, bir AND kapısı ve ona bağlı bağlantıları tamamen ortadan kaldırır — bu, devrenin maliyetini, boyutunu ve gecikmesini azaltır. Bu tip cebirsel sadeleştirme, Karnaugh haritasıyla göreceğimiz görsel sadeleştirmenin matematiksel temelidir.</div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- 14 — ABSTRACT DEFINITION -->
+  <section class="slide" data-index="14">
+    <div class="slide-inner">
+      <div class="kicker">3.14</div>
+      <h1 class="slide-title">Boole Cebrinin Soyut (Aksiyomatik) Tanımı</h1>
+      <p class="subtitle">Şimdiye kadar {0,1} üzerinde çalıştık — ama Boole cebri aslında daha genel bir yapıdır.</p>
+
+      <div class="card">
+        <h3>Tanım</h3>
+        <p style="margin:0;"><b>Boole cebri</b>, ∨, ∧ ikili işlemleri ve ~ tekli işlemi uygulanabilen, 0 ve 1 elemanlarına sahip ve tüm x, y, z şeklindeki değişkenlerinde bu özelliklerin tamamı uygulanabilen B kümesidir.</p>
+      </div>
+
+      <table class="laws" style="margin-top:16px;">
+        <tr><th>Kural</th><th>Form</th><th>İsim</th></tr>
+        <tr><td class="f">x ∨ 0 = x</td><td class="f">x ∧ 1 = x</td><td>Birim (Identity) kuralları</td></tr>
+        <tr><td class="f">x ∨ x̄ = 1</td><td class="f">x ∧ x̄ = 0</td><td>Tümleyen (Complement) kuralları</td></tr>
+        <tr><td class="f">(x∨y)∨z = x∨(y∨z)</td><td class="f">(x∧y)∧z = x∧(y∧z)</td><td>Birleşme (Associative) kuralları</td></tr>
+        <tr><td class="f">x∨y = y∨x</td><td class="f">x∧y = y∧x</td><td>Değişme (Commutative) kuralları</td></tr>
+        <tr><td class="f">x∨(y∧z) = (x∨y)∧(x∨z)</td><td class="f">x∧(y∨z) = (x∧y)∨(x∧z)</td><td>Dağılma (Distributive) kuralları</td></tr>
+      </table>
+
+      <p style="margin-top:14px; font-size:13.5px; color:var(--muted);">Bu aksiyomlar önerme mantığındaki (Bölüm 1) kanunlarla, Boole cebrindeki (0/1, +/·) kanunlarla ve küme cebrindeki (∅,evren, ∪,∩) kanunlarla <b>birebir aynı yapıyı</b> paylaşır — hepsi bir "Boole cebri" örneğidir.</p>
+
+      <div class="examples">
+        <div class="examples-head"><span class="dot"></span><h4>Örnek Sorular</h4></div>
+        <details class="q">
+          <summary><span class="qnum">S1.</span> Küme cebrinde (kümeler üzerinde ∪, ∩, tümleyen) "0" ve "1" elemanlarına karşılık gelen kümeler nelerdir?<span class="arrow">▶</span></summary>
+          <div class="answer">"0" boş kümeye (∅) karşılık gelir (A∪∅=A, tıpkı x∨0=x gibi), "1" ise evrensel kümeye (U) karşılık gelir (A∩U=A, tıpkı x∧1=x gibi).</div>
+        </details>
+        <details class="q">
+          <summary><span class="qnum">S2.</span> Önerme mantığında (Bölüm 1) tümleyen kuralı (x∨x̄=1, x∧x̄=0) hangi kanunlara karşılık geliyordu?<span class="arrow">▶</span></summary>
+          <div class="answer">Olumsuzlama kanunlarına (negation laws): p∨¬p≡D (totoloji) ve p∧¬p≡Y (çelişki) — Bölüm 1, Slayt 17'de işlemiştik.</div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- 15 — LITERALS AND MINTERMS -->
+  <section class="slide" data-index="15">
+    <div class="slide-inner">
+      <div class="kicker">3.15</div>
+      <h1 class="slide-title">Öğe (Literal) ve Minterim — Çarpımların Toplamı</h1>
+      <p class="subtitle"><i>Sum-of-Products (SOP)</i> açılımı: her Boole fonksiyonunu, standart bir "çarpımların toplamı" biçiminde yazabiliriz.</p>
+
+      <div class="grid2">
+        <div class="card">
+          <h3>Öğe (Literal)</h3>
+          <p style="margin:0;">Bir değişken veya onun tümleyenine <b>öğe (literal)</b> denir. Örneğin x ve x̄ birer öğedir.</p>
+        </div>
+        <div class="card">
+          <h3>Minterim (Minterm)</h3>
+          <p style="margin:0;">Boole değişkenleri x₁,x₂,…,xₙ'in yᵢ=xᵢ veya yᵢ=x̄ᵢ durumunu sağlayan y₁,y₂,…,yₙ çarpımına <b>minterim</b> denir. Her değişken bir öğe olarak gösterildiğinde, bir minterim n tane öğenin çarpımıdır.</p>
+        </div>
+      </div>
+
+      <div class="card" style="margin-top:16px;">
+        <h3>Çarpımların Toplamı (SOP) Açılımı</h3>
+        <p style="margin:0;">Bir Boole fonksiyonunun 1 değerini aldığı her satır için bir minterim yazılır (o satırda xᵢ=1 ise xᵢ, xᵢ=0 ise x̄ᵢ kullanılır), sonra bu minterimler + ile toplanır. Bu, herhangi bir doğruluk tablosundan <b>doğrudan</b> bir Boole ifadesi elde etmemizi sağlar.</p>
+      </div>
+
+      <div class="examples">
+        <div class="examples-head"><span class="dot"></span><h4>Örnek Sorular</h4></div>
+        <details class="q">
+          <summary><span class="qnum">S1.</span> x=1, y=0, z=1 satırına karşılık gelen minterimi yazın.<span class="arrow">▶</span></summary>
+          <div class="answer">x=1→x, y=0→ȳ, z=1→z. Minterim: <b>xȳz</b>.</div>
+        </details>
+        <details class="q">
+          <summary><span class="qnum">S2.</span> x=0, y=0 satırına karşılık gelen (2 değişkenli) minterimi yazın.<span class="arrow">▶</span></summary>
+          <div class="answer">x=0→x̄, y=0→ȳ. Minterim: <b>x̄ȳ</b>.</div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- 16 — SOP WORKED EXAMPLE -->
+  <section class="slide" data-index="16">
+    <div class="slide-inner">
+      <div class="kicker">3.16</div>
+      <h1 class="slide-title">Örnek: F(x,y,z) = (x+y)z̄ için SOP Açılımı</h1>
+      <p class="subtitle">İki farklı yöntemle aynı sonuca ulaşalım: tablo yöntemi ve cebirsel yöntem.</p>
+
+      <div class="grid2">
+        <div class="card">
+          <h3>Yöntem 1 — Doğruluk tablosundan</h3>
+          <table class="tt" style="font-size:12.5px;">
+            <tr><th>x</th><th>y</th><th>z</th><th>x+y</th><th>z̄</th><th>(x+y)z̄</th></tr>
+            <tr><td>1</td><td>1</td><td>1</td><td>1</td><td>0</td><td>0</td></tr>
+            <tr><td>1</td><td>1</td><td>0</td><td>1</td><td>1</td><td class="res">1</td></tr>
+            <tr><td>1</td><td>0</td><td>1</td><td>1</td><td>0</td><td>0</td></tr>
+            <tr><td>1</td><td>0</td><td>0</td><td>1</td><td>1</td><td class="res">1</td></tr>
+            <tr><td>0</td><td>1</td><td>1</td><td>1</td><td>0</td><td>0</td></tr>
+            <tr><td>0</td><td>1</td><td>0</td><td>1</td><td>1</td><td class="res">1</td></tr>
+            <tr><td>0</td><td>0</td><td>1</td><td>0</td><td>0</td><td>0</td></tr>
+            <tr><td>0</td><td>0</td><td>0</td><td>0</td><td>1</td><td>0</td></tr>
+          </table>
+          <p style="margin:8px 0 0; font-size:13px;">F'nin 1 olduğu satırlar: (1,1,0), (1,0,0), (0,1,0)</p>
+          <div class="formula-big" style="font-size:15px;">F = xyz̄ + xȳz̄ + x̄yz̄</div>
+        </div>
+        <div class="card">
+          <h3>Yöntem 2 — Cebirsel açılım</h3>
+          <p style="margin:0;">
+            F(x,y,z) = (x+y)z̄<br>
+            &nbsp;≡ xz̄ + yz̄ &nbsp;<span style="color:var(--muted); font-size:13px;">(dağılma)</span><br>
+            &nbsp;≡ x·1·z̄ + 1·y·z̄ &nbsp;<span style="color:var(--muted); font-size:13px;">(birim kuralı: x1=x)</span><br>
+            &nbsp;≡ x(y+ȳ)z̄ + (x+x̄)yz̄ &nbsp;<span style="color:var(--muted); font-size:13px;">(1=y+ȳ ve 1=x+x̄ ile "genişletme")</span><br>
+            &nbsp;≡ xyz̄ + xȳz̄ + xyz̄ + x̄yz̄ &nbsp;<span style="color:var(--muted); font-size:13px;">(dağılma)</span><br>
+            &nbsp;≡ <b>xyz̄ + xȳz̄ + x̄yz̄</b> &nbsp;<span style="color:var(--muted); font-size:13px;">(xyz̄ yineleniyor, idempotent ile tek kalır)</span>
+          </p>
+        </div>
+      </div>
+
+      <div class="examples">
+        <div class="examples-head"><span class="dot"></span><h4>Örnek Sorular</h4></div>
+        <details class="q">
+          <summary><span class="qnum">S1.</span> Her iki yöntemin de aynı sonuca (xyz̄+xȳz̄+x̄yz̄) ulaştığını neden bekleriz?<span class="arrow">▶</span></summary>
+          <div class="answer">Çünkü bir Boole fonksiyonunun SOP açılımı <b>tekildir (unique)</b> — aynı fonksiyon, hangi yöntemle bulunursa bulunsun, aynı minterim kümesine sahip tek bir standart SOP formuna sahiptir.</div>
+        </details>
+        <details class="q">
+          <summary><span class="qnum">S2.</span> "x(y+ȳ)" ifadesinin "x·1" ile aynı olduğunu, hangi kanunla açıklarsınız?<span class="arrow">▶</span></summary>
+          <div class="answer">Tümleyen kanunu: y+ȳ=1 (her zaman doğru). Bu yüzden x(y+ȳ)=x·1=x — bu "genişletme" tekniği, bir terime eksik değişkeni eklemek için sıkça kullanılır.</div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- 17 — LOGIC GATES -->
+  <section class="slide" data-index="17">
+    <div class="slide-inner">
+      <div class="kicker">3.17</div>
+      <h1 class="slide-title">Mantık Kapıları <em>(Logic Gates)</em></h1>
+      <p class="subtitle">Devrelerin temel elemanları kapılardır — her kapı türü farklı bir Boole işlemini gerçekleştirir.</p>
+
+      <div class="card">
+        <h3>Üç temel kapı</h3>
+        <div class="gate-row">
+          <div class="gate-box">
+            <svg viewBox="0 0 100 60">
+              <line x1="0" y1="30" x2="10" y2="30" stroke="var(--text)" stroke-width="2"/>
+              <path d="M10 10 L10 50 L70 30 Z" fill="none" stroke="var(--text)" stroke-width="2"/>
+              <circle cx="76" cy="30" r="6" fill="none" stroke="var(--text)" stroke-width="2"/>
+              <line x1="82" y1="30" x2="100" y2="30" stroke="var(--text)" stroke-width="2"/>
+              <text x="0" y="24" font-family="IBM Plex Mono, monospace" font-size="11" fill="var(--muted)">x</text>
+              <text x="86" y="22" font-family="IBM Plex Mono, monospace" font-size="11" fill="var(--muted)">x̄</text>
+            </svg>
+            <div class="gate-label">NOT (Inverter) — x̄</div>
+          </div>
+          <div class="gate-box">
+            <svg viewBox="0 0 100 60">
+              <line x1="0" y1="18" x2="18" y2="18" stroke="var(--text)" stroke-width="2"/>
+              <line x1="0" y1="42" x2="18" y2="42" stroke="var(--text)" stroke-width="2"/>
+              <path d="M14 8 Q34 30 14 52 Q50 50 70 30 Q50 10 14 8 Z" fill="none" stroke="var(--text)" stroke-width="2"/>
+              <line x1="70" y1="30" x2="100" y2="30" stroke="var(--text)" stroke-width="2"/>
+              <text x="0" y="14" font-family="IBM Plex Mono, monospace" font-size="11" fill="var(--muted)">x</text>
+              <text x="0" y="38" font-family="IBM Plex Mono, monospace" font-size="11" fill="var(--muted)">y</text>
+              <text x="78" y="24" font-family="IBM Plex Mono, monospace" font-size="11" fill="var(--muted)">x+y</text>
+            </svg>
+            <div class="gate-label">OR gate — x+y</div>
+          </div>
+          <div class="gate-box">
+            <svg viewBox="0 0 100 60">
+              <line x1="0" y1="18" x2="20" y2="18" stroke="var(--text)" stroke-width="2"/>
+              <line x1="0" y1="42" x2="20" y2="42" stroke="var(--text)" stroke-width="2"/>
+              <path d="M20 8 L50 8 A22 22 0 0 1 50 52 L20 52 Z" fill="none" stroke="var(--text)" stroke-width="2"/>
+              <line x1="72" y1="30" x2="100" y2="30" stroke="var(--text)" stroke-width="2"/>
+              <text x="0" y="14" font-family="IBM Plex Mono, monospace" font-size="11" fill="var(--muted)">x</text>
+              <text x="0" y="38" font-family="IBM Plex Mono, monospace" font-size="11" fill="var(--muted)">y</text>
+              <text x="80" y="24" font-family="IBM Plex Mono, monospace" font-size="11" fill="var(--muted)">xy</text>
+            </svg>
+            <div class="gate-label">AND gate — xy</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card" style="margin-top:16px;">
+        <h3>Çok girişli kapılar</h3>
+        <p style="margin:0;">AND ve OR kapıları ikiden fazla girişe de sahip olabilir: n girişli bir AND kapısı <span class="formula">x₁x₂···xₙ</span> üretir, n girişli bir OR kapısı <span class="formula">x₁+x₂+···+xₙ</span> üretir. Karmaşık devreler, bu üç temel kapının farklı kombinasyonlarından inşa edilir.</p>
+      </div>
+
+      <div class="examples">
+        <div class="examples-head"><span class="dot"></span><h4>Örnek Sorular</h4></div>
+        <details class="q">
+          <summary><span class="qnum">S1.</span> 4 girişli bir AND kapısının girişleri x₁=1,x₂=1,x₃=0,x₄=1 ise çıkışı nedir?<span class="arrow">▶</span></summary>
+          <div class="answer">AND kapısı sadece tüm girişler 1 iken 1 verir. x₃=0 olduğundan çıkış <b>0</b>'dır.</div>
+        </details>
+        <details class="q">
+          <summary><span class="qnum">S2.</span> NOT kapısının girişi neden her zaman tek bir sinyal olur, AND/OR gibi çok girişli olamaz?<span class="arrow">▶</span></summary>
+          <div class="answer">NOT, tekli (unary) bir işlemdir — sadece bir değeri tersine çevirir. Birden fazla değeri "tersine çevirmek" tanımsızdır; bu yüzden NOT kapısı yapısal olarak her zaman tek girişlidir.</div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- 18 — EXPRESSION TO CIRCUIT -->
+  <section class="slide" data-index="18">
+    <div class="slide-inner">
+      <div class="kicker">3.18</div>
+      <h1 class="slide-title">İfadeden Devreye: xy + x̄y Örneği</h1>
+      <p class="subtitle">Bir Boole ifadesini adım adım bir mantık devresine dönüştürelim.</p>
+
+      <div class="card">
+        <h3>Devre şeması</h3>
+        <svg viewBox="0 0 480 200" style="width:100%; max-width:520px; display:block; margin:0 auto;">
+          <!-- x,y input lines -->
+          <text x="0" y="34" font-family="IBM Plex Mono, monospace" font-size="13" fill="var(--text)">x</text>
+          <text x="0" y="94" font-family="IBM Plex Mono, monospace" font-size="13" fill="var(--text)">y</text>
+          <line x1="16" y1="30" x2="120" y2="30" stroke="var(--muted)" stroke-width="1.5"/>
+          <line x1="16" y1="90" x2="120" y2="90" stroke="var(--muted)" stroke-width="1.5"/>
+          <!-- branch to NOT gate -->
+          <line x1="30" y1="30" x2="30" y2="150" stroke="var(--muted)" stroke-width="1.5"/>
+          <line x1="30" y1="150" x2="60" y2="150" stroke="var(--muted)" stroke-width="1.5"/>
+          <rect x="60" y="135" width="54" height="30" rx="6" fill="var(--surface-2)" stroke="var(--border)"/>
+          <text x="70" y="155" font-family="IBM Plex Mono, monospace" font-size="12" fill="var(--text)">NOT</text>
+          <line x1="114" y1="150" x2="150" y2="150" stroke="var(--muted)" stroke-width="1.5"/>
+          <text x="118" y="145" font-family="IBM Plex Mono, monospace" font-size="11" fill="var(--muted)">x̄</text>
+
+          <!-- top AND gate: x,y -->
+          <rect x="150" y="16" width="60" height="30" rx="6" fill="var(--surface-2)" stroke="var(--border)"/>
+          <text x="158" y="36" font-family="IBM Plex Mono, monospace" font-size="12" fill="var(--text)">AND</text>
+          <line x1="120" y1="30" x2="150" y2="30" stroke="var(--muted)" stroke-width="1.5"/>
+          <line x1="120" y1="90" x2="130" y2="90" stroke="var(--muted)" stroke-width="1.5"/>
+          <line x1="130" y1="90" x2="130" y2="36" stroke="var(--muted)" stroke-width="1.5"/>
+          <line x1="130" y1="36" x2="150" y2="36" stroke="var(--muted)" stroke-width="1.5"/>
+
+          <!-- bottom AND gate: x̄,y -->
+          <rect x="150" y="135" width="60" height="30" rx="6" fill="var(--surface-2)" stroke="var(--border)"/>
+          <text x="158" y="155" font-family="IBM Plex Mono, monospace" font-size="12" fill="var(--text)">AND</text>
+          <line x1="150" y1="150" x2="150" y2="150" stroke="var(--muted)" stroke-width="1.5"/>
+          <line x1="120" y1="90" x2="140" y2="90" stroke="var(--muted)" stroke-width="1.5"/>
+          <line x1="140" y1="90" x2="140" y2="141" stroke="var(--muted)" stroke-width="1.5"/>
+          <line x1="140" y1="141" x2="150" y2="141" stroke="var(--muted)" stroke-width="1.5"/>
+
+          <!-- output to OR gate -->
+          <line x1="210" y1="30" x2="260" y2="30" stroke="var(--muted)" stroke-width="1.5"/>
+          <text x="215" y="24" font-family="IBM Plex Mono, monospace" font-size="11" fill="var(--muted)">xy</text>
+          <line x1="210" y1="150" x2="260" y2="150" stroke="var(--muted)" stroke-width="1.5"/>
+          <text x="215" y="145" font-family="IBM Plex Mono, monospace" font-size="11" fill="var(--muted)">x̄y</text>
+          <line x1="260" y1="30" x2="280" y2="30" stroke="var(--muted)" stroke-width="1.5"/>
+          <line x1="280" y1="30" x2="280" y2="80" stroke="var(--muted)" stroke-width="1.5"/>
+          <line x1="260" y1="150" x2="280" y2="150" stroke="var(--muted)" stroke-width="1.5"/>
+          <line x1="280" y1="150" x2="280" y2="100" stroke="var(--muted)" stroke-width="1.5"/>
+          <rect x="300" y="75" width="60" height="30" rx="6" fill="var(--surface-2)" stroke="var(--border)"/>
+          <text x="310" y="95" font-family="IBM Plex Mono, monospace" font-size="12" fill="var(--text)">OR</text>
+          <line x1="280" y1="90" x2="300" y2="90" stroke="var(--muted)" stroke-width="1.5"/>
+          <line x1="360" y1="90" x2="420" y2="90" stroke="var(--muted)" stroke-width="1.5"/>
+          <text x="425" y="94" font-family="IBM Plex Mono, monospace" font-size="13" fill="var(--accent)">xy+x̄y</text>
+        </svg>
+        <p style="margin-top:10px; margin-bottom:0; font-size:13.5px; color:var(--muted);">Yapım sırası: (1) x'i NOT kapısından geçirip x̄ elde et → (2) x,y ile bir AND kapısı kur (xy) → (3) x̄,y ile ikinci bir AND kapısı kur (x̄y) → (4) iki çıkışı bir OR kapısında birleştir.</p>
+      </div>
+
+      <div class="card" style="margin-top:16px;">
+        <h3>Hatırlatma: xy + x̄y = y</h3>
+        <p style="margin:0;">Bölüm 1'de bu ifadenin y'ye eşdeğer olduğunu görmüştük (dağılma + tümleyen + birim kanunlarıyla). Yani bu devre, cebirsel olarak <b>tek bir tel</b> (y girişi) ile aynı işi yapar — bu da Karnaugh haritalarıyla arayacağımız türden bir sadeleştirme fırsatıdır!</p>
+      </div>
+
+      <div class="examples">
+        <div class="examples-head"><span class="dot"></span><h4>Örnek Sorular</h4></div>
+        <details class="q">
+          <summary><span class="qnum">S1.</span> x=0, y=1 girişleri için devrenin her aşamasındaki (x̄, xy, x̄y, çıkış) değerlerini bulun.<span class="arrow">▶</span></summary>
+          <div class="answer">x̄=1. xy=0·1=0. x̄y=1·1=1. Çıkış = xy+x̄y = 0+1=<b>1</b> (ki y=1 ile aynı, sadeleştirmeyi doğrular).</div>
+        </details>
+        <details class="q">
+          <summary><span class="qnum">S2.</span> Bu devrede kaç tane mantık kapısı kullanılmıştır? Sadeleştirilmiş "sadece y" haliyle karşılaştırın.<span class="arrow">▶</span></summary>
+          <div class="answer">3 kapı: 1 NOT + 2 AND + 1 OR = toplam 4 kapı. Sadeleştirilmiş halinde (sadece y) <b>0 kapı</b> gerekir — bu, cebirsel sadeleştirmenin donanım maliyetini nasıl doğrudan azalttığının somut bir örneğidir.</div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- 19 — MORE CIRCUIT DESIGN EXERCISES -->
+  <section class="slide" data-index="19">
+    <div class="slide-inner">
+      <div class="kicker">3.19</div>
+      <h1 class="slide-title">Devre Tasarımı Alıştırmaları</h1>
+      <p class="subtitle">Verilen Boole ifadelerini mantık kapılarıyla nasıl tasarlarız? Yapıyı parçalara ayırarak okuyalım.</p>
+
+      <div class="grid3">
+        <div class="card">
+          <h3>(a) (x+y)x̄</h3>
+          <p style="margin:0; font-size:14px;">1️⃣ x,y → OR kapısı → x+y<br>2️⃣ x → NOT kapısı → x̄<br>3️⃣ (x+y) ve x̄ → AND kapısı → sonuç</p>
+        </div>
+        <div class="card">
+          <h3>(b) x̄(y+z)̄</h3>
+          <p style="margin:0; font-size:14px;">1️⃣ y,z → OR → y+z<br>2️⃣ (y+z) → NOT → (y+z)̄<br>3️⃣ x → NOT → x̄<br>4️⃣ x̄ ve (y+z)̄ → AND → sonuç</p>
+        </div>
+        <div class="card">
+          <h3>(c) (x+y+z)(x̄ȳz̄)</h3>
+          <p style="margin:0; font-size:14px;">1️⃣ x,y,z → 3 girişli OR → x+y+z<br>2️⃣ x,y,z → ayrı ayrı NOT → x̄,ȳ,z̄<br>3️⃣ x̄,ȳ,z̄ → 3 girişli AND → x̄ȳz̄<br>4️⃣ İki sonucu → AND → nihai çıkış</p>
+        </div>
+      </div>
+
+      <div class="card" style="margin-top:16px;">
+        <h3>Genel strateji: "içeriden dışarıya" okuma</h3>
+        <ol class="step-list">
+          <li>En içteki parantezleri/işlemleri önce çözün (genelde ¬/tümleyen ve tek değişkenli işlemler).</li>
+          <li>Sonra bunları birleştiren AND/OR kapılarını ekleyin.</li>
+          <li>En dıştaki işlem, devredeki <b>son</b> kapı olacaktır — bu, çıkışı üreten kapıdır.</li>
+        </ol>
+      </div>
+
+      <div class="examples">
+        <div class="examples-head"><span class="dot"></span><h4>Örnek Sorular</h4></div>
+        <details class="q">
+          <summary><span class="qnum">S1.</span> (a) şıkkındaki (x+y)x̄ ifadesi için x=1, y=0 iken devrenin çıkışını hesaplayın.<span class="arrow">▶</span></summary>
+          <div class="answer">x+y=1+0=1. x̄=0. Sonuç: 1·0=<b>0</b>.</div>
+        </details>
+        <details class="q">
+          <summary><span class="qnum">S2.</span> (c) şıkkındaki devrede toplam kaç mantık kapısı kullanılır? (3 girişli kapıları da sayın)<span class="arrow">▶</span></summary>
+          <div class="answer">3 NOT kapısı (x̄,ȳ,z̄ için) + 1 üç-girişli OR kapısı + 1 üç-girişli AND kapısı + 1 son AND kapısı = toplam <b>6 kapı</b>.</div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- 20 — COMBINATIONAL CIRCUITS: HALF ADDER -->
+  <section class="slide" data-index="20">
+    <div class="slide-inner">
+      <div class="kicker">3.20</div>
+      <h1 class="slide-title">Kombinasyonel Devreler: Yarı Toplayıcı <em>(Half Adder)</em></h1>
+      <p class="subtitle">Çıkışları yalnızca o anki girişlere bağlı olan devrelere <b>kombinasyonel devre</b> denir (bellek/durum içermezler). İki bit toplayan en basit örnek: yarı toplayıcı.</p>
+
+      <div class="grid2">
+        <div class="card">
+          <h3>Giriş ve çıkış tablosu</h3>
+          <table class="tt">
+            <tr><th>x</th><th>y</th><th>s (sum)</th><th>c (carry)</th></tr>
+            <tr><td>1</td><td>1</td><td class="res">0</td><td class="res">1</td></tr>
+            <tr><td>1</td><td>0</td><td class="res">1</td><td class="res">0</td></tr>
+            <tr><td>0</td><td>1</td><td class="res">1</td><td class="res">0</td></tr>
+            <tr><td>0</td><td>0</td><td class="res">0</td><td class="res">0</td></tr>
+          </table>
+          <p style="margin-bottom:0; font-size:13.5px; color:var(--muted);">x+y=1 olduğunda (1+0 ya da 0+1) toplam bit 1'dir, x=y=1 olduğunda ise "elde" (carry) oluşur ve toplam biti 0'a döner — tıpkı ikilik sistemde 1+1=10 olması gibi.</p>
+        </div>
+        <div class="card">
+          <h3>Boole ifadeleri</h3>
+          <div class="formula-big" style="font-size:16px;">Carry = xy</div>
+          <div class="formula-big" style="font-size:16px;">Sum = (x+y)(xy)̄</div>
+          <p style="margin:0; font-size:13.5px;">Sum ifadesi aslında XOR'a (x⊕y) eşdeğerdir — Bölüm 1, Slayt 5'te gördüğümüz gibi: x⊕y ≡ (x+y)(xy)̄.</p>
+        </div>
+      </div>
+
+      <div class="card" style="margin-top:16px;">
+        <h3>Devre şeması</h3>
+        <svg viewBox="0 0 460 190" style="width:100%; max-width:500px; display:block; margin:0 auto;">
+          <text x="0" y="34" font-family="IBM Plex Mono, monospace" font-size="13" fill="var(--text)">x</text>
+          <text x="0" y="134" font-family="IBM Plex Mono, monospace" font-size="13" fill="var(--text)">y</text>
+          <line x1="14" y1="30" x2="120" y2="30" stroke="var(--muted)" stroke-width="1.5"/>
+          <line x1="14" y1="130" x2="120" y2="130" stroke="var(--muted)" stroke-width="1.5"/>
+
+          <!-- OR gate for x+y -->
+          <rect x="120" y="55" width="60" height="30" rx="6" fill="var(--surface-2)" stroke="var(--border)"/>
+          <text x="130" y="75" font-family="IBM Plex Mono, monospace" font-size="12" fill="var(--text)">OR</text>
+          <line x1="14" y1="30" x2="30" y2="30" stroke="var(--muted)" stroke-width="1.5"/>
+          <line x1="30" y1="30" x2="30" y2="62" stroke="var(--muted)" stroke-width="1.5"/>
+          <line x1="30" y1="62" x2="120" y2="62" stroke="var(--muted)" stroke-width="1.5"/>
+          <line x1="14" y1="130" x2="40" y2="130" stroke="var(--muted)" stroke-width="1.5"/>
+          <line x1="40" y1="130" x2="40" y2="78" stroke="var(--muted)" stroke-width="1.5"/>
+          <line x1="40" y1="78" x2="120" y2="78" stroke="var(--muted)" stroke-width="1.5"/>
+
+          <!-- AND gate for xy -->
+          <rect x="120" y="140" width="60" height="30" rx="6" fill="var(--surface-2)" stroke="var(--border)"/>
+          <text x="128" y="160" font-family="IBM Plex Mono, monospace" font-size="12" fill="var(--text)">AND</text>
+          <line x1="30" y1="30" x2="55" y2="30" stroke="var(--muted)" stroke-width="1.5"/>
+          <line x1="55" y1="30" x2="55" y2="147" stroke="var(--muted)" stroke-width="1.5"/>
+          <line x1="55" y1="147" x2="120" y2="147" stroke="var(--muted)" stroke-width="1.5"/>
+          <line x1="40" y1="130" x2="65" y2="130" stroke="var(--muted)" stroke-width="1.5"/>
+          <line x1="65" y1="130" x2="65" y2="163" stroke="var(--muted)" stroke-width="1.5"/>
+          <line x1="65" y1="163" x2="120" y2="163" stroke="var(--muted)" stroke-width="1.5"/>
+
+          <!-- carry output -->
+          <line x1="180" y1="155" x2="440" y2="155" stroke="var(--muted)" stroke-width="1.5"/>
+          <text x="380" y="150" font-family="IBM Plex Mono, monospace" font-size="12" fill="var(--accent)">Carry = xy</text>
+
+          <!-- NOT gate for (xy)' -->
+          <rect x="200" y="140" width="0" height="0"/>
+          <line x1="150" y1="140" x2="150" y2="115" stroke="var(--muted)" stroke-width="1.5"/>
+          <line x1="150" y1="115" x2="230" y2="115" stroke="var(--muted)" stroke-width="1.5"/>
+          <rect x="230" y="100" width="55" height="30" rx="6" fill="var(--surface-2)" stroke="var(--border)"/>
+          <text x="238" y="120" font-family="IBM Plex Mono, monospace" font-size="11" fill="var(--text)">NOT</text>
+
+          <!-- AND gate combining (x+y) and (xy)' -->
+          <line x1="180" y1="70" x2="330" y2="70" stroke="var(--muted)" stroke-width="1.5"/>
+          <line x1="285" y1="115" x2="310" y2="115" stroke="var(--muted)" stroke-width="1.5"/>
+          <line x1="310" y1="115" x2="310" y2="90" stroke="var(--muted)" stroke-width="1.5"/>
+          <line x1="310" y1="90" x2="330" y2="90" stroke="var(--muted)" stroke-width="1.5"/>
+          <rect x="330" y="60" width="60" height="35" rx="6" fill="var(--surface-2)" stroke="var(--border)"/>
+          <text x="338" y="82" font-family="IBM Plex Mono, monospace" font-size="12" fill="var(--text)">AND</text>
+          <line x1="390" y1="77" x2="440" y2="77" stroke="var(--muted)" stroke-width="1.5"/>
+          <text x="395" y="72" font-family="IBM Plex Mono, monospace" font-size="12" fill="var(--accent)">Sum</text>
+        </svg>
+      </div>
+
+      <div class="examples">
+        <div class="examples-head"><span class="dot"></span><h4>Örnek Sorular</h4></div>
+        <details class="q">
+          <summary><span class="qnum">S1.</span> x=1, y=1 girişleri için Sum ve Carry değerlerini hesaplayın ve ikilik sistemde 1+1 toplamıyla ilişkilendirin.<span class="arrow">▶</span></summary>
+          <div class="answer">Carry=xy=1·1=1. Sum=(x+y)(xy)̄=(1)(0)=0. Sonuç: Sum=0, Carry=1 → "10" (ikilik sistemde 1+1=10'a karşılık gelir).</div>
+        </details>
+        <details class="q">
+          <summary><span class="qnum">S2.</span> Yarı toplayıcının adı neden "yarı" (half)? Tam toplayıcıdan (full adder) eksik olan nedir?<span class="arrow">▶</span></summary>
+          <div class="answer">Yarı toplayıcı sadece iki bit toplar, önceki basamaktan gelen bir "elde girişini" (carry-in) hesaba katmaz. Tam toplayıcı (full adder) ise üç girişi (x, y, önceki carry) toplayabilir — çok basamaklı ikilik toplama için gereklidir.</div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- 21 — KARNAUGH INTRO -->
+  <section class="slide" data-index="21">
+    <div class="slide-inner">
+      <div class="kicker">3.21</div>
+      <h1 class="slide-title">Karnaugh Haritası Nedir?</h1>
+      <p class="subtitle">Doğruluk tablosundaki 1'leri gruplayarak Boole ifadesini <b>görsel olarak</b> sadeleştirme yöntemi.</p>
+
+      <div class="grid2">
+        <div class="card">
+          <h3>Neden Karnaugh haritası?</h3>
+          <p style="margin:0;">Cebirsel sadeleştirme (kanunlarla adım adım) güçlüdür ama hangi kanunu ne zaman uygulayacağınızı bulmak zor olabilir. Karnaugh haritası, aynı sadeleştirmeyi <b>komşu hücreleri gruplayarak</b> — neredeyse mekanik bir şekilde — yapmamızı sağlar.</p>
+        </div>
+        <div class="card">
+          <h3>Altın kural: Gray kod sırası</h3>
+          <p style="margin:0 0 8px;">Satır/sütun başlıkları <b>0-1-2-3 sırasında değil</b>, komşu hücreler arasında sadece <b>1 bit</b> farklı olacak şekilde sıralanmalıdır:</p>
+          <div class="formula-big" style="font-size:17px;">00 → 01 → 11 → 10</div>
+          <p style="margin:0; font-size:13.5px; color:var(--muted);">Bu sıralama sayesinde, tabloda yan yana duran her iki hücre, gerçek anlamda da "komşu" (bir değişkeni farklı) olur — sıradan ikilik sayma sırasıyla (00-01-10-11) bu özellik kaybolurdu.</p>
+        </div>
+      </div>
+
+      <div class="card" style="margin-top:16px;">
+        <h3>Gruplama kuralları</h3>
+        <ul class="clean" style="margin-bottom:0;">
+          <li>Sadece <b>1</b> değerine sahip hücreler gruplanır (bazı yaklaşımlarda 0'lar da ayrıca gruplanabilir, ama biz 1'lere odaklanacağız).</li>
+          <li>Gruplar her zaman <b>2'nin kuvveti</b> büyüklüğünde olmalıdır: 1, 2, 4, 8, 16 hücre.</li>
+          <li>Gruplar dikdörtgen (ya da kare) biçiminde olmalı ve <b>kenarlardan sarabilir</b> (harita kenarları "birbirine bağlıdır").</li>
+          <li>Mümkün olan <b>en büyük</b> grupları seçin — büyük grup, daha az değişken içeren daha sade bir terim üretir.</li>
+          <li>Her 1, en az bir grupta yer almalıdır; aynı 1 birden fazla grupta kullanılabilir.</li>
+        </ul>
+      </div>
+
+      <div class="examples">
+        <div class="examples-head"><span class="dot"></span><h4>Örnek Sorular</h4></div>
+        <details class="q">
+          <summary><span class="qnum">S1.</span> Başlıklar 00-01-11-10 yerine 00-01-10-11 sırayla dizilseydi ne sorun çıkardı?<span class="arrow">▶</span></summary>
+          <div class="answer">01 ile 10 arasında iki bit birden değişir (komşu olmazlardı), bu da yan yana duran hücrelerin aslında "uzak" olmasına yol açardı — gruplama mantığı bozulurdu.</div>
+        </details>
+        <details class="q">
+          <summary><span class="qnum">S2.</span> 3 hücrelik bir grup Karnaugh haritasında geçerli midir? Neden?<span class="arrow">▶</span></summary>
+          <div class="answer">Hayır, geçerli değildir. Gruplar 2'nin kuvveti büyüklüğünde olmalıdır (1,2,4,8...) — 3 bu kurala uymaz.</div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- 22 — 2/3 VARIABLE K-MAPS -->
+  <section class="slide" data-index="22">
+    <div class="slide-inner">
+      <div class="kicker">3.22</div>
+      <h1 class="slide-title">2 ve 3 Değişkenli Karnaugh Haritaları</h1>
+      <p class="subtitle">Küçük örneklerle gruplama mantığını adım adım görelim.</p>
+
+      <div class="grid2">
+        <div class="card">
+          <h3>2 değişkenli örnek: F(x,y) = xy + x̄y</h3>
+          <table class="kmap">
+            <tr><th class="corner">x╲y</th><th>0</th><th>1</th></tr>
+            <tr><th>0</th><td class="zero">0</td><td class="g1">1</td></tr>
+            <tr><th>1</th><td class="zero">0</td><td class="g1">1</td></tr>
+          </table>
+          <div class="legend"><span><i style="background:color-mix(in srgb, var(--accent) 60%, transparent);"></i> Grup: y sütunu (x fark etmez)</span></div>
+          <div class="formula-big" style="font-size:17px;">F = y</div>
+          <p style="margin:0; font-size:13px; color:var(--muted);">İki hücrelik dikey grup, x değişkenini "eler" — sadece ortak olan y=1 kalır. Bölüm 1'deki cebirsel sonuçla birebir örtüşüyor!</p>
+        </div>
+
+        <div class="card">
+          <h3>3 değişkenli örnek: ders notu verisi F(A,B,C)</h3>
+          <table class="kmap">
+            <tr><th class="corner">A╲BC</th><th>00</th><th>01</th><th>11</th><th>10</th></tr>
+            <tr><th>0</th><td class="zero">0</td><td class="g2">1</td><td class="zero">0</td><td class="g1">1</td></tr>
+            <tr><th>1</th><td class="g1">1</td><td class="g2">1</td><td class="zero">0</td><td class="zero">0</td></tr>
+          </table>
+          <div class="legend">
+            <span><i style="background:color-mix(in srgb, var(--accent) 60%, transparent);"></i> Grup 1: A=1,BC=00 ve A=1,BC=10... yatay çift</span>
+            <span><i style="background:color-mix(in srgb, var(--accent-2) 60%, transparent);"></i> Grup 2: BC=01 sütunu (A fark etmez)</span>
+          </div>
+          <div class="formula-big" style="font-size:16px;">F = AB̄ + B̄C + ĀBC̄</div>
+          <p style="margin:0; font-size:13px; color:var(--muted);">Turuncu grup: A=1, B=0 sabit (C değişiyor) → AB̄. Mavi grup: B=0,C=1 sabit (A değişiyor) → B̄C. Kalan tek 1 (A=0,BC=10) hiçbir komşusuyla eşleşemiyor → tek başına ĀBC̄ terimi olarak kalır.</p>
+        </div>
+      </div>
+
+      <div class="examples">
+        <div class="examples-head"><span class="dot"></span><h4>Örnek Sorular</h4></div>
+        <details class="q">
+          <summary><span class="qnum">S1.</span> 3 değişkenli haritada A=0,BC=11 hücresinin komşuları hangileridir? (Kenar sarma kuralını unutmayın)<span class="arrow">▶</span></summary>
+          <div class="answer">Yatayda: A=0,BC=01 ve A=0,BC=10 (harita kenardan sarar, çünkü Gray kodda 11'den sonra 10 gelir, döngü tamamlanır). Dikeyde: A=1,BC=11. Üçü de komşudur.</div>
+        </details>
+        <details class="q">
+          <summary><span class="qnum">S2.</span> F = AB̄ + B̄C + ĀBC̄ ifadesinin doğruluğunu A=1,B=0,C=1 için kontrol edin.<span class="arrow">▶</span></summary>
+          <div class="answer">AB̄=1·1=1 → F=1+...=1. Haritada A=1,BC=01 hücresi de 1 değerine sahipti (yukarıdaki tabloda A=1 satırı, BC=01 sütunu) — tutarlı. ✓</div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- 23 — 4 VARIABLE K-MAP -->
+  <section class="slide" data-index="23">
+    <div class="slide-inner">
+      <div class="kicker">3.23</div>
+      <h1 class="slide-title">4 Değişkenli Karnaugh Haritası</h1>
+      <p class="subtitle">16 hücrelik harita, hem satır hem sütun başlıklarında Gray kod (00-01-11-10) kullanır.</p>
+
+      <div class="card">
+        <h3>Örnek: F(A,B,C,D) için tam sadeleştirme</h3>
+        <table class="kmap" style="margin:14px auto;">
+          <tr><th class="corner">AB╲CD</th><th>00</th><th>01</th><th>11</th><th>10</th></tr>
+          <tr><th>00</th><td class="g1">1</td><td class="g2">1</td><td class="zero">0</td><td class="g1">1</td></tr>
+          <tr><th>01</th><td class="g1">1</td><td class="zero">0</td><td class="zero">0</td><td class="g1">1</td></tr>
+          <tr><th>11</th><td class="zero">0</td><td class="zero">0</td><td class="g3">1</td><td class="g3">1</td></tr>
+          <tr><th>10</th><td class="zero">0</td><td class="g2">1</td><td class="zero">0</td><td class="zero">0</td></tr>
+        </table>
+        <div class="legend">
+          <span><i style="background:color-mix(in srgb, var(--accent) 60%, transparent);"></i> Grup 1 (kuad, 4 hücre): AB=00 ve AB=01, CD=00 ve CD=10 → A=0, D=0 sabit</span>
+          <span><i style="background:color-mix(in srgb, var(--accent-2) 60%, transparent);"></i> Grup 2 (ikili): AB=00,CD=01 ile AB=10,CD=01 → B=0,C=0,D=1 sabit</span>
+          <span><i style="background:color-mix(in srgb, var(--true) 60%, transparent);"></i> Grup 3 (ikili): AB=11,CD=11 ile AB=11,CD=10 → A=1,B=1,C=1 sabit</span>
+        </div>
+        <div class="formula-big" style="font-size:17px;">F = ĀD̄ + B̄C̄D + ABC</div>
+        <p style="margin:0; font-size:13.5px; color:var(--muted);">Turuncu 4'lü grup en büyük olduğu için önceliklidir — 4 hücreyi kapladığından sadece <b>2 değişken</b> (A,D) içeren bir terim üretir (ĀD̄), oysa küçük gruplar 3'er değişken içeren terimler üretir.</p>
+      </div>
+
+      <div class="examples">
+        <div class="examples-head"><span class="dot"></span><h4>Örnek Sorular</h4></div>
+        <details class="q">
+          <summary><span class="qnum">S1.</span> Turuncu grup (ĀD̄) neden 4 hücreyi kaplıyor ama sadece 2 değişken içeriyor? Genel kuralı açıklayın.<span class="arrow">▶</span></summary>
+          <div class="answer">Genel kural: 2ᵏ hücrelik bir grup, (n−k) değişkenli bir terim üretir (n=toplam değişken sayısı). Burada n=4, grup boyutu 2²=4 (k=2) olduğundan terim 4−2=2 değişken içerir (A ve D) — B ve C bu grup içinde her iki değeri de aldığından "elenirler".</div>
+        </details>
+        <details class="q">
+          <summary><span class="qnum">S2.</span> İkili gruplar (Grup 2, Grup 3) neden 3'er değişken içeren terimler üretiyor?<span class="arrow">▶</span></summary>
+          <div class="answer">2 hücrelik bir grup (k=1) için terim uzunluğu n−k = 4−1 = <b>3</b> değişkendir — bu yüzden B̄C̄D ve ABC gibi 3 harfli terimler ortaya çıkıyor.</div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- 24 — K-MAP PRACTICE -->
+  <section class="slide" data-index="24">
+    <div class="slide-inner">
+      <div class="kicker">3.24</div>
+      <h1 class="slide-title">K-Harita Okuma Alıştırmaları</h1>
+      <p class="subtitle">Farklı gruplama senaryolarını tanıyarak pratik kazanalım.</p>
+
+      <div class="grid2">
+        <div class="card">
+          <h3>Örnek A — Tek satır grubu</h3>
+          <table class="kmap" style="font-size:12.5px;">
+            <tr><th class="corner">A╲BC</th><th>00</th><th>01</th><th>11</th><th>10</th></tr>
+            <tr><th>0</th><td class="g1">1</td><td class="g1">1</td><td class="g1">1</td><td class="g1">1</td></tr>
+            <tr><th>1</th><td class="zero">0</td><td class="zero">0</td><td class="zero">0</td><td class="zero">0</td></tr>
+          </table>
+          <div class="formula-big" style="font-size:16px;">F = Ā</div>
+          <p style="margin:0; font-size:13px; color:var(--muted);">Tüm bir satır (4 hücre) doluysa, B ve C tamamen elenir — sadece A=0 koşulu (Ā) kalır.</p>
+        </div>
+        <div class="card">
+          <h3>Örnek B — Dört köşe grubu (sarmalı grup)</h3>
+          <table class="kmap" style="font-size:12.5px;">
+            <tr><th class="corner">AB╲CD</th><th>00</th><th>01</th><th>11</th><th>10</th></tr>
+            <tr><th>00</th><td class="g1">1</td><td class="zero">0</td><td class="zero">0</td><td class="g1">1</td></tr>
+            <tr><th>01</th><td class="zero">0</td><td class="zero">0</td><td class="zero">0</td><td class="zero">0</td></tr>
+            <tr><th>11</th><td class="zero">0</td><td class="zero">0</td><td class="zero">0</td><td class="zero">0</td></tr>
+            <tr><th>10</th><td class="g1">1</td><td class="zero">0</td><td class="zero">0</td><td class="g1">1</td></tr>
+          </table>
+          <div class="formula-big" style="font-size:16px;">F = B̄D̄</div>
+          <p style="margin:0; font-size:13px; color:var(--muted);">Dört köşe hücresi birbirine <b>komşudur</b> (harita hem yatayda hem dikeyde sarar) — bu 4'lü grup B=0,D=0 sabit olduğundan B̄D̄ terimini verir.</p>
+        </div>
+      </div>
+
+      <div class="card" style="margin-top:16px;">
+        <h3>Örnek C — Örtüşen (overlap) gruplar</h3>
+        <table class="kmap" style="font-size:12.5px;">
+          <tr><th class="corner">A╲BC</th><th>00</th><th>01</th><th>11</th><th>10</th></tr>
+          <tr><th>0</th><td class="zero">0</td><td class="g2">1</td><td class="g2">1</td><td class="zero">0</td></tr>
+          <tr><th>1</th><td class="zero">0</td><td class="g1">1</td><td class="g1">1</td><td class="zero">0</td></tr>
+        </table>
+        <div class="legend">
+          <span><i style="background:color-mix(in srgb, var(--accent-2) 60%, transparent);"></i> A=0 satırındaki BC=01,11 çifti → ĀC</span>
+          <span><i style="background:color-mix(in srgb, var(--accent) 60%, transparent);"></i> A=1 satırındaki BC=01,11 çifti → AC</span>
+        </div>
+        <div class="formula-big" style="font-size:16px;">F = ĀC + AC &nbsp;≡&nbsp; C</div>
+        <p style="margin:0; font-size:13.5px; color:var(--muted);">Aslında burada tüm 4 hücre birlikte tek bir 4'lü kuad da oluşturabilirdi (BC=01 ve BC=11 sütunları, A fark etmeksizin) → doğrudan <b>F=C</b> sonucuna ulaşırdık. Bu, "mümkün olan en büyük grubu seçin" kuralının neden önemli olduğunu gösterir!</p>
+      </div>
+
+      <div class="examples">
+        <div class="examples-head"><span class="dot"></span><h4>Örnek Sorular</h4></div>
+        <details class="q">
+          <summary><span class="qnum">S1.</span> Örnek C'de küçük gruplar yerine tek bir büyük grup seçilseydi kaç değişkenli bir terim elde edilirdi?<span class="arrow">▶</span></summary>
+          <div class="answer">4 hücrelik tek bir kuad (BC=01 ve BC=11 sütunları) seçilseydi, n=3, k=2 olduğundan terim uzunluğu 3−2=<b>1 değişken</b> olurdu (sadece C) — iki ayrı 2'li gruptan (ĀC+AC, 2'şer değişkenli) daha sade.</div>
+        </details>
+        <details class="q">
+          <summary><span class="qnum">S2.</span> Örnek B'de dört köşenin "komşu" sayılmasının nedeni nedir?<span class="arrow">▶</span></summary>
+          <div class="answer">Karnaugh haritasının kenarları topolojik olarak birbirine bağlıdır (bir silindir/simit yüzeyi gibi düşünülebilir) — en soldaki sütun ile en sağdaki sütun, en üst satır ile en alt satır komşudur. Bu yüzden dört köşe hücresi de birbirine komşudur ve geçerli bir grup oluşturabilir.</div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- 25 — SUMMARY -->
+  <section class="slide" data-index="25">
+    <div class="slide-inner">
+      <div class="kicker">Özet</div>
+      <h1 class="slide-title">Bölüm 3'ün Özeti — <em>Boole Cebri ve Mantık Devreleri</em></h1>
+      <p class="subtitle">Bir sonraki bölümde algoritmaların matematiksel analizine geçeceğiz.</p>
+
+      <div class="two-col-list">
+        <div class="card">
+          <h3>Öğrendiklerimiz</h3>
+          <ul class="clean" style="margin-bottom:0;">
+            <li>Boole toplamı (+), çarpımı (·) ve tümleyeni (‾)</li>
+            <li>Boole ifadeleri, Boole fonksiyonları ve Bⁿ→B tanımı</li>
+            <li>n. dereceden 2^(2ⁿ) farklı Boole fonksiyonu vardır</li>
+            <li>Boole cebri özdeşlikleri (identity, domination, idempotent, commutative, associative, distributive, De Morgan, absorption)</li>
+            <li>A+A′B=A+B ve Consensus teoremi gibi ek sadeleştirme araçları</li>
+            <li>Boole cebrinin soyut (aksiyomatik) tanımı</li>
+            <li>Öğe (literal), minterim ve çarpımların toplamı (SOP) açılımı</li>
+            <li>NOT, OR, AND mantık kapıları ve devre tasarımı</li>
+            <li>Kombinasyonel devreler (yarı toplayıcı örneği)</li>
+            <li>Karnaugh haritaları ile görsel sadeleştirme (2, 3, 4 değişkenli)</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Sırada ne var?</h3>
+          <p style="margin:0 0 10px;">Bölüm 4 — <b>Algorithms (Algoritmalar)</b> konusunda şunları göreceğiz:</p>
+          <ul class="clean" style="margin-bottom:0;">
+            <li>Temel algoritma kavramı ve gösterim biçimleri</li>
+            <li>İteratif algoritmaların matematiksel analizi</li>
+            <li>Özyinelemeli (recursive) algoritmalar</li>
+            <li>Recurrence relation (yineleme bağıntısı) ile karmaşıklık analizi</li>
+            <li>Büyük-O gösterimi ve algoritma verimliliği</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="examples">
+        <div class="examples-head"><span class="dot"></span><h4>Genel Tekrar Soruları</h4></div>
+        <details class="q">
+          <summary><span class="qnum">S1.</span> F(x,y,z)=x+ȳz için hem doğruluk tablosu hem de mantık kapıları ile devre çizimi gerektiren adımları sırayla listeleyin.<span class="arrow">▶</span></summary>
+          <div class="answer">
+            1) 3 değişken → 8 satırlık doğruluk tablosu oluştur (yardımcı sütun ȳz için).<br>
+            2) Devre için: y → NOT → ȳ; ȳ ve z → AND → ȳz; x ve ȳz → OR → x+ȳz (son çıkış).<br>
+            3) İsteğe bağlı: sonucu Karnaugh haritasıyla çapraz kontrol et.
+          </div>
+        </details>
+        <details class="q">
+          <summary><span class="qnum">S2.</span> 4 değişkenli bir K-haritasında 8 hücrelik bir grup kaç değişkenli bir terim üretir? Hesaplayın.<span class="arrow">▶</span></summary>
+          <div class="answer">n=4, grup boyutu 2³=8 olduğundan k=3. Terim uzunluğu n−k = 4−3 = <b>1 değişken</b> — yani 8 hücrelik bir grup, tek bir öğeden (literal) oluşan en sade terimi verir.</div>
+        </details>
+        <details class="q">
+          <summary><span class="qnum">S3.</span> Consensus teoremindeki "gereksiz terim" fikri ile Karnaugh haritasındaki "örtüşen gruplar" fikri arasındaki bağlantıyı bir cümleyle açıklayın.<span class="arrow">▶</span></summary>
+          <div class="answer">İkisi de aynı gerçeği farklı biçimlerde ifade eder: bir terim/grup, zaten diğer terimler/gruplar tarafından "kapsanan" 1'leri tekrar kapsıyorsa gereksizdir — cebirsel dünyada buna "consensus term", görsel dünyada ise "gereksiz/örtüşen grup" denir.</div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+</div>
+
+<div class="bottombar">
+  <button class="nav-btn" id="prevBtn">← Önceki</button>
+  <div class="dots" id="dots"></div>
+  <span class="slide-counter" id="counterBottom">01 / 26</span>
+  <button class="nav-btn" id="nextBtn">Sonraki →</button>
+</div>
+
+<script>
+(function(){
+  var slides = Array.prototype.slice.call(document.querySelectorAll('.slide'));
+  var total = slides.length;
+  var current = 0;
+
+  var counterTop = document.getElementById('counterTop');
+  var counterBottom = document.getElementById('counterBottom');
+  var progressFill = document.getElementById('progressFill');
+  var prevBtn = document.getElementById('prevBtn');
+  var nextBtn = document.getElementById('nextBtn');
+  var dotsWrap = document.getElementById('dots');
+
+  function pad(n){ return n < 10 ? '0'+n : ''+n; }
+
+  for(var i=0;i<total;i++){
+    var d = document.createElement('div');
+    d.className = 'd' + (i===0 ? ' active' : '');
+    d.dataset.i = i;
+    d.addEventListener('click', function(){ goTo(parseInt(this.dataset.i,10)); });
+    dotsWrap.appendChild(d);
+  }
+
+  function render(){
+    slides.forEach(function(s, i){ s.classList.toggle('active', i === current); });
+    var label = pad(current+1) + ' / ' + pad(total);
+    counterTop.textContent = label;
+    counterBottom.textContent = label;
+    progressFill.style.width = ((current) / (total-1) * 100) + '%';
+    prevBtn.disabled = current === 0;
+    nextBtn.disabled = current === total - 1;
+    Array.prototype.forEach.call(dotsWrap.children, function(d,i){
+      d.classList.toggle('active', i === current);
+    });
+    document.querySelector('.slide.active').scrollTop = 0;
+  }
+
+  function goTo(i){
+    if(i < 0 || i >= total) return;
+    current = i;
+    render();
+  }
+
+  prevBtn.addEventListener('click', function(){ goTo(current-1); });
+  nextBtn.addEventListener('click', function(){ goTo(current+1); });
+
+  document.addEventListener('keydown', function(e){
+    if(e.key === 'ArrowRight' || e.key === 'PageDown'){ goTo(current+1); }
+    else if(e.key === 'ArrowLeft' || e.key === 'PageUp'){ goTo(current-1); }
+    else if(e.key === 'Home'){ goTo(0); }
+    else if(e.key === 'End'){ goTo(total-1); }
+  });
+
+  render();
+
+  var root = document.documentElement;
+  var settingsBtn = document.getElementById('settingsBtn');
+  var panel = document.getElementById('settingsPanel');
+  var bgPicker = document.getElementById('bgPicker');
+  var textPicker = document.getElementById('textPicker');
+  var resetBtn = document.getElementById('resetBtn');
+  var presetRow = document.getElementById('presetRow');
+
+  var DEFAULT_BG = '#0B1220';
+  var DEFAULT_TEXT = '#F1F5F9';
+
+  var presets = [
+    {bg:'#0B1220', text:'#F1F5F9', name:'Gece Mavisi'},
+	{bg:'#F8F9FA', text:'#1A1A1A', name:'Kampüs Beyazı ve Koyu Gri'},
+	{bg:'#000000', text:'#FFD700', name:'Siyah ve Altın Sarısı'},
+	{bg:'#F4F6F9', text:'#0F172A', name:'Kırık Beyaz ve Gece Mavisi'},
+	{bg:'#0B132B', text:'#FFEE58', name:'Koyu Lacivert ve Odak Sarısı'},
+    {bg:'#F4F1EA', text:'#1A1A1A', name:'Kağıt'},
+    {bg:'#111111', text:'#F5F5F5', name:'Siyah'},
+    {bg:'#0F2417', text:'#E8F5E9', name:'Koyu Yeşil'},
+    {bg:'#FFFFFF', text:'#0B1220', name:'Beyaz Tahta'},
+    {bg:'#1B1035', text:'#F3E8FF', name:'Mor Gece'},
+	{bg:'#F1F5F9', text:'#0F172A', name:'Bulutlu Gün Modu'},
+	{bg:'#FEF08A', text:'#1E293B', name:'Fosforlu Vurgu Modu'},
+	{bg:'#FFFFFF', text:'#000000', name:'Güneş Işığı Modu'}
+  ];
+  
+  presets.forEach(function(p){
+    var dot = document.createElement('div');
+    dot.className = 'preset-dot';
+    dot.style.background = p.bg;
+    dot.style.borderColor = p.text;
+    dot.title = p.name;
+    dot.addEventListener('click', function(){ applyTheme(p.bg, p.text); });
+    presetRow.appendChild(dot);
+  });
+
+  function applyTheme(bg, text){
+    root.style.setProperty('--bg', bg);
+    root.style.setProperty('--text', text);
+    bgPicker.value = bg;
+    textPicker.value = text;
+    try{
+      localStorage.setItem('boole-slides-theme', JSON.stringify({bg:bg, text:text}));
+    }catch(e){}
+  }
+
+  settingsBtn.addEventListener('click', function(){ panel.classList.toggle('open'); });
+  document.addEventListener('click', function(e){
+    if(!panel.contains(e.target) && e.target !== settingsBtn && panel.classList.contains('open')){
+      panel.classList.remove('open');
+    }
+  });
+
+  bgPicker.addEventListener('input', function(){ applyTheme(bgPicker.value, textPicker.value); });
+  textPicker.addEventListener('input', function(){ applyTheme(bgPicker.value, textPicker.value); });
+  resetBtn.addEventListener('click', function(){ applyTheme(DEFAULT_BG, DEFAULT_TEXT); });
+
+  try{
+    var saved = localStorage.getItem('boole-slides-theme');
+    if(saved){
+      var parsed = JSON.parse(saved);
+      if(parsed && parsed.bg && parsed.text){ applyTheme(parsed.bg, parsed.text); }
+    }
+  }catch(e){}
+})();
+</script>
+
+
+<div id="boardLayer"></div>
+<canvas id="penCanvas"></canvas>
+<div id="laserDot"></div>
+<div id="penToolbar">
+  <div class="pt-grid">
+    <button class="pt-btn" data-tool="pointer" title="İşaretçi — soruları aç, kaydır (V)">🖱️</button>
+    <button class="pt-btn" data-tool="pen" title="Kalem (P)">✏️</button>
+    <button class="pt-btn" data-tool="highlighter" title="Fosforlu kalem (H)">🖍️</button>
+    <button class="pt-btn" data-tool="eraser" title="Silgi — çizgiyi komple siler (E)">🧽</button>
+    <button class="pt-btn" data-tool="laser" title="Lazer işaretçi (L)">🔴</button>
+  </div>
+  <div class="pt-sep"></div>
+  <div class="pt-label">Renk</div>
+  <div class="pt-colors" id="ptColors"></div>
+  <div class="pt-sep"></div>
+  <div class="pt-label">Kalınlık</div>
+  <div class="pt-grid">
+    <button class="pt-btn" data-size="2" title="İnce (-)"><span class="pt-dot" style="width:4px;height:4px"></span></button>
+    <button class="pt-btn" data-size="4" title="Orta"><span class="pt-dot" style="width:8px;height:8px"></span></button>
+    <button class="pt-btn" data-size="8" title="Kalın"><span class="pt-dot" style="width:14px;height:14px"></span></button>
+    <button class="pt-btn" data-size="14" title="Çok kalın (+)"><span class="pt-dot" style="width:20px;height:20px"></span></button>
+  </div>
+  <div class="pt-sep"></div>
+  <div class="pt-grid">
+    <button class="pt-btn" id="ptUndo" title="Geri al (Ctrl+Z)">↶</button>
+    <button class="pt-btn" id="ptClear" title="Bu slayttaki yazıyı temizle (C)">🗑️</button>
+    <button class="pt-btn" id="ptBoard" title="Boş tahta aç/kapat (B)">▭</button>
+    <button class="pt-btn" id="ptEye" title="Yazıyı göster/gizle">👁️</button>
+    <button class="pt-btn" id="ptClose" title="Kalemi kapat (Esc)">✕</button>
+  </div>
+</div>
+<div id="penHint">Kalem açık. <b>V</b> ile işaretçiye geç (soru kutularını aç, kaydır), <b>P</b> ile tekrar yaz. Rakam tuşları renk seçer. Yazılar her slaytta ayrı kalır.</div>
+
+<script>
+(function(){
+  var COLORS = [
+    ['#FFFFFF','Beyaz'], ['#111111','Siyah'], ['#FBBF24','Sarı'], ['#F97316','Turuncu'],
+    ['#EF4444','Kırmızı'], ['#EC4899','Pembe'], ['#A855F7','Mor'], ['#3B82F6','Mavi'],
+    ['#22D3EE','Turkuaz'], ['#22C55E','Yeşil'], ['#A3E635','Açık yeşil'], ['#9CA3AF','Gri']
+  ];
+  var canvas = document.getElementById('penCanvas'), ctx = canvas.getContext('2d');
+  var board = document.getElementById('boardLayer'), tb = document.getElementById('penToolbar');
+  var laser = document.getElementById('laserDot'), hint = document.getElementById('penHint');
+  var toggleBtn = document.getElementById('penToggle'), colorsBox = document.getElementById('ptColors');
+  var state = { open:false, tool:'pointer', color:'#FBBF24', size:4, boardOn:false, hidden:false };
+  var store = {}, hist = {};
+  var cur = null, erasing = null, raf = 0, customWrap = null, customInput = null;
+  // Donanım silgisi algılandıktan sonra normal kalem ucuna dönüşü takip et.
+  var hardwareEraserMode = false;
+
+  function slideEl(){ return document.querySelector('.slide.active'); }
+  function key(){ if(state.boardOn) return 'board'; var s = slideEl(); return 's' + (s ? s.getAttribute('data-index') : '0'); }
+  function sTop(){ if(state.boardOn) return 0; var s = slideEl(); return s ? s.scrollTop : 0; }
+  function rect(){ return canvas.getBoundingClientRect(); }
+  function arr(o,k){ if(!o[k]) o[k] = []; return o[k]; }
+
+  function resize(){
+    var dpr = window.devicePixelRatio || 1, r = rect();
+    canvas.width = Math.round(r.width * dpr); canvas.height = Math.round(r.height * dpr);
+    ctx.setTransform(dpr,0,0,dpr,0,0); redraw();
+  }
+  function toPx(p){ return [p[0] * rect().width, p[1] - sTop()]; }
+
+  function drawStroke(st){
+    var pts = st.points; if(!pts.length) return;
+    ctx.save();
+    ctx.lineCap = 'round'; ctx.lineJoin = 'round'; ctx.strokeStyle = st.color; ctx.fillStyle = st.color;
+    var hl = st.tool === 'highlighter';
+    ctx.globalAlpha = hl ? 0.35 : 1;
+    var lw = hl ? st.size * 5 : st.size; ctx.lineWidth = lw;
+    var p0 = toPx(pts[0]);
+    if(pts.length === 1){ ctx.beginPath(); ctx.arc(p0[0], p0[1], lw/2, 0, Math.PI*2); ctx.fill(); ctx.restore(); return; }
+    ctx.beginPath(); ctx.moveTo(p0[0], p0[1]);
+    for(var i = 1; i < pts.length - 1; i++){
+      var a = toPx(pts[i]), b = toPx(pts[i+1]);
+      ctx.quadraticCurveTo(a[0], a[1], (a[0]+b[0])/2, (a[1]+b[1])/2);
+    }
+    var last = toPx(pts[pts.length-1]); ctx.lineTo(last[0], last[1]);
+    ctx.stroke(); ctx.restore();
+  }
+  function redraw(){
+    var r = rect(); ctx.clearRect(0, 0, r.width, r.height);
+    if(state.hidden) return;
+    (store[key()] || []).forEach(drawStroke);
+  }
+  function schedule(){ if(raf) return; raf = requestAnimationFrame(function(){ raf = 0; redraw(); }); }
+
+  function pt(e){ var r = rect(); return [ (e.clientX - r.left) / r.width, e.clientY - r.top + sTop() ]; }
+
+  function eraseAt(e){
+    var r = rect(), x = e.clientX - r.left, y = e.clientY - r.top, list = arr(store, key()), removed = [];
+    for(var i = list.length - 1; i >= 0; i--){
+      var hit = list[i].points.some(function(p){ var q = toPx(p); var dx = q[0]-x, dy = q[1]-y; return dx*dx + dy*dy < 18*18; });
+      if(hit){ removed.push(list.splice(i,1)[0]); }
+    }
+    if(removed.length){ erasing = erasing || []; erasing = erasing.concat(removed); schedule(); }
+  }
+
+  canvas.addEventListener('pointerdown', function(e){
+    if(!state.open) return;
+    // Bazı tablet kalemleri silgi ucunu Pointer Events'te ayrı araç olarak bildirir.
+    // Destekleyen tarayıcılarda araç seçimini otomatik olarak silgiye çevir.
+    var hardwareEraser = (e.pointerType === 'eraser') ||
+      (e.pointerType === 'pen' && (e.button === 5 || (e.buttons & 32) === 32));
+    if(hardwareEraser){
+      e.preventDefault();
+      hardwareEraserMode = true;
+      state.tool = 'eraser';
+      applyUI();
+    } else if(e.pointerType === 'pen' && hardwareEraserMode){
+      // Aynı kalem tekrar normal ucuna çevrildi: otomatik olarak kaleme dön.
+      hardwareEraserMode = false;
+      state.tool = 'pen';
+      applyUI();
+    }
+    if(state.tool === 'pointer') return;
+    e.preventDefault(); if(canvas.setPointerCapture){ try{ canvas.setPointerCapture(e.pointerId); }catch(_){} }
+    if(state.tool === 'pen' || state.tool === 'highlighter'){
+      cur = { tool:state.tool, color:state.color, size:state.size, points:[pt(e)] };
+      arr(store, key()).push(cur); schedule();
+    } else if(state.tool === 'eraser'){ erasing = []; eraseAt(e); }
+    else if(state.tool === 'laser'){ moveLaser(e); }
+  });
+  canvas.addEventListener('pointermove', function(e){
+    if(!state.open) return;
+    // Kalemin silgi ucu hareket sırasında ayrıca bildiriliyorsa silmeyi sürdür.
+    if(e.pointerType === 'eraser' ||
+       (e.pointerType === 'pen' && (e.buttons & 32) === 32)){
+      if(state.tool !== 'eraser'){ state.tool = 'eraser'; applyUI(); }
+    }
+    if(state.tool === 'laser'){ moveLaser(e); return; }
+    if(cur){ cur.points.push(pt(e)); schedule(); }
+    else if(erasing){ eraseAt(e); }
+  });
+  function endStroke(){
+    if(cur){ arr(hist, key()).push({type:'add', stroke:cur}); cur = null; }
+    if(erasing){ if(erasing.length) arr(hist, key()).push({type:'remove', list:erasing}); erasing = null; }
+    if(state.tool === 'laser') laser.style.display = 'none';
+  }
+  canvas.addEventListener('pointerup', endStroke);
+  canvas.addEventListener('pointercancel', endStroke);
+  canvas.addEventListener('pointerleave', function(){ if(state.tool === 'laser') laser.style.display = 'none'; });
+  function moveLaser(e){ laser.style.display = 'block'; laser.style.left = e.clientX + 'px'; laser.style.top = e.clientY + 'px'; }
+
+  canvas.addEventListener('wheel', function(e){
+    var s = slideEl(); if(s && !state.boardOn){ s.scrollTop += e.deltaY; schedule(); }
+    e.preventDefault();
+  }, { passive:false });
+  Array.prototype.forEach.call(document.querySelectorAll('.slide'), function(s){ s.addEventListener('scroll', schedule); });
+
+  function undo(){
+    var h = arr(hist, key()), a = h.pop(); if(!a) return;
+    var list = arr(store, key());
+    if(a.type === 'add'){ var i = list.indexOf(a.stroke); if(i > -1) list.splice(i,1); }
+    else { a.list.forEach(function(s){ list.push(s); }); }
+    redraw();
+  }
+  function clearInk(){
+    var list = arr(store, key()); if(!list.length) return;
+    arr(hist, key()).push({type:'clear', list:list.splice(0, list.length)}); redraw();
+  }
+
+  // ---- colour palette (12 presets + free colour picker) ----
+  COLORS.forEach(function(c, i){
+    var b = document.createElement('button');
+    b.className = 'pt-color'; b.setAttribute('data-color', c[0]); b.style.background = c[0];
+    b.title = c[1] + (i < 10 ? ' (' + ((i + 1) % 10) + ')' : '');
+    b.addEventListener('click', function(){ pickColor(c[0]); });
+    colorsBox.appendChild(b);
+  });
+  customWrap = document.createElement('label'); customWrap.className = 'pt-custom'; customWrap.title = 'İstediğin rengi seç';
+  customInput = document.createElement('input'); customInput.type = 'color'; customInput.value = '#FBBF24';
+  customInput.addEventListener('input', function(){ customWrap.style.background = customInput.value; pickColor(customInput.value); });
+  customWrap.appendChild(customInput); colorsBox.appendChild(customWrap);
+
+  function pickColor(c){ state.color = c; if(state.tool !== 'highlighter') state.tool = 'pen'; if(!state.open) state.open = true; applyUI(); }
+  function isPreset(c){ return COLORS.some(function(p){ return p[0].toLowerCase() === c.toLowerCase(); }); }
+
+  function applyUI(){
+    var drawing = state.open && state.tool !== 'pointer';
+    canvas.classList.toggle('on', drawing);
+    canvas.classList.toggle('t-eraser', state.tool === 'eraser');
+    canvas.classList.toggle('t-laser', state.tool === 'laser');
+    tb.classList.toggle('open', state.open);
+    toggleBtn.classList.toggle('active', state.open);
+    board.classList.toggle('on', state.boardOn);
+    Array.prototype.forEach.call(tb.querySelectorAll('[data-tool]'), function(b){ b.classList.toggle('active', b.getAttribute('data-tool') === state.tool); });
+    Array.prototype.forEach.call(tb.querySelectorAll('[data-color]'), function(b){ b.classList.toggle('active', b.getAttribute('data-color').toLowerCase() === state.color.toLowerCase()); });
+    customWrap.classList.toggle('active', !isPreset(state.color));
+    Array.prototype.forEach.call(tb.querySelectorAll('[data-size]'), function(b){ b.classList.toggle('active', +b.getAttribute('data-size') === state.size); });
+    document.getElementById('ptBoard').classList.toggle('active', state.boardOn);
+    document.getElementById('ptEye').classList.toggle('active', state.hidden);
+    if(state.tool !== 'laser') laser.style.display = 'none';
+    redraw();
+  }
+  function setTool(t){ state.tool = t; if(!state.open) state.open = true; applyUI(); }
+  function openPen(v){
+    state.open = v;
+    if(!v){ state.boardOn = false; }
+    if(v && state.tool === 'pointer') state.tool = 'pen';
+    if(v){ hint.classList.add('show'); setTimeout(function(){ hint.classList.remove('show'); }, 4500); }
+    applyUI();
+  }
+
+  toggleBtn.addEventListener('click', function(){ openPen(!state.open); });
+  Array.prototype.forEach.call(tb.querySelectorAll('[data-tool]'), function(b){ b.addEventListener('click', function(){ setTool(b.getAttribute('data-tool')); }); });
+  Array.prototype.forEach.call(tb.querySelectorAll('[data-size]'), function(b){ b.addEventListener('click', function(){ state.size = +b.getAttribute('data-size'); applyUI(); }); });
+  document.getElementById('ptUndo').addEventListener('click', undo);
+  document.getElementById('ptClear').addEventListener('click', clearInk);
+  document.getElementById('ptBoard').addEventListener('click', function(){ state.boardOn = !state.boardOn; applyUI(); });
+  document.getElementById('ptEye').addEventListener('click', function(){ state.hidden = !state.hidden; applyUI(); });
+  document.getElementById('ptClose').addEventListener('click', function(){ openPen(false); });
+
+  document.addEventListener('keydown', function(e){
+    var tag = (e.target && e.target.tagName) || '';
+    if(tag === 'INPUT' || tag === 'TEXTAREA') return;
+    var k = e.key.toLowerCase();
+    if((e.ctrlKey || e.metaKey) && k === 'z'){ if(state.open){ e.preventDefault(); undo(); } return; }
+    if(e.ctrlKey || e.metaKey || e.altKey) return;
+    if(k === 'd'){ openPen(!state.open); return; }
+    if(!state.open) return;
+    if(k === 'escape'){ openPen(false); }
+    else if(k === 'p') setTool('pen');
+    else if(k === 'h') setTool('highlighter');
+    else if(k === 'e') setTool('eraser');
+    else if(k === 'l') setTool('laser');
+    else if(k === 'v') setTool('pointer');
+    else if(k === 'b'){ state.boardOn = !state.boardOn; applyUI(); }
+    else if(k === 'c') clearInk();
+    else if(k.length === 1 && k >= '0' && k <= '9'){
+      var idx = k === '0' ? 9 : (+k - 1);
+      if(COLORS[idx]) pickColor(COLORS[idx][0]);
+    }
+    else if(k === '+' || k === '='){ state.size = Math.min(14, state.size + 2); applyUI(); }
+    else if(k === '-'){ state.size = Math.max(2, state.size - 2); applyUI(); }
+  });
+
+  new MutationObserver(function(){ redraw(); }).observe(document.getElementById('deck'), { attributes:true, subtree:true, attributeFilter:['class'] });
+  window.addEventListener('resize', resize);
+  resize(); applyUI();
+  window.__pen = { state:state, store:store, undo:undo, clearInk:clearInk, key:key };
+})();
+</script>
+</body>
+</html>
