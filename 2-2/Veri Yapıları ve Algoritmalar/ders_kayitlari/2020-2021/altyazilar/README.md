@@ -41,4 +41,4 @@ Ders kayıtları 7 Ekim 2020 Çarşamba günü uygulama/lab kaydıyla başlamı�
 
 Altyazılardan çıkarılan çalışma özetleri [`../altyazi_ozetleri/`](./) klasöründedir.
 
-**Not:** İsterseniz bu kayıtları NotebookLM gibi bir araca atıp daha istifadeli hale getirebilirsiniz.
+**Not:** İsterseniz bu kayıtları Gemini Notebook gibi bir araca atıp daha istifadeli hale getirebilirsiniz.

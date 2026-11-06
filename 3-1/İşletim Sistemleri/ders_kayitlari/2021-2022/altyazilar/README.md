@@ -31,4 +31,4 @@ Teorik dersler Pazartesi, uygulama oturumları Salı günleri yapılmıştır. D
 - Arşivde numarası atlanan kayıtlar (2-4, 6-8, 10-11, 13, 18, 25, 27) bu şubenin kayıt arşivinde bulunmamaktadır.
 - 22 Kasım 2021 haftası 1. vize, 20 Aralık 2021 haftası 2. vize haftasına denk gelmektedir.
 
-**Not:** İsterseniz bu kayıtları NotebookLM gibi bir araca atıp daha istifadeli hale getirebilirsiniz.
+**Not:** İsterseniz bu kayıtları Gemini Notebook gibi bir araca atıp daha istifadeli hale getirebilirsiniz.

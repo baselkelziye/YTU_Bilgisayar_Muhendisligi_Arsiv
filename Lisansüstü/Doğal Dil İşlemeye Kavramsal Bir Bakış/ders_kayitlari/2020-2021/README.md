@@ -1,6 +1,6 @@
 # Doğal Dil İşlemeye Kavramsal Bir Bakış Ders Kayıtları & Çalışma Özetleri
 
-> **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+> **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
 
 ### 📋 Genel Bilgiler
 * **Ders:** Doğal Dil İşlemeye Kavramsal Bir Bakış (BLM5105)
@@ -59,7 +59,7 @@ Aşağıdaki tabloda her bir dersin konusu ile kısa ve genişletilmiş notları
     - Örneğin "pragmatik" kelimesinin Türkçesi "edim"dir ama bu karşılık pek anlam ifade etmiyor.
   - Dil modelleri çok önemli.
     - Dil modeli olmadan bilgisayarda dille ilgili hiçbir çalışma yapılamaz. Derin öğrenmeden önce kural tabanlı ve istatistiksel yöntemlerde de dil modelleri temeldi.
-* **Detaylı Açıklamalar:** İsterseniz bu kayıtları NotebookLM gibi bir araca atıp daha istifadeli hale getirebilirsiniz.
+* **Detaylı Açıklamalar:** İsterseniz bu kayıtları Gemini Notebook gibi bir araca atıp daha istifadeli hale getirebilirsiniz.
 
 ### 🔹 Ders 3: Dilbiliminin Esasları, Biçim Bilim ve Chomsky Hiyerarşisi
 * **Genel Konular:**
@@ -100,7 +100,7 @@ Aşağıdaki tabloda her bir dersin konusu ile kısa ve genişletilmiş notları
   - `*` ve `+` operatörleri bir döngü sayacı gibi düşünülebilir: `*` sıfırdan n'ye, `+` birden n'ye kadar sayar.
   - Biçimbilimsel analiz bir kelimenin bütün olası çözümlerini verir ama cümledeki doğru çözümü söylemez.
     - Anlamsal bilgi çıkarılacaksa doğru çözüm gerekir.
-* **Detaylı Açıklamalar:** İsterseniz bu kayıtları NotebookLM gibi bir araca atıp daha istifadeli hale getirebilirsiniz.
+* **Detaylı Açıklamalar:** İsterseniz bu kayıtları Gemini Notebook gibi bir araca atıp daha istifadeli hale getirebilirsiniz.
 
 ### 🔹 Ders 5: Sentaktik Analiz, Ağaç Derlemleri ve Dil Modellerine Giriş
 * **Genel Konular:**
@@ -177,7 +177,7 @@ Aşağıdaki tabloda her bir dersin konusu ile kısa ve genişletilmiş notları
     - Yıl içinin %60'ı, yıl sonunun %40'ı alınacak.
   - Hocanın beklentisi: derste görülen her şeyi ezberlemek değil, ihtiyaç anında "böyle bir yöntem görmüştük" diyebilmek.
   - Doktora öğrencilerine not: yeterlilik sınavında hoca derste vurguladığı konulardan soru sorar.
-* **Detaylı Açıklamalar:** İsterseniz bu kayıtları NotebookLM gibi bir araca atıp daha istifadeli hale getirebilirsiniz.
+* **Detaylı Açıklamalar:** İsterseniz bu kayıtları Gemini Notebook gibi bir araca atıp daha istifadeli hale getirebilirsiniz.
 
 ### 🔹 Ders 9: Gizli Anlamsal İndeksleme, Performans Ölçütleri ve Bilgi Çıkarımı
 * **Genel Konular:**
@@ -199,7 +199,7 @@ Aşağıdaki tabloda her bir dersin konusu ile kısa ve genişletilmiş notları
   - Hocanın sınav beklentisi: not değil, öğrencinin "ihtiyacım olduğunda bunu görmüştüm" diyebilmesi. "Herkes kendisinden sorumludur."
   - LSI, terimlerin yalnızca geçip geçmediğine değil anlamsal ilişkilerine de bakar.
     - Ortak kelime olmasa bile benzer belgeleri bulabilir.
-* **Detaylı Açıklamalar:** İsterseniz bu kayıtları NotebookLM gibi bir araca atıp daha istifadeli hale getirebilirsiniz.
+* **Detaylı Açıklamalar:** İsterseniz bu kayıtları Gemini Notebook gibi bir araca atıp daha istifadeli hale getirebilirsiniz.
 
 ### 🔹 Ders 10: Vize Başlangıcı
 * **Genel Konular:**
@@ -208,7 +208,7 @@ Aşağıdaki tabloda her bir dersin konusu ile kısa ve genişletilmiş notları
 * **Hocanın Vurgusu:**
   - Hoca soruları hafta içinde hazırlayıp sisteme koyduğunu ve öğrencilere e-posta attığını söylüyor.
   - Sınavı görenler hemen sınava girmeli.
-* **Detaylı Açıklamalar:** İsterseniz bu kayıtları NotebookLM gibi bir araca atıp daha istifadeli hale getirebilirsiniz.
+* **Detaylı Açıklamalar:** İsterseniz bu kayıtları Gemini Notebook gibi bir araca atıp daha istifadeli hale getirebilirsiniz.
 
 ### 🔹 Ders 11: Seminer Sunumları: Metin Benzerliği, Metin Kümeleme, Twitter Görüş Analizi, Alaycılık Tespiti ve Soyutlayıcı Özetleme
 * **Genel Konular:**
@@ -267,4 +267,4 @@ Aşağıdaki tabloda her bir dersin konusu ile kısa ve genişletilmiş notları
   - **Veri seti oluşturmak atıf getirir:** Etiketli veri seti eksikliği öne çıkan bir sorundur.
     - İyi bir veri seti oluşturan çok atıf alabilir.
 
-**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

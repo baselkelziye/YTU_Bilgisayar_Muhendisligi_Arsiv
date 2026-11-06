@@ -30,4 +30,4 @@ Ders kayıtları 6 Ekim 2020 Salı günü başlamıştır. Dosya adlarındaki `d
 - 8. hafta (24 Kasım 2020) kayıt bulunmamaktadır.
 - 13. hafta (29 Aralık 2020) kayıt bulunmamaktadır.
 
-**Not:** İsterseniz bu kayıtları NotebookLM gibi bir araca atıp daha istifadeli hale getirebilirsiniz.
+**Not:** İsterseniz bu kayıtları Gemini Notebook gibi bir araca atıp daha istifadeli hale getirebilirsiniz.

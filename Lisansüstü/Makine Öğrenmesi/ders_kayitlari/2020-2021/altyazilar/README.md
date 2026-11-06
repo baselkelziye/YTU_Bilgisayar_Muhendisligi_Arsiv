@@ -26,4 +26,4 @@ Dersler 6 Ekim 2020 Salı günü başlamıştır. Ders haftada bir gün (Salı, 
 - 9 numaralı kayıt (1 Aralık 2020) arşivde yoktur; o gün vize yapılmıştır.
 - 11 numaralı kayıt (15 Aralık 2020) arşivde yoktur; hoca ders 12'de bir önceki hafta toplantı nedeniyle ders yapılamadığını söylemektedir.
 
-**Not:** İsterseniz bu kayıtları NotebookLM gibi bir araca atıp daha istifadeli hale getirebilirsiniz.
+**Not:** İsterseniz bu kayıtları Gemini Notebook gibi bir araca atıp daha istifadeli hale getirebilirsiniz.

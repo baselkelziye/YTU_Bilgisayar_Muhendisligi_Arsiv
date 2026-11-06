@@ -39,4 +39,4 @@ Dersler 9 Ekim 2020 Cuma günü başlamıştır. Dosya adlarındaki `ders_x.srt`
 
 `altyazilar/` diziniyle aynı seviyede bulunan `altyazi_ozetleri/` klasöründe her ders kaydına ait çalışma özeti dosyaları bulunmaktadır.
 
-**Not:** İsterseniz bu kayıtları NotebookLM gibi bir araca atıp daha istifadeli hale getirebilirsiniz.
+**Not:** İsterseniz bu kayıtları Gemini Notebook gibi bir araca atıp daha istifadeli hale getirebilirsiniz.

@@ -16,4 +16,4 @@ Dersler bu dönemde yüz yüze yapılmıştır. Kayıt arşivinde bayram öncesi
 
 - Diğer dersler yüz yüze yapıldığından kaydı bulunmamaktadır.
 
-**Not:** İsterseniz bu kayıtları NotebookLM gibi bir araca atıp daha istifadeli hale getirebilirsiniz.
+**Not:** İsterseniz bu kayıtları Gemini Notebook gibi bir araca atıp daha istifadeli hale getirebilirsiniz.

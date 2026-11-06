@@ -25,4 +25,4 @@ Ders kayıtları 6 Mart 2023 Pazartesi günü başlamaktadır. Ders haftada bir 
 - Arşivdeki ara numaralar (1, 2, 4, 6, 8, 10, 12, 14, 16-18 ve 21) bu şubenin kayıt arşivinde bulunmamaktadır.
 - 24 Nisan 2023 haftası vize haftasıdır; 1 Mayıs 2023 resmî tatildir.
 
-**Not:** İsterseniz bu kayıtları NotebookLM gibi bir araca atıp daha istifadeli hale getirebilirsiniz.
+**Not:** İsterseniz bu kayıtları Gemini Notebook gibi bir araca atıp daha istifadeli hale getirebilirsiniz.

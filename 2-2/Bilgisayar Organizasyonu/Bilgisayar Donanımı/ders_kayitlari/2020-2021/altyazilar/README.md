@@ -26,4 +26,4 @@ Dersler 12 Mart 2021 Cuma günü başlamıştır. Ders haftada bir kez (Cuma) ya
 - 30 Nisan 2021 haftasına ait kayıt bulunmamaktadır. Bu hafta vize haftasına denk gelmektedir.
 - 14 Mayıs 2021 haftasına ait kayıt bulunmamaktadır. Bu tarih Ramazan Bayramı'na denk gelmektedir.
 
-**Not:** İsterseniz bu kayıtları NotebookLM gibi bir araca atıp daha istifadeli hale getirebilirsiniz.
+**Not:** İsterseniz bu kayıtları Gemini Notebook gibi bir araca atıp daha istifadeli hale getirebilirsiniz.

@@ -26,4 +26,4 @@ Dersler 8 Ekim 2020 Perşembe günü başlamıştır. Ders haftada bir gün (Per
 - 2 numaralı kayıt (15 Ekim 2020) bu şubenin kayıt arşivinde bulunmamaktadır. Hoca 1. derste o hafta ASYU sempozyumu ve BAP toplantısı nedeniyle ders yapılmayacağını duyurmuştur.
 - 29 Ekim 2020 Perşembe resmî tatil (Cumhuriyet Bayramı) olduğu için o hafta ders yapılmamıştır.
 
-**Not:** İsterseniz bu kayıtları NotebookLM gibi bir araca atıp daha istifadeli hale getirebilirsiniz.
+**Not:** İsterseniz bu kayıtları Gemini Notebook gibi bir araca atıp daha istifadeli hale getirebilirsiniz.

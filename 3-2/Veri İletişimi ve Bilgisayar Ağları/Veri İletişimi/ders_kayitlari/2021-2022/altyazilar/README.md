@@ -26,4 +26,4 @@ Dersler 11 Ekim 2021 Pazartesi günü başlamıştır. Ders haftada bir gün (Pa
 - 2, 3, 5, 6, 8, 9 ve 13 numaralı ders kayıtları bu şubenin kayıt arşivinde bulunmamaktadır.
 - 22 Kasım 2021 haftası vize haftasına denk gelmektedir.
 
-**Not:** İsterseniz bu kayıtları NotebookLM gibi bir araca atıp daha istifadeli hale getirebilirsiniz.
+**Not:** İsterseniz bu kayıtları Gemini Notebook gibi bir araca atıp daha istifadeli hale getirebilirsiniz.

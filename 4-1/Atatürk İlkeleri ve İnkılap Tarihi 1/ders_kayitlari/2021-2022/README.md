@@ -1,6 +1,6 @@
 # Atatürk İlkeleri ve İnkılap Tarihi I Ders Kayıtları & Çalışma Özetleri
 
-> **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+> **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
 
 ### 📋 Genel Bilgiler
 * **Ders:** Atatürk İlkeleri ve İnkılap Tarihi I (ATA1031)
@@ -335,4 +335,4 @@ Aşağıdaki tabloda her bir dersin konusu ile kısa ve genişletilmiş notları
     - İyi bir yurttaş ve geniş kültürlü bir aydın yetiştirmeyi de amaçlar.
   - Atatürk'le ilgili okumaya başlamak isteyenlere ilk öneri: **Süleyman Bulut, *Büyük Atatürk'ten Küçük Öyküler*.**
 
-**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

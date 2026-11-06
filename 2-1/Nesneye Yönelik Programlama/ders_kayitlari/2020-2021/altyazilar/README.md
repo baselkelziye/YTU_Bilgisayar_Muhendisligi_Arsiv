@@ -34,4 +34,4 @@ Dersler 10 Mart 2021 Çarşamba günü başlamıştır. Ders haftada bir gün (�
 - 12, 14, 15 ve 21 numaralı ders kayıtları bu şubenin kayıt arşivinde bulunmamaktadır. 28 Nisan 2021 haftası vize haftasına denk gelmektedir.
 - 12 Mayıs ve 19 Mayıs 2021 haftalarına ait kayıt bulunmamaktadır. Hocanın duyurusuna göre bu iki hafta idari izin ve 19 Mayıs tatili nedeniyle ders yapılmamıştır.
 
-**Not:** İsterseniz bu kayıtları NotebookLM gibi bir araca atıp daha istifadeli hale getirebilirsiniz.
+**Not:** İsterseniz bu kayıtları Gemini Notebook gibi bir araca atıp daha istifadeli hale getirebilirsiniz.

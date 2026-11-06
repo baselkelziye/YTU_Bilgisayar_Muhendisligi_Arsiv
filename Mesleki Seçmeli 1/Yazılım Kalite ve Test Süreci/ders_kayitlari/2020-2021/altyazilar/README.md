@@ -26,4 +26,4 @@ Dersler 6 Ekim 2020 Salı günü başlamıştır. Ders haftada bir gün (Salı) 
 
 - 8. hafta (24 Kasım 2020, vize haftası) kayıt bulunmamaktadır.
 
-**Not:** İsterseniz bu kayıtları NotebookLM gibi bir araca atıp daha istifadeli hale getirebilirsiniz.
+**Not:** İsterseniz bu kayıtları Gemini Notebook gibi bir araca atıp daha istifadeli hale getirebilirsiniz.

@@ -33,4 +33,4 @@ Dersler 7 Ekim 2020 Çarşamba günü başlamıştır. Ders haftada bir gün (Ç
 - 2, 7, 8, 12, 15, 16, 24 ve 26 numaralı ders kayıtları bu şubenin kayıt arşivinde bulunmamaktadır.
 - 25 Kasım 2020 haftası vize haftasına denk gelmektedir.
 
-**Not:** İsterseniz bu kayıtları NotebookLM gibi bir araca atıp daha istifadeli hale getirebilirsiniz.
+**Not:** İsterseniz bu kayıtları Gemini Notebook gibi bir araca atıp daha istifadeli hale getirebilirsiniz.

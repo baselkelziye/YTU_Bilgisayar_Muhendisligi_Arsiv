@@ -20,4 +20,4 @@ Dersler 7 Ekim 2024 Pazartesi günü başlamıştır. Ders haftada bir gün (Paz
 - Dönemin 1. haftasındaki giriş dersi sınıfta yapıldığı için kaydı bulunmamaktadır.
 - Vize sonrasındaki 9-15. haftalarda öğrenci seminer sunumları sınıfta yapılmıştır; bu sunumların kaydı yoktur.
 
-**Not:** İsterseniz bu kayıtları NotebookLM gibi bir araca atıp daha istifadeli hale getirebilirsiniz.
+**Not:** İsterseniz bu kayıtları Gemini Notebook gibi bir araca atıp daha istifadeli hale getirebilirsiniz.

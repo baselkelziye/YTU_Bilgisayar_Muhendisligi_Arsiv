@@ -1,6 +1,6 @@
 # Doğal Dil İşlemeye Kavramsal Bir Bakış Ders Kayıtları & Çalışma Özetleri
 
-> **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+> **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
 
 ### 📋 Genel Bilgiler
 * **Ders:** Doğal Dil İşlemeye Kavramsal Bir Bakış (BLM5105)
@@ -65,7 +65,7 @@ Aşağıdaki tabloda her bir dersin konusu ile kısa ve genişletilmiş notları
   - Denetimsiz yöntem olarak en azından K-Means'i bilin.
   - PCA (Principal Component Analysis) sınıf etiketini kullanmaz.
     - Ama bir kümeleme modeli değil, öznitelik çıkarma (feature extraction) yöntemidir. Kümeleme örnekleri K-Means ve X-Means'tir.
-* **Detaylı Açıklamalar:** İsterseniz bu özeti NotebookLM gibi bir araca atıp daha istifadeli hale getirebilirsiniz.
+* **Detaylı Açıklamalar:** İsterseniz bu özeti Gemini Notebook gibi bir araca atıp daha istifadeli hale getirebilirsiniz.
 
 ### 🔹 Ders 6: 5G Konu Analizi, Haber Duygu Analizi, Özgeçmişte NER ve Türkçe BERT Soru Cevaplama Sunumları
 * **Genel Konular:**
@@ -83,6 +83,6 @@ Aşağıdaki tabloda her bir dersin konusu ile kısa ve genişletilmiş notları
   - Proje konusu dar zamanda seçiliyorsa iddialı alt görevlere girmeyin.
     - NER projesinde klasik varlık türleriyle başlayın: kişi (person), yer (location), kurum (organization).
   - Hoca sunumların zamanında ve anlaşılır biçimde yapılmasını, sunum sırasında nefes alınmasını ister.
-* **Detaylı Açıklamalar:** İsterseniz bu özeti NotebookLM gibi bir araca atıp daha istifadeli hale getirebilirsiniz.
+* **Detaylı Açıklamalar:** İsterseniz bu özeti Gemini Notebook gibi bir araca atıp daha istifadeli hale getirebilirsiniz.
 
-**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+**Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

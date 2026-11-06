@@ -26,4 +26,4 @@ Dersler 12 Mart 2021 Cuma günü başlamıştır. Dosya adlarındaki `ders_x.srt
 - 8. hafta (30 Nisan 2021) kayıt bulunmamaktadır.
 - 10. hafta (14 Mayıs 2021, Ramazan Bayramı) kayıt bulunmamaktadır.
 
-**Not:** İsterseniz bu kayıtları NotebookLM gibi bir araca atıp daha istifadeli hale getirebilirsiniz.
+**Not:** İsterseniz bu kayıtları Gemini Notebook gibi bir araca atıp daha istifadeli hale getirebilirsiniz.

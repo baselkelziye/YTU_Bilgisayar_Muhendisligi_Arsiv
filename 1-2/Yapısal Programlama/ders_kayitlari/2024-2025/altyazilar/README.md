@@ -23,4 +23,4 @@ Ders haftada iki kez (Pazartesi ve Çarşamba) yapılmıştır. Dosya adlarında
 
 - 1, 5, 8, 10, 12, 14, 15 ve 16 numaralı ders kayıtları bu şubenin kayıt arşivinde bulunmamaktadır.
 
-**Not:** İsterseniz bu kayıtları NotebookLM gibi bir araca atıp daha istifadeli hale getirebilirsiniz.
+**Not:** İsterseniz bu kayıtları Gemini Notebook gibi bir araca atıp daha istifadeli hale getirebilirsiniz.
