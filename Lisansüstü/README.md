@@ -170,6 +170,7 @@
 
 #### 👨‍🏫 👩‍🏫 Dersi Yürüten Akademisyenler:
 - AÖ
+- ZCT
 
 ### 📘 Bilgisayar Güvenliği ve Kriptografi
 
