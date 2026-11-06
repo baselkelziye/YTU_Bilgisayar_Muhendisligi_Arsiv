@@ -9,29 +9,33 @@
 * **Akademik Yıl:** 2021-2022
 * **Şube:** ATA1031 - 3
 
-Bu dizin, ilgili ders kayıtlarının altyazı özetlerini, çalışma notlarını ve PDF kaynaklarını içermektedir.
+Bu dizin, ilgili ders kayıtlarının altyazılarını, kısa notlarını ve genişletilmiş notlarını içermektedir.
+
+* **Kısa not:** Tekrar için. Dersin konuları, hocanın vurguları ve kısa tekrar maddeleri.
+* **Genişletilmiş not:** Dersi izlemeden öğrenmek için. Dersin anlatım akışını baştan sona, örnekleri ve soru-cevaplarıyla anlatır.
+* `altyazilar/`: ders kayıtlarının altyazıları (.srt). Notların PDF'leri `kisa_notlar/` ve `genisletilmis_notlar/` klasörlerinde, markdown kaynakları bu klasörlerin içindeki `markdown/` klasöründedir.
 
 ## 📚 Ders Müfredatı ve Belge Dizini
 
-Aşağıdaki tabloda her bir dersin konusu, kaynak markdown dosyası ve doğrudan indirilebilir PDF formatındaki derlenmiş halleri listelenmiştir. Ders numaraları, kayıt arşivindeki ders kaydı sıra numaralarıdır (hafta numarası değildir).
+Aşağıdaki tabloda her bir dersin konusu ile kısa ve genişletilmiş notlarının markdown ve PDF halleri listelenmiştir. Ders numaraları, kayıt arşivindeki ders kaydı sıra numaralarıdır (hafta numarası değildir).
 
-| Ders No | Ders İçeriği / Konu Başlıkları | Kaynak Notlar (Markdown) | Çalışma Dosyası (PDF) |
+| Ders No | Ders İçeriği / Konu Başlıkları | Kısa Not | Genişletilmiş Not |
 | :---: | :--- | :---: | :---: |
-| **Ders 1** | Dersin Tanıtımı, Amacı ve Tarihe Eleştirel Bakış | [Özet](altyazi_ozetleri/ders_1_ozet.md) | [PDF (İndir)](ders_1_ozet.pdf) |
-| **Ders 2** | Devlet Kavramı ve Devlet Yönetim Biçimleri | [Özet](altyazi_ozetleri/ders_2_ozet.md) | [PDF (İndir)](ders_2_ozet.pdf) |
-| **Ders 3** | Klasik Çağda Osmanlı'nın İdari ve Siyasi Yapısı | [Özet](altyazi_ozetleri/ders_3_ozet.md) | [PDF (İndir)](ders_3_ozet.pdf) |
-| **Ders 4** | Osmanlı'da Millet Sistemi ve Millet Meselesi | [Özet](altyazi_ozetleri/ders_4_ozet.md) | [PDF (İndir)](ders_4_ozet.pdf) |
-| **Ders 5** | Doğu Sorunu ve Rusya'nın Jeopolitiği | [Özet](altyazi_ozetleri/ders_5_ozet.md) | [PDF (İndir)](ders_5_ozet.pdf) |
-| **Ders 6** | Küçük Kaynarca'dan Lozan'a Doğu Sorunu ve Büyük Güçler | [Özet](altyazi_ozetleri/ders_6_ozet.md) | [PDF (İndir)](ders_6_ozet.pdf) |
-| **Ders 7** | Islahat Hareketleri, III. Selim ve II. Mahmud Dönemi Yenilikleri | [Özet](altyazi_ozetleri/ders_7_ozet.md) | [PDF (İndir)](ders_7_ozet.pdf) |
-| **Ders 8** | Tanzimat Dönemi ve Hukuk Devleti Kavramı | [Özet](altyazi_ozetleri/ders_8_ozet.md) | [PDF (İndir)](ders_8_ozet.pdf) |
-| **Ders 9** | II. Abdülhamid Dönemi, 93 Harbi ve Panislamizm | [Özet](altyazi_ozetleri/ders_9_ozet.md) | [PDF (İndir)](ders_9_ozet.pdf) |
-| **Ders 11** | II. Meşrutiyet Devrimi ve Jön Türkler | [Özet](altyazi_ozetleri/ders_11_ozet.md) | [PDF (İndir)](ders_11_ozet.pdf) |
-| **Ders 12** | 31 Mart Karşı Devrimi, 1909 Anayasa Değişiklikleri ve Balkan Savaşları | [Özet](altyazi_ozetleri/ders_12_ozet.md) | [PDF (İndir)](ders_12_ozet.pdf) |
-| **Ders 13** | Birinci Dünya Savaşı'nın Nedenleri ve Osmanlı Cepheleri | [Özet](altyazi_ozetleri/ders_13_ozet.md) | [PDF (İndir)](ders_13_ozet.pdf) |
-| **Ders 14** | Mondros Mütarekesi ve Milli Mücadele'nin Başlangıcı | [Özet](altyazi_ozetleri/ders_14_ozet.md) | [PDF (İndir)](ders_14_ozet.pdf) |
-| **Ders 15** | Sevr Antlaşması, Kurtuluş Savaşı'nın Uluslararası Boyutu ve Unutulan Kahramanlar | [Özet](altyazi_ozetleri/ders_15_ozet.md) | [PDF (İndir)](ders_15_ozet.pdf) |
-| **Ders 16** | Dönem Sonu Duyuruları ve Kitap, Belgesel, Müzik ve Film Öneri Listesi | [Özet](altyazi_ozetleri/ders_16_ozet.md) | [PDF (İndir)](ders_16_ozet.pdf) |
+| **Ders 1** | Dersin Tanıtımı, Amacı ve Tarihe Eleştirel Bakış | [Markdown](kisa_notlar/markdown/ders_1_ozet.md) · [PDF](kisa_notlar/ders_1_ozet.pdf) | [Markdown](genisletilmis_notlar/markdown/ders_1_genisletilmis.md) · [PDF](genisletilmis_notlar/ders_1_genisletilmis.pdf) |
+| **Ders 2** | Devlet Kavramı ve Devlet Yönetim Biçimleri | [Markdown](kisa_notlar/markdown/ders_2_ozet.md) · [PDF](kisa_notlar/ders_2_ozet.pdf) | [Markdown](genisletilmis_notlar/markdown/ders_2_genisletilmis.md) · [PDF](genisletilmis_notlar/ders_2_genisletilmis.pdf) |
+| **Ders 3** | Klasik Çağda Osmanlı'nın İdari ve Siyasi Yapısı | [Markdown](kisa_notlar/markdown/ders_3_ozet.md) · [PDF](kisa_notlar/ders_3_ozet.pdf) | [Markdown](genisletilmis_notlar/markdown/ders_3_genisletilmis.md) · [PDF](genisletilmis_notlar/ders_3_genisletilmis.pdf) |
+| **Ders 4** | Osmanlı'da Millet Sistemi ve Millet Meselesi | [Markdown](kisa_notlar/markdown/ders_4_ozet.md) · [PDF](kisa_notlar/ders_4_ozet.pdf) | [Markdown](genisletilmis_notlar/markdown/ders_4_genisletilmis.md) · [PDF](genisletilmis_notlar/ders_4_genisletilmis.pdf) |
+| **Ders 5** | Doğu Sorunu ve Rusya'nın Jeopolitiği | [Markdown](kisa_notlar/markdown/ders_5_ozet.md) · [PDF](kisa_notlar/ders_5_ozet.pdf) | [Markdown](genisletilmis_notlar/markdown/ders_5_genisletilmis.md) · [PDF](genisletilmis_notlar/ders_5_genisletilmis.pdf) |
+| **Ders 6** | Küçük Kaynarca'dan Lozan'a Doğu Sorunu ve Büyük Güçler | [Markdown](kisa_notlar/markdown/ders_6_ozet.md) · [PDF](kisa_notlar/ders_6_ozet.pdf) | [Markdown](genisletilmis_notlar/markdown/ders_6_genisletilmis.md) · [PDF](genisletilmis_notlar/ders_6_genisletilmis.pdf) |
+| **Ders 7** | Islahat Hareketleri, III. Selim ve II. Mahmud Dönemi Yenilikleri | [Markdown](kisa_notlar/markdown/ders_7_ozet.md) · [PDF](kisa_notlar/ders_7_ozet.pdf) | [Markdown](genisletilmis_notlar/markdown/ders_7_genisletilmis.md) · [PDF](genisletilmis_notlar/ders_7_genisletilmis.pdf) |
+| **Ders 8** | Tanzimat Dönemi ve Hukuk Devleti Kavramı | [Markdown](kisa_notlar/markdown/ders_8_ozet.md) · [PDF](kisa_notlar/ders_8_ozet.pdf) | [Markdown](genisletilmis_notlar/markdown/ders_8_genisletilmis.md) · [PDF](genisletilmis_notlar/ders_8_genisletilmis.pdf) |
+| **Ders 9** | II. Abdülhamid Dönemi, 93 Harbi ve Panislamizm | [Markdown](kisa_notlar/markdown/ders_9_ozet.md) · [PDF](kisa_notlar/ders_9_ozet.pdf) | [Markdown](genisletilmis_notlar/markdown/ders_9_genisletilmis.md) · [PDF](genisletilmis_notlar/ders_9_genisletilmis.pdf) |
+| **Ders 11** | II. Meşrutiyet Devrimi ve Jön Türkler | [Markdown](kisa_notlar/markdown/ders_11_ozet.md) · [PDF](kisa_notlar/ders_11_ozet.pdf) | [Markdown](genisletilmis_notlar/markdown/ders_11_genisletilmis.md) · [PDF](genisletilmis_notlar/ders_11_genisletilmis.pdf) |
+| **Ders 12** | 31 Mart Karşı Devrimi, 1909 Anayasa Değişiklikleri ve Balkan Savaşları | [Markdown](kisa_notlar/markdown/ders_12_ozet.md) · [PDF](kisa_notlar/ders_12_ozet.pdf) | [Markdown](genisletilmis_notlar/markdown/ders_12_genisletilmis.md) · [PDF](genisletilmis_notlar/ders_12_genisletilmis.pdf) |
+| **Ders 13** | Birinci Dünya Savaşı'nın Nedenleri ve Osmanlı Cepheleri | [Markdown](kisa_notlar/markdown/ders_13_ozet.md) · [PDF](kisa_notlar/ders_13_ozet.pdf) | [Markdown](genisletilmis_notlar/markdown/ders_13_genisletilmis.md) · [PDF](genisletilmis_notlar/ders_13_genisletilmis.pdf) |
+| **Ders 14** | Mondros Mütarekesi ve Milli Mücadele'nin Başlangıcı | [Markdown](kisa_notlar/markdown/ders_14_ozet.md) · [PDF](kisa_notlar/ders_14_ozet.pdf) | [Markdown](genisletilmis_notlar/markdown/ders_14_genisletilmis.md) · [PDF](genisletilmis_notlar/ders_14_genisletilmis.pdf) |
+| **Ders 15** | Sevr Antlaşması, Kurtuluş Savaşı'nın Uluslararası Boyutu ve Unutulan Kahramanlar | [Markdown](kisa_notlar/markdown/ders_15_ozet.md) · [PDF](kisa_notlar/ders_15_ozet.pdf) | [Markdown](genisletilmis_notlar/markdown/ders_15_genisletilmis.md) · [PDF](genisletilmis_notlar/ders_15_genisletilmis.pdf) |
+| **Ders 16** | Dönem Sonu Duyuruları ve Kitap, Belgesel, Müzik ve Film Öneri Listesi | [Markdown](kisa_notlar/markdown/ders_16_ozet.md) · [PDF](kisa_notlar/ders_16_ozet.pdf) | [Markdown](genisletilmis_notlar/markdown/ders_16_genisletilmis.md) · [PDF](genisletilmis_notlar/ders_16_genisletilmis.pdf) |
 
 > [!NOTE]
 > 10 numaralı kayıt (22 Kasım 2021, vize haftası) arşivde yoktur.
@@ -67,7 +71,7 @@ Aşağıdaki tabloda her bir dersin konusu, kaynak markdown dosyası ve doğruda
   - Tarihin en büyük öznesi devlettir.
     - Bu yüzden devlet kavramını ve yönetim biçimlerini bilmeden tarih olaylarını anlamak mümkün değildir.
   - Devletler insanlık tarihi kadar eski değildir.
-    - Yaklaşık 400 bin yıllık insanlık tarihinin yalnız son 10-15 bin yılında devlet vardır.
+    - Hocaya göre yaklaşık 400 bin yıllık insanlık tarihinin yalnız son 10-15 bin yılında devlet vardır.
   - Devlet tipleri arasındaki temel fark, meşruiyetin üretilme biçimidir (meşruiyet kaynağı).
   - **Meşruiyet ile meşrutiyet farklıdır.** Aradaki "t" harfine dikkat edilmeli.
     - Meşruiyet: rıza, onay.
@@ -133,7 +137,7 @@ Aşağıdaki tabloda her bir dersin konusu, kaynak markdown dosyası ve doğruda
 
 ### 🔹 Ders 6: Küçük Kaynarca'dan Lozan'a Doğu Sorunu ve Büyük Güçler
 * **Genel Konular:**
-  - Doğu Sorunu'nun başlangıcı: Küçük Kaynarca Antlaşması (1774).
+  - Doğu Sorunu'nun başlangıcı: Küçük Kaynarca Antlaşması (büyük olasılıkla 1774).
   - Fransa'nın Osmanlı politikası: Habsburg ve Rusya'ya karşı denge.
   - İngiltere'nin politika değişimi: Süveyş ve Doğu Akdeniz yüzünden Osmanlı'nın toprak bütünlüğünü savunması.
   - Almanya'nın yükselişi ve ittifakların değişmesi: İngiltere ile Fransa'nın Rusya'ya yaklaşması.
@@ -148,7 +152,7 @@ Aşağıdaki tabloda her bir dersin konusu, kaynak markdown dosyası ve doğruda
   - **Palmerston'ın sözü:** "İngiltere'nin daimi dostları ya da düşmanları yoktur.
     - Daimi olan yalnız İngiltere'nin çıkarlarıdır." Devletler duygusal değil, çıkarlarına göre davranır.
   - **Kırım Savaşı'nın nedeni:** İngiltere ve Fransa, Rusya'ya karşı Osmanlı'nın statükosunu korumak istedi.
-* **Detaylı Açıklamalar:** Osmanlı bu savaşa Fransa'nın itmesiyle girdi. Fransa, Polonya'nın parçalanmasına karşı Osmanlı'ya vaatlerde bulundu. Savaş başladıktan sonra Osmanlı yalnız kaldı. Fransa da tek başına Rusya ile anlaştı. Hoca savaşı "4 yıllık" diye anıyor; savaş 1768-1774 arasında yaklaşık 6 yıl sürdü.
+* **Detaylı Açıklamalar:** Osmanlı bu savaşa Fransa'nın itmesiyle girdi. Fransa, Polonya'nın parçalanmasına karşı Osmanlı'ya vaatlerde bulundu. Savaş başladıktan sonra Osmanlı yalnız kaldı. Fransa da tek başına Rusya ile anlaştı. Hoca savaşı "4 yıllık" diye anıyor; savaş büyük olasılıkla 1768-1774 arasında yaklaşık 6 yıl sürdü.
 
 ### 🔹 Ders 7: Islahat Hareketleri, III. Selim ve II. Mahmud Dönemi Yenilikleri
 * **Genel Konular:**
@@ -298,7 +302,7 @@ Aşağıdaki tabloda her bir dersin konusu, kaynak markdown dosyası ve doğruda
 ### 🔹 Ders 15: Sevr Antlaşması, Kurtuluş Savaşı'nın Uluslararası Boyutu ve Unutulan Kahramanlar
 * **Genel Konular:**
   - Dönemin son haftasına dair duyurular: gelecek hafta son ders, öneri listesi sunulacak.
-  - Sevr Antlaşması (10 Ağustos 1920): toprak, mali ve askeri hükümleri. Antlaşma hayata geçseydi Türkiye'nin durumu.
+  - Sevr Antlaşması (büyük olasılıkla 10 Ağustos 1920): toprak, mali ve askeri hükümleri. Antlaşma hayata geçseydi Türkiye'nin durumu.
   - Sevr'in "tuzaklı" maddeleri: İstanbul (36. madde), İzmir ve referandum, Boğazlar Komisyonu.
   - Kapitülasyonların ekonomik ve hukuki anlamı. Lozan'da neden kırmızı çizgi oldukları.
   - Kurtuluş Savaşı'nın uluslararası boyutu: İtilaf devletleri arasındaki çatlaklar (İtalya, Fransa, İngiltere-Yunanistan).
