@@ -3363,6 +3363,8 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
   - 🏷️ **Ders Tipi:** Lisansüstü
   - ⭐ **Yıldız Sayıları:**
       - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+  - 👨‍🏫 👩‍🏫 **Dersi Yürüten Akademisyenler:**
+    - [OK](#-prof-dr-oya-kalıpsız)
   - 📂 [Ders Klasörü](./Lisans%C3%BCst%C3%BC/Yazilim%20Proje%20Y%C3%B6netimi)
 
 
@@ -3836,6 +3838,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
   - 📖 [Yönetim Bilgi Sistemleri](#-yönetim-bilgi-sistemleri)
   - 📖 [Yazılım Mühendisliği](#-yazılım-mühendisliği)
   - 📖 [Yazılım Kalitesi ve Test Teknikleri](#-yazılım-kalitesi-ve-test-teknikleri)
+  - 📖 [Yazilim Proje Yönetimi](#-yazilim-proje-yönetimi)
 - ⭐ **Yıldız Sayıları:**
   - 🎭 Dersi Zevkli Anlatır Mı:	★★★☆☆☆☆☆☆☆
   - 🛣️ Dersi Kolay Geçer Miyim:	★★★★★★★☆☆☆

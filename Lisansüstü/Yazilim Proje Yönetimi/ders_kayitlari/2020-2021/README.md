@@ -9,27 +9,31 @@
 * **Akademik Yıl:** 2020-2021
 * **Şube:** BLM5119 - 1
 
-Bu dizin, ilgili ders kayıtlarının altyazı özetlerini, çalışma notlarını ve PDF kaynaklarını içermektedir.
+Bu dizin, ilgili ders kayıtlarının altyazılarını, kısa notlarını ve genişletilmiş notlarını içermektedir.
+
+* **Kısa not:** Tekrar için. Dersin konuları, hocanın vurguları ve kısa tekrar maddeleri.
+* **Genişletilmiş not:** Dersi izlemeden öğrenmek için. Dersin anlatım akışını baştan sona, örnekleri ve soru-cevaplarıyla anlatır.
+* `altyazilar/`: ders kayıtlarının altyazıları (.srt). Notların PDF'leri `kisa_notlar/` ve `genisletilmis_notlar/` klasörlerinde, markdown kaynakları bu klasörlerin içindeki `markdown/` klasöründedir.
 
 ## 📚 Ders Müfredatı ve Belge Dizini
 
-Aşağıdaki tabloda her bir dersin konusu, kaynak markdown dosyası ve doğrudan indirilebilir PDF formatındaki derlenmiş halleri listelenmiştir. Ders numaraları, kayıt arşivindeki ders kaydı sıra numaralarıdır (hafta numarası değildir).
+Aşağıdaki tabloda her bir dersin konusu ile kısa ve genişletilmiş notlarının markdown ve PDF halleri listelenmiştir. Ders numaraları, kayıt arşivindeki ders kaydı sıra numaralarıdır (hafta numarası değildir).
 
-| Ders No | Ders İçeriği / Konu Başlıkları | Kaynak Notlar (Markdown) | Çalışma Dosyası (PDF) |
+| Ders No | Ders İçeriği / Konu Başlıkları | Kısa Not | Genişletilmiş Not |
 | :---: | :--- | :---: | :---: |
-| **Ders 1** | Derse Giriş ve Yazılım Proje Yönetiminin Bileşenleri | [Özet](altyazi_ozetleri/ders_1_ozet.md) | [PDF (İndir)](ders_1_ozet.pdf) |
-| **Ders 2** | Proje Kavramı, Proje Başarısı ve Proje Yöneticisi | [Özet](altyazi_ozetleri/ders_2_ozet.md) | [PDF (İndir)](ders_2_ozet.pdf) |
-| **Ders 3** | Yazılım Proje Planı, Alternatif Fizibilite ve Risk Kategorileri | [Özet](altyazi_ozetleri/ders_3_ozet.md) | [PDF (İndir)](ders_3_ozet.pdf) |
-| **Ders 4** | Risk Değerlendirme, Gantt Diyagramı ve Faaliyet İlişkileri | [Özet](altyazi_ozetleri/ders_4_ozet.md) | [PDF (İndir)](ders_4_ozet.pdf) |
-| **Ders 5** | Proje Planlama Araçları, Maliyet Tahmin Yöntemleri ve Yazılım Büyüklük Ölçümü | [Özet](altyazi_ozetleri/ders_5_ozet.md) | [PDF (İndir)](ders_5_ozet.pdf) |
-| **Ders 6** | Maliyet Tahmin Modelleri, Proje Ekip ve Organizasyon Yapıları | [Özet](altyazi_ozetleri/ders_6_ozet.md) | [PDF (İndir)](ders_6_ozet.pdf) |
-| **Ders 7** | Ara Sınav Öncesi Tekrar: Proje Yönetimi Yol Haritası ve Proje Planı | [Özet](altyazi_ozetleri/ders_7_ozet.md) | [PDF (İndir)](ders_7_ozet.pdf) |
-| **Ders 8** | Ara Sınav | [Özet](altyazi_ozetleri/ders_8_ozet.md) | [PDF (İndir)](ders_8_ozet.pdf) |
-| **Ders 9** | Sınav Değerlendirmesi ve Makale Sunumları | [Özet](altyazi_ozetleri/ders_9_ozet.md) | [PDF (İndir)](ders_9_ozet.pdf) |
-| **Ders 10** | Çevik Ekipler, Blok Zinciri ve Endüstri 4.0 Üzerine Makale Sunumları | [Özet](altyazi_ozetleri/ders_10_ozet.md) | [PDF (İndir)](ders_10_ozet.pdf) |
-| **Ders 11** | Risk Yönetimi, Kazanılan Değer ve Dağıtık Ekipler Üzerine Makale Sunumları | [Özet](altyazi_ozetleri/ders_11_ozet.md) | [PDF (İndir)](ders_11_ozet.pdf) |
-| **Ders 12** | İnsan Hataları ve COCOMO II Makaleleri ile İlk Uygulama Sunumları | [Özet](altyazi_ozetleri/ders_12_ozet.md) | [PDF (İndir)](ders_12_ozet.pdf) |
-| **Ders 13** | Uygulama Projesi Sunumları ve Final Duyuruları | [Özet](altyazi_ozetleri/ders_13_ozet.md) | [PDF (İndir)](ders_13_ozet.pdf) |
+| **Ders 1** | Derse Giriş ve Yazılım Proje Yönetiminin Bileşenleri | [Markdown](kisa_notlar/markdown/ders_1_ozet.md) · [PDF](kisa_notlar/ders_1_ozet.pdf) | [Markdown](genisletilmis_notlar/markdown/ders_1_genisletilmis.md) · [PDF](genisletilmis_notlar/ders_1_genisletilmis.pdf) |
+| **Ders 2** | Proje Kavramı, Proje Başarısı ve Proje Yöneticisi | [Markdown](kisa_notlar/markdown/ders_2_ozet.md) · [PDF](kisa_notlar/ders_2_ozet.pdf) | [Markdown](genisletilmis_notlar/markdown/ders_2_genisletilmis.md) · [PDF](genisletilmis_notlar/ders_2_genisletilmis.pdf) |
+| **Ders 3** | Yazılım Proje Planı, Alternatif Fizibilite ve Risk Kategorileri | [Markdown](kisa_notlar/markdown/ders_3_ozet.md) · [PDF](kisa_notlar/ders_3_ozet.pdf) | [Markdown](genisletilmis_notlar/markdown/ders_3_genisletilmis.md) · [PDF](genisletilmis_notlar/ders_3_genisletilmis.pdf) |
+| **Ders 4** | Risk Değerlendirme, Gantt Diyagramı ve Faaliyet İlişkileri | [Markdown](kisa_notlar/markdown/ders_4_ozet.md) · [PDF](kisa_notlar/ders_4_ozet.pdf) | [Markdown](genisletilmis_notlar/markdown/ders_4_genisletilmis.md) · [PDF](genisletilmis_notlar/ders_4_genisletilmis.pdf) |
+| **Ders 5** | Proje Planlama Araçları, Maliyet Tahmin Yöntemleri ve Yazılım Büyüklük Ölçümü | [Markdown](kisa_notlar/markdown/ders_5_ozet.md) · [PDF](kisa_notlar/ders_5_ozet.pdf) | [Markdown](genisletilmis_notlar/markdown/ders_5_genisletilmis.md) · [PDF](genisletilmis_notlar/ders_5_genisletilmis.pdf) |
+| **Ders 6** | Maliyet Tahmin Modelleri, Proje Ekip ve Organizasyon Yapıları | [Markdown](kisa_notlar/markdown/ders_6_ozet.md) · [PDF](kisa_notlar/ders_6_ozet.pdf) | [Markdown](genisletilmis_notlar/markdown/ders_6_genisletilmis.md) · [PDF](genisletilmis_notlar/ders_6_genisletilmis.pdf) |
+| **Ders 7** | Ara Sınav Öncesi Tekrar: Proje Yönetimi Yol Haritası ve Proje Planı | [Markdown](kisa_notlar/markdown/ders_7_ozet.md) · [PDF](kisa_notlar/ders_7_ozet.pdf) | [Markdown](genisletilmis_notlar/markdown/ders_7_genisletilmis.md) · [PDF](genisletilmis_notlar/ders_7_genisletilmis.pdf) |
+| **Ders 8** | Ara Sınav | [Markdown](kisa_notlar/markdown/ders_8_ozet.md) · [PDF](kisa_notlar/ders_8_ozet.pdf) | — |
+| **Ders 9** | Sınav Değerlendirmesi ve Makale Sunumları | [Markdown](kisa_notlar/markdown/ders_9_ozet.md) · [PDF](kisa_notlar/ders_9_ozet.pdf) | [Markdown](genisletilmis_notlar/markdown/ders_9_genisletilmis.md) · [PDF](genisletilmis_notlar/ders_9_genisletilmis.pdf) |
+| **Ders 10** | Çevik Ekipler, Blok Zinciri ve Endüstri 4.0 Üzerine Makale Sunumları | [Markdown](kisa_notlar/markdown/ders_10_ozet.md) · [PDF](kisa_notlar/ders_10_ozet.pdf) | [Markdown](genisletilmis_notlar/markdown/ders_10_genisletilmis.md) · [PDF](genisletilmis_notlar/ders_10_genisletilmis.pdf) |
+| **Ders 11** | Risk Yönetimi, Kazanılan Değer ve Dağıtık Ekipler Üzerine Makale Sunumları | [Markdown](kisa_notlar/markdown/ders_11_ozet.md) · [PDF](kisa_notlar/ders_11_ozet.pdf) | [Markdown](genisletilmis_notlar/markdown/ders_11_genisletilmis.md) · [PDF](genisletilmis_notlar/ders_11_genisletilmis.pdf) |
+| **Ders 12** | İnsan Hataları ve COCOMO II Makaleleri ile İlk Uygulama Sunumları | [Markdown](kisa_notlar/markdown/ders_12_ozet.md) · [PDF](kisa_notlar/ders_12_ozet.pdf) | [Markdown](genisletilmis_notlar/markdown/ders_12_genisletilmis.md) · [PDF](genisletilmis_notlar/ders_12_genisletilmis.pdf) |
+| **Ders 13** | Uygulama Projesi Sunumları | [Markdown](kisa_notlar/markdown/ders_13_ozet.md) · [PDF](kisa_notlar/ders_13_ozet.pdf) | [Markdown](genisletilmis_notlar/markdown/ders_13_genisletilmis.md) · [PDF](genisletilmis_notlar/ders_13_genisletilmis.pdf) |
 
 > [!NOTE]
 > 11 Mayıs 2021 haftası için kayıt yoktur; hoca 18 Mayıs dersinde o hafta ders yapılmadığını belirtmiştir.
@@ -54,7 +58,7 @@ Aşağıdaki tabloda her bir dersin konusu, kaynak markdown dosyası ve doğruda
     - Kaynakları üst yönetimden almak zorundadır.
   - Proje yönetimi yalnızca planlama demek değildir.
     - Takip, kontrol ve kapanış da proje yönetimidir.
-* **Detaylı Açıklamalar:** 1. **Başlangıç (project understanding / defining):** - Proje neden başlatıldı? - Hangi problemi çözüyor? - Yapılabilirliği nedir? Harcamalarını ne kadar sürede karşılar? Girmeye değer mi? - Proje yöneticisi bu aşamada belirlenir. Proje tanınır ve anlaşılır. 2. **Planlama:** - Hangi adımlarda gerçekleştirileceği. - Riskler, kısıtlar, varsayımlar. - İş adımlarına göre gereken insan gücü ve bunun tipi. - Yaklaşık maliyet. - PERT ve Gantt diyagramlarıyla zaman planı (hangi takvim adımında kimin çalışacağı). 3. **Yürütme ve kontrol (project running / project control):** Projenin plana göre gidip gitmediği izlenir. 4. **Kapanış:** - Projeden kazanımlar. - Risk takibinin nasıl gittiği. - Arşiv ve kazanım bilgilerinin kaydedilmesi. - Bitmiş projenin ölçülmesi.
+* **Detaylı Açıklamalar:** 1. **Başlangıç (project understanding / defining):** - Proje neden başlatıldı? - Hangi problemi çözüyor? - Yapılabilirliği nedir? Harcamalarını ne kadar sürede karşılar? Girmeye değer mi? - Hoca bu aşamada proje yöneticisinden de söz etti, cümle altyazıda kesik. Proje tanınır ve anlaşılır. 2. **Planlama:** - Hangi adımlarda gerçekleştirileceği. - Riskler, kısıtlar, varsayımlar. - İş adımlarına göre gereken insan gücü ve bunun tipi. - Yaklaşık maliyet. - PERT ve Gantt diyagramlarıyla zaman planı (hangi takvim adımında kimin çalışacağı). 3. **Yürütme ve kontrol (project running / project control):** Projenin plana göre gidip gitmediği izlenir. 4. **Kapanış:** - Projeden kazanımlar. - Risk takibinin nasıl gittiği. - Arşiv ve kazanım bilgilerinin kaydedilmesi. - Bitmiş projenin ölçülmesi.
 
 ### 🔹 Ders 2: Proje Kavramı, Proje Başarısı ve Proje Yöneticisi
 * **Genel Konular:**
@@ -250,13 +254,13 @@ Aşağıdaki tabloda her bir dersin konusu, kaynak markdown dosyası ve doğruda
   - Uygulama projesi için yüklenecekler: proje raporu ve SRS belgesi.
     - İkisi tek dosyada da olabilir.
 
-### 🔹 Ders 13: Uygulama Projesi Sunumları ve Final Duyuruları
+### 🔹 Ders 13: Uygulama Projesi Sunumları
 * **Genel Konular:**
   - Ders 8 Haziran 2021'de yapıldı. Dönemin son dersi.
   - Ders uygulama projesi sunumlarıyla geçti. Her sunum yaklaşık 10 dakika olacak şekilde planlandı.
   - Uygulama sunumları:
     - 1. uygulama: birim dönüştürme uygulaması (tek kişilik, şelale).
-  - Bir öğrenci ayrıca geciken makale sunumunu yaptı: proje yönetiminde duygusal zekanın önemi.
+  - Bir öğrenci ayrıca 8. ve 9. uygulamalar arasında geciken makale sunumunu yaptı: proje yönetiminde duygusal zekanın önemi.
   - Hoca devam kuralını, final sınavını ve son teslimleri duyurdu.
 * **Hocanın Vurgusu:**
   - **Proje takibi:** plan yapıldıktan sonra planlanan ile gerçekleşen karşılaştırılmalı.
