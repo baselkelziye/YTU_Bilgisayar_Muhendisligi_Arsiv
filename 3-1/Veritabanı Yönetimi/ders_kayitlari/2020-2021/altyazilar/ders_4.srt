@@ -1,0 +1,8760 @@
+1
+00:00:08,529 --> 00:00:10,529
+Arkadaşlar, hayırlı sabahlar.
+
+2
+00:00:10,529 --> 00:00:18,800
+Sesim geliyor mu?
+
+3
+00:00:18,800 --> 00:00:20,800
+Günaydın hocam, geliyor sesiniz.
+
+4
+00:00:20,800 --> 00:00:23,800
+Güzel. Sizin de geliyor.
+
+5
+00:00:23,800 --> 00:00:26,800
+Evet arkadaşlar, dördüncü haftadayız.
+
+6
+00:00:26,800 --> 00:00:32,799
+Bugün diğer jargonlarıyla ilgili bir saatlik bir örneklerden çalışmalar yapacağız.
+
+7
+00:00:32,799 --> 00:00:35,799
+Birinci sununun sonundaki örneklerden.
+
+8
+00:00:35,799 --> 00:00:39,799
+Ondan sonra ilişkisel model, Rene İçin'in modele başlayacağız.
+
+9
+00:00:39,799 --> 00:00:42,799
+Onun tanımları genel olarak tanımlanması.
+
+10
+00:00:42,799 --> 00:00:45,799
+Sonra üçüncü saatte de zaten o da biter.
+
+11
+00:00:45,799 --> 00:00:49,799
+İlişkiselce bile artık bilmiyorum başlar mıyız.
+
+12
+00:00:49,799 --> 00:00:52,799
+Genel olarak ders nasıl gidiyor.
+
+13
+00:00:52,799 --> 00:00:54,799
+Laboratörler başladı.
+
+14
+00:00:54,799 --> 00:00:56,799
+Pazartesi günü.
+
+15
+00:00:56,799 --> 00:00:59,799
+Önümüzdeki bir hafta, iki hafta içerisinde ilk ödevi vereceğiz.
+
+16
+00:00:59,799 --> 00:01:01,799
+Toplam iki ödev olacak.
+
+17
+00:01:01,799 --> 00:01:08,799
+O yüzden dönem içerisinde işte 5. 6. hafta ve 10-11. hafta falan ikinci ödev olur.
+
+18
+00:01:08,799 --> 00:01:12,799
+Onun dışında bir proje tanımlaması olacaktı laboratörlerde.
+
+19
+00:01:12,799 --> 00:01:14,799
+Evet, bu şekilde.
+
+20
+00:01:14,799 --> 00:01:16,799
+Barman kafamıza takılan bir şey.
+
+21
+00:01:16,799 --> 00:01:21,530
+Şimdi bir ekran paylaşımı yapıyorum.
+
+22
+00:01:21,530 --> 00:01:28,239
+Ekranı görebiliyorsunuz diye düşünüyorum.
+
+23
+00:01:28,239 --> 00:01:34,150
+Ekranı görüyor musunuz?
+
+24
+00:01:34,150 --> 00:01:36,150
+Örnek 5.
+
+25
+00:01:36,150 --> 00:01:39,719
+Görüyoruz hocam.
+
+26
+00:01:39,719 --> 00:01:40,719
+Evet.
+
+27
+00:01:40,719 --> 00:01:46,719
+Şimdi arkadaşlar, IA Diagramları daha çok bu derste kullandığımız IA Diagramları oluyor.
+
+28
+00:01:46,719 --> 00:01:49,719
+UML'de tabii bilmemizde fayda var.
+
+29
+00:01:49,719 --> 00:01:53,719
+Bunların UML versiyonlarında çalışırken çizebilirsiniz.
+
+30
+00:01:53,719 --> 00:01:58,719
+Veya işte ona göre hangisine alışkanlık gösteriyorsanız.
+
+31
+00:01:58,719 --> 00:02:00,719
+Tercih meselesi.
+
+32
+00:02:00,719 --> 00:02:05,719
+Dersde daha çok IA'lı yani ödevlerde de, sınavlarda da IA'lı tercih ediyoruz.
+
+33
+00:02:05,719 --> 00:02:10,719
+Daha klasik bir veritabanı kavramsal tasarım aracı olarak.
+
+34
+00:02:10,719 --> 00:02:16,719
+IA'lı ile ilgili genel IA'lı ile ilgili genel tanımlamalarımızı yaptık.
+
+35
+00:02:16,719 --> 00:02:18,719
+Kurallarımızı belirledik.
+
+36
+00:02:18,719 --> 00:02:22,719
+Şimdi bu malzemelerle bu küçük dünyaları tanımlamamız gerekiyor.
+
+37
+00:02:22,719 --> 00:02:24,719
+Tabii bu...
+
+38
+00:02:24,719 --> 00:02:26,719
+Pardon.
+
+39
+00:02:26,719 --> 00:02:34,800
+Evet.
+
+40
+00:02:34,800 --> 00:02:42,460
+Bu IA'lı ile ilgili genel kuralları öğrendik.
+
+41
+00:02:42,460 --> 00:02:46,460
+Yani bu küçük dünyayı, küçük dünyaları farklı şekillerde tanımlayabiliriz.
+
+42
+00:02:46,460 --> 00:02:49,460
+Yani bu bir meleke diyelim.
+
+43
+00:02:49,460 --> 00:02:54,460
+Ama kurallar böyle %70-80 hakim oluyor benim tasarımımızda.
+
+44
+00:02:54,460 --> 00:02:57,460
+İşte %20'li kısmı da gene şahsa kalıyor.
+
+45
+00:02:57,460 --> 00:03:00,460
+Yani işte onun artık tecrübesine kalıyor demiştik.
+
+46
+00:03:00,460 --> 00:03:05,460
+Şimdi mesela tabii buradaki örnekler bir ctn kolay.
+
+47
+00:03:05,460 --> 00:03:11,460
+Gerçi orta halli veya zor örnekler esasında ama ileride daha kapsamlı olanlar da var.
+
+48
+00:03:11,460 --> 00:03:15,460
+Ancak tabii burada hepsi basit gözüküyor.
+
+49
+00:03:15,460 --> 00:03:16,460
+Yani niye?
+
+50
+00:03:16,460 --> 00:03:19,460
+Çünkü burada küçük bir dünya tasarımı var.
+
+51
+00:03:19,460 --> 00:03:25,460
+Ve onun aşağısında da o IA'lı ile ilgili bir ifade var.
+
+52
+00:03:25,460 --> 00:03:26,460
+IA'lı diğer gün var.
+
+53
+00:03:26,460 --> 00:03:29,460
+Yani bu ikisine bakınca böyle ikisi örtüşüyor.
+
+54
+00:03:29,460 --> 00:03:34,460
+Önemli olan tabii çalışırken veya hani bu kapalı iken burası.
+
+55
+00:03:34,460 --> 00:03:37,460
+Bunu çizebilmek veya benzer bir şey çizebilmek.
+
+56
+00:03:37,460 --> 00:03:43,460
+Oradaki o açıkları yakalayıp onları böyle o tasarımda eksik olan yerleri telafi etmek.
+
+57
+00:03:44,460 --> 00:03:46,460
+Şimdi mesela şu örneğe bakalım.
+
+58
+00:03:46,460 --> 00:03:53,460
+Birden çok oyuncu içilen takımlar arasında iki takım içilen oyunlar var.
+
+59
+00:03:53,460 --> 00:03:57,460
+Yani bir futbol müsabakası olabilir mesela.
+
+60
+00:03:57,460 --> 00:03:59,460
+Zaten genelde iki takım oluyor değil mi?
+
+61
+00:03:59,460 --> 00:04:02,460
+Müsabakar dediğimiz zaman daha çok takım olmuyor.
+
+62
+00:04:02,460 --> 00:04:03,460
+İki takımımız var.
+
+63
+00:04:03,460 --> 00:04:06,460
+Ve her takımda da birden çok oyuncu var.
+
+64
+00:04:06,460 --> 00:04:10,460
+Ve bununla ilgili bilgiler tutunmak isteniyor.
+
+65
+00:04:10,460 --> 00:04:13,460
+Ve oyuncular da en fazla bir takımın eremanı oluyorlar.
+
+66
+00:04:13,460 --> 00:04:16,459
+Yine hani belki söylemeye gerek yok.
+
+67
+00:04:16,459 --> 00:04:21,459
+Ve her oyunda bir de oyun hadisesi var.
+
+68
+00:04:21,459 --> 00:04:23,459
+Şimdi bir müsabaka olacak.
+
+69
+00:04:23,459 --> 00:04:26,459
+Bu oyunda da hangi takımlar arasında oluyor?
+
+70
+00:04:26,459 --> 00:04:31,459
+Ve bu takımlardan hangisi ev sahipliği yapıyor?
+
+71
+00:04:31,459 --> 00:04:34,459
+Ve bu müsabaka oyun hangi tarihte?
+
+72
+00:04:34,459 --> 00:04:36,459
+Ve sonucu ne oldu?
+
+73
+00:04:36,459 --> 00:04:38,459
+Bilgilerini tutmak istiyoruz.
+
+74
+00:04:38,459 --> 00:04:42,459
+Bakın şimdi gittikçe birikiyor yani tutulması gereken şeyler.
+
+75
+00:04:42,459 --> 00:04:46,459
+Bunları biz bu veri tabanında en verimli şekilde nasıl tutabiliriz?
+
+76
+00:04:46,459 --> 00:04:49,459
+Bir madde daha var.
+
+77
+00:04:49,459 --> 00:04:53,459
+Ve her oyunda takımın hangi oyuncularının yer aldığı bilgisi de takip ediliyor.
+
+78
+00:04:53,459 --> 00:04:58,459
+Yani demek ki oyunda hangi takımlar arasında bu müsabaka?
+
+79
+00:04:58,459 --> 00:05:03,459
+Ve o müsabakada o takımda kimler oynuyor?
+
+80
+00:05:03,459 --> 00:05:06,459
+Çünkü hani yedek elemanlar oluyor ya mesela.
+
+81
+00:05:06,459 --> 00:05:09,459
+Veya o takımın belli bir kadrosu var.
+
+82
+00:05:09,459 --> 00:05:14,459
+Ama o oyuna, o müsabakaya çıkanlar o sırada farklı kişiler olabiliyor.
+
+83
+00:05:14,459 --> 00:05:21,459
+Şimdi burada ilk maddeye adım adım tekrar tekrar bunları böyle analiz edip şekli çizmemiz gerekiyor.
+
+84
+00:05:21,459 --> 00:05:31,459
+Burada dediği gibi mesela bir oyuncu birden çok takımda oyuncunun en fazla bir takımı olabilir.
+
+85
+00:05:31,459 --> 00:05:34,459
+Bir kere bu oyuncular hangi takımdalar?
+
+86
+00:05:34,459 --> 00:05:37,459
+Veya bu takımda hangi oyuncular var?
+
+87
+00:05:37,459 --> 00:05:40,459
+Şeklinde şöyle bir bağıntı hemen kurabilmemiz lazım.
+
+88
+00:05:40,459 --> 00:05:42,459
+Bu belki kolay olan kısmı.
+
+89
+00:05:42,459 --> 00:05:44,459
+Bire enlik olması gerekiyor.
+
+90
+00:05:44,459 --> 00:05:50,459
+Burada oyuncu en fazla bir takımın elemanı olabilir dedi.
+
+91
+00:05:50,459 --> 00:05:52,459
+Oyuncu en fazla bir takımın.
+
+92
+00:05:52,459 --> 00:05:55,459
+Esasında burada tek çizgi olsa daha iyi olur değil mi?
+
+93
+00:05:55,459 --> 00:06:03,459
+Yani çünkü hani hiçbir takıma ait olmayan şu anda bir anlaşma yapmamış olan oyuncular da olabilir.
+
+94
+00:06:03,459 --> 00:06:05,459
+Onu kastediyor esasında.
+
+95
+00:06:05,459 --> 00:06:08,459
+O yüzden burada çift çizgi değil de tek çizgi olsa sanki daha iyi.
+
+96
+00:06:08,459 --> 00:06:09,459
+Hocam.
+
+97
+00:06:09,459 --> 00:06:10,459
+Evet.
+
+98
+00:06:10,459 --> 00:06:14,459
+Yani buradaki ifadede zaten oyuncu en fazla bir takımın elemanı olabilir demiş ya.
+
+99
+00:06:14,459 --> 00:06:17,459
+Yani matematiksel olarak bu ifade sıfır ve bir alabilir.
+
+100
+00:06:17,459 --> 00:06:18,459
+Aynen evet.
+
+101
+00:06:18,459 --> 00:06:22,459
+Bize bir soru geldiğinde tek çizgi ya da çift çizgi şu an burada belirtilmemiş mesela.
+
+102
+00:06:22,459 --> 00:06:23,459
+Evet.
+
+103
+00:06:23,459 --> 00:06:30,459
+İşte belirtilmiş iki çizgi yani sanki bütün oyuncular mutlaka bir takımın elemanı olması gerekiyormuş gibi olmuş.
+
+104
+00:06:30,459 --> 00:06:32,459
+Yani ufak bir yanlışlık var onu demek istiyorum.
+
+105
+00:06:32,459 --> 00:06:34,459
+Esasında tek çizgi olması lazım.
+
+106
+00:06:34,459 --> 00:06:38,459
+Çünkü dediğin gibi bazı oyuncuların şu anda takımı olmayabilir.
+
+107
+00:06:38,459 --> 00:06:45,459
+Ama bir takım noktasında da burada ifade edilmemiş ama bir takım varsa mutlaka bir elemanı vardır.
+
+108
+00:06:45,459 --> 00:06:50,459
+O takıma ait olan işte o noktada da çift çizgi olmuş.
+
+109
+00:06:50,459 --> 00:06:57,459
+Şimdi bunlar bizim yani buradaki çift çizgi tek çizgi tabi ki sonradan hani doğruluk noktasında olmasa da
+
+110
+00:06:57,459 --> 00:07:04,459
+10-20 model tablolarının performans noktasında bir ince bir nokta olacak.
+
+111
+00:07:04,459 --> 00:07:09,459
+Onları da bu haftada tabi birazdan son derslere doğru göreceğiz.
+
+112
+00:07:09,459 --> 00:07:12,459
+O yüzden yanlış değil yani tasarım.
+
+113
+00:07:12,459 --> 00:07:16,459
+Ama ufak bir hata olmuş oluyor yani daha iyi olabilir.
+
+114
+00:07:16,459 --> 00:07:19,459
+O yüzden burası tek çizgi burası çift çizgi olması lazım.
+
+115
+00:07:19,459 --> 00:07:21,459
+Bilenenliği kısmı oldukça basit.
+
+116
+00:07:21,459 --> 00:07:24,459
+Yani takımın en çok elemanı var.
+
+117
+00:07:24,459 --> 00:07:25,459
+Bu en böyle okuyoruz.
+
+118
+00:07:25,459 --> 00:07:30,459
+Bu biri de bir oyuncu en fazla bir takımda yer alabilir şeklinde.
+
+119
+00:07:30,459 --> 00:07:35,459
+Evet şimdi oradaki bir bizim takım sayımızı belirtmez değil mi?
+
+120
+00:07:35,459 --> 00:07:38,459
+Yani toplam takım sayısını belirtmiyor.
+
+121
+00:07:38,459 --> 00:07:45,459
+Oyuncunun her bir oyuncunun burada ait olduğu takım sayısını belirtiyor.
+
+122
+00:07:45,459 --> 00:07:48,459
+Yani bu bağıntı ile ilgili bir mesele şunlar.
+
+123
+00:07:48,459 --> 00:07:52,459
+O bağıntıdaki cardinality dediğimiz eleman sayısı dediğimiz.
+
+124
+00:07:52,459 --> 00:07:55,459
+Yoksa bu takımların sayısını belirtmiyor bu tabi ki.
+
+125
+00:07:55,459 --> 00:08:02,160
+Evet burada tabi tasarımımızda genel olarak eksik bir nokta var ki.
+
+126
+00:08:02,160 --> 00:08:07,160
+O da burada takım ve oyuncu için nitelik belirtmemişiz.
+
+127
+00:08:07,160 --> 00:08:10,160
+Oysa burada gerçi soruda da onlar çok listelenmemiş.
+
+128
+00:08:10,160 --> 00:08:15,160
+Yani oyuncuların işte ismini TC 2.0 numarasını tutun mutun falan onlar da dense tabi.
+
+129
+00:08:15,160 --> 00:08:20,160
+Tabi o kısmı tasarımında o kısım daha çok kolay olan kısım oluyor.
+
+130
+00:08:20,160 --> 00:08:23,160
+Nihayetinde işte bir varlık orada kendini belli ediyor.
+
+131
+00:08:23,160 --> 00:08:27,160
+Ve varlığın da işte niteliklerini sıralamış bize gereksinin listesinde.
+
+132
+00:08:27,160 --> 00:08:30,160
+O zaman onları buraya yuvarlak böyle şeylerle aktarıyoruz.
+
+133
+00:08:30,160 --> 00:08:36,159
+Ancak tabi buradaki kurgu veya zor olan kısım ve bunun kurgulanması.
+
+134
+00:08:36,159 --> 00:08:39,159
+Yani bağıntıların böyle buraya yapılması.
+
+135
+00:08:39,159 --> 00:08:43,159
+Şimdi o zaman şeklin şu kısmına böyle adım adım esasında PPT olsaydı.
+
+136
+00:08:43,159 --> 00:08:47,159
+Adım adım daha güzel olacaktı ama şu anda PDF dosyasını indirmişim ben.
+
+137
+00:08:47,159 --> 00:08:49,159
+O yüzden böyle şey yapalım.
+
+138
+00:08:49,159 --> 00:08:51,159
+Yani burada demek şu kısmı bitirdik.
+
+139
+00:08:51,159 --> 00:08:52,159
+Şu kısmı bitirdik.
+
+140
+00:08:52,159 --> 00:09:01,299
+En azından şöyle kalemi açayım isterseniz.
+
+141
+00:09:01,299 --> 00:09:09,190
+Şu kısmı bitirdik.
+
+142
+00:09:09,190 --> 00:09:11,190
+Şöyle şöyle bitirdik.
+
+143
+00:09:11,190 --> 00:09:22,190
+Şimdi ne diyor bize her oyunda hangi takımların yer aldığı ve o oyunun takım ev sahipliği kimi yapıyor.
+
+144
+00:09:22,190 --> 00:09:26,190
+Ve işte yine oyunun hangi tarihte olduğu falan onlar da tabi olabilir.
+
+145
+00:09:26,190 --> 00:09:30,190
+Yani daha şekillenmesi için onlar da o zaman demek ki bir oyun dediğimiz.
+
+146
+00:09:30,190 --> 00:09:34,190
+Yani Şabaka hadisinin gerçekleştiği oyun demiş burada.
+
+147
+00:09:34,190 --> 00:09:37,190
+Oyunun o oyunla ilgili bir bilgi tutması lazım.
+
+148
+00:09:37,190 --> 00:09:40,190
+Şimdi bu oyunun hangi takımlar yer alıyor?
+
+149
+00:09:40,190 --> 00:09:44,190
+Hangi takımlar arasında ve onlardan hangisi ev sahipliği yapıyor?
+
+150
+00:09:44,190 --> 00:09:50,190
+Bakın burada oyunda bir tane bir takım var ve oyunda yine bir tane bir takım var.
+
+151
+00:09:50,190 --> 00:09:55,190
+Ama buradaki bağıntılar bizim ismini ev ev sahipliği yapıyor.
+
+152
+00:09:55,190 --> 00:09:58,190
+Yani bu oyunda ev sahipliği yapan bir tane takım var.
+
+153
+00:09:58,190 --> 00:10:06,190
+Bu oyunda ev sahibi misafir olarak gelen, deplasman mı deniyor, deplasman olan başka bir takımımız var.
+
+154
+00:10:06,190 --> 00:10:07,190
+O da bir tane takım.
+
+155
+00:10:07,190 --> 00:10:10,190
+Nihayetinde bu oyunlar iki takım arasında olacak.
+
+156
+00:10:10,190 --> 00:10:19,190
+O zaman bu şekilde ev ve misafir bağıntıları yani iki tane varlık seti arasında şöyle bir bağıntı kurarsak, şu iki bağıntıyı kurarsak.
+
+157
+00:10:19,190 --> 00:10:24,190
+Ve bunların da Müsabaka'nın sonucu da nasıl yazıldı?
+
+158
+00:10:24,190 --> 00:10:25,190
+Skorları da buraya yazarak.
+
+159
+00:10:25,190 --> 00:10:30,190
+Yani ev sahibi işte iki gol attı, misafir de üç gol attı mesela ikiye üç.
+
+160
+00:10:30,190 --> 00:10:32,190
+Üç iki neticelendi.
+
+161
+00:10:32,190 --> 00:10:36,190
+Yine şu taraftaki bilgiler bire enlik bakın bire enlik.
+
+162
+00:10:36,190 --> 00:10:41,190
+Yani takımın oyunları yani şu oyunda oynadı.
+
+163
+00:10:41,190 --> 00:10:42,190
+Birden çok oyunda oynadı değil mi?
+
+164
+00:10:42,190 --> 00:10:44,190
+Bire enlik olması lazım.
+
+165
+00:10:44,190 --> 00:10:54,190
+Bu oyunun yine işte primary key'i burada sadece bizden istenen bilgileri biz burada tutuyoruz genelde.
+
+166
+00:10:54,190 --> 00:10:57,190
+Çünkü öteki türlü burada tasarım çok kolay değişebilir.
+
+167
+00:10:57,190 --> 00:11:00,190
+Veya işte kafamıza göre primary key'ler koyabiliriz.
+
+168
+00:11:00,190 --> 00:11:02,190
+Ama şurası biraz eksik kalmış.
+
+169
+00:11:02,190 --> 00:11:04,190
+Oyun için neler tutunması gerektiğini söylememiz lazım da.
+
+170
+00:11:04,190 --> 00:11:13,190
+Neyse oyun için burada oyunu böyle unique kılacak acaba primary key ne olabilir desek bize verilen tutunması istenen bilgiler kapsamında.
+
+171
+00:11:13,190 --> 00:11:17,190
+Bu oyunun tarihi ve sonucu tutuluyormuş.
+
+172
+00:11:17,190 --> 00:11:19,190
+Tarihi ve sonucu.
+
+173
+00:11:19,190 --> 00:11:33,190
+O zaman bu ikisi birden yani aynı tarihte yani tarihte bir bilgisi yani burada bunu unique kılacak şekilde yani sonuçta ne olabilir?
+
+174
+00:11:33,190 --> 00:11:39,190
+Aynı tarihte aynı günde aynı saatte birden çok müsabık olabilir ve aynı neticeyle sonlanabilir.
+
+175
+00:11:39,190 --> 00:11:48,190
+O yüzden hani bu da mesela şu andaki bu tasarım da gene belki hani çok çok da doğru değil yani şu primary key değil mi?
+
+176
+00:11:48,190 --> 00:11:52,190
+Yani ikisi birden unique kılmak için bu oyunları yeterli değil.
+
+177
+00:11:52,190 --> 00:11:58,190
+O yüzden yani burada şu oyun kısmı mesela ne olabilir?
+
+178
+00:11:58,190 --> 00:12:03,190
+Yani gene bakın düşünüyoruz yani zayıf olabilir madem primary key bulamadık zayıf olabilir.
+
+179
+00:12:04,190 --> 00:12:12,190
+Bu zayıfı şu güçlüğe bağlayarak yani şu iki takım arasında şu tarihte oynanan oyun desek mesela daha güzel bir tasarım olur.
+
+180
+00:12:12,190 --> 00:12:18,190
+Bakın hani ben de şimdi yani bunu çizdiğim zaman aklıma gelmemiş de şimdi aklıma geliyor.
+
+181
+00:12:18,190 --> 00:12:31,190
+Yani şimdi belki gene başka bir eksik bulacağız burada işte o yüzden böyle hem kolay gibi gözüküyor hem belki bir parça zevkli bunlarla oynamak ama yani çok farklı yollara da gidebiliriz.
+
+182
+00:12:31,190 --> 00:12:49,190
+Çoğu zaman çok yanlış olmuyor eğer çizimimiz böyle çok yanlış bir çizim yapmadıysak gerçek burada ifade edilen şeye çok zıp bir şey yapmadıysak yanlış olmuyor ama bu sefer gereksiz redundancy dediğimiz hani o şeyde de bahsettik kampani veri tabanında bahsetmiştim redundancy'de.
+
+183
+00:12:49,190 --> 00:12:53,190
+Yani lüzumsuz gereksiz ek ek bağlantıları olabiliyor.
+
+184
+00:12:53,190 --> 00:12:57,190
+Mesela burada en son söylediğim kısım bence güzel oldu.
+
+185
+00:12:57,190 --> 00:13:02,190
+Ben tekrar düşünüyorum veya siz de bakın burada prime 2 benim şu anda hoşuma gitmedi.
+
+186
+00:13:02,190 --> 00:13:13,190
+Yani ikisi birden çünkü baktığımız zaman bu tarihte aynı sonuçlu yani tarihi ben dakikası saniyesine kadar da tutsam nihayetinde belli bir zamanda bu oyunlar başlıyor.
+
+187
+00:13:13,190 --> 00:13:16,190
+Bugün saat dokuzda bir müsaba başladı.
+
+188
+00:13:16,190 --> 00:13:24,190
+Dokuz sıfırda burada prime 2 kılacak şekilde burada bunu daha dibine inmenin bir manası kalmıyor yani.
+
+189
+00:13:24,190 --> 00:13:30,190
+Onun yerine buraya böyle artificial yapay bir ad koyacağız.
+
+190
+00:13:30,190 --> 00:13:38,190
+Bu da bizim ilişkissel model tabloların noktasında her bir yapay anahtar bize bir yük getiriyor.
+
+191
+00:13:38,190 --> 00:13:41,190
+Bu anahtar tanımlaması sisteme bir yük.
+
+192
+00:13:41,190 --> 00:13:49,190
+Çünkü o anahtarın unik olarak tutulması ve unik olarak devam etmesi için sisteme ayrı bir yük geliyor.
+
+193
+00:13:49,190 --> 00:13:52,190
+Çünkü burada bakın binlerce milyonlarca kayıt olacak.
+
+194
+00:13:52,190 --> 00:14:01,190
+Büyük büyük veri diyorlar ya büyük veri büyük veri için orada yeni bir kayıt eklendiği zaman acaba evvelden o prime 2 var mıydı orada?
+
+195
+00:14:01,190 --> 00:14:04,190
+Bir sürü artık oradaki binlerce kayda bakmamız lazım.
+
+196
+00:14:04,190 --> 00:14:09,190
+Tamam bunun için bazı böyle hızlı yapılarımız var ama yine bir yük oluyor.
+
+197
+00:14:09,190 --> 00:14:15,190
+O zaman tasarımımızın performansı noktasında ne kadar az anahtar var ise,
+
+198
+00:14:15,190 --> 00:14:21,190
+ne kadar az böyle prime 1. anahtardan bahsediyor, ne kadar az ise o kadar verimli olacak.
+
+199
+00:14:21,190 --> 00:14:25,190
+O cihetten bakıldığı zaman burada bunu zayıf kılsak, zayıf yapsak.
+
+200
+00:14:25,190 --> 00:14:28,190
+Çünkü burada mevcut olan şeyle anahtar tam tutturamadık.
+
+201
+00:14:28,190 --> 00:14:33,190
+Bunu zayıf yapıp bunun güçlüsü ne olacak? Zayıf yaptığımız zaman bir güçlü olması lazım.
+
+202
+00:14:33,190 --> 00:14:38,190
+Yani bir güçlü bir varlığın varlığa bağlı olması lazım.
+
+203
+00:14:38,190 --> 00:14:46,190
+O zaman şu iki takım arasında şu tarihle oynanan bu tarih de mesela ayırdedici olabilir.
+
+204
+00:14:46,190 --> 00:14:49,190
+Yani ayraç ne dedik ona ayırdedici nitelik dedik değil mi?
+
+205
+00:14:49,190 --> 00:14:56,190
+Yani belli bir prime 2'in belli bir güçlü varlığın altında bunlar farklı tarihler olabilir.
+
+206
+00:14:56,190 --> 00:15:01,190
+Ki zaten değil mi? Yani iki takım farklı tarihlerde maçlar yapabilir.
+
+207
+00:15:01,190 --> 00:15:07,190
+Müsabakalar yapabilir. O zaman demek ki daha iyi bir noktaya taşımış oldu.
+
+208
+00:15:07,190 --> 00:15:12,190
+Yani şunu zayıf yaptık şöyle zayıf nasıl yapıyorduk şöyle çiziyorduk değil mi?
+
+209
+00:15:12,190 --> 00:15:15,190
+Şöyle iki çizgi iki kat da çiziyorduk.
+
+210
+00:15:15,190 --> 00:15:20,190
+Şimdi böyle yaptıktan sonra gene bunu iki kat da çizeceğiz bu şeyleri.
+
+211
+00:15:21,190 --> 00:15:24,190
+Mausot çizim için maalesef çizemiyorum.
+
+212
+00:15:24,190 --> 00:15:28,190
+Bu da gene öyle olacak. Bu mesela daha güzel oldu.
+
+213
+00:15:28,190 --> 00:15:34,190
+Gene bu oyunda bu oyunda ne dedi hangi oyuncular yer alıyor?
+
+214
+00:15:34,190 --> 00:15:41,190
+Hangi oyunlar şimdi bu takımlar arasında bu maç olması demek bu takımlardaki bütün oyuncuların oynaması mı demek?
+
+215
+00:15:41,190 --> 00:15:49,190
+Yani buradan şunu çizmesek mesela şunu çıkartalım şimdilik bu bu olmasa yeterli oluyor mu?
+
+216
+00:15:49,190 --> 00:15:57,190
+Yani her oyunda takımın hangi oyuncularının yer aldığı bilgisi takip ediliyor her oyunda.
+
+217
+00:15:57,190 --> 00:16:03,190
+Bu oyun bu takımlar arasında ama o takımda o o günde yani o müsabakada kimler oynadı?
+
+218
+00:16:03,190 --> 00:16:07,190
+O zaman burada bu bu bilgiye sahip değiliz.
+
+219
+00:16:07,190 --> 00:16:13,190
+Yani şu kısımdaki tasarım o zaman ek sıradan bir bağıntıyla burada bu oyuncu bu oyunda oynadı.
+
+220
+00:16:13,190 --> 00:16:23,190
+Yani şu tarihli oyunda bu takımlarda olan bu oyunda oynadığı şeklinde bu şekilde bir tasarım yapmamız gerekiyor.
+
+221
+00:16:23,190 --> 00:16:26,190
+Evet nasıl kafamıza bir şey canlanıyor değil mi?
+
+222
+00:16:26,190 --> 00:16:29,190
+Yani sizin bir fikriniz var mı?
+
+223
+00:16:29,190 --> 00:16:36,539
+Mesela bunun güçlüsü bu olabilir miydi?
+
+224
+00:16:36,539 --> 00:16:38,539
+Düşünüyoruz mesela.
+
+225
+00:16:38,539 --> 00:16:41,539
+Yani güçlüsünü ben bu dedim.
+
+226
+00:16:41,539 --> 00:16:44,539
+Takım dedim ama güçlüsü mesela oyuncu olabilir miydi?
+
+227
+00:16:45,539 --> 00:16:50,529
+Bunu zayıf yaptık ya.
+
+228
+00:16:50,529 --> 00:16:58,649
+[öğrenci] ne dersin?
+
+229
+00:16:58,649 --> 00:17:00,649
+[öğrenci] orada değil galiba.
+
+230
+00:17:00,649 --> 00:17:02,649
+Eksi puan.
+
+231
+00:17:02,649 --> 00:17:04,650
+Evet.
+
+232
+00:17:04,650 --> 00:17:07,650
+Cevap verebilene artı puan verebilene eksi puan.
+
+233
+00:17:07,650 --> 00:17:12,180
+Daha sonra dönüm sonunda bu eksiler hatıra toplanacak ona göre.
+
+234
+00:17:12,180 --> 00:17:15,180
+Evet [öğrenci] sen ne dersin?
+
+235
+00:17:15,180 --> 00:17:20,180
+Şunu zayıf yaptığımız zaman güçlü bu dedik.
+
+236
+00:17:20,180 --> 00:17:22,180
+Ben de diyorum ki güçlü acaba bu olabilir mi?
+
+237
+00:17:22,180 --> 00:17:24,180
+İşte yani tasarım da böyle arkadaşlar.
+
+238
+00:17:24,180 --> 00:17:26,180
+Bir şey çiziyoruz daha sonra oynuyoruz.
+
+239
+00:17:26,180 --> 00:17:27,180
+Ya şöyle olsa olur mu?
+
+240
+00:17:27,180 --> 00:17:29,180
+Genelde şunlar oldukça net.
+
+241
+00:17:29,180 --> 00:17:31,180
+Yani ene birlik, bire enlik.
+
+242
+00:17:31,180 --> 00:17:33,180
+Bunlar hani acaba bire enlik mi?
+
+243
+00:17:33,180 --> 00:17:35,180
+Bunlar zaten net oluyor zaten.
+
+244
+00:17:35,180 --> 00:17:39,180
+Ama burada zor olan kısım baantıların doğru tanımlanması.
+
+245
+00:17:39,180 --> 00:17:44,180
+Gene zayıf varlıkların tanımlanması gibi noktalar.
+
+246
+00:17:44,180 --> 00:17:46,180
+Evet [öğrenci].
+
+247
+00:17:46,180 --> 00:17:51,319
+[öğrenci].
+
+248
+00:17:51,319 --> 00:17:54,319
+[öğrenci] da var gözüküyor ama yok herhalde.
+
+249
+00:17:55,319 --> 00:18:02,059
+[öğrenci].
+
+250
+00:18:02,059 --> 00:18:04,059
+Oo arkadaşlar kimse yok ya.
+
+251
+00:18:04,059 --> 00:18:08,059
+Siz buraya bağlanmış gözüküyorsunuz ama nasıl oluyor?
+
+252
+00:18:08,059 --> 00:18:09,059
+Kimseden ses çıkmıyor.
+
+253
+00:18:09,059 --> 00:18:11,059
+Sesim geliyor mu bu arada?
+
+254
+00:18:11,059 --> 00:18:13,059
+Gelmiyor.
+
+255
+00:18:13,059 --> 00:18:17,059
+Yani takip edemediniz mi anlattıklarımı?
+
+256
+00:18:17,059 --> 00:18:19,059
+Mesela bakın kaç tane?
+
+257
+00:18:19,059 --> 00:18:21,059
+Üç tane tablo var burada.
+
+258
+00:18:21,059 --> 00:18:22,059
+Üç tane varlık var.
+
+259
+00:18:22,059 --> 00:18:23,059
+Daha tablo demeyelim de varlık var.
+
+260
+00:18:23,059 --> 00:18:25,059
+Bu varlıklar tablo olacak sonra.
+
+261
+00:18:25,059 --> 00:18:26,059
+Üç tane varlık var.
+
+262
+00:18:26,059 --> 00:18:28,059
+Bunların arasında bir şeyler yapıyoruz.
+
+263
+00:18:31,059 --> 00:18:34,059
+Yani çok zor bir şey yapmıyoruz şu anda.
+
+264
+00:18:34,059 --> 00:18:37,589
+Evet.
+
+265
+00:18:37,589 --> 00:18:41,589
+Mesela şunların var olma durumlarını belirtmedik.
+
+266
+00:18:41,589 --> 00:18:45,589
+Yani oyuncu mutlaka işte bir oyunda oynuyor mu?
+
+267
+00:18:45,589 --> 00:18:46,589
+Oynamayabilir.
+
+268
+00:18:46,589 --> 00:18:47,589
+Oynamamış daha.
+
+269
+00:18:47,589 --> 00:18:48,589
+Yeni yani yeni girmiş.
+
+270
+00:18:48,589 --> 00:18:49,589
+Tek çizgi.
+
+271
+00:18:49,589 --> 00:18:51,589
+Ya bunları da analiz edebilirsiniz yani.
+
+272
+00:18:51,589 --> 00:18:53,589
+Ya ben işte iki çizgi yapmak istiyorum.
+
+273
+00:18:53,589 --> 00:18:54,589
+Şöyle olduğunu varsın.
+
+274
+00:18:54,589 --> 00:18:56,589
+Yanlış olmaz dediğim gibi.
+
+275
+00:18:56,589 --> 00:19:00,589
+Eğer şurada ifade edilen bir şeyle çelişmiyorsa.
+
+276
+00:19:00,589 --> 00:19:02,589
+Havada bırakıldıysa.
+
+277
+00:19:02,589 --> 00:19:04,589
+Hani tek de olabilir çift de olabilir.
+
+278
+00:19:04,589 --> 00:19:06,589
+Yani makul olmak şartıyla.
+
+279
+00:19:06,589 --> 00:19:08,589
+Mesela takım burada tek çizgi.
+
+280
+00:19:08,589 --> 00:19:10,589
+Yani gayet makul.
+
+281
+00:19:10,589 --> 00:19:14,589
+Çünkü yani illa ev sahipliği yapmış mı bu takım?
+
+282
+00:19:14,589 --> 00:19:16,589
+Yani bir takım kurulmuştur.
+
+283
+00:19:16,589 --> 00:19:19,589
+Daha hiç ev sahipliği ev sahibi olarak hiçbir oyunda oynamamıştır.
+
+284
+00:19:19,589 --> 00:19:22,589
+O yüzden hani tek çizgi olması gayet doğru.
+
+285
+00:19:22,589 --> 00:19:24,589
+Çift çizgi biraz riskli.
+
+286
+00:19:24,589 --> 00:19:27,589
+Yani çift çizgi hatta yanlış bir de yani.
+
+287
+00:19:27,589 --> 00:19:32,589
+Çünkü yani mutlaka bir ev sahipliği yapmak zorunda değil bir takım.
+
+288
+00:19:32,589 --> 00:19:34,589
+Epteplasman da oynamıştır mesela.
+
+289
+00:19:34,589 --> 00:19:36,589
+İlk on oyununu atıyorum mesela.
+
+290
+00:19:36,589 --> 00:19:38,589
+İşte bu gibi böyle tahliller.
+
+291
+00:19:38,589 --> 00:19:41,589
+Bir oyun varsa ama bu oyunda ne dedik?
+
+292
+00:19:41,589 --> 00:19:42,589
+İki tane takım var dedik.
+
+293
+00:19:42,589 --> 00:19:46,589
+Yani şimdi bir takım kendisiyle maç yapamaz.
+
+294
+00:19:46,589 --> 00:19:49,589
+Yani bir oyun hadisesi vücuda geldiyse, çıktıysa.
+
+295
+00:19:49,589 --> 00:19:51,589
+O zaman mutlaka iki takım olması lazım.
+
+296
+00:19:51,589 --> 00:19:52,589
+Bakın mutlaka dedim.
+
+297
+00:19:52,589 --> 00:19:53,589
+Yani o zaman burası iki çizgi.
+
+298
+00:19:53,589 --> 00:19:55,589
+Buranın da iki çizgi olması lazım.
+
+299
+00:19:55,589 --> 00:19:57,589
+Bakın biraz daha detaylandırdık.
+
+300
+00:19:57,589 --> 00:19:59,589
+Yani tasarımamızı.
+
+301
+00:19:59,589 --> 00:20:00,589
+Burada yanlış varmış mesela.
+
+302
+00:20:00,589 --> 00:20:02,589
+Şu iki çizgi olacakmış bunlar.
+
+303
+00:20:02,589 --> 00:20:04,589
+Evet.
+
+304
+00:20:04,589 --> 00:20:08,589
+Derse böyle dinlerseniz katılım da hemen kolay olacak.
+
+305
+00:20:08,589 --> 00:20:09,589
+Yani çok bir beklentim olmuyor.
+
+306
+00:20:09,589 --> 00:20:10,589
+Yani bir yorum sadece işte.
+
+307
+00:20:10,589 --> 00:20:16,589
+Şurada N olsun, A olsun, B olsun bir ses verseniz ben de memnun olurum.
+
+308
+00:20:16,589 --> 00:20:21,589
+Yoksa böyle %100 doğru cevap veya işte mükemmel bir şey beklemiyoruz.
+
+309
+00:20:21,589 --> 00:20:22,589
+Evet.
+
+310
+00:20:22,589 --> 00:20:32,589
+Hocam ben bir önceki şey dedik ya hani oyuncunun zayıf yani weak entity olması durumu.
+
+311
+00:20:32,589 --> 00:20:34,589
+Oyuncunun değil, oyunun.
+
+312
+00:20:34,589 --> 00:20:35,589
+Ha oyunun.
+
+313
+00:20:35,589 --> 00:20:36,589
+Evet.
+
+314
+00:20:36,589 --> 00:20:38,589
+O kısmını ben çok anlamadım.
+
+315
+00:20:38,589 --> 00:20:42,589
+Yani böyle yani buraya nereden vardık soruda biletilmiyor.
+
+316
+00:20:42,589 --> 00:20:44,589
+Zaten biletilmez bu.
+
+317
+00:20:44,589 --> 00:20:47,589
+Açıkçası bence ben de daha önceden düşünmemiştim.
+
+318
+00:20:47,589 --> 00:20:48,589
+Şimdi şey yaptım.
+
+319
+00:20:48,589 --> 00:20:51,589
+Şuradaki Pramiliki hoşuma gitmedi.
+
+320
+00:20:51,589 --> 00:20:52,589
+Niye gitmedi?
+
+321
+00:20:52,589 --> 00:20:56,589
+Çünkü bu oyunları yani şimdi Pramiliki'yi niye arıyoruz?
+
+322
+00:20:56,589 --> 00:21:00,589
+Şimdi burada da Pramiliki'ler var ama onlar soruda detaylandırılmamış.
+
+323
+00:21:00,589 --> 00:21:02,589
+Ama bunlar için Pramiliki'yi bulmak kolay.
+
+324
+00:21:02,589 --> 00:21:05,589
+Yani oyuncunun işte bir TC ekimlik numarası var.
+
+325
+00:21:05,589 --> 00:21:07,589
+Takımın bir adı var.
+
+326
+00:21:07,589 --> 00:21:12,589
+Yani aynı işte Türkiye'de mesela takımlar yani Fenerbahçe bir tane mesela.
+
+327
+00:21:12,589 --> 00:21:15,589
+İkinci bir kurum kuruyoruz, takım kuruyoruz.
+
+328
+00:21:15,589 --> 00:21:17,589
+Fenerbahçe olsun denmez yani.
+
+329
+00:21:17,589 --> 00:21:19,589
+Takımın ismi de yine Pramiliki.
+
+330
+00:21:19,589 --> 00:21:20,589
+Bunlar basit.
+
+331
+00:21:20,589 --> 00:21:24,589
+Ama şu oyun için Pramiliki yani anahtar.
+
+332
+00:21:24,589 --> 00:21:29,589
+Çünkü ne dedik yani varlıkları birbirinden ayırt edecek bir anahtara ihtiyacım var.
+
+333
+00:21:29,589 --> 00:21:30,589
+Var.
+
+334
+00:21:30,589 --> 00:21:31,589
+Var da niye var?
+
+335
+00:21:31,589 --> 00:21:32,589
+Tamam.
+
+336
+00:21:32,589 --> 00:21:36,589
+Var olduğu onun geleksinimin noktası fiziksel tasarma da bakıyor.
+
+337
+00:21:36,589 --> 00:21:38,589
+İşte aramayla ilgili şeye bakıyor.
+
+338
+00:21:38,589 --> 00:21:41,589
+Çünkü bir şekilde bu varlıkları birbirinden ayırt etmem lazım.
+
+339
+00:21:41,589 --> 00:21:42,589
+Bu gerçek hayatta da öyle.
+
+340
+00:21:42,589 --> 00:21:45,589
+Hani hepimizin bir okula girdiğimiz zaman numarası farklı.
+
+341
+00:21:45,589 --> 00:21:51,589
+Çünkü bize has olan şeyleri orada hatırlatacak bir niteliğe ihtiyacım var.
+
+342
+00:21:51,589 --> 00:21:53,589
+O da benim okul numaramı oluyor.
+
+343
+00:21:53,589 --> 00:21:55,589
+Demek ki böyle bir ihtiyaç var.
+
+344
+00:21:55,589 --> 00:21:58,589
+Şimdi burada da o zaman böyle bir varlık seti belirledik.
+
+345
+00:21:58,589 --> 00:22:02,589
+O zaman burada da bir anahtar nedir acaba diye kurcalıyorum şimdi.
+
+346
+00:22:02,589 --> 00:22:10,589
+Elimdeki verilen tutulan nitelikler noktasında tarih ve sonuç bilgilere tutulmuş oyun için.
+
+347
+00:22:10,589 --> 00:22:20,589
+Bu tarih ve sonuç diyorum ki ben de tarih ve sonuç ikisi beraber bu oyunları birbirinden ayırt etmek için yeterli değil diyorum.
+
+348
+00:22:20,589 --> 00:22:21,589
+Bunu düşünelim.
+
+349
+00:22:21,589 --> 00:22:22,589
+Yeterli değil.
+
+350
+00:22:22,589 --> 00:22:23,589
+Değil mi?
+
+351
+00:22:23,589 --> 00:22:37,589
+Çünkü yani aynı tarihte hadi saatte tutsak, dakikada tutsak, saniyede tutsak aynı saniyede o günün aynı günün aynı saniyesinde başlayan ve aynı şekilde neticelenen, sonuçlanan müsaba kadar olabilir.
+
+352
+00:22:37,589 --> 00:22:40,589
+E zaman ne oldu bakın biricik olmadı.
+
+353
+00:22:40,589 --> 00:22:45,589
+Yani bu ikisi birden primeliki ben burada böyle yanlışım ama olmadı veya zorlama oldu.
+
+354
+00:22:45,589 --> 00:22:48,589
+Nasıl bir varsayımla bu primeliki olabilir?
+
+355
+00:22:48,589 --> 00:22:56,589
+Desem ki aynı tarihte bir günde burada tarih gün tutuluyor ve bir günde sadece bir müsabaka oluyor desem o zaman olur.
+
+356
+00:22:56,589 --> 00:22:59,589
+Ama hani gerçekçi bir varsayım değil.
+
+357
+00:22:59,589 --> 00:23:02,589
+Yani çok kısıtladık ama dünyayı küçük dünyayı.
+
+358
+00:23:02,589 --> 00:23:06,589
+Çok budadık yani böyle ama gerçek hayatta öyle olmaz.
+
+359
+00:23:06,589 --> 00:23:17,589
+Desem ki her saatte mutlaka hani belli bir saatte bir tane maç oluyor desem tamam o zaman gün değil de burada saat bilgisi tutsam o zaman tamam primeliki olur.
+
+360
+00:23:17,589 --> 00:23:21,589
+Bakın hep zorlayarak burada bunu primeliki kıldım.
+
+361
+00:23:21,589 --> 00:23:25,589
+Oysa daha güzel bir primeliki olabilir diye aklıma geldi.
+
+362
+00:23:25,589 --> 00:23:29,589
+Ne dedik bunlar nitelik olsunlar tarih sonuç istediği kadar tekrar etsin.
+
+363
+00:23:30,589 --> 00:23:33,589
+İster gün tut ister milisaniye tut fark etmez.
+
+364
+00:23:33,589 --> 00:23:34,589
+İstediği kadar tekrar etsin.
+
+365
+00:23:34,589 --> 00:23:45,589
+Unik bunlar olmasın ama ben oyun için bunun bir tane güçlü bir varlık belirlesem o güçlü varlık da bu oyundaki takımlar.
+
+366
+00:23:45,589 --> 00:23:51,589
+Yani bu takımların bu takımların bu tarihteki oyunları bu uniktir.
+
+367
+00:23:51,589 --> 00:23:59,589
+Yani bu bu unique kılacaktır şey yani burada artık şöyle bir varsayım yapabilirim.
+
+368
+00:23:59,589 --> 00:24:09,589
+Tarih bilgisi eğer gün ise gün tutuluyorsa o zaman bu takımlar aynı günde iki tane müsabaka yapmıyorlarsa yapmıyorlarsa burada gün tutabilirim.
+
+369
+00:24:09,589 --> 00:24:19,589
+Daha rahat bir varsayım oldu bu yani iki takım yani birincilik düşünelim mesela hiçbir zaman aynı günde iki müsabaka olmaz yani.
+
+370
+00:24:20,589 --> 00:24:30,589
+Veya hadi biraz da şey olsun saat tutalım yani aynı saatte maç zaten işte iki saat sürüyor aynı saatte iki tane maç yapabilirler yapamazlar.
+
+371
+00:24:30,589 --> 00:24:37,589
+Yani işte bakın küçük dünyayı oradaki hadiseleri burada bu modelimize taşıyoruz.
+
+372
+00:24:37,589 --> 00:24:45,589
+O zaman bu daha güzel oldu daha doğru oldu yani tarih ne olursa olsun fark etmez gün ay olur.
+
+373
+00:24:45,589 --> 00:24:50,589
+Burada tarihinde detayları da önemli yani burada tarih ne tutuyoruz gün mü tutuyoruz saat mi saniye mi tutuyoruz.
+
+374
+00:24:50,589 --> 00:24:53,589
+Tamam bunları detaylandırmak gerekiyor.
+
+375
+00:24:53,589 --> 00:25:02,589
+O zaman bunu güçlü yaptık bunu da zayıf yaptık bu güçlüğe iki bağıntı iki bağıntıdan birden bağlanması lazım.
+
+376
+00:25:02,589 --> 00:25:11,589
+Yani bunun Prime 2'yi ne olacak bakın yani bunun anahtarı hem bu iki tane anahtar gelecek buradan.
+
+377
+00:25:11,589 --> 00:25:23,589
+Yani burada evveldeki örneklerimizde bir tane güçlü varlık oluyordu burada şimdi iki tane güçlü varlıklar iki tane güçlü varlığın anahtarları gelecek.
+
+378
+00:25:23,589 --> 00:25:37,589
+Artı bir tane de tarih ayırt edici niteliği olacak esasında bu dönüşümleri ilişki model dönüşümlerini yaptığımız zaman bu bunu tekrar yani bunun anahtarı ne olması gerekiyor.
+
+379
+00:25:38,589 --> 00:25:50,589
+Evet bunu işte böyle düşünün arkadaşlar bu örnekleri bayağı zaman harcadık burada mesela kaç oldu saat yarım saat geçti.
+
+380
+00:25:50,589 --> 00:25:51,589
+Niye böyle oluyor.
+
+381
+00:25:51,589 --> 00:26:04,589
+Evet şu örnek burada mesela buna bakalım gene basit bir örnek sonra bir de uçak rezervasyonu örneği var şu örneğe bakacağım sonra bu saati bitirmiş olacağız.
+
+382
+00:26:04,589 --> 00:26:15,589
+Yani bunlarda bakın bunlarda kanaat etmeyin burada 10 15 tane var örnek güzel örnekler belli bir şekilde soktuk biz bunları fakat çok örnekler var.
+
+383
+00:26:15,589 --> 00:26:22,589
+Yani bu örneklerde böyle ne kadar yapsanız o melekeyi kazanmanız çok rahat olacak.
+
+384
+00:26:22,589 --> 00:26:37,589
+O yüzden ve çok da önemli bir konu yani veritabanın noktasında yani veritaman sadece esküel yani değil tabii ki esküel ayrı bir kurs gibi bir şey bu tasarım kısmı böyle hassas bir ayrı bir yetenekli diyelim yani ayrı bir meleke gerektiren bir şey.
+
+385
+00:26:37,589 --> 00:26:46,589
+Çünkü nasıl ağacın çekirdeği bütün ağacın meyvelerine çiçeklerine bakıyor değil mi çekirde bozuk olunca ne oluyor.
+
+386
+00:26:47,589 --> 00:26:57,589
+Ağaç da hani biraz meyve verse de meyveleri de çürüyor yani çünkü çekirdekli bir arıza var hani onun gibi bu veritabanı ilk adımımız ne oldu.
+
+387
+00:26:57,589 --> 00:27:06,589
+Tasarım oldu yani bu tasarım bütün ağacın her tarafına etkiliyor öyle düşünebiliriz yani o zaman bu tasarımdaki vereceğimiz kararlar kritik oluyor.
+
+388
+00:27:06,589 --> 00:27:19,589
+Yani şurada tek çizgi iki çizgi burada birinci anahtar yapayım falan bunlar hepsi doğru ama ağacın ömrü kısa olacak yanlış olmayacak yani onu o şekilde şey yapabiliriz.
+
+389
+00:27:19,589 --> 00:27:32,589
+Evet bu örneğe bakalım mesela bir banka hesabına ait işlemler hakkında işlem zamanı gün saat işlem tipi ve miktar bilgileri tutuluyor.
+
+390
+00:27:32,589 --> 00:27:43,589
+Bu olayı takip eden IR Diagram'ı bir kere bu olayı böyle bir analiz tahliye etmemiz gerekiyor burada işlemin saat bilgisi tutuluyor.
+
+391
+00:27:43,589 --> 00:27:58,589
+Yani bu hesaptaki işlemler bir kere bu bir hesapta birden çok işlem olacak değil mi bu hesapta işte yatırma olacak para çekme olacak birden çok işlemi takip etmek istiyoruz.
+
+392
+00:27:58,589 --> 00:28:18,589
+Yani bununla ilgili işte ne gibi sorgular olacak bu hesapta kaç tane işlem oldu son iki saat içerisinde mesela atıyorum hangi tip işlemler oldu ama hani kim yaptı bu işlemi bu yani işlemlere arası hesap aktarımı bunu takip etmiyoruz yani sadece basit yani daha küçük bir dünya oldu bu.
+
+393
+00:28:18,589 --> 00:28:46,589
+O zaman burada bizim bu hesabımızdaki birden çok işlemi birenlik bir bağıntı ile tutabiliriz ve bu işlemin miktarı ve tipi yani paramı yatırdık paramı çektik o bilgileri tutuyoruz ve hangi gün ve saatte zaten burada söylüyor yani hesap hesapla ilgili işlem zamanı işlem tipi ve miktar bilgileri miktar işlem tipi ve gün ve saat bilgileri tutuldu.
+
+394
+00:28:46,589 --> 00:29:03,589
+Bu iki varlıkta bu şekilde bağıntı oldu bu işlem işte bir hesap üzerinde bir işlem yani o işlem o miktar para bu hesaptan çekildi ama hangi hesaba gitti onu tutmuyoruz yani öyle bir derdimiz yok.
+
+395
+00:29:03,589 --> 00:29:33,589
+Bu bunu orada belirtmemiş yani çünkü şimdi burada mesela işlem için bakıyoruz hesap için hesap numarası gayet kolay bir primary key yani onu da burada ifade etsem güzel olurdu da kolay diyorum ama ifade etmemişiz yani ama onu düşünmek kolay ama işlem için daha bunu zayıf olduğunu karar vermedim iki çizgi çıkıyor da bu niteliklerle beraber bakıldığı zaman burada güçlü olabilecek bir durum nedir yani güçlü
+
+396
+00:29:33,589 --> 00:30:02,990
+bunun için bir anahtar belirleyebiliyor muyum bunun için bir anahtar ne olabilir yani miktar olabilir mi olamaz yani birden çok işlem aynı miktarda olabilir aynı tipte birden çok işlem olabilir bunlar hiç anahtar olma şeyi yok saat bilgisi aynı saatte birden çok işlem olabilir aynı günde olabilir o zaman ikili düşüneyim yani ikili üçlü dörtlü düşüneyim yani bütün hepsini beraber düşüneyim yani
+
+397
+00:30:03,589 --> 00:30:33,549
+Ne diyelim mesela işte aynı günde aynı saatte aynı miktar para aynı tip işlem aynı saat içerisinde olabilir mi gene olabilir hepsini de alsam bakın gene unique kılmadı yani çünkü aynı saat içerisinde işlemler olabilir yani 15 dakikada bir aynı miktar para aynı miktar para çekilmiş olabilir burada o zaman bakın ne oldu buradaki bütün nitelikleri bir araya
+
+398
+00:30:33,589 --> 00:30:56,950
+gitsem dahi şurada da onu belirtiyor zaten orada başka şey belirtiyor pardon böyle olsa o zaman bu hesap içerisinde bütün bu nitelikleri de toplasam bu işlem için unique kılamadık bunu yani o zaman bu zayıf olması gerekiyor ona karar verdik bir kere bu zayıf olması gerekiyorsa bunun güçlüsü nedir
+
+399
+00:30:56,950 --> 00:31:20,829
+Bunun güçlüsü aynı hesap üzerinde aynı hesap üzerinde burada bir tane ne belirleyeceğiz bir tane ayırt edici nitelik gün saat gün ve saati ayırt edici nitelik olarak düşündük gün ve saat yani aynı hesap üzerine gün ve saat bilgisi
+
+400
+00:31:20,829 --> 00:31:51,460
+Yani burada bu bu güçlü varlıkla beraber düşündüğümüz zaman bu hesapta artık aynı saat içerisinde yani bu şart altında yani bu kuşul altında aynı saat içerisinde işlem birden çok işlemin olmayacağını düşünerek bu ikisini ayırt edici nitelik olarak belirledik yani güçlüsü olacak şekilde
+
+401
+00:31:52,420 --> 00:32:01,819
+Ama şu durum ne olacak farklı hesaplarda aynı saat içinde aynı miktar tip işlem olabilir işte bunun önüne geçmek için şuraya saniye ekledik mesela
+
+402
+00:32:01,819 --> 00:32:23,980
+Yani bu saniye eklersek farklı hesaplarda aynı saniye içerisinde böyle bir işlem olur yani bu noktada artık daha da detaylandırabiliriz bunu yani saniye daha da veya işte artık burada bu ayırt edici nitelik bu şekilde olamıyorsa buna ayrı yeten yapay olabilecek bir işlem numarası koymamız lazım
+
+403
+00:32:23,980 --> 00:32:53,940
+Yani dikkat ederseniz mümkün olduğunca zayıf olarak eğer buradaki nitelikler yeterli olmuyorsa zayıf varlık olarak zayıf varlık kılıyoruz zayıf varlık yapmaya çalışıyoruz ama mümkün olmuyorsa da en nihayetinde şöyle bir durum varsa burada aynı saniyede farklı hesaplar bu tip bütün bunlar bütün bu işlemleri yapıyorsa aynı tip aynı miktar aynı gün aynı saatte aynı saniyede farklı hesaplar bu işlemler
+
+404
+00:32:53,980 --> 00:33:22,940
+yapıyor yapıyor iseler o zaman bu da yeterli olmadı ayırt edici nitelik noktasında farklı kılamadık yani bu işlemleri öyle öyle bir durumda bunu artık buna bir tane işlem numarası diye bir primary ki koymamız gerekiyor Evet burada bu şekilde böyle detayları çalışırken siz düşünürsünüz yine dediğim gibi bunlar tam doğru olmayabilir
+
+405
+00:33:22,940 --> 00:33:52,900
+Bunları doğru olacak şekilde veya doğru olabilir veya farklı şekilde ifade edilebilir gene hocam bir şey sorabileyim mi hocam burada dakika eklemedik yanlış olmadı mı yani sadece saniye ekledik doğru dakika eklesek esasında saatten saniyeye uçmuşuz bir anda iki olarak dakika eklense ama mesele problem yani değişmiyor yani dakika eklesek
+
+406
+00:33:52,940 --> 00:34:22,940
+etrafta dakika tutsak o zaman diyeceğiz ki aynı dakika içerisinde aynı dakika içerisinde bir hesap bir işlem yapabilir o zaman tamam yani işte şu anda saat kaç dokuz kırk bir dokuz kırk birde bu hesaptaki işlemler bir tane işlem olabilir desek bunu onu kurtarıyor yani şunlar bir daha o dakika içerisinde tekrar etmemiş oluyor ama bir dakika sonra başka işlem olabilir sana saniye daha gerçek
+
+407
+00:34:22,940 --> 00:34:38,900
+için yani bir saniye de bir saniye içerisinde bir işlem olabiliyor bu bizim bu bu doğru oluyor yani saniye bir saniye de bir işlem oluyorsa doğru olmuş oluyor tamam teşekkürler
+
+408
+00:34:38,900 --> 00:35:10,150
+evet şimdi 10 dakika var şu uçak rezervasyonu öne bakalım burada bakın karşımda çıkan şey böyle bir tasarım bu yani bu biraz biraz kapsamlıca bir tasarım oldu daha büyük ölçekli bir veri tabanı ilk olarak gereksizliğin listesine şöyle okumadan bakalım ne gibi bir şey var yani
+
+409
+00:35:10,150 --> 00:35:24,550
+esasında buradan buradan bunu çıkarmak var bir de buraya bakarak gereksizliğin listesini hazırlayın o da var yani reverse engineering deniyor yani üründen bu sefer
+
+410
+00:35:24,550 --> 00:35:54,469
+modele doğru gitmek tarzında da olabilir bu sefer de böyle yapalım değişiklik olsun burada nasıl bir küçük dünya var acaba buraya baksak burada mesela havalimanları ve havalimanları uçaklar var yani bu uçakların tipleri tutuluyor her bir uçağın böyle bir tipi var ve her bir her uçak her havalimanına inemiyor
+
+411
+00:35:54,469 --> 00:36:21,510
+tamam yani mesela bir kargo uçağının inemeyeceği pistler var değil mi o yüzden burada bunu bu şekilde şey yapmış yani bu uçakların işte idleri var işte kaç koltuğu var bunlarla ilgili detaylar tutuluyor uçakların ve bu uçakların da tipi var fakat her tip uçak her havalimanına inemediği için burada
+
+412
+00:36:21,510 --> 00:36:51,429
+aileten tipi bakın normalde tip olarak biz ne şey yaparız normalde tip böyle bir nitelik olarak tanımlarız yani işte uçağın tipi işte Boeing veya işte kargo yolcu falan neyse artık bu şekilde tipleri ifade ederiz ama tip için ayrı bir şey şey yapmış ve tip name'i burada bir nitelik olarak bunu anahtarı olarak belirlemiş ve burada bu tip uçakların da inebileceği pistler havalimanları
+
+413
+00:36:51,510 --> 00:37:20,869
+bu tabi işte birden çok havalimanı ve o havalimanına inen birden çok gene tipte uçak olabilir bu şekilde bakın senaryomuzun şey IR diagramımızın sol tarafında bu gibi hadiseler var sonra bu uçakta bir kere neler tutuluyor uçuşlar tutuluyor uçuş bilgileri yolcu bilgileri var mı yolcu bilgileri yok bakıyoruz demek ki bu uçakların uçuş planları yaptıkları
+
+414
+00:37:20,949 --> 00:37:30,070
+uçuşları tutan bir veri tabanı bu şimdi burada her bir uçak uçak bilgileri bunlar bu uçağın
+
+415
+00:37:30,070 --> 00:37:46,230
+burada bir uçuş bilgileri var bakın şu gene zayıf olduğu için şuradan başlayacağız şeye hadiseyi anlamaya açıklamaya uçuş bilgileri var flight bu uçuşun
+
+416
+00:37:46,230 --> 00:38:16,150
+bu uçuşun farklı ayakları var ne demek ayakları yani farklı adımları çünkü mesela buradan işte Avusturya Avustralya gidiyorsak mesela hani bir kez bir kerede gidilmiyor birden çok adımdan gidiyor uzak olduğundan dolayı ya da işte bilet bulunamıyor bizim bu uçuşumuz birden çok adımdan oluşuyor yakın bir yerde olsa mesela aktarmalı gidebiliyoruz yani gitmek zorunda kalabiliyoruz öyle olunca bu uçuşumuzun
+
+417
+00:38:16,710 --> 00:38:36,309
+birden çok ayağı var flight leg flight leg ve her bir ayağı uçuşun ayağı uçuşun adımı bu uçuşun adımının da bir instansı var instans yani vücude çıkması ortaya çıkması ortaya ortaya gelmesi ortaya çıkması diyelim
+
+418
+00:38:36,789 --> 00:38:49,869
+Şimdi bu uçuşun bu adımında da bu uçak kullanılmış yani ben buradan işte Avustralya'ya giderken hani tek bir uçakla gitmiyorum
+
+419
+00:38:49,869 --> 00:38:50,869
+Bakın küçük dünya değil mi çok detaylanıyor yani bunu buraya taşımak kolay değil esasında yani bunları böyle tasarmamızda düşünüyoruz ve bunları bu şekillerde ifade ettik ne dedik uçan uçuşumuzun uçuş bilgilerine bakıyorum uçuşun birden çok ayaktan oluşuyor her bir uçuşun ayağı da ne var bir uçuş instansı çünkü bu olayın bir planlanan kısmı yani bizim bu uçuşumuzun planlanan
+
+420
+00:39:19,869 --> 00:39:32,869
+bir şey var çünkü önceden daha uçuş hadisesi başlamamış bu uçuşun planlanan bir hali bu bize önceden geliyor bu bilette mesela değil mi veya görüyoruz alışveriş sırasında ve bu plan
+
+421
+00:40:02,869 --> 00:40:20,869
+Planlandığı gibi yani kaza falan olmuyor normal şartlarda indiği yer şey oluyor hedeflenen havalimanı o ev portu olmuş oluyor öyle olduğunu düşünüyoruz normal şartlarda ve bu sefer burada ne tutuluyor gerçek zamanda
+
+422
+00:40:20,869 --> 00:40:47,869
+bu uçuşun bu ayağının bu hadisenin yani şeyi planlanan şekilde öyleyken lek instans bu bu uçuşun bu flight lekin bu ortaya çıkan hali lek instansın bu sefer bakın ne var Departure time arrival time'ları var yani
+
+423
+00:40:47,869 --> 00:41:16,869
+Bunlar şu değerler scheduled Departure time Departure time bu iki değer birbirine yakın ama arada ne var rötörler var rötör yani gecik neler oluyor ya işte 5 dakika geç kalkıyor işte 10 dakika erken iniyor planlanana göre farklı o zaman demek ki bu bizim gerçek hayatta ortaya çıkan lek instansın bu sefer nesi gerçek zamanları iniş ve kalkış gene ama aynı port'a şu tarihte indi şu tarihte
+
+424
+00:41:17,869 --> 00:41:46,869
+Kalktı gibi burada bakın flight length flight lek olsun lek instansı olsun Hatta bakın o lek ist instansın city yani bu lek instans uçuşun bu ayağındaki birenlik yani o uçuşun bu ayağında kullanılan uçak bir tane ve o uçağında koltukları o koltukların da numaraları gene işte uçağın içerisinde işte 300 tane koltuk varsa
+
+425
+00:41:47,869 --> 00:42:11,869
+Bu uçağın bu uçaktaki koltuklar koltuk numaraları burada bakın customer name tutuluyormuş yani müşteriyle ilgili detaylar tutulmuyor ama bu rezervasyonu ya bu uçağın bu koltuğunun bu rezervasyonu kime ait gene müşterinin numarası telefon numarası burada tutuluyor böylece ne oldu bakın yani bir koltuk
+
+426
+00:42:11,869 --> 00:42:39,869
+Bu koltuk bu koltuk bizim şu uçağın koltuğu çünkü bu uçağın bu koltuk bu sit numarası hangi lek instansın yani şu tarihteki uçuşun koltuğu bu yani fiziksel olarak o koltuğa işaret ediyoruz bakın yani şu uçuşun şu uçuşun şu ayağının şu adımının
+
+427
+00:42:40,869 --> 00:42:48,869
+Şu uçaktaki bu uçaktaki şu koltuğu bunu bir müşteri rezerve etmiş müşterinin telefon numarası
+
+428
+00:42:49,869 --> 00:43:08,869
+Burada bağıntı birer endik böylece yani burada şöyle yapsak yani şuradaki tanımladığım varlıkların hepsi için bir yapay primeliki tanımlayabilirdik yanlış olmazdı ama bunlar için ayrı bir primeliki ayrı bir bilincen anahtar yapmadım bakın
+
+429
+00:43:08,869 --> 00:43:21,869
+Bakın ve hepsi zayıf oldu ve hepsi nereye bağlı şu flight'a bağlı yani şuradaki bir koltuğun anahtarı nedir desek sit numarası date
+
+430
+00:43:22,869 --> 00:43:37,869
+Lek numarası ve number işte şimdi yani şuradaki nitelikler bir araya gelince bunlar bir araya gelince o zaman o koltukları birbirinden ayırt ettik bilmiyorum takip edebiliyor musunuz
+
+431
+00:43:37,869 --> 00:44:00,869
+Bakın şu şunu dahil etmedim bunun güçlüsü güçlüsü için bakın şu çift çizgi olanları takip ettim şu çift çizgi olanları takip ettim burada durduk yani şunun anahtarı nedir desek sit numarası date leck numarası böylece koltukları birbirinden ayırt ettik
+
+432
+00:44:00,869 --> 00:57:40,840
+Yani bu tasarım mesela veya profesyonel bir tasarım yani uçak rezervasyonu rezervasyonundan ziyade uçuş bilgilerinin takip edildiği bir veri tabanı olarak isterseniz şimdi ara verelim bu arada da buna bir göz gezdirin 10 dakika sonra görüşürüz başlıyorum
+
+433
+00:57:40,840 --> 00:57:47,960
+Sesim geliyor değil mi
+
+434
+00:57:47,960 --> 00:57:52,389
+Geliyor canım
+
+435
+00:57:52,389 --> 00:57:54,389
+Evet
+
+436
+00:57:54,389 --> 00:57:56,389
+Evet uçak rezervasyon sistemi böyle
+
+437
+00:57:56,389 --> 00:58:00,389
+Şunu bir de gereksinin sesine okuyalım buradan giderek o şekle bakalım
+
+438
+00:58:00,389 --> 00:58:06,389
+Her bir uçuş için bir numaramız var ve bu uçuş birden çok ayaktan oluşuyor
+
+439
+00:58:06,389 --> 00:58:11,389
+İşte uçuşun birinci ayağı ikinci ayağı üçüncü ayağı gibi
+
+440
+00:58:11,389 --> 00:58:14,389
+Ve her bir uçuş ayağı
+
+441
+00:58:24,389 --> 00:58:29,389
+Demek ki her bir uçuşunda fiyatlandırılması yapılıyor
+
+442
+00:58:29,389 --> 00:58:40,389
+Uçuşun ayakları, uçuşun her bir adımıyla ilgili birden çok adım onlarla ilgili varış ve kalkış saatleri
+
+443
+00:58:40,389 --> 00:58:48,389
+Ve indikleri havalimanları o bilgiler ve gene uçuşun ücretlendirilmesi
+
+444
+00:58:48,389 --> 00:58:56,389
+Daha sonra her bir uçuşun adımında koltuk rezervasyon bilgisi tutuluyor
+
+445
+00:58:56,389 --> 00:58:59,389
+Her bir uçuşun her bir adımında
+
+446
+00:58:59,389 --> 00:59:06,389
+Ve o uçuşun adımında hangi uçak kullanıldı
+
+447
+00:59:06,389 --> 00:59:12,389
+Ve uçuşun o adımında gerçek değerler, arrival ve departure için gerçek değerler
+
+448
+00:59:12,389 --> 00:59:19,389
+Biz bunları da biraz önce iara bakarak çıkardık, bu manaları da çıkardık esasında
+
+449
+00:59:19,389 --> 00:59:23,389
+Tabii hani bildiğim için biraz daha kolay oldu çıkarmam ama
+
+450
+00:59:23,389 --> 00:59:30,389
+Hani nihayetinde işte o şeyi kazanarak buradan oraya veya oradan buraya bu geçişleri yapabilmek lazım
+
+451
+00:59:30,389 --> 00:59:36,389
+Daha sonra diğer kısımlar nispeten daha kolay herhalde esas şunun ikisi zordu
+
+452
+00:59:36,389 --> 00:59:44,389
+Her bir uçağın işte numarası ve hangi tip uçak ve daha sonra hangi tip uçaklar nereye inebilir
+
+453
+00:59:44,389 --> 00:59:51,389
+Ve her bir havalimananın da kodu var
+
+454
+00:59:51,389 --> 00:59:57,389
+Şimdi burada kullandığımız modelleri yani şurada bir model kullandık yani bu model işte bu oldu
+
+455
+00:59:57,389 --> 01:00:04,389
+Bu modellerin farklı küçük dünyalardaki benzer hadiselerde de aynı şablonu kullanabiliriz
+
+456
+01:00:04,389 --> 01:00:07,389
+Yani şimdi bunu öneklendirmek kolay değil ama
+
+457
+01:00:07,389 --> 01:00:13,389
+Buna böyle bir meleke kazandıktan sonra bu yapıya şu mesela şöyle bir yapı kurdu burada
+
+458
+01:00:13,389 --> 01:00:20,389
+Yani şu uçuşların işte ayakları her bir uçuşun her bir ayağının bir planlanan şeyi var
+
+459
+01:00:20,389 --> 01:00:24,389
+Bir de işte gerçek zamandaki durumu var
+
+460
+01:00:25,389 --> 01:00:32,389
+Bu uçak olmaz işte otobüs tren seferleri olur mesela misal yani uçuşun ayakları olmaz
+
+461
+01:00:32,389 --> 01:00:39,389
+Ama sadece uçuş içinde olabilir bu uçuşun işte birden çok adımı olmaz bu sefer farklı bir küçük dünyada
+
+462
+01:00:39,389 --> 01:00:47,389
+O uçuşun işte şey o yolculuğun diyelim bir planlanan arrival departure'ları var
+
+463
+01:00:47,389 --> 01:00:50,389
+Bir de gerçek zamanda olanları var olabilir
+
+464
+01:00:50,389 --> 01:00:59,389
+Gene işte bakın burada o şeyin o yolculuğun işte o yolculukta kullanılan koltuklar
+
+465
+01:00:59,389 --> 01:01:04,389
+Orada koltukların her birine böyle güçlü yapmaya gerek yok
+
+466
+01:01:04,389 --> 01:01:11,389
+Yani burada çünkü o koltuğu bir yolculukta bir müşteri kullanıyor başka yolculukta başka müşteri kullanıyor
+
+467
+01:01:11,389 --> 01:01:13,389
+O zaman unique oldu bu
+
+468
+01:01:13,389 --> 01:01:19,389
+Uçuş tek başına uçuş koltuk numarası olmadı
+
+469
+01:01:19,389 --> 01:01:27,389
+Ama hani belki başka bir tasarım mesela şu uçağın koltuğu olarak düşündüğümüz zaman şöyle bir bağlantı yapabilirdik
+
+470
+01:01:27,389 --> 01:01:31,389
+Yani şu seat şu uçağa bağlanabilir
+
+471
+01:01:31,389 --> 01:01:38,389
+Bu gene zayıf olur bu uçakla beraber uçak numarası ile beraber uçak içerisindeki koltuk numarası
+
+472
+01:01:38,389 --> 01:01:44,389
+Aynı bizim o fatura faturadaki satın numarası gibi düşünürsek ona benzer şekilde
+
+473
+01:01:44,389 --> 01:01:49,389
+Yani o uçağın o çünkü farklı uçaklarda aynı koltuk numaraları olacak
+
+474
+01:01:49,389 --> 01:01:54,389
+Yani işte 1ab oluyor değil mi 2ab mesela cd falan
+
+475
+01:01:54,389 --> 01:02:00,389
+E bu unique olmaz koltuk numarası ama ancak bu gene zayıf olur güçlüsü bu olabilir
+
+476
+01:02:00,389 --> 01:02:02,389
+Ama bizim buradaki tasarımıza öyle olmadı
+
+477
+01:02:02,389 --> 01:02:12,389
+Bu bunun güçlüsü gene hiç olmadı yani şu uçuşun bu ayağı hani uçuşlara bağlandı en nihayetinde
+
+478
+01:02:12,389 --> 01:02:15,389
+Bu uçuşun işte şu koltuğu dedik
+
+479
+01:02:15,389 --> 01:02:22,389
+Evet öyle işte yani biraz böyle ben şimdi tabi kolay örnekler birkaç tane yaptık zor örnekler
+
+480
+01:02:22,389 --> 01:02:28,389
+Şunlar nispeten daha kolaydı yani şunların hepsinden yaptık herhalde hemen hemen değil mi
+
+481
+01:02:28,389 --> 01:02:34,389
+Bu mesela daha kapsamlı bir örnek örnek 8'i bunu atlayalım
+
+482
+01:02:34,389 --> 01:02:40,389
+Bunu da siz yaparsınız şimdi bu gene iar şeyi bir milakat falan var
+
+483
+01:02:40,389 --> 01:02:48,389
+Yani burada yeterli bir şekilde açıklama var buna bakarak bunu nasıl yaptık onu siz o çıkarımı yapın
+
+484
+01:02:48,389 --> 01:02:52,389
+Kapınızda takılan bir şey olursa da bana tekrar sorabilirsiniz
+
+485
+01:02:52,389 --> 01:02:56,389
+Yani dersin haricinde olabilir mesaj da olabilir
+
+486
+01:02:56,389 --> 01:03:10,780
+Evet iyi ara bakalım hemen şu derste hemen ilişkiden böyle geçmem gerekiyor
+
+487
+01:03:10,780 --> 01:03:14,780
+İyi yarda da nasıl bir burada bir küçük dünya var
+
+488
+01:03:14,780 --> 01:03:26,780
+Burada daha çok bizim varlıkları yani bakın bağıntı yok burada ya var da bağıntıların kurgulanmasından ziyade o varlık setlerinin biraz daha şekillendirilmesi detaylandırılması
+
+489
+01:03:26,780 --> 01:03:32,780
+Burada mesela burada çalışanlarımız işçilerimiz farklı tiplerde olabiliyorlar
+
+490
+01:03:32,780 --> 01:03:40,780
+Bunların böyle detaylandırılması specialize edilmesiyle ilgili bir örnek
+
+491
+01:03:40,780 --> 01:03:46,780
+Burada bizim işçilerimizdeki işçilerimiz bu bizim fabrika veritabına olabilir laboratuvada kullandığımız işte şöyle diyebiliriz
+
+492
+01:03:46,780 --> 01:03:58,780
+Yani bizim işçilerimizin bir kısmı yönetici bir kısmı işte maaşlı bir kısmı da sözleşmeli yani saat başına ücret alıyor
+
+493
+01:03:58,780 --> 01:04:12,780
+Ve gene diğer bir detaylandırma şekil speciallar etme burada 3 tane speciallar var bakın bir manager bir kısmı manager dedim diğerleri manager değil mesela bu bir şey specialization
+
+494
+01:04:12,780 --> 01:04:20,780
+Şundan bahsettik bir de başka bir speciallar dedik ki buradaki çalışanlarımızın bir kısmı sekreter bir kısmı teknisyen bir kısmı enjiner
+
+495
+01:04:20,780 --> 01:04:28,780
+İşte buradaki bunu daha da şekillendireceğiz yani bu 3 grup birbirinden ayrık yani distinct
+
+496
+01:04:28,780 --> 01:04:45,780
+Ve gene bu şekil bu specialize etme bu özelleştirme diyelim şey değil total değil yani bunun dışında da olabilir bazı kimseler yani ne mühendistir ne teknisyendir ne sekreterdir
+
+497
+01:04:46,780 --> 01:04:55,780
+Atıyorum mesela başka bir işte görevi vardır işte memur katagorisindedir mesela olabilir
+
+498
+01:04:55,780 --> 01:05:06,780
+Burada da gene bakın total değil burada bu ne olmuş total yani buradaki çalışanların hepsi ya sözleşmeli ya da maaşlı olacak
+
+499
+01:05:07,780 --> 01:05:21,780
+Burada 3 tane özelleştirme alt grubu oluştu alt tipi alt varlıkları oluştu bu varlıkların birbiriyle olan kesişimi yani nedir diye şey yapsak
+
+500
+01:05:21,780 --> 01:05:32,780
+Yani bir enjiner mesela aynı zamanda tamam teknisyen ve sekreter olamaz çünkü distinct ama bir enjiner menajer olabilir mi olabilir
+
+501
+01:05:32,780 --> 01:05:45,780
+Çünkü böyle bir özelleştirme başka bir özelleştirme bu yani şuradan çıkan şu şu başka bir hadise bu başka bir hadise o zaman diyebiliriz ki bir enjiner menajer olabilir
+
+502
+01:05:45,780 --> 01:05:56,780
+Bir teknisyen olabilir sekreter menajer olabilir yani burada mesela bu mesela gerçekçi bir şey değil ama şu andaki tasarımımızda öyle
+
+503
+01:05:56,780 --> 01:06:06,780
+Yani bir sekreter menajer olabilir mesela gene bir menajer işte sözleşmeli de olabilir maaşlı da olabilir
+
+504
+01:06:06,780 --> 01:06:22,780
+Yani o şekilde düşünebiliriz gene diğer bir çıkarımımız bu bu şekilde bakarak ne olacak burada şu distinct olduğu için bu mesela bir maaşlı biri
+
+505
+01:06:22,780 --> 01:06:30,780
+Yani kadrolu biri mesela bir sendikaya trade union sendika demek bir sendikaya üye olabilir mi?
+
+506
+01:06:30,780 --> 01:06:43,780
+Olamaz çünkü bu gruba dair bu varlık setinde olan bile ise bu grupta aynı zamanda olamaz çünkü distinct burada olamadığı için de bir sendikaya bağlı olamaz
+
+507
+01:06:43,780 --> 01:06:55,780
+Çünkü şu bağıntı sadece sözleşmeli olanlar için yani onların haklarının korunması için diyelim değil mi buna sendikaya bağlanmışlar yani şurada da enenlik bir bağıntı var
+
+508
+01:06:55,780 --> 01:07:03,780
+Demek ki burada böyle specialized etmenin bir avantajı bu bağıntıları daha sağlam tanınlamak oluyor
+
+509
+01:07:03,780 --> 01:07:20,780
+Yani ben şu bu hiç specialization olmasaydı şu belongs to bağıntısını employee ile trade union arasında yapabilirdim gene ama bu bağıntıya alakadar olan belki buradaki işçilerin işte yarısı veya işte sözleşmeli olanlar kaçsa
+
+510
+01:07:20,780 --> 01:07:35,780
+%10'luk kısmı %20'lik kısmının bir alakası olacaktı bu bağıntıyla şimdi bunu böyle özelleştirdikten sonra bağıntıyı burada tanımlamam artık çok kuvvetli olacak yani belki bu burası tam total olacak belki
+
+511
+01:07:35,780 --> 01:07:48,780
+Ama gene total yapmamış ama tanımı daha doğru bir bağıntı olmuş oldu çünkü bunlara ilgilendiren bir mesele değil sadece sözleşmeli olanlara ilgilendiren bir mesele bu sendikayla olan bağıntıları bunların
+
+512
+01:07:48,780 --> 01:07:58,780
+Ne oldu bakın o küçük dünyayı daha güzel ifade etmiş olduk bu iyi iyi ar sayesinde gene şu projeleri yöneten sadece menajör olabilir
+
+513
+01:07:58,780 --> 01:08:09,780
+Yani mesela bir engineer project yönetebilir mi yönetebilir yani şu grubada dair olabilir ya bunların hepsi gene buraya yönetebilir
+
+514
+01:08:09,780 --> 01:08:12,780
+Evet
+
+515
+01:08:12,780 --> 01:08:17,779
+Evet bunları burada söz et dedik
+
+516
+01:08:18,779 --> 01:08:34,949
+Evet burada bir soru var mı arkadaşlar yani buna ait olan bir gereksinim listesini işte bu şekilde ben hani bu söze döktüm ama bunu düzgün bir şekilde ifade yani 5-6 maddede ifade edebilmek lazım
+
+517
+01:08:34,949 --> 01:08:47,949
+Daha sonra o 5-6 maddelik o gereksin listesine bakarak bunu çizebilmek lazım yani bu geçişleri böyle hızlı bir şekilde hemen yapabilmek lazım çünkü buna küçük ölçekli yani nispeten şu uçak rezervasyonuna göre yine küçük örnekli
+
+518
+01:08:47,949 --> 01:09:06,949
+Burda gene overlap olabilecek örnekler var disjoint ve overlap. Şu overlap'e bakalım mesela bir parça bir parça ya fabrikada üretilmiş veya şey purchase part bir parçanın tanımlandırılması
+
+519
+01:09:06,949 --> 01:09:25,949
+Bu parçaların numaraları bu üretilen parça üretim zamanı ve satın alınan parça satın alındığı tedarik edilen edildiği yer yani bu nitelikler buna bunun için tanımlı bu nitelikler bunun bu niteliklerde bunun için
+
+520
+01:09:25,949 --> 01:09:48,949
+Ama bu ikisi bu subtype'lar sub entiteler içinde geçerdi yani description bu ikisi içinde geçerdi bu gene bunların ikisi için geçerdi bu de ki her bir parça mutlaka bu iki gruba dair olması lazım ve overlap'miş yani bir parça hem üretilebiliyor hem de bazen de demek ki tedarik ediliyormuş
+
+521
+01:09:48,949 --> 01:10:08,949
+Yani bir parçanın o şu numarada parça mesela bir araba parçası olabilir bu hani mutlaka bu fabrikada üretiliyor yani bizim kendi fabrikamızı üretiliyor değil bazen öyle bazen öyle demek ki o yüzden overlap olmuş bu şekilde gerçek hayatı bu şekilde burada düşünebiliriz yani
+
+522
+01:10:08,949 --> 01:10:37,949
+Evet burada daha kapsamlı bir genelleme özelleşimi örneği var bu güzel bir örnek esasında ama çok fazla zaman kaç tane kaldı bu da gene hafif kapsamlı çok niteliklerle şekli boğmamışız bakın ama nitelikleri koymak nispeten daha kolay yani işte bilgisayarın işte özellikleri falan ama niteliklerden sonra da anahtar belirlemek ayrı bir mesele yani o tip problemlerde
+
+523
+01:10:37,949 --> 01:11:00,949
+Anahtar belirleme onu zayıf yapma falan bu tip bu örneğimizde bu örneklerimizde iyi iyi ağırları belirleme örneği olduğu için diğerleri geri planda kalmış ama tabi bakın onlar da önemli yani burada bu nitelikleri buraya yazmamak olmaz yani yazılması lazım esasında onlar o cepten eksik kalmışlar son olarak şuna bakalım
+
+524
+01:11:01,949 --> 01:11:20,949
+Burada bir üniversite içerisindeki yapılanmayı şey yapıyor buradaki çalışan işçilerimiz mesela kişilerin her biri ya meyazun ya işçi ya öğrenci olacak bütün kadro üniversite kadrosu içerisindeki kimselerden bahsediyoruz
+
+525
+01:11:20,949 --> 01:11:47,949
+Bunların mutlaka bu üç gruba birden dahil olması lazım üç gruptan bir tanesi olması lazım ve overlap yani bir alumni yani mezun manasında aynı zamanda mezun olduktan sonra yine çalışan olabilir yani bu okuldan mezun mesela işte fakültede öğretim görevlisi olmuş mesela yani iki gruba da dahil olabilir alumni çünkü burası overlap yine alumni olup student olabilir
+
+526
+01:11:47,949 --> 01:12:16,949
+olabilir yani yükseksans yapıyordur lisans mezunudur burada yapıyordur lisansın mesela öyle olabilir o zaman overlap daha esnek bir yaklaşım oluyor ya disjönd yaparsak daha dikkat etmek lazım belki yani daha kuvvetli bir varsayım olmuş oluyor alumni bakın şeyleri degree'leri ne olmuş bakın multi-valued olmuş yani çok değerli hangi sene hangi bölümden hangi dereceyi aldı
+
+527
+01:12:17,949 --> 01:12:46,949
+mezun olanlar burada bu nitelikler tutulabilir employees'e salarisi tutuluyor ve employees'e yine specialized edilmiş yani staff fakülti student assistant olarak bazı öğrenci asistanlık oluyor ya mesela hem öğrenci olarak çalışıyor bakın şurada da şu varlığın da üst varlıkları süper varlıkları ne olmuş employee ve student olmuş niye buna ihtiyaç duyduk yani buradan da nitelik al
+
+528
+01:12:46,949 --> 01:13:14,949
+buradan da nitelik al yani student'ın kendine has olan niteliklerini de almak için specialization yapılmış şurada bir de student assistant'ın şuradan bir niteliklerini almak için employee'den niteliklerini almak için bir şey yapılmış o zaman bunun süper varlıkları şu ikisi birden yine şu niteliklerin hepsi yine bu student assistant için yine geçerdi yani şuradaki gördüğünüz bütün niteliklerin hepsi buradaki bütün varlıklar için hepsi için geçerdi çünkü hepsinin süper varlığı bu
+
+529
+01:13:15,949 --> 01:13:37,949
+ama kendilerine göre alt varlıklar kendilerine göre ek işte nitelikler burada tanımlanmış ama mesela bir renk burada bir research assistant için renk bilgisi niteliği olabilir mi hemen de kestirip atmayalım olabilir mi renk niteliği yani bir research assistant da renk niteliği olabilir mi desek
+
+530
+01:13:37,949 --> 01:13:49,949
+bakıyorum renk şurada disjoint olduğu için şu varlıkla bu varlık disjoint olması lazım olamaz yani bu renk sadece bunu bağlayan bir şey ama mesela
+
+531
+01:13:49,949 --> 01:14:19,949
+desem ki bir salari niteliği teaching assistant'ı olabilir mi salari bakıyorum buraya overlap yani bir studentla aynı yani şuradaki bir varlık burada da olabilir o zaman saları burada olabilir demek ki saları buraya indi burada da total olduğu için hatta o zaman saları olabilir yani teaching assistant'ın bir niteliği saları olabilir yani şunlarla beraber saları ve major department ve course
+
+532
+01:14:19,949 --> 01:14:35,949
+bütün o teaching assistant'ın nitelikleri olur ama mesela şey olabilir mi olamayacak bir şey bulalım mesela olamayacak bir şey bu renk olamaz mesela şu disjoint olduğu için renk olamaz veya pozisyon olamaz
+
+533
+01:14:35,949 --> 01:15:03,500
+evet bu şekilde böyle burada bu analizleri yapabiliriz aklımıza gelen takıldığı bir nokta var mı takip edebiliyor muyuz 67 kişi var şu anda evet umarım takip ediyoruz evet evet hocam takip ediyoruz sorun yok tamam güzel
+
+534
+01:15:03,500 --> 01:15:04,500
+evet bunu atlıyorum burada daha büyük böyle büyük veritabana tasarım örnekleri var yani şimdi bunlara da çok girmeyeceğim zaten sonsunu bu yani burada küçük dünyanın farklı alt parçalarını birleştiği şey yapıp tasarlayıp daha sonra onları bir araya getirmek mesela burada işte büyük bir veritabana tasarım örneğinde işte müzik kısmı bu müzik kısmında
+
+535
+01:15:33,500 --> 01:16:02,500
+ilk olarak şu üç gruba ayırmışız yani kafamıza düşünüyoruz ya bir olayın işte bu herhalde bir müzik dağıtım şirketi falan diyelim bir işte müzik kısmı var burada işte hangi gruplar hangi şarkıcılar veya hangi işte besteciler söz yazarları müzisyenler instrument hangi tip işte malzeme kullanıldı şarkı işte gibi bilgiler var
+
+536
+01:16:03,500 --> 01:16:29,500
+bu kısmında ise fiziksel olarak bu işte ortaya çıkan albüm veya işte onunla ilgili işte CD'nin numarası falan artık kaç trakten oluşuyor kaç şarkı var ortaya çıkan bu üründe ve bunun dağıtımıyla ilgili işte stüdyosu publisher'ı ve satış hangi dükkanlarda satacak hangi mağazalarda mesela bu tip böyle bir gruplandırma
+
+537
+01:16:30,500 --> 01:16:44,500
+ilk olarak bu kısmı grubu bu kısmı modelliyoruz küçük dünyayı yani bu bu bu küçük dünyanın bu alt küçük dünyasını yapıp modelliyoruz daha sonra bunu daha sonra böyle bunları bağlayacağız mesela burada ne yapmış mesela
+
+538
+01:16:44,500 --> 01:17:05,500
+Composer lyrics işte song ortaya çıkmış rendition'ın anasını tam bilmiyorum müzisyen işte instrument yani şuradaki bu varlıkları bu küçük dünyadaki bu varlıkları bu şekilde bir araya getirdik işte bu artistin işte bağda bulunduğu grup bu grubun elemanıymış
+
+539
+01:17:05,500 --> 01:17:24,500
+bu uml diagramı değil mi yani yer değil işte burada bir kompo kompozisyon var işte bu artistin işte alt süper tipleri Composer lyrics müzisyon olabilir yine Composer lyrics bir şarkı ortaya çıkardılar bu şarkının bir bestekarı var bir de söz yazarı var değil mi
+
+540
+01:17:24,500 --> 01:17:53,500
+bunlar birden çok olabiliyor birden çok olabilmiş mesela ama mesela sıfır demiş buna bu şarkının sözleri yok sadece işte bestesi var sadece ezgi tarzında demek ki hani şimdi demek ki bu gibi manalara göre bunlar çizilmiş bu şarkının işte gene burada Composer'ın bir Composer varsa hani bir veya Composer olabilmesi için en az bir tane şarkı bestelemesi lazım Composer'ın bir veya daha çok song olacak
+
+541
+01:17:54,500 --> 01:18:23,500
+gene benzer şekilde bu songun da rendition'ı bire çok ne olduğunu şey yapamadık şuna bir bakın bakalım sözde rendition ne demek şimdi dersek hakkınız olsun rendition biri baksın sözlükten song rendition rendition da bakın şurada ne yapmış üçlü bir bağıntı kurmuş yani bu mu hocam yorum demekmiş hocam yorum
+
+542
+01:18:23,500 --> 01:18:52,500
+ha yorum yani işte hani farklı yorumları oluyor ya bu şarkıları mesela şu müzisyen bu işte kullandığım şeyle ama işte ne bileyim aletle diyelim instrument bununla işte şöyle bir yorum yaptı işte onu neyle yaptı o eseri çaldı ötekisi işte mesela piano ile çaldı mesela değil mi öyle bir yorum yaptı bakın bu da hep bunlar ene ene enlik yani
+
+543
+01:18:53,500 --> 01:19:09,500
+nasıl düşünüyorduk bunu bir müzisyen aynı malzemeyle bir şarkının farklı yorumlarını yapabilir şurası en yani şuradan bir numarayı alıyoruz buradan bir numarayı alıyorduk birden çok yorumunu yapabilir
+
+544
+01:19:09,500 --> 01:19:33,500
+farklı şarkıları yorumlayabilir yani o müzisyen mesela bu sene aynı malzeme kullanarak aynı enstrüman kullanarak bütün şarkıları birçok şarkıyı mesela yorumlamış gene bir yorumda bir malzemeyi bir enstrümanı kullanarak birden çok müzisyen bunu şey yapmış olabilir
+
+545
+01:19:33,500 --> 01:20:03,500
+evet bu kısım bu bu şekilde böyle küçük dünyayı tanımladık bunları öğrendik artık ne manaya geldiklerini her bakım birkaç örnek yaptık birkaç malzeme tanımladık böyle oyuncak tanımladık diyelim tabircerse şimdi bununla birçok küçük dünyayı böyle modelleyebiliriz yani esasında az malzemeyle çok iş yapacağız yani o yüzden bayağı esasında önemli yani veritabının tasarımı sağ tarafta da ne yaptık daha sonra bunları bir araya
+
+546
+01:20:03,500 --> 01:20:33,500
+getirme kısmını yapmamış da burada mesela ne vardı medya vardı distribution vardı medya kısmında publisher studio produsör studio publisher retail'ı şu kısımları bir araya getirmiş burada da grup ve artisti bağlamış yani şuradaki artist mesela bakın şu artist buraya bu artistin kendisi bunun artık şurayla bağlanacak bu bu var yani burada bunlar
+
+547
+01:20:33,500 --> 01:20:50,939
+var yani şunun ikisi arasında şöyle bir bağınt var esasında ama burada bunu detaylandırmamış yani bu daha olaya daha büyük ölçekli bir bakış açısı bu müzik medya kısmı yani şu kısım burada böyle detaylandırılmış evet
+
+548
+01:20:51,859 --> 01:21:10,140
+Böylece ya diagramlarını bitirdik arkadaşlar dersimizin ilk kısmı dedim ya bunlarla ilgili istemediğiniz kadar örnek var bizim ödevde de gene olacak ödevin bir kısmında gene bu tasarımdan sorarız gene sınavlarda da mutlaka bu iyer
+
+549
+01:21:11,140 --> 01:22:15,680
+Özellikle ilk ara sınavda da yani yüzde 30 yüzde 40'lık bunlarla ilgili soru oluyor ya işte tasarımı çizin veya yukarıdaki tasarımda ne gibi şeyler var falan gibi o yüzden bunu mutlaka iyice öğrenmemiz gerekiyor hocam bağlantı gitmedi değil mi
+
+550
+01:22:15,880 --> 01:22:18,920
+Ben de ona bakıyorum ya şey gitti menü gitti
+
+551
+01:22:19,680 --> 01:22:32,000
+Vallahi ben de ara mı verdim hocam acaba falan diye yok ara vermedim de benim kullandığım menü gitti ben de koptu zannettim hocam slide'i kapattıysanız belki menü kapattım sadece bu sefer yukarıdaki menüm gitti
+
+552
+01:22:32,800 --> 01:22:35,800
+Yeni slide'i açarsanız tekrar gelebilir belki
+
+553
+01:22:47,619 --> 01:22:49,140
+Görüyor musunuz sayfayı
+
+554
+01:22:50,100 --> 01:22:51,899
+Evet hocam görüyoruz
+
+555
+01:22:52,420 --> 01:23:02,020
+Şimdi ilişkisel model artık biraz daha kavramsız tasarımın dışında çıkıyoruz artık makineye yakınlaşmaya başlıyoruz yani kağıt üzerinde
+
+556
+01:23:02,260 --> 01:23:06,819
+Tablolarımızı belirleyeceğiz daha sonra makinemde makinede de işte create table
+
+557
+01:23:07,060 --> 01:23:10,420
+İşte insert falan ilişkisel cebire başlayacağız
+
+558
+01:23:10,659 --> 01:23:13,220
+Yani biraz daha bilgisayara yaklaşmaya başladık
+
+559
+01:23:14,180 --> 01:23:24,100
+Şimdi buradaki örnekler elmasin avetinin kitabından alınmış onu burada söylüyor ifadeler buradaki tanımlar daha çok oradan alınmış Türkçe olarak ifade edilmiş
+
+560
+01:23:24,340 --> 01:23:31,920
+Evet burada konu başladıklarında ilişkisel veri modeli
+
+561
+01:23:32,159 --> 01:23:37,840
+Çok meşhur olan çok yaygın kabul görmüş olan ilişkisel model
+
+562
+01:23:38,079 --> 01:23:40,880
+Yaklaşık kaç senelik bakın 81 de
+
+563
+01:23:41,119 --> 01:23:44,960
+Tanımlanmış kaç sene oluyor 20 40 senelik
+
+564
+01:23:45,039 --> 01:23:54,319
+Evet sanırım slide dondu biz şu an sadece şey görüyorum ilişkisel modelde kavramlar konsept gibi slide var ve geçmiyor orada durmuş
+
+565
+01:23:55,600 --> 01:23:58,239
+Uzun bir slide yani 1981 falan yok içinde
+
+566
+01:24:00,800 --> 01:24:02,079
+Şimdi hareket etti ama
+
+567
+01:24:02,880 --> 01:24:08,239
+Şu anda neyi görüyorsunuz ilişkisel moda relational model hareket hareketini görüyor musunuz
+
+568
+01:24:08,479 --> 01:24:10,800
+Evet hocam şu an o kırmızı yazılar falan var içinde
+
+569
+01:24:11,279 --> 01:24:17,439
+Şimdi ben sunum moduna geçiyorum o zaman görüyor musunuz şimdi ne görüyorsunuz
+
+570
+01:24:17,680 --> 01:24:23,600
+Yok hocam biz şu an sunum modunu görmüyoruz o zaman sunum moduna geçince paylaşımı kaybediyorum
+
+571
+01:24:23,840 --> 01:24:26,399
+Neyse o zaman böyle devam ederim tamam hocam
+
+572
+01:24:30,399 --> 01:24:39,680
+Yani 40 senelik 40 oluyordu yanlış olmasın 40 senelik bir model ve günümüzde en yaygın kullanılan bir model yani birçok sistemin
+
+573
+01:24:39,920 --> 01:24:42,720
+Veri tabanı sistemleri ilişkisel model üzerine
+
+574
+01:24:42,960 --> 01:24:48,079
+Çalışıyor çünkü çok hızlı bir model çünkü her şey deterministik
+
+575
+01:24:48,319 --> 01:24:53,520
+Genel hatlarıyla o küçük dünya modellenmiş bir katalogta tutuluyor her şey
+
+576
+01:24:53,760 --> 01:24:56,079
+Ve sistem öyle çok hızlı bir şekilde ilerliyor
+
+577
+01:24:56,319 --> 01:24:59,920
+Şimdi bunu esnek yapmak için tabi katalog ortadan çıkınca
+
+578
+01:25:00,159 --> 01:25:03,279
+Şemalar ortadan çıkınca daha böyle esnek bir
+
+579
+01:25:03,439 --> 01:25:11,359
+Şey ki gerçek hayatta da tabi o cihetten biraz popüler oluyor ihtiyacı bazı ihtiyaçları için daha elverişli oluyor
+
+580
+01:25:11,359 --> 01:25:12,640
+No escape veri tabanları
+
+581
+01:25:12,880 --> 01:25:14,159
+Şemanın olmadığı
+
+582
+01:25:14,399 --> 01:25:15,439
+Ama
+
+583
+01:25:15,680 --> 01:25:16,960
+Bazı durumlarda da
+
+584
+01:25:17,199 --> 01:25:19,760
+Hızlı olsa da doğruluk bu sefer zayı oluyor
+
+585
+01:25:20,000 --> 01:25:24,319
+Veya bazı yerlerde ilişkisel model kadar yine hızlı olmuyor mesela
+
+586
+01:25:24,800 --> 01:25:26,880
+Aradaki fark böyle ana hatlarıyla
+
+587
+01:25:27,119 --> 01:25:29,920
+Burada her şeyimiz çok tanımlı ilişkisel modelde
+
+588
+01:25:30,159 --> 01:25:31,920
+Keskin hatlarla tanımlı
+
+589
+01:25:32,079 --> 01:25:37,039
+Ve sistem bu model içerisinde bu kısıtlar içerisinde
+
+590
+01:25:37,279 --> 01:25:39,840
+Yani güzel tanımlamalar içerisinde şema belli falan
+
+591
+01:25:40,079 --> 01:25:41,600
+Çok hızlı bir şekilde çalışıyor
+
+592
+01:25:41,840 --> 01:25:44,159
+Diğer yaklaşım diğer bir model
+
+593
+01:25:44,399 --> 01:25:48,800
+Orada işte no escape veri mesela şema yok daha esnek gerçek hayatı
+
+594
+01:25:49,039 --> 01:25:53,680
+Daha güzel modelliyor bazı noktada çünkü gerçek hayat bu kadar böyle kısıtlı değil yani
+
+595
+01:25:53,920 --> 01:25:56,960
+Çok farklı şeyler olabiliyor daha güzel model diyor ama
+
+596
+01:25:57,119 --> 01:26:03,039
+Doğruluk bu sefer biraz zarar görüyor veya yine performans noktasında her zaman aynı performans
+
+597
+01:26:03,279 --> 01:26:04,560
+Tutma tutmayabiliyor
+
+598
+01:26:04,800 --> 01:26:10,880
+Şimdi burada ilişkisel modelimizde kısıtlamalarımız olacak işte malum kısıtlar onlara tanımlayacağız
+
+599
+01:26:11,119 --> 01:26:15,600
+Ve bunlar şemaları tanımlayacağız olguları tanımlayacağız
+
+600
+01:26:15,840 --> 01:26:17,439
+Ve ER'dan
+
+601
+01:26:17,680 --> 01:26:19,760
+Redation modeli dönüşüm yapacağız şimdi
+
+602
+01:26:20,000 --> 01:26:23,840
+Yarı gördük ilişkisel modeli göreceğiz daha sonra x arasındaki dönüşümleri göreceğiz
+
+603
+01:26:24,239 --> 01:26:30,399
+Burada da işte varlıklar nasıl dönüştürülüyor bağıntı kümeleri nasıl genellemeler kümlemeler nasıl dönüştürüldü onları göreceğiz
+
+604
+01:26:31,680 --> 01:26:36,800
+İlişkisel model bildirim esaslı veri işlemi imkan sağlayan bir modeldir dekleratif
+
+605
+01:26:37,039 --> 01:26:38,319
+Yani ne istiyoruz
+
+606
+01:26:38,560 --> 01:26:39,840
+Esküel bir
+
+607
+01:26:40,079 --> 01:26:42,640
+Ne istiyoruzu bize imkan sağlayan bir
+
+608
+01:26:42,880 --> 01:26:43,920
+Sorgulama dili
+
+609
+01:26:45,199 --> 01:26:47,359
+Yani bir programlama dili değil
+
+610
+01:26:47,600 --> 01:26:53,439
+Yani laboratuvanın notlarında da güzel yazmışlar arkadaşlar yani bir programlama dili olarak
+
+611
+01:26:53,760 --> 01:27:00,880
+Düşünmemek gerekiyor dekleratif yani ne istiyoruz nasıl istediğimiz nasıl yapılacağını açıklamıyorum ama bir si programında
+
+612
+01:27:01,119 --> 01:27:04,960
+Tanımlaman lazım işte veri yapılarını algoritmaları
+
+613
+01:27:05,199 --> 01:27:11,359
+Orada tanıdık bunu bu malzemeleri kullanarak nasıl yapılacağını oraya aktarman gerekiyor
+
+614
+01:27:11,600 --> 01:27:15,720
+Çok daha zor yani veya başka bir dünya yani ama esküel öyle değil ne istiyorsun
+
+615
+01:27:16,479 --> 01:27:22,100
+Ve bunu da çok az 7 8 satırla 3 4 satırla yani böyle en kapsamlı bir esküel cümlesi
+
+616
+01:27:22,579 --> 01:27:24,100
+Olsun 20 satır mesela
+
+617
+01:27:24,359 --> 01:27:30,500
+Onunla çok iş yapıyoruz arka planı çünkü işi yapan kim arkada işte server yani çok daha karmaşık olan
+
+618
+01:27:30,760 --> 01:27:36,899
+Servis sağlayıcı onu işte analizini yapıyor simtak analizini semantik analizini yapıp
+
+619
+01:27:37,159 --> 01:27:40,220
+Onu değerliyor o esküel cümlesini
+
+620
+01:27:40,479 --> 01:27:43,539
+Daha sonra planlıyor tabi çok karmaşık yani oraları
+
+621
+01:27:43,800 --> 01:27:46,100
+Ama kullanıcı bundan habersiz yani sonuçta
+
+622
+01:27:46,560 --> 01:27:47,079
+Evet
+
+623
+01:27:49,899 --> 01:27:52,960
+Birini nasıl yerleştirici veya nasıl erişileceğine ilgilenmez
+
+624
+01:27:53,220 --> 01:27:55,779
+Diğer bir ifade ile uydanılma gerçekleştirme ortamında
+
+625
+01:27:56,039 --> 01:27:59,359
+Veri bağımsızlığı sağlamış olur bu data independence'dan bahsettik ya
+
+626
+01:27:59,619 --> 01:28:00,399
+Yani fiziksel
+
+627
+01:28:00,659 --> 01:28:03,699
+Veya logical data independence'lardan bahsettik
+
+628
+01:28:03,960 --> 01:28:07,819
+Onlara esküel ilişkisel model çok başarılı bir şekilde sağlamış yani
+
+629
+01:28:08,079 --> 01:28:09,859
+Hiç bilgisayara bilmeyen biri bile
+
+630
+01:28:10,119 --> 01:28:11,140
+Çok basit esküel
+
+631
+01:28:11,399 --> 01:28:12,159
+Yazabiliyor
+
+632
+01:28:12,619 --> 01:28:16,199
+İlgisayar model gerçeklemeleri esküel isimli veri işleme dili kullanılır
+
+633
+01:28:16,460 --> 01:28:18,260
+Model ismini zikredelim
+
+634
+01:28:18,520 --> 01:28:19,279
+Bu adamcağızın
+
+635
+01:28:19,539 --> 01:28:20,300
+Kaç senedir
+
+636
+01:28:20,560 --> 01:28:22,600
+Böyle bilgisayar dünyasına hizmet etmiş
+
+637
+01:28:23,119 --> 01:28:27,720
+Model ilk geliştiricisi Edgar Cote tarafından IBM research'te
+
+638
+01:28:27,979 --> 01:28:28,500
+Yapmışlar
+
+639
+01:28:29,020 --> 01:28:30,800
+Ve şu makalede
+
+640
+01:28:31,060 --> 01:28:33,100
+Demek ki bu makale baya referans almıştır herhalde
+
+641
+01:28:36,939 --> 01:28:40,020
+İsimli 1970 hatta bakın ben 81 dedim ama
+
+642
+01:28:40,439 --> 01:28:43,199
+80'de ACM Turing Award'u almış
+
+643
+01:28:43,720 --> 01:28:45,239
+70'lerde tanımlamış
+
+644
+01:28:45,500 --> 01:28:47,800
+Yani 50 senedir bir model oluyor 40'da değil
+
+645
+01:28:49,600 --> 01:28:53,199
+Bu o zamanlarda yani 70-80'lerden beri
+
+646
+01:28:53,460 --> 01:28:55,539
+O zamanlarda tanımlanan System R
+
+647
+01:28:55,800 --> 01:28:58,659
+Veya Ingress yani şu anda işte bizim
+
+648
+01:28:58,920 --> 01:29:02,239
+Bölümde de kullanılan PostgreSQL veri tabanı
+
+649
+01:29:02,500 --> 01:29:07,359
+İlk ismi bunun Ingress diye bir şey daha sonradan işte ticari bir hale geliyor
+
+650
+01:29:07,560 --> 01:29:10,680
+80'lerden 90'lardan sonra PostgreSQL oluyor
+
+651
+01:29:10,939 --> 01:29:13,500
+PostgreSQL oluyor daha sonra da işte
+
+652
+01:29:14,020 --> 01:29:16,840
+Bunlar tabi çok eski veri tabanları hepsi
+
+653
+01:29:17,100 --> 01:29:19,899
+C'de yazılmış programımı dini olarak
+
+654
+01:29:21,180 --> 01:29:21,939
+C'de yazılmış
+
+655
+01:29:23,479 --> 01:29:24,260
+Veri tabanları
+
+656
+01:29:24,779 --> 01:29:26,560
+Şimdi buradaki kavramlarımız
+
+657
+01:29:28,100 --> 01:29:30,140
+XM model ilişki denilen
+
+658
+01:29:30,399 --> 01:29:32,439
+Relation veya Tableau
+
+659
+01:29:32,960 --> 01:29:37,060
+Bunun bir resmi literatürde geçen isimlendirmeni var
+
+660
+01:29:38,079 --> 01:29:42,180
+Bir de hani Endüstri'de diyelim piyasada isimlendirilmeleri var
+
+661
+01:29:42,439 --> 01:29:44,739
+Olayın formal ifadesi
+
+662
+01:29:45,000 --> 01:29:49,859
+Şey noktası tablo noktası daha böyle hani Endüstri'de kullanılan şey
+
+663
+01:29:50,380 --> 01:29:52,159
+Burada
+
+664
+01:29:52,420 --> 01:29:54,979
+Bunları böyle okuyalım da hem hatırlamış oluruz
+
+665
+01:29:55,239 --> 01:30:02,140
+Ilişki-relation kavramı özde matematiksel bir kavramı olan set kavramı üzerine bina edilmiştir
+
+666
+01:30:02,399 --> 01:30:03,939
+Demek ki her bir
+
+667
+01:30:04,460 --> 01:30:07,260
+Bu tablomuz veya ilişkimiz
+
+668
+01:30:08,020 --> 01:30:09,819
+Sertlerden oluşuyor
+
+669
+01:30:10,079 --> 01:30:16,939
+Ve ünitiminde ilişkisel yaklaşımın gücü ilişkiler teorisi ve bilgisayar temelleri oturmuş olmasına kanatlanmaktadır
+
+670
+01:30:17,199 --> 01:30:23,300
+Pratikte sekriyel tabanlı standart bir model var fakat bilgisayar modeliyle pratik modeliyle çok önemli farklılıklar var
+
+671
+01:30:23,300 --> 01:30:25,140
+Bilgisayar modelini tamamen gerçeklenmesi
+
+672
+01:30:25,399 --> 01:30:27,439
+Oldukça zordur ve çok nadirdir
+
+673
+01:30:27,939 --> 01:30:30,220
+Demek ki bir formal tanımlar var ama
+
+674
+01:30:30,479 --> 01:30:33,560
+Bir de informal olarak bunu hayata geçirilmesinde
+
+675
+01:30:33,819 --> 01:30:36,100
+Bazı böyle farklılıklar oluyor
+
+676
+01:30:36,300 --> 01:30:38,600
+Zaten veri tabanları o yüzden birbirinden farklı
+
+677
+01:30:39,119 --> 01:30:42,439
+Yani bir standart tanımlanıyor bir de onların gerçeklenmesi var
+
+678
+01:30:43,220 --> 01:30:45,279
+O yüzden tam böyle hani
+
+679
+01:30:45,520 --> 01:30:47,060
+Dependency dedik ya mesela
+
+680
+01:30:47,319 --> 01:30:51,920
+Tam manasıyla gerçeklenmesi şimdi tabi bu biraz kapalı kutu gibi geliyor bu ifade
+
+681
+01:30:52,180 --> 01:30:56,279
+Ama bunun tam hayata taşınması çok mümkün olmuyor demek ki o Dependency'nin
+
+682
+01:30:57,560 --> 01:31:04,720
+İlişkisel veri modeli kullanıcıların veri tabanındaki bütün veri ve baantıları tablolar çizer, gelir, içiminde görmesine izin verir
+
+683
+01:31:05,140 --> 01:31:07,180
+Böylece ilişkisel modele dayalı bir
+
+684
+01:31:07,439 --> 01:31:12,300
+Tablo çizergi denilebilir. İlişkisel modele dayalı bir veri tabanının temel taşı
+
+685
+01:31:12,560 --> 01:31:14,600
+Tablolardan oluşuyor. Yani her şeyimiz
+
+686
+01:31:14,859 --> 01:31:20,239
+İster varlık olsun ister baantı olsun ne olacak bizim o kavramsız tasarında gördüğümüz her şey
+
+687
+01:31:20,500 --> 01:31:21,779
+Tablolara dönüşecek
+
+688
+01:31:22,039 --> 01:31:26,680
+Tablolar. Tablolar da ne bizim makinemizdeki dosyamız, diskimizdeki dosyalar
+
+689
+01:31:27,199 --> 01:31:27,960
+Olmuş oluyor
+
+690
+01:31:28,939 --> 01:31:35,079
+Evet burada tablolarımız iki değerli iki boyutlu bir değerler tablosu
+
+691
+01:31:36,359 --> 01:31:38,659
+Ve satırlardan oluşuyor
+
+692
+01:31:38,920 --> 01:31:40,699
+Ve her satırda
+
+693
+01:31:40,960 --> 01:31:44,539
+Tapas diyoruz onlara satırlara tapas yani çoklu
+
+694
+01:31:44,800 --> 01:31:47,880
+Satırların tekrarına izin verilmiyor
+
+695
+01:31:48,140 --> 01:31:49,159
+Ama yani işte bu
+
+696
+01:31:49,420 --> 01:31:55,300
+Gerçek hayatta izin veriliyor yani bir veri tabanına bir tabloyu birden çok satır aynı satırı girebilirsiniz
+
+697
+01:31:55,560 --> 01:31:56,079
+Yani bir
+
+698
+01:31:56,279 --> 01:31:58,079
+Anahtar tanımlamak şart değil
+
+699
+01:31:58,340 --> 01:32:02,939
+Ama formal tanımında formal ilişkisel modele tanımında
+
+700
+01:32:03,199 --> 01:32:05,760
+Bu set yani set zaten ne demek set
+
+701
+01:32:06,020 --> 01:32:07,800
+Yani tekrar etmeyen
+
+702
+01:32:08,060 --> 01:32:09,340
+Varlıklar birbirinden
+
+703
+01:32:09,600 --> 01:32:12,159
+Ayrı olan varlıklar hepsinin kendine göre bir
+
+704
+01:32:12,420 --> 01:32:16,000
+Biricik bir özelliği var set manası öyle
+
+705
+01:32:16,260 --> 01:32:16,760
+Ama
+
+706
+01:32:17,020 --> 01:32:20,600
+Küme dediğimiz zaman veya Beck diye bir ifade var Beck
+
+707
+01:32:20,800 --> 01:32:26,699
+O bekte tekrar edebilir yani esasında gerçek hayatta bizim veri tabanlarımız bek esaslı bek
+
+708
+01:32:27,199 --> 01:32:28,739
+Tekrar edebilir kayıtlar
+
+709
+01:32:29,000 --> 01:32:30,779
+Ama ilişkisel formal tasarımında
+
+710
+01:32:31,039 --> 01:32:33,600
+Bunların tekrarına izin verilmiyor
+
+711
+01:32:33,859 --> 01:32:35,140
+Set esaslı yani
+
+712
+01:32:36,680 --> 01:32:40,260
+Her satırdaki vere elemanları belirlik gerçekleri gösteriyor
+
+713
+01:32:40,520 --> 01:32:41,800
+Yani nesne baantı
+
+714
+01:32:44,060 --> 01:32:45,380
+Sonra kolonlarımız var
+
+715
+01:32:48,659 --> 01:32:49,680
+Etribüt diyelim
+
+716
+01:32:50,800 --> 01:32:51,579
+Bir saniye
+
+717
+01:33:21,199 --> 01:33:21,720
+Evet
+
+718
+01:33:24,020 --> 01:33:24,779
+Nitelik
+
+719
+01:33:25,560 --> 01:33:28,619
+Nitelik olarak nitelik de dedik
+
+720
+01:33:29,399 --> 01:33:30,680
+Niteliğin bir ismi var
+
+721
+01:33:30,939 --> 01:33:33,739
+Ve o niteliğin bir yalın bir değer yani
+
+722
+01:33:34,000 --> 01:33:35,539
+Tek bir değer içermesi lazım
+
+723
+01:33:36,060 --> 01:33:37,579
+Birden çok
+
+724
+01:33:37,840 --> 01:33:38,859
+Yani mesela
+
+725
+01:33:39,119 --> 01:33:42,699
+Formal tanıma göre mesela adres bilgisi
+
+726
+01:33:42,960 --> 01:33:44,500
+Yani birden çok
+
+727
+01:33:44,760 --> 01:33:46,039
+Alt değer içeriyor
+
+728
+01:33:46,239 --> 01:33:49,840
+Bu formal tanıma çok uygun değil ama yine gerçek hayatta biz adreste
+
+729
+01:33:50,100 --> 01:33:53,420
+Şehir, mahalle, apartman hepsini yazıyoruz mesela
+
+730
+01:33:53,939 --> 01:33:55,460
+Yine o noktada
+
+731
+01:33:56,739 --> 01:33:58,880
+Bir esneklik var yani gerçek hayata şey yapar
+
+732
+01:33:59,140 --> 01:33:59,640
+Mesela
+
+733
+01:33:59,899 --> 01:34:01,420
+Hani multi-valued olabilecek
+
+734
+01:34:01,680 --> 01:34:06,800
+Arabanın renkleri mesela bunu multi-valued yaptık biz çift çizgi yaptık mesela nitelik olarak
+
+735
+01:34:07,060 --> 01:34:08,859
+Ama hani tek çizgi olarak
+
+736
+01:34:09,119 --> 01:34:11,460
+Yapıp yani tek değerli imiş gibi yapıp
+
+737
+01:34:11,720 --> 01:34:12,520
+İçerisine
+
+738
+01:34:12,779 --> 01:34:15,640
+Ne yazabiliriz işte kırmızı, beyaz, siyah yazabiliriz yani
+
+739
+01:34:16,159 --> 01:34:17,199
+Daha sonra bu
+
+740
+01:34:17,460 --> 01:34:20,000
+Nitelik bilgisini okuduktan sonra
+
+741
+01:34:20,260 --> 01:34:22,060
+Başka bir text prosesörle
+
+742
+01:34:22,319 --> 01:34:26,659
+İşte buradaki burada 3 renk olduğunu yani veri tabanı dışında
+
+743
+01:34:26,920 --> 01:34:30,880
+Bir işlemle burada 3 renk olduğunu
+
+744
+01:34:31,140 --> 01:34:33,199
+Proses edebiliriz yani bulabiliriz
+
+745
+01:34:33,460 --> 01:34:39,340
+Ama tabi o veri tabanın formal tanımının dışına çıkmış oluyor çünkü normalde bir niteliğin bir
+
+746
+01:34:39,600 --> 01:34:40,619
+Tek yalın değeri olabilir
+
+747
+01:34:41,140 --> 01:34:45,739
+O yüzden biz onu multi-valued yaptık yani çok değerli olması noktasında o bizim
+
+748
+01:34:45,939 --> 01:34:50,560
+Tabloda farklı bir şekilde dönüşecek belki başka bir tablo olacak hatta
+
+749
+01:34:51,579 --> 01:34:53,359
+Bunu göreceğiz yani
+
+750
+01:34:53,880 --> 01:34:59,979
+Her bir niteliğin tanım kümesi olacak yani bir domaini dediğimiz yani tipi
+
+751
+01:35:00,239 --> 01:35:01,300
+Bu niteliğin bir tipi
+
+752
+01:35:01,560 --> 01:35:05,659
+Ve hangi değer elemanları içeriyor onları şey yapacak
+
+753
+01:35:05,920 --> 01:35:08,739
+Nitelikler satır içerisinde sıraları önemli değildir
+
+754
+01:35:09,239 --> 01:35:12,060
+Bu sıranın farklı olması satırı birbirinden farklı kılmaz
+
+755
+01:35:12,319 --> 01:35:13,079
+Ne demek bu
+
+756
+01:35:13,600 --> 01:35:14,380
+Yani o
+
+757
+01:35:14,800 --> 01:35:15,819
+Nitelikler
+
+758
+01:35:16,079 --> 01:35:17,920
+Sırası önemli değil yani
+
+759
+01:35:18,180 --> 01:35:20,220
+Böyle olunca
+
+760
+01:35:20,479 --> 01:35:21,239
+Bunların
+
+761
+01:35:21,500 --> 01:35:22,260
+Sırası
+
+762
+01:35:22,520 --> 01:35:26,100
+Farklı olarak farklı bir satır oluşmamış oluyor yani yine aynı satır
+
+763
+01:35:26,359 --> 01:35:30,199
+Yani şurada sıfır ayrı a sıfır aynı satır olmuş oluyor
+
+764
+01:35:31,739 --> 01:35:32,239
+Evet
+
+765
+01:35:33,800 --> 01:35:35,579
+Böylece bir tablo
+
+766
+01:35:35,840 --> 01:35:36,600
+Relation
+
+767
+01:35:36,859 --> 01:35:37,880
+İlişki
+
+768
+01:35:38,140 --> 01:35:39,939
+Çizerge
+
+769
+01:35:40,199 --> 01:35:41,720
+Hep bunlar aynı manada ve
+
+770
+01:35:42,180 --> 01:35:43,979
+Bu ifade bunu söyleyince
+
+771
+01:35:44,239 --> 01:35:45,500
+Şöyle bir şey aklımıza gelecek
+
+772
+01:35:46,279 --> 01:35:47,039
+İsmi
+
+773
+01:35:47,300 --> 01:35:48,319
+Nitelikleri
+
+774
+01:35:48,579 --> 01:35:49,359
+Niteliklerin
+
+775
+01:35:49,619 --> 01:35:52,159
+Tablo içerisindeki tapıllar
+
+776
+01:35:52,420 --> 01:35:53,439
+Satırlar
+
+777
+01:35:53,699 --> 01:35:54,220
+Rowlar
+
+778
+01:35:54,479 --> 01:35:55,500
+Bakın yine aynı
+
+779
+01:35:56,779 --> 01:35:58,319
+Kolon da diyebiliriz buna
+
+780
+01:35:58,579 --> 01:35:59,600
+Etribüt de diyebiliriz
+
+781
+01:35:59,859 --> 01:36:02,420
+Bunların da değerleri bakın hep
+
+782
+01:36:02,680 --> 01:36:07,020
+Yani yalın değerler gerçi bakın adres bilgisi biraz önce dediğim gibi burada bir
+
+783
+01:36:07,279 --> 01:36:09,579
+Şey var birden çok şey içeriyor gerçi
+
+784
+01:36:10,560 --> 01:36:13,840
+Ve gene bakın bazı nitelik değerleri
+
+785
+01:36:14,100 --> 01:36:15,680
+Nal olmuş Nal ne demek
+
+786
+01:36:15,939 --> 01:36:16,439
+Nal
+
+787
+01:36:16,699 --> 01:36:17,979
+Nal'ın manası
+
+788
+01:36:18,239 --> 01:36:19,000
+Belirsiz
+
+789
+01:36:19,260 --> 01:36:22,079
+Yani ya bu satır için geçerli değil
+
+790
+01:36:22,600 --> 01:36:23,100
+Yani
+
+791
+01:36:23,359 --> 01:36:30,000
+Yani böyle bir şey bu satır için Benjamin Byer için ofis numarası diye bir şey söz konusu değil veya bilinmiyor var ama bilmiyoruz
+
+792
+01:36:30,520 --> 01:36:31,539
+O yüzden Nal
+
+793
+01:36:31,800 --> 01:36:33,340
+Tam manasıyla belirsizlik
+
+794
+01:36:33,859 --> 01:36:34,619
+Demek
+
+795
+01:36:34,880 --> 01:36:38,720
+Yani var olup olmadığını da bilmiyoruz varsa değerini bilmiyoruz
+
+796
+01:36:39,180 --> 01:36:41,739
+Bu manalar oluyor o yüzden böyle olduğu için
+
+797
+01:36:42,000 --> 01:36:42,520
+Nal
+
+798
+01:36:42,779 --> 01:36:46,619
+Başka bir Nal'a da eşit değil yani Nal eşittir Nal mı desek
+
+799
+01:36:48,140 --> 01:36:49,680
+Gene bunun cevabı Nal
+
+800
+01:36:50,199 --> 01:36:52,239
+Yani iki Nal birbirine eşit olabilir
+
+801
+01:36:52,500 --> 01:36:53,520
+Eşit de olmayabilir
+
+802
+01:36:53,779 --> 01:36:58,899
+O yüzden ne True ne False yani onun da cevabı Nal olmuş oluyor yani tanımı çok güzel ifade ediyor bu
+
+803
+01:36:59,159 --> 01:37:01,460
+İki Nal birbirine eşit midir cevap
+
+804
+01:37:01,979 --> 01:37:05,039
+False değil, True değil, gene Nal
+
+805
+01:37:05,239 --> 01:37:10,619
+Gene tanımsız yani çünkü iki tanımsızla birbirine karşılaştırılması tanımsız bir şey ortaya çıkartıyor
+
+806
+01:37:12,159 --> 01:37:13,180
+Evet
+
+807
+01:37:14,979 --> 01:37:19,079
+Burada sorumuz var mı? Genel olarak çizeg tablo dediğimiz şey böyle
+
+808
+01:37:19,340 --> 01:37:25,939
+Şimdi bu tablonun anahtarı yine karşımıza çıktı nasıl varlık setlerinin anahtarını düşünüyorduk
+
+809
+01:37:26,460 --> 01:37:28,800
+Bu bizim tablomuz içinde
+
+810
+01:37:29,060 --> 01:37:31,880
+Burada ilişki diyorum ama bu ilişki bizim
+
+811
+01:37:32,140 --> 01:37:33,659
+Bağantıyla karışmasın
+
+812
+01:37:34,079 --> 01:37:38,180
+Bu ilişkisinin model içerisinde her şey esasında bir ilişki
+
+813
+01:37:38,439 --> 01:37:41,539
+Ama ilişki biraz kafa karıştırıcı olduğu için
+
+814
+01:37:41,800 --> 01:37:43,340
+Tablo diyoruz daha çok yani
+
+815
+01:37:43,600 --> 01:37:44,119
+Redation
+
+816
+01:37:44,359 --> 01:37:45,659
+Tablo diyoruz
+
+817
+01:37:45,920 --> 01:37:51,779
+Burada her bir tablonun bir adı var dedik ve her bir tablonun bir anahtarı olması gerekiyor
+
+818
+01:37:53,319 --> 01:37:55,619
+Ta ki o tablo içerisindeki satırları
+
+819
+01:37:55,880 --> 01:37:59,199
+Unik olarak identifiyedebilsin birbirinden hayrı kalabilsin
+
+820
+01:37:59,399 --> 01:38:00,939
+Evet
+
+821
+01:38:01,199 --> 01:38:04,520
+Burada ya nitelikleri kullanarak bir
+
+822
+01:38:05,039 --> 01:38:06,319
+Anahtar belirleyeceğiz
+
+823
+01:38:06,579 --> 01:38:08,880
+Ya da belirleyemiyorsak nitelikleri kullanarak
+
+824
+01:38:09,140 --> 01:38:14,500
+Artık bir anahtar belirleyeceğiz bunu zaten bu bu işlemimiz esasında kavramsız tasarımda yaptık
+
+825
+01:38:14,760 --> 01:38:16,039
+Yani yapmış olmamız lazım
+
+826
+01:38:16,300 --> 01:38:18,600
+Karamsız tasarımı tam olarak bitirdiysek
+
+827
+01:38:18,859 --> 01:38:26,539
+Ondan sonra ilişki modeline geçtiğimiz zaman hemen anahtarla belli olacak zaten veya burada sadece bir birinci anahtar seçimi yapacağız birden çok anahtar
+
+828
+01:38:26,800 --> 01:38:27,819
+Söz konusuysa
+
+829
+01:38:28,539 --> 01:38:30,319
+Şema
+
+830
+01:38:30,579 --> 01:38:31,359
+Dediğim zaman
+
+831
+01:38:32,880 --> 01:38:33,399
+Bu
+
+832
+01:38:34,180 --> 01:38:37,239
+Şeyin ilişkinin bir şeması
+
+833
+01:38:37,500 --> 01:38:38,779
+Tablonun şeması
+
+834
+01:38:39,039 --> 01:38:40,560
+Şöyle bir şekilde ifade ediyoruz
+
+835
+01:38:40,819 --> 01:38:42,619
+İsmi ve niteliklerin ismi
+
+836
+01:38:42,880 --> 01:38:44,159
+Olacak
+
+837
+01:38:44,420 --> 01:38:46,460
+Tablonun derecesi
+
+838
+01:38:46,979 --> 01:38:49,020
+İlişkinin derecesi
+
+839
+01:38:49,279 --> 01:38:51,579
+İlişki şemasının nitelik sayısı
+
+840
+01:38:52,340 --> 01:38:52,859
+Yani
+
+841
+01:38:53,060 --> 01:38:55,119
+Burada
+
+842
+01:38:55,380 --> 01:38:59,199
+O tablodaki niteliklerin sayısı o tablonun derecesini
+
+843
+01:38:59,460 --> 01:39:00,479
+Belirlemiş oluyor
+
+844
+01:39:00,739 --> 01:39:01,260
+Mesela
+
+845
+01:39:01,520 --> 01:39:02,800
+Şöyle bir şemada
+
+846
+01:39:03,060 --> 01:39:06,640
+Bizim tablomuzun ismi customer nitelikler bunlar
+
+847
+01:39:06,899 --> 01:39:08,680
+İlişkinin ismi
+
+848
+01:39:08,939 --> 01:39:10,979
+Customer derecesi 4
+
+849
+01:39:11,500 --> 01:39:13,039
+Oluyor niteliklerimiz de bunlar
+
+850
+01:39:14,579 --> 01:39:21,220
+Gene set of tuples dedik set of tuples'ları şu şekilde böyle ifade ediyoruz bunu bu notasyonu
+
+851
+01:39:21,479 --> 01:39:22,760
+Normalizasyonu da
+
+852
+01:39:23,020 --> 01:39:25,840
+Formal ifadeler kullanılığı için orada
+
+853
+01:39:26,100 --> 01:39:29,460
+Geçiyordu şimdi normalizasyonu dersten çıkardığımız için
+
+854
+01:39:29,720 --> 01:39:35,859
+Bunlar esasında çok şey olmayacak yani formal şeyler kullanamayacağız ama gene
+
+855
+01:39:36,119 --> 01:39:40,479
+Genel tanımlar noktasında bunu burada bıraktık
+
+856
+01:39:40,739 --> 01:39:44,319
+Mesela bir role customer'ın satırları
+
+857
+01:39:44,579 --> 01:39:45,340
+4 tuple
+
+858
+01:39:45,859 --> 01:39:47,779
+Mesela 4 tuple
+
+859
+01:39:48,039 --> 01:39:51,939
+4 tane tuple olması demek değil her bir tuple'ın derecesinin 4 olması
+
+860
+01:39:52,140 --> 01:39:52,920
+4 tuple
+
+861
+01:39:53,180 --> 01:39:55,220
+Neler mesela bir tuple örneği
+
+862
+01:39:55,479 --> 01:39:59,319
+Bakın mesela 4 tane burada değer var
+
+863
+01:39:59,579 --> 01:40:00,859
+Yani customer aydı
+
+864
+01:40:01,119 --> 01:40:01,880
+Customer name
+
+865
+01:40:02,140 --> 01:40:02,899
+Adres
+
+866
+01:40:03,159 --> 01:40:03,659
+ve
+
+867
+01:40:03,920 --> 01:40:07,500
+Fon numarası diye 4 tane nitelikten oluşan bir
+
+868
+01:40:07,760 --> 01:40:08,800
+Role var burada
+
+869
+01:40:12,359 --> 01:40:15,180
+Domain dediğimiz zaman her bir niteliğin
+
+870
+01:40:16,720 --> 01:40:18,260
+Veri tipi ve formatı
+
+871
+01:40:18,779 --> 01:40:19,539
+Yani veri tipi
+
+872
+01:40:19,800 --> 01:40:20,300
+Biraz
+
+873
+01:40:20,960 --> 01:40:23,520
+Daha az küçük kapsamlı oluyor
+
+874
+01:40:23,779 --> 01:40:26,859
+O veri tipi ile beraber hangi formatta oldu
+
+875
+01:40:27,119 --> 01:40:27,659
+Mesela
+
+876
+01:40:27,920 --> 01:40:29,720
+Telefon numaraları
+
+877
+01:40:29,979 --> 01:40:32,800
+Dediğimiz zaman bu esasında
+
+878
+01:40:33,060 --> 01:40:34,859
+Nasıl bir şeyi var
+
+879
+01:40:35,100 --> 01:40:36,119
+Decimal digit
+
+880
+01:40:36,380 --> 01:40:38,939
+ve 10 tane digitten oluşan bir
+
+881
+01:40:39,199 --> 01:40:40,220
+Değer
+
+882
+01:40:42,520 --> 01:40:46,100
+Veya işte date diyoruz bu date veri tipi date
+
+883
+01:40:46,359 --> 01:40:47,380
+Ama formatı
+
+884
+01:40:47,579 --> 01:40:51,680
+Nasıl formatta olacak yani sene ay gün mü veya işte
+
+885
+01:40:51,939 --> 01:40:55,260
+Ay yıl şeklinde gün ay yıl şeklinde mi olacak
+
+886
+01:40:55,520 --> 01:40:57,060
+Yani o zaman demek ki
+
+887
+01:40:57,319 --> 01:40:59,619
+Tiple beraber veri tipi ile beraber
+
+888
+01:40:59,880 --> 01:41:01,399
+Ayrıca formatı da
+
+889
+01:41:01,659 --> 01:41:03,960
+İkisi beraber domeni tanımlamış oluyor
+
+890
+01:41:06,279 --> 01:41:09,359
+Burada niteliklerin isimlerini verirken tabi
+
+891
+01:41:09,619 --> 01:41:11,140
+Bu niteliğin o
+
+892
+01:41:11,399 --> 01:41:13,960
+Tablo içerisinde oynadığı role göre
+
+893
+01:41:14,220 --> 01:41:15,239
+Isim vermek lazım
+
+894
+01:41:15,699 --> 01:41:17,739
+Sorgulamada
+
+895
+01:41:18,000 --> 01:41:20,819
+Veya diğer kullanıcılara bir mana ifade etsin
+
+896
+01:41:21,079 --> 01:41:23,380
+Bu bizim
+
+897
+01:41:23,640 --> 01:41:28,760
+Bu küçük dünyayı tanımlamamız noktasında o küçük dünyayı hayata taşıyabilmemiz noktasında
+
+898
+01:41:29,020 --> 01:41:35,159
+Önemli olacak yoksa xyz desek bu isimlere tablo ismi falan o zaman kullanıcısı olacak yani
+
+899
+01:41:37,460 --> 01:41:38,500
+Evet
+
+900
+01:41:42,579 --> 01:41:45,399
+Attribute customer name is defined over domain
+
+901
+01:41:45,659 --> 01:41:48,460
+Mesela burada müşteri ismi
+
+902
+01:41:48,619 --> 01:41:49,640
+Domaini
+
+903
+01:41:49,899 --> 01:41:51,180
+Varchar 25
+
+904
+01:41:51,699 --> 01:41:54,000
+Örnek olarak verilmiş burada
+
+905
+01:41:54,260 --> 01:41:56,300
+Bu müşterinin mesela isimleri
+
+906
+01:41:56,560 --> 01:41:58,380
+Veri tipi Varchar
+
+907
+01:41:58,640 --> 01:42:01,199
+Formatıda 25 tane
+
+908
+01:42:01,460 --> 01:42:03,260
+Karakterden oluşuyor
+
+909
+01:42:03,760 --> 01:42:06,319
+Varchar olduğu için de en fazla 25
+
+910
+01:42:06,579 --> 01:42:12,979
+Yani 25'den daha fazla isim içeren harf içeren bir isim buraya kaydedemeyiz
+
+911
+01:42:13,500 --> 01:42:16,579
+Kaydedersek ya sistem buna müsaade etmeyecek
+
+912
+01:42:17,000 --> 01:42:18,779
+Artık sistemin yapılanmasına göre
+
+913
+01:42:19,039 --> 01:42:19,539
+Ya da
+
+914
+01:42:19,800 --> 01:42:23,380
+Senin yazdığın 30 harfik şeyin sadece 25'lik kısmını yazabilecek
+
+915
+01:42:24,159 --> 01:42:27,020
+Veya gene işte 10 harfik bir şey yazdığımız zaman
+
+916
+01:42:27,279 --> 01:42:29,079
+Arka planda bu
+
+917
+01:42:29,340 --> 01:42:29,840
+Diğer
+
+918
+01:42:30,100 --> 01:42:31,380
+Geri kalan 15
+
+919
+01:42:31,640 --> 01:42:31,899
+Byte
+
+920
+01:42:32,159 --> 01:42:33,180
+Ya boş kalacak
+
+921
+01:42:33,439 --> 01:42:33,939
+Ya da
+
+922
+01:42:34,199 --> 01:42:37,020
+Fiziksel olarak bunun gerçekleştirme noktasında
+
+923
+01:42:37,279 --> 01:42:39,060
+Orada boş kalmayacak
+
+924
+01:42:39,319 --> 01:42:45,460
+Yani onu o şekilde boş kalmayacak şekilde yerleştirecek mesela farklı şekillerde arka planı düşünebiliriz
+
+925
+01:42:45,920 --> 01:42:50,539
+Nihayetinde for domain dediğin zaman bunların hepsi işin içine girmiş oluyor
+
+926
+01:42:52,579 --> 01:42:53,859
+State demek
+
+927
+01:42:54,119 --> 01:42:56,920
+Yani instance biraz önceki o uçuş
+
+928
+01:42:57,180 --> 01:42:58,720
+Olayla ilgili instance yani
+
+929
+01:42:58,979 --> 01:43:01,020
+Gerçek hayattaki değeri
+
+930
+01:43:01,539 --> 01:43:05,119
+A subset of Cartesian product of domains of its attributes
+
+931
+01:43:07,220 --> 01:43:08,260
+Cartesian product
+
+932
+01:43:08,779 --> 01:43:11,579
+Bu Cartesian product burada ne alakası var
+
+933
+01:43:12,859 --> 01:43:13,359
+Yani
+
+934
+01:43:13,619 --> 01:43:15,680
+Olabilecek benim işte bir tablomun
+
+935
+01:43:15,880 --> 01:43:18,439
+Niteliklerinden bahsettik değil mi
+
+936
+01:43:18,960 --> 01:43:21,520
+O niteliklerin her birinin domeni var
+
+937
+01:43:21,779 --> 01:43:22,539
+Ve böylece
+
+938
+01:43:22,800 --> 01:43:23,319
+Bunların
+
+939
+01:43:23,579 --> 01:43:29,960
+Olası domeni içerisinin domeni her bir niteliğin domeni içerisindeki olası değerlerin
+
+940
+01:43:30,479 --> 01:43:37,640
+Her bir nitelik için düşünüyorum olası değerleri ve buradaki bütün nitelikler için düşündüğü zaman burada bir Cartesian çarpımla bu uzayı
+
+941
+01:43:37,899 --> 01:43:38,420
+Düşünebilirim
+
+942
+01:43:38,920 --> 01:43:39,439
+Mesela
+
+943
+01:43:39,699 --> 01:43:40,460
+Atıyorum bir
+
+944
+01:43:40,720 --> 01:43:42,520
+R tablosu diyelim
+
+945
+01:43:42,779 --> 01:43:44,560
+X ve Y nitelikleri olsun
+
+946
+01:43:44,760 --> 01:43:46,560
+X niteliğinin domeninde
+
+947
+01:43:46,819 --> 01:43:54,720
+10 farklı değer var, Y niteliğinde 20 farklı değer alabilir. O zaman burada benim bu tablom toplama olarak 200 farklı
+
+948
+01:43:54,979 --> 01:43:56,500
+Instance olabilir
+
+949
+01:43:57,000 --> 01:43:58,279
+İşte herhangi bir
+
+950
+01:43:58,539 --> 01:43:59,319
+Instance
+
+951
+01:43:59,819 --> 01:44:00,319
+Bu
+
+952
+01:44:00,579 --> 01:44:02,119
+200 farklı
+
+953
+01:44:02,380 --> 01:44:04,439
+Durumdan bir alt kümesini içerecek
+
+954
+01:44:04,979 --> 01:44:06,000
+Buradaki satırlar
+
+955
+01:44:06,260 --> 01:44:12,359
+Ya 40 tanesini içerecek ya 80 tanesini ya da 200 tane içerebilecek. Çünkü bu set olduğu için
+
+956
+01:44:12,560 --> 01:44:16,920
+Tekrar olamayacağı için en fazla bu tablomuzun büyüklüğü yani verdiğim örnekte
+
+957
+01:44:17,180 --> 01:44:19,479
+X'in farklı değer nitelik sayısı
+
+958
+01:44:19,739 --> 01:44:22,560
+Farklı domenindeki farklı değer sayısı 10 ise
+
+959
+01:44:22,819 --> 01:44:25,619
+Y'nin 20 ise bu tablomuz en fazla
+
+960
+01:44:25,880 --> 01:44:31,520
+200 satır büyüklüğünde olabilecektir. Yani bütün o demeyinde olabilecek olası değerleri
+
+961
+01:44:31,779 --> 01:44:33,300
+İçermiş olduk böylece
+
+962
+01:44:33,560 --> 01:44:35,600
+Evet bu şekilde örneklendirebiliriz
+
+963
+01:44:36,880 --> 01:44:40,720
+Yine ikinci dersimizin sonuna vardık
+
+964
+01:44:41,399 --> 01:44:48,300
+Bu tanımlar böyle şey gelmesin size bu yani olayın bir işte altyapısı var tabii
+
+965
+01:44:48,560 --> 01:44:54,960
+Ve bunlar da oldukça basit yani ilişki sarı modeli esasında hani bunların üzerine kurulmuş yani hem çok basit
+
+966
+01:44:55,720 --> 01:44:57,779
+Ama ortaya çıkan şey
+
+967
+01:44:58,039 --> 01:45:02,380
+Gerçek hayata çok yakın gerçek hayata çok güzel modelleyip sorgulayabiliyoruz
+
+968
+01:45:02,640 --> 01:45:04,439
+Böyle değerlendirirseniz
+
+969
+01:45:04,680 --> 01:45:07,239
+Bunların hepsi şey olacak
+
+970
+01:45:08,779 --> 01:45:10,060
+Oldukça bize
+
+971
+01:45:10,460 --> 01:45:12,260
+Yani olayın tam anlaşılması için
+
+972
+01:45:12,520 --> 01:45:14,819
+Bunların anlaşılışı önemli oluyor
+
+973
+01:45:15,079 --> 01:45:17,899
+Şimdi bir ara verelim gene 10 dakika kadar
+
+974
+01:45:18,420 --> 01:45:20,199
+Üçüncü derste görüşürüz
+
+975
+01:55:37,199 --> 01:55:38,979
+Evet başlayalım arkadaşlar
+
+976
+01:55:39,239 --> 01:55:54,300
+Evet
+
+977
+01:55:58,710 --> 01:55:59,489
+Buradayız hocam
+
+978
+01:55:59,750 --> 01:56:00,250
+Evet
+
+979
+01:56:05,149 --> 01:56:11,770
+O zaman demek ki herhangi bir anda formally given bir belli bir ilişki veya bir şemanın
+
+980
+01:56:12,029 --> 01:56:12,789
+Bir
+
+981
+01:56:13,329 --> 01:56:14,869
+Instansı
+
+982
+01:56:15,390 --> 01:56:16,409
+Şu domenin
+
+983
+01:56:16,609 --> 01:56:19,949
+Bu domenindeki eleman sayısının her birinin
+
+984
+01:56:20,210 --> 01:56:22,510
+Kartezen çarpımının bir alt kümesi olacak
+
+985
+01:56:23,010 --> 01:56:23,789
+Yani sıfır
+
+986
+01:56:24,050 --> 01:56:24,810
+Bir tane
+
+987
+01:56:25,050 --> 01:56:25,829
+Satır olabilir
+
+988
+01:56:26,090 --> 01:56:29,670
+Veya toplamış da biraz önce verdiğimiz örnekte 200 tane satırdan
+
+989
+01:56:29,930 --> 01:56:32,489
+Oluşan bir tablo olmuş oluyor
+
+990
+01:56:33,250 --> 01:56:37,090
+Evet şema böyle spesifik state'i ifade ediyor şu
+
+991
+01:56:37,350 --> 01:56:37,869
+Şey
+
+992
+01:56:38,130 --> 01:56:39,630
+Z
+
+993
+01:56:39,890 --> 01:56:41,050
+Büyük re
+
+994
+01:56:41,310 --> 01:56:43,609
+Herhangi bir spesifik state'i ifade ediyor
+
+995
+01:56:45,409 --> 01:56:45,930
+Evet
+
+996
+01:56:49,039 --> 01:56:50,079
+Örneğin mesela
+
+997
+01:56:50,340 --> 01:56:53,140
+Biraz önceki verdiğim örneğin benzeri var burada
+
+998
+01:56:53,399 --> 01:56:57,239
+Mesela domeni A1 ve A2'nin teliklerinden oluşan bir re
+
+999
+01:56:59,039 --> 01:57:00,319
+Bir re tablomuz var
+
+1000
+01:57:01,340 --> 01:57:04,659
+Bu A1'in domeni sıfır bir
+
+1001
+01:57:04,920 --> 01:57:07,479
+A2'nin domeni de ABC ise
+
+1002
+01:57:07,739 --> 01:57:09,020
+O zaman
+
+1003
+01:57:09,279 --> 01:57:11,579
+Toplama olarak burada 6 tane
+
+1004
+01:57:12,340 --> 01:57:13,880
+Satır olabilir en fazla
+
+1005
+01:57:14,140 --> 01:57:16,680
+Yani bütün olası kombinasyonlar
+
+1006
+01:57:16,880 --> 01:57:20,979
+Bunlar olacaktır ama state'e baktığımız zaman işte sıfı A sıfı C olabilir
+
+1007
+01:57:21,500 --> 01:57:23,039
+İkisini içeriyor mesela işte
+
+1008
+01:57:23,300 --> 01:57:24,319
+Belli bir anda
+
+1009
+01:57:24,579 --> 01:57:26,880
+State herhangi bir instance
+
+1010
+01:57:27,140 --> 01:57:29,680
+Ne olacak şu 3'ü birden 3 satırdan oluşmuş
+
+1011
+01:57:30,199 --> 01:57:30,720
+Olabilir
+
+1012
+01:57:31,739 --> 01:57:32,239
+Evet
+
+1013
+01:57:33,539 --> 01:57:38,399
+Burada işte her birine 2 tapas diyoruz çünkü tablomuzun derecesi 2 olduğu için
+
+1014
+01:57:38,899 --> 01:57:40,699
+2 tapas olacak şekilde
+
+1015
+01:57:42,239 --> 01:57:43,520
+Olası bir durumu
+
+1016
+01:57:43,779 --> 01:57:46,319
+Tablomuzun olası bir durumu böyle olmuş oluyor
+
+1017
+01:57:47,140 --> 01:57:49,199
+Evet all values are constant atomic
+
+1018
+01:57:49,460 --> 01:57:50,479
+Indivisible
+
+1019
+01:57:50,739 --> 01:57:56,100
+Special null value is used to represent values that are unknown, inapplicable or inapplicable
+
+1020
+01:57:56,619 --> 01:57:57,640
+Ya bilinmiyor ya da
+
+1021
+01:57:58,159 --> 01:57:59,180
+O satır için
+
+1022
+01:57:59,439 --> 01:58:00,979
+Belirli değil
+
+1023
+01:58:01,239 --> 01:58:02,000
+Tabi null
+
+1024
+01:58:02,260 --> 01:58:06,100
+İstenilen bir şey değil yani bir tabloda çok fazla null varsa
+
+1025
+01:58:06,359 --> 01:58:08,140
+Demek ki tasarımda bir yerde hata yaptık
+
+1026
+01:58:08,399 --> 01:58:09,659
+O akla gelmesi lazım
+
+1027
+01:58:09,920 --> 01:58:10,439
+Yani
+
+1028
+01:58:12,220 --> 01:58:14,020
+Ya bazen de kaçınılmaz oluyor tabi
+
+1029
+01:58:14,279 --> 01:58:16,060
+Mesela daha çok
+
+1030
+01:58:16,479 --> 01:58:19,300
+Ne gibi bir sorumu var ki çok fazla null var
+
+1031
+01:58:19,560 --> 01:58:21,380
+Demek ki specialization yapmamışız
+
+1032
+01:58:21,899 --> 01:58:25,479
+Yani mesela o küçük dünyada o varlıklar için mesela bir
+
+1033
+01:58:25,979 --> 01:58:28,039
+Özelleştirme yapmamışız o yüzden
+
+1034
+01:58:28,300 --> 01:58:29,579
+O nitelik değerleri
+
+1035
+01:58:29,840 --> 01:58:31,380
+Birçok böyle gereksiz yere
+
+1036
+01:58:31,640 --> 01:58:33,920
+Veya farklı
+
+1037
+01:58:34,699 --> 01:58:35,220
+Alt
+
+1038
+01:58:35,479 --> 01:58:36,239
+O farklı
+
+1039
+01:58:36,760 --> 01:58:40,079
+Alt varlık olabilecek şeyler için tanımlanmış
+
+1040
+01:58:40,579 --> 01:58:41,359
+Oysa ben orada
+
+1041
+01:58:42,340 --> 01:58:44,380
+Özelleştirme yapmış olsaydım hani
+
+1042
+01:58:46,640 --> 01:58:47,960
+Özelleştirme yapmış olsaydım
+
+1043
+01:58:48,479 --> 01:58:49,760
+O zaman her bir nitelik
+
+1044
+01:58:50,279 --> 01:58:51,560
+Sadece
+
+1045
+01:58:51,819 --> 01:58:52,319
+O
+
+1046
+01:58:52,579 --> 01:58:53,079
+Alt
+
+1047
+01:58:53,340 --> 01:58:55,640
+Özel varlık için tanımlanacaktı
+
+1048
+01:58:55,899 --> 01:58:57,439
+Ve null olmayacaktı
+
+1049
+01:58:57,960 --> 01:59:01,279
+Mesela orada karşımıza çıkıyor veya
+
+1050
+01:59:01,539 --> 01:59:05,619
+Bantılarda karşımıza çıkıyor bir bantı tanımlıyoruz mesela o bantı
+
+1051
+01:59:05,880 --> 01:59:07,680
+Kısmi bir bantı olduğu için
+
+1052
+01:59:07,880 --> 01:59:12,500
+Total bir participation yok kısmi bir var olma durumu olduğu için bir varlıklar
+
+1053
+01:59:12,760 --> 01:59:16,840
+O zaman o kısmi var olma durumundan dolayı
+
+1054
+01:59:17,100 --> 01:59:18,380
+O varlığın birçok
+
+1055
+01:59:18,899 --> 01:59:23,760
+İçerisindeki varlıklar için o varlık setinin içerisindeki birçok varlıklar için
+
+1056
+01:59:24,020 --> 01:59:25,560
+O bantıda bir yerleri yok
+
+1057
+01:59:25,819 --> 01:59:28,119
+O bantıda bir tanımlar yok onlar için null olacak
+
+1058
+01:59:29,899 --> 01:59:30,920
+Bu durumlarda ya
+
+1059
+01:59:31,180 --> 01:59:32,979
+İyileştirme yapılabilir tasarımda
+
+1060
+01:59:33,239 --> 01:59:33,739
+Ya da
+
+1061
+01:59:34,000 --> 01:59:36,300
+Kaçınılmaz olarak nullar içerebilir
+
+1062
+01:59:36,560 --> 01:59:37,079
+Tasarmamız
+
+1063
+01:59:37,739 --> 01:59:38,260
+Bu noktada
+
+1064
+01:59:38,520 --> 01:59:39,560
+Yapacak bir şey yok
+
+1065
+01:59:40,819 --> 01:59:41,319
+Evet
+
+1066
+01:59:42,100 --> 01:59:43,380
+Burada da gene her bir
+
+1067
+01:59:43,640 --> 01:59:45,680
+Tappel'ın bir komponent
+
+1068
+01:59:45,939 --> 01:59:47,960
+Değerine
+
+1069
+01:59:48,220 --> 01:59:49,000
+Şu şekilde
+
+1070
+01:59:49,260 --> 01:59:49,779
+Dot
+
+1071
+01:59:50,039 --> 01:59:52,859
+Nokta tanımıyla şey yapabiliriz
+
+1072
+01:59:53,159 --> 01:59:53,659
+Yani
+
+1073
+01:59:54,180 --> 01:59:55,460
+Tappel'ın AI
+
+1074
+01:59:55,720 --> 01:59:56,739
+İşte
+
+1075
+01:59:57,000 --> 01:59:57,760
+Niteli
+
+1076
+01:59:58,020 --> 01:59:59,760
+Veya herhangi bir Tappel'ın
+
+1077
+02:00:00,020 --> 02:00:03,600
+Nokta AI şekilde ifade edersek o nitelik değerine
+
+1078
+02:00:03,859 --> 02:00:05,640
+Formal olarak ulaşmış oluyoruz
+
+1079
+02:00:06,180 --> 02:00:06,680
+Yani
+
+1080
+02:00:07,600 --> 02:00:09,899
+Structure'larda ulaşıyorduk yani Pointer'la
+
+1081
+02:00:10,420 --> 02:00:10,920
+Versi
+
+1082
+02:00:11,180 --> 02:00:11,699
+Nokta
+
+1083
+02:00:11,960 --> 02:00:14,039
+İle niteliğine o Structure'ın
+
+1084
+02:00:14,300 --> 02:00:16,359
+Gene benzer şekilde ona benziyor yani
+
+1085
+02:00:17,140 --> 02:00:17,640
+Evet
+
+1086
+02:00:20,979 --> 02:00:21,479
+Bir
+
+1087
+02:00:21,739 --> 02:00:25,319
+Küçük dünyada bir veri tabanı tasarımda bakıldığı zaman birden çok
+
+1088
+02:00:25,819 --> 02:00:27,619
+İlişkinin birden çok tablonun
+
+1089
+02:00:27,880 --> 02:00:28,899
+Şemalarının
+
+1090
+02:00:29,159 --> 02:00:30,439
+Böyle
+
+1091
+02:00:30,699 --> 02:00:32,739
+Tablo şemalarının bir araya gelmesiyle
+
+1092
+02:00:33,000 --> 02:00:34,539
+Database şema ortaya çıkıyor
+
+1093
+02:00:35,060 --> 02:00:36,340
+Bu database şema
+
+1094
+02:00:37,020 --> 02:00:38,079
+S desek buna
+
+1095
+02:00:38,340 --> 02:00:43,720
+Bu S veri tabanı şeması içerisinde işte tablo şemaları var R1 R2 Rn
+
+1096
+02:00:43,979 --> 02:00:45,760
+En tane tablonun şeması var
+
+1097
+02:00:46,020 --> 02:00:46,800
+O zaman
+
+1098
+02:00:47,060 --> 02:00:48,319
+Bizim
+
+1099
+02:00:48,579 --> 02:00:52,159
+Bu derslerde kullanacağımız birçok örnek üzerinde yapacağımız
+
+1100
+02:00:52,420 --> 02:00:55,239
+İki tane veri tabana bir tanesi kampani veri tabanı
+
+1101
+02:00:55,500 --> 02:00:56,260
+Diğeri de
+
+1102
+02:00:56,520 --> 02:00:57,539
+Şey
+
+1103
+02:00:57,800 --> 02:00:59,600
+Öğrenci kayıt veri tabanımız
+
+1104
+02:00:59,859 --> 02:01:00,359
+Mesela
+
+1105
+02:01:00,619 --> 02:01:03,420
+Bizim kampani veri tabanımızın şeması
+
+1106
+02:01:03,680 --> 02:01:04,199
+Bu şekilde
+
+1107
+02:01:04,399 --> 02:01:06,720
+Yani şemada neler var tablolar var
+
+1108
+02:01:06,979 --> 02:01:09,520
+Tabloların isimleri ve içerisindeki nitelikler
+
+1109
+02:01:09,779 --> 02:01:10,279
+Var
+
+1110
+02:01:10,539 --> 02:01:11,060
+Ve gene
+
+1111
+02:01:11,319 --> 02:01:15,399
+Burada eksik kalmış bir de yabancı anahtarların tanımlanması lazım
+
+1112
+02:01:15,659 --> 02:01:16,180
+Yani
+
+1113
+02:01:16,439 --> 02:01:17,199
+Onu da böyle
+
+1114
+02:01:17,460 --> 02:01:18,220
+Oklarla
+
+1115
+02:01:18,479 --> 02:01:20,020
+Tanımlayacağız yani mesela
+
+1116
+02:01:20,779 --> 02:01:21,300
+Şurada
+
+1117
+02:01:21,819 --> 02:01:22,840
+Eksik olan kısım
+
+1118
+02:01:23,100 --> 02:01:27,460
+Mesela şu DNAO ama bunun daha tamamlanmış kısmı ileride göreceğiz yani eksik ama
+
+1119
+02:01:27,960 --> 02:01:29,239
+Tamamlanmış halini göreceğiz
+
+1120
+02:01:29,500 --> 02:01:32,819
+Mesela diyeceğiz ki şuradaki DNAO'yu şu şekilde şöyle
+
+1121
+02:01:33,079 --> 02:01:34,100
+Şuraya
+
+1122
+02:01:34,619 --> 02:01:35,020
+İşaret
+
+1123
+02:01:35,279 --> 02:01:36,579
+Ediyor yabancı anahtar
+
+1124
+02:01:37,079 --> 02:01:41,439
+Daha sonra manager SSN diyeceğiz ki mesela şu SSN'ye işaret ediyor
+
+1125
+02:01:41,960 --> 02:01:43,479
+Yani şu şekilde oklarla
+
+1126
+02:01:43,739 --> 02:01:45,199
+Bu şeyi tamam
+
+1127
+02:01:45,460 --> 02:01:45,979
+Tamamlayacağız
+
+1128
+02:01:47,000 --> 02:01:49,819
+Şimdi bunu erteliyelim daha yabancı anahtarı tanımlamadık ondan sonra
+
+1129
+02:01:50,340 --> 02:01:52,380
+Tamamlanmış halini göreceğiz bu ama
+
+1130
+02:01:52,640 --> 02:01:54,439
+Şema dediğimiz böyle bir şey oluyor
+
+1131
+02:01:54,699 --> 02:01:55,720
+Yani tablolar
+
+1132
+02:01:55,979 --> 02:01:58,779
+Tabloların içerisindeki nitelikler ve anahtarlar
+
+1133
+02:01:59,300 --> 02:02:00,060
+Oluyor
+
+1134
+02:02:00,319 --> 02:02:02,880
+Burada employment anahtarı bakın SSN
+
+1135
+02:02:03,340 --> 02:02:08,979
+Bu dönüşmeleri yapacağız sonradan da yani niye SSN oldu niye şu x1'den oldu onu yapacağız ama
+
+1136
+02:02:09,479 --> 02:02:13,579
+Gene onunla ilgili ana fikir yine söyledik yani niye
+
+1137
+02:02:13,840 --> 02:02:16,399
+Anahtar nasıl seçiliyor ondan bahsettik
+
+1138
+02:02:16,920 --> 02:02:21,000
+Ama ilişkisel modelde de gene söyleyeceğiz tablonun anahtarı
+
+1139
+02:02:21,260 --> 02:02:24,079
+Mesela Department Locations tablosu diye oluşmuş bu
+
+1140
+02:02:24,340 --> 02:02:26,380
+Yaradan bu noktaya varmışız
+
+1141
+02:02:26,640 --> 02:02:29,460
+Bunun da işte anahtarı x1'den olmuş
+
+1142
+02:02:30,180 --> 02:02:33,239
+Bunun kuralları birazdan onlardan bahsedeceğiz
+
+1143
+02:02:33,760 --> 02:02:35,300
+Evet
+
+1144
+02:02:35,819 --> 02:02:38,619
+Şimdi burada bir formal ifadeler var
+
+1145
+02:02:42,199 --> 02:02:44,520
+Formal dediğin gibi bir de informal
+
+1146
+02:02:44,779 --> 02:02:46,319
+Ifadeleri var
+
+1147
+02:02:46,819 --> 02:02:48,859
+Şurası formal tarafı burası informal
+
+1148
+02:02:49,119 --> 02:02:53,479
+Yani pratik olarak en bir sürüde kullanan relation dediğimiz zaman yani ilişki relation
+
+1149
+02:02:53,739 --> 02:02:56,560
+Bunun informal pratiklik aile tablo
+
+1150
+02:02:56,760 --> 02:02:59,579
+Attribute formal ifade column header
+
+1151
+02:02:59,840 --> 02:03:03,939
+Informal ifade domain all possible column values
+
+1152
+02:03:04,460 --> 02:03:04,960
+Yani
+
+1153
+02:03:05,220 --> 02:03:10,340
+O kalımdaki o kolondaki olası bütün değerler domainimiz olmuş oluyor
+
+1154
+02:03:11,359 --> 02:03:14,439
+Mesela TC kimlik numarası işte 11 dijitten oluşuyor
+
+1155
+02:03:14,699 --> 02:03:16,479
+Olası bütün durumlar ne
+
+1156
+02:03:16,739 --> 02:03:19,039
+10 üzeri 10 farklı
+
+1157
+02:03:19,300 --> 02:03:22,619
+Çok yüksek bir rakam herkese farklı bir değer verebilmek adına
+
+1158
+02:03:22,880 --> 02:03:23,640
+10 tane dijit
+
+1159
+02:03:23,899 --> 02:03:26,479
+10 dijit herhalde değil mi
+
+1160
+02:03:26,760 --> 02:03:27,539
+10 dijit 11 mi
+
+1161
+02:03:28,560 --> 02:03:31,119
+11 hocam 11 değil mi 11 üzeri
+
+1162
+02:03:31,380 --> 02:03:33,420
+11 üzeri 10
+
+1163
+02:03:33,680 --> 02:03:35,720
+Yani 0-9 arasında rakamlar var
+
+1164
+02:03:36,239 --> 02:03:38,539
+11 üzeri 10 farklı domaini var
+
+1165
+02:03:39,039 --> 02:03:42,640
+Ama şey bütün sayılar oluyor mu onun bir şeyi var ya formülü var ya hocam
+
+1166
+02:03:42,899 --> 02:03:44,939
+Yani herhalde artık tam bilemeyeceğim onu
+
+1167
+02:03:45,199 --> 02:03:47,239
+Vardır dediğiniz gibi
+
+1168
+02:03:48,539 --> 02:03:54,159
+Row, tuple oluyor, table definition, schema relation oluyor
+
+1169
+02:03:54,420 --> 02:03:56,220
+Populated table
+
+1170
+02:03:57,539 --> 02:03:59,840
+State of relation
+
+1171
+02:04:00,100 --> 02:04:01,380
+Olur herhangi bir state
+
+1172
+02:04:01,640 --> 02:04:02,659
+Herhangi bir durumu
+
+1173
+02:04:02,920 --> 02:04:04,960
+Tablonun popület edilmesi
+
+1174
+02:04:05,220 --> 02:04:07,000
+Şeklinde ifade edebiliriz
+
+1175
+02:04:07,260 --> 02:04:09,819
+Şimdi constraintler kısıtlar
+
+1176
+02:04:10,340 --> 02:04:14,420
+İlişkisel modelin model olduğu için
+
+1177
+02:04:14,680 --> 02:04:18,779
+O küçük dünyayı yani o kavramsal tasarımda şekillendirdiğimiz o şeyi
+
+1178
+02:04:19,039 --> 02:04:20,819
+Bir takım kısıtlar ortaya çıkacak
+
+1179
+02:04:21,079 --> 02:04:23,140
+O kısıtlar da anahtar kısıtı
+
+1180
+02:04:23,600 --> 02:04:27,439
+Varlık bütünlük kısıtı ve ima bütünlük kısıtı bu isimlendirmeleri
+
+1181
+02:04:27,699 --> 02:04:30,260
+Mutlaka bilelim yani ilişkisel modelle
+
+1182
+02:04:30,520 --> 02:04:31,539
+Yani
+
+1183
+02:04:31,800 --> 02:04:32,560
+Kural olarak
+
+1184
+02:04:32,819 --> 02:04:36,399
+Tanım olarak bilmemiz gereken işte 3-5 tane şeyden bir tanesi yani çok
+
+1185
+02:04:36,659 --> 02:04:38,699
+Karmaşık değil ama maalesef bunlar
+
+1186
+02:04:38,960 --> 02:04:40,760
+Bir türlü yerine oturmuyor
+
+1187
+02:04:41,020 --> 02:04:43,319
+Bunu da soruyoruz sınavlarda falan
+
+1188
+02:04:43,579 --> 02:04:48,939
+Yani işte anahtar kısıtını ifade eden bir soru mesela veya varlık bütünlük kısıtı burada nasıl bir kısıt var
+
+1189
+02:04:49,199 --> 02:04:51,000
+Nasıl bir kısıt ihlali var gibi
+
+1190
+02:04:51,199 --> 02:04:55,300
+Maalesef olmuyor ama inşallah siz şey yaparsınız, dikkat edersiniz
+
+1191
+02:04:55,819 --> 02:04:56,840
+Bunun her biri
+
+1192
+02:04:57,100 --> 02:05:02,220
+Bizim o modeli daha iyi tanımlamamız imkansız oluyor. Model dediğimiz zaten kısıtlardan oluşacak. Anahtar kısıtı
+
+1193
+02:05:02,720 --> 02:05:04,520
+Her bir tablonun
+
+1194
+02:05:04,779 --> 02:05:06,319
+İçerisinde bir anahtar
+
+1195
+02:05:06,579 --> 02:05:09,640
+Ve o anahtarın da o tablodaki satırları
+
+1196
+02:05:09,899 --> 02:05:15,520
+Tapılları farklı kılmasına imkan sağlaması gerekiyor o anahtarın koyduğum o tanımladığım anahtarın
+
+1197
+02:05:15,779 --> 02:05:17,060
+Varlık bütünlük kısıtı
+
+1198
+02:05:17,520 --> 02:05:22,899
+İşte o anahtarların nal olmaması ile ilgili. Yabancı anahtar kısıtı da
+
+1199
+02:05:23,159 --> 02:05:25,979
+İma yani tablolar başka tablolara ima edecek
+
+1200
+02:05:27,260 --> 02:05:29,300
+Diğer bir kısıtımız domain kısıtı
+
+1201
+02:05:29,560 --> 02:05:35,180
+Ya nal olabilir veya o domain'deki o domain'e uygun o domain'in kuralına uygun şekilde
+
+1202
+02:05:35,439 --> 02:05:36,979
+Bir veritip olması lazım ve
+
+1203
+02:05:37,239 --> 02:05:38,779
+O domain'deki işte
+
+1204
+02:05:39,039 --> 02:05:42,859
+Dijit sayısı kadar işte belli bir aralıksa
+
+1205
+02:05:43,119 --> 02:05:45,180
+Mesela yaş diyeceğiz mesela
+
+1206
+02:05:45,439 --> 02:05:45,939
+İşte
+
+1207
+02:05:46,140 --> 02:05:47,180
+Integer
+
+1208
+02:05:47,680 --> 02:05:48,199
+Atıyorum
+
+1209
+02:05:48,460 --> 02:05:52,039
+Ama bir de kısıt koyacağız ona bu yaş bilgisi 0 ile 100 arasında olabilir
+
+1210
+02:05:52,560 --> 02:05:53,319
+Diyeceğiz mesela
+
+1211
+02:05:53,579 --> 02:05:55,619
+Onun domain'i olmuş oluyor gene
+
+1212
+02:05:56,140 --> 02:05:57,159
+Yine diğer bir kısıt
+
+1213
+02:05:57,680 --> 02:05:58,180
+Semantik
+
+1214
+02:05:58,439 --> 02:05:59,199
+Kansitüretler
+
+1215
+02:05:59,720 --> 02:06:02,279
+Yani o küçük dünyaya has şekilde
+
+1216
+02:06:02,539 --> 02:06:03,300
+Bazı
+
+1217
+02:06:03,560 --> 02:06:04,579
+Kısıtlar koyabiliriz
+
+1218
+02:06:05,100 --> 02:06:09,939
+Yani buna iş kuralları biziniz rule da denebiliyor veya semantik rule'lar da deniyor
+
+1219
+02:06:10,199 --> 02:06:12,260
+Yani oradaki o semantik ne demek
+
+1220
+02:06:12,520 --> 02:06:13,020
+Yani
+
+1221
+02:06:13,220 --> 02:06:15,520
+O manaya oradaki o
+
+1222
+02:06:16,300 --> 02:06:17,079
+Kontekse
+
+1223
+02:06:18,340 --> 02:06:18,859
+Uygun
+
+1224
+02:06:19,380 --> 02:06:21,159
+Ortama uygun olan bir
+
+1225
+02:06:21,420 --> 02:06:21,939
+Kısıt
+
+1226
+02:06:22,199 --> 02:06:24,739
+Olmuş oluyor mesela bir öğrenci bir veri tabanıysa
+
+1227
+02:06:25,000 --> 02:06:26,279
+İşte bu öğrencilerin
+
+1228
+02:06:26,539 --> 02:06:28,079
+Kayıt hadisesinde
+
+1229
+02:06:29,619 --> 02:06:31,399
+Kayıt olabilmeleri için işte
+
+1230
+02:06:31,659 --> 02:06:33,199
+Harç yatırmış olmaları lazım
+
+1231
+02:06:33,460 --> 02:06:33,960
+İşte
+
+1232
+02:06:34,220 --> 02:06:35,760
+Borç tablosuna bakacak
+
+1233
+02:06:36,020 --> 02:06:38,819
+İşte orada harç yatırmış olması harç yatırdı mı
+
+1234
+02:06:39,020 --> 02:06:43,880
+Onu kontrol onu onu yatıran anca ders alabildi mesela atıyorum eskiden harç yatırıyordunuz
+
+1235
+02:06:44,140 --> 02:06:45,420
+Yatırılıyordum
+
+1236
+02:06:45,939 --> 02:06:51,060
+Veya işte ön koşulu dersleri var mesela ön koşulu geçmiş olması lazım ki bu dersi alabilir
+
+1237
+02:06:51,319 --> 02:06:51,840
+Hep bunlar
+
+1238
+02:06:52,340 --> 02:06:52,859
+Semantik
+
+1239
+02:06:53,359 --> 02:06:59,500
+O küçük yani bu küçük dünyadaki bu tanımı bu kısıtı al başka küçük dünyaya taşı olmaz yani o küçük dünyada bu tanım yok yani
+
+1240
+02:07:00,020 --> 02:07:02,579
+Ona göre o küçük dünyada
+
+1241
+02:07:02,840 --> 02:07:03,859
+Tanımlarımız olacak
+
+1242
+02:07:05,140 --> 02:07:05,659
+Evet
+
+1243
+02:07:06,380 --> 02:07:13,539
+Burada anahtar tanımımız var anahtar tanımı bunu kısmen zaten yaptık
+
+1244
+02:07:14,060 --> 02:07:17,140
+Burada farklı anahtar kavramlarımız var süper key
+
+1245
+02:07:17,659 --> 02:07:18,159
+Key
+
+1246
+02:07:18,420 --> 02:07:26,859
+Ve candidate key ve primary key olmak üzere key dediğimiz anahtarın farklı tanımlamaları var süper key
+
+1247
+02:07:27,119 --> 02:07:28,399
+Herhangi bir şekilde
+
+1248
+02:07:28,659 --> 02:07:34,020
+Bizim tablomuz arasında tablomuzun tablomuzun satırlarını tapıllarını
+
+1249
+02:07:34,220 --> 02:07:35,760
+Farklı kılacak
+
+1250
+02:07:36,020 --> 02:07:38,319
+Nitelik veya nitelik grubu
+
+1251
+02:07:39,340 --> 02:07:40,119
+Süper key
+
+1252
+02:07:40,619 --> 02:07:41,380
+Bakın o kadar
+
+1253
+02:07:41,640 --> 02:07:42,939
+Herhangi başka bir şey söylemedim
+
+1254
+02:07:43,199 --> 02:07:46,260
+Ama key dediğim zaman yani anahtar dediğim zaman
+
+1255
+02:07:46,520 --> 02:07:49,579
+Süper key değil key dediğim zaman minimal süper key
+
+1256
+02:07:49,840 --> 02:07:50,600
+Yani
+
+1257
+02:07:50,859 --> 02:07:51,380
+Artık
+
+1258
+02:07:51,640 --> 02:07:52,659
+Bu key
+
+1259
+02:07:54,720 --> 02:07:55,220
+Bu
+
+1260
+02:07:55,479 --> 02:08:00,840
+Key daha küçük parçalara ayırdığım zaman anahtarı anahtar olma özelliğini kaybediyor
+
+1261
+02:08:01,560 --> 02:08:04,380
+Yani minimal minimum sayıda
+
+1262
+02:08:06,159 --> 02:08:08,220
+Nitelik içeren bir grubu
+
+1263
+02:08:08,979 --> 02:08:09,500
+Bu grubu
+
+1264
+02:08:09,760 --> 02:08:10,279
+Daha
+
+1265
+02:08:10,520 --> 02:08:13,079
+Ufaltmaya kalksam anahtar olma özelliğini
+
+1266
+02:08:13,340 --> 02:08:15,640
+Kaybedecek o yüzden minimal süper key'e
+
+1267
+02:08:15,899 --> 02:08:16,659
+Key diyoruz
+
+1268
+02:08:16,920 --> 02:08:18,699
+Benim işime yarayan da esasında bu
+
+1269
+02:08:18,960 --> 02:08:19,479
+Yani
+
+1270
+02:08:19,739 --> 02:08:22,539
+Bu tavlo için anahtar seçimi yaparken
+
+1271
+02:08:22,800 --> 02:08:24,600
+Minimal süper key'lerden
+
+1272
+02:08:24,859 --> 02:08:27,680
+Keyleri kullanarak bir anahtar seçimi yapacağım
+
+1273
+02:08:28,140 --> 02:08:30,960
+Evet başka burada ne yazıyor mesela
+
+1274
+02:08:31,220 --> 02:08:33,779
+Anahtar kavramına uygun
+
+1275
+02:08:34,039 --> 02:08:37,100
+Olan ifadeler bundan no to tapas in any valid
+
+1276
+02:08:37,359 --> 02:08:39,159
+Will have the same value for
+
+1277
+02:08:39,420 --> 02:08:40,180
+Süper key
+
+1278
+02:08:41,960 --> 02:08:42,739
+Bunlar böyle
+
+1279
+02:08:43,000 --> 02:08:45,300
+Minimal süper key'i söyledim bakın yani
+
+1280
+02:08:45,560 --> 02:08:48,119
+Bu önemli şu ifadeyi anlamak
+
+1281
+02:08:48,619 --> 02:08:50,159
+That is a key is a super key
+
+1282
+02:08:50,680 --> 02:08:51,439
+Custard
+
+1283
+02:08:51,699 --> 02:08:54,260
+Remove of any attribute from key results in a
+
+1284
+02:08:57,840 --> 02:08:58,340
+Saldım
+
+1285
+02:09:02,079 --> 02:09:06,920
+Remove of any attribute from key results in a set of attributes that is not a super key
+
+1286
+02:09:07,439 --> 02:09:10,479
+Does not possess the super key uniqueness property
+
+1287
+02:09:11,000 --> 02:09:14,600
+Yani mesela atıyorum 3 tane nitelikten oluşan bir minimal
+
+1288
+02:09:15,100 --> 02:09:16,380
+Süper key mi var
+
+1289
+02:09:17,140 --> 02:09:18,680
+Minimal süper key ise bu
+
+1290
+02:09:19,199 --> 02:09:21,760
+O zaman o 3 tane nitelikte oluşan grubu
+
+1291
+02:09:22,000 --> 02:09:26,560
+O gruptan o niteliklerden bir tanesini çıkardım artık anahtar olma özelliğini kaybetti
+
+1292
+02:09:27,279 --> 02:09:32,140
+Herhangi bir tanesini çıkardım o 3 tane nitelik içeren gruptaki o niteliklerden bir tanesini çıkardım
+
+1293
+02:09:32,399 --> 02:09:38,279
+Artık anahtar olma özelliğini kaybediyorsa işte bu gerçekten minimal süper key'miş o zaman bu benim için kıymetli
+
+1294
+02:09:38,539 --> 02:09:39,560
+Yani anahtar
+
+1295
+02:09:40,840 --> 02:09:41,880
+Kendi de etki ise
+
+1296
+02:09:42,140 --> 02:09:43,659
+Kendi de burada yazmıyor ama
+
+1297
+02:09:43,920 --> 02:09:48,020
+İleride yazacak galiba şurada yazıyor primary ve kendi de etkiyiler
+
+1298
+02:09:48,279 --> 02:09:50,319
+İşte bu anahtarlar arasında
+
+1299
+02:09:50,579 --> 02:09:56,199
+Anahtar bu tip minimal süper key'leri tablo içerisindeki bu tip minimal süper key'ler birden çok
+
+1300
+02:09:56,359 --> 02:09:59,680
+Çok olabilir yani bir üçlü grub buldum minimal süper key
+
+1301
+02:09:59,939 --> 02:10:04,560
+Başka bir ikili grub buldum mesela iki elemandan oluşan bir grub minimal süper key'i yine
+
+1302
+02:10:04,819 --> 02:10:07,920
+Başka bir tane buldum dört nitelikten oluşan çünkü tablolarımız
+
+1303
+02:10:08,180 --> 02:10:09,979
+Hani onlarca nitelik de olabilir
+
+1304
+02:10:11,760 --> 02:10:15,359
+Yani böyle tabii o tip büyük tablolarla çalışmayacağız ama
+
+1305
+02:10:15,619 --> 02:10:22,220
+Hani teorik olarak bu bunu böyle bir ayakları yere basması lazım belli bir tanımlara oturtmamız lazım işte bu
+
+1306
+02:10:22,420 --> 02:10:28,819
+Minimal süper key'lerin hepsi candidate key setini oluşturuyor bunların hepsi candidate key anahtar aday anahtarlar
+
+1307
+02:10:29,340 --> 02:10:35,460
+İşte o candidate key'lerden de ben bir tanesini seçmem lazım işte o seçimden sonra ortaya
+
+1308
+02:10:35,739 --> 02:10:36,779
+Ne çıkıyor primary key
+
+1309
+02:10:37,539 --> 02:10:40,600
+Candidate key'lerden bir tanesini seçtim işte bu primary key'im
+
+1310
+02:10:40,859 --> 02:10:44,180
+Yani bu benim benim tablomun anahtarı bu olacak
+
+1311
+02:10:44,699 --> 02:10:49,060
+İşte bu noktada candidate key'lerden acaba hangisini seçeriz desek
+
+1312
+02:10:50,079 --> 02:10:51,359
+Onların arasında
+
+1313
+02:10:51,779 --> 02:10:56,439
+En küçük olan candidate key'i seçmemiz esasında daha makul
+
+1314
+02:10:56,699 --> 02:11:04,119
+Niye yani en küçük candidate key ne demek yani candidate key'ler ikili olabilir mesela iki nitelikli
+
+1315
+02:11:04,380 --> 02:11:10,000
+Olabilir üç nitelikli olabilir beş nitelikli olabilir ben bunlardan iki nitelikli olanı seçeceğim
+
+1316
+02:11:10,260 --> 02:11:12,800
+Ta ki takimi daha kolay olsun diye
+
+1317
+02:11:13,319 --> 02:11:17,159
+Ya bundan sonra fiziksel tasarımın bu primary key üzerine olacak
+
+1318
+02:11:17,680 --> 02:11:21,260
+Bu performans da çok etkilecek bir şey şimdiden belki göremiyoruz ama
+
+1319
+02:11:21,520 --> 02:11:26,680
+Yani bu candidate key'lerin arasından minimumun seçilmesi gayet
+
+1320
+02:11:26,939 --> 02:11:33,079
+Fiziksel tasarımda veritabanın performans noktasında oldukça makul ve önemli ve zaten öyle olması lazım
+
+1321
+02:11:33,600 --> 02:11:35,640
+Evet tanımlarımız böyle
+
+1322
+02:11:35,899 --> 02:11:37,699
+Şimdi örnekten bakalım mesela bir
+
+1323
+02:11:37,960 --> 02:11:38,720
+Araba
+
+1324
+02:11:38,979 --> 02:11:39,479
+Tablosu
+
+1325
+02:11:39,739 --> 02:11:43,319
+Bu araba tablosundaki nitelikler state
+
+1326
+02:11:43,579 --> 02:11:46,899
+Registration numarası serial no make model year
+
+1327
+02:11:47,420 --> 02:11:49,220
+Şimdi burada bakalım bunlardan
+
+1328
+02:11:49,380 --> 02:11:53,979
+Bana bir tane süper key örneği söyleyin mesela süper key olabilecek bir şey
+
+1329
+02:11:55,520 --> 02:11:56,800
+Süper key'i ne demekti
+
+1330
+02:12:02,699 --> 02:12:04,000
+[öğrenci] bukey
+
+1331
+02:12:06,260 --> 02:12:07,039
+[öğrenci] bukey
+
+1332
+02:12:11,119 --> 02:12:11,680
+Bukey yok
+
+1333
+02:12:13,939 --> 02:12:15,479
+Metin 1-1
+
+1334
+02:12:18,920 --> 02:12:21,479
+Hocam ben tam anlayamadım açıkçası bunu ya
+
+1335
+02:12:21,739 --> 02:12:24,279
+Evet yani şimdi bakın bu hem şimdi bakın bu ders
+
+1336
+02:12:24,539 --> 02:12:25,819
+Hem kolay gözüküyor
+
+1337
+02:12:26,079 --> 02:12:29,399
+Adesinde güzel böyle varlıklar var güzel bağıntılarda
+
+1338
+02:12:29,859 --> 02:12:32,420
+Ama bazen işte bir anda zorlaşıyor
+
+1339
+02:12:33,180 --> 02:12:33,960
+Veya
+
+1340
+02:12:34,220 --> 02:12:38,819
+Tanım gereği tanım tanım da kolay gözüküyor ama hani örneklendirmeye kalksan
+
+1341
+02:12:39,079 --> 02:12:41,899
+Ben bazen çıkamıyorum işin içinden açıkçası
+
+1342
+02:12:42,159 --> 02:12:44,460
+Zor oluyor yani gerçekten de zor yani
+
+1343
+02:12:44,960 --> 02:12:47,260
+O yüzden tanımları iyice anlamak gerekiyor
+
+1344
+02:12:47,520 --> 02:12:49,319
+Ve o tanımları da örneklendirerek
+
+1345
+02:12:49,819 --> 02:12:52,380
+Şey yapmak lazım yani çok fazla bir matematik yok burada ama
+
+1346
+02:12:52,640 --> 02:12:57,760
+Mantıksal düşünme noktasında özellikle mesela ilişkissel cebirde karşılaşacağız SQL'de
+
+1347
+02:12:57,960 --> 02:13:00,260
+O yüzden bu tanımların iyice kafaya oturması lazım
+
+1348
+02:13:00,779 --> 02:13:02,579
+Yani benim burada yaptığım bu tanımlar
+
+1349
+02:13:02,840 --> 02:13:04,619
+Bunlar üzerine başka bir şey daha söylenmez
+
+1350
+02:13:04,880 --> 02:13:09,220
+Anca örneklerle bunu pekiştirmek gerekiyor şimdi söylesem yine 3-5 gün aynı şeyleri söyleyeceğim
+
+1351
+02:13:10,000 --> 02:13:13,319
+O yüzden bunları pekiştirmekle örneklerle olabilecek bir şey
+
+1352
+02:13:13,579 --> 02:13:14,100
+Yani
+
+1353
+02:13:14,359 --> 02:13:15,119
+Burada mesela
+
+1354
+02:13:15,380 --> 02:13:16,399
+Bir anahtarı arıyorum
+
+1355
+02:13:16,659 --> 02:13:19,979
+Ne anahtarı arıyorum süper key'i arıyorum yani süper key'i ne demekti
+
+1356
+02:13:20,239 --> 02:13:21,000
+Buradaki
+
+1357
+02:13:21,260 --> 02:13:25,859
+Satırları birbirinden farklı kılacak bir süper key'i bana söyleyin desem
+
+1358
+02:13:26,119 --> 02:13:26,640
+O zaman
+
+1359
+02:13:26,899 --> 02:13:27,659
+Eğer bu
+
+1360
+02:13:27,920 --> 02:13:28,420
+Hani
+
+1361
+02:13:29,199 --> 02:13:32,020
+Zayıf bir şey zayıf bir varlık seti değilse
+
+1362
+02:13:32,279 --> 02:13:35,079
+Öyle olmadığını düşünelim gerçekten de öyle değil
+
+1363
+02:13:35,340 --> 02:13:36,380
+Yani güçlü bir varlık
+
+1364
+02:13:36,640 --> 02:13:38,680
+Olduğunu düşünürsek
+
+1365
+02:13:38,939 --> 02:13:40,460
+Buradaki bütün nitelikleri
+
+1366
+02:13:40,720 --> 02:13:43,539
+Düşünsem bunlar bir daha tekrar etmeyecek
+
+1367
+02:13:44,060 --> 02:13:49,420
+Olduğuna kanaat varsa bütün bu niteliklerin hepsi süper key olabilir bakalım mesela
+
+1368
+02:13:49,680 --> 02:13:52,500
+Herhangi bir state yani şehirde
+
+1369
+02:13:53,020 --> 02:13:55,619
+Registration numarası seri numarası
+
+1370
+02:13:55,880 --> 02:13:56,380
+Make
+
+1371
+02:13:56,899 --> 02:13:57,399
+Yani
+
+1372
+02:13:58,220 --> 02:13:59,239
+Üretim tarihi
+
+1373
+02:13:59,500 --> 02:14:00,020
+Model
+
+1374
+02:14:00,279 --> 02:14:00,779
+Ve
+
+1375
+02:14:01,039 --> 02:14:01,560
+Sene
+
+1376
+02:14:01,819 --> 02:14:04,380
+Şu Make dediği
+
+1377
+02:14:05,140 --> 02:14:05,640
+Şey
+
+1378
+02:14:06,420 --> 02:14:07,439
+Year and Make
+
+1379
+02:14:07,699 --> 02:14:13,319
+Buna tabi niteliklerin tanımlarını iyice kafaya oturması lazım şimdi ben de bakım mesela Year and Make arasında ne fark var
+
+1380
+02:14:15,640 --> 02:14:16,399
+İlk year
+
+1381
+02:14:16,659 --> 02:14:17,939
+Şunların başında
+
+1382
+02:14:18,199 --> 02:14:19,220
+Şey yapmıştık değil mi
+
+1383
+02:14:19,479 --> 02:14:23,060
+Make yani fabrika üretim tarihi herhalde
+
+1384
+02:14:23,579 --> 02:14:27,159
+Bu year da bu modelin hangi senede ortaya çıktı
+
+1385
+02:14:27,579 --> 02:14:28,880
+Moder de işte
+
+1386
+02:14:30,699 --> 02:14:34,020
+Aksent modeli mesela hundayı aksent diyoruz da aksent modeli falan
+
+1387
+02:14:34,539 --> 02:14:35,560
+Şimdi bunların
+
+1388
+02:14:35,819 --> 02:14:38,119
+Hepsini birer beraber düşündüğün zaman
+
+1389
+02:14:38,640 --> 02:14:44,000
+Bu gerçekten bu tablodaki satırları unique kılmak için yeterli
+
+1390
+02:14:45,039 --> 02:14:45,539
+Çünkü
+
+1391
+02:14:45,800 --> 02:14:47,340
+Hatta fazla bile
+
+1392
+02:14:47,600 --> 02:14:49,899
+Yani birden çok fazla nitelik söyledim yani
+
+1393
+02:14:51,439 --> 02:14:53,220
+Bu süper key tabii ki olabilir
+
+1394
+02:14:53,739 --> 02:14:55,020
+Yani çünkü hiçbir zaman
+
+1395
+02:14:55,220 --> 02:14:59,579
+State, register, Serino, Make, model, year aynı olacak başka bir
+
+1396
+02:14:59,840 --> 02:15:02,140
+Topl, başka bir satır ortaya çıkmayacaktır
+
+1397
+02:15:02,399 --> 02:15:03,680
+Çünkü burada ne var bakın
+
+1398
+02:15:03,939 --> 02:15:05,479
+Registration numarası var
+
+1399
+02:15:06,239 --> 02:15:07,779
+Seri numarası var
+
+1400
+02:15:08,039 --> 02:15:11,859
+Bunlar hep zaten yani tanım gereği bunlar zaten unique
+
+1401
+02:15:12,380 --> 02:15:14,420
+Yani her bir bilgisayarın mesela bir
+
+1402
+02:15:14,680 --> 02:15:16,479
+Mac ID'si var
+
+1403
+02:15:16,739 --> 02:15:18,020
+Unique kılacak onu
+
+1404
+02:15:18,279 --> 02:15:20,840
+IP adresi demedim mesela Mac adresi var
+
+1405
+02:15:21,100 --> 02:15:23,640
+Veya seri numarası var yine fabrika çıkışı
+
+1406
+02:15:23,840 --> 02:15:25,640
+Yani benim şu anda kullandığım bu makina
+
+1407
+02:15:25,899 --> 02:15:32,300
+Dünyada bir tane olan bir numara içeriyor seri numarası. O zaman böyleyken araba için de böyle işte bir motor numarası oluyor mesela
+
+1408
+02:15:32,560 --> 02:15:36,659
+Ve arabanın da bir seri numarası oluyor. Bunlarda onu kastediyoruz esasında. O zaman
+
+1409
+02:15:36,920 --> 02:15:38,699
+Benim biraz önce söylediğim bu liste
+
+1410
+02:15:38,960 --> 02:15:39,720
+Super key
+
+1411
+02:15:39,979 --> 02:15:40,479
+Yani
+
+1412
+02:15:40,739 --> 02:15:43,819
+Çok bana bir fayda sağlamayacak bir şey söyledim Super key
+
+1413
+02:15:44,079 --> 02:15:46,119
+Ama key desem anahtar
+
+1414
+02:15:46,640 --> 02:15:47,159
+Yani
+
+1415
+02:15:48,420 --> 02:15:50,220
+Minimal Super key arıyorsam
+
+1416
+02:15:50,479 --> 02:15:53,020
+Bakın burada state register numarası
+
+1417
+02:15:53,220 --> 02:15:54,000
+Bu ikisi
+
+1418
+02:15:55,520 --> 02:15:55,779
+Bir
+
+1419
+02:15:56,039 --> 02:15:57,060
+Minimal Super key
+
+1420
+02:15:57,319 --> 02:15:58,600
+Yani bir anahtar
+
+1421
+02:15:58,859 --> 02:15:59,380
+Niye
+
+1422
+02:15:59,640 --> 02:16:01,699
+Yani bir şehirde o şehrin
+
+1423
+02:16:01,939 --> 02:16:04,739
+İdaalesinin verdiği register numaraları
+
+1424
+02:16:05,000 --> 02:16:06,539
+Birbirinden farklıymış
+
+1425
+02:16:07,300 --> 02:16:09,619
+Şimdi tabi biraz varsayım yaptım
+
+1426
+02:16:10,119 --> 02:16:10,619
+Ama
+
+1427
+02:16:10,880 --> 02:16:12,939
+Hani makul bir varsayımdan bahsediyorum yani
+
+1428
+02:16:13,199 --> 02:16:17,020
+Hani İstanbul için mesela registration numaraları işte birden başladı
+
+1429
+02:16:17,279 --> 02:16:19,859
+Kaç tane araç var 100 bin tane araç var mesela atıyorum
+
+1430
+02:16:20,119 --> 02:16:21,140
+Böyle
+
+1431
+02:16:21,859 --> 02:16:23,399
+Ankara için de mesela
+
+1432
+02:16:23,659 --> 02:16:24,180
+Gene
+
+1433
+02:16:24,680 --> 02:16:28,260
+Aynı olabilir birden işte 100 bine kadar o zaman registration numarası bakın
+
+1434
+02:16:28,520 --> 02:16:29,800
+Şehir içerisinde
+
+1435
+02:16:30,060 --> 02:16:33,879
+Yani state dediği işte city gibi olsun veya eyalet içerisinde
+
+1436
+02:16:34,139 --> 02:16:36,180
+Her bir şehir içerisinde bunlar
+
+1437
+02:16:36,440 --> 02:16:36,959
+Unik
+
+1438
+02:16:37,219 --> 02:16:38,500
+Ama farklı şehirlerde
+
+1439
+02:16:38,760 --> 02:16:39,520
+Tekrar ediyor
+
+1440
+02:16:39,780 --> 02:16:44,899
+Bu mevzudan yine bahsetmiştik yani benzer şekilde zayıf varlıkları anlatırken bahsetmiştik
+
+1441
+02:16:46,180 --> 02:16:51,040
+O lise lisedeki öğrencilerin numaralandırmasıyla ilgili işte aynı benzer
+
+1442
+02:16:51,299 --> 02:16:53,100
+Şey ama bu ikisi
+
+1443
+02:16:53,360 --> 02:16:55,899
+Yani aynı şehirde aynı numaralı
+
+1444
+02:16:56,159 --> 02:16:57,700
+Registration numaralı olamaz
+
+1445
+02:16:57,959 --> 02:17:00,780
+O zaman bu ikisi benim için minima süperkeydir yani
+
+1446
+02:17:01,040 --> 02:17:04,860
+Herhangi bir tanesini çıkardığım zaman artık anahtar olma özelliğini kaybetti
+
+1447
+02:17:05,120 --> 02:17:06,879
+Registration numarasını çıkar
+
+1448
+02:17:07,139 --> 02:17:07,879
+State
+
+1449
+02:17:08,139 --> 02:17:08,760
+E tabi ki
+
+1450
+02:17:09,020 --> 02:17:10,799
+Bir şehirde yüzlerce araba var
+
+1451
+02:17:11,059 --> 02:17:13,620
+State tekrar edecek yüzlerce kez binlerce kez
+
+1452
+02:17:13,879 --> 02:17:14,639
+Bunu çıkar
+
+1453
+02:17:14,899 --> 02:17:15,920
+Registration numarası
+
+1454
+02:17:16,180 --> 02:17:17,979
+Farklı şehirlerde tekrar edecek
+
+1455
+02:17:18,700 --> 02:17:23,819
+Öyle olunca ama ikisi birden tekrar etmeyecek çünkü o şekilde bir düzenleme yapıldım
+
+1456
+02:17:24,079 --> 02:17:25,360
+Gelelim başka bir
+
+1457
+02:17:25,620 --> 02:17:26,639
+Minimal süperkey
+
+1458
+02:17:27,399 --> 02:17:28,180
+Serial numarası
+
+1459
+02:17:28,440 --> 02:17:34,059
+Bu seri numarası bütün ülkedeki hatta bütün dünyadaki arabalar için seri numarası uniktir
+
+1460
+02:17:34,559 --> 02:17:36,100
+Seri numarasının tanımı öyle
+
+1461
+02:17:37,120 --> 02:17:37,899
+Öyle olunca
+
+1462
+02:17:38,159 --> 02:17:39,440
+Bu da bir minima süperkey
+
+1463
+02:17:39,700 --> 02:17:42,260
+Zaten minima zaten bariz bir tane nitelik var
+
+1464
+02:17:43,280 --> 02:17:44,059
+Böyle olunca
+
+1465
+02:17:44,260 --> 02:17:48,379
+Burada iki tane anahtar bulabildim diğer araştırılmasa şunlar olabilir mi
+
+1466
+02:17:49,139 --> 02:17:50,420
+Bunlar olamaz make
+
+1467
+02:17:50,920 --> 02:17:53,739
+O fabrikadan üretim tarihi mesela
+
+1468
+02:17:54,760 --> 02:17:56,299
+Senede bir tane araç üretmiyor
+
+1469
+02:17:58,079 --> 02:17:58,860
+Model olarak
+
+1470
+02:17:59,879 --> 02:18:01,920
+Bu arabalar farklı markalar
+
+1471
+02:18:02,180 --> 02:18:06,540
+Yine aynı senede üretim var yani bunların hiç olmayacağı beraber belli
+
+1472
+02:18:07,299 --> 02:18:11,659
+O zaman demek ki buradan faydalı olabilecek anahtarlar bunlar oldu
+
+1473
+02:18:12,340 --> 02:18:13,659
+2 tane o zaman
+
+1474
+02:18:13,920 --> 02:18:15,200
+Minimal süperkey var
+
+1475
+02:18:15,459 --> 02:18:16,979
+Yani 2 tane
+
+1476
+02:18:17,239 --> 02:18:18,520
+Candidate keyim var
+
+1477
+02:18:19,040 --> 02:18:22,879
+Şuraya geçersem 2 tane Candidate keyim var aday anahtarım 2 tane oldu
+
+1478
+02:18:23,139 --> 02:18:27,219
+Bunlardan hangisini seçmem lazım bunlardan seri numarasını seçmem lazım
+
+1479
+02:18:27,739 --> 02:18:28,500
+Şimdi burada tabi
+
+1480
+02:18:28,760 --> 02:18:29,780
+Örneğimiz basit yani
+
+1481
+02:18:31,059 --> 02:18:34,659
+Ama hani daha böyle kapsamlı daha çok nitelik içeren
+
+1482
+02:18:34,920 --> 02:18:36,959
+Tablolarda bu seçimi yapılması
+
+1483
+02:18:37,219 --> 02:18:40,799
+Bu tanımların iyi yapılması gerekiyor nitelikler ne anlama geliyor
+
+1484
+02:18:41,000 --> 02:18:43,819
+Bu tanımlamaların iyi yapılması gerekiyor
+
+1485
+02:18:44,079 --> 02:18:46,379
+Minimallerin iyi tanımlanması gerekiyor
+
+1486
+02:18:46,639 --> 02:18:52,000
+Ve bundan sonra doğru seçimin yani birincinin anahtar primary keyin seçiminin de
+
+1487
+02:18:52,260 --> 02:18:54,319
+Bunu da kim yapacak yani bu seçimi
+
+1488
+02:18:54,579 --> 02:18:55,860
+Bu tanımlamalarda
+
+1489
+02:18:56,120 --> 02:18:58,659
+Edmin işte bu veritabanı tasarımcısı
+
+1490
+02:18:58,920 --> 02:19:02,260
+Bu primary keyinden her bir tablomun primary keyini tanımlayacak
+
+1491
+02:19:02,760 --> 02:19:04,299
+Burada evet soru
+
+1492
+02:19:04,819 --> 02:19:06,100
+Hocam şöyle
+
+1493
+02:19:06,559 --> 02:19:12,700
+Burada süper key ile key aslında hep aynı gibi geliyor da mesela ben süper keyi başta şöyle anlamıştım
+
+1494
+02:19:12,959 --> 02:19:15,020
+İçinde keyin de olduğu
+
+1495
+02:19:15,280 --> 02:19:16,559
+Herhangi bir
+
+1496
+02:19:17,319 --> 02:19:18,340
+Kombinasyon
+
+1497
+02:19:19,100 --> 02:19:19,879
+Evet doğru
+
+1498
+02:19:20,379 --> 02:19:26,520
+Ama burada şey diyor botar olsa süper keys of card diyor mesela her ikisi de onun süper keyi tamam doğru süper keyi ama
+
+1499
+02:19:26,780 --> 02:19:29,860
+Hani mesela ben buraya modeli de eklesem yine süper keyi değil mi
+
+1500
+02:19:30,120 --> 02:19:31,139
+Evet aynen öyle
+
+1501
+02:19:31,399 --> 02:19:33,180
+Ama keyi olmayan özelliğini kaybetti
+
+1502
+02:19:33,440 --> 02:19:34,459
+Ama süper keyi oldu
+
+1503
+02:19:34,659 --> 02:19:35,940
+Tamamdır doğru yani
+
+1504
+02:19:36,200 --> 02:19:37,500
+Yani her süper key
+
+1505
+02:19:38,000 --> 02:19:39,020
+Aynı zamanda
+
+1506
+02:19:39,280 --> 02:19:40,819
+Key değil
+
+1507
+02:19:41,319 --> 02:19:42,340
+Ama her bir key
+
+1508
+02:19:42,600 --> 02:19:43,879
+Aynı zamanda süper key
+
+1509
+02:19:44,379 --> 02:19:46,899
+Çünkü süper key tanımı gevşek yani
+
+1510
+02:19:47,159 --> 02:19:48,700
+Yeter ki birbirinden ayırt etsin
+
+1511
+02:19:50,020 --> 02:19:51,559
+Ama her minimal süper key
+
+1512
+02:19:51,819 --> 02:19:57,440
+Her minimal süper key tabii ki süper key zaten minimal süper key diyorum ama her süper key
+
+1513
+02:19:57,700 --> 02:19:58,979
+Minimal süper key veya
+
+1514
+02:19:59,239 --> 02:20:01,540
+Benim için faydalı olacak kendi de key
+
+1515
+02:20:01,799 --> 02:20:02,319
+Veya key
+
+1516
+02:20:02,579 --> 02:20:03,100
+Veya
+
+1517
+02:20:03,340 --> 02:20:04,100
+Primary key
+
+1518
+02:20:04,299 --> 02:20:04,819
+Değil
+
+1519
+02:20:05,840 --> 02:20:07,879
+O süper keyin minimal olması lazım ki
+
+1520
+02:20:08,399 --> 02:20:08,920
+Şey olsun
+
+1521
+02:20:09,420 --> 02:20:10,700
+Mesela Serial No
+
+1522
+02:20:10,959 --> 02:20:14,280
+Bunun yanına bir tane make eklesem Serial No make yapsam
+
+1523
+02:20:14,540 --> 02:20:15,059
+Bu ne
+
+1524
+02:20:15,319 --> 02:20:15,819
+Süper key
+
+1525
+02:20:16,079 --> 02:20:18,639
+Çünkü zaten bundan dolayı bu unique oldu
+
+1526
+02:20:18,899 --> 02:20:20,680
+Yani bu zaten unique oldu süper key
+
+1527
+02:20:21,200 --> 02:20:22,479
+Niye süper key
+
+1528
+02:20:23,000 --> 02:20:24,780
+Minimal değil çünkü
+
+1529
+02:20:25,040 --> 02:20:25,559
+Yani şey
+
+1530
+02:20:25,819 --> 02:20:28,120
+Minimal değil o yüzden anahtar değil
+
+1531
+02:20:28,379 --> 02:20:29,139
+Ama süper key
+
+1532
+02:20:30,120 --> 02:20:36,260
+Tanımlar yeniden oturunca böyle onları oynayabiliyorsun süper key falan ama tanımlar ilk olarak kapalı
+
+1533
+02:20:36,520 --> 02:20:39,079
+Tanım dediğimizde 2 tane tanım yani süper key
+
+1534
+02:20:39,340 --> 02:20:40,620
+Herhangi bir şekilde
+
+1535
+02:20:40,879 --> 02:20:42,139
+Birbirinden ayırt edecek
+
+1536
+02:20:42,399 --> 02:20:43,420
+Literik grubu
+
+1537
+02:20:43,940 --> 02:20:47,000
+Key ise minimal süper key
+
+1538
+02:20:47,520 --> 02:20:48,799
+Bu ayırt etsin ama
+
+1539
+02:20:49,059 --> 02:20:52,379
+Minimal minimum elemandan olsun yani ne demek o
+
+1540
+02:20:52,639 --> 02:20:57,760
+O gruptan herhangi bir tanesini çıkardığım zaman anahtarın olma özelliğini kaybedecek
+
+1541
+02:20:57,959 --> 02:20:59,239
+O demek minimal
+
+1542
+02:20:59,500 --> 02:21:00,020
+Yani
+
+1543
+02:21:00,280 --> 02:21:01,040
+Key
+
+1544
+02:21:01,299 --> 02:21:02,319
+Is a super key
+
+1545
+02:21:02,579 --> 02:21:07,940
+But not vice versa yani tam tersi doğru değil key her zaman süper key ama süper key key olmak
+
+1546
+02:21:08,200 --> 02:21:08,719
+Zorunda değil
+
+1547
+02:21:08,979 --> 02:21:09,739
+Olamayabilir
+
+1548
+02:21:10,260 --> 02:21:13,319
+Any set of attributes that includes a key is a super key
+
+1549
+02:21:13,579 --> 02:21:15,620
+Yani bir şekilde key içeren
+
+1550
+02:21:16,139 --> 02:21:20,500
+Bir alt kümesi olarak key içeren bir grup
+
+1551
+02:21:21,020 --> 02:21:23,819
+Süper key olacaktır tabi ki işte şu örnek gibi
+
+1552
+02:21:24,340 --> 02:21:25,879
+Burada key içeren bir
+
+1553
+02:21:26,340 --> 02:21:29,920
+Grup oluşturdum seri yolunda omek o zaman tabi ki süper key olacaktır
+
+1554
+02:21:30,940 --> 02:21:31,719
+Ama mesela
+
+1555
+02:21:31,979 --> 02:21:34,280
+Hani make model süper key mi desek
+
+1556
+02:21:35,040 --> 02:21:36,579
+Make model süper key değil
+
+1557
+02:21:36,840 --> 02:21:37,340
+Yani
+
+1558
+02:21:37,600 --> 02:21:41,180
+Anahtar olma özelliği yok yani ayırt etme özelliği yok
+
+1559
+02:21:41,700 --> 02:21:44,520
+Veya işte 3'ünü birden al gene süper key değil
+
+1560
+02:21:45,020 --> 02:21:48,860
+Ama ben biraz önce ilk işe başlarken ne yaptım hepsini birden aldım ya bakın primary
+
+1561
+02:21:49,120 --> 02:21:52,200
+Burada anahtarları dahil ettiğim için o zaman rahat bir şekilde dedim
+
+1562
+02:21:52,979 --> 02:21:53,479
+Ve
+
+1563
+02:21:53,680 --> 02:21:58,040
+Şey olarak ön koşulu olarak da ne dedim ya bu güçlü bir varlıksa dedim
+
+1564
+02:21:58,299 --> 02:21:59,840
+Eğer güçlü varlık değilse
+
+1565
+02:22:00,100 --> 02:22:03,940
+O zaman başka bir varlığa ihtiyacı var yani zayıf varlık oluyor o zaman
+
+1566
+02:22:04,180 --> 02:22:09,559
+Hepsini de alsak o zaman anahtar olmak için yeterli olmadığını söyledik o zaman zayıf varlık dedik ona
+
+1567
+02:22:09,819 --> 02:22:14,159
+İlk adımı zaten öyle olmadığını varsayarak başladık zaten işte
+
+1568
+02:22:14,420 --> 02:22:17,500
+Eğer öyleyse de zayıf varlıksa zaten güçlü ile beraber
+
+1569
+02:22:17,760 --> 02:22:21,340
+Güçlünün bir tane anahtarıyla beraber burada ayırt edici bir nitelik verileceğiz
+
+1570
+02:22:23,430 --> 02:22:25,729
+Evet o zaman burada
+
+1571
+02:22:26,250 --> 02:22:26,750
+Hocam
+
+1572
+02:22:27,010 --> 02:22:30,090
+Diagramlarda gösterim olarak farkı var mı?
+
+1573
+02:22:30,350 --> 02:22:35,469
+Diagramlarda güzel,diagramlarda sadece altını çiziyoruz
+
+1574
+02:22:35,729 --> 02:22:40,329
+Ya diagramında altını çizdiğimiz zaman anahtar manası
+
+1575
+02:22:40,590 --> 02:22:41,350
+Ama da
+
+1576
+02:22:41,610 --> 02:22:43,649
+Birinci anahtar veya primary key
+
+1577
+02:22:43,909 --> 02:22:49,290
+Yani böyle hani veli tabanı sisteminde kullanan primary key manası da olmayabilir
+
+1578
+02:22:49,750 --> 02:22:55,389
+Ya diagramında çizdiğimiz zaman altına anahtar onun biricik olduğunu
+
+1579
+02:22:55,649 --> 02:22:57,950
+Minimal süper key olduğunu
+
+1580
+02:22:58,209 --> 02:22:59,229
+İfade ediyorum
+
+1581
+02:22:59,489 --> 02:23:04,090
+Ondan sonra tablo tanımlarında yani ilişkissel tablo tanımlarında artık
+
+1582
+02:23:04,350 --> 02:23:07,670
+Tablonun hangi niteliklerin altını çizdiysen o
+
+1583
+02:23:07,930 --> 02:23:08,709
+Benim için artık
+
+1584
+02:23:08,969 --> 02:23:12,530
+Seçtiğim primary key olmuş oluyor yani kandidat keylerden
+
+1585
+02:23:12,790 --> 02:23:14,590
+Bir tane birinci anahtar seçtim
+
+1586
+02:23:14,790 --> 02:23:18,389
+Artık tabloyu da oluştururken create table diyorum
+
+1587
+02:23:18,649 --> 02:23:19,149
+İşte
+
+1588
+02:23:19,409 --> 02:23:22,989
+ID diyorum daha sonra da primary key ID yazacağım
+
+1589
+02:23:23,510 --> 02:23:25,549
+Mesela o şemayı tanımlarken
+
+1590
+02:23:26,569 --> 02:23:30,149
+Yani ER'de altını çizdiğim zaman birden çok altı çizili olabilir
+
+1591
+02:23:30,409 --> 02:23:32,450
+Yani bütün anahtarları orada belirliyorum
+
+1592
+02:23:32,709 --> 02:23:34,770
+Ama tabloda bir tane altı çizili olacak
+
+1593
+02:23:36,549 --> 02:23:38,850
+Mesela burada neymiş bunun anahtarı
+
+1594
+02:23:39,110 --> 02:23:43,969
+Bu artık bizim minimal süper keyimiz license numarası mesela bakın bu bizim burada
+
+1595
+02:23:44,170 --> 02:23:46,989
+Birinci anahtarımız bu seçilmiş primary key olarak
+
+1596
+02:23:47,770 --> 02:23:51,090
+Genel olarak burada bazı tabi böyle
+
+1597
+02:23:52,629 --> 02:23:53,409
+Kurallar var
+
+1598
+02:23:53,909 --> 02:23:54,930
+Dediğimiz gibi
+
+1599
+02:23:56,969 --> 02:24:00,549
+Burada bakın mesela seri numarası primary key olarak seçilmiş biz biraz önce
+
+1600
+02:24:00,809 --> 02:24:02,350
+Buradaki şeye bakarak
+
+1601
+02:24:02,610 --> 02:24:09,010
+Kandidat key manzarasına bakarak seri numarasını seçmiştik zaten burada da seri numarası seçildi
+
+1602
+02:24:09,209 --> 02:24:15,110
+The primary key values used to uniquely identify each table in a relation provides a table identity
+
+1603
+02:24:15,370 --> 02:24:18,170
+Also used to reference a table from another table
+
+1604
+02:24:19,709 --> 02:24:25,850
+Yani başka bir tablodaki veya yine aynı tablodaki başka bir table benim bu tablola
+
+1605
+02:24:26,110 --> 02:24:29,450
+Herhangi bir tablola referans etmesi için bu uniqueness
+
+1606
+02:24:29,709 --> 02:24:35,069
+Yani bu anahtarlık özelliği bu noktada da önemli yani anahtar kavramı
+
+1607
+02:24:35,329 --> 02:24:37,629
+Biriciklik meselesi demek ki
+
+1608
+02:24:38,049 --> 02:24:42,190
+Farklı tablolardan benim o tabloya referans etmede de
+
+1609
+02:24:42,450 --> 02:24:44,750
+Önemli olmuş oluyor
+
+1610
+02:24:46,290 --> 02:24:52,950
+Not always applicable choice is sometimes subjective yani demek ki böyle değişebiliyor duruma göre bu seçim
+
+1611
+02:24:53,209 --> 02:24:54,489
+Bazen net olmuyor
+
+1612
+02:24:54,750 --> 02:24:56,270
+Duruma göre değişebiliyor
+
+1613
+02:24:58,069 --> 02:24:59,350
+Birden çok
+
+1614
+02:24:59,610 --> 02:25:02,149
+Tek nitelikli kandidat key de olabilir
+
+1615
+02:25:02,409 --> 02:25:03,950
+Bir tanesini seçeceğiz o zaman
+
+1616
+02:25:05,489 --> 02:25:06,750
+Kandidat key'ler
+
+1617
+02:25:06,909 --> 02:25:08,190
+Aday anahtarlar
+
+1618
+02:25:08,450 --> 02:25:16,329
+Bir nitelikli iki nitelikli üç nitelikli olduğu zaman mesela bir nitelikliyi seçeceğim ama bir nitelikli birden çok kandidat key olabilir
+
+1619
+02:25:16,590 --> 02:25:18,889
+Hangisini seçeceğim bir tanesini seçeceğim
+
+1620
+02:25:19,149 --> 02:25:24,270
+Burada da tabi hani başka mesela detaylar fiziksel performans noktasında
+
+1621
+02:25:24,530 --> 02:25:28,670
+Yine başka şeylerden bahsedilebilir de daha çok kafayı karıştırmayalım
+
+1622
+02:25:28,930 --> 02:25:29,950
+Eğer
+
+1623
+02:25:30,209 --> 02:25:32,309
+Şöyle şunu da söyleyeyim
+
+1624
+02:25:32,569 --> 02:25:33,329
+Tabloda
+
+1625
+02:25:33,590 --> 02:25:34,350
+Eğer bir
+
+1626
+02:25:34,610 --> 02:25:36,389
+Kandidat key bulamıyorsak
+
+1627
+02:25:36,549 --> 02:25:37,110
+Yani
+
+1628
+02:25:37,370 --> 02:25:39,649
+Minimal super key bulamıyorsak eğer
+
+1629
+02:25:39,909 --> 02:25:40,690
+Demek ki
+
+1630
+02:25:40,950 --> 02:25:44,790
+Super key de bulamadık yani mesela anahtar bulamadık
+
+1631
+02:25:45,049 --> 02:25:46,590
+Yani zayıf oldu
+
+1632
+02:25:46,850 --> 02:25:48,889
+Ben illa bunu zayıf yapmak istemiyorum
+
+1633
+02:25:49,409 --> 02:25:53,489
+Zayıf yapmak istemiyorum güçlü yapmak istiyorum
+
+1634
+02:25:53,750 --> 02:25:57,850
+Başka bir varlığa bağlantı içerisinde yapmak istemiyorum o zaman buraya artificial
+
+1635
+02:25:58,370 --> 02:26:00,149
+Yani yapay bir anahtar
+
+1636
+02:26:00,409 --> 02:26:02,969
+Yani bir seri numarası seconds numarası mesela
+
+1637
+02:26:03,430 --> 02:26:04,450
+Koyabilirim
+
+1638
+02:26:04,709 --> 02:26:05,989
+Bu da tabi bu
+
+1639
+02:26:06,250 --> 02:26:06,770
+Belki
+
+1640
+02:26:07,030 --> 02:26:09,329
+Çok tercih edilebilecek bir şey değil
+
+1641
+02:26:09,590 --> 02:26:10,090
+Ne dedik
+
+1642
+02:26:10,350 --> 02:26:14,950
+Ne kadar çok anahtar primary key onun takibi noktasında sisteme bir yük getiriyor
+
+1643
+02:26:15,989 --> 02:26:17,010
+Ama gene ne dedik
+
+1644
+02:26:17,270 --> 02:26:22,629
+Yani oraya seconds numarası koysan yanlış bir şey olmuş ya veritabanın yanlış çalışmayacak yani
+
+1645
+02:26:22,889 --> 02:26:23,409
+Ama
+
+1646
+02:26:23,670 --> 02:26:24,930
+Daha iyi tasarım
+
+1647
+02:26:25,190 --> 02:26:26,469
+Ne kadar zayıf varlık
+
+1648
+02:26:26,989 --> 02:26:30,569
+O kadar daha iyi tasarım oluyor yani zayıf varlıkla işimizi görebiliyorsak
+
+1649
+02:26:31,030 --> 02:26:33,590
+Sistem yükü o cihetten daha başarılı
+
+1650
+02:26:33,850 --> 02:26:35,389
+Olmuş olduğunu söyleyebiliriz
+
+1651
+02:26:37,659 --> 02:26:42,520
+Evet Entity Integrity Bakın Key Entity Key Constraint Key
+
+1652
+02:26:42,780 --> 02:26:46,379
+Key Constrainti bitirdik böylece buradaki tanımlarımız
+
+1653
+02:26:46,879 --> 02:26:48,159
+Entity Integrity
+
+1654
+02:26:48,420 --> 02:26:50,200
+Varlık bütünlük kısıtı ise
+
+1655
+02:26:50,459 --> 02:26:51,219
+Herhangi bir
+
+1656
+02:26:51,479 --> 02:26:52,760
+Anahtar
+
+1657
+02:26:53,280 --> 02:26:54,299
+Artık anahtar deyince
+
+1658
+02:26:54,559 --> 02:26:59,420
+Superkey'i kastetmiyorum yani anahtar deyince primary key kendi dekeyi kastediyorum
+
+1659
+02:26:59,620 --> 02:27:02,180
+Çünkü Superkey çok işime yarayan bir şey değil yani
+
+1660
+02:27:02,440 --> 02:27:05,520
+Anahtar dediğim zaman bunları bu anahtarların içerisinde
+
+1661
+02:27:06,040 --> 02:27:06,540
+Herhangi bir
+
+1662
+02:27:06,799 --> 02:27:07,319
+Nal
+
+1663
+02:27:08,079 --> 02:27:09,100
+Olmaması lazım
+
+1664
+02:27:10,639 --> 02:27:12,159
+Çünkü Nal dediğim zaman
+
+1665
+02:27:12,680 --> 02:27:13,959
+Tamam mesela burada
+
+1666
+02:27:15,239 --> 02:27:16,520
+Bir tane Nal olsa
+
+1667
+02:27:16,780 --> 02:27:18,059
+Baktığımız zaman yani
+
+1668
+02:27:18,319 --> 02:27:19,600
+Bir tane satır var
+
+1669
+02:27:19,860 --> 02:27:22,659
+Bu satırların primary key kolonuna bakıyorum
+
+1670
+02:27:22,920 --> 02:27:25,479
+Tamamı onların içerisinde bir tane Nal olsun
+
+1671
+02:27:25,739 --> 02:27:27,540
+Bütün hepsi birbirinden farklı mı
+
+1672
+02:27:28,040 --> 02:27:28,559
+Farklı
+
+1673
+02:27:29,020 --> 02:27:29,540
+Yani
+
+1674
+02:27:29,799 --> 02:27:33,120
+Niteliklerini değerlediğimden farklı bir tane Nal var ama bir tane Nal olsa
+
+1675
+02:27:33,620 --> 02:27:34,899
+Bundan birbirinden farklı mı
+
+1676
+02:27:35,680 --> 02:27:36,180
+Nal
+
+1677
+02:27:36,700 --> 02:27:37,459
+İkinci Nal
+
+1678
+02:27:37,719 --> 02:27:38,739
+Ondan farklı mı
+
+1679
+02:27:39,520 --> 02:27:41,059
+Farklı olup olmadığını bilmiyorum
+
+1680
+02:27:41,559 --> 02:27:43,620
+O da Nal yani farklı olup olmaması Nal
+
+1681
+02:27:44,120 --> 02:27:45,399
+Belirsiz bir durum yani
+
+1682
+02:27:45,659 --> 02:27:49,760
+O zaman demek ki yani bu belirsizliği ortadan kaldırmak adına
+
+1683
+02:27:50,020 --> 02:27:54,620
+Primary key herhangi bir niteliği primary key birden çok nitelikten oluşabilir
+
+1684
+02:27:54,879 --> 02:27:57,700
+O herhangi bir nitelinin değeri Nal olamaz
+
+1685
+02:27:58,979 --> 02:28:01,579
+Bu demek yani Entity
+
+1686
+02:28:01,840 --> 02:28:05,680
+Entity Integrity'de
+
+1687
+02:28:05,940 --> 02:28:06,959
+Tanımı demek ki
+
+1688
+02:28:07,219 --> 02:28:11,059
+Primary key attributes of each relation schema
+
+1689
+02:28:11,319 --> 02:28:12,079
+In S
+
+1690
+02:28:12,340 --> 02:28:15,420
+Cannot have Nal values in any type of R
+
+1691
+02:28:17,200 --> 02:28:18,739
+Herhalde oldukça açık
+
+1692
+02:28:20,280 --> 02:28:21,559
+Herhangi bir şekilde
+
+1693
+02:28:21,819 --> 02:28:27,940
+Bu anahtarın herhangi bir alt niteliği veya nitelik grubu herhangi bir şekilde Nal olamaz
+
+1694
+02:28:29,540 --> 02:28:34,700
+If primary key has several attributes Nal is not allowed in any of these attributes
+
+1695
+02:28:34,959 --> 02:28:37,000
+Tamam bakın kırmızı ile ifade etmişiz bu demek
+
+1696
+02:28:37,520 --> 02:28:43,659
+Other attributes of R may be constrained to disallow Nal values even though they are not members of primary key
+
+1697
+02:28:43,920 --> 02:28:45,719
+Buna da unique kıslaması deniyor yani
+
+1698
+02:28:46,219 --> 02:28:48,020
+Bir anahtar olmasa da
+
+1699
+02:28:49,040 --> 02:28:50,579
+Herhangi başka bir niteliğe
+
+1700
+02:28:50,840 --> 02:28:52,360
+Ben not Nal
+
+1701
+02:28:52,620 --> 02:28:54,420
+Diye bir kısıt koyabilirim
+
+1702
+02:28:55,180 --> 02:28:55,700
+Not Nal
+
+1703
+02:28:56,159 --> 02:28:59,479
+Ama bunun not Nal olması anahtar olmasına gerektirmiyor yani
+
+1704
+02:28:59,739 --> 02:29:01,020
+İşte mesela
+
+1705
+02:29:01,280 --> 02:29:02,559
+Doğum tarihi mesela
+
+1706
+02:29:02,819 --> 02:29:07,940
+Bu noktada güzel bir örnek olabilir Doğum tarihi not Nal diyebilirim yani bu adam
+
+1707
+02:29:08,200 --> 02:29:11,020
+Kayıda geçtiyse bir doğum tarihi olacak niayetinde
+
+1708
+02:29:12,299 --> 02:29:14,600
+Gayet makul ve buna not Nal diyebilirim
+
+1709
+02:29:14,860 --> 02:29:15,879
+Ama unique
+
+1710
+02:29:16,139 --> 02:29:17,659
+Kısıtlaması
+
+1711
+02:29:17,920 --> 02:29:19,200
+Olmayabilir yani
+
+1712
+02:29:19,459 --> 02:29:22,540
+Anahtar olmak durumunda değil Uniqueness söz konusu
+
+1713
+02:29:22,799 --> 02:29:24,079
+Değil burada
+
+1714
+02:29:24,540 --> 02:29:24,799
+Yani
+
+1715
+02:29:25,059 --> 02:29:28,120
+Onun nitelikliği için bakın farklı modeller
+
+1716
+02:29:28,379 --> 02:29:30,440
+Orda ortaya çıkmış oluyor
+
+1717
+02:29:31,979 --> 02:29:32,479
+Evet
+
+1718
+02:29:34,610 --> 02:29:38,969
+Şimdi geldik üçüncü kısıtımıza bu üç kısıtlamayla ilişkissel model
+
+1719
+02:29:39,229 --> 02:29:39,729
+Temel
+
+1720
+02:29:39,989 --> 02:29:41,530
+Tanımı bitmiş oluyor
+
+1721
+02:29:41,790 --> 02:29:44,870
+Yani bütün her şey bunun üzerine hem basit bakın
+
+1722
+02:29:45,370 --> 02:29:46,389
+Hem de
+
+1723
+02:29:46,649 --> 02:29:48,690
+Öyle çok iş görecek bir model
+
+1724
+02:29:48,950 --> 02:29:52,790
+Şeyse yabancı anahtar ise ima bütünlük kısıtı ise
+
+1725
+02:29:53,049 --> 02:29:53,569
+Burada
+
+1726
+02:29:53,770 --> 02:29:56,850
+Bir iki tablo arasında bir kısıt bu
+
+1727
+02:29:57,110 --> 02:29:58,129
+Bir kere ilk olarak
+
+1728
+02:29:58,389 --> 02:29:59,409
+Herhangi bir
+
+1729
+02:30:00,690 --> 02:30:02,229
+Bağantı talınlamak için
+
+1730
+02:30:02,489 --> 02:30:05,290
+Yani iyarda kavram satı asamında bağıntılarımız vardı ya
+
+1731
+02:30:05,549 --> 02:30:06,829
+İşte o bağıntılar
+
+1732
+02:30:07,090 --> 02:30:10,149
+Burada bizim yabancı anahtarı olarak şekillenecek
+
+1733
+02:30:10,930 --> 02:30:13,750
+Şimdi kurallarda bu daha açığa çıkacak ama
+
+1734
+02:30:14,010 --> 02:30:14,530
+O
+
+1735
+02:30:14,770 --> 02:30:18,090
+Bağantıların burada temsil edilmesinde
+
+1736
+02:30:18,350 --> 02:30:19,629
+Kullanılıyor bu referans
+
+1737
+02:30:19,889 --> 02:30:21,170
+İmalaş
+
+1738
+02:30:21,370 --> 02:30:27,010
+Burada bir ima eden tablo var bir de ima edilen var tabii ki
+
+1739
+02:30:27,270 --> 02:30:30,590
+Burada re1 mesela referans ingredeşin olsa
+
+1740
+02:30:31,370 --> 02:30:34,690
+Bu re1 tablosunun bir tane yabancı anahtarı
+
+1741
+02:30:35,209 --> 02:30:40,069
+Başka bir tablonun re2 tablosunun referans edilen re2 tablosunun
+
+1742
+02:30:40,329 --> 02:30:41,610
+Prime 2 yine
+
+1743
+02:30:42,370 --> 02:30:44,170
+Prime 2 etribütlerine
+
+1744
+02:30:44,430 --> 02:30:46,729
+Yani birden çok nitelik de olabilir bu
+
+1745
+02:30:46,989 --> 02:30:47,489
+O
+
+1746
+02:30:47,750 --> 02:30:48,510
+Niteliklere
+
+1747
+02:30:48,770 --> 02:30:50,309
+İşaret etmesi gerekiyor
+
+1748
+02:30:50,770 --> 02:30:52,049
+O zaman buna
+
+1749
+02:30:52,309 --> 02:30:52,829
+Te1
+
+1750
+02:30:53,090 --> 02:30:54,629
+Herhangi bir te1 tabolu
+
+1751
+02:30:54,889 --> 02:30:57,170
+Re2'nin te2 taboluna
+
+1752
+02:30:57,430 --> 02:30:58,469
+İşaret ettiğini
+
+1753
+02:30:58,709 --> 02:31:00,750
+Söyle söylüyoruz ima ediyor
+
+1754
+02:31:01,010 --> 02:31:03,309
+Bu ima etmenin de bir kısıtı var
+
+1755
+02:31:03,569 --> 02:31:05,629
+Yani imanın bütünlük kısıtı
+
+1756
+02:31:05,889 --> 02:31:06,649
+Dediğimiz zaman
+
+1757
+02:31:06,909 --> 02:31:11,770
+Şöyle bir kısıtımızın şöyle bir statement ifadesi var tanımı var
+
+1758
+02:31:12,030 --> 02:31:12,530
+Burada
+
+1759
+02:31:12,790 --> 02:31:14,069
+Yabancı anahtar
+
+1760
+02:31:14,329 --> 02:31:15,610
+Yani re1 deki
+
+1761
+02:31:16,129 --> 02:31:18,430
+İşaret edene yabancı anahtar diyoruz
+
+1762
+02:31:18,889 --> 02:31:21,969
+Re2 işaret edilene de Prime 2 yine işaret edecek
+
+1763
+02:31:22,229 --> 02:31:22,750
+O zaman
+
+1764
+02:31:22,989 --> 02:31:23,750
+Re1'in
+
+1765
+02:31:24,010 --> 02:31:26,069
+Referans ingredeşin re1
+
+1766
+02:31:26,569 --> 02:31:27,090
+Deki
+
+1767
+02:31:27,350 --> 02:31:28,370
+Yabancı anahtar
+
+1768
+02:31:29,649 --> 02:31:35,790
+İşaret edilen re2 deki Prime 2 anahtarlardan o değerlerden bir tanesi olması lazım
+
+1769
+02:31:36,049 --> 02:31:36,549
+Veya
+
+1770
+02:31:36,809 --> 02:31:37,590
+NAL olabilir
+
+1771
+02:31:37,850 --> 02:31:38,350
+Eğer
+
+1772
+02:31:38,870 --> 02:31:40,909
+NOT NAL kısıtı yoksa
+
+1773
+02:31:41,170 --> 02:31:41,670
+Yani
+
+1774
+02:31:41,930 --> 02:31:44,750
+Yabancı anahtar olabilir bir de NOT NAL kısıtı da olabilir
+
+1775
+02:31:45,010 --> 02:31:47,829
+Ama normal şartlarda yabancı anahtarın tanımı
+
+1776
+02:31:47,989 --> 02:31:53,350
+Yabancı anahtar ya işaret ettiği re2 tablosunun Prime 2'nin bir değeri olacak
+
+1777
+02:31:53,610 --> 02:31:55,149
+O değerlerden bir tanesi olacak
+
+1778
+02:31:55,670 --> 02:31:56,190
+Ya da
+
+1779
+02:31:56,450 --> 02:31:58,030
+Bir şey işaret etmeyecek
+
+1780
+02:31:58,290 --> 02:31:59,309
+NAL olacak yani
+
+1781
+02:32:01,110 --> 02:32:01,889
+Buradaki
+
+1782
+02:32:02,149 --> 02:32:04,430
+Bu bizim ima
+
+1783
+02:32:04,690 --> 02:32:12,049
+Bağlantımız yani bir re1 tablosundan bir re2 tablosundan Örneğin Sur'un tablosundan, Department tablosundan Major ID
+
+1784
+02:32:13,309 --> 02:32:14,870
+Buradaki yabancı anahtarım
+
+1785
+02:32:15,129 --> 02:32:16,409
+Bu yabancı anahtarın
+
+1786
+02:32:16,610 --> 02:32:17,889
+Bu tablo olan
+
+1787
+02:32:18,149 --> 02:32:19,170
+O iması
+
+1788
+02:32:19,430 --> 02:32:21,229
+Tamamıyla logical bir bağıntı
+
+1789
+02:32:21,489 --> 02:32:23,010
+Yani mantıksal bir bağımlılık
+
+1790
+02:32:23,530 --> 02:32:26,590
+Yani burada bir fiziksel bir pointer falan yok yani
+
+1791
+02:32:27,110 --> 02:32:29,149
+Bu sayede bunların
+
+1792
+02:32:29,670 --> 02:32:32,750
+İç tasarımları yani fiziksel tasarımda bu kayıtların
+
+1793
+02:32:33,010 --> 02:32:34,530
+Yerlerinin değişmesi falan
+
+1794
+02:32:34,790 --> 02:32:37,350
+Çok daha rahat esnek olmuş oluyor aksi takdirde
+
+1795
+02:32:37,610 --> 02:32:43,489
+Ben bu Department tablosu içerisindeki kayıtların arasında oynarken yani çünkü bunun fiziksel tasarımında
+
+1796
+02:32:43,690 --> 02:32:47,790
+Bunlar yer değiştirebiliyorlar tabii ki çok kolay bir şekilde daha bilimli olması için
+
+1797
+02:32:48,049 --> 02:32:53,430
+Eğer bunun fiziksel tasarımda bu yeri yer değişirse bütün buna işaret eden point'ların yeri değişmesi lazım
+
+1798
+02:32:53,690 --> 02:32:54,209
+Geliyordu
+
+1799
+02:32:54,450 --> 02:32:56,250
+Eğer fiziksel bir koneksiyon olsaydı
+
+1800
+02:32:56,510 --> 02:32:59,829
+Fiziksel bir koneksiyon değil buradaki kastedilen logical bir koneksiyon
+
+1801
+02:33:00,090 --> 02:33:00,850
+O zaman
+
+1802
+02:33:01,110 --> 02:33:04,950
+Mantıksal bir yani logical bir koneksiyon olduğu için
+
+1803
+02:33:05,209 --> 02:33:06,229
+Bu bütünlüğün
+
+1804
+02:33:06,489 --> 02:33:10,069
+Bu ima bütünlüğünün sağlanmasını da sistem kontrol etmesi lazım
+
+1805
+02:33:10,329 --> 02:33:11,090
+Ne demek
+
+1806
+02:33:11,290 --> 02:33:14,610
+Yani ima bütünlük kısıtının ihlalinin
+
+1807
+02:33:14,870 --> 02:33:16,409
+Kontrol etmesi lazım yani
+
+1808
+02:33:16,670 --> 02:33:17,450
+Burada mesela
+
+1809
+02:33:17,709 --> 02:33:22,049
+Ben 20 20 burada mevcut olan bir 20'ye işaret ediyor
+
+1810
+02:33:22,309 --> 02:33:25,129
+Yani burada mesela ben şunu 19 yapsam
+
+1811
+02:33:25,389 --> 02:33:28,450
+Update ettim şu suyun tablosunu 19 yaptım
+
+1812
+02:33:28,709 --> 02:33:29,209
+Burada
+
+1813
+02:33:29,469 --> 02:33:32,290
+19 eğer yoksa burada tek tapul gözüküyor ama
+
+1814
+02:33:32,549 --> 02:33:36,389
+Department'a tabi işte 30 tane tapul olsun 1 2 3 4 5 30 diye mesela
+
+1815
+02:33:36,889 --> 02:33:38,690
+Bunu mesela ben şimdi 40 yaptım
+
+1816
+02:33:38,889 --> 02:33:41,969
+O zaman burada ima bütünlük kısıtı var yani burada
+
+1817
+02:33:42,229 --> 02:33:43,510
+40 yok ki
+
+1818
+02:33:43,770 --> 02:33:45,809
+Bunu sistemin arka planda
+
+1819
+02:33:46,069 --> 02:33:49,129
+Default olarak bu kısıtı kontrol etmesi gerekiyor
+
+1820
+02:33:49,649 --> 02:33:51,190
+Bu update'in
+
+1821
+02:33:51,450 --> 02:33:55,290
+Reject olması lazım geri dönmesi lazım burada 40 yok ki sen neyi işaret ediyorsun
+
+1822
+02:33:56,049 --> 02:33:56,809
+Şeklinde
+
+1823
+02:33:57,069 --> 02:33:58,610
+Yani logical koneksiyonla
+
+1824
+02:33:58,870 --> 02:34:01,170
+Bunu ifade ediyoruz mantıksal
+
+1825
+02:34:01,430 --> 02:34:04,489
+Bir bağımlılık yani ima bütünlük kısıtı demek ki
+
+1826
+02:34:04,750 --> 02:34:07,569
+Bizim yabancı anahtar primary key arasında
+
+1827
+02:34:07,770 --> 02:34:08,549
+Burada
+
+1828
+02:34:08,809 --> 02:34:09,829
+Yabancı anahtar
+
+1829
+02:34:10,090 --> 02:34:14,430
+Büyüklüğü işaret ettiği primary key'in büyüklüğü kadar olması lazım
+
+1830
+02:34:15,709 --> 02:34:16,229
+Yani
+
+1831
+02:34:16,489 --> 02:34:19,809
+Burada primary key iki nitelikten oluşuyorsa
+
+1832
+02:34:20,069 --> 02:34:21,610
+Başka bir örnek düşünelim yani burada
+
+1833
+02:34:21,870 --> 02:34:23,909
+Şimdi garip olur ikisi birden desek
+
+1834
+02:34:24,170 --> 02:34:25,430
+Bu
+
+1835
+02:34:25,690 --> 02:34:29,270
+İşaret edilen tablonun primary key'i
+
+1836
+02:34:29,530 --> 02:34:32,610
+İki nitelikten oluşuyorsa yabancı anahtar da iki nitelikten oluşacak
+
+1837
+02:34:33,129 --> 02:34:36,969
+O yabancı anahtarın iki niteliği var olan bir primary key'in
+
+1838
+02:34:37,129 --> 02:34:40,190
+İşaret edilen tablodaki var olan bir primary key
+
+1839
+02:34:40,450 --> 02:34:43,069
+Anahtar değerinin ikilisine
+
+1840
+02:34:43,329 --> 02:34:46,389
+İşaret etmesi lazım var olana işaret etmesi lazım gene
+
+1841
+02:34:46,649 --> 02:34:47,930
+Bu da ima bütünlük kısıtı
+
+1842
+02:34:48,190 --> 02:34:48,950
+Olmuş oluyor
+
+1843
+02:34:49,209 --> 02:34:51,510
+Çoğu zaman primary key tek nitelik içeride için
+
+1844
+02:34:51,770 --> 02:34:54,069
+Çoğu zaman öyle oluyor
+
+1845
+02:34:54,329 --> 02:34:58,430
+Evet burada soru var mı? Bu tanımların iyice kafaya oturması lazım
+
+1846
+02:35:01,020 --> 02:35:01,540
+Evet
+
+1847
+02:35:02,819 --> 02:35:03,840
+Diğer kısıtlarımız
+
+1848
+02:35:04,100 --> 02:35:05,639
+Diğer kısıtlarımız
+
+1849
+02:35:06,659 --> 02:35:08,440
+3 tane kısıtı ek olarak
+
+1850
+02:35:08,600 --> 02:35:10,139
+O küçük dünyaya has
+
+1851
+02:35:10,399 --> 02:35:11,180
+Bazı böyle
+
+1852
+02:35:11,440 --> 02:35:16,280
+Hadiseleri bazı olayları olayların gerektirdiği bir kısıtlama
+
+1853
+02:35:16,540 --> 02:35:18,079
+Olabilir o küçük dünya bana
+
+1854
+02:35:18,340 --> 02:35:20,379
+Şunu gerektirebilir mesela işte örneğin
+
+1855
+02:35:20,639 --> 02:35:23,479
+Bizim kampani veri tabanında fabrika
+
+1856
+02:35:23,739 --> 02:35:29,639
+İşçilerinin işte yaptıkları projeler çalıştıkları departmanı takip ettiğimiz bir fabrika veri tabanında
+
+1857
+02:35:29,899 --> 02:35:32,459
+Örneğin şöyle bir kısıt koyabiliriz diyebiliriz ki
+
+1858
+02:35:32,719 --> 02:35:34,520
+Buradaki çalışan işçilerimiz
+
+1859
+02:35:35,020 --> 02:35:36,040
+İşte
+
+1860
+02:35:36,559 --> 02:35:37,059
+Hepsi
+
+1861
+02:35:37,260 --> 02:35:42,899
+Her hafta çalıştık bir projede en fazla hafta başına 56 saat
+
+1862
+02:35:43,159 --> 02:35:43,920
+Çalışabilir
+
+1863
+02:35:45,200 --> 02:35:49,040
+56 saatten fazla bir projeye tahsis edemeyiz
+
+1864
+02:35:49,819 --> 02:35:50,319
+Değil mi?
+
+1865
+02:35:50,579 --> 02:35:53,659
+The maximum number of hours per employee for all projects
+
+1866
+02:35:53,920 --> 02:35:54,940
+He or she works
+
+1867
+02:35:55,440 --> 02:35:59,059
+Yani çalıştığı projede bir kişinin çalıştığı projede
+
+1868
+02:35:59,319 --> 02:36:02,360
+Haftalık en fazla 56 saat tahsis edebiliriz
+
+1869
+02:36:03,120 --> 02:36:04,659
+Bu küçük dünyada
+
+1870
+02:36:04,860 --> 02:36:10,000
+Bu düzenleme bu kural sonuçta böyle bir tanımlama yapalım. İşte bu tanımlama
+
+1871
+02:36:10,500 --> 02:36:11,520
+Benim bu
+
+1872
+02:36:11,780 --> 02:36:13,319
+Küçük dünyaya taşımam için
+
+1873
+02:36:13,579 --> 02:36:14,340
+Artık böyle
+
+1874
+02:36:14,600 --> 02:36:15,100
+Hani
+
+1875
+02:36:15,360 --> 02:36:16,139
+Built-in olan
+
+1876
+02:36:16,399 --> 02:36:22,520
+Yani default olarak sistemin bana sağlayacağı bu kısıtlarla bunu yapmam mümkün değil yani
+
+1877
+02:36:22,780 --> 02:36:23,819
+Anahtar kısıtı
+
+1878
+02:36:24,319 --> 02:36:26,120
+Veya işte varlık bütünlük kısıtı bunlar
+
+1879
+02:36:26,379 --> 02:36:27,899
+Temel olan kısıtlar
+
+1880
+02:36:28,159 --> 02:36:29,440
+İma bütünlük kısıtı
+
+1881
+02:36:29,959 --> 02:36:33,540
+Bunlarla benim şu kısıtı yapmamın mümkünatı var mı? Yok
+
+1882
+02:36:34,000 --> 02:36:36,819
+Ayrı yeten ayrı bir ufak bir fonksiyon yazarak
+
+1883
+02:36:37,079 --> 02:36:38,360
+Trigger yazarak
+
+1884
+02:36:38,620 --> 02:36:40,659
+Fonksiyon store procedure yazarak
+
+1885
+02:36:41,159 --> 02:36:43,979
+Bunları bu kısıtları sağlamamız gerekiyor
+
+1886
+02:36:44,239 --> 02:36:45,260
+Bunları da gene
+
+1887
+02:36:45,520 --> 02:36:46,559
+Veri tabanı
+
+1888
+02:36:48,600 --> 02:36:51,159
+Bütün kısıtlamaları kısmında
+
+1889
+02:36:51,659 --> 02:36:53,719
+Yani ilişkisel model ilişkiselce bir
+
+1890
+02:36:53,979 --> 02:36:56,280
+Daha sonra SQL'den sonraki konuda
+
+1891
+02:36:56,540 --> 02:36:59,360
+Bu fonksiyonların yazılması tanımlamasını da gene göreceğiz
+
+1892
+02:36:59,819 --> 02:37:02,399
+Evet bu ihlaller olduğu zaman ne oluyor?
+
+1893
+02:37:02,899 --> 02:37:07,760
+Son 10 dakikada da buna bakalım. Burada örneklerimiz var
+
+1894
+02:37:08,020 --> 02:37:13,139
+Burada eğer bir kısıtlama ihlal olduğu zaman
+
+1895
+02:37:13,399 --> 02:37:14,680
+Birçok action olabilir
+
+1896
+02:37:14,940 --> 02:37:18,760
+Ya o yapılan işlemi yapılmaya çalışınan işlemi
+
+1897
+02:37:19,020 --> 02:37:24,899
+Reject edeceğiz yani kullanıcıya geri döndüreceğiz yani bu işlemi yapamıyoruz diyor sistem
+
+1898
+02:37:25,159 --> 02:37:25,680
+Ya
+
+1899
+02:37:26,659 --> 02:37:28,180
+Yapıyor
+
+1900
+02:37:28,440 --> 02:37:31,000
+Fakat bazı şeyleri değiştirerek
+
+1901
+02:37:31,260 --> 02:37:34,579
+Perform the operation but inform the user of the violation
+
+1902
+02:37:34,840 --> 02:37:36,639
+Burada ihlal olduğu durum
+
+1903
+02:37:36,899 --> 02:37:39,700
+Ama bunu da bilgilendiriyor yani
+
+1904
+02:37:39,959 --> 02:37:42,020
+Eğer işte yapılabilecek bir şeyse
+
+1905
+02:37:42,280 --> 02:37:44,319
+İşte örneklerde göreceğiz birazdan
+
+1906
+02:37:44,579 --> 02:37:45,600
+Veya
+
+1907
+02:37:45,860 --> 02:37:49,700
+Yine trigger additional update so the violation is corrected
+
+1908
+02:37:50,159 --> 02:37:52,719
+Kaskat option set null option gibi
+
+1909
+02:37:52,979 --> 02:37:53,500
+Bunlar da
+
+1910
+02:37:53,760 --> 02:37:55,280
+İşlemi yapıyor gene fakat
+
+1911
+02:37:55,540 --> 02:37:58,100
+Arka planda tutarlılığı sağlamak adına
+
+1912
+02:37:58,360 --> 02:38:01,159
+Kaskat yani zincirleme şekilde başka işlemler yapacak
+
+1913
+02:38:02,459 --> 02:38:04,500
+Set null gibi mesela
+
+1914
+02:38:04,760 --> 02:38:05,260
+Gene
+
+1915
+02:38:05,520 --> 02:38:06,799
+Bazı
+
+1916
+02:38:07,059 --> 02:38:09,360
+Üst uygulama prosedürleriyle
+
+1917
+02:38:09,620 --> 02:38:12,180
+Bu hatayı düzeltecek rutinler olabilir
+
+1918
+02:38:14,479 --> 02:38:18,319
+SQL kapsamında SQL ile gene
+
+1919
+02:38:18,479 --> 02:38:22,879
+Bir niteliğin not null kısıtını tanımlayabiliriz
+
+1920
+02:38:23,139 --> 02:38:23,680
+Veya
+
+1921
+02:38:23,940 --> 02:38:26,979
+Null olmaması gerektiğini tanımlayabiliriz
+
+1922
+02:38:27,239 --> 02:38:28,500
+Veya primary key
+
+1923
+02:38:29,020 --> 02:38:30,559
+Kısıtı tanımlayabiliriz
+
+1924
+02:38:30,819 --> 02:38:34,920
+Veya unique kısıtı tanımlayabiliriz yani unique bu ama primary key olmadı
+
+1925
+02:38:35,180 --> 02:38:38,239
+Primary key default olarak unique'i kapsıyor tabii ki
+
+1926
+02:38:38,500 --> 02:38:41,819
+Primary key'i hem de unique yapmama gerek yok çünkü primary key zaten unique
+
+1927
+02:38:42,079 --> 02:38:45,420
+Ama primary key olmayan bir nitelik veya nitelik grubunu unique
+
+1928
+02:38:45,620 --> 02:38:47,159
+Olarak kısıtlayabiliriz
+
+1929
+02:38:47,420 --> 02:38:47,680
+Gene
+
+1930
+02:38:47,940 --> 02:38:51,260
+SQL'i kullanarak yabancı anahtarları
+
+1931
+02:38:51,520 --> 02:38:55,360
+Tanımlamamız gerekiyor bu kısıtlamaları yapmamız lazım
+
+1932
+02:38:55,879 --> 02:38:56,379
+Burada
+
+1933
+02:38:56,639 --> 02:38:58,440
+Bu örneğimizde bizim
+
+1934
+02:38:58,700 --> 02:39:01,239
+İşçi veri tabanındaki kısıtlarımız
+
+1935
+02:39:01,500 --> 02:39:06,620
+Birinci anahtar bakın burada tanımlamış bu bir anahtar kısıtı doğurdu
+
+1936
+02:39:07,120 --> 02:39:10,959
+Yani hiçbir zaman mesela şu pay number şu tablo içerisinde tekrar edemez
+
+1937
+02:39:11,479 --> 02:39:15,319
+Hiçbir zaman day number day location ikisi birden tekrar edemez yani
+
+1938
+02:39:15,579 --> 02:39:17,420
+İstanbul'da işte
+
+1939
+02:39:17,680 --> 02:39:23,040
+Departman lokajının Departman number 100 numara departman İstanbul'da iki tane olamaz gene
+
+1940
+02:39:23,299 --> 02:39:25,600
+Çünkü 100 İstanbul 100 İstanbul olacak
+
+1941
+02:39:25,860 --> 02:39:26,639
+Öyle olamaz
+
+1942
+02:39:27,659 --> 02:39:28,159
+Gene
+
+1943
+02:39:28,420 --> 02:39:29,700
+Entity
+
+1944
+02:39:29,959 --> 02:39:33,540
+Varlık bütünlük kısıtı ikinci kısıtımızda
+
+1945
+02:39:33,799 --> 02:39:36,620
+Bu primary key'in null olmamasıydı
+
+1946
+02:39:36,879 --> 02:39:38,399
+Yani şu pay number null olamaz
+
+1947
+02:39:38,659 --> 02:39:40,200
+Şu day location gene null olamaz
+
+1948
+02:39:40,719 --> 02:39:43,020
+Yani çünkü bunu primary key'in bir alt kümesi
+
+1949
+02:39:43,479 --> 02:39:44,000
+Yani
+
+1950
+02:39:44,260 --> 02:39:50,399
+Bunun artık başka zaman day location null olabilirdi ama şu andaki üzerine aldığı vazife noktasında
+
+1951
+02:39:50,659 --> 02:39:51,159
+Bir
+
+1952
+02:39:51,420 --> 02:39:54,760
+Anahtarın alt kümesi olduğu için o yüzden null olamaz
+
+1953
+02:39:55,260 --> 02:39:56,040
+O zaman
+
+1954
+02:39:56,299 --> 02:40:01,399
+Çünkü bu anahtar olma özelliğini kaybediyor yani anahtar tanımına aykırı
+
+1955
+02:40:02,680 --> 02:40:05,500
+Yine şurada mesela ESSN null olamaz
+
+1956
+02:40:05,760 --> 02:40:07,299
+Dependent name null olamaz
+
+1957
+02:40:07,799 --> 02:40:10,360
+Varlık bütünlük kısıtlaması noktasında bunları söyleyebiliriz
+
+1958
+02:40:10,559 --> 02:40:14,100
+Yine yabancı anahtarlar burada belirlenmiş süper ssn'e değiniyor.
+
+1959
+02:40:14,360 --> 02:40:17,739
+Nasıl belirlendiğini söyleyeceğiz o IR dönüşümlerinden
+
+1960
+02:40:18,239 --> 02:40:21,319
+Bu bunu çizme adımları var kuralları var
+
+1961
+02:40:21,579 --> 02:40:26,440
+Onları bu sununun sonunda onu haftaya ilk saatte onu yaparız
+
+1962
+02:40:26,700 --> 02:40:29,760
+Bu bu şekil oradan çıkıyor esasında
+
+1963
+02:40:30,780 --> 02:40:36,159
+Bu şekilde böyle gördükten sonra bu yabancı anahtarlara baktığımız zaman bu yabancı anahtarlar için kısıt nedir
+
+1964
+02:40:36,420 --> 02:40:38,219
+Süper ssn'in değeri
+
+1965
+02:40:38,680 --> 02:40:42,520
+Buradaki ssn'lerden değerlerden bir tanesi olması lazım
+
+1966
+02:40:43,299 --> 02:40:45,860
+İşte mantıksal bir ima var burada
+
+1967
+02:40:48,920 --> 02:40:54,299
+O zaman demek ki buradaki süper ssn' ya şuradaki ssn'den bir tanesi olacak
+
+1968
+02:40:54,559 --> 02:40:55,840
+Ya da null olacak
+
+1969
+02:40:56,100 --> 02:40:57,379
+Yani yabancı anahtar
+
+1970
+02:40:57,639 --> 02:40:58,399
+null olabilir
+
+1971
+02:40:58,920 --> 02:40:59,420
+Ama
+
+1972
+02:40:59,680 --> 02:41:01,719
+Mesela bakın şurada bir yabancı anahtar var
+
+1973
+02:41:01,979 --> 02:41:03,780
+D number şuna işaret ediyor
+
+1974
+02:41:04,040 --> 02:41:07,620
+Yabancı anahtar olduğu için şunlardan bir tanesi olması lazım tamam
+
+1975
+02:41:07,780 --> 02:41:10,079
+Yabancı anahtar olduğu için null olabilir mi
+
+1976
+02:41:10,840 --> 02:41:11,620
+Olamaz
+
+1977
+02:41:11,879 --> 02:41:15,459
+Neden? Çünkü buradaki anahtar kısıtı noktasında
+
+1978
+02:41:15,719 --> 02:41:18,059
+Varlık bütünlük kısıtı noktasında
+
+1979
+02:41:18,319 --> 02:41:21,899
+Brahmin 2'in bir parçası olduğu için null olamaz bu sefer
+
+1980
+02:41:22,159 --> 02:41:27,020
+Yani onun önüne geçmiş oluyor yani yabancı anahtar null olabilir ama burada
+
+1981
+02:41:27,280 --> 02:41:27,799
+Olamadı
+
+1982
+02:41:28,819 --> 02:41:32,139
+Yine burada olamıyor bakın bunların ikisi birden yabancı anahtar ama
+
+1983
+02:41:32,399 --> 02:41:33,940
+Yine null olamıyorlar çünkü
+
+1984
+02:41:34,200 --> 02:41:35,739
+Bir anahtarın alt
+
+1985
+02:41:35,940 --> 02:41:39,020
+Bir anahtarı oluşturuyorlar ikisi birden
+
+1986
+02:41:39,780 --> 02:41:44,139
+Evet bunları söyleyebiliriz bunların ihlali noktasında
+
+1987
+02:41:44,399 --> 02:41:49,780
+İhlallerde ortaya çıkacak durumları da yine söyledik cascag, reject veya set null olabilir
+
+1988
+02:41:50,040 --> 02:41:52,340
+Şimdi buna da ilgili örneklerimiz olacak burada
+
+1989
+02:41:55,399 --> 02:41:56,680
+Possible violation
+
+1990
+02:41:56,940 --> 02:41:59,500
+Bu ihlaller olduğu zaman ne gibi
+
+1991
+02:41:59,760 --> 02:42:01,799
+Durumlar ortaya çıkıyor bunları göreceğiz
+
+1992
+02:42:02,319 --> 02:42:03,340
+Evet
+
+1993
+02:42:04,879 --> 02:42:05,379
+Şimdi
+
+1994
+02:42:05,940 --> 02:42:09,020
+Evet şunu da yapalım o zaman
+
+1995
+02:42:09,280 --> 02:42:11,840
+Şurada mesela örnek bir
+
+1996
+02:42:14,899 --> 02:42:18,739
+Veri tabanı şeyi var neyse bunu artık haftaya başlayalım
+
+1997
+02:42:19,260 --> 02:42:22,340
+Endüstri de veya pratikte diyelim böyle
+
+1998
+02:42:22,600 --> 02:42:24,120
+Crude operasyonları var
+
+1999
+02:42:24,379 --> 02:42:27,200
+Bunlar bizim formal olarak
+
+2000
+02:42:27,719 --> 02:42:29,760
+İlgisayar modeli de tanımladığımız
+
+2001
+02:42:30,260 --> 02:42:34,360
+Yani ilgisayar modeli de SQL, DDL veya DML dediğimiz işte
+
+2002
+02:42:34,559 --> 02:42:39,180
+Operasyonların da farklı bir şey değil yani belki duymuşsunuzdur Crude diye geçiyor
+
+2003
+02:42:39,440 --> 02:42:42,239
+Create, Read, Update, Delete
+
+2004
+02:42:42,500 --> 02:42:44,040
+Yani bir SQL Retrieve
+
+2005
+02:42:44,299 --> 02:42:45,059
+İşlemi
+
+2006
+02:42:45,319 --> 02:42:47,620
+SQL veri çekme işlemi
+
+2007
+02:42:47,879 --> 02:42:48,659
+Okuma işlemi
+
+2008
+02:42:49,159 --> 02:42:53,760
+Yani belli bir loji yani bir mantığa göre orada bir kısıtı bir
+
+2009
+02:42:54,020 --> 02:42:54,520
+Bazı
+
+2010
+02:42:54,780 --> 02:42:56,059
+Kayıtları oradan çekiyoruz
+
+2011
+02:42:56,319 --> 02:42:57,600
+Update işlemi gene
+
+2012
+02:42:57,860 --> 02:43:02,219
+Malum belli bir niteliği veya bir satırı değiştiriyoruz Delete satırı siliyoruz
+
+2013
+02:43:02,420 --> 02:43:05,239
+Veya yeni bir tablo oluşturuyoruz bir satır oluşturuyoruz gibi
+
+2014
+02:43:05,760 --> 02:43:07,799
+Bu operasyonların hepsi benim
+
+2015
+02:43:08,059 --> 02:43:11,639
+Insert, Delete, Modify'a karşılık geliyor işte bu operasyonlar
+
+2016
+02:43:11,899 --> 02:43:13,180
+Arka planda
+
+2017
+02:43:13,440 --> 02:43:13,940
+Bu
+
+2018
+02:43:14,459 --> 02:43:16,760
+Kısıtları ihlal etmemesi lazım
+
+2019
+02:43:17,280 --> 02:43:21,620
+Yani çünkü orada veri tabanı arka planda değişiyor yani şunda değişme yok sadece okuma var
+
+2020
+02:43:21,879 --> 02:43:23,420
+İhlal söz konusu değil
+
+2021
+02:43:23,680 --> 02:43:25,979
+Hiçbir zaman söz konusu değil ama şunlarda
+
+2022
+02:43:26,239 --> 02:43:27,520
+Tablo oluşumunda
+
+2023
+02:43:28,020 --> 02:43:30,579
+Veya o tablo içerisindeki kayıtlarının silinmesi
+
+2024
+02:43:30,780 --> 02:43:32,579
+Eklenmesinde
+
+2025
+02:43:32,840 --> 02:43:37,440
+İhlaller hangi ihlaller şu 3 tane ihlal yani şuradaki
+
+2026
+02:43:37,700 --> 02:43:39,479
+Key Constraint
+
+2027
+02:43:39,739 --> 02:43:42,299
+Entity Integrity and Fertility Constraint
+
+2028
+02:43:42,559 --> 02:43:44,620
+Kısıtlarının ihlali söz konusu
+
+2029
+02:43:45,120 --> 02:43:46,399
+Bu ihlallerin de
+
+2030
+02:43:46,659 --> 02:43:50,500
+Sistem nasıl cevap veriyor onların da şekillendirilmesi lazım
+
+2031
+02:43:51,000 --> 02:43:52,040
+İşte burada mesela
+
+2032
+02:43:52,299 --> 02:43:56,139
+Onların şekillendirilmesi söz konusu diyor ki burada mesela şu tabloyu oluştur
+
+2033
+02:43:56,659 --> 02:43:58,180
+Bu tabloda bunlar oluşuyor
+
+2034
+02:43:58,440 --> 02:43:59,200
+Pramin 2
+
+2035
+02:43:59,659 --> 02:44:01,459
+Burada tanımladım böyle bir kısıt tanımladım
+
+2036
+02:44:01,719 --> 02:44:06,059
+Yine bir Unique kısıtı tanımladım ve yabancı anahtar kısıtı tanımladım ve
+
+2037
+02:44:06,319 --> 02:44:08,100
+Şu tabloya referans ediyor dedim
+
+2038
+02:44:08,360 --> 02:44:10,920
+Ve daha sonra burada ihlali şekillendirdik bakın
+
+2039
+02:44:11,180 --> 02:44:13,739
+Yani diyoruz ki bir de OnDelete setDefault
+
+2040
+02:44:14,000 --> 02:44:14,520
+OnUpdate
+
+2041
+02:44:14,780 --> 02:44:15,799
+CastCastCut
+
+2042
+02:44:16,559 --> 02:44:17,840
+Yani burada
+
+2043
+02:44:20,399 --> 02:44:22,200
+İşaret ettiği tablodaki
+
+2044
+02:44:22,459 --> 02:44:24,239
+Bir şey silindiği zaman
+
+2045
+02:44:24,500 --> 02:44:25,020
+Bunu da
+
+2046
+02:44:25,280 --> 02:44:27,059
+Default'a set et
+
+2047
+02:44:27,780 --> 02:44:30,600
+Burada gene OnUpdate CastCut
+
+2048
+02:44:30,860 --> 02:44:32,899
+İşaret ettiği bir tablo
+
+2049
+02:44:33,159 --> 02:44:34,940
+Diğer tabloda mesela bir
+
+2050
+02:44:35,200 --> 02:44:36,479
+Silme olduğu zaman
+
+2051
+02:44:36,739 --> 02:44:37,780
+Çünkü orada bir
+
+2052
+02:44:38,020 --> 02:44:39,299
+Satı silindi mesela
+
+2053
+02:44:39,559 --> 02:44:43,139
+O zaman bu yabancı anahtar olmayan bir şey işaret ediyor duruma düştü
+
+2054
+02:44:43,399 --> 02:44:43,899
+Bir
+
+2055
+02:44:44,159 --> 02:44:45,440
+İhlal var yani
+
+2056
+02:44:45,700 --> 02:44:50,819
+İma bütünlük ihlali var çünkü bunun mevcut olan bir şey işaret etmesi lazım işte onu şekillendirdik
+
+2057
+02:44:51,340 --> 02:44:52,879
+OnDelete setDefault yap
+
+2058
+02:44:53,139 --> 02:44:55,420
+OnUpdate CastCut yap yani orada
+
+2059
+02:44:55,579 --> 02:44:58,700
+Diğer işaret ettiği tabloda update edilen değere
+
+2060
+02:44:58,959 --> 02:45:00,479
+Zincirlemini bir şekilde
+
+2061
+02:45:00,739 --> 02:45:03,819
+Bu ima edilen bu ima anahtarını da
+
+2062
+02:45:04,079 --> 02:45:05,360
+Update et
+
+2063
+02:45:05,620 --> 02:45:06,379
+Manasında
+
+2064
+02:45:06,639 --> 02:45:08,940
+Bu şekilde şekillendirmiş olacağız
+
+2065
+02:45:09,200 --> 02:45:13,799
+Bu örnekleri bu tablodan başlayarak haftaya şu örnekleri yaparız
+
+2066
+02:45:14,059 --> 02:45:16,360
+Ve şu dönüşümleri yapacağız
+
+2067
+02:45:16,620 --> 02:45:20,200
+Yani ER'den Relation Mapping Dönüşümlerini yapacağız böylece
+
+2068
+02:45:20,459 --> 02:45:23,780
+Şu kavramsız tasarımı çizmeyi öğrendik öğreneceğiz
+
+2069
+02:45:23,979 --> 02:45:26,040
+Ve şu kavramsız tasarımından sonra
+
+2070
+02:45:26,299 --> 02:45:29,379
+ER'den sonra şuradan şuraya geçiş nasıl oluyor
+
+2071
+02:45:29,620 --> 02:45:30,139
+Bunları
+
+2072
+02:45:30,399 --> 02:45:31,420
+Öğrenmiş olacağız
+
+2073
+02:45:31,680 --> 02:45:33,459
+Daha sonra da bundan üzerine artık
+
+2074
+02:45:33,719 --> 02:45:34,239
+Belirli bir
+
+2075
+02:45:34,500 --> 02:45:37,299
+Mantıksal düzen içerisinde ilişkiselce bir
+
+2076
+02:45:37,559 --> 02:45:38,840
+Ve SQL yazmayı
+
+2077
+02:45:39,100 --> 02:45:42,159
+Önümüzdeki 2-3 hafta içerisinde bunları
+
+2078
+02:45:42,420 --> 02:45:47,280
+Bitireceğiz herhalde ara sınav haftası 8. hafta oluyor
+
+2079
+02:45:47,540 --> 02:45:51,379
+8. haftaya kadar işte genelde ilişkiselce bir bitmiş oluyor
+
+2080
+02:45:52,100 --> 02:45:55,420
+Evet sorumuz var mı arkadaşlar dersimiz bu haftada bu kadar
+
+2081
+02:45:57,219 --> 02:45:59,260
+Hocam sınavların nasıl yapacağı ile ilgili bir
+
+2082
+02:45:59,520 --> 02:46:00,299
+Bilgi var mı?
+
+2083
+02:46:00,559 --> 02:46:06,700
+Şu anda ilgili daha haftası belli olmadı ama işte 1 ay falan vardı 8. hafta oluyor şu anda 4. haftadayız
+
+2084
+02:46:06,959 --> 02:46:12,059
+Yani geçen dönemki gibi olacaktır yani şu andaki online Yıldız'ın
+
+2085
+02:46:12,319 --> 02:46:13,860
+Şeyinde çok bir şey göremedim
+
+2086
+02:46:14,120 --> 02:46:15,920
+Yani sınavların formatı ile ilgili
+
+2087
+02:46:16,420 --> 02:46:18,459
+Ama işte mümkün olduğunca test tipi ve
+
+2088
+02:46:18,719 --> 02:46:21,020
+Kısa süreli oturumlar şeklinde oluyor
+
+2089
+02:46:21,219 --> 02:46:23,020
+Yani sınavın emniyeti noktasında
+
+2090
+02:46:23,280 --> 02:46:25,319
+Bir 1. bölüm oluyor işte 20 dakika
+
+2091
+02:46:25,840 --> 02:46:31,200
+Daha sonra bir ara veriyoruz 5 dakika 2. bölüm oluyor 3. bölüm oluyor yani toptan böyle bir saat verip de
+
+2092
+02:46:31,719 --> 02:46:32,500
+Uzun bir
+
+2093
+02:46:32,760 --> 02:46:34,280
+Uzun soluklu bir şeyden ziyade
+
+2094
+02:46:35,559 --> 02:46:38,639
+Sınavın emniyeti noktasında işte kısa kısa oluyor
+
+2095
+02:46:38,899 --> 02:46:43,760
+Genelde kısa cevaplı işte test tipi veya kısa cevaplı doğru yanlış şeklinde oluyor
+
+2096
+02:46:44,280 --> 02:46:46,579
+Sınavlar geçen dönem böyle oldu genel olarak
+
+2097
+02:46:46,840 --> 02:46:49,139
+Yani çok bir sıkıntı olmadı
+
+2098
+02:46:49,600 --> 02:46:52,420
+Yine öyle olacağını düşünüyorum
+
+2099
+02:46:53,959 --> 02:46:54,719
+Yani böyle
+
+2100
+02:46:54,979 --> 02:46:58,059
+Hani klasik sınav hazırla onu koyalım
+
+2101
+02:46:58,319 --> 02:47:01,639
+Drive'a işte onu indirin siz çalışın
+
+2102
+02:47:01,899 --> 02:47:03,180
+Bir saat sonra gönderin
+
+2103
+02:47:03,680 --> 02:47:06,239
+Tarzında yani burada 100 yıl yaptığımız sınavlar gibi
+
+2104
+02:47:06,760 --> 02:47:10,840
+Olması biraz çok olmadı geçen dönem kimseyi zannedersem öyle yapmadı yani
+
+2105
+02:47:12,139 --> 02:47:13,680
+Evet yine bizim derste de
+
+2106
+02:47:13,920 --> 02:47:15,200
+Test tipi olacak
+
+2107
+02:47:16,479 --> 02:47:17,500
+Diye düşünüyorum
+
+2108
+02:47:18,219 --> 02:47:22,579
+Hocam peki bu test dediğiniz sadece sizin dersiniz için mi yoksa hani
+
+2109
+02:47:22,840 --> 02:47:24,620
+Bölümün genel hocaları mı öyle düşünüyor?
+
+2110
+02:47:24,879 --> 02:47:27,700
+Bölümü bilemem yani onunla ilgili genel bir kural tanımlanmış değil
+
+2111
+02:47:27,959 --> 02:47:29,479
+İlan da yapınmış değil ya dediğim gibi
+
+2112
+02:47:30,000 --> 02:47:33,579
+Ama genel kanaat o şekilde yani geçen senelerde de öyle oldu
+
+2113
+02:47:34,100 --> 02:47:38,700
+Genel kanaatın genel uygulamanın öyle olduğunu söyleyebilirim
+
+2114
+02:47:39,200 --> 02:47:45,100
+Bizim ders için de bu hafta işte bu dönem öyle olacak yani normal şartlarda bir değişiklik olmazsa
+
+2115
+02:47:45,879 --> 02:47:46,639
+Öyle yani
+
+2116
+02:47:47,059 --> 02:47:52,479
+Genel olarak verimli oluyor yani değerlendirme noktasında verimli bir değerlendirme o benim
+
+2117
+02:47:52,739 --> 02:47:53,239
+Yani
+
+2118
+02:47:53,500 --> 02:47:55,040
+Bende öyle bir kana oluştu
+
+2119
+02:47:55,299 --> 02:47:56,819
+Ve menfi
+
+2120
+02:47:57,079 --> 02:47:58,360
+Bir şey oluşmadı yani
+
+2121
+02:47:58,879 --> 02:48:03,239
+Yani geçen geçiyor gene kalan kalıyor yapıyan yapabiliyor yani öyle arka planda
+
+2122
+02:48:03,500 --> 02:48:05,280
+Hani kopya falan gibi şeyler çok
+
+2123
+02:48:05,780 --> 02:48:08,100
+Siz zaten öyle şeylere tenezzül etmezsiniz ama
+
+2124
+02:48:08,360 --> 02:48:11,680
+Öyle şeylere imkan sağlanmıyor yani
+
+2125
+02:48:12,659 --> 02:48:17,520
+Yapıyorsan yapıyorsun yapamıyorsan yapamazsın yani o sırada bakayım başkasından kitaptan bakayım
+
+2126
+02:48:17,780 --> 02:48:19,299
+İnternetten bakayım yani
+
+2127
+02:48:19,559 --> 02:48:20,319
+Onlara çok
+
+2128
+02:48:20,840 --> 02:48:25,920
+Güvenmeyin yani onlarla o yollardan zaten soruyu çözmek çok mümkün olmuyor
+
+2129
+02:48:26,180 --> 02:48:27,700
+Soru da ona göre hazırlanıyor zaten
+
+2130
+02:48:30,559 --> 02:48:34,139
+Yani [öğrenci] tabanı çok zevkli bir ders esasında
+
+2131
+02:48:34,659 --> 02:48:39,299
+Ben inşallah bir parça böyle sevdirme noktasında da vazifemi yapıyorumdur
+
+2132
+02:48:39,500 --> 02:48:40,280
+Yani
+
+2133
+02:48:42,059 --> 02:48:47,940
+Hani kitaplardan falan okuyun mutlaka bir takviye alın bir yerden sunular da yeterli değil yani örnek falan baya
+
+2134
+02:48:48,200 --> 02:48:49,219
+Örneklendirdik çünkü
+
+2135
+02:48:49,479 --> 02:48:52,040
+Nereden baksanıza 10-15 senedir bu derse ben giriyorum
+
+2136
+02:48:52,559 --> 02:48:55,639
+Yani belli bir kıvama geldi ama mutlaka
+
+2137
+02:48:55,899 --> 02:48:56,920
+Hani bunu bir
+
+2138
+02:48:57,180 --> 02:49:01,520
+Başka üniversitelerin sitelerinden derslerinin ders sayfalarından
+
+2139
+02:49:01,780 --> 02:49:08,420
+Örnek sınav soru cevapları olsun veya işte Türkçe kaynaklar da var yamanca kaynaklar da var bu noktada da bu takviyi
+
+2140
+02:49:08,819 --> 02:49:10,840
+Yapın yani bu noktada kendinizi
+
+2141
+02:49:11,100 --> 02:49:12,379
+Bir şeye
+
+2142
+02:49:12,639 --> 02:49:15,180
+Kendi kendinize bir öğrenme şeyi oluşturun
+
+2143
+02:49:15,700 --> 02:49:20,299
+Kafanda takılan şeyleri de işte benimle paylaşabilirsiniz yani gerek email olsun
+
+2144
+02:49:20,559 --> 02:49:23,379
+Ders sırasında çok mümkün olmuyor yani ben böyle anlatıyorum işte
+
+2145
+02:49:25,420 --> 02:49:26,180
+Bu şekilde bir
+
+2146
+02:49:26,719 --> 02:49:27,260
+Yani
+
+2147
+02:49:27,520 --> 02:49:28,040
+Teşvik
+
+2148
+02:49:28,299 --> 02:49:29,579
+Noktasında sizi teşvik etmek
+
+2149
+02:49:29,840 --> 02:49:33,940
+Hocam ben şey tavsiye edebilirim arkadaşlara
+
+2150
+02:49:35,200 --> 02:49:38,079
+Bu yani ben şimdi
+
+2151
+02:49:38,579 --> 02:49:41,639
+Alan dışı yükseksans öğrencisiyim yani ilk defa
+
+2152
+02:49:41,899 --> 02:49:42,940
+Açıkçası bu
+
+2153
+02:49:43,200 --> 02:49:44,760
+Seküel vs
+
+2154
+02:49:45,020 --> 02:49:46,559
+Muhatap oluyoruz derslerle
+
+2155
+02:49:47,840 --> 02:49:53,479
+Derslerde yani bizden daha arkadaşlar tecrübenidir birçok konuda ön bilgi sahibidir
+
+2156
+02:49:53,739 --> 02:49:55,780
+Yani ilk defa veya daha
+
+2157
+02:49:56,040 --> 02:49:57,319
+Önceden bilgisi olanlar ben
+
+2158
+02:49:57,579 --> 02:49:58,340
+Şahsım adına
+
+2159
+02:49:58,600 --> 02:50:00,899
+Udemy'den ve YouTube'dan dinliyorum
+
+2160
+02:50:01,139 --> 02:50:07,299
+Yani akşamları vs. hani uygulama ağırlıklı bir ders olarak düşünüyorum biraz daha Seküel'i hocam yanlış düşünüyorsan
+
+2161
+02:50:08,620 --> 02:50:13,219
+O yüzden çok böyle cüzi miktarları da kurslar var 20 lira 30 lira gibi
+
+2162
+02:50:13,479 --> 02:50:15,299
+Hani çok da iyi uzun süreler anlatıyorlar
+
+2163
+02:50:15,540 --> 02:50:16,059
+Sadece
+
+2164
+02:50:16,559 --> 02:50:17,579
+Bilmeyen varsa
+
+2165
+02:50:21,120 --> 02:50:21,639
+[öğrenci] mi
+
+2166
+02:50:21,899 --> 02:50:24,219
+Evet hocam [öğrenci] yani dediğin şey zaten
+
+2167
+02:50:24,500 --> 02:50:29,819
+Umumen bilinen bir şey ama buna dikkat çekmek de yani ben de tabii ki tasdik ediyorum dediğin şeyi
+
+2168
+02:50:30,079 --> 02:50:30,860
+Bununla ilgili
+
+2169
+02:50:31,120 --> 02:50:33,420
+Hususi bir veri tabanı işte SQL Server
+
+2170
+02:50:33,680 --> 02:50:36,780
+Odaklı olabilir Posko'ya biz kullanıyoruz belki onu tercih edebilirsiniz
+
+2171
+02:50:37,040 --> 02:50:37,819
+Ona yönelik
+
+2172
+02:50:37,979 --> 02:50:39,760
+Kurs tarzında çok şeyler var
+
+2173
+02:50:40,020 --> 02:50:45,399
+Ancak tabi bizim buradaki sunumlarımız veya şeyimiz biraz kitabî geçik kaçıyor yani biraz daha böyle
+
+2174
+02:50:45,659 --> 02:50:47,459
+Hani mühendislik noktasında
+
+2175
+02:50:47,719 --> 02:50:51,739
+Belirli prensiplerin içerisinde kalıyoruz ama bunun gerçek hayattaki şeyi tabi
+
+2176
+02:50:52,000 --> 02:50:54,559
+Birçok böyle pratik açılımları var uygulamaları var
+
+2177
+02:50:54,819 --> 02:50:58,959
+Onları mutlaka takip etmek çok emmiyeti tabi o noktada bir parça
+
+2178
+02:50:59,219 --> 02:51:01,020
+Şey yapmaya çalışıyoruz
+
+2179
+02:51:01,280 --> 02:51:02,559
+Yani o noktayı
+
+2180
+02:51:02,819 --> 02:51:03,899
+Sağlamaya çalışıyoruz
+
+2181
+02:51:04,399 --> 02:51:06,959
+Ama işte bu noktada tabi
+
+2182
+02:51:07,620 --> 02:51:10,180
+Ekstra şeyler sizin kendi gayretinize bakıyor
+
+2183
+02:51:10,700 --> 02:51:15,059
+Onları da gene böyle paylaşabiliriz kafanıza takılan bir şey olursa benimle paylaşabilirsiniz
+
+2184
+02:51:15,860 --> 02:51:17,659
+Evet ders bitti diyorum o zaman
+
+2185
+02:51:19,459 --> 02:51:20,739
+Herhangi bir sorusu olan
+
+2186
+02:51:21,000 --> 02:51:21,500
+Birkaç
+
+2187
+02:51:21,760 --> 02:51:23,299
+Paylaşım olabilecek olan yoksa
+
+2188
+02:51:26,420 --> 02:51:26,920
+Evet
+
+2189
+02:51:31,000 --> 02:51:31,760
+Görüşmek üzere
+
+2190
+02:51:32,020 --> 02:51:33,559
+Hayırlı haftalığa diliyorum
+

@@ -1,0 +1,3776 @@
+1
+00:04:10,349 --> 00:04:12,349
+Evet arkadaşlar hoş geldiniz.
+
+2
+00:04:12,349 --> 00:04:17,350
+İki haftadır görüşmedik hatta totalde üç hafta oldu.
+
+3
+00:04:17,350 --> 00:04:23,350
+Maalesef bu sene iki dersimiz bayramlardan dolayı gerçekleşmedi.
+
+4
+00:04:23,350 --> 00:04:29,350
+Umarım bu görüşmediğimiz dönemde hepinizin sağlığı ve keyfi yerindedir.
+
+5
+00:04:29,350 --> 00:04:34,350
+Dönemi sona doğru yaklaşıyoruz. Üç haftamız kaldı bu haftayla birlikte.
+
+6
+00:04:34,350 --> 00:04:39,350
+Konularımız tabi birazcık aksadı ister istemez iki hafta ders yapamayınca.
+
+7
+00:04:39,350 --> 00:04:43,350
+Bugün yine tempolu bir şekilde ilerleyeceğiz.
+
+8
+00:04:43,350 --> 00:04:49,350
+Önce sensörlerden bahsedeceğiz. Telefonlar üzerinde nasıl veri topladığımızdan ki.
+
+9
+00:04:49,350 --> 00:04:53,350
+Bir önceki dersimizde buna kısaca bir giriş yapmıştık.
+
+10
+00:04:53,350 --> 00:04:59,350
+Arkasından vaktimiz el verdiği sürece broadcast receiver'ı tamamlayacağız bu hafta.
+
+11
+00:04:59,350 --> 00:05:05,350
+Önümüzdeki hafta location based servisleri konuşacağız.
+
+12
+00:05:05,350 --> 00:05:11,350
+Arkasından background task'lardan biraz bahsedeceğiz.
+
+13
+00:05:11,350 --> 00:05:15,350
+Notification'lardan biraz bahsedeceğiz.
+
+14
+00:05:15,350 --> 00:05:25,350
+Vaktimiz kalırsa maplerden bahsedip biraz da Android market'e uygulama yükleme prosedürlerinden bahsetmeye çalışacağız.
+
+15
+00:05:25,350 --> 00:05:31,350
+Geçtiğimiz hafta sonu planladığımız gibi size
+
+16
+00:05:31,350 --> 00:05:37,350
+Diğer ödevinizin bitimiyle beraber dönem projenizi açıkladım.
+
+17
+00:05:37,350 --> 00:05:47,350
+Dönem projesi ile ilgili sorusu olan varsa hemen de [öğrenci] başında konulara başlamadan önce hızlıca sorularınızı alabilirim.
+
+18
+00:05:47,350 --> 00:05:57,310
+Evet soru sormak isteyen varsa bekliyorum.
+
+19
+00:05:57,310 --> 00:06:00,310
+Evet [öğrenci].
+
+20
+00:06:00,310 --> 00:06:04,310
+Hocam bonusta Firebase kullanabiliyoruz galiba.
+
+21
+00:06:04,310 --> 00:06:08,310
+Bunun tamamında Firebase kullanımı şu an sorun olmuyor galiba değil mi?
+
+22
+00:06:08,310 --> 00:06:12,310
+Aslında bonus su kast ederken Firebase'den öte.
+
+23
+00:06:12,310 --> 00:06:25,310
+Orada bilgilerin lokalde saklanıp telefonun şarja takıldığı anda network'e aktarılmasını kastediyorum.
+
+24
+00:06:25,310 --> 00:06:32,310
+Firebase üzerinden de implemente edebilirsiniz ama bu özel yapıyı kuranlar bonus olacaklar.
+
+25
+00:06:32,310 --> 00:06:37,310
+Bu özel yapıyı kurmayanlar bonustan daha düşük derecede faydalanacaklar.
+
+26
+00:06:37,310 --> 00:06:46,310
+Çünkü buradaki amacımız veriyi lokalde saklamak daha sonra bunu network'e aktarmak.
+
+27
+00:06:46,310 --> 00:06:48,310
+Teşekkürler.
+
+28
+00:06:48,310 --> 00:06:50,310
+Ben teşekkür ederim.
+
+29
+00:06:50,310 --> 00:07:00,970
+Başka sorusu olan ödevi inceleme fırsatınız olmuştur diye ümit ediyorum.
+
+30
+00:07:00,970 --> 00:07:04,970
+Çünkü süre ilerliyor biliyorsunuz.
+
+31
+00:07:05,970 --> 00:07:08,970
+Önümüzün 3 hafta sonu daha kaldı.
+
+32
+00:07:08,970 --> 00:07:12,970
+Yeterli bir süre ödevin gerçekleşmesi için.
+
+33
+00:07:12,970 --> 00:07:16,970
+Ödevle ilgili olumlu olumsuz yorum yapmak isteyen var mı?
+
+34
+00:07:16,970 --> 00:07:19,970
+Ben beğenmedim çok zor.
+
+35
+00:07:19,970 --> 00:07:22,970
+Hiç ilgimi çekmedi.
+
+36
+00:07:22,970 --> 00:07:28,970
+Yaptığımız uygulama çok bir şey katacağını düşünmüyorum.
+
+37
+00:07:28,970 --> 00:07:30,970
+Ya da memnunum.
+
+38
+00:07:30,970 --> 00:07:34,970
+Zor olduğunu düşünüyorum ama bir şeyler katacaktır gibi.
+
+39
+00:07:34,970 --> 00:07:47,120
+Yorum yapmak isteyen var mı [öğrenci]?
+
+40
+00:07:47,120 --> 00:07:54,120
+Hocam, en azıcık işlemediğimiz konular var sanırım da kullanmamız gereken broadcast receiver gibi.
+
+41
+00:07:54,120 --> 00:07:59,120
+Bu dersin içerisinde tamamlayıp ödeve başlasak yeterli yerimiz olur.
+
+42
+00:07:59,120 --> 00:08:01,120
+Şimdi hemen onu da açıklayayım.
+
+43
+00:08:01,120 --> 00:08:05,120
+Yıllardır öğrencilerden gelen talep şu yönde.
+
+44
+00:08:05,120 --> 00:08:10,120
+Hocam siz ne kadar önce verirseniz bizim için o kadar iyi olsun konuları görmeyelim.
+
+45
+00:08:10,120 --> 00:08:13,120
+Yeter ki ödevi önceden verir dönem projesine.
+
+46
+00:08:13,120 --> 00:08:18,120
+O yüzden bu sene ödevi 6 hafta önce vermek gibi bir opsiyonumuz da yok.
+
+47
+00:08:18,120 --> 00:08:22,120
+Yaklaşık 4 hafta önce vermiş oldum.
+
+48
+00:08:22,120 --> 00:08:31,120
+O yüzden orda broadcast receiver ile ilgili bazı bilgileri görmediniz.
+
+49
+00:08:31,120 --> 00:08:41,120
+Ama öte yandan fotoğrafla ilgili de ders içerisinde çok doğrudan bir konu işlemedik.
+
+50
+00:08:41,120 --> 00:08:47,120
+Ama nasıl yapılacağını biliyorsunuz üç aşağı beş yukarı ve bununla ilgili zaten birçok kaynak var.
+
+51
+00:08:47,120 --> 00:08:57,120
+O yüzden toparlayacak olursam ödevi bir an önce vermemiz gibi dönem projesini sizin zamanınızın daha iyi kullanabilmeniz için.
+
+52
+00:08:57,120 --> 00:09:03,120
+İkindisi burada bilmediğiniz konular şu an için ödevin merkez noktasına oluşturmuyor.
+
+53
+00:09:03,120 --> 00:09:05,120
+O yüzden endişe etmenize gerek yok.
+
+54
+00:09:05,120 --> 00:09:17,000
+Başka sorusu olan final sınavıyla ilgili küçük bir bilgi vereyim.
+
+55
+00:09:17,000 --> 00:09:22,000
+Final sınavı yine vize benzeri bir sınav olacaktır.
+
+56
+00:09:22,000 --> 00:09:27,000
+Dönem projenizin oranını daha önce konuşmuştuk.
+
+57
+00:09:27,000 --> 00:09:37,000
+İki ödev, bir dönem projesi ve bir vize ve bir finalle dönemi kapatmayı planlıyorum şu anda.
+
+58
+00:09:37,000 --> 00:09:45,000
+Ama bugün önümüzdeki iki hafta yapacağımız uygulamaları belki bonus olarak toplayabilirim.
+
+59
+00:09:45,000 --> 00:09:49,000
+Not yükseltmek isteyenler olabilir diye düşünüyorum.
+
+60
+00:09:49,000 --> 00:09:50,000
+Kesin karar vermedim.
+
+61
+00:09:50,000 --> 00:09:52,000
+Duruma bir bakacağım.
+
+62
+00:09:52,000 --> 00:09:58,000
+O yüzden hani takipte kalırsanız sizin adınıza daha iyi olacaktır.
+
+63
+00:09:58,000 --> 00:10:09,299
+Başka soru yoksa dönem projesiyle ilgili ya da bir isteğini belirtmek isteyen bir arkadaşımız yoksa hemen konumuza geçeceğim.
+
+64
+00:10:09,299 --> 00:10:16,080
+Peki şimdi slide'leri paylaşalım.
+
+65
+00:10:16,080 --> 00:10:29,470
+Evet şu anda sanırım görebiliyorsunuzdur.
+
+66
+00:10:29,470 --> 00:10:31,470
+Biz buraya başlamıştık.
+
+67
+00:10:31,470 --> 00:10:43,470
+Bir cihaz üzerinde birçok sensör bulunduğunu ve insanın beş duyusu gibi bu arada kendi videomu da arkadan alayım.
+
+68
+00:10:43,470 --> 00:10:47,470
+Ben clickte birazcık en üstünü yapalım.
+
+69
+00:10:47,470 --> 00:11:01,470
+Sensör üzerinde bir telefon üzerindeki akıllı telefon ya da akıllı saat üzerindeki sensörlerin de artık günümüzde o cihazların gözü kulağı olduğunu rahatlıkla söyleyebiliriz.
+
+70
+00:11:01,470 --> 00:11:09,470
+Hatta şunu da konuşmuştuk şu anda mevcut sensörlerle insanlardan daha hassas ölçümler yapabiliyoruz.
+
+71
+00:11:09,470 --> 00:11:25,470
+Bir düşme tespiti yaparken bir adım hesabı yaparken bir sıcaklık ölçümü yaparken bu noktada mevcut cihazların içindeki sensörler oldukça yeterli küçük boyutlarına rağmen.
+
+72
+00:11:25,470 --> 00:11:35,470
+Ama kendi plasmanındaki sensörler kadar ölçümleri detaylı olmayabilir.
+
+73
+00:11:35,470 --> 00:11:42,470
+Daha büyük aksörometre ya da cinoskop kullanımına daha başarılı sonuçları elde edebiliyorsunuz normalde.
+
+74
+00:11:42,470 --> 00:11:48,470
+Fakat bu bizim birçok işimizde ihtiyaç duymadığımız bir detay oluyor.
+
+75
+00:11:49,470 --> 00:11:56,470
+Şimdi cihazlar üzerindeki hangi sensörler olduğunu bir kere bilmek gerekiyor programlama yaparken.
+
+76
+00:11:56,470 --> 00:12:08,470
+Burada önemli noktalardan bir tanesi siz eğer programınızı farklı cihazlarda çalıştırdığınızda farklı sensörle bu cihazlarda yer aldığını gözlemleyeceksinizdir.
+
+77
+00:12:08,470 --> 00:12:20,470
+Bugün ilerleyen saatlerde yapacağımız şeylerden bir tanesi cihazınızda kaç farklı tipte sensör var bunu liste edeceksiniz bunu göreceğiz.
+
+78
+00:12:20,470 --> 00:12:33,470
+Bu her bir sensörün de yetenekleri farklı ölçebilecekleri range daha farklı resolution daha farklı ihtiyaç duyduğu güç ve enerji farklı.
+
+79
+00:12:33,470 --> 00:12:51,470
+O yüzden her telefonda bunu gözeterek bir program yazmanız özellikle çok sık arka planda değer okuduğunuz sensörler için oldukça önemli olabiliyor.
+
+80
+00:12:51,470 --> 00:13:03,470
+Bu sensörleri sensör yıbonitli sınırlarla dinlediğimiz ve bunların mutlaka registre edilmesi gerektiğini gereksiz durumlarda da çalışmaması gerektiğini daha önce söylemiştik.
+
+81
+00:13:03,470 --> 00:13:24,470
+Birçok sensörden bahsettik yıbonitli sınır, giroskop, ışık sensörü, diner yıbonitli sınır, manyetometre, basınç sensörü, nem sensörü, sıcaklık sensörü vesaire bu sensörlerin donanım sal ve yazılım sal olabileceğini söylemek.
+
+82
+00:13:24,470 --> 00:13:34,470
+Yazılım sal ise mutlaka donanım sensörlerinden entledilen değerler kuzanılarak hesaplandığını söyleyebiliyoruz.
+
+83
+00:13:34,470 --> 00:13:54,470
+İrme ölçarı, diner irme ölçarı bunlardan bir tanesi software olarak cihazda yer alıyorsa normal bir irme ölçarıdan alınan değerden yer çekimi, irme seçikaltı olarak yapılan hesap sonucu kabaca elde edildiğini söyleyebiliriz.
+
+84
+00:13:54,470 --> 00:14:08,470
+Bir Android uygulaması yazıyorsanız, genişliyorsanız bu bir ön yüzdeki bir uygulama da olabilir, arka planlı çalışan bir servis de olabilir.
+
+85
+00:14:08,470 --> 00:14:20,470
+Sensör framework'ından faydalanıyorsunuz değerleri okumak için ve bu sensör framework'ın altında dört temel başlık var.
+
+86
+00:14:20,470 --> 00:14:36,470
+Sensör menajer sizin ilgili sensörlere erişiminizi ve o sensörlerin nere olduğunu görmenizi sağlıyor ve bu sensörlerin sisteme entegre edilmesi ve çalıştırılması da tekrar sistemden anregistre edilmesinler sorumlu.
+
+87
+00:14:36,470 --> 00:14:46,470
+Onun ötesinde sensör sınıfı, ilgili sensörün yeteneklerinin ne olduğunu bizimle paylaşıyor.
+
+88
+00:14:46,470 --> 00:15:02,470
+Sensör event, ilgili sensörden bir nesne üretildiğinde oluşan objeye verilen alt, her sensörden farklı türde eventler üretiliyor.
+
+89
+00:15:02,470 --> 00:15:26,470
+Bunu da biraz sonra göreceksiniz ve genelde bu eventler sensördeki verinin ne zaman üretildiğini, sensördeki gerçekleşen hareketin üretilen değerinin ne olduğunu, hangi sensörden bu verimin üretildiği bilgilerini sakladığınız obje.
+
+90
+00:15:26,470 --> 00:15:39,470
+Bir de tabi birçok event driven programlama dilinde olduğu gibi Java'da bulunan listenerlar var.
+
+91
+00:15:39,470 --> 00:15:55,470
+Herhangi bir tetikleme söz konusu olduğu zaman sensör event listener üzerinden siz değişen değerleri ya da değişen ölçüm hassasiyetini takip edebiliyorsunuz.
+
+92
+00:15:55,470 --> 00:15:59,470
+Bu event listenerı mutlaka aktif hale getirmeniz gerekiyor.
+
+93
+00:15:59,470 --> 00:16:06,470
+Burada küçük bir kop parçası var ve burada kullanılabilecek olan çeşitli metotlar var.
+
+94
+00:16:06,470 --> 00:16:25,470
+Öncelikle bir sensör menajeri yaratıyorsunuz, framework'ın altına yayılan ana komponent ve bu sensör menajer tipindeki objeye sensör servisi üzerinden hizmet alacağınızı GetSystemService'de tanımlıyorsunuz.
+
+95
+00:16:25,470 --> 00:16:38,470
+Sonra isterseniz cihazınızdaki ya da programın çalıştığı cihazdaki sensörleri listelemek için ve sensör menajeri ait olan GetSensorList metodunu çağırıyorsunuz.
+
+96
+00:16:38,470 --> 00:16:55,470
+İster type all yazarak tüm sensörleri, isterseniz type accelerometer, type magnetometer yazarak eğer varsa o tipteki sensörleri listelemesini istiyorsunuz bulunduğu cihazda programınızın.
+
+97
+00:16:55,470 --> 00:17:01,470
+Tabii diyebilirsiniz ki cihazda birden fazla tipte aynı sensör olabilir mi?
+
+98
+00:17:01,470 --> 00:17:27,470
+Evet olabiliyor. Farklı sebeplerden dolayı gerek hastal sebepler için veya daha çok enerjik eten daha az enerjik eten sensör kullanımı söz konusu olabiliyor ya da birinden biri bozulduğunda diğeri devreye girsin ve sıkıntı yaşanmasın diye bu tür bazı sensörlerin birden fazla cihazlarda bulunduğu durumda söz konusu oluyor.
+
+99
+00:17:27,470 --> 00:17:45,470
+Alt tarafta görüyorsunuz magnetometer var mı yok mu? Bunun kontrolünü yapıyorsunuz ve özellikle bir cihazda ihtiyaç duyduğunuz sensör var mı yok mu?
+
+100
+00:17:45,470 --> 00:17:57,470
+Query ile burada yapıldığı gibi kontrol ettiğinizde fayda var yoksa yoksa ne yapılacak, varsa ne yapılacak ancak bu şekilde tanımlayabiliyorsunuz.
+
+101
+00:17:57,470 --> 00:18:17,470
+Onun ötesinde get resolution, get maximum range, get power, get vendor, get version gibi sensörlerinizin ne kadar enerjik ettiği, hangi range de size servis verdiği ve çözünürlüklerin ne olduğunu takip edebiliyorsunuz.
+
+102
+00:18:17,470 --> 00:18:33,470
+Farklı sensörler farklı sıklıkta veri toplayabiliyorlar. Özellikle axial metajeroskop gibi hareket sensörleri saniyede 200 defaya kadar veri toplayabiliyor.
+
+103
+00:18:33,470 --> 00:18:50,470
+Ama siz bunu azaltabiliyorsunuz çünkü ne kadar sık toplarsa o kadar çok enerji tüketiyor demektir. Ama ışık sensörleri gibi sensörler daha düşük aralıklarla saniyede bir, bazen iki saniyede bir sizin için değer üretebiliyorlar.
+
+104
+00:18:50,470 --> 00:19:10,470
+Bu tür sensörlerin saniyede 200 defa algılama yapmasının çok da bir anlamı yok. O yüzden hangi sensörle çalışıyorsanız çözünürlüğü ne kadar bunu set etme şansına sahipsiniz, frekansını belirleme şansına sahipsiniz.
+
+105
+00:19:10,470 --> 00:19:33,470
+Bir sensörün saniyedeki veri toplama hızına diyorsunuz frekansı diyoruz. İşte 50 Hz dediğimizde bir sensörün saniyede 1000 ms olduğunu varsa yapsak elini defa veri topladığını söyleyebiliriz.
+
+106
+00:19:33,470 --> 00:19:55,470
+Bu da yaklaşık olarak 20 ms'de bir veri toplaması anlamına geliyor. Burada yine bir önceki kodun devamı olarak düşünemezsiniz benzer bir yapıda bir yer çekimi sensör var mı yok mu kontrol ediliyor.
+
+107
+00:19:55,470 --> 00:20:09,470
+Daha sonra eğer yer çekimi sensörlerinden birden fazla varsa bizim için üretincisi Google olan var mı yok mu diye kontrol ediyoruz ve onun versiyon 3'ü sahip olup olmadığını kontrol ediyoruz.
+
+108
+00:20:09,470 --> 00:20:33,259
+Bunun sebebi spesifik bazı sensörler diğerlerinden daha çözünürlüğü yüksek daha sık veri toplayabiliyorlar. Sizin uygulamanızda buna ihtiyaç duyuyorsa ilgili telefonla bu özelliği taşıyan bir sensör var mı yok mu kontrol etmeniz faydalı olacaktır.
+
+109
+00:20:33,259 --> 00:20:46,259
+Onun ötesinde tabi yine alttaki kodda bir immançenin var olup olmadığını kontrol etme şansına sahipsiniz.
+
+110
+00:20:46,259 --> 00:21:01,700
+Gelelim iki tane önemli metoda sensör event listener interface'ine ait olan iki önemli metodur. Biri onEquityChanged, diğeri de onSensorChanged.
+
+111
+00:21:01,700 --> 00:21:18,700
+Bizim için kritik olan onSensorChanged. Her bir değişim gerçekleştiğinde sensör event üzerinden siz bu değişikliği kendi programınıza alabilirsiniz.
+
+112
+00:21:18,700 --> 00:21:36,700
+Tabii farklı sensörler var. Örneğin continuous veri alanlar, bir değişiklik olduğunda veri alanlar, özellikle bir olay tetiklendiğinde veri alanlar, bir de değerde bir değişiklik olduğunda veri üretenler.
+
+113
+00:21:36,700 --> 00:21:56,700
+Şimdi imman açar size seçtiğiniz sözün frekansa bağlı olarak saniyede x kadar veri üretiyor ve siz event isimli, sensör event tipindeki değişikliğinizin values isimli
+
+114
+00:21:56,700 --> 00:22:07,700
+ve atribütü üzerinden 0,1 ve 2 üzerinden x,y,z,x'ların ilgisini alabilirsiniz. Ama burada görüyorsunuz ışık sensörü üzerinden bir veri alınıyor.
+
+115
+00:22:07,700 --> 00:22:16,700
+Burada bir tane değer ürettiği için sadece values 0 çağırılmış. Tabii birden fazla sensör de okumak isteyebilirsiniz aynı anda.
+
+116
+00:22:16,700 --> 00:22:26,700
+O zaman onSensorChanged metodu içerisinde hangi sensörden değer geldiğini kontrol etmeniz gerekiyor.
+
+117
+00:22:26,700 --> 00:22:40,700
+Yani ışıkla yeme ölçel okuyorsanız acaba ışıktan bu geldi, yeme ölçelden bu geldi. Kaç tane sensörü registrettiyseniz onları tek tek sensör event üzerinden kontrol etmeniz gerekiyor.
+
+118
+00:22:40,700 --> 00:22:56,700
+Şimdi onSensorChanged dedik, continuous veri okuyan sensörler var dedik. Buna örnek 2013'e verdik. Bir de tabii değişim olduğu zaman bilgilendirme yapan sensörler var.
+
+119
+00:22:56,700 --> 00:23:05,700
+Mesela stepCounter, siz diyelim stepCounter 10 saniyede bir değer okuyor ya da sizi çözünürlüyor. Öyle var mıydınız?
+
+120
+00:23:05,700 --> 00:23:18,700
+Yürüdüğünüzde bunları sizinle yürüdükçe paylaşıyor. Ama mesela durdunuz, size her 10 saniyede bir değerin 0 olduğu bilgisini döndürmüyor.
+
+121
+00:23:18,700 --> 00:23:29,700
+Onun yerine ne zaman siz durur pozisyonuna, yürüyüş pozisyonuna geçiyorsunuz o zaman tekrar size değişim olduğu için bu değeri pas ediyor.
+
+122
+00:23:29,700 --> 00:23:39,700
+O yüzden burada daha çok değerin değişmesi durumunda bir tetiklenme olduğunu vurulamakta fayda var.
+
+123
+00:23:39,700 --> 00:23:51,700
+Öte yandan bir başka sensör, trigger sensörü, bu trigger sensör üzerinden aslında significant motion sensör diye de geçer.
+
+124
+00:23:51,700 --> 00:24:00,700
+Mesela siz yürümeye başladınız, siz arabada yolculuk etmeye başladınız, siz trena bindiniz, siz arabaya oturdunuz.
+
+125
+00:24:00,700 --> 00:24:16,700
+Yani bir state değişimi oldu yaptığınız işte. O zaman bu sensör devreye giriyor ve activity recognition üzerinden size Android framework'ın sunduğu bilgilere aktarıyor.
+
+126
+00:24:16,700 --> 00:24:24,700
+Mesela şu an arabada yolculuk ediyorsunuz bilgisini. Araba bilgisini aktararak sizinle paylaşmış oluyor.
+
+127
+00:24:24,700 --> 00:24:33,700
+Ve sizin ekstradan email çağ ve ciloskopu inceleyerek bir bilgi ortaya çıkarmanıza gerek kalmıyor.
+
+128
+00:24:33,700 --> 00:24:39,700
+O yüzden Android'ın böyle bir aslında ekstra bir size API'yi var.
+
+129
+00:24:39,700 --> 00:24:48,700
+Bu Human Activity Recognition API üzerinden ilgili kişinin hareketlerini takip edebiliyorsunuz.
+
+130
+00:24:48,700 --> 00:25:00,700
+Hareket değişimini algıladığı zaman arka plan da sizi trigger sensörü üzerinden tetikleyerek bilgilendiriyor.
+
+131
+00:25:00,700 --> 00:25:13,700
+Gelelim sensörlerin registre ve anirigistre edilme işine. Mutlaka sensörlerin registre edilmesi gerekiyor kullanılabilmesi için.
+
+132
+00:25:13,700 --> 00:25:22,700
+Tabii registre edilenlerin de aktiviteniz kullanılmıyorken bir önemi yoksa mesela bir oyun oynuyorsunuz.
+
+133
+00:25:22,700 --> 00:25:28,700
+Oyunda da işte bir top var. Topu hareket ettiriyorsunuz, telefonunuzu hareket ettirerek.
+
+134
+00:25:28,700 --> 00:25:33,700
+Doğal olarak 23R ve ciloskop bilgisine ilk geldiğimiz var.
+
+135
+00:25:33,700 --> 00:25:39,700
+Oyun paus olduğu anda arka planda mı sensörlerin çalışmasına gerek yok.
+
+136
+00:25:39,700 --> 00:25:48,700
+Sizin bu noktada sensör menajeri üzerinden ilgili sensörü anirigistre etmeniz gerekiyor.
+
+137
+00:25:48,700 --> 00:25:58,700
+Örneğin bir uygulama çalıştırıyorsunuz. Bu uygulama arka plandaki ışığa göre dark moda ya da light moda geçiyor.
+
+138
+00:25:58,700 --> 00:26:06,700
+Işık takibi yapıyor. Siz bu uygulamadan çıktığınız anda artık arka planda bunu takip etmeniz gerektirecek bir durum yok.
+
+139
+00:26:06,700 --> 00:26:09,700
+Anirigistre mutlaka edilmesi lazım.
+
+140
+00:26:09,700 --> 00:26:20,700
+Öte yandan servis yazabilirsiniz. Servisler bir uygulamaya bağlı olarak sizin sağlık değerlerinizi takip etmek isteyebilir.
+
+141
+00:26:20,700 --> 00:26:26,700
+Bunun için hazır bu yıldırım çok çözüm var ama sizin uygulamanız daha özel olabilir.
+
+142
+00:26:26,700 --> 00:26:30,700
+Ve kişinin hareketlerini takip etmek istiyorsunuzdur.
+
+143
+00:26:30,700 --> 00:26:47,700
+O zaman servis arka planda çalıştığı için servisi ancak gerekli durumlarda unbind ederek ilginli sensörün çalışmasını stop edip durdurmak ihtiyacı oluşabilir.
+
+144
+00:26:47,700 --> 00:26:55,400
+Google Play Filter daha önce de karşımıza çıkmıştı. Manifeste kullanıyoruz.
+
+145
+00:26:55,400 --> 00:27:14,400
+Bir dokunumsal parça özellikle sensör, kamera gibi parçalar mutlaka olmazsa olmazsa yani uygulamanız buna ihtiyaç duyuyorsa o zaman bunu manifestte tanımlamamız lazım.
+
+146
+00:27:14,400 --> 00:27:26,400
+Ve buraya required ve true yazmamız lazım. Bu sayede bu özelliğe sahip olmayan telefonlarda zaten uygulamanız Google Play'de gözükmeyecektir.
+
+147
+00:27:26,400 --> 00:27:37,400
+Ama required true default yaparsanız o zaman şu demek siz iki şekilde programınızı yönetiyorsunuz.
+
+148
+00:27:37,400 --> 00:27:43,400
+Bir email içeri sahip olanlar için bir yol var bir de email içeri sahip olmayanlar için bir yol var.
+
+149
+00:27:43,400 --> 00:27:52,400
+Yani böyle bir ihtiyaç var bunu söylüyorsunuz ama karşı tarafa da diyorsunuz ki yoksa da benim programım çalışır.
+
+150
+00:27:52,400 --> 00:27:59,400
+O yüzden true ve false'u manifestin düzgün bir şekilde tanımlamak gerekiyor.
+
+151
+00:28:00,400 --> 00:28:06,400
+Şimdi size bahsetmiş olduğum bu reporting modelleri üzerinden bir kez daha geçelim.
+
+152
+00:28:06,400 --> 00:28:17,400
+Continuous on-change veya on-shop dediğimiz eventlerin ve sensör değerlerinin takip edilme işlerinden bahsediyoruz.
+
+153
+00:28:17,400 --> 00:28:29,400
+UZ Android 9 ile birlikte bu kullanım yaygınlaştı ve aslında tercih ediliyor başlandı.
+
+154
+00:28:29,400 --> 00:28:37,400
+Continuous da söylediğimiz gibi email çare ve jeloskop gibi veriler sürekli olarak sizi değer üretiyor.
+
+155
+00:28:37,400 --> 00:28:44,400
+Tabii sizin seçeceğimiz belli frekanslarda üretiyor. Birazdan onu da konuşacağız.
+
+156
+00:28:44,400 --> 00:28:53,400
+Burada çok sıkı da tercih edebilirsiniz ya da daha düşük bir çözünürlük de üretmesinde vereceğiniz parametre ile belirleyebilirsiniz.
+
+157
+00:28:53,400 --> 00:28:59,400
+On-change'e dönecek olursak, events are generated only if the measures have changed.
+
+158
+00:28:59,400 --> 00:29:05,400
+Örneğin step counter'dan bahsetmiştik. Adım attığınızda değişiyor.
+
+159
+00:29:06,400 --> 00:29:18,400
+O zaman eventinizde adım attığınız zaman yaratılıyor ve biraz önce sensör change dediğimiz metod tarafına aktarılıyor.
+
+160
+00:29:18,400 --> 00:29:22,400
+Listener tarafından yakalanıyor ya da proximity sensor.
+
+161
+00:29:22,400 --> 00:29:29,400
+Proximity'de bir değiştik olduğu zaman. Örneğin proximity sensörün iki tane farklı versiyonu var.
+
+162
+00:29:29,400 --> 00:29:37,400
+Biri size cm cinsinden değer döndürüyor. Diğeri ise daha basit uzak ya da yakın olmak üzere iki değer döndürüyor.
+
+163
+00:29:37,400 --> 00:29:45,400
+Zaten uzaksa ve değişmiyorsa değişim olmadığı için sensör event de üretilmiyor.
+
+164
+00:29:45,400 --> 00:29:58,400
+Ama ne zaman telefonu uzaktan kulağınızda götürüp yakınlaştırırsanız ya da kulağınızdan tekrar uzaklaştırırsanız o zaman bu eventi tetiklemiş oluyorsunuz.
+
+165
+00:29:58,400 --> 00:30:02,400
+Event yaratılıyor. Siz de buradaki ilgimi değere okuyorsunuz.
+
+166
+00:30:02,400 --> 00:30:13,400
+Şimdi one shot kısmı da özellikle human activity recognition'da kullanılan bir nokta.
+
+167
+00:30:13,400 --> 00:30:19,400
+Bu noktada trigger sensörleri üzerinden çalışıyor dedik.
+
+168
+00:30:19,400 --> 00:30:24,400
+Bunun için significant motion sensör var çok kullanılan.
+
+169
+00:30:24,400 --> 00:30:41,400
+Ve burada one shot sensör olarak kullanılan bir significant motion sensör aslında sizin günlük hayattaki yaptığınız aktivitelerdeki değişimi yakalamak üzerine kuruluyor.
+
+170
+00:30:41,400 --> 00:30:50,400
+Biraz on change'e benzerlikle birlikte burada on change'de değerlerin değişmesi söz konusu.
+
+171
+00:30:50,400 --> 00:30:58,400
+One shot'ta ise sizin aslında kontekstinizin değişmesi söz konusu.
+
+172
+00:30:58,400 --> 00:31:06,400
+Yani oturuyorken ayağa kalkmanız, yürümeniz, arabaya binmeniz, arabayla seyahat etmeniz bunların hepsi birer kontekst.
+
+173
+00:31:06,400 --> 00:31:16,400
+Ve sizin sensör listener'ınız sadece bunları tespit etmek üzerine kuruluyor.
+
+174
+00:31:17,400 --> 00:31:30,400
+Zaten otomatik olarak bir event yakalandıktan sonra sensör kendini deaktif ediyor ve devamlı dinleme rutininde kalmıyor.
+
+175
+00:31:30,400 --> 00:31:38,539
+Özellikle bir aksiyonu yakalamak için bunu kullanıyorsunuz.
+
+176
+00:31:38,539 --> 00:31:57,539
+Burada farklı sensör tiplerinin hangi fiziksel sensörlere ihtiyaç duyduğunu ve rapor modlarının ne yönde olduğunu bizimle paylaşan bir bilgi var.
+
+177
+00:31:57,539 --> 00:32:06,539
+Buranın çok detayına girmeyeceğim. Zaten konunun bazı bilgilerini temel olarak beğendik.
+
+178
+00:32:06,539 --> 00:32:14,420
+Merak edersiniz, detayını developer android.com üzerinden erişebilirsiniz.
+
+179
+00:32:14,420 --> 00:32:26,420
+Biraz önce size bahsetmiş olduğum bir sensörün verilerinin saklandığı değişkenin verileri size nasıl sunduğu.
+
+180
+00:32:26,420 --> 00:32:39,420
+Bu noktada bir eventimiz var. Biraz önce buna event diye bir değişken ismiyle ulaşmıştık. Event nokta value 0 demiştik.
+
+181
+00:32:39,420 --> 00:32:57,420
+3 eksenden veri üretiyorsa value 0, 1, 2. 5 eksenden üretiyorsa 0, 1, 2, 3, 4 şeklinde erişiyorsunuz ki 5 eksende veri üreten an kalibre olan sensörler var.
+
+182
+00:32:57,420 --> 00:33:05,420
+Bunlar herhangi bir kalibrasyondan geçmeden doğrudan doğanımın ürettiği değeri paylaşıyorlar.
+
+183
+00:33:05,420 --> 00:33:17,420
+Fakat şu anda gördüğünüz sensör, kalibre olanlar belirli bir yürültü kontrolü yapılıp size değeri ona göre üretiyorlar.
+
+184
+00:33:17,420 --> 00:33:23,420
+Öte yandan altta bir başka sensör tipini görüyorsunuz.
+
+185
+00:33:23,420 --> 00:33:30,420
+Trigger sensörü, bir an önce söylemiştik yukarıda bir daha gösterelim şurada.
+
+186
+00:33:30,420 --> 00:33:40,420
+One shot tipinde report eden sensörler trigger sensörler olarak da adlandırılıyor demiştik one shot sensörler.
+
+187
+00:33:41,420 --> 00:33:56,420
+Bu noktada Type-C Significant Motion Sensörünü çağırdığınızda buradan herhangi bir event tetiklendiğinde bu eventin onTrigger metodunda yapılması gereken işi gerçekleştirebiliyorsunuz.
+
+188
+00:33:56,420 --> 00:34:08,420
+Tabii burada onTrigger'da onSensorChange'de aslında daha basit işlerin yapılması için tasarlanmış.
+
+189
+00:34:08,420 --> 00:34:28,420
+Sürekli olarak veri akan durumlarda özellikle continuous report eden sensörlerde sizin uzun süren işleri bu metotlarda onSensorChange'de onTrigger metotlarında hayata geçirmemeniz lazım.
+
+190
+00:34:28,420 --> 00:34:40,420
+Bunun için farklı opsiyonlar var. Bunlardan bir tanesi go async, diğeri job scheduler gibi background tasklarını kullanmak.
+
+191
+00:34:40,420 --> 00:34:52,420
+O yüzden uzun sürecek bir iş söz konusuysa onSensorChange'de onTrigger gibi metotlar içerisinde bu işi yapmamalısınız.
+
+192
+00:34:52,420 --> 00:35:09,309
+Mutlaka bir thread üzerinden yara farklı bir arka plan, size sunulan arka plan seçeneği üzerinden ilerlemeniz uygun olacaktır.
+
+193
+00:35:09,309 --> 00:35:17,309
+Biraz önceki sensörler özellikle Emojar ve Genoscope gibi sensörler Motion Sensörler olarak geçiyor.
+
+194
+00:35:17,309 --> 00:35:26,309
+Bir de Position Sensörleri var. Bu Position Sensörler aslında telefonunuzun pozisyonu ile ilgisi bilgi sağlayan sensörler.
+
+195
+00:35:26,309 --> 00:35:36,309
+Burada ayrıca proximity sensörle de telefonunuzun bir objeye olan uzaklığını ölçebiliyorsunuz.
+
+196
+00:35:36,309 --> 00:35:44,309
+Ayrıca telefonunuzun dikey mi, yatay mı, eğri mi, durduğunu belirleme şansına sahipsiniz.
+
+197
+00:35:44,309 --> 00:35:52,309
+Şimdi ben şöyle bir soru sorayım. Bir yüzeyin su terazisi ile eğimli olup olmadığını anlayabiliyorsunuz.
+
+198
+00:35:52,309 --> 00:36:08,699
+Telefonda da bunu yapabilir miyiz? Bir yüzeye su terazisi kullanmadan yüzeye eğimli olup olmadığını anlayabilir miyiz?
+
+199
+00:36:12,960 --> 00:36:15,909
+Evet [öğrenci].
+
+200
+00:36:15,909 --> 00:36:21,909
+Anlayabiliriz hocam. Öyle bir sensör var telefonda. Açıyor olcan. Telefonu yatay koyunca.
+
+201
+00:36:21,909 --> 00:36:23,909
+Hangisi o sensör?
+
+202
+00:36:23,909 --> 00:36:26,909
+Adını unuttum bir şey.
+
+203
+00:36:26,909 --> 00:36:30,150
+Orientation mu?
+
+204
+00:36:30,150 --> 00:36:31,150
+Efendim hocam?
+
+205
+00:36:31,150 --> 00:36:32,150
+Orientation mu?
+
+206
+00:36:32,150 --> 00:36:35,150
+Hatırlayamadım adını.
+
+207
+00:36:35,150 --> 00:36:38,849
+Peki. [öğrenci]'e soralım.
+
+208
+00:36:38,849 --> 00:36:42,849
+Hocam Giroskop'u kullanabiliriz herhalde diye düşünüyorum.
+
+209
+00:36:43,849 --> 00:36:51,820
+Giroskop bir... Umut'a da söz vereyim. Ondan sonra cevap veririm.
+
+210
+00:36:51,820 --> 00:36:57,820
+Hocam imu sensörü var diye biliyorum. Onunla konumu da öğreniriz.
+
+211
+00:36:57,820 --> 00:37:09,820
+Şimdi inertial measurement unit diye geçiyor. Aslında bu giroskop, inertial sensörlerine verilen isim imu.
+
+212
+00:37:09,820 --> 00:37:19,820
+Şimdi burada farklı yöntemler uygulanabilir ama orientation sensörü, type orientation diye geçen aslında deprikate olmuş bir sensördür.
+
+213
+00:37:20,820 --> 00:37:24,820
+Ve software based bir sensördür.
+
+214
+00:37:24,820 --> 00:37:39,820
+Bilgilerini imu ölçer, giroskop ve manyetometradan alarak, yani bunların kombinasyonundan alarak değerlendirme yapıp bize yatay dikey yöndeki pozisyon bilgisini verebilir.
+
+215
+00:37:39,820 --> 00:37:52,820
+Ama daha basit ölçüm yapacak olsaydık, yani çok hassas bir ölçümden çok kabaca telefonun koyduğumuz yüzeyin düz olup olmadığını anlamak istiyorsaydık.
+
+216
+00:37:52,820 --> 00:37:58,820
+Dinear imu ölçerden bir, imu ölçerden bir faydalanırız.
+
+217
+00:37:58,820 --> 00:38:12,199
+Ben o zaman şöyle örnek vererek kombin bağlayayım.
+
+218
+00:38:12,199 --> 00:38:32,199
+Bir telefonu düz bir yüzeye koyduğunuz zaman o telefonun tek bir ekseninde siz bir, 20 ölçer ölçümü yaptığınızda 9.81 görürsünüz ve geri kalan 2 eksende 0 görürsünüz.
+
+219
+00:38:32,199 --> 00:38:34,199
+Bunu bir ders önce de konuşmuştuk aslında.
+
+220
+00:38:34,199 --> 00:38:39,199
+Ama siz eğimli bir yere koyduğunuzda bu eksenlere dağılır.
+
+221
+00:38:39,199 --> 00:38:57,199
+O yüzden sadece basit bir kontrolle ölçüden eksenlerden birinin 9.81 civarında olması ve diğerlerinin 0 civarında olması o yüzeyin kabaca eğimli olup olmadığı konusunda size bir fikir verecektir.
+
+222
+00:38:57,199 --> 00:39:03,199
+Bugün uygulamamızda böyle bir basit bir şey yapacağız.
+
+223
+00:39:03,199 --> 00:39:10,199
+Telefonunuza ima ölçerden veri alacaksınız ve bir yüzeyin eğimli olup olmadığını anlıyor olacağız.
+
+224
+00:39:10,199 --> 00:39:13,199
+Çok basit bir şekilde nasıl kullanılığını da görüyor olacaksınız.
+
+225
+00:39:13,199 --> 00:39:25,199
+Ama tabi sizin söylediklerinizde değerli daha detaylı bir ölçüm için ki su terazi uygulamaları var biliyorsunuz Google Play Store'da.
+
+226
+00:39:25,199 --> 00:39:27,199
+Onlara da bakabilirsiniz.
+
+227
+00:39:27,199 --> 00:39:30,199
+Özellikle açıklamalarında ne kullandıkları yazıyordur.
+
+228
+00:39:30,199 --> 00:39:38,199
+Ciroskop'a gelecek olursak aslında ciroskop bize belli bir eksendeki açısal hızı verir.
+
+229
+00:39:38,199 --> 00:39:40,199
+Radiyal dolu saniyedir.
+
+230
+00:39:40,199 --> 00:39:44,199
+X-eksene etrafında ne kadar hızlı dönüyorsunuz?
+
+231
+00:39:44,199 --> 00:39:47,199
+Y-eksene etrafında ne kadar hızlı dönüyorsunuz?
+
+232
+00:39:47,199 --> 00:39:52,199
+Z-eksene etrafında ne kadar hızlı dönüyorsunuz?
+
+233
+00:39:53,199 --> 00:39:58,199
+Bu noktada bizim için çok kritik değil.
+
+234
+00:39:58,199 --> 00:40:09,199
+Yani bir yüzeyin su terazisine ölçerken ciroskop bilgisinden ihtiyaç duyulma dene söyleyebiliriz.
+
+235
+00:40:09,199 --> 00:40:21,199
+Bunun ötesinde ciroskopu özellikle düşme veya aktivite hareketlerini tanımada kullanıyoruz.
+
+236
+00:40:21,199 --> 00:40:26,199
+İyimi ölçerin başarısının biraz daha yükselmesine çok katkıda bulunuyor.
+
+237
+00:40:26,199 --> 00:40:38,199
+Özellikle yürüme, koşma gibi 3 eksanede cren eden ve daha detay analiz gerektiren hareketleri.
+
+238
+00:40:38,199 --> 00:40:50,199
+Sadece imi ölçerle değil ciroskop hatta manyetometre kullanarak özellikle dünyanın manyetik alanını göz önünde bulundurup hesaplarda kullanabiliyoruz ki.
+
+239
+00:40:50,199 --> 00:40:56,199
+Manyetometre biliyorsunuz pusulanın temel kullandığı sensörlerin başında geliyor.
+
+240
+00:40:56,199 --> 00:41:04,480
+Bir de çevresel sensörler var. Bunlar genellikle gördüğünüz gibi tek eksende değer üretiyorlar.
+
+241
+00:41:04,480 --> 00:41:07,480
+İşte bir çevre sıcaklığı ölçümü.
+
+242
+00:41:07,480 --> 00:41:15,480
+Işık ne kadar bir ışık alıyor, cihaz o anda, cepte mi o cihaz değil mi bunu da anlayamıyorsunuz.
+
+243
+00:41:16,480 --> 00:41:23,480
+Basınç nem ve bazen device'in sıcaklığını ölçen sensörler de var.
+
+244
+00:41:23,480 --> 00:41:31,480
+Ama bu bahsettiğimiz sensörlerin hepsi bütün cihazlarda yok.
+
+245
+00:41:31,480 --> 00:41:38,480
+Özellikle basınç sensörü, nem sensörü her cihazda bulunmuyor.
+
+246
+00:41:38,480 --> 00:41:46,480
+Device'in sıcaklığını ölçen artık sıcaklık sensörlerine çok sık karşımıza çıkmıyor.
+
+247
+00:41:46,480 --> 00:41:52,480
+Hatta çevresel sıcaklığı ölçen sensörler de zaman zaman cihazlara konulmuyor.
+
+248
+00:41:52,480 --> 00:41:54,480
+Çok efektif olmadığı için.
+
+249
+00:41:54,480 --> 00:42:05,480
+Çünkü bir telefon ısındığında çevresel sıcaklıktan çok daha farklı bir değer üretmesine sebep olabiliyor bu sensörlerin.
+
+250
+00:42:06,480 --> 00:42:13,480
+Burada kalibre ve kalibre olmayan sensörlerin bilgilerinin hangi kanalları üzerinden paylaşıldığını görüyorsunuz.
+
+251
+00:42:13,480 --> 00:42:19,480
+Kalibre olmayan bilgileri alıp kendiniz de ön işlemden geçirebilirsiniz.
+
+252
+00:42:19,480 --> 00:42:32,480
+Eğer cihazınızın ürettiği verilerin ön işleme sırasında doğru işlem verilerini düşünüyorsunuz, hatalı veri ürettiğini düşünüyorsunuz bunu yapabilirsiniz.
+
+253
+00:42:32,480 --> 00:42:36,559
+Evet devam edelim.
+
+254
+00:42:36,559 --> 00:42:40,539
+Evet şu anda Notifications'a geldik.
+
+255
+00:42:40,539 --> 00:42:42,539
+Bugün bu konuyu anlatmayacağız.
+
+256
+00:42:42,539 --> 00:42:47,539
+Aslında sensörlerle ilgili de gelen haplarıyla önemli başlıkları konuşmuş olduk.
+
+257
+00:42:47,539 --> 00:42:49,539
+Buraya kadar sorusu olan var mı?
+
+258
+00:42:49,539 --> 00:42:52,539
+Sensör dünyası ile ilgili merak edilen var mı?
+
+259
+00:42:54,539 --> 00:43:00,659
+Evet [öğrenci].
+
+260
+00:43:00,659 --> 00:43:06,099
+Hocam aklıma takılan bir şey vardı bunun haricinde.
+
+261
+00:43:06,099 --> 00:43:11,099
+GSM basitasyonlarına bağlanırken de bir sensör mü kullanılıyor?
+
+262
+00:43:11,099 --> 00:43:14,099
+Orada mesela verileri alırken uygulama içerisinde nasıl yapmak gerekiyor?
+
+263
+00:43:14,099 --> 00:43:16,099
+Bunu şöyle yorumlayalım.
+
+264
+00:43:16,099 --> 00:43:26,099
+Şimdi biraz önce hareket sensörlerini, pozisyon sensörlerini ve çevresel sensörleri konuştuk.
+
+265
+00:43:26,099 --> 00:43:34,099
+Tabii bizim çevremizi, algılamamızı sağlayan bize veri üreten tüm donanımlar aslında bizim için bir sensör görevi görüyor.
+
+266
+00:43:34,099 --> 00:43:37,099
+Bunların başında da GSM kenara koyuyorum.
+
+267
+00:43:38,099 --> 00:43:50,099
+İlk akla gelecek olan GPS sensörü, Global Positioning System size uydulardan gelen verileri aktarıyor.
+
+268
+00:43:50,099 --> 00:43:56,099
+Bunun içerisinde sizin konumunuzdan tutun, hızımıza kadar bilgiler bulunabiliyor.
+
+269
+00:43:56,099 --> 00:43:59,099
+Bunun GPS genel adı.
+
+270
+00:43:59,099 --> 00:44:10,099
+Biz bunu hep genel kullanıyoruz ama aslında Amerika'nın uydularının ürettiği verilerin bulunduğu sisteme verilen GPS.
+
+271
+00:44:10,099 --> 00:44:16,099
+Bunun diğer karşılığı Rus tarafında Glonass diye geçiyor.
+
+272
+00:44:16,099 --> 00:44:19,099
+Çin tarafında Beidu diye geçiyor.
+
+273
+00:44:19,099 --> 00:44:21,099
+Hindistan'ın var böyle sistemi.
+
+274
+00:44:21,099 --> 00:44:29,099
+Sonuçta buradan size gönderilen coordinate bilgilere de bir sensör verisi.
+
+275
+00:44:29,099 --> 00:44:43,099
+Buna paralel olarak Wi-Fi'dan gelen, kameradan üretilen, GSM şebekesi üzerinden size aktarılan data paketleri,
+
+276
+00:44:43,099 --> 00:44:48,099
+yaptığınız konuşmaların içerikleri, görüntülü konuşmaların içerikleri.
+
+277
+00:44:48,099 --> 00:44:53,099
+Bunların hepsi aslında birer sensör data görevini görünüyor.
+
+278
+00:44:53,099 --> 00:44:58,099
+Ama bunlar doğrudan biri fiziksel sensör olarak adlandırılmıyorlar.
+
+279
+00:44:58,099 --> 00:45:00,099
+Aynı şekilde mikrofon da öyle.
+
+280
+00:45:00,099 --> 00:45:05,099
+Fakat genel olarak size bir telefonda hangi sensörler bulmuş sorusu sorulduğunda,
+
+281
+00:45:05,099 --> 00:45:15,099
+kamera da bir sensördür, mikrofonda bir sensördür, GPS de bir sensördür,
+
+282
+00:45:15,099 --> 00:45:18,099
+ya da işte Glonass vs.
+
+283
+00:45:18,099 --> 00:45:25,099
+Artı Wi-Fi modülü üzerinden network paketleri de bir sensör veristir.
+
+284
+00:45:25,099 --> 00:45:29,099
+Çünkü o paketleri inceleyerek bir saldırı olup olmadığını anlayabilirsiniz.
+
+285
+00:45:29,099 --> 00:45:40,099
+Ya da GSM üzerinden Wi-Fi üzerinden gelen değil ama LTE üzerinden gönderilen paketler de bir sensör veristir.
+
+286
+00:45:40,099 --> 00:45:48,099
+O yüzden bunlar da sensörler olarak değerlendirilir.
+
+287
+00:45:48,099 --> 00:45:58,099
+Artı mesajlarınız, kalender eventleriniz, bunlar da aslında sanal sensörler olarak adlandırılır
+
+288
+00:45:58,099 --> 00:46:04,099
+ve bunların hepsinden bir bilgi çıkarma potansiyeriniz ve telefonunuzda
+
+289
+00:46:04,099 --> 00:46:12,099
+toplantı eventi varsa kalenderde telefonun kendini otomatik sessize alması
+
+290
+00:46:12,099 --> 00:46:18,099
+aslında sizin için oldukça kullanışlı bir yaklaşım olacaktır.
+
+291
+00:46:18,099 --> 00:46:27,099
+O yüzden nereden bilgi ediniliyorsa fiziksel ya da mantıksal olarak onu bir sensör kaynağı olarak değerlendirebiliriz.
+
+292
+00:46:27,099 --> 00:46:42,099
+Ama özellikle fiziksel sensörler arasında kamera, mikrofon, Wi-Fi modülü, Bluetooth modülü, GPS modülü gösterilebilir.
+
+293
+00:46:42,099 --> 00:46:53,219
+Evet başka sorusu olan var mı?
+
+294
+00:46:53,219 --> 00:46:57,219
+Peki sensörlerle ilgili sanırım başka soru yok.
+
+295
+00:46:57,219 --> 00:47:02,219
+Şimdi saat 14.47. [öğrenci]'a bir soru geldi.
+
+296
+00:47:02,219 --> 00:47:07,219
+Hocam bahsettiniz mi tam duymadım ama mailleşmede sensör sayılır mı acaba?
+
+297
+00:47:07,219 --> 00:47:18,219
+Güzel bir nokta. Nasıl mesajın içeriğini okuyup oradan kampanyadan kazandığınız puanları harcamak için son 5 gün diye bir mesaj geldi.
+
+298
+00:47:18,219 --> 00:47:31,219
+Siz bunu mesajın içeriğini okuyup ilgili kullanıcıya son gün gelen bir alert gösterirseniz bak bugün işte şu puanı harcamak için son günün
+
+299
+00:47:31,219 --> 00:47:34,219
+aslında burada da bir sensör verisi kullanmış oluyorsunuz.
+
+300
+00:47:34,219 --> 00:47:40,219
+Doğal olarak gelen maille içeriği de bir bilgi taşıyor.
+
+301
+00:47:40,219 --> 00:47:42,219
+Yani hepsi bir veri taşıyor.
+
+302
+00:47:42,219 --> 00:47:54,219
+O yüzden bunlar birer uzaktan da olsa bizim için sanal sensörler ama hani ne kadar yaygın bir şekilde kullanıyoruz.
+
+303
+00:47:55,219 --> 00:48:03,219
+Tartışılır işte özellikle mesajlarda bir mesajın sprem olup olmadığını anlamaya çalışıyoruz.
+
+304
+00:48:03,219 --> 00:48:07,219
+Dolayısıyla onu doğrudan baştan eliyoruz ya da maillerde de böyle bir şey var.
+
+305
+00:48:07,219 --> 00:48:14,219
+Bu tür uygulamalarla telefonunuzdaki inbox oldukça rahatlatabiliyoruz.
+
+306
+00:48:14,219 --> 00:48:20,219
+O yüzden onları da bir dolaylı sensör verisi olarak düşünebilirsiniz.
+
+307
+00:48:20,219 --> 00:48:30,079
+Veri kaynağı olan her nokta bizim için bir sensör verisi sanal sensör verisi olarak düşünebilir.
+
+308
+00:48:30,079 --> 00:48:36,940
+Evet başka soru sola.
+
+309
+00:48:36,940 --> 00:48:48,940
+Merak ettiğimiz konular da olabilir başka illa doğrudan anlattığımız nokta değil başka aklınıza takılan teknoloji ile ilgili bir şey olabilir ki
+
+310
+00:48:48,940 --> 00:48:52,940
+sadece akıllı telefonlar üzerinde yok akıllı saatlerde de var diyorsunuz.
+
+311
+00:48:53,940 --> 00:48:58,940
+Ki oradaki sensörleri tabi biz şeylere saymadık dersin başına saymıştık.
+
+312
+00:48:58,940 --> 00:49:09,940
+Kalp ritmini ölçen ekstra bir aparatla şeker ölçümü yapabilmek işte kandaki oksijen seviyesini ölçmek bunu konuşmuştuk.
+
+313
+00:49:09,940 --> 00:49:16,940
+Özellikle kovid için çok değerli işte Apple yeni saatinde bunu ön plana çıkartarak.
+
+314
+00:49:16,940 --> 00:49:22,940
+Oldukça bu pandemi sözünde bir satış avantajı sağladı.
+
+315
+00:49:22,940 --> 00:49:29,940
+Telefon ve saatleri ek kitler bağlayabiliyorsunuz.
+
+316
+00:49:29,940 --> 00:49:43,940
+Böylece örneğin ortamdaki oksijen seviyesi karbon dioksit seviyesi bunları ölçerek aslında IoT devislerle de haberleşip
+
+317
+00:49:43,940 --> 00:49:48,940
+o ortamın sizin açınızdan örnek veriyorum.
+
+318
+00:49:48,940 --> 00:49:56,940
+Karbon dioksit seviyesinin çok yükseldiği ve havasının temizlenmesi gerektiğini alert olarak alabilirsiniz.
+
+319
+00:49:56,940 --> 00:50:03,940
+Bunlar daha da yaygınlaşacak önümüzdeki yıllarda o yüzden telefonların kendi üzerindeki sensörler ayrı.
+
+320
+00:50:03,940 --> 00:50:13,940
+Bir de IoT devisler üzerinden ya da diğer kullandığımız cihazlar üzerinden yapılan ölçümlerin entegre edilmesi ve
+
+321
+00:50:13,940 --> 00:50:20,940
+API'ler üzerinden paylaşılması da önümüzdeki süreçte daha değerli hale gelecek.
+
+322
+00:50:20,940 --> 00:50:23,940
+Şimdi, evet Ekran.
+
+323
+00:50:23,940 --> 00:50:31,670
+Oyunma cihazlardan bahsedince aklıma geldi de kendi yazılımsal sensörümüzü yapmamız mümkün mü?
+
+324
+00:50:31,670 --> 00:50:39,670
+Mesela telefonda var olan hardware sensörleri kullanarak farklı manalar çıkartan bir sensör yazmak istiyorum diyelim.
+
+325
+00:50:39,670 --> 00:50:45,670
+Olmayacak bir şey değil. Yapılabilir ama bunu sistem seviyesinde tanımlamak kolay değil.
+
+326
+00:50:45,670 --> 00:50:51,670
+Bunu da genelde siz bunu bir hizmet olarak verebilirsiniz.
+
+327
+00:50:51,670 --> 00:50:57,670
+Fakat bunun tabi başka ne diyelim sıkıntıları var.
+
+328
+00:50:57,670 --> 00:51:09,670
+Kendi uygulamanız için yapabilirsiniz ama birine servis etmek için bunu yapmanız daha fazla overhead gerektireceği için çok feasible olmayacaktır.
+
+329
+00:51:09,670 --> 00:51:14,670
+O yüzden kendi tarafınızda bir iş için örnek veriyorum.
+
+330
+00:51:14,670 --> 00:51:28,670
+Google'ın hareket API'ni kullanmazsınız da kendi email, child or magnetometer rioskop üzerinden hareket tanıma ya da daha kompleks aktivite tanıma yapabilirsiniz.
+
+331
+00:51:28,670 --> 00:51:35,670
+Bu özellikle benim çalıştığım alan kişi arabayla seyahat mi ediyor o anda?
+
+332
+00:51:36,670 --> 00:51:41,670
+Yoksa dans mı ediyor?
+
+333
+00:51:41,670 --> 00:51:43,670
+Eksersiz mi yapıyor?
+
+334
+00:51:43,670 --> 00:51:46,670
+Cimnastik yaparken mekik mi çekti?
+
+335
+00:51:46,670 --> 00:51:48,670
+Şınav mı çekti?
+
+336
+00:51:48,670 --> 00:51:51,670
+Squat hareketi mi yaptı?
+
+337
+00:51:51,670 --> 00:51:55,670
+Bunların hepsi değerli.
+
+338
+00:51:56,670 --> 00:52:04,670
+Squat hareketi yaparken elip kalkmada telefonun üzerinden anlamak kolay değil ama saat üzerinden anlayabilirsiniz.
+
+339
+00:52:04,670 --> 00:52:08,670
+Ya da hangi sporu yaptınız, ne kadar yaptınız bunları kaydedebilirsiniz.
+
+340
+00:52:08,670 --> 00:52:22,050
+O yüzden burada kendi özel sanat sensörünüzü bu yönde üretme şansınız var kendi uygulamanız için.
+
+341
+00:52:22,050 --> 00:52:26,900
+Evet başka sorus ola.
+
+342
+00:52:26,900 --> 00:52:37,900
+Evet saat 14.52, 15.02'de bir sensör uygulaması Android Stüdyo üzerinden açacağım.
+
+343
+00:52:37,900 --> 00:52:41,900
+Onun üzerinde çalışacağız birazcık kod örneğini inceleyeceğiz.
+
+344
+00:52:41,900 --> 00:52:47,900
+Arkasından da hep birlikte ilk etapta bir kod yazacağız.
+
+345
+00:52:47,900 --> 00:52:49,900
+Sonra da broadcast receiver'lara geçeceğiz.
+
+346
+00:52:49,900 --> 00:52:55,369
+Evet teşekkür ediyorum. 9-10 dakika sonra görüşmek üzere.
+
+347
+00:52:55,369 --> 01:01:56,190
+Arkadaşlar yeniden merhaba.
+
+348
+01:01:56,190 --> 01:01:58,190
+Kaldığımız yerden devam edelim.
+
+349
+01:01:58,190 --> 01:02:05,190
+Şimdi sizinle ben ekranımı paylaşacağım ve bir örnek kod üzerinden ilerleyeceğiz.
+
+350
+01:02:05,190 --> 01:02:12,190
+Hemen arkasından da saat 4'e kadar yapmanızı istediğim küçük bir uygulama olacak.
+
+351
+01:02:12,190 --> 01:02:14,190
+Onu paylaşayım sizlerle. Çok basit.
+
+352
+01:02:14,190 --> 01:02:21,190
+Birincisi telefonunuzdaki sensör listesini çıkartıp hangi sensörler olduğunu ekrana yazdıracaksınız.
+
+353
+01:02:21,190 --> 01:02:34,190
+İkincisi telefonunuzu bir yere koyduğunuzda o noktada telefonunuz ölçüm yapacak.
+
+354
+01:02:34,190 --> 01:02:41,190
+Ve eğimli bir noktaya koyduğunuzda bu noktanın eğimli olduğunu ekrana yazdırıyor olacaksınız.
+
+355
+01:02:41,190 --> 01:02:44,190
+Bu bir toast mesajıyla da olabilir hiç fark etmez.
+
+356
+01:02:44,190 --> 01:02:57,190
+Eğimli değilse düşse yaptığınız ölçümlere bakarak bir eşlik değirmeyip oranın düz bir herhangi bir eğime sahip olmadığını söyleyeceksiniz ekrana yazdıracaksınız.
+
+357
+01:02:57,190 --> 01:03:14,219
+Son olarak da şöyle bir de proximity sensör üzerinden bilgi alacaksınız.
+
+358
+01:03:14,219 --> 01:03:23,219
+Proximity sensör, siz telefonunuzu bir objeye yaklaştırdıkça yüzünüz olabilir, kulağınız olabilir, size bir değer üretecek.
+
+359
+01:03:23,219 --> 01:03:26,219
+Bazılarınızda santimetre cinsinden bir değer üretecek.
+
+360
+01:03:26,219 --> 01:03:30,219
+Bazılarınızda da yakın ya da uzak, near far olmak üzere iki değer üretecek.
+
+361
+01:03:30,219 --> 01:03:35,219
+Bu üç tane adımı gerçekleştirmenizi rica edeceğim sizden.
+
+362
+01:03:35,219 --> 01:03:39,219
+Bunları farklı aktiviteler olarak da dizayn edebilirsiniz.
+
+363
+01:03:39,219 --> 01:03:44,219
+Her birini ya da aynı aktivitede gerçekleştirebilirsiniz.
+
+364
+01:03:44,219 --> 01:03:49,219
+Ama listeyi farklı bir aktivitede almak diğer iki tanesini aynı aktivitede yapmak olabilir.
+
+365
+01:03:49,219 --> 01:03:54,219
+Ya da üç tane farklı aktivitede konumlandırabilirsiniz bu durumu.
+
+366
+01:03:54,219 --> 01:04:07,219
+Dörde kadar da bunu üç tanesini tamamlayıp gösterme noktasında istekli olan bir arkadaşımız olursa ona ekstra bir puan vereceğim.
+
+367
+01:04:07,219 --> 01:04:12,219
+Böylece ortalamasına bir katkı da bulunmuş olacak.
+
+368
+01:04:12,219 --> 01:04:17,219
+O yüzden belki size biraz motivasyon kaynağı olur.
+
+369
+01:04:18,219 --> 01:04:30,260
+Şimdi gelelim sizinle ekran paylaşımını.
+
+370
+01:04:30,260 --> 01:04:36,099
+Evet şimdi açalım.
+
+371
+01:04:36,099 --> 01:04:38,099
+Şu an görebiliyor musunuz?
+
+372
+01:04:38,099 --> 01:04:43,710
+Evet hocam.
+
+373
+01:04:43,710 --> 01:04:44,710
+Teşekkürler.
+
+374
+01:04:44,710 --> 01:04:47,710
+Şimdi burada bir tane sensör aktivite tanımladık.
+
+375
+01:04:47,710 --> 01:04:51,710
+Her zaman ki bir aktiviteli ekstand ettik.
+
+376
+01:04:51,710 --> 01:04:55,710
+Bu sefer sensör event listener'ı inklamanti ediyoruz.
+
+377
+01:04:55,710 --> 01:05:09,710
+Buradaki sensör event listener'ı inklamanti ettiğimiz zaman da doğal olarak onSensorChanged kısmı ve onAccuracyChanged kısmını da tanımlamamız bizden bekleniyor.
+
+378
+01:05:09,710 --> 01:05:11,710
+OnAccuracyChanged burada.
+
+379
+01:05:11,710 --> 01:05:13,710
+İçini doldurmak zorunda değiliz.
+
+380
+01:05:13,710 --> 01:05:15,710
+Ama böyle bir seçeneğimiz var.
+
+381
+01:05:15,710 --> 01:05:19,710
+Şöyle yapalım.
+
+382
+01:05:19,710 --> 01:05:22,710
+Burada sensör manager'ı tanımlıyorsunuz.
+
+383
+01:05:22,710 --> 01:05:24,710
+Bir tane list tanımlıyorsunuz.
+
+384
+01:05:24,710 --> 01:05:26,710
+Sensörlerin ikisini çekecekseniz.
+
+385
+01:05:26,710 --> 01:05:30,710
+Hangi sensörlerle çalışmak istiyorsanız onun isimlerini yazıyorsunuz.
+
+386
+01:05:30,710 --> 01:05:33,710
+Burada farklı bir uygulamadan bahsediyoruz.
+
+387
+01:05:33,710 --> 01:05:36,710
+Ben genel olarak kodu görmeniz açısından paylaştım.
+
+388
+01:05:36,710 --> 01:05:42,710
+Çok detayıyla vakit kaybetmeyeceğim çünkü maalesef iki hafta kaybettik.
+
+389
+01:05:42,710 --> 01:05:46,710
+Burada öncelikle bir tane liste oluşturduk.
+
+390
+01:05:46,710 --> 01:05:51,710
+Daha sonra aslında bizim için kritik olan kısım şuradaki manager kısmı.
+
+391
+01:05:51,710 --> 01:05:53,710
+Sensör servisi çağırdık.
+
+392
+01:05:53,710 --> 01:05:55,710
+Hangi sensörlerle ilgileneceğimizi söyledik.
+
+393
+01:05:55,710 --> 01:05:57,710
+TypeLight ve Accurameter.
+
+394
+01:05:57,710 --> 01:06:01,710
+Sizde bu Accurameter ve Proximity sensör olacak.
+
+395
+01:06:01,710 --> 01:06:05,710
+Burada TypeO ile sensör listi oluyoruz.
+
+396
+01:06:05,710 --> 01:06:07,710
+Gördüğünüz gibi.
+
+397
+01:06:07,710 --> 01:06:09,710
+Hem liste aktarıyoruz.
+
+398
+01:06:09,710 --> 01:06:17,710
+Hem liste bizim açımızdan yukarıda şu noktada tanımlanmıştır.
+
+399
+01:06:17,710 --> 01:06:19,710
+Hızlı olarak.
+
+400
+01:06:19,710 --> 01:06:21,710
+Gelelim.
+
+401
+01:06:21,710 --> 01:06:25,699
+OnResume kısmına.
+
+402
+01:06:25,699 --> 01:06:31,139
+Burada sensörler registre ediliyor.
+
+403
+01:06:31,139 --> 01:06:35,139
+İki tane sensör dinleyeceğimizi söylediğimiz için iki tane registre yapıyoruz.
+
+404
+01:06:35,139 --> 01:06:39,139
+Biri light sensör, diğeri de Accurameter sensörü.
+
+405
+01:06:39,139 --> 01:06:43,139
+Onların ne olduklarını şurada zaten assign etmiştik.
+
+406
+01:06:43,139 --> 01:06:50,139
+Burada sensör delay, sensör fastest gibi seçenekler var.
+
+407
+01:06:50,139 --> 01:06:52,139
+Onlara bir bakalım.
+
+408
+01:06:52,139 --> 01:07:00,500
+Şöyle.
+
+409
+01:07:00,500 --> 01:07:06,500
+Sensör delay fastest, sensör delay game, sensör delay normal, sensör delay UI olmak üzere.
+
+410
+01:07:06,500 --> 01:07:14,500
+Aslında burada sensörünüzün hangi sıklıkla veri toplamasını istediğinizi belirtiyorsunuz.
+
+411
+01:07:14,500 --> 01:07:22,500
+Bu noktada en hızlısı fastest olduğu için bunu tercih ediyoruz.
+
+412
+01:07:22,500 --> 01:07:28,500
+Light sensörün en hızlı size sağlayabileceği aralık neyse bunu tercih etmiş oluyorsunuz.
+
+413
+01:07:28,500 --> 01:07:36,500
+Tabii şimdi onSensörChange kısmında iki tane sensörü aynı anda takip edebilirsiniz demiştik.
+
+414
+01:07:36,500 --> 01:07:42,500
+Gelen sensörün tipini kontrol ediyorsunuz.
+
+415
+01:07:42,500 --> 01:07:46,500
+Tipi lightsa bir tane değer okuyorsunuz.
+
+416
+01:07:46,500 --> 01:07:56,500
+Diyelim ki tipi Accurameter ise burada bir tane değer okunmuş ama sizin örneğinize birden fazla değer okunuyor olacak.
+
+417
+01:07:56,500 --> 01:07:58,500
+Values 1, Values 2 olmak üzere.
+
+418
+01:07:58,500 --> 01:08:02,500
+Burada yapılan şey işte bir tane timer tarımlanmış.
+
+419
+01:08:02,500 --> 01:08:06,500
+Bu timer 5 saniyelik bir süre bekletiliyor.
+
+420
+01:08:06,500 --> 01:08:16,500
+Eğer sensördeki değişim diyelim ki 0.5'in üzerinde ise bunu implement ederken.
+
+421
+01:08:16,500 --> 01:08:22,500
+Burada arka plana değiştirme işlemi yapılıyor.
+
+422
+01:08:22,500 --> 01:08:28,500
+Aldığınız buradaki bakın şurası daha önce söylemiştim.
+
+423
+01:08:28,500 --> 01:08:30,500
+Burada bir tane metod çağırıyorsunuz.
+
+424
+01:08:30,500 --> 01:08:34,500
+Bir background metodu olarak çağrılmıyor.
+
+425
+01:08:34,500 --> 01:08:48,500
+Aslında background task olarak implement etmesi gerekiyor ama bu yaklaşımı kullanarak arka planda uzun sürecek işlerinizi gerçekleştirebilirsiniz onSensörChange'in içerisinde.
+
+426
+01:08:48,500 --> 01:08:52,500
+Şimdi change light mode'da ölçülen lüks değerine bakılıyor.
+
+427
+01:08:52,500 --> 01:09:00,500
+İşte lüks değeri 25'in altındaysa çok karanlık olduğunu düşünüldüğünden arka plan siyah yapılıyor.
+
+428
+01:09:00,500 --> 01:09:04,500
+İşte göz almasın, göz yorulmasın diye.
+
+429
+01:09:04,500 --> 01:09:10,500
+İşte daha düşük, daha yüksek bir aydınlığa sahipse o zaman dark gray yapılıyor.
+
+430
+01:09:10,500 --> 01:09:14,500
+Biraz daha ortam aydınlıksa light gray yapılıyor.
+
+431
+01:09:14,500 --> 01:09:26,500
+Orta ortam 75'ten de yukarıdayız o zaman arka plan beyaz olacak şekilde değiştiriliyor onSensörChange'in içerisinde.
+
+432
+01:09:26,500 --> 01:09:36,229
+Genel olarak sensor activity ile ilgili aslında çok kolay dediğim gibi zor değil.
+
+433
+01:09:36,229 --> 01:09:38,229
+Bahsedeceklerim bu kadar.
+
+434
+01:09:38,229 --> 01:09:48,600
+Sorusu olan var mı kod ile ilgili.
+
+435
+01:09:48,600 --> 01:09:54,600
+OnRestium'da registre ediyorsanız onPause'da unregister etmenizi isteneriz sizden.
+
+436
+01:09:54,600 --> 01:10:02,600
+OnCreate'de registre ediyorsanız onDestroy'da unregister etmeniz istenir.
+
+437
+01:10:02,600 --> 01:10:20,710
+Yani karşılıklı uyumlu iki tane activity lifecycle içerisinde registre ve unregister etmeniz beklenir ki sağlıklı bir senkrom bir çalışma söz konusu olsun.
+
+438
+01:10:20,710 --> 01:10:26,710
+Tabii buradaki bu ekrandaki kodun amacı hareket algılamaktı.
+
+439
+01:10:26,710 --> 01:10:30,710
+Sizin telefonunuz sabit duruyor diyelim.
+
+440
+01:10:30,710 --> 01:10:36,710
+Elinize aldığınız anda hareket ettiğimiz için 23 hareket değer değişecek.
+
+441
+01:10:36,710 --> 01:10:42,710
+Değer değiştiği zaman da aslında siz telefonu kullanıyor pozisyonuna geçmiş olacaksınız.
+
+442
+01:10:42,710 --> 01:10:46,710
+Amacımız telefonu aktif olarak kullanılıp kullanılmadığını anlamak.
+
+443
+01:10:46,710 --> 01:10:50,710
+Bir yere bıraktığınızda mesela değerler arasında çok bir fark yoktur.
+
+444
+01:10:50,710 --> 01:10:54,710
+Bu kod bunu anlamak için yazılmış bir kod.
+
+445
+01:10:54,710 --> 01:10:58,710
+Sizin yapacağınızda biraz daha farklı.
+
+446
+01:10:58,710 --> 01:11:02,710
+Siz bir konuma bir eşyanın üzerine koyacaksınız.
+
+447
+01:11:02,710 --> 01:11:08,710
+O eşyanın gerçekten eğimli mi düz mü olduğunu anlamak istiyorsunuz.
+
+448
+01:11:08,710 --> 01:11:14,710
+Artı Proximity Sensör ile bir uzaklık ölçümü yapacaksınız.
+
+449
+01:11:14,710 --> 01:11:20,710
+Bir de cihazınızdaki sensörleri listeyip ekrana yazdırıyor olacaksınız.
+
+450
+01:11:20,710 --> 01:11:30,890
+Evet şimdi konsantre olabilirsiniz yapacağınız işe.
+
+451
+01:11:30,890 --> 01:27:04,649
+Tabii arada soru sormak isteyen bana sorusunu sorabilir.
+
+452
+01:27:04,649 --> 01:27:08,649
+Arkadaşlar nasıl gidiyor? Takıldığınız bir yer var mı?
+
+453
+01:27:08,649 --> 01:27:10,649
+Sormak istediğiniz bir kısım var mı?
+
+454
+01:27:10,649 --> 01:27:14,649
+Ya da kodda göstermek istediğiniz başka bir kısım var mı?
+
+455
+01:27:14,649 --> 01:27:42,550
+Üç tane görevden herhangi bir tanesini tamamlayan var mı?
+
+456
+01:27:42,550 --> 01:27:46,550
+Hocam üç görevi tekrar söyleyebilir misiniz?
+
+457
+01:27:46,550 --> 01:27:50,550
+Bir tanesini yaparken diğer ikisini unuttum.
+
+458
+01:27:50,550 --> 01:27:52,550
+Kim söylemek ister üç görevi?
+
+459
+01:27:52,550 --> 01:28:01,060
+Üç tane yapılacak işimiz vardı [öğrenci] lütfen.
+
+460
+01:28:01,060 --> 01:28:08,399
+Birincisi sensörleri listelemek, ikincisi yakınlık ölçücesi Proximity Sensör ile.
+
+461
+01:28:08,399 --> 01:28:13,399
+Üçüncüsü de yüzeyin düzgümü, eğimli mi olduğunu ölçücesi.
+
+462
+01:28:13,399 --> 01:28:18,399
+Barış sen lütfen bana mail at sana puan ekleyeceğim teşekkür ediyorum.
+
+463
+01:28:18,399 --> 01:28:28,779
+Rica ederim hocam.
+
+464
+01:28:28,779 --> 01:28:34,779
+Bu görevlerden herhangi birini implement edebilen çalıştırıdan var mı?
+
+465
+01:28:34,779 --> 01:28:37,779
+Evet [öğrenci] hangisini yaptın acaba?
+
+466
+01:28:37,779 --> 01:28:43,779
+Ben listelemeyi tamamladım şu an Proximity Sensörünü de bitirmek üzereyim.
+
+467
+01:28:43,779 --> 01:28:46,779
+Kaç sensör gözüküyor listemde?
+
+468
+01:28:46,779 --> 01:28:50,640
+Bir saniye bakayım hocam.
+
+469
+01:28:50,640 --> 01:29:05,060
+Bir de sayabilir sen sevdin.
+
+470
+01:29:05,060 --> 01:29:08,060
+Emülatördeyim hocam 18 tane sensör gözüküyor şu an.
+
+471
+01:29:08,060 --> 01:29:10,060
+Pixel 4x larçta.
+
+472
+01:29:10,060 --> 01:29:12,060
+Peki şunu soracağım.
+
+473
+01:29:12,060 --> 01:29:13,060
+Sensörler neler?
+
+474
+01:29:13,060 --> 01:29:15,060
+Bunu önce alayım.
+
+475
+01:29:15,060 --> 01:29:23,550
+Tabi Goldfish 3 Axis Axis Runmeter var.
+
+476
+01:29:23,550 --> 01:29:24,550
+Giro Space var.
+
+477
+01:29:24,550 --> 01:29:26,550
+Magnetic Field Sensör var.
+
+478
+01:29:26,550 --> 01:29:28,550
+Orientation Sensör.
+
+479
+01:29:28,550 --> 01:29:31,550
+Ambient Temperature Sensör.
+
+480
+01:29:31,550 --> 01:29:33,550
+Proximity Sensör.
+
+481
+01:29:33,550 --> 01:29:34,550
+Light Sensör.
+
+482
+01:29:34,550 --> 01:29:36,550
+Pressure Sensör.
+
+483
+01:29:36,550 --> 01:29:38,550
+Humidity Sensör.
+
+484
+01:29:38,550 --> 01:29:42,550
+3 Axis Magnetic Field Sensör.
+
+485
+01:29:42,550 --> 01:29:46,550
+3 Axis Giro Scope.
+
+486
+01:29:46,550 --> 01:29:47,550
+Hinge Sensör.
+
+487
+01:29:47,550 --> 01:29:49,550
+Sıfır diye bir şey var.
+
+488
+01:29:49,550 --> 01:29:51,550
+Integrease yazı parantız içindedir.
+
+489
+01:29:51,550 --> 01:29:54,550
+Game Rotation Vector Sensör.
+
+490
+01:29:54,550 --> 01:29:57,550
+Geomag Rotation Vector Sensör.
+
+491
+01:29:57,550 --> 01:29:58,550
+Gravity Sensör.
+
+492
+01:29:58,550 --> 01:30:01,550
+Linear Acceleration Sensör.
+
+493
+01:30:01,550 --> 01:30:04,550
+Rotation Vector Sensör ve Orientation Sensör var.
+
+494
+01:30:04,550 --> 01:30:07,550
+Peki şimdi şunu söylemekte fayda var.
+
+495
+01:30:07,550 --> 01:30:08,550
+Teşekkür ediyorum.
+
+496
+01:30:08,550 --> 01:30:16,550
+Bu emiratör olduğu için genelde emiratörde o telefonlardaki sensörleri yapıyorlar.
+
+497
+01:30:16,550 --> 01:30:23,550
+Ama sonuçta benim burada sizden istediğim mümkünse emiratörde değil gerçek telefon üzerinden denemeniz ve
+
+498
+01:30:23,550 --> 01:30:27,550
+telefonunuz üzerinde hangi sensörlerin olduğunu görüntülemeniz.
+
+499
+01:30:27,550 --> 01:30:33,550
+O yüzden Android telefona sahip olan arkadaşlarımızın uygulamayı emiratör yerine kendi
+
+500
+01:30:33,550 --> 01:30:36,550
+telefonları üzerine çalıştırmalarına rica ediyorum.
+
+501
+01:30:36,550 --> 01:30:39,550
+Teşekkür ediyorum.
+
+502
+01:30:39,550 --> 01:30:45,550
+Rica ederim hocam.
+
+503
+01:30:45,550 --> 01:39:25,750
+Hocam.
+
+504
+01:39:25,750 --> 01:39:29,630
+Dinliyorum.
+
+505
+01:39:29,630 --> 01:39:34,909
+Hocam su saatini bitirdim de sanırım benim masam yamukmuş.
+
+506
+01:39:34,909 --> 01:39:37,909
+Sıfır nokta sıfır bir olarak gösteriyor.
+
+507
+01:39:37,909 --> 01:39:39,909
+Şimdi burada şöyle önemli bir şey var.
+
+508
+01:39:39,909 --> 01:39:43,909
+Normal ölçülen bir referans noktası olmak gerekiyor tabii ki.
+
+509
+01:39:43,909 --> 01:39:45,909
+Şu yüzden önemli.
+
+510
+01:39:45,909 --> 01:39:52,909
+Bu ime öçer ya da benzer sensörler ölçümü yaptıklarında sıfır nokta sıfır sıfır sıfır
+
+511
+01:39:52,909 --> 01:39:55,909
+küsurat değerleri üretirler.
+
+512
+01:39:55,909 --> 01:39:59,909
+O yüzden düz olduğuna güvendiğim bir yüzey var mı?
+
+513
+01:39:59,909 --> 01:40:09,659
+Yani telefonum laptopa bağlı bir şekilde kullandığım için biraz zor olur sanırım.
+
+514
+01:40:09,659 --> 01:40:13,659
+Bir yere yamuk koyduğun zaman değerler değişiyor mu?
+
+515
+01:40:13,659 --> 01:40:14,659
+Evet değişiyor.
+
+516
+01:40:14,659 --> 01:40:18,659
+Ya şu anda sabitken de değişiyor işin görevi ama çok çok hassas.
+
+517
+01:40:18,659 --> 01:40:24,659
+Şöyle değerler değişiyor ki derken mesela 9.81 diğer eksenleri dağılıyor mu?
+
+518
+01:40:24,659 --> 01:40:25,659
+Evet evet.
+
+519
+01:40:25,659 --> 01:40:31,659
+Tamam şimdi burada tabii biz çok basit bir şey yapıyoruz.
+
+520
+01:40:31,659 --> 01:40:34,659
+Maksat bir antrenman ve pratik olsun.
+
+521
+01:40:34,659 --> 01:40:40,659
+Bu noktada düz olduğunu düşündüğün küçük bir yüzey varsa
+
+522
+01:40:40,659 --> 01:40:45,659
+uygulama şu anda nasıl olsa çalıştır dediği zaman kendi telefonuna yükleniyor.
+
+523
+01:40:45,659 --> 01:40:48,659
+Telefonu çıkartıp o yüzeyde bir deneyebilirsin.
+
+524
+01:40:48,659 --> 01:40:50,659
+Ne değer üretiyor?
+
+525
+01:40:50,659 --> 01:40:59,270
+Yani burada sıfır nokta sıfır sıfır bir çünkü aslında masanın yamuk olduğunu görsün.
+
+526
+01:40:59,270 --> 01:41:01,270
+Hocam şöyle bir sıkıntı var.
+
+527
+01:41:01,270 --> 01:41:06,270
+Benim telefonumun kamerası birazcık çıkıntılı sanırım o yamukluya o sebep oluyor.
+
+528
+01:41:06,270 --> 01:41:08,270
+Onu fark ettim şimdi.
+
+529
+01:41:09,270 --> 01:41:11,270
+Koruduğun pozisyona bağlı olarak.
+
+530
+01:41:11,270 --> 01:41:18,489
+Barış bir şey mi söyleyeceksin?
+
+531
+01:41:18,489 --> 01:41:21,489
+Herhalde elin kaldı.
+
+532
+01:41:21,489 --> 01:41:27,489
+Tabii telefonun çıkıntısının nasıl olduğunu bilemiyorum.
+
+533
+01:41:27,489 --> 01:41:29,489
+Bir kılıf var mı?
+
+534
+01:41:29,489 --> 01:41:32,489
+Evet kılıf var.
+
+535
+01:41:32,489 --> 01:41:37,489
+Yani çıkarttığım zaman da tam düz durmuyor yani sanırım telefon hiçbir şekilde.
+
+536
+01:41:37,489 --> 01:41:39,489
+Enteresan.
+
+537
+01:41:39,489 --> 01:41:41,489
+Tamam çok önemli değil.
+
+538
+01:41:41,489 --> 01:41:47,489
+Yani eğimli bir yüzeyde ve arasındaki farkı tespit edip threshold'u biraz daha yüksek tut.
+
+539
+01:41:47,489 --> 01:49:09,100
+O zaman masanı düz diğer yerlere eğimli kabul edecektir.
+
+540
+01:49:09,100 --> 01:49:12,100
+Evet arkadaşlar şimdi saat 4'de 10 var.
+
+541
+01:49:12,100 --> 01:49:15,100
+Sizin için de bir 10 dakika ara verelim.
+
+542
+01:49:15,100 --> 01:49:20,100
+10 dakikadan sonra saat 4'de broadcast receiverlarla devam edeceğiz.
+
+543
+01:49:20,100 --> 01:49:22,100
+4'de görüşmek üzere.
+
+544
+01:49:22,100 --> 02:00:15,430
+Evet arkadaşlar yeniden merhaba.
+
+545
+02:00:15,430 --> 02:00:17,430
+Dersin son bölümüne giriyoruz.
+
+546
+02:00:17,430 --> 02:00:20,430
+Bu bölümde broadcast receiverları birlikte değerlendireceğiz.
+
+547
+02:00:20,430 --> 02:00:24,430
+Şimdi slide'i paylaşıyorum sizlerle.
+
+548
+02:00:24,430 --> 02:00:35,039
+Broadcast aslında receiverlar bu yapı.
+
+549
+02:00:35,039 --> 02:00:47,039
+Android işletim sisteminde uygulamaların birbirleriyle publish, subscribe mantığı çerçevesinde haberleşmesini sağlayan bir yapı.
+
+550
+02:00:47,039 --> 02:00:52,039
+Siz uygulama olarak takip etmek istediğiniz eventi belirtiyorsunuz.
+
+551
+02:00:52,039 --> 02:00:56,039
+Bu event sisteme ait bir event olabilir.
+
+552
+02:00:56,039 --> 02:00:59,039
+Başka bir uygulamaya ait event olabilir.
+
+553
+02:00:59,039 --> 02:01:08,039
+Sistem de size ilgili event gerçekleştiğinde bu eventle ilgili bilgiyi aktarıyor.
+
+554
+02:01:08,039 --> 02:01:14,039
+Siz de o evente özel almanız gereken aksiyonu alabiliyorsunuz.
+
+555
+02:01:14,039 --> 02:01:21,039
+Zaten dönem projenizde de buna benzer bir bonus bölümü bulunuyor.
+
+556
+02:01:21,039 --> 02:01:32,039
+İşte telefonunuzu şarja taktığınız zaman telefonunuzdaki lokal bilgilerin firebase yazılmasını istemiştim.
+
+557
+02:01:32,039 --> 02:01:37,039
+Buraya bir de progress bar koymanız güzel olacaktır.
+
+558
+02:01:37,039 --> 02:01:42,039
+Bilgilerin ne kadar yazıldı bunu göstermek açısından.
+
+559
+02:01:42,039 --> 02:01:47,039
+Bu bir background işidir aslında broadcast receiverların takip edilmesi.
+
+560
+02:01:47,039 --> 02:02:03,039
+Burada Android işletim sistemi background da gerçekleşen eventleri tespit edip bunlarla ilgili mesaj yollarlar.
+
+561
+02:02:03,039 --> 02:02:10,039
+Ve bu mesajlara registre olmuş olan diğer uygulamalar da bunu takip edebilirler.
+
+562
+02:02:10,039 --> 02:02:17,039
+Aslında temelde üç farklı yapıdan bahsediyoruz.
+
+563
+02:02:17,039 --> 02:02:24,039
+Bir tanesi diğer uygulamalardan gelen bir tanesi sistemin kendisindeki değişiklikler.
+
+564
+02:02:24,039 --> 02:02:29,039
+Bir de aslında uygulama içerisindeki broadcast mesajlar.
+
+565
+02:02:29,039 --> 02:02:33,039
+Üç tip broadcast mesajlar aslında broadcast receiverlar için.
+
+566
+02:02:33,039 --> 02:02:39,039
+Biri diğer uygulamalardan gerçekleşen değişiklikleri yansıtan.
+
+567
+02:02:39,039 --> 02:02:42,039
+Diğeri sistemdeki değişiklikleri yansıtan.
+
+568
+02:02:42,039 --> 02:02:46,039
+Bir diğeri de uygulamanın kendi içerisindeki değişiklikleri yansıtan.
+
+569
+02:02:46,039 --> 02:02:53,039
+Tabii burada iki temel başlık görüyorsunuz system broadcast ve custom broadcast olmak üzere.
+
+570
+02:02:53,039 --> 02:02:57,039
+Burada bir sistem tarafından üretilecek mesajlar var.
+
+571
+02:02:57,039 --> 02:03:03,039
+Bir de kullanıcı tarafından ya da uygulama tarafından üretilecek mesajlar var.
+
+572
+02:03:03,039 --> 02:03:06,039
+Bu ne demek? Bunlar kendi içerisinde ikiye ayrılıyor.
+
+573
+02:03:06,039 --> 02:03:08,039
+Bir başka uygulamalar bunu üretebilir.
+
+574
+02:03:08,039 --> 02:03:13,039
+İki kendi uygulamanız kendi içerisinde diğer aktiviteleri bilgilendirmek için üretebilir.
+
+575
+02:03:13,039 --> 02:03:21,039
+Sonuçta üç tane olarak alt başlığa ayırdığımız broadcastlar aslında temelde iki başlık altında inceliyorlar.
+
+576
+02:03:21,039 --> 02:03:24,039
+Bir tanesi sistem broadcastları, diğeri custom broadcastlar.
+
+577
+02:03:24,039 --> 02:03:29,039
+Custom broadcastlar da bir diğer uygulamalardan gelen broadcastları.
+
+578
+02:03:29,039 --> 02:03:33,039
+İki uygulamanın kendi içerisindeki broadcastları içeriyor.
+
+579
+02:03:33,039 --> 02:03:43,039
+Şimdi sistem broadcastlara bakacak olursanız aslında arattığınızda internette,
+
+580
+02:03:43,039 --> 02:03:46,039
+özellikle DiverOp'u Android combo'da göreceksiniz.
+
+581
+02:03:46,039 --> 02:03:52,039
+Burada Android 11 ile yeniden düzenlenen bir broadcast listesi var.
+
+582
+02:03:52,039 --> 02:04:00,039
+Bu broadcast listesi size neleri takip edebileceğinizi söylüyor.
+
+583
+02:04:00,039 --> 02:04:09,039
+Bazı eskiden takip edebildiğiniz özellikler bilgi olarak eski data'ya sahip olmayabiliyorlar.
+
+584
+02:04:09,039 --> 02:04:16,039
+Mesela netvorkunuz değiştiğinde bir event titiklensin istiyorsanız ve bunu takip etmek istiyorsanız,
+
+585
+02:04:16,039 --> 02:04:28,039
+eskiden bağlandığınız WiFi'in SSID'si vesairesi, bu tür kişiye bağlanılan WiFi'ye ait özel bilgiler de paylaşılıyordu.
+
+586
+02:04:28,039 --> 02:04:33,039
+Ama artık bunlar güvenlik gereği paylaşılmıyor.
+
+587
+02:04:33,039 --> 02:04:42,039
+Sonuçta sistemde 200 civarında, 200'ün üzerinde bir sistem tarafına üretilen broadcast mesaj var.
+
+588
+02:04:42,039 --> 02:04:51,039
+Bunların başında en çok dikkatimizi çeken, bateri değişimi, baterinin düşük seviyeye gelmesi,
+
+589
+02:04:51,039 --> 02:04:59,039
+cihazınızın yeniden başlatılması, cihazınızın bir güç kaynağına bağlanması,
+
+590
+02:04:59,039 --> 02:05:08,039
+uçak moduna geçmesi, telefonunuzun ekranının açılması, kapanması, bir SMS'in ulaşması gibi
+
+591
+02:05:08,039 --> 02:05:15,039
+aslında çok temelde telefonunuzdaki aksiyonları takip edebiliyorsunuz.
+
+592
+02:05:15,039 --> 02:05:22,039
+Şimdi broadcast'leri takip etmenin aslında iki tane yolu var.
+
+593
+02:05:22,039 --> 02:05:38,039
+Bunlardan bir tanesi manifest declared register'lar yani aslında Android manifest'in içerisine receiver tag'iyle eklemiş olduğunuz broadcast receiver'larınız.
+
+594
+02:05:38,039 --> 02:05:44,039
+Bu noktada neyi takip etmek istediğinizi intent filter'larla belirtiyorsunuz.
+
+595
+02:05:44,039 --> 02:05:54,039
+Burada gördüğünüz gibi, boot completed yani cihazınız yeniden başlama işlemini tamamladığında
+
+596
+02:05:54,039 --> 02:05:59,039
+haberdar olmak istediğinizi ilgili uygulamanın içerisindeki manifest'e yazıyorsunuz.
+
+597
+02:05:59,039 --> 02:06:08,039
+Birden fazla aksiyonunu da takip edebilirsiniz ve bu birden fazla aksiyondan biri gerçekleştiğinde de
+
+598
+02:06:08,039 --> 02:06:11,039
+my broadcast receiver'ınız tetiklenebilir.
+
+599
+02:06:11,039 --> 02:06:17,039
+My broadcast receiver, broadcast receiver'den ekstannediliyor bir on-receive metodu var.
+
+600
+02:06:17,039 --> 02:06:22,039
+Buraya kontekst bilgisini ve intent'i alıyor.
+
+601
+02:06:22,039 --> 02:06:29,039
+Bu noktada intent ile birlikte size gelen bir bilgi varsa onu işliyorsunuz.
+
+602
+02:06:29,039 --> 02:06:39,039
+Ya da yoksa cihaz açıldığında yapılması gereken iş ne ise on-receive metodu içerisinde bunu implemente ediyorsunuz.
+
+603
+02:06:39,039 --> 02:06:49,039
+Tabii yine aynı sensörde olduğu gibi dikkat edilmesi gereken nokta on-receive'in içerisine çok uzun sürecek aksiyonlar yazılmaması gerekliliği.
+
+604
+02:06:49,039 --> 02:06:53,039
+O yüzden de bu noktada Android uyarıyor.
+
+605
+02:06:53,039 --> 02:07:02,039
+Böyle bir broadcast receiver çalıştığında hemen yapması gerekeni yapıp sistem kaynaklarını boşaltmak üzerine kurulu bir yapı vardır.
+
+606
+02:07:02,039 --> 02:07:14,039
+Ve bu yüzden bazen uzun bir iş esayn ederseniz işin ortasında bu tamamlanmadan sonuçlanabilir şeklinde bir uyarıda da bulunuyor.
+
+607
+02:07:14,039 --> 02:07:22,039
+On-receive'in içerisine yazacağınız her şey sizin yapmak istediğiniz işe bağlı.
+
+608
+02:07:22,039 --> 02:07:40,039
+Öte yandan broadcast receivers'ın takip etmesi istenilen sistem aktivitelerini sadece manifest'e yazarak deklare etmiyorsunuz.
+
+609
+02:07:40,039 --> 02:07:45,039
+İkinci bir yöntem de context registered receivers kullanmak.
+
+610
+02:07:45,039 --> 02:07:56,039
+Bu ne demek? Siz manifest'de uygulama daha çalışmadan tanımlamış olduğunuz bir receiver varken,
+
+611
+02:07:56,039 --> 02:08:09,039
+context registered receivers'larda ise ilgili uygulama çalışırken herhangi bir uygulamanın istenilen bir kontekstinde bunu tanımlama şansına sahipsiniz ki
+
+612
+02:08:09,039 --> 02:08:15,039
+bunu da bu örnekte gördüğünüz gibi öncelikle bir broadcast receiver tanımlıyorsunuz.
+
+613
+02:08:15,039 --> 02:08:23,039
+Sonra daha önce manifest'e intent filter tagiyle tanımlamış olduğunuz bir intent filter objesi tanımlıyorsunuz.
+
+614
+02:08:23,039 --> 02:08:28,039
+Bunu ilgili konteksta ilişkilendirebilmek için.
+
+615
+02:08:28,039 --> 02:08:34,039
+Sonra hangi aksiyona takip etmek istediğinizi belirtiyorsunuz.
+
+616
+02:08:34,039 --> 02:08:44,039
+Ve en sonunda da ilgili broadcast receiver'ı registre etmeniz gerekiyor uygulama ya da aktivite çalışırken.
+
+617
+02:08:44,039 --> 02:08:52,039
+Tabii daha sonra bunu unregister receiver'la da takip etmeyeceğiniz bir noktada ortadan kaldırmanız sizden bekleniyor.
+
+618
+02:08:52,039 --> 02:08:55,039
+Şimdi aralarındaki fark nedir?
+
+619
+02:08:55,039 --> 02:09:06,039
+Manifeste deklare ettiğiniz takip, uygulama harika planda çalışmıyorken de takip edilmesini sağlıyor.
+
+620
+02:09:06,039 --> 02:09:19,039
+Ve herhangi bir aksiyon olduğunu uygulamanız aslında ayağa kalkıp o yapılması gereken işi gerçekleştirme işlemini tamamlıyor.
+
+621
+02:09:19,039 --> 02:09:23,039
+Ve bu aktiviteden ve kontekstten bağımsız gerçekleşiyor.
+
+622
+02:09:23,039 --> 02:09:37,039
+Öte yandan context registered receiver ise uygulamanız ya da ilgili aktivite çalışırken bunu takip ettiğinizi belirttiğiniz için
+
+623
+02:09:37,039 --> 02:09:43,039
+uygulamanın geneli bir kontekst olabilir ya da o anda bulunduğunuz aktivite bir kontekst olabilir.
+
+624
+02:09:43,039 --> 02:09:52,039
+Hangisine tercih ettiyseniz o kontekst içerisinde bir değişiklik yakalanırsa ilgili iş gerçekleştiriliyor.
+
+625
+02:09:52,039 --> 02:10:00,039
+İkisi birbirinden biraz daha farklı, context registered receiver'lar biraz daha kontrollü bir takip sağlarken
+
+626
+02:10:00,039 --> 02:10:10,039
+diğer bahsetmiş olduğumuz manifest tarafındaki manifest declared register'lar
+
+627
+02:10:10,039 --> 02:10:24,039
+Sizin uyurken de uygulamanız kapalı iken de yapılması gereken bir iş varsa gerçekleşen bir aksiyon noktasında onu yakalamanızı sağlıyor.
+
+628
+02:10:24,039 --> 02:10:33,039
+Bu noktada sensörlerde de bahsettiğim eğer bir register ve unregister işi yapılacaksa
+
+629
+02:10:33,039 --> 02:10:47,960
+on create, on destroy, on resume, on pause şeklinde ikili ilişki kurularak hangisinde yapılıyorsa diğerinde de unregister ediliyor olması gerekiyor.
+
+630
+02:10:47,960 --> 02:10:59,960
+Şimdi tabi bu noktada pending aslında intentlerden de bahsetmek gerekiyor.
+
+631
+02:10:59,960 --> 02:11:05,960
+Bu noktada daha önceden bilgisi olan var mı?
+
+632
+02:11:05,960 --> 02:11:22,060
+Pending intent nedir? Pending task nedir? Yorumda bulunmak isteyen var mı [öğrenci]?
+
+633
+02:11:22,060 --> 02:11:29,060
+Gerçekleştirilmesi için bir istek başlatılmış ama henüz tamamlanmamış olan tasklar veya intentler.
+
+634
+02:11:29,060 --> 02:11:34,039
+Evet doğru, ne zaman kullanılırız peki?
+
+635
+02:11:34,039 --> 02:11:37,039
+Şu an bir senaryo gelmedi hocam.
+
+636
+02:11:37,039 --> 02:11:43,039
+Şimdi aslında broadcast receiver'lar bunun için çok uygun anlatmak açısından.
+
+637
+02:11:43,039 --> 02:11:50,039
+Siz broadcast receiver'larda ileri dönük bir aksiyon tanımlıyorsunuz.
+
+638
+02:11:50,039 --> 02:11:55,039
+Yani sistemde bir şey gerçekleştiğinde işin yapılmasını istiyorsunuz.
+
+639
+02:11:55,039 --> 02:12:07,039
+O zaman burada gördüğünüz gibi uzun vadeli bir tanımlama yapılacaksa, iş daha sonra yapılacaksa ilgili intent yaratılarak,
+
+640
+02:12:08,039 --> 02:12:22,039
+sizin işinizin o beklediğiniz aksiyon gerçekleştiğinde özellikle de uzun sürecek bir iste async task olarak tanımlanması yönünde bir kod parçası görüyorsunuz.
+
+641
+02:12:22,039 --> 02:12:26,039
+Bu noktada onreceive'de bir pending result var.
+
+642
+02:12:26,039 --> 02:12:28,039
+Go async çağırılıyor.
+
+643
+02:12:28,039 --> 02:12:37,039
+Bu go async ile birlikte bir task yaratılıyor ve bu task'a da daha sonra gerçekleştirilmesi gereken görev assign ediliyor.
+
+644
+02:12:37,039 --> 02:12:44,039
+Böylece ileride bu işlem gerçekleştiği zaman bunu takip etme şansına sahip oluyorsunuz.
+
+645
+02:12:44,039 --> 02:12:49,039
+Temelde 3 tane aslında broadcast gönderme yaklaşımı var.
+
+646
+02:12:49,039 --> 02:12:56,039
+Bir tanesi send order broadcast, bir tanesi bildiğiniz normal yollardan gönderilen broadcast.
+
+647
+02:12:56,039 --> 02:13:01,039
+Diğeri de lokal broadcast manager aracılığıyla gönderilen broadcast.
+
+648
+02:13:01,039 --> 02:13:09,039
+Biz şu ana kadar send broadcast yani ikinci sıradaki olanı normal yollardan gönderilen broadcast'i gördük.
+
+649
+02:13:09,039 --> 02:13:12,039
+Konuştuk daha doğrusu.
+
+650
+02:13:12,039 --> 02:13:23,039
+Şimdi sistem bizim adımıza bir mesaj üretiyor dedik ama yeri geldiğinde sizin uygulamanızın da
+
+651
+02:13:23,039 --> 02:13:27,039
+diğer uygulamaları bilgilendirmesi gereken durumlar olabilir.
+
+652
+02:13:27,039 --> 02:13:31,039
+Örneğin bir download yaptınız ve download completed oldu.
+
+653
+02:13:31,039 --> 02:13:40,039
+Bunu diğer uygulamayla ya da sizin uygulamanızı takip eden başka bir uygulamayla paylaşmak istiyorsunuz.
+
+654
+02:13:40,039 --> 02:13:50,039
+O zaman normal send broadcast üzerinden gerçekleşen event tipini send broadcast üzerinden gönderiyorsunuz.
+
+655
+02:13:50,039 --> 02:14:09,039
+Fakat sizi takip eden receiverlar gelecek olan mesajı kademeli olarak diğer receiverdan geçtikten sonra takip etsin istiyorsanız
+
+656
+02:14:09,039 --> 02:14:27,039
+yani bir mesaj eylemeniz, başka bir receiver aldı, o mesajı işledi ve diğer receivera göndermesi gerekiyorsa o zaman send ordered broadcast ile mesaj göndermeniz gerekiyor.
+
+657
+02:14:27,039 --> 02:14:35,039
+Bu sayede mesajlarınız receiverlara sırayla ulaşıyor, aynı anda ulaşmıyor.
+
+658
+02:14:35,039 --> 02:14:48,039
+Çünkü sizi takip eden receiverlar aynı anda mesajlarınızı almak da isteyebilirler ama siz takip eden receiverlarınızın kademeli olarak mesaja ulaşmasını ve
+
+659
+02:14:48,039 --> 02:14:56,039
+ilk ulaşan receiverın mesaj üzerinde bir değiştik yapmasını istiyor olabilirsiniz.
+
+660
+02:14:56,039 --> 02:15:00,039
+Bu durumda send ordered broadcast mesajı gönderiyorsunuz.
+
+661
+02:15:00,039 --> 02:15:06,039
+Bir diğer önemli nokta ise biz send broadcast mesajları sistem seviyesinde gönderiyoruz.
+
+662
+02:15:06,039 --> 02:15:13,039
+Halbuki bu bize belirli bir yük getiriyor çünkü sistem seviyesine kadar çıkıyorsunuz.
+
+663
+02:15:13,039 --> 02:15:29,039
+Eğer aynı uygulama içerisinde hem sender hem de receiver varsa yani bir aktiviteniz, mesajı üreten diğer aktiviteniz de bu gerçekleşen aksiyonu takip etmek isteyen bir aktivite ise
+
+664
+02:15:29,039 --> 02:15:40,039
+o zaman hiç sistem seviyesinde göndermiyorsunuz bunu, lokal broadcast manager'ı yaratıyorsunuz ve onun send broadcast özelliğini kullanarak
+
+665
+02:15:40,039 --> 02:15:50,039
+mesajın uygulama içerisinde kalmasını ve sistem seviyesine çıkmadan kaynakları gereksiz israf etmeden ve daha hızlı bir şekilde çünkü
+
+666
+02:15:50,039 --> 02:16:03,039
+sistem seviyesine çıktığında başka mesajlarla da aynı kuyrukta ya da aynı havuzda bulunacağı için yavaşlık söz konusu olabilir.
+
+667
+02:16:03,039 --> 02:16:07,039
+Kaynak anlamında da daha fazla kaynak tüketimi söz konusu olabilir.
+
+668
+02:16:07,039 --> 02:16:14,039
+Bu yüzden daha lokal bir iletim yapacağınızı söylemiş oluyorsunuz.
+
+669
+02:16:15,039 --> 02:16:26,039
+Şimdi bir diğer önemli nokta da sizin receiverlar üzerinden servis başlatabilme şansınız.
+
+670
+02:16:26,039 --> 02:16:34,040
+Örneğin bir bilgi geldi size, şarj edildiğine dair telefonunuzun.
+
+671
+02:16:34,040 --> 02:16:46,040
+O zaman upload ya da download işlemini gerçekleştirecek bir servisi ya da örneğin telefonunuz belli bir dulluğa ulaştı şarj olarak
+
+672
+02:16:46,040 --> 02:16:52,040
+ve arka planda da sürekli çalışan sizin aktiviteleriniz takip eden bir servis var.
+
+673
+02:16:52,040 --> 02:17:00,040
+O zaman onu devreye alabilirsiniz bu değişiklikleri gözeterek. Bu nokta önemli.
+
+674
+02:17:00,040 --> 02:17:14,040
+Örneğin sol taraftaki kod parçasını incelediğiniz zaman burada receive boot completed ile ilgili takibi yapmanız için bir izin önce isteniyor.
+
+675
+02:17:14,040 --> 02:17:27,040
+Daha sonra bir tane receiver tanımlanıyor ve manifestin içerisindeki bu receiver hangi bir şekilde cihaz reboot edip yeniden başlatıldığında
+
+676
+02:17:27,040 --> 02:17:33,040
+başlatılma işlemi tamamlandığında arka plandaki sürekli çalışacak servisin başlatılmasını sağlıyor.
+
+677
+02:17:33,040 --> 02:17:41,040
+Yani siz telefonunuz ilk açıldığı anda nasıl bilgisayarda belli servisler devreye alınır.
+
+678
+02:17:41,040 --> 02:17:54,040
+Burada da telefonunuz açıldığı anda devreye alınmasını istediğiniz bir servis varsa bunu takip edip uygulamanız içerisinde konfigüre edebiliyorsunuz.
+
+679
+02:17:54,040 --> 02:18:06,639
+Mesela bir telefon geldiğinde telefonun geldiğini anlamak istiyorsunuz diyelim.
+
+680
+02:18:06,639 --> 02:18:21,639
+Burada genelde intern sınıf içerisindeki aksiyonların sabitleri üzerine yerleniyor. Bazen de telefonu menajer üzerinden de edilebiliyor.
+
+681
+02:18:21,639 --> 02:18:33,639
+Bunu ne için kullanıyoruz? Bir telefon geldiğinde örnek veriyorum. Arkada sizin telefon görüşmenizi kaydetmek istediğiniz bir yapı söz konusu olabilir.
+
+682
+02:18:33,639 --> 02:18:44,639
+Burada bunu kullanabilirsiniz. Mesela bir SMS telefonunuza ulaştığında SMS'in içeriğini okuyup bilinmeyen bir numara sizi aradı şu numara şu saatler aradı dediğinde
+
+683
+02:18:44,639 --> 02:18:56,639
+o numaranın kime ait olduğunu bilmediğiniz için o mesajın içeriğini okuyup o numarayı rehberinizden sorgulayıp mesajın içeriğini değiştirebilirsiniz.
+
+684
+02:18:56,639 --> 02:19:06,639
+Bu şekilde SMS Received olduğu anda takip etmek istediğinizi söyleyerek çok basit bir uygulamayla mesajları okuyup
+
+685
+02:19:06,639 --> 02:19:17,639
+bu mesajların içerisinde sizi aramış bir numaranın kime ait olduğu bilgisini kullanıcının rehberine bakmadan oluşturmasını sağlayabilirsiniz.
+
+686
+02:19:17,639 --> 02:19:29,969
+Bir broadcast nasıl send edilir? Aslında çok da zor değil. Bir intent oluşturuyorsunuz.
+
+687
+02:19:29,969 --> 02:19:42,969
+Intentle neyi pas edeceğinizi, hangi aksiyonu göndermek istediğinizi söylüyorsunuz ve bu sefer send broadcast metodunu çağırıp intentinizi iletebiliyorsunuz.
+
+688
+02:19:42,969 --> 02:19:51,969
+Hatırlarsanız daha önce ne kullanıyorduk? StartActivity kullanıyorduk. StartActivityForResult kullanıyorduk.
+
+689
+02:19:51,969 --> 02:20:07,969
+Şimdi de intenti send broadcast üzerinden sizin uygulamanızın paylaşması gereken bir bilgi varsa o bilgiyi gönderip takip eden kişilerin de bu bilgiye ulaşmasını sağlayabiliyorsunuz.
+
+690
+02:20:07,969 --> 02:20:33,260
+Şimdi buraya bir bakalım. Burada sending with permissions ve receiving with permissions kısmı var. Bu size ne söyler bu kısım?
+
+691
+02:20:35,340 --> 02:21:05,219
+Şöyle bir kontra da bakın. Evet arkadaşlar bir yorum yapmanızı bekliyorum.
+
+692
+02:21:05,219 --> 02:21:16,219
+Soru sordukça sınıfın sayısı azalıyor. Herhalde pandemi döneminde hiç unutmayacağım bir bilgi olacak bu. Bir soru soruyorum.
+
+693
+02:21:16,219 --> 02:21:28,219
+Üç kişi gidiyor. Bir soru daha soruyorum. Üç kişi daha geliyor. Gerçekten en zorlu dersleri herhalde bu dönemde yaptık.
+
+694
+02:21:29,219 --> 02:21:43,219
+Belki de biz sizi ekran başında tutmayı beceremedik. Bizim de başka şeyler denememiz gerekiyor. Oldukça zor bir durum, boş bir ekrana ders anlatıyor olmak.
+
+695
+02:21:43,219 --> 02:21:53,549
+Evet Ekran sen de olmasan görüntümüz sesimiz olmayacak. Bir de barış var.
+
+696
+02:21:53,549 --> 02:22:01,549
+Böyle gidiyoruz. Geçen haftalarda daha çok arkadaş katılıyordu. Onlar da biraz kendilerini geriye çekmiş durumdalar. Evet Ekran.
+
+697
+02:22:01,549 --> 02:22:07,989
+Hocam kesin bir fikrim yok. Sadece yorum yapmak istedim. Tabii lütfen.
+
+698
+02:22:07,989 --> 02:22:17,989
+Burada internet filtrinde airplay modu eklenmiş. Airplay modu açıkken bu broadcast'ın boşu boşuna çalışmaması için eklenmiş olabilir diye düşündüm.
+
+699
+02:22:17,989 --> 02:22:29,989
+Çünkü airplay modu açıkken hiçbir şekilde SMS alamayız zaten. SMS'lere ukebilmek için de bu receiver'a özel permission tanımlanıyor sanırım. Bunları bilmiyorum.
+
+700
+02:22:29,989 --> 02:22:37,989
+Aslında şöyle Ekran şunu söyleyelim. İlk söylediğin çok doğru değil. Airplay modu ile ilgili olarak.
+
+701
+02:22:37,989 --> 02:22:51,989
+Buradaki olay seni söylediğim gibi, kim söylediğim gibi SMS'leri gönderebilmek için bir izne ihtiyacımız var. Bir telefondan bir SMS göndereceksek.
+
+702
+02:22:51,989 --> 02:23:03,989
+Ya da bir kişisel bilgiye erişeceksek bu izne ihtiyacımız var. Bu izin üzerinden kurguyu oluşturmak aslında biraz daha güvenlik seviyesini arttırıyor.
+
+703
+02:23:03,989 --> 02:23:20,989
+Gönderen izin ile broadcast'ını gönderir, alan da izin ile alırsa o zaman izin tanımı manifesti yapıldıysa bu send ve receive işlemi sağlıklı bir şekilde yürür.
+
+704
+02:23:20,989 --> 02:23:29,989
+İzin işlemi yoksa bu gerçekleşmeyecektir. Bu şekilde son dönemde permission özelliğinin eklenmesinin sebebi.
+
+705
+02:23:29,989 --> 02:23:41,989
+Öbür türlü cihazın birçok aksiyonuna ve eriştiği bilgiye doğrudan başka uygulamaların talep etmesi durumunda erişmesi anlamına geliyor.
+
+706
+02:23:41,989 --> 02:23:55,989
+Bunun önüne geçmenin yollarından bir tanesi de bu izin talebinde bulunmak. Bu izin talebinde bulunurken de receiver'ın içerisinde Android permission'i yazmış oluyorsunuz.
+
+707
+02:23:55,989 --> 02:24:09,989
+Artı uses permission özelliğini de manifestin içerisine mutlaka eklemiş olmanız gerekiyor ki bu ilgili takibi yapabileseniz ve SMS gönderme işini gerçekleştirebilirsiniz.
+
+708
+02:24:09,989 --> 02:24:19,989
+Ama burada Airplane mode changing anlaşılması için herhangi bir ekstra bir izine gerek yok.
+
+709
+02:24:19,989 --> 02:24:24,989
+Önemli olan burada send SMS kısmı o noktaya dikkat çekmek istiyorum.
+
+710
+02:24:24,989 --> 02:24:25,989
+Evet [öğrenci].
+
+711
+02:24:25,989 --> 02:24:38,780
+Hocam birden fazla izin kullanacak olursa nasıl bir şey yapmamız gerekir burada? Bir de burada internet filtrinin kullanım şeklini tam anlayamadım da ben.
+
+712
+02:24:38,780 --> 02:24:44,780
+Burada internet filtrinin kullanım şekli alttaki mi? Yoksa üstteki mi?
+
+713
+02:24:44,780 --> 02:24:46,780
+Evet üstteki.
+
+714
+02:24:46,780 --> 02:24:53,780
+Üstteki yani receiver yazan yer aslında manifest declared kısmı.
+
+715
+02:24:53,780 --> 02:25:01,780
+Burada siz diyorsunuz ki ben Airplane mode değiştiğinde haberdar olmak istiyorum.
+
+716
+02:25:02,780 --> 02:25:09,780
+Bu aksiyonu takip ediyorum ve bu aksiyonu takip eden receiver'ın ismi de my broadcast receiver.
+
+717
+02:25:09,780 --> 02:25:20,780
+Sistemde böyle bir değişik olduğunda beni bilgilendir ama aynı zamanda ben bu noktada send SMS permission'a da ihtiyaç duyuyorum kısmı var.
+
+718
+02:25:20,780 --> 02:25:27,860
+Tamam şimdi anladım onu. Peki birden fazla permission ihtiyacı olursa?
+
+719
+02:25:27,860 --> 02:25:32,860
+O zaman burada nasıl action'ları alt alta internet filtrinin içine yazıyoruz.
+
+720
+02:25:32,860 --> 02:25:36,860
+Permission'ları da receiver'ın içerisinde alt alta yazmamız gerekiyor.
+
+721
+02:25:36,860 --> 02:25:40,340
+Anladım hocam.
+
+722
+02:25:43,340 --> 02:25:47,340
+Evet bu permission kısmı da bahsettik.
+
+723
+02:25:47,340 --> 02:25:52,340
+Şimdi burada çok basit bir exercise var.
+
+724
+02:25:52,340 --> 02:25:57,340
+Start counter diyorsunuz ve buraya bir sayı yazıyorsunuz.
+
+725
+02:25:59,340 --> 02:26:11,340
+Ve burada bir tane aslında pending intent yaratıyorsunuz ve burada olması gereken aslında kodları şimdi birlikte konuşuyor olacağız.
+
+726
+02:26:11,340 --> 02:26:14,340
+Sticky broadcast'e geçmeden önce.
+
+727
+02:26:14,340 --> 02:26:25,340
+Şimdi burada start counter'a bastığımız zaman edit text'in içerisinde yazmış olduğunuz değer geri saymaya başlayacak.
+
+728
+02:26:25,340 --> 02:26:42,340
+Doğal olarak siz bunu tetiklediğiniz anda sizin 10 saniye sonra ya da kaç yazıysanız o kadar saniye sonra bir iş yapmanız sizden bekleniyor.
+
+729
+02:26:42,340 --> 02:26:49,340
+Bu kod parçasında da bir tane start alert isimli bir metodumuz var.
+
+730
+02:26:49,340 --> 02:26:58,340
+Bu start alert isimli metodumuzun içerisinde bilgiyi öncelikle okuyoruz edit text içerisinde.
+
+731
+02:26:58,340 --> 02:27:02,340
+Ondan sonra bir tane pending intent yaratıyoruz.
+
+732
+02:27:02,340 --> 02:27:08,340
+My broadcast receiver'a göndereceğimiz bir tane de alarm manager'ı yaratıyoruz.
+
+733
+02:27:08,340 --> 02:27:23,340
+Ve bu alarm manager da oraya yazılan sayı çarpı bir saniye sonra yani olsa 10 saniye sonra devreye girecek ve çalışacak.
+
+734
+02:27:23,340 --> 02:27:33,340
+Peki ne yapacak devreye girdiği zaman 10 saniye sonra sadece ekrana bir tane don't panic but your time is up mesajını yazacak.
+
+735
+02:27:33,340 --> 02:27:35,340
+Bu kadar basit bir şey.
+
+736
+02:27:35,340 --> 02:27:43,340
+Ve aynı zamanda bir de telefonu titreşimde olmasını sağlayıp 2 saniye telefonu titreştirecek.
+
+737
+02:27:43,340 --> 02:27:49,340
+Ne zaman olacak bu 10 saniye sonra ya da 2 saniye sonra?
+
+738
+02:27:49,340 --> 02:27:55,340
+Diyorsunuz ki benim my broadcast receiver'ım bunu takip etsin.
+
+739
+02:27:55,340 --> 02:28:06,340
+Ve yakaladığı anda buradaki süre dolduğu anda önce mesaj yazırsın sonra da 2 saniye titreşim ile kullanıcıyı bilgilendirsin.
+
+740
+02:28:06,340 --> 02:28:17,340
+Bunun için de öncelikle bir tane intent tanımlıyorsunuz ve bu intentin hangi broadcast receiver'a gönderileceğini belirtiyorsunuz.
+
+741
+02:28:17,340 --> 02:28:21,340
+Onun dışında konteksti vesaire bu bilgilere aktarıyorsunuz.
+
+742
+02:28:21,340 --> 02:28:37,340
+Sonra da alarm manager üzerinden pending intentinizi tetikliyorsunuz ve alarm manager 10 saniye sonra pending intentinizi çalışması noktasında ilgili receiver'a yönlendiriyor.
+
+743
+02:28:37,340 --> 02:28:39,340
+Peki tanımı nerede yapıyoruz?
+
+744
+02:28:39,340 --> 02:28:47,340
+Tanımı ise burada görmüş olduğunuz sağda yer alan manifestin içerisinde yapıyoruz.
+
+745
+02:28:47,340 --> 02:28:53,340
+Bir, vibration yapacağımız için vibrates iznini alıyoruz.
+
+746
+02:28:53,340 --> 02:29:02,340
+İkincisi biz bu sefer aktivitemizi application içerisinde değil de alarm activity içerisinde intent filterimizi oluşturduk.
+
+747
+02:29:02,340 --> 02:29:04,340
+Action dedik, category dedik.
+
+748
+02:29:04,340 --> 02:29:14,340
+Sonra da activity'yi oluşturduktan sonra intent filterde main ve launcher'ı belirdikten sonra activity'yi kapattık ve receiver'ımızı tanımladık.
+
+749
+02:29:14,340 --> 02:29:19,340
+My broadcast receiver dedik ve herhangi bir aksiyon belirtmedik.
+
+750
+02:29:19,340 --> 02:29:43,620
+Herhangi bir aksiyon belirtmeden burada görmüş olduğunuz my broadcast receiver arka planda bizim ona göndermiş olduğumuz pending intenti işlem alarm manager'ı 10 saniye süre sonunda geriye sardıktan sonra çalıştığımızda pending intenti my broadcast receiver'ı aldı.
+
+751
+02:29:43,620 --> 02:29:49,620
+Şuradaki intent parametresiyle ve ilgili işlemi gerçekleştirmiş oldu.
+
+752
+02:29:49,620 --> 02:29:54,620
+Herhangi bir şekilde bir eventin takip edilmesi yok.
+
+753
+02:29:54,620 --> 02:30:12,860
+Biz zaten doğrudan diyoruz ki bir tane broadcast receiver var ve siz şuradaki butona bastığınız zaman işlem 10 saniye geçtikten sonra tamamlandığında bir broadcast receiver tarafından takip edilsin ve ilgili iş yapılsın.
+
+754
+02:30:12,860 --> 02:30:29,860
+Böylece biz aslında ne yapmış oluyoruz herhangi bir sistem eventi takip etmeden uygulamada uygulamaya özel counter çalıştıktan sonra yapılması gereken işleri nasıl esan edebileceğimizi tariflemiş oluyoruz pending intent üzerinden.
+
+755
+02:30:29,860 --> 02:30:46,540
+Bu bir kez gerçekleşiyor. Bir de sticky intentler var. Sticky intentler biraz daha farklı bir yapı bize sunuyorlar.
+
+756
+02:30:46,540 --> 02:30:56,540
+Aslında adı üstünde sticky intentler üzerinden de neler yapabileceğimizi tahmin ediyor olabilirsiniz.
+
+757
+02:30:57,540 --> 02:31:28,120
+Yorum sorsam ne olabilir diye sticky intentlerde. Sticky intent sizin aslında bir olayı takip ederken tekrar tekrar takip etmenizi sağlıyor.
+
+758
+02:31:28,120 --> 02:31:38,120
+Normalde siz bir olayı takip ediyorsanız, o olayı gerçekleştirdikten sonra unregister işlemi gerçekleştirir ve aslında işleminiz tamamlanır.
+
+759
+02:31:38,120 --> 02:32:02,120
+Ama eğer siz her seferinde bu iş gerçekleştiğinde yakalamak istiyorsanız o zaman sticky intent tanımlamanız gerekiyor ki bu noktada biz gerçekleşen işlemi her seferinde tekrar yakalayabiliriz ve onunla ilgili ilgili aksiyon alabiliriz.
+
+760
+02:32:02,120 --> 02:32:14,120
+Burada mesela bir tane intent filter tanımlanıyor, bateri değişikliğini takip etmesi için. Sonra bu noktada bunu registre ediyoruz kontekst, ilgili kontekst bilgisini kullanarak.
+
+761
+02:32:14,120 --> 02:32:27,120
+Daha sonra baterinin durumuna bakıyoruz. İşte charge ediliyor, yoksa o andaki statüsü full mi değil mi diye bunu kontrol ediyoruz.
+
+762
+02:32:27,120 --> 02:32:46,120
+Bundan sonra herhangi bir şekilde bateri bir USB'ye bağlandığında bir ne diyelim prise bağlandığında yani bir charging pürümü olduğunda her seferinde bunun yakalanmasını sağlıyoruz.
+
+763
+02:32:46,120 --> 02:33:01,120
+Ve bu sayede sizin telefonunuz her turda bateri charge edilmeye başlandığı zaman bu sticky intent ile işlemi yakalayıp gerçekleştirmesini sağlamış oluyor.
+
+764
+02:33:01,120 --> 02:33:19,120
+Evet burada detay bilgiler var. 7'den itibaren geçerli olan 8'den itibaren 9'dan itibaren işte 9'dan itibaren network state change action ile artık daha az bilginin wifi sistemleri üzerinden broadcast edildiği.
+
+765
+02:33:19,120 --> 02:33:25,120
+Ve işte SSID gibi bilgilerin paylaşılmadığı bilgisi anlatılıyor.
+
+766
+02:33:25,120 --> 02:33:41,120
+Özellikle broadcastlerin daha çok manifest üzerinde tanımlanmak yerine sistem eventlerinin dinamik olarak tanımlanmasının Android tarafından push edildiği.
+
+767
+02:33:41,120 --> 02:33:56,120
+Bu sayede güvenlik seviyesinin yukarı çıkartıldı çünkü bazı sistem eventlerini manifestin içerisine koymak güvenlik zaafiyetleri yaratabiliyor.
+
+768
+02:33:56,120 --> 02:34:10,120
+Bu yüzden de Android her sürümünde yeni API levelinde bazı broadcastleri dinamik olarak registre etmeyi önermeye başladı.
+
+769
+02:34:10,120 --> 02:34:18,120
+Ve özellikle statik olarak tanımladığınızda hata mesajı alıyorsunuz ve takip edemiyorsunuz.
+
+770
+02:34:18,120 --> 02:34:24,120
+Bunların listesini developer Android com'dan ulaşabilirsiniz.
+
+771
+02:34:24,120 --> 02:34:31,120
+Evet, broadcast receiverlara alternatifleri son olarak konuşacağız.
+
+772
+02:34:31,120 --> 02:34:36,120
+Bir tanesi lokal broadcast mesajı, manager.
+
+773
+02:34:36,120 --> 02:34:44,120
+Burada uygulama için paylaşımlar, aktiviteler arası yönetiliyor demiştik.
+
+774
+02:34:44,120 --> 02:34:50,120
+Uygulama için bu işi yapacaksak mutlaka kaynak tüketim açısından bundan fayda almanı demiştik.
+
+775
+02:34:50,120 --> 02:34:53,120
+Bir de job scheduler var.
+
+776
+02:34:53,120 --> 02:34:55,120
+Job scheduler'ı daha önce duyan var mı?
+
+777
+02:34:55,120 --> 02:35:10,819
+Evet [öğrenci].
+
+778
+02:35:10,819 --> 02:35:15,059
+Hocam, work manager'dan farklı bir şey mi bu?
+
+779
+02:35:15,059 --> 02:35:17,059
+Biraz daha farklı.
+
+780
+02:35:17,059 --> 02:35:27,059
+Yani ikisinin aslında temel olarak mantıkları birbirine benzerse de bu yapılar aslında altıdan sonra yavaş yavaş ortaya çıkmaya başladı.
+
+781
+02:35:27,059 --> 02:35:29,059
+Hatta beşten sonra diyelim.
+
+782
+02:35:29,059 --> 02:35:37,059
+Burada özellikle önümüzdeki hafta belki de önce background task'lardan bahsetmek lazım.
+
+783
+02:35:37,059 --> 02:35:46,059
+Location-based servislerden önce bu yapıların birbirlerine göre ne zaman kullanılmalarının artı ve eksi olduğunu paylaşıyor olacağız.
+
+784
+02:35:46,059 --> 02:35:51,059
+İşte bazen bazı işleri arka plana bırakacağız.
+
+785
+02:35:51,059 --> 02:35:53,059
+Buna Android karar versin diyeceğiz.
+
+786
+02:35:53,059 --> 02:35:54,059
+Ne zaman gerçekleşeceğine.
+
+787
+02:35:54,059 --> 02:35:56,059
+Exakt bir time vermeyeceğiz.
+
+788
+02:35:56,059 --> 02:36:00,059
+Bazen tam ikide o işin yapılmasını isteyeceğiz.
+
+789
+02:36:00,059 --> 02:36:05,059
+Bazen tamamide servis olarak çalışmasını isteyeceğiz.
+
+790
+02:36:05,059 --> 02:36:11,059
+Bazen de bir uygulamanın içerisinde biraz daha uzun sürecek işlerimiz olacak.
+
+791
+02:36:11,059 --> 02:36:17,059
+Asenkron yapılan bu işler kullanıcı ile,
+
+792
+02:36:17,059 --> 02:36:27,059
+arayüzdeki bağlantının donmaması için olan iletişimde, kullanıcı ile olan iletişimde asing task'lar yaratılarak devreye alınacak.
+
+793
+02:36:27,059 --> 02:36:38,059
+Sonuçta job scheduler bizim için özellikle daha sonradan gerçekleştirecek olan işlerin takibini yapacak.
+
+794
+02:36:38,059 --> 02:36:52,059
+Ve bu sayede siz oraya belli işleri assign edip onları schedule ettikten sonra onların iyi zamanı geldiğinde gerçekleşmesini arka planda gözlemliyor olacaksınız.
+
+795
+02:36:52,059 --> 02:37:02,059
+Özellikle background task'ların kompleks yapıya sahip olmaları noktasını,
+
+796
+02:37:02,059 --> 02:37:08,059
+bizim farklı çözümler üretmemiz gerekecek.
+
+797
+02:37:08,059 --> 02:37:18,059
+Bunu da önümüzdeki hafta çok daha detaylı bir şekilde background task'lar kısmında görüyor olacaksınız.
+
+798
+02:37:18,059 --> 02:37:27,059
+Broadcast Receiver'lar, sistem seviyesinde ve uygulama seviyesinde gerçekleşen değişiklikleri takip etmek üzerine kurulu,
+
+799
+02:37:28,059 --> 02:37:35,059
+publish, subscribe mantığını dikkate alarak gerçeklenmiş yapılardır.
+
+800
+02:37:35,059 --> 02:37:38,059
+Mutlaka onReceive metoduna ihtiyaç duyarsınız.
+
+801
+02:37:38,059 --> 02:37:41,059
+Manifest tarafında deklare edebilirsiniz.
+
+802
+02:37:41,059 --> 02:37:48,059
+Eğer Android bunu müsaade ediyorsa, uygulama çalışmıyorken de bu takibi yapabilir.
+
+803
+02:37:48,059 --> 02:37:54,059
+Öte yandan context register olarak Broadcast Receiver'leri registre edebilirsiniz.
+
+804
+02:37:54,059 --> 02:38:04,059
+O zaman belirlediğiniz activity context'i ya da application context'inde sadece onların takibi söz konusu olacaktır.
+
+805
+02:38:04,059 --> 02:38:14,059
+Şimdi aslında küçük bir uygulama yapabiliriz bu Broadcast Receiver'larla ilgili.
+
+806
+02:38:14,059 --> 02:38:19,059
+Hatta dönem projeninize yönelik de bir iş olması adına.
+
+807
+02:38:19,059 --> 02:38:30,059
+Telefonunuzun charging moduna geçtiği anda bir mesaj üretmesini istiyorum, bir toast mesaj üretmesini istiyorum.
+
+808
+02:38:30,059 --> 02:38:33,059
+Yapmanız gereken şey bu kadar basit.
+
+809
+02:38:33,059 --> 02:38:43,059
+Tek yapacağınız şey, uygulamanız arka planda telefonunuz charging konumuna geçtiyse bunu yakalayacak
+
+810
+02:38:43,059 --> 02:38:51,059
+veya bir tane toast mesajla şu anda telefon charge oluyor mesajını bize görüntüleyecek.
+
+811
+02:38:51,059 --> 02:38:58,059
+Sorusu olan varsa Broadcast Receiver'le ilgili soruları alabilirim.
+
+812
+02:38:58,059 --> 02:39:12,500
+Bu sırada tabii şunu yapmadık, onu da hemen yapalım.
+
+813
+02:39:12,500 --> 02:39:14,500
+Üç tane görev vermiştim size.
+
+814
+02:39:14,500 --> 02:39:20,500
+Bu üç görevi başarıyla tamamlayan ve ekran paylaşımı yine göstermek isteyen var mı?
+
+815
+02:39:20,500 --> 02:39:24,500
+Ekstra puan vermek için bunu size sormuştum.
+
+816
+02:39:24,500 --> 02:39:26,500
+Barış?
+
+817
+02:39:26,500 --> 02:39:31,500
+Ben tamamladım ama emelatörden imkansız bunu göstermek.
+
+818
+02:39:31,500 --> 02:39:34,500
+Telefonumdan nasıl ekran paylaşabileceğimi bilmiyorum şu an.
+
+819
+02:39:34,500 --> 02:39:36,500
+Kamerayı açıp gösterebilir mi isterseniz?
+
+820
+02:39:36,500 --> 02:39:39,500
+Vizör uygulaması var, onunla yapabilirsin.
+
+821
+02:39:39,500 --> 02:39:41,500
+V, Y, S, O, R.
+
+822
+02:39:41,500 --> 02:39:45,500
+Bunu geçen hafta, geçen hafta diyorum dersin başına söylemiştim.
+
+823
+02:39:45,500 --> 02:39:47,500
+Ben de kullanıyorum zaman zaman.
+
+824
+02:39:47,500 --> 02:39:50,500
+O sırada sen onu halledebilirsin.
+
+825
+02:39:50,500 --> 02:39:53,059
+Ekran?
+
+826
+02:39:53,059 --> 02:40:00,059
+Hocam listelemeyi ve evme sensörüyle olanı yapabildim.
+
+827
+02:40:00,059 --> 02:40:02,059
+Tamam, göstermek ister misin?
+
+828
+02:40:02,059 --> 02:40:04,059
+Tabii.
+
+829
+02:40:04,059 --> 02:40:12,409
+Tamam, o zaman sana ekran paylaşımı hakkı vereceğim.
+
+830
+02:40:12,409 --> 02:40:15,409
+Evet, ekranını paylaşabilirsin.
+
+831
+02:40:15,409 --> 02:40:32,010
+Evet, önce istersen nasıl çalıştığını göster.
+
+832
+02:40:32,010 --> 02:40:34,010
+Sonra da kodun üzerinden geçelim.
+
+833
+02:40:34,010 --> 02:41:05,829
+Şu an görünüyor mu hocam?
+
+834
+02:41:05,829 --> 02:41:07,829
+Görünüyor, sensörlerini bir gösterirsen.
+
+835
+02:41:07,829 --> 02:41:15,940
+Evet, aksuometreler, kalibreatit falan kalibreatit, ciroskop.
+
+836
+02:41:15,940 --> 02:41:19,940
+Wake up, secondary gravity, rotation vector.
+
+837
+02:41:19,940 --> 02:41:24,940
+Şu anda bu senin emelatörün mü yoksa gerçek telefonun bu?
+
+838
+02:41:24,940 --> 02:41:26,940
+Bu gerçek telefon.
+
+839
+02:41:26,940 --> 02:41:32,940
+Persistent motion sensör, elliptic proximity, touch sensör.
+
+840
+02:41:35,940 --> 02:41:46,159
+İki tane gözüken var mı diye bakıyorum.
+
+841
+02:41:46,159 --> 02:41:49,159
+Ciroskop, mandatory gravity.
+
+842
+02:41:49,159 --> 02:41:52,159
+Step detector, iki tane var.
+
+843
+02:41:52,159 --> 02:41:56,590
+Step counter, iki tane var.
+
+844
+02:41:56,590 --> 02:41:59,590
+Step detector, game rotation vector.
+
+845
+02:41:59,590 --> 02:42:04,899
+Peki evet, diğer kısmı geçelim.
+
+846
+02:42:04,899 --> 02:42:07,899
+Üstülerimi eğitirdi daha çok da.
+
+847
+02:42:07,899 --> 02:42:10,899
+Niye böyle oldu? Az önce çalışıyordu.
+
+848
+02:42:10,899 --> 02:42:21,659
+Evet, biliyorsun. Biz baktığımız zaman her zaman bir sıkıntı çıkar.
+
+849
+02:42:21,659 --> 02:42:25,659
+Az önce çok iyi çalışıyordu herhalde.
+
+850
+02:42:25,659 --> 02:42:31,350
+İstersen neler yaptığına şöyle bir bakalım.
+
+851
+02:42:31,350 --> 02:42:35,350
+Burada her sensör değer değiştiğinde bir tane değer yazdırıyorum ekrana.
+
+852
+02:42:35,350 --> 02:42:37,350
+X ve Y değerlerini yazdırıyorum sadece.
+
+853
+02:42:37,350 --> 02:42:43,350
+Sıfırla denk geliyorsa hiçbir yönden iyi mi olmadığını biliyorum bu şekilde.
+
+854
+02:42:43,350 --> 02:42:46,659
+Peki diğeri de sıfırsa?
+
+855
+02:42:46,659 --> 02:42:47,659
+Z de mi?
+
+856
+02:42:47,659 --> 02:42:49,659
+Evet.
+
+857
+02:42:49,659 --> 02:42:57,659
+Yani Z de sıfırsa o zaman gerçekim olmayan bir ortamda demek ya da telefon düşüyor demektir.
+
+858
+02:42:57,659 --> 02:42:59,659
+Değil mi?
+
+859
+02:42:59,659 --> 02:43:01,659
+Evet, ya da asansörde de olabilir.
+
+860
+02:43:01,659 --> 02:43:03,659
+Çok hızlı bir şey.
+
+861
+02:43:03,659 --> 02:43:05,659
+Evet, inan bir asansör var.
+
+862
+02:43:05,659 --> 02:43:12,659
+Yani orada Z'yi de kontrol etmek gerekli olabilir ama çok önemli değil tabii ki.
+
+863
+02:43:12,659 --> 02:43:15,659
+Hemen gösterebilmek adına şey yapmıştım.
+
+864
+02:43:15,659 --> 02:43:17,659
+Evet, sıkıntı değil.
+
+865
+02:43:17,659 --> 02:43:21,659
+Çok basit, standart bir kod yazmak yeterli oluyor.
+
+866
+02:43:21,659 --> 02:43:27,659
+Sensör listesini de gösterirsen kodunu.
+
+867
+02:43:27,659 --> 02:43:33,860
+Sensör listesi.
+
+868
+02:43:33,860 --> 02:43:35,860
+Burada base adaptörle hemen gösterdim.
+
+869
+02:43:35,860 --> 02:43:37,860
+O kısmı da göstereyim mi?
+
+870
+02:43:37,860 --> 02:43:39,860
+Güzel, göster göster. Açılsın.
+
+871
+02:43:39,860 --> 02:43:45,860
+Burada öncelikle bir tane sensör liste type all alıyorsun hepsini.
+
+872
+02:43:45,860 --> 02:43:49,860
+Sonra bir tane adaptör kullandı buna ekrana yazdırmak için.
+
+873
+02:43:49,860 --> 02:43:53,860
+Bahsetmiştik daha önce base adaptörü kullanılabilir diye.
+
+874
+02:43:53,860 --> 02:44:02,860
+Bu noktada sadece text bilgilerini ekrana yazdırdığın için böyle bir yapı kullanmak tercihin oldu diye düşünüyorum. Doğru mu?
+
+875
+02:44:02,860 --> 02:44:06,860
+Burada sadece basit bir text view oluşturup onu tanımlayayım dedim.
+
+876
+02:44:06,860 --> 02:44:08,860
+Aynen öyle.
+
+877
+02:44:08,860 --> 02:44:12,860
+Burada vesaire cycle view kullanmak çok daha anlamlı değil.
+
+878
+02:44:12,860 --> 02:44:18,860
+Ya veri çok az olur diye düşündüm zaten kaç tane olabilir sensör diye.
+
+879
+02:44:18,860 --> 02:44:20,860
+Evet gayet mantıklı.
+
+880
+02:44:20,860 --> 02:44:22,860
+Teşekkür ediyorum.
+
+881
+02:44:22,860 --> 02:44:26,860
+Bana yazarsın sana da belli miktarda puan vereceğim.
+
+882
+02:44:26,860 --> 02:44:27,860
+Barış.
+
+883
+02:44:27,860 --> 02:44:29,860
+Peki hocam teşekkür ederim.
+
+884
+02:44:29,860 --> 02:44:32,860
+Hocam ben indirdim vizörü ekranın paylaşabilir miyim?
+
+885
+02:44:32,860 --> 02:44:33,860
+Lütfen.
+
+886
+02:44:33,860 --> 02:44:44,649
+Tamam tamam şu an bir sıkıntı oldu ama.
+
+887
+02:44:44,649 --> 02:44:46,649
+Bekleyelim bakalım.
+
+888
+02:44:46,649 --> 02:44:50,649
+Ekran paylaşınca bir hata oldu bir saniye hocam.
+
+889
+02:44:50,649 --> 02:44:59,180
+Tamam bir daha deneyebilirsin.
+
+890
+02:44:59,180 --> 02:45:02,180
+Şu an vizörü görüyor olmanız lazım.
+
+891
+02:45:02,180 --> 02:45:06,180
+Henüz gelmedi şu an tekrar bağlantı koptu sanırım.
+
+892
+02:45:06,180 --> 02:45:09,180
+Evet kopuyor bağlantı neden anlayamadım ama.
+
+893
+02:45:09,180 --> 02:45:11,180
+Sadece vizörü mü seçiyorsun?
+
+894
+02:45:11,180 --> 02:45:15,180
+Tamamen ekranı seçtiğimde yani siyah ekran falan oldu bir an.
+
+895
+02:45:15,180 --> 02:45:17,180
+O yüzden sadece vizörü seçmek istedim ama.
+
+896
+02:45:17,180 --> 02:45:21,180
+Evet olması lazım bir bağlantı oluyor olmaması lazım.
+
+897
+02:45:21,180 --> 02:45:25,180
+Sen bana kaydı video olarak gönderirsin.
+
+898
+02:45:25,180 --> 02:45:26,180
+Tamam hocam olur.
+
+899
+02:45:26,180 --> 02:45:28,180
+Arkadaşlarından çok vaktini almayalım.
+
+900
+02:45:28,180 --> 02:45:30,180
+Tamam hocam.
+
+901
+02:45:32,180 --> 02:45:39,120
+Broadcast receiver tarafında ne yapılacağı anlaşıldı mı?
+
+902
+02:45:39,120 --> 02:45:46,430
+Soru sormak isteyen var mı?
+
+903
+02:45:46,430 --> 02:45:47,430
+Peki.
+
+904
+02:45:47,430 --> 02:45:49,430
+Hocam benim bir sorum vardı aslında.
+
+905
+02:45:49,430 --> 02:45:51,430
+Evet Ekran.
+
+906
+02:45:51,430 --> 02:45:55,430
+Bu padding intentle falan çağırdığımız zaman.
+
+907
+02:45:55,430 --> 02:45:59,430
+Uygulama içerisinde diyelim ki o broadcast işlemi başlatıldı.
+
+908
+02:45:59,430 --> 02:46:02,430
+Ya da stick intent falan kullanmıştık.
+
+909
+02:46:02,430 --> 02:46:06,430
+Ben bu uygulamayı son uygulamalar kısmından sonlandırsam.
+
+910
+02:46:06,430 --> 02:46:09,430
+Broadcastler çalışmaya devam edecek mi?
+
+911
+02:46:09,430 --> 02:46:17,760
+Şöyle bir kere zaten uygulamayı sonlandırırken unrejister ediyoruz ya.
+
+912
+02:46:17,760 --> 02:46:19,760
+Şey dispoz şeklinde mi?
+
+913
+02:46:19,760 --> 02:46:21,760
+Efendim?
+
+914
+02:46:21,760 --> 02:46:25,760
+Activity'deki dispoz gibi bir şey mi yapıyoruz orada?
+
+915
+02:46:25,760 --> 02:46:30,760
+Doğrudan unrejister ediyoruz da nasıl registrer ediyorsak unrejister ediyoruz.
+
+916
+02:46:30,760 --> 02:46:36,760
+O yüzden zaten context registered receiver'lar kullanmak daha anlamlı diyoruz.
+
+917
+02:46:36,760 --> 02:46:42,760
+Böylece on pause'da ya da on stop'da ya da on destroy'da unrejister çağırdığın zaman.
+
+918
+02:46:42,760 --> 02:46:46,760
+Uygulaman kapanırken otomatik olarak takip etmek istemediğinde söylemiş oluyorsun.
+
+919
+02:46:46,760 --> 02:46:50,579
+Anladım hocam.
+
+920
+02:46:50,579 --> 02:46:53,579
+Yani bunu yapmanın en iyi yolu odur.
+
+921
+02:46:53,579 --> 02:46:59,579
+Manifest declared register kullanmak aslında birazcık eski usul olarak kaldı.
+
+922
+02:46:59,579 --> 02:47:06,579
+Ya aklıma şey geldi acaba dedim background işlemlerini kullanmanın bir yöntemi olabilir mi bu diye.
+
+923
+02:47:06,579 --> 02:47:08,579
+Nasıl mesela?
+
+924
+02:47:08,579 --> 02:47:15,579
+Ya uygulamayı kapattığımda çalışmaya devam ediyorsa herhangi bir işle hep çalıştırmaya devam edebilirim herhalde diye düşündüm.
+
+925
+02:47:15,579 --> 02:47:17,579
+Mesela servis gibi mi?
+
+926
+02:47:17,579 --> 02:47:19,579
+Evet.
+
+927
+02:47:19,579 --> 02:47:24,579
+Onu kapatmak nasıl olur mu diye soruyorsun?
+
+928
+02:47:24,579 --> 02:47:30,979
+Ya öyle mi olur acaba falan şeklindeydi aslında sorun mu?
+
+929
+02:47:30,979 --> 02:47:37,979
+Ya şöyle servisleri çalıştırıp arka planda uygulamanı kapattığında servis arka planda çalışmaya devam edebilir.
+
+930
+02:47:37,979 --> 02:47:49,979
+Ama serhanı ne zaman unbind edersin ya da servisi stop yaparsın o zaman servis kapanırken unregister edebilirsin.
+
+931
+02:47:49,979 --> 02:47:52,979
+Takibini o zaman bitirebilirsin. Bu da bir seçenek.
+
+932
+02:47:52,979 --> 02:48:00,979
+Yani uygulama aktivitenin kapanmasıyla, uygulamanın kapanmasıyla servisin kapanması arasında da fark var.
+
+933
+02:48:00,979 --> 02:48:05,979
+Servisi kapatırken de register ettiğin receiver'ı unregister etme şansına sahipsin.
+
+934
+02:48:05,979 --> 02:48:07,979
+Anladım hocam.
+
+935
+02:48:07,979 --> 02:48:16,190
+Evet saat rica ederim 5'e 10 var. Bu haftalık bu kadar.
+
+936
+02:48:16,190 --> 02:48:25,190
+Katılan herkese teşekkür ediyorum. Ayrıca yorum yapan ekrana bağışla da teşekkür ediyorum.
+
+937
+02:48:25,190 --> 02:48:31,190
+Önümüzdeki hafta background task'ları konuşacağız.
+
+938
+02:48:31,190 --> 02:48:39,190
+Notification'ları konuşacağız. Bir sonraki haftada location based servisleri konuşuyor olacağız.
+
+939
+02:48:39,190 --> 02:48:45,190
+Lütfen size vermiş olduğum bugünkü assignment'ları gerçekleştirmeye çalışın.
+
+940
+02:48:45,190 --> 02:48:58,190
+Bonus olarak saymak istiyorum söz veremiyorum ama en kötü ihtimalle bu yapacaklarınız dönem projenizde işe yarayacaktır diye düşünüyorum.
+
+941
+02:48:58,190 --> 02:49:03,190
+Katıldığınız için teşekkür ediyorum. Hepinizi sağlıklı günler diliyorum arkadaşlar.
+
+942
+02:49:03,190 --> 02:49:04,190
+Görüşmek dileğiyle hoşçakalın.
+
+943
+02:49:04,190 --> 02:49:07,860
+Görüşürüz hocam.
+
+944
+02:49:07,860 --> 02:49:09,860
+Görüşmek üzere hocam.
+

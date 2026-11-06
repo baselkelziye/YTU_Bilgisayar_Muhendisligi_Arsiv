@@ -1,0 +1,2720 @@
+1
+00:03:36,430 --> 00:03:44,909
+Evet, günaydın kıymetli arkadaşlar, sınav haftasından sonra her şey yolundadır inşallah diye ümit ediyoruz.
+
+2
+00:03:44,909 --> 00:03:55,949
+Şimdi, kaldığımız yerden devam edelim. Böyle söylemek istediği bir şeyler olanlar varsa tabii söyleyebilirler.
+
+3
+00:03:55,949 --> 00:04:02,349
+Hem derste ilgili sorusu olanlar falan varsa onlar sorabilir. Herkes uyanabilir bu arada.
+
+4
+00:04:02,349 --> 00:04:07,389
+Ben de nasıl yapıyorduk şu slide paylaşımı, şuradan ona bakabilirim.
+
+5
+00:04:07,389 --> 00:04:22,189
+Evet, var mı derste ilgili? Gerçi biz sınav yapmadık, sınav yapmadığımız için muhtemelen çok fazla soru yoktur.
+
+6
+00:04:22,189 --> 00:04:25,709
+Sınav yaptığımız derslerde daha fazla soru olacaktır diye düşünüyorum.
+
+7
+00:04:25,709 --> 00:04:32,699
+Güzel, bu aralar bu hafta veya önümüzdeki hafta bir ödeviniz daha gelir.
+
+8
+00:04:33,180 --> 00:04:37,980
+Sınav olmadığı için biliyorsunuz ödev ağırlıkta yapacağımızı söylemiştik.
+
+9
+00:04:37,980 --> 00:04:42,939
+Derse muhtemelen gelir diye tahmin ediyorum.
+
+10
+00:04:42,939 --> 00:04:48,779
+Evet, şimdi şunları da küçültelim.
+
+11
+00:04:48,779 --> 00:04:55,660
+Hatırlarsanız HDLG yöntemi üzerinden konuşuyorduk.
+
+12
+00:04:55,660 --> 00:05:04,860
+Temelde üç farklı frame tipi vardı. Bunlar S frame, U frame, I frame olmak üzere üç farklı frame tipi vardı.
+
+13
+00:05:04,860 --> 00:05:08,459
+Her birisinin farklı farklı amaçları vardı.
+
+14
+00:05:08,459 --> 00:05:13,339
+Hatırlarsanız işte E frame ile data'nın kendisini gönderiyorduk.
+
+15
+00:05:13,339 --> 00:05:18,459
+S frame ile çeşitli kontrol amaçta kullanılan işlevleri gönderiyorduk.
+
+16
+00:05:18,459 --> 00:05:25,259
+U frame ile de daha mekanizmasal işleyişsel işlemlerin gerçekleştirdiğiniz için çeşitli bilgiler gönderiyorduk.
+
+17
+00:05:25,660 --> 00:05:30,779
+Karşı tarafa şimdi pekala nasıl çalışıyor hep bunun böyle teorik kısmını anlattık.
+
+18
+00:05:30,779 --> 00:05:34,379
+Header'larında ne var? Fleck'lerinin içerisinde ne var? Onlardan bahsettik.
+
+19
+00:05:34,379 --> 00:05:38,540
+Pkala nasıl bir mekanizması var? Nasıl çalışıyor? Bunun üzerinde duralım.
+
+20
+00:05:38,540 --> 00:05:47,180
+Bu ders istiyoruz biraz. Ondan sonra 802 protokollerine geçiyor olacağız.
+
+21
+00:05:47,180 --> 00:05:53,500
+Şimdi temelde üç aşamalı bir sistemle çalışıyor.
+
+22
+00:05:53,740 --> 00:06:06,139
+Öncelikle birisinin yani taraflardan birisinin muhakkak veri alış verişini eş zamanlı sağlayabilmek adına bağlantıyı kurması gerekiyor.
+
+23
+00:06:06,139 --> 00:06:11,100
+Yani diyelim ki point'i point'e bir iletişim yapıyoruz.
+
+24
+00:06:11,100 --> 00:06:18,060
+Header'lece gibi bir mekanizmanın içinde muhakkak taraflardan birisinin bağlantıyı sağlaması gerekiyor.
+
+25
+00:06:18,060 --> 00:06:21,339
+Ya hocam zaten böyle olması gerekmez mi? Yok.
+
+26
+00:06:21,339 --> 00:06:28,139
+Yani mesela şöyle eternetle ilgili versiyonlarda hep şöyle şeyler olmuş arkadaşlar.
+
+27
+00:06:28,139 --> 00:06:32,779
+Bağlantı her daim var. Fully connected.
+
+28
+00:06:32,779 --> 00:06:34,939
+İki tane point'i point yer.
+
+29
+00:06:34,939 --> 00:06:45,899
+Ve sürekli hat açık ekstradan hatın sağlamlığını kontrol etmek yani şu an veri gönderebiliyor muyum gönderemiyorum diye kontrol etmek gibi bir durum yok.
+
+30
+00:06:45,899 --> 00:06:49,740
+Adam veri göndermek istediğinde gönderiyor gibi mesela durumlar da var.
+
+31
+00:06:49,819 --> 00:06:56,300
+Ama burada birisinin muhakkak bağlantıyı başlatması kurması gerekiyor.
+
+32
+00:06:56,300 --> 00:07:00,779
+Header'lece mekanizmasında onu da neyle yapıyor? S-Frame'lerle yapıyor işte.
+
+33
+00:07:00,779 --> 00:07:04,860
+Yani S-Frame'lerle yaptığında nasıl olacak?
+
+34
+00:07:04,860 --> 00:07:07,980
+Adama diyorsun ki ya ben sana veri göndereceğim uygun musun?
+
+35
+00:07:07,980 --> 00:07:18,540
+Adam sana ne diyordu? Ya Resivredi ile evet uygunum bana gönder ya da Resivnatredi ile ya şu an müsaid değilim kusura bakma haftaya gel gibi bir yaklaşım sergiliyordu hatırlarsanız.
+
+36
+00:07:18,699 --> 00:07:27,899
+İşte bu S-Frame'lerle karşılıklı bir anlaşma sonucunda bağlantı kuruluyor ama bir tarafın bunu başlatması gerekiyor.
+
+37
+00:07:27,899 --> 00:07:46,860
+Yine gönderilecek verinin nasıl bir veri olduğu ve işte bu verinin gönderilirken karşı tarafa ulaşması asılmasında ne tarz başına problemler gelip de onların handle edilebileceği
+
+38
+00:07:47,180 --> 00:08:03,899
+hataların yani giderilebileceği, akışın nasıl kontrol edileceği yani bana çok veri gönderiyorsun bak yeter artık alamıyorum gibisinden mesajların nasıl konumlandırılacağına dair her iki tarafın da protokol sebebiyle bir bilgisinin olması gerekiyor.
+
+39
+00:08:03,899 --> 00:08:05,899
+Yani ne demek istiyoruz?
+
+40
+00:08:06,779 --> 00:08:34,460
+Şimdi her iki taraf da eğer ki çok fazla mesela yük e maruz kaldığında veya hatalı bir mesaj aldığında veya aldığın mesajın hatalı olduğunu fark ettiğinde yapması gereken şeylerin ne olduğunu bilmiyorsa bilmiyorsadan kasıt şu her iki taraf da aynı şekilde reaksiyon gösteremeyecek şekilde ise böyle bir iletişimin olması çok mümkün değil.
+
+41
+00:08:34,539 --> 00:09:04,220
+Sizin de tahmin edebileceğiniz üzere yani işte bir taraf Türkçe konuşuyor diğer taraf İngilizce konuşarak cevap vermeye çalışıyor gibi düşünün burada yine temelde bir ciddi problem var arada muhakkak bir translator falan olması gerekiyor onu 802'lere geldiğimizde göreceğiz şu an öyle bir durumu olmadığı için her iki taraf da birbirleriyle veri alışverişi sırasında hata kontrolleri sırasında işte akışın kontrolleri sırasında aynı şeyde davranıyorlar.
+
+42
+00:09:04,220 --> 00:09:26,779
+Ne denir ona protokol de davranıyorlar tabi en sonunda da bütün alışverişi bittikten sonra bir tarafın şeyi sonlandırması gerekiyor koneksiyonu sonlandırması gerekiyor nasıl sonlandırılabilir şimdi şöyle söyleyelim koneksiyonu her daim başlatan taraf sonlandırmak zorunda değil.
+
+43
+00:09:26,779 --> 00:09:56,779
+Yani ne demek istiyoruz ben mesela A saydeyim koneksiyonu B'ye bir şey göndermek istiyorum koneksiyonu başlattım B'ye bir şey göndereceğim diye B bana dedi ki tamam okey müsaitim senden veri almaya hazırım ben B'ye bir şeyler göndermeye başladım diyelim ki 1000 tane paket göndereceğim 1000 tane paket göndereceğim B 500 tanesini gönderdikten sonra B bana dedi ki ya benim de sana
+
+44
+00:09:56,779 --> 00:10:26,779
+göndereceğim bir şeyler var o da 1000 tane paket gönderecek ben ona paket gönderirim o bana paket gönderiyor ben ona gönderirim o bana gönderiyor benim geri kalan 500 tane de bitmiş yani toplam 1000 taneyi tamamlamışım ama B hala daha mesela 250 tanesini gönderememiş olsun o B hala daha bana göndermeye devam ediyor B'nin bütün gönderecek paketler bittikten sonra artık koneksiyonu mesela B kapatabilir yani illa koneksiyonu başlatan taraf kapatacak diye bir durum söz konusu değil ihtiyacıya göre
+
+45
+00:10:26,779 --> 00:10:49,779
+açıkçası burada bir kapatma gibi bir durum söz konusu olabilir evet şimdi mesela bir koneksiyonun establishment aşamasından bir örnek yapmış olalım öncelikle A tarafı şurası A tarafının time çizergesi şurası da B tarafının time çizergesi
+
+46
+00:10:49,779 --> 00:11:16,779
+hatırlarsanız farklı farklı mesajları geçtiğimiz hafta konuşmuştuk sizlerle beraber şunlar işte 5 bittik böyle 32 farklı mesaj tipimiz vardı bunları konuşmuştuk şimdi A,B'ye koneksiyonu başlatma request'i gönderiyor tamam mı işte şurada U frame olarak gönderilen bu request'in nasıl bir şey olduğunu görebiliyorsunuz
+
+47
+00:11:16,779 --> 00:11:46,779
+yani işte başındaki bitler P'nin ve işte F'nin şu an don't care olması gibi bir durum söz konusu ve işte sonrasında gelen bitler tabi başında bir flek gidiyordu F,C,S kısmı gidiyordu ve sonunda yine bir flek gidiyordu hatırlarsanız bir de şurada kime göndereceksek onun adresini yollamış oluyordu karşı tarafa şimdi A'dan B'ye giden bu sana bir şey göndermek istiyorum
+
+48
+00:11:46,779 --> 00:12:15,779
+yani bir koneksiyonu başlatalım request'ine A,U,A ile cevap veriyor tabi illa okey demek zorunda değildi U,A okey demek biliyorsunuz D,M konuşmuştuk geçtiğimiz haftalarda hayır yani şu an müsait değilim tabi her daim müsait yani şimdi mesela müsait değilim kısmı şu şekilde geçtiğimiz haftalarda çok güzel açıklam almış olabiliriz ama adam müsait değilim diyorsa muhakkak müsait değildir
+
+49
+00:12:16,779 --> 00:12:34,779
+yani şu an müsait ama veri almak istemiyor canı sıkkın falan böyle bir durum söz konusu değil muhakkak müsait değildir kıymetli arkadaşlar chatten pop-up pop-up şey çıkıyor şu an ekranda bir şey görünüyor mu hocam benimle telal yapalım evet akasya görünüyor olması lazım
+
+50
+00:12:34,779 --> 00:12:51,379
+ne söylüyorduk ya evet yani adam reddetti ise hakikaten geçerli bir sebebi vardır yani bunu reddetmesinin o da önemli bir hususlardan birisi
+
+51
+00:12:51,379 --> 00:13:08,379
+koneksiyonu başlatmak için U frame ile A'dan B'ye bir istek gitti B tamam bana gönderebilirsin okey dedi arada tabi burada I frame'ler üzerinden baya bir veri aktarımı gibi durum söz konusu S frame'ler falan da devreye girecek onları göreceğiz akışın içerisinde
+
+52
+00:13:08,379 --> 00:13:37,379
+bir sürü veri aktarılıyor bağlantının aktif olduğu durum ardın en sonunda da disk ile yine A tarafı bakın illa öyle olmak zorunda değil diye bunu konuşmuştuk A tarafı gönderdiği bir ne denir ona disk komutuyla bağlantıyı sonlandırabilir miyiz veya sonlandıralım gibi bir şey söyledi yine B tarafı da tamam olur diyerek bunu kabul etti
+
+53
+00:13:38,379 --> 00:13:58,379
+yani şeyleri falan görmüştük hatırlarsanız gönderilen işte adreslerin neler olduğu şimdi biz gerçi bir sonraki alan da şunların üzerinden geçerim daha güzel görüneceğini düşünüyorum hem P ve F'lerin de alırken ve gönderirken farklı manalar ifade ettiğini söylemiştik onlar üzerinden de güzel gideriz diye düşünüyorum şimdi
+
+54
+00:13:58,379 --> 00:14:28,379
+karşıya bağlantıyı kurduk A'dan B'ye bağlantıyı kurduk diyelim ki karşı tarafa artık veri göndermek istiyoruz yani şu kısım arkadaşlar aktif linkin olduğu şu arada bir şeyler yapmak istiyoruz I frame'lerle karşıya ben bir şey göndereceğim nasıl göndereceğim işte A,B'ye I frame'le bir veri gönderecek ama bu doğrudan zaman ekseninde bu şekilde başlamaz muhakkak üst tarafında bağlantının
+
+55
+00:14:28,379 --> 00:14:58,379
+I frame'le ilgili bir şeyler vardır arkadaşlar onu da söylemiş olalım ne diyor mesela A,B'ye şurada çok kısaca özetlemişiz şurada şey yapılan şeyi ben sana bir veri gönderiyorum tamam sana bir veri gönderiyorum göndereceğim bu veri sıfırıncı frame ve sen de bana eğer veri göndereceksen sıfırıncı frame'i bana gönder tamam yani sen de bana eğer veri göndereceksen sıfırıncı
+
+56
+00:14:58,379 --> 00:15:28,379
+frame'ler diye karşı tarafa bunu iletiyor karşı tarafa gitti yani şu nr ve ns değerleri vardı hatırlarsanız üçer bitlik 203.8 biz zaten kullandığımız böyle frame yapısında böyle sliding window kullanıyorduk ya işte 7 tane farklı frame'i kullanmak bizim için bir noktada yeterli olabilir daha uzun versiyonları da vardı ama burada daha güzel anlaşılsın diye
+
+57
+00:15:28,379 --> 00:15:58,379
+o versiyonlar üzerinden gidiyoruz daha frame yani window size'i daha kısa olan versiyonlar üzerinden gidiyoruz şimdi tekrar söyleyelim A'dan B'ye bir mesaj geldi ilk baş neydi flake yani şunlar zaten sabit kısımlar sabit olmayanlara bakalım B'nin adresini yazıyoruz yani A'la B iletişim kuruyorsak haptanın içerisindeki şeyde B'nin adresinin yazması oldukça mantıklı sıfır bunun ne manaya geldiğini biliyordu birazdan onu da
+
+58
+00:15:58,379 --> 00:16:28,379
+konuşuyor olacağız tekrardan ama şu ns ve nr değerlerine bakalım ne diyor ben sıfırıncı frame'i sana gönderiyorum sen de bana göndereceksen eğer göndereceksen eğer sıfırıncı frame'i gönder ve tabi sıfırıncı frame'i gönderiyor ya o sıfırıncı frame'in datası neyse onun içerisine ekleyip gönderiyor B buna karşılık olarak A'ya diyor ki ben nedenleri ona sana veri gönderiyorum
+
+59
+00:16:28,379 --> 00:16:58,379
+veri gönderiyorum şimdi sıfır ve bir yazması şu ben sana sıfırıncı frame'i gönderiyorum oysaki sıfırıncı frame diye bir şey yok yani gönderdiği öyle düşünelim yani verinin içerisinde şu şekilde var tabi sıfırıncı frame'de fakat adamın istediği sıfırıncı frame'i karşı tarafa gönderiyor onu demek istiyorum yani hani şurada demişti ya sana sıfırıncı frame'i gönderiyorum sıfırı bekliyorum bu da o beklenen sıfırıncı
+
+60
+00:16:58,379 --> 00:17:12,380
+sıfırı gönderiyor yani o şekilde söyleyelim o şekilde söyleyelim çünkü B başlatmadı koneksiyonu burada A başlattı hani B'nin de göndereceği bir şeyler varmış öyle düşünelim yani burada sana sıfırıncı frame'i gönderiyorum
+
+61
+00:17:12,380 --> 00:17:28,339
+birinci frame'i ise aldım bakın şurayı sıfır olarak kodlamış şurayı bir olarak kodlamış tamam mı sana sıfırıncı frame'i gönderiyorum aha frame'in verisi de burada ve birinci frame'i aldım buna bir şey diyorduk arkadaşlar buna bir şey diyorduk kim hatırlıyor var mı hatırlayan
+
+62
+00:17:28,339 --> 00:17:46,500
+biri gönderiyoruz adama yani sana sıfırıncı frame'i gönderiyorum birinci frame'i de aldım sıfırıncı frame'de işte burada bir kişi hatırlasın yeter ya öyle çok yükseklerde gözüm yok evet chat ile hatırlayamazsınız arkadaşlar
+
+63
+00:17:46,500 --> 00:17:59,460
+evet [öğrenci] bir fikrin var zannımca yokmuş
+
+64
+00:17:59,460 --> 00:18:01,460
+piggyback değil mi hocam
+
+65
+00:18:01,460 --> 00:18:21,420
+evet teşekkür ediyoruz piggybacking [öğrenci] çok teşekkür ediyoruz piggybacking diyorduk bunu hatırlıyorsunuz arkadaşlar yani gönderdiğimiz verinin içerisinde karşı tarafa da AJK verisini gönderiyorsak buna piggybacking diyorduk bakın burada onu yapıyor
+
+66
+00:18:21,420 --> 00:18:36,380
+diyor ki sana sıfırıncı numaralı frame'i gönderiyorum bir numaralı frame'i de aldım tamam yani o aldım bilgisi de buradan gidiyor buna piggybacking diyoruz bu tarz şeyler her gördüğünüzde aklınıza gelmesi gereken kavramlardan birisi
+
+67
+00:18:36,380 --> 00:19:06,380
+ardından A tarafına geçiyor sıra öyle söyleyelim diyor ki yine senin gönderdiğin bir numaralı frame'i aldım pardon senden bir numaralı frame'i bekliyorum çok özür diliyorum çünkü ne demek senden bir numaralı frame'i bekliyorum AJK'da hatırlayın nasıl kullanıyorduk senden bir numaralı frame'i bekliyorum pardon o şu kısmı senden bir numaralı frame'i bekliyorum ne demekti sıfırı aldım demek tamam yani bir sonrakini bekliyorsanız bir öncekini almışsınızdır senden bir numaralı frame'i
+
+68
+00:19:06,380 --> 00:19:26,299
+bekliyorum ve sana bir numaralı frame'i gönderiyorum diye karşıya veri gönderdi tabi her daim bu sliding window olduğu için artışıl yani bir cevap almadan artışıl veriler de gönderebilir biliyorsunuz karşı tarafa yine sana iki numaralı frame'i
+
+69
+00:19:26,299 --> 00:19:56,299
+gönderiyorum ve senden bir numaralı frame'i bekliyorum diye veri gönderiyor işte bakın şu her iki taraf bir şurası iki oldu enes kısmı iki oldu ener kısmı hala daha bir buradan ardından tabi birkaç tane daha farklı veri de göndermiş olabilirdi belki ama ondan sonra B devreye girdi B tekrar cevap veriyor B diyor ki sana bir
+
+70
+00:19:56,299 --> 00:20:26,299
+veri göndereceğim şu an gönderiyorum veya sana bir veri gönderiyorum bir numaralı frame'imi gönderiyorum daha önce sıfırı göndermişti nerede o ha şurada bir numaralı frame'imi gönderiyorum senden de üçü bekliyorum üçü bekliyorum dediği anda olay ne oluyor hemen benden eğer ki üçü bekliyorsa ikiye kadar olanları almış tamam mı süper bakın üç şuraya koymuş bir şuraya koymuş pekala buna karşılık A ne cevap veriyor bir S frame'i
+
+71
+00:20:26,299 --> 00:20:56,299
+iki tarafa gönderiyor tamam mı benim sen bana nedenle ona bir numaralı frame'i gönderdin okey eğer ki benim üç numaralı şey iki numaralı frame'imden sonra gönderecek ekstra frame'im olsaydı sana şu an onu gönderecektim ama sana şu an göndereceğim şeyler bitti o yüzden senden iki numaralı
+
+72
+00:20:56,299 --> 00:21:26,299
+göndereceğim frame'imi almaya hazırım diyor tamam mı S frame'le karşı tarafa adamda daha sonra muhtemelen iki üç beş neyse ne kadar göndereceği varsa onları gönderiyor burada sorusu olan var mı bunlar böyle anlaşılıyordur inşallah sabah sabah böyle tabi sizi uykunuzdan uyandırıyoruz derse getiriyorsunuz getiriyoruz açsınız bu çoluğunuz kahvaltıda yapmadınız falan ama yine de anlaşılıyor hocam bir soru alabilir miyim bir tane
+
+73
+00:21:26,299 --> 00:21:56,299
+sor bu ilk başlangıçta B'den senden sıfır istiyorum dedi göndereceğim varsa göndereceği olmasaydı B'nin cevabı ne olacaktı yok göndereceğim yok kardeşim deseydim evet B'nin cevabı o zaman I frame göndermesine gerek yoktu tamam mı senden o göndereceğin mesajı aldım diyerek sadece A C K versi yani piggybacking yapmasına gerek yok sadece evet S receive ready almaya hazırım mesela ne diyecekti bir diyecekti
+
+74
+00:21:56,299 --> 00:22:28,119
+bu ne demek sıfırıncı freymi aldım senden artık birinci freymi bekliyorum eğer ki gönderecek verisi yoksa işte ona aslında şurada gösteriyoruz gönderecek verisi olmadığına nasıl bir yaklaşım sergiliyor burada da beğenin hakikaten gönderecek verisi olmayabilirdi bu demek değil ki A C K bilgilerini de göndermek istemiyor hayır A C K bilgilerini muhakkak göndermesi lazım ki karşı taraf window size'dan daha uzun işte window size'ı window'u sürekli slide yapabilmesi lazım yani A C K gelmezse yapamaz
+
+75
+00:22:28,119 --> 00:23:01,349
+teşekkür ederim ben teşekkür ederim başka sorusu olan var mı daha farklı bir örnek üzerinden gidelim o zaman kıymetli arkadaşlar şimdi yine bu şöyle söyleyelim bir şeyin connection'ın başlangıcıdan itibaren alınan bir şey değil öncelikle onu söyleyelim bu ara bir kesit tamam mı yani o veri gönderiliyor o veri gönderiminin arasında ara bir kesiti inceliyoruz şu an kıymetli
+
+76
+00:23:01,349 --> 00:23:24,430
+arkadaşlar şimdi ben karşı tarafa işte B tarafından düşünelim bir öncekinin devamı gibi de düşünmeyin bunu bu farklı bir kesit yani öyle düşünelim burada şimdi ben B tarafıyım A'ya veri göndereceğim gönderiyorum diyorum ki sana bir iframe gönderiyorum
+
+77
+00:23:24,430 --> 00:23:54,430
+iFrame'se muhakkak datada içine ekleyip göndereceğim göndereceğim bir şeyler var demektir şimdi ben sana iframe gönderiyorum gönderdiğim bu iframe'in gönderdiğim bu iframe benim üç numaralı frame'im yani bundan daha önce muhtemelen 0 1 2 numaralı frame'leri karşı tarafa göndermiştir üç numaralı frame'im eğer ki sen bana veri göndereceksen senden sıfır numaralı frame'i bekliyorum
+
+78
+00:23:54,430 --> 00:24:24,430
+tamam senden sıfır numaralı frame'i bekliyorum gönderdi A tarafına şimdi A bir cevap veriyor A'nın verdiği cevap ne receive not ready mesajı hatırlar bunu nedenir ona anımsarsanız daha önceki derslerden yani ne diyor receive not ready bir S frame bir kontrolle ilgili bilgilendireceği bir frame yani şu an bana bir şey göndermene nedenir ona
+
+79
+00:24:24,430 --> 00:24:53,210
+müsaade edemem veya nasıl söyleyeyim şu an bir şey almaya uygun değilim gibi bir nedenir ona mesaj gönderiyor karşı tarafa ama ama şu an müsait olmamakla birlikte senin en son gönderdiğin üç numaralı frame'i de o kadar işimin arasında aldım sakladım bana müsait olduğum zaman göndereceğin ilk frame 4 numaralı frame olsun
+
+80
+00:24:53,210 --> 00:25:23,210
+tamam mesela bak bunu söylüyor yani hani müsait değilim diyor ama adamın gönderdiği o üç numaralı frame'i de almış ona karşılık müsait değilim mi gönderiyor receive not ready ile beraber F'in bir gönderilmesi şu an müsait olmadığım manasına gelen bir şeydi hatırlarsanız buna karşılık olarak buna karşılık olarak B'ye uyanıyor bakın B olaya uyanıyor B'nin aslında bir sonraki yapması gereken şey neydi 4 numaralı frame'ini I frame üzerinden
+
+81
+00:25:23,210 --> 00:25:53,210
+göndermekti ama A'dan gelen mesaj doğrultusunda B olaya uyanıyor tamam okey artık sana şey göndermiyorum nedenir ona data göndermiyorum ama hem nedenir ona karşı tarafı bir check ediyor kontrol ediyor hazır mısın hazır mısın bir şey göndereyim mi sana şimdi receive not ready ile beraber F kullanmış oluyorduk receive ready ile beraberse P kullanmış oluyor bunların her zaman
+
+82
+00:25:53,210 --> 00:26:23,210
+değeri bir yani burada gördüğünüz üzere I frame'lerde sıfır olduğu durumlar oluyordu datayı ben karşı tarafa gönderiyorsam eğer datanın son frame'ini göndermediğim sürece bu F,P değerleri sıfır oluyordu onun son olduğunu belirten F değerinin bir olması gibi bir durum vardı onlardan belki ilerleyen örneklerde bahsederiz şimdi müsait değilim müsait olduğumda bana dört numaralı frame'i gönder kardeşim dedi
+
+83
+00:26:23,210 --> 00:26:52,569
+B'de A'ya cevap olarak müsait misin tabi burada sanki direkt nasıl söyleyelim hemen müsait değilim dedikten sonra müsait misin diye sorma gibi bir durum sanki zaman ekseninden dolayı anlaşılabilir ama şu aranın açık olduğunu da düşünür rastgele bir süre beklemiş olabilir adam protokollere niye el veriyorsa yani bir süre bekledikten sonra da bu iş gerçekleştirilebilir hemen zaten nasıl olacağı nedenir ona belli değil
+
+84
+00:26:52,569 --> 00:27:09,930
+şimdi receive ready nedeni ona sinyalini gönderdikten sonra karşı tarafa içerisinde bakın bir de şeyi yine ekliyor eğer ki bana göndermek istediğin bir şey varsa bir frame varsa bana sıfır numaralı frame'i gönder
+
+85
+00:27:09,930 --> 00:27:39,930
+adam yine aynı cevabı veriyor yani şu an müsait değilim ama müsait olduğumda söz senden dört numaralı frame'i bekliyorum tamam bakın müsait olduğumda söz senden dört numaralı frame'i bekliyorum tekrardan soruyor müsait misin tabi bu çok uzayabilir burada mesela iki kere sormuş yani rastgele bir zaman beklediğini düşünün şurada 300 kere de sorabilir adam hala daha müsait de olmayabilir müsait olmamasının sebebi adamdan kaynaklanan bir şey de olmayabilir bir collision olabilir hatta bir
+
+86
+00:27:39,930 --> 00:28:09,930
+hükmü bir yavaşlamadan kaynaklanan iş yükündeki fazlalık olabilir çok farklı sebepler olabilir ama adam en azından hattın içerisinden s frame'le müsait değilim diyebilecek kadar bir veri gönderebiliyor o kabiliyette öyle düşünelim ardından hazır mısın diye tekrar soruyor bu sefer artık evet hazırım bakın evet hazırım bana hadi dört numaralı frame'i gönder diyor ve ardından adam ay frame'le birlikte dört numaralı frame'i karşı tarafa gönderiyor
+
+87
+00:28:09,930 --> 00:28:48,250
+senin de göndereceğin bir şeyler varsa senden sıfır numaralı frame'i bekliyorum diyor evet sorusu olan var mı yok çok güzel devam ediyoruz o zaman tabi her daim şey güzel gerçekleşmiyor yani ben karşı tarafa veri gönderiyorum ama verenin başına yolda bir şeyler gelmiş olabilir yolda bir şeyler gelmiş olabilirden kastımız şu yani şey çalışmıyor olabilir nedendir ona hat çalışmıyor olabilir bir veya
+
+88
+00:28:48,250 --> 00:29:18,250
+bir hat karşı tarafa gönderip karşı tarafa ulaşmıştır ama bir biti birkaç biti hatalı gitmiştir ve hatalı gittiğini anladığımız anda karşı taraftan veriyi belki tekrar istememiz gerekebilir bu tarz durumlar söz konusu mesela verinin yolda başına bir şey geldiği durumu düşünüyor olalım verinin başına bir şey gelmiş olsun yine bir akıştan kesit arkadaşlar bu yani uzun bir
+
+89
+00:29:18,250 --> 00:29:48,250
+akıştan kesit a diyor ki ben sana veri göndereceğim üç numaralı frame'i gönderiyorum ola da sen bana gönderirsen sıfır numaralı frame'i gönder tamam sıfır numaralı frame'i gönder ay frame olduğunu nereden anlıyorduk bakın sıfır sıfır sıfır sıfır sıfır bunlar ay frame'di s frame bir sıfırlar s frame bir de u frame vardı bir bir olunca da u frame oluyordu zaten üç farklı şeyimiz vardı nedendir ona frame tipimiz vardı bu işte ns ve nr
+
+90
+00:29:48,250 --> 00:30:18,250
+şuraya yerleştiriliyor bakın kıymetli arkadaşlar yani ne diyor adam üç numaralı frame'i gönderdim bana göndereceksen sıfır numaralı frame'i gönder tabi sliding window yaptığımız için hemen dört numaralı frame'i de gönderiyor beş numaralı frame'i de gönderiyor karşı tarafa karşı taraf beş numaralı frame'i aldığı anda bakın beş numaralı frame'i aldığı anda o zamana kadar çünkü dördün başına bir şey gelip gelmediğini anlayamaz yani karşı taraf
+
+91
+00:30:18,250 --> 00:30:48,250
+bana göndermedi yoksa işte başka bir şey mi oldu adam hala dördü bekliyor yani şuradan hala daha dördü bekliyor gelecek diye bir geliyor beş tamam dördün başına bir şey gelmiş diyor karşı tarafa bir s frame ile bilgilendirme yapıyor recek komutunu gönderiyor bana dördü tekrar gönder go beken yapıyor burada mesela selektif recek de vardı hatırlarsanız selektif recek yaptığında ise mesela burada go beken de nasıl olacak bana dört numaralı
+
+92
+00:30:48,250 --> 00:31:18,250
+frame'i gönder dörtten sonra gönderilen tüm frame'leri tekrar gönderecek recek de selektif recek'te ise sadece o hatalı geleni söylüyorduk onu gönderiyordu ama burada recek yapılması nasıl söyleyeyim tercih edilmiş dört numaralı frame'i bana geri gönder adam tekrar dört numaralı frame'i gönderiyor senden sıfır bekliyorum diyerek ve yine ardından beş numaralı frame'i gönderiyor yine senden sıfır numaralı frame'i bekliyorum diyerek
+
+93
+00:31:18,250 --> 00:31:49,660
+evet şimdi multi point iş nasıl gerçekleştiriliyor ona bakalım yani point to point'te işte az önce olduğu gibi A'dan B'ye gidiyor bizim hatırlarsanız böyle primary ve secondary'lerimizin olduğu çeşitli şeylerimiz vardı iletişim protokollerimiz vardı burada bütün akış primary üzerinden kontrol ediliyordu hatırlarsanız bunu pekala böyle bir durumda iş nasıl
+
+94
+00:31:49,660 --> 00:32:10,900
+gerçekleştiriliyor onlar üzerinde duruyor olalım evet yani chatten sonra almıyoruz kıymetli arkadaşlar lütfen sormak isteyen varsa sesli olarak sorsun şimdi primary'den bir tane primary'miz var A,B diye iki tane secondary'miz olmuş olsun daha pardon ne yaptık ya
+
+95
+00:32:10,900 --> 00:32:40,900
+evet tamam tabi daha fazla da secondary olabilir şimdi S frame ile bakın S frame ile primary tabi burada hemen şunu anlıyoruz şurada A yazması alıcının adresiydi öyle söyleyelim alıcının adresiydi eğer ki bu bir bu şekilde primary secondary ilişkisinde bir network içerisindeyse alıcının numarası da diyebiliriz yani adresi demek zorunda değiliz alıcının numarası diye de söyleyebiliriz bunu
+
+96
+00:32:40,900 --> 00:33:10,900
+A'ya gönderiyor çünkü A'ya gönderiyor niçin gerekli hocam zaten bu adam A'ya göndersin benim elimde bir top olsa mesela öğrenciye bu topu atmak istesem o öğrenciye atarım yani zaten sana atıyorum diye ekstradan söylememe gerek yok ki diyebilirsiniz ama bu adamın gönderdiği veri hattın tamamında gidiyor yani A'ya gitti mesela öyle bir sinyal değil ki buradan A olduğunu anlayıp buradan kablodan sadece A'ya geliyor diye değil bu aslında B'ye de geliyor
+
+97
+00:33:10,900 --> 00:33:20,900
+B'ye açıp hemen bakıyor A bu benlik bir sinyal değil tamam ben bununla muhatap olmamam lazım diyor B'ye yani tamam böyle bir şey var o yüzden muhatap olmamalıyız
+
+98
+00:33:20,900 --> 00:33:23,900
+Hocam burada bir şey sorabilir miyim?
+
+99
+00:33:23,900 --> 00:33:24,900
+Buyurun
+
+100
+00:33:24,900 --> 00:33:31,900
+Burada bas yapısı mı o zaman hani burada bir switch yok herhalde doğru mu anladım hani
+
+101
+00:33:31,900 --> 00:33:38,900
+Evet bas yapısı gibi düşünebiliriz burada switch olan versiyonlara da bu dersin ilerleyen zamanlarında değişeceğiz değineceğiz
+
+102
+00:33:38,900 --> 00:33:50,900
+Eğer ki switch varsa biraz daha o protokoller böyle IEEE 800E taraflarına doğru kayan şeyler şu an burada işte bas gibi ring gibi çeşitli belki topolojilerden bahsediyoruz yani
+
+103
+00:33:50,900 --> 00:34:07,900
+Bu HDLC o zaman üst katman sistemlerde kullanıyoruz galiba değil mi hani bir mikro denetleyicili sistemde bir cam bas gibi filan öyle bir yapıda bunu da kullanabilir miyiz yoksa
+
+104
+00:34:07,900 --> 00:34:11,900
+Bu daha üst katman bir protokol olarak mı?
+
+105
+00:34:11,900 --> 00:34:28,900
+Evet cam bas bunlara göre tabi daha farklı osireferans modelindeki layer'ları düşünün farklı layer'ları kapsayacak şekilde geliştirilmiş bir protokol şu an konuştuğumuz HDLC yöntemi ise sadece datalink layer'ın içerisinde
+
+106
+00:34:28,900 --> 00:34:29,900
+İkinci katmanda anladım
+
+107
+00:34:29,900 --> 00:34:36,900
+Evet ikinci katmanda datalink layer'ın içerisinde konuşuyoruz şu an henüz daha network katmanına hiçbir zaman derste geçmeyeceğiz aslında
+
+108
+00:34:36,900 --> 00:34:44,900
+Network katmanını anlatıldığı ders A teknolojileri diye bir ders alacaksınız orada network katmanı anlatılıyor olacak daha çok datalink layer'de
+
+109
+00:34:44,900 --> 00:34:51,900
+Şimdi datalink layer'de tabi başımıza çeşitli problemler geliyor onları anlatmaya çalışıyoruz neler olduğunu yani ben karşı tarafa veriyi gönderiyorum
+
+110
+00:34:51,900 --> 00:34:58,900
+Karşı tarafta bana bir şekilde iletişim kurmaya çalışıyor ama sürekli gönderdim gönderdim gönderdim gönderdim gitmedi
+
+111
+00:34:58,900 --> 00:35:04,900
+Ondan sonra datalink layer hemen üst katmanlara diyor ki ya kardeşim ben bu işi yapamıyorum bak bana bir görev verdin
+
+112
+00:35:04,900 --> 00:35:07,900
+Karşı tarafa bu veriyi göndermemi istiyorsun ama gönderemiyorum
+
+113
+00:35:07,900 --> 00:35:17,900
+Sen üst katmanlarda çöz bu işi ne yapacaksan orada yap tamam o zaman üst katmanlar farklı şekilde yol haritası çıkartabiliyorlar tekrardan
+
+114
+00:35:17,900 --> 00:35:30,900
+Ama arka tarafta bakıldığında datalink layer'da olaylar bu şekilde ilerliyor bugün mesela şey göreceğiz 802.3 I3P'nin Ethernet protokolü şu an hepimiz bu protokolü kullanıyoruz yani
+
+115
+00:35:30,900 --> 00:35:43,900
+Ama yine datalink layer'da işlerin nasıl işlediği fakat 802 projesi komple hepsi işte HDLJ'yi referans alıyor azıcık şu kısmını değiştirmiş
+
+116
+00:35:43,900 --> 00:35:51,900
+Fileyi şu fileye ihtiyaç olmasında şunu olsun ihtiyaç demiş gibi ufak tefek şeylerini değiştirerek hepsi HDLJ kullanıyor
+
+117
+00:35:51,900 --> 00:36:01,900
+Bugün veri gönderiyorsam benim sesimi duyuyorsanız bu yöntem datalink layer'da işleyen şey tam olarak şu an bu buyurun
+
+118
+00:36:01,900 --> 00:36:07,900
+Eski hablı o zaman yapılarda daha çok değil mi bu şekilde?
+
+119
+00:36:07,900 --> 00:36:11,900
+Evet hablı yapılarda daha çok
+
+120
+00:36:11,900 --> 00:36:13,900
+Tamam teşekkürler hocam
+
+121
+00:36:13,900 --> 00:36:15,900
+Ben teşekkür ederim
+
+122
+00:36:15,900 --> 00:36:27,900
+Evet başka sorusu olan varsa alabiliriz tabii ki kıymetli arkadaşlar şu an size HDLJ datalink layer protokolü üzerinden veri göndererek bunu söylemiş oldum
+
+123
+00:36:27,900 --> 00:36:32,269
+Yok çok güzel
+
+124
+00:36:32,269 --> 00:36:38,269
+Şimdi bir tane primary'miz var doğal olarak bir tane primary ise bir tane olması lazım
+
+125
+00:36:38,269 --> 00:36:44,269
+Bir kaç farklı da sekünderimiz olduğunu düşünelim bu primary A'ya poll yapmak istiyor
+
+126
+00:36:44,269 --> 00:36:56,269
+Yani poll yapmak ne demekti A'ya ben sana soruyorum ki bana göndereceğin veya farklı bir sekünderiye göndereceğin bir şeyler var mı?
+
+127
+00:36:56,269 --> 00:36:58,269
+Tamam mı poll yapmak?
+
+128
+00:36:58,269 --> 00:37:00,269
+Bir de mesela selek yapabiliyordu hatırlarsanız
+
+129
+00:37:00,269 --> 00:37:08,269
+Selek yapmak neydi? Bu cihazlardan birisinin selek yapıyordu ben sana veri göndereceğim diye sen müsait misin müsaitsen veri göndereceğim diye selek yapıyordu
+
+130
+00:37:08,269 --> 00:37:12,269
+Şimdi mesela burada yaptığı iş poll yani ne demek poll?
+
+131
+00:37:12,269 --> 00:37:24,269
+Receive ready sinyaliyle birlikte P1 gönderiliyorsa multipoint yapılarda bunun poll manasına geldiğimizi geçen derste söylemiştik
+
+132
+00:37:24,269 --> 00:37:34,269
+Tamam adam diyor ki A'ya poll mesajının ulaştığını veya ulaşamadığını o an varsaymış olalım sadece şu an
+
+133
+00:37:34,269 --> 00:37:40,269
+Şimdi ulaşamadığını varsaymış derken şunun için söylüyorum bunu
+
+134
+00:37:40,269 --> 00:37:46,269
+Şurada hep A yazıyor ya yani burada multipoint yapılarda kesinlikle şuna aldanmayın kıymetli arkadaşlar
+
+135
+00:37:47,269 --> 00:37:54,269
+Burada hangi cihazla konuşuluyorsa o yazar zaten diğer taraf her durumda primary
+
+136
+00:37:54,269 --> 00:38:03,269
+O yüzden mesela A'da bir cevap gönderiyor olsa primary'ye orada da yine burada primary'nin P'si değil de yine A yazıyor olacak
+
+137
+00:38:03,269 --> 00:38:14,269
+Buna karşılık mesela A hemen cevap gönderiyor diyor ki tabi bu ne dedi bana göndereceğin bir şey var mı dedi A'da zaten bekliyormuş tabi yani olmaz mı dedi
+
+138
+00:38:14,269 --> 00:38:27,710
+Ve çok pardon olmaz mı dedi sıfır numaralı frame'i şurada bir tane daha sıfır olacak arkadaşlar burayı yanlış yapmışız gözümüzden kaçmış
+
+139
+00:38:27,710 --> 00:38:33,710
+Sıfır numaralı frame'ini karşı tarafa gönderiyor yani primary'ye gönderiyor tamam ardından
+
+140
+00:38:33,710 --> 00:38:39,710
+Eğer primary sen de bana bir şeyler göndereceksen sıfır numaralı frame'ini bekliyorum diyor
+
+141
+00:38:39,710 --> 00:38:49,710
+Ama bakın F sıfır burası önemli F sıfır niçin F sıfır çünkü sana daha göndereceğim veri var diyor
+
+142
+00:38:49,710 --> 00:38:54,710
+F sıfır geldiği anda sana daha göndereceğim veri var diyor
+
+143
+00:38:54,710 --> 00:39:06,710
+Ardından yine işte secondary nedenle ona A tabi şuna gönderildiği için A bir numaralı şey evet bir numaralı frame'ini gönderiyor
+
+144
+00:39:06,710 --> 00:39:15,710
+Fakat F'i bir yaptığı anda hemen ne anlıyoruz tamam artık son numaralı frame'ini gönderiyor onu anladık karşı tarafa geldi
+
+145
+00:39:15,710 --> 00:39:28,710
+Şimdi karşı taraf nedenle ona bunları alıp almadığını söyleme gibi bir durumu söz konusu primary'nin veya işte
+
+146
+00:39:28,710 --> 00:39:38,710
+Network'un o bağlantının connection'ın geleceğiyle ilgili ne tarz bir şey yapılıp yapılmayacağını söylemesi gibi bir durum söz konusu
+
+147
+00:39:38,710 --> 00:39:48,710
+O yüzden ilk yapıcı iş aslında temelde çünkü A'dan gelen mesajları primary alamamış olabilir böyle bir durum da söz konusu
+
+148
+00:39:48,710 --> 00:39:57,710
+Karşı tarafa ne gönderiyor karşı tarafa bir rapor gönderiyor işte gönderdiği frame S frame sıfır bir olduğu için
+
+149
+00:39:57,710 --> 00:40:05,710
+Diyor ki senin bana gönderdiğin iki numaralı frame'i göndereceğin iki numaralı frame'i en son bekliyorum
+
+150
+00:40:05,710 --> 00:40:16,710
+Bu ne manaya geliyordu kıymetli arkadaşlar bunun geldiği mana şu ben sana senin bana gönderdiğin sıfır ve bir numaralı frame'leri aldım
+
+151
+00:40:16,710 --> 00:40:25,710
+O manaya geliyordu bu ama bundan sonra da zaten herhangi bir şey göndereceksen olaya hazır değilim
+
+152
+00:40:25,710 --> 00:40:33,710
+Yani receiver not ready ile aslında almaya da hazır olmadığını ekstradan söylemiş oluyor
+
+153
+00:40:33,710 --> 00:40:39,710
+Şimdi bir farklı senaryoya geçelim şu üst kısmını kırptık ama bir tarafta primary var bir tarafta da secondary'leri var
+
+154
+00:40:39,710 --> 00:40:42,710
+O üst kısmını biraz kırpmış olduk
+
+155
+00:40:42,710 --> 00:40:45,710
+Hocam ben önceki slide ile ilgili bir soru sorabilir miyim?
+
+156
+00:40:45,710 --> 00:40:50,710
+Slide ile ilgili hemen geçiyorum bir dakika geçemedim çok ileri gittim buyurun
+
+157
+00:40:50,710 --> 00:41:00,710
+Burada A cihazı FI1 yaparak en son bir I frame gönderdi ya artık hani veri göndermeyeceğini söylemiş oldun değil mi bu frame ile beraber
+
+158
+00:41:00,710 --> 00:41:06,710
+Evet yani göndericiyi bu R dışı nedendir ona
+
+159
+00:41:06,710 --> 00:41:12,710
+Mesela adam 5 farklı şey söylemeye çalıştığını düşün 5 farklı adama PDF dosyasını gönderecek
+
+160
+00:41:12,710 --> 00:41:18,710
+Göndereceği bir PDF dosyasının bunun son verisi son frame olduğunu söylüyor
+
+161
+00:41:18,710 --> 00:41:20,710
+Tamam
+
+162
+00:41:20,710 --> 00:41:25,710
+Onun sonu olduğunu biliyoruz ama yine de bir şey daha göndereceksen ona hazır değilim mi dedik orada
+
+163
+00:41:25,710 --> 00:41:32,710
+Tabii gönderecek olabilir yani şimdi şöyle mesela belki daha önce bu tarz şeyler yapmışsınızdır
+
+164
+00:41:32,710 --> 00:41:40,710
+Diyelim ki rare dosyalarını düşünün çok büyük rare boyutlu dosyalarını 5 farklı parçaya bölüyorlar
+
+165
+00:41:40,710 --> 00:41:46,710
+Sen onlardan bir tanesini indirdiğinde veya zip sıkıştırılmış dosyanın bir tanesini indirdiğinde tek başına açamıyorsun
+
+166
+00:41:46,710 --> 00:41:49,710
+5'i de elinde olmak zorunda ki açabilesin
+
+167
+00:41:49,710 --> 00:41:54,710
+Adam şimdi veriyi şifreli göndermiş veriyi sıkıştırılmış göndermiş
+
+168
+00:41:54,710 --> 00:42:04,710
+Bunların hepsini sen işlemen gerekiyor ama en son o datanın en son frame'ini de aldıktan sonra bu işlemi gerçekleştirebilirsin
+
+169
+00:42:04,710 --> 00:42:09,710
+Ya o frame doğru gelmiş mi diye CRC ile zaten kontrol ediyorsun o ayrı mevzu
+
+170
+00:42:09,710 --> 00:42:16,710
+Ama üst katmanlarda application tarafında verinin şifrelenmesi verinin sıkıştırılması gibi durumlar söz konusudur
+
+171
+00:42:16,710 --> 00:42:28,710
+Ve bu işlemleri sen tekrardan açmak istiyorsan üst katmana doğru çıkması için 17 frame'den oluşan bir sana veri gönderiliyorsa o 17'nin tamamını aldıktan sonra açman lazım
+
+172
+00:42:28,710 --> 00:42:33,710
+Ama sen adama 17 frame'den oluşan bir tane PDF gönderdin
+
+173
+00:42:33,710 --> 00:42:38,710
+Tekrardan 19 frame'den oluşan bir resim gönderebilirsin karşı tarafa
+
+174
+00:42:38,710 --> 00:42:45,710
+Yani aslında göndereceğin şey devam ediyor ama o ilk göndermeye başladığın veriyi karşı tarafa ilettin
+
+175
+00:42:45,710 --> 00:42:54,710
+Yani ben o frame dizimi göndermeyi bitirdiğimde connection'i de muhakkak kapatmalıyım diye bir durum söz konusu değil
+
+176
+00:42:54,710 --> 00:42:59,710
+Hala daha farklı bir mesaj bir veri göndermek istiyor olabilirsin karşı tarafa
+
+177
+00:42:59,710 --> 00:43:02,710
+Onun için yani ben sana göndereceğim şeyleri bitirdim
+
+178
+00:43:02,710 --> 00:43:09,710
+Sen şu iki tane paket al güzelce ne denir ona sıkıştırılmışsa bunlara uncompress yap
+
+179
+00:43:09,710 --> 00:43:15,710
+Veya şifrelenmişse şifresini falan çözüp manayla hale getir diyor
+
+180
+00:43:15,710 --> 00:43:24,710
+Bu da diyor ki şey ne zaman derdi pekala bu adam piggybegging ile değil de artık sana göndereceğim hiç veriyor
+
+181
+00:43:24,710 --> 00:43:28,710
+Konneksiyonu kapatalım demesi için zaten U frame'ler var onları konuşmuştuk
+
+182
+00:43:28,710 --> 00:43:32,710
+U frame'ler var böyle bir durumda
+
+183
+00:43:32,710 --> 00:43:36,710
+Adam diyor ki şu an senden henüz mesaj almaya hazır değilim
+
+184
+00:43:36,710 --> 00:43:41,710
+Göndermek istediği bir şey varsa diye ola ki illa gönderecek diye bir şey de yok
+
+185
+00:43:41,710 --> 00:43:48,710
+Ama primary söylüyor yani ola da göndermek istediğim bir şey varsa gönderme diye
+
+186
+00:43:48,710 --> 00:43:50,710
+[öğrenci] güzel bir soruydu teşekkür ederiz
+
+187
+00:43:50,710 --> 00:43:52,710
+Anladım hocam teşekkür ederim ben de
+
+188
+00:43:52,710 --> 00:43:53,710
+Ben teşekkür ederim
+
+189
+00:43:53,710 --> 00:43:55,710
+Evet başka sorusu olan var mı?
+
+190
+00:43:55,710 --> 00:44:04,349
+Evet şimdi şunu kapatalım
+
+191
+00:44:04,349 --> 00:44:08,349
+Şimdi yine multi point yapıdayız bir tane primerimiz var
+
+192
+00:44:08,349 --> 00:44:13,349
+Bir tane de en azından bir tane B isimli sekünderimiz olduğunu düşünelim
+
+193
+00:44:13,349 --> 00:44:15,349
+Şimdi pol yapmak neydi?
+
+194
+00:44:15,349 --> 00:44:19,349
+Pol bu multi point yapıdaki pol yapmayı tekrardan anlatalım
+
+195
+00:44:19,349 --> 00:44:23,349
+Ben primary'yim benim çeşitli sekünderilerim var
+
+196
+00:44:23,349 --> 00:44:30,349
+Onlara söylemek istediğim bir şey var mı diye sormak kısmına pol yapmak diyoruz
+
+197
+00:44:30,349 --> 00:44:34,349
+Ama ben onlara bir veri göndereceksem
+
+198
+00:44:34,349 --> 00:44:38,349
+Yani ben işte A bana mesela az önce mesaj göndermişti
+
+199
+00:44:38,349 --> 00:44:41,349
+Ben A'ya karşılık o mesajı karşılık bir şeyler göndereceksem A'ya
+
+200
+00:44:41,349 --> 00:44:44,349
+A'yı select yapmam gerekiyor
+
+201
+00:44:44,349 --> 00:44:49,349
+Burada da receive not ready sinyaliyle birlikte
+
+202
+00:44:49,349 --> 00:44:51,349
+P'nin bir olması durumunda
+
+203
+00:44:51,349 --> 00:44:58,349
+B'nin select edildiği primary tarafından B'nin select edildiği durum söz konusu olmuş oluyor
+
+204
+00:44:58,349 --> 00:45:05,349
+Burada mesela receive ready ile beraber bir gönderdiğimizde pol olmuş oluyordu
+
+205
+00:45:05,349 --> 00:45:11,349
+Receive not ready ile beraber bir gönderdiğimizde bu select olmuş oluyor
+
+206
+00:45:11,349 --> 00:45:12,349
+Tamam
+
+207
+00:45:12,349 --> 00:45:17,349
+Yani burada receive not ready gönderilmesi doğrudan şey değil
+
+208
+00:45:17,349 --> 00:45:20,349
+İletişime hazır değilim manasında değil
+
+209
+00:45:20,349 --> 00:45:24,349
+Neyse ardından şimdi B'yi seçiyoruz
+
+210
+00:45:24,349 --> 00:45:27,349
+B sana bir şey göndereceğim diye
+
+211
+00:45:27,349 --> 00:45:30,349
+B de buna karşılık olarak bir cevap veriyor
+
+212
+00:45:30,349 --> 00:45:33,349
+Verdiği cevap ne? Receive ready
+
+213
+00:45:33,349 --> 00:45:35,349
+Data almaya hazırım
+
+214
+00:45:35,349 --> 00:45:37,349
+Bana nedendir ona veri gönderebilirsin
+
+215
+00:45:37,349 --> 00:45:39,349
+Bazıları şuradaki sıfırları unutmuşuz arkadaşlar
+
+216
+00:45:39,349 --> 00:45:42,349
+Buralarda 3'er sıfır var aslında tamam mı?
+
+217
+00:45:42,349 --> 00:45:46,349
+Başında yani şurada da sonuna ekleyince çok yanlış anlaşılır da
+
+218
+00:45:46,349 --> 00:45:48,349
+Şöyle başında 3 sıfır var
+
+219
+00:45:48,349 --> 00:45:52,349
+Bunların her birisinin onları koymayı unutmuşuz
+
+220
+00:45:52,349 --> 00:45:55,349
+Ne anlatıyorduk? Tamam
+
+221
+00:45:55,349 --> 00:45:57,349
+Receive ready ile karşı tarafa gönderiyoruz
+
+222
+00:45:57,349 --> 00:45:58,349
+Göndereceksem tamam
+
+223
+00:45:58,349 --> 00:46:00,349
+Senin beni seçtiğini anladım
+
+224
+00:46:00,349 --> 00:46:02,349
+Select yaptığını anladım
+
+225
+00:46:02,349 --> 00:46:04,349
+Müsaitim buyur
+
+226
+00:46:04,349 --> 00:46:08,349
+Bana nedendir ona sıfır numaralı frame'ini gönderebilirsin
+
+227
+00:46:08,349 --> 00:46:11,349
+Ola da sende bir şey göndereceksen
+
+228
+00:46:11,349 --> 00:46:15,349
+Sende bir şey göndereceksen dediğimiz anda ne anlaşılması lazım arkadaşlar?
+
+229
+00:46:15,349 --> 00:46:18,349
+Duplex, full duplex bir yapı
+
+230
+00:46:18,349 --> 00:46:20,349
+Ben gönderirim o gönderiyor
+
+231
+00:46:20,349 --> 00:46:23,349
+Ben gönderirim o gönderiyor böyle arada
+
+232
+00:46:23,349 --> 00:46:25,349
+Gibi bir yapı
+
+233
+00:46:25,349 --> 00:46:27,349
+Sende bir şey göndereceksen bana gönder
+
+234
+00:46:27,349 --> 00:46:31,349
+Piggy backing yaparak bu ACK versiyonu karşı tarafa gönderiyoruz
+
+235
+00:46:32,349 --> 00:46:34,349
+P bitti
+
+236
+00:46:34,349 --> 00:46:36,349
+Şey P diyorum
+
+237
+00:46:36,349 --> 00:46:41,349
+Primary ardından B'den aldığı
+
+238
+00:46:41,349 --> 00:46:45,349
+Tamam şu an gönder bana hazırım mesajından sonra
+
+239
+00:46:45,349 --> 00:46:48,349
+Bir iframe gönderiyor veriyi içerisine koyuyor
+
+240
+00:46:48,349 --> 00:46:53,349
+Tabi eğer ki göndereceği verinin bu frame'i
+
+241
+00:46:53,349 --> 00:46:57,349
+En son frame değilse şuradaki iframe'in P ve F şeyleri
+
+242
+00:46:58,349 --> 00:47:02,349
+Bitti yani diyelim sıfır oluyor olacak
+
+243
+00:47:02,349 --> 00:47:08,349
+Eğer ki gönderilecek bit son nedendir ona bitse
+
+244
+00:47:08,349 --> 00:47:13,349
+Bunun değeri nedendir ona 1 olması gerekiyor bu hatırlarsanız
+
+245
+00:47:13,349 --> 00:47:15,349
+Burada multi point gönderimde
+
+246
+00:47:15,349 --> 00:47:19,349
+Selekle beraber gönderildiğiyle yani selekle beraber seçim yapıldığında
+
+247
+00:47:19,349 --> 00:47:22,349
+Burada işte iframe'in çok fazla
+
+248
+00:47:22,349 --> 00:47:26,349
+Iframe'in bu pf bitinin çok fazla bir önemi olmayabiliyor
+
+249
+00:47:26,349 --> 00:47:31,349
+Çünkü zaten benim gönderdiğim şeye hazırsan
+
+250
+00:47:31,349 --> 00:47:34,349
+Ve akışıda ben yönlendiriyorsam
+
+251
+00:47:34,349 --> 00:47:39,349
+Bir süre sonra benim elimdeki ve göndereceğim veri bittikten sonra
+
+252
+00:47:39,349 --> 00:47:45,349
+Sana işte iframe konneksiyonu sollandırma bağlantısı göndereceğim
+
+253
+00:47:45,349 --> 00:47:47,349
+Gibi bir yaklaşım sergileyebiliyor primary
+
+254
+00:47:47,349 --> 00:47:50,349
+O yüzden bu multi point yapıda konuşurken
+
+255
+00:47:50,349 --> 00:47:55,349
+Genellikle pf bitinin çok büyük manalar ifade etmediği
+
+256
+00:47:55,349 --> 00:48:00,349
+Eğer ki selekt yapılmışsa durumlar söz konusu olabiliyor
+
+257
+00:48:00,349 --> 00:48:04,349
+Şimdi mesela bir sonraki fremdeydi
+
+258
+00:48:04,349 --> 00:48:10,349
+Beğenin artık kendisinin işte kendisine gönderilen veriyi aldığını tamam mı
+
+259
+00:48:10,349 --> 00:48:16,349
+Kendisine gönderilen veriyi aldığını ve işte nerede o
+
+260
+00:48:16,349 --> 00:48:22,349
+Şurası 0 numaralı fremi alıp 1 numaralı fremi beklediğini karşı tarafa söylüyor
+
+261
+00:48:22,349 --> 00:48:24,349
+Tamam
+
+262
+00:48:24,349 --> 00:48:25,349
+Karşı tarafa söylüyor
+
+263
+00:48:25,349 --> 00:48:29,349
+Mesela burada böyle bir s-frame'in içerisinde az önce iframe'de
+
+264
+00:48:29,349 --> 00:48:31,349
+Şu pf'nin bir önemi yok demiştik
+
+265
+00:48:31,349 --> 00:48:35,349
+Ama iframe'in içerisinde f'yi bir göndermek
+
+266
+00:48:35,349 --> 00:48:39,349
+Receive ready ile birlikte sana göndereceğim herhangi bir data yok kardeşim
+
+267
+00:48:39,349 --> 00:48:42,349
+Manasına gelen bir şey olmuş oluyor
+
+268
+00:48:42,349 --> 00:48:44,349
+Primary de bunu anlıyor
+
+269
+00:48:44,349 --> 00:48:52,349
+Tamam o zaman ben sana göndermeye devam edeceğim veri veya sonlandıracağım akışın devamında diyebilir
+
+270
+00:48:52,349 --> 00:48:57,349
+Evet şimdi combined yapıya bakalım
+
+271
+00:48:57,349 --> 00:48:59,349
+Yani neler vardı hatırlarsanız
+
+272
+00:48:59,349 --> 00:49:02,349
+Point to point yapı vardı
+
+273
+00:49:02,349 --> 00:49:04,349
+Yani a vardı b vardı
+
+274
+00:49:04,349 --> 00:49:09,349
+Bunlar birbirlerine çeşitli zaman dilimlerinde veri gönderebiliyorlardı
+
+275
+00:49:09,349 --> 00:49:11,349
+Multi point yapı vardı
+
+276
+00:49:11,349 --> 00:49:14,349
+Yani bir primary ve secondary'lerin olduğu yapı vardı
+
+277
+00:49:14,349 --> 00:49:17,349
+Bir de combined bir mod vardı
+
+278
+00:49:17,349 --> 00:49:19,349
+Combined modda da
+
+279
+00:49:19,349 --> 00:49:26,349
+Diyelim ki sanki point to point'miş gibi her iki tarafın da veri gönderebildiği durumu
+
+280
+00:49:26,349 --> 00:49:28,349
+Veri göndermeye başlayabildiği bir durumu düşünelim
+
+281
+00:49:28,349 --> 00:49:34,349
+Ama her iki taraf combined yapıda istediği zaman primary görevini üstlenip diğerine secondary gibi davranabiliyordu
+
+282
+00:49:34,349 --> 00:49:36,349
+O yüzden combined diyorduk biz bu yapıya
+
+283
+00:49:36,349 --> 00:49:40,349
+Bunun da üzerinden geçelim dilerseniz
+
+284
+00:49:40,349 --> 00:49:43,349
+Akış nasıl gerçekleştiriliyor ona bakalım
+
+285
+00:49:43,349 --> 00:49:47,349
+Şimdi akışın başından itibaren gerçekleştiği için
+
+286
+00:49:47,349 --> 00:49:53,349
+Öncelikle a'dan b'ye bir u-frame ile seninle iletişime geçmek istiyorum
+
+287
+00:49:53,349 --> 00:49:54,349
+Ne dersin?
+
+288
+00:49:54,349 --> 00:49:57,349
+Gibi bir şey gönderiyoruz
+
+289
+00:49:57,349 --> 00:49:58,349
+Ne denir ona?
+
+290
+00:49:58,349 --> 00:49:59,349
+U-frame gönderiyoruz
+
+291
+00:49:59,349 --> 00:50:04,349
+Karşı taraftan bize gelen u-frame ile
+
+292
+00:50:04,349 --> 00:50:08,349
+Tamam şu an bana bir şey göndermene hazırım
+
+293
+00:50:08,349 --> 00:50:09,349
+Buyur gönder
+
+294
+00:50:09,349 --> 00:50:11,349
+Mesajını almış oluyoruz
+
+295
+00:50:11,349 --> 00:50:16,349
+Ardından a, b'ye i-frame içerisinde
+
+296
+00:50:16,349 --> 00:50:18,349
+Sıfırıncı frame'ini gönderiyor
+
+297
+00:50:18,349 --> 00:50:20,349
+Birinci frame'ini gönderiyor
+
+298
+00:50:20,349 --> 00:50:23,349
+Ondan sonra b, a'ya
+
+299
+00:50:23,349 --> 00:50:30,349
+Diyor ki sana şu an sıfırıncı frame'i gönderiyorum ve senden iki numaralı frame'i bekliyorum
+
+300
+00:50:30,349 --> 00:50:31,349
+Yine piggy begging yaparak
+
+301
+00:50:31,349 --> 00:50:35,349
+Sana sıfırıncı numaralı frame'i gönderiyorum senden ikiyi bekliyorum
+
+302
+00:50:35,349 --> 00:50:36,349
+Bunu vurgulayarak söylüyorum
+
+303
+00:50:36,349 --> 00:50:39,349
+Hep söylüyorum kafanız burada karışmasın diye çünkü
+
+304
+00:50:39,349 --> 00:50:41,349
+Sana senden iki numaralı frame'i bekliyorum
+
+305
+00:50:41,349 --> 00:50:46,349
+Şurada iki yazmasının esprisine ikiye kadar olan bütün frame'leri aldım
+
+306
+00:50:46,349 --> 00:50:47,349
+Yani sıfır ve biri aldım
+
+307
+00:50:47,349 --> 00:50:49,349
+Zaten adam sıfır ve biri göndermişti
+
+308
+00:50:49,349 --> 00:50:53,349
+Burada iki yazması her şeyin yolunda gittiği manasına gelen bir şey
+
+309
+00:50:53,349 --> 00:50:54,349
+Kıymetli arkadaşlar
+
+310
+00:50:54,349 --> 00:51:02,349
+Ardından yine b, sana bir numaralı frame'i gönderiyorum
+
+311
+00:51:03,349 --> 00:51:06,349
+ve senden iki numaralı frame'i bekliyorum
+
+312
+00:51:06,349 --> 00:51:10,349
+Yine b, sana iki numaralı frame'i gönderiyorum
+
+313
+00:51:10,349 --> 00:51:13,349
+ve senden yine iki numaralı frame'i bekliyorum
+
+314
+00:51:13,349 --> 00:51:18,349
+Bakın karşılıklı biyos gönderiyor biyo gönderiyor gibi
+
+315
+00:51:18,349 --> 00:51:28,349
+Yani aslında önce b sonra a göndermiş ama bunlar böyle çok milisaniyeler içerisinde birkaç yüz bin kez olduğu için çok fazla sıkıntı olmuyor
+
+316
+00:51:28,349 --> 00:51:39,349
+Ardından a'nın mesela gönderebilecek b'ye herhangi bir datası olmadığı durumda bununla ilgili b'yi bilgilendirmek için s-frame gönderiyor
+
+317
+00:51:39,349 --> 00:51:43,349
+Yani diyor ki artık sana gönderebilecek hiçbir datam yok
+
+318
+00:51:43,349 --> 00:51:45,349
+Sıfırıncı frame'i işaretliyor
+
+319
+00:51:45,349 --> 00:51:48,349
+Oysa ki en son biri göndermişti
+
+320
+00:51:48,349 --> 00:51:52,349
+Şurada bu nasıl söyleyeyim bir i-frame olsaydı iki yazacaktı
+
+321
+00:51:52,349 --> 00:51:54,349
+Sana gönderebileceğim hiçbir şey yok
+
+322
+00:51:54,349 --> 00:51:58,349
+Ama senden üç numaralı frame'i bekliyorum
+
+323
+00:51:58,349 --> 00:52:02,349
+Bu ne demek? İkisini aldım, ikiye kadar olanı aldım
+
+324
+00:52:02,349 --> 00:52:05,349
+Sıfır, bir, ikiyi aldım senden üçü bekliyorum
+
+325
+00:52:05,349 --> 00:52:09,349
+diye böyle bir yapı kurulmuş oluyor
+
+326
+00:52:09,349 --> 00:52:17,349
+Yani şey bazı mesela point-to-point yapılarda duruma göre combined yapılar kullanılırsa bu ne demek?
+
+327
+00:52:17,349 --> 00:52:23,349
+Dilediği zaman birisinin primary görevini üstlenip o şekilde davrandığı durumlarda da bu şekilde bir iletişim
+
+328
+00:52:23,349 --> 00:52:28,349
+Örneksel olarak sağlamak mümkün gibi duruyor
+
+329
+00:52:28,349 --> 00:52:30,349
+Sorusu olan var mı?
+
+330
+00:52:35,769 --> 00:52:37,769
+Güzel bir mola verelim arkadaşlar
+
+331
+00:52:37,769 --> 00:52:39,769
+10 geçe burada olalım olur mu?
+
+332
+00:52:39,769 --> 00:52:40,769
+Şu an kaç geçiyor?
+
+333
+00:52:40,769 --> 01:13:05,899
+50 geçiyor, 11, 10 da burada olalım
+
+334
+01:13:05,899 --> 01:13:09,899
+Evet, tekrardan merhaba kıymetli arkadaşlar
+
+335
+01:13:09,899 --> 01:13:15,899
+İyi ki parçayla ilgili veya yeni gelen arkadaşlardan sorusu olanlar varsa alabiliriz
+
+336
+01:13:15,899 --> 01:13:21,000
+Bunları, yok
+
+337
+01:13:21,000 --> 01:13:23,000
+Çok güzel
+
+338
+01:13:23,000 --> 01:13:25,000
+Devam edelim o zaman
+
+339
+01:13:25,000 --> 01:13:35,800
+Evet, önümüzdeki haftadan itibaren 802.4'lere başlayacağız
+
+340
+01:13:35,800 --> 01:13:46,800
+İşte 802.11'leri Wi-Fi protokollerini falan da görürüz diye ümit ediyoruz
+
+341
+01:13:46,800 --> 01:13:56,399
+Şimdi, lokal araya networklerde kullanılan çeşitli böyle nasıl söyleyeyim
+
+342
+01:13:56,399 --> 01:14:03,399
+Datalink layer kapsamında datalink protokollerini görüyoruz aslında
+
+343
+01:14:03,399 --> 01:14:08,399
+Genellikle multi-point modda çalışan protokoller bunlar
+
+344
+01:14:08,399 --> 01:14:11,399
+Bunların temel böyle modellerine bakarsak
+
+345
+01:14:11,399 --> 01:14:14,399
+İşte 802 ile beraber başlayan
+
+346
+01:14:14,399 --> 01:14:18,399
+Yani itibarenin 802 projesi ile beraber başlayan
+
+347
+01:14:18,399 --> 01:14:26,399
+İşte Ethernet, TokenBus, TokenRing veya Wireless LAN gibi çeşitli protokoller var
+
+348
+01:14:26,399 --> 01:14:34,399
+Bununla beraber Fiber Distributed Data Interface ve Copper Distributed Data Interface gibi
+
+349
+01:14:34,399 --> 01:14:39,399
+Ansiz standartı olan çeşitli yine datalink protokolleri söz konusu
+
+350
+01:14:39,399 --> 01:14:45,399
+Burada gördüğümüz bu, bunlardan daha fazla da var tabi
+
+351
+01:14:45,399 --> 01:14:50,399
+Bunun gibi basic veya kompleks olan protokollerin tamamı
+
+352
+01:14:50,399 --> 01:14:58,399
+İşte HDLC reference alarak onun işte sağını solunu modifiye ederek
+
+353
+01:14:58,399 --> 01:15:04,399
+Flecklerinde ufak tefek değişiklikler yaparak kullanılan versiyonlar
+
+354
+01:15:04,399 --> 01:15:10,399
+Bugün o yüzden 802 projesine başlayalım
+
+355
+01:15:10,399 --> 01:15:16,399
+I3 Play'nin bu 802 projesini 802.4 e kadar herhalde götüreceğiz bugün
+
+356
+01:15:16,399 --> 01:15:20,399
+Çok emin değilim gittiği yere kadar artık götürüyor olalım
+
+357
+01:15:20,399 --> 01:15:24,399
+Temelde media access kısmı bizim için önemli
+
+358
+01:15:24,399 --> 01:15:32,399
+Yani datalink layer'da içinde bulunduğumuz medium'da nasıl bir protokolle karşı tarafa veri göndereceğiz
+
+359
+01:15:32,399 --> 01:15:36,399
+Hatırlarsanız ISO reference modelinde datalink layer vardı
+
+360
+01:15:36,399 --> 01:15:43,399
+Ama bunun böyle I3 Play 802 projesine geçildiğinde ise doğrudan tek bir parçada datalink layer kısmı yok
+
+361
+01:15:43,399 --> 01:15:52,399
+Media Access Control MAC ve Logical Link Control LLC olmak üzere iki farklı parçadan oluşuyor
+
+362
+01:15:52,399 --> 01:15:55,399
+Kıymetli arkadaşlar, datalink layer kısmı
+
+363
+01:15:55,399 --> 01:15:59,399
+Bunları bugün biraz irdeliyor olacağız
+
+364
+01:16:00,399 --> 01:16:06,399
+Temelde Media Access Control kısmında üç farklı tip var
+
+365
+01:16:06,399 --> 01:16:08,399
+Fixed Base bunları görüyor olacağız
+
+366
+01:16:08,399 --> 01:16:13,399
+Contention Base, Fixed Base tabii karşı tarafa biz veriyi gönderiyoruz
+
+367
+01:16:13,399 --> 01:16:16,399
+O da bize veri gönderiyor
+
+368
+01:16:16,399 --> 01:16:22,399
+Buradaki en büyük problemlerden birisinin şu olduğunu göreceksiniz ilerleyen anlatımlarda
+
+369
+01:16:22,399 --> 01:16:25,399
+Yani ben karşı tarafa veri gönderiyorum
+
+370
+01:16:25,399 --> 01:16:28,399
+Ama karşı tarafta aynı anda bana veri gönderiyorsa bu ciddi bir problem
+
+371
+01:16:28,399 --> 01:16:30,399
+Ne oluyor? Kolijin oluyor
+
+372
+01:16:30,399 --> 01:16:35,399
+Yani çarpışıyorlar birbirleriyle hattın içerisinde
+
+373
+01:16:35,399 --> 01:16:40,399
+Çarpıştıklarında da çok fazla bir mana ifade etmez hal alıyorlar
+
+374
+01:16:40,399 --> 01:16:44,399
+Yani hatta ve hatta bu çarpışmayı algılayabilmek bile bir dert
+
+375
+01:16:44,399 --> 01:16:47,399
+Çünkü karşı taraftan sizin beklediğiniz veri ACK verisi
+
+376
+01:16:47,399 --> 01:16:53,399
+Fakat ACK verisinin gelmesi için de çarpışmanın olmaması, hattın boş olması lazım
+
+377
+01:16:53,399 --> 01:16:56,399
+O yüzden çarpışma gibi bir durum söz konusu olabiliyor
+
+378
+01:16:56,399 --> 01:17:06,399
+Aynı zaman dilimi içerisinde hangi saydın veri göndereceği ile ilgili çeşitli durumlar söz konusu
+
+379
+01:17:06,399 --> 01:17:11,399
+İşte mesela Contention Base de yani karşı taraf veri gönderiyor
+
+380
+01:17:11,399 --> 01:17:14,399
+Ama nasıl bir şeyle gönderecek?
+
+381
+01:17:14,399 --> 01:17:16,399
+Yani şunu demek istiyoruz
+
+382
+01:17:16,399 --> 01:17:18,399
+Mesela bir çekişme olacak mı aralarında?
+
+383
+01:17:18,399 --> 01:17:21,399
+Önce ben göndereceğim, hayır sen göndereceksin
+
+384
+01:17:21,399 --> 01:17:31,399
+Bir de tabi Token Base yapılar var
+
+385
+01:17:31,399 --> 01:17:35,399
+Elinde anahtarı olan, ki bunlara da değiniyor olacağız önümüzdeki haftalarda
+
+386
+01:17:35,399 --> 01:17:42,399
+Elindeki anahtarı olan, network'un yani o connection açma anahtarı olan
+
+387
+01:17:42,399 --> 01:17:46,399
+Connection'u kurmak için anahtarı kullanıyor
+
+388
+01:17:46,399 --> 01:17:50,399
+Ve sadece onda anahtar olduğu için o connection'ı başlatabiliyor
+
+389
+01:17:50,399 --> 01:18:00,399
+Ve doğal olarak bitirmedikten sonra da elinde bulunan token'ı farklı bir sayda pass edebiliyor
+
+390
+01:18:00,399 --> 01:18:06,399
+Bu tarz böyle media access control kısmında çeşitli yapılar geliştirilmiş durumda 802 projesinde
+
+391
+01:18:06,399 --> 01:18:12,960
+Şimdi bunlara biraz daha böyle detaylı bakıyor olalım
+
+392
+01:18:13,960 --> 01:18:20,960
+Token'lı yapılar tabi ki bizim topolojimiz bassa, bassa uygun token'lı yapılar var
+
+393
+01:18:20,960 --> 01:18:23,960
+Veya ringse ringe uygun token'lı yapılar var
+
+394
+01:18:23,960 --> 01:18:26,960
+Bunlar üzerinde önümüzdeki hafta konuşuyor olacağız
+
+395
+01:18:26,960 --> 01:18:30,960
+Bugün daha çok 802.3 tarafında konuşacağız
+
+396
+01:18:30,960 --> 01:18:33,960
+Yani ethernet tarafında konuşacağız
+
+397
+01:18:33,960 --> 01:18:39,960
+Bu ethernet genellikle bizim lokal araya networklerimizde kullandığımız bir nedenle ona
+
+398
+01:18:39,960 --> 01:18:47,960
+Media access control ve logical link controlden oluşan data link layer katmanı
+
+399
+01:18:47,960 --> 01:18:53,960
+Fakat ethernet protokolünü şu an hala daha güncel olarak kullanıyoruz
+
+400
+01:18:53,960 --> 01:18:57,960
+Fakat ethernet sadece lokal araya networklerde olduğu için
+
+401
+01:18:57,960 --> 01:19:05,960
+Bunu böyle daha genişletilmiş white area veya ne bileyim campus metropolitan arayalarda falan da kullanabilir miyiz
+
+402
+01:19:06,960 --> 01:19:12,960
+Sorular neticesinde metro ethernetler falan söz konusu onları da görüyor olacağız
+
+403
+01:19:12,960 --> 01:19:16,960
+Tabii bunların hızları da zaman içerisinde çok değişiklik göstermiş kıymetli arkadaşlar
+
+404
+01:19:16,960 --> 01:19:22,960
+Yani ethernet 1972'lerde başlıyor belki 80'lere doğru
+
+405
+01:19:22,960 --> 01:19:27,960
+Şimdi onun hikayesini anlatıyor muyuz bilmiyorum ama 80'lere doğru falan iyice yaygınlaşıyor
+
+406
+01:19:27,960 --> 01:19:34,960
+Yaygınlaşıyor derken çeşitli problemleri ethernet üzerinde protokol üzerinde giderip biraz daha kullanılabilir hale getiriyorlar
+
+407
+01:19:34,960 --> 01:19:45,369
+Açıkçası fakat bununla beraber gönderim hızları düşük onun da çeşitli problemleri var
+
+408
+01:19:45,369 --> 01:19:48,369
+Sebepler var onlar üzerinde duruyor olacağız
+
+409
+01:19:48,369 --> 01:19:55,369
+Tabii bir de wireless lokal araya networkler var kablosuz wifi olarak bağlanılan
+
+410
+01:19:55,369 --> 01:20:05,369
+Onlar da 802 projesinin işte 11 nolu sizde artık wifi kartını alırken 11n mi 11b mi falan filan diye çeşitli şeyleri
+
+411
+01:20:05,369 --> 01:20:07,369
+Belki kontrol ediyorsunuzdur
+
+412
+01:20:07,369 --> 01:20:11,369
+Farklı versiyonları da var bunların onlara da değiniyor olacağız
+
+413
+01:20:11,369 --> 01:20:19,369
+Bir de tabii ki yine wireless olmasıyla birlikte personal array networklerde söz konusu
+
+414
+01:20:19,369 --> 01:20:22,369
+Mesela bluetooth zigbee vpun gibi
+
+415
+01:20:22,369 --> 01:20:29,369
+Yani zigbee belki hiç kullanmamış olabilirsiniz daha çok iot taraflarında kullanılan bir protokol
+
+416
+01:20:29,369 --> 01:20:31,369
+Ama bluetooth'u eminim kullanıyorsunuzdur
+
+417
+01:20:31,369 --> 01:20:35,369
+Akıllı saatlerinize veya akıllı kulaklık değil mi bu aralar
+
+418
+01:20:35,369 --> 01:20:41,369
+Akıllı demeyelim de bluetooth kulaklıklarınıza falan bağlanmak için sıkça kullanılan yapılardan birisi
+
+419
+01:20:41,369 --> 01:20:48,369
+Tabii veri aktarımı konusunda böyle mobil şebeke çok fazla yaygın bir şekilde kullanılmazdan önce
+
+420
+01:20:48,369 --> 01:20:51,369
+Bluetooth bayağı veri aktarımı için de kullanılıyordu
+
+421
+01:20:51,369 --> 01:20:59,369
+Ben hatırlıyorum 2005 yılında aldığım telefonda o dönemler bluetooth vardı
+
+422
+01:20:59,369 --> 01:21:01,369
+Ve verileri birbirimize bluetooth'a gönderiyorduk
+
+423
+01:21:01,369 --> 01:21:07,369
+Tabii gönderdiğim veri maksimum 3-5 megabyte bir mp3 dosyası olduğu için
+
+424
+01:21:07,369 --> 01:21:11,369
+3-5 megabyte 5-6 dakikada gönderebiliyordu çok sıkıntı olmuyordu
+
+425
+01:21:11,369 --> 01:21:14,369
+Öyle bir nasıl söyleyeyim
+
+426
+01:21:14,369 --> 01:21:17,369
+Tabii bluetooth 2 falan da herhalde o zamanlar çok da emin değilim
+
+427
+01:21:17,369 --> 01:21:21,369
+Şu an 5 falan kullanıyorsunuz herhalde 4 var low energy ile beraber çıktı
+
+428
+01:21:21,369 --> 01:21:25,369
+Ama işte yeni versiyonlarda herhalde 5 falan da var
+
+429
+01:21:25,369 --> 01:21:33,000
+Bunlar da aslında yine 802 projesinin i3 playing'in bir branca diyebiliriz
+
+430
+01:21:33,000 --> 01:21:41,000
+Tabi bir de ymax'ler var şu an çok fazla kullanılan şeyler değil
+
+431
+01:21:41,000 --> 01:21:46,000
+Belki kullanıldıkları yerler vardır bunların y3 networklerde
+
+432
+01:21:46,000 --> 01:21:51,000
+Bu projelerden belki bahsedilirken duymuşsunuzdur kıymetli arkadaşlar
+
+433
+01:21:51,000 --> 01:21:56,000
+Yani büyük böyle nasıl söyleyeyim bir baz istasyonu gibi direkt düşünün
+
+434
+01:21:56,000 --> 01:22:02,000
+Bir baz istasyonu gibi bir direkt düşünün ve bu direkt sallıyorum
+
+435
+01:22:02,000 --> 01:22:08,000
+Etrafındaki 5 kilometre yarı şaptaki şeylere neden uğruna cihazlara
+
+436
+01:22:08,000 --> 01:22:15,000
+Wi-Fi ağı üzerinden sanki şey yapabiliyor neden uğruna hizmet verebiliyor
+
+437
+01:22:15,000 --> 01:22:19,000
+O şekilde düşünün mesela bizim Davut Paşa'ya geldiğinizde Davut Paşa'nın içerisinde
+
+438
+01:22:19,000 --> 01:22:22,000
+Davut Paşa Wi-Fi diye bir şey var
+
+439
+01:22:22,000 --> 01:22:26,000
+Fakat o sürekli her binasının çatısında falan anten var
+
+440
+01:22:26,000 --> 01:22:28,000
+O antenlerle falan siz ona erişiyorsunuz
+
+441
+01:22:28,000 --> 01:22:31,000
+Kocaman mesela Orta Bahçede büyük bir anten olduğunu düşünseydiniz
+
+442
+01:22:31,000 --> 01:22:38,000
+Ve kampusun her tarafından bu Wi-Fi, Wi-Fi diyemeyiz işte ymax oluyor
+
+443
+01:22:38,000 --> 01:22:44,319
+Erişebildiğinizi düşünseydiniz işte bu da ymax protokolü
+
+444
+01:22:44,319 --> 01:22:47,319
+Çok fazla kullanılan bir protokol değil
+
+445
+01:22:47,319 --> 01:22:51,319
+Tabi bunların bunlar 802 projesinde olduğu için
+
+446
+01:22:51,319 --> 01:22:54,319
+Dejur bir şekilde ortaya çıkan protokoller
+
+447
+01:22:54,319 --> 01:23:00,319
+De facto bir şekilde de çeşitli böyle bağlantı ile ilgili çeşitli şeyler oluşturuluyor
+
+448
+01:23:00,319 --> 01:23:02,319
+Starlink'i biliyorsunuzdur
+
+449
+01:23:02,319 --> 01:23:07,319
+Başımızın üstünde dolanan şu uydulardan internet alma mevzunu
+
+450
+01:23:07,319 --> 01:23:11,319
+Bunlar da ayrı ayrı yeni yeni de facto şekilde oluşturulmuş protokoller olacak
+
+451
+01:23:11,319 --> 01:23:13,319
+Belki birkaç yıl sonra
+
+452
+01:23:13,319 --> 01:23:17,319
+İşte Starlink'i de burada göreceksiniz müfahatta
+
+453
+01:23:17,319 --> 01:23:19,319
+Belki de onun üzerinde daha fazla konuşuyor
+
+454
+01:23:19,319 --> 01:23:21,319
+Olacağız
+
+455
+01:23:21,319 --> 01:23:23,319
+Ondan sonra ya bu adam uydularını gönderdi
+
+456
+01:23:23,319 --> 01:23:25,319
+İnternet yayıyor hadi biz de gönderelim falan filan
+
+457
+01:23:25,319 --> 01:23:31,319
+Biliyorsunuz ondan sonra şirketler arasında bir rekabete dönüşme gibi bir durumu söz konusu
+
+458
+01:23:31,319 --> 01:23:36,319
+Tabi buradaki önemli hususlardan birisi şu
+
+459
+01:23:36,319 --> 01:23:39,319
+Lokal area network'ın içerisinde bulunan farklı saytlar
+
+460
+01:23:39,319 --> 01:23:41,319
+Farklı cihazların
+
+461
+01:23:41,319 --> 01:23:44,319
+Farklı nasıl söyleyeyim
+
+462
+01:23:44,319 --> 01:23:49,319
+Fizikal katmanının üst katmanında bulunan farklı katmanlarında
+
+463
+01:23:49,319 --> 01:23:52,319
+Farklı manalarda veri işleniyor olabilir
+
+464
+01:23:52,319 --> 01:23:56,319
+Verenin alışı gönderilişi falan bir nedenle sıkıntıya sebebiyet verebilir
+
+465
+01:23:56,319 --> 01:23:58,319
+Yani daha önce bahsetmiştim ben Türkçe konuşuyorum
+
+466
+01:23:58,319 --> 01:24:00,319
+Karşıdaki adam İngilizce konuşuyor
+
+467
+01:24:00,319 --> 01:24:04,319
+İşte IEEE 802 projesi aslında bu araya kattığı
+
+468
+01:24:04,319 --> 01:24:11,319
+Logical link katmanlarıyla birlikte bir translation işlemi de sağlamış oluyor
+
+469
+01:24:11,319 --> 01:24:15,319
+Yani eğer ki nasıl söyleyeyim her iki tarafta
+
+470
+01:24:15,319 --> 01:24:20,319
+Farklı protokoller üzerinden haberleşme kabiliyetine sahipse ya bunların protokollerine ortak yapmamıza gerek yok
+
+471
+01:24:20,319 --> 01:24:23,319
+Ben zaten translation sağlayabiliyorum gibi bir yapısı var
+
+472
+01:24:23,319 --> 01:24:29,689
+Bu da aslında 802 projesini değerli kılan projelerden birisi
+
+473
+01:24:29,689 --> 01:24:33,689
+İlk işte karşısımıza çıkan şey media access control
+
+474
+01:24:33,689 --> 01:24:35,689
+Bakın hala daha
+
+475
+01:24:35,689 --> 01:24:43,689
+İso referans modelimizi düşünürsek hala daha iso referans modelimizin içerisinde data link layer'dayız
+
+476
+01:24:43,689 --> 01:24:49,689
+Ama 802 projesinde bunun yansımasını gördüğümüzde data link layer iki parçadan oluşuyor
+
+477
+01:24:49,689 --> 01:24:51,689
+Birisi media access control
+
+478
+01:24:51,689 --> 01:24:56,689
+Bugün media access control'larla ilgili ne tarz işlemler yapılmış onları görüyor olacağız
+
+479
+01:24:56,689 --> 01:24:58,689
+Bir diğeri logical link control
+
+480
+01:24:58,689 --> 01:25:03,689
+Logical link control ise o işte dediğimiz translation işlemlerini yapabilecek düzeyde
+
+481
+01:25:03,689 --> 01:25:08,689
+Antıksal seviyede bağlantıyı kontrol eden temelde aslında yapı
+
+482
+01:25:08,689 --> 01:25:13,689
+İşte bakın şurada şöyle bir görsel olmuş olsun kıymetli arkadaşlar
+
+483
+01:25:13,689 --> 01:25:17,689
+Bizim şurası osi katmanları tamam mı?
+
+484
+01:25:17,689 --> 01:25:19,689
+Şu da IEEE 802 projesinin katmanları
+
+485
+01:25:19,689 --> 01:25:31,689
+Bizim physical layer'ımızla birlikte media access control katmanının sağladığı alt fiziksel yapılar da söz konusu olabiliyor
+
+486
+01:25:31,689 --> 01:25:38,689
+İşte media access control için token link, token bus ve CSMICD gibi çeşitli yöntemler kullanıyor
+
+487
+01:25:38,689 --> 01:25:48,689
+Bugün bu media access control'ün CSMICD kısımına kadar olan kısımları işleyeceğiz
+
+488
+01:25:48,689 --> 01:25:53,689
+Önümüzdeki hafta 802.4.5 falan onlarla devam ediyor olacağız
+
+489
+01:25:53,689 --> 01:25:58,689
+Data link layer bakın bir media access control katmanından o katman şu katman
+
+490
+01:25:59,689 --> 01:26:04,689
+Ve bir de logical link control katmanından oluşuyor
+
+491
+01:26:04,689 --> 01:26:08,689
+Logical link control katmanı temelde üç şekilde falan çalışıyor
+
+492
+01:26:08,689 --> 01:26:20,000
+Birisi karşı tarafa veriyi gönderdiğimizde herhangi bir şekilde karşı taraftan ekonomi bilgisi beklemediğimiz durumlar
+
+493
+01:26:20,000 --> 01:26:27,000
+Yani ben karşı tarafa veriyi gönderiyorum aldı aldı alamadı alamadı bir datagram şeklinde çalışıyor
+
+494
+01:26:27,000 --> 01:26:28,000
+Onlara da değiniyor olacağız
+
+495
+01:26:28,000 --> 01:26:36,000
+Yani karşı taraf aldığında bana ya ben bu veriyi aldım demesine ACK veya alamadım demesine ACK diyorduk biliyorsunuz
+
+496
+01:26:36,000 --> 01:26:45,000
+Eğer ki ACK verisi istenmeksizin karşı tarafa veri gönderiliyorsa ki bu tarz çeşitli durumlarda olabilir veri göndermede
+
+497
+01:26:45,000 --> 01:26:49,000
+Mesela işte ben televizyon izliyorum yani Uydı'dan bana bir yayın geliyor
+
+498
+01:26:49,000 --> 01:26:54,000
+Ben Uydı'ya bu yayını aldım alamadım diye sürekli üstüne dönür ona söylemiyorum
+
+499
+01:26:54,000 --> 01:27:00,000
+Aldıysam aldığım kısmını işliyorum alamadıysam yapılacak bir şey yok diyorum
+
+500
+01:27:00,000 --> 01:27:05,000
+O yüzden böyle bir yapısı var bir de connection mod servisi var
+
+501
+01:27:05,000 --> 01:27:08,000
+Yani connection mod servisi de şu biraz daha eski bir yapı
+
+502
+01:27:08,000 --> 01:27:24,000
+Her iki site arasında veri göndermede başlamadan önce kontrolleri belki elle belki çeşitli ekstra yardımcı programlarla hazırlanmış bir connection'ın mevcut olduğu düşünülüyor
+
+503
+01:27:24,000 --> 01:27:35,000
+Yani yine şurada un-ACK connection servis de biz connection'ımızı karşı tarafla başlatmak için bir niyet içersiniz
+
+504
+01:27:35,000 --> 01:27:38,000
+Yani sana artık veri göndereceğim diyorsun veri göndermeye başlıyorsun
+
+505
+01:27:38,000 --> 01:27:40,000
+Yani önce connection'ı başlatıyorsun
+
+506
+01:27:40,000 --> 01:27:45,000
+Karşı taraf evet sen bana veri gönder belki diyemiyor şu an un-ACK versiyonlarında
+
+507
+01:27:45,000 --> 01:27:47,000
+Ama bunu en azından söylüyoruz
+
+508
+01:27:47,000 --> 01:27:51,000
+Connection modda ise veri göndermeye başlamadan önce muhakkak her daim connection var
+
+509
+01:27:51,000 --> 01:27:54,000
+Bu işin öncesinde connection sağlanmış
+
+510
+01:27:54,000 --> 01:27:59,000
+Ben ya evet şu an veri göndereceğim dediğim anda connection'ın zaten hala hazırda olduğunu biliyorum
+
+511
+01:27:59,000 --> 01:28:05,000
+Bir diğeri de şimdiye kadar bizim böyle üzerinde sıkça konuştuğumuz un-ACK connection versiyon
+
+512
+01:28:05,000 --> 01:28:16,000
+Buradaysa karşı tarafa bir veri gönderdiğimizde karşı tarafta bize karşılık olarak evet bunu aldım alamadım gibi çeşitli bildirici mesajlar gönderiyorlar
+
+513
+01:28:16,000 --> 01:28:29,399
+Evet şimdi tabi bununla beraber yine logical link control'ın içerisinde protokol data unit diye ekstradan bir alan var
+
+514
+01:28:29,399 --> 01:28:36,399
+Bu aslında böyle bir byte dizisi diyebiliriz bunun için çeşitli alanlardan oluşuyor
+
+515
+01:28:36,399 --> 01:28:41,399
+Bunlardan birisi destination service access point yani ben adama bu veriyi göndereceğim ama kime gönderiyorum
+
+516
+01:28:41,399 --> 01:28:43,399
+Tamam öncelikle onu söylüyorum
+
+517
+01:28:43,399 --> 01:28:46,399
+Benim multi point bir yapıda çalıştığımızı düşünün
+
+518
+01:28:46,399 --> 01:28:52,399
+Buradaya aslında adres yazıyoruz giden tarafın adresini yazıyoruz ve ben gönderiyorum bunu onu da söylemiş oluyoruz
+
+519
+01:28:52,399 --> 01:29:02,399
+Ve tabi şeyi düşünün HDLJ kısmında kontrolle ilgili bir çok farklı frame vardı hem U frame'leri hem S frame'leri falan kullanıyorduk
+
+520
+01:29:02,399 --> 01:29:07,399
+İşte burada control field'ın içerisinde de bu tarz frame'leri kullanabileceğimiz çeşitli yapılar var
+
+521
+01:29:07,399 --> 01:29:14,399
+Ve en son information kısmında da göndereceğimiz data'nın ne olduğunu söylemiş oluyoruz
+
+522
+01:29:15,399 --> 01:29:23,399
+Şimdi Ethernet kısmına gelirsek 1972 yılında ilk böyle çalışmalar başlıyor
+
+523
+01:29:23,399 --> 01:29:34,399
+Şimdi Ethernet'i temelde baseband ve broadband yani dijital ve analog olarak iki parça ayırabiliriz
+
+524
+01:29:34,399 --> 01:29:42,399
+Dijital ise Manchester, analog ise FastShift, King kullanan çeşitli burada göre yazan yöntemler, base yöntemler
+
+525
+01:29:42,399 --> 01:29:47,399
+Ama çeşitli farklı kompleks yöntemler de söz konusu kullanılıyor
+
+526
+01:29:47,399 --> 01:29:51,399
+Aslında bunların her birisini siz biliyorsunuz belki yeni versiyonlarını biliyorsunuzdur
+
+527
+01:29:51,399 --> 01:29:58,399
+Evinizde bulunan Ethernet kablolarının ket 3, 4, 5, 6, 7 belki 8, 9'ları var şu an
+
+528
+01:29:58,399 --> 01:30:02,399
+Kullandığınızda her birisi aslında farklı bir protokol üzerinden edetiyor
+
+529
+01:30:02,399 --> 01:30:06,399
+Bunu bilen ne pekala sizin network kartınız biliyor tabi ki
+
+530
+01:30:06,399 --> 01:30:18,399
+Şimdi 1972'de bu proje oluşturuluyor ve oluşturulan bu Bob denilen adam projenin ismini Aloha diyor
+
+531
+01:30:18,399 --> 01:30:22,399
+Yani nasıl oluşturuluyor hikayesini de anlatalım
+
+532
+01:30:22,399 --> 01:30:27,399
+Hawaii adalarında birbirlerine veri transferi yapılması isteniliyor
+
+533
+01:30:27,399 --> 01:30:35,399
+Bir sürü adacıktan oluşuyor biliyorsunuz oradaki Hawaii denilen ülke veya şehir
+
+534
+01:30:35,399 --> 01:30:41,399
+Farklı farklı adacıklar var bu adacıklardan birbirlerine veri göndermek istiyorlar
+
+535
+01:30:41,399 --> 01:30:43,399
+Tamam ilk baş orada kullanacaklar
+
+536
+01:30:43,399 --> 01:30:49,399
+Fakat bu adalardan birbirlerinin veri gönderirken nasıl bir protokol kullanılması lazım
+
+537
+01:30:49,399 --> 01:30:51,399
+Bunun üzerinde kafa yürüyorlar
+
+538
+01:30:51,399 --> 01:30:57,399
+Çünkü adalardan birbirlerine en azından ilk gönderilen veri şekli kablosu olarak karşı tarafa
+
+539
+01:30:57,399 --> 01:31:05,399
+Radyo frekansları üzerinden bir ağ kurarak karşı tarafa veri göndermek
+
+540
+01:31:05,399 --> 01:31:11,399
+İşte 1972'de model oluşturuluyor 73'te deniyorlar Hawaii adalarının içerisinde
+
+541
+01:31:11,399 --> 01:31:15,399
+Tabi çeşitli problemler çıkıyor yani ne demek siz radyo frekansı gönderiyorsunuz
+
+542
+01:31:15,399 --> 01:31:18,399
+Ama frekansın da karşı tarafa gitmesi belirli bir zaman oluyor
+
+543
+01:31:18,399 --> 01:31:23,399
+Veya işte karşı taraf size veri gönderiyor onun size gelmesi bir zaman oluyor
+
+544
+01:31:23,399 --> 01:31:27,399
+Belki insanın anlayacağı cinsden bir zaman değil ama yüksek frekansla veri gönderirken
+
+545
+01:31:27,399 --> 01:31:30,399
+Karşı tarafta sekrenize olabilmek o kadar da kolay değil
+
+546
+01:31:30,399 --> 01:31:35,399
+Pekala ben karşı tarafa veri gönderiyorum o bana veri gönderiyor aynı frekans üzerinden gönderiyoruz
+
+547
+01:31:35,399 --> 01:31:39,399
+O collision oluyor hatta bir congestion olmuş oluyor böylece
+
+548
+01:31:39,399 --> 01:31:46,399
+Karşı tarafa gönderdiğim veriyi eğer ki ACK işte connectionless mode bile kullanıyor olsam
+
+549
+01:31:46,399 --> 01:31:52,399
+Karşı tarafa bana verini alamadım veya aldım bile diyemiyor çünkü ortada bir çarpışma durumu var
+
+550
+01:31:52,399 --> 01:31:58,399
+Bunun için çeşitli yöntemler media access control kısmında geliştirilmiş çeşitli yöntemler var collision'ı engellemek için
+
+551
+01:31:58,399 --> 01:32:05,399
+Çünkü collision çok ciddi bir problem neyi düşürüyor utility rate'imizi hatta kullanım oranını düşürüyor
+
+552
+01:32:05,399 --> 01:32:10,399
+Böyle olunca bunu nasıl giderebiliriz gibi çeşitli yöntemler çıkartmışlar
+
+553
+01:32:10,399 --> 01:32:18,939
+İlk aloha'da mesela utility rate %18 bir yani ben karşıya 100 byte'lik veri gönderiyorum 18 byte ulaşıyor
+
+554
+01:32:18,939 --> 01:32:27,939
+Geri kalan 82 byte'ı başına yolda bir şeyler geliyor gibi düşünün amaç ne tabi ki bu süre içerisinde
+
+555
+01:32:27,939 --> 01:32:38,939
+Utility rate'i arttıralım nasıl arttırabiliriz diye düşünürken işte slow-tut aloha diye ekstradan bir yöntem tekrardan geliştirmiş oluyorlar
+
+556
+01:32:38,939 --> 01:32:46,939
+Bakın eternette ilk aklımıza gelecek şey aloha alohada herhangi bir şekilde congestion kontrolü yok temelde nasıl çalışıyor
+
+557
+01:32:46,939 --> 01:32:52,939
+Ben karşı tarafa veri göndermek istiyorsam hatlı başlatıyorum karşı tarafa veri gönderiyorum
+
+558
+01:32:52,939 --> 01:32:56,939
+Connection başlatıyorum pardon karşı tarafa veri gönderiyorum
+
+559
+01:32:56,939 --> 01:33:03,939
+Karşı tarafta veriyi alıp nedenir ona bir şekilde işte bana bir cevap dönüyor
+
+560
+01:33:03,939 --> 01:33:07,939
+Ve bana da belki piggy bank yaparak bana da geriye veri döndürüyor
+
+561
+01:33:07,939 --> 01:33:17,939
+Fakat burada çok fazla oranında gönderirken veriyi karşılıklı aynı anda göndermeye başlamak gibi bir durum söz konusu
+
+562
+01:33:17,939 --> 01:33:22,939
+Yani ben A'ya bir şey göndereceğim A'da diyor ki ben de B'ye bir şey göndereyim
+
+563
+01:33:22,939 --> 01:33:30,939
+Aynı anda veri göndermeye kalktıkları anda ki bunları kontrol eden herhangi bir mekanizma yok kim hangi anda veri göndermek istiyorsa veriyi gönderebiliyor
+
+564
+01:33:31,939 --> 01:33:34,939
+Ben şu an veri göndermek istiyorum tamam gönderiyorum
+
+565
+01:33:34,939 --> 01:33:44,939
+Böyle bir durum söz konusu fakat sen gönderdiğinde karşı tarafında muhakkak boş müsait seni dinliyor olması gibi bir durum söz konusu değil
+
+566
+01:33:44,939 --> 01:33:48,939
+O sebeple collision çok fazla yaygın
+
+567
+01:33:48,939 --> 01:34:00,939
+Slotted aloha kısmına geçtiklerinde ise her bir site için bir nasıl söyleyelim zaman ayırmışlar bir slot ayırmışlar
+
+568
+01:34:00,939 --> 01:34:13,939
+Sen veri göndereceksen bu slotta gönderiyorsun mesela diyelim ki bizim dört tane saydımız var bu dört tane site nedenir ona birbirlerine veri gönderecekler
+
+569
+01:34:13,939 --> 01:34:26,939
+Diyelim ki saniyeyi dört parçaya bölmüş olalım ilk çeyreğinde A ikinci çeyreğinde B üçüncü çeyreğinde C dördüncü çeyreğinde de D saydı veri gönderiyor olsun
+
+570
+01:34:26,939 --> 01:34:38,939
+Yani adam eğer veri gönderecekse ve kendisinin veri göndermesi gereken slot saniyenin ikinci çeyreğiyse ve şu an zaman olarak saniyenin üçüncü çeyreğindeysek
+
+571
+01:34:38,939 --> 01:34:48,939
+Kendisinin veri gönderebine nedenir ona başlayabilmesi için üç çeyrek daha geçmesi lazım ki kendisi başlayabilsin tabi bu bakıldığında bir çözüm mü?
+
+572
+01:34:48,939 --> 01:34:57,939
+Evet teorik olarak bir çözüm yani böyle olunca utility rate'i %37'ye kadar çıkartıyor yani %100 olması gerekmez mi?
+
+573
+01:34:57,939 --> 01:35:18,939
+Yani ortamın fiziksel kısımlarından kaynaklanan hatalı veri iletiminin haricinde karşı tarafla sizin zamanınızın da bir süre sonra eş zamanlı yani nasıl söyleyeyim her iki tarafında zamanın aynı olamaması gibi bir durum söz konusu oluyor
+
+574
+01:35:18,939 --> 01:35:37,939
+Bir saniyeyi dörde böldüğümüzde çok rahat gibi geliyor olabilir size ama daha küçük parçalara ayrılıyor tahmin ediyorsunuzdur ve işte o düşük hassasiyetli slot ayırma gibi bir durumla karşı karşıya kaldığımızda bütün saytlarda zamanın aynı olması lazım
+
+575
+01:35:37,939 --> 01:35:55,939
+Zamanı da hesaplayan elektronik çeşitli cihazlar, devisler var bu devisler de hem gürültülü çalışabilirler farklı işte ne bileyim mesela bir bilgisayar düşünün yani adam Aloha'da adada birisi ne bileyim barda kullanıyordur o makineyi
+
+576
+01:35:55,939 --> 01:36:24,939
+Heri de ne bileyim buzdolabının üstüne koymuştur çamaşır makinesinin üstüne koymuştur çamaşır makinesi dönüyordur o dönemlerde merdaneliler mi vardı gerçi neyse dönüyordur döndüğünde yani bir mind cam oluşturuşu oluşturur bu oluşturur o elektronik saat saat claw üreten elektronik şeyi de bozabilir yani bu da bir nasıl söyleyelim problem olarak karşımıza çıkıyor işte bunu da giderelim diye career sense multiple access gibi bir yöntem geliştiriyorlar
+
+577
+01:36:24,939 --> 01:36:45,939
+Bu yöntemde temel amaç yine sığıltı Aloha'da karşılaştıkları yüzde otuz yedilik utility reyit'i yükseltebilmek daha iyi bir sonuç elde edebilmek bunun için öncelikle non-persistent CSMI yöntemi kullanılıyor yani burada temelde iki adım var ilki şu
+
+578
+01:36:45,939 --> 01:37:12,350
+Hatta veri şu an var mı bunu kontrol et yoksa gönder hatta şu an veri var mı bunu kontrol et hatta veri yoksa veri gönder evet yani aslında daha makul değil mi yani düşünüldüğünde
+
+579
+01:37:12,350 --> 01:37:32,350
+slot tarafta slot tarafta utility reyit kısmının düşük olmasını tabiki tahmin edebileceğiniz üzere sebeplerinden birisi de siz saniyeyi dörde veriyorsunuz sadece bir tane site veri gönderecekse saniyenin dörtte üçünde hat boş kalıyor yani sadece tek bir site veri göndermesi gerektiği durumda
+
+580
+01:37:32,350 --> 01:38:04,039
+ama burada daha güzel bir nedenle ona yapı var burada daha güzel bir yapı var diyorsun ki hatlı dinle ve boşsa gönder her bütün saytlar bu şekilde çalışıyor hatta önce dinliyorlar ve eğer ki hat boşsa gönderiyorlar tabi bu hemen karşınıza şöyle bir örnek gelmiş olsun gözünüzün önüne iki kişi birbirleriyle karşılaştılar birbirlerine yol vermeye çalışıyorlar
+
+581
+01:38:04,039 --> 01:38:27,039
+ama işte mesela şöyle iki kişi karşıya geldi birisi sağ gidiyor diğeri de sağ gidiyor diğeri sola gidiyor diğeri de sola gidiyor gibi bir durum var yani iki tane sayt aynı anda hatlı dinledi ve attım boş olduğuna boş olduğuna karar verdi ve boş olduğuna karar verdikten sonra ikisi de aynı anda veri gönderiyor yine bir problem bakın
+
+582
+01:38:27,039 --> 01:38:57,319
+yani evet hatlı dinliyorsun senin dinlediğin an boş zaten karşı taraf da dinliyor evet boş ama ikisi de aynı anda veri göndermeye başlıyor böyle olunca yine collision oluyor collision'ın problemi ne collision'ın problemi şu ya veri hocam yani biz karşı tarafa göndermişiz tamam collision oldu veri eğer ki hat içerisinde birbiriyle çarpıştıysa çok nedenle ona makul bir olay bu bizim zaten protokolümüzün içine şunu ekleyelim
+
+583
+01:38:57,319 --> 01:39:24,319
+mesela 5 tane sayt varsa o an collision olduğu durumda rastgele saytlardan birisi sussun artık veri göndermesin diğeri çünkü collision varsa birisi daha veri gönderiyor o veri göndersin bu problemi çözelim işte collision olduğunu anlayamıyorsun sıkıntı burada yani karşı taraf sıra sen veri gönderiyorsun tamam mı gönderdiğinde karşı taraf da sana ona karşılık aldım gibi bir şey göndermesi lazım
+
+584
+01:39:24,319 --> 01:39:43,319
+veya karşı taraf sana veri gönderiyor ve collision olmuş sen onun sana veri gönderip göndermediğini bilemezsin ki yani böyle de bir durum söz konusu o yüzden aldım almadım da diyemezsin collision varsa zaten adam sürekli bu collision'ların hesaplanmasıyla ilgili çok matematiksel formüler falan da var
+
+585
+01:39:43,319 --> 01:40:14,600
+düşün sen sürekli veri gönderiyorsun karşı tarafa mesela diyelim ki sliding window yapıyorsun 7 tane frame'inin tamamını gönderdin karşı taraftan hala bir cevap yok belli bir süre bekledin cevap ondan sonra şey yaptın dürtüyorsun adamı yani ben sana bak bir sürü frame gönderdim ne oldu bunlar o da gitmiyor yani collision olduktan sonra collision'ın temizlenmesi gibi bir durum da söz konusu bunun hesaplanması için böyle exponential çalışan
+
+586
+01:40:14,600 --> 01:40:44,600
+yöntemler falan var birazdan onunla belki bahsederiz öyle bir an sonra hattın içerisinde bulunan collision öyle bir zamanı geldiğinde çok fazla yani böyle zincirleme bir yolda zincirleme trafik kazası olduğunu düşünün çok fazla kaza olduğu anda artık hat hiç kullanılamaz hale geliyor hiç kimse birbirine veri gönderemez hale geliyor o kadar ki o kazayı düşünün bir e5 de trafik kazası olmuş
+
+587
+01:40:44,600 --> 01:41:14,600
+olsun Allah korusun diyelim tabii ki de örnek vermek adına söylüyorum bir trafik kazası olmuş olsun 10 tane araba birbirine girsin ve olay yerine o kazayı temizlemesi gereken kişiler işte çekiciler polis ne bileyim bir şeyler ama kaza öyle büyük ve o kadar bir trafik sıkışıklığına sebebiyet congestion sebebiyet verdi ki oraya temizlemek için gitmesi gereken adamlar da gidemiyor tamam ya böyle bir durumda artık her şey
+
+588
+01:41:14,600 --> 01:41:44,600
+soru işareti olmuş durumda. Evet not persistence csmi kısmı güzel. Niçin? Çünkü hattı dinliyorsun hat boşsa çıkıyorsun fakat burada aynı anda çıkma ile ilgili yine çeşitli problemler var. Bunun üzerinde nasıl böyle yöntemler geliştirebiliriz diye işte van persistent cmi csmi yöntemini ortaya atıyorlar diyorlar ki hattı
+
+589
+01:41:44,600 --> 01:42:14,600
+dinle tamam mı hattı dinle hat boşsa hat boşsa rastgele bir zaman sonra belirlenen bir formülü var bunun o rastgelelik için rastgele bir zaman sonra veriyi göndermeye başla hat boşsa çünkü şöyle bir şey oluyor kıymetli arkadaşlar genellikle hani nam persistent yapıyı anlatırken ondan bahsedelim daha güzel olmuş olsun şimdi şöyle düşünün şöyle düşünün
+
+590
+01:42:14,600 --> 01:42:44,600
+diyelim ki 10 tane sayt var bu saytlardan yedinci sayt hatta şu an veri gönderiyor sürekli ve diyelim ki diğer 9 tane saytta veri göndermek istiyor hat aynı hattın içerisinden dolu olarak ne yapıyorlar hatlı dinliyorlar hatlı dinliyorlar ve hepsi neyi fark ediyorlar şu an hat dolu tamam bunu fark ediyorlar hat dolu dolu olarak hiçbirisi göndermiyor bekliyor yedinci sayt bu işleri
+
+591
+01:42:44,600 --> 01:43:14,600
+verirsin de sıra bize gelsin diye fakat buradaki problem ne hatın boş olduğunu anlar anlamaz diğer 9 ü birden aynı anda veri göndermeye başlıyor yani en büyük problem nam persistent yapıda bu hatın boş olduğu anlaşılır anlaşılmaz diğer o veri göndermek isteyen saytlar aynı anda çünkü hat boşaldı hemen çıkayım diye bir şey var bu
+
+592
+01:43:14,600 --> 01:43:30,399
+temelde sıkıntıya sebebiyet verdiğini yani ütülitre itin düşmesinde veya işte bir önceki versiyonlara göre daha fazla iyileşememesindeki temel sıkıntının bu olduğunu görüyorlar burada o yüzden van persient ssma'ya geçiyorlar şimdi burada ne yapıyorlar
+
+593
+01:43:30,399 --> 01:43:52,000
+hatsın dinle yine dinliyor tabi ki hatlı hatın boş olduğunu fark ettiğin anda rastgele bir zaman sonra rastgele bir zaman sonra onun formülleri var buraya çok karmaşık olur diye ne zaman yazmak istemedim rastgele bir zaman sonra hatta çık ama çıkmadan önce yine dinliyor
+
+594
+01:43:52,000 --> 01:43:52,560
+yani tekrar söyleyelim nasıl bir yapısı var hatlı dinle hat boşsa artık çıkmaya karar ver ama çıkmaya karar vermeden önce rastgele bir zaman geçsin ve hatlı dinle tekrar ondan sonra çık hat boşsa tabi ki boş değilse birinci adıma geri dön gibi bir yapısı var şimdi böyle olunca ne oluyor işte o bekleyen 9 tane sayt aynı anda bir rastgelelik olduğu için aynı anda çıkmıyorlar biraz kollijini azaltıyor aslında
+
+595
+01:44:22,000 --> 01:44:55,390
+bu temelde adamın yaptığı şey biraz daha az kollijin olunca utility rate de teorik olarak yükseltmeye çalışıyor tabi bunun da çeşitli problemleri var ne demek istiyoruz siz van persient'a şöyle söyleyelim onu p persient'a karıştırmış olduk van persient'a belli bir süre bekliyor hatta çıkıyor tamam belli bir süre bekliyor rastgele hatta çıkıyor p persient da ise belli bir süre bekledikten
+
+596
+01:44:55,390 --> 01:45:25,390
+sonra tekrardan hatlı kontrol ediyor birisi var mı diye çünkü o ara birisinin rastgele bir zaman bekleyip hatta artık kullanmaya karar verip hatta kullanmaya başlamış olabilir o yüzden hatlı tekrardan kontrol ediyor ondan sonra çıkıyor hatta yani bu aslında temelde utility rate arttırmak amacıyla konumla oluşturulmuş bir şey fakat p persient kısmında buradaki en önemli olaylardan birisi
+
+597
+01:45:25,390 --> 01:45:55,390
+şu bunun yani utility rating biraz daha böyle ileriye götürebilecek şeylerden bahsedecek olursak bizim bir sonraki aşamada bunun cd'li versiyonunu göreceğiz ama p persient yapıda çift kontrol yapmış oluyorsunuz yani hat doluyken zaten hatın dolu olduğunu biliyorsun hat boşken rastgele bir zaman bekliyorsun ama rastgele bir zaman bekledikten sonra direkt hatta veri göndermeye başlamıyorsunuz
+
+598
+01:45:55,390 --> 01:46:25,390
+bu yüzden tekrar kontrol yapıyorsun yani hocam işte non persistent yapıdaki gibi bir durum söz konusu olamaz mı yani ne demek bu sonuçta diyelim ki iki sayt birbirine veri gönderecek hat birisi gönderiyor ya işte yine on site olduğunu düşünelim yedinci site veri göndermeye bıraktı diğer dokuzu rastgele bekleme süreleri ürettiler ama aynı iki tarafın ürettiği iki saytın ürettiği bekleme süreleri aynı olamaz mı veya
+
+599
+01:46:25,390 --> 01:46:55,390
+birisininki bir iki mili saniye fazladır diğeri veri göndermeye başlamıştır ama ona gelmeden bir diğeri şey gönderebilir ne denir ona işte hattın boş olduğunu anladıktan sonra veri gönderebilir diye düşünüyor olabilirsiniz Evet böyle bir durum var fakat ilk dikkat edilmesi gereken husus şu non persistent yapıya göre utility rate yükselmiş oluyor yüzde yüz bir utility rate den bahsetmiyoruz
+
+600
+01:46:55,390 --> 01:47:25,390
+yükselmiş oluyor ikinci burada dikkat edilmesi gereken şey ise şu öyle bu 10 tane saytan Hawaii hadalarındaki 10 tane saytan öyle iki tanesini düşünün ki birbirlerine en uzak tam birbirlerine en uzak yani ne demek isteyelim mesela üçüncü ile onuncu sayt birbirlerine fiziksel olarak en uzak saytlar işte tabi ölçümleniyor bunlar ne kadar uzak oldu ve
+
+601
+01:47:25,390 --> 01:47:55,390
+bu üçüncüden onuncuya verinin gönderilebilmesi için ne kadar süre geçiyorsa minimum rastgele bekleyiş süresi bunun katları doğrultusunda olması gerekiyor ne demek istediğimi anlatabildim bilmiyorum ama yani rastgele bekliyorsun ya rastgele beklerken de aslında hattı bekledikten sonra papersizmde dinliyorsun ama dinlerken yaptığın iş senin karşı taraftan
+
+602
+01:47:55,390 --> 01:48:26,989
+verinin ne kadar en uzakta bulunan iki sayttan ne kadar zamanda gelebileceğini bilerek dinliyorsun tamam bu yapıda kuruluyor bu da utility rate'i bir tık yukarıya taşımış oluyor fakat hala daha problem var çünkü kolüzyon olduğunda bunlar zırtoyu çekiyorlar yani trafik kazası varsa şeyde diğer araçlar yoluna devam edemiyor birbirlerinden veri de alamıyorlar ne olduğunu anlamıyorlar o yüzden
+
+603
+01:48:26,989 --> 01:48:56,989
+cd, collision detect yani yöntemi bunun üzerine ek olarak geliştiriliyor şimdi bu collision detect yönteminde ise harici bir yapı bakın harici bir yapı bunların antenlerinden sonuçta az önce bir arkadaş chatten sormuştu chatten sorduğu için cevap vermek istememiştim ama hadi cevap verelim yani farklı frekansları kullansalar olmaz mı olmaz yani burada herkes farklı bir frekansdan çalışıyorsa o frekans değerlerinde çalışıyor
+
+604
+01:48:56,989 --> 01:49:26,989
+çalışabilecek bir sürü antenin olması lazım 10 tane farklı frekansla 10 tane anten koyacaksın her farklı frekansı yakalayabilmek adına o yüzden olmaz yani öyle bir şey temelde belli bir raddeye kadar olmaz bu frekansların içerisinde tabi çeşitli channel'lar oluyor o channel'lar kullanılabiliyor onları işte 8 2 11'i falan anlatırken biraz daha güzel detaylı görüyor olacağız ama kullandıkları nedir ona temelde frekans nasıl söyleyelim aynı
+
+605
+01:49:26,989 --> 01:49:56,989
+frekanslarla çalışıyor biraz o dönem işte ya zaten 70'ler 80'ler falan bahsediyoruz donansal yapılar da çok bu işlere elverişli değil o sebeple bu şekilde yaklaşıyorlar pekala collision detect nasıl bir şey collision detect için işte ayrı bir nasıl söyleyelim bir yapı var bir frekans üzerinden kontrol ediyor sanki yani mesela kaza olmuş mu diye polis gidip bakmak istiyor e5'te fakat trafik var congestion var gidip bakamıyor ya işte mesela polisler artık yeni teknoloji drone'lara geçmiş
+
+606
+01:49:56,989 --> 01:50:26,989
+drone'la gidip bakıyor kaza var mı diye bunun sebebi nedir hakikaten trafik mi yoğun ilerlemiyor trafik yoksa kaza mı olmuş ilerlemiyor trafik diye drone kullanıldığını düşünün yani congestion'ı algılayabilecek ekstradan bir nasıl söyleyelim şey gönderiliyor bir algılayacak bir veri karşı tarafa gönderilebiliyor yani siz hattın congestion'ı sıkışıklığına
+
+607
+01:50:26,989 --> 01:50:41,989
+trafik veren şeyin ne olduğunu anlayabiliyorsunuz bu da güzel bir yapı yani drone'unuz olup gidip baktığınızı düşünün bu da güzel bir yapı çünkü genellikle collision olduğu durumda bu işte üstteki yöntemlerin tamam ve bundan önceki
+
+608
+01:50:41,989 --> 01:51:11,989
+hattımız şeyler collision'ı fark edinceye kadar sürekli tekrar tekrar veri gönderiyorlar tekrar tekrar veri gönderiyorlar ama collision'ın dedekt edilmesi için bir yöntem düşünün mesela işte arabalar birbirlerine çarptığında veya 10 kişi 10 kişinin konuştuğunu düşünelim birbirlerini dinliyorlar ama herkes sürekli konuşmaya başlıyor hiç kimse birbirinin dediğini anlamıyor ve herkes aynı anda konuşmaya başladıklarında ortaya çıkan o frekansın çeşitli spekleri öyle bir etki
+
+609
+01:51:11,989 --> 01:51:41,989
+anlatıyor ki mesela onun herkesin aynı anda konuştuğunu anlayabilecek bir yapıda yapıyı kurabiliyorsun sen belki böyle ol böylece bir collection detect collision detect yapısı sağlamıyor ve eğer ki collision detect ediliyorsa artık bekleniyor yani bekle dur veri gönderme ondan sonra collision'ı detekt eden tüm taraflar bu şekilde çalışıyor ondan sonra işte pay persistent gibi bir yapıda devam ediyorlar
+
+610
+01:51:41,989 --> 01:52:13,840
+eğer collision varsa detect edilmişse rastgele bir süre rastgele bir süre bekleniyor ardından pay persistent yapısında tekrardan iletişim sağlanmaya devam ediliyor şimdi şurada güzel bir örnek üzerinden yani bir akış üzerinden bunu inceliyor olalım diyelim ki bizim saydımız veri göndermeye hazır ilk yaptığı işlemle channel'ı dinliyor
+
+611
+01:52:13,840 --> 01:52:43,840
+bunu dinledikten sonra eğer ki channel kullanımda ise tekrardan birinci adıma gidiyor tekrardan channel'ı dinliyor bunu belirli frekans değerleri ile sürekli yapıyor bir süre sonra umulur ki o çok konuşmayı seven site susacak da sıra bana gelecek diye sürekli tekrar tekrar belirli bir frekans da deniyor ardından eğer ki channel müsaitse yani channel kullanımda değilse artık boşsa veriyi nedenle ona karşı
+
+612
+01:52:43,840 --> 01:53:13,840
+gönderiyor ve gönderirken de channel'ı tekrardan dinliyor tamam mı bu collision detect'li ssma'yı anlatıyoruz channel'ı dinliyor niye dinliyor ben gönderiyorum ama benim gönderdiğimde bir collision olmuş mu yani siz karşı tarafa bir taş atıyorsunuz mesela taş karşı tarafa ulaşıp ulaşmadığını veya bir kuyuya atıyorsunuz ne yapıyorsunuz dinliyorsunuz değil mi bir ses geliyor böylece işte o collision olup olmadığını fark edebilmek için ben datayı gönderiyorum bakın datayı bir taraftan adam
+
+613
+01:53:13,840 --> 01:53:43,840
+gönderiyor ve o gönderdiğim şey çarpışmış mıdır diye bir taraftan da dinliyor tamam mı eğer hiçbir problem yoksa collision ile ilgili ekstradan bir problem yoksa datayı transmit etmiş oluyorsun ama data dediğimiz şey frame yani burada yanlış anlaşılmasın bir pdf'in tamamını göndermiyoruz karşı tarafa frame'i gönderiyoruz tekrar bir sonraki frame için aynı durum söz konusu olacak ardından diyelim ki eğer ki ben datayı gönderiyorum ama gönderirken başka bir adamın
+
+614
+01:53:43,840 --> 01:53:58,739
+çarpıştı collision olduğunu fark ettik hemen o collision'ı temizleyen jamming sinyal gönderiliyor yani şimdi bunu tabi biraz belki elektronik veya haberleşme derslerinde falan belki daha güzel anlatılıyordur bilmiyorum ama yani
+
+615
+01:53:58,739 --> 01:54:26,640
+hatın içerisinde frekansal bir karmaşıklık olduğu durumda o frekansal karmaşıklığı çarpışmayı temizleyecek ayrıca çeşitli sinyaller var tamam işte jamming sinyal böyle bir sinyal adamın şeyini temizliyor nedenir ona bu jammer'lar falan var ya böyle önemli insanlar falan ziyaret ederken işte onların güvenliğini sağlamak için jiblerin üzerinde antenler falan oluyor
+
+616
+01:54:26,640 --> 01:54:56,640
+neyi temizliyor tabi orada collision'ı temizlemiyor da bütün kablosuz alt trafiğini temizliyor yani sen hiç veri gönderemez hale geliyorsun işte bu da öyle bir şey öyle bir şey ki jamming sinyal şeyi tamamen hatta ki o collision'ı temizliyor tabi bunu jamming sinyal karşılıklı protokollerde anlaşıldığı için collision'a collision varsa ben gönderiyorsam başka birisi de bir şey göndermiş
+
+617
+01:54:56,640 --> 01:55:26,640
+o yüzden collision olmuştur doğal olarak her iki tarafta gönderebilir bu jamming sinyali bir sıkıntı yok fakat jamming sinyalinin hatta olup olmadığında listen ederken anlayabiliyoruz onu da söyleyelim yani ne demek istiyorsunuz hocam iki taraf veri gönderiyor evet diğer 8 tane makinada bunlar birbirleriyle iletişimi kessinler de sıra bize gelsin diye bekliyorlar işte o diğer 8 tane makine hatta dinlerken hatta nasıl söyleyelim bir veri akışı mı var yoksa jamming sinyal ile hat temizlenir mi
+
+618
+01:55:26,640 --> 01:56:02,239
+onu da görebiliyorlar hatta temizledikten sonra exponent için binary back of algoritmasının bir sonucu olarak üretilen süre de bekleniyor bu beklemenin sonucunda tekrardan veri göndermeye çalışılıyor tamam böyle bir akışı var aslında ssmi cd yönteminin buraya kadar sorusu olan var mı hocam bu bekleme şeyi jamming sinyali
+
+619
+01:56:02,239 --> 01:56:32,239
+durana kadar mı bekliyor biraz bir daha söyler misin o bekliyor ya şurada en son algoritma yok burada bu exponent şimdi binary back of yöntemi sana rastgele bir değer üretiyor tamam mı bunun formülleri çok karışık hiç kafanızı karıştırmak istemediğim için bunları ayrıca koymadım kitaplarda falan anlatılır bunlar baktığınızda görürsünüz yani sana mesela diyor ki 17 milyon saniye bekle bunun içerisine girdi olarak verdiğin şeyler işte
+
+620
+01:56:32,239 --> 01:57:02,239
+gönderdiğin zaman veya gönderdiğin datanın nedir ona boyutu jamming sinyali ne kadar gönderdiğin gibi çeşitli girdileri var en nihayetinde ama çıktısı sana bu yöntem çıktı olarak diyor ki 17 milyon saniye bekle tabi biraz da böyle yunik olması açısından bu yöntemlerde yani her iki tarafında nasıl söyleyeyim mesela iki sayt birbiriyle veri gönderirken kollijine sebebiyet verdiyse o kollijine sebebiyet veren iki tarafta da bu yöntem öyle bir çalışıyor ki
+
+621
+01:57:02,239 --> 01:57:34,520
+ve iki tarafı da farklı sürede bekletebilecek şekilde bir değer üretiyor ve o kadar mili saniye sonra tekrardan bu adam reddit transmit'e geçiyor ama ne yapıyor yine dinliyor hatta yani gönderebilirim evet kollijin temizlenmiş belli sürede bekledim ama yine dinleyerek başlıyor bak anlıyorum teşekkür ederim ben teşekkür ederim evet başka sorusu olan var mı değerli 177 yazıyor beni çıkartalım 176 kişi var ve hiç kimsenin sorusu yok ha çok güzel tebrikler
+
+622
+01:57:34,520 --> 01:58:04,520
+en az ben hatırlıyorum lisans da bu derse alıyoruz yıl tabi 2010 herhalde evet 2010 2011 falan olabilir çok emin değilim tevfik hoca anlatıyor öğrenci arkadaşımın birisi şey sormuştu hocam niye 802 niye 801 değil niye 807 değil niye 802 hatırlıyorum hocanın çok güzel bir cevabı vardı ama şu an herhalde
+
+623
+01:58:04,520 --> 01:58:34,520
+sizin yüz ifadenizi göremeyeceğim için o hikayeyi anlatmamı da çok esprisi olmayacak herhalde diye düşünüyorum hocam hemen kamera açalım efendim hemen kamera açalım evet senin kameran yok bir kere sayın hurkan necati evet evet bu üzücü oldu ama evet yani anlatılabiliriz aslında biraz neden ona böyle çok teorik şeylerden gidiyoruz biraz can sıkıntınız geçmiş olsun
+
+624
+01:58:34,520 --> 01:59:04,520
+şimdi tevfik hoca belki tevfik hocadan ders alan vardır burada bilmiyorum var hocam evet vardır elin kesinlikle almıştır yani şimdi şöyle öğrenci arkadaş tevfik hocaya sordu hocam niye 802 bunun bir sebebi var tabi de o da güzel bir hikaye ile bunu anlattı tevfik hoca tabi tevfik hocayı tanıdırsanız aslında onun tarzını biraz
+
+625
+01:59:04,520 --> 01:59:34,520
+anlattınız yoksa çok nasıl söyleyeyim belki esprili gelmeyebilir size de şimdi yine Amerika'da böyle bir lisans dersinde uzay mühendisliği neyse bir lisans dersinde öğrenci soruyor ki hocam ya ben bu uzaya şimdiye kadar gönderilen roketleri hep inceledim bu roketlerin çapları tamamı birbirinin aynısı hakikaten siz de mesela baktığınızda hala daha
+
+626
+01:59:34,520 --> 02:00:04,520
+NASA'da gönderse SpaceX'te gönderse o roketlerin çapları birbirinin aynısı bunun bir sebebi var mı diye hocaya sormuş hocada olayı anlatıyor tabi evet bir sebebi var yani o roketlerin çaplarının her birisinin standart olmasının bir sebebi var ama bunun bir hikayesi de var nasıl bir hikayesi var şimdi ilk çağlarda insanlar işte böyle atları falan kullanarak ulaşım sağlamaya
+
+627
+02:00:04,520 --> 02:00:34,520
+çalışmışlar sağa sola doğal olarak atlar üzerinde hareket ederek çeşitli yolları şu an günümüzde dahi şehirler arasında kullanılan yolları kullanmaya başlamışlar yani mesela yol dağın tepesinden aşarak gitmiyor arada mesela bir vadi varsa o vadiden gidiyor en nihayetinde çünkü adam atla gidiyor atla gide gele gide gele bir süre sonra tabi o yollar o alanlar yol olmaya başlamış belki köyde yaşayan arkadaşlar varsa bilirler yani mesela
+
+628
+02:00:34,520 --> 02:01:06,079
+bir alan otluk olsun siz onları orayı yol yapın insanlar yürüsün atlar yürüsün arabalar yürüsün artık orada ot bitmemeye başlar tamam mı ilk böyle yollar atlarla atlarla gidip gelerek o yollarda oluşturulmuş durumda ondan sonra tabi tekerlek icat ediliyor tekerleğin icadı ile beraber atların arkasında at arabaları yerleştiriliyor ki birim iş gücü ile daha fazla insan karşı tarafı taşıyabilelim diye
+
+629
+02:01:06,079 --> 02:01:36,079
+artık atlarla beraber gittikleri yolları artık at ve arabalarla at arabalarıyla beraber gidiyorlar tabi tekerleğin icadı ile birlikte atın arkasına takılan o at arabasının iki tane tekerleği var ve o tekerlekler artık bir ne denir ona orada ot bitmeyen bir alan oluşturmaya başlıyor daha diğer toprağa göre daha sertleşmiş ve ot bitmeyen bir alan oluşturmaya başlıyor mesela aslında
+
+630
+02:01:36,079 --> 02:02:05,920
+bu şu an günümüzde söz konusu köy yollarında falan mesela otomobille gidilen o tekerleklerin izi daha serttir ve orada ot bitmez ama sağında sonunda hatta otomobilin geçmediği orta noktada ot biter falan aynı durum at arabası için düşünün tekerleklerin geçtiği o hizalarda hiç ot yok ve sertleşmiş mukavemete artmış diğer taraflarda ise biraz daha böyle yani işlemeye müsait daha sonra teknoloji gelişiyor işte sanayi devrimi oluyor buharlı makineler çıkıyor
+
+631
+02:02:05,920 --> 02:02:35,920
+adamlar diyor ki ya biz böyle tren falan yapalım lokomotif yapalım bir noktadan bir noktaya trenle gidelim ya trenle gideceksin de nasıl gideceksin trenle bizim hala hazırda yıllardır kullandığımız yollar var bu yolları nedenir ona kullanalım tamam nasıl yapacağız işte tren şöyle çalışsın böyle çalışsın trenin işte bir ray üzerinde gitsin biz bu rayları döşeyelim falan filan rayları nereye döşeyelim işte o rayları tam olarak o at arabalarının çok uzun yıllar üzerinden giderek
+
+632
+02:02:35,920 --> 02:03:05,920
+iyice sertleştirdiği o iki tane at arabasının tekerleklerinin genişliği ölçüsünde o iki tane yere birer tane ray düşüyorlar toprak daha sert olunca zemini de daha sert olmuş oluyor takdir edersiniz ki yani trenin rayları o at arabasının tekerleklerinin olduğu hizada olacak şekilde insanların yüzyıllardır kullandığı yollar üzerine tren rayları düşüyorlar hakikaten de şu an bile mesela türkiye'deki tren yollarını falan gidip incelerseniz hep böyle
+
+633
+02:03:05,920 --> 02:03:35,920
+anayola yakın yerlerde hareket ediyorlar biraz belki Ankara'ya giderken şeyden falan geçiyorlar ama yine de oralar yolmuş zamanında tabi trenler de uzun yıllar kullanımda oluyor trenler bir süre sonra işte böyle dağları filan delmek gerektiğinde yani trenle daha fazla alana ulaşabilmek adına dağları falan delmek gerektiğinde trenin genişliği kadar deliyorlar doğal olarak dağları yani
+
+634
+02:03:35,920 --> 02:04:05,920
+trenin işte iki tane raylar üzerinde hareket eden tekerleği var fiziksel olarak da trenin o tekerlekler doğrultusunda o tekerleklerin arasındaki mesafe ne kadarsa belki bir o kadar da kenara doğru açılabiliyor doğal olarak siz dağı delecekseniz eğer bundan 100 yıl önce trenin genişliğinden daha fazla delmenin bir manası yok şimdi mesela giriyorsun avrasya tüneline avrasya tünelinde senin arabam belki de maksimum yerden yüksekliği 2 metre tünel 15 metre
+
+635
+02:04:05,920 --> 02:04:35,920
+ama o dönemlerde öyle değil hakikaten bizim eski tren tünellerine bakarsanız tam böyle trenin geçeceği şekilde hatta filmlere falan konu olur trenin üstünde giden o süper kahramanlar genelde trenin duvarlarına falan çarparlar şimdi böyle olunca Amerika'da özellikle bu işte uzaya gönderilecek roketlerle ilgili çalışmalar yapıldığında çalışmanın yapıldığı şehirlerle bunların uzaya gönderilebileceği şehirler birbirinden çok uzak 1000 kilometre uzak
+
+636
+02:04:35,920 --> 02:05:05,920
+mesela ya bu roketi yaptık ürettik ama şimdi uzaya yollayacağız nasıl yollayacağız işte trene yükleyelim gönderelim trenle beraber gitsin çünkü tren yüksek kapasitede yük taşıma kabiliyetine sahip bir şey biliyorsunuz hem karayolunda hem de karayolu araçlarıyla bu işin yapılması çok elverişli değil trene yüklüyorlar ama yani trenlerin içerisinden geçtiği tünellerin de maksimum bir çapı var değil mi yani doğal olarak oradan girebilecek maksimum
+
+637
+02:05:05,920 --> 02:05:35,920
+bu arada bir roket yapmaya çalışıyorlar adamlar yani işte trenler için delinmiş böyle tüneller var o tünellerden trenle beraber roketi göndereceksek roketin tünele sığması lazım biz trene yüklediğimizde doğal olarak trenle giden roketin boyutu da o tünele sığacak bir şekilde olması lazım ve bu tüneller standart boyutlarda olduğu için hep standart yapıldığı için o yüzden roketlerin boyu da çapı da
+
+638
+02:05:35,920 --> 02:06:05,920
+her daim standart oluyor yani roketlerin çapı neye dayanıyor atın kıçının genişliğine dayanıyor demişti tevfik hocam hikayesini anlatırken çünkü bütün her şey o ile başlamış yani atlarla gidip gelerek atın arkasına sonuçta bir şey takıyorsun bir araba takıyorsun o genişlikte atın kıçıyla doğru orantılı şekilde 802 de kıymetli arkadaşlar adamlar protokolü oluşturuyorlar
+
+639
+02:06:05,920 --> 02:06:35,920
+protokol kitabı var 802. sayfaya denk gelmiş ve doğal olarak adamlarda protokolün ismini 802 olarak vermişler yani hocam diyorsunuz ki bu kadar anlatıyoruz anlatıyoruz yıllardan beri öyle çok da ciddiye almayın yani işin tebiyesi evet yani siz ciddiye alın yine de fakat rakamların şunların bunların bir önemi yok açıkçası çünkü genelde insanlar
+
+640
+02:06:35,920 --> 02:07:05,920
+merak ediyor yani benim de aklıma gelmişti o arkadaş sormasın belki ben sorucu ettim hocanın bunu anlatması da çok güzel oldu ben mesela bazı derslerde bunu anlatırım o yüzden mesela birkaç kere isemlide anlattım belki burada benden dinleyen olmuştur bunu ilk defa dinlemiyorsunuzdur isemlide anlattım yani öğrenciye öğrenci mesela bir soru soruyor öğrenciye roketin çapı dediğinde cevabı anlıyor mesela artık o sebeple bazı şeylerin bir sebebi yok yani adamlar bu şekilde yapmak istemişler bu şekilde yapmışlar
+
+641
+02:07:05,920 --> 02:07:35,920
+veya sebepleri çok saçma yani düşün yaratan atı daha büyük bir şey fil gibi bir şey yapsaydı doğal olarak daha büyük bir şey de olacaktı ne denir ona roketlerin çapı daha geniş olabilecekti bu hani sebepleri de çok makul mantıklı bizim için elleriçli şeyler olmayabilir onu aslında söylemek istedim buyurun bir şey söylemek isteyen var herhalde sesi
+
+642
+02:07:35,920 --> 02:08:05,920
+barış ben hocam aslında şey hani kaçma demeyelim de belki her şey birbirine bağlı verilen değerler tüccüme indikçe hepsi çok temel kurallara çok geçmişteki kurallara dayalı hep eklemeli gidiyor belki dersek daha güzel olur dedim böyle bir katkı yapmak istedim yani tabii ki eklemeli gidiyor atın genişi dediğiniz gibi fil gibi bir şey olsa
+
+643
+02:08:05,920 --> 02:08:35,920
+tamam olmayacaktı ama hani bu sonuçta iki tane at yan yana kalınlığı tren yolu ona göre belirlenmiş tinerler ona göre mecbur roketinde kalınlığı ona göre her şeyin menzisi eklemeli gidiyor bir şeyin üzerine koyularak evet aynen böyle buradaki olaysa yani adamların esprisine bundan önce 801 sayfa protokol yazmışlar ki 802. protokol yani buradan onu anlıyorsun
+
+644
+02:08:35,920 --> 02:09:07,840
+buradan 801 sayfalık bir protokolleri var adamlar 802 yazıyorlar tabii yaz yazmışlar efendim [öğrenci] Bey sesiniz gelmedi çok güzel diyorum ya yemin ederim var ya çok çok şük ya çok güzel ya evet evet neyse böyle bir kafa dağıttıktan sonra arkadaşlar benim şöyle bakıyorum 3 slidem kalmış dilerseniz ara vermeyelim devam edip erken bitirelim dilerseniz
+
+645
+02:09:07,840 --> 02:09:40,500
+ara verelim nasıl yapalım devam edebiliriz hocam atın sahibi olarak siz karar verin yani sorun yok evet eyvallah tamamdır bitirelim diye genelde cevaplar gelmiş oldu tamam o zaman bitirelim arkadaşlar bugünkü nedir ona şeyimizi şimdi pardon ethernet protokolleri tabii karşı tarafa bir şey gönderiyorsak bir de framing gibi bir yapımız
+
+646
+02:09:40,500 --> 02:09:57,579
+olması lazım yani bizim gönderdiğimiz her bir framing başında sonunda neler olacak onları söylüyoruz bir preamble yani karşı tarafa biz bu işi başlatacağız sana gelen verinin başı budur diye yedi baytlık hatta preamble'lar şunlar evet yedi baytlık bir veri gönderiyoruz
+
+647
+02:09:57,579 --> 02:10:27,579
+bu segronizasyonu sağlamak için ardından bir baytlık benim gönderdiğim bu segronizasyonu sağlamak şimdi buradan sonra artık verim başlıyor diye bir baytlık yine şundan oluşan bir veri gönderiyoruz karşı tarafa göndereceğimiz nedenler ona adresi maksimum 6 baytla 200'lere 6 kaç farklı adres olabilir düşünün maksimum 6 baytla buraya ifade edebiliyoruz doğal olarak bizim de bir adresimiz var bizim adresimiz de buraya ekliyoruz ve karşı
+
+648
+02:10:27,579 --> 02:10:57,579
+tarafa göndermek için hazırlıyoruz daha sonra göndereceğimiz data'nın uzunluğu 46 bayt ile 1500 bayt arasında olabiliyor data'nın uzunluğunu ben eğer ki işte 255 ve altında tutuyorsam data'nın length'ini bir bayt olarak işaretleyebiliyorum eğer 255'den daha fazla bir data göndereceksem iki bayt olarak yani bu length kısmında bir bayt mı iki bayt mı onu tutan bir veri olmuş oluyor data'nın uzunluğunu tutan bir veri olmuş oluyor yani ne demek istiyoruz mesela 1024
+
+649
+02:10:57,579 --> 02:11:19,859
+nedenler ona bizim verimizin boyutu 1024 bayt ise muhakkak onu iki baytla 1024 yazabilmek için iki baytla ifade etmem lazım ama daha küçükse bir bayte sığabilecek bir değerse başındaki değerler 0000 olmak kaydıyla ilk baytın değerleri bizim diğer anlamlı az anlamlı kısımdaki bayti doldurmuş oluyoruz
+
+650
+02:11:19,859 --> 02:11:49,859
+en sonunda da CRC32 kontrolünü yapabilmek için dört baytlık yani 4x8-32 dört baytlık bir veri yerleştirmiş oluyoruz yani şöyle bakıldığında minimum mesela şöyle bir soru sorsak size IEEE 802.3 ethernet protokolünde framing yapısında minimum frame boyutu nedir 7 artı 1 artı 2 artı 2 artı 2 artı 46 artı 4 minimum frame boyutu bizim için budur
+
+651
+02:11:49,859 --> 02:12:06,300
+hesapladığımızda işte maksimumda maksimumlarını toplayarak bir şey yap burayı iki olarak muhakkak hesaplayın ama çünkü daha küçükse bir baytlık göndermiyor ilk bayta 0000 doldurarak karşı tarafa göndermiş oluyor bu şekilde bir framing yapısı var bir de tabi
+
+652
+02:12:06,300 --> 02:12:36,300
+bu yapıda ise biz şimdi karşı tarafa gönderdiğimiz o framelerin iletiyoruz iletildiği bilgisini alıyoruz veya almıyoruz farklı yöntemler vardı biliyorsunuz neydi o yöntemler onları tekrardan söylemiş olalım karşı tarafa veriyi gönderdiğimizde karşı taraftan bir ACK versi bekliyor muyuz beklemiyor muza göre değişen iki farklı yöntemler var
+
+653
+02:12:36,300 --> 02:13:06,300
+bir de veriyi göndermeye başlamadan önce full time olarak konneksiyonun sağlandığı durumlar söz konusuydu burada shared ve switched ethernet yapısında ise yine aslında aynı protokolün farklı bir versiyonu diyelim bunun için bizim göndereceğimiz o verilerin gönderilme sırasının bir tokunları üzerinden hareketi gibi bir durum var bunu tokunları anlattığımızda
+
+654
+02:13:06,300 --> 02:13:36,300
+önümüzdeki hafta biraz daha belki güzel anlayacağız açıkçası yani ben switch ile adres derken nasıl adresliyorum şöyle düşünün bir arkadaşımız olmuştu ismini hatırlamıyorum ama bir önce KDJL versiyonlarında hep biz hub üzerinden işte bus veya ring falan topolojileri kuruyoruz demiştik burada artık switchler söz konusu switch üzerinden şeyleri adresliyoruz switchte bir
+
+655
+02:13:36,300 --> 02:14:06,300
+özgün elemanı biliyorsunuz switch üzerinden veri şeylere nedenle ona diğer makinalara erişiyoruz o yüzden bunun içinde ekstradan bir protokol geliştirilmiş çok böyle farklı farklı nedenle ona yapıları var onlar üzerinde detaylı durmayalım uzuyor çünkü konu çok geniş bu 802 nin üçü gidiyor dörtte ve belki daha on birde daha fazla vakit ayırabilelim diye hızlıca geçiyorum mesela çok farklı varyasyonları var fest et enet dediğimiz işte
+
+656
+02:14:06,300 --> 02:14:36,300
+hızlı ve vaylı çeşitli yöntemler var genellikle işte mesela fest ne kadar fest ondan 100 megabit per second'a kadar çıkabilen bir karşılıklı iletişim hızını düşünün yani 100 megabit per second tabi şu an evde kullanıyoruz belki kullananlarınız vardır 100 megabit per second'ın internet alan vardır evinizde ama bunlar karşılıklı iki taraf arasında otonegreation yapılarak gerçekleştiriliyor yani ben karşı tarafa 100 megabit per second gönderebilirim ama datanik flow aşamasında
+
+657
+02:14:36,300 --> 02:15:06,300
+yani data flow aşamasında yani sen gönderiyorsun ama ben alamıyorum kardeşim gibi bir durum söz konusu olabilir her iki tarafta birbiriyle negoşeyt yapıyor ve tamam 72'de anlaşalım diyorlarsa o şekilde gönderiyorlar mesela sizde servis sağlayacağınızda bir şekilde aslında negoşeyt yapıyorsunuz diyorsunuz ki 32 megabit per second'lık bir internet alayım oysaki 100'e alabilme kapasitesine sahipsiniz belki işte gigabit ethernet var gigabit ethernet değilse 100 megabit per second'tan gigabit ethernet'e kadar çıkıyor
+
+658
+02:15:06,300 --> 02:15:36,300
+bu sayıp cat 8'e kadar çıkan farklı kablolama tipleri kullanılıyor bunda yani burada tabi internet servisi sağlayacağınız dedim ama yanlış anlaşılmasın bunlar local area network'lar için konuşuyoruz kıymetli arkadaşlar yani local area network'ın ne kadar geniş olduğundan zaten bahsetmiştik ethernet ile ilgili konuşuyorsak zaten kablomuz var ethernet kablomuz patch kablo diyorsunuz belki siz işte cat kablolar farklı versiyonları bu farklı versiyonlarda yine
+
+659
+02:15:36,300 --> 02:16:06,300
+10 gigabit ethernet alabiliyorsunuz ama yine auto negotiation yapıyorsunuz karşı tarafla bir de tabi bununla beraber 10 gigabit ethernet 10 giga deniliyor herhalde buna 10 gigabit ethernet de sağlayabilen ayrı bir yine 802.3'ün farklı protokolleri var ve bununla beraber 100g ethernet yine dedikleri 100 gigabit'e kadar düşünün 100 gigabit'e kadar veri gönderebiliyor yani 100 gigabit per second
+
+660
+02:16:06,300 --> 02:16:36,299
+100 tane gigabit gönderiyorsun karşı tarafa yani 8'e bölersem 100'ü 8'e böl bir saniye de karşı tarafa 100'ü 8 kaç eder 10 12 12 gigabyte veri bir saniye de karşı tarafa gönderebildiğini düşün değil mi yüksek bir hız açıkçası böyle de çeşitli dizayn edilmiş nedir ona yapılar var hayalimiz tabi şu an 1 gigabit ethernet'e geçelim ben fast bile kullanmıyorum muhtemelen
+
+661
+02:16:36,299 --> 02:17:06,299
+şu an açıkçası yani tabi bir şeyler arasında kullanabiliyor olursunuz yani landa A bilgisayarından B bilgisayarına veri gönderirken kullanıyor olabilirsiniz ama biz böyle artık bağlantı dediğimizde hep internetle ilgili konuştuğumuz için o sebeple hep yani gigabit zaten soru işareti şuraları falan görebilecek durumda da çok değiliz ama tasarlanan protokoller çerçevesinden bakarsanız neler neler tasarlanıp konuşuluyor olmuş evet metro ethernet de şu ethernet dediğimiz şey
+
+662
+02:17:06,299 --> 02:17:36,299
+olan fakat yani lanlarda sadece bunun tasarlanıp kullanılması çok gerçekçi değil çünkü bu şurada gördüğünüz protokollerden bir kısmında kullanılan kablolar 80 90 kilometreye kadar veri iletebiliyor yani çok yüksek bir ihtimat siz servis sağlayıcınızdan tabi fiber kablolar falan kullanıyor siz muhtemelen servis sağlayıcınızın o santralinden 80 90 kilometre uzakta olamazsınız olabilirsiniz bilmiyorum belki köyde falan yaşıyorsanız ama
+
+663
+02:17:36,299 --> 02:18:06,299
+kullanılmadığınız durumlarda bu tarz şeyler nedenler ona kullanarak bu hızlarda veri alabilirsiniz böyle bir altyapı inşa edilirse kurulursa bu manaya geliyor fakat bunun için bir metro ethernet yani lokal alanağlarından çıkıp işte white array network veya ne bileyim işte metropolitana netvorklerde bunun kullanılması gibi bir yapıya da biz metro ethernet diyoruz metro ethernet denildiğinde bunu anlayın lütfen landan harici olarak lanın
+
+664
+02:18:06,299 --> 02:18:36,299
+landan daha büyük array networklere hizmet eden ethernet yapısını düşünelim lütfen bir de power over ethernet var poi ben mesela artık bazı ürünler aldığımda poi özelliğinin olup olmadığına bakıyorum bu da kesinlikle değerli bir özellik ne demek istiyorum power over ethernet ne ethernet hattı üzerinden aynı zamanda bir elektrik verisi elektrik sinyali göndermek
+
+665
+02:18:36,299 --> 02:18:49,200
+yani sizin mesela modeminizi düşünün belki power over ethernet kullanan arkadaşlar vardır kullananlar varsa lütfen söylesinler ben hiç modemde kullanmadım ama başka şeylerde kullandım mesela sizin nasıl söyleyelim
+
+666
+02:18:49,200 --> 02:19:07,100
+ipi kameralarda özellikle tercih ediyor power on ethernet diye de geçiyor over simi 10 diyor power on ethernet ile over ethernet birbirinden farklı şeylerden öncekini söylemek istiyorum buyrun devam edin
+
+667
+02:19:07,100 --> 02:19:35,000
+tamam o zaman o konuda eklimiz var benim bildiğim kadarını anlatayım ipi kameralarda özellikle tercih ediyor ethernet kablosu tekinme olduğu için bunun da sadece 4 per 2 peri kullanılıyor 2 peri boşta olduğundan diğer 2 perin boşta olan 2 perin tek terini o cihaza power taşımak için kullanıyorlar hani temel mantığı da bu şekilde diye paylaşmak istedim
+
+668
+02:19:35,000 --> 02:20:05,000
+tamam teşekkür ederiz ben de şöyle bir anlatayım illa 2 tel olmak zorunda değil çok daha farklı sayıda tellerde olabilir şimdi genel mantığını anlatalım siz ethernet hattı üzerinden karşı tarafa aynı zamanda elektrik atıp götürdüğünüzde mesela modeminizi düşünün modeminizi fişe bağlamıyorsunuz sadece şeye bağlıyorsunuz işte o gelen evinize gelen o işte edsl hattına bağlıyorsunuz fişe bağlamıyorsunuz o edsl hattından elektrik alıyor aynı zamanda mesela
+
+669
+02:20:05,000 --> 02:20:35,000
+tatlı üzerinden elektrik alıyor böyle çalışan modemler var belki kullananlarınız vardır ben mesela kullandığım ip ip kamera değil belki onlar ama işte security amaçlı kameralara hep power over ethernet üzerinden kullanıyorum yani sadece ethernet kablosunu takıyorsunuz ayrıca elektrik vermek ihtiyacı hissetmiyorsunuz tamam ama poya destekliyor olması lazım yani cihazın poya destekliyor olması lazım hattın poya destekliyor olması lazım benim mesela şu an oturduğum evin içerisinde şeyler var nasıl söyleyeyim yangın
+
+670
+02:20:35,000 --> 02:21:05,000
+aliv detektörleri var alev detektörleri bunlar da mesela power over ethernet de çalışıyorlar içerisinde tek bir tane kablo giriyor tabi içinde ayrı ayrı böyle kablonun tekrardan damarları var fakat o giren tek bir kablo hem ona elektriği sağlamış oluyor hem de onun verisine okumuş oluyor alarm falan varsa o merkezi bir yere uyarıyor o şekilde düşünün power over ethernet de artık belki günümüzde hele ki belki iot ile beraber çok sıkça karşımıza çıkacak şeylerden birisi olacaktır evime ben böyle
+
+671
+02:21:05,000 --> 02:21:35,000
+olanlar alırken internete bağlayabileceğim power over ethernet yapabiliyor muyum eğer kablolu bağlayacaksam o özelliği var mıdır diye her daim bakıyorum sizin de aklınızda bulunsun tabi bu power over ethernetler daha çok dc akım karşı tarafa gönderiliyor yani ben buzdolabı alıyorum power over ethernet olabilir mi yani buzdolabının fişe takmayın sadece ethernetten beslensin gibi değil yanlış anlaşılmasın işte maksimum 24 veya 30 vat ile çalışan şeyleri besleyebilmek adına kullanılan bir yapı
+
+672
+02:21:35,000 --> 02:22:05,000
+evet burada sorusu olan var mı onları alabiliriz soruları yoksa bugünü bitirelim kıymetli arkadaşlar metro ethernet kısaca tekrar açıklayabilir misiniz ya evet açıklarız tabi ki şimdi metro ethernet şu ethernet dediğimizde ethernet kavramı her daim lokalleriye networklerle özdeşleşmiş bir kavram çünkü kullandığınız ket kabloları düşünün kullandığınız ket kabloların kapasitesi yani işte 10 metre maksimum
+
+673
+02:22:05,000 --> 02:22:35,000
+işte taş çatlasın 100 metre olsun biz mesela robotik yarışmalarına giderken robota kablolu bağlanıyoruz ve kablolu bağlanırken 20 metrelik falan böyle peç kablolar her ne kadar ket 7 falan kullansak da verinin performansı 2 metre 3 metre kullandığımız durumlara göre çok daha düşmüş oluyor ethernet de yani onlardan bahsetmiştik etölye şun oluyor sinyal zayıflıyor görültüye alma şeyleri falan artıyor tahmin edebiliyorsunuz bu olayları şimdi ethernet her daim
+
+674
+02:22:35,000 --> 02:23:05,000
+böyle lokalleriye network için kullanılan bir yapı yetmişler ama günümüze doğru geldikçe artık bu ethernet nedenle ona yapısını metropolitan a'lara kadar vardı ya hani metropolitan araya networkler vardı metropolitan a genişliklerinde de ethernet kullanabilelim yani bir hat düşünün o ethernet hattında az önce söyledim ya 80 kilometre veri gönderebiliyorsun bu tarz protokoller var az önce hızlı geçtiğimiz protokollerin içerisinde bu tarz protokoller var
+
+675
+02:23:05,000 --> 02:23:35,000
+böyle olunca bir metropolitan a kurabilirsin yani 80 kilometre çapı düşün 80 80 160 yani istanbul'u bile kapsar herhalde değil mi yani çok emin değilim ama kapsayabilir tabi az önce söylediğimiz çok yüksek rakamlar bu büyük hatlar için yani bana mesela diyelim ki yıldız teknik üniversitesine gelen ve yıldız teknik üniversitesinden giden bir hat var yani saniyede 12 gigabayt verinin oradan gelip gidiyor olması çok normal çünkü bin tane piri var belki 10 bin tane piri var her birisi aynı anda
+
+676
+02:23:35,000 --> 02:23:51,079
+hızlı gönderiyor alıyor bir şekilde işte metro ethernetlerse öncelikle belki kampüs araya networklere white araya networklere hatta metropolitan araya networklere bu ethernetin yaygınlaştırılması yayılması ona yönelik protokollerin geliştirilmesi
+
+677
+02:23:51,079 --> 02:24:22,739
+gibi söyleyebiliriz tamamdır hocam anladım teşekkür ederim bir de mikrofona olmayan bir arkadaş çete yazmış da onu aktarayım isterseniz bilgisayar içinde de bu kadar hızlı iletim var mı demiş hani bir önce bahsetmiştik 100 gigabit internetten falan o şekilde bir soru sormuş ama bilgisayarın içinde bu kadar hızlı iletim var mı diye yani bilgisayarın içerisindeki tabi iletim de böyle olabilir yani işte düşünün mesela ssd'lere
+
+678
+02:24:22,739 --> 02:24:52,739
+yazıyorsunuz gigabitle yazdığı bildiğiniz belki o zaman orada tabi byte kullanıyor ama yazdığınız şeyler vardır ama mesela keşten okumak keşe yazmak rem okumak random yazmak çok hızlı şeyler ama burada kullandığın şeyler veri yolu yani ana kartın üzerinde bulunan veri yolu kullanıyorsun ve doğrudan bir protokolü yok yani bu işin hatayla karşılaşılma oranı çok çok çok çok çok çok düşük çünkü o yüzden congestion falan da collision falan da olmadığı için mikro işlemci dersi alıyorsunuz
+
+679
+02:24:52,739 --> 02:25:30,100
+kontrol bacaklarının şey bacaklarının nedendir ona veri adres bacaklarının nasıl kullanıldığını iyi biliyorsunuz orada tabi ki bilgisayar içinde verinin çok daha hızlı aktarımı gibi bir durum söz konusu olabilir bunlara göre tamamdır teşekkür ederim ben teşekkür ederim başka sorusu olan var mı hocam dersin başında belirtabanı sınavı hakkında geyik yapıldı mı
+
+680
+02:25:30,100 --> 02:25:52,549
+biliyorum sadece sordum yani yapılmadıysa hiç konuyu açmayacağım çünkü o yüzden evet yok yapayım tamam belirtabanı dersinde görüşürüz o zaman kolay gelsin ağzınıza sağlık çok teşekkür ederim arkadaşlar haftaya görüşürüz diyorum kendinize iyi bakın sağlıcakla iyi günler hocam iyi günler
+

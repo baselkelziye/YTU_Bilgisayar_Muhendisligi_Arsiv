@@ -1,0 +1,4552 @@
+1
+00:01:24,019 --> 00:01:33,500
+Arkadaşlar şu anda benim grubumda 48, Cihan Hoca'nın grubunda da 56 kişi var.
+
+2
+00:01:33,500 --> 00:01:37,719
+O yüzden bekliyoruz. Yani 200 kişi varken şu anda yarısındayız.
+
+3
+00:01:37,719 --> 00:01:42,319
+Bende 95 var, sizde 96 var.
+
+4
+00:01:42,319 --> 00:01:46,000
+Topladığımız zaman 190 kişi ediyor.
+
+5
+00:01:46,000 --> 00:01:49,780
+Şu anki toplumumuz 100, geri kalan 90'ı nereye sakladınız?
+
+6
+00:01:49,980 --> 00:01:54,219
+Evet, onu bekliyoruz biraz. O yüzden 1-2 dakika daha bekleyeceğiz.
+
+7
+00:01:54,219 --> 00:01:56,219
+Bekleyeyim biraz daha.
+
+8
+00:01:56,219 --> 00:02:00,689
+Şuradan ben paylaşımı açayım.
+
+9
+00:02:00,689 --> 00:02:02,689
+Gelmeyecek arkadaşlar.
+
+10
+00:02:02,689 --> 00:02:04,689
+Olabilir, her şey mümkün.
+
+11
+00:02:04,689 --> 00:09:42,610
+Topunu kapalı kalmış.
+
+12
+00:09:42,610 --> 00:09:47,610
+Bu tarafta, yani benim grubumda bir arkadaşın sorusu üzerine konuşuyorduk.
+
+13
+00:09:47,610 --> 00:09:52,110
+Dersi, datakomu almadan almış.
+
+14
+00:09:52,110 --> 00:09:54,610
+Böyle iletim şimdi dersini almadan almış.
+
+15
+00:09:55,049 --> 00:09:57,049
+Yani ne yapmak lazım diye soruyordu.
+
+16
+00:09:57,049 --> 00:10:00,049
+En temiz, bu dersi almamış olmak aslında.
+
+17
+00:10:00,049 --> 00:10:07,049
+Ama aldığınız durumda da yapacağınız şey haliyle ilk katmanlara tekrar bakmak.
+
+18
+00:10:07,049 --> 00:10:11,049
+Bunu da mümkün olduğu kadar hızlı yaparsanız iyi olur.
+
+19
+00:10:11,049 --> 00:10:14,049
+Zaten 3 katman var bakacağınız.
+
+20
+00:10:14,049 --> 00:10:19,049
+Zaten network'u anlatırken aslında ne yapıyoruz?
+
+21
+00:10:19,049 --> 00:10:21,049
+İlk derste de konuşmuştuk diye hatırlıyorum.
+
+22
+00:10:21,490 --> 00:10:23,490
+Osi referans modülü üzerinden konuşuruz.
+
+23
+00:10:23,490 --> 00:10:26,490
+7 tane katman var ama hani gerçeğe vurduğumuz zaman,
+
+24
+00:10:26,490 --> 00:10:29,490
+gerçe tıkaya uygulamasına vurduğumuz zaman,
+
+25
+00:10:29,490 --> 00:10:32,490
+TCPRP üzerinden konuşursak 4 katman var.
+
+26
+00:10:32,490 --> 00:10:34,490
+Bu kitap üzerinde konuşursak 5 katman var.
+
+27
+00:10:34,490 --> 00:10:45,840
+Bunun ilk 3 katmanı aslında 5 katman var ama fiziksel katman hariç 5 katman var.
+
+28
+00:10:45,840 --> 00:10:47,840
+O dahil 6 katman var.
+
+29
+00:10:47,840 --> 00:10:51,840
+3 katmanı datakomda, 3 katmanı bu derste konuşma her şeylerde.
+
+30
+00:10:52,279 --> 00:10:54,279
+Böyle bölünmüş durumda ders.
+
+31
+00:10:54,279 --> 00:10:58,279
+Yani ilk yarı olmadığın ikinci yarı da çok mümkün dil yapmaz.
+
+32
+00:10:58,279 --> 00:11:08,279
+Neyse biz bekliyoruz ama beklerken de gelecek kişi sayısı sanırım belli bir sürenin üstüne çıkmayacak.
+
+33
+00:11:08,279 --> 00:11:10,279
+Dolayısıyla çok daha da bekleme gerek yok.
+
+34
+00:11:10,279 --> 00:11:14,279
+Dersten baya bir zaman yiyoruz bu haliyle.
+
+35
+00:11:14,279 --> 00:11:16,279
+O yüzden ufak ufak başlayalım.
+
+36
+00:11:16,279 --> 00:11:19,279
+Her iki grupta benim sesimi net duyuyor değil mi?
+
+37
+00:11:19,279 --> 00:11:21,279
+Hani herhangi bir sıkıntı yok.
+
+38
+00:11:29,750 --> 00:11:31,750
+Duyuyor musunuz arkadaşlar?
+
+39
+00:11:33,750 --> 00:11:34,750
+Duyuyoruz hocam.
+
+40
+00:11:34,750 --> 00:11:36,750
+Tamam süper.
+
+41
+00:11:36,750 --> 00:11:37,750
+Sağolun ya.
+
+42
+00:11:37,750 --> 00:11:39,750
+Kimse ses vermiyor.
+
+43
+00:11:39,750 --> 00:11:41,750
+Acaba kendi kendime mi konuşuyorum?
+
+44
+00:11:41,750 --> 00:11:44,750
+Psikozu oluşuyor bir yerden sonra haliyle.
+
+45
+00:11:44,750 --> 00:11:46,750
+O yüzden bir endişe ettim.
+
+46
+00:11:46,750 --> 00:11:48,750
+Neyse.
+
+47
+00:11:48,750 --> 00:11:51,750
+Şimdi bugün routing algoritmalarına bakacağız.
+
+48
+00:11:51,750 --> 00:12:00,159
+Routing algoritmalarına bakarken de çok temel bir şeyden başlayacağız.
+
+49
+00:12:00,600 --> 00:12:05,600
+Optimality yani bir şeyin en optimum olması durumunu konuşacağız.
+
+50
+00:12:05,600 --> 00:12:07,600
+Yani nedir ne değildir.
+
+51
+00:12:07,600 --> 00:12:09,600
+Bundan bahsediyor olacağız.
+
+52
+00:12:09,600 --> 00:12:15,929
+Sonra da yavaş yavaş şeye geçiyor olacağız.
+
+53
+00:12:15,929 --> 00:12:17,929
+Algoritmaları tek tek inceliyor olacağız.
+
+54
+00:12:17,929 --> 00:12:21,929
+Bu arada demin söyledim ama Gökhan hocanın grubunda şey kapalıydı galiba.
+
+55
+00:12:21,929 --> 00:12:23,929
+Mikrofon kapalıydı o yüzden bir daha tekrar edeyim.
+
+56
+00:12:23,929 --> 00:12:26,929
+Maalesef şu an 100 katlı bir tadilat yapılmasına karar verildi.
+
+57
+00:12:26,929 --> 00:12:28,929
+O da bu dersin saatine denk geldi.
+
+58
+00:12:28,929 --> 00:12:30,929
+Kusura bakmayın.
+
+59
+00:12:31,370 --> 00:12:38,370
+Yani aradan sonra başka bir alternatif, başka bir yöntem düşünmeye, bulmaya çalışacağım.
+
+60
+00:12:38,370 --> 00:12:47,210
+Şimdi routing dediğimiz şey ne?
+
+61
+00:12:47,210 --> 00:12:52,960
+Öncelikle buna bakmak lazım.
+
+62
+00:12:52,960 --> 00:12:54,960
+Bunun üzerinden konuşmak lazım.
+
+63
+00:12:54,960 --> 00:12:58,960
+Derdimiz ne?
+
+64
+00:12:58,960 --> 00:13:00,960
+Bir ağımız var.
+
+65
+00:13:00,960 --> 00:13:04,960
+Ve bu ağ üzerinde birbiriyle haberleşmek isteyen.
+
+66
+00:13:05,399 --> 00:13:11,399
+Cihazlar var, ağ cihazları var.
+
+67
+00:13:11,399 --> 00:13:24,529
+Bu ağ cihazların haberleşmek için aslında neye karar vermeleri lazım?
+
+68
+00:13:24,529 --> 00:13:32,529
+Kendilerine gelen bir paketin, ki ağın birbiriyle bağlı cihazlarla olduğu oluştuğu düşünülürse.
+
+69
+00:13:32,529 --> 00:13:39,529
+Kendilerine gelen paketin bir sonraki adımda nereye gönderilecek?
+
+70
+00:13:39,970 --> 00:13:43,970
+Aslında bu yaptığımız işlemi routing diyoruz.
+
+71
+00:13:43,970 --> 00:13:51,970
+Bu işlemi yapmak için verdiğimiz kararı oluşturan bir yapıya da routing algoritması diyoruz.
+
+72
+00:13:51,970 --> 00:13:59,970
+Algoritmanın yapısına göre aslında bizim bir paketi, kendimize gelen bir paketi nereye göndereceğimiz,
+
+73
+00:13:59,970 --> 00:14:04,970
+nereye ileteceğimiz belirleniyor.
+
+74
+00:14:05,409 --> 00:14:11,409
+Bu iletme, forward yapma işlerine de forwarding diyoruz.
+
+75
+00:14:11,409 --> 00:14:15,409
+Yani şeydeki gibi bir ilişki kurabilirsiniz aslında.
+
+76
+00:14:15,409 --> 00:14:19,409
+Nedir o?
+
+77
+00:14:19,409 --> 00:14:24,409
+Scheduler ve dispatcher arasındaki ilişkiyi işletim sisteminde kurduğumuz,
+
+78
+00:14:24,409 --> 00:14:28,409
+scheduler dispatcher arasındaki ilişkiyi kurabilirsiniz.
+
+79
+00:14:28,409 --> 00:14:37,230
+Routing bu kararın alınması için gerekli olan bilginin
+
+80
+00:14:37,669 --> 00:14:48,620
+toplanması ve o bilgi üzerinden bir kararın verilmesi.
+
+81
+00:14:48,620 --> 00:14:51,620
+Forwarding ise bu işlemin gerçekleştirilmesi durum.
+
+82
+00:14:51,620 --> 00:14:57,620
+Yani paketi o bufferdan al, bu haklın bufferuna koy, devam et.
+
+83
+00:14:57,620 --> 00:15:01,620
+Aynı şeyde yaptığımız, schedulerde yaptığımız şey.
+
+84
+00:15:01,620 --> 00:15:05,620
+Scheduler bir sonra çalışacak olan prosesi seçiyor.
+
+85
+00:15:05,620 --> 00:15:07,620
+Dispatcher da bu işi yerine getiriyor.
+
+86
+00:15:08,059 --> 00:15:17,000
+Şimdi routing algoritması dediğimiz zaman aslında
+
+87
+00:15:17,000 --> 00:15:33,330
+birkaç tane şeyi konuşmamız lazım.
+
+88
+00:15:33,330 --> 00:15:39,330
+Bir karar vereceğimize göre bir kriterimiz olması lazım.
+
+89
+00:15:39,330 --> 00:15:41,330
+Kriterimiz ne olabilir?
+
+90
+00:15:41,330 --> 00:15:47,330
+Kriterimiz efektiflik olabilir, adil olma olabilir.
+
+91
+00:15:47,769 --> 00:15:51,769
+Neyi optimize etmek istiyoruz? Ne yönden optimize etmek istiyoruz?
+
+92
+00:15:51,769 --> 00:15:55,769
+Bir networkten bahsettiğimiz, bir bilgisayar ağından bahsettiğimiz zaman
+
+93
+00:15:55,769 --> 00:16:01,769
+aslında ağların bir bilgisayar ağ içerisindeki her bir hattın nesi olabilir?
+
+94
+00:16:01,769 --> 00:16:03,769
+Mesela kapasitesi olabilir.
+
+95
+00:16:03,769 --> 00:16:09,769
+Bu kapasitenin utilization'ı, yani ne kadar efektif kullanıldığı bir kriter olabilir.
+
+96
+00:16:09,769 --> 00:16:12,769
+Bu hatt her zaman şey olmak durumunda değil.
+
+97
+00:16:13,210 --> 00:16:17,210
+Evde birbirine bağladığımız ağ cihazları olmak durumunda değil.
+
+98
+00:16:17,210 --> 00:16:23,210
+Birbiri arasında geçişin bedavi olduğu hatlar olmak zorunda değil.
+
+99
+00:16:23,210 --> 00:16:25,210
+Ne olabildi?
+
+100
+00:16:25,210 --> 00:16:31,210
+Biraz konuşmuştuk hatırlarsanız internet yapısını ilk derste konuşurken.
+
+101
+00:16:31,210 --> 00:16:34,210
+ISP'ler var, servis sağlayışlar var.
+
+102
+00:16:34,210 --> 00:16:38,210
+Bu ISP'lerin birbirine bağlanması için de IXP'ler var.
+
+103
+00:16:38,649 --> 00:16:40,649
+İnterexchange point'ler var.
+
+104
+00:16:40,649 --> 00:16:44,649
+Bu point'ler de aslında bir mesh yapısında neredeyse,
+
+105
+00:16:44,649 --> 00:16:51,649
+çoğu zaman routürler, yani ağ cihazları birbirlerine bağlılar mesh yapısında.
+
+106
+00:16:51,649 --> 00:16:55,649
+Dolayısıyla aslında şu oluyor, bir servis sağlayıcının network'ından
+
+107
+00:16:55,649 --> 00:16:58,649
+diğer servis sağlayıcının network'una geçtiğini bizde
+
+108
+00:16:58,649 --> 00:17:03,649
+çoğu zaman bu servis sağlayıcının kendi aralarındaki anlaşmalara bağlı olarak
+
+109
+00:17:03,649 --> 00:17:05,650
+bir maliyet oluşuyor.
+
+110
+00:17:06,089 --> 00:17:11,089
+Dolayısıyla benim herhangi bir paketi ya da bir grup paketi
+
+111
+00:17:11,089 --> 00:17:14,089
+bir noktadan bir noktaya gönderirken
+
+112
+00:17:14,089 --> 00:17:25,839
+kullanacağım linkler hangi farklı özelliklerine göre değerlendirilir,
+
+113
+00:17:25,839 --> 00:17:29,839
+bunlardan bir tanesi de doğal olarak maliyettir.
+
+114
+00:17:29,839 --> 00:17:33,839
+Dolayısıyla toparlanacak olursak,
+
+115
+00:17:34,279 --> 00:17:44,529
+Aslında toplamda baktığınızda network katmanı yazılımı içerisinde
+
+116
+00:17:44,529 --> 00:17:53,529
+gelen bir paketin hangi alt line üzerinden gönderileceğini
+
+117
+00:17:53,529 --> 00:17:55,529
+belirttiğimiz yapılardan bir tanesi.
+
+118
+00:17:55,529 --> 00:17:57,529
+Bu yıl içerisinde ne yapması lazım?
+
+119
+00:17:59,529 --> 00:18:02,529
+Bir kere halkların özellikleri neyse bunları topluyor.
+
+120
+00:18:02,970 --> 00:18:06,970
+Bununla ilgili bir bilgi oluşturuyor, maintain ediyor olması lazım.
+
+121
+00:18:06,970 --> 00:18:11,970
+Bir başka şey, optimize edip hangi metrik üzerinden gidiyorsak
+
+122
+00:18:11,970 --> 00:18:14,970
+bunun optimizasyonunu yapması lazım.
+
+123
+00:18:14,970 --> 00:18:23,509
+Ve ağ üzerinde gerçekleşen değişikliklere kendini uyarlaması lazım.
+
+124
+00:18:23,509 --> 00:18:27,509
+Bu işi yaparken proaktif ya da reactif davranıyor olabilir.
+
+125
+00:18:27,509 --> 00:18:32,509
+Yani routing bilgisini ihtiyaç duymadan önce oluşturuyor olabilir.
+
+126
+00:18:32,950 --> 00:18:35,950
+Periodik olarak bilgiyi topluyor olabilir.
+
+127
+00:18:35,950 --> 00:18:37,950
+Yani proaktif olabilir.
+
+128
+00:18:37,950 --> 00:18:44,950
+Ya da bilgiyi ihtiyaç anında toplayıp buna göre bir karar veriyor olabilir.
+
+129
+00:18:44,950 --> 00:18:46,950
+Reaktif olabilir.
+
+130
+00:18:46,950 --> 00:18:55,640
+Şimdi forwarding'i de zaten sadece bu işin gerçeklenmesi kısmı olduğunu konuşmuştuk.
+
+131
+00:18:58,640 --> 00:19:02,640
+Burada optimistik principle yani bir şeyin optimum olması,
+
+132
+00:19:03,079 --> 00:19:05,079
+artık demin konuştuğumuz kriterlere göre hani
+
+133
+00:19:07,079 --> 00:19:13,079
+bu şey olabilir, para olabilir, hız olabilir, kapasite olabilir vs.
+
+134
+00:19:14,079 --> 00:19:20,079
+Optimal olması ya da optimal olarak belirlenmesiyle ilgili şöyle bir nokta var.
+
+135
+00:19:20,079 --> 00:19:24,079
+Buradaki optimistik principle, optimumun belirlenmesi değil.
+
+136
+00:19:24,079 --> 00:19:28,079
+Optimalistik içerisinde şunu yapıyoruz.
+
+137
+00:19:28,519 --> 00:19:33,519
+Artık da adım adım bir hop ileriye bir hop ileriye yol oluşturuyoruz.
+
+138
+00:19:33,519 --> 00:19:40,519
+Yani bir başlangıç noktamızdan, çıkış noktamızdan, olası varış noktalarımıza kadar en iyi yolları buluyoruz.
+
+139
+00:19:40,519 --> 00:19:42,519
+Kriterimiz neydi ona göre.
+
+140
+00:19:42,519 --> 00:19:46,519
+Bu yolları bulduğumuz zaman optimistik principle der ki,
+
+141
+00:19:46,519 --> 00:19:50,519
+mesela sol tarafta gördüğünüz network üzerinde A, B, C, D, E vs.
+
+142
+00:19:50,519 --> 00:19:53,519
+diye neye kadar, O'ya kadar giden bir network var.
+
+143
+00:19:53,519 --> 00:19:56,519
+İsimlendirme O'ya kadar gidiyor.
+
+144
+00:19:56,960 --> 00:20:03,960
+Network içerisinde eğer benim mesela burada örnekte B üzerinden konuşulmuş,
+
+145
+00:20:03,960 --> 00:20:05,960
+B üzerinden gidilmiş,
+
+146
+00:20:05,960 --> 00:20:12,960
+B'den olası diğer tüm notlara nasıl gideceğime dair bir bilgi çıkartmam lazım.
+
+147
+00:20:12,960 --> 00:20:17,960
+Bu bilgi zaten yapısı, doğası göre bir tree formunda.
+
+148
+00:20:17,960 --> 00:20:20,960
+Optimalistik principle de temel olarak der ki,
+
+149
+00:20:21,400 --> 00:20:25,400
+benim B'den mesela M'ye kadar optimum olan yolum,
+
+150
+00:20:25,400 --> 00:20:32,400
+B'den C'ye, C'den J'ye, J'den N'ye, N'den de M'ye ise,
+
+151
+00:20:32,400 --> 00:20:37,400
+B ile J arasındaki yol da optimumdur,
+
+152
+00:20:37,400 --> 00:20:40,400
+J ile N arasındaki yol da optimumdur,
+
+153
+00:20:40,400 --> 00:20:42,400
+J ile M arasındaki yol da optimumdur.
+
+154
+00:20:42,400 --> 00:20:45,400
+Yani bu yol üzerindeki her notun,
+
+155
+00:20:45,400 --> 00:20:50,400
+yol üzerindeki diğer notlarla olan bağlantısı optimumdur, o yönde.
+
+156
+00:20:50,839 --> 00:20:54,839
+Burada şöyle bir şey var, network çift yönlü bir haberleşme.
+
+157
+00:20:54,839 --> 00:20:57,839
+Şu an bit direction'lı konuşuyoruz,
+
+158
+00:20:57,839 --> 00:21:00,839
+bir tarafa doğru giden hattı konuşuyoruz.
+
+159
+00:21:00,839 --> 00:21:05,839
+Bazen ters yöne doğru giden trafiğin optimalitesi farklı olabilir,
+
+160
+00:21:05,839 --> 00:21:08,839
+linklerinin karakteristine vesaireye bağlı olarak.
+
+161
+00:21:08,839 --> 00:21:12,839
+Dolayısıyla o zaman çift durumdan bahsedebiliriz.
+
+162
+00:21:12,839 --> 00:21:16,839
+Ama şu anki durumda optimality principle der ki,
+
+163
+00:21:17,279 --> 00:21:20,279
+ben iki nokta arasında bir optimum yol bulduysam,
+
+164
+00:21:20,279 --> 00:21:25,279
+bu FET üzerindeki diğer düğümlerin de kendi aralarındaki optimum yolu bulmuşumdur.
+
+165
+00:21:25,279 --> 00:21:29,279
+Yani B'den M'ye giderken C, J, N üzerinden geçiyorsam,
+
+166
+00:21:29,279 --> 00:21:32,279
+J ile N arasındaki yol da optimum olmalıdır.
+
+167
+00:21:32,279 --> 00:21:35,279
+Zaten o yol optimum değil ise,
+
+168
+00:21:35,279 --> 00:21:38,279
+benim daha iyi başka bir yolum olmalıdır.
+
+169
+00:21:38,279 --> 00:21:42,279
+O yolu bulmuş olmam gerekiyordu, seçmiş olmam gerekiyordu.
+
+170
+00:21:42,279 --> 00:21:45,279
+O da bulunamadıysa zaten sıkıntı var.
+
+171
+00:21:45,720 --> 00:21:49,720
+O da bulunduysa Ciyan hocanızın dediği gibi optimum yoldur.
+
+172
+00:21:49,720 --> 00:21:51,720
+Bu bizi çok rahatlatıyor.
+
+173
+00:21:51,720 --> 00:21:58,720
+Çünkü bu sayede bir başlangıç noktasından bir barış noktasına kadar
+
+174
+00:21:58,720 --> 00:22:03,720
+aradaki geçiş noktalarını da belirlemiş oluyoruz.
+
+175
+00:22:03,720 --> 00:22:06,720
+Ve sadece iki nokta için değil,
+
+176
+00:22:06,720 --> 00:22:10,720
+o iki nokta arasında yer alan diğer düğümler,
+
+177
+00:22:11,160 --> 00:22:16,160
+diğer bosslar içinde routingi, yönlendirmeyi çıkartmış oluyoruz.
+
+178
+00:22:16,160 --> 00:22:22,160
+Aslında bu sync tree'yi her düğüm için oluşturma ihtiyacı var.
+
+179
+00:22:22,160 --> 00:22:26,160
+Tabii bu örnekte B'nin başlangıç noktası olduğu var sayılmış.
+
+180
+00:22:26,160 --> 00:22:30,160
+Ama A'yı, C'yi, J'yi veya ne bileyim,
+
+181
+00:22:30,160 --> 00:22:33,160
+E'yi başlangıç noktası olarak kabul etseydik,
+
+182
+00:22:33,160 --> 00:22:35,160
+onların sync tree'si farklı olacaktı.
+
+183
+00:22:35,160 --> 00:22:38,160
+Buradan da şunu anlamamız gerekiyor aslında.
+
+184
+00:22:38,599 --> 00:22:41,599
+Tokoloji içerisinde yer alan her router,
+
+185
+00:22:41,599 --> 00:22:46,599
+yer alan her host kendisini başlangıç noktası olarak kabul edip,
+
+186
+00:22:46,599 --> 00:22:51,599
+oradan diğer routere veya hostlere nasıl erişeceğine dair
+
+187
+00:22:51,599 --> 00:22:53,599
+sync tree'yi oluşturmalı.
+
+188
+00:22:53,599 --> 00:22:56,599
+Yani tokolojide birden fazla sync tree var arkadaşlar.
+
+189
+00:22:56,599 --> 00:22:59,599
+Bunu hiçbir zaman unutmayın. Bu sadece bir tanesi için.
+
+190
+00:22:59,599 --> 00:23:02,599
+Herkesin tree'si kendine özel geldi.
+
+191
+00:23:03,039 --> 00:23:06,039
+Ben de ilerlerken.
+
+192
+00:23:06,039 --> 00:23:14,839
+Şimdi routing için uyanmış olan yöntemleri
+
+193
+00:23:14,839 --> 00:23:19,839
+aslında baktığımızda veri yapıları ve algoritmalar derslerinde
+
+194
+00:23:19,839 --> 00:23:22,839
+gördünüz, onları işlediniz.
+
+195
+00:23:22,839 --> 00:23:26,839
+Çünkü topoloji dediğiniz şey bir graf.
+
+196
+00:23:26,839 --> 00:23:29,839
+Bu graf az önce Cihan hocanızın söylediği gibi
+
+197
+00:23:29,839 --> 00:23:33,839
+tek yönlü de olabilir, çift yönlü de olabilir.
+
+198
+00:23:34,279 --> 00:23:38,279
+Ancak işi kolaylaştırmak ve basite indirge etmek adına
+
+199
+00:23:38,279 --> 00:23:43,279
+başlangıçta bu grafta yer alan bütün bağlantıların
+
+200
+00:23:43,279 --> 00:23:48,279
+çift yönlü olduğunu, yani A'dan B'ye bir yol bulduğumuzda
+
+201
+00:23:48,279 --> 00:23:52,279
+B'den A'ya da ters yönde giderek o yolu bulduğumuzu kabul ediyoruz.
+
+202
+00:23:52,279 --> 00:23:54,279
+Bir tarafı çözmemiz yeterli.
+
+203
+00:23:54,279 --> 00:23:57,279
+Ancak öyle uygulamalar olabiliyor ki,
+
+204
+00:23:57,279 --> 00:23:59,279
+öyle ihtiyaçlar olabiliyor ki,
+
+205
+00:23:59,720 --> 00:24:04,720
+veya güvenillilikle alakalı, para ile alakalı,
+
+206
+00:24:04,720 --> 00:24:08,720
+harcanacak, arada atlanacak, geçilecek servis
+
+207
+00:24:08,720 --> 00:24:12,720
+sağlayıcıların bunu ücrettendirmesiyle alakalı,
+
+208
+00:24:12,720 --> 00:24:15,720
+politik nedenlerle alakalı, kurumsal,
+
+209
+00:24:15,720 --> 00:24:19,720
+organizasyonel rekabetle alakalı bir sürü sebep kriter
+
+210
+00:24:19,720 --> 00:24:20,720
+olabilir.
+
+211
+00:24:20,720 --> 00:24:22,720
+Bir tarafa giderken izlenen yolda,
+
+212
+00:24:22,720 --> 00:24:25,720
+diğer ters yönde izlenen yol aynı olmayabiliyor.
+
+213
+00:24:25,720 --> 00:24:27,720
+Fiziksel ya da şeysel de olabilir.
+
+214
+00:24:28,160 --> 00:24:30,160
+Topoloji gereği de olabilir.
+
+215
+00:24:30,160 --> 00:24:32,160
+Yani uydu üzerinden haberleşirken,
+
+216
+00:24:32,160 --> 00:24:35,160
+uyduya sizin bir şey gönderme şansınız olmayabilir.
+
+217
+00:24:35,160 --> 00:24:37,160
+Ama uydu size gönderir.
+
+218
+00:24:37,160 --> 00:24:38,160
+Gönderiyordur.
+
+219
+00:24:38,160 --> 00:24:41,160
+Geri dönüşü, hat, land line üzerinden gerçekleşebilir.
+
+220
+00:24:41,160 --> 00:24:44,160
+Şimdi birinci yöntem, en temeli,
+
+221
+00:24:44,160 --> 00:24:46,160
+shortest path algoritması.
+
+222
+00:24:46,160 --> 00:24:49,160
+Aslında shortest path algoritmasında uyguladığımız
+
+223
+00:24:49,160 --> 00:24:52,160
+algoritma, Dijkstra'nın algoritması.
+
+224
+00:24:52,160 --> 00:24:56,160
+Her link, topolojide her link,
+
+225
+00:24:56,599 --> 00:24:59,599
+routers ve hostlar arasındaki bağlantılar,
+
+226
+00:24:59,599 --> 00:25:04,599
+negatif olmayan bir ağırlık ile ilişkilendiriliyor.
+
+227
+00:25:04,599 --> 00:25:07,599
+İşin doğası gereği bu ağırlığı,
+
+228
+00:25:07,599 --> 00:25:10,599
+temel olarak bir mesafe olarak düşünüyoruz.
+
+229
+00:25:10,599 --> 00:25:13,599
+Ama bunu kesinlikle ve kesinlikle,
+
+230
+00:25:13,599 --> 00:25:15,599
+kilometre cinsinden, metre cinsinden,
+
+231
+00:25:15,599 --> 00:25:19,599
+gidilecek yol cinsinden bir mesafe olarak düşünmeyin.
+
+232
+00:25:19,599 --> 00:25:21,599
+Bunu bir maliyet olarak düşünün.
+
+233
+00:25:21,599 --> 00:25:25,599
+Bu ağırlık aynı zamanda maliyet olarak.
+
+234
+00:25:25,599 --> 00:25:28,599
+Ama shortest path ne?
+
+235
+00:25:28,599 --> 00:25:31,599
+Bu ağırlıkları topladığımız zaman,
+
+236
+00:25:31,599 --> 00:25:34,599
+ucuca eklediğimizde birden fazla
+
+237
+00:25:34,599 --> 00:25:37,599
+aynı yöne giden yol varsa eğer,
+
+238
+00:25:37,599 --> 00:25:40,599
+her birinin toplama arasında en düşük
+
+239
+00:25:40,599 --> 00:25:43,599
+toplama sahip olan nedir?
+
+240
+00:25:43,599 --> 00:25:45,599
+Shortest path'dir.
+
+241
+00:25:45,599 --> 00:25:51,599
+Bazen olayı sadece hop seviyesine de indirebiliyoruz.
+
+242
+00:25:51,599 --> 00:25:54,599
+Yani diyoruz ki her şeyin ağırlığı bir olsun,
+
+243
+00:25:54,599 --> 00:25:56,599
+her linkin ağırlığı bir olsun,
+
+244
+00:25:56,599 --> 00:26:00,599
+o zaman bir router'dan veya bir host'dan,
+
+245
+00:26:00,599 --> 00:26:03,599
+diğer bir host'a, diğer bir router'da gittiğimde,
+
+246
+00:26:03,599 --> 00:26:07,599
+bir ağırlıkla gittim yani bir sıçrama yaptım,
+
+247
+00:26:07,599 --> 00:26:09,599
+bir hop gerçekleştirdim.
+
+248
+00:26:09,599 --> 00:26:12,599
+Bir daha ilerledim iki oldu, bir daha ilerledim üç oldu.
+
+249
+00:26:12,599 --> 00:26:16,599
+O zaman hani şöyle bir geriye dönecek olursak,
+
+250
+00:26:16,599 --> 00:26:21,599
+bakın B'den M'ye ağırlıkların eşit olduğu,
+
+251
+00:26:21,599 --> 00:26:25,599
+hop olarak hesaplandığı bir mantıkta,
+
+252
+00:26:25,599 --> 00:26:30,599
+C1 hop, J2 hop, N3 hop, M4 hop.
+
+253
+00:26:30,599 --> 00:26:33,599
+Bu durumda şurada gördüğünüz sync tree'de
+
+254
+00:26:33,599 --> 00:26:36,599
+B ile M arasındaki shortest path
+
+255
+00:26:36,599 --> 00:26:39,599
+4 hop ile ifade ediliyor.
+
+256
+00:26:39,599 --> 00:26:43,599
+Veya B ile E arasındaki shortest path
+
+257
+00:26:43,599 --> 00:26:49,599
+aynı hesaba göre B, C, C, J, E, 3 hop ile ifade ediliyor.
+
+258
+00:26:49,599 --> 00:26:51,599
+Bu kadar da basitleştirebiliyoruz.
+
+259
+00:26:51,599 --> 00:26:55,599
+Şimdi çoğu zaman işi kolaylaştırmak için,
+
+260
+00:26:55,599 --> 00:26:59,599
+kavramsal olarak bir şey çalışır mı, çalışmaz mı,
+
+261
+00:26:59,599 --> 00:27:02,599
+uygun olur mu, olmaz mı anlamak için,
+
+262
+00:27:02,599 --> 00:27:05,599
+network topolojisinde hopla başlayıp,
+
+263
+00:27:05,599 --> 00:27:08,599
+daha sonra farklı maliyetleri,
+
+264
+00:27:08,599 --> 00:27:11,599
+farklı ağırlıkları işin içine sokabiliyoruz.
+
+265
+00:27:11,599 --> 00:27:15,599
+Az önce söyledim ya, işte o hattın güvenilliliği,
+
+266
+00:27:15,599 --> 00:27:17,599
+o hattın güvenliği,
+
+267
+00:27:17,599 --> 00:27:19,599
+veyahut da Cihan hocasının söylediği gibi,
+
+268
+00:27:19,599 --> 00:27:22,599
+şimdi uydudan aşağıya, down wing'te
+
+269
+00:27:22,599 --> 00:27:26,599
+göndermenin maliyeti her anlamda çok düşük bir seferde,
+
+270
+00:27:26,599 --> 00:27:29,599
+ama aşağıdan yukarıya uyduyla,
+
+271
+00:27:29,599 --> 00:27:32,599
+uyduya göndermenin maliyeti inanılmaz yüksek.
+
+272
+00:27:32,599 --> 00:27:37,599
+Yani demek ki burada bir yöndeki maliyet ile
+
+273
+00:27:37,599 --> 00:27:40,599
+diğer yöndeki maliyet, yani ağırlık da farklı olabiliyor.
+
+274
+00:27:40,599 --> 00:27:44,599
+İşin içine hop haricinde başka şeyler de gelebiliyor.
+
+275
+00:27:44,599 --> 00:27:48,599
+Evet, yani Dijkstra algoritmasını zaten görüyorsunuz,
+
+276
+00:27:48,599 --> 00:27:51,599
+yani burada da örneği var,
+
+277
+00:27:51,599 --> 00:27:59,599
+işte A'dan D'ye olan en kısa yolun hesaplanmasıyla alakalı,
+
+278
+00:27:59,599 --> 00:28:04,599
+pembeler ile ve oklarla gösterilmiş olan yapı,
+
+279
+00:28:04,599 --> 00:28:08,599
+adım adım ilk 5 tane aşamasını gösteriyor,
+
+280
+00:28:08,599 --> 00:28:12,599
+A'dan D'ye, sync tree'nin oluşturulması.
+
+281
+00:28:12,599 --> 00:28:15,599
+Bunu bizim burada tekrar size anlatmamıza gerek yok,
+
+282
+00:28:15,599 --> 00:28:20,599
+çünkü bunu defalarca algoritmalar dersinde gözden geçiriyorsunuz,
+
+283
+00:28:20,599 --> 00:28:24,599
+grafları, işlerken, oradaki bilginizi burada kullanacaksınız arkadaşlar.
+
+284
+00:28:24,599 --> 00:28:27,599
+Burada yine bunun implementasyonu var,
+
+285
+00:28:27,599 --> 00:28:30,599
+onu da geçiyorum, onunla da...
+
+286
+00:28:30,599 --> 00:28:33,599
+Evet, çünkü bir matriz matrizini set edip,
+
+287
+00:28:33,599 --> 00:28:36,599
+ondan sonra adım adım şey yapıyorsunuz.
+
+288
+00:28:36,599 --> 00:28:42,599
+Şimdi flooding, flooding'in kelime, anlamı sel, su taşkını.
+
+289
+00:28:42,599 --> 00:28:44,599
+Peki, bizim için niye önemli?
+
+290
+00:28:44,599 --> 00:28:50,599
+Bizim için network açısından çok temel bir kriter sebebiyle önemli.
+
+291
+00:28:50,599 --> 00:28:57,599
+Eğer bir network'te, bir topolojide, bir nod'dan, bir host'tan çıkan bilginin,
+
+292
+00:28:57,599 --> 00:29:00,599
+o topolojideki diğer hostlara,
+
+293
+00:29:00,599 --> 00:29:05,599
+her hali karda topolojide yaşanabilecek bütün sıkıntılara rağmen
+
+294
+00:29:05,599 --> 00:29:11,599
+bütün çökmelere, bütün garip olaylara rağmen ulaşmasını istiyorsak
+
+295
+00:29:11,599 --> 00:29:18,599
+uygulayacağımız en güvenilir, en garantili routing algoritması flooding.
+
+296
+00:29:18,599 --> 00:29:22,599
+Çünkü düşünün bir sel taşkının olduğunda
+
+297
+00:29:22,599 --> 00:29:27,599
+sula ne yer ne yoksa önlerine katıp her tarafa dağılıyorlar, değil mi?
+
+298
+00:29:27,599 --> 00:29:31,599
+Bir evlerin olduğu, sokakların, caddelerin şeylerin olduğu böyle
+
+299
+00:29:31,599 --> 00:29:33,599
+bazen YouTube'da falan görüyorsunuzdur,
+
+300
+00:29:33,599 --> 00:29:35,599
+Amerika'da oluyor, başka yerlerde oluyor,
+
+301
+00:29:35,599 --> 00:29:38,599
+kasırgalar sonrasında, sel taşkınları oluyor.
+
+302
+00:29:38,599 --> 00:29:39,599
+Her tarafa erişiliyor.
+
+303
+00:29:39,599 --> 00:29:41,599
+Senin söyleyeceğin bir şey mi var [öğrenci]?
+
+304
+00:29:41,599 --> 00:29:42,599
+Aynen öyle.
+
+305
+00:29:42,599 --> 00:29:44,599
+Bekleyip bitsin diye bekliyorum.
+
+306
+00:29:44,599 --> 00:29:49,599
+Burada unutmayın, Gökhan hocanın dediği en güvenilir tete
+
+307
+00:29:49,599 --> 00:29:53,599
+her yere gönderilebilir de ama en efektif değil.
+
+308
+00:29:53,599 --> 00:29:55,599
+En zarar verici aslında baktığımızda,
+
+309
+00:29:55,599 --> 00:29:57,599
+sel taşkını ne kadar zarar veriyorsa,
+
+310
+00:29:57,599 --> 00:30:00,599
+bu da topoloji, network'a o kadar zarar veriyor.
+
+311
+00:30:00,599 --> 00:30:02,599
+Çünkü aşırı yüklüyor.
+
+312
+00:30:02,599 --> 00:30:05,599
+Yani çoğu zaman full loading'i eğer
+
+313
+00:30:05,599 --> 00:30:08,599
+şey için de kullanıyorsanız,
+
+314
+00:30:08,599 --> 00:30:10,599
+unikesk için kullanıyorsanız,
+
+315
+00:30:10,599 --> 00:30:14,599
+yani bir notdan, diğer bir notta bir diz göndermek için kullanıyorsanız,
+
+316
+00:30:14,599 --> 00:30:15,599
+bu şey gibi oluyor.
+
+317
+00:30:15,599 --> 00:30:18,599
+Benim sizin bir arkadaşınıza bir şey iletmek için
+
+318
+00:30:18,599 --> 00:30:21,599
+herkesin birbirinin kulağına laf söylemesi gibi bir şey.
+
+319
+00:30:21,599 --> 00:30:25,599
+Sonunda tabi o kadar çöpüklü bilgi çıkmayacak ama
+
+320
+00:30:25,599 --> 00:30:30,599
+arada yüzlerce adımı defalarca belki de yoruyor oluyorsunuz.
+
+321
+00:30:30,599 --> 00:30:35,599
+Ama full loading hem Gökhan hocanın söylediği özelliklerden ötürü önemli
+
+322
+00:30:35,599 --> 00:30:38,599
+hem de çoğu zaman bir routing algoritması
+
+323
+00:30:38,599 --> 00:30:40,599
+implement ettiğiniz zaman
+
+324
+00:30:40,599 --> 00:30:43,599
+karşılaştırma için kullanabileceğiniz en temel algoritma.
+
+325
+00:30:43,599 --> 00:30:46,599
+Yani güvenilirlik anlamında,
+
+326
+00:30:46,599 --> 00:30:50,599
+yani delivery rate anlamında vs. anlamında
+
+327
+00:30:50,599 --> 00:30:53,599
+algoritmanızı onunla kıyaslayabilirsiniz.
+
+328
+00:30:53,599 --> 00:30:55,599
+Optimal halleri de var.
+
+329
+00:30:55,599 --> 00:30:59,599
+Directional full loading vs. falan gibi zaten geldikçe konuşacağız.
+
+330
+00:30:59,599 --> 00:31:02,599
+Aynı zamanda, sen az önce söyledin ya [öğrenci],
+
+331
+00:31:02,599 --> 00:31:06,599
+pek çok routing algoritmasının, akıllı routing algoritmasının
+
+332
+00:31:06,599 --> 00:31:09,599
+başlangıç aşaması da flooding de başlar.
+
+333
+00:31:09,599 --> 00:31:11,599
+Kontrollü bir şekilde başlar.
+
+334
+00:31:11,599 --> 00:31:15,599
+Sonra o flooding hani ortalığı böyle yakıp yıkmadan,
+
+335
+00:31:15,599 --> 00:31:18,599
+daha fazla zarar vermeden söndürülür.
+
+336
+00:31:18,599 --> 00:31:21,599
+Kontrollü bir şekilde söndürülür ve normale döner.
+
+337
+00:31:21,599 --> 00:31:28,599
+Bunun network terminolojisindeki karşılığı aslında
+
+338
+00:31:28,599 --> 00:31:34,599
+özellikle lokal networklerde broadcast storm olarak da geçer.
+
+339
+00:31:34,599 --> 00:31:37,599
+Storm biliyorsunuz fırtına.
+
+340
+00:31:37,599 --> 00:31:42,599
+Broadcast bir bilginin ortopolojideki her hosta gitmesi,
+
+341
+00:31:42,599 --> 00:31:45,599
+her hostun, az önce Cihan hocanızın söylediğini düşünün,
+
+342
+00:31:45,599 --> 00:31:48,599
+bir bilgiyi söylerken kulaktan kulağa, kulaktan kulağa,
+
+343
+00:31:48,599 --> 00:31:50,599
+herkes herkese, herkes herkese söylüyor.
+
+344
+00:31:50,599 --> 00:31:54,599
+İşte broadcast yapılıyor ve bu böyle bir fırtına şeklinde.
+
+345
+00:31:54,599 --> 00:31:57,599
+Onu sürekli yapmamak lazım.
+
+346
+00:31:57,599 --> 00:32:01,599
+Ama pek çok routing algoritması, akıllı olan yöntemler,
+
+347
+00:32:01,599 --> 00:32:03,599
+kontrollü bir şekilde bununla başlayıp,
+
+348
+00:32:03,599 --> 00:32:07,599
+ondan sonra daha düzgün, daha seyrek mesajlaşmayla
+
+349
+00:32:07,599 --> 00:32:10,599
+işi idare edecek hale dönüşürler.
+
+350
+00:32:10,599 --> 00:32:12,599
+Bunu unutmamak lazım.
+
+351
+00:32:12,599 --> 00:32:14,599
+Önemli bir algoritma.
+
+352
+00:32:14,599 --> 00:32:15,599
+Evet.
+
+353
+00:32:15,599 --> 00:32:20,599
+Aslında ileride söyleyebiliriz ama şimdi söylemekte fayda var.
+
+354
+00:32:20,599 --> 00:32:22,599
+Sen de söyledin ya.
+
+355
+00:32:22,599 --> 00:32:26,599
+Bakın, şu geriye dönebilir misin [öğrenci]?
+
+356
+00:32:26,599 --> 00:32:28,599
+Şuraya kadar.
+
+357
+00:32:28,599 --> 00:32:30,599
+Evet, optimality principle.
+
+358
+00:32:30,599 --> 00:32:35,599
+Bakın arkadaşlar, şimdi burada B'nin iki komşusu var,
+
+359
+00:32:35,599 --> 00:32:39,599
+A'nın üç komşusu var, D'nin bir, iki, üç, dört komşusu var.
+
+360
+00:32:39,599 --> 00:32:42,599
+Flooding yaptığımızı varsayalım.
+
+361
+00:32:42,599 --> 00:32:49,599
+Flooding yaptığımız zaman, B, A'dan geleni C'ye gönderebilir
+
+362
+00:32:49,599 --> 00:32:54,599
+veya A'dan geleni nereden geldiğine bakmaksızın A'ya da gönderebilir.
+
+363
+00:32:54,599 --> 00:32:57,599
+Çünkü aslında bir kontrol bitine ihtiyaç var değil mi?
+
+364
+00:32:57,599 --> 00:32:59,599
+Bu bana nereden geldi?
+
+365
+00:32:59,599 --> 00:33:03,599
+Ona göre gönderen yere göndereyim mi göndermeyeyim mi?
+
+366
+00:33:03,599 --> 00:33:07,599
+Hani B'de iki komşu olduğu için kabul edilebilir belki.
+
+367
+00:33:07,599 --> 00:33:09,599
+Ama D'yi düşünün.
+
+368
+00:33:09,599 --> 00:33:14,599
+D her geleni dört yere birden göndermek durumunda kalabilir.
+
+369
+00:33:14,599 --> 00:33:16,599
+H de aynı şekilde.
+
+370
+00:33:16,599 --> 00:33:19,599
+Öyleyse hiçbir kontrol yapmıyorsak,
+
+371
+00:33:19,599 --> 00:33:26,599
+bir topolojide gelen bir paketi geldiği yöne bakmaksızın,
+
+372
+00:33:26,599 --> 00:33:31,599
+her yöne tekrar bütün bağlantılar üzerinden tekrar gönderiyorsak,
+
+373
+00:33:31,599 --> 00:33:37,599
+bu flooding'in en temel, en basit primitif hali, kontrolsüz bir şekilde.
+
+374
+00:33:37,599 --> 00:33:42,599
+Bunu optimize etmenin birinci kuralı,
+
+375
+00:33:42,599 --> 00:33:45,599
+bakın flooding bile kendi içinde optimize edilebiliyor,
+
+376
+00:33:45,599 --> 00:33:49,599
+bana node olarak, kendimi hani bir node olarak düşünüyorum şu anda,
+
+377
+00:33:49,599 --> 00:33:51,599
+bana hangi linkten geldi?
+
+378
+00:33:51,599 --> 00:33:53,599
+İşte B'yi düşünelim, A linkinden geldi.
+
+379
+00:33:53,599 --> 00:33:56,599
+E o zaman zaten A biliyordu ki bunu bana yolladı.
+
+380
+00:33:56,599 --> 00:33:59,599
+Benim bunu tekrar A'ya göndermeme gerek yok.
+
+381
+00:33:59,599 --> 00:34:03,599
+Bunu ben A haricindeki diğer linklerime göndereyim.
+
+382
+00:34:03,599 --> 00:34:05,599
+Veya D'yi düşünelim.
+
+383
+00:34:05,599 --> 00:34:06,599
+E'den geldi.
+
+384
+00:34:06,599 --> 00:34:09,599
+O zaman I'ye göndermeme gerek yok.
+
+385
+00:34:09,599 --> 00:34:12,599
+H'ya, G'ye ve A'ya gönderebilirim.
+
+386
+00:34:12,599 --> 00:34:17,599
+Bu arada bunun bir adım sonrası da şu olacak.
+
+387
+00:34:17,599 --> 00:34:20,599
+Mesela D'ye önce A'dan geldi,
+
+388
+00:34:20,599 --> 00:34:25,599
+D broadcast etti, G'ye, H'ye ve U'ya gönderdi.
+
+389
+00:34:25,599 --> 00:34:31,599
+Ama aynı paket sonuçta bir şekilde dönüp dolanıp daha ilerleyen zamanda,
+
+390
+00:34:31,599 --> 00:34:34,599
+mesela U'dan J'ye, J'den E'ye, E'den H'ye,
+
+391
+00:34:34,599 --> 00:34:36,599
+E'den tekrar D'ye gelebilir.
+
+392
+00:34:36,599 --> 00:34:39,599
+Dolayısıyla bu durumda aslında
+
+393
+00:34:39,599 --> 00:34:42,599
+nobların bir buffer tutup,
+
+394
+00:34:42,599 --> 00:34:45,599
+bu bufferda daha önce alıp almadığını bu pakete kontrol etmesi
+
+395
+00:34:45,599 --> 00:34:49,599
+ve hani eğer aldıysa paketi sönümlendirmesi,
+
+396
+00:34:49,599 --> 00:34:53,599
+yani ben bunu daha önce broadcast ettim zaten arkadaşlar,
+
+397
+00:34:53,599 --> 00:34:54,599
+durması lazım.
+
+398
+00:34:54,599 --> 00:34:56,599
+Ama onun için paketin de içinde
+
+399
+00:34:56,599 --> 00:34:59,599
+unique bir identifier olmalı ki o buffer ederken
+
+400
+00:34:59,599 --> 00:35:03,599
+onun numarasını tutabilsin, şey yapabilsin.
+
+401
+00:35:03,599 --> 00:35:06,599
+Öyleyse yani flooding çok böyle
+
+402
+00:35:06,599 --> 00:35:09,599
+ortalığı yakıp yıkan bir algoritma olabileceği gibi,
+
+403
+00:35:09,599 --> 00:35:14,599
+bakın basit dokunuşlarla optimize edilerek
+
+404
+00:35:14,599 --> 00:35:19,599
+kontrolü ve bize çok fayda sağlayacak bir algoritmaya da dönüştürülebiliyor.
+
+405
+00:35:19,599 --> 00:35:23,599
+O yüzden flooding ne olur aklımızın bir kenarında tutun.
+
+406
+00:35:23,599 --> 00:35:27,599
+Önemli bir algoritma.
+
+407
+00:35:27,599 --> 00:35:28,599
+Şimdi.
+
+408
+00:35:28,599 --> 00:35:29,599
+Distance vector routing.
+
+409
+00:35:29,599 --> 00:35:34,599
+Evet evet evet. Distance vector routing.
+
+410
+00:35:34,599 --> 00:35:42,360
+Internet dediğimiz şu anda kullandığımız yapının başlangıcında
+
+411
+00:35:42,360 --> 00:35:51,360
+sonuçta bir flooding dışında akıllı routing algoritmasına ihtiyaç var.
+
+412
+00:35:51,360 --> 00:35:54,360
+Az önce saydığımız sebeplerden ötürü.
+
+413
+00:35:54,360 --> 00:36:00,360
+O yüzden internetin tasarımında çalışan akademisyenler,
+
+414
+00:36:00,360 --> 00:36:03,360
+çünkü o bir üniversite projesidir.
+
+415
+00:36:03,360 --> 00:36:08,360
+Üniversiteler, işte Amerika'da 5 tane üniversite bu iş için görevlendirilmiştir.
+
+416
+00:36:08,360 --> 00:36:11,360
+Bağımsız olarak çalışıp sonra eforlarını bir araya getirmişlerdir.
+
+417
+00:36:11,360 --> 00:36:17,360
+Ve sonuçta da bugün kullandığımız internet TCPIP protocol suiti ortaya çıkmıştır.
+
+418
+00:36:17,360 --> 00:36:25,360
+Bunlar çalışarak ortaya Distance Vector routing algoritmasını atıyorlar.
+
+419
+00:36:26,360 --> 00:36:38,360
+Hatta iki farklı araştırmacı benzer dönemlerde paralel bu işin üzerinde çalışıyorlar.
+
+420
+00:36:38,360 --> 00:36:41,360
+Biri Belman, diğeri Ford.
+
+421
+00:36:41,360 --> 00:36:46,360
+Ortaya attıkları şeyler o kadar çok benziyor ki ve aynı dönemde çalıştıkları için
+
+422
+00:36:46,360 --> 00:36:52,360
+yani birine bu konuda kredi verip öbürüne ya sen bunu yapmadın demek çok anlamlı değil.
+
+423
+00:36:52,360 --> 00:37:00,360
+Bir araya geliyorlar algoritma Belman-Ford algoritması olarak biliniyor literatüre de bu şekilde geçiyor.
+
+424
+00:37:00,360 --> 00:37:08,360
+Ve bu algoritmanın en önemli özelliklerinden biri bakın Distributed olması.
+
+425
+00:37:08,360 --> 00:37:14,360
+Çok önemli. Çünkü routing algoritmaları centralized olabilir veya Distributed olabilir.
+
+426
+00:37:14,360 --> 00:37:18,360
+Centralized routing algoritması nedir? Bir merkez var.
+
+427
+00:37:18,360 --> 00:37:26,360
+Bir merkez var. Bu merkez topoloji ile alakalı bilgiyi alıyor bir algoritma çalıştırıyor.
+
+428
+00:37:26,360 --> 00:37:34,360
+XYZ routing algoritması çalıştırıyor ve topolojide yer alan her not için routing bilgisi oluşturuyor.
+
+429
+00:37:34,360 --> 00:37:42,360
+Az önce dedik ya A için D için C için D için sync tri'lerin oluşturulması lazım.
+
+430
+00:37:42,360 --> 00:37:46,360
+Yani oradan yola çıkın bir tane kenarda koordinatör var.
+
+431
+00:37:46,360 --> 00:37:50,360
+Bir merkezi bir yönetici var. A'dan O'ya kadar gidiyordu yanılmıyorsam.
+
+432
+00:37:50,360 --> 00:37:54,360
+A'dan O'ya kadar topolojinin bilgisi bu merkeze geliyor.
+
+433
+00:37:54,360 --> 00:38:02,360
+Bu merkez A için B için C için O için sync tri'leri oluşturuyor.
+
+434
+00:38:02,360 --> 00:38:11,360
+Offline olarak oluşturuyor. Sonra bunları bu notlara A'ya ayrı B'ye ayrı N'ye dağıtıyor.
+
+435
+00:38:11,360 --> 00:38:16,360
+Ama tabii ki bunun güzel olduğu yerler varken çok sıkıntılı olduğu yerler de var.
+
+436
+00:38:16,360 --> 00:38:28,360
+Ufak topoloji ise, topoloji çok sık değişmiyorsa, topolojide kopmalar, eklenmeler, arızalar, göçmeler fazla yaşanmıyorsa o zaman bunu merkezi yaparsınız.
+
+437
+00:38:28,360 --> 00:38:32,360
+Hatta bazı topolojiler vardır ki çok sabittir, seneler boyu değişmeyebilir.
+
+438
+00:38:32,360 --> 00:38:41,360
+Kağıt üzerinde elle hesap ederek bile tasarım sırasında, by design diyoruz, tasarım sırasında bile bunları belirleyip yapabilirsiniz.
+
+439
+00:38:41,360 --> 00:38:43,360
+Ama topoloji büyüyorsa...
+
+440
+00:38:43,360 --> 00:38:52,360
+Yani bunu yapmanın güzelliği ya da bunu tercih etmenin nedeni şu, topoloji hakkında aslında detaylı bilgiye sahipsiniz.
+
+441
+00:38:52,360 --> 00:38:59,360
+Yani diğer konuşacağımız şimdi mesela Distance Factor Looking'te de, sonraki algoritmalarda da şey göreceksiniz.
+
+442
+00:38:59,360 --> 00:39:06,360
+Not sadece kendi etrafından haberdar ve bu hani sıkıntılara neden olabilir.
+
+443
+00:39:06,360 --> 00:39:12,360
+Yani bir adım ötesini göremiyor. Oradan bir şeyler kestirmeye, başkalarından aldığı bilgiyle bir şeyler kestirmeye çalışıyor.
+
+444
+00:39:12,360 --> 00:39:22,360
+Dolayısıyla sorun ve problem durumlarında bunu recover etmek her zaman çok kolay olmaya biliyoruz.
+
+445
+00:39:22,360 --> 00:39:26,360
+Zaten hep algoritmalarda giderken bu detayları konuşacağız.
+
+446
+00:39:26,360 --> 00:39:32,360
+Merkezi olmasının avantajı ama merkezi olduğu zaman da bazı şeylere tepkiniz çok geç olabilir.
+
+447
+00:39:33,360 --> 00:39:41,360
+Veya bilgiyi dağıtmak, yani şöyle düşünün şu anda dünyada internete bağlı kaç milyar not vardır?
+
+448
+00:39:41,360 --> 00:39:46,360
+Diyelim ki 10 milyar, 100 milyar not vardır ve siz çılgınsınız.
+
+449
+00:39:46,360 --> 00:39:50,360
+Diyorsunuz ki ben bunun her birinin routingini merkezi yapacağım.
+
+450
+00:39:50,360 --> 00:39:57,360
+100 milyar notun bütün topolojisinin bağlantısını bir yere taşımak için bile aslında routinge ihtiyacınız var.
+
+451
+00:39:57,360 --> 00:39:59,360
+Çünkü dünyanın her yerinden geliyor.
+
+452
+00:39:59,360 --> 00:40:05,360
+Hadi onu yaptınız, hesap ettiniz, dağıtırken bir yerde elektrik kesildi, öbür tarafta bu tur göçtü.
+
+453
+00:40:05,360 --> 00:40:09,360
+Yani siz dağıtmayı tamamlayamadan tahminan bir kısmı yer değiştireceksiniz.
+
+454
+00:40:09,360 --> 00:40:13,360
+Yani yetişmeniz mümkün değil.
+
+455
+00:40:13,360 --> 00:40:15,360
+O zamanda bunu ne yapmak gerekiyor?
+
+456
+00:40:15,360 --> 00:40:21,360
+Bilgisayarda pek çok algoritmada kullandığımız temel bir yaklaşım var.
+
+457
+00:40:21,360 --> 00:40:23,360
+Divide and concur yaklaşımı.
+
+458
+00:40:23,360 --> 00:40:27,360
+Böl ve yönet. Bunu da bölmemiz ve ona göre yönetmemiz lazım.
+
+459
+00:40:27,360 --> 00:40:30,360
+Bölmek demek bunu merkezi yapmayacağız demek.
+
+460
+00:40:30,360 --> 00:40:36,360
+Az önce konuştuğunuz, Cihan hocanızın söylediği gibi onu distributed, dağıtık bir şekilde yapacağız.
+
+461
+00:40:36,360 --> 00:40:39,360
+Ama her şeyin bir bedeli var.
+
+462
+00:40:39,360 --> 00:40:42,360
+Bunu dağıtık olarak yaptığımızda,
+
+463
+00:40:42,360 --> 00:40:51,360
+notlar ister router olsun, ister host olsun sadece ve sadece kendi etraflarında belirli bir bölgeyi görecekler.
+
+464
+00:40:51,360 --> 00:40:54,360
+Ya bakın bunu şöyle düşünebilirsiniz.
+
+465
+00:40:55,360 --> 00:41:01,360
+Şimdi diyelim ki İstanbul'da yaşıyorsunuz ve Ankara'da bir adrese gideceksiniz.
+
+466
+00:41:01,360 --> 00:41:07,360
+Ankara'ya varana kadar Ankara'daki o adrese nasıl ulaşacağınızla alakalı bir düşünceniz çok olmaz.
+
+467
+00:41:07,360 --> 00:41:14,360
+Yani ilk gördüğünüz benzinciler grup, abi Ankara'da bilmem ne sokağa nasıl giderim diye sormazsınız.
+
+468
+00:41:14,360 --> 00:41:16,360
+Ankara'ya ne taraftan çıkarım diyor.
+
+469
+00:41:16,360 --> 00:41:17,360
+Çıkarım diye işte.
+
+470
+00:41:17,360 --> 00:41:21,360
+Çevre yoluna nasıl bağlanıyorum, şeye nasıl bağlanıyorum onu sorarsınız.
+
+471
+00:41:21,360 --> 00:41:24,360
+O zaman demek ki bu mantık da çok yanlış değil.
+
+472
+00:41:24,360 --> 00:41:30,360
+Yani notlar kendi etraflarındaki diğer notları bilirlerse, onlarla konuşurlarsa,
+
+473
+00:41:30,360 --> 00:41:40,360
+bir şekilde bu notların arasında dış dünyaya bağlantıyı sağlayanlar da varsa onlar üzerinden dış dünyaya çıkabilirler.
+
+474
+00:41:40,360 --> 00:41:43,360
+Distance vector routing nasıl çalışıyor?
+
+475
+00:41:43,360 --> 00:41:46,360
+Bakın aşamalar çok net.
+
+476
+00:41:47,360 --> 00:41:51,360
+İngilizce, Türkçe burada karışık konuşmamızda bir sıkıntı olacağını zannetmiyorum.
+
+477
+00:41:51,360 --> 00:41:55,360
+Each note knows distance of links to its neighbors.
+
+478
+00:41:55,360 --> 00:42:00,360
+Her not komşularına olan linklerin mesafesini biliyor.
+
+479
+00:42:00,360 --> 00:42:02,360
+Tekrar üzerine basa basa söylüyoruz.
+
+480
+00:42:02,360 --> 00:42:09,360
+Bu mesafe bir diye hop cinsinden olabilir veya bir maliyet olabilir.
+
+481
+00:42:09,360 --> 00:42:15,360
+O yolun ödenmesi, kullanılması için ödenmesi gereken servis sağlayıcıya para olabilir.
+
+482
+00:42:15,360 --> 00:42:20,360
+O yolun belt viti olabilir, gecikmesi olabilir, error rate olabilir, her şey olabilir.
+
+483
+00:42:20,360 --> 00:42:22,360
+Ama en temel distance hop.
+
+484
+00:42:22,360 --> 00:42:28,360
+Each note advertizes vector of lowest known distances to all neighbors.
+
+485
+00:42:28,360 --> 00:42:30,360
+Bakın bir vektör var.
+
+486
+00:42:30,360 --> 00:42:32,360
+Şimdi burada sizi uyarayım.
+
+487
+00:42:32,360 --> 00:42:36,360
+Bu algoritma 75 yılında falan tasarlanmış arkadaşlar.
+
+488
+00:42:36,360 --> 00:42:39,360
+Üzerinden neredeyse 40 sene mi geçmiş?
+
+489
+00:42:39,360 --> 00:42:41,360
+Yok 50 sene geçmiş neredeyse.
+
+490
+00:42:41,360 --> 00:42:43,360
+50 seneye gidiyor.
+
+491
+00:42:43,360 --> 00:42:52,360
+O yüzden hani şöyle mi yapsaydık, böyle mi yapsaydık, niye böyle yapmamışlar, niye şöyle yapmamışlar kısmını bir kenara bırakın.
+
+492
+00:42:52,360 --> 00:42:55,360
+Yani bu kapanmış bir defter yapılmış.
+
+493
+00:42:55,360 --> 00:43:04,360
+Zaten sizin o aklınıza gelen şeyleri kendileri de daha sonra sordukları için yaşayıp da sıkıntılarını görüp biz bunu iyileştirelim, biz bunu düzeltelim demişler.
+
+494
+00:43:04,360 --> 00:43:12,360
+Şu anda distance vector routing'i anlatırken nasıl tasarlandıysa, nasıl kullanıldıysa hatalarıyla, sıkıntılarıyla beraber anlatacağız.
+
+495
+00:43:12,360 --> 00:43:16,360
+Sonrasında da bunların çözülmesi için neler yapılmış onları gözden geçireceğiz.
+
+496
+00:43:16,360 --> 00:43:18,360
+Yani şeyle uğraşmayın.
+
+497
+00:43:18,360 --> 00:43:20,360
+Bunu nasıl düzeltebilirim ile uğraşmayın.
+
+498
+00:43:20,360 --> 00:43:31,360
+Ancak buna rağmen hala da bazı şartlarda bazı topolojilerde belki bir ad hoc network'te distance vector routing'i uygulayabilirsiniz.
+
+499
+00:43:31,360 --> 00:43:33,360
+Ad hoc network nedir?
+
+500
+00:43:33,360 --> 00:43:38,360
+O anda kendi kendine kağıt üzerinde tasarlanmayan daha çok wireless'le karşımıza çıkıyor.
+
+501
+00:43:38,360 --> 00:43:48,360
+Nodların up and running olmasıyla arada wireless üzerinden haberleşme kurmasıyla anlık olarak yolların belirlendiği, görülmeyen, fiziksel olarak aslında var olmayan,
+
+502
+00:43:48,360 --> 00:43:55,360
+çünkü neden? Wireless, yani telsiz üzerinden gerçekleşen yollar, bağlantılar ile oluşturulan networkler.
+
+503
+00:43:55,360 --> 00:43:57,360
+Orada kullanabilirsin.
+
+504
+00:43:57,360 --> 00:43:59,360
+Öyleyse ikinci aşama neymiş?
+
+505
+00:43:59,360 --> 00:44:03,360
+Each node advertises vector of lowest known distances to all neighbors.
+
+506
+00:44:04,360 --> 00:44:15,360
+Bildiği en düşük mesafelerden oluşan bir vektörü, kendisinde oluşturduğu vektörü bütün komşularına gönderiyor.
+
+507
+00:44:15,360 --> 00:44:17,360
+Kaç tane bağlantısı varsa herkese gönderiyor.
+
+508
+00:44:17,360 --> 00:44:19,360
+Yani burada vektör dediğimiz ne?
+
+509
+00:44:19,360 --> 00:44:21,360
+Aslında çiftler gibi düşünülebilirsiniz.
+
+510
+00:44:21,360 --> 00:44:33,360
+Demek ki bir hafta bakacak olursanız beğenin komşusu A ve C vardı ve her iki komşusuna da komşularına olan yani A ve C'yi olan mesafesini gönderiyor.
+
+511
+00:44:33,360 --> 00:44:37,360
+Each node uses received vectors to update its own.
+
+512
+00:44:37,360 --> 00:44:45,360
+Bunları alıyor her biri ve buna göre kendisindeki vektörleri güncelliyor ve bu olay periodik olarak devam ediyor.
+
+513
+00:44:45,360 --> 00:44:47,360
+Şimdi dikkat.
+
+514
+00:44:47,360 --> 00:44:55,360
+Aslında herkes herkese bilgi gönderdiği için ve bunu periodik olarak yaptığı için belirli anlarda bir flooding gibi bir şey var değil mi?
+
+515
+00:44:55,360 --> 00:44:57,360
+Herkesin herkese göndermesi ama kontrollü.
+
+516
+00:44:57,360 --> 00:45:00,360
+Her an yapılmıyor, belirli bir period ile yapılıyor.
+
+517
+00:45:00,360 --> 00:45:04,360
+Bu da aslında routine'in güncelleme zamanına denk düşüyor.
+
+518
+00:45:04,360 --> 00:45:08,360
+Bakın burada sol tarafta topoloji verilmiş.
+
+519
+00:45:08,360 --> 00:45:13,360
+İşte A, B, C, D, E, F, G, H, I, C, K, L.
+
+520
+00:45:13,360 --> 00:45:17,360
+Şimdi, ne için hesaplıya bakın burada?
+
+521
+00:45:17,360 --> 00:45:22,699
+J'nin bakış açısıyla bakıyoruz.
+
+522
+00:45:22,699 --> 00:45:25,699
+J'nin komşuları neler arkadaşlar?
+
+523
+00:45:25,699 --> 00:45:30,699
+A, I, K ve H.
+
+524
+00:45:30,699 --> 00:45:38,699
+Yan tarafta da J açısından 4 tane vektör var.
+
+525
+00:45:38,699 --> 00:45:43,699
+J'nin A'ya olan dileği kendisi bunu ölçebilir.
+
+526
+00:45:43,699 --> 00:45:46,699
+Çünkü doğrudan komşusu 8.
+
+527
+00:45:46,699 --> 00:45:48,699
+I'ya olan dileği 10.
+
+528
+00:45:48,699 --> 00:45:50,699
+H'ya olan 12.
+
+529
+00:45:50,699 --> 00:45:52,699
+K'ya olan 6.
+
+530
+00:45:52,699 --> 00:45:57,699
+Şimdi kendisine diğerlerinden de bu bilgi geliyor ya.
+
+531
+00:45:57,699 --> 00:46:05,699
+Bunu gelip de kendi bilgisini de üzerine eklediği zaman yeni vektörünü hesaplıyor.
+
+532
+00:46:05,699 --> 00:46:08,699
+Bakın A'dan şöyle bir vektör almış.
+
+533
+00:46:08,699 --> 00:46:12,699
+A'nın A'ya mesafesi doğal olarak 0.
+
+534
+00:46:12,699 --> 00:46:15,699
+A'nın B'ye mesafesi 12.
+
+535
+00:46:15,699 --> 00:46:17,699
+A'nın C'ye 25.
+
+536
+00:46:17,699 --> 00:46:18,699
+A'nın D'ye 40.
+
+537
+00:46:18,699 --> 00:46:19,699
+A'nın E'ye 14.
+
+538
+00:46:19,699 --> 00:46:20,699
+F'ye 23.
+
+539
+00:46:20,699 --> 00:46:21,699
+G'ye 18.
+
+540
+00:46:21,699 --> 00:46:22,699
+H'ye 17.
+
+541
+00:46:22,699 --> 00:46:23,699
+I'ye 21.
+
+542
+00:46:23,699 --> 00:46:24,699
+J'ye 9.
+
+543
+00:46:24,699 --> 00:46:25,699
+K'ya 24.
+
+544
+00:46:25,699 --> 00:46:26,699
+L'ye 29.
+
+545
+00:46:26,699 --> 00:46:30,699
+Üşenmeden hepsini söylüyorum çünkü çok kritik bir şey var.
+
+546
+00:46:30,699 --> 00:46:38,699
+A'nın gönderdiği bu vektörde güvenilir olan gecikme veya hop diye,
+
+547
+00:46:38,699 --> 00:46:40,699
+kaç tane biliyor musunuz arkadaşlar?
+
+548
+00:46:40,699 --> 00:46:43,699
+Sadece ve sadece 3 tane.
+
+549
+00:46:43,699 --> 00:46:46,699
+Kendine olan gecikmesi 0.
+
+550
+00:46:46,699 --> 00:46:48,699
+Bu güvenilir bir D'ye.
+
+551
+00:46:48,699 --> 00:46:52,699
+E'ye olan gecikmesi çünkü doğrudan komşusu.
+
+552
+00:46:52,699 --> 00:46:55,699
+B'ye olan gecikmesi bir de J'ye olan.
+
+553
+00:46:55,699 --> 00:46:57,699
+Pardon 4 tane kendisi de saydınız.
+
+554
+00:46:57,699 --> 00:47:02,699
+Onun haricindekilerin hepsini nasıl hesapladı?
+
+555
+00:47:02,699 --> 00:47:06,699
+Komşularından gelen bilgiler üzerinden hesapladı.
+
+556
+00:47:06,699 --> 00:47:09,699
+Bakın benzer şekilde şimdi J'ye bu geldi.
+
+557
+00:47:09,699 --> 00:47:10,699
+J ne yapıyor?
+
+558
+00:47:10,699 --> 00:47:11,699
+Tamam diyor.
+
+559
+00:47:11,699 --> 00:47:14,699
+A'ya benim mesafem 8'di.
+
+560
+00:47:14,699 --> 00:47:15,699
+0'mış.
+
+561
+00:47:15,699 --> 00:47:16,699
+Tamam.
+
+562
+00:47:16,699 --> 00:47:19,699
+Demek ki zaten A'ya doğrudan bağlayayım.
+
+563
+00:47:19,699 --> 00:47:25,699
+Kendisindeki vektörde J'a'nın hesaplanmış yeni değerine 8.
+
+564
+00:47:25,699 --> 00:47:26,699
+B'ye.
+
+565
+00:47:26,699 --> 00:47:31,699
+A üzerinden gidersem diyor 12 artı 8 20.
+
+566
+00:47:31,699 --> 00:47:35,699
+I üzerinden gidersem 36 artı 8 44.
+
+567
+00:47:35,699 --> 00:47:41,699
+H üzerinden gidersem 31 artı 12 43.
+
+568
+00:47:41,699 --> 00:47:45,699
+K üzerinden gidersem 28 artı 6 34.
+
+569
+00:47:45,699 --> 00:47:47,699
+En düşüğü hangisi çıktı?
+
+570
+00:47:47,699 --> 00:47:50,699
+A üzerinden çünkü 20.
+
+571
+00:47:50,699 --> 00:47:52,699
+Bunu bu şekilde yaptı.
+
+572
+00:47:52,699 --> 00:47:53,699
+C'ye hesap ediyor.
+
+573
+00:47:53,699 --> 00:47:58,699
+25 artı 8, 18 artı 10, 19 artı 12, 36 artı 6.
+
+574
+00:47:58,699 --> 00:47:59,699
+Ne çıkıyor?
+
+575
+00:47:59,699 --> 00:48:00,699
+28.
+
+576
+00:48:00,699 --> 00:48:01,699
+Ne üzerinden?
+
+577
+00:48:01,699 --> 00:48:02,699
+I üzerinden.
+
+578
+00:48:02,699 --> 00:48:05,699
+Böyle bakın neler oluşturdu yeni değerler oluşturdu.
+
+579
+00:48:05,699 --> 00:48:13,699
+Artık bu J nodunun yeni vektörü ve bir sonraki turda komşularına bunu göndereceğim.
+
+580
+00:48:13,699 --> 00:48:17,699
+Şimdi bakın o kadar komik ve ilginç bir şey var ki.
+
+581
+00:48:17,699 --> 00:48:20,699
+Tasarım sırasında bunu fark etmiyorlar.
+
+582
+00:48:20,699 --> 00:48:24,699
+Çünkü her topolojide bu sorun ortaya çıkmıyor.
+
+583
+00:48:24,699 --> 00:48:27,699
+Mesifik belirli topolojiler de ortaya çıkıyor.
+
+584
+00:48:27,699 --> 00:48:35,699
+Bir noda diğer komşularından gelen ve o komşuları açısından network'taki diğer
+
+585
+00:48:35,699 --> 00:48:43,699
+notların mesafesini gösteren vektörlerdeki bazı değerler aslında nodun emin olamayacağı değerler.
+
+586
+00:48:43,699 --> 00:48:50,699
+Not sadece kendisine doğrudan bağlı olanlarla alakalı değerlerden emin olabilir.
+
+587
+00:48:50,699 --> 00:48:52,699
+Onları garanti edebilir.
+
+588
+00:48:52,699 --> 00:49:00,699
+Diğerleri zaman içerisinde az önce yaptığımız hesap gibi yaptığı hesaplarla oluşmuş değerler.
+
+589
+00:49:00,699 --> 00:49:01,699
+Mod bilmiyor.
+
+590
+00:49:01,699 --> 00:49:03,699
+Orada bir mesafe var.
+
+591
+00:49:03,699 --> 00:49:08,699
+Ama yani o mesafe hakikaten B üzerinden giderek mi oluştu?
+
+592
+00:49:08,699 --> 00:49:10,699
+E üzerinden giderek mi oluştu?
+
+593
+00:49:10,699 --> 00:49:12,699
+J üzerinden giderek mi oluştu?
+
+594
+00:49:12,699 --> 00:49:14,699
+Bunu bilmiyor.
+
+595
+00:49:14,699 --> 00:49:17,699
+Peki bunun sonucunda ne oluyor?
+
+596
+00:49:17,699 --> 00:49:21,699
+Bunun sonucunda count to infinity problemi oluşuyor.
+
+597
+00:49:21,699 --> 00:49:29,699
+Hata durumları yani notların göçmesi, ink bed'in göçmesi, router'ın restart etmesi ve
+
+598
+00:49:29,699 --> 00:49:36,699
+belirli şeyler Distance Vector'de count to infinity problemine sebep olabiliyor.
+
+599
+00:49:36,699 --> 00:49:40,699
+Baştan söyleyeyim bu problemin çözümü yok.
+
+600
+00:49:40,699 --> 00:49:45,699
+Bu problemin çözümü için literatür bir sürü araştırmayla dolu.
+
+601
+00:49:45,699 --> 00:49:48,699
+Yok City Horizon'ı var, yok başka bir şey var.
+
+602
+00:49:48,699 --> 00:49:52,699
+Yayın anlamında güzel bir kaynak olmuş, güzel bir şey olmuş.
+
+603
+00:49:52,699 --> 00:49:56,699
+O dönemde bu yayınlar yayınlanmış ama yok işte çözüm yok demiş.
+
+604
+00:49:56,699 --> 00:49:57,699
+Ne olmuş?
+
+605
+00:49:57,699 --> 00:49:59,699
+Distance Vector kenara konulmuş.
+
+606
+00:49:59,699 --> 00:50:02,699
+Onun yerine yeni bir tane routing algoritması devre alınmış.
+
+607
+00:50:02,699 --> 00:50:04,699
+Peki problemi görelim.
+
+608
+00:50:04,699 --> 00:50:08,699
+Şimdi bakın topoloji ilginç bir topoloji gibi düşünebilirsiniz ama olmayacak bir şey değil.
+
+609
+00:50:08,699 --> 00:50:13,699
+A, B, E, B, C, E, C, D, E, D, E, E bağlı diye düşünüyorum.
+
+610
+00:50:13,699 --> 00:50:17,699
+A başlangıçta network'ta yok.
+
+611
+00:50:17,699 --> 00:50:20,699
+Yani B, C, D, D, E bağlantısı var.
+
+612
+00:50:20,699 --> 00:50:22,699
+A network'e giriyor.
+
+613
+00:50:22,699 --> 00:50:26,699
+A network'e girer girmez, B diyor ben buna bir hopla ulaşıyorum.
+
+614
+00:50:26,699 --> 00:50:29,699
+Bunu hemen C'ye gönderiyor.
+
+615
+00:50:29,699 --> 00:50:36,699
+C diyor ki ben zaten B'ye bir hopla ulaşıyordum, B A'ye bir hopla ulaşıyormuş demek ki ben iki hopla ulaşıyorum.
+
+616
+00:50:36,699 --> 00:50:38,699
+Bunu D'ye gönderiyor.
+
+617
+00:50:38,699 --> 00:50:42,699
+D diyor C'ye ben bir hopla ulaşıyordum, C'ye iki ile ulaşıyormuş, üç.
+
+618
+00:50:42,699 --> 00:50:45,699
+İşte D bunu E'ye gönderdi.
+
+619
+00:50:45,699 --> 00:50:46,699
+Bakın ne kadar güzel.
+
+620
+00:50:46,699 --> 00:50:54,699
+Dört tane değişim sonrasında network'taki herkes A'dan haberdar, A'ya erişebilir durumda.
+
+621
+00:50:54,699 --> 00:50:57,699
+A'nın up and running olduğundan haberdar.
+
+622
+00:50:57,699 --> 00:50:59,699
+Burada gerçek hayatın tersi var.
+
+623
+00:50:59,699 --> 00:51:02,699
+Hani kötü haber tez duyulur deriz.
+
+624
+00:51:02,699 --> 00:51:04,699
+Bu da iyi haber tez duyuluyor.
+
+625
+00:51:04,699 --> 00:51:07,699
+Ama kötü haber baya gecikmeli geliyor.
+
+626
+00:51:07,699 --> 00:51:11,699
+Evet şimdi bakın ikinci parçaya geçelim.
+
+627
+00:51:11,699 --> 00:51:15,699
+İkinci parçada A'nın bağlantısı koptu.
+
+628
+00:51:15,699 --> 00:51:21,980
+B ona bir bağlıydı ya aslında bağlantı koptu.
+
+629
+00:51:21,980 --> 00:51:25,980
+Fakat C'den A için ne bilgisi geliyor?
+
+630
+00:51:25,980 --> 00:51:27,980
+İki uzaklıkta diyor.
+
+631
+00:51:27,980 --> 00:51:30,980
+B düşünüyor ben C'ye kaç uzaklıktayım? Bir.
+
+632
+00:51:30,980 --> 00:51:33,980
+O zaman tamam A bana üç uzaklıkta.
+
+633
+00:51:33,980 --> 00:51:39,980
+Şimdi bunu bir sonraki turda C'ye kendisi gönderiyor.
+
+634
+00:51:39,980 --> 00:51:44,980
+C diyor ki B A'ya üçle erişiyormuş.
+
+635
+00:51:44,980 --> 00:51:47,980
+Ben B'ye birle erişiyorum.
+
+636
+00:51:47,980 --> 00:51:50,980
+O zaman demek ki A bana dört uzaklıkta.
+
+637
+00:51:50,980 --> 00:51:53,980
+Bir sonraki turda bunu B'ye gönderiyor.
+
+638
+00:51:53,980 --> 00:51:56,980
+B kendisindeki uzaklığı beş yapıyor.
+
+639
+00:51:56,980 --> 00:51:59,980
+Bunu C'ye gönderiyor.
+
+640
+00:51:59,980 --> 00:52:03,980
+C kendisindekini altı yapıyor.
+
+641
+00:52:03,980 --> 00:52:06,980
+Bunu B'ye geri gönderiyor yedi yapıyor.
+
+642
+00:52:06,980 --> 00:52:11,980
+Böylece bakın diğer D ve E'deki durumları saymıyorum bile.
+
+643
+00:52:11,980 --> 00:52:17,980
+D ve E'deki durumlar da benzer şekilde C'den gelen bilgilerden ötürü artmaya devam ediyor.
+
+644
+00:52:17,980 --> 00:52:22,980
+A'nın uzaklığı erişilmez oldukça erişilmez oluyor.
+
+645
+00:52:22,980 --> 00:52:27,980
+Yani aslında bu bir fikir veriyor bize, bir ipucu veriyor.
+
+646
+00:52:27,980 --> 00:52:30,980
+Yani A'da bir sıkıntı var.
+
+647
+00:52:30,980 --> 00:52:36,980
+Ama network'un topolojinin kaç hop genişlikte olduğunu biliyor muyuz?
+
+648
+00:52:36,980 --> 00:52:38,980
+Bilmiyoruz.
+
+649
+00:52:38,980 --> 00:52:41,980
+Belki 20 hop, belki 30 hop, belki 40 hop.
+
+650
+00:52:41,980 --> 00:52:46,980
+Sonuçta bu problemin çözümünü nerede buluyorlar biliyor musunuz?
+
+651
+00:52:46,980 --> 00:52:49,980
+Maksimum hop sayısında.
+
+652
+00:52:49,980 --> 00:52:58,980
+Diyorlar ki eğer herhangi bir şekilde routing vektörlerinin exchange'i sonrasında
+
+653
+00:52:58,980 --> 00:53:11,980
+bir node'un, bir host'un, bir router'ın mesafesi hop cinsinden 16 olursa artık bu sonsuza gitmiş demektir.
+
+654
+00:53:11,980 --> 00:53:13,980
+Erişilmez durumdadır.
+
+655
+00:53:13,980 --> 00:53:20,980
+16 değeri o an için kullanılan topolojilerin boyutları üzerinden.
+
+656
+00:53:20,980 --> 00:53:26,980
+Topolojide yani başta 5 cihaz var.
+
+657
+00:53:26,980 --> 00:53:28,980
+SRA'ı da dahil.
+
+658
+00:53:28,980 --> 00:53:30,980
+Araştırma kurumu.
+
+659
+00:53:30,980 --> 00:53:33,980
+Ondan sonra 8, 10, 15 falan oluyor zaten.
+
+660
+00:53:33,980 --> 00:53:36,980
+16 çok iyi bir rakam.
+
+661
+00:53:36,980 --> 00:53:38,980
+16 normal bir rakam.
+
+662
+00:53:38,980 --> 00:53:40,980
+Bugün buna uygulamaya kalktınız.
+
+663
+00:53:40,980 --> 00:53:42,980
+Kaç, 100 kat uygulamanız lazım belli değil de.
+
+664
+00:53:42,980 --> 00:53:44,980
+Durum bu.
+
+665
+00:53:44,980 --> 00:53:47,980
+Eğer uzaklık 16'ya erişiyorsa,
+
+666
+00:53:48,980 --> 00:53:50,980
+Infinity.
+
+667
+00:53:50,980 --> 00:53:53,980
+Count Infinity'de buradan çıkıyor.
+
+668
+00:53:53,980 --> 00:53:56,980
+Sonsuzu yakınlaştırıyoruz.
+
+669
+00:53:56,980 --> 00:53:59,980
+Sonsuzu 16 ile kısıtlamış oluyoruz.
+
+670
+00:53:59,980 --> 00:54:01,980
+Ara mı verelim?
+
+671
+00:54:01,980 --> 00:54:03,980
+Bir ara verelim.
+
+672
+00:54:03,980 --> 00:54:05,980
+Şu an saat 2 geçiyormuş.
+
+673
+00:54:05,980 --> 00:54:07,980
+10 geçe başlıyoruz o zaman.
+
+674
+00:54:07,980 --> 00:54:08,980
+Tamam.
+
+675
+00:54:08,980 --> 00:54:10,980
+Şimdi ben de topolojiyi kapatıyorum.
+
+676
+00:54:10,980 --> 01:11:57,260
+Aynen.
+
+677
+01:11:57,260 --> 01:12:00,260
+Tazikat sırasında amcının bir anda
+
+678
+01:12:00,260 --> 01:12:04,260
+aydınlıktan bizim kuvvete durunun düşmesinden çok korkuyorum.
+
+679
+01:12:04,260 --> 01:12:05,260
+Evet arkadaşlar.
+
+680
+01:12:05,260 --> 01:12:07,260
+Kaldığımız yerden devam ediyoruz.
+
+681
+01:12:07,260 --> 01:12:10,260
+Şimdi demek ki Distance Vector,
+
+682
+01:12:10,260 --> 01:12:14,260
+bu Count Infinity probleminden ötürü kullanılabilir değil.
+
+683
+01:12:14,260 --> 01:12:17,260
+Onun yerine...
+
+684
+01:12:17,260 --> 01:12:22,239
+Yine bir şey oldu.
+
+685
+01:12:22,239 --> 01:12:26,239
+Link State Routing ortaya atılıyor.
+
+686
+01:12:26,239 --> 01:12:34,239
+Şimdi Link State Routing şu anda günümüzde kullandığımız routing algoritması.
+
+687
+01:12:34,239 --> 01:12:37,239
+80'li yıllarda ortaya çıkıyor.
+
+688
+01:12:37,239 --> 01:12:42,239
+Ve hala daha Link State Routing'i kullanıyoruz.
+
+689
+01:12:42,239 --> 01:12:47,239
+Bunun biraz böyle farklılaştırılmış halleri var.
+
+690
+01:12:47,239 --> 01:12:52,239
+Ama baktığımız zaman açık standartlar kapsamında,
+
+691
+01:12:52,239 --> 01:12:58,239
+RFC Request for Comment kapsamında karşımıza iki formda çıkıyor.
+
+692
+01:12:58,239 --> 01:13:01,239
+OSPF ve ISIS.
+
+693
+01:13:01,239 --> 01:13:06,239
+OSPF Open Shortest Path First demek.
+
+694
+01:13:06,239 --> 01:13:10,239
+ISIS de Inter-System, Inter-System Routing.
+
+695
+01:13:10,239 --> 01:13:16,239
+Şimdi Open Shortest Path First'teki Open,
+
+696
+01:13:16,239 --> 01:13:19,239
+Open Source'daki Open'la aynı.
+
+697
+01:13:19,239 --> 01:13:23,239
+Yani en kısa yolu önce aç ve kullan anlamında değil.
+
+698
+01:13:23,239 --> 01:13:25,239
+Bu implementasyon herkese açık.
+
+699
+01:13:25,239 --> 01:13:27,239
+Referans implementasyon var.
+
+700
+01:13:27,239 --> 01:13:30,239
+Bunu parayla satın almak zorunda değilsiniz.
+
+701
+01:13:30,239 --> 01:13:36,239
+Ticari bir legacy falan loyalty ödemek zorunda değilsiniz.
+
+702
+01:13:36,239 --> 01:13:38,239
+O implementasyon ortada var.
+
+703
+01:13:38,239 --> 01:13:41,239
+Siz o implementasyonu gönlünüze göre,
+
+704
+01:13:41,239 --> 01:13:44,239
+tabii ki implementasyonun şartlarına,
+
+705
+01:13:44,239 --> 01:13:47,239
+koşullarına uygun bir şekilde kullanıyorsunuz.
+
+706
+01:13:47,239 --> 01:13:49,239
+ISIS de benzer bir şey.
+
+707
+01:13:49,239 --> 01:13:53,239
+Biri lokal sistemlerde,
+
+708
+01:13:53,239 --> 01:13:55,239
+diğeri ise adı üzerinde,
+
+709
+01:13:55,239 --> 01:13:59,239
+Inter-System, Inter-System sistemler arasında.
+
+710
+01:13:59,239 --> 01:14:04,239
+Yani aynı algoritmanın biraz daha modifiye edilmiş hali.
+
+711
+01:14:04,239 --> 01:14:06,239
+Bakın birinci maddede de ne yazıyor?
+
+712
+01:14:06,239 --> 01:14:09,239
+More computation but simpler dynamics.
+
+713
+01:14:09,239 --> 01:14:11,239
+Tabii ki şunu düşünmek lazım.
+
+714
+01:14:11,239 --> 01:14:15,239
+1975 yılındaki işlemci hızı,
+
+715
+01:14:15,239 --> 01:14:18,239
+işlemcilerin memori kapasitesi,
+
+716
+01:14:18,239 --> 01:14:21,239
+network hızı ve diğer şeyler çok daha düşüktü.
+
+717
+01:14:21,239 --> 01:14:24,239
+Yani orada aslında o dönemde
+
+718
+01:14:24,239 --> 01:14:29,239
+64 kilobit per second'lık hatlardan bahsediyorduk.
+
+719
+01:14:29,239 --> 01:14:31,239
+128 kilobitlik.
+
+720
+01:14:31,239 --> 01:14:35,239
+Sonrasında datakom dersinde görmüşsünüzdür.
+
+721
+01:14:35,239 --> 01:14:37,239
+İşte bir tarafta 1 megabit,
+
+722
+01:14:37,239 --> 01:14:39,239
+öbür tarafta 2 megabitlik standartlar
+
+723
+01:14:39,239 --> 01:14:44,239
+veya 1.5 megabitlik ortadaki standart oluşturulunca hızlar arttı.
+
+724
+01:14:44,239 --> 01:14:47,239
+Tabii ki o standartlarla beraber doğal olarak,
+
+725
+01:14:47,239 --> 01:14:50,239
+teknolojinin gelişmesine bağlı olarak
+
+726
+01:14:50,239 --> 01:14:53,239
+işlemci hızı arttı, adreslenebilir memori arttı.
+
+727
+01:14:53,239 --> 01:14:55,239
+Bu da şunu getirdi beraberinde.
+
+728
+01:14:55,239 --> 01:15:01,239
+Lokalde bir routerin yapabileceği hesap,
+
+729
+01:15:01,239 --> 01:15:03,239
+eski routerlara göre daha fazla olabilir.
+
+730
+01:15:03,239 --> 01:15:07,239
+O zaman da algoritmanın bir tık daha
+
+731
+01:15:07,239 --> 01:15:11,239
+computational complexity'si fazla olabilir.
+
+732
+01:15:11,239 --> 01:15:14,239
+İşte bunun sonucunda oluşturulan
+
+733
+01:15:14,239 --> 01:15:17,239
+routing algoritması link state routing.
+
+734
+01:15:17,239 --> 01:15:20,239
+Algoritma birkaç aşamadan oluşuyor.
+
+735
+01:15:20,239 --> 01:15:23,239
+Sizi az önce söylediğimiz tarza,
+
+736
+01:15:23,239 --> 01:15:26,239
+bakın başlangıç bir flooding ile başlıyor.
+
+737
+01:15:26,239 --> 01:15:30,239
+Each node floods information about its neighbors
+
+738
+01:15:30,239 --> 01:15:32,239
+in link state packets.
+
+739
+01:15:32,239 --> 01:15:36,239
+All nodes learn the full network graph.
+
+740
+01:15:36,239 --> 01:15:39,239
+Bu çok önemli bir bilgi.
+
+741
+01:15:39,239 --> 01:15:43,239
+Her node diğer komşularına,
+
+742
+01:15:43,239 --> 01:15:46,239
+komşularıyla alakalı bilgiyi
+
+743
+01:15:46,239 --> 01:15:52,239
+netvörpte controlled flooding ile dağıtıyor.
+
+744
+01:15:52,239 --> 01:15:57,239
+Ve bütün nodlar topolojiyi tamamen öğreniyorlar.
+
+745
+01:15:57,239 --> 01:16:02,239
+Yani aslında bir nodun mesafesi
+
+746
+01:16:02,239 --> 01:16:04,239
+hop cinsinden beş ise,
+
+747
+01:16:04,239 --> 01:16:08,239
+ona hangi notlar üzerinden gidileceğini de biliyorlar.
+
+748
+01:16:08,239 --> 01:16:13,239
+E sonrasında her node Dijkstra'nın algoritmasını çalıştırıyor.
+
+749
+01:16:13,239 --> 01:16:17,239
+Yani her node kendisi için bağımsız olarak
+
+750
+01:16:17,239 --> 01:16:19,239
+distributed bir şekilde,
+
+751
+01:16:19,239 --> 01:16:21,239
+ne çalıştırmış oluyor arkadaşlar?
+
+752
+01:16:21,239 --> 01:16:23,239
+Sinktree.
+
+753
+01:16:23,239 --> 01:16:24,239
+Yapılan şey bu.
+
+754
+01:16:24,239 --> 01:16:28,239
+Yani kavramsal şeyi birebir nereye getirmişler?
+
+755
+01:16:28,239 --> 01:16:30,239
+Uygulamaya getirmişler.
+
+756
+01:16:30,239 --> 01:16:34,239
+Netvörpte bütün notlara topoloji bilgisini dağıtalım.
+
+757
+01:16:34,239 --> 01:16:38,239
+Notlarda topoloji bilgisi kendisine geldiğinde
+
+758
+01:16:38,239 --> 01:16:40,239
+Sinktree'yi oluştursunlar.
+
+759
+01:16:40,239 --> 01:16:42,239
+Merkezi, az önce tartıştığımız,
+
+760
+01:16:42,239 --> 01:16:43,239
+konuştuğumuz şey var diye
+
+761
+01:16:43,239 --> 01:16:47,239
+merkezi olarak yapılacak şey şu anda distributed yapılıyor.
+
+762
+01:16:47,239 --> 01:16:51,239
+Evet, bakın burada netvörpte neler var?
+
+763
+01:16:51,239 --> 01:16:55,239
+A var, B var, C var, D var, E var, F var.
+
+764
+01:16:55,239 --> 01:17:01,239
+Yan tarafta da link state paketleri var.
+
+765
+01:17:01,239 --> 01:17:04,239
+Şimdi bu link state paketlerinde
+
+766
+01:17:04,239 --> 01:17:09,239
+önemli olan iki tane alan beklenmiş olması.
+
+767
+01:17:09,239 --> 01:17:11,239
+Biri sequence alanı,
+
+768
+01:17:11,239 --> 01:17:13,239
+diğeri age alanı.
+
+769
+01:17:13,239 --> 01:17:15,239
+Age alanı,
+
+770
+01:17:15,239 --> 01:17:19,239
+başlangıçta age ile ifade edilmesine rağmen
+
+771
+01:17:19,239 --> 01:17:21,239
+zaman içerisinde
+
+772
+01:17:21,239 --> 01:17:24,239
+farklı bir terminoloji ile ifade ediliyor.
+
+773
+01:17:24,239 --> 01:17:26,239
+Time to live alanı.
+
+774
+01:17:26,239 --> 01:17:30,239
+Yani yaşam süresi, hayat uzunluğu.
+
+775
+01:17:30,239 --> 01:17:33,239
+Bu ikisi niye önemli?
+
+776
+01:17:33,239 --> 01:17:36,239
+Bu ikisi aslında
+
+777
+01:17:36,239 --> 01:17:41,239
+bir takım karmaşaları ortadan kaldırmak için önemli.
+
+778
+01:17:41,239 --> 01:17:47,239
+Sequence, şimdi bu bilgiler sürekli yayınlanıyor ya
+
+779
+01:17:47,239 --> 01:17:48,239
+belirli aralıklarla.
+
+780
+01:17:48,239 --> 01:17:52,239
+Diyelim ki 3 saniyede, 5 saniyede bir yayınlanıyor.
+
+781
+01:17:52,239 --> 01:17:56,239
+Eğer ben bir sekans bilgisi koymaz isem
+
+782
+01:17:56,239 --> 01:17:58,239
+paketlerin içerisine,
+
+783
+01:17:58,239 --> 01:18:04,239
+o zaman topolojinin büyüklüğüne, topolojide yaşanan sıkıntılara
+
+784
+01:18:04,239 --> 01:18:06,239
+gecikmelere bağlı olarak
+
+785
+01:18:06,239 --> 01:18:12,239
+sync tree'yi eski ve yeni paketleri bir arada kullanarak çalıştırabilirim.
+
+786
+01:18:12,239 --> 01:18:14,239
+O zaman tam bir kaos oluşur.
+
+787
+01:18:14,239 --> 01:18:16,239
+Çünkü niye?
+
+788
+01:18:16,239 --> 01:18:20,239
+Eski ve yeni arasında topolojide değişiklik olmuş olabilir.
+
+789
+01:18:20,239 --> 01:18:23,239
+Ama ben bunu fark etmeyeceğim.
+
+790
+01:18:23,239 --> 01:18:24,239
+Neden?
+
+791
+01:18:24,239 --> 01:18:27,239
+Paketin eski mi, yeni mi olduğunu bilmiyorum.
+
+792
+01:18:27,239 --> 01:18:31,239
+Bunun sonucunda da eski ile yeniyi karıştırdığım için
+
+793
+01:18:31,239 --> 01:18:39,239
+elde ettiğim sync tree'yi aslında benim bir takım notlara ulaşmama imkan vermiyor.
+
+794
+01:18:39,239 --> 01:18:40,239
+Tam tersi engelliyor.
+
+795
+01:18:40,239 --> 01:18:43,239
+Öyleyse hesabı yaparken
+
+796
+01:18:43,239 --> 01:18:46,239
+ne olması lazım?
+
+797
+01:18:46,239 --> 01:18:52,239
+Sekansların aynı olması lazım ki bir sinkronizasyon olursun.
+
+798
+01:18:52,239 --> 01:18:57,239
+Sonra az önce Cihan hocanız söylüyordu.
+
+799
+01:18:57,239 --> 01:19:00,239
+Hani bir paket networkte...
+
+800
+01:19:00,239 --> 01:19:01,239
+Pardon, bir şey oldu.
+
+801
+01:19:01,239 --> 01:19:14,890
+Pardon arkadaşlar, burada bir tamirat var.
+
+802
+01:19:14,890 --> 01:19:19,939
+Ondan dolayı bazen sıkıntılı durumlar oluyor.
+
+803
+01:19:19,939 --> 01:19:20,939
+Bulunduğumuz yerde.
+
+804
+01:19:20,939 --> 01:19:27,840
+Adam ne diye bağırıyor?
+
+805
+01:19:27,840 --> 01:19:28,840
+Sanki üstünde bir şey düşüyor.
+
+806
+01:19:28,840 --> 01:19:33,810
+Biz de onu anlamaya çalışıyoruz.
+
+807
+01:19:33,810 --> 01:19:37,810
+Hani sıkıntılı bir durum var mı, yok mu diye ona bakıyoruz arkadaşlar.
+
+808
+01:19:37,810 --> 01:19:38,810
+Bir saniye.
+
+809
+01:19:38,810 --> 01:20:44,050
+Arkadaşlar, geriye geldik.
+
+810
+01:20:44,050 --> 01:20:47,050
+İnşallah bundan sonra böyle bir kesinti yaşamayacağız.
+
+811
+01:20:47,050 --> 01:20:53,050
+Az önce Cihan hocanız size dersin başında söylemişti.
+
+812
+01:20:53,050 --> 01:20:57,050
+Hani flooding yaparken bunu kontrolü yapmak adına
+
+813
+01:20:57,050 --> 01:21:02,050
+ben bu paketi daha önceden forward ettim mi, etmedim mi?
+
+814
+01:21:02,050 --> 01:21:05,050
+Bunun bir şeyinin tutulması lazım değil mi?
+
+815
+01:21:05,050 --> 01:21:11,050
+İşte onu da hani demiştim ya size bir seconds numarasıyla tutmalı, bir identifier ile tutmalı.
+
+816
+01:21:11,050 --> 01:21:15,050
+İşte o identifier seconds numarasına denk düşüyor.
+
+817
+01:21:15,050 --> 01:21:17,050
+H de şu anlama geliyor.
+
+818
+01:21:17,050 --> 01:21:24,050
+Şimdi flooding herkesin her türlü bilgiyi almasını sağlayacak şekilde olacak.
+
+819
+01:21:24,050 --> 01:21:36,050
+Topolojideki durumdan dolayı o paket B'den C'ye, C'den E'ye, E'den F'ye, F'den D'ye, D'den C'ye böyle tekrar tekrar tekrar tekrar dolaşabilir.
+
+820
+01:21:36,050 --> 01:21:41,050
+Yani onu forward etmemesi sağlamak ayrı bir şey.
+
+821
+01:21:41,050 --> 01:21:47,050
+O paketin network'te sonsuza kadar dolaşmasını engellemek ayrı bir şey.
+
+822
+01:21:47,050 --> 01:21:49,050
+O yüzden de ne alanı var?
+
+823
+01:21:49,050 --> 01:21:51,050
+H alanı var.
+
+824
+01:21:51,050 --> 01:22:00,050
+H alanı da başlangıçta bunlar yapılırken, bu çalışmalar yapılırken saniye cinsinden verilmiş.
+
+825
+01:22:00,050 --> 01:22:03,050
+İşte diyelim ki 5 saniye yaşasın, 10 saniye yaşasın.
+
+826
+01:22:03,050 --> 01:22:06,050
+Ve saniye geçtikçe bir azaltalım.
+
+827
+01:22:06,050 --> 01:22:10,050
+Ama sonra bunun çok da efektif bir şey olmadığı görünmüş.
+
+828
+01:22:10,050 --> 01:22:13,050
+Onun yerine neye dönüştürülmüş bu?
+
+829
+01:22:13,050 --> 01:22:14,050
+Hop sayısına.
+
+830
+01:22:14,050 --> 01:22:23,050
+Artık biz günümüzde istisnasız bir şekilde bu time to live veya age alanı ne cinsinden veriyoruz?
+
+831
+01:22:23,050 --> 01:22:24,050
+Hop cinsinden veriyoruz.
+
+832
+01:22:24,050 --> 01:22:31,050
+Ve bir paket bir nottan bir başka nota gittiğinde o sayı bir eksiltiliyor.
+
+833
+01:22:31,050 --> 01:22:37,050
+Sıfıra geldiğinde de artık yaşamının sonuna gelmiş oluyor.
+
+834
+01:22:37,050 --> 01:22:43,050
+Ve gelen not o paketi gelmemiş kabul ediyor.
+
+835
+01:22:43,050 --> 01:22:52,050
+Bakın bu arada drop hani paket düşürme falan Türkçesi böyle şey ya paket düşürme elinizden bir şey düşürmüyorsunuz.
+
+836
+01:22:52,050 --> 01:22:54,050
+O paketi gelmemiş kabul ediyorsunuz.
+
+837
+01:22:54,050 --> 01:22:56,050
+Teknik olarak yaptığınız şey bu.
+
+838
+01:22:56,050 --> 01:22:59,050
+Network kartından aslında size bir paket geliyor.
+
+839
+01:22:59,050 --> 01:23:02,050
+Fakat paketin headerını inceliyorsunuz.
+
+840
+01:23:02,050 --> 01:23:06,050
+Orada da işte diyorum ki bu TTL alanını sıfır görüyorsunuz.
+
+841
+01:23:06,050 --> 01:23:09,050
+O paketle ilgili hiçbir şey yapmamaya karar veriyorsunuz.
+
+842
+01:23:09,050 --> 01:23:14,050
+Bunu yaptığınız anda da aslında teknik olarak paketi drop ettiniz.
+
+843
+01:23:14,050 --> 01:23:16,050
+İşlemediniz, düşürdünüz.
+
+844
+01:23:16,050 --> 01:23:30,010
+Sonrasında bakın az önce size anlattığım sequence number and age are used for reliable flooding.
+
+845
+01:23:30,010 --> 01:23:33,010
+Flooding'in güvenliğini kontrol yapabilmek için.
+
+846
+01:23:33,010 --> 01:23:37,010
+New LSPs are acknowledged on the lines, they are received.
+
+847
+01:23:37,010 --> 01:23:43,010
+Dikkat edin yeni gelen LSP'leri geldiği hat üzerinde okey diyor.
+
+848
+01:23:43,010 --> 01:23:48,010
+Yani gönderen komşuya diyor ki evet ben senden bu paketi aldım.
+
+849
+01:23:48,010 --> 01:23:53,010
+Ve o komşusu haricindekilere gönderiyor.
+
+850
+01:23:53,010 --> 01:23:59,010
+Yine dikkat edin kontrollü bir flooding yapılıyor ve güvenilir bir flooding yapılıyor.
+
+851
+01:23:59,010 --> 01:24:08,010
+Burada şu sayfada B router'ındaki link state paket database'i görünüyor.
+
+852
+01:24:08,010 --> 01:24:18,010
+Bunun flagleri de işte bunu hani şey yaptım mı, acknowledge ettim mi, forward ettim mi,
+
+853
+01:24:18,010 --> 01:24:25,010
+bununla hesap yaptım mı, hesaba girdim mi, çıktım mı, bunları kullanmak göstermek için.
+
+854
+01:24:25,010 --> 01:24:31,010
+Bir tarafta alma tarafı, diğer tarafta da gönderme tarafı, diğer tarafta da alma tarafı.
+
+855
+01:24:31,010 --> 01:24:49,960
+Şimdi burada bu yaklaşımda link state yaklaşımında bütün notlar, bütün routers topolojinin tamamıyla alakalı bilgiye sahip oldukları için
+
+856
+01:24:49,960 --> 01:25:01,960
+ve bu bilgi üzerinde dağıtık bir şekilde sync tree hesapladıkları için Distance Vector'da oluşan durumun oluşma şansı yok.
+
+857
+01:25:01,960 --> 01:25:10,960
+Her biri aynı hesabı kendi bakış açısıyla yapıyor ve kimin aslında kimin üzerinden bağlı olduğunu biliyor.
+
+858
+01:25:10,960 --> 01:25:14,960
+Yani komşuluğu da biliyor topolojinin tamamına sahip.
+
+859
+01:25:14,960 --> 01:25:20,960
+Ondan ötürü hani o Distance Vector'daki count to infinity problemi falan var ya, bunlarla karşılaşmıyoruz.
+
+860
+01:25:20,960 --> 01:25:34,960
+Güzel tarafı, yükü dağıtmış durumdayız. Yani merkezi olarak işte bir merkez bütün notlar, bütün routerlar için sync tree'i ayrı ayrı hesap etsin,
+
+861
+01:25:34,960 --> 01:25:37,960
+sonra dağıtsın falan yok böyle bir şey.
+
+862
+01:25:37,960 --> 01:25:49,960
+İhtiyaç duyulan bilginin dağıtılması, bunlar toplandığında sync tree'nin hesaplanması network içerisinde böyle bir semisenkron, asenkron demeyelim ama
+
+863
+01:25:49,960 --> 01:26:03,960
+sekans numaralarıyla senkronize edilmiş bir şekilde o sekans numaralarının ulaşma hızına bağlı olarak böyle bir yarı senkron şekilde gerçekleşmiş oluyor.
+
+864
+01:26:03,960 --> 01:26:10,960
+Bu da güzel bir şey. Yükü de dağıttık. Herkes topolojiyi biliyor. Herkes kendi yükünü üstlenmiş durumda.
+
+865
+01:26:10,960 --> 01:26:16,960
+Merkezi bir yapıda ekstra işlemci gücüne memuriye falan ihtiyaç duyuluyor.
+
+866
+01:26:16,960 --> 01:26:24,960
+Tek burada önemli olan kriter ne sıklıkla güncelleme yapacağınız.
+
+867
+01:26:24,960 --> 01:26:35,960
+Çok sık güncelleme yaparsanız o zaman flooding tarafı ağır basacağı için sanki link state yapıyorsunuz gibi değil de flooding yapıyorsunuz gibi bir şey olur.
+
+868
+01:26:35,960 --> 01:26:47,960
+Çok seyrek flooding, nadir bir şekilde flooding yaparsanız da bu sefer network'teki değişimlerden haberdar olmazsınız.
+
+869
+01:26:47,960 --> 01:26:59,960
+Şimdi bu tamamen network'un büyüklüğüyle alakalı, network'un altyapısıyla alakalı, kullanılan teknolojilerin güvenirliliğiyle alakalı, hata yapma oranlarıyla alakalı.
+
+870
+01:26:59,960 --> 01:27:07,960
+Tabii ki nodların, routerların up and down olma, restart etmek, crash olma, hot hızları ve benzeri şeyler.
+
+871
+01:27:07,960 --> 01:27:19,960
+Lokal networkler için bu değer, OSPF dökümanlarına baktığınız zaman 3 saniye olarak tanımlanmış.
+
+872
+01:27:19,960 --> 01:27:27,960
+Ama benzer bir yapı, IaaS IaaS'de de lokal sistemler arasında şimdi oraya gidiyoruz.
+
+873
+01:27:27,960 --> 01:27:35,960
+Hierarchik bir şekilde routing yapılmasında da kullanıldığında tabii ki bu çok daha uzun bir süre olabiliyor.
+
+874
+01:27:35,960 --> 01:27:44,960
+Network'un boyutuna, hatların hızlarına ve güvenirliğine bağlı olarak çok daha uzun bir süre olabiliyor.
+
+875
+01:27:44,960 --> 01:27:48,960
+Şimdi geleceğimiz nokta hierarchik routing.
+
+876
+01:27:48,960 --> 01:27:51,960
+Bunu da konuştuk dersin başında.
+
+877
+01:27:51,960 --> 01:28:00,960
+Ankara'ya gitmek istiyorsanız İstanbul'da yola çıktığınız zaman Ankara'daki bir yolu, buradaki birine sormazsınız.
+
+878
+01:28:00,960 --> 01:28:04,960
+Önce bir Ankara'ya varırsınız, ondan sonra Ankara'da yolu sorarsınız.
+
+879
+01:28:04,960 --> 01:28:07,960
+Routing'te de bu mantığı uygulamamız lazım.
+
+880
+01:28:08,960 --> 01:28:11,960
+Bir zaman içerisinde buraya gelinmiş.
+
+881
+01:28:11,960 --> 01:28:13,960
+Bunun farkına varmış.
+
+882
+01:28:13,960 --> 01:28:14,960
+Çünkü niye?
+
+883
+01:28:14,960 --> 01:28:20,960
+Bakın, şuradaki topolojide, soldaki topolojide 4 tane, 5 tane region var.
+
+884
+01:28:20,960 --> 01:28:34,960
+Birinci region'da 3, ikinci region'da 4, üçüncü region'da 2, dördüncü region'da 3, beşinci region'da da 5 tane router mevcut.
+
+885
+01:28:34,960 --> 01:28:41,960
+Bunları topladığım zaman işte 3, 4, 7 etti, 9 etti, 12 etti, 17 etti.
+
+886
+01:28:41,960 --> 01:28:44,960
+Toplam 17 tane router var.
+
+887
+01:28:44,960 --> 01:28:57,960
+Bakın, birinci region'da 3 tane router olmasına rağmen düz, flat bir routing yaparsan 17 tane router için bilgi tutmam lazım.
+
+888
+01:28:57,960 --> 01:29:00,960
+Halbuki orada 3 tane var, 14 tanesi gereksiz.
+
+889
+01:29:00,960 --> 01:29:04,960
+Kendi regionunda olmayan routerlarla alakalı bilgi tutuyor.
+
+890
+01:29:04,960 --> 01:29:09,960
+Bir de işin sıkıntılı tarafı, o routerların bilgisinin oraya gelmesi lazım.
+
+891
+01:29:09,960 --> 01:29:13,960
+Diğer komşulara aktarılması lazım falan.
+
+892
+01:29:13,960 --> 01:29:15,960
+Hem link state paketlerin boyutu uzuyor.
+
+893
+01:29:15,960 --> 01:29:18,960
+Bundan dolayı bandwidth kaybediyorsunuz.
+
+894
+01:29:18,960 --> 01:29:28,960
+Trafik normal routing trafiği için, paketlerin aktarılması için değil, routing algoritmasının ihtiyaçlarının karşılanması için harcanıyor.
+
+895
+01:29:28,960 --> 01:29:36,960
+Hem de az önceki İstanbul Ankara örneğinde olduğu gibi region 1'in kendi içerisinde routing yaparken ona ihtiyacı yok ki.
+
+896
+01:29:36,960 --> 01:29:41,960
+Bilmesi gereken ya geldiği şey region 1 dışarı çıkmak için iki tane alternatife sahip.
+
+897
+01:29:41,960 --> 01:29:45,960
+Ya 1B üzerinden çıkar ya da 1C üzerinden çıkar.
+
+898
+01:29:46,960 --> 01:29:54,960
+O zaman bakın, bir A routerının full, flat, düz yapıdaki routing tablosunu görüyorsunuz.
+
+899
+01:29:54,960 --> 01:29:56,960
+17 tane entry.
+
+900
+01:29:56,960 --> 01:29:59,960
+Hiyerarşik olarak olan yapıyı görüyorsunuz.
+
+901
+01:29:59,960 --> 01:30:04,960
+2, 4, 6, 7 tane entry.
+
+902
+01:30:04,960 --> 01:30:08,960
+2,5 da birine indirmiş durumdayız.
+
+903
+01:30:08,960 --> 01:30:18,960
+Bu tabii ki topoloji büyüdükçe, karmaşıklaştıkça region sayısı arttıkça daha da efektif hale geliyor.
+
+904
+01:30:18,960 --> 01:30:20,960
+Daha da iyi hale geliyor.
+
+905
+01:30:20,960 --> 01:30:23,960
+O zaman hiyerarşik routing ne diyor?
+
+906
+01:30:23,960 --> 01:30:30,960
+Bulunduğun bölgeyle alakalı routing bilgisini en ince, en hassas şekilde sen tut.
+
+907
+01:30:30,960 --> 01:30:39,960
+Ama bulunduğun bölge haricindeki bölgelerle alakalı routing bilgisini tutmana bilmene bile gerek yok.
+
+908
+01:30:39,960 --> 01:30:43,960
+Sadece o bölgelere nasıl gideceğini bil.
+
+909
+01:30:43,960 --> 01:30:46,960
+Mantık bunun üzerine kuruluyor.
+
+910
+01:30:46,960 --> 01:30:57,960
+Şu anda da internette TCPIP protokolünü incelediğimiz zaman, onun ayrıntılara girdiğimiz zaman göreceğiz ki
+
+911
+01:30:57,960 --> 01:31:00,960
+tamamen hiyerarşik routing uyguluyoruz.
+
+912
+01:31:00,960 --> 01:31:04,960
+Yani bunu campus içerisinden de düşünebilirsiniz.
+
+913
+01:31:04,960 --> 01:31:07,960
+Şu anda tabii ki binalarda değiliz, campus'ta değiliz, evlerdeyiz ama
+
+914
+01:31:07,960 --> 01:31:13,960
+campus'te diyelim iki kineometrioloji fakültesinin içindeki her ayrıntıyı bilmek zorunda değilsiniz.
+
+915
+01:31:13,960 --> 01:31:15,960
+Kendi fakültemizi biliyorsunuz.
+
+916
+01:31:15,960 --> 01:31:22,960
+Hatta binalar birbirine benziyor ama benzemese elektriği, elektroniği veya kontrol otomasyonun yapısını bile bilmeyebilirsiniz.
+
+917
+01:31:22,960 --> 01:31:24,960
+Hangi katta ne var?
+
+918
+01:31:24,960 --> 01:31:27,960
+Bazı şeyler ortak ama farkında olmayabilirsiniz.
+
+919
+01:31:27,960 --> 01:31:29,960
+Kendi bölümünüzü bilirsiniz.
+
+920
+01:31:29,960 --> 01:31:31,960
+Burada da oraya gidince sorarak da öğrenirsiniz.
+
+921
+01:31:31,960 --> 01:31:32,960
+Benzer bir mantık.
+
+922
+01:31:32,960 --> 01:31:34,960
+Öyleyse neymiş?
+
+923
+01:31:34,960 --> 01:31:37,960
+Bir tarafta ring state paket kullanıyoruz.
+
+924
+01:31:37,960 --> 01:31:42,960
+Bu karşımıza OSPF ve ISIS olarak çıkıyor.
+
+925
+01:31:42,960 --> 01:31:47,960
+Diğer tarafta da hiyerarşik routing kullanıyoruz.
+
+926
+01:31:47,960 --> 01:31:50,960
+Bunları unutmuyoruz.
+
+927
+01:31:50,960 --> 01:31:54,960
+Şimdi broadcast routing.
+
+928
+01:31:54,960 --> 01:31:56,960
+Broadcast ne?
+
+929
+01:31:56,960 --> 01:32:00,960
+Bir bilginin bütün notlara gönderilmesi.
+
+930
+01:32:00,960 --> 01:32:08,270
+Eğer bir bilgi bütün notlara gönderiliyorsa, network içerisinde her yere yayılıyorsa,
+
+931
+01:32:08,270 --> 01:32:15,270
+yayılırken de kimlerin üzerinden geçtiği bilgisi bu paketin içerisine ekleniyorsa, yerleştiriliyorsa,
+
+932
+01:32:15,270 --> 01:32:21,270
+o zaman son gittiği yerden geriye doğru yolu bulmuş olurum değil mi?
+
+933
+01:32:21,270 --> 01:32:23,270
+Bu şuna benzer.
+
+934
+01:32:23,270 --> 01:32:25,270
+Siz hiç diyelim...
+
+935
+01:32:25,270 --> 01:32:26,270
+[öğrenci] aslında.
+
+936
+01:32:26,270 --> 01:32:28,270
+Evet, [öğrenci].
+
+937
+01:32:28,270 --> 01:32:35,270
+Ekmek kırıntısı bırakmak, sonrasında geri dönerken de o ekmek kırıntılarına bakmak.
+
+938
+01:32:35,270 --> 01:32:37,270
+Hiçbir farkı yok.
+
+939
+01:32:37,270 --> 01:32:41,270
+Hiç gitmediğiniz bir yere, bir arkadaşınızın gittiğini biliyorsunuz.
+
+940
+01:32:41,270 --> 01:32:42,270
+Siz oraya gideceksiniz.
+
+941
+01:32:42,270 --> 01:32:44,270
+O oraya gitmiş ve geri dönmüş.
+
+942
+01:32:44,270 --> 01:32:45,270
+Ne yaparsınız?
+
+943
+01:32:45,270 --> 01:32:46,270
+Sorarsınız.
+
+944
+01:32:46,270 --> 01:32:48,270
+Nasıl gittim diye.
+
+945
+01:32:48,270 --> 01:32:50,270
+O da size tarif eder.
+
+946
+01:32:50,270 --> 01:33:00,270
+Öyleyse önce bilginin forward yönde yayılması, yani ileri yönde yayılması, routing'in ise geri yönde oluşturulması lazım.
+
+947
+01:33:00,270 --> 01:33:04,270
+Öyle ki gidelim, peki ileri yönde gitmeyi nereye sağlıyoruz?
+
+948
+01:33:04,270 --> 01:33:05,270
+Broadcast'a.
+
+949
+01:33:05,270 --> 01:33:10,270
+Buradaki Broadcast tabii ki yine artık biliyorsunuz, konuyu öğrendiniz, kaptınız,
+
+950
+01:33:10,270 --> 01:33:15,270
+flooding'in kibarca ifade edilmiş şeyi, tekniklerimle ifade edilmiş şeyi.
+
+951
+01:33:16,270 --> 01:33:23,270
+Geri dönüşte de routing'i oluşturduğum için bu routing yöntemi aslında ne olarak geçiyor?
+
+952
+01:33:23,270 --> 01:33:27,270
+Reverse path forwarding.
+
+953
+01:33:27,270 --> 01:33:32,270
+Bakın reverse ters, forwarding ileriye ama reverse path forwarding.
+
+954
+01:33:32,270 --> 01:33:43,270
+Geriye dönüşte oluşturduğun yolu artık paket kullanmak için, göndermek için, forward etmek için kullanacaksın.
+
+955
+01:33:43,270 --> 01:33:44,270
+Mantık bu.
+
+956
+01:33:44,270 --> 01:33:57,270
+O zaman önce broadcast ediyorum, sonra geri dönüşleri topluyorum, geri dönüşler toplanırken de herkes onun üzerinde yollarını buluyor.
+
+957
+01:33:57,270 --> 01:34:02,979
+Multicast routing.
+
+958
+01:34:02,979 --> 01:34:05,979
+Broadcast bilginin herkese gitmesi.
+
+959
+01:34:05,979 --> 01:34:09,979
+Multicast bir alt gruba gitmesi.
+
+960
+01:34:09,979 --> 01:34:14,979
+Multicast sends to a subset of the node called a group.
+
+961
+01:34:15,979 --> 01:34:20,979
+Bir alt sete, alt kümeye gönderiyoruz.
+
+962
+01:34:20,979 --> 01:34:24,979
+Bu alt kümede yer alan nodelara da ne ismini veriyoruz?
+
+963
+01:34:24,979 --> 01:34:27,979
+Group ismini veriyoruz.
+
+964
+01:34:27,979 --> 01:34:35,979
+O yüzden bazı internet kapsamında geliştirilmiş multicast routing protokollerinde
+
+965
+01:34:35,979 --> 01:34:41,979
+group routing veyahut da grup kelimesini görürseniz ne olduğunu anlıyorsunuz.
+
+966
+01:34:41,979 --> 01:34:43,979
+Yani o ne?
+
+967
+01:34:43,979 --> 01:34:46,979
+Multicast subsetini ifade ediyor.
+
+968
+01:34:49,979 --> 01:34:56,979
+Her kaynak ve her grup için ayrı bir sync tree'yi oluşturmamız lazım.
+
+969
+01:34:56,979 --> 01:35:05,979
+Bakın mesela üst tarafta sağ, üste baktığınız zaman S sorsu var.
+
+970
+01:35:05,979 --> 01:35:07,979
+S kaynağından çıkıyor.
+
+971
+01:35:07,979 --> 01:35:10,979
+Ve üç tane grup.
+
+972
+01:35:10,979 --> 01:35:13,979
+Yukarıda bir grup var, aşağıda bir grup var.
+
+973
+01:35:13,979 --> 01:35:15,979
+Bunları neyle ifade etmişiz?
+
+974
+01:35:15,979 --> 01:35:29,500
+İşte nodların hangi gruba ait olduğunu söyleyerek ifade etmişiz.
+
+975
+01:35:29,500 --> 01:35:37,970
+Bazen gruplarımız çok fazla eleman içermeyebiliyor.
+
+976
+01:35:37,970 --> 01:35:40,970
+Gruplarımızda az eleman olabiliyor.
+
+977
+01:35:40,970 --> 01:35:43,970
+Bir öncekinde, bakın ne diyordu?
+
+978
+01:35:43,970 --> 01:35:45,970
+Dance case diyordu.
+
+979
+01:35:45,970 --> 01:35:47,970
+Yani sık senaryo.
+
+980
+01:35:47,970 --> 01:35:55,970
+Diğerinde ise şu gözden geçirdiğimizde ise sparse yani seyrek senaryo.
+
+981
+01:35:55,970 --> 01:35:59,970
+Hatta bir tane sparse maddislerimiz falan vardır ya,
+
+982
+01:35:59,970 --> 01:36:06,970
+pek çok elemanın sıfırdan oluştuğu, çok az elemanın sıfır haricinde değer ifade ettiği.
+
+983
+01:36:06,970 --> 01:36:14,970
+O zaman bu durumda eğer sparse bir yapıysa
+
+984
+01:36:14,970 --> 01:36:23,970
+her biri için ayrı ayrı tree oluşturmak yerine bu yapı içerisinde bir omurga oluşturmaya çalışıyoruz.
+
+985
+01:36:23,970 --> 01:36:25,970
+Bunu da core diyoruz.
+
+986
+01:36:25,970 --> 01:36:35,970
+Yani bu mümkün olduğunca hepsine dokunacak, hepsinin yakınından geçecek şekilde bir tree oluyor.
+
+987
+01:36:35,970 --> 01:36:39,970
+Tree ile grafon farkı ne arkadaşlar?
+
+988
+01:36:40,970 --> 01:36:48,970
+Tree'de kapalı çevrim yok ve tree normalde bir noktadan başlayıp bir başka noktaya doğru ilerliyor.
+
+989
+01:36:48,970 --> 01:36:51,970
+Şimdi bakın sol tarafta tree'yi oluşturmuşum.
+
+990
+01:36:51,970 --> 01:36:54,970
+Core noktasını da vermişim.
+
+991
+01:36:54,970 --> 01:36:57,970
+Orada core ile işaretlenmiş olan şey.
+
+992
+01:36:57,970 --> 01:37:03,970
+Bakın sender iki farklı senaryo ile ifade edilmiş.
+
+993
+01:37:03,970 --> 01:37:13,970
+Birinde core olarak ifade ettiğimiz nodun hemen sağ tarafında ve bir hopla erişiliyor.
+
+994
+01:37:13,970 --> 01:37:15,970
+O zaman sender ne yapıyor?
+
+995
+01:37:15,970 --> 01:37:23,970
+Doğrudan core'a gönderiyor, core otomatikman oluşmuş olan tree üzerinde bunu multi-cast yapıyor.
+
+996
+01:37:23,970 --> 01:37:30,970
+Ama multi-cast de bir sonraki hopa, ondan ondan sonraki hopa, ondan ondan sonraki hopa şeklinde.
+
+997
+01:37:30,970 --> 01:37:34,970
+Yani core her birine teker teker ayrı mesaj göndermiyor.
+
+998
+01:37:34,970 --> 01:37:43,279
+Diğerinde ise sender core'un karşıdan baktığımızda sol üstünde.
+
+999
+01:37:43,279 --> 01:37:54,279
+Sender aslında core'a iki hop uzaklıkta kendisine daha yakın fakat tree üzerinde yer alan bir nod var.
+
+1000
+01:37:54,279 --> 01:37:56,279
+O zaman sender ne yapıyor?
+
+1001
+01:37:56,279 --> 01:37:59,279
+Tree üzerinde yer alan bir noda gönderiyor.
+
+1002
+01:37:59,279 --> 01:38:12,279
+Bu nod core base tree üzerinde yer alıyor ya, bir taraftan yukarıya paketi forward ederken diğer taraftan da paketi nereye forward ediyor?
+
+1003
+01:38:12,279 --> 01:38:14,279
+Core'a forward ediyor.
+
+1004
+01:38:14,279 --> 01:38:17,279
+Core daha sonra kendisine gelen bu paketi tık tık tık diğer taraftan alıyor.
+
+1005
+01:38:17,279 --> 01:38:29,279
+Core'un bu paketi kendisine gönderen, kendisinin hani karşıdan baktığımızda üstünde yukarısında yer alan noda tekrar geri göndermesine gerek yok.
+
+1006
+01:38:29,279 --> 01:38:33,279
+Çünkü zaten o not onu o paketi aşağıya gönderdi.
+
+1007
+01:38:33,279 --> 01:38:34,279
+Core neyi biliyor?
+
+1008
+01:38:34,279 --> 01:38:43,279
+O not bu paketi kendisine gönderirken aynı zamanda kendisinin üstünde yer alan nodlara da bu paketi gönderdi.
+
+1009
+01:38:43,279 --> 01:38:48,739
+Şimdi anycast.
+
+1010
+01:38:48,739 --> 01:38:52,279
+Any ne demek?
+
+1011
+01:38:52,279 --> 01:38:53,279
+Herhangi biri demek.
+
+1012
+01:38:53,279 --> 01:38:57,279
+Broad, yaygın, geniş herkese gidiyordu.
+
+1013
+01:38:57,279 --> 01:38:59,279
+Multi, şoka gidiyordu.
+
+1014
+01:38:59,279 --> 01:39:03,279
+Any ise bir tane, herhangi bir taneye gidiyor.
+
+1015
+01:39:03,279 --> 01:39:15,279
+Şimdi diyelim ki biz üniversitede olsaydık ve bir toplantımız olsaydı ve ders saati gecikecek diye size 15 dakika geç başlayacağız,
+
+1016
+01:39:15,279 --> 01:39:17,279
+yarım saat geç başlayacağız demek isteseydik.
+
+1017
+01:39:17,279 --> 01:39:21,279
+Hepinize bu bilgiyi teker teker vermek yerine dersi alan.
+
+1018
+01:39:21,279 --> 01:39:28,279
+İşte Cihan hocanız kendi sınıfımdan birbirinize, ben kendi sınıfımdan birine bunu söyleseydim siz de bunu ne yapacaktınız?
+
+1019
+01:39:28,279 --> 01:39:29,279
+Yaygı takınız.
+
+1020
+01:39:29,279 --> 01:39:30,279
+İşte bu eşittir.
+
+1021
+01:39:30,279 --> 01:39:31,279
+Anycast.
+
+1022
+01:39:31,279 --> 01:39:37,279
+Sizin yayma kısmınız değil ama sizler aranızda herhangi birinize söylüyorum.
+
+1023
+01:39:37,279 --> 01:39:40,279
+Bunu mesela coğrafi olarak yaparsanız co-anycast oluyor.
+
+1024
+01:39:40,279 --> 01:39:41,279
+Nerede kullanırsınız?
+
+1025
+01:39:41,279 --> 01:39:47,279
+Mesela araçta öyleyse haberleşmede biri bir kaza yap ya da frene bastı.
+
+1026
+01:39:47,279 --> 01:39:55,279
+Bu bilginin birilerine gitmesi lazım ama bu birilerinin coğrafi olarak işte o otobanda yolda bu adamın arkasındaki adamlara gitmesi lazım.
+
+1027
+01:39:55,279 --> 01:39:57,279
+Herhangi birine gitmesi yeterli.
+
+1028
+01:39:57,279 --> 01:40:00,279
+O zaten diğerlerine bunu aktaracaktır.
+
+1029
+01:40:00,279 --> 01:40:02,279
+Öyleyse orada da durum aynı.
+
+1030
+01:40:02,279 --> 01:40:04,279
+Sadece coğrafi olarak kısmanmış.
+
+1031
+01:40:04,279 --> 01:40:07,279
+Bu hani genel ismi anycast.
+
+1032
+01:40:07,279 --> 01:40:11,279
+Coğrafi ya da başka şekillerde de implement edebilirsiniz.
+
+1033
+01:40:11,279 --> 01:40:28,279
+Anycast'i hem bu şekilde vehicleer networklerde kullanıyoruz hem de birtakım servislerin load balancing veyahutta failure tolerant olmasında kullanıyoruz.
+
+1034
+01:40:28,279 --> 01:40:31,279
+Diyelim bir DNS server'ımız var.
+
+1035
+01:40:31,279 --> 01:40:33,279
+Bir DNS server grubunuz var.
+
+1036
+01:40:33,279 --> 01:40:36,279
+Bunlar birbirleriyle eşdeğer çalışıyorlar.
+
+1037
+01:40:36,279 --> 01:40:40,279
+Herhangi birine sorgu geldiğinde aslında vereceği cevap aynı.
+
+1038
+01:40:40,279 --> 01:40:48,279
+O zaman ben sorguyu bir tanesine yönlendirmek yerine hep onu yüklemek yerine anycast adresine gönderiyorum.
+
+1039
+01:40:48,279 --> 01:40:57,279
+Anycast adresine gönderdiğim için bu sorgu bunlardan üç tane varsa bir birine gidiyor bir üçe gidiyor bir ikiye gidiyor tekrar bire gidiyor.
+
+1040
+01:40:57,279 --> 01:40:59,279
+Kendi içinde birinde birine gidiyor.
+
+1041
+01:40:59,279 --> 01:41:03,279
+Ama cevap olması gerektiği gibi geri dönüyor.
+
+1042
+01:41:03,279 --> 01:41:11,279
+Böyle bir yapıda da load balancing veyahutta fault tolerance sağlamak durumunda da anycast'ten yararlanabiliyor.
+
+1043
+01:41:11,279 --> 01:41:15,279
+Şöyle bir de gerçek anlamda kullandık mesela ilgi işlem zamanı.
+
+1044
+01:41:15,279 --> 01:41:21,279
+Terminal servises makinesini DNS kaydına sırayla üçünü birden bir harcadık.
+
+1045
+01:41:21,279 --> 01:41:23,279
+O da zaman zaman rotatıyor.
+
+1046
+01:41:23,279 --> 01:41:26,279
+Zaman zaman anycast olduğu için kapasını göre dağıtıyor büyüklüğü.
+
+1047
+01:41:26,279 --> 01:41:27,279
+Aynen.
+
+1048
+01:41:27,279 --> 01:41:28,279
+Bu arada şöyle bir şey var.
+
+1049
+01:41:28,279 --> 01:41:29,279
+5-10 var.
+
+1050
+01:41:29,279 --> 01:41:32,279
+Çocukların başka dersi var mı bilmiyorum ama sınırına geldik.
+
+1051
+01:41:32,279 --> 01:41:34,279
+Önümüzdeki haftayı da konuşalım isterseniz.
+
+1052
+01:41:34,279 --> 01:41:35,279
+Tamam.
+
+1053
+01:41:35,279 --> 01:41:37,279
+Zaten slide'lar da bitiyor galiba.
+
+1054
+01:41:37,279 --> 01:41:38,279
+Emin değilim daha var.
+
+1055
+01:41:38,279 --> 01:41:40,279
+Yani şu şey grubunu.
+
+1056
+01:41:40,279 --> 01:41:41,279
+Bir dakika.
+
+1057
+01:41:41,279 --> 01:41:43,279
+Anycast'den sonra.
+
+1058
+01:41:43,279 --> 01:41:47,279
+Ha routing for mobile host buna girmeyeceğiz zaten.
+
+1059
+01:41:47,279 --> 01:41:52,279
+Routing for mobile host'u ayrıca konuşuruz o şeyi yaptığımız zaman.
+
+1060
+01:41:53,279 --> 01:41:55,279
+Routing ad hoc network bu.
+
+1061
+01:41:55,279 --> 01:42:01,279
+Wireless sensor network de kullandığımız AODB falan onu da şey.
+
+1062
+01:42:01,279 --> 01:42:03,279
+Ad hoc distance vector.
+
+1063
+01:42:03,279 --> 01:42:04,279
+Ad hoc distance vector.
+
+1064
+01:42:04,279 --> 01:42:05,279
+Yani bakın dedik ya.
+
+1065
+01:42:05,279 --> 01:42:11,279
+Distance vector kapatıldı kaldırıldı bilinemli ama bazı topolojilerde bazı durumlarda kullanabilirsiniz.
+
+1066
+01:42:11,279 --> 01:42:13,279
+Tekrar karşımıza çıkacak.
+
+1067
+01:42:13,279 --> 01:42:16,279
+Yani yeni bir teknoloji, yeni bir yapı, yeni bir şart altında.
+
+1068
+01:42:17,279 --> 01:42:23,279
+Mevcut denenmiş, kapanmış, kenara konmuş algoritmaların tekrar tekrar çıkacağını.
+
+1069
+01:42:23,279 --> 01:42:26,279
+Evet yani şöyle düşünün arkadaşlar.
+
+1070
+01:42:26,279 --> 01:42:28,279
+Distance vector'ın aynısı.
+
+1071
+01:42:28,279 --> 01:42:31,279
+Sensor network'ta oluşturuluyor.
+
+1072
+01:42:31,279 --> 01:42:36,279
+Zaten hani distance vector'de o count infinity nasıldı.
+
+1073
+01:42:36,279 --> 01:42:42,279
+Bunların böyle bir it gibi arka arkaya dizilmesi biri diğerine biri diğerine biri diğerine bağlı.
+
+1074
+01:42:42,279 --> 01:42:56,279
+Yani sensor network de arada hatlar yokken tamamen wireless haberleşmeye gerçekleşirken zaten notların birbirlerine öyle bağlı olabilmesi ihtimali o kadar düşük ki mümkünatı yok neredeyse.
+
+1075
+01:42:56,279 --> 01:43:02,279
+Ve ondan ötürü de distance vector'ın yükü hafif değil mi basit.
+
+1076
+01:43:02,279 --> 01:43:03,279
+Ne deniyor?
+
+1077
+01:43:03,279 --> 01:43:05,279
+Biz bunu nerede kullanabiliriz?
+
+1078
+01:43:05,279 --> 01:43:08,279
+Sensör networklerde kullanabiliriz.
+
+1079
+01:43:08,279 --> 01:43:12,279
+Ad hoc networkler tasarsız diye geçiyor.
+
+1080
+01:43:12,279 --> 01:43:17,279
+Kağıt üzerinde kim kiminle bağlanacak bilgisi önceden hesaplanmıyor.
+
+1081
+01:43:17,279 --> 01:43:19,279
+Bir topoloji çizilmiyor.
+
+1082
+01:43:19,279 --> 01:43:30,279
+Network'u oluşturan düğümler power on olduğu anda wireless bağlantılar ile network'un bir parçası oluyorlar ve sanal olarak komşularlıklarını belirliyorlar.
+
+1083
+01:43:30,279 --> 01:43:35,279
+Böylece arada wireless bağlantılar üzerinden linkler oluşturulmuş oluyor.
+
+1084
+01:43:35,279 --> 01:43:37,279
+Evet aslında şeyler bitti.
+
+1085
+01:43:37,279 --> 01:43:39,279
+Konacağız ki kontrole geçiyoruz.
+
+1086
+01:43:39,279 --> 01:43:41,279
+Bugün ki konuyu bitirdik o yüzden.
+
+1087
+01:43:41,279 --> 01:43:44,279
+Şimdi önümüzdeki hafta şöyle bir sıkıntımız var.
+
+1088
+01:43:44,279 --> 01:43:52,279
+Salı günü normal şartlarında katılınması gereken kontrolümüzde olmayan bir toplantı kondu.
+
+1089
+01:43:52,279 --> 01:43:56,279
+Dolayısıyla salı gün ders saatiyle de biraz çıplak ışıyor.
+
+1090
+01:43:56,279 --> 01:43:58,279
+Ders saatinden yemeye kadına şöyle bir şey yapacağız.
+
+1091
+01:43:58,279 --> 01:44:01,279
+Pazlardaki günü normalde bizim laboratuvarımız var biliyorsunuz.
+
+1092
+01:44:01,279 --> 01:44:04,279
+Henüz zaten uygulama yapmaya başlamadık.
+
+1093
+01:44:04,279 --> 01:44:06,279
+O yüzden onu kullanabiliriz.
+
+1094
+01:44:06,279 --> 01:44:15,279
+Daha az çıkışmalı ve rahat yürümesi için işlerin bir derslik olmazsa önümüzdeki hafta dersi salı günkü dersi aslında pazartesi yapacağız.
+
+1095
+01:44:15,279 --> 01:44:17,279
+Dünün uygulama saatinde yapacağız.
+
+1096
+01:44:17,279 --> 01:44:18,279
+Yapacağız.
+
+1097
+01:44:18,279 --> 01:44:22,279
+O yüzden de pazartesi lütfen şeye hazır olun, derse hazır olun.
+
+1098
+01:44:22,279 --> 01:44:23,279
+Burada olun.
+
+1099
+01:44:23,279 --> 01:44:25,279
+Bana bir şey yazdı bir arkadaş.
+
+1100
+01:44:25,279 --> 01:44:27,279
+Bana yazan yok.
+
+1101
+01:44:27,279 --> 01:44:29,279
+Hocam slide'ları paylaşacak mısınız?
+
+1102
+01:44:29,279 --> 01:44:33,279
+Slide'lar konusunu daha önce söylemiştik hatırlarsanız.
+
+1103
+01:44:34,279 --> 01:44:37,279
+Zaten hani ekranda gözüküyor ve şey yapıyoruz.
+
+1104
+01:44:37,279 --> 01:44:40,279
+Hızlı geçtiğimiz yerler olabilir gerçi ama.
+
+1105
+01:44:40,279 --> 01:44:43,279
+Kullandığımız kitap.
+
+1106
+01:44:45,279 --> 01:44:47,279
+Neydi adı?
+
+1107
+01:44:47,279 --> 01:44:49,279
+Tanem Bağmur.
+
+1108
+01:44:49,279 --> 01:44:50,279
+Kitabı.
+
+1109
+01:44:50,279 --> 01:44:52,279
+Slide'ları internette mevcut.
+
+1110
+01:44:52,279 --> 01:45:00,279
+Çok hızlı ve temiz bir Google aramasıyla 5. edişimin slide'larını sizde bulabilirsiniz.
+
+1111
+01:45:01,279 --> 01:45:11,279
+Bir bakın bir derslik olmaz ise daha sonra ilk elimizdeydiğinde biz de onların paylaşımı için bir mekanizma oluştururuz gerçi.
+
+1112
+01:45:11,279 --> 01:45:15,279
+Ama dediğim gibi çözümsüz değilsiniz zaten slide'lar her yerde var.
+
+1113
+01:45:15,279 --> 01:45:21,279
+Yani yazacağınız Tanem Bağm Computer Networks 5th Edition slide.
+
+1114
+01:45:21,279 --> 01:45:28,279
+Powerpoint'ine illa düşeyim onu bulayım derseniz o biraz zaman alabilir ama PDF'leri her yerde var.
+
+1115
+01:45:28,279 --> 01:45:30,279
+Şey yaparsanız rahat rahat bulursunuz.
+
+1116
+01:45:30,279 --> 01:45:35,279
+Ama asıl bence bakmanız gereken ya da çalışmanız gereken şey slide'ler değil.
+
+1117
+01:45:35,279 --> 01:45:44,279
+Çünkü tekrar söylüyorum dersin slide'ları yani kitabı çok güzel slide'ları da çok güzel ama slide'lardaki bilgi kitaptaki bilginin hani.
+
+1118
+01:45:44,279 --> 01:45:46,279
+Onda biri.
+
+1119
+01:45:46,279 --> 01:45:49,279
+Hakikaten onda biri falan gibi koyuluyor bunun dediği gibi.
+
+1120
+01:45:49,279 --> 01:45:51,279
+O yüzden kitabı edinmeye bakın.
+
+1121
+01:45:51,279 --> 01:45:57,279
+Bu arada kitap da zaten PDF olarak iyi Google araştırmacıları tarafından rahatlıkla bununla bilir.
+
+1122
+01:45:57,279 --> 01:46:02,279
+Tamam yani bir sitelif anlamında sıkıntı olabileceği için onu zaten paylaşamıyoruz.
+
+1123
+01:46:02,279 --> 01:46:03,279
+Paylaşamayız.
+
+1124
+01:46:03,279 --> 01:46:04,279
+Paylaşamıyoruz.
+
+1125
+01:46:04,279 --> 01:46:07,279
+Size de gidin alın demem çünkü dehşet paraydı bir ara.
+
+1126
+01:46:07,279 --> 01:46:13,279
+Yani dolar arttığı için gene öyledir ama hani internette iyi ararsanız meyvesini yersiniz.
+
+1127
+01:46:13,279 --> 01:46:16,279
+Evet o zaman bugün de bu kadar.
+
+1128
+01:46:16,279 --> 01:46:18,279
+Evet congestion kontrole geldik zaten.
+
+1129
+01:46:18,279 --> 01:46:20,279
+congestion kontrole devam edeceğiz.
+
+1130
+01:46:20,279 --> 01:46:21,279
+Pazartesi günü.
+
+1131
+01:46:21,279 --> 01:46:23,279
+Evet haftaya pazartesi.
+
+1132
+01:46:23,279 --> 01:46:24,279
+Saat 5.
+
+1133
+01:46:24,279 --> 01:46:30,279
+Arkadaşınız söyledi hocam zaten slide altındaki yazıyı yazınca çıkıyor kitap yani harika.
+
+1134
+01:46:30,279 --> 01:46:31,279
+Süper harika.
+
+1135
+01:46:31,279 --> 01:46:33,279
+Evet ellerinize sağlık.
+
+1136
+01:46:33,279 --> 01:46:34,279
+Haydi görüşmek üzere o zaman.
+
+1137
+01:46:34,279 --> 01:46:36,279
+İyi haftalar görüşmek üzere.
+
+1138
+01:46:36,279 --> 01:46:48,390
+Şimdi bakalım evin anasını nasıl sıkmışız.
+

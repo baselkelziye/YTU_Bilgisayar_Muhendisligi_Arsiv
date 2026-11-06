@@ -1,0 +1,1524 @@
+1
+00:00:54,740 --> 00:01:11,739
+Evet, merhaba. Bu ara sınavdan önceki son dersimiz. Bugün öncelikle geçen hafta en son işlediğimiz konuyu bir kez daha üzerinden geçeceğiz.
+
+2
+00:01:11,739 --> 00:01:20,959
+Bakıyorum kaç kişi oldunuz. 17 kişisiniz.
+
+3
+00:01:20,959 --> 00:02:10,439
+Evet, çoğunuz yazılım kalite dersini de alıyorsunuz. Bu sisteme bugün her iki dersinde özet slide'larını yerleştireceğim. Henüz 17 kişi var derse katılan.
+
+4
+00:02:10,439 --> 00:03:20,409
+Evet, o zaman biz derse başlayalım. Şimdiye kadar bağlanamayan birkaç arkadaşınız daha var.
+
+5
+00:03:20,409 --> 00:04:52,730
+Evet, kurumsal uygulama mimarisi üzerinde geçen haftada durmuştuk. Bu hangi konuları işleyeceğimizi belirtmek üzere daha hızlı geçmiştim geçen hafta.
+
+6
+00:04:52,730 --> 00:05:18,730
+Şimdi bu konu üzerinde kurumsal uygulamalar ve bu kurumsal uygulamaların yapısı bizim işletmelere faydasının ne olduğu eski geleneksel uygulamalarla bugün artık günümüzde tamamen bütün firmalarda kullanılan kurumsal uygulama mimarisi arasındaki
+
+7
+00:05:18,730 --> 00:05:37,730
+Farka ve günlük uygulamalarda nasıl kullanıldığına bakacağız bugün. Bir problem var mı? Slide'larda ya da ses konusunda?
+
+8
+00:05:37,730 --> 00:05:45,160
+Yok hocam.
+
+9
+00:05:45,160 --> 00:06:01,430
+Tamam, teşekkürler. Evet, şimdi biz bu şekli çok iyi biliyoruz. Piramit yapısı ve dikey boyutlarda fonksiyonel alanlar olduğunu görüyoruz.
+
+10
+00:06:01,430 --> 00:06:14,430
+Fonksiyonel alanları da işletmelerde genel olarak gördüğümüz satış pazarlama, üretim, finans ve insan kaynakları olarak dikey boyutlar hep verildi.
+
+11
+00:06:14,430 --> 00:06:30,430
+Şu anda bütün bu dikey boyutları da birbirinden bilgi alarak yürüten kurumsal uygulama mimarisi söz konusu olduğunda,
+
+12
+00:06:30,430 --> 00:06:59,540
+kurumsal altyapıyı oluşturan bilgi yönetim sistemleri, özür dilerim, kurumsal uygulama mimarisine baktığımızda,
+
+13
+00:06:59,540 --> 00:07:18,540
+dikey boyutları tümünü çevreleyen supply chain management system yapısı, customer relationship management system yapısı ve dikey boyutlardaki bütün yönetim geçişlerini,
+
+14
+00:07:18,540 --> 00:07:31,540
+yani alt yönetim, orta yönetim, üst yönetim çerçevesinde bütün kademelerde bilgi aktarımını sağlayan,
+
+15
+00:07:31,540 --> 00:07:47,540
+altta günlük uygulamalarda gerçekleşen günlük işlemleri arşivleyerek daha sonra da bu bilgilerden faydalanarak karar alma aşamasında kullanılmasını sağlayan,
+
+16
+00:07:47,540 --> 00:08:04,540
+knowledge management system yapısını görüyoruz ve bu kurumsal uygulamalarda bu üç tane söylediğim sistem,
+
+17
+00:08:04,540 --> 00:08:26,540
+supply chain management sistem, tedarik zinciri yönetimi, müşteri ilişkileri yönetimi, Siyaryam ve bilgi yönetim sistemleri bize bütün bu uygulamaların birbiriyle ilişkilendirerek gerçekleştirilmesini sağlıyor.
+
+18
+00:08:26,540 --> 00:08:53,539
+Bir de enterprise systems var, bütün kurumun alt yapısında kurumla ilişkili temel işlemlerin yürütülmesini, kurumun kuralları, yazışmaları ve alt yapısını oluşturan sistem tanımını oluşturan elemanları, kurumsal uygulamaların.
+
+19
+00:08:53,539 --> 00:09:20,539
+Yine bu şekil üzerinde geçen haftada durmuştuk, biz buna baktığımızda bu dikey olarak işletmelerin farklı işletsel, farklı fonksiyonel işlemlerini gerçekleştiren uygulamaları ayrı ayrı kullanıldığını görüyorduk.
+
+20
+00:09:20,539 --> 00:09:45,539
+İşte üretim sistemleri, finans sistemleri, satış-pazarlama sistemleri, insan kaynakları sistemleri diye her birinin bilgi sistemi ayrı yapıdaydı ve bunlar iş süreçleri çerçevesinde ayrı ayrı çalışıp gerekirse birbirlerinden bilgi akışı sağlıyorlardı ama ayrı ayrı sistemler halinde çalışıyorlardı.
+
+21
+00:09:45,539 --> 00:09:59,539
+Kurum dışı, kurumun sınırları dışında da satın alma işi yaptığımız kurumlar işte müşteri kurumlarıyla da ilişkiler söz konusu olabiliyordu.
+
+22
+00:09:59,539 --> 00:10:28,539
+Şu anda baktığımızda kurumsal sistemleri, enterprise resource planning uygulamaları, ERP uygulamaları kullanılıyor ve birçok yazılım firması da kurumlara genel ERP yazılımları hazırlama işindeler
+
+23
+00:10:28,539 --> 00:10:31,539
+ve hepsinin bu konuda sattığı ürünler var.
+
+24
+00:10:31,539 --> 00:10:40,539
+Bu kurum çerçevesinde ERP ne işe yarıyor?
+
+25
+00:10:40,539 --> 00:10:56,539
+Bütün anahtar işletmecilik süreçlerinin iletişimi ve bütünleştirilmesini kurumsal seviyede sağlayan bilgi sistemi ERP.
+
+26
+00:10:56,539 --> 00:11:12,539
+Ve birçok iş süreçlerini otomasyon haline getiriyor, modelliyor bu uygulamalar.
+
+27
+00:11:12,539 --> 00:11:32,539
+Genel ERP sistemleri olduğu gibi alana özgü yani mesela tekstil alanında kullanılan ERP sistemleri, farklı üretim alanları üzerinde kullanılan ERP sistemleri gibi yazılımlar geliştirildiğini de görüyoruz.
+
+28
+00:11:32,539 --> 00:11:49,639
+Şimdi bunun yapısına baktığımızda kurumsal sistemlerde, enterprise sistemlerde ortada bir kurumsal sistem var.
+
+29
+00:11:49,639 --> 00:12:06,639
+İşte bu bir kurum çerçevesinde iş süreçlerinin tanımını yapan, temel uygulamaları gerçekleştiren bir kurumsal sistem, bir ERP yazılımı.
+
+30
+00:12:06,639 --> 00:12:30,639
+Bunun destek yazılımları da söz konusu, CRM, supply chain management gibi. Ve bu kurumsal sistem, hem üretim birimine, hem finans muhasebe birimine, hem insan kaynaklarına, hem satış pazarlama birimine hizmet veriyor.
+
+31
+00:12:30,639 --> 00:12:46,639
+Ve kurumsal sınırlar dışında da tedarikçiler ve müşteriler arasında da iletişimi kurma işini de gerçekleştirmiş oluyor.
+
+32
+00:12:46,639 --> 00:13:15,600
+İşte sizden de konu başlıklarınıza belirtin dediğimde, bu kurumsal sistemin alt parçaları olan uygulamalar, CRM'in alt modülleri,
+
+33
+00:13:15,600 --> 00:13:37,009
+ya da insan kaynakları çerçevesinde daha çok kullanılan alt uygulamalarla ilişkili bir yazılım geliştirmenizi istiyorum.
+
+34
+00:13:37,009 --> 00:14:14,539
+Şimdi supply chain management bir mesaja bakmamıştım da biriniz mesajımı gönderdiniz diye baktım. Konumuna getirmemişim daha kolay takip etmeniz için.
+
+35
+00:14:14,539 --> 00:14:39,539
+Supply chain management sistem ne yapıyordu? Üretim ve dağıtımı en iyi hale getirmek üzere firma ve temin ediciler arasında bilgi akışının otomatik hale getirilmesi supply chain management sistem.
+
+36
+00:14:39,539 --> 00:14:52,539
+Fakat üretimden sonra dağıtım tarafını da modellemeye çalışıyor aslında. Çünkü üretimden sonraki depolama sistemi de bu supply chain management içinde.
+
+37
+00:14:52,539 --> 00:15:21,539
+Biz az sonra göreceğiz supply chain management'ı incelerken satın alma, elde etme, gerçekleştirme ve hareket etmesini sağlayan bir ürünün aktiviteleri birbirine bağlar supply chain management.
+
+38
+00:15:21,539 --> 00:15:50,539
+Şimdi ilk başta biz yazılım tarafına bakıyoruz. Supply chain management sistem yazılımı ne yapar? Az önce söylediğim gibi üretim ve dağıtımı en iyi hale getirmek için firmalar ve temin edici arasındaki bilgi akışını otomatik hale getirir.
+
+39
+00:15:51,539 --> 00:16:11,539
+Öncelikle üretim ve dağıtımı en iyi hale getirmek için firmalar ve temin edici arasındaki bilgi akışını otomatize eder ve burada gerçekleşen iş adımlarını da gerçekleştirir, hale getirir.
+
+40
+00:16:11,539 --> 00:16:26,539
+Yapma, taşımasını bir ürünün kapsayan bütün aktivitelerin birbirine bağlı olarak ele alındığı yapı ya da supply chain management diyoruz.
+
+41
+00:16:26,539 --> 00:16:47,539
+Supply chain tedarik zincirinde bir ürünlerin üretim ve dağıtımı için iş süreçleri ve organizasyonların ilişkisi tedarik zinciridir.
+
+42
+00:17:06,420 --> 00:17:37,900
+Şöyle bakabiliriz, tedarik zincirinde bir üretim var, şirketin üretim birimi kapasite, envanter seviyesi bilgilerini üretiyor.
+
+43
+00:17:37,900 --> 00:18:04,410
+Yani ne kadar depoda ham madde kapasitesi nedir, envanter seviyesi nedir, dağıtım iş listesi nedir, ödemeler nelerdir, bu taraftaki sağa doğru bilgi akışında bunlar var.
+
+44
+00:18:04,410 --> 00:18:24,410
+Şimdi yukarıdan baktığımızda, yukarıdaki akışta tedarikçiler var. Yani bir firmanın üretim bölümünün gerekli ham maddeleri aldığı kurumlar.
+
+45
+00:18:24,410 --> 00:18:43,410
+Ama bunlar yani doğrudan ham maddeyi üreten farklı küçük firmalar vardır. Bunlardan toplayan bir üstteki firma vardır, yani aradaki firmalar.
+
+46
+00:18:43,410 --> 00:19:13,549
+Bunların da, ki bu akışa upstream deniyor, yani tedarikçinin, alt tedarikçilerden ürün akışının modellenmesi, üretim gerçekleştiren firmanın bölümü var ve bu üretileni dağıtan kurumlar var.
+
+47
+00:19:13,549 --> 00:19:22,549
+Dağıtım işini gönderdiği toptancılar var ve bunların da gönderdiği müşteriler var.
+
+48
+00:19:22,549 --> 00:19:48,549
+Downstream akışı, işte bu ürün elde edildikten sonra müşterinin siparişleri, geri dönüş istekleri, tamir servis istekleri, ödemeleri gibi bilgileri de downstream alt taraftaki akıştan söz ediyoruz.
+
+49
+00:19:48,549 --> 00:20:07,549
+Yani bu sağdan sola doğru olan akış, müşteri sipariş verir, müşteri geri alma isteği verir, müşteri tamir servis istekleri gönderir, müşteri ödemeler yapar.
+
+50
+00:20:07,549 --> 00:20:33,549
+Aynı şekilde soldan sağa doğru da tedarikçiye kapasite bildirilir, ne kadar ürün, ham madde isteniyor, envanter seviyesi kontrol edilir, hangi üründen ne kadar var ve dağıtım yapılmak üzere envanter seviyesi depoda bekleyen üretilmiş ürün de olabilir.
+
+51
+00:20:33,549 --> 00:20:58,549
+Böyle bir tedarik zincir. Şimdi tekrar tanıma baktığımızda üretim ve dağıtımı için iş süreçleri ve kurumlar arasındaki network tedarik zinciridir.
+
+52
+00:20:58,549 --> 00:21:20,630
+İşte tedarik zinciri bu. Ürünlerin üretim ve dağıtımı için gerçekleştiren iş süreçleri ve kurumlar arasındaki A tedarik zinciri.
+
+53
+00:21:20,630 --> 00:21:39,630
+Tedarik zincir yönetimi dediğimizde bu ürünlerin, ham maddenin satın alınması, ürünün yapılması, üretimi ve dağıtım için hareket etmesi.
+
+54
+00:21:39,630 --> 00:21:56,630
+Bunu kapsayan aktivitelerin kapalı halkası tedarik zinciri yönetimidir. Bu işleri otomatize eden sistem de bilgi sistemi, supply chain management sistem yapısıdır.
+
+55
+00:21:56,630 --> 00:22:10,630
+Şimdi bilgi sistemi kullanımı tedarik zinciri ortaklarına, paydaşlarına ne sağlıyor?
+
+56
+00:22:10,630 --> 00:22:23,630
+Önce ne kadar, ne üretecek, ne depolayacak, ne taşıyacak ve bunları ne zaman yapacak bunlara karar vermelerini sağlıyor.
+
+57
+00:22:23,630 --> 00:22:39,619
+Siparişlerin hızlıca aktarılmasını sağlıyor, siparişlerin durumunun izlenilmesini sağlıyor, envanterin kontrol edilmesini ve yönetilmesini sağlıyor.
+
+58
+00:22:39,619 --> 00:23:06,619
+Bu envanter ulaşım ve depolama maliyetlerini azaltıyor. Çünkü ne kadar lazım, ne lazım bu bilgi akışı iyi olursa o zaman depoda daha gerekli olan ürünler saklanacak, depo maliyetleri düşecek.
+
+59
+00:23:06,619 --> 00:23:20,619
+Ulaşım için ilk kararlar verildiği için neyle taşınacak, nasıl, hangi güzergahla taşınacak buna karar verildiği için.
+
+60
+00:23:20,619 --> 00:23:33,619
+Dolayısıyla bu tedarik zinciri yönetimi de, lojistik de önemli konulardan birisi. Onun tanımına da geleceğiz az sonra.
+
+61
+00:23:33,619 --> 00:23:49,619
+Gönderilenlerin izlenmesi, evet yukarıda siparişlerin durumunun izlenmesi demiştik, yolda olanların izlenmesi firma tarafından.
+
+62
+00:23:49,619 --> 00:24:10,619
+Gerçek müşteri taleplerine dayalı üretim planlaması yapılmasını sağlar ve üretimin tasarımındaki değişiklikleri daha hızlıca aktarılmasını sağlar.
+
+63
+00:24:10,619 --> 00:24:22,619
+Peki, tedarik zinciri yönetimi ile ticarette iş birliği de önem kazanıyor ve ikisini birlikte de düşünebiliyoruz.
+
+64
+00:24:22,619 --> 00:24:37,619
+Nedir bu kolobratif ticarette işinin farklı birimlerle iş birliği halinde yapılması?
+
+65
+00:24:37,619 --> 00:24:57,619
+Bu da firmanın netvorku sayesinde tasarım gerçekleştiren mühendisler, üretim yapısı, satış pazarlama, müşteriler ve tedarikçiler.
+
+66
+00:24:57,619 --> 00:25:04,619
+Az önce zaten hepsini biz bunların şu zincirde gördük.
+
+67
+00:25:04,619 --> 00:25:20,180
+İşte bu zincir içine giren işleri gerçekleştiren kişiler, birimler hepsi arasında bir iş birliği gerçekleştiriyor.
+
+68
+00:25:20,180 --> 00:25:26,180
+Bunların arasındaki ticareti yaparken bir iş birliği gerçekleştiriyor.
+
+69
+00:25:26,180 --> 00:25:34,180
+Mühendisler tasarım dökümanlarını daha hızlı paylaşıyor üretim birimi ile.
+
+70
+00:25:34,180 --> 00:25:46,180
+Üretim birimi, ham maddelerin faturaları, talep tahminleri, sipariş durumlarını daha hızlı izleyebiliyor.
+
+71
+00:25:46,180 --> 00:25:54,180
+Satış pazarlama birimi, pazarlamadaki koordinasyonu sağlayabiliyor.
+
+72
+00:25:54,180 --> 00:26:06,180
+Müşteri siparişlerini ve üründeki değişiklik isteklerini daha kolay iletebiliyorlar.
+
+73
+00:26:06,180 --> 00:26:18,180
+Tedarikçiler de fiyat listelerini ve ürün aktarımlarını daha hızlı paylaşabiliyorlar.
+
+74
+00:26:18,180 --> 00:26:38,180
+Böyle bir yapıda planlama, tahmin ve ürün aktarımını da bir iş birliği çalışması gerçekleştirilebiliyor.
+
+75
+00:26:38,180 --> 00:26:54,180
+Burada depolama, stok ve gönderme sırasındaki koordinatlar, üretim planları,
+
+76
+00:26:54,180 --> 00:27:14,730
+ürün geliştirmek için üretim planları, talep tahminleri paylaşlar arasında bu konularda iş birliği gerçekleştiriliyor.
+
+77
+00:27:14,730 --> 00:27:36,730
+Yani bir taraf talep tahminlerini, ürün geliştirme planlarını, gönderimdeki koordinatları, deponun durumunu, ston durumunu bütün paylaşlar birbirleriyle iş birliği halinde paylaşabiliyorlar.
+
+78
+00:27:36,730 --> 00:27:56,390
+İşte bizim sistemlerimizde de bu sağlanıyor. Bu iş birliği yapısında, işletmelerde nasıl yürüyor?
+
+79
+00:27:56,390 --> 00:28:13,390
+İş birliği yapısını nerede görüyoruz? Ürün tasarımı ve geliştirmesinde, servis ve destekte, tedarik zincirinin koordinasyonunda, lojistikte, satış destek ve satış eğitimlerinde,
+
+80
+00:28:13,390 --> 00:28:26,390
+yani pazarlama için, pazarlama kanallarının yönetiminde bu iş birliği ticaretinin yansımalarını görüyoruz.
+
+81
+00:28:26,390 --> 00:28:46,269
+Şimdi aslında tedarik zincirinin bir ucunda da CRM, bunlar da bir noktada birleşiyorlar. Çünkü şurada baktığınızda, işte şu taraf aslında bizim tedarik zincirimiz.
+
+82
+00:28:46,269 --> 00:28:59,269
+Ama üretimden sonra dağıtım kanalları, toptancılar ve müşteriye ulaşması dediğimizde, sağa doğru gittiğimizde CRM'e doğru kaymış oluyoruz.
+
+83
+00:28:59,269 --> 00:29:26,269
+Ve CRM yapısında, Customer Relationship Management, burada ne görüyoruz? Burada var olan müşteriler ve potansiyel müşterilerle ilişkiyi yönetiyor CRM.
+
+84
+00:29:26,269 --> 00:29:34,269
+Hem işletmecilik hem de teknoloji disiplinine ihtiyaç var CRM'de.
+
+85
+00:29:34,269 --> 00:30:02,269
+Burada bilgi sistemleri kullanılıyor. Bilgi sistemleri niçin kullanılıyor? Tüm müşterilerle satış, pazarlama ve servisteki iletişimi koordine etmek için bilgi sistemleri kullanılıyor.
+
+86
+00:30:02,269 --> 00:30:11,269
+Burada bizim bütün bu işlemlere ihtiyacımız var.
+
+87
+00:30:11,269 --> 00:30:29,269
+Müşteri ilişkileri yönetim sisteminde gerçekleştirilen işlemlere baktığımızda bütün müşterilerle ilişkileri izler.
+
+88
+00:30:29,269 --> 00:30:55,130
+Müşterinin memnuniyetini, müşterinin geri kaçma ihtimalini, müşteri ile ilişkilerdeki kazanç bilgisini en iyi hale getirmek üzere toplanan veriyi analiz eder.
+
+89
+00:30:55,130 --> 00:31:16,130
+Evet bu 3-4-5 madde müşteri ilişkileri yönetiminde özetleyen ana başlıklar var olan müşteri ve potansiyel müşteri ile ilişkileri yönetir.
+
+90
+00:31:16,130 --> 00:31:34,130
+Hem işletmecilik hem teknoloji disiplini vardır yapısında. Neden? Çünkü tabii ki işletmecilik bilgisi olacak ki pazarlama, satış kavramları, müşteri ilişkileri kavramlarını bilmek gerekiyor.
+
+91
+00:31:34,130 --> 00:31:57,130
+Hem de altta müşteri ilişkileri yönetim sisteminin altında büyük veri kullanımı, veri saklama, depolama, veri taban uygulaması ve büyük veri uygulamaları ve talep tahminlerini oluşturabilmek için
+
+92
+00:31:57,130 --> 00:32:22,130
+müşterinin satın alma hareketlerini belirleyebilmek için veri madenciliği uygulaması, yapay zeka uygulamaları ve iyi bir veri tabanı yönetim sistemi uygulaması gerekli teknoloji altyapısı açısından.
+
+93
+00:32:22,130 --> 00:32:42,130
+Ve buradaki bilgi sistemlerinde müşteri ile iletişim süreçlerini satış, pazarlama ve serviste koordine edilmesini sağlayan bilgi sistemleri kullanılıyor.
+
+94
+00:32:42,130 --> 00:33:09,130
+Bütün müşteri hareketleri izleniyor ve müşteri memnuniyetini kazancı ve müşteri geri dönüşlerini otomize etmek için yani olmamasını sağlamak için verinin analiz edilmesini ve pazarlama tarafının canlandırılmasını sağlıyor müşteri ilişkileri yönetimi.
+
+95
+00:33:09,130 --> 00:33:23,130
+Pazarlama biriminin daha çok kullanım şeyi var işte promosyonların canlandırılmasını filan gibi. Bunların uygulama alanlarının önemli bir kısmını oluşturuyor.
+
+96
+00:33:23,130 --> 00:33:43,980
+Şimdi baktığımızda zaten CRM burada şunu görüyoruz satış kısmı, pazarlama kısmı ve müşteri servisleri.
+
+97
+00:33:43,980 --> 00:34:10,420
+Müşterilerin tüm işlemlerini müşterilere geniş bir perspektifte bakma ve müşteriler arasında birleştirilmiş bir bakış açısı oluşturma, müşterilere uygun mesaj gönderme,
+
+98
+00:34:10,420 --> 00:34:31,420
+müşterinin bakımını sağlama yani müşteri bilgilerinin yapılandırılmasını sağlama, uzun vadeli müşteri ilişkileri hakkında kararlar oluşturma, işte en iyi müşteri tanımını gerçekleştirmek gibi işlemler,
+
+99
+00:34:31,420 --> 00:34:46,420
+CRM uygulamaları, satışların planlanması ve burada bütün satışlar yani eski satış türleri de hala devam eder şekilde destekleniyor bu uygulamalarda.
+
+100
+00:34:46,420 --> 00:35:01,420
+İşte telefonla satış, webden satış, alan satışları, toptan satışlar, her türlü satış işlemi bu CRM konusu altında.
+
+101
+00:35:01,420 --> 00:35:19,420
+Pazarlamada, pazarlama için işte özellikle reklam kampanyaları, veri analizleri, bundan sonraki reklam planlamaları için veri analizleri,
+
+102
+00:35:19,420 --> 00:35:36,420
+pazarlama sırasında potansiyel müşterileri yakalama şeyi, müşteri servisleri, müşteriyle ilgili daha sonraki şikayetleri ve istekleri toplamak için call center verisi,
+
+103
+00:35:36,420 --> 00:35:52,420
+web servisleri, alan servisleri ise bütün bunlar müşteri ilişkileri yönetimindeki kullanılan bilgi ve hizmet verilen alanları gösteriyor.
+
+104
+00:35:52,420 --> 00:36:11,420
+Bir de buradaki veri analizi, veri madenciliği yapısı üzerinde de duracağımızı söylemiştik. Bu daha sonraki derslerimizde bunun üzerinde daha ayrıntılı olarak duracağız.
+
+105
+00:36:11,420 --> 00:36:35,420
+Bilgi yönetim sistemleri, burada ilişkili bilgiyi toplama, firmanın deneyimlerini, yani iş süreçleri ve yönetim kararlarını desteklemek üzere,
+
+106
+00:36:35,420 --> 00:36:53,420
+firmadaki bilgi ve deneyimlerin birbiriyle ilişkili olarak toplanması. Yani biz şunu tekrar görelim, ilk şekle geliyorum.
+
+107
+00:36:53,420 --> 00:37:08,420
+Şimdi biz burada hangilerini gördük, supply chain management'ı gördük, müşteri ilişkileri yönetimini gördük, ki bunları böyle bir elips içinde işledik.
+
+108
+00:37:08,420 --> 00:37:24,420
+Dikey boyutlar, satış pazarlama, üretim, finans, insan kaynakları, bunların hepsini supply chain management sistem ve müşteri ilişkileri yönetim sistemi bir taraftan kullanıyor.
+
+109
+00:37:24,420 --> 00:37:32,420
+Hatta buraya aslında insan kaynakları sistemini de yazabiliriz, yani dört parça olarak da bakabiliriz.
+
+110
+00:37:32,420 --> 00:37:50,420
+İnsan kaynaklarında da çünkü sadece insan çalışanların takibi değil, uygun kişilerin işe alınması, işe alınma uygulamaları, taleb tahminleri, yani ne tür insan talebimiz var,
+
+111
+00:37:50,420 --> 00:38:04,420
+ihtiyaç çalışan tahminleri, yetenek geliştirmesi gibi birçok alanda yapay zekayla ilişkilendirilen uygulamalar da var.
+
+112
+00:38:04,420 --> 00:38:25,420
+Yani şuraya üçüncü bir insan kaynaklarını da ekleyebiliriz. Bu, bu dikey boyutların hepsini bir uçtan bir uca birinin bıraktığı yerden diğerinin başladığı uygulamalar ve birlikte de çalışmaları gerektirecek.
+
+113
+00:38:25,420 --> 00:38:49,420
+Supply chain management sistemde tedarikçiler, iş ortakları, customer relationship management sistemde müşteriler, dağıtıcılar, dağıtım kanalları, bunlar hepsi bu sistemlerden supply chain management sistemden ve CRM sistemlerinden destek alıyorlar.
+
+114
+00:38:49,420 --> 00:39:02,420
+Hatta biz bu şekilde yok ama HR sistemlerini de buna ekleyebiliriz çünkü HR'ın da başka modüllerle eklendiğini görüyoruz ERP uygulamalarında.
+
+115
+00:39:02,420 --> 00:39:17,420
+Şimdi baktığımızda yukarıdan aşağıya doğru da bir ellipse yapısı var. Enterprise sistemler kurumun iç yapısıyla ilgili süreç tanımlarını yapıyor.
+
+116
+00:39:17,420 --> 00:39:31,420
+Bilgi yönetim sistemleri, knowledge management sistemde işte şu anda bu parçasını görüyoruz kurumsal uygulama mimarisinin.
+
+117
+00:39:31,420 --> 00:39:49,420
+Bu parçada da çeşitli uygulamalarla elde edilen bilginin karar almada kullanılmasının sağlanması söz konusu.
+
+118
+00:39:49,420 --> 00:40:14,420
+Şimdi knowledge management sistem tanımına bakabiliriz. Knowledge management sistem tanımında burada iş süreçleri ve yönetim kararlarını desteklemek üzere firmadaki bilgi ve deneyimin ilişkili olarak toplanması.
+
+119
+00:40:14,420 --> 00:40:37,050
+Ve bütün dijital bilgi nesnelerinin ve belgelerin dağıtımını ve yönetimini gerçekleştiren yapı.
+
+120
+00:40:37,050 --> 00:41:00,050
+Yani alt üst yönetimde varılan kararları planlamaları alt yönetimi aktarabilmek, alt yönetimdeki bilgi akışını üst yönetime gönderebilmek bütün bunlarda bilgi yönetim sistemleriyle gerçekleştiriliyor.
+
+121
+00:41:00,050 --> 00:41:18,050
+Kurum içinde birtakım standartların yerleştirilmesini sağlamak. Bu noktada bilgi yönetim sistemlerinin rolü nedir? Bilgiyi toplamak, saklamak, dağıtmak ve karar alma da planlamalarda uygulamak.
+
+122
+00:41:18,050 --> 00:41:33,050
+Bu yapıda bilgi yönetim sistemleri içinde gerçekleştiriliyor. Şimdi baktığımızda demek ki bu slide'larda olmayan bir de HR sistemleri var.
+
+123
+00:41:33,050 --> 00:41:50,050
+ERP yazılımları bizim işletmelerde, bütün günlük işlemlerde, karar alma da, işletmenin organizasyonunda halen kullandığımız sistemler.
+
+124
+00:41:50,050 --> 00:42:20,519
+Burada şu tanıma geçmeden hangi alt başlıkları görüyoruz? Supply Chain Management, Müşteri İlişkileri Yönetimi, CRM, İnsan Kaynakları HR ve Enterprise System.
+
+125
+00:42:20,519 --> 00:42:44,519
+Kurumsal olarak temel işleyişi kurumda oluşturan çekirdek parçası ERP'nin ve Knowledge Management System bütün yönetim kademeleri arasında karar ve planlamaların,
+
+126
+00:42:44,519 --> 00:42:59,519
+gerçekleştirilen karar ve planlamaların aşağıya aktarılmasını, aşağıdaki bilgi birikiminin yukarıya aktarılmasını sağlayan bilgi yönetim sistemleri.
+
+127
+00:42:59,519 --> 00:43:08,519
+Ve biz bunu, hepsini bütünleşik olarak çalıştığını görüyoruz ERP sistemlerinde.
+
+128
+00:43:08,519 --> 00:43:22,519
+Bunu bir kurum, hazır bir ERP yazılımını alıp, bünyesinde kendine uygun hale getirebilir ya da kendine özgü ERP sistemlerini geliştirebilir.
+
+129
+00:43:22,519 --> 00:43:44,519
+Ya da yazılım kurumlarının, yazılım evlerinin o hangi üretim alanında faaliyet gösteriyorsa o alana özgü hazırlamış olduğu ERP yazılımlarını alıp yine kendi firmasına özel hale daha kolay getirdiği bir uygulama türünü seçebilir.
+
+130
+00:43:44,519 --> 00:43:52,519
+Şimdi Enterprise Software yapısına daha anlamlı bakabiliriz.
+
+131
+00:43:52,519 --> 00:44:21,019
+Bir defa bütün iş süreçlerinde ve bütün işlemlerde, işletmelerdeki fonksiyonlarda ve iş süreçlerinde kullanabilecek veriyi sağlayan
+
+132
+00:44:21,019 --> 00:44:41,019
+finans, muhasebe, insan kaynakları, üretim, satış pazarlama için bütünleşik yazılım modülleri setine kurumsal yazılım diyoruz, Enterprise Software tanımını kullanıyoruz.
+
+133
+00:44:41,019 --> 00:45:02,019
+Ve böyle bir yazılımda merkezi bir veri tabanımız var. Bu veri tabanında insan kaynakları, satış pazarlama, finans, muhasebe ve üretime bilgi aktarımı sağlıyoruz.
+
+134
+00:45:02,019 --> 00:45:15,019
+İlk dersin başında gösterdiğim şekli burada biraz daha veri tabanı ve gerçekleştirilen işlemleri de ekleyerek görmüş oluyoruz.
+
+135
+00:45:15,019 --> 00:45:29,019
+Şimdi bu işlemler üzerinde biraz duracağız bu şekil üzerinde ama bir ara verelim. Ondan sonra devam edeceğiz derste.
+
+136
+00:45:29,019 --> 00:46:29,619
+Evet bir ara verdik. Aradan sonra hem bu bölümü tamamlayacağız hem de önümüzdeki haftaki sınavla ilişkili bir genel tekrar yapacağım.
+
+137
+00:46:29,619 --> 00:46:40,619
+Belki bu hafta için derse gelenler vardır. Önümüzdeki hafta için sınav programında verilen saatte de sınav yapacağız.
+
+138
+00:46:40,619 --> 01:02:05,769
+Evet derse başladık tekrar. Şimdi yine bu kaldığımız yerden devam edelim. Sınavda bir problem yok sanıyorum tekrar paylaşıyorum.
+
+139
+01:02:05,769 --> 01:02:29,900
+Evet bu arada derse katılanların sayısı artmış. Önümüzdeki hafta gerçekleştireceğimiz sınav saat kaç görünüyordu? Programda sınav saatimiz ders başlangıcı mı görünüyor yoksa daha sonra mı?
+
+140
+01:02:29,900 --> 01:02:53,360
+11 daha iyi tamam. Evet devam ediyoruz o zaman derste.
+
+141
+01:02:53,360 --> 01:03:40,619
+Şimdi yine üzerinde durduğumuz kurumsal sistemlerin yapısını daha teknik olarak baktığımızda sizin biraz daha iyi anlayacağınız şekilde.
+
+142
+01:03:40,619 --> 01:03:55,619
+Ortada bir merkezi veri tabanı var ve bölümler arasında işletmedeki birimler dikey birimler arasında işlemler gerçekleştiriliyor.
+
+143
+01:03:55,619 --> 01:04:16,619
+Burada finans mansebe bölümünden işte elde bulunan nakit, mansebe kayıtları, müşteri kredileri gibi bilgiler veri tabanına aktarılıyor.
+
+144
+01:04:16,619 --> 01:04:35,619
+İnsan kaynaklarından iş saatleri, iş gücü maliyetleri, çalışanların işle ilişkili yetenekleri gibi bilgiler giriyor.
+
+145
+01:04:35,619 --> 01:05:01,619
+Üretim biriminden ham maddeler, kullanılan malzemeler, üretim listesi, üretim planları, müşteri yani üretimden çıkan ürünlerin gönderilmesi, gönderilme bilgileri,
+
+146
+01:05:01,619 --> 01:05:13,619
+üretim kapasitesi ve ham madde satın alma bilgileri yine veri tabanına aktarılıyor.
+
+147
+01:05:13,619 --> 01:05:31,409
+Satış pazarlama biriminden de siparişler, satış tahminleri, geri verme istekleri, fiyat değişiklikleri gibi bilgiler gönderiliyor.
+
+148
+01:05:31,409 --> 01:05:42,409
+Ve bu gönderilen bilgiler diğer birimler arasında da paylaştırılarak geri alımlar sağlanıyor.
+
+149
+01:05:42,409 --> 01:05:50,409
+Şimdi kurumsal sistemlerde hangi faydaları görüyoruz?
+
+150
+01:05:50,409 --> 01:06:08,409
+Kurumsal sistemlerin faydalarında bir defa tek bir organizasyonumuz var. Firma yapısı ve organizasyon açısından, kurum açısından bir organizasyonumuz var.
+
+151
+01:06:08,409 --> 01:06:11,409
+Bilgi sistemleri de o da ERP sistemleri.
+
+152
+01:06:11,409 --> 01:06:24,409
+Yönetim açısında kurum firma çerçevesinde, firma bazında bilgi tabanlı yönetim süreçleri oluşturuluyor.
+
+153
+01:06:24,409 --> 01:06:49,409
+Yani çok net görmüyoruz, alt kademe yönetim, bunun yönetimindeki işlemler, orta kademe yönetim, üst kademe yönetim diye bütün firma bazındaki bilgi tabanlı yönetim süreçlerini gerçekleştiriyor ERP kurumsal sistemler.
+
+154
+01:06:49,409 --> 01:07:13,409
+Teknoloji bakımından baktığımızda işte her bir satış pazarlamada, üretimde, insan kaynaklarında ayrı ayrı programlar, ayrı ayrı yazılımlar değil, birleştirilmiş bir platform üzerinde tüm birimlere hizmet verdiğini görüyoruz.
+
+155
+01:07:13,409 --> 01:07:20,409
+Farklı altyapılar üzerinde uğraşılmıyor.
+
+156
+01:07:20,409 --> 01:07:40,409
+İşletmecilik açısından baktığımızda hem daha etkin işlemler gerçekleştiriliyor, yani işletmecilik uygulamaları daha etkin gerçekleştiriliyor.
+
+157
+01:07:40,409 --> 01:07:52,409
+Hem de müşteri yönelimli bir işletmecilik süreçleri gerçekleşmiş oluyor daha iyi hizmet vermek açısından.
+
+158
+01:07:52,409 --> 01:08:18,409
+Bu slide'da biz bu kurumsal sistem mimarisini kullandığımızda hem firma yapısı, organizasyon açısından hem yönetim açısından hem teknoloji açısından hem işletmecilik açısından hangi faydaları sağlıyoruz, bunu görebiliyoruz.
+
+159
+01:08:18,409 --> 01:08:28,409
+Peki supply chain tedarik zinciri süreçleri için bakalım.
+
+160
+01:08:28,409 --> 01:08:41,409
+Tedarik zinciri süreçlerinde, tedarik zincirine daha geniş baktığımızda az önce tedarik zinciri nedir?
+
+161
+01:08:41,409 --> 01:08:47,409
+İşte tedarik zinciri hangi adımlarla oluşur?
+
+162
+01:08:47,409 --> 01:08:53,409
+İleriye doğru, soldan sağa doğru gittiğinde şöyle bakalım.
+
+163
+01:08:53,409 --> 01:09:06,409
+Tekrar yani ilk uygulama olarak bahsettiğimiz tedarik zincirine kurumsal uygulamalar çerçevesinde biraz daha geniş bakıyoruz.
+
+164
+01:09:06,409 --> 01:09:09,409
+O yüzden ilk tanımımıza geri dönelim.
+
+165
+01:09:09,409 --> 01:09:15,409
+Tedarik zinciri tanımını yapmıştık.
+
+166
+01:09:15,409 --> 01:09:20,409
+Tedarik zinciri nedir? Tedarik zinciri yönetimi nedir? Tedarik zinciri yönetim sistemi nedir?
+
+167
+01:09:20,409 --> 01:09:29,409
+Tedarik zinciri diye baktığımızda burada hangi işlemler var tedarik zincirinde?
+
+168
+01:09:29,409 --> 01:09:48,409
+Ürünlerin dağıtımı, ürünlerin üretimi ve dağıtımı aşamasındaki iş süreçleri ve kurumsal yapının bir ağ oluşturması tedarik zinciriydi.
+
+169
+01:09:48,409 --> 01:09:54,409
+Burada şu servisler veriliyordu.
+
+170
+01:09:54,409 --> 01:10:02,409
+Peki tedarik zincirinde hangi işlemler gerçekleşiyor?
+
+171
+01:10:02,409 --> 01:10:04,409
+Şimdi buna bakalım.
+
+172
+01:10:04,409 --> 01:10:28,409
+Evet, önce tedarik zinciri süreçlerinde baktığımızda bir planlama, planlanan işlemler için kaynak oluşturma.
+
+173
+01:10:28,409 --> 01:10:54,750
+Ondan sonra bu elde edilen kaynaklarla ürünün gerçekleştirilmesi, üretimin yapılması, planla kaynağı elde et, yap ve dağıt, geri dönüşleri gerçekleştir.
+
+174
+01:10:54,750 --> 01:11:13,750
+Burada 5 parça işlem var, 5 ayrı iş adımı var ve bu bir süreç önce planlayacak kurum, tedarik zinciri için bir planlama yapacak.
+
+175
+01:11:13,750 --> 01:11:51,899
+Bu planlamada baktığımızda bir tedarik işlemi için nasıl bir hareket geliştireceğimizi, talepleri dengeleyerek oluşturmak.
+
+176
+01:11:51,899 --> 01:12:11,899
+Yani hangi talepler var, bu talepler için nasıl bir tedarik işlemi gerçekleştireceğiz, taleplerle tedariğin dengelenmesi için planlama yapılıyor.
+
+177
+01:12:11,899 --> 01:12:29,899
+Kaynak oluşturma, özel bir ürün ya da hizmeti yaratmak üzere ihtiyaç duyulan ürünlerin ve hizmetlerin elde edilmesi süreci.
+
+178
+01:12:29,899 --> 01:12:51,409
+Yani şimdi biz önce planlıyoruz, hangi talep var elimizde, bu talebe göre ne geliştireceğiz, hangi temin işlemlerinin yapılması gerekiyor bu talepleri karşılamak için.
+
+179
+01:12:51,409 --> 01:13:04,409
+Toplanan taleplerle temin edilmesi gerekenlerin dengelenmesi için bir planlama yapılıyor.
+
+180
+01:13:04,409 --> 01:13:21,409
+Ondan sonra bu plana göre hangi kaynaklara ihtiyacımız var, özel bir ürün ya da hizmeti yaratmak için bu bir hizmet sektöründe de hizmet üretimi olabilir.
+
+181
+01:13:21,409 --> 01:13:35,409
+İhtiyaç duyulacak ürün ve servislerin toplanması, elde edilmesi, alınması havmadenin süreci.
+
+182
+01:13:35,409 --> 01:14:05,479
+Yap, make aşaması, burada planlananı ya da gerçek talepleri karşılamak üzere bir ürünün elde edilmesine başlanması ve bitirilmesindeki başlanması,
+
+183
+01:14:05,479 --> 01:14:23,479
+ve bitirilmesine kadar gerçekleştirilen süreçlere de yap süreci, gerçekleştir süreci diyoruz, bu süreçteki adımı diyoruz, üretim aşaması örneğin.
+
+184
+01:14:23,479 --> 01:14:52,930
+Ondan sonrası dağıtım, planlanan talep ya da gerçek talebi karşılamak üzere, make aşamasında bitirilmiş olan ürünlerin veya hizmetlerin gönderilmesi adımı.
+
+185
+01:14:52,930 --> 01:15:08,500
+Return ise ürünlerin geri verilmesi ile ilgili süreçler. Şimdi bunu şekil üzerinden bakalım.
+
+186
+01:15:08,500 --> 01:15:35,840
+Plan, plan bütün bu aşamanın oluşturulması yani tedarik zinciri aşamasında kaynaklarla gereksinimlerin dengesinin oluşturulması ve işletme finansal planıyla tedarik zinciri planının denkleştirilmesi.
+
+187
+01:15:35,840 --> 01:15:46,840
+Yani bir tedarik zinciri planlıyoruz ama bunu işletmenin finans planıyla örtüştürmemiz gerekiyor.
+
+188
+01:15:46,840 --> 01:15:52,840
+Aynı şekilde kaynaklarla gereksinimleri de dengelememiz gerekiyor.
+
+189
+01:15:52,840 --> 01:16:05,840
+Yani tedarik zinciri sırasında bir taleplerle kaynakları dengelememiz gerekiyor.
+
+190
+01:16:05,840 --> 01:16:15,840
+İki, bir tedarik zinciri planı yapıyoruz ama bu işletmenin finans planıyla uyumlu mu? Bunu hep göz önünde bulunduruyoruz.
+
+191
+01:16:15,840 --> 01:16:32,840
+Kaynak aşamasında tedarikçileri belirli, dağıtım iş listesini oluştur, dağıtım listesini oluştur ve envanteri yönet işini gerçekleştiriyoruz.
+
+192
+01:16:32,840 --> 01:16:54,180
+Ham madde envanteri ve bu temin edicilerin planlaması, make aşamasında üretim iş listesi oluşturuyoruz.
+
+193
+01:16:54,180 --> 01:17:13,100
+Kalite ile performans değerlendirimi yani üretim birimi içinde kalite üretilen ürünlerin kalitesinin sağlanması önemli bir madde.
+
+194
+01:17:13,100 --> 01:17:21,100
+Bunu gerçekleştiriyoruz ve süreçteki bütün işi yönetiyoruz.
+
+195
+01:17:21,100 --> 01:17:47,100
+Üretim yapanların performansı, gerçekleştirilen üretimin kaliteli olması hepsi kalite ve performans değerlendirmesinin make aşamasında en önemli işlerden bir tanesi.
+
+196
+01:17:47,100 --> 01:18:09,100
+Dağıtım aşaması, taşıyıcıları seçimi yani hangi işler var burada, temel işlemler, taşıyıcıların seçimi hangi firmaya taşıtılacak ya da firma bünyesinde taşımacılık var mı, rota belirleme, hangi güzergahta gönderim olacak,
+
+197
+01:18:09,100 --> 01:18:29,100
+gönderdiğiniz yerlerde depo yönetimi ya da göndermeye kadar tutacağınız depo yönetimi, müşterilere fatura ulaştırma, bu da yine bizim dağıtım aşamasında yapacaklarımız.
+
+198
+01:18:29,100 --> 01:19:03,310
+Dağıtım aşamasında taşıyıcıların seçilmesi, rota gönderimlerin rotasını belirlenmesi, depo yönetimi ve müşterilere fatura kesilmesi süreci,
+
+199
+01:19:03,310 --> 01:19:28,310
+return aşaması burada geri dönüşlerin listelermesi, geri dönüşlerin alınması ve return işlemi sırasında da kredi olayının yani geri dönüş kararı olduğunda
+
+200
+01:19:28,310 --> 01:19:34,310
+paranın da geri verilmesi ile ilgili işlemlerin yapılması.
+
+201
+01:19:34,310 --> 01:19:58,310
+Bunlar hepsi supply chain içindeki hareketler, tedarik zinciri dediğimizde, işletmecilik açısından baktığımızda planla kaynakları belirle üret, yap, dağıt ve dağıttıklarına geri dönüşü,
+
+202
+01:19:58,310 --> 01:20:09,310
+bu hangi kararlara bağlı geri dönüş işlesesi, geri dönüşlerin alınması ve bunların parasal işlemlerinin halledilmesi.
+
+203
+01:20:09,310 --> 01:20:23,310
+Şimdi baktığımızda tedarik zinciri ile lojistik ilişkili, dağıtım diyoruz ama dağıtım işlemi, şurada baktığımızda dağıtım işlemi var.
+
+204
+01:20:23,310 --> 01:20:35,310
+Burada bir de kaynakların aktarılması var, hem kaynakların üretime aktarılması hem üretilenlerin dağıtım yapılması.
+
+205
+01:20:35,310 --> 01:20:57,310
+İşte lojistik bu noktada devreye giriyor ve önemli bir iş alanı, bir ürün ya da servisin ulaştırılmasında etkisi olan tüm faktörlerin planlanması ve kontrolü.
+
+206
+01:20:57,310 --> 01:21:13,310
+Bütün bunlara lojistik diyoruz, bu ulaştırma da sadece kamyon belirlenecek veya ulaşım aracı belirlenecek, güzergah belirlenecek, gidecek değil.
+
+207
+01:21:13,310 --> 01:21:22,310
+Bunlarla ilgili bütün faktörlerin planlanması ve kontrolü lojistik oluyor.
+
+208
+01:21:22,310 --> 01:21:42,310
+Sadece bu alanda hizmet veren firmalar da var ve oldukça önemli ürünlerin bozulmadan aktarılması, ham maddenin zarar görmeden aktarılması veya bir servis işinin,
+
+209
+01:21:42,310 --> 01:22:01,310
+hizmet sektöründe de yine bu hizmetin yerine getirilmesi için, yine bu transport işinin gerçekleştirilmesi ve transport için gerekli altyapının oluşturulması bunların hepsi lojistik alanına giriyor.
+
+210
+01:22:01,310 --> 01:22:14,310
+Şimdi şeyde, tedarik zinciri ile önemli bir ilgili başlık olarak söyledik lojistiği.
+
+211
+01:22:14,310 --> 01:22:30,310
+Tedarik zincirinde bir farklı tarzlar var, just in time ve valvip etkisi.
+
+212
+01:22:30,310 --> 01:22:47,310
+Burada envanteri nasıl aktaracağız, nasıl toplayacağız, nasıl aktaracağız?
+
+213
+01:22:47,310 --> 01:23:10,310
+Envanterde depo maliyetini daha aza çekmek için, ihtiyaç duyulan üretim sonunda elde edilen eşyaların veya ham madde bilgilerinin,
+
+214
+01:23:10,310 --> 01:23:28,310
+gönderilmesi istenilen yere, toplanma hattından çok kısa sürede aktarılması, depo maliyetinin azaltılması, envanterin en aza indirilmesi.
+
+215
+01:23:28,310 --> 01:23:55,310
+Bu supply chain de tedarik zincirinde önemli, tedarik zincirinde bir ürün geçişinin talep bilgisinin nasıl aktarılacağı önem taşıyor bu tedarik zinciri şekline karar vermekte.
+
+216
+01:23:55,310 --> 01:24:24,260
+Evet, bu da üretimden, şu tedarik zincirini tekrar bakarsak, tedarikçiden üretim yapacak birime, üretimden sonra da dağıtıcıya, toptancıya ve müşteriye aktarılmasında,
+
+217
+01:24:24,260 --> 01:24:47,260
+biz bunu ne şekilde yapacağız, burada tam zamanında bu dağıtım işinin, aktarma işinin, tedarik edilen ham maddeleri kullanarak,
+
+218
+01:24:47,260 --> 01:25:11,260
+ürün halini getirip, daha sonra da müşteriye aktarma aşamasında, envanteri minimize etmek için, depo maliyetini minimize etmek için gerçekleştirilen bir sistem Justin Time yapısı.
+
+219
+01:25:11,260 --> 01:25:38,720
+Mümkün olduğu kadar toplanma alanında daha az tutulması için gerçekleştirilen işlemler, herhangi bir varlığın bu bir ürün için gerçekleştirilen ham madde olabilir,
+
+220
+01:25:38,720 --> 01:26:18,720
+ya da üretimden çıkan bir talep doğrultusunda üretimden çıkan birim olur, tedarik zincirinde bir sonraki aşamaya geçmesi için gerekli talep bilgisinin dağıtımı, bu talep bilgisinin nasıl aktarılacak.
+
+221
+01:26:18,720 --> 01:26:37,220
+Evet, çerçevede biz kurumsal yapılarda hangi alt işlemlerin olduğunu görmüş olduk.
+
+222
+01:26:37,220 --> 01:26:59,220
+Şimdi bunu biraz daha tedarik zinciri dışında, müşteri ilişkileri yönetiminde de nasıl gerçekleştirdiğimizi görelim. Bir dakika slide'ı değiştireceğim.
+
+223
+01:26:59,220 --> 01:31:04,029
+Evet, slide ve seste bir problem var mı? Evet, [öğrenci] teşekkür ederim. [öğrenci]. Evet, devam edebiliriz o zaman. Bakıyorum bu arada katılan arkadaşlarınızın isimlerini.
+
+224
+01:31:04,029 --> 01:31:39,739
+Evet, tedarik zinciri yönetim sistemleri ile ilgili planlama ve talep planlama sistemleri bir kaynak elde etme ve üretim planlarının geliştirilmesi için,
+
+225
+01:31:39,739 --> 01:31:50,739
+talep tahminleri üretilmesi önemli ve planlama sistemlerinde bunlar sağlanmaya çalışılıyor.
+
+226
+01:31:50,739 --> 01:32:12,739
+Talep planlamada müşterinin talepleri ne sağlamak üzere, ne kadar ürün olmalı, bunun belirlenmesi, bunun saptanması talep tahmini oluyor.
+
+227
+01:32:12,739 --> 01:32:22,739
+Çünkü bu önemli bir karar, üretim fazlası olmaması için ne kadar üretilmesi gerekiyor.
+
+228
+01:32:22,739 --> 01:32:42,739
+İşte zaten tedarik zincirinde az önce bu arka arkaya adımları gördüğümüz planla kaynakları elde et, yap, dağıt ve aktar müşteriye.
+
+229
+01:32:42,739 --> 01:32:51,739
+Ve sonra da geri dönüşleri topla dediğimizde talep tahminleri ve talep planlanması önem taşıyor.
+
+230
+01:32:51,739 --> 01:33:23,890
+Tedarik zincirindeki bu çalışma mekanizmasında da dağıtım merkezlerinde ve ne kadar etkin bir şekilde dağıtım yapılacak,
+
+231
+01:33:23,890 --> 01:33:38,890
+dağıtma merkezlerinde ürünler ne kadar az duracak, buradaki çalışma sistemlerini tedarik zinciri yönetim uygulamaları olarak gerçekleştiriyoruz.
+
+232
+01:33:38,890 --> 01:33:44,890
+Tedarik zincirinde farklı stratejiler geliştirebiliyoruz.
+
+233
+01:33:44,890 --> 01:34:05,130
+Burada farklı ürünler içinde farklı stratejiler geliştiriyor, işlevsel ürünler için daha farklı, inovatif yaratıcı ürünler için daha farklı.
+
+234
+01:34:05,130 --> 01:34:28,130
+Yani fonksiyonel ürünler için kar aralığı daha düşük olan maddelerin talep tahminlerini gerçekleştirmek daha kolay.
+
+235
+01:34:28,130 --> 01:34:41,130
+Ama inovatif ürünler için talep miktarını tahmin etmek daha zor.
+
+236
+01:34:41,130 --> 01:34:57,130
+Bunlar daha yüksek kar aralıkları olan ürünler ve bunda da talep tahmini gerçekleştirmek daha zor.
+
+237
+01:34:57,130 --> 01:35:15,130
+Burada internet kullanımı önemli, bu resim üzerinde geçen hafta da durmuştuk.
+
+238
+01:35:15,130 --> 01:35:38,630
+Burada daha çok tedarik zinciri modelini oluştururken pull-based ve push-based yaklaşım söz konusu olabilir.
+
+239
+01:35:38,630 --> 01:35:50,630
+Bu nedir? Bir üretim gerçekleşiyor, üretime tahminlere dayalı bir üretim gerçekleştiriyoruz.
+
+240
+01:35:50,630 --> 01:36:16,630
+Bir üretimi gerçekleştirdik, ne kadar satış olabilir tahminlere göre daha önceki yıllar, zaman dilimleri, diğer bölgelerin satışlarına göre bir üretim planlaması yapılıyor.
+
+241
+01:36:16,630 --> 01:36:33,630
+Bu tahminlere dayalı gerçekleştirilen üretim burada tahminlere dayalı olarak bir envanter miktarı oluşturuluyor.
+
+242
+01:36:33,630 --> 01:36:45,630
+Ve yine stok da, toptancının stoğu da bu tahminlere dayalı bir stok oluyor ve müşteriye sunuluyor.
+
+243
+01:36:45,630 --> 01:37:09,630
+Müşteri rafta hazır buluyor aradığı ürünü ama soldan sağa doğru müşterinin ne kadar satın alacağı tamamen üretim firmasının yaptığı tahminlere göre bu tahminlere göre
+
+244
+01:37:09,630 --> 01:37:28,630
+bu tahminlere göre envanterini oluşturuyor, toptancı da yine müşteriye gidene kadar saklanacak ürünü bu tahminlere göre depoda saklıyor.
+
+245
+01:37:28,630 --> 01:37:46,630
+Ve müşteri dediğim gibi hazır buluyor. Pull-based modelde ise burada müşteri istedikçe çekilecek yapıda o yüzden pull-based deniyor.
+
+246
+01:37:46,630 --> 01:38:01,630
+Müşteri bir sipariş veriyor, siparişe göre stok bilgisi gönderiliyor ve depoda olması için yine üreticiye bekliyor.
+
+247
+01:38:01,630 --> 01:38:22,630
+Üretici de bu siparişe göre ham madde alıyor. Tabi ki burada siparişe göre üretim bu nereden, tabi ki hangisi yani şöyle bir şey söz konusu değil.
+
+248
+01:38:22,630 --> 01:38:44,539
+Eskiden böyleydi, şimdi böyle değil. İş alanına göre, ürüne göre, ortamın durumuna göre karar verilecek bir yapıda ilerlenebiliyor tedarik zinciri modelinde.
+
+249
+01:38:44,539 --> 01:39:01,539
+Şimdi başka tedarik zinciri modelleri de var işletmelerde. Yani bu ikisinin dışında da tedarik zinciri modelleri uygulanabiliyor.
+
+250
+01:39:01,539 --> 01:39:28,539
+Şubeler arasında aktarma gibi. Tedarik zinciri yönetiminin faydalarına baktığımızda müşteri ve servis, müşteriye hizmet ve cevap vermede bir gelişme var.
+
+251
+01:39:28,539 --> 01:39:58,579
+Para nakit kullanımı da iyileşme var. Maliyette bir azalma var. Bunlar faydaları. Tedarik zinciri yönetiminde mutlaka ki iş süreçlerinde gerçekleşen
+
+252
+01:39:58,579 --> 01:40:07,579
+farklılıklara göre burada da daha iyileşmeler söz konusu olabiliyor.
+
+253
+01:40:07,579 --> 01:40:35,279
+Müşteri ilişkileri yönetim sisteminde de biraz daha ayrıntıya girersek, tedarik zincirinde biraz daha ayrıntıya girerek bahsettik, müşteri ilişkileri yönetiminde de daha fazla ayrıntıya girebiliriz.
+
+254
+01:40:35,279 --> 01:41:00,279
+Ama bunu sınav sonrasına bırakıyorum. Hem iş ortakları hem de müşteriler arasındaki ilişki yönetimini yani CRM PRM olarak da görebiliyoruz.
+
+255
+01:41:00,279 --> 01:41:19,279
+İş ortakları sadece doğrudan gerçek müşteri değil, kurumlar arasında da, iş ortakları arasında da ilişkiler yine buna benzer, CRM'e benzer bir uygulama şeklinde yürüyor.
+
+256
+01:41:19,279 --> 01:41:45,279
+Evet, burada analytical CRM'den bahsedeceğimizi söylemiştim geçen haftada. İşte churn, geri kaçış, işlemsel CRM, analytical CRM gibi farklı CRM yapıları, farklı bakış açılarıyla CRM'nin ele alınışı üzerinde duracağız.
+
+257
+01:41:45,279 --> 01:41:59,279
+Özellikle şu data warehouse olap yapısı, veri madenciliği kavramlarıyla analytical CRM'in geçişi üzerinde duracağız.
+
+258
+01:41:59,279 --> 01:42:23,279
+Şimdi sınavınız önümüzdeki hafta olduğu için ben daha önceki slide'ları kullanmak istiyorum. Bunları tekrar içinde görelim.
+
+259
+01:42:23,279 --> 01:42:42,729
+10 dakika bir ara verelim. Ondan sonra kısa bir tekrar yapacağım. Önümüzdeki haftaya daha netleşmesi için.
+
+260
+01:42:42,729 --> 01:54:10,079
+Evet, derse başlıyoruz tekrar. Şimdi bu dersin ana konuları neydi? Önce bunun üzerinde duralım.
+
+261
+01:54:10,079 --> 01:54:21,079
+Yönetim bilgi sistemleri dersinde sistem kavramı, sistemin izi dersindeki hatırlatmalarla başladık.
+
+262
+01:54:21,079 --> 01:54:36,079
+Bilgi sistemi, bilgi sistemi tipleri, işletme ortamında bilgi sistemlerinin etkisi, işletme yönetim kademeleri, işletme organizasyonu, temel işletmecilik fonksiyonları.
+
+263
+01:54:36,079 --> 01:54:51,079
+İlk derslerde bunlar üzerinde durduk. İki slide'mız var bunlarla ilgili. Kurumsal uygulamalar ve bütünleşik iş süreçlerinden bahsettik.
+
+264
+01:54:51,079 --> 01:55:17,659
+Ve bu geçen hafta ve bu hafta üzerinde durduğumuz tedarik zinciri yönetimi, müşteri ilişkileri yönetimi, muhasebe finans yönetimi, insan kaynakları ve satış pazarlama uygulamalarını ayrıntılı olarak gördük.
+
+265
+01:55:17,659 --> 01:55:29,130
+Kurumsal bilgi yönetimi, knowledge management systems bugün gördük bu kavramları.
+
+266
+01:55:29,130 --> 01:55:44,130
+Ve daha sonra göreceğimiz kurumsal yapay zeka uygulamaları, kurumlarda karar verme süreçleri, decision support sistem örnekleri, data mining yapısı, data warehouse yapısı.
+
+267
+01:55:44,130 --> 01:56:04,130
+Ve bir de işletmecilik bilgi sistemlerinin planlanması, kurumsal strateji ve bilgi sistemlerinde proje yönetimini nasıl gerçekleştireceğiz konuları üzerinde duracağız.
+
+268
+01:56:04,130 --> 01:56:14,130
+Bu yönetim bilgi sistemleri dersinde demiştik. Bunlardan bir kısmı üzerinde durduk, bir kısmı üzerinde daha sonra duracağız.
+
+269
+01:56:14,130 --> 01:56:32,130
+Şimdi ilk derste gerçekleştirdiğimiz konular sistem analizi dersinin bir başlangıcındaki konuları hatırlatma şeklindeydi.
+
+270
+01:56:32,130 --> 01:57:26,350
+Burada sistem nedir, sistem tanımını, sistem analizi dersindeki tanımı hatırlatarak verdim.
+
+271
+01:57:26,350 --> 01:57:54,350
+Birbiriyle ilişkili elemanlar ki bu elemanlar girdi, çıktı ve ortam ve sisteme oluşturan bileşenler bir hedef doğrultusunda bir amacı gerçekleştirmek üzere bir araya geldiğinde sistem yapısını oluşturulmuş oluyor.
+
+272
+01:57:54,350 --> 01:58:14,350
+Biyolojik sistem, bilgisayar sistem, sosyal sistem gibi bilgi sisteminde bu bilgi ihtiyacı için toplama, işlem, saklama iç ilişkili elemanların toplamasıydı.
+
+273
+01:58:14,350 --> 01:58:24,350
+Burada da hedef bu işi daha hızlı, daha doğru gerçekleştirmek hangi sistemin içinde çalışıyorsa.
+
+274
+01:58:24,350 --> 01:58:44,350
+Sistemin karakteristikleri üzerinde durduk yani sistemler, alt sistem, birbiriyle ilişkili alt sistemlerden oluşur, fonksiyonel bileşimi vardır, sistem sınırları vardır, otomasyon sınırları vardır.
+
+275
+01:58:44,350 --> 01:58:56,350
+Sistemin yapısını hatırlattık yine sistem analizi dersindeki şekil üzerinden.
+
+276
+01:58:56,350 --> 01:59:16,350
+Genel tanımı sistemin girdik ve çıktı ortama gerçekleşiyor. Alt sistemler, alt sistemler arasında ilişkiler var ve bileşenlerden oluşuyor alt sistemlerde.
+
+277
+01:59:16,350 --> 01:59:26,350
+Bileşenler arasında ilişki var, iyi tanımlanmış ilişkiler var ve bunların hepsini de bir hedefi gerçekleştirmek üzere yapıyor.
+
+278
+01:59:26,350 --> 01:59:41,350
+Otomasyon sınırı ve sistem sınırı, mesela sistemin ortamı, sistemin sınırları ve sistemin daha iyi çalışmasını sağlayan otomasyon sistemi.
+
+279
+01:59:41,350 --> 02:00:01,859
+İşte biz bunu üniversite örneğinde görebiliriz. Üniversitenin etrafındaki ortam, üniversite sistemi ve üniversitedeki uygulamaların daha iyi çalışmasını sağlayan öğrenci bilgi sistemi, personel bilgi sistemi gibi uygulamalar.
+
+280
+02:00:01,859 --> 02:00:09,859
+Bunların hepsi bütün leşik olursa bütün sistemin daha iyi çalışmasını sağlayacak yapı oluşabilir.
+
+281
+02:00:10,859 --> 02:00:24,859
+Sistem düşüncesinde, sistemsel düşünmede bir sistemi tanımlamak için alt sistemleri kapsamak gerekir.
+
+282
+02:00:24,859 --> 02:00:34,859
+Hangi karakteristikler ve fonksiyonlar var bunları tanımlamak gerekir. Sistem sınırlarını tanımlamak gerekir.
+
+283
+02:00:34,859 --> 02:00:42,859
+Sistem hangi girdileri alıyor, hangi çıktıları veriyor ve alt sistemleri arasında nasıl bir ilişki var.
+
+284
+02:00:42,859 --> 02:00:47,859
+Şimdi gelelim biz bir işletmeden örneğe.
+
+285
+02:00:47,859 --> 02:01:09,859
+Bir üretim sistemi, üretim sistemi, envanter sistemi ile ve müşteri destek sistemi ile ilişkili müşteri destek sistemi diye baktığımızda müşteri bakım sistemi,
+
+286
+02:01:09,859 --> 02:01:23,859
+sipariş giriş sistemi, sipariş doldurma sistemi, sipariş ekleme sistemi ve ürün katalogları sistemi bunların hepsi müşteri destek sistemi ile ilişkili.
+
+287
+02:01:23,859 --> 02:01:30,859
+Bunlar da envanter yönetim sistemi ve üretim sistemi ile ilişkili.
+
+288
+02:01:30,859 --> 02:01:44,170
+Bilgi sistemi tipleri bunlar sizin bildiğiniz şeyler. Yine bizim bilgi sistemi tiplerimizde,
+
+289
+02:01:44,170 --> 02:02:04,170
+transaction processing sistem, yönetim bilgi sistemi, executive information system ya da executive support sistem olarak da Lado'nun kitabında veriliyor.
+
+290
+02:02:04,170 --> 02:02:15,170
+Karar destek sistemleri, bu üst yönetim bilgi sistemi ile karar destek sistemi arasında bir ilişkilendirme var.
+
+291
+02:02:15,170 --> 02:02:23,170
+Yani karar destek sisteminden çıkan bilgi, executive information sisteme aktarılabiliyor.
+
+292
+02:02:23,170 --> 02:02:30,170
+Decision support sistem dediğimizde insan kararlarını desteklemek için olan yapı var.
+
+293
+02:02:30,170 --> 02:02:46,170
+Tabii ki bunun sağlamak üzere sistem analisti görev yapıyor. Hangi bilgi sistemi uygun, incelenen yapıda nasıl bir bilgi sistemi kurulması gerekiyor.
+
+294
+02:02:46,170 --> 02:02:57,170
+Bunun için sistem analistinin teknik bilgi sahibi olması gerekiyor. İşletmecilik bilgisine sahip olması gerekiyor.
+
+295
+02:02:57,170 --> 02:03:06,170
+Neden? Çünkü bir kuruma bilgi sistemi kurulacak ama burada hangi işler yapılıyor? Kurum yapısı nedir?
+
+296
+02:03:06,170 --> 02:03:20,170
+Organizasyonlar nasıl yönetilir? Kurumlar nasıl yönetilir? Bir kurumda hangi iş tipleri vardır? Bu aktivitelere yapan aktörler kimlerdir?
+
+297
+02:03:20,170 --> 02:03:29,170
+Bunları anlayabilmek için işletmecilik bilgisinin olması gerekiyor.
+
+298
+02:03:29,170 --> 02:03:42,170
+Birerli bir organizasyon ne yapar? Başarılı olması ne demektir? Yani ne yapması için başarılı olması gerekiyor?
+
+299
+02:03:42,170 --> 02:03:57,170
+Strateji ve planlar nelerdir? Kurum kültürü nedir? Bunları sistem analistinin bu ihtiyaçları, bu kavramları bilmesi gerekiyor.
+
+300
+02:03:57,170 --> 02:04:16,170
+Ayrıca sistem analistinin yine bu kurumlara hizmet verirken kurumsal sistemleri gerçekleştirirken insan ilişkileri bilgi ve yeteneklerine sahip olmalı.
+
+301
+02:04:16,170 --> 02:04:28,420
+Tek başına gerçekleştirmeyecek. Açık ve etkin iletişim kurması gerekiyor olacak.
+
+302
+02:04:28,420 --> 02:04:50,079
+İnsanların kullanacağı sistemleri geliştireceği için nasıl düşüneceklerini, nasıl öğrenebileceklerini, değişime nasıl reaksiyon göstereceklerini, nasıl iletişim kuracaklarını,
+
+303
+02:04:50,079 --> 02:05:00,079
+insanların hangi işlerde çalıştığını, aktiviteler nedir, aktörler nedir anlayabilmesi gerekiyor.
+
+304
+02:05:00,079 --> 02:05:20,079
+O yüzden interview yapma, dinleme, gözleme yeteneklerine sahip olması gerekiyor. Ayrıca yazılı sözlü sunum gerçekleştirmesi gerekiyor.
+
+305
+02:05:20,079 --> 02:05:32,079
+Bir ekip içinde çalışmayı öğrenmesi gerekiyor. Bilgi sistemleri artık yalnız tek başına bir bilgisayarcının geliştireceği bir yapı da değil.
+
+306
+02:05:32,079 --> 02:05:59,819
+Evet, bu ilk derslerde gördüğümüz kısımlarda ilk iki haftada bunları daha önceki bilgilerimizi hatırlatarak biraz daha ayıntılandırarak kullandık.
+
+307
+02:05:59,819 --> 02:06:44,270
+Evet, bu aslında ilk iki haftada işlediklerimiz. Burada daha genelleştirmek üzere Ladun Ladun'un kitabındaki bazı slide'ları kullanıyorum.
+
+308
+02:06:44,270 --> 02:06:54,270
+Geriye dönerek hatırlattığım şeyler oldu ve bu özet slide'ları oluşturdum derslerde işlediklerimizden.
+
+309
+02:06:54,270 --> 02:07:11,270
+Bu özet slide'ları sisteme bıyık kısmını yerleştireceğim. Şimdi diğer slide'ı paylaştım sizinle.
+
+310
+02:07:11,270 --> 02:07:29,270
+Şimdi işletmelerde bilgi sistem tipleri üzerinde çok durduk. Çünkü bu noktada bu dersin hedefi olarak derse daha devamlı olan arkadaşların bildiği gibi bunu hep tekrarladım çünkü derslerde.
+
+311
+02:07:29,270 --> 02:07:56,270
+İşletmelerde gerçekleşen işlemleri hatırlatacağımız bir ders olarak görüyorum bunu. Bu kurumlara yazılım genellikle geliştireceğiniz için bu kurumların yapısının iç birimlerini gerçekleşen işlemleri anlamanız hedefi ile bu dersi açıyoruz.
+
+312
+02:07:56,270 --> 02:08:09,270
+İşte bu şekil üzerinde ve bu şekildeki örnekler ve buna benzer örnekleri geliştirmeniz üzerinde çok duruyorum.
+
+313
+02:08:09,270 --> 02:08:29,270
+İşletmelerde bilgi sistem tipleri dediğimizde bu fonksiyonel alanlar satış pazarlama, üretim, finans, muhasebe ve insan kaynakları çerçevesinde alt yönetimde gerçekleşecek işlemler, orta yönetimde gerçekleşecek işlemler.
+
+314
+02:08:29,270 --> 02:08:41,270
+Ve üst yönetimde gerçekleşecek işlemler dediğimizde az önceki bilgi sistemi tipleri bize ışık veriyor aslında.
+
+315
+02:08:41,270 --> 02:09:06,270
+Sonunda transaction processing sistemler günlük uygulamaları gerçekleştireceğimiz daha doğru daha hızlı rutin işlemleri bu şekilde gerçekleştireceğimiz bir yapı sunuyor bize ve günlük işlemleri o günlük veriyi kullanarak çalıştırıyoruz.
+
+316
+02:09:06,270 --> 02:09:32,270
+Karar destek sistemlerinde ileriye doğru karar alma, orta yöneticilere karar mekanizmalarında yardımcı olmak hedefleniyor ve buradaki veri perspektifi çok geniş bir Excel tablosundan tutun, big data, büyük veri uygulamalarına kadar karar destek sistemleri çalıştırılabilir.
+
+317
+02:09:32,270 --> 02:09:58,270
+Bunlara da örnekler verdik, işte satış pazarlama bölümünde bir karar destek sistemi uygulaması, işte satış bölge analizlerinin gerçekleştirilmesi bir karar destek uygulamasıdır, yönetim bilgi sistemleri uygulaması, satış yönetiminin sağlanmasıdır gibi örnekler verdik.
+
+318
+02:09:58,270 --> 02:10:17,270
+Üst seviyede kararlarda baktığımızda satış trend tahminleri, işte 5 yıllık nasıl olabilire baktığımızda bu da executive information sistem yapısında olacaktır bu da.
+
+319
+02:10:17,270 --> 02:10:40,270
+Evet bu şekil üzerinde daha ek örnekler vererek durduk. İşlemsel bilgi sistemleri burada bir önceki dersimizde sistem analizinden hatırlattığımız konuları burada tek tek uyguladık.
+
+320
+02:10:40,270 --> 02:10:56,270
+İlk işlemsel bilgi sistemi yani transaction processing sistem burada girdiler nedir, işlemler nedir, çıktılar nedir, hangi kullanıcılar bunu kullanır ve bir örnek şeklinde gittik.
+
+321
+02:10:56,270 --> 02:11:15,270
+Mesela bir bordro sistemi, bir transaction processing sistemdir, tek amaç için çalışır ve işte veri bununla ilgili veriyi okur, bir rapor hazırlar, bu rapor çıktısı üzerinde durduk.
+
+322
+02:11:15,270 --> 02:11:42,270
+Nasıl bir sistemdir bu çalışan? Burada da işletme birimlerinde farklı transaction processing sistemler üzerinde durduk. Hangi temel işletme uygulamasına, hangi temel transaction processing sistem cevap verir, bunları tek tek inceledik.
+
+323
+02:11:42,270 --> 02:12:02,270
+Yönetim bilgi sistemleri üzerinde tanımlama yaptık. Yönetim seviyesine hizmet eder, raporlar sağlar, şirket verisine erişerek girdiler nelerdir, işlemler nelerdir, çıktılar nelerdir ve bir örnek üzerinde durduk.
+
+324
+02:12:02,270 --> 02:12:22,270
+Farklı transaction processing sistemlerden gelen veriyi işleyen ve düzgün raporlar alan bir uygulama. Bununla ilgili de örnekler verdik yine.
+
+325
+02:12:22,270 --> 02:12:51,270
+Mesela bir MIS raporu üzerinde durduk. Bu MIS raporu üzerinde yani birden fazla birimle ilişkili veriyi kullanan ve raporlayan yöneticileri de var.
+
+326
+02:12:51,270 --> 02:13:02,270
+Yöneticileri de bir bakış açısı veren işlemler gerçekleştiriliyor MIS ile. Karar destek sisteminin özellikleri üzerinde durduk.
+
+327
+02:13:02,270 --> 02:13:25,970
+Veri analizi yapmak ve kararları oluşturmak hedefi ile çalışan sistemler. Bir karar destek sistemi uygulamasında farklı veriler alıyor, bunları analitik modellerle uyguluyor ve sorgulara cevap veriyor şeklinde.
+
+328
+02:13:25,970 --> 02:13:48,970
+Üst yönetim bilgi sistemleri yine ortamda, stratejik seviyedeki ortamda işlemler gerçekleştiriyor. Girdiği işlem çıktı, kullanıcılar, tabii ki üst yöneticiler grafik işlemleri gerçekleştiriyor.
+
+329
+02:13:48,970 --> 02:14:06,970
+İşte burada da görüyoruz, mutlaka bağlanan kişilerin grafik özellikle işlemler yaptığını ve bir de sadece iç veriği değil yani kurum içi veriği değil dış veriği ile de ilişkisi olduğunu.
+
+330
+02:14:06,970 --> 02:14:22,970
+Şimdi temel işletmecilik fonksiyonlarını böyle hep tekrarlı tekrarlı yazdık işletmedeki işleri anlayabilmeniz için ve tek tek bunlarda hangi işler gerçekleşiyor dikey boyutlarda baktık.
+
+331
+02:14:22,970 --> 02:14:39,970
+Satış pazarlamada neler gerçekleşiyor ve satış pazarlamada alt seviyeye, orta seviye yönetim ve stratejik seviyeye örnekler verdik.
+
+332
+02:14:39,970 --> 02:14:51,970
+İşte sipariş işleme, fiyat analizi yapma, satış trend tahminleri yapma, alt yönetimden üst yönetime doğru giden uygulamalar silsilesini gördük.
+
+333
+02:14:51,970 --> 02:15:10,970
+Üretim sistemleri nelerdir? Üretim sistemleri işte üretim planlaması filan yapan şurada üretim işlemlerinin geliştirilmesini, planlamasını geliştirilmesini ve bakımını yapar.
+
+334
+02:15:10,970 --> 02:15:29,970
+Malzemelerin elde edilmesi, depolanması ve erişimini gerçekleştirir. Bunun için malzeme listesi, ham madde listesi ve işlemler, yetenekler tanımı yapar.
+
+335
+02:15:29,970 --> 02:15:56,970
+Bu da yine hangi seviyelerde, hangi işlemler gerçekleşir. Bir envanter kontrol sistemi örneği, aynı şekilde finans muhasebet sistemlerinin ne iş yaptığını ve hangi seviyelerde, hangi uygulamalar hazırlandığını gördük.
+
+336
+02:15:56,970 --> 02:16:13,970
+İnsan kaynaklarında gerçekleştirilen işlemleri gördük ve bunlarla ilişkili de bir örnek verdik, insan kaynakları sisteminde çalışma biçimi nasıldır diye.
+
+337
+02:16:13,970 --> 02:16:36,969
+Burada her zaman bunlar tek başına kullanılmıyor. Yani dikey birimler de tek başına gerçekleştirilmiyor. Zaten bunu biliyorsunuz. Birçok dikey birim birleşerek bir işlemi gerçekleştiriyor.
+
+338
+02:16:36,969 --> 02:16:59,969
+Bir işte ona da bir örnek verdik. Bir şuradaki tanımladığımız örnek, sipariş doldurma işlemi, bir sipariş hesaplarken satış, muhasebe ve üretim birimlerinden bilgi geçişi sağlanacak dedik.
+
+339
+02:16:59,969 --> 02:17:56,090
+Bir de enterprise sistemler üzerinde durduk. Enterprise sistemlerde zaten yine bu haftada özet geçerek gittiğimiz sistemler.
+
+340
+02:17:56,090 --> 02:18:11,090
+Bunların üzerinde bugün durmuştuk kurumsal uygulamalar. Ama bunun tekrarını yaptığımızda yaklaşık 10 kişi daha az vardı dinleyenler arasında.
+
+341
+02:18:11,090 --> 02:18:30,090
+Evet. O yüzden burada ne üzerinde durduk? Kurumsal uygulama mimarisi nedir? İşte dikey boyutları daha farklı şekilde burada uygulama yapıyoruz.
+
+342
+02:18:30,090 --> 02:18:58,659
+Kurumsal uygulama mimarisi, kurumsal uygulamalarda gerçekleştirilen alt işlemler, enterprise sistemler, supply chain management, customer relationship management sistemler, knowledge management sistemler, kurumsal uygulamaların temel taşları.
+
+343
+02:18:58,659 --> 02:19:18,659
+Bunun dışında insan kaynakları da var. Bunun üzerinde de duracağız daha sonra çünkü bu slide'da insan kaynakları yok. Klasik, eski, traditional yapıda dikey boyutların sistemleri de ayrıydı.
+
+344
+02:19:18,659 --> 02:19:38,979
+Ama ERP sistemlerinde kurumsal sistem uygulamalarında daha farklı ortada bir sistem var ve bütün dikey boyutlar bundan bilgi aktarımı yapıyor, bilgi gönderiyor, bilgi alıyor.
+
+345
+02:19:38,979 --> 02:19:51,979
+Bu sistemleri tek tek incelemeye başladık. Bugün geçen haftadan beri incelediğimiz özel olarak supply chain management'da.
+
+346
+02:19:51,979 --> 02:20:01,979
+Supply chain nedir, supply chain management nedir, supply chain management sistem nedir? Bunları gördük.
+
+347
+02:20:01,979 --> 02:20:28,979
+Tadarik zincir dediğimizde nasıl bir sırada gidiyor, tedarik işlemi? Üstteki şu oklar, şu üstteki oklar tedarikçiden üretime gelen, dağıtıcıya giden, toptancıya giden, müşteriye giden akışı gösteriyor.
+
+348
+02:20:28,979 --> 02:20:44,979
+Alttaki ise bunun tersine müşteriden sipariş olabilir, talep olabilir, geri dönüş isteği olabilir, tamir işlemi olabilir veya ödeme olabilir.
+
+349
+02:20:44,979 --> 02:21:04,979
+Müşteriden üreticiye doğru, hatta tedarikçiye doğru giden akış olacaktır. Burada şu kısım firmanın içi manifaktürür.
+
+350
+02:21:04,979 --> 02:21:26,979
+Bu dışında gerçekleşen upstream tedarikçi firmalar zinciri. Burada bir tedarikçi görüyoruz ama bu da diğer tedarikçiler. Bunlar da küçük üreticilerden aldığı hamadeler gibi bir zincir var.
+
+351
+02:21:26,979 --> 02:21:46,979
+Bir temin edici görülüyor buradaki firma tarafından ama onun da katmanları var. Hamalde sağlayıcılar. Evet, bu şekli inceledik.
+
+352
+02:21:46,979 --> 02:22:00,979
+Hocam, az önceki site'de bu bütün firmalarda geçerli olmuyor. Evet, şu değil mi? Evet hocam.
+
+353
+02:22:00,979 --> 02:22:20,649
+Bütün firmalarda zaten tedarik zinciri şöyle. Eğer üretim firmasıysa farklı, para kendi firmasıysa farklı. Firmanın tipine göre bu genel bir akışı gösteriyor.
+
+354
+02:22:20,649 --> 02:22:29,649
+Anladım hocam. Teşekkür ederim. Bir defa. Efendim? Anladım, teşekkür ederim dedim hocam. Tamam.
+
+355
+02:22:30,649 --> 02:22:50,440
+Bilgi sistemleri tedarik zinciri katılımcılarına ne sağlıyor? Bunların üzerinde durduk. Neler sağlıyor?
+
+356
+02:22:50,440 --> 02:23:10,940
+Kolobretif ticaret yani ticarette işbirliği bütün hepsine hizmet sağlayacak. İşbirliği planlama tahmin süreçleri.
+
+357
+02:23:10,940 --> 02:23:36,379
+İşletmeler, kolobretif ticaretle nasıl bir araya geliyor, neler sağlıyorlar? CRM yapısında gerçekleşen işlemler, CRM yapısında hangi kazanımlar var?
+
+358
+02:23:36,379 --> 02:24:05,379
+Bilgi yönetim sistemleri dediğimizde, bilgi yönetim sistemleri de az önce ilk bu slide'ın başında dikey birimler arasında müşteri destek sistemi ve tedarik zinciri yönetimi ve insan kaynakları sistemleri çalışıyor.
+
+359
+02:24:05,379 --> 02:24:21,379
+Yönetim katmanları arasında da çalışma, bilgi saklama işlemini bilgi yönetim sistemleri gerçekleştiriyor.
+
+360
+02:24:21,379 --> 02:24:49,379
+Bilgi yönetim sistemleri bilgiyi topluyor, saklıyor, dağıtıyor ve uyguluyor. İşte burada da işletmede, alt birimlerde gerçekleşen işlemleri yukarıya doğru karar alma da kullanmak üzere kullanılır hale getirme ve yukarıda alan kararları aşağıya doğru aktarma işli knowledge management system tarafından gerçekleştiriliyor.
+
+361
+02:24:49,379 --> 02:24:55,379
+Kurumsal yazılım dediğimizde, kurumsal yazılımdan ne anlıyoruz?
+
+362
+02:24:55,379 --> 02:25:13,379
+Ve şu da kurumsal yazılımın yapısı, kurumsal yazılımın her bir birime nasıl bir çalışma şekli gönderdiğini gösteriyor.
+
+363
+02:25:13,379 --> 02:25:28,379
+Kurumsal sistemlerin faydası, firma yapısı ve organizasyonu yönetim, teknoloji, işletmecilik açısından getirdiği faydaları gördük.
+
+364
+02:25:28,379 --> 02:25:46,379
+Tekrar supply chain süreçleri üzerine geri döndüğümüzde planla kaynak elde et, yap, dağıt ve geri dönüşleri al şeklinde supply chain süreçleri çeşitleniyor.
+
+365
+02:25:46,379 --> 02:26:06,379
+Bu planlama aşamasında kaynaklarla gereksinimlerin dengelenmesini nasıl yapacağız? Bu planlamızla işletmecilik finans planını nasıl örtüştüreceğiz?
+
+366
+02:26:06,379 --> 02:26:20,379
+Kaynak elde et, yap, dağıt ve geri dönüşleri al. Bunların üzerinde çok ayrıntılı durduk.
+
+367
+02:26:20,379 --> 02:26:36,379
+Bir de lojistik kavramdan bahsettik. Bütün bu ürünleri hizmetin ulaşımı üzerinde ve altyapısı üzerinde bütün faktörleri planlayan, kontrol eden sistem.
+
+368
+02:26:36,379 --> 02:26:57,379
+Yine bu tedarik zincirinde just-in-time yapısı, bavip etkisi üzerinde durduk. Buna eklemelerimiz oldu. Pull-based ve push-based yaklaşımlar.
+
+369
+02:26:57,379 --> 02:27:23,379
+Siparişin müşteri tarafından oluşturulması ve üretimin buna göre gerçekleştirilmesi, siparişlere göre gerçekleştirilmesi, işte bu noktada arkadaşınızın da dediği gibi farklı yöntemler daha sonraki yıllarda da geliştirildi.
+
+370
+02:27:23,379 --> 02:27:51,379
+Bunu da bir eğer katılımcı çağırabilirsek bu sistemde de sektörden bir temsilciyle bu tedarik yapıları üzerinde, müşteri hizmetleri üzerinde hangi şeyler kullanılıyor, bunların üzerinde duracağız.
+
+371
+02:27:51,379 --> 02:28:27,260
+Evet, şimdi bizim sınavdaki, evet önümüzdeki hafta yine sınav saatini kontrol edersiniz. Bazen değişiklikler yapabiliyor. Bugün de [öğrenci] Bey bir değişiklik gönderdi.
+
+372
+02:28:27,260 --> 02:28:49,260
+Sınav saatine en son güncellemelere göre bakıp bizim dersimizin vize saatinde bir ara sınav yükleyeceğim. Bu sınav için henüz hangi tipte yapacağımı karar vermedim.
+
+373
+02:28:49,260 --> 02:29:09,899
+Sınav sonrasında projelerimize biraz daha ağırlık verecek şekilde daha fazla ayrıntı vereceğim. Proje konularını seçmeyen var mı hala proje konusunu?
+
+374
+02:29:09,899 --> 02:29:30,329
+Geçen hafta soldu. Bu hafta da birkaç arkadaşınız ekledi. Bu listeyi artık kesin liste olarak kabul ediyorum. Evet, bu arada sorular var galiba.
+
+375
+02:29:30,329 --> 02:30:04,549
+Ne eklemedin Zülfü? Yani proje konunu göndermedin mi bana? Göndermedim hocam. Bir arkadaşın var mı şu anda belirlememiş olan? Başka arkadaş var mı henüz proje belirlememiş olan?
+
+376
+02:30:04,549 --> 02:30:22,059
+O zaman kendin bir şey belirleyeceksin ve konunu yarına kadar göndereceksin bana veya bu akşama kadar göndereceksin. Tek başına yapacaksın yani.
+
+377
+02:30:22,059 --> 02:30:44,139
+Çünkü birçok kişi gönderdi. Zaten grup çalışması istemiştim ama grup çalışması yapanları kaçıran birkaç tek başına yapacağım diyen arkadaşım da oldu.
+
+378
+02:30:44,139 --> 02:31:05,979
+Ha evet. Yani konu önemli olan bu grubunuzu tanımlamış olmanız konular üzerinde çalışmaya başlayabilirsiniz. Bazılarınızda değişiklik yapın dedim ama sizin konunuza tekrar bir bakayım.
+
+379
+02:31:05,979 --> 02:31:50,079
+Bakayım. Yani grupları kaydediyorum şu anda. Evet sorunuz var mı? Evet [öğrenci] de sordunuz. Bu dersin bu şimdi tekrar ettiğim slide larına koyacağım.
+
+380
+02:31:50,079 --> 02:32:13,940
+Yalnız sistemde bir değişiklik olmuş ama bugün koyarım tahmin ediyorum. Evet başka sorunuz var mı? Evet sınav saatini iyice kontrol edin dediğim gibi bugün de bir değişiklik göndermiş [öğrenci].
+
+381
+02:32:13,940 --> 02:32:37,819
+Belirtilen sınav saatinde sistemden sınavınızı oluşturmanız gerekecek. Evet o zaman başarılar diliyorum. Sınav haftasında dersi bitirebiliriz. Teşekkürler hocam. Ben teşekkür ederim.
+

@@ -1,0 +1,6896 @@
+1
+00:11:58,639 --> 00:12:01,139
+Günaydın arkadaşlar, hoş geldiniz.
+
+2
+00:12:01,139 --> 00:12:03,139
+Günaydın hocam, sesiniz geliyor.
+
+3
+00:12:03,139 --> 00:12:05,139
+Teşekkür ederim [öğrenci].
+
+4
+00:12:05,139 --> 00:12:08,139
+Nasılsınız, iyisiniz inşallah?
+
+5
+00:12:08,139 --> 00:12:12,059
+İyisiz hocam, siz?
+
+6
+00:12:12,059 --> 00:12:14,059
+Sağolun, ben de iyiyim.
+
+7
+00:12:14,059 --> 00:12:19,059
+53 kişiyiz, diğer grup mesaj gönderdi.
+
+8
+00:12:19,059 --> 00:12:21,059
+Orası kaç kişiymiş, orası 43 kişiymiş.
+
+9
+00:12:21,059 --> 00:12:24,789
+Biz biraz önde gidiyoruz, güzel.
+
+10
+00:12:24,789 --> 00:12:31,610
+Şimdi bugün biraz kendimi tanıtacağım, dersi tanıtacağım,
+
+11
+00:12:32,110 --> 00:12:36,110
+derse bir giriş yapacağız, sayısal analiz dersimize.
+
+12
+00:12:36,110 --> 00:12:41,110
+Kısa bir ders olacak, diğer derslerimizde de olduğu gibi.
+
+13
+00:12:41,110 --> 00:12:51,899
+Şöyle baktığım zaman isimlere ben yaklaşık olarak bu bölümde 8. yılım olacak,
+
+14
+00:12:51,899 --> 00:12:54,899
+işte bu ay içerisinde 8. yılı doldurmuş olacağım.
+
+15
+00:12:54,899 --> 00:13:01,899
+Tanıdık isimler çok az, muhtemelen çoğunuz 1. sınıf, hazırlıktan gelenler.
+
+16
+00:13:02,399 --> 00:13:04,399
+Benim ismim Ahmet Erbir.
+
+17
+00:13:04,399 --> 00:13:08,399
+Bilgisayar manadisliği, bilgisayar bilimleri, ana bilim dalında
+
+18
+00:13:08,399 --> 00:13:11,399
+öğretim görevlisi, doktor olarak çalışıyorum.
+
+19
+00:13:11,399 --> 00:13:16,399
+Geçen sene bu zamanlara kadar işte Şubat, Ocak gibi
+
+20
+00:13:16,399 --> 00:13:19,399
+o zamana kadar araştırma görevlisiydim.
+
+21
+00:13:19,399 --> 00:13:24,399
+Şubat ayında öğretim görevlisi kadrosuna geçtim.
+
+22
+00:13:24,399 --> 00:13:27,399
+Yeni bir pozisyon açılmıştı.
+
+23
+00:13:27,899 --> 00:13:30,899
+Temmuz ayında da doktorumu tamamlayıp,
+
+24
+00:13:30,899 --> 00:13:33,899
+öğretim görevlisi doktor olarak çalışmalarıma devam ediyorum.
+
+25
+00:13:33,899 --> 00:13:40,179
+Daha çok bilgisayar bilimleri ve yazdığım, ana bilim dalının
+
+26
+00:13:40,179 --> 00:13:44,179
+verdiği derslerle, meşgulüm bölümdeki dersler açısından.
+
+27
+00:13:44,179 --> 00:13:50,179
+İşte bu dönem bir kısmınızın bildiği yapısal programlamaya giriş.
+
+28
+00:13:50,179 --> 00:13:55,179
+Oradan tanıdık arkadaşlar var. Zafer'i mesela oradan tanıdım direkt.
+
+29
+00:13:55,679 --> 00:14:01,679
+Sayısal analiz, ikinci sınıfların nesneye yönelik programlama
+
+30
+00:14:01,679 --> 00:14:04,679
+ve üçüncü sınıfların algoritma analizi derslerine giriyorum.
+
+31
+00:14:04,679 --> 00:14:09,679
+Geçen dönemde sadece ikinci sınıfların üç tane dersi vardı.
+
+32
+00:14:09,679 --> 00:14:14,679
+İkinci sınıflar onun için beni daha çok tanıyorlar bu dönem.
+
+33
+00:14:14,679 --> 00:14:19,679
+Yapısal programlama, sinyal sistem ve ayrık matematik derslerine girdik.
+
+34
+00:14:19,679 --> 00:14:24,080
+Bu şekilde devam ediyoruz.
+
+35
+00:14:24,580 --> 00:14:29,580
+Sayısal analiz dersine daha önce hiç vermedim.
+
+36
+00:14:29,580 --> 00:14:35,580
+Sadece kendi akademik çalışmalarımda buradaki konuları kullandık.
+
+37
+00:14:35,580 --> 00:14:42,580
+Yani ilk defa bu dersi vermiş olmanın bir tecrübesizliği var bunu söyleyeyim.
+
+38
+00:14:42,580 --> 00:14:46,580
+Ama hani bunun sizinle bir alakası var mı?
+
+39
+00:14:46,580 --> 00:14:49,580
+Yok. Çünkü ben dersime çalışıp geleceğim.
+
+40
+00:14:50,080 --> 00:14:55,080
+Dersin birazdan söyleyeceğim konulara belli.
+
+41
+00:14:55,080 --> 00:14:58,080
+O konuların altındaki alt başlıklar belli.
+
+42
+00:14:58,080 --> 00:15:03,080
+Ve koordinatörümüz Banı Hoca ile içerikler var.
+
+43
+00:15:03,080 --> 00:15:06,080
+Bu konuda oluşturduğumuz içeriklerin ders notları da var.
+
+44
+00:15:06,080 --> 00:15:09,080
+Onlar üzerinden dersimizi yürüteceğiz.
+
+45
+00:15:09,080 --> 00:15:16,080
+Şimdi ben her derste söylediğim bazı ufak tefek hatırlatmalarla başlayacağım.
+
+46
+00:15:16,580 --> 00:15:20,580
+Sonra dersimizin ilk slide'i var. Onu açacağız.
+
+47
+00:15:20,580 --> 00:15:25,539
+Onun üzerinden birkaç kelam edelim.
+
+48
+00:15:25,539 --> 00:15:34,539
+Şimdi arkadaşlar, zannediyorum çoğunuz üniversiteyi hiç görmeden uzaktan eğitim hayatıyla karşılaştı.
+
+49
+00:15:34,539 --> 00:15:43,539
+Ve üniversitenin şu ana kadar internet boyutuyla tecrübelisiniz.
+
+50
+00:15:43,539 --> 00:15:46,539
+Öyle söyleyelim.
+
+51
+00:15:47,039 --> 00:15:52,039
+Bölümü belki çoğunuz görmediniz. Bu da ayrı bir mevzu.
+
+52
+00:15:52,039 --> 00:15:59,039
+İnşallah gelecek sene GÜZ döneminde normal bir sisteme geçilir diye tahmin ediyorum.
+
+53
+00:15:59,039 --> 00:16:05,039
+Tabi bu uzaktan eğitimin bize bakan tarafıyla avantajları var, dezavantajları var.
+
+54
+00:16:05,039 --> 00:16:09,039
+Bazı dersler uzaktan eğitime çok yatkın doğrudan uygulanabiliyor.
+
+55
+00:16:09,039 --> 00:16:11,039
+Bazı dersler uygun değil.
+
+56
+00:16:11,539 --> 00:16:19,539
+Ama hani şartlar böyle gerektirdiği için, bu şartlara karşı herhangi bir karşı gelemiyoruz.
+
+57
+00:16:19,539 --> 00:16:25,539
+Bunun ardına sınıf mazeret üretmek çok bir çözüm olmuyor.
+
+58
+00:16:25,539 --> 00:16:33,879
+Özellikle siz kendi mesleki gelişiminiz, kariyeriniz açısından en iyi şekilde kendinizi yetiştirmek zorundasınız.
+
+59
+00:16:33,879 --> 00:16:39,879
+Bu konuda aldığınız derslere ek olarak farklı çalışmalar yapabilirsiniz.
+
+60
+00:16:40,379 --> 00:16:44,379
+Zaman açısından çok fazla bir imkan kalıyor bazı durumlarda.
+
+61
+00:16:44,379 --> 00:16:52,379
+Geçen senelerde derslere git gel gibi problemler oluyordu.
+
+62
+00:16:52,379 --> 00:16:54,379
+İstanbul'da yaşamanın verdiği problemler.
+
+63
+00:16:54,379 --> 00:16:57,379
+Ama bunun yerine bu sene başka problemler var.
+
+64
+00:16:57,379 --> 00:17:01,379
+Bunların optimizasyonu size kalıyor.
+
+65
+00:17:01,379 --> 00:17:09,380
+Bu aldığınız derslerden kendinizi mesleki adına, kariyer adına en iyi şekilde geliştirmenin yoluna bakın derim.
+
+66
+00:17:09,880 --> 00:17:22,880
+Şimdi benimle alakalı, ben daha çok akademik olarak sinyal işleme, makine öğrenmesi ve madencilik gibi konular çalışıyorum.
+
+67
+00:17:22,880 --> 00:17:28,880
+Verdiğim dersler ile alakalı çalıştığım özel konular var.
+
+68
+00:17:28,880 --> 00:17:33,880
+Algoritma geliştirme, ondan sonra ayrık matematik ile alakalı konular.
+
+69
+00:17:34,380 --> 00:17:47,430
+Bu konuların eğitimsel açıdan bazı öğretim teknolojileri ile birleştirilmesi, web-based labrato gibi çalışmalarım var.
+
+70
+00:17:47,430 --> 00:17:56,430
+Burada hep gördüğüm şey algoritmanın, kendi proje yaptırdığım öğrencilerle de gördüğüm şey algoritmanın ne kadar önemli olduğu.
+
+71
+00:17:56,430 --> 00:18:02,430
+Ve bu algoritmanın ezberlenerek öğrenilmeyecek olduğu bir durumdur.
+
+72
+00:18:02,930 --> 00:18:13,930
+Bu dersimizde size birazcık matematik bilgisi ile algoritma bilgisi arasında bir köprü kuracak bir ders olarak düşünebilirsiniz.
+
+73
+00:18:13,930 --> 00:18:24,930
+Birçok yöntem var, o yöntemler ezberlenecek yöntemler değil ki günümüz programlama dünyasının geldiği yerde bu yöntemlerin hazır fonksiyonları veya paket programları var.
+
+74
+00:18:24,930 --> 00:18:31,930
+Siz doğrudan input olarak veriyorsunuz, o size sonuçları veriyor.
+
+75
+00:18:32,430 --> 00:18:42,430
+Ama bu dersten almanız gereken şey dersin ruhunu öğrenmektir, algoritma bilginize bazı şeyler katmaktır, ki ona yönelik bir projemiz de olacak.
+
+76
+00:18:42,430 --> 00:18:53,430
+Benim iletişim bilgilerim Avesis sayfamda vardır, oradan bakabilirsiniz. Avesis A. Elbir yazarsanız orada çıkar, dahili telefon numaram var.
+
+77
+00:18:53,930 --> 00:19:03,930
+Orada mail adresim yok, niye yok? Bazı web botları oradan mail adreslerini alıp sürekli mail yağmuruna tutuyor.
+
+78
+00:19:03,930 --> 00:19:14,930
+Alakasız sitelerden mail geliyor. Onun için ben Yıldız Edo TR uzantılı mailimi chat ekranına yazdım, oradan bir probleminiz varsa ulaşabilirsiniz.
+
+79
+00:19:15,430 --> 00:19:20,430
+Mail yazmada usul şudur, kim olursa olsun, yani astınız da olsa, üstünüz de olsa.
+
+80
+00:19:20,430 --> 00:19:28,430
+Öncelikle bir selam cümlesiyle, merhaba gibi bir cümleyle başlayıp kendinizi kısa bir şekilde takdim edersiniz.
+
+81
+00:19:28,430 --> 00:19:38,430
+Ben Alanca dersten şu, dersin adını da bana bir şey yazarken söylemeniz iyi olur çünkü verdiğim diğer derslerle karışabiliyor.
+
+82
+00:19:38,930 --> 00:19:45,930
+Adınızı söylediniz, daha sonra talebinizi ifade edersiniz ve görüşmek üzere deyip bu iş biter.
+
+83
+00:19:45,930 --> 00:19:56,930
+Çok fazla bu konuda problem yaşamıyoruz ama arada sırada oluyor bu yetişim eksikliğinden kaynaklı problemlerin çözülememesi.
+
+84
+00:19:57,430 --> 00:20:02,430
+Mail geliyor, mailde isim yok, sadece bir soru.
+
+85
+00:20:02,430 --> 00:20:15,430
+O soru da yani ya ödevin son teslimiyle alakalı, işte son güne kalmış bir şey veya sınavla bir gün önce kalmış veya sınavdan 5 dakika sonra hocam şu soru şöyle miydi gibi.
+
+86
+00:20:15,430 --> 00:20:20,430
+Yani iletişim eksikliğinin çok fazla görüldüğü örnekler bunlar.
+
+87
+00:20:20,930 --> 00:20:22,930
+Böyle şeyler yapmayın arkadaşlar.
+
+88
+00:20:22,930 --> 00:20:27,930
+Yani ben cevap yazarım ama hani sorunuza cevap olmaz.
+
+89
+00:20:27,930 --> 00:20:30,930
+Yani ne demek istediğinizi anlamadım yazarım.
+
+90
+00:20:30,930 --> 00:20:38,930
+Ondan sonra ne yazabilirim, keşke daha fazla açıklama verseydiniz de bende daha çok yardımcı olabilseydim gibi açıklamalar yazarım.
+
+91
+00:20:38,930 --> 00:20:44,930
+Meslek hayatınız boyunca iletişim sizin için en önemli, hepimiz için çok önemli bir kavram.
+
+92
+00:20:44,930 --> 00:20:49,930
+Burada talebimizi, kendimizi takdim konusunu çok iyi yapmamız gerekiyor.
+
+93
+00:20:50,430 --> 00:20:55,430
+Bir diğer şey de mesela mail adreslerindeki nickname problemi.
+
+94
+00:20:55,430 --> 00:21:16,430
+Yani kullanmakta problem yok, şahsi olarak istediğiniz mail adresinizi kullanabilirsiniz ama özellikle resmi bir kurumla veya çalıştığınız bir kurumla bir iletişim halinde olacaksanız kendi adınızın soyadınızın bulunduğu veya sadece adınızın bulunduğu bir mail adresi olması iyi olur.
+
+95
+00:21:16,930 --> 00:21:23,930
+Yani burada gmail olur, hatmail olur, sık kullanılan mail uzantılarından bir mail adresiniz olsun.
+
+96
+00:21:23,930 --> 00:21:25,930
+Bunları niye söylüyorum?
+
+97
+00:21:25,930 --> 00:21:32,930
+Bilgisayar mühendisliği bölümünde okuyoruz ama şu ana kadar Word, Excel dahi kullanmamış arkadaşlar var aramızda.
+
+98
+00:21:32,930 --> 00:21:36,930
+Zaman zaman oradan bu programları size anlatacağım.
+
+99
+00:21:36,930 --> 00:21:40,930
+Belki geçen dönem anlatılmadı diğer derslerde.
+
+100
+00:21:41,430 --> 00:21:50,430
+Yani bilgisayarla en fazla oyun oynamış, üniversite sınavının solucuna girip bakmış arkadaşlarımız var.
+
+101
+00:21:50,430 --> 00:21:56,430
+Burada eleştirmiyorum, yani bu eleştirilecek bir şey değil, belki şu ana kadar hiç bilgisayarla işi olmadı, doğrudur.
+
+102
+00:21:56,430 --> 00:22:07,430
+Ama artık bu bölüme gönüllü olarak başvurdunuz ve kazandığınız için bu konularda kendinizi geliştirmeniz gerekiyor diyelim.
+
+103
+00:22:07,930 --> 00:22:13,240
+Şimdi dersle alakalı iletişime gelince iki grup var.
+
+104
+00:22:13,240 --> 00:22:16,240
+Dersimizin koordinatörü Banu Hoca.
+
+105
+00:22:16,240 --> 00:22:20,240
+Banu Hoca kendi sayfasında ders notlarını PDF olarak ilan ediyor.
+
+106
+00:22:20,240 --> 00:22:22,240
+Onun sayfasından indirebilirsiniz.
+
+107
+00:22:22,240 --> 00:22:25,240
+AVS's [öğrenci] yazarsanız o da çıkar.
+
+108
+00:22:27,240 --> 00:22:32,240
+Veya ben geçen dönem uygulamıştım ama biraz verimsiz gördüm.
+
+109
+00:22:32,740 --> 00:22:36,740
+Bu Online Yıldız Eduteriye'de Ders Duvarı diye bir şey var.
+
+110
+00:22:36,740 --> 00:22:40,740
+Oraya PDF olarak bazı kaynakları yüklüyorum.
+
+111
+00:22:40,740 --> 00:22:43,740
+Ama PDF dışında bir şey yükleyince olmuyor.
+
+112
+00:22:43,740 --> 00:22:45,740
+Yani bir rare dosyası falan.
+
+113
+00:22:45,740 --> 00:22:47,740
+Onun için başka çözümler üreteceğim.
+
+114
+00:22:47,740 --> 00:22:50,740
+İşte gerekirse bir drive kalsörü açıp o kalsörün linkini sizinle paylaşırım.
+
+115
+00:22:50,740 --> 00:22:52,740
+Ona bakarız.
+
+116
+00:22:52,740 --> 00:22:55,740
+Ders notlarını dediğim gibi bu şekilde edinirsiniz.
+
+117
+00:22:56,240 --> 00:23:04,240
+Dersle alakalı elde edilmeniz gereken bilgiler doğrudan benim söyleyeceğim bilgilerdir arkadaşlar.
+
+118
+00:23:04,240 --> 00:23:07,240
+Yani Banu Hoca'nın söyleyeceği şeyler de değildir.
+
+119
+00:23:07,240 --> 00:23:10,240
+O kendi grubuna has bazı şeyler söyleyebilir.
+
+120
+00:23:10,240 --> 00:23:14,240
+Sizi doğrudan bağlayan şey benim söylediklerimdir.
+
+121
+00:23:14,240 --> 00:23:22,619
+Onun için burada benim dışındaki bütün bilgiler benden çıkan bilgiler dışında
+
+122
+00:23:22,619 --> 00:23:24,619
+bütün bilgiler ikinci el bilgi.
+
+123
+00:23:25,119 --> 00:23:27,119
+Bunlara çok itimat etmeyin.
+
+124
+00:23:27,119 --> 00:23:33,119
+Hocam diğer grubun hocası kendi grubunda projeye dair, ödeve dair şöyle bir şey söylemiş.
+
+125
+00:23:33,119 --> 00:23:35,119
+Doğrudur. Söylediği doğru olabilir.
+
+126
+00:23:35,119 --> 00:23:37,119
+Belki ben de size söyleyecek olabilirim.
+
+127
+00:23:37,119 --> 00:23:40,119
+Hatırlatma anlamı maksadıyla bana sorabilirsiniz.
+
+128
+00:23:40,119 --> 00:23:45,119
+Ama ödev teslimi olmuş veya sınav bitmiş.
+
+129
+00:23:45,119 --> 00:23:49,119
+Diğer grubun hocasından şöyle söylerim.
+
+130
+00:23:49,119 --> 00:23:50,119
+Duydum.
+
+131
+00:23:50,119 --> 00:23:54,119
+Ben de buna uygun olarak ödevi böyle yaptım.
+
+132
+00:23:54,119 --> 00:23:56,619
+Bu bir geçerli mazeret değil arkadaşlar.
+
+133
+00:23:56,619 --> 00:24:01,619
+Ben ne söylediysem benim söylediğim kurallar çerçevesinde hareket etmek durumundayız.
+
+134
+00:24:01,619 --> 00:24:04,619
+Yani diğer grub kendi içinde istediğini yapabilir.
+
+135
+00:24:05,619 --> 00:24:10,619
+Onun için benim söylediklerimi esas olarak almanız gerekiyor.
+
+136
+00:24:12,619 --> 00:24:15,619
+Bu dersin öncesine ve sonrasına baktığımızda
+
+137
+00:24:15,619 --> 00:24:18,619
+aslında matematiksel bilgiyle
+
+138
+00:24:19,119 --> 00:24:24,119
+kalkolos derslerini veya ondan önce lisede aldığınız matematik derslerini
+
+139
+00:24:24,119 --> 00:24:29,119
+türev, integral, linerce bir gibi dersleri birleştirip
+
+140
+00:24:29,119 --> 00:24:34,119
+algoritmayla farklı bir bakış açısı kazandırmak istiyoruz.
+
+141
+00:24:35,119 --> 00:24:41,119
+Hemen hemen bütün mühendislik derslerinin ilk ve ikinci bölümlerine bakarsanız
+
+142
+00:24:41,119 --> 00:24:45,119
+yani farklı üniversitelerinin bölümlerinin sılbıslarına baktığınızda
+
+143
+00:24:45,619 --> 00:24:50,619
+sayısal analiz, sayısal yöntemler, numerik analiz, numerik yöntemler diye
+
+144
+00:24:50,619 --> 00:24:52,619
+farklı isimlerde dersler görürsünüz.
+
+145
+00:24:52,619 --> 00:24:56,619
+Bu bütün mühendislik bölümlerinde olan bir derstir.
+
+146
+00:24:57,619 --> 00:25:02,619
+Çünkü dersin doğası gereği ve işledişi gereği
+
+147
+00:25:02,619 --> 00:25:04,619
+bütün mühendislik bölümleri
+
+148
+00:25:05,619 --> 00:25:08,619
+geleneksel denklem çözme yöntemleri veya
+
+149
+00:25:08,619 --> 00:25:11,619
+geleneksel yöntemlerle çözemedikleri problemleri
+
+150
+00:25:11,619 --> 00:25:13,619
+sayısal yöntemlerle çözerler.
+
+151
+00:25:14,119 --> 00:25:16,119
+Geleneksel yöntemlerden kastımız,
+
+152
+00:25:16,119 --> 00:25:19,119
+analitik yöntemler de denir buna.
+
+153
+00:25:20,119 --> 00:25:22,119
+Birazdan buna giriş yapacağız.
+
+154
+00:25:23,119 --> 00:25:26,119
+Tabii bilgisayarcı olarak bu bize ne kadar lazım,
+
+155
+00:25:26,119 --> 00:25:28,119
+ne işimize yarayacak sorusu geliyor
+
+156
+00:25:28,119 --> 00:25:30,119
+onları da zaman içerisinde anlatacağım.
+
+157
+00:25:30,119 --> 00:25:32,119
+Bugün birkaç tane örnek vereceğim size.
+
+158
+00:25:33,119 --> 00:25:36,119
+Baktığınız zaman doğrudan bir matematik bölümünde okuyormuş gibi
+
+159
+00:25:36,119 --> 00:25:40,119
+işte denklemlerle, türevlerle, integrallerle meşgul olacağız.
+
+160
+00:25:40,619 --> 00:25:43,619
+Ama bunun bizi de ilgilendiren tarafı var.
+
+161
+00:25:49,099 --> 00:25:51,099
+Şimdi şöyle bir ekran paylaşımı yapayım.
+
+162
+00:25:51,099 --> 00:26:03,579
+Bu dersin içeriğine
+
+163
+00:26:03,579 --> 00:26:05,579
+BOLONYA YILDIZ EDÜTER'e
+
+164
+00:26:05,579 --> 00:26:07,579
+bilgisayar mühendisli ekranından
+
+165
+00:26:07,579 --> 00:26:12,079
+ulaşabilirsiniz.
+
+166
+00:26:12,079 --> 00:26:14,079
+Bir açılsın bakalım niye açılmadı.
+
+167
+00:26:14,079 --> 00:26:27,839
+Evet, VLM 1022 3 artı 0'luk bir ders.
+
+168
+00:26:27,839 --> 00:26:35,579
+Koordinatörümüz ve derse asıl veren,
+
+169
+00:26:35,579 --> 00:26:37,579
+yıllardır veren Banu Hoca.
+
+170
+00:26:38,079 --> 00:26:41,079
+Şimdi içeriye baktığımızda sayısal analizle alakalı
+
+171
+00:26:41,079 --> 00:26:43,079
+modelleme ve mühendislik problemlerinin çözümü.
+
+172
+00:26:43,079 --> 00:26:45,079
+Bugün biraz bunlardan bahsedeceğiz.
+
+173
+00:26:45,079 --> 00:26:48,079
+Numerik yaplı yaklaşımlar, hata kavramları,
+
+174
+00:26:48,079 --> 00:26:50,079
+denklem çözümleri,
+
+175
+00:26:50,079 --> 00:26:52,079
+kolinom köklerinin bulunması,
+
+176
+00:26:52,079 --> 00:26:54,079
+linear denklem sistemlerinin çözümü,
+
+177
+00:26:54,079 --> 00:26:57,079
+linear olmayan denklem takımlarının çözümü,
+
+178
+00:26:57,079 --> 00:27:00,079
+sayısal, integral, interpolasyon,
+
+179
+00:27:00,079 --> 00:27:02,079
+eğri uydurma,
+
+180
+00:27:02,079 --> 00:27:04,079
+sayısal türev de olacak burada bir yerde,
+
+181
+00:27:04,079 --> 00:27:07,079
+sonra diferansiyel denklemlerin çözümü denmiş.
+
+182
+00:27:07,579 --> 00:27:09,579
+Genel olarak bu şekilde bir içeriğimiz var.
+
+183
+00:27:11,579 --> 00:27:15,579
+Dersin kitabı için önerilen şurada birkaç kitap var.
+
+184
+00:27:15,579 --> 00:27:17,579
+Yani kitap almak zorunda değilsiniz.
+
+185
+00:27:17,579 --> 00:27:20,579
+Dersde anlatılanları öğrenmeniz,
+
+186
+00:27:20,579 --> 00:27:24,579
+yapılan soruları anlayabilmeniz önemli.
+
+187
+00:27:24,579 --> 00:27:26,579
+Anlamadığınız yerleri sorarsanız
+
+188
+00:27:26,579 --> 00:27:30,579
+ve bu çözdüğümüz sorulara benzer problemler çözerseniz,
+
+189
+00:27:30,579 --> 00:27:32,579
+ders için yeterli olacaktır.
+
+190
+00:27:33,579 --> 00:27:35,579
+Ben Banu Hoca'mla konuştum,
+
+191
+00:27:36,079 --> 00:27:42,079
+yani ekstra o günkü gördüğümüz konularla alakalı bir problem set yapabiliriz.
+
+192
+00:27:42,079 --> 00:27:46,079
+Veya birazdan söyleyeceğim bir değerlendirme kalem olarak
+
+193
+00:27:46,079 --> 00:27:50,079
+ufak tefek bazı quiz tarzı şeyler yapabiliriz.
+
+194
+00:27:52,079 --> 00:27:54,079
+Bunlara daha birazdan sıra gelecek.
+
+195
+00:27:55,079 --> 00:27:58,079
+Yani kitap doğrudan gerekmiyor.
+
+196
+00:27:58,079 --> 00:28:00,079
+Bunların dışında da birçok kitap var.
+
+197
+00:28:01,079 --> 00:28:02,079
+Tavsiyem şu olur,
+
+198
+00:28:02,579 --> 00:28:06,579
+kitapların zaten günümüzde ücretleri çok fazla, fiyatları çok fazla.
+
+199
+00:28:07,579 --> 00:28:12,579
+Farklı üniversitelerin sayfalarında sayısal analiz, numerik analiz,
+
+200
+00:28:12,579 --> 00:28:15,579
+yabancı olur, yerli, Türk olur.
+
+201
+00:28:15,579 --> 00:28:19,579
+Bu derslerin kaynaklarına bakarsanız
+
+202
+00:28:19,579 --> 00:28:21,579
+orada da işte aynı konular vardır.
+
+203
+00:28:21,579 --> 00:28:25,579
+O kaynaklardan, işte ders notlarından çalışabilirsiniz ayrıca.
+
+204
+00:28:25,579 --> 00:28:29,579
+Bizi ek olarak veya oradaki örnek problemleri çözebilirsiniz.
+
+205
+00:28:29,579 --> 00:28:31,579
+Bence fazlasıyla yeterli olur.
+
+206
+00:28:34,109 --> 00:28:38,109
+Diyelim şimdi şu bir slide'mız var, onu açalım.
+
+207
+00:28:38,109 --> 00:28:41,109
+Sizin sormak istediğiniz bir soru varsa onu alayım.
+
+208
+00:28:41,109 --> 00:28:58,950
+Şimdi dersin içeriğinde biraz matematiksel işlemler olduğu için
+
+209
+00:28:58,950 --> 00:29:01,950
+ben grafik tableti çok sıklıkla kullanacağım.
+
+210
+00:29:01,950 --> 00:29:04,950
+Doğrudan slide üzerinden bu ders pek anlatılmaz.
+
+211
+00:29:05,950 --> 00:29:08,950
+Onlara geleceğim Ahmet, o dağılımlara konuşacağız.
+
+212
+00:29:08,950 --> 00:29:10,950
+Birazdan bu slide'nin içerisinde var.
+
+213
+00:29:10,950 --> 00:29:15,450
+Sizlerin derse aktif katılımı dersin eğlenceli geçmesi açısından önemli,
+
+214
+00:29:15,450 --> 00:29:17,450
+interaktivite açısından önemli.
+
+215
+00:29:17,450 --> 00:29:23,450
+Yani ben burada soru sorarım, sorulara cevap almak isterim.
+
+216
+00:29:23,450 --> 00:29:29,450
+Yani kendim soru sorup kendim cevaplayacak kadar usta bir monolog ustası değilim.
+
+217
+00:29:29,450 --> 00:29:32,450
+Onun için derse aktif katılım önemli.
+
+218
+00:29:32,450 --> 00:29:35,450
+Sizlerden geri bildirme almak önemli arkadaşlar.
+
+219
+00:29:35,450 --> 00:29:38,450
+Yani arada farklı sorular sorup test edebiliriz.
+
+220
+00:29:38,950 --> 00:29:40,950
+Denklemde bir şey yazmayacağım.
+
+221
+00:29:40,950 --> 00:29:43,950
+Buraya ne gelebilir diye soracağım, boş bırakacağım.
+
+222
+00:29:43,950 --> 00:29:45,950
+Sizlerden bir cevap isteyeceğim.
+
+223
+00:29:45,950 --> 00:29:48,950
+Tabii bu cevaplar yazarak biraz zor oluyor.
+
+224
+00:29:48,950 --> 00:29:52,950
+Çünkü bir integrali yazmanız pek mümkün değil.
+
+225
+00:29:52,950 --> 00:29:58,950
+Onun yerine mikrofon kullanarak hitap ederseniz daha rahat anlaşırız.
+
+226
+00:29:58,950 --> 00:30:02,950
+Chat ekranına ders sırası var mı?
+
+227
+00:30:03,450 --> 00:30:05,450
+Şunu da bir protokol olarak söyleyelim.
+
+228
+00:30:05,450 --> 00:30:11,450
+Dersin dışında, dersin konusunun dışında hatta bir şey yazmamanızı rica ediyorum.
+
+229
+00:30:11,450 --> 00:30:14,450
+Son 10-15 dakika bir ara veririz.
+
+230
+00:30:14,450 --> 00:30:19,450
+Yani o günkü yaptığımız çalışmaları toparlamak, özetlemek adına.
+
+231
+00:30:19,450 --> 00:30:26,450
+Ve bu sırada son 10-15 dakikada ders konusunun dışında veya dersin dışında sorunuz varsa
+
+232
+00:30:26,950 --> 00:30:28,950
+o zaman sorabilirsiniz istediğiniz şeyi.
+
+233
+00:30:28,950 --> 00:30:32,950
+Ben de elimden geldiğince, bildiğimce cevaplamaya çalışırım.
+
+234
+00:30:32,950 --> 00:30:37,950
+Ama hani sınıfta kendi aranızda konuşur gibi dersin dışında
+
+235
+00:30:37,950 --> 00:30:40,950
+chat ekranına bir şey yazınca benim dikkatim dağılıyor.
+
+236
+00:30:40,950 --> 00:30:44,950
+Anlatmak istediğim şeyi unutabiliyorum veya tekrar hatırlamam gerekiyor.
+
+237
+00:30:44,950 --> 00:30:48,950
+Onun için böyle bir şey chat ekranına yazmayalım arkadaşlar.
+
+238
+00:30:49,450 --> 00:30:53,450
+Bir diğer şey, iletişim için her derste görüyorum chat ekranda
+
+239
+00:30:53,450 --> 00:30:58,450
+bu dersin WhatsApp grubu var mıdır gibi talepler geliyor bazı arkadaşlardan.
+
+240
+00:30:58,450 --> 00:31:02,450
+Bu tarz gruplara ben kötü gözle bakmıyorum.
+
+241
+00:31:02,450 --> 00:31:06,450
+Ama dikkat edilmesi gereken gruplar geçen Pazartesi günü
+
+242
+00:31:06,450 --> 00:31:09,450
+bu konuda bir uyağı yaptım diğer şey derste.
+
+243
+00:31:09,450 --> 00:31:11,450
+Yapısal programlamaya girişte.
+
+244
+00:31:11,950 --> 00:31:13,950
+Bununla alakalı bir tecrübem olduğu için
+
+245
+00:31:13,950 --> 00:31:17,950
+WhatsApp gruplarına veya herhangi bir gruba dikkat edin derim.
+
+246
+00:31:17,950 --> 00:31:19,950
+Nasıl bir tecrübe?
+
+247
+00:31:19,950 --> 00:31:22,950
+Kontrol mühendisinde geçen dönem verdiğim derste
+
+248
+00:31:22,950 --> 00:31:24,950
+sınavdan sonra bir mail geldi.
+
+249
+00:31:24,950 --> 00:31:28,950
+İşte sınav esnasında birkaç kişinin belki 10 kişi falan
+
+250
+00:31:28,950 --> 00:31:30,950
+tam sayıyı hatırlamıyorum.
+
+251
+00:31:30,950 --> 00:31:33,950
+İşte sınav sorularının birkaç kişinin
+
+252
+00:31:33,950 --> 00:31:36,950
+birkaç kişinin birkaç kişinin
+
+253
+00:31:37,450 --> 00:31:39,450
+birkaç kişi falan tam sayıyı hatırlamıyorum.
+
+254
+00:31:39,450 --> 00:31:42,450
+İşte sınav sorularının görüntülerini çekmişler.
+
+255
+00:31:42,450 --> 00:31:45,450
+İşte bunun cevabı nedir? Test sınavıydı.
+
+256
+00:31:45,450 --> 00:31:49,450
+Şunun cevabı nedir? İşte birileri de onlara cevap vermiş.
+
+257
+00:31:49,450 --> 00:31:51,450
+Bununla alakalı işlem yaptık.
+
+258
+00:31:51,450 --> 00:31:54,450
+İşte disiplin kuruluğunun görevi vardı.
+
+259
+00:31:54,450 --> 00:31:58,450
+Ben işte o kişilerin tek tek bütün bilgilerini elde edip
+
+260
+00:31:58,450 --> 00:32:00,450
+puanlarını sıfırladım falan.
+
+261
+00:32:00,450 --> 00:32:02,450
+Uygun olmayan şeyler oldu.
+
+262
+00:32:02,450 --> 00:32:04,450
+Hani iş nereye kadar gidebilirdi?
+
+263
+00:32:04,450 --> 00:32:06,450
+İş savcılığa kadar gidebilirdi.
+
+264
+00:32:06,950 --> 00:32:08,950
+Çok fazla uğraşmak istemedim.
+
+265
+00:32:08,950 --> 00:32:11,950
+Çünkü bir talihsizlik olabilir.
+
+266
+00:32:11,950 --> 00:32:14,950
+Yani çocukların cahilliği olabilir dedik.
+
+267
+00:32:14,950 --> 00:32:18,950
+Mümkün olan, çünkü 200 kişilik ders grubu,
+
+268
+00:32:18,950 --> 00:32:20,950
+ders alan 255 kişiydi.
+
+269
+00:32:20,950 --> 00:32:25,950
+Burada yani suçlularla suçsuzları ayırt etmek çok zor.
+
+270
+00:32:25,950 --> 00:32:30,950
+Belki 10 kişi kopya çekti ama geri kalan çok suçlu değildi.
+
+271
+00:32:30,950 --> 00:32:33,950
+Bir o grubu tamamen savcılığa versek,
+
+272
+00:32:33,950 --> 00:32:35,950
+iyiyle kötü her şey birbirine karışacak.
+
+273
+00:32:35,950 --> 00:32:37,450
+Herkes töhmet altında kalacak.
+
+274
+00:32:37,450 --> 00:32:42,450
+Belki herkesin kariyerinde veya sicilinde bir sıkıntı olacak.
+
+275
+00:32:42,450 --> 00:32:45,450
+Bu tarz şeylere dikkat edin arkadaşlar.
+
+276
+00:32:45,450 --> 00:32:48,450
+Bir grub kuruyorsanız en basit yapacağınız şey,
+
+277
+00:32:48,450 --> 00:32:51,450
+sınav öncesi grubu iletişime kapatmaktır.
+
+278
+00:32:51,450 --> 00:32:54,450
+Herhangi bir şekilde paylaşıma engellemektir.
+
+279
+00:32:54,450 --> 00:32:57,450
+Eğer böyle 200 kişilik veya 100 kişilik bir toplu grub varsa.
+
+280
+00:32:57,450 --> 00:33:00,450
+Dolayısıyla kimseye oraya bir şey paylaşamaz.
+
+281
+00:33:00,450 --> 00:33:02,450
+Bu basit bir önlemdir, etkili bir önlemdir.
+
+282
+00:33:02,950 --> 00:33:06,950
+Bu tecrübeden sonra ben girdiğim diğer derslerde bunu uygulattım
+
+283
+00:33:06,950 --> 00:33:09,950
+ve tekrar aynı tecrübeyi yaşamadık.
+
+284
+00:33:09,950 --> 00:33:15,950
+Bunun dışında, hani ben kendimi geçen dönem inisiyatif olarak
+
+285
+00:33:15,950 --> 00:33:18,950
+Telegram grubu kurdum, kendi verdiğim bütün derslerde.
+
+286
+00:33:18,950 --> 00:33:21,950
+Bu dönemde de yapmayı düşünüyorum.
+
+287
+00:33:21,950 --> 00:33:24,950
+Yani anlık ulaşmak gerekebiliyor.
+
+288
+00:33:24,950 --> 00:33:28,450
+Yani bazen işte sınav esnasında problem yaşanıyor
+
+289
+00:33:28,450 --> 00:33:29,950
+veya başka problemler oluyor.
+
+290
+00:33:30,450 --> 00:33:33,450
+İşte sınav olurken bir yandan zoom'u açmak problem değil ama
+
+291
+00:33:33,450 --> 00:33:36,450
+işte Telegram gibi bir uygulama daha iş görüyor.
+
+292
+00:33:36,450 --> 00:33:42,450
+Onun için yapısal programlamaya giriş ve sayısal analizi
+
+293
+00:33:42,450 --> 00:33:45,450
+ikisini birden içeren tek bir grup açacağım.
+
+294
+00:33:45,450 --> 00:33:47,950
+İlerleyen zamanlarda bunu şey yaparız.
+
+295
+00:33:47,950 --> 00:33:49,950
+Şimdiden çok acele etmeye gerek yok.
+
+296
+00:33:49,950 --> 00:33:51,450
+Şu an derslerimiz devam ediyor.
+
+297
+00:33:51,450 --> 00:33:53,450
+Belki birinci vize haftasına doğru bunu yaparız.
+
+298
+00:33:53,450 --> 00:33:56,450
+Ona daha sıra gelir.
+
+299
+00:33:56,950 --> 00:34:01,950
+Hustle Keram buradan kıssadan hisse almanız gereken şey
+
+300
+00:34:01,950 --> 00:34:04,950
+aynı tecrübeyi hiçbir derste yaşamayın.
+
+301
+00:34:06,950 --> 00:34:09,949
+Yani genellikle gruplarınız kalabalık oluyor.
+
+302
+00:34:09,949 --> 00:34:13,949
+İşte 2017 girişler, 2018 girişler tarzında gruplarınız varmış.
+
+303
+00:34:13,949 --> 00:34:14,949
+Tamam güzel, çok iyi bir şey.
+
+304
+00:34:14,949 --> 00:34:16,949
+İletişim için hoş bir şey.
+
+305
+00:34:16,949 --> 00:34:19,949
+Ama derslerle alakalı bu gruplarda
+
+306
+00:34:19,949 --> 00:34:22,949
+bu tarz provokasyonlara gelmeyin.
+
+307
+00:34:22,949 --> 00:34:25,949
+Birisi bilerek bunu yapıyor olabilir.
+
+308
+00:34:25,949 --> 00:34:28,449
+Sınavı sabote etmek maksadıyla yapıyor olabilir.
+
+309
+00:34:30,449 --> 00:34:32,449
+Birisi ekran görüntülerini alıyor olabilir.
+
+310
+00:34:32,449 --> 00:34:34,949
+O da sınavı provoka etmek ister.
+
+311
+00:34:34,949 --> 00:34:38,449
+Çünkü bana soruları gönderen
+
+312
+00:34:38,449 --> 00:34:43,449
+yani o ekran görüntülerini gönderen arkadaşın puanlarına baktım.
+
+313
+00:34:43,449 --> 00:34:44,449
+Çok küçük puanlar.
+
+314
+00:34:44,449 --> 00:34:46,449
+Muhtemelen gururuna yediremedi.
+
+315
+00:34:46,449 --> 00:34:48,449
+Ama kendince doğru olanı yaptı.
+
+316
+00:34:48,449 --> 00:34:51,449
+Ben de üzerime düşeni yapmak zorundaydım.
+
+317
+00:34:52,449 --> 00:34:54,449
+Bu tarz şeylere dikkat edin arkadaşlar.
+
+318
+00:34:54,949 --> 00:34:55,949
+Gaza gelmeyin derim yani.
+
+319
+00:34:55,949 --> 00:34:56,949
+Onu söyleyeyim.
+
+320
+00:34:56,949 --> 00:34:58,949
+Birileri bir şeyler yapar.
+
+321
+00:34:58,949 --> 00:35:03,949
+Siz arkanıdan onun kışkırtmasıyla yanlış şeyler yapabilirsiniz.
+
+322
+00:35:06,360 --> 00:35:07,360
+Evet.
+
+323
+00:35:07,360 --> 00:35:09,360
+Şimdi şöyle.
+
+324
+00:35:10,360 --> 00:35:12,360
+Bu slide'lı PDF olarak ders duvarına koyacağım.
+
+325
+00:35:12,360 --> 00:35:14,360
+Banı Hoca da sayfasına ekleyecek.
+
+326
+00:35:15,360 --> 00:35:20,360
+Matematik, science and engineering için numarikal sayısal yöntemler
+
+327
+00:35:20,360 --> 00:35:25,360
+veya yazdım ve analiz numarik yöntemler dediğimiz.
+
+328
+00:35:25,860 --> 00:35:26,860
+Bir kitap var.
+
+329
+00:35:27,860 --> 00:35:32,860
+Bu kitapların işte o elektronik hâllerine bakabilirsiniz derste çalışmak için.
+
+330
+00:35:33,860 --> 00:35:38,860
+Bu dersin değerlendirmesinde iki tane vize düşündük.
+
+331
+00:35:39,860 --> 00:35:43,860
+Bu vizeler geçen senelerde hep klasik sınavlar oluyordu.
+
+332
+00:35:43,860 --> 00:35:48,860
+Ben Banı Hoca'nın ders notlarını takip ettiğim için oradan biliyorum.
+
+333
+00:35:49,860 --> 00:35:52,860
+Bu senede ikisini de klasik yapmayı düşünüyoruz.
+
+334
+00:35:53,360 --> 00:35:56,360
+Belki bir tanesi test usulü olur ama onun hakkında bilgi veririz.
+
+335
+00:35:57,360 --> 00:36:02,360
+Bu iki vizenin yıl içine olan oranı %30 olacaktır.
+
+336
+00:36:03,360 --> 00:36:05,360
+Muhtemelen %15, %15 şeklinde.
+
+337
+00:36:06,360 --> 00:36:08,360
+Şimdi bir quiz yapmayı düşünüyoruz.
+
+338
+00:36:09,360 --> 00:36:12,360
+Bu her dersin sonunda o günkü konularla alakalı.
+
+339
+00:36:13,360 --> 00:36:16,360
+4-5 tane soru test usulü olacak.
+
+340
+00:36:16,360 --> 00:36:19,360
+İşte onlineyıldız.edu.tr'ye gireceksiniz.
+
+341
+00:36:20,360 --> 00:36:21,360
+O soruları çözüp
+
+342
+00:36:21,860 --> 00:36:24,860
+belki çözümleriyle yükleyip
+
+343
+00:36:25,860 --> 00:36:28,860
+yani hem test usulü hem de çözümlerini, detaylı çözümleriyle yükleyip
+
+344
+00:36:29,860 --> 00:36:30,860
+öyle bir sınav olacak.
+
+345
+00:36:32,860 --> 00:36:33,860
+Projemiz var.
+
+346
+00:36:34,860 --> 00:36:41,860
+Bu proje kapsamında sayısal analiz dersinin konularına giren yöntemler var.
+
+347
+00:36:41,860 --> 00:36:45,860
+İşte sayısal integral ile alakalı veya sayısal türev interpolasyonu birazdan göreceğiz.
+
+348
+00:36:46,360 --> 00:36:53,360
+Bu yöntemleri si dilinde, başka bir dilde değil kodlamanızı isteyeceğiz.
+
+349
+00:36:53,360 --> 00:36:56,360
+Ve bu projeleri online olarak bize sunacaksınız.
+
+350
+00:36:57,360 --> 00:37:00,360
+Yani son iki hafta işte belli bir sıraya göre
+
+351
+00:37:02,360 --> 00:37:04,360
+işte ekranınızı paylaşacaksınız.
+
+352
+00:37:04,360 --> 00:37:06,360
+Programınızı göstereceksiniz. Herkes dinleyecek.
+
+353
+00:37:07,360 --> 00:37:09,360
+Ben ona göre size puan vereceğim.
+
+354
+00:37:10,360 --> 00:37:13,360
+Bir de %40 olarak bir final sınavımız olacak arkadaşlar.
+
+355
+00:37:13,860 --> 00:37:17,860
+Yıl içinin %60'ı, yıl sonunun %40'ı alınıyor biliniyorsunuz.
+
+356
+00:37:18,860 --> 00:37:23,000
+Burada şöyle bir soru gelebilir.
+
+357
+00:37:23,000 --> 00:37:26,000
+Si dilinden başka bir dil olmaz mı diye soru gelebilir.
+
+358
+00:37:26,000 --> 00:37:27,000
+Olmaz.
+
+359
+00:37:28,000 --> 00:37:31,000
+Bunu ben özellikle Banı Hocam'dan istedim ve rica ettim.
+
+360
+00:37:32,000 --> 00:37:34,000
+Çünkü yapısal programlamaya giriş.
+
+361
+00:37:35,000 --> 00:37:40,000
+Onun öncesinde bilgisayar bilgilerine giriş derslerinde si ile alakalı belli bir altyapınız var.
+
+362
+00:37:41,000 --> 00:37:44,000
+Belki bazılarınız başka diller kullanıyor olabilir ama
+
+363
+00:37:44,500 --> 00:37:49,500
+si diline olan hakimiyetinizi bu ders kapsamında arttırmak için
+
+364
+00:37:50,500 --> 00:37:52,500
+burada si dili zorunlu olacak.
+
+365
+00:37:53,500 --> 00:37:56,500
+Si++ da değil, si standart si dili.
+
+366
+00:37:57,500 --> 00:38:00,500
+Yapısal programlamaya giriş dersinde zaten detaylarını anlatacağız.
+
+367
+00:38:01,500 --> 00:38:04,500
+Oradaki derslerinizde de bir pratik olacaktır.
+
+368
+00:38:04,500 --> 00:38:06,500
+Onun için projeyi bu şekilde istedik.
+
+369
+00:38:07,500 --> 00:38:13,500
+Peki bu dersin kapsamında hangi konular var?
+
+370
+00:38:14,500 --> 00:38:18,500
+Şimdi öncelikle sayısal analizin ne olduğunu bakalım.
+
+371
+00:38:18,500 --> 00:38:23,769
+Şöyle söyleyeyim.
+
+372
+00:38:24,769 --> 00:38:33,570
+Arkadaşlar liseden falan hatırlarsınız.
+
+373
+00:38:33,570 --> 00:38:41,210
+Bir havuz problemi çözmek istiyoruz.
+
+374
+00:38:42,210 --> 00:38:44,210
+Gerçi havuz problemi de kalmadı da.
+
+375
+00:38:46,519 --> 00:38:48,519
+Havuz probleminde ne vardı?
+
+376
+00:38:49,519 --> 00:38:50,519
+Şöyle bir şey diyelim.
+
+377
+00:38:50,519 --> 00:38:55,519
+Buraya bir tane T1 muslu, bir tane T2 muslu.
+
+378
+00:38:56,019 --> 00:39:02,039
+Bir de şuraya T3 musluğu koyalım.
+
+379
+00:39:03,039 --> 00:39:08,039
+Bunların T1, T2 ve T3 musluklarının
+
+380
+00:39:10,639 --> 00:39:12,639
+havuzu doldurma ve boşaltma,
+
+381
+00:39:12,639 --> 00:39:15,639
+ne kadar sürede doldurma ve boşaltma miktarları,
+
+382
+00:39:16,639 --> 00:39:19,639
+ne kadar sürede yaptıkları elimizde bulunsun.
+
+383
+00:39:20,639 --> 00:39:24,639
+Nedir bu? T1, T2, T3.
+
+384
+00:39:24,639 --> 00:39:26,639
+Yani spesifik sayılar vermiyoruz.
+
+385
+00:39:27,139 --> 00:39:29,139
+Bu soruyu hemen hemen herkes hatırlıyordur.
+
+386
+00:39:29,139 --> 00:39:30,139
+Bilmeyen var mı?
+
+387
+00:39:30,139 --> 00:39:32,139
+Ben böyle bir soruyu hiç çözmedim diyen var mı aranızda?
+
+388
+00:39:33,139 --> 00:39:35,139
+Yabancı arkadaşlardan belki olabilir de.
+
+389
+00:39:36,139 --> 00:39:37,139
+Ben çözmedim.
+
+390
+00:39:40,929 --> 00:39:41,929
+Yani [öğrenci],
+
+391
+00:39:42,929 --> 00:39:47,929
+bu havuz işte kaç pirim belli bir V hacmi var.
+
+392
+00:39:47,929 --> 00:39:49,929
+Ne kadar litre su aldığını biliyoruz.
+
+393
+00:39:50,929 --> 00:39:53,929
+İşte 1. musluk 3 saatte dolduruyormuş.
+
+394
+00:39:53,929 --> 00:39:55,929
+2. musluk 4 saatte dolduruyormuş.
+
+395
+00:39:56,429 --> 00:39:59,429
+3. muslukta 5 saatte boşalıyormuş.
+
+396
+00:40:00,429 --> 00:40:05,429
+Havuz boşken bu 3 musluk açıldığında
+
+397
+00:40:05,429 --> 00:40:08,429
+havuz ne zaman dolar, dolu görünür.
+
+398
+00:40:08,429 --> 00:40:10,429
+Tabii burada sürekli bir dolma olayı var,
+
+399
+00:40:10,429 --> 00:40:12,429
+bir yandan da boşalma olayı var değil mi?
+
+400
+00:40:13,429 --> 00:40:16,429
+İşte bunun ne zaman dolayacağını,
+
+401
+00:40:16,429 --> 00:40:19,429
+yani bu verilerle ne zaman dolayacağını bulmak istiyoruz.
+
+402
+00:40:20,429 --> 00:40:21,429
+O zaman ne yapacağız?
+
+403
+00:40:21,929 --> 00:40:26,929
+Bu verilerden yola çıkarak bir denklemi oluşturmak gerekiyor.
+
+404
+00:40:27,929 --> 00:40:29,929
+Hatırlıyor muyum bilmiyorum da
+
+405
+00:40:29,929 --> 00:40:35,369
+bunların mesela EBOG'u üzerinden,
+
+406
+00:40:35,369 --> 00:40:38,369
+iş zaman programı üzerinden bunu yapabiliriz
+
+407
+00:40:38,369 --> 00:40:41,369
+veya doğrudan işte V havuzunu
+
+408
+00:40:41,369 --> 00:40:44,369
+bu 1 bölü T1 sürede doldurur,
+
+409
+00:40:44,369 --> 00:40:45,369
+bildiğimiz zaman da.
+
+410
+00:40:45,369 --> 00:40:49,369
+Bu 1 bölü T2 sürede doldurur diyorduk.
+
+411
+00:40:49,869 --> 00:40:53,869
+Şu 1 bölü T3 sürede boşaltır diyorduk.
+
+412
+00:40:53,869 --> 00:40:57,869
+Bu bizim birim zamanda yaptığımız iş.
+
+413
+00:40:57,869 --> 00:41:01,869
+Ben bu işi T kadar sürede yaparsam,
+
+414
+00:41:01,869 --> 00:41:07,869
+V kadar bir havuzun içeriğini doldurmuş olurum.
+
+415
+00:41:07,869 --> 00:41:10,869
+Mesela buna ne diyelim,
+
+416
+00:41:10,869 --> 00:41:14,869
+3, 4 ve 5'in ortak katı 60 olsun.
+
+417
+00:41:14,869 --> 00:41:16,869
+Bunları da 3, 4, 5 dedik.
+
+418
+00:41:17,369 --> 00:41:21,369
+1 bölü 3 artı 1 bölü 4 eksi 1 bölü 5.
+
+419
+00:41:21,369 --> 00:41:23,369
+Yanlış yapıyorsam söyleyin arkadaşlar.
+
+420
+00:41:23,369 --> 00:41:27,369
+Ben de bunları üniversite sınavı zamanında yaptım.
+
+421
+00:41:27,369 --> 00:41:30,369
+İşte burayı kaç ile genişleteceğiz?
+
+422
+00:41:30,369 --> 00:41:34,369
+3, 4 ve 5'i, burayı 20 ile genişleteceğiz herhalde.
+
+423
+00:41:34,369 --> 00:41:36,369
+Burayı 15 ile genişleteceğiz.
+
+424
+00:41:36,369 --> 00:41:38,369
+Burayı da 12 ile mi genişleteceğiz?
+
+425
+00:41:38,369 --> 00:41:41,369
+35'den 12 çıktı,
+
+426
+00:41:41,369 --> 00:41:43,369
+23 mü oldu?
+
+427
+00:41:43,369 --> 00:41:45,369
+Sayılar da kötü geliyor.
+
+428
+00:41:45,869 --> 00:41:48,869
+O zaman 23 yerine havuza 46 diyelim biz.
+
+429
+00:41:48,869 --> 00:41:59,679
+23 bölü 60 çarpı T eşittir 46.
+
+430
+00:41:59,679 --> 00:42:01,679
+Hemen de nasıl değiştirdik değil mi?
+
+431
+00:42:01,679 --> 00:42:04,679
+Yani sınavda olsa değişmez tabi.
+
+432
+00:42:04,679 --> 00:42:06,679
+T'yi buradan kaç buluruz?
+
+433
+00:42:06,679 --> 00:42:10,679
+T eşittir 2 olacak, 120 olacak.
+
+434
+00:42:11,179 --> 00:42:15,179
+Yüz yüze birim zamanda artık saniyesi saniye,
+
+435
+00:42:15,179 --> 00:42:17,179
+dakika ise dakika, şuradakilerin birimi neyse
+
+436
+00:42:17,179 --> 00:42:20,179
+onun birimi cinsinden veya saat ise saat.
+
+437
+00:42:20,179 --> 00:42:23,179
+Bu kadar sürede doluyormuş dedik.
+
+438
+00:42:23,179 --> 00:42:27,179
+Ama burada bu problemin genel çözümü nedir?
+
+439
+00:42:27,179 --> 00:42:31,179
+Şuradaki şu denklemi kurabilmektir.
+
+440
+00:42:31,179 --> 00:42:33,179
+Veya bunu hız zaman üzerinden
+
+441
+00:42:33,179 --> 00:42:37,179
+işte T1, T2 ve T3'ün ortak katına alırlar.
+
+442
+00:42:37,679 --> 00:42:45,000
+Deriz ki buna bu zaman üzerinden değil de
+
+443
+00:42:45,000 --> 00:42:47,000
+hız üzerinden bunu yapalım.
+
+444
+00:42:47,000 --> 00:42:49,000
+Bu 20 birimlik iş yapıyorsa,
+
+445
+00:42:49,000 --> 00:42:51,000
+20 hızla çalışıyorsa,
+
+446
+00:42:51,000 --> 00:42:53,000
+bu 15 hızla çalışacak.
+
+447
+00:42:53,000 --> 00:42:55,000
+15 mi?
+
+448
+00:42:55,000 --> 00:42:57,000
+Yok 15 değil ya.
+
+449
+00:42:57,000 --> 00:42:59,000
+Bir dakika burada.
+
+450
+00:42:59,000 --> 00:43:01,000
+Arkadaşlar söylemiyorsunuz.
+
+451
+00:43:01,000 --> 00:43:03,000
+60, 15 olur değil mi?
+
+452
+00:43:03,000 --> 00:43:05,000
+Evet, 15 hızla çalışacak.
+
+453
+00:43:05,000 --> 00:43:07,000
+Bu da 12 hızla çalışacak.
+
+454
+00:43:07,000 --> 00:43:09,000
+Bunlar yapıcı bir etkiye sahip.
+
+455
+00:43:09,000 --> 00:43:11,000
+Bunlar yıkıcı etkiye sahip.
+
+456
+00:43:11,000 --> 00:43:13,000
+Ne oluyor?
+
+457
+00:43:13,000 --> 00:43:15,000
+35 V'den 12 V'yi çıkardık.
+
+458
+00:43:15,000 --> 00:43:17,000
+Yine 23 V.
+
+459
+00:43:17,000 --> 00:43:19,000
+23 V hızla çalışan bir şey
+
+460
+00:43:19,000 --> 00:43:23,000
+T sürede 46 V'lik havuzu ne kadar doldurur?
+
+461
+00:43:23,000 --> 00:43:25,000
+Buradan 1 böl 2 gibi bir şey çıkıyor falan.
+
+462
+00:43:25,000 --> 00:43:27,000
+Neyse.
+
+463
+00:43:27,000 --> 00:43:30,530
+Bu da bir yöntem.
+
+464
+00:43:30,530 --> 00:43:32,530
+Hepsinde uyguladığımız şey
+
+465
+00:43:32,530 --> 00:43:34,530
+bir denklem üretmek zorundayız.
+
+466
+00:43:34,530 --> 00:43:37,530
+Yani diğer eski problemlerinizi de düşünün.
+
+467
+00:43:37,530 --> 00:43:39,530
+Bu denklem şöyle de olabilirdi.
+
+468
+00:43:44,090 --> 00:43:48,090
+Bir zamana bağlı bir sistem var.
+
+469
+00:43:48,090 --> 00:43:50,090
+Y eşittir fx fonksiyonu.
+
+470
+00:43:50,090 --> 00:43:52,090
+Ama bu
+
+471
+00:43:52,090 --> 00:43:54,090
+Y eşittir fx fonksiyonu
+
+472
+00:43:54,090 --> 00:43:56,090
+Y'nin sadece şu anki
+
+473
+00:43:56,090 --> 00:43:58,090
+X'in şu anki değerlerini değil.
+
+474
+00:43:58,090 --> 00:44:00,090
+Mesela şunu da içeriyor.
+
+475
+00:44:00,090 --> 00:44:02,090
+Y'nin türevi artı Yx
+
+476
+00:44:02,090 --> 00:44:04,090
+artı 2x.
+
+477
+00:44:06,090 --> 00:44:08,090
+Yani öyle bir şey ki
+
+478
+00:44:08,090 --> 00:44:10,090
+Y'nin türevini de hatta 2. dereceden türevi diyelim
+
+479
+00:44:10,090 --> 00:44:12,090
+şöyle bir denklem olsun.
+
+480
+00:44:12,090 --> 00:44:14,090
+Böyle bir sistem var.
+
+481
+00:44:14,090 --> 00:44:16,090
+İşte bir diğerin sıcaklığı olabilir
+
+482
+00:44:16,090 --> 00:44:18,090
+veya başka bir durumu olabilir.
+
+483
+00:44:18,090 --> 00:44:20,090
+Bunların hepsi
+
+484
+00:44:20,090 --> 00:44:22,090
+bir denklem sistemi
+
+485
+00:44:22,090 --> 00:44:24,090
+oluşturmaya gerekiyor.
+
+486
+00:44:24,090 --> 00:44:26,090
+Ve bu denklemi oluşturduktan sonra
+
+487
+00:44:26,090 --> 00:44:28,090
+problemi çözmek için ne yapıyoruz?
+
+488
+00:44:28,090 --> 00:44:30,090
+Denklemi çözüyoruz.
+
+489
+00:44:30,090 --> 00:44:32,090
+Denklem çözme belki çoğunuz
+
+490
+00:44:32,090 --> 00:44:34,090
+ortaokuldan beri
+
+491
+00:44:34,090 --> 00:44:36,090
+gördüğünüz bir konu.
+
+492
+00:44:36,090 --> 00:44:38,090
+Ne oluyor? Bilinenler bir tarafa
+
+493
+00:44:38,090 --> 00:44:40,090
+bilinmeyenler bir tarafa.
+
+494
+00:44:40,090 --> 00:44:42,090
+Olabildiğince sadeleştiriyorsunuz.
+
+495
+00:44:42,090 --> 00:44:44,090
+Ve denklemin
+
+496
+00:44:44,090 --> 00:44:46,090
+bir tarafta X oluyor,
+
+497
+00:44:46,090 --> 00:44:48,090
+bilinen bir tarafta bilinmeyen oluyor.
+
+498
+00:44:48,090 --> 00:44:50,090
+Bilinmeyeni bulmuş oluyoruz.
+
+499
+00:44:50,090 --> 00:44:52,090
+Değil mi? Bu çok çok yaptığımız bir şey.
+
+500
+00:44:52,090 --> 00:44:54,090
+Fakat
+
+501
+00:44:54,090 --> 00:44:56,090
+bu yaptığımız
+
+502
+00:44:56,090 --> 00:44:58,090
+işeler ne diyoruz? Analitik çözüm diyoruz.
+
+503
+00:44:58,090 --> 00:45:01,880
+Analitik çözüm.
+
+504
+00:45:01,880 --> 00:45:06,570
+Analitik denklem çözümü.
+
+505
+00:45:06,570 --> 00:45:08,570
+Bu yazının kalınlığını biraz
+
+506
+00:45:08,570 --> 00:45:10,570
+almak istiyorum.
+
+507
+00:45:10,570 --> 00:45:14,329
+Biraz daha küçük yazayım.
+
+508
+00:45:14,329 --> 00:45:16,329
+Peki her denklem analitik bir şekilde
+
+509
+00:45:16,329 --> 00:45:19,840
+çözülebilir mi?
+
+510
+00:45:19,840 --> 00:45:21,840
+Size şöyle bir denklem vereyim mesela
+
+511
+00:45:21,840 --> 00:45:23,840
+Y eşittir
+
+512
+00:45:23,840 --> 00:45:25,840
+İntegral
+
+513
+00:45:25,840 --> 00:45:27,840
+eksi 3'ten eksi 8'e
+
+514
+00:45:27,840 --> 00:45:29,840
+E üzeri eksi
+
+515
+00:45:29,840 --> 00:45:31,840
+St
+
+516
+00:45:31,840 --> 00:45:33,840
+çarpı Dt diyelim.
+
+517
+00:45:33,840 --> 00:45:35,840
+Hatta
+
+518
+00:45:35,840 --> 00:45:37,840
+E üzeri eksi St dediğimde 5t diyelim.
+
+519
+00:45:37,840 --> 00:45:39,840
+Bunu analitik
+
+520
+00:45:39,840 --> 00:45:46,219
+bir şekilde çözebilir miyiz?
+
+521
+00:45:46,219 --> 00:45:48,219
+Hayır hocam.
+
+522
+00:45:48,219 --> 00:45:50,219
+Niye?
+
+523
+00:45:50,219 --> 00:45:52,219
+Normal değil mi? Bir tarafa toplamayacağız ki.
+
+524
+00:45:52,219 --> 00:45:54,219
+Normal çözüm zaten analitik çözümden bahsediyorum.
+
+525
+00:45:54,219 --> 00:45:56,219
+Yani
+
+526
+00:45:56,219 --> 00:45:58,219
+elle kağıt üzerinde çözümden bahsediyorum.
+
+527
+00:45:58,219 --> 00:46:01,719
+Bunu çözebilir miyiz?
+
+528
+00:46:01,719 --> 00:46:03,719
+E üzeri eksi 5t'nin integrali nedir?
+
+529
+00:46:03,719 --> 00:46:05,719
+E üzeri
+
+530
+00:46:05,719 --> 00:46:07,719
+eksi 5t bölü
+
+531
+00:46:07,719 --> 00:46:09,719
+t'nin önündeki
+
+532
+00:46:09,719 --> 00:46:11,719
+eksi 5
+
+533
+00:46:11,719 --> 00:46:13,719
+Sonra bu belirli integral olduğu için
+
+534
+00:46:13,719 --> 00:46:15,719
+eksi
+
+535
+00:46:15,719 --> 00:46:17,719
+3 dedik.
+
+536
+00:46:17,719 --> 00:46:19,719
+Gerçi eksi 8'den eksi 3 olacak.
+
+537
+00:46:19,719 --> 00:46:26,079
+Şurayı yanlış yazdık da.
+
+538
+00:46:26,079 --> 00:46:28,079
+Bunları değerli yerine koyar yazarsınız ve çıkar.
+
+539
+00:46:28,079 --> 00:46:30,079
+Biraz daha denklemi zorlaştırsam
+
+540
+00:46:32,079 --> 00:46:34,079
+3'ten 8'e diyelim.
+
+541
+00:46:34,079 --> 00:46:36,079
+Sinus
+
+542
+00:46:36,079 --> 00:46:38,079
+5t çarpı
+
+543
+00:46:38,079 --> 00:46:40,079
+E üzeri eksi 5t
+
+544
+00:46:40,079 --> 00:46:42,079
+çarpı Dt
+
+545
+00:46:42,079 --> 00:46:44,079
+Bunu çözebilir miyiz?
+
+546
+00:46:44,079 --> 00:46:51,130
+Hocam
+
+547
+00:46:51,130 --> 00:46:53,130
+Çözebilir miyiz derken?
+
+548
+00:46:53,130 --> 00:46:55,130
+Kafadan mı yoksa kalemle mi?
+
+549
+00:46:55,130 --> 00:46:57,130
+Kalemle yani kafadan olmaz.
+
+550
+00:46:57,130 --> 00:46:59,130
+Analitik çözüm dediğim gibi
+
+551
+00:46:59,130 --> 00:47:01,130
+kağıt üzerinde çözüm üretmeye çalışacağız.
+
+552
+00:47:01,130 --> 00:47:03,130
+Çözebiliriz.
+
+553
+00:47:03,130 --> 00:47:05,130
+Parçalı integral oluyor galiba.
+
+554
+00:47:05,130 --> 00:47:07,130
+Kısmi integral, integration by parts yapıp
+
+555
+00:47:07,130 --> 00:47:09,130
+veya ona da gerek yok.
+
+556
+00:47:09,130 --> 00:47:11,130
+Sinus 5t dediğimiz şey şudur.
+
+557
+00:47:11,130 --> 00:47:14,699
+E üzeri 5t
+
+558
+00:47:14,699 --> 00:47:16,699
+eksi
+
+559
+00:47:16,699 --> 00:47:18,699
+e üzeri eksi 5t
+
+560
+00:47:18,699 --> 00:47:20,699
+bölü
+
+561
+00:47:20,699 --> 00:47:22,699
+2j
+
+562
+00:47:22,699 --> 00:47:24,699
+j sanat sayı
+
+563
+00:47:24,699 --> 00:47:26,699
+Bunu şurada getirip yerine yazarsanız
+
+564
+00:47:26,699 --> 00:47:28,699
+E üzeri 5t'ler cinsinden
+
+565
+00:47:28,699 --> 00:47:30,699
+kısmi integrele gerek kalmadan
+
+566
+00:47:30,699 --> 00:47:32,699
+üstü sayılar
+
+567
+00:47:32,699 --> 00:47:34,699
+işlemleriyle farklı
+
+568
+00:47:34,699 --> 00:47:36,699
+E üzeri 5t'lerin işlemi var burada.
+
+569
+00:47:36,699 --> 00:47:38,699
+O da çıkar.
+
+570
+00:47:38,699 --> 00:47:40,699
+Biraz daha zorlaştırayım.
+
+571
+00:47:40,699 --> 00:47:44,010
+Y eşittir
+
+572
+00:47:44,010 --> 00:47:47,960
+Arc
+
+573
+00:47:47,960 --> 00:47:49,960
+Tangent T
+
+574
+00:47:49,960 --> 00:47:51,960
+Sinus 5t
+
+575
+00:47:51,960 --> 00:47:53,960
+E üzeri eksi 5t
+
+576
+00:47:53,960 --> 00:47:55,960
+2 üzeri
+
+577
+00:47:55,960 --> 00:47:57,960
+şöyle diyelim
+
+578
+00:47:57,960 --> 00:47:59,960
+2 üzeri t dt
+
+579
+00:47:59,960 --> 00:48:01,960
+Bu çözülür mü?
+
+580
+00:48:01,960 --> 00:48:11,739
+Tamine kısmi integrasyonda çözemez miyiz?
+
+581
+00:48:11,739 --> 00:48:13,739
+Evet.
+
+582
+00:48:13,739 --> 00:48:15,739
+Ne kadar fazla şey olursa olsun
+
+583
+00:48:15,739 --> 00:48:17,739
+kısmi integrali belki 5 defa yapacağız
+
+584
+00:48:17,739 --> 00:48:19,739
+belki 7 defa yapacağız.
+
+585
+00:48:19,739 --> 00:48:21,739
+Çözülür.
+
+586
+00:48:21,739 --> 00:48:23,739
+Ama normal şartlar altında
+
+587
+00:48:23,739 --> 00:48:25,739
+bu denklemi
+
+588
+00:48:25,739 --> 00:48:27,739
+yani normal bir birim zamanında
+
+589
+00:48:27,739 --> 00:48:29,739
+el ile çözmek çok akıl kârı değil.
+
+590
+00:48:29,739 --> 00:48:31,739
+Ya bir hesaplayıcı kullanacağız
+
+591
+00:48:31,739 --> 00:48:33,739
+ki
+
+592
+00:48:33,739 --> 00:48:35,739
+online solverlar var
+
+593
+00:48:35,739 --> 00:48:37,739
+yani bu tarz uygulamalar var
+
+594
+00:48:37,739 --> 00:48:39,739
+algoritmik olarak bunun analitik çözümünü bize veriyor.
+
+595
+00:48:39,739 --> 00:48:41,739
+Yani
+
+596
+00:48:41,739 --> 00:48:43,739
+Matlab gibi, Python gibi dillerde
+
+597
+00:48:43,739 --> 00:48:45,739
+sembolik kütüphaneler var
+
+598
+00:48:45,739 --> 00:48:47,739
+bunun bu integrenin
+
+599
+00:48:47,739 --> 00:48:49,739
+sonucunu bize hesaplayabiliyor.
+
+600
+00:48:49,739 --> 00:48:51,739
+Peki.
+
+601
+00:48:51,739 --> 00:48:53,739
+Bu integral
+
+602
+00:48:53,739 --> 00:48:55,739
+dışında şöyle bir denklemimiz olsaydı
+
+603
+00:48:55,739 --> 00:48:57,739
+bir de ona bakalım.
+
+604
+00:48:57,739 --> 00:48:59,739
+Nasıl bir denklem?
+
+605
+00:49:17,739 --> 00:49:19,739
+Şimdi bu denklem böyle bir sistem var elimizde
+
+606
+00:49:19,739 --> 00:49:21,739
+yani bir eşitlik ortaya çıkmış
+
+607
+00:49:21,739 --> 00:49:23,739
+bu eşitliği çözebilir miyiz?
+
+608
+00:49:23,739 --> 00:49:29,519
+Hocam soldaki yazdığınız
+
+609
+00:49:29,519 --> 00:49:31,519
+denklem vardı ya
+
+610
+00:49:31,519 --> 00:49:33,519
+sin 5'te eşittir
+
+611
+00:49:33,519 --> 00:49:35,519
+e üzeri 5'te ekse, e üzer eksi 5'te
+
+612
+00:49:35,519 --> 00:49:37,519
+sin kare 5'te yerine
+
+613
+00:49:37,519 --> 00:49:39,519
+onun karesini yazabilir miyiz?
+
+614
+00:49:39,519 --> 00:49:41,519
+Yani bunun karesini
+
+615
+00:49:41,519 --> 00:49:43,519
+yazdık tamam olabilir.
+
+616
+00:49:43,519 --> 00:49:45,519
+Keşke onu yazmasaydım şimdi.
+
+617
+00:49:45,519 --> 00:49:47,519
+Tamam oldu onu yazdık.
+
+618
+00:49:47,519 --> 00:49:49,519
+Sonra onun karesini aldık
+
+619
+00:49:49,519 --> 00:49:51,519
+işte kare açılımından.
+
+620
+00:49:51,519 --> 00:49:53,519
+200'leri t'ye işte belki logaritmayla
+
+621
+00:49:53,519 --> 00:49:55,519
+falan bir şekilde bir şeyler çıkabilir diyorsun.
+
+622
+00:49:55,519 --> 00:49:57,519
+Tamam güzel.
+
+623
+00:49:57,519 --> 00:49:59,519
+Hani bunu bilmeseydik belki
+
+624
+00:49:59,519 --> 00:50:01,519
+çözemezdik diyebilirdik.
+
+625
+00:50:01,519 --> 00:50:03,519
+Buna şöyle bir şey
+
+626
+00:50:03,519 --> 00:50:05,519
+daha ekleyelim.
+
+627
+00:50:05,519 --> 00:50:09,150
+Farklı bir şey yazalım.
+
+628
+00:50:09,150 --> 00:50:19,360
+T kare sin 5'te eşittir.
+
+629
+00:50:19,360 --> 00:50:22,699
+cos e üzeri.
+
+630
+00:50:22,699 --> 00:50:26,010
+Böyle bir şey olsun.
+
+631
+00:50:26,010 --> 00:50:28,010
+Hani şunu da şunu doğrudan
+
+632
+00:50:28,010 --> 00:50:30,010
+kullanırsak yine o çıkmayacak
+
+633
+00:50:30,010 --> 00:50:32,010
+çünkü cos'u bilmiyoruz.
+
+634
+00:50:32,010 --> 00:50:34,010
+Böyle bir denklem
+
+635
+00:50:34,010 --> 00:50:36,010
+verildiğinde bize birazdan
+
+636
+00:50:36,010 --> 00:50:38,010
+şey içerisinde de örnek var slide içerisinde
+
+637
+00:50:38,010 --> 00:50:40,010
+farklı örnek var.
+
+638
+00:50:40,010 --> 00:50:42,010
+Arkadaşlar denklemleri de çözme
+
+639
+00:50:42,010 --> 00:50:44,010
+yöntemlerine baktığımızda işte bilinenler
+
+640
+00:50:44,010 --> 00:50:46,010
+bir tarafa, bilinmeyenler bir tarafa
+
+641
+00:50:46,010 --> 00:50:48,010
+böyle bir hareket edemiyoruz.
+
+642
+00:50:48,010 --> 00:50:50,010
+Her şey neredeyse bilinmeyenlerden
+
+643
+00:50:50,010 --> 00:50:52,010
+oluşuyor bu bir.
+
+644
+00:50:52,010 --> 00:50:54,010
+Sonra
+
+645
+00:50:54,010 --> 00:50:56,010
+diferansiyel denklem çoğunuzu görmediniz
+
+646
+00:50:56,010 --> 00:50:58,010
+ama belki göreceksiniz. Differansiyel
+
+647
+00:50:58,010 --> 00:51:00,010
+çözme yöntemleriyle
+
+648
+00:51:00,010 --> 00:51:02,010
+bu denklem çünkü bu bir diferansiyel
+
+649
+00:51:02,010 --> 00:51:04,010
+denklem değil çözülmüyor.
+
+650
+00:51:04,010 --> 00:51:06,010
+O zaman ne yapılıyor?
+
+651
+00:51:06,010 --> 00:51:08,010
+Analitik çözümün
+
+652
+00:51:08,010 --> 00:51:10,010
+yapılamadığı durumlarda
+
+653
+00:51:10,010 --> 00:51:12,010
+nümerik çözümler yapılıyor.
+
+654
+00:51:12,010 --> 00:51:14,010
+Ne demek nümerik çözüm?
+
+655
+00:51:14,010 --> 00:51:16,010
+T yerine değer veriyoruz.
+
+656
+00:51:16,010 --> 00:51:18,010
+T yerine 0 verelim diyoruz.
+
+657
+00:51:18,010 --> 00:51:20,010
+İşte bir değer geldi.
+
+658
+00:51:20,010 --> 00:51:22,010
+Sonra diyoruz ki T yerine başka bir 1 verelim.
+
+659
+00:51:22,010 --> 00:51:24,010
+Veya 0'dan sonra
+
+660
+00:51:24,010 --> 00:51:26,010
+belli bir artırım 0.01
+
+661
+00:51:26,010 --> 00:51:28,010
+1 veririm. Sonra başka bir
+
+662
+00:51:28,010 --> 00:51:30,010
+değer veririm. Bu şekilde
+
+663
+00:51:30,010 --> 00:51:32,010
+iteratif
+
+664
+00:51:32,010 --> 00:51:34,010
+süreçlerle, tekrarlayan
+
+665
+00:51:34,010 --> 00:51:36,010
+süreçlerle bu denklemlerde
+
+666
+00:51:36,010 --> 00:51:38,010
+nümerik çözümler bulma
+
+667
+00:51:38,010 --> 00:51:40,010
+konusu, işte bu dersin en
+
+668
+00:51:40,010 --> 00:51:42,010
+önemli konularından bir tanesi.
+
+669
+00:51:42,010 --> 00:51:44,010
+Sayısal analiz dediğimiz şey
+
+670
+00:51:44,010 --> 00:51:46,010
+bu dersin en
+
+671
+00:51:46,010 --> 00:51:48,010
+hayati noktalarından bir tanesi.
+
+672
+00:51:48,010 --> 00:51:50,010
+Mesela biz integrali ne için
+
+673
+00:51:50,010 --> 00:51:52,010
+kullanıyoruz? Alan hesabı için
+
+674
+00:51:52,010 --> 00:51:54,010
+kullanabiliriz değil mi? 2 nokta arasında
+
+675
+00:51:54,010 --> 00:51:56,010
+bir fonksiyonun altında kalan alandı.
+
+676
+00:51:56,010 --> 00:51:58,010
+Birinci dereceden
+
+677
+00:51:58,010 --> 00:52:00,010
+tek değişkenli olabilir,
+
+678
+00:52:00,010 --> 00:52:02,010
+çok değişkenli olabilir. Bu boyuta
+
+679
+00:52:02,010 --> 00:52:04,010
+göre değişiyor. Ama o alacağımız
+
+680
+00:52:04,010 --> 00:52:06,010
+integral şu şekilde
+
+681
+00:52:06,010 --> 00:52:08,010
+çok karmaşık bir integrerse
+
+682
+00:52:08,010 --> 00:52:10,010
+bunun mesela sosyal
+
+683
+00:52:10,010 --> 00:52:12,010
+integrer yöntemleriyle çözümü
+
+684
+00:52:12,010 --> 00:52:14,010
+söz konusu. Çünkü
+
+685
+00:52:14,010 --> 00:52:16,010
+bunun hesabı edilmesi
+
+686
+00:52:16,010 --> 00:52:18,010
+hani biraz önce söylediğim
+
+687
+00:52:18,010 --> 00:52:20,010
+elektronik hesaplayıcılar olmasa,
+
+688
+00:52:20,010 --> 00:52:22,010
+hazır fonksiyonlar olmasa bunu
+
+689
+00:52:22,010 --> 00:52:24,010
+çözmek bizim için çok çok zor.
+
+690
+00:52:24,010 --> 00:52:26,010
+Ama böyle bir
+
+691
+00:52:26,010 --> 00:52:28,010
+denklem var yani böyle bir problem var.
+
+692
+00:52:28,010 --> 00:52:30,010
+O problem bu denklemi çözünce çözülecek.
+
+693
+00:52:30,010 --> 00:52:32,010
+O zaman ne yapacağız? Bunu bir şekilde
+
+694
+00:52:32,010 --> 00:52:34,010
+numelik yöntemlerle
+
+695
+00:52:34,010 --> 00:52:36,010
+çözeceğiz. Tabii numelik
+
+696
+00:52:36,010 --> 00:52:38,010
+yöntemlerle çözürürken, çözerken
+
+697
+00:52:38,010 --> 00:52:40,010
+exact solution
+
+698
+00:52:40,010 --> 00:52:42,010
+dediğimiz, bu kavramı unutmayın.
+
+699
+00:52:42,010 --> 00:52:44,010
+Ne demek?
+
+700
+00:52:44,010 --> 00:52:46,010
+Tam çözüm,
+
+701
+00:52:46,010 --> 00:52:48,010
+yani sıfır hatasız
+
+702
+00:52:48,010 --> 00:52:50,010
+çözüm her zaman mümkün
+
+703
+00:52:50,010 --> 00:52:52,010
+mü? Mümkün değil.
+
+704
+00:52:52,010 --> 00:52:54,010
+Ne oluyor burada?
+
+705
+00:52:54,010 --> 00:52:57,929
+Optimum solution.
+
+706
+00:52:57,929 --> 00:52:59,929
+Bu optimum solution,
+
+707
+00:52:59,929 --> 00:53:01,929
+exact solution'a belli bir
+
+708
+00:53:01,929 --> 00:53:03,929
+epsilon hata değeri kadar
+
+709
+00:53:03,929 --> 00:53:05,929
+yakın olan çözüm demektir.
+
+710
+00:53:05,929 --> 00:53:07,929
+Optimizasyon
+
+711
+00:53:07,929 --> 00:53:09,929
+konusu da buradan türüyor aslında.
+
+712
+00:53:09,929 --> 00:53:11,929
+Yani bir fonksiyonun optimizasyonunu
+
+713
+00:53:11,929 --> 00:53:13,929
+belki lisede
+
+714
+00:53:13,929 --> 00:53:15,929
+türev konusunda gördünüz veya bu
+
+715
+00:53:15,929 --> 00:53:17,929
+kalkulis derslerini de göreceksiniz.
+
+716
+00:53:17,929 --> 00:53:19,929
+Ne oluyor? Böyle bir fonksiyonunuz var.
+
+717
+00:53:19,929 --> 00:53:21,929
+Optimum, minimum, maksimum
+
+718
+00:53:21,929 --> 00:53:23,929
+noktalarını buluyorsunuz değil mi?
+
+719
+00:53:23,929 --> 00:53:25,929
+Eğer bu
+
+720
+00:53:25,929 --> 00:53:27,929
+basit bir fonksiyonsa bulmak
+
+721
+00:53:27,929 --> 00:53:29,929
+mümkün. İşte türevini alırsınız.
+
+722
+00:53:29,929 --> 00:53:31,929
+Birinci dereceden türe, bir de ikinci dereceden
+
+723
+00:53:31,929 --> 00:53:33,929
+türevine bakarsınız. Kısmen
+
+724
+00:53:33,929 --> 00:53:35,929
+mümkün. Ama
+
+725
+00:53:35,929 --> 00:53:37,929
+fonksiyonumuz böyle değil de
+
+726
+00:53:37,929 --> 00:53:39,929
+şöyle bir şey olsaydı.
+
+727
+00:53:39,929 --> 00:53:41,929
+Mesela
+
+728
+00:53:41,929 --> 00:53:45,179
+şöyle
+
+729
+00:53:45,179 --> 00:53:47,179
+süreksizlik noktaları şey diyebileceğimiz
+
+730
+00:53:47,179 --> 00:53:49,179
+yani türev almanın mümkün
+
+731
+00:53:49,179 --> 00:53:51,179
+olmadığı noktalar olsaydı.
+
+732
+00:53:51,179 --> 00:53:53,179
+Her noktasında sürekli olmayan bir
+
+733
+00:53:53,179 --> 00:53:55,179
+fonksiyon olsaydı. İşte o zaman işimiz
+
+734
+00:53:55,179 --> 00:53:57,179
+zor. Türev işe yaramıyor.
+
+735
+00:53:57,179 --> 00:53:59,179
+Optimizasyon algoritmaları
+
+736
+00:53:59,179 --> 00:54:01,179
+devreye giriyor. Hatta bu
+
+737
+00:54:01,179 --> 00:54:03,179
+sayısal analizin içinden ayrılmış
+
+738
+00:54:03,179 --> 00:54:05,179
+yeni bir bilim gibi artık.
+
+739
+00:54:05,179 --> 00:54:07,179
+Optimizasyon diye ders var veya onun
+
+740
+00:54:07,179 --> 00:54:09,179
+alakalı başka yapay zeka
+
+741
+00:54:09,179 --> 00:54:11,179
+teknikleri var.
+
+742
+00:54:11,179 --> 00:54:13,179
+Bu derste arkadaşlar bunların temelleri
+
+743
+00:54:13,179 --> 00:54:15,179
+atılıyor. Ama
+
+744
+00:54:15,179 --> 00:54:17,179
+buraya kadar söylediklerimin özeti
+
+745
+00:54:17,179 --> 00:54:19,179
+bilmeniz gereken özet,
+
+746
+00:54:19,179 --> 00:54:21,179
+analitik yöntemlerle çözülemeyen
+
+747
+00:54:21,179 --> 00:54:23,179
+bir denklemin
+
+748
+00:54:23,179 --> 00:54:25,179
+sayısal yöntemlerle
+
+749
+00:54:25,179 --> 00:54:27,179
+belli bir hata ile
+
+750
+00:54:27,179 --> 00:54:29,179
+çözülmesi süreçlerine biz
+
+751
+00:54:29,179 --> 00:54:31,179
+sayısal analiz dersinin adını veriyoruz.
+
+752
+00:54:31,179 --> 00:54:33,179
+Peki neden
+
+753
+00:54:33,179 --> 00:54:35,179
+denklem çözmek bilgisayar mühendisleri
+
+754
+00:54:35,179 --> 00:54:37,179
+için önemli?
+
+755
+00:54:37,179 --> 00:54:39,179
+Aslında önceden
+
+756
+00:54:39,179 --> 00:54:41,179
+bu bizim için daha önemli bir dersi
+
+757
+00:54:41,179 --> 00:54:43,179
+sayısal analiz. Günümüzde
+
+758
+00:54:43,179 --> 00:54:45,179
+bilgisayar mühendisleri daha çok
+
+759
+00:54:45,179 --> 00:54:47,179
+yazılım alanında ilerlediği için
+
+760
+00:54:47,179 --> 00:54:49,179
+kontrol mühendisleri kendi içinde
+
+761
+00:54:49,179 --> 00:54:51,179
+bu alanla uğraşıyor. Elektronikçiler
+
+762
+00:54:51,179 --> 00:54:53,179
+kendi içinde bu alanlarla uğraşıyor.
+
+763
+00:54:53,179 --> 00:54:55,179
+Biz en fazla onlara yazılım
+
+764
+00:54:55,179 --> 00:54:57,179
+desteği veriyoruz. Dolayısıyla
+
+765
+00:54:57,179 --> 00:54:59,179
+bir sistemi kontrol
+
+766
+00:54:59,179 --> 00:55:01,179
+ederken denklem üretmek
+
+767
+00:55:01,179 --> 00:55:03,179
+veya denklemi çözmek
+
+768
+00:55:03,179 --> 00:55:05,179
+bizim pek işimiz değil.
+
+769
+00:55:05,179 --> 00:55:07,179
+Şimdi şundan bahsedeceğim.
+
+770
+00:55:07,179 --> 00:55:09,179
+Şuradan bir şey bulacağım arkadaşlar.
+
+771
+00:55:09,179 --> 00:55:11,179
+Bizim bölümümüzde
+
+772
+00:55:11,179 --> 00:55:13,179
+çok disiplinli tasarım
+
+773
+00:55:13,179 --> 00:55:15,179
+projesi diye bir ders var.
+
+774
+00:55:19,179 --> 00:55:21,179
+Dördüncü sınıfta seçmeli bir ders.
+
+775
+00:55:21,179 --> 00:55:23,179
+Kontrolcüler,
+
+776
+00:55:23,179 --> 00:55:25,179
+ondan sonra elektronikçiler,
+
+777
+00:55:25,179 --> 00:55:27,179
+elektrikçiler ve bilgisayarlar birleşip
+
+778
+00:55:29,179 --> 00:55:31,179
+bir proje ortaya koyuyorlar.
+
+779
+00:55:31,179 --> 00:55:36,510
+Bu projenin geçen dönem
+
+780
+00:55:36,510 --> 00:55:38,510
+ben danışmanıydım. Her ki
+
+781
+00:55:38,510 --> 00:55:40,510
+hocaya bir danışmanlık veriliyor.
+
+782
+00:55:40,510 --> 00:55:42,510
+Oradaki
+
+783
+00:55:42,510 --> 00:55:44,510
+raporu bir size
+
+784
+00:55:44,510 --> 00:55:49,070
+göstermek istiyorum.
+
+785
+00:55:49,070 --> 00:55:51,070
+Neden denklem yapmak
+
+786
+00:55:51,070 --> 00:55:53,070
+burada önemlidir?
+
+787
+00:55:53,070 --> 00:55:55,070
+Örneklemek adına güzel bir
+
+788
+00:55:55,070 --> 00:56:02,280
+örnek olacak.
+
+789
+00:56:02,280 --> 00:56:09,179
+Şimdi bu bir akıllı
+
+790
+00:56:09,179 --> 00:56:11,179
+sera projesiydi.
+
+791
+00:56:11,179 --> 00:56:13,179
+Yani bir
+
+792
+00:56:13,179 --> 00:56:15,179
+sera oluşturacaksınız. Bu sera da
+
+793
+00:56:15,179 --> 00:56:17,179
+sıcaklık kontrolü
+
+794
+00:56:17,179 --> 00:56:19,179
+yapılacak ve bu kontrol
+
+795
+00:56:19,179 --> 00:56:21,179
+uzaktan telefonla yapılacak.
+
+796
+00:56:21,179 --> 00:56:23,179
+Yani seraya gidip de bir şey yapmanız
+
+797
+00:56:23,179 --> 00:56:25,179
+gerekmiyor. Sekiz kişilik
+
+798
+00:56:25,179 --> 00:56:27,179
+bir grubumuz var. İşte burada
+
+799
+00:56:29,179 --> 00:56:31,179
+bilgisayarcı, elektronikçi,
+
+800
+00:56:31,179 --> 00:56:33,179
+elektrikçi ve haberleşme
+
+801
+00:56:33,179 --> 00:56:35,179
+kontrolcü arkadaşlar çalışıyor.
+
+802
+00:56:35,179 --> 00:56:37,179
+Mesela demiş ki bu
+
+803
+00:56:37,179 --> 00:56:39,179
+projenin modelleme kısmı varmış.
+
+804
+00:56:39,179 --> 00:56:41,179
+Bu arkadaş çalışıyormuş.
+
+805
+00:56:41,179 --> 00:56:43,179
+İşte bu arkadaşlar da
+
+806
+00:56:43,179 --> 00:56:45,179
+modellemek. Ne demek modelleme?
+
+807
+00:56:45,179 --> 00:56:47,179
+Şu.
+
+808
+00:56:47,179 --> 00:56:49,179
+Seranın böyle bir
+
+809
+00:56:49,179 --> 00:56:51,179
+fiziki yapısı var.
+
+810
+00:56:51,179 --> 00:56:53,179
+Buranın ısıtılmasıyla alakalı bir
+
+811
+00:56:53,179 --> 00:56:55,179
+ortaya koymamız gerekiyor.
+
+812
+00:56:55,179 --> 00:56:57,179
+İşte tasarlanan malzeme
+
+813
+00:56:57,179 --> 00:56:59,179
+mesela. 2 santim
+
+814
+00:56:59,179 --> 00:57:01,179
+kalınlığında bu levhalar
+
+815
+00:57:01,179 --> 00:57:03,179
+kullanılmış. Boyutları.
+
+816
+00:57:03,179 --> 00:57:05,179
+Tabii bu ölçekli bir sera.
+
+817
+00:57:05,179 --> 00:57:07,179
+Gerçek dünyada bunun daha
+
+818
+00:57:07,179 --> 00:57:09,179
+fazla büyükleri var.
+
+819
+00:57:09,179 --> 00:57:11,179
+Bu seranın dış ortamla
+
+820
+00:57:11,179 --> 00:57:13,179
+ilişkisi kesilmiş.
+
+821
+00:57:13,179 --> 00:57:15,179
+Sıra içindeki 4 metrelik
+
+822
+00:57:15,179 --> 00:57:17,179
+sıra açıkları ve 3 metrede bir
+
+823
+00:57:17,179 --> 00:57:19,179
+bodur elma ağaçları yetiştirilmesi
+
+824
+00:57:19,179 --> 00:57:21,179
+öngörülüyormuş.
+
+825
+00:57:21,179 --> 00:57:23,179
+Bunun böyle spesifikasyonları var.
+
+826
+00:57:23,179 --> 00:57:25,179
+Şimdi buradan ben bu sarayı ne kadar
+
+827
+00:57:25,179 --> 00:57:27,179
+çok ısıtmalıyım, ne kadar
+
+828
+00:57:27,179 --> 00:57:29,179
+hassasiyetle ısıtmalıyım
+
+829
+00:57:29,179 --> 00:57:31,179
+bunun bir denkleminin ortaya
+
+830
+00:57:31,179 --> 00:57:33,179
+konması gerekiyor arkadaşlar.
+
+831
+00:57:33,179 --> 00:57:35,179
+Bununla alakalı başka özellikler
+
+832
+00:57:35,179 --> 00:57:37,179
+bahsedilmiş, modeller söylenmiş.
+
+833
+00:57:37,179 --> 00:57:40,650
+Ve burada aslında bir şey var.
+
+834
+00:57:40,650 --> 00:57:42,650
+Elektronik ve
+
+835
+00:57:42,650 --> 00:57:44,650
+kontrolün hatta elektriğin
+
+836
+00:57:44,650 --> 00:57:46,650
+bu sarayı ısıtmak için
+
+837
+00:57:46,650 --> 00:57:48,650
+bir denklem ortaya koyması gerekiyor.
+
+838
+00:57:48,650 --> 00:57:50,650
+Denklem aşağılarda bir yerde
+
+839
+00:57:50,650 --> 00:57:56,010
+vardı galiba bunu.
+
+840
+00:57:56,010 --> 00:57:58,010
+Doğrudan tabii denklem olarak değil ya
+
+841
+00:57:58,010 --> 00:58:00,010
+şu şekilde grafiksel olarak
+
+842
+00:58:00,010 --> 00:58:02,010
+seranın modelini söylemiş bu arkadaşlar.
+
+843
+00:58:02,010 --> 00:58:04,010
+Belli bir güç
+
+844
+00:58:04,010 --> 00:58:06,010
+verilecek. Bu güç sıcaklık
+
+845
+00:58:06,010 --> 00:58:08,010
+arttıracak veya ısıtıcının
+
+846
+00:58:08,010 --> 00:58:10,010
+gücünü kesecek.
+
+847
+00:58:10,010 --> 00:58:12,010
+Bu ısıtıcının gücü de belli bir referans
+
+848
+00:58:12,010 --> 00:58:14,010
+değere göre
+
+849
+00:58:14,010 --> 00:58:16,010
+sensörlerle algılanacak
+
+850
+00:58:16,010 --> 00:58:18,010
+ve cep telefonuyla
+
+851
+00:58:18,010 --> 00:58:20,010
+gerekirse kontrol yapılacak falan.
+
+852
+00:58:20,010 --> 00:58:22,010
+Bakalım.
+
+853
+00:58:22,010 --> 00:58:24,010
+İşte burada
+
+854
+00:58:24,010 --> 00:58:26,010
+bir kontrol aşamasında elde
+
+855
+00:58:26,010 --> 00:58:28,010
+edilen simülasyon sonuçlarını falan
+
+856
+00:58:28,010 --> 00:58:33,280
+arkadaşlar raporladılar.
+
+857
+00:58:33,280 --> 00:58:35,280
+Şu an şuraya kadarki kısım
+
+858
+00:58:35,280 --> 00:58:37,280
+sıcaklığın
+
+859
+00:58:37,280 --> 00:58:39,280
+modellenmesiyle, yani sayısal
+
+860
+00:58:39,280 --> 00:58:41,280
+analizle alakalı işlemler.
+
+861
+00:58:41,280 --> 00:58:43,280
+Sıcaklığın kontrol edilmesi alakalı
+
+862
+00:58:43,280 --> 00:58:45,280
+üretilen model.
+
+863
+00:58:45,280 --> 00:58:47,280
+Bu model üzerinden
+
+864
+00:58:47,280 --> 00:58:49,280
+o denklemi çözmek gerekiyor.
+
+865
+00:58:49,280 --> 00:58:51,280
+Kontrolcü arkadaşlar bu tarafıyla
+
+866
+00:58:51,280 --> 00:58:53,280
+ilgilendiler. Bilgisayarcılar bu tarafla çok
+
+867
+00:58:53,280 --> 00:58:55,280
+ilgilenmedi.
+
+868
+00:58:55,280 --> 00:58:57,280
+Bizim arkadaşlar da ne yaptı? İşte
+
+869
+00:58:57,280 --> 00:58:59,280
+oraya bir haberleşme yapmak için
+
+870
+00:58:59,280 --> 00:59:01,280
+komik inseri port üzerinden
+
+871
+00:59:01,280 --> 00:59:03,280
+sıcaklık bilgisi alınacak,
+
+872
+00:59:03,280 --> 00:59:05,280
+başka bir yere aktarılacak falan
+
+873
+00:59:05,280 --> 00:59:07,280
+bu tarz işlerle uğraştı.
+
+874
+00:59:07,280 --> 00:59:09,280
+Ve bunun programı yazıldı.
+
+875
+00:59:09,280 --> 00:59:11,280
+İşte cep telefonunda bir uygulama
+
+876
+00:59:11,280 --> 00:59:13,280
+gerçeklendi.
+
+877
+00:59:13,280 --> 00:59:15,280
+Hatta bunun bir ara linki vardı. YouTube'a
+
+878
+00:59:15,280 --> 00:59:17,280
+koymuşlardı. Elektrik Elektronik Fakültesi'nin
+
+879
+00:59:17,280 --> 00:59:19,280
+sayfasında, YouTube sayfasında vardı bu.
+
+880
+00:59:19,280 --> 00:59:22,880
+Şunu açayım isterseniz. Bir
+
+881
+00:59:22,880 --> 00:59:24,880
+iki üç dakika izleyelim. Çok uzun
+
+882
+00:59:24,880 --> 00:59:28,409
+bir video değil. Yalnız
+
+883
+00:59:28,409 --> 00:59:30,409
+şöyle yapacağız.
+
+884
+00:59:30,409 --> 00:59:32,409
+Sesi duymuyorsunuz.
+
+885
+00:59:34,409 --> 00:59:36,409
+Önce bir şeyi kapatıp tekrar açmam
+
+886
+00:59:36,409 --> 00:59:41,289
+gerekiyor. Share
+
+887
+00:59:41,289 --> 00:59:43,289
+sound diyelim.
+
+888
+00:59:43,289 --> 00:59:45,289
+Şu an geliyor mu arkadaşlar görüntü?
+
+889
+00:59:45,289 --> 00:59:49,400
+Geliyor.
+
+890
+00:59:49,400 --> 00:59:51,400
+Elektrik mühendisiniz geliyor mu?
+
+891
+00:59:51,400 --> 00:59:53,400
+Geldi hocam.
+
+892
+00:59:53,400 --> 00:59:55,400
+ane Mantık
+
+893
+00:59:55,400 --> 00:59:57,400
+Qiao
+
+894
+00:59:57,400 --> 01:00:01,400
+Qiao
+
+895
+01:00:01,400 --> 01:00:03,980
+s
+
+896
+01:00:03,980 --> 01:00:05,980
+s
+
+897
+01:00:05,980 --> 01:00:13,980
+s
+
+898
+01:00:13,980 --> 01:00:17,400
+Is
+
+899
+01:00:17,400 --> 01:00:19,400
+j
+
+900
+01:00:19,400 --> 01:00:21,400
+can video geliyor mu?
+
+901
+01:00:21,400 --> 01:00:22,400
+Geldi mi?
+
+902
+01:00:22,400 --> 01:00:23,400
+Geldi.
+
+903
+01:00:23,400 --> 01:00:24,400
+Tamam.
+
+904
+01:00:24,400 --> 01:00:25,400
+Evet hocam.
+
+905
+01:00:25,400 --> 01:00:26,400
+Şundan itibaren dinleyebiliriz.
+
+906
+01:00:26,400 --> 01:00:27,400
+Sera benzetimini simulink ortamında yaptık.
+
+907
+01:00:27,400 --> 01:00:28,400
+Modelimiz şu şekilde.
+
+908
+01:00:28,400 --> 01:00:29,400
+Öncelikle şebeke gerilimini kontrollü bir gerilime çevirerek ıslıcı modeline
+
+909
+01:00:29,400 --> 01:00:30,400
+veriyoruz.
+
+910
+01:00:30,400 --> 01:00:31,400
+Daha sonra ıslıcı modelinden elde ettiğimiz sıcaklık enerjisini greenhouse'a çekiyoruz.
+
+911
+01:00:31,400 --> 01:00:32,400
+Sera modeline çekiyoruz.
+
+912
+01:00:32,400 --> 01:00:33,400
+Sera modeline aynı şekilde dış oradan sıcaklığa alınıyor.
+
+913
+01:00:33,400 --> 01:00:38,400
+Bu iki bloktan çıkan fiziksel sıcaklık sinyalleri bir sıcaklık sensörüne
+
+914
+01:00:38,400 --> 01:00:41,400
+gelerek elektrik sinyallerine dönüştürülüyor.
+
+915
+01:00:42,400 --> 01:00:53,400
+Daha sonra elektrik sinyalleri mikro kontrolcüye geliyor ve buradan hem haberleşme hem de
+
+916
+01:00:53,400 --> 01:00:58,400
+kontrol sinyalinin oluşturulması sağlanıyor.
+
+917
+01:00:58,400 --> 01:01:05,400
+İşte bu mikro kontrolü're gelen mikro kontrolün yaptığı şey aslında o denkleme uygun.
+
+918
+01:01:05,400 --> 01:01:06,400
+Girişe uygun çıktı üretmek.
+
+919
+01:01:06,400 --> 01:01:09,400
+Yani bir denklem var, bir model var.
+
+920
+01:01:09,400 --> 01:01:11,400
+Sera'nın matematiksel modeli.
+
+921
+01:01:11,400 --> 01:01:15,400
+Bu model bir denklem yani veya bir fonksiyon diyebiliriz.
+
+922
+01:01:15,400 --> 01:01:19,400
+Bir değişkenli olabilir, iki değişkenli olabilir, linear olur, non-linear olur.
+
+923
+01:01:19,400 --> 01:01:24,400
+Bu fonksiyon üzerinde giriş ve çıkışları kontrol eden bir denetleyici yani bir bilgisayar
+
+924
+01:01:24,400 --> 01:01:25,400
+diyelim.
+
+925
+01:01:25,400 --> 01:01:29,400
+Sinyalimiz tria kullanılarak kontrol edilmektedir.
+
+926
+01:01:29,400 --> 01:01:35,400
+Sistemimizi Sera'nın modeliyle senkronize etmek için kontrol sinyalini periodik
+
+927
+01:01:35,400 --> 01:01:37,400
+olarak tria gönderebiliriz.
+
+928
+01:01:37,400 --> 01:01:40,400
+Bunu da sıfır geçiş dedektörüyle sağlarız.
+
+929
+01:01:40,400 --> 01:01:46,400
+Sıfır geçiş noktalarını tespit ederek denetleyiciden senkronize bir şekilde kontrol sinyali
+
+930
+01:01:46,400 --> 01:01:50,400
+gönderdiğimizde ısıtıcıya sağlanan güç çıkışını kontrol edebiliriz.
+
+931
+01:01:50,400 --> 01:01:52,400
+Mikro kontrolü burası.
+
+932
+01:01:52,400 --> 01:01:57,400
+Burası kontrol sinyalini alıyoruz.
+
+933
+01:01:57,400 --> 01:02:02,400
+İçerisinde, mikro kontrolü için basit şeyler var.
+
+934
+01:02:02,400 --> 01:02:06,400
+Burada, her algoritmalarımızı alabiliriz.
+
+935
+01:02:06,400 --> 01:02:10,400
+Buradan, bir off-control kullanıyoruz.
+
+936
+01:02:10,400 --> 01:02:18,400
+Bu, kontrol sinyalini alıp, bir kısım arası arasındaki kontrol üretimini yaparız.
+
+937
+01:02:18,400 --> 01:02:22,400
+Bu kontrolün algoritmalı.
+
+938
+01:02:22,400 --> 01:02:26,400
+Burası, elektronik parçalarımız.
+
+939
+01:02:26,400 --> 01:02:33,400
+Burada, elektronik parçalarımızla bağlı olan elektronik parçalarımızla
+
+940
+01:02:33,400 --> 01:02:36,400
+kullanılan temperature sensörlerimiz var.
+
+941
+01:02:36,400 --> 01:02:40,400
+Android uygulamalısından Serayla yoldaşabilmek için retrofit kitabı anisi kullanılır.
+
+942
+01:02:40,400 --> 01:02:49,400
+Buradan da, seradanın sıcaklık değeri 24°C'ye yükseltilmesi için istekte bulunabilir.
+
+943
+01:02:49,400 --> 01:02:53,400
+Buradan da, daha sonrasında seradan tepki vererek sıcaklık değerleri güncellenir.
+
+944
+01:02:53,400 --> 01:02:58,400
+Seradan anlık sıcaklık değeri alınır, seraya istenilen sıcaklık değeri gönderilir.
+
+945
+01:02:58,400 --> 01:03:04,400
+Uygulamadan istenilen sıcaklık değeri alınır ve seradan anlık sıcaklık değeri gönderilir.
+
+946
+01:03:04,400 --> 01:03:07,400
+Seranın haberleşmesini Python kumu olarak yaptık.
+
+947
+01:03:07,400 --> 01:03:13,400
+Seri porttan Serayla haberleşip, servila da istek atarak sıcaklık verilerini iletiyoruz.
+
+948
+01:03:13,400 --> 01:03:18,400
+Burada da, birinci serada sıcaklık 30°C'ye ayarlandı.
+
+949
+01:03:18,400 --> 01:03:21,400
+Şimdi sıcaklığı düşüreceğiz.
+
+950
+01:03:21,400 --> 01:03:23,400
+Sıcaklık 14°C'ye ayarladık, düştüğünü görüyoruz.
+
+951
+01:03:23,400 --> 01:03:26,400
+Alttaki en alttaki 3. seriyi de kapattık.
+
+952
+01:03:26,400 --> 01:03:29,400
+O da normal olarak 0°C'ye ayarlandı.
+
+953
+01:03:29,400 --> 01:03:38,260
+Ama ortam sıcaklığının üstteki grafikten gördüğümüz üzere 8°C olduğu için de maksimum düşebileceği sıcaklıkta 8°C olarak kalıyor.
+
+954
+01:03:38,260 --> 01:03:45,260
+Sağ tarafta akan yazılardan da görebileceğiniz üzere, ilk önce serverdan hedef sıcaklığı çekip bunu seramızı iletiyoruz.
+
+955
+01:03:45,260 --> 01:03:49,260
+Ardından da seranın anlık sıcaklığını alıp API Server'a iletiyoruz.
+
+956
+01:03:49,260 --> 01:04:00,960
+Böylelikle uygulamada da görüntülememizi sağlıyor.
+
+957
+01:04:00,960 --> 01:04:04,960
+Kapandığı zamanda seranın sıcaklığı dış sıcaklığa kadar düşmeye başlıyor.
+
+958
+01:04:04,960 --> 01:04:06,960
+Bunu da grafikten görebiliriz.
+
+959
+01:04:06,960 --> 01:04:10,960
+Grafik de üst tarafta gördüğünüz üzere dış sıcaklık şu an 6°C civarında.
+
+960
+01:04:10,960 --> 01:04:34,480
+Seramız da yavaş yavaş o sıcaklığa düşüyor.
+
+961
+01:04:34,480 --> 01:04:35,480
+Evet.
+
+962
+01:04:35,480 --> 01:04:40,480
+Şimdi ne olduk hocam? Nereden nereye geldik? Bir sürü şey var burada falan diyor olabilirsiniz.
+
+963
+01:04:40,480 --> 01:04:42,480
+Normaldir.
+
+964
+01:04:42,480 --> 01:04:48,480
+Çünkü bir kontrolcünün yaptığı kontrol sistem tasarımı var.
+
+965
+01:04:48,480 --> 01:04:53,480
+Sonra o tasarımından yola çıkarak bir gerçekleme var, simülasyon.
+
+966
+01:04:53,480 --> 01:05:00,480
+İşte haberleşme protokolleri, ondan sonra kontrol sistemin güç sistemiyle entegrasyonu.
+
+967
+01:05:00,480 --> 01:05:06,480
+Çünkü bu mikro işlemciyle çalışıyor ama Sera dediğimiz şey 220 V'larla çalışacak.
+
+968
+01:05:06,480 --> 01:05:08,480
+Mikro işlemciler işte 5 V, 12 V'la çalışıyor.
+
+969
+01:05:08,480 --> 01:05:12,480
+O arada bir güç elektronik operasyonları var.
+
+970
+01:05:12,480 --> 01:05:18,480
+Onun dışında birkaç tane de farklı farklı modül var.
+
+971
+01:05:18,480 --> 01:05:27,480
+Ama bu işin bir tarafında ve en kilit noktasında olan şey bir sistemin modelini oluşturmaktır arkadaşlar.
+
+972
+01:05:27,480 --> 01:05:30,480
+Sistem modeli dediğimiz şey de kabaca şudur.
+
+973
+01:05:30,480 --> 01:05:36,480
+Ben bu sisteme girişler vereceğim. Kaç tane giriş verdiğim önemli değil.
+
+974
+01:05:36,480 --> 01:05:38,480
+Ve belli çıktılar elde edeceğim.
+
+975
+01:05:38,480 --> 01:05:44,480
+Bu inputlardan outputları üreten fonksiyon nedir?
+
+976
+01:05:44,480 --> 01:05:49,480
+Bunun modelini oluşturmak bizim için önemli olan şey, model tasarımı.
+
+977
+01:05:49,480 --> 01:05:52,480
+Mesela Newton'un soğuma denklemi diye bir şey var.
+
+978
+01:05:52,480 --> 01:05:54,480
+Bunu bugün araştırmanızı istiyorum.
+
+979
+01:05:54,480 --> 01:05:57,480
+Newton soğuma denklemi.
+
+980
+01:05:57,480 --> 01:06:03,610
+Bunu şeyde kullanılıyor arkadaşlar.
+
+981
+01:06:04,610 --> 01:06:06,610
+Otopside kullanıyorlar.
+
+982
+01:06:06,610 --> 01:06:08,610
+Mesela bir ceset var.
+
+983
+01:06:08,610 --> 01:06:11,610
+Bu soğuma denkleminden yararlanarak.
+
+984
+01:06:11,610 --> 01:06:17,610
+Ben T süresinde saat 13.00'da cesetten bir sıcaklık bilgisi alıyorum.
+
+985
+01:06:17,610 --> 01:06:20,610
+Belli bir süre sonra tekrar o bilgiyi alıyorum.
+
+986
+01:06:20,610 --> 01:06:23,610
+İşte ceselin kütlesi vs. o tür bilgiler de var elimizde.
+
+987
+01:06:23,610 --> 01:06:25,610
+Acaba ne zaman vefat etti?
+
+988
+01:06:25,610 --> 01:06:28,610
+Ölüm saatinin tespit tahmin edilmesi ile alakalı.
+
+989
+01:06:29,610 --> 01:06:32,610
+Bu bir sayısal analiz konusudur aslında.
+
+990
+01:06:32,610 --> 01:06:36,610
+Hem diferansiyel denklemler var hem de sayısal analiz var.
+
+991
+01:06:36,610 --> 01:06:47,610
+Bizim dersimiz bu çözülecek denklemleri optimum bir şekilde çözmeyi amaçlayan yöntemlerle oluşuyor ilk konularımız özellikle.
+
+992
+01:06:47,610 --> 01:06:49,610
+Belli bir hatamız olacak tabi ki.
+
+993
+01:06:49,610 --> 01:06:53,610
+Bu hatayı minimizeceğiz ve burada bir sürü yöntem göreceksiniz.
+
+994
+01:06:53,610 --> 01:06:57,610
+Bu yöntemler hani felsefi akımlar gibi biri diğerinin eksiğini görüyor.
+
+995
+01:06:57,610 --> 01:06:59,610
+Onu kapatmak için böyle bir şey öneriyor.
+
+996
+01:06:59,610 --> 01:07:01,610
+İşte bir yöntem var.
+
+997
+01:07:01,610 --> 01:07:04,610
+O diyor ki bu şu açıdan sıkıntılıdır.
+
+998
+01:07:04,610 --> 01:07:05,610
+Ben başka bir yöntem öneriyorum.
+
+999
+01:07:05,610 --> 01:07:06,610
+Hepsi kullanılıyor.
+
+1000
+01:07:06,610 --> 01:07:08,610
+Hepsi duruma özel kullanılıyor.
+
+1001
+01:07:08,610 --> 01:07:15,610
+Sayısal analiz yöntemlerinin hangi yöntem hangi duruma uygulanıyor diye bir kaides yok.
+
+1002
+01:07:15,610 --> 01:07:18,610
+Farklı yöntemler kullanıyorsunuz.
+
+1003
+01:07:18,610 --> 01:07:21,610
+En az hatayı en uygun sonucu.
+
+1004
+01:07:21,610 --> 01:07:25,610
+Siz nerede elde ettiyseniz o yöntemi kullanıyorsunuz.
+
+1005
+01:07:25,610 --> 01:07:28,610
+Şimdi saatimiz tam bir saat oldu.
+
+1006
+01:07:28,610 --> 01:07:30,610
+İsterseniz bir beş dakika ara veririm.
+
+1007
+01:07:30,610 --> 01:07:36,610
+Sonra geldiğimizde biraz daha bir şeyler konuşup dersi yarım saat kırk dakika içinde bitireceğim.
+
+1008
+01:07:36,610 --> 01:07:39,610
+Beş dakika ara yeter bizim için.
+
+1009
+01:07:39,610 --> 01:07:41,610
+Görüşmek üzere.
+
+1010
+01:07:41,610 --> 01:12:02,579
+Evet.
+
+1011
+01:12:02,579 --> 01:12:06,689
+Beş dakika çabuk geçti değil mi?
+
+1012
+01:12:06,689 --> 01:12:13,079
+Hocam bir şey sorabilir miyim?
+
+1013
+01:12:13,079 --> 01:12:14,079
+Buyurun.
+
+1014
+01:12:14,079 --> 01:12:21,079
+Takara sin5'te denkleminde dediniz ya değer vererek bulacağız optimum solution'ı.
+
+1015
+01:12:21,079 --> 01:12:25,079
+Nasıl bileceğiz ki optimum solution'a kadar gittiğimizi?
+
+1016
+01:12:25,079 --> 01:12:35,079
+Bu verdiğim bir örnek ama bu denklemde bilinmeyen tabii iki tarafta da sadece T var ama başka değişkenlerin de olduğunu kabul edelim.
+
+1017
+01:12:35,079 --> 01:12:40,079
+Tek tek iteratif olarak elimizde gerçek değerler var.
+
+1018
+01:12:40,079 --> 01:12:43,079
+Bu gerçek değerlerden yola çıkarak bir de elde ettiğimiz değerler var.
+
+1019
+01:12:43,079 --> 01:12:45,079
+İşte sıfır nokta birer artışla.
+
+1020
+01:12:45,079 --> 01:12:49,079
+Belli bir hataya ulaşana kadar bu işlemi tekrar edeceğiz.
+
+1021
+01:12:49,079 --> 01:12:51,079
+T'nin değerini.
+
+1022
+01:12:51,079 --> 01:12:54,079
+Çünkü buradan bir T değeri verdik.
+
+1023
+01:12:54,079 --> 01:12:58,079
+İşte T kara sin5'te sıfır verdiğimizi kabul edelim.
+
+1024
+01:12:58,079 --> 01:12:59,079
+Burada da başka bir şey verdik.
+
+1025
+01:12:59,079 --> 01:13:00,079
+Eşit çıkıyor mu?
+
+1026
+01:13:00,079 --> 01:13:01,079
+Çıkmıyor.
+
+1027
+01:13:01,079 --> 01:13:02,079
+Başka bir T vereceğiz.
+
+1028
+01:13:02,079 --> 01:13:03,079
+Başka bir T vereceğiz.
+
+1029
+01:13:03,079 --> 01:13:05,079
+Bu iteratif olarak devam edecek.
+
+1030
+01:13:05,079 --> 01:13:07,079
+Tabii bu denklem belki bunu çok iyi yansıtmıyor.
+
+1031
+01:13:07,079 --> 01:13:10,079
+Ama bunu anlatan farklı durumlar var.
+
+1032
+01:13:11,079 --> 01:13:15,079
+Zamanı geldikçe yani ben sadece şu an böyle örnek olsun diye kafadan yazdığım bir şey.
+
+1033
+01:13:15,079 --> 01:13:19,079
+Çünkü bu eşit değil bir T değerinin sağlaması lazım.
+
+1034
+01:13:19,079 --> 01:13:20,079
+Öyle değil mi?
+
+1035
+01:13:20,079 --> 01:13:21,079
+Evet.
+
+1036
+01:13:21,079 --> 01:13:24,079
+Yani şey kabul edelim.
+
+1037
+01:13:24,079 --> 01:13:27,770
+Denklemimiz şu olsun.
+
+1038
+01:13:27,770 --> 01:13:29,770
+2T artı 3.
+
+1039
+01:13:29,770 --> 01:13:31,770
+7T.
+
+1040
+01:13:31,770 --> 01:13:34,770
+Yani biz denklem çözmeyi bilmiyoruz.
+
+1041
+01:13:34,770 --> 01:13:35,770
+Onu kabul edelim.
+
+1042
+01:13:35,770 --> 01:13:36,770
+Ne yaparız o zaman?
+
+1043
+01:13:36,770 --> 01:13:37,770
+T yerine sallarız.
+
+1044
+01:13:37,770 --> 01:13:41,770
+Veya işte 5 seçenek varsa o 5 seçenekten birini yerine koyarız.
+
+1045
+01:13:41,770 --> 01:13:42,770
+Öyle değil mi?
+
+1046
+01:13:42,770 --> 01:13:44,770
+Sınavda 5 tane şey varsa.
+
+1047
+01:13:44,770 --> 01:13:47,770
+Aynı bu da onun gibi işte T yerine sıfır verdik.
+
+1048
+01:13:47,770 --> 01:13:48,770
+Ne oldu?
+
+1049
+01:13:48,770 --> 01:13:50,770
+Burası sıfır oldu.
+
+1050
+01:13:50,770 --> 01:13:51,770
+Burası ne oldu?
+
+1051
+01:13:51,770 --> 01:13:52,770
+3 oldu.
+
+1052
+01:13:52,770 --> 01:13:53,770
+O zaman tutmadı.
+
+1053
+01:13:53,770 --> 01:13:55,770
+T yerine başka bir değer işte.
+
+1054
+01:13:55,770 --> 01:13:57,770
+Bunu belli bir miktar arttıracağız.
+
+1055
+01:13:57,770 --> 01:14:01,770
+Önemli olan şimdi buranın sıfır çıkıp buranın 3 çıktı.
+
+1056
+01:14:01,770 --> 01:14:05,770
+T yerine 1 verdiğimizde burası 7 çıkıyor.
+
+1057
+01:14:05,770 --> 01:14:06,770
+Burası ne oluyor?
+
+1058
+01:14:06,770 --> 01:14:07,770
+Ne oluyor?
+
+1059
+01:14:07,770 --> 01:14:08,770
+5 çıkıyor.
+
+1060
+01:14:08,770 --> 01:14:13,770
+Şimdi buradan buraya bir hata yani 3 birimlik durum varken 2 birimlik bir hataya düşürdük
+
+1061
+01:14:13,770 --> 01:14:16,770
+gibi bunu sürekli ithalatif olarak ilerleteceğiz.
+
+1062
+01:14:16,770 --> 01:14:18,770
+Şimdi bu hafta quiz olmaz.
+
+1063
+01:14:18,770 --> 01:14:22,770
+Ama bizim düşündüğümüz şeyi ben size bilgi vereceğim arkadaşlar.
+
+1064
+01:14:22,770 --> 01:14:27,770
+Banı Hoca'yla konuştuğumuz protokol üzerine.
+
+1065
+01:14:27,770 --> 01:14:30,770
+Her konusunda quiz yapmak.
+
+1066
+01:14:30,770 --> 01:14:33,770
+Hoca'yla tekrar bir konuşalım.
+
+1067
+01:14:33,770 --> 01:14:35,770
+Benim düşüneceğim şuydu.
+
+1068
+01:14:35,770 --> 01:14:43,770
+Her hafta her konusundan quiz yapıp quizleri bir vize olarak değerlendirmekte.
+
+1069
+01:14:43,770 --> 01:14:45,770
+Ama sonra bundan vazgeçtik.
+
+1070
+01:14:45,770 --> 01:14:49,770
+Katılamayan olur, bir şey olur falan diye.
+
+1071
+01:14:49,770 --> 01:14:55,770
+Habersiz quiz de yapmak aslında derse olan canlılığı arttırmak adına bir seçenek ama
+
+1072
+01:14:55,770 --> 01:14:57,770
+bunu bir konuşmam gerekiyor.
+
+1073
+01:14:57,770 --> 01:15:02,199
+Bilgi veririm daha sonra.
+
+1074
+01:15:02,199 --> 01:15:08,199
+Evet [öğrenci] senin soruna böyle bir şimdilik kısa bir cevap vermiş olayım.
+
+1075
+01:15:08,199 --> 01:15:14,199
+Bu tekniklerle olan bir şey yani deneme yanılma gibi görünüyor ama bunun
+
+1076
+01:15:14,199 --> 01:15:16,199
+belli bir sistematiği var.
+
+1077
+01:15:16,199 --> 01:15:21,199
+Bu itheratif kelimesini kullanmamdaki kasıt bize neyi ima ediyor?
+
+1078
+01:15:21,199 --> 01:15:24,199
+Kodunu yazmamız gerekiyor galiba.
+
+1079
+01:15:24,199 --> 01:15:28,199
+Vile'la kodunu yazacağız galiba.
+
+1080
+01:15:28,199 --> 01:15:30,199
+Aynen kodunu yazacağız.
+
+1081
+01:15:30,199 --> 01:15:32,199
+Ben adını yazacağız anladım da.
+
+1082
+01:15:32,199 --> 01:15:34,199
+Bir program yazacağız.
+
+1083
+01:15:34,199 --> 01:15:38,199
+O programla tekrarlı bir şekilde aslında bir arama programı yapıyoruz.
+
+1084
+01:15:38,199 --> 01:15:41,199
+Arama algoritmalarını geçen dönem gördünüz.
+
+1085
+01:15:41,199 --> 01:15:45,199
+Linear search veya görmediyseniz bu dönem yapısal girişte de göreceğiz.
+
+1086
+01:15:45,199 --> 01:15:48,199
+Bir linear search olabilir.
+
+1087
+01:15:48,199 --> 01:15:51,199
+Binary search olabilir veya interpolasyon search olabilir.
+
+1088
+01:15:51,199 --> 01:15:55,199
+Bu şekilde bir optimum çözümü arama işlemi yapıyoruz.
+
+1089
+01:15:55,199 --> 01:15:57,199
+Bu kapsamda.
+
+1090
+01:15:57,199 --> 01:16:02,199
+Evet bu başlık altında bakın bir kelimeden bayağı laf ettik.
+
+1091
+01:16:02,199 --> 01:16:11,199
+İşte burada denklem köklerinin bulunması dediğimiz bir model üretip o
+
+1092
+01:16:11,199 --> 01:16:15,199
+modelden denklemin köklerini bulmak bu işin bir amacıdır arkadaşlar.
+
+1093
+01:16:16,199 --> 01:16:21,199
+Tabii optimum çözüm üzerinde çalışıyoruz.
+
+1094
+01:16:21,199 --> 01:16:24,199
+Yani gerçek çözüme tam çözüme ulaşamıyoruz.
+
+1095
+01:16:24,199 --> 01:16:27,199
+Burada belli bir hatadan bahsediyoruz.
+
+1096
+01:16:27,199 --> 01:16:32,199
+Sayısal analizde temelde dört tip hatadan bahsedilir arkadaşlar.
+
+1097
+01:16:32,199 --> 01:16:36,199
+Kesme hatası göreceğiz gelecek hafta.
+
+1098
+01:16:36,199 --> 01:16:39,199
+Bağıl hata, mutlak hata ve yuvarlama hatası.
+
+1099
+01:16:39,199 --> 01:16:45,199
+İşte kesme dediğimiz şey bir Tyler açılımını veya McLaren açılımını düşünün.
+
+1100
+01:16:45,199 --> 01:16:47,199
+O sonsuza kadar gider.
+
+1101
+01:16:47,199 --> 01:16:52,199
+Ben bunu 5 birimle kullanırsam farklı bir hata.
+
+1102
+01:16:52,199 --> 01:16:57,199
+10 birimle 10 tane elemanla kullanırsam farklı bir hata elde edersin.
+
+1103
+01:16:57,199 --> 01:16:58,199
+Bu kesme hatası oluyor.
+
+1104
+01:16:58,199 --> 01:17:00,199
+Bunların detaylarına daha sonra geleceğiz.
+
+1105
+01:17:00,199 --> 01:17:07,520
+Sonra doğursal olmayan eşitliklerin çözümü dediğimiz.
+
+1106
+01:17:07,520 --> 01:17:10,520
+Bunların hepsi algoritma aslında.
+
+1107
+01:17:10,520 --> 01:17:14,520
+Açık yöntemler, Newton-Raphson, basit literasyon ve sekant yöntemi.
+
+1108
+01:17:14,520 --> 01:17:21,520
+Kapalı yöntemler, grafik, bisection ve regular falsi dediğimiz yöntemlere bakacağız.
+
+1109
+01:17:21,520 --> 01:17:23,520
+Bu konu bayağı uzun bir konudur.
+
+1110
+01:17:23,520 --> 01:17:26,520
+Bundan sonra sayısal integral.
+
+1111
+01:17:26,520 --> 01:17:30,520
+Biliyoruz ki sayısal integral işte bir aralıkta.
+
+1112
+01:17:30,520 --> 01:17:33,520
+E'nin altındaki kalan alandı.
+
+1113
+01:17:33,520 --> 01:17:40,520
+Peki buradaki integral fonksiyonun integralini alabilmek çok kolay değilse ne yapılabilir?
+
+1114
+01:17:40,520 --> 01:17:43,520
+Biraz önce uzun bir integral yazdık.
+
+1115
+01:17:43,520 --> 01:17:49,520
+İşte bunun çözümü için bazı teknikler var.
+
+1116
+01:17:49,520 --> 01:17:54,520
+Aynı şekilde sayısal türev de benzer bir konudur.
+
+1117
+01:17:55,520 --> 01:18:00,520
+Ne yapıyorsunuz? Türev alma kuralları var değil mi?
+
+1118
+01:18:00,520 --> 01:18:10,520
+Bu türev alma kuralları, işte çarpımın türevi, bölümün türevi, toplamın türevi veya sinzoyal fonksiyonların türevi belli kurallar üzerinden biz türevi biliyoruz.
+
+1119
+01:18:10,520 --> 01:18:19,520
+Ama türev alacağımız fonksiyon çok karmaşık bir fonksiyonsa o zaman farklı yöntemlere başvurmak gerekiyor.
+
+1120
+01:18:19,520 --> 01:18:23,520
+Veya sayısal türevden kastımız şu.
+
+1121
+01:18:23,520 --> 01:18:32,310
+Şöyle bunu geçen dönemen sayısal işaret işleme dersinde anlatmıştım.
+
+1122
+01:18:32,310 --> 01:18:38,310
+Burada tabii o zaman öğrenciler arkadaşlar ikinci sınıf olduğu için bu konuyu daha önce görmediklerini söylediler.
+
+1123
+01:18:38,310 --> 01:18:41,310
+Burada kısaca ifade edeyim. Detaylarına daha geleceğiz.
+
+1124
+01:18:41,310 --> 01:18:45,310
+Böyle bir sayı dizim var mesela.
+
+1125
+01:18:45,310 --> 01:18:49,939
+Siideki bildiğimiz dize.
+
+1126
+01:18:49,939 --> 01:18:52,939
+Bu dizinin içerisinde sayılar var. En tane elemanımız var.
+
+1127
+01:18:52,939 --> 01:18:56,939
+Ve bu dizide biz bir ortamın sıcaklığını tutalım.
+
+1128
+01:18:56,939 --> 01:19:03,659
+Belli zaman aralıklarıyla elde edilen sıcaklık değerleri.
+
+1129
+01:19:03,659 --> 01:19:08,659
+Şimdi bunu plot ettiğinizde, çizdirdiğinizde şöyle bir şey bulursunuz.
+
+1130
+01:19:08,659 --> 01:19:12,659
+Tabii normalde böyle çıkmaz da ayrık olarak çizilir.
+
+1131
+01:19:12,659 --> 01:19:14,659
+İşte şöyle değerlerden oluşur.
+
+1132
+01:19:14,659 --> 01:19:16,659
+Çünkü bu bir dizidir.
+
+1133
+01:19:16,659 --> 01:19:22,319
+Sıfır, bir, iki, üç diye gider eneksi bire kadar.
+
+1134
+01:19:22,319 --> 01:19:24,319
+Ben bu dizinin türevini almak istiyorum.
+
+1135
+01:19:24,319 --> 01:19:26,319
+Şimdi türev dediğim şey neydi?
+
+1136
+01:19:26,319 --> 01:19:29,319
+Fonksiyonlardan şöyle bir fonksiyon düşünürsek.
+
+1137
+01:19:29,319 --> 01:19:35,319
+Bir x noktasında fonksiyonun görüntüsü var.
+
+1138
+01:19:35,319 --> 01:19:40,319
+Ben bu x'e çok küçük h kadar bir arttırım veriyorum.
+
+1139
+01:19:40,319 --> 01:19:49,760
+Sonra bunun x artı h kadar bir, x artı h'taki görüntüsü var.
+
+1140
+01:19:49,760 --> 01:19:53,760
+Şu aradaki e'ime bakacağız değil mi?
+
+1141
+01:19:54,760 --> 01:19:56,760
+Şuradaki türeve bakarken.
+
+1142
+01:19:56,760 --> 01:19:58,760
+İşte nedir bu türev?
+
+1143
+01:19:58,760 --> 01:20:01,760
+F türev x diyelim.
+
+1144
+01:20:01,760 --> 01:20:07,760
+F x artı h eksi F x bölü.
+
+1145
+01:20:07,760 --> 01:20:10,760
+Şurası x artı h noktası.
+
+1146
+01:20:10,760 --> 01:20:13,760
+Burası da x noktası.
+
+1147
+01:20:13,760 --> 01:20:15,760
+Ne oldu?
+
+1148
+01:20:15,760 --> 01:20:21,760
+F x artı h eksi F x bölü h.
+
+1149
+01:20:21,760 --> 01:20:25,760
+Şimdi bu dizi üzerinde bunu uygulayacak olursak,
+
+1150
+01:20:25,760 --> 01:20:28,760
+h'ın çok küçük bir şey seçilmesi lazım.
+
+1151
+01:20:28,760 --> 01:20:32,760
+Şimdi diziler dediğimiz si'deki dizi bunun en küçüğü kaçtır?
+
+1152
+01:20:32,760 --> 01:20:34,760
+Birer birim arttırımdır.
+
+1153
+01:20:34,760 --> 01:20:37,760
+Yani daha fazla 0.5 indis diye bir şeyin yok.
+
+1154
+01:20:37,760 --> 01:20:42,760
+O zaman ben burada h yerine bir yazarsam,
+
+1155
+01:20:42,760 --> 01:20:45,760
+yazmak zorundayım daha fazla yazarsam olmaz.
+
+1156
+01:20:45,760 --> 01:20:48,760
+Hani olur da daha hassas bir türev olmaz.
+
+1157
+01:20:48,760 --> 01:20:49,760
+Ne oluyor?
+
+1158
+01:20:49,760 --> 01:20:52,760
+F x artı 1 eksi F x.
+
+1159
+01:20:52,760 --> 01:20:54,760
+Yani bu ne demek?
+
+1160
+01:20:54,760 --> 01:20:57,760
+Dizinin ikinci elemanından birincisini,
+
+1161
+01:20:57,760 --> 01:21:05,909
+üçüncüden ikinciyi, dördüncüden üçüncüyi çıkartarak yeni bir dizi oluşturuyor.
+
+1162
+01:21:05,909 --> 01:21:08,909
+Yani bundan bunu çıkardım, bundan bunu çıkardım, bundan bunu çıkardım.
+
+1163
+01:21:08,909 --> 01:21:11,909
+Tabii ilkten de herhangi bir şey çıkarmayacağım çünkü orası sıfır olarak kalacak.
+
+1164
+01:21:11,909 --> 01:21:14,909
+Bu dizi ne oluyor?
+
+1165
+01:21:14,909 --> 01:21:15,909
+Türev dizisi oluyor.
+
+1166
+01:21:15,909 --> 01:21:18,909
+Yani şu fonksiyonun türevini almış gibi oluyorsunuz.
+
+1167
+01:21:18,909 --> 01:21:20,909
+Ve bu bize bir anlam ifade ediyor.
+
+1168
+01:21:20,909 --> 01:21:28,909
+Mesela sıcaklığın değişimini konum vektörü olarak konum gibi düşünürsek,
+
+1169
+01:21:28,909 --> 01:21:34,909
+değişimdeki hızı yani türevi aldığımızda ne yapabiliyoruz?
+
+1170
+01:21:34,909 --> 01:21:39,909
+Sıcaklık nasıl değişmiş zaman içerisinde bu bilgiyi?
+
+1171
+01:21:39,909 --> 01:21:42,909
+Bunun bir daha türevini alırsak işte hızdaki değişimi,
+
+1172
+01:21:42,909 --> 01:21:44,909
+ivmeyi elde edebiliriz.
+
+1173
+01:21:44,909 --> 01:21:46,909
+Aynı şekilde ikinci türev yapılabilir.
+
+1174
+01:21:46,909 --> 01:21:49,909
+Gibi sayısal türev operasyonlarına bakacağız.
+
+1175
+01:21:49,909 --> 01:21:51,909
+Tabii bu ileri yönlüsü var, geri yönlüsü var.
+
+1176
+01:21:51,909 --> 01:21:52,909
+İşte başka teknikler var.
+
+1177
+01:21:52,909 --> 01:21:54,909
+Onlara daha sonra geleceğiz.
+
+1178
+01:21:54,909 --> 01:21:59,909
+Ama en basit anlamıyla bir dizinin türevi nasıl alınır?
+
+1179
+01:21:59,909 --> 01:22:05,909
+En ince elemandan, en eksi birinci elemanı veya en artı birinci elemandan en ince elemanı çıkartırsınız.
+
+1180
+01:22:05,909 --> 01:22:07,909
+Bir for döngüsü düşünün.
+
+1181
+01:22:07,909 --> 01:22:09,909
+Size dizinin türevini verir.
+
+1182
+01:22:09,909 --> 01:22:13,909
+Yeni bir diziye de kaydedersiniz bu elemanları, türevi alırsınız.
+
+1183
+01:22:13,909 --> 01:22:17,539
+Bunu daha önce hiç kullanan bilen var mı?
+
+1184
+01:22:17,539 --> 01:22:20,539
+Daha önce böyle bir şeyi yaptım hocam, kullandım diye.
+
+1185
+01:22:20,539 --> 01:22:29,609
+Böyle bir şeyi bilmiş olmanız...
+
+1186
+01:22:29,609 --> 01:22:31,609
+Böyle bir şeyi bekliyor muydunuz?
+
+1187
+01:22:31,609 --> 01:22:35,609
+Ne bileyim bu size de ne anlamı ifade etti bunu öğrenince?
+
+1188
+01:22:35,609 --> 01:22:40,689
+Hep diziler görüyoruz hocam da hani bu...
+
+1189
+01:22:40,689 --> 01:22:43,689
+Bunun bir faydası olacağını düşünüyor musunuz?
+
+1190
+01:22:43,689 --> 01:22:45,689
+Yani nasıl bir şeyde kullanabiliriz?
+
+1191
+01:22:45,689 --> 01:22:59,250
+Şimdi mesela karar destek sistemlerinde biraz önce sıcaklık kontrolünde de olduğu gibi bu kullanılıyor arkadaşlar.
+
+1192
+01:22:59,250 --> 01:23:01,250
+Türev.
+
+1193
+01:23:01,250 --> 01:23:03,250
+Türev demek aslında fark demektir.
+
+1194
+01:23:03,250 --> 01:23:05,250
+İntegral de toplam demektir.
+
+1195
+01:23:05,250 --> 01:23:12,250
+Bir kontrol sistemi bir şeyin yani bir yerin sıcaklığını kontrol edecekseniz bir referans sıcaklığınız vardır.
+
+1196
+01:23:12,250 --> 01:23:14,250
+İşte 25 derece olsun.
+
+1197
+01:23:14,250 --> 01:23:20,250
+Bu 25 dereceye çıkarken giderken, oluştururken hatalarınız olur.
+
+1198
+01:23:20,250 --> 01:23:24,250
+Bu hatalarınızı sürekli toplarsınız, integralini alırsınız.
+
+1199
+01:23:24,250 --> 01:23:26,250
+Günlük hayatımızda da böyledir.
+
+1200
+01:23:26,250 --> 01:23:29,250
+Belli bir tecrübeye ulaşana kadar sürekli hata yaparız.
+
+1201
+01:23:29,250 --> 01:23:31,250
+Bu hatalarımızı toplarız.
+
+1202
+01:23:31,250 --> 01:23:33,250
+Bu bize tecrübe deniyor değil mi?
+
+1203
+01:23:33,250 --> 01:23:40,250
+Bu hatalarımız, topladığımız bu hata bir önceki hatalarımızdan daha az olması gerekiyor.
+
+1204
+01:23:40,250 --> 01:23:41,250
+Bu da ne oluyor?
+
+1205
+01:23:41,250 --> 01:23:47,250
+Daha çok öğrendiğimizi veya referans sıcaklığa, referans değere daha yakın olduğumuzu ifade ediyor.
+
+1206
+01:23:47,250 --> 01:23:49,250
+Çünkü hata gitgide azalıyor.
+
+1207
+01:23:49,250 --> 01:23:55,250
+İşte bu türev ve integral aslında bizim birçok dersimizde doğrudan kullanılan bir şey.
+
+1208
+01:23:55,250 --> 01:23:59,250
+Biraz önce bahsettiğim bu hataların toplanması şey şu.
+
+1209
+01:23:59,250 --> 01:24:01,250
+Böyle bir referansım var.
+
+1210
+01:24:01,250 --> 01:24:04,250
+Bunu kendi hayatınızdaki tecrübemiz olarak da söyleyin.
+
+1211
+01:24:04,250 --> 01:24:06,250
+Bir yerden başladınız.
+
+1212
+01:24:06,250 --> 01:24:08,250
+Böyle hatalar yaptınız.
+
+1213
+01:24:08,250 --> 01:24:10,250
+Bu hatalar gittikçe azaldı, azaldı, azaldı.
+
+1214
+01:24:10,250 --> 01:24:13,250
+Belli bir referansa oturdu.
+
+1215
+01:24:13,250 --> 01:24:22,250
+İşte şu hataların toplanması, bu topladığımız hataların bir önceki duruma göre farkına alınıp minimize edilmesi,
+
+1216
+01:24:22,250 --> 01:24:29,250
+bizim birçok kullandığımız şeylerden bir, bu bir kontrol sistem tekniğidir.
+
+1217
+01:24:29,250 --> 01:24:32,250
+Orada çok fazla karşımıza çıkıyor ve biz de bunu kullanıyoruz.
+
+1218
+01:24:32,250 --> 01:24:41,079
+Bizim bölümde biraz belki donanım ve bu konular çok ilgi görmüyor veya sayısal işaret işleme.
+
+1219
+01:24:41,079 --> 01:24:46,079
+Ama mühendislikte olması gereken konulardan bir tanesi.
+
+1220
+01:24:46,079 --> 01:24:52,079
+Sonra geleceğimiz konulara baktığımızda matrislerle, linel cebirle alakalı bazı şeylere bakacağız arkadaşlar.
+
+1221
+01:24:52,079 --> 01:24:53,079
+Bu da ne için önemli?
+
+1222
+01:24:53,079 --> 01:24:54,079
+Ne için önemli?
+
+1223
+01:24:54,079 --> 01:24:59,079
+Biz matrisleri birçok derste, programlama dersinde, algoritma dersinde kullanıyoruz.
+
+1224
+01:24:59,079 --> 01:25:05,079
+Tabii kullandığımız matrislerde sürekli matrisin en küçük elemanını bulmak, en büyük elemanını bulmak değil de
+
+1225
+01:25:05,079 --> 01:25:12,079
+biraz daha matrisin transpozundan yola çıkarak bir değer elde etmek, determinanta hesabı yapmak,
+
+1226
+01:25:12,079 --> 01:25:15,079
+matrisin tersini almak önemlidir.
+
+1227
+01:25:15,079 --> 01:25:18,079
+Şimdi bizde robotik grubu var.
+
+1228
+01:25:18,079 --> 01:25:21,079
+Bilmiyorum hiç robotla çalışanınız oldu mu?
+
+1229
+01:25:21,079 --> 01:25:27,079
+Şu elimi bir robot şeklinde düşünürseniz her bir eklem robotun bir parçasıdır.
+
+1230
+01:25:27,079 --> 01:25:34,079
+Parmaktaki eklemleri düşünün, daha sonra bilekteki eklemi düşünün, koldaki eklemi düşünün.
+
+1231
+01:25:34,079 --> 01:25:37,079
+Robot kollar üzerinde bu daha çok anlatılır bu konu.
+
+1232
+01:25:37,079 --> 01:25:46,079
+Ben dirsekten bir hareket yaptığımda parmağımın uç noktasının konum bilgisini tespit edebilirim matematiksel hesaplamayla.
+
+1233
+01:25:46,079 --> 01:25:50,079
+Burada rotasyon ve transformasyon matrisleri vardır.
+
+1234
+01:25:50,079 --> 01:25:55,079
+Buradaki dirseğin konum bilgisi ve hareket bilgisi bir matris de saklanır.
+
+1235
+01:25:55,079 --> 01:26:00,079
+Kaç tane eklem var dirsekten işte bu kol, bilek ve parmak diyelim.
+
+1236
+01:26:00,079 --> 01:26:06,079
+Her bir eklem için bir matris, bir transformasyon matrisi saklanıyor.
+
+1237
+01:26:06,079 --> 01:26:14,079
+Bu matrisler birbiriyle çarpıldığı zaman dirsekteki bir hareketin veya omuzdaki bir hareketin
+
+1238
+01:26:14,079 --> 01:26:24,079
+sonucunda parmakta oluşan hareket değişimi veya konum bilgisinin elde edilmesi matris operasyonlarıyla veya bunu tersten yapmak istersek
+
+1239
+01:26:24,079 --> 01:26:32,079
+parmak oynadı ama ne kadar işte burada bir geri bildirim var onu öğrenmek istersek matrisin tersini almak zorundayız.
+
+1240
+01:26:32,079 --> 01:26:34,079
+Çünkü sürekli çarpma işlemleri var.
+
+1241
+01:26:34,079 --> 01:26:36,079
+Bunu göreceğiz.
+
+1242
+01:26:36,079 --> 01:26:41,079
+Sonra doğursal sistemlerin çözümü, işte dolaylı yöntemler, dolayısız yöntemler demiştik.
+
+1243
+01:26:41,079 --> 01:26:49,079
+Dolayısız yöntemlerde Kramer, Gauss-Elimination, Gauss-Jordan, yoğunlaştırılmış, yok etme, Cholsky yöntemi demiş.
+
+1244
+01:26:49,079 --> 01:26:54,079
+Bir de dolaylı yöntemler, Jacobi itirasyonu, Gauss-Seidel.
+
+1245
+01:26:54,079 --> 01:26:59,079
+Diner olmayan denklem takımlarının çözümü denmiş.
+
+1246
+01:26:59,079 --> 01:27:07,079
+Burada Tyler serilenin açılımı, kısmi türev yaklaşımı ile bu konulara bakacağız.
+
+1247
+01:27:07,079 --> 01:27:12,079
+Sonra sonlu farklar, ileri geri merkezi farklar.
+
+1248
+01:27:12,079 --> 01:27:16,079
+İşte birinci dereceden, aslında bu sonlu farklar biraz türevle alakalı.
+
+1249
+01:27:16,079 --> 01:27:18,079
+Bunlara bakacağız.
+
+1250
+01:27:18,079 --> 01:27:22,079
+Sonlu fark tabloları gibi bir konu var.
+
+1251
+01:27:22,079 --> 01:27:24,079
+Bu konuya gireceğiz.
+
+1252
+01:27:27,760 --> 01:27:29,760
+Eğri uydurma.
+
+1253
+01:27:29,760 --> 01:27:35,760
+Şimdi bu da günümüzde yapay zekanın çok fazla uğraştığı alanlardan bir tanesi arkadaşlar aslında.
+
+1254
+01:27:35,760 --> 01:27:37,760
+En temeli regresyon.
+
+1255
+01:27:37,760 --> 01:27:41,760
+Elimde şu ana kadar topladığım veriler var.
+
+1256
+01:27:41,760 --> 01:27:45,760
+Bir milyon tane bir finans verisi var.
+
+1257
+01:27:45,760 --> 01:27:49,760
+Ben bu verilerden yola çıkarak bir model tahmin etmeye çalışacağım.
+
+1258
+01:27:49,760 --> 01:27:52,760
+Şuradaki şekilde gördüğünüz gibi.
+
+1259
+01:27:52,760 --> 01:27:54,760
+X'ler ve Y'ler var elimde.
+
+1260
+01:27:54,760 --> 01:28:01,970
+Yeni bir X değeri geldiğinde, şunu bir slide görünümüne geçireyim.
+
+1261
+01:28:01,970 --> 01:28:08,970
+Yeni bir X değeri geldiğinde acaba bu X değerine karşılık olarak ben nasıl bir Y değeri bulabilirim?
+
+1262
+01:28:08,970 --> 01:28:09,970
+Bunu tahmin etmek istiyorum.
+
+1263
+01:28:09,970 --> 01:28:15,970
+Yani finans tahminleri, hava durumu tahminleri, daha farklı veriler üzerinde tahmin...
+
+1264
+01:28:15,970 --> 01:28:21,970
+İşte ben mesela doktor atezimde music recommendation ve music analiz üzerinde çalıştım.
+
+1265
+01:28:22,970 --> 01:28:28,970
+Dinlettiğimiz bir müziğin türünün tahmin edilmesi veya o müziğe en yakın müziklerin tahmin edilmesi.
+
+1266
+01:28:28,970 --> 01:28:31,970
+Burada da bir regresyon gibi bir problem var.
+
+1267
+01:28:31,970 --> 01:28:35,970
+Elimizde hala hazırda şu veriler var arkadaşlar.
+
+1268
+01:28:35,970 --> 01:28:43,970
+Ben bu veriler üzerine çok minimum bir hatayla yakın olan bir doğru üretiyorum veya eğri üretiyorum.
+
+1269
+01:28:43,970 --> 01:28:45,970
+Bakın şurada olduğu gibi.
+
+1270
+01:28:45,970 --> 01:28:48,970
+Bu eğri veya doğru bir fonksiyon veriyor bana.
+
+1271
+01:28:48,970 --> 01:28:51,970
+Y eşittir, fx, x artı 5 gibi bir şey.
+
+1272
+01:28:51,970 --> 01:28:58,970
+Sonra şöyle bir yeni veri geldiğinde bunu belli bir hatayla tahmin etmeye çalışıyorum.
+
+1273
+01:28:58,970 --> 01:29:00,970
+İşte bu veri şu mesela.
+
+1274
+01:29:00,970 --> 01:29:02,970
+Bunun buradaki karşılığı da bu.
+
+1275
+01:29:02,970 --> 01:29:05,970
+Yani sıcaklık bu olduğunda sistemin tepkisi ne olacak?
+
+1276
+01:29:05,970 --> 01:29:14,970
+Veya işte ne bileyim gün içinde şu saatte doların ücreti, doların fiyatı kaçtan olacak tahmin işlemi?
+
+1277
+01:29:14,970 --> 01:29:16,970
+Veya işte aynı şeyi burada da söyleyebiliriz.
+
+1278
+01:29:16,970 --> 01:29:18,970
+Burada da bir denklemimiz var.
+
+1279
+01:29:18,970 --> 01:29:23,970
+Bu denklem üzerinden bir uydurduğumuz eğri uydurma da deniyor buna.
+
+1280
+01:29:23,970 --> 01:29:27,970
+Bir sonuç elde etmeye, tahmin etmeye çalışıyoruz.
+
+1281
+01:29:27,970 --> 01:29:34,970
+Burada enterpolasyon ve regresyon iki farklı yaklaşım.
+
+1282
+01:29:34,970 --> 01:29:36,970
+Temel farkı şudur.
+
+1283
+01:29:37,970 --> 01:29:44,970
+Enterpolasyon yaptığınızda ürettiğiniz fonksiyon bütün noktalar üzerinden geçmek zorunda.
+
+1284
+01:29:44,970 --> 01:29:49,970
+Yani şu noktaların hepsinden geçiyor dikkat ederseniz.
+
+1285
+01:29:49,970 --> 01:29:57,970
+Regresyonda ürettiğiniz doğru veya eri veya fonksiyon bütün noktalardan geçmek zorunda değil.
+
+1286
+01:29:57,970 --> 01:30:03,970
+Minimum hataya ulaşmak zorunda orijinal veri seti üzerinde.
+
+1287
+01:30:04,970 --> 01:30:07,970
+Şunda bir problem var. Bunda ezberleme yapıyor olabiliyor.
+
+1288
+01:30:07,970 --> 01:30:10,970
+Burada biraz daha ezberleme daha az.
+
+1289
+01:30:10,970 --> 01:30:12,970
+Ezberlemeden kastım şu.
+
+1290
+01:30:12,970 --> 01:30:16,970
+Şimdi şuradan şuraya gelirken böyle bir fonksiyon üretmiş.
+
+1291
+01:30:16,970 --> 01:30:19,970
+Biliyor ki çünkü buradan da geçecek, buradan da geçecek.
+
+1292
+01:30:19,970 --> 01:30:25,970
+Ama verinin orijinalinde veya işte bu değişimde şöyle bir şey olsaydı mesela.
+
+1293
+01:30:25,970 --> 01:30:28,970
+Şöyle bir sürpriz olsaydı bunu kaybettik mesela.
+
+1294
+01:30:28,970 --> 01:30:30,970
+Bu buradan buraya bir ezberleme yapıyor.
+
+1295
+01:30:30,970 --> 01:30:40,970
+Bu ezberlemeyi biraz daha azaltmak için veya bu hatayı azaltmak için elimizde daha çok veri varsa o veriler üzerinde daha iyi bir interpolasyon yapmak mümkün.
+
+1296
+01:30:40,970 --> 01:30:50,970
+Veya şerit interpolasyon veya spline interpolasyon dediğimiz şu iki aralı daha kısacağız, daha alt seviyelere getireceğiz.
+
+1297
+01:30:50,970 --> 01:30:57,970
+Ve şu arada işte bir nokta daha varmış gibi düşünüp şu arayı ayrı düşünüp bu arayı ayrı düşüneceğiz.
+
+1298
+01:30:57,970 --> 01:30:59,970
+Bunun detaylarına daha sonra bakacağız.
+
+1299
+01:30:59,970 --> 01:31:03,970
+Şimdi bu bize nerede lazım oluyor? Veri analizinde lazım oluyor dedik.
+
+1300
+01:31:03,970 --> 01:31:07,970
+Elimizde kötü bir görüntü olsun.
+
+1301
+01:31:07,970 --> 01:31:10,970
+Şimdi ben bir görüntü üreteyim mesela.
+
+1302
+01:31:10,970 --> 01:31:14,890
+New diyelim.
+
+1303
+01:31:14,890 --> 01:31:18,140
+Şurayı görüntü olarak kaydedeceğim.
+
+1304
+01:31:18,140 --> 01:31:23,859
+Kendi fotoğrafınızda bunu yapabilirsiniz.
+
+1305
+01:31:23,859 --> 01:31:28,130
+Bak bu bir görüntü.
+
+1306
+01:31:28,130 --> 01:31:30,130
+Ben buraya yaklaştıkça ne oldu?
+
+1307
+01:31:30,130 --> 01:31:34,529
+Buraya kadar gelince ne oldu?
+
+1308
+01:31:34,529 --> 01:31:36,529
+Efendim?
+
+1309
+01:31:36,529 --> 01:31:38,529
+Görüntü bulanıklaştı hocam.
+
+1310
+01:31:38,529 --> 01:31:40,529
+Pikserleşme.
+
+1311
+01:31:40,529 --> 01:31:42,529
+Görüntü bulanıklaştı.
+
+1312
+01:31:42,529 --> 01:31:44,529
+Yani ne oldu?
+
+1313
+01:31:44,529 --> 01:31:49,529
+Detaya girdikçe aslında orijinalinde bazı detayların bulunmadığını gördük.
+
+1314
+01:31:49,529 --> 01:31:59,529
+Yani burada F dediğimiz şey var da yaklaştıkça detayların aslında verinin orijinalinde olmadığını, saklanmadığını gördük.
+
+1315
+01:31:59,529 --> 01:32:01,529
+Uzaklaştıkça normal görünüyor.
+
+1316
+01:32:01,529 --> 01:32:07,529
+Şimdi ben diyorum ki yaklaştıkça bu detayı daha fazla görmek istiyorum.
+
+1317
+01:32:07,529 --> 01:32:09,529
+O zaman ne olacak?
+
+1318
+01:32:09,529 --> 01:32:14,529
+Şu pikseller arasındaki değişimden yola çıkarak yani şurada şuraya bir değişim var.
+
+1319
+01:32:14,529 --> 01:32:18,529
+Biraz önceki tek boyutta yaptığım şeyi burada iki boyutta yapacağım.
+
+1320
+01:32:18,529 --> 01:32:24,529
+Ve şurada tabi bu bir görüntü işleme uygulaması gibi ama aslında interpolasyon.
+
+1321
+01:32:24,529 --> 01:32:27,529
+Ara değerleri dolduracağım.
+
+1322
+01:32:27,529 --> 01:32:31,529
+Mesela burada mesela şu değişime baktığınızda şurada bir pembe renk var.
+
+1323
+01:32:31,529 --> 01:32:33,529
+Mouse görünüyor değil mi el işareti?
+
+1324
+01:32:33,529 --> 01:32:35,529
+Evet hocam.
+
+1325
+01:32:35,529 --> 01:32:37,529
+Şurada başka bir pembe var.
+
+1326
+01:32:37,529 --> 01:32:39,529
+Burada bir anda morlaşmaya başlıyor.
+
+1327
+01:32:39,529 --> 01:32:41,529
+Artık buna mor diyoruz herhalde.
+
+1328
+01:32:41,529 --> 01:32:42,529
+Şurada bir anda mor.
+
+1329
+01:32:42,529 --> 01:32:53,529
+İşte şu geçişi biraz daha sumut yaparsam bir anda böyle pembeden mora geçiş değil de daha böyle bir sumut bir geçiş olursa bahsettiğim şey şu.
+
+1330
+01:32:53,529 --> 01:33:00,380
+Yani burada bir pembe var bir anda şöyle mor oluyor.
+
+1331
+01:33:00,380 --> 01:33:09,520
+Ama bunun yerine şöyle bir şey yaparsam bu arada mor renklerin sayısı artacak.
+
+1332
+01:33:09,520 --> 01:33:12,520
+Pembelerin sayısı o geçiş sürünce azalacak.
+
+1333
+01:33:12,520 --> 01:33:15,520
+Ve bu bana neyi sağlayacak?
+
+1334
+01:33:15,520 --> 01:33:22,520
+İşte yaklaştığımda daha fazla mor renkler görmemi, detayı daha çok fazla gözlemleyebilmeyi sağlayacak.
+
+1335
+01:33:22,520 --> 01:33:30,520
+Bu doğrudan şeyde pek görüntüde kullanılıyor ama asıl daha çok kullanıldığı şey video.
+
+1336
+01:33:31,520 --> 01:33:35,520
+Şimdi bazı restorasyonlu videolar vardır.
+
+1337
+01:33:35,520 --> 01:33:43,520
+Şimdi bir video dediğimiz saniyede 24 tane görüntünün peş peşe sıralanması aslında hareketli görüntü diyoruz.
+
+1338
+01:33:43,520 --> 01:33:47,520
+Eski zamanlarda bu 24-25 tane değildi belki 10 taneydi.
+
+1339
+01:33:47,520 --> 01:33:54,520
+Şimdi ben saniyede 10 tane frame olursa mı daha net bir şey görürüm 30 tane 40 tane olursa mı?
+
+1340
+01:33:54,520 --> 01:33:56,520
+40 tane 30 tane olursa daha net olacak.
+
+1341
+01:33:56,520 --> 01:34:04,520
+İşte bu saniyedeki 10 tane frame'i 40'a çıkartırsam interpolasyon metotlarıyla ne oluyor?
+
+1342
+01:34:04,520 --> 01:34:08,520
+Aradaki geçiş gözümü çok fazla rahatsız etmiyor.
+
+1343
+01:34:08,520 --> 01:34:15,520
+Daha sumut bir geçiş görüyorum ve izlediğim film veya video daha net görünüyor halk tabiriyle.
+
+1344
+01:34:15,520 --> 01:34:19,520
+Ama aslında olan şey arada daha fazla frame var.
+
+1345
+01:34:19,520 --> 01:34:22,520
+O frame'leri doldurmak, frame'leri arttırmak.
+
+1346
+01:34:22,520 --> 01:34:25,520
+Tabii ne oldu? Bellekteki miktarı arttırdık.
+
+1347
+01:34:25,520 --> 01:34:28,520
+Ama ne yaptık? Kaliteyi de arttırmış olduk.
+
+1348
+01:34:28,520 --> 01:34:31,520
+Daha net görüntü elde etmiş olduk.
+
+1349
+01:34:31,520 --> 01:34:34,520
+İşte bunlar interpolasyonun konusundadır.
+
+1350
+01:34:37,520 --> 01:34:40,520
+Farklı interpolasyon metotları var.
+
+1351
+01:34:40,520 --> 01:34:43,520
+Burada sadece 2 tanesi var ama ben başkalarından da bahsedeceğim.
+
+1352
+01:34:43,520 --> 01:34:45,520
+Yani onlardan da konuşacağız.
+
+1353
+01:34:45,520 --> 01:34:51,520
+Regresyon da benzer bir mantıktır ama daha çok bu tahmin işlemlerinde kullanılır.
+
+1354
+01:34:51,520 --> 01:34:59,520
+Burada en küçük kareler, en küçük karelerde polinom, linear olmayan fonksiyon, üstel modeller gibi şey kullanacağız.
+
+1355
+01:34:59,520 --> 01:35:01,520
+Aslında bu şudur arkadaşlar.
+
+1356
+01:35:01,520 --> 01:35:07,520
+Ben bu verilerimden y eşittir ax artı b doğrusu üretmeye çalışıyorum.
+
+1357
+01:35:07,520 --> 01:35:09,520
+Şu örneğe bakacak olursak.
+
+1358
+01:35:09,520 --> 01:35:14,520
+Şimdi ben de dedim ya elimizde x'ler var, y'ler var.
+
+1359
+01:35:14,520 --> 01:35:16,520
+Yani böyle bir veri seti var.
+
+1360
+01:35:16,520 --> 01:35:23,520
+Sıfırı girmiş, üçü çıkmış, bir girmiş, beş çıkmış, dört girmiş, sekiz çıkmış gibi böyle de veriler var.
+
+1361
+01:35:23,520 --> 01:35:28,520
+O zaman ben bunlardan yola çıkarak bir doğru üretebilir miyimi düşünüyorum.
+
+1362
+01:35:28,520 --> 01:35:30,520
+Bu doğru üretmem ne demek?
+
+1363
+01:35:30,520 --> 01:35:33,520
+Şuradaki a ve b'leri tespit etmem demek.
+
+1364
+01:35:33,520 --> 01:35:38,520
+Çünkü y'ler belli, x'ler belli başka bulacağım iki tane parametre var eğer bir doğruysa.
+
+1365
+01:35:38,520 --> 01:35:43,520
+İşte bu a ve b'lerin tespit edilmesi süreci regresyon dönüyor.
+
+1366
+01:35:43,520 --> 01:35:45,520
+Peki a ve b'yi neye göre tespit edeceğiz?
+
+1367
+01:35:45,520 --> 01:35:53,520
+Öyle bir a ve b değeri seçelim ki şu x'e karşılık y değeri gelmiş.
+
+1368
+01:35:53,520 --> 01:36:01,520
+Bu tespit ettiğim fonksiyondaki y şapka, y hat değeri bu y'ye yakın olsun.
+
+1369
+01:36:01,520 --> 01:36:08,520
+Yani y şapka eksi y farkı veya bunun mutlak değeri buna epsilon diyeceğiz hata.
+
+1370
+01:36:08,520 --> 01:36:10,520
+Minimum olsun.
+
+1371
+01:36:10,520 --> 01:36:14,520
+Bu hatayı minimum yapan epsilon değerleri nereden gelecek?
+
+1372
+01:36:14,520 --> 01:36:16,520
+A ve b değerlerinden gelecek.
+
+1373
+01:36:16,520 --> 01:36:20,520
+Bunu minimize eden, hatayı minimize eden a ve b'leri bulacağız.
+
+1374
+01:36:20,520 --> 01:36:24,520
+İşte burada en basit ile türev kullanılabilir.
+
+1375
+01:36:24,520 --> 01:36:27,520
+Yani ben bu kısmi türev diyoruz.
+
+1376
+01:36:27,520 --> 01:36:41,520
+Bu y'nin a'ya göre türevini alsam bir de y'nin b'ye göre türevini alsam ve sıfıra eşitlesem a ve b'ler için olabilecek optimum şeyleri bulurum diyeceğiz.
+
+1377
+01:36:41,520 --> 01:36:43,520
+Tabii bunda daha sonra detaylarına geleceğiz.
+
+1378
+01:36:43,520 --> 01:36:45,520
+Regresyonda bu.
+
+1379
+01:36:45,520 --> 01:37:00,149
+Eğer ben linear doğrusal bir şey değil de y eşittir ax² bx artı c ikinci dereceden bir fonksiyon üretmem gerekirse o zaman ne yapacağız?
+
+1380
+01:37:00,149 --> 01:37:04,149
+Bulacağım şeyler a'yı bulmam lazım, b'yi bulmam lazım, c'yi bulmam lazım.
+
+1381
+01:37:04,149 --> 01:37:06,149
+Çünkü elimde x ve y'ler var.
+
+1382
+01:37:07,149 --> 01:37:11,149
+Veya ne bileyim, eksponansiyel bir fonksiyon üretebilirim yani.
+
+1383
+01:37:11,149 --> 01:37:17,149
+200'leri x gibi a çarpı 200'leri x gibi bir şey veya a çarpı 200'leri bx.
+
+1384
+01:37:17,149 --> 01:37:22,149
+Burada a ve b'nin tespit edilmesi gerekebilir gibi söyleyeceğiz.
+
+1385
+01:37:22,149 --> 01:37:35,149
+Trigonomatik fonksiyonlar mesela tahmin edebiliriz işte sinus dediğimiz şey ama a çarpı sinus bt böyle bir a ve b değerinin bulunmasıyla bir şeyler olabilir.
+
+1386
+01:37:36,149 --> 01:37:37,149
+Bunlar hep regresyon.
+
+1387
+01:37:37,149 --> 01:37:43,699
+Deneysel sonuçlar bu tipe girer.
+
+1388
+01:37:45,699 --> 01:37:55,779
+Sonra bazı diferansiyel denklemler üzerinde, adi diferansiyel denklemler nelerdir veya kısmi diferansiyel denklemler nelerdir?
+
+1389
+01:37:55,779 --> 01:37:57,779
+Bunlara bakacağız.
+
+1390
+01:37:57,779 --> 01:38:04,779
+Adi diferansiyel denklem tek bir değişikenden oluşan, sadece t'ye bağlı bir değişken var, bir durum var.
+
+1391
+01:38:04,779 --> 01:38:08,779
+Bu denklemlerin çözülmesi ile alakalı bazı metotlara bakacağız.
+
+1392
+01:38:08,779 --> 01:38:13,090
+Şimdi buraya kadar işin göreceğimiz konular.
+
+1393
+01:38:13,090 --> 01:38:14,090
+Peki sayısal analiz nedir?
+
+1394
+01:38:14,090 --> 01:38:16,090
+Bunu da anlatıp bırakacağım arkadaşlar.
+
+1395
+01:38:16,090 --> 01:38:33,600
+Bu analitik çözümün mümkün olmayan problemlerin bilgisayarlar hesaplayıcılar yardımıyla çözülmesi ve bunun matematiksel uygulamalar, mühendislik uygulamalarında yapılması sayısal analizdir genel olarak.
+
+1396
+01:38:33,600 --> 01:38:35,600
+Buradaki kullanılan metotlar.
+
+1397
+01:38:35,600 --> 01:38:40,600
+Biliyoruz ki bilgisayar kullanmanın bize sağladığı iki tane temel avantaj var.
+
+1398
+01:38:40,600 --> 01:38:42,600
+Birincisi nedir birincisi?
+
+1399
+01:38:42,600 --> 01:38:44,600
+Siz söyleyin bakalım.
+
+1400
+01:38:44,600 --> 01:38:46,600
+İşlem kapasitesi olabilir mi hocam?
+
+1401
+01:38:46,600 --> 01:38:48,600
+İşlem kapasitesi.
+
+1402
+01:38:48,600 --> 01:38:50,600
+Yani bunu biraz açar mısın?
+
+1403
+01:38:50,600 --> 01:38:56,600
+Yani bir insanın yapabileceğinden çok daha fazla işlemi çok daha kısa sürede yapması.
+
+1404
+01:38:56,600 --> 01:38:58,600
+Güzel.
+
+1405
+01:38:58,600 --> 01:39:04,600
+Çok daha fazla işlem yani biz de o kadar fazla işlemi yapabiliriz ama ikinci söylediğin çok güzel.
+
+1406
+01:39:04,600 --> 01:39:07,600
+Daha kısa sürede işlem yapabilmek.
+
+1407
+01:39:07,600 --> 01:39:08,600
+Ne demek?
+
+1408
+01:39:08,600 --> 01:39:16,600
+250'yi biz de hesaplayabiliriz veya 250 çarpı 500'ün karesi gibi bir şeyi biz de hesaplayabiliriz.
+
+1409
+01:39:16,600 --> 01:39:21,600
+Ama bilgisayar bunu bizden daha kısa sürede hesaplayabiliyor.
+
+1410
+01:39:21,600 --> 01:39:23,600
+Sayısal devreler sayesinde.
+
+1411
+01:39:23,600 --> 01:39:24,600
+Birincisi bu.
+
+1412
+01:39:24,600 --> 01:39:32,800
+İletişimden kastınız [öğrenci] [öğrenci]'a hemen söz vereceğim.
+
+1413
+01:39:32,800 --> 01:39:42,800
+Yani problem çözmede iletişim hani biz sadece mühendislik problemi çözme açısından elbette bilgisayarın iletişim kolaylığı var da daha bir sürü uygulamaları var.
+
+1414
+01:39:42,800 --> 01:39:43,800
+Ondan bahsetmiyorum.
+
+1415
+01:39:43,800 --> 01:39:45,800
+Buyurun [öğrenci].
+
+1416
+01:39:45,800 --> 01:39:50,800
+Hocam uzun ve insanın hata yapma şansının yüksek olduğu şeylerde bilgisayar hata yapmıyor.
+
+1417
+01:39:50,800 --> 01:39:52,800
+Eğer doğru yazıldıysa kod.
+
+1418
+01:39:52,800 --> 01:39:53,800
+Evet.
+
+1419
+01:39:53,800 --> 01:39:55,800
+Hata yapmama aslında bu da güzel.
+
+1420
+01:39:55,800 --> 01:39:57,800
+Üçüncü bir şey olarak bunu da söyleyebiliriz.
+
+1421
+01:39:57,800 --> 01:40:00,800
+Bilgisayar arıza yapar hata yapmaz.
+
+1422
+01:40:00,800 --> 01:40:01,800
+Hata yapmaz.
+
+1423
+01:40:01,800 --> 01:40:05,800
+Yani sizin tarif ettiğiniz şey neyse hemen söz vereceğim [öğrenci].
+
+1424
+01:40:05,800 --> 01:40:11,800
+Mesela y eşittir x artı iki hesaplamak istiyoruz biz.
+
+1425
+01:40:11,800 --> 01:40:16,800
+Bilgisayardan bahsetmiştim.
+
+1426
+01:40:16,800 --> 01:40:17,800
+Tamam.
+
+1427
+01:40:17,800 --> 01:40:19,800
+Y eşittir x artı iki hesaplamak istiyoruz.
+
+1428
+01:40:19,800 --> 01:40:23,800
+Biz bunu kodladık ama x artı üç olarak kodladık.
+
+1429
+01:40:23,800 --> 01:40:27,800
+Bilgisayar kendi çerçevesinde kendine söylenen hatasız bir şekilde yapıyor.
+
+1430
+01:40:27,800 --> 01:40:29,800
+Yani bir verdim dört çıktı iki verdim beş çıktı.
+
+1431
+01:40:29,800 --> 01:40:31,800
+Hiçbir şekilde hata yapmıyor.
+
+1432
+01:40:31,800 --> 01:40:35,800
+Arıza yapar mı yapar ne bileyim devre yanar veya bir başka problem olur.
+
+1433
+01:40:35,800 --> 01:40:37,800
+Arıza yapar çalışmaz.
+
+1434
+01:40:37,800 --> 01:40:45,800
+Ama siz input olarak ne verdiyseniz gelen output sizin tarif ettiğiniz şekilde üretilen bir fonksiyondan gelen sonuçtur.
+
+1435
+01:40:45,800 --> 01:40:52,800
+Bazen programlamada ya hocam işte ben yapıyorum ama sonuç yanlış çıkıyor.
+
+1436
+01:40:52,800 --> 01:40:56,800
+Bilgisayar hata yapmıyor muhtemelen o kodlamada bir hata var demektir.
+
+1437
+01:40:56,800 --> 01:41:02,800
+Özellikle si de değişkenlerin ilk değerlerinde bu hatayı çok görüyoruz sizlerde birinci sınıflarda ya bu derste.
+
+1438
+01:41:02,800 --> 01:41:04,800
+Bu bilgisayarın hatası değil.
+
+1439
+01:41:04,800 --> 01:41:06,800
+Kullanıcının veya programcının hatasıdır.
+
+1440
+01:41:06,800 --> 01:41:08,800
+Yanlış bir şey yapıyordur.
+
+1441
+01:41:08,800 --> 01:41:11,800
+Kendisine verilen şeyi hatasız bir şekilde yerine getirir.
+
+1442
+01:41:11,800 --> 01:41:12,800
+Güzel.
+
+1443
+01:41:12,800 --> 01:41:15,800
+Üçüncü olarak da bunu söylüyor da bir ikinci daha var.
+
+1444
+01:41:15,800 --> 01:41:17,800
+Hafız arkadaşlar.
+
+1445
+01:41:17,800 --> 01:41:19,800
+Yani biz birçok şeyi aklımızda tutamayız.
+
+1446
+01:41:20,800 --> 01:41:25,800
+Ama bu ifadeler şeyi tuttuğumuz verileri bilgisayar saklama özelliği var.
+
+1447
+01:41:25,800 --> 01:41:29,800
+Yani bir iteratif çözüm yapacağız.
+
+1448
+01:41:29,800 --> 01:41:31,800
+Bu çözüm defterler tutacak belki.
+
+1449
+01:41:31,800 --> 01:41:39,800
+Ama bunun yerine çok rahat koskoca bir kitaba sığacak veriyi 3-4 megabaytlık bir alanda saklayabiliyoruz.
+
+1450
+01:41:39,800 --> 01:41:44,800
+Hız hafıza ve hatasız işlem yapabilme özelliği.
+
+1451
+01:41:44,800 --> 01:41:46,800
+Bu üçüncü söyleyebiliriz.
+
+1452
+01:41:47,800 --> 01:41:52,800
+Bu üçüncü sayesinde fiziksel bir sistemin matematiksel gösterimi yapılıyor.
+
+1453
+01:41:52,800 --> 01:41:54,800
+Sabahtan beri bundan bahsediyoruz.
+
+1454
+01:41:54,800 --> 01:41:56,800
+Yani bir denklem üretiyoruz.
+
+1455
+01:41:56,800 --> 01:41:58,800
+Bu denklemi güçlü bir şekilde çözeceğiz.
+
+1456
+01:41:58,800 --> 01:42:09,800
+Eğer analitik denklem çözemiyorsak, bu imkanımız yoksa bu denklemleri sayısal yöntemlerle çözeceğiz.
+
+1457
+01:42:10,800 --> 01:42:18,800
+Ve günümüzde, yani gerçek dünyada birçok problem böyle havuz problemi gibi değil maalesef.
+
+1458
+01:42:18,800 --> 01:42:21,800
+Yani denklemini ürettim, ondan sonra elle çözdüğüm gibi olmuyor.
+
+1459
+01:42:21,800 --> 01:42:25,800
+Ancak böyle karmaşık operasyonlardan menana geliyor.
+
+1460
+01:42:25,800 --> 01:42:32,800
+Bu karmaşık operasyonları, karmaşık denklemleri bildiğimiz yöntemlerle,
+
+1461
+01:42:32,800 --> 01:42:37,800
+iteratif bir şekilde bilgisayar kullanarak çözme süreçleridir diyebiliriz sayıs analitis için.
+
+1462
+01:42:38,800 --> 01:42:45,800
+Mesela analitik ve sayısal yöntemlerin karşılaştırılmasına baktığımızda, analitik yöntemlerde sonuçlar sürekli.
+
+1463
+01:42:45,800 --> 01:42:49,800
+Sayısal yöntemlerde sonuçlar kesikli denmiş. Bu ne demek?
+
+1464
+01:42:50,800 --> 01:42:59,800
+Şimdi bir denklem çözdük, x'in bir değerini bulduk veya bir denklem çözdük, x eşittir 3x artı 5 gibi bir şey bulduk.
+
+1465
+01:42:59,800 --> 01:43:06,800
+Yani yine elimizde bir denklem var, o denkleme ben herhangi bir değeri vererek çözümde bir denklem de bulabiliyoruz.
+
+1466
+01:43:06,800 --> 01:43:10,800
+O denkleme herhangi bir değer vererek farklı çıktılar bulabiliyor.
+
+1467
+01:43:11,800 --> 01:43:16,800
+Sayısal yöntemlerde verdiğim değerler sayısal sonuçlar diyor.
+
+1468
+01:43:16,800 --> 01:43:21,800
+Yani sürekli değerler yok, arada belli değerlerin olmadı.
+
+1469
+01:43:21,800 --> 01:43:27,800
+İşte sıfır verdik, bir çıktı, bir verdik, şu çıktı gibi daha kesikli olan bir şey.
+
+1470
+01:43:27,800 --> 01:43:31,800
+Şimdi sürekliyle kesikli arasında bir ilişki de var.
+
+1471
+01:43:32,800 --> 01:43:41,199
+Sürekli olan bir veriyi yani şöyle düşünelim, bilgisayarda doğrudan saklayamayız.
+
+1472
+01:43:41,199 --> 01:43:48,199
+Bunun için ne yapacağız? Bu veri üzerinde belli örneklemeler yaparak örnekler alacağız.
+
+1473
+01:43:48,199 --> 01:43:53,199
+Bu aldığımız örnekler, işte şunları aldık bize, aradaki detayları kaybediyoruz.
+
+1474
+01:43:53,199 --> 01:44:00,199
+Bilgisayarda saklayarak kesikli veya diskrit veriler elde ederiz.
+
+1475
+01:44:01,199 --> 01:44:10,199
+Eğer ben bu şeyi matematiksel olarak düşünürsem, sonsuz defa örnekleme yaparsam aslında sürekli veriye ulaşıyorum.
+
+1476
+01:44:10,199 --> 01:44:14,199
+Ama bu sonsuzluk mümkün değil bilgisayar sisteminde.
+
+1477
+01:44:14,199 --> 01:44:21,199
+Bu olan, bu söylediğim şey, sürekli işte çizmeye çalıştığım şunlar da kesikli şeyler.
+
+1478
+01:44:21,199 --> 01:44:26,199
+İşte bu sayısal yöntemlerde daha çok kesikli durumlarla uğraşıyoruz.
+
+1479
+01:44:26,199 --> 01:44:33,199
+Yani E üzeri X'in türevini almayı biliyoruz ama E üzeri X'in bende şey var, bir dizisi var.
+
+1480
+01:44:33,199 --> 01:44:46,199
+Yani X yerine 0 verdik, 1 verdik, 2 verdik veya yine dizide X yerine 0.01 verdik, 0.001 verdik gibi.
+
+1481
+01:44:46,199 --> 01:44:50,199
+Ama aradaki bütün değerleri veremiyoruz. Dizide saklayacağız ama her şey yok.
+
+1482
+01:44:50,199 --> 01:44:57,199
+İşte bu sakladığımız dizide belli bir kayıp var, türevini aldığımızda yine belli bir kayıpla türevini bulacağız.
+
+1483
+01:44:57,199 --> 01:45:00,199
+Sayısal yöntemlerinde böyle bir fark var.
+
+1484
+01:45:00,199 --> 01:45:04,199
+Analtik yöntemlerde matematiksel fonksiyon olarak çözümler üretiliyor.
+
+1485
+01:45:04,199 --> 01:45:11,199
+Yani bir fonksiyon buluyoruz ve bu fonksiyonlardan yola çıkarak sayısal değerler üretiyoruz.
+
+1486
+01:45:11,199 --> 01:45:14,199
+İşte biraz önceki havuz problemini düşünün.
+
+1487
+01:45:14,199 --> 01:45:17,199
+Karışık olmayan problemlerin çözümünde kullanılır.
+
+1488
+01:45:17,199 --> 01:45:23,199
+Yani bu da aynı söylediğim şey, destekler nitelikte bir hız problemini, bir havuz problemini.
+
+1489
+01:45:23,199 --> 01:45:33,199
+Özellikle içerisinde çok türevli işlemlerin olmadığı, değişkenlerin kendi içinde değişmediği bir şey düşünelim.
+
+1490
+01:45:33,199 --> 01:45:35,199
+Yani bir dünya düşünün.
+
+1491
+01:45:35,199 --> 01:45:38,199
+Şimdi Y eşittir, X artı 3.
+
+1492
+01:45:38,199 --> 01:45:41,199
+X değişken mi burada arkadaşlar?
+
+1493
+01:45:41,199 --> 01:45:45,199
+Yani bilinmeyen bir şey diyelim.
+
+1494
+01:45:45,199 --> 01:45:50,199
+Pardon, X bağımsız değişken, Y bağımlı değişken.
+
+1495
+01:45:50,199 --> 01:46:00,039
+Şimdi şu bağımsız değişken de kendi içinde değişebilir mi günlük hayatta?
+
+1496
+01:46:00,039 --> 01:46:06,779
+Yani X kendi içinde değişebilir mi?
+
+1497
+01:46:06,779 --> 01:46:12,560
+Şu model için değişebilir.
+
+1498
+01:46:12,560 --> 01:46:15,560
+Şu model için şöyle bir şey söylesem.
+
+1499
+01:46:15,560 --> 01:46:18,560
+Bu Y eşittir, X artı 3 belki bir şey anlam ifade etmiyor.
+
+1500
+01:46:19,560 --> 01:46:30,560
+Gelen sıcaklık değerine 3 bürüm ekle, çıktığa ver dediğimde ve bunu zamana göre yap dediğimde o zaman şöyle bir şey buluyorum.
+
+1501
+01:46:30,560 --> 01:46:34,560
+Y, T eşittir, X, T artı 3.
+
+1502
+01:46:34,560 --> 01:46:38,560
+Gelecek sene bunun sinyaller, sistemler, belki bu sene devleti ölçüsünde de göreceksiniz kısmet.
+
+1503
+01:46:38,560 --> 01:46:41,560
+Bir T'ye bağlı X değişkeni var.
+
+1504
+01:46:41,560 --> 01:46:42,560
+Bu bir sıcaklık.
+
+1505
+01:46:42,560 --> 01:46:44,560
+Aslında bu bir vector.
+
+1506
+01:46:45,560 --> 01:46:48,560
+Bu dizinin hangi değeri gelirse şu T'ye bağlı değişiyor.
+
+1507
+01:46:48,560 --> 01:46:50,560
+Ben buna 3 bürüm ekliyorum.
+
+1508
+01:46:50,560 --> 01:46:52,560
+Bir başka dizi elde ediyorum.
+
+1509
+01:46:52,560 --> 01:46:57,560
+Ve sistem, elektronik sistem ne yapıyor?
+
+1510
+01:46:57,560 --> 01:47:06,560
+Aslında bir toplama devresiyle veya bir toplama operasyonuyla gelen referans sıcaklığa 3 bürüm daha ekleyip ona göre belki ısıtıcı çalıştırıyor veya başka bir şey yapıyor gibi düşünebilirsiniz.
+
+1511
+01:47:06,560 --> 01:47:10,560
+Ama yaptığımız şey böyle bir fonksiyon bulmak.
+
+1512
+01:47:11,560 --> 01:47:14,560
+Bu fonksiyonu daha sonra farklı değerler vererek elde etmek.
+
+1513
+01:47:14,560 --> 01:47:15,560
+Bu analitik çözümde.
+
+1514
+01:47:15,560 --> 01:47:23,560
+Sayısal çözümde böyle bir fonksiyon her zaman bulamıyoruz veya bu bulduğumuz fonksiyonu her zaman bu kadar basit çözemiyoruz.
+
+1515
+01:47:23,560 --> 01:47:26,560
+Burada sonuçlarımız daima sayısal.
+
+1516
+01:47:26,560 --> 01:47:28,560
+İteratif yöntemler kullanıyor.
+
+1517
+01:47:28,560 --> 01:47:29,560
+Bunu da söyledik.
+
+1518
+01:47:29,560 --> 01:47:35,560
+Yaklaşık bir çözüm üretiyoruz ve bunun için bir hata ortaya koyunuyor.
+
+1519
+01:47:35,560 --> 01:47:40,560
+Bu hassasiyet belli bir hassasiyetle yapılırsa bu hata ne oluyor?
+
+1520
+01:47:40,560 --> 01:47:41,560
+Minimize ediliyor.
+
+1521
+01:47:41,560 --> 01:47:48,560
+O kadar azaltılıyor ve bu hassasiyeti söyleyen en önemli şeyde, ifade eden en önemli ifade de,
+
+1522
+01:47:48,560 --> 01:47:52,560
+İterasyon sayısının fazla olması yani adım sayısının fazla olması.
+
+1523
+01:47:52,560 --> 01:47:54,560
+Biz derste anlatacağız.
+
+1524
+01:47:54,560 --> 01:47:56,560
+İşte çözüme 3 adım yaklaşınız.
+
+1525
+01:47:56,560 --> 01:47:58,560
+Bir adım yapacağız.
+
+1526
+01:47:58,560 --> 01:47:59,560
+Daha sonra 2 adım, 3 adım.
+
+1527
+01:47:59,560 --> 01:48:01,560
+Belki çözüm gerçekte 300 adım.
+
+1528
+01:48:01,560 --> 01:48:04,560
+Tabii 300 adım size kodla elde çözüm yaptıramayız.
+
+1529
+01:48:04,560 --> 01:48:12,560
+Burada bir de hata analizi işte dediğim gibi ne kadar hata, gerçek olan verilerle ne kadar hatamız var.
+
+1530
+01:48:12,560 --> 01:48:14,560
+Peki burada gerçek ne?
+
+1531
+01:48:14,560 --> 01:48:18,560
+Arkadaşlar bu da artık bir istatistik konusu gibi düşüneceğiz.
+
+1532
+01:48:18,560 --> 01:48:23,560
+Elimizde şu ana kadar topladığımız datalarımız var, data set var.
+
+1533
+01:48:23,560 --> 01:48:27,560
+Ben bu data setten bir model oluşturacağım.
+
+1534
+01:48:27,560 --> 01:48:30,560
+Bunu interpolasyon veya regresyon gibi düşünebilirsiniz.
+
+1535
+01:48:30,560 --> 01:48:32,560
+Bir model tasarlayacağım.
+
+1536
+01:48:32,560 --> 01:48:35,560
+Buna pattern de deniyor, pattern.
+
+1537
+01:48:35,560 --> 01:48:39,560
+Bu patterndan yola çıkarak bir error bulacağız.
+
+1538
+01:48:39,560 --> 01:48:41,560
+Bütün yöntemlerde hemen hemen bu var.
+
+1539
+01:48:41,560 --> 01:48:47,560
+Bu error belli bir miktara altına kabul edilebilir bir hatanın altına düşünce,
+
+1540
+01:48:47,560 --> 01:48:50,560
+bu modeli yeni gelen veriler için kullanıyorum.
+
+1541
+01:48:50,560 --> 01:48:52,560
+Yani burada 1000 tane data var.
+
+1542
+01:48:52,560 --> 01:48:54,560
+1000 birinci data geldi.
+
+1543
+01:48:54,560 --> 01:48:59,560
+Ben bu 1000 birinci datayı artık tasarladığım model üzerinde kullanabilir hale geleceğim.
+
+1544
+01:49:02,960 --> 01:49:05,960
+Mesela şöyle bir denklemimiz var.
+
+1545
+01:49:05,960 --> 01:49:09,960
+Y eşittir, x², xı, 3x artı ki bu bir sisteme dair bir şey.
+
+1546
+01:49:09,960 --> 01:49:15,960
+Bunun analitik yaklaşımda köklerinin bulunmasını istemiş.
+
+1547
+01:49:15,960 --> 01:49:17,960
+Mesela demiş ki türevini alalım.
+
+1548
+01:49:17,960 --> 01:49:19,960
+Türevi sıfıra eşit dediğimde ne oluyor?
+
+1549
+01:49:19,960 --> 01:49:22,960
+Onun min veya maksum noktasını...
+
+1550
+01:49:22,960 --> 01:49:27,960
+İşte ne yapmış? Bir buçuk değerinden bir buçuk değerini bulmuş.
+
+1551
+01:49:27,960 --> 01:49:30,960
+Bir buçuk değerindeki fonksiyonun görüntüsü de neymiş?
+
+1552
+01:49:30,960 --> 01:49:33,960
+Yani bu nedir? Bu parabolun tepe noktası mıydı?
+
+1553
+01:49:33,960 --> 01:49:35,960
+Herhalde onu buluyordu.
+
+1554
+01:49:35,960 --> 01:49:44,960
+Peki, denklem varken elimizde böyle çözebiliyorsak, numerik yaklaşımda elimizde şunlar olacak.
+
+1555
+01:49:44,960 --> 01:49:51,960
+Şimdi buna baktığımızda y eşittir bir şey yazamıyorum.
+
+1556
+01:49:51,960 --> 01:49:52,960
+Öyle değil mi?
+
+1557
+01:49:52,960 --> 01:49:59,960
+Yani ax artı b, ax karartı b ya bunu önce bir yöntemle bir fonksiyon uyduracağım.
+
+1558
+01:49:59,960 --> 01:50:08,960
+x ve y arasındaki değişime göre veya başka yöntemler kullanarak min noktasını, maksimum noktasını, optimum noktalarını bulabileceğiz.
+
+1559
+01:50:08,960 --> 01:50:11,960
+Bu analitik yaklaşım, bu numelik yaklaşım.
+
+1560
+01:50:11,960 --> 01:50:18,890
+Şimdi şuna baktığımız zaman bunun analitik çözümü mevcut.
+
+1561
+01:50:18,890 --> 01:50:26,890
+Ama şöyle bir şeye baktığımızda biraz önce [öğrenci] sana verdiğim örnekten daha uygun bir örnek bu.
+
+1562
+01:50:26,890 --> 01:50:28,890
+Böyle bir eşitlik var.
+
+1563
+01:50:28,890 --> 01:50:34,890
+Şimdi biz x²-5x çarpı cos x artı e yüze x.
+
+1564
+01:50:34,890 --> 01:50:39,890
+Bunu çözerken hani bilinenler bir tarafa, bilinmeyenler bir tarafa yapsak pek bir şey çıkmıyor.
+
+1565
+01:50:39,890 --> 01:50:49,890
+Uğraşırsak hani bir şeyler belki bulabiliriz de bunu doğrudan çözebilecek bir denklem çözme mantığımız yok şu ana kadar ki bilgilerimizde.
+
+1566
+01:50:49,890 --> 01:50:52,890
+Onun yerine x için bir değer veriliyor.
+
+1567
+01:50:52,890 --> 01:50:57,890
+Mesela x-1.30, 0 için bilmiş, 0.5 için buymuş.
+
+1568
+01:50:57,890 --> 01:51:03,890
+Bu değerleri verip minimum hatayı sıfıra ne zaman ulaşabiliriz?
+
+1569
+01:51:03,890 --> 01:51:08,890
+Tabi bu arama uzayı çok geniş bir arama uzayı değil mi?
+
+1570
+01:51:08,890 --> 01:51:13,890
+Yani real sayılar üzerinde düşünürsek sonsuz tane sayı denememiz gerekir.
+
+1571
+01:51:13,890 --> 01:51:22,890
+İşte bu arama işlemini öyle bir yapalım ki aynı binary search algoritmasında olduğu gibi veya diğer algoritmalar olduğu gibi
+
+1572
+01:51:22,890 --> 01:51:27,890
+Bir sonraki adımda bulduğumuz değer, bir önceki adımda bulduğumuz değerden daha iyi olsun.
+
+1573
+01:51:27,890 --> 01:51:31,890
+Sürekli iyileştiren bir arama işlemi yapmamız mümkün olsun.
+
+1574
+01:51:31,890 --> 01:51:32,890
+Buna bakacağız.
+
+1575
+01:51:32,890 --> 01:51:38,890
+Mesela şunun için böyle bir denklem Lnx artı x küp artı tanjan 2x.
+
+1576
+01:51:38,890 --> 01:51:39,890
+X değeri nedir?
+
+1577
+01:51:39,890 --> 01:51:42,890
+Şimdi böyle bir denklem şu ana kadar hiç çözdünüz mü?
+
+1578
+01:51:42,890 --> 01:51:47,319
+Herhalde çözen yoktur.
+
+1579
+01:51:47,319 --> 01:51:49,319
+Yok hocam.
+
+1580
+01:51:50,319 --> 01:51:52,319
+Sağ tarafa atıyoruz, olmuyor.
+
+1581
+01:51:52,319 --> 01:51:53,319
+Solu atıyoruz, olmuyor.
+
+1582
+01:51:53,319 --> 01:51:55,319
+Değişken dönüşümü yapıyoruz, olmuyor.
+
+1583
+01:51:55,319 --> 01:51:56,319
+Türevini alsak, olmuyor.
+
+1584
+01:51:56,319 --> 01:51:58,319
+İntegrenini alsak, olmuyor.
+
+1585
+01:51:58,319 --> 01:52:06,319
+İşte burada yapacağımız şey bu sayısal yöntemleri kullanmak, numerical metotları kullanmak.
+
+1586
+01:52:06,319 --> 01:52:09,319
+Evet bu kısımda kalalım.
+
+1587
+01:52:09,319 --> 01:52:13,319
+Burası biraz daha farklı bir konu.
+
+1588
+01:52:13,319 --> 01:52:19,319
+Aslında bu konunun bir kısmını ben 12. slide diyelim şimdilik burada dursun.
+
+1589
+01:52:19,319 --> 01:52:26,319
+Yapısal programlamada da buraya kadarki yani şu sayılarının gösterimle alakalı kısmı orada da anlatacağım.
+
+1590
+01:52:26,319 --> 01:52:30,319
+Cuma günü dersimde konulara değineceğim.
+
+1591
+01:52:30,319 --> 01:52:32,319
+Ama burada da birazcık özetleyeceğiz.
+
+1592
+01:52:32,319 --> 01:52:38,319
+Ortak olan arkadaşlar, iki derste alan arkadaşlar belki iki defa dinleyecekler ama yapacak bir şey yok.
+
+1593
+01:52:38,319 --> 01:52:45,319
+Geçenlerde yapısalda bir arkadaş, hocam ben BBG almadım, bilgisayar bilimine giriş almadım demişti.
+
+1594
+01:52:45,319 --> 01:52:47,319
+O arkadaş burada mı?
+
+1595
+01:52:47,319 --> 01:52:49,319
+Aynı ders alıyor mu acaba?
+
+1596
+01:52:49,319 --> 01:52:53,319
+O arkadaş değilim ama ben de hocam almamışım.
+
+1597
+01:52:53,319 --> 01:52:57,319
+Şimdi bu tarz durumda olanlar varsa şunu tavsiye ederim.
+
+1598
+01:52:57,319 --> 01:53:01,319
+Geçen dönemin kayıtları bazı arkadaşlarınızda vardır.
+
+1599
+01:53:01,319 --> 01:53:06,319
+Amaç Bey'den veya [öğrenci] Bey'den o kayıtları dinlemenizi tavsiye ederim.
+
+1600
+01:53:06,319 --> 01:53:15,319
+Yani en azından ilk 5-6 haftanın bilgisayar bilimleri alakalı kavramlarını, flow şartlarını dinlemenizi tavsiye ederim.
+
+1601
+01:53:15,319 --> 01:53:23,319
+Ben bu önümüzdeki cuma dersini de kısmen anlatacağım ama bir derste, bir günde ne kadar anlatabiliriz?
+
+1602
+01:53:23,319 --> 01:53:25,319
+Bir dönem anlatılmaz.
+
+1603
+01:53:25,319 --> 01:53:29,319
+Onun için o tarz yardımları arkadaşlarınızdan alırsınız.
+
+1604
+01:53:29,319 --> 01:53:35,319
+Buna bir bakarsınız. Bir şekilde kendi networkünüzden bu bulunur arkadaşlar.
+
+1605
+01:53:35,319 --> 01:53:37,319
+Daha önceden yani yapanlar var.
+
+1606
+01:53:37,319 --> 01:53:39,319
+Onun için tavsiye ederim.
+
+1607
+01:53:39,319 --> 01:53:44,319
+Aslında bu uzaktan eğitimin sizin için faydalı bir yönüdür.
+
+1608
+01:53:44,319 --> 01:53:46,319
+Yani hoca önemli değil.
+
+1609
+01:53:46,319 --> 01:53:48,319
+İstediğiniz birinden tavsiye edilebilirsiniz.
+
+1610
+01:53:48,319 --> 01:53:49,319
+İkisi de çok kaliteli.
+
+1611
+01:53:49,319 --> 01:53:51,319
+İkisiyle de çalıştığım için biliyorum.
+
+1612
+01:53:51,319 --> 01:53:55,319
+Ben olsam ikisinden de dinlemenizi tavsiye ederim.
+
+1613
+01:53:55,319 --> 01:53:56,319
+Evet.
+
+1614
+01:53:56,319 --> 01:53:58,319
+Eaçıkkaynak.com var.
+
+1615
+01:53:58,319 --> 01:54:00,319
+Oradan da bakabilirsiniz.
+
+1616
+01:54:01,319 --> 01:54:09,319
+Yani ama hocalardan biraz daha bu konuda daha çok fayda alacağınızı düşünüyorum.
+
+1617
+01:54:09,319 --> 01:54:12,319
+Çünkü daha geniş geniş anlatılıyor.
+
+1618
+01:54:12,319 --> 01:54:18,319
+Tabii ders arasındaki muhabbetler orada şey olur da biraz onu iki ikisizde falan dinlerseniz daha faydalı olur.
+
+1619
+01:54:18,319 --> 01:54:26,319
+Önemli olan flowchart notasyonlarını bu derste ben cuma günü bahsedeceğim ama onları falan iyi öğrenmeniz.
+
+1620
+01:54:26,319 --> 01:54:30,319
+Daha önceden o derse alınan arkadaşlar için bunlar lazım olacak.
+
+1621
+01:54:30,319 --> 01:54:32,319
+Evet var mı sorunuz arkadaşlar?
+
+1622
+01:54:32,319 --> 01:54:36,079
+Yok hocam.
+
+1623
+01:54:36,079 --> 01:54:37,079
+Ağzınıza sağlık.
+
+1624
+01:54:37,079 --> 01:54:38,079
+Sağ olun hocam.
+
+1625
+01:54:38,079 --> 01:54:44,079
+Şey dersin işleyişiyle alakalı başka bir problem varsa onları şu an alabiliriz.
+
+1626
+01:54:44,079 --> 01:54:46,079
+Yoksa dersi kapatacağım.
+
+1627
+01:54:46,079 --> 01:54:54,079
+Gelecek hafta bu kaldığımız yerden bu kaldığımız yer derken bu da biraz sıvayet üzerinden gidecek ama ondan sonraki hafta var konularımız.
+
+1628
+01:54:54,079 --> 01:54:58,079
+Daha çok böyle grafik tablet üzerinde yazarak olacak.
+
+1629
+01:54:58,079 --> 01:55:04,079
+Her dersin slide'ını Banu Hoca yapmış ama bu ders böyle slide üzerinde ilerlenecek bir slide değil.
+
+1630
+01:55:04,079 --> 01:55:08,079
+Çünkü matematiksel bir şey yani soru çözmek gerekiyor.
+
+1631
+01:55:08,079 --> 01:55:22,079
+Benim çözdüğüm soru da her konuda bir veya iki tane olur ama siz bunu 5-6 veya 10'a çıkarırsanız bu dersin maksimum faydasını elde etmiş olursunuz ve çok yüksek puanlarla dersi tamamlarsınız.
+
+1632
+01:55:22,079 --> 01:55:23,079
+Onu söyleyeyim.
+
+1633
+01:55:23,079 --> 01:55:29,079
+Şimdiden C programlamada şunu yapmanızı tavsiye ederim.
+
+1634
+01:55:29,079 --> 01:55:40,079
+Bir denklem verildiğinde o denkleme string operasyonlarıyla işte X nedir, Y nedir mesela onlara mesela bir değer verince o denkleme sonucu nedir?
+
+1635
+01:55:40,079 --> 01:55:42,079
+Bunları kodlamaya başlayın.
+
+1636
+01:55:42,079 --> 01:55:47,079
+Bir arayüzünüz olsun yani bir comment line üzerinde basit bir arayüz yapın.
+
+1637
+01:55:47,079 --> 01:55:53,079
+İşte buradaki yöntemlerin hepsi için bir menu oluşturun.
+
+1638
+01:55:53,079 --> 01:55:57,079
+O menüleri bence yavaş yavaş kodlamaya başlayın.
+
+1639
+01:55:57,079 --> 01:56:01,079
+Şimdiden kodlamaya başlarsanız dönem sonunda çok rahat edeceğinizi düşünüyorum.
+
+1640
+01:56:01,079 --> 01:56:07,079
+Yani bu son 10 güne 20 güne kalan bir şey değil.
+
+1641
+01:56:07,079 --> 01:56:11,079
+Maalesef belki bir ayınızı alacak bir şey olabilir.
+
+1642
+01:56:11,079 --> 01:56:15,079
+Bir oturuşta tek seferde bir yöntem kodlamak her zaman mümkün olmuyor.
+
+1643
+01:56:15,079 --> 01:56:17,079
+Daha yenisiniz ayrıca bu yöntemden.
+
+1644
+01:56:17,079 --> 01:56:20,909
+Evet [öğrenci].
+
+1645
+01:56:20,909 --> 01:56:27,909
+Hocam derslerin sonunda soru bank gibi bir şey hazırlayacağız demiştiniz ya o ne zamandan ben soruyorum.
+
+1646
+01:56:27,909 --> 01:56:36,909
+Yani soru bank şu size test yapacağız orada online yıldız üzerinden işte 5-6 soruluk bir test olacak.
+
+1647
+01:56:36,909 --> 01:56:44,909
+Eğer bunu kastediyorsan o her hafta size duyurulur veya bir hafta önceden işte haftaya anlatacağımız konu üzerinden test yapacağız diye.
+
+1648
+01:56:44,909 --> 01:56:52,909
+Ama şunu kastediyorsan da örnek çalışma sorusu pratik için soru istiyorsan onu ben diğer grup verir mi bilmem de
+
+1649
+01:56:52,909 --> 01:56:58,909
+benim kendi kullandığım kitaplar var onlardan veya bazı farklı üniversitelerin ders notları var.
+
+1650
+01:56:58,909 --> 01:57:11,909
+Onlardan her dersin sonunda veya yetiştiremezsem birkaç gün içinde bu gruptan veya telegram grubumuzdan veya ders duvarından onlara eklerim size bilgisini veririm.
+
+1651
+01:57:11,909 --> 01:57:16,909
+Yani numerik analiz yöntemlerinden işte sayısal integrali gördük.
+
+1652
+01:57:16,909 --> 01:57:19,909
+Örnek sorular diyelim.
+
+1653
+01:57:19,909 --> 01:57:25,909
+Örnek soruları işte sayfaya yükledim diye bir bilgi veririm size mutlaka oradan bakarsınız.
+
+1654
+01:57:25,909 --> 01:57:27,909
+Teşekkürler hocam.
+
+1655
+01:57:27,909 --> 01:57:29,909
+Bu neymiş bu MediaFire.
+
+1656
+01:57:29,909 --> 01:57:32,909
+Merak ettim bir tıklayayım dedim.
+
+1657
+01:57:32,909 --> 01:57:37,529
+Burada şey mi var?
+
+1658
+01:57:37,529 --> 01:57:39,529
+Her şey net kuyusu olacak acaba.
+
+1659
+01:57:39,529 --> 01:57:43,529
+Benim düşüncem her hafta için yapmak.
+
+1660
+01:57:44,529 --> 01:57:48,529
+Yani hepsi hepsi notlandırılacak mı?
+
+1661
+01:57:48,529 --> 01:57:50,529
+Evet.
+
+1662
+01:57:50,529 --> 01:57:53,529
+Yani Banu Hoca ile öyle konuştuk.
+
+1663
+01:57:53,529 --> 01:57:58,529
+Ne kadar çok kuize katılsanız o kadar iyi.
+
+1664
+01:57:58,529 --> 01:58:03,529
+Neyse burada bakın baya bir şey var arkadaşlar bunlara.
+
+1665
+01:58:03,529 --> 01:58:05,529
+Bence bu güzel bir şey.
+
+1666
+01:58:05,529 --> 01:58:10,529
+Özellikle birinci sınıflar için birçok dersi indirin saklayın.
+
+1667
+01:58:10,529 --> 01:58:14,529
+Hocam ayın 20'sine kadar kalacağını söylediler.
+
+1668
+01:58:14,529 --> 01:58:17,529
+Ayın 20'sinden sonra silinecek bu ortamdan.
+
+1669
+01:58:17,529 --> 01:58:21,529
+O yüzden indirmek isteyen varsa ayın 20'sine kadar ulaşabilir.
+
+1670
+01:58:21,529 --> 01:58:24,529
+Tamam [öğrenci] teşekkür ederiz.
+
+1671
+01:58:24,529 --> 01:58:30,529
+Özellikle temel dersleriniz için gelecek senin dönemlerdeki temel dersleriniz için indirin bulunsun.
+
+1672
+01:58:30,529 --> 01:58:32,529
+Faydasını görürsünüz.
+
+1673
+01:58:32,529 --> 01:58:34,529
+Ben kendi öğrencilerime tavsiye ediyorum.
+
+1674
+01:58:34,529 --> 01:58:39,529
+Mesela benden dinlediğiniz dersi bir de gidin Banu Hoca'dan da dinleyebilirsiniz.
+
+1675
+01:58:39,529 --> 01:58:42,529
+Bir ekstra ders çalışır gibi.
+
+1676
+01:58:42,529 --> 01:58:44,529
+Tabii her derste dinlenmez.
+
+1677
+01:58:44,529 --> 01:58:47,529
+Uzun uzun böyle 4-5 saatlik dersleriniz varsa onlar olmaz.
+
+1678
+01:58:47,529 --> 01:58:57,529
+Bu algoritma dersleri bizim bölümün çekirdek dersleri dediğimiz zor denemeyecek dersleri birkaç defa dinlemek fayda sağlar.
+
+1679
+01:58:57,529 --> 01:59:01,529
+Evet soru var mı arkadaşlar merak ettiğiniz bir şey.
+
+1680
+01:59:01,529 --> 01:59:03,529
+Herhangi bir konu olabilir.
+
+1681
+01:59:03,529 --> 01:59:08,529
+Hocam bu C ile bir taslak yapım gibisinden bir şey demiştiniz ya.
+
+1682
+01:59:08,529 --> 01:59:10,529
+Onu biraz daha açabilir misiniz?
+
+1683
+01:59:10,529 --> 01:59:14,529
+Mesela bir fonksiyon giriniz diye bir input alacak sizden.
+
+1684
+01:59:14,529 --> 01:59:19,529
+Fonksiyon mesela 2x artı 3 girdim veya sonuçta x kare diye bir şey giremem.
+
+1685
+01:59:19,529 --> 01:59:23,529
+X üzeri işte şapka işareti x üzeri 2 gibi bir şeye girin.
+
+1686
+01:59:23,529 --> 01:59:31,529
+Sonra fonksiyonun değerini bulmak için ne yaparsınız bir fonksiyon yazarsınız ya C fonksiyonu.
+
+1687
+01:59:31,529 --> 01:59:34,529
+İşte x'e 3 verince sonuç ne olacak?
+
+1688
+01:59:34,529 --> 01:59:38,529
+Yani burada string operasyonları çok ciddi bir şekilde kullanılır.
+
+1689
+01:59:38,529 --> 01:59:41,529
+Mesela sin x girdik onu bak şimdi.
+
+1690
+01:59:41,529 --> 01:59:45,529
+Tabii sonsuz sahnede fonksiyon olmaz yani o ciddi bir kütüphane olur.
+
+1691
+01:59:45,529 --> 01:59:52,529
+Ama yaygın kullanılan fonksiyonlar nasıl işlenecek pars edilecek string operasyonlarıyla.
+
+1692
+01:59:52,529 --> 01:59:58,529
+Veya nasıl işte verilen değer hesaplanıp yerine sonucu yazılacak bunlara bakmanız lazım.
+
+1693
+01:59:58,529 --> 02:00:00,529
+Genel olarak söylemek istediğim şey bu.
+
+1694
+02:00:00,529 --> 02:00:04,529
+Detaylarını Banı Hoca ile duyuracağız.
+
+1695
+02:00:04,529 --> 02:00:13,529
+Proje ile alakalı ama ta şu an hani erkenden duyurmaya gerek yok ama proje bu yöntemlerin kodlanması için var.
+
+1696
+02:00:13,529 --> 02:00:20,529
+Sizin hem C'de hem de bu anlattığımız konularda pratiklik kazanmanız için var.
+
+1697
+02:00:20,529 --> 02:00:32,529
+Buna mümkün olduğunca ne kadar çok zaman ayırırsanız hem programına düşüneceğiniz hem de bu derse dair bilgileriniz o kadar çok bekişir.
+
+1698
+02:00:32,529 --> 02:00:34,529
+Ben ideal olanı söylüyorum.
+
+1699
+02:00:34,529 --> 02:00:36,529
+Gerçekte bunlar ne kadar olacak göreceğiz.
+
+1700
+02:00:36,529 --> 02:00:40,529
+Bu ders geçme oranı geçen senelerde biraz düşüktü.
+
+1701
+02:00:40,529 --> 02:00:42,529
+Uzaktan eğitim de biraz yükseldi.
+
+1702
+02:00:42,529 --> 02:00:49,529
+Ama bende zor değil biraz öğrencilerin derse karşı bakış açısı farklı oluyor.
+
+1703
+02:00:49,529 --> 02:00:52,529
+Daha çok böyle kalkulus matematik dersi gibi görülüyor.
+
+1704
+02:00:52,529 --> 02:00:54,529
+Öyle değil arkadaşlar.
+
+1705
+02:00:54,529 --> 02:01:02,529
+Bu bölüm bir programlama bölümü yönetim bilgi sistemleri bölümü gibi yani mühendislik dışında bir bölüm olsaydı haklı olabilirdiniz.
+
+1706
+02:01:02,529 --> 02:01:13,529
+Ama ikinci sınıftaki sinyal sistem dersini ondan sonra sayısal işaret işleme görüntü işleme gibi derslerde buradaki bilgiler doğrudan kullanılıyor.
+
+1707
+02:01:13,529 --> 02:01:18,529
+Her ne kadar hazır fonksiyonlar kullanılsa da buradaki mantık orada geçerli.
+
+1708
+02:01:18,529 --> 02:01:22,529
+Ben sinyal sistemde işte geçen dönem anlatıyorum.
+
+1709
+02:01:22,529 --> 02:01:23,529
+İşte bir şey diyorum.
+
+1710
+02:01:23,529 --> 02:01:24,529
+Bunu gördünüz mü?
+
+1711
+02:01:24,529 --> 02:01:28,529
+İşte sayısal anazide kısman gördük hatırlıyoruz az çok şeyleri hatırlıyoruz diyorlardı.
+
+1712
+02:01:28,529 --> 02:01:38,529
+O temelleri buradan ne kadar iyi atarsanız gelecek dönemlerde mühendislik nosyonuyla alakalı derslerde size o kadar faydası olur.
+
+1713
+02:01:38,529 --> 02:01:44,529
+Yoksa hani ben bir yerden kod buldum yazdım onu çalıştırdım sonuç elde ettim.
+
+1714
+02:01:44,529 --> 02:01:49,529
+Tamam o da olabilir de neyi nasıl yaptığımızı ne için yaptığımızı da bilmemiz gerekiyor.
+
+1715
+02:01:49,529 --> 02:02:04,529
+Genelde bulduğumuz bir kod bir problemi çözerken işimize yarayabiliyor ama o bulduğumuz kod acaba hangi metod puzzle'ın hangi parçası bunları çok iyi bilmek lazım.
+
+1716
+02:02:04,529 --> 02:02:12,529
+Yani bir görüntü işlemede önce görüntüde gürültü mü gidereyim sonra kenar mı bulayım sonra başka bir işlem mi yapayım veya sinyal işlemede hangi işlemi önce yapayım.
+
+1717
+02:02:12,529 --> 02:02:24,529
+Bu işlemlerin sırası ne olacak ve her bir işlemin parametresi nedir işte türev olarak kaçıncı dereceden türev alacağım veya polinom üreteceksem kaçıncı dereceden polinom üreteceğim bunların hepsini bilmek gerekiyor.
+
+1718
+02:02:24,529 --> 02:02:34,529
+Yoksa kod bulup yazmak zaten çok zor bir şey değil ki artık günümüzde Python'dır MetDep'tir bu farklı programlama dilleri bir sürü hazır kütüphane sunuyorlar.
+
+1719
+02:02:34,529 --> 02:02:39,529
+Onları alıp kullanmak en doğru olan yani oturup onların da sıfırdan kodunu yazmamız gerekmiyor.
+
+1720
+02:02:39,529 --> 02:02:43,529
+Ama neyi nerede yapacağımızı iyi bilmemiz lazım.
+
+1721
+02:02:43,529 --> 02:02:52,609
+Evet başka sorumuz yoksa bugünlük yeter diyelim tam 1 saat 2 saat oldu neredeyse.
+
+1722
+02:02:52,609 --> 02:03:00,609
+Hepinize tekrardan hayırlı bir dönem olsun görüşmek üzere kendinize iyi bakın.
+
+1723
+02:03:00,609 --> 02:03:03,609
+İyi günler. Sağ olun hocam iyi günler.
+
+1724
+02:03:03,609 --> 02:03:06,609
+İyi günler. Sağ olun arkadaşlar.
+

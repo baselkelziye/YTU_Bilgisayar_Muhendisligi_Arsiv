@@ -1,0 +1,2112 @@
+1
+00:00:38,130 --> 00:00:43,200
+Merhabalar, günaydın.
+
+2
+00:00:43,200 --> 00:00:44,200
+Günaydın hocam.
+
+3
+00:00:47,200 --> 00:00:50,200
+Biraz daha arkadaşlarınızın eklenmesini bekliyorum.
+
+4
+00:00:53,200 --> 00:00:57,200
+Öncelikle bir geçen haftanın çok kısa bir tekrarını yapacağım.
+
+5
+00:00:59,200 --> 00:01:02,200
+Biraz daha kıtılımcılarımız artsın diye bekliyorum.
+
+6
+00:01:04,200 --> 00:01:08,859
+Soru bugünkü konudan devam edeceğiz.
+
+7
+00:01:08,859 --> 00:01:10,859
+Ama önce bir geçen hafta söylediklerimizi,
+
+8
+00:01:10,859 --> 00:01:13,859
+bir de projeyi söylememiştim geçen hafta.
+
+9
+00:01:14,859 --> 00:01:16,859
+Onu da ekleyeceğim.
+
+10
+00:01:16,859 --> 00:01:21,709
+Şimdi...
+
+11
+00:01:21,709 --> 00:01:27,709
+Evet, onu altıda kaldı.
+
+12
+00:01:28,709 --> 00:01:31,709
+Dersin başı olduğu için kamerayı açtım, yoksa kapatacağım.
+
+13
+00:01:31,709 --> 00:01:39,709
+Çünkü ses ve slide'lar konusunda problem oluyordu daha önce yaşamıştık.
+
+14
+00:02:03,269 --> 00:02:08,270
+Ben slide'ı paylaşarak öncelikle dersin içeriğini
+
+15
+00:02:08,270 --> 00:02:12,270
+bir gözden geçirerek devam edeceğim o zaman.
+
+16
+00:02:12,270 --> 00:02:16,270
+Geçen haftadan beri kafanıza takılan bir soru var mı?
+
+17
+00:02:16,270 --> 00:05:30,399
+Bir terslik oldu galiba.
+
+18
+00:05:30,399 --> 00:05:53,110
+Ekrandaki slide'ı görebiliyor musunuz?
+
+19
+00:05:55,389 --> 00:05:56,389
+Hayır hocam.
+
+20
+00:05:56,389 --> 00:05:57,389
+Hayır, tamam.
+
+21
+00:05:57,389 --> 00:06:31,480
+Şimdi geldi hocam.
+
+22
+00:06:31,480 --> 00:06:33,480
+Tamam, teşekkürler.
+
+23
+00:06:34,480 --> 00:06:50,470
+Evet, bu yönetim bilgi sistemleri dersinin içeriği üzerinde durmuştuk.
+
+24
+00:06:51,470 --> 00:06:53,470
+İçerikte neler vardı?
+
+25
+00:06:53,470 --> 00:06:58,470
+Sistem, bilgi sistemi, bilgi sistemi tipleri.
+
+26
+00:06:58,470 --> 00:07:01,470
+Bunları sistem analizi dersinden biliyoruz.
+
+27
+00:07:03,470 --> 00:07:04,470
+Bir dakika.
+
+28
+00:07:59,519 --> 00:08:02,519
+Kamerayı kapattım daha etkin olması için.
+
+29
+00:08:03,519 --> 00:08:09,519
+Bir de slide'ları görüşünün ses konusunda problem var mı?
+
+30
+00:08:09,519 --> 00:08:10,519
+Onu tekrar sorayım.
+
+31
+00:08:10,519 --> 00:09:11,799
+Eğer bir problem olursa beni bilgilendirin.
+
+32
+00:09:12,799 --> 00:09:15,799
+İşletme ortamında bilgi sistemlerinin etkisi,
+
+33
+00:09:15,799 --> 00:09:18,799
+işletme yönetim kademeleri, yönetim düzeyleri,
+
+34
+00:09:18,799 --> 00:09:23,799
+işletme organizasyonu, temel işletmecilik fonksiyonları,
+
+35
+00:09:23,799 --> 00:09:30,799
+kurumsal uygulamalar ve bütünleşik iş süreçleri üzerinde duracağız öncelikle.
+
+36
+00:09:31,799 --> 00:09:36,799
+Bu kurumsal uygulamalar müşteri ilişkileri yönetimi,
+
+37
+00:09:36,799 --> 00:09:39,799
+tedarik zinciri yönetimi, insan kaynakları,
+
+38
+00:09:39,799 --> 00:09:44,799
+satış ve pazarlama, muhasebe ve finans yönetimi gibi
+
+39
+00:09:44,799 --> 00:09:49,799
+temel uygulamalar kurumsal uygulamaların içinde.
+
+40
+00:09:49,799 --> 00:09:56,799
+Bir de bütün bunların yönetimini kapsayan uygulamalar.
+
+41
+00:09:57,799 --> 00:10:04,799
+İşte bu uygulamaların tümünü bu derste göreceğiz.
+
+42
+00:10:04,799 --> 00:10:08,799
+Kurumsal bilgi yönetimi dediğimiz zaman knowledge management systems
+
+43
+00:10:08,799 --> 00:10:12,799
+ve kurumsal yapay zeka uygulamaları üzerinde duracağız.
+
+44
+00:10:12,799 --> 00:10:17,799
+Ayrıca kurumlarda karar verme süreçleri,
+
+45
+00:10:17,799 --> 00:10:20,799
+decision support systems'ı biraz daha açarak,
+
+46
+00:10:20,799 --> 00:10:26,799
+data mining ve data warehouse üzerinde temel bilgiler vereceğiz.
+
+47
+00:10:26,799 --> 00:10:31,799
+Zaten data mining derste ayrı bir seçimlik derste olarak var.
+
+48
+00:10:31,799 --> 00:10:36,799
+Biz sadece bu konuda çok temel bilgiler oluşturacağız
+
+49
+00:10:36,799 --> 00:10:42,799
+ve buna bağlı olarak da altında bulunan data warehouse yapısından söz edeceğiz.
+
+50
+00:10:42,799 --> 00:10:46,799
+İşletmecilik bilgi sistemlerinin planlaması,
+
+51
+00:10:46,799 --> 00:10:49,799
+kurumsal strateji ve bilgi sistemleri proje yönetimi de
+
+52
+00:10:49,799 --> 00:10:51,799
+bu dersin konusu.
+
+53
+00:10:51,799 --> 00:10:56,799
+Bugün biraz bu bilgi sistemleri proje yönetimi konusuna da
+
+54
+00:10:56,799 --> 00:11:07,799
+önceden bir özet oluşturacağım ki daha sonra bu konuda
+
+55
+00:11:07,799 --> 00:11:23,820
+biraz daha ayrıntılı açıklama yapabileyim.
+
+56
+00:11:23,820 --> 00:11:40,149
+Şimdi yönetim bilgi sistemleri içinde ilk sistem konusu üzerinde duracağız.
+
+57
+00:11:40,149 --> 00:12:50,940
+Ekran görüntüsü veya seste bir problem var mı?
+
+58
+00:12:50,940 --> 00:13:03,940
+Bir problem yok hocam.
+
+59
+00:13:03,940 --> 00:13:05,940
+Tamam, çok teşekkürler.
+
+60
+00:13:05,940 --> 00:13:12,940
+Yine geçen haftanın bir tekrarı olarak sistem nedir üzerinde durduk.
+
+61
+00:13:12,940 --> 00:13:20,940
+Sistem birbiriyle ilişkili ve bir amacı gerçekleştirmek üzere bir araya gelmiş olan
+
+62
+00:13:20,940 --> 00:13:23,940
+elemanlar topluluğuydu.
+
+63
+00:13:23,940 --> 00:13:26,940
+Bu bir sosyal sistem, biyolojik sistem olabilirdi.
+
+64
+00:13:26,940 --> 00:13:35,940
+Daha önceki sistem analizi dersinde bunu iki sene önce aldığınız için tekrar ediyorum.
+
+65
+00:13:35,940 --> 00:13:41,940
+Üniversite sistemi üzerinde durmuştuk, hastane sistemi üzerinde durmuştuk.
+
+66
+00:13:41,940 --> 00:13:51,940
+Bilgi sistemi de bilgi toplama işlemi, depolama ve elde edilen bilgi kullanım için
+
+67
+00:13:51,940 --> 00:13:56,940
+bir araya gelen elemanlar topluluğuydu.
+
+68
+00:13:57,940 --> 00:14:16,940
+Şimdi sistemde fonksiyonel parçalar, sistem sınırı, otomasyon sınırı gibi tanımlamalar vermiştik.
+
+69
+00:14:16,940 --> 00:14:20,940
+Bunu da şu şekil üzerinden görmüştük.
+
+70
+00:14:20,940 --> 00:14:29,940
+Sistem sınırları ve otomasyon sınırı için sistemin etrafındaki ortamdan bahsedebiliriz.
+
+71
+00:14:29,940 --> 00:14:33,940
+Üniversite sistemi için bunu örnek vermiştik.
+
+72
+00:14:33,940 --> 00:14:43,940
+Sistemin tüm parçaları, üniversite sistemini örnek vermiştik burada da.
+
+73
+00:14:43,940 --> 00:14:53,940
+Bunun altında da otomasyon, sistemin daha iyi çalışmasını sağlayacak bilgi sistemi.
+
+74
+00:14:53,940 --> 00:15:00,940
+Bu sistemin parçaları için de şu şekli hep kullanmıştık.
+
+75
+00:15:00,940 --> 00:15:03,940
+Hatırlarsınız sistem analizinde de.
+
+76
+00:15:03,940 --> 00:15:08,940
+Sistemin elemanları, elemanları arasında ilişkiler var.
+
+77
+00:15:08,940 --> 00:15:10,940
+Dış ortamda sınırları var.
+
+78
+00:15:10,940 --> 00:15:16,940
+Dış ortamdan girdiler alıyor, dış ortama çıktılar veriyor.
+
+79
+00:15:16,940 --> 00:15:47,019
+Hakkında temel bilgiler.
+
+80
+00:15:47,019 --> 00:15:56,649
+Bir sistem olarak tanımladığımız yapının alt sistemleri vardır.
+
+81
+00:15:56,649 --> 00:16:07,649
+Ve işlevleri gerçekleştirir, belli işlevleri gerçekleştirir.
+
+82
+00:16:07,649 --> 00:16:14,649
+Sınırları tanımlanmalıdır, sisteme girdiler ve çıktılar tanımlanmalıdır.
+
+83
+00:16:14,649 --> 00:16:22,649
+Yani sistemi tanımlamak için alt sistemler arasındaki ilişkileri tanımlamalıyız.
+
+84
+00:16:22,649 --> 00:16:35,649
+İşletmeden örnek verirsek, bir müşteri destek sistemi üretim sistemi ile ilişkide,
+
+85
+00:16:35,649 --> 00:16:42,649
+envanter yönetim sistemi ile ilişkide müşteri destek sistemine baktığımızda,
+
+86
+00:16:42,649 --> 00:16:48,649
+müşteri destek sisteminde kendi içinde müşterilerin kaydedildiği bakım yapıldığı sistemler,
+
+87
+00:16:48,649 --> 00:16:54,649
+sipariş giriş alt sistemleri, müşterinin gerçekleştirdiği siparişler,
+
+88
+00:16:54,649 --> 00:17:03,649
+katalog sistemi, bunların hepsi müşteri destek sisteminin altındaki sistemler
+
+89
+00:17:03,649 --> 00:17:10,650
+ve üretim sistemi ile, envanter yönetim sistemi ile de ilişkide olacak.
+
+90
+00:17:10,650 --> 00:17:21,210
+Bu çerçevede bir de bilgi sistemi tipleri üzerinde hatırlatma yapalım.
+
+91
+00:17:21,210 --> 00:17:27,210
+Transaction processing sistem, işlemsel bilgi sistemi,
+
+92
+00:17:27,210 --> 00:17:39,210
+bu bilgiyi kaydeden gerçekleşen işlemleri, temel işlemleri düzenleyen sistemler
+
+93
+00:17:39,210 --> 00:17:48,210
+ve tek bir uygulamayı bir transaction processing sistem ile gerçekleştirebiliriz.
+
+94
+00:17:48,210 --> 00:17:54,210
+Mesela bir board draw sistemi, ATM'den para çekme sistemi gibi
+
+95
+00:17:54,210 --> 00:18:02,210
+transaction processing sistemler bir satış işlemi için gerçekleştiren sistem.
+
+96
+00:18:02,210 --> 00:18:12,210
+Management information sistem ise, bu bütün daha geniş bir yönetim sistemi için
+
+97
+00:18:12,210 --> 00:18:19,210
+altta transaction processing sistemlerden ya da diğer otomasyon sistemlerinden bilgi alıp,
+
+98
+00:18:19,210 --> 00:18:28,210
+işletmenin tümünü, yönetimini sağlayan uygulamalar.
+
+99
+00:18:28,210 --> 00:18:38,589
+Burada şekli koymadım.
+
+100
+00:18:38,589 --> 00:18:43,589
+Ama bunlar arasındaki ilişkileri sistemleri izinden hatırlayabildiniz mi?
+
+101
+00:18:43,589 --> 00:18:47,589
+En tepede executive information sistem vardır.
+
+102
+00:18:47,589 --> 00:18:52,589
+Executive information sistem, stratejik birimlere,
+
+103
+00:18:52,589 --> 00:18:58,589
+yönetim bilgi sisteminden, karar destek sisteminden alınan bilgileri
+
+104
+00:18:58,589 --> 00:19:08,589
+süzerek, özetleyerek, sınıflayarak, daha şekle dönüştürerek gönderen sistemlerde
+
+105
+00:19:08,589 --> 00:19:17,589
+burada stratejik kararları vermek üzere daha önceki yıllarda olan bilgileri de
+
+106
+00:19:17,589 --> 00:19:23,589
+arşivleyip, bu arşivleri daha kolay kullanılır hale getirme esası vardı.
+
+107
+00:19:23,589 --> 00:19:31,589
+Decision support sistemde insanın karar vermesine destek olacak
+
+108
+00:19:31,589 --> 00:19:36,589
+uygulamalar bulunuyordu.
+
+109
+00:19:36,589 --> 00:19:45,589
+What if senaryoları gibi senaryolar oluşturarak karar verilmesine yardımcı olacak.
+
+110
+00:19:45,589 --> 00:19:49,589
+Simülasyonlar düzenlemek, bunlar hep karar destek sistemlerinde vardır.
+
+111
+00:19:49,589 --> 00:19:59,589
+Bu uzman sistemler ve bilgi tabanlı iş sistemleriyle de doğrudan ilişkideydi.
+
+112
+00:19:59,589 --> 00:20:10,589
+Biz bu konuda çalışmalar yaptığımızda, yani işletmelerde bilgi sistem uygulamaları üzerinde
+
+113
+00:20:10,589 --> 00:20:22,589
+çalışmalar yaptığımızda sistem analisti olarak da yapılan işleri gerçekleştirmek durumunda kalabiliriz.
+
+114
+00:20:22,589 --> 00:20:30,589
+Teknik bilgi ve yetenekler konusunda bilgilerimiz tamam, veri tabanı, iletişim,
+
+115
+00:20:30,589 --> 00:20:41,589
+genel bilgisayar yapısı konusunda, networkler konusunda ama şu iki yetenek bizim için önemli demiştim.
+
+116
+00:20:41,589 --> 00:20:49,589
+Bir işletmecilik bilgi ve yeteneği ki bu derste onu biraz daha yakınlaştırmaya çalışacağım sizinle.
+
+117
+00:20:49,589 --> 00:20:58,589
+Bir organizasyonda ne tip aktiviteler, ne tip süreçler, işlemler gerçekleşir?
+
+118
+00:20:58,589 --> 00:21:06,589
+Organizasyonların yapıslanması nasıldır? Organizasyonlar nasıl yönetilir, yönetim düzeyleri nasıldır?
+
+119
+00:21:06,589 --> 00:21:17,589
+Gerçekleştiren bir organizasyonda gerçekleştiren işin tipi nedir? Bir hastanede, bir bankada gerçekleştiren işlemler nelerdir?
+
+120
+00:21:17,589 --> 00:21:27,500
+Aktörler kimlerdir? Yani kimler görev alır? Özür dilerim.
+
+121
+00:21:27,500 --> 00:21:33,130
+Şu biraz daha açayım.
+
+122
+00:21:33,130 --> 00:21:45,130
+Organizasyonu anlamak açısından bir organizasyonun başarısını ne sağlar? Organizasyonu da spesifik olarak nasıl bir tanım getirebiliriz?
+
+123
+00:21:45,130 --> 00:21:59,130
+Stratejileri ve planları nelerdir kurumların? Kurum kültürü dediğimizde, kurum geleneği dediğimizde bu ne anlama gelir?
+
+124
+00:21:59,130 --> 00:22:11,019
+Bunları arttırmaya çalışacağız bu derste. Bir de insan ilişkileri, bilgi ve yetenekleri.
+
+125
+00:22:11,019 --> 00:22:29,019
+Bu da çalışanlar arası yetenekler, iş grubundaki diğerleriyle daha iyi ekip oluşturabilmek.
+
+126
+00:22:29,019 --> 00:22:51,019
+Ekip içinde çalışacağınıza göre burada insanlar nasıl düşünür, nasıl öğrenir, değişimlere karşı nasıl bir davranış gösterir, hangi iş tipleri vardır, aktörler nelerdir bir ekip içinde.
+
+127
+00:22:51,019 --> 00:23:11,019
+Ve şimdi bu önce, bu söylediklerim, ilk söylediklerim kendi içinizdeki ekip çalışmalarında bir de diğerleriyle yani yazılım geliştireceğiniz diğer müşteri kurumlarla ilişkiler.
+
+128
+00:23:11,019 --> 00:23:27,019
+Bu da görüşme yapma, gözlem yapma, görüştüğünüz, görüşmeleriniz sonucunda aldığınız bilgileri listeleme.
+
+129
+00:23:27,019 --> 00:23:51,019
+Ve bu görüşme gerçekleştirip iyi bir dinleyici olursanız daha sonra görüşme yaptığınız kişinin isteklerini, yaptığı iş tanımını daha iyi raporlayabilirsiniz, daha iyi listeleyebilirsiniz.
+
+130
+00:23:51,019 --> 00:24:15,019
+İyi bir yazma ve yazılı ve sözlü sunum gerçekleştirmeniz gerekir, yaptığınız çalışmayı raporlamanız gerekir, sunum yapmanız gerekir ve müşteriyi de ekip içine dahil ettiğinizde ekibin tamamının iyi bir çalışma gerçekleştirmesi gerekecektir.
+
+131
+00:24:15,019 --> 00:24:21,019
+Bütün bunları sağlayabilmeniz gerekiyor.
+
+132
+00:24:21,019 --> 00:24:33,170
+Buraya kadar geçen haftanın bir özetini yapmış olduk.
+
+133
+00:24:33,170 --> 00:24:43,170
+Şimdi biraz daha bu geçen haftada kurum stratejisi nedir bir başlangıç yapmıştım.
+
+134
+00:24:43,170 --> 00:25:12,170
+Bunun üzerinden giderek biraz daha bu dönemde daha sonra da daha derinleştireceğimiz, gerçekleştireceğimiz çalışmaların akışı ve başlangıçta proje yönetiminde ne yapmamız, ne düşünmemiz gerekiyor, onun üzerinde biraz daha ayrıntılı duracağız.
+
+135
+00:25:12,170 --> 00:27:51,299
+Geçen hafta yine bir kurumda çalıştığınız zaman bir organizasyon yapısı üzerinde ilk çalışmanız gerekir.
+
+136
+00:27:51,299 --> 00:28:00,299
+Bu organizasyon şeması genel yönetim kademesi hakkında size bilgi verir kim hangi işle uğraşıyor.
+
+137
+00:28:00,299 --> 00:28:26,299
+Örneğin işte finans sistemleriyle, pazarlama sistemleriyle, satış sistemleriyle ilgili sorularım olduğunda nasıl bir hiraşi olacak ve bu sistemlerin yapılanmasını oluşturacağım zaman buradaki ilişkileri daha iyi tanımlayabilmek için
+
+138
+00:28:26,299 --> 00:28:31,299
+bu organizasyon şemasını hep göz önünde bulundurmamız gerekiyor.
+
+139
+00:28:31,299 --> 00:28:42,299
+Ama bazen kurumlarda yeni bilgi sistemi oluşturma süreci reorganizasyon süreciyle de birleştirilebilir.
+
+140
+00:28:42,299 --> 00:28:59,299
+Yani kurumun eskiden böyle bir organizasyon şeması olmasına rağmen işletmecilerle de bir çalışma yürütüp bu organizasyonda memnun olmadıkları tarafları bildirip yeni bir düzenleme yapılmasını istenebilir.
+
+141
+00:28:59,299 --> 00:29:23,299
+Yönetimde yeni bir düzenleme o zaman bu iki ekip yani bilgi sistemleri kuruluşunu gerçekleştiren ekiple işletme ekibi birlikte çalışıp yeni düzenin üzerinde çalışacak bilgi sistemini kurmaları gerekecektir.
+
+142
+00:29:23,299 --> 00:29:36,299
+Yani reorganizasyonla birleşim yapılanmasının değişimi aynı anda gidebilir ve birlikte çalışmada yürütülebilir.
+
+143
+00:29:36,299 --> 00:30:02,299
+Yine bu Rocky Mountain Outfitter kayak malzemeleri satan bir firmanın organizasyon şeması dağıtım, finans, pazarlama ve bir başkana bağlı olarak çalışıyor birçok şubeleri var.
+
+144
+00:30:02,299 --> 00:30:08,299
+Burada bilgi sistemleri departmanı yapısı üzerinde örnekleymiştim.
+
+145
+00:30:08,299 --> 00:30:15,299
+Burada iki temel yapı var.
+
+146
+00:30:15,299 --> 00:30:35,299
+Bir sistem destek ekibi tüm bilgi sistemi uygulamalarının çalışmasını sağlayan altyapıdan oluşan ekip bir de sistem geliştirme ekibi var.
+
+147
+00:30:35,299 --> 00:30:46,299
+Burada da sistem geliştirme ekibi, proje yöneticileri, sistem analistleri ve programcılardan oluşuyor.
+
+148
+00:30:46,299 --> 00:31:00,299
+Bu ekip de sistem geliştirme ekibi, proje yöneticisi, sistem analisti ve program analistlerinden oluşuyor.
+
+149
+00:31:00,299 --> 00:31:04,299
+Ama bu ekip daha farklı da olabilirdi.
+
+150
+00:31:04,299 --> 00:31:16,299
+İşte sistem analisti değil, programcı değil, daha tasarım sırasında da çalışacak yazılı mühendisleri de olabilirdi.
+
+151
+00:31:16,299 --> 00:31:22,299
+Veya veritabanı uzmanı burada da görev alabilirdi.
+
+152
+00:31:22,299 --> 00:31:25,299
+Ama buradaki yapılanma bu şekilde.
+
+153
+00:31:25,299 --> 00:31:29,299
+Var olan sistemler neler?
+
+154
+00:31:29,299 --> 00:31:47,119
+Burada bir ofis sistemleri var, dağıtım sistemleri var, sipariş sistemleri var, insan kaynakları sistemi ve muhasebe finans sistemleri var.
+
+155
+00:31:47,119 --> 00:31:58,119
+Bu var olan sistemleri genişletip daha iyileştirme hedefinde olacağız.
+
+156
+00:31:58,119 --> 00:32:39,759
+Burada bir teknolojik mimari planı, uygulama mimari planı, teknolojik mimari plan, stratejik planlama içinde, işletme uygulamalarında altyapıyı nasıl kuracağız,
+
+157
+00:32:39,759 --> 00:33:02,759
+Clutch Server mimari nasıl olacak, bu internet yapısı nasıl oluşacak, web uygulamaları nasıl kurulacak, bunlar teknolojik mimari plan.
+
+158
+00:33:02,759 --> 00:33:21,759
+Uygulama mimari planı ise, bu mimari plan üzerinde de durmuştuk yine, müşteri destek sistemi, envanter yönetim sistemi gibi sistemler var, olan üzerlerine yeniden eklenecek.
+
+159
+00:33:21,759 --> 00:34:01,299
+Bunu da şöyle görebiliriz, mesela burada tedarik zincir yönetimi uygulaması var, böyle bir proje yapımı gerçekleştirmek isteniyor.
+
+160
+00:34:01,299 --> 00:34:13,300
+Ama burada nasıl bir strateji oluşturacağız, yani önce hangi uygulamadan başlayacağız, birbiriyle ilişkisi ve önemi açısından.
+
+161
+00:34:13,300 --> 00:34:37,300
+Burada planlanan önce supply chain management, daha sonra customer destek sistemi, stratejik bilgi yönetim sistemi, toptan satış sistemi, yani satacağım ürünleri alımını gerçekleştirecek sistemler.
+
+162
+00:34:37,300 --> 00:35:00,059
+Daha sonra muhasebe finans sistemi, insan kaynakları sistemi ve bunların ne şekilde alınacak, bu başka bir yerden paket çözüm olarak mı alınacak, bunu burası için mi geliştirilecek.
+
+163
+00:35:00,059 --> 00:35:23,429
+Bunların kararlarının verilmesi bakımından incelediğimizde, işte burada uygulama mimari planı dediğimiz plan bu olacak, uygulama mimari planı.
+
+164
+00:35:23,429 --> 00:35:48,659
+Birçok uygulamalar var yapılması gereken, bu yapılacak uygulamaların temel yapısının ne olması isteniyor, nasıl bir çözüm gerçekleştirmesi isteniyor ve hangi sırada olması daha uygun.
+
+165
+00:35:48,659 --> 00:36:06,659
+Bu planlamayı da hem kurumun yöneticileri hem bilgi sistem geliştiricileri hem de destek sistemindeki uzmanlarda fikir oluşturulmasına yardımcı olacak şekilde kararlaştıracaklar.
+
+166
+00:36:06,659 --> 00:36:20,659
+Ve burada da şirket verisi nasıl tutulacak, nasıl bir veri tabanı yapılanması olacak yine buna da karar verilmesi gerekiyor.
+
+167
+00:36:20,659 --> 00:36:30,659
+Şimdi bir bilgi sistemi uygulaması eklenecek yönetim çerçevesinde bir firmaya.
+
+168
+00:36:30,659 --> 00:36:49,659
+Burada sistem geliştirme projesi olarak bakıldığında bu nasıl yürümeli, bunu nasıl oluşturacağız, bunu görmemiz gerekecek.
+
+169
+00:36:49,659 --> 00:37:18,760
+Bir ara verelim, 10 dakika ara veriyorum.
+
+170
+00:37:18,760 --> 00:53:58,420
+Evet, derse başlıyoruz tekrar. Herkes katıldı mı acaba?
+
+171
+00:53:58,420 --> 00:54:28,610
+En son şurada kalmıştık. Bir kurum için uygulama mimarisi, uygulama stratejisini oluşturacağımız zaman hangi uygulamalar sırayla başlatılacak,
+
+172
+00:54:28,610 --> 00:54:38,610
+hangi uygulamalar geliştirilecek, hangilere paket çözüm olarak alınacak bunların planlaması yapılıyordu.
+
+173
+00:54:38,610 --> 00:54:58,610
+Ve yine sistem analizi ve yazılı mühendisliği derslerinden sonra bir sistem geliştirme sırasında bir proje ele alınacağı zaman bu bilgi sistemleri geliştirme projesinde
+
+174
+00:54:58,610 --> 00:55:19,610
+sistemin nasıl üretileceği, hangi amaçla, hangi noktada, hangi sistemler var, bunların üzerine gelecek bizim projemizin sistemi hangi uygulamayla daha fazla ilişkili bunun tanımı verilir.
+
+175
+00:55:19,610 --> 00:55:40,610
+Ve temel aktiviteler herhangi bir sistem oluşturmada, sistem geliştirme yaşam döngüsü kapsamı içinde, software development lifecycle ve system development lifecycle kelimelerini daha önceden duyduğunuz hem sistem analizi hem yazılı mühendisliği derslerinde.
+
+176
+00:55:40,610 --> 00:56:08,610
+Burada bir kalitenin düşürülmeden bir sistem geliştirilmesi için bazı bilgilerin toplanması, hangi yapıda, hangi yöntemler kullanılacak, istek listesi nedir gibi çalışmalar yapılmalıdır.
+
+177
+00:56:08,610 --> 00:56:19,610
+Daha sonra temel aşamalara geçilir, proje planlama aşaması, analiz aşaması, tasarım aşaması, gerçekleştirme aşaması ve destek aşaması şeklinde.
+
+178
+00:56:19,610 --> 00:56:35,610
+Tabi ki bu yazılı mühendisliğinden, sistem analizinden de bildiğiniz gibi bu klasik artificial aşamalarda da olabilir.
+
+179
+00:56:35,610 --> 00:56:47,610
+Bunun çeşitleri de olabilir, farklı birbiriyle eş zamanlı yürüyen adımlar gibi farklı şekillerde de yürüyebilir.
+
+180
+00:56:47,610 --> 00:57:01,610
+Biz burada bilgi sistemleri geliştirme aşamalarını, sıralamasını dikkate almadan bakarsak proje planlama aşaması, analiz aşaması, tasarım aşaması, gerçekleştirme ve destek aşaması şeklinde.
+
+181
+00:57:01,610 --> 00:57:11,610
+Ve öncelikle biz burada daha sonraki derslerimizde de proje planlama üzerinde çok duracağız.
+
+182
+00:57:11,610 --> 00:57:24,610
+Ama sırayla baktığımızda her birinde ne yapıyoruz ve proje planlama aşamasında işte sistem analizindeki fizibilite çalışmalarını gerçekleştirdiğimizde,
+
+183
+00:57:24,610 --> 00:57:30,610
+ne düşünüyoruz, hangi yaklaşımları kullanıyoruz, bunun üzerinde duracağım şimdi.
+
+184
+00:57:30,610 --> 00:57:40,610
+Bir defa bu planlama aşamasında neler yapıyoruz, tek tek bütün adımları bir hatırlayalım.
+
+185
+00:57:40,610 --> 00:57:46,610
+Ondan sonra planlama aşamasında daha ayrıntılı olarak duracağız.
+
+186
+00:57:46,610 --> 00:58:04,170
+Planlama aşamasında öncelikle problemi tanımlıyoruz, daha sonra problemi tanımlıyoruz.
+
+187
+00:58:04,170 --> 00:58:11,170
+Yani alan tanımı yapıyoruz, hangi alanda bir yazılım bilgi sistemi geliştireceğiz.
+
+188
+00:58:11,170 --> 00:58:18,170
+Projenin fizibilitesini oluşturuyoruz, projenin iş listesini çıkarıyoruz,
+
+189
+00:58:18,170 --> 00:58:23,170
+projedeki görevlendirmelere yapıyoruz ve projeye başlıyoruz.
+
+190
+00:58:23,170 --> 00:58:35,869
+Analiz aşamasında ne yapıyorduk?
+
+191
+00:58:35,869 --> 00:58:50,869
+Analiz aşamasındaki temel amacımız yeni sistemin iş gereksinimlerini, bilgi ihtiyaçlarını anlamak ve belgelemek.
+
+192
+00:58:50,869 --> 00:58:59,869
+Bunun için ne yapıyorduk? Bilgi topluyorduk, interviyuvla okuyarak ya da gözlem yaparak, yerinde inceleme yaparak.
+
+193
+00:58:59,869 --> 00:59:06,869
+Sistem gereksinimlerini tanımlıyoruz, raporlar ve diagramlarla.
+
+194
+00:59:06,869 --> 00:59:17,869
+Prototip gereksinimleri bulup bunun prototipini oluşturuyoruz, gereksinimleri önceliklendiriyoruz.
+
+195
+00:59:18,869 --> 00:59:23,869
+Ve alternatif çözümleri değerlendiriyoruz.
+
+196
+00:59:23,869 --> 00:59:33,869
+Yönetimle bunları gözden geçiriyoruz analiz aşamasında.
+
+197
+00:59:33,869 --> 00:59:40,869
+Biz bunu gereksinim analizinde de daha detaylı olarak altbaşlıklarla gördük yazılım mühendisliğinde.
+
+198
+00:59:40,869 --> 00:59:52,869
+Yani analiz aşamasında daha sistem analizinden beri söylediğim ne yapmamız, sistem nedir, ne yapar?
+
+199
+00:59:52,869 --> 00:59:58,869
+Bunu anlamak ve tasarımı gerçekleştirecekler için belgelemek.
+
+200
+00:59:58,869 --> 01:00:06,869
+Bunun için bilgi topluyoruz, karar veriyoruz hangi alternatif çözümler içinden hangisini seçeceğimize.
+
+201
+01:00:06,869 --> 01:00:17,869
+Tasarım aşamasında amaç çözümü tasarlamak, henüz daha gerçekleştirmek değil, sadece tasarımını yapmak.
+
+202
+01:00:17,869 --> 01:00:49,679
+Kullanıcı ara birimlerini tasarlamak, sistem ara birimlerini, veri tabanını tasarlamak.
+
+203
+01:00:49,679 --> 01:01:00,679
+Bütün prototip oluşturarak uygulama altyapısını, tasarımını gerçekleştirmek.
+
+204
+01:01:00,679 --> 01:01:18,679
+Ve implementasyon aşamasında ise bilgi sisteminin oluşturulması, test edilmesi ve kuruluşu, bilgi sistemini kuruluşu.
+
+205
+01:01:18,679 --> 01:01:28,679
+Mesela farklı yazılım geliştirme süreç modellerini daha alt parçalara da bölebiliyoruz.
+
+206
+01:01:28,679 --> 01:01:38,679
+Spral modelde gibi, Unified Process modelde gibi daha fazla alt başlığa da bölebiliyoruz.
+
+207
+01:01:38,679 --> 01:01:49,679
+Yazılım komponentlerinin oluşturulması, yani modüllerin kodlanması, test edilmesi,
+
+208
+01:01:49,679 --> 01:02:01,679
+prototipler geliştirmek, verinin dönüştürülmesi, yani bu başka bir daha önce var olan bir uygulamanı yeniliyorsak,
+
+209
+01:02:01,679 --> 01:02:12,679
+o zaman burada bir dönüştürme kullanılan verinin yeni uygulamada da kullanılır hale getirilmesi için bir dönüştürme gerçekleştirilecektir.
+
+210
+01:02:12,679 --> 01:02:26,679
+Eğitim ve belgeleme ve sistemin kuruluşu şeklinde gerçekleştirilecektir çalışmalar.
+
+211
+01:02:26,679 --> 01:02:57,809
+Buraya kadar sorunuz var mı? Yeni yaklaşımlar burada tabi ki. Ecal metotlar kullanılmaya başlandı.
+
+212
+01:02:57,809 --> 01:03:08,809
+Planlama ve analizde daha farklı kullanılan süreç modeline göre daha farklılaştırmalar var.
+
+213
+01:03:08,809 --> 01:03:25,809
+Sistem geliştirme aktivitelerine baktığımızda proje planlama tamamlanıyor ama ondan sonra planının izlenmesi aşamasında proje planını gerçekleştiren proje yöneticileri uygulamayı takip ediyorlar.
+
+214
+01:03:25,809 --> 01:03:39,809
+Analiz aşaması bittikten sonra da ek analiz aktiviteleri için yine analiz aşamasında çalışanlar devrede oluyor.
+
+215
+01:03:39,809 --> 01:03:51,809
+Tasarım aşaması ve implementasyon aşaması ve destek aşaması da işte konfigurasyon yönetimi ve bakım yönetimiyle devam ediyor daha sonra.
+
+216
+01:03:51,809 --> 01:04:12,809
+Proje ekibi, proje yöneticisi ve iş analistleri ve tasarım süresince teknik uzmanlarla, veritabanı ve netvork uzmanlarıyla birlikte çalışma gerekecek.
+
+217
+01:04:12,809 --> 01:04:28,809
+Proje ekibi diğer destek uzmanlarından da proje süresince yardım alıyorlar.
+
+218
+01:04:28,809 --> 01:05:08,360
+Proje yönetimi aşamasında bir proje yöneticisi var burada ekibin çalışmaları.
+
+219
+01:05:08,360 --> 01:05:23,019
+Bu proje yöneticisi için ecel proje yönetimi gerçekleştirildiğinde proje koordinatörü tanımlaması da yapılır.
+
+220
+01:05:23,019 --> 01:05:35,019
+Ama yine proje ekibinin birçok çalışmasından ve projenin tamamlanmasından sorumlu olan kişidir bu koordinatör.
+
+221
+01:05:35,019 --> 01:06:00,019
+Proje yönetiminde diğer insanların organize edilmesi yönlendirilmesi de var planlanan sonuca ulaşmak için ve özellikle de önceden tanımlanmış iş listesini tanımlanmış bütçeyle sağlamak üzere gerekli görevleri vardır.
+
+222
+01:06:01,019 --> 01:06:12,019
+İyi bir yönetici nasıl planlayacağını, bu planı nasıl çalıştıracağını, problemleri nasıl çözeceğini bilen yöneticidir.
+
+223
+01:06:12,019 --> 01:06:20,019
+Ayrıca değişikliklere daha kolay uyum sağlaması ile de ön plana çıkacaktır.
+
+224
+01:06:20,019 --> 01:06:40,429
+Müşteri tarafı bu projenin hem mali desteğini gerçekleştiren hem de sahibi olacak kişi kurum temsilcisidir.
+
+225
+01:06:40,429 --> 01:06:55,429
+Kullanıcı da doğrudan o grupta, müşteri grubunda bu uygulamayı kullanacak olan kişilerdir.
+
+226
+01:06:55,429 --> 01:07:00,429
+Proje yönetimindeki kişi tanımları, görevli tanımları bu şekilde.
+
+227
+01:07:00,429 --> 01:07:05,429
+Bir proje yöneticisi ne yapar?
+
+228
+01:07:05,429 --> 01:07:16,429
+Burada daha küçük bir uygulamada bunun yerine sistem analisti de geçebilir ama proje yöneticisi anlamında görev,
+
+229
+01:07:16,429 --> 01:07:26,429
+projenin alanını tanımlamak, projenin planını geliştirmek, ayrıntılı iş listesi ve iş takvimi oluşturmak,
+
+230
+01:07:26,429 --> 01:07:35,429
+projedeki çalışmaları yönlendirilmesinden sorumlu, projenin izlenmesinden sorumlu.
+
+231
+01:07:35,429 --> 01:07:58,809
+Proje planı sırasında yapılan tanımlanan milestoneları, milestoneları takip etmek durumunda proje yöneticisi,
+
+232
+01:07:58,809 --> 01:08:07,809
+projenin tüm kontrolü, projeyi planlamak ve organize etmek, milestoneları tanımlamak,
+
+233
+01:08:07,809 --> 01:08:22,810
+her bir milestoneda dağıtılacakları, teslim edilecekleri belirlemek, ilerlemeleri izlemek, kaynakları atamak ve rollerini tanımlamak bu kaynaklara.
+
+234
+01:08:22,810 --> 01:08:29,810
+Yani kaynaklar dediğimizde, bizim projelerimizde insan kaynağı daha ağırlıklı.
+
+235
+01:08:29,810 --> 01:08:35,810
+Bunların görevlerini belirlemek, rollerini belirlemek, metodolojileri tanımlamak.
+
+236
+01:08:35,810 --> 01:08:41,810
+Bu görevler proje yöneticisinin.
+
+237
+01:08:41,810 --> 01:09:47,859
+Bu noktada birkaç soru sormak istiyorum. Buradan kişi okuyarak mı sorayım?
+
+238
+01:09:47,859 --> 01:10:01,180
+Şu anda ekrandaki slaytı paylaşmayı durdurdu. [öğrenci], duyuyor musun?
+
+239
+01:10:01,180 --> 01:10:06,020
+Duyuyorum hocam.
+
+240
+01:10:06,020 --> 01:10:17,430
+Tamam. Bu derste ki şeylerle ilgili bir soru soracağım hem sistem analizini hatırlatarak.
+
+241
+01:10:17,430 --> 01:10:20,430
+Sistem nedir?
+
+242
+01:10:20,430 --> 01:10:30,539
+Sistem birçok parçanın belli bir amaç için bir araya gelmesidir diyebilirim hocam.
+
+243
+01:10:30,539 --> 01:10:34,539
+Tamam. Nasıl bir yapılanma vardır sistemde?
+
+244
+01:10:34,539 --> 01:10:43,689
+Parçalarından mı bahsediyorsunuz?
+
+245
+01:10:43,689 --> 01:10:44,689
+Evet.
+
+246
+01:10:44,689 --> 01:10:48,689
+Tam olarak. Bir ortam vardır hocam.
+
+247
+01:10:48,689 --> 01:10:49,689
+Evet.
+
+248
+01:10:49,689 --> 01:10:52,689
+Sistemin sınırları vardır.
+
+249
+01:10:52,689 --> 01:10:53,689
+Evet.
+
+250
+01:10:53,689 --> 01:10:57,689
+Bu sistemin alt sistemleri vardır.
+
+251
+01:10:57,689 --> 01:11:01,689
+Alt sistemler arasında iç ilişkiler vardır.
+
+252
+01:11:01,689 --> 01:11:02,689
+Tamam.
+
+253
+01:11:02,689 --> 01:11:06,689
+Ve bu sisteme girdiler ve çıktılar vardır.
+
+254
+01:11:06,689 --> 01:11:08,689
+Tamam. Teşekkür ederim.
+
+255
+01:11:08,689 --> 01:11:13,689
+Ali. Ali Bank.
+
+256
+01:11:13,689 --> 01:11:16,829
+Merhaba hocam.
+
+257
+01:11:16,829 --> 01:11:27,829
+Merhabalar. Bilgi sistem tipleri hani çok temel şeyimiz diğer derslerde de hep gördünüz. Sistemin izinde gördük.
+
+258
+01:11:27,829 --> 01:11:31,689
+Özür dilerim.
+
+259
+01:11:31,689 --> 01:11:36,689
+Bilgi sistem tiplerini sayabilir misin?
+
+260
+01:11:36,689 --> 01:11:39,689
+Bilgi sistemi tipleri.
+
+261
+01:11:40,689 --> 01:11:45,130
+Hangi bilgi sistemleri var?
+
+262
+01:11:45,130 --> 01:11:51,130
+Şey gibi ekonomi sistemi gibi bilgi insan kaynakları gibi mi?
+
+263
+01:11:51,130 --> 01:11:57,130
+Yok. Onlar bilgi sisteminin uygulama alanları.
+
+264
+01:11:57,130 --> 01:12:05,130
+Sistem analizinde de gördüğümüz bilgi sistemi tipleri genel olarak.
+
+265
+01:12:05,130 --> 01:12:11,130
+Yani hangi tür bizim geliştirdiğimiz sistemler hangi tür bilgi sistemleri?
+
+266
+01:12:11,130 --> 01:12:24,779
+Mesela transseksiyon processing sistem bir tanesi. Başka hangi bilgi sistemleri var?
+
+267
+01:12:24,779 --> 01:12:31,779
+Üretim bilgi sistemi olabilir mi?
+
+268
+01:12:31,779 --> 01:12:38,779
+Yok. Yani işletmedeki uygulamaları değil de bizim bilgi sistem tanımlarımız içindi.
+
+269
+01:12:38,779 --> 01:12:45,119
+[öğrenci] sen söyleyebilir misin?
+
+270
+01:12:45,119 --> 01:12:50,510
+Hocam merhaba.
+
+271
+01:12:50,510 --> 01:12:51,510
+Merhabalar.
+
+272
+01:12:51,510 --> 01:12:55,510
+Hocam benim bilgi sistemi değil cakma açıkçası.
+
+273
+01:12:55,510 --> 01:13:03,510
+Şimdi nasıl diyeyim karar destek sistemleri vesaire, ofis, otomasyon, o tarz şeyler geliyor.
+
+274
+01:13:03,510 --> 01:13:07,510
+Evet onları saymanı istiyorum. Onlardan bahsettik çünkü.
+
+275
+01:13:07,510 --> 01:13:11,510
+Kayıt veri işleme vardı zannediyorsam.
+
+276
+01:13:11,510 --> 01:13:16,510
+Karar destek vardı. Önetim bilgi sistemleri var.
+
+277
+01:13:16,510 --> 01:13:19,510
+Üst yönetim sistemleri vardı zannediyorsam.
+
+278
+01:13:19,510 --> 01:13:20,510
+Evet.
+
+279
+01:13:20,510 --> 01:13:22,510
+Bunlar hocam aklımda durur.
+
+280
+01:13:22,510 --> 01:13:26,510
+Üst yönetim bilgi sistemleri nereden bilgi alır?
+
+281
+01:13:26,510 --> 01:13:28,510
+Hocam hatırlayamıyorum.
+
+282
+01:13:28,510 --> 01:13:31,510
+Tamam. Teşekkür ederim.
+
+283
+01:13:31,510 --> 01:13:32,510
+Rica ederim.
+
+284
+01:13:32,510 --> 01:13:40,220
+[öğrenci].
+
+285
+01:13:40,220 --> 01:13:45,739
+[öğrenci].
+
+286
+01:13:45,739 --> 01:13:55,710
+[öğrenci] duyuyor musun?
+
+287
+01:13:55,710 --> 01:14:03,149
+[öğrenci].
+
+288
+01:14:03,149 --> 01:14:05,149
+Evet hocam buyurun.
+
+289
+01:14:05,149 --> 01:14:13,149
+Executive Information System hangi bilgi sistemlerinden girdi alır?
+
+290
+01:14:13,149 --> 01:14:19,390
+Bir düşüneyim hocam iki dakika.
+
+291
+01:14:19,390 --> 01:14:29,560
+Aklıma bir şey gelmedi hocam bağlaştıramadım şu an.
+
+292
+01:14:29,560 --> 01:14:35,560
+Şimdi bilgi sistemi tiplerini bir say bakalım. Arkadaşını say daha az önce.
+
+293
+01:14:35,560 --> 01:14:50,140
+Üst yönetim bilgi sistemi, ünitim bilgi sistemi, bir de ilişim sistemleri de buna dair mi acaba?
+
+294
+01:14:50,140 --> 01:14:58,949
+Şimdi onlardan [öğrenci] arkadaşın saydıklarının arasında bir ek sistemi bağlı bu.
+
+295
+01:14:58,949 --> 01:15:02,949
+Evet. Üst yönetim bilgi sistemi.
+
+296
+01:15:02,949 --> 01:15:14,220
+Yani Mantıkhan hocam bu son çıktığı aldığı için üst yönetime bağlı olması gerekiyor.
+
+297
+01:15:14,220 --> 01:15:25,909
+Evet. Yani üst yönetim bilgi sistemi hangi sistemlerden bilgi alır, girdi alır?
+
+298
+01:15:25,909 --> 01:15:27,909
+Üst yönetimde...
+
+299
+01:15:27,909 --> 01:15:32,909
+Yönetim bilgi sistemi ve karar destek sistemi.
+
+300
+01:15:32,909 --> 01:15:34,909
+Evet.
+
+301
+01:15:34,909 --> 01:15:57,220
+Tamamdır. Evet tamam yine devam edelim o zaman.
+
+302
+01:15:57,220 --> 01:16:01,220
+Ses gelmesinde bir problem var mı?
+
+303
+01:16:01,220 --> 01:16:03,220
+Hayır hocam bir sıkıntı yok.
+
+304
+01:16:03,220 --> 01:16:04,220
+Yok hocam.
+
+305
+01:16:04,220 --> 01:16:11,220
+Tamamdır. Çok soruyorum. Özür dilerim ama arada bir kopukluk olacak diye korkuyorum o yüzden.
+
+306
+01:16:11,220 --> 01:16:13,220
+Estağfurullah hocam biz söyleriz.
+
+307
+01:16:13,220 --> 01:16:46,369
+Evet o zaman yine devam ediyoruz.
+
+308
+01:16:46,369 --> 01:16:53,340
+Sunumu görebiliyorsunuz şu anda değil mi?
+
+309
+01:16:53,340 --> 01:16:55,340
+Şunu kapatayım ki daha iyi görün.
+
+310
+01:16:55,340 --> 01:17:12,880
+Evet. Proje yöneticisinin görevleri planlama ve organizasyon ve yönlendirme yapması gerekiyor.
+
+311
+01:17:12,880 --> 01:17:21,880
+Projenin çalışmasını yönlendirmesi gerekiyor ve projenin tümünü kontrol altında tutması gerekiyor.
+
+312
+01:17:21,880 --> 01:17:32,600
+Projenin başlangıcında ne yapacak?
+
+313
+01:17:32,600 --> 01:17:41,600
+Projeler bir stratejik plan sonunda başlayabilir.
+
+314
+01:17:41,600 --> 01:17:45,600
+Yani bir stratejik plan yapılmıştır.
+
+315
+01:17:45,600 --> 01:17:51,600
+İşte önce şu bilgi sistemi gerçekleştirilecek.
+
+316
+01:17:51,600 --> 01:17:59,600
+Ve buna mesela Rocky Mountain örneğinde az önce verdik.
+
+317
+01:17:59,600 --> 01:18:04,600
+Bir kurum stratejisi oluşturulmuştu.
+
+318
+01:18:04,600 --> 01:18:07,600
+Ona geri dönelim.
+
+319
+01:18:07,600 --> 01:18:16,569
+Şu bir kurum stratejisi oluşturulmuştu.
+
+320
+01:18:16,569 --> 01:18:24,569
+Örneğin önce supply chain management, sonra müşteri destek sistemi, sonra stratejik bilgi sistemi gibi bir sıralama yapılmıştı.
+
+321
+01:18:24,569 --> 01:18:36,569
+Ve ilk başlayacak supply chain management sistemi için görevlendirme yapılması söz konusu mesela.
+
+322
+01:18:36,569 --> 01:18:41,569
+İşte projenin başlangıç aşaması burada yukarıdan aşağıya.
+
+323
+01:18:41,569 --> 01:18:44,569
+Yani yukarıda bir stratejik karar veriliyor.
+
+324
+01:18:44,569 --> 01:18:46,569
+Şu anda şu proje başlayacak.
+
+325
+01:18:46,569 --> 01:18:58,569
+Şu projeye de şu kişi proje yöneticisi yazılım mühendisi şu kişi proje yöneticisi olarak atanacak.
+
+326
+01:18:58,569 --> 01:19:03,569
+Ve yanında çalışacaklar da şunlar olacak veya bazıları ona sorulabilecek.
+
+327
+01:19:03,569 --> 01:19:18,569
+İşte burada öncelikle proje yöneticisinin iş stratejisi açısından bu uygulamanın amacını anlaması gerekiyor.
+
+328
+01:19:18,569 --> 01:19:28,039
+Müşteriden destek alması gerekiyor bu projenin hedeflerini öğrenmek için.
+
+329
+01:19:28,039 --> 01:19:38,039
+Yükarıdan aşağı devam edecekse yukarıda bir strateji yapılmıştır.
+
+330
+01:19:38,039 --> 01:19:46,039
+Ve bu stratejiye göre başlayacak bilgi sistemi hakkında proje yöneticisi de öncelikle bilgi sahibi olur.
+
+331
+01:19:46,039 --> 01:20:04,039
+Bu projede ki bilgi sisteminin bağlı olduğu diğer bilgi sistemleri ya da bundan sonra kurulacak diğer bilgi sistemleri stratejik açısından nasıl planlanmış onu takip etmeye çalışır.
+
+332
+01:20:04,039 --> 01:20:14,039
+Eğer bottom up olacaksa o zaman proje yöneticisi kafasında bir proje vardır.
+
+333
+01:20:14,039 --> 01:20:19,039
+Bunun teklifini yapar ve bu proje oluşturulmaya başlar.
+
+334
+01:20:19,039 --> 01:20:27,039
+Önce alttaki ihtiyaçları tanımlayarak proje başlatılır.
+
+335
+01:20:27,039 --> 01:20:39,340
+Şimdi proje planlama aşamasında diğer adımlara geçmeden neler yapılıyor.
+
+336
+01:20:39,340 --> 01:20:48,340
+Önce problem tanımlanıyor sonra proje fizibilitesi oluşturuluyor sonra projede ki iş listesi oluşturuluyor.
+
+337
+01:20:48,340 --> 01:21:02,340
+Projeye görev atanıyor projede çalışacaklar ve proje için ilk başlangıç çalışmaları için girişimde bulunuluyor.
+
+338
+01:21:02,340 --> 01:21:21,340
+Problemin tanımlanması aşamasında öncelikle bu problem hangi işletmecilik problemine, hangi işletmecilik ihtiyaçlarına karşılık verecek,
+
+339
+01:21:21,340 --> 01:21:34,340
+faydası ne olacak bunu bir paragraf gibi yazıp bunu gözden geçirme sonuçlarını buraya eklemek gerekiyor.
+
+340
+01:21:34,340 --> 01:21:42,340
+Beklenen yetenekleri ne olacak yani yeni sistem neleri sağlayacak?
+
+341
+01:21:42,340 --> 01:21:51,340
+Proje alanı dediğimiz, scope of the project proje alanını tanımlaması gerekiyor.
+
+342
+01:21:51,340 --> 01:22:03,340
+Daha sonra yine sistem analizi dersinden bildiğiniz bir genel özet, diagram oluşturmamız gerekiyor.
+
+343
+01:22:03,340 --> 01:22:17,340
+Bu noktada genel bir use case diagramı da çizilebilir ama kontekst diagramla bunu daha kolay ifade edebiliyoruz.
+
+344
+01:22:17,340 --> 01:22:25,340
+Yani nesneye yönelik de geliştirecek olsak bir kontekst diagramla başlangıç yapabiliriz.
+
+345
+01:22:25,340 --> 01:22:35,340
+Şimdi problem nedir? Önce onu anlayacağız demiştik ya, projedeki planlama aşamasında problemi tanımlamamız gerekiyor.
+
+346
+01:22:35,340 --> 01:22:53,220
+Problemin çözülmesindeki işletmecilik ihtiyacı nedir? Nereden çıktı bu ve ne iş yapacak?
+
+347
+01:22:53,220 --> 01:23:01,220
+Bunu tanımlıyoruz. Bunun için yeni sistemimizin yetenekleri de neler olmalı? Proje alanımız neler olmalı?
+
+348
+01:23:01,220 --> 01:23:10,220
+Bunu örneklediğimizde bir müşteri destek sistemi gerçekleştirecek.
+
+349
+01:23:10,220 --> 01:23:21,220
+Rocky Mountain firmasına bu ihtiyaçları da şu şekilde, proje tanımını şu şekilde veriyoruz.
+
+350
+01:23:21,220 --> 01:23:35,439
+Sizin görüntünüz kaybolmadı değil mi? Görebiliyorsunuz.
+
+351
+01:23:35,439 --> 01:23:39,779
+Evet hocam.
+
+352
+01:23:39,779 --> 01:23:51,779
+Tamam. Ben çünkü slide formatına geçirmemiştim. Bir aksaklık olmasın diye korkuyorum ama evet devam edebiliriz.
+
+353
+01:23:51,779 --> 01:24:09,920
+Öncelikle şirkette satış işlemlerinde değişiklik yapabilmek için müşteri destek sistemiyle başlıyoruz çalışmaya.
+
+354
+01:24:09,920 --> 01:24:17,920
+Müşteri destek sistemi için bir proje tanımı, problem tanımı veriyoruz.
+
+355
+01:24:17,920 --> 01:24:29,920
+Daha önce bir müşteriler hakkında bilgi tutuluyordu, satışları hangi müşteriye, hangi satışı yapıldığı tutuluyordu.
+
+356
+01:24:29,920 --> 01:24:38,920
+Ama bunun iyileştirilmesi isteniyor. Envanter ile ilişkilendirilsin, müşteri desteği ile ilişkilendirilsin, satışlarla ilişkilendirilsin.
+
+357
+01:24:38,920 --> 01:24:42,920
+Uzun vadeli planlama bu.
+
+358
+01:24:42,920 --> 01:24:53,920
+Burada kritik olarak bir defa faydalar neler olacak bir de onu görelim.
+
+359
+01:24:53,920 --> 01:25:02,920
+Siparişlerin verilmesinde daha az hata olacak, daha hızlı sipariş verme işlemi olacak.
+
+360
+01:25:02,920 --> 01:25:19,899
+Ve müşterilere hizmet veren görevlilerde bunlar hakkında da bilgi tutulacak.
+
+361
+01:25:19,899 --> 01:25:25,899
+Çünkü bu görevlilerde prim işlemleri var onlar da gerçekleştirilecek.
+
+362
+01:25:25,899 --> 01:25:40,899
+İnternet satışı daha iyileştirilecek ve daha doğrusu bu küçük bir firma internet satışına da geçecek hale getiriliyor.
+
+363
+01:25:40,899 --> 01:25:47,899
+Bu çalışma için internet kanalı yeni açılacak.
+
+364
+01:25:47,899 --> 01:26:11,470
+Ve böylece satışlar izlenerek daha ileri aşamada da satışları daha iyileştirmek adına yeni potansiyel satışlar bulunması için akıllı uygulamalara doğru gidilecek.
+
+365
+01:26:11,470 --> 01:26:18,470
+Müşteri destek sistemi hangi hedefleri karşılayacak?
+
+366
+01:26:18,470 --> 01:26:30,939
+Online müşteriye destek verebilecek.
+
+367
+01:26:30,939 --> 01:26:45,939
+Ama bunun yanında eski sipariş verme şekilleri de katalogdan telefonla sipariş verme şekilleri de devam edecek.
+
+368
+01:26:45,939 --> 01:26:49,939
+Geleneksel müşteriyi de kaybetmemek için.
+
+369
+01:26:49,939 --> 01:26:56,939
+Siparişler izlenecek hem internet müşterisi için hem diğer müşteriler için.
+
+370
+01:26:56,939 --> 01:27:03,939
+Ve müşteri sorgulamaları gerçekleştirebilecek.
+
+371
+01:27:03,939 --> 01:27:11,939
+Müşterinin tarihsel bilgisi yani bu müşteri şu tarihler arasında neler almıştı sorgulaması yapılacak.
+
+372
+01:27:11,939 --> 01:27:21,939
+Yeni siparişler için 24 saat gönderim şirketiyle iletişimde olunacak.
+
+373
+01:27:21,939 --> 01:27:31,939
+Gönderim işte kargo şirketiyle iletişim sağlanacak ve bunun takibi yapılacak hangi aşamada şu anda satışımız şeklinde.
+
+374
+01:27:31,939 --> 01:27:44,939
+Ve satış analizleriyle, pazar talepleriyle ilişkilendirme gerçekleştirecek.
+
+375
+01:27:44,939 --> 01:27:52,939
+Bunlar da bizim uygulamamız için gerçekleştirecekler oluyor.
+
+376
+01:27:52,939 --> 01:28:02,939
+Burada müşteri destek sistemi bu işleri yapmak üzere hangi varlıklarla ilişkide olacak bir defa.
+
+377
+01:28:02,939 --> 01:28:18,939
+Şurada gördüğümüz gibi müşteri yeni sipariş verme, sipariş izleme, siparişi geri çekme gibi işlemlerde ilişkide olacak.
+
+378
+01:28:18,939 --> 01:28:30,939
+Pazarlama birimine promosyon paketleri için bilgi verme, destek sağlama üzere bu müşteri destek sistemi hizmet verecek.
+
+379
+01:28:30,939 --> 01:28:36,939
+Yani pazarlamaya da arşiv bilgisiyle destek verecek.
+
+380
+01:28:36,939 --> 01:28:46,939
+Müşteri bankadan yatırıyorsa o ilişkileri gerçekleştirecek.
+
+381
+01:28:46,939 --> 01:28:58,939
+Gönderme kargo firmasıyla sipariş detayları gibi, siparişin izlenmesi gibi işlemler yapacak.
+
+382
+01:28:58,939 --> 01:29:10,939
+Satış aşamasında da satış raporları, performans raporları, performans raporları yani satıcıların primlerinin detayları alınacak.
+
+383
+01:29:10,939 --> 01:29:20,939
+Yönetime de bakınıp giden ok var. Yönetimden bir şey istemiyoruz, bilgi almıyoruz ama yönetime bilgi gönderiyoruz.
+
+384
+01:29:20,939 --> 01:29:34,939
+Bu anladığımız uygulama hedeflerini belirledik. Genel tanımını verdik. Böylece bunu göstermiş oluyoruz.
+
+385
+01:29:34,939 --> 01:29:46,939
+Bu da uygulamanın proje planlama aşamasında genel yapısını göstermek üzere iyi bir araç.
+
+386
+01:29:46,939 --> 01:30:05,279
+Evet, projenin fizibilitesini oluşturmak, proje ne kadar yapılabilirdir, yapılabilirliğini belirlemek.
+
+387
+01:30:05,279 --> 01:30:22,279
+Yine planlama aşamasında yaptığımız işlerden bir tanesi ekonomik fizibilite, teknik fizibilite, iş listesi yani takvim fizibilitesi, zaman fizibilitesi diyebiliriz.
+
+388
+01:30:22,279 --> 01:30:36,279
+Ve kaynak fizibilitesi. Ek kaynağa ihtiyaç var mı? Bilgisayar kaynakları, ekip kaynağı, destek çalışan kaynağı gibi.
+
+389
+01:30:36,279 --> 01:30:51,279
+Ekonomik fizibilite, cost benefit analizi. Yani sadece bazen projelerimizde de tek taraflı bakıyorsunuz buna.
+
+390
+01:30:51,279 --> 01:31:10,279
+Sadece gelirler değil, gelirlerin bu proje bize ne getirecek, bu projenin maliyeti nedir? Maliyet fayda değerlendirmesi yapmak aslında ekonomik fizibilite.
+
+391
+01:31:10,279 --> 01:31:30,279
+Bunun kıyaslanması gerekiyor ekonomik fizibilite de. Maliyetler diye baktığımızda geliştirme maliyetleri ve işlemlerin sürdürülebilmesi için gerekli kaynaklar.
+
+392
+01:31:30,279 --> 01:31:49,279
+Geliştirme maliyetleri, işte çalışanların ücretleri, kullanılacak cihazlar, bilgisayarlar, kuruluş için gerekli bilgiler, lisanslar, bunlar geliştirme maliyetleri.
+
+393
+01:31:49,279 --> 01:32:02,279
+İşletim sırasında da bakım desteği, altyapının sürekliğini sağlaması gibi kaynaklar var.
+
+394
+01:32:02,279 --> 01:32:07,279
+Peki faydaları nelerdir?
+
+395
+01:32:07,279 --> 01:32:40,729
+Faydalarına baktığımızda faydaları iki türlü ele alıyoruz. Bir görünen faydalar, bir de görülmeyen faydalar.
+
+396
+01:32:40,729 --> 01:33:22,590
+Bunları işte eleman otomasyon nedeniyle eleman sayısının azaltılması, işletim harcamalarının azaltılması, hata oranının azalması, daha hızlı işlem sağlanması ve para kaybının önlenmesi.
+
+397
+01:33:22,590 --> 01:33:46,579
+Muhasebe ve kredi işlemlerinin daha iyileşmesi, envanter kayıtlarının azalması gibi faydaları vardır böyle bir müşteri destek sisteminin.
+
+398
+01:33:46,579 --> 01:34:01,979
+Ve müşteri destek sisteminin üretimle ve diğer uygulamalarla ilişkilendirilmesi bu görünür faydalardır.
+
+399
+01:34:01,979 --> 01:34:19,979
+Bir de görülmeyen faydalar var, müşteri memnuniyetinin artması ve daha iyi destek verilmesinin sağlanması gibi.
+
+400
+01:34:19,979 --> 01:34:45,979
+Bu bir projenin görünmeyen maliyeti, ayrıca çalışanların üretkenliğinin azalması gibi, müşteri ve satış kaybının şey gibi, müşteriler üzerinde de etkisi olacaktır.
+
+401
+01:34:45,979 --> 01:35:00,979
+Bunları dikkate almak gerekiyor maliyet hesabı yaparken ve fizibilite çalışması gerçekleştiriyoruz.
+
+402
+01:35:00,979 --> 01:35:15,979
+Fizibilite çalışmasında tahmin edilen maliyetlerin her birinin kategorisi, ücretler, diğer maliyetler, alet, yazılım lisansları gibi.
+
+403
+01:35:15,979 --> 01:35:35,979
+Ve geliştirme maliyeti ve yıllık işletim maliyeti, ne olacak bunun özetinin verilmesi, faydaların özetlenmesi ve net present value.
+
+404
+01:35:35,979 --> 01:35:55,979
+Bu faydaların gelecek 5 yıl örneğin bugünkü değerle hesaplanması, yani bu sistem ne kadar fayda getirecek, bunu bugünkü parayla,
+
+405
+01:35:55,979 --> 01:36:11,979
+örneğin 5 senelik bir sınır getirmişsek, 5 senede bu kurulan müşteri destek sistemi bize ne fayda sağlayacak, parasal olarak şirkete ne getirecek, bunun hesaplanması.
+
+406
+01:36:11,979 --> 01:36:38,439
+Burada örneğin maliyetleri sıralıyoruz, işte ücretler, çalışanların ücretleri, kullanılan bilgisayarlar, diğer aletler, eğitim parası,
+
+407
+01:36:38,439 --> 01:36:59,439
+daha alt başlıklar, seyahat falan gibi destek işlemleri gibi. Bunlar bu Rocky Mountain Outfitter için müşteri destek sistemini geliştirdiğimizde bize maliyeti,
+
+408
+01:36:59,439 --> 01:37:22,619
+ne olacak bunun hesaplanması. Bundan sonrasına tek tek bakalım, buradaki kavramlar üzerinde de duralım. Bu arada bir 10 dakika daha ara veriyorum.
+
+409
+01:37:22,619 --> 01:52:16,159
+Tekrar derse devam ediyoruz. En son bu proje örneğinde harcamalar katagorisinde maliyetleri gördük.
+
+410
+01:52:16,159 --> 01:52:40,000
+İşte ücretler, bilgisayarlar, eğitim gibi kalemleri tanımlandığını gördük. Burada en büyük kalem çalışanlara ayrılan miktardı.
+
+411
+01:52:40,000 --> 01:52:54,000
+Buradaki miktarı proje tekliflerinde de her bir kalemi ayrıca alt başlıklarıyla takip edebiliriz.
+
+412
+01:52:54,000 --> 01:53:16,000
+İşte proje yöneticisi bir tane sistem analisti, 3 tane programcı, 6 tane netvork tasarımcısı bir tane gibi çalışanların, personelin harcamalarını, personel için bütçe kalemlerini görebiliyoruz.
+
+413
+01:53:16,000 --> 01:53:28,000
+İşte ücreti, 12 aylık ücreti toplamı 9 ay sistem analisti çalışacak, 75 bin lira aylığı.
+
+414
+01:53:28,000 --> 01:53:51,000
+Burada bunların miktarı, toplam miktarı, burada da hepsinin aynı zamanda daha sonra göreceğimiz şeyde adam ay miktarı bir ayda her bir sistem analisti,
+
+415
+01:53:51,000 --> 01:54:04,000
+yüzde 100 randı şeyle çalışacak ya da işte ne kadar adam ay oranında çalışacak buna da bağlı olarak değişebilir miktarları.
+
+416
+01:54:04,000 --> 01:54:32,630
+Yani her bir kalemini, her bir şuradaki maliyet listesinde burada toplamı görüyoruz, her bir maliyet kaleminin, her bir maliyet kalemininde, her bir bütçe kaleminde ayrıca ayrıntılı hangi tip kaynağa, ne kadar miktar ayrılıyor bunu görebiliyoruz.
+
+417
+01:54:32,630 --> 01:54:49,630
+Diğer harcamaları da işletim maliyetlerini de görüyoruz. Yani bu ilk baştaki maliyetler, geliştirme maliyetleri.
+
+418
+01:54:49,630 --> 01:55:05,630
+Geliştirme maliyetlerinin en fazlası olan çalışan personel bir kaleminin ayrıntılı bütçesini görüyoruz.
+
+419
+01:55:05,630 --> 01:55:19,630
+Ve bir de geliştirme maliyetinden başka işletim maliyeti de var. İşletim maliyetini de bu şekilde özetleyebiliyoruz.
+
+420
+01:55:19,630 --> 01:55:39,630
+Cihazların, bilgisayarların bakımı örneğin, bakım ücretleri, programlama açısından gibi görebiliyoruz. İki tür maliyet var demiştik, geliştirme ve bakım maliyeti.
+
+421
+01:55:39,630 --> 01:55:45,630
+Peki faydalar nelerdir? Faydaları da paraya çevirirsek.
+
+422
+01:55:45,630 --> 01:56:07,630
+Mektupla sipariş, mail ile sipariş departmanının etkinliğinin artması, telefon ile sipariş için artması, pardon azalması, buradaki çalışanların azalması.
+
+423
+01:56:07,630 --> 01:56:26,659
+Diğer envanterle, teminle, ilişkilerin maliyetlerinin azalması gibi.
+
+424
+01:56:26,659 --> 01:57:02,739
+Burada fayda maliyet oranına da, yani önce faydalara bakıyoruz. Buna göre ne kadar maliyette değecek faydalar oldu mu, bunu kontrol ediyoruz.
+
+425
+01:57:02,739 --> 01:57:13,739
+Bir de net present value, payback ve return on investment hesaplamaları gerçekleştiriliyor.
+
+426
+01:57:13,739 --> 01:57:37,739
+Burada maliyet fayda analizi gerçekleştirdiğimizde yapılan harcamalar, yani projenin maliyeti elde edilen faydaya değiyor mu, bunun takip edilmesi.
+
+427
+01:57:37,739 --> 01:58:01,739
+Birinci daha geliştirme sırasında tabii ki faydayı bir kazanım olarak göremiyoruz. Birinci yılda elde edilen fayda, ikinci yılda elde edilen fayda, üçüncü yılda elde edilen fayda olarak görebiliyoruz.
+
+428
+01:58:01,739 --> 01:58:32,359
+Burada cumulative net present value, maliyetlerin miktarı, payback periyodu da, iki geri ödeme periyodunun ne kadar olacağı hesaplanıyor.
+
+429
+01:58:32,359 --> 01:58:50,359
+Yatırımların beş yılda geri dönüşleri, beş yıllık zamanda geri dönüşü ne kadar olacaktır, bunu da cumulative miktarları hesaplayarak elde edebiliyoruz.
+
+430
+01:58:50,359 --> 01:59:13,699
+İktisatta ekonomide, daha doğrusu harcamaların planlanmasında, yatırım planlamalarında yapılan yatırım iki yıl sonra ne kadar bize kar getirmiş olacak.
+
+431
+01:59:13,699 --> 01:59:33,699
+Geri ödeme periyodunu hesaplayarak da, yatırımımız yaptığımız harcamaları ne zaman karşılamış olacak, baş baş noktası da bunu gösteriyor.
+
+432
+01:59:33,699 --> 01:59:42,699
+Şimdi buradaki tanımlara biraz bakalım, burada örnekteki uygulamada geçen tanımlara.
+
+433
+01:59:42,699 --> 01:59:56,699
+Net present value, bizim faydaların dolar olarak mevcut değeri ne olacaktır?
+
+434
+01:59:56,699 --> 02:00:14,699
+Yeni bir sistem gibi bir yatırım gerçekleştirildiğinde, maliyet ve faydanın dolar olarak bugünkü değerli gösterilmesi, yani para birimine çevrilerek faydanın gösterilmesi.
+
+435
+02:00:14,699 --> 02:00:27,699
+Örneğin şu ekipte iki tane çalışan azaldı dediğimizde, onların maliyetini paraya çevirerek bu konuda bilgi verebiliyor muyuz?
+
+436
+02:00:27,699 --> 02:01:01,229
+Payback periyodu ve burada fayda ve maliyetin eşitlendiği zaman periyoduna payback periyodu diyoruz.
+
+437
+02:01:01,229 --> 02:01:14,229
+Yeni bir sistem için yapılan yatırımdan elde edilen kazanç oranının ölçülmesi de return on investment yapısı.
+
+438
+02:01:14,229 --> 02:01:30,229
+Faydaların tahmin edilen zaman periyodu, maliyetlerin tahmin edilen zaman periyodudan çıkarılması ile elde ediliyor.
+
+439
+02:01:30,229 --> 02:01:53,229
+Bir de yine örnekte geçen fark edilir faydalar, fark edilmeyen faydalar, yani fark edilmeyen demeyeyim de sayılabilir sayılamayan faydalar, tam net olarak görünen ve dolaylı faydalar diyebiliriz.
+
+440
+02:01:53,229 --> 02:02:22,340
+Tam olarak para birimi ile tahmin edilen ya da ölçülebilen faydalar, burada kandidatif olarak doğrudan ölçülemeyen ama yaklaşıklıkla tahmin edilen dolaylı faydalar da intangible benefits sayılabilir, sayılamayan diye de bunu Türkçeleştirebiliriz.
+
+441
+02:02:22,340 --> 02:02:40,340
+Bunun örneğini de az önce gördük, faydaları, sayılabilir faydaları bu örnekte geliştirilen sistemin ve sayılamayan faydaları şeklinde örneklemiş olduk.
+
+442
+02:02:40,340 --> 02:03:09,199
+Burada da geçen terminoloji ekonomik fizibilitede, geçen terminoloji üzerinde durmuş olduk.
+
+443
+02:03:09,199 --> 02:04:01,720
+Proje iş listesinin geliştirilmesi gerekiyor, proje iş listesinin geliştirilmesi, her bir aktivitenin belirtilmesi, her bir aktivitenin kaynağının tahmin edilmesi.
+
+444
+02:04:01,720 --> 02:04:23,720
+İş listesinin ardışıklığı ve PERT CPM ile işler arasındaki ilişkiyi belirlemek ve Gantt diagramında da bu listenin belirtilmesi.
+
+445
+02:04:23,720 --> 02:04:48,720
+Biz burada sistem analizindeki ve yazılım mühendisliğinde yaptığınız ödevlerdeki şeyleri hatırlarsak, PERT CPM bütün projelerinizde kullanmamıştınız ama sistem analizinde PERT'i nasıl oluşturacağınızı görmüştünüz.
+
+446
+02:04:48,720 --> 02:05:03,720
+Gantt diagramında da örnekleri bütün projelerinizde yaptınız. Gantt diagramını çizecek kadar MS projekte kullanıyor oldunuz.
+
+447
+02:05:03,720 --> 02:05:37,960
+Proje iş listesinin geliştirilmesi sırasında her bir aktiviteyi belirleyip, her bir aktivitenin kaynak ve zamanını tahmin ediyoruz.
+
+448
+02:05:37,960 --> 02:05:51,960
+İşlerin sırasını saptıyoruz ve görevleri listeliyoruz. Gantt diagramını çiziyoruz. Şimdi hatırlayalım.
+
+449
+02:05:51,960 --> 02:06:20,960
+Gantt diagramını çizebilmek için, öncelikle iş listesini, mesela proje planlama aşaması için, problemin tanımlanması, iş listesinin üretilmesi, fizibilite çalışmasının yapılması, proje ekibinin görevlendirilmesi gibi alt başlıkları kaç gün sürecek, hangi kaynakla gerçekleştirilecek.
+
+450
+02:06:20,960 --> 02:06:29,960
+Bunu görebiliyoruz. Bunun arkasından PERT diagramını oluşturuyoruz.
+
+451
+02:06:29,960 --> 02:06:37,960
+PERT diagramında da birbirlerinle sıra açısından ilişkisini belirtiyoruz.
+
+452
+02:06:37,960 --> 02:07:04,970
+Tartışıklık ilişkisini, dikdörtgenlerle task'ları gösteriyoruz ve aynı zamanda yapılacak işleri, eş zamanlı yapılabilecek işleri farklı yollarda gösteriyoruz.
+
+453
+02:07:04,970 --> 02:07:28,970
+Kritik peti bulmaya çalışıyoruz. Bağımlı işleri gösteren yolu ve bu yol üzerinde slack time izin verilmiyor.
+
+454
+02:07:28,970 --> 02:07:36,970
+Diğer yollarda slack time olabiliyor. Yani bekleme süresi, bolluk süresi olabiliyor.
+
+455
+02:07:36,970 --> 02:07:44,970
+Bir de Gantt diagramını hatırlayalım ki onu daha çok kullandınız.
+
+456
+02:07:44,970 --> 02:08:05,050
+Gantt diagramında, işte az önce verdiğimiz iş listesini Gantt diagramına geçirdiğimiz zaman burada Gantt diagramı yapısında önce şeklini görelim istedim.
+
+457
+02:08:05,050 --> 02:08:28,130
+Her bir görev yatay çubuklarla gösteriliyor ve buradaki çubukların uzunluğu gün veya haftalarla işaretleniyor birim olarak.
+
+458
+02:08:28,130 --> 02:08:35,130
+Ve takvim bilgisini bakıp buradan kolayca görebiliyoruz.
+
+459
+02:08:35,130 --> 02:08:48,130
+Buradaki çubuklar tamamlanmış, daha sonra takip aşamasında da tamamlanmış işleri gösterirken renklendirilebilir.
+
+460
+02:08:48,130 --> 02:08:52,130
+Çünkü takibi de Gantt diagramı üzerinde MS projekte yapabiliyoruz.
+
+461
+02:08:52,130 --> 02:09:05,979
+Burada tekrar baktığımızda birbiriyle ilişkilendirme gerçekleştirebiliyoruz.
+
+462
+02:09:05,979 --> 02:09:18,979
+Değişiklik yapmışsak zamanın yapısına göre ne zaman yüzde yüzü bitmiş ne kadarı bitmemiş bitmeyen işleri burada takip edebiliyoruz.
+
+463
+02:09:18,979 --> 02:09:46,979
+Bunu da yine hazırlayacağınız projeler için MS projekte tekrar gözden geçirin, denemeler yapın bir proje planını tamamıyla takip edebilecek şekilde MS projekte kullanmanız gerekiyor.
+
+464
+02:09:46,979 --> 02:09:54,920
+Bundan sonraki hazırlıklar neler proje için?
+
+465
+02:09:54,920 --> 02:10:14,920
+Projede görev atama, kaynak planını yapma, teknik görevlileri belirleme, özel kullanıcıların istekleri belirleme,
+
+466
+02:10:14,920 --> 02:10:34,920
+proje ekibi içinde alt iş gruplarını organize etme, ekip oluşturma ve ön çalışma yapma bu şekilde planlanıyor.
+
+467
+02:10:34,920 --> 02:10:52,920
+Fizibilite çalışmasının geliştirilmesi kapsamında bir checklist oluşturursak yani bir fizibilite çalışmasında neleri yapıyoruz, bunu kontrol edelim.
+
+468
+02:10:52,920 --> 02:11:14,920
+Projenin gerekleri anlaşıldı mı? Kim ihtiyaç duydu bu projeye? Yani böyle bir çözüme ne zaman ihtiyaç duyuldu, ne bekleniyor ve müşteri kimdir?
+
+469
+02:11:14,920 --> 02:11:34,920
+Öncelikle bu anlaşıldı mı? Fizibilite yani proje planlama aşamasında, fizibilite çalışması sırasında bu projenin istek tarihçesi nedir?
+
+470
+02:11:34,920 --> 02:11:54,439
+Amacı ve alanı nedir? Bu projede ne başarılmak isteniyor ve ne kapsıyor, sınırları nedir, yazılım gereksinimleri, donanım gereksinimleri nedir?
+
+471
+02:11:54,439 --> 02:12:15,689
+Şu andaki durumu nedir? Hangi alanlara ihtiyaç duyuluyor? Proje ile ilişkili kişiler kimlerdir? Şu andaki problemlere nasıl yaklaşılıyor, şu andaki durum nedir?
+
+472
+02:12:15,689 --> 02:12:30,689
+Yani şu andaki durumu adreslenmesi, şu anda neler yapılıyor bu alanda bunun belirlenmesi, fizibilite çalışması sırasında yapılması gerekenler.
+
+473
+02:12:30,689 --> 02:12:59,689
+Önerilen çözüm nedir? Kullanılacak cihazlar nelerdir? Veritabanı ve dosya kapasitesi nedir? Bu proje tamamlandığında faydaları ne olacak, maliyet ne olacak ve fayda maliyet dengesi nasıl olmalıdır?
+
+474
+02:12:59,689 --> 02:13:11,689
+Bunun için bütün iş listelerine ek olarak verilmesi gerekiyor. Proje planından da kastımız bu.
+
+475
+02:13:11,689 --> 02:13:45,539
+Evet, bu burayı kadar anlattıklarımla ilişkili. Sorunuz var mı?
+
+476
+02:13:45,539 --> 02:15:45,579
+Pert diagramı bize neyi anlatır? [öğrenci], [öğrenci]'a duyuyor musun? [öğrenci], [öğrenci].
+
+477
+02:15:45,579 --> 02:15:53,109
+Evet hocam.
+
+478
+02:15:53,109 --> 02:15:56,109
+Gantt diagramı nedir?
+
+479
+02:15:56,109 --> 02:16:09,109
+Gantt diagramı bir projede yapılacak adımları sıraladığımız başlangıç ve bitişlerini, milestoneları belirlediğimiz bir diagramdır.
+
+480
+02:16:09,109 --> 02:16:12,109
+Evet, tamam teşekkürler.
+
+481
+02:16:12,109 --> 02:16:23,619
+[öğrenci], duyuyor musun? Ses gelmiyor mu?
+
+482
+02:16:25,989 --> 02:16:39,489
+Yazarak cevap verebilirsin.
+
+483
+02:16:39,489 --> 02:17:26,700
+Aslında bu soruları biraz sistem analizi dersini hatırlatmak için de sordum.
+
+484
+02:17:26,700 --> 02:17:41,700
+Çünkü burada slide'ı kullanıyorum ama bir yandan da hatırlatma yapıyorum sistem analizi dersiyle ilişkili.
+
+485
+02:17:41,700 --> 02:17:48,700
+Gantt diagramını milestone'u yazılım mühendisliğinde de, sistem analizinde de kullandınız.
+
+486
+02:17:48,700 --> 02:18:01,700
+Şimdi bu dersin projesini daha sonra yazılı tanım olarak da veririm ama proje üzerinde bir açıklama yapayım.
+
+487
+02:18:01,700 --> 02:18:05,700
+Bu dersin bir projesi olacak.
+
+488
+02:18:05,700 --> 02:18:17,700
+Önümüzdeki hafta değil, ondan sonraki haftaya kadar, yani dördüncü haftaya kadar bana proje grubunuzu belirtin.
+
+489
+02:18:17,700 --> 02:18:23,700
+Bunu 4 kişi diye düşünmüştüm ama 5 kişi de biraz daha geniş yaparsanız olabilir.
+
+490
+02:18:23,700 --> 02:18:54,020
+Proje grubunuzla beraber sizden istediğim bir kurumsal yazılım konusu belirleyeceksiniz daha büyük çerçeveli.
+
+491
+02:18:54,020 --> 02:19:11,020
+Mesela işte müşteri ilişkileri yönetimi, mesela insan kaynakları yönetimi ya da yatırım planlaması aracı gibi.
+
+492
+02:19:11,020 --> 02:19:21,020
+Öncelikle bunun fizibilite çalışmasını kapsamlı olarak hazırlayarak,
+
+493
+02:19:21,020 --> 02:19:36,020
+öncelikle bu alanda hazırlanmış iki ayrı firma tarafından bu konudaki yazılımların tanımı ve birbiriyle kıyaslamasını istiyorum.
+
+494
+02:19:36,020 --> 02:19:50,020
+Daha sonra da sizin bunların hangi farklı alanlarını kullanarak geliştireceğini bildiğim belirttiğiniz,
+
+495
+02:19:50,020 --> 02:20:01,020
+bu kıyaslamaya sizinkini de ekleyerek sizinkinde nasıl özellikler olacak bir uygulama geliştirmenizi istiyorum.
+
+496
+02:20:01,020 --> 02:20:13,020
+Bu bir işte kurumlarda vereceğimiz ilk içindekiler bölümünde de gördüğümüz gibi,
+
+497
+02:20:13,020 --> 02:20:34,530
+satış pazarlama kısmından, müşteri destek uygulaması ya da insan kaynakları gibi şirketlerdeki uygulamalardan,
+
+498
+02:20:34,530 --> 02:20:40,530
+şirketlerdeki departmanlar için gerekli olan uygulamalardan birini seçeceksiniz.
+
+499
+02:20:40,530 --> 02:20:54,530
+Ve bu alanda başka firmalar tarafından hazırlanmış paket programları açıklayacaksınız.
+
+500
+02:20:54,530 --> 02:21:07,530
+Bunlar arasında da karar oluşturacaksınız. Bunların hangisinin fiyatı nedir, hangisini seçmemiz durumunda hangi olanaklar sağlanacak.
+
+501
+02:21:07,530 --> 02:21:15,530
+Biz bunun alternatifi olarak daha ucuza bir yazılım geliştireceğiz veya firmamıza yatkın bir uygulama.
+
+502
+02:21:15,530 --> 02:21:31,530
+Bu uygulamanın yapısı ne olacak? Bu kapsamda bir proje, tabii ki proje geliştirme adımlarında proje yönetimine daha fazla öne vereceksiniz.
+
+503
+02:21:31,530 --> 02:21:44,530
+Fizibilite çalışmasını zaten çok ayrıntılı yapacaksınız. Bir de her adımı içinde çalışabilen bir kod oluşturacaksınız.
+
+504
+02:21:44,530 --> 02:21:51,530
+Bunu nerede oluşturduğunuz önemli değil. Böyle bir çalışma yapmanızı istiyorum.
+
+505
+02:21:51,530 --> 02:21:56,530
+Yani her adımını kontrol altında tutacaksınız, yine belgeleyeceksiniz.
+
+506
+02:21:56,530 --> 02:22:18,530
+Bu dediğim gibi 4 kişi ya da 5 kişi olabilir. Bu sayıları bana kişi isimleriyle ve konunuzla sadece önümüzdeki hafta değil ondan sonraki hafta vermeniz gerekiyor.
+
+507
+02:22:18,530 --> 02:22:25,530
+Ondan sonraki hafta yeni bir gruba kişi eklemeniz mümkün olmayacak. Sorunuz var mı?
+
+508
+02:22:25,530 --> 02:22:30,340
+Yok hocam.
+
+509
+02:22:30,340 --> 02:22:35,809
+Evet. Yani kapsama anlaşıldı mı projenin?
+
+510
+02:22:35,809 --> 02:22:44,159
+Hocam yazılı bir şekilde de ulaşabilsek daha iyi olur.
+
+511
+02:22:44,159 --> 02:23:01,159
+Evet, onu vereceğim. Ama şimdilik yani çerçevesi bu, bir bu işletmecilik uygulamalarından insan kaynakları pazarlama,
+
+512
+02:23:01,159 --> 02:23:23,159
+yatırım planlama, satış pazarlama ya da accounting konusunda herhangi birini seçeceksiniz ve bu alanda altta teknik olarak bir karar destek sistemi kurabilirsiniz.
+
+513
+02:23:24,159 --> 02:23:37,600
+İstediğiniz aracı kullanabilirsiniz. Grubunuzu ve hangi konuyu seçtiğinizi bana belirteceksiniz.
+
+514
+02:23:37,600 --> 02:23:47,600
+Eğer bir konu çok fazla, mesela herkes insan kaynakları demişse o zaman daha sonra belirten grubunkini değiştirmenizi isteyebilirim.
+
+515
+02:23:47,600 --> 02:23:55,290
+Evet, sorunuz var mı şu anda?
+
+516
+02:23:55,290 --> 02:24:07,120
+Proje hangi tarihe yapılacak hocam?
+
+517
+02:24:07,120 --> 02:24:21,120
+Proje dersin son haftasından iki hafta önce, iki hafta sunum olacak, üç hafta önce tamamlanacak.
+
+518
+02:24:21,120 --> 02:24:26,200
+Teşekkür ederim hocam.
+
+519
+02:24:26,200 --> 02:24:36,770
+Başka dersle ilgili bir şeyiniz var mı? Biriniz mesaj yazdınız galiba.
+
+520
+02:24:36,770 --> 02:26:29,200
+Proje kapsamıyla ilgili sorunuz var mı başka? Veya ders, proje çerçevesi, proje çerçevesini işletmecilik uygulamaları olarak tanımladım.
+
+521
+02:26:29,200 --> 02:26:42,200
+İşletmecilik uygulamaları da işletmedeki temel bilimlerden, hepsinde olabilecek temel uygulamalardan seçiyoruz.
+
+522
+02:26:42,200 --> 02:27:00,200
+Yani sistem analizindeki gibi uygulama alanı değil de genel olarak bir işletmedeki temel bir alt bölüm mü seçiyorsunuz.
+
+523
+02:27:00,200 --> 02:27:06,200
+Ve bununla ilgili hazır yazılımları önce araştırıyorsunuz.
+
+524
+02:27:06,200 --> 02:27:23,610
+Ondan sonra da kendi yazılımınızın sınırlarını oluşturuyorsunuz.
+
+525
+02:27:23,610 --> 02:27:27,610
+Evet, dersi tamamlayabiliriz o zaman.
+
+526
+02:27:27,610 --> 02:27:31,610
+İyi haftalar diliyorum.
+
+527
+02:27:31,610 --> 02:27:33,610
+Sağ olasın hocam.
+
+528
+02:27:33,610 --> 02:27:35,610
+İyi haftalar.
+

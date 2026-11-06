@@ -1,0 +1,4368 @@
+1
+00:00:58,030 --> 00:01:05,469
+Evet arkadaşlar merhaba hepinize. Lütfen arka plandaki mikrofonları kapatalım.
+
+2
+00:01:06,469 --> 00:01:10,469
+Sesler geliyor bazılarınızın ki açık farkında değil sanırım.
+
+3
+00:01:11,469 --> 00:01:14,469
+Hoş geldiniz. Yedinci haftadaki dersi.
+
+4
+00:01:15,469 --> 00:01:23,469
+Bu hafta, geçmiş hafta kaldığımız noktadan devam edip List View Recycler View yapısını konuşacağız.
+
+5
+00:01:23,469 --> 00:01:28,469
+Biraz veri saklama metotlarından bahsedeceğiz.
+
+6
+00:01:28,469 --> 00:01:34,469
+Bir giriş yapacağız. Sonra da geri kalan kısımda uygulamamız da devam ediyor olacağız.
+
+7
+00:01:34,469 --> 00:01:38,469
+Önümüzdeki hafta sınav haftanız. Şimdiden başarılar diliyorum hepinize.
+
+8
+00:01:39,469 --> 00:01:44,469
+Bu dersin sınavı da en son ki programa göre cuma günü gözüküyor.
+
+9
+00:01:45,469 --> 00:01:47,469
+Dersin gününde değil farklı bir günde.
+
+10
+00:01:48,469 --> 00:01:54,469
+Dersin sınavı nasıl olacak sorusunu hemen cevaplayayım size.
+
+11
+00:01:54,469 --> 00:02:00,469
+İlk haftalardaki konularda dahil olmak üzere bu alandaki terminoloji ve teknolojiler
+
+12
+00:02:00,469 --> 00:02:07,469
+ve teknolojinin birbirlerine göre üstünlükleri, benzerlikleri bu konuları da içerecek şekilde
+
+13
+00:02:07,469 --> 00:02:10,469
+Android programlamanın da geldiğimiz noktasına kadar
+
+14
+00:02:11,469 --> 00:02:21,469
+bir klasik sınavdan öte şıklı sorular ya da boşluk doldurma tarzında bir sınav planlıyorum.
+
+15
+00:02:21,469 --> 00:02:24,469
+Belki küçük bir kod parçasında boşluk doldurma olabilir.
+
+16
+00:02:25,469 --> 00:02:31,469
+Belki belli bir terminolojide kullanan ifadenin bilinmesiyle ilgili,
+
+17
+00:02:31,469 --> 00:02:35,469
+açıklamasının karşılığında ne olduğuna dair yazılması ile ilgili olabilir.
+
+18
+00:02:36,469 --> 00:02:38,469
+Bir bilgi ezberlemenizi beklemiyorum.
+
+19
+00:02:39,469 --> 00:02:45,469
+Ama sonuçta çok uzun süren bir sınav olmayacak diye düşünebilirsiniz.
+
+20
+00:02:45,469 --> 00:02:47,469
+Şu an süreyle ilgili bir planlama da yapmadım.
+
+21
+00:02:47,469 --> 00:02:55,469
+Hemen arkasından bu sınav haftası tamamlandıktan sonra ikinci ödevinizin vereceğim.
+
+22
+00:02:55,469 --> 00:03:01,469
+İkinci ödeviniz bu şu anda geliştirdiğiniz uygulamayla ilgili olacak ve muhtemelen bir hafta,
+
+23
+00:03:01,469 --> 00:03:04,469
+10 gün içinde de teslim etmenizi bekliyor olacağım.
+
+24
+00:03:04,469 --> 00:03:11,469
+O yüzden yavaş yavaş bu ana kadar geldiğimiz noktayı ve bugün söyleyeceklerimi
+
+25
+00:03:11,469 --> 00:03:19,469
+implemente etmeyenler implemente etmeye başlarsa vize haftasından sonraki hafta sonu
+
+26
+00:03:19,469 --> 00:03:25,469
+herhalde pazar günü falan bir ödev testimi sizden istiyor olacağım.
+
+27
+00:03:25,469 --> 00:03:27,469
+Genel olarak planlarım bu şekilde.
+
+28
+00:03:27,469 --> 00:03:30,469
+Sorusu olan varsa hemen yanıtlayayım yoksa derse geçeceğiz.
+
+29
+00:03:31,469 --> 00:03:32,469
+Evet [öğrenci].
+
+30
+00:03:33,469 --> 00:03:35,469
+Hocam slide'ları paylaşacak mısınız?
+
+31
+00:03:35,469 --> 00:03:37,469
+Tabii slide'ları paylaşırım.
+
+32
+00:03:37,469 --> 00:03:41,469
+Bana hatırlatmamayla atarsan en geç cuma günü paylaşmış olurum.
+
+33
+00:03:41,469 --> 00:03:52,259
+Bu arada slide'lar çok seçmece slide'lar.
+
+34
+00:03:52,259 --> 00:03:58,259
+Developer Android com üzerinden genellikle bilgilerin toplandığı slide'lar.
+
+35
+00:03:58,259 --> 00:04:04,259
+Ama siz sınava hazırlanırken lütfen Developer Android com üzerinden ilgili
+
+36
+00:04:04,259 --> 00:04:06,259
+chapter'ları okuyarak hazırlanın.
+
+37
+00:04:06,259 --> 00:04:08,259
+Faydasını göreceksiniz.
+
+38
+00:04:08,259 --> 00:04:14,259
+Bunun dışında ekstra o konuyla ilgili farklı bilgiler veren siteler de var.
+
+39
+00:04:14,259 --> 00:04:16,259
+Onları da okuyabilirsiniz.
+
+40
+00:04:16,259 --> 00:04:23,259
+Yani biraz Android programlamadaki genel kültürünüzü arttırmanız faydalı olacaktır
+
+41
+00:04:23,259 --> 00:04:25,259
+sınav öncesinde.
+
+42
+00:04:25,259 --> 00:04:31,259
+Bu derste programlama, programlama, programlama, programlama, programlama,
+
+43
+00:04:31,259 --> 00:04:37,259
+derste programlama, Android programlamayı sonuna kadar öğrenmek değil.
+
+44
+00:04:37,259 --> 00:04:43,259
+Genel olarak kritik bilgilere edinmek ve kullanımla ilgili neler var neler yok.
+
+45
+00:04:43,259 --> 00:04:47,259
+Dependency nedir? Gradle nedir?
+
+46
+00:04:47,259 --> 00:04:51,259
+Recycler View, List View arasındaki fark nedir?
+
+47
+00:04:51,259 --> 00:04:53,259
+Aktiviteler kaç tip olur?
+
+48
+00:04:53,259 --> 00:04:59,259
+Aktiviteler arasında gezinmek için hangi komponente kullanıyoruz?
+
+49
+00:04:59,259 --> 00:05:01,259
+Bilgiyi nasıl taşıyoruz?
+
+50
+00:05:01,259 --> 00:05:09,259
+Noktasında bilgi sahibi olmak ve ondan sonra o yetenekleri ileride bu alana ilgi
+
+51
+00:05:09,259 --> 00:05:13,259
+duyanların kullanması şeklinde bir aslında planlama var.
+
+52
+00:05:13,259 --> 00:05:19,259
+Yoksa Core Android programlamayı derste öğretmek gibi bir amacımız zaten çok
+
+53
+00:05:19,259 --> 00:05:26,259
+zor çünkü 3 saatlik, haftada 3 saatlik göstererek bir bilgiyi aktarmak
+
+54
+00:05:26,259 --> 00:05:32,259
+hakikaten bu tarz kapsamlı ve her sene değişen package'lara sahip olan bir ortam için
+
+55
+00:05:32,259 --> 00:05:34,259
+çok kolay değil.
+
+56
+00:05:34,259 --> 00:05:37,259
+Zaman zaman sizlerden de güzel sorular geliyor.
+
+57
+00:05:37,259 --> 00:05:43,259
+Onları da zaman içerisinde yanıtlamaya çalışacağım.
+
+58
+00:05:43,259 --> 00:05:47,259
+O anda cevap veremediklerim de dahil olmak üzere.
+
+59
+00:05:47,259 --> 00:05:53,259
+Şimdi başka sorusu olmadığına göre dersimize devam edeceğiz.
+
+60
+00:05:53,259 --> 00:06:22,139
+Hemen slide paylaşımına geçeceğim.
+
+61
+00:06:22,139 --> 00:06:29,139
+Evet şimdi geçen hafta en son burada kalmıştık interneti nasıl handle edeceğimizi
+
+62
+00:06:29,139 --> 00:06:30,139
+konuşmuştuk.
+
+63
+00:06:30,139 --> 00:06:37,139
+Şimdi aslında çok sık kullanılan ve bilgileri birlikte ve sıralı bir şekilde
+
+64
+00:06:37,139 --> 00:06:40,139
+vermemizi kolaylaştıran bir yapıdan bahsediyor olacağım.
+
+65
+00:06:40,139 --> 00:06:42,139
+Hatta birden fazla yapıda konuşacağız.
+
+66
+00:06:42,139 --> 00:06:51,139
+List view, grid view, recycler view ve en eskisi scroll view olarak geçiyor.
+
+67
+00:06:51,139 --> 00:07:02,139
+List view bunlar içerisinde en çok kullanılan yapı ama son dönemde, son 4-5 sene de
+
+68
+00:07:02,139 --> 00:07:05,139
+recycler view list view'un yerine aldı.
+
+69
+00:07:05,139 --> 00:07:07,139
+Bunun pek çok nedeni var.
+
+70
+00:07:07,139 --> 00:07:15,139
+Bunların başında recycle view size çok daha fazla özellik sunuyor ve aynı zamanda
+
+71
+00:07:15,139 --> 00:07:20,139
+performansı artırma noktasında ciddi katkılar sağlıyor.
+
+72
+00:07:20,139 --> 00:07:27,139
+Şimdi list view'la recycler view nedre noktasında küçük bir açıklama yapmak
+
+73
+00:07:27,139 --> 00:07:32,139
+isteyen, aralarındaki fark konusunda bilgi sahibi olan kimler var diye sorayım.
+
+74
+00:07:32,139 --> 00:07:36,139
+Katkıda bulunmak isteyen bir arkadaşımız varsa el kaldırabilir.
+
+75
+00:07:36,139 --> 00:07:38,139
+Bildiği kadarıyla.
+
+76
+00:07:38,139 --> 00:07:46,610
+Evet, [öğrenci].
+
+77
+00:07:46,610 --> 00:07:54,610
+Hocam list view'da bir data mesela, hani mesela bin kişinin olduğu bir tane listeden
+
+78
+00:07:54,610 --> 00:07:57,610
+söz edelim, hepsi bir item olsun.
+
+79
+00:07:57,610 --> 00:08:01,610
+List view'da bunların hepsi yükleniyor aktivite açıldığı anda.
+
+80
+00:08:01,610 --> 00:08:07,610
+Ama recycler view'da aşağıya biz kaydırdıkça aslında o itemleri yüklüyor.
+
+81
+00:08:07,610 --> 00:08:09,610
+Güzel, aynen senin anlattığın gibi.
+
+82
+00:08:09,610 --> 00:08:10,610
+Teşekkür ediyorum.
+
+83
+00:08:10,610 --> 00:08:15,610
+En temel farklılık, ikisinin arasında list view'la recycler view arasında
+
+84
+00:08:15,610 --> 00:08:22,610
+arkadaşınızın bahsettiği list view'ın bütün itemları aynı anda telefon üzerine
+
+85
+00:08:22,610 --> 00:08:28,610
+alması ve bunun yükleme sırasında belli bir bekletmeye sebebiyet vermesi.
+
+86
+00:08:28,610 --> 00:08:36,610
+Recycler view'da ise siz bin item'dan on tanesini gösteriyorsanız bir sonraki
+
+87
+00:08:36,610 --> 00:08:42,610
+on tanenin keşlenmesi, bir sonraki on taneninize henüz daha çekilmemiş olması anlamına
+
+88
+00:08:42,610 --> 00:08:44,610
+geliyor.
+
+89
+00:08:44,610 --> 00:08:48,610
+Bu noktada recycler view adından da belli.
+
+90
+00:08:48,610 --> 00:08:53,610
+Itemları aşağıya doğru ilerledikçe bazı itemlar ekranın görüntüsünden çıkıyor.
+
+91
+00:08:53,610 --> 00:08:59,610
+Bu item view'lar, yani ekranın artık görüntüsünde olmayan, sonraki view'lara
+
+92
+00:08:59,610 --> 00:09:05,610
+geçtiğiniz zaman tekrar kullanılabiliyor yeni gelen itemlar tarafından.
+
+93
+00:09:05,610 --> 00:09:08,610
+Temel farklılık burada oluşuyor.
+
+94
+00:09:08,610 --> 00:09:15,610
+Böylece işte recycling mantığını kullanarak bir eski item view'u aslında çöpe atmayıp
+
+95
+00:09:15,610 --> 00:09:19,610
+kaynak olarak doğrudan yeni gelen bir itemi onun içine yerleştiriyorsunuz.
+
+96
+00:09:19,610 --> 00:09:25,610
+Ve inanılmaz bir kaynak ve performans farkı yaşanıyor.
+
+97
+00:09:25,610 --> 00:09:32,610
+Bu konuda hem verinin görsel olarak kullanacağı ulaştırılmasına, user experience anlamında
+
+98
+00:09:32,610 --> 00:09:38,610
+hem de kaynak tüketimi anlamında, arka plandaki gerek, RAM'in kullanılması
+
+99
+00:09:38,610 --> 00:09:42,610
+gerekse, pilin tüketimi anlamında.
+
+100
+00:09:42,610 --> 00:09:48,610
+Şimdi, burada sadece tabii bu büyük farkı bahsettikten sonra sadece bu değil
+
+101
+00:09:48,610 --> 00:09:51,610
+onlardan bahsedeyim diğer detaylardan.
+
+102
+00:09:51,610 --> 00:09:56,610
+Bir kere view holder diye bir pattern var her ikisinin de kullanabildiği.
+
+103
+00:09:56,610 --> 00:10:01,610
+Ama recycler view'da view holder paternini kullanmak bir zorunluluk.
+
+104
+00:10:01,610 --> 00:10:04,610
+Bu bir opsiyon değil. List view'da bu bir opsiyon.
+
+105
+00:10:04,610 --> 00:10:09,610
+Peki view holder paternini list view'da kullanmakla kullanmamak arasında bir
+
+106
+00:10:09,610 --> 00:10:12,610
+opsiyonsa gerçekten bir fark var mı?
+
+107
+00:10:12,610 --> 00:10:13,610
+Evet.
+
+108
+00:10:13,610 --> 00:10:20,610
+Özellikle bu konuda yapılmış deney ve testlerin sonucu list view'un view holder
+
+109
+00:10:20,610 --> 00:10:26,610
+paterni kullanması durumunda önemli derecede recycler view'un
+
+110
+00:10:26,610 --> 00:10:30,610
+performansına yaklaştığı yönünde çıkarımlar var.
+
+111
+00:10:30,610 --> 00:10:34,610
+Hala recycler view daha iyi performans gösteriyor ama list view'da
+
+112
+00:10:34,610 --> 00:10:39,610
+temel sıkıntı bunun opsiyonel olması ve siz list view'ı standart yapısıyla
+
+113
+00:10:39,610 --> 00:10:46,610
+implement ederseniz view holder paterni kullanmazsanız ciddi derecede
+
+114
+00:10:46,610 --> 00:10:51,610
+kullanıcı memnuniyetsizliği ya da kaynak tüketimi ön plana çıkıyor.
+
+115
+00:10:51,610 --> 00:11:01,610
+İkincisi layout manager kavramı burada da list view tarafında size sadece
+
+116
+00:11:01,610 --> 00:11:10,610
+dikeyde bir view oluşturma şansı üretiyor ve bunun başka bir
+
+117
+00:11:10,610 --> 00:11:11,610
+opsiyonu yok.
+
+118
+00:11:11,610 --> 00:11:22,610
+Ama recycler view'da size hem yatayda bir liste oluşturmanız hem de bu
+
+119
+00:11:22,610 --> 00:11:28,610
+listeye oluştururken üç tane farklı layout kullanma opsiyonu sunuyor.
+
+120
+00:11:28,610 --> 00:11:29,610
+Nedir bu layoutlar?
+
+121
+00:11:29,610 --> 00:11:30,610
+Bilgisi olan var mı?
+
+122
+00:11:30,610 --> 00:11:41,139
+Recycler view'da size opsiyon olarak sunulan layoutlar nelerdir?
+
+123
+00:11:41,139 --> 00:11:46,139
+List view'da sadece dikeyde bir linear layout kullanma şansınız var.
+
+124
+00:11:46,139 --> 00:11:49,139
+Recycler view'da ne olabilir?
+
+125
+00:11:49,139 --> 00:11:50,139
+Ekran.
+
+126
+00:11:50,139 --> 00:11:53,139
+Relative layout var sanırım hocam.
+
+127
+00:11:53,139 --> 00:11:56,139
+Aslında relative layout değil.
+
+128
+00:11:56,139 --> 00:12:01,139
+Üç tane temelde layout imkanı sağlıyor size dikey ve yatayda.
+
+129
+00:12:01,139 --> 00:12:04,139
+Bir tanesi linear layout manager.
+
+130
+00:12:04,139 --> 00:12:07,139
+Bunu yatayda da size mümkün kılıyor.
+
+131
+00:12:08,139 --> 00:12:12,139
+İkincisi grid layout manager'ı kullanabiliyorsunuz.
+
+132
+00:12:12,139 --> 00:12:17,139
+Örneğin resimlere özellikle grid yapısı içerisinde galeri
+
+133
+00:12:17,139 --> 00:12:23,139
+uygulamalarında resimler arasında hızlı ilerlemek için güzel bir yapı.
+
+134
+00:12:23,139 --> 00:12:28,139
+Görsellere özellikle bu şekilde grid layout'la gösterme şansınız var.
+
+135
+00:12:28,139 --> 00:12:35,139
+Üçüncüsü de staggered layout manager dediğimiz bir başka manager'dan bahsediyoruz.
+
+136
+00:12:35,139 --> 00:12:39,139
+Staggered layout manager konusunda fikri olan var mı?
+
+137
+00:12:39,139 --> 00:12:41,139
+Daha önce duyan.
+
+138
+00:12:41,139 --> 00:12:49,799
+Pinterest kullananlarınız varsa en güzel örnek herhalde oradan olacaktır.
+
+139
+00:12:49,799 --> 00:12:56,799
+Oradaki bir data bin de olsun tile management yapısını da söyleyebiliriz.
+
+140
+00:12:56,799 --> 00:13:06,799
+İlgili gösterilen itemlerin farklı boyutlarda yatayda ve dikeyde konumlandırılması,
+
+141
+00:13:06,799 --> 00:13:10,799
+kiminin uzun bir dikdörtgen, kiminin yatayda bir uzun dikdörtgen,
+
+142
+00:13:10,799 --> 00:13:15,799
+kiminin kare, kiminin daha küçük, kiminin daha büyük olduğu bir layout yapısı.
+
+143
+00:13:15,799 --> 00:13:29,799
+Bu özellikle Windows'un da klasik VU'dan ayrıldığı Windows Phone hala çok kullanılmasa da
+
+144
+00:13:29,799 --> 00:13:39,799
+birkaç telefon üzerinde hatta geçen bir öğrencim Windows konusunda bir firmanın
+
+145
+00:13:39,799 --> 00:13:48,799
+mobile alanda uygulama geliştirmeye devam ettiğini ve iş bu konuda çalışabilecek
+
+146
+00:13:48,799 --> 00:13:52,799
+bir personel aradığını söyledi. Ben de şaşırdım hala devam ediyorum diye.
+
+147
+00:13:52,799 --> 00:13:57,799
+Özellikle Windows'un bu tarafta bir tile management yapısı var.
+
+148
+00:13:57,799 --> 00:14:00,799
+Ona çok yakın bir yapıyı uygulamanızda mümkün kılıyor.
+
+149
+00:14:00,799 --> 00:14:06,799
+Böylece Recycler VU aslında farklı görünümlerle kullanma şansına sahip oluyorsunuz.
+
+150
+00:14:06,799 --> 00:14:09,799
+Bu list view'dan en önemli farklarından bir tanesi de bu.
+
+151
+00:14:09,799 --> 00:14:15,799
+Tabii şimdi itemler var bu list view ve Recycler VU'da.
+
+152
+00:14:15,799 --> 00:14:22,799
+Bu itemleri siz hem dekore edebiliyorsunuz hem de animate edebiliyorsunuz.
+
+153
+00:14:22,799 --> 00:14:32,799
+Bu ikisi özellikle animasyon ve dekorasyon konusunda list view oldukça zayıf.
+
+154
+00:14:32,799 --> 00:14:43,799
+Bunu opsiyonel olarak sunmamasının ötesinde bu noktada size customize etme imkanı da vermiyor.
+
+155
+00:14:43,799 --> 00:14:54,799
+Ama Recycler VU tarafında item animator ve item decoration'la size çok farklı itemler tasarlamanız
+
+156
+00:14:54,799 --> 00:14:58,799
+ve anime etmeniz yönünde imkan sağlıyor.
+
+157
+00:14:58,799 --> 00:15:02,799
+Ancak bunun da tabii bir karmaşıklığı var.
+
+158
+00:15:02,799 --> 00:15:11,799
+Yani item animasyon ve dekorasyon işine girdiğinizde Recycler VU'da belli oranda biraz vesaire harcamanız gerekiyor.
+
+159
+00:15:11,799 --> 00:15:14,799
+İsterseniz kendi animasyonunuzu yaratabiliyorsunuz.
+
+160
+00:15:14,799 --> 00:15:20,799
+İsterseniz kendi dekorasyonunuzu tamamen baştan dizayn edebiliyorsunuz.
+
+161
+00:15:20,799 --> 00:15:31,799
+Ama list view tarafında birkaç standart gösterimin dışında itemlarla ilgili çok fazla bir bu tür değişiklik yapma şansınız yok.
+
+162
+00:15:31,799 --> 00:15:38,799
+On item touch listener özelliği var Recycler VU'da.
+
+163
+00:15:38,799 --> 00:15:46,799
+On click listener'da biraz daha farklı yetenekler veriyor size.
+
+164
+00:15:47,799 --> 00:15:54,799
+Bir tanesinde click işlemiyle tek tip bir yapı oluşturabiliyorken list view'da
+
+165
+00:15:54,799 --> 00:16:05,799
+touch işleminde birden fazla touch tipini destekleyen listener ile o item üzerinde yapacağınız aksiyonlar
+
+166
+00:16:05,799 --> 00:16:13,799
+size farklı aksiyonların farklı görevleri yerine getirmesini sağlayabiliyor.
+
+167
+00:16:13,799 --> 00:16:19,799
+Son olarak da tekrar hatırlatmak gerekirse Recycler VU özellikle yükleme sırasında
+
+168
+00:16:19,799 --> 00:16:24,799
+performans olarak list view'a göre çok daha iyi durumda.
+
+169
+00:16:24,799 --> 00:16:29,799
+Bunun ilk sebebinin view holder paterni kullanması olduğunu söylemiştik.
+
+170
+00:16:29,799 --> 00:16:37,799
+İkinci nokta da Recycler VU'da set has fixed size diye bir metod var.
+
+171
+00:16:37,799 --> 00:16:45,799
+Bu metodu eğer kullanırsanız o zaman performans daha da iyileşiyor.
+
+172
+00:16:45,799 --> 00:16:51,799
+Bu set has fixed size'ın yaptığı nedir diye sorsam.
+
+173
+00:16:51,799 --> 00:17:03,750
+Evet [öğrenci].
+
+174
+00:17:03,750 --> 00:17:07,750
+Bütün itemlerin aynı boyutta olması olabilir mi?
+
+175
+00:17:07,750 --> 00:17:13,750
+Bütün itemlerin aynı boyutta olması değil güzel bir şeydi tahminle ama değil.
+
+176
+00:17:13,750 --> 00:17:18,019
+Hocam function'ın ismi neydi?
+
+177
+00:17:18,019 --> 00:17:21,019
+Set has fixed size.
+
+178
+00:17:21,019 --> 00:17:38,390
+Sizin getireceğiniz datanın boyutu, itemlerin sayısı eğer belli ise
+
+179
+00:17:38,390 --> 00:17:45,390
+dünyadaki tüm ülkeleri ve ülkelerin içerisindeki şehirleri bitirmeyi planlıyorsunuz.
+
+180
+00:17:45,390 --> 00:17:49,390
+Bunun sayısı bellidir. Bu sürekli değişkenlik göstermez.
+
+181
+00:17:49,390 --> 00:17:55,390
+O zaman diyelim ki dünyada 200 ülke var, her ülkede 100 tane şehir var.
+
+182
+00:17:55,390 --> 00:18:01,390
+Kabaca söylersek 2020 bin tane bir item anlamına geliyor.
+
+183
+00:18:01,390 --> 00:18:07,390
+Siz bunun set has fixed size'ı kullanarak aslında daha fazla datanın
+
+184
+00:18:07,390 --> 00:18:13,390
+database'den çekilmeyeceğini ya da bu datanın değişkenlik göstermeyeceğini
+
+185
+00:18:13,390 --> 00:18:19,390
+her seferinde aynı miktarda datanın uygulamanızı taşıyacağını söylediğiniz için
+
+186
+00:18:19,390 --> 00:18:26,390
+preprocessing sırasında yapılan hazırlık bu boyuta göre oluyor.
+
+187
+00:18:26,390 --> 00:18:30,390
+Tabii ki 20 bin tane şehrin hepsi aynı anda gelmiyor RecyclerView'a.
+
+188
+00:18:30,390 --> 00:18:35,390
+Ama en fazla bu kadarlık bir boyut ve bu değişmeden gelebileceği
+
+189
+00:18:35,390 --> 00:18:44,390
+planlaması yapılır o için sizin RecyclerView'unuz o andaki atılan
+
+190
+00:18:44,390 --> 00:18:50,390
+query'nin durumuna göre pozisyonu almayacağı için, hep aynı pozisyonu alacağı için
+
+191
+00:18:50,390 --> 00:18:55,390
+daha iyi bir kaynak planlaması yapmış oluyor ve buna göre bir cash mekanizması
+
+192
+00:18:55,390 --> 00:19:02,390
+oluşturmuş oluyor her uygulamada bu ilgili View'u listelediğiniz zaman.
+
+193
+00:19:02,390 --> 00:19:09,390
+Bu da ekstra bir performans arttırıcı olarak karşımıza çıkıyor.
+
+194
+00:19:09,390 --> 00:19:19,390
+Şimdi gördüğünüz gibi biz RecyclerView yapısını genellikle kullanmayı tercih edeceğiz.
+
+195
+00:19:19,390 --> 00:19:22,390
+Ancak birkaç kaynakta da rastlayabilirsiniz.
+
+196
+00:19:22,390 --> 00:19:28,390
+Bu kadar övdüğümüz RecyclerView her an kullanılmalı mı sorusu.
+
+197
+00:19:28,390 --> 00:19:33,390
+Açıkçası hayır.
+
+198
+00:19:33,390 --> 00:19:44,390
+Çok basit, örneğin İstanbul gibi Ankara, İzmir, tüm Türkiye'nin şehirlerini göstermek istiyorsunuz.
+
+199
+00:19:44,390 --> 00:19:47,390
+Çok fazla bir animasyon ihtiyacınız yok.
+
+200
+00:19:47,390 --> 00:19:51,390
+Herhangi bir şekilde kompleks bir yapıda oluşturmayı düşünmüyorsunuz.
+
+201
+00:19:51,390 --> 00:19:54,390
+O zaman çok basit bir ListView ile bu işi halledebilirsiniz.
+
+202
+00:19:54,390 --> 00:19:57,390
+Yani ListView kullanmak hala aktif.
+
+203
+00:19:57,390 --> 00:20:03,390
+Burada önemli olan kritik nokta ViewHolder patternını kullanmanız, ListView'u implement ederken.
+
+204
+00:20:03,390 --> 00:20:10,390
+O zaman RecyclerView'un kompleks implementasyonunu da implement etmenize gerek kalmıyor.
+
+205
+00:20:10,390 --> 00:20:16,390
+Çok basit bir ListView yapısıyla şehirleri, Türkiye'deki şehirleri listelemiş oluyorsunuz.
+
+206
+00:20:16,390 --> 00:20:24,390
+Ya da buna benzer bir kurumdaki, üniversitedeki bölümdeki öğretim üyelerini göstereceksiniz.
+
+207
+00:20:24,390 --> 00:20:27,390
+Sadece isim bazında göstereceksiniz.
+
+208
+00:20:27,390 --> 00:20:30,390
+Başka herhangi bir item dekorasyonu, animasyonu yapmayı düşünüyorsunuz.
+
+209
+00:20:30,390 --> 00:20:36,390
+O zaman ListView'dan faydalanmak, ViewHolder patternını kullanarak size yeterli olacaktır.
+
+210
+00:20:36,390 --> 00:20:40,390
+Ve herhangi bir performans açısından önemli bir fark olmayacaktır.
+
+211
+00:20:40,390 --> 00:20:45,390
+Tam tersine daha basit ve daha hızlı implementasyon demek.
+
+212
+00:20:45,390 --> 00:20:47,390
+Evet, [öğrenci].
+
+213
+00:20:47,390 --> 00:20:54,390
+Hocam bu ListView ile RecyclerView ile alakalı slide gösteriyor musunuz?
+
+214
+00:20:54,390 --> 00:20:58,390
+Yok, göstermiyorum. Şimdi RecyclerView'u göstereceğim.
+
+215
+00:20:58,390 --> 00:21:03,390
+Tamamdır. Sanki yokmuş gibi diye düşündüm de.
+
+216
+00:21:03,390 --> 00:21:05,390
+Yok yok, haklısın. Doğru soruyu sorduğun iyi oldu.
+
+217
+00:21:05,390 --> 00:21:10,390
+Bir slide göstermiyorum. Bunları zaten arattığınızda her yerde bulabilirsiniz.
+
+218
+00:21:10,390 --> 00:21:13,390
+Sadece biraz konuşalım istedim.
+
+219
+00:21:13,390 --> 00:21:19,390
+Şimdi gelelim bir RecyclerView ile liste yaratmaya.
+
+220
+00:21:19,390 --> 00:21:25,390
+Tabii farklı View'lar içerisinde CardView da var. CardView yapısını da kullanabilirsiniz.
+
+221
+00:21:25,390 --> 00:21:33,390
+Burada gördüğünüz gibi soldaki ve sağdaki RecyclerView, bu itemlerin dizaynı farklı.
+
+222
+00:21:33,390 --> 00:21:41,390
+Soldakine baktığınız zaman solda farklı TextView'ların yaratıldığını görüyorsunuz.
+
+223
+00:21:41,390 --> 00:21:57,390
+Öte yandan bu TextView'un sağ tarafındaki küçük bir alanda bir dakika, ne kadarlık bir dakika önce geldiğini mesajını görüyorsunuz.
+
+224
+00:21:57,390 --> 00:22:08,390
+Onun ötesinde bir tane email'i beğenip beğenmediniz ya da daha sonra dikkatinizi çeksin diye bir yıldız işaretini görüyorsunuz.
+
+225
+00:22:08,390 --> 00:22:16,390
+Standart bir Inbox ait itemleri burada RecyclerView ile istediğiniz tasarımla item item görüntüleyebiliyorsunuz.
+
+226
+00:22:16,390 --> 00:22:28,390
+Size bu aradaki itemleri ayırmak için de dekorasyondan bahsetmiştim item dekorayışından RecyclerView bu anlamda daha farklı yöntemler sağlamış oluyor.
+
+227
+00:22:28,390 --> 00:22:37,390
+Bunun dışında CardView tarafı var. CardView tarafında resim ekleyebiliyorsunuz.
+
+228
+00:22:37,390 --> 00:22:50,390
+Bu resimlerin bulunduğu noktada isterseniz item içerisine resim koyabiliyorsunuz, isterseniz bir CardView içerisine resim ekleyebiliyorsunuz.
+
+229
+00:22:50,390 --> 00:22:57,390
+Yani illa CardView olmak zorunda değil. Bu noktada sizin tasarınıza birazcık bağlı.
+
+230
+00:22:57,390 --> 00:23:03,390
+Gelelim şimdi RecyclerView ile liste yaratma noktasına.
+
+231
+00:23:03,390 --> 00:23:13,390
+Burada biraz önce konuştuklarımızı temel olarak içeren bilgiler mevcut ama bir farklı nokta var ki orayı daha henüz konuşmadık.
+
+232
+00:23:13,390 --> 00:23:20,390
+O noktayı kim acaba tespit edecek ben sözü size bırakayım.
+
+233
+00:23:20,390 --> 00:23:31,390
+Burada bu RecyclerView'da olsa ListView'da olsa bir yapının mutlaka implement edilmesi gerekiyor. Nedir o?
+
+234
+00:23:31,390 --> 00:23:40,299
+Evet [öğrenci].
+
+235
+00:23:40,299 --> 00:23:42,299
+Adapter mı hocam?
+
+236
+00:23:42,299 --> 00:23:51,299
+Evet Adapter. Şimdi Adapter bize şunu sağlayacak biraz sonra kod üzerinde implement ederken de göreceksiniz.
+
+237
+00:23:51,299 --> 00:24:01,299
+Bir tarafta ListView, RecyclerView yani itemlerinizin olduğu ön yüz var, view'unuz var. Bir tarafta data source'unuz var.
+
+238
+00:24:01,299 --> 00:24:11,299
+İşte Adapter data source'unuzla view'unuz arasındaki verinin akışını sağlayan parça.
+
+239
+00:24:11,299 --> 00:24:22,299
+O yüzden mutlaka view holder'ınızın bir Adapter tarafından yönetilmesi gerekiyor ki burada RecyclerView Adapter'ını kullanıyor olacağız.
+
+240
+00:24:22,299 --> 00:24:28,299
+Bu Adapter'ın sizin tarafınızdan ekstend edilerek yazılması gerekiyor ekran.
+
+241
+00:24:28,299 --> 00:24:35,299
+Hocam dizayn patronlardan bahsederken gördüğümüz controller bu mu oluyor Adapter?
+
+242
+00:24:35,299 --> 00:24:52,299
+Yok şimdi o farklı bir yapı. Şimdi oradaki controller'ın amacı view yani ön yüz ile arka plandaki data modelinin bağlantısını sağlayan tüm işlerin yapıldığı kodlara verilen controller.
+
+243
+00:24:52,299 --> 00:25:07,299
+Yani işte diyelim ki siz arka plandan ne olsun ilgili işte sınav sorularını çekeceksiniz. Bu sınav sorularını çekmek için sunucuya bağlanıyorsunuz.
+
+244
+00:25:07,299 --> 00:25:16,299
+Bu sunucuya bağlandığınızdaki sorular geldikten sonra onların üzerinde yaptığınız bütün işlem controller'ın tarafında.
+
+245
+00:25:16,299 --> 00:25:20,299
+Artı bunun ön yüze aktarılması da controller'ın görevi.
+
+246
+00:25:20,299 --> 00:25:31,299
+Bütün oradaki kodlarla ilgili sorularla ilgili yaptığınız işlemlerin aslında controller üzerinde gerçekleştiğini söyleyemiz.
+
+247
+00:25:31,299 --> 00:25:45,299
+Adapter'da ise tamamen RecyclerView ve ListView'e özel bize bir verinin ne denir oluşturulmasını sağlıyor. Şimdi onu da göreceğiz.
+
+248
+00:25:45,299 --> 00:25:57,240
+Şimdi devam edelim. Bir RecyclerView. Şu anda bir tane aktiviteniz var.
+
+249
+00:25:57,240 --> 00:26:06,240
+Bu aktivitenizin içerisinde XML kodu içerisinde bir tane RecyclerView oluşturuyorsunuz.
+
+250
+00:26:06,240 --> 00:26:16,240
+Bu RecyclerView, şurada görmüş olduğunuz Android support veya 7 widget RecyclerView daha önce nasıl TextView oluşturuyorsanız,
+
+251
+00:26:16,240 --> 00:26:26,240
+işte buton oluşturuyorsanız aynı bu şekilde komple bir aktivitenin kıyafeti olarak bir RecyclerView yapısını oluşturuyorsunuz.
+
+252
+00:26:26,240 --> 00:26:32,240
+Bu sizin listeyi göstereceğiniz ekranınızın egzemeli.
+
+253
+00:26:32,240 --> 00:26:44,240
+Tabii ki bu unutmamanız gereken şey de Dependencies'ler bölümüne com.android-support-recycler-view-version-7 versiyonunu eklemeniz.
+
+254
+00:26:44,240 --> 00:26:48,240
+Mutlaka bu uyarıyı alacaksınız eğer eklemezsiniz.
+
+255
+00:26:48,240 --> 00:26:55,240
+Şimdi sol taraftaki kodun ilgili listenin kıyafeti olduğunu söyledik.
+
+256
+00:26:55,240 --> 00:27:01,240
+Gelelim bizim ilgili listemizi gösterecek olan aktiviteye.
+
+257
+00:27:01,240 --> 00:27:08,240
+Burada bir MyActivity tanımladık. Bir tane doğal olarak RecyclerView komponenti tanımladık.
+
+258
+00:27:08,240 --> 00:27:12,240
+Bir tane adaptör tanımladık. Bir tane de layout manager tanımladık.
+
+259
+00:27:12,240 --> 00:27:17,240
+Bunların üçüne de ihtiyaç duyuyoruz RecyclerView'u implement edebilme kadar.
+
+260
+00:27:17,240 --> 00:27:23,240
+Şimdi onCreate'e girdikten sonra SetContentView ile kıyafetin giyilmesini sağladık.
+
+261
+00:27:23,240 --> 00:27:33,240
+Yani sol tarafta gördüğünüz RecyclerView UI komponenti artık bu aktivite ile ilişkilendirilmiş oldu.
+
+262
+00:27:33,240 --> 00:27:45,240
+Hemen arkasından da nasıl TextView butonu, image butonu, edit texti, Java kodundaki bir değişkenle ilişkilendiriyorduk.
+
+263
+00:27:45,240 --> 00:27:50,240
+Buradaki RecyclerView isim değişkenimizi de FindViewById ile,
+
+264
+00:27:50,240 --> 00:27:59,240
+XML tarafındaki ilişkilendirilmiş olduk.
+
+265
+00:27:59,240 --> 00:28:02,240
+Aynı UI komponentleri ilişkilendirdiğimiz gibi.
+
+266
+00:28:02,240 --> 00:28:09,240
+Şimdi burada bu contentin değişikliği ile ilgili bir durum söz konusu değilse,
+
+267
+00:28:09,240 --> 00:28:15,240
+SetHasFixSizeTrue olarak set edebilirsiniz olarak bilgi veriyor.
+
+268
+00:28:15,240 --> 00:28:21,240
+Bunu daha önce konuşmuştuk. Eğer bilgi akışında her seferinde bir değişiklik olmayacaksa bunu true yapıyorsunuz.
+
+269
+00:28:21,240 --> 00:28:25,240
+Sonra da bir tane layout manager tanımlıyorsunuz.
+
+270
+00:28:25,240 --> 00:28:29,240
+Bu layout manager'niz burada linear layout manager olarak tanımlanmış.
+
+271
+00:28:29,240 --> 00:28:35,240
+Burada söylediğim gibi grid layout ya da staggered layout manager tanımlayabilirsiniz.
+
+272
+00:28:35,240 --> 00:28:49,240
+Yaptığınız şey RecyclerView.setLayoutManager diyerek RecyclerView'un hangi layout manager ile oluşturulacağını söylemiş oluyorsunuz.
+
+273
+00:28:49,240 --> 00:28:54,240
+Bu noktayı da bu şekilde tamamlamış oluyoruz.
+
+274
+00:28:54,240 --> 00:28:57,240
+Şimdi gelelim adapter noktasına.
+
+275
+00:28:57,240 --> 00:29:09,240
+Bizim bu RecyclerView'un bilgileri data source'tan aldıktan sonra organize edecek bir adaptöre ihtiyacı var.
+
+276
+00:29:09,240 --> 00:29:22,240
+İşte ilk adaptör tanımlamasını burada sizin biraz sonra kodunu göreceğiniz aşağıdaki slide'da MyAdapter isimli aşağıda yazılan kod ile yeni bir instance yaratıyoruz.
+
+277
+00:29:22,240 --> 00:29:25,240
+Ve buraya ilgili data setimizi pass ediyoruz.
+
+278
+00:29:25,240 --> 00:29:31,240
+Böylece adaptörümüz hangi data source'dan besleneceğini buradaki MyDataSet ile öğrenmiş oluyor.
+
+279
+00:29:31,240 --> 00:29:40,240
+Ve arkasından RecyclerView.setAdapter diyerek de burada yarattığımız adaptörü RecyclerView'a pass diyoruz.
+
+280
+00:29:40,240 --> 00:29:52,240
+Böylece artık data source'umuzla görsel taraftaki RecyclerView arasındaki bağlantıyı sağlayacak adaptörü tamamlamayı da tanımlamış oluyoruz.
+
+281
+00:29:52,240 --> 00:30:00,240
+Burası MyActivity'nin olduğu Java kodu. Şu anda bütün hazırlıklarımız tamam.
+
+282
+00:30:00,240 --> 00:30:05,240
+Eksik olan ne? Adaptörümüz eksik. Şimdi adaptörümüzü yazmamız lazım.
+
+283
+00:30:05,240 --> 00:30:10,099
+Gelelim adaptör kısmına.
+
+284
+00:30:10,099 --> 00:30:18,730
+Şimdi bir kere adaptörünüzü yaratırken Raviyan'ın bir sorusu olacak herhalde.
+
+285
+00:30:18,730 --> 00:30:23,730
+Hocam ben şey soracaktım. Birkaç önceki slide'da şey demiştik.
+
+286
+00:30:23,730 --> 00:30:28,730
+Weaveholder'a birkaç farklı Weaveholder tanımlayabiliyoruz gibi bir şey yazıyordu.
+
+287
+00:30:28,730 --> 00:30:35,730
+Bu şey mi anlamına geliyor? Mesela bir ListItem'ın butonu yoktur, başka bir ListItem'ın butonu vardır.
+
+288
+00:30:35,730 --> 00:30:40,730
+İkisi farklı Weaveholder çeşididir gibi mi anlamalıyız?
+
+289
+00:30:40,730 --> 00:30:43,730
+Hangisi? Buradaki cümle söyleyebilir misin?
+
+290
+00:30:43,730 --> 00:30:54,039
+RecycledWeaveCreates only as many Weaveholders as are needed to display on screen portion.
+
+291
+00:30:54,039 --> 00:30:58,039
+Şurası değil mi? Evet.
+
+292
+00:30:58,039 --> 00:31:04,039
+Burada kastedilen ListItem aslında. Ben yanlış anlamış da olabilirim.
+
+293
+00:31:04,039 --> 00:31:09,039
+Şimdi bir kere hemen bu sorunun cevabını vermek için aşağıdaki kod parçasına geliyorum.
+
+294
+00:31:09,039 --> 00:31:15,039
+Burada sizin bir tane Weaveholder yarattığınız şu parlama bunu tıkladığımda iyi gözükmüyor.
+
+295
+00:31:15,039 --> 00:31:24,039
+MyAdapter nokta ortada yer alan MyWeaveholder, ownCreativeWeaveholder isimli bir tane sizin metodunuz var.
+
+296
+00:31:24,039 --> 00:31:34,039
+Buradaki kritik nokta sizin şurada publicMyWeaveholder dediğimiz noktada
+
+297
+00:31:34,039 --> 00:31:44,039
+yaratacağınız item'ın içerisinde yer alacak olan parçalar senin de bahsettiğin gibi farklı item dizaynlarına sahip olabiliriz.
+
+298
+00:31:44,039 --> 00:31:50,039
+Örneğin bir item'da bir resim, iki TextView bir buton yer alabilir.
+
+299
+00:31:50,039 --> 00:31:53,039
+Bir item'da sadece bir tane TextView yer alabilir.
+
+300
+00:31:53,039 --> 00:32:00,039
+Burada sizin Weaveholder'ınızda bunun organizasyonu yapmanız bekleniyor.
+
+301
+00:32:00,039 --> 00:32:04,039
+O yüzden de yukarı çıkacak olursak buradaki ifade de
+
+302
+00:32:04,039 --> 00:32:12,039
+Creates only as many Weaveholders as are needed to display on the screen portion of the dynamic content dediğimiz kısım şuna denk getiriyor.
+
+303
+00:32:12,039 --> 00:32:22,039
+Sizin bu ürettiğiniz item'le bağlı olarak Weaveholder'dan gelen objeler
+
+304
+00:32:23,039 --> 00:32:32,039
+O anda RecyclerView'da kaç tane item üretilmesi gerekiyorsa o kadar Weaveholder oluşturulması anlamına geliyor.
+
+305
+00:32:32,039 --> 00:32:41,039
+Zaten o Weaveholders dinamik oluşturulduktan sonra scroll ettiğinizde bazı item'lar yukarı kayıyor.
+
+306
+00:32:41,039 --> 00:32:51,039
+Bazı item'lar da aşağıdan yukarı doğru hareket ettiği için yeni gelen item'lar eski item'ların bıraktığı Weaveholder'ları kullanmaya başlıyor.
+
+307
+00:32:51,039 --> 00:32:57,180
+Temel prensip bunun dinamik bir şekilde gerçekleştiğini söylemek.
+
+308
+00:32:57,180 --> 00:33:00,180
+Şimdi gelelim biz bu kodu üzerine tek tek ilerlemeye.
+
+309
+00:33:00,180 --> 00:33:11,180
+Öncelikle birincisi bizim adaptörümüz RecyclerView adaptörü extend ediyor ve burada da kullanacağımız yapı MyWeaveholder yapısı.
+
+310
+00:33:11,180 --> 00:33:19,180
+Bu MyWeaveholder yapısını da RecyclerView'un Weaveholder yapısını extend ederek oluşturuyoruz.
+
+311
+00:33:19,180 --> 00:33:22,180
+Yani bu bize ait bir Weaveholder.
+
+312
+00:33:22,180 --> 00:33:24,180
+Burada bir tek TextView konulmuş.
+
+313
+00:33:24,180 --> 00:33:38,180
+Yani her bir item'da sadece bir ifade olduğunu varsayın ve bu TextView'u tanımlayarak işte gelen TextView ulaşan Weave yapısını ilgili TextView item'ını assign ediyoruz.
+
+314
+00:33:38,180 --> 00:33:39,180
+Bu bu kadar basit.
+
+315
+00:33:39,180 --> 00:33:45,180
+Biraz sonra göreceğimiz kodda çok daha kapsamlı bir Weaveholder tasarladığımızı göreceksiniz.
+
+316
+00:33:45,180 --> 00:33:51,180
+Öte yandan MyAdapter'a aktarılan bir data source var.
+
+317
+00:33:51,180 --> 00:33:57,180
+Buradaki ismi MyDataset ve ilgili string bilgilerden oluşan işte burada bahsettik şehir isimleri olabilir.
+
+318
+00:33:57,180 --> 00:34:10,179
+Bu 81 tane Türkiye'deki şehrin ismi MyDataset üzerinden adapterın buradaki string olarak tanımlanmış mDataset'e aktarımı gerçekleştiriliyor.
+
+319
+00:34:10,179 --> 00:34:14,179
+Sonra gelelim üç tane kritik fonksiyona.
+
+320
+00:34:14,179 --> 00:34:21,179
+OnCreateWeaveHolder, OnBindWeaveHolder ve GetItemCount.
+
+321
+00:34:21,179 --> 00:34:24,179
+Şimdi OnCreateWeaveHolder'ın görevi nedir?
+
+322
+00:34:24,179 --> 00:34:28,179
+Şöyle bir baktığınızda ne yapıyor? Söyleyebilir misiniz?
+
+323
+00:34:28,179 --> 00:34:55,239
+Evet [öğrenci].
+
+324
+00:34:55,239 --> 00:35:02,239
+Hocam Layout Manager'ı kullanarak ya da çağırarak oluşturduğumuz işte yeni Weav'ları döndürüyoruz burada.
+
+325
+00:35:02,239 --> 00:35:08,239
+Çağırarak oluşturduğumuz yeni Weav'ları derken onu biraz daha açabilir misin?
+
+326
+00:35:08,239 --> 00:35:14,239
+Şurada metod parametre olarak WeavGroupParent demiş.
+
+327
+00:35:14,239 --> 00:35:18,239
+Aşağıda da döndürmüşüz de şu ortadakine bakıyorum.
+
+328
+00:35:18,239 --> 00:35:24,840
+GetContext yeni bir Weav Group oluşturuyor.
+
+329
+00:35:24,840 --> 00:35:30,840
+Yani aslında bu ne yapıyor biliyor musun? Bu her seferinde bir item üretiyor.
+
+330
+00:35:30,840 --> 00:35:32,840
+He anladım evet.
+
+331
+00:35:32,840 --> 00:35:38,840
+Bu kodun amacı her bir item için bir WeaveHolder üretilmesi.
+
+332
+00:35:38,840 --> 00:35:41,840
+Üretimi yapan metod nedir?
+
+333
+00:35:41,840 --> 00:35:47,840
+LayoutInflator.From.Inflate metodu.
+
+334
+00:35:47,840 --> 00:35:53,840
+Inflate her turda size bir tane item üretiyor.
+
+335
+00:35:53,840 --> 00:35:56,840
+Bir tane yeni bir item'ın görüntüsünü üretiyor.
+
+336
+00:35:56,840 --> 00:36:02,840
+Peki item'ın görüntüsünün dış kıyafeti burada neyle temsil ediliyor?
+
+337
+00:36:02,840 --> 00:36:07,840
+Hangi parçayla temsil ediyor?
+
+338
+00:36:07,840 --> 00:36:10,840
+OurLayout.MyTextView kısmında.
+
+339
+00:36:10,840 --> 00:36:18,840
+Evet aynen öyle. Demek ki sizin itemlarınız için aynı RecyclerWeave'de olduğu gibi bir tane XML dosyası oluşturmanız gerekiyor.
+
+340
+00:36:19,840 --> 00:36:24,840
+Item'larınızın dizaynına bağlı olarak sadece bir tane TextView'de olabilir.
+
+341
+00:36:24,840 --> 00:36:28,840
+İşte bir resim bir buton bir TextView'de olabilir.
+
+342
+00:36:28,840 --> 00:36:31,840
+Bunlar farklı şekillerde pozisyonlandırılmış olabilir.
+
+343
+00:36:31,840 --> 00:36:43,840
+Yani bir önceki şuradaki yapıya bakarsanız burada bir tane item'da bir iki üç tane alt altta konumlandırılmış TextView'lar görüyorsunuz.
+
+344
+00:36:43,840 --> 00:36:49,840
+Sağ tarafta bir tane TextView 15 minute yazan altında da bir tane image görüyorsunuz.
+
+345
+00:36:49,840 --> 00:36:56,840
+Yani üç tane TextView din ayarlaya atlığa arka arkaya yerleştirilmiş.
+
+346
+00:36:56,840 --> 00:37:11,840
+Horizontalı bir şekilde iki tane item birincisi TextView UI kompanat diğeri de image yine vertical'ı pozisyonlandırılmış.
+
+347
+00:37:11,840 --> 00:37:15,840
+Bu iki grupta horizontal olarak konumlandırılmış.
+
+348
+00:37:15,840 --> 00:37:19,840
+Toplamda beş tane UI kompanat bir item içerisinde dizayn edilmiş.
+
+349
+00:37:19,840 --> 00:37:29,840
+Bu item'ın XML kodunu oluşturmanız gerekiyor ki o XML kod da burada görmüş olduğunuz r.layout.myTextView.
+
+350
+00:37:29,840 --> 00:37:52,840
+Sonra oluşturduğunuz bu View'u MyViewHolder objesine pas ediyorsunuz ve yukarıda gördüğünüz MyViewHolder sınıfı da bu ilgili TextView alarak sizin oluşturduğunuz item'a ait görseli create ediyor.
+
+351
+00:37:52,840 --> 00:37:57,840
+Şimdi bu fonksiyon bittikten sonra yapılması gereken bir iş daha var.
+
+352
+00:37:57,840 --> 00:37:58,840
+Nedir o iş?
+
+353
+00:37:58,840 --> 00:38:24,969
+Yani artık item'ı yarattık ama evet bir sonraki metot onBindViewHolder ekram.
+
+354
+00:38:24,969 --> 00:38:28,760
+Yani veriyi içine set ediyor.
+
+355
+00:38:28,760 --> 00:38:30,760
+Evet tek yaptığı şey.
+
+356
+00:38:30,760 --> 00:38:39,760
+Oluşturduğumuz View'un içerisinde bizim data source'umuzdan getirdiğimiz veriyi her item'ın pozisyonuna göre tabii ki.
+
+357
+00:38:39,760 --> 00:38:41,760
+O yüzden position bilgisini aktarıyoruz.
+
+358
+00:38:41,760 --> 00:38:49,760
+İlk item gelen source'dan gelen ilk verinin içeriğini alacak şekilde pozisyonlanmış oluyor.
+
+359
+00:38:49,760 --> 00:38:57,760
+Böylece tüm item'larınızın görsel olarak içeriği bu noktada data source üzerinden doldurulmuş oluyor.
+
+360
+00:38:57,760 --> 00:39:09,760
+Son metotta getItemCount bu da data setimizin uzunluğunu alarak ne kadarlık bir veri sahibi olduğunuz,
+
+361
+00:39:09,760 --> 00:39:20,760
+kaç tane item yükleyeceğiniz bilgisini ilgili metotları ve sınıfların kullanması için mutlaka yaratılması gereken bir diğer metot.
+
+362
+00:39:20,760 --> 00:39:21,760
+Evet ekram.
+
+363
+00:39:21,760 --> 00:39:31,289
+Hocam bu onCreate ViewHolder'ın içerisinde farklı farklı tiplerde yapılar oluşturmak istesem ben bunu nasıl tutacağım?
+
+364
+00:39:31,289 --> 00:39:43,289
+Mesela ilk ikisi atıyorum, başlık bari şeyler olsun, geriye kalan elemanlar daha farklı olsun, daha farklı team view'lar döndürsün.
+
+365
+00:39:43,289 --> 00:39:46,289
+Text view değil de mesela orada image view döndürsün.
+
+366
+00:39:46,289 --> 00:39:48,289
+Bunu nasıl yapabilirim?
+
+367
+00:39:48,289 --> 00:39:52,289
+İki tane farklı recycler view koyabilirsin eğer buna ihtiyaç duyuyorsan.
+
+368
+00:39:52,289 --> 00:39:58,289
+Çünkü bu noktada başlıksa eğer bu bir item değildir.
+
+369
+00:39:58,289 --> 00:40:01,289
+Doğru değil mi? Yanlış düşünüyorum.
+
+370
+00:40:01,289 --> 00:40:10,289
+Yani bütün aynı recycler view'ın içerisinde olacaksa data tiplerinin hepsinin aynı olması gerekiyor.
+
+371
+00:40:10,289 --> 00:40:14,289
+Data değil de aslında nasıl komponentleri mi diyeyim?
+
+372
+00:40:14,289 --> 00:40:20,289
+Komponent diyelim, item diyelim. Bunların farklı tipte olmasına bir örnek verebilir misin?
+
+373
+00:40:20,289 --> 00:40:22,289
+Mesela nerede bunu kullanabiliriz?
+
+374
+00:40:22,289 --> 00:40:30,289
+Yani ilk 32 şehir farklı görünümde, sonraki 30 şehir farklı görünümde mi gelecek?
+
+375
+00:40:30,289 --> 00:40:40,869
+Yani şu an aklıma belli bir şey gelmiyor aslında ama bilmiyorum.
+
+376
+00:40:40,869 --> 00:40:46,869
+Farklı bir yerde list view kullanırken, flotter'da list view falan kullanırken mesela farklı widgetler koyabiliyordum içerisinde.
+
+377
+00:40:46,869 --> 00:40:50,869
+O yüzden bana biraz yabancı geldi.
+
+378
+00:40:50,869 --> 00:40:53,869
+Ama koyabiliyorsan bir örneğin de var demektir mesela.
+
+379
+00:40:53,869 --> 00:40:56,869
+Bana bir örnek ver, ne için koyma gereği istedim.
+
+380
+00:40:56,869 --> 00:40:58,869
+Şu an aklıma hiç bir şey gelmedi.
+
+381
+00:40:58,869 --> 00:41:02,869
+Tamam birazcık o zaman ilerleyen dakikalarda aklına gelirse lütfen paylaş.
+
+382
+00:41:02,869 --> 00:41:05,869
+Ben de ona göre sorunu cevaplamaya çalışayım.
+
+383
+00:41:05,869 --> 00:41:07,869
+Tamam.
+
+384
+00:41:07,869 --> 00:41:14,869
+Evet şimdi bu çok genel adaptörün üzerindeki yapı üzerinden geçtik.
+
+385
+00:41:14,869 --> 00:41:19,869
+Bir adaptörün bir konstraktora ihtiyacı var, mutlaka bir view holder'a ihtiyacı var.
+
+386
+00:41:19,869 --> 00:41:22,869
+On create view holder, on bind view holder.
+
+387
+00:41:22,869 --> 00:41:31,869
+Biri item'ın görünümünü ve ne diyelim fiziksel olarak üretiminden sorumlu.
+
+388
+00:41:31,869 --> 00:41:34,869
+Diğeri ise bunun içindeki data'yı doldurmaktan sorumlu.
+
+389
+00:41:34,869 --> 00:41:41,869
+Son olarak da ilgili beslediğimiz kaynaktaki veri miktarı ne kadar olacak?
+
+390
+00:41:41,869 --> 00:41:45,869
+Onu döndüren bir tane metodumuz var get item count.
+
+391
+00:41:45,869 --> 00:41:50,869
+Bunlar standart spesifik olması gereken adaptörün tarçaları.
+
+392
+00:41:50,869 --> 00:41:54,869
+Ama esas bizimle kod üzerinde bunu göreceğiz.
+
+393
+00:41:54,869 --> 00:41:56,869
+Ama saat 14.47 oldu.
+
+394
+00:41:56,869 --> 00:55:56,000
+Saat 3'te kaldığımız yerden devam edelim.
+
+395
+00:55:56,000 --> 00:55:58,000
+Ftn'den merhaba arkadaşlar.
+
+396
+00:55:58,000 --> 00:56:00,000
+Kaldığımız yerden devam edelim.
+
+397
+00:56:00,000 --> 00:56:09,000
+Sizinle kod üzerinden bu konuştuğumuz bilgileri bir proje üzerinden anlatarak devam edeceğim.
+
+398
+00:56:09,000 --> 00:56:15,000
+Öncelikle ekranı paylaşıyorum, tüm ekranı.
+
+399
+00:56:15,000 --> 00:56:23,000
+Burada hem Android Studio'yu göreceksiniz hem de ilgili emülatörü göreceksiniz.
+
+400
+00:56:23,000 --> 00:56:36,199
+Evet, ekran.
+
+401
+00:56:36,199 --> 00:56:39,199
+Hocam örnek bulabildim sorduğum şeye de.
+
+402
+00:56:40,199 --> 00:56:46,199
+Diyelim ki bir tane mail uygulaması tasarlıyorum ve gıcık bir developer'ım.
+
+403
+00:56:46,199 --> 00:56:51,199
+Arada banner reklamlar çıkmasını istiyorum böyle 10 tane mail gördükten sonra.
+
+404
+00:56:51,199 --> 00:56:54,199
+11.si banner reklam mesela.
+
+405
+00:56:54,199 --> 00:56:57,199
+Ama bu da hani hep aynı şekilde tekrar etmeyecek.
+
+406
+00:56:57,199 --> 00:56:59,199
+Sürekli 10 tane mail.
+
+407
+00:56:59,199 --> 00:57:01,199
+O da bir item şeklinde bir arada olsun istiyorsun.
+
+408
+00:57:01,199 --> 00:57:02,199
+Evet.
+
+409
+00:57:02,199 --> 00:57:04,199
+Yani bu şekilde yapabilir miyim?
+
+410
+00:57:04,199 --> 00:57:07,199
+Gene ayrı ayrı recycle ve recycle var mı kullanmalıyım?
+
+411
+00:57:07,199 --> 00:57:19,199
+Öyle bir noktada senin scroll ederken ayrı bir item view çıkarma olayında ayrı bir recycle view kullanmak çok gerçekçi olmaz.
+
+412
+00:57:19,199 --> 00:57:23,199
+Onun için ayrı bir tasarım üretmen lazım.
+
+413
+00:57:23,199 --> 00:57:33,199
+Bunun için de arka planda yazacağın kodla gelecek itemın sırasına göre farklı bir item tipi inflate edebilirsin.
+
+414
+00:57:33,199 --> 00:57:35,199
+Bunu yapma şansın var.
+
+415
+00:57:35,199 --> 00:57:38,199
+Sadece bunun order'ını belirlemem lazım.
+
+416
+00:57:38,199 --> 00:57:46,199
+Orada çünkü kodun içerisinde de gelen değişkenler arasında view type diye bir integer vardı sanırım.
+
+417
+00:57:46,199 --> 00:57:49,199
+Onu hiç bahsetmedik ondan sordum aslında.
+
+418
+00:57:49,199 --> 00:57:52,199
+Şimdi tabi şimdi bu örnek üzerinde o söylediğim soruyu daha net konuşuyorum.
+
+419
+00:57:52,199 --> 00:57:55,199
+Şimdi biraz daha kafamda Candan'da söylediği şey.
+
+420
+00:57:55,199 --> 00:57:57,199
+Onun cevabını da kodu anlatırken vereyim o zaman.
+
+421
+00:57:57,199 --> 00:57:58,199
+Tamam.
+
+422
+00:57:58,199 --> 00:58:01,199
+Teşekkür ediyorum örnek için.
+
+423
+00:58:01,199 --> 00:58:05,199
+Şimdi arkadaşlar Emulator'u görebiliyor musunuz?
+
+424
+00:58:05,199 --> 00:58:09,380
+Hocam hiçbir şey göremiyoruz.
+
+425
+00:58:09,380 --> 00:58:11,380
+Hiçbir şey göremiyorsunuz.
+
+426
+00:58:11,380 --> 00:58:15,380
+Ekran paylaşımı kapalı gözüküyor hocam şu an.
+
+427
+00:58:15,380 --> 00:58:17,380
+Hemen bakalım.
+
+428
+00:58:17,380 --> 00:58:33,309
+Biraz önce share yaptım ama bir kez daha.
+
+429
+00:58:33,309 --> 00:58:35,309
+Şu an görebiliyor musunuz?
+
+430
+00:58:35,309 --> 00:58:37,309
+Şimdi geldi hocam.
+
+431
+00:58:37,309 --> 00:58:39,309
+Teşekkür ederim demek ki ufak bir sorun olmuş.
+
+432
+00:58:39,309 --> 00:58:46,309
+Şimdi Emulator'u gördüğünüze göre Emulator üzerinde kullanıcıların listesi var.
+
+433
+00:58:46,309 --> 00:58:50,309
+Şu anda sistemde kayıtlı kullanıcıların listesini görüyorsunuz.
+
+434
+00:58:50,309 --> 00:58:56,309
+Aşağı doğru hareket ettirdiğinizde yukarı doğru hareket ettirdiğinizde ilgili item'leri görebiliyorsunuz.
+
+435
+00:58:56,309 --> 00:59:03,309
+Tabi şimdi Emulator orada için biraz mouse hareketinde de zaman zaman takılmalar yaşıyoruz.
+
+436
+00:59:04,309 --> 00:59:17,309
+Sonuçta bu Emulator üzerindeki gördüğünüz RecyclerView yapısı implement edilmiş bu itemlarda hangi UI komponentler var diye sorayım size.
+
+437
+00:59:17,309 --> 00:59:24,719
+Farklı bir kişi olsun lütfen.
+
+438
+00:59:24,719 --> 00:59:32,420
+[öğrenci].
+
+439
+00:59:32,420 --> 00:59:37,420
+Ben birkaç tane TextView var. Bir button görüyorum.
+
+440
+00:59:37,420 --> 00:59:39,420
+Bir de Image var.
+
+441
+00:59:39,420 --> 00:59:41,420
+Evet bir de Image.
+
+442
+00:59:41,420 --> 00:59:43,420
+ImageView var.
+
+443
+00:59:44,420 --> 00:59:48,420
+Yani TextView button bir de resim görüyorum.
+
+444
+00:59:48,420 --> 00:59:50,420
+Evet işte ImageView.
+
+445
+00:59:50,420 --> 00:59:51,420
+Evet.
+
+446
+00:59:51,420 --> 00:59:58,420
+Tamam. Şimdi butona bastığınız zaman gördüğünüz gibi gizli butonuna bastığınız zaman item üzerinde aksiyon yapabiliyorsunuz.
+
+447
+00:59:58,420 --> 01:00:01,420
+Şifreyi gizleyebiliyorsunuz.
+
+448
+01:00:01,420 --> 01:00:04,420
+Göster dediğinizi tekrar gösterebiliyorsunuz.
+
+449
+01:00:04,420 --> 01:00:21,420
+Şimdi sizin de tasarlayacağınız yapıda bugün itibariyle soruları oluşturduğunuz soruları itemlar şeklinde göstermenizi isteyeceğim bir RecyclerView içerisinde.
+
+450
+01:00:21,420 --> 01:00:25,420
+Ve buraya çeşitli butonlar eklemenizi isteyeceğim.
+
+451
+01:00:25,420 --> 01:00:32,420
+Bir tanesi butona tıkladığımızda soruyu update edebilmeniz için gerekli aksiyonu üretecek.
+
+452
+01:00:32,420 --> 01:00:39,420
+Diğeri de soruyu silmek istediğinizde bir sil butonu koyarak soruyu silebiliyor olacaksınız.
+
+453
+01:00:39,420 --> 01:00:45,420
+Hem RecyclerView'dan hem de ilgili data source'muzdan.
+
+454
+01:00:45,420 --> 01:00:47,420
+Ama o detaya biraz sonra geleceğiz.
+
+455
+01:00:47,420 --> 01:00:51,420
+Öncelikle biz burada yapılmış olan seçenek üzerinden ilerleyelim.
+
+456
+01:00:51,420 --> 01:00:55,420
+Burada birincisi RecyclerView Activity'mi açıyorum.
+
+457
+01:00:55,420 --> 01:01:00,420
+Bir de aşağıda bu Activity'ye ait olan egzemeli'mi açıyorum.
+
+458
+01:01:00,420 --> 01:01:05,300
+Şimdi şunu kapatalım.
+
+459
+01:01:05,300 --> 01:01:15,300
+Burada bu RecyclerView içerisindeki Activity'deki egzemeli görsem dediğiniz zaman ne görüyorsunuz?
+
+460
+01:01:15,300 --> 01:01:30,119
+Farklı olarak. Biraz önceki örnekten. Ekran.
+
+461
+01:01:30,119 --> 01:01:35,119
+Yani yine Erle Yad kullanmışız hocam. Daha önce kullandığımız egzemelerden farklı.
+
+462
+01:01:35,119 --> 01:01:38,119
+Evet. Şimdi bunu söyleme sebebim şu.
+
+463
+01:01:38,119 --> 01:01:42,119
+Burada sadece komple bütün ekranı kaplayan bir RecyclerView yok.
+
+464
+01:01:42,119 --> 01:01:49,119
+Yukarıda gördüğünüz sisteme kayıtlı kullanıcılar sabit TextView'unu bir tane linear layout içerisine koyuyoruz.
+
+465
+01:01:49,119 --> 01:01:55,119
+Ondan sonra bir tane şurada görmüş olduğunuz RecyclerView komponentini yaratıyoruz.
+
+466
+01:01:55,119 --> 01:02:02,119
+Bir önceki derse gördüğümüz örnekte sadece bir tek RecyclerView vardı egzemel dosyasının içerisinde.
+
+467
+01:02:02,119 --> 01:02:13,119
+Yani siz bir Activity ekranına isterseniz RecyclerView komponentinin dışında başka komponentler de ekleyebiliyorsunuz.
+
+468
+01:02:13,119 --> 01:02:16,119
+Birincinin dikkat edilmesi gereken nokta bu.
+
+469
+01:02:16,119 --> 01:02:22,119
+Şimdi gelelim bu egzemelin kod kısmına.
+
+470
+01:02:22,119 --> 01:02:31,119
+Bir kere ilgili egzemeli giydirdik ve sonra ilgili kod parçalarına geçiyoruz.
+
+471
+01:02:31,119 --> 01:02:38,119
+Öncelikle FinalView Bayardıyla öbür taraftaki RecyclerView'u ilişkilendirdik.
+
+472
+01:02:38,119 --> 01:02:44,119
+Sonra bir layout manager üzerinden linear layout manager'ı yarattık.
+
+473
+01:02:44,119 --> 01:02:48,119
+RecyclerView'un layout'ını belirledik.
+
+474
+01:02:48,119 --> 01:02:53,119
+Sonra burada bir tane ArrayList'i yarattık.
+
+475
+01:02:53,119 --> 01:02:57,119
+İlgilik işleri çekebilmek için. Bunlar standart geçen hafta yaptığımız işler.
+
+476
+01:02:57,119 --> 01:03:00,119
+Ve ilgilik işleri ArrayList'e popüle etmiş olduk.
+
+477
+01:03:00,119 --> 01:03:04,119
+Gelelim adapter kısmına. Bir tane adapter yarattık.
+
+478
+01:03:04,119 --> 01:03:09,119
+PersonAdapter sınıfından ismi ADP dedik.
+
+479
+01:03:09,119 --> 01:03:17,119
+SetAdapter ADP diyerek aslında burada biz bütün o koda ait olan işi bitirdik.
+
+480
+01:03:17,119 --> 01:03:20,119
+Ama eksik kalan ne oldu? PersonAdapter.
+
+481
+01:03:20,119 --> 01:03:23,119
+Şimdi PersonAdapter kodunu açalım.
+
+482
+01:03:23,119 --> 01:03:27,119
+PersonAdapter kodunu birlikte inceleyelim.
+
+483
+01:03:27,119 --> 01:03:37,119
+Bir kere daha önce yukarıda yazılı olan MyViewHolder sınıfının burada aşağıda yer aldığını görüyorsunuz.
+
+484
+01:03:37,119 --> 01:03:53,489
+Bunu hemen buradan alacağım. Şuraya koyuyorum.
+
+485
+01:03:53,489 --> 01:03:56,489
+Bakalım neler var elimizde.
+
+486
+01:03:56,489 --> 01:04:01,489
+Birincisi context dengesini aldım. Buraya aktardım.
+
+487
+01:04:01,489 --> 01:04:07,489
+İkincisi person bilgilerini constructor'a parametre olarak aktarıyorum.
+
+488
+01:04:07,489 --> 01:04:10,489
+PersonAdapter'ın neyi extend ediyor?
+
+489
+01:04:10,489 --> 01:04:19,489
+RecyclerView.Adapter'ı extend ediyor ve bunu PersonAdapter.MyViewHolder tipinde gerçekleştiriyor.
+
+490
+01:04:19,489 --> 01:04:26,489
+Gelelim MyViewHolder'ı yani benim yaratacağım ViewHolder'ımı oluşturduğum yere.
+
+491
+01:04:26,489 --> 01:04:29,489
+Gene RecyclerViewViewHolder'ı ben extend ettim.
+
+492
+01:04:29,489 --> 01:04:37,489
+Bir ImageView'um var, bir TextView'um var, bir tane daha şifremin olduğu TextView'um var.
+
+493
+01:04:37,489 --> 01:04:44,489
+Ek olarak bir ToggleButton'um var. Normal butondan farklı bir buton kullanımından bahsediyoruz.
+
+494
+01:04:44,489 --> 01:04:50,489
+Bastıkça göster ve gizle arasında sürekli olarak Toggle ediyor.
+
+495
+01:04:50,489 --> 01:04:57,489
+Sonra gelelim bu yapının constructor'ına MyViewHolder'a.
+
+496
+01:04:57,489 --> 01:05:05,489
+Burada ItemView.FindViewById ile bir ilişkilendirme yapıyoruz. Bu nedir?
+
+497
+01:05:05,489 --> 01:05:19,820
+Bu kısmı bana şimdi söyler. Evet [öğrenci].
+
+498
+01:05:19,820 --> 01:05:23,820
+İlgilenerek kullanıcılarının resmini buradaki ImageView ile ilişkendiriyoruz.
+
+499
+01:05:23,820 --> 01:05:27,820
+Peki buradaki ItemView nedir?
+
+500
+01:05:27,820 --> 01:05:36,230
+Yani kullanacağımız tip ImageView ama onun genel bir hali mi? Yani daha üst klasımı mı?
+
+501
+01:05:36,230 --> 01:05:41,230
+Hayır. Bu biraz önce ViewV demiştik ya.
+
+502
+01:05:41,230 --> 01:05:44,230
+Sadece ismi değişiyor.
+
+503
+01:05:44,230 --> 01:05:46,230
+Anladım. Tamam.
+
+504
+01:05:46,230 --> 01:05:50,230
+Özellikle bunu uygulamak istedim. Farklı şekilde yorumlamayın diye.
+
+505
+01:05:50,230 --> 01:05:53,230
+Bu View'un parametresi yani ViewTip'te bir parametre.
+
+506
+01:05:53,230 --> 01:05:56,230
+Buraya aktarılan ViewTip'indeki parametre.
+
+507
+01:05:56,230 --> 01:06:10,230
+Onunla ilgili ID altındaki ilişkilendirmeyi o XML tarafındaki değişkenlerle ilişkilendirmeyi tamamlamış buluyoruz.
+
+508
+01:06:10,230 --> 01:06:15,230
+Şimdi gelelim ViewHolder'ın create edildiği noktaya.
+
+509
+01:06:15,230 --> 01:06:18,230
+Buraya iki parametre gitti. Parent ve ViewType olmak üzere.
+
+510
+01:06:18,230 --> 01:06:20,230
+Şurayı ayıralım.
+
+511
+01:06:20,230 --> 01:06:27,739
+Bir kere layout inflater ile mutlaka bir itemleri inflate etmemiz gerekiyor.
+
+512
+01:06:27,739 --> 01:06:35,739
+Buradaki bizim item'ımızın dizaynını tutan egzebel nedir?
+
+513
+01:06:35,739 --> 01:06:44,250
+Item'ın layout'ını tutan egzebel hangisidir? Hangi egzebele açmam gerekiyor?
+
+514
+01:06:44,250 --> 01:06:46,250
+Farklı bir işe.
+
+515
+01:06:46,250 --> 01:06:49,250
+Evet. Ekran geçelim.
+
+516
+01:06:49,250 --> 01:06:55,630
+Mesela düşrağı, küdene soralım.
+
+517
+01:06:55,630 --> 01:07:01,800
+Evet, hocam. Bakıyordum şimdi.
+
+518
+01:07:01,800 --> 01:07:03,800
+PersonCart olabilir mi?
+
+519
+01:07:03,800 --> 01:07:05,800
+PersonCart.exevel. Doğru mu?
+
+520
+01:07:05,800 --> 01:07:06,800
+Evet.
+
+521
+01:07:06,800 --> 01:07:08,800
+Açalım.
+
+522
+01:07:08,800 --> 01:07:11,800
+PersonCart.exevel'e bakalım.
+
+523
+01:07:11,800 --> 01:07:30,010
+PersonCart.exevel'in içerisinde biraz önce şurada görmüş olduğunuz yapıdaki ImageView, arkasından TextView'lar, arkasından yine TextView'lar ve son olarak Toggle butonu geliyor.
+
+524
+01:07:30,010 --> 01:07:36,010
+Toggle butonundaki bizim için kritik olan özellikler hangisi daha önce gördüklerimize göre?
+
+525
+01:07:36,010 --> 01:07:39,900
+Hemen bir de söylesin.
+
+526
+01:07:39,900 --> 01:07:40,900
+Sorar.
+
+527
+01:07:40,900 --> 01:07:45,940
+Hocam, aslında benim sorum vardı. O yüzden...
+
+528
+01:07:45,940 --> 01:07:48,940
+Olsun. Söz almışken sen cevabı da verebilirsin. Kolay bir soru çünkü.
+
+529
+01:07:48,940 --> 01:07:52,940
+Sorunuzu tekrar alabilir miyim o halde? Kendi soruma odaklanmıştım da.
+
+530
+01:07:52,940 --> 01:07:58,940
+Toggle butonundaki diğer daha önce gördüğümüz özelliklerden farklı hangi özellikler var şu anda?
+
+531
+01:07:58,940 --> 01:08:06,940
+Kapatanç yapabiliyoruz öncelikle. Bir de açıkken ve kapalı iken set ettiğimiz metrinler var üzerinde.
+
+532
+01:08:06,940 --> 01:08:08,940
+Evet, aynen öyle. TextOf ve TextOf.
+
+533
+01:08:08,940 --> 01:08:18,939
+Mesela bunu projenizde uygun yerlerde, bu tür farklı UI komponentleri kullanmanız noktasında hep sizi teşvik etmeye çalışıyorum.
+
+534
+01:08:18,939 --> 01:08:24,939
+Burada da bunun bir örneğini görüyorsunuz. Güzel bir örnek. Gizle diyorsunuz. Böyle gözüküyor.
+
+535
+01:08:24,939 --> 01:08:32,939
+İlk etapta bunların açık gelmesi çok mantıklı değil. Tam tersi bir yapı olması gerekir.
+
+536
+01:08:32,939 --> 01:08:41,939
+Kullanıcıları listediğimiz zaman bunların önce kapalı gelmesi, sonra butona tıkladığımızda açılması daha mantıklı olacaktır.
+
+537
+01:08:41,939 --> 01:08:43,939
+Evet, sorar senin soruna olayım.
+
+538
+01:08:43,939 --> 01:08:48,939
+Şimdi ben bu TempData baktığımda iç içe bir sürü linear layout görüyorum da.
+
+539
+01:08:48,939 --> 01:08:54,939
+Yani bu gereğini bilmiyorum açıkçası. Bunun gereği var mı?
+
+540
+01:08:54,939 --> 01:09:07,939
+Şimdi hemen onu söyleyeyim. Bir kere birincisi benim özellikle egzemen noktasında, dizayn noktasında kendi adıma bir iddiam yok.
+
+541
+01:09:07,939 --> 01:09:16,939
+İkincisi, burada constraint layout kullanmak aslında en akılcısı. Fakat sizler açısından biraz daha zor olduğu için,
+
+542
+01:09:16,939 --> 01:09:22,939
+en düzgün görüstlerimi sağlayacak olan yapı, iç içe linear layout yapısı kullanmak.
+
+543
+01:09:22,939 --> 01:09:37,670
+Çünkü örneğin işte resim bir item, horizontal y kullanacağı ve parola bir item. Pardon, burada da sürekli.
+
+544
+01:09:37,670 --> 01:09:45,670
+Yok aslında onu anladım ama şey soruyorum yani, iç içe linear layout olmadan da şu komponenti elde edemez miyiz?
+
+545
+01:09:45,670 --> 01:09:50,670
+Edebilirsiniz canım. Hayır öyle bir zorunluluk yok. Ama bunu hangi layout yapısında kullanacağız?
+
+546
+01:09:50,670 --> 01:09:53,670
+Yani table layout view da var. Onu da yapabilirsiniz.
+
+547
+01:09:53,670 --> 01:09:58,670
+Anladım. O zaman bu kodu geliştiren arkadaşın tercihi olmuş yani.
+
+548
+01:09:58,670 --> 01:10:10,670
+Tabii tabii tamamen öyle. Burada özellikle sorduğun iyi oldu tabii. Biz tasarım konusunda çok fazla bu derste bir şey vermek gibi bir iddiamız yok.
+
+549
+01:10:10,670 --> 01:10:19,670
+Ama gündeme getirmem şöyle iyi oldu. Burada bu tarz bir yapıyı linear layoutları iç içe koyarak yapmak çok efektif değil.
+
+550
+01:10:19,670 --> 01:10:31,340
+Ama genelde öğrenciler bunun kolay buldukları ve en azından birbirlerine düzgün bir şekilde konumlandırılabildikleri için bunu tercih ediyorlar.
+
+551
+01:10:31,340 --> 01:10:34,340
+Anladım hocam teşekkürler.
+
+552
+01:10:34,340 --> 01:10:43,649
+Şimdi biz item view'u gördük. Item view'un person card egzemeli'ni gördük.
+
+553
+01:10:43,649 --> 01:10:53,649
+Ve burada şu parçada bu person kartı kullanarak bunu inflate ettik.
+
+554
+01:10:53,649 --> 01:11:02,649
+Bu inflate ettikten sonra bu noktada ilgili my view holder'ımla ürettim.
+
+555
+01:11:02,649 --> 01:11:10,649
+Ve bu ürettiğim holder'ı üretirken constructor'ına da ürettiğim item'ın görseliğini paslamış oldum.
+
+556
+01:11:10,649 --> 01:11:19,649
+Yani ben bu fonksiyonla, bu metoptan çıktığımda benim için artık bir item'ın tipi oluşmuş durumda.
+
+557
+01:11:19,649 --> 01:11:24,649
+Hepsi zaten aynı tipte olacak. Sonuçta bunu çağırdıkça üretecek ama sonuçta her seferinde aynı işi yapacak.
+
+558
+01:11:24,649 --> 01:11:27,649
+Her seferinde bir item buradaki tipe göre üretecek.
+
+559
+01:11:27,649 --> 01:11:33,649
+Şimdi [öğrenci]'in sorusuna gelecek olursak biz burada farklı tipte bir item üretebilir miydik?
+
+560
+01:11:33,649 --> 01:11:38,649
+Evet üretebilirdik ve bunu koşulayabilirdik.
+
+561
+01:11:38,649 --> 01:11:47,649
+Bu koşula bağlı olarak da aşağıda online view holder'da bunun içeriğini farklı bir bilgiyle doldurabilirdik.
+
+562
+01:11:47,649 --> 01:11:54,649
+Bunu yapma şansımız var. Burada kaçıncı item üzerinde bunu yapacağımızı kontrol edebiliriz.
+
+563
+01:11:54,649 --> 01:12:09,649
+Böylece ilgili item sayısı geldiğinde position'a bağlı olarak hangi item'ın içeriğinin doldurulacağını, hangi tipte yarattığımız item'ın içeriğinin doldurulacağını karar verebiliriz.
+
+564
+01:12:10,649 --> 01:12:28,649
+Yani şurada görmüş olduğunuz bir tane view üretiyoruz. View 1, View 2 deyip iki tane view, üç tane view üretip buradaki ilgili kontrole göre ma view holder'ımızın konstraktörüne view 1 ve view 2'yi gönderebiliriz.
+
+565
+01:12:28,649 --> 01:12:33,649
+Bunu yapma şansımız var. Bilmiyorum [öğrenci] şimdi sorunun cevabı netleşmiş oldu mu?
+
+566
+01:12:33,649 --> 01:12:35,649
+Çok güzel oldu hocam anladım teşekkür ederim.
+
+567
+01:12:35,649 --> 01:12:45,649
+Tabii rica ederim. Senin verdiğin örnek de benim aslında olayın nereye gideceğini biraz daha net anlamama serviyet verdi. Ben teşekkür ederim.
+
+568
+01:12:45,649 --> 01:12:51,649
+Şimdi gelelim biz burada tek tek item'ları yaratıyoruz dedik görsel olarak bu kısımda.
+
+569
+01:12:51,649 --> 01:12:54,649
+Ama bu item'ların içeriğini doldurmamız lazım.
+
+570
+01:12:54,649 --> 01:13:05,649
+Bunu da on-bind view holder'da yapıyoruz. On-bind view holder'a bir tane ilgili view holder'ımızı gönderiyoruz bir de position'ı gönderiyoruz.
+
+571
+01:13:05,649 --> 01:13:16,649
+Bu position otomatik olarak item üretildikçe gönderilen bir bilgi. Bizim bunun üzerinde ekstradan bir operasyon şu an için yapmamıza gerek yok.
+
+572
+01:13:16,649 --> 01:13:28,649
+Ama [öğrenci] arkadaşınızın sorduğu gibi işte 5. view'da bir reklam girsin ya da 5 tane de bir girsin derseniz o zaman evet bu position bilgisini alıp kullanmak gerekiyor.
+
+573
+01:13:28,649 --> 01:13:43,649
+On-bind view holder'a devam edelim. Holder'ın içerisindeki username setText üzerinden yaptığımız şey ilgili RA listeki bilgiyi alıp o bilgiyi setText metoduna pas etmek.
+
+574
+01:13:43,649 --> 01:13:52,649
+Aynı şekilde yine item'ın, item'ı saklayan holder'ın password'ine ulaşıyorsunuz setText diyorsunuz ve password'u set ediyorsunuz.
+
+575
+01:13:52,649 --> 01:14:08,649
+İşte bu her bir satır sağ tarafta gördüğünüz şuradaki ilgili Jan 1-2-3 ondan sonra Tom 35 1-2-3-4-5-6 bilgilerini doldurmamızı sağlıyor.
+
+576
+01:14:08,649 --> 01:14:26,649
+Öte yanda bir sonraki adımda image view'a setImageResource diyoruz. İlgili foto ID'sini get ile alıp pas ettiğimizde otomatik olarak resmi de içerik olarak item'a katmış oluyoruz.
+
+577
+01:14:26,649 --> 01:14:42,649
+Gelelim buradaki toggle butonunun operasyonunu yönetmeye. Bunun için toggle tipindeki butonun setOnClick'in sınırına bir analimiz class pass ederek onClick metodunu çağırıyoruz.
+
+578
+01:14:42,649 --> 01:14:54,649
+Buğulun onToggleButon işte where is checked ise buradaki on değişkenine true ya da false durumunu kaydediyoruz.
+
+579
+01:14:54,649 --> 01:15:03,649
+True olma durumunda bunu yıldız olarak diğer şekilde ilgili password'ın içeriği olarak değiştiriyoruz.
+
+580
+01:15:03,649 --> 01:15:20,649
+Yapılan işte onBindViewHolder'da bütün itemler için tek tek üretiliyor bunlar. Yani örnek veriyorum burada ikinci item için bu onBindViewHolder'ı ayrı çalışıyor.
+
+581
+01:15:20,649 --> 01:15:32,649
+Position 2 olarak geliyor. Üçüncü için Position 3, dördüncü için Position 4 olarak geliyor ve bütün buradaki Holder'lar tek tek yaratılıyor.
+
+582
+01:15:32,649 --> 01:15:48,649
+En sonunda da getItemCount varlatırlarsanız bir önceki örnekte de bu yapının kaç tane bilgiye sahip olduğunu bilmeliyiz ki bu itemlerin üretimini ve listelemesini bu sayıya göre yapalım.
+
+583
+01:15:48,649 --> 01:15:59,180
+Evet genel itibariyle Recycler, View adapter'ı kendi özel adapterımıza bu şekilde dönüştürdük.
+
+584
+01:15:59,180 --> 01:16:07,180
+Şunlar var, özel adapter yaratmayıp default bizim için hali hazırdaki list view'dan olan adapterları kullanabilirsiniz.
+
+585
+01:16:07,180 --> 01:16:18,180
+Yani işte şehirliyse diyecekseniz hiç böyle bir adapter yaratmadan doğrudan hazır itemları olduğu gibi kullanan adapterlar var.
+
+586
+01:16:19,180 --> 01:16:33,180
+Hatta adapter bile değiller sadece ne diyelim bizim tarafımızda üretilmeyen itemımızın hiçbir görselliğe veya pozisyon değiştirmeden,
+
+587
+01:16:33,180 --> 01:16:37,180
+herhangi bir şey eklemeden ekranda görüntülenmesini sağlayan adapterlar kullanabiliyoruz.
+
+588
+01:16:37,180 --> 01:16:46,180
+Özel adapter'dan oluyor ve onu doğrudan şurada gördüğünüz set adapter kısmını o default adapter'ı tas edebiliyorsunuz.
+
+589
+01:16:46,180 --> 01:16:52,180
+Orada da default bilgileri görüntüleme şansına sahip oluyorsunuz.
+
+590
+01:16:52,180 --> 01:17:00,180
+Şimdi buraya kadar sorusu falan var mı bu bilgilerin oluşturulması ve görüntülenmesi noktasında?
+
+591
+01:17:00,180 --> 01:17:12,930
+Peki o zaman şimdi ekranın bir sorusu var.
+
+592
+01:17:13,930 --> 01:17:17,930
+Hocam diyelim ki çok basit bir komponent koymak istiyoruz.
+
+593
+01:17:17,930 --> 01:17:26,930
+Böyle bir kart şeklinde değil de öyle ekstra XML'le falan tasarlamamıza gerek kalmadan sadece bir tane image view koymak istiyoruz diyelim ki itemlere.
+
+594
+01:17:26,930 --> 01:17:32,930
+Onu nasıl yapabiliriz burada onCreative View Holder'ın içerisinde?
+
+595
+01:17:32,930 --> 01:17:47,930
+Şöyle ki burada R.LayoutPersonKart dediğimiz kısma sizin kendi iteminizin ismini değil bu default bahsettiğim hazır XML formatları var.
+
+596
+01:17:47,930 --> 01:17:51,930
+Onların isimlerini yazarak R.Layout.String.
+
+597
+01:17:51,930 --> 01:17:59,930
+R.Layout.String1.String2 yazarak doğrudan hazır komponentten inflate edilmesini sağlıyorsunuz.
+
+598
+01:17:59,930 --> 01:18:08,930
+O zaman sadece yapılması gereken şey ilgili kısmın burada bir XML oluşturulmuyor sol tarafta.
+
+599
+01:18:08,930 --> 01:18:12,930
+OnBindViewHolder ve onCreativeViewHolder'ı her halde yazmak zorundasınız.
+
+600
+01:18:12,930 --> 01:18:15,930
+Sadece neyden kurtulmuş oluyorsunuz?
+
+601
+01:18:15,930 --> 01:18:18,930
+Yeni bir XML tasarımı yapmaktan kurtulmuş oluyorsunuz.
+
+602
+01:18:18,930 --> 01:18:25,930
+R.Layout.String1.String2 yazarak bu tür hazır komponetleri kullanma şansına sahipsiniz.
+
+603
+01:18:25,930 --> 01:18:28,930
+Hocam teşekkürler.
+
+604
+01:18:28,930 --> 01:18:30,930
+Rica ederim.
+
+605
+01:18:30,930 --> 01:18:38,930
+Evet şimdi sizin tarafınızda bir kişiden bir ekran görüntüsü görmek istiyorum.
+
+606
+01:18:38,930 --> 01:18:44,930
+Geçtiğimiz haftaya kadar yapılmış olan uygulamasını bir gör göstermesini istiyorum.
+
+607
+01:18:44,930 --> 01:18:47,930
+Kim şu anda göstermek ister?
+
+608
+01:18:47,930 --> 01:19:01,659
+Birkaç haftadır biliyorsunuz bir şeyler yapıyoruz.
+
+609
+01:19:01,659 --> 01:19:05,659
+En son geldiğiniz kadarıyla durumu kim göstermek ister?
+
+610
+01:19:05,659 --> 01:19:13,220
+Hocam ben göstermek isterim ama o soru seçme hazırlama kısmını yapmadım.
+
+611
+01:19:13,220 --> 01:19:15,220
+Hiç önemli. Elinde ne varsa.
+
+612
+01:19:15,220 --> 01:19:17,220
+Tamam göstereyim.
+
+613
+01:19:17,220 --> 01:19:46,000
+Hemen sana hak veriyorum.
+
+614
+01:19:46,000 --> 01:19:53,000
+Evet şimdi öncelikle uygulamayı bir çalıştırıp nasıl ekranları olduğunu bir görelim.
+
+615
+01:19:54,000 --> 01:19:57,000
+Kısaca da anlatırsan sevinirim.
+
+616
+01:19:57,000 --> 01:20:16,800
+Yani iyi çalıştırdığın zaman ekranda.
+
+617
+01:20:16,800 --> 01:20:17,800
+Sesimi açmayı unutmuşum da.
+
+618
+01:20:17,800 --> 01:20:18,800
+Evet evet.
+
+619
+01:20:18,800 --> 01:20:23,270
+Burada standart login kısmı yaptım.
+
+620
+01:20:23,270 --> 01:20:25,270
+Açabilir misin kodunu mesela?
+
+621
+01:20:25,270 --> 01:20:27,270
+Sign up kısmı tabi.
+
+622
+01:20:27,270 --> 01:20:30,270
+XML'e mi gireyim yoksa şey yapayım.
+
+623
+01:20:30,270 --> 01:20:37,100
+R.Layout kullandın.
+
+624
+01:20:37,100 --> 01:20:40,100
+Bunu internette kendim görmüştüm biraz hoşuma gitti.
+
+625
+01:20:40,100 --> 01:20:43,100
+Tasarlarken daha rahat hissettim o yüzden bunu kullandım.
+
+626
+01:20:43,100 --> 01:20:44,100
+Tamam.
+
+627
+01:20:44,100 --> 01:20:48,100
+Edit textler belirleyip hepsine farklı id'ler tamamladım.
+
+628
+01:20:48,100 --> 01:20:51,100
+İki tane edit text, iki tane button.
+
+629
+01:20:51,100 --> 01:20:56,100
+OnClick şeylerini java dosyasının içerisinde atıyorum.
+
+630
+01:20:56,100 --> 01:20:58,100
+Tamam hemen açalım java dosyasını.
+
+631
+01:20:58,100 --> 01:21:02,380
+Gördüğünüz gibi de ne arayatı olmak zorunda değil.
+
+632
+01:21:09,100 --> 01:21:13,100
+Şey attım burada bu şeyden kaynaklı ekledim hocam.
+
+633
+01:21:13,100 --> 01:21:17,100
+Hocam bunu benim telefonum dark mode demeye zorluyordu.
+
+634
+01:21:17,100 --> 01:21:19,100
+Onu da bayağı saatlerce araştırdım.
+
+635
+01:21:19,100 --> 01:21:20,100
+Çok zor oldu.
+
+636
+01:21:20,100 --> 01:21:24,100
+Yine sıkıntı yaşayan varsa bunda arkadaşlarım arasında ulaşabilirler.
+
+637
+01:21:24,100 --> 01:21:25,100
+Nasıl yaptığımı anlatırım.
+
+638
+01:21:25,100 --> 01:21:27,100
+Çünkü bayağı zorladı beni.
+
+639
+01:21:27,100 --> 01:21:30,100
+Variable'ları tanımladım.
+
+640
+01:21:33,010 --> 01:21:35,010
+Güzel ilişkiyi kurdum burada.
+
+641
+01:21:35,010 --> 01:21:38,010
+Listener'leri aynı şekilde tanımladım.
+
+642
+01:21:38,010 --> 01:21:40,010
+Tamam buradan nereye giriyorsun?
+
+643
+01:21:40,010 --> 01:21:41,010
+Sign'inden.
+
+644
+01:21:41,010 --> 01:21:43,010
+Sign'in dediğinde.
+
+645
+01:21:48,010 --> 01:21:50,010
+Account Activity'ye gidiyorsun.
+
+646
+01:21:50,010 --> 01:21:51,010
+Account Activity'ye gidiyor.
+
+647
+01:21:51,010 --> 01:21:53,010
+Diğerde Sign Up Activity'ye gidiyor.
+
+648
+01:21:53,010 --> 01:21:57,010
+Oldukça basit bir zaten aktivite geçişi olacak.
+
+649
+01:21:57,010 --> 01:21:59,010
+Burada komplike bir şey yok.
+
+650
+01:21:59,010 --> 01:22:03,579
+Hemen bir Sign Up'a gidelim yan tarafta.
+
+651
+01:22:03,579 --> 01:22:07,579
+Evet Sign Up'ın şimdi kodunu açalım.
+
+652
+01:22:08,579 --> 01:22:10,579
+İlk xml'ı açıyorum.
+
+653
+01:22:10,579 --> 01:22:17,689
+Olur.
+
+654
+01:22:17,689 --> 01:22:18,689
+Devleti şeklinde çeviriyorum.
+
+655
+01:22:18,689 --> 01:22:23,409
+Genel ile Tablet kullanıyorum.
+
+656
+01:22:23,409 --> 01:22:25,409
+Min mniej te image view'i ekledim.
+
+657
+01:22:25,409 --> 01:22:27,409
+Şu ikinci image view'du.
+
+658
+01:22:27,409 --> 01:22:30,409
+Şu köşedeki şey için eklemiştim.
+
+659
+01:22:30,409 --> 01:22:32,409
+Değiştirebilmek için.
+
+660
+01:22:32,409 --> 01:22:34,409
+Bunu daha henüz tamamlayamadım.
+
+661
+01:22:34,409 --> 01:22:39,409
+Burada bir tane Grid View'la avatar seçme diyalo oluşturmaya çalıştım.
+
+662
+01:22:39,409 --> 01:22:40,409
+Çok sağ.
+
+663
+01:22:40,409 --> 01:22:44,970
+Edit Text'ler ekledim.
+
+664
+01:22:44,970 --> 01:22:46,970
+Name's, Summenem şeklinde.
+
+665
+01:22:46,970 --> 01:22:48,970
+Tiplerin'i falan ekledim.
+
+666
+01:22:48,970 --> 01:22:56,489
+Şunun için mesela bir tane formatter kullanıyorum. Yazdığım zaman kendisi otomatik şey yapsın diye.
+
+667
+01:22:56,489 --> 01:22:59,810
+Bunu hangi özellikle yaptığını söyler misin arkadaşlarla?
+
+668
+01:22:59,810 --> 01:23:06,210
+Bunu signup aktivitinin içerisinde text formatter diye bir şey eklemiştim.
+
+669
+01:23:06,210 --> 01:23:09,489
+Phone number formatting text voucher pardon.
+
+670
+01:23:09,489 --> 01:23:15,970
+Bunu eklediğim zaman kendisi otomatik her text change değiştiğinde düzenli bir hale getiriyor.
+
+671
+01:23:15,970 --> 01:23:19,609
+Mesela gördüğünüz gibi çok basit ama etkili bir kullanım şekli.
+
+672
+01:23:19,609 --> 01:23:22,930
+Bu tür özellikleri kendinize araştırarak ekleyebilirsiniz.
+
+673
+01:23:22,930 --> 01:23:35,369
+Yani bunların artık hazır metotları, böyle fonksiyonları olduğu için bu tür özellikleri kullanmak noktasında daha sizi cesaretten demek isterim.
+
+674
+01:23:35,369 --> 01:23:40,100
+Bir kutu titleri var ve kebo'ya geçebiliriz.
+
+675
+01:23:40,100 --> 01:23:44,819
+Edit textler, bir tane text view ekledim. Bu text view da şey seçmek için.
+
+676
+01:23:44,819 --> 01:23:49,500
+Buna tıkladığım zaman bir tane takvim diyaloğu döndürüyor.
+
+677
+01:23:49,500 --> 01:23:53,779
+Buradan seçip tamam dediğim zaman da onu buraya yansıtırıyor.
+
+678
+01:23:53,779 --> 01:23:57,260
+Veriyi henüz çekme şeklinde yapmadım. Onları da ekleyeceğim.
+
+679
+01:23:57,260 --> 01:24:00,060
+Tamam.
+
+680
+01:24:00,060 --> 01:24:01,340
+Başka ne gösterebilirim?
+
+681
+01:24:01,340 --> 01:24:13,899
+Aynı fakti bir tane geçerim.
+
+682
+01:24:13,899 --> 01:24:18,699
+Tabii bir sürü validate ekledim. Şeyleri kabul etmesi için.
+
+683
+01:24:18,699 --> 01:24:24,630
+Yine aynı şekilde variable'ları tanımladım.
+
+684
+01:24:24,630 --> 01:24:32,069
+Listener'larda bu şeyi avatar choose etme diyaloğu için bunu biraz kendim ekstra yaptım.
+
+685
+01:24:32,069 --> 01:24:34,909
+Mesela burada şeyden faydalanmayı tercih etmemişsin.
+
+686
+01:24:34,909 --> 01:24:37,510
+Her bir buton için Anonymous Class yaratmışsın.
+
+687
+01:24:37,510 --> 01:24:40,670
+Gördüğüm kadarıyla şeyde implement etmemişsin.
+
+688
+01:24:40,670 --> 01:24:42,430
+Aktivite de değil mi?
+
+689
+01:24:42,430 --> 01:24:44,430
+Evet onu henüz denemedim.
+
+690
+01:24:44,430 --> 01:24:46,069
+Tamam, okey.
+
+691
+01:24:46,069 --> 01:24:48,949
+Dikkat çekmek için söyledim oraya.
+
+692
+01:24:48,949 --> 01:24:52,949
+Peki tamam bu detayı daha fazla görmemize çok gerek yok.
+
+693
+01:24:52,949 --> 01:24:54,949
+Soru ile ilgili bir kısım var mı?
+
+694
+01:24:54,949 --> 01:24:57,949
+Soru ile ilgili henüz hiçbir şey yapmadım hocam.
+
+695
+01:24:57,949 --> 01:25:00,949
+Tamam peki. Çok teşekkür ediyorum.
+
+696
+01:25:00,949 --> 01:25:05,949
+En azından neler yapılabileceği konusunda bize de bir fikir vermiş oldun.
+
+697
+01:25:05,949 --> 01:25:08,949
+Şimdi ben arkadaşlarıma tekrar sorayım.
+
+698
+01:25:08,949 --> 01:25:12,949
+Soru ekleme kısmını yapanlar var mı?
+
+699
+01:25:12,949 --> 01:25:21,359
+Varsa el kaldırsın söz vermeyeceğim.
+
+700
+01:25:21,359 --> 01:25:24,359
+Soru ekleme kısmını tamamlayanlar var mı?
+
+701
+01:25:57,750 --> 01:26:00,750
+Aptal şeklinde iPad üzerinde çizeceğim.
+
+702
+01:26:00,750 --> 01:26:05,750
+Göreceksiniz ama temelde bir menu ekranı istiyorum sizden.
+
+703
+01:26:05,750 --> 01:26:13,750
+Bu menu ekranında soru ekle, soruları listele olacak.
+
+704
+01:26:13,750 --> 01:26:27,289
+Bunun ötesinde bugün öğrenmiş olduğunuz konu olan Recycler View bu içeren soruları listeleye tıkladığınızda
+
+705
+01:26:27,289 --> 01:26:33,289
+Tüm kayıtlı soruların geldiği bir Recycler View içeren ekran uçturmanızı rica ediyorum.
+
+706
+01:26:33,289 --> 01:26:41,289
+Ve bu sorular geldiğinde her bir soru için bir tane default bir resim kullanabilirsiniz.
+
+707
+01:26:41,289 --> 01:26:45,289
+Soruyu gösteren bir soru işareti olabilirsiniz.
+
+708
+01:26:45,289 --> 01:26:55,289
+Sorunun kendisi şıkları küçük bir şekilde gözükecek şekilde.
+
+709
+01:26:55,289 --> 01:27:05,289
+Bir de yanında soruyu sil ya da düzenle seçeneği olmasını istiyorum.
+
+710
+01:27:05,289 --> 01:27:12,289
+Sil deyince soruyu sileceksiniz, düzenle deyince de yeni bir ekrana geçip sorunun kendisini düzenlemek
+
+711
+01:27:12,289 --> 01:27:20,289
+ya da şıklarını düzenlemek şeklinde ya da cevabını değiştirmek şeklinde bir aksiyon aldığınızı bekliyorum.
+
+712
+01:27:20,289 --> 01:27:33,369
+Onun dışında menü tarafından bir de sınav oluştur seçeneği olacak soru ekle soru listele sınav oluştur.
+
+713
+01:27:33,369 --> 01:27:47,369
+Sınav oluştur dediğiniz zaman ilgili soruları tanımladığınız sorulardan seçerek yeni bir sınav dizayn ediyor olacaksınız uzun vadeli planlarımızda.
+
+714
+01:27:47,369 --> 01:27:52,380
+Evet buraya kadar sorusu olan var mı?
+
+715
+01:27:52,380 --> 01:27:56,430
+Evet.
+
+716
+01:27:56,430 --> 01:28:03,430
+Hocam tam olarak menüde yani ana menüde soru ekle soru listele gibi ayrı menüleri olmak zorunda mı?
+
+717
+01:28:03,430 --> 01:28:11,430
+Yoksa mesela ben sorular diye bir menü yapıp oradan önce listesini görürüm sonra altta ekle gibi bir seçenek gibi farklı tasarımlar yapabilir miyiz?
+
+718
+01:28:11,430 --> 01:28:13,430
+Bütün hepsini açıyorum.
+
+719
+01:28:13,430 --> 01:28:19,430
+Benim burada söylediğim genel yapabilecek basitlikte bir ekran tasarımı.
+
+720
+01:28:19,430 --> 01:28:24,430
+Ama bunu daha profesyonel yapacak olanlara kapım sonuna kadar açık.
+
+721
+01:28:24,430 --> 01:28:31,489
+Teşekkürler hocam.
+
+722
+01:28:31,489 --> 01:28:33,489
+Evet [öğrenci].
+
+723
+01:28:33,489 --> 01:28:36,489
+Hocam dediniz ya bir soru listele...
+
+724
+01:28:36,489 --> 01:28:40,340
+Şu an duyamıyorum sesinlikle.
+
+725
+01:28:40,340 --> 01:28:46,100
+İkisi bunun farklı olarak istediğiniz soruları seçip...
+
+726
+01:28:46,100 --> 01:28:50,100
+[öğrenci] senin söylediklerini duymadım baştan alır mısın?
+
+727
+01:28:50,100 --> 01:28:56,100
+Şey dedik ya bir soru listelema var bir de sınav oluştur var demiştiniz.
+
+728
+01:28:56,100 --> 01:29:06,100
+Bu sınav oluşturum soru listelemeden farkı aralarındaki soruları seçip bir sınav yapma şeklinde mi olacak?
+
+729
+01:29:06,100 --> 01:29:16,100
+Farkı şu nasıl soru havuzumuz oluyor ve sonra sınav yapacağımız zaman o soru havuzumuzdan istediğimiz soruyu seçiyoruz.
+
+730
+01:29:16,100 --> 01:29:21,100
+İşte 50 tane soru ekledik diyelim sadece 10 tanesini seçip bir sınav oluşturacağız.
+
+731
+01:29:21,100 --> 01:29:24,930
+Tamam hocam teşekkürler.
+
+732
+01:29:24,930 --> 01:29:26,930
+Rica ederim.
+
+733
+01:29:26,930 --> 01:29:32,930
+Bu arada soru ekle kısmında bir özelliği daha hatırlatmak istiyorum.
+
+734
+01:29:32,930 --> 01:29:38,930
+Sorunun kendisi şıkları cevabı olacak demiştik.
+
+735
+01:29:38,930 --> 01:29:46,930
+Artı bir de soruyla ilgili soruya döküman ekleyebilme şansımızın olmasını istiyoruz.
+
+736
+01:29:46,930 --> 01:29:51,930
+Hani geçen hafta mail attachment'ından bahsetmiştik ya örnek olarak görmüştük.
+
+737
+01:29:51,930 --> 01:30:04,130
+Burada da soruya ilgilik görseli ekleyebilmenizi ya da ilgili dosya formatı PDF'te olabilir ekleyebilmenizi bekliyorum.
+
+738
+01:30:04,130 --> 01:30:06,130
+Evet [öğrenci].
+
+739
+01:30:06,130 --> 01:30:09,130
+Soruları lokale mi kaydedeceğiz?
+
+740
+01:30:09,130 --> 01:30:13,130
+Şimdi soruların kayıt konususunu hemen söyleyeyim.
+
+741
+01:30:13,130 --> 01:30:21,130
+Şu anda hala database daha doğrusu veriyi nasıl kaydedeceğimiz noktasında bir bilgilendirme yapmadım.
+
+742
+01:30:21,130 --> 01:30:26,130
+Ama önden giden arkadaşlar birkaç seçenek değerlendirebilirler.
+
+743
+01:30:26,130 --> 01:30:35,130
+Database olabilir ya da dosya ya da obje formatında saklayabilirsiniz soruları.
+
+744
+01:30:35,130 --> 01:30:39,130
+Bunun için de part label ve serializable'dan bahsetmemiz gerekiyor.
+
+745
+01:30:39,130 --> 01:30:41,130
+Aslında bugün bahsetmek istiyorum.
+
+746
+01:30:41,130 --> 01:30:50,130
+Vaktimiz kalırsa gene geçen haftada olduğu gibi belli bir saatten itibaren tekrar birkaç konu üzerinden bu şekilde geçerek bazı bilgileri yenilemek.
+
+747
+01:30:50,130 --> 01:30:52,130
+Fayda da olacaktır.
+
+748
+01:30:52,130 --> 01:30:56,130
+Firebase dışındaki seçenekler benim için uygun.
+
+749
+01:30:56,130 --> 01:30:58,130
+[öğrenci].
+
+750
+01:30:58,130 --> 01:31:00,130
+Tamam hocam teşekkürler.
+
+751
+01:31:00,130 --> 01:31:01,130
+Rica ederim.
+
+752
+01:31:01,130 --> 01:31:08,539
+Ekran bir soru vardı.
+
+753
+01:31:08,539 --> 01:31:11,539
+Hocam sorma biraz cevap oldu gibi oldu söyledikleriniz.
+
+754
+01:31:11,539 --> 01:31:13,539
+Tamam.
+
+755
+01:31:13,539 --> 01:31:15,539
+Başka sorusu olan var mı?
+
+756
+01:31:22,380 --> 01:31:27,380
+Ben neler isteyeceğimi ödevde size bir döküman olarak mutlaka yayınlayacağım.
+
+757
+01:31:27,380 --> 01:31:34,380
+Ama şu anda bu notları alıp bunlarla ilgili çalışmaya devam etmeniz sizin açınızdan önemli.
+
+758
+01:31:34,380 --> 01:31:40,380
+Çünkü ödev süresini verirken sanki sıfırdan yapıyormuş gibi bir süre vermeyeceğim.
+
+759
+01:31:40,380 --> 01:31:45,380
+Her hafta bir şeyler yapmaya devam ettiğiniz varsayarak ödev sürenizi belirmeyeceğim.
+
+760
+01:31:45,380 --> 01:36:57,560
+O yüzden geçtiğimiz haftalardaki eksikleriniz varsa onları yavaş yavaş kapatmanızı öneririm.
+
+761
+01:36:57,560 --> 01:37:01,560
+Arkadaşlar saat 15.55'e kadar bir ara verelim.
+
+762
+01:37:01,560 --> 01:37:03,560
+15.55'te kaldığımız yerden devam edelim.
+
+763
+01:37:03,560 --> 01:51:11,550
+Evet arkadaşlar kaldığımız yerden devam edebiliriz.
+
+764
+01:51:11,550 --> 01:51:14,550
+Geliştirmeye devam ediyorsunuz tabi.
+
+765
+01:51:14,550 --> 01:51:18,550
+Bu sırada sorularınız olursa ben yanıtlamaya çalışacağım.
+
+766
+01:51:18,550 --> 01:53:14,140
+Şu anda bir ekran paylaştım.
+
+767
+01:53:14,140 --> 01:53:20,140
+Burada kabaca fikir vermesi açısından bir menüde ne olacak?
+
+768
+01:53:20,140 --> 01:53:26,140
+Add Question, List Question ve Create Exam yeteneklerinin olması gerekiyor.
+
+769
+01:53:26,140 --> 01:53:34,140
+List Questions'da ve Recycler View'da her bir item'da bir resim olmasını bekliyorum.
+
+770
+01:53:34,140 --> 01:53:38,140
+Soruyu ifade eden bir soru işareti olabilir vesaire.
+
+771
+01:53:38,140 --> 01:53:47,140
+İlgili sorunun ne olduğu option ve cevabın ne olduğu noktasında bir de iki tane buton olacak.
+
+772
+01:53:47,140 --> 01:53:51,140
+Bir tanesi Update, bir tanesi Delete butonu.
+
+773
+01:53:51,140 --> 01:53:59,140
+Onun ötesinde sınav yarattığınız zaman bir tanesi Recycler View'da sorular gelecek.
+
+774
+01:53:59,140 --> 01:54:11,140
+Yanlarında checkbox olacak ve bunlardan seçtiklerinizi daha sonra ilgili date bilgisini girerek
+
+775
+01:54:11,140 --> 01:54:17,140
+ya da time picker ile seçerek sınav türünü, süresini ve benzer bazı bilgileri girerek
+
+776
+01:54:17,140 --> 01:54:22,140
+sınav yaratıyor olacaksınız, sisteme tanımlıyor olacaksınız.
+
+777
+01:54:22,140 --> 01:54:34,859
+Genel olarak böyle bir konsept ödevinizde yaralıyor olacak.
+
+778
+01:54:34,859 --> 01:54:36,859
+Evet [öğrenci].
+
+779
+01:54:36,859 --> 01:54:42,859
+Hocam listeleme kısmında eklenen dokümanı göstermeye ilgili bir şey olacak mı?
+
+780
+01:54:42,859 --> 01:54:44,859
+Olursa nasıl olacak?
+
+781
+01:54:44,859 --> 01:54:48,859
+Şöyle olabilir. Güzel hatırlattın o kısmı.
+
+782
+01:54:48,859 --> 01:54:52,859
+Şurada bir Attachment işareti olur.
+
+783
+01:54:52,859 --> 01:55:02,859
+Şu noktada ona tıklandığında Attachment ne ise ilgili o Attachment'ı açabilecek
+
+784
+01:55:02,859 --> 01:55:04,859
+uygulamaya yönlendirirsiniz.
+
+785
+01:55:04,859 --> 01:55:38,449
+Evet şimdi ben kod parçasını paylaşayım tekrar sizlerle ayarlama yapayım.
+
+786
+01:55:38,449 --> 01:57:19,109
+Evet [öğrenci] sen dinliyorsun.
+
+787
+01:57:19,109 --> 01:57:25,109
+Hocam bir de şey soracaktım. Bu sınav oluşturma kısmından tam olarak beklentiniz ne?
+
+788
+01:57:25,109 --> 01:57:29,109
+Şimdi tam bir sınav sistemi tasarlayalım mı?
+
+789
+01:57:29,109 --> 01:57:37,109
+Öncelikle sınav oluşturma da istediğim şey bir soruları seçerek sınava ekleyerek
+
+790
+01:57:37,109 --> 01:57:41,109
+ayrı ayrı sınavlar oluşturabilmeniz. Bu sınavları sonra görüntüleyebilmek.
+
+791
+01:57:41,109 --> 01:57:47,109
+İki bu sınavların hangi tarihte başlayacağı, türünün ne olduğu gibi bilgilerin girilmesi
+
+792
+01:57:47,109 --> 01:57:55,109
+ve süresinin verilmesi. Sonra simüle etmek istediğimiz zaman bir sınavı seçtiğimizde
+
+793
+01:57:55,109 --> 01:58:01,109
+bir progress barla o sınavın süresinin başlatıp bitirme işlemini gerçekleştiriyor olacağız uzun vadede.
+
+794
+01:58:01,109 --> 01:58:07,109
+Simüle etme kısmı yok şu anlık sadece datayı oluşturacağız. Doğru mu anladın?
+
+795
+01:58:07,109 --> 01:58:09,109
+Evet doğru.
+
+796
+01:58:09,109 --> 01:59:03,850
+Şu an kodu görebiliyor musunuz?
+
+797
+01:59:03,850 --> 01:59:08,760
+Evet hocam görebiliyorum.
+
+798
+01:59:08,760 --> 01:59:20,760
+Tamam buradan faydalanmak isteyenler bakıp kendi tarafına gerekli değişiklikleri yaparak aktarabilirler.
+
+799
+01:59:20,760 --> 01:59:34,390
+Hocam benim XML kısmıyla ilgili bir sorum olacaktı.
+
+800
+01:59:34,390 --> 01:59:36,390
+Evet.
+
+801
+01:59:36,390 --> 01:59:46,390
+Burada komponentlere id falan atarken biz mesela ben activity main'de çok benzer bir komponent kullanmışım yine.
+
+802
+01:59:46,390 --> 01:59:52,390
+Başka bir activity'deki komponent ile id'sinin ismini aynı yapsam sıkıntı yaşatır mı bu bana?
+
+803
+01:59:52,390 --> 01:59:56,390
+Şimdi hemen açıp bir tane bu taraftaki id'ye bakalım.
+
+804
+01:59:56,390 --> 02:00:02,390
+Örneğin sign in'de de text edit name kullandım, sign up'da da text edit name kullandım.
+
+805
+02:00:02,390 --> 02:00:16,390
+Şimdi şöyle ilgili XML dosyasına refer edeceğiniz için de oradaki sadece id'lere yani alt scoptaki id'lere ulaşacağınız için herhangi bir sorun olmayacaktır.
+
+806
+02:00:16,390 --> 02:00:24,390
+Ama yani başına ufak bir farklılık gerektiren bilgide koyanlar oluyor.
+
+807
+02:00:24,390 --> 02:00:32,390
+Ama egzemeler refer ettiğiniz için bu aynı isim kullanma size bir dert oluşturmayacaktır, öyle söyleyebilirim.
+
+808
+02:00:32,390 --> 02:00:42,390
+Kodun içerisinde dinamik kısımdayken r.id dediğimde çünkü farklı aktivitelerin de id'lerini görebiliyorum.
+
+809
+02:00:42,390 --> 02:00:48,390
+Sanırım farklı aktivitelere de müdahale edebiliyor muyuz peki bu şekilde?
+
+810
+02:00:48,390 --> 02:00:58,390
+Ama ilgili şeyler isimler geliyor olması lazım yani o egzemerle ilişkilendirilmiş isimleri görüyor musunuz?
+
+811
+02:00:58,390 --> 02:01:03,899
+Ben de gözüküyor diye hatırlıyorum bir daha bakayım şimdi.
+
+812
+02:01:03,899 --> 02:01:06,899
+Bunu sorarım diye aklıma şey yapmıştım çünkü.
+
+813
+02:01:06,899 --> 02:01:09,899
+Şimdi hemen şurada.
+
+814
+02:01:09,899 --> 02:01:15,560
+Evet görebiliyorum mesela r.id dediğim zaman.
+
+815
+02:01:15,560 --> 02:01:23,560
+Normalde hemen şurada define where I was kısmını, hatta main egzemeli açayım.
+
+816
+02:01:23,560 --> 02:01:28,960
+Active to main.
+
+817
+02:01:28,960 --> 02:01:31,960
+Şurada r.id dediğimiz kısmı var ya.
+
+818
+02:01:31,960 --> 02:01:39,960
+Burada find view by id bir saniye.
+
+819
+02:01:39,960 --> 02:01:44,039
+Şuradan hemen.
+
+820
+02:01:44,039 --> 02:01:52,060
+CTRL'e boşluk yapınca şey yapıyorsun.
+
+821
+02:01:52,060 --> 02:02:00,489
+Evet burada ilişkilendirmiyor egzemeli.
+
+822
+02:02:00,489 --> 02:02:03,489
+O zaman isimleri farklı vermek gerekiyor [öğrenci].
+
+823
+02:02:03,489 --> 02:02:10,569
+Peki şimdi bunu bir avantaja çevirebilir miyim ben?
+
+824
+02:02:10,569 --> 02:02:15,569
+Farklı bir aktivitedeki bir komponente buradan müdahale edebilir miyim peki?
+
+825
+02:02:15,569 --> 02:02:20,569
+Ama o aynı aksiyonu gerçekleştirmeyecektir.
+
+826
+02:02:20,569 --> 02:02:28,569
+Çünkü senin r.id password'inde sakladığın bunun ilişkisi o ilgili egzemeli.
+
+827
+02:02:28,569 --> 02:02:34,569
+Yani numarası zaten farklı anlatabiliyor muyum?
+
+828
+02:02:34,569 --> 02:02:41,569
+Senin bunu takip etmen için iki tane button sign aslında tanımlayabilirsin ama bunların şeyleri farklı olacaktır.
+
+829
+02:02:41,569 --> 02:02:44,569
+Burada id'leri görüyorsun yanında değil mi?
+
+830
+02:02:44,569 --> 02:02:51,569
+O id'leri farklı olacağı için iki tane button signi görürsün ama o id'lerden takip etmesi zor.
+
+831
+02:02:51,569 --> 02:03:01,260
+Ben aslında şey için sordum şu anki örneğimizde değil de daha dinamik bir kullanım yapacağınız zaman mesela aktiviteler arasında veri alışverişi için.
+
+832
+02:03:01,260 --> 02:03:08,260
+Aslında şey için aktiviteler arasında veri alışverişini kolaylaştırabilir miyim bu şekilde diye düşündüm.
+
+833
+02:03:08,260 --> 02:03:12,260
+Hiç öyle kullanmadım o yüzden çok emin değilim.
+
+834
+02:03:12,260 --> 02:03:14,260
+Yani mantıklı oluyor.
+
+835
+02:03:14,260 --> 02:03:16,260
+Anladım hocam.
+
+836
+02:03:16,260 --> 02:03:18,260
+Ona yorum yapamayacağım.
+
+837
+02:03:18,260 --> 02:03:26,260
+Bir de bir şey daha soracaktım. Bir aktiviteyi finish ettiğimiz zaman o tamamen destroy ediliyor mu?
+
+838
+02:03:26,260 --> 02:03:28,260
+Evet.
+
+839
+02:03:28,260 --> 02:03:35,260
+Peki destroy edilmeden sadece pub yapma yani bir önceki aktiviteye dönmenin bir yolu var mı?
+
+840
+02:03:35,260 --> 02:03:42,260
+Mesela onun bulunduğu state'i korumasını istiyorum ben tekrar çağırdığım zaman sıfırdan oluşturmasında.
+
+841
+02:03:42,260 --> 02:03:46,260
+Nasıl bıraktıysam o haliyle dönmek istiyorum diyelim ki o aktiviteye.
+
+842
+02:03:46,260 --> 02:03:52,260
+Tamam burada back gibi bir önceki aktiviteye gitmek istiyorsun öyle mi?
+
+843
+02:03:52,260 --> 02:03:59,260
+Evet mesela ben sign up ekranda bir şeyler yazdım sonra a dedim bir önceki ekranda bir şey vardı ona bir bakayım.
+
+844
+02:03:59,260 --> 02:04:03,260
+Geri döndüğümde de sign up da yazdıklarım gitmemiş olsun mesela.
+
+845
+02:04:03,260 --> 02:04:16,260
+O zaman senin geri dönüşünü sağladığın kendi içinde bir buton kullanmak gibi bir durum var mı yani kodunun içerisinde yoksa normal telefonun geri butonu ile döneceksin?
+
+846
+02:04:16,260 --> 02:04:22,260
+Yani o geri butonun işlevinde overwrite ediliyor, overwrite ediliyordur herhalde diye tahmin ediyorum.
+
+847
+02:04:22,260 --> 02:04:34,250
+Hayır şu yüzden soruyorum. Geri butonuyla döndüğün zaman otomatik bir an zaten o aktivitanın ayrıldığın için zaten destroy ediliyor.
+
+848
+02:04:34,250 --> 02:04:43,250
+Peki mesela bunu nasıl sağlayabilirim? Aktiviteler arasında geçerken geri döndüğümde eski yaptığım aktivitinin yok olmamasını istiyorum.
+
+849
+02:04:43,250 --> 02:04:51,250
+Şöyle nasıl hani butonla sign in de bastığımızda yeni aktiviteye geçtiğimizde eski aktivite kaybolmuyor öyle düşün.
+
+850
+02:04:51,250 --> 02:05:03,250
+Aynı şekilde kendi içerisine bir geri butonu koyarsan ve o geri butonuyla da bir önceki aktiviteyi çağırırsan ya da başka bir aktiviteye o zaman olmaz senin söylediğin gibi bir durum gerçekleşir.
+
+851
+02:05:03,250 --> 02:05:09,250
+O butonuna gidersem ama şimdi o aktiviteyi tekrardan ikinci bir nesne gibi oluşturmayacak mı?
+
+852
+02:05:09,250 --> 02:05:16,880
+Aslında kendisine dönmüş olmuyor da ya kendisine dönmüş olmuyor öyle yaparsanız.
+
+853
+02:05:16,880 --> 02:05:21,880
+Çünkü anladığım kadarıyla bu aktivitelerde bir stack yapısı var birbirlerinin üstlerine biniyorlar.
+
+854
+02:05:21,880 --> 02:05:25,880
+Puppet değil zaman da destroy ediyor.
+
+855
+02:05:25,880 --> 02:05:33,880
+Puppet değil zaman destroy etmeyip bir yerde saklasa sonra ben ona geri dönsem o şekilde devam etsem gibi.
+
+856
+02:05:33,880 --> 02:05:38,880
+Peki şey yapamamışsın ona geri döndüğün zaman aslında.
+
+857
+02:05:38,880 --> 02:05:41,880
+Şu an aslında ihtiyacım olduğu için değil de merak ettiğim için soruyorum.
+
+858
+02:05:41,880 --> 02:05:55,880
+Şöyle söyleyeyim ona geri döndüğünde geri butonunu çağırdığında onu çağıracaksın yeni bir instance yaratacak nasıl olabilir diye düşünüyorum.
+
+859
+02:05:55,880 --> 02:06:10,340
+Hocam düğmeye bastığımızda geri tuşunun işlevini yapan bir fonksiyon tanımlayabiliyor musun?
+
+860
+02:06:10,340 --> 02:06:25,340
+Evet onu söyledim onu yapabiliriz ama ekranda o zaman şey diyor geri tuşuna bastığımızda geri tuşun işlevinden çok yeni bir aktivite nesnesi yaratmış oluyoruz.
+
+861
+02:06:25,340 --> 02:06:30,340
+Eski aktivite nesnesini üzerine yeni bir aktivite nesnesi oluşturmuş.
+
+862
+02:06:30,340 --> 02:06:35,340
+Mesela bu sefer de eski aktivitedeki verileri kaybetmiş olurum.
+
+863
+02:06:35,340 --> 02:06:40,340
+Ama sen eski aktivitedeki verileri de tutmak istiyorsun öyle mi?
+
+864
+02:06:40,340 --> 02:06:43,340
+Ya ben ikisinin arasında dinamik şekilde geçebilmek istiyorum.
+
+865
+02:06:43,340 --> 02:06:59,340
+Ben öyle yapacağına onu ya şey yapabilirsin save instance'a saklayabilirsin bandolabcısına ya da share preferences'a saklayıp o aktivite yüklenirken ilgili değerleri doldurabilirsin.
+
+866
+02:06:59,340 --> 02:07:07,340
+Yani o aktiviten ayrılırken onları kaydedersin tekrar o aktivite instance yaratırken onları yüklersin bunu yapabilirsin.
+
+867
+02:07:07,340 --> 02:07:11,289
+Bu işini görüyor musun?
+
+868
+02:07:11,289 --> 02:07:23,289
+Aklıma şey örneği gelmişti hocam o yüzden biraz tur işareti oldu bu kadar da örneğin Instagram kullanırken o sayfaların hepsinin ayrı aktiviteler olduğunu farz edeyim mesela şu an.
+
+869
+02:07:23,289 --> 02:07:25,289
+Evet.
+
+870
+02:07:25,289 --> 02:07:35,289
+Akışa gittiğim zaman belli bir şeyde gezerken sonrasında arama ekranına geçtiğim zaman akıştaki konumum kaybolmuyor ya da aramada belli bir hesaba girdikten sonra.
+
+871
+02:07:35,289 --> 02:07:37,289
+İşte bunların hepsini save ediyor.
+
+872
+02:07:37,289 --> 02:07:39,289
+Sen o aktivitene ayrılmadan önce.
+
+873
+02:07:39,289 --> 02:07:44,289
+O yüzden zaten share preferences bandol objeleri var yani.
+
+874
+02:07:44,289 --> 02:07:46,289
+Evet [öğrenci] bir şey söyleyeceksin hocam.
+
+875
+02:07:46,289 --> 02:07:59,289
+Hocam bununla ilgili şey diyecektim yani Instagram react native kullandığı için bu tür uygulamalarda Ayos'ta geri tuşu olmadığından dolayı bunu uygulama içindeki bir tuşla da simüle etme şans veriyorlar.
+
+876
+02:07:59,289 --> 02:08:02,289
+Mutlumen onun için yazılmış hazır kodlar vardır orada.
+
+877
+02:08:02,289 --> 02:08:10,289
+Zaten o yüzden kendi geri butonunuzu yazmanız ve butonlarınızda bu özellikleri koymanızı ben öneriyorum.
+
+878
+02:08:10,289 --> 02:08:24,979
+Yani buradaki amaç bu bazı sayfalarda görürsünüz geri butonların olması o söylediğiniz geri dönüşte ilgili objelerin ve bilgilerin tekrar yüklenmesini sağlamak.
+
+879
+02:08:24,979 --> 02:08:30,979
+Yani ancak bunları oradan ayrılırken bir yere saklayıp tekrar geri döndüğünüzde yükleyebilirsiniz.
+
+880
+02:08:30,979 --> 02:08:39,979
+Bunu en hızlı yapmanın yolu da bir formlar için bandol objesi iki bazı küçük primitif değerler için share preferences kullanmak.
+
+881
+02:08:39,979 --> 02:08:45,699
+Android için konuşuyorum tabi.
+
+882
+02:08:45,699 --> 02:08:46,699
+Anladım hocam.
+
+883
+02:08:46,699 --> 02:08:52,699
+Araştırıcım kesin dinamik bir yolu vardır da büyük ihtimal daha komplike bir yapıladır.
+
+884
+02:08:52,699 --> 02:08:55,699
+Ben bilmiyorum öğrenirsen paylaşırsın.
+
+885
+02:08:55,699 --> 02:08:58,699
+Teşekkür ederim hocam.
+
+886
+02:08:58,699 --> 02:13:07,479
+[öğrenci] görüyor musun ekranı?
+
+887
+02:13:07,479 --> 02:13:13,930
+Görüyorum hocam.
+
+888
+02:13:13,930 --> 02:13:16,930
+Barış'ın gönderdiği linki tıkladım.
+
+889
+02:13:16,930 --> 02:13:17,930
+Açtım.
+
+890
+02:13:17,930 --> 02:13:20,930
+Ha on linki görmedim bir bakayım.
+
+891
+02:13:20,930 --> 02:13:39,989
+Ha bu işte aktiviteyi yok eden destro ediyor yine sanırım.
+
+892
+02:13:39,989 --> 02:13:40,989
+Evet evet destro ediyor.
+
+893
+02:13:40,989 --> 02:13:42,989
+Ben de onu soracaktım [öğrenci]'a.
+
+894
+02:13:42,989 --> 02:13:48,989
+Bunu şeyde kullanmıştım ben de geri dönerken cancel butonunda.
+
+895
+02:13:48,989 --> 02:13:55,609
+Barış bunun özellikle seçmenin bir sebebi var mı?
+
+896
+02:13:55,609 --> 02:13:58,590
+Yok hocam.
+
+897
+02:13:58,590 --> 02:14:01,590
+Yok hocam yani ben bu tarz bir şeyden bahsettiğim zaman.
+
+898
+02:14:01,590 --> 02:14:03,590
+O tam tersini istiyor [öğrenci] onun.
+
+899
+02:14:03,590 --> 02:14:09,590
+Finiş olmasın ve destroy olmadan ben o aktiviteye geri döneyim istiyor.
+
+900
+02:14:09,590 --> 02:14:18,590
+Onu tek tek koruyabilirsek aslında ya hiçbir şekilde depolama şeyine de ihtiyacımız kalmayacak diye tahmin ediyorum.
+
+901
+02:14:18,590 --> 02:14:29,590
+Evet şimdi ekran yani güzel sorular soruyorsun ama şu anda sınıfın geri kalanıyla da bir kez daha konuşalım.
+
+902
+02:14:29,590 --> 02:14:38,590
+Şu anda arkadaşlar bu adapter'ın oluşturulması ile ilgili Recycler View'un oluşturulması ile ilgili sorun yaşayan var mı?
+
+903
+02:14:38,590 --> 02:14:40,590
+Soru sormak isteyen var mı?
+
+904
+02:14:40,590 --> 02:15:21,659
+Herhangi bir Recycler View ile ilgili görmek istediğiniz bir kod ekranı var mı?
+
+905
+02:15:21,659 --> 02:15:28,479
+Şu ekrana geçerseniz bizim için daha iyi olur dediğiniz bir ekran var mı?
+
+906
+02:15:28,479 --> 02:15:38,420
+Evet [öğrenci].
+
+907
+02:15:38,420 --> 02:15:40,420
+Hocam import kısmını açabilir misiniz?
+
+908
+02:15:40,420 --> 02:15:42,420
+Sadece bir şey merak ettim de.
+
+909
+02:15:42,420 --> 02:15:43,420
+Tabii.
+
+910
+02:15:43,420 --> 02:16:47,139
+Teşekkürler.
+
+911
+02:16:47,139 --> 02:16:52,139
+Soruları farklı bir formatta saklayan var mı?
+
+912
+02:16:52,139 --> 02:16:59,139
+Yani dosyada ya da beri tabanında şu ana kadar bunu gerçekleştirmiş, implement etmiş olan var mı?
+
+913
+02:16:59,139 --> 02:17:03,139
+Hepsi sadece bellekleme saklıyorsunuz objelerde.
+
+914
+02:17:03,139 --> 02:17:14,579
+Ereliste.
+
+915
+02:17:14,579 --> 02:17:18,579
+Soruları beri tabanında ya da dosyada saklayan var mı?
+
+916
+02:17:18,579 --> 02:17:24,379
+Şu anda bunu implement etmiş olan.
+
+917
+02:17:24,379 --> 02:17:26,379
+Peki hiç kimse yapmadı herhalde.
+
+918
+02:17:26,379 --> 02:17:35,309
+Ereliste saklamayı başarmış olan var mı?
+
+919
+02:17:35,309 --> 02:17:37,309
+Soru create etmiş olan var mı?
+
+920
+02:17:37,309 --> 02:17:39,309
+O ekranı tamamlamış olan.
+
+921
+02:17:39,309 --> 02:17:51,639
+Hocam muhtemelen henüz menü yapıyor arkadaşlarım diye tahmin ediyorum.
+
+922
+02:17:51,639 --> 02:17:56,639
+Geçtiğimiz hafta soru create etme işlemi ile ilgili konuşmuştuk.
+
+923
+02:17:56,639 --> 02:18:00,639
+Yani ders saatinde zaten bitirmeniz pek mümkün değil.
+
+924
+02:18:00,639 --> 02:18:03,639
+Dersin dışında yapan olduğumu diye merak ettim.
+
+925
+02:18:03,639 --> 02:18:08,639
+Bu işi hızlandırmak için ne yapabiliriz acaba?
+
+926
+02:18:08,639 --> 02:18:20,899
+Sizin biraz daha olayın içine girmeniz için tavsiyesi olan var mı?
+
+927
+02:18:20,899 --> 02:19:08,430
+Küstünüz konuşmuyor musunuz?
+
+928
+02:19:08,430 --> 02:19:12,430
+Şu anda yaptığımız işle ilgili sorusu olan var mı?
+
+929
+02:19:12,430 --> 02:19:15,430
+Anlamadığınız kısım var mı?
+
+930
+02:19:15,430 --> 02:19:16,430
+Sorabilirsiniz.
+
+931
+02:19:16,430 --> 02:19:28,059
+Ya da sizin için çok karışıksa farklı bir şekilde tekrar anlatmaya çalışabilirim.
+
+932
+02:19:28,059 --> 02:19:34,059
+Çünkü yapıp yapamadığınızı, ilerleyip ilerleyemediğimizi anlamadığım için.
+
+933
+02:19:34,059 --> 02:19:37,059
+Hani şu anda ilerlediğiniz için mi ses çıkarmıyorsunuz?
+
+934
+02:19:37,059 --> 02:19:40,059
+Yoksa uğraştığınız için mi ses çıkarmıyorsunuz?
+
+935
+02:19:40,059 --> 02:19:42,059
+Onu anlayabilmiş değilim.
+
+936
+02:19:42,059 --> 02:19:44,059
+Evet [öğrenci] teşekkür ediyorum dinliyorum.
+
+937
+02:19:44,059 --> 02:19:50,059
+Hocam şu an yaptığımız şeyle alakalı değil ama bu soru havuza oluşturmaya çalışıyorum aslında database de şu anda.
+
+938
+02:19:50,059 --> 02:19:51,059
+Peki.
+
+939
+02:19:51,059 --> 02:19:56,059
+Bunun için chip grup kullandım ama hani uygun olur mu acaba?
+
+940
+02:19:56,059 --> 02:19:58,059
+Nasıl yani?
+
+941
+02:19:58,059 --> 02:20:03,059
+Burada bir tane komponent buldum ben daha önce hiç kullanmadığım bir komponent chip grup.
+
+942
+02:20:03,059 --> 02:20:07,059
+Bunun içine çipleri ekliyoruz ve mesela bir soru var.
+
+943
+02:20:07,059 --> 02:20:12,059
+Dört tane chip koydum diyelim bunlardan bir tanesini check etmek zorunda kullanıcı.
+
+944
+02:20:13,059 --> 02:20:16,059
+Şimdi bu chip grup dedin değil mi yanlış anlamıyorum.
+
+945
+02:20:16,059 --> 02:20:18,059
+Evet evet chip grup.
+
+946
+02:20:18,059 --> 02:20:20,059
+Ben onu daha önce duymadım.
+
+947
+02:20:20,059 --> 02:20:23,059
+Bu bir hazır bir API mı?
+
+948
+02:20:23,059 --> 02:20:28,059
+Yok hayır hocam şey bu design kısmında mesela şu an XML açtık.
+
+949
+02:20:28,059 --> 02:20:30,059
+Ha şey şunu söylüyorsun.
+
+950
+02:20:30,059 --> 02:20:33,059
+Pardon bir dakika o zaman dur hemen açalım.
+
+951
+02:20:33,059 --> 02:20:36,059
+Design değil de evet şu kısım.
+
+952
+02:20:36,059 --> 02:20:39,059
+Buradaki UI widgetleri söylüyorsun herhalde değil mi?
+
+953
+02:20:39,059 --> 02:20:41,059
+Evet evet butonun içinde olması lazım.
+
+954
+02:20:41,059 --> 02:20:42,059
+Şunu diyorsun.
+
+955
+02:20:42,059 --> 02:20:44,059
+Ha chip grup tamam tamam tamam.
+
+956
+02:20:44,059 --> 02:20:45,059
+Şu anda anladım.
+
+957
+02:20:45,059 --> 02:20:47,059
+Evet dinliyorum seni.
+
+958
+02:20:47,059 --> 02:20:49,059
+Çünkü indirmen gerekiyor.
+
+959
+02:20:49,059 --> 02:20:51,059
+Bunun bütün hepsinde tanımlı değil bunlar.
+
+960
+02:20:51,059 --> 02:20:56,059
+Ha bununla yapmaya çalışıyorum şu an ama hani uygun mu değil mi pek bilemedim.
+
+961
+02:20:56,059 --> 02:21:00,059
+Şu an soru sayısını işte arttırmaya çalışıyorum database deki.
+
+962
+02:21:00,059 --> 02:21:07,059
+İşte çekip böyle tek tek tek sweep'lerin içerisinden set edip daha sonra bunların cevaplarını da set edip.
+
+963
+02:21:07,059 --> 02:21:09,059
+En sonunda da işaretli şey doğru mu yanlış mı?
+
+964
+02:21:09,059 --> 02:21:12,059
+Yani şöyle tek bir sayfada bütün sorular var.
+
+965
+02:21:12,059 --> 02:21:16,059
+Submit ettiği zaman da hani hangisi doğru hangisi yanlış bunları görmüş olacak.
+
+966
+02:21:16,059 --> 02:21:18,059
+Mantıklı mı acaba?
+
+967
+02:21:18,059 --> 02:21:20,059
+Mantıklı mantıklı kullanabilirsin.
+
+968
+02:21:20,059 --> 02:21:22,059
+Bu şekilde gidiyorum hocam.
+
+969
+02:21:22,059 --> 02:21:24,059
+Güzel teşekkür ederim sağ ol paylaştığın için.
+
+970
+02:21:24,059 --> 02:22:39,659
+Rica ederim.
+
+971
+02:22:39,659 --> 02:22:44,659
+Evet [öğrenci] bugün dosya nasıl kaydedeceğimiz noktasına değineceğimizi size bahsetmiş.
+
+972
+02:22:44,659 --> 02:22:49,659
+Evet ben de istiyordum ama şu anda o noktaya gelebilecek miyiz [öğrenci] göreceğiz.
+
+973
+02:22:49,659 --> 02:22:51,659
+Biraz daha bekliyorum.
+
+974
+02:22:51,659 --> 02:23:01,659
+Herkesten bir yanıt gelsin diye genel olarak sınıfın yapıp yapamadığı konusunda bilgi sahibi olursam o zaman dosya tarafında da geçebiliriz tabi ki.
+
+975
+02:23:01,659 --> 02:24:08,430
+Hocam XML kısmında recycle web'i kullandığınız kısmı bir daha gösterebilir misiniz?
+
+976
+02:24:08,430 --> 02:24:09,430
+Tabi.
+
+977
+02:24:09,430 --> 02:24:20,909
+Layout weight tam ne oluyor hocam?
+
+978
+02:24:20,909 --> 02:24:24,309
+Bakalım.
+
+979
+02:24:24,309 --> 02:24:26,309
+Layout weight.
+
+980
+02:24:26,309 --> 02:24:28,309
+Evet.
+
+981
+02:24:28,309 --> 02:24:38,309
+Bu bildiğim kadarıyla recycler view'un şöyle söyleyelim.
+
+982
+02:24:38,309 --> 02:24:44,000
+İfade etsem acaba diye düşünüyorum.
+
+983
+02:24:44,000 --> 02:25:07,139
+Görsel olarak oturduğu çerçeveye ne kadar nasıl denir tam oturduğunu ya da biraz daha iç kısma doğru oturduğunu anlatan bir parametre.
+
+984
+02:25:07,139 --> 02:25:17,139
+Bildiğim kadarıyla yani biraz daha içe basıyor mu biraz daha dışa doğru mu tam ekranı kaplıyor mu bunu gösteren bir parametre bildiğim kadarıyla.
+
+985
+02:25:17,139 --> 02:29:09,159
+Peki o zaman isterseniz burada bahsettiğimiz gibi birazcık data'yı nasıl saklarız noktasında konuşalım.
+
+986
+02:29:09,159 --> 02:29:13,159
+Onun için slide'leri açacağım şimdi kod paylaşımına ara veriyorum.
+
+987
+02:29:13,159 --> 02:29:17,159
+Sizin ilerleyebildiğiniz bir sorun yaşamadığınızı varsayıyorum.
+
+988
+02:29:17,159 --> 02:29:22,170
+Ben slide'i açayım.
+
+989
+02:29:22,170 --> 02:30:22,819
+Evet şu anda veri saklamak için Android ortamında network seçenekler var onlara konuşacağımız slide'mıza başlıyoruz.
+
+990
+02:30:22,819 --> 02:30:29,819
+Birincisi Android'de internal storage ve external storage kavramı var.
+
+991
+02:30:29,819 --> 02:30:45,819
+App specific storage'da aslında bilgilerin internal storage'da kaydedilmesi gerektiğini ve diğer gruplar tarafından yani herhangi başka uygulamalar tarafından da erişilemeyeceğini bize söylüyor.
+
+992
+02:30:45,819 --> 02:30:56,819
+Bu yüzden sizin uygulamanızın hassas verileri varsa mümkünse internal storage'da saklamanız tavsiye ediliyor.
+
+993
+02:30:56,819 --> 02:31:11,819
+Bunun ötesinde external storage özellikle bir SD card üzerinden hem çıkartılabilir fiziksel olarak hem de uydutusundan internal storage'a göre daha fazla bir alan size sunuyor.
+
+994
+02:31:11,819 --> 02:31:16,819
+Ortak herkesin erişebileceği dosyaları saklamak için ideal bir alan.
+
+995
+02:31:16,819 --> 02:31:39,819
+Özel herhangi bir gizli bir bilginle olmadığı uygulamalar özellikle mesela oyun uygulamaları çok büyük dosyaları oyun uygulamalarını da küçük daha küçük görecek küçük olan internal storage'da saklamak yerine external storage'da saklamayı tercih edebilirsiniz.
+
+996
+02:31:39,819 --> 02:31:51,819
+Paylaşılan bir alan var daha çok burada multi media dökümanlarını saklamayı tercih ediyoruz. Bunun için bir media framework'ı media API'i var.
+
+997
+02:31:51,819 --> 02:32:02,819
+Böylece resim, video, ses dosyası gibi dosyaları tüm uygulamaların ortak bir noktada paylaşabildiği bir yerde saklıyorsunuz.
+
+998
+02:32:03,819 --> 02:32:19,819
+Daha kolay gerçekleşiyor. Daha primitif verileri yani integer, boolean, string, float gibi verileri özellikle preference istah saklamayı tercih ediyoruz.
+
+999
+02:32:19,819 --> 02:32:27,819
+Burada kişisel tercihler uygulamayla ilgili burada saklanabilir.
+
+1000
+02:32:27,819 --> 02:32:40,819
+Ya da file yazmanın daha maniyetli olduğu key value şeklinde saklamanın daha hızlı veri yeri şimdi sağlayacak tüm veriler preferences, shared preferences hepsi kullanılarak saklanıyor.
+
+1001
+02:32:40,819 --> 02:32:52,819
+Tabii ki bir de ilişkisel veri tabanı kullanabiliyorsunuz. Bunun için de genelde SQLite veri tabanı kullanılıyor. Bu noktada Room library'sinden faydalanabiliyorsunuz.
+
+1002
+02:32:52,819 --> 02:33:02,819
+Genel olarak bu veri saklama yöntemleriyle ilerliyoruz. Tabii burada sorulması gereken bazı sorular var.
+
+1003
+02:33:02,819 --> 02:33:13,819
+Ne kadarlık bir alana ihtiyaç duyuyorsunuz. Çünkü uygulama için saklayacağınız verinin internet storage'da belli bir limiti var. Buna dikkat etmeniz gerekiyor.
+
+1004
+02:33:13,819 --> 02:33:30,819
+Saklayacağınız verinin açıkçası ne kadar kritik olduğu, ne kadar gizli olduğu ya da ne kadar erişilmez olması gerektiği sizin saklayacağınız yeri belirliyor.
+
+1005
+02:33:30,819 --> 02:33:43,819
+Eğer herhangi bir böyle bir kıstınız yoksa rahatlıklı external storage'u kullanabiliyorsunuz. Tabii ne tarz veriler saklayacağınız da burada önemli.
+
+1006
+02:33:43,819 --> 02:33:59,819
+Biraz önce bahsettiğimiz gibi media content'ı saklayacaksanız, shared storage'u kullanmak ya da structured bir data saklayacaksanız bir veri tabanından ya da shared preferences yapısından faydalanmak açıkçası daha mantıklı.
+
+1007
+02:33:59,819 --> 02:34:10,819
+Son olarak da tabii ki gizlilik ve kişiye özel olma durumu bu da datanızın ne kadar hassas olduğu ile alakalı.
+
+1008
+02:34:10,819 --> 02:34:35,819
+Burada özellikle hassas verinizi external storage'a koymadan, mümkünse küçükse shared preferences'ta saklamak, akıllıca olanı ya da gerekli önemleri alarak veri tabanı ve internal storage'da da bunu saklayabilirsiniz ki bunu zaten işletim sistemi seviyesinde size bu kontrolü Android veriyor.
+
+1009
+02:34:35,819 --> 02:34:48,819
+Son sürümlerle birlikte daha spesifik permission'lar da ortaya koydu Android.
+
+1010
+02:34:48,819 --> 02:34:56,819
+Burada şimdi ilk başta seçeneklerimizi bir tartışalım ondan sonra bu spesifik permission'lar neler birazcık onlardan bahsedelim.
+
+1011
+02:34:56,819 --> 02:35:09,819
+App-specific dosyalar yani uygulama için kullanacağınız dosyalar için get-file-steal, get-cache-steal gibi metotlar kullanabiliyorsunuz.
+
+1012
+02:35:09,819 --> 02:35:15,819
+External storage için de bu sefer get-external-file-steal ve get-external-cache-steal metotlarını çağırıyorsunuz.
+
+1013
+02:35:15,819 --> 02:35:21,819
+Bu noktada permission ile alakalı bazı ilgilendirmeler var.
+
+1014
+02:35:21,819 --> 02:35:26,819
+Internal storage için herhangi bir permission'dan bahsetmiyoruz zaten bu koruma altında.
+
+1015
+02:35:26,819 --> 02:35:42,819
+Onun dışında 4.4'ün üzerinde çalışan sürüme sahip olan cihazlarla da herhangi bir şekilde ekstra bir izin alınması gerekli değil söz konusu değil.
+
+1016
+02:35:42,819 --> 02:35:52,819
+Ve tabi bu doğrultuda internal storage'daki dosyalara direktörlere dışarıdan bir erişim söz konusu değil.
+
+1017
+02:35:52,819 --> 02:36:01,819
+Ama herhangi bir external storage'taysanız burada bir erişime mutlaka açmış oluyorsunuz dosyalarınızı.
+
+1018
+02:36:01,819 --> 02:36:06,819
+Öte yandan medya dosyalarından bahsettik bunu medya store API ile eriştirebilir kılıyorsunuz.
+
+1019
+02:36:07,819 --> 02:36:14,819
+İşte burada ses dosyaları, resim dosyaları, video dosyaları söz konusu.
+
+1020
+02:36:14,819 --> 02:36:21,819
+Read external storage ve write external storage permission'lerini almanız bekleniyor.
+
+1021
+02:36:21,819 --> 02:36:33,819
+Bunun ötesinde yeni OMS sürümüyle beraber gelen biraz daha dosyalar üzerinde spesifik izinleri yönetebileceğiniz bir yapı da kullanılıyor Android'da.
+
+1022
+02:36:33,819 --> 02:36:41,819
+Çünkü şu anki burada gördüğünüz yapıda internal ve external storage üzerinde bir kontrolünüz var.
+
+1023
+02:36:41,819 --> 02:36:45,819
+Ama external'a geçtiğiniz zaman özel bir kontrol mekanizması yok.
+
+1024
+02:36:45,819 --> 02:36:58,819
+Fakat yeni sürümle birlikte artık tüm dosyalar üzerinde bir hakimiyetiniz söz konusu olmaya başlıyor.
+
+1025
+02:36:58,819 --> 02:37:08,819
+Bunun ötesinde burada işte gerek shared preferences, gerekse veri tabanı üzerinde çeşitli libri'ler kullanılıyor.
+
+1026
+02:37:08,819 --> 02:37:13,819
+Shared preferences'ın ötesinde bir de preferences libri'si var.
+
+1027
+02:37:13,819 --> 02:37:19,819
+Bu daha çok uygulamaya spesifik özellikler saklamak için kullanılıyor.
+
+1028
+02:37:19,819 --> 02:37:24,819
+Bunun için de Jetpack preferences kütüphanesinden faydalanabilirsiniz.
+
+1029
+02:37:24,819 --> 02:37:35,819
+Özellikle dışarıdan network üzerinden indirdiğiniz dosyalar da dair olmak üzere.
+
+1030
+02:37:35,819 --> 02:37:47,819
+Herkesin paylaşabileceği türde dosyaları storage access framework üzerinden erişerek saklama şansına sahipsiniz.
+
+1031
+02:37:47,819 --> 02:37:54,819
+Burada diğer uygulamaların da bu dosyalara erişebildiğini unutmamanız gerekiyor.
+
+1032
+02:37:54,819 --> 02:37:58,819
+Yeni yine sürümle birlikte gelen bir yapı var.
+
+1033
+02:37:58,819 --> 02:38:03,819
+Bu yapı size data setlerin de ortak olarak erişilmesini sağlıyor.
+
+1034
+02:38:03,819 --> 02:38:11,819
+Çünkü günümüzde makine öğrenmesi teknikleri çok yaygınlaştığı için artık data set paylaşımları çok artmış durumda.
+
+1035
+02:38:11,819 --> 02:38:19,819
+Android bunu gözeterek data setlerin de paylaşımını sağlayacak bir yapıyla karşımıza gelmiş durumda.
+
+1036
+02:38:19,819 --> 02:38:29,819
+Şimdi dört temel veri paylaşım noktası söz konusu internal file storage, external file storage, shared preferences ve databases.
+
+1037
+02:38:29,819 --> 02:38:31,819
+Bunlar en temel olanları.
+
+1038
+02:38:31,819 --> 02:38:45,819
+Yukarıda gördüğünüz diğer medya ve document and other files'daki storage access framework bunların içerisinde biraz daha ayrışıyorlar.
+
+1039
+02:38:45,819 --> 02:38:50,819
+Dört temelin altında bu başlıkların geldiğini rahatlıkla söyleyebiliriz.
+
+1040
+02:38:50,819 --> 02:38:57,819
+Tabii uygulamalar arasında dosya paylaşımı ve içerik paylaşımı yapacaksanız,
+
+1041
+02:38:57,819 --> 02:39:02,819
+o zaman content provider'da bir seçenek olarak karşınıza çıkıyor.
+
+1042
+02:39:02,819 --> 02:39:11,819
+Daha önce bahsetmiştik rehber bilgilerinin paylaşılması noktasında, mesajların paylaşılması noktasında content provider'dan fayda alınıyoruz diye.
+
+1043
+02:39:11,819 --> 02:39:18,819
+Bunun ötesinde internal storage'a kaydettiğiniz file'lerin dışarıdan erişilemediğini söylemiştik.
+
+1044
+02:39:18,819 --> 02:39:28,819
+Dosya özelinde, internal storage'daki bütün dosyalarınız uygulamanın anlaşılması durumunda tamamıyla siliniyor.
+
+1045
+02:39:28,819 --> 02:39:37,819
+Ama external storage'a kaydettikleriniz bu şekilde uygulamayı kaldırsanız da silinmiyor.
+
+1046
+02:39:37,819 --> 02:39:39,819
+Orada iki tane seçenek var.
+
+1047
+02:39:39,819 --> 02:39:42,819
+Hangi seçenekle açtığınıza bağlı olarak directory'yi,
+
+1048
+02:39:42,819 --> 02:39:50,819
+eğer ilgili seçenekle açmışsanız, onların silinmesini sağlayabilirsiniz ama genel bir seçenekle açtıysanız,
+
+1049
+02:39:50,819 --> 02:39:56,819
+o zaman o dosyanın external storage'ta kalmasını sağlıyorsunuz.
+
+1050
+02:39:56,819 --> 02:39:57,819
+Bu şu açılar önemli.
+
+1051
+02:39:57,819 --> 02:40:06,819
+Örneğin resim dosyası saklayacaksınız, video, bu tarz paylaşılan dosyaların uygulamayı kaldırdığınızda da bir resim çektiyseniz,
+
+1052
+02:40:06,819 --> 02:40:19,819
+orada kalmasını istiyorsanız bunu external tarafta saklamak daha akıllıca ya da media storage altında saklamak daha akıllıca böylece ulaşılabilir kılıyorsunuz.
+
+1053
+02:40:19,819 --> 02:40:23,819
+Son olarak şunu söyleyelim.
+
+1054
+02:40:23,819 --> 02:40:35,819
+Örneğin external storage bir SD kart noktasında müdahale edilebilir olduğu için fiziksel olarak ve dışarıdan bir cihazınızı,
+
+1055
+02:40:35,819 --> 02:40:46,819
+USB cihazı gibi bağladığınız zaman tüm dosyalar rahatlıkla sizin kontrolünüz dışında bir USB gibi bilgisayara aktarılabiliyor.
+
+1056
+02:40:46,819 --> 02:40:56,819
+Bu açıdan uygulamanızın kritik seviyesine bağlı olarak external storage kullanıp kullanmamaya programcının karar vermesi gerekiyor.
+
+1057
+02:40:56,819 --> 02:41:06,819
+Burada programcının karar vermesi gerekiyor derken install location'ı burada belirleyebiliyorsunuz manifest tarafından.
+
+1058
+02:41:06,819 --> 02:41:15,819
+Bu önemli, bunu install location olarak external'ı önerebiliyorsunuz kullanıcıya.
+
+1059
+02:41:15,819 --> 02:41:21,819
+Bu şekilde kullanıcının da onayıyla uygulamayı external storage'a yükleme imkanı sunabiliyorsunuz.
+
+1060
+02:41:21,819 --> 02:41:35,819
+Bu sayede özellikle büyük boyutlu görsel içerik barındıran uygulamaların internal storage'ta çok fazla yer kaplamasını da önüne geçmiş oluyorsunuz.
+
+1061
+02:41:35,819 --> 02:41:45,819
+Burada tabi bir de bağladığınız device'in içerisindeki dosyalara erişmek isteyebilirsiniz.
+
+1062
+02:41:45,819 --> 02:41:51,819
+Bunun için Android Stüdyoda Veev'un altında Tool Windows var.
+
+1063
+02:41:51,819 --> 02:42:03,819
+Oraya girdiğinizde Device File Explorer'ı görüyorsunuz ve bu Device File Explorer'la bağladığınız cihazın içerisindeki bütün klasörler içerisinde yazma şansına sahipsiniz.
+
+1064
+02:42:03,819 --> 02:42:16,819
+Bu sayede doğrudan ürettiğiniz bir dosyayı telefonunuzun içerisinden bilgisayara aktarma şansınız da böylece mümkün hale geliyor.
+
+1065
+02:42:16,819 --> 02:42:22,819
+Bu da Android Stüdyon'un size sağlamış olduğu bir başka özellik.
+
+1066
+02:42:22,819 --> 02:42:30,819
+Şimdi saat 16.47 oldu. Bu noktada artık yavaş yavaş ders sonlandıralım.
+
+1067
+02:42:30,819 --> 02:42:41,819
+Önümüzdeki sınav haftasından sonraki hafta burada bahsettiğimiz konuları çok daha detaylı bir şekilde anlatıp bir sonraki hafta file'leri de bitirmiş olacağız.
+
+1068
+02:42:41,819 --> 02:42:44,819
+File'lerden sonra sensörler gelecek.
+
+1069
+02:42:44,819 --> 02:42:49,819
+Sensörlerle ilgili değişik bilgiler aktaracağım.
+
+1070
+02:42:49,819 --> 02:42:57,819
+Onun hemen arkasından da Broadcast Receiver'lara geçeceğiz ve böyle yolumuza devam ediyor olacağız.
+
+1071
+02:42:57,819 --> 02:43:03,469
+Sorusu olan var mıdır?
+
+1072
+02:43:03,469 --> 02:43:05,469
+Evet [öğrenci].
+
+1073
+02:43:05,469 --> 02:43:12,469
+Hocam sınav haftasında görüşemeyeceğimiz için ondan sonraki hafta için bize bir yol haritası gibi bir şey söyleyebilir misiniz?
+
+1074
+02:43:12,469 --> 02:43:18,469
+Uygulamada nerelere doğru ilerleyelim, neler yapmaya başlayalım eğer zamanınız kalırsa?
+
+1075
+02:43:18,469 --> 02:43:28,469
+Şöyle uygulamada bugün konuştuğumuz soruların listelenmesi, sınavın yaratılması, onun dışında menünün oluşturulması ekranlarını
+
+1076
+02:43:28,469 --> 02:43:42,469
+sınav sonrasındaki hafta o bir haftada bitirecek şekilde planınızı yaparsanız o haftanın sonuna doğru da ben sizden bu ilgili yaptığımız kodları istiyor olacağım.
+
+1077
+02:43:42,469 --> 02:43:48,469
+Muhtemelen bunları anlattığınız bir video çekmenizi isteyeceğim.
+
+1078
+02:43:48,469 --> 02:43:54,469
+Kodları github linki üzerinden yüklemenizi ve paylaşmanızı isteyeceğim.
+
+1079
+02:43:54,469 --> 02:44:01,469
+Bunlarla ilgili detaylı bilgiyi önümüzdeki günlerde sizinle paylaşıyor olurum.
+
+1080
+02:44:01,469 --> 02:44:06,469
+Ama bugün size bahsettiğim bütün özellikleri ilk yani ikinci ödevimiz oluyor.
+
+1081
+02:44:06,469 --> 02:44:09,469
+Ödev de sizden talep ediyor olacağım.
+
+1082
+02:44:09,469 --> 02:44:11,469
+Teşekkürler hocam.
+
+1083
+02:44:11,469 --> 02:44:13,469
+Rica ederim.
+
+1084
+02:44:13,469 --> 02:44:18,319
+Başka soru soran var mı?
+
+1085
+02:44:18,319 --> 02:44:22,319
+Peki o zaman hepinize sınavlarınıza başarılar diliyorum.
+
+1086
+02:44:22,319 --> 02:44:24,319
+Sağlıklı günler diliyorum.
+
+1087
+02:44:24,319 --> 02:44:26,319
+Kendinize iyi bakın.
+
+1088
+02:44:26,319 --> 02:44:28,319
+Görüşmek üzere.
+
+1089
+02:44:28,319 --> 02:44:30,319
+Görüşmek üzere hocam.
+
+1090
+02:44:30,319 --> 02:44:32,319
+İyi haftalar hocam.
+
+1091
+02:44:32,319 --> 02:44:34,319
+İyi akşamlar hocam.
+
+1092
+02:44:34,319 --> 02:44:36,319
+İyi akşamlar.
+
