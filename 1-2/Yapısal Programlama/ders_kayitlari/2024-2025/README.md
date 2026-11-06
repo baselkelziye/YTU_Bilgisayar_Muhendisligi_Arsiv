@@ -5,27 +5,31 @@
 ### 📋 Genel Bilgiler
 * **Ders:** Yapısal Programlama (BLM1031)
 * **Hoca:** Dr. Ahmet Elbir
-* **Dönem:** Bahar
+* **Dönem:** BAHAR
 * **Akademik Yıl:** 2024-2025
 * **Şube:** BLM1031 - 3
 
-Bu dizin, ilgili ders kayıtlarının altyazı özetlerini, çalışma notlarını ve PDF kaynaklarını içermektedir.
+Bu dizin, ilgili ders kayıtlarının altyazılarını, kısa notlarını ve genişletilmiş notlarını içermektedir.
+
+* **Kısa not:** Tekrar için. Dersin konuları, hocanın vurguları ve kısa tekrar maddeleri.
+* **Genişletilmiş not:** Dersi izlemeden öğrenmek için. Dersin anlatım akışını baştan sona, örnekleri ve soru-cevaplarıyla anlatır.
+* `altyazilar/`: ders kayıtlarının altyazıları (.srt). Notların PDF'leri `kisa_notlar/` ve `genisletilmis_notlar/` klasörlerinde, markdown kaynakları bu klasörlerin içindeki `markdown/` klasöründedir.
 
 ## 📚 Ders Müfredatı ve Belge Dizini
 
-Aşağıdaki tabloda her bir dersin konusu, kaynak markdown dosyası ve doğrudan indirilebilir PDF formatındaki derlenmiş halleri listelenmiştir. Ders numaraları, kayıt arşivindeki ders kaydı sıra numaralarıdır (hafta numarası değildir).
+Aşağıdaki tabloda her bir dersin konusu ile kısa ve genişletilmiş notlarının markdown ve PDF halleri listelenmiştir. Ders numaraları, kayıt arşivindeki ders kaydı sıra numaralarıdır (hafta numarası değildir).
 
-| Ders No | Ders İçeriği / Konu Başlıkları | Kaynak Notlar (Markdown) | Çalışma Dosyası (PDF) |
+| Ders No | Ders İçeriği / Konu Başlıkları | Kısa Not | Genişletilmiş Not |
 | :---: | :--- | :---: | :---: |
-| **Ders 2** | Bilgisayar Mimarisi Tekrarı, Veri Tipleri ve IEEE 754, Tip Dönüşümü, Operatörler, printf Biçimlendirme ve enum | [Özet](altyazi_ozetleri/ders_2_ozet.md) | [PDF (İndir)](ders_2_ozet.pdf) |
-| **Ders 3** | typedef, İfadeler ve Operatörler (Kalan, Bit, Koşul), Kontrol Akışı, switch ve Döngüler, Makrolar ve Koşullu Derleme | [Özet](altyazi_ozetleri/ders_3_ozet.md) | [PDF (İndir)](ders_3_ozet.pdf) |
-| **Ders 4** | Uygulama: Pisagor Üçlüsü ve 2B Konvolüsyon; Örüntü Eşleme, Matriste Arama ve Çok Boyutlu Diziler | [Özet](altyazi_ozetleri/ders_4_ozet.md) | [PDF (İndir)](ders_4_ozet.pdf) |
-| **Ders 6** | Uygulama-2 (Zar Olasılık Matrisi, Collatz, Fatura, Lab 1 Çözümü), realloc, Düzensiz Matris, Fonksiyondan Dizi Döndürme ve main Argümanları | [Özet](altyazi_ozetleri/ders_6_ozet.md) | [PDF (İndir)](ders_6_ozet.pdf) |
-| **Ders 7** | Dinamik Matris Çarpımı, Oy Sayma Algoritmaları, Polinomların Dizide Tutulması ve Struct'lara Giriş | [Özet](altyazi_ozetleri/ders_7_ozet.md) | [PDF (İndir)](ders_7_ozet.pdf) |
-| **Ders 9** | Uygulama-3: Struct ile Çalışan Veritabanı, Dinamik Dizi ve Bağlı Liste Karşılaştırması, Başlık Dosyaları ve Makrolar | [Özet](altyazi_ozetleri/ders_9_ozet.md) | [PDF (İndir)](ders_9_ozet.pdf) |
-| **Ders 11** | Bağlı Liste Kodlama (Ekleme, Yazdırma, Silme), Yapı Hizalaması, Bit Alanları, Union ve Özyineleme | [Özet](altyazi_ozetleri/ders_11_ozet.md) | [PDF (İndir)](ders_11_ozet.pdf) |
-| **Ders 13** | Void İşaretçi, Dosya İşlemlerine Giriş: Stream, Metin ve İkili Dosyalar, fopen Kipleri ve Dönem Projesi | [Özet](altyazi_ozetleri/ders_13_ozet.md) | [PDF (İndir)](ders_13_ozet.pdf) |
-| **Ders 17** | Çok İş Parçacıklı Programlama (pthread) ve void* ile Genel Fonksiyonlar | [Özet](altyazi_ozetleri/ders_17_ozet.md) | [PDF (İndir)](ders_17_ozet.pdf) |
+| **Ders 2** | Bilgisayar Mimarisi Tekrarı, Veri Tipleri ve IEEE 754, Tip Dönüşümü, Operatörler, printf Biçimlendirme ve enum | [Markdown](kisa_notlar/markdown/ders_2_ozet.md) · [PDF](kisa_notlar/ders_2_ozet.pdf) | [Markdown](genisletilmis_notlar/markdown/ders_2_genisletilmis.md) · [PDF](genisletilmis_notlar/ders_2_genisletilmis.pdf) |
+| **Ders 3** | typedef, İfadeler ve Operatörler (Kalan, Bit, Koşul), Kontrol Akışı, switch ve Döngüler, Makrolar ve Koşullu Derleme | [Markdown](kisa_notlar/markdown/ders_3_ozet.md) · [PDF](kisa_notlar/ders_3_ozet.pdf) | [Markdown](genisletilmis_notlar/markdown/ders_3_genisletilmis.md) · [PDF](genisletilmis_notlar/ders_3_genisletilmis.pdf) |
+| **Ders 4** | Uygulama: Pisagor Üçlüsü ve 2B Konvolüsyon; Örüntü Eşleme, Matriste Arama ve Çok Boyutlu Diziler | [Markdown](kisa_notlar/markdown/ders_4_ozet.md) · [PDF](kisa_notlar/ders_4_ozet.pdf) | [Markdown](genisletilmis_notlar/markdown/ders_4_genisletilmis.md) · [PDF](genisletilmis_notlar/ders_4_genisletilmis.pdf) |
+| **Ders 6** | Uygulama-2 (Zar Olasılık Matrisi, Collatz, Fatura, Lab 1 Çözümü), realloc, Düzensiz Matris, Fonksiyondan Dizi Döndürme ve main Argümanları | [Markdown](kisa_notlar/markdown/ders_6_ozet.md) · [PDF](kisa_notlar/ders_6_ozet.pdf) | [Markdown](genisletilmis_notlar/markdown/ders_6_genisletilmis.md) · [PDF](genisletilmis_notlar/ders_6_genisletilmis.pdf) |
+| **Ders 7** | Dinamik Matris Çarpımı, Oy Sayma Algoritmaları, Polinomların Dizide Tutulması ve Struct'lara Giriş | [Markdown](kisa_notlar/markdown/ders_7_ozet.md) · [PDF](kisa_notlar/ders_7_ozet.pdf) | [Markdown](genisletilmis_notlar/markdown/ders_7_genisletilmis.md) · [PDF](genisletilmis_notlar/ders_7_genisletilmis.pdf) |
+| **Ders 9** | Uygulama-3: Struct ile Çalışan Veritabanı, Dinamik Dizi ve Bağlı Liste Karşılaştırması, Başlık Dosyaları ve Makrolar | [Markdown](kisa_notlar/markdown/ders_9_ozet.md) · [PDF](kisa_notlar/ders_9_ozet.pdf) | [Markdown](genisletilmis_notlar/markdown/ders_9_genisletilmis.md) · [PDF](genisletilmis_notlar/ders_9_genisletilmis.pdf) |
+| **Ders 11** | Bağlı Liste Kodlama (Ekleme, Yazdırma, Silme), Yapı Hizalaması, Bit Alanları, Union ve Özyineleme | [Markdown](kisa_notlar/markdown/ders_11_ozet.md) · [PDF](kisa_notlar/ders_11_ozet.pdf) | [Markdown](genisletilmis_notlar/markdown/ders_11_genisletilmis.md) · [PDF](genisletilmis_notlar/ders_11_genisletilmis.pdf) |
+| **Ders 13** | Void İşaretçi, Dosya İşlemlerine Giriş: Stream, Metin ve İkili Dosyalar, fopen Kipleri ve Dönem Projesi | [Markdown](kisa_notlar/markdown/ders_13_ozet.md) · [PDF](kisa_notlar/ders_13_ozet.pdf) | [Markdown](genisletilmis_notlar/markdown/ders_13_genisletilmis.md) · [PDF](genisletilmis_notlar/ders_13_genisletilmis.pdf) |
+| **Ders 17** | Çok İş Parçacıklı Programlama (pthread) ve void* ile Genel Fonksiyonlar | [Markdown](kisa_notlar/markdown/ders_17_ozet.md) · [PDF](kisa_notlar/ders_17_ozet.pdf) | [Markdown](genisletilmis_notlar/markdown/ders_17_genisletilmis.md) · [PDF](genisletilmis_notlar/ders_17_genisletilmis.pdf) |
 
 > [!NOTE]
 > 1, 5, 8, 10, 12, 14, 15 ve 16 numaralı ders kayıtları bu şubenin kayıt arşivinde bulunmamaktadır.
@@ -34,7 +38,6 @@ Aşağıdaki tabloda her bir dersin konusu, kaynak markdown dosyası ve doğruda
 
 ### 🔹 Ders 2: Bilgisayar Mimarisi Tekrarı, Veri Tipleri ve IEEE 754, Tip Dönüşümü, Operatörler, printf Biçimlendirme ve enum
 * **Genel Konular:**
-  - Bu saat normalde uygulama saati. Konulardan geri kalmamak için birkaç hafta ders olarak kullanılacak. Ders notları ve derste yazılan kodlar paylaşılan linkte.
   - Bilgisayar mimarisi (kısa tekrar)
     - Von Neumann mimarisi: bir işlemci ve bir ana bellek vardır. Programın komutları ve verileri aynı bellekte durur. Ayrıca giriş/çıkış birimleri vardır.
   - C programının yapısı
@@ -47,6 +50,8 @@ Aşağıdaki tabloda her bir dersin konusu, kaynak markdown dosyası ve doğruda
     - Sayı bilimsel gösterimle yazılır: işaret biti, üs (exponent) ve kesir (fraction/mantissa).
   - Karakterler
     - `char` 1 bayttır, 0-255 arası değer alabilir. ASCII tablosunda her sayı bir sembole karşılık gelir.
+  - Tip dönüşümü (casting)
+    - Bir değişkenin değerini başka bir tipe dönüştürmektir. Küçükten büyüğe veya büyükten küçüğe olabilir, ama bilinçli yapılmalıdır. Derleyici her zaman uyarmaz.
 * **Hocanın Vurgusu:**
   - Örtük dönüşümler daha tehlikelidir, çünkü koddan görünmez.
   - Tam sayı bölmesinde ondalık kısım kesilir, yuvarlama yoktur.
@@ -58,7 +63,6 @@ Aşağıdaki tabloda her bir dersin konusu, kaynak markdown dosyası ve doğruda
 
 ### 🔹 Ders 3: typedef, İfadeler ve Operatörler (Kalan, Bit, Koşul), Kontrol Akışı, switch ve Döngüler, Makrolar ve Koşullu Derleme
 * **Genel Konular:**
-  - Derste Yapay Zeka bölümünden öğrenciler de var. Geçen haftanın kayıtları Online Yıldız'da yayınlanamadığı için hoca WhatsApp kanalındaki linke (Drive) yükledi.
   - `typedef`
     - Var olan bir C tipine yeni bir isim verir: `typedef long int int32;` sonra `int32 j;`.
   - İfadeler (expressions)
@@ -70,9 +74,11 @@ Aşağıdaki tabloda her bir dersin konusu, kaynak markdown dosyası ve doğruda
     - Yalnızca tam sayı operand alır: `6 % 2` geçerli, `6.0 % 2.0` geçersiz.
   - Aritmetik atama operatörleri
     - `m += n + x - y` aslında `m = m + (n + x - y)` demektir.
+  - Arttırma/azaltma operatörleri
+    - `a = b++;` (a=0, b=1): a 1, b 2 olur. `a = ++b;`: önce b 2 olur, a 2 olur.
 * **Hocanın Vurgusu:**
   - `break` yalnızca `switch` içinde.
-    - `continue`, `goto` ve `switch` dışı `break` kullanan çözümler kabul edilmez.
+    - `continue`, `goto` ve `switch` dışı `break` kullanmayın.
   - `if`, `else`, döngü bloklarında tek satır için bile süslü parantez kullanın.
   - Döngü bitince sayaç değişkeninin son değerine dikkat edin.
   - Ondalıklı sayıları `==` ile karşılaştırmayın, tolerans kullanın.
@@ -81,8 +87,6 @@ Aşağıdaki tabloda her bir dersin konusu, kaynak markdown dosyası ve doğruda
 ### 🔹 Ders 4: Uygulama: Pisagor Üçlüsü ve 2B Konvolüsyon; Örüntü Eşleme, Matriste Arama ve Çok Boyutlu Diziler
 * **Genel Konular:**
   - Dersin ilk yarısı uygulama: Arş. Grv. Muhammet Taha Gökcan iki soru çözdü. İkinci yarıda Dr. Ahmet Elbir string ve matris konularıyla devam etti.
-  - Duyurular
-    - Gelecek hafta laboratuvarda, bu haftaya kadarki ve bu hafta işlenecek konulardan quiz tarzında bir soru verilecek ve çözümün yüklenmesi istenecek. Uyulması gereken kurallar ayrıca duyurulacak. Bu haftaki uygulama laboratuvara hazırlıktır.
   - Asistanın sesi kayıtta yer yer kesik ve anlaşılmaz. Kod ayrıntıları ekran görüntülerinden alındı.
   - Soru 1: Pisagor üçlüsü
     - Verilen bir dizide $a^2 + b^2 = c^2$ eşitliğini sağlayan bir üçlü olup olmadığını bulup ekrana yazdıran program. Örnek dizi: 3, 13, 5, 6, 4, 12, 8.
@@ -92,6 +96,8 @@ Aşağıdaki tabloda her bir dersin konusu, kaynak markdown dosyası ve doğruda
     - Keskinleştirme (sharpen): merkezdeki pikselin 5 katından dört komşusu (üst, alt, sol, sağ) çıkarılır.
   - Örüntü eşleme (pattern matching)
     - Bir metinde (text) aranan bir örüntünün (pattern) hangi indisten başladığını bulmak. Word'deki Ctrl+F gibi.
+  - Matris içinde örüntü arama
+    - `#define MAXROW 10`, `#define MAXCOLUMN 10`, `char text[MAXROW][MAXCOLUMN]`. Kullanıcı M×N boyutunu girer.
 * **Hocanın Vurgusu:**
   - Bütün kombinasyonları denerken indisleri bir öncekinden başlatın, aynı kombinasyonu tekrar denemeyin.
   - Kullanıcı girdisini `do-while` ile kontrol edin.
@@ -101,7 +107,7 @@ Aşağıdaki tabloda her bir dersin konusu, kaynak markdown dosyası ve doğruda
 
 ### 🔹 Ders 6: Uygulama-2 (Zar Olasılık Matrisi, Collatz, Fatura, Lab 1 Çözümü), realloc, Düzensiz Matris, Fonksiyondan Dizi Döndürme ve main Argümanları
 * **Genel Konular:**
-  - Dersin ilk yarısında Arş. Grv. Begüm Özbay "Yapısal Programlama Uygulama-2"yi (24.03.2025) yaptı: üç soru ve Lab 1'in çözümü. Ardından Ahmet Hoca ek ders olarak `realloc`, düzensiz (jagged) matris, fonksiyondan dizi döndürme ve `main` argümanlarını anlattı.
+  - Dersin ilk yarısında Arş. Grv. Begüm Özbay "Yapısal Programlama Uygulama-2"yi yaptı: üç soru ve Lab 1'in çözümü. Ardından Ahmet Hoca ek ders olarak `realloc`, düzensiz (jagged) matris, fonksiyondan dizi döndürme ve `main` argümanlarını anlattı.
   - Uygulama Soru 1: Üç zarın toplam olasılık matrisi
     - Üç zar birlikte atılıyor. Matrisin birinci sütununa olası toplamlar (3-18), ikinci sütuna bu toplamın olasılığı yazılacak. Matris dinamik bellekle tanımlanacak.
   - Uygulama Soru 2: Collatz dizisi
@@ -117,7 +123,7 @@ Aşağıdaki tabloda her bir dersin konusu, kaynak markdown dosyası ve doğruda
 * **Hocanın Vurgusu:**
   - `realloc` sonucunu her zaman geçici bir işaretçide kontrol edin, sonra asıl işaretçiye atayın.
   - Fonksiyondan yerel (stack'teki) dizinin adresini döndürmeyin.
-    - Dinamik bellek kullanın. Bu hata sınavda puan almaz.
+    - Dinamik bellek kullanın.
   - `malloc` ile oluşturulan her şey heap'tedir.
     - Sabit uzunluklu diziler stack'tedir. İşaretçi döndürmek alanı heap'e taşımaz.
   - Düzensiz matriste iç döngünün sınırı o satırın kendi boyutudur.
@@ -126,16 +132,17 @@ Aşağıdaki tabloda her bir dersin konusu, kaynak markdown dosyası ve doğruda
 ### 🔹 Ders 7: Dinamik Matris Çarpımı, Oy Sayma Algoritmaları, Polinomların Dizide Tutulması ve Struct'lara Giriş
 * **Genel Konular:**
   - Ders, dinamik bellekle matris çarpımı örneğiyle başlar. Ardından fazla parametreli fonksiyonların sorunları, eski bir alışveriş sepeti örneği, oy sayma algoritmaları ve polinomların dizide tutulması işlenir. Son bölümde struct'lara giriş yapılır.
-  - Bu grup register, static, extern depolama sınıflarını işlemişti. Diğer grup işlememiş.
   - Dinamik matris çarpımı
     - Fonksiyonlar: `int **create_matrix(int m, int n)`, `void fill_matrix(int **matrix, int m, int n)`, `void print_matrix(...)`, `int **multiply_matrices(int **m1, int m, int n, int **m2, int k, int l)`.
-  - `getopt`: komut satırı seçeneklerini (`-a`, `-b`…) ayrıştırıp `switch` ile işlemeyi sağlar. Linux'ta çalışır, sınavda sorulmayacak. Örnek olarak `ls`, `dir /s` gibi komutların parametreleri gösterildi.
+  - `getopt`: komut satırı seçeneklerini (`-a`, `-b`…) ayrıştırıp `switch` ile işlemeyi sağlar. Hoca bunun "aslında Linux üzerinde yapılmış" olduğunu söyleyip Windows'ta denedi. Sorulacak bir konu olmadığını da belirtti. Örnek olarak `ls`, `dir /s` gibi komutların parametreleri gösterildi. <!-- BELİRSİZ: Windows denemesinin sonucu altyazıda net değil (00:45:12-00:45:25). -->
   - İyi programlama alışkanlığı: parametre sayısı
     - Bir fonksiyona çok sayıda parametre göndermek iyi bir alışkanlık değildir. Her parametre stack'e kopyalanır.
   - Alışveriş sepeti örneği (eski bir asistanlık örneği)
     - Fiyatlar `basket` dizisinde tutulur. Gıda ve gıda dışı ürünlerin fiyatlarının adresleri ayrı iki dizide (`ptr_food`, `ptr_other`) tutulur. Bunlar `double**`'dır: adresleri tutan diziler.
   - Oy sayma (seçim) algoritmaları
     - Versiyon 1: herkes 1-10 arası bir partiye oy veriyor. En çok oyu alan kim?
+  - Polinomların dizide tutulması
+    - İlk yöntem: dizinin indisi kuvveti, değeri katsayıyı gösterir. `{2, 4, 0, 0, -7}` → $-7x^4 + 4x + 2$.
 * **Hocanın Vurgusu:**
   - Fonksiyon başka bir şey üretmiyorsa `void` yapın.
     - Yeni bir yapı üretiyorsa işaretçi döndürün.
@@ -146,7 +153,7 @@ Aşağıdaki tabloda her bir dersin konusu, kaynak markdown dosyası ve doğruda
 
 ### 🔹 Ders 9: Uygulama-3: Struct ile Çalışan Veritabanı, Dinamik Dizi ve Bağlı Liste Karşılaştırması, Başlık Dosyaları ve Makrolar
 * **Genel Konular:**
-  - Bu kayıt "Yapısal Programlama Uygulama-3"tür (21.04.2025). Uygulamayı bir araştırma görevlisi yaptı. Ahmet Hoca derse yetkiyi verip ayrıldı.
+  - Bu kayıt "Yapısal Programlama Uygulama-3"tür. Uygulamayı büyük olasılıkla bir araştırma görevlisi yaptı. <!-- BELİRSİZ: Unvan altyazıda geçmiyor, yalnız "hocam" diye hitap ediliyor (00:04:50). --> Ahmet Hoca derse yetkiyi verip ayrıldı.
   - Kaydın sesi çok düşük ve anlaşılmaz olduğu için bu özet büyük ölçüde ekran paylaşımındaki koddan çıkarıldı.
   - Problem: bir şirketin çalışan bilgilerini saklayan bir veritabanı. Menü üzerinden çalışan ekleme, isme göre arama, kayıt silme, tüm kayıtları listeleme ve sonunda bütün dinamik belleği serbest bırakma işlemleri yapılacak. Aynı işlev iki farklı veri yapısıyla yazılıp karşılaştırılıyor: dinamik dizi ve bağlı liste (linked list).
   - Struct'lar
@@ -166,7 +173,7 @@ Aşağıdaki tabloda her bir dersin konusu, kaynak markdown dosyası ve doğruda
 
 ### 🔹 Ders 11: Bağlı Liste Kodlama (Ekleme, Yazdırma, Silme), Yapı Hizalaması, Bit Alanları, Union ve Özyineleme
 * **Genel Konular:**
-  - Dersi dersin hocası Dr. Ahmet Elbir anlatıyor (Dev-C++ ekranındaki kullanıcı yolu `C:\Users\AHMETELBIR\...`). Ders 30 Nisan 2025 tarihli. Konular: bağlı listeler (linked list) ile kod yazma, yapı hizalaması (structure alignment), bit alanları (bit field), birlikler (union) ve özyineleme (recursion).
+  - Dersi dersin hocası Dr. Ahmet Elbir anlatıyor (Dev-C++ ekranındaki kullanıcı yolu `C:\Users\AHMETELBIR\...`). Konular: bağlı listeler (linked list) ile kod yazma, yapı hizalaması (structure alignment), bit alanları (bit field), birlikler (union) ve özyineleme (recursion).
   - Bağlı listeye kısa tekrar
     - Her düğüm (node) bir veri (data) ve bir sonraki düğümün adresini tutan bir işaretçi (`next`) içerir.
   - Düğüm yapısı
@@ -190,8 +197,7 @@ Aşağıdaki tabloda her bir dersin konusu, kaynak markdown dosyası ve doğruda
 
 ### 🔹 Ders 13: Void İşaretçi, Dosya İşlemlerine Giriş: Stream, Metin ve İkili Dosyalar, fopen Kipleri ve Dönem Projesi
 * **Genel Konular:**
-  - Dersi dersin hocası Dr. Ahmet Elbir online anlatıyor (12 Mayıs 2025). Konular: `void` işaretçi, dosya işlemlerine giriş (stream, metin ve ikili dosyalar, `fopen` erişim kipleri, dosya konum göstergesi), dosya kopyalama örneği ve dönem projesinin tanıtımı.
-  - Duyurular: sınav çözümleri ve değerlendirmesi çarşamba günü online yapılacak. Cuma sabahı 9-12 arası ek ders var (uygulamaya ve projeye hazırlık).
+  - Dersi dersin hocası Dr. Ahmet Elbir anlatıyor. Konular: `void` işaretçi, dosya işlemlerine giriş (stream, metin ve ikili dosyalar, `fopen` erişim kipleri, dosya konum göstergesi), dosya kopyalama örneği ve dönem projesinin tanıtımı.
   - `void` işaretçi (genel işaretçi)
     - Her türden değişkenin adresini tutabilen genel (generic) işaretçidir: `void *ptr;`. `int*`, `float*`, `char*` veya bir yapı işaretçisi yerine kullanılabilir.
   - Neden dosya?
@@ -202,6 +208,8 @@ Aşağıdaki tabloda her bir dersin konusu, kaynak markdown dosyası ve doğruda
     - Metin dosyası: satırlardan oluşur, satırlar `\n` ile biter. Herhangi bir metin editöründe insanın okuyabileceği şekilde görünür (ör. `.c`, `.txt`, `.csv`).
   - Dosya konum göstergesi (file position indicator)
     - Dosya işaretçisi (`FILE*`) dosyayı gösterir. İçindeki dosya konum göstergesi ise dosyada şu an nerede olunduğunu gösterir, komut satırındaki imleç gibi.
+  - `fopen` ve erişim kipleri
+    - `FILE *fp = fopen("deneme.txt", "r");`. İlk parametre dosya adı, ikincisi erişim kipi. Başarısızsa `NULL` döner.
 * **Hocanın Vurgusu:**
   - `void*` dereferans edilemez, önce asıl türe çevrilmelidir.
   - `"w"` kipi var olan dosyanın içini siler.
@@ -209,11 +217,11 @@ Aşağıdaki tabloda her bir dersin konusu, kaynak markdown dosyası ve doğruda
     - `fopen` yapınca hemen `fclose`'u yazın.
   - Bir dosya nasıl yazıldıysa öyle okunur.
     - Dosya biçimini mühendislik yaparak tasarlayın.
-  - Satır okumak için karakter karakter okumayın, disk yavaştır.
+  - Satır okumak için karakter karakter okumayın.
 
 ### 🔹 Ders 17: Çok İş Parçacıklı Programlama (pthread) ve void* ile Genel Fonksiyonlar
 * **Genel Konular:**
-  - Dönemin son dersi (28 Mayıs 2025). Dersi dersin hocası Dr. Ahmet Elbir online anlatıyor. Konular: çok iş parçacıklı (multi-thread) programlama, POSIX thread (`pthread`) kütüphanesi ve `void*` ile genel (generic) fonksiyonlar.
+  - Dersi dersin hocası Dr. Ahmet Elbir anlatıyor. Konular: çok iş parçacıklı (multi-thread) programlama, POSIX thread (`pthread`) kütüphanesi ve `void*` ile genel (generic) fonksiyonlar.
   - Önceki dersin konusu: çok dosyalı programların derlenmesi, `make` ve `makefile`.
   - Tek akışlı ve çok akışlı programlar
     - Şimdiye kadarki programlar tek akışlıdır: `main`'den başlar, bir fonksiyona gidilir, o bitince geri dönülür. Herhangi bir anda yalnızca bir fonksiyon çalışır.
