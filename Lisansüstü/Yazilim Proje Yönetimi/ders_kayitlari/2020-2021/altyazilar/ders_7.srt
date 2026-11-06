@@ -1,0 +1,2083 @@
+1
+00:00:25,460 --> 00:00:36,639
+ekran paylaşırken sistemde bir hata oluştu. O yüzden tekrar girdim. Şimdi daha önce kullandığımız slide'ları paylaşıyorum tekrar.
+
+2
+00:02:52,050 --> 00:02:56,591
+Evet, herkes ekranı, paylaştığım ekranı görebiliyor mu?
+
+3
+00:03:01,586 --> 00:03:02,167
+Evet hocam.
+
+4
+00:03:03,366 --> 00:03:04,426
+Teşekkürler.
+
+5
+00:03:05,247 --> 00:03:18,787
+Evet, ilk derste yazılım proje yönetimi konusunda hangi bilgi birikimleri var? Bunların üzerinde durmuştuk.
+
+6
+00:03:19,826 --> 00:03:27,086
+Proje yönetimi bilgi ve deneyimi, genel yönetim bilimi ve yazılım mühendisliği teknikleri.
+
+7
+00:03:27,086 --> 00:03:37,026
+özellikle proje yönetimi yol haritasını takip edebilir durumda olmamız gerekiyor.
+
+8
+00:03:37,026 --> 00:03:55,326
+Proje yönetimi bilgi ve deneyiminde bizim fizibilite çalışması yaptığımızda diğer kaynakları nasıl yöneteceğimizde, zamanı nasıl yöneteceğimiz konusunda
+
+9
+00:03:55,326 --> 00:04:10,926
+ve proje adımlarını genel proje yönetimi çerçevesinde nasıl takip edeceğimiz konusunda bilgi ve deneyimin olması gerekiyor yazılım projelerini yönetebilmek için.
+
+10
+00:04:12,526 --> 00:04:23,168
+Örneğin alt yüklenicilerin, outsource ettiğimiz uygulamaların, parçalarının nasıl takip edebileceğimiz.
+
+11
+00:04:23,168 --> 00:04:30,827
+burada kuralların ne olduğu ile ilişkili bilginin de olması gerekiyor.
+
+12
+00:04:33,108 --> 00:04:42,567
+Bunun yanında alttaki, soldaki halka da genel yönetim bilimi konusunda da bilgi sahibi olmamız gerekiyor.
+
+13
+00:04:42,567 --> 00:04:47,668
+Yani geçen derslerimizde organizasyon yapıları üzerinde durduk mesela.
+
+14
+00:04:47,666 --> 00:04:56,427
+işletme bilimindeki organizasyon konusu hakkında da bir hakimiyetimizin olması gerekiyor.
+
+15
+00:04:56,427 --> 00:05:07,226
+Hem bir kurumun içinde proje geliştirme birimi olduğumuz anlamında bu genel yönetim bilgisine ihtiyacımız var.
+
+16
+00:05:07,346 --> 00:05:12,786
+Hem de bir ekibi yönettiğimiz için yönetim bilgisine ihtiyacımız var.
+
+17
+00:05:12,786 --> 00:05:19,187
+ama bunun yanında altta sağdaki halkanın da eksik olmaması gerekiyor.
+
+18
+00:05:19,307 --> 00:05:25,146
+Yazılım mühendisliği tekniklerini takip edebilir durumda olmamız gerekiyor.
+
+19
+00:05:25,987 --> 00:05:37,807
+İşte bu yüzden yazılım proje yönetiminde üç tarafta da bilgi sahibi olan birisi proje yöneticisi olarak başarılı olabilir demiştik.
+
+20
+00:05:37,807 --> 00:06:04,028
+Bu arada benim daha önce yazmadığım bir şey var. Şimdi chatten onu paylaşacağım. Özellikle proje yönetimi konusunda bize destek olacak. Information Systems Project Management ile ilişkili çok sayıda kitap var. Bunlardan herhangi birine bakabilirsiniz.
+
+21
+00:06:04,028 --> 00:06:15,127
+Ama benim hep derslerde notlarımı çıkarırken kullandığım bir başka kitap daha var.
+
+22
+00:06:21,427 --> 00:06:25,827
+Information Systems Project Management kitabı.
+
+23
+00:06:26,827 --> 00:06:28,947
+Jolion Halovsun.
+
+24
+00:06:40,052 --> 00:06:44,810
+Bu kitap Amakom yayınlarından.
+
+25
+00:06:55,891 --> 00:07:09,411
+Burada Project Management Roadmap kavramını buradan aldım. Daha önce de derslerde bu Project Management Roadmap kavramından bahsetmiştim.
+
+26
+00:07:25,971 --> 00:07:40,531
+Yani bu kitapta Information Systems Project Management kitabında Jolion Halos Project Management Roadmap yani proje yönetimi yol haritasından söz ediyor.
+
+27
+00:07:40,531 --> 00:07:58,630
+Aslında bu sadece burada olan bir şey değil. Project Management Institute tarafından hazırlanmış web sayfasında da bir projeyi nasıl yönetiriz, proje yönetimi yol haritası nedir'in cevabı var.
+
+28
+00:07:58,630 --> 00:08:11,630
+yani sadece bu kitapta değil de ben bu kitabı kullandım notlarımda. Bir de Presma'nın yazılım mühendisliği kitabının proje yönetimiyle ilişkili bölümlerini.
+
+29
+00:08:12,711 --> 00:08:23,531
+Project Management Roadmap dediğimizde proje yönetimi sadece plandan ibaret değildir. Yani sadece planı hazırlayacağız. Bu da proje yönetimidir.
+
+30
+00:08:23,531 --> 00:08:27,790
+planı hazırladık, proje yönetimini gerçekleştiriyoruz demek değildir.
+
+31
+00:08:28,911 --> 00:08:36,030
+Proje yönetimi yol haritası dediğimizde önce bir giriş hazırlık aşaması var.
+
+32
+00:08:36,030 --> 00:08:41,791
+Bunu bu kitapta ikiye bölerek açıklamış.
+
+33
+00:08:41,791 --> 00:08:46,471
+proje yönetimi yol haritasında proje
+
+34
+00:08:52,724 --> 00:08:54,503
+projenin anlaşılması,
+
+35
+00:09:00,436 --> 00:09:20,174
+Öncelikle Understanding Project. Yani bu proje nereden geldi? Bu projeyi kim başlattı? Bu projenin başlangıcı olan başka bitmiş bir proje var mı? Veya devam eden bitmek üzere olan bir proje var mı? Başlangıç noktası nedir? Onun anlaşılması.
+
+36
+00:09:20,174 --> 00:09:33,135
+bu proje ne tip bir proje? Sıfırdan yeni başlayan bir proje mi? Başka bir yazılımın iyileştirilmesi projesi mi?
+
+37
+00:09:33,914 --> 00:09:48,674
+Yoksa sadece bir başlangıç, bir fizibilite analizi projesi mi? Projenin anlaşılması ve bu projenin sahibi kim?
+
+38
+00:09:48,674 --> 00:10:05,995
+hangi departman, bu departmanda daha önce en son yapılan proje hangisiydi? Bununla ilişkili, projenin anlaşılmasıyla ilişkili işlemler var. Bundan sonra projenin tanımlanması.
+
+39
+00:10:16,082 --> 00:10:17,082
+Project Defining, projenin tanımlanması. Projenin tanımlanması aşamasında bir bu projenin
+
+40
+00:10:35,538 --> 00:10:43,938
+Çıktıları neler olacak? Bu proje sonunda kullanıcılara hangi çıktılar verilecek?
+
+41
+00:10:45,078 --> 00:10:57,499
+İşte kod verilecek mi? Gereksinim analizi sırasında üretilecek bir SRS belgesi verilecek mi?
+
+42
+00:10:57,499 --> 00:11:22,798
+SRS belgesinde use case diagramları olacak mı? Proje planı aşamasında plan dökümanı verilecek mi? Tasarım sırasında hangi belgeler verilecek? Kodla ilişkili kod verilecek mi? Test yapılan test verileri aktarılacak mı?
+
+43
+00:11:22,798 --> 00:11:34,078
+kullanıcı belgeleri verilecek mi? Bu yazılım nasıl kullanılacak diye. Bütün bunlar kayıt altına alınır tanımlama sırasında.
+
+44
+00:11:34,078 --> 00:11:52,239
+bir de ayrıca projenin tanımlanması sırasında bu projede ki takip işi nasıl olacak?
+
+45
+00:11:52,239 --> 00:12:08,359
+Yani bizim konfigürasyon yönetimi dediğimiz iş, projedeki eklenen değişiklikler, projede her aşamada gerçekleştirilen değişiklikler nasıl takip edilecek?
+
+46
+00:12:09,259 --> 00:12:14,639
+Bunlar project defining aşamasında belirtilir.
+
+47
+00:12:14,639 --> 00:12:30,438
+Bu iki adıma mesela PMI'da projenin anlaşılması, tanımlanması diye ayrılmaz. Proje giriş aşaması, proje hazırlık aşaması da denilebilir.
+
+48
+00:12:30,438 --> 00:12:43,759
+Ama burada işte önce projenin niteliğinin anlaşılması, hangi birimin projesidir, projenin hedefleri nelerdir?
+
+49
+00:12:43,958 --> 00:12:55,158
+Yani proje öncelikleri dediğimiz bizim biliyorsunuz bir projenin önceliği dediğimizde proje başarı faktörlerine bakıyoruz.
+
+50
+00:12:55,158 --> 00:13:12,399
+proje başarı faktörleri, projenin zamanında bitmesi, istenilen bütçeyle bitmesi ve projenin kapsamının uygun olması.
+
+51
+00:13:12,399 --> 00:13:29,239
+İşte projenin sahibi olan departman bunlardan hangisine öncelik veriyor? Bunu bilmemiz gerekiyor. Projenin anlaşılması sırasında ona göre biz planı da oluşturacağız.
+
+52
+00:13:29,239 --> 00:13:44,239
+projenin tanımlanmasında çıktıları bilmemiz gerekiyor dedik. Ayrıca projenin değişiklik takibini nasıl gerçekleştireceğiz? Mesela planı yaptık, hazırladık, projeyi çalıştırmaya başladık.
+
+53
+00:13:44,239 --> 00:14:06,139
+ama proje sahibi kapsamda bazı değişiklikler yapılmasını istedi. Başka çıktılar da elde etmek istedi. O zaman bu değişikliği nasıl takip edeceğiz? Plana nasıl aktaracağız?
+
+54
+00:14:06,139 --> 00:14:18,739
+planda da bütçede değişiklikler yapılması gerekiyorsa bu yeniliklerle bunu nasıl belirleyeceğiz? Bunların tanımlanması gerekiyor proje planlanmadan önce.
+
+55
+00:14:18,739 --> 00:14:24,458
+bundan sonraki aşamada projenin
+
+56
+00:14:28,980 --> 00:14:43,119
+planının oluşturulması, proje planının oluşturulması ve proje planını oluşturduktan sonra da bu planın çalıştırılması.
+
+57
+00:14:44,058 --> 00:14:52,659
+Proje planı dediğimizde biz proje planı için hangi maddeler olmalı bir proje planında?
+
+58
+00:14:52,659 --> 00:15:12,879
+bunun üzerinden geçtik daha önce. Proje planı kapsamında mutlaka olması gerekenleri biriniz sayabilir misiniz? Bir proje planında olması gerekenler. [öğrenci] sen sayabilir misin?
+
+59
+00:15:21,748 --> 00:15:28,326
+[öğrenci], bir proje planında neler olmalı?
+
+60
+00:15:36,370 --> 00:15:36,890
+[öğrenci]
+
+61
+00:15:46,772 --> 00:15:56,770
+[öğrenci]
+
+62
+00:16:34,706 --> 00:16:36,667
+[öğrenci] sen sayabilir misin?
+
+63
+00:16:39,866 --> 00:16:46,147
+Hocam yanlış hatırlamıyorsam, proje planında önce bir roadmap çiziyorduk.
+
+64
+00:16:47,606 --> 00:17:04,027
+Yani proje başlangıç tarihi, ne kadar kişi çalışacak, süresi, bitiş tarihi, yapılması gerekenler, fizibilite analizleri içinde yer alması gerekiyordu sanırım.
+
+65
+00:17:04,708 --> 00:17:13,428
+hem ekonomik mali açıdan fizibilite analizi, risk analizleri diye hatırlıyorum hocam.
+
+66
+00:17:13,428 --> 00:17:18,928
+Şimdi şöyle sıralarsak bir proje planımız var.
+
+67
+00:17:19,686 --> 00:17:23,288
+Bir dakika bu slide'da da olması gerekir.
+
+68
+00:19:17,522 --> 00:19:22,702
+Şimdi bu ekranı görebiliyorsunuz herhalde değil mi? Proje planı.
+
+69
+00:19:24,363 --> 00:19:25,303
+Evet hocam.
+
+70
+00:19:26,042 --> 00:19:44,423
+Bunun üzerinden tekrar geçeyim istedim. Onun için slide'ımı değiştirdim. Bir proje planında projenin kapsamı, evet [öğrenci]'ın dediği gibi, projenin hedefi ve sınırları, ondan sonra proje tanımlama aşamasında daha karar verdiğimiz
+
+71
+00:19:44,423 --> 00:20:12,403
+projede hangi yazılım geliştirme modelini kullanacağız? Projedeki risk analizi, yani hangi risklerimiz var bu projede çalışırken ve riskler gibi burada belirtmediğimiz aslında projedeki varsayım ve kısıtlar.
+
+72
+00:20:17,490 --> 00:20:36,490
+projenin varsayım ve kısıtları. Yani nelerin olduğunu varsayıyoruz hem proje süreci açısından hem de projenin kapsamı açısından hem ayrıca bir de kısıtlar. Bunların hepsi...
+
+73
+00:21:58,548 --> 00:22:07,646
+Evet, bir kesilme oldu galiba hatta. Tekrar paylaştım dökümanı. Takip edebiliyor musunuz?
+
+74
+00:22:09,548 --> 00:22:11,586
+Evet hocam, görünüyor şu anda.
+
+75
+00:22:11,767 --> 00:22:25,807
+Teşekkür ederim. Bu şekilde proje risk analizimiz ve varsayım ve kısıtlarımız benzer kategorilerde ki risk analizi sırasında bu kategoriler üzerinde durmuştuk.
+
+76
+00:22:25,807 --> 00:22:42,048
+tekrar daha sonra da üzerinden geçebiliriz. Bundan sonra alt aktivitelerimiz nelerdir? Work breakdown structure yapısı. Bunun üzerinde de durmuştuk yine alt aktiviteler dediğimizde.
+
+77
+00:22:42,048 --> 00:22:45,646
+Mesela bizim yazılım geliştirme modelimiz waterfall.
+
+78
+00:22:46,087 --> 00:22:51,127
+Waterfall modelde hangi alt aktiviteler vardır?
+
+79
+00:22:51,127 --> 00:22:53,948
+Bunu söylemek isteyen var mı?
+
+80
+00:22:54,067 --> 00:23:10,106
+Waterfall'daki alt aktiviteleri waterfall modele göre, şelale modeline göre yazılım geliştirme projesinde hangi alt işlemler vardır?
+
+81
+00:23:12,048 --> 00:23:24,686
+Hocam ben söyleyebilirim isterseniz. Aslında dört temel işlev var. Sönü inceleme, analiz, sonrasında tasarım, sonrasında gerçekleme, en son adım olarak da test ve bakım var.
+
+82
+00:23:24,686 --> 00:23:40,686
+Evet. İşte bu adımları biz temel work breakdown structure'ın işte 1-0, 2-0, 3-0, 4-0 alt aktiviteleri gibi tanımlayabiliriz.
+
+83
+00:23:40,686 --> 00:24:09,787
+bundan sonra ikinci düzeye geçeceksek, ikinci düzey ayrıntıya o zaman bir sıfırdaki ön inceleme ve analizde ön inceleme ve gereksinim analizi dersek buna işte bir bir ön inceleme bir iki gereksinimleri ayrıntılarını belirleme bilgi toplama
+
+84
+00:24:09,787 --> 00:24:17,547
+1.3 modelleme 1.4 SRS belgesinin yazılması.
+
+85
+00:24:20,886 --> 00:24:30,787
+Üçüncü bir düzeye geçmek istersek, daha fazla ayrıntı verirsek biz belki sadece 1.3 modellemede
+
+86
+00:24:30,787 --> 00:24:44,727
+işte modelleme sırasında use case diagramının oluşturulması, use case belgesinin oluşturulması, kavramsal sınıf diagramının oluşturulması diye
+
+87
+00:24:44,727 --> 00:24:52,386
+üç tane alt düzey daha 1-3-1, 1-3-2, 1-3-3 diye sıralayabiliriz.
+
+88
+00:24:52,386 --> 00:25:22,007
+Bunu nasıl belirtiyorduk? Alt aktiviteleriyle work breakdown structure yapısını. Bunu belirlerken biz ister böyle bir sıfır, bir bir, bir iki gibi hiyerarşik içeriye doğru her bir alt şeyde aynı hizaya gelerek
+
+89
+00:25:22,007 --> 00:25:29,967
+belirttiğimiz bir numaralandırma ile de gösterebiliriz.
+
+90
+00:25:29,967 --> 00:25:34,787
+İstersek diagram çizeriz.
+
+91
+00:25:35,727 --> 00:25:51,967
+İşte genel projemizin dört tane alt aktivitesi varsa bunu bir ağaç diagramı şeklinde de gösterebiliriz.
+
+92
+00:25:52,007 --> 00:25:56,686
+burada hedef alt aktivitelerde.
+
+93
+00:25:57,332 --> 00:26:23,511
+hangi alt işlemlerle beraber bu projenin tamamlanması mümkündür? Buna bir plan vermiş oluyoruz. Bundan sonra zaman çizelgesi oluşturuyoruz. Bu alt aktivitelerimizin her birisi daha önceki çalışmalarımızdan gelen bilgi birikimimize göre ne kadar sürecektir?
+
+94
+00:26:23,511 --> 00:26:42,951
+Yani ön inceleme ne kadar sürecek, gereksinim analizi ne kadar sürecek, buradaki alt işlemler bu projenin büyüklüğüyle ilişkili olarak daha önceki projelere göre nasıl değişir bunu belirliyoruz.
+
+95
+00:26:42,951 --> 00:26:51,990
+hatta bu zaman çizelgesini oluştururken hangi diagramları kullanıyoruz?
+
+96
+00:26:52,431 --> 00:26:55,570
+Aktiviteler arasındaki ilişkileri de ortaya çıkarıyoruz.
+
+97
+00:26:55,570 --> 00:27:01,810
+Yani aktiviteler arasındaki ilişkilerde nasıl bir şeyimiz vardı?
+
+98
+00:27:02,971 --> 00:27:12,730
+Aktiviteler arasındaki ilişkilerde nasıl bir ilişki tipleri bulunuyordu?
+
+99
+00:27:12,951 --> 00:27:18,911
+aktiviteler arasındaki ilişki tiplerini söyleyebilir misiniz?
+
+100
+00:27:20,911 --> 00:27:22,330
+[öğrenci] [öğrenci]
+
+101
+00:27:27,700 --> 00:27:31,959
+Hocam, work breakdown structure mı? Tekrar alayım soruyu.
+
+102
+00:27:31,959 --> 00:27:55,460
+Yok yok. Şimdi sorduğum soru şu. Biz proje planını oluştururken work breakdown structure yapısını oluşturduk. Zaman çizelgesini belirledik. Yani hangi alt işlem tahmini ne kadar sürer daha önceki projelerle karşılaştırdığımızda.
+
+103
+00:27:55,460 --> 00:28:10,118
+sonra aktiviteler arası ilişkiler diyoruz. Bu şimdi alt aktiviteleri belirledik. Aktiviteler arasındaki ilişkiler dediğimizde bu konuda ne söylemek istersin? Hangi tip ilişkiler vardır?
+
+104
+00:28:10,118 --> 00:28:27,380
+mesela alt aktiviteleri sayayım işte analiz aşamasındaki alt aktiviteler bilgi toplama, modelleme, SRS belgesinin oluşturulması.
+
+105
+00:28:27,380 --> 00:28:36,499
+Şimdi bu aktiviteler arasında sen waterfall modeli kullanıyorsan nasıl bir ilişki vardır?
+
+106
+00:28:36,499 --> 00:28:47,519
+Yani aktivitelerin arasında biri bittiğinde diğerine başlar ne tip ilişkiler vardır?
+
+107
+00:28:49,939 --> 00:28:54,378
+Biri bittiğinde şöyle, biri bittiğinde diğeri de başlayabilir.
+
+108
+00:28:55,239 --> 00:28:58,038
+Birbirlerine bağımlı aktiviteler de olabilir.
+
+109
+00:28:58,398 --> 00:29:05,618
+Bağımsız şekilde ilerleyen, birbirine bağımlı birisi bitmeden diğerine başlayamadığımız aktiviteler de olabilir.
+
+110
+00:29:06,499 --> 00:29:19,398
+aklıma gelen bu. Evet. Peki bunun bir şeyi var, usulü var, aktiviteler arası ilişkiler dediğimizde. Birkaç yolu var. Bunu söylemek isteyen var mı?
+
+111
+00:29:20,838 --> 00:29:35,558
+Hocam, finish to finish to finish to start gibi. Evet, evet. Onları saymanızı istiyorum diğer arkadaşlarınız için de. Derslerimizde onlardan bahsettik.
+
+112
+00:29:35,559 --> 00:30:02,220
+Evet evet hocam bahsetmiştim bunlardan. [öğrenci] sen söyleyebilirsin o zaman. Hocam finish to finish var, finish to start to finish var. Bir tane daha var da start to start to start to start. Evet. Peki bunlara örnek vermek isteyen var mı? Bir tanesine zor veririz ama üç tanesine verebiliriz.
+
+113
+00:30:05,682 --> 00:30:22,883
+Örneğin bir tanesini söyleyeyim isterseniz. Finish the start mesela, development, geliştirmenin bitmesi lazım ki test başlasın. Örnek burada mesela finish the start'ı verebiliriz. Gibi geldi bana.
+
+114
+00:30:31,442 --> 00:30:34,403
+Sesiniz gitti hocam benden yoksa benim bilimden.
+
+115
+00:31:20,722 --> 00:31:46,423
+Tekrar paylaştım belgeyi. Diğer bir ilişkide start to start ilişkisi. Mesela analiz aşamasındaki alt aktivitelerden bilgi toplama ve modelleme. Değil mi? Analiz aşamasının bir biri bilgi toplama, bir ikisi modelleme.
+
+116
+00:31:46,423 --> 00:32:06,423
+Biz bilgi toplamaya başladığımız andan itibaren modeli de oluşturmaya başlayabiliriz. O yüzden bilgi toplama bir bir işte bu diyelim ki beşinci aktivite oluyor uygulamanın başından beri.
+
+117
+00:32:06,423 --> 00:32:22,763
+5. aktivitenin başlamış olması gerekiyor ki 6. aktivitede başlasın.
+
+118
+00:32:22,762 --> 00:32:35,762
+Ama şöyle bir kıstas koyabiliriz burada. Beşinci aktivite başladıktan bir gün sonra ya da iki gün sonra
+
+119
+00:40:36,371 --> 00:40:55,911
+Tamam. Evet. Özür dilerim, sistemden hep bir kopukluk oldu. Şimdi tekrar paylaşacağım proje planı slide'ını.
+
+120
+00:41:33,619 --> 00:41:39,398
+Tekrar paylaşabildim değil mi proje planı slide'ını?
+
+121
+00:41:41,259 --> 00:41:41,960
+Evet hocam.
+
+122
+00:41:43,039 --> 00:41:43,318
+Evet.
+
+123
+00:41:44,619 --> 00:41:48,838
+Şimdi aktiviteler arası ilişkilerde durmuştuk en son.
+
+124
+00:41:50,119 --> 00:41:54,719
+Finish, finish, start, start ve finish to start'a örnekler verdim.
+
+125
+00:41:54,838 --> 00:41:57,318
+Daha önce de derslerde verdiğim örnekleri.
+
+126
+00:41:58,099 --> 00:42:00,318
+Bu konuda bir sorunuz var mı?
+
+127
+00:42:00,318 --> 00:42:02,318
+Evet.
+
+128
+00:42:05,715 --> 00:42:14,114
+Hatırladınız mı? Sorunuz varsa paylaşabilirsiniz.
+
+129
+00:42:18,291 --> 00:42:40,251
+burada biz sırayla gittiğimizde önce projenin alanını, kapsamını belirledik. Yazılım geliştirme modelimizi kesinleştirdik. Bu proje için risk kategorilerine göre risklerimiz nelerdir?
+
+130
+00:42:40,851 --> 00:42:44,331
+Hocam riskletmeden önce ben basit bir soru sorabilir miyim?
+
+131
+00:42:44,431 --> 00:42:44,650
+Tabii.
+
+132
+00:42:44,650 --> 00:42:46,552
+Emin olabilmek için soruyorum.
+
+133
+00:42:46,650 --> 00:42:46,851
+Tabii.
+
+134
+00:42:46,851 --> 00:43:08,391
+Biz alt aktiviteleri tanımını özlemiştik birkaç cümle önce Work Breakdown Structure'da. Bu Work Breakdown Structure'da alt aktiviteleri tanımlıyorken mesela bir numaralı kısım analiz 1.1'de SRS'in yazılması ve tamamlanması var diyelim. 1.1 ikinci seviye mi oluyor yoksa birinci seviye mi oluyor? Ben onu tam olarak anlayamadım.
+
+135
+00:43:08,391 --> 00:43:09,331
+İkinci seviye.
+
+136
+00:43:09,530 --> 00:43:09,650
+Evet.
+
+137
+00:43:10,132 --> 00:43:10,530
+Teşekkür ederim.
+
+138
+00:43:10,530 --> 00:43:17,231
+Yani şimdi burada mesela bütün altı ayrıntıları kapatırsak dört aşamalı bir plan.
+
+139
+00:43:17,951 --> 00:43:21,411
+Analiz, tasarım, gerçekleştirme, test.
+
+140
+00:43:23,610 --> 00:43:25,791
+Dört tane alt başlığı var.
+
+141
+00:43:25,791 --> 00:43:32,851
+İkinci düzey ayrıntıları açalım dersek işte bir bir ön incele.
+
+142
+00:50:02,228 --> 00:50:08,447
+Bu work breakdown structure örneğini beraber yapalım isterseniz.
+
+143
+00:52:00,148 --> 00:52:06,148
+Evet, analiz ve tasarımın alt adımlarını, ikinci düzey adımlarını yazıyorum.
+
+144
+00:54:05,811 --> 00:54:08,891
+Şimdi bakalım
+
+145
+00:54:14,771 --> 00:54:37,971
+analiz aşamasında ikinci düzeydeki alt başlıklar, bilgi toplama, modelleme ve SRS hazırlama, tasarımın alt başlıkları, mimari tasarım, ayrıntılı tasarım, gerçekleme, kodlama ve veri tabanının yaratılması,
+
+146
+00:54:37,971 --> 00:54:50,110
+veritabanının ilk bilgilerinin girilmesi, test de bütünlük testi, sistem testi, kullanıcı testi olmak üzere alt başlıklar.
+
+147
+00:54:50,110 --> 00:54:56,492
+Bu ikinci düzeye kadar bir waterfall üzerinden.
+
+148
+00:55:02,739 --> 00:55:20,659
+waterfall modele göre bir work breakdown structure örneği. Bir adım bittiğinde diğer adım başlıyor, bir adım bittiğinde diğer adım başlıyor. Peki, siz de bunu başka modeller için örneklemeye çalışın.
+
+149
+00:55:20,659 --> 00:55:33,920
+mesela spiral model için, mesela RAD model için bu work breakdown structure yapısının örneklerini oluşturmaya çalışabilirsiniz.
+
+150
+00:55:35,398 --> 00:55:47,878
+Bu work breakdown structure yapısında sorunuz var mı? Anlaşıldı mı? Birçok kez şey kesildiği için bağlantım.
+
+151
+00:55:50,659 --> 00:55:53,838
+sistemde de bir takım problemler oldu.
+
+152
+00:55:56,679 --> 00:56:01,639
+Burada mesela üçüncü düzeyi ekleyebiliriz.
+
+153
+00:56:02,298 --> 00:56:05,059
+Başka bir model için yapabiliriz.
+
+154
+00:56:06,878 --> 00:56:08,259
+[öğrenci] sorunuz var mı?
+
+155
+00:56:17,492 --> 00:56:20,010
+[öğrenci] anlaşıldı mı?
+
+156
+00:56:21,911 --> 00:56:23,811
+Anlaşıldı hocam, teşekkür ederim.
+
+157
+00:56:24,811 --> 00:56:29,130
+Şimdi mesela bunu spiral modele uygulayalım.
+
+158
+00:56:29,251 --> 00:56:38,811
+Spiral model olduğunda acaba hangi work breakdown structure'da hangi temel başlıklar olacaktır?
+
+159
+00:56:49,780 --> 00:56:59,858
+Evet, bu şimdi waterfall'a göre. Spiral model olduğunda, Spiral modelde neydi şey, yöntemin ana fikri?
+
+160
+00:56:59,858 --> 00:57:22,898
+bir bizim sürekli yinelemeli olması sürecimizin ikincisi de her yinelemede aynı adımları gerçekleştiriyor olmamız.
+
+161
+00:57:22,898 --> 00:57:30,759
+dolayısıyla analiz, tasarım, gerçekleme ve test diye genel adımlarımız ayrılmayacak.
+
+162
+00:57:32,460 --> 00:57:48,780
+Burada bir prototip oluşturma, ürün oluşturma ve ürünü zenginleştirme ve daha sonra da bakım aşaması olabilir.
+
+163
+00:57:48,780 --> 00:58:06,719
+Bu evreleri belirleyeceğiz ve her bir evrede de önce o evre için plan oluşturmak, sonra müşteriden bilgi almak, planı oluşturmak, risk analizini yapmak, tasarımı gerçekleştirmek,
+
+164
+00:58:06,719 --> 00:58:28,878
+konstrakşın kodlama ve veri tabanının hazırlanmasını yapmak ve daha sonra da müşteriyi değerlendirmeye sunmak olmak üzere her bir evrede altı tane adımı mutlaka yapmamız gerekiyor.
+
+165
+00:58:28,878 --> 00:58:36,878
+O zaman biz yine bir work breakdown structure örneği oluştursak
+
+166
+00:58:55,380 --> 00:58:58,219
+bir sıfır
+
+167
+00:58:58,219 --> 00:59:02,458
+prototip oluşturma
+
+168
+00:59:02,458 --> 00:59:05,840
+bir
+
+169
+00:59:14,643 --> 00:59:15,643
+2-0
+
+170
+00:59:22,228 --> 00:59:26,588
+ürün oluşturma
+
+171
+00:59:33,715 --> 00:59:34,715
+3-0
+
+172
+00:59:38,452 --> 00:59:40,452
+ürün zenginleştirme.
+
+173
+00:59:52,148 --> 01:00:06,266
+4.0'da bakım aşamasında da aynı evreleri, aynı adımları gerçekleştireceğiz. Prototip oluşturmada bile bizim 1.1.
+
+174
+01:00:31,860 --> 01:00:36,780
+plan hazırlama
+
+175
+01:00:49,172 --> 01:00:51,172
+risk analizi yapma
+
+176
+01:01:03,027 --> 01:01:08,927
+yazılım mühendisliği derslerinden hatırladınız herhalde. Şuraya bir başlık.
+
+177
+01:01:20,724 --> 01:01:23,922
+sarmal model, spiral model,
+
+178
+01:01:28,275 --> 01:01:31,235
+Work Breakdown Structure yapısı.
+
+179
+01:01:34,735 --> 01:01:35,675
+1.4'te
+
+180
+01:01:35,675 --> 01:01:40,355
+tasarım
+
+181
+01:01:42,675 --> 01:01:44,675
+analiz ve tasarım
+
+182
+01:01:50,739 --> 01:02:01,739
+Construction yapım aşaması. Burada da ayrıntılı tasarım ve kodlama.
+
+183
+01:02:05,907 --> 01:02:08,007
+ve mühendislik testi.
+
+184
+01:02:20,244 --> 01:02:25,943
+1.6'da da müşteriden değerlendirme sunma.
+
+185
+01:02:35,699 --> 01:02:47,778
+Evet, şimdi ne yapacağız? Burada prototip oluşturmada da, ürün oluşturmada da şunları kopyalayacağım.
+
+186
+01:03:01,204 --> 01:03:26,282
+Bu arada sadece şunları 2-1, 2-2, 2-3, 2-4, 2-5, 2-6 olarak değiştireceğim.
+
+187
+01:03:26,282 --> 01:03:34,523
+Ürün zenginleştirmede de aynı adımlar. Yazılı mühendisliği dersinden spiral modelin şekli gözünüzün önüne geldi mi?
+
+188
+01:03:40,980 --> 01:03:46,360
+Biz de başlangıçta hatırlatmıştık. Burada bir sorunuz var mı?
+
+189
+01:03:52,947 --> 01:03:55,688
+[öğrenci] anlaşıldı mı?
+
+190
+01:04:00,724 --> 01:04:01,882
+sorunuz var mı?
+
+191
+01:04:06,164 --> 01:04:10,483
+[öğrenci]
+
+192
+01:04:11,539 --> 01:04:12,838
+[öğrenci].
+
+193
+01:04:15,019 --> 01:04:16,318
+Anlaşıldı hocam.
+
+194
+01:04:17,318 --> 01:04:17,539
+Tamam.
+
+195
+01:04:18,500 --> 01:04:18,739
+Evet.
+
+196
+01:04:19,938 --> 01:04:26,858
+Yani iki tane bildiğimiz model üzerinde Work Breakdown Structure yapısını hatırlatmak istedim.
+
+197
+01:04:26,858 --> 01:04:39,960
+Bu Work Breakdown Structure yapısını oluşturduğumuzda biz bu adımları daha kolay takip edebiliyoruz.
+
+198
+01:04:39,960 --> 01:05:03,039
+ve her birinin Work Breakdown Structure yapısı içinde her birinin ne kadar sürede ortalama gerçekleştiğini, bizim projemizin büyüklüğüne benzer projelerde ne kadar süreceğini takip etmeye çalışıyoruz.
+
+199
+01:05:03,039 --> 01:05:21,119
+Yine her bir adımda, her bir evredeki her bir adımda ne kadar bütçe gerekir bulabilmek için ne kadar iş gücü gerekir öncelikle buluyoruz
+
+200
+01:05:21,119 --> 01:05:26,679
+ve daha sonra da toplam bir bütçe hazırlayabiliyoruz.
+
+201
+01:05:26,780 --> 01:05:38,818
+Ama önce doğru bir bizim kullandığımız yazılım geliştirme süreç modeline uygun bir work breakdown structure yapısı oluşturuyoruz.
+
+202
+01:05:40,559 --> 01:05:49,958
+Bu spiral model için, bu waterfall model için başka bir model için de yine geliştirebilmeniz gerekiyor.
+
+203
+01:05:49,958 --> 01:05:57,978
+Şimdi bu adımı da geçersek proje planını tekrar takip edelim.
+
+204
+01:05:57,978 --> 01:06:00,978
+Proje planında proje kapsamını oluşturduk.
+
+205
+01:06:02,139 --> 01:06:04,978
+Yazılım geliştirme süreç modelimizi seçtik.
+
+206
+01:06:05,798 --> 01:06:08,980
+Risk analizimizi, varsayımlarımızı ve kısıtlarımızı belirledik.
+
+207
+01:06:10,338 --> 01:06:16,978
+Alt aktivitelerimizi oluşturduk ve bir zaman çizelgesi gerçekleştiriyoruz.
+
+208
+01:06:16,978 --> 01:06:36,039
+zaman çizelgesi içinde yine Gantt diagramı ile bu aktiviteleri belirledikten sonra aktiviteler arası ilişkileri de belirleyip zaman çizelgemizi oluşturuyoruz.
+
+209
+01:06:36,739 --> 01:06:41,980
+Ve bu zaman çizelgesine göre iş gücümüz de ne kadardır?
+
+210
+01:06:42,518 --> 01:06:45,480
+İş gücümüzü de belirlememiz gerekiyor.
+
+211
+01:06:57,811 --> 01:07:00,610
+bundan sonra şimdi önce
+
+212
+01:07:15,764 --> 01:07:35,764
+bizim planımızda daha önceki projelerden aldığımız feedback'e göre bilgi toplama aşaması diyelim ki bir hafta sürecektir veya 15 gün sürecektir.
+
+213
+01:07:49,780 --> 01:07:50,780
+Diyelim ki
+
+214
+01:07:57,396 --> 01:08:19,555
+modelleme başlayacak. Yani biz önce gerçekleştireceğimiz sistemle ilişkili bilgi toplamaya başlayacağız. Üç gün sonra da bu uygulamanın veri akış diagramını veya use case diagramını veya use case belgelerini hazırlamaya başlayacağız.
+
+215
+01:08:19,555 --> 01:08:23,496
+kavramsal sınıf diagramlarını oluşturmaya başlayacağız.
+
+216
+01:08:25,555 --> 01:08:38,055
+Bu aradaki ilişkiler de şurada belirlediğimiz gibi aktiviteler arası ilişkileri yerine yerleştirerek devam edecek.
+
+217
+01:08:38,055 --> 01:08:55,975
+zaman çizelgesi de ve aktiviteler arası ilişkiler de PERT diagramının da yardımıyla burada bu işleri gerçekleştirmek için eski projelerle karşılaştırarak ne kadar iş gücüne ihtiyacımız var.
+
+218
+01:09:18,612 --> 01:09:20,371
+Diyelim ki
+
+219
+01:09:25,042 --> 01:09:43,724
+6 adam aylık bir iş gücüne ihtiyacımız var. Görev atamada ise, burada tipini de söylüyoruz tabii ki, 6 adam aylık sistem analisti iş gücüne ihtiyacımız var.
+
+220
+01:09:44,403 --> 01:09:53,502
+1 adam aylık da proje yöneticisi iş gücüne ihtiyacımız var. Ondan sonra görev atamaya geliyor.
+
+221
+01:10:00,000 --> 01:10:21,238
+burada bir görev paylaşımı gerçekleştiriliyor ve bunların sonucuna göre de bütçe hazırlanıyor. Ne kadar süre? Hangi kişi atandı veya hangi görevdeki kişi atandı? Daha sonra da proje kalite planı üzerinde durulacak.
+
+222
+01:10:21,238 --> 01:10:30,039
+proje kalite planında da projede hangi aralıklarla milestone'lar oluşacak?
+
+223
+01:10:30,259 --> 01:10:33,840
+Milestone kavramını hatırlıyorsunuz değil mi?
+
+224
+01:10:37,876 --> 01:10:45,395
+Mahlston, [öğrenci], Mahlston neydi? [öğrenci],
+
+225
+01:10:55,188 --> 01:10:59,327
+[öğrenci], Milestone, Kilometre Taşı nedir?
+
+226
+01:11:12,500 --> 01:11:15,099
+[öğrenci], Malston nedir?
+
+227
+01:11:25,395 --> 01:11:33,395
+noktalar değil miydi? Evet, evet. Gelinen önemli noktalar. Dolayısıyla...
+
+228
+01:11:46,131 --> 01:12:04,811
+noktalarımız nelerdir? Önce milestone'larımız nelerdir? Kalite planında onu belirtiyoruz. Eğer mesela dışarıdan bir sponsoru varsa projenin, o zaman bizim belli dönüm noktalarına gelmemizi beklemeden değerlendirme yapmak isteyebilirler.
+
+229
+01:12:04,811 --> 01:12:14,692
+örneğin 6 ayda bir kalite planı oluşturulur ve 6 ayda bir değerlendirme gerçekleştirilir.
+
+230
+01:12:14,692 --> 01:12:23,451
+Bu değerlendirmede ne göz önüne alınır? Planlananla gerçekleşen arasındaki farklılıklar nelerdir?
+
+231
+01:12:23,451 --> 01:12:43,351
+planlanan zaman uygulanmış mı? Gerçekleşen zamanla uygun mu? Planlanan iş gücüyle gerçekleşen iş gücü uygun mu? Dolayısıyla planlanan bütçeyle gerçekleşen bütçe arasında farklılık var mı? Bunlar dikkate alınır.
+
+232
+01:12:43,350 --> 01:12:52,492
+ve daha sonra da proje planına gereksinim spesifikasyonu eklenebilir.
+
+233
+01:12:53,230 --> 01:12:59,570
+Yani gereksinimlerimiz nelerdir proje kapsamını daha açıklamak üzere.
+
+234
+01:12:59,570 --> 01:13:13,411
+bu arada da gereksinim analizinde de belli bir noktaya gelinmişse gereksinim spesifikasyonunu SRS belgesine proje planına da ekleyebiliriz.
+
+235
+01:13:13,411 --> 01:13:28,270
+Ki müşteriyle yazılım geliştirici arasındaki anlaşma niteliğindeki SRS belgesini bu plan dokümanlarına da eklememiz uygun olur.
+
+236
+01:13:29,570 --> 01:13:30,850
+İsterseniz
+
+237
+01:13:42,612 --> 01:14:03,872
+Evet, teşekkürler [öğrenci]. O zaman 10 dakika ara. Bu arada şeyi sorayım. Az önce chatten yazmıştım. Project Management Roadmap ile ilişkili kitap.
+
+238
+01:14:03,872 --> 01:14:11,952
+Jolion Halos'un Amacom yayınlarından çıkan Information Systems Project Management kitabı.
+
+239
+01:14:11,952 --> 01:14:24,372
+İnternetten de temel hatlarını görebilirsiniz, bulabilirsiniz kitabı. Eski baskıları daha açık olarak da görülebilir.
+
+240
+01:14:24,371 --> 01:14:32,751
+Yani proje yol haritası dediğimizde proje sadece planla bitmiyor.
+
+241
+01:14:33,591 --> 01:14:45,411
+Plandan önceki hazırlık aşamaları, plan ve planın çalıştırılması, takip edilmesi hepsi bir bütün olarak proje menajmentı oluşturuyor.
+
+242
+01:14:46,591 --> 01:14:51,650
+Evet o zaman şimdi bir 10 dakika ara veriyorum daha sonra derse devam edeceğiz.
+
+243
+01:28:28,274 --> 01:28:37,095
+Evet, tekrar derse devam ediyoruz. Bu arada aklınıza takılan arada sorunuz var mı?
+
+244
+01:28:43,859 --> 01:29:00,359
+Yazılım Gereksilir Spesifikasyonu kavramını biraz açmak istiyorum. Bu kavram geçen dönemde yazılım kalite dersini alanlar tarafından daha açıktır.
+
+245
+01:29:00,359 --> 01:29:15,639
+bu projelerinizde test dersinin projelerinde kendi projeleriniz için gereksinim spesifikasyonunu vermiştiniz.
+
+246
+01:29:15,639 --> 01:29:38,798
+Yine aynı şekilde projeye başlarken de yani nasıl ki testte test edebilmemiz için gereksinim spesifikasyonunu bilip kullanıcı testini buradaki fonksiyonel gereksinimlere göre yapıyorsak
+
+247
+01:29:38,798 --> 01:29:50,579
+aynı şekilde sistem testlerini de, sistem testlerini gerçekleştirirken de fonksiyonel olmayan gereksinimlere göre gerçekleştiriyorsak
+
+248
+01:29:50,579 --> 01:30:02,639
+burada da projeye başlarken projenin kapsamı ve projenin ayrıntılarıyla ilişkili bilgiye
+
+249
+01:30:02,639 --> 01:30:17,559
+müşteriler tarafından istenen ve yazılım geliştiriciler tarafından gerçekleştirilmesi beklenen fonksiyonlara yazılım gereksinim spesifikasyonunda tanım getirilecektir.
+
+250
+01:30:17,559 --> 01:30:19,559
+Bu yüzden...
+
+251
+01:30:28,274 --> 01:30:45,515
+bu tanımlara burada vermek gerekiyor. Yani proje planının tamamlayıcısı olarak gereksinim spesifikasyonuna ihtiyacımız var.
+
+252
+01:30:45,515 --> 01:30:57,494
+Burada gereksinim spesifikasyonunda fonksiyonel gereksinimler dediğimizde işin yapısıyla ilişkili gereksinimleri anlıyoruz.
+
+253
+01:30:57,675 --> 01:31:01,515
+Bunları alt alta hiyerarşik bir şekilde de yazabiliriz.
+
+254
+01:31:01,515 --> 01:31:08,315
+Ya da modelleyerek bu modelin sonucunu da aktarabiliriz.
+
+255
+01:31:08,315 --> 01:31:21,914
+modelleyerek verdiğimizde bir use case diagramı ya da data flow diagram ya da bunların belgeli olarak belirtilmesi anlaşılacaktır.
+
+256
+01:31:22,676 --> 01:31:28,836
+Burada gereksinim spesifikasyonuyla ilişkili sorunuz var mı acaba?
+
+257
+01:31:28,835 --> 01:31:40,354
+hani geçen dönem dersi alanlar için sorun yok ama diğer arkadaşlarınız için yazılı mühendisliği derslerinde bu kavramlar veriliyor.
+
+258
+01:31:40,354 --> 01:31:52,795
+Bu yüzden herkes hazırlayabilir diye düşünüyorum ama yine de bununla ilişkili problemi olan var mı bilmek isterim.
+
+259
+01:31:52,795 --> 01:32:02,854
+Ben birkaç kişiye sorayım isterseniz. [öğrenci] bir problem var mı? Gereksinim spesifikasyonuyla ilişkili.
+
+260
+01:32:06,707 --> 01:32:07,828
+[öğrenci] [öğrenci]
+
+261
+01:32:11,475 --> 01:32:12,854
+Yok hocam, bir probleminiz.
+
+262
+01:32:13,494 --> 01:32:25,774
+Tamam. [öğrenci] ve [öğrenci], siz geçen dönemden biliyorsunuz zaten. Yazılım mühendisliği derslerinizden de biliyorsunuz. Değil mi? Bir problem yok.
+
+263
+01:32:27,274 --> 01:32:27,895
+Yok hocam.
+
+264
+01:32:29,735 --> 01:32:32,895
+Başka? [öğrenci].
+
+265
+01:32:37,747 --> 01:32:44,827
+[öğrenci], [öğrenci]. Sorun yok hocam. Ben de yazılımın handisi dersi almıştım zaten. Biliyorsun. Tamam.
+
+266
+01:32:50,100 --> 01:33:11,559
+Evet, o zaman problem yok. Böylece bir planda neler var? Hem sınav öncesinde hem de projelerinizle ilişkili tanımlamalarda bunları görmüş olduk.
+
+267
+01:33:11,559 --> 01:33:35,698
+Şimdi önümüzdeki hafta sınav öncesinde biz yazılım proje yönetimiyle ilişkili proje planı içinde olacak kavramlardan organizasyon yapıları üzerinde durduk.
+
+268
+01:33:35,698 --> 01:33:42,038
+burada tabii ki buna yer vermedik, görev atama dedik.
+
+269
+01:33:43,219 --> 01:33:53,918
+Görev atama da organizasyon yapısının bütçe ve ekip yapısının tanımlanması ayrı bir madde olarak da yazılabilir.
+
+270
+01:34:01,042 --> 01:34:08,042
+şuraya proje
+
+271
+01:34:08,819 --> 01:34:34,279
+ekip yapısının belirlenmesi diyebiliriz. Proje ekip yapıları üzerinde geçen hafta durduk. Üzerinden onun için hızlıca geçeceğim. Hangi işi kim yapacak o belirlendi. Ondan sonra da projemizdeki genel organizasyon sistemi nasıl olacak?
+
+272
+01:34:34,279 --> 01:34:42,680
+proje ekipleri demokratik, şeflik ve hiyerarşik olarak oluşturulabilir demiştik.
+
+273
+01:34:42,680 --> 01:34:50,559
+Demokratik ekip yapısında bütün üyeler eşit ama daha az kişilerin olduğu ekiplerde kullanılır.
+
+274
+01:34:50,559 --> 01:35:04,979
+şeflik ekip yapısı bir kişinin daha az sayıdaki ekipte yönetimi gerçekleştirmesi ve kararları alıp uygulaması yer alır.
+
+275
+01:35:06,259 --> 01:35:10,639
+Bu da şefin yeteneğine bağlıdır kararların doğruluğu ve tutarlılığı.
+
+276
+01:35:17,844 --> 01:35:21,403
+Şeflik sistemi bu şekilde.
+
+277
+01:35:22,823 --> 01:35:26,224
+Hiyerarşik bir sistem.
+
+278
+01:35:27,863 --> 01:35:38,643
+Tabii ki profesyonel projelerde, daha kalabalık ve karmaşık projelerde hiyerarşik sistemler daha önemli.
+
+279
+01:35:38,643 --> 01:35:44,903
+Hiyerarşik sistemde bir proje yöneticisine bağlı birkaç ekip oluşur.
+
+280
+01:35:44,903 --> 01:35:51,903
+Ve bu ekip yapısını, yerelşik sistem ekip yapısını bu şekilde görebiliyoruz.
+
+281
+01:35:53,082 --> 01:36:01,222
+Proje yöneticisi veya takım lideri değişik isimlerde kullanılabiliyor.
+
+282
+01:36:01,222 --> 01:36:15,323
+Bu konuda kiyerarşik yapıda altta görevlileri dağıtacağı, sorumlulukları dağıtacağı şefler olacaktır.
+
+283
+01:36:15,722 --> 01:36:18,023
+Proje yöneticisi bunları takip edecektir.
+
+284
+01:36:18,023 --> 01:36:27,622
+O zaman bu kiyerarşik sistem yapısı söz konusu olduğunda işte proje organizasyon yapıları karşımıza çıkıyor.
+
+285
+01:36:27,622 --> 01:36:33,104
+Fonksiyonel proje takımları ya da matriz organizasyonlar şeklinde.
+
+286
+01:36:36,103 --> 01:36:44,384
+Bu fonksiyonel organizasyon yapısında çalışanlar uzmanlık alanlarına göre bölümlenmekte.
+
+287
+01:36:44,384 --> 01:36:47,024
+Yani yapılan iş nedir? Yazılım geliştirme.
+
+288
+01:36:47,443 --> 01:36:50,524
+Yazılım geliştirmede hangi uzmanlık alanları var?
+
+289
+01:36:50,524 --> 01:37:18,462
+Bu uzmanlık alanlarına göre proje yöneticisi altta çalışma grupları oluşturuyor ve buna göre de fonksiyonel organizasyonda sistem analistleri yöneticisi o projeye ait pazarlama ürünün yayılmayla ilişkili, bakımıyla ilişkili,
+
+290
+01:37:18,462 --> 01:37:30,462
+yazılım geliştirme ile ilişkili yazılımcı ya da programcıların bağlı olduğu ekipler şeklinde düşünülür.
+
+291
+01:37:30,462 --> 01:37:59,622
+Proje organizasyonu söz konusu olduğunda burada da proje organizasyonu yapısında sistemin ana işlevleri çıkarılarak bu ana işlevlerine göre diyelim ki her bir modülün, her bir parçanın gerçekleştirilmesi için gerekli tüm uzmanlık alanlarının yönetimi.
+
+292
+01:38:00,462 --> 01:38:04,243
+proje organizasyonunda sağlanır.
+
+293
+01:38:06,243 --> 01:38:13,243
+Bir proje organizasyonu yapısı da şu şekildedir.
+
+294
+01:38:13,243 --> 01:38:40,582
+İşte mesela bir muhasebe mali işler uygulamasında stok kontrol takım lideri, finans modülü takım lideri, MIS modülü takım lideri, müşteri ekranları takım lideri gibi ekipler oluşturulur.
+
+295
+01:38:40,582 --> 01:38:46,682
+Şimdi fonksiyonel ile proje organizasyonu arasındaki fark nedir?
+
+296
+01:38:46,682 --> 01:38:53,682
+Fonksiyonel organizasyonda yazılım geliştirme ekibindeki...
+
+297
+01:38:56,819 --> 01:39:06,599
+Uzmanlık alanları, yazılım geliştirme işinin alt başlıkları düşünülerek bu ekipler oluşturulur.
+
+298
+01:39:06,599 --> 01:39:18,958
+Proje organizasyonunda ise projenin alanı, projenin gerçekleştirdiği iş, bunun alt işlemleri nelerdir ona göre alt ekipler oluşturulur.
+
+299
+01:39:19,219 --> 01:39:23,519
+Yani projenin modüllerine göre ekipler oluşturulur.
+
+300
+01:39:23,519 --> 01:39:47,618
+Bir başka organizasyon yapısı da yine matriz organizasyonu. Matriz organizasyonunda raporlama ve yetki ilişkileri açısından daha farklı.
+
+301
+01:39:47,618 --> 01:40:16,680
+Bizim fonksiyonel organizasyon yapımız şirketin genel yönetiminde vardır düşüncesiyle ve böyle kurumlarda zaten bir sistem analistleri grup yöneticisi, programcılar grup yöneticisi, yazılım mühendisleri grup yöneticisi veya yazılım mimarları grup yöneticisi var.
+
+302
+01:40:16,680 --> 01:40:24,680
+Tasarımcılar grup yöneticisi ve bunlar bu ekiplere bağlı çalışıyorlar.
+
+303
+01:40:25,399 --> 01:40:33,319
+Ama projede de projenin alt modüllerine göre gerçekleştirdikleri işler var.
+
+304
+01:40:34,539 --> 01:40:38,479
+Bu işlerde de proje yöneticilerine bağlılar.
+
+305
+01:40:38,479 --> 01:40:46,220
+Yani matriz organizasyon yapısında yetki birden fazla kişiye dağıtılmıştır.
+
+306
+01:40:46,219 --> 01:41:03,078
+Projede çalışan uzmanlar kendilerine verilen işleri hem birim yöneticilerine hem de proje yöneticilerine raporlayarak çalışacaklardır.
+
+307
+01:41:03,078 --> 01:41:08,878
+Bunu da yine şekil üzerinden görebiliriz.
+
+308
+01:41:09,899 --> 01:41:22,680
+Burada genel şirket yönetiminde genel müdür altında yazılım mühendisleri lideri, sistem analizleri lideri, programcılar lideri var.
+
+309
+01:41:23,798 --> 01:41:29,338
+Bunun yanında A projesi proje yöneticisi, B projesi proje yöneticisi var.
+
+310
+01:41:29,338 --> 01:41:41,738
+Burada bir sistem analisti, programcı ve yazılım mühendisi çalışıyorsa, aynı şekilde bir de tester grubu da belirleyebiliriz.
+
+311
+01:41:41,738 --> 01:41:58,899
+Bu kişiler projedeki görevleriyle proje yöneticisine ve genel işleriyle ilişkili de birim yöneticilerine bağlıdır.
+
+312
+01:41:58,899 --> 01:42:06,699
+Böylece bir matris yapısı şeklinde ilerleyecektir bu organizasyon yapısı.
+
+313
+01:42:07,699 --> 01:42:19,979
+Şimdi biz başka bu proje organizasyonundan başka hangi konular üzerinde durduk proje planı içinde?
+
+314
+01:42:24,243 --> 01:42:51,262
+proje zamanlaması üzerinde durduk. Proje zamanlamasında Gantt diagramı ve PERT diagramını nasıl hazırlayacağımız üzerinde durduk. Şema olarak Gantt ve PERT CPM kullanılıyor. Proje zamanlaması ve planlaması aşamasında CPM yerine PERT kullanılıyor. Neden PERT kullanılıyordu?
+
+315
+01:42:51,262 --> 01:43:02,802
+bizim uygulamalarımızda CPM yerine PERT kullanıyoruz. Neden acaba PERT kullanıyoruz? [öğrenci] sen bir şey söyleyebilir misin bunun için?
+
+316
+01:43:04,182 --> 01:43:06,363
+Hocam merhabalar yeniden. Merhaba.
+
+317
+01:43:06,823 --> 01:43:16,882
+PERT diğer ağlarında asıl proje gidişatını görmek istiyoruz. Yani kritik yolumuzda etkileyen herhangi bir kısım var mı?
+
+318
+01:43:16,882 --> 01:43:22,222
+ve biz bu kritik yolu nasıl eforu azaltarak ilerletebiliriz?
+
+319
+01:43:22,222 --> 01:43:24,222
+Bu görmemizi sağlıyor PERT diagramı.
+
+320
+01:43:24,563 --> 01:43:26,604
+Evet, güzel.
+
+321
+01:43:27,323 --> 01:43:41,783
+Çünkü şebeke analizi, A diagramı projedeki aktivitelerin hangi yollar üzerinde dizilirteceğini gösteriyor.
+
+322
+01:43:42,483 --> 01:43:45,703
+CPM de aynı şekilde gösteriyor, Critical Path Method.
+
+323
+01:43:45,703 --> 01:44:05,703
+ama CPM'de belirlilik halinde yani ben bütün alt aktivitelerime waterfall için konuşursak analiz, tasarım, gerçekleştirme, test bunların hepsini hangi uygulama için yaparsam yapayım süreleri belirleyeyim.
+
+324
+01:44:15,988 --> 01:44:28,167
+yazılım projesinde her proje için analiz şu kadar sürer, tasarım şu kadar sürer, gerçekleştirme bu kadar gün sürer, bu kadar iş gücüyle tamamlanır gibi
+
+325
+01:44:32,819 --> 01:44:51,840
+bu kadar sürede tamamlanır gibi bir şeyimiz yok, özelliğimiz yok yazılım projelerinde. O yüzden PERT belirsizlik halinde bu süreler. Bunun için de bir tahmin yapıyor önce PERT analizinde.
+
+326
+01:44:51,840 --> 01:45:05,039
+her bir aktivitenin en kötümser, en iyimser ve en olası ortalama şimdiye kadar olan ortalamalara göre sonuçları nelerdir?
+
+327
+01:45:06,439 --> 01:45:15,279
+Böylece süreler önce hesaplanıyor, tahmin yapılıyor süreler konusunda ondan sonra işleme başlıyoruz.
+
+328
+01:45:15,279 --> 01:45:22,939
+Yani CPM biraz daha basit belirlilik halinde kullanılıyor.
+
+329
+01:45:24,618 --> 01:45:33,578
+Evet, proje zamanlaması için PERT ve CPM'i kullanıyoruz demiştik.
+
+330
+01:45:33,578 --> 01:45:46,158
+ve bugün gördüğümüz örnekler kapsamında bir work breakdown structure yapısı oluşturduk.
+
+331
+01:45:46,158 --> 01:45:52,158
+Sipral model için bir de waterfall için bir şey oluşturduk.
+
+332
+01:45:53,500 --> 01:45:59,319
+Buna göre proje planımızı tekrar revize ettik.
+
+333
+01:45:59,319 --> 01:46:09,079
+proje planımızda neler var en son eklediklerimizle proje planımız bu şekle döndü.
+
+334
+01:46:10,338 --> 01:46:15,519
+Buradaki maddeleri de kullanabilirsiniz projenizdeki proje planında.
+
+335
+01:46:15,519 --> 01:46:28,779
+IEEE'nin standartları içinde yer alan proje standartını da kullanabilirsiniz.
+
+336
+01:46:29,319 --> 01:46:32,479
+her ikisi de mümkün.
+
+337
+01:46:34,720 --> 01:46:42,099
+Şimdi biraz diğer gördüğümüz konular üzerinde de duralım.
+
+338
+01:46:42,599 --> 01:46:44,979
+Ekran paylaşımını değiştiriyorum.
+
+339
+01:47:03,060 --> 01:47:24,338
+Evet, dersin başında zaten bununla başlamıştık. Etkin proje yönetimi üzerinde durduk. Yazılım ölçümü de, proje yönetimi dediğimizde ölçüm karşımıza geliyor. Software Matrix. Software Matrix neden önemli?
+
+340
+01:47:24,338 --> 01:47:28,618
+işte klişe bir cümleden söz etmiştim.
+
+341
+01:47:28,719 --> 01:47:30,578
+Ölçemediğinizi yönetemezsiniz.
+
+342
+01:47:31,298 --> 01:47:38,019
+Daha iyi bir yönetim sağlamak için öncelikle gerçekleştirdiğimiz işleri ölçmemiz gerekiyor.
+
+343
+01:47:39,479 --> 01:47:42,479
+Mühendislik yaklaşımı da bunu gerektiriyor demiştik.
+
+344
+01:47:42,479 --> 01:48:05,719
+ölçülebilir hedefler haline getirebilmek için de yazılım projelerindeki işleri, sonuçları, ürünü daha ölçülebilir hale getirecek olan metriklerden faydalanıyoruz.
+
+345
+01:48:05,719 --> 01:48:27,439
+Bizim yazılım ürününün özellikleri, kullanıcı özellikleri, bakım özellikleri, kalite faktörleri bunları metriklerle daha ölçülebilir hale getiriyoruz.
+
+346
+01:48:34,002 --> 01:48:59,423
+Yazılımı ölçebilmek için önce büyüklük ölçümü yapıyorduk. Line of Code ve Function Point birisi doğrudan ölçüm örneği. Function Point ise yani komut satırı, Line of Code bizim doğrudan ölçümümüz. Ne demek bu?
+
+347
+01:48:59,423 --> 01:49:08,524
+direkt sayıyorsunuz kaç satırlıktır ona göre büyüklüğü hakkında bir fikir veriyor size. Ama objektif ama değil ama bir fikir veriyor.
+
+348
+01:49:10,904 --> 01:49:27,363
+Function Point'de ise dolaylı ölçümde ise bize farklı bilgilerini birleştirerek yazılımın farklı bilgilerini birleştirerek bir sonuç veriyor.
+
+349
+01:49:27,363 --> 01:49:33,502
+ve Function Point sayısı ağırlık faktörü gibi bir şey.
+
+350
+01:49:33,764 --> 01:49:35,122
+Bunu nereden buluyoruz?
+
+351
+01:49:35,922 --> 01:49:37,564
+Bunun üzerinde durmuştuk yine.
+
+352
+01:49:38,783 --> 01:49:45,543
+Function Point'te hesaplamak için kullanıcının yazılıma giriş sayısı, aldığı çıktı sayısı,
+
+353
+01:49:45,663 --> 01:49:47,724
+yani büyüklüğüyle ilgili bir tahmin.
+
+354
+01:49:48,643 --> 01:49:51,882
+Bu hem büyüklüğü hem karmaşıklığını veriyor Function Point.
+
+355
+01:49:52,462 --> 01:49:56,623
+Genellikle ticari uygulamalar için başlatılmış.
+
+356
+01:49:57,363 --> 01:50:08,342
+işte kaç tane girdi yaptı, kaç tane çıktı aldı, kaç tane sorgulama yaptı, kaç tane dosya sayısı var, dış ara birim sayısı ne?
+
+357
+01:50:33,460 --> 01:50:38,538
+başın point'in ilk ham halini bulmak için sayı çarpı ağırlık faktörü bu.
+
+358
+01:50:44,020 --> 01:50:58,118
+bu her bir satır için girdi sayısını saydık. Girdi sayısı basit mi, ortam, karmaşık mı sınıfına giriyor. Buna göre ağırlık faktörü olarak onu ele alıp şuraya yazıyoruz.
+
+359
+01:50:58,118 --> 01:51:12,059
+Ve bunları topluyoruz. Şimdi bundan sonraki şeye geldiğimizde sayı toplamı çarpı 0.65 artı 0.01 toplam Fİ diyoruz.
+
+360
+01:51:12,059 --> 01:51:20,319
+14 tane sorumuz var burada düzeltme faktörü olarak kullandığımız.
+
+361
+01:51:20,319 --> 01:51:23,319
+14 tane sorumuz nereden geliyordu?
+
+362
+01:51:25,958 --> 01:51:31,319
+Şuradan yedekleme gerekli mi değil mi?
+
+363
+01:51:34,939 --> 01:51:37,099
+İletişim altyapısı gerekli mi?
+
+364
+01:51:37,199 --> 01:51:38,560
+Performans kritik mi?
+
+365
+01:51:39,158 --> 01:51:41,618
+Çevrim içi veri girişi var mı?
+
+366
+01:51:42,059 --> 01:51:51,020
+bunlar önem değerlerini veriyor sıfırdan beşe kadar. Beş olduğunda gerçekten bu özellik, bu parametre çok önemli.
+
+367
+01:51:51,020 --> 01:52:05,520
+Ve böylece toplam bir değer hesaplıyoruz. Bu toplam değeri de şurada şu toplam Fİ yerini getirip yerleştiriyoruz.
+
+368
+01:52:05,520 --> 01:52:22,779
+Böylece bir düzeltme faktörü hesaplanmış oluyor. Sayı toplamı şuradaki şu köşedeki değer sayı toplamı bu toplam doğrudan alınmıyor. Bir düzeltme faktörüyle düzeltilerek kullanılıyor.
+
+369
+01:52:40,916 --> 01:52:42,595
+Peki bu ne işe yarıyor?
+
+370
+01:54:12,340 --> 01:54:19,340
+Evet, bu maliyet tahmin yöntemlerine baktığımızda...
+
+371
+01:54:25,076 --> 01:54:43,854
+hangi yöntemler vardı? İstatistik modeller ile daha bilimsel tahminler gerçekleştiriyoruz eski projelere göre. Ama bilirkişi takdiri, DELF yöntemi, analiz yöntemi, istatistik yöntemler olduğunu söylemiştik.
+
+372
+01:54:43,854 --> 01:54:58,055
+DERF'i bilirkişi takdirinin genişletilmesini sağlayan yöntemdi. Bu her yerde de kullanılan bir yöntem. Çoklu karar verme yöntemi, analiz yöntemi.
+
+373
+01:54:58,055 --> 01:55:08,135
+Bunu da ayrı bir yöntem gibi yani analizi dikkate alarak gerçekleştirdiğimiz şey, maliyet tahmini. Nedir bu?
+
+374
+01:55:08,135 --> 01:55:17,375
+ürünü yine daha önce de bu ekip yapısında da gördüğümüz gibi ürünü
+
+375
+01:55:23,346 --> 01:55:41,966
+hangi aşamalardan geçtiğine göre ya da ürünü geliştirme işleminin hangi aşamalardan geçtiğine göre ya da ürünün alt modüllerine göre ayırarak bunların her birinin maliyet tahminini ayrı ayrı yapıp birleştirmek.
+
+376
+01:55:41,966 --> 01:55:53,367
+İşte Jolion Halos'un tavsiye ettiğim kitabında buna sonradan bu birleştirmeye birleştirme şaşkınlığı adı verilmiş.
+
+377
+01:55:53,367 --> 01:56:17,707
+Çünkü bu birleştirme işini gerçekleştirdiğimizde her bir modüle yeterince zaman verip topladığımızda bizim projenin bitiş süresinden çok daha uzun bir sürede tamamlanır halde olması şaşkınlığından söz edilmektedir.
+
+378
+01:56:17,707 --> 01:56:24,688
+Bu yüzden burada birkaç kez üzerinden geçerek işlem gerçekleştirilir
+
+379
+01:56:24,688 --> 01:56:39,467
+Önce her bir alt modüle ya da her bir alt işe ne kadar süre gerekecek ya da ne kadar maliyet gerekecek
+
+380
+01:56:39,467 --> 01:56:43,827
+ne kadar iş gücü gerekecek bunlar hesaplanır
+
+381
+01:56:43,827 --> 01:56:56,886
+ama yukarıya doğru birleştirdiğimizde çok büyük çıktığında tekrar aşağıya doğru hepsini daha kısa sürede yapacak şekilde üzerinden geçilmesi gerekecektir.
+
+382
+01:56:56,887 --> 01:57:06,287
+İstatistik modeller söz konusu olduğunda, istatistik modellerde de yine analiz yöntemi kullanılır.
+
+383
+01:57:09,287 --> 01:57:13,887
+Ya da alt işlemlere göre tahminlerde bulunulur.
+
+384
+01:57:15,887 --> 01:57:22,346
+Burada da Kokomo yöntemi ve Putnam-Reilly modeli örnek verilmiştir.
+
+385
+01:57:22,346 --> 01:57:43,827
+Ayrıca bunlar hep Carlock kullanan iki şey, maliyet tahmin modeli. Ayrıca şeyler de var. Function point'i kullananlar da var. Albrecht metodu gibi, maliyet tahmin metodu gibi.
+
+386
+01:57:43,827 --> 01:58:05,087
+burada sadece şuradaki şey değişiyor. Mesela Kokomo'da bir formül bulunmuş. Temel Kokomo'da iş gücü K-Log'un X değişkeni olarak kullanılmasıyla elde ediliyor.
+
+387
+01:58:05,087 --> 01:58:24,247
+T süresi ise iş gücünü ne kadar doğru olur, ne kadar süreye yayarsak doğru olur. Bu düşünceyle geliştiriliyor. Kokomo modeli işte temel, orta, daha gelişmiş kokomo, karmaşık kokomo olabilir.
+
+388
+01:58:24,247 --> 01:58:26,146
+biz zaten hep temel
+
+389
+02:00:11,380 --> 02:00:41,359
+Evet, şimdi tekrar proje planı şeyine döndüm. Benim bugün tekrar edeceklerim için de risk analizinin kategorilerini tekrar etmiyorum. Çünkü onun üzerinde çok ayrıntılı durmuştuk zaten. Sadece bugün eklediğim risk analizi kategorileri gibi projedeki varsayımlarımız, projedeki kısıtlarımız içinde benzer kategorilerle tanımlamalar ekleyebilmeniz var.
+
+390
+02:00:41,380 --> 02:00:50,600
+buraya bunu söyledim. Proje risk analizinde risk tablosunu oluşturmaya çalışıyoruz. Risk tablosunu nasıl oluşturuyorduk?
+
+391
+02:00:52,979 --> 02:01:03,920
+Projedeki her bir risk kategorisini düşünüp o kategorilerden hangi riskler var? Bu risklerin olma olasılığı nedir?
+
+392
+02:01:03,918 --> 02:01:15,519
+olduğunda etkisi nedir, yıkımı nedir ve böylece her bir riskin önemi ortaya çıkar.
+
+393
+02:01:15,519 --> 02:01:31,939
+Bu önem sayısına göre sıralayıp belli bir miktardan az riski olanları takip etmemek, önemli çıkanları takip etmek yoluna gidilir.
+
+394
+02:01:31,939 --> 02:01:36,838
+ve her bir riskinde önlemi alınır.
+
+395
+02:01:37,920 --> 02:01:50,519
+Önlem dediğimizde mesela işte kilit proje ekip elemanının işten ayrılması riski.
+
+396
+02:01:50,519 --> 02:01:54,359
+Bu risk için önlemler neler olabilir?
+
+397
+02:01:54,359 --> 02:02:06,279
+bir yedeğinin işe alınıp kullanılması veya onunla sözleşmeler imzalanması, onun ücretinin arttırılması gibi önlemler vardır.
+
+398
+02:02:06,458 --> 02:02:08,519
+Bu önlemlerinde maliyeti vardır.
+
+399
+02:02:09,639 --> 02:02:11,078
+Bunlar takip edilir.
+
+400
+02:02:11,198 --> 02:02:20,118
+Eğer olasılık artmışsa o zaman ona göre önlemler de gerçekleştirilecektir şeklinde düşünülebilir.
+
+401
+02:02:20,118 --> 02:02:32,698
+veya bir donanım ürününün yazılımı geliştirirken kullanılacak donanım ürününün siparişinin gecikmesi.
+
+402
+02:02:32,698 --> 02:02:43,798
+Bu da bir risktir. Her zaman ortaya çıkar mı? Çıkmaz. Ama çıktığında ne yapılacak veya çıkabileceğini takip etmek gerekir.
+
+403
+02:02:43,798 --> 02:02:53,779
+bunların hepsi önceden çalışmalarla belirlenecek önlemler.
+
+404
+02:02:56,779 --> 02:03:10,059
+Bu arada bir dersimizde yine Payback analizi ve
+
+405
+02:03:16,724 --> 02:03:37,842
+Bu ekonomik fizibilite kavramlarından bahsetmiştim. Burada bazı tanımlamalar vardı. Bunlar üzerinde de bir hatırlatma yapmak istiyorum.
+
+406
+02:03:47,764 --> 02:03:49,363
+şimdi bununla ilişkili
+
+407
+02:04:15,922 --> 02:04:19,762
+Evet, genel olarak dersle ilişkili sorunuz var mı?
+
+408
+02:04:30,804 --> 02:04:33,662
+şu anda sesimi duyabiliyor musunuz?
+
+409
+02:04:38,420 --> 02:04:41,439
+sadece bende mi oldu bilmiyorum ama çok kopukluk oldu.
+
+410
+02:04:42,319 --> 02:04:57,298
+Evet, evet, evet. Çünkü birkaç kez sistemden şey oldu, sistemde de kopukluk oldu. Birkaç kez girip tekrar başa döndüm.
+
+411
+02:05:01,298 --> 02:05:04,840
+Genel olarak sorularınız var mı?
+
+412
+02:05:11,604 --> 02:05:27,302
+hocam dersle alakalı değil ama benim projeyle alakalı bir sıkıntı var. Daha doğrusu şey, ben projeyi için mail atmıştım ama biraz geç attım kusura bakmayın. Ona dönüş yapmadınız.
+
+413
+02:05:28,682 --> 02:05:32,302
+Proje konu, yani uygulama projesi konunuz değil mi?
+
+414
+02:05:32,302 --> 02:05:33,422
+Evet hocam.
+
+415
+02:05:33,422 --> 02:05:50,503
+Ben uygulama projelerinizle ilgili geçen derslerde söyledim. Bazılarınıza mail attım ama genel olarak atmadım. Çünkü önceden bileyim hangi konu olduğunu işaret ediyorum.
+
+416
+02:05:50,502 --> 02:05:53,002
+bir liste oluşturuyorum.
+
+417
+02:05:54,063 --> 02:06:00,922
+Ama yani konunuz uygun.
+
+418
+02:06:01,443 --> 02:06:04,023
+Eğer uygun olmasa cevap veriyorum.
+
+419
+02:06:04,143 --> 02:06:05,542
+Değilse listeye ekliyorum.
+
+420
+02:06:07,023 --> 02:06:16,363
+Önemli olan o seçtiğiniz konuda proje planını sıfırdan kendinizin yapması
+
+421
+02:06:16,363 --> 02:06:24,363
+ve gereksinim analizine kadar getirerek o yüzden proje planının altına gereksinim analizi de yazıyorum.
+
+422
+02:06:24,363 --> 02:06:42,123
+Gereksinim analizine kadar proje runningi getirip projenin çalıştırma aşamasını takip edilen projenin planlananla gerçekleşen arasındaki farklılıkları
+
+423
+02:06:42,122 --> 02:06:48,323
+bunun üzerine önlemlerinizi belirtmenizi istiyorum.
+
+424
+02:06:48,523 --> 02:07:03,104
+Yani takip aşamasını en azından gereksinim analizine kadar hatta daha önceki derslerde bir tane modülü sürdürerek programını da hazırlayın demiştim.
+
+425
+02:07:03,104 --> 02:07:20,543
+ama en azından böyle bir takip süresi, gereksinim analizine kadar bir takip aşaması, 3 evreyi kapsayacak şekilde projenin hazırlık aşaması, projenin planlama aşaması ve projenin çalıştırılması aşaması.
+
+426
+02:07:20,543 --> 02:07:37,082
+çalıştırılma nedir? Projeyi takip edip ilerlediğinizde planlananla gerçekleşen arasındaki farkların izlenmesi, önlemlerin alınması. Bunu görmek istiyorum.
+
+427
+02:07:37,082 --> 02:07:46,323
+Onun için konu şey değil yani konu devam edebilirsiniz belirlediğiniz konu üzerinde
+
+428
+02:07:46,323 --> 02:07:52,243
+Bu arada önce makaleler üzerinde duracaktık
+
+429
+02:07:52,243 --> 02:08:13,863
+makaleler konusunda hangi şey dokuzuncu hafta için geçen hafta konuşmuştuk ama yazmadım.
+
+430
+02:08:13,863 --> 02:08:20,863
+Bir arkadaşınız dokuzuncu haftada sunum yapacağını söylemişti.
+
+431
+02:08:27,764 --> 02:08:36,403
+[öğrenci] 11 Mayıs'ta sunabileceklerini söylemişlerdi. Değil mi? 10. haftada.
+
+432
+02:08:39,622 --> 02:08:41,203
+Evet hocam ben 11 Mayıs'ta.
+
+433
+02:08:41,462 --> 02:08:42,323
+11 Mayıs'ta.
+
+434
+02:08:42,483 --> 02:08:45,104
+11 Mayıs'a [öğrenci] da yazabilirsiniz.
+
+435
+02:08:45,563 --> 02:08:46,422
+11 Mayıs.
+
+436
+02:08:46,462 --> 02:08:47,024
+[öğrenci].
+
+437
+02:08:48,323 --> 02:08:50,063
+Evet yazıyorum. [öğrenci].
+
+438
+02:08:50,722 --> 02:08:51,363
+[öğrenci].
+
+439
+02:08:51,944 --> 02:08:52,302
+Tamam.
+
+440
+02:08:52,302 --> 02:08:58,342
+Bu arada [öğrenci] 11 Mayıs demişti ama ben 4 Mayıs'ta da sunabilirim demiştim
+
+441
+02:08:58,342 --> 02:09:01,422
+Tamam birisi çünkü çıktı 9 Mayıs diye
+
+442
+02:09:01,422 --> 02:09:02,922
+[öğrenci] değil mi?
+
+443
+02:09:03,182 --> 02:09:03,863
+Hayır hocam
+
+444
+02:09:03,863 --> 02:09:05,643
+[öğrenci] tamam
+
+445
+02:09:05,643 --> 02:09:06,103
+Evet
+
+446
+02:09:06,103 --> 02:09:08,304
+4 Mayıs
+
+447
+02:09:08,304 --> 02:09:10,462
+Hocam merhaba
+
+448
+02:09:10,462 --> 02:09:22,222
+Evet seninle konuşmuştuk o anket için daha ilerletebiliriz ama şey bu kısmını sadece
+
+449
+02:09:22,222 --> 02:09:28,304
+sunman yeterli demiştim. Evet. Hocam merhabalar. Bizi de 11 Mayıs'ta yazabilir misiniz acaba?
+
+450
+02:09:28,304 --> 02:09:44,523
+[öğrenci]. Tamam. Bir, iki, üç kişi oldu. [öğrenci]. Kaç kişi planlıyorsunuz acaba bir gün için? Bir gün için beş kişiye kadar olabilir.
+
+451
+02:09:45,382 --> 02:09:50,922
+O zaman ben de 11 Mayıs için. Olur [öğrenci]. Evet.
+
+452
+02:09:52,222 --> 02:09:55,382
+Teşekkürler
+
+453
+02:09:55,382 --> 02:09:55,882
+Tamam
+
+454
+02:09:55,882 --> 02:10:01,903
+Bundan sonraki hafta veya 11 Mayıs için başka isteyen var mı?
+
+455
+02:10:02,783 --> 02:10:03,502
+Hocam bu arada
+
+456
+02:10:03,502 --> 02:10:05,743
+Kusura bakmayın
+
+457
+02:10:05,743 --> 02:10:09,863
+Daha öncesinde ben 11 Mayıs'ta dedim ama 4 Mayıs'a da ben yetiştirebilirim gibi duruyor
+
+458
+02:10:09,863 --> 02:10:17,682
+O zaman sen gidişatına göre bana bir gün önceden haber verirsen olur
+
+459
+02:10:17,682 --> 02:10:18,662
+Tamamdır hocam
+
+460
+02:10:18,662 --> 02:10:21,042
+Yani şu anda tamam diyorsan yazayım ama
+
+461
+02:10:21,042 --> 02:10:26,962
+Bence yazalım hocam çünkü yazam bir sunumum şu an. Tamam tamam oldu o zaman. [öğrenci]'yı da
+
+462
+02:10:32,243 --> 02:10:39,063
+Hocam, merhaba. Ben de 11 Mayıs'ta sunabilirim. [öğrenci]. Tamam. Çünkü [öğrenci] yukarıya çıktı.
+
+463
+02:10:42,302 --> 02:10:54,703
+Tamamdır. Hocam ben de 11 Mayıs'ta sunabilirim bu arada. O zaman şöyle yapalım. [öğrenci] değil mi? Bir dakika. [öğrenci].
+
+464
+02:11:01,140 --> 02:11:02,918
+11 Mayıs'ta yazıyorum.
+
+465
+02:11:09,652 --> 02:11:25,912
+yetişir herhalde. Tamam. 1, 2, 3, 4, 5 kişi oldu. Evet, evet, yetişir rahatlıkla. Başka 11 Mayıs'a kadar hazır olacak var mı? Yoksa bir sonraki haftaya mı kalacak kalanlar?
+
+466
+02:11:30,162 --> 02:11:37,903
+Kimler kaldı? [öğrenci].
+
+467
+02:11:38,783 --> 02:11:40,243
+Hocam bir soru sorabilir miyim?
+
+468
+02:11:40,543 --> 02:11:40,802
+Tabii.
+
+469
+02:11:41,863 --> 02:11:51,722
+Bazı makaleler kendi çalışma yapacağı için anket yapacak değil mi? Bazı arkadaşlara anketin yetişmez falan demiştiniz.
+
+470
+02:11:51,943 --> 02:11:52,483
+Evet, evet.
+
+471
+02:11:52,844 --> 02:11:57,243
+Biz sadece seçtiğimiz makaleyi analiz edip sunumunu yapacağız değil mi?
+
+472
+02:11:57,323 --> 02:11:57,823
+Evet, evet.
+
+473
+02:11:57,823 --> 02:12:06,043
+Daha sonra da bunu IEEE formatında yazıp teslim edeceksiniz.
+
+474
+02:12:06,503 --> 02:12:10,564
+Tamam hocam. Peki teslim edeceğimiz raporda bir sayfa sınırı olacak mı?
+
+475
+02:12:11,344 --> 02:12:21,943
+Yani IEEE formatı sıkışık olduğu için önemli olan oradaki referansları verebilmeniz, şey yapmanız 3-4 sayfa olur.
+
+476
+02:12:22,884 --> 02:12:25,283
+Hocam biz de 11 Mayıs'ta alabiliriz.
+
+477
+02:12:25,283 --> 02:12:28,483
+Sen tek kişi miydin, iki kişi miydin?
+
+478
+02:12:28,503 --> 02:12:30,003
+Yok, [öğrenci]'le beraberydik hocam
+
+479
+02:12:30,003 --> 02:12:35,143
+[öğrenci], bir dakika bakayım aşağıya
+
+480
+02:12:35,143 --> 02:12:36,283
+[öğrenci] hocam
+
+481
+02:12:36,283 --> 02:12:36,622
+Tamam
+
+482
+02:12:44,114 --> 02:13:14,095
+Tamam. Tamam. Sizi de kaydettim. O zaman planımızı oluşturmuş olduk. Önümüzdeki haftada sınavı yani şu anda klasik yapmayı düşünüyorum. Ama yine de eğer test gibi bir şeyim olursa onu zaten sisteme test olur.
+
+483
+02:13:14,114 --> 02:13:19,715
+2-3 gün önceden yüklerim. Görürsünüz. Ama şu anda klasik olacak gibi.
+
+484
+02:13:22,195 --> 02:13:27,534
+Sınav gene bu dersleri aldığımız online yıldız edüteri adresinden.
+
+485
+02:13:27,636 --> 02:13:38,456
+Evet, orada dikkat ederseniz ödevler sınavlar diye bir bölüm var. Oraya yüklüyoruz sınav sorularını. Siz de zamanı gelince oradan bakıyorsunuz.
+
+486
+02:13:38,456 --> 02:13:47,676
+Klasik sınav olması halinde bilgisayardan giriş mi yapacağız yoksa bir kağıt kalemle çözüp fotoğraf mı yükleyeceğiz?
+
+487
+02:13:48,916 --> 02:13:50,854
+İkisi de olur. İkisi de olur.
+
+488
+02:13:50,854 --> 02:14:03,854
+Yani tam yüklerken problem olursa şayet bana mail atıyorsunuz.
+
+489
+02:14:03,854 --> 02:14:13,375
+yani kağıt kalemle yazarsanız daha iyi olabilir. Ama çok da sorun değil.
+
+490
+02:14:14,595 --> 02:14:21,875
+Teşekkür ederim. Yani bilgisayardan giriş için Word'te yazıp onu yükleyeceğiz. Ya da orada bir cevap alalım mı olacak?
+
+491
+02:14:21,875 --> 02:14:22,595
+Evet.
+
+492
+02:14:26,454 --> 02:14:27,215
+Teşekkürler.
+
+493
+02:14:27,414 --> 02:14:33,195
+Evet. Rica ederim. Evet. O zaman bu hafta için dersi bitirebiliriz.
+
+494
+02:14:33,194 --> 02:14:42,774
+Hocam bir şey sorabilir miyim? Sunumu, özet halini paylaşacağım demişsin sanırım dersin başında yoktum ama ne zaman paylaşırsınız acaba? Söylediyseniz kusura bakmayın.
+
+495
+02:14:43,255 --> 02:14:51,074
+Yok yok şimdi bu kullandığımız iki slide'ı şimdi paylaşacağım. Bu sistemde bir yer var galiba bu iki slide'ı koyacağım oraya.
+
+496
+02:14:51,354 --> 02:14:52,255
+Tamamdır çok üzücü.
+
+497
+02:14:52,494 --> 02:14:57,454
+Tamam. Görüştün müziği haftaya. İyi haftalar diliyorum.
+
+498
+02:14:59,154 --> 02:15:00,074
+İyi haftalar hocam.
+
+499
+02:15:00,494 --> 02:15:01,395
+Hoşçakalın.
+
+500
+02:15:01,694 --> 02:15:02,354
+İyi haftalar.
+
+501
+02:15:02,354 --> 02:15:09,074
+iyi yaptılar. Başarılar diliyorum. Görüşmek üzere hocam. Görüşmek üzere.
+
+502
+02:15:39,386 --> 02:15:58,667
+Merhabalar, günaydın. Bu hafta öncelikle bir tekrar yapacağım. Genel konularla ilişkili. Daha sonra uygulamalarımız konusunda konuşacağız.
+
+503
+02:16:24,923 --> 02:16:28,082
+Hocam merhaba. Ben başlamadan bir şey sorabilir miyim?
+
+504
+02:16:28,403 --> 02:16:31,662
+[öğrenci] sen mail atmıştın. Onunla ilgili mi soracaksın?
+
+505
+02:16:32,522 --> 02:16:34,823
+Yok ben mail atmamıştım. Belki.
+
+506
+02:16:35,643 --> 02:16:37,243
+Evet karıştırıyorum.
+
+507
+02:16:37,743 --> 02:16:40,542
+Ders slide'larını soracaktım ama ben de.
+
+508
+02:16:40,542 --> 02:16:44,403
+Dükleyecek misiniz midterm'den önce ya da ne zaman?
+
+509
+02:16:45,282 --> 02:16:51,122
+Şimdi üç tane böyle özet slide var.
+
+510
+02:16:51,122 --> 02:17:03,503
+onlardan hangisi yoksa yükleyeceğim onları. Bir de bugün üzerinde duracağım şey var.
+
+511
+02:17:03,503 --> 02:17:19,843
+Fizibilite analizi sırasında gerçekleştirdiklerimiz hangi şeyleri yapıyoruz analizler gerçekleştiriliyor
+
+512
+02:17:19,843 --> 02:17:33,042
+Fizibilite analizi sırasında özellikle ekonomik fizibilitede Payback analizi diğer analizlerle ilişkili bir slide da yükleyeceğim
+
+513
+02:17:33,042 --> 02:17:52,823
+temel bilgileri içerecek. Bir de daha genel bilgileri bulacağınız özellikle bilgi sistemleri projelerinde proje yönetim aşamalarıyla ilişkili bir şey yükleyeceğim.
+
+514
+02:17:52,824 --> 02:18:01,504
+yani tam böyle bütün anlattıklarımı bazı dersleri içeren slide'ları yükleyeceğim.
+
+515
+02:18:01,623 --> 02:18:12,262
+Bazıları da genel bilgilerde yani 3 veya 4 slide'ım var toplamda paylaşacağım.
+
+516
+02:18:14,084 --> 02:18:15,483
+Teşekkürler hocam.
+
+517
+02:18:15,783 --> 02:18:16,743
+Rica ederim.
+
+518
+02:18:22,106 --> 02:18:25,606
+Slide'ları nereye yükleyeceksiniz hocam? Hangi adresten?
+
+519
+02:18:26,926 --> 02:18:36,166
+Şey, aslında bu sisteminkine yüklemem daha iyi galiba.
+
+520
+02:18:40,315 --> 02:18:44,315
+Bu derse giriş yaptığımız adres. Evet, evet, evet.
+
+521
+02:18:44,315 --> 02:18:46,796
+Tamam, [öğrenci]. Teşekkürler.
