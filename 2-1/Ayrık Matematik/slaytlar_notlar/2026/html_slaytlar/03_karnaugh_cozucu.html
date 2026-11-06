@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Düzeltilmiş Karnaugh Haritası Çözücü</title>
+<style>
+  :root{
+    --bg:#0b1020; --panel:#121a33; --line:#35497f;
+    --text:#eaf0ff; --muted:#9fb0d9; --accent:#5b8cff;
+  }
+  *{box-sizing:border-box}
+  body{
+    margin:0;min-height:100vh;color:var(--text);
+    font-family:"Segoe UI",system-ui,Arial,sans-serif;
+    background:radial-gradient(1000px 600px at 85% -10%,#22315e,transparent),var(--bg);
+    display:flex;justify-content:center;align-items:flex-start;padding:24px;
+  }
+  .slide{
+    width:min(1280px,100%);background:linear-gradient(145deg,var(--panel),#0e1530);
+    border:1px solid #2b3a68;border-radius:20px;padding:24px;
+    box-shadow:0 20px 60px rgba(0,0,0,.45);
+  }
+  h1{margin:0;font-size:clamp(22px,3vw,32px)}
+  .sub{color:var(--muted);margin:6px 0 18px;font-size:14px}
+  .layout{display:grid;grid-template-columns:380px 1fr;gap:18px}
+  @media(max-width:1000px){.layout{grid-template-columns:1fr}}
+  .card{background:rgba(255,255,255,.05);border:1px solid #2b3a68;border-radius:16px;padding:16px}
+  h2{margin:0 0 12px;font-size:16px;color:#cfe0ff}
+  label{display:block;font-size:12px;color:var(--muted);margin:10px 0 5px}
+  select,textarea,button{
+    width:100%;border-radius:10px;border:1px solid #34497f;
+    background:#0d142b;color:var(--text);padding:10px;font-size:14px;
+  }
+  textarea{min-height:90px;resize:vertical;font-family:Consolas,monospace}
+  button{border:none;cursor:pointer;font-weight:700}
+  .primary{background:linear-gradient(135deg,var(--accent),#7f5bff);margin-top:14px}
+  .secondary{background:#233157;margin-top:8px}
+  .hint{font-size:12px;color:var(--muted);margin-top:8px;line-height:1.5}
+  .map-container{position:relative;display:inline-block;overflow:auto;max-width:100%}
+  table{border-collapse:collapse;margin-top:6px}
+  th,td{
+    border:1px solid var(--line);width:54px;height:54px;
+    text-align:center;font-weight:700;font-size:16px;position:relative;background:#0d142b;
+  }
+  th{background:#16224a;color:#b9c9f2;font-size:12px}
+  td.one{color:#7dffb0}
+  td.zero{color:#ff8b99}
+  td.x{color:#d5a8ff}
+  .idx{position:absolute;top:2px;left:4px;font-size:9px;color:#6f81ad;font-weight:400}
+  .overlay{position:absolute;inset:0;pointer-events:none}
+  .group-box{
+    position:absolute;border:3px solid;border-radius:10px;
+    background:rgba(255,255,255,.07);opacity:0;transform:scale(.9);
+    transition:opacity .45s ease,transform .45s ease;
+  }
+  .group-box.show{opacity:.9;transform:scale(1)}
+  .steps{display:flex;flex-direction:column;gap:8px;max-height:340px;overflow:auto}
+  .step{
+    background:#0e1731;border:1px solid #2d3f74;border-left:4px solid var(--accent);
+    border-radius:10px;padding:10px 12px;font-size:14px;
+    opacity:0;transform:translateX(-12px);transition:.45s ease;
+  }
+  .step.show{opacity:1;transform:none}
+  .result{
+    margin-top:14px;padding:14px;border-radius:12px;background:#10203c;
+    border:1px solid #35507f;font-family:Consolas,monospace;font-size:18px;
+    opacity:0;transform:translateY(8px);transition:.5s ease;
+  }
+  .result.show{opacity:1;transform:none}
+  .layer-title{font-weight:700;color:#cfe0ff;margin:10px 0 2px}
+  .legend{display:flex;gap:14px;margin-top:10px;font-size:12px;color:var(--muted)}
+  .dot{display:inline-block;width:10px;height:10px;border-radius:50%;margin-right:5px}
+</style>
+</head>
+<body>
+<div class="slide">
+  <h1>Karnaugh Haritası Çözücü — Düzeltilmiş Gruplama</h1>
+  <div class="sub">2–5 değişken • SOP / POS • 0, 1, X • Gray-code komşuluğu ve sarmalı gruplama</div>
+
+  <div class="layout">
+    <section class="card">
+      <h2>Girdiler</h2>
+
+      <label>Değişken sayısı</label>
+      <select id="vars">
+        <option value="2">2 değişken</option>
+        <option value="3" selected>3 değişken</option>
+        <option value="4">4 değişken</option>
+        <option value="5">5 değişken</option>
+      </select>
+
+      <label>Çözüm türü</label>
+      <select id="mode">
+        <option value="SOP">SOP — 1’leri grupla</option>
+        <option value="POS">POS — 0’ları grupla</option>
+      </select>
+
+      <label>Çıkış değerleri</label>
+      <textarea id="values">0 1 1 0 1 1 0 0</textarea>
+
+      <div class="hint">
+        Değer sırası minterm/maxterm numarasına göredir.<br>
+        2 değişken: 4 değer, 3: 16, 4: 32, 5: 64.<br>
+        Hücrelere tıklayarak <b>0 → 1 → X</b> arasında geçiş yapabilirsiniz.
+      </div>
+
+      <button class="primary" id="solve">Çöz ve Animasyonu Başlat</button>
+      <button class="secondary" id="random">Rastgele Örnek</button>
+
+      <div class="legend">
+        <span><span class="dot" style="background:#7dffb0"></span>1</span>
+        <span><span class="dot" style="background:#ff8b99"></span>0</span>
+        <span><span class="dot" style="background:#d5a8ff"></span>X</span>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>Harita ve Adım Adım Çözüm</h2>
+      <div style="display:flex;gap:20px;flex-wrap:wrap">
+        <div class="map-container" id="mapContainer"></div>
+        <div style="flex:1;min-width:300px">
+          <div class="steps" id="steps"></div>
+          <div class="result" id="result"></div>
+        </div>
+      </div>
+    </section>
+  </div>
+</div>
+
+<script>
+const varsSel=document.getElementById("vars");
+const modeSel=document.getElementById("mode");
+const valuesEl=document.getElementById("values");
+const mapContainer=document.getElementById("mapContainer");
+const stepsEl=document.getElementById("steps");
+const resultEl=document.getElementById("result");
+
+const V=["A","B","C","D","E"];
+
+/* Gray code: bitişik kolon/satır değerleri tek bit farklıdır. */
+function gray(n){
+  const a=[];
+  for(let i=0;i<(1<<n);i++) a.push(i^(i>>1));
+  return a;
+}
+const bit=(v,i)=>(v>>i)&1;
+
+/* Harita düzeni:
+   2: satır B, kolon A
+   3: satır BC, kolon A
+   4: satır CD, kolon AB
+   5: iki katman E=0 ve E=1; satır CD, kolon AB */
+function layout(n){
+  if(n===2) return {rv:[1],cv:[0],layers:[null]};
+  if(n===3) return {rv:[1,2],cv:[0],layers:[null]};
+  if(n===4) return {rv:[2,3],cv:[0,1],layers:[null]};
+  return {rv:[2,3],cv:[0,1],layers:[0,1]};
+}
+
+function idxFromBits(bits){
+  let v=0;
+  bits.forEach((b,i)=>{if(b)v|=1<<i});
+  return v;
+}
+
+function parseValues(){
+  const n=+varsSel.value,total=1<<n;
+  const raw=valuesEl.value.trim().split(/[\s,;]+/).filter(Boolean);
+  if(raw.length!==total) throw new Error(`${total} değer gerekli, ${raw.length} girildi.`);
+  return raw.map(x=>{
+    x=x.toUpperCase();
+    if(!["0","1","X"].includes(x)) throw new Error(`Geçersiz değer: ${x}`);
+    return x;
+  });
+}
+
+/* Bir eksen üzerindeki bitişik Gray aralıklarını üretir.
+   wrap=true ise son hücreden ilk hücreye geçiş de komşudur. */
+function axisSegments(len){
+  const segs=[];
+  for(let start=0;start<len;start++){
+    for(let size=1;size<=len;size*=2){
+      const cells=[];
+      for(let k=0;k<size;k++) cells.push((start+k)%len);
+      segs.push({start,size,cells});
+    }
+  }
+  return segs;
+}
+
+/* Gerçek K-map dikdörtgen grupları:
+   satır segmenti × kolon segmenti × katman(lar). */
+function allMapGroups(n){
+  const L=layout(n);
+  const rowG=gray(L.rv.length), colG=gray(L.cv.length);
+  const rowSegs=axisSegments(rowG.length);
+  const colSegs=axisSegments(colG.length);
+  const layerSets=L.layers[0]===null?[null]:[[0],[1],[0,1]];
+
+  const groups=[];
+  for(const rs of rowSegs){
+    for(const cs of colSegs){
+      for(const ls of layerSets){
+        const cells=[];
+        for(const r of rs.cells){
+          for(const c of cs.cells){
+            for(const l of (ls??[null])){
+              const bits=Array(n).fill(0);
+              L.cv.forEach((v,k)=>bits[v]=bit(colG[c],k));
+              L.rv.forEach((v,k)=>bits[v]=bit(rowG[r],k));
+              if(l!==null) bits[4]=l;
+              cells.push(idxFromBits(bits));
+            }
+          }
+        }
+        groups.push({
+          cells,
+          rowSeg:rs,
+          colSeg:cs,
+          layers:ls,
+          size:cells.length
+        });
+      }
+    }
+  }
+  return groups;
+}
+
+function groupIsValid(g,vals,target){
+  const forbidden=target==="1"?"0":"1";
+  let hasTarget=false;
+  for(const i of g.cells){
+    if(vals[i]===forbidden) return false;
+    if(vals[i]===target) hasTarget=true;
+  }
+  return hasTarget;
+}
+
+function requiredCells(vals,target){
+  const a=[];
+  vals.forEach((v,i)=>{if(v===target)a.push(i)});
+  return a;
+}
+
+/* Minimum grup sayısıyla tüm 1 / 0 hücrelerini kapat */
+function solveGroups(vals,mode){
+  const target=mode==="SOP"?"1":"0";
+  const req=requiredCells(vals,target);
+  if(!req.length) return [];
+
+  const groups=allMapGroups(+varsSel.value)
+    .filter(g=>groupIsValid(g,vals,target))
+    .sort((a,b)=>b.size-a.size);
+
+  let best=null;
+
+  function search(sel,remaining){
+    if(best&&sel.length>=best.length) return;
+    if(!remaining.size){
+      best=[...sel];
+      return;
+    }
+    const cell=[...remaining][0];
+    for(const g of groups){
+      if(!g.cells.includes(cell)) continue;
+      const next=new Set(remaining);
+      g.cells.forEach(c=>next.delete(c));
+      sel.push(g);
+      search(sel,next);
+      sel.pop();
+    }
+  }
+
+  search([],new Set(req));
+  return best||[];
+}
+
+function termFromGroup(g,mode){
+  const n=+varsSel.value,L=layout(n);
+  /* Sabit değişkenleri bul */
+  const vals=new Map();
+  g.cells.forEach(i=>{
+    const bits=[];
+    for(let k=0;k<n;k++) bits.push(bit(i,k));
+    bits.forEach((b,k)=>{
+      if(!vals.has(k)) vals.set(k,b);
+      else if(vals.get(k)!==b) vals.set(k,null);
+    });
+  });
+
+  const parts=[];
+  for(let k=0;k<n;k++){
+    const b=vals.get(k);
+    if(b===null||b===undefined) continue;
+    const name=V[k];
+    parts.push(mode==="SOP"?(b?name:name+"'"):(b?name+"'":name));
+  }
+
+  if(!parts.length) return mode==="SOP"?"1":"0";
+  return mode==="SOP"?parts.join(""):`(${parts.join(" + ")})`;
+}
+
+function expression(groups,mode){
+  if(!groups.length) return mode==="SOP"?"F = 0":"F = 1";
+  const t=groups.map(g=>termFromGroup(g,mode));
+  return mode==="SOP"?"F = "+t.join(" + "):"F = "+t.join(" · ");
+}
+
+function buildMap(){
+  const n=+varsSel.value,L=layout(n);
+  const vals=parseValues();
+  mapContainer.innerHTML="";
+
+  const rowG=gray(L.rv.length),colG=gray(L.cv.length);
+
+  L.layers.forEach(layer=>{
+    if(layer!==null){
+      const t=document.createElement("div");
+      t.className="layer-title";
+      t.textContent=`E = ${layer}`;
+      mapContainer.appendChild(t);
+    }
+
+    const table=document.createElement("table");
+    const head=document.createElement("tr");
+    const corner=document.createElement("th");
+    corner.textContent=L.rv.map(v=>V[v]).join("")+"\\"+L.cv.map(v=>V[v]).join("");
+    head.appendChild(corner);
+
+    colG.forEach(c=>{
+      const th=document.createElement("th");
+      th.textContent=L.cv.map(v=>bit(c,L.cv.indexOf(v))).join("");
+      head.appendChild(th);
+    });
+    table.appendChild(head);
+
+    rowG.forEach((r,ri)=>{
+      const tr=document.createElement("tr");
+      const th=document.createElement("th");
+      th.textContent=L.rv.map(v=>bit(r,L.rv.indexOf(v))).join("");
+      tr.appendChild(th);
+
+      colG.forEach((c,ci)=>{
+        const bits=Array(n).fill(0);
+        L.cv.forEach((v,k)=>bits[v]=bit(c,k));
+        L.rv.forEach((v,k)=>bits[v]=bit(r,k));
+        if(layer!==null) bits[4]=layer;
+
+        const idx=idxFromBits(bits);
+        const td=document.createElement("td");
+        td.dataset.idx=idx;
+        td.dataset.r=ri;
+        td.dataset.c=ci;
+        td.dataset.layer=layer===null?"0":layer;
+        td.className="cell "+(vals[idx]==="1"?"one":vals[idx]==="0"?"zero":"x");
+        td.innerHTML=`<span class="idx">${idx}</span><span>${vals[idx]}</span>`;
+
+        td.onclick=()=>{
+          const order=["0","1","X"];
+          vals[idx]=order[(order.indexOf(vals[idx])+1)%3];
+          td.className="cell "+(vals[idx]==="1"?"one":vals[idx]==="0"?"zero":"x");
+          td.lastChild.textContent=vals[idx];
+          valuesEl.value=vals.join(" ");
+        };
+
+        tr.appendChild(td);
+      });
+      table.appendChild(tr);
+    });
+
+    mapContainer.appendChild(table);
+  });
+
+  const overlay=document.createElement("div");
+  overlay.className="overlay";
+  overlay.id="overlay";
+  mapContainer.appendChild(overlay);
+
+  return vals;
+}
+
+/* Bir grubu harita üzerinde gerçek dikdörtgen(ler) olarak çizer.
+   Sarmalı gruplar iki parçaya bölünerek doğru komşuluk gösterilir. */
+function drawGroup(g,color,delay){
+  setTimeout(()=>{
+    const overlay=document.getElementById("overlay");
+    const mapRect=mapContainer.getBoundingClientRect();
+
+    const layers=g.layers??[null];
+    layers.forEach(layer=>{
+      const key=layer===null?"0":layer;
+
+      /* Satır ve kolon segmentlerini sarmaya göre parçala */
+      const rowLen=gray(layout(+varsSel.value).rv.length).length;
+      const colLen=gray(layout(+varsSel.value).cv.length).length;
+
+      const rowParts=[];
+      if(g.rowSeg.start+g.rowSeg.size<=rowLen)
+        rowParts.push([g.rowSeg.start,g.rowSeg.start+g.rowSeg.size-1]);
+      else{
+        rowParts.push([g.rowSeg.start,rowLen-1]);
+        rowParts.push([0,(g.rowSeg.start+g.rowSeg.size-1)%rowLen]);
+      }
+
+      const colParts=[];
+      if(g.colSeg.start+g.colSeg.size<=colLen)
+        colParts.push([g.colSeg.start,g.colSeg.start+g.colSeg.size-1]);
+      else{
+        colParts.push([g.colSeg.start,colLen-1]);
+        colParts.push([0,(g.colSeg.start+g.colSeg.size-1)%colLen]);
+      }
+
+      rowParts.forEach(([r1,r2])=>{
+        colParts.forEach(([c1,c2])=>{
+          const a=mapContainer.querySelector(`td[data-r="${r1}"][data-c="${c1}"][data-layer="${key}"]`);
+          const b=mapContainer.querySelector(`td[data-r="${r2}"][data-c="${c2}"][data-layer="${key}"]`);
+          if(!a||!b) return;
+
+          const ra=a.getBoundingClientRect(),rb=b.getBoundingClientRect();
+          const box=document.createElement("div");
+          box.className="group-box";
+          box.style.borderColor=color;
+          box.style.left=(Math.min(ra.left,rb.left)-mapRect.left)+"px";
+          box.style.top=(Math.min(ra.top,rb.top)-mapRect.top)+"px";
+          box.style.width=(Math.max(ra.right,rb.right)-Math.min(ra.left,rb.left))+"px";
+          box.style.height=(Math.max(ra.bottom,rb.bottom)-Math.min(ra.top,rb.top))+"px";
+          overlay.appendChild(box);
+          requestAnimationFrame(()=>box.classList.add("show"));
+        });
+      });
+    });
+  },delay);
+}
+
+function addStep(html,delay){
+  const d=document.createElement("div");
+  d.className="step";
+  d.innerHTML=html;
+  stepsEl.appendChild(d);
+  setTimeout(()=>d.classList.add("show"),delay);
+}
+
+function solve(){
+  try{
+    stepsEl.innerHTML="";
+    resultEl.className="result";
+    resultEl.innerHTML="";
+
+    const vals=buildMap();
+    const mode=modeSel.value,n=+varsSel.value;
+    const target=mode==="SOP"?"1":"0";
+
+    addStep(`<b>1.</b> ${n} değişkenli harita Gray-code sırasıyla oluşturuldu. Hedef: ${mode==="SOP"?"1 hücreleri":"0 hücreleri"}.`,100);
+    addStep(`<b>2.</b> Gruplar yalnızca yatay/dikey bitişik hücrelerden kurulur; üst-alt ve sol-sağ kenarlar komşudur.`,700);
+
+    const groups=solveGroups(vals,mode);
+    const colors=["#5b8cff","#2ecc71","#f39c12","#e84393","#00cec9","#a29bfe","#ff7675","#fdcb6e"];
+
+    if(!groups.length){
+      addStep(`<b>Sonuç:</b> ${mode==="SOP"?"Hiç 1 yok → F = 0":"Hiç 0 yok → F = 1"}.`,1200);
+      resultEl.textContent=mode==="SOP"?"F = 0":"F = 1";
+      resultEl.classList.add("show");
+      return;
+    }
+
+    groups.forEach((g,i)=>{
+      const term=termFromGroup(g,mode);
+      addStep(
+        `<b>${i+3}.</b> ${g.size} hücreli bitişik grup: {${g.cells.join(", ")}}.<br>
+         ${mode==="SOP"?"Çarpım terimi":"Toplam terimi"}: <b>${term}</b>.`,
+        1200+i*950
+      );
+      drawGroup(g,colors[i%colors.length],1200+i*950);
+    });
+
+    setTimeout(()=>{
+      resultEl.textContent=expression(groups,mode);
+      resultEl.classList.add("show");
+      addStep(`<b>Sonuç:</b> Tüm gerekli hücreler minimum sayıda geçerli K-map grubuyla kapatıldı.`,1200+groups.length*950);
+    },1200+groups.length*950+250);
+
+  }catch(e){
+    stepsEl.innerHTML="";
+    addStep(`<b>Hata:</b> ${e.message}`,100);
+  }
+}
+
+function randomExample(){
+  const total=1<<+varsSel.value;
+  valuesEl.value=Array.from({length:total},()=>{
+    const r=Math.random();
+    return r<.45?"1":r<.9?"0":"X";
+  }).join(" ");
+  solve();
+}
+
+varsSel.addEventListener("change",()=>{
+  valuesEl.value=Array(1<<+varsSel.value).fill("0").join(" ");
+  stepsEl.innerHTML="";
+  resultEl.className="result";
+  resultEl.innerHTML="";
+  buildMap();
+});
+modeSel.addEventListener("change",solve);
+document.getElementById("solve").onclick=solve;
+document.getElementById("random").onclick=randomExample;
+
+buildMap();
+</script>
+</body>
+</html>

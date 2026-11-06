@@ -1,0 +1,1326 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BLM2521 — Ayrık Matematiğe Giriş</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,400;0,600;0,700;1,500&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#0B1220;
+    --text:#F1F5F9;
+    --surface: color-mix(in srgb, var(--bg) 88%, var(--text) 12%);
+    --surface-2: color-mix(in srgb, var(--bg) 80%, var(--text) 20%);
+    --border: color-mix(in srgb, var(--bg) 68%, var(--text) 32%);
+    --muted: color-mix(in srgb, var(--text) 62%, var(--bg) 38%);
+    --accent:#FBBF24;
+    --accent-2:#60A5FA;
+    --true:#34D399;
+    --false:#F87171;
+    --radius: 16px;
+    --serif: 'Fraunces', Georgia, serif;
+    --sans: 'Inter', system-ui, sans-serif;
+    --mono: 'IBM Plex Mono', ui-monospace, monospace;
+  }
+
+  *{box-sizing:border-box;}
+  html,body{height:100%;}
+  body{
+    margin:0;
+    background:var(--bg);
+    color:var(--text);
+    font-family:var(--sans);
+    overflow:hidden;
+    transition: background .25s ease, color .25s ease;
+  }
+  ::selection{ background:var(--accent); color:#1a1a1a; }
+
+  .topbar{
+    position:fixed; top:0; left:0; right:0; height:56px;
+    display:flex; align-items:center; justify-content:space-between;
+    padding:0 20px;
+    background: color-mix(in srgb, var(--bg) 92%, black 8%);
+    border-bottom:1px solid var(--border);
+    z-index:50;
+  }
+  .topbar-left{ display:flex; align-items:center; gap:12px; font-family:var(--mono); font-size:13px; color:var(--muted); }
+  .topbar-left .mark{ font-family:var(--serif); font-style:italic; font-size:16px; color:var(--text); font-weight:600; }
+  .topbar-right{ display:flex; align-items:center; gap:10px; }
+
+  .icon-btn{
+    width:36px; height:36px; border-radius:10px;
+    border:1px solid var(--border);
+    background:var(--surface);
+    color:var(--text);
+    display:flex; align-items:center; justify-content:center;
+    cursor:pointer; font-size:16px;
+    transition: transform .15s ease, background .15s ease;
+  }
+  .icon-btn:hover{ background:var(--surface-2); transform:translateY(-1px); }
+  .icon-btn:active{ transform:translateY(0); }
+
+  .progress-track{
+    position:fixed; top:56px; left:0; right:0; height:3px;
+    background:var(--surface); z-index:49;
+  }
+  .progress-fill{
+    height:100%; background:linear-gradient(90deg, var(--accent-2), var(--accent));
+    width:0%; transition:width .35s ease;
+  }
+
+  .settings-panel{
+    position:fixed; top:64px; right:20px; width:250px;
+    background:var(--surface); border:1px solid var(--border);
+    border-radius:14px; padding:16px; z-index:60;
+    box-shadow:0 10px 30px rgba(0,0,0,.35);
+    display:none; flex-direction:column; gap:14px;
+  }
+  .settings-panel.open{ display:flex; }
+  .settings-panel h4{ margin:0; font-size:12px; letter-spacing:.03em; color:var(--muted); font-weight:600; text-transform:none;}
+  .swatch-row{ display:flex; align-items:center; justify-content:space-between; gap:10px; }
+  .swatch-row label{ font-size:13px; color:var(--text); }
+  .swatch-row input[type="color"]{
+    width:40px; height:30px; border:1px solid var(--border); border-radius:8px;
+    background:none; cursor:pointer; padding:0;
+  }
+  .preset-row{ display:flex; gap:8px; flex-wrap:wrap; }
+  .preset-dot{ width:26px; height:26px; border-radius:50%; cursor:pointer; border:2px solid var(--border); }
+  .reset-btn{
+    margin-top:4px; padding:8px 10px; border-radius:8px; border:1px solid var(--border);
+    background:transparent; color:var(--text); font-size:12px; cursor:pointer; font-family:var(--sans);
+  }
+  .reset-btn:hover{ background:var(--surface-2); }
+
+  .deck{ position:relative; width:100%; height:100%; padding-top:56px; }
+  .slide{
+    position:absolute; inset:0; top:56px;
+    display:none;
+    padding: 48px clamp(24px, 6vw, 96px) 90px;
+    overflow-y:auto;
+  }
+  .slide.active{ display:block; animation: fade .35s ease; }
+  @keyframes fade{ from{opacity:0; transform:translateY(6px);} to{opacity:1; transform:translateY(0);} }
+
+  .slide-inner{ max-width:1000px; margin:0 auto; }
+
+  .kicker{ font-family:var(--mono); font-size:12px; color:var(--muted); letter-spacing:.04em; margin-bottom:10px; }
+  h1.slide-title{ font-family:var(--serif); font-weight:600; font-size:clamp(26px,3.6vw,42px); margin:0 0 6px; line-height:1.15; }
+  .slide-title em{ font-style:italic; color:var(--accent); }
+  .subtitle{ color:var(--muted); font-size:16px; margin:0 0 26px; max-width:75ch; }
+
+  p{ line-height:1.65; font-size:15.5px; }
+  .lead{ font-size:17px; line-height:1.7; }
+
+  .grid2{ display:grid; grid-template-columns:1.1fr .9fr; gap:28px; align-items:start; }
+  @media (max-width:820px){ .grid2{ grid-template-columns:1fr; } }
+  .grid3{ display:grid; grid-template-columns:1fr 1fr 1fr; gap:16px; }
+  @media (max-width:900px){ .grid3{ grid-template-columns:1fr; } }
+
+  .card{ background:var(--surface); border:1px solid var(--border); border-radius:var(--radius); padding:18px 20px; }
+  .card h3{ margin-top:0; font-family:var(--serif); font-weight:600; font-size:17px; }
+
+  .formula{ font-family:var(--mono); font-size:15px; background:var(--surface-2); border:1px solid var(--border); border-radius:10px; padding:3px 9px; display:inline-block; }
+  .formula-big{ font-family:var(--mono); font-size:19px; text-align:center; padding:12px; background:var(--surface-2); border:1px solid var(--border); border-radius:12px; margin:12px 0; }
+
+  ul.clean{ padding-left:20px; margin:10px 0; }
+  ul.clean li{ margin-bottom:8px; line-height:1.55; font-size:15px; }
+
+  table.tt{ border-collapse:collapse; width:100%; margin:14px 0; font-family:var(--mono); font-size:14px; }
+  table.tt th, table.tt td{ border:1px solid var(--border); padding:7px 10px; text-align:center; }
+  table.tt th{ background:var(--surface-2); font-weight:600; }
+  table.tt td.res{ font-weight:600; }
+
+  .examples{ margin-top:32px; padding-top:20px; border-top:1px dashed var(--border); }
+  .examples-head{ display:flex; align-items:center; gap:10px; margin-bottom:14px; }
+  .examples-head .dot{ width:9px; height:9px; border-radius:50%; background:var(--accent); }
+  .examples-head h4{ margin:0; font-family:var(--serif); font-weight:600; font-size:17px; }
+
+  details.q{ background:var(--surface); border:1px solid var(--border); border-radius:12px; padding:12px 16px; margin-bottom:10px; }
+  details.q summary{ cursor:pointer; font-size:14.5px; list-style:none; display:flex; align-items:baseline; gap:10px; }
+  details.q summary::-webkit-details-marker{ display:none; }
+  details.q summary .qnum{ font-family:var(--mono); color:var(--accent-2); font-weight:600; flex:0 0 auto; }
+  details.q summary .arrow{ margin-left:auto; color:var(--muted); font-size:12px; transition:transform .2s ease; }
+  details.q[open] summary .arrow{ transform:rotate(90deg); }
+  .answer{ margin-top:10px; padding-top:10px; border-top:1px solid var(--border); font-size:14px; color:var(--muted); line-height:1.6; }
+  .answer b{ color:var(--text); }
+
+  table.laws{ width:100%; border-collapse:collapse; font-size:13.5px; margin-top:10px;}
+  table.laws td, table.laws th{ padding:8px 10px; border-bottom:1px solid var(--border); text-align:left; vertical-align:top; }
+  table.laws th{ color:var(--muted); font-weight:600; font-size:12px; text-transform:uppercase; letter-spacing:.03em;}
+  table.laws td.f{ font-family:var(--mono); }
+
+  .two-col-list{ display:grid; grid-template-columns:1fr 1fr; gap:10px 24px; }
+  @media (max-width:600px){ .two-col-list{ grid-template-columns:1fr; } }
+
+  .step-list{ counter-reset:step; list-style:none; padding-left:0; margin:12px 0; }
+  .step-list li{ counter-increment:step; position:relative; padding-left:34px; margin-bottom:10px; font-size:14.5px; line-height:1.55; }
+  .step-list li::before{
+    content:counter(step); position:absolute; left:0; top:-1px;
+    width:22px; height:22px; border-radius:50%; background:var(--surface-2); border:1px solid var(--border);
+    display:flex; align-items:center; justify-content:center; font-family:var(--mono); font-size:12px; color:var(--accent-2);
+  }
+
+  .person-card{ display:flex; gap:14px; align-items:flex-start; }
+  .avatar{
+    flex:0 0 auto; width:54px; height:54px; border-radius:14px;
+    background:linear-gradient(135deg, var(--accent-2), var(--accent));
+    display:flex; align-items:center; justify-content:center;
+    font-family:var(--serif); font-weight:700; font-size:20px; color:#151515;
+  }
+  .person-meta{ font-size:13.5px; }
+  .person-meta .role{ font-family:var(--mono); font-size:11.5px; color:var(--muted); letter-spacing:.03em; margin-bottom:2px; }
+  .person-meta .name{ font-family:var(--serif); font-weight:600; font-size:16px; margin-bottom:4px; }
+  .person-meta a{ color:var(--accent-2); text-decoration:none; }
+
+  .weight-bar{ display:flex; height:34px; border-radius:10px; overflow:hidden; border:1px solid var(--border); margin:10px 0; }
+  .weight-bar div{ display:flex; align-items:center; justify-content:center; font-family:var(--mono); font-size:12.5px; font-weight:600; color:#151515; }
+
+  .badge{
+    display:inline-flex; align-items:center; gap:6px; font-family:var(--mono); font-size:12px;
+    padding:3px 9px; border-radius:999px; border:1px solid var(--border); color:var(--muted);
+  }
+
+  .title-slide{ height:100%; display:flex; flex-direction:column; align-items:center; justify-content:center; text-align:center; }
+  .title-slide .huge{ font-family:var(--serif); font-size:clamp(30px,5.6vw,58px); font-weight:600; line-height:1.1; }
+  .title-slide .huge em{ font-style:italic; color:var(--accent); }
+  .title-slide .sub{ font-family:var(--mono); color:var(--muted); font-size:15px; margin-top:14px; letter-spacing:.02em; }
+  .title-slide .people{ margin-top:36px; display:flex; gap:22px; flex-wrap:wrap; justify-content:center; }
+  .title-slide .people .p{
+    text-align:left; border:1px solid var(--border); border-radius:14px; padding:12px 16px;
+    background:var(--surface); min-width:230px;
+  }
+  .title-slide .people .p .g{ font-family:var(--mono); font-size:11px; color:var(--accent); margin-bottom:3px; }
+  .title-slide .people .p .n{ font-family:var(--serif); font-weight:600; font-size:15px; }
+  .title-slide .people .p .e{ font-family:var(--mono); font-size:12px; color:var(--muted); margin-top:3px; }
+
+  .bottombar{
+    position:fixed; bottom:0; left:0; right:0; height:64px;
+    display:flex; align-items:center; justify-content:center; gap:18px;
+    background: color-mix(in srgb, var(--bg) 92%, black 8%);
+    border-top:1px solid var(--border);
+    z-index:50;
+  }
+  .nav-btn{
+    display:flex; align-items:center; gap:8px; padding:9px 18px; border-radius:999px;
+    border:1px solid var(--border); background:var(--surface); color:var(--text); cursor:pointer;
+    font-family:var(--sans); font-size:14px; font-weight:500;
+  }
+  .nav-btn:hover{ background:var(--surface-2); }
+  .nav-btn:disabled{ opacity:.35; cursor:not-allowed; }
+  .slide-counter{ font-family:var(--mono); font-size:13px; color:var(--muted); min-width:56px; text-align:center; }
+  .dots{ display:flex; gap:4px; max-width:300px; flex-wrap:wrap; justify-content:center; }
+  .dots .d{ width:5px; height:5px; border-radius:50%; background:var(--border); cursor:pointer; transition:.2s;}
+  .dots .d.active{ background:var(--accent); width:14px; border-radius:4px; }
+
+  @media (max-width:960px){
+    .dots{ display:none; }
+    .settings-panel{ right:10px; left:10px; width:auto; }
+  }
+
+
+  /* ===== Pen / annotation layer ===== */
+  #penCanvas{ position:fixed; left:0; top:56px; width:100%; height:calc(100% - 120px); z-index:40; pointer-events:none; touch-action:none; }
+  #penCanvas.on{ pointer-events:auto; cursor:crosshair; }
+  #penCanvas.t-eraser{ cursor:cell; }
+  #penCanvas.t-laser{ cursor:none; }
+  #boardLayer{ position:fixed; left:0; top:56px; width:100%; height:calc(100% - 120px); background:var(--bg); z-index:39; display:none; }
+  #boardLayer.on{ display:block; }
+  #boardLayer::after{ content:"Boş tahta — özgürce yazın (slaytlara dönmek için B)"; position:absolute; left:50%; top:10px; transform:translateX(-50%); font-family:var(--mono); font-size:12px; color:var(--muted); opacity:.7; }
+  #penToolbar{ position:fixed; left:10px; top:50%; transform:translateY(-50%); z-index:45; display:none; flex-direction:column; gap:7px; padding:9px; width:100px; background:var(--surface); border:1px solid var(--border); border-radius:14px; box-shadow:0 10px 30px rgba(0,0,0,.35); max-height:calc(100% - 130px); overflow-y:auto; }
+  #penToolbar.open{ display:flex; }
+  .pt-grid{ display:grid; grid-template-columns:repeat(2, 36px); gap:6px; justify-content:center; }
+  .pt-btn{ width:36px; height:36px; border-radius:10px; border:1px solid var(--border); background:var(--surface-2); color:var(--text); cursor:pointer; font-size:16px; display:flex; align-items:center; justify-content:center; padding:0; transition:background .15s ease; }
+  .pt-btn:hover{ background:color-mix(in srgb, var(--surface-2) 70%, var(--accent-2) 30%); }
+  .pt-btn.active{ outline:2px solid var(--accent); background:color-mix(in srgb, var(--accent) 22%, var(--surface-2)); }
+  .pt-colors{ display:grid; grid-template-columns:repeat(2, 36px); gap:7px 6px; justify-content:center; justify-items:center; }
+  .pt-color{ width:26px; height:26px; border-radius:50%; border:2px solid var(--border); cursor:pointer; padding:0; transition:transform .12s ease; }
+  .pt-color:hover{ transform:scale(1.12); }
+  .pt-color.active{ border-color:var(--accent); box-shadow:0 0 0 2px var(--accent); transform:scale(1.1); }
+  .pt-custom{ position:relative; width:26px; height:26px; border-radius:50%; border:2px solid var(--border); cursor:pointer; overflow:hidden; background:conic-gradient(#ef4444,#f59e0b,#a3e635,#22d3ee,#3b82f6,#a855f7,#ef4444); }
+  .pt-custom.active{ border-color:var(--accent); box-shadow:0 0 0 2px var(--accent); }
+  .pt-custom input{ position:absolute; inset:-6px; width:44px; height:44px; opacity:0; cursor:pointer; border:0; padding:0; }
+  .pt-sep{ height:1px; background:var(--border); margin:1px 0; flex:0 0 auto; }
+  .pt-dot{ display:block; border-radius:50%; background:var(--text); }
+  .pt-label{ font-family:var(--mono); font-size:9px; letter-spacing:.06em; color:var(--muted); text-align:center; text-transform:uppercase; }
+  #laserDot{ position:fixed; width:16px; height:16px; border-radius:50%; background:rgba(239,68,68,.9); box-shadow:0 0 14px 6px rgba(239,68,68,.5); pointer-events:none; z-index:46; display:none; transform:translate(-50%,-50%); }
+  .icon-btn.active{ outline:2px solid var(--accent); background:color-mix(in srgb, var(--accent) 22%, var(--surface)); }
+  #penHint{ position:fixed; left:122px; top:50%; transform:translateY(-50%); z-index:45; font-family:var(--mono); font-size:11px; color:var(--muted); background:var(--surface); border:1px solid var(--border); border-radius:8px; padding:6px 9px; display:none; max-width:200px; line-height:1.5; }
+  #penHint.show{ display:block; }
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="topbar-left">
+    <span class="mark">BLM2521 — Ayrık Matematik</span>
+    <span>/ Bölüm 1 — Giriş ve Ders Tanıtımı</span>
+  </div>
+  <div class="topbar-right">
+    <span class="slide-counter" id="counterTop">01 / 19</span>
+    <button class="icon-btn" id="penToggle" title="Kalem / slayt üzerine yaz (D)">✏️</button>
+    <button class="icon-btn" id="settingsBtn" title="Görünümü değiştir">🎨</button>
+  </div>
+</div>
+<div class="progress-track"><div class="progress-fill" id="progressFill"></div></div>
+
+<div class="settings-panel" id="settingsPanel">
+  <h4>Görünüm</h4>
+  <div class="swatch-row"><label for="bgPicker">Arka plan rengi</label><input type="color" id="bgPicker" value="#0B1220"></div>
+  <div class="swatch-row"><label for="textPicker">Yazı rengi</label><input type="color" id="textPicker" value="#F1F5F9"></div>
+  <h4>Hazır temalar</h4>
+  <div class="preset-row" id="presetRow"></div>
+  <button class="reset-btn" id="resetBtn">Varsayılana dön</button>
+</div>
+
+<div class="deck" id="deck">
+
+  <!-- 0 — TITLE -->
+  <section class="slide active" data-index="0">
+    <div class="title-slide">
+      <div class="sub">BLM2521 · DISCRETE MATHEMATICS · 2026-2027 GÜZ</div>
+      <div class="huge">Ayrık Matematik<br><em>Ders Tanıtımı</em></div>
+      <div class="sub">Kaynak: Kenneth H. Rosen — Discrete Mathematics and Its Applications</div>
+      <div class="people">
+        <div class="p">
+          <div class="g">GRUP 1</div>
+          <div class="n">Prof. Dr. Banu Diri</div>
+          <div class="e">diri@yildiz.edu.tr</div>
+          <div class="e">avesis.yildiz.edu.tr/diri</div>
+        </div>
+        <div class="p">
+          <div class="g">GRUP 2</div>
+          <div class="n">Dr. Ahmet Elbir</div>
+          <div class="e">aelbir@yildiz.edu.tr</div>
+          <div class="e">avesis.yildiz.edu.tr/aelbir</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 1 — CONTACT -->
+  <section class="slide" data-index="1">
+    <div class="slide-inner">
+      <div class="kicker">1.1</div>
+      <h1 class="slide-title">İletişim Bilgileri</h1>
+      <p class="subtitle">Sorularınız için ilgili grubun öğretim üyesiyle iletişime geçebilirsiniz.</p>
+
+      <div class="two-col-list">
+        <div class="card person-card">
+          <div class="avatar">BD</div>
+          <div class="person-meta">
+            <div class="role">GRUP 1</div>
+            <div class="name">Prof. Dr. Banu Diri</div>
+            <div>E-posta: <a href="mailto:diri@yildiz.edu.tr">diri@yildiz.edu.tr</a></div>
+            <div>Web: <a href="https://avesis.yildiz.edu.tr/diri" target="_blank" rel="noopener">avesis.yildiz.edu.tr/diri</a></div>
+          </div>
+        </div>
+        <div class="card person-card">
+          <div class="avatar">AEL</div>
+          <div class="person-meta">
+            <div class="role">GRUP 2</div>
+            <div class="name">Dr. Ahmet Elbir</div>
+            <div>E-posta: <a href="mailto:aelbir@yildiz.edu.tr">aelbir@yildiz.edu.tr</a></div>
+            <div>Web: <a href="https://avesis.yildiz.edu.tr/aelbir" target="_blank" rel="noopener">avesis.yildiz.edu.tr/aelbir</a></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card" style="margin-top:18px;">
+        <h3>Not</h3>
+        <p style="margin:0;">Hangi gruba kayıtlıysanız, ders akışı ve duyurular için o grubun öğretim üyesiyle iletişimde kalmanız önerilir. İkisi de aynı müfredatı, aynı kaynak kitabı (Rosen) temel alarak yürütmektedir.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 2 — EVALUATION -->
+  <section class="slide" data-index="2">
+    <div class="slide-inner">
+      <div class="kicker">1.2</div>
+      <h1 class="slide-title">Değerlendirme <em>(2 Vize + Final)</em></h1>
+      <p class="subtitle">Dönem içi ve dönem sonu başarı notunun nasıl hesaplandığı.</p>
+
+      <div class="grid2">
+        <div class="card">
+          <h3>Ağırlıklar</h3>
+          <div class="weight-bar">
+            <div style="width:60%; background:var(--accent-2);">Yıl İçi — %60</div>
+            <div style="width:40%; background:var(--accent);">Yıl Sonu (Final) — %40</div>
+          </div>
+          <p style="margin:0 0 10px;"><b>Yıl İçi (%60)</b> bileşeni, dönem boyunca yapılan <b> %30'ar ağırlıklı 2 Ara Sınav (Vize) ve Yıl Sonu (%40)</b> bileşeni ise dönem sonu final sınavından gelir.</p>
+          <p style="margin:0; font-size:13.5px; color:var(--muted);">Kesin vize/ödev ağırlık dağılımı ve sınav tarihleri, dersin ilk haftasında öğretim üyesi tarafından netleştirilecektir — güncel bilgi için grup öğretim üyenizle teyitleşin.</p>
+        </div>
+        <div class="card">
+          <h3>Geçme Koşulu</h3>
+          <div class="formula-big" style="font-size:16px;">Dönem Sonu Notu &lt; 40 → BAŞARISIZ</div>
+          <p style="margin:0;">Yıl içi ve yıl sonu notlarının ağırlıklı ortalamasıyla hesaplanan <b>dönem sonu notu 40'ın altında</b> kalırsa, ders başarısız sayılır. Bu eşiğin altında kalmamak için hem vize hem final performansı önemlidir.</p>
+        </div>
+      </div>
+
+      <div class="examples">
+        <div class="examples-head"><span class="dot"></span><h4>Örnek Sorular</h4></div>
+        <details class="q">
+          <summary><span class="qnum">S1.</span> Final sınavına hiç girmeyen bir öğrencinin dönem sonu notu ne olur, ve bu neden dersi geçmesini engeller?<span class="arrow">▶</span></summary>
+          <div class="answer">Senato kararı gereği Final sınavına girilmezse başarı notu doğrudan FF olur. Yine Final notu (senato kararı gereği) 40 ve altında  olursa, Yıl içi notu ne kadar yüksek 
+		  olursa olsun (örneğin 100 olsa bile), dönem sonu notu FF,FD veya DD olacaktır. <br> Bütünleme notu final notunun yerine gelerek tekrar ortalama hesaplanacaktır ve yıl içi notuna bakılmaksızın 40 altında olursa dersten başarısız olunur</div>
+        </details>
+		<details class="q">
+          <summary><span class="qnum">S2.</span> DC ve üzeri başarılı notların sınırı 40 ortalama puanla mı başlar?<span class="arrow">▶</span></summary>
+          <div class="answer"> Hayır. Final notu 40 üzerinde olan tüm öğrencilerin not dağılımı Bağıl Değerlendirme (Çan Eğrisi) yöntemiyle sistem tarafından belirlenir. 
+		  Bu dağılıma göre DC, CC, CB, BB, BA ve AA alt sınır değerleri finalde kesinleşir. Eğer sınıf ortalaması çok yüksekse DC alt sınırı 70 hatta 80 ile bile başlayabilir. Bütünlemede harf aralıkları tekrar belirlenmez, finalde 
+belirlenen aralıklara göre bütünleme ortalama skorunuza uygun harf notu sistem tarafından atanır. Dersi veren öğretim üyesinin müdahale etmesi sistem tarafından engellenir. Bütünlemede de 40 ve üzeri alma zorunluluğu vardır.		  </div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3 — RESOURCES -->
+  <section class="slide" data-index="3">
+    <div class="slide-inner">
+      <div class="kicker">1.3</div>
+      <h1 class="slide-title">Ders Kaynakları</h1>
+      <p class="subtitle">Dersi takip ederken başvurabileceğiniz temel ve destekleyici kaynaklar.</p>
+
+      <div class="grid3">
+        <div class="card">
+          <h3>Ana Kaynak</h3>
+          <p style="margin:0; font-size:14px;"><b>Discrete Mathematics and Its Applications</b><br>Kenneth H. Rosen, McGraw-Hill</p>
+        </div>
+        <div class="card">
+          <h3>Çevrimiçi Kaynak</h3>
+          <p style="margin:0; font-size:14px;"><b>MIT OpenCourseWare</b><br>Mathematics for Computer Science</p>
+        </div>
+        <div class="card">
+          <h3>Ek Kaynaklar</h3>
+          <p style="margin:0; font-size:14px;">Applications of Discrete Mathematics (Michaels &amp; Rosen) · Nilüfer Yurtay, Ayrık İşlemsel Yapılar Ders Notları · Güncel internet kaynakları</p>
+        </div>
+      </div>
+
+      <div class="card" style="margin-top:16px;">
+        <h3>Tavsiye</h3>
+        <p style="margin:0;">Ders slaytları, Rosen'ın kitabındaki kavram sırasını büyük ölçüde takip eder. Her bölümden sonra kitaptaki ilgili alıştırmaları çözmek, konuyu pekiştirmenin en etkili yoludur.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4 — SYLLABUS PART 1 -->
+  <section class="slide" data-index="4">
+    <div class="slide-inner">
+      <div class="kicker">1.4</div>
+      <h1 class="slide-title">Ders İçeriği — Bölüm 1–5</h1>
+      <p class="subtitle">Dönem boyunca işlenecek konuların ilk yarısı.</p>
+
+      <table class="laws">
+        <tr><th>#</th><th>Konu</th><th>Alt Başlıklar</th></tr>
+        <tr><td>1</td><td><b>Ayrık Matematiğe Giriş</b></td><td class="f">Ders tanıtımı, ayrık matematiğin kapsamı</td></tr>
+        <tr><td>2</td><td><b>Mantık ve İspat</b></td><td class="f">Önermeler, şartlı önermeler, mantıksal denklik, niceleyiciler, ispata giriş, ispat yöntemleri, problem çözme</td></tr>
+        <tr><td>3</td><td><b>Boole Cebri ve Kombinasyonel Devreler</b></td><td class="f">Mantık kapıları, Boole cebri kuralları, Karnaugh haritaları, mantık devreleri</td></tr>
+        <tr><td>4</td><td><b>Matematiğin Dili</b></td><td class="f">Kümeler, diziler, sayı sistemleri, ilişkiler, eşitlik bağıntıları, matrisler ve fonksiyonlar</td></tr>
+        <tr><td>5</td><td><b>Sayı Teorisi</b></td><td class="f">Tamsayılar, asal sayılar, en büyük ortak bölen, modüler aritmetik</td></tr>
+      </table>
+
+      <div class="card" style="margin-top:16px;">
+        <h3>Bu slaytlar nerede duruyor?</h3>
+        <p style="margin:0;">Konu 2 (Mantık ve İspat) ve Konu 3'ün (Boole Cebri ve Mantık Devreleri) detaylı ders slaytları ayrıca hazırlanmıştır — bu sunum, ders serisinin <b>giriş</b> bölümüdür.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5 — SYLLABUS PART 2 -->
+  <section class="slide" data-index="5">
+    <div class="slide-inner">
+      <div class="kicker">1.5</div>
+      <h1 class="slide-title">Ders İçeriği — Bölüm 6–10</h1>
+      <p class="subtitle">Dönem boyunca işlenecek konuların ikinci yarısı.</p>
+
+      <table class="laws">
+        <tr><th>#</th><th>Konu</th><th>Alt Başlıklar</th></tr>
+        <tr><td>6</td><td><b>Algoritmalar, Karmaşıklık ve Asimptotik Gösterim</b></td><td class="f">Algoritma özellikleri, karmaşıklık, iteratif ve özyinelemeli algoritmalar, rekürans bağıntıları</td></tr>
+        <tr><td>7</td><td><b>Graf Teorisi</b></td><td class="f">Yol ve döngüler, Hamiltonian ve Euler döngüsü, en kısa yol algoritması, graf izomorfizmi</td></tr>
+        <tr><td>8</td><td><b>Ağaçlar</b></td><td class="f">Terminoloji, spanning tree, ikili ağaç, tree traversal, ağaç izomorfizmi</td></tr>
+        <tr><td>9</td><td><b>Kromatik Polinomlar</b></td><td class="f">Graf boyama kuralları</td></tr>
+        <tr><td>10</td><td><b>Otomata, Gramer ve Dil</b></td><td class="f">Sonlu durum makineleri, dil ve gramer, nondeterministik sonlu durum makineleri</td></tr>
+      </table>
+
+      <div class="card" style="margin-top:16px;">
+        <h3>Dikkat</h3>
+        <p style="margin:0;">Bu konuların bir kısmı (Graf Teorisi, Ağaçlar, Sonlu Durum Makineleri) bizim ders planımızda da ayrı başlıklar olarak yer alıyor — sırasıyla işleyeceğiz.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 6 — WHAT IS DISCRETE MATH -->
+  <section class="slide" data-index="6">
+    <div class="slide-inner">
+      <div class="kicker">1.6</div>
+      <h1 class="slide-title">Ayrık Matematik Nedir?</h1>
+      <p class="subtitle">"Ayrık" (discrete) kelimesinin matematikte ne anlama geldiğini anlayarak başlayalım.</p>
+
+      <div class="grid2">
+        <div>
+          <p class="lead"><b>Tanım:</b> Ayrık matematik (sonlu matematik), matematiğin <b>süreklilik içermeyen</b>, ayrık yapılarıyla ilgilenen dalıdır.</p>
+          <p>Klasik matematik (kalkülüs gibi) çoğunlukla <b>sürekli</b> nesnelerle (gerçek sayı doğrusu, sürekli fonksiyonlar) ilgilenirken, ayrık matematik <b>ayrık (kesikli)</b> nesnelerin incelenmesine odaklanır.</p>
+        </div>
+        <div class="card">
+          <h3>Ayrık nesnelere örnekler</h3>
+          <ul class="clean" style="margin-bottom:0;">
+            <li>Tamsayılar</li>
+            <li>Bir bilgisayar programının yürüttüğü işlem adımları</li>
+            <li>Bir haritada A noktasından B noktasına giden farklı yollar</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="card" style="margin-top:16px;">
+        <h3>Bilgisayar bilimleri için neden temel?</h3>
+        <p style="margin:0;">Ayrık matematik dersi, bilgisayar bilimlerindeki birçok ders için gereken matematiksel altyapıyı sağlar — çünkü bilgisayarlar temelde <b>ayrık</b> (kesikli, 0/1) sistemlerdir: bellek adresleri, döngü sayaçları, veri yapıları hep ayrık nesnelerdir.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 7 — PROBLEM TYPES -->
+  <section class="slide" data-index="7">
+    <div class="slide-inner">
+      <div class="kicker">1.7</div>
+      <h1 class="slide-title">Ayrık Matematikle Çözülen Problem Türleri</h1>
+      <p class="subtitle">Ders boyunca cevaplayabileceğimiz soru türlerinden bazı örnekler.</p>
+
+      <div class="card">
+        <ul class="clean" style="margin-bottom:0; columns:1;">
+          <li>Belirli kurallara göre bir şifre kaç yolla seçilebilir?</li>
+          <li>Kaç tane geçerli İnternet adresi olabilir?</li>
+          <li>Belirli bir piyangoyu kazanma olasılığı nedir?</li>
+          <li>Bir ağdaki iki bilgisayar arasında bir bağlantı var mı?</li>
+          <li>İstenmeyen e-posta mesajlarını nasıl tanımlayabiliriz?</li>
+          <li>Bir mesajı, istenmeyen bir alıcının okumaması için nasıl şifreleyebiliriz?</li>
+          <li>İki tamsayı toplayan bir devreyi nasıl kurabiliriz?</li>
+          <li>Bir ulaşım sistemi kullanarak iki şehir arasındaki en kısa yol nasıl bulunur?</li>
+          <li>Bir grup şehirden her birini yalnızca bir kez ziyaret eden en kısa turu nasıl buluruz?</li>
+          <li>Bir bilgisayarın mantık yürütebilmesi için cümleleri nasıl temsil edebiliriz?</li>
+          <li>Sonsuz sayıda asal sayı olduğunu nasıl kanıtlayabiliriz?</li>
+          <li>Bir tamsayı listesi artan sırada olacak şekilde nasıl sıralanabilir? Kaç adım gerekir?</li>
+        </ul>
+      </div>
+
+      <div class="examples">
+        <div class="examples-head"><span class="dot"></span><h4>Örnek Sorular</h4></div>
+        <details class="q">
+          <summary><span class="qnum">S1.</span> Yukarıdaki listeden hangi soru, bu dönem "Mantık ve İspat" bölümünde doğrudan cevaplanacaktır?<span class="arrow">▶</span></summary>
+          <div class="answer">"Sonsuz sayıda asal sayı olduğunu nasıl kanıtlayabiliriz?" — bu soru, İspat (Proof) bölümünde <b>çelişki ile ispat</b> tekniğiyle (Euclid'in klasik ispatı) doğrudan cevaplanacaktır.</div>
+        </details>
+        <details class="q">
+          <summary><span class="qnum">S2.</span> "İki tamsayı toplayan bir devreyi nasıl kurabiliriz?" sorusu hangi bölümle ilişkilidir?<span class="arrow">▶</span></summary>
+          <div class="answer">Boole Cebri ve Mantık Devreleri bölümü — orada "yarı toplayıcı" (half adder) devresini tam olarak bu soruya cevap olarak inşa etmiştik.</div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- 8 — PURPOSE I -->
+  <section class="slide" data-index="8">
+    <div class="slide-inner">
+      <div class="kicker">1.8</div>
+      <h1 class="slide-title">Dersin Amacı Nedir? — I</h1>
+      <p class="subtitle">Bu dersi tamamladığınızda kazanacağınız beş temel beceriden ilk ikisi.</p>
+
+      <div class="two-col-list">
+        <div class="card">
+          <h3>1. Matematiksel Akıl Yürütme</h3>
+          <p style="margin:0;">Matematiksel argümanları ve ispatları <b>okuma, anlama ve inşa etme</b> becerisi. Bu, İspat (Proof) bölümünün doğrudan hedefidir.</p>
+        </div>
+        <div class="card">
+          <h3>2. Kombinatoryal Analiz</h3>
+          <p style="margin:0;">Farklı türdeki nesneleri <b>sayma teknikleri</b> — kaç farklı şifre, kaç farklı sıralama, kaç farklı yol olduğunu hesaplama becerisi.</p>
+        </div>
+      </div>
+
+      <div class="examples">
+        <div class="examples-head"><span class="dot"></span><h4>Örnek Sorular</h4></div>
+        <details class="q">
+          <summary><span class="qnum">S1.</span> "Matematiksel akıl yürütme" ile "kombinatoryal analiz" arasındaki fark nedir?<span class="arrow">▶</span></summary>
+          <div class="answer">Matematiksel akıl yürütme, bir iddianın <i>doğru olup olmadığını</i> göstermekle ilgilidir (ispat inşa etmek). Kombinatoryal analiz ise genellikle "kaç tane" sorusuna cevap arar — bir kümenin veya olası düzenlemenin <i>sayısını</i> bulmakla ilgilidir.</div>
+        </details>
+        <details class="q">
+          <summary><span class="qnum">S2.</span> "Belirli kurallara göre bir şifre kaç yolla seçilebilir?" sorusu hangi beceriyi gerektirir?<span class="arrow">▶</span></summary>
+          <div class="answer">Kombinatoryal analiz — bu, sayma tekniklerinin (permütasyon, kombinasyon gibi) doğrudan bir uygulamasıdır.</div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- 9 — PURPOSE II -->
+  <section class="slide" data-index="9">
+    <div class="slide-inner">
+      <div class="kicker">1.9</div>
+      <h1 class="slide-title">Dersin Amacı Nedir? — II</h1>
+      <p class="subtitle">Kalan üç temel beceri.</p>
+
+      <div class="grid3">
+        <div class="card">
+          <h3>3. Ayrık Yapılar</h3>
+          <p style="margin:0; font-size:14px;">Nesneleri ve aralarındaki ilişkileri temsil eden soyut matematiksel yapılar: kümeler, permütasyonlar, ilişkiler, grafikler, ağaçlar, sonlu durum makineleri.</p>
+        </div>
+        <div class="card">
+          <h3>4. Algoritmik Düşünme</h3>
+          <p style="margin:0; font-size:14px;">Bir algoritma belirlemek, gerekli bellek/zamanı analiz etmek ve algoritmanın doğru cevabı üreteceğini <b>doğrulamak</b> (ki bu doğrudan tümevarım/ispat tekniklerini kullanır).</p>
+        </div>
+        <div class="card">
+          <h3>5. Uygulamalar ve Modelleme</h3>
+          <p style="margin:0; font-size:14px;">Ayrık matematik kavramlarını sadece hesaplamada değil, kimya, biyoloji, dilbilim, coğrafya, işletme gibi alanlarda da modelleme için kullanma yeteneği.</p>
+        </div>
+      </div>
+
+      <div class="examples">
+        <div class="examples-head"><span class="dot"></span><h4>Örnek Sorular</h4></div>
+        <details class="q">
+          <summary><span class="qnum">S1.</span> "Algoritmik düşünme" becerisinin üç bileşeni nedir?<span class="arrow">▶</span></summary>
+          <div class="answer">(1) Algoritmayı belirlemek, (2) yürütülmesi için gereken bellek ve zamanı analiz etmek (karmaşıklık analizi), (3) algoritmanın her zaman doğru cevabı üreteceğini doğrulamak (doğruluk ispatı, genelde tümevarımla).</div>
+        </details>
+        <details class="q">
+          <summary><span class="qnum">S2.</span> "Ayrık yapılar" becerisi kapsamında sayılan altı örnek yapıyı listeleyin.<span class="arrow">▶</span></summary>
+          <div class="answer">Kümeler, permütasyonlar, ilişkiler, grafikler (graflar), ağaçlar ve sonlu durum makineleri.</div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- 10 — GATEWAY COURSE -->
+  <section class="slide" data-index="10">
+    <div class="slide-inner">
+      <div class="kicker">1.10</div>
+      <h1 class="slide-title">Ayrık Matematik Bir "Geçiş" (Gateway) Dersidir</h1>
+      <p class="subtitle">Burada öğrenilen kavramlar, ileride alacağınız birçok dersin temelini oluşturur.</p>
+
+      <div class="grid3">
+        <div class="card">
+          <h3>Bilgisayar Bilimi</h3>
+          <p style="margin:0; font-size:14px;">Bilgisayar Mimarisi, Veri Yapıları, Algoritmalar, Programlama Dilleri, Derleyiciler, Bilgisayar Güvenliği, Veritabanları, Yapay Zeka, Ağ Oluşturma, Oyun Tasarımı, Hesaplama Teorisi…</p>
+        </div>
+        <div class="card">
+          <h3>Matematik</h3>
+          <p style="margin:0; font-size:14px;">Mantık, Küme Teorisi, Olasılık, Sayı Teorisi, Soyut Cebir, Kombinatorik, Grafik Teorisi, Oyun Teorisi, Ağ Optimizasyonu…</p>
+        </div>
+        <div class="card">
+          <h3>Diğer Disiplinler</h3>
+          <p style="margin:0; font-size:14px;">Felsefe, ekonomi, dilbilim ve diğer bölümlerdeki dersler için de yararlı kavramlar sunar. Ayrıca sürekli matematik alanlarında da size yardımcı olur.</p>
+        </div>
+      </div>
+
+      <div class="examples">
+        <div class="examples-head"><span class="dot"></span><h4>Örnek Sorular</h4></div>
+        <details class="q">
+          <summary><span class="qnum">S1.</span> "Yapay Zeka" dersinde ayrık matematik hangi temel kavramları destekler?<span class="arrow">▶</span></summary>
+          <div class="answer">Mantık ve önermeler (bilgi tabanlı sistemler, kural motoru), graf teorisi (arama algoritmaları, karar ağaçları), olasılık ve kombinatorik gibi birçok kavram, yapay zekanın matematiksel temelini oluşturur.</div>
+        </details>
+        <details class="q">
+          <summary><span class="qnum">S2.</span> Bir "gateway" (geçiş) dersi olması, bu dersi diğer derslerden nasıl farklı kılar?<span class="arrow">▶</span></summary>
+          <div class="answer">Gateway dersleri, kendi başlarına bir hedef olmaktan çok, birçok ileri dersin <i>önkoşul altyapısını</i> sağlar. Bu derste öğrenilen kavramları iyi anlamamak, ileride alınacak birçok dersi (Veri Yapıları, Algoritmalar gibi) doğrudan zorlaştırabilir.</div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- 11 — PROBLEM CATEGORIES -->
+  <section class="slide" data-index="11">
+    <div class="slide-inner">
+      <div class="kicker">1.11</div>
+      <h1 class="slide-title">Ayrık Matematik Problem Kategorileri</h1>
+      <p class="subtitle">Olası durumları sonlu olan problemler, üç ana kategoriye ayrılabilir.</p>
+
+      <div class="grid3">
+        <div class="card">
+          <h3>Varlık Belirleme (Existence)</h3>
+          <p style="margin:0; font-size:14px;">Çözümün <b>var olup olmadığının</b> açık olmadığı durumlar. Soru: "Böyle bir çözüm var mı?"</p>
+        </div>
+        <div class="card">
+          <h3>Sayma (Counting)</h3>
+          <p style="margin:0; font-size:14px;">Çözümün olduğu bilinir, ama <b>kaç tane</b> olduğunu bilmek isteriz.</p>
+        </div>
+        <div class="card">
+          <h3>Optimizasyon</h3>
+          <p style="margin:0; font-size:14px;">Birçok çözüm arasından <b>en iyi olanı</b> bulmak istediğimiz durumlar.</p>
+        </div>
+      </div>
+
+      <div class="card" style="margin-top:16px;">
+        <h3>Kaynak</h3>
+        <p style="margin:0; font-size:13.5px; color:var(--muted);">Bu sınıflandırma, Nilüfer Yurtay'ın "Ayrık İşlemsel Yapılar" ders notlarından alınmıştır.</p>
+      </div>
+
+      <div class="examples">
+        <div class="examples-head"><span class="dot"></span><h4>Örnek Sorular</h4></div>
+        <details class="q">
+          <summary><span class="qnum">S1.</span> "Bir ağdaki iki bilgisayar arasında bir bağlantı var mı?" sorusu hangi kategoriye girer?<span class="arrow">▶</span></summary>
+          <div class="answer"><b>Varlık belirleme</b> — soru sadece bir bağlantının var olup olmadığını sorguluyor, kaç tane olduğunu ya da en iyisinin hangisi olduğunu değil.</div>
+        </details>
+        <details class="q">
+          <summary><span class="qnum">S2.</span> "Kaç tane geçerli İnternet adresi olabilir?" sorusu hangi kategoriye girer?<span class="arrow">▶</span></summary>
+          <div class="answer"><b>Sayma</b> — geçerli adreslerin var olduğu zaten bilinir, soru bunların toplam sayısını sorar.</div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- 12 — EXISTENCE EXAMPLE -->
+  <section class="slide" data-index="12">
+    <div class="slide-inner">
+      <div class="kicker">1.12</div>
+      <h1 class="slide-title">Örnek: Varlık Belirleme ve Sayma Problemleri</h1>
+      <p class="subtitle">Ders notundaki iki klasik örnekle kategorileri somutlaştıralım.</p>
+
+      <div class="grid2">
+        <div class="card">
+          <span class="badge">VARLIK BELİRLEME</span>
+          <h3>Tenis Fikstürü Problemi</h3>
+          <p style="margin:0;">Dört evli çift, her pazar akşamı iki sahada karışık çift tenis maçı yapıyor. İki saatlik oyun süresinde her yarım saatte bir eşlerini ve rakiplerini değiştiriyorlar. <b>Soru:</b> Her erkeğin her kadınla en az bir kez birlikte ve karşısında oynadığı, ve her erkeğe karşı en az bir kez oynadığı bir fikstür <b>var mı</b>?</p>
+        </div>
+        <div class="card">
+          <span class="badge">SAYMA</span>
+          <h3>Yatırım Kulübü Problemi</h3>
+          <p style="margin:0;">Altı kişilik bir yatırım kulübü, her yıl başkan ve sayman pozisyonlarını dönerli olarak değiştirmek istiyor. <b>Soru:</b> Aynı insanların aynı pozisyonlara geri gelmesi için <b>kaç yıl</b> geçmelidir?</p>
+        </div>
+      </div>
+
+      <div class="card" style="margin-top:16px;">
+        <h3>Ortak nokta</h3>
+        <p style="margin:0;">İki problem de görünüşte basit senaryolar anlatıyor, ama her ikisini de kesin olarak çözmek titiz bir kombinatoryal analiz gerektirir — bu, ders boyunca geliştireceğimiz becerilerden biridir.</p>
+      </div>
+
+      <div class="examples">
+        <div class="examples-head"><span class="dot"></span><h4>Örnek Sorular</h4></div>
+        <details class="q">
+          <summary><span class="qnum">S1.</span> Yatırım kulübü probleminde, eğer sadece 2 pozisyon (başkan, sayman) ve 6 kişi olsaydı, ilk elden kaç farklı (başkan, sayman) ataması olurdu?<span class="arrow">▶</span></summary>
+          <div class="answer">6 kişiden başkan seçilir (6 seçenek), kalan 5 kişiden sayman seçilir (5 seçenek): 6×5=<b>30</b> farklı atama. (Bu, ders içinde işleyeceğimiz "sıralı seçim/permütasyon" kavramının bir önizlemesidir.)</div>
+        </details>
+        <details class="q">
+          <summary><span class="qnum">S2.</span> Tenis fikstürü probleminin "varlık belirleme" problemi olmasının nedeni nedir?<span class="arrow">▶</span></summary>
+          <div class="answer">Çünkü soru doğrudan "böyle bir fikstür var mı, yok mu?" diye sorulmuştur — kaç tane olduğu ya da hangisinin en iyisi olduğu değil, sadece varlığı/yokluğu sorgulanmaktadır.</div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- 13 — OPTIMIZATION EXAMPLE -->
+  <section class="slide" data-index="13">
+    <div class="slide-inner">
+      <div class="kicker">1.13</div>
+      <h1 class="slide-title">Örnek: Optimizasyon Problemi</h1>
+      <p class="subtitle">Bir iş yerinde üç çalışana üç işi, toplam maliyeti en aza indirecek şekilde atamak.</p>
+
+      <div class="card">
+        <h3>Problem</h3>
+        <p style="margin:0 0 10px;">Ali, Ayşe ve Ahmet sırasıyla saatte 10, 12 ve 15 milyon TL ücret alıyor. Patronun dağıtacağı 3 iş var; her çalışanın her işi kaç saatte bitireceği aşağıdaki tabloda verilmiştir:</p>
+        <table class="tt">
+          <tr><th></th><th>Ali (10M/sa)</th><th>Ayşe (12M/sa)</th><th>Ahmet (15M/sa)</th></tr>
+          <tr><td>İş 1</td><td>7,5 sa</td><td>6 sa</td><td>6,5 sa</td></tr>
+          <tr><td>İş 2</td><td>8 sa</td><td>8,5 sa</td><td>7 sa</td></tr>
+          <tr><td>İş 3</td><td>5 sa</td><td>6,5 sa</td><td>5,5 sa</td></tr>
+        </table>
+        <p style="margin:10px 0 0;"><b>Soru:</b> Patron, toplam ödemeyi en aza indirecek şekilde her çalışana hangi işi vermelidir? Bu, klasik bir <b>atama (assignment) optimizasyon problemi</b>dir — her çalışan-iş çiftinin maliyeti (saat×ücret) hesaplanıp, toplam maliyeti en düşük yapan eşleştirme aranır.</p>
+      </div>
+
+      <div class="examples">
+        <div class="examples-head"><span class="dot"></span><h4>Örnek Sorular</h4></div>
+        <details class="q">
+          <summary><span class="qnum">S1.</span> Ali'nin İş 1'i yapma maliyetini (saat×ücret) hesaplayın.<span class="arrow">▶</span></summary>
+          <div class="answer">7,5 saat × 10 milyon TL/saat = <b>75 milyon TL</b>.</div>
+        </details>
+        <details class="q">
+          <summary><span class="qnum">S2.</span> Sadece "her çalışana en hızlı yaptığı işi ver" stratejisi (her satırın en küçük değeri) her zaman en düşük toplam maliyeti verir mi? Neden?<span class="arrow">▶</span></summary>
+          <div class="answer">Hayır, her zaman vermez — çünkü bu strateji birden fazla çalışanın <i>aynı işi</i> "en hızlı" olarak görmesi durumunda çakışmaya yol açabilir (her iş sadece bir kişiye verilebilir). Bu yüzden gerçek bir optimizasyon problemi, tüm olası eşleştirmeleri (veya daha akıllı bir algoritmayı) göz önünde bulundurmayı gerektirir — sadece açgözlü (greedy) yerel seçimler yeterli olmayabilir.</div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- 14 — GRAPH MODELING: PERT PART 1 -->
+  <section class="slide" data-index="14">
+    <div class="slide-inner">
+      <div class="kicker">1.14</div>
+      <h1 class="slide-title">Örnek: Bilgiyi Graf Olarak Modelleme (PERT)</h1>
+      <p class="subtitle">Bazen bilgiyi bir graf olarak göstermek, çok daha anlaşılır olur.</p>
+
+      <div class="card">
+        <h3>Problem: Bayram İlanı Hazırlama Projesi</h3>
+        <p style="margin:0 0 10px;">Büyük bir mağaza, bayram indirimi için 8 sayfalık bir ilan hazırlıyor. İlanın bayramdan en az 10 gün önce postalanması gerekiyor ve toplamda <b>30 gün</b> var. Her görev bir noktayla (düğümle) gösterilir; bir görev diğerinin tamamlanmasını gerektiriyorsa aralarına ok çizilir.</p>
+        <table class="tt" style="font-family:var(--sans); font-size:13px;">
+          <tr><th>İş</th><th>Açıklama</th><th>Süre (gün)</th><th>Önceki İşler</th></tr>
+          <tr><td>A</td><td>Mal Seçimi (Kısım Müdürlüğü)</td><td>3</td><td>Yok</td></tr>
+          <tr><td>B</td><td>Mal Seçimi (Satın Alma)</td><td>2</td><td>Yok</td></tr>
+          <tr><td>C</td><td>İlan için mal seçimi ve fiyatlama</td><td>2</td><td>A, B</td></tr>
+          <tr><td>D</td><td>İlan Hazırlığı (Resim)</td><td>4</td><td>C</td></tr>
+          <tr><td>E</td><td>İlan Hazırlığı (Yazı)</td><td>3</td><td>C</td></tr>
+          <tr><td>F</td><td>İlan Tasarımı</td><td>2</td><td>D, E</td></tr>
+          <tr><td>G</td><td>Posta Listesi Hazırlama</td><td>3</td><td>C</td></tr>
+          <tr><td>H</td><td>Etiket Basımı</td><td>1</td><td>G</td></tr>
+          <tr><td>I</td><td>İlan Basımı</td><td>5</td><td>F</td></tr>
+          <tr><td>J</td><td>Etiket Yapıştırma</td><td>2</td><td>H, I</td></tr>
+          <tr><td>K</td><td>İlan Postalama</td><td>10</td><td>J</td></tr>
+        </table>
+      </div>
+
+      <div class="examples">
+        <div class="examples-head"><span class="dot"></span><h4>Örnek Sorular</h4></div>
+        <details class="q">
+          <summary><span class="qnum">S1.</span> Hangi işler hiçbir önceki işe bağlı değildir ve bu neden mantıklıdır?<span class="arrow">▶</span></summary>
+          <div class="answer">A ve B — çünkü mal seçimi süreçleri (kısım müdürlüğü ve satın alma tarafından) projenin başlangıç noktasıdır, önceden tamamlanması gereken başka bir iş yoktur.</div>
+        </details>
+        <details class="q">
+          <summary><span class="qnum">S2.</span> J işi hangi iki işin tamamlanmasını bekler ve bu neden görsel olarak (graf ile) daha kolay anlaşılır?<span class="arrow">▶</span></summary>
+          <div class="answer">J, hem H (etiket basımı) hem I (ilan basımı) işlerinin bitmesini bekler. Bir tabloda bu tür çoklu bağımlılıkları takip etmek zorken, bir grafta H ve I düğümlerinden J'ye giden iki ok, bu ilişkiyi anında görsel olarak netleştirir.</div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- 15 — GRAPH MODELING: PERT PART 2 -->
+  <section class="slide" data-index="15">
+    <div class="slide-inner">
+      <div class="kicker">1.15</div>
+      <h1 class="slide-title">Örnek: Kritik Yol Analizi (PERT — devamı)</h1>
+      <p class="subtitle">Görevleri bir graf üzerinde birleştirip projenin toplam süresini ve "kritik yolu" bulalım.</p>
+
+      <div class="card">
+        <svg viewBox="0 0 700 260" style="width:100%; max-width:720px; display:block; margin:0 auto;">
+          <!-- edges -->
+          <g stroke="var(--muted)" stroke-width="1.5" fill="none">
+            <line x1="72" y1="60" x2="128" y2="105"/>
+            <line x1="72" y1="180" x2="128" y2="135"/>
+            <line x1="172" y1="120" x2="228" y2="60"/>
+            <line x1="172" y1="120" x2="228" y2="120"/>
+            <line x1="172" y1="120" x2="228" y2="190"/>
+            <line x1="272" y1="60" x2="328" y2="55"/>
+            <line x1="272" y1="120" x2="328" y2="55"/>
+            <line x1="272" y1="190" x2="328" y2="190"/>
+            <line x1="372" y1="55" x2="428" y2="55"/>
+            <line x1="372" y1="190" x2="528" y2="95"/>
+            <line x1="472" y1="55" x2="528" y2="85"/>
+            <line x1="572" y1="90" x2="628" y2="90"/>
+          </g>
+          <!-- non-critical nodes -->
+          <g font-family="IBM Plex Mono, monospace" font-size="12" text-anchor="middle">
+            <circle cx="50" cy="180" r="22" fill="var(--surface-2)" stroke="var(--border)" stroke-width="2"/>
+            <text x="50" y="176" fill="var(--muted)">B</text><text x="50" y="190" fill="var(--muted)">2</text>
+
+            <circle cx="250" cy="190" r="22" fill="var(--surface-2)" stroke="var(--border)" stroke-width="2"/>
+            <text x="250" y="186" fill="var(--muted)">G</text><text x="250" y="200" fill="var(--muted)">3</text>
+
+            <circle cx="350" cy="190" r="22" fill="var(--surface-2)" stroke="var(--border)" stroke-width="2"/>
+            <text x="350" y="186" fill="var(--muted)">H</text><text x="350" y="200" fill="var(--muted)">1</text>
+
+            <circle cx="250" cy="120" r="22" fill="var(--surface-2)" stroke="var(--border)" stroke-width="2"/>
+            <text x="250" y="116" fill="var(--muted)">E</text><text x="250" y="130" fill="var(--muted)">3</text>
+          </g>
+          <!-- critical path nodes -->
+          <g font-family="IBM Plex Mono, monospace" font-size="12" text-anchor="middle">
+            <circle cx="50" cy="60" r="22" fill="color-mix(in srgb, var(--accent) 30%, var(--surface))" stroke="var(--accent)" stroke-width="2.5"/>
+            <text x="50" y="56" fill="var(--text)">A</text><text x="50" y="70" fill="var(--text)">3</text>
+
+            <circle cx="150" cy="120" r="22" fill="color-mix(in srgb, var(--accent) 30%, var(--surface))" stroke="var(--accent)" stroke-width="2.5"/>
+            <text x="150" y="116" fill="var(--text)">C</text><text x="150" y="130" fill="var(--text)">2</text>
+
+            <circle cx="250" cy="60" r="22" fill="color-mix(in srgb, var(--accent) 30%, var(--surface))" stroke="var(--accent)" stroke-width="2.5"/>
+            <text x="250" y="56" fill="var(--text)">D</text><text x="250" y="70" fill="var(--text)">4</text>
+
+            <circle cx="350" cy="55" r="22" fill="color-mix(in srgb, var(--accent) 30%, var(--surface))" stroke="var(--accent)" stroke-width="2.5"/>
+            <text x="350" y="51" fill="var(--text)">F</text><text x="350" y="65" fill="var(--text)">2</text>
+
+            <circle cx="450" cy="55" r="22" fill="color-mix(in srgb, var(--accent) 30%, var(--surface))" stroke="var(--accent)" stroke-width="2.5"/>
+            <text x="450" y="51" fill="var(--text)">I</text><text x="450" y="65" fill="var(--text)">5</text>
+
+            <circle cx="550" cy="90" r="22" fill="color-mix(in srgb, var(--accent) 30%, var(--surface))" stroke="var(--accent)" stroke-width="2.5"/>
+            <text x="550" y="86" fill="var(--text)">J</text><text x="550" y="100" fill="var(--text)">2</text>
+
+            <circle cx="655" cy="90" r="24" fill="color-mix(in srgb, var(--accent) 45%, var(--surface))" stroke="var(--accent)" stroke-width="3"/>
+            <text x="655" y="86" fill="var(--text)">K</text><text x="655" y="100" fill="var(--text)">10</text>
+          </g>
+        </svg>
+        <p style="margin-top:10px; margin-bottom:0; font-size:13.5px; color:var(--muted);">Turuncu düğümler ve oklar <b>kritik yolu</b> (A→C→D→F→I→J→K) gösterir — projenin en uzun süren yolu. Bu yöntem <b>PERT</b> (Program Evaluation and Review Technique) olarak adlandırılır ve büyük projelerin planlanmasında yaygın kullanılır.</p>
+      </div>
+
+      <div class="formula-big" style="font-size:16px;">Kritik yol: A(3)+C(2)+D(4)+F(2)+I(5)+J(2)+K(10) = 28 gün</div>
+
+      <div class="examples">
+        <div class="examples-head"><span class="dot"></span><h4>Örnek Sorular</h4></div>
+        <details class="q">
+          <summary><span class="qnum">S1.</span> Proje 30 günde tamamlanması gerekiyorsa, 28 günlük kritik yol süresi bu hedefi karşılıyor mu?<span class="arrow">▶</span></summary>
+          <div class="answer">Evet — 28 gün, 30 günlük sınırın altında kaldığından iş zamanında yetişecektir (ders notunda da "K işi için toplam 28 gün bulduğumuza göre iş zamanında yetişecek demektir" sonucuna varılmıştı).</div>
+        </details>
+        <details class="q">
+          <summary><span class="qnum">S2.</span> "Kritik yol" neden B, E, G, H gibi işleri içermiyor?<span class="arrow">▶</span></summary>
+          <div class="answer">Çünkü bu işler, kritik yol üzerindeki işlerle paralel yürüyen ama <i>daha kısa süren</i> alt-dallardır — projenin toplam süresini onlar değil, en uzun (kritik) yol belirler. Örneğin G→H dalı (3+1=4 gün) J'ye ulaşmadan önce tamamlanır, ama F→I dalı (2+5=7 gün) daha uzun sürdüğü için projenin süresini asıl o belirler.</div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- 16 — PILOT ASSIGNMENT -->
+  <section class="slide" data-index="16">
+    <div class="slide-inner">
+      <div class="kicker">1.16</div>
+      <h1 class="slide-title">Örnek: Pilot Atama Problemi (Eşleme)</h1>
+      <p class="subtitle">Tercihlere göre en iyi eşleşmeyi bulmak — bir başka klasik optimizasyon örneği.</p>
+
+      <div class="grid2">
+        <div class="card">
+          <h3>Problem</h3>
+          <p style="margin:0 0 10px;">THY'nin pazartesi sabahları Ankara'dan 7 ayrı ülkeye (Libya, Suriye, Brezilya, Fransa, Peru, Macaristan, Danimarka) uçuşu var. 7 pilotun (P1–P7) her biri belirli uçuşları tercih ediyor. Mümkünse tüm pilotların isteklerine izin verilecek; mümkün değilse en fazla sayıda eşleşme yapılacak.</p>
+          <table class="tt" style="font-family:var(--sans); font-size:12.5px;">
+            <tr><td style="text-align:left;">Libya</td><td>P2, P3, P6</td></tr>
+            <tr><td style="text-align:left;">Suriye</td><td>P1, P2, P4, P5</td></tr>
+            <tr><td style="text-align:left;">Brezilya</td><td>P2, P4, P5</td></tr>
+            <tr><td style="text-align:left;">Fransa</td><td>P1, P4, P6, P7</td></tr>
+            <tr><td style="text-align:left;">Peru</td><td>P3, P5, P6</td></tr>
+            <tr><td style="text-align:left;">Macaristan</td><td>P3, P7</td></tr>
+            <tr><td style="text-align:left;">Danimarka</td><td>P2, P6, P7</td></tr>
+          </table>
+        </div>
+        <div class="card">
+          <h3>Bu bir optimizasyon problemidir</h3>
+          <p style="margin:0 0 10px;">Uçuşlar ve pilotlar, mümkün olduğunca çok tercihi karşılayacak şekilde eşleştirilir. Örnek bir eşlemede (uçuşlar sabit sırada, pilotlar P1,P2,...,P7 şeklinde eşlenirse) sadece 4 pilot istediği yere uçabiliyordu.</p>
+          <p style="margin:0;">Sorulacak temel sorular:</p>
+          <ol class="step-list" style="margin-top:8px;">
+            <li>Olası sıralama (eşleme) sayısı kaçtır?</li>
+            <li>Tüm olası sıralamaları hiçbirini unutmadan nasıl üretebiliriz?</li>
+          </ol>
+        </div>
+      </div>
+
+      <div class="examples">
+        <div class="examples-head"><span class="dot"></span><h4>Örnek Sorular</h4></div>
+        <details class="q">
+          <summary><span class="qnum">S1.</span> 7 pilotun 7 uçuşa atanması için kaç farklı olası sıralama (eşleme) vardır? (Kombinatorik önizlemesi)<span class="arrow">▶</span></summary>
+          <div class="answer">7! (7 faktöriyel) = 7×6×5×4×3×2×1 = <b>5.040</b> farklı olası eşleme. Bu, ders içinde "permütasyon" konusunda formal olarak işleyeceğimiz bir sayma tekniğinin doğrudan bir uygulamasıdır.</div>
+        </details>
+        <details class="q">
+          <summary><span class="qnum">S2.</span> Tabloya göre, Macaristan uçuşunu isteyen kaç pilot var, ve bu neden eşlemeyi zorlaştıran bir kısıt olabilir?<span class="arrow">▶</span></summary>
+          <div class="answer">Sadece 2 pilot (P3, P7) Macaristan'ı istiyor. Az sayıda pilotun istediği uçuşlar, eşleme sırasında "darboğaz" oluşturabilir — çünkü bu uçuş sadece bu iki pilottan biriyle "tercih edilen" şekilde eşleşebilir, diğer 5 pilot için bu uçuş her koşulda bir tercih ihlali anlamına gelir.</div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- 17 — SUMMARY -->
+  <section class="slide" data-index="17">
+    <div class="slide-inner">
+      <div class="kicker">Özet</div>
+      <h1 class="slide-title">Bölüm 1'in Özeti — <em>Ayrık Matematiğe Giriş</em></h1>
+      <p class="subtitle">Şimdi dersin geri kalanında neyle karşılaşacağımızı biliyoruz — sırada Mantık ve İspat var.</p>
+
+      <div class="two-col-list">
+        <div class="card">
+          <h3>Öğrendiklerimiz</h3>
+          <ul class="clean" style="margin-bottom:0;">
+            <li>Ayrık matematiğin tanımı ve sürekli matematikten farkı</li>
+            <li>Ayrık matematikle çözülen problem türlerinden örnekler</li>
+            <li>Dersin beş temel amacı (akıl yürütme, kombinatorik, ayrık yapılar, algoritmik düşünme, modelleme)</li>
+            <li>Ayrık matematiğin bir "gateway" dersi olması</li>
+            <li>Üç problem kategorisi: varlık belirleme, sayma, optimizasyon</li>
+            <li>PERT ile graf tabanlı proje modelleme ve kritik yol analizi</li>
+            <li>Pilot atama gibi gerçek dünya eşleme/optimizasyon problemleri</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Sırada ne var?</h3>
+          <p style="margin:0 0 10px;">Bölüm 2 — <b>Mantık ve İspat (Logic and Proof)</b> konusunda şunları göreceğiz:</p>
+          <ul class="clean" style="margin-bottom:0;">
+            <li>Önermeler, mantıksal bağlaçlar, doğruluk tabloları</li>
+            <li>Şartlı önermeler, mantıksal denklik kanunları</li>
+            <li>Yüklemler ve niceleyiciler (∀, ∃)</li>
+            <li>İspat teknikleri: doğrudan, dolaylı, çelişki, tümevarım, karşı örnek</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="examples">
+        <div class="examples-head"><span class="dot"></span><h4>Genel Tekrar Soruları</h4></div>
+        <details class="q">
+          <summary><span class="qnum">S1.</span> Bu dersin değerlendirme yapısını (yıl içi/yıl sonu oranları ve geçme barajı) özetleyin.<span class="arrow">▶</span></summary>
+          <div class="answer">Yıl içi (2 vize ve varsa ödev/quiz) toplamda %60, yıl sonu final sınavı %40 ağırlığa sahiptir. Ağırlıklı ortalamayla hesaplanan dönem sonu notu 40'ın altında kalırsa ders başarısız sayılır.</div>
+        </details>
+        <details class="q">
+          <summary><span class="qnum">S2.</span> Tenis fikstürü, yatırım kulübü ve iş atama problemlerini sırasıyla hangi kategoriye (varlık belirleme/sayma/optimizasyon) yerleştirirsiniz?<span class="arrow">▶</span></summary>
+          <div class="answer">Tenis fikstürü → varlık belirleme (böyle bir fikstür var mı?). Yatırım kulübü → sayma (kaç yıl gerekir?). İş atama problemi → optimizasyon (en düşük maliyetli atama hangisi?).</div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+</div>
+
+<div class="bottombar">
+  <button class="nav-btn" id="prevBtn">← Önceki</button>
+  <div class="dots" id="dots"></div>
+  <span class="slide-counter" id="counterBottom">01 / 19</span>
+  <button class="nav-btn" id="nextBtn">Sonraki →</button>
+</div>
+
+<script>
+(function(){
+  var slides = Array.prototype.slice.call(document.querySelectorAll('.slide'));
+  var total = slides.length;
+  var current = 0;
+
+  var counterTop = document.getElementById('counterTop');
+  var counterBottom = document.getElementById('counterBottom');
+  var progressFill = document.getElementById('progressFill');
+  var prevBtn = document.getElementById('prevBtn');
+  var nextBtn = document.getElementById('nextBtn');
+  var dotsWrap = document.getElementById('dots');
+
+  function pad(n){ return n < 10 ? '0'+n : ''+n; }
+
+  for(var i=0;i<total;i++){
+    var d = document.createElement('div');
+    d.className = 'd' + (i===0 ? ' active' : '');
+    d.dataset.i = i;
+    d.addEventListener('click', function(){ goTo(parseInt(this.dataset.i,10)); });
+    dotsWrap.appendChild(d);
+  }
+
+  function render(){
+    slides.forEach(function(s, i){ s.classList.toggle('active', i === current); });
+    var label = pad(current+1) + ' / ' + pad(total);
+    counterTop.textContent = label;
+    counterBottom.textContent = label;
+    progressFill.style.width = ((current) / (total-1) * 100) + '%';
+    prevBtn.disabled = current === 0;
+    nextBtn.disabled = current === total - 1;
+    Array.prototype.forEach.call(dotsWrap.children, function(d,i){
+      d.classList.toggle('active', i === current);
+    });
+    document.querySelector('.slide.active').scrollTop = 0;
+  }
+
+  function goTo(i){
+    if(i < 0 || i >= total) return;
+    current = i;
+    render();
+  }
+
+  prevBtn.addEventListener('click', function(){ goTo(current-1); });
+  nextBtn.addEventListener('click', function(){ goTo(current+1); });
+
+  document.addEventListener('keydown', function(e){
+    if(e.key === 'ArrowRight' || e.key === 'PageDown'){ goTo(current+1); }
+    else if(e.key === 'ArrowLeft' || e.key === 'PageUp'){ goTo(current-1); }
+    else if(e.key === 'Home'){ goTo(0); }
+    else if(e.key === 'End'){ goTo(total-1); }
+  });
+
+  render();
+
+  var root = document.documentElement;
+  var settingsBtn = document.getElementById('settingsBtn');
+  var panel = document.getElementById('settingsPanel');
+  var bgPicker = document.getElementById('bgPicker');
+  var textPicker = document.getElementById('textPicker');
+  var resetBtn = document.getElementById('resetBtn');
+  var presetRow = document.getElementById('presetRow');
+
+  var DEFAULT_BG = '#0B1220';
+  var DEFAULT_TEXT = '#F1F5F9';
+
+  var presets = [
+    {bg:'#0B1220', text:'#F1F5F9', name:'Gece Mavisi'},
+	{bg:'#F8F9FA', text:'#1A1A1A', name:'Kampüs Beyazı ve Koyu Gri'},
+	{bg:'#000000', text:'#FFD700', name:'Siyah ve Altın Sarısı'},
+	{bg:'#F4F6F9', text:'#0F172A', name:'Kırık Beyaz ve Gece Mavisi'},
+	{bg:'#0B132B', text:'#FFEE58', name:'Koyu Lacivert ve Odak Sarısı'},
+    {bg:'#F4F1EA', text:'#1A1A1A', name:'Kağıt'},
+    {bg:'#111111', text:'#F5F5F5', name:'Siyah'},
+    {bg:'#0F2417', text:'#E8F5E9', name:'Koyu Yeşil'},
+    {bg:'#FFFFFF', text:'#0B1220', name:'Beyaz Tahta'},
+    {bg:'#1B1035', text:'#F3E8FF', name:'Mor Gece'},
+	{bg:'#F1F5F9', text:'#0F172A', name:'Bulutlu Gün Modu'},
+	{bg:'#FEF08A', text:'#1E293B', name:'Fosforlu Vurgu Modu'},
+	{bg:'#FFFFFF', text:'#000000', name:'Güneş Işığı Modu'}
+  ];
+  presets.forEach(function(p){
+    var dot = document.createElement('div');
+    dot.className = 'preset-dot';
+    dot.style.background = p.bg;
+    dot.style.borderColor = p.text;
+    dot.title = p.name;
+    dot.addEventListener('click', function(){ applyTheme(p.bg, p.text); });
+    presetRow.appendChild(dot);
+  });
+
+  function applyTheme(bg, text){
+    root.style.setProperty('--bg', bg);
+    root.style.setProperty('--text', text);
+    bgPicker.value = bg;
+    textPicker.value = text;
+    try{
+      localStorage.setItem('intro-slides-theme', JSON.stringify({bg:bg, text:text}));
+    }catch(e){}
+  }
+
+  settingsBtn.addEventListener('click', function(){ panel.classList.toggle('open'); });
+  document.addEventListener('click', function(e){
+    if(!panel.contains(e.target) && e.target !== settingsBtn && panel.classList.contains('open')){
+      panel.classList.remove('open');
+    }
+  });
+
+  bgPicker.addEventListener('input', function(){ applyTheme(bgPicker.value, textPicker.value); });
+  textPicker.addEventListener('input', function(){ applyTheme(bgPicker.value, textPicker.value); });
+  resetBtn.addEventListener('click', function(){ applyTheme(DEFAULT_BG, DEFAULT_TEXT); });
+
+  try{
+    var saved = localStorage.getItem('intro-slides-theme');
+    if(saved){
+      var parsed = JSON.parse(saved);
+      if(parsed && parsed.bg && parsed.text){ applyTheme(parsed.bg, parsed.text); }
+    }
+  }catch(e){}
+})();
+</script>
+
+
+<div id="boardLayer"></div>
+<canvas id="penCanvas"></canvas>
+<div id="laserDot"></div>
+<div id="penToolbar">
+  <div class="pt-grid">
+    <button class="pt-btn" data-tool="pointer" title="İşaretçi — soruları aç, kaydır (V)">🖱️</button>
+    <button class="pt-btn" data-tool="pen" title="Kalem (P)">✏️</button>
+    <button class="pt-btn" data-tool="highlighter" title="Fosforlu kalem (H)">🖍️</button>
+    <button class="pt-btn" data-tool="eraser" title="Silgi — çizgiyi komple siler (E)">🧽</button>
+    <button class="pt-btn" data-tool="laser" title="Lazer işaretçi (L)">🔴</button>
+  </div>
+  <div class="pt-sep"></div>
+  <div class="pt-label">Renk</div>
+  <div class="pt-colors" id="ptColors"></div>
+  <div class="pt-sep"></div>
+  <div class="pt-label">Kalınlık</div>
+  <div class="pt-grid">
+    <button class="pt-btn" data-size="2" title="İnce (-)"><span class="pt-dot" style="width:4px;height:4px"></span></button>
+    <button class="pt-btn" data-size="4" title="Orta"><span class="pt-dot" style="width:8px;height:8px"></span></button>
+    <button class="pt-btn" data-size="8" title="Kalın"><span class="pt-dot" style="width:14px;height:14px"></span></button>
+    <button class="pt-btn" data-size="14" title="Çok kalın (+)"><span class="pt-dot" style="width:20px;height:20px"></span></button>
+  </div>
+  <div class="pt-sep"></div>
+  <div class="pt-grid">
+    <button class="pt-btn" id="ptUndo" title="Geri al (Ctrl+Z)">↶</button>
+    <button class="pt-btn" id="ptClear" title="Bu slayttaki yazıyı temizle (C)">🗑️</button>
+    <button class="pt-btn" id="ptBoard" title="Boş tahta aç/kapat (B)">▭</button>
+    <button class="pt-btn" id="ptEye" title="Yazıyı göster/gizle">👁️</button>
+    <button class="pt-btn" id="ptClose" title="Kalemi kapat (Esc)">✕</button>
+  </div>
+</div>
+<div id="penHint">Kalem açık. <b>V</b> ile işaretçiye geç (soru kutularını aç, kaydır), <b>P</b> ile tekrar yaz. Rakam tuşları renk seçer. Yazılar her slaytta ayrı kalır.</div>
+
+<script>
+(function(){
+  var COLORS = [
+    ['#FFFFFF','Beyaz'], ['#111111','Siyah'], ['#FBBF24','Sarı'], ['#F97316','Turuncu'],
+    ['#EF4444','Kırmızı'], ['#EC4899','Pembe'], ['#A855F7','Mor'], ['#3B82F6','Mavi'],
+    ['#22D3EE','Turkuaz'], ['#22C55E','Yeşil'], ['#A3E635','Açık yeşil'], ['#9CA3AF','Gri']
+  ];
+  var canvas = document.getElementById('penCanvas'), ctx = canvas.getContext('2d');
+  var board = document.getElementById('boardLayer'), tb = document.getElementById('penToolbar');
+  var laser = document.getElementById('laserDot'), hint = document.getElementById('penHint');
+  var toggleBtn = document.getElementById('penToggle'), colorsBox = document.getElementById('ptColors');
+  var state = { open:false, tool:'pointer', color:'#FBBF24', size:4, boardOn:false, hidden:false };
+  var store = {}, hist = {};
+  var cur = null, erasing = null, raf = 0, customWrap = null, customInput = null;
+  // Donanım silgisi algılandıktan sonra normal kalem ucuna dönüşü takip et.
+  var hardwareEraserMode = false;
+
+  function slideEl(){ return document.querySelector('.slide.active'); }
+  function key(){ if(state.boardOn) return 'board'; var s = slideEl(); return 's' + (s ? s.getAttribute('data-index') : '0'); }
+  function sTop(){ if(state.boardOn) return 0; var s = slideEl(); return s ? s.scrollTop : 0; }
+  function rect(){ return canvas.getBoundingClientRect(); }
+  function arr(o,k){ if(!o[k]) o[k] = []; return o[k]; }
+
+  function resize(){
+    var dpr = window.devicePixelRatio || 1, r = rect();
+    canvas.width = Math.round(r.width * dpr); canvas.height = Math.round(r.height * dpr);
+    ctx.setTransform(dpr,0,0,dpr,0,0); redraw();
+  }
+  function toPx(p){ return [p[0] * rect().width, p[1] - sTop()]; }
+
+  function drawStroke(st){
+    var pts = st.points; if(!pts.length) return;
+    ctx.save();
+    ctx.lineCap = 'round'; ctx.lineJoin = 'round'; ctx.strokeStyle = st.color; ctx.fillStyle = st.color;
+    var hl = st.tool === 'highlighter';
+    ctx.globalAlpha = hl ? 0.35 : 1;
+    var lw = hl ? st.size * 5 : st.size; ctx.lineWidth = lw;
+    var p0 = toPx(pts[0]);
+    if(pts.length === 1){ ctx.beginPath(); ctx.arc(p0[0], p0[1], lw/2, 0, Math.PI*2); ctx.fill(); ctx.restore(); return; }
+    ctx.beginPath(); ctx.moveTo(p0[0], p0[1]);
+    for(var i = 1; i < pts.length - 1; i++){
+      var a = toPx(pts[i]), b = toPx(pts[i+1]);
+      ctx.quadraticCurveTo(a[0], a[1], (a[0]+b[0])/2, (a[1]+b[1])/2);
+    }
+    var last = toPx(pts[pts.length-1]); ctx.lineTo(last[0], last[1]);
+    ctx.stroke(); ctx.restore();
+  }
+  function redraw(){
+    var r = rect(); ctx.clearRect(0, 0, r.width, r.height);
+    if(state.hidden) return;
+    (store[key()] || []).forEach(drawStroke);
+  }
+  function schedule(){ if(raf) return; raf = requestAnimationFrame(function(){ raf = 0; redraw(); }); }
+
+  function pt(e){ var r = rect(); return [ (e.clientX - r.left) / r.width, e.clientY - r.top + sTop() ]; }
+
+  function eraseAt(e){
+    var r = rect(), x = e.clientX - r.left, y = e.clientY - r.top, list = arr(store, key()), removed = [];
+    for(var i = list.length - 1; i >= 0; i--){
+      var hit = list[i].points.some(function(p){ var q = toPx(p); var dx = q[0]-x, dy = q[1]-y; return dx*dx + dy*dy < 18*18; });
+      if(hit){ removed.push(list.splice(i,1)[0]); }
+    }
+    if(removed.length){ erasing = erasing || []; erasing = erasing.concat(removed); schedule(); }
+  }
+
+  canvas.addEventListener('pointerdown', function(e){
+    if(!state.open) return;
+    // Bazı tablet kalemleri silgi ucunu Pointer Events'te ayrı araç olarak bildirir.
+    // Destekleyen tarayıcılarda araç seçimini otomatik olarak silgiye çevir.
+    var hardwareEraser = (e.pointerType === 'eraser') ||
+      (e.pointerType === 'pen' && (e.button === 5 || (e.buttons & 32) === 32));
+    if(hardwareEraser){
+      e.preventDefault();
+      hardwareEraserMode = true;
+      state.tool = 'eraser';
+      applyUI();
+    } else if(e.pointerType === 'pen' && hardwareEraserMode){
+      // Aynı kalem tekrar normal ucuna çevrildi: otomatik olarak kaleme dön.
+      hardwareEraserMode = false;
+      state.tool = 'pen';
+      applyUI();
+    }
+    if(state.tool === 'pointer') return;
+    e.preventDefault(); if(canvas.setPointerCapture){ try{ canvas.setPointerCapture(e.pointerId); }catch(_){} }
+    if(state.tool === 'pen' || state.tool === 'highlighter'){
+      cur = { tool:state.tool, color:state.color, size:state.size, points:[pt(e)] };
+      arr(store, key()).push(cur); schedule();
+    } else if(state.tool === 'eraser'){ erasing = []; eraseAt(e); }
+    else if(state.tool === 'laser'){ moveLaser(e); }
+  });
+  canvas.addEventListener('pointermove', function(e){
+    if(!state.open) return;
+    // Kalemin silgi ucu hareket sırasında ayrıca bildiriliyorsa silmeyi sürdür.
+    if(e.pointerType === 'eraser' ||
+       (e.pointerType === 'pen' && (e.buttons & 32) === 32)){
+      if(state.tool !== 'eraser'){ state.tool = 'eraser'; applyUI(); }
+    }
+    if(state.tool === 'laser'){ moveLaser(e); return; }
+    if(cur){ cur.points.push(pt(e)); schedule(); }
+    else if(erasing){ eraseAt(e); }
+  });
+  function endStroke(){
+    if(cur){ arr(hist, key()).push({type:'add', stroke:cur}); cur = null; }
+    if(erasing){ if(erasing.length) arr(hist, key()).push({type:'remove', list:erasing}); erasing = null; }
+    if(state.tool === 'laser') laser.style.display = 'none';
+  }
+  canvas.addEventListener('pointerup', endStroke);
+  canvas.addEventListener('pointercancel', endStroke);
+  canvas.addEventListener('pointerleave', function(){ if(state.tool === 'laser') laser.style.display = 'none'; });
+  function moveLaser(e){ laser.style.display = 'block'; laser.style.left = e.clientX + 'px'; laser.style.top = e.clientY + 'px'; }
+
+  canvas.addEventListener('wheel', function(e){
+    var s = slideEl(); if(s && !state.boardOn){ s.scrollTop += e.deltaY; schedule(); }
+    e.preventDefault();
+  }, { passive:false });
+  Array.prototype.forEach.call(document.querySelectorAll('.slide'), function(s){ s.addEventListener('scroll', schedule); });
+
+  function undo(){
+    var h = arr(hist, key()), a = h.pop(); if(!a) return;
+    var list = arr(store, key());
+    if(a.type === 'add'){ var i = list.indexOf(a.stroke); if(i > -1) list.splice(i,1); }
+    else { a.list.forEach(function(s){ list.push(s); }); }
+    redraw();
+  }
+  function clearInk(){
+    var list = arr(store, key()); if(!list.length) return;
+    arr(hist, key()).push({type:'clear', list:list.splice(0, list.length)}); redraw();
+  }
+
+  // ---- colour palette (12 presets + free colour picker) ----
+  COLORS.forEach(function(c, i){
+    var b = document.createElement('button');
+    b.className = 'pt-color'; b.setAttribute('data-color', c[0]); b.style.background = c[0];
+    b.title = c[1] + (i < 10 ? ' (' + ((i + 1) % 10) + ')' : '');
+    b.addEventListener('click', function(){ pickColor(c[0]); });
+    colorsBox.appendChild(b);
+  });
+  customWrap = document.createElement('label'); customWrap.className = 'pt-custom'; customWrap.title = 'İstediğin rengi seç';
+  customInput = document.createElement('input'); customInput.type = 'color'; customInput.value = '#FBBF24';
+  customInput.addEventListener('input', function(){ customWrap.style.background = customInput.value; pickColor(customInput.value); });
+  customWrap.appendChild(customInput); colorsBox.appendChild(customWrap);
+
+  function pickColor(c){ state.color = c; if(state.tool !== 'highlighter') state.tool = 'pen'; if(!state.open) state.open = true; applyUI(); }
+  function isPreset(c){ return COLORS.some(function(p){ return p[0].toLowerCase() === c.toLowerCase(); }); }
+
+  function applyUI(){
+    var drawing = state.open && state.tool !== 'pointer';
+    canvas.classList.toggle('on', drawing);
+    canvas.classList.toggle('t-eraser', state.tool === 'eraser');
+    canvas.classList.toggle('t-laser', state.tool === 'laser');
+    tb.classList.toggle('open', state.open);
+    toggleBtn.classList.toggle('active', state.open);
+    board.classList.toggle('on', state.boardOn);
+    Array.prototype.forEach.call(tb.querySelectorAll('[data-tool]'), function(b){ b.classList.toggle('active', b.getAttribute('data-tool') === state.tool); });
+    Array.prototype.forEach.call(tb.querySelectorAll('[data-color]'), function(b){ b.classList.toggle('active', b.getAttribute('data-color').toLowerCase() === state.color.toLowerCase()); });
+    customWrap.classList.toggle('active', !isPreset(state.color));
+    Array.prototype.forEach.call(tb.querySelectorAll('[data-size]'), function(b){ b.classList.toggle('active', +b.getAttribute('data-size') === state.size); });
+    document.getElementById('ptBoard').classList.toggle('active', state.boardOn);
+    document.getElementById('ptEye').classList.toggle('active', state.hidden);
+    if(state.tool !== 'laser') laser.style.display = 'none';
+    redraw();
+  }
+  function setTool(t){ state.tool = t; if(!state.open) state.open = true; applyUI(); }
+  function openPen(v){
+    state.open = v;
+    if(!v){ state.boardOn = false; }
+    if(v && state.tool === 'pointer') state.tool = 'pen';
+    if(v){ hint.classList.add('show'); setTimeout(function(){ hint.classList.remove('show'); }, 4500); }
+    applyUI();
+  }
+
+  toggleBtn.addEventListener('click', function(){ openPen(!state.open); });
+  Array.prototype.forEach.call(tb.querySelectorAll('[data-tool]'), function(b){ b.addEventListener('click', function(){ setTool(b.getAttribute('data-tool')); }); });
+  Array.prototype.forEach.call(tb.querySelectorAll('[data-size]'), function(b){ b.addEventListener('click', function(){ state.size = +b.getAttribute('data-size'); applyUI(); }); });
+  document.getElementById('ptUndo').addEventListener('click', undo);
+  document.getElementById('ptClear').addEventListener('click', clearInk);
+  document.getElementById('ptBoard').addEventListener('click', function(){ state.boardOn = !state.boardOn; applyUI(); });
+  document.getElementById('ptEye').addEventListener('click', function(){ state.hidden = !state.hidden; applyUI(); });
+  document.getElementById('ptClose').addEventListener('click', function(){ openPen(false); });
+
+  document.addEventListener('keydown', function(e){
+    var tag = (e.target && e.target.tagName) || '';
+    if(tag === 'INPUT' || tag === 'TEXTAREA') return;
+    var k = e.key.toLowerCase();
+    if((e.ctrlKey || e.metaKey) && k === 'z'){ if(state.open){ e.preventDefault(); undo(); } return; }
+    if(e.ctrlKey || e.metaKey || e.altKey) return;
+    if(k === 'd'){ openPen(!state.open); return; }
+    if(!state.open) return;
+    if(k === 'escape'){ openPen(false); }
+    else if(k === 'p') setTool('pen');
+    else if(k === 'h') setTool('highlighter');
+    else if(k === 'e') setTool('eraser');
+    else if(k === 'l') setTool('laser');
+    else if(k === 'v') setTool('pointer');
+    else if(k === 'b'){ state.boardOn = !state.boardOn; applyUI(); }
+    else if(k === 'c') clearInk();
+    else if(k.length === 1 && k >= '0' && k <= '9'){
+      var idx = k === '0' ? 9 : (+k - 1);
+      if(COLORS[idx]) pickColor(COLORS[idx][0]);
+    }
+    else if(k === '+' || k === '='){ state.size = Math.min(14, state.size + 2); applyUI(); }
+    else if(k === '-'){ state.size = Math.max(2, state.size - 2); applyUI(); }
+  });
+
+  new MutationObserver(function(){ redraw(); }).observe(document.getElementById('deck'), { attributes:true, subtree:true, attributeFilter:['class'] });
+  window.addEventListener('resize', resize);
+  resize(); applyUI();
+  window.__pen = { state:state, store:store, undo:undo, clearInk:clearInk, key:key };
+})();
+</script>
+</body>
+</html>
