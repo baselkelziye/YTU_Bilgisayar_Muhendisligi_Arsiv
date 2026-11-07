@@ -9,39 +9,40 @@
 * **Akademik Yıl:** 2020-2021
 * **Şube:** BLM2011 - 2
 
-Bu dizin, ilgili ders kayıtlarının altyazı özetlerini, çalışma notlarını ve PDF kaynaklarını içermektedir.
+Bu dizin, ilgili ders kayıtlarının altyazılarını, kısa notlarını ve genişletilmiş notlarını içermektedir.
+
+* **Kısa not:** Tekrar için. Dersin konuları, hocanın vurguları ve kısa tekrar maddeleri.
+* **Genişletilmiş not:** Dersi izlemeden öğrenmek için. Dersin anlatım akışını baştan sona, örnekleri ve soru-cevaplarıyla anlatır.
+* `altyazilar/`: ders kayıtlarının altyazıları (.srt). Notların PDF'leri `kisa_notlar/` ve `genisletilmis_notlar/` klasörlerinde, markdown kaynakları bu klasörlerin içindeki `markdown/` klasöründedir.
 
 ## 📚 Ders Müfredatı ve Belge Dizini
 
-Aşağıdaki tabloda her bir dersin konusu, kaynak markdown dosyası ve doğrudan indirilebilir PDF formatındaki derlenmiş halleri listelenmiştir. Ders numaraları, kayıt arşivindeki ders kaydı sıra numaralarıdır (hafta numarası değildir).
+Aşağıdaki tabloda her bir dersin konusu ile kısa ve genişletilmiş notlarının markdown ve PDF halleri listelenmiştir. Ders numaraları, kayıt arşivindeki ders kaydı sıra numaralarıdır (hafta numarası değildir).
 
-| Ders No | Ders İçeriği / Konu Başlıkları | Kaynak Notlar (Markdown) | Çalışma Dosyası (PDF) |
+| Ders No | Ders İçeriği / Konu Başlıkları | Kısa Not | Genişletilmiş Not |
 | :---: | :--- | :---: | :---: |
-| **Ders 1** | Tanışma, Dersin İşleyişi, Olasılığın Yorumları, Küme Teorisi ve Fonksiyonlar | [Özet](altyazi_ozetleri/ders_1_ozet.md) | [PDF (İndir)](ders_1_ozet.pdf) |
-| **Ders 2** | Sayılabilir Kümeler, Kuvvet Kümesi, Olasılık Aksiyomları ve Temel Olasılık Kuralları | [Özet](altyazi_ozetleri/ders_2_ozet.md) | [PDF (İndir)](ders_2_ozet.pdf) |
-| **Ders 3** | Birleşim Kuralı, Sürekli Uzaylar, Şartlı Olasılık, Bağımsızlık ve Toplam Olasılık Kuralı | [Özet](altyazi_ozetleri/ders_3_ozet.md) | [PDF (İndir)](ders_3_ozet.pdf) |
-| **Ders 4** | Bayes Kuralı, Zincir Kuralı, Güvenilirlik ve Sayma Yöntemleri | [Özet](altyazi_ozetleri/ders_4_ozet.md) | [PDF (İndir)](ders_4_ozet.pdf) |
-| **Ders 5** | Kesikli Rastgele Değişkenler, PMF ve CDF, Beklenen Değer, Varyans, Kovaryans ve Korelasyon | [Özet](altyazi_ozetleri/ders_5_ozet.md) | [PDF (İndir)](ders_5_ozet.pdf) |
-| **Ders 6** | Birleşik Dağılım Örneği, Chebyshev Eşitsizliği, Bernoulli ve Binom Dağılımları | [Özet](altyazi_ozetleri/ders_6_ozet.md) | [PDF (İndir)](ders_6_ozet.pdf) |
-| **Ders 7** | Vize Oturumu (Kısa Kayıt) | [Özet](altyazi_ozetleri/ders_7_ozet.md) | [PDF (İndir)](ders_7_ozet.pdf) |
-| **Ders 8** | Geometrik, Negatif Binom ve Poisson Dağılımları; Sürekli Dağılımlar: Düzgün, Üstel, Gama ve Normal | [Özet](altyazi_ozetleri/ders_8_ozet.md) | [PDF (İndir)](ders_8_ozet.pdf) |
-| **Ders 9** | Merkezi Limit Teoremi, Süreklilik Düzeltmesi ve İstatistiğe Giriş: Örneklem Ortalaması, Medyan ve Kantiller | [Özet](altyazi_ozetleri/ders_9_ozet.md) | [PDF (İndir)](ders_9_ozet.pdf) |
-| **Ders 10** | Çeyrekler, Örneklem Varyansı, Standart Hata, IQR ile Aykırı Değerler ve Histogram | [Özet](altyazi_ozetleri/ders_10_ozet.md) | [PDF (İndir)](ders_10_ozet.pdf) |
-| **Ders 11** | İkinci Vize Oturumu (Konu Anlatımı Yok) | [Özet](altyazi_ozetleri/ders_11_ozet.md) | [PDF (İndir)](ders_11_ozet.pdf) |
-| **Ders 12** | Histogram Şekilleri, Kutu, Saçılım ve Zaman Grafikleri; Momentler ve En Çok Olabilirlik Yöntemleri | [Özet](altyazi_ozetleri/ders_12_ozet.md) | [PDF (İndir)](ders_12_ozet.pdf) |
-| **Ders 13** | Standart Hatanın Tahmini, Güven Aralıkları ve Final Bilgilendirmesi | [Özet](altyazi_ozetleri/ders_13_ozet.md) | [PDF (İndir)](ders_13_ozet.pdf) |
+| **Ders 1** | Olasılığın Yorumları, Küme Teorisi ve Fonksiyonlar | [Markdown](kisa_notlar/markdown/ders_1_ozet.md) · [PDF](kisa_notlar/ders_1_ozet.pdf) | [Markdown](genisletilmis_notlar/markdown/ders_1_genisletilmis.md) · [PDF](genisletilmis_notlar/ders_1_genisletilmis.pdf) |
+| **Ders 2** | Sayılabilir Kümeler, Kuvvet Kümesi, Olasılık Aksiyomları ve Temel Olasılık Kuralları | [Markdown](kisa_notlar/markdown/ders_2_ozet.md) · [PDF](kisa_notlar/ders_2_ozet.pdf) | [Markdown](genisletilmis_notlar/markdown/ders_2_genisletilmis.md) · [PDF](genisletilmis_notlar/ders_2_genisletilmis.pdf) |
+| **Ders 3** | Birleşim Kuralı, Sürekli Uzaylar, Şartlı Olasılık, Bağımsızlık ve Toplam Olasılık Kuralı | [Markdown](kisa_notlar/markdown/ders_3_ozet.md) · [PDF](kisa_notlar/ders_3_ozet.pdf) | [Markdown](genisletilmis_notlar/markdown/ders_3_genisletilmis.md) · [PDF](genisletilmis_notlar/ders_3_genisletilmis.pdf) |
+| **Ders 4** | Bayes Kuralı, Zincir Kuralı, Güvenilirlik ve Sayma Yöntemleri | [Markdown](kisa_notlar/markdown/ders_4_ozet.md) · [PDF](kisa_notlar/ders_4_ozet.pdf) | [Markdown](genisletilmis_notlar/markdown/ders_4_genisletilmis.md) · [PDF](genisletilmis_notlar/ders_4_genisletilmis.pdf) |
+| **Ders 5** | Kesikli Rastgele Değişkenler, PMF ve CDF, Beklenen Değer, Varyans, Kovaryans ve Korelasyon | [Markdown](kisa_notlar/markdown/ders_5_ozet.md) · [PDF](kisa_notlar/ders_5_ozet.pdf) | [Markdown](genisletilmis_notlar/markdown/ders_5_genisletilmis.md) · [PDF](genisletilmis_notlar/ders_5_genisletilmis.pdf) |
+| **Ders 6** | Birleşik Dağılım Örneği, Chebyshev Eşitsizliği, Bernoulli ve Binom Dağılımları | [Markdown](kisa_notlar/markdown/ders_6_ozet.md) · [PDF](kisa_notlar/ders_6_ozet.pdf) | [Markdown](genisletilmis_notlar/markdown/ders_6_genisletilmis.md) · [PDF](genisletilmis_notlar/ders_6_genisletilmis.pdf) |
+| **Ders 7** | Vize Oturumu (Kısa Kayıt) | [Markdown](kisa_notlar/markdown/ders_7_ozet.md) · [PDF](kisa_notlar/ders_7_ozet.pdf) | — |
+| **Ders 8** | Geometrik, Negatif Binom ve Poisson Dağılımları; Sürekli Dağılımlar: Düzgün, Üstel, Gama ve Normal | [Markdown](kisa_notlar/markdown/ders_8_ozet.md) · [PDF](kisa_notlar/ders_8_ozet.pdf) | [Markdown](genisletilmis_notlar/markdown/ders_8_genisletilmis.md) · [PDF](genisletilmis_notlar/ders_8_genisletilmis.pdf) |
+| **Ders 9** | Merkezi Limit Teoremi, Süreklilik Düzeltmesi ve İstatistiğe Giriş: Örneklem Ortalaması, Medyan ve Kantiller | [Markdown](kisa_notlar/markdown/ders_9_ozet.md) · [PDF](kisa_notlar/ders_9_ozet.pdf) | [Markdown](genisletilmis_notlar/markdown/ders_9_genisletilmis.md) · [PDF](genisletilmis_notlar/ders_9_genisletilmis.pdf) |
+| **Ders 10** | Çeyrekler, Örneklem Varyansı, Standart Hata, IQR ile Aykırı Değerler ve Histogram | [Markdown](kisa_notlar/markdown/ders_10_ozet.md) · [PDF](kisa_notlar/ders_10_ozet.pdf) | [Markdown](genisletilmis_notlar/markdown/ders_10_genisletilmis.md) · [PDF](genisletilmis_notlar/ders_10_genisletilmis.pdf) |
+| **Ders 11** | İkinci Vize Oturumu (Konu Anlatımı Yok) | [Markdown](kisa_notlar/markdown/ders_11_ozet.md) · [PDF](kisa_notlar/ders_11_ozet.pdf) | — |
+| **Ders 12** | Histogram Şekilleri, Kutu, Saçılım ve Zaman Grafikleri; Momentler ve En Çok Olabilirlik Yöntemleri | [Markdown](kisa_notlar/markdown/ders_12_ozet.md) · [PDF](kisa_notlar/ders_12_ozet.pdf) | [Markdown](genisletilmis_notlar/markdown/ders_12_genisletilmis.md) · [PDF](genisletilmis_notlar/ders_12_genisletilmis.pdf) |
+| **Ders 13** | Standart Hatanın Tahmini ve Güven Aralıkları | [Markdown](kisa_notlar/markdown/ders_13_ozet.md) · [PDF](kisa_notlar/ders_13_ozet.pdf) | [Markdown](genisletilmis_notlar/markdown/ders_13_genisletilmis.md) · [PDF](genisletilmis_notlar/ders_13_genisletilmis.pdf) |
 
 > [!NOTE]
 > Bu şubede ders İngilizce anlatılmıştır. 7 ve 11 numaralı kayıtlar vize oturumlarıdır. 29 Ekim 2020 haftası Cumhuriyet Bayramı'dır.
 
 ## 🎯 Derslerin Detaylı Özetleri ve Kazanımları
 
-### 🔹 Ders 1: Tanışma, Dersin İşleyişi, Olasılığın Yorumları, Küme Teorisi ve Fonksiyonlar
+### 🔹 Ders 1: Olasılığın Yorumları, Küme Teorisi ve Fonksiyonlar
 * **Genel Konular:**
-  - Dersin tarihi 8 Ekim 2020 Perşembe. Ders Zoom üzerinden, İngilizce yapıldı.
-    - Asıl ders yaklaşık 05:00'te başlar. İlk dakikalar selamlaşma ve bekleme kısmıdır.
-  - Dersin işleyişi
-    - Ofis saati: Çarşamba 15:00-17:00. Bu saatler uymazsa e-posta ile ya da Calendly üzerinden görüşme talebi gönderilebilir.
+  - Dersin amacı: belirsizlik (uncertainty) içeren problemleri olasılık ve istatistik modelleriyle modellemek ve çözmek.
   - Kaynak kitaplar
     - Michael Baron, *Probability and Statistics for Computer Scientists*, 2. baskı.
   - Dönem planı (taslak)
@@ -50,22 +51,18 @@ Aşağıdaki tabloda her bir dersin konusu, kaynak markdown dosyası ve doğruda
   - Küme teorisi tekrarı (sets)
   - Fonksiyonlar (functions), kardinalite (cardinality), sonlu ve sonsuz kümeler
 * **Hocanın Vurgusu:**
-  - Hoca slayt, PPT veya ders notu paylaşmayacak.
-    - Kâğıt kalem alın ve kendi notunuzu tutun. Hoca bunu dersin sonunda Türkçe olarak da tekrarladı.
-  - Not dağılımı: 2 quiz toplam 20 puan, vize 40 puan, final 40 puan.
-    - Quiz tarihleri önceden belli değil. Quizden önce duyurulacak.
-  - İngilizce okuyup anlayabilmelisiniz.
-    - Öğrenilecek şeylerin çoğu önce İngilizce çıkıyor. Matematik kitabını okuyamıyorsanız İngilizceye ayrıca zaman ayırın.
   - Olasılık problemlerinde ilk iş örneklem uzayını (sample space) yazmaktır.
   - Olasılıklar kümeler üzerinden hesaplanır.
     - "1'in olasılığı" dediğimizde aslında tek elemanlı $\{1\}$ kümesinin olasılığından bahsediyoruz.
+  - Yapay zekâ olasılık üzerine kuruludur.
+    - Yapay zekâyı anlamak için olasılık bilmek gerekir.
+  - İki kitabın notasyonları farklıdır, ikisini de bilin.
+    - Örneklem uzayı: Baron'da $\Omega$, Pishro-Nik'te $S$. <!-- BELİRSİZ: Altyazıda Baron'un simgesi "Sigma" olarak geçiyor (01:20:17, 01:21:06). Simge büyük olasılıkla Omega'dır; kareyle doğrulanmadı. -->
+  - Baron'un fark işaretindeki çizgi sola yatıktır ($\setminus$).
+    - Dik çizgi veya bölü işareti gibi yazmayın.
 
 ### 🔹 Ders 2: Sayılabilir Kümeler, Kuvvet Kümesi, Olasılık Aksiyomları ve Temel Olasılık Kuralları
 * **Genel Konular:**
-  - Dersin tarihi 15 Ekim 2020 Perşembe. Ders Zoom üzerinden, İngilizce yapıldı.
-    - Asıl ders yaklaşık 05:20'de başlar. İlk dakikalar görüntü ayarı ve bekleme kısmıdır.
-  - Dersin işleyişi (tekrar)
-    - Ofis saati Çarşamba 15:00-17:00. Uymazsa yarım saatlik Calendly görüşme talebi gönderebilirsiniz.
   - Kümeler konusunun tekrarı
   - Kümelerde yeni kavramlar
     - Fark için $A \setminus B = A \cap B^c$ kuralı.
@@ -74,21 +71,19 @@ Aşağıdaki tabloda her bir dersin konusu, kaynak markdown dosyası ve doğruda
   - Olasılık hesaplama kuralları
     - Eşit olasılıklı çıktılar.
 * **Hocanın Vurgusu:**
-  - USİS e-postasını alamıyorsanız aynı gün YTÜ bilgi işlem birimiyle görüşün.
-    - Duyurular bu sistemden yapılacak.
   - Olaylar (events) birer kümedir.
     - Kümelerde öğrendiğimiz her şey (birleşim, kesişim, bölüntü, kapsayan kümeler) olaylar için de geçerlidir.
   - Aksiyomlar çok önemlidir.
     - Bunun iki nedeni var:
   - Şartlı olasılık (conditional probability) da aksiyomlara uyar.
-    - Bu yüzden $P(A^c) = 1 - P(A)$ kuralından doğrudan $P(A^c \mid B) = 1 - P(A \mid B)$ yazılabilir. Ayrıca ispat gerekmez.
+    - Dik çubuk ($\mid$) "$B$ olduysa $A$'nın olma olasılığı" diye okunur. Hocanın örneği: $B$ yola vaktinde çıkmak, $A$ gideceğiniz yere vaktinde varmak (01:47:56-01:48:23).
   - Matematikte ispatlamadığınız bir kuralı kullanamazsınız.
     - Bir kuralı bir kez ispatladıktan sonra o kural "alet çantanıza" girer. Sonraki ispatlarda kullanabilirsiniz.
+  - Kitaplar arasındaki notasyon farkları:
+    - Fark: Pishro-Nik'te $A - B$, Baron'da $A \setminus B$.
 
 ### 🔹 Ders 3: Birleşim Kuralı, Sürekli Uzaylar, Şartlı Olasılık, Bağımsızlık ve Toplam Olasılık Kuralı
 * **Genel Konular:**
-  - Dersin tarihi 22 Ekim 2020 Perşembe. Ders Zoom üzerinden yapıldı.
-    - Asıl ders yaklaşık 05:00'te başlar.
   - Önceki dersin tekrarı (Türkçe)
     - Üç aksiyom, eşit olasılıklı çıktılar, tümleyen ve boş küme kuralları.
   - Yeni olasılık kuralları
@@ -112,19 +107,17 @@ Aşağıdaki tabloda her bir dersin konusu, kaynak markdown dosyası ve doğruda
 
 ### 🔹 Ders 4: Bayes Kuralı, Zincir Kuralı, Güvenilirlik ve Sayma Yöntemleri
 * **Genel Konular:**
-  - Dersin tarihi 5 Kasım 2020 Perşembe. Ders Zoom üzerinden, İngilizce yapıldı.
-    - Asıl ders yaklaşık 00:04:50'de başlar.
   - Toplam olasılık kuralı (law of total probability) tekrarı ve torba-madeni para örneği
-    - Torbada 3 hileli madeni para var. Yazı (heads) gelme olasılıkları 0.9, 0.6 ve 0.3.
+    - Torbada 3 hileli madeni para var. Tura (heads) gelme olasılıkları 0.9, 0.6 ve 0.3.
   - Bayes kuralı (Bayes' rule)
     - Şartlı olasılığın tanımından türetildi.
   - Şartlı bağımsızlık (conditional independence)
   - Zincir kuralı (chain rule)
     - İki ve üç olay için yazıldı. Şartlı hâli de gösterildi.
-  - Quiz duyurusu ve yeni çevrim içi sınav sistemi denemesi
-    - Öğrenciler online.yildiz.edu.tr'de 2 soruluk deneme sınavına girdi. Not verilmedi.
   - Güvenilirlik (reliability) problemleri
     - Yedekli sabit disk örneği.
+  - Sayma (counting)
+    - Eşit olasılıklı çıktılarda $P(A) = \frac{|A|}{|S|}$. Bu yüzden kümenin elemanlarını saymak gerekir.
 * **Hocanın Vurgusu:**
   - Bayes kuralı çok önemli.
     - Sınavda neredeyse kesin çıkacak.
@@ -134,13 +127,11 @@ Aşağıdaki tabloda her bir dersin konusu, kaynak markdown dosyası ve doğruda
     - Tümleyenden gidin.
   - Formülleri ezberlemek yerine mantığı hatırlayın.
     - Hoca $n^k$ gibi formülleri hatırlamadığını, mantıktan (çarpma ilkesi) yeniden kurduğunu söyledi.
-  - Quiz duyurusu:
-    - Bir hafta sonra, üçüncü ders saatinde (15:00) yapılacak. En fazla 50 dakika.
+  - Çalışma kaynağı: Baron'un kitabında Bölüm 2 bitti.
+    - Bölümün sonundaki problemleri çözün. Pishro-Nik'te Bölüm 1 ve 2.
 
 ### 🔹 Ders 5: Kesikli Rastgele Değişkenler, PMF ve CDF, Beklenen Değer, Varyans, Kovaryans ve Korelasyon
 * **Genel Konular:**
-  - Dersin tarihi 12 Kasım 2020 Perşembe. Ders Zoom üzerinden, İngilizce yapıldı.
-    - Asıl ders yaklaşık 00:05:20'de başlar.
   - Kesikli rastgele değişkenler (discrete random variables)
     - Rastgele değişken, deneyin çıktısını bir sayıya götüren fonksiyondur.
   - Olasılık kütle fonksiyonu (PMF) ve birikimli dağılım fonksiyonu (CDF)
@@ -154,7 +145,7 @@ Aşağıdaki tabloda her bir dersin konusu, kaynak markdown dosyası ve doğruda
   - Kovaryans (covariance) ve korelasyon (correlation)
     - Varyans, kovaryans ve korelasyonun özellikleri.
 * **Hocanın Vurgusu:**
-  - Rastgele değişkenin değeri mutlaka bir sayıdır. "Yağmur" ya da "yazı" olamaz.
+  - Rastgele değişkenin değeri mutlaka bir sayıdır. "Yağmur" ya da "tura" olamaz.
   - "Dağılımı bulun" denince PMF ya da CDF istenir.
     - Biri bilinirse diğeri bulunur.
   - PMF yalnızca $R_X$'teki noktalarda sıfırdan farklıdır.
@@ -162,17 +153,13 @@ Aşağıdaki tabloda her bir dersin konusu, kaynak markdown dosyası ve doğruda
   - $E[XY] = E[X]\,E[Y]$ ve $\mathrm{Var}(X+Y) = \mathrm{Var}(X) + \mathrm{Var}(Y)$ yalnızca bağımsızlık koşuluyla geçerlidir.
     - Formüldeki "eğer"i unutmayın.
   - Beklenen değer, varyans ve kovaryansın alternatif formüllerini evde kendiniz ispatlayın.
-    - İnternete bakmadan önce deneyin.
 
 ### 🔹 Ders 6: Birleşik Dağılım Örneği, Chebyshev Eşitsizliği, Bernoulli ve Binom Dağılımları
 * **Genel Konular:**
-  - Dersin tarihi 19 Kasım 2020 Perşembe. Ders Zoom üzerinden, İngilizce yapıldı.
-    - Asıl ders yaklaşık 00:02:30'da başlar.
   - Önceki dersin tekrarı
     - PMF, CDF, rastgele vektörler, marjinal dağılım, bağımsızlık, beklenen değer, varyans, kovaryans, korelasyon ve özellikleri.
   - Sayısal örnek: İki modüllü programda hata sayıları
     - Birleşik dağılım tablosu, marjinal dağılımlar, bağımsızlık kontrolü, varyanslar ve korelasyon katsayısı.
-  - Vize duyurusu
   - Chebyshev eşitsizliği (Chebyshev's inequality)
     - Yazılımdaki hata sayısı örneği.
   - Yaygın kesikli dağılımlara giriş
@@ -180,13 +167,11 @@ Aşağıdaki tabloda her bir dersin konusu, kaynak markdown dosyası ve doğruda
   - Quiz 1 çözümü (ders sonunda, Türkçe)
 * **Hocanın Vurgusu:**
   - Cevap yazma kuralı: Hoca dört aşamalı cevap istiyor.
-    - Bu dört aşamayı görmezse puan vermiyor.
+    - 1) Aranan şeyi yazın. 2) Denklemi yazın. 3) Denklemde sayıları yerine koyun. 4) Sonucu yazın.
   - Bağımsızlık tüm $x, y$ değerleri için sağlanmalı.
     - Bağımsız olmadığını göstermek için tek bir karşı örnek yeter.
   - Chebyshev eşitsizliği her rastgele değişken için geçerlidir.
     - Yalnızca ortalama ve varyans bilindiğinde olasılığa sınır koyar. PMF biliniyorsa daha iyi sonuç alınır.
-  - Vize duyurusu:
-    - Bir hafta sonra, aynı saatte. Çevrim içi test olarak online.yildiz.edu.tr'de yapılacak.
 
 ### 🔹 Ders 7: Vize Oturumu (Kısa Kayıt)
 * **Genel Konular:**
@@ -200,16 +185,12 @@ Aşağıdaki tabloda her bir dersin konusu, kaynak markdown dosyası ve doğruda
 
 ### 🔹 Ders 8: Geometrik, Negatif Binom ve Poisson Dağılımları; Sürekli Dağılımlar: Düzgün, Üstel, Gama ve Normal
 * **Genel Konular:**
-  - Dersin tarihi 3 Aralık 2020 Perşembe. Ders Zoom üzerinden, İngilizce işlendi.
-    - Asıl anlatım yaklaşık 00:03'te başlar. Duyurular Türkçe de tekrarlandı.
   - Kesikli dağılım aileleri (devam)
     - Geometrik dağılım (geometric distribution)
   - Sürekli dağılımlara giriş (continuous distributions)
     - Olasılık yoğunluk fonksiyonu (probability density function, PDF) ve kümülatif dağılım fonksiyonu (CDF)
   - Sürekli dağılım aileleri
     - Düzgün dağılım (uniform distribution) ve standart düzgün dağılım
-  - Sınav duyuruları
-    - İkinci vize 17 Aralık 2020'de. İkinci quiz sürpriz olacak.
 * **Hocanın Vurgusu:**
   - Poisson problemlerinde $\lambda$'yı sorulan zaman aralığına göre ayarlayın.
     - Günde ortalama 10 olay varsa 2 günde $\lambda = 20$ olur. Hoca örneği bu uyarı için seçtiğini söyledi.
@@ -223,8 +204,6 @@ Aşağıdaki tabloda her bir dersin konusu, kaynak markdown dosyası ve doğruda
 
 ### 🔹 Ders 9: Merkezi Limit Teoremi, Süreklilik Düzeltmesi ve İstatistiğe Giriş: Örneklem Ortalaması, Medyan ve Kantiller
 * **Genel Konular:**
-  - Dersin tarihi 10 Aralık 2020 Perşembe. Ders Zoom üzerinden, İngilizce işlendi.
-    - Asıl anlatım yaklaşık 00:06'da başlar. Öğrenci soruları üzerine bazı kısımlar Türkçe tekrar edildi.
   - Merkezi limit teoremi (central limit theorem, CLT)
     - Bağımsız ve özdeş dağılmış (i.i.d.) değişkenlerin toplamı
   - Baron'un kitabında 4. bölüm (sürekli dağılımlar) bitti. Olasılık kısmı tamamlandı.
@@ -232,7 +211,6 @@ Aşağıdaki tabloda her bir dersin konusu, kaynak markdown dosyası ve doğruda
     - Popülasyon (population), parametre, örneklem (sample), örnekleme (sampling)
   - Betimleyici istatistikler (descriptive statistics)
     - Örneklem ortalaması (sample mean): beklenen değeri, varyansı, dağılımı
-  - İkinci vize duyurusu (17 Aralık 2020)
 * **Hocanın Vurgusu:**
   - CLT pratikte $n \ge 30$ ise kullanılır.
     - Teorem aslında $n \to \infty$ için geçerlidir. Bu yüzden CLT ile yapılan hesap yaklaşık bir hesaptır.
@@ -246,8 +224,6 @@ Aşağıdaki tabloda her bir dersin konusu, kaynak markdown dosyası ve doğruda
 
 ### 🔹 Ders 10: Çeyrekler, Örneklem Varyansı, Standart Hata, IQR ile Aykırı Değerler ve Histogram
 * **Genel Konular:**
-  - Dersin tarihi 17 Aralık 2020 Perşembe. Ders Zoom üzerinden, İngilizce işlendi.
-    - Kaydın ilk yarım saati quiz oturumudur. Öğrenciler Online YıldızEdu'da 30 dakikalık quiz'e girdi.
   - Önceki dersin tekrarı: örneklem ortalaması, medyan, kantiller
   - Kantillerle ilgili diğer adlar
     - Yüzdelikler (percentiles)
@@ -283,8 +259,6 @@ Aşağıdaki tabloda her bir dersin konusu, kaynak markdown dosyası ve doğruda
 
 ### 🔹 Ders 12: Histogram Şekilleri, Kutu, Saçılım ve Zaman Grafikleri; Momentler ve En Çok Olabilirlik Yöntemleri
 * **Genel Konular:**
-  - Dersin tarihi 31 Aralık 2020 Perşembe. Ders Zoom üzerinden işlendi.
-    - Önceki dersin tekrarı Türkçe, geri kalanı İngilizce anlatıldı.
   - Tekrar: histogram ve göreli frekans histogramı
   - Sık görülen histogram şekilleri
     - Düzgün, üstel ve normal görünümlü histogramlar
@@ -292,6 +266,8 @@ Aşağıdaki tabloda her bir dersin konusu, kaynak markdown dosyası ve doğruda
   - Saçılım grafiği (scatter plot): antivirüs örneği
   - Zaman grafiği (time plot): dünya nüfusu örneği
   - Baron'un kitabında 8. bölüm bitti.
+  - 9. bölüme giriş: istatistiksel çıkarım (statistical inference) ve parametre tahmini (parameter estimation)
+    - Momentler yöntemi (method of moments) ve gama örneği
 * **Hocanın Vurgusu:**
   - Göreli frekans histogramı, gözleme dayalı (empirical) bir olasılık dağılımı verir.
     - Örnek: CPU verisinde bir gözlemin 0–14 aralığında olma olasılığı yaklaşık $1/30$'dur.
@@ -302,16 +278,14 @@ Aşağıdaki tabloda her bir dersin konusu, kaynak markdown dosyası ve doğruda
   - Momentler yöntemi çok kolaydır: kaç bilinmeyen varsa o kadar moment eşitliği yazıp çözün.
   - Momentler yöntemiyle bir kez genel formül çıkarırsanız aynı aileden her veri için tekrar kullanabilirsiniz.
 
-### 🔹 Ders 13: Standart Hatanın Tahmini, Güven Aralıkları ve Final Bilgilendirmesi
+### 🔹 Ders 13: Standart Hatanın Tahmini ve Güven Aralıkları
 * **Genel Konular:**
-  - Dersin tarihi 7 Ocak 2021 Perşembe. Dönemin son dersidir. Ders Zoom üzerinden işlendi.
-    - Önceki dersin tekrarı Türkçe, yeni konular İngilizce anlatıldı. Final duyuruları Türkçe yapıldı.
   - Tekrar: parametre tahmini, momentler yöntemi, en çok olabilirlik yöntemi
   - Standart hatanın tahmini (estimation of standard errors)
     - Poisson dağılımında $\hat{\lambda} = \bar{X}$ için iki farklı standart hata tahmini
   - Güven aralıkları (confidence intervals)
     - Nokta tahmin edicileri (point estimators) ve aralık tahmini
-  - Final sınavı duyuruları ve kitap önerisi
+  - Kitap önerisi
 * **Hocanın Vurgusu:**
   - Likelihood'u maksimize etmek için logaritmasını maksimize edin.
     - Çözümler aynı noktada çıkar.
