@@ -9,43 +9,47 @@
 * **Akademik Yıl:** 2020-2021
 * **Şube:** BLM2512 - 1
 
-Bu dizin, ilgili ders kayıtlarının altyazı özetlerini, çalışma notlarını ve PDF kaynaklarını içermektedir.
+Bu dizin, ilgili ders kayıtlarının altyazılarını, kısa notlarını ve genişletilmiş notlarını içermektedir.
+
+* **Kısa not:** Tekrar için. Dersin konuları, hocanın vurguları ve kısa tekrar maddeleri.
+* **Genişletilmiş not:** Dersi izlemeden öğrenmek için. Dersin anlatım akışını baştan sona, örnekleri ve soru-cevaplarıyla anlatır.
+* `altyazilar/`: ders kayıtlarının altyazıları (.srt). Notların PDF'leri `kisa_notlar/` ve `genisletilmis_notlar/` klasörlerinde, markdown kaynakları bu klasörlerin içindeki `markdown/` klasöründedir.
 
 ## 📚 Ders Müfredatı ve Belge Dizini
 
-Aşağıdaki tabloda her bir dersin konusu, kaynak markdown dosyası ve doğrudan indirilebilir PDF formatındaki derlenmiş halleri listelenmiştir. Ders numaraları, kayıt arşivindeki ders kaydı sıra numaralarıdır (hafta numarası değildir).
+Aşağıdaki tabloda her bir dersin konusu ile kısa ve genişletilmiş notlarının markdown ve PDF halleri listelenmiştir. Ders numaraları, kayıt arşivindeki ders kaydı sıra numaralarıdır (hafta numarası değildir).
 
-| Ders No | Ders İçeriği / Konu Başlıkları | Kaynak Notlar (Markdown) | Çalışma Dosyası (PDF) |
+| Ders No | Ders İçeriği / Konu Başlıkları | Kısa Not | Genişletilmiş Not |
 | :---: | :--- | :---: | :---: |
-| **Ders 1** | Derse Giriş, Algoritma Tasarım İlkeleri, Doğrusal Arama, Eratosthenes Kalburu ve Sıralı Dizilerin Birleştirilmesi | [Özet](altyazi_ozetleri/ders_1_ozet.md) | [PDF (İndir)](ders_1_ozet.pdf) |
-| **Ders 2** | Doğrusal Yoklamalı Hash Tablosunda Ortalama Yerleşme Adımının Hesaplanması | [Özet](altyazi_ozetleri/ders_2_ozet.md) | [PDF (İndir)](ders_2_ozet.pdf) |
-| **Ders 3** | Basit Sıralama Algoritmaları ve Karmaşıklık Analizi | [Özet](altyazi_ozetleri/ders_3_ozet.md) | [PDF (İndir)](ders_3_ozet.pdf) |
-| **Ders 4** | Shell Sort Ayrıntıları ve Sıralama Algoritması Seçimi | [Özet](altyazi_ozetleri/ders_4_ozet.md) | [PDF (İndir)](ders_4_ozet.pdf) |
-| **Ders 5** | Algoritma Analizi, Asimptotik Gösterim ve İkili Arama | [Özet](altyazi_ozetleri/ders_5_ozet.md) | [PDF (İndir)](ders_5_ozet.pdf) |
-| **Ders 6** | Quiz Günü: Yer Karmaşıklığı Hatırlatması | [Özet](altyazi_ozetleri/ders_6_ozet.md) | [PDF (İndir)](ders_6_ozet.pdf) |
-| **Ders 7** | Bağlı Listeye Giriş: Düğüm Oluşturma, Ekleme ve Yazdırma | [Özet](altyazi_ozetleri/ders_7_ozet.md) | [PDF (İndir)](ders_7_ozet.pdf) |
-| **Ders 8** | Bağlı Listeden Silme, Dairesel ve Çift Yönlü Bağlı Listeler | [Özet](altyazi_ozetleri/ders_8_ozet.md) | [PDF (İndir)](ders_8_ozet.pdf) |
-| **Ders 9** | Yığın, İnfix-Postfix Dönüşümü ve Kuyruk | [Özet](altyazi_ozetleri/ders_9_ozet.md) | [PDF (İndir)](ders_9_ozet.pdf) |
-| **Ders 10** | Ödev Soru-Cevap Saati | [Özet](altyazi_ozetleri/ders_10_ozet.md) | [PDF (İndir)](ders_10_ozet.pdf) |
-| **Ders 11** | Bağlı Liste ile Kuyruk, Ağaç Terminolojisi ve İkili Ağaçta Gezinme | [Özet](altyazi_ozetleri/ders_11_ozet.md) | [PDF (İndir)](ders_11_ozet.pdf) |
-| **Ders 12** | Quiz ve Ödev Çözümleri: Renk Histogramı, Dinamik Bellek ve Yığınla Kelime Çözme | [Özet](altyazi_ozetleri/ders_12_ozet.md) | [PDF (İndir)](ders_12_ozet.pdf) |
-| **Ders 13** | İkili Arama Ağacı, Heap Ağacı ve Heap Sort | [Özet](altyazi_ozetleri/ders_13_ozet.md) | [PDF (İndir)](ders_13_ozet.pdf) |
-| **Ders 14** | Quiz Hataları, Yığınla Kuyruk ve First Child / Next Sibling Ağaç Gösterimi | [Özet](altyazi_ozetleri/ders_14_ozet.md) | [PDF (İndir)](ders_14_ozet.pdf) |
-| **Ders 17** | Heap İşlemleri, Öncelikli Kuyruk ve Huffman Kodlaması | [Özet](altyazi_ozetleri/ders_17_ozet.md) | [PDF (İndir)](ders_17_ozet.pdf) |
-| **Ders 18** | Ödev Çözümü Duyurusu | [Özet](altyazi_ozetleri/ders_18_ozet.md) | [PDF (İndir)](ders_18_ozet.pdf) |
-| **Ders 19** | Graflara Giriş, Komşuluk Matrisi ve Listesi, Prim ve Kruskal ile En Küçük Kapsayan Ağaç | [Özet](altyazi_ozetleri/ders_19_ozet.md) | [PDF (İndir)](ders_19_ozet.pdf) |
-| **Ders 20** | Böl ve Yönet Yaklaşımı, Merge Sort ve Quick Sort'a Giriş | [Özet](altyazi_ozetleri/ders_20_ozet.md) | [PDF (İndir)](ders_20_ozet.pdf) |
-| **Ders 21** | Quiz Günü | [Özet](altyazi_ozetleri/ders_21_ozet.md) | [PDF (İndir)](ders_21_ozet.pdf) |
-| **Ders 22** | Quiz Çözümleri, Böl ve Yönet, Quicksort ve Partition | [Özet](altyazi_ozetleri/ders_22_ozet.md) | [PDF (İndir)](ders_22_ozet.pdf) |
-| **Ders 23** | Ödev Değerlendirmesi Duyurusu | [Özet](altyazi_ozetleri/ders_23_ozet.md) | [PDF (İndir)](ders_23_ozet.pdf) |
-| **Ders 24** | Dizgi Arama: Kaba Kuvvet, Boyer-Moore ve Trie | [Özet](altyazi_ozetleri/ders_24_ozet.md) | [PDF (İndir)](ders_24_ozet.pdf) |
+| **Ders 1** | Algoritma Tasarım İlkeleri, Doğrusal Arama, Eratosthenes Kalburu ve Sıralı Dizilerin Birleştirilmesi | [Markdown](kisa_notlar/markdown/ders_1_ozet.md) · [PDF](kisa_notlar/ders_1_ozet.pdf) | [Markdown](genisletilmis_notlar/markdown/ders_1_genisletilmis.md) · [PDF](genisletilmis_notlar/ders_1_genisletilmis.pdf) |
+| **Ders 2** | Doğrusal Yoklamalı Hash Tablosunda Ortalama Yerleşme Adımının Hesaplanması | [Markdown](kisa_notlar/markdown/ders_2_ozet.md) · [PDF](kisa_notlar/ders_2_ozet.pdf) | [Markdown](genisletilmis_notlar/markdown/ders_2_genisletilmis.md) · [PDF](genisletilmis_notlar/ders_2_genisletilmis.pdf) |
+| **Ders 3** | Basit Sıralama Algoritmaları ve Karmaşıklık Analizi | [Markdown](kisa_notlar/markdown/ders_3_ozet.md) · [PDF](kisa_notlar/ders_3_ozet.pdf) | [Markdown](genisletilmis_notlar/markdown/ders_3_genisletilmis.md) · [PDF](genisletilmis_notlar/ders_3_genisletilmis.pdf) |
+| **Ders 4** | Shell Sort Ayrıntıları ve Sıralama Algoritması Seçimi | [Markdown](kisa_notlar/markdown/ders_4_ozet.md) · [PDF](kisa_notlar/ders_4_ozet.pdf) | [Markdown](genisletilmis_notlar/markdown/ders_4_genisletilmis.md) · [PDF](genisletilmis_notlar/ders_4_genisletilmis.pdf) |
+| **Ders 5** | Algoritma Analizi, Asimptotik Gösterim ve İkili Arama | [Markdown](kisa_notlar/markdown/ders_5_ozet.md) · [PDF](kisa_notlar/ders_5_ozet.pdf) | [Markdown](genisletilmis_notlar/markdown/ders_5_genisletilmis.md) · [PDF](genisletilmis_notlar/ders_5_genisletilmis.pdf) |
+| **Ders 6** | Yer Karmaşıklığı Hatırlatması (Kısa Kayıt) | [Markdown](kisa_notlar/markdown/ders_6_ozet.md) · [PDF](kisa_notlar/ders_6_ozet.pdf) | [Markdown](genisletilmis_notlar/markdown/ders_6_genisletilmis.md) · [PDF](genisletilmis_notlar/ders_6_genisletilmis.pdf) |
+| **Ders 7** | Bağlı Listeye Giriş: Düğüm Oluşturma, Ekleme ve Yazdırma | [Markdown](kisa_notlar/markdown/ders_7_ozet.md) · [PDF](kisa_notlar/ders_7_ozet.pdf) | [Markdown](genisletilmis_notlar/markdown/ders_7_genisletilmis.md) · [PDF](genisletilmis_notlar/ders_7_genisletilmis.pdf) |
+| **Ders 8** | Bağlı Listeden Silme, Dairesel ve Çift Yönlü Bağlı Listeler | [Markdown](kisa_notlar/markdown/ders_8_ozet.md) · [PDF](kisa_notlar/ders_8_ozet.pdf) | [Markdown](genisletilmis_notlar/markdown/ders_8_genisletilmis.md) · [PDF](genisletilmis_notlar/ders_8_genisletilmis.pdf) |
+| **Ders 9** | Yığın, İnfix-Postfix Dönüşümü ve Kuyruk | [Markdown](kisa_notlar/markdown/ders_9_ozet.md) · [PDF](kisa_notlar/ders_9_ozet.pdf) | [Markdown](genisletilmis_notlar/markdown/ders_9_genisletilmis.md) · [PDF](genisletilmis_notlar/ders_9_genisletilmis.pdf) |
+| **Ders 10** | Ödev Soru-Cevap Saati | [Markdown](kisa_notlar/markdown/ders_10_ozet.md) · [PDF](kisa_notlar/ders_10_ozet.pdf) | — |
+| **Ders 11** | Bağlı Liste ile Kuyruk, Ağaç Terminolojisi ve İkili Ağaçta Gezinme | [Markdown](kisa_notlar/markdown/ders_11_ozet.md) · [PDF](kisa_notlar/ders_11_ozet.pdf) | [Markdown](genisletilmis_notlar/markdown/ders_11_genisletilmis.md) · [PDF](genisletilmis_notlar/ders_11_genisletilmis.pdf) |
+| **Ders 12** | Quiz ve Ödev Çözümleri: Renk Histogramı, Dinamik Bellek ve Yığınla Kelime Çözme | [Markdown](kisa_notlar/markdown/ders_12_ozet.md) · [PDF](kisa_notlar/ders_12_ozet.pdf) | [Markdown](genisletilmis_notlar/markdown/ders_12_genisletilmis.md) · [PDF](genisletilmis_notlar/ders_12_genisletilmis.pdf) |
+| **Ders 13** | İkili Arama Ağacı, Heap Ağacı ve Heap Sort | [Markdown](kisa_notlar/markdown/ders_13_ozet.md) · [PDF](kisa_notlar/ders_13_ozet.pdf) | [Markdown](genisletilmis_notlar/markdown/ders_13_genisletilmis.md) · [PDF](genisletilmis_notlar/ders_13_genisletilmis.pdf) |
+| **Ders 14** | Quiz Hataları, Yığınla Kuyruk ve First Child / Next Sibling Ağaç Gösterimi | [Markdown](kisa_notlar/markdown/ders_14_ozet.md) · [PDF](kisa_notlar/ders_14_ozet.pdf) | [Markdown](genisletilmis_notlar/markdown/ders_14_genisletilmis.md) · [PDF](genisletilmis_notlar/ders_14_genisletilmis.pdf) |
+| **Ders 17** | Heap İşlemleri, Öncelikli Kuyruk ve Huffman Kodlaması | [Markdown](kisa_notlar/markdown/ders_17_ozet.md) · [PDF](kisa_notlar/ders_17_ozet.pdf) | [Markdown](genisletilmis_notlar/markdown/ders_17_genisletilmis.md) · [PDF](genisletilmis_notlar/ders_17_genisletilmis.pdf) |
+| **Ders 18** | Ödev Çözümü Duyurusu | [Markdown](kisa_notlar/markdown/ders_18_ozet.md) · [PDF](kisa_notlar/ders_18_ozet.pdf) | — |
+| **Ders 19** | Graflara Giriş, Komşuluk Matrisi ve Listesi, Prim ve Kruskal ile En Küçük Kapsayan Ağaç | [Markdown](kisa_notlar/markdown/ders_19_ozet.md) · [PDF](kisa_notlar/ders_19_ozet.pdf) | [Markdown](genisletilmis_notlar/markdown/ders_19_genisletilmis.md) · [PDF](genisletilmis_notlar/ders_19_genisletilmis.pdf) |
+| **Ders 20** | Böl ve Yönet Yaklaşımı, Merge Sort ve Quick Sort'a Giriş | [Markdown](kisa_notlar/markdown/ders_20_ozet.md) · [PDF](kisa_notlar/ders_20_ozet.pdf) | [Markdown](genisletilmis_notlar/markdown/ders_20_genisletilmis.md) · [PDF](genisletilmis_notlar/ders_20_genisletilmis.pdf) |
+| **Ders 21** | Quiz Günü | [Markdown](kisa_notlar/markdown/ders_21_ozet.md) · [PDF](kisa_notlar/ders_21_ozet.pdf) | — |
+| **Ders 22** | Quiz Çözümleri, Böl ve Yönet, Quicksort ve Partition | [Markdown](kisa_notlar/markdown/ders_22_ozet.md) · [PDF](kisa_notlar/ders_22_ozet.pdf) | [Markdown](genisletilmis_notlar/markdown/ders_22_genisletilmis.md) · [PDF](genisletilmis_notlar/ders_22_genisletilmis.pdf) |
+| **Ders 23** | Ödev Değerlendirmesi Duyurusu | [Markdown](kisa_notlar/markdown/ders_23_ozet.md) · [PDF](kisa_notlar/ders_23_ozet.pdf) | — |
+| **Ders 24** | Dizgi Arama: Kaba Kuvvet, Boyer-Moore ve Trie | [Markdown](kisa_notlar/markdown/ders_24_ozet.md) · [PDF](kisa_notlar/ders_24_ozet.pdf) | [Markdown](genisletilmis_notlar/markdown/ders_24_genisletilmis.md) · [PDF](genisletilmis_notlar/ders_24_genisletilmis.pdf) |
 
 > [!NOTE]
 > 15 ve 16 numaralı kayıtlar (vize haftası) arşivde yok; 10-14 Mayıs bayram tatili ve 19 Mayıs resmî tatil.
 
 ## 🎯 Derslerin Detaylı Özetleri ve Kazanımları
 
-### 🔹 Ders 1: Derse Giriş, Algoritma Tasarım İlkeleri, Doğrusal Arama, Eratosthenes Kalburu ve Sıralı Dizilerin Birleştirilmesi
+### 🔹 Ders 1: Algoritma Tasarım İlkeleri, Doğrusal Arama, Eratosthenes Kalburu ve Sıralı Dizilerin Birleştirilmesi
 * **Genel Konular:**
   - Veri Yapıları ve Algoritmalar dersinin amacı ve kapsamı (01:51:18 sonrası).
   - Veri yapılarının gerçek hayattaki kullanımları: graf (graph), yığın (stack), kuyruk (queue).
@@ -64,14 +68,14 @@ Aşağıdaki tabloda her bir dersin konusu, kaynak markdown dosyası ve doğruda
   - Döngüden çıktıktan sonra neden çıktığınızı kontrol edin (bulundu mu, dizi mi bitti).
   - İki koşullu durma şartında bağlaç `&&` olmalıdır.
     - `||` kullanmak sık yapılan bir hatadır.
-* **Detaylı Açıklamalar:** Derste C kodu yazılmadı. Aşağıdaki fonksiyonlar ekrandaki akış diyagramlarından ajan tarafından çevrilmiştir. `gcc -Wall` (`-lm` ile) derlenip derste kullanılan örneklerle çalıştırılmıştır. Çıktılar: `7 -> 4, 11 -> -1`; `2 3 5 7 11 13 17 19 23`; `1 3 4 5 7 10 12 16 18 21`.
+* **Detaylı Açıklamalar:** <!-- BELİRSİZ: Altyazıda kitaplar yalnız "Levitin'in Design and Analysis of Algorithms kitabı" ve "Sedgewick'in algoritma kitabı" diye geçer (02:31:11, 02:32:07). Tam adlar, ikinci yazar ve baskı numarası altyazıdan doğrulanmadı. -->
 
 ### 🔹 Ders 2: Doğrusal Yoklamalı Hash Tablosunda Ortalama Yerleşme Adımının Hesaplanması
 * **Genel Konular:**
-  - Bu kayıt uygulama (laboratuvar) saatidir.
+  - Bu kayıt bir uygulama dersidir.
   - İlk derste sorulan düşünme sorusu birlikte çözülür: doğrusal yoklamalı (linear probing) bir hash tablosunda elemanların ortalama kaçıncı denemede yerleştiğinin hesaplanması.
   - Çözüm üç aşamada sadeleştirilir: önce `if` ile üç durum, sonra iki durum, en sonda tek bir `mod` ifadesi.
-  - Geçen dönemki Algoritma Analizi sınavında öğrencilerin çoğunun verdiği verimsiz çözüm incelenir ve neden kötü olduğu tartışılır.
+  - Bu soruya sık verilen verimsiz çözüm incelenir ve neden kötü olduğu tartışılır.
   - Akış diyagramında `for` ve `while` döngülerinin giriş ve çıkış okları hatırlatılır.
 * **Hocanın Vurgusu:**
   - Bir algoritmanın doğru çalışması yetmez; verimli (efektif) olması da gerekir.
@@ -145,14 +149,13 @@ Aşağıdaki tabloda her bir dersin konusu, kaynak markdown dosyası ve doğruda
     - Yalnızca en anlamlı terim alınır.
 * **Detaylı Açıklamalar:** Hoca, dizideki sıfırları sayan şu kod parçası için her işlemin kaç kez yapıldığını tabloya döktü (ekrandan, 00:20:40):
 
-### 🔹 Ders 6: Quiz Günü: Yer Karmaşıklığı Hatırlatması
+### 🔹 Ders 6: Yer Karmaşıklığı Hatırlatması (Kısa Kayıt)
 * **Genel Konular:**
-  - Bu kayıt kısa bir uygulama saatidir. Kaydın büyük bölümü uygulama organizasyonuyla ilgilidir.
+  - Bu kayıt kısa bir oturumdur.
   - Akademik içerik olarak yalnızca yer karmaşıklığı (space complexity) kavramına kısa bir hatırlatma yapılır.
 * **Hocanın Vurgusu:**
   - Bir algoritma tasarlandıktan sonra hem işlem (zaman) karmaşıklığı hem de yer karmaşıklığı hesaplanmalıdır.
   - Yer kullanımı da zaman kullanımı gibi olabildiğince verimli olmalıdır.
-  - Problem önce kendi başına, algoritmik düşünülerek çözülmelidir.
 
 ### 🔹 Ders 7: Bağlı Listeye Giriş: Düğüm Oluşturma, Ekleme ve Yazdırma
 * **Genel Konular:**
@@ -209,11 +212,11 @@ Aşağıdaki tabloda her bir dersin konusu, kaynak markdown dosyası ve doğruda
     - Aranan bulununca döngüden çıkın. Bir milyon elemanlı dizide ilk adımda bulduysanız bir milyon kez dönmenin anlamı yoktur.
   - Dizi üzerinde dönen bir `while` döngüsünde önce dizinin sonuna gelinip gelinmediğini kontrol edin (`i < n`), sonra aranan koşulu (`a[i] != x`).
     - Aranan eleman hiç olmayabilir.
-  - Not değil öğrenmek önemlidir.
-    - Ödev ve quizleri kendi başınıza yapın.
   - Yığında `push` etmeden önce dolu olup olmadığını (`full`), `pop` etmeden önce boş olup olmadığını (`empty`) kontrol edin.
   - `initialize`, `display` gibi işleri ayrı fonksiyonlara koyun.
     - Kodu okuyan biri işin nerede yapıldığını hemen görür.
+  - Yapıyı (struct) fonksiyona değer olarak değil adres olarak gönderin.
+    - Böylece bütün içerik boşu boşuna kopyalanmaz.
 * **Detaylı Açıklamalar:** Yapı ve yardımcı fonksiyonlar (ekrandan, 00:40:30):
 
 ### 🔹 Ders 10: Ödev Soru-Cevap Saati
@@ -239,7 +242,7 @@ Aşağıdaki tabloda her bir dersin konusu, kaynak markdown dosyası ve doğruda
     - Aksi hâlde `rear` serbest bırakılmış bir adresi gösterir.
   - Kuyruktan çıkan düğüm `free` ile serbest bırakılmalıdır.
     - Program hata vermez ama bellek boşa tutulur.
-* **Detaylı Açıklamalar:** Yapı tanımları (ekrandan, 00:22:30; `typedef` adlarının eksikliği bir öğrencinin uyarısıyla düzeltildi):
+* **Detaylı Açıklamalar:** <!-- BELİRSİZ: Altyazıda burası "iki tane yerini kullanıyor" diye bozuk geçer (00:02:08). "İki yığın" okuması Ders 9'daki anlatımla uyumludur. --> - Kuyrukta ilk gelene ilk hizmet verilir. Yeni gelen kuyruğun sonuna eklenir.
 
 ### 🔹 Ders 12: Quiz ve Ödev Çözümleri: Renk Histogramı, Dinamik Bellek ve Yığınla Kelime Çözme
 * **Genel Konular:**
@@ -292,7 +295,7 @@ Aşağıdaki tabloda her bir dersin konusu, kaynak markdown dosyası ve doğruda
   - Labirentte çıkış arayan fare problemi için uygun veri yapısı.
   - Yığın ve ters çevirme (reverse) işlemiyle kuyruk (queue) gerçekleştirme.
   - Çoklu ağaç (general tree) için ilk çocuk / sonraki kardeş (first child / next sibling) gösterimi.
-  - Ödev 3: ağaç yapısıyla sanal bir dizin sistemi (`mkdir`, `chdir`, `rmdir`, `dir`, `count`).
+  - Ödev: ağaç yapısıyla sanal bir dizin sistemi (`mkdir`, `chdir`, `rmdir`, `dir`, `count`).
 * **Hocanın Vurgusu:**
   - Yığınla şifre üretilirken yığında kalan elemanlar da en sonda pop edilmelidir.
     - Toplam pop sayısı toplam push sayısına eşittir.
@@ -301,7 +304,7 @@ Aşağıdaki tabloda her bir dersin konusu, kaynak markdown dosyası ve doğruda
   - Ödevdeki her komut aslında bir bağlı liste işlemidir:
     - `mkdir`: listeye eleman eklemek (insert).
   - Algoritmik dersler konu okuyarak değil, soru çözerek ve kod yazarak çalışılmalıdır.
-    - Sınavda çözülemeyen soru sonra kendi başına yazılmalıdır.
+    - Çözülemeyen soru sonra kendi başına yazılmalıdır.
 * **Detaylı Açıklamalar:** Sorudaki girdi (ekrandan, 00:10:30):
 
 ### 🔹 Ders 17: Heap İşlemleri, Öncelikli Kuyruk ve Huffman Kodlaması
@@ -349,7 +352,7 @@ Aşağıdaki tabloda her bir dersin konusu, kaynak markdown dosyası ve doğruda
     - "İki düğüm bağlı mı?" sorusu çok soruluyorsa matris avantajlıdır. Doğrudan erişim vardır.
   - Yeni komşu düğüm listenin sonuna değil, başına eklenir.
     - Sona kadar ilerlemek gereksiz zaman kaybıdır.
-* **Detaylı Açıklamalar:** Derste kullanılan graf (ekrandan, 02:11:30):
+* **Detaylı Açıklamalar:** <!-- BELİRSİZ: Döngünün izi altyazıda bozuk geçer ("B'den D'ye gittiniz, B'den C'ye geldiniz, C'den tekrar B'ye", 00:13:49). Slayt olmadan döngünün hangi düğümlerden geçtiği kesinleştirilemedi. -->
 
 ### 🔹 Ders 20: Böl ve Yönet Yaklaşımı, Merge Sort ve Quick Sort'a Giriş
 * **Genel Konular:**
@@ -376,10 +379,7 @@ Aşağıdaki tabloda her bir dersin konusu, kaynak markdown dosyası ve doğruda
 ### 🔹 Ders 21: Quiz Günü
 * **Genel Konular:**
   - Bu derste işlenen akademik bir içerik bulunmamaktadır.
-  - Kayıt, quiz öncesindeki kısa bir bekleme ve hazırlık bölümünden oluşur. Quizden sonra ders yapılmamıştır.
 * **Hocanın Vurgusu:**
-  - Soruları dikkatli okuyun.
-    - Sorunun ne demek istediğini atlamayın.
 
 ### 🔹 Ders 22: Quiz Çözümleri, Böl ve Yönet, Quicksort ve Partition
 * **Genel Konular:**
@@ -395,7 +395,7 @@ Aşağıdaki tabloda her bir dersin konusu, kaynak markdown dosyası ve doğruda
   - Dizide silme, gözün içine 0 yazmak değildir.
     - Elemanlar kaydırılır ve dizi artık $n-1$ elemanlı kabul edilir.
   - Her özyinelemeli (recursive) algoritma böl ve yönet değildir.
-    - Faktöriyel ve Fibonacci özyinelemeli yazılabilir ama böl ve yönet olamaz. Her adım bir önceki sonuca ihtiyaç duyar.
+    - Faktöriyel ve Fibonacci özyinelemeli yazılabilir ama böl ve yönet olamaz. Hoca gerekçe olarak her adımın bir önceki sonuca ihtiyaç duyduğunu söyler (faktöriyel için bkz. ders sonrası notlar).
   - Böl ve yönet için iki şart vardır:
     - Parçalar birbirinden bağımsız çözülebilmelidir.
   - Mergesort elemanları dizideki **yerlerine** göre böler.
