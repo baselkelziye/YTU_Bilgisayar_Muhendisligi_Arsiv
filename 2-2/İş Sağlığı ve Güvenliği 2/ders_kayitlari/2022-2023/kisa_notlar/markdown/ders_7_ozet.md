@@ -2,9 +2,6 @@
 
 ## Genel Konular
 
-- Dersin tarihi 11 Nisan 2023 Salı. Ders çevrim içi yapıldı.
-  - Asıl ders yaklaşık 00:04:00'te başlar.
-  - Ramazan ayı olduğu için ders kısa tutuldu.
 - Kimyasal risk etmenleri (önceki dersin devamı)
   - Kimyasalların güvenlik risklerini etkileyen faktörler: patlama limitleri, parlama noktası, kaynama noktası, yanma noktası, fiziksel hal, kimyasal özellikler.
   - Kimyasal risklerle baş etme: kaynakta, ortamda ve kişide önlem.
@@ -43,19 +40,18 @@
 - Önceliğimiz her zaman toplu koruma önlemidir.
   - Örnekler: genel havalandırma, çukurun etrafına bariyer, havuz suyunun klorlanması.
 - Tehlikeli bir işi mümkün olan en az sayıda çalışan yapmalıdır.
-- Hoca, sunumlardaki hafta numaralarına takılmayın dedi. Konuların sırası dönemden döneme değişir.
 
 ## Kısa Tekrar Notları
 
 - Kimyasal risk kontrolü: kaynakta, ortamda, kişide.
 - R ibaresi yerine H ifadesi (zararlılık), S ibaresi yerine P ifadesi (önlem). Müstahzar yerine karışım.
 - Aktarılan kimyasalın kabına ad, aktarma tarihi ve son kullanma tarihi yazılır.
-- TWA: günde 8 saat, haftada 40 saat üzerinden ortalama. STEL: genellikle 15 dakika. Ceiling: kısa süre bile aşılmaz.
+- TWA: günde 7-8 saat (altyazı, 00:18:53, 00:20:17; yaygın tanımda büyük olasılıkla 8 saat), haftada 40 saat üzerinden ortalama. STEL: genellikle 15 dakika. Ceiling: kısa süre bile aşılmaz.
 - Biyolojik etken grupları:
   - Grup 1: insanda hastalık yapma olasılığı yok.
   - Grup 2: hastalık yapar, toplumda yayılma olasılığı yok, etkili tedavi var.
   - Grup 3: ağır hastalık yapar, toplumda yayılma riski var, etkili tedavi var.
-  - Grup 4: ağır hastalık yapar, toplumda yayılma riski yüksek, etkili tedavi genellikle yok.
+  - Grup 4: ağır hastalık yapar, toplumda yayılma ihtimali var, etkili koruma ve tedavi yok (00:27:58).
 - Grup 3 ve 4: acil eylem planı. Grup 2, 3, 4 ilk kullanım: en az 30 gün önce Bakanlığa bildirim.
 - Toplu koruma, kişisel korumadan önce gelir.
 
@@ -69,7 +65,7 @@
 - **Sağlığa zararlı (yeni sembol, insan figürü):** kısa veya uzun dönemde sağlığa zarar verebilir. Kanser riski taşıyabilir. Bu sembol ışınla ilgili değildir. Ciltle temas, ağız ve solunum yoluyla alınma riskini anlatır.
 - **Basınçlı gaz (yeni sembol):** basınç altında gaz içerir. Isıtılırsa patlayabilir. Çıkan gaz çok soğuk olabilir.
 - **Korozif:** canlı dokuyu tahrip eder, metali aşındırır. Göz ve deri korunur. Metallerden uzak tutulur.
-- **Tahriş edici (ünlem işareti):** deri ve göze zarar verir. Ozon tabakasına zararlı maddeler de bu işaretle gösterilir.
+- **Tahriş edici (ünlem işareti):** deri ve göze zarar verir. Altyazıda ozon tabakasına zarar verdikleri de söylenir (00:09:41). <!-- BELİRSİZ: Ozon tabakasına zararlı maddelerin bu işaretle gösterildiği altyazıda yok. -->
 - **Ekotoksik:** suda ve doğadaki canlılara zarar verir. Doğaya dökülmez.
 
 ### Etiket örneği
@@ -97,11 +93,11 @@
 
 ### Ders sonrası notlar
 
-- Derste aşırı yanıcı sıvı için "kaynama noktası en fazla 135 derece" dendi. Eski sınıflandırmada aşırı yanıcı sıvının parlama noktası 0 °C'nin altında, kaynama noktası **35 °C** veya altındadır.
+- Derste aşırı yanıcı sıvı için "kaynama noktası en fazla 135 derece" dendi (00:08:49). Bu değer büyük olasılıkla **35 °C**'dir. Eski sınıflandırmada aşırı yanıcı sıvının parlama noktası büyük olasılıkla 0 °C'nin altında, kaynama noktası 35 °C veya altındadır.
 - Derste eşik limit değerin birimi için "gram bölü metre küp" dendi. Havadaki kimyasallar için genellikle **mg/m³** veya **ppm** kullanılır.
-- Derste Türkçe etiketleme için "Türkçe olamıyor" dendi. Mevzuata göre (SEA Yönetmeliği) Türkiye'de piyasaya sunulan kimyasalların etiketi ve güvenlik bilgi formu **Türkçe olmalıdır**. Hocanın sözü sahadaki uygulamayı anlatır.
-- COVID-19 etkeni (SARS-CoV-2) AB mevzuatında **Grup 3** biyolojik etken olarak sınıflandırıldı. Derste de sonunda Grup 3 daha mantıklı olarak kabul edildi.
-- Karbonmonoksit (CO) ve karbondioksit (CO₂) farkı:
+- Derste Türkçe etiketleme için "Türkçe olamıyor" dendi (00:15:48). Mevzuata göre (büyük olasılıkla SEA Yönetmeliği) Türkiye'de piyasaya sunulan kimyasalların etiketi ve güvenlik bilgi formu büyük olasılıkla **Türkçe olmalıdır**. Hocanın sözü büyük olasılıkla sahadaki uygulamayı anlatır.
+- COVID-19 etkeni (SARS-CoV-2) AB mevzuatında büyük olasılıkla **Grup 3** biyolojik etken olarak sınıflandırıldı. Derste de sonunda Grup 3 daha mantıklı olarak kabul edildi (00:28:57).
+- Karbonmonoksit (CO) ve karbondioksit (CO₂) farkı (ayrıntılar altyazıda yok, büyük olasılıkla):
   - CO renksiz, kokusuz ve zehirlidir. Hemoglobine oksijenden çok daha güçlü bağlanır. Kanın oksijen taşımasını engeller. Yanıcıdır.
   - CO₂ zehirli değildir ama boğucudur. Ortamdaki oksijeni azaltır. Yüksek derişimde solunumu bozar. Yanmaz.
 - Altyazıdaki "redobaktyk", "Kırtlara" gibi ifadeler konuşma tanıma hatasıdır. Anlamları kayıttan çıkarılamadı.

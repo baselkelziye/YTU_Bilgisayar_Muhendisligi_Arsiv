@@ -2,9 +2,7 @@
 
 ## Genel Konular
 
-- Dersin tarihi 21 Mart 2023 Salı. Ders çevrimiçi yapıldı.
-  - Asıl ders yaklaşık 01:03'te başlar.
-  - Toz, gürültü ve titreşim konuları 2. derste de işlenmişti. Hoca bunu fark etmeden konuları yeniden anlattı. Bu ders iyi bir tekrar niteliğindedir.
+- Toz, gürültü ve titreşim konuları 2. derste de işlenmişti. Bu ders iyi bir tekrar niteliğindedir.
 - Ergonomi tekrarı: ergonomik çalışma alanı
   - Yatayda: sürekli çalışma alanı (usual work), ara sıra çalışma alanı (occasional work), çalışılmayan alan (non-working area).
   - Dikeyde: omuzun üstünde ve çok aşağıda çalışmak risklidir. Arada kalan bölge uygun çalışma alanıdır.
@@ -13,7 +11,7 @@
   - Toz, gürültü, titreşim, termal konfor, iyonize ve iyonize olmayan ışınlar, basınç.
   - Termal konforun bileşenleri: nem, sıcakta veya soğukta çalışma, aydınlatma, havalandırma.
 - Tozlar
-  - İnsan sağlığı açısından önemli boyutlar: slayta göre 0,5-100 mikron.
+  - İnsan sağlığı açısından önemli boyutlar: derste verilen 0,5-100 mikron.
   - 6 toz türü: inert, toksik, alerjik, fibrojenik, kanserojen, radyoaktif.
   - Mesleki akciğer hastalıkları, silikozis, asbestozis.
   - Tozla mücadele, eşik sınır değer, toz maskesi.
@@ -54,12 +52,12 @@
 - Pnömokonyoz: akciğerde toz birikmesi ve fibrozis ile seyreden hastalıkların genel adı.
 - Asbest hastalıkları: asbestozis, akciğer kanseri, mezotelyoma. Tedavisi yoktur.
 - Tıbbi koruma: işe giriş ve periyodik muayene. Teknik koruma: havalandırma, kapalı sistem, ıslak çalışma.
-- Eşik sınır değer (ESD, TLV): kayaç ve mineral üretilen işyerlerinde toz yoğunluğu ESD'yi aşamaz.
+- Eşik sınır değer (büyük olasılıkla ESD, TLV): kayaç ve mineral üretilen işyerlerinde toz yoğunluğu bu değeri aşamaz. <!-- BELİRSİZ: "ESD" ve "TLV" kısaltmaları altyazıda yok (00:22:17). -->
 - Toz maskesi, bir vardiyada toplam 1 saati geçmeyen tozlu çalışmalarda yardımcı araç olarak kullanılabilir.
 - Gürültüyü etkileyen faktörler: frekans, ses basınç düzeyi, maruziyet süresi, gürültünün tipi, kişisel duyarlılık.
 - Akustik travma: ani ve çok yüksek sesin orta kulaktaki kemikçikleri ve kulak zarını hasara uğratması.
-- Titreşim frekansları (slayt): düşük 2-20 Hz (büyük makine ve taşıtlar), orta 8-30 Hz (elle kullanılan hava basınçlı aletler), çok yüksek 1000-30.000 Hz (sabit endüstri makineleri).
-- Ölçüm araçları: hava sıcaklığı için termometre, radyant ısı için glob termometre, nem için ıslak ve kuru termometre (psikrometre), hava akımı için anemometre, titreşim için titreşim ölçer.
+- Titreşim frekansları: düşük 2-20 Hz (büyük makine ve taşıtlar), orta 8-30 Hz (elle kullanılan hava basınçlı aletler), çok yüksek 1000-3000 Hz (sabit endüstri makineleri). <!-- BELİRSİZ: Altyazıda "1000-3000 Hz" geçiyor (00:38:06); slayt değerinin 1000-30.000 Hz olduğu doğrulanamadı. Ders 2'de aynı yer "1031" olarak duyuluyor (00:49:23). -->
+- Ölçüm araçları: hava sıcaklığı için termometre, radyant ısı için glob termometre, nem için ıslak ve kuru termometre (büyük olasılıkla psikrometre), hava akımı için anemometre, titreşim için titreşim dedektörü (00:39:15). <!-- BELİRSİZ: "Psikrometre" adı altyazıda yok (00:43:42). -->
 
 ## Detaylı Açıklamalar
 
@@ -67,7 +65,7 @@
 
 - Toza bağlı akciğer hastalığı için en kısa maruziyet süresi 3 yıldır. Hastalık çoğu zaman 10 yıl ve daha uzun sürede ortaya çıkar.
 - Çalışan işten sağlıklı ayrılmış olsa bile hastalık daha sonra ortaya çıkabilir. Bu durumda çalışan işverene dava açabilir.
-- Bu nedenle bu tür işyerlerinde çalışanın dosyası işten ayrıldıktan sonra uzun süre (hocaya göre 30 yıl kadar) saklanır.
+- Bu nedenle bu tür işyerlerinde çalışanın özlük dosyası işten ayrıldıktan sonra uzun süre (hocaya göre 30 yıl kadar, 00:15:17) saklanır.
 
 ### Asbest
 
@@ -94,13 +92,13 @@
 - Ses şiddeti: birim alandan birim zamanda geçen enerji (W/m²). Uzaklığın karesiyle ters orantılıdır.
 - İnsan kulağının algı aralığı çok geniştir. Bu nedenle logaritmik ölçek (desibel) kullanılır.
 - Örnek ses düzeyleri: büro 50 dB, karşılıklı konuşma 60 dB, yüksek sesle konuşma 80 dB, bağırma 90 dB, uçak yanı 130 dB.
-- Etkiler: 30-65 dB konforsuzluk; 65-90 dB kalp atışı, solunum ve beyin basıncında değişiklik; 120-140 dB iç kulak bozukluğu; 140 dB üzeri kulak zarı patlaması.
+- Etkiler: 30-65 dB konforsuzluk; 65-90 dB kalp atışı, solunum ve beyin basıncında değişiklik; 120-140 dB iç kulak bozukluğu; 140 dB'de kulak zarı patlaması (00:35:11).
 
 ### Titreşim
 
 - Titreşim, mekanik enerjinin vücuda iletilmesidir. Etkisi frekansa ve şiddete göre değişir.
-- Lokal titreşimin etkileri 5 grupta toplanır: dolaşım sistemi, kemik ve eklemler, sinir sistemi, kaslar, diğer bozukluklar.
-- Tüm vücut titreşimi X, Y, Z yönlerinde etki eder. Omurga travması, bel ağrısı ve bel omurlarında dejenerasyon yapabilir.
+- Titreşimin etkileri 5 grupta toplanır: dolaşım sistemi, kemik ve eklemler, sinir sistemi, kaslar, diğer bozukluklar (00:36:58). <!-- BELİRSİZ: Altyazıda bu grupların yalnız lokal titreşime ait olduğu net değil. -->
+- Etki yönleri X, Y, Z olarak düşünülür (00:37:06). Omurga travması, bel ağrısı ve bel omurlarında dejenerasyon yapabilir. <!-- BELİRSİZ: X, Y, Z yönlerinin yalnız tüm vücut titreşimine ait olduğu altyazıda net değil. -->
 - Korunma:
   - Daha az titreşimli el aletleri seçmek, aletlerin bakımını yapmak.
   - Titreşimi sönümleyen eldiven kullanmak.
@@ -109,7 +107,7 @@
 
 ### Termal konfor ve vücudun ısı dengesi
 
-- Slayttaki ifade: $H = M \pm R \pm C - E \pm D$.
+- Isı dengesi büyük olasılıkla $H = M \pm R \pm C - E \pm D$ biçimindedir. <!-- BELİRSİZ: Denklem altyazıda yazılı değil; yalnız "M, R, C, E, D" ve artı-eksi açıklaması geçiyor (00:42:15). -->
   - H: vücuttaki ısı yükü.
   - M: metabolik ısı. H'yi her zaman artırır.
   - R: radyasyonla alınan veya verilen ısı.
@@ -127,12 +125,13 @@
 
 ### Ders sonrası notlar
 
-- **4000 Hz sorusu:** Bir öğrenci "20.000 Hz'in altı mı, üstü mü sıkıntılı?" diye sordu. Hoca "4000 Hz'in üzeri sıkıntı" diye cevap verdi. Doğrusu: insan kulağı yaklaşık 20-20.000 Hz arasını duyar. Gürültüye bağlı işitme kaybı ilk olarak 3000-6000 Hz bandında, en belirgin 4000 Hz'de görülür. Odyogramda bu bölgedeki düşüşe "akustik çentik" denir. 4000 Hz'in üzerindeki bütün sesler zararlı demek değildir. Zarar, ses düzeyine ve maruziyet süresine bağlıdır.
-- **Gürültü değerleri:** Gürültü Yönetmeliği'ne göre en düşük maruziyet eylem değeri 80 dB(A), en yüksek maruziyet eylem değeri 85 dB(A), maruziyet sınır değeri 87 dB(A)'dır.
-- **Toz boyutu:** Slaytta "0,5-100 mikron" yazıyor. Alveollere ulaşabilen solunabilir tozlar yaklaşık 0,5-5 mikron boyutundadır. Daha büyük partiküller çoğunlukla üst solunum yollarında tutulur.
-- **Toz sınır değeri:** Altyazıda "1,15 mg/m³" geçiyor. Slaytta "1-1,15 mg/m³" yazıyor. Bu değer belirli bir toz türü için verilmiş bir örnektir. Sınır değer tozun türüne (ör. silika içeriğine) göre değişir.
-- **Asbest yasağı:** Derste "kullanımı yasak ama yine kullanılmakta" dendi. Türkiye'de asbestin ve asbest içeren ürünlerin üretimi ve kullanımı 2010 sonu itibarıyla tamamen yasaklandı. Risk, eski binalardaki ve gemilerdeki mevcut asbestten kaynaklanır.
-- **Alerjik toz örneği:** Slayttaki örnekler arasında cam yünü de sayıldı. Cam yünü organik bir toz değildir. Daha çok deri ve solunum yolu tahrişi yapan yapay mineral liftir.
-- **Silikozis:** Altyazıda "silistoz" geçiyor. Doğrusu: silikozis, kristal silika (kuvars) tozunun akciğerde birikmesiyle oluşur.
+- **4000 Hz sorusu:** Bir öğrenci "20.000 Hz'in altı mı, üstü mü sıkıntılı?" diye sordu (00:40:28). Ardından altyazıda "Pardon, 4.000 Hz" düzeltmesi geçiyor (00:40:35). Hoca kalıcı işitme kaybının ilk görüldüğü frekansı söyleyip "bunun üzeri sıkıntı" dedi (00:40:56). Büyük olasılıkla insan kulağı yaklaşık 20-20.000 Hz arasını duyar. Gürültüye bağlı işitme kaybı büyük olasılıkla ilk olarak 3000-6000 Hz bandında, en belirgin 4000 Hz'de görülür. Odyogramda bu bölgedeki düşüşe büyük olasılıkla "akustik çentik" denir. 4000 Hz'in üzerindeki bütün sesler zararlı demek değildir. Zarar, ses düzeyine ve maruziyet süresine bağlıdır.
+- **Gürültü değerleri:** Gürültü Yönetmeliği'ne göre büyük olasılıkla en düşük maruziyet eylem değeri 80 dB(A), en yüksek maruziyet eylem değeri 85 dB(A), maruziyet sınır değeri 87 dB(A)'dır.
+- **Toz boyutu:** Derste "0,5-100 mikron" dendi (00:07:09). Alveollere ulaşabilen solunabilir tozlar büyük olasılıkla yaklaşık 0,5-5 mikron boyutundadır. Daha büyük partiküller büyük olasılıkla çoğunlukla üst solunum yollarında tutulur.
+- **Toz sınır değeri:** Altyazıda "1,15 mg/m³" geçiyor (00:22:50). Bu değer belirli bir toz türü için verilmiş bir örnektir. Sınır değer büyük olasılıkla tozun türüne (ör. silika içeriğine) göre değişir. <!-- BELİRSİZ: "1-1,15 mg/m³" biçimi altyazıda doğrulanamadı. -->
+- **Asbest yasağı:** Derste "kullanımı yasak ama yine kullanılmakta" dendi. Türkiye'de asbestin ve asbest içeren ürünlerin üretimi ve kullanımı büyük olasılıkla 2010 sonu itibarıyla tamamen yasaklandı. Risk büyük olasılıkla eski binalardaki ve gemilerdeki mevcut asbestten kaynaklanır.
+- **Alerjik toz örneği:** Derste örnekler arasında cam yünü de sayıldı (00:09:23). Cam yünü büyük olasılıkla organik bir toz değildir. Büyük olasılıkla daha çok deri ve solunum yolu tahrişi yapan yapay mineral liftir.
+- **Silikozis:** Altyazıdaki "silistoz" büyük olasılıkla "silis tozu" ifadesinin konuşma tanıma bozulmasıdır (00:12:27). Silikozis, büyük olasılıkla kristal silika (kuvars) tozunun akciğerde birikmesiyle oluşur.
+- **İnert toz:** Hoca inert toz için önce "vücuttan dışarı atılabiliyor" (00:08:13), sonra "akciğerde birikiyor ama hastalık yapmıyor" (00:08:28) dedi. İki ifade tam örtüşmez.
 
 **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

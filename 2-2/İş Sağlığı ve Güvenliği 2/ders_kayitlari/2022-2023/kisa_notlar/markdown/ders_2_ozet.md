@@ -2,10 +2,6 @@
 
 ## Genel Konular
 
-- Dersin tarihi 7 Mart 2023 Salı. Ders çevrimiçi yapıldı.
-  - Asıl ders yaklaşık 03:17'de başlar.
-  - Hoca kendini yeniden tanıttı. Yıldız Teknik'te ikinci dönemidir. Bilgisayar mühendisliği öğrencilerine dersi ilk kez veriyor.
-  - İSG 1'i almamış öğrenciler için hoca İSG 1 slaytlarını da göndermeyi önerdi.
 - İSG 1 tekrarı: İSG'nin 3 amacı (sıra önemli)
   - 1. Çalışanın sağlığını korumak ve güvenliğini sağlamak.
   - 2. Üretimin (veya hizmetin) güvenliğini sağlamak.
@@ -42,14 +38,10 @@
   - Gürültü: istenmeyen ses. Ses nesneldir ve ölçülür. Gürültü özneldir.
   - Yasal sınırlar, desibel ölçeği ve korunma yöntemleri.
 - Titreşim (giriş)
-  - Lokal (el-kol) ve tüm vücut titreşimi. Ölçüm titreşim ölçerle yapılır.
+  - Lokal (el-kol) ve tüm vücut titreşimi. Ölçüm titreşim dedektörüyle yapılır (00:50:36).
 
 ## Hocanın Özellikle Vurguladığı Kısımlar
 
-- Hocanın anlattığı her şeyden sorumlusunuz.
-  - Slaytta olmasa bile derste anlatılan bilgi sınavda çıkabilir. Örnek: İSG'nin 3 amacı.
-- Derste not tutun.
-  - Hoca önemli yerleri birçok kez tekrar ediyor. Bunları kenara yazın.
 - İSG'nin 3 amacının sırası önemli.
   - Önce çalışan, sonra üretim, sonra işletme.
 - Riskle mücadelenin sırası her risk için aynıdır.
@@ -62,7 +54,7 @@
   - Depremde yıkılan eski binalarda çok asbest var. Enkaz kaldırma sırasında hem çalışanlar hem bölge halkı risk altında.
 - Uzun maruziyet süresi
   - Toza bağlı akciğer hastalığı için en kısa maruziyet süresi 3 yıldır. Çoğu zaman 10 yıl ve daha uzun sürede ortaya çıkar.
-  - Bu nedenle kanserojen maddelerle çalışılan işyerlerinde çalışanın dosyası işten ayrıldıktan sonra da uzun süre saklanır.
+  - Bu nedenle kanserojen maddelerle çalışılan işyerlerinde çalışanın dosyası işten ayrıldıktan sonra da hocaya göre "10 yıl, 30 yıl kadar" saklanır (00:30:57). <!-- BELİRSİZ: Bu süre altyazı dışında doğrulanmadı. -->
 - Her mühendis bu tıbbi terimleri bilmeli.
   - Hoca, profesyonel hayatta bunları bilmemenin mühendisi zor durumda bırakacağını söyledi.
 
@@ -114,18 +106,14 @@
 - Dinamik dengesizlikleri gidermek, amortisör ve titreşim yalıtımı kullanmak.
 - Titreşimi sönümleyen eldiven kullanmak. Hoca profesyonel bisikletçilerin eldivenlerini örnek verdi.
 
-### Duyuru
-
-- Sonraki derslerden itibaren ders 18:00 yerine 18:30'da başlayacak.
-
 ### Ders sonrası notlar
 
-- **Çernobil ve "soğutma çubukları":** Derste reaktöre giren çubuklar "soğutma çubukları" olarak anlatıldı. Bunlar kontrol çubuklarıdır. Görevleri soğutmak değil, nötronları soğurarak zincirleme reaksiyonu yavaşlatmaktır. 1986 kazasında RBMK reaktörünün tasarım kusuru ve test sırasındaki işletme hataları birlikte etkili oldu.
-- **OHSAS 18001:** Derste "Avrupa Birliği standardı" denildi. OHSAS 18001 İngiliz Standartlar Enstitüsü (BSI) öncülüğünde hazırlanmış bir İSG yönetim sistemi şartnamesidir. 2018'de yerini ISO 45001'e bıraktı.
-- **"Pro-reaktif" yaklaşım:** Doğru terim "reaktif" yaklaşımdır.
-- **Maruziyet sınır değeri:** Altyazıda değer "77 dB" olarak geçiyor. Slaytta ve sonraki derste değer 87 dB'dir. Gürültü Yönetmeliği'ne göre en düşük maruziyet eylem değeri 80 dB(A), en yüksek maruziyet eylem değeri 85 dB(A), maruziyet sınır değeri 87 dB(A)'dır.
-- **Toz boyutu:** Altyazıda "0,500 mikron" geçiyor. Slaytta "0,5-100 mikron" yazıyor. Akciğerin en derin bölgesine (alveollere) ulaşan solunabilir tozlar yaklaşık 0,5-5 mikron boyutundadır.
-- **Silikozisin nedeni:** Altyazıda "silistoz" geçiyor. Doğrusu: silikozis, kristal silika (silisyum dioksit, kuvars) tozunun akciğerde birikmesiyle oluşur.
-- **Kurşun ve trafik polisleri:** Bu örnek kurşunlu benzinin yaygın olduğu döneme aittir. Kurşunlu benzin Türkiye'de 2000'li yıllarda kullanımdan kalktı.
+- **Çernobil ve "soğutma çubukları":** Derste reaktöre giren çubuklar "soğutma çubukları" olarak anlatıldı (00:12:12). Bunlar büyük olasılıkla kontrol çubuklarıdır. Görevleri büyük olasılıkla soğutmak değil, nötronları soğurarak zincirleme reaksiyonu yavaşlatmaktır. 1986 kazasında büyük olasılıkla RBMK reaktörünün tasarım kusuru ve test sırasındaki işletme hataları birlikte etkili oldu.
+- **OHSAS 18001:** Derste "Avrupa Birliği standardı" denildi (00:16:35). OHSAS 18001 büyük olasılıkla İngiliz Standartlar Enstitüsü (BSI) öncülüğünde hazırlanmış bir İSG yönetim sistemi şartnamesidir, AB standardı değildir. 2018'de büyük olasılıkla yerini ISO 45001'e bıraktı.
+- **"Pro-reaktif" yaklaşım:** Altyazıda "pro-reaktif" geçiyor (00:11:47). Kaza sonrası inceleme anlatıldığı için doğru terim büyük olasılıkla "reaktif" yaklaşımdır.
+- **Maruziyet sınır değeri:** Altyazıda değer "77 dB" olarak geçiyor (00:45:51). Birkaç dakika sonra "87 ve 85 dB'e dikkat" deniyor (00:46:40). Ders 4'te de değer 87 dB'dir (00:33:11). 77 büyük olasılıkla 87'dir. Gürültü Yönetmeliği'ne göre büyük olasılıkla en düşük maruziyet eylem değeri 80 dB(A), en yüksek maruziyet eylem değeri 85 dB(A), maruziyet sınır değeri 87 dB(A)'dır.
+- **Toz boyutu:** Altyazıda "0,500 mikron" geçiyor (00:23:02). Ders 4'te aynı ifade "0,5-100 mikron" olarak geçer (00:07:09). "0,500" büyük olasılıkla bunun bozulmasıdır. Akciğerin en derin bölgesine (alveollere) ulaşan solunabilir tozlar büyük olasılıkla yaklaşık 0,5-5 mikron boyutundadır.
+- **Silikozisin nedeni:** Altyazıdaki "silistoz" (00:28:11, 00:34:05) hoca hatası değildir, büyük olasılıkla "silis tozu" ifadesinin konuşma tanıma bozulmasıdır. Silikozis, büyük olasılıkla kristal silika (silisyum dioksit, kuvars) tozunun akciğerde birikmesiyle oluşur.
+- **Kurşun ve trafik polisleri:** Bu örnek büyük olasılıkla kurşunlu benzinin yaygın olduğu döneme aittir. Kurşunlu benzin Türkiye'de büyük olasılıkla 2000'li yıllarda kullanımdan kalktı.
 
 **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

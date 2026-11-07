@@ -2,8 +2,6 @@
 
 ## Genel Konular
 
-- Dersin tarihi 14 Mart 2023 Salı. Ders çevrimiçi yapıldı.
-  - Asıl ders yaklaşık 03:10'da başlar. Ders bundan sonra 18:30'da başlayacak.
 - Konu: ergonomi ve ekranlı araçlarla çalışmalarda İSG
   - Ergonomi genel olarak işlendi. Ağırlık ekranlı araçlarla (bilgisayarla) ergonomik çalışmadaydı.
 - Ergonominin tanımı
@@ -42,13 +40,13 @@
 
 ## Kısa Tekrar Notları
 
-- Ergonomi kelimesi Yunanca "ergon" (iş) ve "nomos" (yasa) kelimelerinden gelir.
+- Ergonomi kelimesi büyük olasılıkla Yunanca "ergon" (iş) ve "nomos" (yasa) kelimelerinden gelir (altyazıda "ergoz: işlemek", 00:12:44).
 - Normal görüş açısı: ±15°.
 - Tavan aydınlatması çalışma yüzeyiyle 45° açı yapmalı, doğrudan çalışma noktasına vurmamalı.
 - Işık kaynakları mümkün olduğunca yüksekte olmalı. Alçak kaynaklar yansıma ve kamaşmayı artırır.
 - Açma-kapama düğmelerinin hareket yönü aynı olmalı.
 - Sandalye: döner, yüksekliği ayarlanabilir, kolçaklı, devrilmeye karşı güvenli, 5 tekerlekli.
-- Sabit çalışma masasının yüksekliği 680 mm. Ayarlanabilir masa 640-740 mm.
+- Sabit çalışma masasının yüksekliği büyük olasılıkla 680 mm, ayarlanabilir masa büyük olasılıkla 640-740 mm. <!-- BELİRSİZ: Altyazıda "sabit ise alt kenarının yerden yüksekliği 600 cm, ayarlanabilirse 640 mm" geçiyor (00:17:20); 680 mm ve 740 mm altyazıda yok. -->
 - Ekran göz hizasında veya biraz altında olmalı.
 - Ekranda karakter büyüklüğü 2,6 mm'nin altına düşmemeli.
 - Ekrana uzun süre bakınca göz kırpma azalır ve göz kurur. 20-25 dakikada bir gözleri ekrandan uzaklaştırın.
@@ -95,9 +93,9 @@
 
 ### Ders sonrası notlar
 
-- **Ekranlı araç operatörü:** Derste operatörlerin "sertifikalı, özel eğitim almış kişiler" olduğu söylendi. Bu, forklift veya vinç operatörleri için geçerlidir. Ekranlı Araçlar Yönetmeliği'ndeki operatör tanımı, işinin önemli bir bölümünde ekranlı araç kullanan çalışandır. Özel bir sertifika şartı yoktur.
-- **Ergonomi kelimesinin kökeni:** Altyazıda "ergoz: işlemek" geçiyor. Doğrusu Yunanca "ergon" (iş) ve "nomos" (doğa yasası) kelimeleridir. "Ergonomi" kelimesini ilk kez 1857'de Polonyalı bilim insanı Wojciech Jastrzębowski kullandı. 1949'daki Oxford toplantısı terimi modern anlamıyla yaygınlaştırdı.
-- **Masa yüksekliği:** Altyazıda "600 cm" geçiyor. Slaytta sabit masa için 680 mm, ayarlanabilir masa için 640-740 mm, klavye ortası için 710-740 mm yazıyor.
-- **Çalışan temsilcisi sayısı:** Derste sayı net verilmedi. 6331 sayılı Kanun md. 20'ye göre: 2-50 çalışan için 1, 51-100 için 2, 101-500 için 3, 501-1000 için 4, 1001-2000 için 5, 2001 ve üzeri için 6 temsilci seçilir.
+- **Ekranlı araç operatörü:** Derste operatörlerin "sertifikalı, özel eğitim almış kişiler" olduğu söylendi (00:25:35). Bu büyük olasılıkla forklift veya vinç operatörleri için geçerlidir. Ekranlı Araçlar Yönetmeliği'ndeki operatör tanımı büyük olasılıkla işinin önemli bir bölümünde ekranlı araç kullanan çalışandır. Büyük olasılıkla özel bir sertifika şartı yoktur.
+- **Ergonomi kelimesinin kökeni:** Altyazıda "ergoz: işlemek", "nomos: doğa yasası" geçiyor (00:12:44). Doğrusu büyük olasılıkla Yunanca "ergon" (iş) ve "nomos" (doğa yasası) kelimeleridir. "Ergonomi" kelimesini ilk kez büyük olasılıkla 1857'de Polonyalı bilim insanı Wojciech Jastrzębowski kullandı. Derste geçen 1949 Oxford toplantısı terimi büyük olasılıkla modern anlamıyla yaygınlaştırdı.
+- **Masa yüksekliği:** Altyazıda sabit masanın alt kenarı için "600 cm" geçiyor (00:17:20). Bu değer bir masa için olanaksızdır. Sabit masa için 680 mm, ayarlanabilir masa için 640-740 mm, klavye ortası için 710-740 mm büyük olasılıkla slayt değerleridir. <!-- BELİRSİZ: 680 mm, 640-740 mm ve 710-740 mm altyazıda yok. Hoca başka yerde masa yüksekliği için "72-73 cm" dedi (00:11:31). -->
+- **Çalışan temsilcisi sayısı:** Derste sayı net verilmedi (00:28:33). 6331 sayılı Kanun'a göre (büyük olasılıkla md. 20) büyük olasılıkla 2-50 çalışan için 1, 51-100 için 2, 101-500 için 3, 501-1000 için 4, 1001-2000 için 5, 2001 ve üzeri için 6 temsilci seçilir. <!-- BELİRSİZ: Bu tablo altyazıda yok. -->
 
 **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

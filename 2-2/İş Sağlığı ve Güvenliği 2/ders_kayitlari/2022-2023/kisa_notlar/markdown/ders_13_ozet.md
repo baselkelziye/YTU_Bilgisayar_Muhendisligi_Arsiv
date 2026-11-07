@@ -2,8 +2,6 @@
 
 ## Genel Konular
 
-- Dersin tarihi 30 Mayıs 2023 Salı. Ders çevrim içi yapıldı. Dönemin son dersidir.
-  - Asıl ders yaklaşık 00:04:41'de başlar.
 - Yeni konu: yangın
   - İlgili mevzuat: Binaların Yangından Korunması Hakkında Yönetmelik, İşyerlerinde Acil Durumlar Hakkında Yönetmelik, Büyük Endüstriyel Kazaların Önlenmesi ve Etkilerinin Azaltılması Hakkında Yönetmelik.
 - Yanma ve yangın üçgeni
@@ -20,7 +18,6 @@
 - Patlama sınırları, toz patlamaları, ATEX
 - Sanayide yangın türleri: jet yangını, havuz yangını, BLEVE
 - Yangından korunma önlemleri, yangın söndürme prensipleri, söndürücü kullanımı, yangında davranış kuralları
-- Final sınavı bilgilendirmesi
 
 ## Hocanın Özellikle Vurguladığı Kısımlar
 
@@ -35,8 +32,7 @@
 - Tatbikat yapılmazsa eğitimin neredeyse hiçbir anlamı yoktur. Tatbikat sonuçları raporlanır ve fotoğraflanır.
 - Yangın çıkmasını önlemek herkesin görevidir. Yangına müdahale etmek yalnızca eğitimli çalışanların görevidir.
 - Söndürücü, yanan maddenin üstüne püskürtülür. Duman veya aleve püskürtülmez.
-- Hoca, bulunduğunuz yerlerin (ör. AVM) acil çıkışlarına, söndürücülerine ve uyarı butonlarına bakmanızı önerdi. Yangın depremin doğal bir sonucudur.
-- **Final:** test şeklinde. Hoca önce yüz yüze olacağını düşündü. Öğrenciler rektörlüğün çevrim içi sınav duyurusunu hatırlattı. Duyuruları takip edin.
+- Yangın depremin doğal bir sonucudur. Bulunulan yerlerin (ör. AVM) acil çıkışları, söndürücüleri ve uyarı butonları önemlidir (00:15:17).
 
 ## Kısa Tekrar Notları
 
@@ -47,7 +43,7 @@
   - C: gazlar (metan, propan). Kuru kimyevi toz, CO₂.
   - D: metaller (lityum, sodyum, potasyum). Kuru metal tozu.
   - E: elektrik yangınları. CO₂, kuru kimyevi toz. Su ve köpük asla.
-- Acil çıkış: genel olarak en az 2 çıkış. 500 kişiyi aşarsa en az 3, 1000 kişiyi aşarsa en az 4 çıkış.
+- Acil çıkış: aksi belirtilmedikçe 25 kişiyi aşan yüksek tehlikeli mekanlarda ve 50 kişiyi aşan her mekanda en az 2 çıkış (00:14:21; altyazıda "açıldığı", büyük olasılıkla "aşıldığı"). 500 kişiyi aşarsa en az 3, 1000 kişiyi aşarsa en az 4 çıkış.
 - Yangın uyarı butonu: yerden 110-130 cm yükseklikte, kaçış yolları üzerinde.
 - Sesli uyarı: ortam sesinden en az 15 dB yüksek (yerden 150 cm'de ölçülür).
 - Yangın dolapları: her katta, aralarında en fazla 30 m.
@@ -130,7 +126,7 @@
 ### Söndürücülerin avantaj ve dezavantajları
 
 - **Sulu:** ucuz, kolay bulunur, kolay depolanır. Yakındaki depoları soğutmak için de kullanılır.
-- **CO₂:** yanmaz, çoğu maddeyle reaksiyona girmez. Kapalı ortamda boğucu etki gösterir.
+- **CO₂:** yanmaz, çoğu maddeyle reaksiyona girmez. Dezavantajı boğucu etki göstermesidir (00:39:34).
 - **Kuru kimyevi toz:** A, B ve C sınıfında etkilidir, kolay taşınır. Görüşü bozar, nefes almayı zorlaştırır, elektrik bağlantılarına zarar verir.
 
 ### Söndürücü kullanımı ve yangında davranış
@@ -150,19 +146,19 @@
 - Zehirli ve boğucu gazlar, patlama, çökme, kimyasal ve elektrik tehlikeleri.
 - **Geri tepme (backdraft):** korlaşma evresinde oksijen yetersizse tam yanma olmaz. Ortama birden oksijen girerse yangın şiddetle yeniden başlar.
 - Yangın gazları (CO, CO₂, azot oksitler) zehirlenme, boğulma, yanık ve gözde hasar yapar.
-- İnsan vücudunun dayanma süreleri (derste verilen): 120 °C'ye 15 dakika, 143 °C'ye 5 dakika, 177 °C'ye 1 dakikadan az.
+- İnsan vücudunun dayanma süreleri (derste verilen): 65 °C'ye sınırlı bir süre (00:29:31), 120 °C'ye 15 dakika, 143 °C'ye 5 dakika, 177 °C'ye 1 dakikadan az.
 
 ### Ders sonrası notlar
 
-- Derste "oksijen %16'nın altına inerse veya %23'ün üzerine çıkarsa yanıcılık azalır" dendi. Bu hatalıdır. Oksijen azalınca yanıcılık azalır. Oksijen %21'in üzerine çıktıkça yanıcılık **artar**. Oksijenle zenginleştirilmiş ortamlar (yaklaşık %23,5 üzeri) çok tehlikelidir.
-- Derste "duman yere doğru yayılır, bu yüzden eğilerek gideriz" dendi. Doğrusu tersidir: sıcak duman **yükselir** ve tavanda birikir. Zemine yakın hava daha temizdir. Bu yüzden eğilerek veya sürünerek ilerlenir.
-- Metanın alt patlama sınırı yaklaşık **%5**, üst patlama sınırı yaklaşık **%15**'tir (bazı standartlarda alt sınır %4,4). Derste "%4" dendi.
-- Türkiye'de geçerli TS EN 2 standardında yangın sınıfları A, B, C, D ve **F** (yemeklik yağ yangınları) şeklindedir. Elektrik yangınları ayrı bir sınıf değildir. Hoca da bazı kaynaklarda E sınıfının olmadığını belirtti.
-- Derste her 20 personel için bir ilk yardımcı dendi. İlkyardım Yönetmeliği'ne göre bu sayı tehlike sınıfına göre değişir: az tehlikeli işyerinde her 20, tehlikeli işyerinde her 15, çok tehlikeli işyerinde her 10 çalışana en az 1 ilk yardımcı.
-- Derste yangın uyarı butonuna erişim uzaklığı için 60 m dendi. Binaların Yangından Korunması Hakkında Yönetmelik'te bu uzaklık genellikle **30 m** olarak geçer. Güncel metni kontrol edin.
-- İşyerlerinde Acil Durumlar Hakkında Yönetmelik'e göre tatbikat en az **yılda bir** yapılır. Derste "6 ayda bir" diye bir süre de geçti. Hangi tatbikat için söylendiği kayıtta net değildir.
+- Derste "oksijen %16'nın altına inerse veya %23'ün üzerine çıkarsa yanıcılık azalır" dendi (00:23:58). Bu büyük olasılıkla hatalıdır. Oksijen azalınca yanıcılık azalır. Oksijen %21'in üzerine çıktıkça yanıcılık büyük olasılıkla **artar**. Oksijenle zenginleştirilmiş ortamlar (büyük olasılıkla yaklaşık %23,5 üzeri) çok tehlikelidir.
+- Altyazıda "duman ağırlıklı olarak buraya doğru yayılır" geçiyor (00:48:35). Yön söylenmiyor, bu yüzden hoca hatası sayılamaz. Sıcak duman büyük olasılıkla **yükselir** ve tavanda birikir. Zemine yakın hava büyük olasılıkla daha temizdir. Bu yüzden eğilerek veya sürünerek ilerlenir.
+- Derste metan için "%4" dendi (00:31:17). Metanın alt patlama sınırı büyük olasılıkla yaklaşık **%5** (bazı standartlarda %4,4), üst patlama sınırı büyük olasılıkla yaklaşık **%15**'tir.
+- Türkiye'de geçerli TS EN 2 standardında yangın sınıfları büyük olasılıkla A, B, C, D ve **F** (yemeklik yağ yangınları) şeklindedir. Elektrik yangınları büyük olasılıkla ayrı bir sınıf değildir. Hoca da literatürde ayrı bir E sınıfı görülmeyebileceğini belirtti (00:12:45).
+- Derste her 20 personel için bir ilk yardımcı dendi (00:23:33). İlkyardım Yönetmeliği'ne göre bu sayı büyük olasılıkla tehlike sınıfına göre değişir: az tehlikeli işyerinde her 20, tehlikeli işyerinde her 15, çok tehlikeli işyerinde her 10 çalışana en az 1 ilk yardımcı.
+- Derste yangın uyarı butonuna erişim uzaklığı için 60 m dendi (00:16:24). Binaların Yangından Korunması Hakkında Yönetmelik'te bu uzaklık büyük olasılıkla **30 m** olarak geçer. İki değer de güncel metinden kontrol edilmelidir.
+- Derste en azından yönetmelikteki gibi "seninle bir kez" (büyük olasılıkla senede bir kez) tatbikat yapılması gerektiği (00:22:40) ve "6 ayda 1" tahliye denemeleri yapılacağı (00:23:14) söylendi. İşyerlerinde Acil Durumlar Hakkında Yönetmelik'e göre tatbikat büyük olasılıkla en az **yılda bir** yapılır.
 - Derste yangın sıcaklığı için "lineer değil, geometrik artar" dendi. Ardından gelen sayısal örnek kayıtta anlaşılır değildir.
-- Sınav: Şubat 2023 depremlerinden sonra 2022-2023 Bahar dönemi uzaktan yürütüldü. Derste öğrenciler finalin çevrim içi olacağını belirtti ve hoca bunu kabul etti.
+- Derste yavaş yanma için "ortamda yeterli oksijen yoksa" dendi, hücre solunumu ve paslanma örnek verildi (00:25:29). Bu örnekler büyük olasılıkla yavaş oksidasyon örnekleridir, oksijen eksikliğine bağlı değildir.
 - Altyazıdaki "etalyası" ifadesi "ısı", "Springler" ifadesi "sprinkler", "Bileve" ifadesi "BLEVE" demektir.
 
 * **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

@@ -2,8 +2,6 @@
 
 ## Genel Konular
 
-- Dersin tarihi 16 Mayıs 2023 Salı. Ders çevrim içi yapıldı.
-  - Asıl ders yaklaşık 00:03:36'da başlar. Ders kısa tutuldu.
 - Risk yönetimi konusunun tekrarı
   - Risk: tehlikeli olayın olasılığı ile şiddetinin bileşkesi.
   - Olasılığı etkileyen faktörler, A ve B riski örneği, torna tezgahı örneği.
@@ -20,8 +18,8 @@
 - Risk değerlendirme ekibi
 - Risk analiz yöntemleri
   - Nitel (kalitatif) ve nicel (kantitatif) yöntemler.
-  - Matris, kontrol listeleri, Fine-Kinney, FMEA, hata ağacı analizi, HAZOP, olay sonuç analizi, HACCP.
-- Hata ağacı analizi bir sonraki derse kaldı.
+  - Matris, kontrol listeleri, Fine-Kinney, FMEA, hata ağacı analizi, HAZOP, kaza sonuç analizi, tehlike analizi ve kritik kontrol noktaları (büyük olasılıkla HACCP).
+- Hata ağacı analizi bu kayıtta işlenmedi.
 
 ## Hocanın Özellikle Vurguladığı Kısımlar
 
@@ -34,7 +32,6 @@
 - Önlemlerin uygulanmasından işveren sorumludur.
 - İş kazası sayısı azalmıyorsa alınan önlem etkili değildir.
 - Fine-Kinney tablolarındaki sayıları ezberlemeyin. Mantığını öğrenin.
-- Hoca, yetişmeyen konu olursa telafi dersi yapabileceğini söyledi.
 
 ## Kısa Tekrar Notları
 
@@ -107,7 +104,7 @@
   - İki adım: sorularla eksikleri bulmak, önlem kataloğuyla düzeltme önermek.
   - Örnek sorular: Yeterli sayıda yangın tüpü var mı? Havalandırmanın periyodik kontrolü yapıldı mı? Tehlikeli alan tanımlandı mı? Acil durum planı var ve görülebilir mi?
 - **Fine-Kinney:** kullanımı kolay ve yaygın. İşyeri istatistiklerini kullanmaya imkan verir.
-  - Risk = Olasılık (0,2-10) × Frekans (0,5-10) × Şiddet (1-100).
+  - Risk = Olasılık (0,2-10) × Frekans × Şiddet (1-100). <!-- BELİRSİZ: Frekans için 0,5-10 aralığı altyazıda yok (00:27:51). -->
   - Şiddette 100: birden çok ölüm veya önemli çevre felaketi.
 - **FMEA (Hata Türleri ve Etkileri Analizi):** otomotiv sektöründe yaygın. Sistemin parçalarındaki olası hataların bütün sisteme etkisini analiz eder.
   - Türleri: sistem, tasarım, proses, servis FMEA.
@@ -116,17 +113,18 @@
 
 ### Ders sonrası notlar
 
-- Fine-Kinney risk sınıfları genellikle şöyledir:
+- Fine-Kinney risk sınıfları için altyazıda yalnız şunlar geçer (00:29:04-00:29:41): "20'den küçük, 400'den büyük" aralığı; "kesin risk": eylem planına alınmalı; yüksek risk: kısa vadeli eylem planı; çok yüksek risk: çalışmaya ara verilerek derhal tedbir. Genel kaynaklarda sınıflar büyük olasılıkla şöyledir:
   - R < 20: önemsiz risk.
-  - 20-70: olası risk, gözetim altında tutulmalı.
-  - 70-200: önemli risk, uzun dönemde giderilmeli.
+  - 20-70: olası risk, gözetim altında tutulmalı. <!-- BELİRSİZ: Aralık altyazıda yok. -->
+  - 70-200: önemli risk, uzun dönemde giderilmeli. <!-- BELİRSİZ: Aralık altyazıda yok. Altyazıda buna büyük olasılıkla karşılık gelen sınıf "kesin risk, eylem planına alınmalı" diye geçiyor. -->
   - 200-400: yüksek risk, kısa dönemde giderilmeli.
   - R > 400: tolerans gösterilemez risk, çalışma durdurularak hemen önlem alınmalı.
-  - Derste "2-4 arası" ve "4-100'den büyük" diye geçen değerler bu 200-400 ve 400'den büyük aralıklarıdır.
+  - Derste "2-4 arası" ve "4-100'den büyük" diye geçen değerler büyük olasılıkla bu 200-400 ve 400'den büyük aralıklarıdır.
 - Altyazıda Fine-Kinney faktörleri için "F frekans, D sonuçların derecesi" geçer. Türkçe kaynaklarda formül genellikle R = O × F × Ş olarak yazılır.
 - Derste nitel ve nicel yöntemler için ikisi de "nitel" diye söylendi. Doğrusu: kalitatif = nitel, kantitatif = nicel.
 - Kontrol listesi yöntemine "birinci risk analizi" dendi. Bu yöntem genellikle ön (ilk) değerlendirme aracı olarak kullanılır.
-- Yenileme süreleri İSG Risk Değerlendirmesi Yönetmeliği md. 12'de yer alır.
-- Altyazıdaki "tecrüt, dilatım" ifadeleri "tecrit (izolasyon)" demektir. "Beyaz ev sendromu" ifadesi **beyaz parmak hastalığı**dır.
+- Yenileme süreleri büyük olasılıkla İSG Risk Değerlendirmesi Yönetmeliği'nin ilgili maddesinde (büyük olasılıkla md. 12) yer alır. Derste "minimum süreler" dendi (00:19:39). Bunlar büyük olasılıkla en geç (azami) aralıklardır, hoca da "en geç" diyor (00:19:43).
+- Altyazıda "tecrüt, dilatım, kontrol, izolasyon" geçiyor (00:15:10). "Tecrüt" büyük olasılıkla "tecrit (izolasyon)" demektir. <!-- BELİRSİZ: "dilatım" anlaşılamadı. --> "Beyaz ev sendromu" (00:08:09) ifadesi büyük olasılıkla **beyaz parmak hastalığı**dır.
+- Önlem sırası: hoca yönetsel önlemleri mühendislik önlemlerinden önce söyledi (00:15:13). Genel kaynaklarda büyük olasılıkla mühendislik önlemleri önce gelir.
 
 * **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
