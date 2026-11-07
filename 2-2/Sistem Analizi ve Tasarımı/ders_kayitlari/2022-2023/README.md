@@ -9,63 +9,62 @@
 * **Akademik Yıl:** 2022-2023
 * **Şube:** BLM2042 - 2
 
-Bu dizin, ilgili ders kayıtlarının altyazı özetlerini, çalışma notlarını ve PDF kaynaklarını içermektedir.
+Bu dizin, ilgili ders kayıtlarının altyazılarını, kısa notlarını ve genişletilmiş notlarını içermektedir.
+
+* **Kısa not:** Tekrar için. Dersin konuları, hocanın vurguları ve kısa tekrar maddeleri.
+* **Genişletilmiş not:** Dersi izlemeden öğrenmek için. Dersin anlatım akışını baştan sona, örnekleri ve soru-cevaplarıyla anlatır.
+* `altyazilar/`: ders kayıtlarının altyazıları (.srt). Notların PDF'leri `kisa_notlar/` ve `genisletilmis_notlar/` klasörlerinde, markdown kaynakları bu klasörlerin içindeki `markdown/` klasöründedir.
 
 ## 📚 Ders Müfredatı ve Belge Dizini
 
-Aşağıdaki tabloda her bir dersin konusu, kaynak markdown dosyası ve doğrudan indirilebilir PDF formatındaki derlenmiş halleri listelenmiştir. Ders numaraları, kayıt arşivindeki ders kaydı sıra numaralarıdır (hafta numarası değildir).
+Aşağıdaki tabloda her bir dersin konusu ile kısa ve genişletilmiş notlarının markdown ve PDF halleri listelenmiştir. Ders numaraları, kayıt arşivindeki ders kaydı sıra numaralarıdır (hafta numarası değildir).
 
-| Ders No | Ders İçeriği / Konu Başlıkları | Kaynak Notlar (Markdown) | Çalışma Dosyası (PDF) |
+| Ders No | Ders İçeriği / Konu Başlıkları | Kısa Not | Genişletilmiş Not |
 | :---: | :--- | :---: | :---: |
-| **Ders 1** | Tanışma, Dersin İşleyişi, Proje Kuralları ve Sistem ile Bilgi Sistemi Kavramlarına Giriş | [Özet](altyazi_ozetleri/ders_1_ozet.md) | [PDF (İndir)](ders_1_ozet.pdf) |
-| **Ders 2** | Bilgi Sistemi Türleri, Bilgi Sisteminin Tarafları, Geliştirme Süreci ve Süreç Modelleri | [Özet](altyazi_ozetleri/ders_2_ozet.md) | [PDF (İndir)](ders_2_ozet.pdf) |
-| **Ders 3** | Ön İnceleme, Fizibilite Türleri, Ekonomik Fizibilite Yöntemleri ve MS Project ile Zaman Fizibilitesi | [Özet](altyazi_ozetleri/ders_3_ozet.md) | [PDF (İndir)](ders_3_ozet.pdf) |
-| **Ders 4** | Gereksinim Analizi, İş Analizi, Kullanım Senaryosu Modellemesi ve Bilgi Toplama Yöntemleri | [Özet](altyazi_ozetleri/ders_4_ozet.md) | [PDF (İndir)](ders_4_ozet.pdf) |
-| **Ders 5** | Fonksiyonel Çözümleme: Veri Akış Diyagramları, Süreç Tanım Formları, Karar Tabloları ve Veri Sözlüğü | [Özet](altyazi_ozetleri/ders_5_ozet.md) | [PDF (İndir)](ders_5_ozet.pdf) |
-| **Ders 6** | Problem Uzayının Modellenmesi: Kavramsal Sınıflar, Bağlantılar, Öz Nitelikler ve Kavramsal Sınıf Diyagramı | [Özet](altyazi_ozetleri/ders_6_ozet.md) | [PDF (İndir)](ders_6_ozet.pdf) |
-| **Ders 7** | Sistem Tasarımı: Ön Tasarım, Altyapı Kararları, Girdi-Çıktı-Ara Birim Tasarımı ve Yapı Diyagramı | [Özet](altyazi_ozetleri/ders_7_ozet.md) | [PDF (İndir)](ders_7_ozet.pdf) |
-| **Ders 8** | Nesneye Dayalı Tasarım: Etkileşim Diyagramları, GRASP Sorumluluk Atama Prensipleri ve Tasarım Sınıf Diyagramı | [Özet](altyazi_ozetleri/ders_8_ozet.md) | [PDF (İndir)](ders_8_ozet.pdf) |
-| **Ders 9** | Veri Tasarımı: Veri Modelleri, Varlık-İlişki Modeli ve Tablolara Dönüştürme | [Özet](altyazi_ozetleri/ders_9_ozet.md) | [PDF (İndir)](ders_9_ozet.pdf) |
-| **Ders 10** | Uygulama: Spor Salonu Sistemi Örneğiyle Fizibilite, Gereksinim Analizi ve Sistem Tasarımı Diyagramları | [Özet](altyazi_ozetleri/ders_10_ozet.md) | [PDF (İndir)](ders_10_ozet.pdf) |
-| **Ders 11** | Kodlama, Yazılım Kalite Faktörleri, Test Aşamaları, Yeni Sisteme Geçiş Yöntemleri ve Bakım | [Özet](altyazi_ozetleri/ders_11_ozet.md) | [PDF (İndir)](ders_11_ozet.pdf) |
-| **Ders 12** | Dönem Projesi Sunumları 1: Restoran, Lastik Oteli, Sinema, Fitness, Pet Shop, Otel, Araç Kiralama | [Özet](altyazi_ozetleri/ders_12_ozet.md) | [PDF (İndir)](ders_12_ozet.pdf) |
-| **Ders 13** | Dönem Projesi Sunumları 2: Market, Scooter, Bankacılık, Kütüphane, Süpermarket ve Dönem Kapanışı | [Özet](altyazi_ozetleri/ders_13_ozet.md) | [PDF (İndir)](ders_13_ozet.pdf) |
+| **Ders 1** | Sistem ile Bilgi Sistemi Kavramlarına Giriş | [Markdown](kisa_notlar/markdown/ders_1_ozet.md) · [PDF](kisa_notlar/ders_1_ozet.pdf) | [Markdown](genisletilmis_notlar/markdown/ders_1_genisletilmis.md) · [PDF](genisletilmis_notlar/ders_1_genisletilmis.pdf) |
+| **Ders 2** | Bilgi Sistemi Türleri, Bilgi Sisteminin Tarafları, Geliştirme Süreci ve Süreç Modelleri | [Markdown](kisa_notlar/markdown/ders_2_ozet.md) · [PDF](kisa_notlar/ders_2_ozet.pdf) | [Markdown](genisletilmis_notlar/markdown/ders_2_genisletilmis.md) · [PDF](genisletilmis_notlar/ders_2_genisletilmis.pdf) |
+| **Ders 3** | Ön İnceleme, Fizibilite Türleri, Ekonomik Fizibilite Yöntemleri ve MS Project ile Zaman Fizibilitesi | [Markdown](kisa_notlar/markdown/ders_3_ozet.md) · [PDF](kisa_notlar/ders_3_ozet.pdf) | [Markdown](genisletilmis_notlar/markdown/ders_3_genisletilmis.md) · [PDF](genisletilmis_notlar/ders_3_genisletilmis.pdf) |
+| **Ders 4** | Gereksinim Analizi, İş Analizi, Kullanım Senaryosu Modellemesi ve Bilgi Toplama Yöntemleri | [Markdown](kisa_notlar/markdown/ders_4_ozet.md) · [PDF](kisa_notlar/ders_4_ozet.pdf) | [Markdown](genisletilmis_notlar/markdown/ders_4_genisletilmis.md) · [PDF](genisletilmis_notlar/ders_4_genisletilmis.pdf) |
+| **Ders 5** | Fonksiyonel Çözümleme: Veri Akış Diyagramları, Süreç Tanım Formları, Karar Tabloları ve Veri Sözlüğü | [Markdown](kisa_notlar/markdown/ders_5_ozet.md) · [PDF](kisa_notlar/ders_5_ozet.pdf) | [Markdown](genisletilmis_notlar/markdown/ders_5_genisletilmis.md) · [PDF](genisletilmis_notlar/ders_5_genisletilmis.pdf) |
+| **Ders 6** | Problem Uzayının Modellenmesi: Kavramsal Sınıflar, Bağlantılar, Öz Nitelikler ve Kavramsal Sınıf Diyagramı | [Markdown](kisa_notlar/markdown/ders_6_ozet.md) · [PDF](kisa_notlar/ders_6_ozet.pdf) | [Markdown](genisletilmis_notlar/markdown/ders_6_genisletilmis.md) · [PDF](genisletilmis_notlar/ders_6_genisletilmis.pdf) |
+| **Ders 7** | Sistem Tasarımı: Ön Tasarım, Altyapı Kararları, Girdi-Çıktı-Ara Birim Tasarımı ve Yapı Diyagramı | [Markdown](kisa_notlar/markdown/ders_7_ozet.md) · [PDF](kisa_notlar/ders_7_ozet.pdf) | [Markdown](genisletilmis_notlar/markdown/ders_7_genisletilmis.md) · [PDF](genisletilmis_notlar/ders_7_genisletilmis.pdf) |
+| **Ders 8** | Nesneye Dayalı Tasarım: Etkileşim Diyagramları, GRASP Sorumluluk Atama Prensipleri ve Tasarım Sınıf Diyagramı | [Markdown](kisa_notlar/markdown/ders_8_ozet.md) · [PDF](kisa_notlar/ders_8_ozet.pdf) | [Markdown](genisletilmis_notlar/markdown/ders_8_genisletilmis.md) · [PDF](genisletilmis_notlar/ders_8_genisletilmis.pdf) |
+| **Ders 9** | Veri Tasarımı: Veri Modelleri, Varlık-İlişki Modeli ve Tablolara Dönüştürme | [Markdown](kisa_notlar/markdown/ders_9_ozet.md) · [PDF](kisa_notlar/ders_9_ozet.pdf) | [Markdown](genisletilmis_notlar/markdown/ders_9_genisletilmis.md) · [PDF](genisletilmis_notlar/ders_9_genisletilmis.pdf) |
+| **Ders 10** | Uygulama: Spor Salonu Sistemi Örneğiyle Fizibilite, Gereksinim Analizi ve Sistem Tasarımı Diyagramları | [Markdown](kisa_notlar/markdown/ders_10_ozet.md) · [PDF](kisa_notlar/ders_10_ozet.pdf) | [Markdown](genisletilmis_notlar/markdown/ders_10_genisletilmis.md) · [PDF](genisletilmis_notlar/ders_10_genisletilmis.pdf) |
+| **Ders 11** | Kodlama, Yazılım Kalite Faktörleri, Test Aşamaları, Yeni Sisteme Geçiş Yöntemleri ve Bakım | [Markdown](kisa_notlar/markdown/ders_11_ozet.md) · [PDF](kisa_notlar/ders_11_ozet.pdf) | [Markdown](genisletilmis_notlar/markdown/ders_11_genisletilmis.md) · [PDF](genisletilmis_notlar/ders_11_genisletilmis.pdf) |
+| **Ders 12** | Dönem Projesi Sunumları 1: Restoran, Lastik Oteli, Sinema, Fitness, Pet Shop, Otel, Araç Kiralama | [Markdown](kisa_notlar/markdown/ders_12_ozet.md) · [PDF](kisa_notlar/ders_12_ozet.pdf) | [Markdown](genisletilmis_notlar/markdown/ders_12_genisletilmis.md) · [PDF](genisletilmis_notlar/ders_12_genisletilmis.pdf) |
+| **Ders 13** | Dönem Projesi Sunumları 2: Market, Scooter, Bankacılık, Kütüphane ve Süpermarket | [Markdown](kisa_notlar/markdown/ders_13_ozet.md) · [PDF](kisa_notlar/ders_13_ozet.pdf) | [Markdown](genisletilmis_notlar/markdown/ders_13_genisletilmis.md) · [PDF](genisletilmis_notlar/ders_13_genisletilmis.pdf) |
 
 > [!NOTE]
 > 25 Nisan 2023 haftası vize haftasıdır. 12 ve 13 numaralı kayıtlar dönem projesi sunumlarıdır.
 
 ## 🎯 Derslerin Detaylı Özetleri ve Kazanımları
 
-### 🔹 Ders 1: Tanışma, Dersin İşleyişi, Proje Kuralları ve Sistem ile Bilgi Sistemi Kavramlarına Giriş
+### 🔹 Ders 1: Sistem ile Bilgi Sistemi Kavramlarına Giriş
 * **Genel Konular:**
-  - Dersin tarihi 28 Şubat 2023 Salı. Ders Zoom üzerinden, çevrim içi yapıldı.
-    - Asıl ders yaklaşık 00:03:47'de başlar. Kaydın başı bekleme kısmıdır.
-  - Dönemin özel durumu
-    - Deprem nedeniyle bahar dönemi çevrim içi yürütülüyor. Nisan'da yeniden değerlendirme yapılacak.
-  - Dersin işleyişi
-    - Ders Salı günleri 2 saat (yaklaşık 13:00-15:00). Hocanın odası D127.
-  - 14 haftalık ders planı
+  - Hoca: Göksel Biricik.
+    - Konu anlatımı yaklaşık 00:38:00'de başlar.
+  - Kaynaklar
+    - Oya Hoca ile birlikte yazdıkları "Bilgisayar Bilimlerinde Sistem Analizi ve Tasarımı" kitabı ve Satzinger'in "Systems Analysis and Design in a Changing World" kitabının 6. baskısı.
+  - Ders planı
     - Giriş, bilgi sistemi türleri ve tarafları, geliştirme süreci.
-  - Değerlendirme ve proje
-    - Vize %30, proje %30, final %40.
   - Sistem kavramına giriş
     - TDK sözlüğündeki "sistem" anlamlarından bilgi sistemi özelliklerinin çıkarılması.
 * **Hocanın Vurgusu:**
-  - Projede veya sınavda kopya tespit edilirse o kriterden not sıfır olur.
-    - Ayrıca disiplin işlemi başlatılır.
-  - Sınavlara girmeyen veya projeyi vermeyen öğrenci F0 alabilir.
-    - Yoklama alınmaması bu kuralı değiştirmiyor.
   - Sistemin tanımını tam olarak bilin.
     - Belli bir amacı gerçekleştirmek için bir arada çalışan, birbiriyle ilişkili parçalardan oluşan, girdi ve çıktıları olan, sınırları belirlenmiş bütün yapıya sistem denir.
   - Bilgi sisteminin bileşenlerini "D-Y-İ-V-A" diye hatırlayın: Donanım, Yazılım, İnsan, Veri, Ağ.
   - Bilgi sistemi ile bilgisayar programı arasındaki temel fark ölçektir.
     - Bir programı tek kişi yazabilir; bir bilgi sistemini tek kişi kısa sürede üretemez.
-* **Detaylı Açıklamalar:** Hoca dersi deprem sonrası çevrim içi döneme dair bir değerlendirmeyle açtı. Ardından dersin kaynaklarını, haftalık planını ve değerlendirme kriterlerini anlattı. Konu anlatımı yaklaşık 00:38:00'de "sistem nedir?" sorusuyla başlar.
+  - Tasarımda değişimlerden etkilenmeyecek yapılar kurmaya çalışın.
+    - Bir bileşendeki değişiklik, ona bağlı bütün bileşenleri etkiler.
+  - Bilgi, günümüzde en değerli kaynaklardan biridir.
+    - Doğru kullanılan bilgi büyük rekabet avantajı sağlar.
+* **Detaylı Açıklamalar:** Konu anlatımı yaklaşık 00:38:00'de "sistem nedir?" sorusuyla başlar.
 
 ### 🔹 Ders 2: Bilgi Sistemi Türleri, Bilgi Sisteminin Tarafları, Geliştirme Süreci ve Süreç Modelleri
 * **Genel Konular:**
-  - Dersin tarihi 7 Mart 2023 Salı. Ders Zoom üzerinden yapıldı.
-    - Asıl ders yaklaşık 00:07:18'de başlar.
+  - Asıl ders yaklaşık 00:07:18'de başlar.
   - Bilgi sistemi türleri
     - Amaca göre altı tür ve dört seviye.
   - Bilgi sisteminin tarafları
@@ -84,14 +83,12 @@ Aşağıdaki tabloda her bir dersin konusu, kaynak markdown dosyası ve doğruda
   - Sistem analisti bu dersin odak noktasıdır.
     - İş birimi ile teknik ekip arasında köprü ve tercümandır.
   - Üst düzey yönetici (sponsor) için en önemli şey maliyet-fayda analizidir.
-* **Detaylı Açıklamalar:** Ders üç başlıkta ilerledi: bilgi sistemi türleri, bilgi sisteminin tarafları ve bilgi sistemi geliştirme süreci. Hoca dersi ara vermeden, kompakt anlatmaya çalıştı. Bunun amacı, öğrencilerin kaydı sonradan tekrar izleyebilmesiydi.
+* **Detaylı Açıklamalar:** Ders üç başlıkta ilerledi: bilgi sistemi türleri, bilgi sisteminin tarafları ve bilgi sistemi geliştirme süreci.
 
 ### 🔹 Ders 3: Ön İnceleme, Fizibilite Türleri, Ekonomik Fizibilite Yöntemleri ve MS Project ile Zaman Fizibilitesi
 * **Genel Konular:**
-  - Dersin tarihi 14 Mart 2023 Salı. Ders Zoom üzerinden yapıldı.
-    - İlk 11 dakika proje gruplarının duyurusudur. Konu anlatımı yaklaşık 00:12'de başlar.
-  - Proje grupları ve konular
-    - Gruplar A'dan P'ye kadar harflendi. Konular: pet shop, fitness center, otel, bankacılık, market, sinema bileti, kütüphane, maç bileti, araç kiralama, ulaşım firması, restoran, scooter kiralama vb.
+  - Asıl konu anlatımı yaklaşık 00:12'de başlar.
+  - Yaklaşık 01:16'dan sonra asistan Elçin Hoca zaman fizibilitesini MS Project ile uygulamalı anlatır.
   - Bilgi sistemi geliştirme sürecinin ilk aşaması: ön inceleme
     - Temel soru: Bu sisteme gerçekten ihtiyaç var mı?
   - İkinci aşama: fizibilite çalışması
@@ -113,14 +110,11 @@ Aşağıdaki tabloda her bir dersin konusu, kaynak markdown dosyası ve doğruda
     - Örnek: Ekip .NET Core bilmiyorsa eğitim süresi ve maliyeti fizibiliteye eklenmelidir.
   - Fizibilite matrisinde en az 2, tercihen 3 veya daha fazla alternatif sistem önerin.
     - Genellikle tek bir sütun (bir alternatif) seçilir. Alternatifleri parça parça birleştirmek pek tercih edilmez.
-* **Detaylı Açıklamalar:** Ders, bilgi sistemi geliştirme sürecinin ilk iki aşamasını anlatır: ön inceleme ve fizibilite. Hoca bu aşamaları şelale (waterfall) modeli üzerinden ele alır. Dersin son yarım saatinde asistan, zaman fizibilitesinin nasıl yapıldığını MS Project üzerinde gösterir.
+* **Detaylı Açıklamalar:** Ders, bilgi sistemi geliştirme sürecinin ilk iki aşamasını anlatır: ön inceleme ve fizibilite. Hoca bu aşamaları şelale (waterfall) modeli üzerinden ele alır. Dersin yaklaşık son 40 dakikasında asistan, zaman fizibilitesinin nasıl yapıldığını MS Project üzerinde gösterir.
 
 ### 🔹 Ders 4: Gereksinim Analizi, İş Analizi, Kullanım Senaryosu Modellemesi ve Bilgi Toplama Yöntemleri
 * **Genel Konular:**
-  - Dersin tarihi 21 Mart 2023 Salı. Ders Zoom üzerinden yapıldı.
-    - Kaydın ilk 5 dakikası bekleme kısmıdır. Ders yaklaşık 00:05:25'te başlar.
-  - Proje durumu
-    - Proje grupları, konular ve temel modüller Cuma günü paylaşıldı. İtiraz gelmediği için liste kesinleşti.
+  - Asıl konu anlatımı yaklaşık 00:07:54'te başlar.
   - Bilgi sistemi geliştirme sürecinin üçüncü aşaması: gereksinim analizi
     - İki adımı var: iş analizi (business requirements) ve işlevsel çözümleme.
   - Gereksinim analizinin çıktıları
@@ -129,6 +123,8 @@ Aşağıdaki tabloda her bir dersin konusu, kaynak markdown dosyası ve doğruda
     - Müşteri ne istediğini biliyorsa: iş akış diyagramları.
   - SRS (Software/System Requirements Specification) dokümanına giriş.
   - İdari incelemede yönetimin baktığı noktalar.
+  - Kullanım senaryosu modellemesi (use case modeling)
+    - Kullanım senaryosu diyagramı: aktör, senaryo (elips), ilişki, sistem sınırı.
 * **Hocanın Vurgusu:**
   - Kullanım senaryolarında mutlaka **etken cümle** kurun.
     - Edilgen cümlede işi kimin yaptığı belli olmaz.
@@ -144,8 +140,7 @@ Aşağıdaki tabloda her bir dersin konusu, kaynak markdown dosyası ve doğruda
 
 ### 🔹 Ders 5: Fonksiyonel Çözümleme: Veri Akış Diyagramları, Süreç Tanım Formları, Karar Tabloları ve Veri Sözlüğü
 * **Genel Konular:**
-  - Dersin tarihi 28 Mart 2023 Salı. Ders Zoom üzerinden yapıldı.
-    - Asıl anlatım yaklaşık 00:04'te başlar. Slayt dosyası "BLM2042-05".
+  - Asıl anlatım yaklaşık 00:04'te başlar.
   - Sistem analizinin ikinci aşaması: çözümleme
     - İş analizinde bulunan gereksinimler teknik bir dile dönüştürülür. Bu, tasarıma geçmeden önceki ilk teknik adımdır.
   - Gereksinim analizinin amaçları
@@ -162,9 +157,9 @@ Aşağıdaki tabloda her bir dersin konusu, kaynak markdown dosyası ve doğruda
   - Veri akışlarının üzerine yalnızca isim yazılır, fiil yazılmaz.
     - "Siparişi doğrula" yanlıştır. Doğrusu "doğrulanmış sipariş" gibi bir isimdir. "Tamamla" gibi eylemler süreç kutusunun işidir.
   - Süreçler emir kipindeki fiillerle adlandırılır.
-    - Örnek: "Randevu al", "Fatura hazırla".
+    - Örnek: "Randevu al".
   - Her süreçte girdi, işlem ve çıktı olmalıdır.
-    - Yalnız çıktısı olan süreç ve yalnız girdisi olan süreç hatalıdır. Literatürde bunlara "mucize" ve "kara delik" denir.
+    - Yalnız çıktısı olan süreç ve yalnız girdisi olan süreç hatalıdır.
   - Girdiler, çıktıyı üretmeye yetecek kadar olmalıdır.
     - Maaş hesaplamak için yalnız çalışma saatleri yetmez. Çalışan bilgisi ve ücret tanımları da gerekir.
   - Veri işlenmeden bir yerden bir yere akamaz.
@@ -173,8 +168,7 @@ Aşağıdaki tabloda her bir dersin konusu, kaynak markdown dosyası ve doğruda
 
 ### 🔹 Ders 6: Problem Uzayının Modellenmesi: Kavramsal Sınıflar, Bağlantılar, Öz Nitelikler ve Kavramsal Sınıf Diyagramı
 * **Genel Konular:**
-  - Dersin tarihi 4 Nisan 2023 Salı.
-    - Hibrit eğitime geçilmişti ama sınıfa gelen olmadı. Ders yine Zoom üzerinden yapıldı.
+  - Asıl anlatım yaklaşık 00:03:49'da başlar.
   - Geçen haftaların tekrarı
     - İş analizi: business requirements dokümanı ve use case modellemesi.
   - Problem uzayının modellenmesi (nesneye yönelik çözümleme)
@@ -200,8 +194,7 @@ Aşağıdaki tabloda her bir dersin konusu, kaynak markdown dosyası ve doğruda
 
 ### 🔹 Ders 7: Sistem Tasarımı: Ön Tasarım, Altyapı Kararları, Girdi-Çıktı-Ara Birim Tasarımı ve Yapı Diyagramı
 * **Genel Konular:**
-  - Dersin tarihi 11 Nisan 2023 Salı. Ders Zoom üzerinden yapıldı.
-    - Asıl ders yaklaşık 00:01'de başlar.
+  - Asıl ders yaklaşık 00:01:33'te başlar.
   - Önceki aşamaların tekrarı
     - Ön inceleme ve proje başlatma belgesi (project charter).
   - Sistem tasarımı aşamasına giriş
@@ -229,8 +222,7 @@ Aşağıdaki tabloda her bir dersin konusu, kaynak markdown dosyası ve doğruda
 
 ### 🔹 Ders 8: Nesneye Dayalı Tasarım: Etkileşim Diyagramları, GRASP Sorumluluk Atama Prensipleri ve Tasarım Sınıf Diyagramı
 * **Genel Konular:**
-  - Dersin tarihi 18 Nisan 2023 Salı. Ders Zoom üzerinden yapıldı.
-    - Asıl ders yaklaşık 00:04'te başlar. Başta slaytların paylaşılması hakkında kısa bir konuşma var.
+  - Asıl ders yaklaşık 00:04'te başlar.
   - Önceki dersin tekrarı
     - Ön tasarım ve ayrıntılı tasarım.
   - Nesneye dayalı tasarım modelinin oluşturulması
@@ -256,9 +248,7 @@ Aşağıdaki tabloda her bir dersin konusu, kaynak markdown dosyası ve doğruda
 
 ### 🔹 Ders 9: Veri Tasarımı: Veri Modelleri, Varlık-İlişki Modeli ve Tablolara Dönüştürme
 * **Genel Konular:**
-  - Dersin tarihi 2 Mayıs 2023 Salı. Ders Zoom üzerinden yapıldı.
-    - Asıl ders yaklaşık 00:01'de başlar. Hoca bunun dönemin 10. haftası olduğunu söyledi.
-  - Vize sonuçları ve final bilgisi
+  - Asıl ders yaklaşık 00:03:49'da başlar.
   - Dersin geri kalanının planı
     - Tasarım aşamasının son konusu: veri tasarımı.
   - Veritabanı tasarım süreci
@@ -268,9 +258,8 @@ Aşağıdaki tabloda her bir dersin konusu, kaynak markdown dosyası ve doğruda
   - Varlık-ilişki (Entity-Relationship, ER) modeli
     - Semboller: varlık, öznitelik, anahtar öznitelik, ilişki.
   - ER modelinin tablolara dönüştürülmesi: birincil anahtar (primary key) ve yabancı anahtar (foreign key).
+  - Fizibilite ve analiz belgelerinde beklentiler.
 * **Hocanın Vurgusu:**
-  - Vize testti ve sistem otomatik notlandırdı.
-    - Bir öğrenciye göre ortalama 82.
   - Süreçte bir hata ne kadar erken yapılır ve ne kadar geç fark edilirse maliyeti o kadar yüksek olur.
   - Bakım aşaması bir yazılımın kullanıldığı bütün ömür boyunca sürer.
     - En maliyetli, ama aynı zamanda en çok para kazandıran aşamadır.
@@ -278,31 +267,29 @@ Aşağıdaki tabloda her bir dersin konusu, kaynak markdown dosyası ve doğruda
     - Normalizasyon ayrıntıları Veritabanı Yönetim Sistemleri dersinde işlenecek.
   - Bilgi sistemlerinde yalnız NoSQL veya yalnız MongoDB kullanmak zorunda değilsiniz.
     - Büyük ve zamanla değişen veri için yeni çözümler, iş mantığı verisi için ilişkisel veritabanı birlikte kullanılabilir.
+  - Veritabanı katmanında kod (saklı yordam) yazmak eskiden performans için yapılırdı.
+    - Günümüzde kavramların ayrı tutulması ilkesi gereği pek sevilmiyor.
 * **Detaylı Açıklamalar:** Tasarım aşamasında son konu veri tasarımıdır. Sonra süreç şöyle devam eder:
 
 ### 🔹 Ders 10: Uygulama: Spor Salonu Sistemi Örneğiyle Fizibilite, Gereksinim Analizi ve Sistem Tasarımı Diyagramları
 * **Genel Konular:**
-  - Dersin tarihi 9 Mayıs 2023 Salı. Ders Zoom üzerinden yapıldı.
-    - Bu kayıt bir uygulama dersidir. Hoca Göksel Biricik oturumu açıp asistana devretti (00:01:58).
+  - Bu kayıt bir uygulama dersidir. Hoca Göksel Biricik oturumu açıp asistana devretti (00:01:58).
+    - Asistanın adı kayıtta net anlaşılmıyor. Altyazıda "Atıcı Hocam" diye geçiyor.
   - Örnek proje: Spor Salonu Sistemi
     - Problem tanımı ve aktörler.
-  - Slayt dosyası "SAvT - uyg2.v3", 42 slayt. Asistan slaytları paylaşacağını söyledi.
 * **Hocanın Vurgusu:**
-  - Bu derste gösterilen adımları kendi proje raporlarınızda (ve bitirme projesinde) uygulayacaksınız.
-    - Raporlarda teknik ve ekonomik fizibiliteyi ayrıntılı açıklamanız isteniyor.
-  - Örneğe değil diyagramların kurallarına odaklanın.
+  - Sadece örneğe odaklanmayın; ER, use case ve veri akış gibi diyagramlar önemlidir (00:46:44).
   - Veri akış diyagramında her işlemin mutlaka bir girdisi ve bir çıktısı olmalı.
   - Fizibilite matrisinde tek sistem değil, birden çok alternatif önerin.
     - Karşılaştırma ancak böyle yapılır.
   - Yazılım geliştirme modelini projeye göre doğru seçin.
     - Şelale modelinde geri besleme yoktur. Daha önce benzerini yapmadığınız bir projede uygun değildir.
+  - Gantt planı sarkarsa ara toplantıda belirtin ve planı güncelleyin.
+    - MS Project, bir işin süresi değişince sonraki işlerin tarihlerini otomatik kaydırır.
 
 ### 🔹 Ders 11: Kodlama, Yazılım Kalite Faktörleri, Test Aşamaları, Yeni Sisteme Geçiş Yöntemleri ve Bakım
 * **Genel Konular:**
-  - Dersin tarihi 16 Mayıs 2023 Salı. Ders Zoom üzerinden yapıldı.
-    - Başta birkaç dakika hocanın mikrofonu kapalı kalıyor. Anlatım yaklaşık 00:08'de başlar.
-  - Proje duyuruları
-    - Son iki hafta proje sunumları yapılacak. Teslim için bir ödev açılacak.
+  - Anlatım yaklaşık 00:11:51'de başlar.
   - Kodlama (gerçekleştirme)
     - Tasarımdan sonra gelir. Kodlama standartları, okunabilirlik, açıklama satırları, anlamlı isimlendirme.
   - Programlama dili seçimi ölçütleri.
@@ -312,6 +299,8 @@ Aşağıdaki tabloda her bir dersin konusu, kaynak markdown dosyası ve doğruda
     - Metrikler, ölçüm, kilometre taşlarında gözden geçirme, test planları.
   - Test türleri
     - Fonksiyonel, performans, dayanıklılık, yapısal testler.
+  - Test adımları
+    - Birim, bütünleme, onaylama, sistem testi (test spirali).
 * **Hocanın Vurgusu:**
   - Tasarım olmadan, en azından bir tasarım fikri olmadan koda geçmek çoğu zaman kötü ya da yanlış bir ürüne götürür.
     - Çevik süreçlerde bile küçük bir analiz ve tasarımdan sonra kodlanır.
@@ -327,48 +316,36 @@ Aşağıdaki tabloda her bir dersin konusu, kaynak markdown dosyası ve doğruda
 
 ### 🔹 Ders 12: Dönem Projesi Sunumları 1: Restoran, Lastik Oteli, Sinema, Fitness, Pet Shop, Otel, Araç Kiralama
 * **Genel Konular:**
-  - Dersin tarihi 23 Mayıs 2023 Salı. Ders Zoom üzerinden yapıldı.
-    - Bu ders tamamen dönem projesi sunumlarıyla geçti. Hoca yeni konu anlatmadı.
-  - Sunum düzeni
-    - Her grup yaklaşık 15 dakika sunum yaptı. Önce projenin aşamaları, sonra kısa bir demo gösterildi.
+  - Bu ders tamamen dönem projesi sunumlarıyla geçti. Hoca yeni konu anlatmadı.
   - Sunulan projeler
     - Restoran bilgi sistemi (Python, waterfall modeli, veri akış diyagramları).
-  - Duyuru
-    - Telafi sınavı 30 Mayıs 2023 Salı, 12:00-13:00 arasında, dersten hemen önceki saatte yapılacak.
 * **Hocanın Vurgusu:**
   - Kullanım senaryolarında cümleleri etken ve özneli yazın.
     - "Ödeme alınır" yerine "Çalışan ödemeyi alır" yazın.
   - Senaryodaki birinci aktör ile diyagramdaki aktör tutarlı olmalı.
-    - Restoran grubunda diyagramda "müşteri", senaryoda "çalışan" yazıyordu. Hoca bunu sordu.
+    - Bir grupta diyagramda "müşteri", senaryoda "çalışan" yazıyordu. Hoca bunu sordu.
   - Nesne yönelik yazdıysanız veri akış diyagramı ve yapı diyagramı kullanmayın.
     - Nesne yönelik yaklaşımda kullanım durumu (use case), sınıf ve ardışıl (sequence) diyagramları kullanılır.
   - Ardışıl diyagram sayısı en az kullanım senaryosu sayısı kadar olmalı.
     - Her senaryo bir akış, yani bir sorumluluktur. Her senaryo en az bir ardışıl diyagram üretir.
   - Sınıfları ekranlara (UI) göre bölmeyin.
     - Nesne yönelik çözümleme kavramları modeller: yönetici, salon, seans, ders gibi.
-* **Detaylı Açıklamalar:** Bu derste öğrenci grupları dönem projelerini sundu. Her sunumdan sonra hoca kısa geri bildirim verdi. Bu geri bildirimler, dersin analiz ve tasarım konularının uygulamadaki karşılığını gösteriyor. Aşağıda grupların kullandığı yaklaşımlar ve hocanın düzeltmeleri özetlendi.
+* **Detaylı Açıklamalar:** Bu derste öğrenci grupları dönem projelerini sundu. Aşağıda örnek projelerin kullandığı yaklaşımlar özetlendi. Hocanın geri bildirimleri yukarıdaki vurgular bölümündedir.
 
-### 🔹 Ders 13: Dönem Projesi Sunumları 2: Market, Scooter, Bankacılık, Kütüphane, Süpermarket ve Dönem Kapanışı
+### 🔹 Ders 13: Dönem Projesi Sunumları 2: Market, Scooter, Bankacılık, Kütüphane ve Süpermarket
 * **Genel Konular:**
-  - Dersin tarihi 30 Mayıs 2023 Salı. Ders Zoom üzerinden yapıldı. Dönemin son dersi.
-    - Bu ders de dönem projesi sunumlarıyla geçti. Hoca yeni konu anlatmadı.
-  - Sunum düzeni
-    - Bu hafta 6 grup planlandı. Sıra: E, M, H, D, G, J.
+  - Bu ders de dönem projesi sunumlarıyla geçti. Hoca yeni konu anlatmadı.
   - Sunulan projeler
-    - E grubu: Online market sistemi (Swift mobil, React web, Firebase).
-  - Kapanış ve final bilgisi
-    - Hoca 14 haftalık dönemi değerlendirdi.
+    - Online market sistemi (Swift mobil, React web, Firebase).
 * **Hocanın Vurgusu:**
   - Dersin amacı yalnız kod yazmak değil.
     - Problemi baştan ele almak, anlamak ve anladığını biçimsel (formal) olarak ifade etmek gerekir.
   - Ekonomik fizibilitede gelir modeli açık olmalı.
-    - Bankacılık grubunda kredi verilmiyor, komisyon ve kur makası sıfır. Hoca bankanın nereden para kazanacağını sordu.
+    - Bir grupta kredi verilmiyor, komisyon ve kur makası sıfırdı. Hoca bankanın nereden para kazanacağını sordu.
   - "Kaba taslak" bir tahmin kuruşuna kadar verilmez.
-    - Bankacılık grubu "kaba taslak" dediği maliyeti 529 bin TL'nin kuruşuna kadar yazmıştı.
-  - Sunumda belirsiz ifadelerden kaçının.
-    - Hoca "sallıyorum" gibi gündelik ifadeleri uyardı.
+    - Bir grup "kaba taslak" dediği maliyeti kuruşuna kadar yazmıştı.
   - Ekip içi görev dağılımı belli olmalı.
-    - Hoca J grubuna "Bir iş ayrımı yapmadınız mı?" diye sordu.
-* **Detaylı Açıklamalar:** Bu derste son altı grubun dönem projesi sunumları yapıldı. Hoca sunumlar sırasında fizibilite, gelir modeli ve ekip çalışması üzerine sorular sordu. Dersin sonunda dönemi değerlendirdi ve final sınavı hakkında kısa bilgi verdi.
+    - Hoca bir gruba "Bir iş ayrımı yapmadınız mı?" diye sordu.
+* **Detaylı Açıklamalar:** Bu derste son grupların dönem projesi sunumları yapıldı. Hoca sunumlar sırasında fizibilite, gelir modeli ve ekip çalışması üzerine sorular sordu.
 
 **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
