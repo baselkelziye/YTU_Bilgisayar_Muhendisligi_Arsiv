@@ -9,40 +9,42 @@
 * **Akademik Yıl:** 2020-2021
 * **Şube:** BLM2502 - 2
 
-Bu dizin, ilgili ders kayıtlarının altyazı özetlerini, çalışma notlarını ve PDF kaynaklarını içermektedir.
+Bu dizin, ilgili ders kayıtlarının altyazılarını, kısa notlarını ve genişletilmiş notlarını içermektedir.
+
+* **Kısa not:** Tekrar için. Dersin konuları, hocanın vurguları ve kısa tekrar maddeleri.
+* **Genişletilmiş not:** Dersi izlemeden öğrenmek için. Dersin anlatım akışını baştan sona, örnekleri ve soru-cevaplarıyla anlatır.
+* `altyazilar/`: ders kayıtlarının altyazıları (.srt). Notların PDF'leri `kisa_notlar/` ve `genisletilmis_notlar/` klasörlerinde, markdown kaynakları bu klasörlerin içindeki `markdown/` klasöründedir.
 
 ## 📚 Ders Müfredatı ve Belge Dizini
 
-Aşağıdaki tabloda her bir dersin konusu, kaynak markdown dosyası ve doğrudan indirilebilir PDF formatındaki derlenmiş halleri listelenmiştir. Ders numaraları, kayıt arşivindeki ders kaydı sıra numaralarıdır (hafta numarası değildir).
+Aşağıdaki tabloda her bir dersin konusu ile kısa ve genişletilmiş notlarının markdown ve PDF halleri listelenmiştir. Ders numaraları, kayıt arşivindeki ders kaydı sıra numaralarıdır (hafta numarası değildir).
 
-| Ders No | Ders İçeriği / Konu Başlıkları | Kaynak Notlar (Markdown) | Çalışma Dosyası (PDF) |
+| Ders No | Ders İçeriği / Konu Başlıkları | Kısa Not | Genişletilmiş Not |
 | :---: | :--- | :---: | :---: |
-| **Ders 1** | Dersin Tanıtımı, Hesaplama Kuramına Genel Bakış, Küme Kuramı, Boole Mantığı ve Doğrudan ve Yapıcı İspat | [Özet](altyazi_ozetleri/ders_1_ozet.md) | [PDF (İndir)](ders_1_ozet.pdf) |
-| **Ders 2** | Olmayana Ergi, Tümevarım, Güvercin Yuvası İlkesi; Alfabe, Dizgi, Dil ve Düzenli Dillere Giriş | [Özet](altyazi_ozetleri/ders_2_ozet.md) | [PDF (İndir)](ders_2_ozet.pdf) |
-| **Ders 3** | Sonlu Otomatlara Giriş, DFA'nın Biçimsel Tanımı, Dil Bulma ve DFA Tasarımı | [Özet](altyazi_ozetleri/ders_3_ozet.md) | [PDF (İndir)](ders_3_ozet.pdf) |
-| **Ders 4** | Deterministik Olmayan Sonlu Otomatlar, Hesaplama Ağaçları ve NFA-DFA Denkliği | [Özet](altyazi_ozetleri/ders_4_ozet.md) | [PDF (İndir)](ders_4_ozet.pdf) |
-| **Ders 5** | NFA'dan DFA'ya Dönüşümün Tamamlanması, Pompalama Önsavı ve Düzenli Olmayan Dillerin İspatı | [Özet](altyazi_ozetleri/ders_5_ozet.md) | [PDF (İndir)](ders_5_ozet.pdf) |
-| **Ders 6** | Bağlamdan Bağımsız Gramerler, Türetme, Türetme Ağaçları ve Belirsizlik | [Özet](altyazi_ozetleri/ders_6_ozet.md) | [PDF (İndir)](ders_6_ozet.pdf) |
-| **Ders 7** | Düzenli İfadeler, Düzenli İfade ile NFA Arası Dönüşümler ve GNFA | [Özet](altyazi_ozetleri/ders_7_ozet.md) | [PDF (İndir)](ders_7_ozet.pdf) |
-| **Ders 9** | Bağlamdan Bağımsız Diller İçin Pompalama Önsavı, Gramerlerin Sadeleştirilmesi, Chomsky ve Greibach Normal Biçimleri | [Özet](altyazi_ozetleri/ders_9_ozet.md) | [PDF (İndir)](ders_9_ozet.pdf) |
-| **Ders 10** | Aşağı İtmeli Otomatlar: Yığın, Geçişler, Anlık Betimleme, Örnekler ve Biçimsel Tanım | [Özet](altyazi_ozetleri/ders_10_ozet.md) | [PDF (İndir)](ders_10_ozet.pdf) |
-| **Ders 11** | CFG'den PDA'ya Dönüştürme, Dil Hiyerarşisi ve Turing Makinelerine Giriş | [Özet](altyazi_ozetleri/ders_11_ozet.md) | [PDF (İndir)](ders_11_ozet.pdf) |
-| **Ders 12** | Turing Makinesi Örnekleri, Biçimsel Tanım, Turing ile Tanınabilir Diller ve Fonksiyon Hesaplama | [Özet](altyazi_ozetleri/ders_12_ozet.md) | [PDF (İndir)](ders_12_ozet.pdf) |
-| **Ders 13** | Turing Makinelerini Birleştirme, Turing Tezi, Turing Makinesi Çeşitleri ve Final Bilgilendirmesi | [Özet](altyazi_ozetleri/ders_13_ozet.md) | [PDF (İndir)](ders_13_ozet.pdf) |
+| **Ders 1** | Hesaplama Kuramına Genel Bakış, Küme Kuramı, Boole Mantığı ve Doğrudan ve Yapıcı İspat | [Markdown](kisa_notlar/markdown/ders_1_ozet.md) · [PDF](kisa_notlar/ders_1_ozet.pdf) | [Markdown](genisletilmis_notlar/markdown/ders_1_genisletilmis.md) · [PDF](genisletilmis_notlar/ders_1_genisletilmis.pdf) |
+| **Ders 2** | Olmayana Ergi, Tümevarım, Güvercin Yuvası İlkesi; Alfabe, Dizgi, Dil ve Düzenli Dillere Giriş | [Markdown](kisa_notlar/markdown/ders_2_ozet.md) · [PDF](kisa_notlar/ders_2_ozet.pdf) | [Markdown](genisletilmis_notlar/markdown/ders_2_genisletilmis.md) · [PDF](genisletilmis_notlar/ders_2_genisletilmis.pdf) |
+| **Ders 3** | Sonlu Otomatlara Giriş, DFA'nın Biçimsel Tanımı, Dil Bulma ve DFA Tasarımı | [Markdown](kisa_notlar/markdown/ders_3_ozet.md) · [PDF](kisa_notlar/ders_3_ozet.pdf) | [Markdown](genisletilmis_notlar/markdown/ders_3_genisletilmis.md) · [PDF](genisletilmis_notlar/ders_3_genisletilmis.pdf) |
+| **Ders 4** | Deterministik Olmayan Sonlu Otomatlar, Hesaplama Ağaçları ve NFA-DFA Denkliği | [Markdown](kisa_notlar/markdown/ders_4_ozet.md) · [PDF](kisa_notlar/ders_4_ozet.pdf) | [Markdown](genisletilmis_notlar/markdown/ders_4_genisletilmis.md) · [PDF](genisletilmis_notlar/ders_4_genisletilmis.pdf) |
+| **Ders 5** | NFA'dan DFA'ya Dönüşümün Tamamlanması, Pompalama Önsavı ve Düzenli Olmayan Dillerin İspatı | [Markdown](kisa_notlar/markdown/ders_5_ozet.md) · [PDF](kisa_notlar/ders_5_ozet.pdf) | [Markdown](genisletilmis_notlar/markdown/ders_5_genisletilmis.md) · [PDF](genisletilmis_notlar/ders_5_genisletilmis.pdf) |
+| **Ders 6** | Bağlamdan Bağımsız Gramerler, Türetme, Türetme Ağaçları ve Belirsizlik | [Markdown](kisa_notlar/markdown/ders_6_ozet.md) · [PDF](kisa_notlar/ders_6_ozet.pdf) | [Markdown](genisletilmis_notlar/markdown/ders_6_genisletilmis.md) · [PDF](genisletilmis_notlar/ders_6_genisletilmis.pdf) |
+| **Ders 7** | Düzenli İfadeler, Düzenli İfade ile NFA Arası Dönüşümler ve GNFA | [Markdown](kisa_notlar/markdown/ders_7_ozet.md) · [PDF](kisa_notlar/ders_7_ozet.pdf) | [Markdown](genisletilmis_notlar/markdown/ders_7_genisletilmis.md) · [PDF](genisletilmis_notlar/ders_7_genisletilmis.pdf) |
+| **Ders 9** | Bağlamdan Bağımsız Diller İçin Pompalama Önsavı, Gramerlerin Sadeleştirilmesi, Chomsky ve Greibach Normal Biçimleri | [Markdown](kisa_notlar/markdown/ders_9_ozet.md) · [PDF](kisa_notlar/ders_9_ozet.pdf) | [Markdown](genisletilmis_notlar/markdown/ders_9_genisletilmis.md) · [PDF](genisletilmis_notlar/ders_9_genisletilmis.pdf) |
+| **Ders 10** | Aşağı İtmeli Otomatlar: Yığın, Geçişler, Anlık Betimleme, Örnekler ve Biçimsel Tanım | [Markdown](kisa_notlar/markdown/ders_10_ozet.md) · [PDF](kisa_notlar/ders_10_ozet.pdf) | [Markdown](genisletilmis_notlar/markdown/ders_10_genisletilmis.md) · [PDF](genisletilmis_notlar/ders_10_genisletilmis.pdf) |
+| **Ders 11** | CFG'den PDA'ya Dönüştürme, Dil Hiyerarşisi ve Turing Makinelerine Giriş | [Markdown](kisa_notlar/markdown/ders_11_ozet.md) · [PDF](kisa_notlar/ders_11_ozet.pdf) | [Markdown](genisletilmis_notlar/markdown/ders_11_genisletilmis.md) · [PDF](genisletilmis_notlar/ders_11_genisletilmis.pdf) |
+| **Ders 12** | Turing Makinesi Örnekleri, Biçimsel Tanım, Turing ile Tanınabilir Diller ve Fonksiyon Hesaplama | [Markdown](kisa_notlar/markdown/ders_12_ozet.md) · [PDF](kisa_notlar/ders_12_ozet.pdf) | [Markdown](genisletilmis_notlar/markdown/ders_12_genisletilmis.md) · [PDF](genisletilmis_notlar/ders_12_genisletilmis.pdf) |
+| **Ders 13** | Turing Makinelerini Birleştirme, Turing Tezi ve Turing Makinesi Çeşitleri | [Markdown](kisa_notlar/markdown/ders_13_ozet.md) · [PDF](kisa_notlar/ders_13_ozet.pdf) | [Markdown](genisletilmis_notlar/markdown/ders_13_genisletilmis.md) · [PDF](genisletilmis_notlar/ders_13_genisletilmis.pdf) |
 
 > [!NOTE]
 > Bu şubede ders İngilizce anlatılmıştır. 27 Nisan (vize haftası) ve 11 Mayıs 2021 (Ramazan Bayramı) haftalarına ait kayıt yoktur. Kaynaklar: Sipser ve Linz.
 
 ## 🎯 Derslerin Detaylı Özetleri ve Kazanımları
 
-### 🔹 Ders 1: Dersin Tanıtımı, Hesaplama Kuramına Genel Bakış, Küme Kuramı, Boole Mantığı ve Doğrudan ve Yapıcı İspat
+### 🔹 Ders 1: Hesaplama Kuramına Genel Bakış, Küme Kuramı, Boole Mantığı ve Doğrudan ve Yapıcı İspat
 * **Genel Konular:**
-  - Dersin tarihi 9 Mart 2021 Salı. Ders Zoom üzerinden, İngilizce yapıldı.
+  - Ders İngilizce yapıldı.
     - Asıl ders yaklaşık 00:04'te başlar. Hoca tahta olarak bir tablet uygulaması kullanıyor.
   - Dersin tanıtımı
     - Dersin kodu BLM2502, adı Hesaplama Kuramı (Theory of Computation).
-  - Değerlendirme
-    - 2 ödev, her biri 15 puan.
   - Kaynak kitap
     - Michael Sipser, *Introduction to the Theory of Computation*, 3. baskı. Tek kaynak budur.
   - Dönemin konuları (geçici liste)
@@ -51,25 +53,25 @@ Aşağıdaki tabloda her bir dersin konusu, kaynak markdown dosyası ve doğruda
     - Karmaşıklık kuramı (complexity theory): Bazı problemler neden zor, bazıları neden kolay?
   - Küme kuramı tekrarı
     - Bilinen kümeler, alt küme, kuvvet kümesi, birleşim, kesişim, fark, Kartezyen çarpım, tümleyen.
+  - Boole mantığı
+    - Değil, ve, veya, özel veya (XOR), denklik ve gerektirme (implication) işlemleri ile doğruluk tabloları.
 * **Hocanın Vurgusu:**
-  - Ders İngilizce yapılacak.
-    - Yabancı öğrenci olsun olmasın dil değişmez. Hoca gerekirse ara sıra Türkçe açıklama yapabilir.
   - Kitaptaki bütün alıştırma ve problemleri çözün.
-    - Ödev sayısı az. Dersi gerçekten öğrenmek için kitaptaki işlenen konuların bütün alıştırmalarını yapın.
-  - Not ve slayt verilmeyecek.
-    - Kendi notunuzu tutun.
+    - Dersi gerçekten öğrenmek için kitaptaki işlenen konuların bütün alıştırmalarını yapın.
   - Bir problemi "kolay" ya da "zor" diye sınıflandırabilmek çok önemli.
     - Problem kolaysa onu hızlı çözen bir algoritma yazarsınız.
   - Turing makineleri en önemli hesaplama modelidir.
     - Turing makinesinin çözemediği bir problemi gerçek bir bilgisayar da çözemez.
+  - Teoremi tam anlamadan ispata başlamayın.
+    - Teoremi kendi cümlelerinizle yeniden yazın. Her ayrıntı önemlidir.
+  - "Ancak ve ancak" (if and only if) içeren teoremde iki yön de ispatlanır.
+    - Küme eşitliğinde de iki alt küme ilişkisi ayrı ayrı ispatlanır.
 * **Detaylı Açıklamalar:** Dersin ilk kısmı tanıtım ve dönem planıyla geçer. Hoca, hesaplama kuramının temel sorusunu şöyle koyar: Bilgisayar donanımı ve yazılımının matematiksel özellikleri nelerdir? Hesaplama nedir, algoritma nedir, bilgisayarların sınırları nelerdir? Amaç, gerçek bilgisayarları yansıtan biçimsel matematiksel modeller kurmaktır. Böylece gerçek bilgisayar kullanmadan bilgisayarlar hakkında matematiksel olarak düşünebiliriz.
 
 ### 🔹 Ders 2: Olmayana Ergi, Tümevarım, Güvercin Yuvası İlkesi; Alfabe, Dizgi, Dil ve Düzenli Dillere Giriş
 * **Genel Konular:**
-  - Dersin tarihi 16 Mart 2021 Salı. Ders Zoom üzerinden, İngilizce yapıldı.
+  - Ders İngilizce yapıldı.
     - Asıl ders yaklaşık 00:02'de başlar.
-  - Değerlendirme sistemi değişti
-    - 3 quiz, her biri 10 puan, toplam 30 puan.
   - İspat teknikleri (devam)
     - Yapıcı ispat örneğinin tekrarı.
   - Düzenli diller (regular languages) ve temel tanımlar
@@ -77,8 +79,6 @@ Aşağıdaki tabloda her bir dersin konusu, kaynak markdown dosyası ve doğruda
   - Karışık örnekler ve tanımlar
     - Ondalık, ikili ve birli (unary) sayıların dizgi olarak gösterimi.
 * **Hocanın Vurgusu:**
-  - Quizler sürpriz olmayacak.
-    - Quiz zamanı bir hafta önceden duyurulacak.
   - Olmayana ergi ispatında başta "çelişki elde etmek için varsayalım" diye yazın.
   - Tümevarımda iki adım vardır.
     - Taban adımı (basis) sayısal olarak gösterilir.
@@ -86,11 +86,13 @@ Aşağıdaki tabloda her bir dersin konusu, kaynak markdown dosyası ve doğruda
     - Diller küme olduğu için bütün küme işlemleri dillere uygulanabilir.
   - Bu derste $0^2$ gibi gösterimler sayısal işlem değildir.
     - $0^2 = 00$ demektir, yani birleştirmedir.
+  - Boş küme $\emptyset$ ile boş dizgi $\varepsilon$ aynı şey değildir.
+    - Bunlara dikkat edin.
 * **Detaylı Açıklamalar:** Bir öğrenci, rasyonel sayıların tanımının ispat gerektirip gerektirmediğini sordu. Hoca Türkçe yanıtladı: Bu bir aksiyom da değildir, bir tanımdır. Rasyonel sayılar bir kümedir. İspatta $\sqrt{2}$'nin bu kümenin içinde olmadığını gösterdik.
 
 ### 🔹 Ders 3: Sonlu Otomatlara Giriş, DFA'nın Biçimsel Tanımı, Dil Bulma ve DFA Tasarımı
 * **Genel Konular:**
-  - Dersin tarihi 23 Mart 2021 Salı. Ders Zoom üzerinden, İngilizce yapıldı.
+  - Ders İngilizce yapıldı.
     - Asıl anlatım yaklaşık 00:08:50'de başlar. Kaydın başı bekleme kısmıdır.
   - Sonlu otomatlara giriş (finite automata)
     - Otomat, giriş şeridindeki (input tape) dizgiyi soldan sağa, her adımda bir sembol okuyarak işler.
@@ -115,11 +117,11 @@ Aşağıdaki tabloda her bir dersin konusu, kaynak markdown dosyası ve doğruda
 
 ### 🔹 Ders 4: Deterministik Olmayan Sonlu Otomatlar, Hesaplama Ağaçları ve NFA-DFA Denkliği
 * **Genel Konular:**
-  - Dersin tarihi 30 Mart 2021 Salı. Ders Zoom üzerinden, İngilizce yapıldı.
+  - Ders İngilizce yapıldı.
     - Asıl anlatım yaklaşık 00:04:30'da başlar.
   - Deterministik olmayan sonlu otomat (NFA, nondeterministic finite automaton)
     - DFA'dan üç farkı: aynı sembolle birden çok geçiş, boş geçiş (null / $\varepsilon$ transition), bazı geçişlerin hiç yazılmaması.
-  - NFA'nın biçimsel tanımı ve geçiş fonksiyonu $\delta: Q \times \Sigma \to 2^Q$
+  - NFA'nın biçimsel tanımı ve geçiş fonksiyonu $\delta: Q \times (\Sigma \cup \{\varepsilon\}) \to 2^Q$
   - NFA nasıl çalışır: paralel hesaplama dalları (computation)
   - NFA'nın kabul ve ret koşulları
   - Hesaplama ağacı (computation tree)
@@ -138,7 +140,7 @@ Aşağıdaki tabloda her bir dersin konusu, kaynak markdown dosyası ve doğruda
 
 ### 🔹 Ders 5: NFA'dan DFA'ya Dönüşümün Tamamlanması, Pompalama Önsavı ve Düzenli Olmayan Dillerin İspatı
 * **Genel Konular:**
-  - Dersin tarihi 6 Nisan 2021 Salı. Ders Zoom üzerinden, İngilizce yapıldı.
+  - Ders İngilizce yapıldı.
     - Asıl anlatım yaklaşık 00:03:00'te başlar. Kayıtta iki ara var (yaklaşık 01:01-01:17 ve 02:04-02:14).
   - NFA'dan DFA'ya dönüşüm örneğinin tamamlanması (alt küme yapısı, subset construction)
     - Geçen haftaki örnekte $q_1$'in kabul durumu olduğu düzeltildi.
@@ -162,7 +164,7 @@ Aşağıdaki tabloda her bir dersin konusu, kaynak markdown dosyası ve doğruda
 
 ### 🔹 Ders 6: Bağlamdan Bağımsız Gramerler, Türetme, Türetme Ağaçları ve Belirsizlik
 * **Genel Konular:**
-  - Dersin tarihi 13 Nisan 2021 Salı. Ders Zoom üzerinden, İngilizce yapıldı.
+  - Ders İngilizce yapıldı.
     - Asıl anlatım yaklaşık 00:04:30'da başlar. Kayıtta iki ara var (yaklaşık 00:49-01:02 ve 02:02-02:13).
   - Bağlamdan bağımsız dillere giriş (context-free languages, CFL)
     - $a^n b^n$ ve $w w^R$ düzenli değildir ama bağlamdan bağımsızdır.
@@ -185,8 +187,8 @@ Aşağıdaki tabloda her bir dersin konusu, kaynak markdown dosyası ve doğruda
 
 ### 🔹 Ders 7: Düzenli İfadeler, Düzenli İfade ile NFA Arası Dönüşümler ve GNFA
 * **Genel Konular:**
-  - Dersin tarihi 20 Nisan 2021 Salı. Ders Zoom üzerinden, İngilizce yapıldı.
-    - Asıl anlatım yaklaşık 00:08:00'de başlar. Başta quiz saatinin sistemde yanlış tanımlandığı fark edilip düzeltildi.
+  - Ders İngilizce yapıldı.
+    - Asıl anlatım yaklaşık 00:08:00'de başlar.
   - Düzenli ifadeler (regular expressions)
     - Hoca daha önce kendiniz okuyun dediği bu konuya, vakit olduğu için geri döndü. Bağlamdan bağımsız gramerlere sonra devam edilecek.
   - Düzenli ifadenin anlamı: birleşim, birleştirme (concatenation), Kleene yıldızı
@@ -206,15 +208,14 @@ Aşağıdaki tabloda her bir dersin konusu, kaynak markdown dosyası ve doğruda
 
 ### 🔹 Ders 9: Bağlamdan Bağımsız Diller İçin Pompalama Önsavı, Gramerlerin Sadeleştirilmesi, Chomsky ve Greibach Normal Biçimleri
 * **Genel Konular:**
-  - Dersin tarihi 4 Mayıs 2021 Salı. Ders Zoom üzerinden, İngilizce yapıldı.
-    - Asıl anlatım yaklaşık 00:06:40'ta başlar. Ders vize haftasından sonraki ilk derstir.
+  - Ders İngilizce yapıldı.
+    - Asıl anlatım yaklaşık 00:06:40'ta başlar.
   - Bağlamdan bağımsız diller için pompalama önsavı (pumping lemma for context-free languages)
     - Önsavın ifadesi: $z = uvwxy$ bölünmesi ve üç koşul.
   - Bağlamdan bağımsız gramerlerin sadeleştirilmesi (simplification of CFGs)
     - Yerine koyma (substitution) kuralı.
   - Normal biçimler (normal forms)
     - Chomsky normal biçimi (CNF, Chomsky normal form) ve dönüştürme adımları.
-  - Araya giren duyurular: vize ve Quiz 2 sonuçları ders duvarına yüklendi. Vize ortalaması yaklaşık 50-55.
 * **Hocanın Vurgusu:**
   - Pompalama önsavının ifadesini yazın ve ezberleyin.
     - Önsavın ispatı derste yapılmadı. Hoca ispatı kitaptan okumanızı istedi.
@@ -230,9 +231,8 @@ Aşağıdaki tabloda her bir dersin konusu, kaynak markdown dosyası ve doğruda
 
 ### 🔹 Ders 10: Aşağı İtmeli Otomatlar: Yığın, Geçişler, Anlık Betimleme, Örnekler ve Biçimsel Tanım
 * **Genel Konular:**
-  - Dersin tarihi 18 Mayıs 2021 Salı. Ders Zoom üzerinden yapıldı.
-    - Açılış konuşmaları Türkçe, ders anlatımı İngilizce. Asıl anlatım yaklaşık 00:05:30'da başlar.
-  - Dönemin kalan planı: 11-14. haftalar, bir quiz ve final.
+  - Ders anlatımı İngilizce yapıldı.
+    - Asıl anlatım yaklaşık 00:05:30'da başlar.
   - Aşağı itmeli otomat (PDA, pushdown automaton)
     - Durumlar, giriş şeridi ve yeni olarak bir yığın (stack).
   - Anlık betimleme (ID, instantaneous description): $(q, \text{kalan giriş}, \text{yığın})$.
@@ -240,6 +240,7 @@ Aşağıdaki tabloda her bir dersin konusu, kaynak markdown dosyası ve doğruda
     - $M_1$: $\{a^nb^n \mid n \ge 0\}$.
   - Hesaplama ağacı ile $aaabbb$ ve $abba$ girişlerinin adım adım işlenmesi.
   - Kabul koşulu: bütün girişin tüketilmesi ve kabul durumunda bitirmek. Yığının içeriği önemli değil.
+  - Kısaltma: yığından dizgi çekme ve yığına dizgi itme.
 * **Hocanın Vurgusu:**
   - Bu derste yığının dibinde başlangıçta özel bir sembol vardır: $\$$.
     - PDA'lar, $\$$ yığının tepesine geldiğinde yığının sonuna ulaşıldığını anlayacak biçimde tasarlanır.
@@ -250,21 +251,20 @@ Aşağıdaki tabloda her bir dersin konusu, kaynak markdown dosyası ve doğruda
   - Bu dersin kabul kuralı: Giriş tamamen tüketilmeli ve son durum bir kabul durumu olmalı.
     - Yığında ne kaldığı önemli değil.
   - PDA'lar iki değeri eşleştirebilir (ör. $a$ ve $b$ sayısı).
-    - Hoca "üç ya da daha fazla değeri eşleştiremez" cümlesini yazdı, sonra emin olmadığı için sildi.
+    - Hoca "üç ya da daha fazla değeri eşleştiremez" cümlesini yazdı, sonra emin olmadığı için sildi. Yine de genel olarak PDA'nın iki değer eşleştirebildiğini düşündüğünü söyledi (00:41:02).
 * **Detaylı Açıklamalar:** PDA, daha önce görülen otomatlara benzer: durumlar, geçişler, bir başlangıç durumu, kabul ve ret durumları ve giriş dizgisi vardır. Yeni olan parça **yığındır**. Yığın son giren ilk çıkar (LIFO, last in first out) yapısındadır. Yığın kafası her zaman en son eklenen sembolü gösterir.
 
 ### 🔹 Ders 11: CFG'den PDA'ya Dönüştürme, Dil Hiyerarşisi ve Turing Makinelerine Giriş
 * **Genel Konular:**
-  - Dersin tarihi 25 Mayıs 2021 Salı. Ders Zoom üzerinden, İngilizce yapıldı.
+  - Ders İngilizce yapıldı.
     - Asıl anlatım yaklaşık 00:09:00'da başlar.
   - PDA tekrarı: anlık betimleme, hesaplama ağacı, dizgi çekme/itme kısaltması, 7'li tanım, PDA'nın dili.
   - CFG'den PDA'ya dönüştürme (CFL ⊆ PDA dilleri)
     - Üç durumlu genel yapı ve döngüdeki geçişler.
   - PDA'dan CFG'ye dönüştürme (ters yön): derste yapılmadı, kitaptan okunacak.
-  - Sipser 2. bölüm bitti. Deterministik bağlamdan bağımsız diller atlandı ve sınava dahil değil.
+  - Kitabın 2. bölümü bitti. Deterministik bağlamdan bağımsız diller atlandı.
   - 3. bölüm: Church-Turing tezi ve Turing makinelerine giriş
     - Dil hiyerarşisi: düzenli ⊆ bağlamdan bağımsız ⊆ Turing-tanınabilir.
-  - Gelecek hafta quiz var.
 * **Hocanın Vurgusu:**
   - Eşdeğerlik ispatlarında iki yön gösterilir: her iki kümenin de diğerinin alt kümesi olduğu.
   - CFG'den PDA'ya dönüştürme kolaydır.
@@ -273,12 +273,12 @@ Aşağıdaki tabloda her bir dersin konusu, kaynak markdown dosyası ve doğruda
     - Çalışacak dalı görebiliyorsanız doğrudan onu yazın.
   - PDA'dan CFG'ye dönüştürme karmaşıktır ve çok büyük bir gramer üretir.
     - Derste yapılmadı. İlgilenen kitaptan okusun.
-  - Deterministik bağlamdan bağımsız diller sınavda yok.
+  - Kitaptaki alıştırmaları yapın.
 * **Detaylı Açıklamalar:** Bir $G$ grameri için $L(G) = L(M)$ olan $M$ şöyle kurulur:
 
 ### 🔹 Ders 12: Turing Makinesi Örnekleri, Biçimsel Tanım, Turing ile Tanınabilir Diller ve Fonksiyon Hesaplama
 * **Genel Konular:**
-  - Dersin tarihi 1 Haziran 2021 Salı. Ders Zoom üzerinden, İngilizce yapıldı.
+  - Ders İngilizce yapıldı.
     - Asıl anlatım yaklaşık 00:06:30'da başlar. Kaydın başı bekleme kısmıdır.
   - Turing makinesi (Turing machine) tekrarı
     - Giriş şeridi iki yönde sonsuzdur. Giriş dışındaki bütün hücrelerde boş sembol (blank, $\square$) vardır.
@@ -302,9 +302,9 @@ Aşağıdaki tabloda her bir dersin konusu, kaynak markdown dosyası ve doğruda
     - Hoca `aabb` örneğinde bir adımda yön karıştırdı ve hesaplamayı baştan yazdı.
 * **Detaylı Açıklamalar:** Turing makinesi, şimdiye kadar görülen otomatlara çok benzer: durumları, geçişleri, kabul ve ret durumları vardır. Fark, şeridin iki yönde sonsuz olması ve kafanın şeride yazıp her iki yöne gidebilmesidir.
 
-### 🔹 Ders 13: Turing Makinelerini Birleştirme, Turing Tezi, Turing Makinesi Çeşitleri ve Final Bilgilendirmesi
+### 🔹 Ders 13: Turing Makinelerini Birleştirme, Turing Tezi ve Turing Makinesi Çeşitleri
 * **Genel Konular:**
-  - Dersin tarihi 8 Haziran 2021 Salı. Ders Zoom üzerinden, İngilizce yapıldı. Dönemin son dersidir.
+  - Ders İngilizce yapıldı.
     - Asıl anlatım yaklaşık 00:05:00'te başlar. Ders iki arayla üç bölümden oluşuyor.
   - Tekrar: $x + y$ ve $2x$ fonksiyonlarını hesaplayan Turing makineleri
     - Bundan sonra makineler büyüdüğü için durum diyagramı yerine yalnız sözde kod (pseudocode) verilecek.
