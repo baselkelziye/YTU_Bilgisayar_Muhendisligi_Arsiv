@@ -9,38 +9,42 @@
 * **Akademik Yıl:** 2020-2021
 * **Şube:** BLM2022 - 1
 
-Bu dizin, ilgili ders kayıtlarının altyazı özetlerini, çalışma notlarını ve PDF kaynaklarını içermektedir.
+Bu dizin, ilgili ders kayıtlarının altyazılarını, kısa notlarını ve genişletilmiş notlarını içermektedir.
+
+* **Kısa not:** Tekrar için. Dersin konuları, hocanın vurguları ve kısa tekrar maddeleri.
+* **Genişletilmiş not:** Dersi izlemeden öğrenmek için. Dersin anlatım akışını baştan sona, örnekleri ve soru-cevaplarıyla anlatır.
+* `altyazilar/`: ders kayıtlarının altyazıları (.srt). Notların PDF'leri `kisa_notlar/` ve `genisletilmis_notlar/` klasörlerinde, markdown kaynakları bu klasörlerin içindeki `markdown/` klasöründedir.
 
 ## 📚 Ders Müfredatı ve Belge Dizini
 
-Aşağıdaki tabloda her bir dersin konusu, kaynak markdown dosyası ve doğrudan indirilebilir PDF formatındaki derlenmiş halleri listelenmiştir. Ders numaraları, kayıt arşivindeki ders kaydı sıra numaralarıdır (hafta numarası değildir).
+Aşağıdaki tabloda her bir dersin konusu ile kısa ve genişletilmiş notlarının markdown ve PDF halleri listelenmiştir. Ders numaraları, kayıt arşivindeki ders kaydı sıra numaralarıdır (hafta numarası değildir).
 
-| Ders No | Ders İçeriği / Konu Başlıkları | Kaynak Notlar (Markdown) | Çalışma Dosyası (PDF) |
+| Ders No | Ders İçeriği / Konu Başlıkları | Kısa Not | Genişletilmiş Not |
 | :---: | :--- | :---: | :---: |
-| **Ders 1** | Dersin Tanıtımı, Lojik Kapılar ve Boole Cebri Tekrarı, Multiplexer, Decoder ve Encoder | [Özet](altyazi_ozetleri/ders_1_ozet.md) | [PDF (İndir)](ders_1_ozet.pdf) |
-| **Ders 2** | Toplayıcılar, İkiye Tümleyen Aritmetiği ve Taşma, Three-State Buffer, Flip-Flop'lar ve Ardışıl Devre Analizi | [Özet](altyazi_ozetleri/ders_2_ozet.md) | [PDF (İndir)](ders_2_ozet.pdf) |
-| **Ders 3** | Dizi Tanıyıcı, Saklayıcılar ve Mikro İşlemler, Seri Toplayıcı, Asenkron ve Senkron Sayıcılar | [Özet](altyazi_ozetleri/ders_3_ozet.md) | [PDF (İndir)](ders_3_ozet.pdf) |
-| **Ders 4** | JK ve T Flip-Flop ile Sayıcı Tasarımı, Kendi Kendini Düzeltme, ROM ve PLA | [Özet](altyazi_ozetleri/ders_4_ozet.md) | [PDF (İndir)](ders_4_ozet.pdf) |
-| **Ders 5** | PAL, RAM Türleri, Bellek Organizasyonu, Çakışık Seçim ve Bellek Genişletme | [Özet](altyazi_ozetleri/ders_5_ozet.md) | [PDF (İndir)](ders_5_ozet.pdf) |
-| **Ders 6** | Register Transferi ve Ortak Veri Yolu, Komut Kümesi Mimarisi, Adresleme Modları ve Koşullu Dallanma | [Özet](altyazi_ozetleri/ders_6_ozet.md) | [PDF (İndir)](ders_6_ozet.pdf) |
-| **Ders 9** | İşlemci Tasarımına Giriş: Datapath, Aritmetik Devre Tasarımı, ALU, Kaydırıcı ve Kontrol Kelimesi | [Özet](altyazi_ozetleri/ders_9_ozet.md) | [PDF (İndir)](ders_9_ozet.pdf) |
-| **Ders 10** | Tek Çevrimli Bilgisayar, Komut Çözücü, Pipeline ve Tehlikeleri, G/Ç Arayüzü ve Haberleşme | [Özet](altyazi_ozetleri/ders_10_ozet.md) | [PDF (İndir)](ders_10_ozet.pdf) |
-| **Ders 11** | Seri İletişim, Veri Transfer Yöntemleri, Öncelikli Kesmeler, DMA ve Önbelleğe Giriş | [Özet](altyazi_ozetleri/ders_11_ozet.md) | [PDF (İndir)](ders_11_ozet.pdf) |
-| **Ders 12** | Cache Bellek: Bellek Hiyerarşisi, Yerellik İlkesi, Direct Mapped Cache, Ortalama Erişim Süresi ve Yazma Politikaları | [Özet](altyazi_ozetleri/ders_12_ozet.md) | [PDF (İndir)](ders_12_ozet.pdf) |
-| **Ders 13** | Sanal Bellek: Adres Dönüşümü, Sayfa Tablosu, TLB, Sayfa Yerine Koyma ve Final Bilgilendirmesi | [Özet](altyazi_ozetleri/ders_13_ozet.md) | [PDF (İndir)](ders_13_ozet.pdf) |
+| **Ders 1** | Lojik Kapılar ve Boole Cebri Tekrarı, Multiplexer, Decoder ve Encoder | [Markdown](kisa_notlar/markdown/ders_1_ozet.md) · [PDF](kisa_notlar/ders_1_ozet.pdf) | [Markdown](genisletilmis_notlar/markdown/ders_1_genisletilmis.md) · [PDF](genisletilmis_notlar/ders_1_genisletilmis.pdf) |
+| **Ders 2** | Toplayıcılar, İkiye Tümleyen Aritmetiği ve Taşma, Three-State Buffer, Flip-Flop'lar ve Ardışıl Devre Analizi | [Markdown](kisa_notlar/markdown/ders_2_ozet.md) · [PDF](kisa_notlar/ders_2_ozet.pdf) | [Markdown](genisletilmis_notlar/markdown/ders_2_genisletilmis.md) · [PDF](genisletilmis_notlar/ders_2_genisletilmis.pdf) |
+| **Ders 3** | Dizi Tanıyıcı, Saklayıcılar ve Mikro İşlemler, Seri Toplayıcı, Asenkron ve Senkron Sayıcılar | [Markdown](kisa_notlar/markdown/ders_3_ozet.md) · [PDF](kisa_notlar/ders_3_ozet.pdf) | [Markdown](genisletilmis_notlar/markdown/ders_3_genisletilmis.md) · [PDF](genisletilmis_notlar/ders_3_genisletilmis.pdf) |
+| **Ders 4** | JK ve T Flip-Flop ile Sayıcı Tasarımı, Kendi Kendini Düzeltme, ROM ve PLA | [Markdown](kisa_notlar/markdown/ders_4_ozet.md) · [PDF](kisa_notlar/ders_4_ozet.pdf) | [Markdown](genisletilmis_notlar/markdown/ders_4_genisletilmis.md) · [PDF](genisletilmis_notlar/ders_4_genisletilmis.pdf) |
+| **Ders 5** | PAL, RAM Türleri, Bellek Organizasyonu, Çakışık Seçim ve Bellek Genişletme | [Markdown](kisa_notlar/markdown/ders_5_ozet.md) · [PDF](kisa_notlar/ders_5_ozet.pdf) | [Markdown](genisletilmis_notlar/markdown/ders_5_genisletilmis.md) · [PDF](genisletilmis_notlar/ders_5_genisletilmis.pdf) |
+| **Ders 6** | Register Transferi ve Ortak Veri Yolu, Komut Kümesi Mimarisi, Adresleme Modları ve Koşullu Dallanma | [Markdown](kisa_notlar/markdown/ders_6_ozet.md) · [PDF](kisa_notlar/ders_6_ozet.pdf) | [Markdown](genisletilmis_notlar/markdown/ders_6_genisletilmis.md) · [PDF](genisletilmis_notlar/ders_6_genisletilmis.pdf) |
+| **Ders 9** | İşlemci Tasarımına Giriş: Datapath, Aritmetik Devre Tasarımı, ALU, Kaydırıcı ve Kontrol Kelimesi | [Markdown](kisa_notlar/markdown/ders_9_ozet.md) · [PDF](kisa_notlar/ders_9_ozet.pdf) | [Markdown](genisletilmis_notlar/markdown/ders_9_genisletilmis.md) · [PDF](genisletilmis_notlar/ders_9_genisletilmis.pdf) |
+| **Ders 10** | Tek Çevrimli Bilgisayar, Komut Çözücü, Pipeline ve Tehlikeleri, G/Ç Arayüzü ve Haberleşme | [Markdown](kisa_notlar/markdown/ders_10_ozet.md) · [PDF](kisa_notlar/ders_10_ozet.pdf) | [Markdown](genisletilmis_notlar/markdown/ders_10_genisletilmis.md) · [PDF](genisletilmis_notlar/ders_10_genisletilmis.pdf) |
+| **Ders 11** | Seri İletişim, Veri Transfer Yöntemleri, Öncelikli Kesmeler, DMA ve Önbelleğe Giriş | [Markdown](kisa_notlar/markdown/ders_11_ozet.md) · [PDF](kisa_notlar/ders_11_ozet.pdf) | [Markdown](genisletilmis_notlar/markdown/ders_11_genisletilmis.md) · [PDF](genisletilmis_notlar/ders_11_genisletilmis.pdf) |
+| **Ders 12** | Cache Bellek: Bellek Hiyerarşisi, Yerellik İlkesi, Direct Mapped Cache, Ortalama Erişim Süresi ve Yazma Politikaları | [Markdown](kisa_notlar/markdown/ders_12_ozet.md) · [PDF](kisa_notlar/ders_12_ozet.pdf) | [Markdown](genisletilmis_notlar/markdown/ders_12_genisletilmis.md) · [PDF](genisletilmis_notlar/ders_12_genisletilmis.pdf) |
+| **Ders 13** | Sanal Bellek: Adres Dönüşümü, Sayfa Tablosu, TLB ve Sayfa Yerine Koyma | [Markdown](kisa_notlar/markdown/ders_13_ozet.md) · [PDF](kisa_notlar/ders_13_ozet.pdf) | [Markdown](genisletilmis_notlar/markdown/ders_13_genisletilmis.md) · [PDF](genisletilmis_notlar/ders_13_genisletilmis.pdf) |
 
 > [!NOTE]
 > 23 Nisan, 30 Nisan (vize haftası) ve 14 Mayıs 2021 haftalarına ait kayıt yoktur. Ders güncel müfredatta Bilgisayar Organizasyonu adını almıştır.
 
 ## 🎯 Derslerin Detaylı Özetleri ve Kazanımları
 
-### 🔹 Ders 1: Dersin Tanıtımı, Lojik Kapılar ve Boole Cebri Tekrarı, Multiplexer, Decoder ve Encoder
+### 🔹 Ders 1: Lojik Kapılar ve Boole Cebri Tekrarı, Multiplexer, Decoder ve Encoder
 * **Genel Konular:**
-  - Dersin tarihi 12 Mart 2021 Cuma. Ders Zoom üzerinden yapıldı.
-    - Asıl ders yaklaşık 00:06:24'te başlar. Kaydın başı bekleme kısmıdır.
-  - Dersin tanıtımı ve işleyişi
+  - Asıl ders yaklaşık 00:06:24'te başlar. Kaydın başı bekleme kısmıdır.
+  - Hoca dersin adını "Bilgisayar Donanımı" olarak anıyor (ders kodu BLM2022).
+  - Dersin kapsamı
     - Ders, Lojik Devreler dersinin devamı gibidir. İşlemci, bellek, çevre birimleri ve portlar işlenecek.
-  - Haftalık plan (ders tanıtım formundan)
+  - Konu planı (ders tanıtım formundan)
     - Kombinasyonel ve ardışıl devreler, saklayıcı ve sayıcılar, programlanabilir yapılar (PLD, PLA, PAL), RAM ve ROM.
   - Lojik kapılar ve Boole cebri tekrarı
     - AND, OR, NOT, NAND, NOR, XOR kapıları ve sembolleri.
@@ -48,25 +52,23 @@ Aşağıdaki tabloda her bir dersin konusu, kaynak markdown dosyası ve doğruda
     - Doğruluk tablosu, lojik ifade, devre şeması ve HDL (Verilog, VHDL).
   - Sayı sistemleri
     - 0-18 arası sayıların ikilik ve onaltılık karşılıkları.
-  - Kombinasyonel yapı taşları
-    - Multiplexer (MUX), decoder, demultiplexer, encoder, priority encoder.
 * **Hocanın Vurgusu:**
-  - Değerlendirme: 1 ara sınav %30, 2 kısa sınav (2 x %15) %30, final %40.
-    - Ödev yok. Kısa sınavlar 4. hafta (2 Nisan) ve 13. hafta (4 Haziran).
-  - Devam zorunluluğu %70'tir.
-    - Devamsız öğrencinin notu F0 olur.
   - Dönemin ilk yarısı kolay gelecek.
     - İkinci yarısı (CPU, giriş/çıkış, cache, sanal bellek) dersin asıl kısmıdır.
   - XOR kapısının genel tanımı: girişlerdeki 1'lerin sayısı tekse çıkış 1'dir.
     - Bu tanım 2'den fazla girişte de geçerlidir. XOR bu yüzden bir çift eşlik (even parity) üretecidir.
   - İşaretli sayılarda yalnızca ikiye tümleyeni düşünün.
     - Öğrenciler bu konuda çok hata yapıyor.
-* **Detaylı Açıklamalar:** Ders Cuma günleri yapılan zorunlu bir derstir. Hoca dersin Lojik Devreler dersinin üzerine kurulduğunu söyledi. İlk haftalarda lojik konuları hızla tekrar edilecek. Lojik bilgisi eksik olanlar (özellikle bilimsel hazırlık öğrencileri) kitabın ilk 5-6 bölümünü erkenden çalışmalı.
+  - MUX, decoder ve encoder çizimlerinde giriş ve çıkış ağırlıklarını (0, 1, 2...) mutlaka yazın.
+    - Ağırlıklar yazılmazsa çözüm "hiçbir anlam ifade etmez".
+  - Encoder'da girişlerden aynı anda yalnızca biri 1 olabilir.
+    - Bunu tasarımcı garanti eder.
+* **Detaylı Açıklamalar:** Hoca dersin Lojik Devreler dersinin üzerine kurulduğunu söyledi. İlk haftalarda lojik konuları hızla tekrar edilecek. Lojik bilgisi eksik olanlar (özellikle bilimsel hazırlık öğrencileri) kitabın ilk 5-6 bölümünü erkenden çalışmalı.
 
 ### 🔹 Ders 2: Toplayıcılar, İkiye Tümleyen Aritmetiği ve Taşma, Three-State Buffer, Flip-Flop'lar ve Ardışıl Devre Analizi
 * **Genel Konular:**
-  - Dersin tarihi 19 Mart 2021 Cuma. Ders Zoom üzerinden yapıldı.
-    - Asıl ders yaklaşık 00:06:20'de başlar.
+  - Asıl ders yaklaşık 00:06:20'de başlar.
+  - Lojik konularının tekrarı sürüyor.
   - Toplayıcılar
     - Yarım toplayıcı (half adder) ve tam toplayıcı (full adder).
   - Çok bitli yapı taşları
@@ -77,8 +79,6 @@ Aşağıdaki tabloda her bir dersin konusu, kaynak markdown dosyası ve doğruda
     - İşaretsiz çıkarma ve elde/borç biti.
   - Üç durumlu tampon (three-state buffer)
     - Yüksek empedans (Hi-Z) çıkışı ve veri yolunda (bus) kullanımı.
-  - Ardışıl devreler
-    - Latch ve flip-flop farkı, D latch, D flip-flop.
 * **Hocanın Vurgusu:**
   - Yarım toplayıcı elde girişi almadığı için çok bitli toplayıcı kurmaya yetmez.
     - Tam toplayıcı kullanılır.
@@ -86,15 +86,14 @@ Aşağıdaki tabloda her bir dersin konusu, kaynak markdown dosyası ve doğruda
   - İkiye tümleyeni alırken "tersini çevirip başına 1 eklemek" yanlıştır.
     - Doğrusu: bitleri ters çevir, sonra en düşük anlamlı bite 1 ekle.
   - Çıkarmada elde biti C = 1 ise borç biti B = 0'dır.
-    - Bu, X'in Y'den büyük olduğunu gösterir.
+    - Bu, $X \geq Y$ olduğunu gösterir (bkz. ders sonrası notlar).
   - İşaretli sayılarda V (overflow), Z (zero) ve N (negative) bitlerine bakılır.
     - İşaretsiz sayılarda overflow biti kullanılmaz, yalnızca C bitine bakılır.
 * **Detaylı Açıklamalar:** Yarım toplayıcı iki bitlik girişi toplar ve toplam (sum) ile elde (carry out) üretir. Toplam çıkışı XOR ile gerçekleştirilir. Çünkü toplam, girişlerdeki 1'lerin sayısı tek olduğunda 1'dir.
 
 ### 🔹 Ders 3: Dizi Tanıyıcı, Saklayıcılar ve Mikro İşlemler, Seri Toplayıcı, Asenkron ve Senkron Sayıcılar
 * **Genel Konular:**
-  - Dersin tarihi 26 Mart 2021 Cuma. Ders Zoom üzerinden yapıldı.
-    - Asıl ders yaklaşık 00:09:12'de başlar.
+  - Asıl ders yaklaşık 00:09:12'de başlar.
   - Geçen haftanın tekrarı
     - Mealy ve Moore modeli devreler, state diagram farkları.
   - Ardışıl devre tasarımı: dizi tanıyıcı (sequence recognizer)
@@ -120,8 +119,8 @@ Aşağıdaki tabloda her bir dersin konusu, kaynak markdown dosyası ve doğruda
 
 ### 🔹 Ders 4: JK ve T Flip-Flop ile Sayıcı Tasarımı, Kendi Kendini Düzeltme, ROM ve PLA
 * **Genel Konular:**
-  - Dersin tarihi 2 Nisan 2021 Cuma. Ders Zoom üzerinden yapıldı. Dönemin 4. haftası.
-    - Asıl ders yaklaşık 00:05'te başlar.
+  - Asıl ders yaklaşık 00:05'te başlar.
+  - Plan: ilk saat sayıcı örnekleri, ikinci saat programlanabilir lojik cihazlar.
   - Sayıcı tasarımı örnekleri (geçen haftadan kalan)
     - JK flip-flop ile sayıcı: geçiş tablosu (excitation table) ile flip-flop girişlerini yazma.
   - Programlanabilir lojik cihazlar (Programmable Logic Devices)
@@ -142,8 +141,7 @@ Aşağıdaki tabloda her bir dersin konusu, kaynak markdown dosyası ve doğruda
 
 ### 🔹 Ders 5: PAL, RAM Türleri, Bellek Organizasyonu, Çakışık Seçim ve Bellek Genişletme
 * **Genel Konular:**
-  - Dersin tarihi 9 Nisan 2021 Cuma. Ders Zoom üzerinden yapıldı. Dönemin 5. haftası.
-    - Asıl ders yaklaşık 00:07'de başlar. İlk dakikalar selamlaşma ve aşı sohbetidir.
+  - Asıl ders yaklaşık 00:07'de başlar. İlk dakikalar sohbettir.
   - Geçen haftadan kalan programlanabilir lojik cihazlar
     - PLA'nın kısa tekrarı (bir öğrencinin isteğiyle).
   - Bellek temelleri (Memory Basics)
@@ -153,7 +151,6 @@ Aşağıdaki tabloda her bir dersin konusu, kaynak markdown dosyası ve doğruda
 * **Hocanın Vurgusu:**
   - Bellek genişletme konusu önemlidir. "Bu konularla ilgili mutlaka sınavda soru olacak."
   - Kitabın bölüm sonu sorularını çözün.
-    - Hoca kitabın 4. baskısının PDF'ini ders duvarına koydu.
   - Kapasite sorularında verilen kelime genişliğine dikkat edin.
     - "2 MB" gibi bayt cinsinden verilen kapasiteyi, elinizdeki çipin kelime genişliğine (ör. 16 bit) göre yeniden yazın. Soru bu yüzden "biraz trikli".
   - 48K gibi 2'nin kuvveti olmayan sayılarda bir üst kuvveti alın.
@@ -162,10 +159,7 @@ Aşağıdaki tabloda her bir dersin konusu, kaynak markdown dosyası ve doğruda
 
 ### 🔹 Ders 6: Register Transferi ve Ortak Veri Yolu, Komut Kümesi Mimarisi, Adresleme Modları ve Koşullu Dallanma
 * **Genel Konular:**
-  - Dersin tarihi 16 Nisan 2021 Cuma. Ders Zoom üzerinden yapıldı. Dönemin 6. haftası.
-    - Asıl ders yaklaşık 00:07'de başlar.
-  - Takvim duyurusu
-    - 23 Nisan resmî tatil olduğu için gelecek hafta ders yok.
+  - Asıl ders yaklaşık 00:07'de başlar.
   - Register transferi ve ortak veri yolu (bus)
     - Dersin hedefi: veri yolu birimi (datapath unit) ve kontrol birimi (control unit) ile bir CPU tasarlamak.
   - Komut kümesi mimarisi (Instruction Set Architecture, ISA)
@@ -185,8 +179,8 @@ Aşağıdaki tabloda her bir dersin konusu, kaynak markdown dosyası ve doğruda
 
 ### 🔹 Ders 9: İşlemci Tasarımına Giriş: Datapath, Aritmetik Devre Tasarımı, ALU, Kaydırıcı ve Kontrol Kelimesi
 * **Genel Konular:**
-  - Dersin tarihi 7 Mayıs 2021 Cuma. Ders Zoom üzerinden yapıldı.
-    - Asıl anlatım yaklaşık 00:12'de başlar. Öncesi selamlaşma ve vize sonrası sohbettir.
+  - Asıl anlatım yaklaşık 00:12'de başlar. Öncesi sohbettir.
+  - Kaynak: Mano & Kime, *Logic and Computer Design Fundamentals*, 9. bölüm (Computer Design Basics). <!-- BELİRSİZ: Altyazıda yalnız "Mano'nun kitabı" ve "9. chapter" geçiyor. İkinci yazar ve bölüm adı doğrulanamadı. -->
   - İşlemci tasarımına giriş
     - CPU iki temel bloktan oluşur: veri yolu birimi (datapath unit) ve kontrol birimi (control unit).
   - Örnek datapath (4 register'lı)
@@ -197,8 +191,6 @@ Aşağıdaki tabloda her bir dersin konusu, kaynak markdown dosyası ve doğruda
     - Hem A hem B giriş lojiği gereken aritmetik devre tasarımı.
   - Lojik devre, ALU ve kaydırıcı (shifter)
     - AND, OR, XOR, NOT işlemlerini yapan lojik blok.
-  - Genel datapath ve kontrol kelimesi (control word)
-    - 8 register'lı datapath için 16 bitlik kontrol kelimesi.
 * **Hocanın Vurgusu:**
   - Dersi derste öğrenin.
     - Sadece ders notlarıyla çalışmak çok vakit kaybettirir.
@@ -213,8 +205,7 @@ Aşağıdaki tabloda her bir dersin konusu, kaynak markdown dosyası ve doğruda
 
 ### 🔹 Ders 10: Tek Çevrimli Bilgisayar, Komut Çözücü, Pipeline ve Tehlikeleri, G/Ç Arayüzü ve Haberleşme
 * **Genel Konular:**
-  - Dersin tarihi 21 Mayıs 2021 Cuma. Ders Zoom üzerinden yapıldı.
-    - Bayram tatilinden sonraki ilk derstir. Hoca "11. haftadayız" diyor.
+  - Asıl anlatım yaklaşık 00:16'da başlar. Öncesi sohbettir.
   - Datapath tekrarı
     - Register file, fonksiyon birimi (ALU + shifter), MUX B, MUX D, 16 bitlik kontrol kelimesi.
   - Tek çevrimli bilgisayar (single-cycle computer)
@@ -228,16 +219,16 @@ Aşağıdaki tabloda her bir dersin konusu, kaynak markdown dosyası ve doğruda
     - Bu kısmı bilirseniz dersin yaklaşık %30'unu biliyorsunuz demektir.
   - Fonksiyon birimindeki hiçbir blokta senkron eleman (flip-flop) yoktur.
     - Hepsi kombinasyonel devredir. Amaç bir clock periyodunda bir mikro işlem yapan tek çevrimli bilgisayardır.
-  - Kontrol kelimesi soruları klasik sınavlarda sık ve kolay sorulardır.
-    - Tablolar sınavda önünüzde olur. Ezberlemeye gerek yok.
+  - Kontrol kelimesi soruları sık ve kolay sorulardır.
+    - Tabloları ezberlemeye gerek yok.
   - Zero fill ile sign extend farklı işlemlerdir.
     - Zero fill: yüksek bitler 0 ile doldurulur (immediate operand).
   - CPU = kontrol birimi + datapath. "Yıllar sonra aklınızda kalacak temel konu budur."
 
 ### 🔹 Ders 11: Seri İletişim, Veri Transfer Yöntemleri, Öncelikli Kesmeler, DMA ve Önbelleğe Giriş
 * **Genel Konular:**
-  - Dersin tarihi 28 Mayıs 2021 Cuma. Ders Zoom üzerinden yapıldı.
-    - Asıl anlatım yaklaşık 00:04'te başlar.
+  - Asıl anlatım yaklaşık 00:04'te başlar.
+  - Kaynak: Mano & Kime'nin kitabı. G/Ç bölümü ve önbellek için 14. bölüm. <!-- BELİRSİZ: Altyazıda yalnız "Mano'nun kitabı" geçiyor. İkinci yazar doğrulanamadı. -->
   - Pipeline hakkında kısa cevap
     - Veri bağımlılığı derleyici (compiler) düzeyinde yazılımla ya da donanımla çözülebilir. Ayrıntısı Bilgisayar Mimarisi dersinde.
   - G/Ç tekrarı
@@ -248,7 +239,6 @@ Aşağıdaki tabloda her bir dersin konusu, kaynak markdown dosyası ve doğruda
     - Program kontrollü transfer (programmed I/O, yoklama/polling).
   - Öncelikli kesme donanımı
     - Daisy chain (seri) öncelik ve paralel öncelik donanımı.
-  - DMA denetleyicisi (DMA controller)
 * **Hocanın Vurgusu:**
   - Bu konular mesleğin "arka yüzüdür".
     - Bilgisayarın portlarla ve cihazlarla nasıl haberleştiğini teknik olarak öğreniyorsunuz.
@@ -262,15 +252,14 @@ Aşağıdaki tabloda her bir dersin konusu, kaynak markdown dosyası ve doğruda
 
 ### 🔹 Ders 12: Cache Bellek: Bellek Hiyerarşisi, Yerellik İlkesi, Direct Mapped Cache, Ortalama Erişim Süresi ve Yazma Politikaları
 * **Genel Konular:**
-  - Dersin tarihi 4 Haziran 2021 Cuma. Ders Zoom üzerinden yapıldı.
-    - Asıl ders yaklaşık 00:07'de başlar. Kaydın başı bekleme kısmıdır.
+  - Asıl ders yaklaşık 00:07'de başlar. Kaydın başı bekleme kısmıdır.
   - Önceki konulara dair öğrenci soruları
     - Interface sorusu (soru 3): adres hattı numarasındaki bir hata düzeltildi.
   - Cache memory (önbellek)
     - Bellek hiyerarşisi (memory hierarchy): register, L1 cache, L2 cache, ana bellek (DRAM), disk.
 * **Hocanın Vurgusu:**
   - Dersin son dört haftası en önemli konuları içerir.
-    - Giriş/çıkış ve iletişim, cache memory ve virtual memory finalde ağırlıklı sorulacak.
+    - Bunlar giriş/çıkış ve iletişim, cache memory ve virtual memory konularıdır.
   - Cache konusunda ezber gerekmez.
     - Matematiği dikkatli takip ederseniz her soruyu çözebilirsiniz.
   - Word, veri yolu genişliği kadardır.
@@ -280,17 +269,16 @@ Aşağıdaki tabloda her bir dersin konusu, kaynak markdown dosyası ve doğruda
   - Cache'te adresin tamamı değil, yalnız tag alanı saklanır.
     - Index ve offset alanları satırın yerinden ve satır içindeki konumdan zaten bellidir.
 
-### 🔹 Ders 13: Sanal Bellek: Adres Dönüşümü, Sayfa Tablosu, TLB, Sayfa Yerine Koyma ve Final Bilgilendirmesi
+### 🔹 Ders 13: Sanal Bellek: Adres Dönüşümü, Sayfa Tablosu, TLB ve Sayfa Yerine Koyma
 * **Genel Konular:**
-  - Dersin tarihi 11 Haziran 2021 Cuma. Dönemin son dersidir. Ders Zoom üzerinden yapıldı.
-    - Asıl ders yaklaşık 00:07'de başlar. Kaydın başı bekleme kısmıdır.
+  - Asıl ders yaklaşık 00:07'de başlar. Kaydın başı bekleme kısmıdır.
+  - Ders üç bölümdür: tekrar ve kavramlar, slayt örnekleri, 2010 sınav sorusu ile hocanın hazırladığı ek örnek.
   - Cache tekrarı
     - Cache zorunlu değildir, sistemi hızlandırır.
   - Sanal bellek (virtual memory)
     - Sanal adresten fiziksel adrese dönüşüm (address translation).
   - Örnekler
     - 48 bit sanal adres, 4 KB sayfa: sayfa tablosu büyüklüğü.
-  - Final ve kapanış bilgileri.
 * **Hocanın Vurgusu:**
   - Son haftaların konuları (cache ve virtual memory) mesleğiniz için çok önemli.
     - Bu konu İşletim Sistemleri dersiyle bağlantılıdır. Donanım tarafını bilmek orada işinizi kolaylaştırır.
