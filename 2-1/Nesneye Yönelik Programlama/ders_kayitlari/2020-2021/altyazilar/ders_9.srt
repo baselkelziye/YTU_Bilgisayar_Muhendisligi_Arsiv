@@ -196,7 +196,7 @@ inside main method we are generating an object from person class the name of who
 
 50
 00:15:00,275 --> 00:15:26,975
-SetCar is another request. IntroduceSelf is another request. It is method call, simple. Another object generation, new [öğrenci] from person class. This is a request and the response of this request from main. IntroduceSelf for [öğrenci] or person object is another request.
+SetCar is another request. IntroduceSelf is another request. It is method call, simple. Another object generation, new Aziz Sancar from person class. This is a request and the response of this request from main. IntroduceSelf for Aziz or person object is another request.
 
 51
 00:15:26,975 --> 00:15:33,975
@@ -320,7 +320,7 @@ A car is assigned into octa reference. Okey, octa object.
 
 81
 00:21:55,683 --> 00:22:19,903
-Also, vice versa, rover object is assigned into octa object. This is a two-way association, implementation. Introduce self octa, rover introduce self. Here, [öğrenci] object, Honda is another object. We are setting all of them.
+Also, vice versa, rover object is assigned into octa object. This is a two-way association, implementation. Introduce self octa, rover introduce self. Here, Aziz object, Honda is another object. We are setting all of them.
 
 82
 00:22:19,903 --> 00:22:25,743
@@ -348,11 +348,11 @@ Evet. Yani şu ana kadar set get metotlarını genelde set id, get id gibi şeyl
 
 88
 00:23:25,460 --> 00:23:26,419
-[öğrenci] sağlam.
+[öğrenci].
 
 89
 00:23:34,132 --> 00:23:35,191
-[öğrenci] Uğuz
+[öğrenci]
 
 90
 00:23:35,191 --> 00:23:38,831
@@ -380,7 +380,7 @@ Valla hocam tam bir şey çıkaramadım.
 
 96
 00:24:03,132 --> 00:24:14,812
-Şimdi araba dediğimiz bir nesne, [öğrenci] diye bir nesnemiz var. Bu [öğrenci]'ın sınıf tanımına bakarsak, [öğrenci], bakalım.
+Şimdi araba dediğimiz bir nesne, Oktay diye bir nesnemiz var. Bu Oktay'ın sınıf tanımına bakarsak, [öğrenci], bakalım.
 
 97
 00:24:20,180 --> 00:24:47,339
@@ -404,11 +404,11 @@ Bu satırları unutsak ne olurdu? Yazmasak ne olurdu?
 
 102
 00:25:27,223 --> 00:25:29,323
-No pointer, Utkan'ın söylediği hatayı alırdık.
+No pointer, [öğrenci]'ın söylediği hatayı alırdık.
 
 103
 00:25:34,036 --> 00:25:46,996
-Peki, şurada Octave Rover ve [öğrenci] yanlışlıkla böyle bir crossover yapsak nasıl olur?
+Peki, şurada Octave Rover ve Aziz Honda yanlışlıkla böyle bir crossover yapsak nasıl olur?
 
 104
 00:25:54,867 --> 00:25:55,307
@@ -420,7 +420,7 @@ Hocam sorunun dediğini biraz açıklayabilir misiniz? Ben anlayamadım da sorun
 
 106
 00:26:08,699 --> 00:26:31,799
-[öğrenci] bir kişi, person, P1 diyelim. Bu C1. Bu P2. Bu C2. P1'e C2'yi atasak, ondan sonra C1'i P2'yi atasak veya ne bileyim P1'e P2'yi zaten atayamayız. Bunlar set get metodlarıyla yapılan işte araba veya kişi tanımları.
+Oktay bir kişi, person, P1 diyelim. Bu C1. Bu P2. Bu C2. P1'e C2'yi atasak, ondan sonra C1'i P2'yi atasak veya ne bileyim P1'e P2'yi zaten atayamayız. Bunlar set get metodlarıyla yapılan işte araba veya kişi tanımları.
 
 107
 00:26:31,799 --> 00:26:51,499
@@ -600,11 +600,11 @@ Evet
 
 151
 00:33:39,955 --> 00:33:56,775
-Şimdi baktığımızda [öğrenci] var. [öğrenci]'ın arabası var. Bu [öğrenci]'ın kişi bilgisi burada. [öğrenci] introduce yourself dediğinde bakın burada herhangi bir şey gönderilmemiş. Bunun arabası yok.
+Şimdi baktığımızda Oktay var. Oktay'ın arabası var. Bu Oktay'ın kişi bilgisi burada. Oktay introduce yourself dediğinde bakın burada herhangi bir şey gönderilmemiş. Bunun arabası yok.
 
 152
 00:33:56,775 --> 00:34:11,316
-Ama araba kısmında [öğrenci]'a [öğrenci] nesnesi referans olarak veriliyor. [öğrenci] kendini introduce ettiğinde veya Rover kendini introduce ettiğinde göreceğimiz sonuç birbirlerini çok rahat göreceklerdir.
+Ama araba kısmında Oktay'a Oktay nesnesi referans olarak veriliyor. Oktay kendini introduce ettiğinde veya Rover kendini introduce ettiğinde göreceğimiz sonuç birbirlerini çok rahat göreceklerdir.
 
 153
 00:34:22,835 --> 00:34:41,615
@@ -760,7 +760,7 @@ YTV'ye.
 
 191
 00:39:42,911 --> 00:39:45,452
-Arada şurada [öğrenci] durağı var.
+Arada şurada Eyüp durağı var.
 
 192
 00:39:47,311 --> 00:39:49,872
@@ -784,7 +784,7 @@ Cevizli Bağ'dan bir sürü otobüs geçiyor.
 
 197
 00:40:03,431 --> 00:40:05,011
-Onu sonra [öğrenci]'ten başka otobüsler geçiyor.
+Onu sonra Eyüp'ten başka otobüsler geçiyor.
 
 198
 00:40:05,011 --> 00:40:13,691
@@ -980,7 +980,7 @@ Composition olabilir mi canım? Yani onun olmasına bağlı ya parçası olarak 
 
 246
 00:47:44,048 --> 00:47:51,027
-Şimdi şurası, ben şunu yanlış söyledim. Burası nedir arkadaşlar? Miracettin. Bu Composition dedi.
+Şimdi şurası, ben şunu yanlış söyledim. Burası nedir arkadaşlar? [öğrenci]. Bu Composition dedi.
 
 247
 00:47:52,228 --> 00:47:55,208
@@ -992,7 +992,7 @@ Galeride arabalar bir parçası.
 
 249
 00:47:57,947 --> 00:48:08,208
-Ha şimdi implementasyonda yani şu görünüşle baktığımızda bu composition da olabilir, parsanın sözü de aggregation da olabilir.
+Ha şimdi implementasyonda yani şu görünüşle baktığımızda bu composition da olabilir, [öğrenci]'nın sözü de aggregation da olabilir.
 
 250
 00:48:10,388 --> 00:48:19,327
@@ -1684,7 +1684,7 @@ Ama ben C'den bir association ile veya ne bileyim bir aggregation ile veya bir c
 
 422
 01:25:40,172 --> 01:25:43,172
-Grandchildler erişemez mi? Utkan şunu sormak istiyorsun.
+Grandchildler erişemez mi? [öğrenci] şunu sormak istiyorsun.
 
 423
 01:25:43,172 --> 01:25:46,432
@@ -2112,7 +2112,7 @@ Association, aggregation, composition or dependency [öğrenci]
 
 529
 01:40:43,252 --> 01:40:53,851
-[öğrenci] dedim. Niye? Aggregation veya Composition niye olmadı?
+[öğrenci] Association dedim. Niye? Aggregation veya Composition niye olmadı?
 
 530
 01:41:05,427 --> 01:41:07,207
@@ -2140,11 +2140,11 @@ Boşluğa ders anlatıyorum şimdi
 
 536
 01:41:28,131 --> 01:41:30,911
-Selim [öğrenci]
+[öğrenci]
 
 537
 01:41:39,859 --> 01:42:09,179
-Bora, Yankı. Merhaba hocam neler oluyor ben anlamadım. Sorunuza cevap vermek gerekirse one-sided association değil mi? Evet. Niye peki association, aggregation veya composition olamaz mı? Yani aslında şey diye düşününce işte button is red gibi düşününce is olabiliyor. Hayır yani şey olamaz mı? Yani lazer yazıcı yazıcıdır ama yani renk dediğimiz... Ha doğru is değil o zaman doğru has gibi oluyor.
+[öğrenci], [öğrenci]. Merhaba hocam neler oluyor ben anlamadım. Sorunuza cevap vermek gerekirse one-sided association değil mi? Evet. Niye peki association, aggregation veya composition olamaz mı? Yani aslında şey diye düşününce işte button is red gibi düşününce is olabiliyor. Hayır yani şey olamaz mı? Yani lazer yazıcı yazıcıdır ama yani renk dediğimiz... Ha doğru is değil o zaman doğru has gibi oluyor.
 
 538
 01:42:09,179 --> 01:42:17,179
@@ -2584,7 +2584,7 @@ Evet, bakın bir main class. Employee is an array of reference for step. It cons
 
 647
 02:02:57,851 --> 02:03:18,111
-Manager, boss is a new manager, [öğrenci] and 8000. This is an object. Boss nokta set bonus is 2500. The first, the zero element, the first element of stuff is boss.
+Manager, boss is a new manager, Cemal Nur Sargut and 8000. This is an object. Boss nokta set bonus is 2500. The first, the zero element, the first element of stuff is boss.
 
 648
 02:03:18,111 --> 02:03:37,832
@@ -2996,7 +2996,7 @@ Size bir geçen haftaki bir case study verildiğinde ne yapacaksınız?
 
 750
 02:21:07,731 --> 02:21:19,931
-Eğer doğrudan kodlama yapılırsa sıkıntı çok büyük oluyor. Bir de laboratuvarda birkaç arkadaşınızda bir sıkıntı olmuş. Yankıt söz vereceğim. Sözünü unutmadık ben.
+Eğer doğrudan kodlama yapılırsa sıkıntı çok büyük oluyor. Bir de laboratuvarda birkaç arkadaşınızda bir sıkıntı olmuş. [öğrenci] söz vereceğim. Sözünü unutmadık ben.
 
 751
 02:21:19,931 --> 02:21:34,091
@@ -3144,7 +3144,7 @@ Ben paylaşayım buraya atıyorum şimdi.
 
 787
 02:25:53,839 --> 02:26:16,519
-2021 [öğrenci] OOP diye. Oraya girdiğinizde benim grubum, 3. sayfada benim grubumun listesini görürsünüz. Lab ve uygulama takviminde de hangi hafta, hangi konulardan laboratuvar ve uygulama olacak. İşte önemli gün ve tarihler. Genel laboratuvar takvimi orada bulabilirsiniz.
+2021 Bahar OOP diye. Oraya girdiğinizde benim grubum, 3. sayfada benim grubumun listesini görürsünüz. Lab ve uygulama takviminde de hangi hafta, hangi konulardan laboratuvar ve uygulama olacak. İşte önemli gün ve tarihler. Genel laboratuvar takvimi orada bulabilirsiniz.
 
 788
 02:26:16,519 --> 02:26:30,299

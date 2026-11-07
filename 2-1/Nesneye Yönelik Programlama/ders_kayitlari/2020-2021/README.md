@@ -9,45 +9,46 @@
 * **Akademik Yıl:** 2020-2021
 * **Şube:** BLM2012 - 3
 
-Bu dizin, ilgili ders kayıtlarının altyazı özetlerini, çalışma notlarını ve PDF kaynaklarını içermektedir.
+Bu dizin, ilgili ders kayıtlarının altyazılarını, kısa notlarını ve genişletilmiş notlarını içermektedir.
+
+* **Kısa not:** Tekrar için. Dersin konuları, hocanın vurguları ve kısa tekrar maddeleri.
+* **Genişletilmiş not:** Dersi izlemeden öğrenmek için. Dersin anlatım akışını baştan sona, örnekleri ve soru-cevaplarıyla anlatır.
+* `altyazilar/`: ders kayıtlarının altyazıları (.srt). Notların PDF'leri `kisa_notlar/` ve `genisletilmis_notlar/` klasörlerinde, markdown kaynakları bu klasörlerin içindeki `markdown/` klasöründedir.
 
 ## 📚 Ders Müfredatı ve Belge Dizini
 
-Aşağıdaki tabloda her bir dersin konusu, kaynak markdown dosyası ve doğrudan indirilebilir PDF formatındaki derlenmiş halleri listelenmiştir. Ders numaraları, kayıt arşivindeki ders kaydı sıra numaralarıdır (hafta numarası değildir).
+Aşağıdaki tabloda her bir dersin konusu ile kısa ve genişletilmiş notlarının markdown ve PDF halleri listelenmiştir. Ders numaraları, kayıt arşivindeki ders kaydı sıra numaralarıdır (hafta numarası değildir).
 
-| Ders No | Ders İçeriği / Konu Başlıkları | Kaynak Notlar (Markdown) | Çalışma Dosyası (PDF) |
+| Ders No | Ders İçeriği / Konu Başlıkları | Kısa Not | Genişletilmiş Not |
 | :---: | :--- | :---: | :---: |
-| **Ders 1** | Tanışma, Dersin İşleyişi, Nesne Yönelimli Yaklaşım ve Java'ya Giriş | [Özet](altyazi_ozetleri/ders_1_ozet.md) | [PDF (İndir)](ders_1_ozet.pdf) |
-| **Ders 2** | NetBeans Kurulumu, İlk Java Projesi, Paketler ve Referans Mantığı | [Özet](altyazi_ozetleri/ders_2_ozet.md) | [PDF (İndir)](ders_2_ozet.pdf) |
-| **Ders 3** | Nesne ve Sınıf, Bilgi Gizleme, UML Sınıf Diyagramı, Static, Final ve Yapıcı Metotlar | [Özet](altyazi_ozetleri/ders_3_ozet.md) | [PDF (İndir)](ders_3_ozet.pdf) |
-| **Ders 4** | Kitap-Yazar-Kütüphane Uygulaması: Kapsülleme, Constructor Overloading, Static ve Finalize | [Özet](altyazi_ozetleri/ders_4_ozet.md) | [PDF (İndir)](ders_4_ozet.pdf) |
-| **Ders 5** | Paketler, Sarmalayıcı Sınıflar, String, Math ve Random, Scanner, Parametre Aktarımı ve toString | [Özet](altyazi_ozetleri/ders_5_ozet.md) | [PDF (İndir)](ders_5_ozet.pdf) |
-| **Ders 6** | Uygulama: Kitap-Raf-Kitaplık, Static Üyeler, Bileşim ve Birleştirme İlişkileri | [Özet](altyazi_ozetleri/ders_6_ozet.md) | [PDF (İndir)](ders_6_ozet.pdf) |
-| **Ders 7** | Proje Export/Import, Kopya Yapıcı, Senaryodan Sınıf Çıkarma ve Nesneler Arası İlişkiler: Association ve Dependency | [Özet](altyazi_ozetleri/ders_7_ozet.md) | [PDF (İndir)](ders_7_ozet.pdf) |
-| **Ders 8** | Laboratuvar 1: Müşteri-Sipariş-Ürün Sorusu ve Teslim Kuralları (Kısa Kayıt) | [Özet](altyazi_ozetleri/ders_8_ozet.md) | [PDF (İndir)](ders_8_ozet.pdf) |
-| **Ders 9** | Two-Way Association, Aggregation, Composition ve Kalıtım: Override, Polymorphism, super | [Özet](altyazi_ozetleri/ders_9_ozet.md) | [PDF (İndir)](ders_9_ozet.pdf) |
-| **Ders 10** | Uygulama: Akbil Örneğiyle Kalıtım, Polymorphism, Yapıcı Sırası ve Abstract Sınıfa Giriş | [Özet](altyazi_ozetleri/ders_10_ozet.md) | [PDF (İndir)](ders_10_ozet.pdf) |
-| **Ders 11** | Soyut Sınıflar, Dinamik Bağlama, Kalıtımda Nesne Oluşturma Sırası ve Overload Çözümleme | [Özet](altyazi_ozetleri/ders_11_ozet.md) | [PDF (İndir)](ders_11_ozet.pdf) |
-| **Ders 13** | Operatör Aşırı Yükleme, Interface'ler, Enum'lar, Generic Sınıflar ve ArrayList | [Özet](altyazi_ozetleri/ders_13_ozet.md) | [PDF (İndir)](ders_13_ozet.pdf) |
-| **Ders 16** | Vize Çözümleri, HashMap, Java Collection Framework ve İstisna Yönetimi | [Özet](altyazi_ozetleri/ders_16_ozet.md) | [PDF (İndir)](ders_16_ozet.pdf) |
-| **Ders 17** | Uygulama: Arayüzler, İstisnalar, Jenerikler ve Koleksiyonlar | [Özet](altyazi_ozetleri/ders_17_ozet.md) | [PDF (İndir)](ders_17_ozet.pdf) |
-| **Ders 18** | Tip Dönüşümü, Dosyalarla Çalışma ve Serileştirme, İç Sınıflar ve GUI'ye Giriş | [Özet](altyazi_ozetleri/ders_18_ozet.md) | [PDF (İndir)](ders_18_ozet.pdf) |
-| **Ders 19** | Uygulama: Thread'ler ve Senkronizasyon, Dosya İşlemleri, Tip Dönüşümü ve İç Sınıflar | [Özet](altyazi_ozetleri/ders_19_ozet.md) | [PDF (İndir)](ders_19_ozet.pdf) |
-| **Ders 20** | İşletim Sistemi Kavramları, Java'da Thread'ler, JUnit, Thread Havuzu ve Senkronizasyon | [Özet](altyazi_ozetleri/ders_20_ozet.md) | [PDF (İndir)](ders_20_ozet.pdf) |
-| **Ders 22** | Üretici-Tüketici Problemi, Swing ile GUI ve Olay Yönetimi, Katmanlı Mimari, MVC, MVP ve MVVM | [Özet](altyazi_ozetleri/ders_22_ozet.md) | [PDF (İndir)](ders_22_ozet.pdf) |
-| **Ders 23** | Laboratuvar Sınavı Oturumu: Serileştirme ile Dosyaya Kaydetme (Kısa Kayıt) | [Özet](altyazi_ozetleri/ders_23_ozet.md) | [PDF (İndir)](ders_23_ozet.pdf) |
+| **Ders 1** | Nesne Yönelimli Yaklaşım ve Java'ya Giriş | [Markdown](kisa_notlar/markdown/ders_1_ozet.md) · [PDF](kisa_notlar/ders_1_ozet.pdf) | [Markdown](genisletilmis_notlar/markdown/ders_1_genisletilmis.md) · [PDF](genisletilmis_notlar/ders_1_genisletilmis.pdf) |
+| **Ders 2** | NetBeans Kurulumu, İlk Java Projesi, Paketler ve Referans Mantığı | [Markdown](kisa_notlar/markdown/ders_2_ozet.md) · [PDF](kisa_notlar/ders_2_ozet.pdf) | [Markdown](genisletilmis_notlar/markdown/ders_2_genisletilmis.md) · [PDF](genisletilmis_notlar/ders_2_genisletilmis.pdf) |
+| **Ders 3** | Nesne ve Sınıf, Bilgi Gizleme, UML Sınıf Diyagramı, Static, Final ve Yapıcı Metotlar | [Markdown](kisa_notlar/markdown/ders_3_ozet.md) · [PDF](kisa_notlar/ders_3_ozet.pdf) | [Markdown](genisletilmis_notlar/markdown/ders_3_genisletilmis.md) · [PDF](genisletilmis_notlar/ders_3_genisletilmis.pdf) |
+| **Ders 4** | Kitap-Yazar-Kütüphane Uygulaması: Kapsülleme, Constructor Overloading, Static ve Finalize | [Markdown](kisa_notlar/markdown/ders_4_ozet.md) · [PDF](kisa_notlar/ders_4_ozet.pdf) | [Markdown](genisletilmis_notlar/markdown/ders_4_genisletilmis.md) · [PDF](genisletilmis_notlar/ders_4_genisletilmis.pdf) |
+| **Ders 5** | Paketler, Sarmalayıcı Sınıflar, String, Math ve Random, Scanner, Parametre Aktarımı ve toString | [Markdown](kisa_notlar/markdown/ders_5_ozet.md) · [PDF](kisa_notlar/ders_5_ozet.pdf) | [Markdown](genisletilmis_notlar/markdown/ders_5_genisletilmis.md) · [PDF](genisletilmis_notlar/ders_5_genisletilmis.pdf) |
+| **Ders 6** | Uygulama: Kitap-Raf-Kitaplık, Static Üyeler, Bileşim ve Birleştirme İlişkileri | [Markdown](kisa_notlar/markdown/ders_6_ozet.md) · [PDF](kisa_notlar/ders_6_ozet.pdf) | [Markdown](genisletilmis_notlar/markdown/ders_6_genisletilmis.md) · [PDF](genisletilmis_notlar/ders_6_genisletilmis.pdf) |
+| **Ders 7** | Proje Export/Import, Kopya Yapıcı, Senaryodan Sınıf Çıkarma ve Nesneler Arası İlişkiler: Association ve Dependency | [Markdown](kisa_notlar/markdown/ders_7_ozet.md) · [PDF](kisa_notlar/ders_7_ozet.pdf) | [Markdown](genisletilmis_notlar/markdown/ders_7_genisletilmis.md) · [PDF](genisletilmis_notlar/ders_7_genisletilmis.pdf) |
+| **Ders 8** | Laboratuvar 1: Müşteri-Sipariş-Ürün Sorusu (Kısa Kayıt) | [Markdown](kisa_notlar/markdown/ders_8_ozet.md) · [PDF](kisa_notlar/ders_8_ozet.pdf) | [Markdown](genisletilmis_notlar/markdown/ders_8_genisletilmis.md) · [PDF](genisletilmis_notlar/ders_8_genisletilmis.pdf) |
+| **Ders 9** | Two-Way Association, Aggregation, Composition ve Kalıtım: Override, Polymorphism, super | [Markdown](kisa_notlar/markdown/ders_9_ozet.md) · [PDF](kisa_notlar/ders_9_ozet.pdf) | [Markdown](genisletilmis_notlar/markdown/ders_9_genisletilmis.md) · [PDF](genisletilmis_notlar/ders_9_genisletilmis.pdf) |
+| **Ders 10** | Uygulama: Akbil Örneğiyle Kalıtım, Polymorphism, Yapıcı Sırası ve Abstract Sınıfa Giriş | [Markdown](kisa_notlar/markdown/ders_10_ozet.md) · [PDF](kisa_notlar/ders_10_ozet.pdf) | [Markdown](genisletilmis_notlar/markdown/ders_10_genisletilmis.md) · [PDF](genisletilmis_notlar/ders_10_genisletilmis.pdf) |
+| **Ders 11** | Soyut Sınıflar, Dinamik Bağlama, Kalıtımda Nesne Oluşturma Sırası ve Overload Çözümleme | [Markdown](kisa_notlar/markdown/ders_11_ozet.md) · [PDF](kisa_notlar/ders_11_ozet.pdf) | [Markdown](genisletilmis_notlar/markdown/ders_11_genisletilmis.md) · [PDF](genisletilmis_notlar/ders_11_genisletilmis.pdf) |
+| **Ders 13** | Operatör Aşırı Yükleme, Interface'ler, Enum'lar, Generic Sınıflar ve ArrayList | [Markdown](kisa_notlar/markdown/ders_13_ozet.md) · [PDF](kisa_notlar/ders_13_ozet.pdf) | [Markdown](genisletilmis_notlar/markdown/ders_13_genisletilmis.md) · [PDF](genisletilmis_notlar/ders_13_genisletilmis.pdf) |
+| **Ders 16** | Vize Çözümleri, HashMap, Java Collection Framework ve İstisna Yönetimi | [Markdown](kisa_notlar/markdown/ders_16_ozet.md) · [PDF](kisa_notlar/ders_16_ozet.pdf) | [Markdown](genisletilmis_notlar/markdown/ders_16_genisletilmis.md) · [PDF](genisletilmis_notlar/ders_16_genisletilmis.pdf) |
+| **Ders 17** | Uygulama: Arayüzler, İstisnalar, Jenerikler ve Koleksiyonlar | [Markdown](kisa_notlar/markdown/ders_17_ozet.md) · [PDF](kisa_notlar/ders_17_ozet.pdf) | [Markdown](genisletilmis_notlar/markdown/ders_17_genisletilmis.md) · [PDF](genisletilmis_notlar/ders_17_genisletilmis.pdf) |
+| **Ders 18** | Tip Dönüşümü, Dosyalarla Çalışma ve Serileştirme, İç Sınıflar ve GUI'ye Giriş | [Markdown](kisa_notlar/markdown/ders_18_ozet.md) · [PDF](kisa_notlar/ders_18_ozet.pdf) | [Markdown](genisletilmis_notlar/markdown/ders_18_genisletilmis.md) · [PDF](genisletilmis_notlar/ders_18_genisletilmis.pdf) |
+| **Ders 19** | Uygulama: Thread'ler ve Senkronizasyon, Dosya İşlemleri, Tip Dönüşümü ve İç Sınıflar | [Markdown](kisa_notlar/markdown/ders_19_ozet.md) · [PDF](kisa_notlar/ders_19_ozet.pdf) | [Markdown](genisletilmis_notlar/markdown/ders_19_genisletilmis.md) · [PDF](genisletilmis_notlar/ders_19_genisletilmis.pdf) |
+| **Ders 20** | İşletim Sistemi Kavramları, Java'da Thread'ler, JUnit, Thread Havuzu ve Senkronizasyon | [Markdown](kisa_notlar/markdown/ders_20_ozet.md) · [PDF](kisa_notlar/ders_20_ozet.pdf) | [Markdown](genisletilmis_notlar/markdown/ders_20_genisletilmis.md) · [PDF](genisletilmis_notlar/ders_20_genisletilmis.pdf) |
+| **Ders 22** | Üretici-Tüketici Problemi, Swing ile GUI ve Olay Yönetimi, Katmanlı Mimari, MVC, MVP ve MVVM | [Markdown](kisa_notlar/markdown/ders_22_ozet.md) · [PDF](kisa_notlar/ders_22_ozet.pdf) | [Markdown](genisletilmis_notlar/markdown/ders_22_genisletilmis.md) · [PDF](genisletilmis_notlar/ders_22_genisletilmis.pdf) |
+| **Ders 23** | Laboratuvar Sınavı Oturumu: Serileştirme ile Dosyaya Kaydetme (Kısa Kayıt) | [Markdown](kisa_notlar/markdown/ders_23_ozet.md) · [PDF](kisa_notlar/ders_23_ozet.pdf) | — |
 
 > [!NOTE]
 > 12, 14, 15 ve 21 numaralı kayıtlar arşivde bulunmamaktadır. 12 ve 19 Mayıs 2021 haftalarında idari izin ve 19 Mayıs tatili nedeniyle ders yapılmamıştır.
 
 ## 🎯 Derslerin Detaylı Özetleri ve Kazanımları
 
-### 🔹 Ders 1: Tanışma, Dersin İşleyişi, Nesne Yönelimli Yaklaşım ve Java'ya Giriş
+### 🔹 Ders 1: Nesne Yönelimli Yaklaşım ve Java'ya Giriş
 * **Genel Konular:**
-  - Dersin tarihi 10 Mart 2021 Çarşamba. Ders Zoom üzerinden yapıldı. Dönemin ilk dersi.
-    - Asıl ders yaklaşık 00:08'de başlar. Öncesi bekleme ve sohbettir.
-  - Dersin işleyişi ve değerlendirme
-    - Ders eski programdaki "Nesneye Dayalı Kavramlar" ve "Nesneye Dayalı Programlama" (2+2, 2+2) derslerinin birleşimidir. Yeni programda 3+2'dir.
+  - Asıl ders yaklaşık 00:08'de başlar. Öncesi bekleme ve sohbettir.
   - Dersin öncesi ve sonrası
     - Öncesi: yapısal programlama ve algoritma bilgisi (C, Pascal).
   - Nesne yönelimli programlamanın (object-oriented programming) amacı
@@ -59,8 +60,6 @@ Aşağıdaki tabloda her bir dersin konusu, kaynak markdown dosyası ve doğruda
   - Java'ya giriş
     - Java; masaüstünde, web'de ve küçük cihazlarda çalışabilen taşınabilir kod üretmek için yaygınlaştı.
 * **Hocanın Vurgusu:**
-  - Birinci el bilgiye güvenin.
-    - Dersle, sınavla ve ödevle ilgili her konuda bu grubun bilgi kaynağı hocanın kendisidir. Başka grupların hocalarından duyulan bilgiye göre hareket etmeyin.
   - Bu dersin amacı Java dilini öğrenmek değil.
     - Asıl zor olan nesne tabanlı analiz ve tasarımdır: Hangi sınıflar olacak, nesneler arasındaki ilişkiler nasıl olacak?
   - Analizde yapısal düşünmeyin.
@@ -69,13 +68,16 @@ Aşağıdaki tabloda her bir dersin konusu, kaynak markdown dosyası ve doğruda
     - Martin Fowler, "UML Distilled"; Fowler'ın "Refactoring" ve "Analysis Patterns" kitapları.
   - Uzaktan eğitimin avantajını kullanın.
     - Anlamadığınız konuyu kayıttan veya diğer grupların hocalarının kayıtlarından tekrar izleyin.
+  - Veri yapıları dersindeki konuları Java'da da yazın.
+    - Hem Java hem veri yapıları bilginiz gelişir.
+* **Detaylı Açıklamalar:** Hoca swap için wrapper sınıf gerektiğini de söyledi. `Integer` parametreleri içeride takas etmek de çağırandaki değerleri değiştirmez: Java ile denendi, `swap(a, b)` sonrası `a=1, b=2` kaldı.
 
 ### 🔹 Ders 2: NetBeans Kurulumu, İlk Java Projesi, Paketler ve Referans Mantığı
 * **Genel Konular:**
-  - Dersin tarihi 10 Mart 2021 Çarşamba. Ders 1 ile aynı gün yapılan uygulama (laboratuvar saati) oturumudur. Ders Türkçe anlatıldı.
+  - Ders 1 ile aynı gün yapılan uygulama oturumudur.
     - Asıl anlatım yaklaşık 00:30'da başlar. Öncesi NetBeans ve JDK'nın birlikte indirilip kurulmasıdır.
   - Geliştirme ortamının kurulumu
-    - Apache NetBeans (derste 12.3) indirildi. Kurulumda "Customize" ile gereksiz bileşenler (ör. Enterprise Edition, PHP) çıkarılabilir.
+    - Apache NetBeans indirildi. <!-- BELİRSİZ: Sürüm numarası altyazıda okunmuyor; önceki notta 12.3 yazıyordu. --> Kurulumda "Customize" ile gereksiz bileşenler (ör. Enterprise Edition, PHP) çıkarılabilir.
   - İlk Java projesi
     - File, New Project, Java with Ant, Java Application. "Create Main Class" seçilir.
   - Paketler (package)
@@ -86,8 +88,6 @@ Aşağıdaki tabloda her bir dersin konusu, kaynak markdown dosyası ve doğruda
     - Easy UML eklentisi NetBeans'e elle (`.nbm` dosyalarıyla) kuruldu. Kodu verilen sınıflardan sınıf diyagramı üretildi.
   - `JFrame` ile hazır grafik arayüz formu kısaca gösterildi. Bu konu dönem sonunda işlenecek.
 * **Hocanın Vurgusu:**
-  - Ödev ve laboratuvarlarda **sadece `.java` dosyaları** gönderilecek.
-    - `.class` dosyası göndermeyin.
   - Sınıf adı ile dosya adı aynı olmalıdır.
     - Sınıf adını değiştirmek için sağ tık, Refactor, Rename kullanın; ad koddaki her yerde değişir.
   - Sınıf adlarında tekil isim kullanın: `Kitap`, `Yazar`.
@@ -95,14 +95,15 @@ Aşağıdaki tabloda her bir dersin konusu, kaynak markdown dosyası ve doğruda
     - Yazarın da özellikleri olduğu için ayrı bir sınıf olmalıdır.
   - Nesne yönelimli programlama bir referans mekanizmasıdır.
     - Her şey birbirine referans verir. Derin kopya (deep copy) maliyetlidir, gerekirse yapılır.
-* **Detaylı Açıklamalar:** public class Deneme { public static void main(String[] args) { System.out.println("deneme"); System.out.print("denemeee"); // alt satıra geçmez System.out.println("sdfsdf"); int x = 5; System.out.println(x); // 5 Yazar y = new Yazar(); System.out.println(y); // javaapplication3.Yazar@... gibi bir çıktı Kitap k = new Kitap(); System.out.println(k); // k.yazar.ad ile kitabın yazarının adına erişilir } } ```
+  - Bu derste `if`, `for`, `while` tekrar anlatılmayacak.
+    - Bunlar C ile neredeyse aynıdır.
+* **Detaylı Açıklamalar:** <!-- BELİRSİZ: Altyazıda yalnız "deneme" metni duyuluyor. "denemeee" ve "sdfsdf" metinleri ile `Yazar` alanlarının kaynağı olan kare klasörü bu işte yok. -->
 
 ### 🔹 Ders 3: Nesne ve Sınıf, Bilgi Gizleme, UML Sınıf Diyagramı, Static, Final ve Yapıcı Metotlar
 * **Genel Konular:**
-  - Dersin tarihi 17 Mart 2021 Çarşamba. Ders Zoom üzerinden yapıldı.
-    - Asıl ders yaklaşık 00:08'de başlar. Öncesi duyurular ve sohbettir. 00:59-01:16 arası ara ve sohbettir.
-  - Duyurular
-    - Ders ve laboratuvar saatleri değiştirilemiyor; Zoom oturumları sisteme göre tanımlı.
+  - Asıl ders yaklaşık 00:08'de başlar. 00:59-01:16 arası ara ve sohbettir.
+    - Teorik kısım İngilizce anlatıldı. Hoca önemli yerleri Türkçe tekrar etti.
+  - IntelliJ kullanılabilir, ama UML çizimi ve koddan diyagram çıkarma için NetBeans'teki Easy UML daha rahat.
   - Nesne ve sınıf (object, class)
     - Nesne somut, sınıf soyuttur. Sınıf bir şablondur (template); nesne bu şablondan üretilen örnektir (instance).
   - Kapsülleme (encapsulation) ve bilgi gizleme (information hiding)
@@ -111,21 +112,20 @@ Aşağıdaki tabloda her bir dersin konusu, kaynak markdown dosyası ve doğruda
   - Paketler (package) ve `import`.
 * **Hocanın Vurgusu:**
   - **Bu dersin amacı Java öğrenmek değil, nesnesel düşünmektir.** Teknoparktaki firmalar öğrencilerin tasarım kalıplarını ve nesne yönelimli tasarımı bilmediğinden şikâyet ediyor.
-  - **UML sınavda sorulacak.** Sizden UML çizmeniz veya verilen bir UML'in eksiklerini doldurmanız istenebilir.
-    - Önceki yıllarda sınavlarda bir sınıf diyagramı verilip "şu sınıfı kodlayın" denirdi.
+  - **UML önemlidir.** UML çizmeyi, verilen bir UML'in eksiklerini doldurmayı ve verilen sınıf diyagramını kodlamayı bilin.
   - **UML aracı olarak kod üretebilen (code generator) bir araç kullanın.** Önce UML'i çizin, sonra kod iskeletini üretin, metotların içini doldurun.
   - **Alanları `private` yapın.** UML verilmemişse sınıf alanlarını `private` tanımlayın, erişimi `public` getter/setter ile sağlayın.
-    - Bunu yapmamak sınavda puan kaybettirir.
   - **Nesne oluştururken iki operatör çalışır:** önce `new` nesneyi oluşturur ve referansını döndürür, sonra atama operatörü bu referansı değişkene yazar.
+* **Detaylı Açıklamalar:** <!-- BELİRSİZ: Paket adı `nyp01a`, "34 RA 440" değeri ve "My plate: " metni altyazıda geçmiyor. Altyazıda yazdırılan metin "MyPlate is equal to plus getPlate" diye okunuyor. -->
 
 ### 🔹 Ders 4: Kitap-Yazar-Kütüphane Uygulaması: Kapsülleme, Constructor Overloading, Static ve Finalize
 * **Genel Konular:**
-  - Dersin tarihi 17 Mart 2021 Çarşamba. Bu kayıt günün ikinci oturumudur (saat 17:00 civarı uygulama saati). Ders Zoom üzerinden, NetBeans ile canlı kodlanarak yapıldı.
+  - Bu kayıt NetBeans ile canlı kodlanan uygulama oturumudur.
     - İlk 9 dakika IDE ve Discord sohbetidir. Asıl konu yaklaşık 00:09'da başlar.
   - IDE'ler arası proje taşıma
     - IntelliJ, NetBeans ve Eclipse projelerinin yapılandırma dosyaları (Ant, Maven, Gradle) farklıdır. Proje doğrudan açılmayabilir.
   - Örnek: Kitap, Yazar ve Kütüphane sınıfları
-    - Önce alanları doğrudan erişilen (public) sınıflarla başlandı. Sonra bu yaklaşımın nesne yönelimli mantığa aykırı olduğu gösterildi.
+    - Önce alanlara test sınıfından doğrudan erişilerek başlandı. Sonra bu yaklaşımın nesne yönelimli mantığa aykırı olduğu gösterildi.
   - Referans tipleri
     - `new` ile üretilen her nesne referans tiplidir. Nesneyi doğrudan yazdırınca adres benzeri bir değer görünür.
   - String birleştirme ve tip dönüşümü
@@ -148,7 +148,7 @@ Aşağıdaki tabloda her bir dersin konusu, kaynak markdown dosyası ve doğruda
 
 ### 🔹 Ders 5: Paketler, Sarmalayıcı Sınıflar, String, Math ve Random, Scanner, Parametre Aktarımı ve toString
 * **Genel Konular:**
-  - Dersin tarihi 24 Mart 2021 Çarşamba. Ders Zoom üzerinden yapıldı. Slaytlar İngilizce; hoca slayt kısımlarını çoğunlukla İngilizce, açıklamaları Türkçe anlattı.
+  - Slaytlar İngilizce; hoca slayt kısımlarını çoğunlukla İngilizce, açıklamaları Türkçe anlattı.
     - Asıl ders yaklaşık 00:04'te başlar. İki kez 10 dakikalık ara verildi (yaklaşık 01:08 ve 02:10).
   - Önceki dersin tekrarı
     - Sınıf (soyut) ve nesne (somut) farkı. Alan (member, field, attribute, property) ve metot (method, function, action) terimleri.
@@ -161,12 +161,12 @@ Aşağıdaki tabloda her bir dersin konusu, kaynak markdown dosyası ve doğruda
     - `compareTo`, `equals`, `charAt`, `length`, `concat`, `contains`, `endsWith`, `indexOf`, `split`, `substring`, `toUpperCase`, `trim`.
   - `Math` ve `Random` sınıfları
 * **Hocanın Vurgusu:**
-  - **UML sınavda çıkacak.** UML diyagramı verilip kodu istenebilir.
-    - Ya da kod verilip UML'i istenebilir.
-  - **Sorularda bütün alanları `private` yapmanız beklenecek.**
+  - **UML çok önemli.** UML diyagramından kod yazmayı, koddan UML çizmeyi bilin.
+    - UML'de önce erişim belirteci yazılır. Sonra ad yazılır.
+  - **Bütün alanları `private` yapın.**
     - Değişmeyecek alanlar (şase numarası, ISBN) yalnız constructor ile atanır.
-  - `import` ile her şeyi dahil etmeyin.
-    - Gereksiz sınıflar kodu büyütür. Hoca bunu C'deki `#include` ön işleminin yüzlerce satır eklemesine benzetti.
+  - Hoca `import` ile her şeyi dahil etmemeyi önerdi ve bunu C'deki `#include` ön işlemine benzetti.
+    - Bu benzetme Java'da geçerli değildir; ders sonrası notlara bakın.
   - `nextInt()` sonrası `nextLine()` okunamıyor.
     - Sebep: Enter tuşunun ürettiği satır sonu tamponda (buffer) kalır.
   - Kitaplardaki "metoddan önce/sonra yazdır" örnekleri çoğu zaman gereksizdir.
@@ -175,18 +175,16 @@ Aşağıdaki tabloda her bir dersin konusu, kaynak markdown dosyası ve doğruda
 
 ### 🔹 Ders 6: Uygulama: Kitap-Raf-Kitaplık, Static Üyeler, Bileşim ve Birleştirme İlişkileri
 * **Genel Konular:**
-  - Dersin tarihi 24 Mart 2021 Çarşamba. Bu kayıt günün ikinci oturumudur: akşam uygulama saati (ekran saatine göre yaklaşık 18:55'te başladı). Ders Zoom üzerinden yapıldı.
+  - Bu kayıt uygulama oturumudur.
     - İlk 8 dakika bekleme kısmıdır. Asıl oturum yaklaşık 00:08'de başlar.
   - Uygulama sorusu: Kitaplık uygulaması (`Uyg1.pdf`)
     - Üç sınıf: `Kitap`, `Raf`, `Kitaplik`. Bir de `Test` sınıfı.
   - Konular
     - `private`, `final` ve `static` alanlar. Statik sayaç (`kitapSayisi`) ve statik metot (`isbnNedir`).
-  - Laboratuvar düzeni hakkında bilgi
 * **Hocanın Vurgusu:**
   - **Algoritmalar basit tutulacak.** Amaç nesne yönelimli kavramları anlamak.
-    - Laboratuvar soruları 3-4 sınıflık olacak. Veri yapıları dersindeki gibi derin algoritma bilgisi istenmeyecek.
-  - **Laboratuvarda UML doğrudan verilebilir veya soru metninden UML'i sizin çıkarmanız istenebilir.**
-    - Çözümler Online Yıldız'da açılan ödeve yüklenecek. Süre sınırlı olacak.
+    - Önemli olan hangi sınıfların olduğu ve sınıflar arasındaki ilişkilerdir.
+  - **UML'den kod yazmayı ve soru metninden UML çıkarmayı bilin.**
   - **Bileşim (composition) ve birleştirme (aggregation) farkı önemli.**
     - Kitaplık yok olursa rafları da yok olur (bileşim, dolu elmas). Raflar `Kitaplik` constructor'ı içinde üretilir.
   - **Metodu ilgili sınıfa yazın.**
@@ -197,10 +195,9 @@ Aşağıdaki tabloda her bir dersin konusu, kaynak markdown dosyası ve doğruda
 
 ### 🔹 Ders 7: Proje Export/Import, Kopya Yapıcı, Senaryodan Sınıf Çıkarma ve Nesneler Arası İlişkiler: Association ve Dependency
 * **Genel Konular:**
-  - Dersin tarihi 31 Mart 2021 Çarşamba. Ders Zoom üzerinden yapıldı.
-    - Asıl ders yaklaşık 00:06'da başlar. Kaydın başı bekleme kısmıdır.
-  - Laboratuvar duyurusu: proje export ve import işlemleri
-    - Laboratuvarda kod Online Yıldız üzerinden yüklenecek. Süre 1 saat.
+  - Asıl ders yaklaşık 00:06'da başlar. Kaydın başı bekleme kısmıdır.
+  - Proje export ve import işlemleri
+    - NetBeans'te projeyi `File > Export Project > To ZIP` ile dışa aktarın. Dosya adına `.zip` uzantısını yazın.
   - Kopya yapıcı (copy constructor)
     - `Kitap` sınıfına `Kitap(Kitap k)` yapıcısı eklendi. Bu yapıcı, var olan bir kitabın kopyasını oluşturur.
   - Senaryodan sınıf ve özellik çıkarma
@@ -209,43 +206,35 @@ Aşağıdaki tabloda her bir dersin konusu, kaynak markdown dosyası ve doğruda
   - Nesneler arası ilişkiler (relations between objects)
     - İlişki türleri: association, dependency, aggregation, composition, inheritance.
 * **Hocanın Vurgusu:**
-  - Laboratuvarda doğru dosyayı yükleyin.
-    - `.class` dosyaları açılamaz ve değerlendirilemez. `src` klasörünü veya ZIP olarak export edilen projeyi gönderin.
   - IDE'nin kod üretme özelliklerini kullanın.
-    - NetBeans'te `Insert Code` ile constructor, getter ve setter hızlıca oluşturulur. Laboratuvarda hız buna bağlıdır.
+    - NetBeans'te `Insert Code` ile constructor, getter ve setter hızlıca oluşturulur.
   - Referans tipli alanın kopyalanması, nesnenin kopyalanması demek değildir.
     - Kopya yapıcıda `yazar` referansı kopyalanır. İki kitap aynı `Yazar` nesnesini gösterir.
-  - İlk sınavda hazır bir UML ve gizli bilgiler (hidden information) verilecek.
-    - Sizden bu UML'e göre kod yazmanız istenecek.
+  - UML'den kod yazarken ilişkileri koda çevirin.
+    - Diyagramda `Customer` ile `Order` arasında "1 - *" ilişki görürseniz, `Customer` sınıfına `private` bir `Order` dizisi veya listesi eklemeniz gerekir.
   - Kalıtımı (inheritance) gereksiz yere kullanmayın.
     - Ortak alan az ise (ör. yalnızca ad ve soyad) ayrı sınıflarda tanımlamak yeterlidir. Association çoğu durumda daha doğrudur.
+  - Referansın `null` olup olmadığını kontrol edin.
+    - Kontrol yapılmazsa `NullPointerException` alınır ve program kapanır.
 * **Detaylı Açıklamalar:** Derste `Kitap` sınıfı şu hâldeydi (kareden):
 
-### 🔹 Ders 8: Laboratuvar 1: Müşteri-Sipariş-Ürün Sorusu ve Teslim Kuralları (Kısa Kayıt)
+### 🔹 Ders 8: Laboratuvar 1: Müşteri-Sipariş-Ürün Sorusu (Kısa Kayıt)
 * **Genel Konular:**
-  - Dersin tarihi 31 Mart 2021 Çarşamba. Bu kayıt günün ikinci oturumudur: **Laboratuvar 1** açılış oturumu. Kayıt yaklaşık 13 dakikadır. Konu anlatılmadı.
-    - Oturumu dersin hocası açtı. Asistan Toprak Hoca da katıldı. Toprak Hoca Zoom'a hocanın adıyla ("Ahmet Elbir") bağlanmıştı; hoca "iki tane Ahmet Elbir var" diye şaka yaptı.
-  - Laboratuvar 1 sorusu Online Yıldız'da "Laboratuvar 1" başlığıyla açıldı (`Lab1.rar`). Soru: Müşteri-Sipariş-Ürün uygulaması.
+  - Bu kayıt **Laboratuvar 1** açılış oturumudur. Kayıt yaklaşık 13 dakikadır. Konu anlatılmadı.
+  - Soru: Müşteri-Sipariş-Ürün uygulaması.
   - Soru formatı
     - Bir UML diyagramı verildi. Get/set dışındaki metotlar açıklandı.
-  - Teslim kuralları ve süre
 * **Hocanın Vurgusu:**
-  - **`main` metodunu kendiniz yazmayın.** Dosyadakini kopyalayıp yapıştırın ve verilen çıktıyı elde edin.
-  - **Teslim:** Bütün projeyi export edin.
-    - Dosya adı öğrenci numaranız olsun (`numara.zip` veya `.rar`).
-  - **Süre uzatılmıyor.** Bu kural bütün gruplar için geçerli, istisna yok.
-    - Get/set, constructor ve `toString` için IDE'nin otomatik üretme özelliğini kullanarak zaman kazanın.
-  - **Laboratuvardan muaf olanlar:** Göndermeleri durumunda değerlendirilmeyecek ve puan girilmeyecek.
-    - Karışıklık olmaması için göndermemeleri önerildi. Kendilerini test etmek için soruyu çözebilirler.
-  - Soruda en çok mantık gerektiren bir metot var (`kacSiparis`: bir ürün aynı siparişte birden fazla kez olabilir).
-    - Onu stratejinize göre önce veya sonra yazabilirsiniz.
-* **Detaylı Açıklamalar:** Soru dosyası (`nyp.lab1-2021.pdf`) kayıtta yaklaşık 00:02:30'da ekranda gösterildi. Aşağıdaki bilgiler ekran karesinden alındı.
+  - Get/set, constructor ve `toString` için IDE'nin otomatik üretme özelliğini kullanarak zaman kazanın.
+  - Soruda en çok mantık gerektiren bir metot var (`kacSiparis`: bir ürün aynı siparişte birden fazla kez olabilir). <!-- BELİRSİZ: Altyazıda hoca yalnız "şu metod" diyor; metodun `kacSiparis` olduğu önceki nottandır, ekran karesi bu işte yok. -->
+  - Kısıtlara ve söylenenlere dikkat ederseniz soru basittir.
+    - Uygulamada yapılan Kitap-Raf-Kitaplık örneğine çok benzer.
+* **Detaylı Açıklamalar:** Soru dosyası kayıtta yaklaşık 00:02:30'da ekranda gösterildi.
 
 ### 🔹 Ders 9: Two-Way Association, Aggregation, Composition ve Kalıtım: Override, Polymorphism, super
 * **Genel Konular:**
-  - Dersin tarihi 7 Nisan 2021 Çarşamba. Ders Zoom üzerinden yapıldı.
-    - Asıl ders yaklaşık 00:06'da başlar. Kaydın başında görüntü yok (kamera kapalı ekranı).
-  - Laboratuvar geri bildirimi ve duyurular
+  - Asıl ders yaklaşık 00:06'da başlar. Kaydın başında görüntü yok (kamera kapalı ekranı).
+    - Ders 01:02'de 10 dakikalık bir arayla ikiye bölündü. Aynı günün uygulaması ayrı kayıttadır (ders 10).
   - Tekrar: association, dependency, sequence diagram
   - Two-way association ve bu ilişkinin riskleri
   - Aggregation (parça-bütün, gevşek ilişki)
@@ -257,9 +246,9 @@ Aşağıdaki tabloda her bir dersin konusu, kaynak markdown dosyası ve doğruda
   - Yalnızca izleyerek nesneye yönelik programlama öğrenilmez.
     - Kod yazmak gerekir.
   - Kodunuzu derleye derleye ilerleyin.
-    - Laboratuvarda bazı öğrencilerin kodu boş geldi. Derlenmeyen proje export edildiğinde sınıflar yalnızca boş metotlarla gelmiş.
+    - Derlenmeyen proje export edildiğinde sınıflar boş metotlarla gelebilir.
   - Sequence diagram önemli.
-    - Sınavda bir senaryodan sequence diagram çizmeniz istenebilir.
+    - Bir senaryodan sequence diagram çizebilmelisiniz.
   - Two-way association'da iki yönü de atamayı unutmayın.
     - Atama yapılmazsa referans `null` kalır ve `NullPointerException` alınır.
   - Aggregation ile composition arasındaki fark senaryodan çıkarılır.
@@ -268,11 +257,11 @@ Aşağıdaki tabloda her bir dersin konusu, kaynak markdown dosyası ve doğruda
 
 ### 🔹 Ders 10: Uygulama: Akbil Örneğiyle Kalıtım, Polymorphism, Yapıcı Sırası ve Abstract Sınıfa Giriş
 * **Genel Konular:**
-  - Dersin tarihi 7 Nisan 2021 Çarşamba, akşam uygulama saati (19:00). Ders Zoom üzerinden yapıldı.
-    - Aynı günün öğleden sonraki teorik dersi ders 9 kaydındadır. Bu kayıt onun uygulamasıdır.
+  - Aynı günün teorik dersi ders 9 kaydındadır. Bu kayıt onun uygulamasıdır.
+    - Kaydın ilk 4 dakikası öğrencilerle Veri Yapıları dersindeki ödev üzerine sohbettir.
   - Akbil (İstanbulkart) sistemi örneği NetBeans'te canlı kodlandı.
     - `Person` üst sınıfı, `Student` ve `Teacher` alt sınıfları, sonra `Emekli` sınıfı.
-  - Ödev niteliğinde öneri: Örneğe okul sınıfı ekleyip association kurmak.
+  - Alıştırma önerisi: Örneğe okul sınıfı ekleyip association kurmak.
 * **Hocanın Vurgusu:**
   - Kalıtım ve polymorphism sayesinde `if`/`switch` zincirine gerek kalmaz.
     - Öğrenci mi öğretmen mi diye `if` ile bakmak yerine her alt sınıf kendi `bakiyeGuncelle()` metodunu yazar.
@@ -287,20 +276,20 @@ Aşağıdaki tabloda her bir dersin konusu, kaynak markdown dosyası ve doğruda
 
 ### 🔹 Ders 11: Soyut Sınıflar, Dinamik Bağlama, Kalıtımda Nesne Oluşturma Sırası ve Overload Çözümleme
 * **Genel Konular:**
-  - Dersin tarihi 14 Nisan 2021 Çarşamba. Ders Zoom üzerinden yapıldı.
-    - İlk yaklaşık 1 saat 18 dakikayı Ahmet Elbir anlatır. Kalan bölüm Toprak Hoca'nın (asistan) uygulamasıdır.
-  - Duyurular
-    - Ramazan nedeniyle laboratuvar saat 21:00'de başlayacak ve yaklaşık 22:20-22:30'a kadar sürecek. Amaç, öğrencilerin aç ve yorgun hâlde sınava girmemesi.
+  - İlk yaklaşık 1 saat 18 dakikayı Ahmet Elbir anlatır. Kalan bölüm Toprak Hoca'nın (asistan) uygulamasıdır.
+    - 1:05 ile 1:09 arasında hocanın bağlantısı koptu. Bu arada Toprak Hoca kısa bir bekleme anonsu yaptı.
   - Tekrar: Nesneler arası ilişkiler
     - Toplam 5 ilişki türü var. Kalıtım (inheritance) sınıf seviyesindedir. Diğer 4'ü nesne seviyesindedir.
   - Tekrar: Overload ve override
-    - **Overload:** Dönüş tipi ve metot adı aynı kalır, parametre sayısı veya tipleri değişir. Kalıtıma özel değildir. Aynı sınıfta da yapılır.
+    - **Overload:** Metot adı aynı kalır, parametre sayısı veya tipleri değişir. Hoca dönüş tipinin de aynı kaldığını söyledi; bu zorunlu değildir (ders sonrası notlara bakın). Kalıtıma özel değildir. Aynı sınıfta da yapılır.
   - Soyut sınıflar (abstract classes)
     - `Person` sınıfındaki boş `yaz()` ve `bakiyeGuncelle()` metotları örneğiyle başlandı.
   - Soyut sınıflarla ilgili İngilizce slayt anlatımı
     - Soyut sınıfın alanları, constructor'ı, somut ve soyut metotları olabilir.
   - Çoklu kalıtım (multiple inheritance)
     - Örnek: Asistan öğrenci hem öğrenci hem çalışandır. `class AssistantStudent extends Student, Employee` yazılamaz.
+  - Tasarım örneği: Kreş, çocuk, eşya (`Item`, `Toy`, `Clothing`)
+    - `Item` soyut sınıftır. `isSuitable` soyut metottur. Oyuncaklarda alt yaş sınırı (yıl), giysilerde alt ve üst yaş sınırı (ay) vardır.
 * **Hocanın Vurgusu:**
   - **Bir sınıf en az bir soyut metot içeriyorsa soyut tanımlanmak zorundadır.
     - Ama soyut bir sınıfın soyut metot içermesi zorunlu değildir.**
@@ -316,10 +305,7 @@ Aşağıdaki tabloda her bir dersin konusu, kaynak markdown dosyası ve doğruda
 
 ### 🔹 Ders 13: Operatör Aşırı Yükleme, Interface'ler, Enum'lar, Generic Sınıflar ve ArrayList
 * **Genel Konular:**
-  - Dersin tarihi 21 Nisan 2021 Çarşamba. Ders Zoom üzerinden yapıldı.
-    - Asıl ders yaklaşık 00:04'te başlar. İki ara vardır: yaklaşık 00:50-01:04 ve 01:50-02:04.
-  - Dersin başındaki konuşma
-    - Derslere katılım düşük. Hoca devam almıyor, ama "ders derste öğrenilir" dedi. Etkileşim olmazsa dersin anlamı azalır.
+  - Ders 00:04'te açılır, konu anlatımı yaklaşık 00:11'de başlar. İki ara vardır: yaklaşık 00:50-01:04 ve 01:50-02:04.
   - Java'da olmayan nesne yönelimli kavramlar
     - Copy constructor (daha önce konuşuldu), operatör aşırı yükleme (operator overloading) ve sınıflar arası çoklu kalıtım.
   - Operatör aşırı yükleme
@@ -330,6 +316,8 @@ Aşağıdaki tabloda her bir dersin konusu, kaynak markdown dosyası ve doğruda
     - Nesnelerde `c1 == c2` referansları karşılaştırır. İçerik aynı olsa da farklı nesnelerse `false` döner.
   - Interface'ler
     - Bir öğrenci Swift'teki protokolleri örnek verdi.
+  - Slayt örneği: Araç vergisi
+    - `ICommercialVehicle` ve `IPersonalVehicle` interface'leri. Motosiklet ve araba her ikisini, otobüs yalnızca ticari olanı implement eder.
 * **Hocanın Vurgusu:**
   - **Nesnelerde `==` referansları karşılaştırır.** Bu, öğrencilerin çok yaptığı bir hatadır.
     - İçerik için `equals` yazılır.
@@ -343,12 +331,9 @@ Aşağıdaki tabloda her bir dersin konusu, kaynak markdown dosyası ve doğruda
 
 ### 🔹 Ders 16: Vize Çözümleri, HashMap, Java Collection Framework ve İstisna Yönetimi
 * **Genel Konular:**
-  - Dersin tarihi 5 Mayıs 2021 Çarşamba. Ders Zoom üzerinden yapıldı.
-    - Asıl ders yaklaşık 00:03'te başlar. Ara yaklaşık 01:04-01:13 ve 01:58-02:07 arasındadır.
-  - Duyurular
-    - Gelecek hafta idari izin nedeniyle Pazartesi-Cuma bütün dersler iptal. Laboratuvar da yapılamayacak. Sonraki hafta 19 Mayıs tatili. İki hafta ders yok.
-  - Vize çözümleri ve değerlendirme
-    - Ortalama 67. Yaklaşık 5-6 kişi sınava girmedi.
+  - Asıl ders yaklaşık 00:03'te başlar. Ara yaklaşık 01:04-01:13 ve 01:58-02:07 arasındadır.
+  - Vize sorularının çözümü
+    - 1. soru: Soyut `Person` sınıfı (constructor ve `getName`).
   - Map ve hashing
     - Hash veri yapısı, bir elemana ortalamada sabit zamanda ($O(1)$) erişmeyi sağlar. Konum bir hash fonksiyonuyla bulunur. Basit örnek: `anahtar mod dizi_boyutu`.
   - Java Collection Framework
@@ -356,21 +341,21 @@ Aşağıdaki tabloda her bir dersin konusu, kaynak markdown dosyası ve doğruda
   - İstisna yönetimi (exception handling)
     - Hatadan kaçınma (avoidance) ile hata yönetimi farklıdır. Kaçınma: `if` ile girdiyi kontrol etmek (ör. 0-100 arası sayı). İstisna yönetimi: Hata oldu, şimdi programın çökmemesi için ne yapacağız?
 * **Hocanın Vurgusu:**
-  - **UML'in dışına çıkmayın.** UML'de olmayan bir metot (ör. `toString`) eklemek puan kaybettirdi.
+  - **UML'in dışına çıkmayın.** UML'de olmayan bir metot (ör. `toString`) eklemeyin.
     - Gizli bilgi (hidden information) yalnızca üye alanlarda olur. Gizli metot diye bir şey yok.
   - **Nesnelerin benzersizliğini isimle değil, referansla kontrol edin.**
     - `addAct` içinde "bu nesne daha önce eklenmiş mi?" diye bakarken `==` ile nesne referansları karşılaştırılmalı.
-  - **Algoritmik verimlilik de değerlendirildi.** Diziye eleman eklerken iç içe iki döngü kullananlardan puan kırıldı.
+  - **Algoritmik verimliliğe dikkat edin.** Diziye eleman eklerken iç içe iki döngü gerekmez.
     - Diziyi iki kez gezmenin anlamı yok.
-  - Nesneye ait dizi, nesne oluşturulurken (constructor'da veya alan tanımında) oluşturulmalı.
-    - Diziyi `static` yapmak veya yanlış yerde `new` ile oluşturmak puan kaybettirdi.
-  - `super(...)` ile üst sınıf constructor'ını çağırmayanlardan puan kırıldı.
-* **Detaylı Açıklamalar:** Puanlar: 1. soru 10, 2. soru 10, 3. soru 20, 4. soru 30, 5. soru 15.
+  - Nesneye ait dizi, nesne oluşturulurken (constructor'da veya alan tanımında) oluşturulmalı. <!-- BELİRSİZ: Hoca ekrandaki satırları "şurada" diye gösterdi; dizi tahsisinin yanlış sayıldığı satır altyazıdan okunmuyor.
+    - Altyazıda `static` sözü sayaç için geçiyor (00:09:21), "diziyi static yapmak" diye açık değil. -->
+  - Üst sınıf constructor'ını `super(...)` ile çağırın.
+* **Detaylı Açıklamalar:** public interface Act { public String getName(); public int getYear(); public String getMoreInfo(); }
 
 ### 🔹 Ders 17: Uygulama: Arayüzler, İstisnalar, Jenerikler ve Koleksiyonlar
 * **Genel Konular:**
-  - Dersin tarihi 5 Mayıs 2021 Çarşamba. Oturum Zoom üzerinden yapılan bir uygulama (laboratuvar) saatidir.
-    - Oturumu bir asistan yürütür. NetBeans projesinde yazar etiketi "Toprak" görünür.
+  - Bu kayıt uygulama oturumudur. <!-- BELİRSİZ: Oturumu yürüten kişinin adı ve unvanı altyazıda geçmiyor. Ders 16'da uygulamayı Toprak Hoca'nın yapacağı söylendi. -->
+    - Asıl anlatım yaklaşık 00:05:15'te başlar. Kayıt yaklaşık 00:42:00'de biter.
   - Arayüzler (interface)
     - Tanımı, metot imzaları, sabitler, `default` ve `static` metotlar.
   - İstisnalar (exception)
@@ -388,12 +373,12 @@ Aşağıdaki tabloda her bir dersin konusu, kaynak markdown dosyası ve doğruda
   - Jenerik yapı, aynı işi her tip için ayrı ayrı yazmayı önler.
   - Veri yapıları da nesneye yönelik tasarlanmıştır.
     - İç yapısını bilmeden `extends` ile mevcut bir veri yapısının davranışını değiştirebilirsiniz.
-* **Detaylı Açıklamalar:** Asistan, birbiriyle ilgisi olmayan iki sınıfa ortak bir "büyüklük-küçüklük" arayüzü uyguladı. Kitapta ölçüt fiyattır, dörtgende alandır. Soyutlama aynıdır.
+* **Detaylı Açıklamalar:** Hoca, birbiriyle ilgisi olmayan iki sınıfa ortak bir "büyüklük-küçüklük" arayüzü uyguladı. Kitapta ölçüt fiyattır, dörtgende alandır. Soyutlama aynıdır.
 
 ### 🔹 Ders 18: Tip Dönüşümü, Dosyalarla Çalışma ve Serileştirme, İç Sınıflar ve GUI'ye Giriş
 * **Genel Konular:**
-  - Dersin tarihi 26 Mayıs 2021 Çarşamba. Ders Zoom üzerinden yapıldı.
-    - Asıl ders yaklaşık 00:06:50'de başlar.
+  - Asıl ders yaklaşık 00:06:50'de başlar.
+    - Yaklaşık 00:50:00 ile 01:04:15 arası ara verildi.
   - Nesneler arasında tip dönüşümü (typecasting)
     - Yukarı dönüşüm (alt sınıftan üst sınıfa) ve aşağı dönüşüm (üst sınıftan alt sınıfa).
   - Dosyalarla çalışma
@@ -415,8 +400,8 @@ Aşağıdaki tabloda her bir dersin konusu, kaynak markdown dosyası ve doğruda
 
 ### 🔹 Ders 19: Uygulama: Thread'ler ve Senkronizasyon, Dosya İşlemleri, Tip Dönüşümü ve İç Sınıflar
 * **Genel Konular:**
-  - Dersin tarihi 26 Mayıs 2021 Çarşamba. Oturum Zoom üzerinden yapılan bir uygulama (laboratuvar) saatidir.
-    - Oturumu bir asistan yürütür. Aynı günün teorik dersinde (ders 18) işlenen konuların uygulamasıdır.
+  - Bu kayıt uygulama oturumudur.
+    - Oturumu bir asistan yürütür. <!-- BELİRSİZ: "Asistan" sözü ve yürütenin adı altyazıda geçmiyor; dersin hocası oturumun sonunda katılıp ona "hocam" diyor. --> Aynı günün teorik dersinde (ders 18) işlenen konuların uygulamasıdır.
   - İş parçacıkları (thread)
     - Program, süreç (process) ve thread kavramları.
   - Dosya işlemleri
@@ -438,10 +423,7 @@ Aşağıdaki tabloda her bir dersin konusu, kaynak markdown dosyası ve doğruda
 
 ### 🔹 Ders 20: İşletim Sistemi Kavramları, Java'da Thread'ler, JUnit, Thread Havuzu ve Senkronizasyon
 * **Genel Konular:**
-  - Dersin tarihi 2 Haziran 2021 Çarşamba. Ders Zoom üzerinden yapıldı.
-    - Asıl ders yaklaşık 00:03'te başlar. İlk dakikalar sınav ve proje duyurularıdır.
-  - Sınav ve proje duyuruları
-    - Aynı akşam saat 19:00'da çevrim içi test sınavı var.
+  - Asıl konu yaklaşık 00:06'da başlar.
   - Program, proses (process) ve thread kavramları
     - Program: diskteki derlenmiş kod. Proses: belleğe yüklenmiş, çalışan program. Thread: prosesin içindeki çalışma akışı.
   - İşlemcinin çalışması ve zaman paylaşımı
@@ -452,23 +434,24 @@ Aşağıdaki tabloda her bir dersin konusu, kaynak markdown dosyası ve doğruda
     - PCB'de program sayacı, proses durumu, PID, bellek bilgileri gibi bilgiler tutulur.
   - Thread durumları
     - New, Runnable, Running, Blocked/Waiting (I/O, sleep, wait, join), Dead.
+  - Java'da thread oluşturma
+    - `Runnable` arayüzünü uygulayan sınıf, `run()` metodunu yazar.
 * **Hocanın Vurgusu:**
-  - Sınav kuralları (aynı akşam):
-    - 50 soru, 60 dakika, test. 4 seçenek var.
-  - Proje raporunda JUnit test sonuçlarını gösterin.
-    - Projeyi asistanlar kontrol edecek. Özel istekleri için asistanlarla iletişimde olun.
   - Thread'i `run()` ile değil, `start()` ile başlatın.
     - `run()` doğrudan çağrılırsa normal metot çağrısı olur, kod sıralı çalışır.
   - `Thread` sınıfından kalıtım yerine `Runnable` arayüzünü uygulayın.
     - Gereksiz kalıtım fazladan yük getirir.
   - Thread'lerin çalışma sırası belli değildir.
     - Aynı programı her çalıştırmada farklı çıktı görebilirsiniz.
+  - Global (paylaşılan) değişken kullanmayın.
+    - Birden fazla thread aynı değişkeni değiştirirse yanlış sonuç çıkar.
+  - Boş döngüyle bekleme (busy waiting) yapmayın.
+    - Thread'i `sleep` veya `wait` ile bloklayın. Boş döngü işlemciyi boşuna harcar.
 * **Detaylı Açıklamalar:** Hocanın taraftar örneğindeki yapı şöyledir. Her taraftar 10 kez bağırır, her bağırıştan sonra 0-1 saniye arası rastgele uyur.
 
 ### 🔹 Ders 22: Üretici-Tüketici Problemi, Swing ile GUI ve Olay Yönetimi, Katmanlı Mimari, MVC, MVP ve MVVM
 * **Genel Konular:**
-  - Dersin tarihi 9 Haziran 2021 Çarşamba. Ders Zoom üzerinden yapıldı.
-    - Asıl ders yaklaşık 00:05'te başlar.
+  - Asıl ders yaklaşık 00:05'te başlar.
   - Üretici-tüketici problemi (producer-consumer) uygulaması
     - Kapasitesi sınırlı bir `LinkedList` tampon (buffer) olarak kullanıldı.
   - Java Swing ile grafik arayüz (GUI)
@@ -477,7 +460,7 @@ Aşağıdaki tabloda her bir dersin konusu, kaynak markdown dosyası ve doğruda
     - Veri tabanı katmanı, iş mantığı katmanı (business logic layer), façade katmanı, kullanıcı arayüzü.
   - MVC (Model-View-Controller)
     - ASP.NET MVC örneği: `StudentController`, `Index` view'u, `Student` modeli, Razor sözdizimi.
-  - Öğrenci sunumu (Ömer): MVP, MVVM ve Clean Architecture
+  - Öğrenci sunumu: MVP, MVVM ve Clean Architecture
     - MVP: Presenter, Controller'ın görevlerini daraltır.
   - Kapanış: yazılım tasarımı, tasarım kalıpları (design patterns) ve ORM araçları (Entity Framework, Hibernate) üzerine tavsiyeler.
 * **Hocanın Vurgusu:**
@@ -495,17 +478,11 @@ Aşağıdaki tabloda her bir dersin konusu, kaynak markdown dosyası ve doğruda
 
 ### 🔹 Ders 23: Laboratuvar Sınavı Oturumu: Serileştirme ile Dosyaya Kaydetme (Kısa Kayıt)
 * **Genel Konular:**
-  - Dersin tarihi 9 Haziran 2021 Çarşamba. Kayıt yaklaşık 7 dakikalıktır.
-    - Bu kayıt bir ders değil, laboratuvar sınavı (NYP LAB-4) oturumudur. Konu anlatılmadı.
-  - NYP LAB-4 sınavı (09.06.2021, süre 90 dakika)
+  - Kayıt yaklaşık 7 dakikalıktır. Bu kayıt bir ders değil, laboratuvar sınavı (NYP LAB-4) oturumudur. Konu anlatılmadı.
+  - NYP LAB-4 sorusu
     - Öğrencilere hazır bir `Test.java` sınıfı verildi. Kodun bu test sınıfına uygun yazılması bekleniyor.
 * **Hocanın Vurgusu:**
-  - Asistan, projeler için cumartesi günü sunum yapılmayacağını söyledi.
-    - Böyle bir şey gerekirse ayrıca gün belirlenecek; asistan bunun olmasını istemiyor.
-  - Sınav sayfası görünmüyorsa doğru derse tıkladığınızdan emin olun ve sayfayı yenileyin.
-    - Bazen bir önceki dersin sayfası açık kalıyor.
-  - Çözümü süre içinde yükleyin.
-    - Asistan dosyaları hocaya iletecek.
+  - Bu kayıtta konu vurgusu yoktur.
 * **Detaylı Açıklamalar:** Sınavdaki işin temel kısmı aşağıdaki gibidir. Bu kod derste yazılmadı; konuyu hatırlatmak için eklendi ve Java 25 ile çalıştırılarak denendi (çıktı: `Ali 3`).
 
 **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

@@ -80,7 +80,7 @@ Ben girdim hocam, chat'e atıyorum isterseniz.
 
 21
 00:09:01,235 --> 00:09:02,635
-Abisiste, [öğrenci]'nın şeyi.
+Abisiste, Toprak Ocağı'nın şeyi.
 
 22
 00:09:02,675 --> 00:09:05,035
@@ -796,15 +796,15 @@ K2'den bağımsız, iki tarafta iki noktada aynı yazarı gösteriyor ama şu an
 
 200
 00:39:12,507 --> 00:39:38,987
-Kitap tanıt dediğimizde ikisi de tanıtacak. K2'de ne var? 2 Java, Y1 dediğimiz [öğrenci] diye bir şey göreceğiz. K5'in daha sonra alını Java 5 olarak değiştirdik. Yazarın da diyoruz ki K5'in gösterdiği referans alanına yazar 2'nin referansını kopyalatıyoruz. Artık bu [öğrenci]'yi gösteriyordu önce. Şimdi [öğrenci]'yi gösterecek.
+Kitap tanıt dediğimizde ikisi de tanıtacak. K2'de ne var? 2 Java, Y1 dediğimiz Ali diye bir şey göreceğiz. K5'in daha sonra alını Java 5 olarak değiştirdik. Yazarın da diyoruz ki K5'in gösterdiği referans alanına yazar 2'nin referansını kopyalatıyoruz. Artık bu Ali'yi gösteriyordu önce. Şimdi Veli'yi gösterecek.
 
 201
 00:39:38,987 --> 00:40:07,007
-değil mi? Şurada şunu yaparak. ID'sini de 5 yaptık. Buna da K2'ye de yazar 3'ün referans alanına [öğrenci]'yi göster diyecek. Ve şurada göreceğimiz şey K2 kitabı yazar 2'nin bulunduğu [öğrenci]'yi gösterecek. Öbürü de [öğrenci]'yi gösteriyor. İlk başta ikisi de hangisiydi? Ali'ydi. Doğru mu söyledim? Karıştırmadıysam. Çalıştıralım. Ben öyle olacağını biliyorum. Şurada troll sana da yazmışız da.
+değil mi? Şurada şunu yaparak. ID'sini de 5 yaptık. Buna da K2'ye de yazar 3'ün referans alanına Ayşe'yi göster diyecek. Ve şurada göreceğimiz şey K2 kitabı yazar 2'nin bulunduğu Veli'yi gösterecek. Öbürü de Ayşe'yi gösteriyor. İlk başta ikisi de hangisiydi? Ali'ydi. Doğru mu söyledim? Karıştırmadıysam. Çalıştıralım. Ben öyle olacağını biliyorum. Şurada troll sana da yazmışız da.
 
 202
 00:40:07,007 --> 00:40:36,987
-Evet ikisinde de [öğrenci], [öğrenci], [öğrenci], [öğrenci]. Peki niye böyle oldu? Bunlar dip copy değil mi? Şimdi arkadaşlar eşittur operatörüyle kopyalama yaparken şurada kopyalanan veya atama yaparken id'ler, ad'lar string de buna dahil tabii ki. Ne oluyor? Yeni bir stringmiş gibi daha önce oluşturulan bir string yoksa aynı şeyde yeni bir string havuzundan oluşturuyor ve buraya kopyalanıyor.
+Evet ikisinde de Ali, Ali, Ayşe, Veli. Peki niye böyle oldu? Bunlar dip copy değil mi? Şimdi arkadaşlar eşittur operatörüyle kopyalama yaparken şurada kopyalanan veya atama yaparken id'ler, ad'lar string de buna dahil tabii ki. Ne oluyor? Yeni bir stringmiş gibi daha önce oluşturulan bir string yoksa aynı şeyde yeni bir string havuzundan oluşturuyor ve buraya kopyalanıyor.
 
 203
 00:40:37,007 --> 00:41:05,448
@@ -836,7 +836,7 @@ Ha şunu diyorsun anladım. Diyelim ki şu a2.yazar tabi onun yazarına da ulaş
 
 210
 00:42:27,579 --> 00:42:43,439
-Pardon kitaptan yet yazar diyeceğiz. O yazar nokta diyeceğiz. Bir nokta daha söyleyeceğiz. Adını [öğrenci]'den [öğrenci] yap gibi bir şey söyleyeceğiz. O zaman o dediğin olur. Çünkü sen asıl objenin değerini değiştiriyorsun.
+Pardon kitaptan yet yazar diyeceğiz. O yazar nokta diyeceğiz. Bir nokta daha söyleyeceğiz. Adını Ali'den Hasan yap gibi bir şey söyleyeceğiz. O zaman o dediğin olur. Çünkü sen asıl objenin değerini değiştiriyorsun.
 
 211
 00:42:43,439 --> 00:43:13,419
@@ -904,7 +904,7 @@ ve bu set add'ı da mesela k2 şu an hangisini gösteriyordu?
 
 227
 00:45:04,095 --> 00:45:09,276
-y1'i gösteriyordu. y1'in değerini şöyle yapalım. Küçük [öğrenci] olsun.
+y1'i gösteriyordu. y1'in değerini şöyle yapalım. Küçük Ali olsun.
 
 228
 00:45:10,535 --> 00:45:13,835
@@ -1240,15 +1240,15 @@ Tamam mı? Bakın yetki diye ayrı bir nesne veya sınıfta düşüneceğiz. Yan
 
 311
 00:58:29,300 --> 00:58:30,300
-Kibro Atunç.
+[öğrenci].
 
 312
 00:58:34,996 --> 00:58:35,895
-Onur Alkan.
+[öğrenci].
 
 313
 00:58:39,275 --> 00:58:42,195
-Onur sen başka bize bir şey önerebilir misin?
+[öğrenci] sen başka bize bir şey önerebilir misin?
 
 314
 00:58:42,655 --> 00:58:55,496
@@ -1348,7 +1348,7 @@ Rica ederim
 
 338
 01:01:15,123 --> 01:01:26,643
-Rayen'e? Rayen miydi Tom? Rayen hocam, buradayım. Evet, sen mesela ne eklersin? Hocam, öğrenci class da olması gerekiyor bence. Tamam, öğrenci olacak.
+[öğrenci]'e? [öğrenci] miydi Tom? [öğrenci] hocam, buradayım. Evet, sen mesela ne eklersin? Hocam, öğrenci class da olması gerekiyor bence. Tamam, öğrenci olacak.
 
 339
 01:01:26,643 --> 01:01:46,964
@@ -1432,11 +1432,11 @@ Ondan sonra dersimize geçeceğiz.
 
 359
 01:04:39,476 --> 01:05:02,316
-ZZ diye birisi var. Arkadaşlar, kendi adlarınızı yazın lütfen. Evet, ZZ burada mı? Buradaysanız ya çete yazın ya da burada sizi remove ediyorum. Evet, remove diyelim. Kaldırdık. Elektriği yanmaya devam etsin evde.
+[öğrenci] diye birisi var. Arkadaşlar, kendi adlarınızı yazın lütfen. Evet, [öğrenci] burada mı? Buradaysanız ya çete yazın ya da burada sizi remove ediyorum. Evet, remove diyelim. Kaldırdık. Elektriği yanmaya devam etsin evde.
 
 360
 01:05:02,316 --> 01:05:06,455
-[öğrenci] Huz
+[öğrenci]
 
 361
 01:05:06,455 --> 01:05:10,615
@@ -2588,7 +2588,7 @@ Ne olur? Ne olur sizce arkadaşlar? Ne yaşayabiliriz?
 
 648
 02:10:11,444 --> 02:10:21,784
-Bu bir Java ile alakalı bir şey aslında veya diğer dillerde de var. Şu ifi niye kontrol ediyoruz? Birinize sorayım. Cihad İslam.
+Bu bir Java ile alakalı bir şey aslında veya diğer dillerde de var. Şu ifi niye kontrol ediyoruz? Birinize sorayım. [öğrenci].
 
 649
 02:10:27,315 --> 02:10:28,315
@@ -2620,7 +2620,7 @@ No pointer exception almamak için demiş.
 
 656
 02:11:36,711 --> 02:11:37,911
-Pars'a sen söyle, evet.
+[öğrenci] sen söyle, evet.
 
 657
 02:11:38,371 --> 02:11:42,491
@@ -2636,7 +2636,7 @@ Tamam, güzel.
 
 660
 02:11:49,751 --> 02:11:51,812
-Ray ne de aynı şeyi söyledi.
+[öğrenci] de aynı şeyi söyledi.
 
 661
 02:11:51,812 --> 02:11:58,511
@@ -2916,7 +2916,7 @@ Because we should define an object, system out print allowances.
 
 730
 02:24:26,455 --> 02:24:47,456
-Then Okta, introduce yourself, [öğrenci] and other objects. Here we are doing both object creation and assignment. They are together with. And then we are calling [öğrenci].introduce yourself method.
+Then Okta, introduce yourself, Aziz and other objects. Here we are doing both object creation and assignment. They are together with. And then we are calling Aziz.introduce yourself method.
 
 731
 02:24:47,456 --> 02:24:56,456
@@ -2940,7 +2940,7 @@ This is another explanation.
 
 736
 02:26:11,523 --> 02:26:40,103
-İlgili class'taki alanlar çalışacak. Normalde Octave [öğrenci] olduğunda bir problem yok. Aziz Sancar'ın arabası yok olduğu için bakacağız. Aziz dediğimiz şey ne türde? Person'a geleceğiz. Şurada bakın bir safe kod var. Eğer bu olmazsa şimdi onu kaldırırız. Bir hata alacağız. Bunu önce bir run edelim.
+İlgili class'taki alanlar çalışacak. Normalde Octave Sinan olduğunda bir problem yok. Aziz Sancar'ın arabası yok olduğu için bakacağız. Aziz dediğimiz şey ne türde? Person'a geleceğiz. Şurada bakın bir safe kod var. Eğer bu olmazsa şimdi onu kaldırırız. Bir hata alacağız. Bunu önce bir run edelim.
 
 737
 02:26:41,523 --> 02:26:45,363
@@ -2960,7 +2960,7 @@ Export yaparken bir hata aldım demiştim ya, iş olmamıştı, onu şimdi düze
 
 741
 02:27:06,487 --> 02:27:23,567
-This is the response of Octay Sinanonu objects. This is the response of [öğrenci] objects. Let's remove or be passive this section.
+This is the response of Octay Sinanonu objects. This is the response of Aziz Sancar objects. Let's remove or be passive this section.
 
 742
 02:27:25,507 --> 02:27:27,827
