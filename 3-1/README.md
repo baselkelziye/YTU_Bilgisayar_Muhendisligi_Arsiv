@@ -292,6 +292,7 @@
 #### 👨‍🏫 👩‍🏫 Dersi Yürüten Akademisyenler:
 - BD
 - HOİ
+- G1
 
 ### 📘 Türkçe 1
 

@@ -36,3 +36,4 @@
 ## 👨‍🏫 👩‍🏫 Dersi Yürüten Akademisyenler:
 - BD
 - HOİ
+- G1

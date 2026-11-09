@@ -9,20 +9,24 @@
 * **Akademik Yıl:** 2024-2025
 * **Şube:** BLM3042 - 1
 
-Bu dizin, ilgili ders kayıtlarının altyazı özetlerini, çalışma notlarını ve PDF kaynaklarını içermektedir.
+Bu dizin, ilgili ders kayıtlarının altyazılarını, kısa notlarını ve genişletilmiş notlarını içermektedir.
+
+* **Kısa not:** Tekrar için. Dersin konuları, hocanın vurguları ve kısa tekrar maddeleri.
+* **Genişletilmiş not:** Dersi izlemeden öğrenmek için. Dersin anlatım akışını baştan sona, örnekleri ve soru-cevaplarıyla anlatır.
+* `altyazilar/`: ders kayıtlarının altyazıları (.srt). Notların PDF'leri `kisa_notlar/` ve `genisletilmis_notlar/` klasörlerinde, markdown kaynakları bu klasörlerin içindeki `markdown/` klasöründedir.
 
 ## 📚 Ders Müfredatı ve Belge Dizini
 
-Aşağıdaki tabloda her bir dersin konusu, kaynak markdown dosyası ve doğrudan indirilebilir PDF formatındaki derlenmiş halleri listelenmiştir. Ders numaraları, kayıt arşivindeki ders kaydı sıra numaralarıdır (hafta numarası değildir).
+Aşağıdaki tabloda her bir dersin konusu ile kısa ve genişletilmiş notlarının markdown ve PDF halleri listelenmiştir. Ders numaraları, kayıt arşivindeki ders kaydı sıra numaralarıdır (hafta numarası değildir).
 
-| Ders No | Ders İçeriği / Konu Başlıkları | Kaynak Notlar (Markdown) | Çalışma Dosyası (PDF) |
+| Ders No | Ders İçeriği / Konu Başlıkları | Kısa Not | Genişletilmiş Not |
 | :---: | :--- | :---: | :---: |
-| **Ders 1** | Bilimsel Araştırma Yöntemleri, Bilimsel Yayınlar ve Sunum Teknikleri | [Özet](altyazi_ozetleri/ders_1_ozet.md) | [PDF (İndir)](ders_1_ozet.pdf) |
-| **Ders 2** | Yaşam Boyu Öğrenme, Girişimcilik ve Sürdürülebilir Kalkınma | [Özet](altyazi_ozetleri/ders_2_ozet.md) | [PDF (İndir)](ders_2_ozet.pdf) |
-| **Ders 3** | Ahlak, Etik ve Bilişim Suçları | [Özet](altyazi_ozetleri/ders_3_ozet.md) | [PDF (İndir)](ders_3_ozet.pdf) |
-| **Ders 4** | Fikir ve Sanat Eserleri, Meslek ve Mühendislik Etiği | [Özet](altyazi_ozetleri/ders_4_ozet.md) | [PDF (İndir)](ders_4_ozet.pdf) |
-| **Ders 5** | Eğitim, Araştırma ve Yayın Etiği | [Özet](altyazi_ozetleri/ders_5_ozet.md) | [PDF (İndir)](ders_5_ozet.pdf) |
-| **Ders 6** | Bilişim Hukuku, Adli Bilişim ve Yasalar | [Özet](altyazi_ozetleri/ders_6_ozet.md) | [PDF (İndir)](ders_6_ozet.pdf) |
+| **Ders 1** | Bilimsel Araştırma Yöntemleri, Bilimsel Yayınlar ve Sunum Teknikleri | [Markdown](kisa_notlar/markdown/ders_1_ozet.md) · [PDF](kisa_notlar/ders_1_ozet.pdf) | [Markdown](genisletilmis_notlar/markdown/ders_1_genisletilmis.md) · [PDF](genisletilmis_notlar/ders_1_genisletilmis.pdf) |
+| **Ders 2** | Yaşam Boyu Öğrenme, Girişimcilik ve Sürdürülebilir Kalkınma | [Markdown](kisa_notlar/markdown/ders_2_ozet.md) · [PDF](kisa_notlar/ders_2_ozet.pdf) | [Markdown](genisletilmis_notlar/markdown/ders_2_genisletilmis.md) · [PDF](genisletilmis_notlar/ders_2_genisletilmis.pdf) |
+| **Ders 3** | Ahlak, Etik ve Bilişim Suçları | [Markdown](kisa_notlar/markdown/ders_3_ozet.md) · [PDF](kisa_notlar/ders_3_ozet.pdf) | [Markdown](genisletilmis_notlar/markdown/ders_3_genisletilmis.md) · [PDF](genisletilmis_notlar/ders_3_genisletilmis.pdf) |
+| **Ders 4** | Fikir ve Sanat Eserleri, Meslek ve Mühendislik Etiği | [Markdown](kisa_notlar/markdown/ders_4_ozet.md) · [PDF](kisa_notlar/ders_4_ozet.pdf) | [Markdown](genisletilmis_notlar/markdown/ders_4_genisletilmis.md) · [PDF](genisletilmis_notlar/ders_4_genisletilmis.pdf) |
+| **Ders 5** | Eğitim, Araştırma ve Yayın Etiği | [Markdown](kisa_notlar/markdown/ders_5_ozet.md) · [PDF](kisa_notlar/ders_5_ozet.pdf) | [Markdown](genisletilmis_notlar/markdown/ders_5_genisletilmis.md) · [PDF](genisletilmis_notlar/ders_5_genisletilmis.pdf) |
+| **Ders 6** | Bilişim Hukuku, Adli Bilişim ve Yasalar | [Markdown](kisa_notlar/markdown/ders_6_ozet.md) · [PDF](kisa_notlar/ders_6_ozet.pdf) | [Markdown](genisletilmis_notlar/markdown/ders_6_genisletilmis.md) · [PDF](genisletilmis_notlar/ders_6_genisletilmis.pdf) |
 
 > [!NOTE]
 > Dönemin 1. haftasındaki giriş dersi sınıfta yapıldığından kaydı yoktur; vize sonrası seminer sunumları da kayıtlı değildir.
@@ -122,7 +126,7 @@ Aşağıdaki tabloda her bir dersin konusu, kaynak markdown dosyası ve doğruda
 
 ### 🔹 Ders 5: Eğitim, Araştırma ve Yayın Etiği
 * **Genel Konular:**
-  - Bu dersin tek ana başlığı eğitim, araştırma ve yayın etiğidir. Hoca hasta olduğu için ders biraz kısa tutuldu.
+  - Bu dersin tek ana başlığı eğitim, araştırma ve yayın etiğidir.
   - Üniversitenin üç temel görevi: eğitim, araştırma ve yayın. Bu görevlerde öğrenci, öğretim elemanı ve idari personel etkileşim halindedir.
   - Öğrencinin uyması gereken etik ilke ve kurallar; haksız kazanım kavramı ve 2547 sayılı Yükseköğretim Kanunu'nun ilgili maddeleri.
   - Öğrencinin arkadaşlarına, hocalarına, kuruma ve idari personele karşı sorumlulukları.
@@ -160,6 +164,6 @@ Aşağıdaki tabloda her bir dersin konusu, kaynak markdown dosyası ve doğruda
   - Bellekten kanıt toplanacaksa bilgisayar kapatılmamalıdır.
     - Bellek uçucudur (volatile) ve elektrik kesilince veri kaybolur.
   - Hocaya göre Word belgeleri, Excel dosyaları, fotoğraflar (EXIF), CD/DVD tarihleri ve e-posta çıktıları tek başına adli kanıt sayılmaz.
-    - Bunların üst verileri (metadata) kolayca değiştirilebilir. Hoca, Ergenekon ve Balyoz davalarının bu tür kanıtlar yüzünden çöktüğünü söylüyor.
+    - Bunların üst verileri (metadata) kolayca değiştirilebilir. Hoca bu noktayı Ergenekon ve Balyoz davalarındaki dijital kanıt tartışmalarıyla örnekledi.
 
 **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
