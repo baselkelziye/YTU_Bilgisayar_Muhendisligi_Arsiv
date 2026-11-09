@@ -9,33 +9,37 @@
 * **Akademik Yıl:** 2020-2021
 * **Şube:** BLM3021 - 2
 
-Bu dizin, ilgili ders kayıtlarının altyazı özetlerini, çalışma notlarını ve PDF kaynaklarını içermektedir.
+Bu dizin, ilgili ders kayıtlarının altyazılarını, kısa notlarını ve genişletilmiş notlarını içermektedir.
+
+* **Kısa not:** Tekrar için. Dersin konuları, hocanın vurguları ve kısa tekrar maddeleri.
+* **Genişletilmiş not:** Dersi izlemeden öğrenmek için. Dersin anlatım akışını baştan sona, örnekleri ve soru-cevaplarıyla anlatır.
+* `altyazilar/`: ders kayıtlarının altyazıları (.srt). Notların PDF'leri `kisa_notlar/` ve `genisletilmis_notlar/` klasörlerinde, markdown kaynakları bu klasörlerin içindeki `markdown/` klasöründedir.
 
 ## 📚 Ders Müfredatı ve Belge Dizini
 
-Aşağıdaki tabloda her bir dersin konusu, kaynak markdown dosyası ve doğrudan indirilebilir PDF formatındaki derlenmiş halleri listelenmiştir. Ders numaraları, kayıt arşivindeki ders kaydı sıra numaralarıdır (hafta numarası değildir).
+Aşağıdaki tabloda her bir dersin konusu ile kısa ve genişletilmiş notlarının markdown ve PDF halleri listelenmiştir. Ders numaraları, kayıt arşivindeki ders kaydı sıra numaralarıdır (hafta numarası değildir).
 
-| Ders No | Ders İçeriği / Konu Başlıkları | Kaynak Notlar (Markdown) | Çalışma Dosyası (PDF) |
+| Ders No | Ders İçeriği / Konu Başlıkları | Kısa Not | Genişletilmiş Not |
 | :---: | :--- | :---: | :---: |
-| **Ders 1** | Dersin İşleyişi, Algoritma Kavramı, Analiz Senaryoları ve Temel İşlem Sayma | [Özet](altyazi_ozetleri/ders_1_ozet.md) | [PDF (İndir)](ders_1_ozet.pdf) |
-| **Ders 3** | Asimptotik Gösterimler: Büyük-O, Büyük-Omega, Büyük-Teta ve Büyüme Dereceleri | [Özet](altyazi_ozetleri/ders_3_ozet.md) | [PDF (İndir)](ders_3_ozet.pdf) |
-| **Ders 4** | Uygulama: Insertion Sort Ortalama Durum Analizi ve Limitle Büyüme Derecesi Karşılaştırma | [Özet](altyazi_ozetleri/ders_4_ozet.md) | [PDF (İndir)](ders_4_ozet.pdf) |
-| **Ders 5** | Matematiksel Analiz İçin Formüller, Özyinelemesiz ve Özyinelemeli Algoritmaların Analizi | [Özet](altyazi_ozetleri/ders_5_ozet.md) | [PDF (İndir)](ders_5_ozet.pdf) |
-| **Ders 6** | Uygulama: Geriye Doğru Yerine Koyma ile Rekürans Çözümü ve Toplamların Büyüme Derecesi | [Özet](altyazi_ozetleri/ders_6_ozet.md) | [PDF (İndir)](ders_6_ozet.pdf) |
-| **Ders 9** | Kaba Kuvvet, Kapsamlı Arama, Azalt ve Yönet, İkili Arama, Böl ve Yönet ve Master Teoremi | [Özet](altyazi_ozetleri/ders_9_ozet.md) | [PDF (İndir)](ders_9_ozet.pdf) |
-| **Ders 10** | Merge Sort ve Quick Sort: Rekürans Bağıntıları, Hoare Bölümlemesi ve Master Teoremi ile Analiz | [Özet](altyazi_ozetleri/ders_10_ozet.md) | [PDF (İndir)](ders_10_ozet.pdf) |
-| **Ders 11** | Quicksort Analizi, Arama Yöntemleri ve Hashing'e Giriş | [Özet](altyazi_ozetleri/ders_11_ozet.md) | [PDF (İndir)](ders_11_ozet.pdf) |
-| **Ders 13** | Hash Fonksiyonları, Doğum Günü Paradoksu, Anahtar Türleri ve Açık Adresleme | [Özet](altyazi_ozetleri/ders_13_ozet.md) | [PDF (İndir)](ders_13_ozet.pdf) |
-| **Ders 14** | Ayrık Zincirleme, Evrensel Hashing ve Yük Faktörüne Göre Arama Maliyeti | [Özet](altyazi_ozetleri/ders_14_ozet.md) | [PDF (İndir)](ders_14_ozet.pdf) |
-| **Ders 17** | Dinamik Programlamaya Giriş: Fibonacci, Para Sırası ve Sırt Çantası Problemleri | [Özet](altyazi_ozetleri/ders_17_ozet.md) | [PDF (İndir)](ders_17_ozet.pdf) |
-| **Ders 18** | Dinamik Programlama: 0-1 Sırt Çantası Probleminin Çözümü ve Robot ile Madeni Para Toplama | [Özet](altyazi_ozetleri/ders_18_ozet.md) | [PDF (İndir)](ders_18_ozet.pdf) |
-| **Ders 19** | Dinamik Programlama: Düzenleme Uzaklığı (Levenshtein) ve En Uzun Ortak Alt Dizi | [Özet](altyazi_ozetleri/ders_19_ozet.md) | [PDF (İndir)](ders_19_ozet.pdf) |
-| **Ders 20** | Uygulama: İkinci Ödevin Kontrolü ve Çift Hash ile Hash Tablosu Çözümü | [Özet](altyazi_ozetleri/ders_20_ozet.md) | [PDF (İndir)](ders_20_ozet.pdf) |
-| **Ders 21** | En Uzun Ortak Alt Dizinin Geri İzlenmesi, Graflara Giriş, DFS ve BFS | [Özet](altyazi_ozetleri/ders_21_ozet.md) | [PDF (İndir)](ders_21_ozet.pdf) |
-| **Ders 22** | Topolojik Sıralama: DFS Pop Sırası ve Azalt ve Fethet Yaklaşımı | [Özet](altyazi_ozetleri/ders_22_ozet.md) | [PDF (İndir)](ders_22_ozet.pdf) |
-| **Ders 23** | Geri İzleme: Alt Küme Toplamı ve N-Vezir Problemi; Dal ve Sınır ile Atama Problemi | [Özet](altyazi_ozetleri/ders_23_ozet.md) | [PDF (İndir)](ders_23_ozet.pdf) |
-| **Ders 25** | Dal ve Sınır ile Sırt Çantası Problemi, Gezgin Satıcı, Durma Problemi, P, NP, NP-Tam ve NP-Zor | [Özet](altyazi_ozetleri/ders_25_ozet.md) | [PDF (İndir)](ders_25_ozet.pdf) |
-| **Ders 27** | Vize Soru Çözümleri, Böl ve Fethet ile En Küçüğü Bulma, Not Dağılımı, Dönem Projesi ve Final Bilgilendirmesi | [Özet](altyazi_ozetleri/ders_27_ozet.md) | [PDF (İndir)](ders_27_ozet.pdf) |
+| **Ders 1** | Dersin İşleyişi, Algoritma Kavramı, Analiz Senaryoları ve Temel İşlem Sayma | [Markdown](kisa_notlar/markdown/ders_1_ozet.md) · [PDF](kisa_notlar/ders_1_ozet.pdf) | [Markdown](genisletilmis_notlar/markdown/ders_1_genisletilmis.md) · [PDF](genisletilmis_notlar/ders_1_genisletilmis.pdf) |
+| **Ders 3** | Asimptotik Gösterimler: Büyük-O, Büyük-Omega, Büyük-Teta ve Büyüme Dereceleri | [Markdown](kisa_notlar/markdown/ders_3_ozet.md) · [PDF](kisa_notlar/ders_3_ozet.pdf) | [Markdown](genisletilmis_notlar/markdown/ders_3_genisletilmis.md) · [PDF](genisletilmis_notlar/ders_3_genisletilmis.pdf) |
+| **Ders 4** | Uygulama: Insertion Sort Ortalama Durum Analizi ve Limitle Büyüme Derecesi Karşılaştırma | [Markdown](kisa_notlar/markdown/ders_4_ozet.md) · [PDF](kisa_notlar/ders_4_ozet.pdf) | [Markdown](genisletilmis_notlar/markdown/ders_4_genisletilmis.md) · [PDF](genisletilmis_notlar/ders_4_genisletilmis.pdf) |
+| **Ders 5** | Matematiksel Analiz İçin Formüller, Özyinelemesiz ve Özyinelemeli Algoritmaların Analizi | [Markdown](kisa_notlar/markdown/ders_5_ozet.md) · [PDF](kisa_notlar/ders_5_ozet.pdf) | [Markdown](genisletilmis_notlar/markdown/ders_5_genisletilmis.md) · [PDF](genisletilmis_notlar/ders_5_genisletilmis.pdf) |
+| **Ders 6** | Uygulama: Geriye Doğru Yerine Koyma ile Rekürans Çözümü ve Toplamların Büyüme Derecesi | [Markdown](kisa_notlar/markdown/ders_6_ozet.md) · [PDF](kisa_notlar/ders_6_ozet.pdf) | [Markdown](genisletilmis_notlar/markdown/ders_6_genisletilmis.md) · [PDF](genisletilmis_notlar/ders_6_genisletilmis.pdf) |
+| **Ders 9** | Kaba Kuvvet, Kapsamlı Arama, Azalt ve Yönet, İkili Arama, Böl ve Yönet ve Master Teoremi | [Markdown](kisa_notlar/markdown/ders_9_ozet.md) · [PDF](kisa_notlar/ders_9_ozet.pdf) | [Markdown](genisletilmis_notlar/markdown/ders_9_genisletilmis.md) · [PDF](genisletilmis_notlar/ders_9_genisletilmis.pdf) |
+| **Ders 10** | Merge Sort ve Quick Sort: Rekürans Bağıntıları, Hoare Bölümlemesi ve Master Teoremi ile Analiz | [Markdown](kisa_notlar/markdown/ders_10_ozet.md) · [PDF](kisa_notlar/ders_10_ozet.pdf) | [Markdown](genisletilmis_notlar/markdown/ders_10_genisletilmis.md) · [PDF](genisletilmis_notlar/ders_10_genisletilmis.pdf) |
+| **Ders 11** | Quicksort Analizi, Arama Yöntemleri ve Hashing'e Giriş | [Markdown](kisa_notlar/markdown/ders_11_ozet.md) · [PDF](kisa_notlar/ders_11_ozet.pdf) | [Markdown](genisletilmis_notlar/markdown/ders_11_genisletilmis.md) · [PDF](genisletilmis_notlar/ders_11_genisletilmis.pdf) |
+| **Ders 13** | Hash Fonksiyonları, Doğum Günü Paradoksu, Anahtar Türleri ve Açık Adresleme | [Markdown](kisa_notlar/markdown/ders_13_ozet.md) · [PDF](kisa_notlar/ders_13_ozet.pdf) | [Markdown](genisletilmis_notlar/markdown/ders_13_genisletilmis.md) · [PDF](genisletilmis_notlar/ders_13_genisletilmis.pdf) |
+| **Ders 14** | Ayrık Zincirleme, Evrensel Hashing ve Yük Faktörüne Göre Arama Maliyeti | [Markdown](kisa_notlar/markdown/ders_14_ozet.md) · [PDF](kisa_notlar/ders_14_ozet.pdf) | [Markdown](genisletilmis_notlar/markdown/ders_14_genisletilmis.md) · [PDF](genisletilmis_notlar/ders_14_genisletilmis.pdf) |
+| **Ders 17** | Dinamik Programlamaya Giriş: Fibonacci, Para Sırası ve Sırt Çantası Problemleri | [Markdown](kisa_notlar/markdown/ders_17_ozet.md) · [PDF](kisa_notlar/ders_17_ozet.pdf) | [Markdown](genisletilmis_notlar/markdown/ders_17_genisletilmis.md) · [PDF](genisletilmis_notlar/ders_17_genisletilmis.pdf) |
+| **Ders 18** | Dinamik Programlama: 0-1 Sırt Çantası Probleminin Çözümü ve Robot ile Madeni Para Toplama | [Markdown](kisa_notlar/markdown/ders_18_ozet.md) · [PDF](kisa_notlar/ders_18_ozet.pdf) | [Markdown](genisletilmis_notlar/markdown/ders_18_genisletilmis.md) · [PDF](genisletilmis_notlar/ders_18_genisletilmis.pdf) |
+| **Ders 19** | Dinamik Programlama: Düzenleme Uzaklığı (Levenshtein) ve En Uzun Ortak Alt Dizi | [Markdown](kisa_notlar/markdown/ders_19_ozet.md) · [PDF](kisa_notlar/ders_19_ozet.pdf) | [Markdown](genisletilmis_notlar/markdown/ders_19_genisletilmis.md) · [PDF](genisletilmis_notlar/ders_19_genisletilmis.pdf) |
+| **Ders 20** | Uygulama: İkinci Ödevin Kontrolü ve Çift Hash ile Hash Tablosu Çözümü | [Markdown](kisa_notlar/markdown/ders_20_ozet.md) · [PDF](kisa_notlar/ders_20_ozet.pdf) | [Markdown](genisletilmis_notlar/markdown/ders_20_genisletilmis.md) · [PDF](genisletilmis_notlar/ders_20_genisletilmis.pdf) |
+| **Ders 21** | En Uzun Ortak Alt Dizinin Geri İzlenmesi, Graflara Giriş, DFS ve BFS | [Markdown](kisa_notlar/markdown/ders_21_ozet.md) · [PDF](kisa_notlar/ders_21_ozet.pdf) | [Markdown](genisletilmis_notlar/markdown/ders_21_genisletilmis.md) · [PDF](genisletilmis_notlar/ders_21_genisletilmis.pdf) |
+| **Ders 22** | Topolojik Sıralama: DFS Pop Sırası ve Azalt ve Fethet Yaklaşımı | [Markdown](kisa_notlar/markdown/ders_22_ozet.md) · [PDF](kisa_notlar/ders_22_ozet.pdf) | [Markdown](genisletilmis_notlar/markdown/ders_22_genisletilmis.md) · [PDF](genisletilmis_notlar/ders_22_genisletilmis.pdf) |
+| **Ders 23** | Geri İzleme: Alt Küme Toplamı ve N-Vezir Problemi; Dal ve Sınır ile Atama Problemi | [Markdown](kisa_notlar/markdown/ders_23_ozet.md) · [PDF](kisa_notlar/ders_23_ozet.pdf) | [Markdown](genisletilmis_notlar/markdown/ders_23_genisletilmis.md) · [PDF](genisletilmis_notlar/ders_23_genisletilmis.pdf) |
+| **Ders 25** | Dal ve Sınır ile Sırt Çantası Problemi, Gezgin Satıcı, Durma Problemi, P, NP, NP-Tam ve NP-Zor | [Markdown](kisa_notlar/markdown/ders_25_ozet.md) · [PDF](kisa_notlar/ders_25_ozet.pdf) | [Markdown](genisletilmis_notlar/markdown/ders_25_genisletilmis.md) · [PDF](genisletilmis_notlar/ders_25_genisletilmis.pdf) |
+| **Ders 27** | Vize Soru Çözümleri, Böl ve Fethet ile En Küçüğü Bulma, Not Dağılımı, Dönem Projesi ve Final Bilgilendirmesi | [Markdown](kisa_notlar/markdown/ders_27_ozet.md) · [PDF](kisa_notlar/ders_27_ozet.pdf) | [Markdown](genisletilmis_notlar/markdown/ders_27_genisletilmis.md) · [PDF](genisletilmis_notlar/ders_27_genisletilmis.pdf) |
 
 > [!NOTE]
 > Arşivde bazı ders numaraları yoktur. 25 Kasım 2020 haftası vize haftasıdır.
@@ -177,8 +181,6 @@ Aşağıdaki tabloda her bir dersin konusu, kaynak markdown dosyası ve doğruda
   - Böl ve yönet (divide and conquer) yaklaşımı ve Master teoremi.
   - Merge sort ile quick sort'un karmaşıklık karşılaştırması ve kararlılık (stability).
 * **Hocanın Vurgusu:**
-  - **Ödev duyurusu:** Cuma sabahı bir ödev verilecek.
-    - Teslim süresi Cumartesi gece yarısı. Değişiklik olmazsa iki soru olacak.
   - Kaba kuvvet her zaman çalışır ama genellikle en verimli çözüm değildir.
     - Yine de bazen diğer yaklaşımlardan daha akıllıca olabilir.
   - Kapsamlı aramada çözüm sayısı hızla büyür.
@@ -186,6 +188,8 @@ Aşağıdaki tabloda her bir dersin konusu, kaynak markdown dosyası ve doğruda
   - İkili arama yalnız sıralı dizide çalışır.
   - Master teoremindeki parametrelerin anlamı:
     - $n$: girdi boyutu.
+  - Böl ve yönet her zaman en iyi çözüm değildir.
+    - Özyinelemeli çağrıların bir maliyeti vardır.
 * **Detaylı Açıklamalar:** 1. Problem, mümkünse eşit büyüklükte daha küçük alt problemlere bölünür. 2. Alt problemler (genellikle özyinelemeli olarak) çözülür. 3. Gerekirse alt problemlerin çözümleri birleştirilerek asıl problemin çözümü elde edilir.
 
 ### 🔹 Ders 10: Merge Sort ve Quick Sort: Rekürans Bağıntıları, Hoare Bölümlemesi ve Master Teoremi ile Analiz
@@ -211,8 +215,7 @@ Aşağıdaki tabloda her bir dersin konusu, kaynak markdown dosyası ve doğruda
 * **Genel Konular:**
   - Dersin tarihi 11 Kasım 2020 Çarşamba. Ders Zoom üzerinden yapıldı.
     - Asıl anlatım yaklaşık 00:03:00'te başlar.
-  - Dersin işleyişi ve duyurular
-    - Bu haftanın uygulama (lab) saatinde 2. grup, 1. grubun Zoom bağlantısına katılır. Asistan Sevgi Hoca 1. ödevin sorularını çözer.
+  - Vize haftası ve vize sayısı (tek vize mi) henüz belli değil.
   - Quicksort analizinin tamamlanması (böl ve yönet, divide and conquer)
     - En iyi durum (best case), en kötü durum (worst case), ortalama durum (average case).
   - Arama yöntemlerinin özeti
@@ -235,7 +238,7 @@ Aşağıdaki tabloda her bir dersin konusu, kaynak markdown dosyası ve doğruda
 * **Genel Konular:**
   - Dersin tarihi 18 Kasım 2020 Çarşamba (7. hafta). Ders Zoom üzerinden yapıldı.
     - Asıl anlatım yaklaşık 00:19:40'ta başlar. İlk 18 dakika vize, ödev ve sınav kuralları hakkındaki duyurulardır.
-  - Vize ve ödev duyuruları
+  - Vize duyurusu
   - Hashing tekrarı
   - Çarpma yöntemi (multiplication method)
   - Doğum günü paradoksu (birthday paradox) ve çakışma olasılığı
@@ -246,20 +249,20 @@ Aşağıdaki tabloda her bir dersin konusu, kaynak markdown dosyası ve doğruda
 * **Hocanın Vurgusu:**
   - Vize yüz yüze vizelerle aynı zorlukta olacak.
     - Test, boşluk doldurma, algoritma tasarımı ve analiz soruları olabilir.
-  - Kopya uyarısı: Ortak çözüm ya da internetten alınmış kod/sözde kod tespit edilirse puanlama ona göre yapılacak.
-    - Notlarınız açık olabilir. Sorun olan şey birebir alıntıdır.
-  - Kod sorularında çözüm `.c` dosyası olarak istenecek.
-    - Gerekirse PDF'e de kopyalanacak.
-  - Sınav için hazırlığınızı önceden yapın: fotoğraf çekme, PDF'e çevirme, dosya adları, ayrı klasör.
-    - Evde sınava girerken yiyip içmek sizin riskinizdir. Klavyeye çay dökülmesi mazeret sayılmaz.
   - Dönem içi ödevleri mutlaka yapın.
     - Geçen dönem 70 kişiden 20'si hiç ödev yapmamıştı.
+  - Hash fonksiyonu kolay hesaplanabilir olmalıdır.
+    - Çarpma yöntemi bölme yönteminden daha çok işlem yapar. Bu yüzden pratikte daha az kullanılır.
+  - String anahtarlarda karakter kodlarını basitçe toplamak kötü bir yöntemdir.
+    - Aynı harflerden oluşan sözcükler (harflerin yeri değişmiş sözcükler) aynı toplamı verir. Derste verilen örnek sözcükler altyazıda bozuk geçiyor.
+  - Doğrusal sınamada arama döngüsüne mutlaka "$i < m$" koşulu eklenmelidir.
+    - Yoksa tablo doluyken arama sonsuz döngüye girer.
 * **Detaylı Açıklamalar:** $kA \bmod 1$, $kA$'nın kesir kısmıdır: $kA - \lfloor kA \rfloor$. Bu değer 0 ile 1 arasındadır. Tablo boyutu $m$ ile çarpılıp tam kısmı alınır.
 
 ### 🔹 Ders 14: Ayrık Zincirleme, Evrensel Hashing ve Yük Faktörüne Göre Arama Maliyeti
 * **Genel Konular:**
   - Dersin tarihi 18 Kasım 2020 Çarşamba, günün ikinci oturumu (normalde uygulama saati). Ders Zoom üzerinden yapıldı.
-    - Geçen haftaki elektrik kesintisinin telafisi için uygulama saati konu anlatımına ayrıldı.
+    - Geçen hafta yarım kalan dersin telafisi için uygulama saati konu anlatımına ayrıldı.
   - Ayrık zincirleme (separate chaining)
     - Bağlı listeye başa ekleme
   - Evrensel hashing (universal hashing)
@@ -291,15 +294,15 @@ Aşağıdaki tabloda her bir dersin konusu, kaynak markdown dosyası ve doğruda
   - Sırt çantası problemi (0/1 knapsack problem)
     - Kaba kuvvet (brute force) çözümün maliyeti
 * **Hocanın Vurgusu:**
-  - Bundan sonra Zoom'da bekleme odası açık olacak.
-    - İlk 10 dakikadan sonra gelen derse alınmayacak.
   - Ödev ve sınavlarda girdi/çıktı dosyası istenmesine hoca sıcak bakmadı.
     - Test durumlarını (case) düşünmek algoritma tasarımının parçasıdır. Hoca yaratıcılığı kısıtlamak istemiyor.
-  - Sınavda dosya yükleme için ayrılan süre sınav süresi değildir.
-    - Son 5-6 dakikayı yükleme için ayırın.
-  - Sistemle ilgili sorun yaşarsanız (1-2 dakikalık bile olsa) bölüm yönetimine ya da uzaktan eğitim birimine bildirin.
   - "Optimizasyon problemi" bir algoritmayı hızlandırmak demek değildir.
     - Kısıtlı kaynakları, verilen kısıtlara uygun biçimde en iyi şekilde kullanma problemidir (en küçük ya da en büyük değeri bulma).
+  - Dinamik programlamanın zayıf noktası bellek kullanımıdır.
+    - Problemi çözmeden önce gereken bellek (space complexity) hesaplanmalıdır.
+  - Bilgisayar "gözle bakarak" karar veremez.
+    - Her adımda bir formüle (rekürans bağıntısına) göre karar verilmelidir.
+  - Hoca derse katılımın düşük olmasından yine şikâyet etti.
 * **Detaylı Açıklamalar:** Bir problemin örtüşen alt problemleri çözülür ve sonuçları bellekte (bir dizi ya da tabloda) saklanır. Büyük problemin çözümüne bu saklanan değerlerden ulaşılır. Böylece özyinelemeli yaklaşımda tekrar tekrar çözülen alt problemler bir kez çözülür.
 
 ### 🔹 Ders 18: Dinamik Programlama: 0-1 Sırt Çantası Probleminin Çözümü ve Robot ile Madeni Para Toplama
@@ -308,10 +311,9 @@ Aşağıdaki tabloda her bir dersin konusu, kaynak markdown dosyası ve doğruda
     - Kayıt, bir önceki oturumda (ders 17) başlanan 0-1 sırt çantası (0-1 knapsack) probleminin devamıyla açılır.
   - 0-1 sırt çantası probleminin dinamik programlama (dynamic programming) ile çözümü
     - İki durum: eşya alınır ya da alınmaz.
-  - Sınavda dosya yükleme sorunu yaşayan öğrenciler için açıklama.
   - Robot ile madeni para toplama problemi (robot coin collection problem)
     - Robot ızgaranın sol üst köşesinden girer, sağ alt köşeden çıkar. Her adımda yalnız sağa ya da aşağı gider.
-  - Ödev ve dönem planı duyuruları.
+  - Gelecek haftanın konuları.
 * **Hocanın Vurgusu:**
   - Dinamik programlamada her hücre, o ana kadarki alt problemin en iyi sonucudur.
     - Bir önceki satırın en iyi sonucu yukarıdan aşağıya taşınır. Ya da eşya eklenirse, kalan ağırlığın bir önceki satırdaki en iyi değeri eşyanın değerine eklenir.
@@ -333,7 +335,7 @@ Aşağıdaki tabloda her bir dersin konusu, kaynak markdown dosyası ve doğruda
     - Tanım ve kullanım alanı: yazım denetleyicileri (spell checker).
   - En uzun ortak alt dizi (longest common subsequence, LCS)
     - Tanım: karakterlerin ardışık olması gerekmez, sıraları korunur.
-  - Ödev ve proje duyuruları.
+  - Gelecek haftanın konusu.
 * **Hocanın Vurgusu:**
   - Düzenleme uzaklığında kopyalamanın maliyeti yoktur.
     - Değiştirme, ekleme ve silmenin maliyeti 1'dir.
@@ -356,9 +358,6 @@ Aşağıdaki tabloda her bir dersin konusu, kaynak markdown dosyası ve doğruda
   - **Ödev çözümü (yaklaşık 01:16 - 01:37):** Bir asistan, ikinci ödevin sözde kodunu (pseudocode) anlattı.
     - Konu: dosyalardaki kelimeleri, geçtikleri dosya adlarıyla birlikte bir hash tablosunda saklamak.
 * **Hocanın Vurgusu:**
-  - Hoca oturumun başında, kontrol listesinde adı olmayanların ayrılabileceğini, ama saat 16.00'daki çözüm anlatımına mutlaka katılmalarını istedi.
-    - Asistanlar çözümleri titizlikle hazırlıyor. Katılım herkesin kazancını artırır.
-  - Rastgele seçilenler dışında başka bir kontrol yapılmayacak.
   - Asistanın vurguları:
     - Çakışma bir hata değildir. Çift hash'te çakışma beklenir ve bir sonraki adımda başka bir indekse bakılır.
 * **Detaylı Açıklamalar:** Asistanın gösterdiği PDF'den (kareden okundu):
@@ -411,7 +410,7 @@ Aşağıdaki tabloda her bir dersin konusu, kaynak markdown dosyası ve doğruda
   - Dersin tarihi 23 Aralık 2020 Çarşamba. Ders Zoom üzerinden yapıldı. Dönemin 12. haftası.
     - Ders yaklaşık 00:02'de duyurularla başlar. Konu anlatımı yaklaşık 00:16'da başlar.
   - Duyurular
-    - 3. ödevin çözümü aynı gün saat 15:00'teki uygulama saatinde, diğer grubun oturumunda anlatılacak.
+    - Vize sonuçları en geç 13. hafta içinde açıklanacak.
   - Geri izleme (backtracking)
     - Labirent örneği, çıkmaz sokak (dead end) ve geri dönme.
   - Alt küme toplamı problemi (sum of subsets)
@@ -437,7 +436,7 @@ Aşağıdaki tabloda her bir dersin konusu, kaynak markdown dosyası ve doğruda
   - Dersin tarihi 30 Aralık 2020 Çarşamba. Ders Zoom üzerinden yapıldı. Dönemin son konu anlatımı.
     - İlk 18 dakika duyurular ve dersle ilgili anketle geçer. Konu anlatımı yaklaşık 00:22'de başlar.
   - Duyurular
-    - 4. ödevin son teslim tarihi 3 Ocak 2021 Pazar 23:59. Sistemde tarih yanlışlıkla 12 Aralık 2021 görünüyor.
+    - Vize sonuçları en geç önümüzdeki derse kadar açıklanacak.
   - Dal ve sınır ile 0-1 sırt çantası problemi (knapsack)
   - Gezgin satıcı problemi (Traveling Salesman Problem, TSP) ve Hamilton devresi (Hamiltonian circuit)
   - Hesaplama karmaşıklığı sınıfları
@@ -456,8 +455,6 @@ Aşağıdaki tabloda her bir dersin konusu, kaynak markdown dosyası ve doğruda
 * **Genel Konular:**
   - Dersin tarihi 6 Ocak 2021 Çarşamba. Ders Zoom üzerinden yapıldı. Dönemin son kaydı.
     - Bu derste yeni konu anlatılmadı.
-  - Vize sonuçları ve düzeltmeler
-    - Bir test sorusunun cevap anahtarı yanlış girilmişti. Düzeltildi, çoğu öğrencinin notu yaklaşık 4 puan arttı.
   - Vize test soruları: döngü sayımı, linear probing'de silme, asimptotik gösterimler, hash tablosuna yerleştirme sırası, algoritma karşılaştırma ölçütleri, ikili arama ağacına ekleme, sıralama algoritmalarının ara adımlarını tanıma.
   - Vize klasik soruları: büyüme hızı karşılaştırması, rekürans çözümü, hash ile kesişim kümesi, en kısa süreyi bulma (böl ve fethet).
   - Not dağılımı kesinleşti.
@@ -469,9 +466,9 @@ Aşağıdaki tabloda her bir dersin konusu, kaynak markdown dosyası ve doğruda
   - **Hazır gördüğünüz bir böl ve fethet algoritmasını her probleme uygulamayın.** Problemin gerçekte ne istediğine bakın.
   - **Sınavda kodun algoritmik kısmı, söz dizimi hatalarından daha önemlidir.** Küçük söz dizimi hataları en son bakılan yerdir ve az puan kırılır.
     - Bu final için de geçerli.
-  - **Kopya:** Vizede 5-6 öğrencinin kodu çok benzer çıktı, o sorulardan sıfır aldılar.
-    - Finalde aynı durumda bütün sınava sıfır verilecek.
   - Hash sorusunda hash fonksiyonu kullanılmalıydı.
     - Hazır hash fonksiyonu kullanmak ve linear probing yerine bağlı liste (separate chaining) kullanmak puan kaybettirdi.
+  - Ödevler not ortalamasını kurtaran bir unsur.
+    - Not dağılımında ödev ve projeye toplam %35 ayrıldı.
 
 **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
