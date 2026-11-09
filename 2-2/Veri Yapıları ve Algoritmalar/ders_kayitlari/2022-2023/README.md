@@ -9,25 +9,29 @@
 * **Akademik Yıl:** 2022-2023
 * **Şube:** BLM2512 - 1
 
-Bu dizin, ilgili ders kayıtlarının altyazı özetlerini, çalışma notlarını ve PDF kaynaklarını içermektedir.
+Bu dizin, ilgili ders kayıtlarının altyazılarını, kısa notlarını ve genişletilmiş notlarını içermektedir.
+
+* **Kısa not:** Tekrar için. Dersin konuları, hocanın vurguları ve kısa tekrar maddeleri.
+* **Genişletilmiş not:** Dersi izlemeden öğrenmek için. Dersin anlatım akışını baştan sona, örnekleri ve soru-cevaplarıyla anlatır.
+* `altyazilar/`: ders kayıtlarının altyazıları (.srt). Notların PDF'leri `kisa_notlar/` ve `genisletilmis_notlar/` klasörlerinde, markdown kaynakları bu klasörlerin içindeki `markdown/` klasöründedir.
 
 ## 📚 Ders Müfredatı ve Belge Dizini
 
-Aşağıdaki tabloda her bir dersin konusu, kaynak markdown dosyası ve doğrudan indirilebilir PDF formatındaki derlenmiş halleri listelenmiştir. Ders numaraları, kayıt arşivindeki ders kaydı sıra numaralarıdır (hafta numarası değildir).
+Aşağıdaki tabloda her bir dersin konusu ile kısa ve genişletilmiş notlarının markdown ve PDF halleri listelenmiştir. Ders numaraları, kayıt arşivindeki ders kaydı sıra numaralarıdır (hafta numarası değildir).
 
-| Ders No | Ders İçeriği / Konu Başlıkları | Kaynak Notlar (Markdown) | Çalışma Dosyası (PDF) |
+| Ders No | Ders İçeriği / Konu Başlıkları | Kısa Not | Genişletilmiş Not |
 | :---: | :--- | :---: | :---: |
-| **Ders 3** | Algoritma Analizi, Asimptotik Notasyon ve Insertion Sort | [Özet](altyazi_ozetleri/ders_3_ozet.md) | [PDF (İndir)](ders_3_ozet.pdf) |
-| **Ders 5** | Özyineleme, Özyinelemeli İkili Arama ve Bağlı Listelere Giriş | [Özet](altyazi_ozetleri/ders_5_ozet.md) | [PDF (İndir)](ders_5_ozet.pdf) |
-| **Ders 7** | Tek Yönlü, Çift Yönlü ve Dairesel Bağlı Listeler | [Özet](altyazi_ozetleri/ders_7_ozet.md) | [PDF (İndir)](ders_7_ozet.pdf) |
-| **Ders 9** | Yığın, İfade Değerlendirme ve Kuyruk Yapıları | [Özet](altyazi_ozetleri/ders_9_ozet.md) | [PDF (İndir)](ders_9_ozet.pdf) |
-| **Ders 11** | Ağaçlar, İkili Ağaçlar ve İkili Arama Ağaçları | [Özet](altyazi_ozetleri/ders_11_ozet.md) | [PDF (İndir)](ders_11_ozet.pdf) |
-| **Ders 13** | İkili Arama Ağacında Silme, Heap Ağacı ve Heap Sort | [Özet](altyazi_ozetleri/ders_13_ozet.md) | [PDF (İndir)](ders_13_ozet.pdf) |
-| **Ders 15** | Öncelikli Kuyruklar ve Huffman Kodlama | [Özet](altyazi_ozetleri/ders_15_ozet.md) | [PDF (İndir)](ders_15_ozet.pdf) |
-| **Ders 19** | Graf Veri Yapısı ve Minimum Yayılan Ağaç | [Özet](altyazi_ozetleri/ders_19_ozet.md) | [PDF (İndir)](ders_19_ozet.pdf) |
-| **Ders 20** | Kruskal Algoritmasının Tasarımı ve Dijkstra ile En Kısa Yol | [Özet](altyazi_ozetleri/ders_20_ozet.md) | [PDF (İndir)](ders_20_ozet.pdf) |
-| **Ders 22** | Alt Dizgi Arama: Kaba Kuvvet, Boyer-Moore ve Rabin-Karp | [Özet](altyazi_ozetleri/ders_22_ozet.md) | [PDF (İndir)](ders_22_ozet.pdf) |
-| **Ders 23** | Anahtar İndeksli Sayma, LSD Dizgi Sıralama ve Vize Sorularının Çözümü | [Özet](altyazi_ozetleri/ders_23_ozet.md) | [PDF (İndir)](ders_23_ozet.pdf) |
+| **Ders 3** | Algoritma Analizi, Asimptotik Notasyon ve Insertion Sort | [Markdown](kisa_notlar/markdown/ders_3_ozet.md) · [PDF](kisa_notlar/ders_3_ozet.pdf) | [Markdown](genisletilmis_notlar/markdown/ders_3_genisletilmis.md) · [PDF](genisletilmis_notlar/ders_3_genisletilmis.pdf) |
+| **Ders 5** | Özyineleme, Özyinelemeli İkili Arama ve Bağlı Listelere Giriş | [Markdown](kisa_notlar/markdown/ders_5_ozet.md) · [PDF](kisa_notlar/ders_5_ozet.pdf) | [Markdown](genisletilmis_notlar/markdown/ders_5_genisletilmis.md) · [PDF](genisletilmis_notlar/ders_5_genisletilmis.pdf) |
+| **Ders 7** | Tek Yönlü, Çift Yönlü ve Dairesel Bağlı Listeler | [Markdown](kisa_notlar/markdown/ders_7_ozet.md) · [PDF](kisa_notlar/ders_7_ozet.pdf) | [Markdown](genisletilmis_notlar/markdown/ders_7_genisletilmis.md) · [PDF](genisletilmis_notlar/ders_7_genisletilmis.pdf) |
+| **Ders 9** | Yığın, İfade Değerlendirme ve Kuyruk Yapıları | [Markdown](kisa_notlar/markdown/ders_9_ozet.md) · [PDF](kisa_notlar/ders_9_ozet.pdf) | [Markdown](genisletilmis_notlar/markdown/ders_9_genisletilmis.md) · [PDF](genisletilmis_notlar/ders_9_genisletilmis.pdf) |
+| **Ders 11** | Ağaçlar, İkili Ağaçlar ve İkili Arama Ağaçları | [Markdown](kisa_notlar/markdown/ders_11_ozet.md) · [PDF](kisa_notlar/ders_11_ozet.pdf) | [Markdown](genisletilmis_notlar/markdown/ders_11_genisletilmis.md) · [PDF](genisletilmis_notlar/ders_11_genisletilmis.pdf) |
+| **Ders 13** | İkili Arama Ağacında Silme, Heap Ağacı ve Heap Sort | [Markdown](kisa_notlar/markdown/ders_13_ozet.md) · [PDF](kisa_notlar/ders_13_ozet.pdf) | [Markdown](genisletilmis_notlar/markdown/ders_13_genisletilmis.md) · [PDF](genisletilmis_notlar/ders_13_genisletilmis.pdf) |
+| **Ders 15** | Öncelikli Kuyruklar ve Huffman Kodlama | [Markdown](kisa_notlar/markdown/ders_15_ozet.md) · [PDF](kisa_notlar/ders_15_ozet.pdf) | [Markdown](genisletilmis_notlar/markdown/ders_15_genisletilmis.md) · [PDF](genisletilmis_notlar/ders_15_genisletilmis.pdf) |
+| **Ders 19** | Graf Veri Yapısı ve Minimum Yayılan Ağaç | [Markdown](kisa_notlar/markdown/ders_19_ozet.md) · [PDF](kisa_notlar/ders_19_ozet.pdf) | [Markdown](genisletilmis_notlar/markdown/ders_19_genisletilmis.md) · [PDF](genisletilmis_notlar/ders_19_genisletilmis.pdf) |
+| **Ders 20** | Kruskal Algoritmasının Tasarımı ve Dijkstra ile En Kısa Yol | [Markdown](kisa_notlar/markdown/ders_20_ozet.md) · [PDF](kisa_notlar/ders_20_ozet.pdf) | [Markdown](genisletilmis_notlar/markdown/ders_20_genisletilmis.md) · [PDF](genisletilmis_notlar/ders_20_genisletilmis.pdf) |
+| **Ders 22** | Alt Dizgi Arama: Kaba Kuvvet, Boyer-Moore ve Rabin-Karp | [Markdown](kisa_notlar/markdown/ders_22_ozet.md) · [PDF](kisa_notlar/ders_22_ozet.pdf) | [Markdown](genisletilmis_notlar/markdown/ders_22_genisletilmis.md) · [PDF](genisletilmis_notlar/ders_22_genisletilmis.pdf) |
+| **Ders 23** | Anahtar İndeksli Sayma, LSD Dizgi Sıralama ve Vize Sorularının Çözümü | [Markdown](kisa_notlar/markdown/ders_23_ozet.md) · [PDF](kisa_notlar/ders_23_ozet.pdf) | [Markdown](genisletilmis_notlar/markdown/ders_23_genisletilmis.md) · [PDF](genisletilmis_notlar/ders_23_genisletilmis.pdf) |
 
 > [!NOTE]
 > Arşivdeki ara numaralı kayıtlar bulunmamaktadır. 24 Nisan 2023 haftası vize haftası, 1 Mayıs 2023 resmî tatildir.
@@ -44,8 +48,6 @@ Aşağıdaki tabloda her bir dersin konusu, kaynak markdown dosyası ve doğruda
   - Asimptotik analiz (asymptotic analysis) ve asimptotik notasyon: Big O, Big Theta, Big Omega.
   - En iyi durum (best case), en kötü durum (worst case) ve ortalama durum (average case).
 * **Hocanın Vurgusu:**
-  - Sorular chat'ten değil, sesli olarak sorulmalı.
-    - Hoca tam ekranda chat'i görmüyor.
   - Algoritmaya doğrudan kodla başlamayın.
     - Önce akış diyagramı veya yarı kod (pseudo code) ile tasarlayın. Koddaki hata düzeltmeleri "yama" gibi olur ve algoritmayı gereksiz büyütür.
   - Çalışma süresini saniye ile ölçmek iyi bir yöntem değil.
@@ -54,6 +56,8 @@ Aşağıdaki tabloda her bir dersin konusu, kaynak markdown dosyası ve doğruda
     - Önemli olan $n$'e bağlı en büyük terimdir.
   - Bu dönem yalnız Big O kullanılacak.
     - Theta ve Omega algoritma analizi dersinde (3. sınıf) işlenecek.
+  - Bu dönem hep worst case üzerinden gidilecek.
+    - Average case yalnız bir kez, kavram anlaşılsın diye gösterildi.
 * **Detaylı Açıklamalar:** Hoca, her işlemin yaklaşık 1 ns sürdüğü bir bilgisayarda ölçülmüş/hesaplanmış şu değerleri verdi:
 
 ### 🔹 Ders 5: Özyineleme, Özyinelemeli İkili Arama ve Bağlı Listelere Giriş
@@ -164,7 +168,6 @@ Aşağıdaki tabloda her bir dersin konusu, kaynak markdown dosyası ve doğruda
 
 ### 🔹 Ders 15: Öncelikli Kuyruklar ve Huffman Kodlama
 * **Genel Konular:**
-  - Vize sınavı duyurusu: online, üç bölüm, soru başına süre.
   - Heap sort tekrarı ve sıralama algoritmalarının karşılaştırması (best, average, worst case, ek bellek).
   - Öncelikli kuyruk (priority queue): sıralı dizi, sıralı bağlı liste, sırasız dizi ve heap ile gerçekleştirme; karmaşıklıklar.
   - Heap ile öncelikli kuyruk: en öncelikli elemanı çıkarma ve ekleme.
@@ -184,7 +187,6 @@ Aşağıdaki tabloda her bir dersin konusu, kaynak markdown dosyası ve doğruda
 
 ### 🔹 Ders 19: Graf Veri Yapısı ve Minimum Yayılan Ağaç
 * **Genel Konular:**
-  - Vize sonrası değerlendirme: kopya ve derse katılım üzerine uyarılar.
   - Graf (graph) veri yapısı: neden doğrusal olmayan bir yapıdır, gerçek hayattaki kullanım alanları.
   - Graf terminolojisi: düğüm, kenar, komşuluk, derece, yol, döngü, bağlı bileşen, ağaç, yayılan ağaç, klik, bağlı/bağlı olmayan graf, iki parçalı graf, ağırlıklı graf.
   - Sembol tablosu ve sembol graf.
@@ -192,15 +194,15 @@ Aşağıdaki tabloda her bir dersin konusu, kaynak markdown dosyası ve doğruda
   - Yönlü graf (directed graph, digraph): giriş derecesi ve çıkış derecesi.
   - Minimum yayılan ağaç (minimum spanning tree, MST): Prim ve Kruskal algoritmaları, döngü kontrolü için etiket dizisi, karmaşıklıklar.
 * **Hocanın Vurgusu:**
-  - Hoca vizede çok fazla kopya çekildiğini söyledi.
-    - Bazı cevaplar internetten kopyalanıp yapıştırılmış kitap cümleleriydi.
-  - Diğer öğretim üyeleri de derse katılımın çok düşük olduğunu söylüyor.
-    - Bir öğrenci, kayıtların sonradan hızlandırılarak izlenmesini sebep olarak gösterdi.
   - Dizi, bağlı liste, yığın ve kuyruk doğrusal (linear) yapılardır.
     - Graf doğrusal değildir: bilgiler aralarındaki ilişkiye göre birbirine bağlanır, sıralı bir erişim yoktur.
   - Graf, günlük hayatta en çok kullanılan veri yapılarından biridir.
     - En temel örnek internettir.
   - Düğümlerin ve kenarların neyi göstereceğine uygulamaya göre siz karar verirsiniz.
+  - Kod yazarken düğümler isimlerle değil sayılarla (0, 1, 2, ...) temsil edilmelidir.
+    - Kullanıcıya gösterirken sembol tablosuyla isme çevrilir.
+  - Seyrek bir grafı matriste saklamak bellek açısından kötü bir seçimdir.
+    - Seyrek graflar için komşuluk listesi kullanılmalıdır.
 * **Detaylı Açıklamalar:** struct Graph { int numVertices; struct node **adjLists; /* her düğüm için liste başı pointer'ı */ };
 
 ### 🔹 Ders 20: Kruskal Algoritmasının Tasarımı ve Dijkstra ile En Kısa Yol
@@ -214,7 +216,7 @@ Aşağıdaki tabloda her bir dersin konusu, kaynak markdown dosyası ve doğruda
   - Derinlik öncelikli arama (depth-first search, DFS) ve genişlik öncelikli arama (breadth-first search, BFS) bu dönem anlatılmadı. Hoca bunların önümüzdeki dönem anlatılacağını söyledi.
 * **Hocanın Vurgusu:**
   - Prim ve Kruskal ikisi de açgözlü (greedy) algoritmadır.
-    - Mantık: yerelde en iyi seçim, globalde de en iyi sonucu verir.
+    - Hoca mantığı "yerelde en iyi seçim, globalde de en iyi sonucu verir" diye özetledi. Bu MST için ispatlıdır (kesme özelliği, cut property); her problemde geçerli genel bir kural değildir.
   - Kruskal'da ilk iş kenarları ağırlığa göre küçükten büyüğe sıralamaktır.
     - Karmaşıklık bu sıralamadan gelir: $O(E \log V)$.
   - $n$ düğümlü bir grafın MST'sinde $n-1$ kenar vardır.
@@ -227,7 +229,6 @@ Aşağıdaki tabloda her bir dersin konusu, kaynak markdown dosyası ve doğruda
 
 ### 🔹 Ders 22: Alt Dizgi Arama: Kaba Kuvvet, Boyer-Moore ve Rabin-Karp
 * **Genel Konular:**
-  - Duyurular: final ve bütünleme sınavları online; proje ödevi ve vize notları ilanı.
   - Alt dizgi arama (substring search) problemi: uzun bir metinde (text) kısa bir örüntüyü (pattern) bulmak.
   - Kaba kuvvet (brute force) arama: algoritma, C kodu ve karmaşıklık analizi.
   - Boyer-Moore yöntemi: örüntüyü sondan başa karşılaştırma ve uyumsuz karaktere göre kaydırma.
@@ -248,13 +249,13 @@ Aşağıdaki tabloda her bir dersin konusu, kaynak markdown dosyası ve doğruda
 
 ### 🔹 Ders 23: Anahtar İndeksli Sayma, LSD Dizgi Sıralama ve Vize Sorularının Çözümü
 * **Genel Konular:**
-  - Dönemin son dersi.
   - Dizgi (string) sıralamanın sayı sıralamasından farkı.
   - Anahtar indeksli sayma (key-indexed counting): her karakterin sıralı dizide nereden başlayacağını sayarak bulma.
   - LSD dizgi sıralama (least significant digit first string sort): sabit uzunluklu dizgileri sağdan sola karakter karakter sıralama.
   - Kararlı sıralama (stable sorting) kavramı.
   - Yedek dizi kullanmanın bellek açısından değerlendirmesi.
   - Vize sınavı sorularının çözümü ve sık yapılan hatalar.
+  - MSD (most significant digit first) dizgi sıralama öğrencilere inceleme için bırakıldı.
 * **Hocanın Vurgusu:**
   - Sayılar bir bütün olarak karşılaştırılır (34 ile 45 gibi).
     - Dizgilerde her karakter ayrı bir değerdir; karşılaştırma karakter karakter yapılır. İlk farklı karakterde karar verilir.
