@@ -9,30 +9,34 @@
 * **Akademik Yıl:** 2021-2022
 * **Şube:** BLM3011 - 3
 
-Bu dizin, ilgili ders kayıtlarının altyazı özetlerini, çalışma notlarını ve PDF kaynaklarını içermektedir.
+Bu dizin, ilgili ders kayıtlarının altyazılarını, kısa notlarını ve genişletilmiş notlarını içermektedir.
+
+* **Kısa not:** Tekrar için. Dersin konuları, hocanın vurguları ve kısa tekrar maddeleri.
+* **Genişletilmiş not:** Dersi izlemeden öğrenmek için. Dersin anlatım akışını baştan sona, örnekleri ve soru-cevaplarıyla anlatır.
+* `altyazilar/`: ders kayıtlarının altyazıları (.srt). Notların PDF'leri `kisa_notlar/` ve `genisletilmis_notlar/` klasörlerinde, markdown kaynakları bu klasörlerin içindeki `markdown/` klasöründedir.
 
 ## 📚 Ders Müfredatı ve Belge Dizini
 
-Aşağıdaki tabloda her bir dersin konusu, kaynak markdown dosyası ve doğrudan indirilebilir PDF formatındaki derlenmiş halleri listelenmiştir. Ders numaraları, kayıt arşivindeki ders kaydı sıra numaralarıdır (hafta numarası değildir).
+Aşağıdaki tabloda her bir dersin konusu ile kısa ve genişletilmiş notlarının markdown ve PDF halleri listelenmiştir. Ders numaraları, kayıt arşivindeki ders kaydı sıra numaralarıdır (hafta numarası değildir).
 
-| Ders No | Ders İçeriği / Konu Başlıkları | Kaynak Notlar (Markdown) | Çalışma Dosyası (PDF) |
+| Ders No | Ders İçeriği / Konu Başlıkları | Kısa Not | Genişletilmiş Not |
 | :---: | :--- | :---: | :---: |
-| **Ders 1** | Dersin İşleyişi, İşletim Sistemine Giriş, Kesmeler, Depolama Hiyerarşisi ve Çok İşlemcili Sistemler | [Özet](altyazi_ozetleri/ders_1_ozet.md) | [PDF (İndir)](ders_1_ozet.pdf) |
-| **Ders 5** | Çoklu Programlama, İkili Mod, İşletim Sistemi Görevleri, Koruma ve Sistem Çağrıları | [Özet](altyazi_ozetleri/ders_5_ozet.md) | [PDF (İndir)](ders_5_ozet.pdf) |
-| **Ders 9** | İşletim Sistemi Yapıları, Süreç Kavramı, Süreç Durumları, PCB ve Zamanlayıcılar | [Özet](altyazi_ozetleri/ders_9_ozet.md) | [PDF (İndir)](ders_9_ozet.pdf) |
-| **Ders 12** | Bağlam Değişimi, Süreç Yaratma ve Sonlandırma: fork, exec, wait, Zombi ve Öksüz Süreçler | [Özet](altyazi_ozetleri/ders_12_ozet.md) | [PDF (İndir)](ders_12_ozet.pdf) |
-| **Ders 14** | Süreçler Arası İletişim: Paylaşımlı Bellek, Mesaj Geçirme, POSIX, Mach, Soketler, RPC ve Borular | [Özet](altyazi_ozetleri/ders_14_ozet.md) | [PDF (İndir)](ders_14_ozet.pdf) |
-| **Ders 15** | Uygulama 1: Shell Programlamaya Giriş, Dosya İşlemleri, İzinler, Değişkenler ve Echo | [Özet](altyazi_ozetleri/ders_15_ozet.md) | [PDF (İndir)](ders_15_ozet.pdf) |
-| **Ders 16** | İş Parçacıkları: Çoklu İş Parçacığı Modelleri, Pthreads, Amdahl Yasası ve İş Parçacığı Sorunları | [Özet](altyazi_ozetleri/ders_16_ozet.md) | [PDF (İndir)](ders_16_ozet.pdf) |
-| **Ders 17** | Uygulama 2: Shell Programlama, Pipe, tr, awk, Koşullar, Döngüler ve case | [Özet](altyazi_ozetleri/ders_17_ozet.md) | [PDF (İndir)](ders_17_ozet.pdf) |
-| **Ders 19** | Süreç Senkronizasyonu: Yarış Durumu, Kritik Bölge, Peterson Çözümü, Donanım Desteği, Mutex ve Semafor | [Özet](altyazi_ozetleri/ders_19_ozet.md) | [PDF (İndir)](ders_19_ozet.pdf) |
-| **Ders 20** | Uygulama 3: fork, exec, wait, Zombi ve Öksüz Süreçler ve Pipe ile Süreçler Arası İletişim | [Özet](altyazi_ozetleri/ders_20_ozet.md) | [PDF (İndir)](ders_20_ozet.pdf) |
-| **Ders 21** | Klasik Senkronizasyon Problemleri, Monitörler ve CPU Zamanlamaya Giriş: FCFS, SJF, SRTF ve Öncelikli Zamanlama | [Özet](altyazi_ozetleri/ders_21_ozet.md) | [PDF (İndir)](ders_21_ozet.pdf) |
-| **Ders 22** | Uygulama: exec, atexit, Zombi ve Öksüz Süreçler, wait, Pipe, FIFO ve Sinyaller | [Özet](altyazi_ozetleri/ders_22_ozet.md) | [PDF (İndir)](ders_22_ozet.pdf) |
-| **Ders 23** | Round Robin, Çok Seviyeli Kuyruklar, Çok İşlemcili ve Gerçek Zamanlı CPU Zamanlama | [Özet](altyazi_ozetleri/ders_23_ozet.md) | [PDF (İndir)](ders_23_ozet.pdf) |
-| **Ders 24** | Uygulama: POSIX Semaforları, Mesaj Kuyrukları, Paylaşılan Bellek ve Pthreads | [Özet](altyazi_ozetleri/ders_24_ozet.md) | [PDF (İndir)](ders_24_ozet.pdf) |
-| **Ders 26** | Ölümcül Kilitlenme: Koşullar, Kaynak Atama Çizgesi, Önleme, Kaçınma, Banker Algoritması ve Tespit | [Özet](altyazi_ozetleri/ders_26_ozet.md) | [PDF (İndir)](ders_26_ozet.pdf) |
-| **Ders 28** | Ana Bellek: Adres Bağlama, Takas, Bitişik Bellek Ayırma, Bölümleme ve Final Bilgilendirmesi | [Özet](altyazi_ozetleri/ders_28_ozet.md) | [PDF (İndir)](ders_28_ozet.pdf) |
+| **Ders 1** | Dersin İşleyişi, İşletim Sistemine Giriş, Kesmeler, Depolama Hiyerarşisi ve Çok İşlemcili Sistemler | [Markdown](kisa_notlar/markdown/ders_1_ozet.md) · [PDF](kisa_notlar/ders_1_ozet.pdf) | [Markdown](genisletilmis_notlar/markdown/ders_1_genisletilmis.md) · [PDF](genisletilmis_notlar/ders_1_genisletilmis.pdf) |
+| **Ders 5** | Çoklu Programlama, İkili Mod, İşletim Sistemi Görevleri, Koruma ve Sistem Çağrıları | [Markdown](kisa_notlar/markdown/ders_5_ozet.md) · [PDF](kisa_notlar/ders_5_ozet.pdf) | [Markdown](genisletilmis_notlar/markdown/ders_5_genisletilmis.md) · [PDF](genisletilmis_notlar/ders_5_genisletilmis.pdf) |
+| **Ders 9** | İşletim Sistemi Yapıları, Süreç Kavramı, Süreç Durumları, PCB ve Zamanlayıcılar | [Markdown](kisa_notlar/markdown/ders_9_ozet.md) · [PDF](kisa_notlar/ders_9_ozet.pdf) | [Markdown](genisletilmis_notlar/markdown/ders_9_genisletilmis.md) · [PDF](genisletilmis_notlar/ders_9_genisletilmis.pdf) |
+| **Ders 12** | Bağlam Değişimi, Süreç Yaratma ve Sonlandırma: fork, exec, wait, Zombi ve Öksüz Süreçler | [Markdown](kisa_notlar/markdown/ders_12_ozet.md) · [PDF](kisa_notlar/ders_12_ozet.pdf) | [Markdown](genisletilmis_notlar/markdown/ders_12_genisletilmis.md) · [PDF](genisletilmis_notlar/ders_12_genisletilmis.pdf) |
+| **Ders 14** | Süreçler Arası İletişim: Paylaşımlı Bellek, Mesaj Geçirme, POSIX, Mach, Soketler, RPC ve Borular | [Markdown](kisa_notlar/markdown/ders_14_ozet.md) · [PDF](kisa_notlar/ders_14_ozet.pdf) | [Markdown](genisletilmis_notlar/markdown/ders_14_genisletilmis.md) · [PDF](genisletilmis_notlar/ders_14_genisletilmis.pdf) |
+| **Ders 15** | Uygulama 1: Shell Programlamaya Giriş, Dosya İşlemleri, İzinler, Değişkenler ve Echo | [Markdown](kisa_notlar/markdown/ders_15_ozet.md) · [PDF](kisa_notlar/ders_15_ozet.pdf) | [Markdown](genisletilmis_notlar/markdown/ders_15_genisletilmis.md) · [PDF](genisletilmis_notlar/ders_15_genisletilmis.pdf) |
+| **Ders 16** | İş Parçacıkları: Çoklu İş Parçacığı Modelleri, Pthreads, Amdahl Yasası ve İş Parçacığı Sorunları | [Markdown](kisa_notlar/markdown/ders_16_ozet.md) · [PDF](kisa_notlar/ders_16_ozet.pdf) | [Markdown](genisletilmis_notlar/markdown/ders_16_genisletilmis.md) · [PDF](genisletilmis_notlar/ders_16_genisletilmis.pdf) |
+| **Ders 17** | Uygulama 2: Shell Programlama, Pipe, tr, awk, Koşullar, Döngüler ve case | [Markdown](kisa_notlar/markdown/ders_17_ozet.md) · [PDF](kisa_notlar/ders_17_ozet.pdf) | [Markdown](genisletilmis_notlar/markdown/ders_17_genisletilmis.md) · [PDF](genisletilmis_notlar/ders_17_genisletilmis.pdf) |
+| **Ders 19** | Süreç Senkronizasyonu: Yarış Durumu, Kritik Bölge, Peterson Çözümü, Donanım Desteği, Mutex ve Semafor | [Markdown](kisa_notlar/markdown/ders_19_ozet.md) · [PDF](kisa_notlar/ders_19_ozet.pdf) | [Markdown](genisletilmis_notlar/markdown/ders_19_genisletilmis.md) · [PDF](genisletilmis_notlar/ders_19_genisletilmis.pdf) |
+| **Ders 20** | Uygulama 3: fork, exec, wait, Zombi ve Öksüz Süreçler ve Pipe ile Süreçler Arası İletişim | [Markdown](kisa_notlar/markdown/ders_20_ozet.md) · [PDF](kisa_notlar/ders_20_ozet.pdf) | [Markdown](genisletilmis_notlar/markdown/ders_20_genisletilmis.md) · [PDF](genisletilmis_notlar/ders_20_genisletilmis.pdf) |
+| **Ders 21** | Klasik Senkronizasyon Problemleri, Monitörler ve CPU Zamanlamaya Giriş: FCFS, SJF, SRTF ve Öncelikli Zamanlama | [Markdown](kisa_notlar/markdown/ders_21_ozet.md) · [PDF](kisa_notlar/ders_21_ozet.pdf) | [Markdown](genisletilmis_notlar/markdown/ders_21_genisletilmis.md) · [PDF](genisletilmis_notlar/ders_21_genisletilmis.pdf) |
+| **Ders 22** | Uygulama: exec, atexit, Zombi ve Öksüz Süreçler, wait, Pipe, FIFO ve Sinyaller | [Markdown](kisa_notlar/markdown/ders_22_ozet.md) · [PDF](kisa_notlar/ders_22_ozet.pdf) | [Markdown](genisletilmis_notlar/markdown/ders_22_genisletilmis.md) · [PDF](genisletilmis_notlar/ders_22_genisletilmis.pdf) |
+| **Ders 23** | Round Robin, Çok Seviyeli Kuyruklar, Çok İşlemcili ve Gerçek Zamanlı CPU Zamanlama | [Markdown](kisa_notlar/markdown/ders_23_ozet.md) · [PDF](kisa_notlar/ders_23_ozet.pdf) | [Markdown](genisletilmis_notlar/markdown/ders_23_genisletilmis.md) · [PDF](genisletilmis_notlar/ders_23_genisletilmis.pdf) |
+| **Ders 24** | Uygulama: POSIX Semaforları, Mesaj Kuyrukları, Paylaşılan Bellek ve Pthreads | [Markdown](kisa_notlar/markdown/ders_24_ozet.md) · [PDF](kisa_notlar/ders_24_ozet.pdf) | [Markdown](genisletilmis_notlar/markdown/ders_24_genisletilmis.md) · [PDF](genisletilmis_notlar/ders_24_genisletilmis.pdf) |
+| **Ders 26** | Ölümcül Kilitlenme: Koşullar, Kaynak Atama Çizgesi, Önleme, Kaçınma, Banker Algoritması ve Tespit | [Markdown](kisa_notlar/markdown/ders_26_ozet.md) · [PDF](kisa_notlar/ders_26_ozet.pdf) | [Markdown](genisletilmis_notlar/markdown/ders_26_genisletilmis.md) · [PDF](genisletilmis_notlar/ders_26_genisletilmis.pdf) |
+| **Ders 28** | Ana Bellek: Adres Bağlama, Takas, Bitişik Bellek Ayırma, Bölümleme ve Final Bilgilendirmesi | [Markdown](kisa_notlar/markdown/ders_28_ozet.md) · [PDF](kisa_notlar/ders_28_ozet.pdf) | [Markdown](genisletilmis_notlar/markdown/ders_28_genisletilmis.md) · [PDF](genisletilmis_notlar/ders_28_genisletilmis.pdf) |
 
 > [!NOTE]
 > Arşivde bazı ders numaraları yoktur. 22 Kasım ve 20 Aralık 2021 haftaları vize haftalarıdır. Uygulama oturumlarını asistanlar yürütmüştür.
@@ -184,14 +188,14 @@ Aşağıdaki tabloda her bir dersin konusu, kaynak markdown dosyası ve doğruda
 * **Hocanın Vurgusu:**
   - Uygulamalara katılmanız şiddetle tavsiye ediliyor.
     - Uygulamalardan değerlendirileceksiniz: laboratuvar, proje ya da sınav sorusu olabilir.
-  - Devamlılık önemli değil.
-    - Birkaç kişi aynı bilgisayardan izleyebilir.
   - `chmod` ve `chown` komutlarını çok sık kullanacaksınız.
     - Yetkiniz olmayan bir dosyada işlem yapınca "permission denied" hatası alırsınız. Çözüm, dosyaya uygun izni vermektir.
   - Değişken tanımlarken başına `$` konmaz.
     - Değişkenin değerini kullanırken başına `$` konur.
   - Sistem değişkenleri büyük harfle yazılır.
     - Kendi değişkenlerinizi küçük harfle yazın.
+  - Kaçış dizilerinin (`\n`, `\t` gibi) çalışması için `echo -e` gerekir.
+    - Slaytta bu parametre eksik; doğrusu `-e` eklemektir.
 * **Detaylı Açıklamalar:** Kabuk, kullanıcı ile çekirdek arasında duran programdır. Kullanıcı komut yazar, kabuk bu komutu çekirdeğin servislerine iletir. Kabuk betikleri (shell script) bu komutları bir dosyada toplar ve sırayla çalıştırır. Ubuntu kurulduğunda Python gelmeyebilir, ama kabuk her zaman gelir. Bu yüzden kabuk betiği hiçbir şey kurmadan yazılıp çalıştırılabilir.
 
 ### 🔹 Ders 16: İş Parçacıkları: Çoklu İş Parçacığı Modelleri, Pthreads, Amdahl Yasası ve İş Parçacığı Sorunları
@@ -242,15 +246,13 @@ Aşağıdaki tabloda her bir dersin konusu, kaynak markdown dosyası ve doğruda
   - `case` ile yapılan her şey `if` ile de yapılabilir.
     - `case` daha okunaklıdır.
   - Betiği çalıştırırken argümanları vermeyi unutmayın.
-    - Derste bir örnek argümanlar verilmediği için ilk denemede çalışmadı.
+    - Derste bir örnekte dosya adı argümanı verilmediği için ilk denemede beklenen sonuç alınmadı.
 * **Detaylı Açıklamalar:** `grep -i` büyük-küçük harf ayrımını kaldırır.
 
 ### 🔹 Ders 19: Süreç Senkronizasyonu: Yarış Durumu, Kritik Bölge, Peterson Çözümü, Donanım Desteği, Mutex ve Semafor
 * **Genel Konular:**
   - Dersin tarihi 29 Kasım 2021 Pazartesi. Ders çevrim içi (Zoom) yapıldı.
     - Slaytlar Silberschatz, Galvin ve Gagne, *Operating System Concepts*, 9. baskı, Bölüm 5 (Process Synchronization).
-  - Vize notları ile ilgili duyuru
-    - Notlar sisteme girildi ama henüz ilan edilmedi. Hoca bir kez daha kontrol edip ilan edecek.
   - Senkronizasyona neden ihtiyaç var
     - Çoklu programlama (multiprogramming), süreçler arası iletişim (IPC) ve iş parçacıkları (thread) ortak veri paylaşır.
   - Üretici-tüketici (producer-consumer) problemi ve `counter` örneği
@@ -260,6 +262,7 @@ Aşağıdaki tabloda her bir dersin konusu, kaynak markdown dosyası ve doğruda
   - Kritik bölge çözümünün üç şartı
     - Karşılıklı dışlama (mutual exclusion), ilerleme (progress), sınırlı bekleme (bounded waiting).
   - Kesmeleri kapatma (interrupt disable) çözümü ve sakıncaları.
+  - Sırayla geçiş (yalnız `turn` kullanan) çözüm ve Peterson çözümü.
 * **Hocanın Vurgusu:**
   - Kesme yalnız program satırları arasında olmaz.
     - Yüksek seviyeli tek bir satır birden fazla makine komutudur. Kesme bu komutların arasında da gelebilir.
