@@ -9,68 +9,73 @@
 * **Akademik Yıl:** 2022-2023
 * **Şube:** BLM2512 - 2
 
-Bu dizin, ilgili ders kayıtlarının altyazı özetlerini, çalışma notlarını ve PDF kaynaklarını içermektedir.
+Bu dizin, ilgili ders kayıtlarının altyazılarını, kısa notlarını ve genişletilmiş notlarını içermektedir.
+
+* **Kısa not:** Tekrar için. Dersin konuları, hocanın vurguları ve kısa tekrar maddeleri.
+* **Genişletilmiş not:** Dersi izlemeden öğrenmek için. Dersin anlatım akışını baştan sona, örnekleri ve soru-cevaplarıyla anlatır.
+* `altyazilar/`: ders kayıtlarının altyazıları (.srt). Notların PDF'leri `kisa_notlar/` ve `genisletilmis_notlar/` klasörlerinde, markdown kaynakları bu klasörlerin içindeki `markdown/` klasöründedir.
 
 ## 📚 Ders Müfredatı ve Belge Dizini
 
-Aşağıdaki tabloda her bir dersin konusu, kaynak markdown dosyası ve doğrudan indirilebilir PDF formatındaki derlenmiş halleri listelenmiştir. Ders numaraları, kayıt arşivindeki ders kaydı sıra numaralarıdır (hafta numarası değildir).
+Aşağıdaki tabloda her bir dersin konusu ile kısa ve genişletilmiş notlarının markdown ve PDF halleri listelenmiştir. Ders numaraları, kayıt arşivindeki ders kaydı sıra numaralarıdır (hafta numarası değildir).
 
-| Ders No | Ders İçeriği / Konu Başlıkları | Kaynak Notlar (Markdown) | Çalışma Dosyası (PDF) |
+| Ders No | Ders İçeriği / Konu Başlıkları | Kısa Not | Genişletilmiş Not |
 | :---: | :--- | :---: | :---: |
-| **Ders 1** | Dersin Tanıtımı, Akış Diyagramları ve Temel Sıralama Algoritmaları | [Özet](altyazi_ozetleri/ders_1_ozet.md) | [PDF (İndir)](ders_1_ozet.pdf) |
-| **Ders 3** | Insertion Sort, Asal Sayı Bulma, İkili Arama ve Algoritma Analizine Giriş | [Özet](altyazi_ozetleri/ders_3_ozet.md) | [PDF (İndir)](ders_3_ozet.pdf) |
-| **Ders 5** | Özyinelemeli Problemler ve Bağlı Listeler | [Özet](altyazi_ozetleri/ders_5_ozet.md) | [PDF (İndir)](ders_5_ozet.pdf) |
-| **Ders 7** | Bağlı Listenin Değerlendirmesi, Yığın ve Aritmetik İfade Dönüşümleri | [Özet](altyazi_ozetleri/ders_7_ozet.md) | [PDF (İndir)](ders_7_ozet.pdf) |
-| **Ders 9** | Yığın Uygulamaları, Infix-Prefix Dönüşümü ve Kuyruk Yapıları | [Özet](altyazi_ozetleri/ders_9_ozet.md) | [PDF (İndir)](ders_9_ozet.pdf) |
-| **Ders 11** | Kuyruk Türleri, Ağaçlar, Ağaçta Gezinme ve İkili Arama Ağacı | [Özet](altyazi_ozetleri/ders_11_ozet.md) | [PDF (İndir)](ders_11_ozet.pdf) |
-| **Ders 13** | Heap Ağaçları, Heapify, Heap'e Ekleme-Silme ve Heap Sort | [Özet](altyazi_ozetleri/ders_13_ozet.md) | [PDF (İndir)](ders_13_ozet.pdf) |
-| **Ders 15** | Öncelikli Kuyruklar ve Heap Alıştırmaları | [Özet](altyazi_ozetleri/ders_15_ozet.md) | [PDF (İndir)](ders_15_ozet.pdf) |
-| **Ders 20** | Graflara Giriş, Kapsayan Ağaç ve Kruskal Algoritması | [Özet](altyazi_ozetleri/ders_20_ozet.md) | [PDF (İndir)](ders_20_ozet.pdf) |
-| **Ders 22** | Vize Sorularının Çözümü, Prim ve Dijkstra Algoritmaları | [Özet](altyazi_ozetleri/ders_22_ozet.md) | [PDF (İndir)](ders_22_ozet.pdf) |
-| **Ders 24** | Metin Arama: Kaba Kuvvet, Boyer-Moore ve Rabin-Karp | [Özet](altyazi_ozetleri/ders_24_ozet.md) | [PDF (İndir)](ders_24_ozet.pdf) |
-| **Ders 26** | Sıralama Algoritmalarının Karşılaştırılması, Counting Sort ve Radix Sort | [Özet](altyazi_ozetleri/ders_26_ozet.md) | [PDF (İndir)](ders_26_ozet.pdf) |
+| **Ders 1** | Akış Diyagramları ve Temel Sıralama Algoritmaları | [Markdown](kisa_notlar/markdown/ders_1_ozet.md) · [PDF](kisa_notlar/ders_1_ozet.pdf) | [Markdown](genisletilmis_notlar/markdown/ders_1_genisletilmis.md) · [PDF](genisletilmis_notlar/ders_1_genisletilmis.pdf) |
+| **Ders 3** | Insertion Sort, Asal Sayı Bulma, İkili Arama ve Algoritma Analizine Giriş | [Markdown](kisa_notlar/markdown/ders_3_ozet.md) · [PDF](kisa_notlar/ders_3_ozet.pdf) | [Markdown](genisletilmis_notlar/markdown/ders_3_genisletilmis.md) · [PDF](genisletilmis_notlar/ders_3_genisletilmis.pdf) |
+| **Ders 5** | Özyinelemeli Problemler ve Bağlı Listeler | [Markdown](kisa_notlar/markdown/ders_5_ozet.md) · [PDF](kisa_notlar/ders_5_ozet.pdf) | [Markdown](genisletilmis_notlar/markdown/ders_5_genisletilmis.md) · [PDF](genisletilmis_notlar/ders_5_genisletilmis.pdf) |
+| **Ders 7** | Bağlı Listenin Değerlendirmesi, Yığın ve Aritmetik İfade Dönüşümleri | [Markdown](kisa_notlar/markdown/ders_7_ozet.md) · [PDF](kisa_notlar/ders_7_ozet.pdf) | [Markdown](genisletilmis_notlar/markdown/ders_7_genisletilmis.md) · [PDF](genisletilmis_notlar/ders_7_genisletilmis.pdf) |
+| **Ders 9** | Yığın Uygulamaları, Infix-Prefix Dönüşümü ve Kuyruk Yapıları | [Markdown](kisa_notlar/markdown/ders_9_ozet.md) · [PDF](kisa_notlar/ders_9_ozet.pdf) | [Markdown](genisletilmis_notlar/markdown/ders_9_genisletilmis.md) · [PDF](genisletilmis_notlar/ders_9_genisletilmis.pdf) |
+| **Ders 11** | Kuyruk Türleri, Ağaçlar, Ağaçta Gezinme ve İkili Arama Ağacı | [Markdown](kisa_notlar/markdown/ders_11_ozet.md) · [PDF](kisa_notlar/ders_11_ozet.pdf) | [Markdown](genisletilmis_notlar/markdown/ders_11_genisletilmis.md) · [PDF](genisletilmis_notlar/ders_11_genisletilmis.pdf) |
+| **Ders 13** | Heap Ağaçları, Heapify, Heap'e Ekleme-Silme ve Heap Sort | [Markdown](kisa_notlar/markdown/ders_13_ozet.md) · [PDF](kisa_notlar/ders_13_ozet.pdf) | [Markdown](genisletilmis_notlar/markdown/ders_13_genisletilmis.md) · [PDF](genisletilmis_notlar/ders_13_genisletilmis.pdf) |
+| **Ders 15** | Öncelikli Kuyruklar ve Heap Alıştırmaları | [Markdown](kisa_notlar/markdown/ders_15_ozet.md) · [PDF](kisa_notlar/ders_15_ozet.pdf) | [Markdown](genisletilmis_notlar/markdown/ders_15_genisletilmis.md) · [PDF](genisletilmis_notlar/ders_15_genisletilmis.pdf) |
+| **Ders 20** | Graflara Giriş, Kapsayan Ağaç ve Kruskal Algoritması | [Markdown](kisa_notlar/markdown/ders_20_ozet.md) · [PDF](kisa_notlar/ders_20_ozet.pdf) | [Markdown](genisletilmis_notlar/markdown/ders_20_genisletilmis.md) · [PDF](genisletilmis_notlar/ders_20_genisletilmis.pdf) |
+| **Ders 22** | Vize Sorularının Çözümü, Prim ve Dijkstra Algoritmaları | [Markdown](kisa_notlar/markdown/ders_22_ozet.md) · [PDF](kisa_notlar/ders_22_ozet.pdf) | [Markdown](genisletilmis_notlar/markdown/ders_22_genisletilmis.md) · [PDF](genisletilmis_notlar/ders_22_genisletilmis.pdf) |
+| **Ders 24** | Metin Arama: Kaba Kuvvet, Boyer-Moore ve Rabin-Karp | [Markdown](kisa_notlar/markdown/ders_24_ozet.md) · [PDF](kisa_notlar/ders_24_ozet.pdf) | [Markdown](genisletilmis_notlar/markdown/ders_24_genisletilmis.md) · [PDF](genisletilmis_notlar/ders_24_genisletilmis.pdf) |
+| **Ders 26** | Sıralama Algoritmalarının Karşılaştırılması, Counting Sort ve Radix Sort | [Markdown](kisa_notlar/markdown/ders_26_ozet.md) · [PDF](kisa_notlar/ders_26_ozet.pdf) | [Markdown](genisletilmis_notlar/markdown/ders_26_genisletilmis.md) · [PDF](genisletilmis_notlar/ders_26_genisletilmis.pdf) |
 
 > [!NOTE]
 > Arşivdeki ara numaralı kayıtlar bulunmamaktadır. 24 Nisan 2023 haftası vize haftası, 1 Mayıs 2023 resmî tatildir.
 
 ## 🎯 Derslerin Detaylı Özetleri ve Kazanımları
 
-### 🔹 Ders 1: Dersin Tanıtımı, Akış Diyagramları ve Temel Sıralama Algoritmaları
+### 🔹 Ders 1: Akış Diyagramları ve Temel Sıralama Algoritmaları
 * **Genel Konular:**
-  - Deprem sonrası dönemin online başlaması, bölümün deprem formu ve dersin işleyiş düzeni.
-  - Dersin haftalık programı, değerlendirme ölçütleri, kaynak kitaplar ve ödev kuralları.
+  - Dersin konu programı ve kaynak kitaplar.
   - Algoritma kavramı ve iyi bir algoritmanın özellikleri: doğruluk (correctness), anlaşılabilirlik, kolay gerçeklenme, değiştirilebilirlik.
   - Zaman verimliliği (time efficiency) ve yer verimliliği (space efficiency).
   - Algoritmayı ifade etme yolları: akış diyagramı (flowchart), sözde kod (pseudo code), programlama dili.
   - Akış diyagramı kuralları: başlangıç/bitiş, işlem kutusu, `if`, `for` ve `while` döngüleri.
-  - Ödevlerde beklenen C programlama kuralları.
+  - C programlama kuralları.
+  - Temel veri yapılarına genel bakış: dizi (array), bağlı liste (linked list), yığın (stack), kuyruk (queue), ağaç (tree), graf (graph), hash.
 * **Hocanın Vurgusu:**
   - Bir problemi çözerken birinci öncelik kodlamak değil, algoritmayı tasarlamaktır.
   - Akış diyagramında tek bir başlangıç ve tek bir bitiş noktası olur.
-    - Sembol hataları değerlendirmede en çok puan kaybettiren konulardan biri.
+    - Sembol hataları en sık yapılan hatalardan biri.
   - `if` kutusunun true kolu hiçbir zaman boş, false kolu dolu bırakılmaz.
     - Gerekirse koşul ters çevrilir.
   - True/false kolunun hangi tarafta olduğu önemli değil, ama hangisi olduğu mutlaka yazılmalı.
   - Adım sayısı belliyse `for`, belli değilse (koşula bağlıysa) `while` kullanılır.
+* **Detaylı Açıklamalar:** <!-- BELİRSİZ: İç döngü sınırı (j < n - 1 - i) altyazıda söylenmiyor; hoca yalnız dış döngü koşulunu (i < n - 1 ve exchange == 1) anlattı. Sınır slayttan alınmış olabilir. -->
 
 ### 🔹 Ders 3: Insertion Sort, Asal Sayı Bulma, İkili Arama ve Algoritma Analizine Giriş
 * **Genel Konular:**
-  - Grupların yeniden dağıtılması ve dersin işleyişinin kısa hatırlatması.
   - Insertion sort: akış diyagramı, kaydırma mantığı, en iyi ve en kötü durum.
   - Bir sayının asal olup olmadığını bulma problemi ve adım adım iyileştirilmesi.
   - Eratosthenes Kalburu (Sieve of Eratosthenes) ile $n$'e kadar tüm asal sayıları bulma.
   - Doğrusal arama (linear/sequential search) ve ikili arama (binary search). Azalt ve yönet (decrease and conquer) yaklaşımı.
   - Hash ile aramaya kısa değinme.
   - Temel işlemler (basic/primitive operations) sayılarak zaman karmaşıklığının hesaplanması.
+  - Big O notasyonu: sabitlerin ve küçük dereceli terimlerin atılması.
 * **Hocanın Vurgusu:**
-  - Ders başında herkes mikrofonunu kapalı tutmalı.
-    - Söz almak için el kaldırın ya da chat'e yazın.
   - Birden fazla koşul varsa sınır kontrolü ilk sırada yazılmalı.
     - Insertion sort'ta önce `j >= 0`, sonra `a[j] > tmp` kontrol edilir. Ters sırada `a[-1]`'e erişilir ve segmentation fault oluşabilir.
   - İki koşulun birlikte sağlanması gerekiyorsa AND, birinin yetmesi yeterliyse OR kullanılır.
   - Karşılaştırma yapan sıralama algoritmaları iç içe iki döngüye ihtiyaç duyar.
   - Bir probleme önce kaba kuvvet (brute force, naive) çözümle başlayın ve doğru çalışan bir çözüm elde edin.
     - Sonra işlem sayısını, ardından bellek kullanımını azaltmaya çalışın.
+  - İşlem sayısını azaltmak çoğu zaman ek bellek gerektirir.
+    - Bellek kısıtı varsa (gömülü sistemler, çok büyük veri) daha yavaş ama az bellekli çözüm seçilebilir.
 
 ### 🔹 Ders 5: Özyinelemeli Problemler ve Bağlı Listeler
 * **Genel Konular:**
@@ -103,8 +108,6 @@ Aşağıdaki tabloda her bir dersin konusu, kaynak markdown dosyası ve doğruda
   - Parantez dengesi kontrolü.
   - Dizi ile yığın gerçekleştirme ve tek yönlü bağlı liste ile yığın gerçekleştirme.
 * **Hocanın Vurgusu:**
-  - İlk ödev, bir aksilik olmazsa bir sonraki hafta verilecek.
-    - Konusu bağlı liste ya da yığın olabilir.
   - Yığın ve kuyruk hem diziyle hem bağlı listeyle gerçekleştirilebilir.
     - Hangisinin seçileceği senaryoya bağlıdır.
   - Önbellek verimsizliği (cache inefficiency) bağlı listenin en çok dikkat edilmesi gereken dezavantajlarından biridir.
@@ -112,6 +115,8 @@ Aşağıdaki tabloda her bir dersin konusu, kaynak markdown dosyası ve doğruda
     - Yoksa segmentation fault oluşabilir.
   - `top` değişkeninin 0'dan mı 1'den mi başladığı ve neyi gösterdiği gerçekleştirmeye bağlıdır.
     - Farklı kaynaklarda farklı kabuller görebilirsiniz. Kendi içinde tutarlı olması yeterlidir.
+  - `push` ve `pop`'un döndürdüğü değer işlemin başarılı olup olmadığını gösterir.
+    - Çekilen değer, adresi gönderilen bir değişkene yazılır.
 * **Detaylı Açıklamalar:** struct stack { int item[MAX]; int top; };
 
 ### 🔹 Ders 9: Yığın Uygulamaları, Infix-Prefix Dönüşümü ve Kuyruk Yapıları
@@ -136,13 +141,13 @@ Aşağıdaki tabloda her bir dersin konusu, kaynak markdown dosyası ve doğruda
 
 ### 🔹 Ders 11: Kuyruk Türleri, Ağaçlar, Ağaçta Gezinme ve İkili Arama Ağacı
 * **Genel Konular:**
-  - Ödev ve derse yüz yüze katılım hakkında duyurular.
   - Kuyruk türleri: girişi kısıtlı (input restricted), çıkışı kısıtlı (output restricted), çift uçlu (double ended) ve öncelikli (priority) kuyruk.
   - Doğrusal olmayan (non-linear) veri yapılarına giriş: ağaçlar (tree).
   - Ağaç terminolojisi ve ağaçların kullanım alanları.
   - Ağaçta gezinme (tree traversal): inorder, preorder, postorder ve seviye seviye gezinme.
   - Özyinelemeli gezinme fonksiyonları.
   - İkili ağaç türleri: full, perfect, complete, balanced, degenerate ve skewed.
+  - İkili arama ağacı (binary search tree, BST): arama, ekleme ve silme.
 * **Hocanın Vurgusu:**
   - Her ağaç bir graftır, ama her graf ağaç değildir.
   - Ağacın bir tarafa yaslı (skewed) olması istenmez.
@@ -155,13 +160,13 @@ Aşağıdaki tabloda her bir dersin konusu, kaynak markdown dosyası ve doğruda
 
 ### 🔹 Ders 13: Heap Ağaçları, Heapify, Heap'e Ekleme-Silme ve Heap Sort
 * **Genel Konular:**
-  - Sınav ve ödev duyuruları.
   - İkili yığın ağacı (binary heap tree): max heap ve min heap.
   - Heapify işlemi ve karmaşıklığı.
   - Rastgele bir ağacı (diziyi) max heap'e dönüştürme (build max heap).
   - Heap'in avantajları, dezavantajları ve kullanım alanları.
   - Heap'e ekleme (insertion, up-heap) ve heap'ten silme (deletion, down-heap).
   - Yığın sıralaması (heap sort) ve karmaşıklığı.
+  - Alıştırma problemleri: heap kontrolü, k'ıncı en küçük/büyük eleman, min heap'i max heap'e çevirme.
 * **Hocanın Vurgusu:**
   - Bir ağacın heap olması için iki koşul vardır:
     - Complete binary tree olmalıdır.
@@ -177,7 +182,6 @@ Aşağıdaki tabloda her bir dersin konusu, kaynak markdown dosyası ve doğruda
 
 ### 🔹 Ders 15: Öncelikli Kuyruklar ve Heap Alıştırmaları
 * **Genel Konular:**
-  - Ara sınav, ödevler ve dönem planı duyuruları.
   - Öncelikli kuyruk (priority queue) ve temel işlemleri: `insert`, `remove` (delete), `peek`.
   - Öncelikli kuyruğun farklı veri yapılarıyla gerçeklenmesi ve karmaşıklık karşılaştırması.
   - Öncelikli kuyruğun kullanım alanları.
@@ -196,7 +200,7 @@ Aşağıdaki tabloda her bir dersin konusu, kaynak markdown dosyası ve doğruda
 
 ### 🔹 Ders 20: Graflara Giriş, Kapsayan Ağaç ve Kruskal Algoritması
 * **Genel Konular:**
-  - Vize ve 1 Mayıs tatilinden sonraki ilk ders. Graflar konusuna giriş yapıldı.
+  - Graflar konusuna giriş.
   - Graf türleri: null, trivial, yönlü/yönsüz, bağlı, tam, döngülü, DAG, iki parçalı, ağırlıklı graf.
   - Grafın saklanması: komşuluk matrisi (adjacency matrix) ve komşuluk listesi (adjacency list).
   - Yoğun (dense) ve seyrek (sparse) graf ayrımı, hangi gösterimin ne zaman seçileceği.
@@ -222,15 +226,15 @@ Aşağıdaki tabloda her bir dersin konusu, kaynak markdown dosyası ve doğruda
   - Prim ve Kruskal karşılaştırması.
   - En kısa yol problemi için Dijkstra algoritması: elle çözüm ve matrisle çözüm.
 * **Hocanın Vurgusu:**
-  - Kod sorusunda puanların çoğu algoritmanın akışından kırıldı.
+  - Kod sorusunda en sık hata algoritmanın akışındaydı.
     - Önce sayfanın listede olup olmadığına bakılmalıydı.
   - Bağlı listede bir düğümü bulduktan sonra onu tekrar aramak için listeyi baştan gezmeyin.
     - Gezerken `prev` ve `current` adreslerini tutun.
   - Hoca `while` içinde `break` kullanılmasını istemiyor.
     - `while` zaten adım sayısı belli olmayan döngüler içindir. Fonksiyondan `return` ile çıkmak sorun değil.
-  - Bağlı liste istenen soruda dizi kullananların puanı ciddi kırıldı.
-  - Online vize notları yüksek çıktı.
-    - Finale ciddi hazırlanın. Kâğıt üzerinde soru çözmek bilgisayar başında çözmekten farklıdır.
+  - Bağlı liste istenen soruda dizi kullanılmamalı.
+  - Prim'de bir sonraki düğüm, elde olan düğümlerden ulaşılabilen en küçük kenarla seçilir.
+    - Ziyaret edilmiş düğüme giden kenar alınmaz.
 * **Detaylı Açıklamalar:** Hoca soruları Word belgesi üzerinden tek tek çözdü.
 
 ### 🔹 Ders 24: Metin Arama: Kaba Kuvvet, Boyer-Moore ve Rabin-Karp
@@ -254,7 +258,7 @@ Aşağıdaki tabloda her bir dersin konusu, kaynak markdown dosyası ve doğruda
 
 ### 🔹 Ders 26: Sıralama Algoritmalarının Karşılaştırılması, Counting Sort ve Radix Sort
 * **Genel Konular:**
-  - Dönemin son dersi. Dönem projesi ve final sınavıyla ilgili sorular.
+  - Veri yapısı seçiminde kurulum ve arama maliyeti dengesi.
   - Karşılaştırmaya dayalı sıralama algoritmalarının zaman ve bellek karmaşıklığı tablosu.
   - Sıralama algoritmalarını karşılaştırma ölçütleri: kararlılık (stable), yerinde (in-place) sıralama, çevrim içi (online) ve çevrim dışı (offline) sıralama.
   - Hangi durumda hangi algoritmanın seçileceği.
