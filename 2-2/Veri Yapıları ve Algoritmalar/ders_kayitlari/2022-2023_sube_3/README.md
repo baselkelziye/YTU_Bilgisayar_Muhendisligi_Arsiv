@@ -9,26 +9,30 @@
 * **Akademik Yıl:** 2022-2023
 * **Şube:** BLM2512 - 3
 
-Bu dizin, ilgili ders kayıtlarının altyazı özetlerini, çalışma notlarını ve PDF kaynaklarını içermektedir.
+Bu dizin, ilgili ders kayıtlarının altyazılarını, kısa notlarını ve genişletilmiş notlarını içermektedir.
+
+* **Kısa not:** Tekrar için. Dersin konuları, hocanın vurguları ve kısa tekrar maddeleri.
+* **Genişletilmiş not:** Dersi izlemeden öğrenmek için. Dersin anlatım akışını baştan sona, örnekleri ve soru-cevaplarıyla anlatır.
+* `altyazilar/`: ders kayıtlarının altyazıları (.srt). Notların PDF'leri `kisa_notlar/` ve `genisletilmis_notlar/` klasörlerinde, markdown kaynakları bu klasörlerin içindeki `markdown/` klasöründedir.
 
 ## 📚 Ders Müfredatı ve Belge Dizini
 
-Aşağıdaki tabloda her bir dersin konusu, kaynak markdown dosyası ve doğrudan indirilebilir PDF formatındaki derlenmiş halleri listelenmiştir. Ders numaraları, kayıt arşivindeki ders kaydı sıra numaralarıdır (hafta numarası değildir).
+Aşağıdaki tabloda her bir dersin konusu ile kısa ve genişletilmiş notlarının markdown ve PDF halleri listelenmiştir. Ders numaraları, kayıt arşivindeki ders kaydı sıra numaralarıdır (hafta numarası değildir).
 
-| Ders No | Ders İçeriği / Konu Başlıkları | Kaynak Notlar (Markdown) | Çalışma Dosyası (PDF) |
+| Ders No | Ders İçeriği / Konu Başlıkları | Kısa Not | Genişletilmiş Not |
 | :---: | :--- | :---: | :---: |
-| **Ders 1** | Derse Giriş, Algoritma, Veri Yapısı ve Akış Diyagramı Kuralları | [Özet](altyazi_ozetleri/ders_1_ozet.md) | [PDF (İndir)](ders_1_ozet.pdf) |
-| **Ders 3** | Bağlantı Problemi, Öklid Algoritması ve Algoritma Analizinin Temelleri | [Özet](altyazi_ozetleri/ders_3_ozet.md) | [PDF (İndir)](ders_3_ozet.pdf) |
-| **Ders 5** | Özyinelemeli Algoritmalar ve Yineleme Denklemleriyle Analiz | [Özet](altyazi_ozetleri/ders_5_ozet.md) | [PDF (İndir)](ders_5_ozet.pdf) |
-| **Ders 7** | Bağlantılı Listeler: Ekleme, Silme, Çift Yönlü ve Dairesel Listeler | [Özet](altyazi_ozetleri/ders_7_ozet.md) | [PDF (İndir)](ders_7_ozet.pdf) |
-| **Ders 9** | Yığın ve Kuyruk Veri Yapıları, Infix-Postfix Dönüşümü | [Özet](altyazi_ozetleri/ders_9_ozet.md) | [PDF (İndir)](ders_9_ozet.pdf) |
-| **Ders 11** | Ağaçlar, İkili Ağaç Gezintileri ve İkili Arama Ağacı | [Özet](altyazi_ozetleri/ders_11_ozet.md) | [PDF (İndir)](ders_11_ozet.pdf) |
-| **Ders 13** | Heap Veri Yapısı, Heap Oluşturma ve Heap Sort | [Özet](altyazi_ozetleri/ders_13_ozet.md) | [PDF (İndir)](ders_13_ozet.pdf) |
-| **Ders 15** | Öncelikli Kuyruklar, Heap Soruları ve Huffman Kodlama | [Özet](altyazi_ozetleri/ders_15_ozet.md) | [PDF (İndir)](ders_15_ozet.pdf) |
-| **Ders 21** | Vize Sorularının Çözümü, Graf Temelleri ve Asgari Tarama Ağacı | [Özet](altyazi_ozetleri/ders_21_ozet.md) | [PDF (İndir)](ders_21_ozet.pdf) |
-| **Ders 23** | Minimum Kapsayan Ağaç: Kruskal ve Prim, Dijkstra ile En Kısa Yol | [Özet](altyazi_ozetleri/ders_23_ozet.md) | [PDF (İndir)](ders_23_ozet.pdf) |
-| **Ders 25** | Alt Dizgi Arama: Kaba Kuvvet, Horspool, Boyer-Moore ve Rabin-Karp | [Özet](altyazi_ozetleri/ders_25_ozet.md) | [PDF (İndir)](ders_25_ozet.pdf) |
-| **Ders 26** | Karşılaştırmasız Sıralama: Counting Sort, Radix Sort ve Sıralama Algoritmalarının Karşılaştırılması | [Özet](altyazi_ozetleri/ders_26_ozet.md) | [PDF (İndir)](ders_26_ozet.pdf) |
+| **Ders 1** | Derse Giriş, Algoritma, Veri Yapısı ve Akış Diyagramı Kuralları | [Markdown](kisa_notlar/markdown/ders_1_ozet.md) · [PDF](kisa_notlar/ders_1_ozet.pdf) | [Markdown](genisletilmis_notlar/markdown/ders_1_genisletilmis.md) · [PDF](genisletilmis_notlar/ders_1_genisletilmis.pdf) |
+| **Ders 3** | Bağlantı Problemi, Öklid Algoritması ve Algoritma Analizinin Temelleri | [Markdown](kisa_notlar/markdown/ders_3_ozet.md) · [PDF](kisa_notlar/ders_3_ozet.pdf) | [Markdown](genisletilmis_notlar/markdown/ders_3_genisletilmis.md) · [PDF](genisletilmis_notlar/ders_3_genisletilmis.pdf) |
+| **Ders 5** | Özyinelemeli Algoritmalar ve Yineleme Denklemleriyle Analiz | [Markdown](kisa_notlar/markdown/ders_5_ozet.md) · [PDF](kisa_notlar/ders_5_ozet.pdf) | [Markdown](genisletilmis_notlar/markdown/ders_5_genisletilmis.md) · [PDF](genisletilmis_notlar/ders_5_genisletilmis.pdf) |
+| **Ders 7** | Bağlantılı Listeler: Ekleme, Silme, Çift Yönlü ve Dairesel Listeler | [Markdown](kisa_notlar/markdown/ders_7_ozet.md) · [PDF](kisa_notlar/ders_7_ozet.pdf) | [Markdown](genisletilmis_notlar/markdown/ders_7_genisletilmis.md) · [PDF](genisletilmis_notlar/ders_7_genisletilmis.pdf) |
+| **Ders 9** | Yığın ve Kuyruk Veri Yapıları, Infix-Postfix Dönüşümü | [Markdown](kisa_notlar/markdown/ders_9_ozet.md) · [PDF](kisa_notlar/ders_9_ozet.pdf) | [Markdown](genisletilmis_notlar/markdown/ders_9_genisletilmis.md) · [PDF](genisletilmis_notlar/ders_9_genisletilmis.pdf) |
+| **Ders 11** | Ağaçlar, İkili Ağaç Gezintileri ve İkili Arama Ağacı | [Markdown](kisa_notlar/markdown/ders_11_ozet.md) · [PDF](kisa_notlar/ders_11_ozet.pdf) | [Markdown](genisletilmis_notlar/markdown/ders_11_genisletilmis.md) · [PDF](genisletilmis_notlar/ders_11_genisletilmis.pdf) |
+| **Ders 13** | Heap Veri Yapısı, Heap Oluşturma ve Heap Sort | [Markdown](kisa_notlar/markdown/ders_13_ozet.md) · [PDF](kisa_notlar/ders_13_ozet.pdf) | [Markdown](genisletilmis_notlar/markdown/ders_13_genisletilmis.md) · [PDF](genisletilmis_notlar/ders_13_genisletilmis.pdf) |
+| **Ders 15** | Öncelikli Kuyruklar, Heap Soruları ve Huffman Kodlama | [Markdown](kisa_notlar/markdown/ders_15_ozet.md) · [PDF](kisa_notlar/ders_15_ozet.pdf) | [Markdown](genisletilmis_notlar/markdown/ders_15_genisletilmis.md) · [PDF](genisletilmis_notlar/ders_15_genisletilmis.pdf) |
+| **Ders 21** | Vize Sorularının Çözümü, Graf Temelleri ve Asgari Tarama Ağacı | [Markdown](kisa_notlar/markdown/ders_21_ozet.md) · [PDF](kisa_notlar/ders_21_ozet.pdf) | [Markdown](genisletilmis_notlar/markdown/ders_21_genisletilmis.md) · [PDF](genisletilmis_notlar/ders_21_genisletilmis.pdf) |
+| **Ders 23** | Minimum Kapsayan Ağaç: Kruskal ve Prim, Dijkstra ile En Kısa Yol | [Markdown](kisa_notlar/markdown/ders_23_ozet.md) · [PDF](kisa_notlar/ders_23_ozet.pdf) | [Markdown](genisletilmis_notlar/markdown/ders_23_genisletilmis.md) · [PDF](genisletilmis_notlar/ders_23_genisletilmis.pdf) |
+| **Ders 25** | Alt Dizgi Arama: Kaba Kuvvet, Horspool, Boyer-Moore ve Rabin-Karp | [Markdown](kisa_notlar/markdown/ders_25_ozet.md) · [PDF](kisa_notlar/ders_25_ozet.pdf) | [Markdown](genisletilmis_notlar/markdown/ders_25_genisletilmis.md) · [PDF](genisletilmis_notlar/ders_25_genisletilmis.pdf) |
+| **Ders 26** | Karşılaştırmasız Sıralama: Counting Sort, Radix Sort ve Sıralama Algoritmalarının Karşılaştırılması | [Markdown](kisa_notlar/markdown/ders_26_ozet.md) · [PDF](kisa_notlar/ders_26_ozet.pdf) | [Markdown](genisletilmis_notlar/markdown/ders_26_genisletilmis.md) · [PDF](genisletilmis_notlar/ders_26_genisletilmis.pdf) |
 
 > [!NOTE]
 > Arşivdeki ara numaralı kayıtlar bulunmamaktadır. 24 Nisan 2023 haftası vize haftası, 1 Mayıs 2023 resmî tatildir.
