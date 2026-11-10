@@ -3791,6 +3791,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
   - 📖 [Bilgiye Erişim ve Arama Motorları](#-bilgiye-erişim-ve-arama-motorları)
   - 📖 [Yazılım Mühendisliği](#-yazılım-mühendisliği)
   - 📖 [Web Madenciliği](#-web-madenciliği)
+  - 📖 [Bilgiye Erişim ve Arama Motorları](#-bilgiye-erişim-ve-arama-motorları)
 - ⭐ **Yıldız Sayıları:**
   - 🎭 Dersi Zevkli Anlatır Mı:	★★★★★★☆☆☆☆
   - 🛣️ Dersi Kolay Geçer Miyim:	★★★★★★★☆☆☆
