@@ -9,26 +9,30 @@
 * **Akademik Yıl:** 2021-2022
 * **Şube:** BLM3051 - 3
 
-Bu dizin, ilgili ders kayıtlarının altyazı özetlerini, çalışma notlarını ve PDF kaynaklarını içermektedir.
+Bu dizin, ilgili ders kayıtlarının altyazılarını, kısa notlarını ve genişletilmiş notlarını içermektedir.
+
+* **Kısa not:** Tekrar için. Dersin konuları, hocanın vurguları ve kısa tekrar maddeleri.
+* **Genişletilmiş not:** Dersi izlemeden öğrenmek için. Dersin anlatım akışını baştan sona, örnekleri ve soru-cevaplarıyla anlatır.
+* `altyazilar/`: ders kayıtlarının altyazıları (.srt). Notların PDF'leri `kisa_notlar/` ve `genisletilmis_notlar/` klasörlerinde, markdown kaynakları bu klasörlerin içindeki `markdown/` klasöründedir.
 
 ## 📚 Ders Müfredatı ve Belge Dizini
 
-Aşağıdaki tabloda her bir dersin konusu, kaynak markdown dosyası ve doğrudan indirilebilir PDF formatındaki derlenmiş halleri listelenmiştir. Ders numaraları, kayıt arşivindeki ders kaydı sıra numaralarıdır (hafta numarası değildir).
+Aşağıdaki tabloda her bir dersin konusu ile kısa ve genişletilmiş notlarının markdown ve PDF halleri listelenmiştir. Ders numaraları, kayıt arşivindeki ders kaydı sıra numaralarıdır (hafta numarası değildir).
 
-| Ders No | Ders İçeriği / Konu Başlıkları | Kaynak Notlar (Markdown) | Çalışma Dosyası (PDF) |
+| Ders No | Ders İçeriği / Konu Başlıkları | Kısa Not | Genişletilmiş Not |
 | :---: | :--- | :---: | :---: |
-| **Ders 1** | Veri İletişimine Giriş, Ağların Sınıflandırılması ve Topolojiler | [Özet](altyazi_ozetleri/ders_1_ozet.md) | [PDF (İndir)](ders_1_ozet.pdf) |
-| **Ders 4** | OSI Referans Modeli, İşaretler, Kanal Kapasitesi ve Polar Kodlama | [Özet](altyazi_ozetleri/ders_4_ozet.md) | [PDF (İndir)](ders_4_ozet.pdf) |
-| **Ders 7** | Bipolar Kodlama, PCM, Sayısal-Örneksel Modülasyon ve QAM | [Özet](altyazi_ozetleri/ders_7_ozet.md) | [PDF (İndir)](ders_7_ozet.pdf) |
-| **Ders 10** | Seri ve Paralel İletim, Eş Zamanlılık ve Yönlendirilmiş İletim Ortamları | [Özet](altyazi_ozetleri/ders_10_ozet.md) | [PDF (İndir)](ders_10_ozet.pdf) |
-| **Ders 11** | Kablosuz İletim Ortamı, Çoğullama ve Hata Algılama ile Düzeltme | [Özet](altyazi_ozetleri/ders_11_ozet.md) | [PDF (İndir)](ders_11_ozet.pdf) |
-| **Ders 12** | Bağlantı Yönetimi, Akış Denetimi ve ARQ Yöntemleri | [Özet](altyazi_ozetleri/ders_12_ozet.md) | [PDF (İndir)](ders_12_ozet.pdf) |
-| **Ders 14** | Senkron ve Asenkron Veri Bağlantı Protokolleri ve HDLC | [Özet](altyazi_ozetleri/ders_14_ozet.md) | [PDF (İndir)](ders_14_ozet.pdf) |
-| **Ders 15** | IEEE 802 LAN Teknolojileri: Ethernet, Token Bus, Token Ring ve FDDI | [Özet](altyazi_ozetleri/ders_15_ozet.md) | [PDF (İndir)](ders_15_ozet.pdf) |
-| **Ders 16** | IEEE 802.11 Kablosuz Yerel Ağlar, Bluetooth ve LAN Teknolojilerinin Karşılaştırması | [Özet](altyazi_ozetleri/ders_16_ozet.md) | [PDF (İndir)](ders_16_ozet.pdf) |
-| **Ders 17** | Devre Anahtarlama, Paket Anahtarlama ve Sanal Devreler | [Özet](altyazi_ozetleri/ders_17_ozet.md) | [PDF (İndir)](ders_17_ozet.pdf) |
-| **Ders 18** | Ağ Cihazları, VLAN, TCP/IP, Alt Ağ Hesabı ve Ağ Güvenliği | [Özet](altyazi_ozetleri/ders_18_ozet.md) | [PDF (İndir)](ders_18_ozet.pdf) |
-| **Ders 19** | Öğrenci Proje Sunumları: GSM, ADSL, ISDN, Frame Relay, ATM, CATV, X.25 ve WiMAX | [Özet](altyazi_ozetleri/ders_19_ozet.md) | [PDF (İndir)](ders_19_ozet.pdf) |
+| **Ders 1** | Veri İletişimine Giriş, Ağların Sınıflandırılması ve Topolojiler | [Markdown](kisa_notlar/markdown/ders_1_ozet.md) · [PDF](kisa_notlar/ders_1_ozet.pdf) | [Markdown](genisletilmis_notlar/markdown/ders_1_genisletilmis.md) · [PDF](genisletilmis_notlar/ders_1_genisletilmis.pdf) |
+| **Ders 4** | OSI Referans Modeli, İşaretler, Kanal Kapasitesi ve Polar Kodlama | [Markdown](kisa_notlar/markdown/ders_4_ozet.md) · [PDF](kisa_notlar/ders_4_ozet.pdf) | [Markdown](genisletilmis_notlar/markdown/ders_4_genisletilmis.md) · [PDF](genisletilmis_notlar/ders_4_genisletilmis.pdf) |
+| **Ders 7** | Bipolar Kodlama, PCM, Sayısal-Örneksel Modülasyon ve QAM | [Markdown](kisa_notlar/markdown/ders_7_ozet.md) · [PDF](kisa_notlar/ders_7_ozet.pdf) | [Markdown](genisletilmis_notlar/markdown/ders_7_genisletilmis.md) · [PDF](genisletilmis_notlar/ders_7_genisletilmis.pdf) |
+| **Ders 10** | Seri ve Paralel İletim, Eş Zamanlılık ve Yönlendirilmiş İletim Ortamları | [Markdown](kisa_notlar/markdown/ders_10_ozet.md) · [PDF](kisa_notlar/ders_10_ozet.pdf) | [Markdown](genisletilmis_notlar/markdown/ders_10_genisletilmis.md) · [PDF](genisletilmis_notlar/ders_10_genisletilmis.pdf) |
+| **Ders 11** | Kablosuz İletim Ortamı, Çoğullama ve Hata Algılama ile Düzeltme | [Markdown](kisa_notlar/markdown/ders_11_ozet.md) · [PDF](kisa_notlar/ders_11_ozet.pdf) | [Markdown](genisletilmis_notlar/markdown/ders_11_genisletilmis.md) · [PDF](genisletilmis_notlar/ders_11_genisletilmis.pdf) |
+| **Ders 12** | Bağlantı Yönetimi, Akış Denetimi ve ARQ Yöntemleri | [Markdown](kisa_notlar/markdown/ders_12_ozet.md) · [PDF](kisa_notlar/ders_12_ozet.pdf) | [Markdown](genisletilmis_notlar/markdown/ders_12_genisletilmis.md) · [PDF](genisletilmis_notlar/ders_12_genisletilmis.pdf) |
+| **Ders 14** | Senkron ve Asenkron Veri Bağlantı Protokolleri ve HDLC | [Markdown](kisa_notlar/markdown/ders_14_ozet.md) · [PDF](kisa_notlar/ders_14_ozet.pdf) | [Markdown](genisletilmis_notlar/markdown/ders_14_genisletilmis.md) · [PDF](genisletilmis_notlar/ders_14_genisletilmis.pdf) |
+| **Ders 15** | IEEE 802 LAN Teknolojileri: Ethernet, Token Bus, Token Ring ve FDDI | [Markdown](kisa_notlar/markdown/ders_15_ozet.md) · [PDF](kisa_notlar/ders_15_ozet.pdf) | [Markdown](genisletilmis_notlar/markdown/ders_15_genisletilmis.md) · [PDF](genisletilmis_notlar/ders_15_genisletilmis.pdf) |
+| **Ders 16** | IEEE 802.11 Kablosuz Yerel Ağlar, Bluetooth ve LAN Teknolojilerinin Karşılaştırması | [Markdown](kisa_notlar/markdown/ders_16_ozet.md) · [PDF](kisa_notlar/ders_16_ozet.pdf) | [Markdown](genisletilmis_notlar/markdown/ders_16_genisletilmis.md) · [PDF](genisletilmis_notlar/ders_16_genisletilmis.pdf) |
+| **Ders 17** | Devre Anahtarlama, Paket Anahtarlama ve Sanal Devreler | [Markdown](kisa_notlar/markdown/ders_17_ozet.md) · [PDF](kisa_notlar/ders_17_ozet.pdf) | [Markdown](genisletilmis_notlar/markdown/ders_17_genisletilmis.md) · [PDF](genisletilmis_notlar/ders_17_genisletilmis.pdf) |
+| **Ders 18** | Ağ Cihazları, VLAN, TCP/IP, Alt Ağ Hesabı ve Ağ Güvenliği | [Markdown](kisa_notlar/markdown/ders_18_ozet.md) · [PDF](kisa_notlar/ders_18_ozet.pdf) | [Markdown](genisletilmis_notlar/markdown/ders_18_genisletilmis.md) · [PDF](genisletilmis_notlar/ders_18_genisletilmis.pdf) |
+| **Ders 19** | Öğrenci Proje Sunumları: GSM, ADSL, ISDN, Frame Relay, ATM, CATV, X.25 ve WiMAX | [Markdown](kisa_notlar/markdown/ders_19_ozet.md) · [PDF](kisa_notlar/ders_19_ozet.pdf) | [Markdown](genisletilmis_notlar/markdown/ders_19_genisletilmis.md) · [PDF](genisletilmis_notlar/ders_19_genisletilmis.pdf) |
 
 > [!NOTE]
 > 2, 3, 5, 6, 8, 9 ve 13 numaralı kayıtlar arşivde yoktur; 22 Kasım 2021 haftası vize haftasıdır.
@@ -194,7 +198,6 @@ Aşağıdaki tabloda her bir dersin konusu, kaynak markdown dosyası ve doğruda
     - ASCII denetim karakterleri (SYN, STX, ETX, ETB, ITB, SOH, DLE, ENQ, ACK0/ACK1, NAK, EOT, NULL vb.),
   - Bit yönelimli protokoller ve HDLC (High-Level Data Link Control):
     - istasyon tipleri, yapılandırmalar ve üç çalışma modu (NRM, ARM, ABM),
-  - Vize sonuçlarına dair kısa değerlendirme.
 * **Hocanın Vurgusu:**
   - Senkron protokoller bugün de kullanılıyor.
     - Hoca, şu an derste ses ve görüntünün de büyük olasılıkla senkron ve bit yönelimli bir protokolle geldiğini söylüyor.
@@ -234,7 +237,7 @@ Aşağıdaki tabloda her bir dersin konusu, kaynak markdown dosyası ve doğruda
 
 ### 🔹 Ders 16: IEEE 802.11 Kablosuz Yerel Ağlar, Bluetooth ve LAN Teknolojilerinin Karşılaştırması
 * **Genel Konular:**
-  - Ders 13 Aralık 2021 Pazartesi akşamı online yapıldı. Slaytlarda "BLM3051 Data Communication, Week 11" yazıyor. Dersi Dr. Furkan Çakmak anlatıyor.
+  - Ders büyük olasılıkla 13 Aralık 2021 Pazartesi akşamı online yapıldı. Slaytlarda büyük olasılıkla "BLM3051 Data Communication, Week 11" yazıyor (tarih ve hafta bilgisi altyazıda geçmiyor). Dersi Dr. Furkan Çakmak anlatıyor.
   - Önceki hafta IEEE 802.3, 802.4 ve 802.5 anlatılmıştı. Bu hafta kablosuz LAN (Wireless LAN, WLAN) standardı IEEE 802.11 (Wi-Fi) işleniyor.
   - Konular:
     - Kablosuz iletişimin özellikleri: radyo frekansı (RF) ve kızılötesi (infrared), hareketlilik (mobility), dolaşım (roaming), menzil, gürültü.
@@ -246,14 +249,14 @@ Aşağıdaki tabloda her bir dersin konusu, kaynak markdown dosyası ve doğruda
     - İstasyon hattı dinler. Hat boşsa DIFS kadar bekler ve gönderir.
   - Hoca slayttaki üç istasyonlu DCF şemasını adım adım anlattı.
     - Ayrıntısı "Detaylı Açıklamalar"da.
-  - RTS/CTS akışı ve NAV mantığı sınav için önemli.
-    - Gizli düğüm ile açıkta kalan düğüm arasındaki fark özellikle soruldu.
+  - Hoca RTS/CTS akışını ve NAV mantığını ayrıntılı anlattı.
+    - Gizli düğüm kavramı bir öğrenci sorusu üzerine yeniden açıklandı.
   - 2,4 GHz bandında birbirini etkilemeyen kanallar 1, 6 ve 11'dir.
     - Komşu kanallar büyük ölçüde örtüşür.
 
 ### 🔹 Ders 17: Devre Anahtarlama, Paket Anahtarlama ve Sanal Devreler
 * **Genel Konular:**
-  - Ders 20 Aralık 2021 Pazartesi akşamı online yapıldı. Slaytlarda "Week 12" yazıyor. Dersi Dr. Furkan Çakmak anlatıyor.
+  - Ders 20 Aralık 2021 Pazartesi akşamı online yapıldı. Slaytlarda büyük olasılıkla "Week 12" yazıyor (altyazıda geçmiyor). Dersi Dr. Furkan Çakmak anlatıyor.
   - Kayıt, oturumu açan hocanın toplantı yönetimini (host) Furkan Çakmak'a devretmesiyle başlıyor. Ders yaklaşık bir saat sonra başlıyor. Sabah grubu da bu derse katılabiliyor.
   - Proje ödevi önceki hafta verildi. Bu yüzden konu sırası değişti: TCP/IP ve ağ cihazları bir hafta öne alındı.
   - Ders, veri bağı katmanından ağ katmanına geçişin girişi niteliğinde.
@@ -268,7 +271,7 @@ Aşağıdaki tabloda her bir dersin konusu, kaynak markdown dosyası ve doğruda
     - Veri trafiği patlamalıdır (bursty). Paket anahtarlama patlamalı veri için tasarlanmıştır.
   - Devre anahtarlamada hat koparsa onarılana kadar iletişim kesilir.
     - Datagramda paketler başka yoldan gidebilir.
-  - **Datagram ile sanal devre farkı sınavlarda her yıl soruluyor:**
+  - **Datagram ile sanal devre farkı:** Hoca bunun geçen yıllarda sınavlarda sorulduğunu söyledi.
     - Datagramda her pakette alıcı ve gönderici adresi bulunur.
 
 ### 🔹 Ders 18: Ağ Cihazları, VLAN, TCP/IP, Alt Ağ Hesabı ve Ağ Güvenliği
@@ -279,7 +282,7 @@ Aşağıdaki tabloda her bir dersin konusu, kaynak markdown dosyası ve doğruda
     - OSI katmanlarına göre ağ cihazları: repeater ve hub, bridge ve switch, router, gateway.
   - TCP/IP ve güvenlik konuları "genel kültür" düzeyinde anlatıldı. Ayrıntısı Ağ Teknolojileri ve Bilişim Sistemleri Güvenliği derslerinde görülecek.
 * **Hocanın Vurgusu:**
-  - Katmanlara göre cihazlar sınav için önemli:
+  - Katmanlara göre cihazlar:
     - **Repeater:** Fiziksel katmanda çalışır, zayıflayan sinyali güçlendirir.
   - Cihazlar yukarı katmanlara çıktıkça daha çok bellek ve işlem gücüne ihtiyaç duyar.
   - **Hub ile switch farkı:** Hub gelen sinyali tüm portlara yayar (broadcast).
@@ -298,12 +301,12 @@ Aşağıdaki tabloda her bir dersin konusu, kaynak markdown dosyası ve doğruda
   - Ders sonunda final sınavına dair sorular yanıtlandı.
 * **Hocanın Vurgusu:**
   - Sunum ve rapor birlikte ikinci vize yerine geçiyor ve %30 ağırlıkta.
-  - Sunumda hazır bulunmayan grup üyeleri sıfır alıyor.
-    - Kurada adı geçen ama hiç üyesi bulunmayan gruplar hem sunumdan hem rapordan sıfır aldı.
-  - **Sunum süresi:**
-    - Sunum en çok 15 dakika olmalı. İlk grup süreyi aştı.
-  - Kurada çıkmayan gruplar, önceden yükledikleri videolardan notlandırılacak.
   - **Sunumlar finale dahil:** Anlatılan 8 konudan finalde soru gelecek.
     - Eksik anlatılan kısımları hoca tamamlıyor. Bir sunum çok eksik olursa başka bir grup yeniden anlatabilir. Bu ders kaydı izlenerek çalışılabilir.
+  - **Final soruları:** Konuların özelliklerinden olacak.
+    - Hocanın örnekleri:
+  - Final, vize gibi çoktan çok seçmeli olacak.
+  - **Sunum tavsiyesi:**
+    - İş hayatında ve mülakatlarda sunum yapılacak.
 
 **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını Gemini Notebook gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
