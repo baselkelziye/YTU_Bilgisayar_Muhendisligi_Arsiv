@@ -9,41 +9,45 @@
 * **Akademik Yıl:** 2020-2021
 * **Şube:** MAT1071 - 58
 
-Bu dizin, ilgili ders kayıtlarının altyazı özetlerini, çalışma notlarını ve PDF kaynaklarını içermektedir.
+Bu dizin, ilgili ders kayıtlarının altyazılarını, kısa notlarını ve genişletilmiş notlarını içermektedir.
+
+* **Kısa not:** Tekrar için. Dersin konuları, hocanın vurguları ve kısa tekrar maddeleri.
+* **Genişletilmiş not:** Dersi izlemeden öğrenmek için. Dersin anlatım akışını baştan sona, örnekleri ve soru-cevaplarıyla anlatır.
+* `altyazilar/`: ders kayıtlarının altyazıları (.srt). Notların PDF'leri `kisa_notlar/` ve `genisletilmis_notlar/` klasörlerinde, markdown kaynakları bu klasörlerin içindeki `markdown/` klasöründedir.
 
 ## 📚 Ders Müfredatı ve Belge Dizini
 
-Aşağıdaki tabloda her bir dersin konusu, kaynak markdown dosyası ve doğrudan indirilebilir PDF formatındaki derlenmiş halleri listelenmiştir. Ders numaraları, kayıt arşivindeki ders kaydı sıra numaralarıdır (hafta numarası değildir).
+Aşağıdaki tabloda her bir dersin konusu ile kısa ve genişletilmiş notlarının markdown ve PDF halleri listelenmiştir. Ders numaraları, kayıt arşivindeki ders kaydı sıra numaralarıdır (hafta numarası değildir).
 
-| Ders No | Ders İçeriği / Konu Başlıkları | Kaynak Notlar (Markdown) | Çalışma Dosyası (PDF) |
+| Ders No | Ders İçeriği / Konu Başlıkları | Kısa Not | Genişletilmiş Not |
 | :---: | :--- | :---: | :---: |
-| **Ders 1** | Fonksiyonlar, Trigonometrik Grafikler ve Limite Giriş | [Özet](altyazi_ozetleri/ders_1_ozet.md) | [PDF (İndir)](ders_1_ozet.pdf) |
-| **Ders 2** | Sonsuz Limitler, Asimptotlar, Limitin Kesin Tanımı ve Süreklilik | [Özet](altyazi_ozetleri/ders_2_ozet.md) | [PDF (İndir)](ders_2_ozet.pdf) |
-| **Ders 3** | Temel Trigonometrik Limit, Ara Değer Teoremi ve Süreksizlik Türleri | [Özet](altyazi_ozetleri/ders_3_ozet.md) | [PDF (İndir)](ders_3_ozet.pdf) |
-| **Ders 4** | Limit ve Süreklilik Alıştırmaları: Süreksizlik Türleri ve Tanım Kümesi | [Özet](altyazi_ozetleri/ders_4_ozet.md) | [PDF (İndir)](ders_4_ozet.pdf) |
-| **Ders 5** | Türevin Tanımı, Türevlenebilme ve Süreklilik, Türev Kuralları ve Zincir Kuralı | [Özet](altyazi_ozetleri/ders_5_ozet.md) | [PDF (İndir)](ders_5_ozet.pdf) |
-| **Ders 6** | Zincir Kuralı Alıştırmaları, Yüksek Mertebeden Türevler ve Kapalı Türev | [Özet](altyazi_ozetleri/ders_6_ozet.md) | [PDF (İndir)](ders_6_ozet.pdf) |
-| **Ders 7** | Doğrusallaştırma, Terslenebilirlik, Üstel ve Logaritmik Fonksiyonlar ve Ters Fonksiyonun Türevi | [Özet](altyazi_ozetleri/ders_7_ozet.md) | [PDF (İndir)](ders_7_ozet.pdf) |
-| **Ders 8** | Genel Uygulama: Limit, Süreklilik, Teğet ve Normal Doğruları | [Özet](altyazi_ozetleri/ders_8_ozet.md) | [PDF (İndir)](ders_8_ozet.pdf) |
-| **Ders 9** | Logaritmik Türev ve Ters Trigonometrik Fonksiyonların Türevleri | [Özet](altyazi_ozetleri/ders_9_ozet.md) | [PDF (İndir)](ders_9_ozet.pdf) |
-| **Ders 10** | Hiperbolik Fonksiyonlar, L'Hôpital Kuralı ve Belirsiz Formlar | [Özet](altyazi_ozetleri/ders_10_ozet.md) | [PDF (İndir)](ders_10_ozet.pdf) |
-| **Ders 11** | Mutlak ve Yerel Uç Değerler, Kritik Noktalar, Rolle ve Ortalama Değer Teoremleri | [Özet](altyazi_ozetleri/ders_11_ozet.md) | [PDF (İndir)](ders_11_ozet.pdf) |
-| **Ders 12** | 1. Vize Öncesi Genel Alıştırmalar: Limit, Tanım Kümesi, Ters Fonksiyon ve Doğrusallaştırma | [Özet](altyazi_ozetleri/ders_12_ozet.md) | [PDF (İndir)](ders_12_ozet.pdf) |
-| **Ders 13** | Vize Öncesi Tekrar: Türevlenebilirlik, Kapalı Türev, Tanım Kümesi, Ters Fonksiyonun Türevi ve Logaritmik Türev | [Özet](altyazi_ozetleri/ders_13_ozet.md) | [PDF (İndir)](ders_13_ozet.pdf) |
-| **Ders 14** | Geçmiş Yıl Vize Sorularının Çözümü | [Özet](altyazi_ozetleri/ders_14_ozet.md) | [PDF (İndir)](ders_14_ozet.pdf) |
-| **Ders 15** | Sınav Haftası: Ders Yapılmadı | [Özet](altyazi_ozetleri/ders_15_ozet.md) | [PDF (İndir)](ders_15_ozet.pdf) |
-| **Ders 17** | Konkavlık, Büküm Noktası, Eğik Asimptot, Belirsiz İntegral ve Yerine Koyma Yöntemi | [Özet](altyazi_ozetleri/ders_17_ozet.md) | [PDF (İndir)](ders_17_ozet.pdf) |
-| **Ders 18** | Yerine Koyma Yöntemi, Sonlu Toplamlar ve Riemann Toplamıyla Belirli İntegral | [Özet](altyazi_ozetleri/ders_18_ozet.md) | [PDF (İndir)](ders_18_ozet.pdf) |
-| **Ders 19** | Belirli İntegralin Özellikleri, Kalkülüsün Temel Teoremi ve Kısmi İntegrasyon | [Özet](altyazi_ozetleri/ders_19_ozet.md) | [PDF (İndir)](ders_19_ozet.pdf) |
-| **Ders 20** | Kısmi İntegrasyon Uygulamaları, Tablo Yöntemi ve Trigonometrik İntegraller | [Özet](altyazi_ozetleri/ders_20_ozet.md) | [PDF (İndir)](ders_20_ozet.pdf) |
-| **Ders 21** | İndirgeme Formülleri ve İkinci Vizeye Hazırlık Soruları | [Özet](altyazi_ozetleri/ders_21_ozet.md) | [PDF (İndir)](ders_21_ozet.pdf) |
-| **Ders 22** | 2. Vize Hazırlık: Temel Teorem, Riemann Toplamı, Grafik Çizimi ve Mazeret Sınavı Soruları | [Özet](altyazi_ozetleri/ders_22_ozet.md) | [PDF (İndir)](ders_22_ozet.pdf) |
-| **Ders 23** | 2. Vize Hazırlık Soruları ve Rasyonel Fonksiyonların İntegraline Giriş | [Özet](altyazi_ozetleri/ders_23_ozet.md) | [PDF (İndir)](ders_23_ozet.pdf) |
-| **Ders 24** | Rasyonel Fonksiyonların İntegrali ve Trigonometrik Dönüşümler | [Özet](altyazi_ozetleri/ders_24_ozet.md) | [PDF (İndir)](ders_24_ozet.pdf) |
-| **Ders 25** | Tanjant Dönüşümü, İntegralle Alan Hesabı ve Disk Yöntemi | [Özet](altyazi_ozetleri/ders_25_ozet.md) | [PDF (İndir)](ders_25_ozet.pdf) |
-| **Ders 26** | Disk, Pul ve Kabuk Yöntemleriyle Dönel Cisimlerin Hacmi | [Özet](altyazi_ozetleri/ders_26_ozet.md) | [PDF (İndir)](ders_26_ozet.pdf) |
-| **Ders 27** | Yay Uzunluğu, Dönel Yüzey Alanı ve Has Olmayan İntegraller | [Özet](altyazi_ozetleri/ders_27_ozet.md) | [PDF (İndir)](ders_27_ozet.pdf) |
-| **Ders 28** | Final Öncesi Soru Çözümü ve tan(x/2) Dönüşümü | [Özet](altyazi_ozetleri/ders_28_ozet.md) | [PDF (İndir)](ders_28_ozet.pdf) |
+| **Ders 1** | Fonksiyonlar, Trigonometrik Grafikler ve Limite Giriş | [Markdown](kisa_notlar/markdown/ders_1_ozet.md) · [PDF](kisa_notlar/ders_1_ozet.pdf) | [Markdown](genisletilmis_notlar/markdown/ders_1_genisletilmis.md) · [PDF](genisletilmis_notlar/ders_1_genisletilmis.pdf) |
+| **Ders 2** | Sonsuz Limitler, Asimptotlar, Limitin Kesin Tanımı ve Süreklilik | [Markdown](kisa_notlar/markdown/ders_2_ozet.md) · [PDF](kisa_notlar/ders_2_ozet.pdf) | [Markdown](genisletilmis_notlar/markdown/ders_2_genisletilmis.md) · [PDF](genisletilmis_notlar/ders_2_genisletilmis.pdf) |
+| **Ders 3** | Temel Trigonometrik Limit, Ara Değer Teoremi ve Süreksizlik Türleri | [Markdown](kisa_notlar/markdown/ders_3_ozet.md) · [PDF](kisa_notlar/ders_3_ozet.pdf) | [Markdown](genisletilmis_notlar/markdown/ders_3_genisletilmis.md) · [PDF](genisletilmis_notlar/ders_3_genisletilmis.pdf) |
+| **Ders 4** | Limit ve Süreklilik Alıştırmaları: Süreksizlik Türleri ve Tanım Kümesi | [Markdown](kisa_notlar/markdown/ders_4_ozet.md) · [PDF](kisa_notlar/ders_4_ozet.pdf) | [Markdown](genisletilmis_notlar/markdown/ders_4_genisletilmis.md) · [PDF](genisletilmis_notlar/ders_4_genisletilmis.pdf) |
+| **Ders 5** | Türevin Tanımı, Türevlenebilme ve Süreklilik, Türev Kuralları ve Zincir Kuralı | [Markdown](kisa_notlar/markdown/ders_5_ozet.md) · [PDF](kisa_notlar/ders_5_ozet.pdf) | [Markdown](genisletilmis_notlar/markdown/ders_5_genisletilmis.md) · [PDF](genisletilmis_notlar/ders_5_genisletilmis.pdf) |
+| **Ders 6** | Zincir Kuralı Alıştırmaları, Yüksek Mertebeden Türevler ve Kapalı Türev | [Markdown](kisa_notlar/markdown/ders_6_ozet.md) · [PDF](kisa_notlar/ders_6_ozet.pdf) | [Markdown](genisletilmis_notlar/markdown/ders_6_genisletilmis.md) · [PDF](genisletilmis_notlar/ders_6_genisletilmis.pdf) |
+| **Ders 7** | Doğrusallaştırma, Terslenebilirlik, Üstel ve Logaritmik Fonksiyonlar ve Ters Fonksiyonun Türevi | [Markdown](kisa_notlar/markdown/ders_7_ozet.md) · [PDF](kisa_notlar/ders_7_ozet.pdf) | [Markdown](genisletilmis_notlar/markdown/ders_7_genisletilmis.md) · [PDF](genisletilmis_notlar/ders_7_genisletilmis.pdf) |
+| **Ders 8** | Genel Uygulama: Limit, Süreklilik, Teğet ve Normal Doğruları | [Markdown](kisa_notlar/markdown/ders_8_ozet.md) · [PDF](kisa_notlar/ders_8_ozet.pdf) | [Markdown](genisletilmis_notlar/markdown/ders_8_genisletilmis.md) · [PDF](genisletilmis_notlar/ders_8_genisletilmis.pdf) |
+| **Ders 9** | Logaritmik Türev ve Ters Trigonometrik Fonksiyonların Türevleri | [Markdown](kisa_notlar/markdown/ders_9_ozet.md) · [PDF](kisa_notlar/ders_9_ozet.pdf) | [Markdown](genisletilmis_notlar/markdown/ders_9_genisletilmis.md) · [PDF](genisletilmis_notlar/ders_9_genisletilmis.pdf) |
+| **Ders 10** | Hiperbolik Fonksiyonlar, L'Hôpital Kuralı ve Belirsiz Formlar | [Markdown](kisa_notlar/markdown/ders_10_ozet.md) · [PDF](kisa_notlar/ders_10_ozet.pdf) | [Markdown](genisletilmis_notlar/markdown/ders_10_genisletilmis.md) · [PDF](genisletilmis_notlar/ders_10_genisletilmis.pdf) |
+| **Ders 11** | Mutlak ve Yerel Uç Değerler, Kritik Noktalar, Rolle ve Ortalama Değer Teoremleri | [Markdown](kisa_notlar/markdown/ders_11_ozet.md) · [PDF](kisa_notlar/ders_11_ozet.pdf) | [Markdown](genisletilmis_notlar/markdown/ders_11_genisletilmis.md) · [PDF](genisletilmis_notlar/ders_11_genisletilmis.pdf) |
+| **Ders 12** | 1. Vize Öncesi Genel Alıştırmalar: Limit, Tanım Kümesi, Ters Fonksiyon ve Doğrusallaştırma | [Markdown](kisa_notlar/markdown/ders_12_ozet.md) · [PDF](kisa_notlar/ders_12_ozet.pdf) | [Markdown](genisletilmis_notlar/markdown/ders_12_genisletilmis.md) · [PDF](genisletilmis_notlar/ders_12_genisletilmis.pdf) |
+| **Ders 13** | Vize Öncesi Tekrar: Türevlenebilirlik, Kapalı Türev, Tanım Kümesi, Ters Fonksiyonun Türevi ve Logaritmik Türev | [Markdown](kisa_notlar/markdown/ders_13_ozet.md) · [PDF](kisa_notlar/ders_13_ozet.pdf) | [Markdown](genisletilmis_notlar/markdown/ders_13_genisletilmis.md) · [PDF](genisletilmis_notlar/ders_13_genisletilmis.pdf) |
+| **Ders 14** | Geçmiş Yıl Vize Sorularının Çözümü | [Markdown](kisa_notlar/markdown/ders_14_ozet.md) · [PDF](kisa_notlar/ders_14_ozet.pdf) | [Markdown](genisletilmis_notlar/markdown/ders_14_genisletilmis.md) · [PDF](genisletilmis_notlar/ders_14_genisletilmis.pdf) |
+| **Ders 15** | Sınav Haftası: Ders Yapılmadı | [Markdown](kisa_notlar/markdown/ders_15_ozet.md) · [PDF](kisa_notlar/ders_15_ozet.pdf) | — |
+| **Ders 17** | Konkavlık, Büküm Noktası, Eğik Asimptot, Belirsiz İntegral ve Yerine Koyma Yöntemi | [Markdown](kisa_notlar/markdown/ders_17_ozet.md) · [PDF](kisa_notlar/ders_17_ozet.pdf) | [Markdown](genisletilmis_notlar/markdown/ders_17_genisletilmis.md) · [PDF](genisletilmis_notlar/ders_17_genisletilmis.pdf) |
+| **Ders 18** | Yerine Koyma Yöntemi, Sonlu Toplamlar ve Riemann Toplamıyla Belirli İntegral | [Markdown](kisa_notlar/markdown/ders_18_ozet.md) · [PDF](kisa_notlar/ders_18_ozet.pdf) | [Markdown](genisletilmis_notlar/markdown/ders_18_genisletilmis.md) · [PDF](genisletilmis_notlar/ders_18_genisletilmis.pdf) |
+| **Ders 19** | Belirli İntegralin Özellikleri, Kalkülüsün Temel Teoremi ve Kısmi İntegrasyon | [Markdown](kisa_notlar/markdown/ders_19_ozet.md) · [PDF](kisa_notlar/ders_19_ozet.pdf) | [Markdown](genisletilmis_notlar/markdown/ders_19_genisletilmis.md) · [PDF](genisletilmis_notlar/ders_19_genisletilmis.pdf) |
+| **Ders 20** | Kısmi İntegrasyon Uygulamaları, Tablo Yöntemi ve Trigonometrik İntegraller | [Markdown](kisa_notlar/markdown/ders_20_ozet.md) · [PDF](kisa_notlar/ders_20_ozet.pdf) | [Markdown](genisletilmis_notlar/markdown/ders_20_genisletilmis.md) · [PDF](genisletilmis_notlar/ders_20_genisletilmis.pdf) |
+| **Ders 21** | İndirgeme Formülleri ve İkinci Vizeye Hazırlık Soruları | [Markdown](kisa_notlar/markdown/ders_21_ozet.md) · [PDF](kisa_notlar/ders_21_ozet.pdf) | [Markdown](genisletilmis_notlar/markdown/ders_21_genisletilmis.md) · [PDF](genisletilmis_notlar/ders_21_genisletilmis.pdf) |
+| **Ders 22** | 2. Vize Hazırlık: Temel Teorem, Riemann Toplamı, Grafik Çizimi ve Mazeret Sınavı Soruları | [Markdown](kisa_notlar/markdown/ders_22_ozet.md) · [PDF](kisa_notlar/ders_22_ozet.pdf) | [Markdown](genisletilmis_notlar/markdown/ders_22_genisletilmis.md) · [PDF](genisletilmis_notlar/ders_22_genisletilmis.pdf) |
+| **Ders 23** | 2. Vize Hazırlık Soruları ve Rasyonel Fonksiyonların İntegraline Giriş | [Markdown](kisa_notlar/markdown/ders_23_ozet.md) · [PDF](kisa_notlar/ders_23_ozet.pdf) | [Markdown](genisletilmis_notlar/markdown/ders_23_genisletilmis.md) · [PDF](genisletilmis_notlar/ders_23_genisletilmis.pdf) |
+| **Ders 24** | Rasyonel Fonksiyonların İntegrali ve Trigonometrik Dönüşümler | [Markdown](kisa_notlar/markdown/ders_24_ozet.md) · [PDF](kisa_notlar/ders_24_ozet.pdf) | [Markdown](genisletilmis_notlar/markdown/ders_24_genisletilmis.md) · [PDF](genisletilmis_notlar/ders_24_genisletilmis.pdf) |
+| **Ders 25** | Tanjant Dönüşümü, İntegralle Alan Hesabı ve Disk Yöntemi | [Markdown](kisa_notlar/markdown/ders_25_ozet.md) · [PDF](kisa_notlar/ders_25_ozet.pdf) | [Markdown](genisletilmis_notlar/markdown/ders_25_genisletilmis.md) · [PDF](genisletilmis_notlar/ders_25_genisletilmis.pdf) |
+| **Ders 26** | Disk, Pul ve Kabuk Yöntemleriyle Dönel Cisimlerin Hacmi | [Markdown](kisa_notlar/markdown/ders_26_ozet.md) · [PDF](kisa_notlar/ders_26_ozet.pdf) | [Markdown](genisletilmis_notlar/markdown/ders_26_genisletilmis.md) · [PDF](genisletilmis_notlar/ders_26_genisletilmis.pdf) |
+| **Ders 27** | Yay Uzunluğu, Dönel Yüzey Alanı ve Has Olmayan İntegraller | [Markdown](kisa_notlar/markdown/ders_27_ozet.md) · [PDF](kisa_notlar/ders_27_ozet.pdf) | [Markdown](genisletilmis_notlar/markdown/ders_27_genisletilmis.md) · [PDF](genisletilmis_notlar/ders_27_genisletilmis.pdf) |
+| **Ders 28** | Final Öncesi Soru Çözümü ve tan(x/2) Dönüşümü | [Markdown](kisa_notlar/markdown/ders_28_ozet.md) · [PDF](kisa_notlar/ders_28_ozet.pdf) | [Markdown](genisletilmis_notlar/markdown/ders_28_genisletilmis.md) · [PDF](genisletilmis_notlar/ders_28_genisletilmis.pdf) |
 
 > [!NOTE]
 > 16 numaralı kayıt (25 Kasım 2020) arşivde yoktur; bu hafta 1. vize haftasıdır.
@@ -304,7 +308,7 @@ Aşağıdaki tabloda her bir dersin konusu, kaynak markdown dosyası ve doğruda
 
 ### 🔹 Ders 14: Geçmiş Yıl Vize Sorularının Çözümü
 * **Genel Konular:**
-  - 1. vize öncesi son ders. Geçen yılın (2020 yaz okulu) MAT1071 vize sınavı, A grubu soruları çözülüyor. Sorular Türkçe, hoca İngilizce açıklıyor.
+  - 1. vize öncesi son ders. Geçen yılın (büyük olasılıkla 2020 yaz okulu) MAT1071 vize sınavı, A grubu soruları çözülüyor. Sorular Türkçe, hoca İngilizce açıklıyor.
   - Türev grafiğinden artanlık ve azalanlık (increasing / decreasing).
   - Hiperbolik fonksiyonlar (hyperbolic functions).
   - Tablo verisiyle ters fonksiyonun türevi, teğet doğru ve doğrusal yaklaşım (linear approximation).
@@ -473,7 +477,7 @@ Aşağıdaki tabloda her bir dersin konusu, kaynak markdown dosyası ve doğruda
 
 ### 🔹 Ders 24: Rasyonel Fonksiyonların İntegrali ve Trigonometrik Dönüşümler
 * **Genel Konular:**
-  - Dersin başında mazeret sınavından $\ln|x^2-1|$ sorusunun kısa tekrarı (bu grupla dün çözüldüğü fark edildi).
+  - Dersin başında hocanın "ön taslak sınav dosyaları" dediği sorulardan $\ln|x^2-1|$ sorusunun kısa tekrarı (bu grupla dün çözüldüğü fark edildi).
   - Parçalı tanımlı fonksiyonun belirli integrali.
   - Payın derecesi paydanınkinden büyük ya da eşit olan rasyonel fonksiyonlar: polinom bölmesi.
   - Üstel ifadeleri $u = e^t$ ile rasyonel fonksiyona çevirme.
