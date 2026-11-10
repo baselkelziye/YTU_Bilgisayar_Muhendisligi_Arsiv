@@ -9,24 +9,28 @@
 * **Akademik Yıl:** 2022-2023
 * **Şube:** BLM4120 - 1
 
-Bu dizin, ilgili ders kayıtlarının altyazı özetlerini, çalışma notlarını ve PDF kaynaklarını içermektedir.
+Bu dizin, ilgili ders kayıtlarının altyazılarını, kısa notlarını ve genişletilmiş notlarını içermektedir.
+
+* **Kısa not:** Tekrar için. Dersin konuları, hocanın vurguları ve kısa tekrar maddeleri.
+* **Genişletilmiş not:** Dersi izlemeden öğrenmek için. Dersin anlatım akışını baştan sona, örnekleri ve soru-cevaplarıyla anlatır.
+* `altyazilar/`: ders kayıtlarının altyazıları (.srt). Notların PDF'leri `kisa_notlar/` ve `genisletilmis_notlar/` klasörlerinde, markdown kaynakları bu klasörlerin içindeki `markdown/` klasöründedir.
 
 ## 📚 Ders Müfredatı ve Belge Dizini
 
-Aşağıdaki tabloda her bir dersin konusu, kaynak markdown dosyası ve doğrudan indirilebilir PDF formatındaki derlenmiş halleri listelenmiştir. Ders numaraları, kayıt arşivindeki ders kaydı sıra numaralarıdır (hafta numarası değildir).
+Aşağıdaki tabloda her bir dersin konusu ile kısa ve genişletilmiş notlarının markdown ve PDF halleri listelenmiştir. Ders numaraları, kayıt arşivindeki ders kaydı sıra numaralarıdır (hafta numarası değildir).
 
-| Ders No | Ders İçeriği / Konu Başlıkları | Kaynak Notlar (Markdown) | Çalışma Dosyası (PDF) |
+| Ders No | Ders İçeriği / Konu Başlıkları | Kısa Not | Genişletilmiş Not |
 | :---: | :--- | :---: | :---: |
-| **Ders 1** | Derse Giriş, Büyük Veri Kavramları ve Dersin İşleyişi | [Özet](altyazi_ozetleri/ders_1_ozet.md) | [PDF (İndir)](ders_1_ozet.pdf) |
-| **Ders 2** | Dağıtık Dosya Sistemleri ve MapReduce Programlama Modeli | [Özet](altyazi_ozetleri/ders_2_ozet.md) | [PDF (İndir)](ders_2_ozet.pdf) |
-| **Ders 3** | MapReduce İyileştirmeleri, Shingling ve MinHashing | [Özet](altyazi_ozetleri/ders_3_ozet.md) | [PDF (İndir)](ders_3_ozet.pdf) |
-| **Ders 4** | Benzer Dokümanlar: MinHashing ve Locality Sensitive Hashing | [Özet](altyazi_ozetleri/ders_4_ozet.md) | [PDF (İndir)](ders_4_ozet.pdf) |
-| **Ders 5** | Büyük Veride Kümeleme: Hiyerarşik, K-Means, BFR ve CURE | [Özet](altyazi_ozetleri/ders_5_ozet.md) | [PDF (İndir)](ders_5_ozet.pdf) |
-| **Ders 7** | Veri Akışları: Bloom Filtresi, DGIM ve Dönem Projesi | [Özet](altyazi_ozetleri/ders_7_ozet.md) | [PDF (İndir)](ders_7_ozet.pdf) |
-| **Ders 8** | Bağlantı Analizi ve PageRank: Stokastik Matris, Kuvvet Yinelemesi ve Işınlanma | [Özet](altyazi_ozetleri/ders_8_ozet.md) | [PDF (İndir)](ders_8_ozet.pdf) |
-| **Ders 10** | Öneri Sistemleri: İçerik Tabanlı Öneri ve İşbirlikçi Filtreleme | [Özet](altyazi_ozetleri/ders_10_ozet.md) | [PDF (İndir)](ders_10_ozet.pdf) |
-| **Ders 12** | Sık Öğe Kümeleri ve Birliktelik Kuralları: Apriori, PCY, Multistage ve Multihash | [Özet](altyazi_ozetleri/ders_12_ozet.md) | [PDF (İndir)](ders_12_ozet.pdf) |
-| **Ders 14** | Dönem Projesi Değerlendirmeleri | [Özet](altyazi_ozetleri/ders_14_ozet.md) | [PDF (İndir)](ders_14_ozet.pdf) |
+| **Ders 1** | Derse Giriş, Büyük Veri Kavramları ve Dersin İşleyişi | [Markdown](kisa_notlar/markdown/ders_1_ozet.md) · [PDF](kisa_notlar/ders_1_ozet.pdf) | [Markdown](genisletilmis_notlar/markdown/ders_1_genisletilmis.md) · [PDF](genisletilmis_notlar/ders_1_genisletilmis.pdf) |
+| **Ders 2** | Dağıtık Dosya Sistemleri ve MapReduce Programlama Modeli | [Markdown](kisa_notlar/markdown/ders_2_ozet.md) · [PDF](kisa_notlar/ders_2_ozet.pdf) | [Markdown](genisletilmis_notlar/markdown/ders_2_genisletilmis.md) · [PDF](genisletilmis_notlar/ders_2_genisletilmis.pdf) |
+| **Ders 3** | MapReduce İyileştirmeleri, Shingling ve MinHashing | [Markdown](kisa_notlar/markdown/ders_3_ozet.md) · [PDF](kisa_notlar/ders_3_ozet.pdf) | [Markdown](genisletilmis_notlar/markdown/ders_3_genisletilmis.md) · [PDF](genisletilmis_notlar/ders_3_genisletilmis.pdf) |
+| **Ders 4** | Benzer Dokümanlar: MinHashing ve Locality Sensitive Hashing | [Markdown](kisa_notlar/markdown/ders_4_ozet.md) · [PDF](kisa_notlar/ders_4_ozet.pdf) | [Markdown](genisletilmis_notlar/markdown/ders_4_genisletilmis.md) · [PDF](genisletilmis_notlar/ders_4_genisletilmis.pdf) |
+| **Ders 5** | Büyük Veride Kümeleme: Hiyerarşik, K-Means, BFR ve CURE | [Markdown](kisa_notlar/markdown/ders_5_ozet.md) · [PDF](kisa_notlar/ders_5_ozet.pdf) | [Markdown](genisletilmis_notlar/markdown/ders_5_genisletilmis.md) · [PDF](genisletilmis_notlar/ders_5_genisletilmis.pdf) |
+| **Ders 7** | Veri Akışları: Bloom Filtresi, DGIM ve Dönem Projesi | [Markdown](kisa_notlar/markdown/ders_7_ozet.md) · [PDF](kisa_notlar/ders_7_ozet.pdf) | [Markdown](genisletilmis_notlar/markdown/ders_7_genisletilmis.md) · [PDF](genisletilmis_notlar/ders_7_genisletilmis.pdf) |
+| **Ders 8** | Bağlantı Analizi ve PageRank: Stokastik Matris, Kuvvet Yinelemesi ve Işınlanma | [Markdown](kisa_notlar/markdown/ders_8_ozet.md) · [PDF](kisa_notlar/ders_8_ozet.pdf) | [Markdown](genisletilmis_notlar/markdown/ders_8_genisletilmis.md) · [PDF](genisletilmis_notlar/ders_8_genisletilmis.pdf) |
+| **Ders 10** | Öneri Sistemleri: İçerik Tabanlı Öneri ve İşbirlikçi Filtreleme | [Markdown](kisa_notlar/markdown/ders_10_ozet.md) · [PDF](kisa_notlar/ders_10_ozet.pdf) | [Markdown](genisletilmis_notlar/markdown/ders_10_genisletilmis.md) · [PDF](genisletilmis_notlar/ders_10_genisletilmis.pdf) |
+| **Ders 12** | Sık Öğe Kümeleri ve Birliktelik Kuralları: Apriori, PCY, Multistage ve Multihash | [Markdown](kisa_notlar/markdown/ders_12_ozet.md) · [PDF](kisa_notlar/ders_12_ozet.pdf) | [Markdown](genisletilmis_notlar/markdown/ders_12_genisletilmis.md) · [PDF](genisletilmis_notlar/ders_12_genisletilmis.pdf) |
+| **Ders 14** | Dönem Projesi Değerlendirmeleri | [Markdown](kisa_notlar/markdown/ders_14_ozet.md) · [PDF](kisa_notlar/ders_14_ozet.pdf) | — |
 
 > [!NOTE]
 > 5 Nisan 2023 (6. ders) hoca konferansta olduğu için ders yapılmamıştır. 9, 11 ve 13 numaralı ders kayıtları arşivde bulunmamaktadır.
@@ -47,12 +51,9 @@ Aşağıdaki tabloda her bir dersin konusu, kaynak markdown dosyası ve doğruda
     - 1. vize (midterm): %30, 8. hafta, 19 Nisan 2023.
   - Proje önerisi (term project proposal): 4. haftada (gecikirse 5. haftada) bir sayfalık öneri istenecek.
     - Öğrenciler, işlenecek konularla ilgili proje fikri ve kullanılacak veri setlerini araştıracak.
-  - Başarı notu 40'ın altında olan öğrenci dersten FF ile kalır.
-    - 40, CC'ye karşılık gelmez (yönetmelik notu).
-  - Derse katılım: Üniversitenin istediği oran %75.
-    - Hoca en az %60 katılım bekliyor. Kayıtlar sonradan izlenebilse de derse katılım isteniyor.
-  - Ders sayfası duyurular için takip edilmeli.
-    - Hoca, derslerden bir gün önce sayfaya bakılmasını istedi. Ders sayfası ve kitap sitesi linkleri chatte paylaşıldı.
+  - Ders, Stanford'da verilen "Mining Massive Data Sets" dersinin içeriğini temel alıyor.
+    - Kitabın tüm bölümleri yazarlar tarafından online yayımlanmış. Satın almaya gerek yok.
+  - Veri kopyalama (replication) güvenlik için değil, erişilebilirlik (availability) için yapılır.
 
 ### 🔹 Ders 2: Dağıtık Dosya Sistemleri ve MapReduce Programlama Modeli
 * **Genel Konular:**
@@ -124,7 +125,6 @@ Aşağıdaki tabloda her bir dersin konusu, kaynak markdown dosyası ve doğruda
   - Konu: 7. bölüm (chapter 7), büyük veri kümelerinde kümeleme (clustering).
   - İşlenen konular:
     - Kümelemenin tanımı ve neden zor olduğu.
-  - Gelecek hafta ders yok. Vize ve dönem projesi duyuruları yapıldı.
 * **Hocanın Vurgusu:**
   - **Kümeleme gözetimsiz öğrenmedir (unsupervised learning).** Amaç verinin altındaki yapıyı ve bölümleri (segment) bulmaktır.
   - **Kümelemeyi zorlaştıran üç şey:**
@@ -144,7 +144,6 @@ Aşağıdaki tabloda her bir dersin konusu, kaynak markdown dosyası ve doğruda
   - İşlenen konular:
     - Akış verisi (stream data) ve akış veri yönetim sistemi (DSMS).
   - Dersin sonunda dönem projesi ayrıntılı anlatıldı.
-  - Vize tarihi konuşuldu.
 * **Hocanın Vurgusu:**
   - **Akış verisinde giriş hızı sistemin kontrolünde değildir.** İlişkisel veritabanında veriyi geliştirici ekler.
     - Akışta veri dışarıdan, istediği zaman ve hızda gelir.
@@ -165,19 +164,18 @@ Aşağıdaki tabloda her bir dersin konusu, kaynak markdown dosyası ve doğruda
   - Web aramasının iki zorluğu: kime güvenilecek (spam sayfalar) ve sorguya en iyi cevap hangisi.
   - Bağlantı analizi (link analysis) ve popülerlik tabanlı sıralama. PageRank ve HITS.
 * **Hocanın Vurgusu:**
-  - **Vize:** 28 Nisan Cuma öğleden sonra.
-    - Ders sonunda kesin tarihin bölüm sitesinde ilan edildiği söylendi.
   - **Vize biçimi:** Online.
     - Büyük olasılıkla çoktan seçmeli. Doğru/yanlış, kutucuk işaretleme ve boşluk doldurma soruları da olabilir. Açık uçlu soru yok.
   - **Vize konuları:** 1, 2, 3 ve 4. bölümler, bağlantı analizi bölümü ve kümeleme bölümü (7. bölüm).
-  - **Proje teklifi son tarihi:** 2 Mayıs Salı, gün sonuna kadar.
-    - Uzatma yok.
-  - **Teklif, proje belgesinde yazan e-posta adresine gönderilecek.** Hocanın okul e-postasına gönderilmeyecek.
-    - Belge ders sitesinde.
+  - **Bağlantı = oy.** Bir sayfa ne kadar çok gelen bağlantı (inlink) alıyorsa o kadar önemlidir.
+  - **Bütün gelen bağlantılar eşit değildir.** Önemli bir sayfadan gelen tek bağlantı, önemsiz sayfalardan gelen çok bağlantıdan daha değerli olabilir.
+    - Örnek: şirket CEO'sundan alınan referans mektubu.
+  - Küçük graflarda denklemler Gauss eliminasyonuyla çözülebilir.
+    - Web ölçeğinde bu imkânsızdır, bu yüzden matris gösterimi ve kuvvet yinelemesi kullanılır.
 
 ### 🔹 Ders 10: Öneri Sistemleri: İçerik Tabanlı Öneri ve İşbirlikçi Filtreleme
 * **Genel Konular:**
-  - Vize sonuçları, not ağırlıkları ve dönem projesi takvimi.
+  - Not ağırlıkları.
   - Öneri sistemleri (recommendation systems), kitabın 9. bölümü.
   - Fiziksel mağaza ile çevrimiçi mağaza farkı ve uzun kuyruk (long tail) olgusu.
   - Öneri türleri: editoryal (elle seçilmiş), istatistik tabanlı (en çok satanlar), kişiye özel.
@@ -187,12 +185,10 @@ Aşağıdaki tabloda her bir dersin konusu, kaynak markdown dosyası ve doğruda
 * **Hocanın Vurgusu:**
   - **Vize ağırlığı %30.** Müfredatta %40 yazıyor ama bu bir hata.
   - **Dönem projesi de %30.** Bu yüzden proje çok önemli.
-  - **Proje teklifi son günü bu ders günüydü** (3 Mayıs), gün sonuna kadar.
-    - Teklif göndermeyen proje yapmayacak sayılır.
-  - **Onay beklemeden projeye başlayın.** Değişiklik gereken teklifler için hoca kendisi iletişime geçecek.
-    - Haber gelmezse teklif kabul edilmiş sayılır.
-  - **Proje teslimi ve demo dönemin son haftasında, çarşamba günü.** Her grup kodunu gösterecek, demo yapacak ve kısa bir sunumla projeyi anlatacak.
-    - Şimdilik sınıfta yapılması planlanıyor. Değişiklik olursa online da yapılabilir.
+  - **Proje değerlendirmesi:** Her grup kodunu gösterecek, demo yapacak ve kısa bir sunumla projeyi anlatacak.
+  - Derste kişiye özel öneriler (3. tür) ele alınıyor.
+  - **Soğuk başlangıç** en önemli sorundur.
+    - Geçmişi olmayan yeni kullanıcıya veya yeni öğeye öneri yapmak zordur.
 * **Detaylı Açıklamalar:** 1. **Bilinen puanları toplamak:** Az kişi geri bildirim verir. 2. **Bilinmeyen puanları tahmin etmek:** Hangi algoritma kullanılacak? 3. **Başarıyı ölçmek:** Öneri algoritmasının performansı nasıl değerlendirilecek?
 
 ### 🔹 Ders 12: Sık Öğe Kümeleri ve Birliktelik Kuralları: Apriori, PCY, Multistage ve Multihash
@@ -205,12 +201,12 @@ Aşağıdaki tabloda her bir dersin konusu, kaynak markdown dosyası ve doğruda
   - Birliktelik kuralları (association rules) ve güven (confidence) eşiği.
   - Sık öğe kümelerinden kural çıkarma.
 * **Hocanın Vurgusu:**
-  - **Proje teslimi dönemin son haftasındaki ders saatinde.** O gün her grup projesini anlatacak ve demo yapacak.
+  - **Proje değerlendirmesi:** Her grup projesini anlatacak ve demo yapacak.
     - Hoca projeyle ilgili ve projenin tamamlanıp tamamlanmadığına dair sorular soracak.
-  - **Proje ağırlığı vizeyle aynı: %30.** Soruları e-postayla sorun, cevapsız soru bırakmayın.
-  - 6. bölümün slaytları ders sitesinde.
+  - **Proje ağırlığı vizeyle aynı: %30.**
   - **Birliktelik kuralı madenciliğinde zor kısım sık öğe kümelerini bulmaktır.** Sık kümeler bulunduktan sonra kural çıkarmak kolaydır.
   - **Bu algoritmalarda maliyet CPU süresiyle değil, disk geçişi sayısıyla ölçülür.** Diske her erişim CPU'ya göre çok pahalıdır.
+  - **Ana bellek kritik kaynaktır.** Sayılacak her şey bellekte sayılmalıdır.
 
 ### 🔹 Ders 14: Dönem Projesi Değerlendirmeleri
 * **Genel Konular:**
