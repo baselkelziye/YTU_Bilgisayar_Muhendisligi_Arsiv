@@ -1,0 +1,4759 @@
+1
+00:00:38,835 --> 00:00:39,855
+Evet, mera arkadaşlar.
+
+2
+00:01:00,820 --> 00:01:04,119
+Sesimde bir sıkıntı yok değil mi gençler? Sesim geliyor umarım.
+
+3
+00:01:04,759 --> 00:01:05,879
+Merhaba hocam, evet geliyor.
+
+4
+00:01:06,740 --> 00:01:11,039
+Evet, son haftadayız arkadaşlar. Sınav tarihimiz 11 Ocak mıydı?
+
+5
+00:01:14,772 --> 00:01:25,692
+10 haftadayız. Bu hafta istemediğimiz konuları bitireceğiz. Ondan sonra soru çözümüne başlarız. Geçen yıl çıkmış soruları çözeriz.
+
+6
+00:01:29,524 --> 00:01:38,183
+analiz ederiz. Böylelikle hazır bir şekilde sınava girmiş olursunuz. Geçen hafta biz kabuk yöntemini işlemiştik değil mi arkadaşlar?
+
+7
+00:01:40,303 --> 00:01:57,784
+Shell yöntemini, Shell metot. Evet, işledik onu. Tamam, o zaman ya yüzümlüğü hesaplama ve yüzey alanı, döner cisimlerin yüzey alanlarını hesaplama kurallarından bahsedelim.
+
+8
+00:01:57,784 --> 00:02:02,704
+ondan sonra has olmayan integrallerden bahsederek konular bitiyor.
+
+9
+00:02:02,823 --> 00:02:03,784
+Soru çözümüne girelim.
+
+10
+00:02:03,884 --> 00:02:04,544
+Tamam mı gençler?
+
+11
+00:02:05,183 --> 00:02:05,364
+Evet.
+
+12
+00:02:12,692 --> 00:02:13,192
+Okey.
+
+13
+00:02:14,951 --> 00:02:16,751
+Bir dakika bekleyelim arkadaşlar.
+
+14
+00:02:38,996 --> 00:02:47,935
+Evet. Bakalım katılım ne kadar olmuş? 62. Tamam, güzel. Başlayalım gençler. Computing Art Lens.
+
+15
+00:02:58,036 --> 00:02:59,575
+2x, 3x, atman.
+
+16
+00:03:04,403 --> 00:03:16,403
+Now, you know, there is no precise definition for point. So this means that we can regard some point as a sufficiently small triangle.
+
+17
+00:03:17,903 --> 00:03:28,903
+By using this fact, we can easily obtain the formula for computing arc length of curves. Okay, consider some curve
+
+18
+00:03:28,903 --> 00:03:35,504
+which is continuous over some interval.
+
+19
+00:03:39,283 --> 00:03:57,283
+Okay, so consider this curve. In fact, some curve is an integration of sufficient small points on the plane, something like that.
+
+20
+00:03:58,515 --> 00:04:00,675
+ok, there are infinitely many points.
+
+21
+00:04:03,675 --> 00:04:04,835
+ok, let me use
+
+22
+00:04:13,460 --> 00:04:23,460
+okay, red color here. So consider this curve, which is continuous over the interval a, b.
+
+23
+00:04:25,460 --> 00:04:41,460
+So how can we compute the length of this curve? Okay, so our goal is to compute
+
+24
+00:04:37,716 --> 00:05:00,316
+Let's suppose that this is the total length of curve given by explicit form over AB interval.
+
+25
+00:05:00,316 --> 00:05:01,316
+Attention.
+
+26
+00:05:01,316 --> 00:05:31,296
+Şimdi, bu birçok birçok birçok birçok birçok birçok birçok.
+
+27
+00:05:31,295 --> 00:05:34,375
+This length is dx dy.
+
+28
+00:05:35,435 --> 00:05:36,195
+So look at here.
+
+29
+00:05:36,315 --> 00:05:39,815
+So this length is dx.
+
+30
+00:05:41,035 --> 00:05:43,256
+Now, so consider this length.
+
+31
+00:05:43,455 --> 00:05:45,535
+So we may regard this length.
+
+32
+00:05:46,195 --> 00:05:48,695
+So let's suppose that that is dl.
+
+33
+00:05:48,695 --> 00:05:50,335
+Okay, so dl.
+
+34
+00:05:51,296 --> 00:06:00,695
+So by Pythagorean Theorem, dx squared plus dy squared.
+
+35
+00:06:01,296 --> 00:06:04,796
+Radikal of dx square plus dy square.
+
+36
+00:06:04,876 --> 00:06:06,535
+Okey. Can we write this? Do you think?
+
+37
+00:06:06,995 --> 00:06:08,896
+From the philosophical point of view.
+
+38
+00:06:09,456 --> 00:06:11,196
+Sizce yazabilir miyiz böyle bir şey gençler?
+
+39
+00:06:11,876 --> 00:06:12,456
+Noktanın
+
+40
+00:06:12,456 --> 00:06:14,635
+noktanın
+
+41
+00:06:14,635 --> 00:06:16,416
+kesin tanımı yoktur.
+
+42
+00:06:17,035 --> 00:06:19,236
+Dolayısıyla biz noktayı yeterince küçük
+
+43
+00:06:19,236 --> 00:06:21,656
+herhangi bir nesne olarak düşünebiliriz.
+
+44
+00:06:22,196 --> 00:06:22,855
+Doğru mu gençler?
+
+45
+00:06:23,456 --> 00:06:25,376
+Onu yeterince küçük bir diküçgen
+
+46
+00:06:25,376 --> 00:06:26,976
+olarak düşünecek olursak
+
+47
+00:06:26,976 --> 00:06:29,556
+orada diküçgenin bir kenar uzunluğu
+
+48
+00:06:29,555 --> 00:06:31,975
+dx diğer kenar uzunluğu d'ye dersek
+
+49
+00:06:31,975 --> 00:06:33,035
+ne oluyor?
+
+50
+00:06:33,795 --> 00:06:35,695
+Potenist uzunluğunu hesaplarsak
+
+51
+00:06:35,695 --> 00:06:37,255
+ona da d'ye dersek
+
+52
+00:06:37,255 --> 00:06:39,716
+ne olur? Kare için dx kare artı
+
+53
+00:06:39,716 --> 00:06:41,315
+d'ye kareyi elde ederiz.
+
+54
+00:06:41,675 --> 00:06:42,695
+Hadi bunu düzenleyelim.
+
+55
+00:06:43,716 --> 00:06:45,835
+Okay, let's simplify this expression.
+
+56
+00:06:48,755 --> 00:06:49,515
+Now if you take the
+
+57
+00:06:49,515 --> 00:06:51,156
+common factor dx square
+
+58
+00:06:51,156 --> 00:06:53,775
+here
+
+59
+00:06:53,775 --> 00:06:55,216
+so we got
+
+60
+00:06:55,216 --> 00:06:58,195
+one plus
+
+61
+00:06:58,195 --> 00:07:01,296
+dy
+
+62
+00:07:01,296 --> 00:07:03,156
+ne yapıyoruz arkadaşlar
+
+63
+00:07:03,156 --> 00:07:06,035
+dx'in karesi
+
+64
+00:07:06,035 --> 00:07:06,535
+doğru mu
+
+65
+00:07:06,535 --> 00:07:10,035
+ok so we got this
+
+66
+00:07:10,035 --> 00:07:13,495
+now attention here
+
+67
+00:07:13,495 --> 00:07:14,095
+if you
+
+68
+00:07:14,095 --> 00:07:16,255
+we spot that dx is positive
+
+69
+00:07:16,255 --> 00:07:17,835
+so we got this
+
+70
+00:07:17,835 --> 00:07:20,376
+so 1 plus
+
+71
+00:07:20,376 --> 00:07:22,175
+dy over
+
+72
+00:07:22,175 --> 00:07:23,235
+dx
+
+73
+00:07:23,235 --> 00:07:26,335
+and so let me
+
+74
+00:07:26,335 --> 00:07:28,115
+erase this
+
+75
+00:07:28,115 --> 00:07:39,875
+extension. Okay, now times dx. Okay, so this is the attention here. So we take common factor here dx
+
+76
+00:07:39,875 --> 00:07:48,695
+square because of the fact that y depends on x. This means that we can talk about derivation of y
+
+77
+00:07:48,695 --> 00:07:56,695
+with respect to x. That's why we take common factor dx square. Okay, suppose that x depends on y
+
+78
+00:07:56,695 --> 00:08:04,315
+So in that case, you are going to take common factor dy square under the radical symbol here.
+
+79
+00:08:04,835 --> 00:08:13,436
+Now, so we are ready to integrate, okay, integrate these dl, sufficiently small pieces for arc length.
+
+80
+00:08:13,895 --> 00:08:19,335
+So if you integrate these points, okay, you are going to obtain this total curve.
+
+81
+00:08:19,755 --> 00:08:23,295
+That's why, so we need to integrate these dl's.
+
+82
+00:08:23,295 --> 00:08:25,535
+There are infinitely many dl's.
+
+83
+00:08:25,535 --> 00:08:36,575
+So if we integrate the L, okay, L integration of the L, but so we need to put some bounds for integration from A to B.
+
+84
+00:08:36,980 --> 00:09:04,719
+So from A to B, integration of the L, okay, results in L, okay, so in terms of yf of x, we need to integrate this from A to B, okay, now 1 plus, okay, this is derivation of, derivation of f with respect to x, and we need to square of this term, and dx, okay, so as you see,
+
+85
+00:09:04,719 --> 00:09:10,539
+Bu arklang formülü daha ne kadar high dichotium formülü
+
+86
+00:09:10,539 --> 00:09:12,180
+Dikkat edin arkadaşlar
+
+87
+00:09:12,180 --> 00:09:15,500
+Pisagor teoreminden başka bir şey değildir
+
+88
+00:09:15,500 --> 00:09:17,020
+Ya yüzunlu formülü
+
+89
+00:09:17,020 --> 00:09:18,399
+Ne yapıyorsunuz?
+
+90
+00:09:18,439 --> 00:09:21,660
+Eğriyi meydana getiren noktalar var
+
+91
+00:09:21,660 --> 00:09:22,179
+Doğru mu?
+
+92
+00:09:22,380 --> 00:09:23,919
+Yeterince küçük bir noktanın
+
+93
+00:09:23,919 --> 00:09:26,399
+Zaten onu biz diküçgen olarak düşünürsek
+
+94
+00:09:26,399 --> 00:09:27,939
+Pisagor teoreminden
+
+95
+00:09:27,939 --> 00:09:28,999
+D'le nedir?
+
+96
+00:09:28,999 --> 00:09:30,719
+Kare kere içinde D'ye kare
+
+97
+00:09:30,719 --> 00:09:34,359
+Hemen 5 saniyede formülü bulmuş oluyorsunuz
+
+98
+00:10:01,875 --> 00:10:02,436
+Okay.
+
+99
+00:10:02,675 --> 00:10:09,175
+It's only for the dy over dx or for the whole thing under the square root?
+
+100
+00:10:09,175 --> 00:10:17,775
+Yükselen, ok? Dx, some, some, the small number, ok? So if you take this factor, the x, ok?
+
+101
+00:10:17,775 --> 00:10:19,775
+Ok.
+
+102
+00:10:23,796 --> 00:10:27,875
+So this is our general formula. Okay, let me introduce some example.
+
+103
+00:10:30,355 --> 00:10:31,796
+Example, compute
+
+104
+00:10:34,515 --> 00:10:35,315
+arc length
+
+105
+00:10:38,515 --> 00:10:40,595
+of curve to curve
+
+106
+00:10:41,556 --> 00:10:42,355
+given by
+
+107
+00:10:46,755 --> 00:10:48,275
+this explicit form
+
+108
+00:10:50,115 --> 00:10:51,875
+y is equal to
+
+109
+00:10:51,875 --> 00:11:20,275
+x over 3 over 2. Okay, so let's compute this over some given interval from 0 to 1. Okay, now so it's very simple. Suppose that that is this graph. We don't know this graph. So we take this. Okay, now dx dy is so dl is, you don't need to write this, but in order to memorize formula.
+
+110
+00:11:20,275 --> 00:11:43,855
+ok, dL dx² plus dy², now here, so y is equal to f of x, this means that we need to take common factor dx² under the square root symbol, ok, so we got this 1 plus f'x² dx, as you see, it takes 5 seconds to obtain this formula,
+
+111
+00:11:43,855 --> 00:11:52,635
+So we need to derivate f, derivation of f with respect to x, 3 over 2 times square root of x.
+
+112
+00:11:52,635 --> 00:12:12,635
+Okay, now, so we need to obtain dl, dl, so okay, now 1 plus square of derivation function, 9 over 4, x, okay, do not forget to put dx, but so we are ready to integrate our dl differential.
+
+113
+00:12:12,635 --> 00:12:33,695
+Differential. So if we integrate the L differential from 0 to 1 here, okay, so you are going to obtain the length of total curve over the given interval 0, 1. So L, so from 0 to 1, so if you, let's integrate this. Okay, so first of all, we can write this
+
+114
+00:12:33,695 --> 00:12:42,335
+over 2, let me put here, 2dx. Okay, is that correct?
+
+115
+00:12:42,635 --> 00:13:12,215
+Now, so in order to simplify this problem, we need to do substitution method. So how can we simplify this integral problem? We do substitution method. Let's say this is u now. So this is 9 times dx is equal to du. So if you change bounds, so this is x0, so this is x1.
+
+116
+00:13:12,635 --> 00:13:31,635
+So, in that case, L, 4x0, 0, you are going to obtain U0 as 4, U0, 4, 4x0, x1, 1, so you are going to obtain U1, 30, is that correct?
+
+117
+00:13:31,635 --> 00:13:56,796
+Şimdi, dx is 1 over 9 du, we need to put 1 over 9 here, and also we have this 2, do not forget to put this 2, and so we have this square root of u du, now 1 over 18, and if we integrate square root of u,
+
+118
+00:13:56,796 --> 00:14:09,656
+U2, 3 over 2, over 3 over 2, U2, substitute lower bound and upper bound for fundamental theorem part 2.
+
+119
+00:14:09,656 --> 00:14:15,335
+Tamam arkadaşlar bunları yaparsanız 1 bölü 18 çarpı 2 bölü 3.
+
+120
+00:14:17,395 --> 00:14:47,175
+13 üzeri 3 bölü 2, eksi 4 üzeri 3 bölü 2. Düzenlersiniz bunu. Let's simplify this. So this is our answer. Okey? Var mı anlaşılmayan bir yer? İzlenik ve için? Herhalde mantığı anlaşıldı. Bir tane örnek çözdüm. Daha komplik örnekler çözeceğiz. Önemli olan mantığını anlamak. It is very important to understand behind the understand the behind.
+
+121
+00:14:47,395 --> 00:14:49,076
+of this problem.
+
+122
+00:14:49,236 --> 00:14:49,495
+Okay.
+
+123
+00:14:53,395 --> 00:15:07,395
+Now let me talk about formula for computing surface area of revelations. So surface area for revelations.
+
+124
+00:15:20,307 --> 00:15:27,987
+Okay. Surface area of revelation. So okay, in this case, again, so we have some curve.
+
+125
+00:15:27,987 --> 00:15:33,987
+Okay.
+
+126
+00:15:38,163 --> 00:15:45,163
+ok. now again we have some
+
+127
+00:15:46,355 --> 00:15:47,355
+çür.
+
+128
+00:15:47,355 --> 00:15:51,355
+vaynı
+
+129
+00:15:50,676 --> 00:16:15,295
+Let's rotate this curve around x-axis, but not region. We rotate this curve, so rotate, rotate or revolve, revolve this curve around x-axis.
+
+130
+00:16:15,295 --> 00:16:21,935
+ok, let's suppose that y is equal to f of x
+
+131
+00:16:26,067 --> 00:16:29,067
+Şimdi bu noktada bir noktada bir noktada var.
+
+132
+00:16:29,067 --> 00:16:32,067
+Öncelikle bu noktada bir noktada var.
+
+133
+00:16:32,067 --> 00:16:41,067
+Öncelikle bu noktada var.
+
+134
+00:16:41,067 --> 00:16:46,067
+Bu noktada var.
+
+135
+00:16:46,067 --> 00:16:51,067
+Öncelikle bu noktada var.
+
+136
+00:16:51,067 --> 00:16:52,067
+Bu, bu,
+
+137
+00:17:12,307 --> 00:17:22,407
+ne yapacağım? Yeterince küçük bir doğru parçası olarak uzunluğu DL olan.
+
+138
+00:17:22,407 --> 00:17:29,408
+Let's suppose that this is line segment DL.
+
+139
+00:17:29,867 --> 00:17:33,587
+Burada bir tane DL var. Bunu döndürelim arkadaşlar.
+
+140
+00:17:37,427 --> 00:17:40,787
+Şöyle yapalım hatta. Silelim. Yine DL yazacağım.
+
+141
+00:17:40,787 --> 00:18:04,627
+since DL is sufficient to small, since DL is sufficient to small line segment, that's why we may regard this DL is parallel to x-axis. We can suppose that this DL is parallel to x-axis. Okay, now if you rotate this DL around the x-axis,
+
+142
+00:18:04,627 --> 00:18:11,947
+around the x-axis. You are going to obtain, ne elde dersiniz arkadaşlar? Bu D'li uzunluklu.
+
+143
+00:18:12,528 --> 00:18:19,467
+Okay, we are going to obtain surface of cylinder. Okay, let's rotate this DL line segment, which is sufficient to small line segment.
+
+144
+00:18:19,467 --> 00:18:34,067
+We rotate DL around x-axis. Okay, we are going to obtain the surface of cylinders. Okay, now we are going to obtain this surface of cylinder.
+
+145
+00:18:48,276 --> 00:19:12,616
+Okay, the surface of cylinder, let's suppose that the surface area, let's suppose the surface area is the surface area, let's say ds. Okay, now, so how can we compute this ds?
+
+146
+00:19:12,616 --> 00:19:29,116
+So in order to compute this ds, so attention here, so this is the coordinate of this point, so x, y, so this distance, okay, so y f of x, so y is equal to f of x.
+
+147
+00:19:29,116 --> 00:19:38,116
+Y is f of x.
+
+148
+00:19:38,116 --> 00:19:39,116
+Okay.
+
+149
+00:19:39,116 --> 00:19:43,116
+Now, so this is DL.
+
+150
+00:19:43,116 --> 00:19:44,116
+Attention here.
+
+151
+00:19:44,116 --> 00:19:45,116
+So this is DL.
+
+152
+00:19:45,116 --> 00:19:46,116
+Okay.
+
+153
+00:19:46,116 --> 00:19:52,116
+Now, in this case, let's compute surface area of this cylinder.
+
+154
+00:19:52,116 --> 00:19:58,115
+So we cut, cut and expand.
+
+155
+00:19:58,115 --> 00:19:59,115
+bu.
+
+156
+00:19:59,115 --> 00:20:02,115
+So in that case we are going to obtain this.
+
+157
+00:20:11,092 --> 00:20:14,092
+we are gonna obtain this rectangular region.
+
+158
+00:20:19,284 --> 00:20:47,523
+Now in that case, so this is, so this length is 2 pi f of x. This length is dl. Okay, now area of ds, area ds, area differential is 2 pi f of x dl.
+
+159
+00:20:47,523 --> 00:21:03,124
+So we know that DL can be obtained by Pythagorean theorem. DL is dx² plus dy². We learned this before.
+
+160
+00:21:03,124 --> 00:21:26,784
+Now, as you see, if you integrate this area differential, surface area differential, as from A to B, 2 pi, f of x, and dl1 plus f prime of x square px.
+
+161
+00:21:27,364 --> 00:21:31,784
+Okay, now, so this is our formula.
+
+162
+00:21:31,784 --> 00:21:59,444
+Evet, bu şekilde yapıyoruz.
+
+163
+00:22:04,435 --> 00:22:06,795
+bir tane örnek çözelim.
+
+164
+00:22:12,852 --> 00:22:15,332
+Okay, let's solve this some example.
+
+165
+00:22:15,451 --> 00:22:20,171
+Example
+
+166
+00:22:25,907 --> 00:22:27,367
+ok, let me
+
+167
+00:22:31,923 --> 00:22:58,463
+write this. So this is y is equal to square root of x. So if you rotate this curve around x-axis, so then, so what is the area, surface area, surface area of obtained revelation? Obtained revelation.
+
+168
+00:22:59,347 --> 00:23:17,347
+ok, so how can we obtain this? you may forget formula, if you forget formula, you know how to obtain formula, it takes maximum 15 minutes. ok, area formula
+
+169
+00:23:17,140 --> 00:23:46,980
+from, let me put bounds from 0 to 1, from 0 to 1, 2 pi f of x square root of x times dl, okay, f of x dl coming from the surface area formula for cylinder, okay, dl, dl, 1 plus derivation of this, derivation of square root of x, 1 times,
+
+170
+00:23:47,140 --> 00:24:11,140
+1 over square root of x times dx. So, okay, so by using area formula, surface area formula, we are going to obtain this. Okay, now, so let's go on. From 0 to 1, 2 pi square root of x.
+
+171
+00:24:15,124 --> 00:24:28,023
+artı, dağıtıyorum içine arkadaşlar. 1 bölü 4 mi geliyor arkadaşlar? Dağıtırsam, kaletini alırsam x, x'ler dağıttı. İşlem hatası yapmadık değil mi?
+
+172
+00:24:28,023 --> 00:24:29,943
+ok, so dx
+
+173
+00:24:29,943 --> 00:24:34,863
+2 pi from 0 to 1
+
+174
+00:24:34,863 --> 00:24:40,624
+x plus 4 over 2
+
+175
+00:24:40,624 --> 00:24:44,023
+ok, dx
+
+176
+00:24:44,023 --> 00:24:46,523
+so this and this simplify
+
+177
+00:24:46,523 --> 00:24:48,223
+you are going to update this
+
+178
+00:24:48,223 --> 00:24:52,923
+surası 4x olacak arkadaşlar
+
+179
+00:24:52,923 --> 00:24:55,963
+4x artı 1
+
+180
+00:24:55,963 --> 00:24:57,903
+işlem hatası yapmayalım dedik
+
+181
+00:24:57,903 --> 00:25:08,523
+uyarım beni. Okay. 4x plus 1 over 2. You need to integrate this. So how can we integrate this?
+
+182
+00:25:09,863 --> 00:25:24,523
+So 4x plus 1 is equal to u. Okay. By applying this substitution method, you can easily obtain this surface area.
+
+183
+00:25:24,524 --> 00:25:32,164
+pi times from U0, 1, U1, 5.
+
+184
+00:25:34,164 --> 00:25:41,263
+So this is U, dx1 over 4DU, 1 over 4DU.
+
+185
+00:25:41,263 --> 00:25:45,263
+Okay, now so here, so homework for you.
+
+186
+00:25:46,664 --> 00:25:47,683
+Var mı anlaşmıyorum yer?
+
+187
+00:25:48,723 --> 00:25:50,424
+Alan formülü de anlaşıldı galiba.
+
+188
+00:25:51,384 --> 00:25:52,504
+Yüzey alan formülü.
+
+189
+00:25:55,988 --> 00:26:06,227
+konuları bitireyim, soru çözelim arkadaşlar. Geçiyorum. Burada sorusu olan yoksa izlenenikoy için
+
+190
+00:26:10,644 --> 00:26:18,843
+Evet, [öğrenci] sana cevap vermiş, [öğrenci]. Biz hacim yapmıyoruz. Biz yüzey alanını hesaplıyoruz. Tamam mı?
+
+191
+00:26:19,364 --> 00:26:25,323
+Okay, we do not compute volume. We try to compute surface area of relation, [öğrenci].
+
+192
+00:26:32,468 --> 00:26:32,968
+Evet.
+
+193
+00:26:34,387 --> 00:26:34,567
+Değil mi?
+
+194
+00:26:35,468 --> 00:26:36,868
+Proper integration.
+
+195
+00:26:41,203 --> 00:27:10,923
+İntro
+
+196
+00:27:12,923 --> 00:27:14,924
+Bu, çok önemli bir şey.
+
+197
+00:27:14,923 --> 00:27:18,163
+understand the philosophy behind each type.
+
+198
+00:27:18,923 --> 00:27:19,063
+Okay.
+
+199
+00:27:20,383 --> 00:27:22,363
+So in this type, so we have
+
+200
+00:27:22,363 --> 00:27:25,683
+continuous function.
+
+201
+00:27:39,859 --> 00:27:57,859
+over some unbounded interval from a0 or minus infinite a0.
+
+202
+00:27:59,188 --> 00:28:04,188
+or minus infinite,
+
+203
+00:28:06,827 --> 00:28:07,827
+infinite.
+
+204
+00:28:07,827 --> 00:28:08,827
+Okay.
+
+205
+00:28:08,827 --> 00:28:11,947
+Now, so this means that our function
+
+206
+00:28:11,947 --> 00:28:16,708
+is a continuous function over unbounded interval.
+
+207
+00:28:16,708 --> 00:28:17,987
+So in that case,
+
+208
+00:28:18,868 --> 00:28:22,507
+we consider this integration.
+
+209
+00:28:25,147 --> 00:28:26,907
+So let's take this one.
+
+210
+00:28:26,907 --> 00:28:27,987
+Okay.
+
+211
+00:28:27,987 --> 00:28:34,987
+From a to infinite f of x dx.
+
+212
+00:28:37,987 --> 00:28:51,207
+Now we wonder, okay, we need to investigate whether this integration, this summation, infinite sum, converts or diverts.
+
+213
+00:28:51,767 --> 00:28:56,767
+Dikkat edin arkadaşlar, sınırsız bir aralık üzerinde integral, sonsuz toplam gibi düşünün.
+
+214
+00:28:56,767 --> 00:28:59,947
+acaba bir sonlu değere yakın sar mı?
+
+215
+00:29:00,507 --> 00:29:02,467
+Iraksar mı? Biz bunu merak ediyoruz.
+
+216
+00:29:02,607 --> 00:29:03,347
+Tamam mı gençler?
+
+217
+00:29:04,127 --> 00:29:05,967
+Okay. Now how can we
+
+218
+00:29:05,967 --> 00:29:07,967
+investigate this
+
+219
+00:29:07,967 --> 00:29:10,368
+integration, improper integration
+
+220
+00:29:10,368 --> 00:29:11,868
+converts or diverts?
+
+221
+00:29:12,347 --> 00:29:14,127
+So in order to compute this
+
+222
+00:29:14,127 --> 00:29:15,967
+first of all let me
+
+223
+00:29:15,967 --> 00:29:17,487
+illustrate some
+
+224
+00:29:17,487 --> 00:29:20,327
+line unbounded
+
+225
+00:29:20,327 --> 00:29:20,927
+here.
+
+226
+00:29:23,927 --> 00:29:26,147
+So let's suppose that this is A
+
+227
+00:29:26,147 --> 00:29:29,647
+So we take some b.
+
+228
+00:29:30,707 --> 00:29:33,827
+Suppose that b is some variable.
+
+229
+00:29:34,448 --> 00:29:37,927
+Okay, so we are going to take this b infinite.
+
+230
+00:29:38,467 --> 00:29:42,908
+But first of all, we compute integration from a to b.
+
+231
+00:29:43,548 --> 00:29:46,647
+Let's compute integration from a to b.
+
+232
+00:29:46,847 --> 00:29:48,167
+So we can compute this.
+
+233
+00:29:48,167 --> 00:29:53,167
+This is convergent because of the fact that f is continuous.
+
+234
+00:29:54,007 --> 00:29:55,507
+Okay, over this interval.
+
+235
+00:29:56,147 --> 00:29:58,467
+Okay, so that's why this converges.
+
+236
+00:29:58,567 --> 00:30:01,147
+But if you put this limit...
+
+237
+00:30:02,147 --> 00:30:05,228
+Okay, let me put limit here.
+
+238
+00:30:13,587 --> 00:30:38,547
+limit, as b goes to infinite. Okay, now, so you are going to obtain this. Impropriet integration. F of x dx. Okay, now we ask, if this is, if, if this limit, if this limit,
+
+239
+00:30:41,547 --> 00:30:42,547
+if this limit,
+
+240
+00:30:42,291 --> 00:31:00,291
+exist, then this integration, improper integration is said to be convergent.
+
+241
+00:31:00,291 --> 00:31:05,291
+convergent.
+
+242
+00:31:05,291 --> 00:31:07,291
+otherwise
+
+243
+00:31:12,435 --> 00:31:13,435
+Divergent.
+
+244
+00:31:15,435 --> 00:31:17,755
+Otherwise, divergent.
+
+245
+00:31:21,652 --> 00:31:37,711
+Tamam arkadaşlar. Dikkat edin. O limitin eğer var olduğunu tespit edebiliyorsanız a'dan sonsuza fx dx integraline yakın saktır denir. Aksi durumda limit yoksa o zaman ıraksaktır adını alır.
+
+246
+00:31:37,711 --> 00:31:57,451
+mesela güzel bir örnek verebiliriz. Bunu genelleyebilirseniz, mesela benzer mantıkla by using some similar approach, okay, we can write this. So suppose that from minus infinity to A, so f of x dx.
+
+247
+00:31:57,451 --> 00:32:08,911
+So in this case, we can express this improper integration by some limit problem, limit as B goes to minus infinite.
+
+248
+00:32:08,911 --> 00:32:16,052
+So in this case, we compute from B to A integration, F of x dx.
+
+249
+00:32:16,971 --> 00:32:26,872
+Okay, now in this case, if this limit exists, then we say that this integration, improper integration is convergent.
+
+250
+00:32:26,872 --> 00:32:56,632
+Okay, now, similarly, okay, if you are given some, this improper integration, oh sorry, this is plus, f of x, so dx, but in this case, it is sufficient to choose some point between minus infinite and plus infinite, so we write here, so from minus infinite to a, a is some proper real number, so it depends on the structure of
+
+251
+00:32:56,631 --> 00:33:18,871
+problem, f of x dx plus from a to infinite f of x dx. Okay, the last question, so we know how to compute this integration, we know how to compute this integration, if both of them, if both of them, both of them,
+
+252
+00:33:23,667 --> 00:33:40,727
+converts, converts, then we say that, then, so this integration from minus infinity to infinite, f of x dx converts, otherwise diverts.
+
+253
+00:33:41,088 --> 00:33:47,487
+Tamam, ikisi de yakınsak olursa, ne olur? Bizim integralimiz de yakınsak olur.
+
+254
+00:33:47,487 --> 00:33:53,928
+bir tanesi ıraksak olursa şu has olmayan integrallerden o zaman integralimiz bıraksak olur.
+
+255
+00:33:53,928 --> 00:33:56,287
+Let me introduce some example.
+
+256
+00:33:56,487 --> 00:34:01,068
+Example.
+
+257
+00:34:02,247 --> 00:34:02,967
+Compute.
+
+258
+00:34:12,659 --> 00:34:14,659
+oh sorry
+
+259
+00:34:17,876 --> 00:34:40,876
+Compute the area of unbounded region, unbounded region, which is below, which is below the graph,
+
+260
+00:34:45,012 --> 00:35:07,012
+1 over x squared plus 1, and above x-axis. Okay. Now in this case, so let me sketch this graph.
+
+261
+00:35:13,396 --> 00:35:16,015
+So as we have some even function.
+
+262
+00:35:18,055 --> 00:35:24,776
+So this is even function y 1 over x square plus 1.
+
+263
+00:35:25,655 --> 00:35:39,675
+Now from minus infinite to infinite, 1 over x square plus 1 dx, giving us the area formula for this unbound region.
+
+264
+00:35:39,675 --> 00:35:40,035
+Tamam.
+
+265
+00:35:41,115 --> 00:35:48,396
+Now, we do not talk about convergence of function.
+
+266
+00:35:48,615 --> 00:35:52,215
+We talk about convergence of integration.
+
+267
+00:35:52,535 --> 00:35:52,695
+Tamam.
+
+268
+00:35:54,375 --> 00:35:57,975
+Yani integrali ilk önce limit olarak ifade ediyorsun.
+
+269
+00:35:58,155 --> 00:36:02,936
+Limitin var olduğunu gösterirsen integral yakınsaktır dersin.
+
+270
+00:36:03,215 --> 00:36:05,735
+Limit yok ise integral yraksaktır dersin.
+
+271
+00:36:06,315 --> 00:36:06,455
+Tamam.
+
+272
+00:36:06,455 --> 00:36:15,935
+Şimdi x sonsuzdan sonsuza bir bölü x kare artı bir dx integralı bize neyi verecektir arkadaşlar?
+
+273
+00:36:16,375 --> 00:36:23,616
+Bahsedilen sınırsız bölgenin alanını veren, alanını ifade eden bir formüldür.
+
+274
+00:36:23,616 --> 00:36:33,436
+Okay, so this improper integration is an integration formula giving us the area of this unbounded agent.
+
+275
+00:36:33,436 --> 00:36:37,736
+Okay, now, so this is even function.
+
+276
+00:36:39,256 --> 00:36:45,056
+So, and the interval on which we study is symmetric.
+
+277
+00:36:45,055 --> 00:37:14,735
+that's why so this is two times from zero to infinite okay one over x squared plus one dx. Now we put some intervals and we put some point here let me put here some blue point with that okay now first of all we compute this area from zero to a okay now do not forget to put these two
+
+278
+00:37:14,735 --> 00:37:42,976
+2 from 0 to A, so do not forget to put limit, okay, limit as A goes to infinite, as A goes to infinite, so from 0 to A integration, from 0 to A integration of 1 over x squared plus 1 dx, okay,
+
+279
+00:37:42,976 --> 00:37:44,856
+is there any question?
+
+280
+00:37:47,776 --> 00:37:49,815
+Okay, so this is very simple.
+
+281
+00:37:51,336 --> 00:37:57,076
+Now, two times limit as A goes to infinite.
+
+282
+00:37:58,716 --> 00:38:07,496
+Now integrate, sorry for that, integration of this R tangent X from zero to A,
+
+283
+00:38:07,495 --> 00:38:37,475
+2 times, so this is limit as a goes to infinite, arctangent a minus arctangent 0, 0, 2 times arctangent, so this argument of arctangent approaching infinite, okay, now so this is nothing else than pi over 2, 2 times pi over 2.
+
+284
+00:38:37,495 --> 00:38:53,895
+pi over two and the answer is pi. So, answer is pi, but note that, so this kind of functions are very important in statistics.
+
+285
+00:38:53,895 --> 00:38:58,895
+Okay, bu tarz fonksiyonlar arkadaşlar, istatistikte çok önemlidir.
+
+286
+00:38:59,315 --> 00:39:21,455
+Bunun burada fonksiyonda 1 bölü x kare artı 1 diyor ya, orayı işte 1 bölü pi çarpı x kare artı 1 yazsaydım, bir yoğunluk fonksiyonu elde edecektim. Bir veri grubunun dağılımının tam olarak yoğunluk fonksiyonunu elde edecektim. Rastgele değişkeni. İleride göreceksiniz. İstatistik dersinde. Çoğunuz istatistik dersi ileride alacak değil mi? Müfredatta var.
+
+287
+00:39:21,455 --> 00:39:33,676
+Burayı dediklerimi unutmayın. Bunu ileride çok sıklıkla kullanacaksınız. Buna çan eğrisi denir arkadaşlar. Bu tarz fonksiyonlar yoğunluk fonksiyonlarıyla ilişkili.
+
+288
+00:39:34,356 --> 00:39:51,435
+Eğer orayı 1 bölü pi çarpı x karartı 1 yazsaydım sonuç 1 çıkacaktı. Bir eğrinin altında kalan inti eğer 1 olursa arkadaşlar x sonsuzdan sonsuza fx ile tabii ki değerlerinin olacak 0 ile 1 arasında değişecek.
+
+289
+00:39:51,455 --> 00:40:00,836
+Fx'in aldığı değerler yoğunluk fonksiyonu. O zaman ne olur? O zaman yoğunluk fonksiyonu adını alır fonksiyonunuz. Tamam mı? Geçiyorum. Sorusu olan yoksa.
+
+290
+00:40:08,371 --> 00:40:18,332
+I told me an integraller, this kind of improper integrations will be used in this statistic course.
+
+291
+00:40:18,332 --> 00:40:22,051
+Okay, let me solve another question.
+
+292
+00:40:29,844 --> 00:40:37,844
+From 0 to infinite, from 0 to infinite, let's compute this. x time, exponential x dx.
+
+293
+00:40:39,224 --> 00:40:47,083
+Herkes bunu hesaplamak için uğraşsın bakalım. Herkes öğrenip öğrenmediğini görsün. Bu konuyu. Asıl olmayan integraller önemli.
+
+294
+00:40:49,823 --> 00:40:51,563
+Evet, bekliyorum gençler.
+
+295
+00:41:12,019 --> 00:41:14,399
+orada mısınız? Ben de yoklama yapayım.
+
+296
+00:41:14,559 --> 00:41:15,799
+[öğrenci].
+
+297
+00:41:17,199 --> 00:41:18,659
+Çete yazabilirsin [öğrenci].
+
+298
+00:41:22,164 --> 00:41:49,883
+[öğrenci]. Not here. [öğrenci]. Evet. [öğrenci] de burada yok. [öğrenci]. Burada mısın [öğrenci]? [öğrenci]. [öğrenci] değil. [öğrenci]. Ok. Buradasın. [öğrenci]. Good. [öğrenci] [öğrenci]. [öğrenci] burada mısın? Burada güzel.
+
+299
+00:41:49,883 --> 00:42:00,004
+[öğrenci], burada mısın [öğrenci]? [öğrenci], tamam [öğrenci] burada
+
+300
+00:42:00,004 --> 00:42:04,844
+[öğrenci], [öğrenci] burada mısın [öğrenci]? Güzel
+
+301
+00:42:04,844 --> 00:42:07,483
+[öğrenci], burada mısın [öğrenci]?
+
+302
+00:42:13,043 --> 00:42:38,283
+güzel. [öğrenci]. [öğrenci] burada güzel. Çözüyorsunuz değil mi gençler? [öğrenci]. [öğrenci]. Burada mısın [öğrenci]? Güzel. [öğrenci], [öğrenci], [öğrenci], [öğrenci]. [öğrenci] mı? [öğrenci] yok. [öğrenci] da yok. [öğrenci].
+
+303
+00:42:41,715 --> 00:42:56,935
+Tamam, [öğrenci] burada, [öğrenci] burada. Çözüyorsunuz değil mi gençler? Nasıl çözeceğiz bunu? Sıfırdan sonrası da x çarpı e üzeri eksi x limit problemine dönüştüreceğiz değil mi? [öğrenci], [öğrenci]. [öğrenci] mi çözümde? [öğrenci].
+
+304
+00:43:01,139 --> 00:43:02,159
+[öğrenci] burada yok.
+
+305
+00:43:05,339 --> 00:43:06,479
+[öğrenci].
+
+306
+00:43:07,139 --> 00:43:08,100
+[öğrenci], burada mısın?
+
+307
+00:43:12,019 --> 00:43:20,719
+Evet [öğrenci] ne yaptın? Çözümü bulabildin mi? Limit problemine dönüştürebildin mi? [öğrenci], burada mısın [öğrenci]?
+
+308
+00:43:24,659 --> 00:43:33,699
+[öğrenci].
+
+309
+00:43:34,159 --> 00:43:35,420
+Burada değil herhalde [öğrenci].
+
+310
+00:43:35,839 --> 00:43:40,779
+[öğrenci].
+
+311
+00:43:40,920 --> 00:43:42,539
+[öğrenci] yaptın [öğrenci]? Yapabildin mi?
+
+312
+00:43:45,539 --> 00:43:46,619
+[öğrenci].
+
+313
+00:43:46,799 --> 00:43:48,299
+[öğrenci]. Are you here? [öğrenci].
+
+314
+00:43:57,876 --> 00:44:00,675
+[öğrenci], [öğrenci].
+
+315
+00:44:02,075 --> 00:44:02,915
+I'm here.
+
+316
+00:44:03,615 --> 00:44:10,095
+Okay, good. [öğrenci], could you manage to solve this problem? Could you manage to transform this problem into limit problem?
+
+317
+00:44:10,195 --> 00:44:13,756
+Yeah, I transform, but I'm trying to solve the integral.
+
+318
+00:44:14,835 --> 00:44:15,396
+Good.
+
+319
+00:44:19,059 --> 00:44:20,579
+[öğrenci]
+
+320
+00:44:27,476 --> 00:44:32,035
+Good. [öğrenci] yapabildin mi? Dönüştürebilirdin mi problemi, limit problemini?
+
+321
+00:44:38,675 --> 00:44:40,156
+[öğrenci].
+
+322
+00:44:41,615 --> 00:44:42,995
+[öğrenci] orada mısın?
+
+323
+00:44:44,215 --> 00:44:46,156
+[öğrenci] buradasın.
+
+324
+00:44:46,375 --> 00:44:47,695
+[öğrenci].
+
+325
+00:44:49,695 --> 00:44:50,755
+[öğrenci].
+
+326
+00:44:53,096 --> 00:44:53,975
+[öğrenci].
+
+327
+00:44:55,295 --> 00:44:56,995
+[öğrenci].
+
+328
+00:44:58,856 --> 00:44:59,215
+Good.
+
+329
+00:45:00,675 --> 00:45:02,335
+[öğrenci].
+
+330
+00:45:02,436 --> 00:45:02,615
+Evet.
+
+331
+00:45:03,356 --> 00:45:04,516
+Okay, let's all together.
+
+332
+00:45:06,075 --> 00:45:07,275
+Now look at here.
+
+333
+00:45:07,275 --> 00:45:08,275
+[öğrenci]
+
+334
+00:45:37,275 --> 00:45:41,275
+Şimdi, bu, nasıl birçok?
+
+335
+00:45:41,275 --> 00:45:42,275
+İnteklisi İnteklisi İnteklisi İnteklisi İnteklisi İnteklisi İnteklisi İnteklisi İnteklisi İnteklisi İnteklisi İnteklisi İnteklisi İnteklisi İnteklisi İnteklisi İnteklisi İnteklisi İnteklisi İnteklisi İnteklisi İnteklisi İnteklisi İnteklisi İnteklisi İnteklisi İnteklisi İnteklisi İnteklisi İnteklisi İnteklisi İnteklisi İnteklisi İnteklisi İnteklisi İnteklisi İnteklisi İnteklisi İnteklisi İnteklisi İnteklisi İnteklisi İnteklisi İnteklisi İnteklisi İnteklisi İnteklisi İnteklisi İnteklisi İnteklisi İnteklisi İnteklisi İnteklisi İnteklisi İnteklisi İnteklisi İnteklisi İnteklisi İnteklisi İnteklisi İnteklisi İnteklisi İnteklisi İnteklisi İnteklisi İnteklisi İnteklisi İnteklisi İnteklisi İnteklisi İnteklisi İnteklisi İnteklisi İnteklisi İnteklisi İnteklisi İnteklisi İnteklisi İnteklisi İnteklisi İnteklisi İnteklisi İnteklisi İnteklisi İnteklisi İnteklisi İnteklisi İnteklisi İntekl
+
+336
+00:46:11,275 --> 00:46:26,455
+Now indefinite integration, this says that indefinite integration, the plus minus indefinite integration minus explanation minus x times x minus explanation minus x.
+
+337
+00:46:26,455 --> 00:46:33,756
+So let's take the common factor minus explanation minus x, 1 plus x. Is that correct?
+
+338
+00:46:33,755 --> 00:46:36,535
+So this is indefinite integration.
+
+339
+00:46:37,255 --> 00:46:41,195
+So let's substitute indefinite integration into this limit problem.
+
+340
+00:46:41,195 --> 00:46:44,195
+Limit as a goes to infinite.
+
+341
+00:46:45,115 --> 00:46:48,915
+Let me put this minus common factor.
+
+342
+00:46:49,295 --> 00:46:50,515
+Okay, here minus.
+
+343
+00:46:51,435 --> 00:46:52,995
+We are going to update this.
+
+344
+00:46:58,612 --> 00:47:03,791
+x plus 1. Is that correct? x parantezini alalım, hata yapmayalım. Doğru değil mi?
+
+345
+00:47:04,651 --> 00:47:08,131
+Okay. Now from 0 to a.
+
+346
+00:47:10,791 --> 00:47:19,911
+Now when you apply fundamental theorem part 2 limit as a goes to infinite, let's substitute upper bound,
+
+347
+00:47:19,911 --> 00:47:28,651
+exponential minus A times A plus 1, plane substitute lower bound into indefinite integration.
+
+348
+00:47:29,531 --> 00:47:38,591
+Okay, now we are going to obtain 1. Okay, now we have this. So if you distribute this limit problem
+
+349
+00:47:38,591 --> 00:47:56,311
+into each addition, okay, minus limit as a goes to infinite, a plus 1 over exponential a, and if you distribute this, minus 1 here, so you are going to obtain 1 here.
+
+350
+00:47:56,311 --> 00:48:23,391
+Now if you integrate, so if you compute this limit as A goes to infinite, 0 over, say infinite over infinite, by L'Hospital, by L'Hospital, minus limit as A goes to infinite, derivation of A plus 1, which is back to A, 1, exponential A, so we got 1 here, so this goes to 0, the answer is 1.
+
+351
+00:48:23,391 --> 00:48:27,872
+So this means that integration is convergent
+
+352
+00:48:27,872 --> 00:48:30,211
+Okay
+
+353
+00:48:30,211 --> 00:48:32,251
+Bak anlaşmayayım bir yer
+
+354
+00:48:32,251 --> 00:48:34,571
+Integralimiz yakınsak arkadaşlar
+
+355
+00:48:34,571 --> 00:48:46,792
+Aslında o sıfırdan sonsuza x çarpı e üzeri eksi x eğrisinin altında kalan bölgenin alanı arkadaşlar birmiş
+
+356
+00:48:46,792 --> 00:48:49,031
+Bu bir aslında yoğunluk fonksiyonudur
+
+357
+00:48:49,031 --> 00:48:52,972
+In fact this is probability density function
+
+358
+00:48:52,972 --> 00:48:57,931
+olasılık yoğunluk fonksiyonu olarak karşımıza çıkacak ileride.
+
+359
+00:48:57,931 --> 00:48:59,171
+Evet, geçiyorum.
+
+360
+00:49:04,851 --> 00:49:08,312
+yoksa diğer tipe geçiyorum.
+
+361
+00:49:08,551 --> 00:49:14,411
+Okay, let me talk about second type of improper integration.
+
+362
+00:49:15,711 --> 00:49:17,591
+Bunu da sunalım, onası bir ara verelim.
+
+363
+00:49:17,732 --> 00:49:23,231
+Second type of improper integration.
+
+364
+00:49:23,231 --> 00:49:25,231
+Okay.
+
+365
+00:49:28,052 --> 00:49:31,331
+Now in this case, in this case, let
+
+366
+00:49:38,195 --> 00:49:43,195
+bf'funktion
+
+367
+00:49:43,603 --> 00:49:48,603
+Yükümetli bir kere
+
+368
+00:49:49,556 --> 00:49:51,176
+sum, discontinu.
+
+369
+00:49:56,851 --> 00:50:03,332
+over some bounded interval.
+
+370
+00:50:07,219 --> 00:50:35,560
+Okay. Now, so in this case, so there are some cases, the first case here, sub case. So from A to, let's suppose that this is B is equal to C. Suppose that C is discontinuity point. Okay, we suppose that F is not continuous at the point B. So in that case, let me put, let me write here some T.
+
+371
+00:50:37,219 --> 00:51:03,400
+ok, in that case, we can easily compute integration from A to T, ok, from A to T integration, f of f of x dx, but if you take the limit of this T, as T goes to B from left-hand side, so we need to put this limit problem
+
+372
+00:51:03,400 --> 00:51:12,539
+limit as t goes to b from left hand side.
+
+373
+00:51:12,539 --> 00:51:23,339
+Okay, now you are going to think this from a to b f of x, b x, improper integration.
+
+374
+00:51:23,539 --> 00:51:30,520
+Attention here, our function is discontinuous at the point b.
+
+375
+00:51:30,519 --> 00:51:51,599
+Okay. Now, so let me talk about other case. Now, in this case, suppose that R function is discontinuous at the point A. Now, in this case, in this case, we put here some t variable.
+
+376
+00:51:55,315 --> 00:52:23,755
+In this case, we integrate from t to b, from t to b integration. You can easily integrate this because our function, according to this case, is continuous function over the interval tb. But here, in this case, we need to use this limit problem. Limit as t goes to a from right hand side.
+
+377
+00:52:23,755 --> 00:52:36,315
+as t goes to a from right-hand side, you are going to obtain this improper integration from a to b f dx.
+
+378
+00:52:37,595 --> 00:52:37,815
+Okay.
+
+379
+00:52:39,215 --> 00:52:50,575
+Now, the third case, our discontinuity point is interior point.
+
+380
+00:52:54,771 --> 00:53:21,911
+here. So this is A. So this is B. Let's say this is discontinued point C. But in that case, so we put here T1. We put here T2, another variable. T1 approaching C from left-hand side. T2 approaching C from right-hand side. Okay. Attention here. Now in that case,
+
+381
+00:53:21,911 --> 00:53:47,851
+So we need to compute integration from A to T1. So this integration from A to B, integration f of x dx is equal to limit as T1 goes to C from left hand side. So we compute from A to T1 integration. Okay.
+
+382
+00:53:47,851 --> 00:54:03,651
+f of x dx, so this is the first part, and plus limit as t2 goes to c from right-hand side.
+
+383
+00:54:03,651 --> 00:54:16,651
+In that case, we need to integrate from t2 to b, okay, from t2 to b, okay, f of x dx.
+
+384
+00:54:17,852 --> 00:54:20,032
+İzlenenikoy için
+
+385
+00:54:20,032 --> 00:54:47,352
+Herhalde anlaşıldı. Nasıl elde edildi? Bir ara verelim. Aradan sonra bir örnek verelim bununla alakalı. Ondan sonra genel soru çözümüne başlayacağız arkadaşlar. Konu tekrarı gibi. Ağırlık tabii ki son konulardan çözeceğiz. Önceki konularla kombine edilmiş sorular da olacak albette. Tamam mı gençler? Var mı sorunuz?
+
+386
+00:54:47,351 --> 00:54:56,251
+sorunuz yoksa bir ara verelim. Herhalde anlaşıldı. Mantığı gayet güzel, kolay bir konu.
+
+387
+00:54:59,251 --> 00:55:03,691
+Okey. Have a break. 15 minutes. 15 dakika.
+
+388
+01:12:39,539 --> 01:12:42,719
+Merhaba gençler. Kaldığımız yerden devam edelim.
+
+389
+01:12:48,724 --> 01:12:50,563
+Okay, let's solve this problem.
+
+390
+01:13:03,028 --> 01:13:19,887
+from 1 to x dx over ln x, sorry, ln x to x.
+
+391
+01:13:19,887 --> 01:13:23,167
+Okay.
+
+392
+01:13:24,727 --> 01:13:34,587
+As you see, if you substitute 1 into integrant function, okay, we have indefinite case.
+
+393
+01:13:35,208 --> 01:13:39,087
+So that's why this is second type improper integration.
+
+394
+01:13:40,287 --> 01:13:42,787
+Now let me write here.
+
+395
+01:13:43,787 --> 01:13:46,647
+So at point 1, we have discontinuity.
+
+396
+01:13:47,647 --> 01:13:49,607
+Okay, from 1 to E.
+
+397
+01:13:49,888 --> 01:14:08,688
+Now we need to put some variables, let's put A here. First of all we need to compute from A to A, A to E integration. Then we need to take limit of A, okay, as A goes to 1 from right hand side.
+
+398
+01:14:08,687 --> 01:14:31,407
+So this is nothing else than limit as a goes to 1 from right-hand side, integration from a to e dx over, so by using property logarithmic function, we have x ln x, okay?
+
+399
+01:14:31,407 --> 01:15:01,388
+Now let's compute indefinite integration of this, dx, x ln, x, so this is nothing else then, so if you say ln, x, u, so 1 over x dx, du, so this is transformed into u over u, so ln, u, ln, u, u is ln, x, okay, we need to put absolute
+
+400
+01:15:01,407 --> 01:15:10,367
+Okay, now limit as A goes to 1 from right hand side.
+
+401
+01:15:10,367 --> 01:15:15,328
+So Ln of Ln x, Ln of Ln x.
+
+402
+01:15:15,987 --> 01:15:19,108
+So we substitute A, B.
+
+403
+01:15:22,804 --> 01:15:40,383
+limit, as a goes to 1 from right hand side, let's substitute ln e, e here, so ln e, 1, ln 1, 0, so we have 0 minus ln of ln a, okay?
+
+404
+01:15:40,383 --> 01:15:42,383
+Now we have this.
+
+405
+01:15:46,836 --> 01:15:55,275
+Now minus limit as a goes to 1 from right hand side, we have ln of ln a.
+
+406
+01:15:56,235 --> 01:15:59,435
+So look at here, minus ln.
+
+407
+01:16:00,655 --> 01:16:05,516
+So ln as a goes to 1 from right hand side here.
+
+408
+01:16:06,176 --> 01:16:09,815
+So let me sketch the graph of ln.
+
+409
+01:16:09,815 --> 01:16:13,035
+If you sketch the graph of ln, so this is 1.
+
+410
+01:16:13,035 --> 01:16:15,035
+Yüce Yüceyiklil.
+
+411
+01:16:15,035 --> 01:16:41,035
+Yüceyiklil.
+
+412
+01:16:41,035 --> 01:16:43,435
+side you are going to obtain minus
+
+413
+01:16:43,435 --> 01:16:45,395
+infinite okay so this is minus
+
+414
+01:16:45,395 --> 01:16:48,615
+infinite approaching minus here so the
+
+415
+01:16:48,615 --> 01:16:51,755
+answer is infinite so that's why
+
+416
+01:16:51,755 --> 01:16:56,575
+diverge this integration is diverge
+
+417
+01:16:56,575 --> 01:16:57,155
+okay
+
+418
+01:17:04,627 --> 01:17:05,447
+olan yoksa
+
+419
+01:17:05,447 --> 01:17:08,547
+geçiyorum.
+
+420
+01:17:14,868 --> 01:17:19,368
+Okay, let's solve this problem.
+
+421
+01:17:19,368 --> 01:17:34,868
+From 0 to 1 dx over x times 1 plus ln square x.
+
+422
+01:17:35,187 --> 01:17:36,868
+Okay, attention here.
+
+423
+01:17:36,987 --> 01:17:38,747
+This is not usually integration.
+
+424
+01:17:38,747 --> 01:17:41,287
+since it has
+
+425
+01:17:41,287 --> 01:17:43,467
+integrin function of this problem
+
+426
+01:17:43,467 --> 01:17:45,368
+has discontinuity
+
+427
+01:17:45,368 --> 01:17:47,007
+over the
+
+428
+01:17:47,007 --> 01:17:49,147
+interval of integration.
+
+429
+01:17:50,447 --> 01:17:51,327
+Okay, please
+
+430
+01:17:51,327 --> 01:17:52,627
+try to solve this problem.
+
+431
+01:17:54,067 --> 01:17:55,167
+Which point is
+
+432
+01:17:55,167 --> 01:17:56,027
+discontinuity?
+
+433
+01:17:56,687 --> 01:17:59,048
+Zero is discontinuity of
+
+434
+01:17:59,048 --> 01:18:01,228
+integrin function 1 over x
+
+435
+01:18:01,228 --> 01:18:03,827
+times 1 plus l square x.
+
+436
+01:18:04,627 --> 01:18:05,548
+Take into account
+
+437
+01:18:05,548 --> 01:18:06,127
+this fact.
+
+438
+01:18:06,127 --> 01:18:08,427
+you can easily compute
+
+439
+01:18:08,427 --> 01:18:10,727
+this integration. Evet herkes
+
+440
+01:18:10,727 --> 01:18:12,627
+hesaplasın bakayım. Bu has olmayan bir
+
+441
+01:18:12,627 --> 01:18:14,607
+integral. Sonuç ne geliyor?
+
+442
+01:18:14,907 --> 01:18:15,587
+Bir bakın bakalım.
+
+443
+01:18:21,427 --> 01:18:22,867
+oradadınız değil mi gençler?
+
+444
+01:18:25,587 --> 01:18:26,888
+evet, bekliyorum.
+
+445
+01:18:27,267 --> 01:18:28,607
+herkes uğraşsın birazcık.
+
+446
+01:19:00,659 --> 01:19:02,239
+Evet, buldunuz mu gençler?
+
+447
+01:19:07,220 --> 01:19:17,619
+Cevap ne geliyor? Yakınsak mı, bıraksak mı? Is this integration convergent or divergent? If it is convergent, so what is the value to which this integration converts?
+
+448
+01:19:40,819 --> 01:19:41,839
+Evet [öğrenci]
+
+449
+01:19:41,839 --> 01:19:45,800
+Ne yaptın?
+
+450
+01:19:48,800 --> 01:19:49,660
+Çözebildin mi?
+
+451
+01:19:51,280 --> 01:19:53,919
+Ya da en azından limit problemine dönüştürebildin mi?
+
+452
+01:19:58,547 --> 01:20:00,768
+[öğrenci], sen yapabildin mi [öğrenci]?
+
+453
+01:20:03,047 --> 01:20:06,387
+Limite dönüştürdüm ama integral'i çözmeye çalışıyorum.
+
+454
+01:20:07,308 --> 01:20:13,127
+Integral basit, daha önce çözmüştük. Sence hangi yöntem? Yerine koyma yöntemi, değişken yöntemi.
+
+455
+01:20:14,667 --> 01:20:25,607
+L'N'X'e u dersek, doğru mu? L'N'X'e u dersek, dx bölü x, du olur, du bölü 1 artı u kare olur, doğru mu [öğrenci]?
+
+456
+01:20:27,487 --> 01:20:28,087
+Evet.
+
+457
+01:20:28,547 --> 01:20:33,327
+Oradan sonrası zaten limit, üst sınırı yerleştir, alt sınırı yerleştir
+
+458
+01:20:33,327 --> 01:20:36,167
+Ama süreksizlik noktasına dikkat edin
+
+459
+01:20:36,167 --> 01:20:43,448
+Evet [öğrenci], süreksizlik noktamız hangisi? [öğrenci], [öğrenci]
+
+460
+01:20:47,572 --> 01:20:49,391
+Evet, [öğrenci] yok burada.
+
+461
+01:21:00,979 --> 01:21:03,720
+not divergent, [öğrenci].
+
+462
+01:21:07,956 --> 01:21:11,315
+it's convergent, it must be convergent.
+
+463
+01:21:14,868 --> 01:21:44,868
+F'
+
+464
+01:21:44,868 --> 01:21:47,787
+by using the usual integration.
+
+465
+01:21:50,307 --> 01:21:54,208
+Evet, [öğrenci], süreksizlik noktamız hangisi?
+
+466
+01:22:03,764 --> 01:22:06,643
+Evet, herkes arazi olmuş gibi görünüyor.
+
+467
+01:22:07,323 --> 01:22:08,523
+[öğrenci] [öğrenci].
+
+468
+01:22:10,443 --> 01:22:10,903
+Yes, sir.
+
+469
+01:22:11,563 --> 01:22:13,743
+Which point is the discontinuity point of this
+
+470
+01:22:13,743 --> 01:22:15,083
+integral function?
+
+471
+01:22:18,163 --> 01:22:19,283
+I think it's
+
+472
+01:22:19,283 --> 01:22:23,163
+3
+
+473
+01:22:23,163 --> 01:22:24,723
+Let me see.
+
+474
+01:22:24,723 --> 01:22:25,203
+P
+
+475
+01:22:25,203 --> 01:22:27,903
+over 2, I think.
+
+476
+01:22:29,783 --> 01:22:30,423
+So,
+
+477
+01:22:30,543 --> 01:22:31,623
+integral function,
+
+478
+01:22:31,623 --> 01:22:34,963
+1 over x times 1 plus ln square x.
+
+479
+01:22:35,783 --> 01:22:39,403
+What is the discontinuity point of this integrant function
+
+480
+01:22:39,403 --> 01:22:41,783
+over the interval 0, 1?
+
+481
+01:22:44,283 --> 01:22:47,583
+Okay, answer is pi over 2 according to my next note.
+
+482
+01:22:47,743 --> 01:22:50,203
+Okay, but discontinuity point is 0.
+
+483
+01:22:50,383 --> 01:22:55,223
+[öğrenci], at the point 0, this integrant function is discontinuous.
+
+484
+01:23:00,979 --> 01:23:05,979
+Bu, ilk bir değer var, 0.
+
+485
+01:23:05,979 --> 01:23:08,279
+Bu, ok, ok.
+
+486
+01:23:09,539 --> 01:23:10,759
+Bu, bu, bu, bu, bu.
+
+487
+01:23:10,759 --> 01:23:17,719
+bu konjuni point okay okay let's solve together i think some people some people
+
+488
+01:23:17,719 --> 01:23:24,039
+could manage to solve this problem okay now so at the point zero our integral function
+
+489
+01:23:24,039 --> 01:23:36,059
+had this point zero and so we write one so let's use red color here so we compute from
+
+490
+01:23:36,059 --> 01:23:38,179
+A to 1. We can easily compute
+
+491
+01:23:38,179 --> 01:23:40,239
+from A to 1 integration, but finally
+
+492
+01:23:40,239 --> 01:23:41,999
+you need to take limit of
+
+493
+01:23:41,999 --> 01:23:44,079
+obten result as A goes to
+
+494
+01:23:44,079 --> 01:23:45,639
+0 from right hand side.
+
+495
+01:23:46,179 --> 01:23:47,799
+Now, this
+
+496
+01:23:47,799 --> 01:23:50,019
+integration is transformed
+
+497
+01:23:50,019 --> 01:23:52,199
+into this limit problem. Limit
+
+498
+01:23:52,199 --> 01:23:54,079
+as A goes
+
+499
+01:23:54,079 --> 01:23:55,939
+to 0 from right hand
+
+500
+01:23:55,939 --> 01:23:58,199
+side. Let's compute
+
+501
+01:23:58,199 --> 01:23:59,919
+integration from
+
+502
+01:23:59,919 --> 01:24:01,859
+A to 1. So
+
+503
+01:24:01,859 --> 01:24:04,059
+dx over
+
+504
+01:24:04,059 --> 01:24:05,979
+x times
+
+505
+01:24:05,979 --> 01:24:08,619
+1 plus ln
+
+506
+01:24:08,619 --> 01:24:09,700
+square x.
+
+507
+01:24:10,100 --> 01:24:10,979
+Is that correct?
+
+508
+01:24:11,840 --> 01:24:12,119
+Now,
+
+509
+01:24:13,160 --> 01:24:16,200
+let's compute this indefinite
+
+510
+01:24:16,200 --> 01:24:17,719
+integration. Let's use
+
+511
+01:24:17,719 --> 01:24:19,119
+black color
+
+512
+01:24:19,119 --> 01:24:21,380
+x over
+
+513
+01:24:21,380 --> 01:24:24,219
+x times 1 plus
+
+514
+01:24:24,219 --> 01:24:25,599
+ln square x.
+
+515
+01:24:25,719 --> 01:24:27,579
+Which kind of substitution method
+
+516
+01:24:27,579 --> 01:24:30,219
+is the best one to solve this problem?
+
+517
+01:24:30,939 --> 01:24:32,420
+ln x, let's say
+
+518
+01:24:32,420 --> 01:24:34,200
+ln x is equal to u.
+
+519
+01:24:34,200 --> 01:24:41,439
+So if you differentiate both sides of this equality, you are going to obtain this differential relation.
+
+520
+01:24:42,039 --> 01:24:46,520
+So now we transform this problem into a well-known problem.
+
+521
+01:24:48,119 --> 01:24:53,000
+U squared, this is nothing else than arctangent u.
+
+522
+01:24:53,060 --> 01:24:57,179
+If you derivate arctangent u, you are going to obtain 1 over 1 plus u squared.
+
+523
+01:24:57,179 --> 01:25:04,299
+Now we need to turn back the former variable arctangent u is lnx.
+
+524
+01:25:04,539 --> 01:25:07,679
+Okay, I think it's clear so far we introduced.
+
+525
+01:25:08,799 --> 01:25:16,999
+Okay, now so this is limit as a goes to 0 from right hand side.
+
+526
+01:25:17,519 --> 01:25:23,499
+So arctangent arctangent arctangent lnx.
+
+527
+01:25:23,500 --> 01:25:27,800
+So this is antiderivision of our integrative function.
+
+528
+01:25:28,479 --> 01:25:37,259
+Now from a to 1, if you substitute lower bound and upper bound by using fundamental theorem,
+
+529
+01:25:37,940 --> 01:25:43,440
+so as a goes to 0 from right hand side, if you substitute upper bound into antiderivision,
+
+530
+01:25:43,440 --> 01:25:47,840
+so you are going to obtain arctangent ln 1, arctangent 0, 0.
+
+531
+01:25:47,840 --> 01:25:53,000
+Now arctangent lnx.
+
+532
+01:25:53,220 --> 01:25:54,920
+Okay, now we have this.
+
+533
+01:25:55,599 --> 01:26:01,560
+If you substitute a0 plus, so you are going to obtain here,
+
+534
+01:26:02,159 --> 01:26:09,920
+minus arctangent ln0 plus, recall the graph of lnx.
+
+535
+01:26:09,920 --> 01:26:15,220
+If you recall the graph of lnx, so as x goes to 0, okay,
+
+536
+01:26:15,219 --> 01:26:18,459
+lnx goes down infinitely, minus infinite.
+
+537
+01:26:18,699 --> 01:26:20,299
+So this is minus infinite.
+
+538
+01:26:20,939 --> 01:26:25,899
+Arctangent minus arctangent minus infinite.
+
+539
+01:26:26,139 --> 01:26:30,119
+So this is arctangent minus infinite approaching minus pi over 2.
+
+540
+01:26:30,119 --> 01:26:33,299
+So minus minus pi over 2.
+
+541
+01:26:33,859 --> 01:26:35,999
+The answer is pi over 2.
+
+542
+01:26:36,779 --> 01:26:40,119
+Now, so as you see, we can easily compute this limit.
+
+543
+01:26:40,119 --> 01:26:42,060
+limit. So this means
+
+544
+01:26:42,060 --> 01:26:43,619
+that our integration
+
+545
+01:26:43,619 --> 01:26:45,959
+is, improper integration
+
+546
+01:26:45,959 --> 01:26:48,379
+is convergent.
+
+547
+01:26:48,879 --> 01:26:50,019
+It converges
+
+548
+01:26:50,019 --> 01:26:51,479
+this value.
+
+549
+01:26:51,780 --> 01:26:53,399
+P'bol 2'ye yakın sarı arkadaşlar.
+
+550
+01:26:53,979 --> 01:26:54,439
+Dikkat edin.
+
+551
+01:26:56,467 --> 01:27:18,587
+sıfırdan bire dx bölü x çarbi 1 artı L'nx kare integrali pi bölü 2'ye yakın sar. Evet. Var mı soru sola? Anlaşmayan bir yer var mı? Herhalde has olmayan integrali mantığı zihninizde oturmuştur diye düşünüyorum. Evet.
+
+552
+01:27:22,771 --> 01:27:25,851
+Şimdi arkadaşlar, genel uygulamalar yapacağız.
+
+553
+01:27:25,851 --> 01:27:32,171
+General exercises. Let's solve problems. General problems.
+
+554
+01:27:40,115 --> 01:27:50,835
+Okay. Now, let me write here. So let R be a region.
+
+555
+01:27:53,555 --> 01:27:55,555
+bounded by
+
+556
+01:27:59,667 --> 01:28:03,987
+bounded by x is equal to y squared
+
+557
+01:28:03,987 --> 01:28:06,927
+and
+
+558
+01:28:06,927 --> 01:28:13,307
+y minus x is equal to minus
+
+559
+01:28:13,307 --> 01:28:15,667
+y minus x
+
+560
+01:28:17,844 --> 01:28:30,563
+Okay. Item A. Item A state the integration.
+
+561
+01:28:32,212 --> 01:28:37,491
+state integration for area.
+
+562
+01:28:41,492 --> 01:28:47,731
+area of R. Okay, item B.
+
+563
+01:28:53,876 --> 01:28:56,155
+b. stator.
+
+564
+01:28:59,604 --> 01:29:01,604
+state the volume
+
+565
+01:29:03,683 --> 01:29:05,604
+integration
+
+566
+01:29:12,020 --> 01:29:15,219
+volumeter integration, 4.
+
+567
+01:29:19,412 --> 01:29:30,412
+şöyle yazıyorum arkadaşlar. Döndürmeyi yazıyorum direkt. Hangi eksen etrafını döndürüyor musunuz? Ona da bakalım. y-
+
+568
+01:29:35,028 --> 01:29:42,528
+if you rotate this region around y-axis, you are going to obtain some solid.
+
+569
+01:29:42,528 --> 01:29:53,028
+so just state the volume of this solid obtained by revolving this region around y-axis.
+
+570
+01:29:53,028 --> 01:30:04,028
+okay now item c state the integration for volume
+
+571
+01:30:05,028 --> 01:30:20,248
+volume, obtained by, obtained by, bu sefer x eksen etrafına döndürmeyi, by revolving our region around x-axis.
+
+572
+01:30:20,247 --> 01:30:21,947
+ok
+
+573
+01:30:29,043 --> 01:30:47,043
+both of them. So in the at the item b we with rotate around y-axis. Okay, in this item we rotate our region around x-axis. Okay?
+
+574
+01:30:53,043 --> 01:31:01,964
+first item is about computing, is about stating integration for the area of R. Herkes yatsın bakalım.
+
+575
+01:31:01,964 --> 01:31:17,964
+Ama çok şey anlatıyor bize. Item D'yi de yapacağım şimdi. Item D. Item D. Item D. Item D. State V.
+
+576
+01:31:22,068 --> 01:31:22,787
+4.
+
+577
+01:31:25,288 --> 01:31:27,468
+Hangi ekseni etrafında döndürelim?
+
+578
+01:31:33,779 --> 01:31:37,379
+x is equal to minus 2.
+
+579
+01:31:44,467 --> 01:31:55,447
+ok, state v integration, state integration for v by using, by revolving our region around x2 line.
+
+580
+01:31:55,947 --> 01:31:58,507
+Uzun uzun yazmıyorum arkadaşlar cümleleri, siz anlıyorsunuz.
+
+581
+01:31:59,987 --> 01:32:01,267
+Zaman kaybetmek istemiyorum.
+
+582
+01:32:03,347 --> 01:32:03,627
+Evet.
+
+583
+01:32:04,707 --> 01:32:10,127
+d bu, e, e'yi de yapayım, bir soruyla bütün konuyu özetleyeceğim.
+
+584
+01:32:10,127 --> 01:32:15,927
+item E, ok, state,
+
+585
+01:32:19,699 --> 01:32:22,499
+yapın siz A, B, C, D, Isra'yla yapın gençler.
+
+586
+01:32:23,939 --> 01:32:25,419
+A'yı herkes yapar zaten.
+
+587
+01:32:25,620 --> 01:32:26,219
+State
+
+588
+01:32:26,219 --> 01:32:30,719
+v by using integration
+
+589
+01:32:30,719 --> 01:32:33,699
+for the solid
+
+590
+01:32:33,699 --> 01:32:35,800
+for solid
+
+591
+01:32:35,800 --> 01:32:37,800
+obtained by revolving
+
+592
+01:32:37,800 --> 01:32:38,699
+our region.
+
+593
+01:32:42,219 --> 01:32:44,399
+Onu yapmıştık değil mi? Yatay yapalım bir de.
+
+594
+01:32:44,399 --> 01:32:57,799
+Y'e, let's rotate your region around Y is equal to 5.
+
+595
+01:33:05,779 --> 01:33:08,020
+ok. Evet.
+
+596
+01:33:14,963 --> 01:33:17,903
+A belli, şöyle küçüldüm, B belli.
+
+597
+01:33:22,996 --> 01:33:42,275
+Okey. Can you see? Each item? A, B, C, D, E. Evet. Bir soru da neredeyse bütün konuları hacimle, alanla alakalı, hacimle alakalı yöntemler var. Özetlemiş olacağız.
+
+598
+01:33:43,955 --> 01:33:52,655
+A'yı yapıyorsunuz değil mi gençler? A'yı yaptınız. B'ye bakın. Önünüzde kağıt kalem olsun.
+
+599
+01:33:52,996 --> 01:34:00,696
+genellikle sorular arkadaşlar finalde integral ifade edin tarzında gelebiliyor.
+
+600
+01:34:04,212 --> 01:34:06,271
+onu modelleyebiliyor olmak önemli.
+
+601
+01:34:07,251 --> 01:34:09,811
+integral'i modelleyebiliyor olmanız çok önemli.
+
+602
+01:34:15,507 --> 01:34:15,687
+Evet.
+
+603
+01:34:42,644 --> 01:34:50,104
+A'yı yapmıştır herkes. B'yi de yapmanız lazım. [öğrenci] yaptın mı A şıkkını?
+
+604
+01:34:53,524 --> 01:34:55,363
+iyi yapıyorum hocam.
+
+605
+01:34:55,843 --> 01:34:58,583
+Hayır, şimdiye çoktan yapmış olman lazımdı [öğrenci].
+
+606
+01:35:12,307 --> 01:35:14,867
+[öğrenci], yapabildin mi aşıkkını?
+
+607
+01:35:17,567 --> 01:35:18,667
+Uğraşıyorum hocam.
+
+608
+01:35:37,971 --> 01:35:43,571
+Hangisine göre ifade etmek kolay sizce? a'yı? y'ye göre mi? x'e göre mi?
+
+609
+01:35:44,191 --> 01:35:51,551
+Which one is the best one in order to express area integration? Horizontal one or vertical one?
+
+610
+01:35:54,611 --> 01:35:58,652
+Of course, why? Very good, [öğrenci]. [öğrenci].
+
+611
+01:36:01,131 --> 01:36:07,831
+Okey [öğrenci], sen şeyi de hesaplamışsın. Alanı da. Alanı hesaplama [öğrenci]. Ben sadece ne dedim?
+
+612
+01:36:07,971 --> 01:36:12,012
+integral ifade edin, bırakın dedim.
+
+613
+01:36:12,111 --> 01:36:14,091
+Alanı evde siz hesaplarsınız kendiniz.
+
+614
+01:36:14,992 --> 01:36:17,312
+Sadece integralleri ifade edelim arkadaşlar.
+
+615
+01:36:17,531 --> 01:36:18,531
+Zaman kaybetmeyelim.
+
+616
+01:36:26,484 --> 01:36:28,883
+it has limit, [öğrenci].
+
+617
+01:36:30,484 --> 01:36:33,723
+some limit problem has limit.
+
+618
+01:36:34,824 --> 01:36:35,784
+so this means that
+
+619
+01:36:35,784 --> 01:36:38,284
+it is convergent. okay.
+
+620
+01:36:38,883 --> 01:36:43,443
+if there is no limit value, so you say that limit is
+
+621
+01:36:43,443 --> 01:36:46,143
+divergent. okay.
+
+622
+01:36:46,923 --> 01:36:51,863
+and as you see, as you know, so in fact some improbable integration
+
+623
+01:36:51,863 --> 01:36:54,244
+is a kind of limit problem.
+
+624
+01:36:55,303 --> 01:36:55,563
+okay.
+
+625
+01:36:55,563 --> 01:37:14,183
+Okay? And that's why, first of all, we transform our integration problem into limit problem. And if this limit problem has limit, so we say that it is convergent. But there is no limit, so then we say that integration is divergent. Okay?
+
+626
+01:37:18,195 --> 01:37:20,195
+senin kafan oraya takıldı herhalde [öğrenci].
+
+627
+01:37:23,764 --> 01:37:30,184
+Şimdi, genelde
+
+628
+01:37:33,908 --> 01:37:35,867
+Evet, A'yı yaptınız. B'ye bakın.
+
+629
+01:37:39,859 --> 01:37:41,220
+i yapalım beraber.
+
+630
+01:37:43,859 --> 01:37:45,699
+Let's do item A.
+
+631
+01:37:50,484 --> 01:37:58,723
+item A. So, R region is something like that. x is equal to y squared.
+
+632
+01:37:59,723 --> 01:38:01,683
+x is equal to y squared.
+
+633
+01:38:05,944 --> 01:38:09,643
+Çok düzgün çizemiyorum arkadaşlar. Siz anlıyorsunuz.
+
+634
+01:38:09,643 --> 01:38:10,643
+Evet.
+
+635
+01:38:14,771 --> 01:38:30,411
+ok, now y is, soru neydi? y is, y minus x is equal to minus 2, 4x 0, y is minus 2, ok, so here 2.
+
+636
+01:38:32,751 --> 01:38:34,391
+ok, so this is our region.
+
+637
+01:38:45,300 --> 01:38:48,859
+So this is equal to x is equal to y square.
+
+638
+01:38:49,700 --> 01:38:57,319
+So this is equal to y minus x is equal to minus 2.
+
+639
+01:38:57,859 --> 01:38:58,220
+Okay.
+
+640
+01:38:58,739 --> 01:39:02,099
+Now when you solve commonly this and this.
+
+641
+01:39:02,279 --> 01:39:05,640
+So just substitute x is equal to y square.
+
+642
+01:39:06,579 --> 01:39:08,819
+And x is equal to y square.
+
+643
+01:39:09,019 --> 01:39:10,119
+Let's solve commonly this.
+
+644
+01:39:10,119 --> 01:39:20,140
+y minus y squared is equal to minus 2 y squared minus y minus 2 is equal to 0.
+
+645
+01:39:20,140 --> 01:39:25,679
+As you see, so this is minus 2 and this is plus 1.
+
+646
+01:39:26,300 --> 01:39:29,880
+y1 is 2 here, so this is 2.
+
+647
+01:39:30,619 --> 01:39:36,200
+And y2 is minus 1 here, here minus 1.
+
+648
+01:39:36,199 --> 01:39:45,039
+Now, so as you see, it is better to express this integration by horizontal cross-section.
+
+649
+01:39:47,179 --> 01:39:54,859
+Right-hand side at the point x is equal to y plus 2.
+
+650
+01:39:55,520 --> 01:40:03,059
+And left-hand point of this horizontal bar on the always x is equal to y squared.
+
+651
+01:40:03,059 --> 01:40:21,499
+Now, so area of this line segment, horizontal line segment, DA, right hand point, y plus 2, minus left hand point, y square.
+
+652
+01:40:21,499 --> 01:40:27,579
+So this is the length of bar and thickness of this bar. Let me put here thickness.
+
+653
+01:40:27,579 --> 01:40:28,579
+Ve bu yi'nin y'nin y'nin y'nin y
+
+654
+01:40:57,579 --> 01:40:59,460
+The area of this region.
+
+655
+01:41:00,079 --> 01:41:00,859
+Is there any question?
+
+656
+01:41:01,579 --> 01:41:04,259
+I think it is very easy to compute this integration.
+
+657
+01:41:05,040 --> 01:41:05,240
+Okay.
+
+658
+01:41:05,839 --> 01:41:06,119
+Now.
+
+659
+01:41:07,880 --> 01:41:08,279
+Let's.
+
+660
+01:41:12,756 --> 01:41:32,756
+let's solve item b. item b says that we need to state volume of integration for the solid of solid volume of solid obtained by revolving R around y-axis. Okay, let me sketch this again.
+
+661
+01:41:41,747 --> 01:41:57,848
+Okay. So this is minus 1. So this is 2. Burası neydi arkadaşlar? y-x eşittir 2. y-x eşittir. eksi kim iyiydi?
+
+662
+01:41:57,848 --> 01:42:11,808
+Okay, so this is x is equal to y square. Okay, now, so in this case, we need to rotate this region around y axis. Let's rotate this region around y axis.
+
+663
+01:42:13,948 --> 01:42:22,387
+So which method is the best one, do you think? Shell method or shell method or
+
+664
+01:42:25,811 --> 01:42:26,811
+washer metod or disk metod, birçok? hangisi sizce avantajlı? washer metod, neyimli disk metod, I think. washer, okay. now, so let me use horizontal bar again. okay, thickness of this horizontal bar dy, this means that this is, okay, this is
+
+665
+01:42:56,148 --> 01:43:03,507
+...some integration which can be computed by horizontal bars, dy variable.
+
+666
+01:43:03,507 --> 01:43:09,068
+Okay, now right-hand point always on the x is equal to y plus 2.
+
+667
+01:43:09,847 --> 01:43:14,627
+And left-hand point is always on the x1, always y squared.
+
+668
+01:43:15,367 --> 01:43:19,547
+Now to look at here, let me use different color here, black one.
+
+669
+01:43:20,187 --> 01:43:23,507
+So let's say...
+
+670
+01:43:23,507 --> 01:43:53,487
+R1'in bir parçası.
+
+671
+01:43:53,508 --> 01:43:54,908
+Pull yöntemiyle arkadaşlar.
+
+672
+01:43:55,307 --> 01:43:57,588
+İç içe geçmiş diskleri çıkartırsanız
+
+673
+01:43:57,588 --> 01:43:58,447
+içeridekini
+
+674
+01:43:58,447 --> 01:44:01,027
+diskin, washer, pull elde
+
+675
+01:44:01,027 --> 01:44:01,548
+dersiniz.
+
+676
+01:44:02,107 --> 01:44:03,847
+The volume
+
+677
+01:44:03,847 --> 01:44:07,408
+from horizontal level
+
+678
+01:44:07,408 --> 01:44:09,107
+minus one
+
+679
+01:44:09,107 --> 01:44:11,168
+attention here.
+
+680
+01:44:11,247 --> 01:44:13,347
+From minus one, y is equal
+
+681
+01:44:13,347 --> 01:44:15,107
+to minus one to y is equal
+
+682
+01:44:15,107 --> 01:44:15,768
+to two.
+
+683
+01:44:16,508 --> 01:44:18,648
+Five times r1 square
+
+684
+01:44:18,648 --> 01:44:21,387
+minus r2
+
+685
+01:44:21,387 --> 01:44:22,228
+square
+
+686
+01:44:22,228 --> 01:44:25,308
+Y times thickness of this bar
+
+687
+01:44:25,308 --> 01:44:26,408
+by.
+
+688
+01:44:27,408 --> 01:44:29,067
+This means that all
+
+689
+01:44:29,067 --> 01:44:31,228
+the information must be written in terms
+
+690
+01:44:31,228 --> 01:44:32,927
+of y
+
+691
+01:44:32,927 --> 01:44:35,148
+times r1
+
+692
+01:44:35,148 --> 01:44:37,247
+x2. You need to express x2
+
+693
+01:44:37,247 --> 01:44:38,588
+in terms of y.
+
+694
+01:44:39,148 --> 01:44:41,268
+Here y plus 2
+
+695
+01:44:41,268 --> 01:44:43,388
+y plus
+
+696
+01:44:43,388 --> 01:44:44,607
+2 square
+
+697
+01:44:44,607 --> 01:44:49,228
+r1
+
+698
+01:44:49,228 --> 01:44:50,707
+is
+
+699
+01:44:50,707 --> 01:44:56,828
+x2, r2 is x1, r2 is x1, x1 is equal to y2.
+
+700
+01:44:58,008 --> 01:45:01,287
+Now we need to write y2 and square.
+
+701
+01:45:01,287 --> 01:45:03,087
+Okay, and dy.
+
+702
+01:45:03,828 --> 01:45:13,567
+So this is the integration model giving us the volume of solid obtained by revolving this region around y-axis.
+
+703
+01:45:14,127 --> 01:45:19,327
+Is there any question about this result?
+
+704
+01:45:19,327 --> 01:45:21,007
+Sorusu olan var mı?
+
+705
+01:45:22,807 --> 01:45:24,667
+Sorusu olan yok galiba.
+
+706
+01:45:25,467 --> 01:45:25,747
+Ok.
+
+707
+01:45:26,807 --> 01:45:28,947
+Let's try to obtain item C.
+
+708
+01:45:29,727 --> 01:45:31,148
+Your goal is to obtain
+
+709
+01:45:31,148 --> 01:45:33,407
+integration model giving us
+
+710
+01:45:33,407 --> 01:45:34,667
+the volume of
+
+711
+01:45:34,667 --> 01:45:36,867
+solid obtained by
+
+712
+01:45:36,867 --> 01:45:39,207
+revolving the region R
+
+713
+01:45:39,207 --> 01:45:40,547
+around x-axis.
+
+714
+01:45:46,323 --> 01:45:55,403
+Evet. Okey, do you think which method is the best one to obtain item C? Shell method or washer method?
+
+715
+01:45:58,103 --> 01:46:04,023
+Of course, [öğrenci]. Good for you. Güzel. Çalışmışsınız. Videolar izliyorsunuz herhalde arkadaşlar.
+
+716
+01:46:11,891 --> 01:46:26,971
+Evet, herkes kabuk yönteminin avantajlı olduğunu anlamıştır umarım. C şıkkındaki integrali halletmek için. Neden kabuk olduğunu anlamaya çalışın arkadaşlar. Biraz bekliyorum. Herkesin yapmasını istiyorum.
+
+717
+01:46:38,195 --> 01:46:52,235
+Evet, soru soralım bakayım. Neden kabuk? diye buradan belirlediğimiz. [öğrenci], [öğrenci], do you think? Why is this shell method the best one?
+
+718
+01:46:59,988 --> 01:47:19,287
+[öğrenci]'ya, not here. [öğrenci], sence neden kabuk yöntemini tercih ediyoruz? Hadi disk yöntemi veya pul yöntemini kullanalım desek, ne gibi bir engelle karşılaşırız? [öğrenci] gibi bir zorlukla karşılaşırız? [öğrenci], orada mısın?
+
+719
+01:47:21,787 --> 01:47:28,107
+O da orada değil. Bak işte arkadaşlar, derse katılmıyorsunuz. Derse katılmayanlar sıkıntı yaşıyor genellikle.
+
+720
+01:47:29,988 --> 01:47:48,607
+Evet [öğrenci] birisi cevap versin arkadaşlar. Sizce disk yöntemini veya pul yöntemini kullanmayı tercih edersek ne gibi bir zorlukla karşılaşırız? O zorluğu görmemiz lazım. Böylelikle kabuğun daha avantajlı olduğunu anlayacağız.
+
+721
+01:47:48,607 --> 01:47:54,727
+Evet, [öğrenci], sence neden tercih etmiyoruz?
+
+722
+01:47:57,007 --> 01:48:03,927
+Tamam, orası öyle de, yöntemin birini seçtiğimizde bize zorluk çıkartacak, o zorluğu görmemiz lazım
+
+723
+01:48:03,927 --> 01:48:11,127
+Biz çubuğun konumuna nasıl konumlandığına bakarak hangi yöntemi kullanacağımızı biliyoruz
+
+724
+01:48:11,127 --> 01:48:18,568
+Ama o yeterli değil, bir de o yöntemi kullanırsak benim karşıma çıkartacağı zorlukları da görebiliyor olmam lazım
+
+725
+01:48:18,568 --> 01:48:20,168
+anlatabiliyor muyum?
+
+726
+01:48:20,168 --> 01:48:21,248
+[öğrenci] [öğrenci].
+
+727
+01:48:24,688 --> 01:48:27,368
+So that's not, it's not reason.
+
+728
+01:48:28,767 --> 01:48:35,528
+Okay, so but if you prefer to use this method or washer method, you are gonna have some obstacles.
+
+729
+01:48:36,088 --> 01:48:48,447
+Okay, but if you put some vertical bars in order to scan your region, so there are the, so the upper endpoint and lower endpoint or the vertical bar is gonna change.
+
+730
+01:48:48,567 --> 01:49:14,627
+Okay, so this means that you need to write many integrations, distinct type many integrations. That's why we do not prefer to use, okay, vertical cross sections. But if you put horizontal cross section to scan your region, and if you rotate these horizontal cross sections about x-axis, you are going to obtain some shell.
+
+731
+01:49:14,627 --> 01:49:35,588
+Dikkat edin arkadaşlar, yatay çubukları tararken, yatay çubuklarla bölgeyi tararken, sağındaki ve solundaki noktalar değişmiyor, eğriler değişmiyor.
+
+732
+01:49:35,588 --> 01:49:38,447
+Aynı eğri üzerinde, aynı sınır eğrileri üzerinde.
+
+733
+01:49:38,447 --> 01:49:42,047
+Bu ne demek? Bir tek integral ile ben problemini çözebilirim demek
+
+734
+01:49:42,047 --> 01:49:45,187
+İntegral de kolay gelirse çok harika olur
+
+735
+01:49:45,187 --> 01:49:49,047
+Ama dikey çubuklarla bölgemizi taramaya çalışırsak
+
+736
+01:49:49,047 --> 01:49:50,867
+Dikkat edin taralı bölgeyi
+
+737
+01:49:50,867 --> 01:49:51,867
+O zaman ne olur?
+
+738
+01:49:51,947 --> 01:49:56,387
+Dikey çubuğun altındaki ve üstündeki eğrilerin YH-T refik şeklinde yazılması lazım
+
+739
+01:49:56,387 --> 01:49:57,687
+Ve onlar da değişecek
+
+740
+01:49:57,687 --> 01:50:00,527
+O zaman sizin işinizi zorlaştıracaktır
+
+741
+01:50:00,527 --> 01:50:04,387
+Birden fazla integralle hesaplamak zorunda kalacaksınız
+
+742
+01:50:04,387 --> 01:50:05,907
+O yüzden ne yapıyorum ben?
+
+743
+01:50:05,907 --> 01:50:11,327
+kesinlikle kabuğu tercih ediyorum. Tamam mı arkadaşlar? Evet.
+
+744
+01:50:16,692 --> 01:50:17,252
+ok.
+
+745
+01:50:17,912 --> 01:50:18,291
+let's
+
+746
+01:50:18,291 --> 01:50:20,711
+item
+
+747
+01:50:20,711 --> 01:50:24,192
+c
+
+748
+01:50:26,804 --> 01:50:27,804
+ve sürekli.
+
+749
+01:50:44,659 --> 01:50:54,679
+Okay, so this is x is equal to y plus 2. x is equal to y plus 2. Is that correct? Now, so this is our region.
+
+750
+01:51:00,851 --> 01:51:28,612
+Ah, oh, this is some, um, okay, so this is not, um, this is not usual, uh, integration problem. Okay, so let me write here. So we need to, we need to correct this answer. So, if you rotate this region around y x-axis, so there are some part here, look at here, there are some part here, but, so in fact, so this is,
+
+751
+01:51:30,851 --> 01:51:33,851
+Çok komplikalı bir problem
+
+752
+01:51:33,851 --> 01:51:59,851
+Dikkat edin arkadaşlar, orada bir simetrik bölge var döndürme esnasında oradakiler birbirini ne yapacak arkadaşlar elimine edecek fark ettiniz mi çok o biraz böyle bir soru gelmez arkadaşlar ama güzel bir mantığı var gördüm onu herkes
+
+753
+01:52:30,851 --> 01:53:00,831
+in that case, so symmetric have, we have some symmetric part here, now, so here we have from minus one to plus one, so you don't need to write this, okay, now if you rotate this region, so you cannot write this from minus one to one, okay, so you cannot write this, okay, so this is, this is mistake, it is sufficient to write this from
+
+754
+01:53:00,851 --> 01:53:02,231
+from 0 to 1.
+
+755
+01:53:02,671 --> 01:53:02,851
+Ok?
+
+756
+01:53:03,731 --> 01:53:04,892
+From 0 to 1.
+
+757
+01:53:05,032 --> 01:53:06,292
+You need to write this.
+
+758
+01:53:06,332 --> 01:53:07,671
+If you rotate this around.
+
+759
+01:53:08,712 --> 01:53:09,292
+Dikkat edin.
+
+760
+01:53:09,732 --> 01:53:13,012
+Sıfırdan bire yapmanız yeterli arkadaşlar.
+
+761
+01:53:13,531 --> 01:53:15,432
+Eksi birden bire yapmanıza gerek yok.
+
+762
+01:53:15,551 --> 01:53:18,712
+Çünkü birini döndürürken ötekinin aynı bölgeyi üzerinde dönüyor.
+
+763
+01:53:18,792 --> 01:53:19,331
+Dikkat edin.
+
+764
+01:53:21,031 --> 01:53:22,831
+Their orbits are same.
+
+765
+01:53:23,311 --> 01:53:24,251
+Görüngeleri aynı.
+
+766
+01:53:24,411 --> 01:53:25,411
+Her iki parçanın da.
+
+767
+01:53:25,592 --> 01:53:25,971
+Tamam mı?
+
+768
+01:53:26,471 --> 01:53:30,351
+Bundan elde edeceğin cisim ile ondan elde edeceğin cisim döndürürsen ne olacak?
+
+769
+01:53:30,351 --> 01:53:31,592
+şöyle bir cisim elde edeceksin.
+
+770
+01:53:39,475 --> 01:53:45,475
+okay so this is our solid okay but if rotate this.
+
+771
+01:53:49,684 --> 01:53:51,044
+böyle mi yapmıştık şöyle?
+
+772
+01:53:51,343 --> 01:54:01,524
+if rotate this region around x-axis from 0 to 1, you are going to obtain the same.
+
+773
+01:54:02,803 --> 01:54:04,923
+okay? can you see that?
+
+774
+01:54:05,704 --> 01:54:07,563
+this is very complicated example.
+
+775
+01:54:07,843 --> 01:54:14,003
+i didn't, i have not seen such example so far.
+
+776
+01:54:14,003 --> 01:54:17,743
+öyle bir örnek görmedim arkadaşlar şu ana kadar.
+
+777
+01:54:17,743 --> 01:54:39,703
+ama siz görmüş oldunuz. Herkes anladı herhalde. Doğru mu? O zaman ben ne yapıyorum? Burayı kurgularken, direkt döndürürken, o zaman bunu kurgularken sıfırdan, sıfırdan ikiye alacağım. Eksi birden ikiye almayacağım. Orayı herkes anladı galiba.
+
+778
+01:54:39,704 --> 01:54:45,184
+ok, now because of this case, because of this case
+
+779
+01:54:52,884 --> 01:54:55,283
+Okay, let's consider symmetric case here.
+
+780
+01:54:58,344 --> 01:55:06,264
+So this and this symmetric. So that's why it is sufficient to write from 0 to 2. Okay, so here 2.
+
+781
+01:55:07,344 --> 01:55:13,763
+Now, so we put some horizontal bar here to scan our region.
+
+782
+01:55:21,876 --> 01:55:25,235
+we rotate around x-axis.
+
+783
+01:55:29,268 --> 01:55:59,028
+x x's. Now in this case, so this is, this is y. Okay, the length of this bar, the length of this bar, x2 minus x1. The length of this bar, x2 minus x1. And in order to obtain shell method, by shell method, by shell volume from,
+
+784
+01:55:59,268 --> 01:56:27,028
+0 to 2, from 0 to 2, okay, 2 pi coming from the shell formula, x2 minus, so y times, y times, x2 in terms of y, y plus 2 minus x1 y square and dy.
+
+785
+01:56:27,027 --> 01:56:31,448
+ok, attention here, we do not put here minus one
+
+786
+01:56:31,448 --> 01:56:33,507
+dikkat edin arkadaşlar
+
+787
+01:56:33,507 --> 01:56:36,067
+orada döndürürken ne yapıyoruz?
+
+788
+01:56:36,207 --> 01:56:37,827
+birbirinin yörüngesine giriyor
+
+789
+01:56:37,827 --> 01:56:40,227
+o yüzden eksi birden
+
+790
+01:56:40,227 --> 01:56:41,727
+bire almıyorum
+
+791
+01:56:41,727 --> 01:56:43,107
+herkes burayı anladı galiba
+
+792
+01:56:49,652 --> 01:57:11,791
+Okay, so we have some symmetric case. Okay, and so we have common x's x-axis ss 2s. If you rotate the region 2s around x-axis, you are going to obtain, okay, you are going to obtain the solid obtained by revolving s. [öğrenci], did you get that?
+
+793
+01:57:11,791 --> 01:57:22,512
+if you rotate region to S you are going to obtain the solid by revolving S around X.
+
+794
+01:57:23,711 --> 01:57:35,332
+İki S'i x ekseni etrafında döndürmeyle elde ettiğin cisim ile bir tane S'yi x ekseni etrafında döndürmeyle elde ettiğin cisim aynı.
+
+795
+01:57:35,332 --> 01:57:57,711
+yani birbirinin ne yapıyor? Bir tanesinin hiçbir etkisi yokmuş gibi oluyor. O yüzden sıfırdan bire, sıfırdan ikiye alıyoruz arkadaşlar. Tamam mı? Evet. Var mı sorusu olan? Sorusu olan yok galiba. Evet [öğrenci] soru mu soracağım? Sor bakayım.
+
+796
+01:58:02,579 --> 01:58:12,219
+Sesimi açtım hocam, yazamadım. Madem orası aynı, neden çıkarma ihtiyacı duyuyoruz? Çıkarmasak da aynı sonucu elde edeceksin.
+
+797
+01:58:15,159 --> 01:58:17,739
+Bir dene bakayım, merak ettim, bilmiyorum. Bir dene bakayım.
+
+798
+01:58:21,039 --> 01:58:28,599
+Bir dene bakayım, ne olacak? Ama şöyle söyleyeyim, integralleri yaz, bir bak bakalım.
+
+799
+01:58:28,599 --> 01:58:39,139
+Deneyince olmuyor. Deneyince 9 pi bölü 2 çıkıyor çıkarmadığımızda. Çıkardığımızda 8 pi bölü 3 çıkıyor.
+
+800
+01:58:39,139 --> 01:58:50,159
+Çünkü sen integral hesaplıyorsun. Anlatabiliyor muyum? Integral hesaplarken dikkat edeceksin. Ekstradan bir terim getiriyorsun. Oradaki şeyler de pozitif olacak. Yani farklı gelir.
+
+801
+01:58:50,159 --> 01:59:08,979
+bir de sıfırdan bir hesaplarsan pozitif gelir ötekinde eksi birden sıfır hesaplarsan o integrali döndürmeden kaynaklı ne kadar birbirini götürüyor o zaman da şey oluyor işte doğru olan bu
+
+802
+01:59:08,979 --> 01:59:12,819
+tamam mı?
+
+803
+01:59:12,819 --> 01:59:13,679
+tamamdır hocam
+
+804
+01:59:13,679 --> 01:59:18,739
+Ama böyle bir problem gelmez merak etmeyin
+
+805
+01:59:18,739 --> 01:59:20,620
+You couldn't see such problem
+
+806
+01:59:24,916 --> 01:59:37,095
+Evet, geçiyorum. Item D ya da bir ara verelim. 10 dakika ara verelim gençler. Break time 10 minutes.
+
+807
+02:11:56,787 --> 02:11:58,787
+Evet, merhaba gençler.
+
+808
+02:12:01,188 --> 02:12:03,187
+Item C.
+
+809
+02:12:03,187 --> 02:12:06,187
+So let's solve item D.
+
+810
+02:12:06,187 --> 02:12:14,187
+x is equal to minus 2. Let's rotate this region around x minus 2.
+
+811
+02:12:16,187 --> 02:12:25,187
+So let's sketch another figure.
+
+812
+02:12:37,876 --> 02:12:51,876
+Now, we are going to rotate this region around x is equal to minus 2. x is equal to minus 2 somewhere here.
+
+813
+02:12:54,644 --> 02:12:58,303
+Okay, if rotate this region around minus two,
+
+814
+02:13:02,868 --> 02:13:20,868
+you are going to obtain some solid. which method is the best one? of course shell method. okay? or disk method, washer method. i think washer method is the best one.
+
+815
+02:13:20,595 --> 02:13:25,076
+oh sorry, not two. So we rotate around x is equal to minus two.
+
+816
+02:13:28,115 --> 02:13:30,915
+This is y axis. So this is x axis.
+
+817
+02:13:33,715 --> 02:13:42,675
+Now as you see in this case our bar scanning to scanning the region is perpendicular to rotation axis.
+
+818
+02:13:43,795 --> 02:13:48,755
+Okay. This means that washer method is the best one
+
+819
+02:13:48,755 --> 02:13:50,856
+to solve this problem.
+
+820
+02:13:52,095 --> 02:13:55,915
+Now, let's say this is R1.
+
+821
+02:13:56,675 --> 02:13:59,215
+Let's say this is R2.
+
+822
+02:14:00,235 --> 02:14:02,136
+Okay, so what is R1?
+
+823
+02:14:02,555 --> 02:14:11,776
+R1, so this is, endpoint is always on the X, X, X2, X is equal to Y plus 2.
+
+824
+02:14:12,575 --> 02:14:16,715
+And left endpoint is always on the X is equal to Y squared.
+
+825
+02:14:16,715 --> 02:14:38,075
+Okay, so R1 is x1, look at here, so this is x2, y plus 2, and this distance, this distance, 2 plus 2, so this is R1, is that correct?
+
+826
+02:14:38,075 --> 02:15:01,275
+Now, so this is two units. So R2, R2 is, this distance is positively y square, so this is y square, okay? So y square plus two. Attention here, okay? Now,
+
+827
+02:15:01,276 --> 02:15:08,716
+buy washer method, buy washer method
+
+828
+02:15:13,235 --> 02:15:26,835
+Volum, is nothing else than from the look at here, we scan our region from the level minus one, y is equal to minus one to y is equal to two.
+
+829
+02:15:26,835 --> 02:15:43,175
+Here, maximum level for horizontal cross section is two. Pi r one square r two square r one square minus r two square thickness of bar dy.
+
+830
+02:15:43,235 --> 02:15:46,436
+Ok, so just substitute R1 and R2
+
+831
+02:15:46,436 --> 02:15:48,155
+Is there any question?
+
+832
+02:15:50,835 --> 02:15:51,695
+Sorusu olan var mı?
+
+833
+02:15:54,835 --> 02:15:56,015
+Sorunuz yoksa
+
+834
+02:15:59,956 --> 02:16:01,155
+Geçiyorum arkadaşlar.
+
+835
+02:16:01,456 --> 02:16:01,696
+Şimdi
+
+836
+02:16:01,696 --> 02:16:04,155
+E şıkkında ne diyordu?
+
+837
+02:16:04,755 --> 02:16:05,856
+So let's check it out.
+
+838
+02:16:06,575 --> 02:16:07,355
+Item E.
+
+839
+02:16:09,035 --> 02:16:10,155
+We are gonna
+
+840
+02:16:10,155 --> 02:16:12,515
+rotate our region
+
+841
+02:16:12,515 --> 02:16:13,836
+around Y5.
+
+842
+02:16:14,855 --> 02:16:16,235
+Okay. So let's
+
+843
+02:16:16,235 --> 02:16:17,915
+write here item E.
+
+844
+02:16:18,716 --> 02:16:20,015
+And rotate
+
+845
+02:16:20,015 --> 02:16:21,615
+this region
+
+846
+02:16:21,615 --> 02:16:23,015
+around
+
+847
+02:16:23,015 --> 02:16:25,555
+Y5.
+
+848
+02:16:28,555 --> 02:16:29,315
+Okay.
+
+849
+02:16:29,315 --> 02:16:31,335
+So this is our region.
+
+850
+02:16:35,219 --> 02:16:39,279
+2, we have here minus 1.
+
+851
+02:16:40,140 --> 02:16:45,419
+Okay, we are going to rotate this region around, let me use different color here.
+
+852
+02:16:48,499 --> 02:16:49,539
+Sorry for that.
+
+853
+02:16:51,059 --> 02:16:56,699
+Okay, so we are going to rotate this region around y5.
+
+854
+02:16:56,699 --> 02:16:59,739
+5 is equal to 5 line.
+
+855
+02:17:00,939 --> 02:17:03,699
+Okay, now this.
+
+856
+02:17:03,699 --> 02:17:11,060
+Ok, so in this case we put some horizontal bar, bars here.
+
+857
+02:17:13,999 --> 02:17:18,299
+Right hand point is always on the x is equal to y plus 2.
+
+858
+02:17:18,859 --> 02:17:23,159
+Left hand point is always on the x is equal to y square.
+
+859
+02:17:23,919 --> 02:17:23,979
+Ok.
+
+860
+02:17:25,879 --> 02:17:29,319
+Now, so which method is the best one do you think?
+
+861
+02:17:29,319 --> 02:17:35,079
+So in this case, so as you see the bar scanning our region is parallel to Y5 line.
+
+862
+02:17:35,079 --> 02:17:40,800
+This means that it is better to use shell method, by shell method.
+
+863
+02:17:43,080 --> 02:17:44,659
+By shell method.
+
+864
+02:17:47,039 --> 02:17:51,459
+Now, so we need the, we need the radius of shell.
+
+865
+02:17:52,819 --> 02:17:56,539
+So just focus on this bar, horizontal bar.
+
+866
+02:17:56,539 --> 02:18:04,959
+So this is radius of shell and thickness of shell dy.
+
+867
+02:18:05,900 --> 02:18:06,020
+Okay.
+
+868
+02:18:06,520 --> 02:18:16,359
+The high of shell, the high of shell x2 right hand point minus left hand point.
+
+869
+02:18:18,300 --> 02:18:19,800
+Left hand point.
+
+870
+02:18:19,799 --> 02:18:42,999
+Okay, and by shell method, volume from the minus 1 to plus 2, radius of shell 2 pi, do not forget 2 pi time, radius of shell, high of shell, and thickness of shell.
+
+871
+02:18:42,999 --> 02:18:45,179
+So this is our formula.
+
+872
+02:18:46,219 --> 02:18:48,979
+Reduce of shell, look at here.
+
+873
+02:18:49,740 --> 02:18:54,999
+So this total distance.
+
+874
+02:18:55,660 --> 02:18:56,740
+This is 5.
+
+875
+02:18:57,779 --> 02:18:58,839
+So this is.
+
+876
+02:19:00,139 --> 02:19:00,800
+Okay.
+
+877
+02:19:01,719 --> 02:19:03,839
+So this is y.
+
+878
+02:19:06,300 --> 02:19:10,320
+And reduce of shell, 5 minus y.
+
+879
+02:19:10,320 --> 02:19:10,979
+Okay.
+
+880
+02:19:10,979 --> 02:19:17,819
+Now, so from minus 1 to 2, radius of shell must be positive.
+
+881
+02:19:18,080 --> 02:19:19,659
+5 minus y.
+
+882
+02:19:20,499 --> 02:19:25,019
+The height of shell, y plus 2 minus y square.
+
+883
+02:19:26,119 --> 02:19:28,399
+And thickness of shell, it's obvious that.
+
+884
+02:19:30,219 --> 02:19:30,679
+E y.
+
+885
+02:19:31,160 --> 02:19:31,459
+Okay.
+
+886
+02:19:33,419 --> 02:19:34,199
+Is there an equation?
+
+887
+02:19:35,879 --> 02:19:36,959
+This is item E.
+
+888
+02:19:37,619 --> 02:19:38,479
+Soru soran var mı?
+
+889
+02:19:38,479 --> 02:19:41,879
+Ojan beran nomadınız yer varma
+
+890
+02:19:49,747 --> 02:19:50,848
+yok değil mi gençler?
+
+891
+02:19:54,307 --> 02:19:54,708
+okay
+
+892
+02:19:54,708 --> 02:19:56,228
+okay let me
+
+893
+02:19:56,228 --> 02:19:59,907
+solve this problem
+
+894
+02:19:59,907 --> 02:20:03,187
+focus on this
+
+895
+02:20:03,187 --> 02:20:05,187
+okay
+
+896
+02:20:08,404 --> 02:20:11,443
+So let's say this is x is equal to y squared.
+
+897
+02:20:14,163 --> 02:20:22,803
+So look at this example. So let's say that this is x is equal to 1. Okay.
+
+898
+02:20:25,043 --> 02:20:37,603
+Let's consider this. Actually we have symmetric area s, s. Okay. Now if you rotate this volume,
+
+899
+02:20:38,404 --> 02:20:45,804
+Let's compute from, okay, so this must be minus 1.
+
+900
+02:20:48,043 --> 02:20:50,424
+So this must be plus 1.
+
+901
+02:20:52,484 --> 02:20:58,543
+Okay, let's rotate this region whose area is 2S around X-axis.
+
+902
+02:21:05,043 --> 02:21:08,723
+What is the volume? Herkes hesaplasın bakayım bunu.
+
+903
+02:21:11,403 --> 02:21:11,964
+Bekliyorum.
+
+904
+02:21:16,435 --> 02:21:26,276
+basit bir soru. O simetriklikle alakalı durumu bize izah edecek. Çok şey anlatacak bize. Evet, herkes yapsın bakalım.
+
+905
+02:21:31,827 --> 02:21:52,668
+Evet. Ben de bazı öğrencilere soru sorayım. [öğrenci]. Evet. [öğrenci] mı integralini bunu? Hacmi veren integrali [öğrenci]. Orada mısın [öğrenci]?
+
+906
+02:21:59,156 --> 02:22:05,056
+burada değil. [öğrenci] buradaydın sen değil mi [öğrenci]? [öğrenci] bağırsa olmaz. [öğrenci].
+
+907
+02:22:10,164 --> 02:22:11,343
+yapabildim mi [öğrenci]?
+
+908
+02:22:12,384 --> 02:22:13,023
+İntegrali.
+
+909
+02:22:16,104 --> 02:22:17,124
+[öğrenci] de yok.
+
+910
+02:22:28,659 --> 02:22:47,019
+Evet. Evet gençler. Hemen bakalım. Herhalde çoğunuz yapmıştır. Ne yapacaktık arkadaşlar? İki durum var. Bir arkadaşımız sormuştu. Bakalım bu ne gelecek?
+
+911
+02:22:47,019 --> 02:23:04,099
+is v is equal to is v equal to is v equal to from minus one to one.
+
+912
+02:23:04,099 --> 02:23:07,159
+O zaman bunu yaparsan ne olur?
+
+913
+02:23:08,799 --> 02:23:11,079
+Burada sıkıntı yaşarsınız arkadaşlar.
+
+914
+02:23:12,279 --> 02:23:14,759
+Kabuk yöntemiyle yapsam ne yapacağım?
+
+915
+02:23:14,759 --> 02:23:21,719
+şimdi buradan dik yapsam olmaz. Gördünüz mü? Birbirini bak ne yapıyor? Nötrülüyor şu çubuğa dikkat edin arkadaşlar.
+
+916
+02:23:23,859 --> 02:23:35,559
+If rotate this. Ne yapacağım ben şimdi burada? Eksi birden bu üst nokta. Olayı o zaman böyle yapacaksın.
+
+917
+02:23:35,560 --> 02:23:45,079
+Bu üst nokta Y eşittir kök X, alt nokta Y eşittir eksi kök X
+
+918
+02:23:45,079 --> 02:23:51,259
+Bu şekilde olacak. Şimdi eksi birden bire kök X
+
+919
+02:23:51,259 --> 02:23:57,659
+karesi eksi, eksi kök X'in karesi
+
+920
+02:23:57,659 --> 02:24:00,460
+Böyle yaparsam ne gelir?
+
+921
+02:24:02,859 --> 02:24:04,159
+Ne gelir cevap?
+
+922
+02:24:05,560 --> 02:24:12,079
+S'fıraklı.
+
+923
+02:24:12,079 --> 02:24:15,360
+S'fıraklı because of this symmetric case.
+
+924
+02:24:15,360 --> 02:24:16,920
+So this is not true.
+
+925
+02:24:18,759 --> 02:24:23,159
+Okay, now this one, because of the fact that,
+
+926
+02:24:23,159 --> 02:24:25,479
+so if you rotate this two S,
+
+927
+02:24:25,479 --> 02:24:28,880
+if you rotate this two S region around X-axis,
+
+928
+02:24:28,880 --> 02:24:32,560
+you are gonna obtain the solid obtained by revolving S
+
+929
+02:24:32,560 --> 02:24:34,680
+around X-axis.
+
+930
+02:24:34,679 --> 02:24:44,679
+Dikkat edin, iki S'yi X'in etrafında döndürmeyle elde edilen cisim ile S bölgesini X'in etrafında elde etme ile döndürilen cisim aynıdır.
+
+931
+02:24:44,679 --> 02:24:50,679
+Birbirini elimine eder o yüzden, sıfırlar yani. Elimine demiştim ben size, doğru mu? Bak sıfır geldi.
+
+932
+02:24:50,679 --> 02:24:56,679
+Bunu o zaman ne yapmam lazım? Çözmek için ben sadece şuraya odaklanacağım.
+
+933
+02:24:56,680 --> 02:25:01,040
+in order to solve this problem because of this symmetric case, we just focus on this.
+
+934
+02:25:07,476 --> 02:25:08,995
+niye böyle kafayı yedi ya?
+
+935
+02:25:12,915 --> 02:25:24,135
+nereye gitti bu ya? Sonsuza doğru küçüldü arkadaşlar. Nereye gitti anlamadım. 4. Dokunma hatiğinde sıkıntı mı var anlamadım.
+
+936
+02:25:28,084 --> 02:25:29,084
+kaybettik ya.
+
+937
+02:25:29,843 --> 02:25:30,564
+heh, burada.
+
+938
+02:25:33,084 --> 02:25:34,403
+daha yukarıya almış bizi.
+
+939
+02:25:43,891 --> 02:25:45,471
+Güzel. Burada yiyiz.
+
+940
+02:25:45,471 --> 02:25:46,092
+Okay.
+
+941
+02:25:46,671 --> 02:25:47,051
+Now,
+
+942
+02:25:47,931 --> 02:25:52,232
+we need to focus on these parts.
+
+943
+02:25:53,751 --> 02:25:56,091
+You don't need to study on this S.
+
+944
+02:25:56,131 --> 02:25:58,451
+So it is sufficient to use this S region.
+
+945
+02:25:59,352 --> 02:25:59,571
+Okay.
+
+946
+02:26:00,332 --> 02:26:01,332
+Now that's why
+
+947
+02:26:01,332 --> 02:26:03,732
+we write this.
+
+948
+02:26:03,951 --> 02:26:05,951
+Volume by disk method
+
+949
+02:26:05,951 --> 02:26:07,191
+from
+
+950
+02:26:07,191 --> 02:26:11,191
+0 to 1
+
+951
+02:26:11,191 --> 02:26:13,031
+from 0 to 1
+
+952
+02:26:13,031 --> 02:26:17,971
+pi times upper end point on the square root of x
+
+953
+02:26:17,971 --> 02:26:23,451
+minus lower end point on the
+
+954
+02:26:23,451 --> 02:26:36,171
+zero okay and this is the answer can you see that now so this is answer from pi times from zero to
+
+955
+02:26:36,171 --> 02:26:38,171
+1, x, d, x.
+
+956
+02:26:38,431 --> 02:26:39,232
+So it's easy.
+
+957
+02:26:39,811 --> 02:26:41,691
+Now buy this method.
+
+958
+02:26:41,991 --> 02:26:43,371
+Buy this method.
+
+959
+02:26:44,371 --> 02:26:45,831
+Now what about
+
+960
+02:26:45,831 --> 02:26:46,771
+shell method?
+
+961
+02:26:47,491 --> 02:26:49,091
+Let's use shell method.
+
+962
+02:26:59,731 --> 02:27:05,251
+So we have ss x is equal to y square.
+
+963
+02:27:07,891 --> 02:27:18,492
+By shell method, let's rotate this region around x-axis. In this case, we use horizontal bars to scan our region.
+
+964
+02:27:23,827 --> 02:27:25,367
+Okay, let's compute this.
+
+965
+02:27:26,827 --> 02:27:28,947
+So this is minus 1.
+
+966
+02:27:29,748 --> 02:27:31,667
+So this is plus 1.
+
+967
+02:27:31,788 --> 02:27:32,887
+Do you think is this?
+
+968
+02:27:34,307 --> 02:27:39,427
+Is v is equal to from minus 1 plus 1.
+
+969
+02:27:39,788 --> 02:27:40,348
+Okay.
+
+970
+02:27:41,088 --> 02:27:42,627
+Now in this case,
+
+971
+02:27:44,008 --> 02:27:45,127
+2 pi
+
+972
+02:27:45,127 --> 02:27:49,467
+by shell method
+
+973
+02:27:49,467 --> 02:27:52,847
+2 pi, right hand point
+
+974
+02:27:52,847 --> 02:28:21,927
+x1, x2 is 1, a radius, okay, so the radius of shell, let me write here, radius of shell, we do not for you, focus on this, radius of shell, radius of shell, y, let me put here y, and high of shell, the length of shell, x2 minus x1, here,
+
+975
+02:28:22,848 --> 02:28:29,408
+1 minus y squared and thickness of shell.
+
+976
+02:28:30,008 --> 02:28:30,768
+Is this true?
+
+977
+02:28:31,488 --> 02:28:32,287
+Sizce bu doğru mu?
+
+978
+02:28:34,848 --> 02:28:52,527
+Or is v is equal to from 0 to 1, from 0 to 1, 2 pi y times,
+
+979
+02:28:52,847 --> 02:28:57,167
+1 minus y², dy.
+
+980
+02:28:58,167 --> 02:29:00,407
+Okay, is this true?
+
+981
+02:29:01,367 --> 02:29:03,487
+So let's compute this integration.
+
+982
+02:29:05,507 --> 02:29:07,847
+Let's compute this integration.
+
+983
+02:29:08,147 --> 02:29:13,767
+Pi times x² over 2 from 0 to 1.
+
+984
+02:29:14,527 --> 02:29:17,967
+The answer is pi over 2 unit cube.
+
+985
+02:29:17,967 --> 02:29:38,928
+unit cube. Now, so let's compute this. Is this equal to pi over two unit cube? Or is this equal to pi over two unit cube?
+
+986
+02:29:38,927 --> 02:29:52,187
+anlaşıldı herhalde değil mi arkadaşlar? Hangisi doğru sizce? Do you think which one is true? Of course, second one.
+
+987
+02:29:52,188 --> 02:30:20,587
+okay? So we do not compute area because we compute volume. Okay? If you rotate the region to S around x-axis, you are gonna obtain the solid obtained by revolving S around x-axis because of this fact. Second one is true. This is true. This is false. This is not true. Okay?
+
+988
+02:30:24,852 --> 02:30:26,332
+herhalde mantığı anlaşıldı.
+
+989
+02:30:28,332 --> 02:30:28,951
+Evet.
+
+990
+02:30:33,363 --> 02:30:36,223
+mantık anlaşıldı. Başka sorusu olan var mı?
+
+991
+02:30:42,451 --> 02:30:44,591
+sorunuz yoksa başka soruya geçiyorum.
+
+992
+02:30:46,211 --> 02:30:46,571
+Okey.
+
+993
+02:30:54,835 --> 02:30:56,335
+bu.
+
+994
+02:31:05,523 --> 02:31:16,083
+let be the region bounded by
+
+995
+02:31:18,036 --> 02:31:22,655
+Bound by y is equal to 2 over x.
+
+996
+02:31:23,555 --> 02:31:28,876
+And x is equal to one line.
+
+997
+02:31:30,615 --> 02:31:36,075
+And x is equal to three line.
+
+998
+02:31:38,216 --> 02:31:41,595
+And, okay, you don't need to write this n.
+
+999
+02:31:41,716 --> 02:31:43,036
+Okay, y zero line.
+
+1000
+02:31:44,655 --> 02:31:47,495
+Okay, so actually we have some region.
+
+1001
+02:31:47,495 --> 02:31:48,495
+B'ye de bu ve
+
+1002
+02:32:18,611 --> 02:32:19,611
+ok, by disk method, item b, express, express, the volume v for, this kind of rotation, so in that case, we use x4 line, rotation axis is x4, x is equal to 4.
+
+1003
+02:32:48,611 --> 02:32:49,611
+birleştir.
+
+1004
+02:32:49,611 --> 02:33:02,292
+ok, by using shell method, ok, by using shell method, by shell method.
+
+1005
+02:33:06,227 --> 02:33:07,227
+Item C express express the arc length formula for the curve
+
+1006
+02:33:33,683 --> 02:33:59,063
+y is equal to 2 over x, 4 x, bigger than or equal to 1, and smaller than or equal to 3. Okay, so this is the exam question from past year. I think everyone can manage to solve this problem.
+
+1007
+02:33:59,063 --> 02:34:11,843
+So it's very simple. If you got idea behind, if you got the idea behind the application of integrations, I think you can easily solve this problem.
+
+1008
+02:34:11,843 --> 02:34:20,163
+Evet, herkes uğraşsın arkadaşlar, öğrenip öğrenmediğini kontrol etsin. [öğrenci] öğrenirdi bizim sloganımız.
+
+1009
+02:34:33,459 --> 02:34:35,279
+Evet, [öğrenci] burada mısın?
+
+1010
+02:34:50,515 --> 02:34:53,675
+[öğrenci] burada değil. [öğrenci]. Burada kalmasın [öğrenci]?
+
+1011
+02:35:05,012 --> 02:35:07,331
+[öğrenci] değil, herkes dersi terk etmiş.
+
+1012
+02:35:09,992 --> 02:35:13,772
+Nasıl olsa sınav test yapıyoruz, sıkıntı yok diyorsunuz he?
+
+1013
+02:35:26,772 --> 02:35:27,811
+Evet gençler.
+
+1014
+02:35:30,391 --> 02:35:33,391
+Yapalım o zaman. A'yı yaptın mı? Yapan var mı A'yı?
+
+1015
+02:35:35,831 --> 02:35:42,251
+Keşke herkesin kalemi olsa, yetki versem siz de burada yazıp çizebilseydiniz. Kalemi olan var mı?
+
+1016
+02:35:45,780 --> 02:35:54,379
+grafik tabletle giriyorsanız, tabletle ya da izin verebilirim, yetki verebilirim, yazabilirsiniz. Burada çözüm yapabilirsiniz gençler.
+
+1017
+02:35:59,924 --> 02:36:08,924
+Okay. Now, first of all, we need to illustrate our region on the x, y coordinate system.
+
+1018
+02:36:08,924 --> 02:36:10,924
+So.
+
+1019
+02:36:13,396 --> 02:36:17,955
+Y is equal to 2 over x.
+
+1020
+02:36:20,775 --> 02:36:25,975
+Also, we have here y is equal to 2 over x.
+
+1021
+02:36:26,435 --> 02:36:27,595
+Another part of this.
+
+1022
+02:36:28,396 --> 02:36:30,156
+And x is equal to 1.
+
+1023
+02:36:30,695 --> 02:36:32,975
+X is equal to 3 line.
+
+1024
+02:36:34,055 --> 02:36:36,035
+X is equal to 1 line.
+
+1025
+02:36:36,415 --> 02:36:36,656
+Here.
+
+1026
+02:36:37,515 --> 02:36:37,996
+1.
+
+1027
+02:36:38,775 --> 02:36:41,995
+X is equal to 3.
+
+1028
+02:36:41,995 --> 02:36:43,615
+is that true
+
+1029
+02:36:43,615 --> 02:36:46,396
+ok now y zero line
+
+1030
+02:36:46,396 --> 02:36:47,595
+so this is our region
+
+1031
+02:36:47,595 --> 02:36:49,195
+ok
+
+1032
+02:36:49,195 --> 02:36:52,495
+we rotate our region around
+
+1033
+02:36:52,495 --> 02:36:54,675
+x axis by using
+
+1034
+02:36:54,675 --> 02:36:56,535
+by using this
+
+1035
+02:36:56,535 --> 02:36:57,015
+method
+
+1036
+02:36:57,015 --> 02:37:00,135
+so volume
+
+1037
+02:37:00,135 --> 02:37:02,495
+volume item
+
+1038
+02:37:02,495 --> 02:37:03,576
+a volume
+
+1039
+02:37:03,576 --> 02:37:06,195
+pi times from
+
+1040
+02:37:06,195 --> 02:37:08,155
+1 to 3
+
+1041
+02:37:08,155 --> 02:37:10,396
+so if you put some
+
+1042
+02:37:10,396 --> 02:37:10,915
+bar
+
+1043
+02:37:10,916 --> 02:37:13,796
+vertical bar
+
+1044
+02:37:13,796 --> 02:37:15,675
+as you see this bar
+
+1045
+02:37:15,675 --> 02:37:17,656
+skeinlik origin must be perpendicular
+
+1046
+02:37:17,656 --> 02:37:19,535
+to x-axis to obtain
+
+1047
+02:37:19,535 --> 02:37:19,976
+this
+
+1048
+02:37:19,976 --> 02:37:22,876
+pi r square
+
+1049
+02:37:22,876 --> 02:37:24,535
+okay so this is
+
+1050
+02:37:24,535 --> 02:37:26,095
+y1
+
+1051
+02:37:26,095 --> 02:37:28,955
+is 2 over y2
+
+1052
+02:37:28,955 --> 02:37:30,215
+is 2 over x
+
+1053
+02:37:30,215 --> 02:37:33,215
+y1 is always on the 0
+
+1054
+02:37:33,215 --> 02:37:34,696
+okay now
+
+1055
+02:37:34,696 --> 02:37:35,476
+2 over
+
+1056
+02:37:35,476 --> 02:37:38,735
+x square
+
+1057
+02:37:38,735 --> 02:37:42,715
+and dx.
+
+1058
+02:37:43,475 --> 02:37:43,615
+Okay.
+
+1059
+02:37:44,755 --> 02:37:46,135
+Now so this is easy.
+
+1060
+02:37:46,615 --> 02:37:47,955
+You can easily compute this.
+
+1061
+02:37:48,815 --> 02:37:49,875
+Now item b.
+
+1062
+02:37:50,195 --> 02:37:52,435
+Item b we rotate this region
+
+1063
+02:37:52,435 --> 02:37:54,135
+around x4 line.
+
+1064
+02:37:54,935 --> 02:37:56,555
+So we rotate
+
+1065
+02:37:56,555 --> 02:37:58,195
+this region around
+
+1066
+02:37:58,195 --> 02:37:59,975
+x4.
+
+1067
+02:38:02,375 --> 02:38:03,955
+Now item b.
+
+1068
+02:38:04,155 --> 02:38:04,975
+In this case
+
+1069
+02:38:04,975 --> 02:38:07,775
+which method is the best one?
+
+1070
+02:38:07,775 --> 02:38:09,775
+Bakın, bu şekilde,
+
+1071
+02:38:09,775 --> 02:38:37,776
+bir de,
+
+1072
+02:38:42,484 --> 02:38:45,283
+So we need to obtain radius of shell.
+
+1073
+02:38:45,863 --> 02:38:50,083
+So volume 2 pi coming from formula.
+
+1074
+02:38:50,824 --> 02:38:55,223
+So look at here from 1 to 3 with the canal region.
+
+1075
+02:38:55,944 --> 02:38:59,924
+So not 4, attention here from not 1 to 4.
+
+1076
+02:39:00,084 --> 02:39:02,363
+From 1 to 3 you need to integrate.
+
+1077
+02:39:03,103 --> 02:39:06,783
+From 1 to 3 radius of shell.
+
+1078
+02:39:06,783 --> 02:39:09,283
+So this radius of shell.
+
+1079
+02:39:09,283 --> 02:39:12,523
+Okay, this total distance is 4.
+
+1080
+02:39:15,063 --> 02:39:20,943
+And this distance, so x, radius of shell 4 minus x.
+
+1081
+02:39:21,443 --> 02:39:23,943
+Positive value 4 minus x.
+
+1082
+02:39:24,603 --> 02:39:27,403
+4 minus x radius of shell.
+
+1083
+02:39:27,963 --> 02:39:33,143
+The height of shell, the height of shell, the length of this scanning bar.
+
+1084
+02:39:33,423 --> 02:39:35,683
+2 over x minus 0.
+
+1085
+02:39:36,283 --> 02:39:38,803
+2 over x height of shell.
+
+1086
+02:39:38,803 --> 02:39:41,243
+Ve X'in ticini of shell.
+
+1087
+02:39:41,243 --> 02:39:43,184
+Is there an equation?
+
+1088
+02:39:46,024 --> 02:39:46,664
+Okay.
+
+1089
+02:39:47,223 --> 02:39:49,043
+Now let's do item C.
+
+1090
+02:39:49,623 --> 02:39:52,564
+So in the item C, our goal is to compute.
+
+1091
+02:39:52,823 --> 02:39:55,363
+Our goal is to obtain integration model,
+
+1092
+02:39:55,524 --> 02:39:59,183
+giving us the arc length of curve from 1 to 3.
+
+1093
+02:39:59,183 --> 02:40:05,743
+So item C, L from 1 to 3,
+
+1094
+02:40:05,743 --> 02:40:07,703
+square root of
+
+1095
+02:40:07,703 --> 02:40:09,543
+dx square
+
+1096
+02:40:09,543 --> 02:40:12,783
+plus dy square
+
+1097
+02:40:12,783 --> 02:40:14,183
+ok
+
+1098
+02:40:14,183 --> 02:40:16,703
+now so if you take the common
+
+1099
+02:40:16,703 --> 02:40:18,223
+factor dx square
+
+1100
+02:40:18,223 --> 02:40:19,943
+under the square root symbol
+
+1101
+02:40:19,943 --> 02:40:22,703
+so we are going to obtain this and in fact
+
+1102
+02:40:22,703 --> 02:40:24,583
+this is coming from the
+
+1103
+02:40:24,583 --> 02:40:25,623
+Piety Corium theorem
+
+1104
+02:40:25,623 --> 02:40:28,303
+now we have this
+
+1105
+02:40:28,303 --> 02:40:30,383
+1 plus dy
+
+1106
+02:40:30,383 --> 02:40:32,543
+over dx square
+
+1107
+02:40:32,543 --> 02:40:34,103
+in order to memorize this
+
+1108
+02:40:34,103 --> 02:40:35,403
+we do this ok
+
+1109
+02:40:35,403 --> 02:40:40,164
+Now, here, we need derivation of y with respect to x.
+
+1110
+02:40:41,384 --> 02:40:45,484
+[öğrenci] y, here, y is equal to 2 over x.
+
+1111
+02:40:45,763 --> 02:40:48,543
+[öğrenci] our goal is to obtain this arc length here.
+
+1112
+02:40:49,844 --> 02:40:50,924
+[öğrenci], not here.
+
+1113
+02:40:51,223 --> 02:40:51,623
+[öğrenci] here.
+
+1114
+02:40:52,383 --> 02:40:53,623
+[öğrenci] what is that?
+
+1115
+02:40:55,603 --> 02:41:00,163
+Now, derivation of 2 over x from 1 to 3,
+
+1116
+02:41:00,484 --> 02:41:04,644
+square root of 1 plus derivation of 2 over x,
+
+1117
+02:41:04,644 --> 02:41:11,623
+minus 2 over x squared and square and dx.
+
+1118
+02:41:12,144 --> 02:41:13,804
+Okay, so simplify this.
+
+1119
+02:41:13,884 --> 02:41:15,043
+You don't need to compute this
+
+1120
+02:41:15,043 --> 02:41:16,204
+because in the equation,
+
+1121
+02:41:16,823 --> 02:41:18,284
+you are asked to compute,
+
+1122
+02:41:18,284 --> 02:41:21,884
+you are asked to update arc length formula.
+
+1123
+02:41:22,043 --> 02:41:23,823
+Just express arc length formula,
+
+1124
+02:41:23,924 --> 02:41:24,984
+integration formula.
+
+1125
+02:41:25,464 --> 02:41:27,304
+You don't need to compute that integration
+
+1126
+02:41:27,304 --> 02:41:30,884
+because it is not so easy to compute such integration.
+
+1127
+02:41:31,164 --> 02:41:32,744
+It requires much more time
+
+1128
+02:41:32,743 --> 02:41:34,903
+than the usual problems.
+
+1129
+02:41:35,223 --> 02:41:36,783
+Okey. Var mı soru sola?
+
+1130
+02:41:37,963 --> 02:41:38,984
+Anlaşmayan bir yer var mı?
+
+1131
+02:41:39,043 --> 02:41:40,723
+Hocam ben anlamadım dediğimiz yer var mı?
+
+1132
+02:41:42,043 --> 02:41:42,323
+Yok.
+
+1133
+02:41:42,723 --> 02:41:43,763
+Peki item D.
+
+1134
+02:41:44,984 --> 02:41:45,963
+Item D.
+
+1135
+02:41:54,772 --> 02:42:08,451
+if you rotate, if you rotate this region, if you rotate not region, if you rotate this, this curve from one to three,
+
+1136
+02:42:12,595 --> 02:42:35,895
+around x-axis. So what is the surface area? So what is the surface area formula? Herkes bunu elde etmeye çalışsın. If you rotate this curve, what is the surface area formula? You are going to obtain this. As you see.
+
+1137
+02:42:46,067 --> 02:43:05,947
+ok, what is the surface area of this revolution? Evet, you don't need to compute integration, just obtain integration formula for surface area of revolution obtained by revolving 2 over x over 1, 3 interval around x-axis, about x-axis.
+
+1138
+02:43:05,947 --> 02:43:07,847
+Bekliyorum gençler
+
+1139
+02:43:07,847 --> 02:43:11,667
+Herkes formüle bakmayın
+
+1140
+02:43:11,667 --> 02:43:15,187
+Formülü unutursanız nasıl çıkartacağınızı hatırlayın
+
+1141
+02:43:15,187 --> 02:43:18,047
+Silindirin yüzey alanını biliyorsunuz arkadaşlar
+
+1142
+02:43:18,047 --> 02:43:19,627
+Oradan bir nokta alıyordunuz
+
+1143
+02:43:19,627 --> 02:43:23,428
+Dikkat edin o noktayı yeterince küçük bir üçgen olarak düşündüğümüzde
+
+1144
+02:43:23,428 --> 02:43:26,127
+Oradaki hipoteniz uzunluğunu döndürüyorsunuz
+
+1145
+02:43:26,127 --> 02:43:28,367
+Ama onu x80 ile paralel düşünürseniz
+
+1146
+02:43:28,367 --> 02:43:32,007
+DL'yi bir silindir elde edersiniz
+
+1147
+02:43:32,007 --> 02:43:35,207
+DL'yi x80 etrafına döndürdüğümüzde
+
+1148
+02:43:35,207 --> 02:43:55,248
+yarı çapı fx olan bir silindir. Yüksekliği de dl olan. Doğru mu? Silindirin arkadaşlar yüzey alanı formülünü herkes biliyor. Silindir yüzeyini kesip açıyorsunuz. Dörtgensel bölgenin alanı. Onu da biliyorsunuz. Gördüğünüz gibi formülü çıkarmak 10-15 saniyenizi almıyor.
+
+1149
+02:44:00,724 --> 02:44:03,743
+yaptınız mı gençler? Eldeden var mı?
+
+1150
+02:44:22,932 --> 02:44:23,492
+Evet.
+
+1151
+02:44:25,491 --> 02:44:27,731
+Elde ettin [öğrenci].
+
+1152
+02:44:31,123 --> 02:44:32,183
+I'm trying, teacher.
+
+1153
+02:45:56,915 --> 02:46:01,915
+ok, let's solve together.
+
+1154
+02:46:24,043 --> 02:46:27,804
+Şimdi, bu dL'in arasında,
+
+1155
+02:46:29,804 --> 02:46:31,804
+x'e görebinde,
+
+1156
+02:46:31,804 --> 02:46:34,804
+bir cilindir surface.
+
+1157
+02:46:34,804 --> 02:46:35,804
+Şimdi, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu böl
+
+1158
+02:47:04,804 --> 02:47:07,243
+1 to 3
+
+1159
+02:47:07,243 --> 02:47:09,364
+f of x
+
+1160
+02:47:09,364 --> 02:47:11,844
+2 pi f of x
+
+1161
+02:47:11,844 --> 02:47:12,484
+dl
+
+1162
+02:47:12,484 --> 02:47:15,123
+dl is 1 plus
+
+1163
+02:47:15,123 --> 02:47:17,223
+derivation of f with respect
+
+1164
+02:47:17,223 --> 02:47:19,143
+x
+
+1165
+02:47:19,143 --> 02:47:22,263
+as you see you don't need to memorize formula
+
+1166
+02:47:22,263 --> 02:47:24,643
+because you know the formula
+
+1167
+02:47:24,643 --> 02:47:25,943
+area formula
+
+1168
+02:47:25,943 --> 02:47:27,763
+surface area formula for
+
+1169
+02:47:27,763 --> 02:47:30,204
+cylinder
+
+1170
+02:47:30,204 --> 02:47:32,363
+f of x 2 over x
+
+1171
+02:47:32,363 --> 02:47:32,964
+times
+
+1172
+02:47:32,963 --> 02:47:39,763
+and 1 plus derivation of 2 over x minus 2 over x squared,
+
+1173
+02:47:40,083 --> 02:47:43,683
+square of this and we have this.
+
+1174
+02:47:44,203 --> 02:47:49,123
+Okay, now so you don't need to compute this integration,
+
+1175
+02:47:49,423 --> 02:47:51,623
+just leave it in this form.
+
+1176
+02:47:52,143 --> 02:47:54,083
+Okay, var mı sorusu olan?
+
+1177
+02:47:59,827 --> 02:48:10,387
+Evet. Sorusu olan yoksa dersi bitiriyorum gençler. Yarın soru çözeriz. Çıkmış soruları analiz ederiz. Vaktimiz kalırsa soru çözeriz yine.
+
+1178
+02:48:11,807 --> 02:48:13,967
+Hocam haftaya ders yok herhalde değil mi?
+
+1179
+02:48:14,487 --> 02:48:18,527
+Evet haftaya sınav haftası değil mi? Final haftası. Haftaya yok diye biliyorum.
+
+1180
+02:48:19,767 --> 02:48:22,527
+Sınav cuma da belki olur diye soruyorum.
+
+1181
+02:48:23,248 --> 02:48:28,187
+Yok. Ben yok diye biliyorum ama yine bakarsınız siz tamam mı?
+
+1182
+02:48:28,187 --> 02:48:30,187
+Teşekkür ederim
+
+1183
+02:48:30,187 --> 02:48:32,008
+Evet
+
+1184
+02:48:32,008 --> 02:48:34,767
+Kurut olan var mı gençler?
+
+1185
+02:48:35,668 --> 02:48:38,847
+Diğer sınavlarınız yok mu sizin haftaya? Başka sınavlar yok mu?
+
+1186
+02:48:41,427 --> 02:48:43,067
+Sadece matematik mi var?
+
+1187
+02:48:44,327 --> 02:48:47,567
+No sir, we have a lot of exams, like 4 or 5
+
+1188
+02:48:47,567 --> 02:48:51,067
+Okay, then, so there is no lecture next week
+
+1189
+02:48:51,067 --> 02:48:55,467
+So because next week is the final exam week, okay?
+
+1190
+02:48:55,467 --> 02:49:00,227
+ok see you next time
