@@ -9,26 +9,30 @@
 * **Akademik Yıl:** 2022-2023
 * **Şube:** BLM3722 - 1
 
-Bu dizin, ilgili ders kayıtlarının altyazı özetlerini, çalışma notlarını ve PDF kaynaklarını içermektedir.
+Bu dizin, ilgili ders kayıtlarının altyazılarını, kısa notlarını ve genişletilmiş notlarını içermektedir.
+
+* **Kısa not:** Tekrar için. Dersin konuları, hocanın vurguları ve kısa tekrar maddeleri.
+* **Genişletilmiş not:** Dersi izlemeden öğrenmek için. Dersin anlatım akışını baştan sona, örnekleri ve soru-cevaplarıyla anlatır.
+* `altyazilar/`: ders kayıtlarının altyazıları (.srt). Notların PDF'leri `kisa_notlar/` ve `genisletilmis_notlar/` klasörlerinde, markdown kaynakları bu klasörlerin içindeki `markdown/` klasöründedir.
 
 ## 📚 Ders Müfredatı ve Belge Dizini
 
-Aşağıdaki tabloda her bir dersin konusu, kaynak markdown dosyası ve doğrudan indirilebilir PDF formatındaki derlenmiş halleri listelenmiştir. Ders numaraları, kayıt arşivindeki ders kaydı sıra numaralarıdır (hafta numarası değildir).
+Aşağıdaki tabloda her bir dersin konusu ile kısa ve genişletilmiş notlarının markdown ve PDF halleri listelenmiştir. Ders numaraları, kayıt arşivindeki ders kaydı sıra numaralarıdır (hafta numarası değildir).
 
-| Ders No | Ders İçeriği / Konu Başlıkları | Kaynak Notlar (Markdown) | Çalışma Dosyası (PDF) |
+| Ders No | Ders İçeriği / Konu Başlıkları | Kısa Not | Genişletilmiş Not |
 | :---: | :--- | :---: | :---: |
-| **Ders 1** | Yazılım Mühendisliğine Giriş: Yazılım, Yazılım Türleri, Yanılgılar ve Temel Süreç Adımları | [Özet](altyazi_ozetleri/ders_1_ozet.md) | [PDF (İndir)](ders_1_ozet.pdf) |
-| **Ders 2** | Yazılım Geliştirme Süreç Modelleri, Çevik Yaklaşım, XP ve Scrum | [Özet](altyazi_ozetleri/ders_2_ozet.md) | [PDF (İndir)](ders_2_ozet.pdf) |
-| **Ders 3** | Dönem Projesi, CASE Araçları, CMMI Düzeyleri ve Kullanım Senaryolarına Giriş | [Özet](altyazi_ozetleri/ders_3_ozet.md) | [PDF (İndir)](ders_3_ozet.pdf) |
-| **Ders 5** | Nesneye Yönelik Çözümleme ve Tasarım: Use Case, Sınıf, Sıralama ve Etkinlik Diyagramları | [Özet](altyazi_ozetleri/ders_5_ozet.md) | [PDF (İndir)](ders_5_ozet.pdf) |
-| **Ders 6** | Nesneye Yönelik Çözümleme, Etkinlik ve Durum Şemaları, Tasarım Kalıpları | [Özet](altyazi_ozetleri/ders_6_ozet.md) | [PDF (İndir)](ders_6_ozet.pdf) |
-| **Ders 7** | Vize Öncesi Tekrar, SRS Belgesi Örneği, Etkinlik Şemaları ve Yazılım Kalitesi | [Özet](altyazi_ozetleri/ders_7_ozet.md) | [PDF (İndir)](ders_7_ozet.pdf) |
-| **Ders 8** | Uygulama: Poliklinik Sistemi İçin Kullanım Şeması, Kullanım Senaryoları ve Sınıf Şeması | [Özet](altyazi_ozetleri/ders_8_ozet.md) | [PDF (İndir)](ders_8_ozet.pdf) |
-| **Ders 10** | Yazılım Kalitesi, Test Stratejisi ve Test Türleri | [Özet](altyazi_ozetleri/ders_10_ozet.md) | [PDF (İndir)](ders_10_ozet.pdf) |
-| **Ders 11** | Kalite Tekrarı, Yazılım Proje Yönetimi, Proje Planı ve Risk Yönetimi | [Özet](altyazi_ozetleri/ders_11_ozet.md) | [PDF (İndir)](ders_11_ozet.pdf) |
-| **Ders 12** | Uygulama: Otobüs Bileti Senaryosu İçin UML Sınıf, Sıralama, Etkinlik ve Durum Diyagramları | [Özet](altyazi_ozetleri/ders_12_ozet.md) | [PDF (İndir)](ders_12_ozet.pdf) |
-| **Ders 13** | Dönem Projesi Sunumları (1. Gün) | [Özet](altyazi_ozetleri/ders_13_ozet.md) | [PDF (İndir)](ders_13_ozet.pdf) |
-| **Ders 14** | Dönem Projesi Sunumları (2. Gün) | [Özet](altyazi_ozetleri/ders_14_ozet.md) | [PDF (İndir)](ders_14_ozet.pdf) |
+| **Ders 1** | Yazılım Mühendisliğine Giriş: Yazılım, Yazılım Türleri, Yanılgılar ve Temel Süreç Adımları | [Markdown](kisa_notlar/markdown/ders_1_ozet.md) · [PDF](kisa_notlar/ders_1_ozet.pdf) | [Markdown](genisletilmis_notlar/markdown/ders_1_genisletilmis.md) · [PDF](genisletilmis_notlar/ders_1_genisletilmis.pdf) |
+| **Ders 2** | Yazılım Geliştirme Süreç Modelleri, Çevik Yaklaşım, XP ve Scrum | [Markdown](kisa_notlar/markdown/ders_2_ozet.md) · [PDF](kisa_notlar/ders_2_ozet.pdf) | [Markdown](genisletilmis_notlar/markdown/ders_2_genisletilmis.md) · [PDF](genisletilmis_notlar/ders_2_genisletilmis.pdf) |
+| **Ders 3** | Dönem Projesi, CASE Araçları, CMMI Düzeyleri ve Kullanım Senaryolarına Giriş | [Markdown](kisa_notlar/markdown/ders_3_ozet.md) · [PDF](kisa_notlar/ders_3_ozet.pdf) | [Markdown](genisletilmis_notlar/markdown/ders_3_genisletilmis.md) · [PDF](genisletilmis_notlar/ders_3_genisletilmis.pdf) |
+| **Ders 5** | Nesneye Yönelik Çözümleme ve Tasarım: Use Case, Sınıf, Sıralama ve Etkinlik Diyagramları | [Markdown](kisa_notlar/markdown/ders_5_ozet.md) · [PDF](kisa_notlar/ders_5_ozet.pdf) | [Markdown](genisletilmis_notlar/markdown/ders_5_genisletilmis.md) · [PDF](genisletilmis_notlar/ders_5_genisletilmis.pdf) |
+| **Ders 6** | Nesneye Yönelik Çözümleme, Etkinlik ve Durum Şemaları, Tasarım Kalıpları | [Markdown](kisa_notlar/markdown/ders_6_ozet.md) · [PDF](kisa_notlar/ders_6_ozet.pdf) | [Markdown](genisletilmis_notlar/markdown/ders_6_genisletilmis.md) · [PDF](genisletilmis_notlar/ders_6_genisletilmis.pdf) |
+| **Ders 7** | Vize Öncesi Tekrar, SRS Belgesi Örneği, Etkinlik Şemaları ve Yazılım Kalitesi | [Markdown](kisa_notlar/markdown/ders_7_ozet.md) · [PDF](kisa_notlar/ders_7_ozet.pdf) | [Markdown](genisletilmis_notlar/markdown/ders_7_genisletilmis.md) · [PDF](genisletilmis_notlar/ders_7_genisletilmis.pdf) |
+| **Ders 8** | Uygulama: Poliklinik Sistemi İçin Kullanım Şeması, Kullanım Senaryoları ve Sınıf Şeması | [Markdown](kisa_notlar/markdown/ders_8_ozet.md) · [PDF](kisa_notlar/ders_8_ozet.pdf) | [Markdown](genisletilmis_notlar/markdown/ders_8_genisletilmis.md) · [PDF](genisletilmis_notlar/ders_8_genisletilmis.pdf) |
+| **Ders 10** | Yazılım Kalitesi, Test Stratejisi ve Test Türleri | [Markdown](kisa_notlar/markdown/ders_10_ozet.md) · [PDF](kisa_notlar/ders_10_ozet.pdf) | [Markdown](genisletilmis_notlar/markdown/ders_10_genisletilmis.md) · [PDF](genisletilmis_notlar/ders_10_genisletilmis.pdf) |
+| **Ders 11** | Kalite Tekrarı, Yazılım Proje Yönetimi, Proje Planı ve Risk Yönetimi | [Markdown](kisa_notlar/markdown/ders_11_ozet.md) · [PDF](kisa_notlar/ders_11_ozet.pdf) | [Markdown](genisletilmis_notlar/markdown/ders_11_genisletilmis.md) · [PDF](genisletilmis_notlar/ders_11_genisletilmis.pdf) |
+| **Ders 12** | Uygulama: Otobüs Bileti Senaryosu İçin UML Sınıf, Sıralama, Etkinlik ve Durum Diyagramları | [Markdown](kisa_notlar/markdown/ders_12_ozet.md) · [PDF](kisa_notlar/ders_12_ozet.pdf) | [Markdown](genisletilmis_notlar/markdown/ders_12_genisletilmis.md) · [PDF](genisletilmis_notlar/ders_12_genisletilmis.pdf) |
+| **Ders 13** | Dönem Projesi Sunumları (1. Gün) | [Markdown](kisa_notlar/markdown/ders_13_ozet.md) · [PDF](kisa_notlar/ders_13_ozet.pdf) | [Markdown](genisletilmis_notlar/markdown/ders_13_genisletilmis.md) · [PDF](genisletilmis_notlar/ders_13_genisletilmis.pdf) |
+| **Ders 14** | Dönem Projesi Sunumları (2. Gün) | [Markdown](kisa_notlar/markdown/ders_14_ozet.md) · [PDF](kisa_notlar/ders_14_ozet.pdf) | [Markdown](genisletilmis_notlar/markdown/ders_14_genisletilmis.md) · [PDF](genisletilmis_notlar/ders_14_genisletilmis.pdf) |
 
 > [!NOTE]
 > 4 numaralı kayıt (22 Mart 2023) arşivde yoktur; 26 Nisan 2023 haftası vize haftasıdır.
@@ -98,7 +102,7 @@ Aşağıdaki tabloda her bir dersin konusu, kaynak markdown dosyası ve doğruda
 
 ### 🔹 Ders 5: Nesneye Yönelik Çözümleme ve Tasarım: Use Case, Sınıf, Sıralama ve Etkinlik Diyagramları
 * **Genel Konular:**
-  - Proje gruplarıyla ilgili duyurular.
+  - Projeyle ilgili sorular.
   - Gereksinim mühendisliğinin 7 adımının tekrarı (önceki dersin konusu). SRS belgesi ve izlenebilirlik tablosu.
   - Nesneye yönelik çözümleme: alan (domain) analizi, kullanım öyküsü ve kullanım senaryosu belgesi.
   - Use case diyagramı: gösterim, include ve extend ilişkileri.
@@ -117,16 +121,15 @@ Aşağıdaki tabloda her bir dersin konusu, kaynak markdown dosyası ve doğruda
 
 ### 🔹 Ders 6: Nesneye Yönelik Çözümleme, Etkinlik ve Durum Şemaları, Tasarım Kalıpları
 * **Genel Konular:**
-  - Ders 5 Nisan 2023 Çarşamba günü yapıldı. Hoca dersi üniversitedeki sınıftan online verdi. Elektrik ve bağlantı kesintileri yüzünden ders iki kez bölündü.
+  - Ders büyük olasılıkla 5 Nisan 2023 Çarşamba günü yapıldı (tarih altyazıda geçmiyor). Hoca dersi üniversitedeki sınıftan online verdi. Elektrik ve bağlantı kesintileri yüzünden ders iki kez bölündü.
   - Nesneye yönelik çözümleme (object-oriented analysis) süreci tekrar edildi:
     - Uygulama alanının çözümlenmesi (domain analysis).
   - Tasarım şemaları:
     - Ardışıl şema (sequence diagram) kısaca hatırlatıldı.
-  - Tasarım kalıpları (design patterns):
+  - Tasarım kalıpları (design patterns; hoca GoF kalıpları olarak sundu, aslında GRASP ilkeleri, bkz. ders sonrası notlar):
     - Yaratıcı (Creator)
   - Yeniden kullanılabilirlik (reusability) kavramı ve tasarım kalıplarıyla ilişkisi.
   - Etkileşim şemaları (interaction diagrams): ardışıl şema ile işbirliği şeması (collaboration diagram) arasındaki fark.
-  - Proje konuları ve gelecek haftaki uygulama dersi duyuruldu.
 * **Hocanın Vurgusu:**
   - **Analiz ile tasarım farklıdır.** Analiz problemi anlamaktır: "ne yapılacak?" sorusunu cevaplar.
     - Tasarım ise çözümün nasıl kurulacağını gösterir. Analizin çıktısı SRS belgesidir. Tasarım bu belgeye dayanarak başlar.
@@ -140,7 +143,7 @@ Aşağıdaki tabloda her bir dersin konusu, kaynak markdown dosyası ve doğruda
 
 ### 🔹 Ders 7: Vize Öncesi Tekrar, SRS Belgesi Örneği, Etkinlik Şemaları ve Yazılım Kalitesi
 * **Genel Konular:**
-  - Ders 12 Nisan 2023 Çarşamba günü online yapıldı. Vizeden önceki son konu dersiydi. Dersin büyük kısmı vize öncesi tekrar.
+  - Ders büyük olasılıkla 12 Nisan 2023 Çarşamba günü online yapıldı (tarih altyazıda geçmiyor). Vizeden önceki son konu dersiydi. Dersin büyük kısmı vize öncesi tekrar.
   - Ders planındaki değişiklikler ve sınav düzeni duyuruldu.
   - Tekrar edilen konular:
     - CASE (Computer-Aided Software Engineering) araçları.
@@ -152,18 +155,17 @@ Aşağıdaki tabloda her bir dersin konusu, kaynak markdown dosyası ve doğruda
 * **Hocanın Vurgusu:**
   - **Sınav düzeni değişti:** Tek vize yapılacak.
     - Vize 9. haftada online olacak. Önceden iki vize (ya da vize ve kısa sınav) planlanmıştı. Vize ile proje notunun ağırlıkları sonra duyurulacak.
-  - **8. hafta uygulama dersi:** Gelecek hafta ders asistanı analiz ve tasarım şemalarıyla bir uygulama yapacak.
-    - Uygulama laboratuvarda değil, online yapılacak.
   - **Kalite özellikleri vizeye dahil.** Test teknikleri vizeye dahil değil, vizeden sonra işlenecek.
   - **Hataları erken bulun.** Süreç ilerledikçe hata bulma maliyeti artar, hata bulma olasılığı düşer.
     - Her kilometre taşında gözden geçirme (review) yapılmalıdır.
   - **Projeye başlamadan bir süreç modeli seçin ve ona uyun.** Modelin kendi kontrolleri işinizi kolaylaştırır.
+  - **SRS belgesinde her işlev bloğu için bir kullanım öyküsü belgesi** bulunmalıdır.
 * **Detaylı Açıklamalar:** Bir öğrenci CASE araçlarını "UML şemalarını program yardımıyla çizmek için kullanılan programlar" diye tanımladı. Hoca bunun yalnız analiz ve tasarım desteği olduğunu söyledi. CASE araçları kodlamada, konfigürasyon yönetiminde ve testte (birim, bütünleştirme, sistem, kullanıcı testi) de kullanılır. Açık kaynaklı CASE araçları vardır. Büyük projelerde kullanılan profesyonel araçlar ise çok pahalıdır.
 
 ### 🔹 Ders 8: Uygulama: Poliklinik Sistemi İçin Kullanım Şeması, Kullanım Senaryoları ve Sınıf Şeması
 * **Genel Konular:**
-  - Ders 19 Nisan 2023 Çarşamba günü, Ramazan Bayramı'ndan önce online yapıldı. Vizeden bir hafta önceki uygulama dersiydi.
-  - Dersi ders asistanı Arş. Grv. Elçin Güveyi anlattı. Prof. Dr. Oya Kalıpsız dersi açtı ve sözü asistana bıraktı.
+  - Ders büyük olasılıkla 19 Nisan 2023 Çarşamba günü, Ramazan Bayramı'ndan önce online yapıldı. Vizeden bir hafta önceki uygulama dersiydi.
+  - Dersi ders asistanı Elçin Hanım anlattı. Prof. Dr. Oya Kalıpsız dersi açtı ve sözü asistana bıraktı.
   - Örnek vaka: bir polikliniğin hasta ve çalışan yönetim yazılımı.
   - Violet UML Editor ile üç çizim yapıldı:
     - Kullanım şeması (use case diagram): aktörler, etkileşimler, `include`, `extend`, aktör genelleştirmesi.
@@ -179,11 +181,11 @@ Aşağıdaki tabloda her bir dersin konusu, kaynak markdown dosyası ve doğruda
 
 ### 🔹 Ders 10: Yazılım Kalitesi, Test Stratejisi ve Test Türleri
 * **Genel Konular:**
-  - Ders 3 Mayıs 2023 Çarşamba günü, vizeden sonraki ilk derste online yapıldı.
+  - Ders büyük olasılıkla 3 Mayıs 2023 Çarşamba günü, vizeden sonraki ilk derste online yapıldı.
   - Yeni bölüm: yazılım kalitesi ve test.
   - İşlenen konular:
     - Kodlama aşamasında kalite: programlama dili seçimi, açıklama satırları, anlamlı değişken adları.
-  - Vize, proje, sunum ve final duyuruları.
+  - Not dağılımı ve final sınavının biçimi.
 * **Hocanın Vurgusu:**
   - **Testin tek amacı hatayı bulmaktır.** Hatayı düzeltmek testin işi değildir.
     - Bulunan hataları ayıklamak ve düzeltmek hata ayıklama (debugging) işidir.
@@ -196,12 +198,12 @@ Aşağıdaki tabloda her bir dersin konusu, kaynak markdown dosyası ve doğruda
 
 ### 🔹 Ders 11: Kalite Tekrarı, Yazılım Proje Yönetimi, Proje Planı ve Risk Yönetimi
 * **Genel Konular:**
-  - Kayıt 10 Mayıs 2023 Çarşamba günü online yapılan derse ait, yaklaşık 2 saat 6 dakika sürüyor.
+  - Kayıt büyük olasılıkla 10 Mayıs 2023 Çarşamba günü online yapılan derse ait, yaklaşık 2 saat 6 dakika sürüyor.
   - Dersin ilk yarısı geçen haftanın tekrarı: yazılım mühendisliği tanımı, yazılım kalite faktörleri, McCall kalite modeli, kaliteyi sağlama yolları ve test aşamaları.
   - İkinci yarıda yeni konu yazılım proje yönetimi (software project management): proje yönetiminin aşamaları, ölçüm (measurement), proje planının içeriği, iş kırılım yapısı (Work Breakdown Structure, WBS), Gantt diyagramı, kilometre taşları (milestones).
   - Risk yönetimi (risk management): riskin tanımı, risk türleri, risk tablosu, olasılık ve etki matrisi, risk bilgi sayfası ve önlemlerin maliyeti.
   - Ayrıntılı proje planı şablonu: kabuller ve kısıtlar, iş planı, bütçe, ekip organizasyonu, alan (kapsam) yönetimi, iletişim ve kalite yönetim planları.
-  - Ders sonunda sınav ağırlıkları, proje sunumları ve gelecek haftanın uygulama dersi duyuruldu.
+  - Ders sonunda sınav ağırlıkları ve final sınavının biçimi duyuruldu.
 * **Hocanın Vurgusu:**
   - Yazılım mühendisliğinin üç anahtar kavramı: **kaliteli yazılım**, **en ekonomik şekilde elde etme** ve **mühendislik araç ve yöntemlerini kullanma**.
   - Mühendisliğin iki temel kavramı **tasarım** ve **ölçüm**dür. "Ölçemediğinizi yönetemezsiniz."
@@ -213,7 +215,7 @@ Aşağıdaki tabloda her bir dersin konusu, kaynak markdown dosyası ve doğruda
 
 ### 🔹 Ders 12: Uygulama: Otobüs Bileti Senaryosu İçin UML Sınıf, Sıralama, Etkinlik ve Durum Diyagramları
 * **Genel Konular:**
-  - Kayıt 17 Mayıs 2023 Çarşamba günü online yapılan uygulama dersine ait, yaklaşık 56 dakika sürüyor.
+  - Kayıt büyük olasılıkla 17 Mayıs 2023 Çarşamba günü online yapılan uygulama dersine ait, yaklaşık 56 dakika sürüyor.
   - Hoca dersi açıyor ve uygulamayı bir araştırma görevlisine bırakıyor. Uygulamayı asistan anlatıyor.
   - Tek bir senaryo üzerinden dört UML diyagramı çiziliyor: sınıf diyagramı (class diagram), sıralama diyagramı (sequence diagram), etkinlik diyagramı (activity diagram) ve durum diyagramı (state diagram).
   - Senaryo: otobüs bileti satış sistemi. Yolcu sefer, otobüs ve koltuk seçer, rezervasyon yapar, ödeme yapar.
@@ -232,7 +234,7 @@ Aşağıdaki tabloda her bir dersin konusu, kaynak markdown dosyası ve doğruda
 
 ### 🔹 Ders 13: Dönem Projesi Sunumları (1. Gün)
 * **Genel Konular:**
-  - Kayıt 24 Mayıs 2023 Çarşamba günü online yapılan derse ait, yaklaşık 1 saat 38 dakika sürüyor.
+  - Kayıt büyük olasılıkla 24 Mayıs 2023 Çarşamba günü online yapılan derse ait, yaklaşık 1 saat 38 dakika sürüyor.
   - Ders, dönem projesi sunumlarının ilk günü. Konu anlatımı yok. Bu hafta gönüllü dört grup sundu.
   - Sunulan projeler, dönem başında verilen üç vaka üzerine kurulu:
     - Bir medya takip şirketi için bilgi sistemi: medya organlarını izleme, müşteriye günlük/haftalık/aylık ve özel rapor, anket hizmeti.
@@ -240,7 +242,7 @@ Aşağıdaki tabloda her bir dersin konusu, kaynak markdown dosyası ve doğruda
   - Hoca sunumlar sırasında sorular sordu ve geri bildirim verdi. Bu özet, projelerin ortak içeriğini ve hocanın geri bildirimlerini adsız olarak toplar.
 * **Hocanın Vurgusu:**
   - Grubun **bütün üyeleri** sunumda bulunmalı.
-    - Hoca her sunumdan önce üyeleri tek tek yokladı ve herkesin hangi işi yaptığını sordu.
+    - Hoca her sunumdan önce üyeleri tek tek yokladı.
   - **Kabuller ve kısıtlar ayrı ayrı** yazılmalı.
     - Kabuller genellikle olumlu varsayımlardır. Kısıtlar problemdeki, sistemdeki veya projedeki sınırlamalardır.
   - Kısıt yazarken gerekçe verilmeli.
@@ -251,7 +253,7 @@ Aşağıdaki tabloda her bir dersin konusu, kaynak markdown dosyası ve doğruda
 
 ### 🔹 Ders 14: Dönem Projesi Sunumları (2. Gün)
 * **Genel Konular:**
-  - Kayıt 31 Mayıs 2023 Çarşamba günü online yapılan derse ait, yaklaşık 2 saat 54 dakika sürüyor.
+  - Kayıt büyük olasılıkla 31 Mayıs 2023 Çarşamba günü online yapılan derse ait, yaklaşık 2 saat 54 dakika sürüyor.
   - Ders, dönem projesi sunumlarının ikinci ve son günü. Önceki hafta sunmayan bütün gruplar sundu; on grup kadar sunum var. Konu anlatımı yok.
   - Projeler yine üç vaka üzerine: yazılım evinin insan kaynakları sistemi, medya takip şirketi bilgi sistemi ve seyahat acentesi bilet/tatil sistemi.
   - Sunumlarda proje planı, risk tablosu, use case diyagramı ve senaryo belgesi, izlenebilirlik tablosu, kavramsal ve tasarım sınıf diyagramları, sıralama, etkinlik ve durum diyagramları, tasarım kalıpları ve birim testleri anlatıldı.
