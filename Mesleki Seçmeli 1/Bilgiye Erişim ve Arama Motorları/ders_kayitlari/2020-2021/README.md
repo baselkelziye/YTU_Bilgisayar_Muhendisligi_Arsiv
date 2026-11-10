@@ -9,24 +9,28 @@
 * **Akademik Yıl:** 2020-2021
 * **Şube:** BLM3120 - 1
 
-Bu dizin, ilgili ders kayıtlarının altyazı özetlerini, çalışma notlarını ve PDF kaynaklarını içermektedir.
+Bu dizin, ilgili ders kayıtlarının altyazılarını, kısa notlarını ve genişletilmiş notlarını içermektedir.
+
+* **Kısa not:** Tekrar için. Dersin konuları, hocanın vurguları ve kısa tekrar maddeleri.
+* **Genişletilmiş not:** Dersi izlemeden öğrenmek için. Dersin anlatım akışını baştan sona, örnekleri ve soru-cevaplarıyla anlatır.
+* `altyazilar/`: ders kayıtlarının altyazıları (.srt). Notların PDF'leri `kisa_notlar/` ve `genisletilmis_notlar/` klasörlerinde, markdown kaynakları bu klasörlerin içindeki `markdown/` klasöründedir.
 
 ## 📚 Ders Müfredatı ve Belge Dizini
 
-Aşağıdaki tabloda her bir dersin konusu, kaynak markdown dosyası ve doğrudan indirilebilir PDF formatındaki derlenmiş halleri listelenmiştir. Ders numaraları, kayıt arşivindeki ders kaydı sıra numaralarıdır (hafta numarası değildir).
+Aşağıdaki tabloda her bir dersin konusu ile kısa ve genişletilmiş notlarının markdown ve PDF halleri listelenmiştir. Ders numaraları, kayıt arşivindeki ders kaydı sıra numaralarıdır (hafta numarası değildir).
 
-| Ders No | Ders İçeriği / Konu Başlıkları | Kaynak Notlar (Markdown) | Çalışma Dosyası (PDF) |
+| Ders No | Ders İçeriği / Konu Başlıkları | Kısa Not | Genişletilmiş Not |
 | :---: | :--- | :---: | :---: |
-| **Ders 2** | Derse Giriş: Web Verisi, Bilgi Erişimi ve Arama Motorlarına Genel Bakış | [Özet](altyazi_ozetleri/ders_2_ozet.md) | [PDF (İndir)](ders_2_ozet.pdf) |
-| **Ders 3** | İlişkilendirme Kuralı Madenciliği ve Apriori Algoritması | [Özet](altyazi_ozetleri/ders_3_ozet.md) | [PDF (İndir)](ders_3_ozet.pdf) |
-| **Ders 4** | Sıralı Örüntü Madenciliği, Gözetimli Öğrenme ve K-Means Kümeleme | [Özet](altyazi_ozetleri/ders_4_ozet.md) | [PDF (İndir)](ders_4_ozet.pdf) |
-| **Ders 5** | Hiyerarşik Kümeleme, Uzaklık Fonksiyonları ve Bilgiye Erişim Modelleri | [Özet](altyazi_ozetleri/ders_5_ozet.md) | [PDF (İndir)](ders_5_ozet.pdf) |
-| **Ders 6** | Metin Ön İşleme, Precision-Recall Değerlendirmesi ve Ters İndeks | [Özet](altyazi_ozetleri/ders_6_ozet.md) | [PDF (İndir)](ders_6_ozet.pdf) |
-| **Ders 9** | Web Tarayıcıları: Mimari, Gerçekleştirme Sorunları ve Tercihli Tarama | [Özet](altyazi_ozetleri/ders_9_ozet.md) | [PDF (İndir)](ders_9_ozet.pdf) |
-| **Ders 10** | Sosyal Ağ Analizi, Ağ Temsilleri ve Merkezilik Metrikleri | [Özet](altyazi_ozetleri/ders_10_ozet.md) | [PDF (İndir)](ders_10_ozet.pdf) |
-| **Ders 11** | Ortak Atıf, Bibliyografik Eşleşme ve PageRank Algoritması | [Özet](altyazi_ozetleri/ders_11_ozet.md) | [PDF (İndir)](ders_11_ozet.pdf) |
-| **Ders 12** | HITS Algoritması ve Web Kullanım Madenciliği | [Özet](altyazi_ozetleri/ders_12_ozet.md) | [PDF (İndir)](ders_12_ozet.pdf) |
-| **Ders 13** | Dönem Projesi Sunumları | [Özet](altyazi_ozetleri/ders_13_ozet.md) | [PDF (İndir)](ders_13_ozet.pdf) |
+| **Ders 2** | Derse Giriş: Web Verisi, Bilgi Erişimi ve Arama Motorlarına Genel Bakış | [Markdown](kisa_notlar/markdown/ders_2_ozet.md) · [PDF](kisa_notlar/ders_2_ozet.pdf) | [Markdown](genisletilmis_notlar/markdown/ders_2_genisletilmis.md) · [PDF](genisletilmis_notlar/ders_2_genisletilmis.pdf) |
+| **Ders 3** | İlişkilendirme Kuralı Madenciliği ve Apriori Algoritması | [Markdown](kisa_notlar/markdown/ders_3_ozet.md) · [PDF](kisa_notlar/ders_3_ozet.pdf) | [Markdown](genisletilmis_notlar/markdown/ders_3_genisletilmis.md) · [PDF](genisletilmis_notlar/ders_3_genisletilmis.pdf) |
+| **Ders 4** | Sıralı Örüntü Madenciliği, Gözetimli Öğrenme ve K-Means Kümeleme | [Markdown](kisa_notlar/markdown/ders_4_ozet.md) · [PDF](kisa_notlar/ders_4_ozet.pdf) | [Markdown](genisletilmis_notlar/markdown/ders_4_genisletilmis.md) · [PDF](genisletilmis_notlar/ders_4_genisletilmis.pdf) |
+| **Ders 5** | Hiyerarşik Kümeleme, Uzaklık Fonksiyonları ve Bilgiye Erişim Modelleri | [Markdown](kisa_notlar/markdown/ders_5_ozet.md) · [PDF](kisa_notlar/ders_5_ozet.pdf) | [Markdown](genisletilmis_notlar/markdown/ders_5_genisletilmis.md) · [PDF](genisletilmis_notlar/ders_5_genisletilmis.pdf) |
+| **Ders 6** | Metin Ön İşleme, Precision-Recall Değerlendirmesi ve Ters İndeks | [Markdown](kisa_notlar/markdown/ders_6_ozet.md) · [PDF](kisa_notlar/ders_6_ozet.pdf) | [Markdown](genisletilmis_notlar/markdown/ders_6_genisletilmis.md) · [PDF](genisletilmis_notlar/ders_6_genisletilmis.pdf) |
+| **Ders 9** | Web Tarayıcıları: Mimari, Gerçekleştirme Sorunları ve Tercihli Tarama | [Markdown](kisa_notlar/markdown/ders_9_ozet.md) · [PDF](kisa_notlar/ders_9_ozet.pdf) | [Markdown](genisletilmis_notlar/markdown/ders_9_genisletilmis.md) · [PDF](genisletilmis_notlar/ders_9_genisletilmis.pdf) |
+| **Ders 10** | Sosyal Ağ Analizi, Ağ Temsilleri ve Merkezilik Metrikleri | [Markdown](kisa_notlar/markdown/ders_10_ozet.md) · [PDF](kisa_notlar/ders_10_ozet.pdf) | [Markdown](genisletilmis_notlar/markdown/ders_10_genisletilmis.md) · [PDF](genisletilmis_notlar/ders_10_genisletilmis.pdf) |
+| **Ders 11** | Ortak Atıf, Bibliyografik Eşleşme ve PageRank Algoritması | [Markdown](kisa_notlar/markdown/ders_11_ozet.md) · [PDF](kisa_notlar/ders_11_ozet.pdf) | [Markdown](genisletilmis_notlar/markdown/ders_11_genisletilmis.md) · [PDF](genisletilmis_notlar/ders_11_genisletilmis.pdf) |
+| **Ders 12** | HITS Algoritması ve Web Kullanım Madenciliği | [Markdown](kisa_notlar/markdown/ders_12_ozet.md) · [PDF](kisa_notlar/ders_12_ozet.pdf) | [Markdown](genisletilmis_notlar/markdown/ders_12_genisletilmis.md) · [PDF](genisletilmis_notlar/ders_12_genisletilmis.pdf) |
+| **Ders 13** | Dönem Projesi Sunumları | [Markdown](kisa_notlar/markdown/ders_13_ozet.md) · [PDF](kisa_notlar/ders_13_ozet.pdf) | [Markdown](genisletilmis_notlar/markdown/ders_13_genisletilmis.md) · [PDF](genisletilmis_notlar/ders_13_genisletilmis.pdf) |
 
 > [!NOTE]
 > 1, 7 ve 8 numaralı kayıtlar arşivde yoktur; 29 Ekim 2020 tatildir.
@@ -38,7 +42,7 @@ Aşağıdaki tabloda her bir dersin konusu, kaynak markdown dosyası ve doğruda
   - Dersin tarihi 15 Ekim 2020 Perşembe. Ders Zoom üzerinden, saat 09:00'da başladı.
     - Asıl anlatım yaklaşık 00:12'de başlar. 01:09 ile 01:19 arasında ara var.
   - Dersin tanıtımı (syllabus)
-    - Ekrandaki izlencede dersin adı "BLM3581 Information Retrieval and Web Search Engines", hoca "Dr. Mehmet Aktaş" olarak geçer.
+    - Ekrandaki izlencede dersin adı büyük olasılıkla (slayttan) "BLM3581 Information Retrieval and Web Search Engines", hoca "Dr. Mehmet Aktaş" olarak geçer.
   - Web verisinin (web data) özellikleri
     - Web verisi yapısız (unstructured), yarı yapılı (semi-structured), hiper metin (hypertextual) ve dağıtık (distributed) bir veridir.
   - Derste öğrenilecek işler
@@ -50,12 +54,12 @@ Aşağıdaki tabloda her bir dersin konusu, kaynak markdown dosyası ve doğruda
 * **Hocanın Vurgusu:**
   - **Dönem projesi:**
     - Grup en fazla 2 kişi olabilir; tek kişi de yapılabilir. 3 kişilik grup kesinlikle olmaz.
-  - **Katılım:** Kayıtlar sonradan izlenebilse de derse çevrim içi katılım isteniyor.
-    - Bu aynı zamanda bölümün de şartı.
   - **Arama nasıl yapılır:** Arama, web sayfalarının kendisinde değil, önceden taranıp oluşturulmuş ters indeks tablosunda yapılır.
   - **Web arama motorunun kalitesi:** Ağırlıklı olarak precision ile ölçülür.
     - Tüm ilgili belgelerin sayısı bilinmediği için web'de recall hesaplanamaz.
   - **Çeşitlilik:** İyi bir arama motoru sonuçları tek bir siteden değil, farklı sitelerden getirmelidir.
+  - **Bu dersi neden almalı:**
+    - İşletmelerdeki verinin büyük kısmı artık yapısızdır.
 * **Detaylı Açıklamalar:** Hoca izlencede dersin kitabı bölüm bölüm izleyeceğini söyler. Kitabın PDF'i ve her bölümün slaytları web'de bulunabilir. Hoca kendi slaytlarını da paylaşacağını söyler.
 
 ### 🔹 Ders 3: İlişkilendirme Kuralı Madenciliği ve Apriori Algoritması
@@ -94,7 +98,7 @@ Aşağıdaki tabloda her bir dersin konusu, kaynak markdown dosyası ve doğruda
 * **Hocanın Vurgusu:**
   - **Sıralı örüntülerin web'deki önemi:** Kullanıcının bir sitede tıklayarak izlediği gezinme örüntüsü (navigational pattern) bulunursa, kullanıcının bir sonraki adımı tahmin edilebilir.
   - **Öğrenmenin ölçütü:** Bir modelin öğrendiğini söylemek için, hiç öğrenme yapılmayan durumdan daha iyi tahmin etmesi gerekir.
-    - İki sınıflı veride bu en az %50'dir. Pratikte %80–90 beklenir.
+    - Hoca iki sınıflı veride bunu %50 olarak verdi; doğru taban çizgisi çoğunluk sınıfının oranıdır (bkz. Ders sonrası notlar). Pratikte %80–90 beklenir.
   - **Eğitim ve test verisinin dağılımı aynı olmalı.** Aksi hâlde modelin gerçek başarısı ölçülemez.
   - **Karar ağacı tek değildir:** Kullanılan nitelik önem ölçütü değişince ağaç değişir.
     - Her ağacın doğruluğu farklı olur.
@@ -114,7 +118,6 @@ Aşağıdaki tabloda her bir dersin konusu, kaynak markdown dosyası ve doğruda
     - Küme içi (intra-cluster) ve kümeler arası (inter-cluster) uzaklık
   - Chapter 6: Bilgiye erişim ve web araması (information retrieval and web search)
     - Bilgiye erişim ile veritabanı sorgusu farkı
-  - Dönem projesi önerileri
 * **Hocanın Vurgusu:**
   - k-means'in iki zayıflığı var:
     - Küme sayısı $k$ baştan verilmeli.
@@ -141,7 +144,6 @@ Aşağıdaki tabloda her bir dersin konusu, kaynak markdown dosyası ve doğruda
   - Arama motorlarını başarılı kılan etkenler
 * **Hocanın Vurgusu:**
   - Vize gelecek hafta, saat 15:00'te.
-    - Çakışması olan hocaya bildirmeli.
   - Vize kapsamı: şimdiye kadar işlenen tüm bölümler, Chapter 5 hariç.
   - Sınava hazırlık:
     - Yalnızca slaytlar değil, kitaptaki ilgili bölümler de okunmalı.
@@ -246,7 +248,7 @@ Aşağıdaki tabloda her bir dersin konusu, kaynak markdown dosyası ve doğruda
   - Sunulan projeler dersin dört ana konusuna göre gruplanabilir:
     - **Web tarayıcı (crawler) uygulamaları:** Birden fazla e-ticaret sitesinden ürün verisi toplayıp tek sayfada gösterme ve filtreleme.
 * **Hocanın Vurgusu:**
-  - **Grup üyelerinin hepsi sunumda bulunmalı.** Bir üyenin "çalışıyorum, katılamayacağım, arkadaşım sunsun" diye yazdığı grubun sunumu kabul edilmedi.
+  - **Grup üyelerinin hepsi sunumda bulunmalı.** Bir üyesi sunuma katılamayan grubun sunumu kabul edilmedi.
     - İki üye birlikte bekleme odasına geldiğinde yeniden sunum hakkı verileceği söylendi.
   - **Ekran paylaşımı yapılabilmeli.** Teknik sorunu önceden çözmek grubun sorumluluğu.
   - **Crawler projelerinde filtreleme şart.** Birden fazla siteden toplanan veri kategoriye ve fiyata göre süzülüp sıralanabilmeli.
