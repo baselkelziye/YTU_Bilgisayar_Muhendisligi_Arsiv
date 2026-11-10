@@ -9,39 +9,43 @@
 * **Akademik Yıl:** 2022-2023
 * **Şube:** MAT1072 - 23
 
-Bu dizin, ilgili ders kayıtlarının altyazı özetlerini, çalışma notlarını ve PDF kaynaklarını içermektedir.
+Bu dizin, ilgili ders kayıtlarının altyazılarını, kısa notlarını ve genişletilmiş notlarını içermektedir.
+
+* **Kısa not:** Tekrar için. Dersin konuları, hocanın vurguları ve kısa tekrar maddeleri.
+* **Genişletilmiş not:** Dersi izlemeden öğrenmek için. Dersin anlatım akışını baştan sona, örnekleri ve soru-cevaplarıyla anlatır.
+* `altyazilar/`: ders kayıtlarının altyazıları (.srt). Notların PDF'leri `kisa_notlar/` ve `genisletilmis_notlar/` klasörlerinde, markdown kaynakları bu klasörlerin içindeki `markdown/` klasöründedir.
 
 ## 📚 Ders Müfredatı ve Belge Dizini
 
-Aşağıdaki tabloda her bir dersin konusu, kaynak markdown dosyası ve doğrudan indirilebilir PDF formatındaki derlenmiş halleri listelenmiştir. Ders numaraları, kayıt arşivindeki ders kaydı sıra numaralarıdır (hafta numarası değildir).
+Aşağıdaki tabloda her bir dersin konusu ile kısa ve genişletilmiş notlarının markdown ve PDF halleri listelenmiştir. Ders numaraları, kayıt arşivindeki ders kaydı sıra numaralarıdır (hafta numarası değildir).
 
-| Ders No | Ders İçeriği / Konu Başlıkları | Kaynak Notlar (Markdown) | Çalışma Dosyası (PDF) |
+| Ders No | Ders İçeriği / Konu Başlıkları | Kısa Not | Genişletilmiş Not |
 | :---: | :--- | :---: | :---: |
-| **Ders 1** | Diziler, Sınırlılık, Monotonluk, Dizi Limiti ve Serilere Giriş | [Özet](altyazi_ozetleri/ders_1_ozet.md) | [PDF (İndir)](ders_1_ozet.pdf) |
-| **Ders 2** | Seri Toplamları ve Yakınsaklık Testleri: İntegral, Karşılaştırma, Oran ve Kök Testleri | [Özet](altyazi_ozetleri/ders_2_ozet.md) | [PDF (İndir)](ders_2_ozet.pdf) |
-| **Ders 3** | Alterne Seriler, Mutlak ve Şartlı Yakınsaklık, Kuvvet Serileri | [Özet](altyazi_ozetleri/ders_3_ozet.md) | [PDF (İndir)](ders_3_ozet.pdf) |
-| **Ders 4** | Kuvvet Serileri: Yakınsaklık Aralığı, Mutlak ve Şartlı Yakınsaklık Uygulamaları | [Özet](altyazi_ozetleri/ders_4_ozet.md) | [PDF (İndir)](ders_4_ozet.pdf) |
-| **Ders 5** | Taylor ve Maclaurin Serileri, Taylor Polinomu ve Seri Uygulamaları | [Özet](altyazi_ozetleri/ders_5_ozet.md) | [PDF (İndir)](ders_5_ozet.pdf) |
-| **Ders 6** | Seriler Üzerine Çıkmış Sınav Soruları ve Kutupsal Koordinatlara Giriş | [Özet](altyazi_ozetleri/ders_6_ozet.md) | [PDF (İndir)](ders_6_ozet.pdf) |
-| **Ders 7** | Kutupsal Koordinatlar: Eğri Çizimi, Kardiyoid, Alan ve Yay Uzunluğu | [Özet](altyazi_ozetleri/ders_7_ozet.md) | [PDF (İndir)](ders_7_ozet.pdf) |
-| **Ders 8** | Parametrik Alan, Vektörler, Skaler ve Vektörel Çarpım, Uzayda Düzlem ve Doğru | [Özet](altyazi_ozetleri/ders_8_ozet.md) | [PDF (İndir)](ders_8_ozet.pdf) |
-| **Ders 9** | Uzayda Doğru ve Düzlem, Vektör Değerli Fonksiyonlar ve Çok Değişkenli Fonksiyonlara Giriş | [Özet](altyazi_ozetleri/ders_9_ozet.md) | [PDF (İndir)](ders_9_ozet.pdf) |
-| **Ders 10** | Temel Yüzeyler, Seviye Eğrileri ve Çok Değişkenli Fonksiyonlarda Limit ve Süreklilik | [Özet](altyazi_ozetleri/ders_10_ozet.md) | [PDF (İndir)](ders_10_ozet.pdf) |
-| **Ders 11** | Limit ve Süreklilik Tekrarı, Kısmi Türevler, Zincir Kuralı ve Karışık Türevler | [Özet](altyazi_ozetleri/ders_11_ozet.md) | [PDF (İndir)](ders_11_ozet.pdf) |
-| **Ders 12** | Vektör ve Düzlem Tekrarı, Zincir Kuralı, Lineerleştirme ve Tam Diferansiyel | [Özet](altyazi_ozetleri/ders_12_ozet.md) | [PDF (İndir)](ders_12_ozet.pdf) |
-| **Ders 13** | Teğet Düzlem, Lineerleştirme, Tam Diferansiyel, Ekstremumlar ve Kısıtlı Kısmi Türevler | [Özet](altyazi_ozetleri/ders_13_ozet.md) | [PDF (İndir)](ders_13_ozet.pdf) |
-| **Ders 14** | Yönlü Türev, Gradyan ve Vektör Uygulamaları | [Özet](altyazi_ozetleri/ders_14_ozet.md) | [PDF (İndir)](ders_14_ozet.pdf) |
-| **Ders 15** | Yönlü Türev, Uzay Eğrileri, Tanım Kümesi ve Limit Üzerine Soru Çözümü | [Özet](altyazi_ozetleri/ders_15_ozet.md) | [PDF (İndir)](ders_15_ozet.pdf) |
-| **Ders 16** | Ekstremum Değerler, İkinci Türev Testi, İki Değişkenli Taylor Açılımı ve Kısıtlı Kısmi Türevler | [Özet](altyazi_ozetleri/ders_16_ozet.md) | [PDF (İndir)](ders_16_ozet.pdf) |
-| **Ders 20** | 1. Vize Soruları ve İki Katlı İntegrallere Giriş: Fubini Teoremi ve İntegrasyon Sırası | [Özet](altyazi_ozetleri/ders_20_ozet.md) | [PDF (İndir)](ders_20_ozet.pdf) |
-| **Ders 21** | İntegrasyon Sırasını Değiştirme, Jacobian ve Kutupsal Koordinatlarla Değişken Dönüşümü | [Özet](altyazi_ozetleri/ders_21_ozet.md) | [PDF (İndir)](ders_21_ozet.pdf) |
-| **Ders 22** | Final Soruları: Değişken Dönüşümü, Karışık Kısmi Türev, Kritik Noktalar ve Seri Toplamı | [Özet](altyazi_ozetleri/ders_22_ozet.md) | [PDF (İndir)](ders_22_ozet.pdf) |
-| **Ders 23** | Final Hazırlığı: Kuvvet Serileri, Kutupsal Alan, Yönlü Türev ve Çok Katlı İntegral Soruları | [Özet](altyazi_ozetleri/ders_23_ozet.md) | [PDF (İndir)](ders_23_ozet.pdf) |
-| **Ders 24** | Parametrik Denklemler: Teğet, İkinci Türev, Alan ve Yay Uzunluğu | [Özet](altyazi_ozetleri/ders_24_ozet.md) | [PDF (İndir)](ders_24_ozet.pdf) |
-| **Ders 25** | Final Hazırlığı: Kutupsal Alan İntegralleri, Seri Testleri ve Kuvvet Serileri | [Özet](altyazi_ozetleri/ders_25_ozet.md) | [PDF (İndir)](ders_25_ozet.pdf) |
-| **Ders 26** | Final Hazırlığı: Zincir Kuralı, Teğet Düzlem, Lineerleştirme, Yönlü Türev ve Ekstremumlar | [Özet](altyazi_ozetleri/ders_26_ozet.md) | [PDF (İndir)](ders_26_ozet.pdf) |
-| **Ders 27** | Final Hazırlığı: Vektör Fonksiyonları, Yay Uzunluğu, Tanım Bölgesi, Limit ve Süreklilik Soruları | [Özet](altyazi_ozetleri/ders_27_ozet.md) | [PDF (İndir)](ders_27_ozet.pdf) |
-| **Ders 28** | Final Hazırlığı: İntegrasyon Sırası, Kutupsal Koordinatlar, Jacobian ve Ortalama Değer Soruları | [Özet](altyazi_ozetleri/ders_28_ozet.md) | [PDF (İndir)](ders_28_ozet.pdf) |
+| **Ders 1** | Diziler, Sınırlılık, Monotonluk, Dizi Limiti ve Serilere Giriş | [Markdown](kisa_notlar/markdown/ders_1_ozet.md) · [PDF](kisa_notlar/ders_1_ozet.pdf) | [Markdown](genisletilmis_notlar/markdown/ders_1_genisletilmis.md) · [PDF](genisletilmis_notlar/ders_1_genisletilmis.pdf) |
+| **Ders 2** | Seri Toplamları ve Yakınsaklık Testleri: İntegral, Karşılaştırma, Oran ve Kök Testleri | [Markdown](kisa_notlar/markdown/ders_2_ozet.md) · [PDF](kisa_notlar/ders_2_ozet.pdf) | [Markdown](genisletilmis_notlar/markdown/ders_2_genisletilmis.md) · [PDF](genisletilmis_notlar/ders_2_genisletilmis.pdf) |
+| **Ders 3** | Alterne Seriler, Mutlak ve Şartlı Yakınsaklık, Kuvvet Serileri | [Markdown](kisa_notlar/markdown/ders_3_ozet.md) · [PDF](kisa_notlar/ders_3_ozet.pdf) | [Markdown](genisletilmis_notlar/markdown/ders_3_genisletilmis.md) · [PDF](genisletilmis_notlar/ders_3_genisletilmis.pdf) |
+| **Ders 4** | Kuvvet Serileri: Yakınsaklık Aralığı, Mutlak ve Şartlı Yakınsaklık Uygulamaları | [Markdown](kisa_notlar/markdown/ders_4_ozet.md) · [PDF](kisa_notlar/ders_4_ozet.pdf) | [Markdown](genisletilmis_notlar/markdown/ders_4_genisletilmis.md) · [PDF](genisletilmis_notlar/ders_4_genisletilmis.pdf) |
+| **Ders 5** | Taylor ve Maclaurin Serileri, Taylor Polinomu ve Seri Uygulamaları | [Markdown](kisa_notlar/markdown/ders_5_ozet.md) · [PDF](kisa_notlar/ders_5_ozet.pdf) | [Markdown](genisletilmis_notlar/markdown/ders_5_genisletilmis.md) · [PDF](genisletilmis_notlar/ders_5_genisletilmis.pdf) |
+| **Ders 6** | Seriler Üzerine Çıkmış Sınav Soruları ve Kutupsal Koordinatlara Giriş | [Markdown](kisa_notlar/markdown/ders_6_ozet.md) · [PDF](kisa_notlar/ders_6_ozet.pdf) | [Markdown](genisletilmis_notlar/markdown/ders_6_genisletilmis.md) · [PDF](genisletilmis_notlar/ders_6_genisletilmis.pdf) |
+| **Ders 7** | Kutupsal Koordinatlar: Eğri Çizimi, Kardiyoid, Alan ve Yay Uzunluğu | [Markdown](kisa_notlar/markdown/ders_7_ozet.md) · [PDF](kisa_notlar/ders_7_ozet.pdf) | [Markdown](genisletilmis_notlar/markdown/ders_7_genisletilmis.md) · [PDF](genisletilmis_notlar/ders_7_genisletilmis.pdf) |
+| **Ders 8** | Parametrik Alan, Vektörler, Skaler ve Vektörel Çarpım, Uzayda Düzlem ve Doğru | [Markdown](kisa_notlar/markdown/ders_8_ozet.md) · [PDF](kisa_notlar/ders_8_ozet.pdf) | [Markdown](genisletilmis_notlar/markdown/ders_8_genisletilmis.md) · [PDF](genisletilmis_notlar/ders_8_genisletilmis.pdf) |
+| **Ders 9** | Uzayda Doğru ve Düzlem, Vektör Değerli Fonksiyonlar ve Çok Değişkenli Fonksiyonlara Giriş | [Markdown](kisa_notlar/markdown/ders_9_ozet.md) · [PDF](kisa_notlar/ders_9_ozet.pdf) | [Markdown](genisletilmis_notlar/markdown/ders_9_genisletilmis.md) · [PDF](genisletilmis_notlar/ders_9_genisletilmis.pdf) |
+| **Ders 10** | Temel Yüzeyler, Seviye Eğrileri ve Çok Değişkenli Fonksiyonlarda Limit ve Süreklilik | [Markdown](kisa_notlar/markdown/ders_10_ozet.md) · [PDF](kisa_notlar/ders_10_ozet.pdf) | [Markdown](genisletilmis_notlar/markdown/ders_10_genisletilmis.md) · [PDF](genisletilmis_notlar/ders_10_genisletilmis.pdf) |
+| **Ders 11** | Limit ve Süreklilik Tekrarı, Kısmi Türevler, Zincir Kuralı ve Karışık Türevler | [Markdown](kisa_notlar/markdown/ders_11_ozet.md) · [PDF](kisa_notlar/ders_11_ozet.pdf) | [Markdown](genisletilmis_notlar/markdown/ders_11_genisletilmis.md) · [PDF](genisletilmis_notlar/ders_11_genisletilmis.pdf) |
+| **Ders 12** | Vektör ve Düzlem Tekrarı, Zincir Kuralı, Lineerleştirme ve Tam Diferansiyel | [Markdown](kisa_notlar/markdown/ders_12_ozet.md) · [PDF](kisa_notlar/ders_12_ozet.pdf) | [Markdown](genisletilmis_notlar/markdown/ders_12_genisletilmis.md) · [PDF](genisletilmis_notlar/ders_12_genisletilmis.pdf) |
+| **Ders 13** | Teğet Düzlem, Lineerleştirme, Tam Diferansiyel, Ekstremumlar ve Kısıtlı Kısmi Türevler | [Markdown](kisa_notlar/markdown/ders_13_ozet.md) · [PDF](kisa_notlar/ders_13_ozet.pdf) | [Markdown](genisletilmis_notlar/markdown/ders_13_genisletilmis.md) · [PDF](genisletilmis_notlar/ders_13_genisletilmis.pdf) |
+| **Ders 14** | Yönlü Türev, Gradyan ve Vektör Uygulamaları | [Markdown](kisa_notlar/markdown/ders_14_ozet.md) · [PDF](kisa_notlar/ders_14_ozet.pdf) | [Markdown](genisletilmis_notlar/markdown/ders_14_genisletilmis.md) · [PDF](genisletilmis_notlar/ders_14_genisletilmis.pdf) |
+| **Ders 15** | Yönlü Türev, Uzay Eğrileri, Tanım Kümesi ve Limit Üzerine Soru Çözümü | [Markdown](kisa_notlar/markdown/ders_15_ozet.md) · [PDF](kisa_notlar/ders_15_ozet.pdf) | [Markdown](genisletilmis_notlar/markdown/ders_15_genisletilmis.md) · [PDF](genisletilmis_notlar/ders_15_genisletilmis.pdf) |
+| **Ders 16** | Ekstremum Değerler, İkinci Türev Testi, İki Değişkenli Taylor Açılımı ve Kısıtlı Kısmi Türevler | [Markdown](kisa_notlar/markdown/ders_16_ozet.md) · [PDF](kisa_notlar/ders_16_ozet.pdf) | [Markdown](genisletilmis_notlar/markdown/ders_16_genisletilmis.md) · [PDF](genisletilmis_notlar/ders_16_genisletilmis.pdf) |
+| **Ders 20** | 1. Vize Soruları ve İki Katlı İntegrallere Giriş: Fubini Teoremi ve İntegrasyon Sırası | [Markdown](kisa_notlar/markdown/ders_20_ozet.md) · [PDF](kisa_notlar/ders_20_ozet.pdf) | [Markdown](genisletilmis_notlar/markdown/ders_20_genisletilmis.md) · [PDF](genisletilmis_notlar/ders_20_genisletilmis.pdf) |
+| **Ders 21** | İntegrasyon Sırasını Değiştirme, Jacobian ve Kutupsal Koordinatlarla Değişken Dönüşümü | [Markdown](kisa_notlar/markdown/ders_21_ozet.md) · [PDF](kisa_notlar/ders_21_ozet.pdf) | [Markdown](genisletilmis_notlar/markdown/ders_21_genisletilmis.md) · [PDF](genisletilmis_notlar/ders_21_genisletilmis.pdf) |
+| **Ders 22** | Final Soruları: Değişken Dönüşümü, Karışık Kısmi Türev, Kritik Noktalar ve Seri Toplamı | [Markdown](kisa_notlar/markdown/ders_22_ozet.md) · [PDF](kisa_notlar/ders_22_ozet.pdf) | [Markdown](genisletilmis_notlar/markdown/ders_22_genisletilmis.md) · [PDF](genisletilmis_notlar/ders_22_genisletilmis.pdf) |
+| **Ders 23** | Final Hazırlığı: Kuvvet Serileri, Kutupsal Alan, Yönlü Türev ve Çok Katlı İntegral Soruları | [Markdown](kisa_notlar/markdown/ders_23_ozet.md) · [PDF](kisa_notlar/ders_23_ozet.pdf) | [Markdown](genisletilmis_notlar/markdown/ders_23_genisletilmis.md) · [PDF](genisletilmis_notlar/ders_23_genisletilmis.pdf) |
+| **Ders 24** | Parametrik Denklemler: Teğet, İkinci Türev, Alan ve Yay Uzunluğu | [Markdown](kisa_notlar/markdown/ders_24_ozet.md) · [PDF](kisa_notlar/ders_24_ozet.pdf) | [Markdown](genisletilmis_notlar/markdown/ders_24_genisletilmis.md) · [PDF](genisletilmis_notlar/ders_24_genisletilmis.pdf) |
+| **Ders 25** | Final Hazırlığı: Kutupsal Alan İntegralleri, Seri Testleri ve Kuvvet Serileri | [Markdown](kisa_notlar/markdown/ders_25_ozet.md) · [PDF](kisa_notlar/ders_25_ozet.pdf) | [Markdown](genisletilmis_notlar/markdown/ders_25_genisletilmis.md) · [PDF](genisletilmis_notlar/ders_25_genisletilmis.pdf) |
+| **Ders 26** | Final Hazırlığı: Zincir Kuralı, Teğet Düzlem, Lineerleştirme, Yönlü Türev ve Ekstremumlar | [Markdown](kisa_notlar/markdown/ders_26_ozet.md) · [PDF](kisa_notlar/ders_26_ozet.pdf) | [Markdown](genisletilmis_notlar/markdown/ders_26_genisletilmis.md) · [PDF](genisletilmis_notlar/ders_26_genisletilmis.pdf) |
+| **Ders 27** | Final Hazırlığı: Vektör Fonksiyonları, Yay Uzunluğu, Tanım Bölgesi, Limit ve Süreklilik Soruları | [Markdown](kisa_notlar/markdown/ders_27_ozet.md) · [PDF](kisa_notlar/ders_27_ozet.pdf) | [Markdown](genisletilmis_notlar/markdown/ders_27_genisletilmis.md) · [PDF](genisletilmis_notlar/ders_27_genisletilmis.pdf) |
+| **Ders 28** | Final Hazırlığı: İntegrasyon Sırası, Kutupsal Koordinatlar, Jacobian ve Ortalama Değer Soruları | [Markdown](kisa_notlar/markdown/ders_28_ozet.md) · [PDF](kisa_notlar/ders_28_ozet.pdf) | [Markdown](genisletilmis_notlar/markdown/ders_28_genisletilmis.md) · [PDF](genisletilmis_notlar/ders_28_genisletilmis.pdf) |
 
 > [!NOTE]
 > 17 numaralı kayıt (24 Nisan 2023) konuşmasızdır; 18 ve 19 numaralı kayıtlar arşivde yoktur (Ramazan Bayramı, 1. vize ve 1 Mayıs dönemi).
@@ -118,7 +122,7 @@ Aşağıdaki tabloda her bir dersin konusu, kaynak markdown dosyası ve doğruda
 * **Hocanın Vurgusu:**
   - Sınav sorularının önemli bir kısmı seriler konusundan gelir.
   - Seride ilk bakılacak şey genel terimin limitidir. $\lim a_n \neq 0$ ise seri ıraksaktır.
-    - Hoca bunu "10 puanlık soruda tek cümlelik cevap" diye vurguladı.
+    - Hoca bunu "tek cümlelik cevap" diye vurguladı.
   - Kuvvet serisinde oran testiyle bulunan aralık açık aralıktır.
     - Uç noktalar ayrıca seriye konup tek tek incelenir.
   - $\dfrac{1}{1-x}=\sum_{n=0}^{\infty}x^n$ ($|x|<1$) açılımı çok kullanılır.
@@ -265,7 +269,7 @@ Aşağıdaki tabloda her bir dersin konusu, kaynak markdown dosyası ve doğruda
 ### 🔹 Ders 12: Vektör ve Düzlem Tekrarı, Zincir Kuralı, Lineerleştirme ve Tam Diferansiyel
 * **Genel Konular:**
   - Ders 4 Nisan 2023 Salı günü yapıldı.
-  - Hoca kaynak olarak Prof. Dr. Mustafa Balcı'nın "Genel Matematik 2 Problemleri" (çözümlü) kitabının PDF'ini tanıttı ve kitap üzerinden tekrar yaptı.
+  - Hoca kaynak olarak büyük olasılıkla Prof. Dr. Mustafa Balcı'nın "Genel Matematik 2 Problemleri" (çözümlü) kitabının PDF'ini tanıttı ve kitap üzerinden tekrar yaptı.
   - Vektörler, skaler, vektörel ve karma çarpım; uzayda doğru ve düzlem; iki düzlem arasındaki uzaklık ve açı.
   - Vektör değerli fonksiyonlar: uzunluk, limit, türev, integral, eğri uzunluğu, birim teğet vektör.
   - Çok değişkenli fonksiyonlar: tanım bölgesi, yüzeyler, kısmi türev tekrarı, Laplace denklemi, karışık türevler.
@@ -340,7 +344,7 @@ Aşağıdaki tabloda her bir dersin konusu, kaynak markdown dosyası ve doğruda
 
 ### 🔹 Ders 16: Ekstremum Değerler, İkinci Türev Testi, İki Değişkenli Taylor Açılımı ve Kısıtlı Kısmi Türevler
 * **Genel Konular:**
-  - Bu ders 18 Nisan 2023 Salı günü yapıldı. Ramazan Bayramı öncesi son derstir.
+  - Bu ders 18 Nisan 2023 Salı günü yapıldı.
   - Yeni konuya geçilmedi. Önceki derslerin konuları sınav sorularıyla pekiştirildi.
   - Tek değişkenli fonksiyonlarda maksimum ve minimum bulma yöntemleri hatırlatıldı.
   - Çok değişkenli fonksiyonlarda kritik nokta (critical point), yerel ekstremum (local extremum) ve eyer noktası (saddle point) işlendi.
@@ -361,7 +365,7 @@ Aşağıdaki tabloda her bir dersin konusu, kaynak markdown dosyası ve doğruda
 
 ### 🔹 Ders 20: 1. Vize Soruları ve İki Katlı İntegrallere Giriş: Fubini Teoremi ve İntegrasyon Sırası
 * **Genel Konular:**
-  - Bu ders 2 Mayıs 2023 Salı günü yapıldı. Ramazan Bayramı ve 1. vize sonrası ilk kayıtlı derstir.
+  - Bu ders 2 Mayıs 2023 Salı günü yapıldı. 1. vize sonrası ilk kayıtlı derstir.
   - Dersin ilk yarısında 1. vizenin A grubu soruları (MAT2 vize-sorular GrA) üzerinden geçildi.
   - İkinci yarıda yeni konuya geçildi: iki katlı (çift katlı) integraller (double integrals).
   - Fubini teoremi (Fubini's theorem), dikdörtgen ve eğrilerle sınırlı bölgeler üzerinde integral işlendi.
@@ -386,7 +390,7 @@ Aşağıdaki tabloda her bir dersin konusu, kaynak markdown dosyası ve doğruda
   - Yeni konu: Jacobian ile değişken dönüşümü (change of variables).
   - Kutupsal koordinatlara geçiş (polar coordinates) ve Jacobian'ın $r$ olduğu gösterildi.
   - Hiperbol ve parabollerle sınırlı bölgelerde $u,v$ dönüşümü yapıldı.
-  - Kaynak olarak Prof. Dr. Mustafa Balcı'nın "Genel Matematik 2 Problemleri" kitabının çok katlı integraller bölümü kullanıldı.
+  - Kaynak olarak büyük olasılıkla Prof. Dr. Mustafa Balcı'nın "Genel Matematik 2 Problemleri" kitabının çok katlı integraller bölümü kullanıldı.
 * **Hocanın Vurgusu:**
   - Finalde çok katlı integrallerden şu tip sorular beklenir:
     - Bir soru kutupsal koordinatlardan.
