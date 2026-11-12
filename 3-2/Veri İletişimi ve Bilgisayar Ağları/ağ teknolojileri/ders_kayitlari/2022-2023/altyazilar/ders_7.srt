@@ -1,0 +1,1851 @@
+1
+00:13:49,268 --> 00:13:51,268
+Günaydın sevgili arkadaşlar.
+
+2
+00:13:53,268 --> 00:13:56,268
+Bugünkü dersimize hoş geldiniz.
+
+3
+00:13:57,268 --> 00:14:00,268
+Bu hafta yedinci haftamız.
+
+4
+00:14:13,107 --> 00:14:36,107
+OK guys, good morning everybody. We are going to continue Transport Layer Chapter. As you remember, we have been discussing this chapter for two weeks and this is the last week. We are going to discuss the last part of this chapter. As you remember...
+
+5
+00:15:05,203 --> 00:15:15,723
+Last week, we have discussed how to develop our own reliable data transfer protocol from the…
+
+6
+00:15:43,008 --> 00:15:50,008
+ve bu
+
+7
+00:16:01,940 --> 00:16:22,740
+The connection-oriented protocol, that is TCP. TCP gives us reliable data transfer, and there are flow control and congestion control mechanism. And we have discussed how to manage flow control.
+
+8
+00:16:22,868 --> 00:16:29,228
+TCP'yi de geçen olarak,
+
+9
+00:16:29,228 --> 00:16:35,228
+ve bu week'ya devam ediyoruz.
+
+10
+00:16:35,228 --> 00:16:38,188
+Ve ilk önce,
+
+11
+00:16:38,188 --> 00:16:42,428
+İlginçlerle ilgili birçok konusunda.
+
+12
+00:16:42,428 --> 00:16:46,988
+İlginçlerle ilgili bir konusunda.
+
+13
+00:16:46,988 --> 00:16:49,628
+Konusunda, informasyonla ilgili.
+
+14
+00:16:49,716 --> 00:17:15,003
+Tüm buçuk,
+
+15
+00:16:58,067 --> 00:17:26,067
+As you can see, this road map here, as you can see, there are many cars and many vehicles, and it is too many vehicles to handle by the road. Similar analogy, on the network, there can be more resources sending too much data for network to handle.
+
+16
+00:17:26,067 --> 00:17:46,048
+VLAN İlginçin control is completely different from flow control. Flow control is basically based on one sender, one receiver. So this flow control managed to control the...
+
+17
+00:17:46,048 --> 00:17:51,087
+ve bir sender ve bir sender
+
+18
+00:17:51,087 --> 00:17:53,127
+bir sender.
+
+19
+00:17:53,127 --> 00:17:55,087
+Bu konjunkturla konuşmalı
+
+20
+00:17:55,087 --> 00:17:56,847
+ve konuşmalı konuşmalı
+
+21
+00:17:56,847 --> 00:17:59,008
+çok fazla sender
+
+22
+00:17:59,008 --> 00:18:00,688
+ve çok fazla sender
+
+23
+00:18:00,688 --> 00:18:02,688
+senden çok fazla sender
+
+24
+00:18:02,688 --> 00:18:04,768
+ve incele
+
+25
+00:18:04,768 --> 00:18:08,048
+if the congestion
+
+26
+00:18:08,048 --> 00:18:08,847
+exist
+
+27
+00:18:08,847 --> 00:18:10,367
+there can be
+
+28
+00:18:10,367 --> 00:18:11,728
+long delay
+
+29
+00:18:12,240 --> 00:18:32,839
+Çünkü, as you remember, each router has an internal buffer to keep incoming data and to put them in order to forward to related destinations.
+
+30
+00:18:39,827 --> 00:18:42,748
+Yani, bir süreçlik bir süreçlik var,
+
+31
+00:18:42,748 --> 00:18:48,748
+bir süreçlik beklemeye çalışıyor.
+
+32
+00:18:48,748 --> 00:18:56,067
+Yani, bu süreçlik, bu süreçlik,
+
+33
+00:18:56,067 --> 00:19:05,427
+bu süreçlik,
+
+34
+00:19:08,660 --> 00:19:13,740
+Bu, as I said,
+
+35
+00:19:14,620 --> 00:19:19,320
+completely different from flow control.
+
+36
+00:19:19,759 --> 00:19:20,940
+In flow control,
+
+37
+00:19:20,940 --> 00:19:24,280
+the sender sending too much,
+
+38
+00:19:24,420 --> 00:19:27,900
+one sender sending too much data,
+
+39
+00:19:28,420 --> 00:19:28,940
+that...
+
+40
+00:19:29,140 --> 00:19:32,460
+Bir receiver kanalışmanı,
+
+41
+00:19:32,460 --> 00:19:34,700
+ama Congestion Control'ın
+
+42
+00:19:34,700 --> 00:19:37,580
+çok fazla resources
+
+43
+00:19:37,580 --> 00:19:39,740
+senden çok fazla data.
+
+44
+00:19:39,740 --> 00:19:40,740
+Ok?
+
+45
+00:19:40,740 --> 00:19:43,500
+Congestion Control'ın
+
+46
+00:19:43,500 --> 00:19:45,940
+top 10 problem
+
+47
+00:19:45,940 --> 00:19:47,740
+in network
+
+48
+00:19:47,740 --> 00:19:49,740
+to be solved.
+
+49
+00:19:49,740 --> 00:19:50,740
+Ok?
+
+50
+00:19:50,740 --> 00:19:52,340
+Let's have a look.
+
+51
+00:19:52,340 --> 00:19:54,740
+Very simple scenario here.
+
+52
+00:19:54,740 --> 00:19:56,340
+As you can see,
+
+53
+00:19:57,268 --> 00:20:21,268
+There is one router. On the left-hand side, there are two hosts, host A and host B. On the right-hand side, two receivers, server A and server B. And let's say the link of the router, the capacity.
+
+54
+00:20:21,523 --> 00:20:25,283
+is R bit per second.
+
+55
+00:20:25,283 --> 00:20:26,283
+Okay?
+
+56
+00:20:26,283 --> 00:20:34,363
+So the router can accept R bit per second bandwidth and can forward R bit per second.
+
+57
+00:20:34,363 --> 00:20:47,323
+And for simplicity in our first scenario, let's accept that our shared buffer, output link buffer is infinite.
+
+58
+00:20:47,323 --> 00:20:48,171
+Okay?
+
+59
+00:20:49,587 --> 00:21:15,587
+In the first scenario, there are two flows. First flow from host A to host B. So in the original data, lambda in is the incoming bitrate, lambda out is the throughput, is outgoing, all right? And...
+
+60
+00:21:16,564 --> 00:21:26,564
+For the second flow, Lambda, for B, Lambda in B and Lambda out B, right?
+
+61
+00:21:28,564 --> 00:21:37,564
+In original data for the host A, the host A send Lambda in bit per second
+
+62
+00:21:37,564 --> 00:21:43,532
+and router forward Lambda out bit per second, right?
+
+63
+00:21:44,660 --> 00:22:10,940
+So, since in the first scenario, there is no retransmission needed, which means our buffer is infinite. So any incoming data can be put into the outgoing queue. So, host A never need to retransmit.
+
+64
+00:22:12,115 --> 00:22:19,875
+The message again. Okay? So what happens? Because there are two...
+
+65
+00:22:48,019 --> 00:23:13,819
+Lambda in approaches to R2. Okay? So if Lambda in exceeds to R2, which means the router cannot accept the capacity more than R2. So as you can see here, throughput is Lambda out, that is the maximum capacity.
+
+66
+00:23:14,387 --> 00:23:38,587
+Router can handle, and Lambda in is the incoming data capacity. As you can see, up to R over 2, the slope is linear. All incoming message can be forwarded to the output port.
+
+67
+00:23:38,771 --> 00:23:49,971
+If lambda in exceeds to R over 2, the packets start waiting into the queue.
+
+68
+00:23:49,971 --> 00:23:58,771
+So the lambda output never exceeds to R over 2. So as you can see, it's the saturation.
+
+69
+00:24:07,124 --> 00:24:21,884
+But the delay, as you can see, if lambda in increases up to R over 2, the delay increases also to infinity.
+
+70
+00:24:21,884 --> 00:24:34,124
+As you can see, if lambda in exceeds to R over 2, the delay increases to infinity because all incoming message has to wait.
+
+71
+00:24:35,155 --> 00:24:44,036
+in the shared output link offer. Okay? So this is our simple first scenario.
+
+72
+00:24:46,515 --> 00:24:55,556
+Okay, in scenario two, this time, the difference between scenario one and scenario two,
+
+73
+00:24:56,000 --> 00:25:05,680
+Again, one router, but this time our shared output buffer is infinite, is finite,
+
+74
+00:25:05,680 --> 00:25:11,019
+which means it has limited amount of capacity, right?
+
+75
+00:25:11,819 --> 00:25:14,180
+So let's discuss this scenario.
+
+76
+00:25:14,900 --> 00:25:17,680
+So in this case, if...
+
+77
+00:25:19,859 --> 00:25:37,059
+The buffer is full, some packet will be discarded, which means dropped by router, and after the certain amount of timeout, the message must be retransmitted. All right? So...
+
+78
+00:25:37,971 --> 00:25:51,371
+Aplikation layer input, application layer output, lambda in and lambda out for up to R over 2.
+
+79
+00:25:51,371 --> 00:25:52,371
+If...
+
+80
+00:25:55,827 --> 00:25:59,627
+Lambda in increases, right?
+
+81
+00:26:00,028 --> 00:26:04,847
+Then lambda dash in is greater than lambda in.
+
+82
+00:26:05,207 --> 00:26:11,107
+So lambda dash in includes the original message
+
+83
+00:26:11,107 --> 00:26:15,127
+plus retransmitted messages, right?
+
+84
+00:26:16,627 --> 00:26:37,451
+So, as you can see, Lambda in is original data, Lambda prime in is original data plus retransmitted data, because since the buffer is finite, so when the buffer is full,
+
+85
+00:26:38,036 --> 00:26:45,036
+İngilizce mesajları
+
+86
+00:26:45,036 --> 00:26:57,036
+O zamanlar
+
+87
+00:26:56,915 --> 00:27:00,516
+ve LAMDA OUT, LAMDA OUT.
+
+88
+00:27:00,516 --> 00:27:06,016
+So, let's say, in the first, in the second scenario,
+
+89
+00:27:06,016 --> 00:27:13,516
+we assume that there is no duplicate message at the receiver side.
+
+90
+00:27:13,516 --> 00:27:14,315
+Okay?
+
+91
+00:27:15,635 --> 00:27:26,435
+So, in idealization, is a perfect knowledge, sender send only when router buffer is available.
+
+92
+00:27:26,435 --> 00:27:38,316
+So, if router buffer is not available, sender stop sending in ideal scenario. Okay? Packet.
+
+93
+00:27:39,700 --> 00:27:58,900
+send, wait into the buffer, then the output link is available, send to the receiver. Okay? That is very ideal. As you can see, up to R over 2, it's linear.
+
+94
+00:28:02,708 --> 00:28:12,948
+But some packet can be lost or dropped by the router due to full buffer.
+
+95
+00:28:12,948 --> 00:28:23,908
+So sender knows when packet has been dropped and sender restrand the packet.
+
+96
+00:28:23,908 --> 00:28:28,307
+Okay, so the sender send the message.
+
+97
+00:28:28,627 --> 00:28:54,627
+Then, no buffer available. So router drop this incoming message. But transport layer keep the copy of the message because TCP is a reliable connection. And if it is full, then now the buffer is some space available in the buffer sent to the receiver.
+
+98
+00:28:55,316 --> 00:29:23,115
+In this case, as you can see in ideal scenario, it's linear there. So, lambda in prime include the message plus retransmitted message. And here, if the buffer is available, there is not much retransmission. But up here, you can see it
+
+99
+00:29:23,923 --> 00:29:30,923
+ve
+
+100
+00:29:50,996 --> 00:30:16,396
+OK? So as you can see, how the throughput drops a bit. This one, this drop demonstrates vested capacity due to retransmission. OK? This is our second scenario. In realistic scenario,
+
+101
+00:30:17,107 --> 00:30:41,107
+Not only retransmission, but also duplicates in the receiver side. So packets can be lost because the router dropped the packets, since the buffer is full. It requires retransmission. But in realistic scenario, some...
+
+102
+00:30:43,072 --> 00:30:54,052
+O zamanlar
+
+103
+00:30:42,516 --> 00:30:47,716
+Meskese can wait in the queue too long.
+
+104
+00:30:48,635 --> 00:30:59,596
+So the sender send two copies of the message and two copies unnecessarily received by receiver.
+
+105
+00:31:00,716 --> 00:31:10,115
+As you can see here, the application layer forward the packet to the transport layer and
+
+106
+00:31:11,423 --> 00:31:11,824
+meskosiz,
+
+107
+00:31:10,483 --> 00:31:24,483
+It waits in the queue and hosts a retransmit again, and at the receiver side, two copies of the same message has arrived.
+
+108
+00:31:24,483 --> 00:31:32,483
+So in this case, as you can see, the throughput even dropped further.
+
+109
+00:31:37,759 --> 00:31:46,359
+retransmission. And here it includes unneeded duplicates. Okay?
+
+110
+00:31:47,124 --> 00:32:14,539
+Vasted capacity to unneeded retransmission. Vasted capacity for incoming link for retransmission, and this area for unnecessary retransmission due to duplicate message. So, in realistic scenario, the cost of congestion is
+
+111
+00:32:15,347 --> 00:32:20,907
+Bu, bu, daha fazla çalışma, çünkü retransmizyon,
+
+112
+00:32:20,907 --> 00:32:23,907
+bu, birçok geçevi birçok geçevi.
+
+113
+00:32:23,907 --> 00:32:27,708
+Bu, bu, ilk bölümde.
+
+114
+00:32:27,708 --> 00:32:33,627
+Birçok birçok geçevi, bu, bu, bu,
+
+115
+00:32:38,932 --> 00:32:46,252
+This one decrease maximum available or achievable throughput.
+
+116
+00:32:46,252 --> 00:32:55,332
+Okay? So in realistic scenario, some packets may be lost, so it will be retransmitted,
+
+117
+00:32:55,332 --> 00:33:05,012
+and some packet may be received because of the delay waiting in the queue at the router.
+
+118
+00:33:05,491 --> 00:33:29,692
+OK? So let's have a look this time. Scenario 3. Here, we have increased our network. In this case, there are four senders. And in the path, it's a multi-hop path, which means the packet passes more than one router.
+
+119
+00:33:30,420 --> 00:33:37,540
+So, each router has finite shared output link buffer.
+
+120
+00:33:37,540 --> 00:33:46,180
+So, since it's a power timeout, the host retransmits the packet.
+
+121
+00:33:46,180 --> 00:33:54,180
+Okay, let's say host A send a message to host C.
+
+122
+00:33:54,180 --> 00:33:57,540
+So, as you can see in the link there,
+
+123
+00:33:58,099 --> 00:34:02,399
+Two router must be passed, okay?
+
+124
+00:34:04,519 --> 00:34:17,500
+So in original Lambda in, Lambda in is a original data bandwidth, Lambda in prime, original data, plus retransmitted data.
+
+125
+00:34:18,559 --> 00:34:24,699
+Meanwhile, host D send a message to host B.
+
+126
+00:34:24,820 --> 00:34:48,320
+As you can see, on the second path, the router in the middle has been shared by two links. Okay? And OSP again send a message to OSP to the second direction. Okay?
+
+127
+00:34:51,219 --> 00:34:56,300
+And host A to host C, the second network link.
+
+128
+00:34:56,300 --> 00:35:02,859
+So, as you remember, internet is the best effort.
+
+129
+00:35:02,859 --> 00:35:06,300
+Ethernet is connectionless protocol.
+
+130
+00:35:06,300 --> 00:35:13,019
+The all incoming datagram will be forwarded to the next link.
+
+131
+00:35:13,019 --> 00:35:18,139
+So, each part of message can be received.
+
+132
+00:35:18,516 --> 00:35:39,516
+from different path. Okay? So as you can see here, our router has finite shared output link. And here, in the first communication, red path.
+
+133
+00:35:39,923 --> 00:35:52,724
+The message passed from the first router, then second router. So the congestion may happen in either router.
+
+134
+00:35:52,724 --> 00:36:05,923
+Okay? So what happens? Lambda in and Lambda in prime increases in this our third scenario.
+
+135
+00:36:08,019 --> 00:36:34,123
+The red path, lambda in increases, all arriving blue packets at upper Q are dropped because all the link capacity is consumed by red link. Okay? Another cost, when packet dropped,
+
+136
+00:36:34,195 --> 00:36:57,596
+Any upstream transmission capacity and buffering used for that packet will be busted. So in realistic scenario, as you can see, the throughput may be down to zero. Okay? Because...
+
+137
+00:37:00,211 --> 00:37:07,572
+Bir message is passed from one router, then dropped to another router, then resend again.
+
+138
+00:37:07,572 --> 00:37:14,271
+So unnecessary messages consume entire capacity.
+
+139
+00:37:14,871 --> 00:37:23,891
+So as a result, there is no new incoming message, then the throughput may be dropped down to zero.
+
+140
+00:37:24,211 --> 00:37:26,791
+This is the worst scenario.
+
+141
+00:37:27,264 --> 00:37:34,264
+ve
+
+142
+00:37:39,092 --> 00:37:44,891
+Let's have a look at the cost and causes of congestion inside.
+
+143
+00:37:45,891 --> 00:37:50,092
+Throughput can never exceed capacity.
+
+144
+00:37:51,092 --> 00:37:59,092
+So it's linear. Lambda in increases and throughput lambda out increases to where?
+
+145
+00:37:59,092 --> 00:38:07,084
+To R over 2. This is ideal scenario. So incoming
+
+146
+00:38:07,092 --> 00:38:15,492
+message never exceeds the buffer size, then there is no retransmission needed.
+
+147
+00:38:17,492 --> 00:38:33,092
+And if it approaches to R over 2, delay increases to infinity because the packet must wait into the queue for a long time.
+
+148
+00:38:34,164 --> 00:38:49,564
+Then, because of timeout, some packet must be retransmitted and some output capacity will be vested because of retransmission.
+
+149
+00:38:49,564 --> 00:38:59,564
+Moreover, since some packet has to wait in the queue for a long time,
+
+150
+00:38:59,728 --> 00:39:08,327
+Then sender resend the packet, then receiver may receive two copies of identical packet.
+
+151
+00:39:08,327 --> 00:39:13,327
+And in this case, it drops furthermore.
+
+152
+00:39:13,327 --> 00:39:24,327
+So this drop includes vested capacity for retransmission plus vested capacity for duplicate message received.
+
+153
+00:39:25,268 --> 00:39:47,467
+And in third scenario, in the path, more than one router, more than one hub, and in this case, unnecessarily send the message and unnecessarily receive duplicate message, then the throughput may drop down to zero.
+
+154
+00:39:48,659 --> 00:39:57,659
+You can follow all three scenarios and you can see the cause of the congestion, right?
+
+155
+00:40:00,659 --> 00:40:07,659
+So, similar to flow control, congestion must be controlled too.
+
+156
+00:40:07,659 --> 00:40:11,659
+So, there are some approaches.
+
+157
+00:40:11,840 --> 00:40:13,840
+...towards congestion control.
+
+158
+00:40:13,840 --> 00:40:17,840
+First one is end-to-end congestion control.
+
+159
+00:40:17,840 --> 00:40:21,840
+In this case, there is no feedback from network.
+
+160
+00:40:21,840 --> 00:40:30,840
+And congestion inferred from observed loss and delay by sender.
+
+161
+00:40:32,083 --> 00:40:48,884
+It is sent, and acknowledgement is received, and the sender receives RTD, and this congestion control is done by TCP protocol.
+
+162
+00:40:48,884 --> 00:40:58,483
+In another approach, network-assisted congestion control. In this case,
+
+163
+00:40:59,380 --> 00:41:22,180
+Not only the sender and receiver, but also routers provide direct feedback to sending and receiving hosts with flows passing through congested router. And this may indicate congestion level or explicitly set sending rate.
+
+164
+00:41:22,452 --> 00:41:47,412
+So, the packet is sent, and the acknowledgement is received, and the congestion router send explicit congestion information to both sender and receiver using TCP protocol related field as we have discussed last week's presentation.
+
+165
+00:41:48,371 --> 00:41:58,371
+So these fields TCP ECN field, ATM field, TEC bit, protocol bit.
+
+166
+00:41:58,371 --> 00:42:13,371
+Okay. Okay, guys. This time, let's have a look TCP congestion control. Which mechanism is used in TCP?
+
+167
+00:42:16,115 --> 00:42:20,755
+There are many approaches we are going to discuss.
+
+168
+00:42:20,755 --> 00:42:24,655
+First approach is AIMD.
+
+169
+00:42:25,275 --> 00:42:30,395
+In AIMD, sender can increase sending rate.
+
+170
+00:42:32,851 --> 00:42:44,391
+Until packet loss, which means congestion happens in that path, then decrease sending rate on loss event.
+
+171
+00:42:44,391 --> 00:42:47,511
+In this case, increase a bit.
+
+172
+00:42:47,871 --> 00:42:52,891
+If packet loss decrease, then increase, then increase.
+
+173
+00:42:53,112 --> 00:42:55,551
+As you can see, sove teeth.
+
+174
+00:42:57,840 --> 00:42:59,840
+VLAN İlginçler için,
+
+175
+00:42:56,436 --> 00:43:24,011
+As you can see, it is additive increase, AI bit. So, increase sending rate by one maximum segment size, every RTT, till loss received. So, that is additive increase, right? And if the packet lost,
+
+176
+00:43:24,052 --> 00:43:31,552
+Sending rate in half at each loss event.
+
+177
+00:43:32,632 --> 00:43:35,112
+Aditative increase is a slope.
+
+178
+00:43:36,291 --> 00:43:42,952
+And when the packet lost, cut the capacity into half.
+
+179
+00:43:42,952 --> 00:43:50,952
+Okay, that's why AIMD is the abbreviation of additive increase, multiculative.
+
+180
+00:43:52,563 --> 00:43:55,003
+Bu çok simple.
+
+181
+00:44:20,403 --> 00:44:23,684
+ve en halde birçok
+
+182
+00:44:23,684 --> 00:44:24,884
+denektedir
+
+183
+00:44:24,884 --> 00:44:26,563
+yüzeyde
+
+184
+00:44:26,563 --> 00:44:27,543
+duplikator
+
+185
+00:44:27,543 --> 00:44:28,384
+acnowledim
+
+186
+00:44:28,384 --> 00:44:29,583
+ve
+
+187
+00:44:29,583 --> 00:44:31,324
+paket
+
+188
+00:44:31,324 --> 00:44:32,023
+yüzeyde
+
+189
+00:44:32,023 --> 00:44:34,503
+sender
+
+190
+00:44:35,188 --> 00:45:00,748
+ve senderi de aynı akkolağmenin aynı akkolağmenin aynı akkolağmenin aynı akkolağmenin aynı akkolağmenin aynı akkolağmenin aynı akkolağmenin aynı akkolağmenin aynı akkolağmenin aynı akkolağmenin aynı akkolağmenin aynı akkolağmenin aynı akkolağmenin aynı akkolağmenin aynı akkolağmenin aynı akkolağmenin aynı akkolağmenin aynı akkolağmenin aynı akkolağmenin aynı akkolağmenin aynı akkolağmenin aynı akkolağmenin aynı akkolağmenin aynı akkolağmenin aynı akkolağmenin aynı akkolağmenin aynı akkolağmenin aynı akkolağmenin aynı akkolağmenin aynı akkolağmenin aynı akkolağmenin aynı
+
+191
+00:45:00,980 --> 00:45:28,460
+So, in this case, cut to one MSS, maximum segment size, when loss detected by timeout. So, in the first method, TCP-RENO, Sander waits three duplicate acknowledgment. In TOE, Sander waits till first timeout.
+
+192
+00:45:29,492 --> 00:45:35,712
+Then cut one MSS, maximum segment size, down.
+
+193
+00:45:37,712 --> 00:45:44,712
+So why AIMD is used?
+
+194
+00:45:44,712 --> 00:45:48,872
+Because it's a distributive asynchronous algorithm.
+
+195
+00:45:49,552 --> 00:45:51,972
+And it has been shown that
+
+196
+00:45:52,096 --> 00:46:17,099
+It optimizes congestive flow rates worldwide. It is very simple. And it has desirable stability properties. Okay? In here, as you remember, there's a window here. Yellow one is
+
+197
+00:46:18,708 --> 00:46:25,827
+Last byte acknowledged, which means send by sender and received and acknowledged by receiver.
+
+198
+00:46:25,827 --> 00:46:37,088
+And here, the yellow one is sent, but not acknowledgement yet.
+
+199
+00:46:37,588 --> 00:46:39,568
+And sender waiting for acknowledgement.
+
+200
+00:46:39,988 --> 00:46:41,608
+And blue one is not.
+
+201
+00:46:41,972 --> 00:46:49,292
+And the last yellow one is last bite sand.
+
+202
+00:46:49,952 --> 00:47:05,392
+And as you can see, this yellow one plus some area, blue one, some empty unused size is called congestion window, C-W-N-D.
+
+203
+00:47:05,392 --> 00:47:05,932
+Okay?
+
+204
+00:47:07,552 --> 00:47:09,392
+As you can see...
+
+205
+00:47:09,588 --> 00:47:25,588
+These blue areas are available, but not sent yet. So yellow one plus blue one, total is window size, C, W, and D.
+
+206
+00:47:36,851 --> 00:47:57,452
+last byte acknowledged must be smaller than CWND size. So the size of the CWND is dynamically adjust in response to observed network congestion. Okay? So it's...
+
+207
+00:47:58,164 --> 00:48:07,664
+Tune according to the measured RTTs, packet loss and the transmission.
+
+208
+00:48:07,664 --> 00:48:18,156
+So at the TCP sending behavior, roughly, let's say send CW and DIP bytes.
+
+209
+00:48:18,483 --> 00:48:20,023
+Bu da window size.
+
+210
+00:48:20,743 --> 00:48:24,703
+Bu da RTT bir zamanı için.
+
+211
+00:48:24,804 --> 00:48:25,264
+Bu da?
+
+212
+00:48:25,523 --> 00:48:26,663
+Bu da bir akkaldi.
+
+213
+00:48:27,224 --> 00:48:27,764
+Bu da,
+
+214
+00:48:28,283 --> 00:48:31,283
+bu da bir akkaldi.
+
+215
+00:48:31,283 --> 00:48:41,443
+Bu da bir akkaldi.
+
+216
+00:48:42,164 --> 00:48:53,564
+TCP rate is around CWND divided by RTT byte per second. Okay?
+
+217
+00:48:56,851 --> 00:49:09,731
+Let's say the first method is TCP slow start. When congestion begins, increase rate exponentially.
+
+218
+00:49:09,972 --> 00:49:12,972
+İntro, ilk başta.
+
+219
+00:49:13,532 --> 00:49:17,972
+İntro, CWND'in bir şeye verilir.
+
+220
+00:49:18,752 --> 00:49:20,972
+Bir şeye verilir.
+
+221
+00:49:21,731 --> 00:49:25,652
+Her RTT'in bir şeye verilir.
+
+222
+00:49:26,012 --> 00:49:27,972
+Bu şeye verilir.
+
+223
+00:49:27,972 --> 00:49:32,972
+Her şeye verilir.
+
+224
+00:49:32,972 --> 00:49:36,972
+Bir şeye verilir.
+
+225
+00:49:37,972 --> 00:49:39,612
+and it's received
+
+226
+00:49:39,612 --> 00:49:42,752
+and two segment is sent
+
+227
+00:49:42,752 --> 00:49:44,492
+then it is acknowledged
+
+228
+00:49:44,492 --> 00:49:45,852
+again
+
+229
+00:49:45,852 --> 00:49:48,412
+as soon as the acknowledgement
+
+230
+00:49:48,412 --> 00:49:50,512
+is received then send
+
+231
+00:49:50,512 --> 00:49:52,832
+for then wait for
+
+232
+00:49:52,832 --> 00:49:53,772
+the acknowledgement
+
+233
+00:49:53,772 --> 00:49:56,992
+till the first
+
+234
+00:49:56,992 --> 00:49:58,352
+packet last
+
+235
+00:49:58,352 --> 00:50:00,332
+and similarly
+
+236
+00:50:00,332 --> 00:50:03,072
+the initial rate is slow
+
+237
+00:50:03,072 --> 00:50:04,192
+but
+
+238
+00:50:04,596 --> 00:50:18,596
+Because it starts from the one segment, plus two, plus four, plus eight, plus 16, initially slow, but ramps up exponentially fast.
+
+239
+00:50:18,596 --> 00:50:27,596
+So, the question from slow start to congestion avoidance, so...
+
+240
+00:50:27,599 --> 00:50:34,599
+VLAN, SHULTU, EXPONENTIAL INCREASE, switch to LINEAR INCREASE. OK?
+
+241
+00:50:36,599 --> 00:50:49,599
+VLAN, CWND, GES TO HALF OF ITS VALUE BEFORE TIMEOUT, THEN WE SWITCH TO LINEAR, right?
+
+242
+00:50:54,612 --> 00:51:18,572
+SSTH, this is the value. Then on loss event, stretch is to set to 1 over 2 of CWND just before loss event. Then cut half, then...
+
+243
+00:51:18,612 --> 00:51:29,532
+Go to the trash, that is the first loss delay is happened, then linear.
+
+244
+00:51:31,371 --> 00:51:32,172
+In...
+
+245
+00:51:32,340 --> 00:51:59,824
+TCP, RENO, it start linear when in the first rope, and TCP2 is, in RENO, it weighs three same acknowledgement, and the other one is first packet loss, you remember. Okay, in the congestion control, finite state machinery remember.
+
+246
+00:51:59,824 --> 00:52:01,523
+It's a slow start.
+
+247
+00:52:04,123 --> 00:52:12,023
+And CWND is smaller, greater than its threshold.
+
+248
+00:52:13,324 --> 00:52:17,123
+And congestion avoidance mechanism is there.
+
+249
+00:52:18,324 --> 00:52:21,824
+And timeout then go back to slow slide.
+
+250
+00:52:23,223 --> 00:52:24,324
+Slow start, sorry.
+
+251
+00:52:24,923 --> 00:52:27,523
+If there's no...
+
+252
+00:52:28,340 --> 00:52:32,059
+Congestion, then fast recovery.
+
+253
+00:52:33,059 --> 00:52:38,059
+And if anything happens, then go back to congestion avoidance.
+
+254
+00:52:38,059 --> 00:52:46,420
+Or if the timeout exceeds and packet loss, then go back to slow start.
+
+255
+00:52:46,420 --> 00:52:54,659
+As you can see, there are some timeout mechanism and new acknowledgement is there.
+
+256
+00:52:55,731 --> 00:53:08,532
+OK guys, this is additive increase, multiplicative decrease mechanism for congestion here.
+
+257
+00:53:08,532 --> 00:53:16,132
+We are going to talk about TCP cubic is another congestion control.
+
+258
+00:53:16,132 --> 00:53:22,532
+So let's give a break for 15 minutes, then we can continue to cubic again.
+
+259
+00:53:23,188 --> 00:53:31,688
+OK, let's start quarter past ten o'clock. On beş dakika sonra görüşürüz arkadaşlar.
+
+260
+01:14:33,171 --> 01:14:34,171
+OK, guys.
+
+261
+01:14:38,899 --> 01:15:01,379
+Let's continue to our congestion mechanism in TCP. As you remember, we have discussed AIMD, additive increase, multiple decrease. As you can see, AIMD demonstrates saw teeth approach. So as you can see, the increase is incremental.
+
+262
+01:15:01,568 --> 01:15:29,007
+So Wmax is the maximum sending rate at which congestion loss was detected. And once it is detected, according to AIMD, it drops down to half Wmax minus 2 and increase again till the first packet loss.
+
+263
+01:15:29,300 --> 01:15:37,300
+is TOE and RINO, you remember, triple acknowledgement or first timeout.
+
+264
+01:15:37,300 --> 01:15:39,300
+Okay, this is the distinguish.
+
+265
+01:15:39,300 --> 01:15:55,300
+In cubic, after cutting rate window into half on the loss of package, initially ramp to the Wmax faster, but
+
+266
+01:15:55,572 --> 01:16:00,092
+then approaches Wmax more slowly.
+
+267
+01:16:00,492 --> 01:16:06,231
+Because we know that the packet loss at the rate of Wmax.
+
+268
+01:16:06,231 --> 01:16:13,632
+So we can increase fast when we reach to Wmax.
+
+269
+01:16:13,952 --> 01:16:16,592
+Then we increase slowly.
+
+270
+01:16:16,975 --> 01:16:41,475
+As you can see here, the slope. Red one is classic TCP AIMD, and blue dashed one is TCP cubic. And higher in this case, increase too fast, then throughput is higher for this example. Okay?
+
+271
+01:16:42,387 --> 01:16:46,987
+As you can see, how it works in TCP cubic.
+
+272
+01:16:46,987 --> 01:16:58,788
+So in the k-point in time, when TCP window size will increase, will reach to Wmax.
+
+273
+01:16:58,788 --> 01:17:07,387
+So k-value is tunable value. So we can tune according to the laws.
+
+274
+01:17:08,595 --> 01:17:11,855
+Ancak W'ye kadar kubelerin var.
+
+275
+01:17:11,855 --> 01:17:18,135
+Ancak kubelerin var.
+
+276
+01:17:18,135 --> 01:17:19,375
+Kubelerin var.
+
+277
+01:17:19,375 --> 01:17:32,835
+Ancak kubelerin var.
+
+278
+01:17:33,247 --> 01:17:36,647
+VLAN, NIRR, 2K.
+
+279
+01:17:39,147 --> 01:17:39,647
+Okay?
+
+280
+01:17:40,547 --> 01:17:41,047
+In...
+
+281
+01:17:41,948 --> 01:17:52,247
+As you can see here, TCP sending rate up to Wmax, the cube, and red one is TCP reno,
+
+282
+01:17:54,247 --> 01:17:54,948
+and...
+
+283
+01:17:56,647 --> 01:17:59,847
+Datchet one is TCP cubic.
+
+284
+01:18:00,147 --> 01:18:00,647
+All right?
+
+285
+01:18:01,235 --> 01:18:09,235
+If we exceed Wmax, then TCP cubic seems a little bit...
+
+286
+01:18:13,235 --> 01:18:20,235
+...vesting some bandwidth, according to TCP-RENO, as you can see.
+
+287
+01:18:20,235 --> 01:18:26,235
+TCP cubic default protocol in Linux...
+
+288
+01:18:27,155 --> 01:18:33,155
+ve tcp4, popular web services.
+
+289
+01:18:33,155 --> 01:18:34,155
+Okay?
+
+290
+01:18:34,155 --> 01:18:35,155
+It is used.
+
+291
+01:18:36,307 --> 01:18:43,427
+Let's have a look this time, TCP and the congested bottleneck link.
+
+292
+01:18:43,427 --> 01:18:49,268
+Let's say the red router in the middle is congested link.
+
+293
+01:18:49,268 --> 01:18:55,347
+Okay? Because it is shared by many paths.
+
+294
+01:18:55,347 --> 01:19:00,347
+Market queue almost never empty.
+
+295
+01:19:00,564 --> 01:19:06,264
+Sometimes overflow packet, then some packet is lost.
+
+296
+01:19:07,064 --> 01:19:14,164
+So as a result, the bottleneck happened in this router.
+
+297
+01:19:14,564 --> 01:19:17,684
+So this router always busy.
+
+298
+01:19:19,824 --> 01:19:20,244
+Okay.
+
+299
+01:19:20,244 --> 01:19:24,804
+What it does basically, let's forget the remaining routers.
+
+300
+01:19:25,587 --> 01:19:43,247
+The measured RTT in TCP plastic ARMD or TCP cubic increases TCP sending rate until the packet loss occurs.
+
+301
+01:19:43,247 --> 01:19:43,768
+Okay.
+
+302
+01:19:44,627 --> 01:19:51,648
+At some router because that router has bottleneck because that.
+
+303
+01:19:53,076 --> 01:20:17,036
+In that router, the buffer is full sometimes and it has some long delay and it requires transmission. And understanding congestion, useful to focus on that bottleneck link and we can forget the remaining. Okay? This side.
+
+304
+01:20:17,747 --> 01:20:28,707
+Increasing TCP sending rate will not increase end-to-end throughput because there's a bottleneck in the router.
+
+305
+01:20:30,827 --> 01:20:39,427
+So, increasing TCP sending rate will increase RTT because
+
+306
+01:20:39,731 --> 01:21:00,932
+Sende, since the sending rate increased, the buffer, the packet will wait into the buffer for a long time, then the RTT, return time, round time transmission RTT is exceed.
+
+307
+01:21:01,171 --> 01:21:27,884
+OK? Our goal is basically keep end-to-end pipe just full but not fuller. If it's fuller, which means some packet will be dropped. OK? In delay-based congestion control, so keeping sender to receiver pipe,
+
+308
+01:21:27,923 --> 01:21:54,155
+Bu, bu
+
+309
+01:22:23,247 --> 01:22:24,247
+A
+
+310
+01:22:22,579 --> 01:22:28,579
+Bite per second without packet loss, without congestion.
+
+311
+01:22:28,579 --> 01:22:40,579
+So, measured throughput is by sending last RTT interval divided by RTT measured.
+
+312
+01:22:40,579 --> 01:22:47,579
+So, if measured throughput is very close to congested throughput,
+
+313
+01:22:48,404 --> 01:23:03,984
+We can increase CW and the linearly because path has no congestion. Otherwise, if increased throughput far below to...
+
+314
+01:23:03,984 --> 01:23:25,984
+Uncongesed throughput this time, which means there is something wrong in the path, then we decrease CWND linear because there is something, some congestion in the path. The idea is too simple. So congestion control without...
+
+315
+01:23:26,292 --> 01:23:48,292
+İnducing or forcing loss. So our aim to maximizing throughput while keeping delay below because our aim keep the buffer fuller, full enough but not fuller.
+
+316
+01:23:49,619 --> 01:23:54,940
+A number of deployed TCPs take a delay-based approach.
+
+317
+01:23:54,940 --> 01:24:00,260
+So BBR is used in Google backbone.
+
+318
+01:24:00,260 --> 01:24:01,260
+OK.
+
+319
+01:24:01,260 --> 01:24:07,380
+Another one is, that is, network assisted congestion control.
+
+320
+01:24:07,891 --> 01:24:20,211
+TCP deployment often implement network assistant congestion control using explicit congestion notification flag ECM.
+
+321
+01:24:20,211 --> 01:24:33,252
+Okay, let's have a look here. Two bits in IP header that is in TOS field marked by network router to get congestion.
+
+322
+01:24:34,068 --> 01:24:36,068
+...
+
+323
+01:25:02,387 --> 01:25:07,387
+The destination that the congestion in that router.
+
+324
+01:25:09,387 --> 01:25:14,788
+Okay? And while acknowledging that received packet,
+
+325
+01:25:16,988 --> 01:25:19,788
+ECN, ECE,
+
+326
+01:25:20,887 --> 01:25:26,887
+that is the flag in TCP, that is in the acknowledgement segment,
+
+327
+01:25:27,188 --> 01:25:28,887
+that is inform
+
+328
+01:25:29,087 --> 01:25:32,087
+sender about the congestion.
+
+329
+01:25:32,627 --> 01:25:33,407
+So router
+
+330
+01:25:33,407 --> 01:25:36,028
+set the flag to
+
+331
+01:25:36,028 --> 01:25:37,787
+double one informing
+
+332
+01:25:37,787 --> 01:25:39,947
+receiver about the congestion
+
+333
+01:25:39,947 --> 01:25:41,907
+while acknowledging
+
+334
+01:25:41,907 --> 01:25:43,528
+then receiver
+
+335
+01:25:43,528 --> 01:25:44,688
+acknowledge
+
+336
+01:25:44,688 --> 01:25:48,247
+inform sender about the congestion
+
+337
+01:25:48,247 --> 01:25:49,087
+and
+
+338
+01:25:49,087 --> 01:25:51,907
+sender reduce to
+
+339
+01:25:51,907 --> 01:25:53,167
+CWND.
+
+340
+01:25:53,600 --> 01:26:07,000
+So it involves both IP header, IP header ICN bitmarking, and TCP header in acknowledgement, EC, E bitmarking. Okay?
+
+341
+01:26:07,000 --> 01:26:21,200
+It is in TCP header you remember, we have discussed. Let's discuss this time TCP fairness. The fairness goal is basically if K
+
+342
+01:26:22,163 --> 01:26:33,663
+TCP sessions, K-number TCP sessions, share same bottleneck link of bandwidth R, R is the capacity of the router.
+
+343
+01:26:33,663 --> 01:26:45,463
+It should have the average of R over K because K number of different connections share the bottleneck link.
+
+344
+01:26:45,876 --> 01:27:10,195
+Okay. In here, as you can see, TCP connection 1 and TCP connection 2 share the bottleneck router. The router's capacity is R. As you can see here, in the fairness, let's say two computing TCP session, TCP session 1 and TCP session 2,
+
+345
+01:27:10,351 --> 01:27:16,351
+So, the maximum capacity is R, right?
+
+346
+01:27:16,351 --> 01:27:24,351
+And additive increase gives slope to 1 as throughput increase.
+
+347
+01:27:24,351 --> 01:27:31,351
+Multicaptive decrease decreases throughput proportionally.
+
+348
+01:27:31,351 --> 01:27:36,351
+So, in the touchline is equal bandwidth share.
+
+349
+01:27:36,916 --> 01:27:43,836
+This link is shared by two connection, ideally, fairly.
+
+350
+01:27:43,836 --> 01:27:56,115
+So if one connection increase and decrease in half, increase and decrease in half, as you can see each time,
+
+351
+01:27:56,115 --> 01:28:02,515
+one connection increase, the other one is decreasing.
+
+352
+01:28:02,515 --> 01:28:03,515
+Okay?
+
+353
+01:28:03,515 --> 01:28:04,515
+Till...
+
+354
+01:28:04,735 --> 01:28:05,735
+İdeal.
+
+355
+01:28:05,735 --> 01:28:06,735
+So,
+
+356
+01:28:06,735 --> 01:28:07,735
+for the question,
+
+357
+01:28:07,735 --> 01:28:09,735
+is TCP fair?
+
+358
+01:28:09,735 --> 01:28:11,735
+Inideally,
+
+359
+01:28:11,735 --> 01:28:13,735
+it is the same.
+
+360
+01:28:13,735 --> 01:28:15,735
+It is fair.
+
+361
+01:28:15,735 --> 01:28:18,735
+Because inideal assumption means
+
+362
+01:28:19,347 --> 01:28:42,948
+For both connection, it must have same RTT, round trip time, and it must have fixed number of sessions only in congestion avoidance. If under these two assumptions, yes, TCP is fair. So...
+
+363
+01:28:44,148 --> 01:29:08,748
+Fairness must all network must be fair. So in fairness in UDP, multiple applications often do not use TCP, as you remember in HTTP3 or in VoiceOver IP. So it uses unreliable data transfer protocol. So in that...
+
+364
+01:29:08,975 --> 01:29:32,875
+Bu konnektörü de, bu konnektörü de, bu konnektörü de, bu konnektörü de, bu konnektörü de, bu konnektörü de, bu konnektörü de, bu konnektörü de, bu konnektörü de, bu konnektörü de, bu konnektörü de, bu konnektörü de, bu konnektörü de, bu konnektörü de, bu konnektörü de, bu konnektörü de, bu konnektörü de, bu konnektörü de, bu konnektörü de, bu konnektörü de, bu konnektörü de, bu konnektörü de, bu konnektörü de, bu konnektörü de, bu konnektörü de, bu konnektörü de, bu konnektörü de, bu konnektörü de
+
+365
+01:29:33,300 --> 01:29:36,300
+Policies use of congestion control.
+
+366
+01:29:36,300 --> 01:29:45,899
+So this, if you use UDP protocol, then you can add some liability on application layer.
+
+367
+01:29:45,899 --> 01:29:56,500
+So in parallel TCP connection, application can open multiple parallel connection between two hosts,
+
+368
+01:29:56,500 --> 01:30:00,000
+such as web browser do this link of...
+
+369
+01:30:00,000 --> 01:30:03,239
+R with nine existing connections.
+
+370
+01:30:03,239 --> 01:30:09,600
+Suppose new application asks one TCP connection, get rate R over 10.
+
+371
+01:30:09,600 --> 01:30:18,399
+And new application asks for 11 TCP connection, gets R over 2.
+
+372
+01:30:18,399 --> 01:30:19,399
+OK.
+
+373
+01:30:21,479 --> 01:30:24,119
+Let's start our last.
+
+374
+01:30:24,384 --> 01:30:46,028
+ve bu bölümde
+
+375
+01:30:47,724 --> 01:30:51,724
+ve
+
+376
+01:30:46,868 --> 01:31:10,148
+TCP and UDP, that is, principal transport layer protocol for 40 years, even existing up to 40 years, then it is, they are still in use. Okay? So there are different flavors of TCP developed for...
+
+377
+01:31:10,420 --> 01:31:12,140
+Specific scenarios,
+
+378
+01:31:12,659 --> 01:31:13,640
+let's say,
+
+379
+01:31:14,079 --> 01:31:16,619
+the long fat pipes,
+
+380
+01:31:16,860 --> 01:31:18,560
+which means it requires
+
+381
+01:31:18,560 --> 01:31:20,480
+large data transfers.
+
+382
+01:31:21,920 --> 01:31:23,619
+The challenge can be
+
+383
+01:31:23,619 --> 01:31:26,140
+many factors in flight,
+
+384
+01:31:27,220 --> 01:31:29,480
+lost shutdown pipeline
+
+385
+01:31:29,480 --> 01:31:32,539
+and in wireless network
+
+386
+01:31:32,539 --> 01:31:33,899
+is another one.
+
+387
+01:31:34,355 --> 01:31:54,755
+Because in this, according to nature of the network, the loss due to noisy wireless link and mobility, and in this TCP thread for this as congestion loss. And in very...
+
+388
+01:31:54,847 --> 01:32:01,847
+ve bu zamanın RTT'in tcp'in
+
+389
+01:32:01,847 --> 01:32:07,847
+ve bu konusunda
+
+390
+01:32:07,847 --> 01:32:11,340
+bu konusunda
+
+391
+01:32:12,051 --> 01:32:16,051
+ve bizim sistemlerimizin
+
+392
+01:32:16,051 --> 01:32:21,531
+ve bizim bu problemimizin
+
+393
+01:32:21,531 --> 01:32:23,811
+bizim oldukça
+
+394
+01:32:23,811 --> 01:32:28,011
+ve
+
+395
+01:32:28,011 --> 01:32:31,131
+bu
+
+396
+01:32:31,131 --> 01:32:31,631
+ve
+
+397
+01:32:31,631 --> 01:32:38,123
+bu
+
+398
+01:32:39,380 --> 01:32:44,380
+Researchers seek solution for those problems.
+
+399
+01:32:44,380 --> 01:32:52,380
+So, moving transport layer application up to the...
+
+400
+01:32:53,144 --> 01:32:56,484
+bu
+
+401
+01:32:53,076 --> 01:32:54,676
+application layers.
+
+402
+01:32:55,176 --> 01:32:56,636
+So some solution
+
+403
+01:32:56,636 --> 01:32:58,916
+can be found on
+
+404
+01:32:58,916 --> 01:33:00,735
+application layer.
+
+405
+01:33:01,296 --> 01:33:01,475
+Okay?
+
+406
+01:33:02,015 --> 01:33:04,556
+So in HTTP3,
+
+407
+01:33:04,975 --> 01:33:06,595
+although HTTP1 and
+
+408
+01:33:06,595 --> 01:33:08,275
+1.1 uses
+
+409
+01:33:08,275 --> 01:33:10,556
+TCP because HTTP
+
+410
+01:33:10,556 --> 01:33:12,136
+relied on
+
+411
+01:33:12,136 --> 01:33:13,195
+reliable
+
+412
+01:33:13,908 --> 01:33:35,908
+connection, data transfer, but because UDP is too fast and HTTP 3 uses UDP protocol, unreliable protocol, but the reliability is gained on application layer. So HTTP 3 uses QUIC.
+
+413
+01:33:36,851 --> 01:33:43,412
+QUIC UDP congestion internet connections,
+
+414
+01:33:43,412 --> 01:33:50,931
+that is the protocol developed in the application layer based on UDP.
+
+415
+01:33:51,652 --> 01:33:56,451
+Okay, so QUIC provides reliable
+
+416
+01:33:56,627 --> 01:34:01,627
+data transfer over unreliable UDP protocol.
+
+417
+01:34:01,627 --> 01:34:06,027
+In this case, since UDP is too fast
+
+418
+01:34:06,027 --> 01:34:13,427
+and QUIC and HTTP3 increase performance of HTTP.
+
+419
+01:34:13,427 --> 01:34:19,027
+And this QUIC UDP, QUIC internet,
+
+420
+01:34:19,027 --> 01:34:24,427
+UDP internet connection protocol deployed on
+
+421
+01:34:24,595 --> 01:34:30,835
+Google servers, such as Chrome and YouTube applications.
+
+422
+01:34:30,835 --> 01:34:31,835
+OK.
+
+423
+01:34:31,835 --> 01:34:52,435
+Here in HTTP2 and HTTP 1.1, and as you can see on the application layer, HTTP2 protocol, TLS protocol, then TCP and IP.
+
+424
+01:34:56,275 --> 01:35:03,095
+And in HTTP 3, HTTP 2 protocol is slimmed a bit.
+
+425
+01:35:03,095 --> 01:35:14,755
+And QUIC include TLS, transmission line security, plus QUIC adds some reliability over UDP protocol.
+
+426
+01:35:14,755 --> 01:35:17,395
+Okay? You can see the difference.
+
+427
+01:35:19,796 --> 01:35:20,996
+In QUIC...
+
+428
+01:35:21,844 --> 01:35:43,604
+QUIC UDP internet connection adapts approaches we have studied in this presentation, in transport layer presentation for connection establishment, error control, and congestion control in application layer because it uses UDP.
+
+429
+01:35:44,692 --> 01:36:12,108
+Error and Congestion Control, so that readers, students familiar with TCP loss detection and Congestion Control will find algorithms that are parallel well-known TCP algorithms. Okay? But it is developed in application, don't forget. Connection establishment is another
+
+430
+01:36:12,307 --> 01:36:29,467
+...method we have to use because reliability, condition control, authentication, encryption and state establishment in one RTT is done, duplication layer over UDP.
+
+431
+01:36:30,355 --> 01:36:56,595
+Multiple application layer streams multiplex over single quick connection. So, separate label data transfer security provides a common congestion control. In TCP plus TLS, time level security, transmission line security, there are two handshakes.
+
+432
+01:36:56,979 --> 01:37:08,739
+For one handshake for TCP connection, one handshake for security transmission line, security handshake.
+
+433
+01:37:08,739 --> 01:37:16,500
+So as you can see, in conventional TCP connection, there are three serial handshakes.
+
+434
+01:37:23,631 --> 01:37:50,031
+UDP is done on application layer. So one quick handshake is enough for handshake over UDP plus security. So we can save, as you can see, one handshake as a result, one RTT since it is S. Let's have a look.
+
+435
+01:37:50,868 --> 01:38:12,780
+QUIC streams parallel, no head-of-line blocking. As you can see in TLS encryption, let's say, 3-GET connection, and in TCP2, with QUIC and no head-of-line blocking. In here,
+
+436
+01:38:12,948 --> 01:38:38,668
+In HTTP 1, one get is there and something error there. So it has to wait till second get will succeed. Then the third one goes, right? In HTTP 2 with quick, those are all parallel with different quick. If that is error,
+
+437
+01:38:39,412 --> 01:38:45,592
+It may go, but meanwhile, 3rd GET may receive, right?
+
+438
+01:38:45,592 --> 01:38:50,631
+Then, at the receiver side, it's reassembled.
+
+439
+01:38:50,631 --> 01:38:57,032
+And as you can see, HTTP2 with QUIC, no head of line blocking.
+
+440
+01:38:57,032 --> 01:39:05,131
+Okay, guys, this is the end of seventh week.
+
+441
+01:39:05,460 --> 01:39:11,000
+And next week is the last week before midterm exam.
+
+442
+01:39:11,000 --> 01:39:19,399
+I think the midterm exam is 28th of April on Friday.
+
+443
+01:39:20,100 --> 01:39:22,119
+I think it's 9 or 10 o'clock.
+
+444
+01:39:22,539 --> 01:39:22,680
+Okay?
+
+445
+01:39:24,079 --> 01:39:24,840
+Any question?
+
+446
+01:39:26,760 --> 01:39:28,500
+Arkadaşlar, soru soran var mı?
+
+447
+01:39:31,923 --> 01:39:33,923
+Hocam, vize 9. hafta değil mi kesin?
+
+448
+01:39:33,923 --> 01:39:39,923
+Onunla ilgili web sayfasında ilan ettiler diye hatırlıyorum. Bana mail geldi.
+
+449
+01:39:39,923 --> 01:39:45,923
+Cuma günü 28'inde bizim sınavımız. Dolayısıyla haftaya dersimiz var.
+
+450
+01:39:45,923 --> 01:39:52,923
+Muhtemelen network layer ile biraz başlarız. Bitirir miyiz bilmiyorum Allah kerim.
+
+451
+01:39:52,923 --> 01:39:55,923
+Hocam, hafta bayrama geliyor mu?
+
+452
+01:39:55,923 --> 01:39:57,804
+Haftaya bayrama geliyor mu?
+
+453
+01:39:57,811 --> 01:40:05,811
+Haftayı yok o zaman. Bunlarla bitireceğiz. Dönüşteki cuma gününde sınav yapacağız.
+
+454
+01:40:05,811 --> 01:40:12,811
+Sınavda multiple choice soracağım arkadaş. Formatını sormuşsunuz bir arkadaşınız ama [öğrenci] sormuş.
+
+455
+01:40:12,811 --> 01:40:18,811
+Çoktan seçmeli. Yapacak bir şeyimiz yok. Muhtemelen 20 soru sorarım. Tamam.
+
+456
+01:40:20,916 --> 01:40:25,916
+Ama kısa süre veririm. Yani yarım saat gibi bir süre veririm ona göre.
+
+457
+01:40:29,427 --> 01:40:41,427
+Tamam. Başka soru sorun var mı? Hepinize hayırlı cumala, iyi bayramlar diliyorum arkadaşlar. Memlekete gidecekler için dikkatli olun.
+
+458
+01:40:41,427 --> 01:40:47,072
+Memlekette olanlar için de ailenize iyi bayramlar dilerim, iletin.
+
+459
+01:40:47,072 --> 01:40:53,252
+deprem bölgesinde olan arkadaşlara da gerçekten geçmiş olsun diyorum.
+
+460
+01:40:53,252 --> 01:41:02,131
+Ve inşallah Allah sizlere, bizlere daha büyük acılar yaşatmasın. Hepinize iyi bayramlar, görüşmek üzere.
+
+461
+01:41:02,131 --> 01:41:04,912
+İyi bayramlar hocam sizlere.
+
+462
+01:41:04,912 --> 01:41:07,311
+İyi günler hocam.
+
+463
+01:41:07,311 --> 01:41:08,300
+İyi günler.

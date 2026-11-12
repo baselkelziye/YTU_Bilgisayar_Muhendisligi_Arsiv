@@ -1,0 +1,1963 @@
+1
+00:00:28,916 --> 00:00:39,915
+Günaydın arkadaşlar. Sesim geliyordur inşallah. Bir beş dakika daha bekleyelim. On alt, on yedi kişi var. En azından otuz beş kırka dayansın. Ondan sonra dersimize başlarız.
+
+2
+00:07:25,204 --> 00:07:27,204
+Tekrar günaydın sevgili arkadaşlar.
+
+3
+00:07:28,603 --> 00:07:30,004
+Good morning everybody.
+
+4
+00:07:30,603 --> 00:07:32,403
+I hope everybody can hear me.
+
+5
+00:07:34,004 --> 00:07:36,804
+This is rainy Friday in Istanbul.
+
+6
+00:07:38,204 --> 00:07:46,204
+And let's start our six-week presentation in Computer Networking Technology lecture.
+
+7
+00:07:49,651 --> 00:07:52,251
+OK, let's share the screen first.
+
+8
+00:07:59,475 --> 00:08:05,036
+Okay. Now, this is not where we have left.
+
+9
+00:08:16,052 --> 00:08:43,331
+Thank you guys. Do you remember, at the end of last week's presentation, we have started to discuss or to develop reliable data, our own reliable data transfer protocol. We have started to develop our protocol, RDT 1.0, version 1.0, in that we assume that the line is perfect, lossless.
+
+10
+00:08:43,488 --> 00:08:45,488
+ve hiçbir zaman gelişmeyi yok.
+
+11
+00:08:45,488 --> 00:08:47,488
+Ve bu kadar çalışmalıyız.
+
+12
+00:08:47,488 --> 00:08:50,488
+Ve RDT'nin
+
+13
+00:08:50,488 --> 00:08:52,488
+ve
+
+14
+00:08:52,488 --> 00:08:55,488
+uygulamalarını
+
+15
+00:08:55,488 --> 00:08:59,488
+kullanarak uygulamalarını
+
+16
+00:08:59,488 --> 00:09:11,508
+uygulamalarını
+
+17
+00:09:07,668 --> 00:09:13,467
+Öğrençlerine geliştirmeyi
+
+18
+00:09:13,467 --> 00:09:14,668
+ve
+
+19
+00:09:14,668 --> 00:09:25,067
+birçok
+
+20
+00:09:25,067 --> 00:09:26,668
+ve
+
+21
+00:09:26,668 --> 00:09:28,567
+RDT10
+
+22
+00:09:28,567 --> 00:09:29,668
+ve
+
+23
+00:09:29,668 --> 00:09:32,000
+birçok
+
+24
+00:09:32,000 --> 00:09:39,000
+RDT 2, 0. And this time, just a second.
+
+25
+00:09:53,107 --> 00:10:05,707
+In here, we are going to discuss, we are going to improve our RDT, reliable data transfer protocol development.
+
+26
+00:10:05,707 --> 00:10:13,707
+And this time, our new channel, our underlying channel, it may lose.
+
+27
+00:10:14,012 --> 00:10:17,012
+birçok
+
+28
+00:10:13,844 --> 00:10:19,244
+ve bazı sorunlarla ilgili bir sorunlar var.
+
+29
+00:10:19,244 --> 00:10:20,844
+Şimdi, bu kadar da,
+
+30
+00:10:20,844 --> 00:10:22,844
+bu sorunlarla ilgili bir sorunlarla ilgili
+
+31
+00:10:22,844 --> 00:10:27,844
+verenlerle ilgili bir sorunlarla ilgili bir sorunlarla ilgili.
+
+32
+00:10:27,844 --> 00:10:40,844
+Bu sorunlarla ilgili bir sorunlarla ilgili bir sorunlarla ilgili.
+
+33
+00:10:40,947 --> 00:10:52,347
+Bu, bu durum olarak, nasıl bir hümetin, hümetin, hümetin, sender-to-receiver sözlerinden konuşuyoruz?
+
+34
+00:10:52,347 --> 00:11:00,268
+Bu, bu durumda, eğer bir paket, bir paket, hiçbir şey yok.
+
+35
+00:11:00,268 --> 00:11:02,827
+Bu, ne yaparız? Bir zaman, bir süreç.
+
+36
+00:11:02,995 --> 00:11:06,995
+And you repeat your conversation again.
+
+37
+00:11:06,995 --> 00:11:18,995
+So, first solution, basically, similar to human conversation is sender waits for reasonable amount of time,
+
+38
+00:11:18,995 --> 00:11:24,995
+till whether the acknowledgement is received or not.
+
+39
+00:11:25,940 --> 00:11:27,840
+Noyaknowledgement is received,
+
+40
+00:11:28,160 --> 00:11:31,980
+which means the packet the sender sent may be lost
+
+41
+00:11:31,980 --> 00:11:35,200
+or the acknowledgement may be lost.
+
+42
+00:11:35,360 --> 00:11:41,040
+In that case, the sender waits reasonable amount of time.
+
+43
+00:11:41,640 --> 00:11:44,040
+Resonableness is important.
+
+44
+00:11:44,040 --> 00:11:48,140
+If this time is too short,
+
+45
+00:11:48,563 --> 00:11:55,443
+In that case, you may unnecessarily resend the packet.
+
+46
+00:11:55,443 --> 00:12:04,644
+If too long, you may not optimize the useless of the channel.
+
+47
+00:12:04,644 --> 00:12:09,523
+So reasonableness is the important parameter.
+
+48
+00:12:12,692 --> 00:12:21,871
+Ve bir süreç bir süreçte kadar zamanı ve süreçte bir süreçte bir süreçte geçti.
+
+49
+00:12:23,211 --> 00:12:27,951
+Ve süreçte bir süreçte geçti.
+
+50
+00:12:27,951 --> 00:12:31,951
+Bu süreçte geçti.
+
+51
+00:12:31,951 --> 00:12:35,951
+Ama bu süreçte geçti.
+
+52
+00:12:38,163 --> 00:12:42,163
+Here, we are going to use the sequence number.
+
+53
+00:12:42,163 --> 00:12:55,163
+Okay? If the sequence number is the same, which means saving packet has arrived and the transport layer protocol discard that duplicate.
+
+54
+00:12:55,163 --> 00:13:02,163
+Receiver must specify the sequence number of the packet in Acknowledgement 2.
+
+55
+00:13:05,504 --> 00:13:10,663
+...which packet is received and acknowledged.
+
+56
+00:13:11,864 --> 00:13:14,704
+So we use countdown timer...
+
+57
+00:13:16,264 --> 00:13:21,364
+...to interrupt after reasonable amount of time is over.
+
+58
+00:13:22,067 --> 00:13:25,008
+ve zaman zamanı çıkartır,
+
+59
+00:13:25,008 --> 00:13:27,627
+sender de sender tekrar senderlerle
+
+60
+00:13:27,627 --> 00:13:28,607
+ve tekrar,
+
+61
+00:13:28,607 --> 00:13:31,087
+ve senderlerle altyazı
+
+62
+00:13:31,087 --> 00:13:32,847
+veya akkordelerle altyazı
+
+63
+00:13:32,847 --> 00:13:34,067
+altyazı.
+
+64
+00:13:34,788 --> 00:13:35,768
+Şimdi bakalım.
+
+65
+00:13:38,827 --> 00:13:40,587
+Finistate machine
+
+66
+00:13:40,587 --> 00:13:42,447
+in the sender.
+
+67
+00:13:42,447 --> 00:13:43,528
+As you can see,
+
+68
+00:13:44,928 --> 00:13:48,928
+ve
+
+69
+00:13:44,244 --> 00:14:11,844
+We assume we use two sequence number, sequence number one and zero, which means we use one bit. Okay? And in that case, we have four states waiting for zero from above, from application layer. And in another state, this is for packet zero, wait for acknowledgement from receiver. And...
+
+70
+00:14:12,244 --> 00:14:37,388
+for packet 1, this is another part of the packet, and wait for call packet 1 from application layer, and wait for acknowledgement for packet 1. So let's start here. If the packet is received,
+
+71
+00:14:37,748 --> 00:14:58,948
+From application layer, the protocol, our protocol send our packet using our RDT send protocol. In that case, our protocol add our data, the sequence number which is zero, and the checksum.
+
+72
+00:14:59,635 --> 00:15:08,875
+ve bu paketlerle paydayı verilir.
+
+73
+00:15:08,875 --> 00:15:13,995
+SENDE ile ilgili bir data transfer sende,
+
+74
+00:15:13,995 --> 00:15:16,395
+ve sende paketlerle paydayı verilir.
+
+75
+00:15:16,395 --> 00:15:22,395
+SENDE paketlerle paydayı verilir.
+
+76
+00:15:22,395 --> 00:15:23,675
+ve check sum.
+
+77
+00:15:23,988 --> 00:15:33,988
+So, when the packet is sent, our protocol waits for acknowledgement for sequence number zero.
+
+78
+00:15:35,988 --> 00:15:38,988
+And start the timer.
+
+79
+00:15:38,988 --> 00:15:46,892
+Meanwhile, if the packet is received without...
+
+80
+00:15:46,932 --> 00:16:03,932
+...
+
+81
+00:16:03,604 --> 00:16:28,203
+And if it received from application layer, send, including the sequence number one data and the checksum, and start the timer. And if received without error, plus the acknowledgement is received, stop the timer and set itself to zero position. Okay?
+
+82
+00:16:32,240 --> 00:16:43,240
+...
+
+83
+00:16:31,731 --> 00:16:33,211
+ve zaman zamanı çıkan,
+
+84
+00:16:35,291 --> 00:16:36,251
+yani,
+
+85
+00:16:56,820 --> 00:17:16,220
+send the packet and start the timer again. Similar version is here and here. Okay? Wait for acknowledgement one for sequence number one. If the time is out, then resend the packet.
+
+86
+00:17:17,587 --> 00:17:34,587
+If this sequence number one packet is corrupted, then send again and start the timer. Okay? It is very simple. Let's have a look. These are this...
+
+87
+00:17:34,880 --> 00:18:01,519
+state, this figure in the previous slide, showing our finite state machine model of our reliable data transfer version 3, within figure A with no losses. Zero is sent and received by receiver, and send acknowledgement zero.
+
+88
+00:18:01,728 --> 00:18:02,567
+Çok simple.
+
+89
+00:18:03,428 --> 00:18:05,028
+You recall your
+
+90
+00:18:05,028 --> 00:18:07,888
+final state machine in the previous slide.
+
+91
+00:18:08,367 --> 00:18:10,208
+Then send packet 1
+
+92
+00:18:10,208 --> 00:18:11,268
+and
+
+93
+00:18:11,268 --> 00:18:13,268
+there is no error.
+
+94
+00:18:13,468 --> 00:18:14,648
+Once it's received,
+
+95
+00:18:15,288 --> 00:18:17,048
+then send acknowledgement 1.
+
+96
+00:18:17,048 --> 00:18:18,548
+Once it's received,
+
+97
+00:18:19,108 --> 00:18:20,968
+because 1 bit is used for
+
+98
+00:18:20,968 --> 00:18:22,728
+sequence numbering,
+
+99
+00:18:23,067 --> 00:18:24,108
+so there are...
+
+100
+00:18:50,259 --> 00:18:54,259
+Paket 0 is sent, and acknowledgement is received.
+
+101
+00:18:54,259 --> 00:19:01,299
+Then sender send packet 1, but somehow our packet 1 is lost.
+
+102
+00:19:02,579 --> 00:19:10,420
+And we set the timer, as you remember, in our state machine.
+
+103
+00:19:11,059 --> 00:19:17,299
+After the reasonable amount of time, timer is out, then resend packet 1.
+
+104
+00:19:18,036 --> 00:19:31,256
+Bu zaman, paket 1'i receive, akk'ın senden ve senden, akk'ın senden, akk'ın senden, akk'ın senden, paket 1'i receive, and senden senden, paket 1'i receive.
+
+105
+00:19:31,256 --> 00:19:32,736
+Bu çok simple.
+
+106
+00:19:34,216 --> 00:19:41,355
+As you can see, the difference between the transmission with no loss, the transmission with paket loss.
+
+107
+00:19:45,236 --> 00:19:51,556
+FİG, FİG, B. We assume that our packet is lost, all right?
+
+108
+00:19:51,556 --> 00:19:55,716
+This time, Acknowledgement get lost.
+
+109
+00:19:55,716 --> 00:20:01,155
+Zero is sent and received by the receiver.
+
+110
+00:20:01,155 --> 00:20:05,716
+And as you can see, Acknowledgement and Acknowledgement is received.
+
+111
+00:20:05,716 --> 00:20:10,675
+Packet one is sent. Packet one is received.
+
+112
+00:20:11,923 --> 00:20:17,683
+Aşkıda, OSI ve İlendirme, çoğda, ABŞ1'i çeşitli.
+
+113
+00:20:17,683 --> 00:20:26,963
+As you remember, when we send the packet, as soon as we send, we start the timer.
+
+114
+00:20:26,963 --> 00:20:31,683
+After reasonable amount of time, there is no acknowledgement that is received,
+
+115
+00:20:31,683 --> 00:20:35,683
+then send, resend packet one again.
+
+116
+00:20:35,683 --> 00:20:36,963
+As you can see,
+
+117
+00:20:37,183 --> 00:20:58,304
+At the receiver side, there are two duplicate, there are duplicate packet one, but our protocol ignore this duplicate and acknowledge one is send again, then is that is received, then the packet is send the next packet, all right?
+
+118
+00:20:59,251 --> 00:21:25,251
+In the figure D on the right side, this time, let's say our premature timeout, what it does mean? We, as I said, the timer is reasonable amount of time, the system, our protocol weights. If this time is shorter than the transmission of acknowledgement, what happens?
+
+119
+00:21:26,163 --> 00:21:31,443
+Paket 0 is sent and that is received and Acknowledgement is sent and received.
+
+120
+00:21:31,443 --> 00:21:41,483
+And although Paket 1 is received and Acknowledgement is sent but has not received yet and the time is out,
+
+121
+00:21:41,483 --> 00:21:44,923
+then send and resend the Paket 1 again.
+
+122
+00:21:44,923 --> 00:21:49,764
+In this time, meanwhile Acknowledgement 1 is received.
+
+123
+00:21:50,443 --> 00:21:51,563
+And...
+
+124
+00:21:52,339 --> 00:22:06,339
+At the receiver side, there are two packet one. As soon as Acknowledgement One is received, and receiver send Acknowledgement One again.
+
+125
+00:22:06,339 --> 00:22:15,740
+In this time, at the sender, as soon as Acknowledgement One is received, the sender send the next packet again.
+
+126
+00:22:19,635 --> 00:22:45,899
+Bir sonraki bir sonraki bir sonraki bir sonraki bir sonraki bir sonraki bir sonraki bir sonraki bir sonraki bir sonraki bir sonraki bir sonraki bir sonraki bir sonraki bir sonraki bir sonraki bir sonraki bir sonraki bir sonraki bir sonraki bir sonraki bir sonraki bir sonraki bir sonraki bir sonraki bir sonraki bir sonraki bir sonraki bir sonraki bir sonraki bir sonraki bir sonraki bir sonraki bir sonraki bir sonraki bir sonraki bir sonraki bir sonraki bir sonraki bir sonraki bir sonraki bir sonraki bir sonraki bir sonraki bir sonraki bir sonraki bir sonraki bir sonraki bir sonraki bir sonraki bir sonraki bir sonraki bir sonraki bir sonraki bir sonraki bir sonraki bir sonraki bir sonraki bir sonraki bir sonraki bir sonraki bir sonraki bir sonraki bir sonraki bir sonraki bir sonraki bir sonraki bir sonraki bir sonraki bir sonraki bir sonraki bir sonraki bir sonraki bir sonraki bir
+
+127
+00:22:45,971 --> 00:22:53,372
+ASSUMED ALL CIRCUMSTANCES IN OUR RDT 3.0 protocol.
+
+128
+00:22:53,372 --> 00:22:54,372
+Okay?
+
+129
+00:22:55,971 --> 00:22:56,971
+So...
+
+130
+00:22:58,355 --> 00:23:09,215
+Our protocol is simple. Stop and wait. Send the packet, wait for acknowledgement, and start the timer, and wait for a reasonable amount of time.
+
+131
+00:23:09,215 --> 00:23:19,596
+If the timer is out, then resend again. And in some circumstances, there will be duplicate packets and duplicate acknowledgement.
+
+132
+00:23:19,855 --> 00:23:23,855
+And we added some method to ignore.
+
+133
+00:23:24,288 --> 00:23:50,796
+Duplicate packets or duplicate acknowledgement because no need to use again because it is duplicate and it is the system methodology, right? But let's have a look at the performance. Utilization, sender utilization is the fraction of time sender busy sending and
+
+134
+00:23:51,092 --> 00:23:56,632
+Yeni bir süreçten sonra, sender bekletmek için bir akkola.
+
+135
+00:23:57,292 --> 00:23:59,772
+Tamam, bu örneğin bir örnek olarak,
+
+136
+00:23:59,892 --> 00:24:04,192
+let's say our link kapasitesi 1 gigabit per second.
+
+137
+00:24:04,692 --> 00:24:05,192
+Alright?
+
+138
+00:24:12,660 --> 00:24:18,300
+Acknowledgment or to receive the packet, 15 millisecond delay.
+
+139
+00:24:18,300 --> 00:24:23,759
+And let's say our packet size is 8000 bit, right?
+
+140
+00:24:24,372 --> 00:24:40,132
+So let's say, please recall the formulation, the time required to send that amount of packet through our link, of which capacity is 1 gigabit per second.
+
+141
+00:24:40,132 --> 00:24:52,372
+Time to transmit packet into channel, it is the D is the transmission time, is equal to L, L is the data size, R is...
+
+142
+00:24:52,372 --> 00:25:17,483
+The capacity, data size is 8000 bits, R is the capacity of the link is 1 gigabit per second, 10 power 9 bits per second. In this case, the transmission time for that transmission is 8 microsecond, all right? In the stop and wait operation,
+
+143
+00:25:17,779 --> 00:25:45,580
+As you can see, sender send the packet and first bit arrives and the last bit arrives, right? Because that is 8000 bit in one packet. As soon as last bit arrives, the receiver send acknowledgement. The RTT is, as you can see in our example, 15 milliseconds.
+
+144
+00:25:45,652 --> 00:25:46,604
+Ok?
+
+145
+00:25:50,996 --> 00:26:16,596
+So, the packet, arrive time, the first packet is received, and the acknowledgement is received, and T equal to RTT, round trip time, plus L over R. That is the D transmission. This is the data, the time required to send our data. Okay?
+
+146
+00:26:18,355 --> 00:26:34,355
+The utilization of the sender equal to RTT plus L over R. This is the total amount of time to require to send and to receive acknowledgement.
+
+147
+00:26:37,523 --> 00:27:05,323
+OK? And L over R. That is the utilization. As you remember, it was 8 microsecond and 30 millisecond plus 8 microsecond, and the utilization is 0.00027. OK? That is our protocol, RTT2 power 0 protocol. Performance is...
+
+148
+00:27:05,652 --> 00:27:07,652
+ve horrible.
+
+149
+00:27:07,652 --> 00:27:08,652
+Evet,
+
+150
+00:27:08,652 --> 00:27:35,384
+bu,
+
+151
+00:27:32,339 --> 00:27:49,480
+We can, instead of sending one packet and receiving the acknowledgement, we may set many packets and we send acknowledgement of these packets.
+
+152
+00:27:49,480 --> 00:27:57,980
+As you can see, the number of packets on the line may improve the performance, may improve utilization.
+
+153
+00:28:00,660 --> 00:28:09,660
+Instead of using one bit of sequence number, we have to increase the number of bits for sequence numbering.
+
+154
+00:28:10,980 --> 00:28:18,820
+Moreover, we need to have buffer at the sender or receiver side.
+
+155
+00:28:29,268 --> 00:28:56,668
+A connectionless protocol, unreliable protocol, if the packet may be sent, may be received out of order. So we have to put them into the buffer to reorder. So as I said, the utilization is, to increase the utilization, first solution is pipelining.
+
+156
+00:28:59,539 --> 00:29:10,539
+As you can see, suppose we use, we send three packets, then wait for acknowledgement.
+
+157
+00:29:10,539 --> 00:29:10,923
+OK?
+
+158
+00:29:11,412 --> 00:29:15,771
+İlk paket is sent, RTT for the first paket,
+
+159
+00:29:15,771 --> 00:29:19,032
+second paket is sent, and third paket is sent.
+
+160
+00:29:19,032 --> 00:29:27,951
+RTT again, time required for the first paket is T equal to RTT plus L over R,
+
+161
+00:29:28,251 --> 00:29:32,432
+but we sent three pakets in seconds.
+
+162
+00:29:33,211 --> 00:29:36,971
+In this time, we have increased our utilization.
+
+163
+00:29:38,836 --> 00:29:46,115
+3 times because without waiting an acknowledgement, we send 3 packets.
+
+164
+00:29:49,395 --> 00:30:01,635
+Okay, 3 packets pipelining increases utilization by the factor of 3. So why don't we increase the number of packets in the line?
+
+165
+00:30:04,355 --> 00:30:06,115
+So in this time,
+
+166
+00:30:06,740 --> 00:30:10,500
+Instead of using stop and wait mechanism,
+
+167
+00:30:12,380 --> 00:30:15,380
+we can use go back and sender.
+
+168
+00:30:17,180 --> 00:30:20,380
+In this time, instead of waiting, sending one packet
+
+169
+00:30:20,380 --> 00:30:22,340
+and waiting for acknowledgement,
+
+170
+00:30:23,259 --> 00:30:27,740
+we set the window, the size of N.
+
+171
+00:30:27,740 --> 00:30:29,220
+So N...
+
+172
+00:30:29,652 --> 00:30:52,652
+ve
+
+173
+00:30:56,564 --> 00:30:59,483
+Bu da bizim window.
+
+174
+00:30:59,483 --> 00:31:01,483
+Window size n.
+
+175
+00:31:01,483 --> 00:31:06,124
+Ve green paketlerden sonra
+
+176
+00:31:06,124 --> 00:31:11,844
+ve yellow paketlerden sonra
+
+177
+00:31:11,844 --> 00:31:19,884
+ve beyaz paketlerden sonra
+
+178
+00:31:20,051 --> 00:31:23,132
+ve bu yerin de window.
+
+179
+00:31:23,132 --> 00:31:25,092
+Ve remaining packets
+
+180
+00:31:25,092 --> 00:31:27,092
+are unusable
+
+181
+00:31:27,092 --> 00:31:27,971
+çünkü
+
+182
+00:31:27,971 --> 00:31:30,451
+the window size exceeds.
+
+183
+00:31:30,451 --> 00:31:31,251
+Okay?
+
+184
+00:31:31,251 --> 00:31:34,771
+We send the packet
+
+185
+00:31:34,771 --> 00:31:36,132
+without acknowledgement
+
+186
+00:31:36,132 --> 00:31:37,331
+in the window.
+
+187
+00:31:37,331 --> 00:31:39,331
+Then we wait for acknowledge.
+
+188
+00:31:39,331 --> 00:31:41,092
+As soon as the packet acknowledge,
+
+189
+00:31:41,092 --> 00:31:45,092
+we shift our window.
+
+190
+00:31:50,003 --> 00:32:17,364
+In this time, we use Cumulative Acknowledge, Acknowledge N, N is the last packet. Packets, Acknowledge all packets up to the including sequence number N, which means once we send the Acknowledge N, which means all previous packets are received safely. On receiving Acknowledge N,
+
+191
+00:32:18,708 --> 00:32:46,208
+The sender move window for to begin at N plus one, all right? Timer for oldest in-flight packet. So timeout N for the Nth packet. So retransmit the packet N and all packets higher than the sequence number N in the window because
+
+192
+00:32:46,208 --> 00:32:58,708
+Again, we further here, the packet must be received in order. We assume that there is no buffer at the receiver side, for this example.
+
+193
+00:32:59,708 --> 00:33:00,708
+So...
+
+194
+00:33:00,852 --> 00:33:20,052
+Acknowledge only, always send, acknowledge for correct received packet so far with highest in order sequence number. Highest in order sequence number. Right? So in this case, may generate duplicate acknowledged.
+
+195
+00:33:21,268 --> 00:33:37,028
+ve sender ve receiver may need to remember our base receive, the base packet of our window. On receivet of out-of-order packet,
+
+196
+00:33:37,028 --> 00:33:45,748
+if we have no buffer, we discard the buffer, we discard the packet.
+
+197
+00:33:52,363 --> 00:34:01,483
+As you can see here, this is the receiver base because the previous packets are received and acknowledged.
+
+198
+00:34:01,483 --> 00:34:12,483
+This is the base of the window. As you can see, pink one is received but out of order since there is no place for buffer.
+
+199
+00:34:12,820 --> 00:34:14,572
+Just a second, guys.
+
+200
+00:35:37,268 --> 00:35:43,248
+ve bu
+
+201
+00:35:43,248 --> 00:35:48,867
+bu
+
+202
+00:35:53,907 --> 00:36:17,108
+So, let's have a look at this in the timeline as an example. Let's say our window is 4, which means we can send 4 packets without acknowledged. Standard, so this is our sliding window. Packets 0, 1, 2, and 3 is sent. All right?
+
+203
+00:36:17,268 --> 00:36:32,748
+Paket 0 is received and send Acknowledgement 0, Paket 1 is received and send Acknowledgement 1, Paket 2 is lost and Paket 3 is received. Okay? But...
+
+204
+00:36:34,576 --> 00:36:52,675
+bu
+
+205
+00:36:33,844 --> 00:36:48,403
+Discard packet 3, because it is out of order, and resend acknowledgement 1 again, because this is the highest numbered packet safely received at receiver side.
+
+206
+00:36:49,043 --> 00:36:55,784
+Send acknowledgement 1 and 0 and acknowledgement 1 and acknowledgement 1 again.
+
+207
+00:37:01,876 --> 00:37:06,155
+Şimdi 4 paket is sent.
+
+208
+00:37:06,836 --> 00:37:10,016
+Ama yine de bir ordur.
+
+209
+00:37:10,615 --> 00:37:19,816
+Ve o zaman senden 1 akk.
+
+210
+00:37:21,012 --> 00:37:31,012
+We move the window left and send packet one, but those are out of order, packet three, packet four, and packet five.
+
+211
+00:37:31,012 --> 00:37:40,311
+And in this case, the Acknowledgement one, Duplicate Acknowledgement one is received.
+
+212
+00:37:40,311 --> 00:37:48,712
+As you remember, Acknowledgement one is already received, but those packets are out of order and ignore these duplicate.
+
+213
+00:37:49,588 --> 00:38:04,828
+Acknowledgment 1, and packet 1 timeout, and send packet 1, packet 2, packet 4, 3, and packet 4, and packet 5.
+
+214
+00:38:06,420 --> 00:38:18,019
+Because the transmission must be in order because there is no buffer at the receiver side. All right? That is very simple. The packet is lost.
+
+215
+00:38:20,619 --> 00:38:24,819
+One solution for this...
+
+216
+00:38:27,891 --> 00:38:45,891
+VEK'NAS, AS YOU REMEMBER, THERE IS NO BUFFER AT THE RECEIVER AND WE IGNORE OUT OF ORDER PACKETS AND IN THAT CASE WE HAVE TO UNNECESSARILY RESEND THE PACKETS, ALTHOUGH THOSE ARE RECEIVED BY RECEIVER.
+
+217
+00:38:46,547 --> 00:39:06,747
+First solution is selective repeat. Receiver individually acknowledge all correctly received packets, but in that case, the receiver must have buffer and put those unordered packets into the buffer.
+
+218
+00:39:07,092 --> 00:39:28,460
+ve ve
+
+219
+00:39:28,628 --> 00:39:30,628
+...
+
+220
+00:39:56,019 --> 00:40:22,819
+But as you can see, this is out of order. The sender do not move this window to the left. Wait for receiving these yellow packets. Okay. As soon as it is received, then slide the window.
+
+221
+00:40:25,235 --> 00:40:52,715
+So, let's have a look at the selective repeat sender and receiver side. At the sender side, data from above, if next available sequence number in window send packet, then we set the timer. If the timer is out, time is out for sequence number N, we send only that packet.
+
+222
+00:40:52,980 --> 00:41:01,380
+Then, start timer for the packet N, for waiting the Acknowledgement N.
+
+223
+00:41:01,380 --> 00:41:12,779
+And if the Acknowledgement N is received, then mark packet N is received, and if N smallest Acknowledge packet,
+
+224
+00:41:12,779 --> 00:41:19,371
+and advanced window base to the next unacknowledged sequence number.
+
+225
+00:41:19,476 --> 00:41:43,476
+At receiver side, the packet N, that is the base for the window, send Acknowledgement N, and if it is out of order, put it into the buffer. In order delivery means the buffer, those unordered packets into the buffer once.
+
+226
+00:41:43,699 --> 00:41:53,699
+All the packets are arrived, put them in order and send the highest number of ordered packet as acknowledged.
+
+227
+00:41:53,699 --> 00:41:58,699
+And if there are some duplicates, ignore.
+
+228
+00:41:58,699 --> 00:42:04,699
+Let's have a look at this repeat, selective repeat in action.
+
+229
+00:42:04,699 --> 00:42:08,172
+Again, our window size is 4.
+
+230
+00:42:11,155 --> 00:42:25,395
+Send, packet 0, packet 1, packet 2, and packet 3, and packet 2 is lost. And packet 3 is put into the buffer. Okay?
+
+231
+00:42:26,132 --> 00:42:39,132
+Acknowledgment 0 is received, Acknowledgment 1 is received, and packet 3 is put into the buffer, and Acknowledgment 3 is sent and received.
+
+232
+00:42:39,603 --> 00:43:03,203
+And send packet 4, again put in the buffer and send Acknowledgement 4. And packet 5 is sent and received and put into buffer. Instead of discarding, ignoring packet 3, packet 4 and packet 5 are put into the buffer. And...
+
+233
+00:43:04,148 --> 00:43:28,148
+Once the Acknowledgement 3 is received, do not slide the window. And the window is 4, and already 4 packet is sent, and packet 2, Acknowledgement of packet 2 is not received. After the timeout, packet 2 is sent.
+
+234
+00:43:29,556 --> 00:43:45,876
+OK, not 3, 4, or 5. And since those are put into the buffer, reorder the packet and acknowledge packet 2. And in this case,
+
+235
+00:43:46,420 --> 00:43:52,420
+Slight the window because two is already received, three, four, and five.
+
+236
+00:43:52,420 --> 00:43:56,420
+Then move the window up to the six.
+
+237
+00:43:56,420 --> 00:43:58,420
+Okay? It is very simple.
+
+238
+00:44:01,076 --> 00:44:27,875
+Let's overlook the selective repeat adresleme. For example, sequence number 0, 1, 2, or 3. That is the base for counting. Window size is 3. As you can see, packet 3 is lost and will accept with sequence number 0. If packet 3 is lost, then packet 0 is sent.
+
+239
+00:44:28,052 --> 00:44:29,052
+No problem.
+
+240
+00:44:29,052 --> 00:44:55,751
+But if those acknowledgements are lost, okay, and package zero is send again after the timeout, okay, after the timeout, in this case, it's a problem because receiver side, although
+
+241
+00:44:57,108 --> 00:45:05,988
+paket, all pakets are received safely and send acknowledged, but those acknowledgements are lost.
+
+242
+00:45:05,988 --> 00:45:19,908
+And since paket 0 is send again, okay? In this case, this paket 0 is identical of the paket 0 at the top,
+
+243
+00:45:19,908 --> 00:45:24,948
+but the receiver may think this is the new paket.
+
+244
+00:45:25,492 --> 00:45:48,892
+OK? Because it slides the window, and the synchronization is out of order, because window in sender side and window in receiver side must be synchronized. Otherwise, there's a problem, as you can see in figure B.
+
+245
+00:45:50,356 --> 00:45:54,636
+Çünkü sander tarafından görüyoruz.
+
+246
+00:45:54,636 --> 00:46:00,636
+Sander tarafından görüyoruz.
+
+247
+00:46:00,636 --> 00:46:02,636
+Eğer bir şey yok,
+
+248
+00:46:02,636 --> 00:46:05,636
+bu bir şey yok.
+
+249
+00:46:05,636 --> 00:46:10,076
+Bu bir şey yok.
+
+250
+00:46:12,403 --> 00:46:34,347
+So, the relationship is needed between sequence number size and the window size to avoid the problem in the scenario B, shown in the previous figure. Okay? So this is the problem. And this time,
+
+251
+00:46:34,996 --> 00:46:41,115
+Let's start the real TCP, Transport Control Protocol.
+
+252
+00:46:41,115 --> 00:46:44,315
+That is the connection-oriented protocol.
+
+253
+00:46:44,315 --> 00:46:48,036
+That is the reliable data transfer protocol.
+
+254
+00:46:48,036 --> 00:46:53,076
+And we are going to start discussing TCP at the next hour.
+
+255
+00:46:53,076 --> 00:46:56,235
+Okay, guys, let's give a break for 15 minutes.
+
+256
+00:46:56,235 --> 00:46:58,604
+Then we can start discussing TCP.
+
+257
+00:47:00,019 --> 00:47:03,140
+Start discussing TCP protokoller.
+
+258
+00:47:04,340 --> 00:47:08,420
+Bir on beş dakikara verelim arkadaşlar. Sonra devam ederiz.
+
+259
+01:06:10,771 --> 01:06:33,972
+Hey guys. Welcome back again. Let's continue to our lecture. As you remember, we have just finished developing our reliable data transfer protocol. We have assumed all circumstances and we have developed three versions.
+
+260
+01:06:34,612 --> 01:06:42,012
+İzlediğiniz için,
+
+261
+01:07:02,867 --> 01:07:12,627
+We are going to talk about the segment structure in TCP and how TCP can manage reliable data transfer.
+
+262
+01:07:12,627 --> 01:07:20,867
+Since this is the reliable data transfer, there must be some mechanism for flow control.
+
+263
+01:07:21,172 --> 01:07:27,451
+Çünkü sender neyip akşamlari, sender neyip akşamlari, sender neyip akşamlari,
+
+264
+01:07:48,639 --> 01:07:51,639
+A, D's in detail.
+
+265
+01:07:54,860 --> 01:07:56,139
+Okay.
+
+266
+01:07:56,139 --> 01:08:00,179
+In TCP, it is open protocol.
+
+267
+01:08:00,596 --> 01:08:15,916
+And the RFC document 393, 1122, 2018, 5681, and 7323.
+
+268
+01:08:15,916 --> 01:08:24,916
+These are the standard document explain the TCP. That is point-to-point protocol.
+
+269
+01:08:25,716 --> 01:08:40,396
+It gives reliable data transfer and since it is point to point, there must be one sender and one receiver. It is reliable in order byte stream.
+
+270
+01:08:40,467 --> 01:09:01,467
+So it's not similar to UDP. There is no message boundaries. It is full duplex data, which means bidirectional data flow in same direction. Okay? And MSS is the maximum segment size since it is...
+
+271
+01:09:01,568 --> 01:09:11,568
+In order by string, we have to set the maximum data size to manage.
+
+272
+01:09:11,568 --> 01:09:12,568
+Okay?
+
+273
+01:09:14,568 --> 01:09:21,568
+It used cumulative acknowledgements and to improve the bandwidth of the link.
+
+274
+01:09:22,047 --> 01:09:32,688
+TCP use pipelining and TCP has congestion and flow control mechanism to set window size.
+
+275
+01:09:32,688 --> 01:09:41,247
+It is connection oriented because it gives us reliable data transfer.
+
+276
+01:09:41,247 --> 01:09:48,448
+It has handshaking mechanism. Handshaking means exchange.
+
+277
+01:09:48,528 --> 01:09:58,288
+The control may exchange the control information, setting the window size, maximum data size, and so on and so forth.
+
+278
+01:09:58,288 --> 01:10:06,528
+And TCP also have flow control. Sender will not overwhelm receiver.
+
+279
+01:10:06,528 --> 01:10:11,528
+Okay? Let's have a look at TCP segment structure.
+
+280
+01:10:12,595 --> 01:10:40,595
+You may recall it has destination port and source port in TCP to use multiplexing and demultiplexing purposes because TCP gives service to application level to many applications and to distinguish these applications we use unique source port and destination ports.
+
+281
+01:10:40,595 --> 01:10:44,135
+Bu 16 bitki birçok.
+
+282
+01:10:45,275 --> 01:10:49,535
+Bu birçok birçok.
+
+283
+01:10:50,475 --> 01:10:54,615
+Birçok birçok.
+
+284
+01:10:54,995 --> 01:10:57,695
+2.32.
+
+285
+01:10:59,615 --> 01:11:07,475
+Birçok birçok.
+
+286
+01:11:08,595 --> 01:11:33,075
+Here is the Acknowledgement Sequence Number, that again 32-bit, and one flag in the Options A is the A bit is set. This is Acknowledgement of, this is set by using the handshaking mechanism. And application of data, it is variable in length.
+
+287
+01:11:34,163 --> 01:11:44,163
+ve bu
+
+288
+01:11:44,163 --> 01:11:49,163
+ve
+
+289
+01:11:49,163 --> 01:12:03,163
+bir
+
+290
+01:12:03,252 --> 01:12:06,452
+It is header is in variable length.
+
+291
+01:12:07,772 --> 01:12:10,972
+Here is the length of the header.
+
+292
+01:12:11,272 --> 01:12:11,772
+Okay.
+
+293
+01:12:13,272 --> 01:12:16,852
+And RSD flags is the one byte.
+
+294
+01:12:17,752 --> 01:12:25,192
+R is for reset mechanism, S for sync and fin for finalize the connection.
+
+295
+01:12:25,472 --> 01:12:25,972
+Okay.
+
+296
+01:12:26,772 --> 01:12:30,372
+And this is receive window use.
+
+297
+01:12:30,771 --> 01:12:31,971
+Flaw control.
+
+298
+01:12:32,131 --> 01:12:34,051
+Again, this is in bytes.
+
+299
+01:12:34,211 --> 01:12:35,992
+The size is 16 bit.
+
+300
+01:12:35,992 --> 01:12:43,612
+And this window size gives the capacity of the buffer, not to overwhelm the receiver.
+
+301
+01:12:44,572 --> 01:12:44,631
+OK?
+
+302
+01:12:45,171 --> 01:12:52,332
+CNE is used for congestion and control and notification mechanisms.
+
+303
+01:12:53,171 --> 01:13:19,451
+OK, there are some origin data pointers. These are again not used in TCP, but can be used for other applications. OK, let's start discussing the TCP sequence numbers and acknowledgements. Again, green area is sent and acknowledged.
+
+304
+01:13:20,627 --> 01:13:25,627
+Yelow 1 is already sent, but not acknowledged.
+
+305
+01:13:25,627 --> 01:13:33,627
+And blue area is not sent, but it is in the window size and can be sent.
+
+306
+01:13:35,627 --> 01:13:39,627
+So, here is the sequence numbers.
+
+307
+01:13:40,627 --> 01:13:41,627
+Okay.
+
+308
+01:13:44,627 --> 01:13:46,627
+And in the acknowledgement,
+
+309
+01:13:47,636 --> 01:13:52,836
+Acknowledgment number is used for cumulative acknowledgement.
+
+310
+01:13:53,756 --> 01:14:00,076
+Sequence number of the next byte expected from the other side.
+
+311
+01:14:00,236 --> 01:14:05,256
+So we use a cumulative sequence number.
+
+312
+01:14:05,256 --> 01:14:07,436
+So at receiver side.
+
+313
+01:14:10,323 --> 01:14:19,203
+How we can handle out-of-order segments, it totally depends on the application.
+
+314
+01:14:20,063 --> 01:14:28,543
+Let's have a look at the Telnet scenario, because Telnet application uses TCP connection.
+
+315
+01:14:29,143 --> 01:14:33,884
+Host A and Host B, both are using Telnet.
+
+316
+01:14:38,228 --> 01:14:39,247
+Type C.
+
+317
+01:14:40,807 --> 01:14:41,528
+Send.
+
+318
+01:14:42,887 --> 01:14:44,788
+Sequence number 52.
+
+319
+01:14:45,627 --> 01:14:46,307
+Acknowledgment.
+
+320
+01:14:47,427 --> 01:14:49,268
+Is 79.
+
+321
+01:14:49,927 --> 01:14:51,188
+And data is C.
+
+322
+01:14:51,328 --> 01:14:52,007
+Sending C.
+
+323
+01:14:52,007 --> 01:14:53,208
+So which means.
+
+324
+01:14:53,708 --> 01:14:55,467
+That is the sequence number.
+
+325
+01:14:56,507 --> 01:14:57,908
+42 is the.
+
+326
+01:14:58,228 --> 01:15:00,648
+Sequence number of the data C.
+
+327
+01:15:01,127 --> 01:15:02,828
+Acknowledgment 59.
+
+328
+01:15:03,368 --> 01:15:03,927
+Means.
+
+329
+01:15:04,728 --> 01:15:04,887
+The.
+
+330
+01:15:05,363 --> 01:15:12,123
+OSI send the packet sequence number 59, received by A and acknowledged.
+
+331
+01:15:12,123 --> 01:15:13,123
+OK?
+
+332
+01:15:14,123 --> 01:15:25,123
+Once that is received, C is received by OSP and OSP send sequence number...
+
+333
+01:15:55,091 --> 01:16:19,091
+AT. As you can see, both, this is TCP's bidirectional full duplex mechanism it has. So, both sequence number and acknowledgement number are used. Okay. You can see.
+
+334
+01:16:23,091 --> 01:16:24,011
+Alo?
+
+335
+01:16:27,155 --> 01:16:28,396
+Ne edesiniz?
+
+336
+01:18:35,188 --> 01:18:37,188
+Evet, bu kadar.
+
+337
+01:18:37,188 --> 01:18:41,188
+Bu nasıl bir şekilde kullanılıyor.
+
+338
+01:18:41,188 --> 01:18:45,188
+41'e altyazı,
+
+339
+01:18:45,188 --> 01:18:48,188
+42'e altyazı,
+
+340
+01:18:48,188 --> 01:18:51,188
+43'e altyazı,
+
+341
+01:18:51,188 --> 01:18:54,188
+42'e altyazı,
+
+342
+01:18:54,188 --> 01:18:56,188
+ve HOST A'ı altyazı,
+
+343
+01:18:56,188 --> 01:18:58,188
+43'e altyazı.
+
+344
+01:19:06,771 --> 01:19:24,371
+As you can see, 79 is received and host A acknowledged 80 because it sent N plus 1 as I acknowledged, acknowledgement.
+
+345
+01:19:31,347 --> 01:19:37,228
+So, as you remember in reliable data transfer protocol,
+
+346
+01:19:47,347 --> 01:20:06,307
+TCP can measure round-tree time, RTT, to set the timer. This is the, because that is critical. And because network layer, that is, it gives unreliable...
+
+347
+01:20:06,771 --> 01:20:29,068
+data transfer, and the speed may vary. And in this time, TCP must use variable RTE, variable timer, because RTT may vary. So in this case, if TCP set RTT too short,
+
+348
+01:20:29,108 --> 01:20:36,628
+That is premature timeout. So in this case, unnecessary retransmission may happen.
+
+349
+01:20:36,628 --> 01:20:47,507
+If the TCP set RTT too long, which means it is slow reaction to segment loss.
+
+350
+01:20:47,507 --> 01:20:56,228
+So the question is how to estimate next RTT? Okay? First,
+
+351
+01:20:57,427 --> 01:21:09,827
+TCP measure the current RTT as sample RTT, that is the measured time from segment transmission until acknowledgement is received.
+
+352
+01:21:09,827 --> 01:21:23,827
+In this case, TCP ignore retransmission and the next sample RTT will be estimated using this formulation.
+
+353
+01:21:23,840 --> 01:21:44,039
+Estimated RTT equal to 1 minus alpha times previous estimated RTT plus alpha times sample RTT. Sample RTT is the current measured RTT.
+
+354
+01:21:44,039 --> 01:21:51,239
+This formulation is Exponential Weighted Moving Average, EWMA.
+
+355
+01:21:51,475 --> 01:21:53,475
+...
+
+356
+01:22:46,131 --> 01:22:56,451
+Typical value, alpha is 0.125 using EWME formulation.
+
+357
+01:22:58,771 --> 01:23:12,131
+Okay, this is the measured time. Blue one is sample RTT, that is the measured real RTT. It's fluctuating, you see, too fast.
+
+358
+01:23:13,908 --> 01:23:17,988
+And estimated RTT smooth that fraction.
+
+359
+01:23:17,988 --> 01:23:30,308
+So what we do, we use next estimated RTT using the previous estimated RTT plus current measured RTT.
+
+360
+01:23:30,308 --> 01:23:35,748
+Okay? Alpha is the corrections factor.
+
+361
+01:23:35,748 --> 01:23:39,668
+Okay? So timeout interval.
+
+362
+01:23:40,307 --> 01:23:59,307
+Aqûl to this, because we set the timeout, timeout interval, aqûl to estimated RTT plus safety margin. Large variation in estimated RTT, we must use larger safety margin.
+
+363
+01:24:00,148 --> 01:24:11,268
+OK? If slow variation, small variation, we use a small safety version. So timeout interval equal to-
+
+364
+01:24:11,923 --> 01:24:35,123
+Estimated RTT plus safety margin. Safety margin equal to four times derivative RTT. So we have, what is derivative RTT? Derivative RTT is the EWMA of sample RTT, derivation of estimated RTT. That is the...
+
+365
+01:24:35,475 --> 01:25:02,975
+Derivative RTT. So, derivative RTT equal to, again, similar formulation we use, 1 minus beta derivative RTT plus beta time, sample RTT minus estimated RTT. We use the error area. And typically, beta is around 0.25.
+
+366
+01:25:05,971 --> 01:25:31,471
+OK? So in the TCP sender size, even data received from application, we create segment with the sequence number. So this sequence number is a byte stream of number of first data byte in the segment. OK?
+
+367
+01:25:31,731 --> 01:25:43,231
+We start the timer, if not already running, we think of the timer for the oldest unacknowledged segment.
+
+368
+01:25:43,231 --> 01:25:49,432
+After the expiration of interval, that is the timeout interval.
+
+369
+01:25:49,432 --> 01:25:55,432
+So once, if the time is out, we retransmit segment.
+
+370
+01:25:56,756 --> 01:26:01,796
+That calls timeout and we restart the timer again.
+
+371
+01:26:02,476 --> 01:26:09,796
+Once the acknowledgement is received, if acknowledges...
+
+372
+01:26:10,163 --> 01:26:17,003
+Previously, all unacclosed segments, we update what is known to be acknowledged.
+
+373
+01:26:17,003 --> 01:26:24,543
+And we start the timer if there are still some unacclosed segments.
+
+374
+01:26:25,623 --> 01:26:32,923
+Okay, let's have a look at events in acknowledged generation.
+
+375
+01:26:34,484 --> 01:26:41,064
+Tables prepared using RFC 5681 document.
+
+376
+01:26:41,064 --> 01:26:49,463
+This is the event at receiver and it is the TCP receiver action.
+
+377
+01:26:49,463 --> 01:26:58,564
+Let's have a look at the first event, arrival of an in-order segment with expected seconds number.
+
+378
+01:26:58,564 --> 01:26:59,372
+Okay?
+
+379
+01:26:59,859 --> 01:27:04,519
+Arraval of in-order segment with expected sequence number.
+
+380
+01:27:05,599 --> 01:27:11,739
+All data up to expected sequence number already acknowledged.
+
+381
+01:27:13,119 --> 01:27:17,379
+In the receiver action, it is delayed acknowledged.
+
+382
+01:27:17,379 --> 01:27:23,679
+In this case, TCP waits for 500 millisecond for the next segment.
+
+383
+01:27:24,199 --> 01:27:26,379
+If no next segment...
+
+384
+01:27:26,707 --> 01:27:35,188
+is received send acknowledgement because we use cumulative acknowledgement in the second case
+
+385
+01:27:35,188 --> 01:27:45,188
+arrival of in order segment with expected sequence number one other segment has acknowledged pending
+
+386
+01:27:47,091 --> 01:27:57,252
+TCP receiver action immediately sends single cumulative Acknowledged, Acknowledging both in-order segments.
+
+387
+01:27:59,091 --> 01:28:06,531
+The third case, arrival of out-of-order segments higher than expected sequence number.
+
+388
+01:28:08,291 --> 01:28:12,451
+So in this case, gap is detected. And
+
+389
+01:28:12,627 --> 01:28:36,427
+TCP action is immediately sent duplicate acknowledgement, indicating that sequence number, that number of the next expected byte, because there is something missing in the arrival of segment that partially or completely fill gaps, that fill that gap.
+
+390
+01:28:36,511 --> 01:28:46,711
+TCP immediately send acknowledged, providing that segment start at lower end of the gap.
+
+391
+01:28:46,711 --> 01:29:01,711
+Let's have a look at the scenario here. First scenario, lost of acknowledged scenario, and the second scenario is premature timeout.
+
+392
+01:29:03,539 --> 01:29:08,859
+Sekrenistin nr 92 is sent, that is the 8 byte of data.
+
+393
+01:29:09,539 --> 01:29:10,539
+So,
+
+394
+01:29:12,139 --> 01:29:25,539
+these 8 byte of data, Sekrenistin nr 92 up to 100 is received by OSP, and acknowledge 100 is sent. 100 means all
+
+395
+01:29:25,712 --> 01:29:28,652
+Açıkçası için bir paket elde edilmiş.
+
+396
+01:29:28,652 --> 01:29:32,252
+Ve bu paket elde edilmiş.
+
+397
+01:29:32,252 --> 01:29:34,472
+Evet, bu paket elde edilmiş.
+
+398
+01:29:35,112 --> 01:29:43,092
+Ve sonra, bir paket elde edilmiş.
+
+399
+01:29:43,092 --> 01:29:45,812
+Ve bu paket elde edilmiş.
+
+400
+01:29:47,952 --> 01:29:50,932
+Evet, bir paket elde edilmiş.
+
+401
+01:29:53,555 --> 01:29:56,715
+VLAN İlginç, our base of the window is 92.
+
+402
+01:29:56,715 --> 01:30:00,635
+VLAN İlginç, our packet is eight byte of data is sent.
+
+403
+01:30:00,635 --> 01:30:03,755
+VLAN İlginç, so sequence number 92.
+
+404
+01:30:04,555 --> 01:30:10,956
+VLAN İlginç, and the next packet, sequence number 100, and 20 bytes of data is sent.
+
+405
+01:30:10,956 --> 01:30:12,155
+VLAN İlginç, as soon as...
+
+406
+01:30:13,076 --> 01:30:20,435
+OSPF received eight packets starting from sequence number 92, send Acknowledge 100.
+
+407
+01:30:20,435 --> 01:30:33,076
+And as soon as the sequence number 100 plus 20 bytes received, Acknowledge sequence number 120.
+
+408
+01:30:33,076 --> 01:30:38,923
+And in this case, as soon as 100 is received, OSPF received.
+
+409
+01:30:38,996 --> 01:30:55,796
+Shift the window right, setting base 100. As soon as receiving, acknowledge 120, then shift window base, send base up to 120.
+
+410
+01:30:57,796 --> 01:31:03,796
+But meanwhile, if the time is out for the first...
+
+411
+01:31:06,228 --> 01:31:14,948
+A group of data. Send sequence number 92 plus 8 byte again, but-
+
+412
+01:31:15,123 --> 01:31:35,500
+Bu da 100'e altyazı alty
+
+413
+01:31:35,636 --> 01:31:53,476
+So, again, send base to 120. Okay? This is how it works. Let's have a look. Cumulative Acknowledge covers for early loss acknowledged. Say...
+
+414
+01:31:53,587 --> 01:31:58,787
+Sekiz numar 92'ye received and acknowledge 100'ye sent.
+
+415
+01:31:58,787 --> 01:32:09,467
+And meanwhile, sekiz numar 120'ye sent and received and acknowledge 120'ye sent.
+
+416
+01:32:10,268 --> 01:32:13,307
+As you can see, acknowledge 100'ye lost.
+
+417
+01:32:14,167 --> 01:32:20,747
+As soon as acknowledge 120'ye received, which means all previous...
+
+418
+01:32:21,460 --> 01:32:46,340
+Paket, Safe to Receive by A, and OSPI doesn't care for, doesn't wait for Acknowledge 100 because 120 is already received and start sending 120 and 15 bytes of data. Okay?
+
+419
+01:32:46,868 --> 01:32:51,468
+That is, Cumulative Acknowledgement is used in TCP scenario.
+
+420
+01:32:53,068 --> 01:32:54,468
+Let's have a look here.
+
+421
+01:32:55,568 --> 01:33:07,868
+Suppose, sequence number 92, 8 bytes of data sent and received, and sequence number 120 bytes of data sent, but somehow get lost, and
+
+422
+01:33:09,555 --> 01:33:31,555
+Acknowledge 100 cents. And as you can see, although a sequence number 120 cents, but data, sequence number 100 get lost. So OSPI keeps sending Acknowledge 100 because...
+
+423
+01:33:33,235 --> 01:33:41,235
+OSPİ informs OSPİ host A sequence number 100 packet get lost.
+
+424
+01:33:43,235 --> 01:34:00,876
+So if three duplicate acknowledged has received, in this case, OSPİ host A doesn't wait for the timeout and immediately send the packet. Okay?
+
+425
+01:34:02,515 --> 01:34:29,067
+Bu, bu
+
+426
+01:34:30,228 --> 01:34:57,427
+If, again, let me repeat, if sender receives three additional Acknowledge for the same data, that is triple duplicate approach, so in this case, resend unacknowledged segment with smallest sequence number. Likely that unacknowledged segment might be lost, so don't wait for timeout.
+
+427
+01:34:57,587 --> 01:35:05,587
+That is the TCP improvement mechanism for transmission, retransmission.
+
+428
+01:35:05,587 --> 01:35:19,587
+Okay, let's discuss this time how TCP can control flow and how the connection is managed in TCP.
+
+429
+01:35:19,587 --> 01:35:23,115
+Here is our layer.
+
+430
+01:35:23,283 --> 01:35:33,283
+As you can see, at the top is the application layer, and in the middle is the transport layer.
+
+431
+01:35:33,283 --> 01:35:35,283
+Just a second.
+
+432
+01:35:35,283 --> 01:35:37,195
+Defender.
+
+433
+01:36:14,707 --> 01:36:26,307
+Sorry guys, in the application layer, TCP, and TCP, let's say, has a buffer, okay? And...
+
+434
+01:36:31,636 --> 01:36:43,396
+sender send the packet and fill the buffer and application take the receiving packets and remove from buffer.
+
+435
+01:36:43,396 --> 01:36:57,076
+So what happens if network delivers data faster than application layer removes data from the socket buffer?
+
+436
+01:36:57,076 --> 01:36:58,860
+So this is the problem.
+
+437
+01:36:59,572 --> 01:37:02,731
+Like drinking water in that.
+
+438
+01:37:02,992 --> 01:37:07,252
+It is very difficult because there are too many water is coming
+
+439
+01:37:07,252 --> 01:37:11,412
+and you cannot even swallow one drop of water.
+
+440
+01:37:13,092 --> 01:37:13,352
+Okay?
+
+441
+01:37:13,352 --> 01:37:21,712
+So in this case, we use receive window field for flow control.
+
+442
+01:37:22,412 --> 01:37:22,492
+Okay?
+
+443
+01:37:23,852 --> 01:37:27,115
+So for flow control, receiver...
+
+444
+01:37:27,988 --> 01:37:54,412
+Sender, so that sender won't overwhelm receiver's buffer by transmitting too much and or too fast. Okay? That works. Suppose here is the buffered area, that is the total size, receive buffer, and RWND is the
+
+445
+01:37:55,667 --> 01:38:22,847
+EMPTY BUFFER SIZE. OK? TCP header advertise free buffer space RWND field in the TCP header. OK? So receive buffer size set via socket options, that is the default 4096 bytes, that is the default. So that is supported in many.
+
+446
+01:38:23,475 --> 01:38:47,775
+Ofer, operating system. So the send receiver send limits of unacknowledged buffer size using RWND. And in that case, this one guarantees buffer will not overwhelm, overflow. Okay? And this field...
+
+447
+01:38:49,811 --> 01:38:55,572
+As we can see, this receive window fill is used to control.
+
+448
+01:38:57,532 --> 01:39:11,811
+Okay, that is the flow control byte received willing to accept. Okay, so that amount of packet is sent by sender. TCP receives
+
+449
+01:39:13,363 --> 01:39:24,163
+Advertise free buffer size RWND, that is the size of the free buffer in the TCP header receive window.
+
+450
+01:39:24,163 --> 01:39:36,963
+So receive buffer size initially set to the 4096 bytes and MAN operating system auto adjust receive buffer.
+
+451
+01:39:37,167 --> 01:40:03,531
+And sender limits amount of unacknowledged in-flight data received using RWND fill. So this one guarantees the buffer will not overflow. Okay? So let's have a look at the TCP connection management this time. Before exchanging data,
+
+452
+01:40:03,988 --> 01:40:19,587
+Sender and receiver must agree for communication. We call it handshake. So it agree to establish connection, knowing each other willing.
+
+453
+01:40:19,855 --> 01:40:27,935
+to establish connection and agreeing the connection parameters such as the buffer size
+
+454
+01:40:28,815 --> 01:40:37,135
+the sequence number so on so forth and the socket number or port number for each other okay so
+
+455
+01:40:44,148 --> 01:41:11,548
+Let's say, in human conversation, this analogy, Alice say, let's talk, and Bob say, okay, and the connection is a sublist. And in computer side, host X says, request connection, and server say, connection, accept it, okay?
+
+456
+01:41:39,636 --> 01:42:04,396
+OK. Let's say, a, a, a, a, a, host X, a, a, request a connection and connection is established and a, a host X send the data and accept and connection close with, without any laws and any error, then a delay, it works fine.
+
+457
+01:42:13,268 --> 01:42:14,528
+Konnektan established.
+
+458
+01:42:15,148 --> 01:42:15,627
+Ve
+
+459
+01:42:15,627 --> 01:42:17,007
+ve
+
+460
+01:42:17,007 --> 01:42:17,827
+konnektan.
+
+461
+01:42:18,528 --> 01:42:18,707
+Okay.
+
+462
+01:42:21,007 --> 01:42:21,567
+And
+
+463
+01:42:25,203 --> 01:42:30,963
+If the connection establishment is delayed,
+
+464
+01:42:30,963 --> 01:42:37,103
+then we send the connection establishment request again,
+
+465
+01:42:37,943 --> 01:42:44,863
+but server think this is the new connection request.
+
+466
+01:42:46,804 --> 01:42:50,523
+And open another connection.
+
+467
+01:42:51,083 --> 01:42:52,171
+And this is...
+
+468
+01:42:52,564 --> 01:43:03,364
+Acknowledgement of the connection, but host X is not expecting any acknowledgement for the connection.
+
+469
+01:43:03,364 --> 01:43:14,164
+This is half open connection. So the client signs, there is no client waiting for any connection. This is the first problem.
+
+470
+01:43:18,355 --> 01:43:33,855
+OSI request a connection, and server accept it, and OSI send the data, and data is received, but, and both sides close the connection.
+
+471
+01:43:33,855 --> 01:43:45,955
+After the timeout, because connection establishment is delayed, and OSI set the shortest timer, then,
+
+472
+01:43:47,956 --> 01:44:14,956
+Server reset again, another connection. And because there's no acknowledgement is received for data x plus one, and they transmit data x plus one again, and it is server thing, this is new connection, and this is new data.
+
+473
+01:44:15,764 --> 01:44:23,684
+This is another problem. That is the duplicate connection plus duplicate data.
+
+474
+01:44:23,684 --> 01:44:38,963
+Suppose this is the bank account connection, all right? You send, let's say, 1 million Turkish Liras to one guy, okay? Somehow...
+
+475
+01:45:07,636 --> 01:45:33,036
+So, we have to solve this problem, half open problem and duplicate accepted data problem. So, the solution is three-way handshake. The TCP in three-way handshake, in both sides, TCP is grating. Listen, okay? And...
+
+476
+01:45:34,355 --> 01:45:54,355
+client send sync bit set and send the sequence number to the server. Okay? And server send received sync and acknowledgement of sequence number x.
+
+477
+01:45:55,604 --> 01:46:21,244
+Sending Acknowledge number X plus one and sending server sequence number and synchronizing using Syncbit. This is for synchronization. And as soon as this is received, which means server is accepted for connection.
+
+478
+01:46:22,420 --> 01:46:29,420
+ve
+
+479
+01:46:29,420 --> 01:46:39,420
+Acknowledgment bit 1, this time, this is for Acknowledgment Message, and Acknowledgment Number is Y plus 1, because previous SQL number is received.
+
+480
+01:46:39,420 --> 01:46:45,420
+Then, server side establish the connection. This is three-way handshake.
+
+481
+01:46:48,275 --> 01:47:11,275
+similar here, that lady climbing to the cliff, okay, and that guy down there holding the rope. And once the lady wants to climb up, jump to higher, it says on play, which means hold the rope and...
+
+482
+01:47:12,435 --> 01:47:38,283
+Bu bir iki üçüncü bir şekilde, bu bir şekilde, bu bir şekilde, bu bir şekilde, bu bir şekilde, bu bir şekilde, bu bir şekilde, bu bir şekilde, bu bir şekilde, bu bir şekilde, bu bir şekilde, bu bir şekilde, bu bir şekilde, bu bir şekilde, bu bir şekilde, bu bir şekilde, bu bir şekilde, bu bir şekilde, bu bir şekilde, bu bir şekilde, bu bir şekilde, bu bir şekilde, bu bir şekilde, bu bir şekilde, bu bir şekilde, bu bir şekilde, bu bir şekilde, bu bir şekilde, bu bir şekilde, bu bir şekilde, bu bir şekilde, bu bir şekilde, bu bir şekilde, bu bir şekilde, bu bir şekilde, bu bir şekilde, bu bir şekilde, bu bir şekilde, bu bir şekilde, bu bir şekilde, bu bir şekilde, bu bir şekilde, bu bir şekilde, bu bir şekilde, bu bir şekilde, bu bir şekilde, bu bir şekilde, bu bir şekilde, bu bir şekilde, bu bir şekilde, bu bir şekilde, bu bir şekilde, bu bir şekilde, bu bir şekilde, bu bir
+
+483
+01:47:39,988 --> 01:48:07,596
+OK, at the TCP side, the closing a TCP connection, client and server each close their side of connection, send TCP segment using FinBit. Fin is finalized flag. As you can see, these are the FinBit in the TCP field. OK? And as soon as respond to received Fin,
+
+484
+01:48:08,051 --> 01:48:35,051
+...
+
+485
+01:48:34,100 --> 01:48:35,399
+Arkadaşlar,
+
+486
+01:48:39,731 --> 01:48:44,931
+Hepinize iyi cumalar diliyorum. Bıraktınız gittiniz galiba öyle gözüküyor gene.
+
+487
+01:48:46,931 --> 01:48:48,931
+Buradayız hocam iyi cumalar.
+
+488
+01:48:48,931 --> 01:48:50,931
+Soru soran var mı?
+
+489
+01:48:55,731 --> 01:48:58,632
+Hepinize iyi cumalar, görüşmek üzere gelecek.
+
+490
+01:48:58,632 --> 01:49:00,431
+Hayırlı cumalar hocam.
+
+491
+01:49:00,431 --> 01:49:01,632
+İyi günler hocam.

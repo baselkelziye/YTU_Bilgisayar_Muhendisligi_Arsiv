@@ -1,0 +1,1987 @@
+1
+00:00:16,980 --> 00:00:18,980
+Günaydın sevgili arkadaşlar.
+
+2
+00:00:28,500 --> 00:00:36,000
+5 dakika daha bekleyelim. Saat 10 geçe dersimizi başlatırız.
+
+3
+00:00:41,107 --> 00:00:43,507
+Arkadaşlar, dersi 10 geçe başlayalım.
+
+4
+00:07:59,923 --> 00:08:01,899
+Tekrar günaydın arkadaşlar.
+
+5
+00:08:07,187 --> 00:08:30,187
+2021-2022-2023 bahar dönemi. Hepimize hayırlı olsun diliyorum. Dersimize başlamadan önce Şubat ayında gerçekleşen ve 11 tane ilimizi etkileyen deprem felaketi nedeniyle hepimize geçmiş olsun.
+
+6
+00:08:30,187 --> 00:08:34,091
+Kayıplarımıza başlayalım. Allah'tan rahmet diliyorum.
+
+7
+00:08:34,131 --> 00:08:39,891
+sizlere de ailesini, yakınlarını kaybedenlere ve herkese de sabırlar diliyorum.
+
+8
+00:08:39,891 --> 00:08:44,451
+İnşallah bir daha Allah bu şekilde bizi imtihan etmez diliyorum.
+
+9
+00:08:44,931 --> 00:08:52,131
+Ve bu haftaki dersimizle beraber ağ teknolojileri dersine başlayalım.
+
+10
+00:08:53,731 --> 00:08:56,371
+Sesim geliyor değil mi? Bir sorun yok arkadaşlar.
+
+11
+00:08:57,107 --> 00:09:04,707
+Geliyor hocam. Hiç kimseden ses çıkmayınca. Geliyor hocam, geliyor. Günaydın. Tamam. Tamam, çok sağ olun.
+
+12
+00:09:04,707 --> 00:09:13,899
+Okey, let's start to computer networking technologies. This is our first week and
+
+13
+00:09:17,331 --> 00:09:19,331
+Here is our outline.
+
+14
+00:09:19,331 --> 00:09:25,331
+First, we are going to start discussing course information and policies.
+
+15
+00:09:25,331 --> 00:09:32,331
+And I'm going to continue to by giving syllables of this course.
+
+16
+00:09:32,331 --> 00:09:40,331
+And we are going to start a computer network and the internet.
+
+17
+00:09:40,331 --> 00:09:43,331
+Basically, this is the overview.
+
+18
+00:10:00,000 --> 00:10:09,240
+For most information, everybody know my name is Hasan Balik in Computer Engineering Department.
+
+19
+00:10:52,788 --> 00:11:17,388
+Here is CLAS web page. You can download weekly presentation of this lecture. And I'm going to also share exams answer keys and the results of the exams. And here is the book. I'm going to...
+
+20
+00:11:20,620 --> 00:11:21,940
+Computer Networking.
+
+21
+00:11:22,759 --> 00:11:24,399
+Bu yazı M.K.
+
+22
+00:11:24,399 --> 00:11:26,039
+Kraus & Ross.
+
+23
+00:11:26,320 --> 00:11:27,279
+Bu yazı M.K.
+
+24
+00:11:27,279 --> 00:11:28,799
+2021.
+
+25
+00:11:29,519 --> 00:11:31,399
+Bu yazı M.K.
+
+26
+00:11:31,399 --> 00:11:33,200
+8.
+
+27
+00:11:36,299 --> 00:11:37,399
+Ve bu yazı M.K.
+
+28
+00:11:37,399 --> 00:11:39,399
+Bu yazı M.K.
+
+29
+00:12:08,755 --> 00:12:16,255
+Ama ben de bilgilerin nefesinde bilgilerin nefesinde bilgilerin.
+
+30
+00:12:35,700 --> 00:12:46,299
+ve bu
+
+31
+00:12:46,299 --> 00:12:58,700
+ve
+
+32
+00:12:59,091 --> 00:13:16,291
+But we are going to announce the mechanism and everybody is going to know how to attend the experiment part of the lecture. And the midterm, the weight of the midterm is 30%. They mark...
+
+33
+00:13:16,436 --> 00:13:25,735
+You get from experiment part is 30% and the final exam is again 40%.
+
+34
+00:13:25,735 --> 00:13:26,096
+Okay.
+
+35
+00:13:26,096 --> 00:13:33,296
+But as I said, the type of the exam is not certain yet.
+
+36
+00:13:33,536 --> 00:13:39,615
+It is going to be decided in April, I think so.
+
+37
+00:13:40,096 --> 00:13:42,196
+And I'm going to announce.
+
+38
+00:13:42,796 --> 00:13:43,135
+All right.
+
+39
+00:13:44,307 --> 00:13:46,307
+Here is our syllables.
+
+40
+00:13:46,307 --> 00:13:48,307
+Hocam, günaydın, pardon.
+
+41
+00:13:48,307 --> 00:13:49,307
+Günaydın.
+
+42
+00:13:49,307 --> 00:13:53,307
+Kitabın dördüncü edisyonunu kullanmamızda herhangi bir sakınca olur mu acaba?
+
+43
+00:13:53,307 --> 00:13:59,307
+Dördüncü edisyonunu kullanmanda herhangi bir sakınca olmaz ama update'leri…
+
+44
+00:14:03,508 --> 00:14:30,508
+kullanıyor olacağız. Çünkü 4. edisyonun neresinden baksanız 5-6 senelik teknolojileri de içeriyor. Dolayısıyla 2021 edisyondaki update'leri, değişiklikleri de takip etmenizde fayda var. Kaldı ki 8. edisyonun PDF'ini de internette bulabilmeniz mümkün. Tamam mı arkadaşlar? Anladım hocam. Bence bir şekilde ararsanız internette bulursunuz. Anlaştık?
+
+45
+00:14:30,707 --> 00:14:47,707
+Artı, hocanın, bu kitabın yazarının sitesine baktığınız zaman orada prezentasyonu ve diğer dokümanları da bulabiliyorsunuz. O bağlamda faydalı bir site diye düşünüyorum. Artı videoları da var orada. Tamam?
+
+46
+00:14:47,707 --> 00:14:56,651
+Gene bir sorun yaşarsanız, okulda olduğum bir günde gelirseniz ya da gelen bir arkadaşınız varsa onunla konuşuruz. Tamam?
+
+47
+00:14:56,980 --> 00:14:58,980
+Tamamdır hocam, teşekkür ederim.
+
+48
+00:14:58,980 --> 00:15:06,980
+As everybody know, the book consists of eight chapters.
+
+49
+00:15:07,200 --> 00:15:20,540
+Bir chapter is about security. Security is the subject of computer and networking security lecture in the fourth year autumn semester.
+
+50
+00:15:21,320 --> 00:15:29,360
+And this semester we are going to discuss the remaining chapters, excluding the security chapter.
+
+51
+00:15:31,827 --> 00:15:49,067
+As you can see, in each chapter, we are going to discuss computer network and the internet. We are going to discuss first.
+
+52
+00:15:49,395 --> 00:15:50,395
+ve 2 weeks.
+
+53
+00:16:00,019 --> 00:16:09,379
+So we are going to start with explaining the application layer first, in the third week, then transport layer.
+
+54
+00:16:09,379 --> 00:16:22,099
+Since the network layer is the most complicated and most important part of the Internet, so it is divided by the alpha into two parts.
+
+55
+00:16:22,099 --> 00:16:25,779
+First part, we are going to discuss the data plane.
+
+56
+00:16:26,004 --> 00:16:32,964
+ve network layer ve network layer.
+
+57
+00:16:33,384 --> 00:16:34,324
+And later,
+
+58
+00:16:35,604 --> 00:16:38,283
+we are going to discuss link layer
+
+59
+00:16:38,283 --> 00:16:39,203
+and the land.
+
+60
+00:16:39,683 --> 00:16:42,283
+We won't discuss anything
+
+61
+00:16:42,283 --> 00:16:44,423
+about the physical layer
+
+62
+00:16:44,423 --> 00:16:46,224
+because the detail
+
+63
+00:16:46,224 --> 00:16:47,484
+of the physical layer
+
+64
+00:17:14,451 --> 00:17:20,132
+...to discuss computer networks and the internet, right?
+
+65
+00:17:21,892 --> 00:17:32,932
+The goal of this is basically to imagine the big picture of the internet.
+
+66
+00:17:33,352 --> 00:17:41,291
+Internet, I mean, it's common and the use of internet is essential for every business.
+
+67
+00:17:41,971 --> 00:17:46,351
+Ama hiçbir şeyin düşünmesini düşünmeli.
+
+68
+00:17:46,351 --> 00:17:46,871
+Evet.
+
+69
+00:17:47,471 --> 00:17:48,971
+Aslında
+
+70
+00:17:48,971 --> 00:17:51,011
+Bizi
+
+71
+00:17:51,011 --> 00:17:51,612
+Computer
+
+72
+00:17:51,612 --> 00:17:52,451
+Enginersi
+
+73
+00:17:52,451 --> 00:17:54,152
+Bizi
+
+74
+00:17:54,152 --> 00:18:05,971
+Bence
+
+75
+00:18:05,971 --> 00:18:06,971
+Terminoloji
+
+76
+00:18:08,948 --> 00:18:11,708
+ve internet in these two weeks.
+
+77
+00:18:11,708 --> 00:18:16,907
+Ve data, the detail is going to be given in the course.
+
+78
+00:18:16,907 --> 00:18:17,907
+OK?
+
+79
+00:18:19,907 --> 00:18:25,788
+So, we are going to start with defining the internet.
+
+80
+00:18:25,788 --> 00:18:30,988
+So, we are going to look for the answer of this question.
+
+81
+00:18:30,988 --> 00:18:32,988
+What is the internet, right?
+
+82
+00:18:33,844 --> 00:18:39,844
+Çünkü herkesin internet diyor, Türkçe ve diğer ülkeler.
+
+83
+00:18:39,844 --> 00:18:42,844
+Yani, neyden internet diyor, o zaman?
+
+84
+00:19:02,644 --> 00:19:28,172
+In the continue, we are going to start the edge of the internet first. Because let's say internet is a big cloud. So we are going to start with the edge where we touch to internet. So at the edge, we can find the host or
+
+85
+00:19:28,531 --> 00:19:50,731
+individual devices, then access networks, and physical media, like wireless communication media, or wired communication media, such as a twisted pair, coxial cable, or fiber, optic fiber cables.
+
+86
+00:19:50,864 --> 00:19:57,463
+Then, we are going to get into the core of the internet in this time.
+
+87
+00:20:01,460 --> 00:20:10,380
+In this time, we will be discussing the technologies used in the internet.
+
+88
+00:20:10,380 --> 00:20:16,380
+There are two types of technology we can talk about. Circuit switching networks.
+
+89
+00:20:16,380 --> 00:20:24,579
+This is used by PST and public telephone switching networks. And packet switching network.
+
+90
+00:20:24,579 --> 00:20:27,140
+And we are going to talk about...
+
+91
+00:20:27,604 --> 00:20:34,604
+Bu nasıl bir network yapıldığı ve nasıl nasıl yapacağımızın ve internetin
+
+92
+00:20:34,604 --> 00:20:39,604
+ve internetin struktura olduğunu düşünüyorum.
+
+93
+00:20:39,604 --> 00:20:45,604
+Bu internetin bir medium için birçok birçok verilmektedir.
+
+94
+00:20:45,604 --> 00:20:49,604
+Sources ve destitlerinin, bu durumda,
+
+95
+00:20:49,604 --> 00:20:53,604
+bu durumda birçok birçok birçok birçok birçok birçok birçok.
+
+96
+00:20:53,680 --> 00:20:59,400
+Loss of packet, delay and throughput.
+
+97
+00:21:01,759 --> 00:21:06,000
+After answering what is the protocol,
+
+98
+00:21:06,700 --> 00:21:10,800
+then we are going to discuss the protocol layers,
+
+99
+00:21:11,640 --> 00:21:13,820
+the service models in the internet.
+
+100
+00:21:14,387 --> 00:21:23,307
+Then we are going to continue. I'm going to give you a little bit information about security and the history of internet, right?
+
+101
+00:21:24,647 --> 00:21:25,167
+Okay.
+
+102
+00:21:26,247 --> 00:21:32,227
+So the internet as a whole, as I said, the internet is a big picture.
+
+103
+00:21:32,427 --> 00:21:36,547
+Let's talk about nuts and bolts view of internet.
+
+104
+00:21:36,547 --> 00:21:41,547
+The internet is the cloud, right? In the middle.
+
+105
+00:21:42,708 --> 00:22:06,636
+Bu, bu momentan ne kadar ne kadar istiyorsan ne kadar istiyorsan ne kadar istiyorsan ne kadar istiyorsan ne kadar istiyorsan ne kadar istiyorsan ne kadar istiyorsan ne kadar istiyorsan ne kadar istiyorsan ne kadar istiyorsan ne kadar istiyorsan ne kadar istiyorsan ne kadar istiyorsan ne kadar istiyorsan ne kadar istiyorsan ne kadar istiyorsan ne kadar istiyorsan ne kadar istiyorsan ne kadar istiyorsan ne kadar istiyorsan ne kadar istiyorsan ne kadar istiyorsan ne kadar istiyorsan ne kadar istiyorsan ne kadar istiyorsan ne kadar istiyorsan ne kadar istiyorsan ne kadar istiyorsan ne kadar istiyorsan ne kadar istiyorsan ne kadar istiyorsan ne kadar istiyorsan ne kadar istiyorsan ne kadar istiyorsan ne kadar istiyorsan ne kadar istiyorsan
+
+106
+00:22:06,900 --> 00:22:12,240
+these devices as end systems or host, right?
+
+107
+00:22:12,240 --> 00:22:19,759
+And each host are running related network applications
+
+108
+00:22:19,759 --> 00:22:24,300
+on where at internet edge devices.
+
+109
+00:22:25,019 --> 00:22:27,800
+So as you can see in this figure here,
+
+110
+00:22:28,160 --> 00:22:52,940
+These are the H devices from the automobile to multiple phone, laptops, PCs, servers, data centers, whatever. Okay? As you can see, and each device might have a rated network application. Inside,
+
+111
+00:22:53,779 --> 00:23:15,723
+Bu internetin internetin birçok
+
+112
+00:23:15,859 --> 00:23:17,859
+...de receiving destination.
+
+113
+00:23:17,859 --> 00:23:21,859
+So packet switching networks are used.
+
+114
+00:23:21,859 --> 00:23:26,859
+And packet switches, as you can see the routers,
+
+115
+00:23:26,859 --> 00:23:29,859
+and forward packets,
+
+116
+00:23:29,859 --> 00:23:33,859
+the packet is the Jankov data.
+
+117
+00:23:33,859 --> 00:23:37,859
+So in that area, the internet,
+
+118
+00:23:37,859 --> 00:23:41,859
+there are routers, switches, and bridges.
+
+119
+00:23:43,508 --> 00:23:57,307
+And each individual packet switching device connected to each other and also edge devices connected to the cloud.
+
+120
+00:23:57,779 --> 00:24:01,619
+Bu, proper communication link.
+
+121
+00:24:02,099 --> 00:24:04,879
+The communication link can be wireless
+
+122
+00:24:04,879 --> 00:24:08,119
+and also can be wired too.
+
+123
+00:24:08,759 --> 00:24:11,159
+For wired communication links,
+
+124
+00:24:11,159 --> 00:24:14,420
+for example, such as fiber optic cable,
+
+125
+00:24:15,059 --> 00:24:17,400
+copper cable, or for wireless,
+
+126
+00:24:18,387 --> 00:24:23,487
+Radio communication or satellite communication, we might think.
+
+127
+00:24:23,487 --> 00:24:34,687
+And since the data are transmitted among parties, we can talk about the transmission rate.
+
+128
+00:24:35,107 --> 00:24:37,907
+Transmission rate, in other words, bandwidth.
+
+129
+00:24:38,548 --> 00:24:44,007
+Bandwidth is the capacity of the link per second.
+
+130
+00:24:45,971 --> 00:24:49,471
+ve internet.
+
+131
+00:24:49,471 --> 00:25:00,471
+Since internet is basically the network of networks, so collection of devices, routers.
+
+132
+00:25:28,980 --> 00:25:32,980
+is basically network of networks, right?
+
+133
+00:25:34,980 --> 00:25:39,280
+So let's discuss the connecting devices.
+
+134
+00:25:40,180 --> 00:25:44,840
+There are many devices like internet refrigerators,
+
+135
+00:25:45,019 --> 00:25:48,240
+security cameras, internet phones.
+
+136
+00:25:48,240 --> 00:25:53,539
+So the old internet is also used by
+
+137
+00:25:54,451 --> 00:26:03,412
+Health devices like pacemakers or health monitors, even web-enabled toaster.
+
+138
+00:26:03,412 --> 00:26:08,072
+As you can see in the middle here, what it does basically,
+
+139
+00:26:08,672 --> 00:26:16,412
+it downloads the current broadcast of the current date and...
+
+140
+00:26:16,655 --> 00:26:33,516
+Burn it on the toast as you can see if the weather is sunny and you can see the toast is heated and the sun symbol is print burned onto the toast or cloud or whatever.
+
+141
+00:26:33,516 --> 00:26:42,695
+As you can see and there are augmented reality devices, artificial reality devices or.
+
+142
+00:26:43,188 --> 00:26:47,488
+Health resets, smartwatches.
+
+143
+00:26:48,387 --> 00:26:49,788
+There are many things.
+
+144
+00:26:50,008 --> 00:26:51,968
+Or IP picture frames.
+
+145
+00:26:52,748 --> 00:26:57,608
+These are all connected devices to the internet.
+
+146
+00:26:57,827 --> 00:27:02,148
+And these are the limited examples of the device.
+
+147
+00:27:02,307 --> 00:27:03,887
+Those are connected to the internet.
+
+148
+00:27:03,887 --> 00:27:08,788
+But you can increase these examples.
+
+149
+00:27:10,228 --> 00:27:10,468
+Okay.
+
+150
+00:27:11,476 --> 00:27:13,476
+Let's continue.
+
+151
+00:27:13,476 --> 00:27:27,372
+The internet. As I said, internet is basically network of networks. So there are many ISPs. What is ISP? Internet Service Providers.
+
+152
+00:27:27,700 --> 00:27:41,700
+Yıldız, internet is provided by Yıldız Technical University. At home, my internet is provided by CableNet, Türksat.
+
+153
+00:27:41,700 --> 00:27:51,700
+Or in your home, it can be provided by Vodafone, Turkcell, Türktelekom, Türknet.
+
+154
+00:27:55,700 --> 00:28:03,100
+Internet is basically interconnected ISPs, as you can see in this example.
+
+155
+00:28:03,100 --> 00:28:10,299
+Each are owned by individual companies or organizations.
+
+156
+00:28:10,299 --> 00:28:17,100
+And all are the Internet is basically, as I said, network of networks.
+
+157
+00:28:25,268 --> 00:28:27,927
+...data among parties.
+
+158
+00:28:28,528 --> 00:28:28,668
+Okay?
+
+159
+00:28:28,668 --> 00:28:32,668
+So we should have some sort of mechanism...
+
+160
+00:28:32,668 --> 00:28:34,668
+...to share...
+
+161
+00:28:34,668 --> 00:28:38,668
+...messages among end users...
+
+162
+00:28:38,668 --> 00:28:40,407
+...or end devices.
+
+163
+00:28:40,947 --> 00:28:44,087
+So we need some sort of protocol.
+
+164
+00:28:44,887 --> 00:28:47,067
+So protocols are everywhere.
+
+165
+00:28:48,447 --> 00:28:50,668
+Because the...
+
+166
+00:28:51,220 --> 00:29:18,539
+Motor Motor
+
+167
+00:29:19,347 --> 00:29:25,948
+Sending information, and by, while sending these messages, controlling.
+
+168
+00:29:28,148 --> 00:29:33,948
+So, protocol basically controls sending and receiving of messages.
+
+169
+00:29:33,948 --> 00:29:46,347
+Let's talk about, let's give some examples of these protocols, such as HTTP, this is the web protocol, streaming video protocols, Skype.
+
+170
+00:29:46,740 --> 00:30:11,339
+TCP, IP, Wi-Fi, 4G, internet. So Ethernet, these are protocols for different layers, right? So there must be some institute, organization, foundation, whatever, release the standard document.
+
+171
+00:30:11,508 --> 00:30:17,748
+So who are responsible or where we can find these standard documents.
+
+172
+00:30:17,748 --> 00:30:27,988
+We can get RFC documents, that is RFC is the abbreviation of request for comments, or ITF documents.
+
+173
+00:30:27,988 --> 00:30:30,907
+This is the Internet Engineering Task Force.
+
+174
+00:30:30,907 --> 00:30:37,907
+So these two, we can provide, we can get the related standard documents.
+
+175
+00:30:38,867 --> 00:30:47,267
+So, infrastructure of the internet that provides services to the application.
+
+176
+00:30:47,267 --> 00:31:01,667
+The infrastructure is the bed, testing bed. On top of that structure, we can have the service.
+
+177
+00:31:01,667 --> 00:31:02,667
+Okay?
+
+178
+00:31:03,059 --> 00:31:24,011
+Bu, bu
+
+179
+00:31:24,019 --> 00:31:34,460
+ve many kinds of applications that give service to the end user or end devices.
+
+180
+00:31:35,139 --> 00:31:44,000
+So, this infrastructure provides programming interface to distributed applications.
+
+181
+00:31:44,000 --> 00:31:48,059
+So, in that case, we can talk about the hooks.
+
+182
+00:31:49,236 --> 00:32:07,155
+Hooks is some sort of, is anonymous, is allowing sending and receiving application to connect to internet and to use internet transport service to exchange messages. And...
+
+183
+00:32:08,915 --> 00:32:16,995
+Infrastructure also provides service options. These options are analogous to the postal service,
+
+184
+00:32:16,995 --> 00:32:28,915
+because this infrastructure is responsible for exchanging messages. So, this mechanism should know where to deliver.
+
+185
+00:32:54,847 --> 00:33:02,248
+VLAN İlginç,
+
+186
+00:33:22,228 --> 00:33:27,828
+So it may be confused, right? So it's analogous to the postal search.
+
+187
+00:33:27,828 --> 00:33:33,348
+So, let's start discussing the protocol.
+
+188
+00:33:35,508 --> 00:33:45,028
+It's like, let's start the analogy, the human protocols. Let's give some example. Suppose...
+
+189
+00:33:45,107 --> 00:34:10,987
+You want to ask, you want to learn the time because you don't have any watch or clock. And what you do basically? You look for some friend or anybody who has the watch and possibly who can tell the time. So what you do? You ask,
+
+190
+00:34:11,027 --> 00:34:33,027
+The question, what's the time? Okay? And, or, you might say, I have a question, then the opponent say yes, then you can say, do you have the time? And you can learn the time. And in this, there are some...
+
+191
+00:34:34,291 --> 00:34:56,211
+Instructions, so the specific message you send, because the aim of you to learn the time, so specific question you have to ask, then specific answer you expect to receive, right?
+
+192
+00:34:57,112 --> 00:34:59,492
+Network is similar.
+
+193
+00:35:00,563 --> 00:35:04,684
+Human, this time, is devices like computers.
+
+194
+00:35:04,684 --> 00:35:12,724
+And all communication activity in internet is governed by protocol.
+
+195
+00:35:12,724 --> 00:35:23,403
+Protocol is responsible of the type of the incoming message, the format or whatever.
+
+196
+00:35:24,403 --> 00:35:26,403
+So, basically...
+
+197
+00:35:26,643 --> 00:35:40,903
+Protocol define the format, the order of message to send and receive, okay, among network entities,
+
+198
+00:35:40,903 --> 00:35:50,683
+and the action taking on receiving messages, right, or recipient.
+
+199
+00:35:53,556 --> 00:36:01,556
+Let's come back to our protocol, our human protocol and computer protocol.
+
+200
+00:36:01,556 --> 00:36:10,556
+The straight line is the time, okay? Because it contains several steps in this time.
+
+201
+00:36:10,556 --> 00:36:17,556
+Okay? What do you do, basically? You say hi or hello.
+
+202
+00:36:18,675 --> 00:36:26,675
+And he replies because you expect his or her reply.
+
+203
+00:36:26,675 --> 00:36:33,675
+Then you ask your question and you receive the answer. This is human protocol.
+
+204
+00:36:33,675 --> 00:36:35,675
+Let's have a look at the analogy.
+
+205
+00:36:35,675 --> 00:36:43,675
+Suppose you want to have a look at the web page of my...
+
+206
+00:37:07,056 --> 00:37:10,556
+then you get the file or the folder content.
+
+207
+00:37:10,815 --> 00:37:11,056
+All right.
+
+208
+00:37:11,376 --> 00:37:12,775
+It is very simple.
+
+209
+00:37:14,796 --> 00:37:15,516
+Okay.
+
+210
+00:37:16,076 --> 00:37:16,976
+Up till now,
+
+211
+00:37:17,615 --> 00:37:18,556
+what we know,
+
+212
+00:37:20,175 --> 00:37:22,956
+we know the definition of internet.
+
+213
+00:37:23,615 --> 00:37:24,036
+All right.
+
+214
+00:37:24,576 --> 00:37:25,155
+And
+
+215
+00:37:25,155 --> 00:37:27,556
+its definition,
+
+216
+00:37:27,936 --> 00:37:30,876
+internet is the network of networks.
+
+217
+00:37:30,876 --> 00:37:31,876
+And
+
+218
+00:37:33,460 --> 00:37:42,740
+ve bu internet'in ve internet'in ve internet'in ve internet'in ve internet'in ve internet'in
+
+219
+00:37:42,740 --> 00:37:46,579
+ve internet'in ve internet'in ve internet'in ve internet'in ve internet'in ve internet'in
+
+220
+00:37:46,579 --> 00:37:50,579
+ve internet'in ve internet'in internet'in internet'in internet'in internet'in internet'in internet'in
+
+221
+00:37:59,699 --> 00:38:01,699
+ve devleti.
+
+222
+00:38:01,699 --> 00:38:03,699
+Bu zaman,
+
+223
+00:38:03,699 --> 00:38:07,699
+daha fazla bahsettiğim bir şey var.
+
+224
+00:38:07,699 --> 00:38:09,699
+Ve başlayalım.
+
+225
+00:38:09,699 --> 00:38:11,699
+Bu, bu,
+
+226
+00:38:11,699 --> 00:38:21,963
+hos,
+
+227
+00:38:23,007 --> 00:38:26,007
+ve
+
+228
+00:38:22,771 --> 00:38:28,172
+The internet structure this time, okay? Similar picture we are using.
+
+229
+00:38:30,572 --> 00:38:44,572
+These are edges. At the edge, there are many end devices. We call it host, okay? And these hosts can be...
+
+230
+00:38:46,643 --> 00:39:12,643
+Klients, such as mobile phone, laptops, desktops, IP, telephone, whatever. Or servers, as you can see here. Okay? And here. Here is servers. And servers often in, where, in data centers. Okay?
+
+231
+00:39:13,940 --> 00:39:28,140
+Akses network is a network used for access to the internet, end user access to the internet.
+
+232
+00:39:28,140 --> 00:39:38,460
+This access network or physical media can be wired or wireless communication can be used.
+
+233
+00:39:40,192 --> 00:39:59,692
+These are mobile devices like a traffic light, the automobile, wireless desktops and laptops connected to the mobile cellular internet. Or let's say this is your home.
+
+234
+00:40:00,000 --> 00:40:03,940
+And these are the cable or DSL modem.
+
+235
+00:40:03,940 --> 00:40:05,940
+And it's connected to the internet.
+
+236
+00:40:05,940 --> 00:40:08,239
+These are your devices here.
+
+237
+00:40:08,760 --> 00:40:12,940
+As you can see, wireless made is used to connect.
+
+238
+00:40:12,940 --> 00:40:20,760
+And here, as you can see, wired communication link are used to connect.
+
+239
+00:40:21,556 --> 00:40:27,956
+And core here, we are talking about interconnected routers.
+
+240
+00:40:27,956 --> 00:40:37,155
+Each router are connected to the next router and this one creates a network.
+
+241
+00:40:37,155 --> 00:40:46,556
+And some router also connects each network to other networks as we can see in these pictures.
+
+242
+00:40:46,556 --> 00:40:47,340
+Okay?
+
+243
+00:40:49,331 --> 00:41:06,331
+So, let's try to find an answer of our questions. How to connect N system to edge router, like here or here, right?
+
+244
+00:41:06,331 --> 00:41:15,007
+Mm-hmm. So, residential access nets can be used, as you can see here.
+
+245
+00:41:15,007 --> 00:41:42,251
+Or industrial access networks can be used, like Yildiz University or companies like here. Okay? Or mobile access networks can be used, such as Wi-Fi, as you can see here, or mobile 4G or 5G in this on the top.
+
+246
+00:41:42,483 --> 00:42:10,476
+So, what to look for in this media? We look for the transmission rate. What is the transmission rate? That is the transmitted bits per second. That is to access the network. That is basically that transmission rate gives the speed of the network. Okay? This is the first.
+
+247
+00:42:11,923 --> 00:42:16,923
+think the speed of the network measured by transmission rate.
+
+248
+00:42:16,923 --> 00:42:30,923
+And we should know whether this transmission link is shared among users or this link is dedicated.
+
+249
+00:42:30,923 --> 00:42:38,923
+As you can see here in wireless cellular network, this network is shared by many...
+
+250
+00:42:40,384 --> 00:42:47,384
+hos,
+
+251
+00:42:40,148 --> 00:42:48,507
+Or in home network, again the internet is shared by your home devices.
+
+252
+00:42:49,288 --> 00:42:52,208
+Some link is dedicated.
+
+253
+00:42:52,668 --> 00:42:56,367
+As you can see here, this link is dedicated.
+
+254
+00:42:57,128 --> 00:43:01,507
+And it is not shared by any other device.
+
+255
+00:43:04,403 --> 00:43:25,403
+OK, and these links are dedicated, all right? So, access network, we should think about the transmission rate of the network, plus we should know whether it is dedicated or shared network.
+
+256
+00:43:25,403 --> 00:43:31,403
+OK, let's start with our home.
+
+257
+00:43:31,731 --> 00:43:40,731
+So, let's talk about the cable-based access network, like TurkSat CableNet, right?
+
+258
+00:43:40,731 --> 00:43:48,731
+In this, as you can see, we use Axial Cable to build a link.
+
+259
+00:43:48,731 --> 00:43:55,436
+And this Axial Cable is shared by many.
+
+260
+00:43:55,635 --> 00:44:23,236
+Housas, as you can see, right? And each house, it has a splitter to splitter TV streams and cable modems to distribute the internet. Okay? And this cable is entered to the cable headend.
+
+261
+00:44:23,507 --> 00:44:28,507
+OK? And this headend is directly connected to the ISP. All right?
+
+262
+00:44:30,507 --> 00:44:47,467
+And since this channel is shared by many houses, as you can see, even in-house, this link also shared by TV streams plus the data streams.
+
+263
+00:44:47,572 --> 00:44:51,652
+Ve as you can see, there are many channels.
+
+264
+00:44:51,652 --> 00:45:00,711
+Channels means what we do, we have the bandwidth of this communication.
+
+265
+00:45:01,072 --> 00:45:04,731
+Let's say our bandwidth is 1 giga.
+
+266
+00:45:05,268 --> 00:45:22,067
+Hz. bandwidth. What we do, we divide our bandwidth into channels using FDM, Frequency Division Multiplexing. All right? In FDM, since the bandwidth is...
+
+267
+00:45:22,516 --> 00:45:49,996
+1 GHz. So it has minimum frequency and maximum frequency. And this is the bandwidth is among them. And we divide these frequencies into small channels. And each channel has its own carrier frequency. Okay. And we modulate.
+
+268
+00:45:50,547 --> 00:46:18,347
+Bu videoları, TV streamler için bir şekilde vermek için bir şekilde vermek için bir şekilde vermek için bir şekilde vermek için bir şekilde vermek için bir şekilde vermek için bir şekilde vermek için bir şekilde vermek için bir şekilde vermek için bir şekilde vermek için bir şekilde vermek için bir şekilde vermek için bir şekilde vermek için bir şekilde vermek için bir şekilde vermek için bir şekilde vermek için bir şekilde vermek için bir şekilde vermek için bir şekilde vermek için bir şekilde vermek için bir şekilde vermek için bir şekilde vermek için bir şekilde vermek için bir şekilde vermek için bir şekilde vermek için bir şekilde vermek için bir şekilde vermek için bir şekilde vermek için bir şekilde vermek için bir şekilde vermek için bir şekilde vermek için bir şekilde vermek için bir şekilde vermek için bir şekilde vermek için bir şekilde vermek için bir şekilde vermek için bir şekilde vermek için bir şekilde vermek için bir şekilde vermek için bir şekilde vermek için bir şekilde vermek için bir şekilde vermek için bir şekilde vermek
+
+269
+00:46:20,052 --> 00:46:36,851
+So, data TV transmitted at different frequencies through this shared table. Okay? And here is a table hand.
+
+270
+00:46:36,980 --> 00:46:43,099
+And this is the CMTS, Cable Modem Contamination System.
+
+271
+00:46:43,099 --> 00:46:48,779
+And this CMTS directly connected to the ISP.
+
+272
+00:46:48,779 --> 00:46:57,779
+So HFC, that is hybrid fiber cogs, this is the cogsial cable.
+
+273
+00:46:57,779 --> 00:47:02,259
+The communication is asymmetric. What is asymmetric?
+
+274
+00:47:02,452 --> 00:47:27,692
+Asymmetric means it has two directions. Okay? One is for down upstream, one for downstream. Okay? And in normal cases at home, your downstream need is higher than upstream need. So since it is asymmetric,
+
+275
+00:47:27,795 --> 00:47:40,795
+Upsstream speed, most channels are dedicated for downstream direction and limited amount of channel reserved for upstream.
+
+276
+00:47:40,795 --> 00:47:53,795
+So in this cable network, 40 megabit per second up to 1.2 gigabit per second is downstream.
+
+277
+00:47:54,036 --> 00:48:21,644
+30 to 100 megabits for upstream direction. Network of cable. So CMTS is attached to the ISP by either high-speed cables such as fiber cables. So homes, as you can see, share access networks.
+
+278
+00:48:22,804 --> 00:48:30,483
+to cable headend and headend connected to where to ISPs.
+
+279
+00:48:32,483 --> 00:48:42,083
+Okay, this is the first example of the network access through domestic places.
+
+280
+00:48:42,612 --> 00:48:43,672
+Kable modems.
+
+281
+00:48:44,032 --> 00:48:48,072
+And this time, this is another example, is DSL.
+
+282
+00:48:48,372 --> 00:48:54,851
+Before starting DSL, let's give a break for 15 minutes.
+
+283
+00:48:54,972 --> 00:48:56,492
+Then we can continue.
+
+284
+00:48:56,952 --> 00:48:57,052
+Okay?
+
+285
+00:48:57,952 --> 00:49:00,231
+Let's give 15 minutes break.
+
+286
+00:49:00,231 --> 00:49:04,372
+The lecture starts 5 past 10 o'clock.
+
+287
+00:49:04,492 --> 00:49:05,112
+Okay, guys?
+
+288
+00:49:05,372 --> 00:49:06,132
+Let's give a break.
+
+289
+01:05:42,963 --> 01:05:58,724
+Arkadaşlar, biraz önceki dersimizde iki tür özellikle, we have discussed two type of network connections in domestic places.
+
+290
+01:05:58,724 --> 01:06:07,764
+First one is cable modem, and these are also asymmetric, and another one is DSL.
+
+291
+01:06:08,371 --> 01:06:35,371
+In DSL connection, the telephone lines are used. As you can see here, again, we have a splitter. In previous example, a splitter is used to split TV signals and data signals. And here, the splitters are used to split.
+
+292
+01:06:35,668 --> 01:06:43,068
+Voice frequencies and data streams.
+
+293
+01:06:43,068 --> 01:06:50,788
+And again, data transmitted at different frequencies.
+
+294
+01:06:51,108 --> 01:06:56,488
+Again, FDM is used or dedicated line in this time.
+
+295
+01:06:57,148 --> 01:07:01,948
+In previous example, shared coaxial cables are used.
+
+296
+01:07:02,387 --> 01:07:16,011
+But here, dedicated telephone line, because among the telephone central and a house, there is a...
+
+297
+01:07:16,403 --> 01:07:42,684
+Dedicated Telephone Cable. In this time, Dedicated Telephone Line is used. So, DSL modem used existing Telephone Line to central office DSLAM, Digital Subscriber Line Access Management Office, and data over DSL phone line goes.
+
+298
+01:07:42,963 --> 01:07:46,844
+ve internet ve yine de
+
+299
+01:08:10,867 --> 01:08:32,971
+for downstream direction, and 3.5 to 16 megabit per second is used for upstream. As you can see here, more frequency channels are used for downstream direction. And here,
+
+300
+01:08:35,412 --> 01:09:01,412
+Ve, here is our domestic place. As you can see, we have modem here. This is responsible of modulating the channel. Modulation basically means combining all signal and modulating to make it suitable to transmit through link. Okay? And...
+
+301
+01:09:02,676 --> 01:09:26,476
+This is this link to the front, head end or central office. This line can be either dedicated or shared. And here is DSL or cable modem. And here is router, firewall, and...
+
+302
+01:09:26,899 --> 01:09:40,179
+Bu nedenle, network address translation and directing the messages among the destinations.
+
+303
+01:09:50,963 --> 01:10:08,300
+Wi-Fi access point. This speed can be 54 to 450 megabit per second if we are using a G-channel. In normal cases,
+
+304
+01:10:08,595 --> 01:10:19,355
+Herkesi var, mobil telefon, laptop, refrigerator, home devises, whatever.
+
+305
+01:10:19,355 --> 01:10:28,395
+And mostly, three devises often combined in single box.
+
+306
+01:10:28,915 --> 01:10:29,055
+Okay.
+
+307
+01:10:29,415 --> 01:10:31,536
+In your home, you can check.
+
+308
+01:10:32,755 --> 01:10:33,355
+It is...
+
+309
+01:10:33,811 --> 01:10:43,211
+Access Point plus router plus DSL modem or table modem, whatever you might say. Okay?
+
+310
+01:10:44,012 --> 01:10:50,612
+In the wireless network, as you can see here is the Access Point,
+
+311
+01:10:51,012 --> 01:10:57,811
+the wireless communication media is used to exchange information or messages.
+
+312
+01:10:58,420 --> 01:11:01,739
+Wireless Access Network again shared.
+
+313
+01:11:03,780 --> 01:11:11,460
+And shared wireless access network connects ad system to where? To the router.
+
+314
+01:11:13,059 --> 01:11:16,579
+So it is via base station.
+
+315
+01:11:17,500 --> 01:11:21,659
+This is also known as access point, right?
+
+316
+01:11:22,300 --> 01:11:23,700
+And wireless...
+
+317
+01:11:24,020 --> 01:11:35,460
+There are two types of wireless networks we are talking about. Wireless local area networks, wireless wide area networks.
+
+318
+01:11:35,460 --> 01:11:50,380
+In the first case, wireless local area network or VLANs or Wi-Fi, typically it is within or around the building. So it's normally 30 meter.
+
+319
+01:11:50,931 --> 01:11:55,431
+But up to 100 minutes if there is no obstruction.
+
+320
+01:11:55,431 --> 01:12:02,931
+There are many types of standards and each standard has its own speed.
+
+321
+01:12:02,931 --> 01:12:09,431
+Like 802, 802 plus dot.
+
+322
+01:12:09,551 --> 01:12:32,471
+11, B, G, N, A, C, A, X. These are Wi-Fi standard. B is 11 megabit per second. G is 54 megabit per second. N is 450 or 600.
+
+323
+01:12:34,804 --> 01:12:57,456
+megabit per second, or AAAC is up to 7 gigabit per second, and AX is 14 gigabit per second. You can tell. Another one is wide area cellular networks. In this
+
+324
+01:12:57,456 --> 01:13:04,476
+VLAN İlendirme protokollerini işleyeceğiz. Bu konuda, OSI ve
+
+325
+01:13:25,619 --> 01:13:28,559
+5G'nin testiyle,
+
+326
+01:13:28,559 --> 01:13:31,119
+ve şimdiye kadar.
+
+327
+01:13:32,559 --> 01:13:33,239
+Tamam.
+
+328
+01:13:34,800 --> 01:13:36,039
+Şimdi,
+
+329
+01:13:36,199 --> 01:13:37,619
+bu kadar konuşma,
+
+330
+01:13:37,619 --> 01:13:47,979
+bu konuda,
+
+331
+01:13:48,467 --> 01:13:52,507
+Bu zaman, bu konuda birçok konuda konuşmalı konuşmalı.
+
+332
+01:13:52,608 --> 01:13:57,087
+Bu konuda Yıldız Üniversitesi, diğer birçok konuda, nefretler.
+
+333
+01:13:57,087 --> 01:14:05,087
+Bu konuda, bu konuda birçok konuda birçok konuda birçok konuda,
+
+334
+01:14:13,844 --> 01:14:36,043
+So this is ISP, our ISP is Ulaqbim this time, we can think as an analogy. So this is an enterprise link to the ISP. We have internal side or core switches, as you can see here. And these core switches, they sum our...
+
+335
+01:14:36,787 --> 01:14:46,287
+Enterprise, institutional mail, web servers, whatever are connected to our core switch.
+
+336
+01:14:46,287 --> 01:15:02,787
+And we have also side switches and our PCs that are wirelessly connected, widely connected to the side switch and we have also some access points.
+
+337
+01:15:03,060 --> 01:15:09,420
+So enterprise networks, examples are companies, universities, et cetera.
+
+338
+01:15:09,420 --> 01:15:19,620
+It's a mixture of wired or wireless link technologies connected a mix of switches and routers.
+
+339
+01:15:19,620 --> 01:15:20,620
+Okay?
+
+340
+01:15:20,620 --> 01:15:29,460
+There are many type of protocol or technology are used, such as Ethernet technology can be used.
+
+341
+01:15:30,355 --> 01:15:32,835
+Wi-Fi teknoloji.
+
+342
+01:15:32,835 --> 01:15:34,355
+Ethernet,
+
+343
+01:15:34,355 --> 01:15:36,275
+wired access speed
+
+344
+01:15:36,275 --> 01:15:39,355
+is 100 Mbps,
+
+345
+01:15:39,355 --> 01:15:40,796
+1 Gbps,
+
+346
+01:15:40,796 --> 01:15:43,076
+even 10 Gbps.
+
+347
+01:15:43,076 --> 01:15:45,315
+Wi-Fi is a wireless access point,
+
+348
+01:15:45,315 --> 01:15:46,835
+11 Mbps,
+
+349
+01:15:46,835 --> 01:15:49,996
+up to 450 Mbps,
+
+350
+01:15:49,996 --> 01:15:50,876
+or 600 Mbps,
+
+351
+01:15:50,876 --> 01:15:51,876
+or even...
+
+352
+01:15:51,904 --> 01:15:59,404
+In 5 GHz, Mac AX, ARAC, up to 7 Gbps.
+
+353
+01:16:01,908 --> 01:16:02,908
+Okey.
+
+354
+01:16:02,908 --> 01:16:04,108
+Hocam, bir şey sorabilir miyim?
+
+355
+01:16:04,108 --> 01:16:05,108
+Tabii sorabilirsin.
+
+356
+01:16:05,108 --> 01:16:07,108
+Slide geçmeden önce hemen araya bir.
+
+357
+01:16:07,108 --> 01:16:15,307
+Şimdi bu zamana kadar ki gördüğümüz çoğu slide'da sayısal değerler karşımıza çıkıyor.
+
+358
+01:16:15,307 --> 01:16:18,307
+Bunların bizim için böyle net bir önemi var mı?
+
+359
+01:16:18,307 --> 01:16:20,708
+Yoksa genel olarak bilgiler mi bizim için önemli?
+
+360
+01:16:20,708 --> 01:16:22,507
+Hani sayısal değerleri ayrı ayrı...
+
+361
+01:16:22,507 --> 01:16:27,908
+Ya sayısal değerleri ezberlemeye gerek yok ama bilmekte de fayda var yani şu anda...
+
+362
+01:16:28,659 --> 01:16:37,340
+AX'in ne kadar hıza kadar destekleyeceğini bu optimal hızdır. Mesafe artınca hız düşer zaten, görüyorsunuzdur access point'lerde.
+
+363
+01:16:37,340 --> 01:16:43,260
+Yani teknolojinin farkında olmak başka, bunları kelime kelime ezberlemek başka. Tamam mı?
+
+364
+01:16:43,260 --> 01:16:51,659
+Ama mesela bir Ethernet'in 100 Mbit per second, yani birisi çıkar derse ki Ethernet hızı nerelerdedir?
+
+365
+01:16:51,659 --> 01:16:56,139
+Birisi 60, 70, 80 dememeliler aslında. Tamam mı?
+
+366
+01:16:56,243 --> 01:16:59,564
+Anladım. Genel olarak bir bilgi birikimi olsun diyorsunuz.
+
+367
+01:16:59,564 --> 01:17:02,423
+Bilgi birikimi. Çünkü siz bilgisayar mühendisi olacaksınız.
+
+368
+01:17:02,423 --> 01:17:13,384
+Yani internetim hızlı dediğiniz zaman normal dışarıdan birisi için hızın bir değeri anlamı olmayabilir.
+
+369
+01:17:13,384 --> 01:17:18,363
+Ama hız dediğiniz zaman bunun biriminin bit per second olduğunu bilmeniz gerekiyor.
+
+370
+01:17:19,444 --> 01:17:34,444
+Tamam. Sağ olun hocam. Tamam. Yani bu bağlamda. Çünkü teknik olarak sizler sorumlu olacaksınız. Bire bir satır satır ezberlemek değil de bunun işin farkında olmak, farklı şeyler. Tamam?
+
+371
+01:17:43,859 --> 01:17:47,180
+We know the internet is a network of networks.
+
+372
+01:17:47,319 --> 01:17:48,619
+We have H devices.
+
+373
+01:17:49,739 --> 01:17:51,920
+H devices connect to the internet,
+
+374
+01:17:52,059 --> 01:17:54,840
+either wired or wireless links.
+
+375
+01:17:55,680 --> 01:17:55,799
+Okay.
+
+376
+01:17:56,260 --> 01:17:58,399
+And we have now internet.
+
+377
+01:17:58,779 --> 01:17:59,559
+So how?
+
+378
+01:18:00,020 --> 01:18:03,420
+We can exchange messages, right?
+
+379
+01:18:04,180 --> 01:18:08,380
+In the application layer, we have many types of applications.
+
+380
+01:18:08,380 --> 01:18:13,060
+Web browsers, email applications, some games.
+
+381
+01:18:13,540 --> 01:18:14,980
+It is endless, okay?
+
+382
+01:18:15,579 --> 01:18:20,360
+And most applications are online, basically.
+
+383
+01:18:21,079 --> 01:18:26,188
+And it produces a junk of...
+
+384
+01:18:26,355 --> 01:18:27,355
+MESSAGES
+
+385
+01:18:27,355 --> 01:18:31,536
+So it must be transmitted among parties
+
+386
+01:18:31,536 --> 01:18:37,615
+And but the size in some cases can be small
+
+387
+01:18:37,615 --> 01:18:39,195
+Some is large
+
+388
+01:18:39,195 --> 01:18:46,615
+But we have to break our messages into smaller junks
+
+389
+01:18:46,615 --> 01:18:48,576
+Known as packets
+
+390
+01:18:48,576 --> 01:18:49,136
+Okay
+
+391
+01:18:49,136 --> 01:18:50,615
+Because each
+
+392
+01:18:52,595 --> 01:19:10,835
+Because of the optimization, because of the increased capacity or increased usage, we divide our big message into small parts.
+
+393
+01:19:10,915 --> 01:19:14,036
+Let's say the packets, the length is L bits.
+
+394
+01:19:14,376 --> 01:19:17,615
+L is an example, L number of bits.
+
+395
+01:19:20,467 --> 01:19:23,467
+is R bit per second.
+
+396
+01:19:23,467 --> 01:19:24,467
+OK?
+
+397
+01:19:25,467 --> 01:19:31,467
+The capacity of the link is R, and our bit size is L.
+
+398
+01:19:31,467 --> 01:19:32,467
+OK?
+
+399
+01:19:32,467 --> 01:19:35,467
+And transmits link
+
+400
+01:19:36,275 --> 01:20:00,000
+Kapasit, also known as bandwidth, right? We can, in some books, it says transmission rate or bandwidth, but those are bit per second, right? So, the speed is not infinite. It takes time. Depends on the capacity of the link.
+
+401
+01:20:00,000 --> 01:20:03,319
+Opacity is measured by r, bit per second.
+
+402
+01:20:03,819 --> 01:20:03,880
+Okay?
+
+403
+01:20:04,680 --> 01:20:09,520
+R number of bit can transmit over link.
+
+404
+01:20:09,520 --> 01:20:13,559
+But l is higher than r.
+
+405
+01:20:14,139 --> 01:20:14,199
+Okay?
+
+406
+01:20:14,619 --> 01:20:17,180
+So it cannot transmit in a second.
+
+407
+01:20:17,960 --> 01:20:19,520
+So it takes...
+
+408
+01:20:19,764 --> 01:20:27,003
+Ataşın sürenç amount of time to deliver L number of bits from source to destination.
+
+409
+01:20:27,003 --> 01:20:30,724
+So we call it packet transmission delay.
+
+410
+01:20:30,724 --> 01:20:38,804
+This is basically the time required to transmit our packet from source to destination.
+
+411
+01:20:38,804 --> 01:20:42,724
+So that is the time needed to deliver.
+
+412
+01:20:42,783 --> 01:21:04,747
+our L bit packet into the link. So the packet transmission delay is L over R basically. L is the number of bit of the packet. R is the bandwidth or capacity of the link. Okay? This is transmission delay is L over R.
+
+413
+01:21:06,003 --> 01:21:29,203
+So, in the physical media, bit, basically, it's the propagates between transmitter and receiver pairs. Bit, one bit is one logical one or zero. Okay? Physical link that lies between transmitter and receiver. This physical link can be...
+
+414
+01:21:29,652 --> 01:21:31,512
+Vired or wireless.
+
+415
+01:21:32,012 --> 01:21:38,112
+There are two types of physical media we can tell.
+
+416
+01:21:38,551 --> 01:21:41,032
+First one is guided media.
+
+417
+01:21:41,032 --> 01:21:50,092
+In other words, the signal is guided by the solid media,
+
+418
+01:21:50,452 --> 01:21:53,032
+such as copper, coaxial, or...
+
+419
+01:21:53,716 --> 01:22:15,716
+Fever optic cable or unguided media in that media, the signal propagates freely, such as wireless media, right? This is unguided. So twisted pair is two...
+
+420
+01:22:15,891 --> 01:22:26,211
+Insulated copper wires, such as Category 5, Category 6, or Category 7, these are called twisted.
+
+421
+01:22:26,676 --> 01:22:53,676
+UTP, FTP, TP is the twisted pair. Okay? The capacity of category 5 is up to 1 gigabit per second in Ethernet protocol, and category 6 support up to 10 gigabit per second in Ethernet, maybe, Ethernet protocol. Okay? In the axial cable, in this time,
+
+422
+01:22:56,452 --> 01:23:01,452
+Bu şekilde birçok kuburla ve
+
+423
+01:23:01,452 --> 01:23:04,452
+buçok kuburla birçok kuburla.
+
+424
+01:23:04,452 --> 01:23:17,452
+Bu kuburla birçok kuburla.
+
+425
+01:23:20,787 --> 01:23:42,987
+100 Mbps. Fiber optic, as you can see, is a glass of fiber carrying light pulses. It can be single mode or multi-mode. So each bit is represented by the light.
+
+426
+01:23:43,988 --> 01:23:48,988
+Ve hizmeti operasyonu dağılıyor.
+
+427
+01:23:48,988 --> 01:23:50,988
+Yani, point to point,
+
+428
+01:23:50,988 --> 01:23:52,988
+bu şekilde,
+
+429
+01:23:52,988 --> 01:23:53,988
+kapasitiyonun kapasitiyonu
+
+430
+01:23:53,988 --> 01:23:56,988
+birçok birçok.
+
+431
+01:23:56,988 --> 01:23:57,988
+Bu,
+
+432
+01:23:57,988 --> 01:24:02,988
+birçok,
+
+433
+01:24:02,988 --> 01:24:03,988
+çünkü,
+
+434
+01:24:03,988 --> 01:24:10,476
+birçok,
+
+435
+01:24:10,931 --> 01:24:25,091
+repeat, you have to take this incoming signal, amplify this incoming signal, and pass to the next step.
+
+436
+01:24:27,011 --> 01:24:37,572
+In wireless radio, so the signals are carried in electromagnetic spectrum as electromagnetic waves.
+
+437
+01:24:38,000 --> 01:24:41,000
+So, there is no physical cable.
+
+438
+01:24:42,000 --> 01:24:48,000
+The broadcast can be a half duplex.
+
+439
+01:24:49,000 --> 01:25:00,000
+So, half duplex means each party can be either sender or receiver in the one time.
+
+440
+01:25:04,659 --> 01:25:28,899
+environment, so it might have some problem of reflection, obstruction of object or interference of other signals or the sunlight, the high voltage transmission cables amongst cities or whatever. Wireless link types can be Wi-Fi.
+
+441
+01:25:29,268 --> 01:25:39,068
+Wi-Fi, the speed is up to 100 megabits, up to 13 gigabit per second, you remember, in AX.
+
+442
+01:25:39,268 --> 01:25:46,807
+In wide area cellular network, in 4G's, tens of megabits per second.
+
+443
+01:25:47,528 --> 01:25:50,128
+Terrestrial microwave, let's say.
+
+444
+01:25:51,539 --> 01:26:05,139
+terrestrial microwave frequencies are used. So in this case, each channel capacity is 45 megabit per second. And satellite…
+
+445
+01:26:06,260 --> 01:26:16,819
+We use higher frequencies in satellite communication because the electromagnetic wave must pass through ionosphere.
+
+446
+01:26:16,819 --> 01:26:29,460
+So each channel capacity is again similar to terrestrial microwave channels, which is 45 megabit per second.
+
+447
+01:26:29,684 --> 01:26:35,684
+And the delay, end-to-end delay is 270 milliseconds.
+
+448
+01:26:35,684 --> 01:26:36,684
+Okay?
+
+449
+01:26:38,684 --> 01:26:39,684
+All right.
+
+450
+01:26:40,684 --> 01:26:43,684
+I think this is the first week.
+
+451
+01:26:43,684 --> 01:26:50,684
+And for first week lecture, I think this is enough.
+
+452
+01:26:51,684 --> 01:26:54,684
+And we can continue our...
+
+453
+01:26:55,636 --> 01:26:59,636
+Lecture next week, next Friday at 9 o'clock.
+
+454
+01:26:59,636 --> 01:27:11,636
+Arkadaşlar, ilk haftalık için bu kadar yeter diye düşünüyorum. Fazla da ileri gitmeye gerek yok. Gelecek hafta kaldığımız yerden devam ederiz.
+
+455
+01:27:11,636 --> 01:27:19,500
+Laboratuvar kısmı 5'te ders yok. Bununla alakalı muhtemelen gelecek hafta gibi size bir duyuru geçeceğim.
+
+456
+01:27:19,604 --> 01:27:28,604
+O duyuruya göre de sizleri gruplara böleceğiz. Üç tane asistan görevlendirdik laboratuvar kısmı için.
+
+457
+01:27:28,604 --> 01:27:42,604
+Dolayısıyla sizlere online olarak uygulama yapabileceğiniz konuları araştırıyoruz. Üç ya da dört online uygulama yaptıracağız sizlere.
+
+458
+01:27:48,148 --> 01:28:11,547
+ya da üçe sonra her birinde tekrar deney sayısına böleceğiz ve her bir asistem sınırlı sayıdaki grupla online olarak birebir sizlerle ilgilenerek o uygulamaları sizinle beraber yapacaklar, yaptıracaklar. Online ancak bu kadar oluyor arkadaşlar. Keşke vakit olsa yüz yüze bunu yapabilsek. Tekrar.
+
+459
+01:28:12,020 --> 01:28:18,620
+Bu bahar döneminin hepinize hayırlı olmasını diliyorum. İnşallah başladığımız gibi.
+
+460
+01:28:18,620 --> 01:28:33,260
+Pek de mutlu değiliz bu deprem medeniyla ama inşallah hem depremde yakınlarını kaybetmiş, depremde mağdur olmuş arkadaşlarımızın
+
+461
+01:28:33,376 --> 01:28:47,176
+Evlatlarımızın sorunları bu arada çözülmüş olur. İnşallah dönem sonunda daha sorunsuz bir şekilde dönemi tamamlarız diye düşünüyorum.
+
+462
+01:28:47,176 --> 01:28:53,176
+Soracağınız bir şey var mı arkadaşlar dersle ilgili ya da başka konularda? Ondan sonra bitirelim dersimizi.
+
+463
+01:28:59,188 --> 01:29:00,188
+Yok mu sorumuz?
+
+464
+01:29:02,188 --> 01:29:15,188
+Arkadaşlar, yoklamayı bilmiyorum ki. Normalde yoklama alıyordum ve geçen senede bir dünya arkadaşınız devamsızlıktan kaldı. İlk dönemde gene öyle oldu. Ama şimdi online yapıyoruz.
+
+465
+01:29:16,188 --> 01:29:21,920
+Yoklama nasıl alınacak? Burada yoklamayı aldık diyelim. 86 kişi var şu anda. İyi de.
+
+466
+01:29:21,920 --> 01:29:44,920
+Online ders yapmanın mantığı nedir? Kaydetmenin mantığı, akşam sabah canını sıkıldığında dinleyebilirim. Peki sonradan dinlemeyle alakalı benim elimde bir mekanizma var mı? Yok. Bunu yoklamaya sayma ile alakalı bir durum var mı? O da yok. Dolayısıyla ben yoklamayla alakalı hususun rektörlük tarafından açıklığa kavuşturmasını bekliyorum. Benim tercihim...
+
+467
+01:29:46,707 --> 01:30:14,507
+Arkadaşlarınızın bir fiil derse katılıyor olması. Şu anda 86 kişi var ama dersimiz alan öğrenci sayısı 190. Bu demek ki yaklaşık olarak yüzde 45 civarında katılım var. Tamam? Ama yarın rektörlük derse ki bu sistemlerde bu katılan arkadaşların kayıtları bizde var. Bunların dışındakilerine işte şu kadar yüzdeye kadar yoklamayı sayacağız onların zamanını.
+
+468
+01:30:14,623 --> 01:30:36,123
+geri kalanlarını devamsızdan bırakacağız derseniz, biz onu uygulayacağız. Ama şu an için, yoklamayla alakalı herhangi bir şey söylemek mümkün değil. Ama, uygulama tarafında, arkadaşlar, şöyle bir durum var, bu önemli. Diyelim ki size online olarak üç ya da dört tane uygulama yaptırdık.
+
+469
+01:30:36,404 --> 01:30:54,404
+Bunlarla ilgili alacağınız notlarla alakalı nasıl olacağı, çünkü küçük gruplara ayıracağımız için her birinize tek tek beş dakika on dakika bunları yapma, gösterme fırsatı verilecek ve bunlardan puanlanacaksınız. Ve uygulama tarafındaki o kısma katılmaz iseniz.
+
+470
+01:30:55,667 --> 01:31:08,667
+O deneyden sıfır alacaksınız. Dolayısıyla sizin eksperimen kısmındaki yüzde otuzluk kısım bu online olarak yaptığımız uygulama çalışmalarından aldığınız puanlardan gelecek.
+
+471
+01:31:08,667 --> 01:31:21,667
+Yani bu dersi belki teorik kısmını şimdi değil de akşam dinleyebilirsiniz, haftaya dinleyebilirsiniz, aralarda dinleyebilirsiniz ama uygulamaya illaki online katılmanız gerekebilir.
+
+472
+01:31:22,323 --> 01:31:28,503
+O yüzden bu konuyla alakalı kuralları takip etmenizi öneriyorum herkese.
+
+473
+01:31:30,195 --> 01:31:52,695
+Grup arkadaşlarınızı siz seçemiyorsunuz, herbiriniz evdesiniz, grup olmayacaksınız ki arkadaşlar, hepiniz önünüzde bilgisayar açık olacak. Online alarak network simülasyon tool'larımız var. Onların adreslerini, linklerini ve deney fölilerini bizler sizlere ilan edeceğiz. Ve o grup halinde, sınıfı çünkü parça parça 15 kişi.
+
+474
+01:31:53,203 --> 01:31:57,703
+Uzaktan her biri evden çünkü sınıfta iki kişi, üç kişi beraber yapmıyorsunuz ki.
+
+475
+01:31:57,703 --> 01:32:01,804
+Bağlanacaksınız, kendi uygulamanızı hazırlayacaksınız.
+
+476
+01:32:01,804 --> 01:32:07,804
+Sonra hocanıza, asistan arkadaşınıza yaptığınız şeyi sunacaksınız ve açıklayacaksınız.
+
+477
+01:32:07,804 --> 01:32:14,003
+O yüzden grup arkadaşınızı seçme gibi bir durum yok çünkü grup olarak yapacağımız bir şey yok.
+
+478
+01:32:14,003 --> 01:32:21,003
+Her birimiz kırk tane oflu tek başımıza geziyoruz çarşıda. O yüzden grubumuz yok.
+
+479
+01:32:23,796 --> 01:32:32,296
+Tamam arkadaşlar. Hepinize tekrar iyi bir dönem diliyorum. Hayırlı cumalar.
+
+480
+01:32:32,296 --> 01:32:33,796
+Eyvallah hocam.
+
+481
+01:32:33,796 --> 01:32:36,796
+Bir şey söylemek istiyor. [öğrenci].
+
+482
+01:32:41,427 --> 01:32:58,427
+Bir arkadaşınız bir şey biletmek istiyorum dedi ama ne belirtecekse söylesin. Ne yazmış? Ne diyor, ne diyor? Bir dakika. Hocam bilmek istiyorum. Öğrenci olarak genelde Türkçe soru sorduğu zaman Türkçe olarak konuyu...
+
+483
+01:33:02,515 --> 01:33:09,915
+anlatabiliyorsunuz değil mi? En azından şu an anlamadığımız düşündüğünüz için
+
+484
+01:33:14,100 --> 01:33:16,100
+Hocam sessiz de söyleyebilirim.
+
+485
+01:33:16,100 --> 01:33:18,500
+Sessiz söyle ya, bu çünkü [öğrenci] sen misin?
+
+486
+01:33:18,500 --> 01:33:22,100
+Benim hocam benim, kamerayı da açarım ama ayıp olur diye açmıyorum.
+
+487
+01:33:22,100 --> 01:33:30,500
+Arkadaş yani uzun yazıyorsun, küçücük şeyden kaydır kaydır benim ihtiyarlığımıza ver. Söyle Türkçe.
+
+488
+01:33:30,500 --> 01:33:36,500
+Estağfurullah hocam, şimdi şöyle bir durum var. Bazı şeyleri yakalayamıyoruz anlatırken.
+
+489
+01:33:36,500 --> 01:33:40,500
+Kaçırdığımız yerleri şimdi bir iki arkadaşım Türkçe olarak sordu.
+
+490
+01:33:40,671 --> 01:33:51,671
+Türkçe olarak çok güzel anlattınız ve cevap verdiniz. Bu devam eder değil mi hocam? Yani bu en azından bize anlamı anlayamadığımız kısımları size sorup Türkçe olarak daha tekrardan...
+
+491
+01:33:51,671 --> 01:34:00,671
+Böyle söyleyeyim [öğrenci], sandart verdiğin cevap. Benim anladığım dilde soru sorarsanız ben de sizin anladığınız dillerden bir tanesine cevap veririm.
+
+492
+01:34:00,671 --> 01:34:03,671
+Eyvallah hocam, çok güzel cevaptı, çok teşekkür ediyorum.
+
+493
+01:34:03,671 --> 01:34:05,671
+Tamam. Ağzında sağ olun, sağ olun.
+
+494
+01:34:05,671 --> 01:34:06,671
+Ağzında sağ olun, sağ olun.
+
+495
+01:34:06,671 --> 01:34:07,671
+Beni günah sokmayın.
+
+496
+01:34:07,671 --> 01:34:08,671
+Çok teşekkür ediyorum.
+
+497
+01:34:08,671 --> 01:34:31,271
+Ağzınıza sağlık, hayırlı cumalar diliyorum. Hadi görüşmek üzere. Sağ olun. Gitar da bir gün bize online derste gitar çalarsın o zaman [öğrenci]. Hocam ne zaman isterseniz biz de bir ekibiz yani grup olarak çalarız hiç sorun yok. Batary da var burada. Batary da var iyi bakalım o zaman bir konser alırız sizden. Eyvallah hocam her zaman. Hayırlı cumalar görüşmek üzere. Sağ olun.

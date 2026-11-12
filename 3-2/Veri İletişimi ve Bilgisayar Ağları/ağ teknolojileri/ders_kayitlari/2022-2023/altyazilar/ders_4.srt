@@ -1,0 +1,1575 @@
+1
+00:00:32,051 --> 00:00:34,051
+Günaydın sevgili arkadaşlar.
+
+2
+00:00:44,276 --> 00:00:47,596
+5 dakika daha bekleyelim, 10 geçe başlarız.
+
+3
+00:09:50,227 --> 00:10:02,155
+Günaydın arkadaşlar. Hepinize hayırlı Ramazanlar diliyorum. Bu haftaki dersimizle başlayalım. Başlamadan önce ekranımızı paylaşalım.
+
+4
+00:10:07,827 --> 00:10:22,467
+OK, everybody. This is our first week in computer networking technologies. Let me make this one smaller and write it here. And as you remember...
+
+5
+00:10:22,703 --> 00:10:30,303
+We have started to discuss application layer in computer lecture, computer networking lecture.
+
+6
+00:10:30,303 --> 00:10:41,103
+And as I said last week, computer application layer is a top layer and the visible layer, the user can see, can interact with the network.
+
+7
+00:10:41,103 --> 00:10:45,903
+And last week we have started discussing the principle of...
+
+8
+00:10:46,100 --> 00:11:11,340
+Açıkçı ve
+
+9
+00:11:11,508 --> 00:11:16,508
+And the protocol SMTP, this is the message exchange protocol.
+
+10
+00:11:16,508 --> 00:11:24,172
+And e-imap, internet mail application protocol.
+
+11
+00:11:26,100 --> 00:11:36,539
+ve mail-access protokollerini işleyeceğiz. E-mail is one of the oldest application, application layer application.
+
+12
+00:11:36,539 --> 00:11:51,060
+As I said in the first week in the introductory lecture, e-mail, the aim of building the internet is to exchange messages among users or machines.
+
+13
+00:11:53,908 --> 00:12:00,908
+ve
+
+14
+00:12:20,692 --> 00:12:23,851
+for creating messages.
+
+15
+00:12:23,851 --> 00:12:26,632
+The mail server is responsible
+
+16
+00:12:26,632 --> 00:12:31,792
+of sending and receiving user messages.
+
+17
+00:12:32,932 --> 00:12:37,012
+And the last part is SMTP,
+
+18
+00:12:37,272 --> 00:12:39,371
+Simple Mail Transfer Protocol.
+
+19
+00:12:39,591 --> 00:12:42,312
+This is the message exchange protocol
+
+20
+00:12:42,312 --> 00:12:44,632
+among mail servers.
+
+21
+00:12:45,392 --> 00:12:47,491
+So let's have a look.
+
+22
+00:12:48,371 --> 00:12:50,631
+Each of them in detail here.
+
+23
+00:12:51,131 --> 00:12:55,391
+User Agent, also known as Mail Reader.
+
+24
+00:12:56,531 --> 00:13:07,432
+So User Agent is used for composing email messages, editing and reading email messages.
+
+25
+00:13:08,371 --> 00:13:14,651
+And User Agent, commonly used User Agent example is Outlook.
+
+26
+00:13:15,091 --> 00:13:34,291
+or iPhone email client, which is pre-installed in your mobile phone. And user agent can be used for outgoing or incoming messages stored on the server. So...
+
+27
+00:13:35,028 --> 00:13:44,827
+All outgoing and incoming messages stored on the server and user agent use to access these messages.
+
+28
+00:13:44,827 --> 00:13:57,827
+Mail servers, this is second component. Mail server keeps mailboxes. Mailbox contains incoming messages for users.
+
+29
+00:13:58,196 --> 00:14:22,516
+In the server, there is also message queue, as you can see here. The green boxes on the figure. Message queue of outgoing messages. So these in the queue, the messages to be sent is kept. And...
+
+30
+00:14:22,932 --> 00:14:45,731
+forwarded to the next responsible mail server. And to exchange these messages among servers, SMTP protocol is used. SMTP protocol between mail servers to send email messages. The paradigm...
+
+31
+00:14:46,100 --> 00:15:11,648
+Bu, bu
+
+32
+00:15:11,648 --> 00:15:38,764
+among servers to exchange email messages. And as I said, in the server, there are the user inboxes and the message here. Let's have a look at our scenario here. Alice on the left side aims to send email to his friend Bob. Alice, user ID
+
+33
+00:15:39,059 --> 00:16:01,659
+user, user ID to compose email message to, let's say, bob.ed, samskool.edu. This is the, this is his email address. This is bob email address. In the first, Alice composed her email.
+
+34
+00:16:02,548 --> 00:16:17,548
+to Bob using user agent in the first step. In the second step, Alice user, client user agent sends her message.
+
+35
+00:16:19,668 --> 00:16:45,279
+to her email server. Okay? And in this case, message replaced in, where, in message queue, in the second step. In the third step, the client side of the server, the Alice's server, open TCP connection to where, to Bob's.
+
+36
+00:16:45,279 --> 00:17:01,879
+E-mail server. And the third step. The fourth step, after opening TCP connection. Why we open TCP connection? Because email requires reliable.
+
+37
+00:17:02,144 --> 00:17:04,144
+ve 4.
+
+38
+00:17:04,144 --> 00:17:06,144
+4.
+
+39
+00:17:06,144 --> 00:17:08,144
+Tcp.
+
+40
+00:17:08,144 --> 00:17:10,144
+3.
+
+41
+00:17:10,144 --> 00:17:16,144
+4.
+
+42
+00:17:16,144 --> 00:17:20,144
+5.
+
+43
+00:17:20,144 --> 00:17:24,144
+6.
+
+44
+00:17:24,144 --> 00:17:26,144
+7.
+
+45
+00:17:29,172 --> 00:17:50,827
+Bob's mail server replace these Alice's coming message to where? To Bob's mailboxes, right? And in the last step, which is the fifth, sixth step, Bob invokes his user agent to
+
+46
+00:17:51,284 --> 00:18:17,740
+So, as you can see, this is our simple scenario, contains six steps, and we can understand how the message is sent from Alice to Bob, using his and her mail servers and using SMTP protocol. So, email.
+
+47
+00:18:18,099 --> 00:18:26,259
+SMTP protocol is an open protocol and it is application layer protocol.
+
+48
+00:18:26,259 --> 00:18:35,939
+And since this is open, the standards are set using RFC 5321 document.
+
+49
+00:18:35,939 --> 00:18:39,619
+And email uses TCP.
+
+50
+00:18:40,372 --> 00:18:52,872
+A transport layer protokollerini işleyeceğiz. For what? For reliable mail transfer from client. What is client? The sender mail server.
+
+51
+00:18:54,372 --> 00:19:06,372
+So, which TCP port used for SMTP? Which is port 25? Okay? This is direct transfer.
+
+52
+00:19:07,476 --> 00:19:32,876
+between sending mail server, li-act as if client, to receiving mail server. Okay? Since TCP connection is used, three-way hand shaking must be done. So, there are three phases.
+
+53
+00:19:33,460 --> 00:19:38,779
+First is the hands shaking to open TCP connection.
+
+54
+00:19:38,779 --> 00:19:52,659
+And since there's a persistent connection, email is transferred between sending mail server to receiving mail server.
+
+55
+00:19:52,659 --> 00:19:56,019
+And the last phase is closure.
+
+56
+00:19:57,380 --> 00:19:59,860
+Since this is open and
+
+57
+00:20:00,000 --> 00:20:27,119
+Text-based protocol and command and response interaction like HTTP, though those are human readable and commands are ASCII text. And response contains status code, similar to HTTP protocol, and phrase, right? And messages in...
+
+58
+00:20:27,923 --> 00:20:51,523
+SMTP must be in 3-bit ASCII characters, right? And this is very similar to HTTP. Let's have a look. In this messaging, S is sending server and C is client. Both are server anyway. And...
+
+59
+00:20:52,435 --> 00:21:10,836
+Server send status code and let's say the server name is hamburger.edem. And clients say hello and gives her crepes.fr, France. Okay? Server say...
+
+60
+00:21:11,059 --> 00:21:34,380
+250, this is another status code, and say hello to where, to client, Kripes, France, and very human-readable phrase, place to meet you. And client, say mail from Alice, Kripes.fr, and server say,
+
+61
+00:21:35,604 --> 00:21:59,403
+250, this is available. And Alice, kreif.fr, and sender, OK, which means this is available and this mail is OK. And client says, recipient to where? To Bob at Hamburger Eder.
+
+62
+00:21:59,731 --> 00:22:10,331
+Çünkü bu
+
+63
+00:22:10,331 --> 00:22:29,092
+bu
+
+64
+00:22:25,652 --> 00:22:46,771
+And the phrase is enter mail, end with dot on the line by itself. So it tells how to send email. And client start sending messages line by line and to end.
+
+65
+00:22:47,476 --> 00:22:51,036
+Dot on the line by itself is placed.
+
+66
+00:22:51,436 --> 00:22:59,116
+And the mail from Alice at Crepes France to Bob at Hamburger Edi.
+
+67
+00:22:59,116 --> 00:23:02,536
+And the mail says, do you like ketchup?
+
+68
+00:23:03,256 --> 00:23:04,876
+How about pickles?
+
+69
+00:23:05,536 --> 00:23:13,656
+And dot to close, to finalize the message.
+
+70
+00:23:14,048 --> 00:23:36,448
+And server 350 and the message phrase, as I said, message accepted for delivery. And Bob's mail server place this incoming message to Bob's mailbox. And client quit, which means...
+
+71
+00:23:36,640 --> 00:23:40,400
+İntiyat, closing the TCP connection.
+
+72
+00:23:40,400 --> 00:23:44,680
+And Server 221 for closing message.
+
+73
+00:23:44,680 --> 00:23:48,320
+This is the phrase, hamburger adi, closing connection.
+
+74
+00:23:48,320 --> 00:23:52,720
+As you can see, this is simple mail interaction.
+
+75
+00:23:52,720 --> 00:24:01,119
+And it is very easy to follow because ASCII character set are used.
+
+76
+00:24:01,119 --> 00:24:04,160
+And it is very human readable.
+
+77
+00:24:04,852 --> 00:24:28,852
+OK. You can also try connecting the SMTP mail server. If it's open, it's relying is open. You can say telnet for this server hamburger.edu. Port is 25. And if you receive...
+
+78
+00:24:29,203 --> 00:24:55,203
+220 reply from server, which means this connection is set. And you can say enter hello, mail from blah blah, recipient to blah blah, data and queen command, similar to previous example. And you can connect to...
+
+79
+00:24:55,667 --> 00:25:23,596
+one of the mail server and you can directly write the message from recipient to the, from sender to the receiver. Okay? But this is only work if that server allows telnet connection for port 25. This is
+
+80
+00:25:23,988 --> 00:25:50,251
+Bu da
+
+81
+00:25:50,291 --> 00:26:02,251
+...
+
+82
+00:26:02,963 --> 00:26:16,764
+SMTP protocol with HTTP protocol. As you can realize that both are open protocol and based on ASCII and very human readable.
+
+83
+00:26:16,764 --> 00:26:26,364
+But if you compare, HTTP is based on pulling messages from the server. But in SMTP...
+
+84
+00:26:26,675 --> 00:26:54,395
+Pushing messages into the server. Okay? Mostly HTTP is pulling and SMTP is pushing. Both have ASCII command and response interaction and both use status codes. And in HTTP, each object encapsulated in its own response message.
+
+85
+00:26:54,644 --> 00:27:17,923
+But in SMTP, multiple objects can be sent in multi-part messages. HTTP use non-persistent connection, as you remember, but SMTP uses persistent connection, and SMTP requires message.
+
+86
+00:27:18,516 --> 00:27:24,735
+Message means header and body to be in 7-bit ASCII set.
+
+87
+00:27:24,735 --> 00:27:41,375
+And SMTP user, server uses control clear line to determine some certain, like in dot character to determine end of message.
+
+88
+00:27:41,375 --> 00:27:42,375
+Okay?
+
+89
+00:27:43,412 --> 00:27:48,012
+Let's have a look at the format of email message.
+
+90
+00:27:48,012 --> 00:27:59,012
+In the SMTP, protocol for exchanging email messages is defined RFC 531 similar to HTTP.
+
+91
+00:27:59,012 --> 00:28:04,012
+Okay? In HTTP, you remember, this RFC document...
+
+92
+00:28:06,387 --> 00:28:11,547
+is HTTP in RFC 531.
+
+93
+00:28:11,547 --> 00:28:22,427
+In email, syntax is defined RFC 822 for email messaging like HTML.
+
+94
+00:28:22,427 --> 00:28:23,187
+OK?
+
+95
+00:28:23,187 --> 00:28:26,987
+As you can see here, it has header.
+
+96
+00:28:26,987 --> 00:28:30,547
+In the header, it contains two.
+
+97
+00:28:30,784 --> 00:28:58,024
+to a from and the subject of message and to blank line to separate header and the body. And in the body, the message are sent in ASCII characters only. All right? It is very simple and easy to understand because it's very similar to HTTP.
+
+98
+00:28:59,604 --> 00:29:25,579
+So let's have a look at the protocols, mail access protocol, right? Email access protocol. SMTP is used to deliver or storing email messages to receiver server, okay? And SMTP used to send...
+
+99
+00:29:25,779 --> 00:29:52,991
+message from user agent to sender email server. And SMTP also used to exchange messages among mail servers. But mail access protocol used IMAP or HTTP protocol is used to retrieve
+
+100
+00:29:52,991 --> 00:30:08,831
+messages from email server. Okay. IMAP is the Internet Mail Access Protocol. It is again open protocol defining RFC 3501.
+
+101
+00:30:08,831 --> 00:30:18,592
+Messages stored on server, on receiver server, and IMAP protocol.
+
+102
+00:30:19,571 --> 00:30:32,571
+provides retrieval of message in the inbox, duration or organizing, storing these incoming messages into folders.
+
+103
+00:30:33,571 --> 00:30:43,571
+Similarly, IMAP is not only used protocol for retrieving messages from email server.
+
+104
+00:30:43,763 --> 00:31:09,403
+HTTP protocol also used to access email boxes, such as Gmail, Hotmail, Yahoo Mail, etc. provides web-based interface on top of SMTP to send, IMAP or POP.
+
+105
+00:31:09,715 --> 00:31:13,035
+to retrieve email messages.
+
+106
+00:31:13,035 --> 00:31:14,035
+OK?
+
+107
+00:31:16,155 --> 00:31:25,596
+OK, this is the end of email and email application and email protocols,
+
+108
+00:31:25,596 --> 00:31:33,275
+such as SMTP, Simple Mail Transfer Protocol, or IMAP, Internet Mail Access Protocol.
+
+109
+00:31:33,275 --> 00:31:34,555
+This time...
+
+110
+00:31:34,592 --> 00:31:43,592
+We are continuing discussing another commonly used application, DNS, Domain Name System.
+
+111
+00:31:43,592 --> 00:31:44,592
+Okay?
+
+112
+00:31:46,592 --> 00:31:57,592
+As human, let's have a look at the analogy, as human, we have, everybody has unique identifiers, such as names.
+
+113
+00:31:58,132 --> 00:32:07,892
+Türkistan number, passport number, national insurance number, or whatever.
+
+114
+00:32:07,892 --> 00:32:25,412
+So those are unique and used to identify ourselves. Okay? But in the internet, there are many edge devices. And as I said,
+
+115
+00:32:26,163 --> 00:32:40,564
+We have to use unique addresses to identify individual HD device, such as hosts or routers or bridges, whatever.
+
+116
+00:32:40,564 --> 00:32:47,764
+And we have to use unique identifiers to distinguish applications.
+
+117
+00:32:47,764 --> 00:32:53,163
+So ports are used on the server and IP address.
+
+118
+00:32:53,523 --> 00:32:57,124
+is used to identify edge device.
+
+119
+00:32:57,124 --> 00:33:02,523
+So there are two version of IP numbers, IP addresses.
+
+120
+00:33:02,523 --> 00:33:10,923
+First one is IP version 4 in that 32 bit IP addresses are used.
+
+121
+00:33:10,923 --> 00:33:11,923
+Okay?
+
+122
+00:33:12,523 --> 00:33:13,723
+And...
+
+123
+00:33:34,228 --> 00:33:37,668
+Plus the name or vice versa.
+
+124
+00:33:40,248 --> 00:33:44,928
+And we want to know the IP addresses of Asambalik server.
+
+125
+00:33:45,548 --> 00:33:49,028
+Or we know some IP address.
+
+126
+00:33:49,208 --> 00:33:53,708
+And we want to know what is the name of this IP.
+
+127
+00:33:53,708 --> 00:34:00,408
+So we should have something to use to learn.
+
+128
+00:34:00,908 --> 00:34:01,048
+Okay.
+
+129
+00:34:02,003 --> 00:34:22,804
+This is domain name system. Domain name system keeps a database and these pairs, IP address and the name, is kept in that database. But...
+
+130
+00:34:23,315 --> 00:34:28,315
+Domain name system used distributed database.
+
+131
+00:34:28,315 --> 00:34:37,315
+And in DNS, distributed database implemented in hierarchy of many name servers.
+
+132
+00:34:37,315 --> 00:34:40,315
+Okay? This is distributed.
+
+133
+00:34:40,315 --> 00:34:49,315
+This is again application layer protocol, not transport layer or other, or network layer.
+
+134
+00:34:50,356 --> 00:35:04,756
+Name servers communicate, host name server communicate to resolve names, but like address and the name translation. We must be noted that.
+
+135
+00:35:04,916 --> 00:35:08,496
+Bu, bu, core internet function.
+
+136
+00:35:08,716 --> 00:35:11,635
+DNS is the core internet function.
+
+137
+00:35:11,635 --> 00:35:18,155
+And again, it is implemented as application layer protocol.
+
+138
+00:35:18,816 --> 00:35:22,676
+And since this is application layer protocol,
+
+139
+00:35:23,176 --> 00:35:27,376
+all complexity in the network at edges,
+
+140
+00:35:27,836 --> 00:35:31,256
+in the edge devices, in the clients or whatever.
+
+141
+00:36:09,172 --> 00:36:18,172
+Or DNS also used for load sharing or load distribution. There can be many...
+
+142
+00:36:18,771 --> 00:36:40,371
+Web server behind and many IP addresses correspond to one name and DNS is responsible of translating one name to many other IP addresses. So we might think why the database is distributed.
+
+143
+00:36:41,364 --> 00:37:07,788
+Why we do not keep everything in one central database? Because first and main reason, centralized database may create single point of failure. If this central database may fail, entire network fails. And another,
+
+144
+00:37:07,827 --> 00:37:21,947
+DNS'ın application layer protocolu ve many, many requests to translate name and IP,
+
+145
+00:37:21,947 --> 00:37:26,648
+so it creates a huge amount of traffic.
+
+146
+00:37:27,427 --> 00:37:34,108
+And since there are many users trying to access this centralized server.
+
+147
+00:37:35,635 --> 00:38:01,612
+This thing, centralized database is another problem, and keeping this huge database is another problem, not keeping the centralized DNS. Maintainance is the last case. So, another, it's impossible to scale, because compact DNS server alone
+
+148
+00:38:02,324 --> 00:38:26,083
+Comcast is ISP in USA, and Comcast DNS server alone, one server, 600 billion, 600 billion, not million, 600 times 10 power 9 DNS queries per day. This is only one.
+
+149
+00:38:26,675 --> 00:38:30,275
+firm in one server in USA.
+
+150
+00:38:30,275 --> 00:38:38,195
+And can you imagine the entire request a day in entire internet network?
+
+151
+00:38:38,755 --> 00:38:53,715
+So since it is distributed database and hierarchical database, and at the top, at the root, we have root DNS servers.
+
+152
+00:38:53,715 --> 00:38:54,355
+Okay?
+
+153
+00:39:16,288 --> 00:39:34,448
+For Turkish domain DNS server. These are called TLD servers, top level domain servers. And on the third layer, the authoritative servers, like at...
+
+154
+00:40:49,996 --> 00:40:52,596
+As you can see, this is the first.
+
+155
+00:40:54,387 --> 00:40:59,188
+Aproximation, client is responsible of requesting.
+
+156
+00:41:01,887 --> 00:41:09,288
+As I said, the DNS database is hierarchical and distributed database.
+
+157
+00:41:09,288 --> 00:41:13,288
+At the top, there are root name servers.
+
+158
+00:41:13,288 --> 00:41:16,387
+Official, contact to last.
+
+159
+00:41:16,639 --> 00:41:41,840
+Dizled by name servers that cannot resolve name. This is the top. An incredibly important internet function keeping this root name server. And DNSSEC, the DNS security provides security. It is the authentication of message integrity. And I can...
+
+160
+00:41:43,380 --> 00:41:49,380
+ICANN is Internet Corporation for Assigned Names and Numbers.
+
+161
+00:41:49,380 --> 00:41:54,380
+This is the foundation. Manages root DNS domain.
+
+162
+00:41:54,380 --> 00:42:00,380
+There are 13 logical root name servers worldwide.
+
+163
+00:42:00,380 --> 00:42:06,380
+Okay? 13 logical root servers worldwide.
+
+164
+00:42:06,380 --> 00:42:10,380
+And it is replicated.
+
+165
+00:42:10,900 --> 00:42:34,300
+many times in each country. For example, in USA, around 300 servers, that replicates root name server, and many other, many in other countries. Okay? But root...
+
+166
+00:42:34,516 --> 00:42:42,275
+DNS is managed by ICANN, internet cooperation for assigned names and numbers.
+
+167
+00:42:44,355 --> 00:42:49,708
+So, let's have a look at the second TLD, top-level domain.
+
+168
+00:43:17,811 --> 00:43:23,092
+TRT, for France, JP, for Japan, TRT, for Turkey.
+
+169
+00:43:47,155 --> 00:44:04,395
+to IP mapping for organizations named OSP. And these authoritative DNS servers can be maintained by organization or service providers. Okay?
+
+170
+00:44:17,412 --> 00:44:30,692
+And at the bottom line, we have local DNS servers that does not restrict, belong to hierarchy.
+
+171
+00:44:30,996 --> 00:44:53,396
+So, each ISP, I mean residential ISP or company or university has alone, has one, at least one local DNS server that is called default DNS server. Okay? When...
+
+172
+00:44:54,099 --> 00:45:01,300
+Any host at the edge in the local area network makes DNS query.
+
+173
+00:45:02,300 --> 00:45:07,700
+This query is sent to default local DNS server.
+
+174
+00:45:08,700 --> 00:45:21,900
+In local DNS server has local cache of recent name to address translation pairs, but may be out of date.
+
+175
+00:45:23,059 --> 00:45:48,260
+So, local DNS server acts as if proxy and forward query to hierarchy if it does not, if local DNS do not, does not contain these requests. So, there are two methods for name resolution.
+
+176
+00:45:48,851 --> 00:46:02,851
+First, iterated query, the alternative. Example, let's say, engineering NYU adres wants to IP address of GFCS UMass adres.
+
+177
+00:46:02,851 --> 00:46:12,851
+So, the requesting host on the left side, engineering NYU adres, send a request.
+
+178
+00:46:13,588 --> 00:46:34,123
+to local DNS, DNS NYU ADM, the first step, okay? And local DNS ask the root server for the TLD server of UMASADM.
+
+179
+00:46:34,708 --> 00:46:41,708
+ve
+
+180
+00:47:03,572 --> 00:47:26,372
+to authoritative DNS server, DNS-CS-UMAS-ATEM. Then replies the IP addresses of the GA-CS-UMAS-ATEM. And local DNS send this response of...
+
+181
+00:47:26,483 --> 00:47:31,483
+The client in the engineering NYU, okay?
+
+182
+00:47:31,483 --> 00:47:38,483
+Another method for DNS name resolution is recursive query.
+
+183
+00:47:38,483 --> 00:47:39,483
+In this,
+
+184
+00:47:43,092 --> 00:48:07,092
+Requesting host ask to local DNS for gr.cs.umess.edder. And this message is forwarded to root DNS server. And root DNS server ask to TLD DNS server.
+
+185
+00:48:07,476 --> 00:48:33,675
+And ELD DNS server ask to alternative DNS server and replies. Okay? This is recursive. But it puts burden of name resolution on contact name server and heavily load where on the top server.
+
+186
+00:48:33,940 --> 00:48:41,539
+TopServer is responsible of asking because recursive query is used.
+
+187
+00:48:45,268 --> 00:49:10,708
+And caching mechanism, let's have a look. As I said in the previous slides, a local DNS server behaves DNS cache. Once any name server learns mapping, it caches this mapping. So cache entry timeout is required after some certain time that is called TLL.
+
+188
+00:49:10,996 --> 00:49:14,036
+TLD server
+
+189
+00:49:14,036 --> 00:49:15,695
+typically cached
+
+190
+00:49:15,695 --> 00:49:18,276
+in local name servers
+
+191
+00:49:18,276 --> 00:49:19,916
+because it is responsible
+
+192
+00:49:19,916 --> 00:49:20,655
+of keeping
+
+193
+00:49:20,655 --> 00:49:23,256
+authoritative
+
+194
+00:49:23,256 --> 00:49:25,596
+server IP addresses
+
+195
+00:49:25,596 --> 00:49:27,356
+and cache entry
+
+196
+00:49:27,356 --> 00:49:29,596
+may be out of date
+
+197
+00:49:29,596 --> 00:49:31,516
+because DNS
+
+198
+00:49:31,516 --> 00:49:33,496
+is best afford
+
+199
+00:49:34,708 --> 00:50:00,876
+Name to address translation. If name host changes IP address, that new IP address may not be known worldwide until TLL, time to leave, expires. Once this time expired, TLD server updates. Update notify mechanism proposed by
+
+200
+00:50:00,947 --> 00:50:27,587
+IETF standard. So this standard document is basically RFC 2136. In the DNS record, as you can see, this is the distributed database storing resource record, RR. In RR format, we have the name of the host.
+
+201
+00:50:27,891 --> 00:50:31,531
+İp adres, whatever.
+
+202
+00:50:31,971 --> 00:50:34,611
+The type of this record.
+
+203
+00:50:34,611 --> 00:50:37,991
+At the end, we have TTL.
+
+204
+00:50:38,431 --> 00:50:41,531
+In the type, A is the hostname.
+
+205
+00:50:42,471 --> 00:50:50,291
+In this case, if type is A, name is hostname, value is IP address.
+
+206
+00:50:50,631 --> 00:50:53,911
+And TTL is some certain amount of time.
+
+207
+00:52:21,699 --> 00:52:30,339
+In the DNS protocol messaging, as you can see DNS query, the client may ask
+
+208
+00:52:30,612 --> 00:52:56,412
+The name resolution, so the query and the reply message, both the same format. As you can see, the identification, which is 16-bit for query, reply is the same size. And flag is used to define query or these messages if it's a query.
+
+209
+00:52:56,563 --> 00:52:58,563
+or reply message
+
+210
+00:52:58,563 --> 00:53:00,563
+so flag is used to distinguish
+
+211
+00:53:00,563 --> 00:53:06,563
+and the method is recursion desired
+
+212
+00:53:06,563 --> 00:53:08,563
+or recursion available
+
+213
+00:53:08,563 --> 00:53:11,563
+or reply is authoritative
+
+214
+00:53:11,563 --> 00:53:17,563
+and the question and the answers for name resolution
+
+215
+00:53:17,563 --> 00:53:18,539
+okay
+
+216
+00:53:19,987 --> 00:53:27,987
+This is the name, type field for query, and record in the response query.
+
+217
+00:53:29,987 --> 00:53:39,987
+If you want to insert a record into the database, DNS, domain name system database, let's say...
+
+218
+00:54:06,483 --> 00:54:34,123
+DNS security. As I said, DNS play a very important role in the internet. So, the common attack is DDoS attack using these queries. That the server may be bombarded with many queries. So,
+
+219
+00:54:34,612 --> 00:54:42,172
+It is not successful to our days because traffic filtering is used.
+
+220
+00:54:42,172 --> 00:54:50,372
+Or TLD servers may be bombarded with many queries.
+
+221
+00:54:50,372 --> 00:54:54,572
+So this one is potentially more dangerous.
+
+222
+00:54:54,572 --> 00:55:01,211
+And moreover, DNS can be used for redirect attacks such as
+
+223
+00:55:01,264 --> 00:55:26,827
+Man in the middle, so DNS queries may be changed and intercept DNS queries. And another type of attack is DNS poisoning. So since bugger's reply relies to DNS server which caches. And again exploit DNS for
+
+224
+00:55:27,092 --> 00:55:30,132
+Deny, distributed denial of service attack.
+
+225
+00:55:30,132 --> 00:55:51,452
+So it sends queries with spoofed source addresses with target IP and DNS servers may be used to amplify these queries and consume all the resources of target system.
+
+226
+00:55:54,099 --> 00:56:05,099
+And these type of attacks can be explained in RFC 4032 document, DNSSEC document.
+
+227
+00:56:05,099 --> 00:56:12,099
+Okay, let's give a break for 15 minutes, then we can continue.
+
+228
+00:56:12,099 --> 00:56:16,875
+15 dakika ara veriyoruz arkadaşlar. Sonrasına devam ederiz.
+
+229
+01:12:43,475 --> 01:12:52,835
+OK, everybody. Let's continue to our lecture. As you remember, at the beginning of this part...
+
+230
+01:12:56,979 --> 01:13:06,479
+We have, there are two paradigms, client server or peer-to-peer.
+
+231
+01:13:06,479 --> 01:13:07,479
+Okay?
+
+232
+01:13:07,479 --> 01:13:11,479
+So this time, let's have a look at peer-to-peer applications.
+
+233
+01:13:15,123 --> 01:13:41,403
+So here, in peer-to-peer architecture, there is, it's not necessary to have servers. So, each ENG device can interact with each other. So, arbitrary ENG systems directly communicate, as you can see in this figure, and peers request server.
+
+234
+01:13:41,587 --> 01:14:05,355
+service from other pairs, so, and provide service in return to other pair. So pairs are intermittently connected and may change IP addresses. And in this time, the management of peer-to-peer architecture is
+
+235
+01:14:05,939 --> 01:14:26,559
+Bu, daha çok daha
+
+236
+01:14:26,560 --> 01:14:50,988
+Peer-to-peer architecture examples. As you can see here, in PIR distribution, client-server model, and peer-to-tear model, suppose you have a file size is F, okay, located in the server, and the server is
+
+237
+01:14:51,475 --> 01:15:07,675
+OK, connected to the network with the bandwidth of US upload speed. OK? And our clients, as you can see, we have N clients. Those...
+
+238
+01:15:08,115 --> 01:15:33,115
+Upload and download speeds U1, D1, U2, D2, and UN, DN. Di, i's client, pair, download speed is Di, upload speed is UI. And our server, the file is located in the server.
+
+239
+01:15:36,595 --> 01:15:48,595
+Server transmission must sequentially send the F-file into the network.
+
+240
+01:15:48,595 --> 01:16:00,139
+So the time to send to client, to one client is F over F.
+
+241
+01:16:00,404 --> 01:16:24,804
+Upload S, US. This is the send one copy to the network. Okay? Suppose we have N number of client requesting that file. So in this time, the time required to upload N number of F file.
+
+242
+01:16:25,011 --> 01:16:29,692
+which is equal to n times f divided by us.
+
+243
+01:16:29,692 --> 01:16:36,431
+And each client must download the copy.
+
+244
+01:16:36,971 --> 01:16:42,671
+So the minimum is the minimum client download rate.
+
+245
+01:16:43,112 --> 01:16:48,291
+This is the minimum client download time is f over the minimum.
+
+246
+01:16:48,771 --> 01:16:51,652
+So time to distribute f.
+
+247
+01:16:52,275 --> 01:16:58,275
+FILE TO N NUMBER OF CLIENT USING CLIENT SERVER APPROACH.
+
+248
+01:16:58,275 --> 01:17:09,275
+So D is the time distribution time is the greater than the maximum N times FUS and F over Dmin.
+
+249
+01:17:09,275 --> 01:17:10,275
+This is the.
+
+250
+01:17:10,996 --> 01:17:20,076
+Maximum value and that is greater and n number of f file must be uploaded by the server.
+
+251
+01:17:26,579 --> 01:17:34,579
+And if the number of client increase, the distribution time may increase also.
+
+252
+01:17:36,100 --> 01:17:46,579
+Let's have a look at peer-to-peer model. So server transmission must upload at least one copy.
+
+253
+01:17:47,028 --> 01:17:55,028
+So the time is required to send one copy to network is F over US.
+
+254
+01:17:55,028 --> 01:18:02,887
+And the client, each client must download that file.
+
+255
+01:18:03,307 --> 01:18:08,387
+So minimum client download time is F over download minimum.
+
+256
+01:18:09,467 --> 01:18:14,088
+So client as aggregate must download N.
+
+257
+01:18:14,528 --> 01:18:15,528
+Olamak, OSI ve
+
+258
+01:18:14,463 --> 01:18:37,463
+F bits, so maximum upload rate is equal to US, this is the upload speeds, plus the total of UI. In this time, distribution time P2P is greater than maximum F over US. F...
+
+259
+01:18:37,619 --> 01:18:49,619
+Divided by D minimum, download minimum, and N times F divided by US, server upload plus total UI.
+
+260
+01:18:49,619 --> 01:18:55,619
+And in this time, time to distribute F to N clients using...
+
+261
+01:18:56,032 --> 01:18:57,932
+Peer-to-peer approach.
+
+262
+01:18:57,932 --> 01:19:11,332
+And as you can see, if an increase, this distribution time, the peer-to-peer is less than the previous one, the server-to-client paradigm.
+
+263
+01:19:11,332 --> 01:19:12,332
+Okay?
+
+264
+01:19:15,444 --> 01:19:21,444
+So, as you can see, again, this one increased, but not that much.
+
+265
+01:19:22,444 --> 01:19:36,444
+As you can see here, this is the number of clients, 0 to 35, and the number of distribution time, 0 to 5.
+
+266
+01:19:38,515 --> 01:19:47,195
+Kline-server model, it increases linearly according to the number of clients.
+
+267
+01:19:47,195 --> 01:19:55,995
+And as you can see, peer-to-peer model, it does not increase linearly.
+
+268
+01:19:55,995 --> 01:19:59,155
+It has some sort of slope.
+
+269
+01:19:59,155 --> 01:20:06,195
+And if an increase, the efficiency of peer-to-peer model is...
+
+270
+01:20:06,239 --> 01:20:10,739
+better than the efficiency of server client model.
+
+271
+01:20:12,599 --> 01:20:19,739
+So the most commonly used peer-to-peer file distribution is BitTorrent.
+
+272
+01:20:20,639 --> 01:20:29,439
+So in BitTorrent, the file, the file, F-file divided
+
+273
+01:20:30,355 --> 01:20:34,435
+İntro, ve çunçlarında bir çunçlar var.
+
+274
+01:20:34,435 --> 01:20:37,695
+256 kilobit.
+
+275
+01:20:38,195 --> 01:20:41,935
+Piyos, torrent,
+
+276
+01:20:42,555 --> 01:20:45,675
+yüzeyemizde ve çunçlarında
+
+277
+01:20:45,675 --> 01:20:47,496
+çunçlarında
+
+278
+01:20:47,496 --> 01:20:49,175
+ve çunçlarında
+
+279
+01:20:49,175 --> 01:20:53,235
+piyosin bir çunçlarında
+
+280
+01:20:53,235 --> 01:20:55,235
+bir çunçlarında
+
+281
+01:20:55,347 --> 01:21:19,827
+And the torrent is basically a group of pairs exchanging not entire file, but chunk of file. And the tracker keeps this record. Let's say Alice is new user arrives to this system. And Alice...
+
+282
+01:21:20,079 --> 01:21:24,079
+Obtains list of pairs from tracker.
+
+283
+01:21:25,579 --> 01:21:26,680
+And,
+
+284
+01:21:27,880 --> 01:21:29,280
+File chunks
+
+285
+01:21:30,180 --> 01:21:36,280
+Exchange between these pairs using peer-to-peer connection.
+
+286
+01:21:36,948 --> 01:21:59,448
+Peer-to-peer, five-distribution using BitTorrent, peer-joining torrent has no chunk at the beginning, but will accumulate them over time from other pairs. And registers with tracker to get list of pairs and connects to other pairs.
+
+287
+01:21:59,551 --> 01:22:03,551
+bir parçası,
+
+288
+01:22:03,551 --> 01:22:07,551
+ve parçası,
+
+289
+01:22:07,551 --> 01:22:26,411
+parçası,
+
+290
+01:22:26,771 --> 01:22:46,412
+It may either selfishly leave from group or can remain and start distributing these chunks to other pairs. Okay? This is how it works. In BitTorrent, requesting an...
+
+291
+01:22:46,452 --> 01:23:12,052
+Sending file chunks, in the requesting chunk, at any time, any given time, different pairs have different subsets of file chunk. Each pair may have different subset of the chunk of the file. And periodically, let's say our user Alice asks each pair for list of chunks.
+
+292
+01:23:12,500 --> 01:23:39,435
+ve altyazı alty
+
+293
+01:23:39,731 --> 01:24:02,699
+for peer currently sending her chunks at highest rate and every 30 seconds, randomly select other pair, start sending this chunk and optimistically, uncheck this pair and newly chosen pair may join in top four, okay?
+
+294
+01:24:04,851 --> 01:24:30,492
+Let's have a look here. Alice optimist click, un-choke Bob. And Alice becomes one of Bob's top four providers. And Bob becomes one of Alice top four providers. And to exchange. And higher upload rate.
+
+295
+01:24:30,644 --> 01:24:55,788
+find better trading in BitTorrent and because he or she may distribute faster and in reverse, this partner may get fired faster than others. This is our last application layer.
+
+296
+01:24:55,891 --> 01:25:04,231
+...application, which is video streaming and on top of it, content division networks.
+
+297
+01:25:06,332 --> 01:25:11,231
+Let's start discussing video streaming and CDNs.
+
+298
+01:25:12,952 --> 01:25:19,291
+Stream video traffic, this is the major consumer of internet.
+
+299
+01:25:23,887 --> 01:25:27,327
+Pandemi, it is more common.
+
+300
+01:25:27,887 --> 01:25:42,448
+And in 2020, in the residential ISP traffic, 80% of traffic is consumed by Netflix, YouTube, Amazon Prime.
+
+301
+01:25:42,448 --> 01:25:50,283
+And challenge is huge because the number of users...
+
+302
+01:25:50,707 --> 01:26:05,028
+may reach up to 1 billion. So, how we can distribute this video content to 1 billion users?
+
+303
+01:26:07,587 --> 01:26:16,947
+The solution may be single mega video server, but it doesn't work because the network capacity
+
+304
+01:26:17,844 --> 01:26:23,663
+Bir milyon insanın bir milyon kullanmanızı bir şekilde
+
+305
+01:26:23,663 --> 01:26:25,564
+bu bir soru.
+
+306
+01:26:25,564 --> 01:26:36,743
+Bu soru.
+
+307
+01:26:36,743 --> 01:26:38,144
+Wi-fi.
+
+308
+01:26:38,144 --> 01:26:39,344
+Möbile.
+
+309
+01:26:39,988 --> 01:26:45,488
+So the solution is not centralized, similar to DNS.
+
+310
+01:26:45,488 --> 01:26:56,668
+The distribution architecture is the solution, and application level architecture is again solution.
+
+311
+01:26:58,068 --> 01:27:04,427
+Okay, before starting the streaming video, let's have a look.
+
+312
+01:27:05,108 --> 01:27:28,427
+multi ADD's architecture. As you can see, the video is series of frames. As you can see, there are frame i here, that that's running, is running, and frame i and frame i plus one.
+
+313
+01:27:29,011 --> 01:27:40,131
+OK? So if we can see continuously, so our brain joins them and we can understand this guy is running.
+
+314
+01:27:40,131 --> 01:27:56,612
+So video is basically seconds of frames displayed at constant rate. For example, 24 image per second or 56 image per second, whatever. In digital image,
+
+315
+01:27:57,300 --> 01:28:07,700
+Each image is again an array of pixels, and each pixel represented by bit.
+
+316
+01:28:07,700 --> 01:28:09,100
+All right?
+
+317
+01:28:09,100 --> 01:28:17,100
+So, as you can see in this picture, on the sky, and is a seconds of frame.
+
+318
+01:28:17,167 --> 01:28:43,167
+Sekunds of pixels, and the value of each pixel represents the color, let's say in this figure. And coding, some coding must be used to reduce the size of the file or the size of the video. Coding use redundancy.
+
+319
+01:28:43,796 --> 01:28:47,275
+Bütün bir bir frame,
+
+320
+01:28:47,275 --> 01:28:49,655
+or between images,
+
+321
+01:28:49,655 --> 01:28:53,155
+to decrease the number of bits.
+
+322
+01:28:53,155 --> 01:28:54,155
+So,
+
+323
+01:28:56,155 --> 01:28:58,436
+two types of coding is used.
+
+324
+01:28:58,436 --> 01:29:00,036
+Fırsız spatial,
+
+325
+01:29:00,036 --> 01:29:02,476
+that is done within the image,
+
+326
+01:29:02,476 --> 01:29:04,036
+or temporal,
+
+327
+01:29:04,036 --> 01:29:06,155
+from one image
+
+328
+01:29:06,155 --> 01:29:08,476
+to the next image.
+
+329
+01:29:08,476 --> 01:29:11,316
+So, both can be used anyway.
+
+330
+01:29:12,243 --> 01:29:23,443
+So in video, CBR, Custom Beat Rate, that is one method used, encoding rate fixed, or VBR.
+
+331
+01:29:23,731 --> 01:29:32,532
+Variable bitrate, video encoding rate changes as amount of spatial or temporal recording change.
+
+332
+01:29:32,532 --> 01:29:42,291
+For example, MPEG-1, that is the CD-ROM quality, the rate is 1.5 Mbps.
+
+333
+01:29:42,291 --> 01:29:49,731
+In MPEG-2, that is DVD quality, 3 to 6 Mbps.
+
+334
+01:29:49,779 --> 01:30:17,327
+MPEG-4, internet, and the value varies according to the internet speed, 64 kilobit per second to up to 12 megabit per second. Okay? Let's have a look at the streaming audio this time. We have the video server on the left.
+
+335
+01:30:17,328 --> 01:30:33,128
+VLAN İzmir, internet, our client is in the house. Video server store video. Main challenge in server to client bandwidth will vary over time because of the...
+
+336
+01:30:33,619 --> 01:30:58,667
+ve hizmetik ve hizmetik ve hizmetik ve hizmetik ve hizmetik ve hizmetik ve hizmetik ve hizmetik ve hizmetik ve hizmetik ve hizmetik ve hizmetik ve hizmetik ve hizmetik ve hizmetik ve hizmetik ve hizmetik ve hizmetik ve hizmetik ve hizmetik ve hizmetik ve hizmetik ve hizmetik ve hizmetik ve hizmetik ve hizmetik ve hizmetik ve hizmetik ve hizmetik ve hizmetik ve hizmetik ve hizmetik ve hizmetik ve hizmetik ve hizmetik ve hizmetik ve hizmetik ve hizmetik ve hizmetik ve hizmetik ve hizmetik ve hizmetik ve hizmetik ve hizmetik ve hiz
+
+337
+01:31:00,083 --> 01:31:26,443
+Let's have a look here. We can store the way we can record the media step by step because it is digital. Every second, 30 frames in each second, storing the media into the server. And in the second video sent, again,
+
+338
+01:31:27,188 --> 01:31:40,068
+send in the network similar to one stored and again 30 frames in a second.
+
+339
+01:31:40,068 --> 01:31:51,268
+Suppose for this example the network is enough to transfer the video in the same speed.
+
+340
+01:31:53,140 --> 01:32:15,020
+Bu, bu
+
+341
+01:32:19,579 --> 01:32:23,579
+bu
+
+342
+01:32:18,260 --> 01:32:30,020
+VLAN play or in streaming, at this time, VLAN start playing the early part of the media, as you can see here.
+
+343
+01:32:30,020 --> 01:32:41,020
+The second second is playing while the, let's say, tenth second video is on the network.
+
+344
+01:32:41,811 --> 01:33:04,612
+Early part of video while server still sending later part of the video. And the client assumed that this sended part will receive in time. But...
+
+345
+01:33:05,171 --> 01:33:31,087
+Continuous playout constraints, such as this circle here, buffering, once client playout begins, playback must match original timing, but because of the network delay or variable network delays, this is called jitter, the result need
+
+346
+01:33:31,087 --> 01:33:46,087
+client-side buffer to accommodate, then play. Okay? There's a certain amount of buffer. Network fill this buffer and application playing this buffer.
+
+347
+01:33:46,087 --> 01:33:55,087
+Other challenge, client interactivity. Since we are watching movie, we may pause.
+
+348
+01:33:56,051 --> 01:34:20,779
+We may fast forward or rewind or jump through video. So in this case, the buffer can be unusable. And the received packet may be lost or may be required to retransmit because we go back, rewind. So in this case, in buffering,
+
+349
+01:34:21,235 --> 01:34:45,635
+Again, constant bitrate for video transmission. As of the network traffic, some frame may receive longer than other frames. These are the variable. Network delay is not constant, it is variable. This is video reception. It may take longer time than others.
+
+350
+01:34:47,891 --> 01:34:57,011
+Payout must be same identical time with the... it is transmitted or it is recorded.
+
+351
+01:34:59,411 --> 01:35:00,427
+This is...
+
+352
+01:35:00,787 --> 01:35:09,987
+Buffering video can be used. Buffered video used to represent the same staircase here.
+
+353
+01:35:09,987 --> 01:35:21,987
+Client-side buffering and play-out delay compensate for added network delay, or in other words, delay jitter.
+
+354
+01:35:30,003 --> 01:35:54,003
+streaming media solution, dash. Dynamic, adaptive streaming over HTTP. Okay? Because to solve this problem, buffering, in some cases, buffering is not the solution because we go forward, backwards, pause, whatever. So dash can be another solution. It is the server side.
+
+355
+01:35:55,123 --> 01:36:02,623
+Server devised video into multiple chunks, similar to BitTorrent, you remember.
+
+356
+01:36:02,623 --> 01:36:16,623
+Each chunk stored and coded at different rate because in different network speed may require different quality.
+
+357
+01:36:19,792 --> 01:36:44,332
+different files. So to keep these records, manifest file is used. ManifestPyre provides URLs for different chunks in the server side. On the client side, client periodically measures client server bandwidth.
+
+358
+01:36:45,427 --> 01:37:06,327
+OK? Then, according to this measured bandwidth, client request related chunk because chunk, each chunk is encoded and stored in different names and manifest is kept.
+
+359
+01:37:06,452 --> 01:37:11,851
+That URL of each chunk is kept in manifest file.
+
+360
+01:37:11,851 --> 01:37:21,051
+And client chooses maximum coding rate, sustainable in given current bandwidth.
+
+361
+01:37:21,051 --> 01:37:31,452
+And client can choose different coding rate at different point of time, depending on these measured bandwidth.
+
+362
+01:37:33,268 --> 01:37:53,507
+So, all the intelligence in the client, because client wedger the bandwidth and client request from server the related URL, the related encoded chunk of the video.
+
+363
+01:37:53,507 --> 01:37:55,827
+When the request chunk...
+
+364
+01:37:56,307 --> 01:38:01,907
+So that buffer starvation or overflow does not occur.
+
+365
+01:38:01,907 --> 01:38:05,107
+And what encoding rate to request?
+
+366
+01:38:05,107 --> 01:38:16,107
+What is the highest quality when more bandwidth available, lower quality when less bandwidth available?
+
+367
+01:38:16,107 --> 01:38:18,507
+So where to request?
+
+368
+01:38:19,507 --> 01:38:22,707
+It's requested to closest...
+
+369
+01:38:25,587 --> 01:38:31,087
+MANU server, which keeps URL.
+
+370
+01:38:31,087 --> 01:38:46,587
+In the streaming media, we have basically the encoding plus dash dynamic, as you can see, dynamic adaptive streaming over HTTP, and plus we can use buffer.
+
+371
+01:38:54,163 --> 01:39:18,987
+videoları da
+
+372
+01:39:19,123 --> 01:39:42,724
+OPCM1, as I said at the beginning, one mega server, but this one cause single point of failure and congestion, and it does not scare. Another solution is CDN, like Akamai Limelight in Akamai.
+
+373
+01:39:45,300 --> 01:40:03,300
+Pushtcdn server deep into many access networks. So in Akamai, this network is close to users. In Akamai, more than 240,000.
+
+374
+01:40:03,551 --> 01:40:29,431
+Servers deployed in more than 120 countries in 2015. Today is even larger. In Limelight, smaller number, let's say tens of larger clusters in POPS near to Access Network. This is another.
+
+375
+01:40:29,652 --> 01:40:56,771
+Solution in CDNs used by Limelight. As you can see here, in CDN networks, our network here, in the core, there are routers and so on and so forth, and Netflix on the other side, and CDN stores copies of content at CDN nodes, such as Netflix stores.
+
+376
+01:40:58,163 --> 01:41:23,963
+Mövi, Madman, okay, this guy in that house, there are many copies of Madman around the world, and this guy watching TV requests Madman. And subscriber requests content from CDN network, and...
+
+377
+01:41:24,307 --> 01:41:44,068
+CDN Network directed this copy in the nearest ask to Netflix, a Netflix stand manifest file, and client choose the nearest chunk from that server.
+
+378
+01:41:44,068 --> 01:41:47,068
+In time...
+
+379
+01:41:47,572 --> 01:41:52,332
+VLAN may change because of the network speed to another one.
+
+380
+01:41:54,692 --> 01:41:58,252
+So OTT is over the top.
+
+381
+01:42:00,492 --> 01:42:08,851
+At the top here, we have internet host-to-host communication as a service.
+
+382
+01:42:09,212 --> 01:42:09,731
+Okay?
+
+383
+01:42:09,908 --> 01:42:11,908
+from some sort of cloud.
+
+384
+01:42:11,908 --> 01:42:20,908
+That is the OTT challenge, copying of the congested network from which CDN node to retrieve connect
+
+385
+01:42:20,908 --> 01:42:29,908
+and we will be having here in presence of congestion and what connect to place in which CDN node.
+
+386
+01:42:29,908 --> 01:42:33,836
+Okay, this is the end of...
+
+387
+01:42:34,515 --> 01:42:44,015
+4. week presentation. If you have a question, I may answer. Otherwise, see you next week.
+
+388
+01:42:57,076 --> 01:43:01,576
+Muhtemelen herkes açtı, bıraktı, gitti. Nasıl olsa kaydediliyor.
+
+389
+01:43:01,576 --> 01:43:03,576
+Yok hocam.
+
+390
+01:43:03,576 --> 01:43:05,076
+Hayır hocam.
+
+391
+01:43:05,576 --> 01:43:09,076
+Tamam oldu. Kendinize dikkat edin.
+
+392
+01:43:09,076 --> 01:43:11,076
+Teşekkür ederiz hocam.
+
+393
+01:43:11,076 --> 01:43:12,076
+Eğilir Ramazanlar.
+
+394
+01:43:12,076 --> 01:43:13,996
+Haftaya görüşmek üzere.

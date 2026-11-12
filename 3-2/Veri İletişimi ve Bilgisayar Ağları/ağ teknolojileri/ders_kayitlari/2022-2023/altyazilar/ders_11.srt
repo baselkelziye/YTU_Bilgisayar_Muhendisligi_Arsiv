@@ -1,0 +1,1543 @@
+1
+00:00:16,051 --> 00:00:18,051
+Günaydın sevgili arkadaşlar.
+
+2
+00:00:21,172 --> 00:00:27,571
+Yavaş yavaş arkadaşlarınız dahil oluyor. Bu arada hızlıca hatırlatayım, web sayfama...
+
+3
+00:00:30,356 --> 00:00:52,299
+Vize sınavının cevabı anahtarını koydum. True, false hatırlayacağınız gibi. Doğrular zaten doğru. Yanlışların ise doğrusunu parantez içerisinde yazdım. Dolayısıyla neyi değiştirildiğini ya da doğrusunun ne olması gerektiğini de oradan öğrenebilirsiniz. Aynı zamanda geçen hafta arkadaşlarınız...
+
+4
+00:00:52,531 --> 00:01:19,967
+eee göremiyoruz notları demişlerdi. Eee sistemden çekerek notları da gördüm. Ortalama gayet yüksek, 83 küsür. Eee vize eee bu şekilde telafiyle alakalı mazeret sınavına girecek arkadaşlarınız var mı açıkçası bilmiyorum. Ama mazeret sınavıyla alakalı pazartesi günü eee bölümde kimlerin mazeret sınavına gireceğiyle
+
+5
+00:01:19,968 --> 00:01:28,088
+kar vereceklerini söylediler. Dolayısıyla onun hakkında de mazeresini organize etmiş oluruz.
+
+6
+00:01:28,088 --> 00:01:31,567
+Onun dışında
+
+7
+00:01:33,908 --> 00:01:51,908
+Benim söyleyeceğim ders hatırlayacağım. Final sınavının durumu ile alakalı üniversiteden herhangi bir duyuru almadım. Yani yüz yüze mi yapılacak, online mi yapılacak o konuyla alakalı maalesef şu ana kadar tarafıma gelen herhangi bir bilgi yok.
+
+8
+00:01:52,340 --> 00:02:01,740
+Ama gelen bilgiye göre de hareket etmiş olacağız. Sizin bildiğiniz bir şey var mı arkadaşlar, mazeret sınavının nasıl olacağıyla alakalı?
+
+9
+00:02:06,739 --> 00:02:08,920
+Yok mu sizlerde bir haber?
+
+10
+00:02:08,920 --> 00:02:12,500
+Hocam, finaller için 100 yüze dendi biz ama mazeret sanırım online.
+
+11
+00:02:12,500 --> 00:02:15,060
+Yani senato kararı duyuruldu mu size?
+
+12
+00:02:15,060 --> 00:02:17,780
+Twitter üzerinden fakülte paylaşmıştı hocam evet.
+
+13
+00:02:17,780 --> 00:02:24,259
+Tamam o zaman tamam. Ama öyleyse o zaman 100 yüze yapmış oluruz sınavı.
+
+14
+00:02:24,259 --> 00:02:29,259
+100 yüze olduğu zaman sınav klasik olacak. Normal yaptığımız sınav şeklinde olacak.
+
+15
+00:02:29,259 --> 00:02:33,819
+Haberiniz olsun. Yani 6-8 tane soru sormuş oluruz.
+
+16
+00:02:36,436 --> 00:02:43,996
+Tamam arkadaşlar. Evet, bu haftaki konumuza başlayabiliriz.
+
+17
+00:02:43,996 --> 00:02:50,828
+Şunu küçülttük. Şuradan ekibimizi paylaşalım.
+
+18
+00:02:58,228 --> 00:03:22,228
+OK, everybody. As you remember, we have started to discuss network layer. And as again, you remember, we have divided our network layer subject into two parts. The first part is the data plane part, and the second part is the control plane. And...
+
+19
+00:03:22,639 --> 00:03:38,039
+At the beginning of last week, as we said, the data part is basically about what's going on in the individual router. So we have discussed forwarding mechanism.
+
+20
+00:03:38,388 --> 00:03:41,927
+Ve bu konuda devam edecek.
+
+21
+00:03:42,468 --> 00:03:47,328
+Ve bu konuda, bu konuda, bu konuda, bu konuda,
+
+22
+00:03:47,328 --> 00:03:53,087
+konuda başlayalım.
+
+23
+00:03:53,395 --> 00:04:08,395
+As you remember, last week presentation started with a brief overview why we have divided our network layer subject into two parts. And we have continued...
+
+24
+00:04:08,395 --> 00:04:10,395
+What is...
+
+25
+00:04:11,443 --> 00:04:31,443
+...is going on inside a router. We have discussed forwarding mechanism. Forwarding, you remember basically about how incoming datagram is forwarded from input port to the related output port. We have discussed switching mechanism.
+
+26
+00:04:31,732 --> 00:04:35,352
+We have talked about three types of switching mechanism.
+
+27
+00:04:36,552 --> 00:04:41,332
+Software-based, as you remember, bus and switching fabric.
+
+28
+00:04:41,951 --> 00:04:47,212
+And this week, we are going to talk about IP.
+
+29
+00:04:49,272 --> 00:04:53,432
+We have started to discuss datagram format and eyedressing.
+
+30
+00:04:53,432 --> 00:04:56,072
+And we are going to continue this week.
+
+31
+00:04:56,312 --> 00:04:59,232
+Network address translation and...
+
+32
+00:04:59,232 --> 00:05:21,732
+IPv6, and we are going to continue the forwarding mechanism, the conventional forwarding, and generalized forwarding in STM. In generalized forwarding is the user member forwarding mechanism is basically works on layer 3, network layer, but in generalized forwarding we can...
+
+33
+00:05:22,004 --> 00:05:50,004
+Ayrıca, aylık, ayl
+
+34
+00:05:50,004 --> 00:05:54,684
+OpenFlow, the match and action, action in action.
+
+35
+00:05:55,184 --> 00:05:58,984
+And the last part, we are going to talk about the middle boxes.
+
+36
+00:05:59,184 --> 00:06:04,364
+Middle boxes include firewalls, load balancer, and so on and so forth.
+
+37
+00:06:04,764 --> 00:06:05,604
+So let's continue.
+
+38
+00:06:06,364 --> 00:06:09,324
+Let's start to discuss this week's subjects.
+
+39
+00:06:09,324 --> 00:06:15,343
+First, as you remember, IP version 4 is 32-bit.
+
+40
+00:06:15,728 --> 00:06:39,372
+ve nisinin adresi
+
+41
+00:06:39,379 --> 00:06:46,379
+So, how we can enlarge the use of IPv4 today?
+
+42
+00:06:46,379 --> 00:07:01,379
+And remember, all devices in local area network share just one IPv4 addresses as far as outside world is connected in NAT, network address translation.
+
+43
+00:07:07,987 --> 00:07:35,019
+IP portions, IP version 4 portions, such as 10.0.024, that is A-class IPs, or some other dedicated I am going to discuss. As you can see, we can use some certain local IP addresses, and
+
+44
+00:07:36,723 --> 00:07:57,723
+Programms with source or destination in this network have 10.0.0.24 addresses for source and destination as usual. And on both sides, we can use one IP.
+
+45
+00:07:58,387 --> 00:08:04,007
+for entire devices in the local area network.
+
+46
+00:08:04,408 --> 00:08:06,687
+So what can be done?
+
+47
+00:08:06,687 --> 00:08:11,107
+All datagrams leaving local area network
+
+48
+00:08:11,107 --> 00:08:13,847
+have same source address,
+
+49
+00:08:13,967 --> 00:08:18,467
+that is 138.76.29.7.
+
+50
+00:08:20,887 --> 00:08:21,967
+Both.
+
+51
+00:08:23,387 --> 00:08:27,867
+VLAN İlendirme protokollerini işleyeceğiz. Arkadaşlar, OSI ve
+
+52
+00:08:22,351 --> 00:08:24,351
+Diferent ports.
+
+53
+00:08:24,351 --> 00:08:36,351
+So in this router, all devices in local area have 32-bit IP addresses in a private address space.
+
+54
+00:08:36,351 --> 00:08:46,351
+So in IPv4, some block of IPs are reserved for private purposes.
+
+55
+00:08:48,307 --> 00:09:14,307
+10-8, which is the A-class IP block. So 2-24 number of devices can be used with this. And also, 172.16-12, which means 2-12.
+
+56
+00:09:14,644 --> 00:09:18,163
+A private adres can be used for this block.
+
+57
+00:09:18,163 --> 00:09:26,083
+And moreover, the B class 192.168.16.
+
+58
+00:09:26,083 --> 00:09:33,163
+So this is 2 power 16 number of devices can be used for this private block.
+
+59
+00:09:33,163 --> 00:09:39,883
+So these block of IPs are used for private purposes only.
+
+60
+00:09:40,947 --> 00:09:44,447
+This cannot be used in the network.
+
+61
+00:09:44,447 --> 00:09:45,447
+Okay?
+
+62
+00:09:45,447 --> 00:09:50,447
+So this is used only in local area network.
+
+63
+00:09:50,447 --> 00:09:51,447
+All right?
+
+64
+00:09:51,447 --> 00:09:55,947
+So advantages of using that, let's have a look.
+
+65
+00:09:55,947 --> 00:10:01,247
+There are three basic and three fundamental advantages.
+
+66
+00:10:01,247 --> 00:10:07,447
+First, just one IP address is needed from...
+
+67
+00:10:08,179 --> 00:10:33,579
+ISP provider for all devices in the local area. Okay? So let's say in your home, if you pay money, the price, you can get one static IP and you can use that static IP for your all local purposes. And...
+
+68
+00:10:34,611 --> 00:11:01,611
+In using that, you can change addresses of host in local area without notifying the outside world. This is another advantage of using that. And you can change, also, you can change ISP without changing your local IP block.
+
+69
+00:11:02,227 --> 00:11:09,227
+ve
+
+70
+00:11:29,011 --> 00:11:32,331
+ve networxed adres translation can be used.
+
+71
+00:11:32,331 --> 00:11:35,331
+So let's have a look at how it works.
+
+72
+00:11:35,331 --> 00:11:42,371
+In networxed adres translation, we must have NAT-capable router.
+
+73
+00:11:42,371 --> 00:11:47,571
+So the router and NAT works transparently.
+
+74
+00:11:47,571 --> 00:11:54,811
+In outgoing datagram, that router, NAT router, replace
+
+75
+00:11:55,443 --> 00:12:14,203
+SOURCE IP adres, and SOURCE port of every outgoing datagram to NAT IP adres, that is the given IP adres by ISP, the outside RP adres, and NIV port.
+
+76
+00:12:14,203 --> 00:12:16,203
+So...
+
+77
+00:12:16,596 --> 00:12:44,299
+Remote clients and servers will respond using this NAT address and NEV port as destination address. Okay? Because this source IP address and port, local IP address and local port is replaced by transparently working router to NEV NAT address plus NEV port. And
+
+78
+00:12:44,851 --> 00:12:53,851
+That router must remember this exchange in NAT translation table.
+
+79
+00:12:53,851 --> 00:13:06,851
+So every source IP address and source port to NAT IP address and NIR port must be replaced, must be kept in translation table.
+
+80
+00:13:06,851 --> 00:13:11,851
+This is another requirement. And the last one, incoming datagram.
+
+81
+00:13:12,500 --> 00:13:38,500
+While the destination is replying to our source, NAT IP address and new port is used as destination field, in the destination field, and replaced by our NAT router to original local IP address and local port. Okay, let's have a look. Suppose...
+
+82
+00:13:40,500 --> 00:14:08,331
+Our advice here on the right top, let's say host wants to send a request to web server whose IP address is 128.1194186. Okay? In here, source address, let's say 10.001.
+
+83
+00:14:08,403 --> 00:14:32,004
+The local port number is 3345. And destination, as usual, 128, 119, 40, 186. And the port number, destination port number is 80. So router, it is replaced.
+
+84
+00:14:34,292 --> 00:14:53,491
+by NAT IP address and NIV port. But as you can see, source, destination IP address and destination port never changed. Okay? And this time, source is now our...
+
+85
+00:14:53,812 --> 00:15:12,852
+outside IP, which is 138.76.29.7, and new available port is given to that source. Okay? While replying, the web server send the...
+
+86
+00:15:13,235 --> 00:15:30,475
+Message. So in this case, source is the IP of our web server and the port 80. Destination is our NAT IP address and NIV port. Once this message...
+
+87
+00:15:30,899 --> 00:15:34,500
+This datagram comes to our NAT router.
+
+88
+00:15:34,500 --> 00:15:41,699
+It is replaced using our NAT translation table to original local one.
+
+89
+00:15:41,699 --> 00:15:53,099
+As you can see, destination is changed to our local RP address in the list 10.0.0.1 port is 3345.
+
+90
+00:15:53,099 --> 00:15:55,699
+Okay, it is very simple.
+
+91
+00:15:55,699 --> 00:15:58,899
+And as you can see, you can increase
+
+92
+00:15:58,899 --> 00:16:02,599
+The number of local area device.
+
+93
+00:16:03,899 --> 00:16:08,500
+And still you can use one IP address.
+
+94
+00:16:10,399 --> 00:16:12,599
+All right, let's continue.
+
+95
+00:16:13,899 --> 00:16:17,299
+Net has been controversial. Why?
+
+96
+00:16:17,699 --> 00:16:23,699
+Because routers should only process up to layer 3.
+
+97
+00:16:25,299 --> 00:16:31,799
+ve NAT translation, as you can see, port is layer 4.
+
+98
+00:16:31,799 --> 00:16:38,399
+NAT, so NAT is not basically working on network layer.
+
+99
+00:16:38,399 --> 00:16:42,000
+It is also working on transport layer 2,
+
+100
+00:16:42,000 --> 00:16:47,299
+because port is changing the IP address plus NEV port.
+
+101
+00:16:47,299 --> 00:16:52,799
+So it is changing the header, transport layer header also.
+
+102
+00:16:53,011 --> 00:17:09,211
+And as you remember why we introduced IPv6, because there's a shortage of IP address, but not enlarge the usage of IPv4.
+
+103
+00:17:09,211 --> 00:17:17,811
+So it prevents translating to IPv6. Just a second.
+
+104
+00:17:38,675 --> 00:17:46,295
+Bu net also violates end-to-end argument.
+
+105
+00:17:46,295 --> 00:17:54,615
+As you remember, in IP, every device in the network can be accessible to every device to another network.
+
+106
+00:17:54,795 --> 00:18:05,495
+But net, some devices using local IP address and cannot directly be accessible.
+
+107
+00:18:06,355 --> 00:18:30,236
+And the last controversial is, if your server is behind, if your server use local IP address, how, if the client wants to connect.
+
+108
+00:18:30,483 --> 00:18:52,483
+A server behind NAT. So server has local IP address and it might use the IP address 80. So what you are going to do? Because if you have more than one web service behind NAT, so...
+
+109
+00:18:52,915 --> 00:19:19,531
+standard web port is 40, 80 sorry, then only one can be used. One can use this 80. This is another traversal. Alright? Okay. And that is still here, especially in the 5G.
+
+110
+00:19:20,403 --> 00:19:44,004
+5G, 4G network, because there are many number of devices in the cellular network, and because of some certain security reasons, and cell operators keep using IPv4 and use NAT.
+
+111
+00:19:45,683 --> 00:19:47,683
+So, let's have a look.
+
+112
+00:19:47,683 --> 00:19:53,683
+This time, our IPv6 automation.
+
+113
+00:19:53,683 --> 00:19:56,683
+Why it's not working?
+
+114
+00:20:00,084 --> 00:20:18,443
+OK, what was the motivation? First, initial motivation was IPv4 is 32-bit, so it has limited amount of address space and all are
+
+115
+00:20:18,483 --> 00:20:20,063
+Completely occupied.
+
+116
+00:20:20,703 --> 00:20:22,864
+So we need more addresses.
+
+117
+00:20:23,503 --> 00:20:28,563
+Because there are many billions of devices entering to network.
+
+118
+00:20:29,203 --> 00:20:31,463
+So we need more IP address.
+
+119
+00:20:32,163 --> 00:20:35,243
+And additional motivation, speed.
+
+120
+00:20:35,783 --> 00:20:39,583
+Speed for processing and forwarding.
+
+121
+00:20:39,783 --> 00:20:40,183
+Why?
+
+122
+00:20:40,183 --> 00:20:41,183
+Because.
+
+123
+00:20:44,692 --> 00:21:11,692
+network header is 40 byte. That's a fixed length header. So there's no optional headers and so on and so forth. So there is no header length because it is fixed. So we can make some optimization to process fixed byte length header. So...
+
+124
+00:21:11,839 --> 00:21:13,839
+IPv6.0
+
+125
+00:21:13,839 --> 00:21:15,559
+Procesi Power
+
+126
+00:21:15,559 --> 00:21:16,399
+Increased.
+
+127
+00:21:16,679 --> 00:21:19,559
+And it also
+
+128
+00:21:19,559 --> 00:21:21,159
+Enable different
+
+129
+00:21:21,159 --> 00:21:23,439
+Network Layer Treatments
+
+130
+00:21:23,439 --> 00:21:25,279
+Of Flow. As I said
+
+131
+00:21:25,279 --> 00:21:26,819
+You can add
+
+132
+00:21:26,819 --> 00:21:29,159
+Some
+
+133
+00:21:29,159 --> 00:21:31,339
+Field
+
+134
+00:21:31,339 --> 00:21:33,379
+In different layers
+
+135
+00:21:33,379 --> 00:21:35,740
+In your forwarding
+
+136
+00:21:35,740 --> 00:21:37,339
+Action. This is
+
+137
+00:21:37,339 --> 00:21:38,599
+Additional Motivation.
+
+138
+00:21:39,443 --> 00:21:43,043
+Let's have a look at our datagram format.
+
+139
+00:21:45,043 --> 00:21:52,443
+What we have, as you remember, in IPv6, the address space is 128b.
+
+140
+00:21:55,988 --> 00:21:57,988
+So, it is given here.
+
+141
+00:21:59,988 --> 00:22:16,971
+The control, as you remember in our previous slide, we have some additional motivation. We can add some capabilities, flow capabilities. So we have flow label. It identifies the datagram.
+
+142
+00:22:17,395 --> 00:22:44,996
+So, it can give some priorities, you can drop, so in your forwarding, it can work as a firewall, road balancer, so on and so forth. So, you can label your datagram. What you have? You have priority. So, identify priority among datagrams in flow. What you have?
+
+143
+00:22:46,708 --> 00:23:06,468
+Payload length is certain, similar, next header and hop limit is also there in IPv4. So what are missing? No checksum. So, to speed processing at router, because we do not need to check.
+
+144
+00:23:07,347 --> 00:23:33,003
+Bu hücudur, hücudur, hücudur, hücudur, hücudur, hücudur, hücudur, hücudur, hücudur, hücudur, hücudur, hücudur, hücudur, hücudur, hücudur, hücudur, hücudur, hücudur, hücudur, hücudur, hücudur, hücudur, hücudur, hücudur, hücudur, hücudur, hücudur, hücudur, hücudur, hücudur, hücudur, hücudur, hücudur, hücudur, hücudur, hücudur, hücudur,
+
+145
+00:23:33,332 --> 00:23:44,332
+But now, there is no such values in the IPv6 datagram format.
+
+146
+00:23:44,332 --> 00:24:00,332
+So, originally, transition from IPv6 to IPv6 is set so many years ago, more than 10 years ago, and it is thought that they
+
+147
+00:24:01,011 --> 00:24:10,511
+had to transfer their system from IPv4 to IPv6.
+
+148
+00:24:10,511 --> 00:24:17,511
+But now, not all routers can be upgraded simultaneously.
+
+149
+00:24:19,028 --> 00:24:29,788
+Now, still some networks operate on IPv4, some networks operate on IPv6, so there is no pure IPv6 network.
+
+150
+00:24:29,788 --> 00:24:45,028
+Because there is no flag day, there was no certain day that you switch off all IPv4 devices and turn on to...
+
+151
+00:24:45,556 --> 00:25:05,836
+IPv6. And so still by IPv6 and IPv4 coaxes. So how will operate in the mixed network? Okay, let's have a look. The solution is tunneling.
+
+152
+00:25:07,155 --> 00:25:11,915
+As you remember in 4G, 5G network, NAT is used.
+
+153
+00:25:11,915 --> 00:25:15,715
+So that is IPv4 network.
+
+154
+00:25:15,715 --> 00:25:30,595
+And IPv6 datagram in this network can be carried in IPv4 datagram as payload.
+
+155
+00:25:30,595 --> 00:25:33,155
+So that is tunneling.
+
+156
+00:25:33,311 --> 00:25:39,911
+Extensively used in cellular network. It's very easy, as you can see.
+
+157
+00:25:42,511 --> 00:25:58,411
+This one is IPv4 datagram. And IPv6 datagram is carried as payload of IPv4. As you can see here, it has
+
+158
+00:25:59,220 --> 00:26:08,339
+IPv4 header fields, IPv4 addresses, source address, destination address, version numbers, so on and so forth.
+
+159
+00:26:08,339 --> 00:26:13,460
+And the natagram of IPv6 carried as payload.
+
+160
+00:26:15,299 --> 00:26:24,660
+Inside payload, there are IPv6 headers and IPv6 payloads also.
+
+161
+00:26:25,332 --> 00:26:48,332
+So, let's have a look how it works. As you can see here, we have four routers. B and E is mixture. And as you can see, A, B, E, and F is...
+
+162
+00:26:52,307 --> 00:27:07,548
+ANF is pure IPv6, and BNE is a mixture because the network, the red tunnel, is created in the IPv4 network.
+
+163
+00:27:07,548 --> 00:27:16,307
+So the packets, datagrams, carry it through channel, the payload of IPv4.
+
+164
+00:27:16,307 --> 00:27:17,307
+Okay?
+
+165
+00:27:18,516 --> 00:27:21,875
+The initial datagram of payload of link frame.
+
+166
+00:27:23,556 --> 00:27:33,556
+As you can see here, we highlighted the red tunnel, that is IPv4 network.
+
+167
+00:27:34,316 --> 00:27:40,756
+And as you can see, PNE is a bridge, some sort of bridge routers.
+
+168
+00:27:41,415 --> 00:27:45,196
+It is connected to IPv4 network and
+
+169
+00:27:45,940 --> 00:28:09,940
+connected to IPv6 network and transfer the packet of a coming from router A that is pure IPv6 network sent to the pure F to IPv6 network. Okay. That is IPv4.Tenel as I said. Okay.
+
+170
+00:28:13,748 --> 00:28:40,940
+So, in logical view, AB, ENF. In physical view, as you can see, we have CND as IPv4 routers to create our IPv4 network. All right. Suppose our
+
+171
+00:28:41,523 --> 00:28:54,283
+A send a packet to B, but the source address is A, destination address is router F.
+
+172
+00:28:54,283 --> 00:29:06,723
+Okay? The network F. A network to network F. Our flow is X, labeled X, and we have data. That is pure IPv6.
+
+173
+00:29:07,859 --> 00:29:34,571
+net, datagram sent to router B. In router B, it encapsulates and in this time, source is changed to A to B, destination changed to next compatible router, that is E, and our IPv6 datagram.
+
+174
+00:29:34,996 --> 00:29:50,756
+VLAN İzmir, IPv4, VLAN İzmir, IPv4, VLAN İzmir, IPv4 network, again, source P2E.
+
+175
+00:30:00,000 --> 00:30:06,500
+This IPv4 datagram from IPv6.
+
+176
+00:30:06,500 --> 00:30:14,500
+And now, original IPv6 is delivered to router network F.
+
+177
+00:30:14,500 --> 00:30:21,500
+Source is A, this time as you can see, destination is F and data.
+
+178
+00:30:21,500 --> 00:30:26,500
+And as you can see how it works and how
+
+179
+00:30:26,607 --> 00:30:49,107
+VLAN 4, 6 datagram, can be sent through IPv4 network. As you can see here, source and destination address A to F, but in IPv4 network, source and destination address is changed.
+
+180
+00:30:49,236 --> 00:30:51,736
+to bridge routers.
+
+181
+00:30:51,736 --> 00:30:56,135
+That is the bridge between version 4 to version 6.
+
+182
+00:30:56,135 --> 00:30:57,135
+Right?
+
+183
+00:30:59,236 --> 00:31:04,135
+In, let's have a look, the IPv6 adaptation.
+
+184
+00:31:06,736 --> 00:31:11,635
+According to Google, around 30% of clients
+
+185
+00:31:12,403 --> 00:31:40,003
+Akses services via IPv6. As you can see, it is still one-third. The remaining 60 still in IPv4. And according to NIST report, one over three, one-third of the US government domains are IPv6 capable. And still two-thirds of the device.
+
+186
+00:31:40,243 --> 00:31:44,243
+are in network, IPv4 network.
+
+187
+00:31:44,243 --> 00:31:48,243
+So, there are very long way to go.
+
+188
+00:31:49,243 --> 00:31:55,243
+This is the graph. You can have a look at the adaptation.
+
+189
+00:31:55,243 --> 00:31:59,243
+Okay? It is going very slow.
+
+190
+00:32:00,243 --> 00:32:06,243
+Long time for development and use. 25 years and continuing.
+
+191
+00:32:07,188 --> 00:32:33,988
+Think of application learning change in last 25 years, as you remember. Most of you are under 25. So you already know World Wide Web, social media, streaming media, gaming, teleconferencing, and video streaming. So IPv4...
+
+192
+00:32:34,451 --> 00:32:40,831
+...is not designed to give a service to that application.
+
+193
+00:32:41,051 --> 00:32:43,551
+So how it can be done?
+
+194
+00:32:44,271 --> 00:32:45,612
+It is simple.
+
+195
+00:32:45,872 --> 00:32:47,311
+As we have explained,
+
+196
+00:32:48,991 --> 00:32:50,612
+in transport layer application,
+
+197
+00:32:50,791 --> 00:32:53,811
+reliable and so on can be implemented there.
+
+198
+00:32:53,811 --> 00:33:00,392
+And moreover, we can create our protocol.
+
+199
+00:33:01,172 --> 00:33:24,932
+It works on application layer and we can use reliability, dot balancing, so on so forth, using IPv4 by developing the new protocols in application layer. Okay, let's continue to forwarding now.
+
+200
+00:33:25,044 --> 00:33:29,844
+And forwarding in conventional network, co-forwarding in SDN.
+
+201
+00:33:31,044 --> 00:33:37,443
+As you remember, in generalized forwarding, match plus action,
+
+202
+00:33:37,443 --> 00:33:51,019
+each router checks the header value and divert incoming datagram according the header to the 11th output.
+
+203
+00:33:51,124 --> 00:34:17,524
+OK? Using forwarding table. OK? As you remember, each router contains forwarding table and maximum match mechanism. Check the header value with the value in the forwarding table and convert.
+
+204
+00:34:19,635 --> 00:34:30,235
+That is basically destination-based forwarding. Check the header well destination address and forward the packet.
+
+205
+00:34:30,235 --> 00:34:39,435
+But in generalized forwarding, we can add many header fields.
+
+206
+00:34:39,827 --> 00:35:01,427
+in forwarding table. So many header field in network layer, link layer, and transport layer values. And many action is possible. In destination-based forwarding, you check and you forward to related.
+
+207
+00:35:29,204 --> 00:35:55,116
+Ve
+
+208
+00:35:34,164 --> 00:35:55,116
+In this time, let's have a look at the flow table. In our flow table, flow defines header value. What type of value this time? The value in the link layer, network layer, and transport layer areas. Okay? Not only in network layer.
+
+209
+00:35:56,307 --> 00:36:03,288
+Ve
+
+210
+00:35:56,083 --> 00:36:03,284
+And in generalized forwarding, simple packet handling rules we can define.
+
+211
+00:36:04,284 --> 00:36:14,083
+Match pattern values in the packet header according to the header values in different layers.
+
+212
+00:36:15,411 --> 00:36:25,411
+We can do certain actions such as drop packet, forward packet, modify packet, or copy or lock, whatever.
+
+213
+00:36:25,411 --> 00:36:41,411
+And we can also give some priority and we can put some counters too, to counter packets, even bytes or number of packets.
+
+214
+00:36:43,123 --> 00:36:44,123
+OK?
+
+215
+00:36:46,123 --> 00:37:00,123
+It's a simple example. Sources, any source, any datagram coming from any device inside, destination is.
+
+216
+00:37:02,123 --> 00:37:04,747
+So, we check the packet.
+
+217
+00:37:05,012 --> 00:37:30,491
+SOURCE ADRES can be any, wild chart. Destination is certain, starting from 3.5. Sorry, 3.4. And the remaining 16-bit can vary forward to 2. And some certain group of inner host.
+
+218
+00:37:31,092 --> 00:37:33,952
+Destination to any, all packets can be dropped.
+
+219
+00:37:34,872 --> 00:37:41,952
+And some certain source to any destination can be sent to the controller.
+
+220
+00:37:42,552 --> 00:37:50,792
+So as you can see, we can add, we can increase the possibility, action possibilities.
+
+221
+00:37:52,172 --> 00:37:53,711
+Let's have a look at our action.
+
+222
+00:37:53,711 --> 00:37:57,472
+We can add many header fields.
+
+223
+00:37:58,963 --> 00:38:22,963
+network layer, such as source IP, source address, destination address, source protocol, destination protocol. We can also transport layer, such as TCP, UDP port or protocol. We can also link layer, Ethernet, wireless, virtual LAN, whatever. Okay?
+
+224
+00:38:24,371 --> 00:38:49,771
+As action, we can forward the packet, we can drop the packet, we can modify header fields in the related layer, we can also encapsulate and forward to the controller. This is how OpenFlow works. And we can also add some sort of counter on it.
+
+225
+00:38:51,059 --> 00:38:53,860
+Let's discuss these examples.
+
+226
+00:39:00,659 --> 00:39:07,059
+That is basically similar to other network layer, destination-based forwarding.
+
+227
+00:39:07,059 --> 00:39:18,500
+So certain all IP adres, source IPs to certain destination adres can be sent to the port 6.
+
+228
+00:39:18,500 --> 00:39:19,500
+Okay?
+
+229
+00:39:21,659 --> 00:39:25,099
+OpenFlow can also operate as firewall.
+
+230
+00:39:26,900 --> 00:39:27,900
+Certain...
+
+231
+00:39:28,532 --> 00:39:51,932
+TCP port number 22 can be dropped. So block all datagrams destined to TCP port 22, that is the SSH port, is dropped. One more example. We can block all packets coming from...
+
+232
+00:39:53,012 --> 00:40:01,772
+128.119.11. That is another firewall action.
+
+233
+00:40:04,772 --> 00:40:15,212
+We can also, it can also operate as layer 2 destination based forwarding. So in, as you can see, destination MAC address
+
+234
+00:40:16,812 --> 00:40:20,452
+can be directed to the certain port.
+
+235
+00:40:21,139 --> 00:40:29,539
+So in this is hexadecimal MAC address of the next adjacent device.
+
+236
+00:40:31,340 --> 00:40:42,139
+In match and action abstraction, so this match and action abstraction unifies different kind of devices.
+
+237
+00:40:42,739 --> 00:40:45,739
+So our device can operate.
+
+238
+00:40:47,059 --> 00:40:55,059
+as router. So it matches longest destination IP prefix. Action is basically forward to the output link.
+
+239
+00:40:55,059 --> 00:41:12,059
+So OpenFlow can operate as if original traditional router. It can also operate as switch, layer to switch, match destination MAC address and forward to flood is action.
+
+240
+00:41:12,512 --> 00:41:38,192
+OpenFlow can operate as switch to. Operate as firewall, match IP address and UDP or TCP port number, action, permit or deny. Or net, match IP address and port, action, override address and the port, as you remember.
+
+241
+00:41:39,635 --> 00:41:42,436
+Let's have a look at the example here.
+
+242
+00:41:45,715 --> 00:42:12,115
+We have OpenFlow Controller. We have three switches, switch1, switch2, and switch3. And we have six number of hosts, from host1 to host6. And as you can see, these are the IP addresses. Okay. And this OpenFlow Orquest says table.
+
+243
+00:42:12,596 --> 00:42:24,096
+Bu, H3, H4
+
+244
+00:42:24,096 --> 00:42:25,815
+via S1
+
+245
+00:42:25,815 --> 00:42:27,396
+then S2
+
+246
+00:42:27,396 --> 00:42:28,115
+okay
+
+247
+00:42:28,115 --> 00:42:32,476
+we can divert
+
+248
+00:42:32,476 --> 00:42:34,376
+traffic
+
+249
+00:42:34,376 --> 00:42:36,416
+and we can lead the traffic
+
+250
+00:42:36,416 --> 00:42:38,715
+to the certain lengths
+
+251
+00:42:40,436 --> 00:42:50,436
+As you can see here in the action, source address and destination block forward to output port 3.
+
+252
+00:42:50,436 --> 00:42:56,204
+In here, as you can see, in ingress port 1,
+
+253
+00:42:56,403 --> 00:43:20,843
+So any packet coming from one, source address is 10.3 slash 16, destination address is 10.2 slash 16, forward to where, forward to port four. Okay. And here in action, ingress port two, any packets coming from two.
+
+254
+00:43:21,076 --> 00:43:40,436
+Destination is 10.2.03, forward to where, forward to host three, link three, and the other one is link four. As you can see, we can specify each action.
+
+255
+00:43:50,739 --> 00:43:58,339
+Let's define middle boxes according to RFC 3331 document.
+
+256
+00:44:00,839 --> 00:44:08,639
+Middle boxes are any intermediary box performing functions.
+
+257
+00:44:08,916 --> 00:44:32,916
+Apart from normal, standard functions of an IP router on the data path between source and destination. So we are looking for some device, network device, apart from standard router. Okay? What are they? There are many such devices.
+
+258
+00:44:33,427 --> 00:44:56,228
+We use NAT at home in the solar network. So NAT router is a module box. We have firewalls, IDS, APS device. It cooperates industrial enterprise service providers and ISPs.
+
+259
+00:44:56,916 --> 00:44:59,416
+We have load balancers.
+
+260
+00:44:59,416 --> 00:45:05,416
+It operates service providers, data senders, mobile networks.
+
+261
+00:45:05,416 --> 00:45:14,016
+And we have application-specific services, such as CDNs, Contents Distribution Network.
+
+262
+00:45:14,016 --> 00:45:22,316
+We watch Firewall, sorry, YouTube, Netflix, Disney+, Blue TV.
+
+263
+00:45:22,316 --> 00:45:23,615
+There are many.
+
+264
+00:45:23,827 --> 00:45:42,228
+streaming area. So, there are many type of little boxes. Moreover, caches, proxies, service providers in mobile or CTNs. So, these are little boxes. Little boxes everywhere.
+
+265
+00:45:45,748 --> 00:45:57,748
+At the beginning, middle boxes are proprietary devices. Proprietary closed hardware solutions.
+
+266
+00:45:58,748 --> 00:46:07,748
+Now, this proprietary closed hardware solution move to white boxes now.
+
+267
+00:46:08,820 --> 00:46:33,619
+So, my box hardware implementing open APIS. So, the hardware that is open, it provides some certain APIS. So, it moves, the Moodle boxes moves from closed area to open area now. So, it has also some programmable...
+
+268
+00:46:34,164 --> 00:46:45,564
+Local actions via match and action to program and move forward innovation and differentiation in software.
+
+269
+00:46:46,104 --> 00:47:00,784
+In SDN, logically, there are centralized control and configuration management that is open in public and private cloud.
+
+270
+00:47:02,835 --> 00:47:08,956
+In addition, another NFV, network functions virtualization.
+
+271
+00:47:08,956 --> 00:47:13,876
+It is programmable services over white boxes.
+
+272
+00:47:13,876 --> 00:47:20,835
+As we have defined white boxes, that is open hardware with IPs.
+
+273
+00:47:20,835 --> 00:47:25,516
+Networking, competition, and storage.
+
+274
+00:47:25,516 --> 00:47:28,635
+So now it is widely open.
+
+275
+00:47:28,916 --> 00:47:48,916
+As you can see, our hourglass. Up till now, what we have learned? We have learned many protocols in application layer, such as HTTP, SMT, RTP, QUIC, DASH. There are many there. Transport layer.
+
+276
+00:47:49,072 --> 00:47:59,471
+We have only TCP and UDP. As you remember, TCP gives reliable service. UDP gives unreliable but service.
+
+277
+00:47:59,471 --> 00:48:15,072
+But VLAN only IP. And underneath in the link layer, there are many link layer technologies such as Ethernet, PPP, PDCP, Wi-Fi, Bluetooth, ZigBee, so on so forth.
+
+278
+00:48:15,072 --> 00:48:19,072
+ve fizikolojilerin kubur, füber,
+
+279
+00:48:19,072 --> 00:48:20,072
+radio,
+
+280
+00:48:20,072 --> 00:48:22,072
+ve fizikolojilerin
+
+281
+00:48:22,072 --> 00:48:24,072
+ama
+
+282
+00:48:24,072 --> 00:48:25,072
+asla
+
+283
+00:48:25,072 --> 00:48:26,072
+IP
+
+284
+00:48:26,072 --> 00:48:32,072
+bu
+
+285
+00:48:32,072 --> 00:48:33,072
+bir
+
+286
+00:48:33,072 --> 00:48:34,072
+bu
+
+287
+00:48:34,072 --> 00:48:35,072
+ip
+
+288
+00:48:35,072 --> 00:48:40,072
+bu
+
+289
+00:48:40,380 --> 00:48:42,380
+ve
+
+290
+00:48:39,539 --> 00:48:54,779
+In every device, so anything connected to network, IP protocol must be implemented, but not HTTP to every device, not TCP, SMTP, but IP must be there.
+
+291
+00:48:56,219 --> 00:49:04,500
+So on top of it, many protocols in physical link, transport layer and application layer. But now...
+
+292
+00:49:05,396 --> 00:49:20,596
+Alta, we have IPv6, but using OpenFlow, STI and so forth, we have enlarged thin, this is thin, just here.
+
+293
+00:49:20,596 --> 00:49:29,096
+Now it's a little bit fat, it has some bellies. Net is there, combined, it joins.
+
+294
+00:49:30,135 --> 00:49:34,135
+bu
+
+295
+00:49:29,295 --> 00:49:56,331
+ve
+
+296
+00:49:56,820 --> 00:50:02,820
+So in architectural principles of internet, there is no architecture, as you said.
+
+297
+00:50:02,820 --> 00:50:10,820
+So according to RFC document 1958, let's check whether there is an...
+
+298
+00:50:11,731 --> 00:50:13,731
+internet ve internet olarak
+
+299
+00:50:13,731 --> 00:50:15,731
+değil.
+
+300
+00:50:15,731 --> 00:50:17,731
+İlk başta, internet
+
+301
+00:50:37,619 --> 00:50:48,819
+However, in every general terms, the community believes that, believes the internet that the goal is, the basic goal of internet is connectivity.
+
+302
+00:50:48,819 --> 00:50:56,779
+The tool is the internet protocol and the intelligence is end to end.
+
+303
+00:50:57,539 --> 00:50:59,699
+So network.
+
+304
+00:51:00,211 --> 00:51:03,452
+İntro, all the intelligence at the end.
+
+305
+00:51:03,572 --> 00:51:05,311
+So there is no intelligent network.
+
+306
+00:51:06,052 --> 00:51:06,192
+Okay?
+
+307
+00:51:07,811 --> 00:51:12,012
+So there are three cornerstones, believe.
+
+308
+00:51:12,231 --> 00:51:15,112
+First, the simple connectivity.
+
+309
+00:51:17,032 --> 00:51:18,632
+Second, the protocol.
+
+310
+00:51:18,632 --> 00:51:20,992
+In every device.
+
+311
+00:51:21,652 --> 00:51:27,672
+And last, intelligence and complexity is at the network edge.
+
+312
+00:51:29,139 --> 00:51:49,639
+Let's have a look at this argument. The add-to-end argument, some network functionality such as reliability, data transfer, congestion control can be implemented in network now or at the E-H. Now, as you can see,
+
+313
+00:51:49,664 --> 00:51:57,064
+VLAN İlginçler,
+
+314
+00:52:10,164 --> 00:52:19,564
+many devices in between because network layer must operate in every device in the network.
+
+315
+00:52:22,164 --> 00:52:26,963
+So this is the condition. So where is the intelligence?
+
+316
+00:52:28,764 --> 00:52:33,963
+Let's have a look at 20th century PSDN network, phone network.
+
+317
+00:52:34,867 --> 00:53:01,268
+All the intelligence was in the network because the telephone, our analog or standard telephone has no brain in it. Even dial sign is sent by the central, telephone, PST and central. Okay? Now, in...
+
+318
+00:53:01,652 --> 00:53:31,159
+2005
+
+319
+00:53:28,916 --> 00:53:32,916
+Çünkü, OpenFlow'ın,
+
+320
+00:53:32,916 --> 00:53:35,296
+ve diğer
+
+321
+00:53:35,296 --> 00:53:40,916
+ve bu konuda
+
+322
+00:53:40,916 --> 00:53:41,916
+daha çok
+
+323
+00:53:41,916 --> 00:53:43,916
+daha büyük
+
+324
+00:53:43,916 --> 00:53:52,236
+daha
+
+325
+00:53:52,340 --> 00:54:17,940
+At the beginning, the brain is the network. At the beginning of the network, the network has nothing, just connection. All capabilities were there. But now, anything in the network has brain capability of doing something.
+
+326
+00:54:18,260 --> 00:54:42,020
+OK, this is the end of the data plane. Let's start to continue to our fifth chapter. That is control plane. And by the way, I am going to continue because I have a meeting at half past...
+
+327
+00:54:43,027 --> 00:54:52,427
+10 o'clock. So I am going to continue 10 more minutes. Then I am going to leave. Okay? Let's start to our fifth chapter.
+
+328
+00:54:55,427 --> 00:55:03,827
+As you remember, we have divided our network layer subject into two parts, control plane and data plane.
+
+329
+00:55:03,827 --> 00:55:09,827
+And we have discussed data plane and let's start to control plane.
+
+330
+00:55:10,855 --> 00:55:14,855
+daha
+
+331
+00:55:10,675 --> 00:55:19,975
+Our goal in control plane basically, understand the principle behind the control plane.
+
+332
+00:55:21,235 --> 00:55:29,255
+And here, as you remember in data plane, we looked only what's going on inside a single router.
+
+333
+00:55:29,255 --> 00:55:37,255
+But now we are going to talk about routing algorithms, routing in traditional...
+
+334
+00:55:37,588 --> 00:55:47,588
+Routing in STN networks, and network management and network configuration.
+
+335
+00:55:47,588 --> 00:55:55,588
+We are going to also talk about the implementation on the internet.
+
+336
+00:55:56,563 --> 00:56:02,124
+ve nasıl implementarız,
+
+337
+00:56:02,124 --> 00:56:05,563
+ve nasıl konuştuklarla, OSPF,
+
+338
+00:56:05,563 --> 00:56:07,804
+or Boarding Gateway Protocol.
+
+339
+00:56:07,804 --> 00:56:09,884
+Ve nasıl konuştuklarla,
+
+340
+00:56:09,884 --> 00:56:13,764
+ve nasıl konuştuklarla, OpenFlow, ODL, OnOz, Kontrolles.
+
+341
+00:56:13,764 --> 00:56:16,364
+Ve nasıl konuştuklarla,
+
+342
+00:56:16,364 --> 00:56:17,923
+ve nasıl konuştuklarla,
+
+343
+00:56:17,923 --> 00:56:23,164
+ICMPs, SNMPs, YANG, ve Netcov.
+
+344
+00:56:24,563 --> 00:56:25,683
+Control Plane'in
+
+345
+00:56:27,864 --> 00:56:29,003
+Traditional routing
+
+346
+00:56:29,003 --> 00:56:30,483
+ve STN routing
+
+347
+00:56:30,483 --> 00:56:31,043
+Mechanism.
+
+348
+00:56:32,423 --> 00:56:33,203
+Kontrol
+
+349
+00:56:33,203 --> 00:56:34,583
+ve network
+
+350
+00:56:34,583 --> 00:56:35,344
+management
+
+351
+00:56:35,344 --> 00:56:35,884
+ve
+
+352
+00:56:35,884 --> 00:56:36,923
+how to
+
+353
+00:56:36,923 --> 00:56:37,323
+configure
+
+354
+00:56:37,323 --> 00:56:38,483
+network.
+
+355
+00:56:42,963 --> 00:56:43,403
+Ve sonra
+
+356
+00:56:43,403 --> 00:56:43,683
+başlayın.
+
+357
+00:56:51,987 --> 00:57:03,987
+As you remember, in the data plane, forwarding basically, move packet from one of the router's input port to the appropriate router output port.
+
+358
+00:57:03,987 --> 00:57:15,987
+But this is subject of control plane. But routing is basically determining the route taken by packet from source.
+
+359
+00:57:16,559 --> 00:57:27,599
+to destination so that's a global issue so in here we are going we have to design network we have to
+
+360
+00:57:27,599 --> 00:57:35,599
+think globally so there are two type of approaches in the control plane
+
+361
+00:57:35,599 --> 00:57:42,119
+that is the per router control that is traditional and
+
+362
+00:57:42,824 --> 00:57:45,824
+bu konuda,
+
+363
+00:57:42,771 --> 00:58:08,452
+A centralize control, that is recent one, that is the subject of software-defined network. As you remember, in per router control plane, individual router process routing algorithm. So, this routing algorithm works in each and every router.
+
+364
+00:58:10,036 --> 00:58:15,536
+So, each router has a local forwarding table.
+
+365
+00:58:15,536 --> 00:58:28,335
+According to this local forwarding table is created and updated using a routing algorithm operates on each router.
+
+366
+00:58:28,335 --> 00:58:35,036
+Okay? So, there's a messaging among routers.
+
+367
+00:58:35,315 --> 00:58:37,315
+ve sonra
+
+368
+00:58:37,315 --> 00:58:39,315
+mesajı aktif
+
+369
+00:58:39,315 --> 00:58:41,315
+local
+
+370
+00:58:41,315 --> 00:58:43,315
+forwarding table
+
+371
+00:58:43,315 --> 00:58:45,315
+ok
+
+372
+00:58:45,315 --> 00:58:47,315
+so
+
+373
+00:58:47,315 --> 00:58:49,315
+stm
+
+374
+00:58:49,315 --> 00:58:51,315
+remote controller
+
+375
+00:58:51,315 --> 00:58:52,076
+and
+
+376
+00:58:53,460 --> 00:59:00,960
+VLAN İlginçler,
+
+377
+00:59:20,019 --> 00:59:47,596
+link set and the second one is distance vector. Routing protocol goal is basically determine good path. So we have to decide first what is good. Sending from source host to destination host. So there are certain
+
+378
+00:59:48,052 --> 00:59:58,811
+Keywords, path. Path is basically seconds of routers, packets traversed from given initial source to final destination.
+
+379
+00:59:58,811 --> 01:00:10,811
+So we have to decide what is good. If good is the least cost, fastest road, or least congested road.
+
+380
+01:00:12,563 --> 01:00:18,563
+Routing is basically top 10 networking challenge.
+
+381
+01:00:20,563 --> 01:00:23,563
+Okay, let's leave here.
+
+382
+01:00:25,563 --> 01:00:32,563
+And we can continue from here next week and we can finish entire chapter next week.
+
+383
+01:00:33,563 --> 01:00:34,563
+Do you have a question, guys?
+
+384
+01:00:39,507 --> 01:00:41,507
+Sorunuz yok mu arkadaşlar?
+
+385
+01:00:46,739 --> 01:00:49,039
+Gelecek hafta görüşmek üzere.
+
+386
+01:00:51,859 --> 01:00:56,219
+Hepinize iyi cumalar diliyorum, iyi hafta sonları. Görüşmek üzere.

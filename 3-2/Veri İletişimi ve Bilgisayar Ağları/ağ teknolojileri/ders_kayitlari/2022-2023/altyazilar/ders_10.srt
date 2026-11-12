@@ -1,0 +1,2135 @@
+1
+00:00:17,940 --> 00:00:19,940
+Günaydın sevgili arkadaşlar.
+
+2
+00:00:22,940 --> 00:00:26,923
+Dersi Çelek Geçe başlatalım ki biraz daha arkadaşımız gelsin.
+
+3
+00:08:46,611 --> 00:08:51,011
+Günaydın arkadaşlar. Arkadaşınız mesaj yazmış.
+
+4
+00:08:51,011 --> 00:08:58,611
+Çen hafta sınav haftasıydı. Ondan önceki hafta bayram nedeniyle ders yapamamıştık.
+
+5
+00:08:58,611 --> 00:09:06,211
+Umarım hepinizin sınavı başarılı geçmiştir ki notlara bakıyorum bayağı da başarılı.
+
+6
+00:09:06,211 --> 00:09:12,611
+Sınav ortalaması 83-84 civarında. Sizler notlarınızı görebiliyor musunuz yoksa benim?
+
+7
+00:09:12,755 --> 00:09:15,836
+[öğrenci] etmem gerekiyor mu arkadaşlar?
+
+8
+00:09:15,836 --> 00:09:18,076
+Biz göremiyoruz.
+
+9
+00:09:18,076 --> 00:09:22,635
+Sesiniz alamadı, bir dakika ses bir açayım.
+
+10
+00:09:22,635 --> 00:09:25,635
+Açık ses gözüküyor.
+
+11
+00:09:25,635 --> 00:09:27,515
+Şu an geliyor mu hocam?
+
+12
+00:09:27,515 --> 00:09:30,635
+Geliyor, geliyor.
+
+13
+00:09:30,635 --> 00:09:34,411
+Biz göremiyoruz hocam sizin açıklamanızı.
+
+14
+00:09:34,419 --> 00:09:44,419
+Bir bölümle konuşayım. Olmadı OBSS sistemine girerim. Mazeret netiniyle sınava giremeyen arkadaşınız oldu mu? Çünkü onlarla alakalı mazeret yapmak gerekecek belki.
+
+15
+00:09:47,419 --> 00:09:56,419
+Çünkü yanlış görmediysem bir yirmiye yakın arkadaşınız sınava girmemişti. Neyse onu bölümden öğrenmiş oluruz.
+
+16
+00:10:00,000 --> 00:10:25,399
+Telefamı attım arkadaşlar. Biliyorsunuz true false şeklindeydi. Biraz kolaylık olsun en azından hatırlarsınız diye düşünerek. True'lar zaten belli cümleler. False'larda ise parantez içerisinde doğru kelime mevcut. Dolayısıyla oradan nerede yanlış yaptığınızı öğrenebilirsiniz. Şu anda web sitemde.
+
+17
+00:10:26,004 --> 00:10:31,403
+var diye düşünüyorum. Bir de kontrol edeyim çünkü koydum ama. Acaba aktardım mı?
+
+18
+00:10:34,403 --> 00:10:38,403
+Evet, Miktar Mouser Key orada var. Oradan bakabilirsiniz.
+
+19
+00:10:39,203 --> 00:10:45,203
+Evet, bu haftaki dersimizde ekranımızı paylaşarak başlayalım.
+
+20
+00:11:17,620 --> 00:11:19,620
+Good morning again everybody.
+
+21
+00:11:23,443 --> 00:11:28,463
+As you already know, this is our, I think,
+
+22
+00:11:29,203 --> 00:11:40,563
+10th week, but apparently one week is done because of the holiday and one week is done because of the midterm exam.
+
+23
+00:11:40,563 --> 00:11:49,843
+So although this is 10th week, we are going to continue our ninth, 10th, eighth and ninth week presentation.
+
+24
+00:11:49,843 --> 00:11:54,644
+As you remember, we have divided our lecture.
+
+25
+00:11:54,836 --> 00:12:02,635
+According to TCP layers, we have discussed application layer and transport layer.
+
+26
+00:12:04,316 --> 00:12:09,716
+And this time we are going to talk about network layer.
+
+27
+00:12:10,135 --> 00:12:15,375
+Network layer is basically the core of the network.
+
+28
+00:12:15,375 --> 00:12:19,956
+As you remember, internet is a network of networks.
+
+29
+00:12:21,888 --> 00:12:24,888
+A network layer is the center.
+
+30
+00:12:24,888 --> 00:12:29,888
+And each device must operate on network layer.
+
+31
+00:12:29,888 --> 00:12:31,888
+And this is done on the...
+
+32
+00:12:32,336 --> 00:12:49,936
+routers and the core devices. Since this is a big subject, it contains many detail, it is divided into two parts according to its methodology. So first…
+
+33
+00:13:16,755 --> 00:13:25,255
+Bersiples behind network layer services focusing on the plane, the data plane.
+
+34
+00:13:25,475 --> 00:13:25,615
+Okay.
+
+35
+00:13:26,076 --> 00:13:29,995
+So we are going to discuss network layer servers with us.
+
+36
+00:13:30,548 --> 00:13:40,147
+We are going to understand what is different between the forwarding and routing.
+
+37
+00:13:40,147 --> 00:13:50,347
+And we are going to talk about how a router works and how we can find the destination.
+
+38
+00:13:50,347 --> 00:13:57,147
+So our testing mechanism in network layer, we are going to also discuss and generalize for gridding.
+
+39
+00:13:58,131 --> 00:14:01,692
+Bu, akhirde, bu konuda başlayacak birçok konusunda
+
+40
+00:14:01,692 --> 00:14:04,891
+bu konuda internet arketiçer.
+
+41
+00:14:05,651 --> 00:14:06,251
+Bu,
+
+42
+00:14:09,771 --> 00:14:12,571
+İmplementation ve internetin
+
+43
+00:14:12,571 --> 00:14:14,692
+isimli birçok konusunda
+
+44
+00:14:15,051 --> 00:14:16,771
+ve net,
+
+45
+00:14:16,771 --> 00:14:18,771
+net, adres, transiyon,
+
+46
+00:14:18,771 --> 00:14:20,771
+ve middleboxdaki.
+
+47
+00:14:21,211 --> 00:14:22,091
+Bu,
+
+48
+00:14:22,676 --> 00:14:31,076
+As I said at the beginning, network is a fundamental subject in the networking technologies.
+
+49
+00:14:31,076 --> 00:14:40,196
+We are going to talk about network as a two part in data plane and control plane.
+
+50
+00:14:40,196 --> 00:14:42,196
+Okay?
+
+51
+00:14:42,196 --> 00:14:44,096
+So...
+
+52
+00:14:44,096 --> 00:14:49,096
+Let's start from the beginning to discuss network layer services.
+
+53
+00:14:49,096 --> 00:14:53,096
+You remember our figure on the right hand side.
+
+54
+00:14:53,096 --> 00:15:00,096
+There are many end devices such as mobile phones, laptops, automobiles.
+
+55
+00:15:00,096 --> 00:15:10,096
+Some are connected via cellular networks, some are connected via access points, some are connected by...
+
+56
+00:15:38,067 --> 00:15:50,028
+The laptop in our house try to contact a web server on one of the enterprise network, okay?
+
+57
+00:15:50,187 --> 00:15:50,668
+The server.
+
+58
+00:15:50,668 --> 00:15:54,367
+So a network segment from sending.
+
+59
+00:15:54,868 --> 00:15:57,948
+location to receiving host.
+
+60
+00:15:57,948 --> 00:16:21,868
+So what basically sender does, sender encapsulates the message, the segments into datagrams in the transport layer and go down to the network layer, go down to the link layer.
+
+61
+00:16:22,004 --> 00:16:31,304
+OK. And the receiver side, receiver delivers segments to the transport layer.
+
+62
+00:16:31,304 --> 00:16:38,804
+Then, according to port addressing, transfer to the related application.
+
+63
+00:16:38,804 --> 00:16:47,804
+And as you can see, there is no direct connection between sender and receiver.
+
+64
+00:16:49,076 --> 00:17:02,675
+Network layer protocols, as you can see, in every internet device, including the host, the edge devices, routers, must operate. Okay?
+
+65
+00:17:02,675 --> 00:17:10,675
+So router here examines header field of the datagram.
+
+66
+00:17:11,796 --> 00:17:38,412
+in all IP datagrams passing through it. So some datagram coming into the input port and divert this coming datagram according to forwarding table. So router moves datagram from input port to output port to find
+
+67
+00:17:38,548 --> 00:17:49,907
+to transfer datagram along with the end path. So it is like trying to find the right path to reach to the destination.
+
+68
+00:17:49,907 --> 00:18:01,507
+So we are going to discuss how this can be done. Okay. There are two fundamental functions in network layer.
+
+69
+00:18:01,507 --> 00:18:03,587
+First one is forwarding.
+
+70
+00:18:04,372 --> 00:18:09,972
+Forwarding basically moves packets from a router.
+
+71
+00:18:09,972 --> 00:18:13,692
+So we are talking about one individual router.
+
+72
+00:18:13,692 --> 00:18:25,572
+So forwarding is basically move packets from a router's input link to the appropriate same router's output link.
+
+73
+00:18:25,572 --> 00:18:29,972
+So forwarding happened in a router.
+
+74
+00:18:30,963 --> 00:18:46,884
+And another one is routing. Routing, okay? One is forwarding, happen in the individual router. Other one is routing. Routing basically determine route taken.
+
+75
+00:18:47,476 --> 00:19:14,156
+by packets from source to destination. So in routing mechanism, we should have an algorithm to determine the right path between source destination, source to location to the destination location. Similar analogy, suppose you are taking a long trip
+
+76
+00:19:14,259 --> 00:19:18,259
+İstanbul, let's say, to Erzurum.
+
+77
+00:19:20,259 --> 00:19:28,259
+Forwarding, process of getting through single interchange, like here.
+
+78
+00:19:29,259 --> 00:19:39,259
+While passing a van city, you are diverted, you use many islands, many cross-junctions, so on and so forth.
+
+79
+00:19:42,483 --> 00:19:59,983
+forwarding mechanism is done. Routing is basically like a navigation. Routing process of planning trip from source location to the destination location. So routing is basically...
+
+80
+00:20:00,000 --> 00:20:18,699
+determining the road trip from Istanbul to Erzurum. Forwarding is done in each individual city or towns. Okay? This is very simple analogy. So, let's discuss
+
+81
+00:20:18,771 --> 00:20:23,011
+What is going on on each individual router?
+
+82
+00:20:23,011 --> 00:20:35,031
+So how we can divide network layer into two parts, control plane part and data plane part and control plane part.
+
+83
+00:20:35,331 --> 00:20:41,031
+So as you remember, forwarding is happened in a single router.
+
+84
+00:20:41,771 --> 00:20:45,091
+So data plane is basically a local.
+
+85
+00:20:46,771 --> 00:21:12,771
+So, the local per router function. So, suppose you see a router on the left down, one packet and datagram is arriving from the input, one of the input, one of the port of the router and router checks the header value.
+
+86
+00:21:13,332 --> 00:21:21,412
+ve bu tarzıları da
+
+87
+00:21:21,412 --> 00:21:24,012
+ile ilgili tarzıları da
+
+88
+00:21:24,852 --> 00:21:28,512
+In the control plane is a logic worldwide.
+
+89
+00:21:29,132 --> 00:21:35,592
+So it's a big plan, routing plan from source location to destination location.
+
+90
+00:21:35,592 --> 00:21:48,592
+So in control plane, it's a global thinking determines how the telegram is routed among many routers along and...
+
+91
+00:21:49,364 --> 00:22:14,412
+to end path from source to the destination location. So, there are two control plane approach in global thinking, network wide thinking. First one is traditional routing algorithms. So, this routing algorithm is implemented in
+
+92
+00:22:14,836 --> 00:22:40,556
+Routers. And the second one, and most recent one is STN, Software Defined Network. So that is implemented in the remote servers. So we are going to discuss in detail. All right? So let's have a look. Per router control plane, that is...
+
+93
+00:22:40,559 --> 00:22:44,400
+Traditional one as you can see here.
+
+94
+00:22:46,400 --> 00:22:49,599
+Individual routing algorithm implemented.
+
+95
+00:22:53,236 --> 00:23:13,436
+in each and every router interact with the control plane. Suppose the router on the left arrives at the diagram, so this router checks the header value, okay, and...
+
+96
+00:23:13,619 --> 00:23:18,119
+Each router has local forwarding table.
+
+97
+00:23:18,119 --> 00:23:35,719
+Suppose the header value 0100 forwarded to port 3, 0110 forwarded to port 2, 0111 port 2, and 0101 port 1.
+
+98
+00:23:35,719 --> 00:23:39,219
+So this is four digit, four bits.
+
+99
+00:23:39,392 --> 00:23:48,592
+So, as you can see, O1, double one, as you can see in the third line, forward to output port two.
+
+100
+00:23:48,592 --> 00:24:02,992
+According to what? According to local forwarding table. So, each router in the network has its local forwarding table.
+
+101
+00:24:06,708 --> 00:24:34,635
+To find the right path from source location to destination location, in traditional routing algorithm, each router operates or process routing algorithm to update its local forwarding table. And moreover, each router also share
+
+102
+00:24:36,180 --> 00:25:03,180
+the forwarding table values according to governing routing algorithm. This is traditional one. Each router process routing algorithm and updates its routing table according to receiving messages. Okay? As you can see, the DATCHET line
+
+103
+00:25:03,763 --> 00:25:17,963
+The forwarding each incoming datagram and forwarding that is done in data plane and routing algorithm on top is related to control plane.
+
+104
+00:25:17,963 --> 00:25:31,563
+In software-defined control plane, let me gain similar, let's say, a datagram arrives in one of the routers here.
+
+105
+00:25:31,859 --> 00:25:41,859
+And again, this time on the control plane, there is no routing algorithm processing on each router.
+
+106
+00:25:41,859 --> 00:25:46,359
+So we have remote controllers on top.
+
+107
+00:25:46,359 --> 00:25:59,755
+And each router has control agent to check remote controller to update its forwarding table.
+
+108
+00:25:59,827 --> 00:26:26,923
+in STN. Again, what's going on in each router related to data plane and management mechanism on top is related to control plane. So as you can distinguish the main difference between traditional routing and software-defined networking. Okay.
+
+109
+00:26:27,796 --> 00:26:39,796
+Let's have a look what service model for channel transporting datagrams from sender to receiver.
+
+110
+00:26:39,796 --> 00:26:52,491
+So let's think about the service models. Okay? Let's take an example. We can give a service as guaranteed delivery.
+
+111
+00:26:53,172 --> 00:27:00,251
+Or, guaranteed delivery with less than a certain amount of delay.
+
+112
+00:27:00,251 --> 00:27:04,571
+So, this is one service model.
+
+113
+00:27:04,571 --> 00:27:11,771
+Or, we can give a guarantee for in-order delivery.
+
+114
+00:27:11,771 --> 00:27:16,771
+Or, guaranteed minimum bandwidth to flow.
+
+115
+00:27:16,771 --> 00:27:18,091
+Or,
+
+116
+00:27:18,163 --> 00:27:22,963
+Restriction on changes in inter-packet spacing.
+
+117
+00:27:22,963 --> 00:27:36,163
+These are two service models we might think guaranteed delivery or guaranteed in-order datagram delivery or guaranteed minimum bandwidth to flow.
+
+118
+00:27:36,163 --> 00:27:40,163
+But in network layer model,
+
+119
+00:27:40,596 --> 00:27:46,096
+It is a best-offer service and there is no guarantee delivery.
+
+120
+00:27:46,096 --> 00:27:52,096
+No guarantees on successful datagram delivery to destination.
+
+121
+00:27:52,096 --> 00:27:57,096
+There is no guarantee on timing or order of delivery.
+
+122
+00:27:57,096 --> 00:28:04,096
+And there is no guarantee for bandwidth available to end-to-end flow.
+
+123
+00:28:04,096 --> 00:28:06,059
+So how?
+
+124
+00:28:06,996 --> 00:28:22,396
+There are many applications, video streaming, video conferencing, voice over IPv6, how this can be done on BestEfford Network.
+
+125
+00:28:22,396 --> 00:28:29,596
+So TCP, as you remember, provides a reliable service on...
+
+126
+00:28:29,652 --> 00:28:52,748
+Ancak bir net bir
+
+127
+00:28:53,715 --> 00:28:57,035
+Bir de diğer modelleri.
+
+128
+00:28:57,035 --> 00:29:01,335
+Bir de ilk bölümde.
+
+129
+00:29:01,335 --> 00:29:03,655
+İntrenet, bir network now.
+
+130
+00:29:03,655 --> 00:29:05,115
+ATM network.
+
+131
+00:29:05,115 --> 00:29:08,495
+Ve theoretical network.
+
+132
+00:29:09,255 --> 00:29:13,535
+İntrenet, bir deyken.
+
+133
+00:29:13,535 --> 00:29:17,015
+İntrenet, as you remember.
+
+134
+00:29:17,683 --> 00:29:27,443
+Kult of service guarantees, bandwidth, we are going to talk about bandwidth, loss of datagram, order of datagram, and timing.
+
+135
+00:29:27,443 --> 00:29:40,963
+So internet is the best effort. So there is no bandwidth guarantee, no guarantee for loss of datagram, order of packet datagram, and timing.
+
+136
+00:29:40,963 --> 00:29:45,683
+ATM, there are two types of ATM, constant bit rate,
+
+137
+00:29:45,683 --> 00:30:07,683
+So, it gives you constant bitrate. As a result, it guarantees, because it is dedicated, there is no packet loss, it's all in order delivery and timing, because it guarantees the constant rate. Or, available bitrate is another model in ATM. So, in this model…
+
+138
+00:30:08,147 --> 00:30:15,327
+ATM gives minimum guarantee, so some packet may be lost, so there is no timing guarantee,
+
+139
+00:30:15,327 --> 00:30:21,327
+but at least this ATM is dedicated, so it is in order delivery.
+
+140
+00:30:21,599 --> 00:30:34,000
+Theoretical Internet, Internet Server Guaranteed, that is the standard document RFC 1633 is published once upon a time.
+
+141
+00:30:34,000 --> 00:30:40,000
+And it's a bandwidth guarantee, loss and order and timing.
+
+142
+00:30:40,000 --> 00:30:49,599
+And Internet Differential Services is also published in one of the RFC documents, RFC 2470.
+
+143
+00:30:49,599 --> 00:30:56,599
+ve
+
+144
+00:30:56,599 --> 00:30:57,599
+bu model
+
+145
+00:30:57,599 --> 00:30:58,599
+are
+
+146
+00:30:58,599 --> 00:30:59,599
+not
+
+147
+00:30:59,599 --> 00:31:00,599
+common.
+
+148
+00:31:00,599 --> 00:31:01,599
+Still,
+
+149
+00:31:01,599 --> 00:31:02,599
+we use
+
+150
+00:31:02,599 --> 00:31:03,599
+BestEffort Network.
+
+151
+00:31:03,599 --> 00:31:04,599
+So,
+
+152
+00:31:04,599 --> 00:31:07,599
+let's have a look at the reflection on
+
+153
+00:31:07,599 --> 00:31:10,599
+BestEffort Services
+
+154
+00:31:10,599 --> 00:31:11,599
+because
+
+155
+00:31:11,599 --> 00:31:13,599
+why BestEffort Service
+
+156
+00:31:13,599 --> 00:31:15,563
+is too common?
+
+157
+00:31:15,700 --> 00:31:34,155
+Ve bu,
+
+158
+00:31:36,500 --> 00:31:52,523
+Bence bu
+
+159
+00:31:53,619 --> 00:31:56,919
+Now, in normal cases, there is no packet loss.
+
+160
+00:31:56,919 --> 00:32:04,220
+So, it gives significant provision of bandwidth of a low performance of real-time applications,
+
+161
+00:32:04,220 --> 00:32:07,519
+such as interactive voice, interactive video.
+
+162
+00:32:07,519 --> 00:32:08,819
+So, it's good enough.
+
+163
+00:32:08,819 --> 00:32:10,319
+And the third one.
+
+164
+00:32:10,579 --> 00:32:36,715
+Bu, bu
+
+165
+00:32:36,756 --> 00:33:03,036
+And congestion control mechanism helps, services helps. And now, because of these reasons, it is hard to argue with success of best effort service model. Okay, so we have given a...
+
+166
+00:33:04,147 --> 00:33:05,268
+Açık bir review
+
+167
+00:33:05,268 --> 00:33:06,268
+ve
+
+168
+00:33:06,268 --> 00:33:08,467
+network layer
+
+169
+00:33:08,467 --> 00:33:09,067
+ve
+
+170
+00:33:09,067 --> 00:33:11,427
+why we have divided
+
+171
+00:33:11,427 --> 00:33:13,167
+our network layer
+
+172
+00:33:13,167 --> 00:33:14,207
+into two-part
+
+173
+00:33:14,207 --> 00:33:15,007
+and
+
+174
+00:33:15,007 --> 00:33:16,467
+what is going on
+
+175
+00:33:16,467 --> 00:33:17,367
+in data plane
+
+176
+00:33:17,367 --> 00:33:18,047
+and
+
+177
+00:33:18,047 --> 00:33:19,847
+what we are going to discuss
+
+178
+00:33:19,847 --> 00:33:21,707
+in control plane.
+
+179
+00:33:22,167 --> 00:33:22,387
+So
+
+180
+00:33:22,387 --> 00:33:23,248
+let's
+
+181
+00:33:23,248 --> 00:33:24,667
+go forward.
+
+182
+00:33:25,299 --> 00:33:31,900
+In the data plane, first, let's discuss what is inside the router.
+
+183
+00:33:33,900 --> 00:33:41,299
+So it has input ports, output ports, and some hardware, switching fabric,
+
+184
+00:33:42,700 --> 00:33:49,900
+to divert incoming datagrams to related output port.
+
+185
+00:33:50,644 --> 00:33:59,644
+We are going to discuss buffer management and scheduling done in a single router.
+
+186
+00:34:03,284 --> 00:34:28,735
+As you can see here, these are the N number of inputs, input ports on the left hand side. And these different color boxes are different type of, different datagrams. And on the right hand side is router output ports. And in between,
+
+187
+00:34:28,735 --> 00:34:53,735
+There must be high-speed switching fabric to divert incoming datagrams to related output ports. And there must be a processing, routing processor to process routing algorithm. Okay? So...
+
+188
+00:34:53,907 --> 00:35:19,707
+On top, on below the dachet line, that is the forwarding data plane, this is operated in hardware. So it is done in a nanosecond timeframe. It is done in a one-clock cycle according to high-speed switching fabric technology.
+
+189
+00:35:20,500 --> 00:35:30,000
+On the routing processing, so routing management control plane, that is all software.
+
+190
+00:35:30,000 --> 00:35:40,500
+And it's a processing on the router processor. And it operates in millisecond time frame.
+
+191
+00:35:42,500 --> 00:35:43,500
+Okay.
+
+192
+00:35:43,695 --> 00:36:10,496
+Let's have a look here into the input port function. So there's a red line on the right is switching fabric. What is an input port? There's a, because this input port of the router or each port is connected to the physical cable or fiber or copper or virus. So,
+
+193
+00:36:11,123 --> 00:36:13,323
+There is a line termination.
+
+194
+00:36:14,863 --> 00:36:15,103
+So,
+
+195
+00:36:16,063 --> 00:36:17,763
+the signal is coming in
+
+196
+00:36:17,763 --> 00:36:19,003
+bit level.
+
+197
+00:36:20,063 --> 00:36:21,543
+Then, this is
+
+198
+00:36:21,543 --> 00:36:22,983
+physical layer.
+
+199
+00:36:24,123 --> 00:36:25,903
+And leak layer protocol
+
+200
+00:36:25,903 --> 00:36:27,163
+such as
+
+201
+00:36:27,163 --> 00:36:29,823
+internet, we are going to discuss
+
+202
+00:36:29,823 --> 00:36:31,283
+in Chapter 6
+
+203
+00:36:31,283 --> 00:36:33,803
+by the end of
+
+204
+00:36:33,803 --> 00:36:36,043
+this lecture
+
+205
+00:36:36,043 --> 00:36:38,263
+in this course.
+
+206
+00:36:39,603 --> 00:36:44,103
+And network layer part.
+
+207
+00:36:44,623 --> 00:36:48,423
+So there's a lookup, forwarding,
+
+208
+00:36:48,423 --> 00:36:54,643
+and since there are many datagrams are coming,
+
+209
+00:36:55,203 --> 00:36:57,063
+so there's a queuing mechanism.
+
+210
+00:36:57,844 --> 00:37:00,663
+So in decentralized switching,
+
+211
+00:37:01,403 --> 00:37:04,823
+using header field value,
+
+212
+00:37:05,300 --> 00:37:08,620
+ve lookup table.
+
+213
+00:37:08,620 --> 00:37:16,020
+So, these datagrams forward to the output port.
+
+214
+00:37:16,020 --> 00:37:19,060
+This is basically how it works.
+
+215
+00:37:19,060 --> 00:37:21,100
+Match plus action.
+
+216
+00:37:21,100 --> 00:37:25,740
+We take the header value, check the lookup table,
+
+217
+00:37:25,740 --> 00:37:30,260
+and if any match, forward to the output port.
+
+218
+00:37:30,260 --> 00:37:33,060
+Our goal is basically complete.
+
+219
+00:37:33,119 --> 00:37:37,000
+İmput port processing at line speed.
+
+220
+00:37:37,000 --> 00:37:38,880
+What is at line speed?
+
+221
+00:37:38,880 --> 00:37:47,880
+Whatever the datagram arrives, directly we should forward to the output.
+
+222
+00:37:47,880 --> 00:37:54,559
+So the speed must be real time or close to real in theory.
+
+223
+00:37:54,559 --> 00:37:58,399
+But sometimes it is not possible.
+
+224
+00:37:58,612 --> 00:38:05,211
+We have to have some buffer, so we must put them into the input port queue.
+
+225
+00:38:05,211 --> 00:38:21,011
+If datagram arrives faster than forwarding late into the switching fabric, it must be stored in the buffer and it must be cured.
+
+226
+00:38:21,011 --> 00:38:22,011
+All right?
+
+227
+00:38:23,211 --> 00:38:24,211
+In...
+
+228
+00:38:26,068 --> 00:38:41,568
+Generalized forwarding, so it's based on any sort of header field values. So it checks and goes. Destination-based forwarding is basically based on destination IP address.
+
+229
+00:38:43,568 --> 00:38:53,568
+So how we can forward according to destination-based forwarding? Here is the IP address.
+
+230
+00:38:53,856 --> 00:39:19,980
+OK? Suppose we use, we have divided our network into many parts. So we say the range between these binary values down here, the link interface zero, as you can see this is one, starting to spit.
+
+231
+00:39:21,619 --> 00:39:28,739
+is two and one more again and otherwise the remaining goes to three.
+
+232
+00:39:28,739 --> 00:39:48,500
+What happens if we want to divide up nicely? We can enlarge a bit. We can say although this is here to zero but we have to divide, subdivide our IP range and we
+
+233
+00:39:49,268 --> 00:39:52,568
+diverted to the another interface.
+
+234
+00:39:52,568 --> 00:39:54,868
+How we can do it?
+
+235
+00:39:57,668 --> 00:40:00,568
+Just a second, Gais, let me answer this.
+
+236
+00:44:32,115 --> 00:44:43,876
+Sorry guys, let me continue. So if we want to find divide, so we can put the IP address and divert to the new one.
+
+237
+00:44:43,876 --> 00:44:50,916
+How we can manage this forwarding? So let's have a look at mechanisms this time.
+
+238
+00:44:57,300 --> 00:45:18,060
+OK. Solution is longest preface matching technique. OK? Now in this technique, when looking at forwarding table entry for a given destination address, we basically use longest.
+
+239
+00:45:18,835 --> 00:45:44,011
+There can be more than one match, but we take longest one into account to determine the destination address. Let us have a look on the example. Here is our forwarding table. As you can see, these stars are
+
+240
+00:45:44,532 --> 00:46:12,032
+link here. So these are the matches. Zero. And this is another match. This is, let's say, 16, 21. This is 24 matches to link one. And this is 21 again. And otherwise. OK? Let's have a look at these two examples. The first one...
+
+241
+00:46:13,172 --> 00:46:41,164
+Let's say first one, first datagram arrived and we check the header value. As you can see, the only match is on the first one and that is the longest only match. And we forward to the interface zero. Let's have a look at the second one. As you can see, we have one match.
+
+242
+00:46:42,708 --> 00:47:09,003
+Ve bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu kon
+
+243
+00:47:09,331 --> 00:47:18,931
+Although it matched two lines, but we picked the longest one, divert to the interface one.
+
+244
+00:47:18,931 --> 00:47:30,931
+It is. So, we will see why longest preface matching is used shortly when we study addressing.
+
+245
+00:47:30,931 --> 00:47:35,659
+So we are going to call back again. Longest preface matching.
+
+246
+00:47:36,403 --> 00:48:03,627
+This mechanism often performed using ternary content addressing memories. This is the hardware, TCAMS. So this matching mechanism is done in one clock cycle. So in Cisco catalyst routers, around 1 million routing table entries in at
+
+247
+00:48:03,764 --> 00:48:27,364
+TKAMS, it's an addressable memory. And this router, Cisco switch, can check 1 million entries in one clock cycle. So this time, let's concentrate on switching fabric. Okay?
+
+248
+00:48:29,235 --> 00:48:38,235
+So, switching fabric transfer packet from input link to appropriate output link.
+
+249
+00:48:39,235 --> 00:48:41,900
+And switching rate...
+
+250
+00:48:42,516 --> 00:49:06,016
+basically at which packet can be transferred from input port to the output port. It is often used as multiple of input-output line rate. So let's say n input, switching rate n times line rate is desirable. If
+
+251
+00:49:06,164 --> 00:49:12,164
+You want to switch to real-time or close to real-time.
+
+252
+00:49:12,164 --> 00:49:21,164
+There are three techniques used in switching fabric technology.
+
+253
+00:49:21,164 --> 00:49:29,164
+First one is memory, second one is bus, and the last one is interconnection networks.
+
+254
+00:49:29,164 --> 00:49:30,164
+Okay?
+
+255
+00:49:32,019 --> 00:49:35,619
+Let's have a look at the memory solution.
+
+256
+00:49:35,619 --> 00:49:42,019
+It is used in first generation of routers.
+
+257
+00:49:43,119 --> 00:49:54,219
+That is traditional. This router is basically traditional computers with switching under direct control of CPU.
+
+258
+00:49:54,719 --> 00:50:00,000
+So packet received from...
+
+259
+00:50:00,000 --> 00:50:22,000
+input port to the computer memory, system memory, and forward to the output port. So computer think this is the packet is forwarding from one input line to the another line.
+
+260
+00:50:22,452 --> 00:50:31,452
+But this is not fast enough. Everything is done on memory by a processor.
+
+261
+00:50:31,452 --> 00:50:39,452
+Another one is bus. You know, already, you are already familiar to bus topology.
+
+262
+00:50:39,452 --> 00:50:48,452
+As you can see, datagram input from port memory to the output port memory via a shared bus.
+
+263
+00:50:49,536 --> 00:50:53,536
+Bus contention is the main problem.
+
+264
+00:50:53,536 --> 00:51:05,036
+Switching speed limited by bus bandwidth because this bus is shared among input ports and output ports.
+
+265
+00:51:05,036 --> 00:51:16,536
+In 32 gigabit per second bus that is used in Cisco 500,600 switch, that is sufficient.
+
+266
+00:51:16,639 --> 00:51:23,139
+Speed for access routers used in Cisco 5000 series.
+
+267
+00:51:23,139 --> 00:51:31,139
+The other one is, the last one and most recent one is, switching via interconnection networks.
+
+268
+00:51:31,139 --> 00:51:42,139
+The crossbar, closed networks, other interconnection nets initially developed to connect processors in
+
+269
+00:51:42,224 --> 00:52:09,260
+multiprocessor. Okay? But to improve the capacity, instead of using end-by-end one crossbar switch, we can use multi-stage switches. As you can see, this is, instead of using eight-by-eight switches, we can use
+
+270
+00:52:10,452 --> 00:52:36,732
+for 242 and for 2x2 switches. In this case, we can exploit parallelism. So one packet may arrive to one of the input ports, be divided into many packets, and forwarded to the middle stage of the switches, and reach to the end.
+
+271
+00:52:38,900 --> 00:53:06,284
+In scaling via inter-connection network, speed up parallelism, scaling using multiple switching planes in parallel, that makes router more useful. It's speed up, scale up via parallelism. In Cisco CRC routers, there are eight basic
+
+272
+00:53:06,356 --> 00:53:15,856
+Switching planes, as you can see, each plane has three-stage interconnection network.
+
+273
+00:53:15,856 --> 00:53:30,856
+And this router, CRC router, gives up to 100 terabit per second switching capacity, exploiting parallelism.
+
+274
+00:53:30,856 --> 00:53:33,356
+Right? It is very good.
+
+275
+00:53:34,291 --> 00:53:47,291
+In some cases, if switch fabric slower than input port, then queuing happens.
+
+276
+00:53:47,291 --> 00:53:58,291
+Let's say here we have three input port and three output port. Let's say there's a queue in the first input.
+
+277
+00:53:58,784 --> 00:54:09,284
+A red datagram is forwarded to the red output, blue datagram forwarded to the blue output, green one into the green.
+
+278
+00:54:09,284 --> 00:54:20,584
+So output port contention only, one red datagram can be transferred, lower red one will be blocked. Okay?
+
+279
+00:54:20,584 --> 00:54:22,412
+And...
+
+280
+00:54:25,204 --> 00:54:27,204
+In the next stage,
+
+281
+00:54:29,204 --> 00:54:32,804
+Blue one will be forwarded to blue, and
+
+282
+00:54:34,204 --> 00:54:44,204
+Third input will be blocked once more. So this is called head of line blocking, hold. Okay?
+
+283
+00:54:45,204 --> 00:54:48,204
+And so we need
+
+284
+00:54:51,764 --> 00:55:02,324
+buffer or queuing because datagram may arrive faster than switching fabric may forward.
+
+285
+00:55:03,324 --> 00:55:13,563
+But we should also have output buffer for what? Because the link capacity of the output
+
+286
+00:55:14,068 --> 00:55:19,228
+Bu kapacita bölümde de kapacita bölümde de kısımlar.
+
+287
+00:55:19,228 --> 00:55:21,348
+Bu kapacita bölümde de kısımlarla,
+
+288
+00:55:21,348 --> 00:55:25,228
+kataklamı da kısımlarla,
+
+289
+00:55:25,228 --> 00:55:28,348
+daha fazla link-transmisyonlanan.
+
+290
+00:55:28,348 --> 00:55:32,228
+Ve kapacita bölümde de kısımlarla,
+
+291
+00:55:32,228 --> 00:55:34,628
+ve no free kapacılıklarla.
+
+292
+00:55:36,563 --> 00:55:58,363
+So datagram can be lost due to the congestion because if the output link is full, output buffer is full, switching fabric cannot insert any coming datagram into the output queue. So it may lead us packet loss.
+
+293
+00:55:59,092 --> 00:56:07,592
+So we should have scheduling discipline, chooses among cute datagrams for transmission.
+
+294
+00:56:09,791 --> 00:56:21,068
+If there is a scheduling, we should be talking about priority also, to give best performance and...
+
+295
+00:56:21,139 --> 00:56:47,371
+for datagrams, which has higher priority. This is very important one. Okay, in the output queuing, buffer arrives, right, where switch exceeds output line speed and queuing delay and loss to the input.
+
+296
+00:56:47,411 --> 00:56:53,811
+port buffer overflow may happen. This is, you can see here.
+
+297
+00:56:54,811 --> 00:57:01,411
+Okay, let's give a break for 15 minutes, then we can continue from here.
+
+298
+00:57:01,811 --> 00:57:05,411
+Çoğum bir taklara verelim arkadaşlar. Sonra devam edelim.
+
+299
+01:12:35,891 --> 01:12:36,891
+Merhaba arkadaşlar.
+
+300
+01:13:19,796 --> 01:13:23,156
+OK guys, let's continue. As I said...
+
+301
+01:13:44,724 --> 01:13:46,699
+Arkadaşlar, Zoom kafayı yedi.
+
+302
+01:14:19,828 --> 01:14:44,228
+OK guys, let's continue. How much buffer we should dedicate for the output link? OK? According to RFC 34, 39 rule of thumb, so average buffering size must be equal to the formulation.
+
+303
+01:14:44,467 --> 01:15:00,268
+It's an empiric formulation, as you can see here. The average buffer size must be related to the typical RTT, round trip time, comparing to link capacity C.
+
+304
+01:15:00,268 --> 01:15:08,868
+Let's say for the example, let's say RTT is typical 250 millisecond, and the link capacity is...
+
+305
+01:15:09,747 --> 01:15:37,611
+10 gigabit per second. So the formulation, let's say, for n flow, n flow means n number of direction, output link. So the buffer size equal to RTT times C divided by square root n. This is Stambrick formulation. But
+
+306
+01:15:39,220 --> 01:15:49,220
+If the buffer is too much buffer, that increased delay, especially increase in home router.
+
+307
+01:15:49,220 --> 01:16:01,220
+So long RTTs as a result of poor performance for real-time application, as a result sluggish TCP response.
+
+308
+01:16:01,220 --> 01:16:06,220
+And it recall delay-based congestion control.
+
+309
+01:16:06,720 --> 01:16:27,920
+And he botul... So as a result, the buffer must be full, but not fuller for optimum transmission. So in the buffer management for the output port, as you know...
+
+310
+01:16:28,467 --> 01:16:45,467
+The datagram comes from switching fabric. Since the R is the link capacity is not high enough to consume all incoming datagram, it weighs in the hue.
+
+311
+01:16:47,467 --> 01:16:55,467
+So we should have some mechanism to manage hue, all right?
+
+312
+01:16:57,652 --> 01:17:07,652
+If the buffer is twofold, we should drop some datagrams.
+
+313
+01:17:07,652 --> 01:17:13,652
+So we should have some mechanism which datagram must be dropped.
+
+314
+01:17:13,652 --> 01:17:21,652
+There are two approach. First one is tail drop. Second one is priority.
+
+315
+01:17:25,203 --> 01:17:39,363
+basically drops. In priority, we check the all priorities in the queue, lowest priority packet will be dropped.
+
+316
+01:17:42,243 --> 01:17:48,243
+Meanwhile, some control signal to inform
+
+317
+01:17:48,595 --> 01:18:01,655
+Receiving parties and sending parties, we should also signal error congestion signaling.
+
+318
+01:18:02,315 --> 01:18:06,935
+And these are the kind of flags we have discussed in the congestion control.
+
+319
+01:18:06,935 --> 01:18:11,175
+So these packets must have highest priority.
+
+320
+01:18:15,252 --> 01:18:17,252
+Paket scheduling.
+
+321
+01:18:17,252 --> 01:18:21,252
+There are many packets waiting in the queue.
+
+322
+01:18:21,252 --> 01:18:28,252
+So, packet scheduling basically deciding which packet to be sent on the link.
+
+323
+01:18:28,252 --> 01:18:32,252
+First approach is first come, first serve.
+
+324
+01:18:32,252 --> 01:18:35,252
+First come, first serve.
+
+325
+01:18:35,572 --> 01:18:43,332
+The other one is priority, third one is round robin, and fourth one is weighted fair queuing.
+
+326
+01:18:43,332 --> 01:18:54,932
+So let's discuss all these in first come, first serve packets, basically transmitted in order of arrival to output port.
+
+327
+01:18:54,932 --> 01:19:02,692
+This one is also known as first in, first out, FIFO. It's a real example.
+
+328
+01:19:03,315 --> 01:19:17,435
+In priority, we have different queues, one queue for highest priority, one queue for lowest priority.
+
+329
+01:19:17,435 --> 01:19:28,555
+And we classify each datagram according to its priorities. And any header field can be used for classification.
+
+330
+01:19:29,108 --> 01:19:45,907
+And packets sent from highest priority queue that has buffered packets and first come first serve mechanism in each priority class queue.
+
+331
+01:19:47,380 --> 01:19:53,979
+But highest priority queue served earlier than lowest priority queue.
+
+332
+01:19:53,979 --> 01:20:03,579
+Let's have a look in the example. Suppose we have one high priority packets and it is sent.
+
+333
+01:20:03,579 --> 01:20:04,979
+Meanwhile,
+
+334
+01:20:05,908 --> 01:20:13,927
+Second datagram arrived, which has low priority, and third datagram has arrived too.
+
+335
+01:20:13,927 --> 01:20:28,068
+Although second datagram arrived earlier than third one, third one goes, then second one goes.
+
+336
+01:20:29,368 --> 01:20:31,927
+Meanwhile, fourth...
+
+337
+01:20:32,083 --> 01:20:54,083
+Datagram arrive, which has high priority, and fifth one is low priority, but there is no queue in high priority. There is no datagram waiting in high priority queue, and fifth one passes. Round-robin scheduling. We create...
+
+338
+01:20:54,868 --> 01:21:13,587
+many queues waiting. We classify our datagrams and put them into the related queues. And server cyclically, repeatedly scan class queues.
+
+339
+01:21:13,684 --> 01:21:24,404
+Sending one complete packet from each class, if available. If it's not, pass to the next. This is called round robin.
+
+340
+01:21:24,404 --> 01:21:38,564
+In weighted fair queuing, it is generalized round robin, but we put them awaiting.
+
+341
+01:21:39,444 --> 01:21:49,244
+A kind of priority, then, round robin operates according to its priorities, its rating too.
+
+342
+01:21:51,844 --> 01:22:00,244
+And this rated pair queuing gives minimum bandwidth guarantee.
+
+343
+01:22:02,244 --> 01:22:03,084
+But...
+
+344
+01:22:06,003 --> 01:22:14,003
+Let's have a look to network neutrality. So what is neutrality? Let's state neutrality first.
+
+345
+01:22:14,003 --> 01:22:27,003
+Technically, neutrality is basically how an ISP should share or should allocate its resources among customers.
+
+346
+01:22:28,148 --> 01:22:39,347
+So, technically, neutrality can be managed by packet scheduling, buffer management, and other mechanisms. Okay?
+
+347
+01:22:39,347 --> 01:22:55,347
+In social or economic principles, everybody should reach the network freely. So, this one protects free speech.
+
+348
+01:22:56,532 --> 01:23:00,132
+Encouraging innovations and competition.
+
+349
+01:23:01,012 --> 01:23:03,752
+So this is technically how it's done.
+
+350
+01:23:04,771 --> 01:23:07,252
+And social economic principles,
+
+351
+01:23:07,692 --> 01:23:09,971
+it is network is a free area.
+
+352
+01:23:09,971 --> 01:23:13,492
+Everybody should use the network freely.
+
+353
+01:23:15,512 --> 01:23:19,851
+Also in US, there are some...
+
+354
+01:23:20,275 --> 01:23:25,055
+ve principles for network neutrality.
+
+355
+01:23:26,855 --> 01:23:31,775
+But in different countries, different laws apply.
+
+356
+01:23:32,635 --> 01:23:37,796
+So some law, according to some country law, that is forbidden,
+
+357
+01:23:37,796 --> 01:23:42,175
+some others that is freely allowed.
+
+358
+01:23:43,220 --> 01:24:11,060
+In USA, let's talk about neutrality laws. It's a 2015 U.S. FCC order on protecting and promoting and open internet. There are basically three clear, bright line rules. There are three basic rules for network neutrality. First one is no blocking.
+
+359
+01:24:12,020 --> 01:24:28,819
+So, anyone shall not block lawful content, lawful applications, services, or non-harmful devices, subject to reasonable network management.
+
+360
+01:24:28,819 --> 01:24:39,300
+All right? This is first one. Second one is no throttling, which means
+
+361
+01:24:39,636 --> 01:24:55,036
+Anyone shall not impair or degrade any lawful internet traffic on the basis of internet context, applications, or service.
+
+362
+01:24:55,036 --> 01:25:01,036
+And the last one is no paid polarization. So no one...
+
+363
+01:25:06,068 --> 01:25:07,068
+This signal.
+
+364
+01:25:24,404 --> 01:25:32,804
+No one can gain priority with money.
+
+365
+01:25:33,304 --> 01:25:36,504
+So, it must be accurate.
+
+366
+01:25:37,203 --> 01:25:38,804
+Just a second to this.
+
+367
+01:26:02,804 --> 01:26:03,804
+Let's continue.
+
+368
+01:26:06,804 --> 01:26:12,004
+But there are some foggy areas.
+
+369
+01:26:12,804 --> 01:26:23,004
+Suppose ISP is communication service provider or information service provider.
+
+370
+01:26:23,404 --> 01:26:30,203
+If information service provider, then this rule must be...
+
+371
+01:26:33,716 --> 01:26:37,516
+Ama if telecommunication service provider,
+
+372
+01:26:37,916 --> 01:26:39,916
+the answer is foggy.
+
+373
+01:26:40,276 --> 01:26:41,776
+So the answer really matters
+
+374
+01:26:41,776 --> 01:26:45,296
+from the regulatory standpoint.
+
+375
+01:26:46,615 --> 01:26:49,115
+Telecommunication Act,
+
+376
+01:26:50,115 --> 01:26:53,316
+published in 2034 and 2036,
+
+377
+01:26:53,316 --> 01:26:57,236
+1934 and 1996.
+
+378
+01:26:58,163 --> 01:27:04,403
+So, it imposes common carrier duties in telecommunications services.
+
+379
+01:27:04,403 --> 01:27:08,363
+So, you can get, you can be, it can be paid.
+
+380
+01:27:08,363 --> 01:27:14,963
+But in information services, no one carrier, no common carrier duties.
+
+381
+01:27:14,963 --> 01:27:17,963
+So, that is not regulated yet.
+
+382
+01:27:18,763 --> 01:27:19,963
+Okay.
+
+383
+01:27:20,564 --> 01:27:22,564
+Let's continue to...
+
+384
+01:27:22,931 --> 01:27:24,431
+Protokolü bu.
+
+385
+01:27:24,751 --> 01:27:25,032
+Tamam.
+
+386
+01:27:25,511 --> 01:27:26,831
+Şimdi,
+
+387
+01:27:26,831 --> 01:27:28,591
+what is going on
+
+388
+01:27:28,591 --> 01:27:30,631
+in a router.
+
+389
+01:27:31,492 --> 01:27:31,731
+So,
+
+390
+01:27:31,831 --> 01:27:32,471
+this time,
+
+391
+01:27:32,951 --> 01:27:34,112
+let's talk about
+
+392
+01:27:34,112 --> 01:27:36,572
+how we can address.
+
+393
+01:27:37,131 --> 01:27:38,412
+What is the
+
+394
+01:27:38,412 --> 01:27:40,351
+datagram format first,
+
+395
+01:27:40,692 --> 01:27:42,791
+then how we can address
+
+396
+01:27:42,791 --> 01:27:44,551
+each datagram.
+
+397
+01:27:45,412 --> 01:27:46,612
+Do you remember here,
+
+398
+01:27:47,391 --> 01:27:49,311
+this is a datagram.
+
+399
+01:27:50,387 --> 01:28:15,188
+On top of transport layer, coming from protocol TCP and UDP, now we are here in the network layer. And we will discuss later link layer and physical layer too. In network layer, we should select the path.
+
+400
+01:28:15,247 --> 01:28:38,247
+using path selection for algorithms. It is implemented. So we should have routing protocol such as OSPF or BGP or STN controller. So all is for updating forwarding table and IP protocol.
+
+401
+01:28:39,699 --> 01:28:48,460
+ve mesajin format, datagram format, ve adresin, ve paket-handling conventions here.
+
+402
+01:28:48,460 --> 01:28:51,440
+Ve
+
+403
+01:28:51,440 --> 01:29:03,199
+ve
+
+404
+01:29:06,735 --> 01:29:10,735
+This is IPv4 datagram.
+
+405
+01:29:10,735 --> 01:29:19,735
+Here, we have IPv4 protocol version number, version 6 or version 4.
+
+406
+01:29:19,735 --> 01:29:29,735
+And here, header length in bytes, it measures the length of the header, not the total header.
+
+407
+01:29:29,735 --> 01:29:32,331
+Not the total length.
+
+408
+01:29:32,467 --> 01:29:42,067
+And here is the total length of the diagram, including the header plus the payload data.
+
+409
+01:29:43,868 --> 01:29:56,067
+The average length, the typical length, 15 bytes or less, but maximum it can be 64 kilobytes.
+
+410
+01:29:59,283 --> 01:30:06,243
+How we decide according to the technology we use to transfer this datagram.
+
+411
+01:30:06,243 --> 01:30:25,923
+And type of services like differential service, this is the one byte, zero to five or error congestion control, six or seven is the values.
+
+412
+01:30:27,060 --> 01:30:54,416
+TTL, time till LÜ, that is a 16 bit, remaining maximum hops, that is decremented at each router. Once it is, it reaches to zero, the packet drops. And upper layer protocols, such as indicate which protocol on the
+
+413
+01:30:54,416 --> 01:30:58,376
+Transport Layer, TCP, or UDP.
+
+414
+01:30:59,755 --> 01:31:01,556
+These are the flags
+
+415
+01:31:02,456 --> 01:31:14,556
+and identifier used for dividing into message into many datagrams and once it's received is how to assemble.
+
+416
+01:31:15,283 --> 01:31:24,603
+Here is the header checksum to check, it's the internet checksum to check whether this header is correct received or not.
+
+417
+01:31:24,603 --> 01:31:31,603
+Here is 32-bit IP addresses, source addresses and destination addresses.
+
+418
+01:31:32,659 --> 01:31:46,459
+An optional fields, such as time, step, record, route taken or whatever, these fields can be used also. And the overhead.
+
+419
+01:31:47,060 --> 01:32:01,860
+Basically, 20 bytes for TCP, 25 bytes for IP, total 40 bytes plus application level overhead for TCP IP packets.
+
+420
+01:32:01,860 --> 01:32:10,160
+Okay, these are the total size. Okay, this time, let's start addressing.
+
+421
+01:32:13,619 --> 01:32:41,547
+IPv4, IPv4, that is 32-bit identifier associated with each host router interface. I am not talking about each host. If each host has more than one interface, each interface has its own IP address. So IP addresses is given
+
+422
+01:32:41,716 --> 01:32:51,716
+to each interface. Interface, basically, the connection between host router and the physical link.
+
+423
+01:32:51,716 --> 01:33:02,716
+So routers typically have multiple interfaces. As you can see here, it has three interfaces. Host typically has one or two interfaces,
+
+424
+01:33:02,716 --> 01:33:06,716
+such as wired Ethernet and Plus Wireless.
+
+425
+01:33:08,884 --> 01:33:32,203
+And IP addresses are 32-bit, but it is demonstrated dotted decimal IP address, such as 23, 223.1.1.1. So it is represented in binaries in 32-bit and it's divided 8-bit each.
+
+426
+01:33:36,724 --> 01:33:42,724
+So, how are interfaces actually connected?
+
+427
+01:33:44,324 --> 01:33:59,224
+We are going to learn in detail in the link layer and physical layers chapters, but can be wired Ethernet interface connected by Ethernet switches.
+
+428
+01:33:59,296 --> 01:34:01,056
+Or, wireless.
+
+429
+01:34:01,655 --> 01:34:03,296
+Via Wi-Fi interface
+
+430
+01:34:03,296 --> 01:34:05,655
+connected by Wi-Fi
+
+431
+01:34:05,655 --> 01:34:06,695
+base station.
+
+432
+01:34:07,936 --> 01:34:09,816
+So, now
+
+433
+01:34:09,816 --> 01:34:11,896
+don't need
+
+434
+01:34:11,896 --> 01:34:13,576
+to worry about one,
+
+435
+01:34:13,956 --> 01:34:15,496
+how one interface
+
+436
+01:34:15,496 --> 01:34:17,655
+is connected to
+
+437
+01:34:17,655 --> 01:34:18,275
+another.
+
+438
+01:34:19,516 --> 01:34:22,056
+So, there is no intervening
+
+439
+01:34:22,056 --> 01:34:22,496
+router.
+
+440
+01:34:24,724 --> 01:34:30,324
+As you can see here, there's a subnet, the cloud one.
+
+441
+01:34:31,324 --> 01:34:44,123
+What is subnet? Subnet is a device, interfaces that can physically reach each other without passing through any intervening router.
+
+442
+01:34:46,123 --> 01:34:49,724
+So IP addresses have a structure.
+
+443
+01:34:49,876 --> 01:35:13,476
+It has subnet part, device and same subnet can communicate with each other without passing through an intervening router. And the host part, that is the remaining low order of bits. As you can see here in this network, there are three subnets.
+
+444
+01:35:17,939 --> 01:35:43,340
+Detach, detach each interface from its host or router, creating isolated island, isolated network. As you can see, these blue are each subnets. So, each isolated network is called a subnet. Let's see here, this is the subnet of...
+
+445
+01:35:43,731 --> 01:36:07,147
+223.1.3.0, slash 24, slash 24 means first 24 bit is a subnet. Remaining 8 bit can vary. That's why it is written zero. 8 bit may change. So as you can see, one host
+
+446
+01:36:07,155 --> 01:36:29,355
+The IP address 3.1, the other one is 3.2, and the other one is 3.27. As you can see, remaining 8-bit chains, not first 24-bit. Another subnet here, again, first 24-bit.
+
+447
+01:36:29,971 --> 01:36:54,412
+R constant, 223.1.10, slash 24, means remaining 8 bit may change. So first host is 1, second host is IP address 1.2, and the third one is 1.3, and the last one is the router lag, is 1.4. And this one is obvious, again, slash 24.
+
+448
+01:36:55,123 --> 01:37:22,724
+So, slash 24 is the net mask, subnet mask, and which means high order 24 bit is the subnet part, and remaining lowest order 8 bit is network part. Okay, where are the subnets and where are the slash 24 subnet addresses? It is here.
+
+449
+01:37:24,180 --> 01:37:25,780
+veri, SIMPAL.
+
+450
+01:37:30,163 --> 01:37:43,923
+OK. So, we should have IP addressing. CIDR, that is the classes interdomain router, that is pronounced by CIDR.
+
+451
+01:37:45,123 --> 01:37:55,844
+That is the subnet portion of addresses of arbitrary length. So address format, let's say a.b.c.d.x, where x is the
+
+452
+01:37:56,435 --> 01:38:22,027
+n n
+
+453
+01:38:22,355 --> 01:38:29,475
+Part 8-bit is host part, but we can enlarge according to number of our needs.
+
+454
+01:38:32,115 --> 01:38:44,835
+So that is actually two questions. How does a host get IP addresses within its network? And how does a network get IP addresses for itself?
+
+455
+01:38:47,731 --> 01:39:00,531
+Hardcoded in ssadminconfig, we can type it the IP address or dynamically DHCP can locate IP address, that is plug and play.
+
+456
+01:39:00,531 --> 01:39:07,931
+So in DHCP, our goal is basically host.
+
+457
+01:39:08,532 --> 01:39:16,292
+Can obtain IP address from network server dynamically and join the network.
+
+458
+01:39:17,731 --> 01:39:27,012
+So our coil also can renew its lease on address in use, also allows reuse of address.
+
+459
+01:39:27,012 --> 01:39:36,292
+And DSCP also support for mobile users to join or leave the network.
+
+460
+01:39:36,724 --> 01:39:51,484
+So, in DHCP, there are four types of messages. DHCP Discover message, DHCP Offer message, DHCP Request message, DHCP Acknowledged message.
+
+461
+01:39:52,484 --> 01:39:57,084
+Okay, let's have a look, let's work on this scenario.
+
+462
+01:39:57,884 --> 01:40:00,884
+And we have DHCP Server here.
+
+463
+01:40:01,140 --> 01:40:05,039
+İzmir adres 223.1.25
+
+464
+01:40:05,039 --> 01:40:06,440
+Suppose
+
+465
+01:40:06,440 --> 01:40:10,840
+We have a client
+
+466
+01:40:10,840 --> 01:40:12,619
+Mobile client
+
+467
+01:40:12,619 --> 01:40:15,860
+Arriving to our network
+
+468
+01:40:15,860 --> 01:40:19,260
+Then request an IP
+
+469
+01:40:19,260 --> 01:40:22,840
+There are two scenarios
+
+470
+01:40:22,840 --> 01:40:23,420
+First
+
+471
+01:40:26,292 --> 01:40:50,532
+Our client may broadcast a message asking, is there any DHCP there? Okay? The request client has asked that request to port 68 and DHCP listens port 67.
+
+472
+01:40:50,804 --> 01:41:00,003
+But client doesn't know, have an idea what is the DSCP address, IP address of DSCP.
+
+473
+01:41:00,003 --> 01:41:08,203
+So it broadcasts the message. The source is 0.0.0. That is because there's no IP address already.
+
+474
+01:41:08,203 --> 01:41:18,404
+And again, yield address is zero because there's no address. And it gives the ID of this message.
+
+475
+01:41:19,028 --> 01:41:45,548
+And this is a discover message and DSCP offer message. Broadcast, I am a DSCP server and I know you and here is your IP address. Saying that source address is the IP address of the DSCP.
+
+476
+01:41:46,068 --> 01:42:13,068
+ve port is 67 because the server use 67, client use 68. Destination address is broadcast because host doesn't have IP address yet. And it set yield addresses, the IP are given IP address. For this example, 223.1.2.4. And it puts
+
+477
+01:42:13,395 --> 01:42:18,155
+The ID, same ID that the discover message.
+
+478
+01:42:18,155 --> 01:42:24,395
+And it also put the lifetime, how long this IP is valid.
+
+479
+01:42:24,395 --> 01:42:29,395
+This is first message, TCP discover and DCP offer.
+
+480
+01:42:29,395 --> 01:42:34,395
+Another one, we can skip this first.
+
+481
+01:42:34,395 --> 01:42:38,395
+Suppose this client, once upon a time,
+
+482
+01:42:40,627 --> 01:42:43,987
+had an IP and it may say,
+
+483
+01:42:46,627 --> 01:42:49,827
+I have the IP address and I use it.
+
+484
+01:42:51,667 --> 01:43:01,987
+Again, IP address is not set yet. Destination is again broadcast, but yield address is the proposed IP address.
+
+485
+01:43:02,579 --> 01:43:06,579
+ve tracksection ID is the ID of the messages.
+
+486
+01:43:06,579 --> 01:43:09,579
+And this time, it has lifetime.
+
+487
+01:43:09,579 --> 01:43:20,579
+So, a client asks the DSCP that it wants to use this IP for that number of seconds.
+
+488
+01:43:20,579 --> 01:43:24,579
+And if this IP is available and...
+
+489
+01:43:25,011 --> 01:43:51,691
+DSCP say, okay, you can use it. This is acknowledgement message. Source address is the IP address of the DSCP. Destination address again broadcast. Yield address is the same address as proposed by client. And transaction ID is the ID of the message. And lifetime is the set lifetime. This is, you can see.
+
+490
+01:43:52,083 --> 01:43:56,384
+for type of DSCP messaging.
+
+491
+01:43:58,384 --> 01:43:58,884
+But
+
+492
+01:43:59,119 --> 01:44:02,520
+DSCP is not an IP only.
+
+493
+01:44:02,520 --> 01:44:05,680
+It is more than IP addresses.
+
+494
+01:44:05,680 --> 01:44:11,159
+DSCP can return more than just allocated IP addresses on subnet.
+
+495
+01:44:11,159 --> 01:44:21,720
+It also address of first hop router for client, that is the gateway, and name and IP address of the DSN, DNS server.
+
+496
+01:44:21,720 --> 01:44:26,880
+And the network mask indicating network versus...
+
+497
+01:44:27,119 --> 01:44:30,119
+host portion of the address.
+
+498
+01:44:32,119 --> 01:44:34,119
+Okay, let's have a look at the example.
+
+499
+01:44:37,520 --> 01:44:44,820
+Suppose our router this time, similar to router at home, has a DSCP server built into the router.
+
+500
+01:44:46,420 --> 01:44:49,920
+The client arrives, DSCP,
+
+501
+01:44:51,320 --> 01:44:51,820
+and
+
+502
+01:44:53,524 --> 01:45:19,524
+Sende the SCP package down to the UDP, that is the transport layer protocol, and IP, that is network layer, and it is directly connected to Ethernet and physical layer. Sende to the router, router encapsulate, and say, oh, this is the SCP. And the SCP answers, and go down to the...
+
+503
+01:45:20,564 --> 01:45:38,564
+CLIENT. And now our client has IP address. And not IP address, name of the DNS server, IP address of the gateway, and first hop of the router, so on and so forth. Okay.
+
+504
+01:45:43,252 --> 01:46:09,252
+suppose we have an ISP and we have a block of IP. Let's say ISP IP block is 223.16.0. That is 220, which means first 20 bit is the subnet area and the remaining is host area, which means there are 12...
+
+505
+01:46:09,363 --> 01:46:35,851
+2 power 12 number of hosts can be given by this ISP. And our ISP wants to divide its subnet into many customers and it allocate this time, keeps 3 bit.
+
+506
+01:46:37,619 --> 01:47:03,755
+3-bit bölümünün 3-bit bölümünün 3-bit bölümünün 3-bit bölümünün 3-bit bölümünün 3-bit bölümünün 3-bit bölümünün 3-bit bölümünün 3-bit bölümünün 3-bit bölümünün 3-bit bölümünün 3-bit bölümünün 3-bit bölümünün 3-bit bölümünün 3-bit bölümünün 3-bit bölümünün 3-bit bölümünün 3-bit bölümünün 3-bit bölümünün 3-bit bölümünün 3-bit bölümünün 3-bit bölümünün 3-bit bölümünün 3-bit bölümünün 3-bit bölümünün 3-bit bölümünün 3-bit bölümünün 3-bit bölümünün 3-bit bölümünün 3-bit bölümünün 3-bit bölümünün 3-bit bölümün
+
+507
+01:47:04,416 --> 01:47:07,416
+O
+
+508
+01:47:04,051 --> 01:47:29,420
+So, it is very simple. It has the net, MAC, network, subnet and the MAC, 20. Suppose the organization one move to another ISP. And this time, this one here, slash 20, may not work. In this case,
+
+509
+01:47:30,868 --> 01:47:39,868
+In the routing table of the internet, it says 223.18.0 slash 23.
+
+510
+01:47:39,868 --> 01:47:52,868
+So any packet arrives, longest prefix first, then 23 is longer than 20, and it is divert to the ISPs or us.
+
+511
+01:47:55,868 --> 01:47:58,572
+It's directed to here, okay?
+
+512
+01:47:59,252 --> 01:48:16,852
+Let's discuss last words. How does ISP get a block of address? Where can we get the block of address? Who is responsible for giving these address? ICANN, internet cooperation for a sign named number.
+
+513
+01:48:17,235 --> 01:48:20,635
+Here is the abbreviation and here is the address.
+
+514
+01:48:20,635 --> 01:48:27,235
+And I can allocate IP addresses through five regional registers.
+
+515
+01:48:28,635 --> 01:48:40,635
+And I can also manage DNS root zone, including the delegation of individual TLDs such as COM, EDU, and so on management.
+
+516
+01:48:40,635 --> 01:48:41,835
+And...
+
+517
+01:48:42,996 --> 01:48:46,155
+Yeni bir IP adresi var.
+
+518
+01:48:46,155 --> 01:48:48,996
+No, bu bir adresi var.
+
+519
+01:48:50,176 --> 01:48:52,935
+Bir de ISP'de bir adresi var.
+
+520
+01:48:52,935 --> 01:48:56,416
+2011'de.
+
+521
+01:48:56,416 --> 01:48:59,515
+Yani, no daha IPs var.
+
+522
+01:49:02,115 --> 01:49:04,256
+Yani, no IPs var.
+
+523
+01:49:04,256 --> 01:49:07,756
+Yani, nasıl bir IPs var?
+
+524
+01:49:09,747 --> 01:49:23,747
+Diyanmik area, we can use NAT, network address translation to enlarge the use of IP address, or we can skip to IPv6.
+
+525
+01:49:25,747 --> 01:49:26,747
+Okay.
+
+526
+01:49:27,747 --> 01:49:31,747
+I think this is enough for this presentation.
+
+527
+01:49:31,747 --> 01:49:32,747
+Okay.
+
+528
+01:49:32,747 --> 01:49:34,747
+Any questions?
+
+529
+01:49:35,636 --> 01:50:00,000
+I may answer. Otherwise, see you next week, Sky. And by the way, I am going to give your marks and you are going to learn your mark by this weekend. Okay? See you next week. Arkadaşlar, notları indiririm muhtemelen web...
+
+530
+01:50:00,000 --> 01:50:23,000
+web sitemi atarım ve o bs'den eee size iletirim linki. Oradan görebilirsiniz. O sisteme girmem. Sebebi de en azından mazeres sınavları bitsin ki hepsini bir seferde girelim. Hepinize iyi hafta sonları diliyorum arkadaşlar. Haftaya görüşmek üzere.
+
+531
+01:50:25,427 --> 01:50:28,247
+Kimseden ses çıkmıyor. Uydunuz galiba.
+
+532
+01:50:30,547 --> 01:50:32,087
+İyi hafta sonları hocam.
+
+533
+01:50:33,108 --> 01:50:34,387
+Hadi görüşmek üzere.
+
+534
+01:50:35,148 --> 01:50:36,427
+İyi hafta sonları.
