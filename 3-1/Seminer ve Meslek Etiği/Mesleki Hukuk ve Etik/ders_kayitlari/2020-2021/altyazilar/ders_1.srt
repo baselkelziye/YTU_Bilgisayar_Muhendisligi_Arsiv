@@ -1,0 +1,1603 @@
+1
+00:04:14,771 --> 00:04:33,291
+Evet, merhaba arkadaşlar. Hoş geldiniz. Katılım 96 kişi olduk. 97 olduk. Artıyor hala. Güzel. Toplam nüfusumuz 160 bu derste. Yeni bir rekora imza attım.
+
+2
+00:04:33,843 --> 00:04:53,663
+160 kişilik dersimizi bakalım nasıl yapacağız. Allah'tan ki uzaktan eğitim. Yüz yüze eğitim olsaydı büyük bir ihtimalle konferans salonunda olacaktık hep birlikte. Çünkü bu kadar büyük bir kitleyi koyabileceğimiz bir hacim doğal olarak hani mesafeyi de gözeterek maalesef yok.
+
+3
+00:04:54,144 --> 00:04:59,663
+Tabii orada da başka sorunlar da var. Şu anda konferans salonunda da teknik problemler yaşanıyor.
+
+4
+00:05:00,148 --> 00:05:24,068
+O yüzden uzaktan olması açıkçası bu dönem bizim için belki de şans oldu. Evet, BLM 3012 mize hoş geldiniz. Yine uzaktan eğitimdeyiz, tekrar edeyim. Bahar yarı yılında. Eğer benden ders almamış varsa kimse, ben Göksel Biricik ve bu dersi bu dönem sizlerle birlikte tamamlayacağız.
+
+5
+00:05:25,300 --> 00:05:46,779
+Önce yine ön bilgiyle başlayalım. Bütün derslerde olduğu gibi bir tanıtalım ve akışımızı, kriterlerimizi belirleyelim, kaynaklarımızı söyleyelim. Ondan sonra da bu hafta giriş dersimizi yaparak temel tanımlarımızı ve kavramlarımızı alarak yola devam edelim.
+
+6
+00:05:47,252 --> 00:06:14,252
+Bu ders eğitim planı değiştiği için bir eskiden farklı bir yerdeydi. Daha ufak sınıflardaydı. Sonrasında üçüncü sınıfa alındı. Bu yüzden de bir iki sene açılmadı bu ders. Sonrasında işte ilk defa geçen dönem açıldı. Orada da intibaklar yüzünden zaten hani muaf olan çok fazla öğrenci vardı. Bu yüzden otuz civarı bir nüfusta, yirmi beş otuz kişilik bir sınıfla bu dersi yapmıştık.
+
+7
+00:06:15,252 --> 00:06:27,211
+Ama bu sene artık tam yükümüzü aldık ve herkes 3. sınıfa gelip de intibak yüzünden muaf olmadığı için de oldukça kalabalık olarak devam ediyor.
+
+8
+00:06:27,572 --> 00:06:31,091
+Örgün eğitime geçersek tabii ki doğal olarak bunu gruplara bölmek zorundayız.
+
+9
+00:06:31,651 --> 00:06:39,252
+Dersimiz zorunlu bir ders. Zorunlu ders havuzunda. Seçimlik bir ders değil. O yüzden de temel...
+
+10
+00:06:39,536 --> 00:06:50,515
+Mühendislik formasyonunuzun içinde, özellikle de bilgisayar mühendisliğinde ve bilişim alanında sizin için temel teşkil edecek kavramları tanıtmaya çalışacağız.
+
+11
+00:06:50,896 --> 00:07:12,196
+Perşembe günleri yani bugün biliyorsunuz her hafta perşembe saat 12 ile 13.50 arasında tam böyle öğle saatlerine geldi yine bizim dersimiz. Bu sayede artık bir yandan herhalde atıştırırsınız bir şeyler yemek yerken bir yandan da beni dinlersiniz. Böyle daha belki kalıcı olur bilgiler aklınızda.
+
+12
+00:07:18,896 --> 00:07:36,816
+Bana erişebilirsiniz. Makul bir süre içinde geri dönmeye gayret ediyorum maillere. Bazen yetişemediğim oluyor haliyle. Peki bu dersin kapsamı ne? Evet zorunlu bir ders. Almak zorundayız ama kapsam ne? Esas hedefimiz aslında en özet haliyle.
+
+13
+00:07:37,747 --> 00:07:43,168
+Bilgisayar Mühendisliği'nde ve bilişim alanında mesleki düzenlemeler nelerdir?
+
+14
+00:07:43,168 --> 00:07:49,548
+Ve bununla birlikte hem bizi etkileyen hem de genel için konuşulacak olduğundaki etik kurallar nelerdir?
+
+15
+00:07:49,967 --> 00:07:54,028
+Bunlar konusunda bilgi sahibi olmaya çalışacağız.
+
+16
+00:07:55,668 --> 00:08:00,107
+Ve dersimizin hedefleri olarak da bunları tanımlıyorum.
+
+17
+00:08:00,788 --> 00:08:14,327
+Bu dönemi tamamladığımızda, yani Haziran'ın ortasına doğru geldiğimizde inşallah sağlıklı hepimiz, genel ve mesleki, ahlaki ve etik kuralları öğrenmeyi hedefliyoruz.
+
+18
+00:08:14,427 --> 00:08:23,028
+Ne demek bu? Demek ki hem genele bakacağız, hem de meslek özelindeki, özellikle de bilişim etiğine bakacağız. Bunların kurallarını öğreneceğiz.
+
+19
+00:08:23,668 --> 00:08:45,488
+Çatışmalardan kaçınarak, burada conflict of interest tam olarak aslında karşılığı Türkçe'ye çıkar çatışması olarak çeviriyoruz. Çatışma falan deyince böyle işin içine sanki silahlı çatışma gibi hissettiriyor. O yüzden hani konfiliyorum. Mesleğimizin gereklerini nasıl yerine getirebileceğimizi öğreneceğiz.
+
+20
+00:08:47,860 --> 00:08:58,920
+Mesleğimizle ilgili, mesleğimizi ilgilendiren diyelim, tehditler nelerdir ve mesleğimizin kapsamındaki suçlar nelerdir? Bunları öğreneceğiz.
+
+21
+00:08:58,920 --> 00:09:08,700
+Çoğunu aslında pek çok sağdan soldan ya da gündelik hayatınızdan da duyduğunuz ama burada tabii ki daha formal bir şekilde kategorize ederek bunları işleyeceğiz.
+
+22
+00:09:09,220 --> 00:09:15,160
+Ve mesleğimizi ilgilendiren son bölümde kanun ve yönetmelikler nelerdir?
+
+23
+00:09:15,860 --> 00:09:43,840
+Özelinde tabii ki hangi kanunlar acaba bizim bilişim alanımızı yani mesleki hukuk açısından bilişim hukukumuzu tanımlar ya da formal şekilde ceza karşılıklarıyla birlikte tanımlar ve bununla birlikte işlerin yapılmasını, yürütülmesini sağlamak için ve kanunları daha işler hale getirebilmek, açıklayabilmek için koyulan yönetmelikler, düzenlemeler, mevzu.
+
+24
+00:09:43,860 --> 00:09:50,960
+Bunları öğreneceğiz ve hedeflerimizi dönem sonunda tamamlamış olacağız.
+
+25
+00:09:52,259 --> 00:09:59,860
+Şimdi gelelim dersin kaynaklarına. Dersin kaynakları geçen dönem ilk defa ben de açtığım için biraz...
+
+26
+00:10:00,000 --> 00:10:08,079
+Biraz daha böyle tamamen mesleki, şu geri gelecek olursam, kanun ve yönetmelikler üzerinden dersi işlemiştik.
+
+27
+00:10:08,220 --> 00:10:11,599
+Şu anda bilmiyorum aramızda ikinci kere alan var mı? Birkaç kişi olması lazım.
+
+28
+00:10:12,740 --> 00:10:17,440
+Liste kalabalık olduğu için 110 kişi var. Tek tek kontrol edemeyeceğim kusura bakmayın.
+
+29
+00:10:18,440 --> 00:10:20,980
+Numaralarla daha kolay oluyor, isimlerle daha zor oluyor.
+
+30
+00:10:22,859 --> 00:10:27,980
+Burada biz daha çok kanunlar, mevzuatlar ve bunların maddeleri...
+
+31
+00:10:28,000 --> 00:10:55,940
+İtü yayınlarından Eşref Hoca'nın kitabıdır. Ve ben de bu ders kapsamındaki içerikleri buradan, yani bu kitabı temel alarak ve bunun akışını da temel alarak kurgulayacağım. O yüzden temel aslında kaynağımız bu olacak. Aslında bunlardan faydalanabilirsiniz ama en temel kaynak bu derste.
+
+32
+00:11:12,947 --> 00:11:40,407
+Hem İngilizce hem Türkçe olarak slide'lara erişebilirsiniz. Birebir aynısı değil. Biraz değiştirerek, bazı yerlerini ekleyerek, bazı yerlere eklemeler yaparak düzeltiyorum. Bazı yerlerden bazı konuları çıkartarak biraz daha tabii modifiye bir halini kullanıyor olacağız. Kendimize özel halini kullanıyor olacağız ama temeli bu olacak. Ben de sizinle bu slide'ları zaten ders ilerledikçe paylaşacağım yine diğer derslerde olduğu gibi.
+
+33
+00:11:40,947 --> 00:11:56,147
+Başka ne bizi ilgilendiriyor kaynak olarak? ACM, IEEE ve Bilgisayar Mühendisleri Odası'nın dökümanları var, yayınları var. Bunları inceleyebilirsiniz. Etik kurallar konusunda, mesleki etik kurallar konusunda bunları inceleriz.
+
+34
+00:11:59,744 --> 00:12:17,463
+5237, yani Türk Ceza Kanunu'ndan başlayarak. 5271, en önemlilerinden biri bizim için. 5846, 5070 internet ortamı. 5651 yine. Şu FİSEK, Fikri ve Sinayi.
+
+35
+00:12:18,676 --> 00:12:46,675
+Haklar Kanunu, Eserler Kanunu. Burası internet ortamını düzenleyen kanun. 6698 belki hatırlarsınız KVKK, Kişisel Verilerin Korunması Kanunu. 6563'de yine yanlış olmasın internet, e-ticaret falanla ilgili bir şeylerdi. Bu şekilde yani saydığımız genelden özele doğru şu sondakiler özellikle de 5846, 5651 ve biraz 666.
+
+36
+00:12:46,676 --> 00:13:07,016
+1698 bizim için önemli kanunlar olacak. Evet dersin dediğim gibi son haftalarında bunların maddelerini de tartışarak ilerleyeceğiz. Nasıl yasa koyucu neler yapmış yani yasama organı Türkiye'de ne gibi bir işleyiş düzenlemiş bunları da inceliyor olacağız. Evet kaynaklarımız temel olarak bu kadar.
+
+37
+00:13:08,628 --> 00:13:36,628
+Gelelim değerlendirme kriterlerimize. Önce devam durumu büyük bir ihtimalle merak ediyor olabilirsiniz. Evet, yoklama almıyorum. Uzaktan eğitimde yoklama almıyorum. Dersleri sonradan da takip edebildiğiniz için, kayıttan da izleyebildiğiniz için burada yok. Ama tabii bu F0 almayacağız anlamına gelmez. Yine alabilirsiniz F0. Mesela vizeye girmezsiniz, ödevinizi vermezsiniz. O zaman zaten final sınavına katılamazsınız. Katılamayınca zaten F0'ı almış olacaksınız.
+
+38
+00:13:36,628 --> 00:13:46,648
+Özetle değerlendirme kriterlerine katılım üzerinden F0 alma şansınız her zaman var. Nereden geldi bu F0 diye şaşırmayın. Olabilir.
+
+39
+00:13:47,608 --> 00:14:01,048
+Vize haftasında aksi belirtilmedikçe notunu buraya düşmek zorundayız haliyle değişebilir diye bir ufak bir not düşmekte fayda var. Online sınav yapacağız. Online Yıldız Eritere'deki sınav sistemi üzerinden yapacağız.
+
+40
+00:14:04,628 --> 00:14:26,788
+Kurgu planlamadım. Fakat takdir edersiniz ki 160 kişinin yorum sorularını okumak çok uzun olacaktır. En fazla belki bir yorum sorusu ya da bir inceleme sorusu olur. Diğerleri büyük bir ihtimalle çoktan seçmeli, boşluk doldurma gibi böyle karma sınav mantığında bir şeyler hazırlarız diye düşünüyorum.
+
+41
+00:14:27,764 --> 00:14:42,943
+Ödev var bir de değerlendirme kriterlerimizde. Bu da biraz bizi zorlayacak 160 tane ödev okumak gerçekten. Normalde ben 2-3 tane veririm diye düşünüyordum. Bir anda böyle şoka girdim 160'da. Belki bir ödev de bırakacağız.
+
+42
+00:14:43,303 --> 00:14:50,703
+Şimdi ödevin konusu detaylarını henüz daha planlamadım. Haftalar içinde, 2-3 hafta içinde.
+
+43
+00:14:51,572 --> 00:14:58,351
+Hazırlanacak. Amacım şu, ders kapsamındaki konulardan ya da mesleğimizle ilgili güncel.
+
+44
+00:14:58,720 --> 00:15:16,740
+Hukuki ya da etik problemlerden, ki bunlar çok fazla var, bunlardan birini seçerek bir rapor, bir tanıtım ve bir öneri ya da çözüm yöntemi ya da nasıl geliştiğine dair, ne sonuçlandığına, neden öyle sonuçlandığına dair bir yazılı rapor hazırlamanızı isteyeceğim.
+
+45
+00:15:16,960 --> 00:15:25,800
+Detaylarını daha sonraki haftalarda teslim şartlarını falan da, formatını da açıklayacağım. Şu anda onları söylemeye gerek yok ama böyle bir değerlendirme kriterimiz de olacak.
+
+46
+00:15:26,720 --> 00:15:43,519
+Yine final sınavımızda aksi belirtilmedikçe gidişat nasıl olur bilmiyorum. Hani çağırırlar mı sınavları yüz yüze yapın diye bilmiyoruz. Bu nedenle aksi belirtilmedikçe yine online bir sınav yapacağız final haftasında. Aynı vizeyle benzer şekilde bunun da kurgusu olacak.
+
+47
+00:15:44,419 --> 00:15:51,060
+Not dağılımlarına bakacak olursak devamın bir ağırlığı yok ama dediğim gibi F0 şansınız her zaman var.
+
+48
+00:15:51,423 --> 00:16:12,224
+Vize %40 ağırlıkta olacak. Ödev %20 ağırlıkta olacak. Böylece yıl içi değerlendirmemiz %60 yönetmeliği karşılayacak şekilde. Final sınavı yani yıl sonu değerlendirmesi de %40 ağırlıkta olacak şekilde bir notlandırma baremi ya da dağılımı söz konusu bu ders kapsamında şu andaki aktif dönem için.
+
+49
+00:16:13,812 --> 00:16:19,872
+Evet, şimdi ders planımıza bakalım. Değerlendirme kriterlerimizi, kaynaklarımızı konuştuk.
+
+50
+00:16:20,480 --> 00:16:35,240
+Ders planımız 14 hafta. 14 haftanın bir haftası sanıyorum Ramazan bayramına takılıyor. Şimdi ilk 7 haftaya bakalım. Yani vize haftasından önce kadar neler göreceğiz? Vizeye neler dahil? Ona bakalım.
+
+51
+00:16:35,480 --> 00:16:43,500
+Bugün işte giriş, ders planı, genel bilgiler. Girişi daha yapmadık. Biraz sonra yapmaya başlayacağız. Ders planı ve genel bilgilerdeyiz hala.
+
+52
+00:16:44,532 --> 00:17:06,892
+İkinci hafta ahlak ve etik konusuna eğileceğiz. Yani böyle daha temel kavramları detaylı olarak işleyeceğiz. Hatta bugün zaten tanımlarla bir giriş yapmaya başlayacağız. Üçüncü hafta bilişim suçları deyince ne anlamalıyız? Bunlar nasıl kategorize edilir? Bunlar nasıl kümelenir? Bugün yine başlıklarını vereceğim ama detaylarını üçüncü haftada tartışacağız.
+
+53
+00:17:07,392 --> 00:17:26,852
+Dördüncü haftada kişinin özeli ne demektir? Bunu bilişim özellikle uzayında ya da bilişim alanında karşılığı nedir? Ne anlamalıyız? Yani kişinin özeli deyince neler dahildir, neler haricidir? Ve ifade özgürlüğü konusunda yine bilişim uzayında neler var? Bu konuları, bu başlıkları tartışacağız.
+
+54
+00:17:27,731 --> 00:17:53,092
+5. haftaya geldiğimizde 8 Nisan'da fikir ve sanat eseri ne demektir? Hak kavramı nedir? Yani fikri hak ne demektir? Eser sahipliği ne demektir? Bunun doğurduğu haklar ve ya da tehlikeler nelerdir? Ya da buna karşı işlenebilecek suçlar ya da çiğnenebilecek durumlar nelerdir? Bu gibi kavramları tartışacağız.
+
+55
+00:17:55,731 --> 00:18:08,811
+İşin mesleki tarafına eğilmeye başlayacağız. Mesleki etik nedir ve mühendislik etiği nedir? Yine bilişim üzerinde bunları detaylandırarak öğreneceğiz.
+
+56
+00:18:10,163 --> 00:18:26,304
+Yedinci hafta 22 Nisan. Bu 23 Nisan'dan bir önceki gün ama tabii dersimiz olacak. 23 Nisan Cuma oluyor. Kurumsal etik nedir? Yine bugün tanımını yapacağız ama detaylarıyla kurumsal etiği de bir hafta işlemiş olacağız.
+
+57
+00:18:27,316 --> 00:18:39,655
+Sonrasında biliyorsunuz 8. hafta vize sınavımız var. Buraya kadar olan 7 haftadaki konuları değerlendireceğiz. Bakalım neler öğrenmişiz ya da tartışacağız, nasıl yorumlayabiliyoruz, bunlara bakacağız.
+
+58
+00:18:47,667 --> 00:19:05,927
+Mesleğin bir kısmını, hatta eğitim kısmını da kapsayacak şekilde, üniversiteler ya da araştırma enstitüleri de buna dahil. Eğitim etiği ne demektir? Özellikle bilişim eğitiminde etik nedir? Araştırma etiği ne demektir?
+
+59
+00:19:15,667 --> 00:19:26,667
+Yayın yaparken özellikle de bilgisayar mühendisliği ya da bilişim alanında ve genel anlamda yayın etiği nedir? Publication Etik nedir? Bu detaylara bakacağız.
+
+60
+00:19:27,747 --> 00:19:36,067
+Yani hani hep meslek meslek değil, mesleğin içinde bunlar da var, eğitim de var, araştırma yapmak da var, yayın yapmak da var. Buralara da değmiş olmamız gerekiyor.
+
+61
+00:19:36,067 --> 00:19:43,387
+Sonra 10. hafta Ramazan bayramına denk düşüyor. Ramazanın birinci günü mü oluyor? Galiba birinci günü.
+
+62
+00:19:43,667 --> 00:20:08,427
+O yüzden resmi tatil ve burada ders yapmayacağız. 11. haftaya geldiğimizde artık havalar ısınır herhalde. Yasaklar gevşer herhalde bilmiyorum. Tabii duruma bağlı. Şu andaki gidişat çok hiç açıcı gözükmüyor yine. Bu arada tam bir sene oldu kapanalı. Bugün şey değil mi? Yıldönümü mü? 11 Mart'ta galiba yanlış hatırlamıyorsam geçen sene şeyi...
+
+63
+00:20:09,076 --> 00:20:15,256
+Üniversiteyi ve pek çok kurumu kapatmıştık. Neredeydik? 11. hafta.
+
+64
+00:20:15,539 --> 00:20:29,059
+Burada yine net sosyal ağlara bakacağız ve sosyal ağlarda etik konusunu işleyeceğiz. Bunlar hani biraz daha özelleştirmiş bilişimin alt dalları. Sosyal ağlarda etik deyince neler anlamalıyız?
+
+65
+00:20:43,539 --> 00:21:06,199
+Özellikle hukuk alanında bilişim hukuku deyince ne anlamalıyız? Ve yasalar, biraz önce numaralarını verdiğim yasalarda bizle ilgilendiren ne maddeler var? Nasıl ilgilendiriyor ya da neyi nasıl kısıtlıyor ya da tanımlıyor? Bunları da iki hafta boyunca hem tanıyacağız hem okuyacağız hem de yorumlayıp tartışıp anlamaya gayret edeceğiz.
+
+66
+00:21:11,539 --> 00:21:16,703
+Bu konuda,
+
+67
+00:21:16,703 --> 00:21:34,703
+Final sınavları başlayacak. Artık hangi hafta olur, ne zaman olur onu bilmiyorum. Programa göre bakarız o gidişata. Gördüğünüz gibi eğer varsa tekrar alan, geçen seneye göre ders planı oldukça değişti. Daha dolu, daha zengin bir içerik ve daha doyurucu bir içerik olduğunu düşünüyorum.
+
+68
+00:21:44,703 --> 00:21:50,004
+İyi yönüyle, kötü yönüyle, suçuyla, cezasıyla öğrenmeye gayret edeceğiz.
+
+69
+00:21:50,708 --> 00:22:01,828
+O zaman şimdi artık bugün kısa bir giriş yapıp ufak ufak her haftaki konuların başlıklarına biraz değerek neler var?
+
+70
+00:22:02,188 --> 00:22:12,048
+Yani nasıl bir dönem, nasıl bir kalan 11 hafta vizeyi de saymazsak 11-12 haftalık bir ders içeriği bizi bekliyor?
+
+71
+00:22:12,588 --> 00:22:15,568
+Bunlara bakalım temel tanımlarımızla birlikte.
+
+72
+00:22:15,568 --> 00:22:18,708
+Buraya kadar genel bilgilerimiz ve derslerimiz.
+
+73
+00:22:18,708 --> 00:22:21,408
+Dersin işlenişiyle alakalı sorusu olan var mı?
+
+74
+00:22:23,268 --> 00:22:24,248
+Kısa bir bekleyeyim.
+
+75
+00:22:24,388 --> 00:22:25,428
+Chatten yazabilirsiniz.
+
+76
+00:22:30,355 --> 00:22:51,576
+Ödevler bireysel olacak. Grup değil. O yüzden dedim ya 160 tane ödevi okumak bir anda gözümü korkuttu diye. Detaylarını açıklayacağım ama grup değil, bireysel olarak ödevleri yapacaksınız. Rica ederim. Başka var mı? Bakıyoruz.
+
+77
+00:22:54,259 --> 00:23:07,079
+Bakıyoruz. Evet, başka yok. Peki, o zaman şimdi dersimize başlayabiliriz. Ara büyük ihtimalle vermeyeceğim. Blog olarak bugün yapıp...
+
+78
+00:23:07,635 --> 00:23:33,975
+Konularımızı tamamlarız. Sonrasında önümüzdeki hafta anlatım yoğunluğuna göre blog mu yapalım, ara mı verelim? Buna her hafta halimize, vaktimize göre karar verebiliriz. Bu ders hep konuşacağım yine. Çok konuşunca yoruluyorum. O yüzden bazen ben de ara kullanmayı tercih edebilirim. Ya da eğer yetişiyorsa konular blog olarak bitirmeye gayret ederiz.
+
+79
+00:23:35,124 --> 00:23:36,743
+Peki, şimdi.
+
+80
+00:23:38,291 --> 00:23:57,451
+Neredeyiz? Hangi uzaydayız biz? Bilişim sistemleriyle karşı karşıyayız. Bilgisayar mühendisliğini, mühendislik formasyonunu almak üzere eğitimini alıyoruz. Peki, bilişim sistemleri deyince bu ne işe yarıyor? Bizim hayatımıza çeşitli faydalar sağlıyor. Aslına bakarsanız ne sağlıyor bize bilişim sistemleri?
+
+81
+00:24:06,291 --> 00:24:28,371
+İlişim bize ne faydalar sağlıyor? Bir kere bizi yer ve zaman kısıtlamasından soyutladı. Zaten şu anda herkes kendi evinde ya da başka yerde, işinde, gücünde ama aynı sanal ortamda dersteyiz. Demek ki yer ve zaman kısıtlamasını bir kere ortadan kaldırdığı. Bununla birlikte dünyada olan olayları artık anında öğrenebiliyoruz.
+
+82
+00:24:29,364 --> 00:24:49,364
+Bazen olmadan bile öğrenebiliyoruz değil mi? Dünyanın herhangi bir yerindeki bilgiye erişebiliyoruz. Bilmem ne ülkesinin kütüphanesindeki kayıtları bile sorgulayabiliyoruz. Hiç gidemeyeceğimiz belki. Dünyanın her yerindeki insanlar ile yine böyle bir bilişim sistemi üzerinden görüşme yapabiliyoruz.
+
+83
+00:24:50,304 --> 00:24:59,424
+Paylaşımlar yapabiliyoruz. Görüş alışverişi yapabiliyoruz. Ya da dosya falan gibi düşünün. Fiziksel paylaşımlar bile yapabiliyoruz.
+
+84
+00:25:00,147 --> 00:25:20,768
+Bence alışveriş yapabiliyoruz. Tabi burada işin e-ticaret ve kargo ayağını unutmamamız lazım. Yani tabii ki sanal bir alışveriş de yapabilirsiniz. Örneğin oyunlarda kullanılan o çip paralar bilmem neler onları da alıp satabilirsiniz ama bunun dışında fiziksel olarak alışveriş de yapabiliyoruz. Ve bu yine yer ve zaman kısıtlamasından bizi bağımsız hale getiriyor.
+
+85
+00:25:28,147 --> 00:25:46,807
+4X piyasası, yeni yeni biliyorsunuz işte bu Bitcoin, dijital kripto para birimleri. Bunların hepsinin işlemlerini yapabilmemizi sağlıyor. Müzik dinleyebiliyoruz, film izleyebiliyoruz, dizi izleyebiliyoruz, her şeye bakabiliyoruz, merak ettiğimiz şeyleri görebiliyoruz.
+
+86
+00:25:51,380 --> 00:26:10,660
+Grup olarak, Counter Strike'da PUBG'dir, bilmem nedir, birlikte oyunlar oynayabiliyorsunuz. Ve iş bulabiliyorsunuz ya da çalışacak insan bulabiliyorsunuz. Yani sizin için ödev yapacak ya da sınav sorularını çözecek insan bulabiliyorsunuz diyelim. Tabi bu ne kadar etik tartışacağız.
+
+87
+00:26:10,660 --> 00:26:12,680
+Sonuç.
+
+88
+00:26:13,140 --> 00:26:32,880
+Bilim sistemleri hayatımıza girdi. Eskiden olmayan davranış şekilleri doğurdu. Bizim için doğurdu. Artık ve biz de onları özümsedik, benimsedik. Hayatımızın içini aldık ve direkt olarak kullanıyoruz, yararlanıyoruz. Faydalarından ya da çeşitli faydalarıyla birlikte zararlarına da karşı karşıya kalabiliyoruz.
+
+89
+00:26:41,140 --> 00:26:58,839
+Hukuki sorunlar doğmaya başlıyor. Yani fiziksel haricinde sanal ortamda acaba hukuk nasıl işler? Aynı şekilde işlemeli midir? İnternet ya da genel ağ dediğimiz ortamdaki durum nasıldır ve nasıl olmalıdır? Bunlar hep yeni problemler, yeni sorunlar doğurmaya başladı.
+
+90
+00:26:58,839 --> 00:27:09,140
+İşte o yüzden bilişim hukuku ve bilişim etiği ya da bilgisayar mühendisliği ve bilişim alanındaki mesleki hukuk ve mesleki etiği.
+
+91
+00:27:09,140 --> 00:27:19,700
+Etik kavramlar şeklinde bilişim sistemleri özelinde yeni bir araştırma alanı, çalışma alanı ortaya çıktı.
+
+92
+00:27:19,700 --> 00:27:28,660
+Peki, şimdi önce temelden başlayalım. Etik diyoruz. Etik ne demek? Etik, dört harfli bir kelime. Sözlük anlamı ne acaba?
+
+93
+00:27:29,940 --> 00:27:32,420
+Tabii, sözlük anlamı TDK'dan gelip bakarsınız.
+
+94
+00:27:34,420 --> 00:27:35,700
+Şimdi...
+
+95
+00:27:35,903 --> 00:27:55,203
+Etik, aslında biraz önce de hızlıca söylediğim gibi bir araştırma, bir çalışma alanı ve felsefenin bir alanı, yani bir felsefe alanı olarak sınıflandırılır. Toplumda olması esastır. Toplum içinde, yani bir arada yaşayan bireyler topluluğu içinde, hem bireyler arasındaki...
+
+96
+00:27:55,604 --> 00:28:03,604
+Yani ilişkilerde hem de bireyin toplum geneline kamuya karşı olduğu ya da yaptığı ilişkileri belirleyen...
+
+97
+00:28:04,372 --> 00:28:31,072
+Bu değerler, kurallar ve töreleri araştıran bir alandır. Demek ki aslında insan ilişkilerini, insan insan ve insan toplum ilişkilerinin nasıl olması gerektiğini tartışıyor. Bunun kuralları ne olması gerekir, nasıl olması gerekir. Ve bunlar gördüğünüz gibi hem değerlerle, hem kurallarla, hem de törelerle aslında tanımlanıyor.
+
+98
+00:28:32,372 --> 00:28:40,552
+Aslında her bir toplumun etik anlayışı aynı olmak durumunda değil, farklı olabilir.
+
+99
+00:28:40,731 --> 00:28:46,852
+Biraz sonra ahlak tarafını konuşacağız. O daha evrensel olacak ama etik değişebilir toplumdan topluma.
+
+100
+00:28:46,852 --> 00:28:55,092
+Yani bir toplumun etik bulduğu bir davranış, örneğin İngilizlerin sokakta tükürmesi etik bulunabilirken,
+
+101
+00:28:56,031 --> 00:29:00,372
+mesela bizim toplumumuzda sokağa tükürürseniz bu ayıp karşılıyor.
+
+102
+00:29:00,372 --> 00:29:11,372
+Ya da doğru olarak karşılanmaz. Ya da işte töre. Töre de zaten zaman içinde toplumda oluşan kurallar. Yazılmamış kurallar bütünü. Her toplumun her...
+
+103
+00:29:12,723 --> 00:29:33,743
+Yani ülkeler artık tam böyle toplumları tam birebir karşılamıyor ama yani birlikte yaşayan her bir toplulukta belirli töreler oluşmuş durumda. Zaten şey hani ülkemiz bu konuda bayağı zengin biliyorsunuz. İşte özellikle doğu topraklarına doğru gittiğinizde böyle hani töre cinayeti falan diye şeyler var.
+
+104
+00:29:33,743 --> 00:29:40,584
+Yani çok detayına şu anda bizi bilim etiğini çok fazla ilgilendirme için girmeyelim ama genel tanımı yaptığım için.
+
+105
+00:29:40,723 --> 00:29:51,923
+Söylüyorum. Etik bunlara dayanıyor ve toplum birey ve toplum insan, insan insan arasındaki ilişkilerin nasıl olması gerektiğini araştıran bir bilim dalı.
+
+106
+00:29:53,304 --> 00:30:00,000
+Şimdi etik tabii her şeyden önce istenilecek yaşamın araştırılması.
+
+107
+00:30:00,000 --> 00:30:12,880
+Araştırılması ve anlaşılması. Ne demek bu? Yani nasıl bir yaşam olması gerekiyor? Bu toplumun yaşamı nasıl olması gerekiyor? Bunun tanımlanmasına çalışıyor. Bunun için de araştırıyor ve bu davranışları anlamaya çalışıyor.
+
+108
+00:30:28,000 --> 00:30:39,759
+Neler istenemez, nelere sahip olunabilir, nelere sahip olunamaz. Bunların bilinmesi hepsi birlikte etiği oluşturuyor ya da etik tanımını oluşturuyor.
+
+109
+00:30:39,759 --> 00:30:49,880
+Gördüğünüz gibi tam böyle net bir cümlelik bir tanım hala veremedim. Daha basite indirgeyecek olursak şöyle bir tanım yapabiliriz.
+
+110
+00:30:56,000 --> 00:31:00,599
+Doğru ve yanlış olarak kabul edilenlerin bir kümesi.
+
+111
+00:31:01,140 --> 00:31:24,900
+Ne? Etik adı verilir. Demek ki toplum içindeki davranışların iyisini, kötüsünü tanımlayan, bunları belirleyen kural kümesine etik adı veriyoruz. O zaman hemen bilişim etiğine geçelim. Bilişim alanında etik deyince ne anlamalıyız? Bilişim toplumunu anlamalıyız. Bilişim toplumu ne? Bilişim alanındaki kimler var? Hangi roller? Çalışanlar var.
+
+112
+00:31:25,311 --> 00:31:38,311
+Ve bireyler var. Bilişim ortamını kullananlar var. Demek ki bilişim etiği deyince de bilişim alanında çalışanlar, bilişim alanını kullanan kişiler arasındaki...
+
+113
+00:31:38,579 --> 00:31:53,819
+Ve bunlarla, bütün bireyler ile bilişim toplumu arasındaki ilişkileri belirleyen, değerleri, kuralları, töreleri araştıran bir felsefe alanıdır diye hemen genel tanımdan ikinci parçayı yapıştırarak tam bir tanım yapabiliyoruz.
+
+114
+00:31:54,740 --> 00:32:01,460
+Bilişim etiği demek ki bilişim uzayındaki insanların birbirleriyle olan ilişkilerini düzenlemeye gayret ediyor.
+
+115
+00:32:01,907 --> 00:32:26,008
+Etik deyince temel olarak anlamamız gereken tanım bu. Bazen sizler de kullanıyorsunuzdur. Bu hiç etik olmadı. Hiç etik bir davranış değil. Ne demek bu? Demek ki ben toplumun geneliyle ilişkileri düzenleyen davranış biçiminin dışında bir şeyler yaptım.
+
+116
+00:32:26,451 --> 00:32:51,291
+O yüzden etik değil o davranışım. Onu fark edebiliyoruz. Ama belki başka bir toplumda, başka bir toplulukta o etik bir davranış olarak kabul edilebilirdi. Ama bilişimi özellikle de genel olarak internetle birlikte bütün dünyayı kapsayan bir alan gibi düşünebiliriz. Yani bilişim etiği böyle evrensel, bütün dünyayı kapsayan bir etik tanımı şeklinde yapılması gerekir.
+
+117
+00:32:51,599 --> 00:33:10,819
+Etik böyle değişebilir dedik. Ahlak biraz daha aslında işin temeli. Yani vicdanla doğan aslında insanın içindeki vicdan ile karar vermesini sağlayana başlığa ahlak adını veriyoruz. Ahlakın tanımı da şu aslında.
+
+118
+00:33:11,316 --> 00:33:22,215
+Toplumun yine çoğunluğu tarafından doğru kabul edilen, bütün hepsinin kabul etmesi gerekli değil. Bazı ahlaki kuralları ya da tanımları doğru kabul etmeyebilir.
+
+119
+00:33:22,708 --> 00:33:30,528
+Doğru kabul edilen çoğunluk tarafından kurallar, değerler ve ilkeler kümesine ahlak adını veriyoruz.
+
+120
+00:33:30,528 --> 00:33:43,748
+Tabii genellikle dediğim gibi vicdandan doğmakla birlikte töre ve dine dayandırılır. Ahlaki kurallar, ahlaki tanımlar, ahlaki değerler, ahlaki ilkeler.
+
+121
+00:33:50,708 --> 00:33:53,148
+Neden bu böyle?
+
+122
+00:33:53,551 --> 00:34:07,691
+Neden böyle bir ahlaki kural var ya da neden böyle bir ahlaki değer taşımalıyız konusu neden sorusu sorulmadan, araştırılmadan doğru kabul edilir.
+
+123
+00:34:07,691 --> 00:34:17,572
+Yine ahlak kişinin vicdanından doğuyor dedik ama her toplumun da ahlaki kuralları, ahlaki değerleri, ahlaki ilkeleri aynı olmaz.
+
+124
+00:34:21,552 --> 00:34:46,112
+İçinde bile değişebilen göreceli bir kavram. Etik ise bunu biraz daha böyle hani nedenselliğe araştırılmaz değil de daha böyle mantıksal yolla daha hani kanıta ya da şeye dayalı daha somut çıkarımlara dayalı hani felsefe alanında dedik ya somut çıkarımlara dayalı mantıksal bir yol üzerinden kural oluşturmaya çalışıyor.
+
+125
+00:34:49,552 --> 00:35:16,931
+Daha somut bir şekilde kural ya da tanımlama yapmaya çalışıyor. Bu nedenle de toplumdan topluma değişiyor ama yine de evrensel kurallar, evrensel etik ilkelerden bahsedebiliyoruz. İşte bilişim etiği örneğinde olduğu gibi. Başka alanları da aslında burada tartışabiliriz, ekleyebiliriz. Sosyal ilişkiler dedik, toplum ilişkileri dedik ama iş hayatı.
+
+126
+00:35:17,492 --> 00:35:41,372
+Kurumsal mesela bir firmanın bile normalde bedeni olan bir gerçek kişi olmasa bile tüzel bir kişinin bile aslında etik kuralları var. Olmalı ya da tanımlanmalı. Demek ki iş hayatı içinde bir etik tanımı var. Mesleki hukuk, mesleki etik. Hemen iş hayatı adında etik kavramının olması gerektiğini çıkarabiliyoruz.
+
+127
+00:35:41,940 --> 00:36:06,760
+Aynı zamanda işte ders planında da gördüğünüz bilimsel çalışmalar için de etik kuralların olması gerekir. Hemen burada ilk aklımıza gelen nedir? İşte hayvanların deneylerde kullanımı değil mi? İlaç geliştirilmesinde falan ya da kozmetik sektöründeki o bilmem boyaları falan yaparken hayvanlar üzerinde yapılan testler. Bunlar etik mi? Değil mi? Tartışılıyor mu?
+
+128
+00:36:08,211 --> 00:36:32,231
+Pek tartıştım bir etik değil ama bunu etik dışı olmadığını savunup bu şekilde devam edenler de yok değil. Ya da aşı konusu hani şimdi çok böyle artık gündemimizde aşının denekleri var değil mi? Yani gönüllü denekler var. Faz 1, faz 2, faz 3 artık hepsini herkes öğrendi. Hiçbir zaman farkındaysanız 18 yaş 6 bu deneylerde yok.
+
+129
+00:36:32,659 --> 00:36:47,480
+Neden? Etik değil. Çünkü onunki gelişimine olacak olası etkilerini henüz büyüklerde test etmeden çocuklar üzerinde yapılması bilimsel olarak etik olmadığından dolayı bütün dünyada kabul görmüş bir şey bu. Yapılmıyor.
+
+130
+00:36:47,987 --> 00:37:15,987
+Ama tabii bunun başka örnekleri yok mu? Tarihte biraz araştırırsanız bulamıyor musunuz? Evet, buluyorsunuz. Mesela Nazi Almanyası'na geri dönerseniz, oradaki esirlere yapılan, çocuklara bile yapılan ne gibi deneyler, kolunu kesmek, bacağını kesmek, bakalım yaşıyor mu, sıfır derece suda kaç dakika dayanabiliyor gibi bir sürü bilimsel şeyler de yapılmış. Etik mi? Değil. Ama o zamanki toplum, o zamanki...
+
+131
+00:37:15,987 --> 00:37:34,167
+Yaşam şekliyle etik olarak kabul edilmiş. Bunlar da gördüğünüz gibi toplumdan topluma da zaman içinde de değişebiliyor. Peki bir de yasa var. Kanun, yasa. Ne demek yasa? Yasa zaten yasamadan geliyor. Yasama ne demek? Kanun koymak.
+
+132
+00:37:34,400 --> 00:38:01,920
+Hani güncel tartışmalarda da haberleri izliyorsanız hep böyle yasa koyucu, kanun koyucu falan şeklinde kullanılıyor. Yasama gücüdür. Zaten devletin üç temel ayağı vardır. Yasama yürütme, yargı. Yasama işte bu kuralların, kanunların yani toplum düzeninin nasıl olması gerektiğini tanımlıyor. Hem de formal bir şekilde, resmi bir şekilde tanımlıyor. Ne demek bu? Her şeyin bir karşılığı da var demek. Yani sen buna uymak zorundasın.
+
+133
+00:38:02,400 --> 00:38:26,079
+Bu kurallara, bu yasa ile belirlenen, söylenen şeylere uymak zorundasın. Ve bu yürütülürken, yürütme ayağı tarafından bu süreç sürdürülürken siz buna uymak zorundasınız. Uymazsanız ne olur? Yasayla yine yasa koyucunun tanımladığı yaptırımlara uğrarsınız. Ve bu yaşadığınız toplumda herkes tarafından aynı şekilde karşılanır.
+
+134
+00:38:30,400 --> 00:38:48,400
+Bu yasayı uygulamayalım diye bir şey söz konusu değil. Herkes için uyması zorunlu ve yaptırımlar herkes eşit şekilde alacağı, herkesin aynı yaptırımı alacağı temel bir...
+
+135
+00:38:48,884 --> 00:39:09,683
+Adil ortam sunmakla yükümlü tabii ki yasama. Kim karar veriyor? Ona da üçüncü ayak olan yargı karar veriyor. İşte yasaların uygulanmasını yürütme yapıyor. Denetlenmesini ve işletilmesini yani işte burada bir suç varsa ya da bir yanlış varsa bunun yaptırmanın kararının verilmesini de yargı ayağı yapıyor.
+
+136
+00:39:16,884 --> 00:39:23,683
+Kafaya göre ceza veremiyorsunuz. Üçü birbirini aslında tamamlıyor ve denetliyor şeklinde bir yapı oluşturuluyor devletlerde.
+
+137
+00:39:25,403 --> 00:39:30,903
+Evet, temel ahlak, etik ve yasa tanımlarımızı da bu şekilde yaptık.
+
+138
+00:39:31,603 --> 00:39:49,623
+Yine haftaya dediğim gibi daha detaylı bu konuları tartışacağız. Evrensel etik ilkeler deyince ne anlamalıyız? Yani bütün toplumu, insanları etkileyen evrensel etik ilkeler nelerdir? Şimdi bu başlıkların hepsinin üzerinden yavaş yavaş geçelim.
+
+139
+00:39:59,092 --> 00:39:59,572
+Pardon.
+
+140
+00:40:03,987 --> 00:40:21,387
+Hakkın yerine getirilmesidir. Ya da şöyle söyleyebiliriz. Kim haklı kim haksız? Bunun ayırt edilmesini sağlayan mekanizmaya adalet adını veriyoruz. Peki adalet neyle işletiliyor? Hukuk kurallarıyla tabii ki işletiliyor.
+
+141
+00:40:22,324 --> 00:40:32,864
+Her ülkede, her toplumda adalet hukuk kurallarıyla mı işletilir? Hayır. Örneğin bazı ülkelerde biliyorsunuz ki dini kurallarla.
+
+142
+00:40:33,523 --> 00:40:50,483
+Şeriat mesela, mükelerin bazılarında var. Bunlar da adaleti sağlamak için bir organ olarak kullanılabilir. Adalet neyi getiriyor? Hukuka aykırı davranırsanız eğer, davranışınızla orantılı olacak şekilde ceza alırsınız.
+
+143
+00:40:59,860 --> 00:41:03,300
+Hapis cezası olabilir ömür boyu ya da...
+
+144
+00:41:03,764 --> 00:41:26,964
+Bazı ülkelerde, hatta ülkenin eyaletlerinde bile olabiliyor. İdam kimisinde var, kimisinde yok gibi. Suçun karşılığı ne olmalıdır? Tanımlarının tabii ki adil olarak yapılmalarını içeriyor. İkinci evrensel etik ilke, hukukun üstünlüğü. Ne demek bu hukukun adı üstünlüğü? Hukuk her şeyden üstündür. Hukuk hep üstün olarak kalmalıdır ve hukuk hep üstün olmalıdır demek.
+
+145
+00:41:31,764 --> 00:41:48,504
+Demiyorum artık toplum, anladığınız o farkı ama bir toplumdaki yönetimin hukuk kuralları çerçevesinde yapılmasını, bütün yasaların herkese eşit şekilde uygulanmasını, herkesin yasalara, kanunlara saygılı olmasını,
+
+146
+00:41:48,916 --> 00:42:05,176
+Ve yasaları çiğneyenleri cezalandırılmasına amaçlar. Ne yaptık biz yani? Hukukun üstünlüğünü sağlayarak ya da hukuku üstün tutarak ne yapmış olduk? Toplumda bir güven ve bir huzur ortamı sağlamış olduk. O yüzden bu da evrensel bir etik ilke.
+
+147
+00:42:06,195 --> 00:42:19,115
+Geldik doğruluk ve dürüstlük konusuna. Doğruluk ne demektir? Doğru olmak. Yani doğruları söylemek ya da gerçekleri söylemek, yalan söylememek. Bunlara doğruluk diyoruz.
+
+148
+00:42:19,715 --> 00:42:31,695
+Dürüstlük ne peki? Dürüstlük de davranışlarda doğru olmak. Yani davranışlarınızın doğru olması, yanlış davranışlarda bulunmamanız. Demek ki dürüstlük içerir doğruluk.
+
+149
+00:42:32,115 --> 00:42:43,736
+Diyebiliriz. Biri gerçeği söylemek, biri hem doğruluk, dürüstlükte gerçeği davranmak, gerçek şekilde davranmak, doğru şekilde davranmak olarak tanımlayabiliriz.
+
+150
+00:42:44,456 --> 00:42:53,456
+Eşitlik. Yine eşitlik şey, yani adalet ve dürüstlükle birlikte bunu düşünebiliriz.
+
+151
+00:42:59,507 --> 00:43:05,228
+Hem de zarar tarafında, yani yararlar da olsa, zararlar da olsa ve hizmetler.
+
+152
+00:43:05,715 --> 00:43:28,855
+Bunların ilgili taraflara eşit şekilde paylaştırılması gerekir. Yani siz bir zarar görüyorsanız, mesela bir cezalandırma alıyorsanız, herkese eşit, o suça iştirak eden herkesin eşit oranında ya da suçlarıyla orantılı olacak şekilde cezalandırılmaları gerekir. Doğruysa da doğrularında eşit şekilde dağıtılması gerekir.
+
+153
+00:43:32,403 --> 00:43:51,179
+Eşit olmak, yani herkesin her tarafta, iyi tarafta da kötü tarafta da eşit olmasını sağlamak diye özetleyebiliriz. Tarafsızlık, tarafsızlık da taraf tutmamak, yandaş olmamak, yansız kalmak, tutumlarda, davranışlarda...
+
+154
+00:43:51,315 --> 00:44:00,275
+Belirli bir yöne yakın olacak şekilde tercih yapmamaktır. Demek ki tarafsız davranmak da evrensel bir etik kural.
+
+155
+00:44:00,275 --> 00:44:13,215
+Hemen burada mesela şeye bakalım. Bilişim tarafında işte mesela biraz sonra suç çeşitlerinin başlıklarında da şey yapacağız. İçeriden saldırı gibi şeyler konuşacağız.
+
+156
+00:44:18,420 --> 00:44:40,480
+Kötü niyetli ve müşterileri bir şekilde kandırıyor mu diyeyim, dolandırıyor mu diyeyim. Hani şey oluyor ya cep telefonu sipariş ettiği, içinden çorap çıktı falan gibi haberleri duyuyorsunuz. Böyle davranıyor ve bir işte o firmanın çalışanı da bilişim altyapısını sağlayan bir çalışanı da mesela bu durumun farkında.
+
+157
+00:44:40,916 --> 00:44:51,916
+Şimdi, ben nasıl olsa bu firmada çalışıyorum diye bir firmanın tarafını tutarsa, o zaman müşteriye karşı...
+
+158
+00:44:52,467 --> 00:45:13,727
+Ya da işte son kullanıcılara karşı müşteri tarafını tutarsa da bu sefer iş etiği açısından kendi firmasına karşı tarafsız davranmamış olur. Dengeyi bulması lazım ve tarafsız bir şekilde aslında gidip durumun ne olduğunu yetkili mercillere düzgün bir şekilde aktarması gerekir.
+
+159
+00:45:14,068 --> 00:45:41,208
+Sorumluluk, yine başka bir evrensel etik. Ne demektir sorumluluk? Size bir görev veriliyor ya da sizin bir göreviniz, bir işiniz var. Bunun ve beklentiler var. Bunları işte beklentileri karşılayacak şekilde gerekli hem nitelik olarak hem nicelik olarak karşılayacak şekilde bu sorumluluklarınızı yerine getirmek, görevinizi yerine getirmek olarak sorumluluğu tanımlayabiliriz.
+
+160
+00:45:41,619 --> 00:45:55,999
+İnsan hakları yine evrensel bir etik ilke. İnsan hakları evrensel beğenmemesi var. Biz de biliyorsunuz son zamanlarda yine insan hakları eylem planına sahibiz artık. Ne demektir? Herkes hiçbir ayrım gözetmeden.
+
+161
+00:45:56,367 --> 00:46:22,107
+İşte hani nedir? Cinsiyettir, ırktır, renktir, din, dildir, yaştır, uyruktur, düşünce farkıdır, kökenidir, zenginliğidir ya da fiziksel farklılıklarıdır. Bunların hiçbirine takılmadan kanun karşısında herkes eşittir ve herkes insan olduğu için eşit, özgür ve onurlu bir yaşam hakkına sahiptir demektir.
+
+162
+00:46:22,107 --> 00:46:24,367
+İnsan hakları karşılık.
+
+163
+00:46:24,367 --> 00:46:39,527
+Hoşgörü, yine evrensel kurallardan bir tanesi. Ne demek hoşgörü? Karşınızdakini anlayın, karşınızdakini saygı duyun ve saygılı bir şekilde davranın. Neden? Hepimiz farklıyız.
+
+164
+00:46:40,244 --> 00:46:59,564
+Hepimiz farklı davranışlar sergileyebiliriz. Farklı duygulara, farklı düşüncelere sahip olabiliriz. Farklı davranabiliriz ama yine de biz karşımızdakinin davranışlarını ya da düşüncelerini hoşgörü ile karşılamak durumundayız. Saygı ne demek? Hadi bakalım.
+
+165
+00:46:59,923 --> 00:47:14,604
+Saygı, evrensel bir etik. Yine hoşgörüyüğe yakın aslına bakarsanız. Genellikle bunu hep büyüklerimize saygılı, küçüklerimize sevgili olmak falan şeklinde konuşuyoruz ama saygı aslında şudur.
+
+166
+00:47:18,516 --> 00:47:39,735
+Olduğu gibi, olduğu haliyle görebilmek ve kabullenebilmek demektir. İşte saygı budur tam olarak aslında. Bu da evrensel bir etik kavram. Demokrasi yine eşitlikle, insanın haklarıyla alakalı, hukukla, hukukun üstünlüğüyle de birebir yine alakalı bir kavram. Nedir?
+
+167
+00:47:40,436 --> 00:47:59,676
+İnsanı odaklayan, insanı merkeze alan, insana değer veren ve insanın gelişmesine ve yaşamasına, düzgün ve özgür yaşamasına olanak sağlayan ve bunun için gerekli ortamı sağlayan yönetim şekline demokrasi adı verilir.
+
+168
+00:47:59,676 --> 00:48:04,156
+Yani eşit, hak, hukuk, saygı.
+
+169
+00:48:04,340 --> 00:48:25,420
+Bütün kavramları içeren yönetim şeklinde demokrasi adı verilir. Hak ve özgürlükler dediğimizde de bir şeyi yapma ya da yapmama hakkınızın olması demektir. Ben bunu yapmak istemiyorum dediğinizde yapmaya bilmelisiniz. Bunun için özgürlüğünüzün olması gerekir.
+
+170
+00:48:32,563 --> 00:48:46,023
+Veya devletinizden, yönetiminizden isteyebilecekleriniz, benim hakkım bunlardır diye isteyebileceklerinizi tanımlayabiliriz. Ve hak ve özgürlük sahibi olmak da yine evresel bir etik ilke.
+
+171
+00:48:47,643 --> 00:48:51,023
+Emeğin hakkı, burada emeğin hakkı deyince hani çalışıyorsunuz.
+
+172
+00:48:52,115 --> 00:49:18,856
+Bilek gücü, iş gücü neyse ya da beyin gücü. Sonuçta bunun bir karşılığı olması lazım. Karşılığını da günümüzde neyle alıyoruz karşılıkları? Para birimi şeklinde, ödeme şeklinde alıyoruz. Demek ki herkes çalışmasının karşılığını, emeğinin hakkını ya da işte emeğinin ödeme karşılığını almalıdır. Ve çalıştıran da bu karşılığı vermekle yükümlüdür diyebiliriz.
+
+173
+00:49:18,856 --> 00:49:20,115
+Bu da yine evrensel.
+
+174
+00:49:20,115 --> 00:49:26,635
+Yoksa kölelik, bunun tersine kölelik çalıştır, hiçbir şey verme olur bunun karşılığı.
+
+175
+00:49:27,336 --> 00:49:32,396
+Tabii burada ödemenin de makul zamanlarda yapılmasını falan tartışabiliriz.
+
+176
+00:49:33,516 --> 00:49:47,195
+Siz işi yapıyorsunuz ama ödemeyi alana kadar 3 ay geçiyorsa, 5 ay geçiyorsa o da ayrı bir aslında emeğin hakkının ne kadar korunduğuyla alakalı bir felsefi tartışma, yani etik bir tartışma alanı olabilir.
+
+177
+00:49:47,795 --> 00:50:03,627
+Bu da etik bir ilki olarak düşünebiliriz. Ne demektir tutumlu olmak? Siz bir yerde yaşıyorsunuz. Günümüzde çok yakın zamanda hepimiz yaşadık. İstanbul'da mesela su problemi, barajlar...
+
+178
+00:50:03,731 --> 00:50:21,311
+Dibe indi, bilmem su kalmadı. Tutumlu olmamız gerekti. Herkesin aslında normal hayatında da tutumlu olması gerekti. Ne demek bu? Çevrenin kaynaklarını dibine kadar harcama, diğer toplumun kalanını da düşünerek tutumlu bir şekilde harca ya da davran dememiz gerekiyor.
+
+179
+00:50:21,311 --> 00:50:30,891
+Ve aynı şekilde sadece çevre değil, mesela bir kurumda çalışıyorsunuz, çalışıyoruz diye gidip bütün kitapları printer'dan basmamamız gerekir falan. Hani böyle düşünelim.
+
+180
+00:50:31,731 --> 00:50:47,031
+Maynakları aşırı biçimde harcamaktan sakınmak diyelim ve neden toplumun ya da işletmenin genel sağlığını, devamını sağlayabilmek için de tutumlu olmak gerekir bir evrensel etik ilke olarak.
+
+181
+00:50:47,476 --> 00:51:04,916
+Kaç tane oldu? 2, 4, 6, 8, 10, 12, 13 tane evrensel etikilikten bahsetmiş olduk. Güzel. Peki, şimdi biraz kişi özeline geçmek istiyorum. Yani bireysel, kişisel tarafa biraz geçmek istiyorum.
+
+182
+00:51:04,916 --> 00:51:14,615
+Erdemli kişi nedir? Erdem.
+
+183
+00:51:15,123 --> 00:51:32,163
+Hmm, Erdem. Yok, hay Allah. [öğrenci] var. Erdem bulamadım. Kimsenin Erdem ismi yok ya. Niye yok? Yaralar, o çok olur da Erdem. Neyse. Erdemli kişi ne demektir?
+
+184
+00:51:43,123 --> 00:52:06,523
+Kuralları ve değer ölçülerini yorumlayan ve bunları bir alışkanlık olarak yapan kişilere erdemli kişi denir. Ne demek? Yani düşünecek, değerlendirecek, analitik diyoruz ya biz mühendislik alanında.
+
+185
+00:52:07,155 --> 00:52:27,056
+Analitik düşünce yeteneği olmak gibi. Bunları bütün toplumun ya da evrensel etik ilkeleri göz önüne alarak, bunları düşünüp değerlendirip koyulan kuralları ve değer ölçülerini yorumlayarak bunları davranışlarına işleyen kişilere erdemli kişi adını veririz.
+
+186
+00:52:34,931 --> 00:52:51,652
+Genellikle kanunlarda basiretli olarak türeli. Türe ne demek? Adil olmak demek. Adaletli olmak demek. Yürekli olur. Yürek biliyorsunuz tam Türkçe. Cesur olur yani.
+
+187
+00:52:53,523 --> 00:53:12,084
+Ölçülü. Bunun da yine kanunlardaki şeylerdeki karşılığı itidal olarak geçer. Ya da tartışma programlarında falan belki görürsünüz. Sizleri itidalli davranmaya davet ediyorum falan. Hareketlerinizde itidalli olunuz şeklinde ifadeler duyabilirsiniz. Bunlar da ölçülü olmaktır.
+
+188
+00:53:12,084 --> 00:53:21,144
+Yani adaletli, cesur, basitli ya da sağduyulu ve hareketlerinde davranışlarında ölçülü olan insanlar erdemli kişi olarak tanımlanır.
+
+189
+00:53:21,748 --> 00:53:44,648
+Neden erdemli kişi olmanın tanımını yapmaya çalıştık? Çünkü şimdi önce bireysel etik başlığına bakacağız. Bireysel etik ne demektir? Bireysel etik hatırlarsanız etik hani insan toplum davranışlarını belirliyordu ya. İşte bireyin toplum içindekini davranışlarını belirlemeye bireysel etik adı veriliyor.
+
+190
+00:53:49,748 --> 00:54:07,028
+Bu örneğe bir şeyin vicdanına dayanıyor. Ahlak vicdanına geliyor. Bireysel etiğe birisi önem veriyorsa doğal olarak bir hata, bir kusur, bir eksiklik işlememeye gayret edeceği, buna özen göstereceğine inanılır.
+
+191
+00:54:07,476 --> 00:54:34,615
+İşte çok detaya girmeyelim ama etik değerleriniz varsa eğer nedir? Doğruluk, ahlak, etik davranışlarınız doğanızda vardır. Kusursuz davranmaya çalışırsınız. Bireyse etik sizi buna doğru yöneltir. Vicdanınızın sesiyle neyin doğru neyin yanlış olacağına karar verirsiniz. Haksızlık görürseniz buna karşı durursunuz. Hayatınız boyunca yeni etik değerler öğrenebilirsiniz, edinebilirsiniz.
+
+192
+00:54:35,476 --> 00:54:46,256
+Özgürleştikçe aslında insanlar bu etik ölçütleri ya da ölçümlerinin, ölçümleri diyelim yani metriklerinin düzeyleri yükselir.
+
+193
+00:54:51,092 --> 00:55:10,912
+Birey olarak amacınıza ulaşmaya çalışırken her yolun mübarek olması beklenir. Yani başkalarını ezerek ya da başkalarının haklarını çiğneyerek amacınıza ulaşmamanız gerekir. Aynı işte erdemlikin olmanın da zaten gerekliliklerinden bir tanesi. Doğurduğu sonuçlardan da bir tanesi.
+
+194
+00:55:12,083 --> 00:55:36,023
+Ve bunu yapmak tamamen size bağlı. Yani kişisel. Ancak kendi çabanızla erdemli bir kişi olabilirsiniz ya da kusursuzluğa erişebilirsiniz. Toplum bu konuda size çok fazla bir şey yapamaz. Bu insanın içinde olan vicdan kaynaklı bir davranış olduğu için. Ancak siz kendinizi etik davranmaya ve erdemli kişi olmaya yöneltebilirsiniz.
+
+195
+00:55:37,043 --> 00:55:59,724
+Bir birey olarak evrensel etik ilkeler nelerdir? Hızlıca geçelim. Bir daha hepsinin üzerinde tek tek durmayalım. Doğru olmak, dürüst olmak. Doğruluk, dürüstlük kavramlarını tanıttık zaten. Güvenilir olmak, sadık olmak, adaletli ya da adil olmak, başkalarına yardım etmek, başkalarına saygı göstermek, olduğu gibi kabul etmek biliyorsunuz.
+
+196
+00:56:01,108 --> 00:56:29,108
+Vatandaşlık sorumluluğuna sahip olmak, yadakinin acizliğinden ya da güç durumundan yararlanmamak, acısı olanlar varsa bunların acısını paylaşmak, bireylerin eşit olduğunu baştan kabul etmek, kaynakların adil olarak dağıtılması gerektiğini benimsemek ve her zaman için etik konusunda ya da davranış konusunda da en iyiyi aramak olarak bu ilkeleri, birey bazlı evrensel etik ilkeleri.
+
+197
+00:56:29,108 --> 00:56:51,048
+Evet, şimdi bireysel etik, yani insanın içinde vicdanıyla doğan etik davranış ya da etkileşim şekli ya da kuralları olarak tanımladık. Şimdi geldik meslek etiği ne demek peki? Mesleki etik ne demek? Meslek ne demek? Önce ondan başlayalım.
+
+198
+00:56:55,092 --> 00:56:58,612
+Yaşamını sürdürebilmek için yaptığı,
+
+199
+00:56:59,411 --> 00:57:27,411
+Ve genellikle yoğun bir eğitim ya da yoğun bir çalışma gerektiren sürecin sonunda kazandığınız beceriler ve ünvanınızın adı meslek olarak tanımlanır. Gördüğünüz gibi sadece eğitimle olmuyor. Sadece çalışmayla da olmuyor. Evet olabilir. Yani alaylı olabilirsiniz. Ama eğitim ve çalışma bir şekilde ikisi de yoğun olacak ve beceri kazanacaksınız. Bu beceri konuyorduğunda size bir ünvan verilecek. Mesela sizin eğitiminizin sonunda size bilgisayar mühendisi ünvanı verilecek.
+
+200
+00:57:27,411 --> 00:57:44,971
+Ya da çıraklıktan başlayıp ustasının yanında göre göre yapmayı, mobilya ya da tahta kesmeyi, biçmeyi, birleştirmeyi öğrenen bir kişi marangoz bilmem ne usta olarak ünvan alacak.
+
+201
+00:57:45,191 --> 00:57:50,511
+Toplum tarafından ya da yaşadığı ortam tarafından böyle bir ünvan verilecek.
+
+202
+00:57:53,920 --> 00:57:59,559
+İkisi birlikte de kazanılan bilgi, beceri ve sonrasında elde edilen ünvan olarak tanımlanabilir.
+
+203
+00:57:59,760 --> 00:58:02,140
+Ve bu niye yapılır? Yaşamımızı sürdürebilmek için.
+
+204
+00:58:02,620 --> 00:58:04,920
+Eğer siz bir meslek edindiyseniz...
+
+205
+00:58:06,420 --> 00:58:19,099
+Beceri kazandıysanız, yani bu beceriyi, mesleki becerinizi normalen, etik olarak insanlığın yararına kullanmanız gerekir.
+
+206
+00:58:19,099 --> 00:58:28,400
+Adam beceri kazanmış, hem çalışmış hem eğitimini almış, güvenlik konusunda. Ondan sonra milletin sistemine giriyor.
+
+207
+00:58:29,480 --> 00:58:34,420
+İşte arka kapı bilmem ne yöntemleriyle ve işte bilgi çalıyor. Kredi kartı bilgi.
+
+208
+00:58:34,420 --> 00:58:57,740
+Şimdi adam becerikli, adam mesleğinde ehil ama becerisini insanlığın yararına kullanmıyor. Mesleki olarak etik davranış sergilemiyor. İşte bu şey ne, siyah şapkalı mı oluyor onlar? Hacker, hacker oldun. Etik davranmadın, mesleki etiğe uygun davranmadın.
+
+209
+00:58:58,612 --> 00:59:19,851
+Tabii her mesleğin kendine özgü değerleri ve etik ilkeleri vardır. Olmak durumundadır. Her mesleğin etik kuralları da, ilkeleri de birbirinden farklı olabilir. Çok doğal. Çalışma şekli gereği bile, çalışma ortamı gereği bile farklı etikler olabilir, etik kurallar.
+
+210
+00:59:26,643 --> 00:59:47,063
+Meslek erbaplarına yaptırım uygulanabilir. Ama her zaman değil tabii ki. Uygulanmaya çalışılır diyelim. Şimdi normalen toplumun oluşumunda ya da yönetim şeklinin oluşumunda her mesleğin bir odasının, bağlı olduğu bir odasının olması beklenir.
+
+211
+00:59:47,063 --> 00:59:51,603
+Örneğin çok yakın bir zamana kadar, 2012 miydi kaçta kuruldu? Bilgisayar mühendisleri odası yok.
+
+212
+00:59:51,987 --> 01:00:00,000
+Yoktu. Ne demek bu? Bilgisayar mühendislerinin bağlı olabileceği bir meslek odası yoktu demek. Bu yeri geldiğinde sizin kurallarınızı koyuyoruz.
+
+213
+01:00:00,000 --> 01:00:23,840
+Geri geldiğinde diğerlerinin hakkını gözetecek bir mesleki oluşumun olmaması demekti. Elektrik mühendisleri odası Emo vardı. Emo'nun altında bir alt dal olarak bilgisayar mühendisleri kalıyordu. Ama sonrasında yoğun çabalarla, hatta biz de o zamanlarda Yıldız Kampüsü'ndeydik, karşıda Emo'nun toplantılarında falan bayağı bir şey yapmıştık.
+
+214
+01:00:24,340 --> 01:00:52,239
+İtkel konuşma, hararetli tartışmalar falan olmuştu. Sonrasında bilgisayar mühendisleri ayrıldı ve kendi odalarını kurdular. Artık bir meslek odası var. Şimdi meslek odaları ne yapar? Etik kurallar koyar. Bu etik kurallar, yani üyelerine etik kurallar koyar. Ve bunun amacı da şudur, hedefleri şunlardır. Bir sivil toplum örgütü sonuçta, hani devlet mekanizması değil, sivil toplum örgütü mesleğin toplumsal sorumluluğunu tanımlar. Bu meslek şöyle.
+
+215
+01:00:52,340 --> 01:01:03,320
+Doğru ya da yanlış eylemler konusunda tutarlı ve kararlı yol göstericiler, yönlendiriciler oluşturur.
+
+216
+01:01:03,320 --> 01:01:10,860
+Yani bilgisayar mühendisliği, bunlar doğrudur, bunlar yanlıştır gibi daha formal tanımları ortaya koyar.
+
+217
+01:01:11,440 --> 01:01:16,019
+Meslek üyelerini etik davranma konusunda yüreklendirir diyelim.
+
+218
+01:01:16,307 --> 01:01:37,268
+Yüreklendirir. Onlara destek olur. Bir saniye [öğrenci]. Ve iş yeri sahibi, yani işveren tarafı veya yönetici taraf ile çalışan taraf, emekçi taraf arasındaki mesleki ilişkileri, bilgisayar mühendisliğindeki ilişkileri nasıl çalışacaklarını, çalışma şekillerini düzenler.
+
+219
+01:01:38,452 --> 01:01:56,332
+Şimdi [öğrenci] ara versek olur mu demişsin. Olur. İstiyorsanız ara vereyim. İstiyorsanız dediğim gibi blok yapayım bitireyim. Şöyle bir şey yapalım. Oylama yapalım. Blok yapalım diyenler el kaldırsın bakayım. Şöyle bir sayayım.
+
+220
+01:02:00,724 --> 01:02:09,224
+1, 2, 3, 5, 6. Uy, ne oldu? Sayamadım.
+
+221
+01:02:15,224 --> 01:02:18,144
+Hocam şu an 42'yi geçtik en azından.
+
+222
+01:02:19,564 --> 01:02:23,564
+Birazcık daha azız, onu söyleyecektim. Görsel olarak karar verilebilir gibi.
+
+223
+01:02:24,264 --> 01:02:27,244
+Ya ben hepsini bir arada göremiyorum. Siz nasıl görüyorsunuz?
+
+224
+01:02:27,923 --> 01:02:34,443
+Hocam 6 tane var ya hepsinde. Sağa doğru gidince zaten 6-6-6 gidiyor ya.
+
+225
+01:02:36,123 --> 01:02:39,203
+Haa, ben ekran paylaştığım için onu öyle göremiyorum ki.
+
+226
+01:02:39,683 --> 01:02:40,483
+Aynen oğlum hocam.
+
+227
+01:02:40,884 --> 01:02:56,463
+Yani ben tabii farklıyım. Ekranlarım sizden şu anda haliyle. Yaradan biraz daha az blok istiyor galiba. Bir arkadaş daha onaylayabilir ama. Tamam. 15 geçe tekrar başlıyorum. Tamam. Saat 13.15'te devam ediyorum. 10 dakika ara.
+
+228
+01:14:26,003 --> 01:14:31,344
+Evet, geldim geri. Bir saniye.
+
+229
+01:14:37,844 --> 01:14:40,203
+Havadaki elleri kaldırdım.
+
+230
+01:14:46,068 --> 01:14:57,507
+Böyle şey sormuş ne kadar sürer. Valla bana bırakırsam ben akşama kadar konuşurum. O yüzden dersin sonuna kadar herhalde devam ederiz gibi geliyor. Bu şekilde.
+
+231
+01:14:58,260 --> 01:15:03,840
+Meslek etiği dediğim gibi meslek odaları, meslek kuruluşları tarafından koyuluyor.
+
+232
+01:15:04,340 --> 01:15:18,220
+Ve ana hedefler aslında o mesleği tanımlamak ve biraz daha böyle mesleğin erbaplarını, çalışanlarını, birbirleriyle olan ilişkilerini düzenlemek ve onlar için etik kuralları tanımlamak.
+
+233
+01:15:18,220 --> 01:15:24,399
+Bu şekilde düşünebiliriz. Bireysel tamam. Meslek etiği tamam diye düşünüyorum.
+
+234
+01:15:25,779 --> 01:15:50,519
+Şimdi geldik. Kurumsal etik. Biraz önceki saatte hatırlarsanız şirketlerin de tüzel kişilik olsa bile etik davranışlarının olması gerektiğini söylemiştik. İşte kurumsal etik aslında tam olarak bunu tanımlıyor. Kurum ve kuruluşlarında uyması gereken etik kurallar vardır. Nereden doğdu bu? Ne zaman oluştu?
+
+235
+01:15:51,380 --> 01:16:08,780
+Sanayi devrimi hatırlayabilirsiniz. 19. yüzyıl. Bunu takiben büyük ölçekli marka dediğimiz işletmeler, dünya devi dediğimiz işletmeler 20. yüzyılda oluştu. Ya da markalaşma, şirketleşme esas 20. yüzyılda görünüyor.
+
+236
+01:16:09,819 --> 01:16:16,300
+1800'lerden kalma az marka var ama 1900'lerde biliyorsunuz baya bir marka çoğalıyor.
+
+237
+01:16:17,684 --> 01:16:34,123
+İşletmelerde göre sayı olarak artıyor. Bu yüzden de kişisel etikle ya da mesleki etikle karşılaştırdığımızda kurumsal etik biraz daha yeni bir etik alanı.
+
+238
+01:16:34,484 --> 01:16:44,984
+Tabi bu yüzden de belki de bu etik, kurumsal etik kurallara uyma konusunda pek çok kötü örnek bulabilirsiniz. Şimdi birkaç tane örnek mesela.
+
+239
+01:16:45,391 --> 01:17:03,912
+Bunların bazıları tabii ki ülkemizde mesela birincisi ülkemizde oldu. Bir sadakat kart, loyalty kart uygulaması başlatılıyor. Bir grup tarafından. Ondan sonra bu işte kampanyalar, indirimler, puan toplama gibi özellikleri var.
+
+240
+01:17:13,076 --> 01:17:21,755
+Bütün müşteri bilgileri ile birlikte bu sadakat kart programı yabancı menşeli bir bankaya satıldı.
+
+241
+01:17:23,515 --> 01:17:30,775
+Bu 2002 yılında oldu. Bilmiyorum hatırlıyor musunuz? Ya da merak eden var mı?
+
+242
+01:17:30,775 --> 01:17:39,076
+Ne oldu? Adamlar 1,5 milyon müşterinin kişisel bilgileri ile birlikte başka bir ülkenin bankasına satılmasına.
+
+243
+01:17:39,376 --> 01:17:41,076
+Sağladılar. Etik mi?
+
+244
+01:17:41,747 --> 01:17:57,987
+Kullanıcılar açısından baktığınızda hayır değil. Neden? Siz bilgilerinizin devredilmesi, 3. parti hatta yurt dışı bir yerlere devredilmesi konusunda bir rıza gösterdiniz mi, bir sadakat gösterdiniz mi tartışılır.
+
+245
+01:17:57,987 --> 01:18:08,887
+Artı sonuçta sizden sonra ya da başlangıçtaki şartlarından tamamen bağımsız olacak şekilde başka bir yere satılıyor. Ve satışın amacı da şu.
+
+246
+01:18:09,747 --> 01:18:14,948
+Artık o bankanın kredi kartının adı da o sadakat kartıyla aynı oluyor.
+
+247
+01:18:15,768 --> 01:18:19,907
+Neyse ki daha zaman içinde şey oldu.
+
+248
+01:18:20,627 --> 01:18:38,147
+Bu banka Türk piyasasında artık çok ufak böyle silindi gitti diyebiliriz. Türkiye pazarında artık neredeyse yoklar gibi bir hale geldi. Kendi kurumsal iç etik konusunda da çok büyük sıkıntılar yaşadıkları ya da böyle davrandıkları için.
+
+249
+01:18:38,147 --> 01:18:43,327
+Evet. İkincisi mesela.
+
+250
+01:18:43,859 --> 01:18:53,639
+Savaş dünyada biliyorsunuz bazı ülkeler açık ya da örtülü savaşlar yapıyor. Savaş nedeniyle de ülkeler arasında ticari yasaklar koyulabiliyor.
+
+251
+01:18:55,760 --> 01:19:08,559
+İsmi nedir? Bankanın. Kartın ismini merak etmiyorsun, bankanın ismini mi merak ediyorsun? Yani satın alanı mı merak ediyorsun? Her yol mübahtır deyip bir buçuk milyon hazır müşteriyi aldı diye mi?
+
+252
+01:19:13,076 --> 01:19:17,355
+Neyse, söyleyelim. Sonuçta zaten baksanız bulursunuz.
+
+253
+01:19:22,255 --> 01:19:32,896
+Şöyle, Loyalty Card programı. Ondan sonra sattıkları bankada HSBC. Ondan sonra da HSBC Advantage Card oldu zaten.
+
+254
+01:19:39,604 --> 01:19:57,324
+Bu konuda olay çıkmıştı. Bilmiyorum 2002 yılını hatırlar mısınız ama o zamanlar için ciddi bir şey olmuştu. Sonrasında da bankada bir sürü bonus puan verip milleti susturmuştu mu ya da ikna etmişti. O şekilde olmuştu bu.
+
+255
+01:20:00,000 --> 01:20:07,879
+Dediğim gibi ticari yasaklar olabiliyor. Şimdi bu ticari yasakları denmek için başka ülkeler üzerinden dolaylı satış yapılabiliyor.
+
+256
+01:20:09,639 --> 01:20:15,399
+İşte bu günümüzde en bilindik örnekleri İran biliyorsunuz, Amerika.
+
+257
+01:20:16,319 --> 01:20:21,579
+İşte İran'la Amerika petrol satışı yüzünden şeyler, savaş, örtülü bir savaş var orada.
+
+258
+01:20:22,779 --> 01:20:25,359
+Ambargo biliyorsunuz İran'ın petrolüne koyuluyor.
+
+259
+01:20:26,260 --> 01:20:54,079
+Başka ülkelerde, başka kanallardan işte bu petrolün satışına, mesela Çin'e doğru satışına falan aracılık ediyorlar. Öyle yapıyorlar, böyle yapıyorlar. Sonra işte yine bununla birlikte bankacılık, yani bu paranın dönüşümü daha olarak bankacılık ekosistemi üzerinden olacak. Onu da işte böyle yok altın aldım, yok bir şey sattım, yok onu gösterdim, bunu gösterdim diye dolaylı satışlar yapıp paranın transferini sağlayabiliyorlar. Değer değişimi vasıtasıyla.
+
+260
+01:20:54,260 --> 01:21:15,940
+Ben ona para verdim ama aslında onlardan altın aldım falan diyerek. Böyle şeyler yaşanabiliyor. Özellikle devlet ya da ülkeler boyutuna kadar da gidebiliyor. Ya da bunu şirketler de yapabiliyor. Dolaylı satış. Sonrasında davalar falan açılabiliyor tabii ki. O da etik davranmamanın sonuçları diyelim.
+
+261
+01:21:16,340 --> 01:21:38,280
+Tabi buradaki etik kurallarını kim koyuyor? Güçlü olan koyuyor diyebiliriz kurumsal dünyada. Yine bu daha yakın bir zaman. Bunu eminim çoğunuz hatırlayacaktır. 4-5 sene önceki olay. Bir otomobil markası... Neyse adını söylemeyeyim şimdi. Ney mi? Şirketin adını şey yaptım da onu söyleyecektim. Hangi şirket?
+
+262
+01:21:38,836 --> 01:21:39,796
+Araba şişe ediyor.
+
+263
+01:21:40,515 --> 01:21:42,755
+İşte dur şimdi anlarsınız zaten.
+
+264
+01:21:43,376 --> 01:21:48,076
+Şimdi böyle biliyorsunuz emisyon kuralları var çevreyi korumak için.
+
+265
+01:21:48,435 --> 01:21:50,556
+Zararlı gaz salınımını azaltmak gerekiyor.
+
+266
+01:21:51,252 --> 01:22:10,391
+Her geçen yılda Euro 6, Euro 7 gibi normlar çıkıyor ve motor üreticilerin de, araba üreticilerin bu normları karşılaması gerekiyor yeni arabalarında ve yeni motorlarında. Şimdi bu zor bir test. Adamın elindeki motor bu testleri karşılamıyor ama tabiri caizse çakal şey yapıyor.
+
+267
+01:22:10,783 --> 01:22:22,203
+Motoru yöneten ECU'daki kontrol yazılımını güzel bir şekilde yazdırıyor kendi mühendislerine.
+
+268
+01:22:22,203 --> 01:22:33,403
+Ve o testin bir paten var. Mesela bir dakika boyunca 1000 devirde çalıştırıyor. Ondan sonra ikinci bir testte bilmem kaç dakika çalıştırıyor. Sonra tekrar bilmem ne devrine düşürüyor falan gibi bir paten var.
+
+269
+01:22:38,783 --> 01:22:56,163
+Hemen emisyon şeylerini kısıyor. Hani gazı az veriyor, benzini az koyuyor, neyse havayı çok veriyor falan. Ne oluyor? Emisyonlarınız düşük çıkıyor testlerde. Ama normalde test dışında ver coşkuyu şeklinde gidiyor. Evet, kendisi Volkswagen.
+
+270
+01:22:58,868 --> 01:23:13,167
+Volkswagen Group diyelim hatta. Dizel motorlarında biliyorsunuz böyle bir şey olmuştu. Sonrasında da işte Amerika'da bilmem nerede, Almanya'da, Avrupa Birliği'nde bir sürü davalar, anlaşmalar, ıvırlar, kıvırlar, milyarlarca dolar para konuşuluyor.
+
+271
+01:23:16,079 --> 01:23:33,579
+Şirketin aslında kurumsal etik davranışları ayaklar altına aldığını gösteren örneklerden biri. Takmıyor. Mış gibi gösteriyor. Yapıyormuş gibi gösteriyor. Velaket aslında. Etik davranıyorum deyip esasen altını kazmak. Testi yanıltıyorsun sen.
+
+272
+01:23:34,920 --> 01:23:40,340
+Sonra bunun pek çok örneği var. Ülkemizde de defalarca yaşandı. Hala da şu anda bile yaşanıyor.
+
+273
+01:23:40,659 --> 01:24:00,159
+Şirket borsaya açılıyor, halka açılıyor, borsada işlem görüyor. Sonrasında hayali şeylerle, balon alımlar, satımlar, ihracatlar varmış gibi gösterip, şirketi olduğundan çok daha değerli gösterip, birim hisse senedi kağıdının...
+
+274
+01:24:00,467 --> 01:24:10,207
+Değerini arttırıyorlar, yükseltiyorlar. Normalde 10 liraysa bir anda 60-70 belki 150 liralara çıkıyor bir hissenin fiyatı. Siz de yatırım amaçlı alıyorsunuz.
+
+275
+01:24:10,899 --> 01:24:35,279
+Küçük yatırımcılar olarak işte 10 lot, 5 lot, 1000 lot neyse artık kaç lot açılıyorsa gücünüz oranında alıyorsunuz ya da işte hırsınız oranında. Sonrasında adam zaten içi boş biliyor. Hop diye bir satıyor elindeki bilmem kaç hisseyi. Ondan sonra tabii ki böyle büyük bir satıştan sonra ve şirketin de gerçekte o kadar karlı olmadığı odur budur ortaya çıkınca poat diye bütün hisselerin değerleri düşüyor.
+
+276
+01:24:38,899 --> 01:24:53,439
+10 liralık, 5 liralık hisseler haline geliyor. Adam 145 lirayı çat diye sizden götürüyor. Yani tabiri tam caizse burada özellikle tırnak içinde küçük yatırımcıları silkeleyen, davranışlar sergileyen şeyler de var.
+
+277
+01:24:55,667 --> 01:25:15,067
+Şirketler, bunlar da yine etik aslında davranışlar değil. Gördüğünüz gibi kurumsal etik konusunda etik davranan örnek vermek biraz zor. Genellikle herkes kurumsal dünyada bu etik kuralları ya da etik davranışları sergilememe yönünde davranış eğiliminde oluyor.
+
+278
+01:25:23,667 --> 01:25:40,007
+Etiğe tamamen tabi. Örneğin işte Maliye Bakanlığı'nı düşünün. Deprem oldu Allah korusun. İşte 1999'lu yılda diyelim. Örnek, böyle farz-ı misal.
+
+279
+01:25:40,304 --> 01:26:07,184
+Ve işte ekonomik zorluklar doğdu. Neden? Çünkü çok büyük bir yıkım oldu. Hem de sanayinin kalbinin attığı bir bölgede diyelim böyle bir depremin olduğunu düşünün. Ve işte devlet, mesela Maliye Bakan ya da Hazine neyse artık adını bilmiyorum. Hangi birim yapıyorsa ek bir vergi koydu. Ya da hükümet, bilim yani dediğim gibi. Bunun kararı kim hangi kamu kurumu tarafından veriliyorsa o. Ek vergi nedir ek vergi? İşte cep telefonlarının faturalarından yüzde beş oranında vergi alalım dediler.
+
+280
+01:26:07,796 --> 01:26:27,296
+Özel İletişim Vergisi diyelim adına da dediler mesela. Ve sonrasında bu da aslında hani deprem için yapıldığından dolayı depremin yaraları sarılınca, bu zorluklar geçince, hani düzlüğe çıkınca diyelim, normalen ne olması lazım? Bu verginin geri alınması, kaldırılması lazım. Çünkü zaten ek vergiydi.
+
+281
+01:26:27,615 --> 01:26:54,975
+Sonra ne oluyor mesela bir ülke düşünün. Bu ek vergi hiçbir zaman kaldırılmıyor ve hatta üzerine üzerine %10'a çıkartılıyor mesela bunun oranı. İşte bu da aslında kurumsal olarak, bir kamu kurumu olarak etik olmayan davranışlara örnek olarak verilebilir. Bu şekilde kurumsal tarafta gördüğünüz gibi hep negatif ölçekte örnekler sunabiliyoruz.
+
+282
+01:26:55,412 --> 01:27:19,412
+Yani kurumsal etik aynı zamanda şunu da düzenler. Hani biz hep insan toplum ilişkileri karşılıklı dedik ya, bir kurumun, bir işletmenin, kamu ya da özel bir işletmenin ya da bir kurumun hem topluma karşı, yani kamuya karşı, kurumun da kamuya karşı doğal olarak ve çalışanlarına da karşı, yani hem...
+
+283
+01:27:20,083 --> 01:27:33,823
+Hem dış dünyası ortamı hem de iç dünyası. Yani onu işleten insanları, çalışanları, kendi içindeki aslında organlarına karşı da etik sorumlulukları vardır.
+
+284
+01:27:33,823 --> 01:27:43,823
+Yani kurumsal etik sadece böyle dışarı doğru düşünmeyin. Çalışanlara karşı olan etik davranışlar, örneğin işte uygun çalışma imkanlarının ya da uygun...
+
+285
+01:27:43,923 --> 01:27:51,163
+Mesela tehlikeli bir iş yapılıyorsa koruma elemanlarının işte barettir, kasktır, gözlüktür, bilmem nedir sağlanması.
+
+286
+01:27:51,600 --> 01:28:13,060
+Ya da çalışma saatlerinin insancıl düzenlenmesi falan filan gibi ya da yan haklar gibi, yemek gibi bir sürü etik davranması gereken çalışanlara karşı sorumlulukları da var. Bunlar da yine korumsal etik kapsamında değerlendirilmesi gerekiyor. Bunların da detaylarına sanırım 7. haftada mıydı neydi? Eğileceğiz.
+
+287
+01:28:14,515 --> 01:28:39,295
+Şimdi gelelim kendi alanımıza. Bilişim eti dediğimizde ne anlamalıyız? Bir de ne zaman çıktı bu etik? Şimdi hani kurumsal etiğe görece yenidir dedik. Neden? Çünkü 1900'lerde yaygınlaşmaya başladı. Şimdi bilişim etiğine baktığımızda da aslında daha da yeni. Neden? Çünkü bilgisayarlar zaten hayatımıza, gündelik hayatımıza etkileri ve kullanımı 1950'lerde başlıyor.
+
+288
+01:28:39,956 --> 01:29:03,855
+Bilişim etiğinin tanımı da tam olarak şu. Yine felsefe alanı sonunu yapıştıracağım. Bilişim alanında çalışanlar ve bilişim ortamını kullanan bireyler arasındaki, bakın yine hem çalışan hem birey, toplum arasındaki,
+
+289
+01:29:05,743 --> 01:29:19,523
+Ve bireyleriyle toplum arasındaki, bir daha yazmışım niye böyle oldu, ilişkileri belirleyen, değerleri, kuralları ve töreleri araştıran felsefe alanı. Yani bilişim uzayındaki etik araştırmaya, etik tanımlamalara da bilişim etiği adı veriyoruz.
+
+290
+01:29:19,920 --> 01:29:35,340
+Genellikle bilişim etiği iki yönlü olarak karşımıza çıkar. İki yönlü araştırılır diyelim. Birinci yönü bilişim sistemlerinin oluşturulması ve yaşatılması ile ilgili etik davranışı da ilkeler.
+
+291
+01:29:35,891 --> 01:29:51,591
+İkincisi de bunların kullanımıyla ilgili, hizmet tarafıyla ilgili, erişim tarafıyla ilgili etik ilkeler. Bunu hani ikiye hem yapıcı taraf hem de kullanıcı taraf açısından değerlendirmemiz gerekir, birleşim etiğini.
+
+292
+01:29:51,591 --> 01:29:59,912
+Şimdi bu nasıl gelişti 1950'lerden itibaren? Hızlıca ona bakalım. Şimdi bu isimler yine Eşref Hoca'nın kendi isimleri.
+
+293
+01:30:00,020 --> 01:30:17,780
+Ama öz Türkçe olduğu için ben de kullanmayı istedim. İlk dönem bu 50'ler 70'ler arası gibi düşünebilirsiniz. Çok eski. Ben değil, hatta kim bilmiyorum. Bizim bölümde bile çok az kişi bunları görmüştür.
+
+294
+01:30:18,900 --> 01:30:27,780
+Bağımsız bilgisayarlar kuşağı. Bunlar şey gibi düşünün, mainframe'ler gibi düşünün ama bunlar merkezi bilgisayarlar. Siz gidip belli bir işlem merkezi...
+
+295
+01:30:28,020 --> 01:30:33,680
+Sizin de hesap gerektiren işlemlerinizi, yani bilgisayar gücü gerektiren işlemlerinizi yapıyorsunuz.
+
+296
+01:30:33,720 --> 01:30:34,400
+Böyle randevuyla.
+
+297
+01:30:35,200 --> 01:30:39,220
+Hani perşembe günü saat 12'den saat 13'e kadar makine size ayrılıyor.
+
+298
+01:30:39,400 --> 01:30:41,680
+Ve siz oraya gidip onu çalıştırıyorsunuz gibi düşünün.
+
+299
+01:30:42,340 --> 01:30:44,520
+Bu bağımsız bilgisayarlar kuşağı.
+
+300
+01:30:44,520 --> 01:30:53,100
+Şimdi tabii burada kimsenin bilişim sistemini direkt böyle erişme, elleme, kurcalama hakkı yok.
+
+301
+01:30:53,423 --> 01:31:21,164
+Siz dediğim gibi randevuyla falan çalışılıyor. Belli bir süre için ancak bir kullanım hakkına sahip oluyorsunuz. Network de yok. Ortada iletişimi de yok. O yüzden böyle hani bilişim etiği kapsamında en güzel alan, en güzel çağ diyebiliriz buna. Çünkü merkezi bir şey var. Hani nasıl kullanılacağı konusunda da herkes etik davranışlar sergiliyor. Neden? Kul öyle yapmazsa bir daha giremeyecek çünkü o hesap gücüne faydalanamayacak.
+
+302
+01:31:21,423 --> 01:31:38,224
+İkinci dönem uzak erişim terminalleri kuşağı. Şimdi artık yavaş yavaş böyle intranet gibi hani iç ağlar var. Artık siz o güçlü bilgisayara, merkezi bilgisayara terminal üzerinden erişip bir hani bugün şey gibi düşünün.
+
+303
+01:31:46,676 --> 01:32:03,016
+Ya da işte Amazon servisinde bilmem kaç şey CPU, C-U-H neyse gücü satın alıyorsunuz gibi. Evet, Cloud üzerindeki işlem gücü satın alma şeyi gibi düşünebilirsiniz bunu. Artık uzak erişim terminallerinden var.
+
+304
+01:32:06,676 --> 01:32:32,556
+Erişim konusunda, başkasının erişimini engelleme falan gibi şeyler doğmaya başlıyor. Sonrasında demet bilgisayarlar, yani küçük networkler oluşmaya başlıyor. Böyle bir işletme düşünün. İşletmenin işte mesela ne bileyim, muhasebe biriminde ya da üretim birimindeki böyle 3-5 bilgisayar birbirine bağlı. Bu sayede insanlar birlikte çalışma yapabiliyor. Ne demek bu? A oluşmaya başladı, paylaşım oluşmaya başladı.
+
+305
+01:32:34,676 --> 01:32:48,676
+Etik kurallar, davranışlar, ilkelerin belirlenmesi ya da etik dışı olanların cezalandırılmasıyla alakalı kavramlar ortaya çıkıyor. Sonrasında dördüncü dönem Network, bilgisayar ağları kuşağı. Burada artık...
+
+306
+01:32:48,992 --> 01:33:08,351
+Ağlar böyle 3-5 bilgisayar değil, bütün kurum birbirine bağlı. Ya da bütün kurumun, bütün şubeleri, fabrikası, osu, busu, deposu birbirine bağlanmaya başlıyor. Burada da uzak ağ kavramı ortaya çıkmaya başlıyor. Oradaki erişim problemleri ya da davranış problemleri ya da hizmetin sağlanmasını etkileme problemleri doğmaya başlıyor.
+
+307
+01:33:16,992 --> 01:33:32,952
+Zaten bilişim etiğinin patlama noktası diyebiliriz. İnternet ile birlikte herkes birbirine bağlandığı için, bütün cihazlar, bütün insanlar birbirine bağlanabilir olduğu için etik tanımlarının da daha farklı şekilde değişmesi ve yenilenmesi gerekti.
+
+308
+01:33:32,952 --> 01:33:37,212
+Son dönem, şu anda içinde bulunduğumuz dönem, artık zirve diyebileceğimiz dönem.
+
+309
+01:33:37,619 --> 01:33:53,399
+Bütün network kablosuz ağ. Buna mobil cihazlar da dahil artık. Durum etik açısından daha da karmaşık bir hale geldi tabii ki.
+
+310
+01:33:53,399 --> 01:34:04,339
+Yani teknolojik olarak bilgisayarlar ilerledikçe gördüğünüz gibi etik kuralların ya da davranış tanımlarının da değişmesi.
+
+311
+01:34:04,688 --> 01:34:20,328
+Güncellenmesi, farklılaşması gerekiyor, gerekecek. Bunlara da yine bakacağız. Hızlıca bilişim saldırılarına şöyle bir tanımlayalım. Yine bunlara da eğileceğiz üzerlerine ama bu giriş dersinde nelerden bahsedeceğimizi en azından fark edelim.
+
+312
+01:34:20,328 --> 01:34:27,648
+Ne demek bilişim saldırısı? Bir bilişim sisteminin ya da bilişim sistemlerinin kaynaklarını ya da bilgilerini.
+
+313
+01:34:28,532 --> 01:34:39,311
+Yani kaynak da olabilir, resursları da olabilir, içindeki information ya da data da olabilir. Bunları elde etme, değiştirme, bozma ve yalanlama.
+
+314
+01:34:39,731 --> 01:34:58,811
+Yani Laming de var burada. Amacıyla yapılan her türlü çalışma bilişim sistemine saldırı olarak tanımlanır. Şimdi bilişim sağlısı, burada aslında iki tane şey var. Bir, Cyber Warfare var, bilişim savaş. Bu Koreliler şey yaptı, Ruslar bilmem nereye sızdı, Pentagon'a, odur budur, bunlar.
+
+315
+01:35:00,659 --> 01:35:26,079
+Bilişim saldırısı ise cybercrime dediğimiz daha böyle bireysel diyebiliriz ya da kurumsal diyebiliriz. İşte bilişim alanını, bilişim uzayını kullanarak bir kuruluşun çalışmasını kesintiye uğratmak, engellemek, bozmak veya bilgi sistemini yani kişinin ya da kuruluşun bilgi sistemini veya altyapısını kötü amaçla kullanmak veya verilerinin bütünlüğünü bozmak veya çalmak.
+
+316
+01:35:26,739 --> 01:35:41,739
+Amaçlı saldırılara da bilişim saldırısı adı veriliyor. Şimdi onları hemen sınıflayalım hızlıca. Neler var? Hangi saldırı sınıfları var? Şimdi bunlar beş çeşit.
+
+317
+01:35:42,739 --> 01:36:00,479
+Saldırı sınıfı mevcut. Birincisi etkin ve edilgen saldırılar. Bunu şöyle özetleyebilirsiniz, detaylara çok girmeden. Etkin saldırılar bir bilişim sistemine yapılır. Yani donanım falan gibi düşünün. Direkt sistemi ele geçirmek, sistemin kaynaklarını ele geçirmek gibi saldırılara etkin saldırılar diyoruz.
+
+318
+01:36:00,479 --> 01:36:10,739
+Edilgen saldırılarsa sistemi kullanmak yerine sistemdeki veriye erişmek, bilgiye erişmek, onu kullanmak ya da onu bozmak için yapılanlara da edilgen saldırı adına.
+
+319
+01:36:10,739 --> 01:36:18,739
+Yine aynı şekilde içeriden saldırılar olabilir, dışarıdan saldırılar olabilir. Ne demek bu? Bir kurumda...
+
+320
+01:36:19,188 --> 01:36:47,188
+Görevliler ya da yetkililer ya da çalışanlar bir saldırı yaparsa buna iç saldırı adını veriyoruz. Ya da yetkisiz bireyler dışarıdan dış sistemlerden erişmeye çalışıyorsa da dışarıdan saldırı adını veriyoruz. Kaynağına göre sınıflandırabiliriz saldırıları. Tekil saldırı da işte bir kaynaktan geliyor. Denial of service, DOS attack mesela. Dağıtık saldırı da işte bir zombi ağı gibi falan dağıtık bir şekilde saldırı yapıyoruz.
+
+321
+01:36:47,188 --> 01:37:15,047
+DDoS, Distributed Denial Service da buna en güzel örnek şu anda hızlıca verilebilir. Bir diğeri açıklardan yararlanmak. Hani bilişim sistemlerinde bazı bilinen ya da bilinmeyen, keşfedilecek olan açıklar vardır. İşte bu işletim sistemlerinde sürekli yamanıyor ya, hani Windows Update falan öyle düşünün. Bu açıkları bilip, bu açıklardan sızarak bilişim sisteminden etkin ya da edigen saldırı yaparsanız, onların açıklardan yararlanma sınıfındaki saldırılar adını veriyor.
+
+322
+01:37:15,188 --> 01:37:35,387
+Yani giriş kapısı o bilinen açık ya da bilinmeyen açık. Bu Intel işlemci falan filan muhabbetlerini hatırlarsınız yakın zamanda biliyorsunuz. Ya da bilmiyorsanız da araştırın. Ondan sonra son sınıfımızda şey donanımı yani çalma saldırıları bu şey. Yani bildiğin hırsızlık böyle.
+
+323
+01:37:37,587 --> 01:37:52,587
+Bilgisayarın bir parçasını sökmek gibi düşünün. Ya da işte bir klasterdan bazı nodları alıyorsunuz. Doğal olarak sistemin çalışma şekli değişiyor. Bu da başka bir saldırı sınıfı. Daha böyle şey. Fiziksel olarak saldırı diyeyim ben buna.
+
+324
+01:37:54,728 --> 01:37:57,887
+Hocam, özür dilerim böldüm ama bir soru soru istiyorum.
+
+325
+01:37:58,899 --> 01:38:08,719
+Sor. Biz bunları niye saldırı diye nitelendiriyoruz. Yani hani bu neye göre, hangi kurala kaideye göre. Sonuçta orada bir açık var, yapılmayan bir şey var ve ben bunu kullanıyorum mesela.
+
+326
+01:38:09,919 --> 01:38:12,779
+Etik mi sence? Ya da bu neden olmayan bir durum oluyor. Neden olmasın hocam?
+
+327
+01:38:14,899 --> 01:38:20,139
+Yani tabii bunu Windows fazla düşünmeyelim mesela. Daha açık kaynaklı bir sistem olarak düşünelim. Bildiğin üstünde düşüneyim.
+
+328
+01:38:21,239 --> 01:38:23,179
+Ben bir açık kullanıyorsam bu niye etik olmuyor?
+
+329
+01:38:24,051 --> 01:38:46,611
+Fiziksel olarak düşünelim. Şimdi diyelim ki kale kilidin, Türkiye'de en çok o kullanılır diye söyledim. Kilit markasının bilinen bir hatası var. Diyelim ki içine tel toka sokunca açılıyor. Bu bilinen bir açık.
+
+330
+01:38:47,347 --> 01:38:51,927
+Şimdi sen bu açığı biliyorsun diye bütün evlere girip içindekileri alacak mısın?
+
+331
+01:38:53,887 --> 01:38:59,887
+Ama hocam burada direkt birinin şahsi bir alanına bir özgürlüğünü taciz etmiş oluyorum.
+
+332
+01:38:59,887 --> 01:39:05,507
+Bu bir açıktan adına saldırı koymak bana biraz farklı.
+
+333
+01:39:06,728 --> 01:39:13,667
+Şöyle, marketin ya da bakkalın kapısında da aynı kilit var. Sen aynı teli oraya soktun. Al sana kurumsal bir saldırı.
+
+334
+01:39:14,323 --> 01:39:21,163
+Yani etik mi? Yasalarla bile bunun cezaları belirlenmemiş mi? Kanunları koyulmuş.
+
+335
+01:39:21,903 --> 01:39:32,003
+Burada kilidi açmak, kilide saldırmanın yasağı mı hocam yoksa karşı tarafın evine girmenin, haneye tecavüzün ya da malınan mülküne zarar vermenin cezası mı?
+
+336
+01:39:33,363 --> 01:39:35,323
+Yani sen bilinen bir açı...
+
+337
+01:39:35,859 --> 01:39:50,039
+Bilinen bir açığı kullanmayı etik olarak buluyorsan, bireyler etikleri farklı yorumlayabilir demiştik en başta etik kuralları, o zaman tabii ki bu saldırıları yapabilirsin. Ama toplumun geneli buna etik bulmadığı için bunlar saldırı olarak adlandırılıyor.
+
+338
+01:39:50,979 --> 01:39:53,739
+Toplumun genel kabulüyle alakalı bir durum hocam, olamam.
+
+339
+01:39:55,479 --> 01:39:58,799
+Aynen öyle. Ama bak şöyle bir toplum vardır.
+
+340
+01:40:00,000 --> 01:40:23,219
+Hani şey düşünelim, farz edelim. Bu toplumda kilitlemek, bir şeyi kilit altına almak etik değildir. Her şeyin açık olmasını ister. Mesela atıyorum böyle sosyalist tarzı bir şey, oluşum düşünelim. Tamam? Bütün herkesin evi açık olmak durumunda. Eğer evini kilitlersen bu etik olmayan bir davranış. O zaman işte şey olabilir, tam tersi geçerli olabilir.
+
+341
+01:40:26,707 --> 01:40:31,807
+O açıkların kullanılmasını istemediği için biz bunu saldırı gibi olumsuz bir kelimeyle niteliyoruz o zaman.
+
+342
+01:40:32,867 --> 01:40:37,087
+Evet, evet. Dediğim gibi hani sosyaliyle benzer bir ortam düşün.
+
+343
+01:40:37,680 --> 01:40:56,080
+Yok yok böyle. Daha iyi. Tartışmak lazım bu derste zaten arada. Tanımlar konusunda daha iyi bence. Daha kalıcı olur. Daha iyi oturur kafamızda. Dediğim gibi o işte hani herkesin evinin açık olması beklenen ve evinizi kilitliyorsanız etik dışı davrandığınız bir toplumda yaşadığınızı düşünün.
+
+344
+01:40:56,080 --> 01:41:05,680
+İşte o zaman hani gidip başkasının evini kilitlersen ya da kendi evini özellikle kilitli tutmaya devam edersen o zaman etik dışı davranmış olacaksın. O toplumda.
+
+345
+01:41:05,680 --> 01:41:22,940
+Toplumda. Ama toplumun genel çerçevesini, genel kabullerini düşünmemiz gerekiyor. Ha sen dersen ki, ki biraz sonra aslında söyleyeceğim, internetin yapısı zaten bu amaçla tasarlanmış. O ayrı bir tartışma konusu. Şimdi oraya da ufak bir değineceğiz tabii.
+
+346
+01:41:28,340 --> 01:41:35,880
+Kümleyebiliriz bir de bu saldırıları. Nedir? Bireylere yönelik saldırılar. Bu tekil. Böyle ne bileyim birini...
+
+347
+01:41:36,115 --> 01:41:55,456
+Birinin bilgisayarını özellikle bozmak ya da birinin bilgisayarına özellikle bir program yerleştirip onun bilgilerini ya da şifrelerini almak gibi düşünebilirsiniz. Varlıklara yönelik saldırı dediğimizde de asetler mesela bir bankaya girdiler hesap bilgilerini ya da işte bir e-ticaret sitesine girdiler.
+
+348
+01:41:55,456 --> 01:42:04,115
+Adam insanların alışveriş geçmişlerini aldılar ya da işte bir web sayfasının hacklenmesi. Onlar hani data ya da varlık.
+
+349
+01:42:04,115 --> 01:42:14,115
+Ya da asetlere karşı yapılan saldırılar. Hani hedef bunlar. Bir de topluma yönelik saldırılar var. İşte bunlar da şey, böyle...
+
+350
+01:42:14,931 --> 01:42:30,372
+Neyse söyleyeyim, toplumda korku, panik ortamı falan yaratmak için hackerlar ya da terörist gruplar diyelim, düşman ülkeler diyelim, bu gibi oluşumlar size saldırıyor ülkenize ya da halkınıza saldırıyor.
+
+351
+01:42:30,372 --> 01:42:42,931
+Mesela sizin ülkenizin internet çıkışını yavaşlatıyorlar gibi ya da başka yerlere yönlendirilmesini sağlıyor falan gibi trafiğin toplumun geneline yönelik saldırıyor.
+
+352
+01:42:42,931 --> 01:42:49,212
+Bu sınıflardakiler bunlara yönelik saldırı olabilir. 3'e yönelik de o tabii ki olabilir.
+
+353
+01:42:51,771 --> 01:42:52,011
+Evet.
+
+354
+01:42:53,692 --> 01:43:03,851
+Şimdi az kaldı. 2-3 slide'ımız kaldı. Bilişim alanındaki saldırıların biçimlerini belki şey yapabiliriz. Yöntemler.
+
+355
+01:43:03,851 --> 01:43:08,011
+Yine bunlara bakacağız detaylı ama sızma. Nedir?
+
+356
+01:43:09,108 --> 01:43:29,228
+Bir bilgisayara uzaktan erişerek içine girme ve oradaki mesela bilgilere erişme, bilgileri elde etme. Bu şey, nasıl söyleyeyim, sızdıkları sistemin önemine göre hafif ya da ağır cezalarla karşı karşıya kalabilirler.
+
+357
+01:43:29,811 --> 01:43:38,992
+Yani kişisel bir bilgisayara girmekle, sızmak ile bir bankanın bilmem ne sistemine girmek arasında ceza konusunda farklılıklar oluşuyor.
+
+358
+01:43:41,268 --> 01:43:57,667
+Bir de sızmada şey var, bu beyaz şapkalı arkadaşlar biliyorsunuz, sistem açıklarını bulmak için biz bunu yapıyoruz diye sızıyorlar. Bunlar da masum davranışlar olarak isimlendiriliyor. Ama yine de doğru bir şey değil, sonuçta bir sızma, bir saldırı biçimi.
+
+359
+01:43:58,068 --> 01:44:11,728
+Eser çalma var. Bunlar da direkt FISEC'te konuşacağız. Fikri ve Sinayi Mülkiyet hakları olan eserler var. Direkt bunları çalmak. Mesela müzik indirmek, video indirmek gibi düşünebilirsiniz. Telif hakkını ihlal etmek.
+
+360
+01:44:12,268 --> 01:44:22,699
+Sinsice izlemek şey, genellikle korkutmak amaçlı ya da birini işte, evet korkutmak diyelim. Bunun için yapılır. Mesela birisi...
+
+361
+01:44:22,739 --> 01:44:28,140
+Birisini hedef aldınız ve sürekli ona böyle tehditkar e-postalar yolluyorsunuz falan.
+
+362
+01:44:29,140 --> 01:44:34,380
+Ona ne yaptığını biliyorum, şimdi şöyle olacaksın, böyle bilmem ne. Bunlara sensizce izleme deniyor.
+
+363
+01:44:35,319 --> 01:44:42,500
+Kimlik çalma yine sizin kredi kartı bilgilerinizin çalınması, kimlik bilgilerinizin çalınması, kişisel bilgilerinizin çalınması gibi,
+
+364
+01:44:42,500 --> 01:44:47,640
+hatta işte kredi kartınızın boşaltılması gibi şeyler, yöntem.
+
+365
+01:44:48,243 --> 01:45:08,863
+Genel yöntem başlığı. Çocuk istismarı. Bunun çok detayına girmeye gerek yok. Biliyorsunuz işte çocukları böyle ne bileyim hani sohbette, Facebook'ta ya da şeyde sanal dünyada istismar etmek için, kullanmak için kötü niyetli kişiler var. Bunlara da bir saldırı biçimi olarak nitelendiriyoruz.
+
+366
+01:45:09,703 --> 01:45:10,643
+Meşgul etme.
+
+367
+01:45:11,283 --> 01:45:36,583
+Bu klasik DOS, Denial of Service. Sürekli istek yolluyorsunuz. Gerçek kullanıcılar hizmet alamıyor. DNS değiştirme ya da kuvvetlendirme, DNS kuvvetlendirme bunlar da özellikle şey, siz bir bankaya girdiğinizi zannediyorsunuz ama aslında o DNS'de başka IP'ye gitmiş oluyorsunuz, başka DNS'e yönlendirilmiş oluyorsunuz ve siz başka bir aslında bilişim sistemine bağlanıp bilgileriniz oraya girmiş oluyorsunuz.
+
+368
+01:45:36,880 --> 01:46:04,720
+Oltalama saldırıları, olta atma, phishing. Bunun da detaylarını yine bakarız. Biliyorsunuz o fake linkler bilmem neler. Dolandırma var, kandırma var, avlama var. Dolandırma da genellikle şu şey. Eminim hepinize gelmiştir. Selamun aleyküm sevgili kardeş. Ben Nijerya'dan bilmem kim. Benim işte amcamla babam şu savaşta öldü. Bilmem 10 milyon dolar miras kaldı ama bankada bloke.
+
+369
+01:46:04,880 --> 01:46:23,779
+Blokinin kaldırılması için bana bir 100-1000 dolar atarsan sana yarısını vereceğim gibi dolandırıcılık şeyleri. Geldi mi hiç Nijerya'dan? Nijerya prensi. Süper. İşte bu dolandırıcılık. Sonra işte şey.
+
+370
+01:46:24,224 --> 01:46:49,003
+Kötü niyetli yazılımlarda yine kandırma, avlama için zaten kullanılıyor. Başkasıymış gibi davranmak falan filan. Bunların da detaylarına yine bakarız. Bunların peki nelerle aslında yapılıyor? Hindistan Call Center, güzel şeyler. Hepiniz yaşamışsınız maşallah. Eski bir bakan çocuğu. Güzel. Bilgisayarınıza virüs bulaşmış değil mi?
+
+371
+01:46:49,555 --> 01:47:15,275
+Şey var bu aralar, çok komik. Bu arada bizim üniversiteye gelmeye başladı, üniversite mailine. E-mail kotanız dolmak üzere, %95'i geçti. Ondan sonra işte şey, alanı arttırmak, bilmem neleri temizlemek için şuraya tıklayın diyor. Güzel de yapmışlar yani, helal olsun. Artık sonrasında ne çıkar bilmiyorum tabii ki.
+
+372
+01:47:16,532 --> 01:47:44,532
+Zararlı yazılımlarda, saldırılarda kullanılan aslında, araçlı gereç bunlar temelde. Virüsler var. Virüsler şeydir, temel olarak aslında bilgisayar programıdır. Aynı bizim bu işte koronavirüs gibi kendini bir programa ekler ya da programa saldırır ve kendini kopyalar bilgisayar içinde. Terek virüsün çoğalması gibi başka programlara da yayılmaya gayret ediyoruz.
+
+373
+01:47:44,532 --> 01:47:50,152
+Amaç şeydir. Programların çalışmasına ya da verilerin bozulmasına sebep olmaktır.
+
+374
+01:47:51,311 --> 01:48:01,851
+Wormlar var. Kurt. Kurtlar da bunun aynısını network'teki hali gibi düşünün. Network'ta yayılıyor. Bir network'teki nodlara yayılan ve orada kendini çoğaltan zararlı yazılım.
+
+375
+01:48:02,492 --> 01:48:10,811
+Truva atı yine kötü niyetli yazılım. Giriyor sisteme ama hemen aktif olmuyor. Aynı Truva efsanesi gibi.
+
+376
+01:48:12,148 --> 01:48:29,548
+Stuxnet biraz daha şey ama, o biraz daha offline olan değil miydi? O İran şey değil mi o? Onu direkt virüs diyelim. Borm demeyelim o. Çünkü o kapalı bir erişim, network erişimi olmayan bilgisayara flash bellekle takmışlardı onu.
+
+377
+01:48:30,931 --> 01:48:55,871
+Ne dedik? Trojan Horslar gecikmeli. Bir gün sonra ya da belli bir zaman sonra ya da istendiği zaman arka kapı açıyor. Ve onun yine o bilgisayarın kullanılmaz hale gelmesini sağlıyor. Casus yazılımlar bilgi toplamak için. Mesela sizin bastığınız tuşları bilmem neleri takip etmek için kullanılıyor.
+
+378
+01:48:58,931 --> 01:49:23,671
+İşte bu zombi bilgisayar haline getiriyor. Ve işte DOS ataklarda bilmem nelerde ya da işte bu yeni Bitcoin Mining'de falan sizin sistem kaynaklarınızın başkalarına kullandırılmasını sağlıyor. Yaramaz yazılımlar var. Bunlar da şey böyle mesela size sürekli e-posta atıyor falan. Normalde hani çok şey değil. Hani bir zararı yok ama.
+
+379
+01:49:24,148 --> 01:49:41,467
+Nihayetinde mesela şey olabilir. Hakikaten mail kutunuz da olabilir. Kota'nız da olabilir. Öyle şeyler. Ya da işte limitli şeyiniz, internetiniz varsa orada paketinizin boşu boşuna internetinin yenmesine sebep olabilir gibi yazılımlar da yaramaz. Hani kötü değil ama...
+
+380
+01:49:41,971 --> 01:50:08,571
+Şey yapıyor, boşuna harcamanıza sebep oluyor bazı şeyleri. Bir de ransomware, kurtulmalık, fidye yazılımları yeni biliyorsunuz var. Giriyor, işte dosya sistemini mesela şifreliyor. Şu kadar şey yollamazsan bitcoin bilmem ne ya da dolar şifreyi yollamam diyor. Şöyle şifreli kalırsın diyor falan filan. Bunlar da ransomware ya da fidye yazılımları olarak karşımıza çıkıyor.
+
+381
+01:50:09,279 --> 01:50:26,339
+Peki bu suçlar, saldırılar nasıl etkiler doğuruyor? Tabii ki bütün suçlar gibi bilişim suçları da aslında ortamı etkiliyor, çevreyi etkiliyor. Neden böyle bir şey oluşuyor özellikle bilişim alanında? Biraz önce söyledim. Aslında bunun temel sebebi internet tasarımındaki zayıflık.
+
+382
+01:50:26,703 --> 01:50:45,451
+Neden zayıf peki? Çünkü internet dediğimiz, genel ağ dediğimiz yapı aslında ARPANET'e dayanıyor. Bunu hepiniz biliyorsunuz. ARPANET de aslında işte şeydeki kamu kurumlarını ve üniversiteleri Amerika'daki birbirine bağlamak için tasarlanan bir kapalı ağ. Doğal olarak hani kontrollü bir ortam ve hani...
+
+383
+01:50:45,460 --> 01:51:09,260
+Kötü davranışı sergileyecek nodların olmadığı bir network yapısı olduğundan dolayı da güvenlik arka plana atılıyor. Farklı bir katmanla bu işi hallederiz diye bırakılıyor. İşte bu yapı aslında hala da internetin temelini oluşturduğu için saldırılara açık bir ortam, bir ağ ortamı oluşmasına neden oluyor. Belki daha farklı bir şeyle, mimariyle.
+
+384
+01:51:09,747 --> 01:51:37,747
+Bir mimari tasarımına güvenlik daha fazla arttırılabilirdi. Örneğin, örnek mesela GSM şebekesi bir miktar daha güvenlidir. Sim kartları düşünün, sim kart olmadan bağlanamıyorsunuz oraya gibi düşünün. Tabii onu da biliyorsunuz %100 sağlamıyor güvenliği. Klonluyorlar, öyle yapıyorlar, böyle yapıyorlar. Onun da bir sürü şeyi var. Ama daha güvenli bir network yapılabilirdi. Fakat ARPANET sayesinde güvensiz bir...
+
+385
+01:51:37,747 --> 01:51:44,407
+Güvenliğin arka plana atıldığı bir ortam olduğu için de pek çok bilişim suçu burada ya da saldırısı oluşabiliyor.
+
+386
+01:51:44,927 --> 01:51:48,007
+İşte o yüzden de bunlar niye saldırı olarak nitelendiriliyor?
+
+387
+01:51:48,127 --> 01:51:57,347
+Bence bunlar saldırı değildir, normaldir bu ortamda gibi davranışları da bu durumda saygı ile karşılamamız gerekiyor tabii ki.
+
+388
+01:51:57,347 --> 01:51:59,527
+Ama toplumun geneline baktığımızda etik sayılmıyor.
+
+389
+01:52:00,659 --> 01:52:21,619
+Bu ekonomik etkileri var. En büyük şeyleri, işte bu e-ticaret alanında ve bankacılık alanında bu etkileri görebilirsiniz. Çok detayına girmeyeyim. Sosyal etkileri vardır. Sosyal alandaki etkileri de, işte bir şeyler var, laymırlar var. Mesela uzman değil adam ama hani bir güvenlik konusunda yetkinliği de yok.
+
+390
+01:52:23,347 --> 01:52:34,068
+Hazır yazılımlar kullanıp kendini böyle o bak nasıl hackledim falan, bak nasıl girdim senin şeyine, bak nasıl işte hatmayı, şifreni aldım gibi hayal dünyasında kendini kandıran ya da şey yapan.
+
+391
+01:52:34,416 --> 01:52:49,496
+Saldırdım şeklinde davranışlar sergileyen arkadaşlar var. Uzman olabilirsiniz. Onlar da mesela kişisel ego, kendini kanıtlama isteği yüzünden bunları yapabilir. Bu da bir sosyal etki yaratıyor.
+
+392
+01:52:49,496 --> 01:52:59,136
+İşte beyaz şapkalılar aslında masumca açık bulmaya çalışıyoruz diyorlar. Siyah şapkalılar da bunu kötü niyetle özellikle yapıyorlar.
+
+393
+01:52:59,667 --> 01:53:16,547
+Bunlar da yine sosyal etkiler. Ve bir de şey var, onu da bu kategoriye sokmakta fayda var. Asparagast siteler, aslında yalan haber yapan siteler. Bunlar da aslında sosyal bir etki yine yaratıyor. Toplumda yanlış algılamalar falan oluşmasına sebebiyet verebiliyor. Politik etkileri var.
+
+394
+01:53:21,600 --> 01:53:28,439
+Yok Facebook verileri, yok işte analitik şeyi, İngiltere'deki insanları yönlendirici tweetler, onlar bunlar.
+
+395
+01:53:29,819 --> 01:53:34,000
+Ülke yönetimine karşı böyle yönlendirici yayınlarla da politik etkiler doğabiliyor.
+
+396
+01:53:34,180 --> 01:53:38,220
+Yani koskoca bir ülkenin yönetimi bile bazen değişebiliyor.
+
+397
+01:53:38,739 --> 01:53:45,159
+Bu özellikle tabii yapılıyor. Bu saldırılarla da böyle etkiler, politik etkiler de görülebilir.
+
+398
+01:53:46,996 --> 01:54:05,176
+Şimdi bunları tek tek işlemeyelim ama zamanı gelince üzerinden geçeceğiz. Kabaca bilişim suçları, içeriden yapılan eylemler, dışarıdan yapılan eylemler, normal suçlar ama artık bilişimle de yapılabilenler, özel hayata ve hayatın gizli alanına karşı, hani bu kişisel alan falan konuşacağız, bu suçlar.
+
+399
+01:54:05,684 --> 01:54:28,304
+Bir kişinin ya da kurumun mal varlığına karşı işlenen suçlar ve genel olarak bilişim alanındaki suçlar olarak kategorize ediliyor. Yeri geldikçe haftalar içinde bunlara da bakacağız. Şimdi şu anda bakıyorum saatimiz çok şey olmuş. Dersimiz bitmiş. Ben uzatmaları oynuyorum şu anda. Evet, bunların detaylarını dediğim gibi haftalarda göreceğiz.
+
+400
+01:54:33,684 --> 01:54:48,583
+Hepsinin genel bir tanımını öğrendik ve dönem boyunca nelere bakacağız onların kısaca üzerinden geçtik. Önümüzdeki ders detaylarla birlikte çalışmaya, öğrenmeye başlayacağız. Soru herhalde yoktur diye düşünüyorum.
+
+401
+01:54:53,235 --> 01:55:02,175
+Şimdi sizin de iki de dersiniz olabilir. O yüzden ben hemen hızlıca kapatıyorum. Haftaya Perşembe 12'de görüşmek üzere. Kendinize iyi bakın.
