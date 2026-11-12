@@ -1,0 +1,1319 @@
+1
+00:01:10,451 --> 00:01:12,992
+Merhabalar arkadaşlar. Sesim geliyor mu?
+
+2
+00:05:29,076 --> 00:05:55,176
+Merhabalar arkadaşlar. Kolay gelsin. Şu anda 33 kişi bağlanmış. Daha önceki haftalar tekrar ettiğim gibi, arkadaşlığın kayıtlardan izlemek yerine dersi derste dinlemeli çok daha önemli arkadaşlar. Bununla alakalı bir kayıt alırlarsa, ileride devamla alakalı. Bu tabii ki sizin sorumluluğunuzda arkadaşlar.
+
+3
+00:05:56,211 --> 00:06:03,192
+Ses geliyor zannedersem herhangi bir sorun yok. [öğrenci] [öğrenci] ses geliyor mu?
+
+4
+00:06:05,911 --> 00:06:23,231
+Evet hocam geliyor. Tamamdır. O zaman dersimize başlayalım. Önümüzdeki hafta 23 Nisan haftası ders olacak mı acaba? O konuda karşısında daha önceki 23 Nisan'larda yapmamışlardı zannedersem. Bu konuda bilgisi olan var mı?
+
+5
+00:06:24,564 --> 00:06:29,944
+Hocam, bilgisayar donanımı dersinde yok demişlerdi ders önümüzdeki hafta.
+
+6
+00:06:30,144 --> 00:06:31,744
+23. de mı? O da cuma günü mü?
+
+7
+00:06:32,484 --> 00:06:32,824
+Aynen.
+
+8
+00:06:33,724 --> 00:06:37,804
+Anladım. Peki bundan önceki senelerde 23 Nisan'da yapıyor muyduk?
+
+9
+00:06:38,963 --> 00:06:40,084
+Yok, yapmıyorduk.
+
+10
+00:06:40,244 --> 00:06:48,724
+Yapılmıyorduk. Tamam, o zaman büyük ihtimalle olmayacaktık. Biz biraz da hızlı gittik. Zaten burada transistörlerin son noktasına koyuyoruz zaten.
+
+11
+00:06:49,396 --> 00:07:06,636
+Şimdi transistörleri geçen hafta göstermiştik. Bu haftada arkadaşlar artık biasing dediğimiz artık DC bir gerilimle transistörü çalışır seviyeye getireceğiz ki
+
+12
+00:07:07,088 --> 00:07:15,487
+Bunun üzerinde AC işaretler ne yapabilsin? Hareket edebilsin veya bununla alakalı güçlendirmeleri yapabilirim.
+
+13
+00:07:16,487 --> 00:07:19,788
+İşaretlerimizi nasıl sınıflandırmıştık arkadaşlar?
+
+14
+00:07:20,028 --> 00:07:24,948
+Geçen hafta anlatmıştım. Herhangi bir XT işareti şu şekilde verilsin.
+
+15
+00:07:24,948 --> 00:07:33,948
+Aslında bu işaret iki kısımdan oluşuyor. İlk kısmı arkadaşlar DC kısmı, ikinci kısmı ise AC kısmı.
+
+16
+00:07:34,548 --> 00:07:53,768
+Şimdi DC kısmı bu işaretin arkadaşlar ortalaması. Yani işaretin şöyle ortalama kısmı. Diğeri ise arkadaşlar bu işaretin sıfır ortalamalı olan aslında değişken kısmı.
+
+17
+00:07:55,572 --> 00:08:06,731
+Bu AC kısmı arkadaşlar sinizoidal bileşenlerin toplamından oluşurken, BC kısmı ise bir nevi bu işareti sanki yukarı kaldıran.
+
+18
+00:08:07,220 --> 00:08:25,920
+Sıfır frekanslı. F eşittir sıfır. Bu da F büyük eşittir sıfırdan sonraki sinizoidal bileşenlerini barındırıyor. Demek ki bir işareti sıfır seviyesinde değil de yukarılarda görüyorsanız anlayın ki bunun bir DC offset'i vardır.
+
+19
+00:08:26,899 --> 00:08:53,899
+DC Offset'i vardır. Bu DC Offset dediğim, bu işareti yukarı taşıması manasında kullanılıyor bu Offset kelimesi. Dediğim gibi, biasing aslında DC gerilimleme, DC olarak besleme manasına geliyor arkadaşlar ki, bunun üzerinde çalışır vaziyete geldikten sonra daha ufak AC işaretler verilerek...
+
+20
+00:08:54,899 --> 00:08:57,960
+Güçlendirilmesi yapılabiliyor arkadaşlar.
+
+21
+00:08:59,120 --> 00:09:04,839
+Şimdi geçen haftalardan görmüştük. İki tip transistör çeşitimiz vardı hatırlarsanız.
+
+22
+00:09:04,839 --> 00:09:12,359
+Bir tanesi daima emetör ucundaki ok en yönünü gösteriyordu.
+
+23
+00:09:12,960 --> 00:09:17,740
+En, demek ki dışarılarda emetör olduğuna göre burası da kolektör.
+
+24
+00:09:18,699 --> 00:09:20,240
+Baza da P kalıyordu.
+
+25
+00:09:20,899 --> 00:09:22,019
+Veya tam tersine.
+
+26
+00:09:22,932 --> 00:09:34,792
+Şöyle de gösterebilirdik. Yine emetör ucuna bağlı olan ok aslında n'in nerede olduğunu gösteriyordu. Ok içeriği gösterdiği için demek ki baz n tipinde.
+
+27
+00:09:35,792 --> 00:09:46,491
+Kollektör ve de emetör ise p tipinde. Bu da pmp, bu n-pn transüstör olacak şekilde düşünüyorduk.
+
+28
+00:09:49,971 --> 00:10:06,971
+DC, çalışma veya işletme noktası, çalışma noktası dediğimiz Quiscent Point, Q Point olarak adlandırılan bir nokta var ki DC gelimlerle beraber bunun...
+
+29
+00:10:07,379 --> 00:10:23,799
+Çalışabileceği bir optimum nokta belirlemeye çalışıyoruz. Bu nokta dediğim gibi nerelerde seçilecekti onu bir düşünelim. Genel olarak bir transistöre baktığımızda şöyle örneğin bir tane n-pn çizelim.
+
+30
+00:10:24,500 --> 00:10:47,839
+Burası kolektör, burası emetör, burası baz olmak üzere. Buradan geçen akım Ic, buradan geçen akım Ie. Ne diyorduk? Ie eşittir. Ic artı Ib demiştik. Bu da Ib'de çok düşük olduğu için Ic yaklaşık olarak şöyle Ie'ye eşittir demiştik. Buradan da Ib akımı akıyor.
+
+31
+00:10:50,196 --> 00:10:58,776
+Şurası bu artı eksi, bu kolektör emetör arası. Şurası artı eksi ve baz emetör arası.
+
+32
+00:10:59,676 --> 00:11:07,216
+Baz emetör arası 0.7'yi geçtiği zaman transistör artık akımlarını akıtmaya başlıyor hatırlarsınız arkadaşlar.
+
+33
+00:11:07,792 --> 00:11:18,211
+Ne diyecektik? 0.7 iken iletime geçiyor. Eğer iletimdeyse zaten orada sanki zaten bir diyot yapısı varmış gibi düşünüyorduk.
+
+34
+00:11:19,052 --> 00:11:25,572
+Şimdi burada transiyonun çeşitli bölgeleri var. Bu Q noktasını nasıl bulacağız? Nerede bulacağız yani?
+
+35
+00:11:25,572 --> 00:11:30,572
+Bir tanesi, bakın bu eksenler.
+
+36
+00:11:31,412 --> 00:11:48,511
+Bir tanesi IC ekseni, yani buradan geçen IC akımı. Diğeri ise VCE gerilimi. Daha çok biz transistörden güç aktarımını ve AUT'u buradan yaptığımız için bizim için önemli olan akımlar, dışarı verdiğimiz akımlar IC.
+
+37
+00:11:49,056 --> 00:11:59,895
+Burada uyguladığımız artı eksi VCE gerilimleri önemli olduğu için biz bunları dikkate alıyoruz. Buna göre bir transistör eğrisi oluşturmaya çalışıyoruz.
+
+38
+00:11:59,895 --> 00:12:13,895
+Şimdi VCE'nin buradaki artı eksi VCE geriliminin istediği değeri aldığı ama dikkat edin, IC'nin çok düşük akımlarda, IC'nin çok düşük...
+
+39
+00:12:14,355 --> 00:12:41,456
+Değerlerde olduğu, neredeyse sıfıra yakın olduğu bu bölgeye, Ic'nin çok düşük akım akıttığı için dışarı çok vermeyecektir. Buna cutoff yani kesim bölgesi adını veriyoruz. Tam tersi de burada da Ic'nin olabildiğince çok akabildiği ama Vc'nin sıfıra yakın kaldığı, artı eksi Vc'nin sıfıra yakın kaldığı ki yük daha çok Vout'a yükleniyordur demektir bu.
+
+40
+00:12:42,035 --> 00:12:49,695
+Buna da doyum bölgesi, saturasyon, doyma, doyum veya doyma bölgesi diyoruz.
+
+41
+00:12:50,615 --> 00:12:53,535
+Bunun ayrıca tabi ki buraları da kullanmıyoruz o zaman.
+
+42
+00:12:54,855 --> 00:12:57,175
+Sıfır ve sıfırın biraz çevresini.
+
+43
+00:12:57,175 --> 00:13:02,075
+Bunun dışında transistörün gücü nasıl? P transistör nasıl belirleniyordu?
+
+44
+00:13:02,715 --> 00:13:05,015
+Herhangi bir dirençte nasıl belirliyorduk arkadaşlar?
+
+45
+00:13:09,587 --> 00:13:34,147
+Akımı neydi? P, V çarpı, V, R çarpı, I. Şuradan geçen akım adı I dersek neydi? V çarpı I bizim akım gücümüzü veriyordu. Aynı şekilde transistörde de arkadaşlar ne diyeceğiz? V transistör çarpı V. Bir geri alalım.
+
+46
+00:13:35,635 --> 00:14:02,635
+İ transistör. Bunların yerine neyi kullanıyoruz? VCE ile IC'yi kullanıyoruz. Bunlar tabii ki aldığı değerler açısından belli bir değerin altında belli bir güç geliminin. Örneğin transistörün gücü 30 watts ise 30 watts'ın altında kalacak gibi ayarlanıyor. Dolayısıyla bizim burada bir sınırımız oluşuyor. Şöyle. Demek ki...
+
+47
+00:14:03,059 --> 00:14:20,120
+Buralarda da Ic çarpı Vc yüksek değerler verdiği için bize kalarak şu beyaz bölge kalmış oluyor. Çalışma bölgemiz. İşte bunun içerisinde biz ne yapacağız arkadaşlar? Çalışma noktamızı oluşturacağız.
+
+48
+00:14:24,019 --> 00:14:32,580
+Şimdi burada demin bahsettiğim çalışmadaki çeşitli durumlardan bahsetmiş.
+
+49
+00:14:36,000 --> 00:14:46,200
+Çalışma durumunda aktif bölgedeki, yani buradaki aktif bölgede veya aktif veya lineer operasyon bölgesinde
+
+50
+00:14:48,532 --> 00:14:58,332
+Yani şurası buzz, burası emitter kısmı. İleri yönüne, yani akım akır, akıtır vaziyette olacak.
+
+51
+00:14:58,332 --> 00:15:14,772
+Base Collector Junker ise Base Collector. Yani burası neydi? Base, burası da Collector. Normalde NPN olduğuna göre bu yapı. Burası.
+
+52
+00:15:15,572 --> 00:15:27,411
+Şöyle, şöyle, şu şekilde olduğunu düşünürsek, NPM yapıda olduğunu düşünürsek ters kutuplanmış oluyor. Dolayısıyla akım akıtmıyor. Çalışır bölgede.
+
+53
+00:15:28,511 --> 00:15:40,511
+Cut-off durumunda ise Base Amateur Junction yani VBE'yi kastediyor. Reverse yani herhangi bir akım akıtmıyor. Kesme durumunda küçük 0.7.
+
+54
+00:15:41,268 --> 00:16:00,388
+Saturasyonda ise Base Emitor Junction bu VBE 07'yi geçiyor. Çalışır durumda. Ama Buzz Collector Junction ise aynı zamanda çalışır durumda ki maksimum ne yapabiliyor? Akımı akıtabiliyor arkadaşlar.
+
+55
+00:16:08,436 --> 00:16:25,836
+Beş tane yapı göstereceğiz arkadaşlar. Bu beş yapıya göre devrelerin çalışma DC karakteristiklerini belirlemeye çalışacağız. Şu ana kadar bir sorusu olan var mı arkadaşlar? Şu ana kadar bir sorusu olan var mı?
+
+56
+00:16:31,028 --> 00:16:44,847
+Tamam, devam edelim o zaman. Bir tanesi sabit gerilimli besleme. İkincisi emitör stabilize edilmiş devre.
+
+57
+00:16:45,847 --> 00:16:50,768
+Kollektör-emitör loop. Kollektör ile emitör arasında bir loop, döngük oluşturuyoruz.
+
+58
+00:16:56,500 --> 00:17:14,200
+Gerilim Geri Beslemeli, DC olarak devrenin beslenmesi. Fixed Bias dediği sabit besleme. Niye böyle bir ad vermiş? İlki bu arkadaşlar. Burada sabit besleme demesinin nedeni arkadaşlar.
+
+59
+00:17:14,708 --> 00:17:32,887
+Bakın şurası hep npm üzerinden anlatacağız. Bir de bunları bakın npm yapısı var. Bir tane kolektör, burası baz, burası emetör işleri. Şurası ve baz emetör. Şurası kolektör emetör arasındaki elin.
+
+60
+00:17:34,451 --> 00:17:44,432
+Biz bunu bir çalışır pozisyona getireceğiz ki daha sonra AC input işareti alınca çıkış AC input işareti verilecek.
+
+61
+00:17:44,992 --> 00:17:49,331
+Bu tür yapılarda genellikle bazdan AC işaretler beslenir.
+
+62
+00:17:49,711 --> 00:17:52,951
+Şu kolektör ucundan da outputlar alınır.
+
+63
+00:17:54,092 --> 00:17:56,192
+Burası da inputumuz bizim.
+
+64
+00:17:57,107 --> 00:18:11,967
+Şuradaki kapasiteler niye çizilmiş arkadaşlar? Kapasiteler dediğim gibi bizim işaretimizin DC bileşenlerini süzerler.
+
+65
+00:18:11,967 --> 00:18:18,688
+Yani şöyle diyelim. Ben bu gel telden. Ben buraya bir tane şey kurdum.
+
+66
+00:18:19,119 --> 00:18:43,419
+Bundan sonra, yani tam şu noktada benim şöyle bir işaretim vardı. Hem AC hem DC bileşeni vardı. Bundan bir sonrası ise, şöyle alayım. Şu nokta ise, burası A noktasıydı, burası B noktası. B noktasını çizecek olursam, B noktasında sadece AC bileşeni olacak. Ne yapıyor? DC.
+
+67
+00:18:45,556 --> 00:18:47,096
+Yok edilmiş durumda.
+
+68
+00:18:48,776 --> 00:18:57,655
+O yüzden sadece AC işaretleri içeri göndermek ve sadece AC işaretleri dışarı göndermek amacıyla bu yapılıyor arkadaşlar.
+
+69
+00:18:59,155 --> 00:19:03,976
+Şimdi benim burada neyim var arkadaşlar?
+
+70
+00:19:05,196 --> 00:19:08,456
+Bir tane VCC besleme var. DC besleme var.
+
+71
+00:19:09,256 --> 00:19:13,036
+Dikkat edin bu besleme üzerinden ne yapılıyor?
+
+72
+00:19:14,836 --> 00:19:21,516
+Direnç üzerinden bir akım gönderilerek VBE uyarılıyor. VBE'nin 0.7 üzerinde olması sanıyor.
+
+73
+00:19:21,516 --> 00:19:32,355
+Dikkat edin emetör direkt topluğa bağlanmış. Bir de bir kolektör direnci ile de beraber şuradan I-C akımı akması bekleniyor.
+
+74
+00:19:32,496 --> 00:19:41,135
+Peki bunun hesaplarını nasıl yapacağız? Burada iki türlü hesabımız var arkadaşlar. Önce ilkinden başlayalım.
+
+75
+00:19:43,443 --> 00:20:05,503
+Şimdi şurada daha ayrıntılı bir devre çizmiş. İlki arkadaşlar şuradan geldiğimiz, bakın şöyle şurayı sileyim. Önce şu çevreden başlayalım. Bu Vcc ne demek? Aslında burada bir DC kaynak var demek. Şöyle bir kaynak var. Diğer ucu nerede demek bunun? Toprağa bağlı.
+
+76
+00:20:10,607 --> 00:20:28,788
+Bir Vcc'ye bağlıyorum. Yani DC bir gerilim bağlıyorum. Örneğin 10 volt bağlıyorum. Burası artı ucu olduğu için şu artı Vcc ucu artı bir gerilimde. Toprağa göre artı bir gerilimdeyim demek. Tek nokta çizdiği zaman. Bakın burada onu çizmiş zaten.
+
+77
+00:20:29,364 --> 00:20:47,304
+Birinci geleceğimiz uç arkadaşlar. Birinci yolla şurayı takip edeceğiz. Bu birinci yolumuz. İkinci çıkaracağımız yol ise şöyle gelecek arkadaşlar. Bu da ikinci yolumuz bizim. Sırasıyla birbirlerine göre çözümleri gerçekleştireceğiz.
+
+78
+00:20:48,243 --> 00:21:15,423
+Şimdi, demin de göstermiştim. Burada sadece Vcc ucu bulunuyordu. Orada bir pozitif gelin olduğu söyleniyor. Sonra devam edelim arkadaşlar. Şöyle, ben geldiğimde Vcc eşittir. Ben daha kolay yaptığımı düşünüyorum. Yani bu iki uç arasındaki şuradaki bir gelin var. Bir tanesi şöyle bağlanmış. Vcc. Bir tanesi ise burada bir direnç var. Burada neyim var? Bazım var.
+
+79
+00:21:16,211 --> 00:21:34,912
+Şöyle baz gerilimim var. Şurada artı eksi VBE var. Ve de aslında toprağa gidiyorum burada. Ben daha çok şöyle yapıyorum. Eğer bu uçla toprak arası paralelse birbirine şu şekilde yazabilirim.
+
+80
+00:21:45,107 --> 00:22:12,447
+Değil mi? Artı ve baz emetör arasındaki. Artıya girdiğim zaman, artıdan girdiğim zaman ne yapıyorum? Bu şekilde yapıyorum. Bir de Kirchhoff'tan da şöyle yapıyorlar. Kirchhoff'ta ise tam tersi mantık var. Eksiden girdiğin zaman artı yazıyorsun. Tek taraflı yazıyorsun o zaman şu denklemi. Bakın sıfıra işliyorsun. Nasıl yapıyorsun? Eksiden girmişsen Vcc'yi artı yapıyorsun. Devam et.
+
+81
+00:22:14,420 --> 00:22:21,280
+Burada akım bu yöndeyse şayet akım bu yöndeyse akımın olduğu yöndeyse ters yazıyorsun.
+
+82
+00:22:21,840 --> 00:22:25,840
+IB çarpı RB devam ediyorsun.
+
+83
+00:22:26,480 --> 00:22:32,480
+Burada artıyla bir tanımlanmış kısımda eksiden girmiyor.
+
+84
+00:22:32,600 --> 00:22:38,300
+Artıdan giriyorsan veya referans yönü artıdan olan bir gelimi ifade ediyorsan o da VBE yazılıyor.
+
+85
+00:22:38,963 --> 00:22:59,223
+Sonuçta aynı yere bağlanıyor. Ben bu ortak noktaya göre A noktası diyeyim. Şurası A noktası benim. Vcc'ye ne eşit olacak? Yani bu koldaki paralel gelin buna eşit olacağı için. Vcc eşittir. Bu da daha rahat. Akım yönü pozitif karşı tarafta yazıyorum. Ib çarptı.
+
+86
+00:23:00,115 --> 00:23:27,035
+Pozitiften girdiğim gerilimler ise artı VB olarak adlandırıyorum. Bunu bir tarafa çekecek olursam aynı sonucu elde ediyorum. İBB neymiş buradaki İB akımı? VCC'den VB'yi çıkaracağız. Ki bu VB genellikle 0.7 volt olacak. Bölü RB gerilimi olmuş olacak. Bakın VCC'den şuradaki VB'yi çıkarıp
+
+87
+00:23:27,892 --> 00:23:32,692
+RB'ye böldüğümde buradan geçen akımı bulmuş oluyorum arkadaşlar.
+
+88
+00:23:33,932 --> 00:23:37,211
+Sanki şuradan hiçbir akım gelmiyormuş gibi düşüneceksiniz.
+
+89
+00:23:37,451 --> 00:23:39,211
+Şimdiki çıkmıyormuş gibi düşüneceksiniz.
+
+90
+00:23:39,892 --> 00:23:41,872
+Bu kısım anlaşıldı mı arkadaşlar?
+
+91
+00:23:45,556 --> 00:23:53,556
+Bu kısım anlaşıldı mı? Herhangi bir sorusu olan varsa chat kısmına yazabilir arkadaşlar.
+
+92
+00:23:53,556 --> 00:23:56,556
+Devam ediyorum. Şimdi öbür taraftan.
+
+93
+00:24:04,596 --> 00:24:17,056
+Neyi yapmamıştık diyor. Başka bir cevap herhalde. Şimdi burada da diğer koldan geldiğim zaman bakın burada da ne var? Vcc gelimi vardı hatırlarsanız.
+
+94
+00:24:17,056 --> 00:24:32,056
+Vcc'den bağlı olan yani şurası şurası A noktası demiştim ona. Burada da şunu yazıyorum arkadaşlar aynı şekilde. Vcc eşittir. Ne eşit olacak?
+
+95
+00:24:32,531 --> 00:24:40,971
+Rc çarpı Ic, çünkü akım yönü aşağı doğru gidiyor. Dolayısıyla burada bir Vrc oluşturuyor.
+
+96
+00:24:41,411 --> 00:24:47,311
+Ic çarpı Rc ne yönde aslında? Rc'nin üzerinde düşen gerilimdir aslında.
+
+97
+00:24:48,311 --> 00:24:54,591
+Artı pozitif bir gerilim var. Artı Vce. Bu şekilde oluşturuluyor arkadaşlar.
+
+98
+00:24:55,796 --> 00:25:19,556
+Burada da aynı şekilde burada VCE'yi bir tarafa çekmiş veya bir loop yaparsanız şayet VCE eşittir. Şöyle yaptığınızda negatiften girdiğiniz zaman, Kirşoğlu şeyinde devre teorisinden biliyorsunuz negatiften girdiğinde pozitif kabul ediyor. Şöyle yapabilir. VCE eşittir.
+
+99
+00:25:23,700 --> 00:25:32,060
+Negatif akım yönünün tersine gittiği için, orada oluşan gelime ters girdiği için artı IC çarpı RC.
+
+100
+00:25:33,076 --> 00:26:01,076
+Böyle gidemediği için, pozitiften gidip için eksi Vcc eşittir. Sıfır şeklinde de yazabilirsiniz. Ama benim yaptığım gibi düşünürseniz, tam bu uçta Vcc var. Doğru mu? Doğru. Bu sefer Ic o neye eşit olacak kol olarak? Şu kol, şu kolan gerilimine eşit olacak. Vcc eşitti. Bu sefer pozitiften girdiğim zaman, Rc çarpı Ic ile bunun üzerindeki gerilim artı Vc.
+
+101
+00:26:01,076 --> 00:26:27,135
+c'ye eşit olmuş olacak. Oradaki vcc'ye gelin. Bu şekilde düşünürüz. Burada ic eşit beta çarpı ib. Hatırlarsanız neydi? Benim ic bölü ib değerim benim beta değeriydi. Yani ib'nin ne kadar kat kuvvetlendirildiği. Şuradan gelen akım çok düşük ya bizim.
+
+102
+00:26:27,763 --> 00:26:34,683
+Sonuçta transitor bunu kuvvetlendiriyor. Bir Ic akımına dönüştürüyor. Bu Ic akımı da output'a gidiyormuş gibi düşünebilirsiniz.
+
+103
+00:26:38,836 --> 00:26:55,116
+Şimdi burada şuna da dikkat etmemiz gerekiyor arkadaşlar. Transistörün doyma durumundaki yani transistör doyma durumunda ise neydi arkadaşlar?
+
+104
+00:26:55,116 --> 00:27:01,916
+VCE'de yani şurada neredeyse sıfıra yakın olacaktı. Bu durumda.
+
+105
+00:27:02,003 --> 00:27:15,843
+Ic akımını nasıl hesaplarsınız? Bu durumda. Vc'ye yaklaşık sıfırsa burada. Bu durumda. Şuradan direkt toprağa gittiğini düşünüyorum. Ic eşit. Vcc bölü Rc kalmış oluyor.
+
+106
+00:27:16,372 --> 00:27:29,432
+Şöyle bakalım son şeyden. Eğer doyma durumuysa şuradaki gerilim sanki sıfır, sanki transiyonu C ve E uçlarına sanki kısa devreymiş gibi.
+
+107
+00:27:29,971 --> 00:27:35,511
+Kollektör ve emektör gerilimler arasında fark sıfırlar çok yakınsa ki bu doyma durumunda oluyor.
+
+108
+00:27:36,451 --> 00:27:38,231
+Maksimum derecede akım akıyor.
+
+109
+00:27:39,271 --> 00:27:42,372
+ÖC'den. O da ÖC eşittir.
+
+110
+00:27:43,251 --> 00:28:03,291
+Vcc bölü, Vcc'den maksimum akımı oluşuyor. Onun dışında maksimum akımı olmazsa şayet ne olacak? Vcc'nin üzerine gerilim düştükçe, şurada şuna gerilim düştükçe buraya düşen gerilim azalacak. Dolayısıyla Ic akımı da azalacaktır.
+
+111
+00:28:05,172 --> 00:28:16,292
+Şimdi biz genellikle şu mavi çizgiler arkadaşlar, devreye uygulanan I, B'ye göre çizilir, verilir.
+
+112
+00:28:16,412 --> 00:28:23,251
+Maviler verilir. Maviler sabittir. Değil mi? I, C, U, B'nin I, B akınmak göre bulunuyor.
+
+113
+00:28:23,251 --> 00:28:32,632
+I, B'ye göre bulunuyor. Şimdi burada çeşitli I, B'lere göre ne oluyor? Çizimler oluyor. Bunlar bize veriliyor.
+
+114
+00:28:33,268 --> 00:28:37,827
+Biz burada yük hattı analiz dediğimiz bir işlem yapıyoruz.
+
+115
+00:28:38,008 --> 00:28:41,147
+Yük hattı analizinde biz nelere dikkat ediyoruz?
+
+116
+00:28:41,788 --> 00:28:47,927
+Bulduğumuz denklemlere göre ki bulduğumuz ilk denklem, ikinci denklem buydu.
+
+117
+00:28:49,207 --> 00:28:51,567
+IB için bulduğumuz denklem de buydu.
+
+118
+00:28:52,048 --> 00:28:59,268
+Benim IB'me göre demek ki ben şu IB hatlarından birinde.
+
+119
+00:28:59,827 --> 00:29:15,508
+Satürasyon bölgem neresiydi bizim arkadaşlar? Satürasyon neresiydi benim? Şurada oluşan bir durumdu.
+
+120
+00:29:24,500 --> 00:29:39,839
+VCE sıfıra yakındı. Şurası yani. VCE sıfıra yakındı. Bu durumda maksimum akım akar demiştik. Değil mi? Orada da VCE eşittir. ICE çarpı RC demiştik. Öyle değil mi?
+
+121
+00:29:52,211 --> 00:29:55,892
+Satürasyon döneminde kestiği noktaya denk geliyoruz.
+
+122
+00:29:57,752 --> 00:30:04,172
+Cut-off kesiminde ise, cut-off'ta ne oluyordu? Cut-off'ta Ic0 kabul ediliyordu.
+
+123
+00:30:04,552 --> 00:30:11,352
+Şurada Ic0 kabul edersek, Vcc neye eşit olacak? Vce'ye eşit olacak.
+
+124
+00:30:12,092 --> 00:30:14,032
+Kollektör emetöre eşit olacak.
+
+125
+00:30:14,951 --> 00:30:19,292
+Bak burada da kollektör emetör eşitir Vcc dedik ki burası da
+
+126
+00:30:19,539 --> 00:30:31,879
+Burası katof, kesim. Burası satürasyon bölgesi, doyma. Burası kesim. Burası iki nokta elde etmiş oldu.
+
+127
+00:30:31,879 --> 00:30:45,879
+B'yi de şayet hangisi olduğunu ilk başka hesabımızdan bulursak, sonuçta bu denklem doğru denklemi. Öyle değil mi?
+
+128
+00:30:47,220 --> 00:31:04,760
+Değişkenleri ne? Ic ile Vce. Yani Y yerine Ic, X yerine Vce kullanıyoruz. Denklem ne? Denklem şu. Vce benim ne? X'im. Burada Ic de benim Y.
+
+129
+00:31:14,963 --> 00:31:24,223
+B, Y artı X şeklindeki bir birinci dereceden denklem. Dolayısıyla bir doğru denkleme olmuş oluyor.
+
+130
+00:31:24,223 --> 00:31:29,039
+Bunu çizdiğim zaman ilk yerden de I, B'nin...
+
+131
+00:31:29,039 --> 00:31:35,659
+Nasıl bulunduğunu eğer I, B'nin değerini tespit edebiliyorsam şuradan da şu denklemden de.
+
+132
+00:31:35,659 --> 00:31:40,059
+Dolayısıyla bunların hepsinin kesiştiği yer örneğin bu olsun.
+
+133
+00:31:40,559 --> 00:31:47,159
+Kesiştiği yer benim Q noktam yani çalışma noktam olarak adlandırıyor.
+
+134
+00:31:47,259 --> 00:31:54,659
+Demek ki şu noktanın çevresinde çalışacak benim transüstörüm.
+
+135
+00:31:56,243 --> 00:32:19,923
+Şimdi biz bu haftalar arkadaşlar daha çok şeyi anlatacağız. Bu devrelerin nasıl çözülebildiğiyle alakalı temel kuralları anlatacağız. Asıl şeyimiz ise soru çözümleri yapacağız bu devreler üzerine. Şimdilik sadece teorik olarak sayı değeri vermeden çözüyoruz bunu.
+
+136
+00:32:22,420 --> 00:32:37,840
+Ayrıca transistör ve diyotlar için zannedersem, şöyle bakalım tarihimize. Önümüzdeki hafta 23'ü yoksa, şu 26-30 haftası şey değil mi arkadaşlar? 26-30 haftası.
+
+137
+00:32:40,840 --> 00:32:42,980
+26-30 haftası.
+
+138
+00:32:45,100 --> 00:32:47,140
+Vize haftamız bizim değil mi?
+
+139
+00:32:49,172 --> 00:33:09,372
+O vize haftası ders olmayacak. Dolayısıyla bu bizim transistörlerle alakalı son haftamız olacak. Daha sonra en yakın 7'sinde dersimiz var. 7'sinde de arkadaşlar transistör ve diyos sorularını çözmeye başlarız. Anlaştık mı?
+
+140
+00:33:09,372 --> 00:33:14,092
+Evet, şimdi devam edelim.
+
+141
+00:33:14,092 --> 00:33:15,471
+Şimdi
+
+142
+00:33:17,011 --> 00:33:30,951
+Benim şurada belirlemiş olduğum Q noktasını acaba neler etkileyecek? Biliyorum ki Vcc etkiler, RC etkiler ve IC etkiler.
+
+143
+00:33:44,276 --> 00:33:58,316
+Kesim yerleri Vcc büyüdükçe yukarı doğru kayar değil mi? Vcc büyüdükçe, bakın şuraya doğru büyüdükçe, şurada keseceği yer, Vcc ve Rc sabit olduğuna göre Vcc büyüdükçe yukarı doğru kayar.
+
+144
+00:33:59,028 --> 00:34:09,667
+Aynı şekilde VCE eşittir VCE kesim noktasında ise VCE eşittir VCE olduğu için bu noktada kayar.
+
+145
+00:34:09,747 --> 00:34:19,367
+Dolayısıyla Q noktası VCE büyüdükçe sağa doğru kayar. Küçüldükçe sola doğru kayar arkadaşlar. Böyle bir etkisi oluşuyor.
+
+146
+00:34:23,155 --> 00:34:35,076
+RC olarak gösterdiğim, yani kolektöre bağlı olan şu direncin değeri ne göre nasıl bir değişim gerçekleştirecek? Ona bir bakalım.
+
+147
+00:34:37,956 --> 00:34:44,056
+Şimdi orada da, dikkat edin, VCC bölü RC idi.
+
+148
+00:34:45,235 --> 00:34:49,936
+Buradaki alttaki payda küçülürse, ne olacak arkadaşlar payda küçülürse?
+
+149
+00:34:50,739 --> 00:34:59,179
+Payda küçülürse Vcc bölü RC değeri büyüyecektir. Dolayısıyla küçük R1 değeri için burası yukarı doğru çıkacaktır.
+
+150
+00:34:59,699 --> 00:35:05,839
+R2 ondan daha büyük olduğu için biraz aşağısında, R3 en büyükleri olduğu için en aşağısında olacaktır.
+
+151
+00:35:05,839 --> 00:35:18,219
+Dolayısıyla ben kolektöre bağlı direnç değerimi ne yaparsam arkadaşlar, aşağı küçültürsem,
+
+152
+00:35:18,708 --> 00:35:23,007
+Ne olmuş olacak arkadaşlar? Küçüldükçe yukarı doğru kayıyor.
+
+153
+00:35:26,007 --> 00:35:30,007
+Dolayısıyla Q noktası ne oluyor arkadaşlar? Yukarı kayıyor.
+
+154
+00:35:30,087 --> 00:35:34,608
+Veya tam tersi mantıkları düşünürseniz, büyüttükçe ne yapıyor?
+
+155
+00:35:34,728 --> 00:35:39,188
+Q noktam şuradaki eğim azalacağı için ne yapıyor?
+
+156
+00:35:39,347 --> 00:35:41,927
+Sola doğru kaymış oluyor arkadaşlar.
+
+157
+00:35:45,012 --> 00:36:08,552
+Peki benim IB değerim, yani bazdan akan akımım, şöyle gelen bazdan akan akımım, arttıkça ne oluyor? Biliyorsunuz bunlar IB'nin maviler bize zaten sabit olarak verilmiş. IB arttıkça ne yapıyor? Q noktası yukarılara doğru kaymış oluyor arkadaşlar.
+
+158
+00:36:13,427 --> 00:36:27,188
+Şimdi ematörle stabilize edilmiş bir devremiz var. Bunun bir saniye arkadaşlar hemen dönüyorum.
+
+159
+00:36:49,876 --> 00:36:59,256
+Evet arkadaşlar, şimdi deminki devreden farklı olarak, bu devrede ne yaptık deminkinden farklı olarak?
+
+160
+00:37:01,876 --> 00:37:04,156
+Deminkinden farkı nedir bu devrenin?
+
+161
+00:37:05,036 --> 00:37:13,956
+Kim söylemek istiyor? Bir şey söylemek isteyen parmak da kaldırabilir. Şu şeyler var ya, reakşınlar kısmında en azından görmüş oluruz burada.
+
+162
+00:37:14,776 --> 00:37:16,615
+Deminki devreden farkı nedir bunun?
+
+163
+00:37:17,588 --> 00:37:18,608
+Evet [öğrenci].
+
+164
+00:37:19,847 --> 00:37:22,088
+Topraktan önce bir tane daha direnç var.
+
+165
+00:37:22,088 --> 00:37:44,068
+Evet, doğru söyledin. Şimdi burada gerçekten arkadaşımızın dikkatinden kaçmadığı gibi ekstradan, deminki devreden farklı olarak bir emetöre direnç atılmış. Bu emetöre atılan direnç benim emetörle stabilize edilmiş bir devre haline getiriyormuş. Nasıl?
+
+166
+00:37:44,500 --> 00:38:03,460
+Buradan tekrar bu devre için IB ve de şuradan bulacağımız IB için bir eşitlik çıkaracağız. Bir de sağdaki koldan gittiğimizde, bir de soldaki koldan gittiğimizde eşitliklerimiz nasıl değişecek bakalım.
+
+167
+00:38:03,460 --> 00:38:06,280
+Önce ben şöyle yapıyorum.
+
+168
+00:38:06,931 --> 00:38:23,411
+Tabi siz buradaki gibi de yapabilirsiniz. Ben şöyle anlatacağım yine. Vcc ne olacak? Benim Vcc değerim ne eşit olacak? RB çarpı IB. Sırasıyla gidiyorum böyle. RB çarpı IB. Devam ediyorum.
+
+169
+00:38:33,300 --> 00:38:52,320
+Bu ne demektir? Bir direncinin üzerinde şöyle akım aşağı doğru akıyorsa, şöyle iyi akım var diyelim. Dolayısıyla artı eksi vr şeklinde bir tanımlama yapıyorsam artık burada bir gelin pozitif bir gelin vardır. Ona pozitiften giriyorum demektir.
+
+170
+00:38:59,188 --> 00:39:14,967
+V, Re yazabilirim veya onun yerine daha geniş. Re çarpı I, E diyorum. Bakın Kirşof kanunuyla da yazacağım. Sizin devreden öğrenmesi Kirşof kanunuyla da yazacağım. Devre şeyle aynı olmuş oluyor.
+
+171
+00:39:22,387 --> 00:39:34,608
+IE'nin yerine şunu yazabiliriz arkadaşlar. IE neydi bizim için? IE eşittir. IC artı IB'ydi hatırlarsınız.
+
+172
+00:39:35,467 --> 00:39:42,887
+Peki, hatırlarsınız bir de şu vardı. Beta eşittir. IC bölü IB'ydi. Öyle değil mi?
+
+173
+00:39:42,887 --> 00:39:47,507
+Dolayısıyla IE eşittir. Beta.
+
+174
+00:39:48,436 --> 00:40:11,956
+IB artı IB parantezini alırsak, IE eşittir, beta artı bir IB olmuş oluyor. Onu şuradan çıkarmıştık. Artık IE'nin yerine koyarsak bunu arkadaşlar, ne koyacağız? Artık sadece IB tek değişkenimiz olsun.
+
+175
+00:40:13,204 --> 00:40:20,564
+Beta artı 1, IB dersek ve de IB'yi bir tarafa çekersek ne olacak?
+
+176
+00:40:21,264 --> 00:40:35,504
+Vcc eksi VBE, IB değeri için bölü RB artı beta artı 1, RE olmuş oluyor.
+
+177
+00:40:35,624 --> 00:40:39,604
+Burada biz neyi bulduk? IB'yi bulmuş olduk.
+
+178
+00:40:40,340 --> 00:41:04,160
+Buradaki RE değerimiz ise bizim bakın bölüme şu şekilde katkıda bulunmuş oldu. Diğer taraftan gidecek olursak da arkadaşlar, şuraya geldik diyelim. Öbür ikinci yoldan gittiğimizde de VCC'de sadece şuradaki yerim olmuş olacak. VCC eşittir.
+
+179
+00:41:07,827 --> 00:41:22,928
+Akan akımın yönünde gittiği için okum. RC çarpı IC artı VCE artı yine pozitif yönünden girelim. RE çarpı IE.
+
+180
+00:41:24,788 --> 00:41:30,928
+Yaklaşık IE ile IC olarak kabul edecek olursam şahit buradaki...
+
+181
+00:41:31,956 --> 00:41:40,916
+Şuradaki direncin üzerinde düşen gerilimim VE gerilimim olmuş oluyor. O da IE çarpı RE olmuş oluyor.
+
+182
+00:41:42,195 --> 00:41:44,195
+Şimdi önce şunu anlatalım.
+
+183
+00:41:45,416 --> 00:41:49,115
+IE eşittir, IE dediğimiz zaman ne olacak?
+
+184
+00:41:59,824 --> 00:42:14,043
+Ne diyeceğim? RC artı RE çarpı IC diyeceğim. Eğer VC'yi çekmek istersem karşı tarafa gidecek.
+
+185
+00:42:14,579 --> 00:42:24,880
+Vce'yi bulabileceğim gelimim bu şekilde hesaplanabilecek. Ayrı ayrı, şuradaki direncin üzerindeki düşen gelim için şunu kullanabilirim.
+
+186
+00:42:24,880 --> 00:42:31,980
+IE çarpı RE. Vce'yi hesaplamak istersen, Vce ne istirir arkadaşlar? Tam şu nokta.
+
+187
+00:42:40,307 --> 00:43:02,248
+VE gerilimi, yani direncin üzerinde düşen gerilim. Onu da şu şekilde hesaplayabiliriz. VE şöyle yapabiliriz. VC gerilimini bulursak tam tersi mantıkla. VCC'den şuradaki gerilimi düşersek ki o da IC çarpı RC'dir. Tam şu noktadaki toprağa göre olan gerilimi bulmuş oluyoruz.
+
+188
+00:43:02,675 --> 00:43:21,675
+Şimdi benim, dikkat edin, VAB dediğim zaman aslında VA-VB'dir. Tek bir şey kullanıyorsam şayet, harf kullanıyorsam aslında şöyle anlayın. VA-V toprak.
+
+189
+00:43:22,164 --> 00:43:47,584
+Burası da sıfır olduğun için. Demek ki VA toprağa göre olan gerilim demekmiş. Burada aynı VE, VC ve VB gibi noktasal yerlerin. Peki şuradaki VB burasıysa şayet, bas burasıysa. VB'yi nasıl hesaplarım? VB eşitir. VBE. O noktan itibaren toprağa doğru gitmeye başlıyorum.
+
+190
+00:43:48,307 --> 00:43:59,128
+VBE artı IBE çarpı VE olarak hesaplayabilir. O da bizim VE'mizdir aynı zamanda.
+
+191
+00:43:59,128 --> 00:44:15,008
+Evet, şimdi buradaki stability kelimesi devredeki devre durumu olarak akım ve gerilimlerin
+
+192
+00:44:15,476 --> 00:44:35,476
+Genel olarak sabit kaldığı bir yapıyı ifade ediyor. Geniş bir sıcaklık aralığında ve beta değerinde benim yaklaşık olarak bu akımlarım sabit kalıyor. Bu yüzden buna...
+
+193
+00:44:36,659 --> 00:44:42,579
+Stabilite, yani durağınlaşmış veya stabil hale getirilmiş devre deniyor arkadaşlar.
+
+194
+00:44:42,579 --> 00:44:58,300
+Demek ki transistörlü bir devrede emetör bacağına eklenecek bir direnç transistörün stabilitesini arttırıyormuş arkadaşlar.
+
+195
+00:45:00,275 --> 00:45:23,255
+Şimdi aynı şekilde bunun da Load Line analizine bakacak olursak, dediğim gibi IB'ler ilk denklemden bulunup bunlardan biri seçilecek. Demek ki bu eğriler zaten ona göre belirlenmiş durumda. Demek ki biz şu satürasyondaki ve de kesimdeki noktaları bulacağız.
+
+196
+00:45:26,260 --> 00:45:48,500
+Şeyde neydi? Bizim elimizde iki tane şey var. Saturasyonda neydi? Saturasyonda VCE sıfıra yakındı. Bu durumda VCC neye eşit olacak? VCC eşitli. ICC RC artı RE olmuş olacak. Peki kesimde ne olacak? Kesimde de ICC sıfırı olacağı için VCE direkt VCC eşitli olacak.
+
+197
+00:45:49,139 --> 00:46:09,539
+Burada da onu söylüyor. Kesimde VCE, VCC eşittir diyor. Yani ICE'nin sıfır olduğu durum. Öbürkünde ise VCE sıfır kabul edilip ICE bir tarafa çekilmiş olacak. Dolayısıyla aslında biz VCE eksenindeki kesim noktasını nereden buluyoruz? Şuradan buluyoruz.
+
+198
+00:46:12,019 --> 00:46:15,539
+Bu kesimdeki kesim noktası olmuş oluyor.
+
+199
+00:46:17,108 --> 00:46:39,867
+Doymadaki kesim noktası ise, Ic'yi kestiği noktayı bulmak içinse ne yapıyoruz? Vc'yi sıfır kabul ettiğimizde elde ettiğimiz değer. Şimdi bundan sonraki kısmımız, ben dersem bu dersi blok olarak yapacağız ve bitirebileceğimizi düşünüyorum 20 dakika içerisinde. O yüzden blok olarak yapacağız.
+
+200
+00:46:39,867 --> 00:46:41,548
+Tabii ki.
+
+201
+00:46:42,387 --> 00:46:55,807
+Hocam, bir yazı yazdıktan sonra biraz bekler misiniz? Çünkü hocam direkt geçince slide takıla takıla geçiyor. Tam okuyamadan geçmiş oluyoruz. Bir şey yazınca biraz bekarseniz sevinirim hocam.
+
+202
+00:46:55,807 --> 00:47:07,447
+Tamamdır, ona bir delay koyayım dediğiniz gibi. Çok hızlı anlatmayayım. Tamamdır. Onun dışında takılma sorunu yaşıyor musunuz genel olarak arkadaşlar?
+
+203
+00:47:08,083 --> 00:47:10,783
+Yoksa hemen hemen yakın mı geliyor?
+
+204
+00:47:13,043 --> 00:47:25,603
+Hocam yakın geliyor. Sadece slide'lar arasında geçerken takıla takıla geçtiği için bazı şeyleri direkt gösterip geçince biz onu göremiyoruz. Biraz sonra geliyor.
+
+205
+00:47:26,063 --> 00:47:26,844
+Tamamdır artık.
+
+206
+00:47:29,780 --> 00:47:37,320
+Şimdi ikincisi ise, üçüncü göreceğimiz kısım ise voltaj, gerilim bölücü devre.
+
+207
+00:47:37,760 --> 00:47:42,219
+Şimdi gerilim bölücüden kastımız ne? Onu biraz anlatmaya çalışayım.
+
+208
+00:47:43,780 --> 00:47:45,780
+Gerilim bölücü arkadaşlar şu demek.
+
+209
+00:47:45,780 --> 00:47:55,199
+Şimdi sizin bir şöyle bir VC kaynağınız var.
+
+210
+00:47:56,467 --> 00:48:13,188
+Geliyorsunuz bunu iki direnç ile ne yapmaya çalışıyorsunuz? Toprağa bağlıyorsunuz. Bu R1 direnci olsun, bu R2 direnci olsun. Şuradan da Voutput alın.
+
+211
+00:48:15,148 --> 00:48:23,188
+Aslında yaptığınız şey şu. Vc bu deyince aslında belli bir DC ile beraber örneğin burada 10 volt var diyelim.
+
+212
+00:48:24,307 --> 00:48:33,248
+Sırasıyla R1'e 3 ohm, buraya da 7 ohm vermiş olalım.
+
+213
+00:48:34,643 --> 00:48:44,303
+Aslında 10 voltu biz Vout'a ne kadarlık kısmını aktardığımızı, gerilimi bölerek iki tane dirençle anlatmış oluyoruz.
+
+214
+00:48:45,083 --> 00:48:48,823
+Şimdi bunun üzerinden akan akım nedir arkadaşlar?
+
+215
+00:48:48,823 --> 00:48:55,463
+I, R, 1 olsun. Bunun üzerinden akan akım ise ne olsun? I, R, 2 olsun.
+
+216
+00:48:56,628 --> 00:49:04,948
+Sırasıyla bunları hesaplayalım. Önce şunu dememiz lazım. V out'u daha vermediğimizi düşünelim. Sadece buradan çıkış aldığımızı düşünelim.
+
+217
+00:49:04,948 --> 00:49:19,008
+I R1 eşittir. I R2 diyeceğiz. I R2. I R1'imiz ne olacak arkadaşlar? Şunu biraz kaydıracağım. Pardon.
+
+218
+00:49:22,708 --> 00:49:35,627
+Şuradan akan akım, şuraya eşit olmuş olacak.
+
+219
+00:49:36,228 --> 00:49:39,047
+I R1 eşitir I R2.
+
+220
+00:49:40,427 --> 00:49:44,748
+Bu durumda I R2'yi nasıl hesaplarız arkadaşlar?
+
+221
+00:49:44,967 --> 00:49:47,768
+Tam şu noktada ne var benim için?
+
+222
+00:49:49,652 --> 00:50:03,432
+Vout gerilimi var. Öyle değil mi? Vout bölü R2'den hesaplayabilirim. O kol üzerinde akan akımı. R1'i nasıl hesaplarım?
+
+223
+00:50:16,244 --> 00:50:23,664
+Bölü, yani iki nokta arasındaki gerilim farkı bölü R1 diyebilirim.
+
+224
+00:50:24,284 --> 00:50:24,704
+Öyle değil mi?
+
+225
+00:50:24,704 --> 00:50:29,204
+Şimdi ben burada bunları yan yana çeksem.
+
+226
+00:50:30,784 --> 00:50:32,324
+Yan yana çeksem.
+
+227
+00:50:32,804 --> 00:50:39,584
+Şimdi V in bölü R1 eşittir.
+
+228
+00:50:40,724 --> 00:50:43,204
+V out bölü R2.
+
+229
+00:50:43,987 --> 00:50:48,267
+Artı ve avut bölü R1.
+
+230
+00:50:49,367 --> 00:50:57,487
+Buradan da ortak parantezi alırsam şayet ve in bölü R1 eşittir.
+
+231
+00:50:59,067 --> 00:51:09,207
+Ve avut parantezinde R1 artı R2 bölü R1 çarpı R2'dir.
+
+232
+00:51:09,967 --> 00:51:10,787
+Doğru mu arkadaşlar?
+
+233
+00:51:12,019 --> 00:51:31,019
+Buradan da şunu söyleyebilir miyim? Vout bölü Vin eşittir. R1 çarpı R2 bölü pardon özür dilerim.
+
+234
+00:51:39,440 --> 00:51:42,519
+Bölü, D2 bölü,
+
+235
+00:51:46,260 --> 00:51:48,760
+R1 artı R2'dir.
+
+236
+00:51:50,760 --> 00:51:52,300
+Tamam mı arkadaşlar?
+
+237
+00:51:52,980 --> 00:51:54,720
+Genel gerilim bölücü yapısı bu.
+
+238
+00:51:55,480 --> 00:51:57,940
+Aslında şunu söylemiş oluyoruz biz arkadaşlar.
+
+239
+00:51:58,620 --> 00:51:58,920
+Şöyle.
+
+240
+00:52:00,900 --> 00:52:02,700
+Genel olarak şunu söylemiş oluyoruz.
+
+241
+00:52:03,519 --> 00:52:06,019
+Ben elimde bir pilim var.
+
+242
+00:52:06,200 --> 00:52:07,320
+10 voltlu pil var.
+
+243
+00:52:07,740 --> 00:52:11,120
+Bu pilin bana 7 voltu lazım diyelim.
+
+244
+00:52:11,120 --> 00:52:13,420
+Ben bunu nasıl yapabilirim?
+
+245
+00:52:13,684 --> 00:52:34,484
+Bakın, zaten şey bunu söylüyor. Bu devre bunu söylüyor. Eğer sen buraya 7'yi verirsen, buraya 3'ü verirsen, hemen yerine koyalım. R2'miz ne bizim? 7. R1 artı R2'miz ne? 10. Ne yapıyoruz? Vout hesaplarken, Vout eşittir.
+
+246
+00:52:36,084 --> 00:52:41,655
+Vout eşittir.
+
+247
+00:52:43,115 --> 00:52:48,835
+R2 çarpı V in şeklinde de yazabiliriz.
+
+248
+00:52:49,416 --> 00:52:54,936
+Demek ki buradaki dirençlerin değerlerini ayarlayarak ne yapabiliriz arkadaşlar?
+
+249
+00:52:55,675 --> 00:53:00,456
+Vout'a V in'in belli bir miktarını aktarmış oluruz.
+
+250
+00:53:00,456 --> 00:53:05,335
+Örneğin ikisi de 5 olsa ne olacak?
+
+251
+00:53:05,844 --> 00:53:27,963
+V'indeki gelimin yarısı R1'de, yarısı R2'de barınacak. Zaten R2 o zaman ne olacak? R2 5 olacak. R1 artı R2'de 5 artı 5 10 olacak. Demek ki V'nin yarısı V'a aktarılacak. Veya R2'ye 1 verelim, buna 9 verelim. Bu sefer ne kadarlık gelin?
+
+252
+00:53:28,820 --> 00:53:33,680
+10 voltun 1 voltu R2'de 9 voltu burada harcanacak demektir.
+
+253
+00:53:34,380 --> 00:53:38,820
+Zaten buradaki gelin bölücü mantığı da bu şekilde arkadaşlar.
+
+254
+00:53:39,980 --> 00:53:43,920
+Şimdilik saat 3'e kadar bir 8 dakika ara veriyorum arkadaşlar.
+
+255
+00:53:43,920 --> 00:53:48,000
+Acil bir iş çıktı. Ondan sonra kaldığımız yerden devam edeceğiz.
+
+256
+01:01:39,059 --> 01:01:53,539
+Evet arkadaşlar, şimdi en son gelin bölcü devreden de biraz bahsedelim. Bakın arkadaşlar, demin anlattığım kısım burada bulunuyor.
+
+257
+01:01:53,539 --> 01:02:01,860
+Bir DC gelin kaynağı, bir R1 direnç üzerinden geçiyor ve R2 üzerinden toprağa gidiyor.
+
+258
+01:02:02,000 --> 01:02:19,619
+Aynı demin anlattığım yapının benzeri. Yani bir Vcc var, geliyor, V1 direnci var. Ondan sonra buradan VB'ye gidiyor. Ve R2 üzerinden de toprağa gidiyor.
+
+259
+01:02:21,099 --> 01:02:24,539
+Şimdi benim avayağı kutum VB, yani şurası olmuş oluyor.
+
+260
+01:02:25,748 --> 01:02:30,168
+Bcc noktası ise R1'in üzerindeki. Bu durumda ne olacak arkadaşlar?
+
+261
+01:02:31,007 --> 01:02:36,507
+Gelirim aktarımı. Yani VB ne olacak? Şöyle yazalım.
+
+262
+01:02:39,987 --> 01:02:58,608
+VB gerilimi, V2 bölü, yani oradaki toprağa giren direk direnç, V2 bölü, V1 artı V2 çarpı, ne olacak arkadaşlar? VCC şeklinde yapılandırılacak.
+
+263
+01:03:01,523 --> 01:03:17,463
+Burada tabii ki birkaç tane varsayımız, yaklaşık bir analizimiz var bu tarz devler. Deminki devden farklı olarak direkt ne yapmıyoruz? Aşağı direkt baza inmiyoruz da iki ayarlanabilir direnç üzerinden aşağı iniyoruz.
+
+264
+01:03:26,452 --> 01:03:54,291
+Direkt I2 olduğunu varsayarsak şayet zaten bunu. IB çok düşük olduğu için yani neredeyse sıfıra yakınsa şayet ne yapmış oluyoruz? Şöyle gelin bölcülü bir devre kabul ediyoruz. Çünkü gelin bölcüyü hesaplarken I1 eşittir I2 demiştik hatırlarsanız. Normalde VB üzerinden de bir akım akıyor. Yani şuradan da IB akıyor. Bunu sıfır kabul edersek bir gelin bölcü burada.
+
+265
+01:03:54,452 --> 01:04:09,052
+Bu durumda yaklaşık olarak VBB noktası yani şurası VB, R2 bölü R1 artı R2, VCC kabul edebiliyoruz.
+
+266
+01:04:20,916 --> 01:04:24,956
+Şunun üzerinden akan akımımız, IE akımımız ne olacak?
+
+267
+01:04:25,496 --> 01:04:30,116
+RE bölü RE kabul edilecek.
+
+268
+01:04:30,996 --> 01:04:33,536
+Burada da farklı bir şey demiş ama bu çok önemli yok.
+
+269
+01:04:33,536 --> 01:04:43,396
+Yani 10R2'den büyükse, beta çarpı RE çok büyükse, bu her halükarda zaten bu şekilde kabul edeceğiz.
+
+270
+01:04:44,244 --> 01:04:50,963
+Diğer taraftan IB'yi bu şekilde hesaplarken şu koldan gidecek olursak, VCC neye eşit olmuş olacak?
+
+271
+01:04:50,963 --> 01:05:00,563
+IC çarpı RC artı VCE artı IE çarpı RE olacak.
+
+272
+01:05:05,235 --> 01:05:19,815
+Ic'yi birbirine eşit kabul edersek, şuradaki denklem takımı oluşturulmuş olacak. Yani Vcc-Ic çarpı Vce artı Ve eşitir Vce'ye eşit olmuş olacak.
+
+273
+01:05:21,036 --> 01:05:28,135
+Şimdi burada da loadline analizi yaparken aynı mantıktan yararlanıyoruz. Vce'ye yaklaşık olarak Vcc'ye eşit.
+
+274
+01:05:29,940 --> 01:05:54,700
+0 mA i'ye eşittir Vcc bölü Rc artı Re. Onları da hangisinden elde ediyoruz? Şuradan. Vce için bulmuş olduğumuz. Ic'yi 0 kabul ederek Vce'yi 0 kabul ettiğimizde sırasıyla kesim noktası ve doyum noktasındaki denklemleri bulmuş oluyoruz.
+
+275
+01:05:58,643 --> 01:06:23,503
+Burada gerilim beslemeli DC Biasleme kısmı var. Burada da beslememizi Vcc'den almıyoruz da, Vcc'den sonraki bir kısımdan alıyoruz arkadaşlar. Aynı yapı. Burada da eğer şeyi hesaplayacak olursak ne diyeceğiz? Vcc eşittir.
+
+276
+01:06:24,019 --> 01:06:37,039
+Şöyle, Vcc eşittir. Icc çarpı. Daha doğrusu Icc üstü. Icc çünkü şu aşağısı olmuş oluyor. Şurası olmuş oluyor aslında.
+
+277
+01:06:37,860 --> 01:06:50,760
+Kolektör ucuna en yakın uç Icc sayılıyor arkadaşlar. Burada da Rcc'den akın akım, yani buradan gelen akım aslında Ib artı Ic'ye eşit olmuş oluyor.
+
+278
+01:06:51,443 --> 01:06:59,344
+Bizim Üstü C dediğimiz akım, Üstü C artı ÜB'ye eşit olmuş oluyor.
+
+279
+01:06:59,844 --> 01:07:08,764
+ÜB çok düşükse şayet, Üstü C yaklaşık olarak Üstü Üstü C'ye eşit kabul ederek çözüm gerçekleştiriliyor.
+
+280
+01:07:09,384 --> 01:07:12,104
+Burada da ona bakacağız arkadaşlar.
+
+281
+01:07:19,411 --> 01:07:42,059
+RB, aynen şöyle geldik. Artı VBE artı VRE kabul edebiliriz. Şimdi buradan da UC, BT çarpı IB, UE eşittir, UE eşittir, UC kabul edecek olursak bunları bir...
+
+282
+01:07:43,347 --> 01:07:48,207
+Yana çekecek olursak buradaki Ic üstünü Ic'ye kabul ettik burada.
+
+283
+01:07:49,987 --> 01:08:02,748
+Aynı şekilde pardon Ic'yi buradaki Ic üstünü Ic'ye kabul ettik. Daha sonra da Beta Ib kabul ettiğimizde, Ib'yi bir tarafa çektiğimizde elde edeceğimiz denklem budur arkadaşlar.
+
+284
+01:08:04,587 --> 01:08:07,567
+Bunun üzerinden çözümümüzü gerçekleştireceğiz.
+
+285
+01:08:08,019 --> 01:08:13,939
+Diğer yöndeki hesabımız ise aynı şekilde ne diyeceğiz?
+
+286
+01:08:14,379 --> 01:08:15,619
+Vcc eşittir.
+
+287
+01:08:15,799 --> 01:08:24,819
+I üstü C çarpı RC artı VCE artı IE çarpı RE diyeceğiz.
+
+288
+01:08:25,420 --> 01:08:27,619
+I üstü C'yi yaklaşık olarak IE aldık.
+
+289
+01:08:27,619 --> 01:08:30,659
+IE'yi de IE olarak alırsak şayet.
+
+290
+01:08:31,091 --> 01:08:41,492
+Buradan elde edeceğimiz denklem şu arkadaşlar. Vc'ye eşittir. Vcc-Ic çarpı Rc artı Re şeklinde geliyor.
+
+291
+01:08:42,332 --> 01:08:47,031
+Aynı şekilde loadline analizinde de bunların ayrı ayrı örneklerini zaten göreceğiz arkadaşlar.
+
+292
+01:08:47,031 --> 01:08:55,771
+Sırasıyla Ic'ye sıfır veriyoruz. Vc'ye sıfır veriyoruz. Kesim noktalarını bularak bizim neyimizi hesaplayabiliyoruz?
+
+293
+01:08:56,371 --> 01:08:58,152
+Çıkışımızı hesaplayabiliyoruz.
+
+294
+01:08:59,539 --> 01:09:12,280
+Şimdi burada şundan da belki biraz bahsetmek gerekecek. Basitçe bir npm yapısı verilmiş burada arkadaşlar. Girişimizde de bakın 0.
+
+295
+01:09:13,427 --> 01:09:36,208
+Ve 1, 0 şeklinde bir lojik input verilmiş. Düşünelim. 5 volt verildiğinde ne olacak arkadaşlar? Buradan bir IB akımı akacak. IB akımı akınca burada artı ve eksi VB geliminden dolayı ne olacak arkadaşlar? Eğer doyum noktasına giderse burası VC'miz bizim.
+
+296
+01:09:37,108 --> 01:09:59,868
+İletime geçtiği anda VCE çok düşük bir değere geleceği için sıfıra çekilecek. Peki sıfır olduğu noktalardan olacak. Buradan IB akımı akmadığı için, buradan IC akımı sıfır olacağı için, şu nokta A noktası ve B noktası arasındaki gerilimler sıfır olduğu için direkt VCC. Burası da VC gerilimi olmuş olacak.
+
+297
+01:10:00,115 --> 01:10:05,115
+Bu basitçe, lojik bir devre olarak düşünülecek olursa hangi devredir arkadaşlar?
+
+298
+01:10:06,015 --> 01:10:16,395
+İletimde çıkış 0 oluyor. 0 olduğu inputlarda ise çıkış 5 oluyor. Basitçe bir NAT kapısı. Öyle değil mi arkadaşlar?
+
+299
+01:10:17,435 --> 01:10:21,115
+Transistor Switching'de, işte bizim transistörlerimiz...
+
+300
+01:10:22,003 --> 01:10:28,123
+Aynı bu şekilde basit NAT kapıları, AND kapıları oluşturarak transistörlerden ne yapıyoruz arkadaşlar?
+
+301
+01:10:28,123 --> 01:10:37,503
+Bizim bu silisyum kondüktör şeyler içerisinde lojik kapılarımızı oluşturmuşuz.
+
+302
+01:10:37,543 --> 01:10:40,043
+Lojik kapılar da birleştirerek ne yapılıyor?
+
+303
+01:10:40,184 --> 01:10:44,583
+RAM'ler, ROM'lar, mikro işlemciler oluşturulmuş oluyor.
+
+304
+01:10:46,387 --> 01:10:56,148
+Bununla alakalı özellikle transistörleri bir sıfırdan bir uyguladığınızda gerçekte böyle bir değer olmuyor arkadaşlar.
+
+305
+01:10:56,148 --> 01:11:05,148
+Tabi ki belli bir elektronik devrenin yükselme şekli biraz daha farklı. Biraz daha yavaşça yükseliyor.
+
+306
+01:11:12,095 --> 01:11:16,956
+%90'lık seviyesine ulaşması için geçen süre T10 deniyor.
+
+307
+01:11:17,735 --> 01:11:22,955
+T-Rise, şurası T-Rise, yükselme, artı...
+
+308
+01:11:23,283 --> 01:11:27,343
+Belli bir gecikme, T delay'in toplamından oluşuyor.
+
+309
+01:11:27,983 --> 01:11:34,923
+Off duruma geçtiğinde de anında, şu kırmızı gibi olmuyordu arkadaşlar, belli bir süre sonra yavaşça azalıyor.
+
+310
+01:11:35,043 --> 01:11:40,163
+Bu %10'luk kısma gelene kadar olan kısım, T fall kısmı deniyor şu kısma.
+
+311
+01:11:41,743 --> 01:11:46,263
+Tse ise belli bir gecikmeden sonra ne yapıyor arkadaşlar?
+
+312
+01:11:47,123 --> 01:12:13,403
+Siz off duruma getirdikten sonra belli bir süre kalıyor, azalıyor. Demek ki transistörlerde normalde şu şekilde bir şey yapmak mümkün değil. Daha gerçekçi olan, belli bir açıyla, belli bir gecikmeyle olan, tabi çok hızlı networklerde bu çok daha hızlı hale geliyor. PMP'de ise arkadaşlar, hep MPN'e göre çözdük.
+
+313
+01:12:13,811 --> 01:12:17,551
+NPN'in tam tersi şekilde çalışıyor arkadaşlar.
+
+314
+01:12:19,992 --> 01:12:24,891
+Bununla alakalı ayrıntılı örnekler önümüzdeki hafta çözeceğiz. Sizlerin soruları var mı arkadaşlar?
+
+315
+01:12:28,756 --> 01:12:40,676
+Önümüzdeki hafta değil ama vize haftasından sonraki haftalar ayrıntılı örneklerle buraya devam edeceğiz arkadaşlar. Hepiniz kendinize çok iyi bakın. Sorunuz yoksa şahit. Önümüzdeki hafta görüşmek üzere.
+
+316
+01:12:41,156 --> 01:12:42,636
+Hocam ufak bir sorun vardı ama.
+
+317
+01:12:43,356 --> 01:12:43,615
+Evet.
+
+318
+01:12:44,095 --> 01:12:55,815
+Ben ödev yaparken birazcık zorluk çekiyorum da. Yani çok fazla denedim ama yine de istenen sinyal bir türlü elde edemiyorum. Hangi elemanı kullanacağım konusunda emin değilim sanırım ama.
+
+319
+01:12:55,815 --> 01:13:08,315
+Bunu laboratuvar asistanlarımızda konuşur musunuz? Onlar zannedersem gösteriyorlar şeyleri. Onlar size ayrıca yardımcı olabileceklerdir diye düşünüyorum. Laboratuvar ve simülasyon kısımları o arkadaşlarda.
+
+320
+01:13:12,095 --> 01:13:28,355
+Ödevin tarihi de bu akşamaydı. Üçüncü ödev. Son gün bu soru sorulmaz. Yok hocam, bu zamana kadar sürekli denedim ama derse kadar bekledim. Yapamayınca derste sorayım dedim. Anladım. Diğer arkadaşlardan Proteus mu kullanıyorsun? Evet.
+
+321
+01:13:29,043 --> 01:13:31,184
+Proteöste sorun yaşayan var mı arkadaşlar?
+
+322
+01:13:31,184 --> 01:13:42,703
+Bir şey yapabilirsin. Osiloskopta AVB kanallarını kullanıyorsan AVB kanallarını DC olarak çıkış sağlayabilirsin. Öyle olunca bir fark yaratıyor.
+
+323
+01:13:43,224 --> 01:13:46,744
+Evet, o fark yaratıyor da DC değil, AC yapmamız gerekmez mi yine de?
+
+324
+01:13:47,315 --> 01:13:53,476
+Yani hani o fark yarattığı için ben öyle yaptım açıkçası. Hoca da derste bahsetmişti galiba.
+
+325
+01:13:53,855 --> 01:14:04,216
+AC kullanmayacaksın. Derste bahsettim ben bundan. DC kullanacaksın ki. Hem DC kaymaları da görmemiz lazım zaten yaptığımız ödevde.
+
+326
+01:14:04,536 --> 01:14:06,796
+Anladım. Tamamdır hocam. Teşekkür ederim.
+
+327
+01:14:07,355 --> 01:14:09,976
+Rica ederim. Derste bunu anlattım özellikle.
+
+328
+01:14:12,627 --> 01:14:16,247
+Kendinize iyi bakın arkadaşlar. Görüşmek üzere. Hepinize iyi hafta sonları.
+
+329
+01:14:17,827 --> 01:14:18,587
+İyi günler hocam.
+
+330
+01:14:18,948 --> 01:14:20,067
+İyi günler. Sağ olasınız.
