@@ -1,0 +1,1215 @@
+1
+00:00:40,756 --> 00:00:41,996
+Günaydın arkadaşlar.
+
+2
+00:00:45,195 --> 00:00:47,256
+Günaydın hocam.
+
+3
+00:00:48,795 --> 00:00:54,615
+[öğrenci]'in sunum haftaya idi değil mi? Yanlış hatırlamıyorum. Bir bakayım listeye.
+
+4
+00:00:55,396 --> 00:00:56,856
+22 Aralık yatırladın mı?
+
+5
+00:00:57,115 --> 00:01:02,775
+21 Aralık'mış. Pardon, pardon. Ben şaşırdım. Evet, doğru. Seninki bayağı varmış.
+
+6
+00:01:02,775 --> 00:01:04,295
+Pardon.
+
+7
+00:01:05,715 --> 00:01:31,215
+Şimdi bu hafta [öğrenci] ve [öğrenci]'un sunumları var. Üçüncü ve dördüncü bölümlere bakacağız. Ondan sonra haftaya da beşinci ve altıncı bölümlerde [öğrenci] ve [öğrenci]. Kendileri derse pek geliyor mu gelmiyor mu bilmiyorum ama sizler de bir şey yaparsanız uyarırsanız arkadaşlar sevinirim. Daha iyi olacaktır.
+
+8
+00:01:32,212 --> 00:01:40,171
+Biraz bekleyelim yine bir iki dakika daha katılım olur mu olmaz mı zannetmiyorum. Çok artacağını genellikle de 4-5 kişi oluyoruz derste.
+
+9
+00:01:42,312 --> 00:01:47,012
+Bugün ilk olarak [öğrenci] bize üçüncü bölümü anlatacak.
+
+10
+00:01:47,012 --> 00:01:50,012
+Üçüncü bölümde...
+
+11
+00:01:53,299 --> 00:02:04,900
+Mikro Servis Mimarisi'ndeki prosesler arasındaki haberleşme ile alakalı başlıkları ve buradaki tipleri inceleyeceğiz.
+
+12
+00:02:06,540 --> 00:02:08,060
+Detaylarına bakacağız.
+
+13
+00:02:08,900 --> 00:02:15,960
+Şimdi [kişisel bilgi] ama burada kendisi dinliyor.
+
+14
+00:02:16,159 --> 00:02:20,680
+Sorularınıza cevap verebilecek şu şekilde yaptığı bir video.
+
+15
+00:02:21,331 --> 00:02:44,531
+Yolladı çekip bana sunumunu. Şimdi ben size o videoyu paylaşacağım. Beraber videoyu dinleyeceğiz yani anlayacağınız. Şu anda onu nasıl yapacağımı merak ediyorum. Şurada bir şey var mı? Burada benim videom var. Şimdi bir dakika ben bir videoyu bir durdurayım kendimi.
+
+16
+00:02:49,491 --> 00:03:00,711
+Sonra, şimdi ben burada Share Screen desem. Ne olacak?
+
+17
+00:03:14,163 --> 00:03:24,163
+Bunu nasıl yapacağız? Ha, şunu açacağım ben. Bir dakika, evet tamam şimdi olacak. Becermeye çalışıyorum ben de.
+
+18
+00:03:26,663 --> 00:03:41,203
+Nerede bu? Şu. Tamam. Video için optimize et ve bilgisayarın sesini de paylaş dediğimde [öğrenci]'ın sesli kaydının size ulaşıyor olması lazım. Evet, başlatalım bakalım.
+
+19
+00:03:41,747 --> 00:04:07,707
+Ne kadar başarılı olacak? Şöyle yapalım biraz daha. Tamam. Evet. Peki, başlatıyorum o zaman. Şuraya da şeyleri açalım. Chat ekranımızı da açalım. Soru olursa diye kaçırmamak için. Peki, bunların sunumunu ben başlatıyorum.
+
+20
+00:04:10,900 --> 00:04:19,439
+Herkese bugün 3. bölüm olan Overview of Interprocessed Communication in a Microservice Architecture konusunu anlatacağım.
+
+21
+00:04:19,580 --> 00:04:22,240
+Öncelikle Interaction Style ile başlamak istiyorum.
+
+22
+00:04:22,720 --> 00:04:23,899
+Temel olarak Microservice...
+
+23
+00:04:24,659 --> 00:04:27,879
+Ses iyi mi arkadaşlar? Bir sıkıntı var mı?
+
+24
+00:04:29,740 --> 00:04:30,220
+İyi hocam.
+
+25
+00:04:30,500 --> 00:04:32,080
+İyi gibi hocam anlaşılıyor.
+
+26
+00:04:32,500 --> 00:04:36,840
+Biraz daha arttırsam acaba size de artar mı? Şöyle deneyelim.
+
+27
+00:04:37,459 --> 00:04:38,699
+Biraz arttırdım.
+
+28
+00:04:38,699 --> 00:04:46,579
+Yapısını düşünecek olursak, servis ve klientler arasındaki iletişim bizim için önemli bir nokta. Bu yüzden de...
+
+29
+00:04:46,675 --> 00:04:54,675
+İnterakşan style'lara ilk önce değinmek istiyorum. Bunları iki grup altına toplayabiliriz. Biri First Dimension, diğeri Second Dimension.
+
+30
+00:04:54,675 --> 00:05:01,675
+First Dimension aslında Request Response yapısında One to One ve One to Menu olarak düşünebiliriz.
+
+31
+00:05:01,675 --> 00:05:14,675
+Yani One to One için her klient sadece bir tane servise istekte bulunabilir. One to Menu'de ise her istek çoklu servis tarafından cevaplanabilir.
+
+32
+00:05:14,675 --> 00:05:31,196
+Senkron ve asenkron yapısına bakacak olursak da senkron, klientler servisten dönecek responsu beklemek durumundadır. Ama asenkronda böyle bir durum yok. Yani klient, responstan dönecek cevabı beklemek zorunda değildir bu mekanizmada.
+
+33
+00:05:42,675 --> 00:05:49,675
+Teknik Üniversitesi'nde klient ve servis arasındaki iletişim bizim için çok önemli bir noktadır. Neden? Şöyle ki,
+
+34
+00:05:50,387 --> 00:06:12,527
+Klientler istekte bulunup operasyonlara karşı onları çağırabilir ve servis bunlara cevap vermek durumundadır. Bu yüzden bir API dizayn ederken bu yapı göz önünde bulundurup bir interface definition language'e göre, yani buna göre bir ilerleme olmadı. Şöyle hayal edebilirsek.
+
+35
+00:06:13,300 --> 00:06:36,699
+Öncelikle bir geliştirme yapılırken, bir API dizayn edilirken ilk önce bir interface definition olmalı. Bunun da sebebi şu, yani ilerleyen süreçte müşterilerle konuşulduğunda veya istekler doğrultusunda değiştirilebilir olmasına rağmen ilk başlangıç noktasında interface definition yapıldığında üzerinden ilerlemesi daha doğru ve daha sağlıklı olmakta.
+
+36
+00:06:37,459 --> 00:06:53,799
+Bu API'lerin ilerlemesine bakacak olursak, aslında mikroservis tabanlı uygulamalarda API'lerin değişmesi zordur. Şöyle düşünebiliriz. Yani bir mikroserviste yapılan bir API farklı yerlerde kullanılıyor olabilir.
+
+37
+00:06:53,799 --> 00:07:04,799
+Ve bu nedenle sizin bir yer için düşündüğünüz bir değişiklik birçok yeri etkileyebilir. Bu mekanizmada ilerlenilirse, değişikliğin çok zor olduğunu...
+
+38
+00:07:05,459 --> 00:07:11,999
+Sebebi de aslında bir noktada farklı yerlere etkiliyor olmasından kaynaklanıyor.
+
+39
+00:07:13,651 --> 00:07:41,651
+Semantik olarak yani anlamsal olarak bu API'lerin versiyonlamasına bakmak istiyorum. Aslında bu çok aşinal olduğumuz bir konu. Yani 1.9.2 gibi versiyonları çok görüyoruz. Buradaki amaç majör, minor ve patch yapısına göre ilerliyor olduğunu bilmek. Yani bunlar her bir değişimde incremental olarak artan bir yapı. Majör için baktığımızda tabiri cahitse yani API için büyük değişiklikler.
+
+40
+00:07:41,651 --> 00:07:49,812
+olduğu noktada artık kullanılmamış bir yapı değiştiği durumda majör versiyon arttırılır.
+
+41
+00:07:49,812 --> 00:07:57,851
+Minon için de aslında majöre göre kıyasladığımızda API için kullanılmayan bir şey değişmiyor ama
+
+42
+00:07:57,851 --> 00:08:01,851
+kayda değer bir şekilde bir değişim veriyor.
+
+43
+00:08:01,851 --> 00:08:09,451
+[öğrenci] duyamadım bir daha şey yapabilir misin arkadan geldi ses.
+
+44
+00:08:09,747 --> 00:08:11,408
+Şu an geliyor mu hocam sesin?
+
+45
+00:08:11,648 --> 00:08:11,867
+Evet.
+
+46
+00:08:12,819 --> 00:08:27,199
+Şöyle bir durum var. Aslında videoda ben de fark ediyorum. Ara ara kesiklikler oluşuyor. Kaydederken durdurduğum bir nokta değil de zifleyip attım. Yani zifte veri kaybolduğunu düşünmüyorum ama ondan kaynaklandı sanırım. O ara uçak kesiklikleri oluşuyor.
+
+47
+00:08:40,820 --> 00:08:42,400
+Biraz kesik kesik geliyor olabilir.
+
+48
+00:08:43,340 --> 00:08:47,740
+Anladım, tamam. Ben anlaşımla sarı açısından söylemek istemiştim.
+
+49
+00:08:48,340 --> 00:08:56,059
+Yani sadece ses ya da sadece ekran paylaşmak daha basit bir iş ama video paylaşmak her zaman için yoruyor sistemi.
+
+50
+00:08:56,059 --> 00:08:59,539
+Bu nedenle size bazı kopukluklar geliyor olabilir.
+
+51
+00:09:00,680 --> 00:09:06,240
+Anlamadığınız noktada hemen durdurun. Ben sana sözü vereyim. Sen bir daha açıkla.
+
+52
+00:09:06,995 --> 00:09:08,255
+Tamam hocam.
+
+53
+00:09:08,556 --> 00:09:10,056
+Peki oldu. Devam ediyoruz.
+
+54
+00:09:15,923 --> 00:09:17,923
+Menör değişikliklere gidilir.
+
+55
+00:09:17,923 --> 00:09:19,923
+Patch için de aslında patch bunlardan biraz daha farklı.
+
+56
+00:09:19,923 --> 00:09:21,923
+Yani bug fixler düzeltildi.
+
+57
+00:09:21,923 --> 00:09:25,923
+Yani ortaya çıkan bug fix çözüldüğünde patchler arttırılır.
+
+58
+00:09:26,676 --> 00:09:45,016
+Burada da bununla bahsediyorum. Şöyle bir durum var. Biz mikroservis architecture'ına baktığımızda mesajlaşmayı bahsetmeden geçemeyiz. Neden? Şöyle ki her noktada bir iletişim var. Bu iletişimin nelerle sağlanacağı, hangi verilerle sağlanacağı bizim için önemli.
+
+59
+00:09:45,016 --> 00:09:54,655
+Mesaj formatlarına baktığımızda aslında text ve binary olarak bunları iki kategori altında toplayabiliriz. Text yapısı hepimizin de çok aşina.
+
+60
+00:09:54,676 --> 00:09:59,676
+Bu şekilde JSON XML yapısından bahsediyoruz.
+
+61
+00:10:00,340 --> 00:10:12,340
+Aslında kullanışı çok anlaşılır ve yadın olan bir mesaj formatlarıdır. Şöyle ki, İngizemel'de bir de tagleme yapısı olduğu için insanlar baktığında kolaylıkla anlayabilirler.
+
+62
+00:10:12,340 --> 00:10:18,340
+JSON'de de nitekim yani k-value pairlerinden oluşuyor ve text-based bir yapı kullanılıyor.
+
+63
+00:10:18,340 --> 00:10:28,340
+Tabii bunların şöyle bir dezavantajı var. Bunlar ne kadar anlaşılır da olsalar veri transferi sırasında bir parsing işlemine ihtiyaç duyabilir.
+
+64
+00:10:28,340 --> 00:10:38,960
+Bu gerektiği durumlarda mesajlar çok büyüyebilir. Özellikle XML'de tagleme yapısı da olduğu için JSON'a nazaran daha büyük dosyalar gönderilebilir.
+
+65
+00:10:39,340 --> 00:10:46,039
+Ve bu da performans sıkıntılarına yol açabilir. Eğer bir performans kaygısı varsa binary formatlar düşünülebilir.
+
+66
+00:10:46,039 --> 00:10:55,179
+Binary formatlarda da en popüler olanları protokol boflar ve euro görüyoruz. Aslında bunların da ayrılan noktaları var.
+
+67
+00:10:56,340 --> 00:11:18,980
+Mesajlarda nasıl taglemeden bahsettik. Burada da aslında benzer bir yapı var. Mesela protokol bufferlar tagli field'ları kullanıyorlar. Avro'dan nitekim öyle değil gibi böyle farklılaşmaklar olmakla birlikte mikroservis yapısının hangisine ihtiyaç duyduğunu göz ardı etmeden hangisi gerekli olduğuna göre karar vererek bir format seçmemiz gerekiyor.
+
+68
+00:11:24,340 --> 00:11:40,980
+Bu konuda geçemeyiz tabii ki. Senkron bir yapıdan bahsettiğimizde, klient ve server arasındaki request responsörün birbirini bekleme durumundan bahsediyoruz aslında. Her iki işlem de business logic de gerçekleşmekte. Yani her iki taraf için de hem klient hem servis için.
+
+69
+00:11:47,443 --> 00:12:02,443
+RPI Proxy'nin çağrılması var. Bu çağrılmadan sonra bu Proxy servis tarafındaki RPI Server'a request'te bulunmakta. Bu da servis tarafından Business Logik'te...
+
+70
+00:12:03,028 --> 00:12:10,028
+Servis Interface'ini çağırarak bir sonuç üretmekte ve bu sonuçta tekrar kliente reply olmakta.
+
+71
+00:12:10,028 --> 00:12:13,028
+Senkron yapıda böyle bahsedebiliriz bunu.
+
+72
+00:12:13,028 --> 00:12:18,028
+Tabi bu iletişimden bahsederken REST'ten bahsetmemek de olmaz diye düşündüm.
+
+73
+00:12:18,028 --> 00:12:21,028
+Tabi REST'in şöyle bir yapısı var.
+
+74
+00:12:21,028 --> 00:12:31,028
+REST mimarisi kullandığımız noktalarda, iletişimin, yani klient ve server arasındaki iletişimin daha scalable olduğunu ve kapsüllenmiş bir yapıyla...
+
+75
+00:12:31,028 --> 00:12:44,488
+Yani korunaklı bir yapıda gerçekleştiğini görüyoruz. Ben de bu yüzden REST'ten de bahsetmek istedim. Özellikle HTTP protokolünü kullanmanın noktada REST'in büyük bir kullanım yelpazesi var.
+
+76
+00:12:44,488 --> 00:12:52,748
+Aslında REST Maturity Model'den bahsedeceğim. Bu, kullandığımız REST'lerin levellere bölünmüş hali gibi düşünebiliriz.
+
+77
+00:12:56,596 --> 00:13:22,676
+Aslında HTTP post request'lerinin URL üzerinde yapılması, yani client tarafından bu request'lerin yapılması level 0 olarak adlandırılmakta. Level 1'e bakacak olursak da bu post metotlarının URL yani bir parametre olarak pes edilip bunun sonucundaki responsların alınması durumu level 1 olarak düşünüyoruz. Level 2'de ise şöyle bir durum var.
+
+78
+00:13:24,596 --> 00:13:36,596
+Bu, bu, REST altında level 2 de Cacheleme mekanizmasının temel alıyor. Yani buna bir gönderme yapan bir level.
+
+79
+00:13:36,596 --> 00:13:49,451
+Bir diğer açıdan da level 3'e bakacak olursak da bu artık representation yani gelen get request ile gelenlerin representasyon non'u gösterdiği bir level.
+
+80
+00:13:49,587 --> 00:14:05,347
+REST'a piyasada özelleştirmek için şöyle bir şey söyleyebiliriz. REST kendi içerisinde BAPI barındırmamakta. Yani CORBA ve SOAP'a benzemez bu noktada. Onlardan farklılaşan böyle bir noktası bulunmakta.
+
+81
+00:14:05,875 --> 00:14:26,715
+Bu yüzden bir API'ye ihtiyaç duymakta ve bu API'nin dizaynında da dediğimiz gibi post, get gibi metotlara ve bunların operasyonlarına ihtiyaç duymakta. Mesela burada bir tane get'in yer elini görüyoruz. Parametreler bu şekilde pes edilebiliyor. Tabi neye sebep oluyor? Bu şekilde bir kullanım.
+
+82
+00:14:27,283 --> 00:14:35,843
+Zamansal olarak fazla zaman harcamaya sebep olur gerek geliştirmede gerekse anlaşılması açısından.
+
+83
+00:14:37,504 --> 00:14:42,764
+Res'in olumlu ve olumsuz örneğini değinecek olursak res temel olarak basittir.
+
+84
+00:14:42,923 --> 00:14:47,244
+Yani anlaşılması kolaydır. Kullanıcı tarafından neyin ne yaptığını anlamak kolaydır.
+
+85
+00:14:47,827 --> 00:15:00,387
+Test etmesi de kolaydır. Yani siz bir REST aplikasyon yapmaya çalıştığımızda REST Mimarisi'nin temeli alan, Apostman'da kolayca denenebilir bir yapıda.
+
+86
+00:15:00,387 --> 00:15:11,027
+Yalnız şöyle bir nokta var. REST Request Response yapısına göre çalışır. Yani tabii bu bir noktada da dezavantaj. Şöyle ki, bir sayfa düşünelim.
+
+87
+00:15:11,347 --> 00:15:20,567
+Ve bir değişiklik oldu servis tarafında. Bu sayfa refresh edilmedikçe ya da arka planda request'ta bulunmadıkça o sayfaya değişiklik gelmez.
+
+88
+00:15:25,360 --> 00:15:33,040
+Subscribe mekanizmasına çok uygun değil. O mekanizma ya o mekanizma şeklinde çalışmaz resmi imarısı. Bu bir dezavantajdır.
+
+89
+00:15:33,600 --> 00:15:42,500
+Ve şöyle bir durum var. Mesela çoklu diyelim ki bir data çekmek istiyoruz. Kompleks bir yapıda. Bu yüzden res biraz işimizi zorlaştırabiliyor.
+
+90
+00:15:42,500 --> 00:15:52,379
+Şöyle ki URL'e verilen parametreler olsun. Yani biraz iş komplikasyon aşamasına ilerliyor. Yani oluşacak bir hatayı handle etmek zorlaşıyor.
+
+91
+00:15:53,360 --> 00:15:54,960
+Ve dezavantajları bulunmakta.
+
+92
+00:15:55,480 --> 00:15:57,639
+Şimdi GRPC'den bahsetmek istiyorum.
+
+93
+00:15:57,780 --> 00:16:00,900
+Tabii biraz protokollerden ve mesaj yapısından ilerledim.
+
+94
+00:16:01,259 --> 00:16:06,360
+Çünkü temel olarak mikroservis dediğimiz yapılar aslında kendi başlarına...
+
+95
+00:16:06,836 --> 00:16:16,336
+Unique'ler gibi düşünebiliriz ve bunların diğerleriyle bir araya gelmesi için iletişimi sağlaması lazım. Bu yüzden de mesaj protokolleri önemli bir nokta.
+
+96
+00:16:16,336 --> 00:16:27,336
+GRP ise bir Binary Message protokollidir. Bu aslında API'lerde kullanılan, First Approach'a göre kullanılan bir dizaynıdır.
+
+97
+00:16:27,336 --> 00:16:34,336
+Bunun protokol buffer formatının kullanmasının şöyle sebepleri vardır.
+
+98
+00:16:34,836 --> 00:16:47,836
+Size olarak daha küçüktür, daha kompakt bir yapısı vardır. Bu sebeple gerek iletişim konusunda olsun, gerek transfer sürecinde olsun daha avantajlı sonuçlar döndürüyor bize.
+
+99
+00:16:47,836 --> 00:16:58,836
+Yani dediğim gibi performans açısından bir çekincemiz varsa binary formatlar bu noktada devreye giriyor. Bunun bazı avantajlarından bahsetmek gerekirse...
+
+100
+00:17:00,596 --> 00:17:06,516
+Kolaylıkla update yapabiliyoruz. Yani operasyonlarda kolaylıkla update'i gerçekleştirebiliyoruz.
+
+101
+00:17:06,895 --> 00:17:15,836
+Dediğim gibi daha kompak olması bizim gerek time açısından gerek barındırma maliyeti açısından kolaylıklar sağlamakta.
+
+102
+00:17:16,215 --> 00:17:19,375
+Aynı zamanda bir directs non-stream'e de izin vermekte.
+
+103
+00:17:20,755 --> 00:17:25,375
+Şimdi asenkron mesaj iletişimine bakacak olursak da...
+
+104
+00:17:26,003 --> 00:17:39,384
+Şöyle bir durum vardı. Yani asinkron dediğimizde mesaj gönderildi, respons beklenmek durumunda. Bu gönderilen mesajdan bahsedelim. Yani aslında mesaj request olarak da düşünebiliriz.
+
+105
+00:17:42,579 --> 00:17:55,579
+Bir header'ı body'si olması gerekiyor bizim için. Aslında header'ı name ve value'dan oluşur. Name value payları yani mesaj formatına özel değişebilmek de...
+
+106
+00:17:56,115 --> 00:18:00,115
+Aynı zamanda Message ID'yi barındırması gerekiyor içerisinde.
+
+107
+00:18:00,115 --> 00:18:06,115
+Ve Data kısmımız var. Message Body olarak geçen yerde de Data'yı tutmamız gerekiyor.
+
+108
+00:18:06,115 --> 00:18:13,115
+Şunlardan bahsedebilirim. Her bir mesajın farklı yapıları olmakta.
+
+109
+00:18:13,115 --> 00:18:21,115
+Şöyle ki, örneğin bir PNG formatında ya da JPEG formatında bir resim gönderelim diyelim.
+
+110
+00:18:21,115 --> 00:18:23,115
+Aslında hepsi resim formatı.
+
+111
+00:18:23,539 --> 00:18:46,400
+Gönderilen hepsi resim. Ancak oturup header'larına baktığımızda, içeriğine baktığımızda çok büyük farklaşma olduğunu görebiliyoruz. Ben bunu yaptığım bir projede de karşılaşmıştım. JPEG gönderiyorum, PNG gönderiyorum. Aslında aynı yapı. Yani image gidiyor sonuçta. Ancak header'larına oturup baktığımızda çok büyük farklaşma oluyor.
+
+112
+00:18:51,539 --> 00:18:57,779
+BNG'yi render etmesi değişebiliyor. İşte bu noktada header'lar, message body'lar önemli bir rol oynuyor.
+
+113
+00:18:57,779 --> 00:19:07,379
+Asenkron olarak request response yapısı dediğimiz gibi birbirlerini bekleme düzeni gerektiriyor.
+
+114
+00:19:07,379 --> 00:19:12,779
+Tabii şöyle düşünebiliriz. Senkron ya da asenkron durumu her operasyon için değişebilir.
+
+115
+00:19:15,316 --> 00:19:41,276
+Gereklilik kendine özel sonuçta. Bazı operasyonlar için asenkron yapıya ihtiyaç duyulmakta. Şöyle diyebiliriz. Mesela bir login işlemi olacak. Kullanıcı bilgilerine girdi. O bilgilere cevap gelmeden diğer işlemlere geçemez. Yani burada bir senkron yapı olmaması gerekiyor zaten. Yani somutlaştırmak gerekirse her operasyonu özel senkron ve asenkron yapısı değişmekte.
+
+116
+00:19:43,124 --> 00:20:00,684
+Burada da şundan bahsediyorum. Bir API yaratılırken, yani mesaj tabanlı iletişimini sağlarken, daha önce de bahsettiğim gibi bunlar da JSON kullanılabiliyor, XML kullanılabiliyor, ProToWoof kullanılabiliyor.
+
+117
+00:20:00,684 --> 00:20:04,484
+Bunlar standartlar. Temel olarak şu amaçlanır.
+
+118
+00:20:05,236 --> 00:20:32,636
+İletişim sağlandığı noktada, yani mesajların transfer edildiği noktada genellikle bir parsing'e gitmemeyi hedeflenir. Yani olabildikçe aynı formatta data transfer edilmesi sağlanmak istenir. Ama tabii her zaman böyle bir durum oluşmuyor. O yüzden bu standartların dönüşümü, farklı formatların bir araya getirilmesi, yani aynı örnek veriyorum işte JSON, XML, XML gelen 3 veri var. Bunları XML'de mi toplamak gerekiyor?
+
+119
+00:20:33,236 --> 00:20:51,236
+Yani ortak bir noktaya getirmek gibi konularda API bazında özelleştirmeler yapılabilir. Hem receiver'ın, hem klientin, hem de servis tarafının mesajları gönderme sırası da bizim için önemli bir nokta.
+
+120
+00:20:57,875 --> 00:21:15,556
+Servisler farklı yönelimlere ilerleyebilir. Çünkü servisler o mesaja ihtiyaç duyuyor ve bir noktada da o mesaja cevap vermesi gerekiyor. O yüzden servislerin bunları handle etmesi değişebilmekte.
+
+121
+00:21:17,695 --> 00:21:19,556
+Şöyle bir durum var bir de.
+
+122
+00:21:25,523 --> 00:21:35,803
+Bir asenkron yapıdan bahsettim. Orada bir yanlışlık olmuş. Asenkron da işte beklemesi gerekir tarzında. Senkronla ifadeyi karıştırmışım. Onu açıklayayım dedim.
+
+123
+00:21:36,443 --> 00:21:45,383
+Tamam, doğru. Ben son da söyleyecektim ama sıkıntı değil. Arada sen düzelttin. Sonuçta beklemesi gerekiyorsa senkron bir yapı kurgulamak daha doğru olacaktır.
+
+124
+00:21:46,223 --> 00:21:51,343
+Evet, tamam. Ondan üzerinden bir daha geçeceğiz hepsini zaten. Hani sunum bittiğinde merak etmeyi bir toparlayacağız.
+
+125
+00:21:51,363 --> 00:21:51,863
+Tamam hocam.
+
+126
+00:21:57,076 --> 00:22:13,968
+Bu noktada da bunların bir storage durumu var. Yani bir relational database kullandığımızı düşünürsek bir transaction yapısı bulunmakta ve bu noktada da gelen...
+
+127
+00:22:13,968 --> 00:22:24,968
+İsteklerin belli bir sırayla işletilmesi gerekmekte. Mesela bu da önemli bir nokta. Çünkü gelen mesajların, yani gelen isteklerin belli bir yapıya göre ilerlemesi gerekiyor.
+
+128
+00:22:24,968 --> 00:22:32,968
+NoSQL'de de benzer bir yapı var. Sadece NoSQL'in bir relational yapısı yok. Onu biliyoruz. Yani öyle kullanıldığından dolayı.
+
+129
+00:22:41,968 --> 00:22:53,968
+Asit teoremlerinin içerdiğini görüyoruz. Yani ona uygun olarak Q mekanizmasında gelen mesajların eşitilmesi gerektiğini görebiliyoruz. Burada da temel olarak bundan bahsetmek istedim.
+
+130
+00:22:56,248 --> 00:23:00,488
+Mesajlaşma için bazı kütüphaneler ve frameworkler var.
+
+131
+00:23:00,895 --> 00:23:08,575
+Bunlar Business Logic'da işlem yaptığı az önceki grafikte de, görselde de göstermiştim size.
+
+132
+00:23:08,575 --> 00:23:14,415
+Bu yüzden bazı mesaj brokerlara ihtiyaç duyulabiliyor gelen mesajlar için.
+
+133
+00:23:14,415 --> 00:23:24,175
+Genelde bunlar low level olarak çalışıyor ve çok fazla sayıda koda ihtiyaç duyabiliyor bu mesaj brokerlar.
+
+134
+00:23:24,175 --> 00:23:27,455
+Bu yüzden kütüphaneler ve frameworkler kullanılabiliyor.
+
+135
+00:23:32,180 --> 00:23:48,240
+Burada da aslında resmi imarisi için yani HTTP protokolünde senkron yapı olarak resmi imarisinde asenkron olarak bir iletişim sağlayabildiğimizi göstermek istedim.
+
+136
+00:23:48,360 --> 00:23:52,420
+Yani res aynı zamanda asenkron da destekleyen bir yapıda.
+
+137
+00:23:55,251 --> 00:24:03,051
+Şöyle bir durum var aslında. Şuradaki slide'dan da görürsek. Asinkron yapılar bizim...
+
+138
+00:24:03,443 --> 00:24:18,723
+Mesaj trafiğinin daha kolay yönetilmesini sağlıyor bizim için. Yani şöyle ki, bir klient istekte bulunuyor ve bu senkron olarak ondan cevap beklediğinde belki de response time'ı yüksek ve bu nedenle klient sürekli bekliyor olabilir.
+
+139
+00:24:19,043 --> 00:24:25,036
+Şimdi gerçek hayatta düşüncek olursak bu kullanıtsız bir yapı. O yüzden...
+
+140
+00:24:25,556 --> 00:24:44,556
+Bizim kullanılırlığı arttırmak için bir senkron yapıya dönmemiz, senkron yapıları elimine etmemiz istenir. Yani temel olarak böyle bir yaklaşım var kitapla da incelediğim kadarıyla. Senkron yapılar elimine edilirse performansın artacağı yönünde bir ilerleme var. Bu yüzden de...
+
+141
+00:24:46,740 --> 00:24:54,919
+Genellikle RESTful API kullanılması var. RESTful API'de daha asinkron yapı temelli bir iletişim sağlanıyor.
+
+142
+00:24:56,079 --> 00:25:00,399
+Genel olarak benim anlatacaklarım bunlar. Beni dinlediğiniz için teşekkür ederim.
+
+143
+00:25:00,399 --> 00:25:06,939
+Herhangi bir sorunuz var mı? Ben şu an online olarak derse katılıyor olacağım. Teşekkür ederim.
+
+144
+00:25:18,708 --> 00:25:40,268
+Evet, biz de [öğrenci]'a teşekkür ediyoruz. Değişik bir şey oldu. Sunumu önceden kaydedip yollaması. İlk defa ben de deneyimledim video paylaşmayı. Umarım yeterince kaliteli gelmiştir görüntü ve ses. Görüntü sonuçta zaten çok statik olduğu için gelmiştir de ses konusunda inşallah çok fazla sıkıntı yaşamamışızdır, anlayabilmişsinizdir diye düşünüyorum.
+
+145
+00:25:40,268 --> 00:25:44,688
+Özetle, şimdi elimizde servisler var.
+
+146
+00:25:45,203 --> 00:25:55,963
+Bunlar mikro servisler olabilir ve bunların bir şekilde birbirleriyle haberleşmesi birlikte çalışarak iş yapabilmeleri gerekiyor. O zaman bunları haberleştireceğiz, konuşturacağız birbirleriyle.
+
+147
+00:25:56,319 --> 00:26:23,879
+Nasıl konuşturalım? Şimdi burada tabii en eski ve de en temel teknik RPC dediğimiz teknoloji. Uzak yordam çağrısı olarak Türkçeleştiriyoruz. Remote Procedure Call yani. Burada direkt olarak aslında sıkı sıkıya bağlı, hani böyle lose değil de tightly coupled bir yapı elde ediyoruz. İki tane servis birbiriyle ciddi bir şekilde iletişim kanalı açarak konuşuyor.
+
+148
+00:26:24,819 --> 00:26:45,319
+Doğal olarak da bu konuşma kanalı telefon hattı gibi düşünürseniz dedike oluyor ve haberleşme bitene kadar da oradaki hat açık kalmaya devam ediyor. Bu ne demektir? İki tarafta meşgul demektir. Yani hem alan hem veren bir şekilde birbirini beklemek zorunda diyoruz.
+
+149
+00:26:52,819 --> 00:27:06,400
+Kullanıyor mudur bilmiyorum ama RMI vardı eskiden. Demote Methods Invocation diye. Bu da yine benzer bir şekilde Inter-process Communication için tasarlanmış bir framework'tü. Ya da işte kütüphaneydi diyelim.
+
+150
+00:27:08,051 --> 00:27:34,271
+Bu haberleşme ya da işin teknik detayları ile RPC Kütüphanesi ilgileniyor. Siz yine Business Logik'te kalıyorsunuz. O altıgenleri hatırlarsanız. Ama bir interfeise bağlanıp o interfeis sayesinde haberleşmenin başka yere gidecek gelecek verilerin alınmasını, verilmesini sağlıyorsunuz. İyi güzel de bu birbirini bekleme, telefon hattı gibi meşgul tutma olayı çok da iyi bir şey değil. Çünkü servisler kilitleniyor.
+
+151
+00:27:34,688 --> 00:27:44,868
+Yeni bir request alamıyorsunuz, hizmet veremiyorsunuz. Birbirinizi bekleyip işin yapılmasını, sonuçlanmasını beklemek durumundasınız. Ne yapacağız?
+
+152
+00:27:45,311 --> 00:27:59,851
+O zaman demek ki işte REST dediğimiz, Representational State Transfer adını verdiğimiz, biz isteyelim, yollayalım da ondan sonra çalışsın, çalıştıktan sonra bana sonucu döndürsün.
+
+153
+00:27:59,851 --> 00:28:06,611
+Ben de o sırada onu beklemeyeyim. Asenkron haberleşmenin temellerini kullanalım şeklindeki yaklaşımlar.
+
+154
+00:28:07,188 --> 00:28:32,328
+Ortaya çıkmaya başladı. Tabii onun da yine [öğrenci]'ın sunumunda bahsettiği gibi kendine göre avantajları var. Evet çok iyi ama dezavantajları da var. Artısıyla eksisiyle şey yapmak gerekiyor. Bunları ölçüp biçip o şekilde hangi sayıdan iyi kullanacaksak asenkron mu asenkron mu ya da nasıl bir protokol kullanacağız. Bunları işte mimari tasarlarken belirlememiz gerekiyor.
+
+155
+00:28:34,740 --> 00:28:45,660
+Daha çok genel uygulamalar ya da genel kütüphanelerin hepsi, kendisi de söyledi biliyorsunuz, işte restful servisler şeklinde tasarlanmaya gayret ediliyor.
+
+156
+00:28:45,660 --> 00:28:47,660
+İşte bu şey...
+
+157
+00:28:48,180 --> 00:28:57,880
+Yenileme, bir şey olduğunda sizin haberdar olmanız konusu belki sıkıntı olabilir ama rest konusunda orada da şeyler var.
+
+158
+00:28:57,880 --> 00:29:15,519
+Biliyorsunuz event publish mekanizmalarıyla yine bir mesaj yayınlayarak o mesajın ilgilileri tarafından dinlenmesi ya da ilgililerinin o mesaja göre işlem yapması şeklinde bir güncellemeyi yayma çözümü gerçekleştirilebilir.
+
+159
+00:29:16,180 --> 00:29:37,799
+Tabii burada da yine şey problemi ortaya çıkıyor. Güzel, harika, şeyleri böldük. Servisler birbirini beklemiyor, asinkron çalışabiliyorlar. Birbirlerine mesaj yollayıp ondan sonra isterse bekleyip, istemezse beklemeden, o arada başka işler yapıp cevabı aldığında işine devam edecek şekilde bir mekanizma kurgulayabiliyoruz.
+
+160
+00:29:44,180 --> 00:29:50,680
+çok örnekli çalışıyor yani multi-instance çalışıyorlar ki hani aynı anda birkaç ya da
+
+161
+00:29:50,680 --> 00:29:56,480
+işte birden fazla istemciye aynı hizmeti sunabilelim yani işte bunların instansları
+
+162
+00:29:56,480 --> 00:29:57,480
+çalışıyor.
+
+163
+00:29:57,480 --> 00:30:00,000
+O zaman şimdi burada bir mesajlaşma.
+
+164
+00:30:00,000 --> 00:30:24,319
+Yönetimi, orkestrasyonu gerekecek. Yani hangi proses ya da hangi servis hangi mesajı alacak, hangisini aldı, hangisini işleyecek, bunun cevabını kim bekliyordu, kime yollayacaktık. Yani bu mesajların bir şekilde bir kuyruk mekanizması üzerinde yönetilmesi ve buradan bir şekilde aktarılması gerekiyor. İşte buna da Message Broker ya da Message Queue adını veriyoruz.
+
+165
+00:30:25,076 --> 00:30:42,096
+Burada yine tabii pek çok şey var. Hazır çözümler de işte Rabbit gibi falan en çok kullanılanlardan. Message Q'lar işte gelen requestleri sıraya dizip ondan sonra hangi servis hangi requestle ilgileniyor ya da hangisini hangi tarafa kanalize edeceğiz.
+
+166
+00:30:42,096 --> 00:30:51,076
+Yani bir şey gibi trafik polisi gibi trafiğin aktarılmasını ya da yönetilmesini sağlayan teknolojileri kullanıyoruz bu noktada.
+
+167
+00:30:51,955 --> 00:31:08,799
+Şeklinde ben de özetlemiş olayım chapter 3'ü. Tabii ihtiyacınız oldukça burada da değişik patenleri, önerilmiş olan patenleri kullanabilirsiniz. Tek bir doğru yok. Uygulamanın doğasına göre sizin mesajlaşma sisteminizi ve servis haberleşmenizi...
+
+168
+00:31:08,799 --> 00:31:33,039
+Seçmeniz, tasarlamanız gerekiyor. İşte bazı uygulamalarda ya da hatta bazı uygulamaların bazı parçalarında senkron gerekirken bazılarında asenkron gerekecektir. Ama çoğunlukla asenkron yapmaya gayret ederseniz böyle birbirini beklemeyen, kilitlenmeyen ve genişleyebilecek, daha böyle genişlemeye yatkın sistemleri daha kolaylıkla oluşturabilirsiniz.
+
+169
+00:31:36,799 --> 00:31:41,120
+Senkron yapılar halinde bunu implement etmeye gayret edin diyoruz ama her zamanda değil.
+
+170
+00:31:41,579 --> 00:31:43,980
+Bazen mutlaka senkronda da kalmanız gerekebilir.
+
+171
+00:31:46,039 --> 00:31:50,880
+Peki soru var mı? Bana ya da [öğrenci]'a diyeyim. [öğrenci] rastlığına cevaplayacak.
+
+172
+00:31:55,731 --> 00:31:57,011
+Yok galiba.
+
+173
+00:31:59,051 --> 00:32:00,091
+Peki.
+
+174
+00:32:00,500 --> 00:32:26,619
+O zaman şimdi dördüncü çeptere geçiyoruz. Dördüncü çeptir [öğrenci] bize anlatacak. Sagalar. Şimdi Transaction yönetimini nasıl yapacağız? Transaction nedir? Ve işte mikroservis gibi dağıtık bir ortamda ve atomik bir ortamda acaba şeyler, Transaction dediğimiz bütün işlemler nasıl gerçekleştiriliyor? Toplu işlem mi diyeyim? Şey hani bulk operationlar. Bunlara bakacağız.
+
+175
+00:32:27,443 --> 00:32:47,743
+[öğrenci], şimdi sen sunum yetkisi yok tabii. Bir saniye, onu ben bir ayarlayayım. Şöyle yapabiliriz aslında. Tamam. Şu anda paylaşabiliyor olman lazım. Bir de sesin geliyor mu?
+
+176
+00:32:48,468 --> 00:32:49,348
+Geliyor mu hocam?
+
+177
+00:32:49,708 --> 00:32:55,708
+Şimdi geliyor. Başlamadan senden sunum ve raporu bekliyorum. Yollamadın.
+
+178
+00:32:56,088 --> 00:32:57,448
+Unuttum hocam, kusura bakmayın.
+
+179
+00:32:57,708 --> 00:33:01,908
+Tamam, bugün yollarsın. Paylaşabiliyor musun ekranı? Bir dene bakalım.
+
+180
+00:33:01,908 --> 00:33:02,928
+Hemen deniyorum.
+
+181
+00:33:07,571 --> 00:33:08,471
+Evet, geldi.
+
+182
+00:33:08,991 --> 00:33:10,011
+Geldi mi? Tamam.
+
+183
+00:33:10,692 --> 00:33:12,392
+Peki, sesim de iyi geliyordur umarım.
+
+184
+00:33:12,791 --> 00:33:16,031
+Gayet iyi. Ben kendimi susturuyorum. Söz sende. Buyur.
+
+185
+00:33:17,351 --> 00:33:20,011
+Bugün saga yapısından bahsedeceğim.
+
+186
+00:33:26,355 --> 00:33:53,716
+Konu Managing Transactions with SAGA. SAGA yapılarıyla transakçınları nasıl yönetebiliriz? Bu konuyu üç alabaşlık adasında alıyorum. Birincisi mikroservis mimarilerinde transakçın management nasıl yapılır? İkincisi bu SAGA'ların koordinasyonları nasıl yapılacak? Bu SAGA'ların türleri nasıldır? Üçüncüsü de SAGA'nın en büyük problemi olan izolasyon problemiyle nasıl başa çıkacağımız?
+
+187
+00:33:56,115 --> 00:34:03,196
+Önce Transaction'dan bahsedelim. Kolay bir tanım yapmak gerekirse, kısaca her bir işleme.
+
+188
+00:34:03,567 --> 00:34:25,248
+Ve tabanında bir değişikliğe sevk olan her türlü işleme transaction diyoruz. Bu işlemlerin bazıları ise tabii ki diğer işlemleri tetikliyor. Konu mikroservis mimarisi olduğunda bu birden fazla servisin arda arda çalışacağı anlamına geliyor. Bu arda arda çalışan transaction'ların da elbette yönetilmesi gerekiyor. Mesela bir e-ticaret sitesini ele alalım.
+
+189
+00:34:25,615 --> 00:34:31,756
+Ödeme işlemi ve sonrasında stoktan düşürülmesi gereken bir ürün var diyelim. Böyle bir süreç işleyecek.
+
+190
+00:34:32,179 --> 00:34:52,840
+Sıralı olarak gerçekleşecek bir dizi transakçın var burada. Eğer ödeme gerçekleştikten sonra bir hata meydana gelirse, tam o anda bir hata olursa ne olacak? Biz bu işlemleri geri mi alacağız? Devam mı edeceğiz? Eğer veri tabanına sorulduktan düşürülü işlemi yapıldıysa ne yapacağız? Bu sürece başa mı döndüreceğiz? Bununla ilgileneceğiz aslında.
+
+191
+00:34:52,840 --> 00:35:00,179
+Daha önce derste de hocanın bahsettiği, başka sunlarda da geçen asit yapısı var.
+
+192
+00:35:00,179 --> 00:35:21,239
+Bu ACID yapısını yine devam ettirmeye çalışıyoruz. Ama tamamlamayla yapamıyoruz. Buradaki A atomistik bütünlük diyebiliriz. C consistency tutarlılık, E isolation bağımsızlık izolasyon, D durability devamlılık. Detayını daha sonra gireceğim için şimdilik üzerinden böylece geçiyorum.
+
+193
+00:35:23,380 --> 00:35:40,320
+Monolitik mimari de Transaction Yönetimi MikroServis Mimarisine göre çok daha kolay. Neden? Çoğu framework kendi içerisinde API'ler içeriyor. Bu API'ler uygulamanın tek bir veri tabanına sahip olduğu haliyle tüm Transaction'ların da bunun üzerinden çalıştığı senaryolarla karşılaşıyoruz.
+
+194
+00:35:40,851 --> 00:35:59,551
+Mikro Servis mimaride ise her bir transaction birçok servise etkiliyor. Bu servislerinde kendi veri tabanları var. Bu geleneksel yöntemi mikro servislerde kullanmak haline mümkün olmuyor. Biz başka bir çözüm bulmak durumundayız. Biz de o zaman distributed transactions, yani dağıtılmış transaction'lar kullanalım diyoruz.
+
+195
+00:36:03,572 --> 00:36:28,972
+Tabi burada da bazı problemlerimiz var. Biraz önce bahsettiğimiz asit prensiplerini korumaya imkan sağlıyoruz bu protokolü aslında. Two-Piece, Two-Face Commit denilen bir yapı var. İki fazdan oluşuyor ve bu fazları yöreten bir de koordinatörümüz var. İlk faz prepare, hazırlık aşaması, ikinci faz da commit, yani işleme geçmesi, kaydolması. Yine aynı ticaret örneğinden gidelim.
+
+196
+00:36:29,492 --> 00:36:55,612
+Akışımız başladı, transakşonlarımız tamamlandı. Koordinatör bir transakşonlardan başarılı olmadığını soruyor. Hem ödeme hem de stoktan düşme transakşonlar tamamdır, sorun yok. Her şey düzgün yanıtını alırsa komit fazlına geçiyor ve işlemler diske yazılıyor. Hata varsa yani koordinatör bir transakşonlardan başka bir yanıt alırsa bütün transakşonlar iptal ediliyor. Bu da aslında atomistinin gerçekleştiği bir senaryo.
+
+197
+00:36:56,000 --> 00:37:21,539
+Fakat distributed transaction'da ne var bazı problemleri var? Ne gibi? Modern teknolojiler destek yani. Mesela MongoDB gibi NoSQL yapıları. Ve DMC'de bütün servisler bir transaction'ın gerçekleşmesi için hazır olmalı. Bu da çok fazla availability olması gerektiği anlamına geliyor. Bu da biraz verimi düşürüyor aslında. Biz de burada sagaları kullanmaya başlıyoruz.
+
+198
+00:37:21,940 --> 00:37:31,660
+Saga her transaction'ın farklı ve bağımsız bir servis üzerinde lokal olarak çalıştığı ve yine o servis üzerinde verisini güncellediği bir transaction'larda sildi.
+
+199
+00:37:32,620 --> 00:37:38,039
+İlk transaction'ımız tetikleniyor ve onun tamamlanması başka bir transaction'ı da tetikliyor.
+
+200
+00:37:38,720 --> 00:37:44,380
+Sağdaki şekilde örnekli Saga'mız var. Saga'nın içerisinde lokal transaction'lar var. Order Service.
+
+201
+00:37:44,916 --> 00:38:10,596
+Consumer Service, Kitchen Service, Accounting Service gibi. Bu bir restoran senaryosu aslında. Order Service siparişi yaratıyor. Consumer Service müşteriye evet siparişi verildi, onaylandı diye bilgi veriyor. Daha sonra Kitchen Service sipariş detaylarını alıyor ve faturayı oluşturuyor. Accounting, Kredi Karci bilgisini onaylıyor. Daha sonra Kitchen'a geri dönüyoruz. Biletin durumunu onaylandı olarak değiştiriyoruz.
+
+202
+00:38:11,152 --> 00:38:15,311
+Sonra ordura dönüyoruz ve siparişin durumunu onaylandı olarak değiştiriyoruz.
+
+203
+00:38:18,931 --> 00:38:25,831
+Asit Protokolli'nin yanlarından bir tanesi aslında rollback. Yani bir hata durumunda işlemin tamamen iptal edilmesi durumu.
+
+204
+00:38:26,531 --> 00:38:31,811
+SAGA'larda ise bunu yapamıyoruz. Çünkü her bir transakşin lokal olarak kendi üzerinde değişiklik yapıyor.
+
+205
+00:38:32,691 --> 00:38:39,051
+Bu sebepten de compensating transactions, yani telafi etme transakşinleri gibi yapılar kullanıyoruz.
+
+206
+00:38:39,051 --> 00:38:41,231
+Mesela bu krefiye bakarsak.
+
+207
+00:38:41,684 --> 00:39:00,684
+T1'den itibaren bir dizi transaction'ımız var. TN kadar başarılı bir şekilde gerçekleştirilmiş. TN-1 noktasında mesela bu kredi kartı otorizasyonu olabilir. Orada bir hata gerçekleştiği anda ne yapacağız? O ana kadar gerçekleştirilmiş olan işlemleri teker teker geri alacağız.
+
+208
+00:39:08,244 --> 00:39:16,623
+Kendisine ters olarak denk gelen transaction'ı geri alacak şekilde tamamen işleme sondan başa doğru geri döndürüyor.
+
+209
+00:39:20,148 --> 00:39:31,148
+İkinci kısma geçelim. Sagaların koordinasyonları. Sagayı uygulamak için farklı yöntemler mevcut. Kareografi ve orkestration yöntemlerinden bahsedeceğiz.
+
+210
+00:39:33,148 --> 00:39:38,148
+Kareografi yönteminde merkezli bir koordinatörümüz yok.
+
+211
+00:39:38,291 --> 00:39:46,731
+İlk servis işlemini tamamladığımızda bir event gönderiyor. Bu eventi dinleyen servisler tetiklenerek kendi lokal transakşonları çalıştırıyor.
+
+212
+00:39:46,731 --> 00:39:51,692
+Yani her servis öncekinin işini bitirdiğini ve sıranın ona geldiğini haber vermesini bekliyor.
+
+213
+00:39:51,692 --> 00:39:58,092
+Son servis çalıştıktan sonra artık bir event fırlatılmıyor ve süreç sonlanıyor. Şekil üzerinden anlatayım.
+
+214
+00:39:58,092 --> 00:40:05,291
+Bir de Order Service, Order'u yaratıyor ve Order Creative diye bir event gönderiyor.
+
+215
+00:40:05,523 --> 00:40:25,164
+Daha sonra ikinci adıma geçiyoruz. Consumer Service bu eventi görüyor. Siparişin verilebileceğini onaylayıp Consumer Verified'ı eventi gönderiyor. Üçüncü adımda Kitchen Service Order Create eventine cevap veriyor. Order'ı onaylıyor. Faturayı yaratıyor ve Ticket Created Event diye bir event gönderiyor.
+
+216
+00:40:25,824 --> 00:40:32,543
+Dörtte Accounting Service Order Created eventine cevap veriyor ve kredi kart otorizasyonunu bekliyor.
+
+217
+00:40:32,992 --> 00:40:39,992
+Böyle bir durum yaratıyor gibi. Aslında her bir transaction bir önceki in eventinde cevap verip bir sonrakine haber veriyor.
+
+218
+00:40:42,992 --> 00:40:47,992
+Kaleografi yöntemiyle oluşturan sagallara ait bazı avantajlar ve dezavantajlar mevcut.
+
+219
+00:40:47,992 --> 00:40:58,508
+Avantajlardan bir tanesi simplicity, yani basitlik. Her işlemde yaratılan değişikliğe göre eventler tetikleniyor. Teorik olarak mantığı çok basit.
+
+220
+00:40:58,579 --> 00:41:04,780
+İkincisi avantajı ise Lose Cobbling. Ölgeler arasında bağımsızlık.
+
+221
+00:41:04,780 --> 00:41:10,579
+İventlerle haberleştikleri için aslında bilgiler hakkında çok fazla bilgileri yok. Yalnızca eventten aldıkları bilgileri var.
+
+222
+00:41:10,579 --> 00:41:23,579
+Dezavantajlarına bakarsak, anlaması daha zor. Saga yapısı servislere dağıtık olduğu için bir yazılımcı için bunu okuması ve yapıyı tamamen anlaması biraz daha zor oluyor.
+
+223
+00:41:23,923 --> 00:41:43,003
+Her saga bir diğerinin öventine bağlanıyor. Hemen burada döngüler olabiliyor. Öyle bir ihtimal de var. A servisi B'ye haber veriyor ama B servisi de A'ya geri dönecek bir haber vermek zorunda kalabiliyor. Burada bir döngü oluyor. Bu da aslında bir risk yaratıyor. Bu döngünün herhangi bir noktasında bir hata olursa ne olacak gibi.
+
+224
+00:41:43,603 --> 00:42:01,363
+Bir de Risk of Type Coppling var. Her stag olmayı etkileyen bir event'e bağlı. Bu yüzden başka bir döngüde bir değişiklik olduğunda bu her şeyi etkiliyor. Bu da bir risk tabii. Başka yöntemimiz var. İkincisi de orkestrasyon yöntemi.
+
+225
+00:42:01,844 --> 00:42:24,484
+Bu yöntemde bir Orchestrator Class'ı yaratıyoruz ve bu Class bütün örgelere ne yapması gerektiğini söylüyor. Aslında bir orkestra şefi gibi görev görüyor yani. Sen bunu yap, sen şunu yap gibi hepsini söylüyor. İventler yok burada. Bu Class Comment ve Async Reply Style Interaction kullanıyor. Biraz önce [öğrenci]'ın anlattığı aslında Async Reply Style Interaction.
+
+226
+00:42:26,739 --> 00:42:39,739
+Bir adım gerçekleştirmek için bir comment mesajı gönderiyor ve ne yapması gerektiği ile ilgili görevli kısım işlemini gerçekleştiriyor. Bir yanıt mesajı gönderiyor Orkestrator'a. Daha sonra Orkestrator'ı bir sonraki adım için görevlendiriyor.
+
+227
+00:42:39,739 --> 00:42:49,739
+Çekilme bakalım. Create Order Saga Class'ımız orkestrasyon görevini yapıyor burada. Order Service içerisinde yaratılmış. Ona implement edilmiş.
+
+228
+00:42:54,387 --> 00:43:19,347
+Verify Consumer Command'ını yapıyor. İkinci adımda Consumer Verify mesajıyla cevap veriyor ona. Daha sonra orkestrasyon Kitchen Service'e Create Ticket diye bir emir gönderiyor. Kitchen Service Ticket tamam, created. Yaratık bu mesajıyla dönüş yapıyor. Son adımda ise Order Service'e tamamdır, onaylandı sipariş diye bir emir gönderiyor.
+
+229
+00:43:20,884 --> 00:43:34,284
+Burada sekizinci adımda bir önemli kısım var. Order Service içerisinde implement edilmiş olan Orchestrator, Approve Order diye Order Service Request'i gönderiyor ve o request kendisine dönüyor.
+
+230
+00:43:34,284 --> 00:43:45,884
+Aslında kendi içerisinde de bir update yapabilir burada. Fakat sistemdeki bu mesaj ve cevap prensibini bozmamak için, kendi içerisinde tutarlı olmak için böyle bir şey yapıyor.
+
+231
+00:43:48,467 --> 00:43:59,187
+Bunun da tabi bazı avantajları ve dezavantajları var. Simpler Dependencies gibi bir avantajımız var. Biraz önceki gibi döngüler yaratılmıyor.
+
+232
+00:43:59,187 --> 00:44:05,987
+Orchestrator saga öğelerini etkiliyor ama öğeler onu etkilemiyor. Tek yönlü bir iletişim var. Yani döngüsel değil.
+
+233
+00:44:06,516 --> 00:44:16,516
+Les Copling, her servis orkestrator tarafından etkilenen bir API'yi implemente ediyor. İmennetler hakkında bir bilgi sahibi olmalarına gerek yok burada da.
+
+234
+00:44:16,516 --> 00:44:27,516
+Bağımsızlığın arttırılması ve mantığın kolaylaştırılması gibi bir durum da var. Bütün koordinasyon orkestrator üzerinden merkezlenmiş.
+
+235
+00:44:27,516 --> 00:44:33,516
+Nesnelerin ne olduğu ile ilgili bilgisi pek yok. Diğer sargalar hakkında da bilgisi aslında pek yok.
+
+236
+00:44:33,780 --> 00:44:39,440
+O gelen komende ve verdiği cevaba bakıyor yalnızca. Bu da genel olarak işin mantığını kolaylaştırıyor.
+
+237
+00:44:39,440 --> 00:44:49,120
+Buna bir dezavantajı olabilir. İşin yükünü tamamen orkestratöre yüklemek ve ona merkezlemek bir risk olabilir aslında bizim yazılımıza göre.
+
+238
+00:44:49,120 --> 00:44:55,620
+Bu sebepten de orkestratöre aslında basit sagalarda kullanmak daha önerilen bir yöntem.
+
+239
+00:44:57,700 --> 00:44:59,532
+Üçüncü kısma gelirsek.
+
+240
+00:45:00,371 --> 00:45:02,092
+İzolasyon problemi çözmek.
+
+241
+00:45:03,092 --> 00:45:05,491
+Sulumun başında da bahsetmiştim asit yapısında.
+
+242
+00:45:05,972 --> 00:45:22,732
+Şimdi isolation'a odaklanacağız burada. Isolation özelliği aynı anda gerçekleşen birden fazla transaction'ın sıra olarak gerçekleşenlerle aynı sonucu vermesini sağlanıyor. Birbirinden bağlı olmadıkları zaman, birbirlerine izole oldukları zaman.
+
+243
+00:45:22,732 --> 00:45:33,972
+Veritabana sanki her bir transaction'ın veriye özel bir ilişimi varmış, illüzyonu yaratıyor. Bu da aynı anda gerçekleştiren işlemlerin işlenmesine ve orada bir karışıklık olmamasını kolaylaştırıyor.
+
+244
+00:45:33,972 --> 00:45:53,752
+Bu da, sagalarla ilgili bir problem ise izolasyon özelliğinin olmaması. Bunun sebebi bir saganın lokal transakşanı tamamlandığında diğer sagaların bu işleme hemen görebiliyor olması. Bu da iki soruna yol açıyor. Birincisi, diğer sagalar saga işleniyor durumdayken veriyi değiştirebilir.
+
+245
+00:45:54,324 --> 00:46:19,324
+Ya da saga işlemini tamamlamadan diğer sagalar bu değişimi okuyabilir ve bu okuduğu değişime göre bir hareket yapabilir ama o sırada okuduğu değişimde olan saga o işlemi onaylamayabilir, tamamlayamamış olabilir. Bu da tutarsız veriye sebep olabilir. Sagaları o yüzden genel olarak asit yerine ACD yapısı olarak değerlendirebiliriz. İzorasyon burada yok. Bu izorasyon eksikliği...
+
+246
+00:46:19,923 --> 00:46:45,603
+Anomali denilen problemlere sebebilebiliyor. Bu da aynı anda gerçekleşen işlemlerin sırayla gerçekleşmesi durumundan farklı sonuçlar çıkartması. Yani biraz önce dediğim gibi yanlış okuma ya da yanlış yazma, güncelleme gibi problemler olabilir. Bu problemlerle mücadele etmemiz için ne yapabiliriz? Ona bakacağız şimdi. Burada countermeasures denilen bir yapı kullanacağız.
+
+247
+00:46:48,724 --> 00:47:06,403
+İzorasyonun yokluğu üç tip anomaliye sebep olabiliyor. Birincisi Lost Updates, ikincisi Dirty Reads, üçüncüsü de Fuzzy Non-Repetable Reads. Kitapta ilk iki türden bahsedilmiş. Üçüncüsünden bahsetmemiş sanırım ilk ikisinin daha fazla yaygın olmasının, üçüncülüğün daha az olmasına kaynaklanıyor.
+
+248
+00:47:09,536 --> 00:47:13,936
+Bir saga başka bir saga tarafından yapılan değişikliği tekrar yapmaya çalışıyor.
+
+249
+00:47:13,936 --> 00:47:22,936
+Mesela biraz önceki sipariş örneğinden gidersek, Create Order Saga diye bir sagamız var. Bu bir order yaratıyor.
+
+250
+00:47:22,936 --> 00:47:27,536
+Bu saga işleme devam ederken Cancel Order Saga Order'ı iptal ediyor.
+
+251
+00:47:27,536 --> 00:47:34,936
+Create Order Saga işlemine devam ediyor ve yine de orderi onaylıyor. Yapılan güncelleme gözler kaçıyor yani aslında.
+
+252
+00:47:35,315 --> 00:47:44,915
+Ya da 4G rates olabilir. Bunda da bir saga değişikliği uğrayan biri işlemin ortasında okuyor. Bu yüzden işlemin sonucunu göremiyor. Yanlış okuma yapılmış olabiliyor.
+
+253
+00:47:48,724 --> 00:48:13,724
+Countermeasure'lere geçmeden önce farklı tiktirte transaction'lara bir bakacağız. 3 farklı tiktirte transaction'ımız var. Compensable yani telafi edilebilir transaction'lar. Potansiyel olarak bir sorun olduğunda biraz önce bahsettiğim compensating transaction'larla telafi edilebilir yani geri alınabilir işlemler. Bir de pivot transaction var. Pivot transaction aslında...
+
+254
+00:48:14,228 --> 00:48:23,508
+Evet ya da hayır. Yani işleme girerse tamamlanana kadar devam edecek. Telafi edilebilir ya da tekrar denilebilir bir transaction değil. Ya olacak ya da olmayacak.
+
+255
+00:48:25,968 --> 00:48:34,088
+Retriable transaction var. Pivot transaction'a devam eden ve aslında işe garanti olarak devam ettiren, kesin olarak başarılı olacak olan işlemler.
+
+256
+00:48:37,907 --> 00:48:53,907
+Order Service, Consumer Service ve Kitchen Service. Burada Compensable Transactions. Yani bu süre içerisinde bunlardan herhangi birine bir hata olursa biz bu süreci aslında telafi edebiliriz. Başa döneriz, iptal ederiz, geriye doğru gideriz, tekrar başlarız.
+
+257
+00:48:54,516 --> 00:49:06,516
+Ama dördüncü adımındaki Accounting Service adımındaki transaction bizim için kritik. Yani pivot bir transaction. Eğer burada kredi kartı onaylanması işleminde...
+
+258
+00:49:07,347 --> 00:49:23,708
+Evet, tamam onaylandı bilgisi gelirse işlemin devamında zaten bir sıkıntı yok. İşlem kesin onaylanacak, devam edecek bir sorun olmadı. Ama olmazsa o zaman geriye dönüp tekrar denemek değil, işleme tamamen iptal etmemiz gerekecek. Bu da işlem için çok kritik bir transakşın adımı.
+
+259
+00:49:34,143 --> 00:49:40,643
+Ordu onaylama işlemleri zaten çorap sınıfı gibi devam edecek. Hiçbir sıkıntı olmadan tamamlanacak.
+
+260
+00:49:46,043 --> 00:49:53,244
+Burada Countermeasure'lerin farklı tipleri var. İzorasyonu engellemek için burada farklı Countermeasure tipleri var.
+
+261
+00:49:54,344 --> 00:50:00,000
+İlki Semantic Lock. Bu Countermeasure'i kullanırken
+
+262
+00:50:00,115 --> 00:50:21,835
+Saga'nın telafi edilebilir transaction ile oluşturan ya da değiştirilen kaydı bir işaret koyuyoruz, bir flag koyuyoruz. Bu işaret recording commit edilmediği ya da kontansiyeli olarak henüz tamamen tamamlanmadı, değiştirebileceği anlamına geliyor. Bu işaret diğer transaction ile ona ulaşmasına engel olacak bir kilit görevi de görebilir ya da bir uyarı anlamında da olabilir.
+
+263
+00:50:23,027 --> 00:50:38,367
+İkinci türümüz, Commutative Update Countermeasure. Update operasyonunu her sırada sürekli değiştirilebilir hale getiriyoruz. Bu da aslında Lost Update sorununu engelliyor.
+
+264
+00:50:39,367 --> 00:50:41,087
+Üçüncüsü, Pessimistic Wave.
+
+265
+00:50:41,876 --> 00:50:53,656
+Dördce read durumunda, yanlış okuma durumuna engel olmak için Sagan adımlarını tekrar düzenleyip olabilecek en karamsar şekilde düşünün, riski minimuma indirecek şekilde bu adımların yerlerini değiştiriyoruz.
+
+266
+00:50:55,436 --> 00:51:05,556
+Re-read value countermeasure var. Lost update'leri önlemek için kullanılan bir yöntem. Bir kaydı güncellemeden önce tekrar tekrar okuyup değişmezlerden emin olmak istiyoruz.
+
+267
+00:51:06,547 --> 00:51:26,187
+Version File Countermeasure. Recordları bir record üzerindeyken güncelliyoruz. Bu da onları tekrar sıralamamıza imkan sağlıyor. Non-comitative yani değiştirilemez operasyonları komitative değiştirebilir operasyonlar içirmemize yarıyor. Son olarak By-Value Countermeasure var.
+
+268
+00:51:27,380 --> 00:51:42,360
+Buna ise eş zamanlı olarak gerçekleşen işlemler arasında biz durumuna göre bir seçme yapıyoruz. Her istek için Saga mı yoksa Distributed Transaction mı kullanmalı diye düşünüyoruz. Bunun için teker teker bunların değerlerine bakıyoruz aslında.
+
+269
+00:51:44,400 --> 00:51:53,380
+Özetlemek gerekirse bazı sistem operasyonları birden fazla servise dağıtılmış veriyi güncellemek durumunda olabilir.
+
+270
+00:51:54,260 --> 00:52:13,620
+Burada geneliksel distributed transaction yani to PC temelli yöntemler çok iyi bir seçenek değil. Bunun için biz Saga yapısını kullanıyoruz. Saga aralarında haberleşmek, aralarında koordine olan lokal transactionler bütündür diyebiliriz aslında.
+
+271
+00:52:14,420 --> 00:52:39,019
+Saga yapısının türleri var. Kareografi ya da koordinasyon adımları kullanarak uygulayabiliriz. Kareografide Local Transactionler eventler aracılığıyla iletişim kuruyorlar. Orkestrasyonda da merkezlik orkestrator klası diğer yapıları emirler vererek Local Transactionleri gerçekleştirmesini sağlıyor. Son olarak Sagalarda izolasyon olmaması bu yapının en temel sorunu.
+
+272
+00:52:39,507 --> 00:52:49,487
+Bu sorunu çözmek için de Countermeasure denilen yapılar kullanıyoruz ve olası anomalileri, yani yanlış okumaları ya da eksik okumaları önlemeye çalışıyoruz.
+
+273
+00:52:51,427 --> 00:52:55,547
+Bu kadar da teşekkür ederim. Sorunuz varsa alabilirim.
+
+274
+00:52:57,687 --> 00:53:04,907
+Teşekkür ediyoruz [öğrenci]. Saga paternini bize tanıttın. Soru var mı?
+
+275
+00:53:07,699 --> 00:53:35,639
+Kimse de yok. Okey. İşte transactionları mikro servis yani dağıtık böyle ufak servislerden oluşan bir şeyde yapıda acaba daha büyük bir işi yani böyle bir hani senaryo gibi işte bir order gibi bir ya da işte purchase gibi işlemleri nasıl yaparız? Bu adımları nasıl birleştiririz? Bunun yolu yordamı işte two-face komitme olsun ya da mademki dağıtık yapıp çalışıyoruz iyice zaten ya da mikro servislerle çalışıyoruz.
+
+276
+00:53:35,699 --> 00:53:37,439
+Bunlar bir şekilde...
+
+277
+00:53:37,440 --> 00:54:04,820
+Bir arada belli bir kalıba göre çalışsınlar. Yani belli bir paterne göre haberleşip de bu işlemleri yapsınlar. Buna da saga paterne adını veriyoruz. İki tane seçenek var. Koreografi ve orkestrasyon şeklinde. İkisinde kendine göre tabii artıları ve eksileri var. [öğrenci] bizden zaten anlattığı detaylı. Birinde tamamen dağıtıksınız. Herkes kendi sorumluluğunu üstlenmiş durumda ama evet bunu okuması, anlaması ve implementasyonu biraz daha zor.
+
+278
+00:54:30,643 --> 00:54:46,103
+Ne yapacağız? O zaman hadi bu sorumluluğu da yeni bir uzmana verelim. Yani işte bir orkestra şefi olsun, orkestra şefi her şeyi yönetsin diyebilirsiniz. Bu sefer de bu sorumluluğu hangi sınıfa vereceksiniz ya da hangi servise vereceksiniz problemi var.
+
+279
+00:54:58,068 --> 00:55:08,248
+Bir serviste onun için mi açacaksınız gibi sorunlar oluşabilir. Ama en azından coupling konusunda daha iyi bir çözüm olacaktır.
+
+280
+00:55:08,248 --> 00:55:16,528
+Tabii o da ayrı bir point of failure olarak da karşınıza çıkabilir. Orkestra şefi arıza yaparsa ne olacak diyebilirsiniz.
+
+281
+00:55:16,688 --> 00:55:21,668
+Ya da orkestra şefi tıkanırsa ne olacak, ona çok fazla istek gelirse ne olacak diyebilirsiniz.
+
+282
+00:55:22,508 --> 00:55:26,068
+İşte bunun da kendine göre yine eksileri de mevcut. Bu nedenle.
+
+283
+00:55:26,068 --> 00:55:41,348
+Sonuçta ne yaparsanız yapın, isolation'ı tam olarak sağlamadığınız için Saga pattern'inde de nihayetinde şeyler yaşanabiliyor. Bu transakşınlarda sıkıntılar yaşanabiliyor.
+
+284
+00:55:44,371 --> 00:56:12,291
+Bunu aslında bir şekilde yaşıyorsunuz. Nerede yaşıyorsunuz? İşte mesela Amazon'dan sipariş veriyorsunuz. Ondan sonra bir anda sipariş iptal ediliyor falan. Neden iptal ediliyor? Çünkü işte bu sagalar mesela o arada karışmış. Stok kontrolüyle birlikte stokta mesela iki tane varken dört tane order almışlar. Birbirlerini işte bu işte şey dört readler falan yaptıkları için ve sonuçta dört tane order giriliyor ama ortada iki tane.
+
+285
+00:56:12,371 --> 00:56:26,491
+Şimdi iki tane order'ın iptal edilmesi lazım. Hangi iki order iptal edilecek? Sonuncusu mu bilmem nesi mi? Aslında o da başka bir karar mekanizmasıyla burada oluşan business'taki problemler bir şekilde giderilmeye çalışılıyor.
+
+286
+00:56:27,027 --> 00:56:51,027
+Sonrasında ne oluyor? Hediye çekilir, bilmem ne kuponudur bir şeyler tanımlayarak gönlünüzü almaya çalışıyorlar. Ama eğer kritik işleriniz varsa tabii uzaya roket yolluyorsanız saga maga hikayedir. Orada tamamen belki de monolitik çalışmanız gerekecektir. Böyle mikroservis ya da dağıtık mimarilerle çalışmak her türlü problem oluşturabilir.
+
+287
+00:56:55,027 --> 00:57:01,847
+Orada da nihayetinde işin ucu nerede, hesaptaki paraların bilmem nelerin yazılmasına, muhasebelerine gidiyor.
+
+288
+00:57:02,407 --> 00:57:05,827
+İstediğiniz kadar mimarinizi ya da uygulamanızı mikroservis falan yapın.
+
+289
+00:57:06,507 --> 00:57:08,887
+Bir yerde monolitik çalışmanız gerekecektir yine.
+
+290
+00:57:09,807 --> 00:57:11,487
+Böyle noktalarda oluşabilir.
+
+291
+00:57:11,487 --> 00:57:16,268
+Her derde de mikroservis çıkmış. Hadi onunla yazalım, çözelim.
+
+292
+00:57:16,788 --> 00:57:30,387
+Diyemiyorsunuz. Uygulama uzayına hangisi daha uygunsa, hangi mimar daha uygunsa onu kullanmanız her zaman gerekecektir diyerek saga konusunda da söyleyeceklerimizi noktalayalım.
+
+293
+00:57:31,443 --> 00:57:54,664
+Var mı başka soru ya da istek? Biliyorsunuz bu derste vize yapmıyoruz. Bu dönem böyle olsun istedim. Hepiniz birer çeptir sorumluluğunu alarak, bunların sunumunu ve raporunu hazırlayarak yıl içi değerlendirmesini almış olacaksınız. Bir de yıl sonu için biliyorsunuz proje yapıyorsunuz. Umarım tasarımlarınız devam ediyordur, mimari tasarımlarınız.
+
+294
+00:57:55,072 --> 00:58:13,152
+Bu konuda da o da final notunuzu oluşturacak. Biliyorsunuz ilk derste de o şekilde konuşmuş ve kararlaştırmıştık. Peki, o zaman bu haftalık bu kadar. Hızlı bir şekilde tamamladık. Bir saat içinde dersimizi bitirdik. Efendim [öğrenci]?
+
+295
+00:58:13,152 --> 00:58:21,711
+Hocam bir soru sorabilir miyim? Proje ilgili nasıl olacak?
+
+296
+00:58:22,867 --> 00:58:37,728
+Nasıl, nasıl olacak? Bir konu seçeceksiniz kendinize. Tamamen size kalmış bir uygulama ve bu uygulamayı bir şekilde önce bir modelleyeceksiniz. Ondan sonra bir tasarım ortaya koyacaksınız. Benim size anlattığım şekillerde.
+
+297
+00:58:37,728 --> 00:58:50,827
+Yömel kullanarak mesela. Sonrasında da buna bir mimari haline dönüştüreceksiniz. Yani bu monolitik mi olsun yoksa mikroservis mi olsun, öyle mi olsun?
+
+298
+00:58:50,867 --> 00:59:17,527
+Böyle mi olsun? Haberleşmesi, restli mi olsun? Hangisi daha uygun olur? Yoksa işte sadece servis mimarisiyle web servisler halinde mi modelleyelim gibi bir uygun mimariyle bunu modelleyeceksiniz. Yani şöyle olur, şunlar olur. İşte mesela kitaptaki örnek restoran servisi var ya hani şey işte mutfak var, sipariş şeyi var, o su var, bu su var. Onun gibi siz de böyle bir model ortaya koyacaksınız.
+
+299
+00:59:18,867 --> 00:59:30,387
+Revitasyonu yaparsanız güzel olur. Ama yapmazsanız da hani çok büyük bir uygulama oldu ben bunun bütün kodlarını yazamam diyorsanız da en azından hani mimari tasarımı göstermiş olun istiyorum.
+
+300
+00:59:31,487 --> 00:59:33,307
+Tamam hocam anladım. Teşekkür ederim.
+
+301
+00:59:33,667 --> 00:59:35,087
+Okey. Rica ederim.
+
+302
+00:59:36,275 --> 00:59:59,815
+Tamam. O zaman size hadi iki saatte projenizle ilgili çalışmalar yapalım. Haftaya da kaç? Beş ve altıncı bölümler ki isim olarak da seksiyon beş, Designing Business Logic in a Microservice Architecture. Yani business logic nasıl şey yapılır, oluşturulur, [öğrenci].
+
+303
+01:00:00,000 --> 01:00:23,460
+Altıncı sekşinde de event sourcing nedir? Yine business logic geliştirirken event sourcing nasıl kullanılır? Bunu da [öğrenci] bize aktaracak ve bu şekilde yolumuza devam edeceğiz. Kasım ayı sunumlarımızı tamamlamış olacağız. Peki, size iyi günler diliyorum, iyi çalışmalar. Haftaya görüşmek üzere. Hoşçakalın.
+
+304
+01:00:23,460 --> 01:00:25,699
+İyi günler hocam.
