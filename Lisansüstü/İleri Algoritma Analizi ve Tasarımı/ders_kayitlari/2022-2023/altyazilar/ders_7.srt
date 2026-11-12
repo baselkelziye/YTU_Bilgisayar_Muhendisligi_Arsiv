@@ -1,0 +1,2843 @@
+1
+00:00:03,220 --> 00:00:04,860
+Evet, çok şükür.
+
+2
+00:00:06,300 --> 00:00:07,160
+Ha, şeyi açmadım.
+
+3
+00:00:25,940 --> 00:00:35,300
+Bir de böyle ses mi geliyor dışarıda? Kapatabilecek misin? Sana zahmet olacak. Olur vallahi olur.
+
+4
+00:00:36,300 --> 00:00:45,420
+Merhaba arkadaşlar. Biraz gecikmeli olduk. Kusura bakmayın sınıf ortamını ayarlamak için.
+
+5
+00:00:56,404 --> 00:00:57,944
+Vakit kaybettim biraz.
+
+6
+00:01:09,043 --> 00:01:20,703
+Şimdi bugün, geçen hafta en son dinamik programlamadan bahsetmiştik ve onunla alakalı bir örnek daha çözmek istiyorum size demiştim.
+
+7
+00:01:20,703 --> 00:01:22,483
+Onunla başlayacağız.
+
+8
+00:01:27,183 --> 00:01:39,343
+Dinamik programlama önemli bir konu. Bunun kafanızda oturması için de birkaç örnek vermeniz gerekiyor. Memorize işin nasıl yapacağınızda dair örneklerin artması uygulamanızı kolaylaştıracaktır.
+
+9
+00:01:39,764 --> 00:01:48,763
+O yüzden bununla alakalı bir örnek daha çözerek bugün başlayalım. Sonrasında devam edeceğim. Biraz da soru hazırladım sizlere. Sınav öncesinde soru istemiştiniz.
+
+10
+00:01:50,843 --> 00:01:54,483
+Örnek soru yapalım hocam demiştiniz. Biraz da soru hazırladım sizlere.
+
+11
+00:01:55,859 --> 00:01:58,859
+İnşallah öyle devam edeceğiz. Şimdi...
+
+12
+00:02:05,075 --> 00:02:05,655
+Çok mu şey?
+
+13
+00:02:06,655 --> 00:02:07,575
+Daha ışık var mı?
+
+14
+00:02:13,171 --> 00:02:15,252
+Sınıfa gelmek dezavantajlı dönüşmesi.
+
+15
+00:02:19,412 --> 00:02:27,671
+Görünüyor mu şimdi? Şimdi bu arkadaşlara da henüz on iki kişiler ama başlıyorum artık.
+
+16
+00:02:27,671 --> 00:02:31,271
+Pağlaşım yapalım.
+
+17
+00:02:46,771 --> 00:02:47,771
+Tamam mı?
+
+18
+00:02:56,659 --> 00:03:17,319
+Şimdi arkadaşlar, bir başka örneğiyle başlayalım. Bu da matriz çarpımı aslında ama büyük boyutlu matrizlerin çarpımıyla alakalı bir konu. Matrix Chain Multiplication diye geçiyor.
+
+19
+00:03:34,996 --> 00:03:36,216
+Şim problem ne deş.
+
+20
+00:03:38,355 --> 00:03:58,135
+Önce onu bir söyleyelim. Şimdi birden fazla matrisiniz var. İteratif bir şekilde çarpmak istiyorsunuz. Biliyorsunuz matris çarpım zaten maliyetli bir iş. Matrisinizin boyutlarına bağlı olarak maliyetli olabiliyor. Bir de eğer çarpmanız gereken zincir şeklinde bir matrisler varsa yani iteratif bir şekilde bir sürü matris çarpmanız gerekiyorsa o zaman maliyet artıyor.
+
+21
+00:04:06,355 --> 00:04:31,956
+Çarpmaktan daha da maliyetli olabiliyor o ayrı ama teori de bunun işe yaradığı büyük çeyimler için durumlar var. Şimdi neyi kastediyorum? Şimdi benim üç tane matresim var. A1 matresi, A2 matresi ve A3 matresi. Bunları çarpıyorum. Matres çarpımını hatırlıyorsunuz zaten nasıl yapıldığımı hatırlatmayacağım. Şimdi buraya bunların.
+
+22
+00:04:32,596 --> 00:04:44,716
+Boyuzlarını kenarlarına küçük küçük yazayım. Mesela A1 madresi 2'ye 3'lük bir madresi olsun. A2 madresi 3'e 4'lük. A3 madresi de 4'e 2'lik bir madresi olsun diyelim.
+
+23
+00:04:46,576 --> 00:04:59,355
+Şimdi ben bu 3 madresi çarpmayı farklı şekillerde yapabilirim değil mi? Şöyle yapabilirim mesela. A1 ile A2'yi önce çarparım. Sonucu bulurum. Onu da A4 ile çarparım.
+
+24
+00:05:00,276 --> 00:05:16,855
+Bu bir seçenek. Ya da şöyle yapabilirim. A1'i A2 ve A3'ün çarpımı ile çarparım. Benim için sonuç değişmeyecek ama bunların hangisini önce perform ettiğiniz bu matıplı keyşindir sizin işlem sayınızı değiştirecek.
+
+25
+00:05:16,855 --> 00:05:23,584
+Örneğin önce A1 ile A2'yi çarpma yoluna giderseniz, burada A1'in boyutu...
+
+26
+00:05:23,584 --> 00:05:43,584
+2'ye 3, A2'nin boyutu da 3'e 4 olduğu için burada perform edeceğiniz buradaki multiplication için yapacağınız toplam işlem sayısı ne oluyor? 2 çarpı 3 çarpı 4 oluyor. Çünkü her bir satır için, birinci madresin her bir satır için ikinci madresin sütunlarını tek tek çarpıp topladığınızda bu kadar işlem yapmış oluyorsunuz.
+
+27
+00:05:43,584 --> 00:05:47,644
+Şimdi dolayısıyla bu da 24'e denk geliyor.
+
+28
+00:05:48,660 --> 00:06:09,400
+A1 çarpı A2 için 24 tane işlem yaptınız. A4 ile sonucu çarpıyorsunuz. Bu zaten tek başına 4 çarpı 2'lik bir matriz. Dolayısıyla aslında şu matrizin sonucunu, ki bu matriz çarpımının sonucu 2'ye 4'lük bir matriz oluyor biliyorsunuz. Ve şunu 4 çarpı 2'lik.
+
+29
+00:06:09,791 --> 00:06:27,951
+İki ayrı matresin çarpı maliyetini de bu zincirde barındırmış oluyorsunuz. Dolayısıyla burada 2 çarpı 4'lük ve 4 çarpı 2'lik, iki matresi çarpmanın maliyeti de 2 çarpı 4 çarpı 2 olduğundan, bu da 16 tane multiplication'a tekabül ediyor.
+
+30
+00:06:27,951 --> 00:06:35,311
+O zaman sizin bu işleminiz, eğer önce A1, A2 ve sonra A4'ü buna eklerseniz, bu işleminizin toplam maliyeti ne olacak?
+
+31
+00:06:38,228 --> 00:06:42,427
+Kırık olacak. Şimdi böyle çarparsanız kırk tane multiplication ile bu işi çözürüz.
+
+32
+00:06:43,348 --> 00:06:45,388
+Peki şöyle çarparsanız ne yapacaksınız?
+
+33
+00:06:46,048 --> 00:06:48,307
+O zaman önce şurayı çarpıyorsunuz.
+
+34
+00:06:49,208 --> 00:06:50,627
+Üçe dörtlüktü bu matriz.
+
+35
+00:06:51,468 --> 00:06:52,848
+A3'te dörde ikilikte.
+
+36
+00:06:53,487 --> 00:06:55,187
+Buradaki multiplication sayınız.
+
+37
+00:06:55,588 --> 00:06:56,888
+Üç çarpı dört çarpı iki.
+
+38
+00:06:58,028 --> 00:06:58,588
+Yirmi dört.
+
+39
+00:06:59,508 --> 00:07:04,747
+Bu çarpımın A2 çarpı A3'ün bana verdiği sonuç ne?
+
+40
+00:07:06,579 --> 00:07:22,519
+Daha doğrusu sonuç maddesinin boyutu ne? 3'e 2, A1, 2'ye 3, 2'ye 3. Bu ikinci çarpımı yaptığımız zaman toplam yapacağınız multiplication sayısı 2 çarpı 3 çarpı 2'den 12. E ne oldu? Toplam 24.
+
+41
+00:07:23,060 --> 00:07:41,060
+Artı 12'den 36 oldu. Şimdi bu şekilde perform ederseniz demek ki kardasınız. Buradaki algoritmanın amacı da optimum olacak şekilde bu çarpım opsiyonlarını değerlendirmek ve en iyi olanı kullanıcıya döndürecek bir program yazmak burada.
+
+42
+00:07:41,779 --> 00:07:53,120
+Şimdi buna üç tane matris varken görmek kolay, hesaplamak kolay ama on matris varken, daha fazla yüz matris varken vesaire o zaman işte dinamik programlamayla yapmak mantıklı hale geliyor.
+
+43
+00:07:53,120 --> 00:07:56,199
+Şimdi.
+
+44
+00:08:00,403 --> 00:08:05,024
+Şuraya şöyle bir temiz bir başlangıç yapalım.
+
+45
+00:08:11,028 --> 00:08:24,128
+Ne demiştik? A1, A2, A3 örneği. Şimdi bu küçük örnek üzerinden formalizasyonu bu algoritma nasıl yaparız onu konuşacağız.
+
+46
+00:08:34,964 --> 00:08:54,884
+Şimdi bunların boyutlarını yine altına bir yazalım. 2'ye 3'lüktü. 3'e 4'lüktü. 4'e 2'lüktü. Şöyle isimler verelim bunlara. D0, D1, D2, D3. Çok özür dilerim. D3 değil. Şu D1. Pardon bunu siliyorum.
+
+47
+00:09:02,163 --> 00:09:19,024
+Şimdi şu ikisinin aynı boyutta olması gerektiği için aslında bu da D1. Çünkü çarpımı yapıyorsunuz. Bu D2. Bu da D3 olsun. Böyle bunlara boyut verdim.
+
+48
+00:09:27,059 --> 00:09:42,099
+A1 çarpı A2 olsun dedik. Buna da A3 ekleyelim dedik. Birinci opsiyon. İkinci opsiyona ne dedik? A1 ile A2 ve A3'ün çarpımının sonucunu çarpalım dedik.
+
+49
+00:09:43,339 --> 00:09:51,399
+Şimdi şuraya, şu posta, yani bunun bir maliyeti var. A1 çarpı A2 A3. Şimdi bunun maliyetini şöyle ifade edeceğiz.
+
+50
+00:09:55,700 --> 00:10:19,060
+Bir M matris oluşturacağız ileride memorizasyon için. Şimdilik bunu bir memorizasyon kısmını sonra anlatacağım. Onu şimdilik arka planda tutup. Bir ile üç arasındaki yani bir ve üç arasındaki matrislerin çarpımının kovsusuna M bir üç diyelim. Tamam mı? Şimdi şurası, şurada. Neydi bunların maliyetleri? Bu şey pardon boyutları. Bu ikiye üçlüktü.
+
+51
+00:10:19,668 --> 00:10:32,827
+Bu üçe dörtlüktü, bu da dörde ikilikti. Şurası M1, 2. Yani birinci madresle ikinci madres arasındaki çarpımı maliyeti.
+
+52
+00:10:32,827 --> 00:10:38,827
+Burada ortadaki yaşı kullanılacak olan maliyet o. Şuraya...
+
+53
+00:10:39,635 --> 00:10:57,716
+M33, bunu da böyle ifade edelim. Burada bir çünkü çarpma yok. Tek başına zaten bir matris var. Zaten o yüzden M33 diye gösterdim. Maliyeti de sıfır bulun. Şimdi şuraya bakalım. Burada boyut ikiye üçlük bir matris vardı. Burada üçe dörtlük ve dörde ikilik.
+
+54
+00:10:58,635 --> 00:11:06,495
+Şimdi aynı formülizasyonla bunu M1'e 1 diye yazabilirim. Tek başına duran bir matris çünkü. Şunu nasıl yazabilirim?
+
+55
+00:11:06,816 --> 00:11:33,576
+M2'ye 3. Neden böyle yazdım? İkinci matris ile üçüncü matris arasındakilerin çarpım kostu. Çünkü normalde şu an üç tane matris olduğu için gözünüzde bunlar iteratif iki sayı gibi görünüyor ama başka opsiyonlarda bu ikiden ona kadar gidebilirdi. O zaman buraya ikiyi on yazmanız gerekecektir. Şimdi görsel olarak basit bir halde bunu çözüyoruz. Şimdi şunu yirmi dört olarak bilmiştim. Şu zaten tek başına maliyetsiz bir şey. Sıfır. Bu da öyle sıfır.
+
+56
+00:11:34,548 --> 00:11:38,148
+Bunu da az önce ne bulmuştuk bakayım? 24 bulmuşuz.
+
+57
+00:11:38,148 --> 00:11:41,368
+Şimdi
+
+58
+00:11:46,196 --> 00:12:11,156
+Şöyle bir işlem yapmıştık. Demiştik ki ikiye dört, dörde iki, buna d sıfır, buna d iki, buna d iki, buna d üç demiştik. Bu aslında şu işlemin sonucu bana ikiye dörtlük bir çarpım vereceğinden. Bu da dörde ikilik olduğu için. Neticede yapacağımız işlem böyle gösterecekti.
+
+59
+00:12:14,644 --> 00:12:41,104
+M, 1'e 2, yani 1 ile 2 arasındaki çarpım maliyeti artı. M, 3, 3, şunun maliyeti artı. 2 çarpımın oluşturduğu şu 2'ye 4'lük ve 4'e 2'lik matrizlerin çarpım maliyeti. O da neye tekabül ediyor? Aslında 2 çarpı 4 çarpı 2. Ama şu D'ler cinsinden yazarsak D0.
+
+60
+00:12:42,035 --> 00:12:46,515
+D2 ve D3'e denk geliyorum. Doğru mu? Bu da kırıklı çıkmıştı.
+
+61
+00:12:48,655 --> 00:12:54,836
+Şimdi, evlacılısından şuradaki ifadeyi, buradaki ifadeyi bu şekilde yazabilirim.
+
+62
+00:12:54,836 --> 00:13:00,703
+Şuna yazalım. Burada ne çıkıyor karşıma? Aslında burada...
+
+63
+00:13:00,703 --> 00:13:19,963
+2'ye 3 ve 3'e 2'lik. Yani şuradaki çarpım 3'e 2'lik bir şey verecekti. Buradaki çarpım 2'ye 3'lük bir şey verecekti. Dolayısıyla aslında D0, D1, D1 ve D3'tü bunların boyutları. Yapılan işlem neydi? M11 artı.
+
+64
+00:13:21,299 --> 00:13:31,459
+Maliyet açısından yani yapılan işlemden kastım. M2, 3 neden? Çünkü tek başına duran A11 madresinin çarpım maliyeti M11 ki o da sıfıra denk gelecek.
+
+65
+00:13:32,259 --> 00:13:41,139
+2 ve 3 arasındaki madreslerin çarpım maliyeti artı. Sonuçta 2'ye 3 ve 3 ikilik madresleri çarpım için kullanılan maliyet.
+
+66
+00:13:47,764 --> 00:14:14,123
+D3 diye yazalım. Çünkü aslında bu ne? 2 çarpı 3 çarpı 2. Bu da bana 36'yı vermişti. Şimdi burada bir aslında tekrar eden pattern var. İndisler üzerinden bunları formülü haline getirme şansımız var. Nasıl yapacağız? Şimdi şuna mesela bir gözlem yapıp belki birden fazla case için deneyip sonra bu formalizasyonu çıkartmanız mümkün.
+
+67
+00:14:14,932 --> 00:14:38,491
+Şuradaki birinci indisi 1-2'deki yani İ dedim. İ şu an 1 olsun. Şimdi bakın şurada da İ var. Bu da İ. Şurada şuna C diyelim. Bu C tekrar eden bir şekilde şurada da var. Bu da C.
+
+68
+00:14:40,179 --> 00:14:47,179
+Peki, şu ikisi için ne söyleyebiliriz? Bunlar birbirinin ardı sıra gelecek olan sayılar olacak.
+
+69
+00:14:48,019 --> 00:14:53,139
+Çünkü ikiye böldüğünüz işleminizi, bir fasıl yaptınız, diğer fasıl yaptınız.
+
+70
+00:14:53,979 --> 00:14:55,259
+Mesela şuna K diyelim.
+
+71
+00:14:57,359 --> 00:15:00,559
+K. Bu da K'dan bir sonraki işlem olacak.
+
+72
+00:15:01,759 --> 00:15:02,479
+K artı bir.
+
+73
+00:15:03,879 --> 00:15:04,879
+Aynı şekilde.
+
+74
+00:15:11,668 --> 00:15:19,088
+D2'ye de bu arada, aslında şunları da söyleyebilirdim aynı manasınıza ama.
+
+75
+00:15:26,644 --> 00:15:33,943
+Aslında buradaki K'nın şurayla bağlantılı olarak yazılması manalı. Buradaki K'nın burayla bağlantılı yazılması manalı.
+
+76
+00:15:34,463 --> 00:15:39,423
+Örneğin şurada ben D0 için, şuradaki 0, İndisler için konuşuyorum.
+
+77
+00:15:41,163 --> 00:15:48,223
+İ1 olduğundan İ-1. Burada K2 olduğundan, burada da D2 ile uğraştığımızdan buraya K.
+
+78
+00:15:51,988 --> 00:16:05,448
+Yani D-1, D-K ve D-J olarak bunları adlandırabilirim. Aynı şekilde şuraya D-0'da D-1 diyebilirim. Şuraya D diyebilirim.
+
+79
+00:16:05,448 --> 00:16:18,668
+Şimdi burada şu ifade ile şu ifade D-1'i aynı K'ya tekabül ederken şurası K-1'e tekabül ediyor.
+
+80
+00:16:21,491 --> 00:16:24,692
+Burada yine benzer bir paten karşımıza çıktı.
+
+81
+00:16:27,091 --> 00:16:37,731
+Şimdi burada ne yaptık? İ, J'yi düşünerek, D'nin çarpılacak matrislerin boyutlarındaki indisleri düşünerek bir formülüzyon yaptık.
+
+82
+00:16:37,731 --> 00:16:47,651
+Şimdi burada şöyle bir formüle geçersek, bu arada aslında yaptığımız şey ne? Burayı hesapladık. Hangisi minimumsa onu alacağız.
+
+83
+00:16:47,775 --> 00:17:00,255
+Hangisinin minimum olduğunu bulmak için bu indisleri tüm opsiyonlar için, iğnenin kanun alabileceği opsiyonlar için şöyle tutayım isterseniz de.
+
+84
+00:17:02,995 --> 00:17:08,255
+Gezmeniz gerekecek aslına bakarsanız. Şimdi şu yukarıdaki formülü şöyle genelleştirebilirim.
+
+85
+00:17:15,059 --> 00:17:36,500
+Şimdi eğer İ ve J birbirine eşitse o zaman kostumuz sıfır. Çünkü M1 1 sıfır. M2 2 sıfır gibi. Ama değilse o zaman mevcut seçeneklerden minimum olanı seçeceğim. Nedir bu mevcut seçenekler?
+
+86
+00:17:41,587 --> 00:17:42,807
+Ağzı M
+
+87
+00:17:46,836 --> 00:18:05,615
+K artı bir J artı D i eksi bir çarpı dk çarpı dc. Bu da i'nin j'den küçük olduğu durumlar için geçer.
+
+88
+00:18:06,076 --> 00:18:12,915
+Peki burada K'nın aldığı aralık K bir sürü değer arasına gidip gelecek. O neyle?
+
+89
+00:18:13,907 --> 00:18:24,427
+Sınırlandırılmış durumda olmalı. Şöyle, İ ve J arasında sınırlandırılmış olmalı. Yani örneğin İ1 ve J3 ise K1 ve K2 değerlerini alacak.
+
+90
+00:18:26,527 --> 00:18:38,307
+Bunların içerisinden, şu formalizasyonun bana verdiği seçenekler içerisinden en küçüğünü seçeceğim. Böylece optimum çözümü bulmuş olacağım.
+
+91
+00:18:42,163 --> 00:18:48,143
+Burada sadece çıkarımını görselleştirmek açısından böyle bir şey yaptık.
+
+92
+00:18:50,324 --> 00:18:53,623
+Şimdi bunun üzerinden nasıl bir sonuç elde ediyoruz?
+
+93
+00:18:53,784 --> 00:18:57,223
+Memorization'ı nasıl uygulayacağız? Ona bakacağız.
+
+94
+00:18:59,316 --> 00:19:15,016
+Var mı soru? Bu arada hiç sohbete de bakmadım. Birileri bir şey soruyor. Sorusu olan var mı arkadaşlar? Bu formül üzerinden anlatmaya devam edeceğim. Size küçük bir örnek çözeceğiz. Memorization matrisini nasıl oluşturacağız? Çözüm matrisini nasıl oluşturacağız? Onları göstereceğim.
+
+95
+00:19:16,096 --> 00:19:24,675
+Ama soru yok. O zaman şu şöyle üstte kalsın. Bundan sonra aslında bu olacak bizim artık.
+
+96
+00:19:26,932 --> 00:19:29,311
+ana formülümüz.
+
+97
+00:19:31,452 --> 00:19:32,992
+Bunu söyleyeyim, ters bir şey yapmış.
+
+98
+00:19:34,512 --> 00:19:40,271
+Şimdi aslında nasıl çıkarıldığını anlatmamakla birlikte, ne anlatmayacağım o biraz uzun ama,
+
+99
+00:19:40,972 --> 00:19:43,972
+opsiyon sayısı ne olabilir bu tarz bir işlemde?
+
+100
+00:19:44,291 --> 00:19:50,052
+n'e bağlı olarak diye düşünürseniz, yani matriz sayısına bağlı olarak kaç farklı opsiyon denemek zorundayım mesela?
+
+101
+00:19:50,544 --> 00:20:07,644
+Bununla alakalı bir recurrence relation çıkartırsanız katılan sayıları karşımıza geliyormuş. Ben de şimdi yine rastladım. Şöyle bir eşitlik ortaya çıkacak ama buraya yazıp da formül iş yapmak istemiyorum. Şuraya yazacağım size için.
+
+102
+00:20:13,715 --> 00:20:31,815
+Vardesim olsaydı, opsiyonlarım neler olacaktı? Biraz da gözünüzü canlandırmak açısından. Birinci opsiyonum şuydu. Aralarında çarpım olduğunu düşünün. A3 ile A4'ü çarpacağım. Son ucu A2 ile son ucu A1 ile çarpacağım. İkinci opsiyonum şuydu.
+
+103
+00:20:36,627 --> 00:20:42,048
+Bir başka opsiyonum şuydu. Tüm bu opsiyonları taramanız gerekiyor.
+
+104
+00:20:44,388 --> 00:20:47,248
+Bir başka opsiyonum şuydu.
+
+105
+00:20:55,188 --> 00:20:57,508
+M5 şu. Bunlar opsiyonlar.
+
+106
+00:21:00,208 --> 00:21:03,648
+Boş vaktinizde bir katılan sayıları için bir bakın.
+
+107
+00:21:04,808 --> 00:21:09,168
+Şimdi burada Recurrence Lation'ına bir bakın.
+
+108
+00:21:10,128 --> 00:21:12,408
+Şöyle bir eşitlik karşıma çıkıyor.
+
+109
+00:21:20,403 --> 00:21:46,884
+Şimdi burada M'in n-1 olduğu bir durum için bu hesaplamayı yapmanız gerekiyor. Yani sizin 4 tane maddesiniz varsa M'in 3 olduğu durum için bu hesabı yapacaksınız. 6! 4! 3! Bu da 4! 5'e 6 ile 4! 2 ve 3'e tekabül edici. Bu da 5'e denk geliyor. 5 tane opsiyon var.
+
+110
+00:21:47,700 --> 00:21:53,900
+Boş vaktinizde bir bakın katalan sayılarına. Bunların arasındaki ilişkiyi görmeye çalışın.
+
+111
+00:21:56,539 --> 00:22:07,700
+Şimdi, şu örnek, şuradaki şey üzerinden yapmıştık ya, çıkarttığımız formül. Bu formül üzerinden bir örnekleme yapalım şimdi.
+
+112
+00:22:14,420 --> 00:22:31,340
+Neydi benim matrislerimin boyutları? A1, A2, A3. Bu kez dört tane matrisim olsun. D0, D1, D1, D2. Bu zincirin oluşmasının...
+
+113
+00:22:31,347 --> 00:22:51,768
+Biliyorsunuz koşulu, hani onu söylemedim ama arka arkaya gelen matrislerin çarpılmaya uygun olması gerekiyor. O yüzden şuradaki ortadaki incislerin boyutlarının aynı olması lazım ki bir zincir oluşturabilsin. Çarpmaya müsait matrislerden oluşacak bu zincir. Tabi ki rastgele şeylerden oluşmayacak, matrislerden oluşmayacak.
+
+114
+00:22:51,768 --> 00:22:56,148
+Şimdi bu formül gereği benim ilk yapmam gereken şey nedir?
+
+115
+00:22:56,915 --> 00:23:16,216
+M1'e 4'ü bulmaya çalışıyorum. Bunu bulurken minimum opsiyonunu bulmaya çalışıyorum. K'nın 1 ve 4 aralığında olduğu kısımlar için. Dolayısıyla K1'ken, K2'yken ve K3'ken bana farklı değerler üretecek bir formül ve bu değerler arasından birini seçeceğim.
+
+116
+00:23:23,635 --> 00:23:44,615
+Şurası İ, şurada J. İ1 olduğu için M11 artı M2'ye 4. Çünkü K1 işte J'de 4 olduğu için. Artı D0 artı D1 artı D4.
+
+117
+00:23:45,615 --> 00:23:48,536
+Şimdi bu ne demek? Şu ifade ne demek?
+
+118
+00:23:51,955 --> 00:23:55,135
+Aslında bu ifade şurada ne? Şuraya yazalım onu.
+
+119
+00:24:00,084 --> 00:24:04,084
+Oh çok özür dilerim. Sadece takmam lazım. İkisi.
+
+120
+00:24:50,867 --> 00:25:03,587
+Şimdi, nerede kaldı? Şu ne demek diye konuşuyorduk. Şuradaki ifade ne demek diye konuşuyorduk. Aslında şuraya onu yazmak istiyorum sizin için.
+
+121
+00:25:07,220 --> 00:25:09,220
+Buyurun, bana mı söylesin?
+
+122
+00:25:09,360 --> 00:25:11,460
+Tamam, özellikle.
+
+123
+00:25:11,460 --> 00:25:14,460
+Şimdi...
+
+124
+00:25:21,140 --> 00:25:38,660
+Aslında şu şu demek. A1, A2, A3 ve A4 için burada 2'ye 4 olduğundan A2 ile A4 arasını çarptım. Sonra da 1'e 1 olduğundan bunun sonucunu şununla çarp demek istiyorum.
+
+125
+00:25:38,660 --> 00:25:46,460
+Yani M1'in maliyetiyle M2'ye 4'ün maliyetini toplamamız gerekiyor.
+
+126
+00:25:47,443 --> 00:25:57,324
+Ve sonuçta bunu D0, D1, D4 ile toplamanız gerekiyor. Neden bunlar? Bunları biraz verifi etmek için aslında bunları anlatıyorum size. Bu çıkarımları verifi etmek için anlatıyorum.
+
+127
+00:25:57,324 --> 00:26:13,023
+Şimdi A2, A3 ve A4 nasıl çarparsanız çarpın sonuçta daim yaşımız size D1'e D4 olacak. Dolayısıyla D0 ve D1'i şurası A1 olduğu için.
+
+128
+00:26:14,740 --> 00:26:30,899
+D1, D4 çarpımı da A2, A3 ve A4 olduğu için sizin totalde D0, D1 ve D4'ün çarpımı tabii ki toplamı değil. Bunlar çarpım.
+
+129
+00:26:33,500 --> 00:26:41,539
+Maliyetinizi verecek. Aslında şurada 2 ve 4 arasını taradığımızı görmeniz için biraz bunu özellikle anlatmak istedim.
+
+130
+00:26:42,036 --> 00:27:08,576
+K1 iken bunu yaptım. K2 iken de yaptım. M12 artı bu sefer 3, 4 olacak. D0, D2, D4 ve K3 iken 13.
+
+131
+00:27:11,443 --> 00:27:27,123
+M4 4, D0, D3, D4. Şimdi bunları seçtiniz. Bunlardan bir tanesini seçtiniz.
+
+132
+00:27:34,644 --> 00:27:50,104
+Bunları M1-4 için hesapladınız ya. Şimdi şu zaten sıfır. Bunu biliyorsunuz. Bu sıfır. Şu da sıfır. Peki diğerlerini ne yapmanız gerekiyor? Diğerlerini bulmak için tekrar hesaplama yapmanız gerekiyor değil mi?
+
+133
+00:28:04,276 --> 00:28:26,135
+2 ile 4 arasında değişen değerleri söz konusu. Niye? Çünkü i ve j arasında değişiyordu. i eşit olacak şekilde. Dolayısıyla k2 olabilir, k4 olabilir. Her seferinde yine bir minimum bulmanız gerekiyor. Her seferinde yine eşitlik yazmamız gerekiyor. Bu eşitliklerde yine formülden şöyle.
+
+134
+00:28:28,216 --> 00:28:30,135
+3'e 4 artı.
+
+135
+00:28:31,059 --> 00:28:34,779
+D1 çarpı D2 çarpı D4.
+
+136
+00:28:37,620 --> 00:28:43,019
+2'ye 3. Yazımın da gitgide kötüleştiğini fark ettim şu an.
+
+137
+00:28:44,900 --> 00:28:46,840
+Araya ihtiyacım olduğunu öyle anlıyor muyum?
+
+138
+00:28:47,519 --> 00:28:51,460
+D1 çarpı D3 çarpı D4.
+
+139
+00:28:52,200 --> 00:28:54,580
+Şimdi burada neyi dikkatinizi çekiyor baktığımız vakit?
+
+140
+00:28:55,028 --> 00:29:18,108
+Diyorsunuz ki M1-4 hesaplamak için M2-4 hesaplamalıyım. Tamam hesaplayayım. M2-4 hesaplamak için şurası zaten 0, burası 0. M3-4 hesaplamalıyım. M3-4 hesapladığımızda aslında alt sıtırda burada da M3-4 hesaplamam gerekecek. Yani birden fazla kez aynı şeyi hesapladığımız bir durum ortaya çıkıyor. Ve bunları hesaplamak çok kolay değil. Eğer matris çeyniniz büyükse.
+
+141
+00:29:18,480 --> 00:29:32,000
+Dolayısıyla işte burada tekrar eden hesaplamalar için dinamik programlama, memorization özelliğini mutlaka kullanmanız gerekiyor. Bunu recursive olarak çözmeniz size bir şey kazandırmıyor eğer memorization yapmazsanız.
+
+142
+00:29:33,400 --> 00:29:42,220
+Şimdi memorization nasıl yapmak mantıklı? Nereden başlayarak bu problemi çözmek? Nereden başlayarak evleri hesaplamak mantıklı? Ona bir bakacağız.
+
+143
+00:29:45,907 --> 00:30:03,907
+İki tane matrisa ihtiyacım var benim burada bu problemde. Bir tanesi buradaki kostları tutan matrisim. Yani M matrisim. Hesapladığım iki dördü bir kere yazayım ve sonra ihtiyacım olduğunda oradan çekeyim diye. Ama bir başka matrise daha ihtiyacım var. O da kullanıcıya sadece...
+
+144
+00:30:04,596 --> 00:30:20,956
+Minimum çarpım sayısını vermek yeterli olmayacak. Bu parantezleri nerede yatması gerektiğini, yani hangi matrislere önce çarpması gerektiğini de anlatmanız lazım. Dolayısıyla bir de bunu tutacak, son ışığını tutacak bir matrise ihtiyacınız var. İki ayrı matris de burada işlemleri tutuyor olacaksınız.
+
+145
+00:30:23,656 --> 00:30:25,136
+Şuradan devam edelim.
+
+146
+00:30:29,619 --> 00:30:42,619
+Burada önemli olan aslında yapılması gereken şey, bu madresleri oluştururken, şimdi en kötü, tamamen.
+
+147
+00:30:42,619 --> 00:30:50,619
+Bunun aslında doğruya çevirme özelliği varmış da, serfik türlü kullanmayı başaramadım.
+
+148
+00:30:50,619 --> 00:30:56,619
+Eğri bir yürü oluyor, ben ikilerim kusura bakmayın. Yamuk yamuk görüyorum şu an zaten.
+
+149
+00:30:58,163 --> 00:31:03,163
+Ne kadar da büyük çizdim. Çok gereksiz büyük oldu.
+
+150
+00:31:21,364 --> 00:31:45,683
+Arkadaşlar, üzüntü. Şimdi bu mtable'ın postlarımı tutuyor. Tamam mı? Bir de aynı şekilde gereksiz büyük bir paytable'a nasılsa sonsuz dijital ekranında yazıyorum. Aha. Çok üzüntü. Bakla karşı karşıya.
+
+151
+00:31:49,395 --> 00:31:51,115
+Bir şey istemiyorum, bir şey yapmıyorum.
+
+152
+00:31:52,335 --> 00:31:57,435
+Hocam, çizgiyi çekince birkaç saniye soğanla basılı tutarsanız doğruya çeviriyor aslında.
+
+153
+00:31:58,195 --> 00:31:58,995
+Teşekkür ediyorum.
+
+154
+00:31:59,975 --> 00:32:02,935
+Uygulamalı olarak bana sınıfa gelip anlatırsan çok sevinirim.
+
+155
+00:32:03,035 --> 00:32:04,155
+Seni de görmek isterim burada.
+
+156
+00:32:04,355 --> 00:32:05,195
+Şu an konuşan kim?
+
+157
+00:32:05,915 --> 00:32:07,575
+Şehir dışında olmasam gelirdin acaba?
+
+158
+00:32:08,115 --> 00:32:10,015
+Tamam, peki [öğrenci], [öğrenci].
+
+159
+00:32:10,675 --> 00:32:14,035
+O zaman şehir dışından döndüğünde bekliyorum bana bunu anlatman için seni, tamam mı?
+
+160
+00:32:15,455 --> 00:32:16,335
+Olur tabii hocam.
+
+161
+00:32:16,335 --> 00:32:16,975
+Tamam.
+
+162
+00:32:29,460 --> 00:32:34,259
+Benim yaptığımı yapmayın, söylediğimi yapın ama önceden hazırlanın arkadaşlar.
+
+163
+00:32:35,220 --> 00:32:45,379
+Böyle son anda yeni kullanmaya alıştığınız teknolojik aletlerle genç arkadaşların zamanını boşa harcamayın.
+
+164
+00:32:46,059 --> 00:32:50,980
+İleride hoca olduğumuzda. Şimdi bu P-Table parantezleri tutuyor.
+
+165
+00:32:51,923 --> 00:33:16,323
+Diğeri de maliyetlerimi tutan iki tane table'ımı oluşturdum. Burada büyük bir örnek üzerinden tek tek yapıp da sizleri böyle hesaplamalarla boğmak istemiyorum. Burada aslında önemli olan şey M1-2, M2-3, M3-4 gibi aralarında sadece bir fark olacak olan küçük işlemleri yaparak, küçük maliyetleri hesaplayarak başlamak.
+
+166
+00:33:20,692 --> 00:33:31,332
+Mesela post matrisinde bir, iki, üç, dört dersek buna bir, iki, üç, dört dersek bir, iki, üç, dört.
+
+167
+00:33:33,451 --> 00:33:43,232
+Post matrisinde doldururken aslında şuradaki diagonal sıfır biliyorsunuz. Neden? Çünkü M1 bir matrisi kendiliğe çarptığınız için bir postlu yok bunun.
+
+168
+00:33:43,232 --> 00:33:48,232
+Post matrisinde doldururken önce şuraları, şu diagonal yani.
+
+169
+00:33:48,788 --> 00:34:05,447
+Sonra burayı, sonra burayı doldurarak gideceksiniz. Ve bununla aynı şekilde iteratif olarak da parantez maddesini dolduracaksınız. Yine aynı sırada. Dolayısıyla bir işlem yaptığınızda hem bu gözü, hem bu gözü, sonra bu gözü, bu gözü doldurarak gideceğiz.
+
+170
+00:34:07,367 --> 00:34:15,867
+Şimdi sadece iki tanesi için formülleri yazacağım. Sonrasını siz tamamlayın. Çok da vakit kaybetmeyin. Bir ders geçmiş bile bu örnekle.
+
+171
+00:34:17,460 --> 00:34:20,739
+Şimdi formülümüzü biliyoruz.
+
+172
+00:34:27,380 --> 00:34:35,380
+Biraz aslında şeyine, parmaşıklar üzerinde de kafa yormak gerekiyor.
+
+173
+00:34:43,251 --> 00:34:45,872
+Şu deminden beri yazdığım formül.
+
+174
+00:34:47,672 --> 00:34:52,632
+Elim alışsın diye tekrar yazıyorum. Yoksa kopyalama özelliği olduğunu farkındayım. Elimdeki var bir şey ne oldu?
+
+175
+00:34:52,632 --> 00:34:54,372
+Şimdi.
+
+176
+00:34:57,971 --> 00:35:03,751
+A1, A2, A3, A4.
+
+177
+00:35:05,271 --> 00:35:07,672
+3'e 2, 2'ye 4.
+
+178
+00:35:08,500 --> 00:35:25,680
+Böyle 2'ye, 2'ye 5 olsun. Şimdi ilk başta farklı bir olanlardan başlayalım dedim ya. Örneğin M, 1'e 2'den başlayalım. Bunu çıkartalım. İ ve J böyle. Minimum.
+
+179
+00:35:29,780 --> 00:35:41,780
+1 ve 2 aralığında gidecek. Dolayısıyla 2'den küçük olması gerektiği için, kave 1 ile büyük eşit olabildiği için sadece kavanın 1 olduğu durum için hesaplama yapıyorsunuz. Bir adımda ilgili matris gözünü doldurma şansınız oluyor.
+
+180
+00:35:42,840 --> 00:35:53,860
+M11 artı M22 artı D0 D1 D2. Bu da bana 24 veriyor.
+
+181
+00:35:55,315 --> 00:35:59,416
+Şimdi 24'ü, şuraya yazıyorum bakın buraya.
+
+182
+00:36:00,659 --> 00:36:27,779
+Neden buraya yazıyorum? M1-2'yi hesapladım. Yani matris 1 ile matris 2 arasındaki çarpımın maliyeti 24'müş. Minimum olanı 24'müş. Tek bir seçeneğim olduğu için zaten 24'ten başka karşılaştırabileceğim bir şey yok. Ama ilerleyen adımlarda K'nın 2 olduğu, K'nın 3 olduğu durumlar için her seferinde bir tane sonucunuz olacaktı. Ve hangisi size en düşük maliyeti veriyorsa o seçeneği seçeceksiniz ve ona göre burada doldurmanız gerekecekti.
+
+183
+00:36:29,108 --> 00:36:43,007
+Şimdi elimde var ama uzun uzun yazmak istemiyorum sizi de sıkmamak için. Bu formülü uygulayarak matrisi dolduracaksınız arkadaşlar. Şöyle bir şey çıkıyor. İsterseniz yaparsınız müsait olduğunuz vakit. Ben şimdi şuraya sonuçları yazayım.
+
+184
+00:36:46,579 --> 00:37:12,760
+Bunun üzerinden çünkü hesaplamaya gideceğim. Bir yandan da şurayı nasıl dolduruyoruz onu anlatayım size. 24'ü buldum. Tamam. Peki ben bu 24'ü hangi K için buldum? Yani aslında K benim parantezimde ayrım noktamı gösteren bir şey. Hangi K için buldum? 1 için buldum. O zaman şuraya 1, 2'nin olduğu yere aynı gözle ama bu sefer parantez madresinde 1 yazıyorum.
+
+185
+00:37:14,195 --> 00:37:25,275
+Yani en iyi maliyetim 24'tü ve bunu 1 ile 2 arasındaki matrislerde çarpım yaparken parantezi 1 ile 1. matristen hemen sonra koydum demek oluyor bu aslında.
+
+186
+00:37:25,275 --> 00:37:39,275
+Bunu iteratif olarak tekrarladığımızda hem sonucu hem de bu sonucu veren k'yı ilgili iyiceği gözünde her iki matriste de yerleştirdiğimizde aslında çözümü bulmuş oluyorsunuz.
+
+187
+00:37:41,876 --> 00:37:58,496
+Mesela bu kost madresi böyle doluyor. Bu örnek için şöyle doluyor. Parantez madresi. 2'ye 3 ve 3. Bu şekilde dolacak. Yaptığınız zaman göreceksiniz.
+
+188
+00:37:58,496 --> 00:38:04,096
+Şimdi burada şu madresi nasıl okuyacağım?
+
+189
+00:38:05,043 --> 00:38:16,363
+Benim de böyle bir matris var. 4 tane de çarpılacak matris var. Bunları ben nasıl okuyacağım? Parantezini nereye koyacağımı nasıl anlayacağım? Şöyle anlıyorsunuz.
+
+190
+00:38:27,155 --> 00:38:54,015
+Tüm renginiz o aslında. A1, A4 arası. Parantezleri nereye koymanız gerektiğini söylüyor. Yani diyorsunuz ki, A1, A4'te şuraya, 3'e parantezi bir koymam gerekiyor. 3'ten sonra. Yani A1, A2, A3, A4 ya. Parantezi şuraya bir koyacağım. Burada bir parantezim var demek.
+
+191
+00:38:56,500 --> 00:39:02,420
+Şimdi peki şurayı nasıl yapacağım? 1 ile 3 arasını. Onun için de şuraya bakıyorum.
+
+192
+00:39:06,164 --> 00:39:12,684
+Şuraya bir parantez koymam gerekiyormuş. Yani aslında şuna çevirdim. Buraya parantez koyunca işler.
+
+193
+00:39:15,504 --> 00:39:18,684
+Şimdi eğer ben şu kısmı...
+
+194
+00:39:20,768 --> 00:39:41,567
+Verifiye etmek istersem ikinci satıra bakabilirim. 2 ile 3 arasında 2'ye parantez koy ve 3'e parantez koy. Zaten bunlar kendi başlarına işlemler. Dolayısıyla bu zaten daha fazla küçülmüyor ama verifiye etmek isterseniz böyle verifiye edebilirsiniz. Dolayısıyla benim optimum çözümümde A2 ile A3 önce çarpmam sonra bunu A1 ile ve A4 ile çarpmam gerekiyormuş.
+
+195
+00:39:45,067 --> 00:39:48,567
+Tabii şu var. Önce A1 ile sonra sonucu A4 ile.
+
+196
+00:39:49,172 --> 00:40:12,751
+Şimdi size sorun şu, eğer problem yoksa buraya kadar kısımda varsa sorun. Problem yoksa karmaşıklığı nasıl hesaplarız onu soracağım. Bu dinamik programlamayla çözdüğüm vakit benim dinamik programlamayla matrix chain, multiplication işlemimin karmaşıklığı ne olmuş?
+
+197
+00:40:17,268 --> 00:40:19,968
+O konuda ne düşünüyorsunuz? Onu sorayım size.
+
+198
+00:40:25,300 --> 00:40:39,519
+Dinamik programlamada cevap vermek isteyen var mı? Parmak kaldırmak isteyen, tatlı bayan arkadaşlarım beni yalnız bırakmadılar. Kendine teşekkür ediyorum. Ama yok.
+
+199
+00:40:39,900 --> 00:40:46,900
+M artı N olabilir mi? M artı N olabilir mi? M artı N. M ile N'in ne olduğunu anlayamadım.
+
+200
+00:40:48,700 --> 00:40:49,980
+Satoloji mesulü.
+
+201
+00:40:51,891 --> 00:40:54,691
+Satır ve sürü. Ha şey, şu matrizle için mi konuşuyorsun?
+
+202
+00:40:55,531 --> 00:40:55,811
+Evet.
+
+203
+00:40:56,731 --> 00:41:02,131
+Bunlar zaten mecburen kara matriz. İki en oluyor o zaman. Dediğin şey değil mi?
+
+204
+00:41:02,451 --> 00:41:03,731
+Dolayısıyla en oluyor yani.
+
+205
+00:41:04,031 --> 00:41:05,551
+Dolayısıyla en oluyor diyorsun. Tamam.
+
+206
+00:41:06,211 --> 00:41:07,511
+Kara olmaz mı hocam?
+
+207
+00:41:08,331 --> 00:41:17,211
+Efendim? Ha, o da olabilir. O da olabilir ve o da değil. Ama yaklaştığınız ikinizden de birer parça alıp kombinleyeceğim şimdi ben onu. Başka yer söylemek isteyen yoksa.
+
+208
+00:41:17,876 --> 00:41:34,376
+Şimdi ileme programlamada nasıl çözüyorduk arkadaşlar? Genel olarak prensip neydi? Prensip şuydu. Subproblemleri ayırıyorsunuz. Her bir subproblem için ne kadar vakit harcıyorsunuz ve kaç tane subproblem çözüyorsunuz. Bunlar üzerinden bu hesaplamayı yapıyorduk.
+
+209
+00:41:36,179 --> 00:41:55,239
+Aslında şuradaki matristeki değer sayısı, şu matristeki değer sayısı size kaç tane hesap problem çözdüğünüzü gösteriyor. Doğru değil mi? Bunu çözdünüz, bunu çözdünüz, bunu çözdünüz, bunu çözdünüz. İteratif olarak bunları da çözdünüz. Bu matriste kaç tane değer var? Ve her değer nasıl hesaplandı? Buna bakacaksınız. Şimdi matris şöyle.
+
+210
+00:42:02,260 --> 00:42:03,800
+Yesenem Allah'a.
+
+211
+00:42:07,923 --> 00:42:14,923
+Şöyle görünüyor değil mi matriz? Şöyle. Tatlı küçük matriz çizmek istiyorum bu sefer.
+
+212
+00:42:23,347 --> 00:42:24,347
+Buralarım dolu.
+
+213
+00:42:28,436 --> 00:42:38,696
+Buraları doldurdum. Dört tane değer, üç tane değer, iki tane değer, bir tane değer. Doğru değil mi? Bu aslında şöyle bir formülle ifade edilebilir.
+
+214
+00:42:46,483 --> 00:43:12,043
+Ve n kareye. Aşağı yukarı tekabül ediyor. Tabii şuradaki sıfırları hesaplamayacağız hocam diyebilirsiniz. Ama n karede biliyorsunuz ya bir konotasyonda küçük artımlar bizi çok fazla etkilemiyordu. Aslında bu değerden eni çıkartacaksınız. O zaman gerçek değeri buluyorsunuz ama şeyi değişmiyor. Asymptotic notation'da sınıfı değişmiyor. n kare. Şimdi sizin n kare kere demek ki siz orada işlem yapmışsınız.
+
+215
+00:43:13,300 --> 00:43:30,460
+En matrix chain'deki matrix sayınız olmak üzere. En kare kadar işlem yapmışsınız. Peki, her bir tanesi için, her bir işlem için kaç defa döndünüz? Kaç kere işlem yaptınız? Buradaki her bir hücreyi bulabilmek için kaç kere işlem yaptınız?
+
+216
+00:43:32,140 --> 00:43:39,360
+Bakın ne yaptınız? Her birinin için k kadar değer ürettiniz. Doğru değil mi? K ile c yaralığında değer aldı.
+
+217
+00:43:39,711 --> 00:44:05,872
+Eğer İ1 ile 4 arasındaysa 1 oldu, 2 oldu, 3 oldu. Eğer İ1 ile 2 aralığındaysa 1 oldu sadece gibi. Yani aslında burada da yine yuvarlak hesap en kadar tabii ki farklı olacaktır. Bu Aful Bound hesaplıyorum zaten. Ama Aful Bound'da her seferinde K'nın alacağı değer kadar, onu da N olarak düşünürsek en kadar kez değer hesaplarız ve bunu minimum bulduk.
+
+218
+00:44:06,260 --> 00:44:16,180
+Dolayısıyla şuradaki her bir değer için, n kare kadar hücre için, her biri için n tane işlem yaptınız. Neticede sizin total costunuz n küp oldu. Tamam mı?
+
+219
+00:44:20,659 --> 00:44:21,559
+Anlaşıldı mı?
+
+220
+00:44:24,719 --> 00:44:26,179
+Yüksek çıktı beklediğinden.
+
+221
+00:44:26,940 --> 00:44:28,059
+Ne oldu? Anlamadım.
+
+222
+00:44:28,719 --> 00:44:29,759
+Beklediğinden yüksek çıktı.
+
+223
+00:44:32,079 --> 00:44:33,739
+Beklediğinden yüksek çıktı. Doğru.
+
+224
+00:44:45,204 --> 00:44:51,784
+Bu bir de dinamik programlamayla yapılmış halin. Bunu dinamik programlamayla yapma saydınız ne olurdu onu da düşünün hafta sonu.
+
+225
+00:44:51,784 --> 00:45:03,923
+Çünkü memorize ettiğimiz için sadece şu hücreleri hesapladınız ve bir kere daha hesaplamadınız. M24'ün look up table'dan baktınız hop koydunuz yerine. Ama bunu yapmasaydınız o zaman kostumuz daha da yüksek olacaktı.
+
+226
+00:45:05,724 --> 00:45:11,164
+Hocam bunun kaç tane matriks gerektiği yani daha verimli olması için?
+
+227
+00:45:11,795 --> 00:45:13,515
+Daha derin olması için derken?
+
+228
+00:45:13,855 --> 00:45:14,895
+Verimli, derin değil.
+
+229
+00:45:15,475 --> 00:45:22,355
+Verimli olması için. En az kaç matkısı çarparsam bu yaptığım, attığım taş, ürküttüğüm kulubaya değer diye mi soruyorsun?
+
+230
+00:45:23,175 --> 00:45:24,275
+Tam olarak öyle soruyorum.
+
+231
+00:45:25,599 --> 00:45:53,599
+Yani şöyle, maddeslerinizin boyutları da önemli orada. Hani içeriğin kaç hücreden oluştuğu da önemli aslında bakarsan. Bununla alakalı şu kadar toplamda işlem olursa bu olur gibi bir araştırmayı yapmadım. Ama bu sorun üzerine siz de araştırayım, ben de araştırayım, konuşalım bir sonraki gün. Tamam mı? Ama genelde çok küçük çarpımlar, çayınlar varsa verimli olmuyor. Bu bir gerçek yani aslında. Ama güzel bir dinamik programı olmantını anlatan güzel bir.
+
+232
+00:45:53,599 --> 00:45:55,640
+Bu örnek olduğu için paylaşmak istedim sizinle.
+
+233
+00:45:58,240 --> 00:46:06,260
+Şimdi, bugün ben size bir de amortize analizi, amortize analizi anlatacağım.
+
+234
+00:46:07,220 --> 00:46:09,579
+Sorular çözeceğim.
+
+235
+00:46:11,119 --> 00:46:13,519
+Ara vermeden önce sadece şeyi söylemek istiyorum.
+
+236
+00:46:14,640 --> 00:46:17,800
+Bir önceki derste bir arkadaşınız bana şey sormuştu.
+
+237
+00:46:20,755 --> 00:46:41,335
+Kim sordu ise bana ismini hatırlatırsa sevinirim. Hash fonksiyonlarda ki, entropisinin yüksek olması ve daha fazla dijit içermesinin pollution riskini azaltacağını söylemiştim. O da ben öyle bir hash fonksiyonu kafamda kuramadım hocam. Nasıl olabilir böyle bir hash fonksiyon demişti bu? Şu an arkadaşımız aramızda mı?
+
+238
+00:46:41,335 --> 00:46:42,835
+Ben sormuştum hocam, [öğrenci].
+
+239
+00:46:43,135 --> 00:46:48,335
+[öğrenci], tamam. Şimdi [öğrenci], ben onun üzerine küçük bir araştırma yaptım. Bir paper...
+
+240
+00:46:48,755 --> 00:47:11,436
+Şimdi Universal Aileye Ait Hedge Fonksiyonlarda Key Size ile Pollution Riskinin Trade-Off'unu araştıran bir paper buldum. Onu size chatten paylaşırım okursunuz. Yani hakikaten orada encryption açısından da zaten bu bilinen bir gerçek ama sen birazcık daha hash açısından bunu sormuştun. O paperı paylaşacağım. Orada.
+
+241
+00:47:12,115 --> 00:47:36,356
+Artmasıyla beraber dijit sayısının, ki'deki dijit sayısının kollajının düştüğünü gösteren grafikler var. Bunu bir hash ailesi için test etmişler. Benim ama derste anlattığım basic fonksiyonlar için bu kollajına bu şekilde dijit sayısı arttıkça azaldığını görmek, tavir etmek çok kolay değil, haklısın. Onun için de küçük bir örnek kapağında kurdum. Onu anlatayım sonra ara verelim, olur mu?
+
+242
+00:47:36,356 --> 00:47:37,896
+Şimdi.
+
+243
+00:47:39,923 --> 00:48:04,203
+Şöyle bir şey yapılabiliyor hash fonksiyonlarda. Bunu size hash fonksiyonu anlatırken değindim mi? Onu çok hatırlamıyorum. Bazen key, hashlemek istediğiniz key'yi parçalar ayırıp hashleyebiliyorsunuz. Yani tamamına bir anda hashlemek yerine parçalar ayırıyorsunuz. Onları ayrı ayrı hashliyorsunuz. Bu hashleri konkatenet edebilirsiniz. Toplayıp tekrar hash'e verebilirsiniz. Bunlardan birini seçebilirsiniz. Şimdi eğer böyle bir fonksiyonunuz varsa örneğin.
+
+244
+00:48:04,592 --> 00:48:28,852
+Diyelim ki benim, tabi ben küçük örneklerle şu an çalışacağım. 16 bitlik bir key kullanma şansım olsun. Şöyle 16 bitlik. 8 bit burada. 8 bit burada. Öyle bir hash fonksiyonu kullanacağım ki her bir byte'ı ayrı ayrı hashleyecek.
+
+245
+00:48:29,248 --> 00:48:34,888
+Ve bu hash sonuçlarını beraber kullanacak. Toplayabilir, konkateniyet edebilir, bir şekilde kullanacak.
+
+246
+00:48:34,888 --> 00:48:41,788
+Şimdi böyle bir şey hayal edelim. Diyelim ki çok basit bir hash fonksiyonu, hani bizim hep prime number'larla
+
+247
+00:48:41,788 --> 00:48:51,268
+ürettiğimiz, kullandığımız hash fonksiyonlardan bir tanesini kabaca yazdım.
+
+248
+00:48:51,268 --> 00:48:55,108
+Şimdi şurayı, şu kısmı
+
+249
+00:48:55,860 --> 00:49:16,279
+Yani this significant miktar'dan oluşan böyle bu kısma mod 7 ile bir hash key bu kısım için üretiyorsunuz. Aynı şekilde bu kısım için de üretiyorsunuz. Şuraya key 1, şuraya key 2 diyeyim. Bunlar aynı keyin alt parçaları aslında. Bölümleri sadece.
+
+250
+00:49:20,639 --> 00:49:27,759
+Bunu belki modu ile belki modu olmayı ile başka bir şeyle bilmiyorum. Modladınız ve sonuçta bu iki keyi birleştirdiniz.
+
+251
+00:49:30,699 --> 00:49:41,920
+Diyelim bir konkatenate ettiniz ama tamamen şu an parazı konuşuyorum. Yani bu çok da önemli değil. Keyz'i ortaya çıkartmak istedim.
+
+252
+00:49:43,199 --> 00:49:45,299
+Şimdi buraya baktığımız vakit böyle bir durum varsa.
+
+253
+00:49:46,099 --> 00:50:11,739
+Diyelim ki iki farklı kişi şu key'leri seçtiler. 16 tane dijit kullanma şansları olduğu halde bir tanesi dedi ki ben kısa bir şey seçeceğim ve böyle bir şey seçeceğim dedi. Diğeri de dedi ki ben de böyle bir şey seçeceğim dedi. Bu aslında 2'yi seçmiş. Bu 9'u seçmiş. Bu da kavme edin ne seçmiş?
+
+254
+00:50:13,139 --> 00:50:29,839
+Ne seçmiş? 16'yı seçmiş. Niye? Çünkü kolay da olmasını istiyorum bunların. Şu fonksiyonda aslında bu üçü de Collision ile karşılaşıyorlar. Bu insanları eğer şuraları doldursalar da ne olurdu? Collision olur muydu?
+
+255
+00:50:30,996 --> 00:50:44,996
+Olmazdı değil mi? Çünkü aslında fonksu yok. Şurayı için ayrı bir şey, burayı için ayrı bir şey hesaplıyor ve bunları kombinliyor. Ama sizin küçük entropisi yüksek olmayan ve az dijitli şeyler seçtiğiniz için, şurayı için hesapladığımız eşler hep aynı.
+
+256
+00:50:45,907 --> 00:51:07,127
+Buraya için hesaplanan eşler de aynı. O zaman bunlar kollajin oluşturdu. Böyle bir küçük bir örnek aklıma geldi kafanızda oturabilmesi için. Ki dediğim gibi blokları ayırarak eşleme yapılabilir bir şey ama günümüzde kullanılan eş fonksiyonları açısından, daha kompleks eş fonksiyonları açısından bunun gerçekliğini yansıtması için de PEPR'ı size şimdi arada gönderecek. Tamam mı?
+
+257
+00:51:09,268 --> 00:51:20,987
+Teşekkürler. Teşekkür ederim. O zaman bir ara verelim arkadaşlar. Çeyrek gibi buluşalım. Olur mu? Olur. Görüşmek üzere.
+
+258
+01:07:11,380 --> 01:07:21,780
+Görmete de olur arkadaşlar. Arkadaşlar, amortisi analizden bahsedeceğim ben size. Yeni bir sayfa açalım bunun için.
+
+259
+01:07:25,588 --> 01:07:49,288
+Amortize, amortize analiz nedir? Şimdi biz ne gördük şimdiye kadar? Kötü durum senaryosunu dikkate aldık değil mi? Bir akışımız varsa bu akışın kötü durum senaryosunu genelde dikkate aldık. Average case'i belki dikkate aldık. Best case'i çok fazla anlatmıştım size ilk haftalarda. Onun da işe yaradığı yerler oluyordu gerçi.
+
+260
+01:07:53,427 --> 01:08:10,607
+Bir sıra işlem varsa diyor yapılan, mesela bir stack işlemi, stack'iniz var. Pop yapıyorsunuz, push yapıyorsunuz. Bunları sırayla yapıyorsunuz. Bunlardan oluşan bir set çalıştırıyorsunuz. Bu durumda her zaman en kötü durum senaryosunu düşünmemeliyiz. Bu bizi daha pesimistik bir yere doğru götürür.
+
+261
+01:08:21,427 --> 01:08:28,868
+Tamamına bakıp buradan yola çıkmak bizi daha gerçekçi bir yaklaşıma götürebilir diyor. Aslında motivasyonu bu.
+
+262
+01:08:33,067 --> 01:08:40,427
+Şimdi ama o ceza analizi yapmanın bir daha fazla yolu var. Ben bu yollardan hepsinden kısa kısa bahsedeceğim.
+
+263
+01:08:41,948 --> 01:08:46,247
+Örnek, iki tane böyle temel örneği hepsi için çözeceğim.
+
+264
+01:08:48,979 --> 01:08:53,059
+Konumuz Amortize Analizi.
+
+265
+01:08:57,395 --> 01:09:02,675
+Şimdi birincisi kullanılan yöntemlerden ilk anlatacağım.
+
+266
+01:09:04,536 --> 01:09:05,655
+Agregate Analiz
+
+267
+01:09:16,787 --> 01:09:18,387
+Şimdi Aggregate Analiz.
+
+268
+01:09:23,604 --> 01:09:28,604
+En operasyonun olduğu bir dizim varsa bu dizi içerisinde...
+
+269
+01:09:29,395 --> 01:09:56,335
+Enin, bu en operasyonda en kötü durum buluyorum. Yani bu en operasyon nasıl gelirse en kötü durum oluştur. Yine bir en kötü durum var aslında. Mesela sürekli pop yapmak mı, sürekli push yapmak mı, bunların bir kombinini yapmak mı beni daha çok zorlar. Hangisi daha çok zorlayacaksa ben onun üzerinden hareket ediyorum. Ama birbiriyle bağlantılı olan işlemler için sistemin tamamını düşünmek zorundayım. Şimdi bir örnek vereceğim. Nasıl olduğunu daha rahat anlayabileceksiniz.
+
+270
+01:09:56,851 --> 01:10:07,951
+Şimdi Stag İşlemleri ile bahsettim. Stag İşlemleri ile Aggregate Analizi ile Amortize Analizi nasıl performa edelim ona bakacağım.
+
+271
+01:10:07,951 --> 01:10:19,851
+Stag Operations. İlk örneğim bu. Şimdi ne yapabilirim Stag için? Push yapabilirim. Bir de pop yapabilirim örneğin.
+
+272
+01:10:23,412 --> 01:10:40,051
+Şimdi normalde en basitinden mesela bir push yapıyorsanız büyük ihtimalle şöyle bir şey yazıyoruz. A site'nin en üstünde en üstüne bir değer koy ve bunu arttır. Basit bir şekilde. Böyle yapıyorsunuz.
+
+273
+01:10:40,051 --> 01:10:50,292
+Şimdi bu durumda size aslında çalışma zamanınız o bir. Yani push yapıyorsanız bir hamlede bu işi yapıyorsunuz. Pop yapıyorsanız yine bir hamlede yapıyorsunuz bu işi.
+
+274
+01:10:51,572 --> 01:10:57,172
+Dolayısıyla eğer n tane push ya da n tane pop yapacaksınız aslında o n'lik.
+
+275
+01:10:57,172 --> 01:11:02,452
+Teta n'lik bir n işlem için. n operation için.
+
+276
+01:11:02,452 --> 01:11:08,452
+Push ya da pop yapacaksınız. Teta n oluyor değil mi sizin karmaşıklığınız?
+
+277
+01:11:08,452 --> 01:11:13,332
+Şimdi bir tane daha stack operasyonu hayal edelim.
+
+278
+01:11:13,332 --> 01:11:19,492
+Multi pop olsun. Yani birden fazla nesneyi çekebilsin.
+
+279
+01:11:19,796 --> 01:11:22,595
+Bu operasyon tabi parametre almak zorunda.
+
+280
+01:11:22,595 --> 01:11:31,396
+Stek S olsun. Stek S'ten K tane değeri çektiğini farz edelim.
+
+281
+01:11:34,355 --> 01:11:40,735
+Bu durumda multi-pop bu da bu setin içine katarsam, push, pop ve multi-pop.
+
+282
+01:11:40,735 --> 01:11:44,956
+Üç tane elemandan oluşan bir setim olursa, operasyon setim.
+
+283
+01:11:45,315 --> 01:11:47,956
+Bu durumda benim kostum en kötü durumda ne olur?
+
+284
+01:11:48,395 --> 01:11:49,495
+Şimdi bu soruyu soruyorum.
+
+285
+01:11:50,435 --> 01:11:55,275
+Normalde multi-pop için temel olarak şöyle bir şey yazabilirim değil mi?
+
+286
+01:12:00,404 --> 01:12:01,644
+İki parametsel diyor.
+
+287
+01:12:05,876 --> 01:12:11,976
+Basit bir şekilde Pistodocode yazacak olursa siteyin boş olup olmadığına bakacağım.
+
+288
+01:12:19,347 --> 01:12:28,347
+S siteyi boş değilse ve K'da sıfırdan büyükse pop işlemini yap.
+
+289
+01:12:29,347 --> 01:12:29,807
+Aslında.
+
+290
+01:12:31,648 --> 01:12:34,648
+Ve bunu sürekli yapacaksın.
+
+291
+01:12:35,307 --> 01:12:37,807
+K'nın K kadar yapmış oluyorsun.
+
+292
+01:12:37,948 --> 01:12:40,788
+Artık sıfıra geldiğin vakit yeterince elemanı silmiş durumdasın.
+
+293
+01:12:42,963 --> 01:13:09,503
+Şimdi Maltipop'un böyle bir psodokod var. Maltipop'un en kötü durum senaryosu ne? Eğer benim siteyimde iki eleman sayısı yani siteyim doluysa ve sürekli çekiyorsa. Maltipop'un kötü durum senaryosu, stack size'ın ense nedir? O en olur değil mi? Çünkü hepsini çekeceksiniz. Fıt fıt fıt fıt o en.
+
+294
+01:13:10,323 --> 01:13:25,003
+Şimdi sizin en tane operasyonunuz varsa, hepsi bu operasyonlar pop, push ve multi-pop'un kombinasyonlardan oluşabiliyorsa, sizin postunuzu en fazla yapacak olan operasyon kombinasyonu.
+
+295
+01:13:25,716 --> 01:13:52,476
+Malte Poplardan oluşan bir kombinasyon olur değil mi? Çünkü kuşunki bir, Pop'unki de bir, Malte Pop'unki yani. O zaman ben çok kötü bir senaryo oluşturacaksam bir sürü işlemler oluşacak. Hepsini Malte Pop koyarım. Yani kötü durum senaryosu oluşturacak. Bu durumda en tane operasyonum var. Hepsi Malte Pop. Her bir Malte Pop'un da karmaşıklığı o en. Ne oldu benim o zaman karmaşıklığı? En kara oldu. Doğru mu? Bu benim normal worst case senaryoyla.
+
+296
+01:13:53,235 --> 01:14:08,456
+Eğer analizimi yaparsam karşılaşacağım sonuç bu olacağım. Ama aslında gerçekte OEN kare değil. Normalde bu OEN kareye siz böyle bir stek operasyonunda ulaşamazsınız. Neden ulaşamazsınız? Çünkü şundan dolayı ulaşamazsınız.
+
+297
+01:14:15,667 --> 01:14:32,167
+Beraber yapılmak zorunda. Siz bir site boşken sürekli ondan bir şey pop edemezsiniz. Baktığınız zaman edebiliyormuşsunuz gibi görünüyor ama edemezsiniz. O yüzden onu mutlaka bir kuşla beraber kullanmak zorundasınız. Dolayısıyla kuşa bağlı bir şekilde bu işlemi düşünmeniz gerekiyor.
+
+298
+01:14:35,167 --> 01:14:41,967
+En fazla aslında sizin gelebileceğiniz nokta O.
+
+299
+01:14:43,155 --> 01:14:44,475
+Tahtu, az osundayel.
+
+300
+01:14:50,644 --> 01:15:15,804
+Çünkü boş bir sitekte en çok yapabileceğiniz sitenizin saygı belli. Push yaparsınız, pop yaparsınız. Ne olursa olsun. Birbiriyle bağlantılı olduğu için. Hiçbir zaman push yapmadan pop yapamayacağınız için. O yandan fazla aslında sizin işlem karmaşıklığını böyle bir vize içerisinde çıkartmanız mümkün değil. Dolayısıyla burada birbiriyle bağlantılı işlemler varsa düşünmeliyizden kastım bu.
+
+301
+01:15:17,971 --> 01:15:24,431
+Average Cost'umuz ne olacak peki? Şimdi şöyle bir şey var. Onu galiba yazmadım size. Bakayım yazdım mı acaba?
+
+302
+01:15:27,711 --> 01:15:28,692
+Yazmadım mı?
+
+303
+01:15:33,192 --> 01:15:40,131
+Şöyle, Aggregate Analiz'de şunu aslında da bir yandan hesaplıyoruz.
+
+304
+01:15:40,787 --> 01:15:53,007
+Total kostümü de hesaplıyorsunuz. Operasyon sayısı sayısına bölüyorsunuz. Ortalama buluyorsunuz. Şimdi benim total kostum en fazla O-N olabilir. Operasyon sayım da N. Ne oldu kostum?
+
+305
+01:15:53,427 --> 01:16:10,288
+Average Costum O 1 oldu. Yani buradaki işlemler için Push Pop ve Multipop için ortalama olarak Costumuz yine de 1'e denk gelmiş oluyor. Eğer siz Aggregate Analizi yaparsanız burada daha böyle gerçeğe yakın bir Bound evde etmiş olduk.
+
+306
+01:16:10,288 --> 01:16:15,288
+Şimdi bir başka örnekle biraz daha bunu oturtalım kafamızda.
+
+307
+01:16:30,963 --> 01:16:58,283
+Şimdi eğer ben bu operasyon dizisine push, pop ve multi pop'a bir de multi push eklesem. Yani aynı anda k-tane item'u push edebilen bir şey. O zaman benim amortize analizimde o işlem ortalamam yine o bir mi olur?
+
+308
+01:17:07,347 --> 01:17:30,467
+Olur mu? Olmaz. Niye olmaz? Çünkü birden fazla şey ilave edebiliyorsunuz artık siz. En kötü ki en kötü durum senaryonuz şu işlemler içerisindeki en maliyetiniz puş etmek olacak. Çünkü multi-pop'ta bir kere zaten çektiniz bitti daha fazla koyamazsınız gerçek hayatta puş yapmadan. Ama multi-push'ta koyabilirsiniz.
+
+309
+01:17:33,792 --> 01:17:41,992
+push edecek bir multi push fonksiyonunuz varsa, bunun aslında her bir operasyonun postu ne oluyor? OK oluyor değil mi?
+
+310
+01:17:44,032 --> 01:17:51,792
+O bir değil artık OK oluyor. Yani sizin sisteminizdeki operasyon havuzunuzdaki işlemler
+
+311
+01:17:53,471 --> 01:17:57,792
+average postunuzu, amortize postunuzu çok özür dilerim etkiliyor.
+
+312
+01:17:58,899 --> 01:18:06,399
+Şimdi, bir Binary Counter örneği üzerinden tekrar bir işle yapalım. Bu analizi yapalım.
+
+313
+01:18:12,404 --> 01:18:14,084
+Biraz daha kafamızda otursun.
+
+314
+01:18:23,188 --> 01:18:29,427
+Buradan çıkıyorum yazcısına da arkadaşlar. Şuraya çünkü bir şey hazırlamıştım onun üzerine anlatacağım.
+
+315
+01:18:35,315 --> 01:18:40,315
+Şimdi yine Agregate Analizi yapacağız ama bu kere bir Binary Counter'ı mısı bir bozdur?
+
+316
+01:18:42,315 --> 01:18:49,815
+Bunun üzerinden analizi yapalım. İkinci örneğimiz Binary Counter Arttırma.
+
+317
+01:18:59,028 --> 01:19:03,808
+Şimdi binary counter hayal edelim. Ne demek bu?
+
+318
+01:19:04,307 --> 01:19:26,488
+Aslında her bir digit tutan bir eleman var. Örneğin 8 bitlik bir counter'ınız varsa 8 elemanlı bir diziniz var. Ve bu dizide de işte Most Significant Bit A7'de list A0'da olmak üzere ya 0 ya 1 değerleri alıyor. Her increment'tan sonra ilgili bitleri güncelliyorsunuz. Böyle bir counter'ınız var.
+
+319
+01:19:32,307 --> 01:19:34,488
+Amortize konusunu hesaplayalım.
+
+320
+01:19:37,868 --> 01:19:55,468
+Şimdi bununla alakalı bu arttırma işlemini aslında, increment işlemini bir küçük Pisa do kodu yazarsak çalışma mantığını daha iyi anlayabiliriz.
+
+321
+01:20:00,000 --> 01:20:04,440
+Counturumun sıfır olduğunu, sıfırla başladığını düşünüyorum.
+
+322
+01:20:05,979 --> 01:20:06,880
+Arttıracağım.
+
+323
+01:20:19,604 --> 01:20:36,244
+Arttırma yaparken, şimdi şuradasınız, bunu arttırdınız. Bir sonrakinde arttırma yaparken ne yapacaksınız? Burayı arttırdınız, 3'ü 1'e arttırdınız, 0'a döndü. Buraya 1 ekleyeceksiniz. Bir sonrakinde arttırma yaparken burası 0 ise 1 ekliyorsunuz.
+
+324
+01:20:36,560 --> 01:20:53,060
+Ama eğer burası 1 ise mesela dördüncü satırdan sonra arttırma yapıyorsam, burada bir carry bit var değil mi? Bunu sıfıra döndürüyorsunuz, bunu sıfıra döndürüyorsunuz. Yani eğer şurada yan yana 1'ler varsa o 1'leri bitirene kadar arttırmada onları sıfıra döndürmeniz, sondaki biti de 1'e döndürmeniz gerekiyor. İşlem böyle çalışıyor.
+
+325
+01:20:54,440 --> 01:20:56,840
+Dolayısıyla psodokodumuz aslında şöyle.
+
+326
+01:20:59,440 --> 01:21:00,060
+Aİ'yi.
+
+327
+01:21:02,228 --> 01:21:07,087
+Biriyle karşılaştığın sürece ve İ'yi A'nın borcunu açmadığı sürece sıfıra döndür.
+
+328
+01:21:12,243 --> 01:21:17,003
+Bu bittiğinde de eğer hala
+
+329
+01:21:20,659 --> 01:21:28,940
+Lank'ta aşmadıysan artık bu carry biti de bir olarak hoş. Buradaki aslında Pissodokod bu.
+
+330
+01:21:32,319 --> 01:21:44,360
+Yani biri yerleştirecek bir arttırmak için biri yerleştirecek şekilde pıt pıt pıt geziyorsunuz. Sonraki dijita geçiyorsunuz.
+
+331
+01:21:45,043 --> 01:21:53,863
+Bulduğunuz vakit tüm geçtiğiniz yerleri sıfır çevirip yerleştiriyorsunuz. Artım böyle oluyor. Şimdi burada bu incrematin kostu...
+
+332
+01:21:54,420 --> 01:22:22,420
+İçin sürekli bir flip yapmanız lazım. 0'ı 1'e, 1'e 0'a çeviriyorsunuz. Bakın şurada costlar, total costlar işlem boyunca kümletif bir şekilde hesaplanarak yanına yazılmış. 0 iken 1 arttırdınız. Sadece burada bir flip var. Aslında flip sayınız costunuzu belirliyor sizin. Cost 1. Sonra bunu çevirdiniz. Burada bir costunuz var. 2 oldu. Bunu çevirdiniz. 3 oldu. Buradasınız. Bunu çevirdiniz. 4 oldu. Bunun için bir şey yapmadınız. Bunun için de bir şey yapmadınız. 4 oldu.
+
+333
+01:22:22,420 --> 01:22:44,059
+Burada kaldı. Buradasınız, bunu çevirdiniz beş oldu, bunu çevirdiniz alt oldu, bunu çevirdiniz yedi oldu. Bu şekilde gidiyor. Doğru mu? Yani benim flip sayımı aslında total postu veriyor. O zaman ben buradaki akışta postumu bulabilmek için kaç tane flip yaptığımı formalize etmek zorundayım. Ki bana karmaşıklığa dair bir bilgi verebilsin.
+
+334
+01:22:46,139 --> 01:22:48,059
+Şimdi şöyle bir şey yapabilirim.
+
+335
+01:22:50,899 --> 01:22:58,507
+Genel olarak şöyle bir tabloya bakalım. Kaç tane filip var? Onu bir anlamaya çalışalım. Örneğin A1 için...
+
+336
+01:23:02,323 --> 01:23:03,363
+Bir şurası.
+
+337
+01:23:07,412 --> 01:23:34,152
+A1 kaç kere flip etmiş? Ona bir bakalım. Şurada flip etmiş bir. Burada flip etmiş iki. Burada flip etmiş üç. Burada dört. Burada beş. Burada altı. Burada yedi. Burada sekiz. Sekiz kere flip etmiş. Aslında bunu şöyle yazabilirim. Sekiz kere. Peki A2 kaç kere flip etmiş? A2 şurada.
+
+338
+01:23:34,644 --> 01:23:40,364
+Bir burada filip etmiş, iki burada, üç burada, dört burada. Dört kere filip etmiş.
+
+339
+01:23:43,604 --> 01:23:57,564
+Altı yuvarlıyorum, dört edelim. Aynı şekilde eğer A3'e bakarsanız A3'ün de iki kere filip ettiğini göreceksiniz. Şurada. Bir burada filip ediyor, bir burada filip ediyor iki kere.
+
+340
+01:23:58,644 --> 01:23:59,944
+Şimdi böyle bir çıkarım yaptım.
+
+341
+01:24:02,739 --> 01:24:05,899
+Bunun üzerinden o zaman şöyle bir formülizasyona gidebilirim.
+
+342
+01:24:21,779 --> 01:24:24,460
+En bölü 2 üzeri 7.
+
+343
+01:24:27,460 --> 01:24:29,960
+Doğal mı? Toplam filip sayısı buna denk geliyor.
+
+344
+01:24:30,100 --> 01:24:35,360
+Tabi burada k ne? Daha sonrasıza giden durumu için bunu hesaplamanız gerekiyor sizin.
+
+345
+01:24:35,779 --> 01:24:37,779
+Dolayısıyla aslında şöyle bir şey yazabiliyorsunuz.
+
+346
+01:24:38,500 --> 01:24:41,520
+Eni şuraya çıkartabilirsiniz. İden bağımsız olduğu için.
+
+347
+01:24:42,899 --> 01:24:46,360
+İ giderken sıfırdan sonrasıza kadar bir bölü.
+
+348
+01:24:46,360 --> 01:24:48,279
+İki yüzde. Ay çok ödürdüm.
+
+349
+01:24:48,916 --> 01:24:57,676
+2 üzeri 20. Şurayı saymıyorum. Bu da aslında aşağı yukarı iki yerine denk geliyor. Yani aslında küçük dil iki yerine oluyor.
+
+350
+01:25:14,195 --> 01:25:21,636
+Total kostum o zaman iki yandan küçükse, bigo anlatasyonda ben total kostum için ne söyleyebilirim? O en diyebilirim değil mi?
+
+351
+01:25:22,716 --> 01:25:32,536
+Tamam. Ortalama kostum da o bire denk gelecek işlem başına ortalama kostum. Dolayısıyla amortize analizde bir binary counter'ı bu şekilde hesaplayabiliyorum.
+
+352
+01:25:35,536 --> 01:25:39,456
+Şimdi bununla ilgili bir örnek daha mesela verecek olursam size.
+
+353
+01:25:41,108 --> 01:26:03,007
+Binary Counter'da sadece Increment hesabı yaptım. Daha doğrusu sadece Increment operasyonunu ben seçtim ve dahil ettim. Ve o zaman Total Cost'um ON oldu. Increment ile beraber benim bir de Decrement'ım olsaydı o zaman ne olurdu Amortize Cost'um? Sadece Increment değil bir de Decrement'ım olsaydı.
+
+354
+01:26:07,604 --> 01:26:13,784
+O zaman kostum ne olurdu? Decrement'tan kastı da her seferinde bir azaltacak.
+
+355
+01:26:14,804 --> 01:26:19,344
+Şimdi benim setimde sadece decrement olduğunda, zaten başka seçenem yoktu.
+
+356
+01:26:19,404 --> 01:26:24,844
+Decrement olduğunda ben nasıl bir set oluşturabilirim en kötü durum senaryosunu bana veren?
+
+357
+01:26:24,844 --> 01:26:32,024
+En fazla flip yapacak olan case ile bulunup bir arttırıp bir azaltalım, bir arttırıp bir azaltırım.
+
+358
+01:26:32,324 --> 01:26:34,184
+İşte en kötü durum senaryom odur, değil mi?
+
+359
+01:26:34,771 --> 01:26:58,192
+En fazla klip yapacak olan case nasıl bir case'dir? Mesela şöyle bir case olabilir. Sayı şöyledir. Böyle gider. K eksi bir tane sıfır vardı. Şurası da dahil. Siz buna bir azaltım yaparsınız. Ne olur azaltım yapınca? Burası sıfır olur. Hop, şunların hepsi bire döner.
+
+360
+01:26:58,623 --> 01:27:20,744
+Kaç tane flipiniz oldu? Toplam K tane flip oldu. Tüm sıfırları 1'e çevirdiniz. K-1 bir de bunu çevirdiniz. Sonra bir daha increment yaparsınız. Eski haline geri döner. K tane daha. Her bir operasyonda kaç tane flip yaptınız? K tane. En kötü durum senaryonuz bunların arka arkaya increment, increment, increment. O zaman sizden total costunuz neye dönüşüyor?
+
+361
+01:27:21,395 --> 01:27:28,456
+En operasyonumuz var. Her birinde K tane var. En K'ya dönüşüyor. Mantık böyle. Anlaşıldı mı arkadaşlar?
+
+362
+01:27:31,995 --> 01:27:39,636
+Chat tarafında da sorusu olan yok anladım kadarıyla. Chat tarafı ne yani? Online taraf diyecekti. Özür diliyorum.
+
+363
+01:27:48,595 --> 01:27:49,795
+Yönteme geçelim.
+
+364
+01:28:17,043 --> 01:28:19,824
+Eccounting Metod. İkinci yöntem Eccounting Metod.
+
+365
+01:28:22,184 --> 01:28:23,724
+Böyle biraz değişik.
+
+366
+01:28:25,404 --> 01:28:26,463
+Eccounting Metod.
+
+367
+01:28:33,716 --> 01:28:54,115
+Aslında çalışma mantığı şu, maliyet atıyorsunuz. Farklı işlere farklı maliyetler atıyorsunuz. Genel olarak şunu yapmaya çalışıyorsunuz. Çok pahalı olmayan işlere ekstra maliyetler atayım ve diğer işlerden o maliyetleri düşüreyim. Bir yerde böyle paran biriksim gibi aslında bir mantığı var.
+
+368
+01:29:01,587 --> 01:29:06,268
+Şimdi yine aynı örnekler üzerinden gidelim. Ne dediğimi o zaman daha iyi anlatabilirim.
+
+369
+01:29:07,587 --> 01:29:15,188
+Şimdi accounting metodda bir takım tanımlamalar var aslında yapmamız gereken. Bunlardan bir tanesi.
+
+370
+01:29:18,420 --> 01:29:29,520
+Amortize Post. Bu benim aslında bir işleme biçtiğim maliyet. Her bir işlem için bir maliyet belirliyorum. Buna Amortize Post deniyor.
+
+371
+01:29:43,091 --> 01:29:52,271
+Şimdi iki tane kost ifadem var. Bu, birinci işlemin amortize kostü.
+
+372
+01:29:57,332 --> 01:29:58,391
+İkinci işlemi.
+
+373
+01:30:02,899 --> 01:30:06,659
+Bunu ben belirleyeceğim. Bir de gerçek post var.
+
+374
+01:30:12,787 --> 01:30:19,547
+Birinci işlemin gerçek maliyet. Bu da nasıl bir Türkçe İngilizce karışık bir şey oldu? Neyse, şura bakmayın.
+
+375
+01:30:26,323 --> 01:30:29,243
+Şimdi şöyle bir eşitlik sağlanabilirse eğer.
+
+376
+01:30:41,555 --> 01:30:47,715
+Yani amortiz kot için belirlediğim değer tüm operasyonlarda toplama.
+
+377
+01:30:51,572 --> 01:30:53,572
+Gerçek değerden fazla olursa...
+
+378
+01:31:00,180 --> 01:31:04,680
+O zaman ben aslında upper bound'u tanımlamış oluyorum değil mi? Upper bound'u bulabilmiş oluyorum.
+
+379
+01:31:10,739 --> 01:31:19,000
+Şuna ihtiyacım var. Bu şekilde olacak, gerçek konu üzerine çıkacak şekilde ben işlem için, iyinci işlem için amortiz konu belirlemek zorundayım.
+
+380
+01:31:21,000 --> 01:31:24,119
+Şu ifadenin non-negatif olması gerekiyor.
+
+381
+01:31:24,659 --> 01:31:24,920
+Total.
+
+382
+01:31:27,479 --> 01:31:32,000
+Kredit ifadesinin, yani aslında şuradakinin.
+
+383
+01:31:35,252 --> 01:31:37,252
+Terimlerin yer değiştirilmiş hali.
+
+384
+01:31:44,659 --> 01:32:00,739
+Must be non-negative. Buna dikkat edeceğim. Bu benim dikkat etmem gereken bir işlem. Dolayısıyla kodlarımı tanımlarken şuna uygunluğunu kontrol etmek zorundayım.
+
+385
+01:32:00,739 --> 01:32:04,960
+Şimdi mesela stack için nasıl yapıyoruz, nasıl uyguluyoruz bakalım.
+
+386
+01:32:16,692 --> 01:32:18,672
+Gerçek maliyetlerini bir yazalım.
+
+387
+01:32:21,592 --> 01:32:22,252
+İşlemlerin.
+
+388
+01:32:26,068 --> 01:32:29,108
+Kuş işlemi var. Bunun gerçek maliyeti bir.
+
+389
+01:32:31,007 --> 01:32:33,888
+Pop işlemi var. Bunun da gerçek maliyeti bir.
+
+390
+01:32:34,888 --> 01:32:37,347
+Bir de Matipop var.
+
+391
+01:32:43,475 --> 01:33:00,395
+Bunun gerçek maliyeti hangi argümanla çağırdığınıza göre değişiyor. Stag size'nınız var ve kaç tane eleman çekmek istediğiniz var. Bunlardan hangisi küçükse, Malte Pop'un maliyeti ona denk gelecek. Olmayan elemanı çekemediğiniz için. Dolayısıyla bunun maliyetini de böyle yazabilirim.
+
+392
+01:33:00,395 --> 01:33:06,935
+Şimdi şöyle bir amortized post.
+
+393
+01:33:07,572 --> 01:33:33,412
+Değerleri atayalım bakalım. Diyelim ki mesela, puşa 2 versem, popa 0 versem, multi popa da 0 versem, yani puşa olması gerektiğinden fazla bir değer atarsam ve diğerlerinin olması gerektiğinden az değer atarsam benim bu sistemin dengede kalır mı?
+
+394
+01:33:34,292 --> 01:33:39,292
+Şuradaki eşitliği hala sağlıyor, olur mu? Buna bakacağım.
+
+395
+01:33:40,292 --> 01:33:50,292
+Bunu aslında şöyle düşünmeniz lazım. Hani böyle restoranlarda tabakları koymak için böyle şeyler vardır ya, steak gibi yine aynı tabakları tek tek koyarlar.
+
+396
+01:33:50,452 --> 01:34:16,852
+Koydukça her tabak altı en üstten de çekerler. Şimdi siz kuş için tabak koyma işleminin kostunu iki olarak belirlediniz. Tabakların içerisinde ikişer tane lira koyun ve her çektiğinizde de bir lirayı alacağınızı hayal edin mesela. Şimdi birinci tabağa koydunuz iki lira içinde. İkinci tabağa koydunuz. Çektiğiniz zaman ne yapacak? Bir tane içindeki bir lirayla çekeceksiniz. Diğer bir lira tabağın içinde kalıyor aslında değil mi? Yani onu harcayamıyorsunuz.
+
+397
+01:34:17,395 --> 01:34:43,735
+Dolayısıyla, burada siz her pop işleme için bir öle deme yapmış oluyorsunuz aslında. Öle deme yapmış oluyorsunuz. Normalde iki lira bıraktınız. Aslında push'un maliyeti bir liraydı. İki lira bıraktınız. Push ederken o iki liradan bir tanesini gerçek maliyet için aldınız. Kalan bir lira pop'un gerçek maliyet için kullanıldı. Şimdi daha düzgün anlattım. Az önce yanlış anlatmıştım. İki lira post biçtim.
+
+398
+01:34:44,340 --> 01:35:07,300
+Tabağa koydum. Gerçek maliyeti koymamın birdi. O iki liradan birini o maliyet için harcadım koyarken. Bir lira tabağın içinde kaldı. Pop yaparken gerçek maliyeti birdi. Ben ekstra para ödemek zorunda değilim. Amortize kostum sıfır. Neden? Çünkü tabağın içinde birikmiş bir lira var. Her tabak kuş edildiğinde içinde birikmiş bir lirayla duruyor. Dolayısıyla bunu pop ederken onu çekiyorsunuz.
+
+399
+01:35:07,572 --> 01:35:21,332
+Buradaki amaç ne? Birbirini amortize edecek işlemleri buldunuz. Birbirini amortize edebilmesi için uygun postları belirlediniz. Sisteminize uygun bir şekilde bu işlemleri ve postlarını belirleyebildiniz.
+
+400
+01:35:21,971 --> 01:35:43,452
+Hiçbir zaman stek negatife düşmediği için, stekte negatif tabak olamayacağı için zaten kostunuz hep maliyetiniz, hani belirleri sıfırın altına düşmüyor. Dolayısıyla şuradaki kısma korumuş oluyorsunuz. Çünkü pop edemiyorsunuz ya puş etmeden önce. Her puşla beraberinde bir ekstra kredi getirdiği için sisteminiz hiç negatife düşmüş olmuyor.
+
+401
+01:36:08,851 --> 01:36:21,552
+Anlaşıldı mı arkadaşlar? Puşa çok maliyet yükledik. POP için ekstra hiç ödeme diye yapmadık. Böylece maliyet hesabını puşun parmaşıklığını hesaplayarak çözebilecek hale getirdik.
+
+402
+01:36:29,140 --> 01:36:38,640
+Hotel Cours'umuz O'en oldu. Kaç tane işlem yapıyorsanız, en tane işlem yapıyorsanız O'ya da işi çözmüştünüz. Doğru mu?
+
+403
+01:36:40,739 --> 01:36:46,140
+Aslında birinci analizin bana verdiği cevapla aynı cevabı verdi. Sadece bunu farklı bir yoldan bulmuş oldum.
+
+404
+01:36:50,539 --> 01:36:52,680
+Bunun alakalı bir soru yoksa, inclement.
+
+405
+01:36:54,547 --> 01:36:57,087
+Binary Counter örneğinden bir de anlatacağım size.
+
+406
+01:37:01,363 --> 01:37:07,463
+Var mı soru? Geçiyorum o zaman. İkinci örneğime.
+
+407
+01:37:25,300 --> 01:37:33,840
+Biz neyi gördük Binary Counter'da birinci örnekte? Kompleksliğini olarak anlattık. Flip eden bir sayısıyla ilişkiydi değil mi?
+
+408
+01:37:38,228 --> 01:37:46,847
+Şimdi ben şöyle bir kendimce Amortize Post belirleyeceğim ama önce Action Post'u bir yazalım.
+
+409
+01:37:55,891 --> 01:38:00,811
+Niye Malty Pop'un amortize kodu 0 oldu? Minimum SK değil miydi?
+
+410
+01:38:01,532 --> 01:38:10,811
+Malty Pop'un amortize kodu 0 oldu çünkü Malty Pop içerisinde pop işlemini, Malty Cast içeren bir işlem ya,
+
+411
+01:38:10,811 --> 01:38:14,572
+sumuşta 3 tane pop içeriyor, 5 tane pop içeriyor her neyse.
+
+412
+01:38:14,572 --> 01:38:20,012
+Yani çekteki minimum, şöyle mini SK dediğim şey şu.
+
+413
+01:38:21,235 --> 01:38:46,355
+Minimum eska dediğim şey, actual kostu onun. Amortel kostumu nasıl pop'un sıfır yaptıysak, multi pop'un da sıfır yaptım. Nedeni de şu, kuşa iki amortel kost verdiğim için, bir olması gerekirken iki dediğim için, buradan gelen maliyeti, ekstra maliyeti ben pop ve multi pop'u karşılamak için kullanıyorum. Aslında multi pop, yapısı gereği,
+
+414
+01:38:46,868 --> 01:39:00,868
+Birden fazla pop işlemi demek. Tabak örneğinde olduğu gibi... Anladım. Evet, fazla konuşmama gerek kalmadan... Okey. Anlaşıldıysa o zaman devam ediyorum.
+
+415
+01:39:02,868 --> 01:39:12,812
+Şimdi Action Cost'u belirleyecektim. Bu yazılar görünüyor mu kızlar bu şeyden ya? Çok silik gibi ama görebiliyor musunuz? Okunuyor mu?
+
+416
+01:39:16,435 --> 01:39:18,435
+Tamam. Şimdi bu...
+
+417
+01:39:25,171 --> 01:39:31,171
+Sıkıcı bir konu değil mi? Sıkıcı mı? Sıkıcı yani ne yapayım? Öyle oluyor. Yapacak bir şey yok.
+
+418
+01:39:33,171 --> 01:39:39,171
+Şimdi, flip sayısının kompleksite ile alakalı olduğunu görmüştük.
+
+419
+01:39:40,171 --> 01:39:45,171
+Bir biti bir yapmanın action costuna bir diyelim.
+
+420
+01:39:52,148 --> 01:40:04,148
+Bir de sıfır yapmak. İki tane işlemin var yapılabilecek zaten. Bunun actual postu da bir. Normalde bir yapıyorsunuz. Sıfır yapıyorsunuz. Birer işlem yapıyorsunuz. Postları bir bunların. Amortize postlarını nasıl açıklayabilirim?
+
+421
+01:40:12,659 --> 01:40:26,679
+1 olmasına 2 vereyim. Fazla bir post verdim buna. Acaba bunun maliyetini 0 olmasına hiç post vermeyerek buradan çıkarabilir miyim?
+
+422
+01:40:36,404 --> 01:40:46,404
+Şimdi siz burada bir yaptığınız vakit, buna kosta olarak iki verdiğinizden aslında aynı tabak örneğindeki gibi, tahtığınızdaki her bir için...
+
+423
+01:40:46,931 --> 01:41:04,391
+Ona iki maliyet verdiniz. Gerçek maliyeti birde. Dolayısıyla sizin kantorunuzdaki her bir, içinden o gerçek maliyeti çıkarttığınızda ekstra bir kredi üstünde tutuyor. Table'nızdaki her bir için ekstra bir kredi var. İşte o ekstra bir krediyi de o biri sıfıra vermek için kullanıyorsun.
+
+424
+01:41:04,916 --> 01:41:22,616
+Dolayısıyla mortal sposta bir bitse sıfıra çevirmek için ekstra maliye tüklemeniz gerekmiyor. Aslında basit olarak şu ikisini topladığınızda iki ediyor yani temel olarak yaptığı ama mantıklı böyle bir şey. Tamam mı? Var mı soru? Bu şekilde verdim. Şimdi hesaplamamı yapacağım.
+
+425
+01:41:28,692 --> 01:41:33,811
+Incremental, Increment işleminin amortize kostunu hesaplayalım bakalım.
+
+426
+01:41:41,587 --> 01:41:43,947
+Bununla ilgili şurada pisodokodum vardı.
+
+427
+01:41:47,347 --> 01:41:47,767
+Hayır, hayır.
+
+428
+01:41:49,547 --> 01:41:50,107
+Nerede?
+
+429
+01:41:53,247 --> 01:41:53,547
+Şu.
+
+430
+01:41:57,587 --> 01:41:59,648
+3, 4, 5, 6. Şu birinci satır.
+
+431
+01:41:59,787 --> 01:42:00,867
+Birinci satır. Üçüncü satır.
+
+432
+01:42:01,347 --> 01:42:02,427
+5, 6.
+
+433
+01:42:03,307 --> 01:42:04,327
+Şimdi burada
+
+434
+01:42:04,327 --> 01:42:08,787
+bir kez bir bire dönüştürme işlemi var.
+
+435
+01:42:10,627 --> 01:42:11,967
+Bulanan ortal spotu 2.
+
+436
+01:42:15,956 --> 01:42:30,376
+Birilerin sayısı hiçbir zaman negatife düşmüyor. Doğru değil mi? O yüzden sadece birilerin sayısı hiç negatif olmuyor. Bu yüzden kredi miktarında hep non-negatif kalıyor. Şurada hani kontrol etmem gereken ikinci özelliyim.
+
+437
+01:42:30,376 --> 01:42:38,355
+Ve nerede onu? Diğer sayfaya mı koymuşum onu? Şu. Şunu sağlıyor muyum? Sağlıyorum. Bunu da sağlıyorum.
+
+438
+01:42:47,699 --> 01:42:54,840
+Şimdi peki benim en adet increment işleminin Total Amortize Cost'u bulunduğunda ne oluyor? En tane increment işlemi yaparsam.
+
+439
+01:42:57,659 --> 01:42:58,219
+Şurada.
+
+440
+01:43:01,971 --> 01:43:20,511
+O en oluyor öyle değil mi? Çünkü her işlem içerisinde birler sıfırlara çevrilmeler için, az önce anlattığım mekanizmadan dolayı sıfıra döndürmek için aslında verdiğim iki maliyetin bir tanesini kullandığımda bu vesile her inklimat işleminin amortize kostu bir oluyor.
+
+441
+01:43:21,431 --> 01:43:26,631
+Otelde en tane inklimat işlemin varsa amortize kostu o en oluyor.
+
+442
+01:43:28,756 --> 01:43:33,756
+Bir tane işlem için böleceksiniz, tek bir işlem ikini buluyorsanız n'e böleceksiniz o zaman o biri olacak.
+
+443
+01:43:36,256 --> 01:43:43,756
+Yani sistemdeki şeyi bulmanız lazım. Neyin üzerinden bu kompleksite hesabını yapacağım?
+
+444
+01:43:43,756 --> 01:43:48,756
+Birinin üzerinden, filipleri üzerinden yapmanız gerektiğini mesela anlamanız gerekiyor bu problemi çözebilmek için.
+
+445
+01:43:49,555 --> 01:43:58,595
+Stag'deyken, stag'deki eleman sayısı üzerinden bir iş yapmanın gereğini anlamanız gerekir. Aslında orası kilit nokta. O neyin üzerinden bu işi yapmak zorundayım. Onu belirlemek.
+
+446
+01:44:10,131 --> 01:44:29,111
+Soncu metoduma geçeceğim. Potential metod. Bunun adı. Bunu da kulağınızda olsun diye anlatıyorum. Biraz daha matematiksel bir görüntüsü var bunun. Soru var mı şimdiye kadar olan işlerle ilgili? Yok.
+
+447
+01:44:45,939 --> 01:45:05,659
+35 dakika kadar oldu. Ara vermek ister misiniz son bir ara? 10 dakika. İster misiniz? İster gibisin. Şu an misafirlerimle dersi var arkadaşlar. İstiyor musunuz ara? Olur hocam. Tamam. O zaman 10 dakika ara verelim. Son aramız olsun. 12-10'da görüşelim. Tamam.
+
+448
+01:59:23,091 --> 01:59:36,131
+Evet. Arkadaşlar şimdi nerede kalmıştım? Potential Method. Amortize Code ile alakalı son yöntemimiz Potential Method. Onu anlatacağım size.
+
+449
+01:59:39,331 --> 01:59:46,311
+Potential Method aslında biraz fizikten almış ilhamı. Potansiyel enerji biriktirmek gibi düşünerek.
+
+450
+01:59:48,948 --> 02:00:01,468
+Amortize Analizi yapıyor. Önceden ödeme yapılmış ise potansiyel enerjisini yüksek tutuyor ve önceden ödeme yapılmış olan objeler, işlemler yapılmamış olanları karşılıyor yine aynı benzer mantıkla.
+
+451
+02:00:02,468 --> 02:00:05,908
+Şimdi bunun için şöyle bir notasyon var.
+
+452
+02:00:09,524 --> 02:00:20,644
+N tane operasyon perform edeceksiniz. Bir data structure üzerinde bu operasyonları perform ediyorsunuz. D0'da bu data structure'ın initial hali, birinci hali yani.
+
+453
+02:00:21,684 --> 02:00:25,264
+İ birden başlıyor. İki, pıt pıt pıt N'e kadar gidecek.
+
+454
+02:00:25,264 --> 02:00:36,203
+Şimdi bu operasyon seti için şu terimlerim var. C'yi tahmin edebileceğiniz gibi actual cost.
+
+455
+02:00:37,268 --> 02:00:39,028
+Hocam, ekran paylaşmadınız ama.
+
+456
+02:00:40,427 --> 02:00:44,768
+Tamam. Yani söylüyorum, paylaşıyorum.
+
+457
+02:00:47,587 --> 02:00:48,747
+Çok bir şey yazmamıştım.
+
+458
+02:00:49,547 --> 02:00:52,028
+Tamam mı? Geldi mi?
+
+459
+02:00:53,547 --> 02:00:54,228
+Geldi hocam.
+
+460
+02:00:54,228 --> 02:01:02,068
+Okey. Arkadaşlar, sohbetlikte ne yazıyor? Ekran paylaşmadınız, okey.
+
+461
+02:01:06,131 --> 02:01:07,291
+Action Costum.
+
+462
+02:01:09,771 --> 02:01:11,851
+Ama şu yeri bir aldı.
+
+463
+02:01:21,747 --> 02:01:24,387
+Şu çok iyi yazılmamış.
+
+464
+02:01:27,907 --> 02:01:32,547
+İyince operasyonun gerçek maliyeti. Buna CI dedim.
+
+465
+02:01:33,927 --> 02:01:42,827
+DI diye bir değişken kullanacağım. Bu da iyince operasyon perform edildikten sonra Data Structure'ın aldığı yeni hal aslında.
+
+466
+02:01:58,195 --> 02:02:23,496
+İnce Operasyon'tan sonraki Structure'ın hali. Şöyle bir Potential Function belirliyorum. Potential Function aslında potansiyel enerjideki değişimi tutmak için kullanacağım bunu. Bir real bir sayı üretecek bana. Bu Structure için örneğin.
+
+467
+02:02:24,051 --> 02:02:46,872
+DI hali için bu Potential Function'ı çalıştırırsam, DI mevcutken önceden yapılmış ödemeleri bana gösterecek. Potansiyelini gösterecek. Şimdi örneklendirdiğim zaman anlayacaksınız biraz daha iyi. Potential Function. Bir de tabii ki aslında hesaplamak istediğim şey. Amortize Post.
+
+468
+02:02:56,435 --> 02:02:58,315
+Şimdi şöyle bir eşitliğim var arkadaşlar.
+
+469
+02:03:17,684 --> 02:03:22,064
+Şimdi şu benim actual kostum biliyorsunuz. Aslında amortize kostum şuna eşittir.
+
+470
+02:03:22,204 --> 02:03:27,923
+Actual kostum bir de iyinci operasyondan karnaklanan potansiyel değişimi.
+
+471
+02:03:29,123 --> 02:03:33,884
+Bu potansiyel enerji değişimi, yani potansiyel değişimi, post değişimi aslında.
+
+472
+02:03:34,564 --> 02:03:37,644
+Ve actual kostum birleştiği vakit bu benim amortize kostumu veriyor.
+
+473
+02:03:37,644 --> 02:03:42,644
+Şimdi ben hem tane operasyon için bu işlemi yaparsam nasıl bir...
+
+474
+02:03:44,243 --> 02:03:45,804
+Eşitlik ortaya çıkıyor.
+
+475
+02:03:51,604 --> 02:03:53,604
+İntran operasyon için.
+
+476
+02:03:59,155 --> 02:04:01,155
+Ci artı
+
+477
+02:04:01,155 --> 02:04:05,155
+BDİ
+
+478
+02:04:05,155 --> 02:04:09,615
+Eksi D, İ eksi 1
+
+479
+02:04:09,615 --> 02:04:12,896
+Şunu açarsam
+
+480
+02:04:18,068 --> 02:04:19,268
+C'yi
+
+481
+02:04:19,268 --> 02:04:25,667
+şu kısmı da ayrıca açarsam bu kendi içinde şöyle olacak biliyorsunuz.
+
+482
+02:04:28,387 --> 02:04:29,028
+D1
+
+483
+02:04:29,028 --> 02:04:32,547
+eksi
+
+484
+02:04:32,547 --> 02:04:35,347
+D0
+
+485
+02:04:35,347 --> 02:04:36,867
+artı
+
+486
+02:04:36,867 --> 02:04:41,627
+i2 olduğu zaman
+
+487
+02:04:43,828 --> 02:04:53,848
+Pide 2 eksi Pide 1 artı 3 olduğu zaman falan bu böyle gidiyor.
+
+488
+02:04:58,355 --> 02:05:25,295
+D3 Şurayı yanlış yazdım. Şöyle yapayım. Eksi Fi D2 olacak. Pıt pıt pıt. Bu nereye kadar gidecek? N'e kadar gidecek. Dn eksi. Dn eksi bir. Bu eşitlikte ne dikkatinizi çekiyor? Birbirine götüren değerler var değil mi? Şu gidiyor. Şu gidiyor. D2 gidiyor.
+
+489
+02:05:26,228 --> 02:05:32,728
+Pozitif D2 gidiyor. Bu gidiyor. Dolayısıyla aslında karşınıza şu iş çıkıyor sizin.
+
+490
+02:05:48,435 --> 02:06:11,015
+Bu eşitliğe ulaştık. Yani benim Total Amortize Kostüm aslında aradaki değişimlere bağlı değilmiş de son ve ilk değere bağlıymış. Bunu analiz etmiş oldum ben. Total Amortize Kostüm, Data Structure'ın son değeri ve ilk değeri arasındaki enerji değişimiyle normal kostümün, ekçıl kostümü toplamı oluyor.
+
+491
+02:06:11,795 --> 02:06:14,375
+Şimdi benim burada dikkat etmem gereken şey şu.
+
+492
+02:06:15,604 --> 02:06:34,104
+D'nin Potential Function sonucunun bundan büyük olması lazım. Şöyle ki, eğer ben P'yi, Potential Function'ı şöyle define edebilirsem,
+
+493
+02:06:37,779 --> 02:06:39,799
+If we can define diyelim.
+
+494
+02:06:41,799 --> 02:06:42,699
+So that's
+
+495
+02:06:52,979 --> 02:07:10,859
+O zaman aslında neyi elde etmiş oluyorum? Şuradaki toplam sembolümden dolayı benim total kostum, total omortals kostum ne olmuş oluyor? Burası pozitif olduğuna göre şu olmuş oluyor değil mi?
+
+496
+02:07:13,300 --> 02:07:32,400
+Burada bunu demiş oluyorum. Dolayısıyla yani actual kostümdan daha büyük bir şey elde etmiş oluyor ve bu da bir upper bound'um oluyor. Dolayısıyla eğer ben buradaki eşitliği sağlayabilecek fonksiyon tanımlayabilirsem, bunu yapabilirsem o zaman upper bound'da tanınmamış oluyorum amortize kostümü.
+
+497
+02:07:41,332 --> 02:08:03,912
+Ne onladı? Data Structions ilk halinin Potential Function'ı sıfırmış gibi. Başlanır, sıfır olarak başlanır. Ve tüm değerleri, ara değerleri içinde bunun negatife düşmediğini kabul etmek zorundasınız. Daha doğrusu bunu sağlamak zorundasınız. Bunu sağlayacak şekilde işlemlerinizi uygulayacağız.
+
+498
+02:08:05,912 --> 02:08:06,632
+For all e.
+
+499
+02:08:07,220 --> 02:08:14,000
+Şimdi örnek üzerinden anlatırsam muhtemelen bu teorik kısmından sonra örnek üzerinden anlatırsam daha çok oturacaktır kafamızda.
+
+500
+02:08:16,140 --> 02:08:20,560
+Örneğin Stek için. Bunu nasıl uygulayacağız yazdıklarıma bakalım.
+
+501
+02:08:26,739 --> 02:08:36,980
+Şimdi Stake için bu Potential Function'ımı Stake'teki eleman sayısı olarak düşünelim.
+
+502
+02:08:36,980 --> 02:08:39,980
+Number of Objects
+
+503
+02:08:43,444 --> 02:08:50,284
+İndo Stek. Böyle olsun. Neyle başlıyoruz? Boş stekle başlıyoruz.
+
+504
+02:08:54,068 --> 02:08:55,108
+Dolayısıyla sıfır.
+
+505
+02:08:56,788 --> 02:08:59,088
+Teknik elemanlar hiçbir zaman negatife düşemiyor.
+
+506
+02:08:59,588 --> 02:09:04,148
+Dolayısıyla benim DI değerimin negatife düşme ihtimali var mı? Yok.
+
+507
+02:09:04,828 --> 02:09:06,347
+Dolayısıyla şunu sağlıyor muyum?
+
+508
+02:09:09,548 --> 02:09:12,688
+Sağlıyorum. İlgiyle eşitliği göstermiş oldu.
+
+509
+02:09:13,728 --> 02:09:15,807
+Dolayısıyla aslında şunu da sağlıyorum.
+
+510
+02:09:19,315 --> 02:09:28,195
+Bunun D'nin hiçbir zaman sıfırdan küçük olma ihtimali de yok. Dolayısıyla şuradaki eşitliği de sağlamış oldum.
+
+511
+02:09:29,715 --> 02:09:40,335
+Şimdi şurada iki eşitliğe geldi sıra. Şu eşitliğe geldi. Şimdi bunu hesaplayacağız. Yukarıdakini hesaplayacağız.
+
+512
+02:09:46,319 --> 02:09:51,119
+Stateler arasındaki enerji değişimiyle, DI eksi.
+
+513
+02:09:54,739 --> 02:10:11,159
+Di-1. Buna bakıyorum. Şimdi benim siteyim var. Siteyimde iyince operasyon sonrasında S tane, S tane obje olduğunu farz ederim. İince operasyon sonrası. Önce push için deniyorum bu arada. Bu push operasyonu. Pusha bakıyorum.
+
+514
+02:10:20,692 --> 02:10:46,112
+Şurada ne olacak? İyince operasyon sonrası S artı bir objem oldu. Önceden kaç objem vardı? S objem oldu. Doğru mu? Dolayısıyla bunların farkı ne oluyor? S artı bir eksi S'ten bir oluyor. Benim occasion'ım neydi? Amortize Postum. C i artı d i eksi.
+
+515
+02:10:48,948 --> 02:11:15,167
+D-1'de. Şu ne? Action Costume neydi push için? 1'de. Buradaki state değişimlerindeki fark neydi? Bu da 1'di. Bu da bana neyi verdi? 2'yi verdi. Bu ne demek? Benim push'un da amortis costum 2'ymiş. Tamam mı? Aslında push'ta amortis costumun 2 olması demek. Aslında bunun asentotik notation'da o bile denk gelmesi demek değil mi? Tek bir sayı çünkü. Push için çözdüm.
+
+516
+02:11:16,083 --> 02:11:28,123
+Multipop vardı biliyorsunuz sette. Multipop için ne yapacağım ona bakalım. Multipop'ta şöyle bir şey söylemiştik hatırlarsanız.
+
+517
+02:11:32,851 --> 02:11:42,752
+Burada k verilen argüman, s'de stekteki obje sayısı olmak üzere hangisi azsa onu çekiyorduk. Maltepop böyle çalışıyordu.
+
+518
+02:11:45,011 --> 02:11:54,131
+Dolayısıyla aslında hangisinin küçük olduğunu k isimine yani k prime atarsam k prime benim stektan çekilen obje sayım.
+
+519
+02:11:54,131 --> 02:12:00,231
+Şu fark nasıl oluşacak o zaman? Şu formüle bakıyorum ya, di ile.
+
+520
+02:12:04,979 --> 02:12:19,920
+D-1. Şimdi D-1'de D-1'den k kadar fazla eleman var. Çünkü çektiğimiz D-1'de. Dolayısıyla bunların farkı ne oluyor aslında? Negatif k prime varıyor. Arasındaki fark bu.
+
+521
+02:12:19,920 --> 02:12:29,920
+Şimdi şuradaki eşitliği buraya uygulayalım. Eşitliği daha doğrusu. Ne olacak? Actual cost artı.
+
+522
+02:12:33,300 --> 02:12:55,880
+Eksi, D-1 olacak. Şu actual costu K'primedi zaten. Şurada onu yazmıştık. İkisi arasındaki potansiyel fark, onu da eksi K diye bulmuştuk. Dolayısıyla bu bana ne verdi?
+
+523
+02:12:56,368 --> 02:13:20,167
+O zaman Malte Pop'un amortize postu 0 oldu. Bu da niye denk geliyor yine? O bile denk geliyor. Doğru mu? Bunu da buldum. Şimdi bir tek hangi işlemim kaldı? Pop kaldı galiba. Pop'ta aslında puşun aynısı. Nedir benim fonksiyonlarımın arasında potansiyel fark?
+
+524
+02:13:25,587 --> 02:13:33,587
+pop yapıldığı vakit bir önceki state ile bir sonraki state arasındaki fark bu sefer push'un aksine push'ta 1'de burada eksi 1 oluyor.
+
+525
+02:13:33,587 --> 02:13:41,587
+Çekiyorsunuz azalma söz konusu. Dolayısıyla stekteki eleman sayısı eksi 1 oluyor.
+
+526
+02:13:41,587 --> 02:13:46,587
+Peki şu formülü yerine koyarsam ne olacak?
+
+527
+02:13:50,323 --> 02:14:12,243
+Farkımda bir, bu da sıfır. Dolayısıyla bu da bana O1 verdi. Demek ki benim hem tuşum hem popum hem de multi popum hepsi O1'de yapılan işlemlermiş. Dolayısıyla eğer ben en elemanlık bir seriden bahsediyorsam, en elemanlık seriden, o zaman bunun Total Amortized Post'u, şöyle yazalım.
+
+528
+02:14:18,003 --> 02:14:26,043
+Most of seconds of length.
+
+529
+02:14:27,844 --> 02:14:28,024
+Ha.
+
+530
+02:14:29,024 --> 02:14:31,283
+Berta o ayını bana verdim.
+
+531
+02:14:32,203 --> 02:14:32,403
+Okey.
+
+532
+02:14:34,355 --> 02:14:57,255
+Yani çalışma şekli bu. Burada stekte önceden puşa ve popa kostlar atamıştık bir önceki yöntemde. Burada stekin tamamını düşünüyoruz. Stekin tamamı için biriktirdiği enerjiyi düşünerek işlemler arasında stekler arasındaki farkları hesaba katarak hesaplamamızı tamamladık.
+
+533
+02:14:57,684 --> 02:15:24,304
+Binary Counter var. Bunun için de yapalım. Soru varsa bakayım soru var mı? Yok. Soru var mı arkadaşlar? Yok. İkinci. Hadi bakalım. Neyse yeni tahtayı yapalım. Yeni bir başlangıç. İkinci örneğimiz Binary Counter örneği. Yine bir tane soru mu gelmiş?
+
+534
+02:15:29,779 --> 02:15:46,119
+Ne gelmiş bakalım? Matipop nasıl eksi k oldu hocam? Matipop nasıl eksi k oldu? Şimdi kapatmıştım geri açayım senin için bulayım onu. Bir dakika yanlışlıkla kapatmıştım az önce.
+
+535
+02:15:48,119 --> 02:15:56,600
+Bir dakika. D-1 için. D-k nasıl oldu? Şimdi şöyle.
+
+536
+02:15:57,108 --> 02:16:13,807
+Matipop yaptığınız zaman sözler olarak anlatayım. Belki çözülür. Di-1'deki state'indeki eleman sayısı, Di'deki eleman sayısından k tane fazla. Neden? Çünkü pop yaptınız. Öncesinde atıyorum m artı k kadardı, k'sını çektim.
+
+537
+02:16:14,228 --> 02:16:29,427
+M kaldı. K kadar fazlalık vardı orada. Ve bu fazlalık aslında azalma yönünde bir fazlalık. Neden? Çünkü çekiyorsun. Çektiğin için azalıyor. Dolayısıyla arasındaki fark eksik A oluyor. Anlaşıldı mı? Gösterim bir şeyim daha.
+
+538
+02:16:31,927 --> 02:16:35,207
+[öğrenci]. Anlaşıldı. Okey. Tamam.
+
+539
+02:16:39,268 --> 02:16:40,780
+Bu arada çok...
+
+540
+02:16:41,716 --> 02:16:50,716
+Ne demek? Ben teşekkür ediyorum. Dikkatli dinlediğin için de teşekkür ediyorum bence. Şimdi Incrementing Binary Counter'a geçelim.
+
+541
+02:16:50,716 --> 02:17:07,716
+Bu sefer ne olabilir potansiyelde data yapımız Stake'de? Objelerde. Burada da neydi Binary Counter'umuzda? Birler vardı mesela değil mi? Şimdi de birlerin sayısını mesela burada biz potansiyelimiz olarak düşünebiliriz.
+
+542
+02:17:10,355 --> 02:17:25,095
+Number of Ones in the... İşte Counter. Counter away diye. Birilerinin sayısı.
+
+543
+02:17:28,659 --> 02:17:30,540
+Şimdi Action Cost'a bakalım.
+
+544
+02:17:34,548 --> 02:17:49,168
+Burada zaten havuzumuzda increment vardı sadece. Increment için konuşuyorum. Actual Cost of Eat Operation. Ne olur? Şöyle ifade edebilirim bunu.
+
+545
+02:17:49,848 --> 02:17:57,488
+İinci operasyondaki cost. Ti artı bir. Burada t ne biliyor musunuz? T burada. Keribitlerin sayısı.
+
+546
+02:18:00,404 --> 02:18:12,584
+Şimdi diyelim ki increment yapıyorsunuz. Elinizde şöyle bir şey var. Bunu arttırdığınız zaman bir arttırdınız. Neleri flip etmeniz gerekiyordu? Bunu flip ettiniz, bunu flip ettiniz, bunu flip ettiniz.
+
+547
+02:18:14,324 --> 02:18:28,704
+Keribitlerinizin sayısı kadar flip yaptınız. Bir de sonunda 1'e eklediniz. Bu bir de buradan geliyor. Dolayısıyla keribit sayısı artı 1 kadar aslında sizin action postunuz var. Bir increment operasyonunuzda keribitiniz asla postunuz düşecek.
+
+548
+02:18:31,204 --> 02:18:35,123
+Şimdi peki şöyle yazabilirim o zaman az önceki yazdığım eşitliği.
+
+549
+02:18:41,139 --> 02:18:42,880
+İki state arasındaki fark.
+
+550
+02:18:47,123 --> 02:19:14,083
+Actual Cost'u Ti artı 1. Şuradaki fark ne? Bunu bulalım. Şimdi buradaki fark şu. İyince adımda Ti adet 1'i sıfıra döndürdünüz. Doğru mu? Şuraya yazayım. İyince adımda Ti adet 1 sıfır oldu.
+
+551
+02:19:17,716 --> 02:19:39,136
+İ-1. adımda demek ki ne varmış? T'yi adet 1 vardı. Doğru mu? Bunlar İ'inci adımda kayboldu. O zaman burada siz ne kaybettiniz? Birileri kaybettiniz. Doğru mu? Eksi T'yi bir kaybınız oldu burada. Bir farkınız var. Sonra bir İ'inci adımda bir adet 0'ı 1'e çevirdiniz.
+
+552
+02:19:39,796 --> 02:19:50,376
+Onu da artı bir olarak yanına koyabilirsiniz. O zaman sizin şuradaki farkınız bir eksi ti oluyor. Anlaşıldı mı? Var mı soru?
+
+553
+02:19:53,635 --> 02:20:02,475
+İki aşama arasındaki birilerin ve sıfırların çevrim sayısıyla ilgilendim. O zaman benim şuradaki ifadem neye dönüyor?
+
+554
+02:20:05,475 --> 02:20:06,855
+ti artı bir
+
+555
+02:20:07,763 --> 02:20:11,823
+Eksi ti artı bir. T'yiler birbirine götürdü. İkiye döndü.
+
+556
+02:20:18,932 --> 02:20:40,051
+Eğer counter sıfırdan başlıyorsa, ki öyleydi, negatife hiç dönmüyorsunuz. Dolayısıyla aslında şu eşitlikleri de bu sistem sağlıyor size. Sıfırdan başlıyor. Enerji başta sıfır. Ve bu enerji hiçbir zaman negatife inmiyor. Dolayısıyla bu şartları da sağlıyorsunuz.
+
+557
+02:20:47,059 --> 02:21:03,099
+Ne oluyor yine? Ortalama bu operasyon için O1 oluyor. Entahan operasyonun varsa O1 oluyor. Yani bir operasyon için O1, total kostu N operasyon için O1 oluyor. Bu şekilde hesaplamamı tamamladım. Bu soru var mı?
+
+558
+02:21:05,220 --> 02:21:07,579
+Şimdi biraz vaktimiz var.
+
+559
+02:21:08,180 --> 02:21:32,500
+Bir miktar. Bununla ilgili örnek belki önümüzdeki hafta Heşilay'la alakalı yapabilirim. Şu an yanımda geçirmedim ama. Amortiz analizi değişmemiş bir yolu falan yaparız. Ama hani böyle tekrar istemiştiniz benden. Ben onun için birkaç soru hazırlamıştım. Onları isterseniz biraz vakit ayıralım. Bir işte olkalaya kadar falan. Sonra dersiniz var çünkü. Tamam mı? Ne kadar vaktim var bakayım?
+
+560
+02:21:32,500 --> 02:21:34,500
+Tamam.
+
+561
+02:21:35,731 --> 02:22:02,551
+Şimdi nasıl bir şey yapalım sizinle? Baştan mı başlayalım? Ben böyle baştan istiyorsunuz diye hatırlatma soruları hazırlamıştım aslında. Backbody Substitution'la başlayalım diye oluşturmuşum. İster misiniz yapmak? Gençler. Olur mu? Online gençler. Olur hocam.
+
+562
+02:22:02,739 --> 02:22:06,819
+Teşekkür ederim. Olur hocam. Ben teşekkür ederim.
+
+563
+02:22:08,380 --> 02:22:25,860
+Ne kadar kibar bir sınıfım var. Şimdi arkadaşlar, o zaman şöyle yapalım. Ben size backward substitution'a ne olduğunu bir hatırlatayım. Recurrence relation'ları çözerken kullanıyorduk hatırlarsanız. Recurrence relation'ı çözmek istiyorduk. Çünkü karmaşıtına dair buradan bir çıkarıma gidecektik.
+
+564
+02:22:29,236 --> 02:22:42,836
+Recurrence relation varsa, x'en, x'en eksi bir, artı beş. For, en büyük bir.
+
+565
+02:22:44,515 --> 02:22:49,036
+Şimdi recurrence relation'ları çözmenin birden fazla yolu vardı. Master Tören'de çözebiliyorduk.
+
+566
+02:22:49,036 --> 02:22:53,956
+Substitution'da çözebiliyorduk. Ağaçla çözebiliyorduk.
+
+567
+02:22:54,324 --> 02:23:12,084
+Ve Induction yapabiliyorduk hatırlarsanız. Hatta Induction'la alakalı da bir soru gelmişti. Onunla ilgili de örnek hazırladım size. Şimdi bu Dikörans'ın değişini bir çözelim. Substitution'la çözecek bir sözü. En basiti buydu. Backward Substitution.
+
+568
+02:23:19,316 --> 02:23:20,516
+Nasıl yapıyorduk arkadaşlar?
+
+569
+02:23:22,056 --> 02:23:27,336
+Diyorduk ki, bir adım geriye gidelim.
+
+570
+02:23:31,028 --> 02:23:33,128
+x'e eşittir.
+
+571
+02:23:33,228 --> 02:23:33,788
+x'e eşittir. x'e eşittir.
+
+572
+02:23:33,788 --> 02:23:33,907
+x'e eşittir.
+
+573
+02:23:55,987 --> 02:23:56,487
+Şimdi
+
+574
+02:24:00,404 --> 02:24:10,584
+Şu ifadede, yukarıdaki ifadede x'n-1 yerine şurayı koyarak, yani şunun yerine bunu koyarak tekrar alttaki ifadeyi yazıyorum.
+
+575
+02:24:11,224 --> 02:24:12,804
+Bu durumda x'n neye eşitti?
+
+576
+02:24:14,744 --> 02:24:17,864
+x'n-2 ne yaptım şunu?
+
+577
+02:24:19,324 --> 02:24:20,304
+Şuraya yazıyorum.
+
+578
+02:24:21,123 --> 02:24:24,684
+x'n-2 artı 5 artı 5.
+
+579
+02:24:24,844 --> 02:24:25,884
+Bir adım ilerlettik.
+
+580
+02:24:26,324 --> 02:24:33,024
+Sonrasında ne yapıyorduk? Şuradaki xn-2'yi artık daha açarak yazacaktım.
+
+581
+02:24:35,923 --> 02:24:40,763
+Buradaki relation'dan dolayı xn-2 aslında xn-3 artı 5'ti.
+
+582
+02:24:41,423 --> 02:24:45,584
+xn-2 yerine bunu yazıyorum. O zaman x'en neye denk geliyordu?
+
+583
+02:24:47,864 --> 02:24:52,524
+xn-3 artı 5. Şu ifadeden dolayı.
+
+584
+02:24:53,747 --> 02:25:12,307
+Yanına yine 5, yine 5. Yani aslında x n-3 artı 3 çarpı 5 oluyordu. Bunları niye yapıyordum? Bunları bana bir görüş versin. İl'ye bağlı olarak bu işi formüze edebileyim diye birkaç adım o görüşü kazanana kadar sürdürüyordum.
+
+585
+02:25:16,979 --> 02:25:25,540
+Şöyle bir eşitliğe gidebilirim buradan. Dedim ki x n-i artı i çarpı 5.
+
+586
+02:25:27,099 --> 02:25:31,559
+i'ye bağımlı olarak yazdım. Bu noktada bunu çıkarttıktan sonra ne yapıyordunuz?
+
+587
+02:25:31,559 --> 02:25:38,799
+İ ilk koşullarına bakarak size verilen i'yi ortadan kaldırmaya çalışıyordunuz.
+
+588
+02:25:43,007 --> 02:26:09,387
+1 olması gerekiyor. Çünkü bana x1 verilmiş. O da 0 verilmiş. n-i'nin 1 olabilmesi için ben i'ye n-1 demeliyim. Burada i gördüğüm yerlere n-1 yazıyorum. Dolayısıyla burası neye denk düşüyor? x1 artı n-1 çarpı 5. Burası zaten 0'dı. Bu da bana
+
+589
+02:26:10,100 --> 02:26:27,580
+5'e, eksi 5'i verdi. Recurrence relation'ı bu şekilde çözdüm. Kendisine x'e bağlı olmadan n'e bağlı olarak kaç işlemde yapabileceğime dair bana çıkarımı verdi. O vermiş yani bunun upper bound'u. Bunu bulmuş oldum.
+
+590
+02:26:30,560 --> 02:26:33,959
+Hatırladık değil mi arkadaşlar? Bir tane daha yapalım.
+
+591
+02:26:37,492 --> 02:26:47,132
+Mesela şöyle bir şey. X'den eşittir. 3 değil. 3 değil. Yanlış yazdım.
+
+592
+02:26:54,036 --> 02:26:55,416
+3'e bölerek gidiyormuş.
+
+593
+02:26:56,596 --> 02:26:57,416
+En bir olur 3.
+
+594
+02:26:58,736 --> 02:26:59,416
+Artı 1.
+
+595
+02:27:01,615 --> 02:27:02,916
+En birden büyük oluyor.
+
+596
+02:27:04,995 --> 02:27:06,376
+X bir bir oluyor.
+
+597
+02:27:06,995 --> 02:27:11,015
+Böyle bir şey varsa elinizde bunu çözmek için
+
+598
+02:27:11,015 --> 02:27:16,335
+ikinci bir değişken atamanız gerekebilirdi. Hatırlarsanız.
+
+599
+02:27:16,456 --> 02:27:18,316
+Tam kuvvetleri için çözeceğim ben bunu.
+
+600
+02:27:19,675 --> 02:27:21,236
+3'ün tam kuvvetleri için.
+
+601
+02:27:22,067 --> 02:27:30,127
+Şimdi diyorum ki, x'e eşittir x. En olan yere 3 üstü k yazdım.
+
+602
+02:27:52,084 --> 02:28:18,623
+Şu x'en aslında şuna eşit ama ben xn bölü 3 artı 1 yazmaya çalışıyorum. O zaman onu nasıl yazabilirim? x 3k-1 artı 1 yazacağım değil mi? Çünkü bu 3 üzeri 1 aslında. Dolayısıyla 3 üzeri k bölü 3 üzeri 1 oluyor. k-1 oradan gelebilir.
+
+603
+02:28:21,780 --> 02:28:28,860
+Yani bu benim x 3 üzeri k eksi birim.
+
+604
+02:28:31,460 --> 02:28:44,900
+Şimdi yerine koyalım. x 3 üzeri k eşittir. x 3 üzeri k eksi iki artı bir artı bir yerine koydum.
+
+605
+02:28:45,459 --> 02:28:57,919
+Peki x 3 üzeri k eksi 2'yi nasıl yazacağım? Onu da 3 üzeri k eksi 3 de yazacağım. Böldüğüm için. Artı 1 yapacağım.
+
+606
+02:28:58,659 --> 02:29:11,339
+Şimdi burada şu ifadeyi, şunu, şunun yerine yazıyorum. Bu da bana ne veriyor? x 3 üzeri k eksi 3, artı 3'ü veriyor.
+
+607
+02:29:12,180 --> 02:29:30,900
+Peki o zaman onu da bir kere daha açıyorum. Genel görüş elde edene kadar bunu yapacaktım. O da bana x3 üzeri k-4 artı 1 verdi. Bunu buraya getirirsem x3 üzeri k-4 artı 4.
+
+608
+02:29:32,020 --> 02:29:36,120
+Tamam. Genel bir görüş elde ettim mi? Yani şöyle yazabilir miyim bunu?
+
+609
+02:29:37,523 --> 02:30:00,263
+3 üzeri k eksi i artı i diyebilir miyim? Diyebilirim. Peki burada benim x'imin x birim birdi ya bunu vermişlerdi bana. Bunu sağlaması için x birim bir olması için ne olmalı? 3 üzeri k eksi i'nin bir olması gerekiyor değil mi? Evet. Yani k eksi i'nin sıfır olması gerekiyor.
+
+610
+02:30:00,852 --> 02:30:02,852
+Bu durumda k'nın iyi olması gerekiyor.
+
+611
+02:30:03,332 --> 02:30:09,492
+K'yı iyi vererek bunu devam ettirirsem x1 artı k olacak.
+
+612
+02:30:10,272 --> 02:30:14,852
+Burası da 1 olduğuna göre k artı 1 olacak. Doğru mu?
+
+613
+02:30:15,952 --> 02:30:16,612
+Peki k ne?
+
+614
+02:30:20,404 --> 02:30:20,963
+Ne K?
+
+615
+02:30:22,144 --> 02:30:27,724
+Ta, Logaritma Üniversitesi Bilgisayar Mühendisliği, Şuradan Çıkaracağım. Dolayısıyla benim bu fonksiyonumu
+
+616
+02:30:29,907 --> 02:30:33,887
+Ene bağladı, Ene bağladı, Ene logöğretim A. Uçukta bağlı.
+
+617
+02:30:50,164 --> 02:30:57,364
+Sanırım en başta x3 üzeri k-1 eşittir x3 üzeri k-1 artı yapmışsın diye.
+
+618
+02:31:00,744 --> 02:31:03,104
+Yanlış yazdığın bir yeri söylüyorsun herhalde.
+
+619
+02:31:03,524 --> 02:31:09,144
+Evet. O 3 üzeri k eşittir x3 üzeri k-1 artı olmayacaktır.
+
+620
+02:31:10,024 --> 02:31:12,324
+Olacaktır da nereye dediğini ben hala anlayamadım.
+
+621
+02:31:13,524 --> 02:31:14,044
+Bir alt.
+
+622
+02:31:14,675 --> 02:31:18,775
+X, 3 üzeri k eksi bir eşittir.
+
+623
+02:31:19,355 --> 02:31:22,236
+Evet. 3 üzeri k olacaktır sanırım.
+
+624
+02:31:22,595 --> 02:31:24,376
+Şurasını diyorsun. Evet, evet.
+
+625
+02:31:24,915 --> 02:31:27,695
+Tamam, okey. Doğru, öyle olacak.
+
+626
+02:31:29,075 --> 02:31:32,095
+Bir altı da dolar eksiyle k eksi bir olacak.
+
+627
+02:31:32,095 --> 02:31:39,855
+3 üzeri k eşittir. 3 üzeri k eksi bir artı bir olacak. Şurası 3 üzeri k olacak, doğru.
+
+628
+02:31:43,028 --> 02:31:48,188
+Bir altada 2 üzeri k-1 olacak. Diğerde ritalatif gidiyor zaten.
+
+629
+02:31:48,328 --> 02:31:48,968
+Haklısın tamam.
+
+630
+02:31:50,508 --> 02:31:51,468
+Teşekkür ederim.
+
+631
+02:31:52,168 --> 02:31:53,727
+Ben teşekkür ederim bir dakika.
+
+632
+02:32:02,804 --> 02:32:08,923
+Şurası k olacak, şurası k eksi 1 olacak. Doğru değil mi şimdi? Okey. Teşekkür ederim.
+
+633
+02:32:28,147 --> 02:32:30,147
+Şimdi şöyle bir fonksiyonum olsa...
+
+634
+02:32:34,036 --> 02:32:35,736
+Şöyle bir işlem yapmak istesem.
+
+635
+02:32:36,956 --> 02:32:41,036
+Sen eşittir. Birin küpü artı. İkinin küpü artı.
+
+636
+02:32:42,896 --> 02:32:45,456
+Dat dat dat dat. İkinin küpü.
+
+637
+02:32:46,916 --> 02:32:53,956
+Bunu ilk en tane sayının küpleri toplamını hesaplayan bir algoritma.
+
+638
+02:32:54,756 --> 02:32:56,976
+Recursive olarak çözmek istesem.
+
+639
+02:32:57,776 --> 02:32:59,596
+Bunu Relation Recursive'e ne olur?
+
+640
+02:33:02,036 --> 02:33:03,396
+Bunu nasıl çözerim?
+
+641
+02:33:10,324 --> 02:33:16,844
+Diyelim ki eğer n 1'e eşitse 1'i döndür değilse
+
+642
+02:33:27,540 --> 02:33:30,620
+Böyle yapmadım değil mi? Doğru mu?
+
+643
+02:33:31,840 --> 02:33:35,840
+Bir denene kadar olan sayıların küplerini toplayan bir recursive algoritma çözmeye çalışıyorum.
+
+644
+02:33:35,940 --> 02:33:40,960
+Bire geldiğimde biri döndür çık. Değilse bir alt için çağır.
+
+645
+02:33:41,040 --> 02:33:45,020
+Ve her çağırdığında ilgili enin kübünü de bu toplama eklemek zorundasın.
+
+646
+02:33:45,020 --> 02:33:52,460
+Şimdi böyle bir recursive algoritma füsa dokudu yazdım.
+
+647
+02:33:54,995 --> 02:34:14,216
+Peki, Rikör Asile Eşne ne olur? Bana işlem sayısı, yani işlem sayısı açısından nasıl bir relation var? Ne diyebilirim? Emel ne çalıştırıyor? Emel eksi biri çağırıyor değil mi? Peki kaç tane bu arada işlem yapıyor?
+
+648
+02:34:15,507 --> 02:34:22,427
+Yani daha doğrusu M'n, M'n-1'i çağırmaktan başka kaç işlem yapıyor? İki tane multiplication yapıyor. Doğru mu?
+
+649
+02:34:22,827 --> 02:34:27,948
+Bu yüzden şöyle diyebilirim aslında. M'n, M'n-1'i çağırıyor ve iki tane multiplication.
+
+650
+02:34:27,948 --> 02:34:29,868
+Peki benim...
+
+651
+02:34:30,675 --> 02:34:43,556
+Çıkış Casing'in bir olması. Bir olduğu vakit işlem yapıyor muyum? Yapıyorum, çıkıyorum. Dolayısıyla sizin işlerinizde basit bir Recursive Algoritma varken bu şekilde bunu çıkartmanız gerekiyor.
+
+652
+02:34:44,195 --> 02:34:50,835
+Her seferinde biraz alarak giden bir kolunuz var ve de iki tane de basic işlem yapıyorsunuz.
+
+653
+02:34:51,896 --> 02:34:57,475
+Şimdi bunu Backward Substitution ile çözerseniz var mı soru? Bir soru var mı?
+
+654
+02:34:58,451 --> 02:35:03,731
+Yok mu? Önceden kalmış herhalde. Okey, soru yok. Tamam.
+
+655
+02:35:06,731 --> 02:35:13,971
+Şimdi bunu çözelim. Çözmeme gerek var mı arkadaşlar? Siz çözersiniz değil mi? Çözeyim mi? Tamam, onu çözmeyeyim o zaman.
+
+656
+02:35:16,171 --> 02:35:23,931
+Rural'an Nandercursive bir şekilde çözseydim. Ve Rural'an Nandercursive olarak çözümü bu. Nandercursive çözmelerini de biliyorsunuz zaten.
+
+657
+02:35:24,691 --> 02:35:28,791
+Karmaşıklıklarında bir fark olur muydu? Nasıl olurdu?
+
+658
+02:35:29,851 --> 02:35:30,731
+Öyle sorayım size.
+
+659
+02:35:33,851 --> 02:35:34,371
+Olur muydu?
+
+660
+02:35:36,772 --> 02:35:39,831
+Bunun karmaşıklığı çözdüğünüz vakit göreceksiniz.
+
+661
+02:35:39,831 --> 02:35:43,711
+En. 2'ye neksi 2'ye bu sizi götürecek.
+
+662
+02:35:45,072 --> 02:35:46,711
+Şey yapsanız.
+
+663
+02:35:48,180 --> 02:36:00,020
+İteratif yapsanız, aslında iteratif yapsanız da şöyle bir şey yazacaksınız kod olarak. For diyeceksiniz. İ giderken işte ikiden n'e kadar sum'a tabire bir şey ekleyeceksiniz.
+
+664
+02:36:01,680 --> 02:36:11,120
+Sum artı i çarkı i çarkı i ekleyeceksiniz. Veritör sum diyeceksiniz. Değil mi? Şey bu bunun batıma çözümü bu.
+
+665
+02:36:16,819 --> 02:36:28,279
+Aslında ne oluyor? İki tane ne kadar? İki tane işlem yapıyorsunuz her seferinde. Bu da yine aynı şeye denk geliyor. Değil mi? İki bu da.
+
+666
+02:36:31,279 --> 02:36:39,000
+Ne kadar bir? Bu da iki parantezinde en eksi iki artı bir'e denk geliyor.
+
+667
+02:36:39,731 --> 02:36:54,611
+Şurası 2'den başladığı için. Dolayısıyla bu da aslında bana 2 yeni veriyor. Bu da 2 yeni veriyordu. Çözüm olarak bana kompleks açısından bir farkı var mı? Yok. Hangisi daha mantıklı? Hangisini tercih edersiniz? İlla seçecek olsanız.
+
+668
+02:36:56,371 --> 02:37:22,092
+Alttakini tercih etmeniz lazım. Niye? Çünkü üsttekinde Recurrence'daki kollar sebebiyle gelen ekstra maliyet var. Her Recursive fonksiyon aslında siteye ilgili parametrelerin atılması sistem tarafından ve çekilmesini gerektiriyor. Dolayısıyla o size ekstra bir maliyet getirecek. Ekstra maliyete gerek yok. Alttaki bu durumda. Otelde karmaşıklık açısından aynı görünmekle birlikte alttaki daha mantıklı.
+
+669
+02:37:24,468 --> 02:37:40,188
+Başka örneklerim de var ama on kalı oldu. İsterseniz bırakalım. Diğer dersinizden önce bir şey yapın. Önümüzdeki hafta yine örneklerle devam edeceğim. Belki yeni konuya da geçebilirim. Şimdi sizden ricam hafta sonu maillerinizi kontrol etmeniz.
+
+670
+02:37:40,559 --> 02:38:02,619
+Bir vize, bir proje, bu proje ikinci vize gibi olacak tarihi. Sunum tahmin ediyorum, isteyeceğim sizden. Güncel konularla alakalı, özellikle hash fonksiyonları olabilir. Birkaç konu listeleyeceğim. Bu konulardan kendinizi seçmenizi ve bana paperlardan, böyle üç tane falan paper okuyup bana ve arkadaşlarınızı sunmanızı isteyeceğim. Kişisel bir şey olacak.
+
+671
+02:38:08,559 --> 02:38:30,579
+Büyürdükten sonra sizlerin ben şu konuyu istiyorum diye bana mail atmanızı bekleyeceğim. Ve bu mail sayısına göre de sunum tarihlerini ve kaç dakikalık olacağını belirleyeceğiz. Belki biraz derse, yani şu an derse takip eden sayısı 20 falan ama belki daha fazla yapmakla isteyen olabiliyor. Biraz ders açacak şekilde bir skeçlik orada yapmamız gerekecek. Haftanın sonları takip edin maillerinizi tamam arkadaşlar?
+
+672
+02:38:31,283 --> 02:38:58,644
+Final zaten 100 olacakmış. Belki finalde de ekstra bir ödev gibi bir şey düşünüyorum. %40 olacak şekilde finali tutmak zorundayım zaten. Vizelerde de sunumu biraz daha online vizeye göre oranının fazla olmasını planlıyorum. Şimdilik planım bu. Kendi konularınızı da bana önerebilirsiniz. Eğer ben şu konuyu yapmak istiyorum dediğiniz bir şey olursa benim kontörümde öyle bir öneriye de açıyor. Tamam mı?
+
+673
+02:38:59,188 --> 02:39:09,628
+Online'daki arkadaşlara da söylemiş olayım. Soru var mı arkadaşlar? Tamam, teşekkür ederim. O zaman...
+
+674
+02:39:09,628 --> 02:39:10,648
+Teşekkürler hocam.
+
+675
+02:39:18,164 --> 02:39:30,324
+Şimdi bunu bana anlatsan mı? Ben bundan hiç anlayamadım. Bir üstteki sorum için di'nin eksi k ve di eksi bin eksi değerli eşit olmasına niye varsayılıyoruz?
+
+676
+02:39:32,804 --> 02:39:35,164
+Söysel olarak sorsan mı? Ben tam...
+
+677
+02:39:35,684 --> 02:39:38,104
+Hocam, şöyle sesim geliyor mu?
+
+678
+02:39:38,404 --> 02:39:38,844
+Geliyor.
+
+679
+02:39:40,044 --> 02:39:43,164
+Şey dedik ya, multipop için...
+
+680
+02:39:44,724 --> 02:39:59,783
+DI ve DI-1, yani DI-1 şeyde, stekte 2-K prime değerleri pop ediyor demiştik.
+
+681
+02:39:59,783 --> 02:40:03,783
+DI-1, DI-1, DI-K prime olduğunu söylemiştim.
+
+682
+02:40:05,139 --> 02:40:09,259
+Değil mi onu söyle? Evet. Eksi 2K' prime oluyor değil mi?
+
+683
+02:40:09,259 --> 02:40:18,459
+Eksi 1. Eksi k, eksi 2 diye bir şey o. Eksi k prime. Ama onların şeysi değil mi?
+
+684
+02:40:18,459 --> 02:40:24,779
+Değilin eksi, değilin eksi 1 için değil mi? Eksi k prime.
+
+685
+02:40:24,863 --> 02:40:26,863
+Onların sonucu değil mi?
+
+686
+02:40:26,863 --> 02:40:28,863
+Şuraya tekrar yazayım.
+
+687
+02:40:28,863 --> 02:40:33,863
+Onu, şuraya. Yukarıda mı o acaba ya? Bakayım yukarıda mı?
+
+688
+02:40:37,863 --> 02:40:42,863
+Bunda değil mi? Ha bir öncekinde mi kaldı o? Tamam.
+
+689
+02:40:44,863 --> 02:40:46,863
+Şu mu acaba?
+
+690
+02:40:56,884 --> 02:41:08,424
+Açılana kadar ben şöyle anlatayım sana. Di-1 ve DiState'lerim var. DiState'i sonra. Di-1State önce oluyor.
+
+691
+02:41:08,424 --> 02:41:09,544
+Evet.
+
+692
+02:41:11,544 --> 02:41:13,304
+Büyükmeye çalışıyorum ama.
+
+693
+02:41:16,783 --> 02:41:17,504
+Ne bilmiyorum.
+
+694
+02:41:25,363 --> 02:41:26,363
+Burada mı?
+
+695
+02:41:27,863 --> 02:41:31,363
+Evet. Potential Function'ların çıkarımın...
+
+696
+02:41:31,363 --> 02:41:33,363
+Şurayı mı soruyorsun?
+
+697
+02:41:33,363 --> 02:41:37,363
+Evet, orası bir sardaki.
+
+698
+02:41:37,363 --> 02:41:38,363
+Kısma mı soruyorsun?
+
+699
+02:41:38,363 --> 02:41:41,363
+Evet, o eksi k prime dediniz ya.
+
+700
+02:41:41,363 --> 02:41:44,363
+Bu eksi k prime olmamalı da ne olmalı diyorsun?
+
+701
+02:41:45,363 --> 02:41:48,363
+Onun sebebi değil mi?
+
+702
+02:41:51,252 --> 02:41:58,492
+eksi k prime olması ve di eksi bir eksi iki k prime olması.
+
+703
+02:41:59,012 --> 02:42:11,572
+Yok yok. Onun sebebi şu. Şimdi di eksi bir var bir de di var. Di eksi bir deyken sen pop yapıyorsun. Pop yaptığı zaman bir sonraki state'teki eleman sayı ne oluyor?
+
+704
+02:42:12,244 --> 02:42:37,404
+Azalıyor değil mi? Mesela bir önceki state'de M artı K tane elemanın olduğunu düşün. Bir sonraki state'de K tanesini çektin. Kaç elemanın kaldı? M elemanın kaldı. Bu ikisinin farkı ne? M eksi, M eksi K. Bu da eksi K ya. Bu oradan geçmişti. Dolayısıyla şurası eksi K oluyor. Eksi K olması ne olur yani?
+
+705
+02:42:38,067 --> 02:42:46,067
+Normal Actual olan da k olduğu için maliyeti farkları sıfır oluyor.
+
+706
+02:42:48,067 --> 02:42:59,067
+Anlar, anlar, tamam. Tamam mı? Şu i-1'deki eleman sayısı, şu i'deki eleman sayısı. Azaldı. Azaldığı için eksi k prime dedik.
+
+707
+02:42:59,067 --> 02:43:05,067
+Anladım. Tamam mı? Okey. O zaman haftaya görüşürüz arkadaşlar.
+
+708
+02:43:05,780 --> 02:43:08,100
+Hoşçakalın, sağ olun.
+
+709
+02:43:08,180 --> 02:43:08,760
+Teşekkürler.
+
+710
+02:43:09,840 --> 02:43:11,159
+Görüşmek üzere hocam.
+
+711
+02:43:11,300 --> 02:43:12,639
+Görüşürüz, hoşçakalın.
