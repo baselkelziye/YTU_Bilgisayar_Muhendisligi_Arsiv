@@ -1,0 +1,183 @@
+1
+00:00:04,307 --> 00:00:06,067
+Evet arkadaşlar, merhabalar.
+
+2
+00:00:09,715 --> 00:00:18,036
+Hemen ekran paylaşıyorum. Grubunuza söylerseniz herkes buraya katılırsa iyi olur. Daha sonra çok fazla bir süre beklemeyeceğiz.
+
+3
+00:00:23,795 --> 00:00:25,483
+Şu an 20 kişiyiz.
+
+4
+00:00:30,611 --> 00:00:48,012
+Sistem aynı arkadaşlar. Kodu C olarak, dc'de veya codeblocks'da yazıyorsunuz. Yazdığınız kodu numaranızı ekliyorsunuz ve RAR dosyası içerisinde sisteme yüklemeniz gerekiyor.
+
+5
+00:00:53,491 --> 00:01:04,531
+60 dakika süremiz var. Tek soru. Buradan aldığımız cevap, puan hangisi yüksekse o kullanılacak şekilde.
+
+6
+00:01:06,152 --> 00:01:15,451
+Bakalım 32 kişiyiz. Şöyle bir dakika daha bekleyelim. Ondan sonra aynı şeyi iki defa anlatmak istemiyorum.
+
+7
+00:01:21,427 --> 00:01:27,728
+Sisteme şu an giriyor olmanız gerekir. Yani bir dakika içerisinde soruyu görebileceksiniz.
+
+8
+00:01:43,540 --> 00:01:47,360
+Evet, başlayalım olmazsa. Şu an 40 kişi falan olduk.
+
+9
+00:01:51,188 --> 00:01:58,388
+Şimdi arkadaşlar, bir odanın ID, yükseklik, genişlik, uzunluk bilgisi Structure yapısında saklanacaktır.
+
+10
+00:01:59,628 --> 00:02:05,707
+Global Statik değişken kullanmadan, ekstra bir ilave değişken, gereksiz değişken kullanmadan aşağıdaki fonksiyonları yazınız.
+
+11
+00:02:06,408 --> 00:02:10,108
+Bir Structure tanımlayacaksınız bu Structure'ı ifade eden.
+
+12
+00:02:11,187 --> 00:02:20,327
+Sonra n elemanlı dizi oluşturmak için main'de kullanıcıdan n değerini alacaksınız. Buna göre bir dinamik oda structure dizisi oluşturacaksınız.
+
+13
+00:02:21,207 --> 00:02:31,327
+Get info içerisinde bu diziye uygun parametreleri ve dönüş değerini vererek B maddesinde tanımlanan bir structure dizisine veriler okuyacaksınız.
+
+14
+00:02:32,947 --> 00:02:37,327
+D maddesinde bu oda dizisini parametre olarak alacaksınız.
+
+15
+00:02:38,580 --> 00:02:55,680
+Sağ ve sol komşularından hacimce daha büyük olan odaların isimlerini ekrana yazdıracaksınız. İlk ve son odayı değerlendirme dışı bakacaksınız. Yani ikincinin hacmi üçüncüden büyükse ve birinciden büyükse ikincinin bilgisini yazmak şeklinde daha büyük olan. Hacim nasıl hesaplanıyor herhalde bunu söylemeye gerek yok.
+
+16
+00:02:55,680 --> 00:03:00,379
+Ha yazmışız, okuyabiliyor. Yani inşallah okursunuz.
+
+17
+00:03:02,099 --> 00:03:06,340
+Hacme göre sırala işlemi, odaları hacimlerine göre sıralayan bir fonksiyon.
+
+18
+00:03:07,240 --> 00:03:10,599
+Orijinal odanın içeriği, yani bu dizinin içeriği değişecektir.
+
+19
+00:03:10,740 --> 00:03:12,280
+Buradan ne demek istediğim anlaşılıyor.
+
+20
+00:03:12,859 --> 00:03:15,000
+Hepsinde arkadaşlar parametreleri yazmadım.
+
+21
+00:03:15,079 --> 00:03:17,659
+Burada sizin doğru bir şekilde çıkarsama yapmanız gerekiyor.
+
+22
+00:03:19,479 --> 00:03:24,639
+Odaların bilgilerini ID, yükseklik, genişlik, uzunluk olarak yazmanız gerekiyor.
+
+23
+00:03:25,235 --> 00:03:50,876
+Şimdi şurada odaların isimlerini ekrana yazdıran fonksiyonla odaların bilgilerini yazdırmayı karıştırabilsiniz. Burada odanın isiminden kastımız ID. Yani 3 nolu oda, 5 nolu oda gibi bilgilerini değil. Tamam mı? Sadece o kadar. Mail içerisinde CDEF maddelerini, şu maddeleri aşağıdaki sıraya göre çağıran fonksiyon çağrılarını yazacağız. Ondan sonra ilgili bellek bölgesi serbest bırakılacak.
+
+24
+00:03:51,743 --> 00:04:11,183
+Önce veri girişi, sonra scan, sonra print info, sonra sort by volume, sonra tekrar print info şeklinde. Anlaşılmayan bir şey var mı? Öğrenci no içerisinde işte soru 3C, yani başına öğrenci numarası yazarsanız daha güzel olur. O sadece soru 3 olarak kalmış.
+
+25
+00:04:11,668 --> 00:04:13,068
+Süreniz 60 dakika.
+
+26
+00:04:13,808 --> 00:04:18,628
+Hocam, Scan Rooms içinde hem sağdakinden hem soldakinden büyük olanları yazacağız değil mi?
+
+27
+00:04:18,728 --> 00:04:20,728
+Sağ ve sol konuşulur. Aynen öyle.
+
+28
+00:04:20,848 --> 00:04:21,888
+Tamamdır. Teşekkürler.
+
+29
+00:04:23,888 --> 00:04:30,327
+Birincinin solunda olmadığı için, birinci ve sonuncunun sağında olmadığı için sonuncuyu dikkate almıyorsunuz.
+
+30
+00:04:31,148 --> 00:04:34,468
+Yani onlar ekrana yazılmayacak demektir bu. Onu da söylemiş olayım.
+
+31
+00:04:38,196 --> 00:05:00,196
+Sadece sınavı çözecekler katılsa yeterli değil mi hocam? Yani yükleme yapmıyorsanız sıfır alacaksınız. Diğer puanınız neyse o geçerli olacak. Yani diğeri birse bir alacaksınız. 60 ise 60 alırsınız. Buradan ayrılabiliriz. Evet çünkü ben de kapatacağım. Sorunuz varsa sorularınızı alayım. Herkes duysun. Yoksa...
+
+32
+00:05:01,459 --> 00:05:02,559
+Ayrılabiliriz.
+
+33
+00:05:02,719 --> 00:05:04,619
+Sınavdan sonra tekrardan gelelim mi hocam?
+
+34
+00:05:05,039 --> 00:05:08,319
+Yok, sınavdan sonra bugünlük çözüm yok. Gelecek hafta devam edeceğiz.
+
+35
+00:05:08,419 --> 00:05:11,819
+Tamamdır. İyi günler. İyi akşamlar.
+
+36
+00:05:12,500 --> 00:05:17,539
+Hocam, oksana karıştırdım herhalde ama dosyayı C olarak mı geçeceğiz yoksa yine Rarı koyup öyle mi geçeceğiz?
+
+37
+00:05:17,659 --> 00:05:21,019
+C içerisinde Rarı. Bakın açıklamada var. Not 3'te.
+
+38
+00:05:21,319 --> 00:05:22,939
+Tamam. Teşekkür ederim.
+
+39
+00:05:22,959 --> 00:05:23,959
+Rarı içerisinde C.
+
+40
+00:05:23,959 --> 00:05:24,699
+Tamam.
+
+41
+00:05:27,279 --> 00:05:28,919
+Evet, başka sorumuz?
+
+42
+00:05:32,307 --> 00:05:53,447
+Zee Pulse'da olur mu? Linux kullanıyorum da. Olur, olur. Ama dediğim gibi değerlemeye dikkat edin. DFC'de ben değerleyebilmeliyim. Eğer sıkıntı olursa karışmam. Yazdığımız notasyonlara, işte forn içerisinde integer tanımlamamaya dikkat edin. Orada değerleniyordur. Bende değerlenmiyorsa olmaz. Dikkat edin ona.
+
+43
+00:06:01,747 --> 00:06:03,747
+Son dediğim...
+
+44
+00:06:05,747 --> 00:06:19,747
+Yani for içerisinde integer tanımlamayacaksınız. Integer döngü değişkeni dışarıda tanımlayacaksınız. Dev C veya CodeBlocks üzerinde programınızın derlenip çalışması lazım. C++ kodu göndermemeniz gerekiyor. Bunları söyledim.
+
+45
+00:06:27,860 --> 00:06:53,319
+Herhangi bir süre uzatımı yok arkadaşlar. O konuda mail göndermeyin. Şikayet maili de lütfen göndermeyin. Lütfen bu bilgiyi de grubunuzda yayın. Yani WhatsApp grubunuz falan vardır. Süre uzatımı ile alakalı mail göndermeyecek, öyle bir şey yok. Yükleyemediyseniz yüklenmemiştir. Bana ayrıca maille hocam yüklenmedi, yani geç oldu, hata oldu vs. öyle bir şey kabul etmiyorum.
+
+46
+00:06:55,220 --> 00:06:56,280
+Hepinize başarılar.

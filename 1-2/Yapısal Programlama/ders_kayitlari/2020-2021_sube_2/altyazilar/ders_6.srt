@@ -1,0 +1,2951 @@
+1
+00:02:23,572 --> 00:02:24,491
+Günaydın arkadaşlar.
+
+2
+00:02:29,460 --> 00:02:31,000
+5 dakika sonra başlarız.
+
+3
+00:08:10,228 --> 00:08:12,567
+Arkadaşlar, günaydın. Nasılsınız?
+
+4
+00:08:16,500 --> 00:08:18,680
+Sınıfın yarısı gelmiş neredeyse.
+
+5
+00:08:20,639 --> 00:08:27,639
+Şimdi [öğrenci], daha önce de bu konuda sendin bir mail attın. Bir arkadaş da böyle bir talepte bulunmuştu.
+
+6
+00:08:28,639 --> 00:08:34,220
+PPT dosyaları hocalar tarafından verilmek istenmiyorum. Ben bu slide'ları kendime hazırlasam verirdim.
+
+7
+00:08:34,220 --> 00:08:39,799
+Veya işte data'ın slide'ları olsa verirdim. Bunun ancak PDF hallerini istiyorlar.
+
+8
+00:08:40,628 --> 00:08:45,628
+Onların kararlarına saygı duymam gerekiyor. O nedenle PPT halini paylaşamıyorum.
+
+9
+00:08:46,628 --> 00:08:56,628
+Canlı Ders Duvarı kısmına her sayfada bir slide olacak şekilde bir slide paylaştım. Bilmiyorum onu gördünüz mü?
+
+10
+00:08:56,628 --> 00:08:58,628
+Onlar biraz daha nettir.
+
+11
+00:09:11,059 --> 00:09:37,919
+Tamam. Yani bence çıktı almaya da çok fazla gerek yok. Hani bilmiyorum çok ihtiyaç duydunuz sayfaları çıktı alabilirsiniz. Ama şu an tek sayfa olacak şekilde olan halini daha büyük upscale yapıp o şekilde kullanabilirsiniz. Ödev duyurusu diye bir şey yapılmadı arkadaşlar. Buradan canlı ders duvarından veya Avesisten veya Ussisten bir şey gelmedikçe.
+
+12
+00:09:39,028 --> 00:09:45,628
+Herhangi bir şey yok. Ödevi şöyle yapacağız, onu da bugün bir duyuru yapacaktım da, Cunut Hoca ile daha konuşamadık.
+
+13
+00:09:47,868 --> 00:09:54,408
+Bir ödev, bir proje demiştik. Onu şu şekilde düşünüyorum.
+
+14
+00:09:57,087 --> 00:10:02,628
+Birbiriyle ilintili proje, ödevle ilintili olacak şekilde. İşte bir bir şey yapacaksınız ödevde.
+
+15
+00:10:06,355 --> 00:10:18,336
+2 veya 3 haftaya kadar ilan edilmiş olacak. Projede o ödevin daha kapsamlı hali yapılacak. Yani kafamda şu an o var.
+
+16
+00:10:20,456 --> 00:10:30,415
+Bunu söylemişken hazır böyle birazcık dersin dışında bir şey söylemiş olmak için şunları anlatayım. Bazen arkadaşlardan böyle sorular geliyor.
+
+17
+00:10:32,692 --> 00:10:46,251
+Şimdi buradaki bu dersi alan, eğer üstten ders almadıysanız, normal şartlar altında bu dersi alan bir öğrenci arkadaşım şu ana kadar BBG diye bir ders aldı.
+
+18
+00:10:47,292 --> 00:10:56,632
+Yazamadık. BBG. Burada temel algoritma ve bilgisayar bilimlerine dair şeyleri öğrendi. Geçmiş olması gerekiyor.
+
+19
+00:10:57,620 --> 00:11:07,639
+Yüzde kaç ile geçip geçmediği benim için önemli değil. Bu dersi aldıysa oradaki becerilerin olması gerektiğini biz kabul ediyoruz. Gidip tekrar oradaki şeyleri tekrar anlatacak değiliz çoğunun.
+
+20
+00:11:08,580 --> 00:11:20,620
+Sonra, Yapısal Programlamaya Giriş, Introduction Structural Programming. Burada da algoritma ile alakalı ve kodlama ile alakalı, C ile alakalı daha çok şey öğrendiniz.
+
+21
+00:11:21,683 --> 00:11:27,144
+Aynı zamanda bununla alakalı sizin bir nümerik analiz dersiniz, sayısal analiz dersiniz vardı.
+
+22
+00:11:28,183 --> 00:11:28,803
+Geçen dönem.
+
+23
+00:11:28,803 --> 00:11:44,803
+Bu üç ders devamına, işte bu dönem yapısal programlama, ayrık matematik, ayrık, ondan sonra belki lojik veya diğer...
+
+24
+00:11:45,971 --> 00:12:02,652
+Programlamayla alakalı ders olabilecek. Logikte çok bir şey yok da, assembly olabilir. Bu dersler, artık sizin belli bir algoritmik seviyeye, dışarıdaki herhangi bir insandan bilgisayara daha farklı bir seviyeye bakar şekilde olduğunuzu gösteren dersler.
+
+25
+00:12:04,511 --> 00:12:12,172
+Bu dersler mesela bir data structure veya algoritma analizi dersleri değil.
+
+26
+00:12:13,235 --> 00:12:18,796
+Oradaki kadar algoritma bilgisine belki ihtiyaç duyacak ödevler olmayacak.
+
+27
+00:12:18,875 --> 00:12:24,915
+Ama ayrık matematikte veya yapısal programlarda bu derslerin bazı ön koşullarını yerine getiriyoruz.
+
+28
+00:12:25,995 --> 00:12:29,975
+Bir yine geçiş dersi, gateway dersi olarak bu iki dersi düşünebilirsiniz.
+
+29
+00:12:31,296 --> 00:12:38,855
+Daha çok bu derste şuradaki öğrendiğiniz bilgileri, burada bazı şeyler ekleyerek sorgulayan sınavlar ve ödevler olur.
+
+30
+00:12:40,371 --> 00:12:58,511
+Yapısal Programlamada verilen bir ödev, basit algoritmik becerinizi ölçmeyi sağlar, öyle ister. Yani iki diziyi topla, iki diziyi çıkar, çarp gibi şeyler değil de biraz da ne bileyim Fibonacci dizisini tek elemanlı yazdırma mesela gibi.
+
+31
+00:13:00,652 --> 00:13:06,611
+Bu bir algoritmik beceridir. Bu algoritmik beceri şuradaki derslerde alınan becerinin üzerine konulabilir.
+
+32
+00:13:07,668 --> 00:13:25,927
+Yani buradaki verilen bir soruyu yapmak için data structure veya algoritma halenizi almanıza gerek yok. Ama yapısal programlama daha çok neye fokuslanıyor? Burada CI'yi farklı problemlere maruz kalarak öğrenmenizi, programlama dillerinin mantığını öğrenmenizi sağlıyor.
+
+33
+00:13:26,644 --> 00:13:40,683
+Bellek sorunlarına karşılaşacağız, yapısal diğer başka programlama sorunlarına karşılaşacağız. Veri yapılarıyla alakalı problemlerle karşılaşacağız. Programımı daha modüler hale getireceğiz. Bunların hepsi yapısal programlamanın içerisinde öğreneceğiniz ana konular.
+
+34
+00:13:41,744 --> 00:13:52,644
+Bu ana konuları mevcut şu ana kadar aldığınız bilgisayar bilimleri bilgisiyle birleştirip, algoritma bilgisiyle birleştirip ayrık matematikte öğrendiğiniz şeyler de buna dahil.
+
+35
+00:13:53,268 --> 00:14:10,248
+Onun dersine de ben giriyorum. Buna yönelik bir ders değerlendirmesi olur arkadaşlar. Yani size verdiğimiz ödevde iki gün sonra mail atıp, hocam işte biz böyle bir şey görmedik, öyle bir şey görmedik diye bir şey yok. O görmediğiniz şeyleri biz zaten sormayız.
+
+36
+00:14:18,163 --> 00:14:44,884
+Sizin biraz daha çalışıp bazı şeyleri kendi başınıza yapabilmenizi sağlayacak ödevler olur. Bunu bir hatırlatayım isterim. Bazen sorular geliyor. İşte hocam dersin daha üçüncü haftasındayız. Hala temel şeyleri görüyoruz. Temel şeyleri geçen dönemlerde belki gördünüz ama işte sorunca hocam işte onu görmedik, bunu böyle görmedik, bu böyle oldu, bu böyle olmadı falan şeyler alıyor.
+
+37
+00:14:45,812 --> 00:15:12,852
+Ders normal seyrinde gidiyor. Bu konuda kendinizi herhangi bir şekilde geride veya diğer gruplara göre geride kaldık gibi hissetmeyin. Her şey yerli yerince gider. Başka ödevle alakalı, bu hafta Yunus Hoca ile görüşürsem bir tane problem var. O problemi hocaya anlatacağım. Hoca da uygun görürse, iki grup içinde mutabık kalırsak.
+
+38
+00:15:13,779 --> 00:15:17,500
+Ödevi metnini hazırladığım kısmen onu daha sonra size duyuracağım.
+
+39
+00:15:18,399 --> 00:15:23,980
+Tabii ödevi yapabilmeniz için dinamik memori allokasyonu konusunu bitirmiş olmamız gerekiyor.
+
+40
+00:15:25,480 --> 00:15:26,899
+Onun için daha biraz daha süre var.
+
+41
+00:15:28,919 --> 00:15:34,120
+Bir de gelecek hafta laboratuvar saatinde belki bir ders yapabiliriz.
+
+42
+00:15:34,259 --> 00:15:40,259
+Biraz daha bazı konuları hızlı bitirelim. Ödevi de öne rahat rahat yapabilirsiniz diye.
+
+43
+00:15:41,107 --> 00:16:03,747
+Çünkü ödevlerde en fazla 10 günlük bir süre olacak veya 12-13 gün olur. Belki bir hafta olabilir. Onun için bazı konuları bitirelim diye hocayla belki bir şey yaparız. Bir laboratuvarın birini gelişik hafta yapabiliriz. Hem de bir soru çözme saati gibi bir şey yapmış oluruz. Evet, bu konuda sorunuz var mı arkadaşlar?
+
+44
+00:16:07,796 --> 00:16:08,696
+Bu hafta yok.
+
+45
+00:16:16,947 --> 00:16:19,127
+Evet, sorun yok herhalde. Devam edelim.
+
+46
+00:16:20,327 --> 00:16:29,887
+Şimdi en son, program akışıyla alakalı temel geçen dönemlerde de gördüğünüz bazı şeylerden bahsettik.
+
+47
+00:16:30,807 --> 00:16:33,107
+Bunlar önemli arkadaşlar. Bunlar niye önemli?
+
+48
+00:16:33,107 --> 00:16:37,227
+Yani şu şeyleri hala görebiliyoruz.
+
+49
+00:16:38,747 --> 00:16:44,367
+Yani common mistakes dediğimiz bazı hatalar.
+
+50
+00:16:45,716 --> 00:16:52,056
+Bizim C, Yapısal Programlama dersimizde, hani Object Oriented Programlamayı söylemiyorum.
+
+51
+00:16:53,096 --> 00:16:58,316
+Hala öğrenci arkadaş şöyle bir şey yapıyor. Belki başka bir yerde gördü.
+
+52
+00:17:05,428 --> 00:17:07,428
+Böyle bir kod yazıyor.
+
+53
+00:17:07,428 --> 00:17:19,428
+Kendi bilgisayarında da değerleniyor. Muhtemelen kodunu C++ olarak kaydetmiştir. Şu şekilde değerleniyor. Sonra ödevi bize gönderiyor. Veya işte sınavda.
+
+54
+00:17:19,428 --> 00:17:26,428
+Özellikle ödevlerde program çalışmıyor. Niye çalışmıyor? Çünkü C derleyicisinde böyle bir şey yok.
+
+55
+00:17:26,428 --> 00:17:32,428
+C derleyicisinde burada sadece initialization yaparsın. Inti yukarıda tanımlayacaksın.
+
+56
+00:17:33,395 --> 00:17:37,395
+Bu C++ sözler. C'yi de böyle bir şey yok. C için konuşuyoruz biz.
+
+57
+00:17:39,735 --> 00:17:51,815
+Sonra hala if'in içerisinde a eşit eşit 5 yazmak yerine if'in içinde a eşit 5 yazıyor. Kodda çalışıyor. Niye çalıştığını ilerleyen zamanlarda göreceğiz.
+
+58
+00:17:52,476 --> 00:18:00,195
+Kod çalışıyor da sonuç doğru gelmiyor bu sefer. Sonuç doğru gelmeyince ne yapıyoruz? Arkadaşa puan veremiyoruz.
+
+59
+00:18:00,884 --> 00:18:14,183
+Bunu ilk defa C'yi gören birisi için kabul edilebilir, makul bir şeydir ama siz üçüncü defadır bu dersi, C programlama diliyle farklı amaçlarla karşılaşıyorsunuz belki en az.
+
+60
+00:18:15,063 --> 00:18:18,384
+Onun için artık bunlar kabul edilebilir hatalar değiller.
+
+61
+00:18:19,324 --> 00:18:26,443
+Daha işin şey tarafı, öğrenci arkadaşım yarım yamalak bir ödev gönderiyor, o ödevde şu bile yok.
+
+62
+00:18:28,884 --> 00:18:53,884
+Şu ampersanat işareti bile yok. Veya şurada başka bir şey yok. Diyorum ki yani bunu yapamayan arkadaşa kusura bakmayın bir puan zor veririm. O da ismini yazdığı için. Çünkü bomboş son anda son on dakikada bir ödev yapmış. Belki hocam puan verir diye. Sonra hocam niye bu kadar düşük yani. Yani sen burada dersin en basit bir gereksinimi yerine getirmeysen kusura bakma yani bu derste...
+
+63
+00:18:54,740 --> 00:19:18,960
+İkinci, üçüncü döneme gelmiş bir öğrenciye ben bu derste buradan puan vermem. Birinci sınıf olsa neyse. En azından scan F'i yazabilmiş deriz. Yani scan yazmamış F'ini falan koymuş deriz. Ama artık bunlar belli bir olgunluğa geldiğinizde ve o olgunluğa ait kazanımları sergilemeniz gerektiğini gösteren şeyler, önemli detaylar.
+
+64
+00:19:22,867 --> 00:19:27,027
+Değişken tanımlarıyla alakalı, yani onlar da var arkadaşlar.
+
+65
+00:19:28,867 --> 00:19:33,708
+Mesela çok şey bir hastalık, çoğunuzda görüyoruz.
+
+66
+00:19:34,367 --> 00:19:41,667
+Her değişken tanımlarında initialization yapıp değişkenlerin içeriğini boş bırakmak için işte dizilerde, birazdan bugün göreceğiz.
+
+67
+00:19:41,807 --> 00:20:09,347
+Statik kullanıyor. Fakat statik kullanmanın sadece değişkenin değerlerini sıfırladığı anlamına geldiği diye bir şey yok arkadaşlar. Statik başka amaçlarla da kullanılır. Yani sadece bunu değişkenin içeriklerini sıfırlamak için kullanırsan yanlış yaparsın ki yanlış yapılıyor. Yani içi boş olsun diye direkt başına statik yazıyor. Şuraya iki satır bir şey yazmıyor. For döngüsü yazmanı da gerek yok. Onu anlatacağım. Bir elemanı sıfır yapsan yeterli. Onu yazmıyor.
+
+68
+00:20:10,003 --> 00:20:15,583
+Statik diye bir şey yazıyor. Bu problemle tekrar aşağıda başka sorunlarla karşılaşıyoruz.
+
+69
+00:20:16,844 --> 00:20:20,503
+Veya global değişken kullanma diyoruz, global değişken kullanıyor.
+
+70
+00:20:20,503 --> 00:20:28,284
+Global değişken kullanınca bu sefer asistan arkadaşlar veya bizler diyoruz ki kullandığın için %30-%40 puanın gider.
+
+71
+00:20:33,044 --> 00:20:56,244
+Burada yok. Yani DFC'de benim yazdığım şeyde çalıştırırsanız öyle bir şey gönderirseniz o kodun çalışmadığını görürsünüz. Biz çalışıp o şekilde yazmanızı istiyoruz. Çünkü bu ders yapısal bir programlama. Yapısal programında onu kullanmanızı istemiyoruz. Bu sadece bizim bölümün kafasından ürettiği bir şey değil.
+
+72
+00:21:00,756 --> 00:21:22,836
+Evet. Mesela diyeceğim ki Java'da da kullanın. Java'da, ben Java dersine önceden giriyordum, şimdi pek girmem de artık. Java'da da diyeceğiz ki burada kullanın. Niye burada kullanın? Yukarıda kullandığın i ile aşağıda kullandığın i birbirinden bağımsız olabiliyor. Orada da kullanın diyeceğiz. Kullanmamazlık etmeyin diyeceğiz.
+
+73
+00:21:24,339 --> 00:21:29,839
+Çünkü birisi objekt oriyentli mantığı veya farklı bir program olalı değil, birisi farklı değil.
+
+74
+00:21:30,739 --> 00:21:32,279
+Evet, devam edelim.
+
+75
+00:21:32,779 --> 00:21:34,839
+Şimdi, bugünkü konumuz pre-prosesör.
+
+76
+00:21:35,599 --> 00:21:44,299
+Şimdi bir C programı gördüğünüzde, şu ana kadar karşınıza çıkabilecek yapıların analizi ile ilgilenir. Bakın herhangi bir kod yazmadık arkadaşlar şimdiye kadar.
+
+77
+00:21:44,299 --> 00:21:49,179
+Yani bir tasarım, dizayn oluşturmadık. Bir problem alıp onu çözmeye çalışmadık.
+
+78
+00:21:49,491 --> 00:22:16,051
+Daha hala programların analizini yapıyoruz şu ana kadar. Değişkenleri analiz ettik vs. Pre-processing, özellikle int-main öncesinde yazılan ve işte şu diyez ile define'larla, type definition'larla,
+
+79
+00:22:17,107 --> 00:22:37,548
+Başlayan, derleme zamanında yapılan işlemlerle alakalı diyor konumuz. İşte burada makro substitution'lar, makronun tanımlanması ve remove edilmesi, makrolarla fonksiyonların karşılaştırılması, ki bunu daha fonksiyonları görmediğim için tam işlemeyeceğiz. Hazır makrolar, koşuldu derleme işlemleri.
+
+80
+00:22:38,708 --> 00:22:45,108
+İnkulut işlemleri, satır kontrol işlemleri, bugün bunlara bakacağız.
+
+81
+00:22:45,108 --> 00:22:50,748
+Vaktimiz kalırsa da storage classlara geleceğiz. Muhtemelen kalacaktır vaktimiz.
+
+82
+00:22:50,748 --> 00:23:02,008
+Şimdi bütün pro prosesör direktifleri arkadaşlar, pound sign ile, yani dies dediğimiz.
+
+83
+00:23:04,692 --> 00:23:11,852
+Herhangi bir boşluk bırakmadan bunun önüne define gibi bir şey yazıyorsunuz. Bu şekilde başlatılıyor.
+
+84
+00:23:14,352 --> 00:23:23,852
+Bütün C deyimleri neredeyse noktalı virgülle bitiyordu. İstisnaları vardı. İmparatif olmayanlarda noktalı virgül yoktu.
+
+85
+00:23:25,392 --> 00:23:30,192
+Makro komutları herhangi bir şekilde noktalı virgül kullanmayacaksınız arkadaşlar.
+
+86
+00:23:31,220 --> 00:23:58,740
+Define dediğiniz şeyden sonra bir etiket yazıyorsunuz. Bu etiketin yerine geçecek bir şeyi bir boşluk bırakıp gerçekliyorsunuz. Eğer ki yazdığınız şey birden fazla satırda olacaksa, işte long, aşağıya yazacaksınız bazı şeyleri, diye sembolü ekliyorsunuz oraya ve programı yazıp devam ediyorsunuz. Şuraya da herhangi bir şekilde noktalı virgül.
+
+87
+00:23:59,700 --> 00:24:02,700
+Ne yapıyoruz? Koymuyoruz.
+
+88
+00:24:07,200 --> 00:24:10,200
+Backslash'ı da birden fazla satırda
+
+89
+00:24:11,300 --> 00:24:13,700
+Macro definition'i yazmak için kullanıyoruz.
+
+90
+00:24:14,200 --> 00:24:17,300
+Şimdi bu ne yapıyor arkadaşlar? Programınız içerisinde
+
+91
+00:24:19,000 --> 00:24:23,000
+bir şeyler yazdınız yazdınız. İşte long macro diye bir şey çağırdınız.
+
+92
+00:24:23,900 --> 00:24:27,300
+Bunu nerede çağırabiliriz? Bir string içerisinde bir
+
+93
+00:24:27,508 --> 00:24:31,867
+String fonksiyonunu da çağırabiliriz veya printf içerisinde çağırabiliriz.
+
+94
+00:24:33,387 --> 00:24:38,508
+Şimdi bu ifadenin karşılığı derleme zamanında,
+
+95
+00:24:39,788 --> 00:24:42,108
+bunun karşılığı neyse buraya kopyalanıyor.
+
+96
+00:24:43,128 --> 00:24:46,447
+Fonksiyon çağrıları vardı. Örneğin scanf.
+
+97
+00:24:48,248 --> 00:24:53,628
+Fonksiyon çağrılarında bir jumping dallanma işlemi vardır. Biz jumping ilgili fonksiyona gideriz.
+
+98
+00:24:54,996 --> 00:25:01,655
+Burada tam tersi var. İlgili makro bize geliyor. Tamam mı? Bizim çağırdığımız yere geliyor.
+
+99
+00:25:01,655 --> 00:25:15,736
+Bunu çağırınca biz onun tanımlandığı yere gidiyoruz fonksiyonunda. Makroda tanımlanmış makro bizim çağırdığımız yere geliyor. Birbirinin tam simetriği gibi düşünün. Bu önemli bir ayrım.
+
+100
+00:25:15,736 --> 00:25:19,836
+Birazdan bakacağız tekrardan ne oldu.
+
+101
+00:25:21,907 --> 00:25:24,467
+Veya başka Substitution'lar var.
+
+102
+00:25:26,268 --> 00:25:36,407
+Yani asıl makro niye tanımlanır gibi, ne işimize yarar dersek, örnek olarak şunu verebiliriz arkadaşlar.
+
+103
+00:25:38,487 --> 00:25:45,147
+Nümerik Konstant'ların tanımlanmasıyla alakalı en fazla kullandığımız amaçtır bu.
+
+104
+00:25:47,700 --> 00:25:49,799
+Etiketlendirmelerde kullanıyoruz.
+
+105
+00:25:52,140 --> 00:25:59,559
+Örnek olarak, BufferLand diye bir etiket yazmışız. Genellikle Buff isimleri de büyük harfle olur.
+
+106
+00:26:00,359 --> 00:26:08,119
+Bunun bir preprocesör deyimi olduğunu anlamanız için, normal bir değişkenden farklı olduğunu görmeniz için bunlar böyledir.
+
+107
+00:26:08,948 --> 00:26:16,988
+Mesela yapısal programlamada önceden şu vardı. Global bir değişken tanımlayacak şey, objek oryantı da, Java da gösterirler belki.
+
+108
+00:26:17,887 --> 00:26:21,528
+İşte bir global değişken tanımlayacaksanız alttan tırayla başlardı.
+
+109
+00:26:22,288 --> 00:26:26,127
+İşte alttan tıraya at. Lokal bir değişken sadece at idi.
+
+110
+00:26:26,907 --> 00:26:30,788
+Sen bunu alttan tıraya algılayınca diyorsun ki bu global bir değişken.
+
+111
+00:26:30,887 --> 00:26:33,867
+Bunu da bu şekilde görünce bu bir makro definisyonu.
+
+112
+00:26:34,867 --> 00:26:35,907
+Tamam mı?
+
+113
+00:26:36,788 --> 00:26:56,828
+Şimdi bir karakter dizisi oluşturulmuşuz. Boyutu şu kadar, 512 buradaki kadar. Bu bize ne anlam ifade ediyor? Bu program değerlenme aşamasında bunun yerine şuradaki karşılığı ne yapılacak? Kopyalanacak. İşte 512 sayısı gelecek, kopyalanacak gibi. Böyle bir şey sonucu var.
+
+114
+00:27:06,228 --> 00:27:07,668
+Waffer Land ediniz.
+
+115
+00:27:10,468 --> 00:27:21,888
+Dolayısıyla programın her yerinde gidip şu 512, 512 değiştirmek yerine bir defa buradakini değiştirip bütün değişikliğin genel programın bütün geneline yansıtmanız mümkün.
+
+116
+00:27:23,008 --> 00:27:23,828
+Bu güzel bir şey.
+
+117
+00:27:25,168 --> 00:27:27,008
+Bunu biz başka yerde nerede kullanacağız?
+
+118
+00:27:27,008 --> 00:27:32,768
+İşte jenerik programlama dediğimiz, özellikle Object Orient'da daha detayı var.
+
+119
+00:27:37,236 --> 00:28:01,116
+Tekniklerde kullanıyoruz. İşte bir şeyin tipi. Mesela karakter dizisi oluşturuyorsunuz. Ben burada karakter dizisi yerine daha şöyle bir şey yapsam. Define. Tip desem. Küçük yani Türkçe yazalım. Integer desem. Şuraya getirip tip yapsam.
+
+120
+00:28:02,836 --> 00:28:10,296
+Bu program daha global, jenerik bir hale geçiyor. Tabii bunun daha da jenerik halleri var. Onlara daha sonra bakarız.
+
+121
+00:28:16,564 --> 00:28:18,884
+Nerede 512 int olarak tanımlasak?
+
+122
+00:28:24,243 --> 00:28:28,343
+Şu şekilde mi? int n 512
+
+123
+00:28:31,403 --> 00:28:35,243
+Bu şekilde yaparsanız bellekten bir alan oluşturmuş olursunuz.
+
+124
+00:28:38,063 --> 00:28:41,643
+Şunu diyorsunuz. İşte bunun yerine de getirip n yazalım diyorsunuz.
+
+125
+00:28:44,203 --> 00:28:49,583
+Bu derleme zamanında oluşan bir şey. Şu derleme öncesinde oluşan bir şey.
+
+126
+00:28:49,971 --> 00:28:54,332
+Değerleme zamanında 512'lik bir dizi oluşturamayabilirsiniz.
+
+127
+00:28:56,112 --> 00:29:02,251
+Ama değerleme öncesinde gidip oraya 512 yazdığınızda program değerlenir.
+
+128
+00:29:04,311 --> 00:29:09,211
+Dinamik bir işlemden bahsediyorsunuz bunu yaparken. Bu iyi bir şey değil.
+
+129
+00:29:13,203 --> 00:29:16,783
+Tamam. Değerleme öncesinde olan bir şey bu.
+
+130
+00:29:22,451 --> 00:29:22,951
+Evet.
+
+131
+00:29:32,564 --> 00:29:42,864
+Şimdi makrolar başka ne için kullanılır? Bu şekilde bir değişkenin, bir sabit değişkeni bir şey yazmak için, eklemek için kullanabiliyoruz.
+
+132
+00:29:43,923 --> 00:29:47,024
+Bir de fonksiyon benzeri makrolarımız var arkadaşlar.
+
+133
+00:29:49,003 --> 00:29:55,203
+Örneğin iki sayıyı toplayacaksınız, çarpacaksınız veya başka bir işlem yapacaksınız.
+
+134
+00:29:55,203 --> 00:29:59,203
+Bu amaçla da makro kullanılıyor. Ama makronun hepsinde...
+
+135
+00:30:00,948 --> 00:30:17,068
+Önemli olan şey, makro sizin çağırdığınız yere geliyor. Fonksiyon sizin çağırdığınız tanımlandığı yere gidiyor. Bunun ayrımını çok iyi yapın. Biraz önceki şekliyle de olsa, şimdiki şekliyle de olsa sizin çağırdığınız yere gidiyor.
+
+136
+00:30:23,571 --> 00:30:30,191
+İyi küçüktür 512 diye bir şey olacak. O program çalışırken artık bunu bu şekilde algılayacak.
+
+137
+00:30:32,131 --> 00:30:34,651
+Sadece derleme öncesinde olan bir mevzu.
+
+138
+00:30:35,871 --> 00:30:41,011
+İşte burada da bir isim verdiniz arkadaşlar makronuza.
+
+139
+00:30:42,611 --> 00:30:47,251
+Daha sonra burada kullanılacak parametreyi alabiliyorsunuz parantez açarak.
+
+140
+00:30:47,731 --> 00:31:13,671
+A parametre. Bakın herhangi bir şekilde tip yazmadık. Buraya bir A gelecek. Niye parametre yazmadık? Çünkü bu bir fonksiyon değil. Biz programda nerede çağırdıysak bunu onun yerine kopyalanacak demektir. Sonra diyor ki büyük bir dışta parantez açmış. Bunun niçin olduğunu söyleyeceğiz. İçeride bir parantez A var. Artı içeride bir başka parantez A var. Bu şekilde duruyor.
+
+141
+00:31:14,516 --> 00:31:19,956
+Şimdi şöyle bir şey yaptığımızda, intj diyelim, flowout f diyelim.
+
+142
+00:31:21,516 --> 00:31:26,115
+5 olarak giden bir şey, parametre olarak. Aslında gitmeyecek.
+
+143
+00:31:27,216 --> 00:31:32,155
+Multiply by 2 dediğimizde program çalışma esnasında şöyle bir şey kopyalanacak buraya.
+
+144
+00:31:33,056 --> 00:31:39,576
+5 artı 5. Program çalışırken, yani değerleme sırasında.
+
+145
+00:31:41,683 --> 00:31:55,504
+Bu gelen değer ne olacak arkadaşlar? Burada hesaplanıp sonucu verilecek. Bu satırda da bu sefer 2.5 ardı 2.5 bu şekilde bir şey kopyalanacak ve bu çalıştırılacak.
+
+146
+00:31:56,784 --> 00:32:00,124
+Bakın noktalı virgül eklemedik. Bu önemli bir detay.
+
+147
+00:32:00,624 --> 00:32:05,484
+Noktalı virgül yok. Şurada da herhangi bir şekilde eşittir meşittir kullanmadık.
+
+148
+00:32:06,524 --> 00:32:07,544
+Buna da dikkat edin.
+
+149
+00:32:08,948 --> 00:32:33,388
+Şu iki özellik. Herhangi bir type checking de yok. Integer gibi, float gibi bir şey yazmadık. Örnek olarak şöyle bir örneğimiz de var. İki sayıdan büyüğünü bulmak istiyoruz. Bakın burada bir C deyimi var. Minimum A virgülü B. İki tane parametre almış. Araya virgül ekledik. Herhangi bir type checking yok.
+
+150
+00:32:36,147 --> 00:32:57,907
+Burada A küçükse B'den, bunun bir sonucu olacak. İşte soru işareti, işte küçükse A küçüktür, değilse B küçüktür. Niye her bir değişkenin önünde parantez kullanıyoruz? Ona geleceğiz arkadaşlar. Şu an bu şekilde parantez kullanmadan da olur mu? Olur. Bu şekilde bir şey yapabiliyoruz.
+
+151
+00:32:59,571 --> 00:33:25,571
+Çağrılması nasıl olur peki? Şu ifadeyi böyle çağırdık. Program içerisinde bir yerde printf dediniz. %d dediniz. Mesela minimum eksi 3,6. Bu şekilde de çağıracaksınız. Nasıl tanımlandıysa burada tanımlaması bu şekilde. Tanım önemli.
+
+152
+00:33:26,259 --> 00:33:28,259
+Burada bu şekilde çağırıyoruz.
+
+153
+00:33:30,359 --> 00:33:35,220
+Sorun yok herhalde. Diyor ki, şu örneğimiz, bunu siz çalışın.
+
+154
+00:33:35,740 --> 00:33:38,299
+Bunun daha sonra farklı bir
+
+155
+00:33:39,579 --> 00:33:42,899
+usulünü göstereceğim. Üç tane örnek için
+
+156
+00:33:44,179 --> 00:33:48,539
+Yani üç sayıdan en küçüğünü bulan bir fonksiyonu makroyu yazın.
+
+157
+00:33:49,299 --> 00:33:51,339
+Bunu kendinize bakarsınız.
+
+158
+00:33:51,859 --> 00:33:52,879
+Biz daha sonra
+
+159
+00:33:54,036 --> 00:34:08,235
+Belki burada da vardır. Daha sonra bakacağız. Makroların kullanımında bir side effect var. Bu side effect de nedir? Gönderilen parametreler ait işlem önceliğinin karıştırılmasıdır.
+
+160
+00:34:12,980 --> 00:34:20,739
+Şöyle bir minimum şeyi tasarladık. Bulma makrosu. Bunu programın içerisinde bu şekilde kullanıyoruz.
+
+161
+00:34:20,739 --> 00:34:27,739
+Şimdi B++ gönderdiğimizde buraya bu şekilde kopyalanacak.
+
+162
+00:34:30,867 --> 00:34:37,007
+Bunu bu şekilde çeviriyoruz. O zaman B artı artının önce yapılmasını sağlayan burada bir şey var.
+
+163
+00:34:39,307 --> 00:34:42,127
+Kısım var. Burada problem yok.
+
+164
+00:34:43,148 --> 00:34:43,927
+Ama
+
+165
+00:34:44,688 --> 00:34:45,967
+Problem şurada.
+
+166
+00:34:46,988 --> 00:34:49,547
+Eşittir operatörünü burada kullanıyoruz.
+
+167
+00:34:51,087 --> 00:34:52,367
+Şimdi B'yi
+
+168
+00:34:52,887 --> 00:34:56,208
+3 artı artı gönderdik. Bunu da 6 gönderirim.
+
+169
+00:34:57,523 --> 00:34:59,243
+Hatta 4 gönderelim pardon.
+
+170
+00:35:04,083 --> 00:35:10,263
+3 artı artı ve 4. 3 artı artı burada önce ne yapılacak? Hesaplanacak arkadaşlar. Yani 4 diyecek.
+
+171
+00:35:11,863 --> 00:35:20,363
+4 diyecek. Ve burada bir mesela sayede efekt oldu. Karşılaşmadığımız bir durum var. Ne büyüktür ne küçüktür.
+
+172
+00:35:21,043 --> 00:35:27,823
+Hani bunun 2 artı artı diyelim. Bunun 4 diyelim. Ne oldu? 2 artı artı burada 3 olacak.
+
+173
+00:35:28,663 --> 00:35:31,023
+Burada 4 var. Şart doğru mu? Doğru.
+
+174
+00:35:32,115 --> 00:35:43,836
+Şart doğru olduğu için ne çalışacak? Burası çalışacak. Eşittir operatöründen önce şu artı artı operatörü A eşittir, B artı artı bu şekilde yapılacaktır.
+
+175
+00:35:45,056 --> 00:35:56,675
+O zaman önce A'yı arttır demektir. A'ya B'yi ata demektir. Sonra B'yi arttır. A'nın içerisinde biz neyi göreceğiz? 3'ü göreceğiz. B'nin değeri daha sonra 4 olacak.
+
+176
+00:35:57,536 --> 00:35:59,695
+Halbuki bizim 3 diye bir şeyimiz yoktu belki.
+
+177
+00:36:00,596 --> 00:36:25,715
+Bu tarz şeylere de burada dikkat etmek gerekiyor. Çünkü böyle bir şey gönderdiğinde bu hem buraya kopyalanacak, hem buraya kopyalanacak demektir. Nereye yazıyorsan oraya kopyalanıyor. Yani bir makro yazarken, tamam belki burayı sağlamak için doğru bir şey yapıyorsun ama şurada da aynı şeyin olacağını unutmamak gerekiyor. Oraya kopyalanıyor doğrudan. Bu side effect.
+
+178
+00:36:27,635 --> 00:36:36,716
+Makrolar ve fonksiyonlar. Fonksiyonları siz geçen dönem gördünüz. Onun için şimdi basit bir kıyaslama yapabiliriz ama daha detaylı kıyaslamayı daha sonra göreceğiz.
+
+179
+00:36:38,796 --> 00:36:51,516
+Makrolar genellikle fonksiyonlardan daha hızlıdır. Neden hızlıdır? Çünkü biz bir fonksiyonun tanımlandığı yere gidiyoruz. Ve oradan geri geliyoruz.
+
+180
+00:36:52,724 --> 00:37:01,503
+Giderken, gelirken yapılacak bazı şeyler var. Örneğin bazı yedeklemeler yani backup işlemleri var. Bu backup işlemleri zaman alıyor.
+
+181
+00:37:03,264 --> 00:37:09,564
+Backup ve restore diyelim. Dönüşte de restore var. Neyi backup ediyoruz? Neyi backup edebiliriz sizce?
+
+182
+00:37:11,524 --> 00:37:17,184
+Hocam bir fonksiyona gidiyoruz. Yani ne backup edebiliriz ki? ScanF fonksiyonu veya PrintF'e gittik, çağırdık.
+
+183
+00:37:18,884 --> 00:37:19,503
+Burada bir...
+
+184
+00:37:21,331 --> 00:37:28,331
+Backup ve Store işlemi var bu programı, bu kodu yazdığınızda. Ne backup ediliyor olabilir?
+
+185
+00:37:33,811 --> 00:37:58,572
+Offset değişkenlerin değerleri. Evet. Şimdi Asamble'de bunu daha detaylı göreceksiniz. Burada da farklı bir şekilde anlatacağız. Şimdi program satır satır çalışıyor. Bu çalışılan satırın bilgisi, program counter yani işlemcideki registerların değerleri, programdaki değişkenlerin değerleri bir şekilde saklanması lazım. Çünkü bu başka bir program.
+
+186
+00:38:00,052 --> 00:38:22,891
+Kendi yazdığınız bir fonksiyon olsa bile başka bir şey. Programın kaldığı yerden sağlıklı bir şekilde devam etmesi için ne yapmak gerekiyor arkadaşlar? Önce bir backup yapacağız. Sonra programın return'ünü gördükten sonra return. Her bir programın, alt programın return'ı olmak zorundadır. Restore ile kaldığımız yerden devam edeceğiz.
+
+187
+00:38:23,372 --> 00:38:27,632
+Bu gidip gelmelerde oluşan şu yedekleme işlemleri bir sıkıntıdır.
+
+188
+00:38:30,483 --> 00:38:40,463
+Ama makrolarda böyle bir şey yok. Çünkü makro ne yapıyor? Doğrudan biz nereye çağırırsak o kendini kopyalıyor. Herhangi bir şey yok. Programımız olduğu gibi duruyor yani.
+
+189
+00:38:42,844 --> 00:38:52,023
+Bir de fonksiyonların tanımlanmasında avantaj olarak makrolara göre tip kısıtlaması yoktur.
+
+190
+00:38:54,675 --> 00:39:01,596
+Birden fazla data tipine göre makroyu gerçekleyebilirsiniz. Ama fonksiyonları da biraz daha kısıtlı.
+
+191
+00:39:03,115 --> 00:39:06,076
+Makronun dezavantajlarına hızlıca bakalım.
+
+192
+00:39:08,675 --> 00:39:18,235
+Makro argümanları tekrar değerlendiriliyor. Her makro definition'ın bahsedilmesinde.
+
+193
+00:39:19,155 --> 00:39:32,435
+Beklenmedik sonuçlarla karşılaşıyor. Özellikle side effect içeren bir makro tanımladıysanız, bu makro tanımlanmasında sıkıntı yaşıyorsunuz.
+
+194
+00:39:32,435 --> 00:39:41,596
+Yani şu makroyu iki defa çağırmak, şunu iki defa çağırmak, a eşittir b artı artı virgül c, minimum b artı artı c şurayı.
+
+195
+00:39:42,228 --> 00:39:47,347
+Bir sürü sorunlarla karşılaşması sebep olabilir. Onun için makroyu dikkatli tanımlamak gerekiyor.
+
+196
+00:39:49,268 --> 00:39:55,548
+Fonksiyon yazarken daha düzgün bir şekilde, neat bir şekilde yazabiliyoruz.
+
+197
+00:39:56,568 --> 00:40:02,708
+Parantezlerle, noktalı büküllerle, alt satıra geçme, indentation kuralı. Makroda bu biraz daha zor oluyor.
+
+198
+00:40:10,804 --> 00:40:38,244
+Şimdi fonksiyon arkadaşlar, derlenir. Derleme zamanında ve program çalışması esnasında bir jump yapılır. Bu hep söylediğim şey şimdiye kadar. Fakat makroda programınız expand edilir, genişletilir. Yani bir C programı içinde burada bir makro tasarı çağırdınız, burada bir makro çağırdınız, burada bir makro çağırdınız.
+
+199
+00:40:38,739 --> 00:40:44,739
+Bu çağırdığınız makronun yerine yukarıda tanımladığınız makronun bütün değerleri gelir kopyalar ve expand işlemi yapılır.
+
+200
+00:40:49,844 --> 00:40:56,444
+Şimdi makrolar dedi ki, argüman tiplerini check etmiyor. Tamam, bu güzel bir şey.
+
+201
+00:40:57,164 --> 00:41:02,844
+Ama bir açıdan kontrol sizde. Yani argüman tiplerini kontrol edeceksiniz.
+
+202
+00:41:05,123 --> 00:41:14,404
+Şimdi bir program makro içeriyorsa programı debug etmek zordur. Hatta bazen imkansızdır. Çünkü zaten
+
+203
+00:41:14,612 --> 00:41:39,032
+Değerleme öncesinde gelmiştir değerler, kopyalanmıştır, program şekillenmiştir. Değerlemeyi biz nasıl yapıyoruz? Şey pardon, debug etmeyi nasıl yapıyoruz? Adım adım çalıştırıyoruz. Çalıştırdığımız kodda ne var? Makrolar var. Ama makro zaten geldi, programın yani makine kodunda olması gereken yerine yerleşti. Gördüğümüz kodla arkada çalışan kod arasında.
+
+204
+00:41:39,507 --> 00:41:55,507
+Farklılık görüyor gibi oluruz. Ve bu bize bir debugda problem yaşatıyor. Çünkü ekstra burada source kodumuz farklı translationlara geçiyor. Bunlar bazı şeyleri.
+
+205
+00:41:55,507 --> 00:42:01,507
+Şimdi bir makronun definition'ını iptal edebilirsiniz. Özellikle program içerisinde bunu yapıyoruz.
+
+206
+00:42:03,923 --> 00:42:09,923
+Bunu undefiniş metodu ile, direktifi ile rahat bir şekilde kaldırabiliyoruz.
+
+207
+00:42:13,427 --> 00:42:38,387
+Normalde tanımlanmış bir makro, Source kodun en sonuna kadar devam eder, kendi değerini tutar. Fakat istediğiniz yerde özellikle bir if kullanıp o definition'ı geçersiz kılmak, ebol işte diyor deniyor buna yani veya annul, geçersiz hale getirmek, null etmek için şu an definition'ı kullanıyoruz.
+
+208
+00:42:43,603 --> 00:42:46,163
+Undefine etmeden tekrar define edilmiyor.
+
+209
+00:42:52,947 --> 00:42:59,087
+Şimdi undefine ettikten sonra tekrar define etmek mümkün. Ona daha sonra bakacağız.
+
+210
+00:42:59,867 --> 00:43:06,007
+Bu konu iki defa karşımıza gelecek muhtemelen. Bir de 10. haftalarda göreceğiz.
+
+211
+00:43:07,028 --> 00:43:11,127
+Yaptığımız şey şu arkadaşlar, define false diye bir şey tanımlamışız.
+
+212
+00:43:12,407 --> 00:43:18,028
+Burada herhangi bir bazı şeyler yazdınız. Programımızın içerisinde undefine edip false'u
+
+213
+00:43:18,963 --> 00:43:37,963
+Bunu geçersiz kılıyorsunuz. Bunu define ettikten sonra eğer define yazmamışsanız aradaki satırlarda bu makroyu çağıramıyorsunuz. Buraya kadar define, bundan sonra undefine. Aradaki satırlarda bu çağırılmaz. Sonra tekrar define edip tekrar requiring başka şeyler yapabiliyorsunuz.
+
+214
+00:43:46,324 --> 00:44:12,444
+Şimdi şöyle bir şey yapmak da mümkün arkadaşlar. Define. GetOs diye bir makromuz olsun. Küçük yazdım ama önemli değil. Şurada da bir fonksiyon var. GetOperationSystem diye. Gidecek, Operasyon Sistemin adını öğrenecek. Operasyon Sistemin adına göre, işte diyecek ki Linux ise şu şekilde çalıştır, Windows ise bu şekilde çalıştır diyebiliyorsunuz.
+
+215
+00:44:13,012 --> 00:44:21,632
+İleride bunu undefined edebilirsiniz. Bu şekilde şartlı bir değerleme gerçekleşebiliyor.
+
+216
+00:44:21,632 --> 00:44:38,132
+Hazır makrolarımız var. Bu hazır makroları şuradaki iki tane underscore karakterinin eklenmesiyle anlayabiliriz. Bunların hepsi expand ediyor. Niye expand'dem yazdık buraya?
+
+217
+00:44:38,547 --> 00:44:47,268
+Çünkü programda ne çağırdıysanız bu makronun tanımlarında gidecek yazılan, yani şöyle bir şey yapılmıştır.
+
+218
+00:44:53,652 --> 00:45:17,031
+İşte line. Program hangi satırda? Burada bir definition vardır. Şu definition, nerede bunu çağırıyorsanız gelip yerine kopya. Onun için bunlar expand ediyor. Neyi expand ediyormuş? Programda çağrılan yeri hangi satırda olduğumuzu söylüyor. Debug'da kullanılır. Hangi dostluğunun adıdır? Bu onu söylüyor.
+
+219
+00:45:18,036 --> 00:45:23,316
+Programın değerleme zamanını gönderiyor. Ne zaman değerlenmiş?
+
+220
+00:45:23,316 --> 00:45:25,716
+Değerleme tarihini gönderiyor.
+
+221
+00:45:27,716 --> 00:45:36,796
+Eğer programınız ansız standartıyla uygunsa, burada bir değerini gönderiyor size.
+
+222
+00:45:37,476 --> 00:45:41,635
+Derleyicinizin programınızı diyorum. Derleyiciniz ansız standartıyla uygunsa.
+
+223
+00:45:44,115 --> 00:45:52,815
+Örnek olarak Print versiyon demişiz. Program işte herhangi bir fonksiyon arkadaşlar. Bu fonksiyonu çağırdınız.
+
+224
+00:45:52,815 --> 00:46:09,375
+İşte bu program şu saatte, şu tarihte, şu saatte ne oldu? Değerlendi. Bu değerlenme zamanını, programın o anki çalışma zamanı değil arkadaşlar, değerleme zamanını
+
+225
+00:46:09,619 --> 00:46:18,059
+Bunu değerlendirirseniz, başka bir zamanda çalıştırdığınızda ne yapar size bu bilgileri getirir.
+
+226
+00:46:18,059 --> 00:46:27,539
+Sonra programınız çalışıyor, bulunduğunuz kodun hangi satırda olduğunu görmek istiyorsunuz. Kaçıncı satır?
+
+227
+00:46:27,539 --> 00:46:34,667
+İşte şurada bir %d ile, burada bir %s ile bunları yazabiliyorsunuz. Bu şekilde konar.
+
+228
+00:46:35,380 --> 00:46:42,200
+Yani bu bir notasyondur. Alttan tıra, alttan tırayı gördüğünüzde built-in hazır makrolar olduğunu görmemiz lazım.
+
+229
+00:46:42,980 --> 00:46:46,880
+Buradan yola çıkarak koşullu değerleme yapabilmemiz de mümkün arkadaşlar.
+
+230
+00:46:49,060 --> 00:46:59,360
+Koşullu değerleme, C'nin içerisinde bazı şart ifadelerinin kullanılması anlamına geliyor.
+
+231
+00:47:01,108 --> 00:47:09,108
+Programınızın bazı satırlarını derleyebiliyorsunuz, bazılarını derlemiyorsunuz. Yaptığı şey bu.
+
+232
+00:47:09,108 --> 00:47:20,108
+if ve else ifadeleriyle ama c'deki if else değil, preprocesörlerdeki if else deyimlerle ilgili.
+
+233
+00:47:20,108 --> 00:47:27,916
+Ve burada if, else, elif ve andif kullanılıyor. Detaylarına bakacağız.
+
+234
+00:47:29,460 --> 00:47:53,900
+Bu program geliştirme aşamasındaki debugging de debugging sırasında özellikle kullanışlıdır, iyidir. Çünkü programınızın farklı seksiyonlarını farklı değerlere göre çalıştırıp çalıştırmamak konusunda siz karar verebilirsiniz.
+
+235
+00:47:56,019 --> 00:48:02,260
+Bütün compiler'lar, command line option dediğimiz bir şeye sahiptir arkadaşlar.
+
+236
+00:48:02,260 --> 00:48:04,780
+Command line argümanlarını daha sonra göreceğiz.
+
+237
+00:48:05,980 --> 00:48:14,019
+Bu sayede makroların değerleme aşamasında compile edilmesini, tanımlanmasını sağlıyor.
+
+238
+00:48:14,019 --> 00:48:19,619
+İşte diyor ki, debug modunu aç ve test programını ona göre çalıştır gibi.
+
+239
+00:48:21,140 --> 00:48:22,900
+Bunu kullanılmış şekilde.
+
+240
+00:48:24,628 --> 00:48:40,628
+Condition Expression, if ile başlıyor arkadaşlar. And if ile bitmek zorunda. Eğer birden fazla şart yazmak istiyorsanız, if yazıyorsunuz, birden fazla. Else yazarak, Default Switch gibi Default durumunu yazıyorsunuz.
+
+241
+00:48:48,851 --> 00:49:10,111
+X eşittir 1 ise undefiniş yap. X'in undefinişini yazdık. Sonra tekrar X'i define et X 0 olsun. X eşittir 2 ise önce X'i undefiniş yap. X'i 3 yap. Tekrar tanımla. X eşittir işte şey ise bu X değişkeni programın başka bir yerindeki integer X değişkeni olabiliyor.
+
+242
+00:49:15,155 --> 00:49:17,715
+Herhangi bir şekilde parantez kullanmaya gerek yok.
+
+243
+00:49:21,556 --> 00:49:29,696
+Braces, Arnath, bunların kapatılmasına gerek yok. Bir saniye arkadaşlar.
+
+244
+00:49:34,739 --> 00:49:48,739
+Her bir if bloğu, birden fazla if bloğu içerebiliyor. Fakat, Switch'te olduğu gibi bir tane else bloğu içerecek ve bu da en sonunda olacaktır.
+
+245
+00:49:49,939 --> 00:49:53,139
+Her birisi endif ile tamamlanacak demektir.
+
+246
+00:50:02,708 --> 00:50:21,168
+Şimdi, ifDefinedTest eğer bu tanımlanmışsa, veya ifDefinedMacroname, ifNotDefinedMacroname, bunlar programlama ile birleştireceğimiz şeyleri. Bunlardan bazı türetilen ifadeler var.
+
+247
+00:50:23,168 --> 00:50:25,867
+Doğrudan, aslında bunlar da bir makro.
+
+248
+00:50:26,612 --> 00:50:31,472
+Bir şeyin test edilip edilmediğini kontrol ediyor. Bunu doğrudan bu şekilde de yazabiliyoruz.
+
+249
+00:50:31,992 --> 00:50:39,932
+If Defined dediğimiz, eğer bu define edilmiş mi? İkisini birleştiriyor arkadaşlar.
+
+250
+00:50:40,432 --> 00:50:45,552
+Bir makro define edilmiş mi edilmemiş mi? Bununla alakalı karar veriyor. Doğru veya yanlış.
+
+251
+00:50:46,332 --> 00:50:54,252
+Veya bunun tam tersi, eğer bu makro test edilmemişse doğru gönder, edilmişse yanlış gönder.
+
+252
+00:50:54,612 --> 00:50:59,352
+If not defined, if defined. Bu ifadelerde türetilmiş deyimlerdir.
+
+253
+00:51:07,827 --> 00:51:14,747
+Bunların detaylarına daha sonra geleceğiz arkadaşlar. Bunlarla alakalı basit örnekler yaparız.
+
+254
+00:51:16,027 --> 00:51:21,387
+Özellikle gelecek hafta laboratuvar saatinde bunları da içeren birkaç örnek yapacağız.
+
+255
+00:51:21,907 --> 00:51:25,227
+Include, kolaylığı, include özelliği dediğimiz şey.
+
+256
+00:51:26,507 --> 00:51:34,707
+Genellikle iki formda bize karşılık geliyor arkadaşlar. Bir çok kullandığımız büyüktür küçüktür karakterler arasında, bir de tırnak arasında.
+
+257
+00:51:35,380 --> 00:51:56,019
+Bu herhangi bir SOURCE kodun, hazır kodun programımıza dahil edilmesi ile alakalı şey. Bunu dahil etmek ne demek? Burada bir STD.IO var. Bu değerlenmiş bir. Burada da benim MY programım var.
+
+258
+00:51:57,715 --> 00:52:03,855
+Eğer ben bunu bir yana include edersem, sonuç olarak şöyle ikisi birleştirilirmiş.
+
+259
+00:52:04,875 --> 00:52:10,775
+Hangi değişkenleri kullanırsak, onun source kodundan buraya kopyalama yapılıyor bir anlamda. Makine kodunda.
+
+260
+00:52:11,275 --> 00:52:16,655
+Şimdi çağıracağımız şeyi arayacağımız bölgeye göre şu karakterleri değiştirebiliriz.
+
+261
+00:52:16,915 --> 00:52:18,715
+Büyüktür küçüktür diyor ki,
+
+262
+00:52:20,235 --> 00:52:23,835
+Standart include files are often located. Yani şurada
+
+263
+00:52:24,884 --> 00:52:30,523
+bulunan bütün dosyalara bakıyor. Sizin bulunduğunuz klasörün altının dışında başka yerlere de bakıyor.
+
+264
+00:52:31,543 --> 00:52:33,324
+Daha global bir arama var.
+
+265
+00:52:35,643 --> 00:52:39,224
+Şurada da programınız nerede çalışıyorsa
+
+266
+00:52:42,284 --> 00:52:44,603
+programınızın çalıştığı yere bakıyor arkadaşlar.
+
+267
+00:52:45,103 --> 00:52:48,183
+Yani işte C'nin içerisinde bir klasörde veya işte
+
+268
+00:52:49,203 --> 00:52:52,523
+kendiniz bir pet oluşturduğunuz, o petin altındaki
+
+269
+00:52:52,980 --> 00:52:56,560
+Bir dosyayı aramaya çalışıyor, onu include etmeye çalışıyor.
+
+270
+00:52:58,860 --> 00:53:01,180
+Bu include komutu
+
+271
+00:53:02,200 --> 00:53:03,220
+sizin
+
+272
+00:53:05,520 --> 00:53:07,580
+kendi header filenize
+
+273
+00:53:08,600 --> 00:53:09,620
+yani özel
+
+274
+00:53:11,920 --> 00:53:16,540
+header filenize programınızı daha modüle hale getirmenize imkan sağlıyor.
+
+275
+00:53:17,820 --> 00:53:20,380
+Dolayısıyla bu sayede kodunuz
+
+276
+00:53:20,755 --> 00:53:31,255
+Projeniz birden fazla source koda sahip olacak. Genellikle bunlar .h dosyalarında saklanacak.
+
+277
+00:53:31,255 --> 00:53:48,255
+Şimdiye kadar biz .c dosyalarını gördük. std.io. .h diyeyim bunun adı. İstesiz benim myprogram .h diye bir programımız olacak.
+
+278
+00:53:49,076 --> 00:54:04,076
+Bu program neleri içerecek? Headerları içerecek. Bu headerlar nedir? Sizin Structure Definition'larınız. Bakın sadece Data Structure Definition'larınız.
+
+279
+00:54:04,076 --> 00:54:15,916
+Makro Definition'larınız, fonksiyon prototifleriniz ve global datalarınız içerecek. Bu da çok sık yapılan bir hata. Arkadaş diyor ki tamam program modüler olsun.
+
+280
+00:54:16,403 --> 00:54:29,403
+Modüler olsun diye bir fonksiyon yazmış. F fonksiyonu içerisinde bir şeyler yapmış. Bunu bir .h dosyasının içerisinde koyuyor. Bir başka fonksiyon yazıyor. Onu da bir daha .h dosyasının içerisinde koyuyor.
+
+281
+00:54:29,403 --> 00:54:34,403
+İşte bir de ana program var. Orada da main yazıyor. Hayır, bu böyle bir şey değil.
+
+282
+00:54:37,844 --> 00:54:45,003
+Structure Definition'ları, Makro Definition'ları, fonksiyon prototipleri, H dosyasında, .h dosyasında yer alır.
+
+283
+00:54:45,783 --> 00:54:49,103
+Ve bu .h dosyasını programınızdan çağırırsınız.
+
+284
+00:54:49,103 --> 00:54:56,523
+Normal bu örneğin fonksiyonların gerçekleştirilmesi, implementasyon nerede olacak? Yine programınızın içerisinde olacak.
+
+285
+00:54:57,303 --> 00:54:59,344
+Tamam mı? Buna dikkat edelim.
+
+286
+00:55:00,123 --> 00:55:02,423
+Bundan sonra örneklerine bakacağız.
+
+287
+00:55:02,900 --> 00:55:08,900
+Bir sıkıntı var. Şu ekrana geçişlerinde bir mürekkep kalıyor ama...
+
+288
+00:55:10,900 --> 00:55:12,900
+Evet, Line Control demiş.
+
+289
+00:55:13,900 --> 00:55:21,900
+Şimdi şöyle bir değişken tanımlanmış arkadaşlar. Line 100 diye. Bakın illa bunu main öncesinde yazmak zorunda değiliz aslında. Program içerisinde de yazabiliriz.
+
+290
+00:55:25,876 --> 00:55:43,372
+Burada, biraz önceki örnekte olduğu gibi, programın değişkenlerini, Conditional Compilation yaparak bulunan satırları falan yazıyoruz.
+
+291
+00:55:48,659 --> 00:56:12,519
+Line Feature özellikle bir C programın text kodunu oluştururken, source text'ini oluştururken kullanışlıdır diyor. Şu nedir arkadaşlar? İşte line 100 demiş, böyle bir şey çağırmış. Burada bir değişken var, burada başka bir değişken var.
+
+292
+00:56:15,092 --> 00:56:25,092
+Henüz değerlenmemiş kodlarla alakalı, başka bir kısmın değerlenmesiyle alakalı kısımlar burada bize söylüyor.
+
+293
+00:56:25,092 --> 00:56:31,092
+Burada bir tanımlama yapmışız. Line 100 demişiz. Daha sonra Line 200 New Name demişiz.
+
+294
+00:56:31,092 --> 00:56:39,092
+Bunu daha sonra biz çalıştıracağız. Böyle bir ifadeyi yapabilmek mümkün. Daha sonra bunun örneklerini de yapacağız.
+
+295
+00:56:39,092 --> 00:56:42,092
+Şu an sadece bir tanıtım gibi düşünebilirsiniz.
+
+296
+00:56:44,148 --> 00:56:46,448
+Bu bir feature aslında programda.
+
+297
+00:56:55,155 --> 00:57:20,556
+Şimdi bir ara verelim. Geldiğimizde de Storage Craft'lara bakalım arkadaşlar. Saat 55 geçiyor. 10 dakika sonra 05 geçe bu konudan devam edeceğiz. Herhalde bunu da bitirsek derse bugünlük tamamlarız. Çünkü bundan sonraki konumuz başlı başına. Artık tamamıyla programlamaya başlayacağımız konular gelecek. 10 dakika sonra görüşürüz.
+
+298
+01:08:39,283 --> 01:08:42,923
+Evet arkadaşlar, devam edelim.
+
+299
+01:08:48,692 --> 01:08:55,492
+Şimdi bu storage class dediğimiz şey değişken tanımlamaları yaparken.
+
+300
+01:08:55,492 --> 01:09:11,292
+İşte double d dedik. Bu değişkenin önünde bazı ifadeler gelecek. Bu değişkenin duration'ı ile ve scope'u ile alakalı bunlara bakacağız.
+
+301
+01:09:13,300 --> 01:09:26,920
+Örneğin sabit veya otomatik draw-ish'in konumuz, değişkenlerin scope'ları, global değişkenler, register ifadesi, bazı storage kovaslarımız ve dynamic memory allocation.
+
+302
+01:09:27,100 --> 01:09:30,680
+Dynamic memory allocation'a yeterli zamanımız kalırsa geçeriz.
+
+303
+01:09:31,600 --> 01:09:37,739
+Şimdi scope dediğimiz yani kapsam teknik bir terimdir. Bu neyi ifade ediyor?
+
+304
+01:09:40,051 --> 01:09:46,992
+C kodundaki bir değişkenin aktif olduğu bölgeyi ifade ediyor.
+
+305
+01:09:48,431 --> 01:09:52,431
+Bir değişkenimiz var. Bu değişken nerelerde aktiftir?
+
+306
+01:09:53,891 --> 01:10:01,891
+Duration ise bir değişkenin bellekteki yaşam süresini, yaşam zamanını ifade ediyor.
+
+307
+01:10:04,756 --> 01:10:10,275
+Sabit Duration'lı, Fixed Duration'lı değişkenler şunu garanti ediyor.
+
+308
+01:10:11,816 --> 01:10:17,396
+Skop bittikten sonra bile kendi değerini koruyacak.
+
+309
+01:10:17,396 --> 01:10:23,095
+Ne demek skop bitmesi? İşte bir fonksiyon içerisinde bir değişken tanımladınız.
+
+310
+01:10:25,336 --> 01:10:27,115
+Integer A diyelim.
+
+311
+01:10:29,976 --> 01:10:32,256
+Bu fonksiyon bittikten sonra şu değişken.
+
+312
+01:10:33,876 --> 01:11:01,236
+Duration'ı tamamlıyor. Dolayısıyla bu fonksiyonun dışında bu değişkenin değerini elde etmeniz, kalan değerini, mevcut değerini elde etmeniz mümkün değil. Fakat bunu saklayabiliyorsunuz. Yani fonksiyon bitse dahi tekrar saklayabiliyorsunuz. İşte bu Fixed Duration mevzusu bu. Otomatik Duration için böyle bir garanti yoktur.
+
+313
+01:11:02,131 --> 01:11:10,332
+Yani integer a dediniz, şurada a'nın değerini 5 yaptınız. Bu Fixed Duration değil, Otomatik Duration'dir arkadaşlar.
+
+314
+01:11:11,611 --> 01:11:18,252
+Program bitti, bitmeden önce yazdırdınız mesela şurada Print Fli ekrana yazdırdınız, a'nın değerini 5 görürsünüz.
+
+315
+01:11:20,572 --> 01:11:25,431
+Sonra bu a'nın değerine bir şekilde eriştiğinizde, erişebilmek mümkün.
+
+316
+01:11:27,188 --> 01:11:32,827
+Ne olacaktır? A'nın değerini 5 olarak göremeyebileceksiniz. İşte bu Fixed ve Otomatik değişken bu.
+
+317
+01:11:33,847 --> 01:11:35,387
+Sabit bir değişken,
+
+318
+01:11:38,448 --> 01:11:41,007
+Duran olan, Stationer olan
+
+319
+01:11:41,788 --> 01:11:45,868
+bir değişkendir fakat otomatik bir variable'dır.
+
+320
+01:11:47,927 --> 01:11:54,327
+Otomatik olarak program çalışması esnasında bellekte bir memori adresi vardır.
+
+321
+01:11:55,060 --> 01:12:18,400
+Otomatik bir variable'dır. Sabit değişken özelliği bu. Lokal değişkenler, yani şuradaki olduğu gibi, tanımı gereği default olarak otomatiktir arkadaşlar. Fakat onları siz bazı keywordlerle fixed hale, fixed duration haline, fixed değişken haline getirebiliyorsunuz. Getireceğiz.
+
+322
+01:12:22,195 --> 01:12:38,435
+Auto Keyword'ü aslında bütün değişkenlerde vardır. Siz bu değişkenin bir değişkenin otomatik bir değişken olmasını istiyorsanız, explicit olarak bu işi auto kelimesini başına ekleyerek yapabilirsiniz.
+
+323
+01:12:38,435 --> 01:12:46,595
+Çünkü bunu kullanmak gereksizdir. Çünkü zaten var. Implicit olarak var.
+
+324
+01:12:47,155 --> 01:12:52,536
+Böyle bir lokal bir değişken, otomatik bir değişken olması özelliğine sahip.
+
+325
+01:12:53,036 --> 01:12:57,655
+Ama belli olsun derseniz başına bir oto ifadesi getirebiliyorsunuz.
+
+326
+01:12:58,155 --> 01:13:03,275
+Biz buraya başkalarına getirirsek ne olur, nasıl çalışır bu derste, bu kısımda onlara bakacağız.
+
+327
+01:13:07,572 --> 01:13:21,412
+Şimdi, Fixed ve Otomatik Duration'a ilişkin bir ifade. Örneğin, bir değişkeni sabit hale getirmek istiyorsak ne yapabiliriz? Örneğin, bir tanesi statik.
+
+328
+01:13:22,791 --> 01:13:28,271
+Bakın, şunlarda otomatik ne var arkadaşlar? Auto var. Yani bu otomatik bir değişken olduğunu söylüyor.
+
+329
+01:13:31,859 --> 01:13:37,739
+K değişkenin değeri 1, J'nin değeri 1 artmış, K'nın değeri 1 artmış. Burada da J ve K'yı ekrana yazıyoruz.
+
+330
+01:13:39,559 --> 01:13:46,000
+Fixed Variable Initialize It Only Once. Bir defa Initialization yapılıyor. Tamam mı?
+
+331
+01:13:50,707 --> 01:13:52,247
+Bunun bir özelliği bu.
+
+332
+01:13:53,268 --> 01:13:56,847
+Fonksiyonu siz kaç defa çağırırsanız çağırın burada olduğu gibi.
+
+333
+01:13:57,627 --> 01:14:03,247
+Bir defa yeri sabitleniyor. Bu da pointer ile alakalı. Adresi sabit.
+
+334
+01:14:04,027 --> 01:14:13,483
+Oradaki atama değeri de sabit oluyor. Başka bir daha bu kod çalışmıyor arkadaşlar. O değişken program bitene kadar yaşıyor. Ne sayesinde? Şuradaki statik sayesinde.
+
+335
+01:14:15,220 --> 01:14:27,220
+Fakat otomatik değişkenler initialize edilir. Each time their block is reentered. Bu bloğa ne zaman girersek girerim bu re-initialization yapıyor arkadaşlar.
+
+336
+01:14:27,220 --> 01:14:36,748
+Re-initialize. Hatta bir şekilde de redefine ediliyor. Tekrardan değişken oluşturuluyor.
+
+337
+01:14:38,452 --> 01:14:48,172
+Şu kodu çağırdığımızda ilk başta ekrana yazılacak olan şey nedir? Bu 1'di, bu 1'di. Burada 2'ye 2 oldu. Ekrana 2'ye 2 basılacak.
+
+338
+01:14:49,612 --> 01:14:55,271
+Tekrar çağırdığımızda, şimdi bu 1 olarak baştan atandı. Bu 2 olarak devam ediyor.
+
+339
+01:14:57,032 --> 01:15:03,912
+Şu 1'i tekrar 2 yapıyoruz. Bunu bu sefer 3 yapıyoruz. Bu yine 2, bu 3.
+
+340
+01:15:04,372 --> 01:15:11,492
+Ne sayesinde? Çünkü program bitmedi. O değişken hala yaşıyor demektir. 2'ye 3 oldu.
+
+341
+01:15:13,712 --> 01:15:16,731
+Tekrar çağırdığımızda bu sefer 2'ye 4 elde edeceğiz.
+
+342
+01:15:18,891 --> 01:15:28,052
+Increment Function demiş. J, Default olarak otomatik durayışına sahip. İstersek önüne auto ekleyebiliriz.
+
+343
+01:15:31,220 --> 01:15:58,020
+Statik Keyword'ü sebebiyle. Şimdi bu statiğin böyle bir kullanımı var. Bir başka kullanımı daha var. Statik Integer A5 diyeceğiz mesela. 5 elemanlı bir dizi. Şimdi normalde Integer A5 dediğimizde bu değişkenin dizinin değerleri otomatik olarak sıfırlanmaz. İçerisindeki çöp değerler, garbiş değerler kalabilir.
+
+344
+01:15:58,463 --> 01:16:05,463
+Ama statik yaptığımızda içerisini siliyor. Ama statik yaptığımızda şöyle bir durum var. Orayı fix ediyorsunuz.
+
+345
+01:16:05,463 --> 01:16:18,463
+Fix ettiğiniz için içerideki değerler program sonlanana kadar kalabiliyor. Onun için diyoruz ki statiği her zaman gelişigüzel kullanmayın. Böyle bir etkisi var, böyle bir kullanımı var.
+
+346
+01:16:22,931 --> 01:16:23,492
+Şimdi
+
+347
+01:16:27,572 --> 01:16:54,112
+İnkırment ikinci defada zaten yaptığımızı söylemiş. Eğer bir değişkeni siz default değerini vermezseniz, fixed bir değişkene başlangıç olarak sıfır atılır. Yani şurada static int k deseydik, ilk defasında sıfır değerini atacaktı. Ama biz burada bir ile başlatıyoruz. Diğer şeyler zaten söylediğimizin aynısı.
+
+348
+01:16:57,492 --> 01:17:10,032
+K'nın, dikkat edin arkadaşlar, bellek adresi sabittir ve tekrar re-initialize edilmesi. Bu pointer mekanizması sayesinde olan bir şey.
+
+349
+01:17:11,032 --> 01:17:17,772
+Statik bir şey yapılırken gidiyor, buna verilen pointer, adresin pointer'ını hafızada saklıyor.
+
+350
+01:17:21,908 --> 01:17:42,468
+Şimdi, scope kavramı programın tanımlandığı yerle, değişkenin tanımlandığı yere verdiğiniz kararla o değişkene erişeceğiniz yer arasındaki bir kavram.
+
+351
+01:17:44,148 --> 01:17:46,808
+Genel olarak dört tip scope'umuz var.
+
+352
+01:17:48,564 --> 01:17:54,363
+Program Scope, File Scope, Function Scope ve Block Scope.
+
+353
+01:17:56,064 --> 01:17:58,504
+Şimdi program şu demiyoruz arkadaşlar.
+
+354
+01:18:00,644 --> 01:18:11,783
+Bir tane işte F1, F.C var. A.C var. B.C var. İşte Main.C var.
+
+355
+01:18:13,144 --> 01:18:15,004
+Bu sizin programınızın tamamı olabilir.
+
+356
+01:18:16,148 --> 01:18:29,788
+Hatta bir de şu vardır. İşte f.h vardır. Bunların header dosyaları. a.h vardır. b.h vardır. Bunların hepsini main içerisinden çağırıp modüler bir program yazabilirsiniz. İşte bu program.
+
+357
+01:18:32,468 --> 01:18:41,128
+Şunların her birisi bir file'dir. Bu file'lerin her birinin içerisinde fonksiyonlar olabilir değil mi? Evet.
+
+358
+01:18:41,684 --> 01:18:45,684
+O fonksiyonların içerisinde belli bloklar olabilir. Onlara bakacağız.
+
+359
+01:18:46,684 --> 01:18:56,684
+Program scope dediğimiz şey arkadaşlar, bütün executable program, programın tamamını oluşturan bir şey.
+
+360
+01:18:56,684 --> 01:19:05,612
+Bu programlardan, bunların içerisinde yazdığınız değişken diğer kodlardan, diğerlerinden erişilmesini isteyebilirsiniz. Mümkündür.
+
+361
+01:19:05,876 --> 01:19:28,736
+F'deki C dosyasının içerisindeki F noktası içerisindeki bir değişkene git B noktası içerisinden eriş veya işlem yap gibi. Bu program skopundaki değişkenler genellikle global değişken olarak ifade ediliyor. Ama global değişken farklı bir anlamı da var, ona da geleceğiz.
+
+362
+01:19:30,484 --> 01:19:34,123
+Demek ki program skopumuz buymuş. Bütün dosyalar arasından erişmek.
+
+363
+01:19:34,123 --> 01:19:52,844
+File skop dediğimiz şey, variable bütün şeyde aktif. Programın bir failin içerisinden, işte şuna bir fail diyelim, a.c diyelim, bütün her yerde aktif olan bir şey. Yani her yerden erişebiliyorsunuz.
+
+364
+01:19:52,904 --> 01:19:55,784
+Aslında global değişkenden kastımız bizim genelde bu oluyor.
+
+365
+01:19:56,659 --> 01:20:01,779
+Diyoruz ki global değişken kullanmayın. Yani ne yapın? Parametre aktarım yapın fonksiyonlar arasında.
+
+366
+01:20:03,119 --> 01:20:05,340
+Bu erişime File Scope diyeceğiz.
+
+367
+01:20:07,500 --> 01:20:20,279
+Fonksiyon Scope'u bir file'in içerisindeki belli bir f fonksiyonunun başladığı, şu şekilde bittiği aradaki bölge fonksiyon Scope oluyor.
+
+368
+01:20:21,555 --> 01:20:45,495
+Blok Skop'un biraz daha alt kümesi gibi düşünebilirsiniz. Herhangi bir program içerisinde, bir program parçasında, işte şurada bir blok açıp burada bir blok kapatabiliyorsunuz. Bu bir fonksiyon değil. Bu blok içerisindeki tanımlanmış olan, kullanılan değişkenin işlemi, genelde bunu çok kullanmıyoruz da yine böyle bir kavramın olduğunu bilmekte fayda var.
+
+369
+01:20:49,011 --> 01:21:13,112
+Blog herhangi bir parantezle kapatılmış statementların serisi olarak ifade edilebilir. Bu karmaşık ifadeler, yani compound ifadeler içerebileceği gibi fonksiyonların gövdesinde içeri. Yani bir blog arasında sen fonksiyonu da tanımlayabiliyorsun. Fonksiyonlara gelince bu konuya biraz daha bakacağız.
+
+370
+01:21:14,452 --> 01:21:21,692
+Şöyle bir kod üzerinde görecek olursak, en yukarıda Program Scope, File Scope, Function ve Block Scope.
+
+371
+01:21:21,692 --> 01:21:25,211
+Program Scope dediğimiz şey şu.
+
+372
+01:21:25,211 --> 01:21:33,811
+Bunu global bir değişken bir fonksiyonların dışında, yani şurada da main var mesela onu kabul edebilirsiniz.
+
+373
+01:21:36,819 --> 01:21:54,539
+Fonksiyonların dışında tanımladığımız bir değişken. Bu doğrudan başka programlar tarafından da eriştirebilir. Eğer bunu bir statik gibi sınırlarsak file skopu içerisinde oluyor. Bu sadece file içerisinde.
+
+374
+01:21:54,539 --> 01:22:00,539
+İşte bakın şu bir function skopudur. Bu K değişkenine sadece burada erişebiliriz.
+
+375
+01:22:01,555 --> 01:22:06,935
+Başka bir yerde k değişkeni olur da buradaki değişken buradaki değeriyle ancak burada kullanılabilir.
+
+376
+01:22:07,975 --> 01:22:10,195
+Bir m değişkeni bu da bir fonksiyon skobu.
+
+377
+01:22:10,956 --> 01:22:17,515
+Bu fonksiyon arasında durduk yere şöyle bir blok açıp bu blok içerisinde bir değişken tanımlama yapabiliyoruz.
+
+378
+01:22:18,775 --> 01:22:20,775
+Özellikle objekt oryantıda bu daha çok kullanılıyor.
+
+379
+01:22:21,195 --> 01:22:22,515
+Buna da blok skobu diyoruz.
+
+380
+01:22:23,935 --> 01:22:28,415
+Her bir değişken tanımlandığı skob içerisinde erişilebilir.
+
+381
+01:22:29,300 --> 01:22:40,319
+İsminden bahsetmiyoruz. O değişkenin neyi vardı? Bir değeri vardı, bir lokasyonu vardı. O değere ve lokasyona spesifik ait olan değişkenden bahsediyoruz.
+
+382
+01:22:42,640 --> 01:22:45,920
+Şimdi bir blok skoptaki değişken.
+
+383
+01:22:45,920 --> 01:22:52,360
+Can not be accessed outside its block.
+
+384
+01:22:53,235 --> 01:23:08,796
+Herhangi bir başka bloktan erişilemiyor. Foo fonksiyonumuz var. J değişkeni, AR değişkeni var. Bunlar nedir arkadaşlar? Bir blokscope gibi düşünebilirsiniz ama bunlar bir fonksiyon. Ama şurada bir blok başlamış.
+
+385
+01:23:16,884 --> 01:23:29,283
+Bu blokskop içerisinde bir tanımlama olduğu için bu arada geçerlidir diyeceğiz. Burada yapılan bazı şeyler var. Şuradaki j geçerli değil, buradaki j geçerli.
+
+386
+01:23:31,163 --> 01:23:37,963
+Ben j eşittir burada 0 diyeyim. Başka bir şey yapmadığımı kabul edelim. Burada da j'nin değeri en fazla kaç olacak arkadaşlar?
+
+387
+01:23:38,844 --> 01:23:43,243
+j 10'u da alacak, 11'i de alacak. j şurada 11'e kadar gelir.
+
+388
+01:23:44,180 --> 01:23:50,040
+Ama ben şurada j'yi tekrar 0 okurum. Bu kavramlara dikkat etmek gerekiyor.
+
+389
+01:23:51,040 --> 01:23:55,720
+Nested block içerisinde bunu tekrar tanımak, başka bir isimde tanımak mümkündür.
+
+390
+01:23:56,420 --> 01:24:00,820
+Özellikle ne için kullanılır? Debugging işlemlerinde kullanılmak için kullanılır.
+
+391
+01:24:08,851 --> 01:24:16,031
+Normalde Variable Hiding bu tür durumlarda faydalı olsa da bu neye sebep olabilir?
+
+392
+01:24:17,192 --> 01:24:23,471
+Dedekt etmesi güç olan, yani tanımlaması güç olan hatalarla karşılaşmaza sebep olabilir.
+
+393
+01:24:24,291 --> 01:24:29,351
+Aslında şunu demek istiyoruz. Burada J'ye tanımladıysan arkadaş, burada kendini sıkıntıyı atma.
+
+394
+01:24:30,051 --> 01:24:34,131
+İsim mi yok, git başka değişken kullan diyoruz. Ama böyle bir kavram da var.
+
+395
+01:24:35,123 --> 01:24:42,123
+Function Scope'un da, buna daha sonra tekrar geleceğiz.
+
+396
+01:24:44,123 --> 01:24:52,123
+Ancak Scope görevlerine sahip olan işlerini yapan isimler, genellikle GoToLabellar'dır.
+
+397
+01:24:53,123 --> 01:24:55,123
+Labellar aktiftir.
+
+398
+01:24:56,123 --> 01:25:01,123
+Funksiyonun başlangıçından sonuna kadar aktiftir.
+
+399
+01:25:01,844 --> 01:25:07,844
+Yani bir goto kullanmayacağım için bu bizim için çok anlam ifade etmiyor.
+
+400
+01:25:07,844 --> 01:25:13,844
+Bir fonksiyon içerisinde bu etiketler, özellikle gotolar, ne olacak? Unique olacak.
+
+401
+01:25:13,844 --> 01:25:16,844
+Yani iki defa aynı şeyi yapamıyorsun.
+
+402
+01:25:16,844 --> 01:25:28,203
+Goto kullanımı şu şekilde arkadaşlar. Mesela start dediniz, iki nokta koydunuz, bir şey yaptınız, if dediniz, bir şey şart dediniz, goto.
+
+403
+01:25:29,140 --> 01:25:42,899
+Start. Bu ne yapacak? Şuradaki iki noktayla tanımlanmış alana geri gidecek. Bunu tekrar bu fonksiyonu scope içerisinde tekrar aynı isimde böyle bir şey yapamıyorsunuz. Ondan bahsediyor.
+
+404
+01:25:45,399 --> 01:25:46,940
+Bunu geçelim.
+
+405
+01:25:56,020 --> 01:26:04,020
+Programın tamamı üzerinde bir değişken erişimine olanak sağlıyor. Şimdi in-cloud yazdık.
+
+406
+01:26:07,020 --> 01:26:09,020
+std.io dedik.
+
+407
+01:26:11,020 --> 01:26:18,020
+Normalde burada integer a gibi b gibi bir şeyler yazarız. Hatta 3 gibi bir değer verebiliriz. Sonra integer main dedik.
+
+408
+01:26:20,020 --> 01:26:21,484
+Bir şeyler yaptık.
+
+409
+01:26:22,068 --> 01:26:38,148
+Başka fonksiyonlar. Buradan A ve B'ye her yerden ulaşabiliyoruz. Biz bunu bu şekilde kullanmak yerine daha çok bunları straklarla kullanacağız. Strak, işte diyeceğiz ki A diyeceğiz mesela, strak tanımlayacağız. Ve bu strakta bütün alanlardan erişebilir olacağız.
+
+410
+01:26:40,248 --> 01:26:48,528
+Straktın değişkeni değil, straktın tanımını kullanacağız tabii ki. Onun için bu file ve program scope kavramları önemli ama
+
+411
+01:26:49,043 --> 01:26:59,683
+Bizim birçok ödevimizde, çalışmamızda global değişkenler kullanılabilir. Yani, error verme açısından sıkıntı yok ama bu şekilde kullanıma yasaktır.
+
+412
+01:26:59,683 --> 01:27:04,603
+Tamam mı? Integer'lar vesaireler burada bu şekilde yapmıyoruz.
+
+413
+01:27:04,603 --> 01:27:12,283
+Şurayı bir okuyalım. Giving a variable file scope makes the variable active true. Bütün dosya içerisinde.
+
+414
+01:27:12,756 --> 01:27:31,615
+Aktif yapar. If a file contains more than one function. Bir fonksiyonumuz birden fazla şey içeriyorsa, fonksiyonların tamamı değişkeni ne yapabilir? Kullanabilir. Yani ona erişebilir. Yani şurada oluşturduğum a veya bir struct değişkeni hem main'den hem başka bir fonksiyonla erişebilir olacağım.
+
+415
+01:27:40,083 --> 01:27:57,183
+Özelliği vermek istiyorsak, bunu fonksiyonun dışında tanımla ve bu tanımladığın şey de statik keywordüyle tanımla. Yani şurada bir şey tanımlıyorsan ve bu file scope'a ait olacaksa başını da diyor statik ekle. Bu bir yöntemdir.
+
+416
+01:28:02,260 --> 01:28:18,520
+Variable with Program Scope, yani Program Scope'lu Variable'lar, yani Global Variable'lar. Aslında bu da bir Global Variable'da, asıl Global olması arkadaşlar nedir? Bütün programlardan erişebilmektir.
+
+417
+01:28:18,520 --> 01:28:28,520
+Are visible to returns in other files as well as their own file. Diğer programlardaki diğer file'lerden erişimi açıktır.
+
+418
+01:28:28,979 --> 01:28:34,799
+To create a global variable, declare it outside a function without static.
+
+419
+01:28:35,840 --> 01:28:41,019
+Yani burada yazdığım bir şeyi statiksiz yazarsan diğer dosyalardan erişebilirsin.
+
+420
+01:28:41,779 --> 01:28:46,979
+Tüm fonksiyonlarımızın kullanacağı count gibi bir değerimiz varsa onu bile global tanımlayamazsınız.
+
+421
+01:28:46,979 --> 01:28:51,979
+Eğer length gibi bir şey varsa...
+
+422
+01:28:54,484 --> 01:28:57,484
+Number of Define ile tanımlarsınız.
+
+423
+01:28:58,684 --> 01:29:02,184
+Define, dizi uzunluğu 100. Bu okey.
+
+424
+01:29:02,684 --> 01:29:10,684
+Ama Integer Max deyip, bu olmuyor arkadaşlar. Yapmanızı istemiyoruz.
+
+425
+01:29:11,084 --> 01:29:18,284
+Parametre geçişini öğrenmenizi istiyoruz. Çünkü şu işletim sistemleri dersinde göreceğiniz
+
+426
+01:29:19,188 --> 01:29:33,808
+Şakışma ve Mutual Exclusion dediğimiz problemle sebep oluyor. Çünkü şunun üzerinde bir değişiklik yapamazsınız. Yani Max eşittir, Max artı bir gibi bir şey yapmak mümkün değil. Bu bir macro definition.
+
+427
+01:29:33,808 --> 01:29:41,528
+Bunu böyle bir şey yapamazsınız. Ama bunu böyle bir şey yapabiliyorsunuz. Max'ı 5 artır, 10 artır.
+
+428
+01:29:42,452 --> 01:29:50,452
+Eğer bu tarz counterler, size'lar varsa ya makro tanımlayacaksınız ya da parametre geçici yapacaksınız.
+
+429
+01:29:58,323 --> 01:30:15,523
+Tamam. Şimdi global variabler, evet benim söylediklerim burada biraz daha açıklanmış. Genel olarak kaçınmak gerekiyor. Neyden? Mümkün olduğunca global değişken kullanmaktan.
+
+430
+01:30:25,811 --> 01:30:42,471
+Proje yaparken, yani işledim sistemi, gömülü sistem projesi yaparken, oradaki çakışma gibi, mutual exclusion gibi, ondan sonra kilitlenme, deadlock gibi problemlere yol açıyorsa, yol açacağı için konudan kaçınmak gerekiyor.
+
+431
+01:30:43,092 --> 01:30:48,032
+Şimdi thread konusunu biz size anlatacağız. Thread konusunda şöyle bir şey var.
+
+432
+01:30:53,076 --> 01:31:18,736
+İşte bankada bir hesabınız var. Amount'unuz var. Bir fonksiyonunuz ekle yapıyor, para ekliyor. Bir fonksiyonunuz para sil yapıyor, para çıkar yapıyor. Bu amount'u siz global değişken yaptığınızda, işte 100 liranız var. Ekle 10 dediniz, 10 lira eklesin. Sil 15 dediniz, 15 eklesin.
+
+433
+01:31:20,180 --> 01:31:30,000
+Ekle ve silin her bir komutunun makine kodları, şimdi burada mesela bir toplama işlemi yapıyorsunuz, burada çıkarma yapıyorsunuz değil mi?
+
+434
+01:31:30,000 --> 01:31:45,880
+Şimdi bu toplama ve çıkarma, arkadaşlar mikro işlemci seviyesinde, Asamble'de belki görürsünüz bunu veya organizasyon dersinde göreceksiniz bilgisayar donanımında, alt mikro işlem adımlarından oluşuyor.
+
+435
+01:31:46,420 --> 01:32:02,420
+Bu mikro işlem adımları global değişken sebebiyle birbirine karışacağı için global değişken de sizin paranız örneğin bu ekleden önce ekledik sonra sil yaptık.
+
+436
+01:32:03,880 --> 01:32:06,420
+Hala işte 115 görünebilir.
+
+437
+01:32:07,880 --> 01:32:10,960
+Halbuki işte 110'du, 110 olacak.
+
+438
+01:32:12,340 --> 01:32:16,440
+Sonra 95'e düşüreceksin. 115 görünebilir.
+
+439
+01:32:16,940 --> 01:32:27,699
+Şu işlemin tam olmamasından kaynak. O arada kaç şeyler oluyor? Mutual exclusion dediğimiz meseleler var. Onun için global değişken kullanılmaz.
+
+440
+01:32:30,520 --> 01:32:31,800
+Programın
+
+441
+01:32:31,840 --> 01:32:41,220
+Sürdürülmesini ve bakımını daha zor hale getiriyor. Kompleksliği arttırıyor. Çünkü analizi mümkün olmayabilen durumlar var.
+
+442
+01:32:42,500 --> 01:32:49,180
+Farklı modüller arasında potansiyel konfliktler, hatalara, çatışmalara sebep oluyor.
+
+443
+01:32:49,180 --> 01:32:55,199
+Tek avantajı, hızlı bir kod yazmayı sağlıyor.
+
+444
+01:32:57,171 --> 01:32:59,792
+Bir sürü dezavantajı da var. Onun için problemli.
+
+445
+01:33:01,231 --> 01:33:11,171
+Object Oriented'da global değişken değil, property olarak global değişken gibi tanımlama mümkün. O zaten o bir program değil.
+
+446
+01:33:11,811 --> 01:33:15,551
+Orada obje tanımlıyorsunuz. O başka bir kavramdır.
+
+447
+01:33:15,551 --> 01:33:21,551
+Ama içerisinde main olan veya bu şekilde yapısal bir programlamada...
+
+448
+01:33:22,292 --> 01:33:47,732
+Bunu global değişikliği kullanmayacaksınız. Onun için yasak. Arkadaşlar bazen uyanıklık yapıyorlar. Şunu da şey yapıyoruz, görebiliyoruz. Main demiş mesela. Burada başlamış, burada bitmiş. F demiş. Burada başlamış, burada bitmiş. G demiş. Burada başlamış, burada bitmiş. Program da burada bitecek.
+
+449
+01:33:48,532 --> 01:34:06,652
+Normalde global değişkenler program içerisinde nerede tanımlanır? İşte şurada tanımlanır int a dersin falan. Burada hani hoca görmesin falan diye bazen şöyle yapabiliyor. Araya şu iki şeyin arasına koyuyorlar. Bunları da görüyoruz arkadaşlar. Çünkü bunlar dedektede programlar var.
+
+450
+01:34:13,011 --> 01:34:19,731
+Doğru düzgün yaparsanız bu çok atla deve öğrenilemeyecek bir şey değil. Bir sürü insan öğreniyorsa sen de öğrenirsin.
+
+451
+01:34:19,731 --> 01:34:24,691
+Kod yazarken kolaylık sağlar ama puandan veya başka şeylerden götürür.
+
+452
+01:34:26,531 --> 01:34:37,891
+Şimdi burada declaration yaparken definition ve illusion diye iki tip declaration tipi vardır.
+
+453
+01:34:39,475 --> 01:34:55,435
+Allusion arkadaşlar, bir definition gibi görünür. Fakat, instead of allocating memory for a variable, it informs that a variable of the specified type exists, but it defines elsewhere.
+
+454
+01:35:00,819 --> 01:35:27,300
+Değişkeni gerçek anlamda bellekte bir yer oluşturmak için tanımlamıyor. Yani extern böyle bir şey yaptınız. Diyor ki bu değişken ileride bir yerde kullanılacak haberin olsun. Extern'ı şimdilik boş geçin arkadaşlar. Bu illusion oluyor. Ama sen integer a eşittir 3 gibi bir şey yaptın da böyle bir değişken tanımla içine de 3 yaz diyorsun.
+
+455
+01:35:28,115 --> 01:35:30,115
+Bu önemli bir kavram.
+
+456
+01:35:30,115 --> 01:35:38,115
+Özellikle Initialization yapmadan, birisi Initialization yapınca kullanılır.
+
+457
+01:35:38,115 --> 01:35:53,115
+Pardon, burada external keyword'ün yaptığı şey bu arkadaşlar. Bu programda bir yerlerde bu integerce tanımlanacak.
+
+458
+01:35:53,460 --> 01:35:59,180
+Örneğin başka bir programda veya başka bir fonksiyon içerisinde bunu söylüyoruz. Buna Ellusion diyoruz.
+
+459
+01:36:02,140 --> 01:36:06,180
+Şimdi Register Specifier'ı var. Bu da önemli bir kavram.
+
+460
+01:36:07,680 --> 01:36:11,059
+X-Turn'ü söyledik de X-Turn'ün daha sonra kullanımına tekrar geleceğiz.
+
+461
+01:36:19,891 --> 01:36:39,851
+Değişkenlerin erişimi için kullanabiliyorsunuz. Yani bir değişkeni ben bellekte saklamak yerine işlemcinin rejisterinde saklayayım. İşlemcinin içerisindeki rejisteri de saklamak için. Tabi bu her zaman mümkün olmayabilir mi? Evet. Genellikle mümkün olmuyor zaten.
+
+462
+01:36:41,908 --> 01:37:03,908
+Bu bir compiler'ın yaptığı bir şey. Eğer size işletim sisteminiz mümkünse ve compiler derleyicinizle bu anlaşabildiyse, sıkıntı yoksa, diyor ki şu LAN değişkenimizi veya şu karakter değişkenimizi işlemcide saklamak istiyoruz. Hız arttırmak için.
+
+463
+01:37:05,908 --> 01:37:09,900
+Şimdi bu işlemcide saklanıyorsa bir bellek adresi var mıdır?
+
+464
+01:37:10,195 --> 01:37:10,975
+Bu değişken.
+
+465
+01:37:18,676 --> 01:37:21,796
+İşlemcide saklanacak sakin. Bellek adresi var mıdır?
+
+466
+01:37:25,747 --> 01:37:27,747
+Yoktur. Çünkü zaten işlemde saklanıyor.
+
+467
+01:37:27,747 --> 01:37:29,747
+Dolayısıyla arkadaşlar,
+
+468
+01:37:29,747 --> 01:37:32,747
+bunu şu şekilde, yani şöyle diyelim,
+
+469
+01:37:32,747 --> 01:37:35,747
+Şurada, şöyle bir şey yapamazsınız.
+
+470
+01:37:41,300 --> 01:38:08,399
+Çünkü bu bize neyi veriyordu? Belleğinin adresini çözümlüyordu. Bu tarz bir işlemde bu geçersiz olur. Ampersand kullanılmaz. Ya doğrudan len diyeceksin ya da başka bir şekilde register kullanacağız. Çünkü işlem içerisinde. Bunun tipik kullanımı register'ın döngülerdeki counter değişkenleri gibi ifadelerde kullanılıyor.
+
+471
+01:38:09,363 --> 01:38:11,923
+Başına Rejister eklemekle yeterli.
+
+472
+01:38:16,564 --> 01:38:22,704
+Storage Cluster'ın özetine baktığımızda, bunu daha sonra bazı örneklerle destekleyeceğiz arkadaşlar.
+
+473
+01:38:23,724 --> 01:38:27,324
+Auto dediğimiz şey, otomatik olarak kullanılan bir şey.
+
+474
+01:38:27,324 --> 01:38:35,764
+Statik, bir değişkenin scope'unu ve duration'ını ayarlamak için kullanılıyordu.
+
+475
+01:38:39,891 --> 01:39:06,572
+Genel olarak şimdilik şöyle diyelim. Bir değişkene birden fazla yerden, birden fazla dosyalardan erişim sağlarken kullanılır. Bir global ifade söyler. Register'ı söyledik. Constant ifadesi, zaten bunu belki görmüşsünüzdür diye şey yapmadık ama değişkenin değerini sabitliyor. Constant integer x eşittir 5 diyorsunuz. Buna daha sonra x eşittir x artı 1 yapamıyorsunuz mesela.
+
+476
+01:39:07,188 --> 01:39:21,527
+Bu Volatile'da, Compiler'ın bazı optimizasyonları turn-off etmesini söylüyor. Uçucu değişken özelliğine.
+
+477
+01:39:21,527 --> 01:39:34,967
+Bazı önemli verilerin saklanması çok eski bir şeydir. Yani hala gömücü sistemlerin bazılarında kullanılıyor ama...
+
+478
+01:39:35,412 --> 01:39:45,032
+Değerleyici ile işletim sistemi arasında haberleşme yaparken o değişkenin değerine saklanması veya saklanmaması konusunda bir özellik sağlıyor.
+
+479
+01:39:53,876 --> 01:39:58,275
+Geldik pointerlara ve dizilere. Şimdi arkadaşlar şöyle bir giriş yapalım.
+
+480
+01:40:02,100 --> 01:40:05,100
+Biraz ilerleyelim. Gelecek hafta...
+
+481
+01:40:08,819 --> 01:40:10,239
+Bu konunun devamına bakacağız.
+
+482
+01:40:13,380 --> 01:40:21,819
+Artık bundan sonrası konuların daha yoğun olarak geleceği ve artık örneklerin daha çok artacağı bir şey.
+
+483
+01:40:22,600 --> 01:40:30,739
+Bu hafta belki kod yazmayacağım ama gelecek haftadan itibaren konuyu anlatıp oraya kadar yazdıklarımızla alakalı örnek kodlar yapacağız.
+
+484
+01:40:34,484 --> 01:41:01,684
+Bir programlama önceki derslerde gördük ama şu andaki biraz daha onun iç yapısını öğrenmek amaçlıydı. Burada biraz daha bazı şeyler başlıyor. Şimdi arkadaşlar, bir değişkenin özelliklerini belki size söylemiştim, söylemediysem tekrar edeyim. Bir, nesi vardı? Etiketi vardı. Label vardı. Bu değişkenin bir değeri vardı. Bir adresi var. Tabii kendisine ait bir tipi var.
+
+485
+01:41:02,484 --> 01:41:14,484
+Başka nesi var? Size vardır. Duration gibi veya scope gibi bir özelliği vardır.
+
+486
+01:41:16,484 --> 01:41:28,484
+Biz burada adresi ile, değeri ile, etiketi ile, tipi ile, size ile daha çok ilgileniyoruz. Duration scope zaten çok fazla işimize kullanmıyoruz.
+
+487
+01:41:30,068 --> 01:41:53,608
+Baktığımız zaman bir tane short değişkenimiz var, short integer, bir tane pointer var, short integer gösteriyor. Pointer kullanmamızın amacı ne? Bazı değişkenlere adres üzerinden erişmek gerekebiliyor. Doğrudan etiketiyle işlem yapamıyoruz. Örneğin swap fonksiyonu. Adres üzerinden işlem yapmak gerekiyor. Çünkü derleyici ona göre tasarlanmış.
+
+488
+01:41:56,595 --> 01:42:15,135
+Değişkin adresine ihtiyacımız var. En basit örneğimiz ne? ScanF. Diyor ki ben burada bir yazma işlemi yapacağım. Bir integer yazacağım. İşte %c'nin yerine. Diyor ki bana burada bir adres ver. Bu adresi verirken bir şekilde aslında pointer kullanıyoruz.
+
+489
+01:42:22,068 --> 01:42:32,628
+Generik tür olan void türden tanımlanmalıdır. Biz genellikle short için short pointer, integer için integer pointer tanımlayacağız. Ve şu şekilde pointer tanımlaması yapıyoruz.
+
+490
+01:42:34,208 --> 01:42:48,547
+Tamam mı? Yani integer şeyde bir, burada tip dönüşümü olmuyor. Eşittir operatörü pointerlarda kullanılırken, sağdaki, right'teki ve left'teki left side ve right side, in terms of pointer,
+
+491
+01:42:49,140 --> 01:42:58,500
+Must be the same. Yani ikisi de aynı olması zorunda. Pointer'lar üzerinde atama yapıyorsak iki tarafın da aynı olması lazım.
+
+492
+01:42:58,500 --> 01:43:12,380
+Şimdi in terms of pointer dediğimde aklımıza şu gelecek. Integer bir türdür. Integer pointer bir başka türdür. Integer pointer pointer bir başka türdür.
+
+493
+01:43:12,916 --> 01:43:35,735
+Bir başka türdür. İşte buna P diyelim, buna P P diyelim, buna P P P diyelim. P'yi P'ye atayabilirsin ama P'yi P'yi P'yi atayamazsın. P P P'yi P'yi atayamazsın. Bunlar yasal, legal olmayan şeyler. Aynı türler üzerinde. Hepsi birbirinin farklı türleri arkadaşlar. Bunlara dikkat edeceğiz.
+
+494
+01:43:36,851 --> 01:43:41,972
+i değişkenimiz varmış, değerine bunu atamışız. j değişkenimiz varmış, bunu atamışız.
+
+495
+01:43:42,492 --> 01:43:49,391
+Şimdi diyor ki p'nin yerine i'nin adresini gösterir. Bu normalde arkadaşlar,
+
+496
+01:43:50,172 --> 01:43:54,512
+hani bazı derleyicilerde çalışıyor ama nasıl çalışıyor, şöyle söyleyeyim.
+
+497
+01:43:55,532 --> 01:44:01,932
+Short'un bir integer türü, integer türevi olduğunu kabul edip bir gizli dönüşüm yapabiliyor.
+
+498
+01:44:02,195 --> 01:44:16,536
+Ama bazı derleyiciler kesinlikle çalışmayacaktır. Niye? İyi dediğimiz şey short. Bu da short pointer'ı. Şunu int gibi algıladım bir anda.
+
+499
+01:44:23,699 --> 01:44:30,699
+Bu ne demek? D-referans işlemini zaten biliyorsunuz. Ama biz burada biraz detaylarına da değineceğiz.
+
+500
+01:44:30,699 --> 01:44:44,699
+Belliğimiz bu şekilde. Bir i değişkenimiz var. İçerisine 1-2-3 atadık. Bu i'nin bir adresi var. Bu i'nin adresini P diye bir değişken var şurada.
+
+501
+01:44:44,699 --> 01:44:51,659
+Pointer değişkeni bu şekilde gösterebiliriz. Pointer değişkeni burayı gösteriyormuş.
+
+502
+01:44:52,148 --> 01:44:53,427
+Şurada bir j var.
+
+503
+01:44:56,328 --> 01:45:01,028
+Yaptığımız şey p'nin gösterdiği yerdeki adres, d referans demektir.
+
+504
+01:45:01,127 --> 01:45:02,427
+p dediğimiz şey ne arkadaşlar?
+
+505
+01:45:02,627 --> 01:45:08,788
+İşte şuradaki sayısal değer neyse 0x001a diyelim mesela.
+
+506
+01:45:09,568 --> 01:45:13,728
+Bunun içerisinde olan şey 0x001a gibi bir değişken vardır.
+
+507
+01:45:18,068 --> 01:45:33,188
+İyi değerini yazdırmış gibi olursunuz. Bunun dereferans ederek, bu ifadeyi dereferans ederek, yani diyor ki bu adrese git, o adresteki değeri al diyerek buradaki 1-2-3 değerine erişebiliyorsunuz. Şu 1-2-3'ü gösteriyor.
+
+508
+01:45:34,348 --> 01:45:43,188
+J'ye bunu atadığımızda artık J'de de ne var? 1-2-3 var. J'nin içerisinde de 1-2-3 var. Önceki 3-2-1 kayboldu. Şurada ne yaptık?
+
+509
+01:45:43,764 --> 01:46:10,744
+İ'nin değerini yazdırdık. Burada J'nin değerini yazdırdık. İkisi de ne oldu? 1, 2, 3, 1, 2, 3 oldu. Şurada İ'yi 2 artırdık. Bu 125 oldu. Burada J'yi 3 artırdık. Artık J'yi 3 artırmak buradaki 123'den farklı bir şeydir. Bu 126 olacaktır. Burada da yazdırdığımızda 1, 2, 3, pardon 1, 2, 5, 1, 2, 6 değerlerini elde edeceğiz.
+
+510
+01:46:12,595 --> 01:46:33,595
+Bakalım sonucu var mı? Yok. Yani bunu isterseniz yazabilirsiniz ama en son 123 ve 126 değerleri elde edilecek. Şurada bir defaya mahsus atama yaptığımızda yapılan şey artık P sürekli İ'yi takip edecek değil. Bir defaya mahsus böyle bir şey yapıyoruz. Tamam mı?
+
+511
+01:46:35,795 --> 01:46:39,915
+Burada da değerler yazıyor. Burada sorun var mı? Anlaşılmayan bir şey var mı arkadaşlar?
+
+512
+01:46:46,163 --> 01:46:57,064
+Herhalde buraya kadar kısımları geçen dönemin sonuna kadar görmüş olmanız lazım. Görmedim diyen var mı arkadaşlar aranızda? Ben bunları hiç görmedim eğitim hayatım boyunca.
+
+513
+01:47:02,131 --> 01:47:05,891
+Aslan, Yapısal Programıma giriş almadınız mı?
+
+514
+01:47:14,260 --> 01:47:19,800
+Bu dersi seçebilmeniz için yapısal programlamaya giriş dersini almanız lazım.
+
+515
+01:47:20,720 --> 01:47:24,420
+Derse girmemiş olmanız, diğer arkadaşlar da aynı fikirde mi peki?
+
+516
+01:47:26,820 --> 01:47:35,840
+Pandemi sebebiyle geçen dönem belki bazı derslere girememiş olabilirsiniz ama yapısal programlamaya girişte bu konuların bir kısmı anlatılıyor.
+
+517
+01:47:37,492 --> 01:47:43,831
+Diğer arkadaşlar da [öğrenci]'la aynı durumda değil herhalde değil mi? Gördüm diyenler bazı yazsın. Bir de onlara bakalım.
+
+518
+01:47:49,043 --> 01:48:05,463
+Ayrıntısından bahsetmiyorum arkadaşlar. Yapısal programlamaya girişte var mıydı yok muydu? Normalde görülmesi gerekiyor. Program ona göre anladım. Biraz önceki görmedim diyen arkadaş şu sebepten olabilir sizinkisi [öğrenci].
+
+519
+01:48:07,743 --> 01:48:14,804
+Uygulamalar genelde online olduğu için geçen dönem orada belki katılmamış olabilirsiniz. Genelde derste biraz daha teori anlatılıyor da.
+
+520
+01:48:15,699 --> 01:48:40,599
+Bir de hocalardan hocalara da fark olabilir. Bir hoca az değinmiştir, bir hoca çok değinmiştir, o da olabilir. Ama müfredatta var. Tabii müfredatta var diye biz burada bazı şey yani onları bilmeniz gerekiyor, bu kısmı geçelim demiyoruz. Bazı şeyleri anlatmak durumundayız yine. Özellikle geçen dönemde bu başımıza geldiği için pandemi meselesi burada sağlıklı ilerleyebilmek adına bazı şeyleri anlatıyoruz.
+
+521
+01:48:42,260 --> 01:48:57,800
+Şimdi burada olan olay şudur arkadaşlar. Bir i değişkenimiz var, bir j değişkenimiz var, bir de p pointer değişkenimiz var. Bunun pointer olduğunu göstermek için şöyle yapalım. Bellekteki adresleri şu şekilde olsun. Bunlar assumption'dır. Dikkat edin arkadaşlar.
+
+522
+01:48:57,800 --> 01:49:07,700
+İşte bu 1200'de, bu 1202'de, 1204'te. Hatta bunlar genelde başına şöyle hexadesimal olarak ifade edilen şeylerle yazılır.
+
+523
+01:49:08,340 --> 01:49:32,659
+Bellek içerikleri ilk başta başlangıç durumunda boş. Ne demek? Yani şu Initial State durumunda boş. Daha sonra şu 3 satırı dikkate aldığımızda olan olay işte birincisinde 123 yazıldı. Diğerinde 321 yazıldı. Diğerinde de şu işlemi yaparak hangi işlemi? Yani şu işlemin sonucunda şurası J eşittir.
+
+524
+01:49:35,667 --> 01:49:38,127
+Şuradaki 1200'ü alıyoruz, buraya kopyalıyoruz.
+
+525
+01:49:39,807 --> 01:49:42,528
+Exact Adresler ne yapabilir?
+
+526
+01:49:42,988 --> 01:49:48,547
+Çalışma zamanında işletim sistemi size nereyi tahsis ediyorsa ona göre değişir.
+
+527
+01:49:50,347 --> 01:49:56,047
+Tamam mı? Bunlar tamamen faraza, varsayımsal adresler. Bunlara aman dikkat edelim.
+
+528
+01:49:56,047 --> 01:50:00,000
+Ha biz sınavda soru sorduğumuzda eğer bununla alakalı bir...
+
+529
+01:50:00,000 --> 01:50:21,140
+Ekran çıktı veya bir analiz sorusu sorarsak deriz ki, let's assume that, yani şu şekilde kabul edin, the address of p is 1200 gibi veya işte şu şekilde bir formatta verebiliriz. Tamam. Ama bunlar dediğim gibi gerçekle alakası olmayan şeyler.
+
+530
+01:50:26,836 --> 01:50:27,796
+Akıntı görünüyor.
+
+531
+01:50:32,051 --> 01:50:41,491
+Geldik arkadaşlar printf'lere ve 4. assignment'dan sonra olan şey şuyken yani şurada.
+
+532
+01:50:43,091 --> 01:50:49,411
+4. assignment'ımız statement 4, statement 5.
+
+533
+01:50:50,151 --> 01:50:54,251
+4. işlemde bir assignment var. Diyor ki p'nin gösterdiği yerdeki değer.
+
+534
+01:50:54,251 --> 01:50:56,791
+p'nin gösterdiği yer burası.
+
+535
+01:50:58,292 --> 01:51:12,872
+Pardon, P'nin gösterdiği yer burası. P'nin gösterdiği yerdeki değer pointer olduğu için bu P. Bu bir pointer olduğu için ne yapacak? Bunun gösterdiği yerdeki değere erişmem için Yıldız P yazıyorum.
+
+536
+01:51:12,872 --> 01:51:20,832
+Yani yaptığım şey neydi? J eşittir. Pardon, Yıldız P'ydi.
+
+537
+01:51:22,100 --> 01:51:30,480
+P 1200'ü gösteriyor. 1200'ün oğlu ad hücreye gidiyorum. 1200'ün oğlu hücredeki değer neydi? J eşittir.
+
+538
+01:51:33,420 --> 01:51:37,600
+123'ü alacağım. Bunun getirdiği yere yazacağım. Daha sonra ne olacak? Burası 123 olacak.
+
+539
+01:51:39,159 --> 01:51:47,100
+Sonraki işlemde ne yaptık? Birisini 2 arttırdık, diğerini 3 arttırmıştık. Şu 2 artınca bu 125 oldu.
+
+540
+01:51:48,532 --> 01:52:08,391
+Bu kendi başına artıcı oldu. Bakın arkadaşlar, şu işlem. Şurası bir copy işlemi. Bütün bilgisayar bilimlerinde copy işlemi iki türlü oluyor. Birincisi deep copy.
+
+541
+01:52:12,180 --> 01:52:24,180
+Shallow veya Shadow da deniyor. Sonundaki W'lar belki B olabilmem tam emin değilim. Bu derin kopyalama real bir kopidir.
+
+542
+01:52:24,180 --> 01:52:36,180
+Pactual'dır. Bu not real'dır arkadaşlar. Veya virtual'dır. Burada değerler kopyalanır.
+
+543
+01:52:38,739 --> 01:53:05,039
+Değerler kopyalanır. Burada adresler kopyalanır. Ne demek değerler kopyalanır? P'nin gösterdiği yerdeki değeri al. Ne demek? P'nin gösterdiği değerdeki 123'ü al. J'ye kopyalı. Artık eski J'nin değeri yok. Bundan sonra İ, J'den birbirinden bağımsız. Bakın burada bir ne var? Deep Copy var.
+
+544
+01:53:07,764 --> 01:53:28,224
+Buradaki değişkene 2 eklersen o kendi başına hareket eder. Buradaki değişkene 3 eklersen bu kendi başına hareket eder. Ama biz diyeceğiz ki, birazdan onu örneğini yaparız olmadı. Gölge kopyalama veya sığ kopyalama, şu sığ demek, şu gölge demek. Gölge veya sığ kopyalama yaparken,
+
+545
+01:53:29,939 --> 01:53:46,259
+Pointer'lar üzerinden işte belli bir bellek bölgesini iki tarz şey ile gösterip birinde iki artırsan yine 125, 123'den 125 yaparsın. Birinde üç artırsan 125'den 128'e yaparsın diyeceğiz. Tabi tek bir hücre üzerinde.
+
+546
+01:53:47,139 --> 01:53:52,439
+Sonuçta ne oluyor? Burada bir dip kopyalama var. Sonuçlar 125 ve 126 oldu.
+
+547
+01:53:53,019 --> 01:53:57,299
+Şimdi buraya geçmeden önce şöyle bir şey yapalım.
+
+548
+01:53:57,811 --> 01:54:01,652
+Pointer aritmeti ile alakalı değil de.
+
+549
+01:54:09,555 --> 01:54:13,655
+İnşallah pointer aritmetiği vardır burada. Yoksa onu da anlatırız.
+
+550
+01:54:17,939 --> 01:54:29,439
+Slide'larda var mı bilmiyorum. Şu an sadece bu haftanın Slide'larını incelediğim için. Geçen dönemdeyken ben kendi Slide'larımı kullanmıştım.
+
+551
+01:54:35,923 --> 01:54:41,203
+Genellikle örnekleri integer üzerinden veriyorum ama başka türlerde de olur arkadaşlar.
+
+552
+01:54:54,612 --> 01:54:55,891
+Bir de şöyle yapalım.
+
+553
+01:55:03,188 --> 01:55:11,568
+C eşittir. A dediğim zaman, Deep Copy yapıyorum arkadaşlar.
+
+554
+01:55:21,492 --> 01:55:23,492
+Şöyle bir şey yapalım.
+
+555
+01:55:25,492 --> 01:55:28,492
+Yıldız Pointer A
+
+556
+01:55:29,492 --> 01:55:31,492
+Yıldız Pointer B
+
+557
+01:55:33,492 --> 01:55:37,492
+Yıldız Pointer Temporal Pointer T
+
+558
+01:55:40,492 --> 01:55:42,492
+Pa eşittir
+
+559
+01:55:43,492 --> 01:55:45,492
+Ant% A dedim
+
+560
+01:55:46,492 --> 01:55:48,492
+Pb eşittir
+
+561
+01:55:51,412 --> 01:55:54,412
+10% B dedim.
+
+562
+01:55:54,412 --> 01:55:57,387
+Pt eşittir.
+
+563
+01:56:00,948 --> 01:56:06,948
+An%a dedim yine. Hatta ptt diye bir şey yapacağım.
+
+564
+01:56:10,387 --> 01:56:12,387
+Bunu da pa'ya eşitleyeceğim.
+
+565
+01:56:17,108 --> 01:56:24,608
+Şöyle yapalım. Şimdi şu ifadelere baktığımızda ağının değerinde 100 var.
+
+566
+01:56:41,171 --> 01:56:43,171
+B'nin içerisinde 200 var.
+
+567
+01:56:51,347 --> 01:57:01,967
+C'nin içerisinde A'nın değeri ne oldu? Dip copy ile kopyalandı. Yani 100 oldu. Şuralarda bir yerde de
+
+568
+01:57:08,435 --> 01:57:18,235
+P A'lar, P B'ler, P C'ler, P T'ler, tam çizemiyorum ama P T T'ler var.
+
+569
+01:57:20,275 --> 01:57:25,615
+Buraya bir nol adres, buraya iki nol adres, buraya üç nol adres diyorum. Tamamen varsayımsal olarak.
+
+570
+01:57:28,195 --> 01:57:35,615
+Şimdi A'nın adresini al P A'ya kopyala ne demek? Burada bir olsun demektir.
+
+571
+01:57:37,076 --> 01:57:40,396
+P'nin adresi de burada 2 olacak demektir.
+
+572
+01:57:42,776 --> 01:57:46,796
+A'nın adresini al, P, T'ye kopyalan demek. Buraya da 1 yap demek.
+
+573
+01:57:48,976 --> 01:57:53,356
+Şimdi P, A, 1 değişken. Şöyle yapalım.
+
+574
+01:57:53,956 --> 01:57:55,836
+P, T, 1 değişken.
+
+575
+01:57:56,396 --> 01:58:01,276
+Bellenin bir yerlerinde ne var? A diye bir şey var. İçerisinde 100 var.
+
+576
+01:58:01,655 --> 01:58:04,676
+Bu da burayı işaret ediyor, bu da burayı işaret ediyor.
+
+577
+01:58:12,627 --> 01:58:32,427
+Hatta şimdi PTT de, tamam şuraya kadarki satırlar bu. Şimdi şu ne demek? Bu legal bir şey mi? Bakalım. PA dediğimiz şey ne türünde arkadaşlar? Integer pointerı. PTT dediğimiz şey Integer pointerı. Bu ikisi birbirine atanabilir mi? Atanabilir. Peki şunlar nasıl oldu hocam?
+
+578
+01:58:32,819 --> 01:58:39,319
+Şimdi a dediğimiz integer ama ben bunu ampersand a dediğimde integer pointer'a dönüştürmüş oluyorum.
+
+579
+01:58:39,539 --> 01:58:43,900
+Integer pointer'ı integer pointer'a ne yaptım? Burada atayabildim. Dolayısıyla bunlar da legal işlemler.
+
+580
+01:58:44,680 --> 01:58:47,600
+Şimdi şu yaptığım şey pa'yı ptt'ye atan ne demek?
+
+581
+01:58:48,279 --> 01:58:52,659
+İşte pa'da bir vardı. ptt'ye de ne yapacağız? Bu da bir yapacağız.
+
+582
+01:58:52,659 --> 01:58:57,440
+Aslında şu satırdan sonra ptt'de ne oldu? Burayı gösteriyor oldu.
+
+583
+01:58:58,239 --> 01:58:59,460
+Buraya kadar sorun yok herhalde.
+
+584
+01:59:01,587 --> 01:59:04,228
+Gelelim şöyle bir ekrana bir şeyler yazdıralım.
+
+585
+01:59:10,387 --> 01:59:14,668
+%d
+
+586
+01:59:14,668 --> 01:59:15,967
+mesela
+
+587
+01:59:15,967 --> 01:59:19,708
+a diyelim.
+
+588
+01:59:21,488 --> 01:59:23,387
+Adres a diyelim.
+
+589
+01:59:28,756 --> 01:59:47,876
+Şimdi A'yı yazdırırken A'nın değerini ekrana yazdıracağım için şu şekilde yapabilirim. Şu A'yı ekrana yazdırır. A'nın adresini yazdırmak istediğimde şunu yapabilirim. Herhangi bir pointer kullanmadan bu şekilde yapabiliyoruz. Bu birinci yöntem.
+
+590
+01:59:48,756 --> 01:59:54,975
+ScanF içerisinde genelde ampersan kullanıyoruz. Eğer burada yaparsak bunu bu şekilde yapabiliriz.
+
+591
+01:59:55,060 --> 02:00:06,300
+A'yı başka türlü de yazdırabilirim. A'yı gösteren hangi şeyler var? İşte PA var, PT var, PTT var. O zaman şöyle yazalım. A1 diyelim.
+
+592
+02:00:11,123 --> 02:00:12,484
+Bir de A2 diyorum.
+
+593
+02:00:16,435 --> 02:00:17,804
+yüzde de
+
+594
+02:00:21,108 --> 02:00:42,228
+Bu konu çok önemli. İlerleyen zamanlarda straklar konusuna falan gelince ne kadar önemli olduğunu ve bunları öğrenmenin, tam öğrenmenin ne kadar önemli olduğunu göreceksiniz. Eğer burada bir şeyi anlamamışsanız, ilerleyen zamanlarda orada bana çok ilginç sorular, anlamsız sorular sorabilmeniz mümkün arkadaşlar. Onun için bunları iyi anlayın.
+
+595
+02:00:42,887 --> 02:00:47,768
+İşte hocam burada şunu kullansak, bu şu değil miydi falan diye öyle sorular gelecek.
+
+596
+02:00:48,500 --> 02:01:08,319
+Diyeceğim ki ben de o konuyu şurada anlatmıştık. İstersen oradaki dersi bir tekrar et. Yani uzun uzun buraları tekrar o zamanlar yeri gelince, o soruları sorunca tekrar etmem mümkün olmayabilir. Çünkü burada yarım yamalak öğrenilen bir şey ilerleyen zamanlarda çok daha eksik bilgiyle çok yanlış yapılan bilen durumlara sebep oluyor.
+
+597
+02:01:09,099 --> 02:01:15,239
+Şimdi A1. A'yı şu şekilde yazabilirim. Yukarıda zaten doğrudan değerini yazdım.
+
+598
+02:01:15,699 --> 02:01:35,819
+PA üzerinden yazabilirim değil mi arkadaşlar? PA bir pointer. Ben o pointer'ın adresini gösterdiği yerdeki değeri getir dediğimde PA ile yazabiliyorum. Başka nasıl yazabilirim? Araya bir tane daha parametre ekledik çünkü. Örneğin, Yıldız PTT diye de yazabilirim.
+
+599
+02:01:37,076 --> 02:02:01,476
+A'nın adresini yazmak istiyorum. Ama zaten yukarıda şu şekilde yazmıştım. Şimdi A'nın adresini gösteren ne var? PA var, PT var, PTT var. O zaman diyorum ki A'nın adresini de PT ile yazdır. Niye ampersand kullanmadık? Çünkü PT zaten neyi gösteriyor? İçerisinde neyi saklıyor? A'nın adresini saklıyor. Bunu bir görelim. Bir de şunu görelim.
+
+600
+02:02:04,659 --> 02:02:08,659
+Bu nedir? Bu nereden çıktı?
+
+601
+02:02:12,916 --> 02:02:20,876
+Neymiş o bu nereden çıkanlar? Yüzde D. Yüzde D olarak yazayım. Yüzde D. Yüzde D.
+
+602
+02:02:26,676 --> 02:02:46,576
+Ampersand Pa Ampersand Pt Ampersand Ptt Bunlar nereden çıktı? Bu nedir arkadaşlar? Söyleyebilecek var mı?
+
+603
+02:02:50,547 --> 02:02:53,627
+Buraya kadar bunları biliyorduk da bunlar nereden çıktı diyebilirsiniz.
+
+604
+02:02:58,484 --> 02:03:22,544
+Evet, şimdi arkadaşlar bu da bir sonuçta kendisi bir değişken. Yani şurada bir adres değeri var. 8, 9, 10, 11, 12 falan böyle gidiyor. Sen PA'nın ampersant ile adresini alırsan ne demektir? Bu buradaki adresi işte ne? Şurada mesela 8. Bunun gibi bir şeyi elde edersin demektir.
+
+605
+02:03:23,764 --> 02:03:29,903
+Peki, burada şu satırda göreceğimiz üç değer aynı mı olacak, birbirinden farklı mı olacak?
+
+606
+02:03:31,443 --> 02:03:32,083
+Şurada.
+
+607
+02:03:39,604 --> 02:03:51,104
+Farklı olacak. Yüzde P yapmanıza şu an için gerek yok. Eğer adres formatında yazarsanız yüzde P, yoksa decimal formatta yazarsanız yüzde de yeterli olur. Evet, burayı bir değerleyelim.
+
+608
+02:04:19,572 --> 02:04:45,931
+Şimdi bakalım. A'da 100 varmış, adresi buymuş. Sonra ne yaptık arkadaşlar? Şurada, birinci satırda bunu yaptık. İkinci satırda PA üzerinden A'ya ulaştık. PTT üzerinden A'ya ulaştık. Yine A'nın adresini PT ile gösterdik. Bakın ne oldu? Aynı sonuçları elde ettik. Bunlar nereden çıktı dediğimiz şeyler de şunlar.
+
+609
+02:04:46,899 --> 02:05:00,179
+PA diye bir değişkenimiz varmış. O şu adreste oturuyormuş. PT diye değişkenimiz varmış. O burada oturuyormuş. PTT diye değişkenimiz varmış. O da burada oturuyormuş. Tamam mı?
+
+610
+02:05:04,115 --> 02:05:05,375
+Bir de şuna bakalım.
+
+611
+02:05:25,268 --> 02:05:27,268
+Şu nedir acaba?
+
+612
+02:05:29,268 --> 02:05:31,268
+Veya şu nedir?
+
+613
+02:05:42,131 --> 02:05:42,831
+Bu nedir?
+
+614
+02:05:44,991 --> 02:05:53,131
+Şimdi arkadaşlar, bu tarz bir durumda, Deytel'in kitabında da vardır.
+
+615
+02:05:53,611 --> 02:05:55,771
+Bizim kaynaklarda belki yok da.
+
+616
+02:05:56,251 --> 02:05:58,551
+Şu ikisi birbirini iptal eder, cancel eder.
+
+617
+02:05:59,671 --> 02:06:00,851
+Sonuç olarak ne kaldı?
+
+618
+02:06:01,551 --> 02:06:02,431
+PA kaldı.
+
+619
+02:06:04,491 --> 02:06:05,811
+Şurada da ne kaldı?
+
+620
+02:06:05,891 --> 02:06:06,711
+PT kaldı.
+
+621
+02:06:07,315 --> 02:06:24,395
+Dolayısıyla ne elde edeceğiz? Şu yukarıda elde ettiğimiz PA'nın değeri neyse, yani PA ve PT neyi gösteriyordu? Şuradaki değeri elde edeceğiz. Adres değerini elde edeceğiz. Çünkü PA, PT tek başına adres gösteriyordu.
+
+622
+02:06:32,659 --> 02:06:35,219
+A'nın adresini gösteriyordu. Onu elde edeceğiz.
+
+623
+02:06:37,139 --> 02:06:44,259
+Şimdi bir şey daha ekleyeceğim buna. Bir de öyle bakalım. Sonra dersimizi tamamlarız. Bakın.
+
+624
+02:06:45,859 --> 02:06:50,039
+Üçüncü satıra kadar sorun yok. Dörde geldik.
+
+625
+02:06:52,212 --> 02:07:05,212
+İkisi birbirini iptal ettiğinde PA'ya yani A'nın gösterdiği A'nın adresi demektir. Bu değil mi? A'nın adresi neydi? Şurada 235.88.44. Bakın 235.88.44'ü buluyoruz.
+
+626
+02:07:07,112 --> 02:07:13,032
+Doğrudan yine PA'nın değeri. Aynı şey PT'nin değeri içinde. Bakın burada da yerleri değişik ama onun için de geçerli.
+
+627
+02:07:13,932 --> 02:07:17,812
+PT'nin değeri neydi? PTA'nın adresi demekti. Bu da böyle.
+
+628
+02:07:18,260 --> 02:07:41,300
+Bu da PTT'nin değeri, o da A'nın adresi demekti. O da bir şey. Şimdi bu şu demek. PA bir değer. PA'nın değeri kaç mesela? Şurada bir. Bu birin adresi nedir?
+
+629
+02:07:47,444 --> 02:07:51,583
+Bu birinin adres değeri.
+
+630
+02:07:55,123 --> 02:07:58,123
+Daha sonra bu adresin gösterdiği değer derken,
+
+631
+02:08:00,684 --> 02:08:02,224
+pardon bir dakika,
+
+632
+02:08:05,344 --> 02:08:11,063
+PA'nın, yani bir ilk antarsant, PA'nın pointer değeri.
+
+633
+02:08:11,063 --> 02:08:15,403
+PA'nın pointerı işte nerede? Bir yerdeydi. Hatta şurada gördük.
+
+634
+02:08:17,103 --> 02:08:20,123
+235-88-32, PA'nın pointerı bu demek.
+
+635
+02:08:21,563 --> 02:08:22,644
+Daha sonraki yıldız,
+
+636
+02:08:23,024 --> 02:08:44,444
+235.88.32'deki değer demektir. Yani ne oldu? Şu A'nın değeri tekrar 1'e geldik. Burada da 235.88.44'e geldik. O şekilde birbirini götürdüğünde tekrar A'nın adresini gördük. Önce PA'nın adresi dediğimiz yere gidiyoruz. Daha sonra o yerden tekrar değere geliyoruz. Gösterdiği yere.
+
+637
+02:08:49,492 --> 02:09:04,752
+Pt mesela neydi? 235 88 44 A'nın adresiydi. 235 88 44'ün değeri ne arkadaşlar? Gösterdiği yerdeki değer işte A'nın değeri neyse o.
+
+638
+02:09:05,363 --> 02:09:30,703
+Bu ağının tekrar adresine gitmek ne demek? 235.88.44'e gitmek demek. Yine birbirini götürüyor. Şurada da aynı sırayla işte ne yapıyorsunuz? Birbirini götüre götüre yani işlemi iki defa yaparak aynı yere ulaşıyorsunuz. Yani bunlar biraz böyle ÖSS tarzı şeyler. Hani böyle çıkarsa ne olur? İkisi birbirini iptal edip işte burada ne kaldı? Böyle bir şey kaldı diyebilirsiniz. Ama şöyle bir şey karşınıza çıkabilir.
+
+639
+02:09:32,724 --> 02:09:34,903
+Orada birazcık dikkatli olmak gerekiyor.
+
+640
+02:09:37,323 --> 02:09:38,503
+Şunu diyelim mesela.
+
+641
+02:09:40,663 --> 02:09:44,884
+Burada, hadi bunu diyelim. Burada da şunu diyelim.
+
+642
+02:09:48,724 --> 02:09:50,804
+Veya şöyle dersek.
+
+643
+02:09:57,332 --> 02:09:59,332
+Hatta şunu değil arkadaşlar.
+
+644
+02:10:04,152 --> 02:10:04,752
+Bakın.
+
+645
+02:10:05,972 --> 02:10:11,332
+Şu, tamam bu bunu götürüyor da, bu adresin adresin adresi diye bir şey yok.
+
+646
+02:10:11,472 --> 02:10:16,632
+Böyle bir yani, PTT'nin kendine ait bir adresi var da, onun adresi onun adresi diye bir şey yok.
+
+647
+02:10:16,692 --> 02:10:17,912
+Onun için burada hata aldı.
+
+648
+02:10:19,512 --> 02:10:22,972
+Şunları bu şekilde yapamıyoruz. Üst üste getiremiyoruz.
+
+649
+02:10:24,020 --> 02:10:29,060
+Şöyle olabilir. Bu da yeterli zaten.
+
+650
+02:10:31,640 --> 02:10:34,240
+Şimdi burada göreceğimiz şey şu olacak. Bu ikisi gidecek.
+
+651
+02:10:34,240 --> 02:10:38,720
+PA'nın adresi. Yani şuradakinin aynısını göreceğiz.
+
+652
+02:10:39,940 --> 02:10:46,640
+Şuna baktığım zaman PT'nin gösterdiği yerdeki değer. Yani şunlardan birisini göreceğiz.
+
+653
+02:10:49,652 --> 02:10:55,992
+Bu da nedir arkadaşlar? Şu gidecek PTT'nin adresini göreceğiz. O da şuradaki ile aynı olması lazım.
+
+654
+02:10:59,572 --> 02:11:00,872
+Şuna 2 diyelim.
+
+655
+02:11:03,612 --> 02:11:04,692
+Buna 3 diyelim.
+
+656
+02:11:11,731 --> 02:11:38,412
+Evet. Şimdi bu ne demiştik? PA'nın adresi. Yani şu nereden çıktı şuradaki ifadeyle şöyle mark. Şuradaki ifadeyle bakın PA şu ikisi arasında bir fark gelmiyor. Şuna baktığım zaman PT'nin gösterdiği yerdeki değer.
+
+657
+02:11:39,028 --> 02:11:46,028
+Pt'nin gösterdiği yerdeki değerle Pa'nın gösterdiği yerdeki değer aynıydı. Şuradaki 100 değeri bakın burada geldi.
+
+658
+02:11:47,248 --> 02:11:52,268
+Sonra geldiğimizde Ptt'nin adresi. Ptt'nin adresini şurada yazmıştık.
+
+659
+02:11:53,368 --> 02:11:58,328
+Şurada ne oluyor? Bunun aynısı oluyor. Bu da bununla aynı eşit değerdi.
+
+660
+02:12:01,068 --> 02:12:01,927
+Anlaşıldı mı?
+
+661
+02:12:03,228 --> 02:12:05,208
+Şimdi bu pointer ile alakalı birinci kısım.
+
+662
+02:12:07,444 --> 02:12:16,604
+Dizileri görünce, dizilerden sonra diyeceğiz ki, pa eşittir, pa artı bir.
+
+663
+02:12:18,204 --> 02:12:22,744
+Şimdi burada pa ne kadar artıyor? Bir tane mi artıyor? Yani pa'nın değeri yüzse,
+
+664
+02:12:26,996 --> 02:12:29,655
+Pardon, burada PA kaçtı? PA1'di mesela.
+
+665
+02:12:34,036 --> 02:12:38,536
+Bir byte değil arkadaşlar. Dört byte da değil. Bu ezber.
+
+666
+02:12:40,615 --> 02:12:46,655
+PA'nın değerinin PA artı bir olması şu demektir. PA'nın tipi var.
+
+667
+02:12:50,195 --> 02:12:55,916
+Tipine göre artacağı için burada artı bir yapmak şu anlama ifade geliyor.
+
+668
+02:12:56,115 --> 02:13:07,336
+PA'nın adres değeri artı bir, şuradaki bir çarpı size of operatörü PA.
+
+669
+02:13:10,931 --> 02:13:30,872
+pa'nın sizeofu çarpı bir kadar adresi, değeri hesapla. Genelde bu zaten 4 olacak. İntejir olduğu için. 1 ile de çarptığımız için. Dolayısıyla ne olacak? İşte 8 iken, pardon pa'nın içeriği 1 iken, işte ne olacak? 4 byte artacağı için 5'e gelecek.
+
+670
+02:13:30,872 --> 02:13:36,872
+O zaman şurayı tekrar bir yazalım. pa'nın değerini 1 arttırdık.
+
+671
+02:13:38,804 --> 02:13:42,203
+Bakın şimdi getiriyoruz, şunu şuraya yazıyoruz.
+
+672
+02:13:46,260 --> 02:13:50,119
+backslash yeni adresler diyelim.
+
+673
+02:13:56,884 --> 02:14:11,064
+Bu yeni adreslere göre artık PA nereyi gösteriyor? Başka bir yeri gösteriyor. Neresi orası bilmiyorum. Bilmeme gerek yok. Ama biliyorum ki artık eski A'nın adresi değil.
+
+674
+02:14:25,652 --> 02:14:49,311
+Önceki A adresimiz neydi arkadaşlar? P-A'yı ilk şurada yazdırmıştık. Pardon, nerede yazdık? Şurada P-T'yi yazdırmıştık. İkinci satırda 235.88.44'tü. Bu 235.88.44'e.
+
+675
+02:14:51,315 --> 02:14:54,895
+A'nın sizeof'u kadar bir arttırım yaptığımızda,
+
+676
+02:14:58,228 --> 02:15:08,968
+Pardon. Yalnız burada PA'nın gösterdiği değeri yazmayacağız. Şurada bir hatam var. Şurada PA'yı yazacağız arkadaşlar.
+
+677
+02:15:13,779 --> 02:15:18,419
+P, A yazacağız ki sonuç öyle olsun.
+
+678
+02:15:22,868 --> 02:15:25,168
+Gerçek son değerini görelim diye.
+
+679
+02:15:31,604 --> 02:15:55,903
+Şimdi bakın, 235.88.44 niye burada PA? Çünkü PTT PA aynı yeri gösteriyordu. O da A'nın kendi adresiydi. Yani şu A'nın adresiydi. Dedik ki burada PA'nın değerini 1 arttır. Bakın, integer'in byte'in byte değerinin 1 olduğunu biliyoruz. 4 arttırdığımızda 235.88.48'e gitti.
+
+680
+02:15:56,435 --> 02:16:13,235
+Yanındaki Pt ne yapıyordu? Ptt yine 100'ü gösteriyor hala. İşte Pt hala 100'ün kendi adresini gösteriyor. Artık bu başka bir adresi gösteriyor arkadaşlar. İşte B ve C'nin adresine bakarsanız, belki mesela şurada B'nin adresini de yazalım.
+
+681
+02:16:20,948 --> 02:16:21,708
+Şöyle yapayım.
+
+682
+02:16:24,787 --> 02:16:26,247
+Belki B'dir orası.
+
+683
+02:16:28,427 --> 02:16:30,367
+B adres B.
+
+684
+02:16:32,367 --> 02:16:34,467
+Mesela burayı B ile gösterelim.
+
+685
+02:16:35,807 --> 02:16:38,047
+Şurayı da P, B ile gösterelim.
+
+686
+02:16:51,796 --> 02:17:19,416
+200, 235, 88, 32 imiş. Bakın bu 88, 56 idi, 32 bakın. Ardışıl tanımlama rağmen başka adresler verdi. Bir de her çalıştırmada farklı yerler tahsis edebiliyor. Eğer bir sonrası olsaydı, yani A'nın adresinin bir sonraki adresi olsaydı, B o zaman artık B'ye erişmiş gibi olabilirdim. Ama tabii burada olmadı bu örnekte.
+
+687
+02:17:20,051 --> 02:17:39,051
+Ama dizilerde dizinin sıfırıncı elemanı işte PA ise PA artı 1 nereyi gösterecek? Dizinin birinci elemanını. PA artı 2 ikinci elemanını bu şekilde bir döngüyle dizinin bütün elemanlarına erişeceğim. Zaten asıl mevzu...
+
+688
+02:17:39,956 --> 02:18:01,596
+Sizde birazcık orada kopmaya başlıyor. İşte orada bu nasıl oldu? Ampersand nereye gelecek? Noktalı virgül nereye gelecek? Şu ne olacak? Bu ne olacak? Konuşacağız daha oralara geleceğiz. Şimdilik bu yeterli. Şuna bakmanızı tavsiye ederim. PA artı artı. Bunu araştırabilirsiniz. Aynı şeyleri göreceksiniz arkadaşlar.
+
+689
+02:18:01,596 --> 02:18:05,816
+Şimdi bakalım slide'ımızdan nereye gelmişiz?
+
+690
+02:18:08,468 --> 02:18:26,108
+Deklaration. Şu deklaration'da kalalım arkadaşlar. 116. Buna bir not alabilirseniz, ben unutmam da inşallah dizilerin tanımlanması ile alakalı kısımdan devam edeceğiz.
+
+691
+02:18:27,308 --> 02:18:31,348
+Hocam, PB'ye bakmamız gerekiyor muydu beğenin adresi için?
+
+692
+02:18:34,932 --> 02:18:45,731
+Bakın, ilk şey burada. Hatamız, evet. P, B. Evet, şunu yapmamız gerekecekti. Doğru. Şöyle yazacağız.
+
+693
+02:18:50,004 --> 02:19:14,064
+Doğru söylediniz sana teşekkür ediyorum. Bakalım şimdi adres neymiş? Diğer ekranda çıktığı için hemen buraya geldim. Evet bakın. 88.40 imiş. Yani aslında B'yi tanımlamamıza rağmen burada A, B diye tanımladık ama B'nin adresi şeyden önce geliyor. A'dan önce geliyor bellekten.
+
+694
+02:19:15,443 --> 02:19:34,004
+Belki c 48 olabilir. Yani bakmak lazım. Ama önemli olan şey o değil. Burada pa artı 1 yaptığımızda 44'den 45'e geçmedi. Çünkü size of'una göre arttırım yapıyor. Eğer şunu yapalım bir de.
+
+695
+02:19:41,747 --> 02:19:43,347
+A diyelim, şöyle bir şey.
+
+696
+02:19:48,948 --> 02:20:09,648
+Bir de integer p, tabi bu ch diyelim. Niye integer diyoruz? Integra kafayı taktık çünkü. p ch eşittir. Ampersand ch diyelim.
+
+697
+02:20:19,956 --> 02:20:29,736
+C eşittir. Yüzde C.
+
+698
+02:20:33,427 --> 02:20:36,927
+Antlersant c eşittir.
+
+699
+02:20:38,207 --> 02:20:41,587
+Yüzde d. Adresleri şimdilik yüzde d ile yazabiliriz.
+
+700
+02:20:42,587 --> 02:20:43,468
+Antlersant c.
+
+701
+02:20:49,268 --> 02:21:01,368
+Eşittir yüzde c. Pardon yüzde d. Backslash n. Şuraya da before diyelim.
+
+702
+02:21:11,731 --> 02:21:37,971
+Buraya after diyelim. Şurada da pch. Pch artı artı diyelim. Tabi şunları yerine yazacağız. Şimdi c'yi arkadaşlar ch olarak yazacağım. Sonra pch olarak yazacağım.
+
+703
+02:21:41,556 --> 02:21:51,896
+İkisi ne yapacak? İkisi de aynı karakteri bastıracak. Sonra c'nin adresi olarak yazacağım. Bir de p, c, h olarak yazacağım. İkisi de aynı şeyi verecek.
+
+704
+02:21:54,015 --> 02:21:55,015
+Bunu alıyorum.
+
+705
+02:21:59,123 --> 02:22:05,263
+Buraya getiriyoruz. Tamam mı? Herhalde bir şey yok gibi sıkıntı yok ki burada.
+
+706
+02:22:07,824 --> 02:22:10,384
+Varsa zaten şey yaparız çözeriz.
+
+707
+02:22:12,443 --> 02:22:15,243
+Şimdi karakterimiz A.
+
+708
+02:22:15,504 --> 02:22:16,523
+Before'da.
+
+709
+02:22:17,304 --> 02:22:21,644
+Adresimiz 235 88 36.
+
+710
+02:22:23,443 --> 02:22:25,484
+Ne yaptık bir yerde bir hatamız var.
+
+711
+02:22:26,324 --> 02:22:33,144
+Tabi C'nin adresini yazmayacaktık. C, H'nin adresini yazacağız. C'nin adresini yazarsak olmaz.
+
+712
+02:22:37,043 --> 02:22:40,123
+Çünkü biz CH ve PCH'yi işaret ediyoruz.
+
+713
+02:22:41,984 --> 02:22:42,783
+Evet.
+
+714
+02:22:43,703 --> 02:22:46,063
+235.88.07'ymiş.
+
+715
+02:22:46,283 --> 02:22:48,343
+235.88. Yani aynı adresler.
+
+716
+02:22:49,463 --> 02:22:55,843
+Sonra diyoruz ki A'nın gösterdiği yer ikinci durumda afterdan sonra PCH'yi bir arttırdık.
+
+717
+02:22:56,843 --> 02:23:00,103
+A dediğimiz karakter eski yerinde duruyor.
+
+718
+02:23:00,183 --> 02:23:01,243
+Çünkü CH'yi yazıyoruz.
+
+719
+02:23:01,383 --> 02:23:03,703
+Ama PCH'yi yazdırdığımızda
+
+720
+02:23:04,180 --> 02:23:28,500
+Ne olacak? PCH güncellendi. Nasıl güncellendi? PCH'nin eski değeri neydi arkadaşlar? Eski değeri 235.88.07 idi. 235.88.08'e bir sonraki hücreye gitti. O bir sonraki hücredeki tek bir byte'lık, bir size of'luk karakter değeri onun karşılığı 4'müş. Orada 4 diye bir değer varmış olabilir. O 4'ü getiriyor ekrana basıyor.
+
+721
+02:23:28,915 --> 02:23:50,795
+Eski yerimiz hala 235.88.07. Bu şekilde bakabiliriz. Yani bu arttırımlar için 4 byte'lık, 8 byte'lık falan doğrudan diyemiyoruz. Niye? Size of'u kadar. İşletim sisteminde farklı olabilir, derleyici de farklı olabilir. Genelde integer 4 byte'dır deriz ama size of'a kadar.
+
+722
+02:23:58,708 --> 02:24:06,427
+Niye buna alışalım diyoruz. Çünkü dinamik bellek yönetiminde bunu kullanacağız. Ne kadar? PA'nın size'ı kadar.
+
+723
+02:24:07,548 --> 02:24:13,328
+Veya PA'nın türü neydi arkadaşlar? Integer. O zaman PA yerine integer yazmak daha makul.
+
+724
+02:24:14,128 --> 02:24:16,887
+Integer size'ı kadar PA'yı bir arttır demek.
+
+725
+02:24:16,887 --> 02:24:20,628
+Veya, pardon burada değil tabi o, burada karakter diyeceğiz.
+
+726
+02:24:21,747 --> 02:24:24,208
+Burada karakter size'ı kadar bir arttır.
+
+727
+02:24:25,172 --> 02:24:35,172
+Şurada da... Yok, burada integer ya. Aşağıda görmediğim... Şu doğrudan yaptığı şey arkadaşlar...
+
+728
+02:24:39,123 --> 02:24:50,844
+PCH eşittir. PCH artı 1 çarpı size of char demektir.
+
+729
+02:24:55,924 --> 02:25:15,764
+Bunun mantığı böyle. Evet, gelecek haftaki dersimizde ve uygulamamızda bu basic işlemlerden sonra dizilerin tanımlanmasıyla, dizilerden işte karakter dizileri vs. onlara bakacağız.
+
+730
+02:25:17,204 --> 02:25:19,924
+Şurada çok boyutlu diziler var.
+
+731
+02:25:21,203 --> 02:25:47,203
+Pointerlarla alakalı Pointer dizileri var. Dinamik Memory Allokasyonu gelecek hafta bitiririz diye düşünüyorum. Bu bittikten sonra ilk ödevimizi yapabilecek bilgi seviyesine geliriz. Hatta belki fonksiyonları da bitirebilirsek fonksiyonel bir şey yazmanız ödevde daha faydalı olacaktır. Belki fonksiyonları bitirdikten sonra bir...
+
+732
+02:25:47,763 --> 02:26:05,283
+Ödevi o şekilde ayarlayabiliriz. Yani belki iki hafta sonra ya zaten o konular da biter. Bu şekilde biter. Structure'lara kadar 170. sayfadaki sayfaya kadar gelecek hafta eğer uygulama sonunda gelirsek, Yunus Hoca da gelirse ödevi ona göre verebiliriz. Evet [öğrenci].
+
+733
+02:26:08,020 --> 02:26:29,360
+Hocam, en son şey yapmıştık ya mesela, değeri bir arttırdıktan sonra karakteri 4 gelmişti mesela karşımıza. Bizim orada baktığımız şey integer olsaydı, o 4 byte'lık bit dizisinin sadece oradaki bir byte'lık kısmının integer'ı mı verir bize?
+
+734
+02:26:29,360 --> 02:26:35,139
+Yok. Yani diyorsun ki sen şurada, şurayı %d yapsaydık hocam.
+
+735
+02:26:35,507 --> 02:26:56,427
+Aynen. Şimdi bu şu olacak. PCH'nin bir adresi var mı? Var. O adresi temel alarak o adresten itibaren desimal yani 4 baytlık alanın hepsini alıp bize gösterecekti. Bakalım. Yüzde D demek gidiyor. Bak şimdi ne geldi? 52 geldi.
+
+736
+02:27:00,399 --> 02:27:24,079
+gösterdiği adresteki değere göre bu değer artı size of integer yani size of yüzde de decimal kadar bir alanı içeren değeri alıp getiriyor. Onun için format specifier'lar önemli. Tamam? Teşekkürler. Evet, sorunuz yoksa arkadaşlar hepinize iyi günler.
+
+737
+02:27:25,299 --> 02:27:28,259
+Gelecek hafta kaldığımız yerden devam ederiz.
+
+738
+02:27:33,876 --> 02:27:35,695
+Hoşçakalın. Görüşmek üzere arkadaşlar.

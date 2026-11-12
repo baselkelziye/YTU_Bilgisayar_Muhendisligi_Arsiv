@@ -1,0 +1,819 @@
+1
+00:00:20,756 --> 00:00:25,356
+Merhaba arkadaşlar. Kim var sinyal sistemlerden gelen?
+
+2
+00:00:29,108 --> 00:00:34,228
+Youtube'da falanca yerden gelip videonun altına yorum yazanlar...
+
+3
+00:00:47,347 --> 00:00:52,847
+Yeni bitti ders. Yani benden mi yoksa Gökhan Hoca'dan da?
+
+4
+00:00:57,235 --> 00:01:01,415
+Şimdi ben her gün konuşacağım. En son hangi örneği çözdü o?
+
+5
+00:01:09,843 --> 00:01:15,643
+O dersin de videosu, aslında onun da nerede kaldığını görmem lazım da soruları ona göre hazırlayacağız.
+
+6
+00:01:21,715 --> 00:01:28,615
+Ödevi ben de verdim. Çözdüğü sorular, derste yaptıkları. Şu linki bir paylaşayım arkadaşlar. Asistan arkadaş gelecek.
+
+7
+00:01:58,323 --> 00:02:02,024
+Çözdüğü soruları takip edemediniz herhalde. Bir cevap gelmemiş.
+
+8
+00:02:26,132 --> 00:02:41,111
+Siz ekranı görüyor musunuz? Bilmiyorum da. Şehir diyelim. Şunları anlattım arkadaşlar. Fourier diziminin özellikleri şöyle örnek falan yaptı mı? Differansiyel denklemle. Belki böyle hatırlarsınız.
+
+9
+00:02:52,147 --> 00:02:54,147
+Aynı ödevi ben de
+
+10
+00:02:56,147 --> 00:02:58,147
+Şimdi sabit ediyorum.
+
+11
+00:02:59,147 --> 00:03:02,147
+Desktop PDF
+
+12
+00:03:09,620 --> 00:03:11,116
+25 Aralık Cumhurbaşkanı.
+
+13
+00:03:16,147 --> 00:03:21,187
+Hocamızın gelmesini bekliyoruz. Gelince devredeceğim.
+
+14
+00:03:25,651 --> 00:03:26,711
+Hocam merhabalar.
+
+15
+00:03:27,411 --> 00:03:28,632
+Merhaba hocam, hoş geldiniz.
+
+16
+00:03:30,132 --> 00:03:42,051
+Sınıfta herhalde toparlanmadı. Biz biraz önce sinyal dersini yeni bitirdik. Onun bir yorgunluğu vardır. Bir iki dakika arkadaşlar, gerçi daha iki üç dakika varmış dersin başlamasına.
+
+17
+00:03:42,771 --> 00:03:45,111
+Bir beş dakikada verebiliriz zaten.
+
+18
+00:03:45,231 --> 00:03:49,111
+Olur, yani siz nasıl arzu ederseniz ona göre yapalım.
+
+19
+00:03:52,084 --> 00:03:56,463
+Zaten örnek zannediyorum bir saatte biter arkadaşlar.
+
+20
+00:04:00,147 --> 00:04:04,288
+Ben size şey şimdi şu masaüstü paylaşım yetkisini ayarlayayım.
+
+21
+00:04:05,108 --> 00:04:08,967
+Tamam hocam. Nasıl olacak? Bu şöyle olacak. Önce iptal edeceğiz herhalde.
+
+22
+00:04:11,747 --> 00:04:17,367
+Şu an siz de paylaşabiliyorsunuz hocam. Hatta ben direkt kapattım.
+
+23
+00:04:19,148 --> 00:04:23,228
+Evet, ben paylaşabiliyorum. Hata vermeyelim.
+
+24
+00:04:23,228 --> 00:04:25,288
+Rica ederim.
+
+25
+00:04:25,971 --> 00:04:29,891
+Tamam. Birkaç dakika bekleyelim maalesef. Ben ondan sonra...
+
+26
+00:04:29,891 --> 00:04:36,131
+Benim oturumum açık olur ama siz rahat edin. Bir şey olursa, chatten yazarsanız araba bakıyorum ben.
+
+27
+00:04:36,671 --> 00:04:37,411
+Tamam, tamam.
+
+28
+00:04:38,031 --> 00:04:40,251
+Elinize sağ olun. Kolay gelsin. İyi çalışmalar.
+
+29
+00:04:40,791 --> 00:04:41,751
+Teşekkürler hocam.
+
+30
+00:11:05,299 --> 00:11:31,359
+Arkadaşlar, tekrar selamlar. Bugün beraber bir uygulama yapacağız bir tane örnek üzerinden. Çok uzun süreceğini ben de zannetmiyorum. Öncelikle umarım hepinizin, ailesinin ve kendinizin de sağlıkları yerindedir. Çoğunuzla görüşemiyoruz. Geçen sellaplarımızla, laplarda en azından görüşebiliyorduk. Şimdi ben hemen kameramı kapatayım.
+
+31
+00:11:32,659 --> 00:11:34,480
+Ekranımı paylaşayım.
+
+32
+00:11:39,604 --> 00:11:44,524
+Görüyorsunuz sanırım ekranımı değil mi? Ara sıra bana dönüş yaparsanız çok sevinirim.
+
+33
+00:11:47,724 --> 00:11:48,944
+Evet, görünüyor şu an.
+
+34
+00:11:49,944 --> 00:11:50,444
+Tamam.
+
+35
+00:11:50,879 --> 00:12:15,200
+Teşekkürler. Şimdi derste gördüğünüz bazı konuları pekiştirmeniz açısından size bir örnek hazırladık. Şöyle bir bakalım örneğe. Bir kütüphanedeki 11 raflı bir kitapla çeşitli kitaplar yerleştirilecek. Raflara hangi kitapların yerleştirileceğine isimlerine göre hesaplanan birer Unicode ile karar verilmektedir.
+
+36
+00:12:15,535 --> 00:12:30,535
+Burada bir Unicode hesaplayacağız kullanıcının girdiği kitap ismi için ve bu Unicode'a göre hangi rafa bu kitabı yerleştireceğimize karar vereceğiz. Bu kodu da nasıl hesaplamamız isteniyor?
+
+37
+00:12:30,535 --> 00:12:43,535
+Her bir, basit bir şekilde kitabın her bir karakterinin ASCII karşılığını toplayacağız ve bir kod oluşacak. Daha sonra kaçıncı rafa yerleşeceğine karar vermek için
+
+38
+00:12:43,535 --> 00:13:01,215
+Şimdi raf sayısına göre modunu alarak bu raf numarasını bulmuş olacağız. Biz burada 11 olarak karar verdik raf sayısına. Ama tabi bu kullanıcıdan da istenebilecek bir girdi de olabilirdi.
+
+39
+00:13:02,163 --> 00:13:29,983
+Örneğin şöyle bir örneğe bakabilirsiniz. Tutunamayanlar kitabının ismi. Her bir karakterinin, tabii burada dikkat edin büyük, t ile küçük de tabii ki farklı ASKİ karşılıklara sahip. Her bir karakterinin ASKİ karşılıkları toplanıyor. Burada kodumuz 1494 çıkmış. Daha sonra 11 ile moduna aldığımız zaman bu kitap 9. rafa yerleştirilecektir.
+
+40
+00:13:30,163 --> 00:13:38,183
+Bu ilgisini elde ediyoruz. Şimdi her bir gerilen kitap ismi için bunları listeye ekleyeceğiz.
+
+41
+00:13:41,344 --> 00:14:04,504
+Girdinin hem kodu olacak, hem kitap ismi, hem de kaçıncı rafta olduğu bilgisini tutmamız gerekiyor. Kitaplığa eklenen tüm kitapların raf bilgilerini listeleyen bir fonksiyonda istiyoruz. Yani hangi kitap, hangi rafa yerleşmiş, bunun bilgisini de listeleyen bir seçenek olacak.
+
+42
+00:14:09,344 --> 00:14:22,423
+Numarasını gösteren, bulunmazsa kısa bir mesaj gösteren bir program olacak. Yani bir search fonksiyonumuzda bulunacak. Soruyla ilgili bir aklınıza takılan bir şey var mı şu anda?
+
+43
+00:14:25,875 --> 00:14:46,155
+Ses çıkmadığına göre yok gibi. Şimdi öncelikle beraber ilerlersek size böyle bir soru geldiğinde nasıl çözerseniz öncelikle burada bir girdinin hem kitap ismi tutulacak diyorum, hem kodu tutulacak, hem de hangi rafta olduğu bilgisi tutulacak.
+
+44
+00:14:53,875 --> 00:15:00,015
+Yolumuza gelen neydi? Tabii ki de Structure'lardı. Evet [öğrenci].
+
+45
+00:15:00,532 --> 00:15:28,491
+Strat tanımlamamız gerekiyor. Ve tabii biz bu stratları çeşitli değişkenlerle tutabiliyorduk değil mi? Beri yapılarıyla, pardon, tutabiliyorduk. Dizilerle, link listeyle, link listelerle tutabiliyorduk. Peki şeyi biliyor musunuz? Örneğin, biliyorsunuzdur da dizilerin avantajları, dezavantajları, link listin avantajları, dezavantajları bunlarla ilgili yazabileceğiniz şeyler.
+
+46
+00:15:28,532 --> 00:15:32,792
+Her ikisinin de kendisine göre avantajı, dezavantajı var.
+
+47
+00:15:33,211 --> 00:15:48,471
+Var hocam. Normal eraylar direkt ulaşılabiliyor. Yani istediğimiz elemana direkt erişim sağlayabiliriz ama linkli site hepsini dolaşmak zorunda olduğu için çok uzun linkli sitelerde en sona gitmek biraz uzun sürüyor.
+
+48
+00:15:50,312 --> 00:15:52,532
+Evet, başka söyleyebileceğiniz?
+
+49
+00:15:53,875 --> 00:16:06,715
+Örneğin, linkli listenin avantajı nedir? Bir de linkli listeyi boyutunu arttırabiliriz ama normal arayı arttırmak için farklı bir arayı açıp kopyalamamız gerekiyor. Gene uzun sürüyor. Bir de memori kontrolü yok.
+
+50
+00:16:07,935 --> 00:16:10,715
+Bir de örneğin link listeyi...
+
+51
+00:16:11,220 --> 00:16:38,779
+O bir karmaşıklığında ekleme ve silme yapabiliyoruz değil mi? Ama bir diziye ekleme ve silme, araya ekleme yapmak istediğimiz zaman kaydırma işlemini yapmamız gerekiyor. Diğer elemanları kaydırıp araya o şekilde eklememiz gerekiyor. Evet [öğrenci], ben de bunu anlatıyordum. Araya eleman eklemek daha kolay linkliste. Bu şekilde avantajlarımız, dezavantajlarımız var. Sizler de biliyormuşsunuz.
+
+52
+00:16:39,220 --> 00:16:47,759
+Şimdi biz ama bu örnek için link list kullanacağız. Bakalım şöyle nasıl ilerlediğimize.
+
+53
+00:16:49,820 --> 00:16:56,600
+Şimdi ben tek tek kodu yazmaktansa bu şekilde anlatmayı tercih ediyorum. Umarım.
+
+54
+00:16:57,024 --> 00:17:20,243
+Bir sıkıntı olmaz sizin açınızda. Öncelikle kütüphanelerimizi tanımlıyoruz. Standart input output kütüphanemizi tanımladık ve dynamic bellek allocation yapacağımız için link listi oluşturuyoruz. Her bir nodumuzu, her bir kitap geldiğinde ne kadar ekleme yapılırsa kullanıcı tarafından o kadar. Biz nod oluşturacağız. Bunun için bir dynamic bellek allocation yapmamız gerekiyor.
+
+55
+00:17:25,023 --> 00:17:53,023
+Bu konuda, bugünkü derste konuyu örneğe bakalım.
+
+56
+00:17:53,023 --> 00:18:21,023
+Max Size değişken isimlerin olduğu yerlerde 20 ve 11 yazacak. Makroları hatırlıyorsunuzdur zaten. Bu şekilde tanımladık. Fakat tabii az önce söylediğim gibi kullanıcıdan da istenebilirdi buradaki raf sayısı. Bu arada makroları hatırlıyorsunuz değil mi? Hani örneğin debug yaparken de kullanabiliyorduk. Burada değişken ismi değil, fonksiyon da bulunabilirdi. Bunları hatırlayalım.
+
+57
+00:18:21,023 --> 00:18:28,863
+Daha sonra bir sıtrak yapımız olacak dedik.
+
+58
+00:18:30,003 --> 00:18:47,403
+Ne dedik? Bir kitap ismimiz olacak. Bir kodu oluşturacağız ve bu koda göre hangi rafnoya yerleşeceğini bulacağız. Ve tabii ki bir link list tuttuğumuz için bir sonraki nodun, nodu göstereceğimiz için bir next pointer'ımız bulunacak.
+
+59
+00:18:47,403 --> 00:18:58,003
+Şimdi burada şu şekilde Type Definition kullanıyorduk. Buraya yazdığımız Struck node yerine ben artık list demek istiyorum diyor.
+
+60
+00:18:58,003 --> 00:19:20,643
+Bunu nasıl böyle ayrıca tanımlamak zorunda da değiliz tabii ki. Type de F'i buraya yazıp daha sonra listi de buraya yazdığımız zaman direkt tanımlanmış olacaktı. Aslında burası artıdan bir şekilde artıdan olmuş oluyor. Ama böyle buradaki aradaki farkı göstermek için böyle bırakmış olduk.
+
+61
+00:19:21,183 --> 00:19:25,943
+Biliyorsunuz ki Struck not yerine diyelim ki ben buraya double da yazabilirim.
+
+62
+00:19:26,003 --> 00:19:32,623
+Double'a farklı bir isim de verebilirim ve artık onu o şekilde de kullanabilirim. Bunları hatırlıyorsunuzdur.
+
+63
+00:19:33,011 --> 00:19:49,531
+Daha sonra ne olacak dedik? Bir insert fonksiyonumuz olacak, bir search fonksiyonumuz olacak ve display. Bir tane de kitap isminden kodu oluşturan find key isminde bir fonksiyonumuz olacak.
+
+64
+00:19:49,531 --> 00:20:00,000
+Şimdi bu fonksiyonlarda dikkat etmenizi istediğim şey, kimisinde double point var insert'ta, kimisinde dedim sadece bir tanesinde insert'ta fakat diğerlerinde tek.
+
+65
+00:20:00,000 --> 00:20:02,000
+Şimdi neden böyle?
+
+66
+00:20:02,708 --> 00:20:21,708
+Şöyle bir bakalım. Öncelikle, head'ı biliyorsunuz, listemizin başını tutmak için bir head pointer'ı tanımlıyoruz ki, listemizin başını kaybetmeyelim. Listemizde sequential search yapabilmemiz için ve birçok adımda kullanabilmek için listemizin başını kaybetmiyoruz.
+
+67
+00:20:21,708 --> 00:20:27,708
+Bunun için head'ı tutuyoruz ve şu anda listemiz boş olduğu için head now.
+
+68
+00:20:28,307 --> 00:20:36,307
+Daha sonra kullanıcıdan bir kitap ismi isteyeceğiz. Bu kitap ismini de bu şekilde bir karakter dizisiyle tanımlıyoruz.
+
+69
+00:20:36,307 --> 00:20:44,307
+Sonra şöyle küçük bir menümüz var. Az önce fonksiyonlarda gösterdiğim gibi kullanıcıdan bir option seçmesini isteyeceğiz.
+
+70
+00:20:44,307 --> 00:20:47,296
+Diyelim ki kullanıcı insert seçti.
+
+71
+00:20:47,296 --> 00:21:01,336
+Bu arada şöyle bakarsanız Switch Case yapısında, biz Break komutunu biliyorsunuz ki kullanmıyoruz. Genellikle Break komutunu kullanmak için kullanmamaya çalışıyoruz ve daha akıllı döngüler yazmaya çalışıyoruz.
+
+72
+00:21:01,336 --> 00:21:13,936
+Break komutunu nadiren kullandığımız yapılardan birisi Switch Case yapısı. Bunu da hatırlatayım size. Ve hangi opşonu seçiyorsa oraya o case'e bakıyorum.
+
+73
+00:21:15,296 --> 00:21:26,796
+Önceden yine bir kitap ismi aldık. Peki burada şeyi arkadaşlar, size şöyle bir şey sorsam. Diyelim ki kitap ismi olarak şeker portakalı girdim.
+
+74
+00:21:28,716 --> 00:21:38,456
+Stringleri gördünüz değil mi? Burada şeker portakalı girseydim, iki kelimeyi de alır mıydı bu neymi?
+
+75
+00:21:43,220 --> 00:21:45,940
+Birisi kamerasını açtı ama vazgeçti sanki.
+
+76
+00:21:46,800 --> 00:21:50,000
+Almazdı sanırım. Şeker alırdı sadece.
+
+77
+00:21:50,779 --> 00:22:00,279
+Evet, şimdi arkadaşlar ScanF'i eğer bu şekilde %S olarak formatlarsanız Whitespace'e kadar alır.
+
+78
+00:22:00,672 --> 00:22:20,811
+Bunun için ya ScanF'i formatlamanız lazım, örneğin New Line'a kadar oku şeklinde formatlamanız lazım ya da Get fonksiyonları gibi, AskF fonksiyonları gibi başka fonksiyonlar kullanarak Wispaces'leri de okumanız gerekiyor.
+
+79
+00:22:20,811 --> 00:22:28,672
+Bunları zaten file sistemlerine işlediğiniz zaman daha ayrıntılı anlayacaksınız dosyadan okuduğunuz.
+
+80
+00:22:28,672 --> 00:22:33,012
+Bunu da ayrıntı olarak söyleyeyim istedim.
+
+81
+00:22:33,112 --> 00:22:36,351
+Şey yapabiliriz hocam orada, biz arkadaşlara anlattık.
+
+82
+00:22:36,992 --> 00:22:40,912
+%s yerine bir regular expression, şunu yazabiliriz.
+
+83
+00:22:41,971 --> 00:22:44,932
+% şapka, çete yazıyorum.
+
+84
+00:22:45,592 --> 00:22:47,471
+Şöyle değil mi hocam?
+
+85
+00:22:48,331 --> 00:22:49,492
+Bir saniye yapacağım.
+
+86
+00:22:49,632 --> 00:22:51,112
+Şapka, backslash, n.
+
+87
+00:22:51,971 --> 00:22:53,311
+Yüzdeyi başa alıyorsunuz.
+
+88
+00:22:57,907 --> 00:23:06,367
+Evet evet. Yani şu an Ezber'in şey yoktu ama buraya mı alıyorduk? Ezber'in şey yoktu ama böyle bir formata benziyor. Onu hatırlatmak istiyorum.
+
+89
+00:23:06,367 --> 00:23:10,707
+Aynen. Belki şey olabilir. Evet öyle olması lazım.
+
+90
+00:23:10,707 --> 00:23:18,907
+Ben sadece formatını hatırlamıyorum ama böyle biliyorlar mı acaba diye bir kontrol etmek istedim.
+
+91
+00:23:18,907 --> 00:23:19,907
+Tamam.
+
+92
+00:23:19,907 --> 00:23:21,867
+Teşekkürler hocam.
+
+93
+00:23:22,548 --> 00:23:32,288
+Daha sonra arkadaşlar, bu aldığımız kitap ismini kullanarak şimdi insert fonksiyonuna gideceğim. Peki, insert fonksiyonunda bunu da eminim ki gördünüz.
+
+94
+00:23:32,487 --> 00:23:45,748
+Insert fonksiyonunda neden double point kullanıyorum? Şimdi, eğer ben head'i değiştireceksem, biz şimdi link listede başa ekleme yapacağız. Tabii ki sona da ekleme yapabiliriz.
+
+95
+00:23:50,548 --> 00:24:12,027
+O zaman double point kullanmam gerekiyor. Eğer diğer fonksiyonlardaki bir tek head'i gönderseydim, o zaman yapmam gereken, buradan yeni oluşan new node'u head'e eşitledikten sonra geri dönüşünü yapmam gerekiyordu. Yani head'i şu şekilde return etmem gerekiyordu.
+
+96
+00:24:13,203 --> 00:24:18,264
+Böyle yaparak return etmem gerekiyordu. Yani aslında şöyle daha güzel özetleyebilirim.
+
+97
+00:24:18,264 --> 00:24:31,824
+Hedik kullanmanın üç ayrı yolu var. Ya global tanımlayacaksınız ve her fonksiyonda hedin değişimine olanak sağlamış olacaksınız ki bu tercih edilmeyen bir yöntem.
+
+98
+00:24:32,403 --> 00:24:40,864
+Ya bu şekilde diğer fonksiyonlara gönderildiği gibi göndereceksiniz ve fonksiyon içinde değiştirdikten sonra return edeceksiniz.
+
+99
+00:24:41,203 --> 00:24:51,583
+Ya da Double Point kullanarak hiç hataya bir mal vermeden, geri dönüşe gerek kalmadan Double Point kullanabilirsiniz.
+
+100
+00:24:51,583 --> 00:24:55,324
+Şimdi bu yüzden geldik buraya.
+
+101
+00:24:56,211 --> 00:25:24,211
+Yeni bir node oluşturacağımız için dinamik bellek allokasyonumuzu yaptık. Aslında burada hani başarılı oldu mu diye, nal mı diye bir kontrol yapsaydık daha iyi olurdu. Onu atlamışız kusura bakmayın. Daha sonra da bir indeksimiz kodumuza karşılık gelen bir indeks olacak ve kodumuz olacak. Şimdi kitap ismini find key fonksiyonuna gönderip kodu elde ediyoruz.
+
+102
+00:25:24,211 --> 00:25:48,211
+Bir find key fonksiyonuna bakalım. Şimdi string'imizi buraya gönderdik. Bu if yapısını hatırlıyorsunuzdur. Eğer string'in boşsa sıfır dön. Eğer değilse birinci karakterini al. Yani s'i al. Artı s artı birden ilerle.
+
+103
+00:25:48,723 --> 00:26:04,363
+Yani bunun aslında şöyle gösterebilirim. Şunu şöyle yapıyor. Burada küçük bir Recursion çalışıyor. Yani aslında diyelim ki benim şu an Paint'i görebiliyorsunuz değil mi?
+
+104
+00:26:08,564 --> 00:26:09,724
+Kimseden ses çıkmıyor.
+
+105
+00:26:09,724 --> 00:26:10,584
+Evet görebiliyoruz.
+
+106
+00:26:11,304 --> 00:26:17,984
+Tamam. Diyelim ki, ne diyeyim, şöyle bug diyeyim, böyle bir girdim olsun.
+
+107
+00:26:20,384 --> 00:26:31,244
+Daha sonra bunun yaptığı şey ise, B artı, F'i tekrar, S artı birden çağırıyorum ya, bu şekilde çağırıyor.
+
+108
+00:26:36,596 --> 00:26:47,275
+O, OK için çağırdım. O artı, OK şeklinde çağırıyor. Ve tekrar böyle devam ediyor.
+
+109
+00:26:52,692 --> 00:27:08,471
+Bu şekilde. Ve ne olacak artık? Artık başka karakterim kalmadı. F0 olarak yapacak. Şöyle. K'yı unutmayalım. Ve sonra ne olacak arkadaşlar?
+
+110
+00:27:09,268 --> 00:27:24,708
+Şimdi burası neydi? Sıfır olduğu zaman, artık boş olduğu zaman sıfır dönecek. Yazım için yazamıyorum hiç peynisi. Harika bir sıfır oldu. Sıfır dönecek. O zaman burası ne olacak arkadaşlar? K'nın ASKİ değeri. Değil mi?
+
+111
+00:27:25,268 --> 00:27:41,968
+Daha sonra o zaman bu FK, K'nın aski değerini döndü. Buradaki FOK da burayı dönecekti. Burası da O artı K'nın aski değerini döndü. Daha sonra burası da O artı OK'nın aski değerini dönmüş olacak.
+
+112
+00:27:51,604 --> 00:28:02,604
+Bu kelimesine dönmüş olacak. Recursion'ları da gördünüz diye biliyorum. Onun için böyle basit bir Recursion fonksiyonu oldu. Ve daha sonra da bize...
+
+113
+00:28:03,251 --> 00:28:18,951
+Buradan bir key dönmüş olacak. Ve sonra ne yapıyoruz? Raff sayımıza yani 11'e moduna aldığımız zaman da indeksimizi bulmuş oluyoruz. Sonra kodumuza key eşitledik.
+
+114
+00:28:21,556 --> 00:28:39,855
+Değişkenlerimize bu şekilde ulaşıyorduk. Ve indeksimizi de eşitledik. Direkt eşitleme yapamıyorduk stringlerde. Bu bizim yani new node name eşittir, bug name dememin hiçbir anlamı yok. Bu nedenle str copy'yi kullanıyoruz.
+
+115
+00:28:49,556 --> 00:29:08,096
+Nive nodun yani yeni nodumuzun headin gösterdiği nodu göstermesini sağlıyoruz. Sonra da new nodu head'e eşitliyoruz. Yani artık headimiz new nod olmuş oluyor ve en başa head'i eklemiş oluyorum. Bu kısmı da anladınız değil mi arkadaşlar?
+
+116
+00:29:18,644 --> 00:29:22,644
+Şöyle yapalım. Bir tane daha çizeceğim.
+
+117
+00:29:29,491 --> 00:29:45,420
+Şimdi burası bu new nodum olsun. Burası da head'imdi. Ben şimdi head'imin gösterdiği yere new nodumun göstermesini sağladım. Ve sonra da head'imi artık...
+
+118
+00:29:45,619 --> 00:30:11,979
+Şöyle yapayım. Nil noduma eşitledim. O zaman ne oldu? Artık Nil nodu başa eklemiş oldum. En başa yeni bir eleman eklemiş oldum. Bunu sonda da yapabiliriz. Sondan ekleme de yapabiliriz. Onun için sadece burada bir yine Structure değişkeni tanımlayacaktık. Onunla en sonuncu elemana gidecektik ve oraya ekleme yapacaktık.
+
+119
+00:30:12,948 --> 00:30:40,548
+Bu şekilde insert fonksiyonumuzda. Daha sonra da display fonksiyonumuz var. Şimdi şunu da şöyle yapalım. Burada da arkadaşlar yine double point gönderebilirsiniz. Bu size kalmış. Herhangi bir değişiklik yapmayacağım için listenin üzerinde. Bunun için double point göndermedim.
+
+120
+00:30:40,980 --> 00:30:50,500
+Ama siz de dilerseniz gönderebilirsiniz. Burada yaptığımız tek şey listedeki tüm notların içerisindeki bütün verileri yazdırmak.
+
+121
+00:30:50,500 --> 00:30:59,319
+Neymini yazdırıyoruz. Yani ismini, kodunu ve indeksini yazdırıyoruz. Ve not eşitli not next diyoruz.
+
+122
+00:31:00,159 --> 00:31:02,759
+Pardon, şuna gelecekti.
+
+123
+00:31:04,627 --> 00:31:17,647
+Yaptığımız şey sürekli bir sonrakine ilerletmek. Bu şekilde ilerlediğimiz zaman modumuz bir sonraki elemanı gösterecek ve onun bilgilerini yazdıracak.
+
+124
+00:31:21,652 --> 00:31:43,172
+Ve Search fonksiyonumuz var. Search fonksiyonunda şöyle bir bakalım. Öncelikle az önce bahsettiğim gibi listeyi taramam gerekiyor. Bunun için bir değişken tanımlıyorum. Geçici bir not değişken şeklinde temp not adımda. Bir pointer tanımladım.
+
+125
+00:31:44,115 --> 00:31:51,980
+Daha sonra kullanıcıdan aradığı kitap ismini isteyeceğim için de tekrar bir bug nem tanımladım.
+
+126
+00:31:52,468 --> 00:32:15,368
+Ve kullanıcıdan yine böyle sıkı nef ile alıyoruz. Daha sonra head null mı diye soruyorum. Yani listem boş mu? Eğer liste boşsa benim herhangi bir eleman aramama gerek yok burada. Onu kontrol ediyorum. Ardından head'i tamp not'a eşitliyorum. Niye? Çünkü en başta listeyi gezeceğim.
+
+127
+00:32:20,468 --> 00:32:28,688
+En sona ulaştım mı diye kontrol ediyorum. Eğer en sona ulaştıysam ve while'dan hala çıkamadıysam bulamadım demektir.
+
+128
+00:32:29,039 --> 00:32:42,079
+Ve burada str copy ile tank nodun name'ini, yani o şu an bulunduğum nodun kitap ismi ile kullanıcının aradığı kitap ismi aynı mı?
+
+129
+00:32:42,500 --> 00:32:49,479
+str copy'yi hatırlıyorsunuz. Eğer birinci string, ikinci string'den daha büyükse aski karşılığı olarak tabii.
+
+130
+00:32:50,059 --> 00:32:55,919
+Daha büyükse pozitif bir değer, küçükse negatif bir değer. Eğer x eşitse de 0 dönüyordu.
+
+131
+00:32:57,039 --> 00:33:21,519
+Burayaşık değilse o zaman bu iki kitap ismi aynı değildir. O zaman onu da bu şekilde kontrol ediyorum. Ve temp nodu sürekli ilerletiyorum bu iki koşulda sağlanmadıkça. Ve sonra while'dan çıktığım zaman bakıyorum temp nodum ne al mı? Şu an bulunduğum nod ne al mı? Ne alsa o zaman ben kitabı bulamadım.
+
+132
+00:33:23,667 --> 00:33:30,367
+Sıfır eşitse kitap ismiyle o zaman kitabı buldum ve hangi rafta bulduğunu yazdırabilirim.
+
+133
+00:33:31,028 --> 00:33:35,528
+Bu şekilde de arama kısmını gerçekleştiriyoruz.
+
+134
+00:33:37,647 --> 00:33:43,107
+Exit kısmında da zaten çıkıyorduk. Şu şekilde bir çalıştıralım.
+
+135
+00:33:45,248 --> 00:33:47,788
+Belki de başta çalıştırmam gerekiyordu.
+
+136
+00:33:48,307 --> 00:33:56,067
+Şöyle bir bakalım. Sadece kitap isimlerini girmeden önce AA girmek istiyorum.
+
+137
+00:33:56,559 --> 00:34:10,840
+Bu bizim bildiğimiz AA97 asker karşılığına sahip. İki tane A olduğu için 194. Mod 11'den dolayı 7. rafa yerleşmiş şeklinde display ettiğimde de listemde bu gözükmüş oldu.
+
+138
+00:34:10,840 --> 00:34:22,579
+Şimdi birkaç şey daha girelim. Örneğin bizim şeyimiz neydi? Tutunamayanlardı büyük T ile. Tekrar display yapalım.
+
+139
+00:34:23,572 --> 00:34:39,612
+Şöyle, hem AA'ya hem de tutunamayanları görmüş olduk. Bir tane daha ekleyelim. Mesela Nutuk ekleyelim. Şöyle üçünü görmüş olduk.
+
+140
+00:34:47,315 --> 00:35:00,675
+Altıncı rafta olduğunu söylüyor. Mesela olmayan bir şey arayalım. ZZ diyorum. Böyle bir kitabın olmadığını söylüyor.
+
+141
+00:35:00,675 --> 00:35:13,395
+Şöyle. Ve şeyimiz de bu şekilde çalışıyor. Denemek istediğiniz farklı bir şey var mı sizin de?
+
+142
+00:35:16,275 --> 00:35:17,655
+Çette yalan yok.
+
+143
+00:35:20,655 --> 00:35:21,595
+Yok galiba.
+
+144
+00:35:27,284 --> 00:35:48,423
+Virüs kamerasının sesini açtı kamera diyorum. Ses açtı. Ben ben, o ben. Sorunuz varsa arkadaşlar sorabilirsiniz. Bakın, structure var, recursive var, ondan sonra fonksiyonu aktarma var. Yani bu konuları şu ana kadar belki ufak başlıkları altında inceledik.
+
+145
+00:35:50,036 --> 00:35:57,056
+Örneklerimiz, [öğrenci]'ın bir sorusu var. Örneklerimiz ne oluyor? Bu konuların hepsini içerecek şekilde devam ediyor.
+
+146
+00:35:57,836 --> 00:36:11,036
+Şimdi [öğrenci] nasıl raflara aynı... Bir saniye. Bilgisayarım bir dondu. Kendisi yeniliyor kusura bakmayın. Şunu bir kapatayım. Tekrar çalıştırayım.
+
+147
+00:36:11,036 --> 00:36:16,036
+Nasıl bir kitaplıkta raflar aynı rafa yerleşebiliyorsa...
+
+148
+00:36:16,724 --> 00:36:29,724
+Bunda da yerleşmesi gerekir. Mesela tekrar insert yapalım. Emin olduğum için tekrar mutlu ekliyorum.
+
+149
+00:36:29,940 --> 00:36:44,920
+İki defa eklenmiş oldu. Yani isterseniz buraya bir if koyup aynı isimse eklemesin ama farklı aynı koddaysa eklesin şeklinde. Yani tek bir ifle ismini kontrol edebilirsiniz.
+
+150
+00:36:57,940 --> 00:37:07,699
+Aynı kitabı yerleştirmede bir sakınca görmediğimiz için onu yapmadık ama tabii ki bu programcıya kalmış. Onu bir ifle düzeltebilir.
+
+151
+00:37:08,480 --> 00:37:18,239
+O konu bir de arkadaşlar şu şekilde gerçekleniyor. Örneğin kütüphane düşünün. Kütüphanede belli bir kitaptan, nutuktan bir tane olacak diye bir şey yok.
+
+152
+00:37:18,239 --> 00:37:20,239
+Bu kitaplara ayrı bir...
+
+153
+00:37:20,436 --> 00:37:44,956
+Yani fiziksel kitap IDC adı altında bir ID veriliyor. Aynı kitaptan belki 100 tane var. Tamam mı? Bu stok takibi vesaire gibi uygulamalarda bu çok kullanılır. Ayrı bir ID ile saklanır. İkinci bir değişkene ihtiyaç vardır. Yani veri tabanında bunun için ayrı bir değer veya işte programlamada başka bir değişken kullanılıyor. O problem o şekilde çözülüyor. Arama açısından soracak olursanız.
+
+154
+00:37:45,523 --> 00:37:56,523
+Arama da burada şöyle şeyler yapılır. Tabi siz veri yapılarını daha görmediniz ama, hash veri yapısında Linked List'ler ve hash'ler birlikte kullanıyor.
+
+155
+00:37:56,523 --> 00:38:07,023
+Onun veri yapılarını anlatacaklar için biz burada girmiyoruz. Aynı key'e sahip değer Linked List'te, yani onu ben belki daha sonra size çizerek anlatırım.
+
+156
+00:38:07,023 --> 00:38:10,991
+Şu an çok fazla, onunla vakit kaybetmeye gerek yok. Aynı key'e sahip olan...
+
+157
+00:38:10,992 --> 00:38:24,012
+İlla [öğrenci]'in olması gerekmiyor. Denk gelir. Başkasının da kodu 6 olabilir. Buna çakışma diyoruz. LinkedListe belli bir düzende sıralanıyor. O şekilde bir durum var.
+
+158
+00:38:25,351 --> 00:38:31,351
+Evet, bu çakışma için farklı çözümler var. Bunları seneye göreceğiniz için onlara girmek istemedik biz.
+
+159
+00:38:31,351 --> 00:38:38,472
+O, bu dersin zaten alanı değil. Şu an için siz bu temel programlamayla alakalı yapıları öğrenmeniz daha önemli.
+
+160
+00:38:39,699 --> 00:38:50,439
+Evet, yani tam bir daha fonksiyonların üzerinden de geçebilirim. Eğer aklınıza takılan bir şey varsa veya genel olarak isterseniz. Çünkü...
+
+161
+00:38:50,439 --> 00:38:55,819
+Şeyde var hocam, link yapısını bir kere daha anlatsanız olur mu? Bir de recursive kısmında demiş.
+
+162
+00:38:56,916 --> 00:39:24,235
+Tabii, recursive kısmı zaten şurada hemen çizili olduğu için göstereyim. Şimdi arkadaşlar, her seferinde S artı 1 çağırdığımız ne demek? Her seferinde başlangıç noktasını ikinci kısmı, bir sağdaki kısmı alıyorum demek. Buradan başlıyor. S artı 1, S artı 2 şeklinde. Şimdi önce fonksiyonu bug şeklinde çağırıyor.
+
+163
+00:39:24,768 --> 00:39:49,068
+Benim Recursive fonksiyonum. Daha sonra ilk karakterini alıyorum ve kalan 3 karakteri tekrar çağırmasını istiyorum. S artı 1 ile başlattığım için. S artı 1 O OK'yi barındırıyor. Tekrar çağırıyorum ve bu F O OK'de isterseniz şu şeyler rahatsız ediyor mu? Şunları biraz sileyim.
+
+164
+00:39:53,235 --> 00:39:54,027
+Şöyle.
+
+165
+00:39:59,635 --> 00:40:02,275
+Yine biraz şey oldu ama şöyle yapayım.
+
+166
+00:40:03,135 --> 00:40:03,635
+Burada...
+
+167
+00:40:04,532 --> 00:40:19,292
+Tekrar şurada kalmıştık. O, O, K ile F'i çağırdık. Tekrar fonksiyonumuzu çağırdık. Bu fonksiyon da ne oldu? İlk karakteri aldı O'yu ve daha sonra O, K'yi tekrar çağırdı.
+
+168
+00:40:19,292 --> 00:40:32,292
+Ve tekrar bu da O'yu aldı ve K harfine artık harf kalmış oldu. Tek karakter kalmış oldu. Tekrar çağırdı. Sonra K harfini aldıktan sonra artık...
+
+169
+00:40:32,532 --> 00:40:39,972
+Artık S artı 1'de bir şey var mı? Yok. Aslında tabii şöyle bitme karakterimizle de.
+
+170
+00:40:39,972 --> 00:40:41,512
+Backslash 0 var orada.
+
+171
+00:40:41,992 --> 00:41:00,532
+Backslash 0 var. Şimdi kullanıcadan bir string aldığınız zaman ne yapar Scan'e? Sonuna bir Backslash 0. Yani bu şekilde ekler ki o kelimenin, o stringin sonu belli olsun. Bu şekilde de kontrol yapılabilir bunun. Ne diyor peki?
+
+172
+00:41:00,532 --> 00:41:19,252
+Bu konusundaki fonksiyonumuz, eğer string'in bittiyse sıfır dön. Ben şimdi buraya sıfır döndüm. Daha sonra bilgisayar siz buraya karakter girseniz de bunu ASKİ karşılığı olarak algılıyor zaten. [öğrenci]'ınki şimdi kaçtı? Tam aklımda değil tabii ki. 97 ile başlıyoruz. Arttırıyoruz onu.
+
+173
+00:41:20,947 --> 00:41:30,807
+Onu diyelim ki, yani şu an tamamen rakamlardan gidelim. Tamam mı? 2 olsun. 2 artı 0'dan, fk o zaman kaç dönecek? 2 dönecek.
+
+174
+00:41:32,371 --> 00:41:49,011
+Daha sonra O artı K'dan da bir şey dönecek. Yani sayıları tamamen şu an farazi söylüyorum. Kusuruma bakmayın. F, O, K'da 5 olarak döndü. Sonra tekrar O ve O, K'nın toplumu. Yani burada dönen sayı neydi? 5.
+
+175
+00:42:00,371 --> 00:42:15,531
+Toplamı, burada dönen rakam ile toplamı da benim kodum olmuş olacak. Recurge'nin kısmı bu şekilde çalışıyor. Umarım şimdi anlayabilmiştir soran arkadaşımız.
+
+176
+00:42:18,452 --> 00:42:35,932
+[öğrenci] sormuş. Bir de koddaki link list yapısına bakalım demişiz. Şimdi link list yapımıza arkadaşlar, şöyle ben burayı şöyle alayım. Şimdi şuradan ilerleyeyim. Bizim bir link list.
+
+177
+00:42:37,812 --> 00:42:45,032
+Şöyle bir listemiz olsun. Hepsi birbirinden farklı boyuplarda oldu.
+
+178
+00:42:45,972 --> 00:42:52,908
+Şuralarda ne yapıyorduk? Data'yı tutuyorduk ve Next Pointer'ımız vardı.
+
+179
+00:42:57,108 --> 00:43:07,427
+Şöyle yapalım. Şimdi burada diyelim ki bu nodumuz ilk nodumuz olsun ve head bunu göstersin.
+
+180
+00:43:07,427 --> 00:43:14,708
+He olarak gösterdim çok mouse ile yazamadığım için. Bu da new nodumuz olsun.
+
+181
+00:43:14,996 --> 00:43:32,996
+Şimdi yaptığımız şey şu şekilde nasıldı arkadaşlar? Eğer single link liste yani tek yönlüyse tek bir pointer tutuyorduk ve bu pointer da bir sonraki elemanın adresini gösteriyordu değil mi? Bir sonraki nodu gösteriyordu.
+
+182
+00:43:34,900 --> 00:43:48,940
+Benim şimdi head'im burayı gösteriyor. Ben ne diyorum? Head'imin gösterdiği nodu göster. New node için. New node artık burayı gösteriyor. Çünkü benim head'im burayı gösteriyor. Buradaki nodu.
+
+183
+00:43:49,260 --> 00:44:02,280
+Ve head'i de new node'a eşitlediğim zaman artık ilk nodum burası diyorum ve head'im de artık ilk nodumu gösteriyor. Ve bu şekilde listeye yeni bir eleman baştan eklemiş oluyorum.
+
+184
+00:44:05,331 --> 00:44:25,971
+Anlaşıldı mı bu da arkadaşlar? Şurası da null tabii ki. Başka bir eleman olmadığı için null burası. Listenin sonuna geldi mi? Null ile kontrol ediyorum. Diyelim ki listede gezdiğimi düşünelim. Bu arada chatte bir şey yok sanırım. Listede diyelim ki ben gezmek istiyorum.
+
+185
+00:44:27,956 --> 00:44:50,516
+Az önce ne yapıyorduk? Search yapıyorduk mesela. Onun için bir tane temp not tanımlamıştık. Ne yapıyorduk? Head'in gösterdiği nodu göstermesi için head'e eşitliyordum ben bu temp notumu. Temp notu buradan başlatıyordum. Buradaki nodun neyime, eğer aradığım book name'e eşitse zaten...
+
+186
+00:44:51,027 --> 00:44:59,407
+Mağledan çıkacağım. Ama diyelim ki eşit değil. O zaman T eşittir T next. Yani tank not eşittir tank not next diyordum.
+
+187
+00:45:00,436 --> 00:45:20,956
+Next'i gösteriyordum. Eğer bu da değilse yine Next'i gösteriyordum. Eğer bu da değilse yine Next'i gösteriyordum. Bu da değilse Next'i gösteriyordum ve artık temp nodum Null oluyordu. Ve while'dan çıkıyordum. Bir if'im var. If de şurada niye göstermiyorsam.
+
+188
+00:45:21,327 --> 00:45:38,788
+Ve if de soruyordum, temp nodumunu alma. Eğer nalsa o zaman ne yapıyor? Ben bulamadım kitabı diyor. Burada bir nokta daha var dikkat etmeniz gereken. Eğer diyelim ki şöyle yapsaydım ne olurdu arkadaşlar?
+
+189
+00:45:42,003 --> 00:46:07,543
+Bakalım aklınıza gelecek mi ki geleceğinden eminim. Diyelim ki, yani Elfif'le başlamaz zaten. Diyelim ki böyle yaptım. Listem boş, yani boş derken, pardon, kullanıcının geride kitap ismini bulamadı ve buradaki ife geldim. Burada bir hata aldım. Ne hatası aldım sizce? Neden bir hata aldım? Burada kodum çalışmıyor bu şekilde.
+
+190
+00:46:13,619 --> 00:46:14,920
+Fikri alan var mı?
+
+191
+00:46:19,380 --> 00:46:22,780
+Sesim geliyor değil mi? Ben bir tepki verirseniz.
+
+192
+00:46:25,300 --> 00:46:26,179
+Geliyor hocam.
+
+193
+00:46:27,280 --> 00:46:34,420
+Evet. O zaman herhalde hemen aklınıza gelmedi. Şimdi ne dedim arkadaşlar? Temp notu nalı gösteriyor değil mi?
+
+194
+00:46:34,900 --> 00:47:02,699
+Peki ben burada ne yapıyorum? While'dan çıktım ben. Temp Not Null olduğu için çıktım. Dedim ki listem bitti ben bulamadım. Ama ben burada Temp Not Name ile Book Name'i karşılaştırmaya çalışıyorum. Yani aslında Null olan bir nodu, burada Null olan bir nodu, diyorum ki Name'ini ver bana ki karşılaştırayım Book Name ile. Öyle bir nod yok ki ben onun Name'ini bulayım. Bu yüzden burada bana hata veriyor. Bu nedenle
+
+195
+00:47:02,900 --> 00:47:25,500
+Ya önce neden çıktığını şöyle bulup ya return etmeniz gerekir ya da şöyle alsip yapabilirsiniz ya da while'ın içerisinde eğer nalsa return et şeklinde diyebilirsiniz. Bu size kalmış. Bu şekilde bunun önüne geçmiş olduk. Bu da anlaşıldı sanırım.
+
+196
+00:47:30,068 --> 00:47:33,108
+Evet arkadaşlar, sorunuz var mı hocamıza?
+
+197
+00:47:36,500 --> 00:47:39,460
+Teşekkür ediyorum hocam. Ağzınıza sağlık, elinize sağlık.
+
+198
+00:47:40,100 --> 00:47:40,920
+Ben teşekkür ederim.
+
+199
+00:47:40,920 --> 00:47:47,620
+Vaktinizi ayırdınız arkadaşlar için. Yoksa hepimize iyi akşamlar arkadaşlar. Görüşmek üzere.
+
+200
+00:47:47,980 --> 00:47:49,040
+İyi akşamlar hocam.
+
+201
+00:47:49,560 --> 00:47:51,680
+İyi akşamlar arkadaşlar. Teşekkürler.
+
+202
+00:47:51,720 --> 00:47:52,300
+Sağ olun hocam.
+
+203
+00:47:53,240 --> 00:47:55,140
+Görüşürüz. Çok sağ olun. Sizce de iyi akşamlar.
+
+204
+00:47:55,600 --> 00:47:56,180
+İyi akşamlar.
+
+205
+00:48:02,579 --> 00:48:06,119
+Kapatıyorum hali. Tamamdır. Siz hostunuz, siz kapatabilirsiniz.

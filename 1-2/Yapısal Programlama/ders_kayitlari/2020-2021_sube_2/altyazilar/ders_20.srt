@@ -1,0 +1,3455 @@
+1
+00:08:47,796 --> 00:08:48,796
+Günaydın arkadaşlar.
+
+2
+00:08:50,796 --> 00:08:52,876
+Hemen başlayalım.
+
+3
+00:09:10,803 --> 00:09:26,403
+Linked List ile alakalı bir örnek yapacağız. Sonra yeni konuya geçeceğim. Geçen haftaki son örneğin devamını yapmak adına bugün bitirelim. Ama daha o konudan ve File Operation'ları da gördükçe yeni örneklere devam edeceğiz arkadaşlar.
+
+4
+00:09:30,292 --> 00:09:31,211
+Saniye.
+
+5
+00:10:19,796 --> 00:10:38,136
+Bir arkadaşımız bana, ismini hatırlamıyorum kusura bakmasın, şey sormuştu. Üçüncü derece, üç boyutlu dizilerde pointer kullanımıyla alakalı. [öğrenci]'tu zannediyorum yanlış hatırlamıyorsam. Burada mı kendisi?
+
+6
+00:10:44,307 --> 00:10:54,607
+Orada belki çoğunuzun kafasına takılan bir şey vardır onun biraz da mantığını anlatmak için. Neyse daha sonra üzerinden geçeriz.
+
+7
+00:10:57,048 --> 00:11:00,327
+Ben [öğrenci] diye hatırlıyorum ama belki başkası da olabilir.
+
+8
+00:11:04,467 --> 00:11:11,127
+Evet arkadaşlar, bizim en son yaptığımız örnek Linkedlis'te kullandığımız değişken,
+
+9
+00:11:14,408 --> 00:11:25,647
+yani head değişkeninden bahsediyorum, nasıl bir şeydi? Global bir değişkendi. Biz global değişkene pek alerjimiz var, kullanmıyoruz. Bir anlamda kullanmamak daha iyi.
+
+10
+00:11:26,292 --> 00:11:45,831
+Hatta size şunu söyleyeyim, mezun olana kadar buradaki ödevlerinizde hiçbir zaman global değişken, yani C ile alakalı ödevlerinizde veya Java ile alakalı ödevlerinizde global değişken kullanmayın. Özellikle veri yapıları ve algoritma analizinde kullanırsanız çok fazla puanınız gider. Gelecek dönemler için şimdiden söyleyeyim.
+
+11
+00:11:46,492 --> 00:11:52,432
+Biz bu Linked List işini nasıl yapacağız?
+
+12
+00:11:57,172 --> 00:12:05,372
+Bir de string ekleyelim. Bir örneğimiz var. Hem de linked listimiz daha fazla veri saklasın. Öyle bir şeyimiz olsun.
+
+13
+00:12:35,379 --> 00:12:36,960
+Tekrar yine görünmüyor.
+
+14
+00:12:49,364 --> 00:13:10,364
+Bugün saat 5'teki derste de yine Linked List'le alakalı örnek yapacaklar. Onun için ben bu örneği kısmen kısa tutacağım. Yani bir sürü senaryo var burada. İşte başa ekle, sona ekle, araya bir yere ekle falan. Önemli olan burada işin mantığını konuşalım. Daha sonra detaylara, daha farklı örneklerle bakarız.
+
+15
+00:13:13,460 --> 00:13:18,420
+Ayrı konusunu bugün bitirmek istiyorum. Ondan sonra daha çok örnek çözmeye imkanımız olsun.
+
+16
+00:13:33,587 --> 00:13:43,407
+Şöyle bir struct olacak ve bu struct linked list türünde olacağı için bir sonraki elemanın adresini tutacak.
+
+17
+00:13:45,507 --> 00:14:00,067
+Ve metotlarımı genel olarak bir kayıt ekle, kayıtları liste ekle. Burada geçen hafta gördüğümüz fonksiyon pointerı konusunda amaçla kullanacağız.
+
+18
+00:14:00,884 --> 00:14:19,004
+Örneğin kayıtları isterken önce ada göre, yani önce id yaz, sonra ad-soyad yaz veya önce adı yaz, sonra soyad yaz, sonra id yaz gibi aynı işi yapan ama farklı küçük detaylarla yapan bir fonksiyon pointer kullanımı da burada görmüş olacağız.
+
+19
+00:14:19,783 --> 00:14:27,004
+Şimdi arkadaşlar, öncelikle benim şu nodum her bir şeyde ne olacak? LinkedListe bir...
+
+20
+00:14:29,908 --> 00:14:41,307
+Bütün pointer değişkenler şu verileri saklamaz arkadaşlar. Buna dikkat edin. O veriye ait adres saklar.
+
+21
+00:14:42,307 --> 00:14:56,187
+Yani çok görüyoruz. İşte integer yıldız p demiş arkadaşım. Ondan sonra integer p de şunu saklamaya çalışıyor. P eşittir alt.
+
+22
+00:14:56,916 --> 00:15:08,016
+Bu demektir ki P6 nolu adresi göstersin demektir. Bütün pointer değişkenlerde doğrudan bizim kullanacağımız veriler saklanır. Adres verileri saklanır ancak.
+
+23
+00:15:08,016 --> 00:15:14,276
+Şimdi burada basit bir menü yapacağım. Integer Choice diyelim.
+
+24
+00:15:20,307 --> 00:15:20,807
+Wild.
+
+25
+00:15:35,347 --> 00:15:36,788
+Bir, et, denim.
+
+26
+00:15:48,788 --> 00:15:49,748
+Eğzit olsun.
+
+27
+00:16:18,964 --> 00:16:36,964
+Şimdi şunu yapacağız arkadaşlar. AddRecord metodunu çağıracağım. AddRecord metodunu çağırırken, şimdi burada yapacağım sıralama algoritması. Head'i güncelleyecek. Head'de bir şey yapacak. Çünkü daima head pointer'ın...
+
+28
+00:16:39,316 --> 00:16:55,776
+Bulunduğu yeri ön tarafa doğru ekleyeceğiz. Dolayısıyla headde bir güncellem olacak. Bunun ikinci, üçüncü versiyonlarını sizin yazmanızı isteyeceğim. Headin işte başa ekle, sona ekle vs. veya ortaya sıralı ekle gibi. Onları siz bu menüyü genişlere geliştirebilirsiniz.
+
+29
+00:16:55,776 --> 00:17:03,816
+Head Record arkadaşlar çağıracağımız şey headin adresini çağıracağım. Niye? Çünkü
+
+30
+00:17:04,288 --> 00:17:10,087
+Head'in gösterdiği değer fonksiyon içerisinde değişecek. Ben şu şekilde çağırabilirdim.
+
+31
+00:17:10,087 --> 00:17:23,028
+AddRecord'u çağır. Orada oluşturulan yeni düğümün adresini head'e ata, head'i güncelle, şurayı da boş yap diyebilirdim.
+
+32
+00:17:23,688 --> 00:17:29,067
+Ama diyorum ki böyle bir return istemiyorum. Bu void bir metot olsun. Head burada güncellensin.
+
+33
+00:17:29,652 --> 00:17:40,852
+parametre üzerinden hem gitsin hem de değişsin. Sonra da kayıtları yazdırma şeyi çağıralım.
+
+34
+00:17:40,852 --> 00:17:42,852
+Print records diyorum.
+
+35
+00:17:42,852 --> 00:17:47,852
+Print records.
+
+36
+00:17:51,155 --> 00:18:04,755
+Edit ile çağır ve şöyle yap. Print id first diyelim. Break. Şurayı şöyle alıyorum.
+
+37
+00:18:09,076 --> 00:18:13,996
+İkincisi ise, Add yapma, Remove yap.
+
+38
+00:18:15,576 --> 00:18:21,756
+Heady gönder, kayıtları print id değil de burada ne diyelim? Mesela name'e göre diyelim.
+
+39
+00:18:23,195 --> 00:18:24,096
+Name first.
+
+40
+00:18:31,380 --> 00:18:33,420
+F'yi büyük yapmak istiyorum.
+
+41
+00:18:37,299 --> 00:18:52,259
+Fonksiyon isimlendirmelerinde camelCase diye bir format vardır. İlki küçükle başlar. Bundan sonraki kelimelerin ilk karakterleri büyükle başlar. Bu bir şeydir. Kullanman yaygın bir stildir.
+
+42
+00:18:52,259 --> 00:18:55,079
+Evet, şimdi gelelim fonksiyonlarımızı yazmaya.
+
+43
+00:18:56,819 --> 00:19:00,539
+Void Add Record
+
+44
+00:19:00,539 --> 00:19:05,183
+Şimdi arkadaşlar, buraya gelen şey bir...
+
+45
+00:19:05,183 --> 00:19:11,304
+HeadPointer adresi. O zaman benim bunu yapacağım şey employee diyorum.
+
+46
+00:19:13,804 --> 00:19:16,104
+Evet, değişkenini al.
+
+47
+00:19:17,523 --> 00:19:23,864
+Yeni bir kayıt oluşturacağım zaman, öncelikle belli alanlar okuyacağım.
+
+48
+00:19:24,243 --> 00:19:32,183
+Bu belli okuduğum alanlar oluşturduğum bir strak elemanına, tabii bu oluşturduğumuz bir strak elemanı
+
+49
+00:19:32,596 --> 00:19:38,796
+Listerin içerisinde kalıcı halde olması için belleğin hip bölgesinde oluşturması lazım.
+
+50
+00:19:38,796 --> 00:19:44,395
+Belleğin hip bölgesinde oluşturmak için ne kullanmam gerekiyor? Yazın bakalım.
+
+51
+00:19:49,460 --> 00:19:56,460
+HIP bölgesinde bir değişken tutmak için, yani dynamic memory allocation kullanmak gerekiyor.
+
+52
+00:19:56,460 --> 00:20:08,460
+Bu employee geçici bir pointer kullandık. Employee pointer'ının göstereceği adrese belleyin HIP bölgesinden bir değişken oluşturalım.
+
+53
+00:20:08,460 --> 00:20:11,460
+Şöyle kest edelim önce.
+
+54
+00:20:11,460 --> 00:20:15,915
+employee-malloc
+
+55
+00:20:16,852 --> 00:20:17,592
+Size of.
+
+56
+00:20:25,044 --> 00:20:27,864
+Sonra şurada kullanıcıdan verilerimizi de alalım.
+
+57
+00:20:33,395 --> 00:20:34,124
+İntro
+
+58
+00:20:48,307 --> 00:20:59,107
+Kenef diyorum. Bir yüzde S oku boşluk bırak. Bir yüzde S daha oku boşluk bırak. Bir yüzde S daha oku.
+
+59
+00:20:59,107 --> 00:21:07,347
+Şimdi bir insanın ismi iki tane karakter içerebilir. Onun için şunu kullanmak iyi olur.
+
+60
+00:21:14,228 --> 00:21:31,368
+Tabi onu burada kullanabilir miyiz? Bir deneyelim neyse. Şunu görene kadar diyeceğim ama bunu görene kadar okuyunca da şu şunu engelleyecek. Neyse kişinin ismi şu an için tek karakter olsun. Tek kelimelik olsun. Arada boşluk olmasın. Hedefimiz o değil.
+
+61
+00:21:43,635 --> 00:21:53,612
+Name'ine yazacağız.
+
+62
+00:21:57,107 --> 00:22:19,067
+Ben employee'nin adresini biliyorum arkadaşlar. Fakat employee'nin gösterdiği yerdeki ID partının alanını bilmiyorum. Adres alanının adresini bilmiyorum. Dolayısıyla bu şekilde yazarsak hata alırız. Git employee'nin gösterdiği yerdeki ID adres alanının adresini getir.
+
+63
+00:22:26,420 --> 00:22:27,420
+EMPLOYEE
+
+64
+00:22:32,051 --> 00:22:34,051
+Nami getir.
+
+65
+00:22:34,051 --> 00:22:36,051
+Birden employee.
+
+66
+00:22:40,692 --> 00:22:42,028
+Öniversitesi
+
+67
+00:22:46,644 --> 00:22:52,644
+Bu bilgi alındıktan sonra şunu diyebiliriz.
+
+68
+00:22:52,644 --> 00:23:00,644
+Employee'nin next'i eşittir.
+
+69
+00:23:00,644 --> 00:23:04,644
+Head olsun.
+
+70
+00:23:09,652 --> 00:23:10,652
+Hedi de
+
+71
+00:23:12,652 --> 00:23:13,548
+şöyle
+
+72
+00:23:17,875 --> 00:23:21,195
+Ben bu iyi olsun diyor. Ne yaptım burada? Şimdi açıklayalım.
+
+73
+00:23:24,948 --> 00:23:33,128
+Şimdi başlangıçta bir nodumuz var. Head değişkerimiz var.
+
+74
+00:23:37,875 --> 00:23:44,875
+Hedin kendine göre 100 adresi var. İlk başta içerisinde neler gösteriyor? Program açılınca null gösteriyor.
+
+75
+00:23:48,531 --> 00:23:57,751
+Şurada fonksiyon içerisine geldiğimizde, headpp diye bir tane değişik yerimiz var. Head pointer, şuradaki aynısı.
+
+76
+00:23:59,531 --> 00:24:00,811
+Buraya gelen şey,
+
+77
+00:24:03,132 --> 00:24:09,771
+Bu bir pointer olduğu için burası ikinci dereceden pointer yaptık. Şurada şunu yazmayı unuttuk arkadaşlar.
+
+78
+00:24:12,500 --> 00:24:28,099
+Çünkü adresi geliyor. Adresi geldiği için buranın ikinci derece pointer olması lazım. Buraya gelecek olan şey 100 gelecek. Sonra bir emp diye bir şey oluşturduk pointer.
+
+79
+00:24:30,500 --> 00:24:39,599
+emp neyi tutacak? mallog ile belleğin hip bölgesinde oluşturulmuş bir struct elemanının adresini tutacak.
+
+80
+00:24:40,468 --> 00:24:56,347
+Bu Struct elemanı örneğin 300 nolu adresi de tutulsun. Bu 300 nolu adresi göstermek için EMP içerisinde 300 yazıldı. Şurada değerleri okuduk. Geldik şu iki satıra.
+
+81
+00:24:58,488 --> 00:25:06,108
+Şimdi EMP'nin kendi içinde bir Next alanı var mı? Var. Şurası Next alanı olsun.
+
+82
+00:25:07,124 --> 00:25:21,523
+Bu next alanı headin, tabi buradaki headden bahsediyoruz. Hatta şuraya arkadaşlar phead diyelim, karışmasın.
+
+83
+00:25:27,188 --> 00:25:39,408
+EMP'nin Next alanı, yani EMP burayı gösteriyor. Bunun Next'i, P-head'in içerisindeki değeri gösterecekmiş.
+
+84
+00:25:40,208 --> 00:25:46,428
+P-head'in içerisindeki değer ne? Şu an 100. Yani burası 100 nolu adresi göstersin diyoruz.
+
+85
+00:25:46,688 --> 00:25:53,688
+Bu ne demek oluyor? Ana programdaki, yani bu nasıl burayı işaret ediyorsa,
+
+86
+00:25:54,644 --> 00:26:06,443
+Bu da burayı işaret edecek demektir. Sonra, phead'in gösterdiği adresteki değer demektir bu.
+
+87
+00:26:06,443 --> 00:26:20,403
+phead nereye gösteriyor? Burayı gösteriyor. Bunu al. Bunun gösterdiği adresteki değere 300 yazacakmışız. Yani EMP'nin adresini yazacağız demektir.
+
+88
+00:26:22,003 --> 00:26:23,003
+Burada da bunu yazıyoruz.
+
+89
+00:26:23,644 --> 00:26:26,943
+Şimdi bu, burayı gösteriyor.
+
+90
+00:26:29,003 --> 00:26:33,804
+Bu 100 null adresi şu an için hedi gösteriyor. Sanki bir circular durum var gibi değil mi?
+
+91
+00:26:36,144 --> 00:26:38,144
+Bir sonra bir tane daha kayıt ekleyelim hadi.
+
+92
+00:26:38,144 --> 00:26:39,864
+Fonksiyon bir daha çağrıldı.
+
+93
+00:26:42,563 --> 00:26:44,824
+Fonksiyon çağrıldıktan sonra,
+
+94
+00:26:46,163 --> 00:26:48,003
+hedi artık null değil.
+
+95
+00:26:50,228 --> 00:27:02,168
+Head bir adres gösteriyor. Ama head'in adresi sabit. Yani çünkü burada main içerisinde tanımladık. Herhangi bir şekilde main fonksiyonu daha tamamlanmadı.
+
+96
+00:27:03,288 --> 00:27:14,908
+Hala head değişkeni stack bölgesinde yaşıyor. Şuraya geldik. Hala head, head 100 gösterecek aynı değişken. Yeni bir emepe oluşturuldu.
+
+97
+00:27:18,291 --> 00:27:31,611
+Hatta yeni oluşturulunca, şimdi içerisini şu bağı kopardık artık. Yeni bir HMP oluşturulduktan sonra, bir bellekte yer açıldı. İşte buraya 500 nolu adres diyelim.
+
+98
+00:27:32,891 --> 00:27:40,311
+Bu artık bu şey burada 500'ü gösterecek. Bunun kendine göre değerleri okundu.
+
+99
+00:27:45,584 --> 00:28:05,764
+Next'i, yani şurası. P-head'in gösterdiği değeri gösteriyormuş. P-head 100'ü gösteriyordu. Burası da 300'ü gösteriyordu. Yani şuraya 300 yaz diyecekmiş. Buraya 300 yaz diyerek artık ne yapıyoruz? Biz burayı gösteriyoruz.
+
+100
+00:28:11,231 --> 00:28:15,331
+Head'in gösterdiği yerdeki değeri atılıyoruz. Şurası da 500 olacakmış.
+
+101
+00:28:17,372 --> 00:28:19,672
+Ne yaptık? Bu buradan koptu.
+
+102
+00:28:20,451 --> 00:28:21,211
+Bu artık
+
+103
+00:28:21,991 --> 00:28:22,751
+buraya geldi.
+
+104
+00:28:25,572 --> 00:28:28,132
+Circular olma durumu nedir arkadaşlar?
+
+105
+00:28:28,392 --> 00:28:29,912
+Şimdi head
+
+106
+00:28:30,172 --> 00:28:32,731
+burayı gösterecek, bu düğümü gösterecek,
+
+107
+00:28:32,991 --> 00:28:34,271
+bu burayı gösterecek.
+
+108
+00:28:34,791 --> 00:28:37,351
+Bunun en son adresini null yapmadık da
+
+109
+00:28:37,592 --> 00:28:38,632
+başa döndürdük.
+
+110
+00:28:39,923 --> 00:28:53,603
+Bunun birazdan yazdırma kısmına gelince detayına bakarız. Evet, bu kısım bu kadardı. Şimdi bir de kayıt silme kısmına bakalım.
+
+111
+00:29:04,180 --> 00:29:05,676
+Yine aynı şekilde
+
+112
+00:29:11,923 --> 00:29:14,483
+bir head değişkenini alacağız.
+
+113
+00:29:19,443 --> 00:29:23,844
+Silmek istediğimiz kişinin mesela id'sine göre, genellikle id üzerinden silinir.
+
+114
+00:29:35,763 --> 00:29:40,763
+Enter id şöyle again, of the employee.
+
+115
+00:29:46,420 --> 00:29:56,720
+Kaldırılacak, silinecek kişinin adı. Şurada bir id değişkeni tanımlayacağım. Karakter id 12 demiştik herhalde.
+
+116
+00:30:04,339 --> 00:30:06,339
+Yüzde S
+
+117
+00:30:08,639 --> 00:30:09,639
+Haydi.
+
+118
+00:30:11,939 --> 00:30:14,939
+Silme işlemi yaparken şöyle bir şey yapacağız.
+
+119
+00:30:16,539 --> 00:30:18,939
+Aradığım düğümler içerisinde
+
+120
+00:30:23,476 --> 00:30:33,936
+Yani şöyle bir durum var. Bunlar birbirini gösteriyor. Şunu sireceksem, buradaki şu düğüm, artık şuradaki bağlantı.
+
+121
+00:30:38,003 --> 00:30:44,003
+Ne yapacak? Şuraya gidecek. Dolayısıyla benim şunu tutmam gerekiyor. Bir anlamda da bunu tutmam gerekiyor.
+
+122
+00:30:44,003 --> 00:30:54,003
+Buraya geldiğimde sileceğim elemanı bulduğumda bir öncekinin next'i ile bir sonrakini linklemem gerekiyor sadece.
+
+123
+00:30:54,003 --> 00:30:57,003
+Onun için iki tane değişkene ihtiyacım var burada.
+
+124
+00:31:07,155 --> 00:31:09,655
+Bir pointer, current pointer diyelim.
+
+125
+00:31:12,976 --> 00:31:18,536
+Bu, head üzerinden başlayıp arama yapmamı sağlayacak bir şey olacak.
+
+126
+00:31:18,536 --> 00:31:26,016
+Ve bunu, şöyle, dereferansla, head diyelim.
+
+127
+00:31:28,215 --> 00:31:33,875
+Bir diğeri de, employee arama işlemi yaparken.
+
+128
+00:31:34,996 --> 00:31:38,476
+Kullanacağım pointer. Şimdilik bu null olacak.
+
+129
+00:31:45,332 --> 00:32:02,011
+Ve arama yaparken bir tane integer found değişkeni kullanalım. Bulana kadar arama durumunda bir de iki tane şartım olacak burada. Eğer bulursam tekrar aramasın diye.
+
+130
+00:32:08,435 --> 00:32:18,935
+Yani sürekli next next deyip gideceğiz. Null'dan farklı olduğu müddetçe, aynı zamanda ve bulunmadığı müddetçe aramaya devam etmek istiyorum.
+
+131
+00:32:21,756 --> 00:32:25,836
+Sonra bir string karşılaştırması yapacağım.
+
+132
+00:32:30,003 --> 00:32:43,503
+Gösterdiği yerdeki id değeri. Bunu karşılaştırmak için strcmp kullanmak en doğrusu. Current'ın gösterdiği yerdeki id değeri. Bizim şurada girdiğimiz id'ye eşitse.
+
+133
+00:32:50,228 --> 00:33:10,048
+Yani, bulduysak, öncelikle found eşittir. Bir diyelim. Şimdi arkadaşlar, burada öncelikle yapacağımız şey, önceki düğümü kontrol edeceğiz. Yani, prove düğümünü kontrol edeceğiz.
+
+134
+00:33:13,140 --> 00:33:22,860
+Null olması durumunda mesela head ilk elemanda bulduk. Head'i doğrudan silme durumumuz var. Head'in bir sonraki adresini kontrol etmek için
+
+135
+00:33:22,860 --> 00:33:26,620
+şurada şöyle bir kontrol diyelim.
+
+136
+00:33:28,200 --> 00:33:32,620
+Yani daha ilk elemanda bulduk mesela.
+
+137
+00:33:34,759 --> 00:33:38,120
+Şu head'in pointer'ını phead
+
+138
+00:33:38,804 --> 00:33:48,584
+Tabi gösterdiği yerin adresini phed eşittir. Current elemanın next'ine bir sonraki elemana doğru aktarıyoruz.
+
+139
+00:33:48,584 --> 00:33:51,544
+Tabi phed'in eşittir.
+
+140
+00:33:54,844 --> 00:33:59,124
+Eğer böyle bir durum yoksa,
+
+141
+00:34:03,667 --> 00:34:07,767
+Böyle bir durum yoksa ne demek? İlk elemandan değil, başka bir elemanı sileceksin.
+
+142
+00:34:08,268 --> 00:34:10,827
+O zaman ne yapacağım? Prevues'u bir yerde saklamam lazım.
+
+143
+00:34:12,367 --> 00:34:16,987
+Prevues'u next'i eşittir.
+
+144
+00:34:17,747 --> 00:34:18,907
+Should'u diyebiliriz.
+
+145
+00:34:19,287 --> 00:34:21,327
+Current'un next'ine diyebiliriz.
+
+146
+00:34:29,811 --> 00:34:32,112
+Bu işlemi yaparak aslında silmiş oluyorum.
+
+147
+00:34:33,911 --> 00:34:36,131
+Yani aradaki düğümü devreden çıkardım.
+
+148
+00:34:36,131 --> 00:34:45,411
+Tabi bulduğum için ne yapacağım? Oradaki current elemanın gösterdiği yerdeki bellek alanını serbest bırakmam gerekiyor.
+
+149
+00:34:46,871 --> 00:34:53,831
+Eğer bu işlem yanlışsa, yani bulmadıysak.
+
+150
+00:34:57,139 --> 00:34:58,139
+Erste.
+
+151
+00:35:08,500 --> 00:35:18,500
+Bu durumda yapacağımız şey ne olur? Şu anki elemanı, en son kaldığım bir önceki eleman olarak alacağım.
+
+152
+00:35:18,500 --> 00:35:28,500
+Yani prove eşittir. Karıntı olacak. Karıntı da bir sonraki elemana göndereceğim. Karıntı eşittir.
+
+153
+00:35:30,500 --> 00:35:35,500
+Niye karıntı üzerinde gezdim? Head'i kaybetmek için.
+
+154
+00:35:39,219 --> 00:35:49,099
+Bu, ancak ya dizinin sonuna kadar ki burada başa dönme durumu da var aslında bir şekilde.
+
+155
+00:35:50,599 --> 00:35:52,219
+Bu şekilde aramaya devam edelim.
+
+156
+00:35:52,340 --> 00:35:56,139
+Şimdi önce şurayı tekrar edelim.
+
+157
+00:35:58,079 --> 00:36:00,699
+Yukarıda değişkenlerimiz olsun.
+
+158
+00:36:00,699 --> 00:36:05,479
+İşte dizi, şu eklediğim elemanlar var.
+
+159
+00:36:06,483 --> 00:36:18,483
+Bu fonksiyonu çağırdığımda bana phead geliyor. Şu an için phead en son 500'ü gösteriyormuş.
+
+160
+00:36:18,483 --> 00:36:27,483
+phead'in adresi 100.
+
+161
+00:36:35,923 --> 00:36:59,923
+Prue diye bir başka değişkenim var. Head'in gösterdiği yerdeki adresin değeri, yani head'in gösterdiği yerdeki değer neymiş? 500 olacakmış. Şu satırda bunu yaptık. Prue oluşturduk, burası null olacakmış. Sonra found demiş, işte bir id girin demiş. id girildi.
+
+162
+00:37:05,748 --> 00:37:14,148
+Şu arada bir düğüm daha olsun arkadaşlar. Burası da 800 olsun. Bu 800 burayı göstersin.
+
+163
+00:37:24,148 --> 00:37:47,648
+Head de nereyi gösterecek? Şurayı gösterecek. Bu da 800 olsun. Bunun içerisindeki şu pointer alanı var. Head şurayı gösterecek. Böyle bir üç tane listeli geleman olsun.
+
+164
+00:37:50,003 --> 00:37:56,403
+Diyelim ki, şuradaki bir id'ye karşılık gelen bir şey bulduk. Şimdi döngüye giriyoruz.
+
+165
+00:37:57,083 --> 00:38:07,563
+Current'ın id ise, current dediğim şey neyi gösterecek? 500'ü gösterdi. Tabi şu an atama yapınca burası da 800'ü gösterdi.
+
+166
+00:38:08,043 --> 00:38:16,043
+Current da burayı gösteriyor. Yanlış şöyle. Bu da burayı gösteriyor. Bu girdiğim id.
+
+167
+00:38:19,380 --> 00:38:25,019
+Buradaki id'ye eşit olduğunu kabul edelim. Yani şu şart doğru oldu. Found'u 1 yaptık. Tamam.
+
+168
+00:38:26,420 --> 00:38:43,039
+Şimdi, Previous şu an Null mu? Evet. Null olduğu için, p h'di ne yapıyorum? Current'ın next'i ne? Current'ın next'i ne demek? Current burayı gösteriyor. Bunun next'i 500'ü gösteriyor.
+
+169
+00:38:43,380 --> 00:38:46,600
+Şurayı diyoruz ki git, 500 yap.
+
+170
+00:38:48,019 --> 00:39:06,599
+Pardon, phd'in gösterdiği adresi git 500 yap. Yani git şurayı 500 yap dedi. 500 yapınca ne oldu? Bu bağ gitti. Tekrar burayı gösterdi. Tamam mı? Else kısmına yapmadık.
+
+171
+00:39:07,092 --> 00:39:34,672
+Free Current dedik. Current bu hala burayı gösteriyor. Burası yaşamaya devam ediyor. Bakın sadece biz bağlantı hissedik. Dedi ki bu Current'ı Free Ed. Free Edince ne oluyor? Burası gidiyor. Burası gidince de şu an buradaki içeride sadece boş bir değer var. Ama değer değil. Burası böylece kalıyor. Belki şu değişken adresi de siliniyor olabilir. Free Current yapınca onu bilmiyorum. Yani bir Print F ile bastırmak lazım. Şimdi ekleriz.
+
+172
+00:39:35,891 --> 00:39:40,971
+Değilse kısmı da geçti. Tekrar başa döndük. Kaydımız silindi.
+
+173
+00:39:43,931 --> 00:39:50,551
+Tabi tekrar başa dönmedik. Bulduğumuz için döngü çıktı gitti. Sonra bu fonksiyon tekrar çağrıldı.
+
+174
+00:39:51,251 --> 00:39:57,152
+Bu fonksiyon tekrar çağrıldığında kim çağırıyor bunu? Main çağırıyor. Main'den head ile çağırıyor.
+
+175
+00:39:57,152 --> 00:40:00,391
+Program kapanmadığı için hala 100.
+
+176
+00:40:01,588 --> 00:40:15,728
+Sonra current'ımız var. Current'a bu sefer neyi atadık? ph'de atadık. Yani ph'in gösterdiği adres şu an 500'dü. Bu da burayı gösteriyor olsun. Burada da null var.
+
+177
+00:40:16,748 --> 00:40:21,768
+id'yi girelim. Girdik bir id. İşte şuradaki id'ye eşit olacak durumda bir şey yapalım şimdi de.
+
+178
+00:40:21,768 --> 00:40:28,208
+Şimdi current'ın id'si. id'ye eşit mi? Hayır.
+
+179
+00:40:29,396 --> 00:40:55,556
+Hayır olduğu için arkadaşlar, geliyorum şu else kısmına. Diyorum ki current'ı privata. Current'ın içerisindeki değer ne? 500. Bunu 500'e atadık. Artık bu da burayı gösteriyor. Current'ı current'ın next'ine atar. Current'ı burayı gösteriyor. Bunun next'ini nereye gösteriyor? Burayı gösteriyor. Burası 300 olacakmış demek ki. Bu ne oldu? Bu artık burayı gösterdi.
+
+180
+00:40:58,195 --> 00:41:06,195
+Döndük başa tekrar. Girilen id, id eşit mi? Evet. Bulduk olarak işaretledik.
+
+181
+00:41:07,836 --> 00:41:17,695
+Previous null'a eşit mi? Previous null'a eşit değil. Şu kısma geldik. Diyor ki, prove'ün next'ine, yani prove nereye gösteriyor? Buraya gösteriyor.
+
+182
+00:41:17,695 --> 00:41:24,796
+Bunun next'i nereye gösteriyor? Şurası gösteriyor. İşte bu, prove'ün göstereceği next alanı.
+
+183
+00:41:27,092 --> 00:41:47,152
+Pardon, Prune Next'ine dediğimiz şey şu alan. Current'ın Next'ine atanacakmış. Current'ın Next'inde ne var? 100 var. Current'ın Next'inde 100 var. Pardon. Şuraya getir diyoruz.
+
+184
+00:41:48,072 --> 00:41:54,512
+Yani bu ne yapacak? Buradaki bağlantıyı kopardık. Bu, burayı gösterecekmiş.
+
+185
+00:41:54,931 --> 00:42:02,431
+Bu burayı gösterince, bu da burayı gösteriyor. İlk adımda bunu yaptık.
+
+186
+00:42:06,260 --> 00:42:15,560
+Tamam. Sonra bu çıktıktan sonra current diyor ki free et. Current free etmek ne demek? Buradaki düğümü yok et.
+
+187
+00:42:16,640 --> 00:42:27,060
+Buradaki düğüm yok olunca şuradaki bağlantı tamamen gitmiş oluyor. Ondan sonra ne kaldı? Herhangi bir şey else kısmında bir kısım kalmadı.
+
+188
+00:42:27,500 --> 00:42:32,280
+Döngü bitti bu bulduğumuz için. Funksiyon bitti ve main'e geri döndük.
+
+189
+00:42:33,204 --> 00:42:42,384
+Ekle ve sil bu kadar. Ne yaptık? Çift pointer kullanarak head'in gösterdiği kısmı dinamik olarak değiştirdik.
+
+190
+00:42:42,384 --> 00:42:49,824
+Şimdi şu print name first alanlarını da yazalım.
+
+191
+00:42:57,619 --> 00:43:03,179
+Bu bir void metod.
+
+192
+00:43:06,195 --> 00:43:13,215
+bu boyut print nem fos bir de print ID first yazalım ikisini de kullanalım en ployi şimdi
+
+193
+00:43:13,215 --> 00:43:17,956
+burada herhangi bir hep üzerinde değişiklik yapmayacağız hep üzerinde bir değişiklik
+
+194
+00:43:17,956 --> 00:43:25,576
+yapmayacağımız için burada doğrudan edin kendisini adresini göndermeden ki kendisini
+
+195
+00:43:31,764 --> 00:43:42,764
+Sadece tabi bir değişken yazacağım. Onun için diyorum ki, tek bir pointer ile bu işi yapabiliriz.
+
+196
+00:43:42,764 --> 00:43:45,764
+Print F
+
+197
+00:43:45,764 --> 00:43:53,195
+%S
+
+198
+00:43:59,092 --> 00:44:03,692
+Bunu şimdi birazdan bir fonksiyon pointerı olan bir başka fonksiyon çağıracak yalnız.
+
+199
+00:44:06,632 --> 00:44:09,931
+Employee'nin name'i.
+
+200
+00:44:12,731 --> 00:44:14,731
+Employee'nin id'si.
+
+201
+00:44:18,260 --> 00:44:19,500
+Örneğimi yalnızdır.
+
+202
+00:44:26,260 --> 00:44:27,760
+Sonra alt satıra geç diyor.
+
+203
+00:44:29,380 --> 00:44:32,180
+Şu da print name değil, id olsun.
+
+204
+00:44:39,956 --> 00:44:41,956
+İsterseniz bir de soyadı böyle yazarsınız.
+
+205
+00:44:44,815 --> 00:44:51,275
+Bunu çağıracak bir print record. Çünkü bu fonksiyon doğrudan çağrılmıyor.
+
+206
+00:44:51,695 --> 00:44:59,596
+Print record. Çağırılacak şey ne? Aslında kayıtları yazdırmak ne demek? Dizinin başından başla, sonuna kadar git.
+
+207
+00:44:59,735 --> 00:45:06,536
+Şimdi ben hem name first için bir while döngüsü, bunun için bir while döngüsü yazmama gerek yok. Çünkü her şey aynı ilerliyor.
+
+208
+00:45:07,251 --> 00:45:12,952
+Onun için şöyle print daha jenerik bir fonksiyon yazıyorum.
+
+209
+00:45:12,952 --> 00:45:19,291
+record employee diyorum.
+
+210
+00:45:19,291 --> 00:45:30,211
+Buraya head'i alıyorum. Bir de head ile birlikte hangi fonksiyonu çağıracaksam onun pointer'ını alıyorum.
+
+211
+00:45:32,851 --> 00:45:37,671
+İki fonksiyonda prototipi yazıyoruz. Void türünde bir pointer tanımı gelecek.
+
+212
+00:45:37,671 --> 00:45:42,652
+İşte buna fptr diyelim, bir fonksiyon pointer olduğunu söyleyelim.
+
+213
+00:45:42,652 --> 00:45:50,652
+Burada parametre olarak kullanılacak olan şey bu fonksiyonlarda mploie şeklinde bir pointer kullanılacak.
+
+214
+00:45:50,652 --> 00:45:56,551
+Böyle bir prototip aldım. Bu prototipi aktarılacak değişken nereye geliyor şunun adresi?
+
+215
+00:45:56,551 --> 00:45:59,751
+Şu değişkene geliyor fonksiyon pointerına.
+
+216
+00:46:00,115 --> 00:46:15,515
+Gelelim bunun içerisine yazalım. Employee dedik. Bir tmp eleman oluşturuyorum gezinmek için. Bu elemana da direkt head'e atayabiliriz.
+
+217
+00:46:15,515 --> 00:46:20,715
+While head is different from null.
+
+218
+00:46:26,036 --> 00:46:40,796
+Her bir gördüğün düğümde Fptr'yi çağır. Ne ile çağır? Nasıl parametre istiyorsan onunla çağır. Şu Tmp'yi de güncelle. Tmp eşittir.
+
+219
+00:46:54,003 --> 00:47:11,783
+Bu işlemi yapabilir. Genel olarak arkadaşlar işlemler bu şekilde. Şimdi sizden çalışmanız için soru isterseniz neler yapılabilir? Add record basit bir şey oldu. Yani yapmak açısından.
+
+220
+00:47:21,172 --> 00:47:48,391
+Başa ekle diyebilirsiniz. Bunu çeşitlendirebilirsiniz. Bunu çeşitlendirirken de şu kısım hep aynı olacak. Hatta şu da aynı olacak. Şu üç satır. Bir create. Hatta onu yazalım. Şu kısmını yazalım. Void. Create. Create. Node diyelim. Herhangi bir şey tabii void olmayacak. Bu employee türünde.
+
+221
+00:47:50,291 --> 00:47:51,711
+Bir pointer döndürsün.
+
+222
+00:47:53,511 --> 00:47:54,652
+Create Node diyelim.
+
+223
+00:47:56,532 --> 00:47:57,492
+Şu kısmı alıyorum.
+
+224
+00:47:59,572 --> 00:47:59,891
+Evet.
+
+225
+00:48:02,831 --> 00:48:03,952
+Şuraya alıyoruz.
+
+226
+00:48:04,171 --> 00:48:04,771
+Copy alıyoruz.
+
+227
+00:48:06,131 --> 00:48:08,072
+Burada bir yine Employee'yi tanımlayacağım.
+
+228
+00:48:13,139 --> 00:48:14,800
+Ne yapacağız? Create Mode'u çağıracağız.
+
+229
+00:48:20,532 --> 00:48:37,372
+Bu sayede ne olur? Başa ekle, sona ekle, adı göre ekle, başka bir türlü ekle, şöyle ekle, böyle ekle. Nasıl ekleyeceksiniz? Bu fonksiyon her biri için çağırılıp tekrar tekrar şuradaki malloplar, enter, printfler yazılmaz.
+
+230
+00:48:37,372 --> 00:48:43,552
+Tabi burada return edeceğimiz bir şey var. Return mp diyeceğiz.
+
+231
+00:48:46,835 --> 00:49:01,135
+bu return işleminden sonra buraya gelen fonksiyon şeye değer neyse buraya aktarılacak. Burada bir sıkıntı yok herhalde. Şimdi öncelikle şu fonksiyon prototiplerini şuraya alalım. Programı çalıştırmadan önce.
+
+232
+00:49:35,827 --> 00:49:36,327
+Ya, ya.
+
+233
+00:50:03,956 --> 00:50:11,456
+id first, başka fonksiyonumuz yok. Şunu da şöyle ayıralım. Şimdi bir compile edelim.
+
+234
+00:50:16,019 --> 00:50:22,579
+mp versiyon 1. Belki buna ileride eklemeler yaparız. Şimdi size de paylaşayım bunu ben.
+
+235
+00:50:26,643 --> 00:50:32,395
+ve current undeclared demiş. Çünkü current diye bir şey yok. tmp var.
+
+236
+00:50:41,684 --> 00:50:46,804
+Evet bakın, Warningsiz herhangi bir sıkıntısız elemanları görebildik.
+
+237
+00:50:54,963 --> 00:50:56,963
+1 diyorum.
+
+238
+00:50:58,323 --> 00:51:00,823
+1 a a
+
+239
+00:51:02,103 --> 00:51:03,603
+Hop ne oldu?
+
+240
+00:51:06,423 --> 00:51:08,423
+Enter name, surname
+
+241
+00:51:10,503 --> 00:51:11,692
+bir yerde
+
+242
+00:51:19,027 --> 00:51:20,939
+Bunlarda bir hatamız var.
+
+243
+00:51:27,251 --> 00:51:30,851
+İd, Surname,
+
+244
+00:51:37,300 --> 00:51:39,900
+AddRecord'da yaptığımız şey.
+
+245
+00:51:42,119 --> 00:51:44,960
+Malloc ile eleman aldık. Return ettik.
+
+246
+00:51:48,659 --> 00:51:53,859
+Employee'nin next'ini intifat initialize etmemişiz.
+
+247
+00:51:59,347 --> 00:52:07,108
+Yani o olur da Remove Record çağrılmadı ki.
+
+248
+00:52:10,387 --> 00:52:14,228
+Yani biz şu an add record ile alakalı başka bir sıkıntı var gibi.
+
+249
+00:52:16,268 --> 00:52:19,608
+AMP oluşturuldu buradaki değerlerde.
+
+250
+00:52:20,627 --> 00:52:22,927
+Şöyle bir printf ekleyeyim arkadaşlar.
+
+251
+00:52:25,488 --> 00:52:27,275
+Eleman oluşturuldu diyelim.
+
+252
+00:52:32,628 --> 00:52:34,028
+Burada görecek miyiz bakalım.
+
+253
+00:52:45,588 --> 00:52:49,588
+Hocam, string yer alırken ampersand kullanmışız da o şey olur mu?
+
+254
+00:52:51,368 --> 00:52:51,848
+Neyim de.
+
+255
+00:52:52,848 --> 00:53:06,528
+Ama yani kullanmak gerekiyor mu? Bence gerekiyor. Çünkü ID alanına erişmek gerekiyor. Ama yine bir yandan da string olduğu için eleman oluşturuldu dedi.
+
+256
+00:53:06,528 --> 00:53:11,868
+Şu kısımda hata verdi. AddRecord'da muhtemelen.
+
+257
+00:53:12,724 --> 00:53:19,224
+Hocam, biz herhangi bir return yapmadığımız için mi çift pointer'la employee veriyoruz?
+
+258
+00:53:19,224 --> 00:53:30,224
+Evet. Yani head'i değiştireceğiz. Head'i değiştireceğimiz için böyle bir şeye ihtiyacımız var.
+
+259
+00:53:30,224 --> 00:53:35,916
+Hocam, bunu mesela direkt node...
+
+260
+00:53:35,956 --> 00:53:43,115
+Root'un kendisini versek, sonra en son return olarak root'u geri döndürsek yine istediğimiz sonucu elde edebiliriz değil mi?
+
+261
+00:53:43,115 --> 00:53:52,596
+Tabii ki olur. Onu zaten söyledim ama ben şunu istemiyorum, void istiyorum dersen bu parametre üzerinden değişecek demektir.
+
+262
+00:53:52,596 --> 00:53:56,115
+Bunu şart olarak koyarsanız bunu kullanacağız tamam mı?
+
+263
+00:53:56,115 --> 00:53:57,036
+Evet.
+
+264
+00:54:00,307 --> 00:54:03,627
+Çar ID 11. Evet, orada bir problem mi var?
+
+265
+00:54:05,687 --> 00:54:09,788
+Aşağıda remove yaparken 12 dedik de hocam. Alakası yok ama...
+
+266
+00:54:09,788 --> 00:54:12,587
+Yani onu çağırmadık. Hadi o da 11 olsun.
+
+267
+00:54:13,367 --> 00:54:15,147
+Bir dakika, şimdi...
+
+268
+00:54:16,687 --> 00:54:19,248
+Employee Next.
+
+269
+00:54:20,027 --> 00:54:24,107
+Head'in gösterdiği adres olacak. Head'in gösterdiği adreste...
+
+270
+00:54:24,851 --> 00:54:39,611
+Employee olacak. Kayıt eklediğimizde yapacağımız şey bu. Employee'de yeni oluşturduğumuz node olacak. Şimdi şuraya bir breakpoint koyalım. İlerleyin bakalım burada ne oluyor, ne bitiyor.
+
+271
+00:54:50,547 --> 00:55:00,268
+Hocam şey durumunda karmaşıklık çıkmaz mı? Sonuçta ilk başta nal gösteriyor vesaire ama onları galiba Create Node'ın içinde mi koydunuz?
+
+272
+00:55:01,307 --> 00:55:12,087
+Yani şey burada Create Node'da yapılan şey yeni bir düğüm oluşturup o yeni düğümü gelen yere göstermek.
+
+273
+00:55:13,076 --> 00:55:22,796
+Hocam mesela ilk eklediğimiz mesela Nalı gösterecek ki bu farklı bir durum ya da bir sonraki artık değeri gösterdiği için farklı bir durum oluyor ya.
+
+274
+00:55:24,976 --> 00:55:28,756
+Ama circular bir durum var gibi yani burada daha çok onu yaptık ama.
+
+275
+00:55:29,876 --> 00:55:31,876
+Şimdi bir şey yapalım bir de şöyle deneyelim.
+
+276
+00:55:34,456 --> 00:55:36,136
+A, A, A diyorum.
+
+277
+00:55:38,804 --> 00:55:41,104
+Tabi debug modunu da çalıştırmadık.
+
+278
+00:55:52,371 --> 00:55:53,611
+Yeni bir sürü.
+
+279
+00:55:57,556 --> 00:56:03,536
+Şimdi gelen eleman oluşturuldu. EMP bir watch diyelim.
+
+280
+00:56:08,659 --> 00:56:17,059
+Head'i bir boş diyelim. Head'in gösterdiği adrese bir boş diyelim. Head şu an herhangi bir yeri göstermiyor.
+
+281
+00:56:22,068 --> 00:56:22,708
+Bir dakika.
+
+282
+00:56:23,908 --> 00:56:25,228
+Peki, yazabilir miyiz hocam?
+
+283
+00:56:33,811 --> 00:56:39,692
+Yani list boşsa evet, o da olabilir. Yeni bir node oluşturdum.
+
+284
+00:56:43,572 --> 00:56:52,211
+İlk elemanı atıyorsun. List boş değilse ilgili kısma. O senin yaptığın sona eklemek aslında. Yani olur tabii ki.
+
+285
+00:56:53,231 --> 00:56:58,052
+Ya başı eklemek için de bloğum var. Başı eklemek için de ayrı bir if açıyorum.
+
+286
+00:56:58,072 --> 00:57:01,092
+Bir dakika. Şuna bir bakalım bir saniye. AdWash diyorum.
+
+287
+00:57:05,876 --> 00:57:09,596
+Şu mp'nin adresi 541 630'muş.
+
+288
+00:57:11,116 --> 00:57:15,876
+mp'nin next'i dediğimiz şey şu an...
+
+289
+00:57:15,876 --> 00:57:18,436
+He...
+
+290
+00:57:21,492 --> 00:57:23,492
+Şimdi arkadaşlar, şöyle bir durum var.
+
+291
+00:57:24,492 --> 00:57:26,492
+Biz bu fonksiyonu yukarı taşıyınca
+
+292
+00:57:29,492 --> 00:57:31,492
+şurada oluşturulan
+
+293
+00:57:31,492 --> 00:57:33,492
+yok aslında şey olacak
+
+294
+00:57:33,492 --> 00:57:37,492
+yani p-head başta 0 olduğu için, şey 0 olduğu için
+
+295
+00:57:38,492 --> 00:57:42,492
+p-head'in içerisindeki değer ilk başta bu 0 olacak.
+
+296
+00:57:42,492 --> 00:57:44,492
+Öyle değil mi?
+
+297
+00:57:45,492 --> 00:57:49,260
+Şuna baktığım zaman p-head'in yani şurada 0 yapacağız.
+
+298
+00:57:49,588 --> 00:58:16,928
+NextLine diyelim. Bunu null yaptık. Bunu null yaptıktan sonra phead'in gösterdiği adresteki değer. Şurası emp olacak. emp kaçtı? emp'nin değeri 541.60. Burada bir sıkıntı yapıyor. NextLine dediğimizde o da orayı gösterdi. Tamam. SegmentationFault.
+
+299
+00:58:22,643 --> 00:58:26,243
+Erişime tasliği mi döycem bir segment? Evet.
+
+300
+00:58:30,996 --> 00:58:34,316
+Hhead'in gösterdiği değere employee'yi atadık.
+
+301
+00:58:39,891 --> 00:58:46,951
+Sonuçta buradaki head. Yani bu da bir mallokla oluşturulmuş bir şey aslında.
+
+302
+00:58:52,083 --> 00:58:53,083
+Önlerleğe.
+
+303
+00:58:57,427 --> 00:58:58,667
+Mesela şuraya mutlayalım.
+
+304
+00:59:03,891 --> 00:59:04,651
+Şöyle yapalım.
+
+305
+00:59:38,260 --> 00:59:40,108
+MF-P de de ayrı ediyorum.
+
+306
+00:59:43,891 --> 00:59:44,875
+Şöyle.
+
+307
+00:59:59,443 --> 01:00:13,364
+Aaaa. İşte bunun next'i şu an böyle bir şey. Biraz öncekinde aynı yerde yazdığımız için doğrudan mp'nin next'ini ama
+
+308
+01:00:13,364 --> 01:00:25,844
+şuradaki mp bakın bu bunun adresi neymiş. Gerçi bunun adresini şu an gösteremiyoruz. Şöyle yapsak, adwatch desek.
+
+309
+01:00:26,612 --> 01:00:27,632
+Olmayacak.
+
+310
+01:00:35,987 --> 01:00:56,907
+Nextline diyelim. Bu mp611-630 diye bir şey geldi. Bunun içindeyiz. Şu kısmı şimdi alıp bir şunun devamına ekleyeceğim. Bir öyle deneyeceğim. Şimdi mantıksal herhangi bir hata görünmüyor.
+
+311
+01:00:57,780 --> 01:01:05,780
+phead'in adresindeki değer, phead şu an sıfırı gösteriyor adres olarak. mp'nin next'ine ekleyince,
+
+312
+01:01:08,079 --> 01:01:12,780
+şurada segmentation fault diyor. Şöyle bir şey yapalım arkadaşlar.
+
+313
+01:01:14,579 --> 01:01:19,340
+Geçici olarak, şunu şuraya taşımak istiyorum.
+
+314
+01:01:25,300 --> 01:01:27,260
+Burayı bir kapatalım.
+
+315
+01:01:29,559 --> 01:01:32,240
+Fonksiyon çağrısıyla alakalı bir şey olabilir.
+
+316
+01:01:40,755 --> 01:01:48,455
+Çünkü onun içerisindeki alan şu karakter alanlarından dolayı bir sıkıntı yapabilir. Ondan dolayı diyorum.
+
+317
+01:01:49,555 --> 01:01:50,595
+Debug edelim tekrar.
+
+318
+01:01:56,947 --> 01:02:01,467
+1. Geldik. Next line dedik.
+
+319
+01:02:04,407 --> 01:02:05,827
+A, A ve A.
+
+320
+01:02:08,288 --> 01:02:14,587
+Mp'nin next'i. Şu an Mp dediğimiz şeyi bir daha. Şunların hepsini bir sileyim.
+
+321
+01:02:17,648 --> 01:02:18,367
+Delete.
+
+322
+01:02:20,467 --> 01:02:22,347
+Mp'yi add-wash diyorum.
+
+323
+01:02:23,923 --> 01:02:30,923
+Sonra head'i adwatch diyorum. Head'in adresini adwatch edelim.
+
+324
+01:02:30,923 --> 01:02:37,923
+MP'nin next'in nereyi gösteriyormuş o da bakalım. Bu kadar.
+
+325
+01:02:48,052 --> 01:02:51,371
+Şöyle add-wash dersek, o da nullu gösterdi.
+
+326
+01:02:51,371 --> 01:02:56,751
+mp'yi de aldık, phead'in gösterdiği adrese atadık.
+
+327
+01:02:56,751 --> 01:02:57,751
+Evet.
+
+328
+01:02:57,751 --> 01:03:02,152
+Yok, yine segmentation fault.
+
+329
+01:03:11,315 --> 01:03:12,976
+Çalışan şey şu an çalışmadı.
+
+330
+01:03:14,255 --> 01:03:15,675
+Employee Next.
+
+331
+01:03:23,956 --> 01:03:35,976
+Hocam, print record'da while'da head yazmışız galiba. Orası temp olmayacak mı?
+
+332
+01:03:39,976 --> 01:03:47,176
+Evet, çünkü ondan sonra oradaki fonksiyona gidince ondan da olabilir.
+
+333
+01:03:49,176 --> 01:03:50,816
+Biz hep oraya odaklandık.
+
+334
+01:03:56,244 --> 01:04:17,804
+Herhalde bundandır. Çok teşekkür ederim. Kafamızı ağrıtacaktı. Yoksa bu bayağı uğraşacaktık. Evet. Şimdi arkadaşlar şunu iptal ediyorum. Şuradaki kısma şöyle iptal ediyorum. Bunu tekrar açıyoruz.
+
+335
+01:04:21,780 --> 01:04:24,599
+Herhangi bir değişiklik yapmadık. Şimdi kontrol.
+
+336
+01:04:26,380 --> 01:04:32,019
+Çünkü artık head'i orada kullandığımızda o fault'u alacağız.
+
+337
+01:04:32,019 --> 01:04:33,300
+Bir.
+
+338
+01:04:33,300 --> 01:04:35,860
+aaa
+
+339
+01:04:35,860 --> 01:04:38,940
+eleman oluşturuldu aaa dedi.
+
+340
+01:04:38,940 --> 01:04:43,800
+o aaa yazması direkt fonksiyonu çağırmamızdan kaynaklı. Bir daha ekliyorum.
+
+341
+01:04:43,800 --> 01:04:46,619
+bbb
+
+342
+01:04:46,619 --> 01:04:49,680
+eleman oluşturuldu bbb dedi.
+
+343
+01:04:50,612 --> 01:04:51,772
+Bir daha oluşturalım.
+
+344
+01:04:55,507 --> 01:05:01,347
+C, C, C.
+
+345
+01:05:01,427 --> 01:05:04,227
+Yani hep başa ekleyerek gidiyoruz burada dikkat ederseniz.
+
+346
+01:05:05,687 --> 01:05:06,387
+Remove diyelim.
+
+347
+01:05:08,268 --> 01:05:09,867
+Mesela remove'da neyi silelim?
+
+348
+01:05:10,007 --> 01:05:13,027
+Önce A'yı silelim.
+
+349
+01:05:14,467 --> 01:05:15,467
+A gitti.
+
+350
+01:05:16,067 --> 01:05:16,827
+Remove diyelim.
+
+351
+01:05:17,788 --> 01:05:19,627
+Remove'dan önce bir eleman daha ekleyelim.
+
+352
+01:05:20,887 --> 01:05:22,788
+D, D, D diyelim.
+
+353
+01:05:24,148 --> 01:05:43,868
+Sonra aradan remove yapıp neyi silelim? C'yi silelim. C'yi silince dd ve bb kaldı. Sonra bir eleman daha ekleyip aaa diyelim. Burada da bb'yi sileyim.
+
+354
+01:05:54,931 --> 01:06:05,471
+Anlaşılmayan bir şey var mı arkadaşlar? Ben size chat kısmından göndereyim.
+
+355
+01:06:11,315 --> 01:06:15,415
+Bu geliştirilmeye açık. Bir sürü buradan problem çıkar.
+
+356
+01:06:18,475 --> 01:06:23,355
+Yani bunu double ringlist yaparsanız, dediğim gibi aradan ekle, aradan sil,
+
+357
+01:06:24,115 --> 01:06:28,475
+sıralama yap, güncelleme yap mesela, bir kaydı bul, güncelle.
+
+358
+01:06:28,975 --> 01:06:34,095
+Güncelleme yapmak için bir global search fonksiyonu yaparsınız mesela. Remove için.
+
+359
+01:06:34,195 --> 01:06:54,915
+Bir search fonksiyonu, güncelleme için bir search fonksiyonu. Aynı şu create'de olduğu gibi bir genel bir fonksiyon yazarsınız. Önce düğümü bulursunuz. Düğümün bulunduğu konumdan öncekisi, sonrakisi onlar bulunur. Böyle çeşit çeşit uygulamaları vardır. Size tavsiyem şunu yapın.
+
+360
+01:06:56,724 --> 01:07:08,364
+Mesela sıralamaya çalışın. Sıralama yaparken ne yapmanız gerekiyor? Swap yapmanız gerekiyor. Swap ederken şöyle zor bir problemle karşılaşacaksınız.
+
+361
+01:07:10,244 --> 01:07:13,584
+Bunu internette birçok yerde kaynak kitaplarda da bulabilirsiniz.
+
+362
+01:07:16,644 --> 01:07:23,604
+Şöyle mesela, şimdi ara vereceğim. Şunu da söyleyeyim de aklımdayken çıksın. Bir sürü node var.
+
+363
+01:07:26,068 --> 01:07:48,848
+Şunu swap etmek istiyorum. Bunun öncesi var. Bunun sonrası da şu olsun. Yani listemiz şöyle olsun. Liste o zaman çok karışıyor. Swap etmek çok zor bir şey. Link listelerde aslında. Şimdi bununla bunu swap edeceğiz. Ne lazım? Bize swap için bir tmp lazım değil mi?
+
+364
+01:07:51,219 --> 01:07:55,819
+Bir current lazım, bir de n1 diyelim, bir de n2 lazım.
+
+365
+01:07:56,719 --> 01:08:01,219
+Şunu yaparak işin içinden çok kolay kurtulamıyorsunuz. N1'i bunu al.
+
+366
+01:08:01,719 --> 01:08:04,719
+N1'e, n2'ye at. Şu n1 olsun.
+
+367
+01:08:05,219 --> 01:08:06,719
+Burada n2 olsun mesela.
+
+368
+01:08:07,719 --> 01:08:10,219
+N2'ye de tmp'ye at.
+
+369
+01:08:10,719 --> 01:08:12,219
+Şimdi bunu yapınca ne oluyor?
+
+370
+01:08:13,519 --> 01:08:16,219
+Şu, mesela bundan sonra da böyle bir düğüm var.
+
+371
+01:08:16,916 --> 01:08:44,036
+Şimdi bunun next'i mesela burası ne diyelim? Hadi şöyle biraz daha düzgün yapalım işimizi. Next alanları, bu sıfır no olayamam, bu bir no ol adresi, iki no ol adresi, üç no ol adresi, dört no ol adresi. Bunun next'i biri gösteriyor. Bunun next'i ikiyi gösteriyor, bunun next'i üçü gösteriyor, bunun next'i dördü gösteriyor değil mi? Yani içerisindeki datalar ne olursa olsun.
+
+372
+01:08:44,787 --> 01:09:02,007
+Bunu çağırdığımızda, Swap yaptığımızda ne olacak? Bir TMP diye bir şeyimiz var. Öncelikle TMP'nin içerisinde N1'i yani 2'yi al diyoruz. Ne oldu? Bu da burayı gösterecek.
+
+373
+01:09:03,847 --> 01:09:09,907
+N2'yi N1'in içine kopyalamak şu demek.
+
+374
+01:09:11,060 --> 01:09:21,819
+Bu 4 no'lu alan şuraya geliyor. Datalar da buraya ilgili datalar kopyalanıyor. Bu bir burayı gösterdi.
+
+375
+01:09:24,380 --> 01:09:30,780
+Tamam mı? Bu dördü gösterdi. Bu dördü gösterince ne oldu? Buradaki bağ gitti.
+
+376
+01:09:32,060 --> 01:09:38,188
+Buradaki bağ gidince bu doğrudan şuraya geldi. Herhalde yanlış yapmadım.
+
+377
+01:09:38,836 --> 01:09:53,755
+Şimdi 1, bu 1'i gösteren şey burası. Yani burası ilk eleman. Bu bunu gösteriyor, bu 4'ü gösteriyor. Arada 2 ve 3 gitti. Ha bir adım daha ilerleyeceğiz. Daha ona gelmedik ama şu adım da bu oldu.
+
+378
+01:09:55,456 --> 01:10:02,255
+TMP'yi de diyor ki N2'ye kopyalayın. N2'ye kopyalayınca bu 2'yi gösterecek dedik.
+
+379
+01:10:06,036 --> 01:10:10,136
+Burada da hangi datalar varsa böyle olacak. Şimdi bunun ikiyi göstermesi ne demek?
+
+380
+01:10:15,412 --> 01:10:17,212
+Bunun 2 göstermesi de şu demek ki.
+
+381
+01:10:18,492 --> 01:10:19,192
+Ne oldu veri?
+
+382
+01:10:20,471 --> 01:10:22,532
+1, 4'ü gösteriyor.
+
+383
+01:10:22,992 --> 01:10:25,631
+4 buraya gidiyor. Arada 3 ve 2 kaybı oldu.
+
+384
+01:10:29,908 --> 01:10:46,388
+Ne oldu? Mesela birden 3'e geçemedik. Bir dakika. Bir, bu bunu gösterecek. Bu 4'ü gösterecek. 4 direkt gidiyor zaten. Arada şu ve şu kaybol. Halbuki yapmamız gereken şuydu.
+
+385
+01:10:46,388 --> 01:10:54,828
+Bu swap işleminden önce, şöyle geri alalım. Ne kadar geri alabileceğim bilmiyorum da.
+
+386
+01:10:57,747 --> 01:10:59,027
+Geri almam gerekiyor.
+
+387
+01:11:07,060 --> 01:11:11,560
+Herhalde şu kadar yeterli. Şimdi biraz fazla aldık.
+
+388
+01:11:18,452 --> 01:11:21,332
+Bu Swap işleminden önce yapacağımız şu olacaktı.
+
+389
+01:11:25,619 --> 01:11:39,180
+Öncelikle TMP yani şu n1'i almadan önce n1'in bir öncekisini alıp bir yerde saklayacağım. Yani TMP-PRIV diyelim.
+
+390
+01:11:40,639 --> 01:11:47,500
+N1 için. Çünkü bu alan saklanacak. Bu alan saklanınca ben burada neyi tutacağım? Burada 1'i tutacağım.
+
+391
+01:11:53,524 --> 01:12:20,084
+Ne var? N2 var. Burada da 3'ü tutacağım. Bu bilgiler elimde olacak. Öyle değil mi? Herhalde şimdi doğru olacak gibi. Bir öncekiler tutuldu. Şimdi gelelim bir TMP'm var. TMP'ye arkadaşlar önce N1'i kopyalıyorum. N1'i kopyalayınca şurası 2. Şu N1. TMP'de 2'yi tuttuk.
+
+392
+01:12:21,268 --> 01:12:23,268
+Burayı gösteriyor artık.
+
+393
+01:12:24,268 --> 01:12:30,268
+N2'yi N1'e kopyaladık. N2'yi N1'e kopyalayınca ne oldu? Burası 4 oldu.
+
+394
+01:12:31,268 --> 01:12:32,268
+Şu gitti.
+
+395
+01:12:33,268 --> 01:12:35,268
+Ve bu artık şurayı gösteriyor.
+
+396
+01:12:36,268 --> 01:12:39,268
+TMP'yi N2'ye kopyaladık.
+
+397
+01:12:42,268 --> 01:12:47,268
+Bu arada, şu N1'i...
+
+398
+01:12:47,988 --> 01:12:54,988
+N2'yi TMP'yi kopyaladıktan sonra diyorum ki, TMP'nin N1'i şurada.
+
+399
+01:12:54,988 --> 01:13:06,988
+TMP'nin pardon yanlış oldu.
+
+400
+01:13:06,988 --> 01:13:10,988
+TMP'nin
+
+401
+01:13:13,716 --> 01:13:33,876
+Pardon, pardon arkadaşlar. Tempürün en ikisi. Yani şu üçü alacağım, şuna gösterteceğim. Ama bir dakika şu an aklıma gelmedi. Bir. Hocam bir şey sorabilir miyim? Evet. Tempürün en biri şu olacak, en biri olacak. Bu işlemden sonra bunu yapacağım. Evet.
+
+402
+01:13:37,076 --> 01:13:38,195
+Buyurun [öğrenci].
+
+403
+01:13:40,051 --> 01:13:49,051
+Hocam [öğrenci], ben de şey diyeceğim. Mesela biz bu kutuların gösterdiği yeri değiştirebiliyoruz ya, istediğimiz şekilde belli sıralarla aradaki boya koparmadan.
+
+404
+01:13:49,592 --> 01:13:49,832
+Evet.
+
+405
+01:13:50,291 --> 01:13:57,672
+Biz bu kutuların gösterdikleri yerleri uygun şekilde değiştirdiğimizde kutuların yeri tamamen değişmiş olmuyor mu? Yani içindekileri kopyalamamıza gerek var mı?
+
+406
+01:13:58,951 --> 01:14:03,652
+İçindekileri kopyalamıyoruz zaten. Adresler üzerinden şu işlemi yaparak.
+
+407
+01:14:04,051 --> 01:14:15,051
+Ben tabi burada adresleri kopyalanmış oluyorum. Datalar kopyalanmış gibi görünüyor çizerken. Yaptığım şey, şurada adreslerin yer değişimi. Veriler yerinde duruyor.
+
+408
+01:14:15,051 --> 01:14:27,947
+Tamam. Şimdi şunu yapalım arkadaşlar. Hemen bitiriyorum. Aklındayken araya bir şey girerse unuturum ben bunu. TMP-Prove-N1'i tuttuk. TMP-Prove-N2'yi tuttuk. Bir de TMP olarak tuttuk.
+
+409
+01:14:28,180 --> 01:14:48,620
+Şimdi öncelikle diyorum ki bunlar elimde var. 1 ve 3'ü sakladım adres olarak. Şimdi şurada tmp'ye n1'i kopyaladığımda tmp2'yi gösteriyor ilk başta. Sonra diyorum ki n2'yi al, tmp'ye kopyalar. Şunu yap. Artık yeni n1'de ne var? Bu var.
+
+410
+01:14:55,604 --> 01:15:19,444
+TMP bu adımdan sonra TMP Prove N1'e de ne yap? N1'i al. N1'in yeni adresi neresi oldu? Yani şuradaki değer. Tabi bunu pointer şeyle yapacağız. Bu burayı göstermiş olacak.
+
+411
+01:15:22,100 --> 01:15:29,140
+Tabi burada arkadaşlar, TMPFür'ün M1'ini değil de şunu tutacağız. Yani bu 0'ı gösterecek. Şöyle bir hatam var.
+
+412
+01:15:29,140 --> 01:15:40,020
+M2'de 2'yi gösterecek. Bunların adreslerini tutacağım yani. Burada şunları tutuyorum. Bunların kendi adresleri lazım bana. 0 ve 2 lazım.
+
+413
+01:15:40,020 --> 01:15:48,940
+Şimdi TMPFür'ün M1'in şu Next alanına da diyeceğiz artık. Bunun Next'ini M1'i kopyalayınca şu bağlantıyı sağlamış oldum.
+
+414
+01:15:49,619 --> 01:15:59,800
+Yeni M1. Sonra diyorum ki, N2'ye TMP'yi kopyalayınca, TMP burayı gösteriyordu. Pardon, 2'yi gösteriyordu.
+
+415
+01:16:01,800 --> 01:16:06,000
+N2'ye bunu kopyalayınca, data'yı, o da şuraya gelecek.
+
+416
+01:16:07,720 --> 01:16:14,139
+Bunun bir önceki ikisinin olduğu yere TMP, Prue, TMP, Prue...
+
+417
+01:16:14,804 --> 01:16:41,283
+N2'nin gösterdiği yerdeki adresi de ne yapacağız? Şu N2 ile güncelleyeceğiz. Artık bu da şurayı gösterecek. Herhalde şimdi daha şey olmuştur. Sonra şunu kopyalayın da zaten bu dörtte burayı gösterecek şekilde yani ikisi düğüm yer değiştirilmiş olacak. Bunun yerine genelde şunu da yaparlar. Düğümler der ki yerinde kalsın.
+
+418
+01:16:42,163 --> 01:17:00,163
+Kitaplarda bunu çok görürsünüz. Biraz önceki düğümler arasındaki bağlantıya dokunmadan düğümlerin datalarını memcopy ile, blog kopyalama ile kopyalarla. Bu neyi sağlar? Bir anlamda dipkopi yaparsın gibi ama...
+
+419
+01:17:00,884 --> 01:17:25,344
+Düğünlerle bağlantıyı algoritmik şeyden, yani algoritmik olarak yükten uzaklaşıyorsun. Biraz daha işlem yükü ortaya atıyorsun. Fakat orada da şuna dikkat etmek gerekiyor. Memcopy yaparken, o memcopy doğrudan struct elemanıyla değil, struct'ın tek bir şey elemanlarıyla, next'leri kopyalamadan yapmak gerekiyor. Mesela güzel bir problemdir.
+
+420
+01:17:26,452 --> 01:17:51,340
+Bunu şey için de kullanırlar, çok büyük sayıların toplanmasında veya çarpılmasında, şimdi integer'ın belli bir aralığı var ama ben linked listlerle birçok sayı saklayabilirim. Çok uzun sayılar saklayabilirim. İkisini toplarken ne oluyor işte eldeler bilmem neler oluyor. Onlar da yani yeni bir linked list, toplam linked list oluşturuyor. O tarz uygulamalar bakarsınız veri yapılarında bir yerlerde karşınıza gelir. Onun için burada işin...
+
+421
+01:17:51,699 --> 01:18:02,059
+Hem pointer mantığını hem structure mantığını hem ringlet mantığını anlamak için böyle problemler yapın. Saat 13 geçiyor. 25 geçe devam edelim arkadaşlar. Görüşürüz.
+
+422
+01:27:52,851 --> 01:27:54,771
+[öğrenci] burada mı arkadaşlar?
+
+423
+01:28:05,779 --> 01:28:11,100
+Yok. Bir [öğrenci] daha var. [öğrenci]. O burada mı?
+
+424
+01:28:15,188 --> 01:28:16,208
+Hücum ben buradayım.
+
+425
+01:28:17,327 --> 01:28:22,967
+Şimdi sana da sınavla alakalı mail göndermiştiniz kontrol için.
+
+426
+01:28:24,167 --> 01:28:34,047
+Direct mesajdan bir link gönderiyorum. Onu dersten sonra oradan bağlantı kurabilirsiniz.
+
+427
+01:28:34,827 --> 01:28:36,087
+Tamamdır. Teşekkür ederim.
+
+428
+01:28:36,087 --> 01:28:37,948
+Şimdi DM olarak gönderiyorum.
+
+429
+01:28:42,963 --> 01:29:00,804
+[öğrenci] burada mı? [öğrenci] sana da mesaj gönderdim. Sen de mail atmıştın. [öğrenci] eğer ulaşabilirseniz kendisi mail attı. Mailine cevap yazdım. Başka da ulaşma imkanım yok zaten.
+
+430
+01:29:02,484 --> 01:29:08,923
+Bu arada şeyi herkes duydu mu arkadaşlar? Bilmiyorum mesaj gönderdim ama gelmiyor diyenler falan oluyor arada.
+
+431
+01:29:11,252 --> 01:29:18,372
+Dönem sonuna kadar, Telegram üzerinden bazı konularda sorularınız olabilir.
+
+432
+01:29:18,532 --> 01:29:24,492
+Bir de hızlı haberleşme yapmak gerekebilir. Herhalde herkese mesaj gelmiştir diye tahmin ediyorum.
+
+433
+01:29:24,752 --> 01:29:29,272
+Yani gelmiyor diyenler ya spamına düşüyor ya başka bir şekilde başka şeyler oluyor.
+
+434
+01:29:33,132 --> 01:29:34,912
+Oradan da takip edebilirsiniz.
+
+435
+01:29:36,115 --> 01:29:39,956
+Mümkün oldukça iletişimi birinci elden yapmanızı tavsiye ederim.
+
+436
+01:29:41,275 --> 01:29:49,995
+Yani falancadan şöyle duydum, şuradan bunu duydum gibi mazeretleriniz bundan sonra yok.
+
+437
+01:29:51,275 --> 01:29:53,835
+Evet, ödeviniz laboratuvar yerine geçecek.
+
+438
+01:29:53,835 --> 01:30:00,835
+Yani şey, laboratuvar diye bir kalem, ödev diye bir kalem değil de yani dersin lab...
+
+439
+01:30:01,043 --> 01:30:27,684
+Artı ikilik bir kalemine proje ödevi olarak geçecek. Normalde iki ödevi verecektik. Baktık birazcık farklı bir konsept deneyelim dedik. Yani iki ödevi kapsayacak bir şey olsun. Pile Operation'ı da onun için öne aldım. Normalde gelecek hafta anlatacaktım. İkinci bize planlamadığımızı söylemişti Yunus Hoca ama bir daha bir konuşuruz Hoca ile bilgi veririz.
+
+440
+01:30:34,163 --> 01:30:42,603
+İlk başta yapalım dedik, daha sonra olmasın falan denildi. Çünkü mazereti şusu busu bir sürü iş uzuyor.
+
+441
+01:30:46,868 --> 01:31:11,868
+Bir de şu ana kadar ki geçen vizedeki konular, Structure dahil, Structure'dan sonra gördüğümüz konular çok az. Bitwise'lar, fonksiyon pointer'ları falan. Bunların hepsini file operation ile beraber finale dahil edebiliriz. Ödev de olacak. Olmamasını ben tercih ederim. Yani her grup kendi bildiği gibi yapacak testler, ben yapmam.
+
+442
+01:31:12,851 --> 01:31:21,851
+Uzaktan eğitim olduğu için gerek kalmıyor. Zaten bol bol soru çözüyoruz ve çalışmak isteyen bir şekilde çalışıyor.
+
+443
+01:31:25,332 --> 01:31:34,652
+Bu dersin konusu içerisinde threadler de var. Ondan çok torunu tutmak istemiyoruz ama yine anlatacağım ben size.
+
+444
+01:31:36,652 --> 01:31:38,612
+Şimdi gelelim yeni konumuza.
+
+445
+01:31:45,811 --> 01:32:11,791
+Şimdi, input-output meselesi. Biz şu ana kadar yaptığımız uygulamalarda input-output'u ne yapıyoruz? İşte klavyeden input, ekrana output. Fakat arkadaşlar gerçek uygulamalarda input sadece klavyeden olmak zorunda değil. İşte bir paralel porttan veya seri porttan bir veri alıp onu işlemek şeklinde olur. Output da sadece ekrana değil, yazıcıya, başka yere veya bir kayıtlı hafıza birimine yapmak gerekir.
+
+446
+01:32:12,692 --> 01:32:15,131
+Bunlardan bir tanesi işte file işlemleri.
+
+447
+01:32:16,372 --> 01:32:30,811
+Eğer programınızda kullandığınız verileri kalıcı olarak saklamak istiyorsanız, program kapandıktan sonra da saklansın diyorsanız, harddisk üzerinde, kalıcı hafıza üzerinde belli alanlar oluşturup bu alanlarda verilerinizi saklamanız gerekir.
+
+448
+01:32:31,252 --> 01:32:33,612
+Buna biz input output diyoruz.
+
+449
+01:32:34,771 --> 01:32:41,391
+Burada kullanılan şey daha çok file işlemleri olacak.
+
+450
+01:32:41,391 --> 01:32:46,112
+Ve burada biz işletim sistemiyle bir şekilde haberleşme halinde olacağız.
+
+451
+01:32:46,112 --> 01:32:53,252
+Bir dosya açmak istiyorum program olarak. Ondan sonra dosyayı okumak istiyorum, dosyayı yazmak istiyorum.
+
+452
+01:32:53,252 --> 01:33:02,604
+Dosyayı okurken o hard disk'den RAM'e gelecek dosyalar veya RAM'den hard disk'e yazarken gidecek dosyalar, elemanlar, veriler.
+
+453
+01:33:02,963 --> 01:33:15,363
+Bir şekilde işletim sistemiyle koordinasyon halinde gerçekleşecek. İşletim sisteminin kernel'ı burada bize bir hizmet sunacak. Bu işlemler File, I.O. veya I.O. başlığı altında konuşulan şeyler.
+
+454
+01:33:19,028 --> 01:33:31,028
+Birçok Runtime Routine Library'lerle bu IO işlemlerini gerçekleşiyor. Bunlardan bazıları Unix üzerinde yapılmış şeyler, oradan türetilmiş ifadeler, kütüphaneler.
+
+455
+01:33:32,427 --> 01:33:34,028
+Genellikle...
+
+456
+01:33:37,555 --> 01:33:54,075
+C'nin kendi libraryleri Buffered.io üzerinde çalışırken Unix libraryleri Unbuffered.io üzerinde çalışıyor. Ne demek bu Buffered? Şimdi arkadaşlar, veri okurken harddisk'e erişmek gerekiyor. Harddiskin özellikle çalışma mantığı şudur.
+
+457
+01:33:54,435 --> 01:34:02,956
+Böyle bir üst üste bu şekilde diskler düşünün. Bir okuma yazma kafası vardır. Bu disk döner. Bu okuma yazma kafası gider blok okuma yapar.
+
+458
+01:34:03,604 --> 01:34:30,404
+İşte belli bir hard suç şekilde parçalara ayrılmıştır. O blok okuma yapacağı yer ilgili adrese erişince oradaki veriyi okur. Bu hard disk'in dönüş hızı 7200 RPM yani root permute dediğimiz şey dakikada bu kadar dönüyor. Bunu saniyeye çevirirsek ne oluyor? 120 defa saniyede dönüyor. İşlemcinin hızı kaçlarda? GHz dediğimiz saniyede 10 üzeri.
+
+459
+01:34:30,963 --> 01:34:53,224
+9'lu işlemleri yapabilen bir şey değil. 3.4 çikayırız diyoruz mesela. Şimdi şuradaki bu frekansla buradaki frekans arası kıyaslanamaz. Bir kere. Onu bilelim. Burası neredeyse 10 üzeri 1, burası 10 üzeri 9. Dolayısıyla verilerin okunurken belli bir miktarda böyle sürekli git gel git gel hard disk'i yapma da belli bir buffer kullan.
+
+460
+01:34:53,684 --> 01:34:59,283
+Bu buffer ile harddiske blog olarak veriyaz veya artistden beri oku, rame getir şeklinde.
+
+461
+01:35:02,224 --> 01:35:10,963
+Burada genel olarak dosya işlemlerinde yapılan şey şudur. Örneğin siz bir Word programında bir şey açacaksınız veya müzik dinleyeceksiniz.
+
+462
+01:35:11,644 --> 01:35:14,443
+O dosya normalde açtığınız dosya harddisk üzerinde bir şeydir.
+
+463
+01:35:14,963 --> 01:35:28,884
+Harddisk üzerindeki bir veri ne oluyor? RAM'e kopyalanıyor. İçeriği neyse. İçeriği kopyalanırken olacak başka şeyler var. Onlara birazdan geleceğim. Şimdi bu kopyalama esnasında bir veri akışı gerçekleşiyor. Buna da stream diyoruz.
+
+464
+01:35:34,707 --> 01:36:01,047
+Ya doğrudan clear bir şekilde, yani bir Word dosyasını düşünün, aslında doğrudan açtığınızda clear bir şekilde göremezsiniz. Clear bir şekilde saklanır veya binary şekilde kodlanarak saklanır. Ve işletim sistemi bu kodları çözecek dosya okuma formatlarıyla alakalı bilgiye sahip olması gerekir. Örnek olarak şunu vereyim. Şimdi biraz önce yazdığımız kodun dosyasını ben Notepad++'da açtım bakın.
+
+465
+01:36:02,228 --> 01:36:15,648
+Şöyle size, bunu clear bir tekst olarak görebiliyoruz. Bir de üzerinde şurada bir pdf veya ppt dosyası var. Onu da notepad dosyasını da açıyorum.
+
+466
+01:36:16,407 --> 01:36:22,567
+Öyle bir şey geliyor. Bakın bu ayrık matemati kullandığımız slide'ın şeyi. Bakın içerisinde kodlamalı bir sürü şey var.
+
+467
+01:36:22,907 --> 01:36:27,407
+Bu niye? Bu dosyanın yapısıyla alakalı. Yani bu ppt dosyası yapısı.
+
+468
+01:36:28,340 --> 01:36:31,659
+Bu şekilde kodlanmış.
+
+469
+01:36:31,659 --> 01:36:49,079
+Şimdi bunu dosya şeyinde birkaç slasyonda gelecek. Bu binary şekilde bir kodlanmış, açık tekste sahip değildir ama işletim sistemi biliyor ki ben bu dosyayı ilgili programda açarken ilgili program nasıl açması gerektiğini biliyor. İşletim sistemi sadece ne yapıyor?
+
+470
+01:36:49,492 --> 01:37:13,952
+Varsayılan program uygulamalar diye bir şey sürekli karşınıza çıkar ya, mesela iki tane program kurarsınız, ikisi de aynı dosyaya erişir. Hem Winzip kurun hem Winrar kurun. Hangisiyle açmak istiyorsunuz diye sorar. İşletim sistemi size o aradaki bağlantıyı sağlar aslında bir anlamda. Bu dosyaya açılmak istendiğinde hangi program açılacak? Ama ben bakın burada Notpad ile açtığımda böyle bir şey görüyorum.
+
+471
+01:37:15,539 --> 01:37:19,819
+Hem işletim sistemiyle hem de sizin yazdığınız programla arasındaki uyumla alakalı bir şeydir.
+
+472
+01:37:22,440 --> 01:37:35,159
+Şimdi, burada buffer ve unbuffer ile alakalı bazı genel kültür tadında şeyler var ama buffer olması belli bir, sürekli git gel git gel yapmıyor hardske.
+
+473
+01:37:36,884 --> 01:38:01,344
+Aralıkla yapılıyor. Şimdi bu streamler dediğimiz IO'lar ve streamler şudur arkadaşlar. Bir program, C programı olmamak zorunda değil. Bir dosyayı okumak istediğinde veya bir yazıcıya veri göndermek istediğinde ne oluyor? Bu şekilde veriler bir dizi halinde kopyalanıyor. Akış gerçekleşiyor. İşletim sistemi kernel'ı aracılığıyla oluyor arkadaşlar.
+
+474
+01:38:03,220 --> 01:38:22,560
+A stream consists of an ordered series of bytes dediğimiz şey bu. Bir dosyayı okumak veya yazmak veya device'ın üzerine okumak veya yazmak neyi içerir? Datayı bu stream'den okumak veya streame data yazmakla alakalı.
+
+475
+01:38:22,560 --> 01:38:26,180
+Şimdi stream dediğimiz şey ayrı bir yapı işletim sistemi tarafında.
+
+476
+01:38:26,868 --> 01:38:43,927
+Yani sizin programınız burada hiyerarşik olarak çizecek olursak sizin programınız var. Aşağıda işletim sistemi var. Ondan sonra onun kernel'ı falan var. Hatta burada alt katmanı. En sonunda donanım var dedik ya. Program bu donanımla habere geçerken işletim sistemi arasında bir stream oluşturuluyor.
+
+477
+01:38:47,731 --> 01:39:08,431
+Siz programınızı çalıştırdığınız zaman, bellekte her bir programın kendine ait bir yeri var demiştik. O stream orada saklanıyor. Bunun daha detayları işletim sistemi dersinde anlatılacak. Yani bir program çalıştırıldığında ona bir yer atanıyor. Hatta buna proses kontrol blok denilen.
+
+478
+01:39:09,203 --> 01:39:24,263
+Bir özel ismi verilir, bellekteki yerine, adı yerleşim alanına. İşte burada programınızdaki değişkenler, ondan sonra programınızın kodu, diziler vs. hepsi burada saklanır. Ayrıca bu stream de bunun içerisinde saklanır.
+
+479
+01:39:34,547 --> 01:39:56,647
+elde etmemiz, onunla bir şekilde haberleşmemiz gerçekleşiyor. Yani asıl şey, bir ilişki kurmamız gerekiyor. Bunu bir C dilinde yapmanın yolu, file türünde bir pointer tanımlamaktan gerçekleşiyor. Bu aslında bir structure'dır arkadaşlar. File structure'dır. Yapısına bakıldığında file structure'ından bir pointer tanımlamak gerekiyor.
+
+480
+01:40:00,000 --> 01:40:23,539
+Bu işletim sistemiyle bir şekilde haberleşmeye geçmemiz gerektiğini bilmemiz gerekiyor. Şimdi standart streamler dediğimiz temelde üç tane standart stream vardır. Bu işletim sistemiyle alakalıdır. Bir input yapılacaksa streamde STD in, standart input stream türü kullanılıyor.
+
+481
+01:40:23,872 --> 01:40:38,552
+Output yapılacaksa STD Out kullanılıyor. Herhangi bir hata durumunda da bu STD Error kullanılıyor. Bu işletim sistemi ile alakalı. Bunun uygulamasını CD'de göreceğiz. Ama daha çok uygulamaları işletim sistemleri konusunda dersinde anlatılıyor.
+
+482
+01:40:40,332 --> 01:40:50,311
+Genellikle biz burada bu işlemler için terminali kullanıyoruz ama fakat terminal dışında yazıcı, ekran, başka şeyler kullanılıyor.
+
+483
+01:40:50,771 --> 01:41:05,231
+Şimdi bizim printf, scanf fonksiyonlarımızın arkada yaptığı şey şu. Printf ne yapıyor? std.out kullanıyor arka planda. Scanf de std.input kullanıyor. O ritimler işletim sistemlerinde onları tetikliyorlar.
+
+484
+01:41:05,231 --> 01:41:16,231
+Burada da şunu söylemiş. Bu fonksiyonları kullanarak biz ne yapabiliyoruz? Dosyalar üzerinde.
+
+485
+01:41:16,724 --> 01:41:34,284
+Herhangi bir dosyayı işaret ederek yapacağımız şey, o dosya üzerinden IO yapmak. Yani printf nasıl bir program üzerinde çalışıyorsa, bir comment line üzerinde çalışıyorsa, biz de aynı şekilde bir dosya üzerinde aynı bir comment line gibi çalışacağız.
+
+486
+01:41:34,864 --> 01:41:43,243
+Aslında printf'in yaptığı da arkada bir dosya okumaktır. O dosya ne? Comment line'ın özel dosyası. Yani arka planda çalışan dosyası.
+
+487
+01:41:44,148 --> 01:41:55,948
+Bunu normalde CTD'in, CTD'i Out'la yapmak yerine bir üst katmanda bize daha yakın gelen, biz daha çok şunları kullandık. Daha kolay olsun diye.
+
+488
+01:41:56,988 --> 01:42:08,988
+Şimdi gelelim dosya nedir arkadaşlar. Şöyle yapayım. Bir kere dedik ki bunlar hard disk üzerinde kalıcı olarak saklanacak.
+
+489
+01:42:09,492 --> 01:42:25,692
+Dosya dediğimiz şey 0 ve 1'ler dizisi. Ama genellikle biz bunu şu şekilde gösteriyoruz. Kare şeklinde. Bu 0 ve 1'ler burada başlıyor, burada bitiyor.
+
+490
+01:42:28,192 --> 01:42:35,712
+Şimdi bunun anlamlı bir şekilde, amaca uygun anlamlı bir şekilde yapılmasına özel amaçlı bir dosya oluyor.
+
+491
+01:42:36,307 --> 01:42:51,427
+Normalde herhangi her şey yani kullandığımız hemen hemen her şey bu dosyalar üzerinde saklıyorum ve 0 ve 1'ler diz. O zaman ben şu 0 ve 1'lerin yerleşimine bir anlam katarsam ne yapıyorum? Özel amaçlı bir dosya oluşturmuş oluyorum.
+
+492
+01:42:52,567 --> 01:43:02,567
+Örneğin kişilerin adını, soyadını, id'sini şöyle bir formatta saklayacağım. Excel düşünün.
+
+493
+01:43:03,028 --> 01:43:22,768
+Veya CSV. Excel'in daha basit hali comma separated values dediğimiz virgüllerle veya noktalı virgüllerle ayırılan bir dosya formatı. İşte burada bir isim saklarsınız, bir şey saklarsınız. Burada da 3-5 gibi bir şey saklarsınız. Bunu clear text olarak sakladığımızı düşünün. İşte ne var? Dosyayı açtığınız zaman clear text'te.
+
+494
+01:43:23,283 --> 01:43:49,583
+A, B, 3 böyle alt alta veriler görürsünüz. Şu kısmı yazmaya da bilirsiniz. Yani derseniz ki ilk gördüğüm şey A olacak. Virgül gördükten sonra ikinci gördüğüm soyad olacak. Üçüncü gördüğüm de ID olacak dersiniz. Böyle bir format. Bunun arka planı da yine elbette bellekte bu sıfır ve birler şeklinde saklanacak. O zaman ilk gördüğüm sıfır ve birler byte dizisi, bit dizisi ada karşılık gelecek diyebiliriz.
+
+495
+01:43:50,323 --> 01:44:16,903
+Dediğim gibi eğer bu şekilde saklanıyorsa buna daha çok biz binary bu şekilde saklıyorsak buna text dosya diyoruz. Şimdi her bir dosya için bazı önemli meta veriler lazım. Bunları şu 0 ve 1'ler dizisinin olduğu yeri şu kısmı şu dosyayı 3'e bölüyorum. Aynı şekilde şurayı da 3'e bölebilirsiniz ama ben şunun üzerinden alacağım. Şuraya dosyanın header kısmı diyoruz arkadaşlar.
+
+496
+01:44:18,003 --> 01:44:24,743
+Şuraya da footer kısmı diyoruz. Footer her zaman olmak zorunda değil, buraya da data kısmı diyoruz. Ne demek bunlar?
+
+497
+01:44:26,363 --> 01:44:35,443
+Şimdi dosyaya ait bazı ön bilgileri header kısmında saklamak gerekebilir. Yani işletim sistemi sonuçta bu dosyayı açmayacak mı veya bir program açmayacak mı?
+
+498
+01:44:35,643 --> 01:44:45,263
+Örneğin resim dosyası açmak istiyorsunuz. Resim dosyası açmak isterken veya bizim C dosyasını açmak istediğimizde,
+
+499
+01:44:45,427 --> 01:45:03,127
+Şurada detayları var. Bu ne kadar? Bunun adı ne? Uzantısı ne? Tipi ne? İşte bulunduğu lokasyon ne? Bu bilgilerin bir yerde saklanması lazım. Ki sen bu dosyaya çift tıkladığında veya açmak istediğinde ilgili programla ilişkilendirirsin.
+
+500
+01:45:03,127 --> 01:45:12,268
+Bir, ilgili program örneğin bir görüntü açacaksınız. Görüntünün ne kadar boyutta sahip olduğunu biliyor muyuz? Önceden tıklarken bilmiyoruz.
+
+501
+01:45:12,659 --> 01:45:39,399
+Tıklayınca ne olması lazım? Bir mallok gibi bir şey arka tarafta çalışması lazım ki git bak bellekte şu kadar yer aç bir görüntü geliyor demesi lazım. İşte o bilgiler arka planda şu header tarafından alınması gerekiyor. Sadece boyut, tür değil. Örneğin bu dosyanın nasıl bir yapıda olacağı şurada söylenmesi gerekiyor. Diyor ki yani bunu gelecek şeyde bu cumartesi günkü derste anlatacağım.
+
+502
+01:45:39,923 --> 01:46:06,923
+Bugün yetişmez muhtemelen. Diyecek ki, sana şöyle bir görüntü sunacağım. Bu görüntülerin uzantı türü işte PNG miydi? PNG idi galiba. PNG. Bu görüntüdeki RGB değerleri şu sırayla. İşte 0. pikselin RGB'si, ondan sonraki 3 tanesi 1. pikselin RGB'si. Bu format bilgisi de burada verilir. İster binary, ister text olarak. Binary saklanmasının sebebi...
+
+503
+01:46:07,344 --> 01:46:13,344
+Daha az yer kaplaması, bir de dosya türünün içeriğin gizlenmesiyle alakalıdır.
+
+504
+01:46:14,003 --> 01:46:22,364
+Demek ki bizim bütün dosyalarımızda bu üç alan, tabii footer bazen olmayabilir ama header genellikle vardır diyebiliriz.
+
+505
+01:46:23,043 --> 01:46:24,923
+Gelelim şuradan biraz daha devam edelim.
+
+506
+01:46:29,171 --> 01:46:46,951
+Şimdi TextStream dediğimiz arkadaşlar, genellikle bizim şeyde kullandığımız, işte commentline'da kullandığımız şey, her satırlardan oluşuyor ve her satır bir backslash n'le sonlandırılıyor. Yani bir şey yazıyorsun, enter'a basıyorsun. Genelde yaptığımız şey bu.
+
+507
+01:46:47,471 --> 01:46:51,271
+Veya biraz önce işte at soyat id yazdım, bir alt satıra geçtim, yeni birisini yazdım.
+
+508
+01:46:54,484 --> 01:47:00,284
+Bunun yerine işletim sistemi farklı yollarda kullanabiliyordu verileri saklamak için.
+
+509
+01:47:01,384 --> 01:47:06,784
+Her satır illaki yeni bir karakter içermesi gerekmiyor.
+
+510
+01:47:06,784 --> 01:47:16,384
+Örneğin birçok IBM sisteminde bir başlangıç satırının adresinin indeksi,
+
+511
+01:47:16,532 --> 01:47:23,231
+Bir Text Line olarak saklanıyor. Bunların izleri tutuluyormuş. Bunlar dosya türlerinden türlerine çok fazla değişir.
+
+512
+01:47:27,315 --> 01:47:45,756
+Mesela, burada bu mekanizmadan birazcık bahsediyor. Yani yeni ekleme neye göre yapılacak veya silme neye göre yapılacak? Buradaki oluşturulan lojiye göre, mantığa göre bu işlemler gerçekleşiyor. Yani tamamen sistemden sisteme de değişiklendik söz konusu.
+
+513
+01:47:53,300 --> 01:48:00,620
+Satırlar, yani okuyacağımız satırlar bir tek stream'ine yazılır veya stream'den okunur.
+
+514
+01:48:01,840 --> 01:48:06,480
+I.O. fonksiyonları bu yeni satırları ne yapıyor? Replace ediyor.
+
+515
+01:48:06,660 --> 01:48:14,200
+Yani yeni bir şey kullanarak, Implementation Definitive Characters kullanarak dediği şey şu.
+
+516
+01:48:16,404 --> 01:48:37,984
+Sisteme yazılacak, hangi kanaldan I.O. yapılacaksa, ya yazmak istiyoruz ya okumak istiyoruz. Burada kullanacağımız I.O. fonksiyonları buna uygun hareket etmek durumunda. İşte Printf gibi. Hatta biz Printf'te niye ekliyoruz? İşte bir %S okuyacaksın. %S okurken, bugün de konuştuk.
+
+517
+01:48:38,452 --> 01:48:50,492
+Arada Enter girince ne oluyordu? O boşluk görene kadar ki yüzde kısmı okuyordu. Bunlara uygun hareket etmesi gerekiyor bu fonksiyonlar. Veya sen ona göre başka çıkış yolları yazman gerekiyor.
+
+518
+01:48:55,252 --> 01:48:58,792
+Şimdi burada baktığımızda gereksiz birçok bilgi de var.
+
+519
+01:49:06,387 --> 01:49:07,407
+Şöyle geçelim.
+
+520
+01:49:10,967 --> 01:49:17,787
+Bir de binary formatta, compiler, binary format biraz önce gösterdiğim format.
+
+521
+01:49:19,127 --> 01:49:25,068
+Herhangi bir yorum yoktur. O bitleri göründüğü bir şekilde okuyor.
+
+522
+01:49:25,068 --> 01:49:30,387
+Ama açacak program onun nasıl anlamlandırılması gerektiğini biliyor.
+
+523
+01:49:30,507 --> 01:49:31,427
+Yani diyor ki,
+
+524
+01:49:31,572 --> 01:49:38,652
+3 tane bit okuyacaksın. O bitin sayısal karşılığı, hexadecimal karşılığı veya başka bir karşılığı şuna karşılık gelecektir.
+
+525
+01:49:38,652 --> 01:49:53,371
+Buraya baktığımızda non-textual data dediğimiz şeyler görülüyor. Herhangi bir structure yoktur, yapısal bir durum yoktur. Dolayısıyla gözle bakınca anlaşılması zordur.
+
+526
+01:49:53,908 --> 01:50:12,807
+Yazan kişi, örneğin PDF'i açın bakın, yani içerisinde anlamsız bir sürü karakter görsünüz. Eğer datanın yapısal özelliğini korumak istiyorsanız, yani bir Excel gibi işte bayağı başka şeylerde, o zaman tek stream kullanmak daha kullanılır, mantıklıdır.
+
+527
+01:50:19,283 --> 01:50:30,884
+Unix'in burada hepsini bir Binary Data olarak gördüğünü, herhangi bir distinction yani ayrım yapma kısmının çok yüzeysel olduğunu burada söylemiş.
+
+528
+01:50:35,283 --> 01:50:48,843
+Unix'de yaparken bile bu sıkıntıların farkında olmasınız. Ve biz arkadaşlar bunu C'de yaparken yapacağımız şey, streame erişmek için bir File Pointer'ı kullanmak dedik.
+
+529
+01:51:02,387 --> 01:51:05,327
+Adresini point etmesini isteyeceğiz.
+
+530
+01:51:05,327 --> 01:51:11,608
+Ve bunun hangi şekilde point etmesini söylemek için de akses modunu ifade edeceğiz.
+
+531
+01:51:11,608 --> 01:51:13,307
+Birazdan kod gelecek.
+
+532
+01:51:13,307 --> 01:51:18,967
+Ve bu pointer vasıtasıyla stream üzerinde işlemler yapabileceğiz.
+
+533
+01:51:18,967 --> 01:51:23,268
+İster text dosya olsun, ister binary dosya olsun.
+
+534
+01:51:29,011 --> 01:51:44,551
+İşletim sistemine ait üst bilgileri içeriyor. Fakat bizim burada yapacağımız şey StructureCold ile StructurePointer ile belli şeyleri incelemek olacak.
+
+535
+01:51:48,243 --> 01:52:11,743
+Bu Stream Identifier'ı tutuyor arkadaşlar aslında. Bu Stream Identifier'da File Open Function fonksiyonuyla dosya açım fonksiyonu da elde edilen bir şey diyebiliriz. Hani adres alanı adres bilgisi diyebiliriz. Öncelikle dosyayı File Pointer'ını oluşturacağız.
+
+536
+01:52:12,243 --> 01:52:33,444
+Oluşturduktan sonra diyeceğiz ki dosyayı açmaya çalış. Dosyayı açıldıktan sonra bu file pointer'ına dosyamızın belleğe yüklenip oradaki adres bilgisi yüklenecek. Bu file pointer'ını okumak için, yazmak için, dosyayı açmak için, kapatmak için, başka şeyler yapmak için kullanabileceğiz daha sonrasında. Demek ki yine burada da işin içine pointer giriyor.
+
+537
+01:52:37,524 --> 01:52:54,004
+Bir program aynı anda birden fazla stream işlemi yapabilir mi? Yapabilir. Bir yandan okurken bir yandan yazma yapabilirsiniz. Bunlar concurrent stream dediğimiz, yine işletim sistemlerini ilgilendiren şeyler.
+
+538
+01:52:55,463 --> 01:53:04,004
+Burada örneğin bizim en çok işimize yarayan şey, nasıl bir comment line'a okuma veya yazma yaparken bu şekilde...
+
+539
+01:53:04,756 --> 01:53:27,600
+Okuyup, backslash n dediğinde ne yapıyor? 6'a gidiyor. Burada bir sıralı durum vardır. File Position Indicator dediğimiz bir tane eleman var burada. Dosyanın okuyucunun dosya içerisinde nerede bulunduğunu, bundan sonra okumak istersen nereye okumak istediğini, yazmak istersen nereye yazabileceğini, istersen bu File Point pozisyonun...
+
+540
+01:53:27,600 --> 01:53:32,940
+Dosyanın başına, dosyanın sonuna veya istediğin bir yere pozisyonlandırılmasının sağlayan ekstra elemanları var.
+
+541
+01:53:34,800 --> 01:53:43,820
+Ve biz burada işletim sistemiyle Firepoint'ın indicator'ı istediğimiz yere veya herhangi bir sonraki byte'a dönüştürebiliyoruz.
+
+542
+01:53:53,300 --> 01:54:09,300
+getirebiliyoruz, elde edebiliyoruz. Random Access dosyalarda bunu göreceğiz. Bunun değerini değiştirebiliyoruz. Neyle? C'deki library fonksiyonlarıyla. Bu da ne yapıyor? Bizim dostluğu içerisinde gezinmemizi sağlıyor.
+
+543
+01:54:10,300 --> 01:54:19,079
+File pointer ile File Position Indicator'ı karıştırmamak gerekiyor. File pointer, şudur arkadaşlar, işte file türünden oluşturacağız.
+
+544
+01:54:19,699 --> 01:54:25,199
+Benim bir harddisk'te dosyam vardı. Bunu bir şekilde belleğe getirdim. O bellekteki dosyanın adresi.
+
+545
+01:54:25,199 --> 01:54:41,639
+File pointer. File position. Şöyle küçük f ile yazalım. Dosyanın içindeki şu kürsörün pozisyonunu bize söylüyor. Bu dosyanın adresi. Burası ram veya hdd diyelim. Öbürü başka.
+
+546
+01:54:44,148 --> 01:54:50,807
+Bu, belli bir byte pozisyonuna ifade ediyor. Bu da dosyanın device üzerindeki adresini söylüyor.
+
+547
+01:54:55,060 --> 01:55:03,060
+Şimdi bu STD.io içerisindeki header file'e baktığımızda örneğin,
+
+548
+01:55:05,060 --> 01:55:15,060
+io fonksiyonları için bazı prototip declaration'lar vardır. Ne demek bu declaration'lar? Örneğin arkadaşlar endof file.
+
+549
+01:55:16,595 --> 01:55:22,995
+Veya bazı makro sabitleri, burada kullanılan şey veya Type Defler, Definer.
+
+550
+01:55:23,755 --> 01:55:30,155
+File Structure'nın Definition'ı vardır. Yine bunun içerisinde, File Structure'nın içerisindeki elemanlar.
+
+551
+01:55:30,415 --> 01:55:34,515
+İşte STD in, STD out, STD error standard streamler vardır.
+
+552
+01:55:35,035 --> 01:55:40,655
+Biz FscanF dışında bu STD in, STD out'u kullanarak
+
+553
+01:55:41,460 --> 01:56:01,340
+Klavye ile klavyeden veri okuyuşu örneğini yapacağız. Fscanf kullanmadan başka şekilde. Endof file vardır. Bu dosyanın sonuna ulaşıp ulaşmadığını gösterir. File position vardı ya. File position endof file'a ulaşıp ulaşmadığını kontrol eder. Null dediğimiz null pointer ile alakalı işlemler. Eğer dosya açıldı mı açılmadı mı gibi.
+
+554
+01:56:07,475 --> 01:56:11,155
+Kullanırsak dosya içerisindeki nul işlemleri görebileceğiz.
+
+555
+01:56:14,076 --> 01:56:17,675
+Ve bundan sonra dosya üzerinde işlemleri yapmak kalıyor.
+
+556
+01:56:17,755 --> 01:56:19,836
+Genel olarak konsept bu şekilde.
+
+557
+01:56:19,975 --> 01:56:22,435
+Şimdi ben burada olmayan bazı konseptten bahsedeceğim.
+
+558
+01:56:24,935 --> 01:56:30,496
+Dedik ki dosyalar binary ve text olarak bu şekilde sıralanıyor.
+
+559
+01:56:31,496 --> 01:56:34,655
+Bir diğer sınıflandırma şekli de şudur arkadaşlar.
+
+560
+01:56:37,716 --> 01:56:39,716
+Binary ve Text.
+
+561
+01:56:39,716 --> 01:56:43,716
+Veya önce şunu anlatsam, header falan dedik.
+
+562
+01:56:45,716 --> 01:56:48,716
+Erişimlerine göre dosyayı sıralamak.
+
+563
+01:56:49,716 --> 01:56:53,716
+Şimdi iki türlü erişim var.
+
+564
+01:56:59,091 --> 01:57:02,771
+Dosyada bir de Sequential Access.
+
+565
+01:57:06,452 --> 01:57:29,912
+Sequential Access'te olan olay şudur arkadaşlar. Bu bir bit dizisi ister satır şeklinde düşünün ister sadece sıfır ve birler şeklinde düşünün. Dosya açıldığında bunun pozisyon kontrolörü buradadır. Baştadır. Sen ister bir bit okursun, ister bir byte okursun, ister bir satır okursun, istersen bir blok okursun.
+
+566
+01:57:35,155 --> 01:57:38,615
+Satır, line okuyabiliyorum. Hatta line'dan önce şunu diyelim.
+
+567
+01:57:42,776 --> 01:57:47,516
+Bir data, formatlı data, formatted data diyelim.
+
+568
+01:57:49,336 --> 01:57:54,076
+Ne demek? Yani git bir tane string, bir tane integer, bir tane string oku mesela.
+
+569
+01:57:55,316 --> 01:57:59,136
+String, integer, ne bileyim bir tane float oku.
+
+570
+01:57:59,136 --> 01:58:01,136
+Bir seferde bunu okuyabiliyoruz.
+
+571
+01:58:02,100 --> 01:58:27,960
+Bir satırın tamamını okuyabiliyoruz. Artık o dosya nasılsa veya bir blok okuyabiliyoruz. Ve bu okuma işleminden sonra bit okuduysan bu kürsör bir bit kayıyor. Şu formatta okuduysan onun size kadar kayıyor. Bir sonrakini okuyabilmek için. Bu tamamen text dosyalar içerisinde de olabilir, binarlar da olabilir. Genellikle biz text dosyalarda şunu çok kullanırız.
+
+572
+01:58:28,435 --> 01:58:53,155
+Binary'lerde bit okumamız gerekir. Onu şimdi birazdan açıklayacağım. Random Access'de olan olay şudur. File Position elemanını, şu elemanı, dersin ki sen şu an buradasın, git şuraya kopyalar. Aradaki elemanları okumadan buraya konumlandır veya End of File'e git. Veya Rewind diye bir fonksiyon vardır. O fonksiyonu göreceğiz. Tekrar başa dön. Satırın başına gel.
+
+573
+01:58:55,988 --> 01:59:18,127
+Eskiden siz teypler, teyp bilen var mı aranızda? Teyp. Evdeki teypler aslında buna benzerdir. Ama manyetik teypler dediğimiz verilerin sıralı erişimine imkan sağlayan veri kaydetme birimleri vardır. Evdeki eski kasetler buna bir örnektir ama çok basit şekillendirir.
+
+574
+01:59:18,771 --> 01:59:29,211
+Bunlar tepe olarak söyleyeceğimiz şeyler. Şunlar da herhangi bir Random Access RAM modeli dediğimiz herhangi bir hafıza birimi veya dosya şeklinde söyleyebiliriz.
+
+575
+01:59:30,652 --> 01:59:38,011
+Peki gelelim. Aynı şekilde yine burada da bit okunur. Yani bulunduğun yere git oradan bir bit oku diyebilirsin.
+
+576
+01:59:38,811 --> 01:59:41,831
+Yani bunu yeni konulandırır veya bir byte oku diyebilirsin.
+
+577
+01:59:42,971 --> 01:59:43,211
+Veya bir...
+
+578
+01:59:44,564 --> 02:00:06,644
+Formatlı Data Oku diyebilirsin. Burayı anladık mı? Soru var mı burada? Şimdi soru yoksa bütün bu file operation'larını şu andan sonra söylediğim yaklaşık belki 10 cümle özet olarak size söyleyecek. Dosya operasyonlarını, dosyalarla alakalı değil, dosya operation'larını.
+
+579
+02:00:14,579 --> 02:00:41,880
+Genel olarak dosya işlemleri neler? Dosyayı create edebilirim, delete edebilirim, rename yapabilirim. Bunlar bildiğimiz klasörde mouse'un üzerine sahtıkları yaptığın veya command line üzerinden yaptığın şeyler. Bunlar operasyonlar tamam. Ama asıl yapılacak işlem, create ettin, delete ettin, bir read işlemi vardır.
+
+580
+02:00:42,644 --> 02:00:44,064
+Bir de write işlemi vardır.
+
+581
+02:00:46,564 --> 02:00:50,024
+Write işlemi içerisindeki bir veriyi update etmek olabilir.
+
+582
+02:00:51,104 --> 02:00:54,244
+Veya içeride sıfırdan bir veri yazmak olabilir.
+
+583
+02:00:54,704 --> 02:00:57,604
+Append etmek olabilir. Sonuna eklemek demektir.
+
+584
+02:00:58,624 --> 02:01:03,364
+Ondan sonra hiçbir şey yapmadan doğrudan sıfırdan yazmak anlamında da gelir.
+
+585
+02:01:03,364 --> 02:01:06,884
+Genellikle write modu içeriğini önce boşaltır.
+
+586
+02:01:09,716 --> 02:01:32,036
+Sıfırdan yazmaya başlar. Update, içerisindeki bir veriyi değiştirmek demektir. Append de kaldığı yerden, şu file position elemanının kaldığı yerden ne demektir? Oraya veri ekle demektir. İçeriğini bozma. Read de sadece read yapıyor. Yani istediğin yerden, ister baştan, ister sona okuma demek. Peki, dosya nasıl okunur? Soru bu. Ne devap verirsiniz?
+
+587
+02:01:37,876 --> 02:01:47,216
+Siz dosyayı nasıl okuyorsunuz? Bu konuda ne diyeceksiniz? Söyleyeceğim 10 cümle bunlarla başlayacak. Bu konunun özeti.
+
+588
+02:01:53,460 --> 02:01:55,140
+Hiç dosya okuyamak yok mu aranızda?
+
+589
+02:01:57,020 --> 02:02:02,539
+Dosya nasıl okunur? Yani C'de veya herhangi bir programlama dilinde dosyayı nasıl okutursunuz?
+
+590
+02:02:08,275 --> 02:02:16,976
+Hocam, diğer dillerde o kadar sıkıntı değil ama mesela Python'da hocam, görüntüyü direkt belli fonksiyonlarla çekebildiğimiz için bu kadar zorlamıyorum.
+
+591
+02:02:16,976 --> 02:02:35,336
+Tamam, dilden bağımsız diyorum. Yani herhangi bir dilde önce dosyayı uygun modda açarız. Dosyayı açtık. Açtıktan sonra dosyanın formatını, yani formatı derken ppt uzantısından mı bahsediyorsun? Bu arada herkes biliyor yani dosyanın bir adı vardır.
+
+592
+02:02:36,180 --> 02:02:51,520
+Bir de dosyanın uzantısı vardır. Arkadaşlar açtık, dosya açıldı. Yani C'nin içerisindeki program bir dosyası. Program bir noktası dosyası. Ben bunun içeriğini nasıl okuyacağım?
+
+593
+02:02:54,260 --> 02:02:59,439
+Konumu vs. her şeyi, modu, her şeyi. Dostyanın şöyle açtım.
+
+594
+02:03:01,492 --> 02:03:07,891
+Yani nasıl ben burada TXT ile açıyorsam sen programında açtın. Yani burada okumak istiyorsun. Bunu nasıl okuyacağız?
+
+595
+02:03:19,220 --> 02:03:44,940
+Cevaplar yok. Şimdi arkadaşlar, dosya birinci önemli şey, yazıldığı gibi okunur. Tamam. Eof kullanarak sonuna kadar okursun ama ben diyorum ki, şurada dosya dediğimiz şey, yukarıda yazdık sıfır ve birler. Yani burada Eof diye bir şey en son sonda. Dosya arkadaşlar nasıl bakın, ister tekst olsun, ister binary olsun.
+
+596
+02:03:45,908 --> 02:04:07,348
+Sonuçta bu 0 ve 1'ler değil mi? Herhalde yani bilgisayarda. Benim programlama dilim gidecek. Onu 0 ve 1'leri çevirecek. Ondan sonra karşısına bulacak. Dosya nasıl yazıldıysa ona göre okunur. Nasıl yazıldıysa kastım şu. Okuyacağın ilk 4 eleman dosyanın adı olacak. Sonra dosyanın uzantısı gelecek.
+
+597
+02:04:07,988 --> 02:04:26,268
+Yani dosyayı yazan kişi burada hangi mantıkla yazdıysa, nasıl yazıldıysa dediğimden kastım bu. Ona göre o sıfır ve birleri alıyorsun. Tek tek tek tek tek tek. Ne yapıyorsun? Anlamlandırıyorsun. Burada ben şu örneği veriyorum. Protein sentezi denen bir olay var değil mi? Sentral dogma diyoruz.
+
+598
+02:04:27,636 --> 02:04:53,196
+Ben biyonformalara çalıştığım için o konularda bazen bakıyorum. Şimdi protein sentezini başlatan üçlü bir kodon vardır. Bir de bitiren bir şey vardır. Değil mi? Arada da ne olur? Üçlü üçlü gelir. Bir arada kodlar vardır. O başlatıcı kodonu görünce ne oluyor? Sentezin başlayacağını, yani işlem başlıyor diyor. Sonra ondan sonraki gelen her üçünden bir amino asit karşılığı üretip ne yapıyor?
+
+599
+02:04:54,323 --> 02:05:20,963
+Bu sistem protein sentezi yapıyor. Aynı burada da olduğu gibi okuyacağım sonuçta 0 ve 1'ler dizisi arkadaşlar. Bu tek dosyası da olsa, binary de olsa bunun genel hali burada başlayıp biten, artık dosyanın sonuna kadar giden şu 0 ve 1'ler. Diyor ki bu şu kadar kısımda bunu al, bu dosyanın adı olsun. Artık bunu yazan kişi nasıl yazdıysa öyle.
+
+600
+02:05:22,804 --> 02:05:35,804
+Ondan sonraki elemanı al. O da dosyanın size olsun gibi. Şimdi hemen örnek göstereyim buraya gelmişken. İnşallah onu bulurum.
+
+601
+02:05:37,404 --> 02:05:48,804
+Ben diğer derse hazırlamıştım ama örneğin bmp dosyası. Bir tane örnek göstereceğim dosya olarak.
+
+602
+02:05:53,171 --> 02:06:04,771
+Şu bir bmp arkadaşlar. Şuradaki kodda bu kodu daha sonra inceleyeceğiz. Bitmap dosyasının header'ını gösteriyor.
+
+603
+02:06:04,771 --> 02:06:14,471
+Bakın header kısmını. Diyor ki header'da ilk okuyacağımız iki eleman, iki byte, zannediyorum byte'ti bunlar bit değildi.
+
+604
+02:06:14,612 --> 02:06:37,412
+Header'ın dosyanın type'ına giriyormuş. Sonraki size'ına giriyormuş. Sonra ekstra bitmap'in mantığıyla alakalı bitmap'in mesela dosya kaç tane renkten oluşuyor, kaç tane genişlikte piksel var, kaç tane yükseklikte piksel var, yani boyutlarını, imajını vs. bir sürü bilgilerine bakıp bunlar buradaki mantıkla
+
+605
+02:06:38,387 --> 02:06:49,787
+Kodlanmış. Bu nasıl yazıldıysa kısmı artık siz dosyayı nasıl tasarladıysanız o tasarlanan mantığa göre okumak zorundasınız.
+
+606
+02:06:50,452 --> 02:07:10,572
+Kuralı kim koyduysa o kurala uygun okumak zorundasın. Mesela açın bir pdf dosyasının header'ını inceleyin internetten. O pdf okuyucuların hepsi ne yapmak zorunda? O pdf'in versiyonuna göre yani pdf'in birkaç farklı versiyonu var. O versiyonuna göre dosya okumak zorundadır. Yoksa program açmaz.
+
+607
+02:07:20,051 --> 02:07:21,372
+Bizim Microsoft Word.
+
+608
+02:07:23,372 --> 02:07:33,471
+Open Office'te çalışıyor. Ondan sonra diğer yardımcı, Open Source, Free Office programlarında çalışıyor. Neden çalışıyor?
+
+609
+02:07:35,539 --> 02:07:56,059
+Bu header'ını ve çalışma şeklini, yani yazılım şeklini o uygulamalar destekliyor. Word'un uzantısı ne? Doge veya DogeX. Doge veya DogeX acaba nasıl bir dosyada kodlanmış, o bilgiyi orada onu yazan, okuyan kişi ne yapmıştır? Ona sahiptir, ona göre dosya açılır.
+
+610
+02:08:02,543 --> 02:08:14,423
+O yazma formatını yine kullanmak zorunda. Onu da kullanıyor. Peki, dosya dedik nasıl okunur? Nasıl yazıldıysa öyle okunur. Peki, dosya nasıl yazılır?
+
+611
+02:08:18,355 --> 02:08:24,055
+Dosya nasıl yazılır? Nasıl yazdıysam öyle okuyacağız. Peki nasıl yazacağız? Nasıl yazmamız gerekir?
+
+612
+02:08:28,500 --> 02:08:34,359
+Yok yani şimdi bu şey o tavuk yumurta öyle değil yani o buradan başka bir yere atlayacağız.
+
+613
+02:08:39,699 --> 02:09:02,680
+Dosya arkadaşlar nasıl istiyorsanız öyle yazılır. Tamam mı? Bu da ikinci parolu olsun. Nasıl yazıldıysa öyle okuyacağız. Nasıl istiyorsak öyle yazacağız. Bir adım daha atlayalım mı? Peki nasıl istememiz lazım? Mühendis olarak düşünün. Dosyayı nasıl yazmamız gerekir?
+
+614
+02:09:06,963 --> 02:09:24,404
+Şimdiye kadar aldığınız derslerde, algoritma dersinde, ayrık matematikte. Kolay okunacak şekilde. Güzel. Kolay yazılacak şekilde, kolay okunacak şekilde, anlamlı olacak, rahat olacak, çok fazla saçma sapan bizi yormayacak şekilde değil mi?
+
+615
+02:09:28,692 --> 02:09:43,351
+Sadelik evet güzel. Belli bir şey olsa bütün dosyalar belli formatta yazılır. Derler ki yani şunu diyebilirlerdi. Resim dosyaları için konuşayım. Bu işte PNG dosyası. PNG'ler ne olsun bundan sonra 01 olarak kodlansın.
+
+616
+02:09:43,712 --> 02:09:52,351
+Veya 20 tane resim dosyası var. Biz bunu en fazla 4 bit ile kodlarız. İlk 4 bit onun hangi türden olduğunu söylesin.
+
+617
+02:09:53,779 --> 02:10:18,939
+Ondan sonra sonraki 4 bit size'ını söylesin. Sonraki işte bilmem kaç bit başka bir işte kaç pikselden olduğunu yatayda, kaç piksel dikeyden olduğunu söylesin. Görüntüden örnek veriyorum daha akılda kalıcı oluyor. Sonraki kısımda datasını gelsin işte. Datada da ne olsun? Red Green Blue, Red Green Blue, Red Green Blue böyle gitsin. En sonunda da bir durdurucu bir eleman ekleyelim. Ne bileyim bir özel bir bit dizisi ekleyelim. Ne olsun? 1, 1, 1.
+
+618
+02:10:19,347 --> 02:10:41,768
+Şöyle bir şey olsun 4 byte'lık. Bunu görünce bitsin. Veya buna da gerek yok. Bitince bittiği yerde son piksel olsun, kalsın. Şimdi hiçbir şekilde böyle bir standart yok. Yani geçtiğim bütün dosyalar arasında, resim dosyaları arasında bile böyle standart yok. Bize ne yapıyor? Optimum verimliliği sağlayacak dosya formatı nedir?
+
+619
+02:10:42,707 --> 02:10:57,067
+Yani nasıl isterden kastım, böyle bir şey tasarlayalım ki, okumamız, yazmamız, güncellememiz, yapacağımız her iş nasıl olsun, kolay olsun. Herkesin kullanılabileceği şey olsun, anlaşılabilir olsun, sade olsun.
+
+620
+02:10:57,876 --> 02:11:18,916
+Dosya nasıl okunur? Yazıldığı gibi okunur. Nasıl yazılır? İstendiği gibi nasıl isteyeceğiz? Optimum şekilde performans kriterini göz önünde bulundurarak. Tabi performanstan kısım sadece erişimde olmamalı. Bazı durumlarda dosyanın az yer kaplaması gerekir. Az yer kaplamak için işin içine burada data compression konusu giriyor.
+
+621
+02:11:20,115 --> 02:11:34,695
+File Organization diye bizde bir ders var. Yani bu çok kapsamlı bir derstir. Dosyaları veri tabanında değil de, pardon veri tabanı diyorum, RAM üzerinde değil de sonuçta bunu hard disk üzerinde saklayacağız.
+
+622
+02:11:35,336 --> 02:11:40,836
+Hard disk üzerinde işte B-Tree'ler, 2-3-4-Tree dediğimiz tree yapıları var, veri yapıları.
+
+623
+02:11:41,363 --> 02:12:04,963
+Onları kullanarak saklayacak şekilde bir sistem oluşturması. Bunun daha detayı File Operation dersinde ve bununla alakalı farklı derslerde. Ama biz biliyoruz ki size bir proje versen. PDF okuyucu yazın C'de. Ne yapmanız lazım önce o zaman? PDF okuyucu yazacaksam. Ben önce gidip bu PDF'in dosya formatını bir öğreneyim.
+
+624
+02:12:09,203 --> 02:12:36,783
+Bunun dosya formatını öğreneyim. Bakın ilk şu kadar okuduğum, şunları, şu ikileri, dörtleri toplayın. Şu birileri daha sonra konuşacağız. O kadar okuduğum şeyin içerisinde hala data yok. Ondan sonra data gelecek. Data da gelişigüzel, doğrudan sıralı bir şekilde gelmek zorunda değil. Gelmeyebilir. Ne bileyim tekrar eden datalar vardır. Onları bir sıkıştırma algoritması ile Huffman ile Rang'ın Enkoding ile kodlar veya başka bir şey yapar.
+
+625
+02:12:37,492 --> 02:12:56,211
+O dosya formatını oluşturan mantık neyse o mantığı bilip ona göre ben ahmet.pdf reader, ahmet.pdf reader, ne bileyim image reader gibi bir şey yazmam gerekir. Herhalde burası anlaşıldı. Burada sorun var mı arkadaşlar?
+
+626
+02:12:59,636 --> 02:13:19,256
+Evet, konu bu kadar. Derse bitirebilirsiniz. Yani işin mantığını bileceksiniz. Genel mantık budur. Ondan sonra ben bit mi okuyacağım, byte mi okuyacağım? Bit okumanın bir tane sede fonksiyonu var. Java'da başka fonksiyonu var. Byte okumanın fonksiyonu var. Format okumanın, satır okumanın, block okumanın fonksiyonu var.
+
+627
+02:13:27,507 --> 02:13:29,207
+fonksiyonu kullanacağım demektir.
+
+628
+02:13:29,807 --> 02:13:31,367
+Ondan sonra bir byte okuyacaksam
+
+629
+02:13:31,367 --> 02:13:33,587
+bit okumama gerek yok. Bir defa byte okurum.
+
+630
+02:13:34,148 --> 02:13:35,507
+Ondan sonra bir blok var
+
+631
+02:13:35,507 --> 02:13:37,287
+veya bir satır var.
+
+632
+02:13:37,807 --> 02:13:39,467
+O satır bana datamı gösteriyor.
+
+633
+02:13:39,587 --> 02:13:41,528
+O zaman o datayı da gidip
+
+634
+02:13:41,528 --> 02:13:43,247
+tek tek bit bit okumama gerek yok.
+
+635
+02:13:43,327 --> 02:13:45,167
+Çünkü o bit bit okuma ne demek? Her defasında
+
+636
+02:13:45,167 --> 02:13:46,947
+harddiske git gel git gel demektir.
+
+637
+02:13:47,587 --> 02:13:49,247
+Ona da gerek yok. Artık
+
+638
+02:13:49,247 --> 02:13:51,007
+blok okuyacağım bir duruma geldiyse
+
+639
+02:13:51,007 --> 02:13:53,007
+ne bileyim datayı al olduğun gibi al
+
+640
+02:13:53,359 --> 02:14:04,839
+Belleğine kopyala. Öyle bir data, öyle bir format varsa o zaman ne yaparım? Ben o blogu size of'larla bilmem nelerle doğrudan kopyalarım. Belleğimi alırım. Tamam mı? Şu.
+
+641
+02:14:06,292 --> 02:14:23,572
+Gezinme hızımızı belirtiyor. Bu da gezinme kuralımız. Yani bir labirent gibi düşünün şu 0 ve 1'leri. Bu 0 ve 1'ler üzerinde işte bir bit mi gideceksin, bir byte mi gideceksin? Şunlar da sizin o gezinme hızınızı belirtiyor. Bu şekilde dosyayı okuyoruz. Herhalde zannediyorum genel kapsamı bu şekilde anladık.
+
+642
+02:14:23,572 --> 02:14:33,692
+Tabi bu mantığı tekrar size hatırlatacağım. Ne zaman hatırlatacağım? Örnekler yaparken. Ara verelim mi arkadaşlar? Bir 5 dakika ara verelim de saat 12'yi buluruz bugün.
+
+643
+02:14:37,652 --> 02:14:39,112
+15 geçe görüşmek üzere.
+
+644
+02:14:59,252 --> 02:15:25,472
+Onlara geleceğiz. Yani bit okumak nasıl olacak, byte okumak nasıl olacak, C'deki karşılıklarını göreceğiz. Ama yaptığı şey stream ile haberleşip, std in veya std out yoluyla diyor ki, ben oradan bit okuyacağım. 3 tane bit. Pardon, 1 bit, 1 bit okumak. Bit okumak zaten şeydir, 1 bit oku. Eğer 3 bit okuyacaksan o fonksiyonu 3 defa çağıracaksın demektir.
+
+645
+02:15:26,068 --> 02:15:51,068
+Onun için birazcık zahmetli. Ama byte okumak istiyorum diyorsan doğrudan bir byte'lık veri okutabilirsin. String okuma fonksiyonu var mesela. GetString biz şeyde scanf'in yerine kullanıyoruz ya veya putString. Aynı şey yazma için de geçerli. Yani bit yaz, byte yaz, ne bileyim formatlı data yaz. Onların hepsini göreceğiz örneklerle.
+
+646
+02:15:55,220 --> 02:16:04,739
+Öğrenmeniz önemli. Yani dosyanın nasıl bir formatta yazıldığını bilip ona göre okumak.
+
+647
+02:16:05,860 --> 02:16:15,100
+Ben hep ödevlerimde şey yaparım. Derim ki şöyle bir dosya formatı olsun. Size de mesela cumartesi günkü dersi onun için yapacağım.
+
+648
+02:16:22,515 --> 02:16:33,236
+Şöyle bir format. ID var, ad var, soyad var, tarih var, poliklinik var mesela.
+
+649
+02:16:33,236 --> 02:16:40,115
+İşte falanca kişi, şu ID'deki kimlik numarası, adı, soyadı, şu tarihte, şu poliklinikte, hatta saat diyelim.
+
+650
+02:16:41,975 --> 02:16:47,236
+Randevunuz var. Burada bir sürü kişinin bilgileri var. Ben bu uygulamayı hep laboratuvar asistanken yaptırırdım.
+
+651
+02:16:48,147 --> 02:17:10,108
+Artık asistan değilim. Ben o örneği asistanlara vermeyip burada sizinle yapacağım. Farklı versiyonlarını öğrencilere farklı dönemlerde sordum. Her bir kişiye mail göndermek istiyorum. İşte falanca sayın kişi, şu tarihte, şu saatte, şu poliklinikte randevunuz vardır. 15 dakika önce geliniz. Böyle bir otomatik mail.
+
+652
+02:17:10,579 --> 02:17:16,579
+Ne olacak? Şuradan bu verileri çekecek. Yani generic bir stringim var. O stringin arasında şu veriler gelecek.
+
+653
+02:17:16,579 --> 02:17:25,579
+Şimdi bakın, benim formatım bu. Ne yapıyorum? Her kişiye mail göndermek için bir tekst. Aramızda 2017 girişli var mı?
+
+654
+02:17:25,579 --> 02:17:35,579
+Birçoğunuz 2018 yılıdır zannediyorum. Mesela 2018 yılında bizim bölümde intibaklar yapıldı.
+
+655
+02:17:37,108 --> 02:17:56,108
+Bolonya 2018 intibakı yapıldı. O zaman belki çoğunuz birinci sınıftı, belki hatırlamazsınız. Yazın o intibakları yaparken, biz dedik ki çocuklara şeyi göndermek adına, intibaklarının ne olduğunu göndermek adına bir uygulama yapayım. Ben Excel'den...
+
+656
+02:17:57,492 --> 02:18:22,891
+Veri okuyup, sayın öğrencimiz yeni ders ekledeki Excel'dedir. Tabi bu 800 öğrenci olunca her öğrenciye mail göndermek çok mümkün değil. Şöyle bir işte baktım veri formatına. Excel okuyucu kodum var benim. Python'da yazdım. Çok basit bir şey. Öğrencinin numarasını alıyorum. Ondan sonra o öğrencinin bir Excel dosyası var.
+
+657
+02:18:24,340 --> 02:18:33,340
+Bir String oluşturdum. Mail fonksiyonları da çok basit. Her öğrenciye kendi Excel dosyasını otomatik mail gönderen bir kod yazmıştım.
+
+658
+02:18:34,560 --> 02:18:42,740
+Yalnız arada şöyle bir hata yapmışım. String oluşuyor ya, önceki krediniz şuydu, yeni krediniz buydu diye.
+
+659
+02:18:43,240 --> 02:18:47,819
+Önce bir hata yapmışım. Bir yerde o String'i oluştururken artı eşittir yapmışım.
+
+660
+02:18:48,531 --> 02:19:11,152
+Bu da şöyle bir hatayla gitti. İlk öğrenciye kendi bilgisini, ikinci öğrenciye birinciyle ikinci, üçüncü öğrenciye, tabii sekiz yüzde öğrenci oldu. En son öğrenciye hemen hemen herkesin böyle devasa bir mail gitmiş. O denemelerde. Tabii ben sınıf sınıf yaptığım için yüzler iki yüzler gidiyordu o zamanlar. Ama öyle bir format vardı okuduğum şeyde. O formata göre çok rahat bir kod yazıp.
+
+661
+02:19:11,827 --> 02:19:25,387
+Yani, düşünün 800 kişiye mail göndermeniz gerekiyor. Olabilir bir şey de yapılabilir değil. İnsancıl değil. Bu tarz basit bir formatlarda çok rahat kullanılabiliyor.
+
+662
+02:19:25,387 --> 02:19:38,187
+Sonradan tabii hatayı düzelttik de daha düzgün bir formatta. Yani o artı eşitleri düzelttik. Başka birkaç ekleme daha yapmıştım. 3-4 Excel'den oluşturup.
+
+663
+02:19:38,324 --> 02:20:02,084
+Öyle bir uygulama gerçekleştirmiş. Ödevlerimde başka benim dosya formatlarım vardır kullandığımda. Onları göreceğiz. Yani dedim ki şöyle bir şey olsun. CSV'ye benzerdir mesela. Şu matrisin satır sayısı olsun, bu sütün sayısı olsun. Ondan sonra şurada da 12 tane sayı arada noktalı virgüllerle.
+
+664
+02:20:03,476 --> 02:20:24,236
+Ondan sonra bu satır ve sütunu bitirmek için de mesela şuraya bir soru işareti koyarım. Soru işareti görene kadar ilk okuduğun, virgülden önce ilk okuduğun kısım satır sayını, virgülden sonraki soru işaretine kadar kısım sütün sayını göstersin. Bunlar hep kafamızda tasarladığımız, çok rahat uygulaması kolay şeyler.
+
+665
+02:20:27,236 --> 02:20:28,296
+Devam edelim mi?
+
+666
+02:20:38,995 --> 02:20:40,536
+Herhalde herkes gelmiştir.
+
+667
+02:20:43,075 --> 02:20:48,915
+Şimdi arkadaşlar, ilk yapacağımız iş o zaman, okuma yazmadan önce dosyayı açmak.
+
+668
+02:20:50,376 --> 02:20:54,355
+Dosyayı açarken arkadaşlar iki tane argüman gönderiyoruz. Birincisi dosyanın adı.
+
+669
+02:20:55,275 --> 02:21:04,355
+Dosyanın adından kastığımız, işte C'nin içindeki veya diğer şeylerde artık yine hangisini kullanıyorsanız, işte deneme.c.
+
+670
+02:21:06,067 --> 02:21:13,067
+Bunu tırnak arasında kullanmak gerekiyor. Şimdi tırnak arasında backslash problem olacağı için bunu çift tane iki tane backslash ile yazmak gerekiyor.
+
+671
+02:21:13,067 --> 02:21:16,467
+Temelde. Sonra hangi akses moduyla erişeceğiz?
+
+672
+02:21:18,167 --> 02:21:23,967
+Bu akses modları okumak için mi açıyorsun, yazmak için mi açıyorsun, eklemek için mi açıyorsun neyse onun yanında şöyle,
+
+673
+02:21:24,847 --> 02:21:33,067
+hani bizim ScanF'te kullandığımız gibi R, R artı bir sonraki şeyde gelecek. Bununla bir parametre, fopen fonksiyonu bunu yapıyor bize.
+
+674
+02:21:34,100 --> 02:21:44,779
+Buradan geriye bir pointer dönüyor. Bu da bizim file pointer. File pointer neydi? File struct'dan üretilen bir şeydi. Şöyle bir şey yapacağız.
+
+675
+02:21:48,211 --> 02:21:54,871
+Tekstreamler için ve Binary Streamler için farklı akses modları var. Bunların listesi gelecek.
+
+676
+02:21:57,432 --> 02:22:06,891
+Şimdi bu tekstreamler için akses modları sağda demiş. Binary moddakiler bunların aynısı fakat
+
+677
+02:22:17,363 --> 02:22:32,724
+Var olan bir dosyayı bakın, var olan bir dosyayı okumak için aç demektir. Okuma nereden başlıyor? Dosyanın başından başlıyor. Dosyanın var olmadığı durumda hata alırsınız. File point'un null döner.
+
+678
+02:22:44,595 --> 02:23:01,935
+Truncate edilecek. Ne denilir? İçi boşaltılacak. Sıfır boşlukta yani tamamen silinecek. Onun için çok tehlikelidir. Write modda açarken dosyanızı yedekleyin. Ödev yaparken öğrenci arkadaşlar bu hatayı çok yaparlar. Yeni olanlar.
+
+679
+02:23:01,935 --> 02:23:11,175
+Ve bu yazmak için açılacağı için, sıfırdan oluşturulacağı için dosya pozisyon indikator da nereye geliyor? Dosyanın başına geliyor.
+
+680
+02:23:13,108 --> 02:23:22,167
+A ile aşağırsak A append demektir. Var olan bir dosya append modda, yani ekleme yapılacak modda aç.
+
+681
+02:23:23,167 --> 02:23:31,448
+You can write only at the end of the file position. Yani dosyanın file position'ı neredeyse, en sondaysa, en sondadır.
+
+682
+02:23:32,047 --> 02:23:35,148
+Sen ne kadar yazdıysan oraya kadar gelmiştin. Onun devamına yazar.
+
+683
+02:23:37,988 --> 02:23:38,700
+Sen...
+
+684
+02:23:40,435 --> 02:23:51,935
+Dosya pozisyonunu farklı bir yere taşısan bile dosyanın sonuna ekliyor arkadaşlar. Birazcık böyle kıstı var.
+
+685
+02:23:53,876 --> 02:23:59,456
+Replus, dosyayı okumak ve yazmak için aç.
+
+686
+02:23:59,456 --> 02:24:05,256
+Dosya Pointer'ı, yani Dosya Pozisyon Indicator'ı.
+
+687
+02:24:05,556 --> 02:24:21,236
+Başlangıçta dosyanın başına gelir. Dolayısıyla ben dosyanın başına ne yapabilirim? Bu sayede yazabiliyorum. Bakın A ile yazdığımda sona götürüyordu beni. R Plus ile açtığımda dosyanın başına bir şey ekleyeceksem yazabilirim.
+
+688
+02:24:33,103 --> 02:24:39,243
+Boşaltılacaktır. Artı ekleyince buna bir okuma opsiyonu da tanmış oluyoruz.
+
+689
+02:24:41,304 --> 02:24:54,383
+A plus bir dosya aç veya yeni bir tane oluşturup şu demek. Eğer dosya varsa o dosyayı açar. Yoksa o dosyayı oluşturur.
+
+690
+02:24:59,667 --> 02:25:27,028
+yazacağınız şey ne olacak? Dosyanın sonuna olacak diyor. Bu modlar. Bunlar C programlama dilinin dosya okuma yazma ile alakalı kullandığı modlar. Tabii neler için? TextStreamler için. Eğer ben bunları binary streamler için kullanacaksam yazacağım şey R binary, B binary, A binary, R plus binary, W plus binary gibi A plus binary ekleyeceğim.
+
+691
+02:25:30,291 --> 02:25:54,011
+Şimdi şuraya baktığımızda dosya önceden olması gerekir. Ne modda? Read modda ve Read Plus modda. Eski dosya Write modda ve Write Plus modda siliniyor. Tehlikeli bir şey. Dosya okunabiliyor. Read modda okuyoruz. Read Plus'da, Read Plus'da, Write Plus'da ve Append Plus'da okuyabiliyoruz.
+
+692
+02:25:55,028 --> 02:25:58,227
+Şu 5 modda yazabiliyoruz.
+
+693
+02:25:59,427 --> 02:26:06,628
+Stream sadece Append Mode'da son yazıyoruz. Eğer arada bir yerde yazılacaksak,
+
+694
+02:26:08,427 --> 02:26:13,427
+Write Plus veya Read diğer modları kullanmak gerekiyor. Ona dikkat edelim.
+
+695
+02:26:16,328 --> 02:26:20,828
+Bir File Pointer'ı döndürecek. Bunun tipi File olacak.
+
+696
+02:26:21,396 --> 02:26:48,776
+Bunu program içerisinde kullanacağız daha sonra. Şeyden farkı var mı? İşte bizim Structure ve Integer Pointer'dan bir farkı var mı? Pek yok. Sadece fp. deyince bazı şeyler göreceğiz. O kadar. Ama her yerde doğrudan parametre aktarımı aynı şeyler aynı. Bunun pointer'ının pointer'ını kullanmaya pek gerek yok. Hata olursa null döndürüyor.
+
+697
+02:26:49,811 --> 02:26:53,012
+Hatadan farklı ise, null'dan farklı bir şey döndürüyor.
+
+698
+02:26:54,012 --> 02:27:08,012
+fprintf, printf'in hemen hemen aynısıdır. Sadece printf ile ekrana yazdığımız şey, fprintf ile stream üzerinden istenilen lokasyonu yazdırıyoruz.
+
+699
+02:27:09,412 --> 02:27:14,211
+Şimdi arkadaşlar, genel dosyayı açtık, operasyonlarımıza bakalım.
+
+700
+02:27:16,147 --> 02:27:38,467
+Pointer'ımız da var. Bir karakter okumak için kullanacağımız fonksiyonlar getCharacter, putCharacter okumak veya yazmak için. Bir satır okumak istiyorsak, bakın getS diye bir fonksiyonumuz vardı. StringOcul demekti. Bu nereden okuyordu? Kullanıcıdan yani commandline üzerinden klavyeyle okumak yazmak içindi.
+
+701
+02:27:38,899 --> 02:27:43,939
+Ben buna file gets, fgets veya fpost dersem o zaman dosyadan okuma yapmayı sağlar.
+
+702
+02:27:44,719 --> 02:27:48,380
+Blog için fread ve fwrite vardır. Bunların hepsinin örnekleri gelecek.
+
+703
+02:27:49,759 --> 02:27:53,319
+Bunların kendine göre avantajı, dezavantajları var.
+
+704
+02:27:54,279 --> 02:27:58,599
+Ne dedim biraz önce? Eğer ben bit okumam gerekiyorsa gidip buradan bir blog okumam olmaz.
+
+705
+02:27:58,599 --> 02:28:01,439
+Veya satır okumama gerek yok, karakter okumama gerek yok.
+
+706
+02:28:02,279 --> 02:28:05,459
+Ne yapacağım yani? Bir karakter okuyup 7 bitini silecek değilim.
+
+707
+02:28:06,260 --> 02:28:16,940
+Veya bir blog okuyacaksam işi garantiye alayım tek tek karakter karakter veya ne bileyim bit bit okuyayım o da olmaz. Yani bu da performansı kötüleştirir. Bunlar dikkat etmemiz gereken şeyler.
+
+708
+02:28:36,244 --> 02:28:56,264
+Şu fseq, rewind ve flash fonksiyonlarını rahatsız etmeden kullanacağınız bir yazma fonksiyonu var. Bunlara bakacağız. Mesela fflash olarak fscanf ve fprintf'de önceki C versiyonlarında kullanıldık. O da şu.
+
+709
+02:28:58,100 --> 02:29:17,360
+%d okudunuz SCANF'le. Ondan sonra %c okuyunca ne oluyordu? O %c'yi okuyamıyordunuz değil mi? Hatta şuraya boşluk bırakarak çözüm veriliyordu. O, orada bir önceki okunup verilen enter karakterinden kaynaklı bir şeydir. Orayı bir boşaltmak, temizlemek, stream'i boşaltmak için kullanılan bir flash fonksiyonu vardı.
+
+710
+02:29:17,619 --> 02:29:23,540
+Veya işte fseek dediğimiz belli bir noktaya git veya başa git gibi bazı fonksiyonlar var.
+
+711
+02:29:27,860 --> 02:29:36,639
+Write moddan read moda geçiş program çalışırken mümkün değil hangi modda açtıysak.
+
+712
+02:29:39,060 --> 02:29:51,860
+Bu üç fonksiyon sadece IA fonksiyonudur. Buffer'ı temizlemek için kullanılan diğer fonksiyonlar demiş. Bunlara bakacağız da.
+
+713
+02:29:56,020 --> 02:30:06,520
+Memory Short işiniz yoksa, Stream'dan bir veri okursunuz. Onu Construct edersiniz.
+
+714
+02:30:06,520 --> 02:30:17,996
+Ve Output'u tekrar Memory'e, Datadaki Memory'yi ne yapabilirsiniz? Output Stream'e yani yazmak için gönderebilirsiniz eğer herhangi bir Memory probleminiz yoksa.
+
+715
+02:30:21,747 --> 02:30:44,187
+Input ve Output Streamleri bir dosyayı gösterebilir. Fakat önemli olan bir şey, dosyayı okuduğunuz her işiniz bitti. Bunu kapatmak gerekiyor. Tekrar yazma öncesinde falan demiş. Dosyayı da kapatacağız yani en son işimiz bitince.
+
+716
+02:30:49,683 --> 02:31:08,403
+Erişimi kapatıyor. Ne demek bu? Stream'i sonlandır diye işletim sistemine bir sinyal gönderiyor arkadaşlar. Ve aradaki stream'e dair buffer temizlenmesi söyleniyor. F-close, F-P deyince sen dosyaya erişimi kapatıyorsun ama arka planda işletim sistemine bir sinyal gidiyor.
+
+717
+02:31:16,755 --> 02:31:40,755
+Sınırlı sayıdır. Bu bir. Bir de streamler karışırsa mevcut olan dosyanızın içeriği bozulabilir. Onun için dosyayı kapatmak önemlidir. Eğer programınız abort ederse, normal yani kapanırsa bir şekilde şey olursa işletim sistemlerinin çoğu artık o dosyaları kendisi otomatik kapatıyor.
+
+718
+02:31:42,227 --> 02:31:50,287
+Fakat bu her zamanda garanti bir şey değil. Windows tamam garanti kapatıyor diyoruz ama kapatmadığı durumlarda olabiliyor.
+
+719
+02:31:52,787 --> 02:31:55,147
+Örnek bir program.
+
+720
+02:31:57,747 --> 02:32:02,447
+Reading and writing one character at a time in binary mode.
+
+721
+02:32:03,447 --> 02:32:07,207
+Bir karakter okuyacağız. Bu örnekleri hızlıca bitirelim arkadaşlar.
+
+722
+02:32:07,860 --> 02:32:13,500
+Daha bunlarla alakalı baya baya yeterince örnek. Artık bütün konuları da görmüş gibi olduk.
+
+723
+02:32:14,520 --> 02:32:15,280
+Şimdi,
+
+724
+02:32:16,560 --> 02:32:19,900
+Fail ve Success'te iki tane şeyimiz var.
+
+725
+02:32:20,659 --> 02:32:23,220
+Bir dosyadan alacağız, öbürünü kopyalayacağız.
+
+726
+02:32:23,740 --> 02:32:26,300
+İki tane File Pointer'ımız var bakın burada.
+
+727
+02:32:28,080 --> 02:32:30,140
+Diyorum ki, dosyayı aç.
+
+728
+02:32:30,380 --> 02:32:33,200
+Input file'ini. Buraya bir isim gelecek.
+
+729
+02:32:33,492 --> 02:32:38,711
+Şu modda aç. Bakın binary modda. Eğer null'dan null ise dosya açılamadı hatasını ver.
+
+730
+02:32:41,391 --> 02:32:45,371
+İkinci dosyayı aç. Bunu da bu modda aç. Birini okumak için, birini yazmak için açıyoruz.
+
+731
+02:32:48,531 --> 02:32:57,772
+Eğer açamadıysan, hata varsa şey demiş, fp1 deyince, yani bunu açtın, bunu açamadıysan fp1'i de kapat diyor.
+
+732
+02:33:01,940 --> 02:33:24,979
+Return Fail demiş. Eğer bu da olmadıysa dosyayı açtık. File End of File FP1. Bakın özel bir fonksiyondur. Dosyanın sonuna geldin mi demektir. Hangi dosyanın FP1 ile gösterilen dosyanın sonuna geldin mi? Veya gelene kadar bu while döngüsünü döndür. Şu döngü bakın. Çok basit bir şey.
+
+733
+02:33:29,203 --> 02:33:56,164
+Fp2'ye yaz. Neyi yaz? Get c ile fp1'den aldığını. Önceden ne yapabilirdik? Hani bunu bazı arkadaşlar şöyle yaparlar. İşte c derler bir karakter tanılarlar. Get karakter fp1. Bu c'yi de al. c, fp2 ile put c yap. Gerek yok. Bir karakter aldı bunu yazdı. Döngü döndü bir karakter aldı bunu yazdı. Bu sayede ne yapıyorsunuz? Dosyanın.
+
+734
+02:33:56,979 --> 02:34:17,840
+İçeriğini diğer yere yazıyorsunuz. F-Close işimiz bitti. F-Close diğer dosyada işimiz bitti. Return Success dedik. Şuralarda herhangi bir hata olmadıysa, Success'de döndüyse program tamamlanıyor. Ben size tavsiye ederim bu kodu alın. Herhangi bir dosya için, mp3 dosyası için deneyin.
+
+735
+02:34:24,275 --> 02:34:29,515
+Dosya bilmem 2 deyin. Dosya 1'den dosya 2'ye bu şekilde kopyalarsınız.
+
+736
+02:34:32,216 --> 02:34:37,275
+Bunun Determination'ı.
+
+737
+02:34:39,275 --> 02:34:47,155
+Burada demiş ki arkadaşlar, GetSea'nin return values'unu kullanamıyoruz.
+
+738
+02:34:48,115 --> 02:34:52,396
+Yani dosyanın sonuna gelip gelmediğini kontrol etmek için binary modda.
+
+739
+02:34:53,675 --> 02:35:01,195
+Eğer şöyle yazarsak C, eşittir, getc, endof file'den farklı olduğu müddetçe.
+
+740
+02:35:04,195 --> 02:35:12,256
+Endof file ile arada bir başka endof file karakteri varsa,
+
+741
+02:35:12,915 --> 02:35:18,036
+O zaman exit edecektir. Onun için bunu kullanmak çok makul değil.
+
+742
+02:35:20,075 --> 02:35:23,675
+GSC'nin return value'unu kullanmak yerine
+
+743
+02:35:24,435 --> 02:35:28,015
+şu şekilde file endof file fonksiyonunu kullanıp
+
+744
+02:35:28,795 --> 02:35:33,655
+bu fonksiyonun dosyanın sonuna gelip gelmediğini kontrol etmek daha iyi.
+
+745
+02:35:35,195 --> 02:35:36,216
+Çünkü burada
+
+746
+02:35:36,975 --> 02:35:40,555
+binary dosyalarda endof file ile karışacak
+
+747
+02:35:41,172 --> 02:36:08,371
+Şu başka bir şeydir. Şu başka bir şeydir. Karışacak durumda olabilir. Bu ancak bize kesinlikle tam olarak sağlayacak şey, bu işi sağlayacak şey, file and file fonksiyonudur demiş. Örneğin geri kalanına baktığımızda, işte birinci dosyanın adını giriniz demiş. İkinci dosyanın adını giriniz. Dosyayı kopyalayın. Yani bu falanca.png veya pdf dosyası, diğeri de diğer pdf dosyası.
+
+748
+02:36:08,915 --> 02:36:12,235
+Eğer bunu çalıştırırsanız dosyayı kopyalaması gerekir.
+
+749
+02:36:12,235 --> 02:36:22,235
+Şimdi bu ne okuduk? Burada bir copy operasyonunda karakter okuduk değil mi arkadaşlar?
+
+750
+02:36:25,747 --> 02:36:52,608
+Bu işi stream ile yapan getc veya putc diye makro olarak kullanan iki tane de özel şey var. Bunlar biraz önce getc şey. Bir de fgetc function'dır, fputc diğer function'dır. Bunların farkı bu. Aynı işlemleri yapıyor.
+
+751
+02:36:55,252 --> 02:37:10,772
+Bunlar putsi ve getsi zaten makro olarak implement edici için bunlar daha hızlı çalıştığı söyleniyor. Hemen hemen fgetsi ve fputsi'nin işte demiş ki iki katı hızlıdır demiş.
+
+752
+02:37:22,899 --> 02:37:38,319
+Makroları daha görmedik ama bir makro çağırdığında gönderilen argümanla parametreler karışabiliyor. Şurada bahsettiğiniz şey çok iyi çalışmayabilir. Onun için bu putc ve getc'yi kullanırken dikkat edin demiş.
+
+753
+02:37:38,920 --> 02:37:48,659
+Eğer bu argümanınız yanlış operatörler içerirse bunun yerine şunları kullanmak, fonksiyon kullanmak her zaman daha garantidir.
+
+754
+02:37:49,108 --> 02:38:07,108
+Ne demek? Şimdi makro tanımladım. Define. Bunu çoğu yerde görmüştünüz. sqrx x x x Ben bunu aşağıda çağırırken şöyle çağırırsam doğru sonucu alırım. Fakat şöyle çağırırsam
+
+755
+02:38:10,868 --> 02:38:37,228
+Şöyle diyelim. 4 artı 3 çarpı. Burada 7'nin karesini almıyor arkadaşlar. 4 artı 3 çarpı 4 artı 3 diyor. Ne oldu? 12, 16, 19 oldu. Sonuç böyle sıkıntılı geliyor. Bu makroların işte anlatımında göreceğiz. Çok küçük bir konu olduğu için sonuna bırakıyorum. Genellikle şöyle şeyler kullanıyor ama bu da yani kullanıcı tarafından delinebiliyor. Yani onun için dikkat etmek gerekiyor.
+
+756
+02:38:38,451 --> 02:39:04,912
+Diğer copy operation'ı bakın bir getString alıyor. Buradaki bir line kadar. Line size'ımız şu kadarmış. File pointer'ını alacak bu getString'i. Line'ın içerisinde kopyalayacak. Line da bakın bir eleman, karakter testi.
+
+757
+02:39:05,299 --> 02:39:29,619
+Bu kadarlık bir eleman oku. Ve okuduğun şey null'dan farklıysa devam et. Okuduğun şeyi de al, diğer dosyaya kopyalı. Geri kalanı işte mail metoduyla aynı. Bakın bir copy file, başka bir copy file. Biraz önce ne okumuştuk? Tek bir byte okumuştuk. Bakın burada aslında bir string okuyoruz. Tam bu blok değil yani küçük bir blok ama.
+
+758
+02:39:30,031 --> 02:39:36,271
+Blok'tan kastımız arkadaşlar, Struct'ı düşünün. Yani bir Struct'ın size'ı kadar veri okumaktan bahsedeceğiz.
+
+759
+02:39:42,644 --> 02:39:55,844
+Line.io, fgetString. Tabi bu linenden kastığımız burada, bir string karakter dizisi olarak arkadaşlar. Ne oluyor? Bir karakter dizisi bilgisi okunuyor.
+
+760
+02:39:55,844 --> 02:40:02,844
+Eğer okumak için, yazmak için de fputsitink. Ne kadarlık bir karakter okuyacağımız ve hangi dosyadan okuyacağımız.
+
+761
+02:40:07,156 --> 02:40:21,036
+Okuyacağımız şeyi bellekte nereye yazacağız? Onun başlangıç elemanı, kaç tane karakter okunacağı streamden ve bu da hangi dosyayı okuyacağımızı söyleyen şey.
+
+762
+02:40:23,636 --> 02:40:32,796
+Şimdi bunu okuyunca, niye hocam şurada eksi bir dediniz? Bu şudur arkadaşlar, burada normalde yüz tane.
+
+763
+02:40:33,236 --> 02:40:47,195
+Bunu okuyunca, bunun sonuna otomatik olarak artı backslash 0 ekleniyor. Tamam mı? Onun için 100 tane okuyacaksan 99'unu oku, 100.sü o olsun. Bunun öyle bir özelliği var.
+
+764
+02:40:49,335 --> 02:40:53,936
+After the last character, return to array. Null karakter dediğimiz, yani şu backslash 0.
+
+765
+02:40:57,556 --> 02:41:23,355
+Dolayısıyla buradaki n parametresi şunun size'ından bir tane eksik olay daha az olacak. Eğer dosyanın sonuna ulaştıysak null döndürecek. Yoksa döndüreceği şey, fks'in döndüreceği şey okuduğumuz string'in first argümanını yani string okuyorsak s'yi döndürecektir bize ilk şey.
+
+766
+02:41:25,940 --> 02:41:38,500
+fputstring de bunun tam simetriği diyebiliriz. Ne yapıyor? Bu karakter dizisini bu file streamine okuyor. Bakın burada boyut verilmiyor. Dikkat et.
+
+767
+02:41:42,739 --> 02:42:04,099
+Şimdi gets nedir? Gets de arkadaşlar bir getString. stdin ile karakter okur bir fonksiyondur. Ama bunu nereden okuyor? Dosyadan değil. Otomatik olarak bizim command line'dan okuyor. Okuduğu zaman sonuna backslash 0 ekliyor.
+
+768
+02:42:07,731 --> 02:42:15,011
+Onu öyle kabul ediyormuş. İki fonksiyonu da sonuna bunu karakter ekliyor.
+
+769
+02:42:19,507 --> 02:42:28,108
+Bu Fgets sonlandıran New karakteri, New Line karakterini include eder diyor. Yani kendi içerisinde ayrıca vardır diyor.
+
+770
+02:42:31,067 --> 02:42:46,187
+Bu Fgets'in içerisinde bir specification yapmamız mümkün. Fakat Gets'in içerisinde ne yapıyor? Gets doğrudan New Line veya At The End Of The Karakter bunu görene kadar kendisi sokuyor.
+
+771
+02:42:46,708 --> 02:42:56,788
+İşte bu isim girince Ahmet girdik, ne bileyim Ali girdik. Şu aradaki boşluğu görüp kulavyeden gereken onu çözüm yöntemlerinden bir tanesi bunu kullanmak normalde.
+
+772
+02:42:58,427 --> 02:43:10,708
+Blog IOD arkadaşlar, bir data türünü özellikle sıstıraklarda çok kullanıyoruz. Blog şekilde okumaktır veya blog şekilde yazmaktır. Bunun için kullandığımız fread ve fwrite.
+
+773
+02:43:14,067 --> 02:43:15,007
+Bir pointer.
+
+774
+02:43:16,647 --> 02:43:19,427
+Void pointer. Neden void pointer bu? Sizce?
+
+775
+02:43:32,500 --> 02:43:34,059
+Ne white pointer.
+
+776
+02:43:37,876 --> 02:43:39,716
+Bu Weight Pointer'ı ne için kullanıyorduk?
+
+777
+02:43:49,876 --> 02:44:03,716
+Jenerik bir durum var arkadaşlar. Yani okuyacağımız blok karakter de olabilir, integer dizisi de olabilir. Ondan sonra ne bileyim bir structure dizisi de olabilir veya bir structure elemanı da olabilir. Onun için öyle pointer.
+
+778
+02:44:04,515 --> 02:44:14,536
+Diyoruz ki şu kadarlık bir size'da veri oku, bir defa oku, iki defa oku. Nereden oku? File structure'ından oku, file pointer'ından oku.
+
+779
+02:44:15,540 --> 02:44:30,680
+Size T dediğimiz şey integer olacak. Genellikle biz buralarda arkadaşlar size of'u çok kullanırız. Mesela size of benim structure'ım kadar oku, size of employee kadar oku veya size of integer kadar oku deriz.
+
+780
+02:44:31,420 --> 02:44:40,900
+Ptr dediğimiz okuduktan sonra onu nereye yazacaksın? Onu oku. Yani içeride biraz önce mesela şurada ne yaptık şu örnekte?
+
+781
+02:44:41,683 --> 02:44:55,804
+Bir dizimiz vardı. Burada da aynı benzer şekilde bir elemanımız olacak. Ne, işte şu dediğim şeyde kaç defa okunacak bu elemanlar? Onu söylüyoruz. String'de file pointlarımız.
+
+782
+02:44:58,183 --> 02:45:04,043
+Efrit, kaç defa eleman okunduğunu döndürüyor.
+
+783
+02:45:07,603 --> 02:45:26,023
+Aslında üçüncü argümanla aynı. Eğer herhangi bir hata olmazsa, yani endofile ile gelmekle alakalı, kaç defa okunduğunu döndürür. F-Write da bunun tam mirror'ı dediğimiz simetriyidir. Hemen hemen aynı argümanları alıyor. Bakın, şuraya geri gelelim.
+
+784
+02:45:29,716 --> 02:45:38,876
+Bu pointerdan şu kadar size kadar veriyi al, bir defaya mahsus olmak üzere şuraya yaz. Eğer iki defa yazarsan peş peşe iki veri yazmış olacaksın.
+
+785
+02:45:38,876 --> 02:45:40,876
+Tamam mı?
+
+786
+02:45:42,716 --> 02:45:54,616
+Şimdi block size'ları f-right için şeyi etkilemiyor. I.O. operasyonlarının sayısını etkilemiyor.
+
+787
+02:45:55,572 --> 02:46:13,972
+Örnek olarak buffer size 1024 bytes ise, block size bir read operasyonunda 512 bytes ise, operation sistem bize 1024 byte getirecek ve bunu bellek de store edecek.
+
+788
+02:46:13,972 --> 02:46:22,312
+Fakat ilk 512 byte fread tarafından okunacaktır. Buffer size'ımıza göre bu şey oluyor.
+
+789
+02:46:23,059 --> 02:46:49,259
+Bir sonraki F-Read'de, şimdi bu güzel bir şey, normalde buffer 1024 getirdi duruyor. Sen F-Read yaptın, farklı bir veri görüyorsun. O şu demektir işte. Okuduğun, yani F-Read'in okuduğu veri tamamlanmamış. Yani bufferda belli bir kısım duruyor. İkinci seferde gelecektir. Bu birazcık sıkıntılı, yani bu kontrol edilmesi gereken şey.
+
+790
+02:46:49,620 --> 02:47:12,720
+Evet, bir Binary Mode'da blog okuma örneği. Bakın, blog size'ımızı 512 vermişiz. Bir karakter data şeyi var. Yine aynı örnek. Dosyayı açıyoruz veya açamıyoruz. Diyor ki, blog oku size of data kadar. Size of data dediğimiz bir karakter kadar bakın.
+
+791
+02:47:15,731 --> 02:47:25,671
+Ve bu block size'ı, şuradaki söylediğimiz bir block size'ı 512 demiş. Bakın size of data bir byte değil mi?
+
+792
+02:47:27,492 --> 02:47:41,112
+Bakın bir byte'ı yani 512 defa bir byte oku demektir. File pointer'da. Ve bu okuduğumuz şeyi, block'u, şurada da bir block diye bir şeyimiz var. Nerede block? Akın şurada.
+
+793
+02:47:41,683 --> 02:47:53,023
+Blog size kadar. Bunun içerisinde bu blogu al. Bu size of data kadarki şeyi yine number of read kadar file point rayas.
+
+794
+02:47:55,263 --> 02:48:04,363
+Sonra ne oluyor? En son okunan kısmı tekrar yazmak için şöyle bir şeye ihtiyaç duyuyoruz. Ekstra. Ondan sonra dosyalar kapanıyor.
+
+795
+02:48:08,340 --> 02:48:29,020
+Olabilir arkadaşlar. Okunmasında, yazılmasında herhangi bir hata olduysa input file de bunu buraya ekstra eklemiş. Yoksa demiş ki başarılı olarak döndürür. Bunlar bakın daha çok sıralı erişimle alakalıydı. Bundan itibaren random access var. Burada da genellikle 3 tane fonksiyon var arkadaşlar.
+
+796
+02:48:34,036 --> 02:48:45,576
+Bir tane daha vardı. Ha, Fseek ve Ftel. Bir de Rewind var da onu burada yazmamış. Fseek arkadaşlar bizi istediğimiz yere götürüyor. Ftel de bulunduğumuz yerin pozisyon bilgisini veriyor.
+
+797
+02:48:46,995 --> 02:48:49,896
+Bakın ne oldu? Bu arada random aksesi sağlamış oluyoruz bu sayede.
+
+798
+02:48:51,036 --> 02:48:56,396
+Fseek'in içerisinde dedik ki pointer taşınacak. İşte şu file stream'in pointer'ını veriyoruz.
+
+799
+02:48:58,004 --> 02:49:02,123
+Offset bilgisini veriyoruz ve Vence dediğimiz bir şeyi veriyoruz. Şimdi bunlar ne?
+
+800
+02:49:05,384 --> 02:49:14,844
+Bulunduğumuz yerden örneğin diyoruz ki itibaren bir önceki noktaya git veya bir sonraki noktaya git.
+
+801
+02:49:17,344 --> 02:49:20,024
+Yani bulunduğun yeri de şurada veriyorsun.
+
+802
+02:49:21,424 --> 02:49:21,824
+Tamam mı?
+
+803
+02:49:22,355 --> 02:49:40,536
+FileStream içerisinde bulunduğun yerden artı bir dersen bir sonrakine gider veya işte eksi bir dersen bir öncekine gider. Bir karakter açısından. Bu binary number of bytes, pardon byte olarak da söyleniyor. Eğer text ise sıfır veya işte başka bir şey söyleniyor.
+
+804
+02:49:50,932 --> 02:50:11,132
+Dosyanın başına gönder. Dosyanın başına gönderince dosyanın başından itibaren başındakinden bir sonrakine geç gibi. O zaman o anlamı verir. Current Position dersek, neredeyse onun bir sonrasına bir öncesine git. End of file'e gittiğinde de dosyanın sonundan itibaren bir gezinti yap demektir.
+
+805
+02:50:12,852 --> 02:50:18,711
+FileStruct'ı içerisinde, include std.io içerisinde söylenen tanımlı ifadeler.
+
+806
+02:50:19,952 --> 02:50:27,412
+Örnek olarak şunu yaptığımızda bu FilePositionIndicator'unu nereye gönderiyor?
+
+807
+02:50:28,891 --> 02:50:35,592
+Dosyanın başında aldığı için dosyanın başından itibaren 10 tane sonraya gönderiyor.
+
+808
+02:50:36,592 --> 02:50:37,972
+Bu ne olabilir?
+
+809
+02:50:38,868 --> 02:50:49,668
+Okunacak veya yazılacak bir karakter olabilir. Yani bulunduğun yerdesin. Bundan 10 tane ileriye git. Oraya ulaş şeklinde.
+
+810
+02:50:51,728 --> 02:51:04,427
+Streamler yani 0. pozisyonla başlıyor. Bu 9. karakter arkadaşlar. 10. karakter. Gerçekte 11. karakterin yerine geliyor.
+
+811
+02:51:12,180 --> 02:51:13,299
+Bir saniye arkadaşlar.
+
+812
+02:51:32,691 --> 02:51:57,412
+F-seek'den dönen değer sıfırsa, bizim isteğimiz yerine getirilmiş doğrudur. Sıfırdan farklı bir şeyse bir hata oluşmuş demektir. Bu çeşitli sebeplerden oluyormuş. Örneğin mesela ben setteyken şuraya eksi bir şey yazarsam ne demek? Bunun eksisi yok ki. O bir sıkıntıdır. Veya endteyken bir yazarsam bir sonraki isi yoktur. Şuradaki örnek onunla alakalı.
+
+813
+02:51:59,636 --> 02:52:19,775
+Bu seek end arkadaşlar genellikle kullanılacak şey readonlu faillerde kullanılır. Offset değeri de sıfırdan küçük veya sıfıra eşit olmalı. Aynı şekilde bu sıfırdan büyük veya şey olmalı seek set de.
+
+814
+02:52:26,804 --> 02:52:31,923
+İndikator'ı dosyanın sonuna eklememeye dikkat etmek gerekiyor.
+
+815
+02:52:33,024 --> 02:52:38,684
+Eftel'de arkadaşlar bir parametresiz fonksiyon bize dosyada kaldığımız yeri söylüyor.
+
+816
+02:52:38,684 --> 02:52:44,164
+Genellikle biz bunu şuradaki şey yerine de kullanabiliyoruz.
+
+817
+02:52:44,423 --> 02:52:47,804
+Current Position dedik ya arkadaşlar şurada hazır bir şey.
+
+818
+02:52:48,724 --> 02:52:51,644
+Current yerine Eftel dersek bulunduğun yeri getir demektir.
+
+819
+02:52:53,396 --> 02:53:01,436
+Binary Streamlerde baştan itibaren kaçıncı karakterde olduğumuzun bilgisini return eder.
+
+820
+02:53:02,456 --> 02:53:13,616
+Text Streamlerde de bu implementasyona bağlı olarak nerede kaldığını, nerede olduğunu söyleyen bir fonksiyon çağrısıdır.
+
+821
+02:53:14,576 --> 02:53:16,296
+Kullanacağız bunları örneklerle daha çok.
+
+822
+02:53:17,075 --> 02:53:23,915
+Personal Stat Structure'ımız varmış. Personellere ait bilgilerimiz varmış. Slide numarasını görebiliyor muyum ya?
+
+823
+02:53:27,603 --> 02:53:30,804
+Tam derste kadar bitecek mi acaba? Evet, biter. Güzel.
+
+824
+02:53:37,907 --> 02:53:45,847
+İki grup olduğu için bazen diğer gruba bağlı olmak insanı kısıtlıyor ama ben işte bunu bitirerek o kısıtı kaldıracağım inşallah.
+
+825
+02:53:47,067 --> 02:53:55,128
+Şimdi bu structure'da arkadaşlar veriler random bir şekilde düzenlenmiş.
+
+826
+02:53:56,087 --> 02:53:59,427
+Bunu diyoruz ki isimlerine göre sıralayalım.
+
+827
+02:54:00,268 --> 02:54:02,708
+Yani structure'ın içerisinde isimlerine göre sıralayalım.
+
+828
+02:54:02,708 --> 02:54:04,167
+Ve bunlar da dosyada saklanıyor.
+
+829
+02:54:04,915 --> 02:54:17,795
+Ben size hep derim ya arkadaşlar, işte Dynamic Memory Allocation, Artı, File Operation, Artı, Pointer, Ondan sonra Artı, Function, işte bakın hepsinin bir arada olduğu örnekler artık geliyor.
+
+830
+02:54:19,075 --> 02:54:20,135
+Bunu sıralamak istiyoruz.
+
+831
+02:54:21,895 --> 02:54:25,995
+Şimdi bunu sıralamak için dosya içerisinde sıralamak çok zor bir şey.
+
+832
+02:54:25,995 --> 02:54:32,155
+Onu önce belleğe alacaksın, bellekte sıralayıp ya dosyaya geri yazacaksın. Bununla alakalı bir örnek.
+
+833
+02:54:35,956 --> 02:54:48,216
+Öncelikle demiş ki datamız şu şekilde olacak. Bizim datanın formatının böyle olduğunu söylemiş.
+
+834
+02:54:48,216 --> 02:54:58,775
+Veya bunlara bir indeks verdiğimizi düşünelim. Struct içerisinde okuduk. Struct'ta indekslerimiz var.
+
+835
+02:55:03,951 --> 02:55:27,431
+Dosyada görülmesini isteyeceğiz. Tabii diğer bilgilerde saklanacak şekilde. Diğer bilgiler nasıl saklanacak? Çünkü biz straklarda sıralama yaptık. Sıraladığımız straktı buraya olduğu gibi blok şeklinde yazarsak ne olur? Dosya içerisinde sıralamış görürüz. Bunun için önce straktı tanımlamamız gerekiyor. Bu aslında arkadaşlar bütün bir yazılım projelerinde yapılan şey.
+
+836
+02:55:32,308 --> 02:55:45,708
+İlişkisel şeması sıralanır. Ben de size cumartesi günü bunu anlatacağım. Çünkü fail kullanacağız. Database deyince aklınıza SQL, Oracle bilmem ne sadece gelmez. Biz burada basit bir database'i faillerle oluşturacağız.
+
+837
+02:56:00,211 --> 02:56:25,431
+Bunun Structure'ı veya Class'ı lazım. Object Oriented'da biz buna Class diyeceğiz. Structure'ı diyoruz. Burada database'deki bunun adı Entity'dir. Örneğin bir kitap. Kitabın tanımlanması vardır. Bu hard disk üzerinde saklanır. Biz bunu Object Oriented'da veya Structure Program'ı da Class veya Structure olarak tanımlayıp
+
+838
+02:56:25,456 --> 02:56:50,175
+Bunu RAM üzerinde saklayacağız. Buradaki verileri işleyip RAM'e kaydederek ne yapabiliyoruz? Saklayar işlemlerimizi yapabiliyoruz. Onun için ilk aşama datamızın tanımlanması. İşte kişinin doğum tarihine dair şunlar varmış. Bir de adı varmış, kimlik numarası varmış, doğum tarihi varmış, bu bilgiler varmış. Bunlar benim structure'ım. Bunu zaten çok çok yaptık.
+
+839
+02:56:50,804 --> 02:57:18,443
+Sonra diyorum ki, record'lar diye bir datam var. Data zaten biraz önce bahsettiğimiz şekilde hazır. Ben bu personal stat içerisinden 4 elemanlı, şu an için 4 tane eleman var. 4 eleman olmasaydı, şöyle bir şey olsaydı ne yapacaktım o zaman arkadaşlar? Şunu sorayım size. Kabul edelim ki şu benim dosyam. Bu dosya başlamadan önce şurada mesela 100 diye bir şey yazsaydım.
+
+840
+02:57:19,188 --> 02:57:45,207
+Ve bu da benim format hani dedim ya, nasıl istersek öyle yazacağız. 100 dediğim şey, buradaki eleman sayısını gösterseydi ne yapardık? Giderdik 100 elemanlı bellekte bir yer açardık. Tabi bu running time olacağı için ne kullanacağım? Bu bana bir mallog işaret ediyor. Tamam mı? Bu, o da olur. O zaman da reallog yaparsın. O da olur.
+
+841
+02:57:46,004 --> 02:58:07,703
+Ama şundan bahsetmek istiyorum. Şimdi şu statik bir yaklaşımdır. Sen biliyorsun ki dosyada 5 tane karakter var. O zaman 5 tane karakter varsa veya 100 tane karakter olduğunu biliyorsun. Yani eline dedim ya ben biraz önce size mail gönderirken 800 öğrenci var. Yani kodu yazarken şey yapabilirdim. Şuraya 800 yazardım. 800 tane öğrenci gelecek. Hiç mallukla falan uğraşmazdım.
+
+842
+02:58:08,468 --> 02:58:29,488
+O olabilirdi. Ama o başka sıkıntıları vardı. O kadar belki bellekte peş peşe yer olmayabilir. Veya stek tarafı boş olabilir. Yeteri kadar yer olmayabilir. Onun için bunu yapmak her zaman geçerli çözüm de. Burada tabii dinamik memora allokasyonunu devreden çıkarmak için, örneği biraz daha basit tutmak için böyle yapılmış. Diyor ki bu kadar yer var. Bu kadar kayıt var.
+
+843
+02:58:30,260 --> 02:58:43,320
+O zaman şöyle olsaydı yapacağım şey, önce bunu okuyacaktım, bir satır okuyacaktım veya bir eleman okuyacaktım. Buna göre bir mallokla yer açacaktım. Ondan sonra satır satır veya blok blok okumaya çalışacaktım. Ona da dikkat edelim.
+
+844
+02:58:48,531 --> 02:59:06,351
+Diyoruz ki arkadaşlar, önce yazacakmışız dosya. Birinci kişinin adını yazın, ikinci kişinin adını girin, ondan sonra diğer bilgilerine girin demiş. Bu personal record start dosyasına bu bilgiler yazılıyor. Burada dosyayı oluşturduk. Yani dört kişinin adını yazacağız dedik.
+
+845
+02:59:06,351 --> 02:59:11,831
+Bu niye böyle? Çok rahatsız etmeye başladı beni.
+
+846
+02:59:14,932 --> 02:59:27,272
+Burada sıralama yapmak için her bir elemanın isme göre index bilgisini tutan ayrı bir structure tanımlamış.
+
+847
+02:59:28,372 --> 02:59:28,992
+Diğer şey aynı.
+
+848
+02:59:30,252 --> 02:59:35,872
+Niye? Birinci eleman, ikinci eleman diye böyle bir şey. Burada isme göre sıralama yapıyor.
+
+849
+02:59:37,732 --> 02:59:41,012
+Demiş ki şurada kayıtları getir. Yani kayıt oku.
+
+850
+02:59:42,420 --> 03:00:09,680
+Bunları getirdikten sonra bunları bir neye yazacağım arkadaşlar? Her bir ismi bir indeks elemanı şeyine, structure'ına yazacağım. Ondan sonra dosyayı bakın efreed ile okuyor. Neyi okuyor? Şunun içerisine name len uzunluğunun kadar birer birer şey, name len uzunluğu defa.
+
+851
+03:00:10,131 --> 03:00:31,551
+Bir tane bir birimlik data file'den beri oku. Bunun 19 karakterinin name alanına eriştiğini söylemiş zaten. Sonra okunan bu şeyi ne yapıyor? Name i'den okunanı.
+
+852
+03:00:37,012 --> 03:01:00,512
+Offset alanına bunun size'ını ekliyor. Sonra F-Z ile bir sonraki alana gidiyor. Ne yapacak? Çünkü bir sonraki kaydı okuyacak. Ne kadar offset'i değiştirecek? Bu size offset'ın, yani bu structure'ın size'ı kadar bir sonrakine git. Başlasın, bir sonrakine git demek istiyor.
+
+853
+03:01:05,492 --> 03:01:29,951
+Sonra bir şey daha okumuş. Burada ilk karakteri okudu. Sonra ikinci, üçüncü devam edip gidiyor. Sonra return counter kaç tane karakter okuduğunu söylüyor. Ondan sonra arkadaşlar artık bu okuduğumuz veriler nerede? RAM içerisinde. Yani structure içerisinde. Ne yapacağız? Bir sıralama algoritmasıyla bunları sıralıyoruz.
+
+854
+03:01:30,611 --> 03:01:51,771
+STR, CMP'de de burada sıralama işlemi var. Sıraladıktan sonra isterseniz artan sıralama, ister azalan sıralama. Bakın bir Compare Function tanımlamış. Ona göre QuickSort'u çalıştırmış burada. Sonra bu sıralanmış veriyi dosyaya yazdırıyoruz.
+
+855
+03:01:53,012 --> 03:02:00,472
+Diyoruz ki dosyanın başına artık geldiğin baştan itibaren yazacak da bunu yine aynı belli formatta yazacak.
+
+856
+03:02:02,972 --> 03:02:07,972
+Pardon. Burada ekrana yazdırıyoruz arkadaşlar dosyadan okuduğumuz şeyleri.
+
+857
+03:02:09,012 --> 03:02:16,292
+Dosyanın başından itibaren birer birer blok blok alıp ekrana yazdırıyor. Ondan sonra da dosyaya yazacak.
+
+858
+03:02:17,363 --> 03:02:43,283
+Dosyaya yazacak mı? Yok, yazmıyormuş. Direkt ekrana yazıyormuş. Keşke dosyaya da yazsaydık. Bu benim örneğim değil. Bunun bir sonraki versiyonunda dosyaya yazan şeyini de yaparız arkadaşlar. Çünkü artık elimde sıralanmış veri olduğu için, hatta Structure sıralama örneğini bununla birleştirerek, ada göre, soya da göre bunu çeşitlendirebiliriz. Fonksiyon pointerlarını da kullanarak. Ne oluyor? Sıralanmış bir şeyi ekrana yazdırıyor.
+
+859
+03:02:43,744 --> 03:02:46,304
+İstersek dosyada yazdırabilirdik.
+
+860
+03:02:48,584 --> 03:03:02,384
+Evet, bu da Random Access File ile alakalı şey. Şimdi dosya yönetim fonksiyonları var. Ne demek dosya yönetim? Dosyayı silebilirsiniz C içerisinden. Yeni isim verebilirsiniz. Geçici bir binary file oluşturabilirsiniz.
+
+861
+03:03:04,147 --> 03:03:25,067
+Bu temporary name olarak bir string oluşturuyorsunuz. Dosya şeyine temporary file'a bir isim vermek için. Bunun için arkadaşlar, STD.io içerisinde bu dosya management ile alakalı daha birçok örnek var. Diyelim, iki dakikala bitirelim. Şimdi bugün saat beşte...
+
+862
+03:03:25,523 --> 03:03:45,643
+Dosya operasyonlarıyla alakalı şey yok. Yine Linked List ile ve Structure ile alakalı örnek yapacak arkadaşlar. Şu anlattıklarımın özetleri, bunların daha geniş örnekleri için cumartesi günü ve projenin en çok lazım olan mantığı ve işlemleri için cumartesi günü dersi kaçırmayın derim.
+
+863
+03:03:48,884 --> 03:04:09,684
+Proje için gerekli bir şey değil ama projede size yardımcı olacak, mantığını anlamanız için yardımcı olacak bir şey. Katılamazsanız da sonradan dinleyin. Linkini bir şekilde paylaşırız. Sormak istediğiniz bir şey yoksa hepinize iyi günler dilerim. Saat 2'de bazılarınızla, saat 5'te yine hepinizle görüşmek üzere. İyi günler hepiniz arkadaşlar.
+
+864
+03:04:13,780 --> 03:04:20,219
+İki arkadaşımı hemen ben açıyorum. Diğer Zoom hesabıma oradan katılın arkadaşlar.
