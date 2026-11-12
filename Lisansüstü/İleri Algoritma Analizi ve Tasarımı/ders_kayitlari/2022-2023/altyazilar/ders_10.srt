@@ -1,0 +1,2435 @@
+1
+00:00:01,012 --> 00:00:03,012
+Derdiğim yerde böyle oldu yani.
+
+2
+00:00:11,220 --> 00:00:16,380
+Merhabalar arkadaşlar. Kusura bakmayın. Herkesten öncelikle tekrar üzülmüyorum gecikme için.
+
+3
+00:00:18,379 --> 00:00:22,520
+Helaf edeceğiz bir şekilde. Kusura bakmayın.
+
+4
+00:00:24,399 --> 00:00:28,020
+Bakalım zaten şu an 8 kişi ve artıyor.
+
+5
+00:00:30,579 --> 00:00:33,719
+Sizler görüyor musunuz arkadaşlar? Işıkları bir kapatayım.
+
+6
+00:01:05,236 --> 00:01:06,276
+Hadi bakalım.
+
+7
+00:01:19,219 --> 00:01:20,819
+Neyse, bu alan boşsa artık.
+
+8
+00:01:20,819 --> 00:01:21,579
+Şöyle yapacağız.
+
+9
+00:01:29,459 --> 00:01:30,347
+Evet.
+
+10
+00:01:42,579 --> 00:01:55,099
+Evet arkadaşlar, sınıftaki arkadaşlarımza teşekkür ediyorum geldikleri için. Onlarla küçük bir muhabbet ettik. Sınavlarla alakalı konuştuk. Daha sınavlarınıza hiç bakamadım ama şöyle bir hızlıca göz atma şansım oldu.
+
+11
+00:01:56,939 --> 00:02:09,099
+Soruları yani olduklarından zor olduğunu düşündüğünüzü düşündüm. O yüzden bir çözmek istedim size hızlıca. Sonra benim notum niye düşük geldi diye sormayın kendinize diye.
+
+12
+00:02:09,747 --> 00:02:26,627
+Ön almak istiyorum. Şimdi gençler, şu ekranı paylaşayım öncelikle. Microsoft değil. Whiteboard açılmadım ya.
+
+13
+00:02:45,651 --> 00:02:51,491
+Geldim ekran gençler. Bunların hepsini anlatacağım size ama bakayım.
+
+14
+00:03:09,364 --> 00:03:10,364
+Şimdi...
+
+15
+00:03:15,572 --> 00:03:43,172
+Neydi sorularımız? Bir giriş yapalım bakalım. Birincisi şöyle bir sorumuz vardı. O kim size soruyor? Diyordu ki, aşağı yukarı yani şöyle diyordu. Çalışma zamanı en üzeri logaritma ve tabanında A olan bir Recurrence Relation oluşturunuz demiştim. Bunun türesini çizdiniz. Her seviyede gerçeklenecek işlem sayısını ve toplam işlem sayısını bulunuz demiştim.
+
+16
+00:03:43,699 --> 00:03:56,719
+Şimdi bunu yaparken, Recurrence Relation'ın görüntüsünün yine Master Teoreme göre şöyle olduğunu yazmışsınız çoğunuz.
+
+17
+00:03:57,747 --> 00:04:20,627
+Artı o en üzeri d olacak şekilde. Burada biliyorsunuz bir fn fonksiyonunu birleştirmek için kullanıyorduk. Bunun karmaşıklığı d olmak üzere kaç parçaya böldüğümüz ve kaç tanesiyle ilgilendiğimiz şeklinde bunu ifade ediyorduk. Şimdi bunu böyle yazmışsınız. Ondan sonra ne yapmam? Görünmüyor mu? Anlamadım.
+
+18
+00:04:23,987 --> 00:04:25,987
+Yükseler Mühendisliği, İleri Algoritma Analizi.
+
+19
+00:04:25,987 --> 00:04:28,987
+Yaklaştırmam mı istiyorsun? Tamam.
+
+20
+00:04:30,987 --> 00:04:34,987
+Şöyle. Oldu mu? Niye küçüldüm yine?
+
+21
+00:04:34,987 --> 00:04:43,987
+Hop. Okey. Şimdi, burada sizin şunu yapmanızı bekliyorum. Hani bu master teoremde kurallar vardı ya,
+
+22
+00:04:43,987 --> 00:04:49,987
+A'nın, B'nin ve D'nin durumlarına göre farklı karmaşıklık sonuçları alıyorduk.
+
+23
+00:04:50,483 --> 00:05:16,264
+Bunlar üzerinde hangisi şunu veriyorsa o seçeneği uygulamanız gerekiyordu. O da şuydu. A'nın B üzeri D olduğu durumda bizim karmaşıklığımız bunu veriyordu. Dolayısıyla sizin bu eşitliği sağlayacak, eşitsizliği sağlayacak bir A, bir B, bir de D seçmeniz ve ona göre bir Recurition Version yazmanız gerekiyordu. Herkes için bu cevap farklı olabilir. Ben mesela şöyle bir şey yazdım. Artı bir.
+
+24
+00:05:17,204 --> 00:05:22,324
+Bunu yazdım. Burada ne? A üç, B eşittir üç, D de sıfır.
+
+25
+00:05:22,324 --> 00:05:24,364
+Bu ağacını çizmek istedim.
+
+26
+00:05:24,744 --> 00:05:25,884
+Evet, ağacını çizmek istedim.
+
+27
+00:05:28,244 --> 00:05:32,235
+İki yapabilirsiniz, aynen. Ama bir kısım arkadaşlarınız...
+
+28
+00:05:32,276 --> 00:05:52,316
+Şimdi tam hatırlamıyorum ama bunu hiç real sayılar kullanmadan değişkenlerle çizmeye çalışmış. Yani A yazmış, B tane var burada falan diye böyle yazmış. Onları, yani görüntü itibariyle A'ca benzese de kabul edemiyorum onları, o cevapları. O yüzden bu şekilde anlatmak istiyorum size.
+
+29
+00:05:58,995 --> 00:06:11,596
+3 parça için tekrar bu fonksiyonu çalıştıracak demek. Doğru mu? Sonra her biri yine 3'e bölecek. N bölü 9 için çalıştırılacak demek. Bu böyle gidecek.
+
+30
+00:06:11,596 --> 00:06:23,307
+Her adımda, her function call'da bir tane proses var. Recursive call'lar dışında. Dolayısıyla ilkinde bir tane işlem var. İkincisinde...
+
+31
+00:06:23,379 --> 00:06:41,180
+Üç tane işlem var. Üçüncüsünde üçün karesi kadar işlem var ve bu böyle gidiyor. Bu nereye kadar gidiyor? Bu ağaç sonlanacak. Logaritmik olarak, Logaritma üç tabanında n dediğimizde artık ağacınız sonlanacak. Dolayısıyla şöyle bir eşitlik yazabilirsiniz. Üç üzeri i.
+
+32
+00:06:42,644 --> 00:06:53,444
+Bunu açıp işlemleri yapmanızı beklemiyorum. Bu şekilde yazdığınız vakit benim için yeterli. Arkadaşlarınız iki üzerinden yapmışlar. Öyle işlem kolaylığı açısından daha rahat olur. Onu da tabii ki kabul ederim.
+
+33
+00:06:54,084 --> 00:06:59,764
+Neticede sizden sadece buradaki çağrışım benim için önemliydi. Master Teoremi tersten uygulamamızı beklemişti.
+
+34
+00:07:09,651 --> 00:07:31,471
+2T n-1 artı 2. Böyle bir relation verilmiş. Bunun induction ile Tn, O n olup olmadığını araştırın demiştim. Yani burada aslında bir assumption yapıyorsunuz ve bu assumption'ın true olup olmadığını prove etmeniz gerekiyor.
+
+35
+00:07:36,692 --> 00:07:52,692
+2T, n-1 artı 2. Bu benim tekrar yazmış olduğum. Asıl relation'ım. Aslında benim şumu prove etmem gerekiyor. Ve bunu şu ifadenin doğruluğunu...
+
+36
+00:07:53,504 --> 00:08:21,463
+Siyum ederek kurum etmem gerekiyor. Bir sonraki, bir küçüğün içinde yeterli, geçerli olduğunu. Dolayısıyla şuradaki ifade yerine bunu yazarak işlemlerime devam ettiriyordum. Burada küçüktür olduğu için şurada küçük eşittire dönüyordu. 2 çarpı c üzeri en eksi bir artı iki. Nasıl? Çıkmıyor. Evet. Oren değil bu. Aynen. Oren değil. Bu neye eşit?
+
+37
+00:08:21,504 --> 00:08:30,504
+2cn-2cn olduğunu söylemiş bazı arkadaşlarımız. Bunu da şöyle yazabilirim.
+
+38
+00:08:30,604 --> 00:08:42,703
+cn-2c-2 yazabilirim. Peki, şimdi ben ne yapıyordum? Şuna benzetmeye çalışıyorum buradaki relation'ımı.
+
+39
+00:08:42,703 --> 00:08:45,703
+Diyebilirim ki, şöyle yazabilirim.
+
+40
+00:08:47,379 --> 00:09:02,519
+Cn-Cn artı 2c eksi 2. Böyle yaparsam, bunun tutabilmesi için, bu eşitsizliğin tutabilmesi için ne olması gerekiyor?
+
+41
+00:09:11,187 --> 00:09:24,807
+Pozitif olması gerekiyor değil mi? Ki bu eşitlik tutabilsin. Bunun pozitif olabilmesi de zaten C'nin pozitif olmak zorunda olduğunu biliyoruz. Bunun pozitif olabilmesi şu keyif için ancak.
+
+42
+00:09:25,683 --> 00:09:42,144
+Yani bu demektir ki enin ikiden küçük olduğu durumlarda OEN gibi görünmekle birlikte biz biliyorsunuz enin büyük olduğu durumlar için araştırıyoruz. Enin büyük olduğu durumlarda bu recurrence relation OEN'de çözülemiyor. Dolayısıyla bu açıklamayı yapmamız benim için yeterli olacaktı.
+
+43
+00:09:47,668 --> 00:10:10,107
+İnşallah. İnşallah. Niyet önemli. Her şeyin başı iyi niyet. Şimdi, bunda geçtim. Sorusu olan var mı? Hiç sohbete de bakmadım. Var mı soru? O kadar alıştığım ki. Peki. Niye bir şey olmadı ya?
+
+44
+00:10:10,803 --> 00:10:30,003
+Peki, şimdi bu amortize post sorusuna gelince, bu amortize post sorusu size gösterdiğim türlü türlü amortizeyşin hesabı için kullanılacak yöntemlerden herhangi birini kullanmanızı gerektirecek bir soru değildi. Amortize postun tanımını sadece düşünmeniz gerekiyordu.
+
+45
+00:10:33,076 --> 00:11:01,076
+Bir dizi işlemden oluşan en adet demişim. Bir serimiz var. İ'nin ikinin tam kılveti olan değerleri için maliyet iyiyken aksi takdirde bir oluyor demişim. Amortize post nedir? Şimdi amortize post hesapladığımız zaman aslında ne yapıyorduk biz? Bir tek işlem yerine bir dizi işlemde toplam maliyetleri hesaplayıp ene bölüyorduk. Ortalama işlem başına düşen amortize postu bulabilmek için. Mesela bir stek varsa poplar ve pushlardan oluşan.
+
+46
+00:11:01,076 --> 00:11:27,076
+Bir işlem dizisi gibi. Burada zaten işlem dizisindeki her bir elemanın maliyeti size verilmiş. Sizin tek yapmanız gereken bunları bir formül içerisinde birleştirmek. Ki ben amortize postla alakalı bir örnek çözerken bunu bir alt problem olarak çözdüm bu arada. Aynen duruyor bu notlarda bir yerde. Sadece şunu yazmanız gerekiyordu. Bakın şöyle. Diyecektiniz ki.
+
+47
+00:11:34,163 --> 00:11:43,183
+Şimdi şöyle diyebilirim değil mi? Amortize Cos, ikinin kuvveti olan, ikinin tam kuvveti olan değerler için maliyet iyi, diğerleri için de birmiş ya.
+
+48
+00:11:43,843 --> 00:11:59,923
+Yani elemanımız, yani ilgilendiğimiz eleman, logaritmik en de, ikinin kuvveti üzerinden gidiyorum ya, logaritmik en ait bir elemansı o zaman bunun maliyeti en olacak, aksi takdirde bir olacak.
+
+49
+00:12:01,748 --> 00:12:05,748
+Elemanı değilse. Aslında bunu şöyle yazmak daha mantıklı olacak.
+
+50
+00:12:07,128 --> 00:12:12,728
+İ giderken, buradaki indisim benim. Dizimin içerisindeki. İşlem dizimindeki indisi.
+
+51
+00:12:13,308 --> 00:12:23,268
+Logaritma N'de 2 üzeri İ artı İ birken, logaritmik N'de 1. Bunların toplamı.
+
+52
+00:12:23,268 --> 00:12:28,148
+Çünkü şu, İ bir olduğunda 2 üzeri 1, İ iki olduğunda 2 üzeri 2.
+
+53
+00:12:28,607 --> 00:12:54,227
+Şuraya kadar gideceği için. Dolayısıyla bunun toplamı iki üzeri logaritma n artı bir eksi bir bölü iki eksi bir artı n. Bu tabii şu formülden dolayı ama bu formülü de ben slide'larda ilk başta vermiştim. O yüzden buna erişim sizin açınızdan zaman kaybı olmaz diye düşünmüştüm.
+
+54
+00:12:54,899 --> 00:13:16,720
+Şöyle bu formülden dolayı. Bunu da ilerlettiğiniz zaman bu işte yaklaşık iki en artı en eksi bir gibi bir şeye denk geliyor. Bu da üç ene denk geliyor ki zaten benim istediğim bunun üç en ya da beş ene olması değil. Benim istediğim bunun enin mertebesi cinsinden sizin cevabınızdan en kare mi gibi. Biliyorsunuz kat sayıları zaten ignore ediyoruz.
+
+55
+00:13:21,299 --> 00:13:23,340
+Söyleyerek bu çözümü bitireceğiz.
+
+56
+00:13:26,120 --> 00:13:32,919
+Şimdi bir de şu soru vardı. Sonuncu soruyu çözdünüz herhalde değil mi hepiniz?
+
+57
+00:13:33,879 --> 00:13:35,320
+CocoHash ile ilgili olanı.
+
+58
+00:13:35,320 --> 00:13:37,820
+Sağ ol.
+
+59
+00:13:54,100 --> 00:14:18,300
+Tamam. Pardon? Hepsi mi? O zaman sen şey yap, döngüye girdi. Girdi mi döngüye? Hepsi bir sıfır var. Nasıl?
+
+60
+00:14:19,124 --> 00:14:27,324
+Ama ben baktım numaralarınızda ya, çok problem olmayacak gibi gelmiştim. Neyse, eğer zaten döngüye giriyorsa, biliyorsunuz bir döngü oluşma ihtimali o zaman yazacak mıyız oraya onu?
+
+61
+00:14:27,324 --> 00:14:28,124
+Yok, yok.
+
+62
+00:14:30,124 --> 00:14:31,124
+Bu görev.
+
+63
+00:14:34,124 --> 00:14:36,124
+Ama yanlış değil mi sonuçta?
+
+64
+00:14:36,124 --> 00:14:39,124
+Ne yapalım, o zaman sorun yok. Tamam.
+
+65
+00:14:39,124 --> 00:14:45,124
+Şimdi arkadaşlar, en adet key'in tutulduğu bir hash tabloda, slot sayısı...
+
+66
+00:14:46,772 --> 00:14:51,611
+Neymiş bakalım? Yani çok kritik olmamakla birlikte. İki çarpı enmiş.
+
+67
+00:14:52,812 --> 00:14:54,192
+Uniform dağılım varmış.
+
+68
+00:14:55,711 --> 00:14:57,792
+Hiç kollajın olmama olasılığı neymiş?
+
+69
+00:14:57,792 --> 00:15:04,792
+Bunu da ben size aslında yine bir örneğin altında çözmüştüm.
+
+70
+00:15:05,292 --> 00:15:05,711
+Efendim?
+
+71
+00:15:08,211 --> 00:15:09,432
+Yapmayın ya.
+
+72
+00:15:10,611 --> 00:15:12,272
+Bu genel şey mi böyle?
+
+73
+00:15:12,864 --> 00:15:34,884
+Hocaya kendini kötü hissettirme. Ben bir tane daha yüksek lisans dersi vermiştim ama senler önce. Uzun süreç yüksek lisans dersi vermiyorum. Siz daha yetişkin bireylersiniz ve meslektaşımsınız. Lisans çocuklarıyla iletişimim farklı oluyor tabii. Sizde çok şey yapamadım. Meslektaş olduğumuz için.
+
+74
+00:15:36,148 --> 00:15:51,528
+Şunu çokça yaptık hatırlıyorsanız. Bir elimizde en adet key varken bunun ikilileri kollijin oluşturuyor. Dolayısıyla kaç farklı ikili olabilir? Önce bunu bulmanız gerekiyor. Bunu da zaten enin ikili kombinasyonlu formülü buydu. Farklı çiftlerin sayısı bu.
+
+75
+00:15:51,528 --> 00:15:57,348
+Şimdi M tablodaki slot sayım. Tablodaki slot sayım Mken.
+
+76
+00:15:58,227 --> 00:16:11,847
+Benim bir çiftin collusion olma olasılığını bir bölüm olarak belirliyordum. Bunu da hatırlıyorsunuz. Yani bu bir çiftin collusion oluşturma durumu.
+
+77
+00:16:15,604 --> 00:16:40,624
+Şimdi peki kolajın oluşturmaması ne o zaman? Bir çiftin kolajın oluşturmaması. O da şu. Değil mi? O da bu. Şimdi bu durumda sizin kaç tane çiftiniz var? Bu kadar çiftiniz var. Bu çiftlerinizin her birinin kolajın oluşturmaması lazım. Kolajın oluşturma, çarpı kolajın oluşturma, çarpı kolajın oluşturma. Bundan şu kadar tane var. Dolayısıyla sizin totalde eşitsizliğiniz, eşitliğiniz şuna dönüyor.
+
+78
+00:16:40,624 --> 00:16:42,464
+Bu.
+
+79
+00:16:43,412 --> 00:16:57,412
+Aaaa, şurada düşünmek, şurada eklemiştim. Birinci, benim yerleştirdiğiniz zaman kurduğum oluşturma olası. Bana bir de ikinci birisi. Oraya başkası, ikinci birisi de orta oluşturma olası.
+
+80
+00:16:57,412 --> 00:17:05,292
+Öniversite çarpma çarpma çarpma çarpma. Tamam. Tamam, güzel bakarız.
+
+81
+00:17:05,587 --> 00:17:14,067
+Değişik. Tamam. Şimdi burada emin iki em olarak verilmiş. Herhangi birine em cinsinden ya da en cinsinden yazın diye dememişim.
+
+82
+00:17:14,807 --> 00:17:28,807
+Bunu yerine koyup yerleştirsiniz zaten. Bu sorular böyle. Koko'yu sorusunu çözmeme gerek var mı? Gençler. Şu Koko Heşe. Yok yok. O kalsın.
+
+83
+00:17:29,940 --> 00:17:37,940
+Tamam, o zaman şimdi yeni konumuza geçelim. Herkes için okeyse. Bugün katılımcı sayımız niye 12? Dersi mi bırakıyorsunuz yoksa?
+
+84
+00:17:41,559 --> 00:17:44,159
+Öyle bir haber var mı WhatsApp gruplarında?
+
+85
+00:17:47,099 --> 00:17:49,420
+Ama az olacak gerçekten şeyse.
+
+86
+00:17:51,983 --> 00:17:56,983
+Nasıl? Onu şimdi benden... O kadar ileri görüşü değilim ama...
+
+87
+00:18:00,983 --> 00:18:04,983
+Şimdi normalde final...
+
+88
+00:18:06,548 --> 00:18:25,148
+Yılıçı değerlendirme atmış, final kırk ya. Finali zaten yüzde yapacağız. Final için o kırk, onda bir şey yok. Diğerlerine bir vizeniz var, bir de şeyiniz var. Yılıçı değerlendirme için yapacaksınız, sunum yapacaksınız. Ben onları en kötü ihtimalle otuza yetmişken de aralarında düşünüyorum.
+
+89
+00:18:33,395 --> 00:18:55,155
+Kendim yapacağım. Ama şimdi o biraz şeye bağlı oluyor tabii ki. Herkesin ne yaptığına bağlı oluyor. Onu ben notların ortalamasını görmeden ben de bilmiyorum. Ben şey yapmıyorum ama yani hani benim kafamda 90'la 100 arası A'dır. Demiyorum. Yok ben esnek.
+
+90
+00:18:59,124 --> 00:19:19,464
+Tabii, bu konuyu açıklaka oluşturma fırsatı verdiğince teşekkür ederim. Daha esnek bir notlandırma düşünüyorum. Tamam mı? Şimdi şeye başlayalım mı konuya biraz? Şimdi şöyle arkadaşlar, bir tane sohbet et. İkinci vize olacak demedim.
+
+91
+00:19:21,587 --> 00:19:42,168
+Şöyle dedim, yıl içi ortalamalar dedim. Yıl içi değerlendirme iki parçalı olmuş oluyor. Biri vizeniz ki yaptık. Diğeri önümüzdeki haftalarda yapacağınız sunumumuz olacak. Onu ikinci vize gibi düşünebilirsiniz değerlendirme açısından ama 30'da 70 gibi bir şey düşünüyorum. Birinci vizenin ağırlığını düşüp tutacak şekilde.
+
+92
+00:19:42,168 --> 00:19:44,248
+Şimdi.
+
+93
+00:19:48,468 --> 00:19:55,488
+Ha, haklısın. Haklısın. Not öğrencinin olması güzel bir şey ya. Özlemişim, öğrendin.
+
+94
+00:19:59,067 --> 00:20:00,468
+Teşekkür ederim.
+
+95
+00:20:03,528 --> 00:20:06,468
+Evet, [öğrenci] sağ olsun geliyor sürekli.
+
+96
+00:20:08,468 --> 00:20:14,107
+Şimdi arkadaşlar, bugün ne işleyeceğiz?
+
+97
+00:20:15,124 --> 00:20:29,683
+Bugün Binary Search Tree'den bir hatırlatarak başlayacağım. Zaten çoğuca bildiğiniz bir şey. Ama genellikle Insert ve Search operasyonlarını görüyor oluyorsunuz. Delation'dan da bahsedeceğim. Sonra da Binary Search Tree'nin kötü tarafı ne?
+
+98
+00:20:30,132 --> 00:20:39,732
+Normalde balans bir yapısı olması gerekirken, linkli listeye dönüşebiliyor. Eğer sorted bir şekilde gelirse elemanlarınız o zaman da OEN'e kadar çıkıyor bunun karmaşıklığı.
+
+99
+00:20:39,732 --> 00:20:45,892
+Dolayısıyla bunu ortadan kaldırabilmek için kendini modifiye eden hep balans kalan tree çeşitleri var.
+
+100
+00:20:45,892 --> 00:20:52,532
+Aslında hedefim onlara anlatmak ama bir background oluşması için Barnard Sour Tree'den başlayarak anlatacağım.
+
+101
+00:20:56,884 --> 00:20:58,380
+Şimdi...
+
+102
+00:21:10,420 --> 00:21:12,059
+Yeni sınavç.
+
+103
+00:21:31,380 --> 00:21:36,019
+Görünebiliyor mu? Görünüyor mu? Görünmüyor mu?
+
+104
+00:21:43,892 --> 00:21:54,652
+Banyo Search Deli'ler, biliyorsunuz Search, Minimum Bulma, Maksimum Bulma, Redester, Sussure gibi Insert, Delay bu tarz işlemleri destekleyen yapılar.
+
+105
+00:21:55,712 --> 00:22:00,192
+Karmaşıklıkları, derinlikleriyle orantılı yani Hide dediğimiz yükseklikleriyle orantılı.
+
+106
+00:22:06,960 --> 00:22:11,960
+Böyle oluyor biliyorsunuz ikiye dallanarak gittiği için çünkü her bir nodun iki tane çocuğu var.
+
+107
+00:22:11,960 --> 00:22:23,960
+Eğer ama change şeklinde bir yapı oluşturacak gibi elemanlarınız geldiyse o zaman o on'a doğru giden bir kamışlık var. Linkli listeye dönüşüyor çünkü.
+
+108
+00:22:23,960 --> 00:22:30,960
+Rahat gele oluşturulmuş ama bir binary search direğiniz varsa şunu görmeye bekliyoruz.
+
+109
+00:22:31,476 --> 00:22:47,056
+Şimdi binary search diri de notların birtakım özellikleri var. Taşımak zorunda olduğu. Nedir bu özellikler? Mesela şöyle küçük bir binary search diri örneği üzerinden. Aynen hatırlayalım.
+
+110
+00:22:58,579 --> 00:23:10,559
+Burada bir aynı elemanı olan bir binary tree örneği vermişim ben. Normalde distinct olduğunu düşünerek çözeceğiz örnekleri ama aynı elemanların olduğu durumlar da var. Onları nasıl handle edebiliriz? Ondan da bahsedeceğim.
+
+111
+00:23:11,720 --> 00:23:23,440
+Şimdi önemli olan şey şu. Bir X nodu varken Y nodu onun solundaki bir alt ağaçtaysa eğer biliyorsunuz şu eşitlik sağlanıyor.
+
+112
+00:23:24,147 --> 00:23:26,288
+Değilse böyle oluyor.
+
+113
+00:23:28,647 --> 00:23:40,007
+Yani temel olarak sağ tarafındaki bir node için sağ taraftaki bir node ilgili parent'dan büyük, sol taraftaki ise onun parent'ından küçük olacak şekilde ikili dallanma ile ilerleyen bir yapısı var.
+
+114
+00:23:40,548 --> 00:23:48,007
+Bunu implement ederken, tabii pointer'lar üzerinden yine örneğin C ile implement ediyorsanız point edecekler bunlar birbirlerine.
+
+115
+00:23:51,539 --> 00:24:07,699
+O nodun kullandığınız dile bağlı olarak parent'ını, left'ini ve right'ını işaretlerini oluşturmanız gerekiyor. Yani her nod birbirine bağlı oluyor.
+
+116
+00:24:08,439 --> 00:24:14,539
+Yedinin right'ı sekiz, böyle bir bağlantı var. Sekiz'in parent'ı da yedi, çift taraflı bir bağlantı var. Çünkü...
+
+117
+00:24:15,412 --> 00:24:34,072
+Search ederken yani normalde root'dan aşağıya doğru gitmek gerektiği gibi delete işlemi örneği yapacaksınız. Leaplerden root'a doğru gitmeniz gereken durumlar da olacak. Bir nodun ilgili parent'ın sağ mı yoksa sol mu elemanı olduğunu check etmeniz gereken durumlar olacak. Dolayısıyla çift taraflı bir bağlantı burada kullanışlı oluyor.
+
+118
+00:24:34,072 --> 00:24:37,472
+Şimdi Search ile başlayalım.
+
+119
+00:24:42,036 --> 00:24:44,476
+Şöyle küçük bir psodokod yazalım bununla ilgili.
+
+120
+00:25:01,491 --> 00:25:04,432
+Baştan başlıyorsunuz search etmeye.
+
+121
+00:25:09,971 --> 00:25:26,051
+Eğer bir null pointer ise, aradığınız yani root'tan başlıyorsanız, root'u verdiyseniz eğer bir null pointer ile karşılaşıyorsanız ya da bulunduğunuz modun key'yi, gerçekten aradığınız keyword ise o zaman ilgili notu zaten döndüreceksiniz.
+
+122
+00:25:27,331 --> 00:25:32,651
+Ama eğer öyle değilse o zaman dallanma yönünüzü belirlemeniz gerekiyor.
+
+123
+00:25:33,203 --> 00:25:43,443
+Eğer aradığınız eleman bulunduğunuz nottan küçük bir elemansı o zaman sol tarafa doğru gitmeniz gerekiyor. Bunu recursive bir şekilde çözüyor bu Pisa do kod.
+
+124
+00:25:53,044 --> 00:26:06,124
+Dolayısıyla Solu bu sefer devam ettiğiniz nod olarak. Soldaki nodu vereceksiniz ve yine ki'yi vereceksiniz. Aksi takdirde sağdaki nodla devam ediyorsunuz.
+
+125
+00:26:19,508 --> 00:26:34,288
+Dolayısıyla bu Recursive Solution'da, bunu Sequential'da yapabilirsiniz. Burada önemli olan tree'nizin şuradaki yük derinliği, height'ı yani h. Dolayısıyla karmaşıklığın böyle olduğunu biliyoruz. Değil mi?
+
+126
+00:26:34,288 --> 00:26:46,087
+Tamam. Şimdi bir hatırlamış olduk. En yaygın kullanımını. Var mı soru? Geçiyorum buraya.
+
+127
+00:26:50,708 --> 00:26:51,388
+Peki ya.
+
+128
+00:27:00,243 --> 00:27:01,099
+Hoşçakalın.
+
+129
+00:27:09,844 --> 00:27:10,724
+Çin Dian.
+
+130
+00:27:15,635 --> 00:27:17,556
+Minimum ve Maksimum.
+
+131
+00:27:21,395 --> 00:27:26,516
+İkisini birden yazmaya gerek yok ama sadece bir üzerinden konuşalım.
+
+132
+00:27:29,076 --> 00:27:37,635
+X ile root'u x olarak verilmiş bir tree de, yani bu bir subtree de olabilir. Minimumu bulmak istediğiniz vakit.
+
+133
+00:27:41,587 --> 00:27:47,587
+Minimum olanlar sol tarafta olduğu için, sollar küçük olduğu için sol üzerinden hareket ediyorsunuz.
+
+134
+00:27:49,687 --> 00:27:53,227
+Ve bir nal ile karşılaşmadığınız sürece sola doğru gideceksiniz.
+
+135
+00:27:59,508 --> 00:28:14,908
+Return X. Eğer maksimum bulacaksanız, o zaman şurası neye dönüşecek? X nokta right'ı bu sefer kontrol edeceksiniz. Ve tabii ki X eşittir, X nokta right olacak. O zaman da sağ nokta ilerlemeye devam edeceksiniz.
+
+136
+00:28:14,908 --> 00:28:26,228
+Yine bunların ikisinin de ağacın derinliği boyunca ilerleme şansınız olduğu için, height ağacın yüksekliği olmak üzere o age olacak.
+
+137
+00:28:27,412 --> 00:28:38,331
+Karmaşıklı. Şimdi Successor ve Predaster'de iki tane kavram var. Bu iki kavram bize tride silme işlemi yapmak istediğimiz zaman önemli bizim için.
+
+138
+00:28:38,951 --> 00:28:43,311
+Lisansta aldığınız derslerde silme görmüş müydünüz? Okey, o iyi, tamam.
+
+139
+00:28:47,923 --> 00:29:05,864
+Peki, şimdi nasıl? Çok temel, aynen. Şimdi bir hatırlayalım. Saksesor neydi? Şimdi bir nodun saksesorı x'den büyük yani x nodu için x'den büyük en küçük nod aslında.
+
+140
+00:29:06,579 --> 00:29:28,559
+Keyler birbirinden farklı olduğunda. Burada karşılaştırdığımız şey, tüm bu benim gösterimlerimde nodun içinde bir, yani dairen içinde bir sayı görüyorsunuz. O aslında nodun key'i biliyorsunuz yani. Nodun kendisi değil. Ama anlaşılması kolay olsun diye. Bunu böyle gösteriyorum. Şöyle. Vitriğimiz var.
+
+141
+00:29:38,387 --> 00:30:05,387
+Şimdi burada 16 için örneğin, bunun saksesor'ı ne? X'den büyük en küçük not yani 17. Dolayısıyla bu bilgiyi niçin kullanıyoruz? 16'yı silmek istediğimizde aslında yapacağımız şey 17'yi buraya taşımak oluyor. Kendisinin yerine taşımak, 16'ın yerine taşımış oluyorsunuz. O zaman silme işlemini tamamlamış oluyorsunuz. Tabi burada çok farklı case'ler var. Onlara birazdan değineceğim.
+
+142
+00:30:05,791 --> 00:30:07,951
+Niçin önemli olduğunu göstermek istedim.
+
+143
+00:30:08,611 --> 00:30:10,251
+Şimdi nasıl buluyoruz peki?
+
+144
+00:30:12,591 --> 00:30:14,911
+Nasıl bir pisotopodla buluyoruz? Ona bakalım.
+
+145
+00:30:32,403 --> 00:30:45,124
+Şimdi ikiye bölüyoruz aslında Saksesor kodunu. İki parçadan oluşuyor. Birincisi X'in sağ kolunun boş olup olmadığı durumu değerlendiriyoruz.
+
+146
+00:30:45,304 --> 00:30:54,384
+Ve eğer boş değilse, sağ kolu boş değilse o zaman sağ kolunun minimum elemanı aslında bakarsanız bizim aradığımız değer oluyor.
+
+147
+00:30:54,384 --> 00:30:56,884
+Dolayısıyla burada bir tri minimum.
+
+148
+00:31:00,115 --> 00:31:24,115
+Fonksiyonu kola edeceğiz. Az önce yazdığımız. Ve X'in sağ koluyla başlayan root olarak subtree'yi buna gönderiyoruz. Eğer X'in sağ kolu yani şuraya gelen X'in sağ kolu doluysa o zaman o subtree'deki minimum elemanı bulacağız ve döndüreceğiz.
+
+149
+00:31:24,723 --> 00:31:32,983
+Bu birinci parçası kodun. İkinci parçası şöyle devam ediyor.
+
+150
+00:31:49,395 --> 00:32:05,256
+İkinci de yaptığımız şey aslında parent'a doğru ilerlemek. Her yukarı adımda sağa mı sola mı dönüyorum onu bulmaya çalışıyorum. Aslında yukarı doğru takip edip ilk sağa döndüğüm yeri bulmaya çalışıyorum. O yüzden bu kodu yazıyorum. Şimdi örneğini göstereceğim size.
+
+151
+00:32:13,556 --> 00:32:17,776
+Şurası ikinci parçası. Şurası birinci parçası. Burası ikinci parçası.
+
+152
+00:32:19,536 --> 00:32:21,056
+Şimdi şuraya yana bir örnek çizelim.
+
+153
+00:32:21,056 --> 00:32:31,556
+On beş, altı, on sekiz, on yedi.
+
+154
+00:32:35,604 --> 00:32:37,604
+İlk.
+
+155
+00:32:42,836 --> 00:32:46,495
+2, 4. Şöyle bir ağacımız olsun.
+
+156
+00:32:49,155 --> 00:32:56,596
+Şimdi birinci kısımda ne yaptım? Eğer x'in sağ alt ağacı boş değilse, örneğin mesela x 6 olsun.
+
+157
+00:32:58,315 --> 00:33:08,055
+Sağ alt ağacı boş değil. O zaman burada saksı sır, x'in sağ alt ağacının şu saptirinin en küçük elemanı yani 7. Şurası onu buldu.
+
+158
+00:33:08,756 --> 00:33:15,596
+İkinci kısımda eğer x'in sağ alt ağacı boşsa, örneğin x şurasıysa, 13 ise.
+
+159
+00:33:16,243 --> 00:33:41,023
+O zaman işte yapmam gereken şey yukarıya doğru takip etmek. Yukarıya doğru takip ediyorum ve ilk sağa döndüğüm yerde karşıma çıkan nodu alacağım. Çünkü sola doğru gittiğim her adımda aslında kendimden küçük bir şeyle karşılaşıyorum. Dolayısıyla böyle böyle gidip hop buraya dönmem lazım. Buraya döndüğüm zaman zaten bulunduğum noktadan daha büyük bir elemanla karşılaşmış oluyorum. Dolayısıyla onu alıyorum. Buradaki işlemler aslında bu işe yarıyor.
+
+160
+00:33:43,220 --> 00:34:01,420
+Mesela örneğin x on üç olsun. x eşittir on üç için. y yediden başlıyor. Yani x'in parent'ından başlıyor. Sonra işte soruyorsunuz, diyorsunuz ki şu while kodu içerisinde.
+
+161
+00:34:10,228 --> 00:34:36,068
+X Yani 13 7'nin sağ kolumu. Yani şöyle analizini yaparsam sağ kolumu. Eğer öyleyse o zaman X'i güncellediniz. X 7 oldu. Y de 6 oldu. Bunu bu şekilde devam ettiriyorsunuz. Bir noktada artık sağdan gelmediği için yakalamış oluyorsunuz. O da mesela bu örnekte 15'e tekabül ediyor. Tamam.
+
+162
+00:34:39,572 --> 00:34:40,572
+Var mı soru?
+
+163
+00:34:42,931 --> 00:34:43,412
+Yok.
+
+164
+00:34:45,211 --> 00:34:49,391
+Şimdi bu işlemi karmaşıklığı nedir? O zaman onu sorayım size.
+
+165
+00:34:53,684 --> 00:34:54,684
+Nasıl?
+
+166
+00:34:54,684 --> 00:34:55,684
+Evet.
+
+167
+00:34:55,684 --> 00:34:57,684
+Ay niye duymamalısın?
+
+168
+00:34:57,684 --> 00:34:58,684
+Hangi keyifde?
+
+169
+00:34:58,684 --> 00:35:01,684
+Hangi keyifde canım tamam mı? Bu fonksiyonun karmaşıklığı.
+
+170
+00:35:03,684 --> 00:35:05,684
+Bunun karmaşıklığı.
+
+171
+00:35:05,684 --> 00:35:12,684
+Şimdi aslında fark etmiyor. Şu keyif çalışırsa minimum bulmak istediğinizde
+
+172
+00:35:13,396 --> 00:35:17,396
+En kötü ihtimalle tüm ağacı o height boyunca yedeceksiniz.
+
+173
+00:35:19,136 --> 00:35:25,896
+Yedeceksiniz. Sonuçta bizim ilgilendiğimiz şey maksimum gidebileceği yol adım sayısı.
+
+174
+00:35:26,036 --> 00:35:33,676
+Bu kez çalışırsa, mesela aşağıdan bir leaf'ten yola çıkıp bu sefer node'a kadar, root'a kadar gitmeniz gerekebilir.
+
+175
+00:35:34,256 --> 00:35:38,816
+Neticede her ikisinde de fark etmiyor. Sizin ağaç yüksekliği oluyor karmaşıklığınız.
+
+176
+00:35:43,092 --> 00:35:49,311
+Şimdi tüm bu işlemleri eğer ağacınız dengeli ise logende çözebilmiş oluyorsunuz bu durumda.
+
+177
+00:35:49,532 --> 00:35:53,432
+E ne bağımlı olarak ifade edecek olursak.
+
+178
+00:35:54,492 --> 00:35:57,632
+Şimdi diğer kavram neydi hatırlayalım.
+
+179
+00:36:02,900 --> 00:36:20,780
+Redesse Sırı Kavrum. Şimdi bu da herhangi bir nottan küçük en büyük eleman aslında. Yani o notun sol tarafındaki en büyük eleman. Mesela şu örnek için altınınki, bakayım. Bu örnek için altınınki dört aslında.
+
+180
+00:36:21,652 --> 00:36:43,471
+Altıdan Küçük Olan En Büyük Eleman. Bunu da aslında silme için kullanıyoruz. Silme için kullanılabilecek farklı stratejiler var eleman silmek için. İkisini kullanan stratejiler de mevcut. Ama prodeseri kullanacaksanız recursive bir yaklaşımla silmek gerekebilir. Genelde akışları o yönde.
+
+181
+00:36:44,148 --> 00:36:53,088
+Özet olarak o zaman benim mesela şöyle bir dengeli ağacım varsa, şöyle, böyle.
+
+182
+00:37:05,139 --> 00:37:30,139
+O zaman mesela X şuysa, bu ağaçta bunun saksesor'ı hangisi oluyor? Şu oluyor, değil mi? Kendisinden büyük en küçük eleman. Doğru mu? Bu oluyor. Şu da kendisinden küçük en büyük eleman. O da bu. Şunu yanlış yazdım.
+
+183
+00:37:32,467 --> 00:37:34,123
+Seslendirme.
+
+184
+00:37:38,516 --> 00:37:49,856
+Şimdi bunlar tamamsa Insert ile devam edelim.
+
+185
+00:37:55,635 --> 00:37:58,635
+Bir ağaca nasıl bir eleman insert ediyoruz?
+
+186
+00:38:04,516 --> 00:38:06,596
+Aynen, evet. Doğru.
+
+187
+00:38:08,096 --> 00:38:12,256
+Şimdi Tree'ye Z nodunu insert edecek olalım örneğin.
+
+188
+00:38:14,996 --> 00:38:24,876
+Üzerinde gezeceğimiz X'in her seferinde bir sonraki left'e ya da right'a doğru hareket etmemiz için kullanacağımız bir ara değişkenimiz var.
+
+189
+00:38:26,695 --> 00:38:35,256
+Root'tan başlıyoruz. Her seferinde search de olduğu gibi aynen ama insert edeceğiniz zaman aslında sonuna doğru gidiyorsunuz.
+
+190
+00:38:35,376 --> 00:38:39,876
+En son elemana doğru gidiyorsunuz ve bulduğumuz noktada yerleştirmeniz gerekiyor.
+
+191
+00:38:44,500 --> 00:39:01,720
+Root'tan başlayacağım. Leap'lere ulaşmadığım yani nal görmediğim sürece her seferinde insert etmek istediğim elemanın key ile şu an ağaçta üzerinde bulunduğum X nodunun key'ini karşılaştırıyorum.
+
+192
+00:39:03,039 --> 00:39:24,000
+Eğer ilgili nodun yani Z'nin ki küçükse o zaman sol tarafa gitmek istediğim için X eşittir X left atamasıyla X'i bir soldaki child ile güncelliyorum. Aksi takdirde sağdaki ile güncelliyorum.
+
+193
+00:39:27,827 --> 00:39:35,648
+Buradan çıktığımda, while'dan çıktığımda şu işlemleri gerçekleyeceğim.
+
+194
+00:39:38,643 --> 00:40:01,264
+Nil ile karşılaşınca duracak. Bu vildan çıkma sebebi mi o? Burada x nil ile karşılaşınca duracak. Yani y bu null pointer'dan bir önceki nodu gösteriyor demek bu durumda. Yani nod z'nin parent'ı y olmalı. Çünkü null'dan bir önceki nodu gösteriyordu. Dolayısıyla eklemek istediğim nod z'nin parent'ına y yaptım.
+
+195
+00:40:02,516 --> 00:40:13,536
+Eğer Y bu arada nala eşitse bu da o zaman ağaç boş demek. Ağaç boşsa bu durumu da dikkate almalıyım. O zaman da rootumu Z yapıyorum.
+
+196
+00:40:25,588 --> 00:40:27,211
+Şunu yapışımlar.
+
+197
+00:40:32,947 --> 00:40:43,028
+Routu Z yapıyorum. Ama eğer ağaç boş değilse Y parıntı olmalı ama Y'nin sağına mı, soluna mı yerleşmeli? Onu bilmiyorum. Onu check etmem gerekiyor.
+
+198
+00:40:48,980 --> 00:41:10,239
+Z noktaki ve Y noktakiyi karşılaştıracağım. Eğer Z noktaki küçükse demek ki left'e yerleşmeli değilse right'e yerleşmeli diyorum. Böylelikle insert işlemi tamamladım.
+
+199
+00:41:13,748 --> 00:41:26,827
+Yani karmaşıklık sizin de söylediğiniz gibi yine ağacın yüksekliğine orantılı. Çünkü search işlemi gibi baştan yapraklara doğru giden bir durum var burada.
+
+200
+00:41:35,059 --> 00:41:42,679
+Şimdi Dilection'daki case'leri inceleyelim. Farklı silinmek için farklı durumlar ortaya çıkabiliyor. Bunlara bir bakalım.
+
+201
+00:41:45,420 --> 00:41:48,619
+Soru var mı? Var mı gençler?
+
+202
+00:41:49,960 --> 00:41:50,820
+Geçiyorum.
+
+203
+00:41:56,148 --> 00:41:56,648
+Şimdi.
+
+204
+00:42:05,811 --> 00:42:16,012
+Şimdi silme işleminde üç farklı durum var aslında. Bunlardan bir tanesi, z'nin yani silmek istediğim elemanın hiç çaylıkının olmadığı durum.
+
+205
+00:42:16,012 --> 00:42:17,632
+Z.
+
+206
+00:42:21,940 --> 00:42:46,200
+Hiç çıldırını yok bunun. Eğer hiç yoksa yani şöyle aslına bakarsanız mesela Q nodu var diyelim. Şurada Z nodu var. Bu boş. Basit bir şekilde bunu kaldırıyorsunuz burada. Dolayısıyla parent'ının şu ikisi arasındaki bağlantıyı ve bunu buna olan bağlantıyı siliyorsunuz.
+
+207
+00:42:47,411 --> 00:42:53,971
+Bunun çocuğu artık Nili gösterecek şekilde Q'nun left çağını update ediyorsunuz. Böylece silinmiş oluyor.
+
+208
+00:42:55,391 --> 00:42:59,351
+Peki, ikinci durum Z'nin bir tane çocuğunun olma durumu.
+
+209
+00:43:04,403 --> 00:43:31,604
+O da şöyle mesela. Q var. Efendim? Aynen. Şöyle gidiyor. Böyle bir bağlantı kurmanız lazım arada. Diyorsunuz ki Z'nin çocuğu dediği gibi arkadaşınızı Q'nun çocuğu olacak şekilde hem Z'nin parent'ını değiştiriyorsunuz.
+
+210
+00:43:32,083 --> 00:43:58,643
+Hem de Z'nin çay aldığının, Z'nin parent'ını, Z'nin yerine çocuğunu göstermesini sağlayacak şekilde parent bağlantısını değiştiriyorsunuz. Bunları zaten şimdi kodda göreceğiz nasıl olduğunu. Şimdi üçüncü durum bir tık daha spesifik demeyeyim de tricky yani biraz da. Z'nin iki tane çocuğu var aynen. İşte o zaman saksızdır bulma.
+
+211
+00:43:59,668 --> 00:44:24,608
+İşi devreye giriyor. Y'yi buluyorsunuz. Ve sonra have y take z's position. Y'nin z'nin yerine geçmesini sağlıyorsunuz. Yani z'nin orijinal durumdaki sağ saptırıysı y'nin yeni saptırıysı olacak şekilde.
+
+212
+00:44:27,411 --> 00:44:51,291
+üç tane case için, özellikle üçüncüsü için aslında kullanılacak, vTransplant fonksiyonu yazacağız. Bu fonksiyonu tanımlayacağız. Bu aslında u ve v diye iki tane nod verildiğinde v'yi onun yerine geçiren bir fonksiyon olacak. Bunu tüm case'ler için kullanılacak şekilde, ana delation için yazdığımız ana programa ekleyeceğiz function call olarak. Şimdi onu bir yazalım.
+
+213
+00:45:01,492 --> 00:45:07,272
+T, U, V, V. Hangi ağaç için, hangi ikinod için bunu yapıyorum? Bunları parametre olarak aldım.
+
+214
+00:45:08,352 --> 00:45:10,124
+Şimdi diyorum ki...
+
+215
+00:45:16,340 --> 00:45:27,980
+Yani U'nun, U nodunun root olduğu bir alt ağacı, V nodunun root olduğu bir alt ağacı ile değiştiren bir fonksiyon yazıyorum. Dolayısıyla değişim olunca artık U'nun perinti V'nin perinti o haline geliyor.
+
+216
+00:45:27,980 --> 00:45:33,400
+Burada şu ifade, hemen devamını da yazayım.
+
+217
+00:45:38,164 --> 00:45:44,404
+Bu iki ifade U'nun T'nin root olduğu durum için eğer U root ise artık V root olsun.
+
+218
+00:45:45,724 --> 00:45:53,404
+Yani U eğer T'nin root ise artık V root olsun. Bu case'i karşılamak için yazılmış iki satır kod.
+
+219
+00:45:54,044 --> 00:46:01,344
+Eğer öyle bir durum yoksa yani U eğer root değilse o zaman
+
+220
+00:46:06,900 --> 00:46:13,900
+left child mı diye bakıyorum. Parent'ın left'i mi? Bir left child mı? O zaman artık öyleyse...
+
+221
+00:46:20,403 --> 00:46:28,403
+Artık onun yerine V'yi koyayım. Yani U artık V'yi göstersin ve left üzerinden bunu yapsın. Aksi takdirde...
+
+222
+00:46:33,523 --> 00:46:42,284
+Right üzerinden bunu yapsın. Yani onun right child olduğu durumda artık ve ilgili parentin right child olsun demek bu.
+
+223
+00:46:51,987 --> 00:47:04,267
+Burada karşılıklı bağlantı var demiştim size. İki not birbirine çift taraflı bağlı oluyor demiştim. Bu çift taraflı bağı kurmak için de yine 6. ve 7. satırlar çalışıyor.
+
+224
+00:47:06,427 --> 00:47:17,607
+Şimdi bu Transplant fonksiyonu V'nin left'i ya da right'ındaki elemanlarla ilgilenmiyor aslında. Onları dilation işlemi içerisinde handle edeceğiz. Sadece onun yerine V'yi koydu. Teknik yaptığı bu.
+
+225
+00:47:18,128 --> 00:47:24,427
+Çift taraflı bağ kurduğunu zaten hatırlatayım size tekrar ama bununla ilgili analiz yapmama gerek yok herhalde. Buraya geçiyorum şimdi.
+
+226
+00:47:25,387 --> 00:47:31,108
+Şimdi bu Transplant fonksiyonunu kullanarak Relation yapacağız. Bunun keyiflerini inceleyeceğiz.
+
+227
+00:47:34,148 --> 00:47:37,788
+Şöyle geçiyorum var mı? Soru yok.
+
+228
+00:47:53,268 --> 00:47:55,327
+Şimdi bir Z nodunu silmek istiyorum.
+
+229
+00:47:59,827 --> 00:48:06,908
+Önce yine başta basit olan durumları handle ederek başlayayım.
+
+230
+00:48:24,755 --> 00:48:34,975
+Şimdi isterseniz önce şu kodu bir yazalım. Sonra ben size örnekler üzerinden en azından şurayı bir daha şurayı da yazayım.
+
+231
+00:48:42,516 --> 00:48:52,516
+Bu ikisi zaten aynı case'i sağ ve sol durumları için çözüyor.
+
+232
+00:48:55,296 --> 00:49:00,936
+Şimdi bu az önce üç farklı durumdan bahsetmiştim ya sizin silme için. Bunu dört farklı örnek ile görselleştireceğiz.
+
+233
+00:49:01,936 --> 00:49:03,436
+Şimdi birinci tipte...
+
+234
+00:49:09,364 --> 00:49:19,003
+Şimdi birinci tipte şöyle diyelim. Mesela şöyle bir yapımız var diyelim ki.
+
+235
+00:49:23,603 --> 00:49:25,523
+İkinci tipte de şöyle bir şey olsun.
+
+236
+00:49:29,268 --> 00:49:47,208
+Bu da Nil. 1 ve 2 aslında S1 ve S2'nin tek çağda olduğu durumu. Dolayısıyla şu aralıktaki kodlar bunlar için. 1, 2, 3 ve 4.
+
+237
+00:49:47,648 --> 00:49:59,648
+Bu dört tane satır bu iki case'i handle etmek için kullanılıyor. Transplant fonksiyonuna transfer etmek istediğiniz ikinci parametre olarak transfer etmek istediğiniz
+
+238
+00:50:00,000 --> 00:50:16,320
+Örneği nodu gönderiyorsunuz. Yani eğer right, mesela şu örnekte R'yi göndereceksiniz. Transplant fonksiyonuna buradaki akış gereği. Diğerinde L'yi göndereceksiniz. Dolayısıyla bu transplant fonksiyonu R'yi buraya geçirecek örneğin. Aradaki bağlantıları kuracak.
+
+239
+00:50:17,940 --> 00:50:23,320
+Dolayısıyla S1 ve S2 aslında buradaki ilk dört satırı çözdü.
+
+240
+00:50:24,500 --> 00:50:28,079
+Şimdi şöyle bir case var. Üçüncü caseimiz.
+
+241
+00:50:28,079 --> 00:50:38,840
+S3 Q Z Y X olduğunu düşünelim.
+
+242
+00:50:42,356 --> 00:50:59,896
+Şimdi Z'nin iki tane çocuğu var. Bu Z'nin iki tane çocuğu Y aynı zamanda Z'nin sağ kolu. Bunun Z'nin saksı sıra olduğu durum ve Y'nin sol kolunun boş olduğu durum. Böyle bir durum var.
+
+243
+00:50:59,896 --> 00:51:05,576
+Bu durumu çözebilmek için şu kodları kullanıyoruz. Devamında.
+
+244
+00:51:12,244 --> 00:51:27,463
+Şimdi Y, Z'nin saksesörü olduğu için ve sol kolu da boş olduğu için o zaman önce bir Y'yi buluyoruz. Ben burada Y diye gösterdim ama burada bulduğum saksesörü Y'ye atacağım.
+
+245
+00:51:32,083 --> 00:51:38,363
+Sağ tarafını gönderdim. Minimumu bulmak için. Bulduğumda artık Y benim saksesorumu gösteriyor.
+
+246
+00:51:48,563 --> 00:51:53,543
+Sonraki durumlar bir sonraki case için aslında. Onları da yazayım. Sonra örnekle açıklayacağım onu size.
+
+247
+00:52:05,588 --> 00:52:11,888
+Ben burada doğrudan aslında alttaki satır üzerinden şimdi devam edeceğim. Şu aralık bir sonraki teyze için kullanılıyor.
+
+248
+00:52:38,356 --> 00:52:40,496
+Tamam, bunu bir yazmış oldum kodum.
+
+249
+00:52:50,420 --> 00:53:03,000
+Şimdi şu altıncı satır, şu yedinci satır, Y, R, 8, 9, şu Transplant 10, on birinci satır, on ikinci satır.
+
+250
+00:53:03,000 --> 00:53:09,679
+Şimdi şu keyif için beşinci satır şurada, Y'yi bulduk, Z'nin Success'ını bulduk.
+
+251
+00:53:12,319 --> 00:53:17,299
+Şimdi burada Z'nin R, Subteries'lerinden empty olduğu için.
+
+252
+00:53:17,780 --> 00:53:22,220
+Ve Y'nin de left çağında olmadığı için Z'nin saksası Y olmak zorunda.
+
+253
+00:53:22,840 --> 00:53:26,900
+Şimdi dolayısıyla buradan şu ife girmiyorsunuz dolayısıyla.
+
+254
+00:53:28,280 --> 00:53:30,600
+Transplant'a fırlıyorsunuz. Zıplıyorsunuz.
+
+255
+00:53:31,220 --> 00:53:35,880
+Bu noktada neyi transplant ediyor? T'yi, Y'yi ve Z'yi transplant ediyor.
+
+256
+00:53:35,980 --> 00:53:37,080
+Yani ne yapıyor aslında?
+
+257
+00:53:38,003 --> 00:53:54,563
+Şunu, şunun yerine yazmış oluyor. Şunu şöyle şuraya yazmış oluyor. Bu bağlantıyı artık ye burada. Şu bağlantıları kurmuş oluyor. Böyle. Dolayısıyla aslında temiz bir görüntüyle çizecek olursam sizin ağacınız artık şuna döndü.
+
+258
+00:54:02,452 --> 00:54:13,192
+Yani şuradaki L'yi bağlama ve X'i bağlama işlemini yapmış oldu. Y'nin bu arada right ile alakalı kısım aynen kaldı. Dolayısıyla bu hale döndürdünüz.
+
+259
+00:54:13,192 --> 00:54:21,312
+Şimdi diğer kezim, durdurun beni eğer soru sormak istiyorsanız.
+
+260
+00:54:26,483 --> 00:54:52,364
+Diğer kezim şu. Son kezim. Q, Z, R, Z. Burada böyle gidebilir. Başka bunların bir şeyleri. Arada farklı notlar olabilir. Direkt R, Y'ye bağlı olmak zorunda değil. Bu kesik çizgi onu ifade ediyor.
+
+261
+00:54:53,331 --> 00:54:57,051
+Şöyle, şöyle, böyle.
+
+262
+00:54:59,051 --> 00:55:03,631
+Şimdi Z'nin yine iki çaldığı var. Ama Z'nin saksesori bu sefer hemen sağındaki not değil.
+
+263
+00:55:04,131 --> 00:55:09,231
+Şurada hemen sağındaki nottu ya. Y'ydi. Dolayısıyla şu koda girmiştik, bulmuştuk.
+
+264
+00:55:09,231 --> 00:55:15,151
+Burada hemen sağındaki not değil, aşağıda bir yerde ama. Biraz sağ yapıp biraz sol falan yapmak gerekiyor.
+
+265
+00:55:17,652 --> 00:55:33,472
+Yani aslında şu arada R ile başlayan alt ağacın içinde bir yerde. Ve yine Y olarak adlandırdık biz bunu bu ağaç içerisinde. Ve bu Y'nin sol kolu boş. Mutlaka boş oluyor. Niye boş oluyor mutlaka?
+
+266
+00:55:39,059 --> 00:55:42,860
+Bu noktaya geldiyse eğer kod, yeğenin sol kolu neden boş kalmak zorunda?
+
+267
+00:55:44,000 --> 00:55:48,800
+Var mı bir fikrimiz? Şöyle kodu size bir açayım.
+
+268
+00:55:53,108 --> 00:55:58,347
+Şimdi şundan dolayı boş olmak zorunda. Saksı sırf işlemimiz nerede bakayım bizim?
+
+269
+00:56:02,164 --> 00:56:27,524
+Şu. Şimdi biz bu successler işlemini iki farklı kez için yaptık. Bu Z'nin sağ kolunun, mesela Z olsun burada, Z'nin sağ kolunun nal olduğu ve olmadığı durumlar için yaptık. Dolayısıyla Z'nin sağ kolu eğer nalsa ağaçta yukarı doğru hareket ediyorduk hatırlarsanız. Değilse zaten aşağı doğru minimum bulma işlemiyle biz bu işi yapıyorduk.
+
+270
+00:56:29,300 --> 00:56:38,300
+Dolayısıyla eğer Z'nin sağ nodu neydi ise zaten Dilation işlemini Tree Delayed fonksiyonuyla yaptık bakın şurada.
+
+271
+00:56:39,300 --> 00:56:43,300
+Şunu biraz küçüteyim. Belki hepsini aynı anda görürsek daha mı rahat anlarız?
+
+272
+00:56:51,284 --> 00:57:15,003
+Şimdi eğer ben Z'nin sağ kolunun boş olduğu durumda, delete işlemini şurada zaten en basit şekilde yaptık. Üçüncü ve dördüncü satırlarıyla yaptık. Dolayısıyla biz bu noktaya geldiğimize göre Z'nin sağ kolunun naldan farklı olması gerekiyor. Bu durumda da sağ altı ağacın minimum elemanını bularak buluyorduk.
+
+273
+00:57:15,411 --> 00:57:22,371
+Eğer sağ kolu boşsa. Dolayısıyla burada sol kolun boş olduğu durumu ortaya çıkmış oluyor.
+
+274
+00:57:22,371 --> 00:57:39,152
+Şimdi şu kodumuzda yine beşinci satırda bulduk saksesor'ı.
+
+275
+00:57:39,411 --> 00:57:53,331
+Altıncı satırda bu bulduğumuz successor hemen Z'nin sağ kolumu ona baktık. Bu kez değil. Üçüncü kez de öyleydi. Bu kez değil. Dolayısıyla şunları işaret, şu işlemleri yapmamız gerekiyor.
+
+276
+00:57:53,991 --> 00:58:03,251
+Burada ne yapıyoruz? Aslında şunu yapıyoruz. Bakın şöyle yapalım. İlk önce şunu işletiyorum. Bunu işletiyorum.
+
+277
+00:58:03,860 --> 00:58:15,279
+Bunu işletirken ne yapıyorum? Y'nin right kolunu yani X'i şuraya yazmış oluyorum. Dolayısıyla aslında şuraya X gelmiş oluyor.
+
+278
+00:58:30,675 --> 00:58:38,536
+P'si eşittir Y komutları var ya, şu komutlar. Bunlar aslında benim oradaki alt ağacımı şu hale getiriyor.
+
+279
+00:58:42,804 --> 00:58:50,004
+Şimdi sonrasında şu taraf, şu kodları çalıştırmaya başlıyorum. İkinci bir transplantım var.
+
+280
+00:58:54,643 --> 00:59:17,623
+Bu ikinci transplant da Z ve Y'yi birbiriyle transplant ediyor. Yani o zaman da aslında şu hale geliyor. Benim ağacım. R şurada, X şurada. Şu iki kod sayesinde Y'yi yine L'ye bağlıyorum bu kez.
+
+281
+00:59:18,675 --> 00:59:41,635
+Yani Z'nin leftine bağlıyorum. Z'nin leftine L'ydi. Şunu Y'ye bağlamış oldum. Y'yi Z'nin yerine koymuş oldum. Dolayısıyla bu hale geldi. Q, Y, R ve X şeklinde. L'de Y'nin sol kolu olacak şekilde. Dolayısıyla aradan Z'yi çıkarmış oldum.
+
+282
+00:59:42,452 --> 00:59:53,612
+Şimdi burada Time Complex diye bakacak olursak ne görüyoruz? Dilation koduna bir bakalım. Burada ne var? Bir yerde bir Transparent fonksiyonu çağrılıyor birkaç yerde.
+
+283
+00:59:57,204 --> 01:00:18,924
+Transplant işlemi dışında constant time'da yapılıyor aslında hepsi. Yalnız tri'yi minimum bulmak istiyorsanız o zaman ON ilerlemek zorundasınız. Dolayısıyla aslında yine sizin ON'lik bir delation, OH'lik, çok özür dilerim N değil, bir delation karmaşıklığınız var.
+
+284
+01:00:20,484 --> 01:00:22,724
+Şimdi bir hatırlamış olduk bunları.
+
+285
+01:00:25,235 --> 01:00:31,795
+Bu algoritmaların hepsi ama distinct olduğu zamanlar için geçerli. Yani elemanlar birbirinden farklı.
+
+286
+01:00:31,795 --> 01:00:40,995
+Şimdi elemanların birbirinden aynı olduğu bir case, bir tree implement etmek istiyorsanız nasıl çözümler üretebilirsiniz?
+
+287
+01:00:40,995 --> 01:00:45,875
+Yani iki tane beş olsun mesela, iki tane üç olsun. Ne yapabilirsiniz?
+
+288
+01:00:49,012 --> 01:00:52,012
+Arkadaşlar, şöyle bir şey yapalım.
+
+289
+01:00:52,012 --> 01:00:56,012
+Evet.
+
+290
+01:00:56,012 --> 01:01:02,012
+Şimdi mesela eğer benim şöyle bir...
+
+291
+01:01:03,123 --> 01:01:25,403
+Dizim varsa yerleştirmek istediğim 15, 8, 7, 8, 8. Böyle bir sürü 8 var mesela. Bir kural belirleyebilirsiniz. Dersiniz ki ikinci kere aynı elemanla karşılaşıyorsam ya hep sağa gideceğim ya hep sola gideceğim. Böyle bir kural belirlersiniz. Dolayısıyla 10'u, 15'i ve 8'i yerleştirdiniz. Sonra ikinci kez 8 geldiğinde ilk 8'i bulup sağa yerleştirdiniz gibi.
+
+292
+01:01:26,003 --> 01:01:34,463
+Sonra yedi geldiğinde buraya yerleşti. Tekrar sekiz geldi yine sağ. Tekrar sekiz geldi yine sağ. Gibi. Bu mesela bir seçenek.
+
+293
+01:01:35,903 --> 01:01:52,704
+İkinci bir seçenek. Her notta ilgili o notun kiğinden kaç tane varsa onu da not üzerinde tutmak. Mesela bir tane on var. Dört tane sekiz var. On beş tane bir var. Gibi.
+
+294
+01:01:54,099 --> 01:02:01,939
+15 tane biri yok da bir tane 15 vatayda söyledim. Şöyle gibi. Diğer bir seçenek bu.
+
+295
+01:02:06,003 --> 01:02:27,884
+Mesela tekrar eden her sekize bir sağa bir sola yerleştirmeye yarayacak bir flag koyabilirsiniz notlarınıza. Notlardakiyi tutmak dışında bir de flag tutarsınız. O notların her geçildiğinde eğer aynı elemanı yerleştirmek istiyorsanız bir kere sağa yerleştirir, bir kere sola yerleştirir gibi. Bu da bir seçenek. Şimdi bunların birbirlerine göre avantajları var.
+
+296
+01:02:30,523 --> 01:02:32,443
+Sonuncusunun şöyle bir avantajı var.
+
+297
+01:02:33,396 --> 01:02:38,196
+Ama bak şöyle, dengeli olacak ama ağacın.
+
+298
+01:02:47,476 --> 01:02:51,636
+Koruyabilsin diye. Ama işte burada sizin uygulamanıza göre hareket etmeniz gerekiyor.
+
+299
+01:02:52,019 --> 01:03:04,240
+Dolayısıyla eğer daha dengeli olsun, sörçüm kolay olsun diyorsanız öyle bir şey yapabilirsiniz. Şu ağaç mesela derinliği düşük bir ağaç ortaya çıkarıyor. Bunun da öyle bir avantajı var ama ekstra bilgi tutuyorsunuz notlarda gibi.
+
+300
+01:03:04,240 --> 01:03:05,460
+Aynı bir avantajı.
+
+301
+01:03:08,460 --> 01:03:15,000
+Tabii o da var. Çok haklısın. Bunları düşüneceksiniz. Farklı çözüm yolları mevcut.
+
+302
+01:03:15,539 --> 01:03:39,260
+Şimdi Radix ağaçları var. Ondan bahsedeceğim size. Bir de Red Lake Tree'lerden bahsedecektim aslında. Ara vermek ister misiniz? Bir saati geçti. İstiyorsanız bir ara verelim sonra devam ederiz blog olarak derse. Var mı gençler ekranda? Ekranda değil de işte online'dan benim için ekran sorusu olan.
+
+303
+01:03:39,795 --> 01:03:45,575
+Yok, tamam o zaman aradan sonra devam edelim. 10 dakika ara veririm. 52'de başlıyor.
+
+304
+01:03:52,115 --> 01:03:55,115
+Evet.
+
+305
+01:04:02,356 --> 01:04:03,356
+Şimdi
+
+306
+01:04:11,380 --> 01:04:12,000
+Aneğe basın.
+
+307
+01:16:48,020 --> 01:16:56,160
+Ben de onu özel tekörde başlayıp, efendim, her yere yapay zeka ile gidiliyor.
+
+308
+01:16:56,160 --> 01:16:58,020
+Yani işte artık maalesef.
+
+309
+01:17:02,940 --> 01:17:10,520
+Şimdi gençler, ne yapacağım? Şey açacağım yine size.
+
+310
+01:17:15,188 --> 01:17:18,128
+Şunu açacağım. Bunun üzerinden biraz bakacağız.
+
+311
+01:17:27,060 --> 01:17:52,260
+Şimdi şeyi sorayım öncelikle. Bizim onda başlıyor ya dersimiz. Mesela önümüzdeki hafta. Aslında ben bunu sunumların olacağı hafta için rica edecektim sizden. Biraz erken başlama şansımız olur mu? Dokuzda mesela. Çünkü çok sunum yapmak isteyen arkadaş var ve yetişmeyecek. O yüzden onu böyle birer saat veriye. Çünkü tam on şey birde dersiniz mi vardı? Birde dersi olan birileri vardı. Dokuza çekmek uygun değil mi herkes için?
+
+312
+01:17:52,948 --> 01:17:55,587
+İtirazı olanlar bana şimdi yazsınlar.
+
+313
+01:17:58,048 --> 01:18:04,788
+Şimdi onu bilmiyorum. Ondan çok emin değilim ya. Ben de kendimi çok hazırladım sizi dinleme önümüzdeki hafta.
+
+314
+01:18:05,248 --> 01:18:12,808
+Hatta uzaktan yaparız diye düşündüm. Buraya da gelmeyiz diye düşündüm. Çünkü herkes evinden, evinin rahatlığıyla sunsun diye.
+
+315
+01:18:15,748 --> 01:18:19,568
+Bir de belki final için bir ödeve bir şey ekstra verirsem vaktiniz kalsın istiyorum.
+
+316
+01:18:20,532 --> 01:18:31,952
+Şimdi kaçıncı haftadayız? Onuncu haftada mıyız? Onuncu haftadayız değil mi şimdi? On bir, on iki, tam iki hafta kalmıyor. Yani çok da bir zamanımız kalmıyor.
+
+317
+01:18:32,891 --> 01:18:37,092
+Şimdi, şaka yapıyorsun herhalde.
+
+318
+01:18:41,612 --> 01:18:44,311
+Hocam uzakta olacaksa, dokuza çalışanlar için daha iyi olur.
+
+319
+01:18:47,028 --> 01:18:56,248
+Tabi uzaktan olacak. Dokuzda çalışanlar için daha iyi olur. Derken dokuz olur diyorsun yani. [öğrenci] değil mi? Tamam, olur. Evet, okey, tamam.
+
+320
+01:18:57,528 --> 01:19:10,488
+Şimdi, reddik stililerle başlayalım. Bunlara ihtiyaç duydukça size yavaş yavaş açıp anlatacağım ama şuradan biraz yazarak başlamak istiyorum.
+
+321
+01:19:13,300 --> 01:19:19,739
+RadixTree dediğimiz şey, karşılaşmışsınızdır bir yerlerde eminim.
+
+322
+01:19:24,148 --> 01:19:44,987
+Stringleri içeren bir tri çeşidi. Yani binary string ya da gerçek karakter stringleri. Bunları tutabilmek için oluşturulmuş. Aslında dictionary implementasyonları için oldukça kullanışlı. Örneğin bit stringler olsun elimizde. Şöyle bir string kümesi.
+
+323
+01:19:45,167 --> 01:19:46,688
+Hocam ekran paylaşmadınız mı?
+
+324
+01:19:47,048 --> 01:19:48,967
+Ay paylaşmadım ya, özür dilerim.
+
+325
+01:19:58,387 --> 01:19:59,667
+Tamam geldi değil mi şimdi?
+
+326
+01:20:01,608 --> 01:20:03,448
+Nerede görüyorsunuz? Okey.
+
+327
+01:20:05,247 --> 01:20:13,207
+Şimdi elimde şöyle bir küme var.
+
+328
+01:20:14,528 --> 01:20:18,247
+Bunları bir radiks triye şöyle yerleştireceğim.
+
+329
+01:20:18,528 --> 01:20:22,927
+Triyi gördüğünüz zaman zaten kafanızda oluşacak.
+
+330
+01:20:25,300 --> 01:20:28,140
+Binary Trillerle benzer özellikte.
+
+331
+01:20:29,579 --> 01:20:32,620
+Yine bitlerin, örneğin bit strings de tabii bu.
+
+332
+01:20:34,940 --> 01:20:39,399
+Bitlerin büyüklüğü önemli sağa ve sola gidiş açısından.
+
+333
+01:20:41,739 --> 01:20:48,600
+Karakter strings ise yine karakter büyüklüğüne göre yani dikşilere deki sıralaması gibi düşünebilirsiniz onu.
+
+334
+01:20:50,600 --> 01:20:51,760
+Şimdi.
+
+335
+01:20:56,404 --> 01:21:23,384
+Gri notlardan ve beyaz notlardan oluşuyor. Gri notlar null pointer. Bir şey ifade etmiyorlar. Beyaz notlarda sizin gerçekten o setteki stringinizi tutuyor. Belki stringinizin dikşinleri sözlüğüne bir pointer tutuyor. O sizin tasarımınıza bağlı olarak değişebilir. Şu set aslında şöyle. 0 ve 1 için ikiye ayrılmış. 0, 1, 1. Şimdi bakın. 0 şu not.
+
+336
+01:21:23,796 --> 01:21:48,336
+Bu not 0'ı tutuyor. 0, 1, 1 şu not. Şurası 0, 1, 1'i tutuyor. Burası bir gri bir not var burada. Bu null pointu bir şey tutmuyor aslında. Bu pet içerisinde benim açımdan önemli sadece. Buradan 1, 0'a doğru denk geliyorum. Yani şurası. Burası onu tutuyor. Sonra 1, 1.
+
+337
+01:21:48,783 --> 01:22:12,323
+1-0-1 diye bir şey yok benim setimde ama 1-0-1-1 diye bir şey var. O da şu. 1-0-1-1. 1-0-1-100 örneğin. Bu da şu elemanı tutuyor. Tamam mı? Yine sağda büyükler, solda küçükler var. Birler sağda, sıfırlar solda dallanıyor.
+
+338
+01:22:14,612 --> 01:22:29,152
+Radix Tree'lerin Binary Tree'den Binary Search Tree'den farkı her set için unik bir yapı ortaya çıkıyor. Yani bunun sıralaması nasıl olursa olsun bu yapı ortaya çıkıyor. Ama Binary Search Tree'de biliyorsunuz farklı ağaçlar aynı seti tutabiliyordu.
+
+339
+01:22:31,152 --> 01:22:34,371
+Space yani yay tasarrufu sağlıyor bu açıdan önemli.
+
+340
+01:22:42,100 --> 01:22:59,440
+İngilizce örneğin kelimelerden oluşan minik bir dikşinleriniz varsa, mesela bunun gibi, böyle bir tri oluşturabilirsiniz. Şimdi burada bakın her bir notta iki tane çağır yok. Birden fazla çağır var.
+
+341
+01:22:59,988 --> 01:23:14,188
+Buna Branching Faktör deniyor. Bunu B-Tree'lerde anlatacağım size. İkiye bölünmüyor burada. Eğer alfabedeki maksimum karakter sayısı neyse o kadar dallanma olabilir.
+
+342
+01:23:16,167 --> 01:23:23,068
+Şuradaki kelimelerin, bu görünen kelimelerin acı yerleştirilmiş hali bu. Yine dediğim gibi.
+
+343
+01:23:24,083 --> 01:23:49,123
+Aske koduna göre nasıl sıralıyorduk karakterleri, onun gibi düşünün. Büyükler sağ tarafta, küçükler sağda olacak şekilde oluyor. Yani bir nodun maksimum çocuk sayısı alfabedeki eleman sayısına eşit olacak bu durumda. Eğer bir gerçek bir karakter dizisi, gerçek bir karakter string seti saklayacaksınız.
+
+344
+01:23:53,939 --> 01:24:02,959
+Şu neymiş? Search, Insert ve Delete işlemlerine bakacağız.
+
+345
+01:24:06,899 --> 01:24:08,439
+Şimdi şuraya yazalım.
+
+346
+01:24:19,347 --> 01:24:21,163
+İlk başta.
+
+347
+01:24:30,036 --> 01:24:35,056
+Bir search işlemiyle başlayalım.
+
+348
+01:24:38,612 --> 01:24:46,752
+Bakın şurada üç farklı search var. Search işlemi üç farklı şekilde sonlanabilir. Şu ağaç için.
+
+349
+01:24:49,291 --> 01:25:01,912
+Ya gerçekten bulursunuz, trace ettiğinizde her gelen stringteki her elemanı trace ederek ilerliyorsunuz ağacınızda ve beyaz bir notta sonlanıyor. Dolayısıyla bulmuş oluyorsunuz.
+
+350
+01:25:02,676 --> 01:25:15,976
+Ya trace ettiğiniz eleman gri bir notta sonlanıyor. Bu sözlükte olmayan bir eleman. Evet, ağaç bu elemanı modelleyebiliyor ama modellemeyiz. Sözlükte boş. O zaman gri bir notta sonlanıyor. Ya da bulamıyorsunuz. Örneğin 011'i aradınız.
+
+351
+01:25:16,659 --> 01:25:39,279
+Sıfır sola gittiniz, bir sağa gittiniz, bir tekrar sağa gittiniz, buldunuz. Sözlükte buldunuz. Bunun artık anlamını ekrana yazdıracaksınız, neyle uğraşıyorsanız. Sıfır bire balıp bakalım. Sıfır sağa gitti, bir sola gitti. Ama bir null pointer karşınıza çıktı burada sizin. Dolayısıyla bu art sizin dikşinelerinizde olmayan bir sözcük demek.
+
+352
+01:25:41,279 --> 01:25:42,279
+Gri olanlar.
+
+353
+01:25:43,347 --> 01:25:55,967
+Orta olmak zorunda değil her zaman. Ben bu ağacı oluştururken her notu rate ettiğimde ya bunu null pointer ile göstereceğim ya da bu gerçekten bir şeye point edecek. Örneğin sözlükteki anlamına point edecek gibi.
+
+354
+01:25:55,967 --> 01:26:02,047
+Şimdi o notu altında, sağa da bir şey yapıyorum. Şunun mu? Var, evet.
+
+355
+01:26:02,608 --> 01:26:10,128
+Dolayısıyla 0,1'i search ediyorum bu case ile ben. Bu dikşinerimde 0,1'in var mı diye search ediyorum.
+
+356
+01:26:12,372 --> 01:26:36,872
+A'lar var ama ben arayı yapabilirim. Gibi. Sıfır bir bir var. Çok doğru. Aynen öyle. Sıfır bir bir bir kelime. Araba gibi. Ben arayı arıyorum. Araba varmış ama arayı koymamışım dikşin eriye. O öyle. O yüzden de burada denk buldum. Sonlandı benim search ettiğim stringim. O da gri. Bulamadım. Aynı şekilde bir.
+
+357
+01:26:38,100 --> 01:26:44,100
+Ama bu sefer hiçbir şey yok. Yani modellememişim bile not falan oluyor. Dolayısıyla bu case'leri karşılaşabiliyoruz.
+
+358
+01:26:46,100 --> 01:26:48,100
+Şimdi insert'e bakalım.
+
+359
+01:26:53,100 --> 01:26:59,100
+Şimdi örneğin, insert'de şu 1.01'i insert ettiğimi düşünelim.
+
+360
+01:26:59,100 --> 01:27:02,100
+1.01
+
+361
+01:27:02,100 --> 01:27:04,044
+Şimdi normalde
+
+362
+01:27:04,884 --> 01:27:23,664
+Şurası, yani burada da yine farklı kezlerle karşılaşabilirsiniz. Bir tanesi bir sıfır bir kezi. Ağaçta zaten modellenebilecek bir durumdadır ama önceden gridir. Onu beyaza çevirirsiniz. Az önceki araba örneğinde olduğu gibi. Mesela şu, önceki halinde bu ağacın griydi şuradaki not. Şurada griydi.
+
+363
+01:27:24,659 --> 01:27:50,680
+Ben bunu insert etmek istedim. 1-0-1'i aradım, buldum. Bunu beyaza çevirdim. Bu ne demek? Artık benim dikişinlerimde bu sözcükte var demek. Ya da 1-1'i insert etmek istedim. 1-1. Hiçbir şekilde olmayan yeni bir not create etmem. Onu da buradaki notu sağ çağrına yerleştirmem gerekiyor. Dolayısıyla iki farklı şekilde create edebiliyoruz.
+
+364
+01:27:51,475 --> 01:28:09,275
+Delayed'leri nasıl yapıyoruz? Delayed etmek için de eğer string bir ara notta ise onu gri yapıyoruz. Çünkü onu silemeyiz. O bizim alttaki leaflerimize giden yolumuzu oluşturuyor.
+
+365
+01:28:15,775 --> 01:28:27,716
+Şurada bakın beyaz da çünkü vardı böyle bir eleman. Bunu silmiyorum. Bunu silmek yerine bunu gri yapıyorum. Yani aslında pointer'ını nala işaret ettirmiş oluyorum. Çünkü şuralara ulaşmak için ihtiyacım var benim. Bunu silemem.
+
+366
+01:28:31,667 --> 01:28:56,528
+Eğer silinecek stringin bir leaf değilse, yani ara bir notta değilse, örneğin bir sıfır, bir bir şuraların olduğunu düşünün, şurası gibi. Bunları silmek istiyorum, şurayı silmek istiyorum. Bir sıfır bir bir, bunu silmek istiyorum. Bunu sileceksem, bunu gri yapıyorum ve recursive olarak yukarıya doğru hareket edip bununla beraber bağlantılı olan diğer
+
+367
+01:28:56,916 --> 01:29:05,036
+Null Modları da kaldırıyorum. Ağacım da attığımız bir hale geliyor. Dolayısıyla iki şekilde silme yapıyorum.
+
+368
+01:29:05,036 --> 01:29:10,576
+Şimdi Red Black Tree'lere geçelim.
+
+369
+01:29:14,056 --> 01:29:15,476
+Şöyle size
+
+370
+01:29:15,476 --> 01:29:21,076
+Şunu şöyle alsam
+
+371
+01:29:27,828 --> 01:29:42,708
+Şimdi arkadaşlar, binary storage teriyelerde bir ağaç derinliği örneğin HH'izde tüm işlemlerimizde işte storage, insert, success, etc. hepsini OH'da yapmıştık ağaç derinliği ile.
+
+372
+01:29:43,847 --> 01:29:51,368
+Ama eğer ağacımız dengeli değilse link listeye doğru dönüyordu hatırlıyorsanız. O zaman da eleman sayısına dönüyordu ağacın derinliğe.
+
+373
+01:29:51,775 --> 01:29:58,536
+Dolayısıyla dengeli bir ağacı garanti eden bir takım yaklaşımlar var kullanılan. Bunlardan bir tanesi Red Black Tree. Bunu gördünüz bu lisansta.
+
+374
+01:30:00,315 --> 01:30:06,695
+Tamam. Red Black Tree, B Tree'ler gibi. Biraz daha böyle basit hali onun.
+
+375
+01:30:08,255 --> 01:30:12,435
+Dengeli bir ağaç oluşturmak için kullanılan bir yapı.
+
+376
+01:30:13,995 --> 01:30:18,735
+Dengeli bir ağaç oluşturuyor eninde sonunda. Dolayısıyla tüm işlemlerinizi yine Logend'e yapabiliyorsunuz.
+
+377
+01:30:19,123 --> 01:30:43,063
+Orologen de yapabiliyorsunuz. Şimdi burada bir redlektriği var oluşturulmuş. İsmini aslında nodların renginden alıyor. Yani her nodun bir rengi var. Ya kırmızı ya gri. Bu notlara renk verme işlemi ağacın dengeli olmasını sağlamak için kullanacağımız kuralları check etmemizi sağlıyor. O yüzden böyle bir sistematik geliştirilmiş.
+
+378
+01:30:43,699 --> 01:31:03,960
+Bir Red Black Tree'nin şurada görünen kurallara uyması gerekiyor her seferinde. Dolayısıyla siz bu Tree'ye bir Insertion yaptığınızda, bir Delayt vesaire yaptığınızda bu kurallar bozuluyor. Dolayısıyla siz de modifiye etmeniz gerekiyor ağaca her seferinde. Ve her seferinde modifiye ettiğinizde yine bu kuralları sağladığından emin olmanız gerekiyor.
+
+379
+01:31:05,079 --> 01:31:08,840
+Şimdi, önce bir ağacı izni inceleyelim.
+
+380
+01:31:09,363 --> 01:31:20,523
+Dediğim gibi her bir not yine kırmızı ya da beyaz. Burada kırmızı ya da siyah. Burada siyahlar, siyah diye gösterilmiş, işte griler kırmızıyı gösteriyor.
+
+381
+01:31:21,268 --> 01:31:41,887
+Bu örnekte. Yine sağ taraflar büyük, sol taraflar küçük. O anlamda Barnery Tri'ye benziyor. Yine ikili bir ağaç söz konusu. Leaflere geldiğimiz vakit her bir nottan sonra nalı gösteren leafler var. Bu ağaçta bunları koyuyoruz. Yine işlemleri implementasyon için bize gerekiyor.
+
+382
+01:31:46,420 --> 01:31:51,420
+Şuradaki sayılar, yanlarında yazan küçük küçük sayılar aslında şeyi gösteriyor.
+
+383
+01:31:52,300 --> 01:31:59,140
+Her modun, onun ismi neydi bakayım?
+
+384
+01:31:59,800 --> 01:32:03,539
+Black, Height of Black Nose diye geçen.
+
+385
+01:32:04,051 --> 01:32:13,491
+Kendisinden önce gelen siyah nodların sayısıyla burada biz trinin tüm işlemlerimiz bunun üzerinden yapacağız. Gösteriyor olacağız.
+
+386
+01:32:13,911 --> 01:32:24,731
+Buradaki şeyler küçük sayılar onu gösteriyor. Örneğin şu. 3 için bir tane var buradaki siyah. 7 için yine bir tane var. 10 için bu var, bu, bu var. 2.
+
+387
+01:32:25,395 --> 01:32:46,675
+14 için yine 2. Kendisini aşağıdakiler, kendisini saymıyorsun. Aynen. 17 için 1, 2 ve 3 var gibi. Şimdi burada baktığımız zaman ne görüyorsunuz? Bir denge var aslına bakarsanız. Şöyle oluyor, her bir nottan.
+
+388
+01:32:47,123 --> 01:32:59,203
+Aşağıya doğru inen farklı petlerin her birinin red, black node height'ı birbirine eşit olmak zorunda. Böyle bir denge var. Bunu sağlayacak şekilde biz implemente ediyoruz.
+
+389
+01:32:59,203 --> 01:33:12,763
+Şu özelliklere bir bakalım. Bu özellikler bize ne diyor? Her bir node ya siyahtır ya da kırmızıdır. Root siyah olmak zorunda. Yapraklar siyah olmak zorunda.
+
+390
+01:33:13,268 --> 01:33:38,488
+Eğer bir not kırmızıysa bunun iki tane siyah çocuğu olmak zorunda. Yani ikisi de siyah olmak zorunda. Her bir not için bu nottan aşağıya doğru yapraklara giden her farklı pet'teki black notların sayısı aynı olmak zorunda. Bu beşincisi örneğimle bu benim ağacımın dengeli olmasını sağlıyor. Bu özelliklerin her seferinde her modifikasyondan sonra bu özelliklerin korunup korunmadığını check ediyorum.
+
+391
+01:33:38,863 --> 01:33:45,263
+Bu sayede ağacımı her seferinde maintain edip düzgün dengeli halde tutmuş oluyorum. Tamam mı?
+
+392
+01:33:46,543 --> 01:33:49,863
+Şimdi bu genel görünümle alakalı bir soru var mı?
+
+393
+01:33:52,183 --> 01:34:03,863
+Yoksa bu ağacın hala nasıl böyle bir yapı derken en üzerinden en eleman sayısı olmak üzere
+
+394
+01:34:04,404 --> 01:34:12,884
+Logan karmaşıklıkta olduğunu nasıl proof edebiliriz? Bir ona bakacağız. Ha buraya koymuşum onu zaten.
+
+395
+01:34:15,884 --> 01:34:24,504
+Red Black Tree with an internal load has height at most to logaritma n artı bir. Bunu proof edelim bakalım.
+
+396
+01:34:26,324 --> 01:34:28,444
+Şimdi sizin biraz proof tecrübeniz oldu.
+
+397
+01:34:30,131 --> 01:34:32,091
+Bu lemayı proof etmek ister misiniz?
+
+398
+01:34:34,411 --> 01:34:40,211
+Sınıftaki arkadaşlara ve şey, online sınıftaki arkadaşlara da soruyorum.
+
+399
+01:34:42,551 --> 01:34:44,192
+Biraz uğraşmak ister misiniz?
+
+400
+01:34:51,371 --> 01:34:52,051
+Tamam.
+
+401
+01:34:52,991 --> 01:34:54,291
+Proof edelim o zaman birlikte.
+
+402
+01:34:55,231 --> 01:34:56,451
+Şunu proof etmeye çalışıyoruz.
+
+403
+01:34:56,531 --> 01:34:57,071
+Şimdi bakalım.
+
+404
+01:34:58,100 --> 01:35:18,100
+Benim dedim ya size, şöyle bir ifadem var kullandım. Bu Black Height of the node x. X'in siyah nod uzunluğu.
+
+405
+01:35:24,979 --> 01:35:38,099
+Şimdi, X'in root olduğu bir X ifadesi düşelim. Bunun root olduğu bir alt ağacın, X'in root olduğu bir alt ağacın,
+
+406
+01:35:44,724 --> 01:35:56,564
+2 üzeri BH diyelim ona BHX kadar ara nodu vardır. Leaf hariç diye bir şey söylüyorum ben. Bakalım bu doğru mu?
+
+407
+01:35:58,564 --> 01:36:01,344
+Mesela şurayı şöyle bir şeyle alalım.
+
+408
+01:36:02,384 --> 01:36:02,704
+10
+
+409
+01:36:02,704 --> 01:36:06,744
+7
+
+410
+01:36:06,744 --> 01:36:09,744
+3
+
+411
+01:36:11,315 --> 01:36:12,844
+O da nil osso.
+
+412
+01:36:17,300 --> 01:36:29,699
+Şu Black olsun. Şöyle. Elimde resim çizilme yarayacak bir tablet varken niye Black ve kırmızıyı böyle siyah beyaz yapıyorum diye soracak olursanız işte onu.
+
+413
+01:36:32,220 --> 01:36:33,720
+X'in 10 olduğunu düşünelim.
+
+414
+01:36:36,692 --> 01:36:52,672
+X olsa X'in root olduğu bir ağaçta kaç tane en az not olabilir ve bunu BH üzerinden yani Black Height of the Note üzerinden nasıl formülize edebiliriz? Eğer X olsa, bakın şöyle oluyor mu gerçekten? Şöyle aslına bakarsanız. Bunda da bir eksi biri var.
+
+415
+01:37:02,000 --> 01:37:29,060
+Şunun height'ı da bir. Çünkü sadece bu var. Nil Black'ti ya. 3 red, 7 de Black. Onun için bu ikiye çıkıyor. Çünkü hem 7 Black hem de Nil Black. Bunların her bir nodun height'larını yanlarına yazdım. Dolayısıyla mesela x'in root olduğu şu subtree'den bahsediyorsam bu formülde ne geliyor karşıma? 2 üzeri 2, eksi 1, yani 3. Hakikaten 3 tane mi? Evet 3 tane. Mesela x 3 olsaydı ne olacaktı?
+
+416
+01:37:30,000 --> 01:37:57,359
+Üzeri bir, eksi birden bir tane. Dolayısıyla, ruttan yaprağa doğru giden herhangi bir petin, şimdi şunu inceleyeceğim. Bunu buldum. X'in rutt olduğu bir alt ağaçtaki not sayısı bu. Leaf hariç. Bu sayıyla ifade ettim. Şimdi peki şuna bakalım. Ruttan yaprağa doğru giden herhangi bir pet düşünün.
+
+417
+01:37:58,676 --> 01:38:20,896
+Bunun en az ne kadarı black olmuş? Şöyle. Şu. Root'dan yaprağa doğru. En az ne kadarı black olmuş? Log ile bilgisi yok değil mi? En az yarısı black olmak zorunda. Daha da çok olabilir.
+
+418
+01:38:25,011 --> 01:38:36,011
+Dolayısıyla orada ben ağaç sayısını, onun da yarısı. Eleman sayısını en olarak söylüyorsun. Petin yarısı dedim ben. Petin yarısı.
+
+419
+01:38:36,011 --> 01:38:52,831
+Petin yarısı. En üzerinde tamam, bu petin yarısı dediğin gibi eğer ense. Niye? Çünkü her bir red için iki tane kırmızı ortaya çıkıyor her seferinde. Dolayısıyla sizin en az yarısını daha da fazla olacak zaten. Büyük ihtimalle daha fazla olacak. Ama en azından yarısını.
+
+420
+01:38:53,011 --> 01:39:05,351
+Birek olması gerekiyor. Dolayısıyla yani bu şu kural dördün sonucu aslına bakarsanız. Kuralları nereye koydum ben? Şu mu kurallar? Şu kural dördün sonucu. Dolayısıyla.
+
+421
+01:39:10,868 --> 01:39:27,868
+Aslında şöyle bir şey yazabilirim. H bölü 2. Bu aslında benim şu ifade. Black height of the node. H bölü 2'ye denk geliyor. En az. O zaman ben şöyle diyebilirim.
+
+422
+01:39:38,836 --> 01:39:44,896
+En az not sayım bu olacağına göre enim bundan büyük olmak zorunda. Total enim bundan büyük olmak zorunda.
+
+423
+01:39:46,576 --> 01:39:49,076
+Şimdi dolayısıyla şu biri şuraya geçirelim.
+
+424
+01:39:50,116 --> 01:39:53,736
+Diyeceğim ki ama şunları da bozmak istemiyorum. Bunlar çok mu aşağı doğru?
+
+425
+01:39:55,416 --> 01:39:58,236
+Bayağı da bir şey varmış. Şu yanına yazalım o zaman.
+
+426
+01:39:59,236 --> 01:40:05,956
+O zaman diyeceğim ki en artı bir büyük eşit iki üzeri haş bölü iki.
+
+427
+01:40:06,676 --> 01:40:32,056
+Bunların karşılıklı logaritmalarını alıyorum. Logaritma n artı bir büyük eşit. Logaritma iki üzeri h bölü iki oluyor. Dolayısıyla şurası dışarıya h bölü iki diye çıkıyor. İki tabanında olduğu için logaritma. Logaritma n artı bir büyük eşit h bölü iki oluyor. Yani iki logaritma n artı bir büyük eşit h oluyor.
+
+428
+01:40:34,547 --> 01:40:47,328
+Yani benim ağacımın derinliğe logaritma n artı bir çarpı ikiden küçük olmak zorunda. Ama bu karmaşıklık açısından şuradaki katsayı ignore ettiğimizde o logene denk geliyor.
+
+429
+01:40:48,228 --> 01:40:53,307
+Dolayısıyla yine prüf etmiş oldum. Banner'ı bir özelliği olduğunu bu ağacın da.
+
+430
+01:40:58,804 --> 01:41:19,804
+Şimdi Burası tamamsa şöyle yapayım. Rotatelerim var ama onları şu örnekler üzerinde göstermeden önce şurada basit bir şekilde şunun yanında anlatmak istiyorum size. Şimdi insert ve delete işlemleri için
+
+431
+01:41:20,243 --> 01:41:38,884
+Red Black Tree'de modifikasyonlar yapmamız gerekiyordu. Bu modifikasyonları yapabilmek için Rotation'lar denen küçük işlem adımları var. Onlardan fayda alacağız. Rotation'ları aslında Structure'ını değiştirmeye yarıyor. Pointer'lar üzerinde oynama yapıyorsunuz yani. İki çeşit Rotation var.
+
+432
+01:41:41,703 --> 01:41:42,783
+Aslında ben sonsuz
+
+433
+01:41:45,140 --> 01:41:51,240
+Büyüklükte bir ekrana sahipken, niye kendim acaba böyle tahtadermiş gibi hissederek?
+
+434
+01:41:59,475 --> 01:42:25,975
+Bir tane Netflix'te dizi miydi acaba ya? Google Earth'la alakalı bir şey vardı. Milyon Dolar Code. İzlediniz mi onu? İzleyin mutlaka. Çok güzel. Bayağı oldu izleyin ama. Hadi hadi şimdi. Sanki övrünüzü oynayınca sürekli çalışıyorsunuz. Evet. Şimdi. Onu bir izleyin ama gerçekten. Ben beğendim. Tavsiye ediyorum.
+
+435
+01:42:26,804 --> 01:42:34,443
+Bilyon dolar kod. Yanlış hatırlamıyorsam. Şimdi, rotation nasıl bir şey? Onu göstereyim size.
+
+436
+01:42:51,220 --> 01:42:56,699
+Sonsuz deyince aklıma geldi de Google Earth'in implementasyonuyla alakalı bir problemi çözüyorlardı orada.
+
+437
+01:42:57,899 --> 01:43:03,380
+Kendi plane'im, mütevazi plane'im attığı onu getirdi.
+
+438
+01:43:03,380 --> 01:43:13,980
+Şimdi arkadaşlar şu tarafa doğru, bakın şuradaki küçük ağacın left rotation'a şu ağacı oluşturuyor.
+
+439
+01:43:14,199 --> 01:43:14,939
+Left rotation.
+
+440
+01:43:25,460 --> 01:43:27,259
+Şu tarafa doğru da Right Rotation.
+
+441
+01:43:35,731 --> 01:43:54,251
+Y üzerinden. Yani aslında yaptığımız şey şu. X üzerinden left rotation yaptığınızda X'in sola geçmesini sağlıyorsunuz. Y üzerinden right rotation yaptığınızda Y'nin sağ geçmesini sağlıyorsunuz. Bunlar birbirinin komplementi işlemleri.
+
+442
+01:43:54,251 --> 01:44:02,131
+Ve şeyleri de bunların çağrıları da aynı şekilde yeni yerlerine yerleşiyorlar. Yapıyı bozmayacak şekilde.
+
+443
+01:44:03,604 --> 01:44:17,144
+Mesela L-Trotation yaptığımız zaman X ağaç üzerinde çağrı nal olmayan bir node olmak üzere Y artık subtrainin yeni root'u oluyor.
+
+444
+01:44:18,064 --> 01:44:27,264
+Ve Y'nin left çağrılarının tamamı X'e geçmiş oluyor. Bunun gibi. Bunlar karşılıklı birbirlerine komplementi olan işlemler.
+
+445
+01:44:27,884 --> 01:44:30,123
+Şimdi şurada daha geniş bir örneği var bunun.
+
+446
+01:44:33,427 --> 01:44:51,207
+Mesela şuradaki ağaca left rotate yaptığınızda ne oluyor? Alttaki ağa çalışıyor. X üzerinden left rotate yapmışsınız. X'i artık left'e geçiriyorsunuz ve Y'yi root haline getiriyorsunuz. Dolayısıyla şu eksende Y yukarıya çıkıyor. X aşağıya iniyor.
+
+447
+01:44:52,207 --> 01:45:00,927
+Y'nin soldaki çağrıları, X'in sağdaki çağrıları haline geliyor. Diğer yapılar değişmiyor zaten.
+
+448
+01:45:01,492 --> 01:45:14,252
+Bunu modifikasyonda kullanacağız. Ben kodlarını çok yazmadım diye hatırlıyorum. Biraz böyle şey üzerinden gideceğiz. Örnekler üzerinden gideceğiz. Ama şey bu. Genel yapısı bu.
+
+449
+01:45:15,891 --> 01:45:20,851
+Şimdi, var mı soru? Bakayım. Kimsenin sorusu yok.
+
+450
+01:45:23,351 --> 01:45:28,092
+Şimdi bakın şu. Insert Normal Binary Tree.
+
+451
+01:45:29,171 --> 01:45:55,231
+Şu normal binary tree insert. Bunu ilk derste gördük. Şu red black tree'nin insert. Aslına bakarsanız şu kısıma kadar tamamen aynı. Asıl burada işi, şuradaki insert fix up fonksiyonu yapıyor. İşte bu insert fix up fonksiyonu renk değiştirmelerle ve rotaşınlarla modifiye ediyor. Yaptığı şey o. Şuradaki üç tane kod daha.
+
+452
+01:45:56,212 --> 01:46:17,971
+Yeni eklenecek olan nodun left, right çağırlarını nallıyor ve color'ını her seferinde başta red olarak atıyor. Yani yeni bir nod ekleyecekseniz onu red olarak ekliyorsunuz mutlaka. Ondan sonra o zaman içerisinde onun bağlı olduğu parentler ve komşuları renk değişimine uyurayabilirler.
+
+453
+01:46:23,636 --> 01:46:40,976
+Kodunu kitapta da var, ders kitabında da var, internette de bulabilirsiniz ama ben burada şimdi onu anlatmayacağım size. Kural tabanında bir şey aslında bakarsanız. Dolayısıyla işte takip ettiği bir takım kurallar var. Onun üzerinden sonucu görüyorsunuz.
+
+454
+01:46:40,976 --> 01:46:50,195
+Şimdi, şurası mı bakayım? 13-4. Evet, şu şekli üzerinden inceleyelim bir insert işlemini.
+
+455
+01:46:55,028 --> 01:47:08,508
+Şimdi şurada dördü insert etmeye çalışıyorum. İlk başta dört yok. Şöyle bir görüntü var. Dördü insert edeceğim. Dördü binary tree'yi takip eder gibi takip ediyorum. Yerini buluyorum ve kırmızı olarak ekledim.
+
+456
+01:47:12,008 --> 01:47:18,628
+Şimdi burada bunu ekledikten sonra beşin soluna yerleşti bu. Rengi kırmızı.
+
+457
+01:47:19,315 --> 01:47:27,555
+Ama kurallara uymayan bir durum var. Şuraya kuralları yanına getireyim. Daha böyle rahat koyalım. Şu kurallar üzerinden kontrolünü yapacağız çünkü.
+
+458
+01:47:35,347 --> 01:47:36,288
+Kuralları görelim.
+
+459
+01:47:39,887 --> 01:47:43,108
+Şimdi burada hangi kurallar ihlal edilmiş durumda şu an?
+
+460
+01:47:52,372 --> 01:48:17,372
+Mesela beş ihlal edilmiş mi? Hayır. Beşte sorun yok. Ama dört ihlal edilmiş. Çünkü eğer bir not kırmızıysa black olması gerekiyor çocuklarının. O ihlal edilmiş durumda. Burada işte bir düzenleme yapmamız gerekiyor. Hem Z hem de Z'nin parent'ı kırmızı çünkü. Dolayısıyla...
+
+461
+01:48:17,908 --> 01:48:31,188
+Bunu en basit, nasıl çözebiliriz? Şunu siyah yapalım demişiz. Bunu siyah yapmışız. Ama bu durumda ne yapmamız gerekiyor? İki tane bunu siyah yapınca şunu kırmızı yapmak gerekiyor.
+
+462
+01:48:32,212 --> 01:49:00,112
+Çünkü siyah kalması durumunda beşinci kuralı ihlal ediyor. Bakın şu da siyah olsaydı, yedi de siyah olsaydı, beş de siyah olsaydı, o zaman beşinci kuralı ihlal etmiş olacaktınız. Her petten, mesela şuradan şuraya giderkenki bilek sayınız, buradan buraya giderkenki bilek sayınız eşit olmayacaktı. Dolayısıyla bunu kırmızıya döndürmek zorunda kaldınız. Bunu kırmızıya döndürürüz, bunu siyaha döndürmek zorunda kaldınız. Çünkü bir kırmızının iki tane siyahı olmak zorunda gibi.
+
+463
+01:49:00,212 --> 01:49:04,212
+Bu tarz kurallar sesini uygulamak zorunda kalıyorsunuz.
+
+464
+01:49:12,212 --> 01:49:15,212
+Sonraki değil bir daha söyler misin?
+
+465
+01:49:15,212 --> 01:49:21,212
+Dört mü? Dördü zaten algoritma gereği hep kırmızı ekliyoruz. Bak burada var.
+
+466
+01:49:22,547 --> 01:49:29,947
+Siyer ekleseydik algoritmayı baştan yazabilirsin. Ona göre kuru hasretini tanımlarsın. Oluyorsa haftaya bize söylersin.
+
+467
+01:49:29,947 --> 01:49:35,267
+Yani yirmi noktada. Yine olmayacak.
+
+468
+01:49:38,207 --> 01:49:48,287
+Aynen. Siyer eklediğiniz zaman otomatikman zaten bir baştan bozuyorsunuz beşi. O yüzden kırmızı eklemek daha maksızlı görünüyor. Şimdi
+
+469
+01:49:49,108 --> 01:50:00,467
+B'yi yaptım. B'ye ulaştım. Buradan şimdi bir adım daha ilerlemem gerekiyor. B ortaya çıktıktan sonra. Şimdi dikkatimi çekiyor burada benim.
+
+470
+01:50:09,332 --> 01:50:36,412
+Yedi ve ikinin ikisinin de kırmızı olduğunu görüyorum. Burada yine bir kural ihlali var. Bunu değiştirmem gerekiyor. Şimdi burada bir rotation yapıyorum. Nasıl bir rotation yapıyorum? Left rotation yapıyorum. İkiyi sağlıyorum. İkiyi sola alıyorum. Yedinin parent haline geliyor. Bakın şurada.
+
+471
+01:50:41,268 --> 01:50:51,367
+Yedi Perot oldu. Ben de bir gözüm kaydı şimdi. Yedinin left çağında ikinin sağa çağında oldu demişim. Yedinin left çağında ikinin sağa çağında oldu ve C oluştu demişim.
+
+472
+01:50:51,648 --> 01:51:15,347
+İki ile yedi arasında bir left rotation yaptım. İki ile yedi arasında left rotation yaptım. Dolayısıyla yedi'yi sola aldım. Yedi buraya geldi. Parent'a geldi. İki onun çocuğu oldu. Yedinin soldaki çocukları da ikinin sağdaki çocukları arasına geldi. Dolayısıyla şu hale geldi en son benim ağacım.
+
+473
+01:51:16,083 --> 01:51:34,723
+Burada da yine 7'nin iki tane çaldı var ama farklı renkteler. Burada da bir kural ihlali var. Dolayısıyla burada da yine bir dizi işlem gerçekleştirmem gerekiyor. Burada 7 ile 11 arasında bir rotation yapıyorum bu kez. 7 ile 11 arasında right rotation yapıyorum.
+
+474
+01:51:35,475 --> 01:51:56,315
+Yani on bir yedinin sağında olacak şekilde çeviriyorum. Ve yine beşinci özelliği ihlal etmesin diye de onu kırmızıya boyuyorum. Renk değişikliği yapıyorum. On biri. Dolayısıyla artık şu hale geldi. Burada tüm bu koşullarım, şuradaki koşullarım sağlandı.
+
+475
+01:52:03,764 --> 01:52:30,384
+Rb insertte bir bakalım. Kodu şuradaydı bakın. Şu kısımın karmaşıklığı aynı normal insertteki gibi logen. Pixup'ın karmaşıklığı o da logen. Dolayısıyla benim total karmaşıklığım yine logen oluyor. İki tane logenden logen oluyor. Balans bir şey haline getirdim.
+
+476
+01:52:33,300 --> 01:52:37,700
+Şimdi Bir de B Tire'lere giriş yapalım.
+
+477
+01:52:42,420 --> 01:52:44,420
+Eğer burası tamamsa...
+
+478
+01:53:06,739 --> 01:53:28,460
+Red Black Triler gibi Balance Search Triler aslında. Disk gibi secondary storage device'ları kullanmak için, Direct Aksis için kullanılıyorlar. Red Black Triler'e benziyorlar ama IO işlemlerini minimize etmede daha iyiler. Pek çok database sistemde de kullanılıyorlar. Bunların varyasyonları tabii.
+
+479
+01:53:30,355 --> 01:53:52,775
+Şimdi B-Tree'ler Red-Black Tree'lerden farklı olarak Balans Faktör diye bir şey bahsetmiştim ya siz de hani Radix ağacında. Oradaki gibi çok çocuklu olabiliyor. Branching Faktör, pardon yanlış söyledim. Çok çocuklu olabiliyor. Geniş ağaçlar oluşabiliyor yani. Örneğin bir B-Tree örneği çizelim şuraya.
+
+480
+01:54:04,627 --> 01:54:05,627
+Şimdi.
+
+481
+01:54:25,652 --> 01:54:26,372
+Şöyle.
+
+482
+01:54:46,228 --> 01:54:48,228
+Şöyle çizden daha önce görelim.
+
+483
+01:55:10,228 --> 01:55:11,528
+Şurayı da şöyle uzatalım.
+
+484
+01:55:40,051 --> 01:55:54,931
+Bu İngilizce sessiz harfleri içeren bir battery aslında. Her internal node'un içerisinde X, ya bu internal node mesela, X'e X nokta N tane key olsun her bir internal node'da.
+
+485
+01:55:55,171 --> 01:56:06,851
+Her bir internal node için X nokta N artı bir tane çocuğu oluyor her bir node için. Bu ne demek? Mesela burada M var.
+
+486
+01:56:07,956 --> 01:56:25,576
+M'den küçük olanlar ve büyük olanlar için iki tane nodu ayrıldı. Buradaki ki sayısı birdi. Bu dodun iki tane çocuğu oldu. D ve H var. Buradaki ki sayısı iki. Bunun üç tane çocuğu var. Çünkü D'den küçük olanlar, D ile H arasında olanlar ve H'den büyük olanlar diye ayrıldı.
+
+487
+01:56:26,996 --> 01:56:54,296
+Burada Q, T ve X 1, 2, 3 ve 4'e ayrıldı. Q, Q, T arası, T, X arası ve X'den büyük olan var diye. Dolayısıyla mesela R'yi aramak için, diyelim ki R'yi arıyorum ben. M'ye geldim. M'den büyük olduğu için bu tarafa geldim. Şu modu da gezdim. Ve R'yi buldum. Bu tarafa notlar üzerinde gezerek search'ımı yapıyorum.
+
+488
+01:56:59,123 --> 01:57:08,123
+Şimdi normalde biliyorsunuz datalar çok geniş olduğunda aslında bu bizim için önemli oluyor. Her seferinde disk akses vakit kaybettiği için.
+
+489
+01:57:08,123 --> 01:57:19,123
+Btree'ler istenen peyçileri diskten çekiyorlar, değişiklik yapıyorlar, üzerlerinde saklıyorlar ve yazıyorlar bir şekilde yani bir seferde.
+
+490
+01:57:19,123 --> 01:57:26,123
+Dolayısıyla disk deyen okuduğu okuma yapma sayınız ve yazma sayınız aslında Btree algoritmasının çalışma zamanını...
+
+491
+01:57:26,355 --> 01:57:41,956
+Etkiliyor. Diskten bir seferde okuyacağınız miktar disk peyciniz aslında sizin şu nodlarınızdaki key sayınızda doğru orantılı. Ona göre ayarlama yapmanız gerekiyor.
+
+492
+01:57:43,435 --> 01:57:45,355
+Şimdi mesela şöyle bir...
+
+493
+01:57:55,060 --> 01:57:57,100
+Mesela bin tane atıyorum.
+
+494
+01:58:03,188 --> 01:58:09,488
+Key olsun, root'da. Bu root'un kaç tane child olacak bu durumda?
+
+495
+01:58:12,488 --> 01:58:27,588
+Kaç? Bin bir tane, bir fazlaydı ya. Bin bir tane. Böyle. Pıt pıt pıt pıt. Her birinde biner tane olsa bunlardan bin bir tane var. Böyle böyle.
+
+496
+01:58:28,404 --> 01:58:36,404
+Sonra bunlardan kaçar tane, her birine kaçar çaldı var? Yine bin bir tane. Yani sizlerin diskten okuyacağınız o...
+
+497
+01:58:37,043 --> 01:59:04,064
+hardware spesifikasyonundan dolayı bir page alacaksınız ve o page'i tutacaksınız. Dolayısıyla sizin disk üzerinizdeki bu mekanik kısıtlardan dolayı belirlediğiniz bu disk page'i, nodumuzun genişliğini belirliyor aynı zamanda. Dolayısıyla sizin mesela binse eğer ki'iniz bin bir tane çağrınız olacak. Bu böyle ilerleyecek. İlerledikçe, derinleştikçe tutacağınız bilgi miktarı tabii ki artıyor. Şimdi mesela bunda da bin var.
+
+498
+01:59:05,747 --> 01:59:32,507
+Bundan da bin bir tane var. Böyle gidiyor bunlar. Her birine yine bir tanesini çizeyim sadece göstereyim. Bir notta bin tane ki var. Bin bir tane notta şu notlar. Bunlardan bin bir tane var. Bin bir çarpı bin tane ki var.
+
+499
+01:59:38,899 --> 02:00:02,139
+Bin bir çarpı bin tane bin bir ile yani şununla bin biri çarptığımız zaman yine bu kadar nod var bir diğer seviyede. Dolayısıyla şu iki bu arada. Dolayısıyla bu kadar da ki var. Bu ne demek?
+
+500
+02:00:02,771 --> 02:00:23,492
+Eğer benim height'ım iki ise, yani yüksekliğim iki ise bu ağaçta ve branching faktörüm bin bir ise ve height'ım iki ise o zaman bir milyondan fazla key'i tutabiliyorum demek ben bu yapıda.
+
+501
+02:00:25,252 --> 02:00:29,391
+İki aksesle sadece ağaçtaki herhangi bir key'i alabiliyorum demek.
+
+502
+02:00:30,323 --> 02:00:39,163
+Dolayısıyla oldukça efektif oluyor bu anlamda. Ama tabii bunun varyasyonlarına bakacağız. Şimdi şu önümüzdeki hafta için.
+
+503
+02:00:42,743 --> 02:00:44,644
+Fazla mı yazdım sıfırları?
+
+504
+02:00:48,644 --> 02:00:50,703
+Ama bu hesapta.
+
+505
+02:00:53,076 --> 02:00:54,076
+Şöyle düşünelim.
+
+506
+02:00:54,076 --> 02:00:56,076
+Ne yapalım?
+
+507
+02:00:56,076 --> 02:01:03,076
+Ne fark eder ya? İki tane sıfır koyacağım fazla.
+
+508
+02:01:03,076 --> 02:01:04,076
+Hayır.
+
+509
+02:01:05,652 --> 02:01:12,652
+Bu canın iki sayıda bir milyon daha çok mutlu olurdu. En az zaten. En az bir milyon.
+
+510
+02:01:12,652 --> 02:01:26,652
+En az, şu o kadar kötü bir bilgisayar kuralı ki bilgisayar yaprağı bir işaret etmesi lazım.
+
+511
+02:01:26,652 --> 02:01:30,572
+Her içerideki yaprağın bir tane lifi işaret etmesi lazım.
+
+512
+02:01:30,771 --> 02:01:38,011
+Toplam tutabileceği miktardan bahsediyorum şu anda, kapasitesinden. Zaten bunu çekecek ya, zaten dolu onlar. Diskten çekiyor o bilgileri.
+
+513
+02:01:39,452 --> 02:01:54,891
+Evet, gördük. Bilgiler için tekrar istiyor. O kadar bir kür 3, 4 khani bir kere meşebilmek için çok haklı olsun mesela bu halde. Çünkü her ikramı bir kere bir kere bir kere.
+
+514
+02:01:57,072 --> 02:02:00,471
+Ağacım. Çok daha fazla bir süreçlik demek söyledi.
+
+515
+02:02:01,171 --> 02:02:03,631
+Doğrudur. Tam anlamadım ne demek istediğimi.
+
+516
+02:02:04,771 --> 02:02:05,711
+Doğrudur.
+
+517
+02:02:07,091 --> 02:02:08,112
+Şimdi arkadaşlar.
+
+518
+02:02:12,051 --> 02:02:13,791
+Soru var mı bu arada?
+
+519
+02:02:15,971 --> 02:02:17,431
+Kimsenin sorusu yok.
+
+520
+02:02:20,020 --> 02:02:48,020
+Şimdi şu şeydeki arkadaşlara bir söyleyeyim, size söyledim ama. Arkadaşlar, içinizde Python'la alakalı kurs almak isteyen varsa, yarından itibaren, kaç seans kaldı bakayım? Yarın dahil olmak üzere üç seans, ikişer saatten. Portekiz'den bir misafir öğretim üyemiz var. Çok da böyle tatlı, esprili bir bey. Onunla Python devam ediyor olacağız. Bana mail atabilirsiniz, sizlere toplantı linkini paylaşacağız.
+
+521
+02:02:48,020 --> 02:03:05,359
+İlet edebilirsiniz arkadaşlarınıza bununla alakalı ilanlara. Şimdi normalde benim hedefim hala çok fikrim değişmedi. Haftaya sınıfları yapmak şeklinde. Çünkü bayağı oldu ben bunu şey yapalı size.
+
+522
+02:03:07,988 --> 02:03:20,667
+Yani öyle düşünüyorum ama ciddi bir mail terapiğine maruz kalırsam, tele öğrenci derdi bize Tevfik Hocamız. Siz Tevfik Hocayla tanıştınız mı? Tanışmadınız mı? Tevfik Hoca zamanında.
+
+523
+02:03:20,667 --> 02:03:22,028
+Aynı Tevfik Hocam.
+
+524
+02:03:22,028 --> 02:03:27,028
+Tevfik Hocam. Bir tane Tevfik Hocam. Demek ki tanışmamışsın.
+
+525
+02:03:27,028 --> 02:03:29,516
+Tamam, tamam.
+
+526
+02:03:29,811 --> 02:03:55,212
+Öyle mi? Tevfik hocamız çok severiz kendisini. O tele öğrenci derdi bize. Tele öğrenci. O zaman böyle şey yoktu. İşte internetle mailleşme bile çok fazla yoktu. Bir ara başlamış bir mail trafiğine bombardımanına maruz kalmış kendisi. Onun gibi eğer çok böyle istek olursa bir düşünürüm ama şu anki şeyim, düşüncem sabit. Tamam mı arkadaşlar? Şimdi, sunumlar için beklentim şu.
+
+527
+02:03:55,796 --> 02:04:06,895
+Raporunuzu göndermeniz için size bir deadline tarihi. Yine bir döküman hazırlayıp dersin duvarından anons edeceğim. Raporlarınızı önden göndereceksiniz.
+
+528
+02:04:08,180 --> 02:04:35,460
+Yine oraya yazacağım kişi sayısına bakarak 15 dakika gibi bir şey düşünüyorum. Çok uzun bir sunum olmayacak. Sizden istediğim şey, benim derste anlatmadığım şeyler mutlaka içinde olacak bu şeylerin. Hiç kimse bilmiyormuş gibi temel bir bilgiyi böyle biraz vermeniz, tam ortasından harç diye girmek yerine anlattığımızda arkadaşlarınızın aşina olabileceği kadar ama sonrasında mutlaka güncelliği takip etmeniz benim için önemli.
+
+529
+02:04:36,180 --> 02:04:59,360
+Bunu işte bir paper okuduğunuzda ne yapıyorsunuz? Referanslarıyla bahsediyorsunuz değil mi? Hani bir akademik bir çalışma olduğunu unutmadan. Daha çok, daha çok demeyeyim. Tabii ki kendinizi, eksiklerinizi daha pratik kapatmak adına web kaynaklarından yararlanırsınız ama paperlar üzerinden, güncel paperlar üzerinden bana anlatmanızı, bizlere anlatmanızı bekliyorum.
+
+530
+02:05:00,212 --> 02:05:15,512
+Sunumla alakalı takvimi de yine hazırlayacağım dokümanda paylaşacağım. Saatleri dokuza çekeceğim. Sunum yapmakla alakalı bir sıkıntımız varsa kişisel bir şey olabilir vs. bana yazın mutlaka. Onu bir şekilde çözeriz.
+
+531
+02:05:16,732 --> 02:05:24,332
+Onun dışında önemsiyorum bunu. Gizeye çok takılmayın. Onu küçük tutacağım. Bunu büyük tutuyorum. Tamam mı?
+
+532
+02:05:27,283 --> 02:05:30,364
+Evet ama en son gönderenlerden başlayacağım.
+
+533
+02:05:35,324 --> 02:05:38,724
+Dersin nesi gerilimli ya? Ben gerilimli mi hiç sanmıyorum?
+
+534
+02:05:39,604 --> 02:05:47,243
+Ders mi gerilimli? Niye öyle? Bana bir feedback verin ya. Zaten yüzünüzü görmeden derste anlatmak çok zor.
+
+535
+02:05:50,515 --> 02:06:06,416
+Ne olacak biraz? [öğrenci]'in de akrepli var. Nasıl? İşleyeceğiz canım. Zaten o sunumları en fazla iki haftada bitiyor. Derse devam.
+
+536
+02:06:07,283 --> 02:06:19,323
+O kadar, sadece iki hafta ara veriyoruz. Sonra muhtemelen iki hafta kalıyor zaten. On bir, on ikinci haftalar sunumla geçiyor. On üç ve on dörtte ders işleyeceğiz. Daha bitmedi konularımız. Ondan sonra final oluyor zaten.
+
+537
+02:06:24,943 --> 02:06:28,743
+Uzatmıyorum sözüme sadığım. Tamam mı?
+
+538
+02:06:30,743 --> 02:06:32,543
+Hocam, bir şey sorayım.
+
+539
+02:06:33,587 --> 02:06:38,988
+Bir daha söyler misin? Evet.
+
+540
+02:06:50,868 --> 02:07:11,148
+Ona sen karar vereceksin. Perception Hashing'i içeriyorsa tabii ki içinde onlar biraz multimedya işlediği için Perception Hashing. Evet, Deep Learning mutlaka girmiştir işin içine. Onlardan da bahsetmende fayda var. Ama hani kontepti kaldırmadan yani konu Deep Learning değil ama evet ondan faydalanıyorsa tabii ki onu söyleyeceksin. Bahsedebilirsin.
+
+541
+02:07:12,787 --> 02:07:13,467
+Duymadım?
+
+542
+02:07:23,567 --> 02:07:29,667
+Bilmeyenlere yol yatarızız gibi ama sizin bilmeyen dediğiniz kişilerin hepsi sizin gibi belli bir seviyede olan çocuklar.
+
+543
+02:07:29,747 --> 02:07:33,427
+Lisans çocukları değil. O yüzden çok da bilginleri tutmaya gerek yok yani.
+
+544
+02:07:34,644 --> 02:07:56,224
+Ama mesela hakikaten hash fonksiyonları ve bitcoin, hani herkesin şeyi değil, uzmanlık alanı değil ya da kriptoloji. O yüzden bir başlangıcını evet tutmak lazım. İlgisi olanlar da sonra tekrar zaten şey yaparız, iletişime geçerler. Siz de böylece bir network oluşturmuşsunuz. Evet bir şey söylüyor galiba bir arkadaşınız.
+
+545
+02:07:56,819 --> 02:08:05,819
+Evet hocam, size bu konuların kategorisine belirlenmesin. Biraz geç e-mail yazdım.
+
+546
+02:08:06,819 --> 02:08:09,439
+Evet, cevap vermedim ben sana.
+
+547
+02:08:10,099 --> 02:08:11,880
+Hayır, cevapınız bekliyordu.
+
+548
+02:08:11,880 --> 02:08:12,760
+Çok mu geç yazdın?
+
+549
+02:08:13,679 --> 02:08:17,500
+Evet, bir hafta geç yazdım, setlediniz deadline'dan.
+
+550
+02:08:18,279 --> 02:08:20,260
+Deadline'dan bir hafta sonra yazdın.
+
+551
+02:08:20,719 --> 02:08:21,199
+Evet.
+
+552
+02:08:21,899 --> 02:08:24,139
+Yani geçen hafta yazdın o zaman.
+
+553
+02:08:24,819 --> 02:08:41,899
+Evet, teknik Üniversitesi. Ben atlamış olabilirim. Ben geç de olsa herkese konu verdim. Arkadaş da şahit değil mi? Bir gün mi senin ikisi geç? Senin ikisi çok değilmiş bak. Tamam şöyle yapalım. Ben sana döneceğim. Tekrar bana yazar mısın?
+
+554
+02:08:45,363 --> 02:08:58,103
+Evet, bir daha forward edeyim size. Tamam, teşekkür ederim. Süper olmuş. Tamam, teşekkür ederim. Ben teşekkür ederim. Peki neden daha önce bana hatırlatmadın? Çünkü gittiği bir zaman kaybetmişsin şu an.
+
+555
+02:08:59,444 --> 02:09:17,384
+Yani sınavlar geldi. Cevap verseydiniz de hocam zaten yeni başlayacaktım diyorsunuz değil mi? Evet hocam. Tamam peki. Tamam o zaman kendimi çok suçlu hissetmeyeyim. Bekliyorum eylemi. Ben aslında bugün dönüş yaparım tamam mı? Tamamdır. Teşekkür ederim. Teşekkür ederim.
+
+556
+02:09:18,963 --> 02:09:25,463
+Evet. Katılımcılarımız gitgide azalıyor arkadaşlar. Bakın 9'a düştük. Var mı soru başka?
+
+557
+02:09:26,484 --> 02:09:50,704
+Hocam, ben bir tane soracağım da. Benim konum blockchain için algoritmalar ve hash fonksiyonlarını kapsayacak şekilde bir araştırma yapacağım. Daha çok hash fonksiyonları ağırlıklı. Benim anlamadığım şey hash fonksiyonlarını araştıracağım ama ben hash fonksiyonlarını tam olarak neyini anlatacağım ben onu anlamadım. Ya hash fonksiyonu nasıl çalışıyor mu anlatacağım? Yoksa blockchain'de nasıl kullanılıyor mu? Yoksa her ikisi mi?
+
+558
+02:09:51,188 --> 02:10:00,000
+Yani şöyle, şimdi senin zaten süren kısıtlı yani 15 dakikalık bir konuşma yapacaksın. Burada herhangi bir tanesine öncelik verme şansın var. Bu biraz senin...
+
+559
+02:10:00,000 --> 02:10:27,420
+Raporunu da nasıl yapılandırdığınla alakalı. Önce niçin kullanılıyor? Mutlaka anlatmalısın. Nasıl bir fonksiyon kullanılıyor? Nasıl çalışıyoruz? Çok böyle sonuçta algoritma oluyor bazen paperlarda. Eğer anlatılabilecek bir şey olduğunu düşünüyorsan o vakitte nasıl çalıştığını da anlatabilirsin. Ama hani amacını, özelliklerini belki vurgulamak gerekiyor. O süre içerisinde sen onu organizasyonu yapabilirsin istediğin gibi.
+
+560
+02:10:32,148 --> 02:10:41,728
+Anladım hocam. Tamam peki. Hocam konu seçimine ilişkin ben de dönüşü almadım demiş [öğrenci]. Sen ne zaman yazdın [öğrenci]?
+
+561
+02:10:45,460 --> 02:11:06,760
+O zaman sen de tekrar forwardla bana. Zamanında yazdın. Bir de. Allah Allah. Herkese cevap döndü. Tamam ben bir kontrol edeceğim. Forwardlar mısın? O zaman bana gönderdin maili. Forwardla ben de tekrar maillerime bakacağım zaten. Ama sen iki haftadır o zaman hiçbir şey yapamadın.
+
+562
+02:11:09,203 --> 02:11:11,403
+Arkadaşlar.
+
+563
+02:11:11,763 --> 02:11:24,923
+Hocam bu dersin dışında herkes böyle bir araştırma bir şey veriyor. Yani sıraya koyunca bile en sonda ya bu oluyor ya en başta biri oluyor. Mutlaka bir haftanın içerisinde zaten araştırılıp bitirmesi gerekiyor.
+
+564
+02:11:24,923 --> 02:11:30,903
+Zaten diyorsunuz bir hafta hazırlayacaktır. O zaman ertelememin de bir anlamı yok. Şimdi ertelesem de siz son hafta hazırlayacaksınız.
+
+565
+02:11:31,403 --> 02:11:36,763
+Hocam ertelesem de bir sonraki hafta da seviner vesaire var. Hep böyle sıkışık arda arda geliyor.
+
+566
+02:11:37,203 --> 02:11:59,243
+Zor bir şey arkadaşlar. Takdir ediyorum size. Ne diyeyim? Toplu egzalist sesi yapacaksınız sandım. Ne demek istediğini anlayamadım. Ben herkese mail ile geri dönüş yaptım. O yüzden sen toplu bir şeye bekledin anladım o kadarıyla. Tamam [öğrenci], sen bana tekrar forwardla ben bir konsol edeyim olur mu?
+
+567
+02:12:02,103 --> 02:12:03,763
+Hocam ben de bir şey sorabilir miyim?
+
+568
+02:12:03,844 --> 02:12:04,043
+Tabii.
+
+569
+02:12:04,756 --> 02:12:14,616
+Bu hash fonksiyonları derken bizim derste öğrendiğimiz algoritmaları karşılaştırmamız mı istiyorsunuz? Yoksa internette genelde mesela Shell, MD5 falan onlar var.
+
+570
+02:12:15,036 --> 02:12:18,036
+Hash fonksiyonlarının karşılaştırılması hangi kişinin konu ne?
+
+571
+02:12:19,816 --> 02:12:21,016
+Ataklara karşı.
+
+572
+02:12:21,796 --> 02:12:27,756
+Aynen. Benim gösterdiklerim attack resistance olan fonksiyonlar değil zaten.
+
+573
+02:12:28,404 --> 02:12:46,163
+Dolayısıyla evet güncel olanları karşılaştırmanızı bekliyorum. Ben bu size verdiğim konularla alakalı story paperlar mutlaka var. Yani o şekilde zaten seçtim onları. Onlar da size yol gösterici olsun. Onlar üzerinden son olanlar üzerinden dallanarak tamamlayabilirsiniz araştırmanızı.
+
+574
+02:12:50,323 --> 02:12:55,323
+Tamam mı? Peki, başka soru var mı?
+
+575
+02:12:58,323 --> 02:13:05,803
+Rapor atacaksınız. Evet. Tabii tabii tabii, rapor atacaksınız.
+
+576
+02:13:06,224 --> 02:13:12,624
+Onu da şunun için istiyorum, ben eminim ki bu yazan arkadaşlarımızdan bir kısmı yapmayacak varsım gibi geliyor buna.
+
+577
+02:13:12,624 --> 02:13:17,624
+Çünkü şu an umutsuzluğa düştüm. Dokuz kişisiniz sadece. Teşekkür ediyorum herkese de.
+
+578
+02:13:17,624 --> 02:13:19,624
+Elli kişi bu ders ya, elli kişi.
+
+579
+02:13:29,043 --> 02:13:36,803
+Hayır yani de yani şimdi mesela katılanların ne kadarı neyse güzel olur her şey. Genç arkadaşlar.
+
+580
+02:13:36,803 --> 02:13:51,683
+Tamam.
+
+581
+02:13:56,979 --> 02:14:06,719
+Teşekkür ederim. Göndermişsin [öğrenci] Bakıcam ona şimdi. Bugün içerisinde bu maillerinize cevap vermiş olurum. İlgili dokümanı da hazırlamış olurum. Bebe koymuş olurum. Tamam.
+
+582
+02:14:07,252 --> 02:14:08,952
+Var mı soru arkadaşlar başkan?
+
+583
+02:14:09,352 --> 02:14:15,912
+Hocam orada soruldu galiba. Soruyu anlamadım ama bizim sadece raporu mu teslim etmemiz lazım? Sunumu teslim etmemize gerek yok herhalde.
+
+584
+02:14:15,912 --> 02:14:35,232
+Sunum yaptıktan sonra gönderirsiniz. Benim raporu belirli bir tarihe kadar almam gerekiyor. Sonra sunum üzerinde değişikliklerinizi yaparsınız. Ben size dökümanı hazırlarken sunum ve raporun yüzdelerini de yazacağım zaten. Baştan bilin oyunun kurallarını, ona göre oynayın. Tamam mı?
+
+585
+02:14:35,252 --> 02:14:46,852
+Hiçbir şekilde paperin özelliğinden arka arka kestalanmasını istemiyorum.
+
+586
+02:14:48,132 --> 02:14:53,732
+Biliyorsunuz ne şu chat GP işleri zaten görebilirsiniz.
+
+587
+02:14:55,072 --> 02:14:58,392
+Ben sizi kendi cümlelerinizle yazmanızı istiyorum.
+
+588
+02:14:58,996 --> 02:15:23,775
+Ve kendiniz bu aslında size bir şey olacak. Yani pratik olacak aslında. Belki bir sürü web paper yazarsınız ileride. Yani bir şeyleri nasıl birleştirir? Mesela bir paper yazarken onun introduction'una ya da related work'unu yazarken bile arka arkaya şu şöyle yapmış, bu başarı yapmış, şu şöyle yapmış, bu başarı yapmış diye yazmıyoruz. Onları belirli bir şekilde grupluyoruz. İyi yönlerini, kötü yönlerini ortaya koyarak yazıyoruz.
+
+589
+02:15:24,884 --> 02:15:26,884
+O şekilde bir çalışma bekliyorum.
+
+590
+02:15:26,884 --> 02:15:41,384
+O kadar durmuşsun artık yani.
+
+591
+02:15:41,844 --> 02:16:00,184
+Bir de ben ama şimdi şöyle de bir şey var. Benim kendi içimde öyle bir adalet anlayışım var. Ben bunu diyorum ki başından beri belki bu işine odaklandığı için, bunu yetiştirmek için diğer işlerini aksatan arkadaşlar, aa bilseydim ben de bu işi böyle yapmazdım. Niye ateledik hoca? Demezler mi? Demezler mi?
+
+592
+02:16:07,667 --> 02:16:16,547
+Tamam, düşüneceğim bu konuyu. Sizin en kısa zamanda cevabını söyleyeceğim.
+
+593
+02:16:17,427 --> 02:16:17,728
+Tamam mı?
+
+594
+02:16:19,387 --> 02:16:23,547
+Bugün yarın zaten dökümanı koyacağım. Orada tarihleri görürsünüz.
+
+595
+02:16:24,188 --> 02:16:24,608
+Tamam mı?
+
+596
+02:16:25,555 --> 02:16:27,416
+Bu arada sizden başka da soran yok.
+
+597
+02:16:30,336 --> 02:16:36,995
+Ama sizin de oyunuz üç kat hakikaten. Geldiniz buraya arkadaşlar. O da doğru. Bir şey diyemem. Yüz yüze gelen öğrencilerimin.
+
+598
+02:16:38,456 --> 02:16:43,195
+Evet, var mı arkadaşlar? Buradaki arkadaşlar diyorlar ki sesiniz gelmiyor belki de.
+
+599
+02:16:43,924 --> 02:16:59,884
+Acaba diyorlar, hocam bir hafta erteleyelim mi diyorlar. Ben de düzenli içerisinde bu işi yapmak için diğer işlerini aksatın arkadaşların hakkını gözettiğimden, ertelemesem mi diyorum, bu konuda talepleriniz varsa bana hızlıca iletebilirsiniz.
+
+600
+02:17:00,504 --> 02:17:02,944
+Hocam, demokrasi usulü oylama yapalım mı?
+
+601
+02:17:03,264 --> 02:17:06,004
+Demokrasi usulü oylama mı yapalım? Şu an dokuz kişisiniz.
+
+602
+02:17:06,548 --> 02:17:29,308
+Komiserim. Sizce bu çoğunluğu şey yapıyor mu, prezent ediyor mu bu kişiler şu an? Gerçi çok da önemli değil. Bence derse gelenler daha sorumlu insanlar. Bence de. O konu da en pekine. Ay arkadaşlar, tamam ben söyleyeceğim size söyleyeceğim. Normalde yumuşak kalpli bir insanım. Bugün şey yaparım. Tamam mı size? Okey.
+
+603
+02:17:34,804 --> 02:18:01,824
+Bir şey fark etmeyecekse yani [öğrenci]'ciğim. Evet, [öğrenci], en son [öğrenci] sunacak zaten. İlk o mail hatta. Donatanlar düşünsün inşallah. Erteleyelim demiş [öğrenci]. Tamam, hadi tamam, erteleyelim. Ben de çünkü şu B-Tri'leri falan bitirmek istiyorum. Arada kalsın istemiyorum. B-Tri'yi falan yarım kaldı. Onları bitireyim ben de madem.
+
+604
+02:18:02,611 --> 02:18:06,072
+Sadece bir hafta, tamam.
+
+605
+02:18:06,751 --> 02:18:07,491
+Teşekkür ederiz.
+
+606
+02:18:08,311 --> 02:18:09,291
+Ben teşekkür ederim.
+
+607
+02:18:10,731 --> 02:18:20,951
+Kapatıyorum. Arkadaşlar, görüşmek üzere. Önümüzdeki hafta dersiyle o zaman. İyi çalışmalar diliyorum size. Kapatıyorum.
+
+608
+02:18:21,851 --> 02:18:22,471
+Görüşmek üzere.
+
+609
+02:18:22,831 --> 02:18:25,912
+Görüşürüz.
