@@ -20,6 +20,7 @@
 
 ## 📖 Faydalı Olabilecek Kaynaklar
 
+- 📄 **Ders Kayıtları:** [Bilgisayar Sistemleri ve Ağ Güvenliği Ders Kayıtları](./ders_kayitlari/) ✨
 - 📄 **Not:** [Önder'in markdown notları](./slaytlar_notlar/2023/onder_gormez%20markdown) ✨
 - 📄 **Not:**[Zehra Aksoy'un Notları](./slaytlar_notlar/2024/zehra_aksoy) ✨
 - 📄 [Genel Çıkmış Sorular](https://drive.google.com/drive/folders/1imIiwx0xxIPWREGP-YqotnFdUku8Ealf)

@@ -1,0 +1,3935 @@
+1
+00:01:00,340 --> 00:01:01,960
+Duyuyor musunuz arkadaşlar beni?
+
+2
+00:01:05,555 --> 00:01:07,375
+Evet hocam, şu an sesiniz geliyor. Merhaba.
+
+3
+00:01:08,215 --> 00:01:11,835
+Merhaba. Şu an geliyor çünkü şimdi merhaba dedim. Konuşmaya başladım.
+
+4
+00:01:14,176 --> 00:01:19,295
+Birkaç daha arkadaşımızın olması lazım. O yüzden isterseniz bir iki dakika daha bekleyelim.
+
+5
+00:01:20,475 --> 00:01:27,256
+Az sayıda çünkü şu anda yedi kişisiniz. Epey bir alan arkadaşımız vardı.
+
+6
+00:01:31,796 --> 00:01:35,376
+3-5 dakika daha bekleyip, ondan sonra dersimize başlayalım.
+
+7
+00:01:35,376 --> 00:01:37,756
+Bak, zaten biri daha geldi, anladım.
+
+8
+00:04:08,243 --> 00:04:20,963
+Bugün için sadece bu kadar olacağız. Belki ders ilerlerken başka arkadaşlarımız da katılmak ister. Şimdi ekran paylaşımını başlatıp bugünkü konumuzu işleyeceğiz.
+
+9
+00:04:36,115 --> 00:04:38,656
+Ekran size de geldi değil mi şu anda paylaştığım?
+
+10
+00:04:41,656 --> 00:04:42,755
+Evet hocam geldi.
+
+11
+00:04:42,755 --> 00:04:58,475
+Şimdi hatırlarsanız geçen hafta kontrolü ele geçirme saldırısını incelemiştik. Temel saldırıyı inceleyip ondan sonra onun farklı varyasyonlarına da göz atmıştık.
+
+12
+00:04:58,475 --> 00:05:09,395
+En sonunda da demiştik ki önümüzdeki hafta bu saldırıya karşı nasıl bir tedbir uygulayabiliriz? Nasıl bir savunma uygulayabiliriz?
+
+13
+00:05:09,395 --> 00:05:11,395
+Bu haftaki temel konumuz bu.
+
+14
+00:05:14,435 --> 00:05:18,255
+Hatırlamak için söyleyelim. Bir stack smashing vardı.
+
+15
+00:05:18,615 --> 00:05:19,795
+Smash ezmek.
+
+16
+00:05:20,735 --> 00:05:21,875
+Stack'i eziyorduk.
+
+17
+00:05:22,635 --> 00:05:25,915
+Stack'te özellikle nereyi eziyorduk?
+
+18
+00:05:25,915 --> 00:05:30,975
+Bir geri dönüş adresini veyahut da bir function pointer'ı eziyorduk.
+
+19
+00:05:31,175 --> 00:05:40,915
+Ki o geri dönüş adresine veya function pointer'daki adrese referans verildiğinde program akışı bizim istediğimiz program parçasına gitsin.
+
+20
+00:05:42,555 --> 00:05:42,915
+Heap spraying.
+
+21
+00:05:44,415 --> 00:05:53,156
+Heap alanını o kadar fazla miktarda saldırı koduyla doldurdu.
+
+22
+00:05:53,156 --> 00:05:57,395
+Ama saldırı kodunu ümlede ne yerleştiriyorduk?
+
+23
+00:05:58,395 --> 00:06:03,596
+Null, şey, NOP slide yerleştiriyorduk.
+
+24
+00:06:04,196 --> 00:06:08,156
+NOP değerlerinden olacağın çok uzun bir bölge yerleştiriyorduk.
+
+25
+00:06:08,156 --> 00:06:19,355
+Böylece gözü kapalı denilebilecek olasılıkla bu saldırı kodunun çalışmasını sağlıyorduk.
+
+26
+00:06:20,235 --> 00:06:29,156
+İşte bunların haricinde serbest bırakılan dinamik alokasyonla alokiyet edildikten sonra serbest bırakılan bir alanın kullanılması.
+
+27
+00:06:29,156 --> 00:06:36,156
+Bununla alakalı Internet Explorer 11'deki bir hatayı gözden geçirmiştik.
+
+28
+00:06:38,156 --> 00:06:51,015
+İşte Attacker Rights to Freedom Control Structure, boşa çıkartılmış bir kontrol yapısına, veri yapısına saldırgan yazma şansına sahip oluyor.
+
+29
+00:06:51,015 --> 00:07:01,015
+Ondan sonra bu bir kontrol yapısı olduğu için saldırılan bilgisayar o kontrol yapısını tekrar kullandığında,
+
+30
+00:07:01,816 --> 00:07:11,295
+serbest bırakıldığının farkına varmadığında, tekrar kullandığında işin gerçeği ne yapmış oluyor?
+
+31
+00:07:11,775 --> 00:07:14,875
+İşte bir Function Pointer'ın kullanılmasını tetiklemiş oluyor.
+
+32
+00:07:15,816 --> 00:07:20,076
+Integer Overflow, Format String Vulnerability, bunları gözden geçirmiştik.
+
+33
+00:07:20,076 --> 00:07:36,135
+Şimdi buradaki temel sıkıntı şu, tedbiri alabilmek için önce problemi gördük, öğrendik, saldırının nasıl yapıldığını ayrıntısıyla gözden geçirdik.
+
+34
+00:07:36,255 --> 00:07:39,435
+Ama tedbiri alabilmek için bir şeyin daha farkına varmamız lazım.
+
+35
+00:07:40,435 --> 00:07:44,135
+Bu saldırı niye gerçekleştirilebiliyor?
+
+36
+00:07:45,375 --> 00:07:46,656
+Çok basit bir sebebi var.
+
+37
+00:07:46,655 --> 00:07:53,975
+Şimdi burada görmüş olduğunuz bir düdük, Captain Crunch diye geçiyor.
+
+38
+00:07:56,155 --> 00:08:01,775
+Amerika'da çok uzun seneler boyunca bütün Amerika kıtasında,
+
+39
+00:08:02,435 --> 00:08:06,655
+yani Amerika Birleşik Devletleri olarak düşünün neredeyse zaten kıtanın tamamını kaplıyor.
+
+40
+00:08:08,235 --> 00:08:13,875
+Eyaletler arası da olmak üzere telefon servisini veren tek şirket AT&T.
+
+41
+00:08:13,875 --> 00:08:23,795
+ve öyle bir noktaya geliniyor ki, şehir içinde diyelim veya eyalet içinde diyelim,
+
+42
+00:08:24,415 --> 00:08:30,216
+telefon için para ödemezken, eyaletler arası veya şehirler arası konuşurken bir para ödüyorsun.
+
+43
+00:08:30,216 --> 00:08:36,135
+şu dünya...
+
+44
+00:08:36,115 --> 00:08:57,355
+Tasarlayan kişi, Captain Crunch diye geçen kişi, şunun farkına varıyor. Ben bir numarayı aradığımda, eğer numara benim lokalimdeki bir başka numara değilse, yani diğer bir deyişle şehirler arası veya eyaletler arası bir arama yapıyorsam,
+
+45
+00:08:57,355 --> 00:09:20,415
+benim kulağımın duymayacağı bir frekansta karşı taraftaki santral gönderiyor ve karşı taraftaki santral bu sayede ücretlendirme yapacak mı, yapmayacak mı bunun kararını veriyor.
+
+46
+00:09:20,415 --> 00:09:34,096
+Yani eğer siz lokalde para attıysanız, jeton attıysanız veya para attıysanız, lokal bunu algıladığı için karşı tarafa bu sinyali gönderiyor ve diyor ki aslında,
+
+47
+00:09:34,816 --> 00:09:42,855
+evet burada ödeme yapıldı, o zaman sen bu telefon görüşmesinin devam etmesine izin verebilirsin.
+
+48
+00:09:42,855 --> 00:10:06,056
+Şimdi bu düdüğün tasarımcısı olan kişi, bu olayın farkına varınca hangi frekansta bu sinyalin gönderildiğini de çözüyor ve bu düdüğü tam of frekansta o sinyalin bir benzerini yapacak formda, içi öyle olacak şekilde tasarlıyor.
+
+49
+00:10:06,056 --> 00:10:17,495
+Sonuç, numarayı çeviriyorsunuz, karşı tarafla ilk bağlantı kuruluyor, karşı taraf aslında sizin para atmanızı bekliyor.
+
+50
+00:10:17,495 --> 00:10:37,035
+Para atmak yerine ahizeye bu düdükle üflüyorsunuz, çıkan sesi siz duymuyorsunuz ama karşı taraftaki santral bunu duyuyor, bunu fark ediyor ve para atıldı, jeton atıldı diye düşünerek bağlantının yapılmasına izin veriyor.
+
+51
+00:10:37,035 --> 00:10:47,296
+Yukarıda bakın kocaman yazıyor, the mistake, hata, buradaki hata, yanlışlık nerede?
+
+52
+00:10:48,735 --> 00:10:51,696
+Data ve kontrolü birbiriyle karıştırmakta.
+
+53
+00:10:53,296 --> 00:10:57,216
+Şimdi biz kontrol bilgisini iki türlü gönderebiliyoruz.
+
+54
+00:10:57,855 --> 00:10:59,735
+In-band, out-of-band.
+
+55
+00:10:59,735 --> 00:11:01,615
+Ne anlama geliyor bu?
+
+56
+00:11:01,956 --> 00:11:11,735
+In-band dediğimizde, datanın aktarımı için kullandığımız hatları o datayla alakalı kontrol bilgisini aktarmak için de kullanıyoruz.
+
+57
+00:11:12,855 --> 00:11:18,735
+Bu işimize geliyor çünkü kontrol bilgisi aktarmak için ayrı bir hat oluşturmuyoruz.
+
+58
+00:11:18,735 --> 00:11:30,855
+Ancak hem şurada, şu slide'da görünen örnekte olduğu gibi, hem de buffer overflow saldırısında olduğu gibi,
+
+59
+00:11:30,855 --> 00:11:42,216
+datayla o datanın kullanımına yönelik kontrol bilgisini bir arada aktardığımız veya bir arada kullandığımız,
+
+60
+00:11:42,836 --> 00:11:53,015
+aralarında bir izolasyon, separasyon yapmadığımız için saldırılara açık oluyoruz, zafiyetimiz oluyor.
+
+61
+00:11:53,015 --> 00:11:59,495
+Ve geçen hafta uzun uzun örneklerini gördük, bu saldırılar gerçekleştirdebiliyor.
+
+62
+00:11:59,495 --> 00:12:13,056
+Öyleyse en temel tasarım kriterimiz, design principle diyelim buna isterseniz İngilizcesiyle ne olmalı?
+
+63
+00:12:13,056 --> 00:12:31,735
+Bir veriyi anlamlı hale getiren o verinin nasıl kullanılacağına veyahut da mevcut durumun nasıl değiştiğine dair kontrol amaçlı sinyalizasyon diyelim,
+
+64
+00:12:31,895 --> 00:12:34,235
+kontrol amaçlı veri aktarımı diyelim.
+
+65
+00:12:35,155 --> 00:12:52,615
+Bunun mutlaka ve mutlaka kullanıcı verisinden bağımsız ayrı bir kanaldan yapılması lazım. Bu ikisinin birbirine karışmaması lazım. Ancak Buffer Over Floor'da da benzer bir sıkıntıyı görüyoruz.
+
+66
+00:12:52,615 --> 00:13:10,035
+Return Adres'in neredeyse hemen sonrasında lokal değişkenler var. Return Adres'in hemen öncesinde fonksiyona aktarılan parametreleri, yani argümanlar var, parametrelere denk düşen değerler var.
+
+67
+00:13:10,035 --> 00:13:31,435
+Return Adres kontrol bilgisi, çünkü program akışının geri dönüşte nereden devam edeceğini söylüyor. Ama hem argümanlar hem de sonrasındaki lokal değişkenler, kontrol bilgisi değil. Bunlar o program parçacığının, o fonksiyonun düzgün çalışması için ihtiyaç duyulan şeyler.
+
+68
+00:13:31,435 --> 00:13:56,175
+Öyleyse bu AT&T santral örneğinde yapılan hata, aynı zamanda işte runtime'da bir fonksiyona argüman aktarılması, fonksiyonun geri dönüş adresinin saklanması, fonksiyondaki lokal değişkenlerin oluşturulmasında da yapılmış.
+
+69
+00:13:56,175 --> 00:14:05,175
+Şöyle düşünün, fonksiyonun geri dönüş adresinin saklandığı stack alanı ile...
+
+70
+00:14:08,436 --> 00:14:24,896
+Lokal değişkenlerin saklandığı stack alanı farklı adres bölgelerinde oluşturulmuş olsaydı, yani optimizasyonu mutlaka yapılabilir ama bir tane stack pointer değildi.
+
+71
+00:14:24,896 --> 00:14:50,596
+İki tane stack pointer olsaydı, biri kullanıcıya ait kullanıcının bu lokal değişkenleri ve parametreleri, yani argümanları adresleyebilmesi için, diğeri de geri dönüşleri yönetebilmek için veya işte stack frame pointer bağlantısını, link listesini oluşturabilmek için şu anda biz buffer overflowdan bahsetmeyecektik.
+
+72
+00:14:50,596 --> 00:14:59,416
+Hayatımızda böyle bir saldırı tipi olmayacaktı. Demek ki tasarımda alınan kriterler çok önemli.
+
+73
+00:15:00,216 --> 00:15:06,076
+Diyebilirsiniz ki bunu bugün niye bu hale dönüştüremiyoruz? Tamamen uyumluluktan ötürü.
+
+74
+00:15:07,196 --> 00:15:20,516
+Bu yapı o kadar temel bir yapı ki, o kadar uzun senelerden beri kullanılan bir yapı ki, işlemci mimarisi bile buna göre şekillendirilmiş yeri geldiğinde,
+
+75
+00:15:20,596 --> 00:15:24,896
+yani donanım olarak da bağımlılıklar var.
+
+76
+00:15:26,276 --> 00:15:31,036
+Kağıt üzerinde işte şöyle bir yapı kurduk, bu harika çalışıyor.
+
+77
+00:15:31,636 --> 00:15:34,516
+Bu tip saldırıların tamamını ortadan kaldırıyor.
+
+78
+00:15:35,156 --> 00:15:47,135
+Evet ama bugüne kadar üretilmiş ve kullanımda olan işte milyonlarca, belki milyarlarca cihaz, sistem, yazılım onlar ne olacak?
+
+79
+00:15:47,136 --> 00:15:53,235
+Bir geceden ertesi sabah bunları değiştirebilmemize imkan ve ihtimal yok.
+
+80
+00:15:53,735 --> 00:16:05,355
+O yüzden üretilecek olan çözümlerin mevcut yapılar ile, mevcut donanım yapıları, yazılım yapıları ile uyumlu olması lazım.
+
+81
+00:16:05,355 --> 00:16:14,656
+Bakın bu hata ne zaman gerçekleştirilmiş de farkına varılıp düzeltilmesi gerektiğine karar verilmiş.
+
+82
+00:16:15,196 --> 00:16:16,036
+1971.
+
+83
+00:16:17,316 --> 00:16:20,156
+İlk buffer overflow saldırısı neydi?
+
+84
+00:16:20,656 --> 00:16:23,416
+81-82.
+
+85
+00:16:23,416 --> 00:16:33,076
+Demek ki aradan hani 10 sene geçiyor, santraldeki, buna da bir nivi hani buffer overflowla benzer bir şey derseniz,
+
+86
+00:16:33,216 --> 00:16:40,855
+karşı tarafa onu kandıracak bir kontrol sinyali gönderilmesi, oranın akışını değiştiriyor aslında.
+
+87
+00:16:41,456 --> 00:16:44,336
+Para atılmamışken para atıldığı kararı aldırtıyor.
+
+88
+00:16:44,336 --> 00:16:51,936
+Yani daha bir tık aşağı bir şey, oraya sıfır değeri değil de bir değeri gönderiyor.
+
+89
+00:16:52,396 --> 00:16:57,696
+Gönderilen argümanın, parametrenin değeri değişmiş oluyor diye düşünün.
+
+90
+00:16:57,776 --> 00:17:03,556
+Ama 10 sene, 11 sene sonra karşımıza saldırı çok daha farklı bir şekilde çıkıyor.
+
+91
+00:17:03,615 --> 00:17:04,796
+Ama temel prensip aynı.
+
+92
+00:17:06,296 --> 00:17:10,536
+Hiçbir zaman kontrol ve datayı birbiriyle karıştırmamamız lazım.
+
+93
+00:17:10,536 --> 00:17:15,296
+Az önce anlattım, burada görsel olarak anlatılıyor.
+
+94
+00:17:15,395 --> 00:17:18,816
+Bakın ne dedim, return adresinin bir tarafında argümanlar var.
+
+95
+00:17:19,536 --> 00:17:23,576
+Diğer tarafında stack frame pointer ve lokal değişkenler var.
+
+96
+00:17:24,155 --> 00:17:29,155
+Lokal değişkenler, tamamen kullanıcının kontrolünde, kullanıcı burada her türlü şeyi yapabilir.
+
+97
+00:17:29,155 --> 00:17:34,716
+Çünkü ona demişti, senin yazdığın kod parçasında kullanımına açılmış olan lokal değişkenler.
+
+98
+00:17:34,716 --> 00:17:44,536
+Ama şurada gördüğünüz gibi kırmızı şekilde lokal değişkenlerin başlangıcından itibaren ilerlersek
+
+99
+00:17:44,536 --> 00:17:50,276
+ve işte stack frame pointer, return adres ve sonrasında ezip geçersek
+
+100
+00:17:50,276 --> 00:17:56,716
+kod akışını, program akışını değiştirecek şekilde istediğimiz yeni bir kod parçasını
+
+101
+00:17:56,716 --> 00:18:00,596
+karşı tarafa aktarmış oluyoruz.
+
+102
+00:18:02,399 --> 00:18:03,339
+Bakın şurada ne diyor?
+
+103
+00:18:04,559 --> 00:18:11,119
+Later we will see that mixing data and code is also the reason for XSS, a common web vulnerability.
+
+104
+00:18:11,879 --> 00:18:18,500
+Cross-site scripting de benzer bir zafiyet üzerine kurulu.
+
+105
+00:18:18,939 --> 00:18:23,039
+Orada da data ve kod birbiriyle aynı yerde yaşıyor.
+
+106
+00:18:23,659 --> 00:18:28,859
+Zaten object-oriented bir yapı söz konusu.
+
+107
+00:18:28,859 --> 00:18:33,059
+O yüzden her şeyin heap'te oluşturulduğu bir yapı söz konusu.
+
+108
+00:18:34,019 --> 00:18:39,979
+Böyle olunca hatırlarsanız geçen hafta Internet Explorer 11 örneğini görmüştük.
+
+109
+00:18:40,179 --> 00:18:42,379
+O use after free örneğini görmüştük.
+
+110
+00:18:42,479 --> 00:18:54,059
+Orada da aslında kontrol için kullanılan vTable'ın de-allocate edildiği yere ben bir değişken yerleştiriyorum.
+
+111
+00:18:54,059 --> 00:18:59,379
+Script ile aktardığım şey, bakın biri kontrol, biri data alanı.
+
+112
+00:19:00,339 --> 00:19:06,059
+O gönderdiğim değişken sistemin çalışma mantığından ötürü...
+
+113
+00:19:09,268 --> 00:19:25,367
+Orayı kullandığında, öbür tarafında haberi olmadığında vTable varmış gibi kullanıyor. Halbuki vTable'ın içerisinde benim istediğim kod parçasının çalışmasını sağlayacak şekilde yeni bir pointer söz konusu.
+
+114
+00:19:25,367 --> 00:19:35,668
+Cross-site scripting'te de işte, hani bu oluyor dedik ki, birebir anlatıyoruz nasıl olduğunu. Data ve kod iç içe yaşıyorlar.
+
+115
+00:19:35,668 --> 00:19:50,728
+Peki, bu ele geçirme saldırılarını nasıl engelleyebiliriz? Birincisi, hataları düzeltebiliriz. Basit gibi görünüyor.
+
+116
+00:19:50,728 --> 00:20:03,847
+Bunun iki tane aslında temel düşünülmesi gereken noktası var. Birincisi, mevcut yazılımdaki hataları gidermemiz lazım.
+
+117
+00:20:05,668 --> 00:20:22,087
+Nasıl olacak bu? Yazılımları auditlememiz gerekiyor. Yani, özel bir gözle bu tarz hatalar içeriyorlar mı, bu tarz zafiyetler içeriyorlar mı diye özel bir incelemeden geçirmemiz gerekiyor.
+
+118
+00:20:22,087 --> 00:20:31,408
+Yazılımların boyutunu düşünecek olursak bunu manuel olarak, el ile yapabilmemiz mümkün değil. Otomatikleştirmemiz lazım.
+
+119
+00:20:32,628 --> 00:20:40,728
+Bu kapsamda hem açık kaynak kod olan hem de ticari paralı yapıda olan uygulamalar var.
+
+120
+00:20:40,728 --> 00:20:50,008
+Komoriti bunlardan biri, infer bir başkası. Bir sürü open source projede görüyorsunuz. Ama bunun bir bedeli var.
+
+121
+00:20:51,847 --> 00:21:01,628
+Hataları bulduktan sonra onları düzeltmenin bir bedeli var. Sonrasında hatası düzeltilmiş olan halini yaymanın bir bedeli var.
+
+122
+00:21:01,627 --> 00:21:14,008
+Bir tanesi bu. Diğeri, yeni yazılımları tip güvenliği sağlayan bir dilde yazmak.
+
+123
+00:21:14,008 --> 00:21:27,988
+Şimdi Java, böyle bir dilde baktığınız zaman. Niçin? Bir değişkeni Boolean olarak tanımladığınızda, o değişkene sadece true veya false değerini atayabilirsiniz.
+
+124
+00:21:28,607 --> 00:21:39,948
+Veya mantıksal bir karşılaştırmanın sonucunu, işte büyük müdür, küçük müdür, eşit midir şeklinde true ve false döndürecek tarzda atayabilirsiniz.
+
+125
+00:21:39,948 --> 00:21:49,107
+Ama C'ye baktığınız zaman mesela sıfır değeri false'a denk düşer.
+
+126
+00:21:49,107 --> 00:21:59,107
+Sıfır haricinde ister tam sayı olsun, ister floating point olsun, pozitif ve negatif sayıların tamamı true'ya denk düşer.
+
+127
+00:21:59,188 --> 00:22:06,607
+Yani sıfır olmasında ne olursa olsun. Bu durumda demek ki orada Boolean diye bir tip yok.
+
+128
+00:22:06,607 --> 00:22:14,448
+Sadece bir değişkenin, ki bu değişken genelde ya karakter seçilir ya integer seçilir, öyle bir şey seçilir.
+
+129
+00:22:14,528 --> 00:22:19,288
+Bu değişkenin değerinin sıfır olup olmaması durumu söz konusu.
+
+130
+00:22:20,168 --> 00:22:26,508
+Bunun çözülmesi için ya da rahatlatılması için işte C++'da Boolean diye bir tip tanımlanmıştır.
+
+131
+00:22:26,648 --> 00:22:34,567
+Ama arka taraftaki yaklaşım C'dekine benzer olduğu için Java'daki gibi bir kısıtlama yok.
+
+132
+00:22:36,607 --> 00:22:42,788
+Ne anladığımızı, tip güvenliği sağlayandan ne anladığımızı anlatmaya çalışıyorum burada.
+
+133
+00:22:42,988 --> 00:22:44,628
+Onu tariflemeye çalışıyorum.
+
+134
+00:22:45,428 --> 00:22:54,448
+Böyle bir dil, buna uygun olarak runtime environment'ı olan bir dil,
+
+135
+00:22:54,448 --> 00:23:00,168
+bu zafiyetlerin en aza inmesini hatta tamamen ortadan kalkmasını sağlıyor.
+
+136
+00:23:00,168 --> 00:23:02,168
+Ama bakın...
+
+137
+00:23:02,132 --> 00:23:19,971
+Alttaki noktada yazıyor. Difficult for existing code. Mevcut var olan kodlar için mümkün değil. Çünkü neden? Onları biz tekrar C'de yazılmıştı, Java'da mı yazacağız? C++'da yazılmıştı, Go'da mı yazacağız?
+
+138
+00:23:19,971 --> 00:23:42,372
+Fakat burada şunu da unutmamak lazım. Java'nın kendisi Type Safe ama Java olarak native çalışmıyor. Neyin üzerinde çalışıyor? JVM'in üzerinde çalışıyor. Ve ne görüyoruz? Java'yla alakalı güvenlik zafiyetlerinin büyük bir çoğunluğu JVM tarafında.
+
+139
+00:23:42,372 --> 00:24:03,231
+Çünkü JVM C, C++ bunun üzerine kurulu sistem kütüphanelerinden yararlanıyor. Böyle olunca dilin kendisinin güvenli olması veya Go güvenli ama Go'da C, C++ kütüphaneler üzerinde çalışıyor. Runtime aynı. RAST için de aynı şey geçer.
+
+140
+00:24:03,231 --> 00:24:07,231
+İkinci C...
+
+141
+00:24:10,579 --> 00:24:22,960
+Savunma mekanizmaları oluşturmak. Burada platformdan neyi anlıyoruz? Kodun çalıştırılacağı yer. Yani saldırının yapılacağı yer.
+
+142
+00:24:23,559 --> 00:24:32,319
+Saldırının yapılacağı yer bir server olabilir, bir uç kullanıcı bilgisayarı olabilir, bilgisayar sistemi olabilir.
+
+143
+00:24:32,319 --> 00:24:45,259
+Orada da bakın altı çizilerek belirtilmiş. Saldırı sırasında karşı tarafa aktarılan kod parçasının çalışmasını engellemeliyiz.
+
+144
+00:24:45,579 --> 00:24:50,220
+Prevent Attack Code Execution. Bir şey bunun üzerine kurulu.
+
+145
+00:24:51,720 --> 00:24:56,899
+Üçüncüsü de ne? Add Runtime Code to Detect Overflow Exploits.
+
+146
+00:24:56,899 --> 00:25:03,059
+Yani bunu da nereye implement etmem gerekiyor? Neyin içine yerleştirmem gerekiyor?
+
+147
+00:25:05,279 --> 00:25:12,159
+Kodun kendisine akışı değiştirilecek olan kodun kendisine öyle mekanizmalar yerleştireceğim ki
+
+148
+00:25:12,159 --> 00:25:20,720
+o kod parçası akışının değiştirilmesini engelleyecek veya bunun değiştirildiğinin farkına varacak.
+
+149
+00:25:20,720 --> 00:25:29,539
+Bunun da seçenekleri neler? Bu durumun farkına vardığımız zaman gerçekleştirebileceğimiz seçenekler neler?
+
+150
+00:25:30,139 --> 00:25:33,819
+Hold Process when Overflow Exploits Detected.
+
+151
+00:25:36,799 --> 00:25:39,500
+Yukarıdakileri aslında çok büyük bir farkı olmayacak.
+
+152
+00:25:40,740 --> 00:25:46,659
+Uygulamayı durduracağım. Niye? Bir overflow farkına vardım. Uygulama çalışmayacak.
+
+153
+00:25:46,659 --> 00:25:54,119
+O zaman ne anlama geliyor bu? Geçen hafta söylemiştim size.
+
+154
+00:25:54,899 --> 00:26:03,099
+Düzgün bir şekilde gerçekleştirilemeyen buffer overflow saldırısı büyük bir olasılıkla ne saldırısına dönüşmüş oluyor?
+
+155
+00:26:03,740 --> 00:26:05,279
+Denial of Service saldırısına.
+
+156
+00:26:06,399 --> 00:26:09,240
+Şimdi burada bir takım yaklaşımlar var.
+
+157
+00:26:09,359 --> 00:26:14,379
+Stack Guard, Control Flow Integrity, CFI, LipSafe.
+
+158
+00:26:14,379 --> 00:26:17,480
+Onları da gözden geçireceğiz. Ama seçeneklerimiz bunlar.
+
+159
+00:26:17,960 --> 00:26:20,779
+Şimdi birinci seçeneği kenara bırakalım.
+
+160
+00:26:20,939 --> 00:26:27,579
+Bu en masraflı, en zor, her anlamda en zor olan seçenek.
+
+161
+00:26:27,919 --> 00:26:29,599
+O yüzden biz nelere yoğunlaşacağız?
+
+162
+00:26:29,939 --> 00:26:36,699
+Platform Defenses ve üçüncüsü de Add Runtime Code to Detect Overflow Exploits.
+
+163
+00:26:36,699 --> 00:26:42,919
+Yani hem platform işletim sistemi açısından yapabileceğimiz, Runtime Environment açısından yapabileceklerimize bakacağız.
+
+164
+00:26:43,079 --> 00:26:47,720
+Hem de saldırı altında olan kod parçasında yapabileceklerimize bakacağız.
+
+165
+00:26:47,720 --> 00:26:56,779
+Top'tan ele geçme, Complete Bridge sistemin ele geçirilmesi neye dönüşüyor?
+
+166
+00:26:57,779 --> 00:26:59,339
+Denial of Service'e dönüşüyor.
+
+167
+00:26:59,919 --> 00:27:01,339
+Daha güzel bir çözüm var mı?
+
+168
+00:27:01,899 --> 00:27:10,319
+Daha böyle şey bir, ya evet bak hem saldırı kodunu çalıştırmadık hem de gelenlere hizmet etmeye devam ettik.
+
+169
+00:27:10,319 --> 00:27:13,799
+Ne yazık ki böyle güzel bir seçeneğimiz yok.
+
+170
+00:27:14,359 --> 00:27:24,819
+Yani biz saldırı altındaki sistemin tamamıyla ele geçirilmesini, saldırı altındaki sistemin servis verememesine dönüştürüyoruz.
+
+171
+00:27:25,839 --> 00:27:27,599
+Bunu da kabul edip bununla yaşıyoruz.
+
+172
+00:27:28,980 --> 00:27:33,859
+Şimdi platform seviyesindeki savunma mekanizmalarını gözden geçirelim.
+
+173
+00:27:37,683 --> 00:27:57,983
+Aktardığımız kod parçasını biz nereye aktarıyoruz? Temel buffer overflow saldırısını düşünecek olursak, stack alanına. Peki, stack alanı Intel işlemcisinin en fazla kullanıldığını düşünecek olursak, onun dokümentasyonuna da bakabilirsiniz.
+
+174
+00:27:57,983 --> 00:28:03,564
+Kod çalıştırılması için tasarlanmış bir alan mı? Hayır.
+
+175
+00:28:04,624 --> 00:28:13,943
+Orijinal Intel işlemcisi tasarımında kod segment ayrı, data segment ayrı, stack segment ayrı, ekstra segment ayrı.
+
+176
+00:28:13,943 --> 00:28:20,943
+Ve dokümentasyon der ki, çalıştırılacak olan instrakşınların bulunduğu segment kod segmettir.
+
+177
+00:28:21,804 --> 00:28:27,324
+Bu instrakşınların kullandığı datanın olduğu segment data segmettir.
+
+178
+00:28:27,983 --> 00:28:44,663
+İşte fonksiyon tarzı, kontrol akışının değişmesi, yani bir program kantorun değerinin değişmesi, o sırada geri dönüş adresinin saklanması ve çağrılan fonksiyona parametrelerinde aktarılması,
+
+179
+00:28:44,783 --> 00:28:50,384
+orada da lokal değişkenlerin tutulması için kullanılacak olan segment, stack segmettir.
+
+180
+00:28:50,384 --> 00:28:53,503
+Dokümentasyon da bu böyle yazıyor.
+
+181
+00:28:53,604 --> 00:28:58,903
+O zaman stack segmett aslında kod çalıştırmak için kullanılan bir segment değil.
+
+182
+00:28:58,903 --> 00:29:10,624
+Ama gelin görün ki buffer overflow saldırısında sisteme aktarılan kod çalıştırılması, stack segmettir.
+
+183
+00:29:10,624 --> 00:29:22,263
+Bunun üzerine en fazla saldırı Intel mimarisinin yapıldığı için Intel mimarisinin de günümüzde iki tane implementasyonu var.
+
+184
+00:29:22,364 --> 00:29:30,624
+Bir Intel'in kendisinin yaptığı implementasyon, bir de Advanced Micro Devices şirketinin yaptığı AMD ailesi diye geçiyor.
+
+185
+00:29:30,624 --> 00:29:36,844
+Ama Instruction'lar aynı, Instruction'ların davranışı aynı.
+
+186
+00:29:37,403 --> 00:29:44,624
+Ondan ötürü Intel için yazılmış bir kod parçasını, AMD için yazılmış bir kod parçasını Intel'de çalıştırabiliyorum.
+
+187
+00:29:45,443 --> 00:29:45,963
+Çünkü neden?
+
+188
+00:29:46,604 --> 00:29:54,624
+Üreticileri farklı olmasına rağmen spekler ortak olduğu ve o speklere uyularak üretildiği için ikisi de aynı şekilde davranıyor.
+
+189
+00:29:54,624 --> 00:30:03,563
+Hem AMD tarafında hem de Intel tarafında üreticiler diyorlar ki
+
+190
+00:30:03,563 --> 00:30:18,144
+Stack alanında Instruction çalışmasını, çalıştırılmasını devre dışı bırakacak donanım seviyesinde tedbir alacağız.
+
+191
+00:30:18,943 --> 00:30:22,763
+AMD buna NX bitiriyor.
+
+192
+00:30:22,763 --> 00:30:26,644
+Non-Execution biti diyor.
+
+193
+00:30:26,824 --> 00:30:28,824
+Non-Executable biti diyor.
+
+194
+00:30:29,503 --> 00:30:33,903
+Intel XT Execution Disable biti diyor.
+
+195
+00:30:35,084 --> 00:30:38,003
+Çok yakın zamanda da ARM işlemcisinde
+
+196
+00:30:38,003 --> 00:30:42,324
+Execution'u disable etmek adına
+
+197
+00:30:42,324 --> 00:30:49,223
+işte bakın hani bunlar trademark oluyor ya şirket bunu yapıyor ve bunun trademarkını alıyor.
+
+198
+00:30:49,384 --> 00:30:54,364
+O yüzden aynı şeye gelecek, anlama gelecek şeklinde
+
+199
+00:30:54,364 --> 00:30:58,263
+harf oyunları yapılması lazım.
+
+200
+00:30:58,443 --> 00:31:00,703
+AMD'de NX, ARM'de XN.
+
+201
+00:31:00,703 --> 00:31:01,923
+halbuki aynı şey.
+
+202
+00:31:02,884 --> 00:31:04,104
+Mantık çok basit.
+
+203
+00:31:06,284 --> 00:31:06,663
+Her
+
+204
+00:31:06,663 --> 00:31:09,763
+Virtual Memory kullanıyor bu üç işlemci de
+
+205
+00:31:09,763 --> 00:31:11,763
+her
+
+206
+00:31:11,763 --> 00:31:14,624
+sayfada, her page'de
+
+207
+00:31:14,624 --> 00:31:16,983
+yani mantıksal olarak
+
+208
+00:31:16,983 --> 00:31:19,864
+bir seferde ayrılıp
+
+209
+00:31:19,864 --> 00:31:21,844
+üzerinde işlem yapılabilen
+
+210
+00:31:21,844 --> 00:31:22,844
+memory
+
+211
+00:31:22,844 --> 00:31:23,783
+bir seferin.
+
+212
+00:31:23,455 --> 00:31:40,096
+Yapısında burada kod da tutulabilir, data da tutulabilir, stack alanı olarak da kullanılabilir. Buna page diyoruz. Bu page'in özelliğini belirlerken bu page kod çalıştırabilir veya çalıştıramaz diye bir tanımlayıcı ekleniyor.
+
+213
+00:31:40,096 --> 00:31:57,175
+Geçmişte bakın epey bir zaman olmuş yani yeni değil, 2015. Fakat bu tek başına yeterli mi? Göreceğiz dersini ilerleyen saatlerinde tek başına yeterli değil. Ancak önemli bir şey.
+
+214
+00:31:57,175 --> 00:32:20,855
+Linux'ta işletim sistemi olarak bunun karşılığı hemen kernel değişikliğiyle gerçekleştiriliyor. Benzer şekilde OpenBSD de bunu yapıyor. İlk defa Windows XP'nin ServiceSpec 2'sinde 2004 yılında bununla alakalı bir tedbir alınıyor.
+
+215
+00:32:20,855 --> 00:32:34,535
+ve Microsoft da buna DEP adını veriyor. Yine bu işte Registered Trademark olayından ötürü Data Execution Prevention demek DEP.
+
+216
+00:32:38,135 --> 00:32:50,835
+İşletim sisteminde bunun gerçekleştirilmiş olması tek başına yeterli değil. Çünkü işin komik tarafı geliştirme ortamları incelendiğinde şöyle bir durumla
+
+217
+00:32:50,835 --> 00:33:06,435
+karşılaşılıyor. Visual Studio kapsamındaki kompilerler de dahil olmak üzere pek çok kompiler stekte kod çalıştırmaya yönelik kod üretiyor.
+
+218
+00:33:06,435 --> 00:33:25,555
+O yüzden bakın Visual Studio'ya bir tane flag ekleniyor. NX compatibility yes veya no şeklinde. Non-execution compatibility'ye yes derseniz kompiler stekte çalışacak kod üretmiyor.
+
+219
+00:33:25,555 --> 00:33:41,835
+Burada en fazla etkilenen runtime ortamlarından bir tanesi Java. Çünkü Java'da just-in-time compilation var. Just-in-time compilation'da da stek alanında
+
+220
+00:33:41,835 --> 00:33:53,935
+executable olma yeteneğine ihtiyaç duyuyor. Çünkü bir class source olarak geliyor. O source'un bytecode'a dönüştürülmesi ve sonra bytecode üzerinden çalıştırılması lazım.
+
+221
+00:33:54,096 --> 00:33:57,576
+Oradaki compilation'ın aslında bytecode'a dönüştürme süreci.
+
+222
+00:33:57,576 --> 00:34:06,335
+Ama diğer taraftan da Lisp programlama dili var. List processor'dan.
+
+223
+00:34:06,335 --> 00:34:20,675
+Liste yapıları üzerinde efektif bir şekilde çalışma yapmaya uygun olan bir programlama dili.
+
+224
+00:34:21,195 --> 00:34:32,335
+Hatta bir dönemde Prolog'la beraber yapay zeka kapsamında uzman sistem uygulamalarında çok yoğunlukla kullanılan bir programlama dili.
+
+225
+00:34:32,335 --> 00:34:43,556
+Fakat bizim için önemi örneğin mimarların, inşaat mühendislerinin, makine mühendislerinin yoğunlukla kullandığı
+
+226
+00:34:43,556 --> 00:34:47,115
+AutoCAD'in altyapısını oluşturan bir programlama dili.
+
+227
+00:34:48,056 --> 00:34:57,335
+Orada da işte vektörel işlemler çok fazla yapılıyor. Görüntüler veya şekiller, çizilen şeyler vektörlerle oluşturuluyor.
+
+228
+00:34:57,335 --> 00:35:00,135
+Yani onlarda birer liste gibi tutuluyor.
+
+229
+00:35:00,635 --> 00:35:09,536
+O yüzden AutoCAD'in alt tarafında tam böyle çekirdek kısmında Lisp ciddi anlamda büyük rol oynuyor.
+
+230
+00:35:09,655 --> 00:35:17,475
+Ve Lisp'te bu dinamik yapısından listeler üzerinde değişiklik yapabilmeyi sağlamak adına
+
+231
+00:35:17,475 --> 00:35:22,016
+dinamik yapısı içerisinde stack alanının executable olduğunu varsayıyor.
+
+232
+00:35:22,356 --> 00:35:44,036
+Yani bu da ne anlama geliyor? Bazı uygulamalar, yine nereye geldik? Legacy uygulamalara, yani bize aktarılan, mevcut elimizde olan çalıştırmaya devam etmek zorunda olduğumuz, hatta kullanmaya devam etmek zorunda olduğumuz uygulamalar, başka uygulamaların da temeli olan uygulamalar bize ek kısıtlar getirebiliyor.
+
+233
+00:35:44,036 --> 00:35:56,836
+İşte Limitations kısmını şimdi size anlattım. Just-in-Time Compilation'ı söyledim. HIP tarafı ve Stack tarafı. Ama daha büyük bir sıkıntı var.
+
+234
+00:35:56,836 --> 00:36:20,576
+Bu saldırıyı yapanlar, firmaların hem donanım seviyesinde hem de işletim sistemi ve runtime environment seviyesinde bu bahsettiğimiz tedbiri aldıklarını görünce saldırı şekillerini değiştiriyorlar ve yeni bir yaklaşım sergiliyorlar.
+
+235
+00:36:20,576 --> 00:36:32,956
+Bunun sonucunda da Return Oriented Programming yapısı ortaya çıkıyor. Göreceğiz birazdan. Aklınızda kalsın. ROP. Return Oriented Programming.
+
+236
+00:36:33,516 --> 00:36:43,256
+Bakın Data Execution Prevention Controls in Windows. Bu aslında bir şey hani sistem setting kısmındaki bir seçenek.
+
+237
+00:36:43,256 --> 00:36:54,736
+Ne diyor? Turn on that for essential Windows programs and services only. Sadece önemli Windows programları ve servisler için bunu devreye al.
+
+238
+00:36:55,096 --> 00:37:03,056
+Veya turn on that for all programs and services except those I select. Buraya eklediklerim haricinde her şey için devreye al.
+
+239
+00:37:03,056 --> 00:37:16,356
+Fakat yan tarafta da neyi görüyorsunuz? Bu bir Windows XP ekranı. Data Execution Prevention programın çalışmasını durduruyor.
+
+240
+00:37:16,496 --> 00:37:23,536
+Durdurduğu şey ne? Windows Explorer. Bu internet explorer değil arkadaşlar. Karıştırmayın. Windows Explorer.
+
+241
+00:37:23,536 --> 00:37:33,576
+Yani aslında Windows işletim sisteminin grafik arayüzü, GUI'si, graphical user interface'i. Buradan da neyi anlıyoruz?
+
+242
+00:37:34,276 --> 00:37:48,316
+Bir taraftan işletim sistemi olarak Microsoft işletim sisteminin içerisine bu stack alanında kod çalıştırılamaz özelliğini yerleştirmiş bunu işletim sisteminde gerçekleştirmiş olmasına rağmen.
+
+243
+00:37:48,316 --> 00:37:56,836
+Diğer tarafta işletim sisteminin en temel programlarından biri olan grafik arayüzü henüz bununla uyumlu hale getirmemiş.
+
+244
+00:37:56,916 --> 00:38:10,656
+Yani bu da Microsoft olarak o işte Microsoft ne kadar kötü bilmem ne diye düşünmeyi ticari kaygılarda bazı şeylerin senkronizasyonunu zamanlama açısından tutturabilmek zor.
+
+245
+00:38:10,656 --> 00:38:17,496
+Peki Return Oriented Programming ne anlama geliyor?
+
+246
+00:38:17,796 --> 00:38:32,076
+Niçin Return Oriented Programming sonrasında bu alınan Data Execution, Prevention, Non-Execution falan donanım, yazılım bu kadar yapılan değişiklikler anlamsız hale geliyor?
+
+247
+00:38:32,076 --> 00:38:50,856
+Şimdi ne demiştik ilk derste bu kontrol hijacking saldırılarını anlatırken sistem çağrılarını bileceğiz ve bunların içerisinde de bir tane mutlaka daha iyi bilmemiz gereken sistem çağrısı var.
+
+248
+00:38:50,856 --> 00:38:53,776
+O da Exec, Execute'un kısaltması.
+
+249
+00:38:54,736 --> 00:39:05,856
+Bir proses çalıştıracağımız zaman yani proses programın çalışır hali bir programın prosesi dönüştüreceğimiz, kod Execute edeceğimiz zaman işletim sisteminden bunu
+
+250
+00:39:05,856 --> 00:39:06,976
+şu an...
+
+251
+00:39:06,976 --> 00:39:07,156
+Existe
+
+252
+00:39:11,476 --> 00:39:31,096
+Exact Sistem çağrısıyla talep ediyoruz. Şimdi sol tarafta stack'in durumuna bakalım. Argümanlar push edilmiş, return address push edilmiş, stack frame pointer push edilmiş. Orada boş alan var. Orası exception handling için ama hani şey diyoruz ya şimdilik onu unutalım diye.
+
+253
+00:39:31,096 --> 00:39:42,256
+ve lokal değişkenler var. Şimdi lokal değişken sebebiyle oradaki işte o zafiyet sebebiyle kontrol yapılmadı.
+
+254
+00:39:44,276 --> 00:39:57,476
+str copy vardı, mem copy vardı, neyse bir şey vardı. Ondan dolayı lokal buffer override oldu, stack frame pointer override oldu, return address override oldu, argümanlar override oldu.
+
+255
+00:39:57,476 --> 00:40:03,436
+Şimdi return address'in öncesi argümanlar. Bunu unutmayalım.
+
+256
+00:40:05,496 --> 00:40:10,236
+Ve ben ne çalıştırmak istiyorum arkadaşlar? Yeni bir shell açmak istiyorum.
+
+257
+00:40:11,976 --> 00:40:21,816
+exec'e çalıştıracağım komutu aynen şu sağ tarafta gördüğünüz şekilde string olarak veriyorum.
+
+258
+00:40:21,816 --> 00:40:26,716
+forward slash bin forward slash s h.
+
+259
+00:40:27,716 --> 00:40:30,576
+Bunun anlamı biliyorsunuzdur.
+
+260
+00:40:31,256 --> 00:40:37,216
+Kök dizinine göre bin klasörünün altındaki s h execut'u bulunu da çalıştır.
+
+261
+00:40:37,216 --> 00:40:46,816
+Peki ben bunu parametre olarak, parametre olarak hangi sistem çağrısını aktarıyorum?
+
+262
+00:40:47,456 --> 00:40:50,115
+exec sistem çağrısını aktarıyorum.
+
+263
+00:40:50,115 --> 00:40:55,596
+Şimdi exec sistem çağrısı hangi kütüphanenin içerisinde?
+
+264
+00:40:56,356 --> 00:40:58,356
+lib c'nin içerisinde.
+
+265
+00:40:58,496 --> 00:40:59,996
+En baştan beri konuşuyoruz değil mi?
+
+266
+00:41:00,076 --> 00:41:04,215
+c runtime libraries'i var, c++ runtime libraries'i var diye.
+
+267
+00:41:05,816 --> 00:41:07,376
+Bu bir string olduğuna göre,
+
+268
+00:41:08,516 --> 00:41:10,756
+bu bir string olduğuna göre,
+
+269
+00:41:12,936 --> 00:41:17,836
+bu stringin pointer'ını argüman alanına koymam lazım.
+
+270
+00:41:17,836 --> 00:41:23,496
+Yani aslında burada daha rahat anlaşılsın diye bin sh sağ tarafa çizilmiş ama,
+
+271
+00:41:24,076 --> 00:41:25,576
+bin sh sol tarafta,
+
+272
+00:41:26,175 --> 00:41:28,516
+args kısmında onun adresi var.
+
+273
+00:41:29,115 --> 00:41:32,396
+Kendisi ise args'tan hemen sonraki şu alanda,
+
+274
+00:41:32,996 --> 00:41:34,756
+orada bildiğiniz şekilde,
+
+275
+00:41:35,396 --> 00:41:37,496
+işte forward slash b iğne,
+
+276
+00:41:37,655 --> 00:41:39,735
+forward slash s h şeklinde yazıyor.
+
+277
+00:41:40,876 --> 00:41:42,016
+args kısmında da,
+
+278
+00:41:42,016 --> 00:41:44,516
+32 bitlik mimariden gidiyorduk ya,
+
+279
+00:41:44,596 --> 00:41:45,816
+4 byte'lik adresi var.
+
+280
+00:41:46,316 --> 00:41:48,175
+Peki return adresi de ne var arkadaşlar?
+
+281
+00:41:48,836 --> 00:41:50,336
+exec'in adresi var.
+
+282
+00:41:51,296 --> 00:41:52,256
+Şimdi dikkat edin.
+
+283
+00:41:52,256 --> 00:41:56,496
+bir fonksiyona girerken,
+
+284
+00:41:59,496 --> 00:42:01,396
+fonksiyonun adresini,
+
+285
+00:42:01,916 --> 00:42:03,876
+intel mimarisinden bahsediyorum,
+
+286
+00:42:04,396 --> 00:42:08,115
+call instruction'ı ile çağırmadan önce,
+
+287
+00:42:08,896 --> 00:42:11,235
+stack'e argümanları,
+
+288
+00:42:11,856 --> 00:42:13,615
+kendilerini veyahut da adreslerini,
+
+289
+00:42:14,076 --> 00:42:15,396
+push etme görevi kimindi?
+
+290
+00:42:15,396 --> 00:42:18,836
+çağıran program parçasının da.
+
+291
+00:42:19,655 --> 00:42:22,756
+Return adresi oraya yerleştiren,
+
+292
+00:42:23,276 --> 00:42:26,236
+call instruction'ı işlemci bunu otomatikman yapıyordu.
+
+293
+00:42:27,175 --> 00:42:28,296
+Bu durumda,
+
+294
+00:42:28,756 --> 00:42:29,996
+biz saldırıyı yaptık.
+
+295
+00:42:31,716 --> 00:42:33,556
+Return adresi yerleştirdik.
+
+296
+00:42:34,615 --> 00:42:37,635
+Return adresinin öncesindeki arc kısmına,
+
+297
+00:42:38,416 --> 00:42:40,716
+pointer'ı yerleştirdik.
+
+298
+00:42:40,716 --> 00:42:44,576
+Onun öncesine de string'imizi yerleştirdik.
+
+299
+00:42:44,576 --> 00:42:48,436
+Adres hesabımız inanılmaz kolaylaştı.
+
+300
+00:42:48,536 --> 00:42:48,756
+Bakın,
+
+301
+00:42:48,856 --> 00:42:51,695
+nobslide adresi çift mi olacak,
+
+302
+00:42:51,876 --> 00:42:52,695
+tek mi olacak,
+
+303
+00:42:53,296 --> 00:42:54,396
+dörde mi bölünecek?
+
+304
+00:42:54,816 --> 00:42:56,496
+Bu sıkıntılardan da kurtuldum.
+
+305
+00:42:57,856 --> 00:42:58,235
+Şimdi,
+
+306
+00:42:58,836 --> 00:43:00,536
+fonksiyon geri dönüyor.
+
+307
+00:43:01,356 --> 00:43:03,615
+Fonksiyon geri dönerken,
+
+308
+00:43:04,316 --> 00:43:06,695
+return adresi kullanıyor.
+
+309
+00:43:07,376 --> 00:43:09,556
+Return adres neyi gösteriyor arkadaşlar?
+
+310
+00:43:10,356 --> 00:43:33,276
+Exek'i. Exek burada hangi pozisyonda? Çağrılan. Çağrılan. Yine ilk saatten hatırlayın. Yaptığı şey neydi? Kendisini çağıranın register değerlerini kalkıp bir yere saklayacaktı.
+
+311
+00:43:33,276 --> 00:43:39,336
+Hani Collie Saved Registers kısmı vardı ya, geçen haftaki slide'larda da görmüştük.
+
+312
+00:43:40,216 --> 00:43:56,416
+Öyleyse, Exek ne bir şey push etti argüman şeyinde, ne de kendisine aktarılan bu yapı üzerinde parametrelerle ve argümanlarla alakalı bir değişiklik yaptı.
+
+313
+00:43:56,416 --> 00:44:06,036
+Sadece ve sadece kendisini çağıranın register'larını gidip özel bir alana sakladı.
+
+314
+00:44:06,036 --> 00:44:27,856
+Sonrasında, çalıştıracağı kod parçasının ne olduğunu öğrenmek için de, argüman alanından pointer'ı alıp, o pointer'ın gösterdiği string neyse onu yükleyip çalışır hale getirecek.
+
+315
+00:44:27,856 --> 00:44:48,416
+O da nedir? 1000 sh. Şimdi gördünüz mü? Bir satır, bir byte diyeyim, satır hani bizim açımızdan, işlemci açısından, bir byte dahi olsa bir instruction aktarmamız gerekmedi.
+
+316
+00:44:48,416 --> 00:44:55,516
+Argüman aktardık, return adres aktardık, bitti gitti.
+
+317
+00:44:57,236 --> 00:44:59,676
+Stag'de kod çalıştırdık mı? Hayır.
+
+318
+00:45:00,516 --> 00:45:02,916
+Exek stag'de mi çalıştı? Hayır.
+
+319
+00:45:03,596 --> 00:45:08,916
+Exek zaten lipsinin içerisinde, yani exeküt edilebilen bir yerde.
+
+320
+00:45:08,916 --> 00:45:17,196
+Peki, exek stag'den sadece ve sadece neleri kullandı?
+
+321
+00:45:17,676 --> 00:45:19,056
+Argümanları kullandı.
+
+322
+00:45:19,615 --> 00:45:30,976
+İşte gördünüz mü? Return adresi, exek sistem çağrısını veya exek kütüphane fonksiyonunu,
+
+323
+00:45:30,976 --> 00:45:38,736
+library function diyoruz, gösterecek şekilde şekillendirirsek,
+
+324
+00:45:39,376 --> 00:45:49,056
+stag'de bir byte bile komut çalıştırmadan, bir instruction çalıştırmadan yine istediğimiz saldırıyı yaparız.
+
+325
+00:45:49,736 --> 00:45:53,556
+Hatta birincisine göre daha sofistike, daha rahat bir saldırı.
+
+326
+00:45:54,296 --> 00:45:58,696
+Compile ettim, ayarladım, adrese denk düşürdüm, hiçbiriyle uğraşmıyorum.
+
+327
+00:46:04,436 --> 00:46:20,316
+Şimdi burada bu saldırının uzaktan yapıldığını varsayıyoruz değil mi? Lokalden yapmıyoruz. Yani ne üzerinden yapıyoruz? İnternet üzerinden yapıyoruz.
+
+328
+00:46:20,316 --> 00:46:38,556
+Diyelim ki web serverdaki yakaladığım bir açığı kullanacağım ve web serverdaki bu açık sayesinde kendi lokalimle uzaktaki o web server arasında bir bağlantı oluşturacağım.
+
+329
+00:46:38,556 --> 00:46:54,096
+Ama bu bağlantı, öyle bir bağlantı olacak ki sanki ben lokalde komut satırından komut yazıyorum da karşılığında sistemde benim o yazdığım komutları çalıştırıyor gibi.
+
+330
+00:46:54,096 --> 00:46:59,956
+Yapmam gereken şey şu, 1000SH'yı çalıştırabilmem için.
+
+331
+00:47:01,296 --> 00:47:11,516
+Hem standart in'i hem de standart out'u benim karşı tarafa bağlantımı sağlayan sokete yönlendirmem lazım.
+
+332
+00:47:11,516 --> 00:47:24,695
+Soket uzaktan bağlantılarda TCB-IP mantığında iki uç arasında verinin taşınmasını sağlayan yapı.
+
+333
+00:47:25,856 --> 00:47:29,276
+Şimdi sıfır var, bir var, bir de iki var.
+
+334
+00:47:29,615 --> 00:47:32,516
+Sıfır standart input olarak tariflenmiş.
+
+335
+00:47:33,416 --> 00:47:36,516
+Bütün çalışan programların mutlaka bir sıfırı var.
+
+336
+00:47:37,316 --> 00:47:39,596
+Çünkü ona benim bir input verebilmem lazım.
+
+337
+00:47:39,596 --> 00:47:44,896
+Bütün çalışan programların bir tane de standart out'u var.
+
+338
+00:47:45,175 --> 00:47:46,596
+Bir şey üretmek isterse.
+
+339
+00:47:47,256 --> 00:47:49,635
+Bunun da şeyi,
+
+340
+00:47:53,416 --> 00:47:58,756
+diskriptörü standart input'unki sıfırken standart output'unki bir.
+
+341
+00:47:59,756 --> 00:48:02,596
+Bir de program isterse standart error kullanabiliyor.
+
+342
+00:48:03,396 --> 00:48:05,716
+Bunun da diskriptörü iki.
+
+343
+00:48:05,936 --> 00:48:07,175
+Yani sıfır, bir, iki.
+
+344
+00:48:07,176 --> 00:48:17,796
+Şimdi duplicate, bu tarz bir file pointer'ı en hızlı şekilde çoğullamamı sağlıyor.
+
+345
+00:48:17,956 --> 00:48:20,436
+Ondan ikinci bir kopya çıkarmamı sağlıyor.
+
+346
+00:48:20,596 --> 00:48:21,816
+Duplikasyon o değil mi?
+
+347
+00:48:21,976 --> 00:48:23,696
+Çoğullama, ikinci kopya çıkarma.
+
+348
+00:48:25,436 --> 00:48:30,155
+S soketini sıfırla ilişkilendir.
+
+349
+00:48:30,155 --> 00:48:31,816
+Dup 2'nin şeyi görevi bu.
+
+350
+00:48:32,556 --> 00:48:35,436
+Dup sistem çağrısı var, Dup 2 sistem çağrısı var.
+
+351
+00:48:36,076 --> 00:48:37,096
+Kafanız karışmasın.
+
+352
+00:48:37,135 --> 00:48:38,456
+Burada Dup 2'yi kullanıyoruz.
+
+353
+00:48:39,396 --> 00:48:41,256
+Soketi sıfırla ilişkilendir.
+
+354
+00:48:41,336 --> 00:48:46,316
+Yani ben soket üzerinden çalıştıracağım programa input gönderebilirim.
+
+355
+00:48:46,316 --> 00:48:50,216
+Soketi 1 ile ilişkilendir.
+
+356
+00:48:50,216 --> 00:48:56,096
+Yani çalıştıracağım programın çıktısı bana geri gelecek soket üzerinden.
+
+357
+00:48:56,195 --> 00:48:57,956
+Soketin öbür ucunda ben varım çünkü.
+
+358
+00:48:58,896 --> 00:49:00,236
+Neyi çalıştıracağım?
+
+359
+00:49:00,816 --> 00:49:01,676
+1000SH'yı.
+
+360
+00:49:01,676 --> 00:49:05,896
+Şimdi şu 3 tane sistem çağrısı.
+
+361
+00:49:05,996 --> 00:49:07,635
+Bakın buradaki kritiklik ne biliyor?
+
+362
+00:49:08,756 --> 00:49:10,956
+Buradan 3'ü de 3 çağrısı.
+
+363
+00:49:11,596 --> 00:49:21,416
+3 sistem çağrısı da C runtime kütüphanesinde birer fonksiyon olarak kullanıcıların kullanımına açık.
+
+364
+00:49:22,076 --> 00:49:25,696
+Yani aslında ben sistem çağrısı çağırmak istiyorum.
+
+365
+00:49:25,695 --> 00:49:33,195
+Ama sistem çağrıları doğrudan çağrılmadığı için onların çağrılmasını kolaylaştırmak adına
+
+366
+00:49:33,195 --> 00:49:35,416
+doğrudan çağırabiliriz ama daha zor olur.
+
+367
+00:49:35,516 --> 00:49:40,216
+Onların çağrılmasını kolaylaştırmak adına runtime library'ler var.
+
+368
+00:49:40,736 --> 00:49:44,396
+Nedir işte C runtime library örneği.
+
+369
+00:49:44,396 --> 00:49:58,916
+Burada da birebir sistem çağrısının isteklerine, ihtiyaçlarına uygun şekilde parametre alınıyor ve fonksiyon çağrısı gibi başlıyor.
+
+370
+00:49:59,115 --> 00:50:00,936
+Fakat sistem çağrısıyla devam ediyor.
+
+371
+00:50:01,876 --> 00:50:04,436
+İki tane dup 2, bir tane egzek ve e.
+
+372
+00:50:06,536 --> 00:50:13,115
+Şimdi, o zaman olması gereken yapı bu.
+
+373
+00:50:13,536 --> 00:50:18,696
+İşte egzek ve e 1000 sh, dup 2 s0, dup 2 s1.
+
+374
+00:50:29,012 --> 00:50:45,272
+Stack Pointer Moves Up On Pop. Pop edildikçe, pop edildikçe Stack Pointer ne olacak? Yukarı doğru ilerleyecek. Yani düşük adreslerden yüksek adreslere doğru ilerleyecek.
+
+375
+00:50:46,192 --> 00:50:56,372
+Bakın, Overflow String'de başladı. İlk yerleştirdiği ne yerleştirmiş? İşte Return Adres olarak. Bunları öyle arka arkaya yapılmış.
+
+376
+00:50:56,372 --> 00:51:02,751
+Burada sadece Return Adres gösterilmiş ama arkasına da ne yerleştirildiği, neyi şey yaptığını anlayın diye.
+
+377
+00:51:03,492 --> 00:51:26,272
+408 400, 408 500, 408 300. Bu şekilde bunları gösterecek şekilde bunları bu üç tane yapıyı Argüman Return Adres, Argüman Return Adres, Argüman Return Adres şeklinde karşı tarafa aktardı.
+
+378
+00:51:26,372 --> 00:51:41,572
+408 400'ün Return Adresi'deki Dupik'i var. 408 500'ün Return Adresi'deki Dupik'i var.
+
+379
+00:51:41,572 --> 00:51:54,892
+408 400'ün Return Adresi'deki Dupik'i var. Buradaki alt satırdaki Reti çağrılan fonksiyon sağlıyor.
+
+380
+00:51:54,892 --> 00:52:08,972
+Ve işin komik tarafı bir fonksiyon içerisinde bir başka fonksiyonu call instruction ile çağırmadığınız için, bulunan Stack Frame Pointer değişmediği için,
+
+381
+00:52:10,352 --> 00:52:15,731
+bu şekilde Return Adres modifikasyonu ile yeni bir fonksiyon çağırdığınız için,
+
+382
+00:52:15,731 --> 00:52:23,432
+o fonksiyonun sonundaki Return geri dönerken sizi tekrar aynı yere geri getiriyor.
+
+383
+00:52:24,731 --> 00:52:30,612
+Normalde fonksiyonu çağırmadan önce Push yapılıyor.
+
+384
+00:52:31,332 --> 00:52:35,632
+Call instruction ile çağrılınca Stack'e Return Adresi basıyor.
+
+385
+00:52:35,632 --> 00:52:37,832
+İşlemci bunu otomatikman yapıyor.
+
+386
+00:52:38,692 --> 00:52:40,552
+Ama burada böyle değil.
+
+387
+00:52:41,271 --> 00:52:46,572
+Doğrudan fonksiyonun başlangıcına Return ile gidiyoruz.
+
+388
+00:52:47,352 --> 00:52:50,912
+Aslında bu yöntem bizim işletim sisteminde,
+
+389
+00:52:51,912 --> 00:52:53,832
+Scheduling'de kullandığımız bir yöntem.
+
+390
+00:52:53,952 --> 00:52:57,392
+Yani çok da böyle süper uzay icadı bir şey değil.
+
+391
+00:52:57,392 --> 00:53:05,532
+Çok uzun senelerden beri işletim sistemindeki Scheduler'ın, Dispatcher'ın bir prosesten bir diğer bir prosese,
+
+392
+00:53:07,231 --> 00:53:13,332
+Stack'te herhangi bir şekilde değişiklik yapmadan geçebilmesini sağlamak için kullandığı yöntem.
+
+393
+00:53:14,052 --> 00:53:23,192
+Evet, böylece 408-400 ile Stack'e argüman olarak aktardığımız şeyler S ve 0 değeri.
+
+394
+00:53:23,192 --> 00:53:26,852
+Dup 2 Return Adresi'nde Dup 2'ye gidiliyor.
+
+395
+00:53:27,412 --> 00:53:29,152
+S ve 0 ile ilişkilendiriliyor.
+
+396
+00:53:29,352 --> 00:53:32,692
+Oradan Red ile geri dönülünce 408-500.
+
+397
+00:53:33,492 --> 00:53:37,592
+Bu sefer argüman olarak aktarılanlar S ve 1.
+
+398
+00:53:38,592 --> 00:53:39,932
+Bu ikisi ilişkilendiriliyor.
+
+399
+00:53:40,072 --> 00:53:41,172
+Red ile geri dönülüyor.
+
+400
+00:53:41,512 --> 00:53:42,731
+408-300.
+
+401
+00:53:43,332 --> 00:53:48,692
+Orada argüman olarak aktarılan 1000-SHA ve yandaki iki tane 0-0 değeri.
+
+402
+00:53:48,692 --> 00:53:55,812
+Exec'e Return Adresi'nde bu sefer Exec'e gidildiğinde 1000-SHA çalışmış oluyor.
+
+403
+00:53:55,932 --> 00:54:07,692
+Ama işin güzel tarafı öncesinde çağrıdan iki tane 0-2 sayesinde artık ben uzaktaki sistemde açmış olduğum Shell'e 1000-SHA...
+
+404
+00:54:07,692 --> 00:54:37,672
+...
+
+405
+00:54:12,115 --> 00:54:13,355
+Bin Serha Şerine
+
+406
+00:54:17,811 --> 00:54:33,291
+Kendi lokal client'ımdan erişebiliyorum. Çünkü neden? Oranın standart input'unu soket üzerinden kendi lokalimle ilişkilendirmiş durumdayım.
+
+407
+00:54:38,771 --> 00:54:56,152
+Burada daha ayrıntılı, daha detaylı bir şekilde anlatılmış slide'larda bakarsınız. Ben size nasıl olduğunu anlattım. Ayrıntı bir tık daha işte burada nasıl olduğunu gösteriyor.
+
+408
+00:54:56,152 --> 00:55:13,811
+Evet, şimdi bu durumun karşısında ne yapabiliriz? Yani biliyoruz ki stack alanını non-executable hale dönüştürmek çok da böyle bizi rahatlatmadı.
+
+409
+00:55:13,811 --> 00:55:25,491
+Çünkü saldırganlar return-oriented programming mantığına geçtiler. O saldırıyı gerçekleştirdiler ve böylece bütün odak noktası oraya kaydı.
+
+410
+00:55:25,491 --> 00:55:36,032
+Bu durum ama şu anlama gelmiyor. Tamam o zaman bizim işte non-executable bitini kullanmamıza veyahut da bununla alakalı bir tedbir almamıza gerek kalmadı artık.
+
+411
+00:55:36,032 --> 00:55:47,052
+Hayır, tam tersi o tedbiri alacağız. Oradan saldırmalarını engelleyeceğiz. Yani kısıtlayabildiğimiz, sıkıştırabildiğimiz kadar sıkıştıracağız.
+
+412
+00:55:48,192 --> 00:55:52,991
+Böylece seçenekleri daralacak. Hep aynı şey arkadaşlar.
+
+413
+00:55:52,991 --> 00:56:03,532
+Hani bizim bir kullanımımız vardır ya, hattı müdafaa yoktur, satı müdafaa vardır diye tek bir çizgi halinde müdafaa yaparsak
+
+414
+00:56:03,532 --> 00:56:09,971
+o çizginin herhangi bir yerinde bir delinme olduğunda arka tarafa geçilir.
+
+415
+00:56:09,971 --> 00:56:26,291
+Halbuki satıhta farklı seviyelerde müdafaa, savunma yapacak olursak bu seviyeli olduğu için biri delinse bile, birinde bir kaçak olsa bile bir savunma hattında diğerlerinin tutma şansı olacak.
+
+416
+00:56:26,291 --> 00:56:29,211
+Diğerleri yavaşlatacak veya tamamen durduracak.
+
+417
+00:56:30,311 --> 00:56:43,192
+Şimdi burada ilk akla gelen ve günümüzde de artık endüstri standartı olarak kullanımda olan yöntem,
+
+418
+00:56:43,931 --> 00:56:46,451
+Address Space Layout Randomization.
+
+419
+00:56:46,451 --> 00:56:53,231
+Saldırgan, az önceki saldırıyı niçin bu kadar rahat yapabiliyor?
+
+420
+00:56:53,991 --> 00:56:55,271
+İlk ders söylemiştim.
+
+421
+00:56:56,311 --> 00:56:59,471
+32 bit Linux kernel versiyonunu biliyor.
+
+422
+00:56:59,771 --> 00:57:02,052
+O zaman C runtime libraries'ini de biliyor.
+
+423
+00:57:02,692 --> 00:57:05,271
+C runtime libraries'i içerisinde
+
+424
+00:57:05,271 --> 00:57:13,951
+exec olsun, dupliki olsun, syscall olsun, ne olursa olsun, hangisi olursa olsun, bunların hepsinin adresi belirli.
+
+425
+00:57:13,951 --> 00:57:25,231
+Yani benim karşı tarafta exec fonksiyonunu hangi adreste bulacağım çok net.
+
+426
+00:57:25,791 --> 00:57:29,152
+Herhangi bir şeyi tahmin etmek zorunda falan değilim.
+
+427
+00:57:30,552 --> 00:57:37,231
+Bu şartlar altında da lokalimde adreslerin nokta atışı düzgün olacak şekilde ayarlayıp
+
+428
+00:57:37,231 --> 00:57:41,891
+saldırı paketini, saldırı stringini hazırlayabiliyorum.
+
+429
+00:57:41,891 --> 00:57:48,791
+Ve bunu karşı tarafa açık varsa o açıktan yararlanıp gönderebiliyorum.
+
+430
+00:57:49,692 --> 00:57:51,592
+Bu durumda benim ne yapmam lazım?
+
+431
+00:57:53,552 --> 00:58:04,592
+Saldırganın C library'si içerisindeki fonksiyonların adresini bu rahatlık ile tespit edebilmesini,
+
+432
+00:58:04,672 --> 00:58:06,612
+bilebilmesini engellemem lazım.
+
+433
+00:58:06,612 --> 00:58:12,011
+Yani eşittir address randomization yapmam lazım.
+
+434
+00:58:13,291 --> 00:58:20,231
+Aynı kernel versiyonu, eşittir aynı C library'si versiyonu ama
+
+435
+00:58:20,231 --> 00:58:36,951
+bir bilgisayar sisteminde C library'sindeki exec'in adresi farklı.
+
+436
+00:58:38,643 --> 00:58:55,183
+Aynı kernel olmasına rağmen, aynı seviye olmasına rağmen. Bunun doğal sonucu da, şurada ok ile göstermişler, attacker cannot jump directly to exec function. Doğrudan exec fonksiyonuna gidemeyecek.
+
+437
+00:58:55,183 --> 00:59:18,383
+Bunun uygulaması, işte Windows 7'de ilk defa yapılıyor. Windows 7'nin default kabul ettiği miyim verasyonu da var ama sizin özellikle Windows 7'ye 64 bit olarak o sürümünü yüklemeniz lazım.
+
+438
+00:59:18,383 --> 00:59:23,483
+Yoksa default sürümü 32 bit. Ondan ötürü de
+
+439
+00:59:30,291 --> 00:59:46,491
+32 bitlik olmasından ötürü de rastgele yapabileceğimiz adreste rastgele yapabileceğimiz kısım çok kısıtlı. Bit sayısı çok kısıtlı.
+
+440
+00:59:46,491 --> 00:59:52,251
+8 bitlik bir kısmı random yapmaya karar veriyorlar. Bu da şu anlama geliyor.
+
+441
+00:59:52,251 --> 01:00:05,991
+C-Library'sini 16 MB'lık bir alan içerisinde 64K'lık steplerle istediğim yere hareket ettirebiliyorum.
+
+442
+01:00:05,991 --> 01:00:20,112
+Yani 256 tane seçeneğim var. Windows 8 ile Windows'un standart sürümü 64 bite dönüştürüldüğü için
+
+443
+01:00:20,112 --> 01:00:34,132
+burada 64 bitlik adreslerle çalıştığımdan doğal olarak rastgele olarak belirleyebileceğim bit sayısı 8'den çok daha fazla 24 bit.
+
+444
+01:00:35,791 --> 01:00:43,032
+Şimdi bunların haricinde benzer yaklaşım Linux'ta da var. Linux'ta Windows'dan çok daha önce gerçekleşiyor.
+
+445
+01:00:43,031 --> 01:00:50,092
+Hatta Linux'un 32 bit çözümlerinde 256'dan daha fazla seçenek olacak şekilde bu gerçekleştiriliyor.
+
+446
+01:00:50,831 --> 01:01:02,511
+Ama Windows'u özellikle burada örnek olarak vermemiz, uç noktada kişisel kullanımla en yaygın işletim sistemi olması
+
+447
+01:01:02,511 --> 01:01:09,871
+artı pek çok orta ölçekli sunucu sistemlerinde de kullanılıyor olması.
+
+448
+01:01:10,951 --> 01:01:15,152
+Şimdi başka randomization yaklaşımları da var.
+
+449
+01:01:15,411 --> 01:01:21,291
+Bunlar akademik olarak tartışılmış, yayınları yapılmış, deneyleri yapılmış şeyler.
+
+450
+01:01:21,291 --> 01:01:32,451
+Ancak endüstri tarafından kabul görmediği için donanım açısından veya yazılım açısından implementasyonları
+
+451
+01:01:32,451 --> 01:01:40,291
+ESL'lere göre biraz daha zor, sıkıntılı olduğu için pratikte kullanılmaya yaklaşımlar.
+
+452
+01:01:41,391 --> 01:01:41,711
+Nedir?
+
+453
+01:01:42,011 --> 01:01:43,471
+Syscall Randomization.
+
+454
+01:01:43,471 --> 01:01:49,152
+Sistem çağrılarının ID'leri var.
+
+455
+01:01:49,431 --> 01:01:51,612
+Exec'in ID'si diyelim ki 72.
+
+456
+01:01:52,612 --> 01:01:54,532
+Siz onu randomize ediyorsunuz.
+
+457
+01:01:54,592 --> 01:02:00,511
+Yani bir sistemde bu 72, öbüründe 172, öbüründe 372, öbüründe 272.
+
+458
+01:02:01,451 --> 01:02:03,612
+Diğeri de Instruction Set Randomization.
+
+459
+01:02:03,612 --> 01:02:16,612
+Sistem çağrısı yapmak için aslında modern işlemcilerde Syscall veya SSC isimli bir Instruction bulunuyor.
+
+460
+01:02:16,731 --> 01:02:18,351
+Bunun bir sürü alternatifi var.
+
+461
+01:02:19,572 --> 01:02:21,632
+Ama aslında buna ihtiyacınız yok.
+
+462
+01:02:22,751 --> 01:02:30,551
+Yazılımsal olarak interrupt üretecek bir execution yapmanız yeterli.
+
+463
+01:02:30,551 --> 01:02:37,051
+Onun da en kolay yolu tanımsız bir Instruction'la execution yapmak.
+
+464
+01:02:37,152 --> 01:02:49,192
+Çünkü hemen işlemci nasıl bir hata oluşturacak, nasıl bir yazılımsal hata oluşturacak diyecek ki tanımadığın bir Instruction çalıştırılmak istemiyor.
+
+465
+01:02:49,192 --> 01:02:59,511
+Bu durumda Instruction Set'in içerisinde undefined olarak geçen bazı işlemcilere bakıyoruz.
+
+466
+01:02:59,692 --> 01:03:05,132
+Onlarca, bazılarında yüzlerce kombinasyon var byte cinsinden.
+
+467
+01:03:05,692 --> 01:03:06,871
+Bunları kullanabiliriz.
+
+468
+01:03:07,331 --> 01:03:14,692
+Ama bu ikisinin kullanımı maalesef endüstri tarafından kabul görmediği için yaygın değil.
+
+469
+01:03:14,692 --> 01:03:21,692
+Bakın Windows 7 ile bu ilk defa ortaya atıldığında...
+
+470
+01:03:21,692 --> 01:03:31,351
+Ağlaması, Ст辄'in saygın açıkçası,
+
+471
+01:03:31,351 --> 01:03:42,831
+...
+
+472
+01:03:23,827 --> 01:03:38,708
+İşi hızlıca yapmak adına Microsoft diyor ki, ben bu randomization değerini sistem seviyesinde belirlerim, sistemin her yeni açılışında random bir değer üretirim ve kütüphaneyi oraya yüklerim.
+
+473
+01:03:40,327 --> 01:03:44,367
+Bu adresin değişmesi için sistemin tekrar restart olması lazım.
+
+474
+01:03:44,367 --> 01:04:00,887
+Bu akıllıca gibi görünüyor. Ancak Windows'un bu 7, 8, 10 sürümleri, uç kullanıcıyla çalışan sürümleri aynı zamanda sunucu sürümlerinin de temeli ya,
+
+475
+01:04:02,347 --> 01:04:13,088
+o zaman Windows 7 için alınan bu kararı Windows 7 ile eşlenik olan Windows Server'da da aynı bir kararı lazım ki öyle.
+
+476
+01:04:13,088 --> 01:04:21,427
+o durumda da bir açmaz oluşuyor. Şöyle ki, 32 bitlik kullanıyorsunuz diyelim.
+
+477
+01:04:22,027 --> 01:04:28,007
+Random olarak olabilecek adres sayısı 256 ve bu bir sunucu sistemi.
+
+478
+01:04:28,527 --> 01:04:31,987
+Hoş uç kullanıcı sistemi olsa da aynı şey olacak.
+
+479
+01:04:34,487 --> 01:04:36,087
+256 deney...
+
+480
+01:04:39,572 --> 01:04:47,992
+Windows 8 ile beraber 64 bit veya Windows 7'de siz 64 bit yüklerseniz orada 24 bit ya o zaman deneme sayısı artıyor.
+
+481
+01:04:47,992 --> 01:05:08,751
+Ancak bunun doğru olanı belirttiğimiz randomization yani rastgele olma işini sistemin açılışı sırasında değil de proses çalıştırırken her proses için bağımsız şekilde yapmak.
+
+482
+01:05:13,780 --> 01:05:32,540
+Bakın, yukarıda Microsoft Object Linking Embedded Libraries'i diyeleri ole. 76.16'da. Aşağıda nerede? 76.3'de. Hani bir byte değişiyor dedik ya. 16.3'de. Görüyor musunuz? Burası değişmiş.
+
+483
+01:05:32,540 --> 01:05:56,140
+Veya şurada Windows NT Marta Provider. 75.37 değil, 75.66. Veya Microsoft LAN, Local Area Network Manager, LAN Manager. 6d7f değil de 6dA9 yine bir byte değişmiş. Bu ne anlama geliyor? Restartlarda değiştiği anlamına geliyor.
+
+484
+01:06:01,684 --> 01:06:19,484
+Tabii ki böyle bir randomizasyon yapıyorsam, proses memorisindeki her şeyi de kaydırıyorum demektir. O layout'ı hatırlayın, stack alanı, heap alanı, shared level'ler, base'in, chips'in adresi otomatikman değişiyor.
+
+485
+01:06:20,044 --> 01:06:31,124
+Windows 8 ile beraber bu Windows 7'deki ve onun server sürümündeki kısıtlamalar ortadan kaldırılıyor.
+
+486
+01:06:31,684 --> 01:06:42,764
+Yüklü olan modüllerin tamamı, benim seçmeme gerek yok, yüklü olan sistem modüllerinin tamamı ESLR kullanıyor.
+
+487
+01:06:51,411 --> 01:07:00,431
+Bir duralım arkadaşlar. Yirmi geçiyor, on biri yirmi geçiyor. On bir buçukta devam ederiz. Bir on dakika nefes almış oluruz.
+
+488
+01:17:31,539 --> 01:17:33,859
+Kaldığımız yerden devam edelim arkadaşlar.
+
+489
+01:17:36,000 --> 01:17:37,800
+Ekranı paylaşıyorum yine.
+
+490
+01:17:52,532 --> 01:18:06,912
+Son zamanda bu konuyla alakalı, bu Return Oriented Programming'e karşı tedbir oluşturmayla alakalı yapılan çalışmalardan bir tanesi daha kabul gördü.
+
+491
+01:18:06,912 --> 01:18:22,632
+Hatta bu yaklaşım donanım seviyesinde de oldukça rahat, işlemcilerin mevcut durumlarını düşünecek olursak oldukça rahat gerçekleştirilebilecek bir yaklaşım.
+
+492
+01:18:22,632 --> 01:18:28,592
+Buna da Kay Bouncer ismi veriliyor.
+
+493
+01:18:29,612 --> 01:18:31,372
+Bouncer biliyorsunuz fedai.
+
+494
+01:18:31,372 --> 01:18:40,971
+Yani bu gece kulüplerinin, barlarının kapısında dikilen ız bandut gibi insanlar var ya, kim girer kim girmez, onlara verilen isim Bouncer.
+
+495
+01:18:42,292 --> 01:18:43,931
+Kay de Kernel'dan geliyor.
+
+496
+01:18:44,692 --> 01:18:49,192
+Yani Kernel'ın giriş noktasındaki fedai diye düşünebilirsiniz.
+
+497
+01:18:49,192 --> 01:18:54,811
+Kim içeri alınacak, kim içeri alınmayacak şeklinde.
+
+498
+01:18:57,452 --> 01:18:58,652
+Yaklaşım ne peki?
+
+499
+01:19:01,212 --> 01:19:03,811
+Size aslında az önce anlatırken bunu söyledim.
+
+500
+01:19:08,787 --> 01:19:09,787
+Retor...
+
+501
+01:19:13,043 --> 01:19:18,224
+Bir Call Instruction'ı olması lazım. Normal çalışma böyle.
+
+502
+01:19:19,163 --> 01:19:38,023
+Fakat az önceki örneklerde de gördüğümüz gibi, işte DUP2'ye, EXEC'e veya diğer sistem çağrılarına Call Instruction'ı ile gitmediğimiz için,
+
+503
+01:19:38,023 --> 01:19:45,564
+doğrudan onların adresine aslında return ile gittiğimiz için,
+
+504
+01:19:47,963 --> 01:19:56,123
+bu ilgili sistem çağrıları sonlandığında da çalışan return'e ait bir Call Instruction'ı olmuyor.
+
+505
+01:19:57,344 --> 01:20:00,884
+Bunu tespit etmek üzerine kurulu.
+
+506
+01:20:00,884 --> 01:20:04,884
+Gözlem, gözlenen şey ne?
+
+507
+01:20:05,503 --> 01:20:07,564
+Abnormal Execution Sequence.
+
+508
+01:20:07,684 --> 01:20:12,604
+Gözlediğimiz, yani bu abnormal, sıra dışı normal olmayan şey nedir?
+
+509
+01:20:12,604 --> 01:20:20,203
+Return, returns to an address that does not follow a call.
+
+510
+01:20:21,503 --> 01:20:26,463
+Şimdi eğer return geri döndüğünde Call Instruction ile çağrılmışsa,
+
+511
+01:20:26,923 --> 01:20:30,863
+geri döndüğü adresin hemen öncesinde Call Instruction'ı olması lazım.
+
+512
+01:20:31,423 --> 01:20:33,003
+Halbuki bizde böyle bir şey var mı?
+
+513
+01:20:33,503 --> 01:20:33,943
+Yok.
+
+514
+01:20:33,943 --> 01:20:41,923
+Çünkü niye biz o adrese return ile gidiyoruz.
+
+515
+01:20:42,344 --> 01:20:44,243
+Aynen Dispatcher'ın yaptığı gibi.
+
+516
+01:20:45,644 --> 01:20:46,423
+Bu durumda
+
+517
+01:20:46,423 --> 01:20:50,564
+diyoruz ki
+
+518
+01:20:50,564 --> 01:20:56,503
+Before a system call, check that every prior return is not abnormal.
+
+519
+01:20:57,403 --> 01:20:59,963
+Sistem çağrısı yapılmadan önceki,
+
+520
+01:21:02,483 --> 01:21:06,564
+onun öncesinde gelen return instruction'larının
+
+521
+01:21:07,564 --> 01:21:13,224
+geri döndüğü adreslerde bir önce de mutlaka Call Instruction'ı olsun.
+
+522
+01:21:13,863 --> 01:21:19,564
+Bunu bir tane, iki tane, üç tane, dört tane, neyse kaç tane geriye kadar gitmek istiyorsanız gidebilirsiniz.
+
+523
+01:21:19,564 --> 01:21:24,203
+Donanımın da izin verdiği şekilde.
+
+524
+01:21:25,003 --> 01:21:31,344
+Eğer return'ın döndüğü adresin bir öncesinde Call Instruction'ı varsa,
+
+525
+01:21:31,804 --> 01:21:35,064
+onun öncesinde de aynı şey, onun öncesinde de aynı şey varsa,
+
+526
+01:21:35,663 --> 01:21:37,264
+buraya düzgün bir sırayla gelinmiş.
+
+527
+01:21:37,983 --> 01:21:44,163
+Ama return'ın geri döndüğü adresin öncesinde Call Instruction'ı yoksa,
+
+528
+01:21:44,384 --> 01:21:46,903
+bir öncesinde de yoksa, bir öncesinde de yoksa,
+
+529
+01:21:46,903 --> 01:21:54,483
+bir saldırı ile, yani aslında Return Oriented Programming ile bu noktaya gelinmiş,
+
+530
+01:21:55,583 --> 01:21:59,403
+ondan ötürü de Kernel'a girilmesi tehlikeli olacak.
+
+531
+01:22:00,243 --> 01:22:01,604
+Şimdi diyebilirsiniz ki,
+
+532
+01:22:02,743 --> 01:22:04,344
+Dispatcher'da bunu yapıyor dediniz,
+
+533
+01:22:04,344 --> 01:22:07,163
+o zaman sıkıntı oluşmayacak mı?
+
+534
+01:22:07,724 --> 01:22:09,344
+Dispatcher bunu yaparken,
+
+535
+01:22:09,523 --> 01:22:12,564
+Dispatcher için bunu kontrol ettiğimizi bildiğimizden,
+
+536
+01:22:13,304 --> 01:22:17,083
+orada o kontrol sonucuna bakmak zorunda değiliz.
+
+537
+01:22:17,184 --> 01:22:21,304
+Ama Dispatcher haricinde herhangi bir durumda bununla karşılaşıyorsak,
+
+538
+01:22:21,703 --> 01:22:23,304
+o zaman sıkıntımız var demektir.
+
+539
+01:22:24,123 --> 01:22:26,583
+Peki, donanım bunu nasıl sağlıyor?
+
+540
+01:22:26,583 --> 01:22:37,023
+Intel işlemcisi zaten yeni versiyonlarında branch prediction'ı daha iyi yapabilmek adına,
+
+541
+01:22:37,543 --> 01:22:44,064
+yani bir if gerçekleşecek mi, gerçekleşmeyecek mi?
+
+542
+01:22:45,264 --> 01:22:50,663
+Ona göre if'in true call'ına mı gidilecek, false call'ına mı gidilecek?
+
+543
+01:22:50,663 --> 01:22:55,863
+Ona göre aslında önceden o taraftan instruction'ları,
+
+544
+01:22:55,983 --> 01:23:00,344
+pipeline'ı alabilmek adına bir branch prediction,
+
+545
+01:23:00,903 --> 01:23:06,923
+yani dallanma öngörüsü algoritması donanımda çalışıyor.
+
+546
+01:23:07,347 --> 01:23:26,667
+Bunun bir parçası olarak da Intel işlemcisinin son versiyonlarında, işte i3, i5, i7, i9 bunlar da var, Last Branch Recording diye bir donanımsal liste tutuluyor.
+
+547
+01:23:26,667 --> 01:23:29,707
+En son nerelere dallanılmış?
+
+548
+01:23:32,408 --> 01:23:43,807
+Last Branch Recording yapısı stores 16 last executed branches in a set of on-chip registers.
+
+549
+01:23:43,807 --> 01:23:48,648
+Read Using RDMSR Instruction
+
+550
+01:23:48,648 --> 01:23:57,807
+Bu on-chip'teki bu liste register yapısında doğal olarak 16 tane son dallanmış oldu.
+
+551
+01:23:59,547 --> 01:24:06,807
+Read MSR Instruction ile bu listeden durum bilgisi okuyabiliyoruz.
+
+552
+01:24:06,807 --> 01:24:16,648
+Hakikaten return adresinin öncesinde call instruction'ı var mıydı, yok muydu?
+
+553
+01:24:17,068 --> 01:24:18,507
+Bunu tespit edebiliyoruz.
+
+554
+01:24:19,627 --> 01:24:24,847
+Böylece k-bouncer, kernel'da çok basit bir değişiklik.
+
+555
+01:24:25,108 --> 01:24:30,467
+Syscall öncesinde yapılan çok basit bir değişiklikle ne yapıyor?
+
+556
+01:24:30,467 --> 01:24:38,228
+Before entering kernel, verify that last 16 returns are normal.
+
+557
+01:24:39,728 --> 01:24:42,807
+Uygulama kodunda herhangi bir değişikliğe gerek yok.
+
+558
+01:24:43,847 --> 01:24:52,608
+Ayrıca zaten donanımda var olan bir bilgiyi okuyup 16 tane compare yapıyorsunuz gibi düşünebilirsiniz.
+
+559
+01:24:53,387 --> 01:24:57,948
+Onu da şey yapabilirsiniz, optimize edebilirsiniz elinizden geldiğince.
+
+560
+01:24:57,948 --> 01:25:06,228
+Yani bu açıdan bakıldığında getirdiği ek performans yükü çok çok düşük.
+
+561
+01:25:07,347 --> 01:25:15,707
+Şu dönemde Intel'in yeni işlemcilerinde çalışan Linux kernel'da bir özellik var.
+
+562
+01:25:17,347 --> 01:25:22,387
+Kernel'larda bu k-bouncer özelliği de kullanılmaya başlandı.
+
+563
+01:25:22,387 --> 01:25:33,068
+Benzer özellik diğer işlemcilerde de, diğer işlemci ailesinde de zaten iki tane aile var.
+
+564
+01:25:33,167 --> 01:25:38,247
+Biri power işlemci ailesi, diğeri de arm işlemci ailesi şu anda devam etmekte olan.
+
+565
+01:25:38,247 --> 01:25:47,007
+Onlarda da buna benzer donanımsal bir özellik, aslında denk düşen bir donanımsal özellik mevcut.
+
+566
+01:25:47,108 --> 01:25:48,347
+O da orada kullanılabiliyor.
+
+567
+01:25:49,127 --> 01:25:51,167
+Şimdi burada saldırgan ne yapabilir?
+
+568
+01:25:51,167 --> 01:26:02,547
+Donanımsal olarak bu MSR register setinin boyutu son 16 taneyi tutmak.
+
+569
+01:26:04,887 --> 01:26:15,568
+Son 16 tanenin doğru görünmesini sağlayacak şekilde, onların doğru olmasını sağlayacak şekilde bir saldırı düzenleyebilir.
+
+570
+01:26:15,568 --> 01:26:23,127
+Yani bu sistemin aklını karıştıracak, son 16 tanesi doğru ama 17.sinde sıkıntı var gibi düşünüyorum.
+
+571
+01:26:23,587 --> 01:26:37,927
+Tabii ki bu çok daha sofistike gelişmiş bir saldırı yapılmasını gerektiriyor ve her şart altında bu saldırının yapılamayacağını belirtiyor.
+
+572
+01:26:38,507 --> 01:26:40,007
+İşi zorlaştırmış oluyoruz.
+
+573
+01:26:40,007 --> 01:26:42,268
+Sıfırlamış mıyız?
+
+574
+01:26:43,188 --> 01:26:44,108
+Neredeyse.
+
+575
+01:26:44,807 --> 01:26:46,068
+16 iyi bir hakka.
+
+576
+01:26:46,728 --> 01:26:49,028
+Ama tamamen ortadan kaldırmış mıyız?
+
+577
+01:26:49,768 --> 01:26:50,108
+Hayır.
+
+578
+01:26:50,507 --> 01:26:52,007
+Yine de bir ihtimal var.
+
+579
+01:26:52,827 --> 01:26:53,408
+Ne yaptık?
+
+580
+01:26:53,688 --> 01:26:58,747
+Yönetilebilir, kabul edilebilir sınırlar içerisine soktuk.
+
+581
+01:26:58,747 --> 01:26:59,787
+Şimdi.
+
+582
+01:27:00,819 --> 01:27:19,599
+Şu ana kadar platform tarafında alınabilecek tedbirleri gözlem geçirdik. Demek ki platform tarafı dediğimiz zaman işlemci de donanımsal olarak yapılabilecekler. Artı işletim sisteminde buna denk düşen değişiklikler. Bir de en önemlisi return-oriented programming'e karşı yapmamız gereken şeyler.
+
+583
+01:27:19,599 --> 01:27:35,599
+Diğer taraftan ikinci kısma geçeceğiz. Saldırı altında olan, doğrudan saldırılan executive'ı nasıl güçlendirebiliriz? Onu nasıl saldırılara karşı daha dayanıklı hale getirebiliriz?
+
+584
+01:27:39,604 --> 01:27:58,744
+Bunun çok farklı implementasyonları var ama yine endüstri tarafından kabul görmüş. Şu anda kod üretimi, compiler tarafından kod üretimi sırasında da burada anlattığımız yaklaşıma göre kod üretilmesi kabul edilmiş. En temel yöntem StackGuard.
+
+585
+01:27:58,744 --> 01:28:12,704
+Bakın, öbür tarafta Bouncer'dı, burada Guard. Bu da fedai demek, bu da koruyucu, hani Bodyguard'taki gibi. Burada da öbürü Kernel'ın koruyucusuydu, bu ise Stack'in koruyucusu.
+
+586
+01:28:17,908 --> 01:28:26,868
+Neyi biliyoruz? Buffer Overflow saldırısı olduğunda stekin yapısı bozuluyor.
+
+587
+01:28:28,008 --> 01:28:36,968
+Fonksiyona girilen hali ile fonksiyondan çıkıldığındaki hali aynı değil stekin.
+
+588
+01:28:37,728 --> 01:28:43,728
+Diyebilirsiniz ki bunu bir kenara kopyalayalım, çıkarken de birebir kontrol edelim.
+
+589
+01:28:43,728 --> 01:28:49,548
+Eğer farklıysa o zaman sıkıntı var diyelim.
+
+590
+01:28:50,948 --> 01:29:00,428
+Ama bunu yapabilmek için hani en başta dedim ya keşke iki tane stek pointer olsaydı da biri data öbürü kontrol için kullanılsaydı.
+
+591
+01:29:01,048 --> 01:29:03,188
+En azından öyle bir şeye ihtiyacımız var.
+
+592
+01:29:04,288 --> 01:29:07,668
+Yani donanımsal olarak elimizde olmayan bir özellik.
+
+593
+01:29:07,668 --> 01:29:17,748
+Ve bu tarz ikinci bir stek pointer kazandırılması da pek olası görünmüyor.
+
+594
+01:29:17,928 --> 01:29:20,868
+Olabilir ama şu an öyle bir şey söz konusu değil.
+
+595
+01:29:21,668 --> 01:29:28,628
+Diğer taraftan da bir memori alanının bir başka memori alanıyla birebir kontrol edilmesi.
+
+596
+01:29:28,628 --> 01:29:45,148
+Çünkü stekine kadar parametre aktarılacağı argüman sayısının ne olduğu, lokal değişkenlerin ne kadar olduğu falan bir de save edilecek register'ların adedi falan düşündüğümüzde performans açısından sıkıntılı bir durum.
+
+597
+01:29:45,387 --> 01:29:47,328
+Yapılabilir mi? Evet yapılabilir.
+
+598
+01:29:47,488 --> 01:29:51,688
+Ama yapılması uygun mu, anlamlı mı? Değil.
+
+599
+01:29:51,688 --> 01:29:57,608
+O zaman bunun çok basitleştirilmiş bir hali ortaya atılmış.
+
+600
+01:29:59,288 --> 01:30:09,448
+Kömür madenlerinde çalışılırken biliyorsunuz gaz kaçağı oluyor, zehirlenmeler oluyor, ölümler de sonuçlanıyor.
+
+601
+01:30:10,128 --> 01:30:15,347
+Çoğu zaman aslında bu kaçak var ancak önceden tespit edilemiyor.
+
+602
+01:30:15,347 --> 01:30:29,068
+Orada ne yazık ki kuşların, özellikle kanaryaların bu gaza karşı insanlardan daha hassas olduğu, daha düşük seviyelerinde bile öldükleri ortaya çıkıyor.
+
+603
+01:30:29,328 --> 01:30:39,668
+Ve madenciler maden ocağına girerken yanlarında kanaryalarla beraber, kafes içerisinde kanaryalarla beraber giriyorlar.
+
+604
+01:30:39,668 --> 01:30:50,228
+Kanaryalar ölmediği sürece, bayılıp ölmedikleri sürece içeride her şey normal, bir sıkıntı yok, kaçak yok demek.
+
+605
+01:30:51,048 --> 01:31:05,288
+Ancak öldükleri anda anlıyorlar ki şu an henüz insan için tehlikeli olmayan ama tehlikeli hale gelebilecek gaz kaçağı var ve madeni boşaltıyorlar.
+
+606
+01:31:05,288 --> 01:31:15,128
+Şimdi buradaki kanary terimi bu anlattığım hikayedeki kanarya kullanımından alınmış.
+
+607
+01:31:16,868 --> 01:31:21,508
+Neyse ki burada canlı hayvan kullanmıyoruz, sadece bir veri kullanıyoruz.
+
+608
+01:31:21,628 --> 01:31:31,387
+O veriyi hassas veri gibi ama KVKK'daki hassas veri değil, yani bozulması daha kolay bir sigorta teli gibi düşünün.
+
+609
+01:31:31,388 --> 01:31:34,728
+Öyle olduğunu kabul ediyoruz ve o şekilde kullanıyoruz.
+
+610
+01:31:35,468 --> 01:31:38,388
+Bakın kanary dediğimiz değeri nereye yerleştiriyoruz?
+
+611
+01:31:39,768 --> 01:31:52,448
+Lokal değişkenlerimizle stack'teki diğer, işte stack frame, pointer, exception, pointer, neyse return address, onların arasına yerleştiriyoruz.
+
+612
+01:31:53,008 --> 01:31:53,868
+Bunun mantığı ne?
+
+613
+01:31:53,988 --> 01:31:56,188
+Bunun mantığı çok basit.
+
+614
+01:31:56,908 --> 01:31:58,588
+Bir ilerideymiş, orada görürüz.
+
+615
+01:31:58,588 --> 01:32:10,628
+Lokal değişken üzerinden overflow, buffer overflow yapılması durumu varsa kanary değeri de bozulacak.
+
+616
+01:32:10,788 --> 01:32:16,148
+Kanary değerini atlayıp da şuradan şuraya ilerleme şansınız yok.
+
+617
+01:32:17,939 --> 01:32:21,339
+Öyleyse geri dönüşte sadece neyi kontrol edeceğiz arkadaşlar?
+
+618
+01:32:21,979 --> 01:32:32,359
+Kanari değerini, yani bir sürü değer kontrol etmek yerine daha basit, performans anlamında daha yüksek performans olacak şekilde bir tane değeri kontrol edeceğiz.
+
+619
+01:32:32,359 --> 01:32:42,719
+O değer bozulmadıysa zaten lokal değişkenden bu tarafa doğru bir overflow olması söz konusu değil diyeceğiz.
+
+620
+01:32:47,539 --> 01:33:04,699
+Canary, iki tipte karşımıza çıkıyor. Random Canary, rastgele değer. Random string chosen at program startup. Insert Canary string into every stack frame. Verify Canary before returning from function.
+
+621
+01:33:06,600 --> 01:33:16,420
+Fonksiyondan geri dönerken az önce söylediğim gibi Canary değerini kontrol edeceksiniz. Exit program if Canary changed. Ne oldu? Yine bir transformasyon yaptık.
+
+622
+01:33:16,420 --> 01:33:20,479
+Complete Bridge olmasındansa, Dinaros Service'e dönüştü.
+
+623
+01:33:22,039 --> 01:33:30,100
+Saldırganın return adresi falan değiştirebilmesi için hangi değeri öğrenmesi lazım? Canary değerini.
+
+624
+01:33:30,899 --> 01:33:37,380
+Dikkat edin, string vulnerability'niz var ise, format string vulnerability'niz var ise,
+
+625
+01:33:37,380 --> 01:33:42,680
+hani o memori içeriğini kontrolsüz bir şekilde dump ettiriyordu ya,
+
+626
+01:33:42,680 --> 01:33:53,000
+saldırgan bunu kullanarak, bu zarfiyeti kullanarak Canary değerini öğrenebilir yöntemlerden bir tanesi bu.
+
+627
+01:33:53,460 --> 01:34:00,300
+Ve göndereceği paketin içerisine tam Canary'nin olduğu alana bu öğrendiği değeri yerleştirir.
+
+628
+01:34:00,300 --> 01:34:05,159
+Canary override olmasına rağmen buffer overflow sonucunda,
+
+629
+01:34:05,859 --> 01:34:10,739
+orijinal değeriyle override olacağı için, overflow olacağı için nasıl derseniz değil.
+
+630
+01:34:13,220 --> 01:34:16,699
+%100 mutlak süper çözüm mü?
+
+631
+01:34:17,500 --> 01:34:17,800
+Hayır.
+
+632
+01:34:17,800 --> 01:34:22,720
+Ama saldırganın işini çok zorlaştıran bir çözüm.
+
+633
+01:34:23,519 --> 01:34:24,939
+Diğeri Terminator Canary.
+
+634
+01:34:26,359 --> 01:34:32,739
+Bu daha çok string fonksiyonlarındaki açığa karşı kullanmak, savunma yapmak için.
+
+635
+01:34:33,460 --> 01:34:37,479
+Orada biliyorsunuz, str copy 0 değerini gördüğü zaman kopyalama duruyor ya,
+
+636
+01:34:37,539 --> 01:34:43,060
+işte 0 olursa new line line feed end of file olursa duruyor.
+
+637
+01:34:43,060 --> 01:34:47,319
+Bu değerlerden herhangi birini oraya yerleştiriyor olmamız yeterli.
+
+638
+01:34:47,399 --> 01:34:49,899
+Çünkü str copy daha fazla ilerleyemeyecek.
+
+639
+01:34:50,899 --> 01:35:02,279
+Ancak bu yöntem saldırının string fonksiyonları üzerinden yapıldığı varsayımıyla ilerlediği için oldukça kısıtlayıcı.
+
+640
+01:35:02,279 --> 01:35:21,960
+Halbuki diğeri herhangi bir şekilde Canary ezilerek return address ve işte değiştirilip siteki argüman falan pas edilmesi istendiğinde de anlayabileceğimiz bir şey.
+
+641
+01:35:23,100 --> 01:35:26,500
+Terminator'ın kolaylığı hiçbir kontrol yapmıyoruz.
+
+642
+01:35:26,500 --> 01:35:33,640
+Çünkü neden? Sıfırla karşılaşıldığında veya line feedle karşılaşıldığında kopyalamanın biteceğinden eminiz.
+
+643
+01:35:34,239 --> 01:35:40,640
+Performansı çok daha yüksek ama koruma yetenekleri daha düşük.
+
+644
+01:35:44,948 --> 01:36:11,608
+Steggart önce GCC'de deneniyor. Bir GCC'ye güncelleme olarak çıkıyor. Tabii ki doğal olarak programı yeniden derlemem lazım. Ve Apache örneğinde en çok saldırıya uğrayan programlardan biri bir dönem Apache Web Server'da aynı işlemcide sadece %8'lik bir performans düşüklüğü gösterdiği anlaşılıyor.
+
+645
+01:36:11,608 --> 01:36:23,208
+kabul edilebilir bir şey. Ondan ötürü neredeyse artık günümüzün endüstri standartı. Bir iki ufak değişiklikle göreceğiz onu birazdan.
+
+646
+01:36:26,708 --> 01:36:32,788
+Az önce anlattığım gibi kanali yapısı tam bir koruma sağlamıyor.
+
+647
+01:36:32,788 --> 01:36:42,948
+Kanarinin değerini tespit etmeye yarayan yöntemler kullanıldığında az önce bir tanesini anlattım.
+
+648
+01:36:43,807 --> 01:36:44,288
+O zaman
+
+649
+01:36:44,288 --> 01:36:48,528
+Kanari
+
+650
+01:36:48,528 --> 01:36:53,208
+değeri değişmemiş gibi görünüyor ve korumanın bir anlamı kalmıyor.
+
+651
+01:36:53,208 --> 01:37:05,328
+Şimdi IBM bu Steggart üzerinde çalışıyor ve bir güncelleme öneriyor. Endüstri de bunu kabul ediyor.
+
+652
+01:37:05,328 --> 01:37:08,328
+Ve şu anda günümüzde
+
+653
+01:37:08,328 --> 01:37:11,828
+Şu anda günümüzde
+
+654
+01:37:11,828 --> 01:37:14,828
+Endüstri standartı olarak
+
+655
+01:37:14,828 --> 01:37:18,028
+Steggart'ın kullanılan versiyonu
+
+656
+01:37:18,028 --> 01:37:18,788
+Propolis
+
+657
+01:37:18,788 --> 01:37:21,427
+Steg Protector kısa adıyla
+
+658
+01:37:21,427 --> 01:37:24,387
+Yani Steggart diye başlıyor. Steg Protector olarak
+
+659
+01:37:24,387 --> 01:37:27,008
+Nihai haline varıyor.
+
+660
+01:37:27,628 --> 01:37:30,347
+İşte GCC 341'den itibaren var.
+
+661
+01:37:30,347 --> 01:37:35,347
+Buna Steg Feng Shui de deniyor.
+
+662
+01:37:35,347 --> 01:37:41,347
+Feng Shui Doğu kültürüne göre bir ortamdaki eşyaların o ortamdan
+
+663
+01:37:43,347 --> 01:37:48,347
+Enerji akışı olarak en iyi şekilde yararlanılmasını sağlayacak şekilde düzenlenmesi.
+
+664
+01:37:48,347 --> 01:37:51,347
+Bu felsefe bunu anlatıyor.
+
+665
+01:37:51,347 --> 01:37:52,347
+İşte burada da
+
+666
+01:37:52,347 --> 01:37:54,347
+Steggart'te
+
+667
+01:37:54,347 --> 01:37:57,347
+Hem data hem de kontrol bilgisi var ya
+
+668
+01:37:57,347 --> 01:38:00,347
+Bunları nasıl
+
+669
+01:38:00,347 --> 01:38:01,347
+En iyi şekilde
+
+670
+01:38:01,347 --> 01:38:04,347
+Kontrol ile datayı birbirinden ayırabilecek
+
+671
+01:38:04,347 --> 01:38:06,347
+Ve olası bir saldırıyı
+
+672
+01:38:06,347 --> 01:38:08,347
+Kanary üzerinden
+
+673
+01:38:08,347 --> 01:38:10,347
+En
+
+674
+01:38:10,347 --> 01:38:12,347
+Fazla şekilde tespit edecek
+
+675
+01:38:12,347 --> 01:38:13,347
+Tarzda
+
+676
+01:38:13,347 --> 01:38:14,347
+Düzenleyebiliriz
+
+677
+01:38:14,347 --> 01:38:16,347
+Sorusunun cevabı veriliyor.
+
+678
+01:38:17,347 --> 01:38:19,347
+IBM diyor ki
+
+679
+01:38:19,347 --> 01:38:20,347
+Argüman
+
+680
+01:38:20,347 --> 01:38:23,347
+Return Address ve Steg Frame Point'a zaten dokunamayız.
+
+681
+01:38:23,347 --> 01:38:24,347
+Bunlar çağıranın.
+
+682
+01:38:24,347 --> 01:38:26,347
+Oraya hiçbir şey yapmayalım.
+
+683
+01:38:26,347 --> 01:38:29,347
+Hemen
+
+684
+01:38:29,347 --> 01:38:32,347
+Stack Frame Pointer'den sonra
+
+685
+01:38:32,347 --> 01:38:33,347
+Kanary değeri var.
+
+686
+01:38:33,347 --> 01:38:34,347
+Arada
+
+687
+01:38:34,347 --> 01:38:35,347
+Gerekiyorsa
+
+688
+01:38:35,347 --> 01:38:36,347
+C++
+
+689
+01:38:36,347 --> 01:38:37,347
+Runtime'i varsa
+
+690
+01:38:38,347 --> 01:38:41,347
+Neyi de yerleştiriyoruz arkadaşlar?
+
+691
+01:38:41,347 --> 01:38:43,347
+Exception Handling'i de yerleştiriyoruz.
+
+692
+01:38:43,347 --> 01:38:46,347
+Ama onunla alakalı bir adım sonrasını incelememiz lazım.
+
+693
+01:38:46,347 --> 01:38:48,347
+Sonra da diyor ki
+
+694
+01:38:48,347 --> 01:38:54,347
+Overflow'a sebep olabilecek değişkenler nelerdir?
+
+695
+01:38:54,347 --> 01:38:55,347
+Ereğlerdir.
+
+696
+01:38:55,347 --> 01:38:56,347
+Dizilerdir.
+
+697
+01:38:56,347 --> 01:38:58,347
+İşte buffer örneği falan.
+
+698
+01:38:58,347 --> 01:39:01,347
+O zaman
+
+699
+01:39:01,347 --> 01:39:02,347
+Kullanıcı
+
+700
+01:39:02,347 --> 01:39:05,347
+fonksiyonun içerisinde yazarken
+
+701
+01:39:05,347 --> 01:39:07,347
+şu an
+
+702
+01:39:07,347 --> 01:39:08,347
+belakalı bir adım
+
+703
+01:39:08,347 --> 01:39:09,347
+yazarken
+
+704
+01:39:11,315 --> 01:39:33,315
+Değişkenlerini hangi sırayla tanımlamış olursa olsun, lokal string bufferlarını hemen kanarinin dibine,
+
+705
+01:39:33,315 --> 01:39:43,775
+yani dizi cinsinden, array cinsinden değişkenleri kanarinin dibine gelecek şekilde yerleştirelim.
+
+706
+01:39:44,555 --> 01:39:53,555
+Array tarzı olmayan işte karakterdir, tek karakterdir, integerdir, float'tur veya bir struct'tır.
+
+707
+01:39:53,895 --> 01:39:57,115
+Bu tarz değişkenleri de sonrasına yerleştirelim.
+
+708
+01:39:57,115 --> 01:40:14,755
+Kanarinin koruduğu bölgeye kod akışı sırasında erişilmemesi adına da argümanlar içerisinde pointer olanlar var ise,
+
+709
+01:40:14,755 --> 01:40:21,416
+yani call by value değil de call by reference olarak aktarılanlar var ise,
+
+710
+01:40:21,416 --> 01:40:26,095
+onların adreslerini de aşağıya kopyalayalım.
+
+711
+01:40:26,235 --> 01:40:28,456
+Yani copy of pointer arguments.
+
+712
+01:40:30,475 --> 01:40:35,975
+Böylece kanari ortada tam bir koruma duvarı.
+
+713
+01:40:36,536 --> 01:40:39,555
+Kanarinin üstü ve altı diye düşünelim.
+
+714
+01:40:39,555 --> 01:40:48,315
+Kanarınızı beğenmeyi unutmayın.
+
+715
+01:40:43,923 --> 01:41:02,583
+Şimdi burada Microsoft Visual Studio'da bu Stack Protector, Stack Guard, onun nasıl implement edildiğini görüyoruz, üretilen kodu görüyoruz.
+
+716
+01:41:04,423 --> 01:41:10,844
+Onlar Propolis ve Random Canary'i işte bir kombinasyonunu üretiyorlar.
+
+717
+01:41:10,844 --> 01:41:16,503
+Linux tarafı buna Stack Guard diyor, Microsoft tarafı Guard Stack diyor.
+
+718
+01:41:17,003 --> 01:41:19,884
+GS kısaltması da oradan geliyor sonuç olarak.
+
+719
+01:41:24,283 --> 01:41:28,203
+Canary'nin Microsoft jargonundaki karşılığı Cookie.
+
+720
+01:41:29,224 --> 01:41:33,884
+8 byte'lık bir Cookie kullanıyor. O yüzden bakın Stack'te 8 byte'lık bir yer açıyor.
+
+721
+01:41:33,884 --> 01:41:43,043
+Oraya Security Cookie'nin orijinal halini yerleştiriyor.
+
+722
+01:41:43,043 --> 01:41:46,823
+Daha sonra bunu Stack Pointer'la Exor'luyor.
+
+723
+01:41:47,224 --> 01:41:50,623
+Exor'lamak en basit kriptografik işlem.
+
+724
+01:41:51,484 --> 01:41:53,623
+Modulo 2 aritmetiyle çalışıyor.
+
+725
+01:41:53,764 --> 01:41:56,524
+Exor toplama yapıyor aslında.
+
+726
+01:41:56,524 --> 01:42:01,384
+Ama modulo 2 aritmeti olduğu için toplama eşittir, çıkarma oluyor.
+
+727
+01:42:01,903 --> 01:42:06,884
+O yüzden arka arkaya aynı değerle Exor'lama yaparsak orijinal değeri buluyoruz.
+
+728
+01:42:07,684 --> 01:42:10,644
+Ve sonra da bu değeri nereye yerleştiriyor?
+
+729
+01:42:10,743 --> 01:42:12,743
+ESP artı 8'e yerleştiriyor.
+
+730
+01:42:12,823 --> 01:42:15,503
+Yani Stack'te açtığı 8 byte'lık yere yerleştiriyor.
+
+731
+01:42:15,583 --> 01:42:16,543
+Bu Canary değeri oluyor.
+
+732
+01:42:16,543 --> 01:42:23,703
+Şimdi Canary değeri sabit ama Stack Pointer Runtime sırasında sürekli değişecek için
+
+733
+01:42:23,703 --> 01:42:29,444
+onunla Exor'lanma sonucunda hep random değerler elde edilecek.
+
+734
+01:42:30,024 --> 01:42:34,944
+Geri dönüşte de Stack Pointer 8'den değeri alıyor.
+
+735
+01:42:35,844 --> 01:42:37,823
+Bakın ESP ile Exor'luyor.
+
+736
+01:42:38,104 --> 01:42:40,024
+Orijinal değere dönmüş olması lazım.
+
+737
+01:42:40,024 --> 01:42:47,583
+Ve Security Check Cookie fonksiyonunu çağırıyor.
+
+738
+01:42:48,604 --> 01:42:51,064
+Düzgünse alt satıra devam ediyor.
+
+739
+01:42:51,243 --> 01:42:59,684
+Stack Pointer'ı 8 daraltıp, orijinal hale azaltıp veya azaltıp derken aslında yukarı doğru toplamış oldu.
+
+740
+01:43:00,224 --> 01:43:02,804
+Endle sub yaptığının tam tersi oluyor.
+
+741
+01:43:03,583 --> 01:43:04,804
+Normal yapış devam ediyor.
+
+742
+01:43:04,804 --> 01:43:13,264
+Yok değer bozulduysa, farklı bir şeyse bu fonksiyon Exit 3 ile geri dönüyor.
+
+743
+01:43:13,403 --> 01:43:28,064
+Yani Visual Studio'da kod geliştirdiniz, Windows Runtime'ındasınız ve herhangi bir fonksiyonunuz 3 değeriyle geri döndüyse bilin ki o fonksiyona bir saldırı olmuş demektir.
+
+744
+01:43:34,036 --> 01:43:41,855
+Şimdi başlangıçta bu 2003'te kullanıcı tarafından devreye alınması gereken bir özellik.
+
+745
+01:43:41,855 --> 01:43:48,935
+Kullanıcı demesi lazım ki ben GS yani GuardStack özelliğini implement etmek istiyorum.
+
+746
+01:43:49,895 --> 01:43:57,176
+Hatta bunu fonksiyon başına söyleyebiliyor. Bu fonksiyonda olsun, bu fonksiyonda olmasın diye.
+
+747
+01:43:57,176 --> 01:44:09,615
+2010 sürümüyle beraber Visual Studio'nun bu GuardStack koruması devre dışı bırakılmadığı sürece bütün fonksiyonlara uygulanıyor.
+
+748
+01:44:09,615 --> 01:44:16,695
+Yani orada olay tam tersi. Her fonksiyon için geçerli ama diyelim ki bir X fonksiyonu var.
+
+749
+01:44:16,975 --> 01:44:24,815
+Bu özelliğin olmasını istemiyoruz. O zaman onu bir exception liste, ayrıcalık listesinde şeye veriyoruz, sisteme veriyoruz.
+
+750
+01:44:24,815 --> 01:44:46,256
+Şimdi Microsoft devam ediyor. Diyor ki ben bu mantıkla işte IBM'in o propolis'i neyse stack protector yapısıyla benim onları kombine ettiğim GuardStack yapısında exception handlerları da koruyabilirim diyor.
+
+751
+01:44:46,256 --> 01:44:51,815
+exception handlerları da hemen canary'nin öncesinde zaten yerleştiğini biliyoruz.
+
+752
+01:44:52,235 --> 01:44:56,895
+Stack frame pointer ile canary arasında bu runtime'dan dolayı.
+
+753
+01:44:56,895 --> 01:45:05,395
+Ve artık diyor ki canary sadece return adresi değil, aynı zamanda exception handler yapısını da koruyor diyor.
+
+754
+01:45:05,475 --> 01:45:11,336
+Bu arada bu exception handler yapısı aslında bir kendi içerisinde linkli liste gibi düşünün.
+
+755
+01:45:11,336 --> 01:45:20,155
+Çünkü specific özel exception'dan unspecific genel exception'a doğru gidiyor.
+
+756
+01:45:21,036 --> 01:45:27,416
+Çünkü en başta exception e'dir, altında şuysa şu, şuysa şu, şuysa şu şeklinde.
+
+757
+01:45:27,515 --> 01:45:33,695
+Bu böyle bir birbirini gösteren pointer'lar yani linkli listeler yapısında.
+
+758
+01:45:34,996 --> 01:45:40,336
+Bakın next handler, next handler, next handler görüyorsunuz.
+
+759
+01:45:40,336 --> 01:45:46,315
+Bu seh dediği de structured exception handling.
+
+760
+01:45:47,836 --> 01:45:57,716
+When exception is strong, dispatcher, exception dispatcher, exception'da ne yapılacağına karar verecek olan kod parçası, ona da dispatcher diyoruz.
+
+761
+01:45:58,556 --> 01:46:02,275
+Walks up exception list until handler is found.
+
+762
+01:46:02,275 --> 01:46:07,735
+Eğer tam denk düşen bir handler varsa o zaman onu şey yapıyor.
+
+763
+01:46:08,256 --> 01:46:10,956
+Yoksa default handler'ı kullanıyor.
+
+764
+01:46:13,655 --> 01:46:24,076
+Şimdi overflow, hani şurada buffer var ya, buffer'ı overflow ettik.
+
+765
+01:46:24,076 --> 01:46:31,796
+Hem next kısmını ezdik, hem de handler kısmını ezdik.
+
+766
+01:46:32,136 --> 01:46:33,395
+Point to attack code.
+
+767
+01:46:34,195 --> 01:46:37,416
+After overflow, handler points to attackers code.
+
+768
+01:46:38,056 --> 01:46:41,876
+Exception oluştuğunda da control, hijack.
+
+769
+01:46:42,355 --> 01:46:42,815
+Doğru mu?
+
+770
+01:46:43,676 --> 01:46:44,275
+Mantık bu.
+
+771
+01:46:44,275 --> 01:46:49,655
+Şimdi peki, burada dikkat etmemiz gereken şey şu.
+
+772
+01:46:49,815 --> 01:46:53,916
+Exception is triggered before canary is checked.
+
+773
+01:46:55,376 --> 01:47:01,556
+Exception, canary kontrolünden önce gerçekleşiyor.
+
+774
+01:47:01,655 --> 01:47:03,836
+Çünkü canary kontrolü ne zaman?
+
+775
+01:47:04,416 --> 01:47:06,256
+Fonksiyondan geri dönerken.
+
+776
+01:47:06,975 --> 01:47:09,615
+Ama exception fonksiyondan geri dönerken mi?
+
+777
+01:47:09,615 --> 01:47:13,735
+Hayır, fonksiyonun çalışması sırasında.
+
+778
+01:47:14,536 --> 01:47:24,456
+Yani exception handling listesini değiştirecek şekilde buffer overflow yaparsam
+
+779
+01:47:24,456 --> 01:47:27,536
+ve bu sırada canary değerini de ezersem ki
+
+780
+01:47:27,536 --> 01:47:27,655
+erness bir şeydi.
+
+781
+01:47:28,212 --> 01:47:56,792
+Eziyorum. Çünkü Canary, Exception Handler'ların öncesinde, Local String Buffer'lar ise Canary'nin sonrasında ezmememe imkan yok. Bunu yaparsam ve bir de üstüne üstlük Exception tetiklersem, Canary değeri kontrol edilmeden doğrudan Exception Handler'ın gösterdiği adrese gidiliyor.
+
+782
+01:47:56,792 --> 01:48:08,412
+Şimdi bu çok ciddi bir sıkıntı. Niçin? Canary değerinin bozulmuş olması da bir Exception arkadaşlar.
+
+783
+01:48:09,832 --> 01:48:25,412
+Canary değerini bozarak, Canary değeri kontrol edilmeden Exception oluşmasını ve saldırgan olarak oraya aktardığımız adres değerine gidilmesini tetikliyoruz.
+
+784
+01:48:25,412 --> 01:48:38,232
+Buna regression diyoruz. Yani iyi özellikleri bir araya toplayıp, daha sonra o özelliklerle daha iyi bir yapı oluşturmak isterken,
+
+785
+01:48:38,232 --> 01:48:50,232
+bazen bu örnekte olduğu gibi çok net yansıtıyor, bir takım birbiriyle çelişkili durumlar oluşturan, birbirlerini negatif etkileyen...
+
+786
+01:48:56,212 --> 01:49:04,552
+Durumlardan ötürü ne oluyor? Kötüye gidiliyor. İyiye gidilmiyor, kötüye gidiliyor.
+
+787
+01:49:11,380 --> 01:49:20,640
+Peki, Microsoft bunun için nasıl bir tedbir alıyor? Safe Structured Exception Handling Listesi.
+
+788
+01:49:21,220 --> 01:49:40,800
+Kod jenerasyonu sırasında, kod üretimi sırasında zaten siz kodlayıcı olarak, programlayıcı olarak nelerin exception üretmesi gerektiğini source code'da belirtiyorsunuz.
+
+789
+01:49:40,800 --> 01:49:54,000
+Compiler'da bunu object koda dönüştürürken kenarda bir liste oluşturuluyor. Ne listesi? Güvenli olan exception adresleri listesi.
+
+790
+01:49:55,220 --> 01:50:07,739
+O zaman da sistem herhangi bir exception adresine gideceği zaman o adresin listede olup olmadığına bakıyor.
+
+791
+01:50:07,739 --> 01:50:14,340
+Eğer listede değilse gitmiyor. Yani denial of service olduğu program sonlandırılıyor.
+
+792
+01:50:15,140 --> 01:50:19,239
+Fakat bunun performansına getirdiği yük çok fazla.
+
+793
+01:50:19,400 --> 01:50:29,960
+Çünkü Object Oriented Programming'de çok ciddi miktarda, işte C++'ı da olsun, C Sharp'ı da olsun, Java'sı da olsun çok bol miktarda,
+
+794
+01:50:29,960 --> 01:50:36,340
+Exceptional'lık yapıyoruz. Her şeyi neredeyse try-catch yapısı içerisinde gerçekleştiriyoruz.
+
+795
+01:50:37,020 --> 01:50:40,079
+Öyle olunca da performans baya düşüyor.
+
+796
+01:50:40,079 --> 01:50:42,260
+Peki, ne yapıyorlar?
+
+797
+01:50:43,900 --> 01:50:48,140
+Diyorlar ki...
+
+798
+01:50:48,595 --> 01:50:57,095
+Structured Exception Handling Attacks typically corrupt the next entry in the SEH list.
+
+799
+01:50:59,875 --> 01:51:08,235
+Next'i ezmek zorunda. Çünkü bir linkli liste. Next ve kendisi, next ve kendisi.
+
+800
+01:51:08,235 --> 01:51:15,495
+Bir tane dummy kayıt yerleştirelim. Listenin en başına.
+
+801
+01:51:15,495 --> 01:51:25,815
+Exception oluştuğunda, zaten dispatcher listeyi dolaşacak ya, en uygun olan exception hangisidir diye bakacak ya,
+
+802
+01:51:26,915 --> 01:51:35,135
+bakarken aynı zamanda listenin en başındaki dummy kayıdında düzgün olduğunun kontrolü yapsın.
+
+803
+01:51:35,135 --> 01:51:43,435
+Yani aslında Structured Exception Handling için ayrı bir kanari oluşturulmuş oluyor.
+
+804
+01:51:43,435 --> 01:51:55,175
+Eğer bu dummy record doğruysa, sorun yok, exception yapılabilir.
+
+805
+01:51:55,175 --> 01:52:13,115
+Ama yanlışsa, bu dummy record'ta bir sorun varsa, o zaman saldırı olmuş, exception adresi bozulmuş ve program akışı değiştirilebilir durumda demektir.
+
+806
+01:52:13,915 --> 01:52:15,535
+Programı sonlandırıyor.
+
+807
+01:52:19,060 --> 01:52:38,440
+Evet, örnekleriyle gördük. Canary yapısı güzel bir yapı ama her şeyi tamamen korunuyor. Bu arada dikkat edin, heap ile alakalı hiç konuşmadık. Heap tarafından bir korumayla alakalı bir şey konuşmadık. Canary tamamen stekle alakalı.
+
+808
+01:52:38,440 --> 01:52:58,660
+Ayrıca integer overflow, farklı adresleri göstertebiliyorduk, şey yapabiliyorduk ya, farkına varmadığımız bir integer overflow olabilir ve bu Microsoft'un guard stack yapısı mevcut haliyle kullanılırsa,
+
+809
+01:52:58,660 --> 01:53:14,520
+Exception Handling'den dolayı saldırganlar için böyle bir bayram hediyesi gibi bir şey. Mutlaka Safe SEH veya SEHOP ile beraber kullanılması lazım.
+
+810
+01:53:18,131 --> 01:53:23,891
+Şöyle bir size karanlık senaryo söyleyeyim.
+
+811
+01:53:28,564 --> 01:53:44,224
+Süreklilik açısından bir sistemde çalışan servis kesintiye uğradığında gidip elle çalıştırmamak adına otomatik olarak restart etmesi sağlamış.
+
+812
+01:53:44,224 --> 01:53:52,144
+Bu Unix ve türevlerinde ve Windows'da neredeyse standart yaklaşım.
+
+813
+01:53:52,144 --> 01:54:00,064
+Çünkü her seferinde bu servis crash oldu. Tamam, dump kenarda biz onu inceleriz ama servisin çalışmaya devam etmesi gerekiyor.
+
+814
+01:54:00,543 --> 01:54:04,043
+O yüzden otomatik olarak restart olsun.
+
+815
+01:54:04,963 --> 01:54:18,284
+Şimdi bir servisin bu şekilde göçtükten sonra otomatik restartı sırasında aslında fork ile kopyası çıkartılıyor.
+
+816
+01:54:18,284 --> 01:54:22,484
+Bakın söylüyorum, fork kopya çıkartıyor.
+
+817
+01:54:23,024 --> 01:54:27,423
+Yani böyle bir servis restart oluyorsa kanari değeri değişmiyor.
+
+818
+01:54:28,444 --> 01:54:31,844
+Exec ile baştan başlatılması ayrı bir şey.
+
+819
+01:54:32,463 --> 01:54:35,604
+Fork ile var olanın restart olması başka bir şey.
+
+820
+01:54:35,604 --> 01:54:45,423
+Bu durumda, çünkü kendini yükledi bakın dikkat edin kendini yükledi.
+
+821
+01:54:45,884 --> 01:54:48,824
+Yeni bir executable yüklemedi.
+
+822
+01:54:49,344 --> 01:54:56,744
+Fork her halükarda kullanacağım ama fork'un child kısmında exec ile yeni bir executable yüklemeyeceğim.
+
+823
+01:54:56,884 --> 01:55:00,864
+Zaten var olan executable kendini restart ediyor olacak.
+
+824
+01:55:00,864 --> 01:55:12,644
+Ama orada exec sistem çağrısı yapılmadığı için yeni bir executable yüklemesi adına kanari değeri değişmedi.
+
+825
+01:55:13,244 --> 01:55:14,423
+O zaman ne yapabilirim?
+
+826
+01:55:14,744 --> 01:55:16,484
+Saldırıyorum uygulamaya.
+
+827
+01:55:17,584 --> 01:55:20,064
+Kanari değeri de burada olduğu gibi kanari olsun.
+
+828
+01:55:20,224 --> 01:55:21,584
+C, A, N, A, R'ye.
+
+829
+01:55:21,584 --> 01:55:22,944
+Saldırıyorum.
+
+830
+01:55:23,164 --> 01:55:25,624
+A koydum, uygulama patladı.
+
+831
+01:55:26,524 --> 01:55:28,664
+B koydum, uygulama patladı.
+
+832
+01:55:29,704 --> 01:55:31,524
+C koydum, patlamadı.
+
+833
+01:55:32,543 --> 01:55:34,543
+O zaman ilk harfi ekstrakt ettim.
+
+834
+01:55:34,963 --> 01:55:35,484
+C, A.
+
+835
+01:55:36,184 --> 01:55:40,084
+Bu şekilde dictionary attack, kanari extraction, byte byte byte byte.
+
+836
+01:55:40,963 --> 01:55:41,764
+Bakın ne oldu?
+
+837
+01:55:41,984 --> 01:55:42,764
+Bir servise.
+
+838
+01:55:43,984 --> 01:55:45,684
+Hiç benimle müdahale etmeme gerek yok.
+
+839
+01:55:45,764 --> 01:55:46,704
+Bir script yazdım.
+
+840
+01:55:47,364 --> 01:55:49,584
+Farklı kanari değerleriyle saldırıyorum.
+
+841
+01:55:49,584 --> 01:55:50,144
+Saldırıyorum.
+
+842
+01:55:50,704 --> 01:55:51,304
+İşte nedir?
+
+843
+01:55:51,944 --> 01:55:58,304
+Uygulama ortamından, compiler'ın yapısından dolayı kanari'nin 8 byte olduğunu ödüyorum mesela.
+
+844
+01:55:59,304 --> 01:56:00,764
+Byte byte extract ediyorum.
+
+845
+01:56:01,404 --> 01:56:02,043
+Dikkat edin.
+
+846
+01:56:02,043 --> 01:56:14,344
+Bütün byte'ları tek bir parça olarak düşündüğümde 8 byte 64 byte'e de düşüyor.
+
+847
+01:56:14,984 --> 01:56:18,684
+64 byte'in bütün kombinasyonlarını denemem.
+
+848
+01:56:19,584 --> 01:56:21,264
+Yüzyıllarımı alacak bir şey.
+
+849
+01:56:21,864 --> 01:56:25,463
+Ama her bir byte için 256 deneme yapmam lazım.
+
+850
+01:56:26,364 --> 01:56:33,064
+8 byte varsa da 256 çarpı 8, 2048 deneme ile bu işi çözebiliyorum.
+
+851
+01:56:34,284 --> 01:56:36,984
+Bu da felaket bir senaryo görüyor musunuz?
+
+852
+01:56:36,984 --> 01:56:39,764
+Buna da tedbir alınması lazım.
+
+853
+01:56:44,264 --> 01:56:54,304
+Benzer bir yaklaşımla ESLR randomness'da, yani ESLR tarafından korunan serviste restart olursa,
+
+854
+01:56:54,304 --> 01:57:08,584
+o da fork üzerinden restart olacağı için randomization yeniden yapılmadığından benzer şekilde oradaki randomness'ı da çözebiliyoruz, deşifre edebiliyoruz.
+
+855
+01:57:08,584 --> 01:57:15,604
+Şimdi şu ana kadar olan çözümlerin tamamında client'ı recompile etmem gerekiyordu.
+
+856
+01:57:15,604 --> 01:57:20,644
+Ama client'ı recompile edemiyorsam eğer, ne yapacağım?
+
+857
+01:57:21,224 --> 01:57:21,724
+Dip save.
+
+858
+01:57:24,307 --> 01:57:31,908
+İşletim sisteminde kütüphaneler dinamik olarak yükleniyor. Bir sürü uygulama tarafından aynı anda kullanılıyor.
+
+859
+01:57:32,627 --> 01:57:53,948
+Sistem çağrılarının gerçekleştirilmesi için aracılar. O yüzden eğer araya güvenli olmayan bir fonksiyonun güvenli versiyonunu sağlayacak şekilde aynı fonksiyonu içeren bir kütüphane yerleştirirsen,
+
+860
+01:57:54,307 --> 01:57:59,007
+orijinal kütüphane değil, benim yerleştirdiğim kütüphane çağrılacak.
+
+861
+01:57:59,007 --> 01:58:13,268
+Burada da dinamik kütüphanelerin yüklenme sırası en önemli belirleyici kriter. En son yüklenen kütüphane hangisi ise o kütüphanedeki fonksiyonlar geçerli demektir.
+
+862
+01:58:13,268 --> 01:58:25,667
+Bu şartlar altında sistemin çalışmasını değiştirmeden, uygulamaları değiştirmeden, herhangi bir şey yapmaya gerek kalmadan ne yapabilirim?
+
+863
+01:58:25,667 --> 01:58:38,807
+Bir fonksiyonun güvenli olan versiyonunu yeni bir kütüphane ile sistemde yükletebilirim.
+
+864
+01:58:39,408 --> 01:58:41,068
+LipSafe'in yaptığı şey de bu.
+
+865
+01:58:41,467 --> 01:58:45,807
+LipSafe, en çok saldırı ne üzerinden yapılıyor?
+
+866
+01:58:45,927 --> 01:58:47,547
+StringCopy üzerinden yapılıyor.
+
+867
+01:58:47,547 --> 01:58:49,307
+Neyin kontrolünü yapıyor?
+
+868
+01:58:49,587 --> 01:59:02,228
+FramePointer ile destination arasındaki byte cinsinden mesafe kopyalanacak source'un uzunluğundan büyük mü?
+
+869
+01:59:02,287 --> 01:59:03,408
+Yani bunu karşılar mı?
+
+870
+01:59:03,868 --> 01:59:06,547
+Burada dikkat edin bir str ile çalıştırılacak.
+
+871
+01:59:06,547 --> 01:59:20,167
+Bir performans şeyi olduğu kesin ama en azından kopyalama sonrasında stackframe pointer ve return adresinin ezilmesini engelliyor.
+
+872
+01:59:20,167 --> 01:59:40,467
+Bu saldırı str ailesi üzerinden, str fonksiyonları üzerinden yapılabilecek, bu tedbir str fonksiyonları üzerinden yapılabilecek saldırıları engellemek için kullanılıyor ve herhangi bir recompile işine gerek yok.
+
+873
+01:59:40,467 --> 01:59:52,728
+Uygulama bozuksa bozuk, saldırıyor, vuruyorsa uğruyor ama LipSafe'de bu kontrol yapıldığı için şartlar düzgün değilse uygulama sonlandırılıyor.
+
+874
+01:59:52,807 --> 01:59:53,688
+Yine ne oldu?
+
+875
+01:59:54,087 --> 02:00:01,608
+Complete Bridge, Denial of Service'e transform edilmiş oldu.
+
+876
+02:00:03,648 --> 02:00:05,547
+Başka yöntemler de var.
+
+877
+02:00:05,547 --> 02:00:20,108
+İşte az önce söyledim ya, keep a copy of the stack in memory, on call, push return address to shadow of stack, on return, check that top of shadow of stack is equal to return address of stack, crash if not.
+
+878
+02:00:23,167 --> 02:00:32,648
+Tabii saldırganın shadow of stack bölgesine erişemediğini varsayıyoruz.
+
+879
+02:00:32,648 --> 02:00:42,007
+Burada da Intel'in bir donanım seviyesinde sağladığı özellik var.
+
+880
+02:00:42,207 --> 02:00:43,448
+Shadow of stack pointer.
+
+881
+02:00:43,967 --> 02:00:54,488
+Bu gerçek bir stack pointer değil, belirli şartlarda mevcut stack pointer'ın yerine onu gölgeleyecek şekilde.
+
+882
+02:00:54,488 --> 02:01:04,868
+Shadow of stack pages marked by a new shadow of stack attribute, on call and return, buralar can read and write these pages.
+
+883
+02:01:05,467 --> 02:01:13,547
+Yani call ve return sırasında buraları okuyup yazabiliyoruz ama bunların haricinde bu alanlar değiştirilemiyor.
+
+884
+02:01:13,547 --> 02:01:33,488
+bird
+
+885
+02:01:15,731 --> 02:01:24,952
+Şimdi son olarak da Control Flow Integrity'ye bakalım. Ensure Control Flows as Specified by Codes Flow Graph.
+
+886
+02:01:24,952 --> 02:01:36,532
+Bu 2005 yılında bakın ortaya atılmış bir yöntem. Bir kodun akış grafını çıkartıyoruz.
+
+887
+02:01:41,619 --> 02:01:46,119
+Bir saniye arkadaşlar, bu telefonu cevaplamam lazım. Efendim ben tamam.
+
+888
+02:03:04,659 --> 02:03:13,659
+Evet, burada kod parçasının flow grafı, yani akış grafı üzerinden...
+
+889
+02:03:16,659 --> 02:03:34,180
+Ön görülen akışla şu anda gerçekleşen akış aynı mı? Onu karşılaştırmak istiyoruz. Kontrol Flow Integrity'nin mantığı bu. Az önce de söylediğim gibi aslında 2005 yılında önerilmiş bir yöntem.
+
+890
+02:03:34,180 --> 02:03:41,519
+Compile sırasında Build List of Possible Call Targets.
+
+891
+02:03:45,492 --> 02:03:57,652
+Compilation sırasında herhangi bir noktada o noktadan nerelere dallanılabilir, nerelere gidilebilir bunun listesi çıkartılıyor.
+
+892
+02:03:58,552 --> 02:04:07,612
+Runtime'da da call öncesinde, call instruction öncesinde hakikaten önceden çıkartılmış adreslere gidiliyor.
+
+893
+02:04:07,612 --> 02:04:19,092
+Size neyi çalıştırıyor arkadaşlar? SafeSafe vardı ya, hani Structured Exception Handling'de liste oluşturuyorduk.
+
+894
+02:04:19,252 --> 02:04:33,072
+Bunlar kabul edilebilir düzgün exception handler adresleri. Zaten o yaklaşımda bundan yola çıkılarak gerçekleştirilmiş bir şey.
+
+895
+02:04:33,072 --> 02:04:51,792
+Bu konuda bir sürü araştırma var ki bakın K-Bouncer'da bu araştırmanın sonucu olarak ortaya çıkıyor ve işte pek çok araştırma yapılmasına rağmen K-Bouncer bunların arasında kabul edilebilir şeylerden biri.
+
+896
+02:04:51,792 --> 02:05:01,492
+Diğer taraftan da işte bu CFI, Intel tarafından SCT olarak gündeme geliyor. Böyle implement ediliyor.
+
+897
+02:05:03,072 --> 02:05:11,311
+Control Flow Guard, Windows 10'da Microsoft tarafından devreye alınıyor.
+
+898
+02:05:12,072 --> 02:05:25,212
+Pourments version of CFI, CFI olası tüm akışları tespit edip bunun haricinde herhangi bir akış olmamasını garanti etmeye yönelik.
+
+899
+02:05:25,212 --> 02:05:35,271
+Halbuki CFG'de yani Control Flow Guard'da nasıl bir yaklaşım var?
+
+900
+02:05:35,271 --> 02:05:43,512
+Protects indirect calls by checking against a bit mask of all valid function entry points in executable.
+
+901
+02:05:43,512 --> 02:05:53,052
+Bir bitmap üzerinden hangi fonksiyonlara gidilebilir, gidilemez bilgisi var.
+
+902
+02:05:54,292 --> 02:06:10,192
+Doğrudan değil de dolaylı olarak yapılacak olan fonksiyon çağrılarında bu bitmap ile izin var mı oraya gitmeye yoksa yok mu?
+
+903
+02:06:10,192 --> 02:06:11,931
+Onun kontrolü yapılıyor.
+
+904
+02:06:13,492 --> 02:06:22,192
+İşte bakın GuardCheck, iCall, Windows'daki bunu implement eden kütüphane fonksiyonunun adı.
+
+905
+02:06:22,192 --> 02:06:28,572
+Ensures target is the entry point of a function.
+
+906
+02:06:28,731 --> 02:06:39,552
+Hakikaten kodda daha önce compile edilmiş, adresi bilinen ve gidilebilecek bir yer.
+
+907
+02:06:39,552 --> 02:06:46,412
+Çünkü bakın dikkat edin şuradaki SM'li koduna call ESI var.
+
+908
+02:06:46,992 --> 02:06:50,431
+ESI'ın içerisindeki adrese gidilecek.
+
+909
+02:06:50,832 --> 02:06:53,252
+Peki ESI'ya bu adres nereden geliyor?
+
+910
+02:06:53,832 --> 02:06:55,372
+ESI üzerinden geliyor.
+
+911
+02:06:55,512 --> 02:06:58,912
+Yani mu ESI, ESI'ın gösterdiği adres.
+
+912
+02:06:59,731 --> 02:07:03,252
+Bu adrese doğrudan giderse bu bir function pointer çok net.
+
+913
+02:07:03,252 --> 02:07:06,412
+Bakın ESI bir function pointer.
+
+914
+02:07:07,532 --> 02:07:11,712
+Buna doğrudan gidersek saldırganın bize verdiği koda gidebiliriz.
+
+915
+02:07:12,132 --> 02:07:19,092
+O yüzden ECX'e ESI'ın bir kopyasını alıyor ve bunu GuardCheck'e gönderiyor.
+
+916
+02:07:20,431 --> 02:07:30,192
+GuardCheck'te ECX üzerinden gelen bu adresi kendindeki tabloda kontrol ediyor.
+
+917
+02:07:30,192 --> 02:07:34,992
+İşte Bitmap üzerinden daha performanslı olsun diye kontrol ediyor.
+
+918
+02:07:36,012 --> 02:07:37,192
+Sonrasında ya...
+
+919
+02:07:37,192 --> 02:07:37,931
+...
+
+920
+02:07:38,515 --> 02:07:52,215
+Çalışmayı durduruyor ya da aşağıya devam ettiriyor. Eğer zaten aşağıya devam ettirirse, call ESI ile çok net bir şekilde o indirekt call işleminin yapıldığını görüyoruz.
+
+921
+02:07:52,215 --> 02:08:08,515
+Şimdi Intel'de donanımsal olarak CET dediği bir yapıyı bu işi kolaylaştırmak adına ortaya atmış durumda.
+
+922
+02:08:08,515 --> 02:08:14,455
+Yeni bir instruction var. Bu da end branch instruction. 64 bitlik sette var.
+
+923
+02:08:15,135 --> 02:08:16,455
+Instruction sette var.
+
+924
+02:08:17,775 --> 02:08:26,275
+Dolaylı bir jump veya call instruction'ından sonra, yani aslında bir function pointer veyahut da bir long jump'tan sonra,
+
+925
+02:08:26,875 --> 02:08:31,036
+the next instruction in the instruction stream must be end branch.
+
+926
+02:08:32,555 --> 02:08:37,475
+Dolaylı bir call instruction'ı görüyorsunuz burada.
+
+927
+02:08:37,475 --> 02:08:41,775
+A aksinin içeriğine gidilecek ilk instruction'ın ne olması gerekiyor?
+
+928
+02:08:41,895 --> 02:08:42,555
+End branch.
+
+929
+02:08:43,875 --> 02:08:49,215
+If not, then trigger a checkpoint, fault and hold execution.
+
+930
+02:08:49,955 --> 02:08:50,375
+Niçin?
+
+931
+02:08:50,835 --> 02:08:52,195
+Saldırganın
+
+932
+02:08:52,195 --> 02:09:00,095
+kendi akışı içerisinde buraya bu end branch'i
+
+933
+02:09:00,095 --> 02:09:03,115
+yerleştirememesi gerekiyor.
+
+934
+02:09:03,115 --> 02:09:06,915
+Çünkü saldırgan normalde nereye gidecek?
+
+935
+02:09:07,536 --> 02:09:12,235
+Yani bu kısım olmadan olan kısma gidecek.
+
+936
+02:09:12,935 --> 02:09:19,555
+Ensures an indirect jump or call can go only to a valid target address.
+
+937
+02:09:20,055 --> 02:09:21,536
+No function pointer hayacak.
+
+938
+02:09:21,715 --> 02:09:25,315
+Compiler inserts end branch at valid locations.
+
+939
+02:09:25,315 --> 02:09:30,315
+Siz bir şey yapmıyorsunuz bunu compiler otomatik olarak kendisi yapıyor.
+
+940
+02:09:35,572 --> 02:09:46,471
+Şimdi Control Flow Guard ve CET, Intel'in bu teknolojisi, Do Not Prevent Attackers From Causing a Jump to a Valid Wrong Function.
+
+941
+02:09:46,471 --> 02:10:02,551
+Şimdi geçerli fonksiyonlar listesi var ya, eğer bu geçerli fonksiyonlar listesindeki bir fonksiyon saldırganın işine yarıyorsa, saldırganın bir adımı atlamasını sağlayacaksa,
+
+942
+02:10:02,551 --> 02:10:15,051
+bir veriyi açığa çıkartmasını sağlayacaksa, o zaman saldırgan kontrol akışını geçerli ama o sırada aslında olmaması gereken bir sırada çağırabilir.
+
+943
+02:10:16,931 --> 02:10:22,212
+Bunun da sebebi Hard to Build Accurate Control Flow Graph, statikli.
+
+944
+02:10:22,212 --> 02:10:32,872
+Kontrol Flow Graph'ını bir Source Code üzerinden, statik dediğimiz şey o, runtime sırasında değil de Source Code üzerinden,
+
+945
+02:10:32,872 --> 02:10:40,292
+çok böyle hassas doğrulukta bir Kontrol Flow Graph'ını bulmanın maliyeti çok yüksek.
+
+946
+02:10:40,492 --> 02:10:46,072
+Aslında belirli yerde non-polynomial zamanda çözüme kadar gidiyor.
+
+947
+02:10:46,072 --> 02:10:52,692
+Şimdi bakın böyle bir yapı var, Handshake Handler var, Handshake Handler Login Handler'ı çağırıyor,
+
+948
+02:10:53,431 --> 02:11:01,572
+Login Handler Check Credentials'ı çağırıyor, authorization'ı sağlıyor, oradan da Data Handler'ı da gidiyor.
+
+949
+02:11:01,572 --> 02:11:12,572
+Yani aslında önce login olundu, login sırasında alınan Yusralya ve Password onaylandı, o zaman da dataya erişim sağlandı.
+
+950
+02:11:12,572 --> 02:11:17,712
+Attacers tam bu noktada saldırıyor.
+
+951
+02:11:19,931 --> 02:11:26,112
+Login Handler'ı neyle değiştirecek?
+
+952
+02:11:26,592 --> 02:11:28,152
+Data Handler'ı da değiştirecek.
+
+953
+02:11:29,092 --> 02:11:36,192
+Şimdi login Handler'da geçerli, okeylenmiş, kodun içerisinde yer alan bir fonksiyon.
+
+954
+02:11:36,851 --> 02:11:41,051
+Data Handler'da geçerli, kodun içerisinde yer alan bir fonksiyon.
+
+955
+02:11:41,051 --> 02:11:44,811
+Ama biz burada neyi bypass etmiş oluyoruz?
+
+956
+02:11:45,332 --> 02:11:57,132
+Login Sekans'ını, yani unauthorized, unauthenticated diyelim, user ID ile Password'ine girmemiş bir kullanıcı bu veriye erişebilir.
+
+957
+02:11:59,132 --> 02:12:06,391
+ARM işlemcileri tarafında da Control Flow Integrity ile alakalı çalışmalar yapılmakta.
+
+958
+02:12:06,391 --> 02:12:15,391
+Şimdi saldırganın son gelinen noktada memorideki herhangi bir yeri okuyabileceği, yazabileceğini öngörebiliriz.
+
+959
+02:12:16,172 --> 02:12:17,891
+Yani buna bir kısıtlama getiremeyiz.
+
+960
+02:12:19,391 --> 02:12:26,072
+Bu şartlar altında programın önceden öngörülmüş olan akışından çıkmaması lazım.
+
+961
+02:12:26,072 --> 02:12:29,112
+Çünkü Buffer Overflow saldırısının temelinde ne vardı?
+
+962
+02:12:30,072 --> 02:12:33,952
+Application'ın Control Flow'unu değiştirmek vardı.
+
+963
+02:12:33,952 --> 02:12:37,952
+Diyoruz ki,
+
+964
+02:12:37,952 --> 02:12:43,092
+Every time a jump address is written, copied anywhere in memory,
+
+965
+02:12:43,612 --> 02:12:48,511
+Compute 64-bit IS MAC and append to address.
+
+966
+02:12:48,992 --> 02:12:54,971
+64-bit'lik bir authentication, yani secure hash oluştur.
+
+967
+02:12:55,412 --> 02:12:56,891
+IS MAC yap.
+
+968
+02:12:56,891 --> 02:13:00,511
+Ve bunu adrese birleştir.
+
+969
+02:13:01,891 --> 02:13:07,891
+Heap'te ise bunu sıfırla işaretle, stack'te ise birle işaretle.
+
+970
+02:13:09,271 --> 02:13:21,332
+Her jump veya call işleminden önce o adresin geçerliliğini IS MAC ile tekrar doğrula.
+
+971
+02:13:21,332 --> 02:13:26,971
+eğer doğru değilse, sıkıntılıysa programı durdurur.
+
+972
+02:13:28,692 --> 02:13:30,912
+Şimdi burada sıkıntı şu,
+
+973
+02:13:31,492 --> 02:13:33,372
+hani IS kullanıyor ya, bakın.
+
+974
+02:13:33,844 --> 02:13:48,703
+K değeri var, key değeri var. Key değerini memoride saklayamamamız lazım. Saklamamamız lazım. Çünkü niye? Attacker can retry it anywhere in memory. Memoride saklayacak olursak saldırgan bu değeri de okuyabilir.
+
+975
+02:13:48,703 --> 02:14:07,304
+Bunun için ARL işlemcisinde özel XMM rezistörleri var. Bu rezistörler Privilege Mod'da, yani sadece işletim sistemi tarafından okunup değiştirilebiliyorlar.
+
+976
+02:14:07,304 --> 02:14:28,984
+Bu durumda geriye dönecek olursak, saldırgan şurada check credentials'ı bypass edip login handler'dan data handler'a geçilmesini sağlamak istiyor ya,
+
+977
+02:14:28,984 --> 02:14:35,503
+kriptografik CFI yani ARM işlemcisinde uygulanan o yöntem devreye girdiğinde
+
+978
+02:14:35,503 --> 02:14:38,384
+attacker ne oluşturamıyor arkadaşlar?
+
+979
+02:14:39,123 --> 02:14:46,064
+Data Hamper için geçerli bir message authentication kod MAC değeri oluşturamıyor.
+
+980
+02:14:46,804 --> 02:14:50,184
+Evet, bu haftaki dersimiz de bu kadar.
+
+981
+02:14:51,764 --> 02:14:52,524
+Tamamladık.
+
+982
+02:14:53,844 --> 02:14:57,224
+Haftaya aldığımız yerden devam ediyoruz.
+
+983
+02:14:57,224 --> 02:14:59,724
+Var mı sorunuz arkadaşlar?
+
+984
+02:15:05,747 --> 02:15:09,447
+Hepinize iyi günler diliyorum. Kolay gelsin.
