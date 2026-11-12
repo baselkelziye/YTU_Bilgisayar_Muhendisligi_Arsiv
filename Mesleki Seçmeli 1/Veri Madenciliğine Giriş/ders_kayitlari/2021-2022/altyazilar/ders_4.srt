@@ -1,0 +1,1063 @@
+1
+00:00:52,692 --> 00:00:56,071
+Kimse var mı bakalım? Kimse var mı? Yok.
+
+2
+00:00:57,990 --> 00:00:59,170
+Kibrit ders ya.
+
+3
+00:01:03,795 --> 00:01:14,676
+Ses geliyor mu? Ekranı paylaştım. Hiç bunları söyleyecek kimse yok. Hiç kötü taraf var. Umarım şu an görüyorsunuzdur online var ya da sonradan bulacak olanlar.
+
+4
+00:01:15,896 --> 00:01:22,774
+Evet, bir tarafta ne gördük? Herkes uyuyan gözlerle bakıyor. Bakın diye uyanık var mı?
+
+5
+00:01:30,771 --> 00:01:32,570
+Geçen hafta ne gördük? Kim hatırlıyor?
+
+6
+00:01:41,876 --> 00:02:07,876
+...
+
+7
+00:02:09,075 --> 00:02:14,115
+Data Objects, veri nesnesi ya da Topo gibi şeyler soruyor.
+
+8
+00:02:14,294 --> 00:02:14,555
+Değil mi?
+
+9
+00:02:15,216 --> 00:02:21,194
+Ve daha sonra da dedik ki, Attribute'ler yani öz nitelikler ya da Feature ismini verdiğimiz,
+
+10
+00:02:22,536 --> 00:02:25,115
+Colon olarak, Stoon olarak bahsedebiliriz.
+
+11
+00:02:25,936 --> 00:02:30,555
+Neler vardı? Veri tipleri vardı. Bunların da neleri oluyordu?
+
+12
+00:02:30,936 --> 00:02:33,816
+Verinin tipine göre dört farklı şeyden bahsediyoruz.
+
+13
+00:02:34,132 --> 00:02:43,210
+İlk olarak ne dedik? Kategorik değerlerden bahsederken nominal ve kardinal değerlerden bahsettik.
+
+14
+00:02:43,210 --> 00:02:49,651
+Yani ordinal derken ne dedik? Küçük, büyük gibi sıralayabildiğiniz değerler var dedik.
+
+15
+00:02:50,270 --> 00:02:55,352
+Sonra da numerik değerlerden bahsettik. Numerik değerleri de neye göre alıyorduk?
+
+16
+00:02:59,806 --> 00:03:14,168
+Oransal bir şey söyleyebiliyor muyuz? Bunlara baktık. Değil mi? Sonra da datayı analiz ederken bazı çok temel istatistiksel şeyleri kullanabileceğimizi söylemiştik hatırlarsanız.
+
+17
+00:03:14,306 --> 00:03:20,426
+Ne gibi? Ortalama gibi, ondan sonra medyan gibi ya da çeyreklikler gibi gibi.
+
+18
+00:03:21,426 --> 00:03:27,347
+Şimdi bugün artık yavaş yavaş ilk adıma geçiyoruz. İlk adımımız ne?
+
+19
+00:03:27,806 --> 00:03:54,606
+Veri ön işleme, yani data pre-processing. Tamam mı? Şimdi burada ne yapacağız? Gördüğünüz üzere ilk başta veri kalitesinin tanımını yapacağız. Sonra veriyi nasıl, hangi değerli kalitesinin düzenmesi gerekir? Sonra data integrasyonu nasıl yapılır? Data'a nasıl dönüştürürüz ya da nasıl kesik ayrı hale getiririz?
+
+20
+00:03:55,026 --> 00:04:02,347
+Bir de Data Reduction dediğimiz verinin boyutunu nasıl azaltırız, onlara bakacağız.
+
+21
+00:04:04,866 --> 00:04:09,866
+Bugünkü dersimiz birazcık daha yine hikaye gibi, yani daha sözel.
+
+22
+00:04:10,526 --> 00:04:14,288
+Sayısal kısımlar haftaya artık yavaş yavaş başlıyor olacak.
+
+23
+00:04:14,288 --> 00:04:20,288
+Tamam, metotları görmeye. Haftaya bir konu var, onu anlatıp anlatmayacağımı en iyi değilim.
+
+24
+00:04:20,756 --> 00:04:29,776
+Ondan sonra metotları görmeye ne yapacağız? O konuyu anlatırsam, sonraki hafta anlatmazsam, noktaya ne yapacağız? Başlamış olacağız. Tamam.
+
+25
+00:04:30,276 --> 00:04:35,596
+Pazar yeri gelmişken onu da sorayım ya. Şimdi burada veri tabanı almamış kaç kişi var?
+
+26
+00:04:38,415 --> 00:04:46,536
+Almakta olan. Yani şöyle tamam. Almakta olanlar almamış. Veri tabanını hiç görmemiş. Şu an yeni gören kaç kişi var?
+
+27
+00:04:50,163 --> 00:04:51,163
+Yeri yeri ekme.
+
+28
+00:04:54,899 --> 00:05:12,538
+Data, niye sordum? Çünkü haftaya data veri ağız konusu var. O da biraz veri tabanı bilmeden çok böyle masal gibi gelebilir, gelmeyebilir. Onu bilemedim. Belki onu sonraya atarım. Tamam mı? Yani birazcık daha veri tabanı gördükten sonra sonraki haftalarda anlatırım. Bilmiyorum birazcık ya da iç verimi değiştireceğim, bakacağız.
+
+29
+00:05:18,324 --> 00:05:39,923
+Günümüzdeki veri tabanları diyor, işte hatalı veriye, ondan sonra gürültüye ya da eksik ya da tam olarak bütünleşik olmayan, yani içinde bir yanlış değerler girilmesinden dolayı ne olmayan?
+
+30
+00:05:42,243 --> 00:05:44,764
+Tam içinde bütünlük olmayan.
+
+31
+00:05:45,076 --> 00:06:04,276
+Verinin olmasına diye çok müsait diyor. Nasıl olur bu? Veri tabanı tanımlarken eğer mesela nal değerlere izin veriyorsa ya da işte siz oraya veri tabanında tabloyu oluştururken şu şöyle şöyle olmalıdır gibi atıyorum.
+
+32
+00:06:04,276 --> 00:06:07,315
+Bir trigger yazmadıysanız ya da bir şey yazmadıysanız ne olur?
+
+33
+00:06:08,016 --> 00:06:09,315
+Sonuçta farklı değerleri.
+
+34
+00:06:10,420 --> 00:06:28,540
+Girebilir. Çünkü verit bir şekilde toplanıyor, size öyle geliyor. Ondan sonra eğer ki size bu kalitesiz data üzerinde, kalitesiz data diyeceğim, yani içinde eksik, yanlış, hatalı ya da hiç girilmemiş değer olan bir veritabanımız varsa buna ne diyeceğiz?
+
+35
+00:06:30,219 --> 00:06:35,699
+Kalitesi daha düşük, low quality, beta diyeceğiz. Tamam mı? Peki.
+
+36
+00:06:36,564 --> 00:06:47,803
+Datamızda sıkıntı varsa, yani datamızın kalitesi düşükse bizim bundan madencilik yapıp da doğru bir bilgi etmemizin, bir bilgi erdetmemizin çok bir yolu var mı?
+
+37
+00:06:48,543 --> 00:06:58,124
+Maalesef yok. Bu sebeple de ne yapmamız lazım? Veriyi ön işlemeyle ne yapacağız? Biraz daha kaliteli hale getirmeye çalışacağız.
+
+38
+00:06:58,480 --> 00:07:06,699
+Nasıl yapacağız? Zaten adam veriyor, yanlış girmiş, girmemiş. Ben ne yapacağım ki? Nasıl düzelteceğim? Ne bileyim ben? Kimin nasıl datası? Nasıl yapacağız?
+
+39
+00:07:10,290 --> 00:07:22,031
+Outlier'ları güzel. Geçen hafta tanımladık. Dedik ki işte şuradan şu kadarsa işte bir buçuk çarpı inter-palter renkse çıkarttık. Tamam onları çıkarttım. Güzel. Girilmemiş veriler var.
+
+40
+00:07:33,108 --> 00:07:41,228
+yapabiliriz. Aynen bazı şeyleri düzeltmek için. Kural yazabilirsiniz. Tamam mı? Kod yazabilirsiniz gibi şeyler var.
+
+41
+00:07:41,228 --> 00:07:51,608
+İşte bu derste bunların hepsini ne yapıyoruz? Veri ön işleme diyoruz. Veri ön işlemeyi de neden yapıyoruz? Datayı birazcık daha kaliteli hale getirmek için. Tamam mı?
+
+42
+00:07:52,108 --> 00:07:56,427
+Buradan da bahsettik işte. Yani ne tip data kalitesi problemleri olabilir?
+
+43
+00:07:57,588 --> 00:08:18,108
+Noise olabilir. Noise neden olabilir? Mesela içinde bir gürültü olabilir ya da bir şey topluyordur. Yani sizin datanızı bir sensör topluyordur. O sensörün sürekli ürettiği bir gürültü vardır. Birazdan bunlara bakacağız zaten. Eksik data vardır. Ondan sonra tekrarlayan data vardır gibi şeyler.
+
+44
+00:08:23,124 --> 00:08:37,124
+Eksik veri, yani girilmemiş veri. Neden olabilir? Veriye girmemişlerdir. Nasıl? İşte siz mesela form doldururken sadece gerekli yerleri doldurmuşsunuzdur, diğer tarafı doldurmamışsınızdır mesela.
+
+45
+00:08:37,124 --> 00:08:48,844
+Ya da mesela işte diyelim ki gelir soruyordur ama çocuk 18 yaş altı, işte 25 yaş altı neyse gelir bilgisi yoktur.
+
+46
+00:08:49,024 --> 00:09:08,524
+Ya da işte okul soruyordur, başka eğitim durumu soruyordur. Ona göre şey olmuş olabilir. Peki, ne yapacağız? Eğer ki elimizde eksik değer, yani misin veriyor dediğimiz değer var, ne yapabilirsiniz?
+
+47
+00:09:11,058 --> 00:09:20,980
+Yani tablonuz var, Excel gibi düşünün. Bazı hücreler boş içinde. Ne yapacağız? Hemen geldin, söyle.
+
+48
+00:09:28,307 --> 00:09:55,407
+En kolayı ne yaparız? Sileriz. Ama her zaman silebilir miyiz? Silemeyiz. Eğer ki mesela yüzdesine bakarız, tamam mı? Özellikle yani yüzde on gibi bir şey söyleniyor yaklaşık olarak. Yüzde ondan daha fazlaysa kayıp değer. Ne isteyeceğiz peki? Ne isteyeceğiz? Objeyi. Obje dediğimiz ne? Satır.
+
+49
+00:09:55,956 --> 00:10:23,174
+Tüm satırı sileceğiz. Dolayısıyla ne de önemli? Missing value'ların dağılımı da önemli. Yani şöyle ki, diyelim ki sizin attribütleriniz var ya, sütunlar. Tamam, %10 gibi bir şey dedim ama belki tüm datada %10 gibi. Her şeyin, her kolonun %10'u farklı farklı satırlarda kayıpsa, objelerde kayıpsa zaten ne olur? Sizin elinizdeki data çok ciddi bir miktarda azalmış olur. Tamam mı?
+
+50
+00:10:23,796 --> 00:10:26,056
+Ondan sonra bunları başka neler yapabiliriz?
+
+51
+00:10:30,836 --> 00:10:38,635
+İşte ortalama koyma ya da en yakın iki komşuyu yerine koyma kayıp değerlerdeki gibi şeyler var. Şimdi onlara bakacağız.
+
+52
+00:10:39,296 --> 00:10:41,395
+Bir de artı ne var? Müsim veriyodan başka.
+
+53
+00:10:44,076 --> 00:10:45,596
+Tekrarlayan değerler var.
+
+54
+00:10:47,235 --> 00:10:48,436
+Niye tekrarlasın ki değer?
+
+55
+00:10:50,096 --> 00:10:52,436
+Datada niye aynı satırdan birkaç tane olsun?
+
+56
+00:10:54,755 --> 00:10:55,475
+Ne zaman olabilir?
+
+57
+00:11:00,724 --> 00:11:05,604
+Ama veri tabanı da kopyalamaz. İyi hadi kopyaladı. Tamam yanlışlıkla kopyalayabilir. Başka ne olabilir?
+
+58
+00:11:07,583 --> 00:11:12,484
+Kullanıcı farklı e-mail adresleriyle tekrar kaybolmuş olabilir. Değil mi? Sistemse mesela.
+
+59
+00:11:13,604 --> 00:11:21,303
+Ya da siz diyelim ki yine farklı farklı yerlerden diyelim ki ne olsun?
+
+60
+00:11:23,303 --> 00:11:26,443
+Bir mağaza gibi bir şey düşünün. Farklı farklı yerlerde.
+
+61
+00:11:27,604 --> 00:11:46,864
+Mağaza var, gidiyor. Buraya da işte müşteri olarak bir şey arttırıyor. Gidiyor, başka yerden tekrar açabilir. Aynı kişi. Dolayısıyla tekrarlayan verilerde de ne olur? Bizim datamız bozulur eğer tekrarlayan verimiz çoksa. Onları da yine ne yapmamız lazım? Temizlememiz lazım.
+
+62
+00:11:46,864 --> 00:11:54,803
+Şimdi, niye işliyoruz? Çünkü bir kere doğruluğunu arttırmak istiyoruz.
+
+63
+00:11:55,283 --> 00:12:22,344
+Verini. Tamam mı? Ondan sonra eğer ki girilmeyen eksik data varsa onları bir şekilde tamamlayabiliyorsak tamamlıyoruz yoksa onlardan kurtuluyoruz. Niye? Çünkü eksik data da bazı metotlar hiç çalışmıyor bile. Tamam mı? Onları bir şekilde halletmemiz gerekiyor. Ondan sonra şuna da bakmamız gerekiyor.
+
+64
+00:12:22,702 --> 00:12:43,344
+Güncel mi datanız, güncel mi bazı değerleri update etmeniz gerekir mi? Nasıl? Eğer ki mesela siz oraya yaş girdiyseniz, tamam mı? Sadece yaşlar girildi. Ama elinizde 3 senelik data var. Ne yapmanız lazım? Yaşları update etmeniz gerekiyor.
+
+65
+00:12:43,711 --> 00:12:55,711
+Tamam. Gibi gibi. Ondan sonra toplanan dataya gerçekten güveniyor musunuz? Yani işte bir sensörden geldi, sensörden gelen data tamamen bozuk bile olabilir. Yüzde yüz bozuk bile olabilir.
+
+66
+00:12:57,091 --> 00:13:06,711
+Gibi gibi. Tamam. Ve de datamız gerçekten anlaşılabilir mi? Bu ne demek? Çünkü bizim elde ettiğimiz sonuç...
+
+67
+00:13:07,058 --> 00:13:25,259
+Yani data mining sonucunda elde ettiğimiz o bilginin anlaşılabilir olması lazım. Bunun için de sizin, yani ne olacak diyecek ki şu şundan büyükse, hani yine karar ağacı örneği verelim, şu şundan küçük şeyse şöyle olsun dediğiniz ama o değerlerin neye tekabül ettiğinin anlaşılabilmesi lazım.
+
+68
+00:13:33,202 --> 00:13:40,802
+anlaşılabilir olması lazım. Yani attribütlerinizin neler olduğunun tam olarak açık ve net ortaya konmuş olması lazım.
+
+69
+00:13:40,942 --> 00:13:46,923
+Yani elinizde sayısal bir değer var diyelim ki. Kocaman bir sütun. Bu sütun nereden geldi? Nasıl işlendi?
+
+70
+00:13:47,362 --> 00:13:54,283
+Atıyorum sıcaklık ölçtüyseniz hangi birimden ölçtünüz? Uzunluk ölçtüyseniz nasıl ölçtünüz? Bunların elinizde olması gerekiyor.
+
+71
+00:13:56,623 --> 00:14:00,582
+Bunları da tekrar açıklamış ama buraya geçiyorum. Yani ekürisi komplet nasıl?
+
+72
+00:14:01,460 --> 00:14:04,399
+Bunları sözler açıkladık örneklerle.
+
+73
+00:14:05,279 --> 00:14:10,340
+Şimdi ne yapacağız? Kitapta saçma bir şekil var. Ona bakacağız.
+
+74
+00:14:11,892 --> 00:14:32,611
+Pre-processindeki yapmamız gereken şeyler, yani bugün bütün bu ders boyunca bunları göreceğiz. Data Cleaning. Bir, datayı temizleyeceğiz. İki, Integration. Integration dediğimiz entegrasyon. Farklı farklı yerlerde sizin datanız olabilir. O dataları birleştirmemiz gerekecek. Tamam mı?
+
+75
+00:14:33,364 --> 00:14:45,683
+Ondan sonra Data Reduction dediğimizde datanız çok çok büyük olabilir. Sizin işleyemeyeceğiniz kadar çok büyük olabilir. Dolayısıyla elinizdeki datayı nasıl azaltırsınız?
+
+76
+00:14:46,724 --> 00:14:57,683
+Data Reduction teknikleri var, onlara bakacağız. Hem boyut olarak ya da nümerik olarak işlemlerle datamızı boyutuna...
+
+77
+00:14:58,130 --> 00:15:09,130
+nasıl azaltabilirsiniz, nasıl düşürebilirsiniz, ona bakacağız. Sonra bir de Data Transformation dediğimiz, normalizasyon vesaire nasıl yapılır, onlara bakacağız.
+
+78
+00:15:09,130 --> 00:15:21,130
+Tamam mı? Bakacağımız şeyler bunlar. Şimdi, o saçma şekil şu, bakın bu cleaning, köpükler çıkıyor. Sonra parıl parıl parlıyor veri tabanımız.
+
+79
+00:15:22,644 --> 00:15:30,524
+integration, farklı yerlerdeki datayı birleştiriyorsunuz. Bu da data reduction dediği, ne yapıyorsunuz? Boyutunu küçültüyorsunuz.
+
+80
+00:15:30,903 --> 00:15:41,224
+Görseller önemli. Şimdi data cleaning'den biraz biraz bahsettik değil mi? Ne dedik? Datamızda bir kere missing value dediğimiz eksik değerler olabilir.
+
+81
+00:15:41,224 --> 00:15:47,943
+En büyük sorun her zaman nedir? Missing değerlerdir. Her zaman ciddi anlamda missing.
+
+82
+00:15:48,658 --> 00:16:10,418
+veriyor. Bir yana ne olur? Bunun dışında gürültü olur. Noise dediğimiz ya da outlier'lar olur. Bunların temizlenmesi gerekiyor. Çünkü bunlar temizlendiği zaman datanın içindeki uyumsuzluk, datanın bütünlüğünü bozan verileri de ne yapmış olacağız? Elimine etmiş olacağız.
+
+83
+00:16:10,418 --> 00:16:11,860
+Tamam mı?
+
+84
+00:16:11,860 --> 00:16:13,759
+Şimdi
+
+85
+00:16:14,995 --> 00:16:42,475
+integration da farklı yerdeki birleştireceğiz, reduction. Bunları anlatacağız. Şimdi baktığımız zaman, niye bana şey geliyor? Yani niye bana noise geliyor, şey geliyor? Niye benim böyle database'i, siz şimdi database dersinde göreceksiniz, görüyorsunuz. Her şey gayet tanımlı. Şöyle şöyle şöyle tablo oluştur diyorsunuz. Değil mi? Niye böyle eksik ya da hatalı datalar gelir?
+
+86
+00:16:43,956 --> 00:16:55,596
+İnsan hatasından olabilir. Güzel. İnsan hatası olmayabilir. İnsan bilerek yanlış bir şey de girebilir. Değil mi? Siz internete sürekli doğru bilgi mi giriyorsunuz?
+
+87
+00:16:55,596 --> 00:16:56,196
+Hayır.
+
+88
+00:17:01,076 --> 00:17:05,276
+Heh gibi. Değil mi? Evet doğru. Başka?
+
+89
+00:17:12,146 --> 00:17:12,807
+Tirebri.
+
+90
+00:17:17,076 --> 00:17:27,215
+Evet, güzel. Mesela doğum tarihinize doğru girmeyebilirsiniz. Değil mi? Yani kişi özellikle kişisel bilgileri insanlar çok vermek istemeyebilir. Değil mi?
+
+91
+00:17:28,634 --> 00:17:38,454
+Cihaz hatası da olur. Özellikle sensörden veri geliyorsa, asıl gürültülü veriler de oradan geliyor. Tamam mı?
+
+92
+00:17:42,804 --> 00:17:56,064
+Muhtemelen işte web sitesinde bir yerde ya da form doldururken herkes sadece required, gerekli olan yerleri dolduruyordur. Diğer tarafları ne yapıyordur? Yüksek ihtimalle boş bırakıyordur. Değil mi? Bir kere buradan ne geliyor? Missing data geliyor.
+
+93
+00:17:56,544 --> 00:18:05,064
+Onun dışında mesela gerçekten noise olduğu ya da outlier olduğu mesela maaş demiş, eksi on demiş gibi.
+
+94
+00:18:06,516 --> 00:18:16,516
+Ya da doğum tarihiyle, mesela yaşı 42 iken doğum tarihi 2010 gözüküyor olabilir gibi.
+
+95
+00:18:17,516 --> 00:18:26,516
+Ya da posta koduna girerken, diyelim ki adres girmiştir, bir de yaşadığı il girmiştir, tutmuyor olabilir birbirini.
+
+96
+00:18:27,516 --> 00:18:30,954
+O an kafadan atmıştır, doldurmak için doldurmuştur gibi gibi.
+
+97
+00:18:31,666 --> 00:18:58,386
+Bede ne var? Kitap doğumu vermiş. Ocak 1 herkes hani işte takvi kaydır vesaire zor olduğu için herkes Ocak 1 deyip hop doğum tarihini işaretlemiş olabilir. Bunlar hep ne? Hatalı, temizlenmesi gereken datalar. Tamam mı? Bunlara örnek verdik. Peki, şimdi ilk elimizdeki missing data varsa, eksik data varsa ne yapacağız?
+
+98
+00:18:59,604 --> 00:19:02,624
+Ne yapabiliriz? Bir kere bu nereden çıkıyor?
+
+99
+00:19:03,803 --> 00:19:06,663
+Equipment dediğiniz şey hatalı çalışıyor olabilir.
+
+100
+00:19:06,962 --> 00:19:12,384
+Yani donanımsal hatta yazılımsal bazen de böyle böyle şeyler çıkıyor olabilir.
+
+101
+00:19:13,652 --> 00:19:19,551
+Bir kere bir sistem yapmıştık. Böyle çalışıyor. Sonra bir baktık, bütün bir tane kolonun hepsini 0-0 toplamış.
+
+102
+00:19:19,652 --> 00:19:25,751
+Yani şöyle yapmış, intijra hepsini kest etmiş, veri tabanına cart yazmış, 0 nokta noktalar uçmuş mesela.
+
+103
+00:19:25,892 --> 00:19:32,432
+Birkaç haftalık veri öyle toplanmış gibi. İnsan hatası da, yazılımcı hatasından da kaynaklanabiliyor.
+
+104
+00:19:32,551 --> 00:19:34,251
+Doğru düşün test edilmediği için de kaçmış.
+
+105
+00:19:34,688 --> 00:20:01,548
+Ondan sonra hatalı anlaşma sonucu yani kullanıcı girerken yanlış anlayıp yanlış bir şey girebilir. Yani işte diyelim ki Amerikan sistemindeki tarihte ay önce gelir, gün sonra gelir, sonra yıl gelir ya. Bunu girerken işte 07-02 girdiği zaman Şubat'la Temmuz'u karıştırmış olabilir. Gibi gibi neler var? Şeyler var. Peki misin datayı ne yapabiliriz biz? Acaba çıkarımla ne olduğunu bulabilir miyiz? Tamam mı?
+
+106
+00:20:01,810 --> 00:20:17,711
+Şimdi ilk yapabileceğimiz şey ne? Eğer ki az miktardaysa kayıp data, eksik data ne yapabiliriz? Direkt eksik datanın olduğu, missing datanın olduğu satırı silebiliriz. En kolay yol.
+
+107
+00:20:19,171 --> 00:20:26,270
+Ama bu çok fazlaysa, datanız da azsa bayağı bir şeyi bozar, bütünlüğü bozar.
+
+108
+00:20:47,923 --> 00:20:55,762
+Elle yapılabilir. Hatta şöyle bir şey var, bir Medify Data'da çalışırken.
+
+109
+00:20:56,211 --> 00:21:15,530
+Doğru mu, değil mi? Mesela işte radyoloji görüntüleri var. Doğal teşhis doğru mu, değil mi? Mesela şey kalanlar tekrar doktor onları okuyup datasını düzeltebiliyor bile. Eğer ki data sizin için çok önemliyse ve de böyle çok zaman almadan bir şekilde yapılabilecekse manuelde ne oluyor?
+
+110
+00:21:23,730 --> 00:21:33,290
+Bir şey yapıyorsanız, metin madenciliği yapıyorsanız ya da işte datanın nereden geldiği var o radyoloji görüntülerindeki gibi elinizde görüntü vesaire var.
+
+111
+00:21:33,432 --> 00:21:40,451
+Tekrar uzman bilgisine ihtiyaç varsa bu tarz şeyler de yapılabiliyor. Peki otomatik de daha basit bir şekilde nasıl doldurabiliriz?
+
+112
+00:21:42,192 --> 00:21:47,692
+Şimdi şöyle bir şey olabilir mi? Şimdi hem şunu da söylememiz lazım aslında.
+
+113
+00:21:48,307 --> 00:22:13,307
+Missing Value, yani kayıp olan şey, DNP Classification yapacağız. Tamam mı? Sınıflandırma yapacağım. Ve kayıp olan değer, sınıfın etiketi ise, bunu ortalamayla doldur falan demek ne yapar? İşi ciddi bozar. Hatırladınız mı sınıflandırmayı? Sınıflandırmada etiket çok önemliydi. Şimdi eğer ki etiket bilgisi kayıpsa,
+
+114
+00:22:13,971 --> 00:22:31,471
+Bu şeyleri yapmıyoruz. Tamam mı? Bu söylediğimiz yani missing onu bir söyleyelim. Missing Value'daki şeyler etiket bilgisi için geçerli değil. Tamam mı? Diğer attribütler de geçerli. Şimdi ne olabilir? Şöyle bir şey yapılıyor. Bir tane global bir değer işte tanımlanıyor.
+
+115
+00:22:31,968 --> 00:22:49,508
+Bunu bazı tool'lar direkt mesela işte oraya nal da diyebiliyor ya da işte siz kendiniz yeni bir tane bilinmiyor gibi bir eğer ki kategorik değerleriniz varsa yeni bir sınıf oluşturup onunla doldurabiliyorsunuz. Tamam mı? Numelikte böyle bir şey yapmıyoruz. Bunu sadece kategorikte yapıyoruz.
+
+116
+00:22:50,259 --> 00:23:05,019
+İkinci yol, numelikte yaptığımız ortalama. Eğer ki o attributun ortalaması bir şekilde uyuyorsa ve vatanız da azsa bunu yazabiliyorsunuz. Aynı zamanda şu da kullanılıyor.
+
+117
+00:23:05,339 --> 00:23:16,079
+Diyelim ki data toplanmış. Bütün veri setin ortalamasını değil de mesela en yakın, kendinden önceki ve sonrasının ortalamasını al for gibi metotlar da var.
+
+118
+00:23:16,564 --> 00:23:28,324
+Veri tabanında bütün ortalamayı her yere koymuyor da, kendinden önceki ve sonraki değerin ortalamasını al koyu gibi metotlarla ne yapılabiliyor? Data doldurulabiliyor.
+
+119
+00:23:29,442 --> 00:23:44,324
+Ondan sonra şöyle bir şey de var, ortalama alınırken bir global ortalama dedik. İkincisi de, dedim ki yine sınıflandırma yapacaksınız. Her sınıfa ait o atribütteki ortalama bulunup,
+
+120
+00:23:44,722 --> 00:23:50,522
+O oraya konuyor. Yani, diyelim ki A ve B iki klasınız var, tamam mı?
+
+121
+00:23:50,823 --> 00:23:55,702
+Biyelim ki işte uzbide ne var? Uzunluk var, tamam mı?
+
+122
+00:23:56,403 --> 00:24:00,864
+İşte A'nın uzunluk ortalamasını alıp A'daki mesin değerlere koyuyorsunuz.
+
+123
+00:24:00,962 --> 00:24:08,663
+Sonra sınıfı B olanların uzunluk atribütündeki ortalamayı var olanların ortalamasını alıp ona koyuyorsunuz.
+
+124
+00:24:12,626 --> 00:24:16,547
+Eğer sınıflandırma yapıyorsanız bu yöntemde kullanılabilirsiniz.
+
+125
+00:24:17,507 --> 00:24:19,666
+Sonra, gelelim şuraya.
+
+126
+00:24:31,796 --> 00:24:51,296
+Ne oluyor bir de? Şöyle bir şey oluyor. Diyelim ki elinizde diğer etkili yükler var var. Yani var, çoğu var. Daha hiç dayı tamamen yapmadan mesela ya Bayes çıkarımıyla tamam mı? Yani Bayes kuralını kullanarak data veri tabanındaki Bayes kuralı nasıl işliyor? Diyelim ki
+
+127
+00:24:52,403 --> 00:25:19,263
+İşte kullanıcının basit şeyi örnek verelim. İşte cinsiyeti var, boy uzunluğu var, kilosu var, bilmem nesi var bir hıfı tahmin ediyor. Tamam mı? Eksik değer de var. Ondan sonra veri tabanındaki şeylere bakıyor. Ona benzeyen satırlara bakıyor. Tamam mı? İstatistiksel olarak oradaki boş olan değer ne olabilir? Her biri için, her bir boş değer için tek tek tek tahmin ediyor.
+
+128
+00:25:20,948 --> 00:25:32,627
+Tamam mı? Ve de aslında ne yapıyor burada? Her biri için tek tek tahmin ettiği için daha akıllıca boş değerleri doldurmuş oluyor.
+
+129
+00:25:33,728 --> 00:25:40,307
+Bunu ya karar ağacı ile yapabilir ya da işte Bayes çıkarımıyla yapılabilir.
+
+130
+00:25:40,788 --> 00:25:52,867
+Ve baktığımız zaman aslında kendine benzeyen bir şey varsa, o satıra benzeyen profilde başka bir şey varsa aslında ona daha yakın bir değer koymaya çalışıyor.
+
+131
+00:25:52,968 --> 00:26:00,508
+Herkese yani bütün kayıplara eşit davranmıyor ortalama koymak gibi. Herkese daha farklı bir değer koymaya çalışıyor diyebiliriz.
+
+132
+00:26:01,394 --> 00:26:07,414
+Eğer sevdişin tilileri ya da Bayes çıkarımın nasıl çalıştığını görürsek biraz daha kafanıza oturur.
+
+133
+00:26:07,515 --> 00:26:11,454
+Tamam, şu an bunu bilmediğiniz için çok bir şey ifade etmemiş.
+
+134
+00:26:26,163 --> 00:26:31,163
+Oyun vermediğiniz için de oy vermiştik. Onlar yerine doldurdu.
+
+135
+00:26:33,163 --> 00:26:36,163
+Mesela ben bir filmi teklif edelim.
+
+136
+00:26:36,163 --> 00:26:38,163
+Benim yerime oy veriyordu.
+
+137
+00:26:38,163 --> 00:26:39,163
+Ben izlemiştim gibi.
+
+138
+00:26:39,163 --> 00:26:43,163
+Eğer o filmi izlediğimizi oy verdiğiysem bana o filmi izledi.
+
+139
+00:26:45,163 --> 00:26:46,163
+Hiç anlamadım.
+
+140
+00:26:46,163 --> 00:26:48,163
+Başka anlatayım.
+
+141
+00:26:48,163 --> 00:26:52,163
+Ben filmleri izlemek için de izlemek için de izlemek için.
+
+142
+00:26:53,172 --> 00:27:05,330
+Benim izlem alışkanlıklarından, başka benim izlem alışkanlıklarından, bizim kelimesi, küseme gitmeleri de oynuyorlar. Onları bilmeyerimize dolduruyor.
+
+143
+00:27:06,548 --> 00:27:16,988
+Bizim izlem alışkanı, serasa göre, karar yazı, izlemediği için de, bizim en yüksek bana vereceklerinizi, sınıflandırma, en yüksek bana vereceklerinizi, sınıflandırma.
+
+144
+00:27:17,508 --> 00:27:22,728
+Gibi olabilir. Aslında buna benziyor yani, bu da ona benziyor. Evet, burada yaptığı şey de,
+
+145
+00:27:23,182 --> 00:27:34,502
+Aslında onu tahmin edip, senin izlemediğin filmi var ya, bunu izleseydi kaç olurdu? Bu missing value, diğer değerlere baksak kaç olurdu deyip onu oraya koyuyor. Onun gibi diyebiliriz.
+
+146
+00:27:42,098 --> 00:27:55,078
+Zaten çok yani missing value fazlaysa biraz daha farklı şeyler var. Yani artık missing value'larla baş etmek için yani şeyler çıkıyor, yeni yöntem çıkıyor ki.
+
+147
+00:27:55,634 --> 00:28:16,454
+Missing Veri'yoyu da sistem kendi içinde tahmin ediyor gibi. Yani işte mesela yeni gunlar vesaire var. Kendisi bir şey üretebilir mi? Yani Missing Veri'yoyu tahmin etmeyelim de kendisi elindeki var olan dataya benzer yeni veri üretsin. Tamamen aslında şey veri, yapay veri, sentetik veri.
+
+148
+00:28:16,864 --> 00:28:23,864
+Çok fazlaysa zaten misin veriyorlar da hiç şey olmuyor. Daha başka başka yöntemler deniyoruz.
+
+149
+00:28:23,864 --> 00:28:32,864
+Şeyleri göreceğiz, live one out gibi falan filan veri sesinin boyutunu arttırmak için farklı farklı şeyler kullanıyoruz.
+
+150
+00:28:32,864 --> 00:28:42,864
+Veriniz azsa, bir de artı misin veriyonuz çoksa şey olmuş. Sistem iyi bir şekilde zaten.
+
+151
+00:28:43,700 --> 00:28:53,940
+eğitilmiyor. Yani verinizin yarısı yoksa, kolonun yarısı yoksa ona diğer yarının ortalamasına koymak iyi bir çözüm mü? Değil. Onun yerine başka başka şeyler yapacağız.
+
+152
+00:28:58,038 --> 00:29:10,680
+Peki noise ne? Noise'den rastgele olan hata. Yani nasıl bakabilirsiniz? Mesela sesteki cızırtı gibi düşünebilirsiniz değil mi? Orada bir ne vardır?
+
+153
+00:29:11,188 --> 00:29:17,688
+Noise vardır. Dolayısıyla Noise varsa nasıl anlarsınız?
+
+154
+00:29:23,538 --> 00:29:24,159
+Söyleyin.
+
+155
+00:29:28,211 --> 00:29:36,412
+Dağılımın etkileri ama bütün elimizdeki veriler böyle standart işte gaz dağılımı olacak diye bir kural da yok. Dağılımdan da her zaman çıkaramıyoruz.
+
+156
+00:29:54,612 --> 00:30:00,491
+Gibi yani sinyal üzerinden işlem yapıyorsanız zaten işte noise'ı elimine eden farklı farklı filtreler var.
+
+157
+00:30:01,231 --> 00:30:05,652
+Mesela işte sinyal işleme dersi alırsanız görürsünüz ya da görüntü için ne yaparsınız?
+
+158
+00:30:05,811 --> 00:30:11,672
+İşte medyan filtre uygularsınız vesaire vesaire. Salt and paper filtresi uygularsınız falan feşmege.
+
+159
+00:30:11,672 --> 00:30:21,892
+Ama ve lakin bu sefer elimde öyle yani nereden geldiğini çok iyi bilmediğim veri olabilir yani işte sensörden mi geliyor ya da tamamen.
+
+160
+00:30:22,036 --> 00:30:42,715
+neyden gelen, kullanıcının girdiği veriden gelen şey olabilir. Tamam mı? Noise olabilir. Dolayısıyla ne yapıyoruz? Aslında özellikle numerik şeyler için, veriler için datayı smooth ediyoruz. Smooth etmek ne demek?
+
+161
+00:30:47,700 --> 00:30:55,480
+Şimdi ne olduğunu anlayacaksınız. Yani aslında datanız mesela zigzags ise onu biraz daha düz hale getiriyoruz gibi bir şey diyebiliriz. Tamam mı?
+
+162
+00:30:56,460 --> 00:31:05,940
+Daha basitleştiriyoruz ve şeyini kaybediyoruz aslında. Mesela görüntüde de pikseller varsa, tamam mı? Aralarında uç değer varsa ne olur?
+
+163
+00:31:06,019 --> 00:31:12,700
+Onların mesela filtre uygulayıp ortalama değerini alıp onların yerine koyarsınız. Göz çok anlamaz ama hassas değerleri de kaybedersiniz.
+
+164
+00:31:13,682 --> 00:31:17,044
+Yani uç değerleri onlar önemli olabilir aslında ama onları da kaybedersiniz.
+
+165
+00:31:17,564 --> 00:31:20,463
+Burada da aslında şimdi nümerik olarak da göreceğiz.
+
+166
+00:31:21,223 --> 00:31:25,503
+Mesela data smooting yaparken datayı birazcık daha ne yapıyoruz?
+
+167
+00:31:25,624 --> 00:31:27,223
+Hassas değerleri de kaybediyoruz.
+
+168
+00:31:28,442 --> 00:31:28,864
+Tamam mı?
+
+169
+00:31:29,644 --> 00:31:34,364
+Şimdi bineğin dediğimiz şeyi birazdan göreceğiz nasıl yaptığımız zaman, nasıl yaptığımızı.
+
+170
+00:31:39,796 --> 00:31:47,115
+Bunların farklı işte bazen ortalamasını, bazen işte medyanını ya da uç değerlerini almak gibi yöntemler var. Şimdi onları göstereceğim.
+
+171
+00:31:48,414 --> 00:31:58,336
+Regresyon var. Regresyonda ne yapıyoruz? Elimizdeki dataya göre oraya bir eğri, doğru ne istiyorsanız onu fit ediyorsunuz. Tamam mı?
+
+172
+00:31:58,414 --> 00:32:04,855
+Diner regresyon yaparsanız oraya bir doğru fit edersiniz. Sonra benim datam bu doğru üzerinde nereye geliyor?
+
+173
+00:32:20,564 --> 00:32:24,403
+doğru yere gösteriyorum. Sonra da şunun yerine
+
+174
+00:32:24,403 --> 00:32:28,523
+şöyle x1 olsun. x1 yerine x2 koymaktan
+
+175
+00:32:28,523 --> 00:32:31,483
+sıra bu doğru üzerine x1
+
+176
+00:32:31,483 --> 00:32:36,743
+y1 üstüne geliyor.
+
+177
+00:32:37,284 --> 00:32:40,423
+y1 ise bu doğru üzerinde y1 üstüne
+
+178
+00:32:40,423 --> 00:32:44,203
+ekleyecek. y1 yerine doğru üzerinde gelen
+
+179
+00:32:44,203 --> 00:32:45,804
+y1 üstüne koyuyor.
+
+180
+00:32:47,826 --> 00:33:00,826
+Böyle en azından olup varsa bu türlü de böyle olacakken hepsi sanki bir doğru üzerinde, buna bir doğru tutarsam, oturup sen nasıl bir şey onu bulup sonra her bir noktada doğru üzerindeki deyin ile değiştiriyoruz.
+
+181
+00:33:02,826 --> 00:33:13,826
+Bu da noise randı patrumanın farklı bir yolu. Sonra sadece noise değil bir de neler olabilir? Outlier'lar olabilir. Outlier'lardan da kurtulmak için tümeliyorum.
+
+182
+00:33:14,654 --> 00:33:16,234
+Benzer datayı kümeledim.
+
+183
+00:33:24,276 --> 00:33:30,276
+Eğer ki sizin bilmenizin çok dışında kalan değerler varsa bunlar altlı ayrıdır.
+
+184
+00:33:30,276 --> 00:33:33,276
+Ne yapabilirsiniz? Onları atabilirsiniz.
+
+185
+00:33:33,276 --> 00:33:41,276
+Ya da burada da, eğer reilesiyon yaptıktan sonra, şunların ortalama uzaklığı bulursunuz. Tamam mı?
+
+186
+00:33:41,276 --> 00:33:51,692
+Eğer bu ortalama uzaklığı atıyorum, bir buçuk katı daha uzak olan varsa bunları at.
+
+187
+00:33:51,796 --> 00:33:55,796
+Büyük artıları, matematikler, yorumlar da kullanılabiliyor.
+
+188
+00:33:55,796 --> 00:34:00,796
+Ya diyeceksiniz, ben datanayla yapacağım, bunlar ha bir işlem yok.
+
+189
+00:34:00,796 --> 00:34:04,076
+Yani, matematiksel yapacağım, böyle bir yapacağım, okuyacağım.
+
+190
+00:34:09,010 --> 00:34:24,571
+Yani ne zaman yapacaksak ya hazır tüm kullanacağız ya da bazı kütüphaneleri kullanacağız. Bunlar hazır olarak içinde var. Ama sorun ne sorun şu, çok fazla yöntem var. Hangi yöntemi uzayacağımızı bilmeniz gerekir.
+
+191
+00:34:28,276 --> 00:34:36,296
+Peki, şunda da ne var? Hatalı olabilecekler, bulunduktan sonra direkt silmiyoruz. Tamam mı?
+
+192
+00:34:36,955 --> 00:34:41,516
+Bir uzmana soruyoruz. Diyoruz ki, bu outlier mıdır yoksa gerçek değer midir?
+
+193
+00:34:42,836 --> 00:34:53,196
+İnsana soruyor. İnsan diyor ki, evet bu outlier'dır ya da değildir. Ona göre outlier'ı siliyor ya da veri tabanının içinde burası.
+
+194
+00:34:56,339 --> 00:34:57,140
+Çok kullanılıyor bu.
+
+195
+00:35:00,787 --> 00:35:07,787
+Özellikle datanın az olduğu, önemli olduğu şeylerde insan gücüne ihtiyaç duyuyoruz.
+
+196
+00:35:09,147 --> 00:35:11,627
+Mesela şimdi biz bir proje yapıyoruz, bir firmayla.
+
+197
+00:35:12,507 --> 00:35:17,407
+Bir tane elimizde bir model var, çok iyi çalışmıyor çünkü az veri de öğretilmiş.
+
+198
+00:35:18,327 --> 00:35:21,147
+Ama yine sadece %80 çalışıyor, çok da kötü değil.
+
+199
+00:35:21,887 --> 00:35:26,307
+Şimdi yeniden, yeni setteydi, yeni data setin işlenmesi lazım.
+
+200
+00:35:27,028 --> 00:35:48,388
+Ama ne yapacağız? O yüzde seksenlik çalışan modelle çalıştıracağız. Ondan sonra tek tek tek tek bak bu bulduğu bu outlier mi değil mi? Doğru çalıştı mı çalışmadı mı? İnsan hepsini baştan işaretlemektense sistemin daha böyle tereddütte olduğunu, hata payının daha yüksek olabildiğini düşündüklerini sadece işaretleyecek.
+
+201
+00:35:55,379 --> 00:35:59,919
+Medikardata gibi ya da şeyler de önemli oluyor.
+
+202
+00:35:59,919 --> 00:36:08,999
+Diyelim ki, Freud dediğimiz mesela kredi kartında, diyelim ki, zaten az elimizde öyle data var.
+
+203
+00:36:09,875 --> 00:36:31,575
+Belki milyonda bir transakçında var. O gerçekten o mu değil mi? Odatayı, [öğrenci]'ya hop silemezsin senin belirtiler diye. Dolayısıyla onları tekrar tekrar, yani odatalara birazcık daha konuları kaybetmemeye çalışıyoruz. Yani onun için insanın işin içine girip tekrar manuel işaretleme ne yapabiliyor? Yapabiliyor.
+
+204
+00:36:33,155 --> 00:36:35,515
+Bir de crowdsourcing duydunuz mu hiç?
+
+205
+00:36:37,171 --> 00:36:59,511
+Mesela ne oluyor? Herkes küçük bir tarafını yapıyor. Yani mesela Amazon Mechanical Tutor Turk diye bir şey var. Amazon'a giriyorsunuz, diyorsunuz ki, şimdi işte yaptığınız şey başına ya da işaretlediğiniz şey başına para alıyorsunuz. Diyor ki size, atıyorum resim gösteriyor, buradaki ağacı tıkla diyor gibi görevler veriyor.
+
+206
+00:36:59,511 --> 00:37:02,771
+Ya da işte şunu veriyor, bu bu mudur, bu mudur diyor, tıkla diyor.
+
+207
+00:37:03,680 --> 00:37:07,220
+Sen öyle 10 tane işaretliyorsun, sen 20 tane işaretliyorsun.
+
+208
+00:37:08,040 --> 00:37:14,160
+Böyle böyle aslında herkesin işaretlediğinden ne oluyor? Kocaman bir veri ortaya çıkmış oluyor.
+
+209
+00:37:15,160 --> 00:37:25,200
+Büyük datalarda da yine işte crowdsourcing ile hani tek insanın ya da 2-3 insanın işaretlemesinin zor olduğu datalarda da ne oluyor? O şekilde.
+
+210
+00:37:26,100 --> 00:37:32,240
+Veri toplanabiliyor. İşte o datalarda da maalesef misin veri olmuyor ama çok fazla outlier olmuş olabiliyor.
+
+211
+00:37:33,240 --> 00:37:39,379
+Tamam mı? Yani mesela bir işaretleyen tamamen kötü işaretlediyse datayı ne yapabiliyor, bozabiliyor.
+
+212
+00:37:40,020 --> 00:37:47,160
+Onların da yeniden şu tarz yöntemlerle belirlenip tekrar insan eliyle işaretlenmesi gerekebiliyor.
+
+213
+00:38:11,732 --> 00:38:20,352
+Evet, o zaman yani o basınç değişimi senin için önemliyse, outlier diye silmiyorsun.
+
+214
+00:38:23,988 --> 00:38:39,707
+Human Inspection'a yani eğer sen bakıp diğer attribütleri silerken, hayır bu basınçtaki normaldir deyip, Human Inspection'da bakıp tek tek, basınç bugün çok yükselmiş, başka kaynaktan da baktın, tamam mı? Check ettin, evet yükselmiş, bunu silme.
+
+215
+00:38:40,267 --> 00:38:49,807
+Tek tek bakıyorsan o zaman Human Inspection olmuş oluyor. Ama şunu diyorsan kural tabanlı bir şey, basınçta outlier detection yapma, hiç yapma.
+
+216
+00:38:50,131 --> 00:38:52,131
+Bu, on zonu.
+
+217
+00:38:57,939 --> 00:39:10,899
+Şimdi şurada ne dedik? İlk billing diye bir şey söyledik değil mi? Data smoothing'de. Diyor ki, ilk başta data'yı sırala, ondan sonra binlere ayırtıyor.
+
+218
+00:39:10,899 --> 00:39:21,019
+Şimdi çok basit bir şey. Ne yapıyoruz? Data'yı sıralıyoruz, sonra binlere ayırdıktan sonra smooth yapmanın dört tane kuralı var.
+
+219
+00:39:21,747 --> 00:39:41,507
+Bir tanesiyle ilkinde 1000'deki ortalama en üstüne koyuyoruz. İkincisinde 1000'in medyanıyla hepsini değiştiriyoruz. Üçüncüsünde de bandrilerle yani 1000'in başındaki ve sonundaki değerin hangisine daha yakınsa onunla değiştiriyoruz. Şimdi şuraya bakalım. Bana verilen sayılar ne?
+
+220
+00:39:43,604 --> 00:39:57,144
+Bana verilen sayılar 4, 8, 15, 21, 21, 24, 25, 28, 34. Kaç sayı var? 10 sayım var sayamadım. 2, 4, 6, 8, 9 tane sayı var. Tamam mı? Sıralı mı? Sıralı.
+
+221
+00:39:58,284 --> 00:40:05,244
+Şimdi bunu kaç bine koyacağımıza kim karar veriyor? Siz karar veriyorsunuz.
+
+222
+00:40:06,419 --> 00:40:22,759
+Burada üç bine koymuş. Üç tane bine. Yani baktığımız zaman 4, 8, 15, birinci binde, 21, 21, 24, ikinci binde, 25, 28, 34'te, üçüncü binde. Tamam mı? Şurada verdik.
+
+223
+00:40:25,479 --> 00:40:33,220
+Şimdi amacım ne yapmak? Bunu smooth yapmak. Yani bu datayı düz bir hale getirmek. Tamam mı?
+
+224
+00:40:33,616 --> 00:40:59,276
+Dolayısıyla ilkine her bin binin ortalamasını koy. 4, 8, 15. Bunların ortalaması ne? 9. Dolayısıyla buradaki her değeri 9 ile değiştiriyorum. Yani 4 gitti artık 9 oldu. 8 gitti 9 oldu, 15 gitti 9 oldu. Ne yapacak bu? Niye böyle bir şey yapıyoruz? Bakın hassas değerleri ne yapıyoruz?
+
+225
+00:41:00,051 --> 00:41:12,412
+Aslında kaybediyoruz. Değil mi? Ama bir yandan bunun içinde ne olabilir? Gürültü olabilir. Aslında gürültüyle ne yapmış oluyorum? Elimi ne etmiş oluyorum.
+
+226
+00:41:13,491 --> 00:41:20,792
+Tamam mı? Burada da işte ortalaması 22 iken hepsini 22 ile bunun ortalaması da 29'muş. Hepsini 29 ile değiştiriyoruz.
+
+227
+00:41:21,651 --> 00:41:34,531
+Peki, medyanla, smoothing by mean medyan ne? Bunun medyanını buluyoruz. 4, 8, 15 medyan ne? 8. Hepsini 8 ile değiştiriyor. Ya da ikinci binin medyanı 21, hepsini 21 ile değiştiriyor.
+
+228
+00:41:35,691 --> 00:41:46,871
+Şimdi, boundarylerle değiştiren ne? O da şu. Şimdi birinci binde 4, 8, 15 var değil mi? Bunun sınırı ne? 4 ve 15.
+
+229
+00:41:48,915 --> 00:42:01,595
+4 ve 15 için mesela 4, 4'e yakın, 4 zaten kalıyor. 8, 4'e mi daha yakın, 15'e mi daha yakın, 10'a bakıyor. Hangisine daha yakın? 4'e daha yakın. O yüzden 8'i 4 ile değiştiriyor.
+
+230
+00:42:02,215 --> 00:42:07,515
+Şurada atıyorum bir de 13 olsaydı, 13'ü 15 ile değiştirecekti gibi.
+
+231
+00:42:23,124 --> 00:42:44,944
+Çünkü buraya bakınca çok saçma gibi. Nerede işe yarıyor? Şurada işe yarıyor. Diğer gibi girerken ondalık da girdi. Tamam mı? Atıyorum tamamen. Kilo girerken biri işte 55.8 girdi. Öbürü 60 girdi. Öbürü 62.3 girdi gibi gibi bir sürü kontinyüs değer var. Tamam mı? Kontinyüs demeyelim de ondalıkla kontinyüs değil. Öyle değeriniz var.
+
+232
+00:42:45,939 --> 00:42:53,999
+Bu değerleri diyorsun ki sen 20 tane bine ayır dediğin zaman aslında senin elinde toplam 20 tane kilo oluyor.
+
+233
+00:42:54,139 --> 00:42:56,939
+Yani o birbiri değerlerden falan kurtulmuş oluyorsun.
+
+234
+00:42:57,079 --> 00:43:02,519
+Mesela atıyorum işte 60 ile 64 kilo arasında bir değer gibi. Bunları bu şekilde almış oluyor.
+
+235
+00:43:03,439 --> 00:43:05,499
+Onlar da birazcık daha işe yarıyor.
+
+236
+00:43:05,499 --> 00:43:12,499
+Bir de özellikle sıraladın ya, sıraladığın zaman benimki şurada yani...
+
+237
+00:43:12,756 --> 00:43:31,395
+Diyelim ki çok büyük sayı var. Ya da işte kilodan gidelim. Kilosu atıyorum, 170 olan birisi var. O 170'i aslında o bir outlier değil. Kilosu gerçekten 170 olabilir. Ama onu çok nadir görülen durum mesela onları birazcık daha yaklaştırmış olursun.
+
+238
+00:43:31,395 --> 00:43:40,116
+Ya da işte aralarda çok küçük değerler varsa, böyle sayılar yakın olacak diye bir şey de yok. Tamam mı? İşte arada bir sürü değer varken.
+
+239
+00:43:53,107 --> 00:43:57,147
+Outlier'ın başta sonunda olmak zorunda değil. Aralarda da olabilir ya.
+
+240
+00:44:02,836 --> 00:44:08,595
+Ama dediğim gibi bunu smooth ederken gerçek değerdeki hassaslığı da ne yapabilirim?
+
+241
+00:44:09,296 --> 00:44:10,215
+Kaçı da bilirim.
+
+242
+00:44:12,135 --> 00:44:13,095
+Bu da bir sıkıntısı.
+
+243
+00:44:14,675 --> 00:44:27,256
+Şimdi data smoothing diyoruz ki aslında data smoothing için kullanılan birçok metot aynı zamanda veriyi azaltmak için kullanılıyor.
+
+244
+00:44:27,828 --> 00:44:39,627
+Özellikle şurada dedik ki, regresyon ve clustering dedik. Değil mi? Yani binin bir tanesiydi, onun örneğine baktık. Sonra bir tanesi regresyon yapabiliriz dedik. Şunu çizdik.
+
+245
+00:44:40,087 --> 00:44:50,668
+Ya da clustering yapıp, kümelerin dışında kalanlara ya da işte tek elemanla ya da birkaç eleman, eleman sayısı az olan kümeleri ne yapabiliriz? Bunlar outlier diye silebiliriz dedik.
+
+246
+00:44:51,604 --> 00:44:59,723
+Dolayısıyla da bunlar aslında data reduction içinde kullanılıyor. Data reduction ne? Bunu göreceğiz.
+
+247
+00:45:00,303 --> 00:45:06,223
+Tamam yani aslında şöyle söyleyelim. Data reduction'a baktığımız zaman, mesela binin yaptığımız zaman ne oluyor?
+
+248
+00:45:06,723 --> 00:45:14,043
+Her bir attribute için, hani deminki kilo örneğini verdik değil mi? Aslında var olabilecek değerleri de azaltmış oluyor.
+
+249
+00:45:18,560 --> 00:45:24,440
+İşte bin tane farklı kiloda kilo değerim varken elimde binin yapsam ne oluyor?
+
+250
+00:45:25,280 --> 00:45:28,700
+İşte yaptığın bin sayısına göre değişmiş oluyor değerler.
+
+251
+00:45:28,700 --> 00:45:40,400
+Aslında ne yapmış oluyoruz? Birazcık daha sistemler için datamızı daha böyle sayısal değerleri bile kategoriye aslında biraz yaklaştırmış oluyoruz.
+
+252
+00:45:41,360 --> 00:45:41,880
+Tamam mı?
+
+253
+00:45:44,160 --> 00:45:56,440
+Bir de konsept hiyerarşileri var. Bunu şeyin sonunda göreceğiz. Dersin sonuna doğru konsept hiyerarşisinin ne olduğunu yani hiyerarşik bir şeye örnek verip göreceğiz. Tamam mı? Şimdilik aklınızı tutun.
+
+254
+00:46:13,203 --> 00:46:34,004
+Ayrı olma ihtimali olmuyor. Mesela, benim yaşarımdığım, birbiri aradım, bilmem ne aradım. Hep böyle başka bir yere eşleşmiştir. Sürekli o hamurları, ortalamalar olursunuz. Olmak farklıdır. Ama aynı şey dengelmiştir.
+
+255
+00:46:34,995 --> 00:46:44,415
+İki satır bir şey de zamanla ayrılır. Yani böyle bir olup miktar arasında eksiklik olmakta da bazı miktar bir araştırıcı işlemi yapmakta.
+
+256
+00:46:44,955 --> 00:46:50,215
+Bir şey söyleyeyim de, belki bir şey eksik söylemiş olabilirim. Öyle mi anladım ona göre.
+
+257
+00:46:50,635 --> 00:46:58,055
+Şimdi bunu yaparken bütün bu tablodaki değerleri mi alıyoruz? Hayır. Her bir attribute için ayrı ayrı yapıyoruz. Tamam mı?
+
+258
+00:46:58,055 --> 00:47:02,235
+Her bir kolon için, her bir feature için bu işlemleri ayrı ayrı yapıyoruz.
+
+259
+00:47:02,995 --> 00:47:22,175
+Başınıza diyor ki, yani hepsinin aslında farklı farklı olması iyi. Çünkü birbirine yaklaştırır diyorsun. Değil mi? Yani diyelim ki atıyorum, işte sen atıyorum 70 kilodasın, 60 kilodaki bir insanla, diyelim ki bir 80 boyundasın, bir 85 boyundaki insanla bu işlemi yaptığın zaman aynı yere gelebilirsin. Uzayda bile aynı noktaya gelebilirsin.
+
+260
+00:47:22,484 --> 00:47:48,823
+Zaten yapmak istediğim de o. Çünkü elimde çok dağınık bir şey var ve bu data çok boyutlu, iki boyutlu falan değil. Amacım ya sınıflama yapmak ki zaten o şeyden sonra aynı sınıfa girebilir misiniz? Onu bulmak. Ya da kümeleme yapmak, sizi zaten aynı kümeye koyacağım. Aslında birazcık nihai hedefim olduğu için sizi böyle yaklaştırmak birazcık daha işine geliyor insanım.
+
+261
+00:47:49,491 --> 00:47:50,171
+Ante lütfen.
+
+262
+00:47:58,836 --> 00:47:59,336
+Evet.
+
+263
+00:48:06,515 --> 00:48:32,655
+Getiriyoruz. Güzel. Şimdi bunu yaparken sadece train data da değil, test data da yapmanız lazım. Tamam mı? Yani şu data da diyelim ki işte binlere, diyelim ki bine çevirdiniz. Yani ne oluyor? Döfle. 15 arasındaki değerler, şurada 9 oldu ya. Test data da siz buraya 14 diye bir şey vermiyorsunuz, 9 veriyorsunuz. Çünkü
+
+264
+00:48:33,555 --> 00:48:59,235
+Sonrasında işleri karıştırabilir. Orada da yapman lazım. Diğer türlü hata oldu. Ciddi hata olur. O güzel ayrıntı. Başka soru? Sıkılıyor musunuz? Ara verebilirsiniz. 53 tamam. Ara verebiliriz. Bakalım onunla kimse gelmiş mi?
+
+265
+00:48:59,680 --> 00:49:23,000
+Oo, online. Onlinecılar, duyuyor musunuz? Burada mısınız? Çıkabilirsiniz bu arada. Tamam. [öğrenci], şimdi kaç dakika ara istiyorsunuz? 10 mu, 15 mi? 15. Kaç? 10 geçe mi? O zaman 10 geçe başlıyoruz, tamam. Onlinecılar, 10 geçe kadar aramız var, sonra başlıyoruz.
+
+266
+00:49:26,707 --> 00:49:27,367
+Kapatçım.

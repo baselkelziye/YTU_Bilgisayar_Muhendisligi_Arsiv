@@ -1,0 +1,531 @@
+1
+00:00:12,980 --> 00:00:13,780
+Haydi bakalım.
+
+2
+00:00:41,396 --> 00:00:42,856
+Online'ları aldık.
+
+3
+00:00:44,956 --> 00:00:46,576
+Niye buraya geldik?
+
+4
+00:00:47,435 --> 00:00:48,435
+Daha anlatmadık ki.
+
+5
+00:00:53,140 --> 00:01:10,079
+Burada kaldık. Şimdi ne yapıyoruz? Ayrıklaştırmaya çalışıyoruz. Ayrıklaştırma ne demek? Elimizde kontinüüs değerler var. Tamam mı? Bunları bir şekilde ayrık değerler haline nasıl getiririz? Bir tanesi ne? Bining dedi. Değil mi? Yani aralıklara böyle bir şekilde.
+
+6
+00:01:12,563 --> 00:01:38,283
+Kararlıkları kendimiz belirleyeceğiz. Eşit ağırlık ya da frekanslarına göre. Yani elimde her elemandan kaç tane varsa sayıp her bine eşit sayıda eleman düşecek şekilde ne yapacağım? Ayıracağım. Tamam mı? Ondan sonra da o binin etiketi neyse ona vermiş olacağım. Ya da etiketlendirmeyi, yani isimlendirmeyi kendiniz yapabilirsiniz. Tamam mı? Şimdi diyor ki binin yaparsak eğer bu
+
+7
+00:01:38,591 --> 00:02:02,592
+Class bilgisi, yani label kullanıyor mu? Hayır, kullanmıyor. Değil mi? Sadece değerlere bakıp ayırıyor. Dolayısıyla binin bir unsupervised teknik mi? Evet, yani label kullanmadığı için. Aslında basit bir kümeleme tekniği mi? Aslında evet, kümeleme tekniği. Çünkü kümeleri tamamen siz belirliyorsunuz, aralığı şu olsun diyorsunuz. Dolayısıyla bir...
+
+8
+00:02:03,188 --> 00:02:18,627
+Unsupervised bir ayrıklaştırma yöntemi. Şimdi şuna bakalım. Price varmış, 5'den başlıyor, 215'e kadar gidiyor. Tamam mı? Şimdi biz bunu eşit genişliğe bölmeye çalışırsak nasıl yapacağız? Maksimum değerim ne?
+
+9
+00:02:19,104 --> 00:02:32,084
+211. 215 3'e bölerseniz 75 çıkmaz. Kaç çıkar? 70. Nasıl 70 çıkıyor ya? Evet gerçekten 70 çıkmıyor. Tamam. Yuvarladığı için 70 çıkıyor. Tamam.
+
+10
+00:02:32,584 --> 00:02:41,604
+Dolayısıyla 0 ile 70 arasındaki olan değerleri işte 5, 10, 11, 1001'e, 70 ile 140 arasında olan değerleri ikinci bine.
+
+11
+00:02:43,060 --> 00:02:49,400
+140 ve 210 arasındaki değerleri de ne yapıyor? Yani sonrasını 3. 1000'e yerleştirmiş oluyor.
+
+12
+00:02:54,611 --> 00:03:11,371
+Bu kadar yaptı şey bu. Ve de ne yaptı? 1-2-3 diye bunlara label verdi. Artık diskretize ediyor ya bunu. Aslında bu ve if döngüsü gibi bir şey. Peki gelelim equal frequency de nasıl olacak?
+
+13
+00:03:11,759 --> 00:03:23,339
+Bu sefer neye bakmam lazım? Sıraladım. Kaç eleman var toplamda? 12 tane. Bunları ilk dördünü birinci bine, ikinci dördünü ikinci bine, üçüncü dört tanesini de üçüncü bine koyacağız.
+
+14
+00:03:23,479 --> 00:03:31,819
+Buna da frekansa göre bilinleme diyoruz. Peki clustering'de ne var? Şimdi clustering algoritmasını daha görmedik.
+
+15
+00:03:40,692 --> 00:04:05,372
+Clustering algoritmaları, k-means gibi ya da farklı farklı neler var, algoritmalar var. Bunlar otomatik kümeleme yapmaya çalışıyor. Buradaki slide'da da k-means'i falan vermemiş de, aradaki boşluk, sayılar arasında bir boşluk var değil mi? Mesela şu sayılara baktığımız zaman, nerede boşluk var bakalım. En büyük boşluk nerede? Mesela 89 ve 204 arasında.
+
+16
+00:04:05,683 --> 00:04:30,624
+Diyor ki, en büyük aradaki farkla bakıyor, en büyük fark burada. Dolayısıyla şu 89'a kadar olanları bir küme, 204'ten sonrasını bir küme yapıyor. Sonra bakıyor, bunun arasındaki fark 11, en büyük boşluk hangisi? İkinci boşluk. Gap dediğimiz şey o. Onu buluyor, onu bulduktan sonra diyor ki oradan hadi bakalım bir daha ayıralım diyor.
+
+17
+00:04:32,084 --> 00:04:44,403
+Böyle çalışıyor. Kaç küme istediğiniz size bağlı. O kadar. Aradaki farka göre ne yapıyor? Ayırmış olur. Sonra aradaki en büyük fark 20 olduğu için 15'i, 35'i de bir daha ayırmış. Böyle 3 kümeyi ayırmış.
+
+18
+00:04:46,884 --> 00:04:53,104
+Peki, bu da yine aynı şekilde ne? Unsupervised bir yöntem. Etiket falan kullandık.
+
+19
+00:04:53,492 --> 00:05:01,492
+Bir de ne yapabiliriz? Etiketlerine göre kullanabiliriz. Genellikle bunda da karar ağacı kullanılır diskretize ederken.
+
+20
+00:05:01,992 --> 00:05:08,651
+Dileceksiniz ki, 3 sınıfın varsa, diyelim ki continuous değer için, ne yapıyorsunuz?
+
+21
+00:05:12,112 --> 00:05:32,072
+Bu, bu arasındaysa A sınıfıdır. Bu, bu arasındaysa B sınıfıdır diyorsunuz ya. İşte o aralığı otomatikman entropi kullanarak öğrenmesini sağlıyorsunuz ama şu an daha bunu erken. Tam decision pilleri gördüğünüz zaman entropiyle nasıl, işte ağacın yaprağı, ondan sonra ağaçtaki o notlar nasıl belirleniyor onları göreceğiz.
+
+22
+00:05:34,228 --> 00:05:39,567
+Bunu geçiyorum, korelasyon analiziyle, discretization'ı. Tamam, şimdi geçtim başka bir yere.
+
+23
+00:05:39,807 --> 00:05:45,707
+Diskretization için kullanılan konsept, bir araşisi.
+
+24
+00:05:46,579 --> 00:05:53,939
+Burada ne yapıyoruz? Bu aslında hiyerarşide ne olur? Mesela piramit gibi düşünün. Tamam mı?
+
+25
+00:05:54,500 --> 00:06:00,540
+İşte bir üst level, sürekli bir üst level vardır ve bir üst level bir alt leveldakileri kapsar.
+
+26
+00:06:00,839 --> 00:06:10,280
+Aslında bunu ağaçlar gibi de düşünebilirsiniz bir yanda. Ne yaparsınız? Ağaçtaki her bir level ne yaparken de dallarını kapsar gibi düşünebilirsiniz. Tamam mı?
+
+27
+00:06:14,579 --> 00:06:23,139
+Bu konsept aslında bizim database'imizin içinde var ve genellikle de ya işte istesiyler analizden çıkar ya da manuel olarak oluşturulur.
+
+28
+00:06:23,540 --> 00:06:30,860
+Ne olduğunu göstereyim. Yenim ki price var elinizde tamam mı? Elinizde sıfırla bin dolar arasında değerler var.
+
+29
+00:06:31,923 --> 00:06:57,243
+Bunu ne yapıyorum? İşte 0-200 arasına böldüm, 200-400 arasına böldüm. Bunları bölmeye devam edebilirim. 100-100 böldüğüne bakmayın. Tamam bunlar tamamen yani eşit olacak diye bir şey yok. Bunlar tamamen istatistiksel şeyden çıkıyor. Ve bu aşağı inmeye devam ediyor. Yani sen level 2'dekilerini al dediğin zaman şunla şu aralığı alıyorsun. Bu şey ya, hiyerarşi ya. Level 1'dekini al dediğin zaman şu 5 taneyi alıyorsun.
+
+30
+00:06:58,420 --> 00:07:07,480
+Yani level 5 alırsan işte 1, 2, 3, 4, 5 tane script değerin olurken bir sonraki level alırsan mesela 10 tane oluyor gibi.
+
+31
+00:07:08,540 --> 00:07:15,200
+Bu dediğim gibi manuel de belirlenebiliyor ya da istatistiksel değerlerine göre yine entropi vesaire kullanılarak belirlenebiliyor.
+
+32
+00:07:18,800 --> 00:07:25,200
+Burada da şeyi göstermiş. Mesela nominal attribute'ler için nasıl bunu...
+
+33
+00:07:26,291 --> 00:07:50,191
+Oluştururum. Ya da işte mesela şu daha iyi bir örnek bence. Yıl var, baktığımız zaman çeyreği, yılın çeyreği, ay, gün. Ve aynı zamanda böyle bir hafta ve yıla yine tekabül ediyor değil mi? Yani siz atıyorum Nisan işte ikinci çeyreğin işte şu ayının şu günü derken şu hafta olarak da Nisan işte bilmem kaçıncı haftasını ifade edebilirsiniz.
+
+34
+00:07:51,444 --> 00:08:02,403
+İşte bu aslında ne gösteriyor? Bir hiyerarşi gösteriyor. Ya da şuraya baktığımız zaman işte ülke var, ondan sonra eyaleti var, şehri var gibi.
+
+35
+00:08:03,024 --> 00:08:09,644
+Eyalet sadece bunları alırsanız, yani şehirleri almak yerine tek başına şunu da alabilirsiniz ya da ülke bazında da alabilirsiniz.
+
+36
+00:08:09,644 --> 00:08:13,704
+Bu şekilde kullanılan hiyerarşiler mevcut.
+
+37
+00:08:14,836 --> 00:08:19,415
+Şimdi geldik son aşamaya. Gaza bastım farkında mısınız? Anlamadığınız yer var mı?
+
+38
+00:08:22,756 --> 00:08:26,975
+Varsa soru. Şimdi data'yı reduction yapacağız. Reduction ne demek?
+
+39
+00:08:30,056 --> 00:08:37,036
+Ben datayı çoğaltmaya çalışıyorum. Nasıl missing value'ları doldurun falan filan diyorum. Şimdi datayı azaltacağız. Ne kadar saçma.
+
+40
+00:08:38,496 --> 00:08:40,956
+Niye datayı azaltacağız? Datayı azaltmak ne demek?
+
+41
+00:08:43,635 --> 00:08:52,796
+sıkıştırmak olabilir. Yani datayı gerçekten sıkıştırarak azaltabiliriz ya da boyutunu azaltabiliriz. Bazı attribütleri direkt atabiliriz.
+
+42
+00:08:53,415 --> 00:09:04,796
+Niye redaktiona ihtiyacımız var? Çünkü siz bazen datanız çok çok büyük olabilir. Şimdi datanın büyük olması ne demek? Bizim algoritmalar aslında uzayda çalışıyor gibi düşünün.
+
+43
+00:09:04,796 --> 00:09:08,135
+Sadece iki tane kolonunuz varsa. Tamam mı?
+
+44
+00:09:08,384 --> 00:09:30,744
+Diyelim ki her bir satır, yani satırlarınız var, iki tane de kolonunuz var, iki tane attribütünüz var. Bunu uzayda her bir şeyi, her bir objeyi uzayda neyle gösterirsiniz? İki boyutta gösterirsiniz, değil mi? Şurası x ekseniniz attribüt 1 olur, y ekseniniz attribüt 2 olur. Her bir objede burada bir noktadır.
+
+45
+00:09:31,700 --> 00:09:47,659
+Şimdi ben bir kolon daha eklesem uzayı üç boyutlu olacak. Bir kolon daha eklesem dört boyutlu olacak. Dolayısıyla sizin bin tane etribültü bir veriniz ne demek? Bin boyutlu bir uzay demek.
+
+46
+00:09:48,211 --> 00:10:14,211
+Ve algoritmalar ne yapmaya çalışıyor? Çok büyük bir uzayda bir şey. Genellikle işte göreceğimiz algoritmalar optimizasyon üzerinden çalışacak. Yani işte %100 doğru sonucu vermeyecek çoğu algoritma. Tamam mı? Local minimumu verecek mesela. Dolayısıyla çok büyük datada bazı şeyler hiç belki işte RAM yetmeyecek. Tamam mı? Ya datanın bir çok olması her zaman iyi değil.
+
+47
+00:10:14,836 --> 00:10:41,756
+Dolayısıyla yapabileceğimiz ilk şey ne? Bu aradaki korelasyonlara bakıp, mesela iki attribute aynı şeyi söylüyorsa onları bir tanesini elemek. Bunun dışında da ne var? Boyutunu azaltabiliriz. Yani diyelim ki bin sütun demek, bin boyut demek ya, bunun boyutunu azaltabiliriz. Nasıl yaparız? Bunu da yapmak için çeşitli teknikler var. Bir tanesi verilet transformu. Verilet transformu ne demek?
+
+48
+00:10:42,484 --> 00:10:44,644
+Fourier dönüşümü gördünüz mü?
+
+49
+00:10:46,084 --> 00:10:47,724
+Fourier dönüşü ne yapıyor?
+
+50
+00:10:51,635 --> 00:11:07,596
+Sinyal dersinde mi gördün, nerede gördün? Ne yapıyor? Sizin diyelim ki bir sinyaliniz var, değil mi? Buradaki frekanslara bakarak aslında sizin sinyalinizi baskın frekans ya da frekanslar neyse onun cinsinden söylemenizi sağlıyor. Değil mi? Frekansı saat dönüştürüyor.
+
+51
+00:11:08,255 --> 00:11:10,176
+Revlet'te de şöyle bir şey var.
+
+52
+00:11:14,131 --> 00:11:22,591
+Vevlet buna artı bir de zaman ekleyerek, tamam mı? Zaman bazlı datanızı alıyor, tamamen farklı bir şekilde söylemenizi sağlıyor.
+
+53
+00:11:23,811 --> 00:11:30,771
+Ne olduğunu, yani bunu vevlet anlatsak en az 3 hafta süper, o yüzden geçiyorum. Ama vevletin sonucunda şunu yapmış oluyor.
+
+54
+00:11:32,251 --> 00:11:39,771
+Frekans ne demek? Sizin datanızın içindeki tekrarlayan şeylere bakıyor. Yani satır düşünün, satırı yani her bir objeyi sinyal gibi düşünün.
+
+55
+00:11:41,535 --> 00:11:51,595
+frekansı diğerlerine göre daha fazla olabilir. Burada yeri de aldığı için, hangi kolonda olduğunda aldığı için onları alıp diğerlerini atıyor.
+
+56
+00:11:51,595 --> 00:11:57,675
+Yani böyle bir bin tane sununuz varsa yedi yüze belki sekiz yüze indirebiliyorsunuz. Tamam mı?
+
+57
+00:11:58,292 --> 00:12:16,272
+PTA dediğimiz şey de tamamen linear C1 üzerinden. Ne yapıyorsunuz? Datanızı alıyorsunuz. Datanız diyelim ki işte bin tane kolonunuz var, bir milyon tane de satırınız var. Tamam mı? Sonra işte eigenvalue bulmak bunları gördünüz mü? Aygın vektör bulmak.
+
+58
+00:12:20,788 --> 00:12:34,968
+Ne? Nerede gösterilmiş olabilir, gösterilmemiş de olabilir. Öz bir şey, öz bir şey. Neyse bilemedim. Türkçesini hatırlayamadım, biliyordum aslında da tamam.
+
+59
+00:12:34,968 --> 00:12:42,968
+Tamamen matematiksel bir teknikle. Ne yapıyorsunuz? Burada da aslında kolon ve satırlar arasında...
+
+60
+00:12:43,700 --> 00:12:53,200
+İlişkiye bakarak fazla olan şeyleri çıkartmaya çalışıyorsunuz. Tamam mı? Tamamen bunlar boyut azaltmaya yönelik stratejiler.
+
+61
+00:12:53,200 --> 00:13:02,360
+Şimdi, tabii en önemliler, evet en önemlileri bırakıp daha az etkileyenleri.
+
+62
+00:13:03,251 --> 00:13:12,091
+Çıkartmaya çalışıyoruz boyut olarak. Onu da yaparken mesela PC işte birbirinin katı mı ya da işte baktığı zaman ne yapıyor?
+
+63
+00:13:12,711 --> 00:13:20,331
+Yani siz mesela bir şey gösterirken on değil de orta hepsine bakarak yedi tane feature ile bunu öde bir zent edebilir misiniz?
+
+64
+00:13:20,572 --> 00:13:24,731
+Hani onu anlamaya çalışıyor. Tamamen matematiksel işlem yani.
+
+65
+00:13:26,091 --> 00:13:29,831
+Dediğimiz gibi diamond şanı yani datanın boyutu arttıkça ne oluyor?
+
+66
+00:13:30,351 --> 00:13:37,052
+Datanız daha dağınık, uzayda daha farklı farklı yerlere düşmeye başlıyor. Değil mi? Böyle düşünebilirsiniz.
+
+67
+00:13:37,771 --> 00:13:46,731
+Ve aslında siz ne istiyorsunuz? Data kadar düşmesin, daha böyle aynı yerde dursun. Daha az, dimensionla.
+
+68
+00:13:47,283 --> 00:13:56,244
+Buna ifade etmek ne? İşimize geliyor. Niye? Çünkü postu, maliyeti daha düşük oluyor. Hem algoritman olarak hem de diğer olarak.
+
+69
+00:13:56,943 --> 00:14:05,343
+Dolayısıyla ne yapabiliriz? Dimensional Reduction yapacağız. Bunun için de Wavelet ya da PCI kullanabilirsiniz. Ama bunlar çok çok kullanılır.
+
+70
+00:14:07,091 --> 00:14:11,771
+WaveNet belki sinyalde de anlatılmıştır, görüntü işlemede falan da anlatılıyor olabilir.
+
+71
+00:14:12,191 --> 00:14:17,911
+Ama kütüphaneleri olan, çok sıklıkla kullanılan yöntemler. Altında bayağı ciddi matematik var.
+
+72
+00:14:18,484 --> 00:14:35,704
+Ya da PC ya da VEDET kullanırsınız. Bu dimension, yani boyutunu azaltıyoruz. Bin boyutum varken bunu ben 700 boyutla aynı şeyi ifade etmeye çalışıyorum. Yine kayıpla, birebir aynısını ifade edemesem de benzerini ifade etmeye çalışıyorum.
+
+73
+00:14:36,984 --> 00:14:44,244
+Ya da ne yapıyoruz? Redundant attribute'ları ne yapıyoruz? Atmaya çalışıyoruz. Yani bu ne demek?
+
+74
+00:14:44,655 --> 00:14:48,835
+Fidantlıklar ne olabilir? Mesela işte şey vardır.
+
+75
+00:14:49,327 --> 00:15:17,187
+Bir tanesi satış fiyatıdır. Yanında işte yüzde on sekiz vergi vardır. Bir de toplum toplu hali vardır mesela gibi. Böyle şeyleri elimine etmeye çalışıyoruz. Ya da diyelim ki bu işe yaramaz dediğimiz yani tamam da toplanmış sütüm var ama sizin tahmin edeceğiniz şeyle hiçbir ilgisi olduğunu düşünmüyorsanız tamam mı? Yine ne yapabiliyorsunuz? Bunları atabiliyorsunuz.
+
+76
+00:15:18,292 --> 00:15:26,452
+Bir de Attribute Substance Selection diye bir şey var. Bu da ne demek? Bunlar yine optimizasyon algoritmaları üzerinden gidiyor. Şöyle bir şey yapıyor.
+
+77
+00:15:27,152 --> 00:15:35,652
+Attribütleriniz var. Tamam mı? Bu algoritmalar şöyle çalışıyor genellikle. Diyelim ki classification yapacaksınız. Tamam mı?
+
+78
+00:15:36,500 --> 00:16:00,819
+Tek tek alıyor. Ben 10 tane attribute'imiz olsun, aslında normalde daha çok var da, ben 3. 5. 7. yasam ne kadar tahmin ediyorum? 3'ü, 5'i, 6'yı ve 7'yi alsam ne kadar tahmin ediyorum? Bu tahmini 10 tane ile yapabilirsiniz. Ama bu tahmini yapabileceğiniz en iyi alt küme hangisi? Bu 10 tane feature'ın alt kümesi hangisi? Buna en yakın tahmini yapabileceğiniz.
+
+79
+00:16:01,331 --> 00:16:06,812
+Alt küme hangisi ise size onu veren yöntemlerde attribute subset selection yöntemleri.
+
+80
+00:16:10,419 --> 00:16:23,740
+Bunlar pek iyi çalışmıyor genelde. Açıkçası onu söyleyelim. Çünkü niye? Tüm hepsine bakamıyor. Yani 10 attribute dedik, 10'a, 2'li, 3'li, 5'li bakarsınız ama nasıl bunun çalışma zamanı?
+
+81
+00:16:26,220 --> 00:16:29,860
+Baya faktöriyelli bir şey çıkıyor değil mi? Yani en tane bir şeyiniz varsa.
+
+82
+00:16:31,443 --> 00:16:38,123
+eksponansiyel ötesi bir şey artırıyor. Dolayısıyla brute force bakabilirsiniz ama bakamazsınız.
+
+83
+00:16:38,123 --> 00:16:43,563
+Yani brute force ne demek? Hepsini denemek. Birli, ikili, üçlü, bütün kombinasyonları denemek demek.
+
+84
+00:16:43,843 --> 00:16:47,623
+Bunu geç zaten. Çok büyük datanız varsa zaten bu çalışmayacaktır.
+
+85
+00:16:49,323 --> 00:16:56,283
+Daha çok bunların yerine işte optimizasyonuna enable ve küçük küme de ekleyerek git.
+
+86
+00:16:56,692 --> 00:17:22,912
+Tanesini ekleyince çalışmadıysa hiç ona bakma gibi yöntemler var. Tamam mı? Ondan sonra da işte fitreleme gibi şeyler var. Bu da ne demek? Bu da şu, baktığımız zaman, diyelim ki çalıştırıyorsunuz ama işte diyelim ki işte şöyle yapıyorsunuz, saçma gelecek ama böyle çalışıyor. 0-200 arasındakini aldınız kendiniz, çalıştırdınız feature'ları.
+
+87
+00:17:23,316 --> 00:17:29,135
+Sonra 200-400 arasındakini çalıştırdınız. Tamam mı? Bakıyorsunuz hangileri daha iyi çalıştırdınız.
+
+88
+00:17:29,556 --> 00:17:35,836
+Sonra işte kendiniz deneye deneye ama aralık deniyorsunuz. Tek tek tek denemiyorsunuz.
+
+89
+00:17:36,195 --> 00:17:42,036
+Bu şekilde en iyi alt küme bu diye kendinizde ne yapabiliyorsunuz? Seyçebiliyorsunuz.
+
+90
+00:17:42,036 --> 00:17:49,715
+Etribütleri çıkararak. Çok kötü bir yöntem ama genellikle bunlar kullanılıyor. Tamam mı?
+
+91
+00:17:50,324 --> 00:17:56,364
+Bu da şeye söylemiş, yani iki üzeri N tane kombinasyon var, nasıl bulacaksınız diye.
+
+92
+00:17:56,504 --> 00:18:03,084
+İşte burada genellikle best stepwise, ne yapılıyor, bir optimizasyon, bir hüristik kullanılıyor.
+
+93
+00:18:03,564 --> 00:18:12,943
+En iyi bu, işte ekle, çalışıyorsa devam et, iyi bir skor çıkarttıysa ya da azaltmadıysa, birkaç kere ekleyip kötü çıkarıyorsa, hiçbir daha ona bakma şeklinde gidiyor.
+
+94
+00:18:12,943 --> 00:18:13,584
+Tamam mı?
+
+95
+00:18:15,344 --> 00:18:15,663
+Tamam.
+
+96
+00:18:17,587 --> 00:18:18,867
+Geçiyorum bunu da.
+
+97
+00:18:22,740 --> 00:18:30,859
+Devlet transformu, bunları da geçiyorum çünkü bunlar çok temeli olan şeyler.
+
+98
+00:18:31,859 --> 00:18:40,720
+Bir şundan bahsedelim en son. Bir de ne var? Datayı yine azaltmaya çalışıyoruz ama datayı şöyle azaltabiliriz.
+
+99
+00:18:40,779 --> 00:18:44,379
+Diyelim ki yıllarda çeyreklerde yapılan satışlar var. Tamam mı?
+
+100
+00:18:45,107 --> 00:19:01,607
+Datanız bu şekilde dururken bunu biz data küp haline getiriyoruz. Yani ne yapıyoruz? Mesela 2002'deki satışları topladınız, tek değer olarak yazdınız. 2003'ü tek değer olarak yazdınız gibi gibi. Tamam. Buna data küp aggregation deniyor.
+
+101
+00:19:02,607 --> 00:19:11,488
+Bazen dataları böyle hani Excel'de pivot tablolar vardır ya bir şey özetler. Datalar üzerinde işlem yaparak tamam mı?
+
+102
+00:19:11,827 --> 00:19:17,048
+Daha boyut düşürmek adına bu tarz işlemler ne yapabiliyoruz? Yapabiliyoruz.
+
+103
+00:19:17,728 --> 00:19:24,788
+Yine data küpü göstermiş. Mesela bakın ne var? Kim satmış? Hangi senede satmış? Hangi ürünü satmış?
+
+104
+00:19:24,788 --> 00:19:29,508
+Data küplerde niye böyle tutuyoruz? Niye bunları iki boyutta tutmuyoruz?
+
+105
+00:19:34,324 --> 00:19:41,464
+Şimdi biraz veri tabanı biliyorsunuz değil mi? Veri tabanları hep iki boyutlu. Değil mi? Tablolar. Ama bakın bu küp şeklinde.
+
+106
+00:19:42,044 --> 00:19:48,144
+Niye? Yani bunun bana ne faydası olur? Mesela ABC'de hangi mağaza satmış, hangi ürünü satmış, hangi sene de satmış?
+
+107
+00:19:48,564 --> 00:19:52,324
+Bunu iki boyut değil de üç boyutlu tutuyor. Ne şey olur? Ne faydası olur?
+
+108
+00:19:56,704 --> 00:20:01,984
+Şimdi bakın bu tata küpleri şurada görmüştünüz ya şöyle tek tek tek tek satışlar var.
+
+109
+00:20:02,288 --> 00:20:22,368
+Aslında real time olmuyor. Sonradan datayı işliyorsunuz, tamam mı? Gerekli yerleri topluyorsunuz, şunu oluşturuyorsunuz. Bu sayede hızlıca aradığınız veriye ulaşabiliyorsunuz. Tamam mı? Bu bize hız sağlıyor. Bu günümüzde kullanılıyor. Bunun uzmanları falan da yani veri tabanca olmak isterseniz bu.
+
+110
+00:20:22,816 --> 00:20:38,256
+Olapsız vesaire var, data tipler var. Diyelim ki işte datası var, en yakın benzerlerini bulacak falan filan algoritmalara öyle çalışıyorsa, işte en iyi ben datayı nasıl küp olarak tutabilirim en hızlı bir şekilde ulaşabileyim diye.
+
+111
+00:20:38,708 --> 00:20:45,428
+Bu tarz yöntemlerle de ne yapıyoruz? Aslında yaptığımız şey çeşitli toplularda biraz özet data tutuyor.
+
+112
+00:20:45,548 --> 00:20:49,908
+Günlük tutmuyor mesela burada o gün kaç tane bilgisayar satılmış onu bulamazsınız.
+
+113
+00:20:50,448 --> 00:20:53,628
+Ama özet veriyi ne yapabiliyorsunuz? Bu şekilde bulabiliyorsunuz.
+
+114
+00:20:55,428 --> 00:20:57,807
+Bir de sampling var. Sampling ne demek?
+
+115
+00:20:59,488 --> 00:21:03,288
+Örnek. Nerede gördünüz sampling'i? Bir yerde görmüş olmanız lazım.
+
+116
+00:21:04,660 --> 00:21:06,619
+İstatistik'e ne işe yarıyor sentli?
+
+117
+00:21:10,867 --> 00:21:25,367
+Veriyor. Sampling de en çok nerede kullanılıyor biliyor musunuz? Eğer datanız çok büyükse, milyon satırınız varsa, tamam mı? O zaman milyon satırla eğitemiyorsunuz. Dolayısıyla datadan sampling yapmak zorundasınız.
+
+118
+00:21:25,367 --> 00:21:37,327
+Tamam mı? Atıyorum 300 bin tane örnek alıp onu çalıştırıyorsunuz. Ama alırken de ilk 300 bini al demek mantıklı mı? Son 300 bini al demek mantıklı mı? Neye göre seçmem lazım?
+
+119
+00:21:38,036 --> 00:21:40,456
+Gibi şeyler ortaya çıkmış oluyor.
+
+120
+00:21:41,316 --> 00:21:41,996
+Tamam mı?
+
+121
+00:21:41,996 --> 00:21:43,476
+Daha da çok büyükse de ne yapıyoruz?
+
+122
+00:21:43,856 --> 00:21:48,916
+Sampling yapıyoruz ama sampling yaparken genelde en büyük yapılan şey şudur.
+
+123
+00:21:48,916 --> 00:21:53,236
+İlk şunu al ya da random seç diyebilirsiniz.
+
+124
+00:21:53,996 --> 00:22:03,596
+Ama sample aldıktan sonra geri koyup mu seçelim ya da ona benzeyenleri çıkartalım mı gibi gibi yöntemler var.
+
+125
+00:22:05,268 --> 00:22:12,807
+Burada da onu gösteriyor. Tamam, işte replacement yapsam ne olur? Yapmasam ne olur ya da certified de ne olur? Tamam, bugünlük bu kadar.
+
+126
+00:22:13,827 --> 00:22:19,468
+Şimdi haftaya, kaçta bitirdim dersi? Çok hızlı gitmişim, şeyleri anlatabilmişim.
+
+127
+00:22:20,468 --> 00:22:26,307
+Haftaya biraz şeye bakalım. Becca'dan dersin başında.
+
+128
+00:22:27,284 --> 00:22:37,244
+Veka'ya indirip bir dataset açıp bu pre-processing nasıl yapılıyor? Tamam mı? Basitçe ilk ona bakalım. En basit tool Veka kullanabileceğiniz.
+
+129
+00:22:38,203 --> 00:22:40,943
+Java'da yazılmış ama kodlama vesaire yapmayacağız.
+
+130
+00:22:42,663 --> 00:22:51,324
+Bitirmeyin ya sonra şey nasıl olsa kayıtla evde kendiniz kurcalarsınız sonra. Tamam mı? Ona bakarız sonra da devam ederiz. Soru varsa sorabilirsiniz.
+
+131
+00:22:52,544 --> 00:22:54,124
+Online'lar bugünlük bu kadar.
+
+132
+00:22:54,708 --> 00:22:55,288
+Bye-bye.
+
+133
+00:23:00,915 --> 00:23:10,016
+Kamerayı niye açmadın diyeceksiniz. Çünkü kameranın bir tane bir şey blokluyor. Onun için de çözmem lazım.

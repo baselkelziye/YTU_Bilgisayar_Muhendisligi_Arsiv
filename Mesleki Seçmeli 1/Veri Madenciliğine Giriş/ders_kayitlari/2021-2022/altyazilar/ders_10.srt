@@ -1,0 +1,2035 @@
+1
+00:00:23,283 --> 00:00:48,482
+Hazır mıyız? Haydi bakalım başlayalım. Eski slaytlara geri dönüyorum. Şimdi boosting'de de diyor ki, ne yapıyorduk boosting? Dediğim gibi en çok kullanılan ada boost. Onun dışında logic boost var, emboss var, bir sürü bir sürü şey var. Ama genel mantık aynı. Genel mantığı ne?
+
+2
+00:00:48,978 --> 00:01:13,718
+Genel olarak amaç, weightlere bir şekilde, weightlere biz her bir instance'a, her bir örneği weight atayarak doğru sınıflandırılamayanların weightlerini arttırıp doğru sınıflandırılanlarınkini azaltmak suretiyle bir sonraki klasifier'ın o doğru sınıflandırılmayanlar üzerinden
+
+3
+00:01:14,322 --> 00:01:22,623
+Daha çok yoğunlaşmasını ve onların hatalarını aslında gidermeye çalışmasını beklemek.
+
+4
+00:01:23,322 --> 00:01:23,644
+Tamam mı?
+
+5
+00:01:25,724 --> 00:01:26,003
+Tamam.
+
+6
+00:01:26,224 --> 00:01:27,144
+Ve ne yapıyor?
+
+7
+00:01:27,222 --> 00:01:32,384
+Her seferinde birleştirirken, begging ile boosting arasındaki en temel fark.
+
+8
+00:01:32,983 --> 00:01:33,983
+Begging'de ne yaptık?
+
+9
+00:01:33,983 --> 00:01:35,222
+Klasifier'ları direkt.
+
+10
+00:01:35,730 --> 00:01:47,272
+oylamayla birleştiriyordu. Her bir klasifarın oyu eşittik. Ama boosting'de baktığımız zaman ne yapıyoruz? Bir alfa. Hata oranından bir alfa.
+
+11
+00:01:48,492 --> 00:01:54,792
+Çıkartıyoruz ve birleştirirken de şurada gördüğünüz gibi yani aslında her bir klasifarın.
+
+12
+00:01:55,566 --> 00:02:07,688
+Önemini vermiş oluyor size. Şu E, E, E dediğimiz, Epsilon dediğimiz hata aranımız, error'ımız. Ne yapıyor? Aslında birleştirirken her bir classifier'da eşit değil. Tamam mı?
+
+13
+00:02:07,688 --> 00:02:20,728
+Bunun bir farkı da bu. Bu, Adavus algoritmasını vermiş. Tekrar üzerinden geçmeye gerek yok herhalde. Yine aynı örneği, deminki örneği Adavus üzerinden veriyor.
+
+14
+00:02:20,728 --> 00:02:22,728
+Şöyle biraz biteyim.
+
+15
+00:02:23,538 --> 00:02:45,639
+Görünüyor mu? Herhalde görünüyor. Baktığımız zaman rekrutlarımız, yani şeyler bunlar, datamız yine 10 tane, deminki datamızın aynısı. Şimdi boosting round round gidecek ve her roundda da bakın weightler değişecek. Şurada neler var? Weightler var. Şimdi ilk etapta, ilk roundda bütün weightler ne? Eşit. 1 bölü 10. Tamam mı? 0.1.
+
+16
+00:02:46,484 --> 00:02:51,604
+Ve ilk klasifier'ı bulacak. İlk klasifier'ı ne olarak buldu?
+
+17
+00:02:51,604 --> 00:02:55,532
+Baktığımız zaman...
+
+18
+00:03:02,098 --> 00:03:09,019
+Şimdi boosting'de de illa böyle olmak zorundayız ama şimdi kitaptakinde de boost'da tüm örnekleri almıyor.
+
+19
+00:03:09,560 --> 00:03:15,718
+Tıpkı Begin'deki gibi, yani kitaptaki örnek bir alt küme alarak gitmiş.
+
+20
+00:03:15,718 --> 00:03:22,318
+Tamam mı? Yani round 1'de 0, 1, 0, 4, 0, 5, bakın 0, 6, 2 kere var. Tamam mı?
+
+21
+00:03:22,459 --> 00:03:28,060
+Boosting'in ama farklı, yani her hepsinde böyle olacak, bütün boosting'in alırmaları böyle çalışır diye.
+
+22
+00:03:28,532 --> 00:03:55,072
+Bir olayımız yok. Tamam mı? Onu da söyleyelim. Ne yaptık? Şimdi 10 tane seçtik. Ondan sonra buradan ilk klasifierımızı bulacağız. Ondan sonra o ilk klasifiera göre ne bulacak? Muhtemelen 0.75 bulacak. Tamam mı? En çok burada. Sonra ne yaptık? İkinci de bakın weightleri güncelledik. Bunu bulduğumuz zaman yanlış bulunanlar hangisi?
+
+23
+00:03:55,634 --> 00:04:04,074
+Çizelim. Diyelim ki 0.75'ten ayırdınız. Bunlar doğruyken bunu ne yaptı? Yanlış bulduk.
+
+24
+00:04:05,616 --> 00:04:13,836
+Dolayısıyla ne yapacak? Bunun hatası, şeyini, Bayes'ini daha çok arttıracak.
+
+25
+00:04:13,836 --> 00:04:20,555
+Şimdi burada neleri klasifier olarak bulduğunu yazmamış. Belki bir son iki sayıda bir dakika olabilir.
+
+26
+00:04:24,980 --> 00:04:30,980
+Bir yerde tasifareleri yazdım. Hayır yazmadım. Yapacak bir şey yok. Sadece bunu değil de şu yani...
+
+27
+00:04:34,708 --> 00:04:37,687
+Fasif ayları yazmadan biz kafadan şöyle bir şey yapacağız.
+
+28
+00:04:40,687 --> 00:04:41,127
+Neydi?
+
+29
+00:04:44,850 --> 00:04:59,971
+Muhtemelen şey yapmıştır, bizim yapacağımız gibi yapmıştır. İlkini anlarız, ilki bu. Tamam mı? Ama bir sonrakinde weightlerle çarpıp klasifier bulacak ki biz o sonrakini doğru bulamayabiliriz. Şunu da buluruz, bu da hepsi artı bilmiş, tamam.
+
+30
+00:05:05,716 --> 00:05:08,055
+0-2-0-3 seçici, örnekleri ona göre seçmiştim.
+
+31
+00:05:08,055 --> 00:05:09,216
+Plus-Pyre o yüzden yok.
+
+32
+00:05:09,754 --> 00:05:10,596
+Tamam, şimdi bakınca.
+
+33
+00:05:10,596 --> 00:05:17,216
+Şimdi ikinde 0-75'i seçtik ve doğru yanlış bulunan buyken, bakın bunun ne oldu?
+
+34
+00:05:17,396 --> 00:05:22,656
+Hataranı, hataranı diyorum, wait'i bir sonraki round için artmış oldu.
+
+35
+00:05:23,134 --> 00:05:30,656
+Tamam, çünkü niye şuradan da peki niye 0-2 ile 0-3'ü de arttırdı?
+
+36
+00:05:31,668 --> 00:05:37,947
+Çünkü bakın, burada bulun, bu tarafta kaldı ya, aslında 0-2 ile 0-3'ü de yanlış bulacak.
+
+37
+00:05:38,048 --> 00:05:43,528
+Çünkü diyor ki bu klasifier 0-75'den küçüklere eksi de diyor. Tamam mı?
+
+38
+00:05:43,528 --> 00:05:52,367
+0-75'den küçük olup da artırken eksi bulunanların, yani 0-1, 0-2 ve 0-3'ün ve itleri artmış olur.
+
+39
+00:05:53,235 --> 00:06:03,475
+Sonra bir sonrakine baktığın zaman round 2 için 0-1, 0-2, 0-3'ü seçmiş. Hata oranı fazla olanları. Yani sadece şunlara odaklanmış.
+
+40
+00:06:04,014 --> 00:06:17,235
+Bunun için de ne yapabilirsiniz? 0-3'den küçük olanlara 1'de gibi bir şey diyebilirsiniz. Tamam mı? 0-3'den küçükse tıraş olduğum 1'dir gibi bir şey dersiniz. Böylelikle bunları...
+
+41
+00:06:17,843 --> 00:06:26,824
+Doğrusu sınıflandırırsınız. Tekrar hataları bulacağız. Şimdi 0.3'den küçükleri derseniz, 0.3'den küçük olup da eksi olan var mı? Yok.
+
+42
+00:06:27,324 --> 00:06:36,682
+Buna göre weightleri ne oldu? Weightleri güncelledi. Hepsi şöyle bir tarafa gelmiş oldu. Yani iki taneyle bir 0.75'e tasifiye koyarak bir de...
+
+43
+00:06:36,723 --> 00:06:43,182
+0, 3 ya da 0, 35'e nereye koydu bilmiyorum. Algoritmaya göre değişir. Bir klasifier koyarak ne yapmış oldu?
+
+44
+00:06:43,762 --> 00:06:51,343
+Posting algoritmasını çalıştırmış oldu. İyi olmayan bir örnek. Kitabın klasik örneği.
+
+45
+00:06:52,144 --> 00:06:58,103
+Şimdi geldik üçüncü bir metoda. Yine Ensemble Learning'den Random Forest.
+
+46
+00:06:58,103 --> 00:07:03,423
+Şimdi biz ne yaptık? Ağaçları gördük değil mi? Forest neden oluşur?
+
+47
+00:07:04,372 --> 00:07:15,031
+Bir sürü ağaçtan oluşur. Ama zaten ben çok böyle yüksek, kocaman ağaçlar oluşturabilecek bir algoritmam var benim. Niye bir daha Random Forest'a ihtiyaç var?
+
+48
+00:07:18,740 --> 00:07:32,379
+Datamız çok çok büyük olduğu zaman, tamam mı? Çok fazla sütununuz, satırınız olduğu zaman, ağaçlar bölerek bölerek gittiği için bazen bir yerden sonra iyi çalışmayabiliyor.
+
+49
+00:07:33,278 --> 00:07:42,939
+Random Forest'ta şöyle bir şey yapacağız. Buradaki her bir klasik, yani ne yapacağız? Random Forest'te bir sürü tree oluşturacağız.
+
+50
+00:07:43,507 --> 00:07:53,067
+Tamam mı? Decision Tree oluş, karar ağacı oluşturacağız. Ama oluşturduğumuz karar ağaçları, böyle çok büyük, çok mükemmel çalışan karar ağaçları olmayacak.
+
+51
+00:07:53,908 --> 00:07:56,987
+Tamam mı? Ve bütün data üzerinde de çalışmayacak.
+
+52
+00:07:57,300 --> 00:08:19,079
+Diyelim ki sizin bin tane sütununuz varsa bunları rastgele yine kümeleyeceğiz. Tamam mı? Her seferinde işte biraz seçeceksiniz içinden. Parametri. Bunlar tamamen parametri. Seçtiniz. Sonra diyeceksiniz ki datanın bu kısmı için bir ağaç oluştur. Sonra bir daha seçtiniz. Bir ağaç daha oluştur. Bir ağaç daha oluştur. Diyelim ki yüz tane ağaç oluşturdu. Tamam mı?
+
+53
+00:08:19,444 --> 00:08:32,604
+Test örneği geldi. Birinci ağaca sordum, hangi klas dedi? İkinci ağaca sordum, hangi klas dedi? Yüz ağaca da soracağım. Yine en çok oyu alan klas hangisi ise benim klasım budur diyeceğim.
+
+54
+00:08:33,604 --> 00:08:39,803
+Random force'lar özellikle noise olan datada çok çok iyi çalışır.
+
+55
+00:08:44,466 --> 00:09:05,528
+Nasıl söyleyeyim? Lineer olarak ayrılabiliyorsa, datanızda noise çok varsa, Random Forestlar iyi çalışır. Niye çalışır? Çünkü noise'in o seçtiğiniz şeylerde olmama ihtimali düşük. Bir de ağaçları parametrik olarak diyorsunuz ki ağaçlarının yüksekliği mesela dörtten fazla olmasın diyorsunuz.
+
+56
+00:09:10,130 --> 00:09:36,551
+Daha noisy, az olan attribütler daha ağaçta yukarıda olacak. Daha yükseklikten, level'dan aşağıda inmeyecek. Daha fazla level'da olmayacak ağacınızda. Dolayısıyla noisy olan şeyleri çok güzel tolere ederek çalışır random forest. Tamam mı? Çok hızlı da çalışır. Dolayısıyla çok en bence iyi bir şey, metod.
+
+57
+00:09:40,340 --> 00:09:41,360
+Yapıyoruz, evet.
+
+58
+00:09:47,346 --> 00:09:57,408
+Data cleaning yapıyorsun ama data kliniklere ne yapıyorsun? Diyorsun ki, dağılımına baktın, şu en uç değerlerde kalanlar noise'dir diyorsun ama datanın içinde de noise olabilir.
+
+59
+00:09:58,366 --> 00:10:06,086
+Yani o noise mi değil mi bilmiyoruz bile gerçek dünya aslında. Temizleyebildiğimiz kadar çok bariz noise'e data cleaning'de temizlik.
+
+60
+00:10:06,086 --> 00:10:13,147
+Tamam mı? Ama temizlikten sonra var olan data da sanki normalmiş gibi görünen bir sürü daha yine noise olabiliyor.
+
+61
+00:10:14,067 --> 00:10:15,826
+Tamam, yani, al neymişim.
+
+62
+00:10:40,692 --> 00:10:49,511
+Aslında veri büyük demeyelim de veri imbalansı. Tamam mı? Genellikle ensembl metotlar, genellikle verimiz imbalansı.
+
+63
+00:10:50,130 --> 00:10:57,711
+Kullanılır. Artı, diyelim ki decision tree'yi ilk çalıştırdığım %95-96 çalışıyor.
+
+64
+00:10:57,711 --> 00:11:07,730
+Tamam mı? Ve üzerinde de çalışıyor. O zaman bir şey yapmalısın ama doğru başarımın azsa, tamam mı? Çalıştırdığım başarımın az çıktı. %70'den yukarı çıkmıyor.
+
+65
+00:11:08,150 --> 00:11:18,130
+O zaman ders diyebilirsin ki ya bu datada noise var. Birazcık demek ki yani iyi bir şekilde train ile test datasında, yani train datasında bile diyelim %70 gibi bir doğruluğun var.
+
+66
+00:11:18,130 --> 00:11:23,630
+O zaman ensemble metotlar bakalım nasıl çalışacak. O zaman ne yapıyoruz? Buraya geçiş yapıyoruz.
+
+67
+00:11:26,130 --> 00:11:38,130
+Yaptığımız şey bu. Şimdi baktığımız zaman Random Forest'larında iki tane şeyi var. Aslında Random Forest oluşturmanın iki tane yöntemi var. Bir tanesine Random Input Selection.
+
+68
+00:11:38,528 --> 00:11:51,246
+Burada ne yapıyoruz? F bir şey olsun, parametre olsun. O kadar attribütü alıp buradaki noda bu attribütlerden hangisini koyuyorum diyoruz. Tamam mı? Şey yapmıyoruz.
+
+69
+00:11:51,246 --> 00:11:58,586
+Yani ilk anlattığımız var ya, tüm attribütlerle tri oluşturmaya çalışmıyoruz. Önce attribütlerin ne yapıyoruz? Bir alt kemesini.
+
+70
+00:11:59,124 --> 00:12:08,624
+oluşturup ondan sonra ağaçları oluşturuyoruz. Ağaçlar da çok büyük ağaçlar değil. Diyoruz ki ağacın yüksekliği en fazla şu parametrede olsun diyoruz.
+
+71
+00:12:08,624 --> 00:12:25,703
+Tamam mı? Diğerisi de Random Binary Combination dediğimiz ikinci yöntem. Bu da ne yapıyor? Aslında şöyle bir şey yapıyor. Yeni attribute oluşturuyor. Yani data seçiyorduk ya Bagit'te.
+
+72
+00:12:26,388 --> 00:12:32,248
+Burada seçerken aslında satırın yerini de karıştırmış oluyor. Öyle söyleyeyim.
+
+73
+00:12:32,248 --> 00:12:34,368
+Yani aynısını nasıl anlatalım?
+
+74
+00:12:40,178 --> 00:12:52,458
+Öyle anlatalım. Diyelim ki bizim attribütlarımız var. Ve yeni bir tane attribüt oluşturuyoruz. Ama bunlar ne? Var olan attribütleri birleştirerek bir attribüt oluşturuyoruz.
+
+75
+00:12:52,720 --> 00:13:06,500
+Amacımız ne? Aslında üç tane şeyi, sanki bir attribütmüş gibi ne yapabiliyoruz? Birleştirebiliyoruz. Genellikle de ama en çok ne kullanılıyor? En çok kullanılan birinci yöntem.
+
+76
+00:13:07,058 --> 00:13:23,578
+Ve de bu açık datasetler. Baktığımız zaman şu ilisi kullanmıştık hatırlarsanız. UCI'de bulunan, belki şunu falan projesine seçen var, datasetler.
+
+77
+00:13:23,578 --> 00:13:27,239
+Burada işte kaç tane attribute var?
+
+78
+00:13:27,648 --> 00:13:36,408
+Ondan sonra kaç tane class'ınız var, kaç tane de satır veriniz var. Onlar burada veriyor datasetler. Çok büyük datasetler diye gördüğünüz gibi.
+
+79
+00:13:37,168 --> 00:13:48,128
+Bakın, decision tree ile şurada random forest'ı karşılaştırırsanız, mesela çok küçük datada random forest ile decision tree çok bir şey fark etmemiş ama data gerçekten küçük.
+
+80
+00:13:49,048 --> 00:13:54,128
+15 tane attribute var. Ama bazılarında mesela...
+
+81
+00:13:54,676 --> 00:14:10,956
+92-95'e çıkartmış ya da genellikle mesela Decision Tree'i tek bir klasifier iken bizim Ensemble Learning yöntemleri, Begging, Boosting, Random Forest'ın başarım oranları çok çok daha yüksek.
+
+82
+00:14:10,956 --> 00:14:21,134
+Yani 77 iken mesela Decision Tree'i bu Lens datasında diğerlerinde yani 85'e kadar çıkmış.
+
+83
+00:14:21,556 --> 00:14:26,034
+Tamam mı? Boosting'le. Ya da 83'ten bakın 90'lara çıkmıştık.
+
+84
+00:14:33,716 --> 00:14:34,274
+İbiyen.
+
+85
+00:14:36,148 --> 00:14:45,248
+Genellikle ama bunlar ne? Yani genellikle deneysel empirical sonuçlar. Genellikle de şöyle yapmış, bunların içinde de decision tree kullanmış.
+
+86
+00:14:45,248 --> 00:14:56,107
+Yani Baging'de, Boosting'de de classifier seçiyoruz ya altta. Onlarda da yine decision tree kullanmış. 50 tane decision tree'yi aslında birleştirmiş.
+
+87
+00:14:56,748 --> 00:15:03,847
+Ve tenfold cross-veridation yapmış. Genellikle baktığımız zaman ensemble yöntemleri bir tık daha iyi. Ne yapmış?
+
+88
+00:15:04,148 --> 00:15:24,148
+Çalışmış. Bu da özetle bu chapterda ne anlattık? Classification ile ilgili şeyleri. İlk şey anlattık, evre işin metrikleri anlattık. Tamam mı? Sonra işte K-Fold Cross-Validation. Nasıl olur? Ondan sonra...
+
+89
+00:15:29,331 --> 00:15:32,052
+Allah aşkına.
+
+90
+00:15:33,312 --> 00:15:34,591
+Şu an bir dakika bekleyin.
+
+91
+00:15:38,772 --> 00:15:42,652
+Datamızı %70-30 ayırıyorduk. Ne diyorduk buna?
+
+92
+00:15:46,706 --> 00:15:48,866
+Halting diye ilgileniyor, alakası bile yok.
+
+93
+00:15:50,206 --> 00:15:51,366
+Hold out, hold out.
+
+94
+00:15:52,947 --> 00:16:03,148
+Hold out metoduyla ya da işte random sampling yaparak ya da ne yapar, ne yapıyorduk cross-reation yöntemleriyle datamızı ayırıyoruz.
+
+95
+00:16:03,927 --> 00:16:04,126
+Tamam.
+
+96
+00:16:04,884 --> 00:16:14,724
+Ondan sonra da bu şekilde en son performansına bakıyorduk. Performans arttırmak için de bugün de ne yaptık? Ensemble Learning yöntemlerini görmüş olduk.
+
+97
+00:16:16,464 --> 00:16:29,104
+Şimdi birazcık sınavla ilgili birkaç bir şey söyleyeyim. Sınavı hazırlamadım ama şöyle bir şey olacak. Yaklaşık 30 puanlık gibi boşluk doldurma.
+
+98
+00:16:30,130 --> 00:16:33,291
+True, False ya da şöyle midir gibi şeyler olacak.
+
+99
+00:16:33,850 --> 00:16:36,671
+Hesap makinesi kullanmanıza gerek yok.
+
+100
+00:16:36,850 --> 00:16:43,850
+Yani hesap yapmanız gerekecek ama bugünkü örnekler 0-1, 0-2 gibi 0-5 gibi kolay çarpılır, bölünür şeyler var.
+
+101
+00:16:44,791 --> 00:16:47,811
+Ondan sonra çok formül ezberlemenize gerek yok.
+
+102
+00:16:47,811 --> 00:16:57,671
+Ne sorarım? Şuradaki Precision Recall'lar vs. var ya, karmaşıklık matrisi vs. bunlardan bunları hesaplamalar.
+
+103
+00:16:58,100 --> 00:17:13,278
+Rocker nasıl çizilir gibi şeyler bunları kesin sorarım. Tamam mı? Cross validation, leave one out bunları falan boşlukla doldurmalarda bu tarz şeyler sorarım. Yani işte böyle böyle yapıyorsak buna nokta nokta denir. Tamam mı? Leave one out denir. Ya da atıyorum işte.
+
+104
+00:17:13,940 --> 00:17:20,480
+Datamız imbalansa, şu metot en iyi çalışır, doğru mu, yanlış mı? Yanına true post yazacaksınız gibi bir şey var.
+
+105
+00:17:20,859 --> 00:17:26,180
+Hazırlarken hem Türkçe hem İngilizce, çok İngilizce terim olduğu için soruları hem Türkçe hem İngilizce hazırlayacağım.
+
+106
+00:17:27,538 --> 00:17:30,680
+Kafanız karışmasın diye. Niye? Çünkü şöyle olmuyor.
+
+107
+00:17:31,138 --> 00:17:37,138
+Leave one out denir dedik ya, sonra ben şimdi Türkçe'yi hazırlarken birini dışarıda bırak metodu,
+
+108
+00:17:37,339 --> 00:17:40,240
+işte derste birini dışarıda bırak metodu diye bir şey dememişim.
+
+109
+00:17:40,788 --> 00:17:48,788
+Tamam mı? Sonra orada size Türkçe terim görünce karışık gelebiliyor. O yüzden hem Türkçe hem İngilizce yazacağım. Hangisini anlarsanız.
+
+110
+00:17:48,788 --> 00:17:58,412
+Onun dışında ne sorarım? Şeyin farkını anlamışsınızdır zaten. Hep classification konuştuk.
+
+111
+00:17:58,516 --> 00:18:05,935
+Classification, regression, yani şeylerine ilk başta, ilk derste bu nasıl bir problemdir, nasıl ele alınır, onu sorarım.
+
+112
+00:18:06,036 --> 00:18:09,796
+Data temizlemedeki yöntemlerle ilgili birkaç şey vardı.
+
+113
+00:18:12,395 --> 00:18:17,255
+İşte istatistiksel olarak data nasıl temizlenir, birkaç bir şeyler vardı.
+
+114
+00:18:17,935 --> 00:18:21,255
+Onlardan soru gelebilir. Karar ağaçlarından kesin soru gelir.
+
+115
+00:18:21,255 --> 00:18:23,255
+Ondan sonra...
+
+116
+00:18:26,386 --> 00:18:49,287
+naive Bayes gördük. Ondan gelebilir. Başka da bir şey görüyorum. Bu kadarcık mı gördük? Onlara ilk söyledim. Onlardan kesin gelir. Hiç çalışmazsanız çalışın. Bu kadar. Tamam. Bize biraz hesaplama olur. Biraz bir şeyler olur. Hesap makinesi yok. Öyle kompleks şey yok.
+
+117
+00:18:51,538 --> 00:19:06,099
+Hayır, hayır, elinize çarpın. Hesaplaması kolay soru sorarım, tamam mı? Yani böyle 0.367 çarpı bilmem ne falan öyle şeyler de sorma. Amaç hesap yaptırması değil. Mantığını anladınız mı, anlamadınız mı? O.
+
+118
+00:19:07,480 --> 00:19:14,720
+Chatte bir şey var. Hocam ödevle ilgili gelişme var mı? Ödev ne ya? Ne ödevi var? Ödev mi var? Proje mi?
+
+119
+00:19:16,318 --> 00:19:18,818
+Muhammed Enes'in en soru. Projede nasıl bir şey?
+
+120
+00:19:20,276 --> 00:19:23,695
+Ödevle ilgili gelişme, ben size evet, hayır diyecektim. O mu?
+
+121
+00:19:28,084 --> 00:19:29,443
+[öğrenci], nasıl bir gelişme?
+
+122
+00:19:34,228 --> 00:19:38,407
+Gelişme yok ya. Benim tarafta siz de varsa.
+
+123
+00:19:47,538 --> 00:19:53,500
+Evet, ilk aşamayı yükleyecek. İlk aşama mı, son aşama mı? İlk aşama var, sonra az bir zamanımız var.
+
+124
+00:19:53,898 --> 00:19:55,440
+Şimdi aslında bugün şey hazırladım.
+
+125
+00:19:56,700 --> 00:20:00,919
+Colab'de bir size şey gösterecektim ama hiç dinleyecek haliniz yok gibi.
+
+126
+00:20:02,440 --> 00:20:03,700
+Açık ve net söyleyeyim.
+
+127
+00:20:06,278 --> 00:20:09,098
+Nereden gideceğiz? Drive'dan gideceğiz.
+
+128
+00:20:10,679 --> 00:20:12,338
+Drive'dan gideceğiz.
+
+129
+00:20:20,276 --> 00:20:21,154
+Sonra?
+
+130
+00:20:24,818 --> 00:20:33,138
+Bu, ototaseti aç, açmanız lazım ya, onu ben açtım ama, bir bakayım, indirdiğiniz şeyden bir şey var.
+
+131
+00:20:36,479 --> 00:20:41,638
+Silmiştir arkadaş da, ben görmedim yani, bakayım, ama bakayım, tamam mı, şeyine bak, sen yeniden şey yap.
+
+132
+00:20:42,378 --> 00:20:44,138
+Bu değil çocuklar, hangisi?
+
+133
+00:20:46,798 --> 00:20:48,219
+Şişkoalep kullandınız mı?
+
+134
+00:20:54,804 --> 00:21:00,804
+Buradan mı? Ama bir sürü Google hesabım var işte. Onu arıyorum hangisi diye. Bakayım şansımıza belki bu gelir.
+
+135
+00:21:07,124 --> 00:21:09,423
+Aferin çocuğum, sana A veriyorum. Adın ne?
+
+136
+00:21:10,304 --> 00:21:11,644
+Şansıma geldim. Aynen.
+
+137
+00:21:13,523 --> 00:21:16,743
+Tamam. Şimdi şöyle bir şeyler hazırladım aslında da.
+
+138
+00:21:19,084 --> 00:21:21,564
+Nasıl yaparız hani fight'ında da.
+
+139
+00:21:22,564 --> 00:21:27,183
+Bunu şey yapayım ya, bir vizeden sonraki hafta birazcık da insanlar da gelsin.
+
+140
+00:21:27,762 --> 00:21:53,403
+Tamam mı? Nasıl kullanırsınız? Pandas nasıl kullanırsınız? Sonra CircuitLearn'de, bunlarda Pandas, Pandas, Pandas var. Yine çiçekten gideceğiz. Ondan sonra da işte CircuitLearn'de, CircuitLearn kullanarak nasıl, işte naive Bayes'i nasıl kullanırsınız? Ondan sonra DecisionTree, Random Forest bunları nasıl kullanırsınız? Hani VEKA'da hemen tak tak yapmıştık. Onu bu da nasıl yaparsınız?
+
+141
+00:21:53,906 --> 00:22:13,007
+Onu göstereceğim. Çok zor değil zaten. Olmadı bunu ben paylaşayım. Siz de gelmeden birazcık çalıştırıp gelin. Tamam mı? Vizeden sonra şey olur. Çünkü projede de yani bunu anlarsanız projeyi 2-3 günde bile yaparsınız. Hiç sorunamazsınız.
+
+142
+00:22:15,507 --> 00:22:18,606
+3 metot var ama böyle rastgele kullanmayın yani.
+
+143
+00:22:19,092 --> 00:22:38,230
+Projenin önemli kısmı bunu yapmak ama burada zaten ben size bu kodları falan filan vereceğim. Yani şunu import decision tree klasifiye yine başka bir şey yazdığınız zaman zaten çalışıyor hale gelecek yüzde seksen, yüzde doksan kodunuz. Şunu anlayın istiyorum. Benim kodumda niye mesela Random Forest iyi çalıştı, niye benim kodumda naive Bayes çalışmadı?
+
+144
+00:22:47,092 --> 00:23:05,432
+Yorum kısmı var projede. Hani hangi metot niye çalışıyor, hangi metodu niye seçtiniz ama niye çalışmadı? Biraz onu görün istiyorum. Tamam çünkü yorumlayabiliriz. Birazcık amaç o. Şu an ders bilgisi görüyoruz.
+
+145
+00:23:09,044 --> 00:23:34,064
+Pardon, pardon, pardon, evet. Şunu gösteriyorum. CoLab'den bir kod var. Bunu paylaşayım sizinle. Tamam mı? Bunu paylaşacağım. Vizeden sonraki hafta anlatayım. Bugün anlatacak mı? Ama adam akıllı. Siz de bakıp gelin. DataFrame nasıl oluşturulur? İşte CSV nasıl oluşturulur? Ondan sonra bir attribute'u tamamen atmak istiyorsunuz.
+
+146
+00:23:34,366 --> 00:23:43,366
+Tamam mı? Nasıl atarsınız falan filan? Nasıl temizlersiniz? Onlara bakalım. Tamam mı? Birkaç da buraya şey de ekleyeyim.
+
+147
+00:23:46,366 --> 00:23:54,446
+Boxplot'tan falan filan bahsettik ya, mesela işte şunları çizdireyim, görmüş olup. Tamam mı? Onunla ilgili bir şey çizdirmemişim.
+
+148
+00:23:55,906 --> 00:24:01,626
+Grafiksel olarak. Grafiksel olarak da birkaç bir şey çizdireyim, bakalım. Tamam mı? Vizeden sonra. Sorunuz var mı?
+
+149
+00:24:05,940 --> 00:24:15,798
+Sen çok uyuyorsun. Sen çok uyuyorsun, çok mu geç yapıyorsun? Erken mi kalkıyorsun peki? Evet, ondan.
+
+150
+00:24:18,278 --> 00:24:31,398
+Güzel. Tamam, soru varsa sorun, vizeye çalışın. Hatırlayamın böyle, tamam. Bu kadar. Çok zor olmayacak. Yani böyle. Zor olur da, böyle çalışırsanız yaparsınız. Tamam.
+
+151
+00:24:32,019 --> 00:24:40,779
+Sorunuz olursa da mutlaka gelin sorun. Kapatıyorum online'lar. Kendinize iyi bakın. Herkese başarılar bize haftasında.
+
+152
+00:24:48,467 --> 00:24:59,646
+Bakayım hemen, ondan bağlanan var mı? Evet, onlarlar geliyor. Şuradan da şunu açalım. Evet.
+
+153
+00:25:04,338 --> 00:25:04,879
+Ardeme.
+
+154
+00:25:09,844 --> 00:25:13,984
+Evet, ondan bugün biraz daha kalabalık recording diyor.
+
+155
+00:25:36,371 --> 00:25:50,491
+Neyse bu kablo işte yokmuş. Arkadaşlar merhabalar, online derslere de merhaba. Sınav hakkında birazcık açıklama yapayım. Hazır, az kişi var. Normalde çok kişi var. Tempulay'ın dersini sonunda kesin bir daha soracaklar, yeniden söyleyelim.
+
+156
+00:25:51,152 --> 00:26:00,632
+Vize'miz şöyle olacak, gördüğünüz tüm konular dahil. Slide'lara bakın, anlamadığınız yer olursa kitaba da açın, en azından ilgili yeri okuyun.
+
+157
+00:26:01,248 --> 00:26:10,067
+Sınavı daha hazırlamadım ama yaklaşık bir 30 puanlık kısım, boşluk doldurma, doğru yanlış gibi şeyler olacak.
+
+158
+00:26:10,987 --> 00:26:18,107
+Onun dışında da hesap makinesi kullanmanızı gerektirmeyecek bazı işlemli sorular da olacak.
+
+159
+00:26:19,028 --> 00:26:25,646
+Ama dediğim gibi yani daha kısa işlem, basit işlem şeklinde bir saatlik bir sınav olacaksınız.
+
+160
+00:26:25,646 --> 00:26:27,846
+Tamam mı? Böyle.
+
+161
+00:26:29,875 --> 00:26:52,394
+Bu hafta dahil. Bu hafta zaten konumuz az. İlk bu Ensemble Learning metotlarını bitiririz herhalde bir, bir buçuk saatte. Sonra da ne yapacağız? Python'da nasıl veri madenciliğinde, işte ne kullanırsınız? Pandas kütüphanesini nasıl kullanırsınız? İşte bir CSV dosyasını nasıl okursunuz? Birazcık uygulama projeye yönelik onlara bakacağız.
+
+162
+00:26:53,995 --> 00:26:57,096
+Bugün projeyle ilgili bir şey yükleme günü değil değil mi? Değil.
+
+163
+00:26:57,619 --> 00:27:00,399
+Geçen haftaydı.
+
+164
+00:27:01,078 --> 00:27:02,499
+Tamam, dokuzuydu. Okey.
+
+165
+00:27:02,999 --> 00:27:06,019
+Şimdi hemen ekran paylaşımına da başlayalım.
+
+166
+00:27:14,932 --> 00:27:19,152
+Evet.
+
+167
+00:27:22,152 --> 00:27:36,271
+Evet, yani Excel ederseniz, ayracı bu olarak kullan, binlik ayracını bu olarak kullan derseniz, onu değiştirdiğiniz anda tepsi açılmaya başlıyor ama bütün dosyalarınızı bozar.
+
+168
+00:27:36,271 --> 00:27:39,550
+Yani şöyle şöyle, Türkçe olan dosyalarınız da değişmiş olur.
+
+169
+00:27:39,550 --> 00:27:41,451
+Tamam mı?
+
+170
+00:27:45,012 --> 00:27:55,731
+Tamam, yani sonra başka bir şey olsa bundan olduğuna bakın. Şimdi geçen hafta ne gördük, buraları anlatmadım. Bakın istatistiksel kısım yok şurada, modern comparison kısmında.
+
+171
+00:27:56,530 --> 00:28:23,112
+Neyse dur baştan alayım. Geçen hafta ne gördük? Önce onunla başlayalım. Tamam mı? Geçen hafta ne yaptık? Bir modelimiz varsa ne kadar iyi çalışır? Şimdiye kadar bildiğimiz şey neydi? Ekürüsüyle, doğruluklu değil mi? Doğruluğun dışında sensitivity, ondan sonra recall da diyoruz buna. Ondan sonra precision, ondan sonra neler yaptık? F1 score gibi farklı metrikler tanımladık değil mi? Bunlar sayesinde ne yapıyorduk?
+
+172
+00:28:23,471 --> 00:28:33,231
+Modelimizin özellikle imbalans, datamızın imbalans olduğu durumlarda, yani iki sınıf arasında çok çok fark olduğu durumlarda ne yapıyorduk?
+
+173
+00:28:34,231 --> 00:28:40,432
+Farklı metriklere bakarak modelimiz ne kadar iyi çalıştı, bunu daha farklı açılardan değerlendirebiliyoruz.
+
+174
+00:28:40,432 --> 00:28:43,432
+Değil mi? Ondan sonra...
+
+175
+00:28:43,432 --> 00:28:46,432
+Tamam, bunları...
+
+176
+00:28:47,284 --> 00:29:05,044
+Onları öğrendik. Şurada onlar var. İşte Precision Recall gibi şeyler var. Ondan sonra bir de Confusion Matrix, yani karmaşıklık matrisine baktık. Bunu da hatırlarsınız. Diagonal'da doğru bulunan sınıflar vardı. Yine bunlardan ne yapıyorduk?
+
+177
+00:29:06,943 --> 00:29:14,584
+Ecuracy, Precision gibi şeyleri, iki yöntem vardı hatırlarsanız. Micro Averaging ve Macro Averaging. Bunlarla buluyorduk.
+
+178
+00:29:15,700 --> 00:29:25,519
+Şunu da söyleyelim, hatırlayın. Sonra dedik ki sadece classification yapmıyorsak, eğer regresyon gibi sürekli değerler tahmin eden bir model kullanıyorsak ne yapıyorduk?
+
+179
+00:29:26,019 --> 00:29:30,160
+Mean absolute error ya da mean squared error gibi ne yapıyoruz?
+
+180
+00:29:30,867 --> 00:29:44,646
+Error tiplerini o zaman kullanıyoruz. Yani elimizde classlar yok ama diyelim ki bir şeyin boyunu tahmin ettiniz. Continuous değer tahmin etmeye çalışıyorsunuz. O zaman ne yapıyoruz? Mean to Error ya da Mean to Error metriklerini kullanıyoruz.
+
+181
+00:29:50,291 --> 00:30:15,070
+Ondan sonra neyden bahsettik? Holdout, cross-validation gibi şeylerden bahsettik. Holdout neydi? Datamızı bölüyorduk. Diyorduk ki işte %80'ini train için kullan, %20'sini test için kullan diyoruz hatırlarsanız. Ondan sonra cross-validation'dan bahsettik. Datayı fold'lara bölüyorduk. Her bir fold'u küme gibi düşünebilirsiniz. Sonra kaç fold'a böldüysek, k tane fold varsa k kere farklı
+
+182
+00:30:15,826 --> 00:30:22,307
+kümeleri train edip diğerini ne yapıyorduk? Test kümesini soruyorduk. Bunu da hatırlıyorsunuz.
+
+183
+00:30:22,928 --> 00:30:30,907
+Sonra bakın slide 27'den itibaren anlatmadım. Diyelim ki ne yaptınız? Burada da şunu söylüyorum.
+
+184
+00:30:30,907 --> 00:30:34,048
+Diyelim ki iki tane modeliniz var. M1 ve M2.
+
+185
+00:30:34,611 --> 00:30:39,791
+Bunların en iyisi de accuracy'si var, error rate'leri var. Hangisi daha iyi çalışır?
+
+186
+00:30:40,171 --> 00:30:49,832
+Aslında bu model, iki modelin arasındaki hataya baktığınız zaman gerçekten istatistiksel olarak aradaki fark önemli midir?
+
+187
+00:30:50,152 --> 00:30:55,332
+Aradaki fark anlamlı mıdır? Bunu da istatistikte gördüyseniz T-test ile yapıyorsunuz.
+
+188
+00:30:55,332 --> 00:30:58,111
+Ama buraya anlatmadım. Tamam mı? 26'dan.
+
+189
+00:30:59,923 --> 00:31:02,024
+34, 35
+
+190
+00:31:06,419 --> 00:31:12,059
+39 dahil oraları anlatmadım. Tamam, çalışırken de geçersiniz. Daha sonra da ne gördük?
+
+191
+00:31:12,120 --> 00:31:19,719
+Receiver Operating Characteristics dediğimiz drop körlerini gördük. Değil mi? Bu ne yapıyordu?
+
+192
+00:31:20,440 --> 00:31:26,959
+Bu true pozitif ve post pozitif renklerinin birbirine göre nasıl değiştiğine bakıyordu.
+
+193
+00:31:26,959 --> 00:31:33,959
+Datamızın içine farklı farklı threshold'lar koyarsak, daha doğrusu modelimizi farklı yerlerden,
+
+194
+00:31:34,132 --> 00:31:48,231
+Farklı thresholdlardan kesip, buradan sonrası işte bir klaster, bundan öncesi bir klaster, bu thresholddan alt değerler olan, alt olan değerler başka klaster deyip, thresholdu değiştire değiştire her bir thresholdta ne yapıyorduk?
+
+195
+00:31:48,575 --> 00:32:02,875
+false positive rating ve true positive rating'i hesaplıyorduk. Değil mi? Burada grafiğe de çiziyorduk. Hatta şöyle bir ne yapmıştık? Örnek yapmıştık. Şu daha iyi bir örnek olabilir. Yani şu daha gösteriyor. Bakın burada ne var? Plastra'a baktığınız zaman.
+
+196
+00:32:05,108 --> 00:32:18,907
+Artı, eksi, artı, eksi, eksi, eksi, artı, eksi, artı, artı diye gidiyor değil mi? Ne yapıyorduk? Önce threshold şurası olsa, sonra 0,25 ile 0,43 arası olsa, burası olsa diye diye diye diye ne yapıyorduk?
+
+197
+00:32:18,988 --> 00:32:24,707
+Diyelim ki şöyle söyleyelim. 0,53 threshold olsa. Tamam mı?
+
+198
+00:32:25,120 --> 00:32:43,759
+Büyük eşittir 0.53 ya da şöyle söyleyeyim. Şurada daha iyi anlarsınız belki. 0.76 threshold olsun. 0.76'dan büyük eşit olanlar pozitif class diyeceğiz. 0.76'dan da küçük olanlar negatif class diyeceğiz. Tamam mı?
+
+199
+00:32:43,759 --> 00:32:49,759
+Şimdi bu durumda bakacağız. True pozitifimiz kaç tane var? Gerçekten pozitif olup da...
+
+200
+00:32:56,434 --> 00:33:21,195
+0.76'dan böldük değil mi? Büyük eşit. 85'den mi? Kaçtan böldük? Şöyle şuradan böldük değil mi? O zaman değil mi? Bunların hepsine ne dedik? Bunun threshold'dan öncekilere eksi eksi eksi dedik değil mi? Bunlara da ne dedik? Artık buradakilerin hepsine şöyle yazayım. Buradakilerin hepsine de bu artı.
+
+201
+00:33:21,684 --> 00:33:37,643
+Ondan sonra, şu artı, hepsine artı dedik. Threshold ne yapıyoruz? Threshold'dan büyükleri artıdır diyorum. Klasifier'im bu. Küçüklere de eksidir diyorum. Klasifier'imiz böyle çalışıyor.
+
+202
+00:33:46,643 --> 00:33:58,722
+Neyse, şu yeşili görmeyin şurada. Şimdi, buraya bakalım. Kaç tane eksi vardı? Ben bunlara gerçekten eksi dedim. True negative. Kaç tane? Bir tane. Değil mi?
+
+203
+00:33:59,443 --> 00:34:12,963
+Şimdi bakalım false negative'e bakalım. Aslında bu negatifti. Değil mi? Aslında bunlar pozitifti ama ben bunları ne dedim? Negatif dedim. Bunlar negatif ama false negative. İki tane de false negative'im var.
+
+204
+00:34:14,163 --> 00:34:22,463
+Değil mi? Şimdi gelelim bu tarafa. Kaç tane true pozitifim var? Gerçekten pozitifken pozitif buldum. Bir, iki, üç tane.
+
+205
+00:34:24,503 --> 00:34:33,043
+Tamam, üç tane true pozitifimiz var. Peki false pozitifimiz kaç tane? Benim modelim pozitif dedi ama bu yanlış. Bunlar gerçekte eksi.
+
+206
+00:34:41,152 --> 00:34:57,472
+3, 4 tane var. Değil mi? False positive. Şimdi bakın buraya bunları yazdık. Şimdi ne yapacağız? True positive rate'imizi ve false positive rate'imizi hesaplayacağız. Nereden hesaplayacağız? Buradaki değerlerden hesaplayacağız.
+
+207
+00:35:04,019 --> 00:35:15,019
+True positive rate'imizi nasıl hesaplıyoruz? True pozitifimizi true pozitiflere artıp post negatiflere bölüyoruz değil mi? Yani aslında toplam pozitif sayısına bölüyoruz.
+
+208
+00:35:16,800 --> 00:35:24,099
+Şimdi true pozitifimiz kaç tane? 3 tane. Toplam pozitifimiz kaç tane var? 1, 2, 3, 4, 5 tane.
+
+209
+00:35:24,463 --> 00:35:35,364
+Ya da şöyle hesaplayabilirsiniz. True positive'imiz şurada 3 tane, 3 artı false negative artı 2'den 5 tane diye hesaplayabilirsiniz.
+
+210
+00:35:36,104 --> 00:35:50,483
+Dolayısıyla true positive rate'imiz 0,6 çıktı. False positive rate'imize bakalım. False positive rate'imizde false positive'imiz 4 tane, 4 bölü 5'ten bana ne verecek?
+
+211
+00:35:51,507 --> 00:35:59,007
+Yine 08 verecek. Dolayısıyla şurada, bu süreç olarak da benim işaretleyeceğim,
+
+212
+00:36:04,050 --> 00:36:24,371
+Şöyle gelelim. Bakın burada işaretleyeceğimiz true positive rate'imizi 0.6 buldu. Değil mi? 0.6. Post positive rate'imizi de 0.8 mi buldu? 0.8 bulduk. Dolayısıyla şu noktayı işaretliyorum. Her bir threshold için bu noktaları işaretledikten sonra rock curve'imi ne yapıyorum? Çiziyorum. Tamam mı?
+
+213
+00:36:24,820 --> 00:36:32,820
+Ama çoğu tool da kendiniz de yazsanız, böyle basamak yani, böyle kendiniz yazsanız bunun, datanız küçük çıkacağı için basamak basamak çıkar.
+
+214
+00:36:32,820 --> 00:36:42,820
+Ama tool'lar rock curve'ü genelde bunu smoothlaştırıp, böyle çizer, tamam mı? Daha smooth çizer yani.
+
+215
+00:36:42,820 --> 00:36:44,108
+Okey?
+
+216
+00:36:44,146 --> 00:36:56,567
+Bundan da en son bahsetmiştik geçen hafta. Şimdi gelelim bugünün konusuna. Bugün ne göreceğiz? Ensemble metotları göreceğiz. Ensemble metotlar topluluk metotlardır. Tamam mı?
+
+217
+00:36:57,608 --> 00:37:06,047
+Ve amacı genellikle doğruluğu arttırmak. Doğruluğu niye arttırır? Çünkü yani niye ensembul metotlara ihtiyaç var? Genellikle
+
+218
+00:37:07,378 --> 00:37:13,458
+Bizim datamız imbalanstır. Gerçek dünyaya baktığınız zaman, gerçek dünyada, tasında da ne var?
+
+219
+00:37:40,882 --> 00:38:02,242
+Bu konuda bir tanesine, bunlara da ensembur metodlar deniyor. Amacımız doğruluğu arttırma. En genel manadan arası çalışıyor. Geçen hafta birazcık size bu distrap'ten bahsettikten gibi hatırlıyorum. Şimdi, diyelim ki bu bizim datamız. Tamam, datamız burada.
+
+220
+00:38:02,804 --> 00:38:10,884
+Geldik, datamızın üzerinde, M1 diye bir tane model oluşturduk. İlk modelimiz. Tamam mı? İlk klasifierimiz M1.
+
+221
+00:38:11,764 --> 00:38:21,144
+Sonra parametreleri değiştirdiniz ya da farklı bir klasifier kullandınız. Yani burada atıyorum, müziği şimdi kullandınız. Burada tuttunuz, Bayes'i kullandınız. Bu da olabilir.
+
+222
+00:38:22,064 --> 00:38:26,064
+Ya da aynı modelin farklı parametrelerle çalışmış hali de olabilir.
+
+223
+00:38:30,771 --> 00:38:51,192
+Burada, bir şekilde bunların sonuçlarını bir araya getiriyoruz. Nasıl getirebilirsiniz? Mesela en basitinden oylama sistemiyle bir araya getirirsiniz değil mi? Yani bir tane testiniz var elinizde, tamam mı? Test sample'ınız. M1 ne dedi? Hangi A kılası?
+
+224
+00:38:51,570 --> 00:39:16,971
+M2 ne dedi? A kılası dedi. M3, B kılası dedi. Böyle A, B, A ve Enseptal dedi. Ne söylediyse, tamam mı? Buna Majority Voting denir çoğunluk oylamı. Ona göre ne anlatayım? Dakla ile bir modeli diğer modelleri birleştirerek ortaya çıkartmaya çalışıyoruz. Tamam mı? Buna da ne diyoruz? Ensembl.
+
+225
+00:39:18,516 --> 00:39:31,576
+Metotları diyoruz. Şimdi üç tip şeyden bahsedeceğiz. Bir tanesi Baging. Baging'de ne yapacağız? Farklı klasifier'ların söylediklerinin ortalamasını alacağız.
+
+226
+00:39:32,315 --> 00:39:42,016
+Boosting farklı bir metot. Boosting'de de şöyle yapacağız. Boosting metotları hatalı ayrıştıranları, biraz yani nasıl söyleyeyim?
+
+227
+00:39:42,420 --> 00:39:58,079
+Klasifier'ınızın doğru sınıflandıramadığı örnekleri değerini arttırarak, değerini demeyelim ama sanki o daha önemliymiş gibi arttırarak iteratif bir şekilde bulunamayanları bulmaya zorlayacağız.
+
+228
+00:39:58,300 --> 00:39:59,639
+Ona da bakacağız birazdan.
+
+229
+00:39:59,639 --> 00:40:03,639
+Ensemble dediğimiz şey de farklı farklı...
+
+230
+00:40:10,804 --> 00:40:18,539
+homojen klasifier dediğimiz, aynı sınıflandırıcının farklı parametre...
+
+231
+00:40:26,195 --> 00:40:30,195
+Şimdi, yani üç tane metot var, tek tek bunlara bakacağız. Tamam mı?
+
+232
+00:40:31,195 --> 00:40:38,195
+Şimdi ensemble metotları ne yapıyoruz? Genellikle şuradaki de orijinal datamız. Tamam mı?
+
+233
+00:40:38,195 --> 00:40:49,195
+Orijinal datadan aynı boyutta da olabilir, daha küçük boyutta da olabilir. Farklı D1, D2, DT'ye kadar farklı farklı T tane ne yaptık?
+
+234
+00:40:49,195 --> 00:40:52,195
+Daha küçük data setler meydana getirdik.
+
+235
+00:40:52,948 --> 00:41:17,367
+Geçen hafta Bootstrap Stampling diye bir şeyden bahsetmiştik, hatırlıyor musunuz? Yani aynı data da birden fazla kere seçilebiliyordu içinde. Öyle de çalışan metotlar var ama şurada atıyorum bin tane varsa bunların hepsinin yüzlük, yüzlük, yüzlük olduğu yani ya da iki yüzlük olduğu daha küçük datasetler haline getiren metotlar da var. Tamam.
+
+236
+00:41:17,940 --> 00:41:23,519
+Sonra bakın, birinci klasifierımı D1'i kullanarak diren edeceğim.
+
+237
+00:41:24,418 --> 00:41:26,219
+Ve klasifierımı bu şekilde oluşturacağım.
+
+238
+00:41:26,838 --> 00:41:30,418
+C1 klasifier ne yapıyor? Sadece D1'i görüyor. Buradan oluşuyor.
+
+239
+00:41:31,139 --> 00:41:33,838
+C2, D2'den oluşuyor. Tamam mı?
+
+240
+00:41:34,458 --> 00:41:40,559
+Aslında baktığımız zaman, şu an hazırsanız müsteşem çizim kabiliyetimle.
+
+241
+00:41:41,639 --> 00:41:44,639
+Diyelim ki burası uzayımız olsun.
+
+242
+00:41:45,332 --> 00:41:59,832
+Uzayımızda sample'lar var tamam mı? Eksiler ya da maviler ve kırmızılar olsun sınıflar. Kırmızı bir sınıf, mavi bir sınıf tamam mı? Şöyle şöyle yapalım.
+
+243
+00:42:03,284 --> 00:42:05,863
+Şunlardan olsun, maviler olsun.
+
+244
+00:42:16,275 --> 00:42:17,895
+Şunlar da şöyle maviler.
+
+245
+00:42:25,074 --> 00:42:34,895
+Tamam mı? Şimdi bu ne yapmaya çalışıyor? Birazcık ondan bahsedelim. Rastgele seçtiği zaman şöyle bir şey olmuş oluyor.
+
+246
+00:42:41,394 --> 00:43:07,194
+Bir daha deyim. Seçtiği data, mesela şu bütün datam D. Seçtiği data, benimki sadece şu kısmı alıyor. Bu kısmı alıp da ayıran en iyi klasifier'ı, başka bir renk çizliyim yine. Benimki datada rastgele seçtik ya, şuralar var. Tamam mı? Bunlar gelmedi. O kısmı seçtiği bunları en iyi ayıran klasifier budur diyor. Tamam mı?
+
+247
+00:43:09,875 --> 00:43:35,275
+Küçük data için şöyle bir klasifier buldu. Sonra ikinci de diyelim ki şuraları seçti. Bu sefer tutuyor. Şöyle bir klasifier buluyor. Tamam mı? Her seferinde. Ondan sonra diyelim ki gitti. Üçüncü de başka bir klasifier daha buldu. Tamam mı? Şu klasifier bir olsun. Şimdi bu da iki olsun. T'nin iki olduğunu düşünün. Tamam mı? Sonra
+
+248
+00:43:35,827 --> 00:43:58,806
+Test zamanına geldiğim zaman, diyelim ki elimde bir tane bir şey var, klasını bilmiyorum. Elimde bir nokta var. Tamam mı? Şurada bir nokta var. Ya da şurada kalsın. Tamam, şu noktanın klasını bilmiyorum. Tamam mı? Diyorum ki, klasifier 1 diyorum. Bunun sınıfı nedir? Bana söyle.
+
+249
+00:44:00,083 --> 00:44:08,702
+Bu bakıyor. Classifier 1 diyor ki, demiş ki bu, şu classifier 1'im, şu çizgi, altında kalanlar mavidir, üstünde kalanlar kırmızıdır.
+
+250
+00:44:09,344 --> 00:44:12,182
+Classifier 1 diyor ki, bu kırmızıdır. Tamam mı?
+
+251
+00:44:12,574 --> 00:44:23,835
+Sonra Classifier 2'ye soruyorum, buradaki noktam nedir? O bakıyor, diyor ki, Classifier 2 böyleydi, altta kalanlar mavi, üsttekiler kırmızı, bu da kırmızıdır dedik, dedi.
+
+252
+00:44:24,436 --> 00:44:31,614
+Bu sefer bu ikisini ne yapıyorum? Oylama yapıyorum. En çok hangisi Classifier'ler tarafından söylendiyse, onu seçiyorum.
+
+253
+00:44:31,614 --> 00:44:39,936
+Bu ne yapıyor aslında? Uzayı tek bir şekilde bölmeye çalışmak yerine, tek Classifier'la farklı farklı şekilde, farklı alt kümelerden,
+
+254
+00:44:40,306 --> 00:44:42,067
+Ölmeye çalışarak ne yapıyor?
+
+255
+00:45:01,458 --> 00:45:21,798
+Daha küçük bir küme üzerinde bunu bulmaya çalıştığı için eğer ki noise gelmezse ya da daha az bir kümede ne olabilir? Daha yoğunlaşmış data olabilir. Oradaki datanın özelliğini analiz ederek ona göre klasifier oluşturmaya ne yapıyor? Çalışıyor. Amacı bu.
+
+256
+00:45:26,484 --> 00:45:34,163
+Ve en sonunda da şu ne? Bunların toplamında temel klasifierımı buluyorum.
+
+257
+00:45:35,403 --> 00:45:40,663
+Şimdi, niye çalıştım ki böyle bir şey? Zaten teklif buluyor derseniz.
+
+258
+00:45:40,663 --> 00:45:52,382
+Şimdi 25 tane Bayes klasifierımız olsun. Bayes klasifier dediğimiz şey şu. Her biri daha küçük datada çalışan klasifierımız. Tamam mı?
+
+259
+00:45:52,948 --> 00:46:15,948
+25 tane best classifier'mız olsun. Tamam mı? Ve her classifier'ın error rate'i de hata oranı 0.35 olsun. Yani ortalama. Her classifier 0.65 ile çalışıyor. Tamam mı? Doğruluğu ne? 0.65. Okey? Her classifier'ın ekürüsüsü. Şimdi...
+
+260
+00:46:16,190 --> 00:46:28,770
+Şuraya bakın, assume classifier'lar independent diyor. Classifier'lar bağımsız olsun diyor ama classifier'lar normalde ne değil? Bağımsız değil. Çünkü aynı datadan türediği için ama bağımsız olsa.
+
+261
+00:46:28,770 --> 00:46:43,050
+Tamam mı? Diyor ki, ensemble classifier'ın yani şunun yanlış tahmin yapma ihtimali nedir? Şimdi şuna baktığımız zaman burada tek bir classifier olsa,
+
+262
+00:46:43,730 --> 00:46:52,572
+Yan hata yapma ihtimalini 0.35 değil mi? Ama burada 25 taneyi bir araya getireceğiz, hata yapma oranını bulacağız.
+
+263
+00:46:53,971 --> 00:47:08,332
+Şimdi, 25 tane oylama yapacağız ya, iki sınıf var. Yanlış hata yapmam için 25 taneden 13 tanesinin, en az 13 tanesinin kılısını yanlış vermesi lazım.
+
+264
+00:47:08,332 --> 00:47:09,951
+Değil mi?
+
+265
+00:47:11,284 --> 00:47:21,224
+Dolayısıyla i 13'den 25'e kadar gidiyor. 25'in iyilik kombinasyonu, hata aranı i, 1- hata aranı 25-i.
+
+266
+00:47:23,703 --> 00:47:30,184
+Statistikdeki şeyden hatırlıyorsunuz değil mi counting metodlarla? Ya da lisedeki şeyden hatırlıyorsunuz.
+
+267
+00:47:34,612 --> 00:47:40,872
+İstatistik, olasılık istatistikte gördünüz. Belki şeyde de hatırlayabilirsiniz. Lisede de hatırlayabilirsiniz. Tamam.
+
+268
+00:47:41,632 --> 00:47:45,251
+Buraya baktığımız zaman hata oranı ne oluyor? Yüzde altıya düşüyor.
+
+269
+00:47:46,770 --> 00:47:54,251
+Yirmi beş tane klasifier kullandığınızda. Yani sıfır otuz beşten tek klasifier yapacak olsanız sıfır otuz beşten.
+
+270
+00:47:54,867 --> 00:48:05,867
+Burada teorik olarak 0.06'ya düşüyor ama gerçek hayatta bu böyle değil. O zaman herkes ensender kullanır. Neden? Çünkü klasifaylarımız independent değil.
+
+271
+00:48:15,230 --> 00:48:29,510
+Her klasifier da farklı farklıymış gibi ama gerçek hayatta genellikle şuradaki her klasifierin bulamadığı ya da işte hatalı bulduğu şey aynı oluyor, benzer oluyor. O yüzden hatalar gerçek hayatta bu kadar düşmüyor.
+
+272
+00:48:42,832 --> 00:48:49,952
+Hata oranı çok değişmiyorken belirli bir yerden sonra ne oluyor? Artmaya başlıyor. Yani bunun da bir optimal dengesi var.
+
+273
+00:48:50,572 --> 00:48:56,911
+Ama yani çoğu diyeyim ki iki üç taneyi birleştirmeniz çok bir şey ifade etmiyor. Tamam mı? Doğruluğu çok arttırmıyor.
+
+274
+00:48:57,592 --> 00:49:05,391
+Yüzlerceyi birleştirmeniz de çok bir şey ifade etmiyor. Optimum sayısını genellikle deneyerek gerçek hayatta. Tamam mı?
+
+275
+00:49:05,391 --> 00:49:06,811
+Ensemble Learning yapacaksınız.
+
+276
+00:49:08,244 --> 00:49:23,503
+Peki, Ensembler Classifier oluşturmak için birkaç yol var ama bir tanesini training set üzerinde işlem yapmak, ikisi de input feature'lar üzerinde, ikincisi de input feature'lar üzerinde işlem yapmak.
+
+277
+00:49:23,503 --> 00:49:33,663
+Şimdi birincisi ne? Ne yapıyoruz? Birincisinde training set üzerinde manipülasyon yapacağız. Elimde tek bir training set var, şurada.
+
+278
+00:49:34,067 --> 00:49:48,407
+Buradan bir random fonksiyonla tamam mı? Genellikle aynı datayı birden fazla kere seçmesine izin vererek ne yapıyoruz? Farklı farklı datalar oluşturuyoruz.
+
+279
+00:49:48,407 --> 00:49:58,407
+Yani orijinal data resampling yaparak ne oluyor? Birden fazla training set oluşturulmuş oluyor ve her bir training setten
+
+280
+00:49:59,572 --> 00:50:09,372
+Yani K tane varsa K kere algoritmamız çalıştırılıp, K farklı sınıflandırıcı klasifier ne oluyor? Ortaya çıkartılıyor.
+
+281
+00:50:09,971 --> 00:50:17,492
+Ama bunlar ne oluyor? Bakın birleştirilmiyor. Yani sonra bu klasifierler matematiksel bir şekilde falan birleştirilmiyor.
+
+282
+00:50:18,092 --> 00:50:26,052
+Şöyle oluyor. Diyelim ki bu hangi test, bunlar klasifierlerimiz var. Test aşamasında veri geldi.
+
+283
+00:50:26,900 --> 00:50:50,619
+C1 sen buna ne dedin diyoruz. C2 sen buna ne dedin. C3 buna ne dedin. Sonra en sonunda oylamayla en çok hangisi, hangi sınıfa ait dediyse onu seçiyorum. Yani burada tekrar matematiksel olarak, matematiksel bir işlemle bu klasifierler ne olmuyor? Bir birleşmiyor yani tamam mı? Sadece basit bir oylama yapıyoruz. O kadar sonuçlar.
+
+284
+00:50:54,003 --> 00:51:00,643
+Her gün daha iyi yapalım. Mesela 5'inden bir şey değil, bunu kaydettim.
+
+285
+00:51:03,043 --> 00:51:09,463
+Öyle bir şey yapmıyoruz işte. Yani şunu demiyoruz. C1 sen daha iyi çalışıyorsun. Mesela ağırlıkla ortalama alalım.
+
+286
+00:51:10,083 --> 00:51:17,603
+C1 şunu şöyle yapalım. Ya da C şuna baktınız, bu hiç güzel çalışmadı. Tamam, bunun hata oranı düşük. Hadi bunu çıkartalım.
+
+287
+00:51:18,100 --> 00:51:23,220
+Bunu şöyle şöyle yapalım falan gibi bir işlem yok tamamen. Bunlar ne dediyse oylamayla alıyoruz sonucu.
+
+288
+00:51:27,319 --> 00:51:35,940
+Bu ne? Ensembol learning diyoruz. Yani topluluk öğrenme. Tamam mı?
+
+289
+00:51:36,600 --> 00:51:39,400
+Şimdi bunlara iki tane örnek vereceğiz. Begging ve boosting.
+
+290
+00:51:40,436 --> 00:51:51,595
+Tamamen bunlar training setleri manipüle ederek bulacağız. Şimdi bir de manipüle edeyim de input features diye bir şey var. Tamam mı? Bunda ne yapacağız?
+
+291
+00:51:53,956 --> 00:51:57,775
+Şimdi training sette ne yapıyoruz? Şöyle düşünün.
+
+292
+00:52:03,603 --> 00:52:04,724
+Şu tablamı çiziyor.
+
+293
+00:52:07,304 --> 00:52:08,583
+Hiç güzel olmadı, neyse.
+
+294
+00:52:09,363 --> 00:52:14,024
+Şimdi training setimizi şöyle düşünün, tamam mı?
+
+295
+00:52:14,024 --> 00:52:15,244
+Her bir satır ne?
+
+296
+00:52:16,264 --> 00:52:19,484
+Satırlar, objekt, değil mi? Her bir sample, her bir örnek.
+
+297
+00:52:20,103 --> 00:52:21,583
+Peki her bir şey ne?
+
+298
+00:52:24,043 --> 00:52:27,003
+Bunlar da her bir feature'ımız, değil mi?
+
+299
+00:52:27,524 --> 00:52:28,564
+Her bir attribute'imiz.
+
+300
+00:52:29,143 --> 00:52:29,484
+Şimdi.
+
+301
+00:52:30,259 --> 00:52:37,538
+ilk konuştuğumuz training seti manipüle eden kısım ne yapıyor, hangisini seçiyor baktığımız zaman?
+
+302
+00:52:38,458 --> 00:52:44,458
+Aslında yaptığı şey tamamen farklı farklı random satırlar seçiyor değil mi?
+
+303
+00:52:47,498 --> 00:52:53,659
+Yani burada bin tane satır varsa gidiyor, bunlardan rastgele yüz tane seçiyor, yüz tane seçiyor.
+
+304
+00:52:54,159 --> 00:52:56,400
+Her bir yüz için ayrı bir training set oluşturur.
+
+305
+00:52:57,010 --> 00:53:24,570
+Tamam mı? Şu. Şimdi Manipulating Input Features da şöyle yapıyor. Daha farklı. Satırları değil de Feature'ları seçiyor. Diyelim ki burada 100 tane Feature'niz varsa, tamam mı? Yani 100 tane kolonunuz varsa ne yapıyor? Gidiyor bunlardan 15-20 parametre kaçsa, o kadarını seçip onunla Classifier oluşturuyor ve her seferinde farklı Attribute'ler seçiyor.
+
+306
+00:53:26,708 --> 00:53:29,448
+Ne anlamı var bunun? Neyi neden işe yarayabilir?
+
+307
+00:53:35,346 --> 00:53:39,346
+Çünkü bazı data setlerde aslında şu şeyler...
+
+308
+00:53:41,171 --> 00:53:51,171
+Feature'lar, yani kolonlar birbirine çok bağımlı oluyor. Birbirinden çok etkilenmiş oluyor. Tamam mı? Ve onlar çok sayıda olmuş oluyor.
+
+309
+00:53:51,171 --> 00:54:04,251
+Yani nasıl söyleyeyim? İşte bir yerde diyelim ki hava sıcaklığı var. Hava sıcaklığıyla yağış arasında bir korelasyon var. Ondan sonra falan filan. Bunlar da tabii bile korele olmuş oluyor aslında çok fazla.
+
+310
+00:54:08,064 --> 00:54:24,824
+Classifier'da ne oluyor? Onlar daha çok data olduğu için onlardan etkilenebiliyor. Daha fazla etkileniyor. Mesela tek başına aslında etkileyen bir tane daha feature varsa onu kaçırabiliyor. Ona daha az, o boyutu daha az göz önüne almış olabiliyor.
+
+311
+00:54:28,659 --> 00:54:41,219
+Ne yapıyoruz? Yine farklı farklı dataset'ler oluşturuyoruz ama bu sefer satır satır değil de ne? Kolon kolon. Satırlar kalırken farklı random kolonları seçiyoruz. Tamam mı? Farklı feature'ları seçiyoruz. Tamam mı?
+
+312
+00:54:41,219 --> 00:54:45,900
+Bunun örneği de ne? Random Forest. Birazdan buna ne yapacağız? Bakacağız.
+
+313
+00:54:56,914 --> 00:55:00,494
+O seçtiği satır mı?
+
+314
+00:55:01,635 --> 00:55:04,135
+Seçtiği attribütün tüm satırlarını alıyor.
+
+315
+00:55:05,034 --> 00:55:08,394
+Yani senin datanda 500 tane sample var.
+
+316
+00:55:08,635 --> 00:55:11,215
+Tamam mı? Training datanda 500 tane satır var.
+
+317
+00:55:11,815 --> 00:55:14,034
+100 tane de feature var.
+
+318
+00:55:14,635 --> 00:55:15,534
+Tamam mı? Diyelim ki.
+
+319
+00:55:16,055 --> 00:55:20,875
+Her seferinde 10 feature seçecekse 500 satır oluyor, 10 tane de feature oluyor.
+
+320
+00:55:23,411 --> 00:55:32,872
+Satır sayısı aynı kalıyor. Feature'lar azalmış oluyor. Eliyor, eliyor. Ama işte her seferinde 10, 10 seçti ya, farklı 10'u seçmiş oluyor.
+
+321
+00:55:32,872 --> 00:55:50,411
+Yani öyle 30 tane farklı 10'la 10'la 10'la oluşturmuş oluyor. Şimdi bu metotlara bakalım. İlkine Bagging, Bullstrip, Aggregation dediğimiz yöntem.
+
+322
+00:55:51,476 --> 00:56:06,175
+Kitapta diyor ki, bir hastalığımız var, şöyle işte, önce A doktoruna gidersin diyor, sonra yani ne atıyorum, dahiliyeye gittin, sonra işte bulamadı, başka bir doktora gittin, göz hastalıklarına gittin falan filan tamam mı, böyle böyle demiş.
+
+323
+00:56:06,735 --> 00:56:15,756
+Sonra da diyorsun ki diyor, onların verdiği kararı, onların verdiği işte şeyin, en çok doktor ne dediyse tamam budur diyorsun diyor.
+
+324
+00:56:19,476 --> 00:56:39,194
+Anlattığımız şey bu. Hep anlattığımız şey bu değil mi? Verdiğimiz örnek tamamen begging'e giriyor. Bootstrap aggregation. Geçen hafta da yaptık. Ne yapıyoruz? Geçen hafta biz bunun örneğini yaptık değil mi ya? Başka bir yerde mi anlattın? Bootstrap aggregation. Anlatma be.
+
+325
+00:56:43,346 --> 00:56:57,228
+Tamam, şimdi ne yapıyoruz? Hemen algoritmaya bakalım. Datasetimiz D, tamam mı? D etapılımız var, iterasyon iterasyon gideceğiz ve her seferinde ne yapacağız?
+
+326
+00:56:57,827 --> 00:57:05,586
+Rastgele sayılar oluşturarak, tamam mı? Random metodumuz olacak. İşte parametreyi kaç verdiyseniz daha küçük datasetlerini oluşturacağız.
+
+327
+00:57:05,586 --> 00:57:09,047
+Tamam, bir sample birden fazla kere ne yapabilir?
+
+328
+00:57:09,536 --> 00:57:24,496
+seçilebilir. Ve her biri için modeli öğrendik. Modelimiz de MI, classification'da da ne yapıyoruz? Bir test sample'ı geldiği zaman her bir modele, yani her bir klasifier'e tek tek sorup oylama yapıyoruz.
+
+329
+00:57:24,496 --> 00:57:32,716
+Hep anlayan, şunun üzerinde ilk baştan beri anlattığım yöntem var ya, bu en temel ensemble metod yöntemi.
+
+330
+00:57:37,682 --> 00:57:43,302
+Yani burada da ne yapıyoruz? Genellikle Manipulating Training Set kısmına giriyor.
+
+331
+00:57:43,302 --> 00:57:49,943
+Baking kısmına. Tamam mı? Yani Training Set'teki ne yapıyoruz? Tutumları değil de satırlardan alıyoruz.
+
+332
+00:57:50,143 --> 00:57:58,823
+Yani işte ne yapıyoruz? Oradaki satırlardan yeni data setleri oluşturuyoruz. Daha küçük data setleri oluşturuyoruz. Tamam mı?
+
+333
+00:58:00,211 --> 00:58:10,230
+Ve baktığımız zaman genellikle daha iyi, yani daha yüksek sonuç veriyor. Dezavantajı ne ama? Tabii ki de daha uzun sürüyor.
+
+334
+00:58:10,230 --> 00:58:21,791
+Çünkü bir tane, diğeri kaç tane klasik bayrınız olursa o kadar çarpı, ekstra o kadarlık iş yükü size ne yapmış oluyor, getirmiş oluyor. Yavaş çalışan metotlar da kullanılmıyor.
+
+335
+00:58:26,420 --> 00:58:43,958
+Aslında yaptığı şey de noisy datayı atmaya çalışıyor. Niye daha iyi çalışıyor? Çünkü alt kümeler oluştururken, o alt kümelerde eğer ki noise gelmezse daha iyi sınıflandırıcılar bulabiliyor. O yüzden daha çalışma yüksek.
+
+336
+00:58:49,396 --> 00:58:57,536
+Bu da bagging, işte repeated sample'lar var. Birden fazla kere seçebilirsin falan filan. Bunları anlatmıyorum. Aynı şeyleri söyleyeceğiz.
+
+337
+00:58:58,635 --> 00:59:00,416
+Şimdi örnek üzerinden bakalım.
+
+338
+00:59:02,615 --> 00:59:10,376
+Şimdi diyelim ki elimizde şöyle bir dataset var. X'ler feature'lar olsun. Tek feature'ım var.
+
+339
+00:59:12,883 --> 00:59:28,883
+Y'de sınıfı, yani artı bir, artı bir, artı bir, eksi bir, eksi bir, eksi bir, eksi bir, artı bir, artı bir. Yani baktığımız zaman altı tane pozitif klas var, dört tane de elimde negatif klas var. Tamam mı? Şunlar da neler? Feature'ler.
+
+340
+00:59:30,883 --> 00:59:33,963
+Şimdi tek bir klasifier bulmaya çalışsanız.
+
+341
+00:59:35,412 --> 00:59:40,032
+Tek klasifier aynı şey gibi çalışacak. Threshold gibi çalışacak değil mi?
+
+342
+00:59:40,472 --> 00:59:49,992
+Derseniz ki 0,3'den 0,35'den büyük olanların hepsi eksi birdir, küçükler artı birdir diye bir klasifier oluşturabilirsiniz.
+
+343
+00:59:51,052 --> 00:59:57,932
+Ama ne yapıyor burada? 3 tanesini hatalı buluyor. Dolayısıyla ne kadar çalışır? %70 başarımla çalışır.
+
+344
+00:59:59,124 --> 01:00:04,923
+İkinci klasifierımızda ne olur? Kürmüzüyle çizelim. Şuraya koyarsınız 0.75'e.
+
+345
+01:00:07,324 --> 01:00:13,824
+Bu da ne yapar? Tamam, artı birleri doğru buldu, eksi birleri de doğru buldu ama şurada 3 tane artı biri eksi bir bulmuş olur.
+
+346
+01:00:13,983 --> 01:00:17,724
+Çünkü diyeceksiniz ki 0.75'den küçükler eksi sınıf diyeceksin.
+
+347
+01:00:18,483 --> 01:00:23,324
+Dolayısıyla bunlara eksi dediğiniz için, eksi bir, eksi bir, eksi bir dediğiniz için şu 3 taneyi ne yapacak?
+
+348
+01:00:23,744 --> 01:00:32,224
+Yanlış bulmuş olacak. Dolayısıyla 10 tane de 3 taneyi yanlış bulduğu için %30'lık hata oranı var, %70'lik de doğruluk oranı var.
+
+349
+01:00:33,923 --> 01:00:43,844
+Yani şöyle tek klasifier bulsanız ya şu maviyle çizdiğim 0.35 diyeceksiniz ya da bu diyeceksiniz değil mi? En optimal şeyi veren bu.
+
+350
+01:00:43,844 --> 01:00:47,963
+Şu 0.55'den falan böseniz ne olur? %50 falan çalışacak.
+
+351
+01:00:52,371 --> 01:01:08,090
+Umarım anlıyorsunuz. Şimdi, bunda bagging nasıl yapacağız? Hoppa. Tamam, şimdi ne yapıyoruz? Kullandığım classifier, hoppa, decision tree ve decision tree'de ne var?
+
+352
+01:01:09,108 --> 01:01:10,387
+İyice şey oldu.
+
+353
+01:01:11,028 --> 01:01:13,947
+Ve Decision Tree'de aslında böyle büyük bir tree yok.
+
+354
+01:01:14,327 --> 01:01:17,548
+Sadece tek bir, x değerim olduğu için tek bir node var.
+
+355
+01:01:17,668 --> 01:01:19,266
+Root'tan diyecek ki root'a bakacak.
+
+356
+01:01:19,508 --> 01:01:21,188
+Sonra root direkt leaf'e bağlanacak.
+
+357
+01:01:21,487 --> 01:01:21,728
+Değil mi?
+
+358
+01:01:22,628 --> 01:01:24,367
+Yani trash oldu, oraya koymuş olacağız.
+
+359
+01:01:25,648 --> 01:01:27,188
+Hiç anlamıyorsunuz gibi geliyor ya.
+
+360
+01:01:27,307 --> 01:01:27,688
+Niye öyle?
+
+361
+01:01:28,947 --> 01:01:29,668
+Anlaşılıyor mu?
+
+362
+01:01:31,188 --> 01:01:56,188
+Sete ammli gibi geliyorsun da. Yani niye böyle? Çünkü şu 0.35 şu. 0.35 root'a koyduk. Küçükse eksi bir sınıfıdır diyeceğiz. Çünkü bu da triye benzemiyor. Büyükse artı bir sınıfıdır diyeceğiz. Tamam mı? Şurası artı bir. Şurada da ne yazıyor? Şunun içinde büyüktür 35 yazıyor mesela. Yani tri'lerimiz böyle. Sadece root ve liflerden olur.
+
+363
+01:01:56,528 --> 01:02:12,967
+Çünkü niye elimde bir tek x var feature olarak? Ondan sonra gelelim buraya. Şimdi ne yapıyorum? Her bootstrap sample dediğimiz her bir alt kümemizde.
+
+364
+01:02:16,436 --> 01:02:26,436
+HasSaintSize orijinal data ile aynı var ve orijinal datadan random bir şekilde geliştirilmiş. Şurada baktığımız zaman...
+
+365
+01:02:26,436 --> 01:02:31,436
+Hoppa! Şimdi bakın...
+
+366
+01:02:31,436 --> 01:02:38,436
+Tamam. Şimdi şu görünüyor mu? Baya görünüyor. Biraz daha büyüteyim.
+
+367
+01:02:39,220 --> 01:02:55,860
+Şimdi ilki gitmiş, rastgele seçmiş. Seçerken bakın ne olmuş? Bunlar 0,1'den 0,9'a kadar mı gidiyordu x'leri? Değil mi? Bakın 0,1'i bir kere seçmiş. İlk alt küme için. Tamam mı? Alt küme diyeyim. Bootstrap sample bilmiyelim.
+
+368
+01:02:56,579 --> 01:03:05,820
+0,2'yi iki kere seçmiş, 0,3'ü bir kere seçmiş, 0,4'ü iki kere, 0,5'ü bir kere, 0,6'ü bir kere, 0,9 iki kere seçilmiş. Böyle on boyutunda, aynı boyutta.
+
+369
+01:03:06,367 --> 01:03:13,787
+Ne oluşmuş? Bir classifier oluşmuş. Şimdi şunu da söyleyeyim. Aynı boyutta olmasının avantajı ne?
+
+370
+01:03:16,467 --> 01:03:24,427
+Şöyle anlatayım. Tamam. Şöyle daha iyi olacak. Şimdi şeyde baktığımız zaman bu classifier'ın inputu ile
+
+371
+01:03:25,074 --> 01:03:36,074
+Benim testimin input'u farklı olacak. Yani bu aslında 0-1, 0-1 dediğim zaman birazcık daha farklı değerleri verirseniz mesela 0-1 hava güneşli mi değil mi?
+
+372
+01:03:39,999 --> 01:03:47,519
+Nem oranı ihtimali, nem oranının yüzdesi olsun mesela. Tamam mı? 0,4 hava basıncı olsun.
+
+373
+01:03:48,119 --> 01:03:56,519
+Şimdi, ama inputum, yani bunları yapıyorum ya, burada sadece işte mesela ne yapmış? 7, 8 hiç kullanmamış. Değil mi?
+
+374
+01:03:57,074 --> 01:04:08,775
+İmputu da test aşamasında gelirken, inputu da aynı bunları alacağız. Yani 01'i, testteki inputun sadece 01'ini, 02'sini, 03'ünü alıp buraya koyacağım.
+
+375
+01:04:11,894 --> 01:04:18,595
+Anladınız mı? Şimdi şöyle, mesela burada 07, 08 hiç yok değil mi birincide?
+
+376
+01:04:19,668 --> 01:04:31,628
+Dolayısıyla o alt klasifier'ı çalıştırırken, C1 isimli klasifier'ı çalıştırırken yine burada random seçilen inputlar neyse benim testimdeki o inputları alıp buraya koyacağım.
+
+377
+01:04:31,628 --> 01:04:41,152
+Birinciye. Yani 7 ile 8 hiç yok ya 07-08. Onları hiç ne yapmayacağız? Buraya koymayacağız. Tamam mı?
+
+378
+01:04:43,635 --> 01:05:04,014
+Şimdi baktığımız zaman nasıl bir klasi fayır bulmuş? Şu 0.35'den böleyim demiş. Tamam mı? 0.35'den şuradan böleyim demiş. Buradan işte küçüklere artı bir, büyüklere eksi bir diyeyim demiş. O zaman bakın ne oldu? Burada hata yok. Şurada iki tane var. Dolayısıyla yüzde seksen çalışan bir şey buldu.
+
+379
+01:05:08,532 --> 01:05:33,311
+Şimdi round 2'ye bakalım. Şurası. Yine 1, 2, 3, 4, 5. Bu sefer ne yok? 6, 7 yok. 8, 9 ve biri bu sefer 3 kere seçmiş. Gördünüz mü? Bunu nereden bölersiniz? Şurada 3 tane var, burada 5 tane var. Evet 5 tane var. O zaman şuradan bölersiniz. 0, 5, 0, 8'ın arası 0, 65. Tam orta nokta.
+
+380
+01:05:33,748 --> 01:05:41,007
+Dolayısıyla baktığımız zaman şu iki taneyi mi yanlış buldu? Yok, üç taneyi yanlış buldu. Bu da ne yapar? %70 çalışır.
+
+381
+01:05:44,007 --> 01:05:47,228
+Onu da evet, doğru, doğru. Hepsine bir de diyebilirsin.
+
+382
+01:05:47,604 --> 01:06:06,224
+Tamam, yani bu ne yapar? Benim yaptığım gibi şunlara eksi bir, bunlara artı bir dersen 0,70 çıkar ama hepsine artı bir dersen %80 doğruluk çıkar. O yüzden zaten algoritmada mütevheren %80 çalışan hepsine artı bir der. Yani ne input gelirse gelsin artı bir der.
+
+383
+01:06:09,844 --> 01:06:12,143
+Efendim, hepsini bir yaparsan.
+
+384
+01:06:16,275 --> 01:06:26,115
+Algoritma, algoritma da bu algoritmaya değişir ama genellikle bunu, yani şu decision tree'de, leave, yani leave'lere ikisine de artı bir artı bir gider. Leave var ya decision tree'i yapıyoruz.
+
+385
+01:06:29,396 --> 01:06:31,235
+Hiçbir şey duymadım, bir daha sesle.
+
+386
+01:06:35,572 --> 01:06:41,871
+Tamam o da olur. Yani sıfırdan büyükse direkt artı bir ver. Onu da yapabilir. Tamamen algoritmamıza bağlı. Tamam mı?
+
+387
+01:06:43,155 --> 01:06:55,516
+Round 3'de bu sefer bakın 0, 1, 2, 3, 4, 2 kere seçmiş. 6'yı hiç seçmemiş. Ondan sonra 1'i seçmemiş. Ondan sonra ne demiş? En iyi klasifier herhalde buradan ayırır.
+
+388
+01:06:55,595 --> 01:07:07,916
+Bakın ne yapıyor? ilk 0.35'ten bir klasifier buldu. Sonra 0.65'ten buldu. Sonra 0.35'ten buldu. Değil mi? Böyle böyle klasifierleri ne yapıyor? Kaç round için?
+
+389
+01:07:11,092 --> 01:07:18,371
+10 round için 10 farklı ne yaptı? Classifier buldum.
+
+390
+01:07:19,032 --> 01:07:19,512
+Tamam mı?
+
+391
+01:07:20,532 --> 01:07:26,592
+Artık elimde farklı alt kümeler için ne var? Classifier'ları var.
+
+392
+01:07:26,592 --> 01:07:27,592
+Tamam mı?
+
+393
+01:07:28,251 --> 01:07:29,652
+Şimdi ne yapacağız artık?
+
+394
+01:07:43,635 --> 01:07:57,155
+Tamam. Bu da bulduğumuz şeyler. Round 1'de, Round 2'de. Bakıyoruz mesela 0, 1'i bunlar içinde olmayabilir. Kaç kere doğru bulmuş, kaç kere yanlış bulmuş, sınıf neymiş?
+
+395
+01:07:57,735 --> 01:08:10,275
+Aslında şöyle söyleyelim. Burada yaptığı şey şu. Eğer ben bunu, artı 1'i, Round 1'deki klasifi ayrıma sorsaydım, 0.1'i bana ne verir?
+
+396
+01:08:10,275 --> 01:08:11,155
+Tamam.
+
+397
+01:08:11,604 --> 01:08:16,804
+Round 2'deki ne sorsaydım ne verirdi? Round 3'teki ne sorsaydım bu tablo onu gösteriyor.
+
+398
+01:08:17,923 --> 01:08:22,382
+Sam dediğimizde bunu toplam kaç kere doğru bulmuş?
+
+399
+01:08:23,703 --> 01:08:26,362
+Oylama yapacağız ya, aslında öyle söyleyelim ya da.
+
+400
+01:08:26,362 --> 01:08:31,962
+Şimdi artı bir eksi bir ya, eğer bunu topladığım zaman,
+
+401
+01:08:33,362 --> 01:08:42,302
+Artı pozitifse pozitif sınıfına göre klas diyeceğiz, negatifse negatif klas diyeceğiz. O yüzden toplayıp ne yaptık? İşaretine göre sınıfını seçtik. Artı bir, eksi bir diye.
+
+402
+01:08:54,036 --> 01:09:01,976
+Şimdi şöyle bu test aşaması gibi düşün. Test aşamasında da aynı şeyi verdiğini düşün. Tamam? Test aşamasında.
+
+403
+01:09:03,976 --> 01:09:19,194
+Şimdi test aşamasında geldi benim inputum. Inputum bu olarak geldi gibi düşün. Ama bunların ne olduğunu biliyor muyum bilmiyorum. Tamam mı? Test aşamasında. Şimdi birinciye bir şey gelse, sıfır bir gelse.
+
+404
+01:09:19,551 --> 01:09:43,171
+Demişim ki 0.35'den küçüklere artı 1 de demişim. O yüzden otomatik artı 1 olacak. 0.2 otomatik artı 2 olacak. Yani bu sanki aslında bu değerlere yaklaşık ne gelir? Yani burada 0.1 olan bir şey gelse, benim elime x'i hangi klasa atar? Onu bulmaya çalışıyor. Onu gösteriyor yani. Ama burada da aslında o yaptığı oylamayı gösteriyor hepsini.
+
+405
+01:09:46,099 --> 01:10:01,878
+Normalde bu slide böyle. Normalde testte aynısı gelmez zaten. Şimdi bir daha sonra. Evet, evet. Burada tek tek tek tek her şeyi yani oradaki sayı doğrusu gibi düşünürsen bu ne gelir, bu ne gelir, bu ne gelir diye testi yapmış olduk.
+
+406
+01:10:01,878 --> 01:10:08,199
+Ve aslında şeyi de gösteriyor. Şimdi burada baktığımız zaman kaç taneyi doğru bulmuş?
+
+407
+01:10:09,619 --> 01:10:22,359
+Hepsini doğru bulmuş ya. Yüzde yetmişten yüzde yüze çıkartmış. Şimdi bakın. Ha bu true class değil. Samsay sen hepsini evet. Şimdi bakın bu ortalamanın sonucu. Tamam mı?
+
+408
+01:10:23,123 --> 01:10:38,083
+Şu da alt satırda da gerçekte olan etiketi. Şimdi ilk başta ne yapmıştık? Ben bunu ya demiştim ki ya şuradan bölerim yüzde yetmiş çalışır ya buradan bölerim yine yüzde yetmiş çalışır bulmuştuk. Değil mi? Ama şimdi ne yapıyor? Yüzde yüz çalışan versiyonunu buldum.
+
+409
+01:10:38,324 --> 01:10:50,824
+Aslında niye buldu? Çünkü aslında burada 10 tane değil de çok akıllı yerden bölebilse, siz biliyorsunuz ki buradan ve buradan bölüp oylama yaptığınız zaman bu %100 çalışır iki klasifier ile değil mi?
+
+410
+01:10:51,962 --> 01:10:56,003
+Yani ağaç buralara artı bir dese, buralara eksi bir dese, buraya artı bir dese.
+
+411
+01:10:56,663 --> 01:11:03,122
+İşte yapmaya çalıştığı da aslında alt kümeler oluşturarak birazcık daha fazla klasifier koyuyor belki aralara.
+
+412
+01:11:03,827 --> 01:11:13,208
+Ama oylamada zaten, yani o, şunlar seçilmemiş bile olsa, arada oylamada ne oluyor, o değerler çoğunluğa uyulduğu için kalbolmuş oluyor.
+
+413
+01:11:18,131 --> 01:11:20,532
+Bu işte on tane ayrı karar ağacı var.
+
+414
+01:11:22,691 --> 01:11:24,572
+Evet, evet. On taneyi şöyle.
+
+415
+01:11:31,380 --> 01:11:35,559
+Şu Round 1'deki, yani Classifier 1'deki tek başına bir karar ağacı.
+
+416
+01:11:36,479 --> 01:11:41,260
+Şu tek başına bir karar ağacı. Karar ağacı dediğim tek notlu bir şey yani aslında.
+
+417
+01:11:41,619 --> 01:11:45,260
+Tam tek notlu ve leafleri var sadece. Bu bir karar ağacı, bu bir karar ağacı.
+
+418
+01:11:46,280 --> 01:11:51,139
+Biraz daha başa gidersek. Aslında yine şuraya döneceğim.
+
+419
+01:11:52,619 --> 01:11:56,399
+Bu orijinal da tam vardı değil mi? X'lere göre sample yaptık.
+
+420
+01:11:57,203 --> 01:12:10,203
+Değil mi? Bullsept sampling'i sampling yaptık. Şu tek başına bir karar ağacı, bu tek başına bir karar ağacı. En sonunda bunların sonuçlarını birleştiriyorum. Oylamayla. Tamam mı? Yani kocaman bir karar ağacımız yok.
+
+421
+01:12:21,971 --> 01:12:22,730
+Ha, şusura.
+
+422
+01:12:27,635 --> 01:12:53,715
+Şöyle yapıyoruz. Buna Bootstrap deniyor. Tamam mı? Bootstrapping diyoruz. Random fonksiyonu çağırılıyor. Tamam mı? Datam var, büyük datam. Bundan bir outgün oluşturacağım. Ama bir kere seçtiysem tekrar seçebilirim. Random fonksiyonu çalıştı, on kere çalışacak ve on kere diyelim ki işte bir ile on arasında size sayı üretsin.
+
+423
+01:12:54,078 --> 01:13:19,639
+Hangisini ürettiysen yeni dataya onu koyacağım. Şimdi şu ilk round için 10 kere çalıştığı ve çalıştığı şey, çalışan sonucu çalıştığı şey demeyelim. Mesela burada ne çıkmış? 1, 2, 2, 3, 4, 4, 5, 6, 9, 9 çıkmış. Tamam mı? Random fonksiyonu bunu üretmiş. Bu benim yeni alt kümem oluyor. Data alt kümem. Ve ilk klasifarımı bundan üretiyorum.
+
+424
+01:13:20,179 --> 01:13:29,179
+Sonra aynı metot tekrar çalışıyor. Bu sefer farklı bir alt kimi oluşturuyor. Yeni klasifi ayrama bunun için oluşturuyorum.
+
+425
+01:13:29,179 --> 01:13:34,179
+Şimdi bunun şeyine birazcık noise'ler, uç değerler gelmeyebilir.
+
+426
+01:13:35,179 --> 01:13:38,179
+Tamam mı? Az gelebilir.
+
+427
+01:13:38,399 --> 01:14:02,578
+Dolayısıyla da birkaç klasifiye birleştirerek daha doğru sonuç aslında bu sebepten dolayı çalışıyor daha iyi. Yani datam gerçekten çok iyi olsa, biner olarak ayrılabilir olsa tek klasifiye zaten işi çözer. Değil mi? Ya da şurada da bunu daha büyük bir karar ağacı yapsanız zaten %100 çözer. Tamam mı yani?
+
+428
+01:14:03,730 --> 01:14:13,730
+Ama gerçek data çok daha büyük olduğu zamanlarda, novel isim çok fazla olduğu zaman da topluluk öğrenme metodları birazcık daha iyi çalışabiliyor.
+
+429
+01:14:23,188 --> 01:14:26,347
+Evet, evet şunlar. Yani bir önceki slide'da.
+
+430
+01:14:33,266 --> 01:14:39,467
+Evet, burada sadece, tabii tabii onu seçiyor zaten. Burada tek attribute var ya, aslında tüm tuple seçiyor burada.
+
+431
+01:14:40,467 --> 01:14:46,926
+Ama burada yani metot tüm tuple seçiyor. Ama burada tuple'da sadece 0, 1 var. Anladın?
+
+432
+01:14:47,367 --> 01:14:50,407
+Sadece 0 yani bir tane attribute var, o yüzden böyle.
+
+433
+01:14:56,882 --> 01:14:57,523
+Şimdi
+
+434
+01:15:01,876 --> 01:15:23,636
+Geçemiyoruz. Hazırsa Boosting'e geçiyoruz. Boosting'i de buradan değil, biraz şuradan anlatacağım. Neyse biraz şuradan anlatayım sonra devam edelim. Boosting ne demek? Boost etmek, arttırmak demek değil mi? İngilizce'de. Şimdi Boosting'de yine bir ensemble metot.
+
+435
+01:15:24,148 --> 01:15:39,587
+Yine kitap doktor örneğinden şunu diyor, tamam farklı farklı doktorlara gittin ama bazı, bir şey bilmiyorsa diyor, bazı doktorların kararlarını birazcık daha önemsiyorsun gibi bir örnek vermiş.
+
+436
+01:15:39,587 --> 01:15:41,768
+Şimdi şöyle düşünelim.
+
+437
+01:15:44,688 --> 01:15:46,907
+Düşünmeyin ya, şeyleri hemen göstereceğim.
+
+438
+01:15:49,108 --> 01:15:51,228
+Bence en iyi bu şekilde anlatıyor.
+
+439
+01:15:53,203 --> 01:16:03,362
+Şimdi, diyelim ki bir example'umuz var. Uzayımız burası. 5 tane artı sınıfımız var. 4 tane de eksik sınıfımız var.
+
+440
+01:16:04,583 --> 01:16:18,324
+5 tane de eksik sınıfımız var. Bunu ayıracağız. Tamam mı? Klasifi ayırlarla.
+
+441
+01:16:19,730 --> 01:16:25,730
+Bu ne yapıyor biliyor musunuz? İlk klasifier'ım, şu hipotezi yani H1 ile göstersin, şu olsun.
+
+442
+01:16:26,011 --> 01:16:33,351
+Diyor ki bunun çizginin solundakiler artıdır, bunlar eksidir diyor. Tamam mı?
+
+443
+01:16:34,230 --> 01:16:46,550
+Burada ne yaptı ama bazılarını yanlış buldu. Hangilerini yanlış buldu? Şu üç tane artı yanlış buldu. Bunları da doğru buldu.
+
+444
+01:16:47,316 --> 01:17:09,155
+Bir sonraki iterasyonda kullanmak üzere dataset'i değiştiriyor. Nasıl değiştiriyor? Aslında dataset'i değiştirmiyor ama kendi hesaplayacağı yöntemde doğru bulunanların ağırlıklarını azaltıyor. Bakın daha küçük artılar ve daha küçük eksiler çıkmış burada. Yanlış bulduklarınkini de arttırıyor. Neden?
+
+445
+01:17:09,664 --> 01:17:35,623
+Çünkü bir der bir seferde doğruluk, bir sonraki iterasyonda da klasifier bulunurken doğruluk bulunacak ya, doğruluk bulunurken şu benim yanlış hesapladıklarım daha çok doğruluk hesaplamasında daha çok etkisi olsun ve bunları bir önceki iterasyonlarda yanlış ayrıştırılanlar, yanlış sınıflandırılanlar daha doğru sınıflandırılsın diye.
+
+446
+01:17:37,171 --> 01:17:45,412
+Metotla göstereceğim. Şimdi bakın, doğru bulunanlarınkini azaltırken, şu yanlış bulunan 3 taneyin ne yaptığı ağırlığını arttırdı.
+
+447
+01:17:47,211 --> 01:18:01,432
+Ve bir sonraki klasifier'ım geldi, şuradan, H2 dedi. Bir sonraki klasifier'da ne yaptı? Bunu buldu. H2'yi buldu. Tamam mı?
+
+448
+01:18:01,844 --> 01:18:21,844
+Peki, P2'nin yanlış buldukları ne? Şu üç kırmızı değil mi? Çünkü bunun işte soluna artı sağına eksil edici. Şu üç taneyi yanlış bulduk. Bu sefer ne yapıyoruz? Bu üç tanenin ağırlığını arttırıyoruz, diğerlerininkini azaltıyoruz. Tamam mı?
+
+449
+01:18:26,099 --> 01:18:35,639
+Ne yapıyorum? Ayırırken, yine yanlış bulunacaklar var ama bunların hata şey, yani ağırlığı daha az, şunların daha çok.
+
+450
+01:18:35,779 --> 01:18:42,418
+Dolayısıyla bu H3 klasifi ayırımı hesaplanırken ağırlığı yüksek olanlardan daha çok etkilenecek.
+
+451
+01:18:43,179 --> 01:18:50,078
+Dolayısıyla onları ayırmaya çalışacak. Yani şu eksilerin, artılarını, yani daha küçük olanların da hatada payı var.
+
+452
+01:18:50,878 --> 01:18:52,099
+Değil mi? Ama daha az.
+
+453
+01:18:52,399 --> 01:19:08,800
+Üçüncü olarak da bunu buldu. Sonra üçünü birleştirdiğimiz zaman H1 birleştirirken de klasifierleri yine bulduğu bu hata oranlarına göre 0, 42, 0, 65 ağırlıkları var ya, bulduğu H1 klasifieri buydu.
+
+454
+01:19:09,399 --> 01:19:15,399
+H2 buydu, H3 de buydu. Bunları böyle birleştirirseniz H1 ne dedi? Bunun işte...
+
+455
+01:19:15,407 --> 01:19:29,947
+Soluna artı sağına hep eksi dedi. Bu işte üstüne artı buraya eksi dedi. Böyle böyle yaparsanız bunları bir araya yani bunları şu üç klasifier'ın şu bizim trend atamızı daha iyi bir şekilde ayırdığını ne yapacağız? Göreceğiz.
+
+456
+01:19:36,179 --> 01:19:43,679
+Şurada bir şey bulduk, hata aranları bulduk, 0.42 gibi, şurada alfabil gibi. Şimdi algoritmanın içinde göstereceğim onları.
+
+457
+01:19:44,220 --> 01:19:46,119
+Tamam mı? Yani bir ağırlık hesaplıyoruz.
+
+458
+01:19:47,940 --> 01:19:50,039
+Ağırlıkmayı şuradan mı anlatayım?
+
+459
+01:19:52,498 --> 01:19:54,019
+Tamam, şuradan anlatalım.
+
+460
+01:19:54,880 --> 01:19:59,619
+Şimdi boosting'in bakarsanız çok farklı şeyleri var, tipleri var, tamam mı?
+
+461
+01:20:00,019 --> 01:20:13,619
+AdaBoost var, ondan sonra M-Boost gibi farklı farklı yöntemleri var. Farklı farklı implementasyonları var. Yani alt dalı çok fazla. En çok kullanılan AdaBoost, bu da AdaBoost algoritması.
+
+462
+01:20:20,787 --> 01:20:32,528
+instanslara, yani bütün satırdaki her bir örneğime, başta, diyelim ki n tane örneğimiz varsa her birine bir bölü n olacak şekilde eşit ağırlık atalım.
+
+463
+01:20:32,528 --> 01:20:45,208
+Tamam mı? Bütün örneklerin, yani o artı ve eksi gibi düşünebilirsiniz ya da datasetteki bütün satırların ağırlığı ne? İlk başta bir bölü n. Tamam mı? Birinci iterasyonda.
+
+464
+01:20:45,555 --> 01:21:00,574
+Şimdi bakın burada ne yapacağız? İterasyon-iterasyon gideceğiz. A'da diyor ki, bu weightlere göre diyor, bir, classifier öğren diyor. İster decision tree'i kullanın, isterseniz naive Bayes'i kullanın, ne kullanırsanız kullanın. Size kalmış.
+
+465
+01:21:03,890 --> 01:21:24,551
+Şimdi klasifier'ı bulduk ya, bu klasifier ne kadar iyi çalışıyor? Bir hata oranı hesaplayacağız. Waited error hata oranı hesaplıyorsam, hata oranını hesaplarken, bakın ne yapıyoruz? Error M dediği şey, hatalı hesaplananların toplamını tüm ağırlık toplamına bölüyorum.
+
+466
+01:21:29,074 --> 01:21:49,694
+Ne yapmaya çalışıyorum aslında? Hepsini çok iyi, doğru bir şekilde sınıflandırdıysanız sorun yok. Error nasıl bir şey çıkacak? Çok küçük bir şey çıkacak. Tamam mı? Ama eğer ki siz ne yaptık aslında yani yüzde kaçını, ne kadarını yanlış hesapladık ona bakıyoruz.
+
+467
+01:21:50,548 --> 01:21:55,587
+Ondan sonra da bu klasifier için, yani C klasifier için bir weight hesaplıyoruz.
+
+468
+01:21:55,827 --> 01:22:02,287
+Hani şu en sonunda klasifierleri birleştirirken bir kat sayılarla çarpmıştık ya, işte onlar da bunlar.
+
+469
+01:22:02,847 --> 01:22:12,708
+Tamam mı? Alfalar. Bu da ne? Hata oranından bir bölü iki elen, bir eksi hata, böyle hatayı normaliz ettik, böyle hata dedik.
+
+470
+01:22:12,708 --> 01:22:13,708
+Tamam mı?
+
+471
+01:22:14,068 --> 01:22:27,766
+Yani ne kadar iyi çalışıyorsa, algoritmanızın hatası ne kadar iyi çoksa, hatası ne kadar azsa, sizin klasifierlerinizin ağırlığı alfa o kadar yüksek olmuş olacak.
+
+472
+01:22:27,766 --> 01:22:40,608
+Ve sonra bakın, weightleri güncelliyorum. Weightleri nasıl güncelliyorum? Şurada. Her bir örneğimin weightini, eğer ki doğru,
+
+473
+01:22:41,072 --> 01:23:02,371
+O klasifier doğru bir şekilde sınıflandırdıysa ne yapıyorum? V-i çarpı e üzeri alfa m ile çarpıyorum. Yani alfa dediğim şu klasifier'ın veytiyle. Dolayısıyla ne oluyor? Doğru bulunanların veyti azalırken yanlış bulunanların veyti de şuradaki üzeri artı alfa olduğu için ne oluyor?
+
+474
+01:23:03,346 --> 01:23:14,108
+Daha fazla artmış oluyor. Sonra da bütün weightlerin toplayıp bile normalize ediyorum. Tamam mı? Tamamen şeyi bu. Mantığı bu.
+
+475
+01:23:16,907 --> 01:23:19,506
+Ama ne yaptık ne kadar sürecek bu?
+
+476
+01:23:24,498 --> 01:23:48,319
+Evet, dataya göre çok sürüyor. Bir de burada algoritmada yok. Gerçek algoritmada şöyle bir adım var. Eğer klasifayınız 0-5'den küçük çalışıyorsa, onu hiç kullanma gibi adımları falan filan da var. Her bulduğu klasifayada ne yapmıyor? Kullanmıyor. Mantığı ama çok güzel bir mantık. Çoğu zaman da Ada Bursa algoritması çok çok güzel, verimli çalışan bir yöntem.
+
+477
+01:23:56,691 --> 01:24:12,470
+Şimdi o şey, yani şu, değil mi? Toy example'ımız. Şimdi ilk şu klasifi ayrı buldu ya, bu sadece göstermek amaçlı. Bunların bir sonraki, D2 dediği bir sonraki iterasyona, yeniden V3'leri güncelliyor ya.
+
+478
+01:24:13,108 --> 01:24:33,487
+yanlış bulunanlarınkini arttırırken bunları azalttı. Ama ne yapıyor burada kendisi yani aslında bunlar böyle artı, eksi falan filan değil değil mi? İşte öğrenci mesela bir önceki slide'larda bilgisayar alır mı almaz mı? Bu vardı. Değil mi? Dolayısıyla her bir istansa yeni bir tane sanki değer atıyor gibi düşünün.
+
+479
+01:24:42,483 --> 01:25:05,283
+H1 dediği işte şu ama, yani ilk başta hepsine eşit ağırlık verdiği, A learn a classifier dediği şu, A'da o çizgiyi çekti, classifier'im o çizgi. Diyor ki işte şundan büyükse artıdır, bundan küçükse eksidir, basitlikle classifier düşünüyorum.
+
+480
+01:25:11,412 --> 01:25:29,032
+Bütün hepsi eşit başta ağırlıklar. 1 bölü N, hepsinin ağırlığı 1 bölü 10. Diyor ki, atıyorum şurası 0,2 olsun, 0,2'den küçükse x, şurası y, iki boyutlu olduğu için x, 0,2'den küçükse artıdır, 0,2'den büyükse eksilir de.
+
+481
+01:25:29,032 --> 01:25:34,351
+Klasifier'ın bu olsun diyorsun. Tamam mı? Sonra bakacağız.
+
+482
+01:25:35,028 --> 01:25:42,967
+Classifier'ı ne yaptık? Error hesaplıyorum. Kaç tanesini yanlış hesapladı? Üç tanesini yanlış hesapladı.
+
+483
+01:25:42,967 --> 01:25:50,688
+Değil mi? Üç bölü N, ondan sonra diğer hepsinin toplamı vardı. Buna göre ne yaptık? Böylelikle bir error hesapladı.
+
+484
+01:25:51,507 --> 01:25:57,427
+Sonra da weightleri, Classifier weightini bulduktan sonra alfayı, weightleri ne yaptık? Hepsini güncelledik.
+
+485
+01:25:58,128 --> 01:26:00,327
+Sonra yeniden ikinci bir Classifier bulacağız.
+
+486
+01:26:01,012 --> 01:26:13,730
+Ya bu M tane iterasyon gitsin dersiniz ya da şunda artık daha iyi bir klasifier bulamıyorsanız, 0.5'den daha iyi çalışan bir klasifier bulamıyorsanız dursun diye algoritma çalışıyor.
+
+487
+01:26:20,340 --> 01:26:41,699
+Şimdi, şurada şeylere bir daha bakalım. Bakın alfa dediğimiz şey ne? Şurada bir hata oranımız var. 0.30 değil mi? Nasıl yapılıyorduk? Yanlış bulunanlar bölü tüm weightlerin toplamı. Burada hepsi bir bölü endi, bir bölü endi. Yanlış bulunan üç tane olduğu için 0.30 çıktı.
+
+488
+01:26:42,036 --> 01:27:08,416
+Alfayı nasıl hesapladı? Elenli bir formülümüz vardı hatırlarsanız. Buradan da alfa biri 0, 42 gibi bir şey çıktı. İkincisine bakarsak, bunun alfası 0, 21 çıkarken, alfa diyorum, hata oranı 0, 21 çıkmış. Aslında bakın bu da 3 taneyi yanlış buldu ama hata oranı daha düşük. Niye? Bir önceki de 3 taneyi de almış ama bunların ağırlıkları az olduğu için. Daha düşük bir şey hesaplıyor.
+
+489
+01:27:09,300 --> 01:27:18,819
+Evet, sanki o ağırlığı fazla olan bulunamıyor ve orada siz daha çok şeyi yanlış bulmuşsunuz gibi.
+
+490
+01:27:18,819 --> 01:27:34,440
+Ya da bir sonra ağırlığını arttırmak ne demek? Bir sonraki iterasyonda error hesaplarken eğer bunu daha iyi bulan bir classifier'ın varsa, yani classifier şu datada hepsinin eşit olduğu datada çok kötü çalışıyor gibi gözükebilir.
+
+491
+01:27:35,920 --> 01:27:36,440
+Tamam mı?
+
+492
+01:27:37,042 --> 01:27:48,563
+Ama şöyle büyüklü bir dataya koyduğunuz zaman, yani büyüklü küçük bir, weightlerin farklı olduğu dataya koyduğunuz zaman, weightler de errori etkilediği için ne oluyor?
+
+493
+01:27:48,722 --> 01:27:58,483
+Aslında şurada anlantısız olan bir klasifier, burada bulunamayanları, normal klasifier ile bulunamayanları bulabildiği için daha önemli hale gelmiş oluyor aslında.
+
+494
+01:27:59,063 --> 01:28:03,042
+Hatalı bulunanları, zor bulunanları bulmaya, buldurmaya klasifieri zorluyoruz.
+
+495
+01:28:04,851 --> 01:28:26,851
+Bakın, çapraz çizgi işte şey, yani normalde klasifierler hep linear klasifier. Yani gördüğümüz şeyler, mesela decision tree, linear gidiyor değil mi? Büyüktür, küçüktür diye gidiyor. Yani şey yok. Bunun şöyle şöyle, yani bu klasifier şöyle şöyle gidemez mi?
+
+496
+01:28:29,715 --> 01:28:54,715
+Bu niye böyle gitmiyor ki yani? Bu bir ikinci, üçüncü bilmem kaçıncı dereceden fonksiyon olsa böyle gidemez mi klasifier? Elbette ki gider. Tamam mı? Ama şimdiye kadar gördüğümüz klasifierler hep böyle gittiği için. SVM görüldüğü, liner var. Non-liner hale getirmek için işte onun içine filtre vesaire konuluyor gibi şeyler var ama uzay çok büyük. Yani burada sadece X'ye var ama sizin datanızda...
+
+497
+01:28:55,059 --> 01:29:05,739
+Çok fazla sütun var. Dolayısıyla zaten data büyükken bir de oraya çok üstü bir, çok dereceli bir polinomu bulmak, kat sayılarını bulmak algoritmaları daha şey hale getiriyor.
+
+498
+01:29:05,739 --> 01:29:07,519
+Ve algoritmalar bakın hep şey.
+
+499
+01:29:08,307 --> 01:29:18,307
+Nasıl çalışıyor? Optimizasyon yapmaya çalışıyor. Yani algoritmalarda hadi bunu buldum dene. Mesela veri madenciliğinde hiç şöyle kesin bir şey yok.
+
+500
+01:29:18,628 --> 01:29:26,148
+Bir terministik bir algoritmam var, şunu yaptım, böyle böyle yap, çalışacak. Algoritmalarda hep deniyor deniyor, bundan küçükse bulmaya devam et gibi geliyor.
+
+501
+01:29:26,148 --> 01:29:32,188
+Şimdi yani aslında yapay zeka, yapay zeka diyoruz ama aslında algoritmalarımız çok şey.
+
+502
+01:29:33,203 --> 01:29:37,764
+Gördüğünüz gibi karar ağacı, optimal karar ağacını buluyor mu? Bulmuyor.
+
+503
+01:29:38,283 --> 01:29:42,283
+naive Bayes tamamen sizin datanıza çok bağımlı bir şey.
+
+504
+01:29:42,523 --> 01:29:47,083
+Yani datanız birazcık değişse tamamen sonuçlarınız değişiyor.
+
+505
+01:29:48,324 --> 01:29:53,724
+SVM göreceğiz. SVM'de yine aynı bir şekilde diner nasıl ayırırsınız? Mantığı o şekilde gidiyor.
+
+506
+01:29:53,724 --> 01:29:58,724
+Yapay sinir ağları katman arttırdıkça...
+
+507
+01:29:59,476 --> 01:30:24,194
+Aslında bir derece eklemiş oluyorsunuz, denkleme. Göreceğiz onu da, tamam mı? Birazcık avantajı oradan gelmiş oluyor ama yapay zekada kullanılan metotlar da genellikle bunlar. Dolayısıyla şey yok, mesela atıyorum, işte Dyson'ın algoritması vardır değil mi? Size işte optimal sonucu verir, dinamik programlama yaparsınız falan filan. Bunlarda hiç öyle bir şey yok, bilmez olup farkındayım.
+
+508
+01:30:25,139 --> 01:30:36,979
+Tamam, şimdi bir ara vereceğiz, mecburi ara. 15 dakika okey mi? Tamam, o zaman 25 geçe görüşelim. Onlinelar şimdi kapatıyorum. 25 geçe görüşürüz.
+
+509
+01:30:39,378 --> 01:30:44,099
+Bilgisayar kapanacak onlinelar ya, kapatayım tekrar bağlanın 15 dakika sonra tamam. Bay bay.

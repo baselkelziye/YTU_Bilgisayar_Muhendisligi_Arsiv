@@ -1,0 +1,2367 @@
+1
+00:00:08,468 --> 00:00:18,027
+Günaydın. Bilgisayarın sesi açık mı? Hemen bir bakayım. Tamam. Sesim geliyor mu? Hem geliyordur. Muhtemelen.
+
+2
+00:00:24,210 --> 00:00:24,710
+Evet.
+
+3
+00:00:30,452 --> 00:00:40,692
+Sınıftayım, kusura bakmayın. Biraz böyle barik gibiyim, ne olur ne olmaz diye online derse katılmasının daha iyi olacağını düşündüm. O yüzden bugün dersimizi online yapacağız.
+
+4
+00:00:42,972 --> 00:00:46,371
+Slidelerimi açayım, sizinle paylaşayım ve başlayalım.
+
+5
+00:00:51,764 --> 00:00:53,764
+Canap ve derseniz slide'ları...
+
+6
+00:00:53,764 --> 00:00:58,764
+Haydi, anlasla geldim.
+
+7
+00:01:32,852 --> 00:01:33,932
+Sesim geliyor değil mi?
+
+8
+00:01:40,468 --> 00:01:52,867
+Şimdi bugün ne yapıyoruz? Bugün yeni bir konuya başlıyoruz. Aslında bu konu daha öncelerdi ama diğer konular gibi çok çok kullanılan, yani günümüzde çok kullanılan bir konu değil.
+
+9
+00:01:59,379 --> 00:02:07,519
+Şimdi veri madenciliği ilk çıktığı zaman aslında mesela baktığımız zaman şimdi elimizde işte sosyal medya datası var, daha çok text datası var mesela.
+
+10
+00:02:07,698 --> 00:02:12,519
+Kocaman metinleri işleyebiliyorsunuz. Ondan sonra farklı farklı şeyler var.
+
+11
+00:02:13,739 --> 00:02:21,378
+Ama ilk çıktığı zaman veri madenciliğin ilk uygulamalarından bir tanesi aslında Association of Minds.
+
+12
+00:02:21,455 --> 00:02:29,096
+Onlar da şu şekilde şeyler var. İlişki, bunlar birliktelik kuralları diye geçiyor Türkçe'de.
+
+13
+00:02:30,096 --> 00:02:42,754
+En temeli de market basket analizi dediği, alışveriş yapılan, sizin alışveriş sepetinde birlikte alınan şeylerle aslında onları bulmakla alakalı.
+
+14
+00:02:53,139 --> 00:03:10,519
+Ne yapacağız? Birliktelik kurallarında, Association Rule'larda nasıl oluştururuz, nasıl buluruz onlara bakacağız. Support ve de confidence dediğimiz, diyeceğimiz iki tane temel tanım var. Bunların temelini oluşturuyor onlara bakacağız.
+
+15
+00:03:11,218 --> 00:03:30,038
+Sonra en temel algoritmaların Apriori algoritması var. Eski bir algoritma hala güncelliğini koruyor yani eski ama önceden bulunmuş. Ama hala sık kullanılan algoritmalardan bir tanesi. Sonra kısaca FP Growth algoritmasına da bakıp bugün bu konuyu ne yapacağız? Bitirmiş olacağız. Şimdi gelelim.
+
+16
+00:03:30,931 --> 00:03:42,830
+Fripping Paten dediğimiz şey ne? Yani sık aslında rastlanan örüntü diyebiliriz. Bu ne demek? Bir data seti içinde bir örüntümüz olacak, bir patenimiz olacak.
+
+17
+00:03:43,610 --> 00:03:48,931
+Ve bakın parantez içinde yazmış ki bu aslında aytınlar kümesi yani sizin işte kü...
+
+18
+00:03:49,651 --> 00:04:04,491
+Datasetimizin içindeki şeyler nelerse, birimler nelerse bunların kümesi olabilir. Ya da işte bunlar tarafından oluşturulmuş bir yapı da olabilir. Tamam mı? Mesela, şimdi Frequent Item Set'ine ilk 10'una başlayalım.
+
+19
+00:04:10,996 --> 00:04:26,875
+En azından neresi olduğunu görüyorsunuz. Şimdi diyelim ki bu market basket analizi yapıyoruz. İşte data setimizin içinde neler var? Aslında herkesin neler aldığı var. Her bir müşterinin neler aldığı var şeklinde ne yapabilirsiniz, düşünebilirsiniz.
+
+20
+00:04:28,435 --> 00:04:36,134
+Frequent item set dediğim, beraber alınan ve sıklıkla bakın, beraber alınan şeyler.
+
+21
+00:04:36,456 --> 00:04:41,456
+Mesela süt ve ekmek, yani süt ve ekmek beraber alındıysa, tamam mı?
+
+22
+00:04:41,855 --> 00:04:51,295
+Yani bu ne demek? İşleri incelediğiniz zaman, alışveriş işlerini incelediğiniz zaman, süt ve ekmek beraber varsa bunlar diyoruz ki Frequent item set dediğimiz.
+
+23
+00:04:55,732 --> 00:05:18,672
+Bu tanımımızda da, bunun hani bir alt öngörü olarak düşünebilirsiniz. Frequent sequential pattern var. Bunda ne var? Diyelim ki birisi önce bir bilgisayar alıyor. Bunları bu sırayla alıyorsa bu sefer bunlara da Frequent sequential pattern diyoruz. Tamam mı?
+
+24
+00:05:19,636 --> 00:05:34,355
+Ve bunlar çeşitli formlarda da olabilir. Mesela işte bir subgraph ya da subtree, yani bir alt ağaç ya da altgraph şeklinde gibi şeyler ya da işte grid şeklinde başka başka ilişkiler de olabilir.
+
+25
+00:05:34,555 --> 00:05:42,975
+İşte bunu yaptıysa bunu yapmıştır, bunu yapanların şunu şu yapmıştır gibi şeyler de var. Dolayısıyla buna da structured.
+
+26
+00:05:43,826 --> 00:06:00,086
+Patent diyebiliyoruz tamam mı? Yani üç tane şey görmüş olduk. Bir tane frequent item set. Bakın bunlarda da yine frequent bunlar, patenler. Bunun tanımında da zaten neydi frequent item set? Sıklıkla beraber bulunan itemlar demiştim.
+
+27
+00:06:00,884 --> 00:06:06,244
+Frequent sequential'da [öğrenci]'da yani bir şey aldı, sonra bir şey aldı, sonra bir şey aldı şeklinde olanlar.
+
+28
+00:06:06,723 --> 00:06:11,004
+Stratçıklarda da yani bir alt ağaç olabilir. Yani şöyle bir şey olabilir.
+
+29
+00:06:11,004 --> 00:06:21,923
+Benimki, birisi geldi şöyle bir şey aldı. Ondan sonra graf şeklinde bunu alanların bir kısmı bunu alıp bir kısmı bunu aldı.
+
+30
+00:06:22,004 --> 00:06:24,004
+Bu şekilde yapıyı bu şekilde tutarsanız.
+
+31
+00:06:24,608 --> 00:06:34,767
+Bu da Frequent Structured Pattern olarak geçiyor. Tamam mı? Ağaç yapısı. Yani bunu alanların, diyelim ki %70'i başka bir şey aldı.
+
+32
+00:11:23,923 --> 00:11:29,043
+Frequent Patendi. Sesim şimdi geliyor mu?
+
+33
+00:11:35,220 --> 00:11:36,019
+Teşekkür ederim.
+
+34
+00:11:38,519 --> 00:11:41,019
+Şimdi free-find pattern ne dedik?
+
+35
+00:11:41,318 --> 00:11:46,759
+Genellikle data-setting içindeki sıklıkla beraber bulunan itemlara söküyoruz.
+
+36
+00:11:46,840 --> 00:11:48,440
+Bunları da frequent item set diyoruz.
+
+37
+00:11:48,440 --> 00:11:53,419
+Bu da en çok market basket analizde kullanıyor dedik.
+
+38
+00:11:54,798 --> 00:11:56,440
+Şimdi...
+
+39
+00:11:57,076 --> 00:12:16,296
+Market basket analizinde de ne dedik? Alışveriş tepetinde insanların sıklıkla aldığı şeyler. İnsanlar bunu niye analiz etmek ister? Genellikle niye? Çünkü ona göre pazarlama için, bu çok gerekli olduğu için, reklam kampanyaları böyle olur, rafların dizilim buna göre olur vs.
+
+40
+00:12:23,058 --> 00:12:28,798
+Alışveriş sipletlerinde insanların beraber aldıkları şeyleri bulmaya çalışıyor.
+
+41
+00:12:28,798 --> 00:12:29,960
+Tamam mı?
+
+42
+00:12:32,960 --> 00:12:34,099
+Amacımız ne?
+
+43
+00:12:35,240 --> 00:12:37,899
+Sıkılıkla alınan şeyleri nasıl buluruz?
+
+44
+00:12:38,058 --> 00:12:39,839
+Bunlar da data seti.
+
+45
+00:12:40,000 --> 00:12:41,418
+Şimdi şöyle bir yazayım.
+
+46
+00:12:57,043 --> 00:12:58,783
+İlk tekrardan da bana aprişeceğim.
+
+47
+00:13:07,283 --> 00:13:31,563
+Şimdi bak, nasıl zaman? Bunlar nasıl tutuluyor? Bunları yani diyelim ki ilk müşteri geldi, diyelim ki ABC ürünü aldı, ikinci müşteri geldi, D, işte HV, Y ürününden aldı vesaire. Bunları nasıl tutabilirsiniz? Nasıl bir veri yapısında tutabilirsiniz? Bunlar liste olarak tutulabilir.
+
+48
+00:13:31,988 --> 00:13:37,067
+Ama liste olarak tuttuğunuz zaman hatırlarsanız listede her şeyi böyle aramanız lazım.
+
+49
+00:13:37,268 --> 00:13:43,628
+Yani eğer ki listeniz çok büyük olduğu zaman listede search yapması tek tek çok zaman alıyor.
+
+50
+00:13:43,768 --> 00:13:47,748
+Dolayısıyla bu tip, bu tip datalar da şu şekilde tutuluyor.
+
+51
+00:13:47,888 --> 00:13:51,847
+İşte kolonlarda ürünler olsun, ABCD ürünleri.
+
+52
+00:13:51,947 --> 00:13:54,567
+Satırda da her bir müşterinin yaptığı alışveriş.
+
+53
+00:13:54,567 --> 00:13:59,927
+Ve eğer müşterinin almadığı ürünler sıfır.
+
+54
+00:13:59,988 --> 00:14:27,388
+aldığı ürünler 1 olarak gösteriliyor. Tamam mı? Bakın bu bir matriz olarak tutuluyor. Her bir transaction dediğimiz şey bir alışveriş. Her bir alışveriş bir satırda tutulurken alınan ürünler 1 matriz de 1 olarak gösteriliyor. Alınmayan ürünler de matriz de 0 olarak gösteriliyor. Tamam mı? Dolayısıyla listede tutuluyor.
+
+55
+00:14:28,403 --> 00:14:38,504
+ve aslında Boolean vektörleri diyor ya, ne yapıyoruz? Bunları beraber alınan şeyleri nereden bulacağız? Bu Boolean vektörlerden bulacağız.
+
+56
+00:14:38,504 --> 00:14:51,323
+Ve bulduğumuz örüntülere, bulduğumuz petinlere de Association Rule'lar, Türkçesi birliktelik kuralları diyeceğiz. Yani diyeceğiz ki bunlar, bunlar beraber alınmıştır diyeceğiz.
+
+57
+00:14:52,323 --> 00:14:53,864
+Yapacağımız şey o.
+
+58
+00:14:59,508 --> 00:15:16,607
+Şimdi, bakın şunların her bir tanesi bir transaction, her bir satır. Ne olmuş? Yani işte transaction, on numara transaction'da şu üç ürün beraber alınmış, tamam mı? İşte burada transaction ID. Ondan sonra işte böyle böyle gidiyor.
+
+59
+00:15:16,607 --> 00:15:26,927
+Şimdi diyelim ki, şurası bir alanlar, burası da bebek bezi alanlar, kesişimdene ikisini birden alanlar.
+
+60
+00:15:27,058 --> 00:15:46,740
+Şimdi buradan amacımız ne aslında? Hangi ürünler beraber satılmış? Ama burada sadece iki ürün değil. Yani baktığınız zaman, kümelere baktığınız zaman ne var? Burada kaç farklı ürün varsa? Dolayısıyla burada o kadar küme var. Dolayısıyla birlikte alınanları bulmak bu kadar kolay olmuyor.
+
+61
+00:15:53,620 --> 00:16:10,500
+Yani işte şu mesela, şu üç tanesi bir item settir, şu üç tanesi bir item settir. Tamam. Bunların her birisi işte Nants, Eggs, Mix bunların her biri bir item oluyor. Bunların her bir transaction'daki de bunların kümesi oluyor. Item set olarak geçiyor. Tamam.
+
+62
+00:16:11,220 --> 00:16:17,639
+Şimdi şurada bir tanım var. Bu önemli. Absolute support of x. Ne demek?
+
+63
+00:16:18,388 --> 00:16:24,648
+Itemset x'inin, yani mesela işte buradaki sıklığı, frekansı.
+
+64
+00:16:27,408 --> 00:16:34,548
+Mesela b'ere baktığımız zaman, itemset de bakın ne olduğu için üstü parantez içine yazdı sadece.
+
+65
+00:16:35,187 --> 00:16:39,467
+İçinde b'er var, baktığımız zaman kaç tanesinde var? Bakın 1'de var, 2'de var.
+
+66
+00:16:39,840 --> 00:16:51,340
+3'te var, 4'te yok, 5'te yok. Dolayısıyla bunun absolute support'u 3. Ama bu küme olduğu için şurada birden fazla ürün de olabilir. O zaman ikisinin beraber olduğunu sayacağız.
+
+67
+00:16:52,460 --> 00:17:02,419
+Şimdi gelelim relative support'a. Bu da bunun aslında absolute support'unun tüm transaction'lara bölümü.
+
+68
+00:17:04,276 --> 00:17:09,016
+Diyelim ki burada toplam kaç tane transaction var? 5 satır var, 5 transaction var.
+
+69
+00:17:09,536 --> 00:17:16,875
+Bayara baktığımız zaman kaç tane? 3 tane. O zaman bunun yöretir support 3 bölü 5 olarak geçiyor.
+
+70
+00:17:18,096 --> 00:17:26,455
+Ve de diyoruz ki şimdi biz sıklarayın. Dolayısıyla buradaki aslında her bir milkt mesela milke bakarsanız burada geçiyor, burada geçiyor. 2 support.
+
+71
+00:17:27,058 --> 00:17:37,419
+Peki, Ex-Vemilk'e baksanız, bir şurada var, 40 no transaction'da, bir de 50 no transaction'da Ex-Vemilk. Dolayısıyla ne kadar? İki kere geçiyor.
+
+72
+00:17:37,810 --> 00:18:03,830
+Şimdi, burada da diyor ki, item set, biz neyi bulmaya çalışıyoruz? Frequent olanları, yani sık olanları bulmaya çalışıyoruz. Peki, bir şeyin sık olup olmadığına nasıl karar veririrsiniz? Dolayısıyla bir threshold belirliyoruz. Tamam mı? Yani algoritma kendisi otomatik threshold belirlemiyor. İnsanoğlunun eliyle manuel belirlenen threshold'lara göre çalışıyor. Siz diyorsunuz ki mesela threshold'um 3 olsun.
+
+73
+00:18:05,810 --> 00:18:33,230
+Min support, yani min sap diye göstermiş. Min support, minimum support. Diyor ki, siz üç belirlerseniz, işte supportu bu minimum support'tan daha büyük olanlar diyor. Frequent'dır diyor, yani daha sıklı diyor. Ama sıklık dediğim gibi tamamen sizin belirlemiş olduğunuz bir parametre, threshold'a göre belirlenmiş olunuz. Tamam. Şimdi ne öğrendik burada? Item setin ne olduğunu öğrendik.
+
+74
+00:18:33,471 --> 00:18:46,510
+Yani şuradaki itemlardan istediğiniz kadar alıp, birleştirip, N tane itemimiz varsa, işte birlik kümeler, ikilik kümeler, üçlü kümeler, N'e kadar farklı farklı kümeler oluşturabilirsiniz.
+
+75
+00:18:46,652 --> 00:18:49,010
+Itemlardan oluşan bunları item set diyoruz. Tamam.
+
+76
+00:18:49,932 --> 00:18:55,152
+Absolute support dediğimiz şey de bir item setin tüm kaç kere geçtiği.
+
+77
+00:18:57,298 --> 00:19:21,638
+Aslında absolute support bölü tüm transaction'lar. Yani neye tekabül ediyor baktığımız zaman? Bu da var olan item set bölü tüm satırlar. Yani neye göre? Görebilir ki ya sizin data setinizin aslında büyüklüğüne göre. Peki biz burada neyi bulmaya çalışıyoruz?
+
+78
+00:19:22,112 --> 00:19:34,352
+Frequent olanları, sık olanları bulmaya çalışıyoruz. Sık olması için de, yani neler nelerin sık olarak tanımlanacağı da bizim min support diye belirlediğimiz bir parametreye bağlı.
+
+79
+00:19:35,476 --> 00:19:45,796
+Şimdi yeni bir tanım daha, association rule. Bunlar aslında karar ağaçlarından birazcık tanımlık gelecek ama direkt burada neler var?
+
+80
+00:19:46,296 --> 00:19:51,556
+İşte bir şey ise bir şey, implication olarak göstereceğiz. Ama burada X ve Y item set.
+
+81
+00:19:51,556 --> 00:20:00,000
+Yani atıyorum A ve B ürününden aldı ise C'yi de almıştır şeklinde ya da işte A, B, C ürünlerinden aldı.
+
+82
+00:20:00,000 --> 00:20:11,240
+Ne olduysa, işte D ve H'ı da almıştır gibi. Bunlara ne diyoruz? Association rule diyoruz. Zaten buradaki amacımız ne? Association rule'ları bulmak.
+
+83
+00:20:12,159 --> 00:20:24,799
+Yani Association rule malin dediğimiz şeyde verilen bir item, bir transaction veri seti üzerinde Association rule'ları bulmak. Hangi item setler beraber alınmıştır?
+
+84
+00:20:28,914 --> 00:20:54,076
+Şimdi, minimum support, demin gördük ne? Minimum support dediğimiz şey bir threshold. Kim kurup kurup koyuyor bunu? Ben koyuyorum. Ve minimum support da amacım ne? Var olan item setin, yani sık, aslında bu ne? Sıklığın limiti ne? Hangi threshold'dan üstüne ben sık diyeceğim.
+
+85
+00:20:54,400 --> 00:20:59,940
+Bir de minimum confidence diye bir şey var ama önce ne yapmamız lazım? Confidence'ın ne olduğunu tanımlamamız lazım.
+
+86
+00:21:00,680 --> 00:21:17,598
+Şimdi, önce support'u tanımlayalım. Support ne? X ve Y ürünleri. Diyelim ki sizin işte items etiniz içinde X ve Y varsa, yani şuradaki X klası da Y ya, bunların beraber olduğu transakşonların sayısı aslında support.
+
+87
+00:21:17,598 --> 00:21:21,380
+Tamam mı? Confidence'a baktığımız zaman da,
+
+88
+00:21:21,556 --> 00:21:38,615
+Bakın, beraber olanlar bölü, x'i aldıysa y'yi de almıştır ya, x'in tüm support sayısı. Bu en fazla ne olabilir? Bir olabilir. Yani aslında confidence neyi ölçüyor?
+
+89
+00:21:39,154 --> 00:21:51,154
+Y alanları, şöyle X ise, Y ise şu, tamam mı şuradaki gibi. Aslında X alanların ne kadarı Y'yi de aldı, bunu veriyor. Tamam mı?
+
+90
+00:21:52,355 --> 00:22:01,974
+X yani confidence dediğimiz şey, X ürünü alan transactionlardan kaç tanesinin içinde, Y ürünü de mevcut, onu bulmaya çalışıyor.
+
+91
+00:22:06,324 --> 00:22:10,683
+Kaç kere gördük? Ona bakıyoruz aslında. Tamam mı?
+
+92
+00:22:12,723 --> 00:22:16,324
+Bundan sonra hep bu support ve confidence'dan bahsedeceğiz.
+
+93
+00:22:17,324 --> 00:22:29,884
+Support, x ve y'nin beraber kaç kere oldu? Confidence dediğimiz şeyde, x ise y'de, x alındıysa y'nin de ya bununla beraber kaç kere gözüktüğü şeklinde ne yapabiliriz?
+
+94
+00:22:30,723 --> 00:22:33,163
+Özetleyebiliriz. Tamam mı?
+
+95
+00:22:42,900 --> 00:22:49,400
+Şimdi minimum support %50, minimum confidence %50 olarak baştan belirlenmiş. Tamam bunlar trash-off.
+
+96
+00:22:49,400 --> 00:22:51,940
+Şimdi bakalım.
+
+97
+00:22:53,714 --> 00:23:04,174
+Mesela Bayer'e baktığımız zaman kaç kere var? 3 kere. Dolayısıyla bunun support'u ne? 3. Nuts'a bakalım. Nuts kaç kere var? 1 kere var, 2 kere var, 3 kere var. Nuts'ın da 3.
+
+98
+00:23:04,654 --> 00:23:16,714
+Diaper'e baktığımız zaman 1, 2, 3, 4 kere var. Diaper'ınki 4. Böyle böyle yazmış. Bir de bakın ne yapmış? Burada Philippine Paten'in içinde illa...
+
+99
+00:23:17,748 --> 00:23:28,446
+Bir ürün alacak diye bir şey yok. Mesela Bayer ve Diaper'ın beraber supportuna bakıyor. Bayer, Diaper'ın 10'da var, 20'de var, başka da yok.
+
+100
+00:23:28,906 --> 00:23:38,606
+Tamam mı? Niye 3 demiş? Yani şurada da varmış, pardon 30'da da varmış, 3 kere. Şimdi bunlar ne? Bizim konfiden, bizim aslında konfidencılarımız.
+
+101
+00:23:38,832 --> 00:23:52,612
+Şimdi Association Rule'da ne diyor? Eğer bir aldıysa diyor, diaper dalmıştır diyor. Bir aldıysa diaper dalmıştır diyor. Şimdi bunun ne yapmış? Confidence'ını hesaplamış. Nasıl hesaplamış bakalım.
+
+102
+00:23:53,298 --> 00:24:18,640
+Şimdi, ne? X ise Y. Şimdi, Bayer alanlar kaç taneydi? Bakalım, sayalım. 1, 2, 3. Nereden biliyorum? Zaten şurada var. 3. Peki, bunlardan kaç tanesi? Bayer almış. Yanında diaper dalmış. Bakıyorum. 1, 2. Bakın, Bayer almış. Yanında diaper almış. 3. Dolayısıyla, baktığım zaman neyi buldum? İkisinin beraber olması %100.
+
+103
+00:24:20,884 --> 00:24:22,384
+Bu şekilde ne yapmış oldum?
+
+104
+00:24:24,003 --> 00:24:24,903
+Görmüş oldum.
+
+105
+00:24:29,076 --> 00:24:47,556
+Bir de şu taraftan bakalım, tersten bakalım. Diaper aldıysam bir almak ihtimali. Şimdi bakıyoruz. Kaç tane var? Bear Diaper, Bear Diaper geliyor. Üç tane var. Bakın burada diaper var ama yanında Barry. Değil mi?
+
+106
+00:24:48,211 --> 00:25:04,471
+Dolayısıyla bunun confidence'ını hesaplarken ne yapıyoruz? 3 bölü 4 olarak hesaplıyoruz. Dolayısıyla ne bulmuş? %75 olarak bulmuş confidence'leri. Nereden buldun? Bakın, 3 bölü 4'ü nasıl hesapladın?
+
+107
+00:25:11,826 --> 00:25:18,968
+Şimdi 3 bölü 4 ne? 3 bölü 4'e bakarsanız, şimdi şuna B diyelim, şuna da B diyelim, tamam mı?
+
+108
+00:25:20,567 --> 00:25:28,508
+3'ün içinde, şu dataset'in içinde D ve B beraber olanlar. D, ent, B olsun. Tamam mı?
+
+109
+00:25:29,428 --> 00:25:34,634
+Peki, 4 tane de ne var? Sadece D'nin...
+
+110
+00:25:35,124 --> 00:25:44,584
+Olduğunu sayıyorum. Hiç B'ye bakmadan. Dolayısıyla 3 bölü 4'ten ne yaptık? Usta 75 oldu. Tamam mı? Bunlar neleri? Bunlar confidence'ları.
+
+111
+00:25:46,044 --> 00:25:57,044
+Support'lara bakarsak. Şimdi support'ları nasıl yapıyorduk? İkisinin beraber geçtiği bölü hepsi. İkisinin beraber olduğu kaç tane? 3 tane değil mi? Şu 3 tane. Peki.
+
+112
+00:25:57,632 --> 00:26:06,092
+Toplam kaç tane transakşin var? 5 tane. Dolayısıyla 3 bölü 5 tane de support'u ne buldu? 60 olarak hesaplamış oldu.
+
+113
+00:26:10,836 --> 00:26:25,855
+Support, yani X ve Y'nin beraber olduğu bölü tüm transactionlar, confidence'lar beraber olduklarının sayısı bölü, sadece, şurada X ise Y diyoruz ya, sadece X'in oldukları, yani 3 bölü 4.
+
+114
+00:26:25,855 --> 00:26:30,996
+Bunu da confidence diyoruz. Anlaşıldı mı bu confidence ve support'un ne olduğu?
+
+115
+00:26:33,276 --> 00:26:34,556
+Birazdan.
+
+116
+00:26:35,284 --> 00:26:39,442
+Formülde kullanırken tekrar nasıl yapıldığımızı göstereyim.
+
+117
+00:26:43,124 --> 00:27:02,703
+Şimdi bunları niye kullanıyoruz? Şöyle bir şey olabilir. Kaç tane yani bu şekilde aslında support ve fontevi kullanmasanız bu ürün beraber almıştır, bu ürün beraber alınmıştır diyeceğiniz çok fazla ne var?
+
+118
+00:27:11,666 --> 00:27:15,047
+oluşturduğumuz zaman mesela şöyle bir şey olabilir.
+
+119
+00:27:15,442 --> 00:27:27,564
+Support'u çok düşük olabilir. O zaman bunun bir anlamı yok. Yani nadir alınan, birlikte nadir alınan ürünlerin genellikle çok anlamı olmaz.
+
+120
+00:27:27,564 --> 00:27:42,584
+Ne olması lazım? Ben support'un ve confidence'ın daha yüksek olduğu ürünler beni ilgilendiririm. Niye? Çünkü genel alım eğilimi o yöndedir. Pazarlama ile ilgili işlemler de çoğunluğa göre yapılır.
+
+121
+00:27:43,442 --> 00:28:03,942
+Peki, confidence ne önemli? Aslında konfidansı ise y ediyor. Tamam mı? Dolayısıyla, confidence ne kadar yüksekse, x alındığında y'nin de alınma ihtimali, yani x ve y'nin beraber olma ihtimali o kadar yüksek.
+
+122
+00:28:03,942 --> 00:28:10,743
+Ama burada bir sıkıntı ne? Tabii ki de şey. Aslında bunu bir threshold'a göre yapıyoruz.
+
+123
+00:28:10,942 --> 00:28:24,564
+Dolayısıyla da, trash olduğunu iyi belirlenmesi lazım. Ve de ne var? Bu çıkan şeylerin, aslında confidentlerin ya da en son çıkan kuralların iyi bir şekilde incelenmesi lazım.
+
+124
+00:28:24,564 --> 00:28:34,344
+Bir şekilde incelenmesi lazım. Yani bu tesadüfen mi almış, yoksa gerçekten bunu alman da bunu alınmış gibi almışım diye bakılması gerekiyor.
+
+125
+00:28:39,220 --> 00:28:50,058
+Şimdi, Association doları bulurken ne yapacağız? Elimde T tane transaction var ve amacımız ne? İki tane threshold belirledim. Bir tanesi minimum support, öbürü de minimum confidence.
+
+126
+00:28:50,598 --> 00:29:05,740
+Supportu minimum support'tan büyük olan şeyleri bulacağım ve de confidence'ı minimum confidence parametresinden daha yüksek olursa kuralları ne yapmam lazım, bulmam lazım. Nasıl bulabilirim? Brute force bulmaya çalışsam.
+
+127
+00:29:06,030 --> 00:29:23,030
+Diyelim ki N tane elimde ürün var, N tane de transaction var. Tamam mı? Bakmaya çalışsam ne olur? Bakın N tane varsa N'in birisi artı N'in ikilisi, N'in üçlüsü, N'in dörtlüsü. Ne oluyor? Baktığımız zaman...
+
+128
+00:29:24,276 --> 00:29:47,576
+computational'ı bir not-feeze bulunuyor. Yani siz ülkemizde gerçek markette çok fazla ürün olduğunu düşünürseniz brute force olarak ne yapamıyorsunuz? Tüm ihtimallere bakayım, en yükseğini alayım gibi bir şey de diyerek bir algoritma tasarlasanız ne olur? İnternakt da bu. Yani ne olmaz bilgisayarınızda binlerce, hayallerce çalışır, cevap bulamaz mı?
+
+129
+00:29:49,022 --> 00:29:56,482
+Dolayısıyla ne yapmamız lazım? Birazcık daha akıllı algoritmalar tasarlamamız lazım. Peki nasıl yapacağız? Bakalım.
+
+130
+00:29:57,323 --> 00:30:04,403
+Şimdi, slide ikucu veriyor. Yani algoritma tasarlılaştık. Sizin kafanıza bir şey geldi mi? Ben olsam şöyle yaparım.
+
+131
+00:30:04,482 --> 00:30:07,982
+Blueforce'dan daha iyi çalışır dediğiniz bir şey var mı şu aşamada?
+
+132
+00:30:12,442 --> 00:30:14,042
+Ben olsam şöyle yaparım.
+
+133
+00:30:16,211 --> 00:30:19,951
+BruteForce'dan da daha iyi çalışır dediğimiz bir şey.
+
+134
+00:30:23,826 --> 00:30:25,926
+Herhalde yok şu anda. Aklınıza gelen bir şey.
+
+135
+00:30:27,926 --> 00:30:32,288
+Şimdi burada size aslında ipucu veriyor. Al bakma tasarlarken neye bakarsınız?
+
+136
+00:30:32,768 --> 00:30:38,468
+Şimdi bakın beş tanecik transaction'ım var. Elimde de toplam beş tane ürün var.
+
+137
+00:30:38,788 --> 00:30:41,606
+Tamam mı? Altı tanem ne ürün var? Beş değil, altı ürün var.
+
+138
+00:30:41,875 --> 00:30:54,576
+Şimdi ne yapmış burada? Bazı rule'ları çıkarmış. Mesela diyor ki, milk ve diaper aldıysa diyor, bir alma durumunun support'u 0.4, confidence'ı 0.67'ymiş.
+
+139
+00:30:55,316 --> 00:31:01,496
+Ya da milk ve yer aldıysa diaper almasının support'u 0.4, confidence'ı 1'miş. Böyle böyle yazmış.
+
+140
+00:31:07,476 --> 00:31:13,355
+Toplam bütün kurallarda 3 tane ürün var. Ama hep 3 ürün üzerinden yazmış bunlar.
+
+141
+00:31:16,435 --> 00:31:33,695
+Ve de bunların hepsinin supportları ne? Aynı. Dolayısıyla aynı item sette oluştuk oluşan supportlar ne? Supportların hepsi bakın 0,4,7. Çünkü 3'ünün beraber olduğunu sayıyorum. Kaç tane var?
+
+142
+00:31:34,163 --> 00:31:42,844
+Üçünün beraber olduğu, baktığımız zaman iki tane var. Toplamda beş tane transaction'ın olduğuna göre iki bölü beşten sıfır nokta duraklanmış.
+
+143
+00:31:44,644 --> 00:31:56,076
+Dolayısıyla ne diyor burada? Şimdi observation olarak bu sebeple diyor, biz support ve confidence, küpürlerinin, reformatlarında, ihtiyaçlarında bir şeyler yaparak daha...
+
+144
+00:31:56,884 --> 00:32:03,104
+BruteForce'dan daha verimli bir algoritma ne yapabiliriz? Tasarlayabiliriz. Tamam mı?
+
+145
+00:32:05,364 --> 00:32:17,324
+Dolayısıyla bakın, Association Rulları bulmak aslında ne oldu? Şu an Frequent Item Setleri bulmaya çalışacağım. Bulurken de ne yapacağım? İlk olarak
+
+146
+00:32:17,324 --> 00:32:24,763
+Item Setler, diyorum ki MinSupport'tan
+
+147
+00:32:24,948 --> 00:32:36,768
+Daha support'u, minimum support'tan daha büyük olanları bir kere bul, birinci adımda. Ondan sonra bu bulduklarını birleştirerek bunlardan association rule'ları bulmaya çalıştıracağım.
+
+148
+00:32:37,548 --> 00:32:48,948
+Tamam mı? Ama böyle yapsam bile diyor, hala expensive mesela. Bakalım transaction'lar şunlar, işte birinci ABD'yi almış, ikinci ABCD'yi almış, böyle böyle gidiyor.
+
+149
+00:32:49,460 --> 00:32:54,880
+Tamam. Minimum support olarak 0.5 seçmiş, minimum confidence olarak da 0.7 seçmiş.
+
+150
+00:32:55,160 --> 00:33:00,759
+Önce tekli tekli bakalım. Yani A kaç kere var? Bakalım. Toplam burada 6 transaction var.
+
+151
+00:33:01,400 --> 00:33:03,980
+A'nın supportu ne de tek başına? 4 bölü 6.
+
+152
+00:33:06,619 --> 00:33:12,740
+B'nin supportu tek başına ne? B'ye baktığımız zaman 1, 2, 3, 4, 5 tane de var. 5 bölü 6.
+
+153
+00:33:15,508 --> 00:33:27,228
+C'ninki 3 bölü 6. Şimdi D'yi buraya yazmamış, niye yazmamış? Şimdi amacımız şu. D'ye bakarsanız D'nin support'u ne? 2 bölü 6. Değil mi D'nin?
+
+154
+00:33:27,228 --> 00:33:39,307
+D'nin support'u ne? Baktığımız zaman 2 bölü 6. Şimdi benim minimum olan şeyim ne? Minimum support 0,5.
+
+155
+00:33:39,680 --> 00:33:44,079
+Dolayısıyla bu 0,5'ten büyük olmadığı için D'yi buraya yazmadık.
+
+156
+00:33:45,599 --> 00:33:51,279
+Dolayısıyla bakın ne yaptı? Artık supportu threshold'dan büyüklerle devam edecek.
+
+157
+00:33:52,140 --> 00:34:02,200
+Çünkü D'nin supportu threshold'dan büyük olmadığı için içinde D olan herhangi bir şeyde item sette.
+
+158
+00:34:03,988 --> 00:34:10,827
+0,5'ten büyük olamaz. Çünkü D tek başına zaten büyük değil. Şimdi bakın bunları birleştirerek gidiyor.
+
+159
+00:34:11,007 --> 00:34:18,608
+A, B'ye bakmış. Tamam, 3 bölü 6 beraber olan. Limiti geçiyor. B, C yine limiti geçiyor. Baktığımız zaman ama A, C yok.
+
+160
+00:34:18,608 --> 00:34:25,706
+Çünkü A, C burada yok. Bir burada var, bir burada var. A, C'yine 2 bölü 6 support. Dolayısıyla ne yapmadı? A, C'yi de sildi.
+
+161
+00:34:26,666 --> 00:34:29,827
+Şimdi bulduğu ikili item setlerdeki şeyler.
+
+162
+00:34:30,356 --> 00:34:35,795
+Bir de aslında şuraya da bakması lazım. A, B, C, 3'ü beraber varmış şeklindeki de lazım.
+
+163
+00:34:37,295 --> 00:34:43,396
+Şimdi baktığımız zaman A ise B'ye bakıyor. Confidence 3 bölü 4 bulduğu limitin üstünde.
+
+164
+00:34:43,976 --> 00:34:48,755
+C ise B'de, C6 ise B'ye de almıştır. 3 bölü 3 bu şekilde bulabilir.
+
+165
+00:34:48,755 --> 00:34:52,655
+Burada bizim dikkat ettiğimiz şey ne? Yani burada ne yapıyor aslında?
+
+166
+00:34:53,168 --> 00:35:10,922
+Arama uzayını küçültüyor çünkü aslında nasıl gidiyor? Aşağıdan yukarı tek tek ürünleri, itemleri aldım sonra birleştirerek gidiyor ve bir item, bir alt seviyede eğer ki minimumluk şeyleri sağlamıyorsa ona hiç bakmadan...
+
+167
+00:35:11,092 --> 00:35:24,992
+Devam ediyor. Böylelikle ne yaptı? Biraz daha bütün, şuradaki bütün ihtimallere bakmaktansa, bütün item sektörü yazıp toplamaktansa, birazcık daha iteratif bir metotla ne yapıyor? Devam ediyor.
+
+168
+00:35:26,211 --> 00:35:27,152
+Gördüğümüz şekilde.
+
+169
+00:35:50,483 --> 00:36:00,603
+Şuraya hiç tepki gelmiyor ya, anlıyor musunuz? Şuraya kadar anladınız mı? Aklınıza yatmayan bir taraf var mı? Çete bir yazın bakayım, anladık anlamadık, bekliyoruz.
+
+170
+00:36:16,436 --> 00:36:26,675
+Bir kişi yazmış. Bu kolay, bu konu aslında kolay, anladık diyor. Birisi de diyor ki kayıtlanmışmıştınız, evet şarj bitti, hop beni attı.
+
+171
+00:36:36,018 --> 00:36:37,320
+Bir git, sen de bir git.
+
+172
+00:36:37,840 --> 00:36:38,699
+Ben görevle baktım.
+
+173
+00:36:39,199 --> 00:36:41,018
+Okey, buraya kadar olanı ne yaptık anladık.
+
+174
+00:36:42,099 --> 00:36:43,880
+Aslında, bakın şimdi bakalım buraya.
+
+175
+00:36:44,139 --> 00:36:45,539
+Bir de item set generation'da.
+
+176
+00:36:46,139 --> 00:36:48,320
+Ne yapmış? En başta boş item küme ya bu.
+
+177
+00:36:48,400 --> 00:36:49,300
+Boş kümeyle başladık.
+
+178
+00:36:49,460 --> 00:36:54,260
+Bir elemanlılar, iki elemanlı alt kümeler, üç elemanlı alt kümeler.
+
+179
+00:36:54,518 --> 00:36:55,460
+Böyle böyle gidiyor.
+
+180
+00:36:55,840 --> 00:36:56,079
+Değil mi?
+
+181
+00:36:56,719 --> 00:36:59,360
+Dört elemanlılar ve beş elemanlı alt kümeler.
+
+182
+00:36:59,764 --> 00:37:04,764
+Şimdi size soru, en elemanlı bir kümenin kaç tane alt kümesi vardı?
+
+183
+00:37:12,402 --> 00:37:20,123
+Matematik sorusu, eminim hepiniz biliyorsunuz. En elemanlı bir kümenin, iki üzeri en alt kümesi vardır değil mi?
+
+184
+00:37:20,702 --> 00:37:26,523
+Yani burada beş tane itemimiz varsa bizim, beş item'da iki üzeri beşten otuz iki tane ne vardır?
+
+185
+00:37:27,411 --> 00:37:40,331
+Alt küme vardır. Şimdi bakın bu ne yapıyor? Baktığınız zaman aslında brute force'da ne yaparsınız? Brute force şeyde, metotta bu 32 alt kümeyi oluşturursunuz.
+
+186
+00:37:40,670 --> 00:37:50,751
+Hepsinin support ve confidence'ını hesaplarsınız. Buna göre dersiniz ki bu olur, bu olmaz, bu olur, bu olmaz diye devam edersiniz. Değil mi? Baktığınızda.
+
+187
+00:37:51,668 --> 00:38:00,228
+Ama ve lakin bu ne? Olabilecek bir durum mu? Hayır değil. Bakalım brute force'da çalışma zamanı ne olacak?
+
+188
+00:38:00,228 --> 00:38:06,108
+Şimdi, şöyle olsun diyor ki,
+
+189
+00:38:06,260 --> 00:38:17,320
+Brutforce'da diyor, each item set, baktığımız zaman şurada aslında bir tane aday bir frequent item seti aday. Dolayısıyla adaylar oluşturuyor şu şekilde M tane.
+
+190
+00:38:18,079 --> 00:38:26,420
+Ve de baktığımız zaman M aday kaç tane? 2 üzeri D tane değil mi? Ya da 2 üzeri küçük M tane.
+
+191
+00:38:26,784 --> 00:38:34,583
+Bir de burada ama transactionlar var. Persephone'in de bu transactionlara da bakması lazım. Çünkü bakacak bu bunun içinde var mı, bunun içinde var mı diye sayacak.
+
+192
+00:38:35,583 --> 00:38:42,784
+Tamam, o yüzden bir de çarpı N geldi. Bir de W dediğimiz bit var, genişlik var. Yani bakarken bunun...
+
+193
+00:38:43,456 --> 00:38:49,356
+Viti de önemli çünkü tek tek tek tek bakmanız lazım bunun içinde var mı diye bakmak için.
+
+194
+00:38:49,815 --> 00:38:59,295
+Oysa çalışma zamanımız, kompleksitesi ne oluyor bakın, N çarpı yani transaction çarpı her bir item set için sayacağız çünkü hepsini tek tek.
+
+195
+00:38:59,295 --> 00:39:05,315
+Bu item yani şuradaki aday kaç tane de var her seferine bakıp hepsine bakacağız.
+
+196
+00:39:05,876 --> 00:39:10,416
+Dolayısıyla ne oluyor bakın, N çarpı, transaction çarpı, transaction'ın.
+
+197
+00:39:10,931 --> 00:39:23,530
+Genişliği çarpı M adaylar, M'de ne? Baktığımız zaman alt küme sayısı kadar. Yani N tane item'imiz varsa, D tane ya da item'imiz varsa, D üzeri D.
+
+198
+00:39:23,530 --> 00:39:37,630
+Dolayısıyla bu ne diyeyim? D'ye göre eksponansiyel artan bir algoritma. Dolayısıyla bunu çözmemiz ne? Mümkün değil brute force olarak.
+
+199
+00:39:38,228 --> 00:39:52,347
+Burada da kontekstisinin nasıl gittiğini, yani rule sayısının ve arttıkça, yani D dediğimiz şey sizin item sayınız, toplam item sayınız arttıkça nasıl arttığını göstermiş.
+
+200
+00:39:52,547 --> 00:39:59,987
+200'leri bir şeyle algoritma zaten böyle artar. Yani sadece 6 tane ürün için bile 602 tane rule bulmamız.
+
+201
+00:40:00,000 --> 00:40:27,179
+Tamam mı? Şimdi strateji oluşturacağız. Yani tamam bunu brute force yapamıyoruz ama şimdi aslında Apriori algoritmasına geçiş yapıyoruz. Tamam mı? Bunu şurada anlatmayayım da şurada anlatırsam daha iyi anlatırım. Önce sınıflandırı takip edelim. Şimdi diyor ki burada, complete search'de diyor, M dediğimiz yani adayları bulduğumuz şey iki üzeri D'dir diyor. Ama ben püning kullanabilirim. Bu ne demek?
+
+202
+00:40:27,572 --> 00:40:46,391
+Bu şu. Diyelim ki ilk olarak bir elemanlıya baktım. Bir elemanlının supportu limitin threshold'un altında kalıyorsa onun bir sonraki aşamalarına bakmama gerek yok. Neden? Çünkü zaten A ürünü diyelim ki minimumu sağlamadıysa
+
+203
+00:40:46,739 --> 00:41:03,699
+Diğerlerine işte A ile B, A ile C, A ile D zaten sağlayamaz. Niye sağlayamaz? Çünkü A zaten az sayıda. A az sayıdayken, trash olduğunu altındayken A ile B, A ile C bunlar zaten ne yapamaz? Sağlayamaz. O yüzden ne yapıyoruz?
+
+204
+00:41:13,108 --> 00:41:15,047
+Hiç bakmama gerek kalmayacak.
+
+205
+00:41:16,427 --> 00:41:17,947
+Bir de başka ne yapabiliriz?
+
+206
+00:41:18,608 --> 00:41:24,827
+Number of comparison'ları, yani karşılaştırıyoruz ya, bunu azaltabiliriz.
+
+207
+00:41:24,907 --> 00:41:25,987
+Bunun için de ne yapabiliriz?
+
+208
+00:41:26,068 --> 00:41:30,088
+Yani kadar kolay karşılaştırma yapabileceğimiz, birazdan göreceğiz.
+
+209
+00:41:30,507 --> 00:41:31,128
+Ne yapabilirsiniz?
+
+210
+00:41:31,268 --> 00:41:32,768
+Heş gibi bir şey kullanabilirsiniz.
+
+211
+00:41:32,768 --> 00:41:33,248
+Tamam.
+
+212
+00:41:36,768 --> 00:41:37,967
+Ne yapabiliriz?
+
+213
+00:41:38,047 --> 00:41:39,907
+Bir de ne dediğim şey neydi?
+
+214
+00:41:40,306 --> 00:41:55,806
+Transaction'ların sayısıydı. Bazı durumlarda ne yapılabilir? Transaction'ların sayısı da azaltılabilir. Yani diyelim işte belirli tarihler arasında Transaction'ları eleyebilirsiniz gibi şeyler düşünebilirsiniz.
+
+215
+00:41:55,806 --> 00:42:06,708
+Şimdi ilk algoritmasına başlıyoruz. Apriori algoritm. Şimdi bu ne yapıyor? En temel algoritma bu yaptığı şey de şu diyor ki bir item set, frekuin set diyor.
+
+216
+00:42:07,155 --> 00:42:11,255
+O zaman diyor bunun tüm alt kümeleri de frequent olmak zorunda.
+
+217
+00:42:12,175 --> 00:42:14,275
+Demin aslında söylediğiniz tersi.
+
+218
+00:42:15,275 --> 00:42:20,056
+Dedim ki A thresholdu sağlamıyorsa içinde A olan başka bir küme de sağlamaz.
+
+219
+00:42:20,536 --> 00:42:29,614
+Bu da diyor ki aslında içinde A, B, C itemları olan bir küme frequent ise hem A hem B hem C de frequent olmak zorundadır diyor.
+
+220
+00:42:29,735 --> 00:42:30,876
+Tam tersinden söylüyor.
+
+221
+00:42:34,483 --> 00:42:36,364
+Şimdi bu çok güzel anlatan bir şekil.
+
+222
+00:42:37,722 --> 00:42:46,523
+Şimdi baktık, A'ya baktık. Tamam mı? Bunların hepsi diyelim ki A, B, C, D, E, ürünler, imti, thresholdu geçiyor.
+
+223
+00:42:47,143 --> 00:42:57,443
+Baktığım zaman A, B eğer thresholdu geçmiyorsa ne yapıyorum? İçinde A, B bulunan tüm ihtimalleri atıyorum.
+
+224
+00:42:57,623 --> 00:43:01,742
+Dolayısıyla içinde A, B bulunan hiçbir şeye ne yapmayacağım? Bakmayacağım. Tamam mı?
+
+225
+00:43:02,195 --> 00:43:26,255
+Bu da ne? Apriori principle dediğimiz şey bu aslında. Niye? Çünkü eğer ki şu AB frequent değilse, içinde AB olan başka hiçbir kümede ne olamaz? Frequent olamaz. Apriori algoritması bunu baz alarak çalışıyor. Fahitli mantıklı bir algoritm.
+
+226
+00:43:28,018 --> 00:43:44,259
+Şuraya bakmayın ve en son bakalım. Item 5 tane gördüğünüz gibi bir transaction'ım var. Önce bir tire item set dediği, içinde bir item olanlara bakacağım. Saydı bread kaç tane, cook kaç tane, milk kaç tane.
+
+227
+00:43:44,628 --> 00:44:06,427
+Şeyim ne peki benim? Thresh oldum. Thresh oldum 3. Dolayısıyla 3'ten küçük olanları ne yapacağım? Eleyeceğim mesela. Kolayı eleyeceğim, yumurtayı eleyeceğim. Tamam mı? İlk aşamada bunu yapıyorum. Hangileri? 2 ile 1. Dolayısıyla 2 ile 1 ne yaptı? Bakın, eledim.
+
+228
+00:44:11,280 --> 00:44:18,559
+Yumurta bir kere geçtiği için artık bundan sonra oluşturacağım ikili, üçlü item setlerde yumurta ve kola olmayacak.
+
+229
+00:44:19,039 --> 00:44:26,440
+Şimdi ne yaptım? Geri kalanlardan bread milk, bir daha priz ya. Bunlardan ikili item setleri oluşturuyorum.
+
+230
+00:44:27,019 --> 00:44:33,579
+Bakın içinde yumurtayla kola yok. Şimdi bread milk kaç transekşinle beraber geçiyor ona bakacağız.
+
+231
+00:44:36,500 --> 00:44:57,119
+Sayıyor. Brett, Mick 3 tane de beraber geçiyormuş. Biren, Mick 2 tane de geçiyormuş. Brett, Dieper 3 tane de geçiyormuş. Böyle böyle saydık. Tamam, supportlar bunlar. Ve de ne yaptım? Thresh olsa 3'ten büyük olanları el ediyordum. Bakın 1 ile Brett 2, 1 Mick 2. Dolayısıyla bunları el edin.
+
+232
+00:44:58,228 --> 00:45:25,108
+Elimde dört tane şey kalacak. Bread, milk, bread, diaper, diaper, milk, bir, diaper. Bir daha bir eleme yapmış oldum. Şurada artık ne yapıyorum? Üçlülere bakıyorum. Üçlüleri nereden oluşturdum? Bread, milk, bread, diaper, milk, diaper, bir, diaper. Şurada görmüş olduğunuz dört taneden bunu bakıyorum. Bakın üçlünün içinde
+
+233
+00:45:26,068 --> 00:45:31,608
+Baktığımız zaman ne yapacağım yine bunların kaç kere geçtiğine bakacağım.
+
+234
+00:45:31,987 --> 00:45:33,387
+Supportunu bulmak için.
+
+235
+00:45:34,708 --> 00:45:35,788
+Tamam, saydık.
+
+236
+00:45:36,307 --> 00:45:37,748
+2, 2, 2, 1.
+
+237
+00:45:39,188 --> 00:45:40,327
+Şimdi ne oldu?
+
+238
+00:45:40,708 --> 00:45:41,807
+Şöyle bir sıkıntımız var.
+
+239
+00:45:41,927 --> 00:45:42,967
+Bizim şeyimiz neydi?
+
+240
+00:45:44,068 --> 00:45:45,867
+Thresh olduğumuz 3'tü.
+
+241
+00:45:47,128 --> 00:45:47,487
+Değil mi?
+
+242
+00:45:48,668 --> 00:45:50,827
+Bunların hepsi 3'ten az.
+
+243
+00:45:50,967 --> 00:45:51,688
+O zaman nedir?
+
+244
+00:45:51,688 --> 00:45:53,547
+Artık algoritmamı durdurabilirim.
+
+245
+00:45:54,387 --> 00:45:54,847
+Tamam.
+
+246
+00:45:59,059 --> 00:46:15,358
+Algo etmemi durdururum. Çünkü bu threshold'dan daha ileriye gitmiyor. Tamam. Bu şekilde de bakın en bulduklarım bunlardır diye devam edebilirim. Hemen algoritmaya bakalım.
+
+247
+00:46:16,244 --> 00:46:41,824
+Daha bakın şey yapmadık. Bu ise buyu oluşturmadık. Farklı mısınız? Yani confidence'ı hiç kullanmadık. Şu an ne yaptık ilk aşamada? Sadece frequent item setleri bulduk. Yani beraber en sık geçen item setleri bulduk. Daha bakın kural çıkartmadık. Şunu aldıysa bunu da almıştığı gibi bir şey söyledik mi? Hayır söylemeliyiz. Şimdi algoritmaya bakalım.
+
+248
+00:46:43,092 --> 00:46:57,632
+Principle'ımız ne? Eğer ki bir item set infrequent ise onun süper seti, yani onun içinde bulunacağı diğer hükümelerde diyorum ki infrequent'tir. Dolayısıyla bunlara bakmama gerek yoktur. Bu mantıkla gidiyor.
+
+249
+00:46:58,291 --> 00:47:08,152
+Şimdi FK dediğimiz şey, free point K elemanlı. K burada işte bir elemanlı, iki elemanlı, üç elemanlı ekliyor. Item setler L de bunların listesi.
+
+250
+00:47:08,692 --> 00:47:21,492
+Şimdi K1 ile başlıyorum. Önce bir elemanlık kümeleri oluşturacağım. Tamam mı? Repeat until FK is empty diyor. Tamam mı? Şu anda birlik oluşturduğumuz zaman empty olmayacak.
+
+251
+00:47:22,152 --> 00:47:36,331
+Sonra Candidate Generation dediğimiz şey, demin aslında görsel olarak gösterdiğimiz adaylara baktık. Sonra Planing dediğimiz şey, Trash oldu, geçmeyenleri eledik. Sonra da ne yaptık?
+
+252
+00:47:37,139 --> 00:47:48,400
+Bunların supportlarına, LK artı bir, yani ikili listedeki supportlara baktık. Sonra da kendi bitleri ne yaptık? Eledik.
+
+253
+00:47:48,400 --> 00:47:56,800
+Yani aslında şu algoritmanın dediği şey ne? Şurada yaptığımız şeyin aynısı. Önce birliği oluştur.
+
+254
+00:48:04,018 --> 00:48:29,840
+Bak şeyine, trash olduğuna. Olmayanları ele. Sonra ikili listeleri oluştur. Yine bunların confidence'larına bak. Ondan sonra yine ele. Bu algoritma ne zamana kadar çalışacak? Hepsi ele ne kadar? Yani FK is empty diyor ya. Bakın en son yaptığımızda da hiçbirinin 3 olmuyordu şuradaki count. Değil mi?
+
+255
+00:48:31,219 --> 00:48:41,380
+Dolayısıyla ne yapıyorum? FK orada hiçbir işe geçmediği için, entde olduğu için ona da algoritmımızı artık durduruyoruz. Gayet mantıklı, güzel çalışan bir algoritm.
+
+256
+00:48:42,380 --> 00:48:52,139
+Peki, kendisi generation metoduna bak. Şimdi, burada bunu saçı olarak gösterdik ama şuraya bakalım.
+
+257
+00:48:52,139 --> 00:48:55,940
+Tamam mı? Benimki ikililer var elimde.
+
+258
+00:48:56,402 --> 00:49:23,483
+Koyu grileri eledim. Adayları nasıl oluşturacağım? Mesela bread, milk, bread, diaper var. Şimdi adayları nasıl oluşturacağım? Bunları birleştireceğim. Çünkü birleştirebilirim. Breadler ortak. Bread, milk, diaper bir tane beraber şey oldu. Ondan sonra bread, diaper, milk, diaper var. Bu da bread, milk, diaper aynı kümeye gitmiş oluyor. Tamam mı? Baktığımız zaman.
+
+259
+00:49:24,947 --> 00:49:37,306
+Birleştirdiğinizin hepsi aslında yani şöyle bir diaper milk aslında. Bir, bread, diaper, böyle böyle ne yapıyoruz? Küme olduğu için bunlar.
+
+260
+00:49:40,306 --> 00:49:43,788
+Şu slide da göstereyim. Sizin gidiyor.
+
+261
+00:49:44,496 --> 00:49:55,835
+Ne yapıyorum? İşte ABC var, ABD var. AB'yi baz alarak birleştirdiğimiz zaman ABC'de oluyor. ABC var, AB'ler orada. ABC'e şeklinde ne yapıyorum?
+
+262
+00:49:56,476 --> 00:50:05,436
+Üçleri birleştirdiğiniz zaman dört elemanlıyı elde ediyorum. Ya da ikilileri birleştirdiğiniz zaman üç elemanlıyı elde ediyorsunuz.
+
+263
+00:50:10,228 --> 00:50:33,288
+Mesela üçlüyü birleştirirken ne yapıyorum? Prefikslerine göre birleştiriyorum ve sadece, yani üçlüleri birleştirirken ilk iki prefiksine bakıyorum. En öndeki iki item'a bakıyorum. Üçlüde yani her k artı bir için k'ya bakıyorum. Dörtlüler için üçe bakıyorum. Bu şekilde ne yapıyorum? Bu şekilde prefikslerine göre birleştiriyoruz.
+
+264
+00:50:37,748 --> 00:51:03,748
+Kendi Pürünün'nde de zaten ne yapıyoruz? Limitli yani threshold salgımanları siliyoruz. Ekstra bir şey. Şimdi birinci aşamamız neydi? Pürünün. Yani Pürünün'le ne yapıyordum? Bir adaylı sistem var ya, onu azaltmış oluyordum. Şimdi ikinci yöntem de ne? Amacın number of comparison'ları azaltmak.
+
+265
+00:51:04,244 --> 00:51:22,443
+Yani ne yapıyorum? Şurada mesela adaylar var ya, aday burada var mı, burada var mı, burada var mı diye her seferinde n tane elemana bakıyorum. Değil mi? Şimdi ben bu n tane elemanı farklı bir veri yapısında tutarsam ne yapabilirim? Daha hızlı bakabilirim.
+
+266
+00:51:32,820 --> 00:51:33,860
+Yolu da ne?
+
+267
+00:51:35,860 --> 00:51:37,360
+Ben de de ceneri işinden.
+
+268
+00:51:38,360 --> 00:51:39,500
+Şurada göstereceğim.
+
+269
+00:51:46,228 --> 00:51:50,228
+Ne yapacağım? Bir hash structure'ında tutacağım.
+
+270
+00:51:51,027 --> 00:52:03,188
+Dolayısıyla da her bir transaction'a, her bir adaya bakmak yerine, bunun yerine hash'lerin içinde tutulan şeylerle karşılaştıracağım.
+
+271
+00:52:03,427 --> 00:52:05,806
+Tamam mı? Hash'te tutulan şeylerle karşılaştırarak gideceğim.
+
+272
+00:52:06,248 --> 00:52:07,827
+Bu da algoritmayı anlatıyor.
+
+273
+00:52:10,867 --> 00:52:22,668
+Dolayısıyla bakın, bir database'im var, dört tane transaction var. Birinci scan var, ondan sonra baktık hangisinin trash oldu daha az, bu da trash oldu diye belirlemiş.
+
+274
+00:52:22,668 --> 00:52:32,547
+Bir, D'ye attım, ondan sonra bakıyorum, ikinci de buna bakıyorum, böyle böyle gidiyorum. Peki hash'imi şöyle basitçe size göstereyim.
+
+275
+00:52:33,248 --> 00:52:37,208
+Bakın hash tree ile tutuyor, bu çok şey değil ama nasıl olduğunu bilin.
+
+276
+00:52:38,068 --> 00:52:56,887
+Leaf'lerde item setler ve de kaç tane olduğu var. İç tarafta, hash table var, subset function'da da aslında bu transaction içinde olan adaylar bulunuyor.
+
+277
+00:52:57,940 --> 00:53:25,099
+Şimdi T Transaction'a baktığımız zaman, 1, 2, 3, 5, 6 var. Şimdi Level 1'de, bakın birleştirerek tutuyor aslında. 2, 3, 5, 6 var. 3, 5, 6 var, 5, 6 var. Yani bunun 2'li, 3'lü ve 4'lü hallerini ne yapabilirsiniz? Görebilirsiniz. Daha sonra, mesela 1, 2'yi aldığı zaman, tamam mı?
+
+278
+00:53:25,396 --> 00:53:31,195
+Burada 1-2-3, 1-2-5, 1-2-6 bunları bu şekilde tutuyor.
+
+279
+00:53:31,195 --> 00:53:44,295
+Yani siz bir şey bu var mı diye aradığınız zaman, diyelim ki 3-5-6 var mı diye aradığınız zaman ne tarafa gideceğinizi biliyorsunuz ağaç da birazcık daha hızlı bir şekilde veri yapısıyla aslında hızlandırmış oluyor.
+
+280
+00:53:44,416 --> 00:53:48,735
+Tamam ama konumuz veri yapıları olmadığı için bu hashtag'i geçebiliriz.
+
+281
+00:53:50,483 --> 00:53:54,083
+[öğrenci]'e nasıl tutulduğunu anlatıyorum onları çok anlatmayacağım şu an.
+
+282
+00:53:57,364 --> 00:54:02,324
+Peki Apriori algoritmasına baktığımız zaman ne yapıyorum?
+
+283
+00:54:03,163 --> 00:54:05,284
+Şimdi bir sıkıntım var. Sıkıntım ne?
+
+284
+00:54:05,864 --> 00:54:06,922
+Tresol seçme.
+
+285
+00:54:07,411 --> 00:54:16,530
+İkincisi de ne? Number of items in the dataset. Yani dataset'e gerçek bir market dataset'ine baktığımız zaman binlerce binlerce ürün var.
+
+286
+00:54:16,530 --> 00:54:31,271
+Bu da sizin binlerce neyiniz var? Ürününüz var. Dolayısıyla bunlar yapılırken yer sorununuz oluyor. Yani hafızayla ilgili, memoriyle ilgili.
+
+287
+00:54:32,563 --> 00:54:57,523
+Sıkıntınız olabiliyor. Bu da başka bir şey. Ondan sonra bir de ne var? Sizin transaction bidiniz var. Yani bir kişi ne kadar çok ürünü beraber aldıysa ne oluyor? Aslında sizin algoritmamızın o kadar çok yavaşlamış oluyor. Çünkü niye? Arama yaparken o genişliğe göre bakmak zorunda olduğumuz için yani her bir transaction'da.
+
+288
+00:54:57,907 --> 00:55:05,047
+kaç tane maksimum, kaç tane ürün olduğu da ne yapıyor? Sizin algoritmasın işlemli çalışma zamanını etkiliyor.
+
+289
+00:55:06,047 --> 00:55:13,527
+Mesela, support'a bakalım. Şimdi, şuraya baktığımız zaman, biraz şöyle büyütmeye çalışacağım.
+
+290
+00:55:17,867 --> 00:55:18,927
+Şuradan bakalım.
+
+291
+00:55:21,396 --> 00:55:33,516
+Şimdi bakın, bu size of item set, yani işte sıfırdan başlıyor ve de support'u bakın, işte 1, 1, 2 olarak değiştirmiş.
+
+292
+00:55:33,516 --> 00:55:47,476
+Şimdi size'ları arttırdıkça, arttırdıkça item set'in size mesela, support çok büyükken, yani çok ne yapıyorsunuz? Bir anda hop hepsini ediyorsunuz.
+
+293
+00:55:48,148 --> 00:55:50,507
+5'e gelmeden sıfırlandı.
+
+294
+00:55:51,887 --> 00:55:56,507
+Support, yani 5 tane item setlik bir ürün bile bulamadınız.
+
+295
+00:55:57,327 --> 00:56:01,128
+Binde 2 gibi bir şey alsanız, geliyor yine azalıyor.
+
+296
+00:56:01,748 --> 00:56:11,052
+Peki, binde 5 gibi bir şey alsanız, özellikle binde 1 gibi bir şey alsanız, ilk başta çok yüksek çıkarken...
+
+297
+00:56:11,155 --> 00:56:24,135
+Bakın sonra azalıp tekrar artıp sonra tekrar yine ne oluyor? Tabii ki de sıfırlanıyor. 20 elemanın bir sürü kişinin aynı anda, 20 tane item'ın bir sürü kişinin aynı anda alması. Çok olası değil baktığımız zaman.
+
+298
+00:56:24,135 --> 00:56:29,655
+Şimdi şu tarafa baktığımız zaman, Number of Frequent Item Setleri.
+
+299
+00:56:30,867 --> 00:56:54,166
+Bu da ne? Yine support ile beraber artıyor ve azalıyor. Dolayısıyla sizin algoritmada neyi bulmanız lazım? Hem support'un limitinin kaç olacağını ve bu support ile beraber sınıflandırma setinizdeki item set, hem kendi sayısının hem de frequent item set'in nasıl değiştiğini bulmanız lazım. Mesela burada şuradaki şey iyi bir parametre.
+
+300
+00:56:54,579 --> 00:57:03,739
+10 tane beraber satılan ürün ya da şuralardaki şeyi seçebilmek için işte bu parametreleri bu şekilde oynayıp oynayıp ne yapmamız lazım?
+
+301
+00:57:04,619 --> 00:57:14,000
+Doğru parametreyi bulmamız lazım. Yani support'u çok küçük. Seçtiğiniz anda ne olacak? Algoritmanız en fazla üçlü şey bulacak.
+
+302
+00:57:14,400 --> 00:57:22,400
+üç elemanlı bir item set bulup bırakmış olacak. Dolayısıyla parametreden bakın ne yapıyor çok fazla etkileniyor gördüğünüz gibi.
+
+303
+00:57:24,400 --> 00:57:32,400
+Buraya baktığımız zaman da transaction bitki dediği birlikte alınan ürün sayısı.
+
+304
+00:57:33,728 --> 00:58:01,728
+Şimdi bu biti arttırdıkça ne oluyor? Bakın yine bir yerden sonra sıfırlanıyor ama çok küçük tutarsanız, yani en fazla 500 ürün varsa zaten sizin item setler oraya gelmeden sıfırlanmış oluyor. Çok mantıklı bir şey çıkmıyor. Ama çok yüksek tutarsanız da bir yerden sonra zaten artıyor. Ve böyle zikzak gibi durumlar da olabiliyor. Dolayısıyla ne yapmanız lazım? Bunları mutlaka çizip bakmanız lazım. Yani şurada bir parametre seçip, benim sonuçum.
+
+305
+00:58:01,728 --> 00:58:06,507
+Bu ruhlarım böyle çıktı demeniz ne olur? Sizi çok yanlış yerlere götürür.
+
+306
+00:58:08,007 --> 00:58:13,487
+Dolayısıyla baktığımız zaman bayağı parametreye bağımlı giden bir şey.
+
+307
+00:58:14,188 --> 00:58:19,427
+Peki, threshold'u nasıl bulacağız parametreye çok bağlıysa? Aklımıza bir şey geliyor mu?
+
+308
+00:58:21,108 --> 00:58:47,788
+Gelebilir mesela minimum supportu çok yüksek tutarsanız ne yaparsınız? Aslında önemli olan şeyleri eleyebilirsiniz. Çok düşük tutarsanız bu sefer ilgili ilgisiz bir sürü item seti ekleyebilirsiniz. Dolayısıyla da şöyle bir şey yapalım denmiş. Biz tek bir support belirlemeyelim. Tamam mı böyle optimizasyon algoritmalarında da olur ya?
+
+309
+00:58:49,235 --> 00:58:54,715
+Tek bir support threshold yerine multiple minimum support kullanalım.
+
+310
+00:58:54,715 --> 00:59:10,476
+Tamam mı? Mesela şurada ilk başta ürünler, küme sayısındaki item set'teki i az iken, mesela bir iken, benim supportum 0.9.
+
+311
+00:59:11,059 --> 00:59:19,898
+0, 1 iken, 0 değil pardon, işte 1000'de 1 iken, artık ikililerde ne olsun? Birazcık daha artsın, 0.5 olsun.
+
+312
+00:59:20,579 --> 00:59:30,739
+Tamam, 1000'de 5 olsun. Ya da işte şu olacağı daha da artsın gibi, i'ye bağlı olarak ne yapabilirsiniz?
+
+313
+00:59:30,739 --> 00:59:37,579
+Support, tanımlayan algoritmalar var. Bu da ne yapıyor aslında? Sizin birazcık daha...
+
+314
+00:59:37,844 --> 00:59:46,583
+Bir şey bulmanı sağlıyor ama bu iki parametre ya da iyiye bağlı bir support parametresi, dinamik bir support parametresi ayarlamak da çok kolay değil.
+
+315
+00:59:46,583 --> 00:59:59,103
+Yine bunlarda ne yapmamız lazım? Deneyerek optimum noktalarını bulmamız lazım. Böyle bir durumumuz var. Burada da bunu gösteriyor. Şöyle yapmış yani burada da diyor ki,
+
+316
+01:00:00,000 --> 01:00:15,000
+Artık güncelleyeceksiniz diyor. D1 dediğim set of frequent items olsun. Sonra F1 dediğim bir elemanlılar, minimum support bir trash olduğundan büyük olanlar. Sonra ikinci aşamadaki minimum support iki trash olduğundan.
+
+317
+01:00:16,039 --> 01:00:22,599
+Sonra üçüncü üç elemanlılar, minimum support üç elemanından büyük olanlar şeklinde gidecek diyor.
+
+318
+01:00:23,775 --> 01:00:28,695
+Yani giderek ne yapacaksınız? Aslında threshold'u düşürerek düşürerek gireceksiniz.
+
+319
+01:00:31,596 --> 01:00:36,456
+Burada da amal bakmayın nasıl şey yapacağınızı gösteriyorum. Mantığını anlayın yeter.
+
+320
+01:00:39,596 --> 01:00:46,675
+Peki rulları nasıl yapacağız? Yaptık tamam. Şeyleri bulduk, hükmeleri bulduk bulduk. Rulları nasıl bulacağız?
+
+321
+01:00:48,275 --> 01:00:49,414
+Ara istiyor musunuz?
+
+322
+01:00:51,731 --> 01:00:54,690
+Saat 10. Arayı istiyor musunuz? İstemiyor musunuz?
+
+323
+01:00:56,351 --> 01:00:57,490
+İkiden ses çıkmıyor.
+
+324
+01:01:02,547 --> 01:01:05,547
+Bir ara verelim çünkü benim sesim baya gitmek üzere.
+
+325
+01:01:07,987 --> 01:01:11,867
+20 geceye ara verelim. 20 geceye kadar sonra 20 gece devam edelim.
+
+326
+01:01:11,867 --> 01:01:14,186
+Bir sıcak bir şey için biraz sesim açılsın.
+
+327
+01:01:17,186 --> 01:01:18,487
+Hiç ses yok.
+
+328
+01:01:19,887 --> 01:01:20,126
+Tamam.
+
+329
+01:01:21,487 --> 01:01:25,766
+20 dakika sonra görüşürüz.
+
+330
+01:16:06,228 --> 01:16:10,247
+Evet arkadaşlar, tutmuşsunuz herhalde bu kızımız. Hadi bakalım.
+
+331
+01:16:11,287 --> 01:16:12,127
+Devam edelim.
+
+332
+01:16:24,148 --> 01:16:40,006
+Şimdi ne yaptık? Apriori algoritması nasıl çalışır? Buna baktık. En son dedik ki supportlarda bir sıkıntı var dedi ama supportları da dedik ki birden fazla support kullanabiliriz.
+
+333
+01:16:40,006 --> 01:16:49,528
+Çünkü iteratif bir algoritma her bir iterasyonda da işte birli, ikili, üçlü, üç elemanlık kümeler oluşuyor dedi. Onlara göre de ne yapabiliriz? Supportları dinamık bir şekilde.
+
+334
+01:16:50,194 --> 01:16:59,475
+Birden fazla support kullanarak çözebiliriz dedik. Şimdi burada kaldık. Apriori algoritminde şunu bulduk. Frequent item setleri nasıl bulacağımızı bulduk.
+
+335
+01:16:59,475 --> 01:17:15,296
+Değil mi? Yani elimde bu algoritma çalıştıktan sonra işte bilmem kaç elemanlı kümeler kalacak. Ama buradan bunu aldıysa bunu da almıştır şeklinde. Kuralı nasıl oluşturacağım ona bakacağız. Tamam mı? Şimdi baktığımız zaman, şimdi kuralda.
+
+336
+01:17:16,114 --> 01:17:25,296
+L dediği şey, free code item seti, yani artık algoritmanın en sonunda bulunan işte A, B, C, D bilmem ne ürünleri beraber alınmıştır.
+
+337
+01:17:27,988 --> 01:17:36,328
+Bunun altında ne yapacağım? Aslında bir rol bulacağım ve rolun altında da ne var? Bunun setleri var.
+
+338
+01:17:36,328 --> 01:17:45,506
+Yani neler olabilir? Mesela şöyle örnekten verin. ABC'de, pre-credit item seti. Buldum bu threshold'dan da büyük. Bunlar beraber alınmış. Peki şuna bakmam lazım.
+
+339
+01:17:45,908 --> 01:18:09,426
+ABC alındıysa DB alınmış, ABD alındıysa C mi alınmış? Bu dörtlüğü yazmanın farklı farklı yolları var. Sonra ikilisi AB alındıysa CD mi alınmış? Dolayısıyla buna da baktığımız zaman, eğer ki şu kümenin içinde K tane eleman varsa, yine 2 üzeri K eksi 2 tane, o da boş kümeden ve kendisinin hepsinde.
+
+340
+01:18:09,908 --> 01:18:13,828
+Kaynakların eksi 2'ye, yani bir tanesi boşluk ve diğeri de tüm elemanları içeren tüm.
+
+341
+01:18:14,346 --> 01:18:16,768
+Ve baktığımız zaman ne oluyor bu durumda?
+
+342
+01:18:17,608 --> 01:18:19,488
+Yine bir sürü şeye bakmam gerekiyor.
+
+343
+01:18:19,688 --> 01:18:21,307
+Şimdi hepsine bakmama gerek var mı?
+
+344
+01:18:21,988 --> 01:18:22,627
+Bunu düşünelim.
+
+345
+01:18:24,528 --> 01:18:29,268
+Aslında daha efektif, daha verimli bir şekilde nasıl yapabilirim?
+
+346
+01:18:30,346 --> 01:18:31,926
+Şöyle bir şey söyleyebilir miyim?
+
+347
+01:18:31,926 --> 01:18:32,328
+Bakalım.
+
+348
+01:18:32,707 --> 01:18:36,667
+ABC ise de şeyden daha mı büyüktür?
+
+349
+01:18:37,055 --> 01:18:49,854
+AB ise D'den, bunun confidence'ı, ABC ise D'nin confidence'ı, AB ise D'nin confidence'ından daha büyük müdür?
+
+350
+01:18:50,192 --> 01:18:58,051
+Hayır değildir. Ama daha küçüktür de diyemeyiz. Dolayısıyla C'yi ne yapmamız lazım? Değerlendirmemiz lazım.
+
+351
+01:18:58,171 --> 01:19:08,832
+Dolayısıyla demin yaptık ya, minimum sayıdaki elemanı arttıra arttıra gittik. Burada da işte A'dan başlayalım, A, B, ondan sonra A, B, C, S, D falan öyle yapalım gibi bir şey.
+
+352
+01:19:08,832 --> 01:19:15,051
+Şu durumda confidence'lara göre bir şey diyemiyoruz. Ama ne yapabiliriz?
+
+353
+01:19:15,538 --> 01:19:18,698
+Şöyle bir şey yapabiliriz. Şunu söyleyebiliriz.
+
+354
+01:19:19,298 --> 01:19:22,378
+A, B, C ise D'yi de almıştır.
+
+355
+01:19:22,479 --> 01:19:26,340
+Confidence'ı A, B ise C, D'yi almıştır.
+
+356
+01:19:26,798 --> 01:19:30,658
+A'ya aldıysa B, C, D'yi almıştırdan daha büyüktür.
+
+357
+01:19:31,639 --> 01:19:32,698
+Neden daha büyüktür?
+
+358
+01:19:33,559 --> 01:19:39,158
+Çünkü A ise B, C, D diye baktığımız zaman ne var?
+
+359
+01:19:39,158 --> 01:19:39,639
+Şimdi bakın.
+
+360
+01:19:39,966 --> 01:19:47,608
+A'yı ve B'yi aldıysa C, D'yi almıştır. Bunların zaten dördünün beraber olduğu aynı sayıda.
+
+361
+01:19:49,127 --> 01:19:54,466
+Niye daha büyüktür? Çünkü bakın A ve B alındıysa C, D alındı.
+
+362
+01:19:55,127 --> 01:20:00,506
+Şimdi burada A'yı bağımsız kılıyorum. Değil mi? Yani B'den bağımsız olarak bakarsanız.
+
+363
+01:20:00,506 --> 01:20:05,667
+Dolayısıyla A alındıysa B, C, D alınmıştır. Baktığımız zaman.
+
+364
+01:20:06,484 --> 01:20:28,663
+Yani şu şekilde söyleyebiliriz. İsteden öncesindeki ürünlerin hepsinin bulunması, ABC istediğinin confidence'ı, AB ise CD'den daha büyüktür ve de bu da neyden daha büyüktür? A ise BCD'den daha büyüktür.
+
+365
+01:20:32,787 --> 01:20:56,948
+Dolayısıyla ne yapacağız? Yine bir pürünik gibi bir şey yapacağız. Neyi biliyorum ben? Şunu biliyorum. Biliyorum ki B, C, D'nin, B, C, D ise A'nın confidence'ı, C, D ise A, B'den. Ondan sonra B, D ise işte ne kaldı? A, C'den. Yani bunları tek tek bu tarafa attığınız halinden, A'nın yanına bir şey gelmiş halinden ne?
+
+366
+01:20:57,587 --> 01:21:20,466
+Daha büyük. Dolayısıyla eğer ki şu, şu işte en isenin solunda en fazla eleman olan şeyi geçmiyorsa, benim confidence, minimum confidence, trash olduğumu geçmiyorsa, diğerlerinde geçme ihtimali yoktur. Dolayısıyla ne yapacağım yine? Püriyeni yapacağım.
+
+367
+01:21:20,768 --> 01:21:36,006
+Dolayısıyla ne yapıyorum? Şöyle bir şeye bakarken tek tek diyelim ki n eleman varsa işte n-1 ise bir eleman, n-1 ise başka bir eleman şeklinde yazıp sonra bunların confidence'larına bakıyorum.
+
+368
+01:21:36,827 --> 01:21:43,827
+Confidence'ları limiti geçmeyenlerin tüm alt çocuklarıyla beraber eriyorum.
+
+369
+01:21:44,783 --> 01:21:52,283
+Bu şekilde ne yapıyorum? Hani yine 2 üzeri k'lık bir şey çıktı ya, değerlendirme. Bunu azaltmış oluyorum. Tamam mı?
+
+370
+01:21:53,783 --> 01:22:10,884
+Şimdi, başka bir konuya geliyorum. Compact Represential.itemset. Beraber alınan itemsetlerin gösterimiyle ilgili. Tamam mı? Yani bu bir algoritma değil. Nasıl gösteririz?
+
+371
+01:22:11,604 --> 01:22:28,604
+Şimdi beraber alınan, bir transaction data'dan beraber alınan, sık alınan item setlerin sayısı çok fazla olabilir ve bunların içinde de tekrarlayan şeyler olabilir. Ama bunlar en çok neyden kaynaklanır? Süper setlerinden kaynaklanır.
+
+372
+01:22:34,770 --> 01:22:58,551
+D ise C'de içinde nedir? Vardır. Değil mi? Çünkü niye bir şeyin süper seti geçtiyse, preşotları, onun sab seti de geçmiştir. Bu nedenle işte böyle bir sürü tekrarlayan tekrarlayan ruhlu, kuralı göstermemek için neye ihtiyacımız var? Daha böyle kompakt, daha sıkılaştırılmış bir gösterime ihtiyacımız var.
+
+373
+01:22:58,836 --> 01:23:06,274
+Bunun için de Maximal Frequent Item Set diye bir şey tanımlayacağım. Bir de Closed Frequent Item Set diye bir şey tanımlayacağım.
+
+374
+01:23:09,136 --> 01:23:19,676
+Maximal Frequent Item Set'e bakalım. Bu ne demek? Bunun süper setlerinin hiçbiri maksimum olmayan demek.
+
+375
+01:23:27,060 --> 01:23:51,260
+Şöyle yazacağım. Tamam mı? Şöyle yazalım. Tamam mı? Diyelim ki A, B, C'de bir item set. E olsun bir de. Tamam mı? Bir de ne var? C'de E'miz var. Şimdi bu bunun süper seti değil mi? Yukarıdakine süper seti. Ve bunların ikisi de şeyi açtı. Limitleri, thresholdları açtı. Maximal frequent item set şu demek.
+
+376
+01:23:51,890 --> 01:23:57,770
+Bunun süper setlerinden, bu da neyli süper seti atıyorum, D, E neyli süper seti olsun.
+
+377
+01:23:59,192 --> 01:24:16,850
+Şimdi bunun süper setlerinden hiçbirinde baktığınız zaman, maksimum frequent item set dediğimiz zaman, bunların süper seti frequent olmayacak.
+
+378
+01:24:17,140 --> 01:24:32,500
+Tamam mı? Yani bu açtı. Bunların hepsi confidence'ı geçti. Bir de bunun bir süper seti daha var. Ap, c, d, e, p. Şöyle bir şey olsun. Tamam mı? Ama bu trash oldu, açmadı. Yani artık elenecek.
+
+379
+01:24:34,359 --> 01:24:40,500
+Dolayısıyla burada baktığımız zaman d, e bir maximum frequent items etmidir. Hayır değil. Çünkü onun süper seti...
+
+380
+01:24:41,395 --> 01:25:08,734
+Ve nedir? Frequent item settir. Peki BCDE baktığımız zaman bir maksimum frequent item set midir? Hayır değil. Çünkü onun bir süper seti olan şu da frequent item set. Bakıyorum bu peki şey midir? Bir maksimum frequent item set midir? Bunun üstüne diyelim ki şu da olsun bir de ABCD.
+
+381
+01:25:09,844 --> 01:25:16,323
+F'de olsun, kafanız karışmasın diye, niye ikili yazdım diye. Diyelim ki bu da threshold aşmadı. Yani geçemedi.
+
+382
+01:25:17,462 --> 01:25:28,764
+Threshold aşmadı. Dolayısıyla bunun süper setine baktığımız zaman, diğer süper setlerine baktığımız zaman hiçbir süper seti limiti aşamıyor. Yani frequent değil.
+
+383
+01:25:29,363 --> 01:25:37,304
+Dolayısıyla şu kümede, yani şuraya yazdığımız şeylerde maksimum frequent item setim hangisi olmuş oluyor?
+
+384
+01:25:37,823 --> 01:25:41,542
+Hepsi döndü rengi. A, B, C, D, E, S, K, S, T olmuş oluyor.
+
+385
+01:25:42,462 --> 01:25:46,342
+Tamam mı? Bunu görmüş olduk.
+
+386
+01:25:46,842 --> 01:25:52,304
+Dolayısıyla ne? Bakın bunun alt kümeleri, yani bir şeyin alt kümeleri de geçecek.
+
+387
+01:25:52,823 --> 01:25:58,162
+Kendisi de threshold geçecek. Ama kendisi en kapsamlı eleman sayısına sahip olmuş olacak.
+
+388
+01:25:58,283 --> 01:26:01,903
+O zaman ona ne diyoruz? Maximal frequent item set diyoruz.
+
+389
+01:26:20,404 --> 01:26:22,003
+Diğer sayfa geçmeye çalışıyorum.
+
+390
+01:26:22,884 --> 01:26:25,243
+Burada zaten güzel bir şekilde anlatmış.
+
+391
+01:26:25,684 --> 01:26:35,163
+Diyor ki, şimdi baktığımız zaman, A, B, C, D, E var. Ondan sonra C, D, E var.
+
+392
+01:26:37,492 --> 01:26:51,310
+içi gri olmayanlar yani null, a, b, c, d, e, ondan sonra ikililer bunların hepsi frequent. Tamam mı? Frequent. Ve baktığım zaman a, d, a'nın süper seti. Değil mi? Daha üstünde duruyor.
+
+393
+01:26:51,796 --> 01:27:07,735
+Şimdi bana diyor ki, eğer bunun süper seti, yani AD'nin süper seti, baktım ABD, ACD, ABE buralara gitmiş. Bunlar, ABE yok yanlış oldu. İçinde AD olanlar işte, üçlü olup içinde AD olanlar.
+
+394
+01:27:07,890 --> 01:27:29,850
+Baktığım zaman bunların hiçbir tanesi threshold'u geçememiş. Dolayısıyla maximal frequency item setim AD. Şurada ACE'ye baktığım zaman bunun süper setlerine ABCE ondan sonra ABCDE şeklinde gidiyor şu ikisi. İçinde ACE olanlar.
+
+395
+01:27:30,511 --> 01:27:35,492
+Baktığım zaman bunlar da threshold'u geçememiş. O zaman maximal frequency item setim nedir?
+
+396
+01:27:35,988 --> 01:27:44,667
+Budur. Şimdi dolayısıyla bu ne yapacak? Şimdi şunları B, C, D, B, C bunların hepsini tek tek göstermek yerine rule'larda ne yapacağım?
+
+397
+01:27:45,247 --> 01:27:51,948
+A, D'yi, A, C, E'yi ve işte en son bir de B, C, D, E var. Bu da yine aynı şekilde maksimum flügü, item set.
+
+398
+01:27:52,768 --> 01:28:00,988
+Bunları göstermem çok da hani mantıklı. Çünkü şurada içindeki, içinde taralı alan olmayan yani...
+
+399
+01:28:01,618 --> 01:28:10,298
+Yücün, ne diyeyim, nodun içi gri olmayan tüm şeylerin hepsi, frequent item setlerin hepsi limiti thresholdu açıyor.
+
+400
+01:28:10,840 --> 01:28:15,698
+Dolayısıyla buradan şu kuralı uydurmak çok mantıklı, yani şu kuralı söylemek çok mantıklı değil.
+
+401
+01:28:16,198 --> 01:28:25,578
+İşte B, E ise işte C, E vardır diyeceksin. Bir yerde diyeceksin ki B, C, E varsa işte yine aynı tarafı vardır.
+
+402
+01:28:25,578 --> 01:28:29,219
+Yani tekrar yazacağım.
+
+403
+01:28:30,452 --> 01:28:49,211
+Şunu söylemek, yani biz bunu niye yapıyoruz onu bir anlatmaya çalışayım. Şimdi alt kümelere baktığımız zaman, diyelim ki, AB ise C var, tamam mı? Siz kural ürettiğiniz zaman. Bir de AB, D ise C var. Hangisi size daha çok şey söyler?
+
+404
+01:28:49,614 --> 01:28:57,654
+Şu daha çok şey söyler. Değil mi? Çünkü biz kuralları ürettiğimiz zaman böyle bir sürü kural olmuş olacak baktığımız zaman.
+
+405
+01:28:58,175 --> 01:29:06,114
+Şimdi şunlara bakmaktansa şu kurallara bakmak daha mantıklı. Daha kapsamlı kurallara. Çünkü bize daha çok şey söyleyeceği için.
+
+406
+01:29:07,114 --> 01:29:12,555
+Tamam mı? Burada da ne yapmaya çalışıyoruz? İşte bize daha çok şey söyleyen...
+
+407
+01:29:12,595 --> 01:29:19,956
+Kuralları bulmaya çalışıyoruz. Bunun için de ilk olarak ne yaptık? Maximal Frequent Item Set diye bir şey tanımladık.
+
+408
+01:29:20,335 --> 01:29:28,895
+Bu da diyoruz ki eğer kendi süper setlerinden hiçbir tanesi threshold'u aşamadıysa bu Maximal Frequent Item Set diyoruz.
+
+409
+01:29:30,274 --> 01:29:32,074
+Burada da benim dediğimi söylüyor.
+
+410
+01:29:32,074 --> 01:29:35,354
+Şimdi, şuna bir şey yapayım.
+
+411
+01:29:38,162 --> 01:29:56,564
+Amacım kompakt reprezentasyon. Yani daha bir sürü bir sürü rule göstermekten sonra daha az rule göstermek. Ama maksimum frücreti item setlerin içinde de ne yok? Kendi alt kümelerinin ne kadar supporta sahip olduğu hakkında bir bilgimiz var mı? Yok.
+
+412
+01:30:00,000 --> 01:30:08,680
+ADV, BCDE'ye baktığım zaman kendi alt kümelerinin support'u ne kadar onunla ilgili bir şey bana vermiyor.
+
+413
+01:30:09,680 --> 01:30:19,380
+Dolayısıyla da bu sefer non-frequent item set olan ama maksimal olmayan, yani non-maksimallarını neyine bulmam lazım?
+
+414
+01:30:20,279 --> 01:30:21,600
+Support'unu bulmam lazım.
+
+415
+01:30:22,068 --> 01:30:35,448
+Dolayısıyla da closed frequent item set diye bir şey tanımlayacağım. Bunda da amacım şu, support informasyonun maksimallarında support'unu korumam lazım.
+
+416
+01:30:35,448 --> 01:30:46,568
+Şimdi şurada gelelim şuraya. Diyor ki, an item set x is closed if none of its immediate superset has except the same support count as x.
+
+417
+01:30:47,091 --> 01:31:05,631
+Yani bu ne demek? Eğer ki bir item setim var, tamam mı? Onun süper setlerinden, yani ondan daha fazla eleman, içerenlerin supportu, ondan daha küçük ya da büyük değilse, zaten daha şey olamaz, küçük olamaz da.
+
+418
+01:31:07,188 --> 01:31:14,947
+Daha büyük olamaz da. Şeyde ise, aynı support'a sahipse buna da closed item set diyor.
+
+419
+01:31:16,006 --> 01:31:20,268
+Şimdi ne demek? Şu demek. Şimdi şuraya geldik, tamam mı?
+
+420
+01:31:20,707 --> 01:31:27,167
+Şimdi demin baktığım zaman benim maksimallarım neydi? Şöyle çizelim bir güzel.
+
+421
+01:31:27,167 --> 01:31:32,768
+Tamam. AC'deydi. Bozmuş onu.
+
+422
+01:31:34,112 --> 01:31:49,451
+Neyse tamam. Şimdi closed item set ne demek? Baştan anlatıyorum. Eğer ki şimdi C'ye baktığın zaman bunun süper setlerine iki elemanla içinde C bulunanlar. Diyelim ki B, C, A, C, C. Tamam mı?
+
+423
+01:32:00,243 --> 01:32:17,462
+Closed Frequent Item Sector diyorum. Ya da işte AC'nin support ile ABC'nin ve ACD'nin supportu aynıymış. Bu ne demek? Bu şu demek. Yani aynı olması C'ye geçen her yerde B'de geçti demek.
+
+424
+01:32:26,770 --> 01:32:51,331
+D'de var demek. Tamam mı? Yani aynı supportu olanları, iki şeyin, bir süpersetle supportun aynı olması ne demek? Yeni eklenen ürün. Çünkü support, yani süpersetle buraya ekstra bir ürün daha eklenmiş oluyor. O eklenen ürün bir önceki halin hepsinde var ki, ne? Bunların supportları eşit olmuş oluyor. Tamam mı? Mantığı bu.
+
+425
+01:32:52,532 --> 01:32:58,192
+Ve de ne yapıyoruz? Aslında bu Closed Frequent Item Setleri bulduktan sonra artık ne yapıyorum?
+
+426
+01:32:58,511 --> 01:33:01,970
+Kural oluştururken bir sürü bir sürü şey göstermeme gerek yok.
+
+427
+01:33:02,612 --> 01:33:06,730
+Ne yaptım? Bakın hem Closed ve hem de Maksimul Frequent Item Setleri buldum.
+
+428
+01:33:07,430 --> 01:33:09,890
+Artık kuralları ne yapacağım? Buradan yazabileceğim.
+
+429
+01:33:09,890 --> 01:33:15,551
+Kırmızı ile çizdikleri hem Closed hem de Maksimul olanlar. Şunlar da Maksimul olanlar.
+
+430
+01:33:15,652 --> 01:33:19,612
+Maksimul olan 4 tane, Closed olan da 9 tane çıkartmış.
+
+431
+01:33:20,000 --> 01:33:26,880
+Ve artık kurallarımı bunları kullanarak yazacağım. Diğerlerine bakmama gerek yok.
+
+432
+01:33:28,399 --> 01:33:29,599
+Yani amacımız ne?
+
+433
+01:33:30,032 --> 01:33:33,270
+Mesela hepsini kullansaydık burada yüzlerce kural çıkıyor.
+
+434
+01:33:33,270 --> 01:33:42,511
+Evet, yüzlerce kural çıkacağına sadece içinde benim Maximum ve Closed Frequent Item Setler olan şeylerden kural çıkarıyorum.
+
+435
+01:33:42,631 --> 01:33:44,412
+Çünkü onlar içinde neyi barındırıyor?
+
+436
+01:33:44,890 --> 01:33:50,831
+Zaten diğer ürünleri de, itemleri de daha küçük rule'ları barındırmış oluyor amacımız bu.
+
+437
+01:33:52,751 --> 01:33:55,051
+Soru var mı buraya kadar? Hiçbir şey soruyorsunuz.
+
+438
+01:33:55,051 --> 01:33:55,591
+Muhtemelen.
+
+439
+01:33:56,095 --> 01:34:09,854
+Kimse de dinlemiyor. Ama neyse sonra videoyu izler. Şimdi gelelim. Hiç soru yok. Hiç yolunda yok. Hiçbir şey yok. İnşallah sesinmesin geliyordu.
+
+440
+01:34:09,854 --> 01:34:23,336
+Şimdi, Apriori algoritmasını gördük. Gayet oldukça basit bir şey. Ne yapıyorum? Threshold belirliyorum. Sürekli supportuna bakarak iteratif bir şekilde belirtilen supportu
+
+441
+01:34:24,274 --> 01:34:26,975
+Geçenleri ne yapıyorum?
+
+442
+01:34:27,475 --> 01:34:35,395
+Tamam tamam diyerek, ekleyerek, ekleyerek, ekleyerek, ekleyerek ürünleri, ondan sonra hiçbir şey eklemeyene kadar algoritmamı çalıştırmaya devam ediyorum.
+
+443
+01:34:36,114 --> 01:34:38,814
+Sonra da bunlardan confidence hesaplamam lazım.
+
+444
+01:34:39,335 --> 01:34:43,835
+Ama confidence'lara göre rule çıkartmam lazım ama rule da çok fazla.
+
+445
+01:34:43,994 --> 01:34:48,055
+Çünkü item setin içinde, yani her item set için rule çıkartmam lazım.
+
+446
+01:34:48,595 --> 01:34:52,994
+Bunun için de rule çıkartmayı da birazcık daha kolaylaştırmak için ne yapıyorum?
+
+447
+01:34:53,631 --> 01:34:59,070
+Close ve Maximal Frequent Item diye iki tane şeyi tanımladık. Onlarla da kurallarını çıkartıyorum.
+
+448
+01:34:59,070 --> 01:35:10,951
+Tamam mı? Apriori algoritması burada bitti. Şimdi geldim başka bir algoritmaya. Bu da FP Growth algoritması. Tamam mı? Apriori ile çok alakası olmayan başka bir algoritma.
+
+449
+01:35:12,711 --> 01:35:19,070
+Tamamen farklı bir şekilde çalışıyor. Bu da zaten slide'da da Radical Different Approach demiş. Ve de...
+
+450
+01:35:25,524 --> 01:35:42,024
+Tamamen bunun farklılığı kullandığı başka bir veri yapısından geliyor. Veri yapısı da şu, FPTree diye bir şey kullanıyor. FP'nin FP'si Frequent Pattern'den geliyor. Tamam mı? Frequent Pattern Growth algoritması.
+
+451
+01:35:42,684 --> 01:35:52,444
+O ne yapıyor? Şeyden, database'den ağacı oluşturuyor. Ondan sonra içinden de Frequent Item Set'leri seçiyor. Nasıl yaptığını hemen şöyle bir göstereceğim.
+
+452
+01:35:55,346 --> 01:35:57,268
+Şurada gösteririz zaman daha iyi anlayacaksınız.
+
+453
+01:35:57,268 --> 01:36:00,908
+Şimdi ilk başta rootumuz null'dan başlıyor.
+
+454
+01:36:01,047 --> 01:36:02,408
+Şimdi birinci transakşonum ne?
+
+455
+01:36:03,328 --> 01:36:04,346
+A, B var ya.
+
+456
+01:36:04,747 --> 01:36:05,806
+A'dan B'ye gitti.
+
+457
+01:36:06,306 --> 01:36:09,608
+Bu şekilde A bunun çocuğu, B de bunun çocuğu şeklinde yazdı.
+
+458
+01:36:09,707 --> 01:36:14,247
+Şeyi de bunun birinci transakşon olduğunu da birebir şeklinde tutuyor.
+
+459
+01:36:14,627 --> 01:36:15,068
+Tamam mı?
+
+460
+01:36:15,268 --> 01:36:16,627
+İkinci transakşonu okudu.
+
+461
+01:36:16,728 --> 01:36:17,448
+B, C'de.
+
+462
+01:36:18,578 --> 01:36:42,680
+Geldi B, C, D'yi bu şekilde gösterdi. Ama yine şuradaki B'den buradaki B'ye bir pointer atıyor. 3'te A, C, D'yi okudu. Şimdi yine bu A ile başladığı için, tamam mı? Yani birinci de A, B de A ile başlıyordu. A, C, D de A ile başlıyor ya. Geliyor A'yı, bakın şurada A vardı ya ikinci transakşında.
+
+463
+01:36:43,122 --> 01:37:08,483
+A, C, D, E'yi bunun çocuğu şeklinde götürüyor. Yani A'dan iki tane branch var. Baktığımız zaman A, C, D, E şeklinde gidiyor. Ve buradaki C'leri de ne yapıyor? Bir şekilde map ediyor. Böyle böyle ağaç oluşturuyor. Ağaç çok büyük bir ağaç. Yani Apriori mesela eleye eleye gidiyordu. Böyle bir şey yapmıyor. Tüm transactionları ağaca yerleştire yerleştire kocaman bir ağaç elde ediyor.
+
+464
+01:37:11,796 --> 01:37:24,216
+Şimdi baktığımız zaman da, buradaki tüm 10 tane transakşonu okuduğu zaman elindeki tüm şey, ağacımız bu oluyormuş. Bakalım gerçekten de öyle mi mesela gelelim.
+
+465
+01:37:24,216 --> 01:37:36,595
+A, C, D, E. Bakalım. Üçüncü transakşona gitmişim bir de gide. A, D, C. A, D, C hangisi? Nereye okudum?
+
+466
+01:37:37,492 --> 01:37:44,492
+ADE'ymiş. ADE, şurayı okudum. Mesela işte, bu şekilde.
+
+467
+01:37:45,234 --> 01:38:09,234
+Gidiyor. Bir de ne var? Bakın bir de pointer tutuyor. Bu sort bir şekilde A, B, C, D'leri yani şuradaki D'yi, buradaki D'ye, buradaki D'ye point dedi ya. Pointer'la bir şekilde orada aynı elemanları tutuyor. Bir de neyimiz var? Aslında pointer'ların asıl bunları takip edebileceğim bir pointer tablom var. Tamam mı? Ne yapacağız? Şimdi bunlar...
+
+468
+01:38:09,939 --> 01:38:14,099
+Frequent Item Setleri bulmama yardım edecek.
+
+469
+01:38:15,118 --> 01:38:19,599
+Şuradaki şekilde birazcık daha iyi bir şekilde gösterebiliriz.
+
+470
+01:38:21,759 --> 01:38:28,779
+Şimdi ne yapıyor? Bottom-up bir şekilde yani prefiks bulacak aslında yaptığı şey şu.
+
+471
+01:38:29,198 --> 01:38:35,639
+Diyelim ki E ile bitenleri bulmaya çalışıyor. Şimdi pointer tablondan E'ye geldik. E, E, E var. Tamam mı?
+
+472
+01:38:35,956 --> 01:38:49,655
+E ile bittiyse nereye gidebilir? Yukarı çıkabilir. E'den sonra C var. E'den sonra şurada D var. E'den sonra burada D var. Tamam mı? Bütün E'leri bakın böyle çizdi. E'den sonra D olanlar, C olanlar.
+
+473
+01:38:50,036 --> 01:38:58,695
+Şimdi şu pointerler ne işime yarıyor? Pointerler şu işime yarıyor. Burada D varsa ve burada da diyelim ki işte D varsa bunları birbirine ne yaptı?
+
+474
+01:39:00,082 --> 01:39:10,823
+pointerlarla işaretlemiş oldu. Dolayısıyla burada C ve E'nin ve D'nin aslında ne kadar beraber geçtiğini pointer sayısından anlayabiliyor.
+
+475
+01:39:10,823 --> 01:39:12,622
+Tamam mı? Mantığı bu şekilde.
+
+476
+01:39:16,222 --> 01:39:17,384
+E yani.
+
+477
+01:39:20,404 --> 01:39:29,583
+Yine bir şey kullanmak zorunda tabii ki de sonsuz sayıda şey çıkmaması için, rule çıkmaması için işte ne yapıyor?
+
+478
+01:39:30,003 --> 01:39:32,743
+Buradan işte eyle bitenleri yukarıya doğru giderken
+
+479
+01:39:33,108 --> 01:39:41,387
+Kaç tane ortak pointer varsa, bu ne demek? O kadar çok içinde ortak aslında geçen item var demektir.
+
+480
+01:39:41,847 --> 01:39:49,448
+Buradan item setleri buluyor. Tamamen leaflerden yukarıya doğru çıkarak çıkarak item setleri buluyor.
+
+481
+01:39:49,587 --> 01:39:56,328
+Bu da işte mesela DE için bir şey. DE için yapmış. DE için yapmış. Böyle böyle gidiyor. Çok önemli değil.
+
+482
+01:39:56,988 --> 01:39:59,887
+Sadece ağaç tuttuğunu vs. bilseniz yeter.
+
+483
+01:40:01,268 --> 01:40:28,846
+Tamam. Sonra da aslında bakın şurası güzel şeyi göstermiş. E'den oluşturduğu frequent item setlere baktığımız zaman E var. Ondan sonra DE var. Ondan sonra ED ve şurada gördüğünüz üzere A var. Bakın böyle böyle ne yapıyor? ED, şuradan yani A var. Ondan sonra E ve C var.
+
+484
+01:40:29,363 --> 01:40:52,283
+En başta. Bu şekilde bunları, bu şekilde Frequent Item Setleri oluşturdu. Nereden oluşturuyor? Şuradaki linkler, yani şuradaki linkleri kullanıyor. Tamam mı? Ondan sonra Frequent Item Setleri bu ağaçtan oluşturduktan sonra da ne yapacak? Yine benzer şekilde kuralları yazacak. Kuralları yazarken de yine demin görmüş olduğunuz işte Maximal ve Closed Frequent Item Setleri kullanıyor.
+
+485
+01:40:53,662 --> 01:40:55,144
+Sesim bir şey gidiyor bir dakika.
+
+486
+01:40:59,346 --> 01:41:15,328
+Şimdi, association patenleri nasıl anlayacağız iyi olduğunu. Çünkü sıkıntımız ne? Association rule algoritmalarına baktığımız zaman ne yapıyor? Çok fazla kural oluşturuyor.
+
+487
+01:41:15,328 --> 01:41:25,427
+Ve birçoğu ne? Aslında bizi ilgilendirmiyor ve tekrarlayan şeyler var. Yani AB ise D, varsa ABC ise D de var.
+
+488
+01:41:25,747 --> 01:41:43,567
+Ya da işte A, B ise D de var. Hangisi sizin için daha iyi aslında? Baktığınız zaman bunların support ve confidence'ları aynı. Şu sizin için daha kapsayıcı. Ama ne oluyor? Bakın buradan aslında bu A, B ise D'yi de üretecek, B ise D'yi de üretecek falan filan bir sürü gidecek. Dolayısıyla çok fazla tekrar var.
+
+489
+01:41:44,340 --> 01:42:01,819
+Bunları birazcık daha azaltmak için demin gördüğümüz yöntemler kullanılıyor. Ama şeyi söyleyemiyoruz işte, bu confidence ve supportları bunların aynı olabilir. Dolayısıyla işte support'a bu kadar iyi olanı getir vesaire gibi bir şey söyleyemeyebiliyoruz.
+
+490
+01:42:02,279 --> 01:42:10,520
+Dolayısıyla şöyle bir şey var, bir ölçek var. Bu da Interesting Miss Major diye bir şey. Bununla oluşan patenler ne olmuş oluyor?
+
+491
+01:42:11,538 --> 01:42:17,899
+oluşan patenleri ya da oluşan ruhları ne yapacağız? Eyleyeceğiz.
+
+492
+01:42:28,051 --> 01:42:48,390
+Mesela, diyelim ki, Interest English Manager'ın nasıl bakacağız? Diyelim ki, burada bir tablomuz var, tamam mı? Ve x ise y, x ise y değil, x işte x değil ise y gibi bir tablo oluşturuyoruz ve buradan da bunların supportlarını oluşturuyoruz.
+
+493
+01:42:51,444 --> 01:43:05,184
+Yani şu örnek üzerinden gidelim. Diyelim ki işte çay ise kahve 15, çay ise kahve değil 5, çay değil ise işte kahve 75 şeklinde gidiyor. Tamam toplam 100 tane kişimiz var.
+
+494
+01:43:17,332 --> 01:43:41,270
+ve bunun confidence'ına baktığımız zaman ne demek? Tüm çay alanlar demek. Tüm çay alanlara baktığım, yani çay ise kahve. Confidence'ına baktığım zaman ne var?
+
+495
+01:43:41,970 --> 01:43:50,530
+Tea Green Coffee gibi bakacağız. Dolayısıyla bu ne demek? Çay ve kahveyi beraber alanlar bölü tüm çay alanlar.
+
+496
+01:43:50,530 --> 01:44:01,171
+Değil mi? Buradan gidiyoruz. Dolayısıyla da bu bize ne veriyor? Çay ve kahveyi beraber alanlar.
+
+497
+01:44:01,747 --> 01:44:17,787
+Tüm çay alanlar. Ama baktığımız zaman tüm kahve 0.9. Baktık tamam, confidence'ı yüksek ama aslında şuraya baktığımız zaman şöyle anlatalım. Şurada 5 kişi çok varken 75 kişi burada çok fazla var.
+
+498
+01:44:18,131 --> 01:44:40,091
+Dolayısıyla yine bu confidence olayı size ne yapıyor? Çok bir şey söyleyemeyebiliyor. Yani çay olmayıp da kahve alanlar %93 gibi bir şey çıkıyor. Ama tam tersi çay alıp kahve alanlarda 0.75. Değil mi? Çünkü şurada şey var, 5 bölü 20 yani 5 bölü nasıl söyleyeyim?
+
+499
+01:44:40,595 --> 01:44:47,296
+Şuraya baktığınız zaman buradaki sayı az, bu precision, mikoldaki gibi ama çay almayan sayısı çok fazla.
+
+500
+01:44:48,175 --> 01:44:54,635
+Dolayısıyla buradan yüzde hesapladığımız zaman da burada bir normalizasyon yapamadığımız için ne oluyor?
+
+501
+01:44:54,734 --> 01:45:01,595
+Sayılar böyle yüksek çıksa bile aslında çok anlamlı olmayabiliyor, confidence tek başına.
+
+502
+01:45:02,895 --> 01:45:28,895
+Dolayısıyla ne oluyor? Şöyle bir şey var. Ne tip kurallar biz istiyoruz? Confidence'ın yüksek olmasını istiyorum. Tamam mı? Ve niye? Çünkü X alanlar Y'yi aldı ya. Ama bir de ne var? X alanlar Y'yi almadı. Bunu da görmek istiyorum. Tamam mı? Yani X alan Y'yi aldı.
+
+503
+01:45:29,970 --> 01:45:37,570
+ve nasıl söyleyeyim, x aldı ve y'yi almayanlar. X alıp y'yi almayanlar. Buna da bakmamız lazım.
+
+504
+01:45:38,030 --> 01:45:45,551
+Dolayısıyla şöyle bir şey söylüyorum. Confidence x ise y, y'nin support'undan daha büyük olmak zorunda.
+
+505
+01:45:45,690 --> 01:45:50,150
+Aynı deminki tablodaki gibi, çay kahve tablosundaki gibi.
+
+506
+01:45:51,990 --> 01:45:57,030
+Dolayısıyla buna göre ne yapabilirim? Şeye bakabilirim.
+
+507
+01:45:58,676 --> 01:46:08,774
+İstatistiksel olarak İndependence var. İstatistiksel olarak iki tane şey var. Bir tanesi lift, bir de interest.
+
+508
+01:46:09,203 --> 01:46:25,502
+Siz Association World'u çıkarttığınız zaman lift ve interest dediği yani lift genelde yazılımlarda lift diye geçer. Size kuralların confidence ve supportundan hesapladığı o da şu şekilde.
+
+509
+01:46:26,542 --> 01:46:34,823
+A ise beynin confidence'ı, b'nin support'u yani beynin aslında yüzdesi şeklinde bir değer verir.
+
+510
+01:46:35,091 --> 01:46:57,532
+Tamam mı? Lift oldukça kullanılan bir metrik. Dolayısıyla da kuralları size verdiği zaman, eşleşmişleşmiş yolları verdiğiniz zaman lift'i verir. Bir diğeri de ne? Interest. Interest'e de baktığımız zaman probability olarak X ve Y'yi beraber alanlar bölü, X'i alanlar, yalnız X'i alanlar.
+
+511
+01:46:58,194 --> 01:47:04,496
+Yalnız x'i demeyelim, x'i alanlara çarpı, y'yi alanlar şeklinde geliyor.
+
+512
+01:47:05,576 --> 01:47:12,114
+Dolayısıyla da diyoruz ki interest için, lift için böyle bir şey diyemiyoruz ama interest de şurada bir normalizasyon gibi düşünebilirsiniz.
+
+513
+01:47:12,756 --> 01:47:20,716
+Eğer bire eşitse A ve B bağımsızdır. Eğer birden daha büyük bir değer bulduysanız pozitif olarak kolyedir.
+
+514
+01:47:20,814 --> 01:47:25,515
+A ve B arasında ilişki vardır. Yani A'ya alanlar gerçekten B'yi de almıştır.
+
+515
+01:47:26,612 --> 01:47:52,112
+diyebiliyoruz. Şimdi bakın buradan güzel bir şey çıkacak. Demin çok mandıksız çıkmıştı. Bunların lifting ve interesse ne satmayacağız? Şimdi diyor ki burada çay aldı ise kahvede almıştır. Association rule'un bu. Confidence'ına bakalım. Demin ne bulduk? 0.75 bulduk. Değil mi? Şimdi bunun lifting'e bakarsak, lifting'e 0.75 bölü,
+
+516
+01:47:52,658 --> 01:48:14,939
+Ne var? T'nin tüm supportu var. T'nin ne kadar supportu? Baktığımız zaman %80 değil mi? Çünkü şeyi daha fazla. Dolayısıyla da ne çıkıyor? Bu lifti 0.75 bölü, pardon yanlış söyledim, liftine bölünürken kafiye böleceğiz.
+
+517
+01:48:17,779 --> 01:48:28,679
+Şuraya baktığımız zaman x aldı, y'di. x aldıysa y'ye bakarken y'inkine bölüyoruz ya, özür dilerim. Burada kahveninkine bölüyeceğiz.
+
+518
+01:48:29,198 --> 01:48:36,578
+Dolayısıyla baktığımız zaman 0.75. Tüm kahve sayısına baktığımız zaman ne çıkıyor? 0.90.
+
+519
+01:48:37,652 --> 01:48:53,952
+%90, yani %90. Dolayısıyla ne? Lifte yüksek çıktı. İntelesine baktığımız zaman da küçüktür büyük çıkıyormuş. Dolayısıyla da negatif bir aralarında korelasyon var. Çay alan, kahve almamış şeklinde ne yapıyoruz? Değerlendirebiliyoruz.
+
+520
+01:48:53,952 --> 01:48:59,072
+Burada da başka bir şey var. Başka bir örnek bakarsınız.
+
+521
+01:49:05,684 --> 01:49:24,684
+Bir dakika, şurada yine bakalım da. Diyelim ki kural şu, saçma gibi ama basketbol oynuyorsa serial vermek. Tamam mı? Burada verdiği şey, yani şurada serial ise basketbol ekibin gibi bir şey vermiş şeyler daha...
+
+522
+01:49:24,948 --> 01:49:27,547
+[öğrenci] kan var, birazcık daha dağınık.
+
+523
+01:49:27,988 --> 01:49:37,608
+Bunda liftini hesapladığı zaman, diyor ki, basketbol ve C'nin arasındaki lifte baktığı zaman 0.89 çıkmış, birden daha büyük değil.
+
+524
+01:49:38,868 --> 01:49:40,787
+Ama basketbol ise serial yemiyor.
+
+525
+01:49:41,427 --> 01:49:42,847
+Bu da 1.33 çıkmış.
+
+526
+01:49:42,847 --> 01:49:43,528
+Şimdi.
+
+527
+01:49:50,162 --> 01:50:06,502
+Ben dersle ilgili bir şey söyleyeceğim sandım da. Bu senenin böyle bir boğazları mahvediyorum. Sesim de çıkmıyor ama yine iyi. Bu sabah iyi toparladım. Şimdi baktığımız zaman 0.89 ve 1.30 gibi bir şey çıkıyor. Değil mi?
+
+528
+01:50:08,643 --> 01:50:12,302
+Şimdi şuraya baksanız support ve confidence'ına.
+
+529
+01:50:12,819 --> 01:50:26,618
+basketbol ise serial yer, %40-%66 iken, basketbol ise serial yemez, %20-%33 daha kötü gibi gözükürken, ama şuraya baktığımız zaman lift ne çıktı, daha yüksek çıktı.
+
+530
+01:50:26,618 --> 01:50:39,500
+Dolayısıyla bu örnekte şunu göstermiş oluyor size. Tek başına support ve confidence'a bakmıyoruz kurallarda. Mutlaka aralarındaki özellikle lift'e bakmamız gerekiyor.
+
+531
+01:50:41,587 --> 01:50:49,466
+Yani projelerinde bununla ilgili bir şeyler yaparsa mutlaka leftine ve interestine bak, baksa iyi olur.
+
+532
+01:50:52,806 --> 01:51:00,046
+Tamam, buraya da geçiyorum. Burada da farklı şeyler var şimdi. Farklı metrikler var baktığınız zaman.
+
+533
+01:51:00,532 --> 01:51:14,692
+Bunlar aslında, yani şuradaki tabloları şu şekilde yazdıktan sonra aldı, almadı, şunu aldı, bunu da almadı. Bunlardan işte tabloları oluşturduktan sonra hesaplanan istatistikler şeyler.
+
+534
+01:51:14,692 --> 01:51:24,551
+Ama biz support, confidence, interest onlara baktık ama onlar dışında da işte ya kart kullanılır, C-Major ya da işte kapa istatistiği falan bunlar.
+
+535
+01:51:25,042 --> 01:51:49,823
+kullanılan şeyler görürseniz bunlar ne diye şaşırmayın ama ne olduğunu yani farklı farklı şeylerde kullanılıyor. Tamam mı? Tamam bu işe de geçelim. En çok kullanılan lift ve interest. Şimdi baktığımız zaman birazcık daha genel birkaç bir şey söylemek istiyorum. Şimdi ne yaptık? Burada bambaşka bir şey yaptık. Şimdiye kadar, tuşuna basam daha iyi.
+
+536
+01:51:50,228 --> 01:52:03,768
+Şimdiye kadar hep ne yapmaya çalışıyorduk? İşte classification yapmaya çalışıyorduk. Sonra geçen hafta clustering'i gördük. Şimdi biz burada clustering yapsaydık aynı şey olur muydu? Hangileri beraber alınmıştır?
+
+537
+01:52:04,724 --> 01:52:14,582
+Yani cluster yapsaydınız hangileri beraber alınmıştır? 2-3 kümeye alınmıştır, alınmamıştır diye belki kümeye bir şekilde ayırabilirdiniz ama burada istediğim o değil.
+
+538
+01:52:15,082 --> 01:52:22,064
+Şuna da bakmak istiyorum. Bu alındıysa ne kadar bu da beraber alınmıştır? Tamam mı? Bunu da görmeye çalışıyorum.
+
+539
+01:52:22,703 --> 01:52:29,644
+Dolayısıyla bu da yine descriptive bir yöntem. Yani yapılan bir şeyi açıklamaya çalışan bir yöntem.
+
+540
+01:52:30,292 --> 01:52:35,011
+Genellikle en çok market basket analizinde kullanılan bir yöntem.
+
+541
+01:52:35,412 --> 01:52:44,652
+Onun dışında kelimeyle ilgili şeylerde de şu kelimeler birlikte kullanıldıysa böyledir gibi şeylerde de ne yapılabiliyor?
+
+542
+01:52:44,652 --> 01:52:47,011
+Bunlar bunlar olduysa bu da olmuştur.
+
+543
+01:52:47,390 --> 01:52:52,692
+Hani elinizde bu şekilde listeler varsa metin madenciliğinde kullanılabiliyor.
+
+544
+01:52:54,386 --> 01:53:12,186
+Bu tarz şeyler kullanılıyor. İki tane algoritması var. Çok ünlü. Bir tanesi Apriori, diğeri de Apriori algoritması. Apriori algoritması minimumdan başlıyor, ekleye ekleye gidiyor. Tamam mı? Ta ki çok başlığı sağlamayan, sağlayamayan. Birazcık yavaş çalışıyor. Ama bunu hızlandırmak için...
+
+545
+01:53:13,422 --> 01:53:27,823
+Hatch ile vesaire daha çok zor oluyor. Hızlandırılmaya çalışılmış gördüğünüz gibi işte bir Hatch yapısı kullanarak en azından item sekar oluşturulurken hani bu ise bu, bu, bu şeklinde daha hızlı bir şekilde bulunmaya çalışılmış.
+
+546
+01:53:27,823 --> 01:53:31,724
+İkinci bir görüntü olan metodun da...
+
+547
+01:53:32,274 --> 01:53:45,274
+FB Growth algoritması. Bu tamamen bir tree, özel bir tree yapısı. Tree'ye siz ne yapıyorsunuz? Sizin elinizde transaction'lar var ya, her bir transaction'ı okuduğunuz zaman tree'ye...
+
+548
+01:53:45,582 --> 01:54:02,304
+O transaction'ı ekliyorsunuz. Varsa zaten ekleniyorsunuz. O orada vardır. Yani diyelim ki işte A, B, C, D yokmuşsunuz. Tekrar A, B, C geldiyse onu tekrar okumunuza gerek yok. Ama var olan diyelim ki A item'ı varsa ağaçta onları hep birbirine linkliyorsunuz.
+
+549
+01:54:13,582 --> 01:54:25,304
+Aynı ürünlerin aynı dallarda olmuş olduğunu görüyorsunuz. Bu da Seyfi Cipin acımların ne olduğu hakkında bilgi vermiş oluyor.
+
+550
+01:54:27,363 --> 01:54:30,104
+Şimdi, bugün de bu kadar. Soru var mı?
+
+551
+01:54:38,068 --> 01:54:46,328
+Bence dinlemediniz bunu. Bir an korktum, kaydetmedik diye makıla attı. Neyse dinleyin. Eğer sorunuz varsa haftaya sorun.
+
+552
+01:54:46,328 --> 01:54:50,988
+Şimdi bu pazarda yanlış hatırlamıyorsam projeyi yüklemeniz lazım.
+
+553
+01:54:55,908 --> 01:55:05,627
+Yükkemelsen'e birazdan döneceğim, söyleyeceğim. Projeyi yüklemeniz lazım. Proje raporunda neler olmasının gerektiğini yazmışım. Tamam mı?
+
+554
+01:55:06,036 --> 01:55:19,115
+Ama formatını şey halinde yapabilirsiniz. Bu bitirme ara raporu var ya, bitirme ara raporunun formatında yazabilirsiniz. Ben size bir tane geçmişten kalan örnek bir tane raporu.
+
+555
+01:55:19,828 --> 01:55:45,188
+Yükleyeceğim, ona bakabilirsiniz. [öğrenci] ve [öğrenci] sizi takip ediyorum, projenizden de haberim var. Ama siz silinmediniz. Onun bir deadline'ı vardı ya grup oluşturmanızı. Siz o deadline'de grubu oluşturup oraya yazmadınız. Orada geç kaldınız. O yüzden Excel'e yazma silmeyi kapattığım için o yüzden yok.
+
+556
+01:55:45,555 --> 01:56:04,335
+Tamam, yani projeyi yapın. Ama vaktinde, grubu vaktinde oluşturmadığınız için istediği adınızı. Ondan sonra şey yapacağım, haftaya, yani iki grubu ayıracağım. Bir grup haftaya sunacak, diğer grup olman sonraki hafta projesini sunacak.
+
+557
+01:56:14,836 --> 01:56:18,314
+İlk hafta sunmak isteyenler ve ikinci hafta sunmak isteyenler.
+
+558
+01:56:18,916 --> 01:56:23,555
+Grubu ayıralım çünkü herkesin aynı anda sınıfa gelmemesi gerekiyor.
+
+559
+01:56:24,536 --> 01:56:29,756
+Şimdi ben bir tane Excel açayım. Ona da limit koyayım proje grubu sayısınca.
+
+560
+01:56:30,515 --> 01:56:33,475
+Hani first in, first come first serve gibi bir şey olacak.
+
+561
+01:56:34,234 --> 01:56:40,756
+Hangisine adınız yazıldıysa o hafta sunacaksınız ama ilk ve ikinci hafta sunmak arasında bir şey olmaz, bir fark olmaz.
+
+562
+01:56:41,908 --> 01:56:53,127
+Bir tane sunumunuzla ilgili yine bir şey ekleyeceğim. Sunumlar kısa sürecek. Sunumda ne olması gerekiyor? Hemen onunla ilgili örnek bir şablon ekleyeceğim. Klasruma oradan bakarsınız.
+
+563
+01:56:55,868 --> 01:56:57,426
+Sorunuz var mı peki başka?
+
+564
+01:57:09,076 --> 01:57:09,755
+Soru yok mu?
+
+565
+01:57:12,456 --> 01:57:15,135
+Tamam, herhalde sorunuz yok. O zaman bugünlük bu kadar.
+
+566
+01:57:16,456 --> 01:57:17,354
+Sesim iyice gidiyor.
+
+567
+01:57:18,175 --> 01:57:19,996
+Önemli ücünün dışında bir şey yapalım, gerekir mi?
+
+568
+01:57:20,095 --> 01:57:23,055
+Evet, gerekir [öğrenci]. Bunları karşılaştırmanız lazım.
+
+569
+01:57:23,055 --> 01:57:31,576
+Diyelim ki üç tane metot çalıştırdınız. Atıyorum, yapay sinir ağaç çalıştırdınız. Ondan sonra decision tree çalıştırdınız. Bir şey daha çalıştırdınız. Tamam mı?
+
+570
+01:57:31,755 --> 01:57:33,734
+Ensemble learning'den bir şey çalıştırdınız.
+
+571
+01:57:34,654 --> 01:57:35,996
+Diyelim ki, atıyorum.
+
+572
+01:57:37,042 --> 01:57:59,943
+Bunda işte decision tree falan filan iyi çalışmadı. Çünkü yapay sinir ağaç çalıştı. Bunun niye daha iyi çalıştığını açıklamamız lazım. Demeniz ki işte datamız bizim demek ki lineer ayrılabilir bir data değildi. O yüzden böyle böyle yapmadı. Outlier çoktu. Bu metot Outlier'ları daha iyi elimine ettiği için o yüzden bu daha iyi çalıştı gibi bir yorum kısmı var.
+
+573
+01:58:00,435 --> 01:58:10,875
+Dolayısıyla bu yorum kısmını çok iyi yazmamız lazım. Yani asıl puan alacağımız kısım, bu metodun nasıl seçtiniz ve bu metodların birbiriyle karşılaştırması.
+
+574
+01:58:11,015 --> 01:58:22,055
+Yani böyle yapıp bırakmıyorsunuz. A metodu B metodundan daha iyi çalışmıştır. Biri %90'dır, öbürü %80'dir. Hayır öyle değil. Bu niye %90 buldu? Bu niye %80 buldu?
+
+575
+01:58:22,484 --> 01:58:28,123
+Başka parametreyle daha iyi çalışır mıydı? Birazcık onları söyleyebiliyor olmanız lazım.
+
+576
+01:58:29,663 --> 01:58:37,104
+Bir de proje raporumuz var. Proje raporunda sonuçlarınızı koyup bunu da tartışmamız lazım.
+
+577
+01:58:37,684 --> 01:58:42,524
+Bir örnek proje raporu koyacağım ama proje raporu da eski öğrencilerden birinin raporu.
+
+578
+01:58:45,024 --> 01:58:47,043
+Yani yüz almış bir rapor değil.
+
+579
+01:58:47,922 --> 01:58:56,662
+Raporun üzerinde, burası burası eksik diye yazarım. Tamam mı? Başka sorun var mı?
+
+580
+01:59:08,532 --> 01:59:09,431
+Tamam, herhalde yok.
+
+581
+01:59:10,292 --> 01:59:11,292
+Tamam, bakımdık. Bu kadar.
+
+582
+01:59:11,992 --> 01:59:17,551
+Arkadaşlar, haftaya sizin sunumlarınızla devam edeceğiz.
+
+583
+01:59:17,551 --> 01:59:22,332
+Dediğim gibi, Toppen'de, Classroom'dan bugün şeyleri koyarım.
+
+584
+01:59:22,612 --> 01:59:23,752
+Örnek formatı da koyarım.
+
+585
+01:59:24,391 --> 01:59:26,212
+Hemen kısa bir PowerPoint hazırlayacağım.
+
+586
+01:59:26,311 --> 01:59:28,171
+Çünkü herkesin sunum için an zamanı olacak.
+
+587
+01:59:28,971 --> 01:59:30,292
+Hani zaman şeyiniz de var.
+
+588
+01:59:30,351 --> 01:59:32,091
+Bir hemen size bir şekilde anlatmamız lazım.
+
+589
+01:59:33,511 --> 01:59:35,152
+Ama onları, template'leri koyarım.
+
+590
+01:59:35,492 --> 01:59:35,752
+Tamam mı?
+
+591
+01:59:36,435 --> 01:59:41,274
+Takıldığınız bir yer olursa, anlamadığınız yer olursa ya da projede mutlaka sorun danışın.
+
+592
+01:59:44,814 --> 01:59:48,435
+Bu kadar o zaman kapatıyorum derse kendinize iyi bakın.

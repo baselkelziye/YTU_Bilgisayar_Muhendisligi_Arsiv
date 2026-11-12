@@ -1,0 +1,1227 @@
+1
+00:00:33,716 --> 00:00:40,536
+Makine öğrenmesi yöntemler olarak da 3 yöntem seçtik. Bunlar da bir tane çok büyük olarak olarak, sınıflandırma olarak karar verdik.
+
+2
+00:00:40,876 --> 00:00:45,496
+İlk önceki katörü olarak bu nebiyatı seçtik. İyi anlık olarak da kanun etsinleri bu arada.
+
+3
+00:00:49,747 --> 00:00:56,387
+Herkes bildiği gibi zaten dersi anlattık. Koşur olası da böyle birisinin algoritması.
+
+4
+00:00:56,527 --> 00:01:03,548
+Burada da bizim future'larımız, renklerin aynı renk alanında kaç tane pixel var tercih için.
+
+5
+00:01:03,548 --> 00:01:09,268
+Bunu tutuyoruz. Burada da renk alanında uyuşan şeylere göre bir olasılık veriliyor.
+
+6
+00:01:24,500 --> 00:01:28,500
+Füçürol için. Onların da yakın...
+
+7
+00:01:34,355 --> 00:01:42,795
+10 başarıları sunmuşlar ve o K10 değerine olan bölgede de en çok hangi sınıf başlı olsun.
+
+8
+00:01:49,908 --> 00:01:50,408
+Ne ne çözüm?
+
+9
+00:01:54,676 --> 00:02:06,676
+Burada da ilk önce farklı alt veri setleri oluşturuyor. Alt veri setleri, sonra bizim belirledik 50 ağaç olarak seçtik. En mutlaka bu gibiydi.
+
+10
+00:02:06,676 --> 00:02:16,675
+50 farklı ağaç, 50 farklı alt veri seti dağılıyor. Ondan sonra da ağaçlar farklı featurelere göre test ediyor.
+
+11
+00:02:16,675 --> 00:02:20,235
+Ve en çok çıkan class hangisi ise...
+
+12
+00:02:22,644 --> 00:02:23,924
+Sorunçlara bakalım biraz.
+
+13
+00:02:23,924 --> 00:02:31,004
+Dur bir sorunçlara gelmeden kaç tane test, yani kaç tane train, kaç tane test resminiz var, kılasınız kaç tane? Onu bir daha söyleyeyim.
+
+14
+00:02:31,004 --> 00:02:37,543
+Burada aslında o var. Farkla 10-fold cross-orderization yapıyorum. 150 oranında bölüyorum.
+
+15
+00:03:10,644 --> 00:03:13,644
+Kolondaki sayılar ne demek?
+
+16
+00:03:13,644 --> 00:03:20,644
+Kolondaki sayılar da ücret oranda başarılı. 1 olursa %100, 0.2 %7, görülürseniz, başarısızca.
+
+17
+00:03:20,644 --> 00:03:25,644
+Orta o zaman, ne zaman, başarılı, %15.
+
+18
+00:03:25,644 --> 00:03:28,644
+Tamam, tamam.
+
+19
+00:03:28,644 --> 00:03:33,644
+En başarısız 2 lira olmayıca destek ediyoruz, oldukça 3 lira başarılı.
+
+20
+00:03:33,644 --> 00:03:35,644
+Bundan sonra da en başarılı.
+
+21
+00:03:38,099 --> 00:03:41,067
+sadece kaloristik kurallarında biriktir gelmesini tutmak.
+
+22
+00:03:50,355 --> 00:03:54,835
+Birçok bir şey.
+
+23
+00:04:01,587 --> 00:04:03,587
+İntro
+
+24
+00:04:10,996 --> 00:04:15,996
+...bizdiklerden başarılı bir kama yapmayan. Öncelikle kadris kremi niye başarılı olduğundan?
+
+25
+00:04:15,996 --> 00:04:19,995
+Tek başarılı kremi olduğunda çünkü fotomaların en distikli örgü.
+
+26
+00:04:19,995 --> 00:04:21,995
+Genellikle renkleri oluyor.
+
+27
+00:04:21,995 --> 00:04:26,956
+Su fotomaların, marman, mağarış fotomaların kırmızı olduğu için kadris kremi olduğundan...
+
+28
+00:05:08,500 --> 00:05:15,299
+Bizim en başarılı algoritmasımız random forest oldu. Bunun en önemli sebebi de bizim aşırı değimsiz bir verisletimiz olduğunu düşünüyorum.
+
+29
+00:05:15,419 --> 00:05:24,659
+Çünkü random forest değimsiz verisletleriyle iyi adaklı olabilen, iyi çalışabilen bir algoritma. Bizim algoritmasımızın yarısından fazlası others'ın bulundu şu an.
+
+30
+00:05:24,659 --> 00:05:32,180
+Bu da en büyük sorunumuz oluşturuyordu. Kanbıyoruz niye doğrudu ise bizim çok fazla noise'umuz yok.
+
+31
+00:05:35,379 --> 00:05:37,100
+Bu yüzden de kalların, sınıflar.
+
+32
+00:05:42,740 --> 00:05:45,340
+benim 800 çok yetkik bir sayı değil
+
+33
+00:05:45,340 --> 00:05:46,699
+arasını en dolayı
+
+34
+00:05:46,699 --> 00:05:48,439
+düşük tecrübe seçiyor
+
+35
+00:05:48,439 --> 00:05:50,879
+naibayas
+
+36
+00:05:50,879 --> 00:05:53,879
+zaten kötü çalışması için seçmiştik
+
+37
+00:05:53,879 --> 00:05:54,139
+evet
+
+38
+00:05:54,139 --> 00:05:55,620
+çalıştı
+
+39
+00:05:55,620 --> 00:05:58,319
+naibayasın en önemli
+
+40
+00:05:58,319 --> 00:06:00,579
+kötü çalışmasını düşündüğü
+
+41
+00:06:00,579 --> 00:06:02,560
+naibayasın ön koşulu var
+
+42
+00:06:02,560 --> 00:06:03,439
+biliyorsunuz ki
+
+43
+00:06:03,439 --> 00:06:06,939
+ama biz resim
+
+44
+00:06:06,939 --> 00:06:08,939
+resimlerle sonuçta pikselde
+
+45
+00:06:08,939 --> 00:06:09,355
+arası
+
+46
+00:06:09,492 --> 00:06:11,732
+bir bağlatı almış, hemen bir eşiş olmuyor.
+
+47
+00:06:11,891 --> 00:06:13,532
+Sıcak değişikliğinden sonra
+
+48
+00:06:13,532 --> 00:06:15,412
+yetişiyor. O yüzden doğrusunuzda
+
+49
+00:06:15,412 --> 00:06:16,492
+bulunu düşünüyorum.
+
+50
+00:06:16,752 --> 00:06:19,591
+Kırmızı renkli olan bir yerde sarı renkli olmasını bekleriz.
+
+51
+00:06:20,091 --> 00:06:21,172
+Bu yüzden aslında kişilerin
+
+52
+00:06:21,172 --> 00:06:23,252
+değerleri tamamen doğrusu değil.
+
+53
+00:06:24,471 --> 00:06:25,132
+Burada tekrar
+
+54
+00:06:25,132 --> 00:06:26,192
+göstermişim.
+
+55
+00:06:37,172 --> 00:06:38,012
+Ben de hiç bırakıyorum.
+
+56
+00:06:38,012 --> 00:06:41,872
+Burası.
+
+57
+00:06:47,283 --> 00:06:48,983
+Çoğunu beraber yaptık diyorsunuz.
+
+58
+00:06:49,363 --> 00:06:52,223
+Tamam, peki burada öğrendiğiniz en şey ne oldu?
+
+59
+00:06:52,403 --> 00:06:56,764
+Yani bu projeyi yaptık, tamam not alacağız vesaire önemli değil.
+
+60
+00:06:57,144 --> 00:06:59,163
+Onun dışında ya ben şunu öğrendim, bu benim şimera.
+
+61
+00:06:59,443 --> 00:07:01,483
+Bunu hiç sevmedim, burasını sevdim, bu böyle.
+
+62
+00:07:01,483 --> 00:07:02,803
+Yok, keşke görsel seçmesin.
+
+63
+00:07:03,183 --> 00:07:04,084
+Görsel seçmesin.
+
+64
+00:07:04,403 --> 00:07:06,244
+Biraz zaten bilmeden girdiğim işin içine.
+
+65
+00:07:06,384 --> 00:07:07,903
+Görsellerin asla hesap veriyorlar.
+
+66
+00:07:08,043 --> 00:07:09,783
+Ben de tazım olup dağımda bir atım var.
+
+67
+00:07:10,504 --> 00:07:13,524
+Aslında orada problemi için de stüphutları öğrenmek kadar oldu.
+
+68
+00:07:15,540 --> 00:07:22,540
+Bu yüzden bize çok işe yaramanı, tezbih ediyoruz.
+
+69
+00:07:22,540 --> 00:07:36,540
+Hocam, biz de görsel seçtiğimiz için internette de özellikle bu an ve makine öğrenci arasında çok ilgi yoktur. Yani görsel, ne kadar iyi çalışıyor, ne kadar çalışıyor.
+
+70
+00:07:36,540 --> 00:07:40,076
+Tamam o yüzden birazcık kendi denemeye dönelim, deneyimlerimizde...
+
+71
+00:07:52,339 --> 00:07:55,019
+O zaten derste anlatmadığım şeydi yani.
+
+72
+00:07:55,120 --> 00:08:01,439
+Evet, onları seçmeyince de geriye kalanlar da çok az bir ilgi ve çok ulaşmak gerekiyor.
+
+73
+00:08:01,980 --> 00:08:03,779
+Neyse, öğrenmiş olunuz. Güzel. Tamam.
+
+74
+00:08:04,000 --> 00:08:06,920
+Haydi bakalım, ikinci grup kim gelmek ister?
+
+75
+00:08:07,779 --> 00:08:08,719
+Erizi Kavya'nın.
+
+76
+00:08:09,500 --> 00:08:10,120
+Sen de.
+
+77
+00:08:12,860 --> 00:08:14,180
+Allah kalırsa çok iyi.
+
+78
+00:08:15,180 --> 00:08:16,159
+Bir tane şey var mı?
+
+79
+00:08:16,159 --> 00:08:17,159
+İlerce.
+
+80
+00:08:35,923 --> 00:09:39,907
+Teşekkürler.
+
+81
+00:11:01,683 --> 00:11:19,683
+Bir tek şey yaptın, ilk konu söyle. Arkadaşlarınızı mı sevmiyorsun? Yok, ben tek yapmadım. Biz ilk kişiydik. Hatta işbirliği gibi yaptık, bunu işlemeye arkadaşım yapacak. Ben bunu yetiştiremedim. Yetiştiremeyince ben de işle sonuçları sarkıracağım.
+
+82
+00:11:20,683 --> 00:11:22,384
+İyi, tamam, güzel.
+
+83
+00:11:24,384 --> 00:11:28,483
+Biz durum sanatörüyle alakalı bir veri serisi seçtik.
+
+84
+00:11:29,395 --> 00:11:32,795
+Göz kanseri kadınlarda, kadınlarla ilgili kanserlerim.
+
+85
+00:12:14,292 --> 00:12:19,292
+Daha fazla olanları, yani çok yüksek olan değerlerimi...
+
+86
+00:12:34,131 --> 00:12:41,131
+Bu sebeple benimkilerim çok renkli değildi.
+
+87
+00:12:41,131 --> 00:12:49,995
+Yani yaklaşık 3-3 tane de iyi uyudu fakat 4-3 tane de kötü uyudu.
+
+88
+00:12:55,923 --> 00:12:57,923
+%95 oranında, faalendi.
+
+89
+00:12:58,923 --> 00:12:59,923
+Pardon, 5.5.
+
+90
+00:12:59,923 --> 00:13:00,923
+%95 oranında.
+
+91
+00:13:01,923 --> 00:13:03,500
+İş bölümüne gelip denerledim.
+
+92
+00:13:10,868 --> 00:13:34,628
+Şimdi bak sen saç üçsün değil mi? Üçsün değil mi? Üçüncüsün. Bir şey iş hayatına gittiniz. Burada mesela bir şey yapmasındır, yapmamışındır. [öğrenci] ol. Doğru bulunsunlar. Önemlidir. Ama iş hayatına girdiğiniz zaman böyle sınıf yaparsanız.
+
+93
+00:13:35,059 --> 00:13:48,419
+Takım projeli deniriz. Sonra size gıcık olun. İki saatte yapmanız bile böyle demeyin. Arkadaşım yapmadı da demeyin. Yapamadı diye.
+
+94
+00:13:49,879 --> 00:14:02,559
+İki saatte yaptım, ya da başka bir strateji yaptım. Daha şimdi açık bir şekilde anlattım ama bundan sonra böyle yapmam.
+
+95
+00:14:06,292 --> 00:14:08,392
+Yani beni en fazla etkilebilir olarak ödü.
+
+96
+00:14:09,592 --> 00:14:15,951
+Daha daha tamam. Yani şey yap. Şeyde, böylesin hocam çalıştım, ettim bu bölüm için böyle.
+
+97
+00:14:15,951 --> 00:14:18,028
+Evet ama şey alırsa etkileşen şeyden olur.
+
+98
+00:14:22,196 --> 00:14:25,235
+Şu an dağla batıyorsun. Güzel, tamam.
+
+99
+00:14:26,435 --> 00:14:28,716
+Bu kadar. Sorumla da başladık bir şey var.
+
+100
+00:14:29,855 --> 00:14:31,096
+E hangi sonuçlar?
+
+101
+00:14:31,776 --> 00:14:33,016
+Sonuçlarım da var.
+
+102
+00:14:36,980 --> 00:14:42,279
+Bu UCI'daki data sesimi. UCI diye bir şey var, oradaki data sesimi.
+
+103
+00:14:47,700 --> 00:14:49,440
+Hangi metot daha iyi çalışmış?
+
+104
+00:14:56,467 --> 00:15:24,299
+Tamam, tamam.
+
+105
+00:16:11,923 --> 00:16:13,824
+Bu da majera alıp et proje.
+
+106
+00:16:39,091 --> 00:16:39,932
+Pausa, geç.
+
+107
+00:17:01,748 --> 00:17:02,548
+GD, evet.
+
+108
+00:17:15,955 --> 00:17:17,955
+ve bu işlemiyorma, karar ağaçları, kümeleme, k-i ve bu işlemiyorma.
+
+109
+00:17:17,955 --> 00:17:18,507
+Tamam.
+
+110
+00:17:23,412 --> 00:17:28,412
+Bu arada bu arada bu arada.
+
+111
+00:17:57,428 --> 00:17:58,124
+Evet.
+
+112
+00:18:15,700 --> 00:18:19,320
+Bazıları stick, bazıları login, bazı login denemiz duyduk.
+
+113
+00:19:43,508 --> 00:19:47,307
+Çünkü Seyret'e ayırtlar, seyret de 1.4'e kadar yaşıyor.
+
+114
+00:19:47,307 --> 00:19:54,508
+Ve veri'nin ilk halinde toplamda 3 milyon satırdan 8.000 tane çekici, seyret de 2 idi.
+
+115
+00:19:54,508 --> 00:19:55,907
+Şurada geliştirildi.
+
+116
+00:19:55,907 --> 00:20:01,108
+Ben de şöyle bir şey yapmaya çalıştım.
+
+117
+00:20:02,708 --> 00:20:10,108
+Veri karıştırdık, iş atıl metodunu satıp, sonrasında hep iki değerlerle eşit sayıda başka bir ufak satın aldık.
+
+118
+00:20:10,612 --> 00:20:13,612
+Bir de bir klasına al, o şekildeyi.
+
+119
+00:20:13,612 --> 00:20:15,612
+Ben işte mademeler böyleydi.
+
+120
+00:20:15,612 --> 00:20:18,612
+Sonra kısma etken, altlar çıkarttıktan sonra,
+
+121
+00:20:18,612 --> 00:20:22,612
+...şurası iki tane.
+
+122
+00:20:22,612 --> 00:20:26,612
+Şöyle görecek olursanız, kümeleme, altlar var mı yani?
+
+123
+00:20:26,612 --> 00:20:30,612
+Bundan çıktıktan sonra ikna etken, altlar var mı?
+
+124
+00:20:30,612 --> 00:20:33,612
+Çok kısmı, pandemiyle tercih edeceklerimiz.
+
+125
+00:20:33,612 --> 00:20:36,612
+Onları öncesinden çıkarttık.
+
+126
+00:20:46,483 --> 00:20:53,483
+Sınıflandırma için sınıflandırdınız.
+
+127
+00:20:53,483 --> 00:20:57,823
+Sevinç'i mi sınıflandırdınız?
+
+128
+00:20:57,823 --> 00:20:58,823
+Evet.
+
+129
+00:21:08,115 --> 00:21:14,735
+Tam tersi değil mi? Sınıflandırma da segreti, tahmin de şey.
+
+130
+00:21:15,336 --> 00:21:18,395
+Tahmin, tahmin sorumuz, evet, sevgilim tam.
+
+131
+00:21:18,395 --> 00:21:23,235
+Çünkü, iç klaslarında, iç klaslarında, sanayi sanatı.
+
+132
+00:21:26,771 --> 00:21:30,652
+İçin,
+
+133
+00:21:34,228 --> 00:21:42,148
+Kognik dediğimiz zaman mesela işte, logistik, refleşimde falan, mesela 1.24 gibi bir şey.
+
+134
+00:21:46,867 --> 00:21:53,268
+Onu yapabilir mi? Yakın sadınız ama tahmin yapmak çok mantıklı değil.
+
+135
+00:21:54,167 --> 00:22:04,567
+Evet, evet, yani tahminde genel olarak mesela sıcağı kapalı olabilirdiniz. Ne dediniz başka? Daha böyle kontinüüs olan değerleri yapmak mantıklı değil mi?
+
+136
+00:22:19,251 --> 00:22:21,251
+Myślę, że çok fazla mamma uçan zajmıyor.
+
+137
+00:22:31,028 --> 00:22:51,528
+Teşekkürler.
+
+138
+00:23:04,211 --> 00:23:05,211
+Hoşçakalın.
+
+139
+00:23:36,852 --> 00:23:39,612
+Bundan açıkçası daha fazla yükseltme videoyu bulamadım.
+
+140
+00:23:41,952 --> 00:23:44,892
+Bunun farklı farklı nedelleri olabilir ki biraz daha yükseltmeyi yapacağız.
+
+141
+00:23:48,819 --> 00:23:55,819
+Açıkçası benim yöneliyorduk biraz tartışım. Çünkü az önce gösterdik.
+
+142
+00:24:28,852 --> 00:24:31,312
+Gerçekten gerçek mi?
+
+143
+00:24:35,155 --> 00:24:39,435
+Gerçekten bir yarışmasına falan var.
+
+144
+00:25:12,948 --> 00:25:18,148
+Bir şey soracağım. Klasifikasyon sonuçları var. Diğer kısımların tahmini.
+
+145
+00:25:21,844 --> 00:25:24,844
+Tahmin dediğimiz şey classification mı?
+
+146
+00:25:24,844 --> 00:25:29,844
+Evet, aslında aylık classification değil. Dediction ile alakalı konuşur.
+
+147
+00:25:29,844 --> 00:25:34,844
+Şöyle değilim, yani İngilizce, Türkçeden karışık. O karışıklı olur.
+
+148
+00:25:34,844 --> 00:25:40,844
+Tamam, başka soru yok. Tahminle sınıflandırma arasında ne fark var size göre?
+
+149
+00:25:40,844 --> 00:25:42,844
+Ben de dedikçimi yapmıyorum.
+
+150
+00:25:50,548 --> 00:26:10,208
+Şimdi şöyle, Türkçe'de tahmin deyince, tamam mı? Kedişim deyince daha çok böyle regresyon tabanlı şeyler anlaşılır. Tamam mı? Yani siz aslında et tam yapmışsınız. İkisi de klasik eşinin. Sadece şeyleriniz farklı, tamam mı? Özü kredileriniz farklı, geçersin. Altı, setleriniz farklı. Tamam, okey, şimdi oldu.
+
+151
+00:26:19,188 --> 00:26:21,327
+Şöyle, bir hastalık.
+
+152
+00:26:37,460 --> 00:26:38,079
+Teşekkürler.
+
+153
+00:26:43,955 --> 00:26:50,699
+Ama biz o düşünüşmelerimizden çok uzun bir şekilde
+
+154
+00:26:54,067 --> 00:26:56,067
+Dlaczego?
+
+155
+00:27:48,211 --> 00:27:50,211
+Seçen alınma olur muhteşem alınma olur muhteşem.
+
+156
+00:27:50,592 --> 00:27:52,152
+Yani çok fazla fark etmen.
+
+157
+00:28:05,844 --> 00:28:07,384
+İçin bir şey, bu da?
+
+158
+00:28:07,384 --> 00:28:07,963
+Bir şey, bu da?
+
+159
+00:28:18,579 --> 00:28:20,219
+Söyle ya, şunu bir deneyebilir miyim?
+
+160
+00:28:22,559 --> 00:28:22,799
+Ne?
+
+161
+00:28:24,119 --> 00:28:26,059
+Yani şeyden üstü çıkarım yaptığını bunu.
+
+162
+00:28:26,420 --> 00:28:27,299
+Hah, söyle bakayım.
+
+163
+00:28:27,940 --> 00:28:29,059
+Bu söylemek istemiştim.
+
+164
+00:28:29,159 --> 00:28:30,319
+Söyle, bu önemli.
+
+165
+00:28:30,319 --> 00:28:31,000
+Evet.
+
+166
+00:28:31,679 --> 00:28:34,059
+Yani benim sınıfım gerçekten düzgün seçilmek çok önemli.
+
+167
+00:28:34,319 --> 00:28:36,859
+Daha önceden böyle çok dikkatli bir şekilde bakımlık çok önemli oluyor.
+
+168
+00:28:36,859 --> 00:28:39,799
+Peki ikisini niye seçmiştim? Yani neye göre seçtiniz?
+
+169
+00:28:40,723 --> 00:28:49,963
+Hocam çok fazla sütun var dediğimiz, özellikleri çok fazlaydı. Dedi ki, bu kadar bağlı sağlarız. Yani bu şey, özelliklerin fazla olması da iyidir.
+
+170
+00:28:50,523 --> 00:28:55,344
+Ama içinde description'lar olunca onlar zaten tekst olayı bambaşka düşürür.
+
+171
+00:29:01,203 --> 00:29:02,683
+Alamam.
+
+172
+00:29:18,836 --> 00:29:21,836
+Başlayınca.
+
+173
+00:32:14,516 --> 00:32:18,336
+Çözünürlüğü mü düşürsün? Ama yok, demin de bunu da yaptım.
+
+174
+00:32:20,496 --> 00:32:22,516
+Bir masa üstüne çak, geldi tamam.
+
+175
+00:33:57,299 --> 00:33:58,059
+Teşekkürler.
+
+176
+00:34:27,092 --> 00:34:28,271
+It's nine hours.
+
+177
+00:36:30,356 --> 00:36:32,036
+Önleme, önleme. Kocaman.
+
+178
+00:36:33,836 --> 00:36:35,596
+Orman, öneşe, öneşe, öneşe.
+
+179
+00:36:35,596 --> 00:36:35,836
+Hı?
+
+180
+00:36:37,896 --> 00:36:40,916
+Ya buna da şükür. Bir şey diyemeyeceğiz.
+
+181
+00:36:43,036 --> 00:36:44,436
+Aha, başlayın başlayın.
+
+182
+00:36:44,436 --> 00:36:51,436
+Bir sütte konusunda bulunan sorulan soruları...
+
+183
+00:36:57,748 --> 00:37:02,568
+Bu soruları, soruları, en fazla 5 adet etiketik eklenebiliyor.
+
+184
+00:37:03,088 --> 00:37:07,884
+Ve araçlarımızın daha çok fazla etiketik kullanmayı tercih ediyoruz.
+
+185
+00:37:12,755 --> 00:37:18,755
+Sekte'de bir yanımda geçiyorlar. Burada doğru etkileşme kapısından aralarında doğru etkileşme yapıyoruz.
+
+186
+00:37:19,795 --> 00:37:21,576
+Biz ne olurduk ise burada görüntü.
+
+187
+00:37:50,708 --> 00:38:11,307
+Bu, bu
+
+188
+00:38:42,356 --> 00:38:49,676
+Kamil Cengs'ın sesini verilir. Onun etkiliğini, stikopopoşimde sonuç olarak çektiğimizde bir etkili olması gerekiyor.
+
+189
+00:38:49,756 --> 00:38:50,956
+Yüz mü? Ah tamam.
+
+190
+00:38:50,956 --> 00:38:52,716
+Öğleceğimiz bir betimle. Tamam.
+
+191
+00:38:52,716 --> 00:38:53,296
+Tamam.
+
+192
+00:38:53,296 --> 00:38:56,416
+Benim tüm zannes için bir gün tüm var.
+
+193
+00:38:59,987 --> 00:39:01,787
+Veri indirici, işçilerin etiketleri vardı.
+
+194
+00:39:01,787 --> 00:39:03,907
+İndirdiğiniz veri ne kadardı?
+
+195
+00:39:03,907 --> 00:39:06,108
+Ne kadar düştü?
+
+196
+00:39:06,108 --> 00:39:06,907
+8'e ne kadar?
+
+197
+00:39:06,907 --> 00:39:09,067
+780 bin madet.
+
+198
+00:39:09,067 --> 00:39:10,467
+Yine bayağı büyük, tamam.
+
+199
+00:39:11,347 --> 00:39:13,228
+İşçilerin etiketleri vardı içinde sorunlu.
+
+200
+00:39:13,228 --> 00:39:19,507
+Bunları çıkartırken, kod ettik olanları içeriyle beraber çıkarttık.
+
+201
+00:39:19,507 --> 00:39:21,067
+Yani böylece kodları kaldırmış.
+
+202
+00:39:21,067 --> 00:39:22,627
+Bu arada, eğitim zorlaşacak.
+
+203
+00:39:23,284 --> 00:39:30,284
+Eğitim içerisinde, nakli, kutu, indikleri, indikleri, kutaklar var. Bunlarla eğitim şansı hata verirseniz, geri dönüştürüklerden bir şey.
+
+204
+00:39:30,284 --> 00:39:34,284
+Bunları nereye yaptınız? Faysan'da mı yaptınız? Şuradan.
+
+205
+00:39:34,284 --> 00:39:37,284
+Eğitim, bunların da keskidiklerine kaldı.
+
+206
+00:39:37,284 --> 00:39:42,284
+Altıların tam ve olan, mutlaka ve dışında makamelerin içeren türler vardı.
+
+207
+00:39:42,284 --> 00:39:45,195
+Ve esas o için, bunların temizlemek yerine, pek bir üründen çıkardık.
+
+208
+00:39:45,556 --> 00:40:11,436
+Daha sonra, uçanlar, uçanlar, uçanlar, uçanlar, uçanlar, uçanlar, uçanlar, uçanlar, uçanlar, uçanlar, uçanlar, uçanlar, uçanlar, uçanlar, uçanlar, uçanlar, uçanlar, uçanlar, uçanlar, uçanlar, uçanlar, uçanlar, uçanlar, uçanlar, uçanlar, uçanlar, uçanlar, uçanlar, uçanlar, uçanlar, uçanlar, uçanlar, uçanlar, uçanlar, uçanlar, uçanlar, uçanlar, uçanlar, uçanlar, uçanlar, uçanlar, uçanlar, uçanlar, uçanlar,
+
+209
+00:40:11,731 --> 00:40:26,731
+Her soruyu bir tanemde geyindiriz. Bir tekrak mümkün yaptık. Bu şekilde yedavar ediyoruz. Tekrak edin, dinleriz kendine ilk başta sorumuz 100 popüler tekrak değil. En az derine sahip olmaktan çıkıyoruz.
+
+210
+00:40:26,731 --> 00:40:32,731
+Evet, sahip değil, bir soruyu çıkartıyoruz. Zaten oracınızı meyzefini unutma.
+
+211
+00:40:41,331 --> 00:40:42,331
+Dövbe, başkalar.
+
+212
+00:40:47,891 --> 00:40:50,891
+Anlamadım, anlamadım. Taglerden en az...
+
+213
+00:40:50,891 --> 00:40:59,891
+Mesela bizim sorumuzda 5 tane tek bulatmış. Biz bunu bilmeye gitmek istiyoruz. Ve bu 5 tekler, 3'ü en popüler bir stekinin arasında.
+
+214
+00:40:59,891 --> 00:41:02,891
+Tamam. Orası kolay, evet.
+
+215
+00:41:02,891 --> 00:41:09,891
+Sonra da 3 tekimiz olduğu için en popüler bir stek de bu 3 tekten de birini seçmemiz gerekiyor.
+
+216
+00:41:09,891 --> 00:41:13,891
+Onda da en az popüleri seçiyorsun ki örnek olsun elinde diye.
+
+217
+00:41:13,891 --> 00:41:14,603
+Evet.
+
+218
+00:41:20,628 --> 00:41:22,628
+Kaç tane satırınız var?
+
+219
+00:41:22,628 --> 00:41:23,628
+Yüz tane.
+
+220
+00:41:23,628 --> 00:41:25,628
+Yok yok, kaç tane satırınız var?
+
+221
+00:41:25,628 --> 00:41:26,628
+Kaç satırınız var?
+
+222
+00:41:26,628 --> 00:41:28,628
+Şu anda aslında bunu yapmayacağım.
+
+223
+00:41:28,628 --> 00:41:30,628
+Tep sitesinin değişikliği sadece evlenmek için hesapladım.
+
+224
+00:41:30,628 --> 00:41:33,628
+Bunları sessiz aldım, bu da 10 eski aldım ama her sonrası belirtim.
+
+225
+00:41:33,628 --> 00:41:35,628
+Okey.
+
+226
+00:41:36,628 --> 00:41:40,628
+Ondan sonra sorunumuz uzunluğunu tutmak istedik.
+
+227
+00:41:40,628 --> 00:41:43,628
+Çünkü site konumuzu da çok çok uzunluğun sorunlarla yatan ve çok...
+
+228
+00:41:43,628 --> 00:41:44,236
+Tabii.
+
+229
+00:41:46,612 --> 00:41:54,508
+ve,
+
+230
+00:41:58,291 --> 00:42:00,371
+Aya direkt çıkarttınız.
+
+231
+00:42:00,652 --> 00:42:03,091
+Biz 28 yılında olanları çıkardık.
+
+232
+00:42:03,371 --> 00:42:05,412
+Sıslatı olanları da dedik yaptık.
+
+233
+00:42:07,172 --> 00:42:10,992
+Son olarak metinletik modelleri vermek.
+
+234
+00:42:47,188 --> 00:42:51,307
+Yine çok büyük oldu yani. 128 çarpı 200 gibi bir şeyimiz oldu.
+
+235
+00:42:51,307 --> 00:42:52,307
+Evet.
+
+236
+00:42:52,307 --> 00:42:57,427
+Ama şimdi madenciliği, bunları işlerken hızlı oldum.
+
+237
+00:42:57,427 --> 00:42:58,868
+Nerede çalıştırdın?
+
+238
+00:42:58,868 --> 00:43:00,868
+Oledi.
+
+239
+00:43:03,028 --> 00:43:04,868
+Önce 4 yıl oldu.
+
+240
+00:43:12,692 --> 00:43:16,072
+Dileyle STM çalıştırdınız. O kaç saatte Dile'in oldu?
+
+241
+00:43:16,452 --> 00:43:18,471
+20-25 saatte.
+
+242
+00:43:18,871 --> 00:43:20,811
+Az kaç, az kat puanını yaptınız?
+
+243
+00:43:27,764 --> 00:43:46,064
+Bir dakika bir soracağım. Etiket beşinden biri ise kabul etmediniz değil mi? Hani etiketi indirdiniz ya, bunun sorusunu en az olanı yaptınız ama doğruluğa alırken tek ona baktınız.
+
+244
+00:44:25,844 --> 00:44:27,724
+Hepsinin sürekli faydalan.
+
+245
+00:44:27,743 --> 00:44:33,184
+Bir de independent olmasını, şimdi diyoruz, naive Bayes, klaster room'u independent diyor.
+
+246
+00:44:33,284 --> 00:44:37,963
+Ama biz de sadece Python geçiyorsa, şu geçiyorsa, şu geçiyorsa, birbiriyle bağlantılı ya keywordler.
+
+247
+00:44:38,024 --> 00:44:40,684
+O yüzden normal yani, evet.
+
+248
+00:44:42,104 --> 00:44:43,724
+Normal çalışmalar.
+
+249
+00:44:43,724 --> 00:44:44,724
+Evet, evet.
+
+250
+00:44:53,268 --> 00:44:54,148
+200 bin...
+
+251
+00:45:08,371 --> 00:45:13,051
+Bütün Elexigam, normal experience, clean as a
+
+252
+00:45:32,244 --> 00:45:33,824
+Üç saatçilerden sonra bir soru geldi.
+
+253
+00:45:37,203 --> 00:45:39,003
+Linear ESVM şey değil mi?
+
+254
+00:45:39,663 --> 00:45:42,804
+Şimdi ESVM'in içine, ESVM aslında böyle doğrusal ayırıyor.
+
+255
+00:45:43,024 --> 00:45:48,043
+Ama bazı uzaylar doğrusal ayrılmaz ya, matematiksel olarak içine kernel'lar kullanılıyor.
+
+256
+00:45:48,043 --> 00:45:52,003
+Yani kernel'ın içinde işte daha polinomlar vesaire var.
+
+257
+00:45:52,403 --> 00:45:56,144
+Muhtemelen diğer kullandığınız öyle bir şeydir, ondan yavaş çalışmıştır.
+
+258
+00:45:56,324 --> 00:45:57,884
+Ama iyi çalışmıştır.
+
+259
+00:45:58,463 --> 00:45:59,703
+Bayağı ilken kelimelere göre.
+
+260
+00:46:28,947 --> 00:46:31,307
+Gezak aslında. Bu nedenle yanlış kabar edildi?
+
+261
+00:46:32,387 --> 00:46:33,947
+Sistemi neden kullandı?
+
+262
+00:46:34,148 --> 00:46:37,347
+Evin, kızı zaten eğitilmiş vektörler var.
+
+263
+00:46:37,347 --> 00:46:39,659
+Daha bu vektörde kelime vektörler.
+
+264
+00:46:47,539 --> 00:46:52,340
+Teknoloji çifti tanıdabilir, bu teknoloji de yeni kelimeler ekleniyor.
+
+265
+00:47:49,396 --> 00:47:49,976
+Ve çakı.
+
+266
+00:47:57,940 --> 00:48:00,279
+Siz 3 müsünüz? 4 mü?
+
+267
+00:48:09,684 --> 00:48:10,244
+Ateş.
+
+268
+00:48:14,739 --> 00:48:24,099
+Teşekkürler. Peki, bu şey olmaz mıydı? Soru. Aslında bazı etiketler diğerinin alt kümesi gibi.
+
+269
+00:48:24,099 --> 00:48:37,279
+Burada aslında mesela Hierarchical Classroom yapılabilse, sınıflandırma değil de Hierarchical Classroom ile sadece etiketleri şey yapsanız ama makinenizde çalışmazdım.
+
+270
+00:48:39,728 --> 00:48:43,408
+Orijinal bir şey çıkabilir, neyin altı salı, ne neyle ilgili.
+
+271
+00:48:44,568 --> 00:48:50,688
+Bu cihara tartışı da sana dağmettirin ki, bu mekansi, aslında bunu geçmiyoruz.
+
+272
+00:48:50,927 --> 00:49:00,347
+Tamam, bir de şeyi yapın, öyle bir şey yapacaksanız, LSTM vermeden bu bağlaşlar falan eleniyor ya, onu iyi yapın, tamam mı?
+
+273
+00:49:00,347 --> 00:49:00,568
+Evet.
+
+274
+00:49:00,988 --> 00:49:02,768
+Yani onunla dikkat edin.
+
+275
+00:49:02,768 --> 00:49:03,268
+Evet.
+
+276
+00:49:42,804 --> 00:49:49,204
+Bir de bir şey daha. Sonra, bu LSTM tahmin yapabiliyor ya, metin yazabiliyor aslında.
+
+277
+00:49:49,984 --> 00:49:57,644
+Yani bu ara proje, büyütürme projesi falan olur. Kendi kendine soru yazacak. Tamam mı? Yani şeye soru yazacak.
+
+278
+00:49:57,644 --> 00:49:59,284
+Stack over flow'a kendisi.
+
+279
+00:50:00,000 --> 00:50:05,880
+seçtiğiniz zaman. Bakalım anlamlı soru sorabiliyor musunuz? Sonra insanlara da şey yapacak, anlamlı anlamlı
+
+280
+00:50:05,880 --> 00:50:10,440
+geriye skor verip ne kadar başarılı çalışma oradan ölçü edirsiniz. Ara proje falan da olabilir.
+
+281
+00:50:10,440 --> 00:50:18,000
+Tamam, biz teşekkür ederiz. Evet. Hadi gelin bakalım.
+
+282
+00:50:35,476 --> 00:50:36,315
+İkrar ne?
+
+283
+00:50:36,655 --> 00:50:36,936
+Evet.
+
+284
+00:50:37,376 --> 00:50:38,376
+Ölme ne?
+
+285
+00:50:41,940 --> 00:50:42,699
+Teşekkür ederim.
+
+286
+00:52:57,427 --> 00:52:58,007
+Teşekkürler.
+
+287
+00:53:16,467 --> 00:53:16,707
+Evet.
+
+288
+00:53:42,195 --> 00:53:53,195
+Bir şey soracağım ya.
+
+289
+00:53:53,195 --> 00:53:59,195
+Siz iki ayrı başlıyorsunuz, sağır mı birleşirdiniz? Nasıl oldu?
+
+290
+00:53:59,195 --> 00:54:02,195
+Birleşirdim değil mi? Tamam.
+
+291
+00:54:02,195 --> 00:54:08,076
+Tamam yok yok, okey okey. Ya benim birleşirdiklerimden. Tamam.
+
+292
+00:54:56,659 --> 00:54:58,219
+Üniversitesi nereden buldunuz?
+
+293
+00:54:58,539 --> 00:54:59,639
+Ego'dan.
+
+294
+00:55:10,771 --> 00:55:13,851
+Ve yapışık, bu çalışan bir tane aynı zamanda.
+
+295
+00:55:37,652 --> 00:55:38,952
+Bu hastalık var mı?
+
+296
+00:55:39,271 --> 00:55:40,032
+Tamam.
+
+297
+00:55:40,971 --> 00:55:42,271
+Data setinizin dağılımı.
+
+298
+00:55:42,632 --> 00:55:44,391
+Kaç kişi vardı elinizde yaklaşık?
+
+299
+00:55:44,612 --> 00:55:45,792
+Tamam.
+
+300
+00:56:36,371 --> 00:56:38,371
+Geri gelsin, nereye çizdiniz bunu?
+
+301
+00:56:41,371 --> 00:56:43,371
+Hangi tool da çizdiniz?
+
+302
+00:56:44,371 --> 00:56:45,371
+Matplot bükü.
+
+303
+00:56:47,371 --> 00:56:49,371
+Python'daki Matplot bükü.
+
+304
+00:56:50,371 --> 00:56:51,371
+Birkaç tane şey.
+
+305
+00:57:12,980 --> 00:57:13,659
+Mersi.
+
+306
+00:57:36,052 --> 00:57:40,152
+Ne yaptınız peki? Frost validation mi yaptınız yoksa satasite ayırsınız mısınız?
+
+307
+00:57:40,152 --> 00:57:41,152
+Çok teşekkür ederim.
