@@ -1,0 +1,575 @@
+1
+00:00:19,091 --> 00:00:19,911
+Hocam merhaba.
+
+2
+00:00:20,852 --> 00:00:22,291
+Merhaba [öğrenci], buyurun.
+
+3
+00:00:23,171 --> 00:00:28,012
+Derse başlamadan bir şey soracaktım. [kişisel bilgi]
+
+4
+00:00:29,512 --> 00:00:35,251
+Evet, aldım. Justadan çok hızlı yanıt veremedim. O yüzden kusura bakmayın.
+
+5
+00:00:35,251 --> 00:00:44,911
+Şimdi şunu bir bakayım. İsterseniz ölü taraftan bakayım. Ondan sonra ben size chatten biraz görüşlerimi yazalım. Olur mu?
+
+6
+00:00:45,332 --> 00:00:48,311
+Tamamdır. Tamam. Teşekkürler hocam.
+
+7
+00:01:04,659 --> 00:01:05,459
+Hocam merhaba.
+
+8
+00:01:06,679 --> 00:01:07,439
+Merhaba, buyurun.
+
+9
+00:01:07,900 --> 00:01:16,179
+Şey soracaktım, bu telafi vizesine girdikten sonra sonuçlar yüksek olan göre mi belirlenecek? Yani telafi yüksekse telafi değilse vize mi alınacak?
+
+10
+00:01:16,179 --> 00:01:21,479
+Öyle yapmayı düşünüyorum. Yani üç sınavda en yüksek ikisini kullanmayı düşünüyorum.
+
+11
+00:01:21,579 --> 00:01:25,179
+Anladım. Bir de şeyi sormak istiyorum hocam, bu ikinci vizede...
+
+12
+00:01:25,524 --> 00:01:34,403
+Bir önceki şeyde paylaşmıştınız dersin sonunda. Öngördüğüm çözümler, olabilecek çözümler gibi bir sınav öncesi yapabilme şansımız var mı acaba?
+
+13
+00:01:34,884 --> 00:01:36,864
+Tabii var, elbette. Teşekkür ederim.
+
+14
+00:01:38,084 --> 00:01:41,263
+O sana başkası olsun arkadaşım nasıl duyursunlar.
+
+15
+00:01:44,915 --> 00:01:51,096
+Hocam bir de final sınavı nasıl olacak acaba?
+
+16
+00:01:51,555 --> 00:01:53,736
+Tamam. Onu da konuşuruz.
+
+17
+00:01:55,924 --> 00:02:13,004
+Şimdi final sınavında sadece kod sınavı ve refactoring konusundan soracağım. Şöyle bir şey olacak. Size bir sayfa, hadi bilemediniz A4'ün öbür sayfasına da taşabilecek kadar, yani bir buçuk sayfa arası bir kod vereceğim.
+
+18
+00:02:22,719 --> 00:02:50,459
+Çünkü bazı kod kursları biliyorsunuz, shotgun, surger veya divergent, change birkaç yerde birden değişiklik yapma zorunluluğudur mesela. Ama diyelim ki kodun 3 ayrı yerinde, 3 ayrı fonksiyon, 3 ayrı metodu, long metodu olarak belirtirseniz bunlar 3 ayrı kod sınardır. Ama işte şu yerlerdeki duplicate kod, o tek bir kod kursudur.
+
+19
+00:02:50,719 --> 00:03:02,260
+Bu şekilde kod kusurlarını kodun içerisinde geçtiği yer veya yerlerde işaretliyorsunuz. Yanına da bir sayı koyuyorsunuz. Örneğin bir kısmı işaretleyip şuraya bir yazıyorsunuz.
+
+20
+00:03:02,620 --> 00:03:10,740
+Mesela diyelim ki şunun kod olduğunu düşünürseniz, şuralarında bir kod kusuru var.
+
+21
+00:03:13,683 --> 00:03:35,484
+İki kod kusuru var şeklinde. Kodun üstüne işaretler yapabilirsiniz. En pratiği o bence. Ondan sonra cevap kağıdınıza diyeceksiniz ki işte bir numaralı yerde long method kod kusuru vardır. Bunu da düzeltmek için extract method eylemini uygulayacağım.
+
+22
+00:03:41,683 --> 00:03:51,943
+İşte pull-up metot refactoringini uygulayacağım diye gördüğünüz bütün kod kusurların ve ilgili refactoring eylemini yazacaksınız.
+
+23
+00:03:52,383 --> 00:04:00,084
+Ve en sonunda kodu düzgün tasarlanmış halini bir anlar sınıf işlemesini çizeceksiniz. Olay bundan ibaret olacak.
+
+24
+00:04:00,563 --> 00:04:05,804
+Burada önemli olan 1. Doğru kod kusurlarını doğru yerde mi buldunuz?
+
+25
+00:04:06,364 --> 00:04:10,223
+2. Kod kusurlarının adı orijinal ismiyle doğru mu yazdınız?
+
+26
+00:04:10,763 --> 00:04:14,103
+3. Mantıklı bir refactoring eylemi mi önerdiniz?
+
+27
+00:04:14,763 --> 00:04:19,644
+4. O refactoring eylemini yine orijinal adıyla mı yazdınız?
+
+28
+00:04:19,644 --> 00:04:26,283
+5. Genel olarak tasarımız ne kadar doğru ve mantıklı ve UML sınıf işleması kurallarına uyuyor.
+
+29
+00:04:28,564 --> 00:04:29,704
+Kalkınız, muhteşem.
+
+30
+00:04:30,836 --> 00:04:53,836
+Hocam merhaba. Ben ikinci vizeyle ilgili bir şey soracaktım da. Hocam bu şeyde de hatta yazmışsınız da şimdi gördüm. Ben size mail de attım hatta bu konuyla ilgili. Bellek tasarrufunun önemli olduğu vurgulandığı için tek doğru çözüm Flyweight demiştiniz. Fakat prototype de aslında bellek tasarrufu sağlıyor. Yani bellek tasarrufundan kaynaklı prototype ile Flyweight arasında bu kadar büyük bir fark oluyor mu?
+
+31
+00:04:58,836 --> 00:05:23,456
+Intrinsik ve Extrinsik, içsel ve dışsel. İçsel bilgiyi havuzda pool, share ediyorsunuz. Tek bir kere geçiyor. Ama Extrinsik bilgi bir milyon tane nesne varsa o bir milyon neslinin sadece dışsel bilgisi çoğul oluyor. İçsel bilgisi tek oluyor. Evet, yani kesinlikle böyle. Bunun uçarı kaçarı yok.
+
+32
+00:05:24,851 --> 00:05:37,051
+Peki hocam, burada bellek şeyi vurgulanmış olmasaydı, tasarrufu, prototip metodu burada kullanılamaz mıydı? Çünkü çok elverişli duruyor. Bir sürü ders türü var ve bir tane dersten birden fazla generate edebiliyoruz.
+
+33
+00:05:37,051 --> 00:05:49,271
+Evet, o zaman kullanılabilirdi. O yüzden prototip diyeni yarı doğru çözüm olarak değerlendirdim. Tam puan değil, kısmi puan verdim o kısımdan.
+
+34
+00:05:49,716 --> 00:06:06,355
+O da ne oluyor işte? Ha ama daha kağıtları okumadım. Ama şöyle bir dakika okumuştum pardon. İkinci viziyi okumuştum doğru. Şöyle göstereyim. Gerçi arkada üstünde yazıyor yani o şekilde paylaştım.
+
+35
+00:06:06,932 --> 00:06:34,932
+Şöyle baktığımızda, A dediğim, doğru tasarım kalıbını mı önerdiniz? B dediğim, tasarım kalıbını doğru mu açıkladınız, izah ettiniz nedenini? C dediğim, çizdiğiniz sınıf şemasından tasarım kalıbını görebiliyor muyum? Dördüncüsü, çizdiğiniz sınıf şemasında uyarlarına uygun bir iş yaptınız.
+
+36
+00:06:34,932 --> 00:06:59,711
+Ve diğer yaptığınız bazı ayrıntılar Nesneye Yöneliminin kurallarına uygun mu? Bu şekilde dört açıdan notlandırdım. İşte şey olanlar, yani diyelim ki o ikinci soruda prototype diyen mesela dört ya da beş aldı. Biraz seçtiği kalıba göre başka kalıplar da olabilir. Şu an kim ne dedi tam hatırlamıyorum kağıtları. Hepsini göstermeyeyim şimdi. Durum bu.
+
+37
+00:07:00,372 --> 00:07:24,332
+Mesela örneğin [öğrenci] Hanım örnek şöyle geldi. İkinci soruya herhalde 5 dediğine geldiğime göre flylet dememiş. Prototype demiş belki de. Ama açıklamasında pek güzel yapılmamış. O yüzden 5-5 verdim o kısımdan. Ama seçtiği kalıbı hem ne seçmişse onu yönler çamasına çok güzel aktarmış. O aşamadan kalıbı görebiliyorum.
+
+38
+00:07:24,735 --> 00:07:45,536
+O kısmından tam verdim. Ve işte Nesneye'nin kurallarına uygun ve Yömen'in kurallarına uygun bir işe başlıyor. Oradan da 10 puan verdim. [kişisel bilgi]
+
+39
+00:07:46,004 --> 00:08:00,004
+Anladım hocam. Teşekkür ederim. Bir şey de son olarak sorayım. Arkadaşların da soruları vardı tutmayayım. Az önceki çözüm örneklerinde prototip'ın yanında bir faktör kalıbı mı kullanılmıştı sizin tavsiyenizde? Ben abstract faktörü kullanmıştım ama…
+
+40
+00:08:00,004 --> 00:08:14,004
+O da problemli. Yani diyorum ki işte diğer kalıpların şöyle sorunları var diyorum. Yani abstract faktörüde kalıtım ilişkisini kurarken biraz grip oluyor. Doğru, yani tam olarak…
+
+41
+00:08:14,004 --> 00:08:17,004
+Veyahut da işte kalıtımda mesela...
+
+42
+00:08:17,300 --> 00:08:43,200
+Çok net geçmeyen problemleri var. Mesela diyelim ki, şöyle bir kategorimi yaptım ama iş mantığına göre doğru, kalıp mantığına göre doğru ama uygulama alanına göre biraz yanlış veya eksik oldu. Yani nihayetinde beğenmediğim bir durum oldu. O yüzden, hele ki işte beylek tasarlı dediğim için hepsi ikinci kalıyor.
+
+43
+00:08:45,299 --> 00:08:57,299
+Rostradar arasında bu daha az kötü, bu daha çok kötü demiyorum. Doğru kalıtma o açıdan 100, yanlış kalıtma o açıdan 50. Yani 40. Öyle gibi bir şeyler yapıyorum.
+
+44
+00:08:58,039 --> 00:08:59,460
+Anladım hocam. Teşekkür ederim.
+
+45
+00:08:59,879 --> 00:09:00,339
+Teşekkür ederim.
+
+46
+00:09:02,899 --> 00:09:07,799
+Peki, şimdi başka soru yoksa şu çözümleri konuşalım isterseniz. Gerçi ekranımda duruyordum.
+
+47
+00:09:09,039 --> 00:09:14,479
+Hocam, bir de şey soracaktım. Birinci soru için siz ilk doğru kalıplara state ve strateji demişsiniz.
+
+48
+00:09:14,779 --> 00:09:15,459
+Prototype de olabilir.
+
+49
+00:09:15,819 --> 00:09:24,159
+Evet, prototype de olabilir hatta demişsiniz. Ama ben onu Chain of Responsibility ile yaptım. Hatta ben onun açıklamasına da size şey de yazmıştım hatta şey yaparken.
+
+50
+00:09:24,159 --> 00:09:30,240
+Biz Chain of Responsibility'yi yaparken hocam bizim bir e-ticaret sitesi kampanya örneğimiz vardı.
+
+51
+00:09:30,899 --> 00:09:38,599
+İnanılmaz benziyordu örnek. Ben o sebeple aslında direkt benim gözümde chain of responsibility geldim. Tam olarak farkındadır hocam.
+
+52
+00:09:39,299 --> 00:09:44,000
+Şöyle söyleyeyim şimdi. Soruyu da bir tıkra açalım. Hemen ilk kez birinci soru.
+
+53
+00:09:48,884 --> 00:10:03,964
+Şimdi burada üyeliğe göre, üyelik sınıfına göre yeni eklenen özellik tamam var ama şöyle diyeyim.
+
+54
+00:10:08,244 --> 00:10:14,664
+Mantıklı öyle ama evet. Şimdi bakayım, neden yarım yapmışlar onu bir düşünüyorum.
+
+55
+00:10:18,324 --> 00:10:28,644
+Belki şey, ben de Chain of Responsibility yaptım ama belki şeyden dolayıdır hocam, buradaki üyelikler işte uçuş yapılmadığı zaman düşüyor, uçuş yapıldığı zaman artıyor hiyerarşik olarak.
+
+56
+00:10:29,164 --> 00:10:33,624
+Belki onun tutulması için Chain of Responsibility'ye ayrı bir şey eklenmesi gerekiyordur.
+
+57
+00:10:34,100 --> 00:10:53,840
+Başlı başlı chain of responsibility yetmiyordur ama onda da bütün şeyi bozmuyor chain of responsibility. Yani onu biz statik olarak da hesaplayabiliyoruz. İşte uçuş yapmadıysa belli bir süre azalt ya da uçuş yaptıysa arttır. Artınca enumerik olarak işte bronza yükselt, işte gümüşe yükselt gibi. Bunu biz chain of responsibility sağlayabiliyoruz.
+
+58
+00:10:54,484 --> 00:11:16,364
+Evet, tahtacığım şey gibi, bu ATM mantığı gibi biraz da aslında, hani oradaki puanın tutulmasını ben düşündüm. Şey gibi, hani puan, örneğin diyelim işte 40 puan olan hatırlamıyorum ben de, işte silver üye diyelim. Yani bu 40 puanın kaç uçuştan geldiğini veya ne olduğu aslında bizim umurumuzda değil. Yani bizim için önemli olan 40 puan ulaşıp ulaşmadığı ve ulaştığında alacakları, yani karşılaşacağı kampanyalar.
+
+59
+00:11:16,364 --> 00:11:18,823
+Bunu sağlayabiliyoruz.
+
+60
+00:11:22,484 --> 00:11:25,004
+Ayrıca bir yöntem kullanarak tamamını yapmalıyız.
+
+61
+00:11:25,004 --> 00:11:30,943
+Site veya stratejide, hele ki site de varlık kendi durum geçişlerini kendi yapmaktadır.
+
+62
+00:11:31,463 --> 00:11:42,364
+Öbür türlü benim periyodik olarak, ne bileyim bir veri tabanında bir alet tanımlayıp veya ayrı bir belirli periyotlarla çalışan bir sorgulama prosesi tanımlayıp,
+
+63
+00:11:42,663 --> 00:11:50,484
+bütün kayıtlara tek tek bakıp, onların içerisinde işte bu üyelik çeşitlerinden birini yükselme veya alçalma durumunda kişi...
+
+64
+00:11:50,484 --> 00:12:18,203
+Bunu periyodik olarak belli bir periyodla belki zamanlaşmış bir görev, zamanlanmış bir görev ama yine de harici bir kaynaktan da onu yapmam gerekiyor. Halbuki state'de her çeşitli getter, setter veya durum bilgisini veya bu üyelik kurallarını etkileyebilecek bir metodu çağırdığımda o zaman o geçiş kontrolünü Nesne'nin içinde yapıp
+
+65
+00:12:18,484 --> 00:12:42,024
+Bir durumdan ötekine kendini daha rahat geçirebilirim. Chain of Responsibility'de normalde bir üst seviyeye okununuzu var. Ağacın alt seviyesine de veya zincirin öbür yönüne de okutarsanız yine bunu belki kodlayabilirsiniz.
+
+66
+00:12:45,652 --> 00:12:56,772
+En uygunu, konu, mantığı ve anlatış tarzından da uygunu. O yüzden. Şu an hakkında şöyle bir şey geldi. Eğer o kadar ayrıntıya girseydim, yani...
+
+67
+00:12:56,851 --> 00:13:11,032
+Sadece tam uygun kalıp, yarım uygun kalıp demeseydim. Chain of Responsibility'yi belki bunu 3 bölü 4 uygun kalıp yapabilirdim ama o kadar ince kralımda notlayıp okuyabilme çabasını tanıştık.
+
+68
+00:13:11,032 --> 00:13:24,491
+Yok, tabii ki haklısınız da. Şey için dedim ya bir dakika hocam. Hani örneğin siz şimdi orada listeyi verirken şey demişsiniz ya hocam. State, Strateji ve Prototype. Örneğin bence burada Prototype tam puan olduğu için ben şey dedim. Örneğin bence Prototype'dan daha uygun bir.
+
+69
+00:13:24,851 --> 00:13:26,559
+Yöntem olduğu için hani...
+
+70
+00:13:26,559 --> 00:13:42,159
+Chain of Responsibility de %100 olarak algılanabilirdi. Sadece state olmadığı için ben öyle bir şeydi. Çünkü bence prototype ile stratejiden daha çok uygun. State ile beraber, state'den sonraki en uygun cevap olabilir.
+
+71
+00:13:42,159 --> 00:13:51,879
+O zaman yarın puan düşüreyim. Ama şimdi tam not verdiklerimden kırmıyorum. Bundan sonraki dönemler içindeyim. Tamam, teşekkür ederim.
+
+72
+00:13:51,879 --> 00:13:54,559
+Hocam, ben de hemen bir şey söyleyebilirim.
+
+73
+00:13:54,559 --> 00:14:06,539
+Prototype yazmıştım da gördüm şu anda cevabım doğruymuş. Ama 5 puan almışım. Sınavdan sonra size bir mail atsam kağıdıma bakabilir misiniz acaba?
+
+74
+00:14:06,719 --> 00:14:08,159
+Hemen bakalım isminiz neydi?
+
+75
+00:14:08,939 --> 00:14:10,279
+[öğrenci].
+
+76
+00:14:10,279 --> 00:14:14,819
+Hemen bakalım şimdi. Evet şuradasınız. Bakalım.
+
+77
+00:14:15,251 --> 00:14:29,791
+Bir de hocam, Prototype'da ek olarak şeyler kullanılması gerekmiyor mu? Yani Prototype'da sadece bir nesnenin kalıbından farklı nesneler türetmek için Prototype'ı kullanıyoruz biz. Burada mesela Prototype'ı nasıl implement edebiliriz? Neyi kullanmak için? Neyi üretmek için?
+
+78
+00:14:29,791 --> 00:14:37,751
+Öyle olabilir. İlgili yolcunun seçim... Ne demiştim ben buna?
+
+79
+00:14:39,291 --> 00:14:41,491
+Yani her seferinde yeni bir yolcu üretmek gibi.
+
+80
+00:14:43,251 --> 00:15:05,251
+Yolcu nesnesini üye alan olarak ilk türü nesnesi atınız ki o da hangi tür bronz prototipi, gümüş prototipi veya gold prototipi olabilir. Singleton olmaz çünkü büyük ihtimalle bu iki bronz üye, iki farklı bronz üyenin iki farklı...
+
+81
+00:15:05,268 --> 00:15:16,348
+Bu durumları söz konusu olacaktır. Buralarda sayılardan falan. O yüzden Singleton biraz sakıncalı. Onun yanlış kullanımı olabilir. Ama Prototype uygun olabilir.
+
+82
+00:15:16,348 --> 00:15:18,628
+Pardon, buyurun.
+
+83
+00:15:18,728 --> 00:15:26,148
+Aslında şama şeklinde de düşünürseniz, diyelim ki Prototype üstünden yaptım. Şöyle bir şey demek istiyorum.
+
+84
+00:15:27,796 --> 00:15:46,756
+Benim aklıma ilk takılan şey, ben birkaç farklı kaynaktan çalışıyorum sınav dersinize de, orada prototype ile alakalı gördüğüm en önemli şey, siz de bahsetmiştiniz, uzay durumu sınırlıysa kullanılır ama uzay durumu çok küçükse kullanılır gibi bir şey yazmıyor. Uzay durumu çok küçükse prototype'a girmek biraz mantıksızmış gibi diğer kaynaklarda lanse edilmiş.
+
+85
+00:15:55,668 --> 00:16:16,067
+İşte bronz, altın veya işte gümüş bu değişebilir. Değişebileceği için bunu prototiple implemente değişmeyecek şeyleri biz prototiple implemente ediyorduk. Çünkü atıyorum bir oyun yapıyor olsak, canavar türümüz olsa onun farklı bir canavar türünü üretmek için farklı bir canavar prototipini kullanıyoruz. Ama o yeni ürettiğimiz canavarın o özelliği sabit kalıyor.
+
+86
+00:16:16,724 --> 00:16:44,724
+Ama bazı bilgileri de değişiyor nihayetinde. Evet ama tek bir özelliği implement etmek için prototype'ı kullanmak burada. O yüzden ben mesela benim de aklıma gelmişti sınavda. Bütün örneklere bakarken böyle prototype'ı da geçmiştim. Orada pek mantıklı gelmemişti. Bir de prototype burada sadece dediğiniz gibi üyelik alanını temsil etmek için kullanılabilir, atamak için. Ama işte uçuş yaptığı zaman düşür, işte şunu yaptığı zaman şuraya git, şu fırsatı kampanyayı göster. Çok daha fazla...
+
+87
+00:16:44,724 --> 00:16:47,044
+Ek mahalle çıkartır prototip burada kopanmak.
+
+88
+00:16:47,164 --> 00:16:53,944
+Evet. Yine de şu açıdan bir miktar ilgili siz dezavantajını doğru söylediniz, iyi söylediniz, teşekkür ederim.
+
+89
+00:16:54,864 --> 00:16:59,704
+Bir dezavantaj da şu, burada altı tane ayrı kalem var.
+
+90
+00:16:59,704 --> 00:17:02,584
+İşte abonelik, kiralama indirimi, çekin falan.
+
+91
+00:17:04,115 --> 00:17:27,635
+Prototype'da bu 6 tane durum için 6 tane üye alan, özel sabunerik var mı, araba kirama indirimi var mı, öncelikli şekil var mı? 6 tane boolean alan. Bu prototipten bir tane bronzerik prototipında durum bilgileri 2 true, 4 false. Ötekisinde 4 true, 2 false şeklinde bir şey olabilir ama çok çok uygun değil.
+
+92
+00:17:32,115 --> 00:17:39,195
+Düzgün yaptım. Prototype'ı yarım uygun şeklinde değerlendiriyorum. O şekilde yazdım.
+
+93
+00:17:39,396 --> 00:17:40,215
+Hayatta kaybettim.
+
+94
+00:17:40,416 --> 00:17:43,396
+Hocam artmayacak mı şimdi puan? 5 mi kaldı?
+
+95
+00:17:44,615 --> 00:17:45,655
+Bakalım, biliyorum.
+
+96
+00:17:46,336 --> 00:17:48,856
+Özür dilerim, böyle bir şeye sebep olduysam. Kusura bakmayın.
+
+97
+00:17:49,516 --> 00:17:50,235
+Ya, estağfurullah.
+
+98
+00:17:50,771 --> 00:18:01,331
+Şimdi burada bütün kağıtları ama daha doğrusu şuradan görebiliyorum. Burada 4 ya da 5 alanlar kimlermiş? Onların bir durumlarına bakayım.
+
+99
+00:18:03,604 --> 00:18:10,323
+Not düşünmek güzel bir şey değil. Düşünmeyeceğim. Ama yükseltiği yapayım mı bilmiyorum.
+
+100
+00:18:10,384 --> 00:18:18,384
+Evet hocam, ben orada şey dedim. Ben belki Chain of Responsibility tam olur dedim de hocam, prototype yerim oldu bir yanda. Evet hocam, orada benim matematik tutmadı.
+
+101
+00:18:18,384 --> 00:18:21,963
+Evet. Neyse, bir bakacağız.
+
+102
+00:18:23,463 --> 00:18:26,384
+Ama ben Chain of Responsibility'nin bence uyduğunu...
+
+103
+00:18:26,544 --> 00:18:35,404
+Düşünüyorum hocam. Yarımdan ziyade. Tek bir tane üyelik alanının Chain of Responsibility sağlanamaması durumu onu yanlış kılar mı? Orada biraz şeyim.
+
+104
+00:18:36,464 --> 00:18:44,884
+Dörtte üç uygun ya da yüzde doksan bile uygun dese, bu da yüzde yüz değilse bir alt kademe şeklinde değerlendirdim. Kademelendirince de böyle oluyor şeklinde.
+
+105
+00:18:44,964 --> 00:18:45,164
+Tamam.
+
+106
+00:18:50,355 --> 00:18:53,076
+Ben bakayım İran'ın Allah'ın mükağı var.
+
+107
+00:19:09,172 --> 00:19:12,771
+Demişim ki.
+
+108
+00:19:15,872 --> 00:19:27,851
+[öğrenci], dinliyorum. Şöyle bir probleminiz var. Prototarpta kalıtım şeklinde şemayı çizmişsiniz. Uçuş kartından alt sınıfı oluşturmuşuz.
+
+109
+00:19:27,851 --> 00:19:32,771
+Bronze kart, kumuş kart, altın kart. Fakat prototarpta kalıtım yok.
+
+110
+00:19:33,236 --> 00:19:46,976
+Kalıtım hiç gerektirmeyen bir kalıp bu. Üye alanların durumlarını değiştirerekten değişik prototayp örnekleri oluşturup bunları registre ediyorsunuz bir registry alanına, havuza.
+
+111
+00:19:48,655 --> 00:19:56,415
+Bugün YMH Smooth şamanızda bu havuzu da göremiyorum. Kalıtım kullanmanızda yanlış olmuş.
+
+112
+00:19:57,256 --> 00:19:59,996
+Hocam gördüm hatamı şu anda. Tamam teşekkür ederim.
+
+113
+00:20:00,000 --> 00:20:01,160
+En azından.
+
+114
+00:20:04,200 --> 00:20:14,880
+Not almışım. Yoksa bu kadar çabuk da yanıt veremezdim size. Söyleyeyim yani. Allah Allah, yeni falan diye biraz düşünmem gerekirdi. Kağıtta okurken bazı spesifik durumlar için not düşmüşüm.
+
+115
+00:20:15,019 --> 00:20:22,799
+Senin kenarda kendi tabii ki sisteme giremiyorum o notu. Kendime indirdiğim kopyalarınızı ben not düşebiliyorum falan.
+
+116
+00:20:22,799 --> 00:20:26,759
+O da bir not düşebilirim. Bu tür şeylere dikkat etmek lazım.
+
+117
+00:20:27,731 --> 00:20:38,231
+Peki özellikle kalıtımdan eğer sadece gerekiyorsa kullanalım. Yani gerekmediği yerde kullanmayalım şeklinde bir genel yaklaşıyoruz falan. O yüzden o da öyle olmuş.
+
+118
+00:20:38,231 --> 00:20:40,451
+Evet peki.
+
+119
+00:20:44,084 --> 00:21:07,703
+Ha, şeyleri tartışıyorduk. Evet, birinci soru için StateStrategy Prototype'ı yarıma çektik. Çay'ı tam %80-90 çektim ama o kadar kaderlendirme yapamıyorum. Builder da tam uymuyor. Yine bir şeyler çıkartabilirsiniz. Builder'ı da çıkartabilirsiniz ama veya abstract faktörüyle nihayetinde biraz kalmış oluyorlar. O yüzden gerek yok.
+
+120
+00:21:08,096 --> 00:21:25,036
+İkinciyi de zaten tartışmış olduk. Flyway diyoruz. Orada Nuh diyor peygamber demiyor hoca. Ya da inatından dönmüyor, görüşünü değiştirmiyor diyelim. Fakat işte zaten o tartışma da soru birleşmiş aslında. Soru birleşmiş değilmiş.
+
+121
+00:21:26,003 --> 00:21:28,743
+Hocam, soru 2 geçirmiş, pardon. Evet, buyurun.
+
+122
+00:21:28,923 --> 00:21:40,763
+Soru 2'de Flyweight'i kullandığımız zaman şeyi nasıl implement ediyoruz? Mesela zorunlu dersler var, servis dersleri var, her birinin farklı farklı şeyleri var. Hepsini Flyweight'te tek seferde implement etmeye çalışmalıyız öyle bir durumda değil mi?
+
+123
+00:21:41,483 --> 00:21:46,283
+Evet, işte zorunlu ders mi? Ödevi var mı? Projesi var mı? Bir şey mişey var mı? Falan falan.
+
+124
+00:21:46,843 --> 00:21:49,043
+Orada biraz ifels durumuna giriyor gibi.
+
+125
+00:21:54,003 --> 00:22:21,963
+Korkan kod olabilir, doğru. Ama bellek tasarrufu burada en önemli şey diye düşündüğüm için doğru modelleme yaparsak işletim masraflarımız, donanım masraflarımız çok daha fazla olacak. O yüzden parayı daha bu sefer öncelikle tutup kısa vadede öyle bir karar verdik. Ama tabii ki bakım maliyeti de onu da bir düşünmek lazım. Yani nihayetinde hatalar ya da geliştirme istekleri olduğunuz zaman.
+
+126
+00:22:22,003 --> 00:22:49,103
+Normalde daha iyi bir tasarımla bir birime mal oluyorken bu şekilde bir buçuk birime mal oluyorsa bakım işlemleri o zaman uzun vade için. Belki de o yazının bir sonraki sürümünde yemişim flyweight'i, boş ver, donanım masrafını biraz daha ön masraf yapıyoruz ama müşterilerimize bu yazının ücretini artıp oradan çıkarırız, bir şeyler yaparız falan gibisinden kararlar verilebilir.
+
+127
+00:22:49,587 --> 00:22:51,968
+Biliniz. Teşekkürler hocam.
+
+128
+00:22:52,108 --> 00:22:52,668
+Bir şey için teşekkürler.
+
+129
+00:22:55,988 --> 00:23:01,768
+Normalde sınıfının da başlamasına da rahat beş dakikamız var. O yüzden sorular varsa almaya devam edelim.
+
+130
+00:23:09,044 --> 00:23:09,404
+Bu ne?
+
+131
+00:23:23,443 --> 00:23:30,284
+Direkt 15.45 yapmışım. Yani 2 saat artı 15 dakikada ihtiyat payı şeklinde demişim.
+
+132
+00:24:25,044 --> 00:24:38,344
+Peki. Ben şimdi kendimi sessize, görüntüsüle alıyorum. Sizin sorunuz olursa chatten veyahut da fark etmemişsem chatte kıparlayan şeyi sözle sorularınızı sorabilirsiniz sınav hakkında falan.
+
+133
+02:12:10,644 --> 02:12:11,524
+Hocam...
+
+134
+02:12:23,572 --> 02:12:23,912
+Buyurun.
+
+135
+02:12:25,551 --> 02:12:31,391
+Hocam, sınavdan boğansız bir şey soracaktım. Ben final sınavı haftaya mı olacaktı yoksa sonraki hafta mı olacak?
+
+136
+02:12:31,391 --> 02:12:39,431
+Final programı belli oldu. Bölüm sayfasında duyuruldu. Onu da şöyle göstereyim size şimdi. Madem sordunuz.
+
+137
+02:12:40,771 --> 02:12:50,032
+Programı da çok şuan güzel. Final 2021. Lisan üstü final programı.
+
+138
+02:12:51,123 --> 02:13:00,343
+Şöyle büyültelim bakalım. Şimdi bakalım benimki ilk hafta mı, ikinci hafta mı? İkinci hafta yanılmıyorsam o zaman.
+
+139
+02:13:01,343 --> 02:13:12,083
+İkinci hafta ama saat 10'da. Yani ders saat 10'dan sonra başlıyor ama final sonu saat 10'da olacak arkadaşlar. 10-12 arasında.
+
+140
+02:13:12,627 --> 02:13:13,688
+Aynı yanı benim de.
+
+141
+02:13:14,007 --> 02:13:17,347
+Tamam, teşekkür ederim hocam. Çıkabiliyor muyuz dersten?
+
+142
+02:13:17,728 --> 02:13:24,587
+Tabii ki sorusu olmayan olacak arkadaşlar. Kağıdını yükleyip çıkan, istediği gibi çıkabiliriz. Ben sadece bekliyordum.
+
+143
+02:13:25,367 --> 02:13:27,007
+Sağ olun hocam. Kolay gelsin.
+
+144
+02:13:27,007 --> 02:13:28,327
+Geçmiş olsun. Teşekkürler.
