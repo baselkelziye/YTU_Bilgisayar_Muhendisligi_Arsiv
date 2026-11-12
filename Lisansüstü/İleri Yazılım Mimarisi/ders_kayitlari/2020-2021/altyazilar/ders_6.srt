@@ -1,0 +1,2059 @@
+1
+00:00:35,795 --> 00:00:38,115
+Günaydın. [öğrenci] geldi.
+
+2
+00:00:39,115 --> 00:00:40,115
+Günaydın hocam.
+
+3
+00:00:41,576 --> 00:00:42,515
+Biraz bekleyelim.
+
+4
+00:00:44,716 --> 00:00:45,396
+Tamam kızım.
+
+5
+00:02:39,156 --> 00:02:43,256
+Bugün de kimse yok galiba ya. Bekliyoruz ama normalde 2-3 kişi gelirdi.
+
+6
+00:02:47,731 --> 00:02:48,951
+Bilmiyorum hocam.
+
+7
+00:02:51,972 --> 00:02:59,012
+Havadan herhalde artık herkes nasıl olsa kayıdı sonradan izliyorum diye derslere pek katılmıyor.
+
+8
+00:03:01,532 --> 00:03:06,692
+Bir iki dakika, üç dakika daha bekleyeyim de bir beş geçeye kadar. Tamam. Sonra olmadı. Bakalım duruma.
+
+9
+00:03:07,752 --> 00:03:13,111
+Yani ya hızlı bir şekilde üzerinden geçerim slide'ların. Bir kişi daha geldi.
+
+10
+00:03:15,123 --> 00:03:22,443
+Tamam, beklemeye devam. İki dakika daha bekleyelim.
+
+11
+00:05:42,259 --> 00:05:54,399
+Tekrardan günaydın arkadaşlar. Herhalde daha fazla katılım olmaz diye düşünüyorum. Benle birlikte dört kişiyiz. Dersimize başlayalım. Fazla da uzatmayalım diyorum.
+
+12
+00:05:57,620 --> 00:06:05,159
+Bugün sizlerle ilk olarak davranış modellemesi konusuna bakacağız ve durum diagramları nedir?
+
+13
+00:06:05,536 --> 00:06:12,536
+Nasıl oluşturulur ve mimarimizde daha doğrusu modelimizi kurgularken bize neler katıyor? Bunlara bakacağız.
+
+14
+00:06:12,848 --> 00:06:32,648
+Sonrasında küçük bir örnek yapacağız. Yine davranış modellemesiyle alakalı, yani bir durum diagramı oluşturmakla alakalı. Sonra da bir adım daha ileriye gidip, klasik anlamda yazılım mimarisi dediğimizde tanım nedir ve ne anlamalıyız?
+
+15
+00:06:32,648 --> 00:06:40,708
+Mimari stiller dediğimiz yaklaşımlar, yani çözüm yöntemleri, yaklaşımları genel olarak isimleriyle ya da ana hatlarıyla nelerdir?
+
+16
+00:06:40,848 --> 00:06:55,388
+Bunlara bakacağız. Bu şekilde bu haftayı tamamlayacağım. Tabii sonrasında başka ifade edilmesi gerekenler de olacak. Mesela mimari görünümler. Aslında çoğunu gördük. UML kullanarak bunlar nasıl ifade edilir?
+
+17
+00:06:56,148 --> 00:07:08,848
+Bunun dışında sonrasında bir mimari ifade etmek için çeşitli diller vardır. Bu dillerden birini en azından tanımak gerekir. Ben bu ders kapsamında standart bilinen...
+
+18
+00:07:08,848 --> 00:07:36,848
+Akme diye bir dil var. Onun kısa bir tanıtımını yapıyordum. Sonrasında da işte orta katman çözümleri şeklinde konularımızı tamamlamak gerekiyor. Ama özellikle ben hani mimari stillerin genel yaklaşımlarını verdikten sonra sizlerin de katılımıyla, sizlerin de katkısıyla daha modern bir çözüm olan ve günümüzde standart olarak aslında yeni teknolojilerle birlikte kullanılan mikro sergisi.
+
+19
+00:07:36,848 --> 00:07:59,108
+Temelli Mimariler nedir, çözümler nedir? Burada uygulanması gereken tasarım yaklaşımları nelerdir? Bunları daha detaylı incelemeyi istiyorum. En azından dönemin diğer kalan ikinci yarısında sizlerin de katkısıyla hem de dönem içi değerlendirmemizi oluşturacak şekilde bu kısmını da incelemiş olacağız.
+
+20
+00:07:59,108 --> 00:08:00,628
+Evet, şimdi.
+
+21
+00:08:01,427 --> 00:08:25,427
+Davranış modellemesi deyince ne anlıyoruz? Şimdiye kadar biz ne yaptık? Bir problemi anlamaya çalıştık. Ondan sonra da çözüm yolumuzu ifade etmeye çalıştık. Yani bir tasarım ortaya koyup bu tasarımı göstermeye, modellemeye çalıştık. Ama bir yandan da aslında bunlar şöyle söyleyebiliriz. Hani bir ders önceki OCR'deki invariantlar gibi düşünebilirsiniz. Hani sabitler ya da değişmezler.
+
+22
+00:08:29,427 --> 00:08:56,067
+Olan özelliklerini tanımlıyor ama genellikle biz tepkisel sistemler yaratırız. Yani dış uyarılara karşı tepki veren, bunlara karşı davranışlar sergileyen sistemler geliştiririz. Yani özetle sorumuz şu olmalı. Bir sistem dış uyarılara nasıl tepki vermesi gerekiyor? İşte bunu da bir şekilde bir diagramla modellememiz gerekiyor. Kesin tanımları yapmak için de kullandığımız diagram durum diagramı olacak.
+
+23
+00:08:57,427 --> 00:09:04,387
+İçin o zaman önce bir durum kavramı nedir? Olay kavramı nedir? Bunlardan başlamak gerekiyor.
+
+24
+00:09:05,048 --> 00:09:18,288
+Durum dediğimiz kavram şudur. Herhangi bir anda, yani verilen bir T anında sistemdeki bütün değerlerin toplam, bütün değerlerin toplamıyla oluşan kümeye,
+
+25
+00:09:18,803 --> 00:09:45,023
+Hepsi bir aradayken oluşan durum ya da vaziyete diyeyim, durum adını veriyoruz. Gördüğünüz gibi aslında soyut bir tanım. Sanki ben bile söylerken Circularity'ye gittim. Kendi ismiyle kendini tanımlamaya çalıştım. Özetle herhangi bir andaki sistemin hali diyebiliriz. Bu da aslında bütün değişkenlerin aldığı değerlerin bir karşılığı olarak da düşünebilirsiniz.
+
+26
+00:09:46,803 --> 00:09:59,523
+Dışarıda yağmur yağıyor. Gerçi bugün daha yağmadı ama diyelim hani şu anda yağıyor olsaydı ben şunu söylüyorum. Dışarıda yağmur yağıyor. Aslında yaptığım şey şu. Seçilen bir noktada.
+
+27
+00:10:00,000 --> 00:10:26,180
+Zaman içinde tabii ki. Mesela şu anda saat 10.09. Seçilen bir nokta, benim bulunduğum lokasyon. Buradaki havada ne kadar yağış var? Bununla ilgili bir soyutlama yapıyorum aslında. Havanın durumunu söylemeye çalışıyorum. Daha karışık bir şey. Yağmurlu ya da değil. Evet, iki tane durumu olabilir. Daha karışık bir örnek. Mesela hayali bir mahallemiz var diyelim ya da kasabamız var.
+
+28
+00:10:27,187 --> 00:10:35,008
+Birbiriyle dik kesişen böyle grid gibi, New York Manhattan gibi düşünün. İşte 10 tane sokağı ve 8 tane caddesi var.
+
+29
+00:10:35,412 --> 00:10:56,991
+Diyelim. İşte lane'ler ve avenue'lar var diye düşünün. Ve içinde de sadece bir tane araba olsun. Tek bir araba bu kasabanın içindeki bu yollarda dolaşmak üzere geziyor. Ve herhangi bir teanında arabamız 3. sokak 5. caddede olsun. Yani tam onun kesiştiği noktada olsun. Bu durumda.
+
+30
+00:10:57,652 --> 00:11:22,932
+Benim kaç tane olası durumum olabilir? 10 sokak ve 8 caddem olduğuna göre benim arabam toplam 80 ayrı yerde durabilir herhangi bir teanında. Biraz önce havaya yağmurlu olurdu ya da olmazdı. İki durumu vardı. Ama şimdi benim kasabada, işte mahallenin içinde arabanın tek bir değişkenim var, tek bir arabam var. Bulunabileceği durumların sayısı 80'e çıktı.
+
+31
+00:11:24,019 --> 00:11:43,899
+İki arabamız olursa herhangi, tabii 6400 dedik. Neden? Çünkü ikisinde 80 tane durumu var. 80-80, 6400 tane durum yapıyor. 6400-1 diyeceksiniz. Çünkü iki tane araba aynı yerde bulunamaz. Peki, 6399 tane durumumuz var. Kabaca 6400 dedik.
+
+32
+00:11:52,019 --> 00:11:54,299
+senin küpü şeklinde ilerleyen
+
+33
+00:11:54,299 --> 00:11:54,919
+bir
+
+34
+00:11:54,919 --> 00:11:57,779
+durum artışı,
+
+35
+00:11:57,919 --> 00:11:59,299
+sayı artışı söz konusu.
+
+36
+00:12:00,720 --> 00:12:16,519
+Bir sistemdeki değişken sayısı ya da değişkenlerin alabileceği değerlerin mertebesinde durum uzayımızın boyutları büyür. Gördüğünüz gibi üstel olarak büyüyor. İşte buna da bir state explosion problem adı veriliyor. Yani bir durum patlaması problemi.
+
+37
+00:12:16,519 --> 00:12:28,639
+Öyleyse ben herhangi bir T anında sistemin bütün değişkenlerin alacağı değerlerle birlikte ne halde olacağını modellemeye çalışırsam teker teker işin içinden çıkamam.
+
+38
+00:12:28,720 --> 00:12:42,700
+Mesela bir örnek daha SOS oyunu. Tahta üzerinde XOX gibi ya da SOS gibi SOS yazıp çiziyorduk ya. Sadece 3'e 3'lük bir tahtanız olsun. Yani toplamda 9 tane kare var.
+
+39
+00:12:43,412 --> 00:13:00,132
+Her gözde S, O ya da boş kalma durumları var. Alabileceği değerler 3 tane. Bu durumda kaç tane şey olur? Henüz şimdi hani onu yazamazsın, bunun yanına bu gelemez gibi bir şey düşünmeyelim. Hani iki araba aynı yerde olamaz gibi bir önceki örnekte.
+
+40
+00:13:00,132 --> 00:13:11,372
+Şimdi 3 tane değişken var ve 3 tane değişken S, O ve boş toplamda 9 şeyde bulunabiliyor. 9 ayrı kare içinde yer alabiliyor.
+
+41
+00:13:11,412 --> 00:13:36,372
+Bu durumda 3 üzeri 9 eşittir. 19.683. Hani kuralları boş verin. S'nin yanına O yazarsak kaybederiz gibi şeyleri düşünmediğinizde olası durum uzayınızın boyutu 19.000 bilmem kaç. Her bir durumu teker teker yazmak doğal olarak büyük bir problem yaratacaktır. Biz bunun yerine sadece olabilecek durumlar konusunda bir modelleme yapacağız.
+
+42
+00:13:39,316 --> 00:13:40,172
+Ah...
+
+43
+00:13:43,731 --> 00:13:45,271
+Sıkıntı oldu benim bilgisayarda.
+
+44
+00:13:46,551 --> 00:13:47,171
+Bir saniye.
+
+45
+00:13:51,251 --> 00:14:04,091
+Neyse, bunu düzeltmeye çalışırız. Evet, durumlar bunlar özetle. Bizim herhangi bir t-anındaki değişkenlerimizin aldığı değerlerin haline o durum adını veriyoruz.
+
+46
+00:14:04,543 --> 00:14:21,624
+Olaylarsa aslında durumların oluşmasına sebebiyet veriyor diyebiliriz. Şu şekilde tekil, ani, atomik bir oluşuma olay adını veriyoruz. Ama bunun tabii ki fark edilebilir. Bir şey yapan bir davranış olması gerekiyor.
+
+47
+00:14:22,836 --> 00:14:30,416
+Tabii ki sistemimiz tepki verecek. Aslında sistemi uyaran, bir dış uyaran olarak da olaylar ya da iç uyaranlar da olabilir. Bunları düşünebilirsiniz.
+
+48
+00:14:30,416 --> 00:14:46,416
+Şimdi olaylar iki çeşit olabilir. Senkron olaylar ya da asenkron olaylar. Asenkron olaylar dediğimiz herhangi anda oluşabilen, rastgele oluşan, bir anda yığılabilen, zaman içine de yayılabilen.
+
+49
+00:14:49,491 --> 00:14:55,511
+Pardon, bir saniye. Benim bilgisayar gerçekten şu anda update yüzünden böyle oldu. Bir sıkıntı yaşıyorum da.
+
+50
+00:14:55,511 --> 00:15:01,631
+Evet, zamana da yayılabilir. Özetle rastgele oluşan olaylara biz asenkron olaylar adını veriyoruz.
+
+51
+00:15:02,052 --> 00:15:06,411
+Senkron olaylar ise periyodik aralıklarla olanlar. Genellikle...
+
+52
+00:15:06,644 --> 00:15:24,243
+Bunlar böyle bir sayaç ya da bir saate bağlıdır. Zamanlanmış olarak düşünün bunları. Genellikle işte bir periyodik olarak oluşması istenen olaylardır. Mesela her saat başında bir alarm verilmesi, ondan sonra buna göre bir şeyler yapılması gibi düşünebilirsiniz.
+
+53
+00:15:25,299 --> 00:15:41,479
+Şimdi olayların yaptığı şey aslında biz olay karşısında sistemimizde bir durum değişikliğine uğrarız. Yani olayların temeli sistemde bir durum değişikliği yaratmalarıdır. Buna da biz durum geçişi yani state transition adını veriyoruz.
+
+54
+00:15:53,299 --> 00:16:11,479
+Ya da işte oradaki sonuç artık mektupta kalmadı. Sonuç sayfasına girip bakıyorsunuz. O sayfaya girebilip de bakabildiğinizde hayatınızda aslında bir durumdan, mesela liseden mezun durumundan bir anda üniversite öğrencisi ya da kayıt yapma adayı durumuna geçiyorsunuz.
+
+55
+00:16:11,479 --> 00:16:21,299
+Bu da önemli bir değişiklik yaratıyor hayatınızda. İşte bir olaydır bu. Sonrasında sizin de, siz bir sistem olarak durum değişikliğinde kalabiliyorsunuz.
+
+56
+00:16:21,299 --> 00:16:21,699
+Hoşçakalırsınız.
+
+57
+00:16:23,059 --> 00:16:49,120
+Yine kullanıcılar olay yaratabilir. Örneğin işte butona basmak, bir şeyleri çekiştirmek gibi ya da bir şeyler yazmak gibi. Verilerde değişiklik olursa olay yaratılır. O yaratılabilir. Mesela işte bir termostat var. Sıcaklık değerine bakıyorsunuz oradan ve sıcaklık 100 dereceyi geçti. İşte bu sizin için bir olay yaratabilir. Ve zaman içinde olaylar tabii ki biriktirilebilir.
+
+58
+00:16:49,812 --> 00:17:05,731
+İlla hepsine olduğu anda tepki vereceksiniz diye bir şey söz konusu olmayabilir. UML açısından baktığımızda 3 tane, 4 tane var özür dilerim. Olay tipi. Sinyaller, metot çağrıları, veri durumları ve zaman akışı. Aslında biraz önce bunların çoğunu inceledik.
+
+59
+00:17:06,516 --> 00:17:30,436
+Asenkron bildirimlerinin hepsine sinyal adını veriyoruz. Dış etkenlerle falan oluşan. Senkron olan işlem yürütme ya da başlatma yani aslında metotları çağırma olayına da ikinci olay tipi adını veriyoruz ya da bu şekilde sınıflandırıyoruz. Veride sıcaklığın 100 dereceyi geçmesi gibi olanlara Data Condition adı veriliyor. Bir de Timeline var, Zaman Akışı.
+
+60
+00:17:30,736 --> 00:17:43,476
+Zaman içinde bir şeyleri takip etmeniz gerekiyorsa ki, timing diagramından da bahsetmiştim. Zaman içinde periyodik olarak belli olaylar gerçekleşecekse, bu da UML'deki dördüncü çeşitli olay olarak modellenmiştir.
+
+61
+00:17:43,955 --> 00:18:10,735
+Kabaca birkaç örnek vermek gerekirse durum ve olaylara yani state'ler ve eventler. Berlin'de Jesse Owens'ın 100 metre olimpiyat şampiyonu olması bir durum. Neden? Çünkü ben Jesse Owens açısından bakıyorum. Koşarken normal bir atletti ama işte finişi geçtikten sonra artık olimpiyat şampiyonu durumuna geçti. Yani onun rekor kırması bir olaydı.
+
+62
+00:18:11,955 --> 00:18:27,815
+Bu rekor sonradan kırıldı. 10 saniye limitinin altına düşmesi olarak düşünün. Artık bu 10 saniyen altına düşmüş bir atlet durumunda olmaya devam etti.
+
+63
+00:18:27,815 --> 00:18:38,036
+Bir renk mesela mor renk dediğimizde bu hiçbir şey değil. Sadece bir özelliğin aldığı bir değer. Yani bir durumun bir parçası sadece.
+
+64
+00:18:38,836 --> 00:19:06,396
+Bir binada yangın söndürme sistemi var ve sensör yüzünden devreye giriyor yangın söndürme sistemi. Doğal olarak bu bir olay. Niye? Çünkü bir uyaran sayesinde oldu. Ama tabii sistem açısından da düşünürseniz bunu, sistem ne yapıyor? Belli bir durumdaydı. Mesela bekleme durumundaydı. Ama şimdi ıslatma durumuna geçti.
+
+65
+00:19:06,836 --> 00:19:17,556
+Söndürme durumuna geçti diyebilirsiniz. Ama bir tetik olmasını sadece düşünürsek bu bir olaydır ve sistemin çalışmasına bir durum değiştirmesine sebep oldu.
+
+66
+00:19:18,316 --> 00:19:29,916
+Telefonun çalması yine bir olay. Telefon çalarken bir olay oluyor aslında. Sonuçta siz ya açıyorsunuz ya açmıyorsunuz. Yani ya konuşuyorsunuz ya konuşmuyorsunuz. Bu şekilde bir durumda oluyorsunuz sistem olarak.
+
+67
+00:19:32,468 --> 00:19:58,388
+Bu biraz önce dersin en başında bahsettik. Yağmur durumuyla alakalı, yani havanın durumuyla alakalı zaten hava durumu diyoruz bir tanım. Saatin zilinin 12'ye vurması fark etmişsinizdir. Hemen bir olay. Niye? Burada bir tetikleme mekanizması var. Uluslararası Uzay İstasyonu, bu ders kapsamında birkaç kere konuşmuştuk hatırlarsanız. Yine bu hiçbir şey değil, ne durum ne olay. Sadece çok karmaşık bir nesne ya da bir sistem.
+
+68
+00:20:00,000 --> 00:20:11,940
+Bilgisayarın ekran kurucusunun açılması da, bekleme durumuna geçiyor ya bilgisayar, o da açıldığı şey, açılma işlemi aslında yine bir tetikleyici bir olay olarak karşımıza çıkıyor.
+
+69
+00:20:12,435 --> 00:20:27,275
+Böyle işte hani aslında sistemimizde durumlar ve durumların geçişlerini sağlayan tepki verdiğimiz olaylar var. Olaylara tepki veriyorsak biz reaktif sistemizdir. Yani tanım olarak olaylara tepki veren sistemler reaktif sistemler olarak tanımlanıyor.
+
+70
+00:20:28,655 --> 00:20:40,435
+Şimdi normalen işlerin sırasını kontrol etmenin sorumluluğu sistemi kendisindedir. Ama reaktif sistemlerde uyaranlar dışarıdan gelir. Yani biz tepkilere göre...
+
+71
+00:20:40,435 --> 00:20:59,536
+Şimdi reaktif sistemleri modellerken ya da işte olay tabanlı sistemleri modellerken üç tane seviye vardır. En basit de kombinatoryal sistemlerdir. Burada sadece durumlar vardır, olaylar yoktur. Yani durum geçişi tabii ki olabilir.
+
+72
+00:21:05,748 --> 00:21:18,288
+Doğrusal olarak bir diğerinden sonra olur. Yani bir şekilde sıralı bir olay akışı yer alır. Son olarak da eş zamanlı concurrent sistemler vardır. Bunlar da aslında genel olarak tasarladığımız sistemler olacak.
+
+73
+00:21:19,284 --> 00:21:34,664
+Asenkron, eş zamanlı. Yani pek çok olay, pek çok durum geçişi var. Ve bu olaylar herhangi bir anda oluşabilir. Zamanında bizim bunları kestirmemiz olası değildir. Yani böyle bir periyodik yapı maalesef söz konusu değildir.
+
+74
+00:21:34,664 --> 00:21:42,684
+Şimdi kombinataryellerde sadece girdiler var. Ondan sonra çıktılar oluşuyor. Yani sonraki durumlar sadece girdilerle oluşuyor.
+
+75
+00:21:43,476 --> 00:22:03,056
+Ve durumun geçmişi, yani önceki olaylar, sonraki durumun ne olacağı konusunda herhangi bir değişiklik ya da etki yaratmıyor. Genellikle biz kombinatöryel sistemleri modellerken karar ağacı ya da karar tablosu kullanırız. İkisi birbirinin aslında aynısıdır. Çok farklı bir şey değildir.
+
+76
+00:22:03,056 --> 00:22:05,636
+Şimdi mesela şöyle.
+
+77
+00:22:06,483 --> 00:22:34,483
+Öncelikle elimizde bir atölye var. Atölyenin içinde üç tane bakın girdi var. Üç tane şalter nedir? Bir tane main switch var, ana şalter. Bir tane ışık şalteri var, bir tane de güç şalteri var. Yani aslına bakarsanız ışık şalteri açıldığında ışık açılacak, güç şalteri açıldığında da motor çalışacak. Elinizde böyle iki tane çıt çıt düğme var. Bunlar sayesinde bu girdiği hani on yaptığınızda bir tane motor çalışıyor, öbürünü on yaptığınızda ışık yanılacak.
+
+78
+00:22:34,483 --> 00:22:57,463
+Bu kadar. Yani girdiyle tamamen durum ve birbirine birebir bağlı. Bir de ana şalter koymuşuz. Ana şalter nedir? Ana şalter açıksa ancak bunlar olabilir. Ya da iki şalter çalışabilir. Ana şalter kapalıysa, gördüğümüz gibi şuradaki tabloda hiçbir şeyi çalıştıramıyoruz. Yani buradaki şalterlerin herhangi bir etkisi kalmıyor diyebiliriz.
+
+79
+00:22:58,420 --> 00:23:06,259
+Bu şekilde, şu girdi kombinasyonu olduğunda, bu çıktı kombinasyonu oluşacaktır.
+
+80
+00:23:06,399 --> 00:23:12,619
+Şeklindeki kesin değişmez ve birbirini etkilemeyen tanımlara kombinatöryal sistemler adını veriyoruz.
+
+81
+00:23:12,779 --> 00:23:14,899
+Aynısını karar ağacıyla da gösterebilirdik.
+
+82
+00:23:15,480 --> 00:23:20,039
+Tamamen aynı bilgi, sadece biraz daha farklı ya da okunabilir bir gösterim olarak düşünebilirsiniz.
+
+83
+00:23:20,039 --> 00:23:24,819
+Yani işte ana sivic açık mı? Hayır, o zaman her şey kapalı.
+
+84
+00:23:25,619 --> 00:23:53,419
+Evet, sonrasında yabu yabu ikisinden birini seçmeniz gerekiyor. Önce bakacak şekilde. Önce ışığa baktık. Evet, hayır. Işık hayırsa power'a baktık. O zaman işte power, ışık kapalı, motor açık şeklinde bir kombinasyona gitti. Burada yine kararlar ve eylemler olacak şekilde. Yani şunlar input. Input kararları, input'un aldığı değer çeşitlerine göre dallanacağız. Ve burada da output.
+
+85
+00:23:53,619 --> 00:24:14,519
+Yani ne yapacağımız, hangi durumda olacağımız seçilecek. Bu şekilde herhangi bir şeyi yok. Hani bir önceki duruma bağlılık gibi bir şey söz konusu değil. Sadece bir anda bir durumda olmamız söz konusu. Belli bir input için belli bir output ya da belli bir state'de olmamız söz konusu.
+
+86
+00:24:17,203 --> 00:24:28,143
+İkinci sırada Sequential Sistemler var. Burada aslında bir memori ya da bir tarihçe var. Yani biz önceden belli bir durumdaydık.
+
+87
+00:24:28,468 --> 00:24:47,348
+Bu duruma bağlı olarak, o duruma göre olaylar bizi başka bir yeni duruma taşıdı. Aslında tam olarak bir sonlu durum sistemi tanımı. Neden? Çünkü bulunabilecek durumlar belli bir sayıyla kısıtlıdır. En güzel modellemeyi burada işte Final State Machine'lerle yaparız.
+
+88
+00:24:56,468 --> 00:25:09,848
+Bu basit bir örnek. Garaj kapımız olsun bir tane. Fiziksel bir örnek vermeye çalışıyoruz. Bir tane motorumuz var. Motor kapıyı ya yukarı itiyor, ya aşağı çekiyor, ya da duruyor.
+
+89
+00:25:10,228 --> 00:25:25,768
+Motorda çalışıp durmasını sağlayan bir tane düğme var. Tamam mı? Bir on-off switch var. Bu switch'e göre mesela bastık kapıya sonuna kadar açılıp durur. Orada bir tabii sensör var. Tam açıldı sensörü de olması lazım. Ya tamamen kapanır durur.
+
+90
+00:25:26,163 --> 00:25:45,563
+Nedir? O da bitti. Sonuna kadar indi kepenk şeklinde bir sensör var. Ya da arada herhangi bir yerde bir tane stop butonu var. Stop butonu hani panik butonu gibi eyvah altından kedi geçiyor sıkışmasın. Ona basıyoruz. Şimdi düğmeye bastığımızda olacaklar doğal olarak mevcut duruma göre değişecek.
+
+91
+00:25:45,563 --> 00:25:54,163
+Mesela ben kapı ve motor durmuşsa ve ben düğmeye bastıysam ne yapması beklenir? Ters yönde hareket etmeyecek.
+
+92
+00:25:54,163 --> 00:26:04,803
+Yani mesela yukarı çıkarken düğmeye bastım. O zaman ne yapması lazım? Durması lazım. Ya da kapı aşağı doğru iniyor ve ben düğmeye bastım. Ne olacak?
+
+93
+00:26:05,215 --> 00:26:17,935
+Eyvah, kedi eziliyor deyip durup geri açılmasını bekliyoruz. Gördüğümüz gibi inerken başka türlü, çıkarken başka türlü, dururken başka türlü davranışlar sergilememiz lazım. Aynı olaya karşı.
+
+94
+00:26:17,935 --> 00:26:33,096
+İşte bu şekilde olan sistemleri önceki duruma göre olayın farklı durumlara geçmesini sağlayan ya da bu şekilde çalışan sistemlere de sequential sistemler adını veriyoruz.
+
+95
+00:26:33,215 --> 00:27:01,096
+Şimdi burada kaç durumumuz var? Bir, kapı açık, motor kapalı. Kapı kapalı, motor kapalı. Kapı yarım açık hani arada ama motor kapalı. Kapı aşağı iniyor, motor çalışıyor. Kapı yukarı çıkıyor, motor çalışıyor. Kapı yine yarım açık ama motor geçici olarak kapalı. Çünkü panik butonuna bastım. Hani panik modu olayı yarattım gibi düşünelim. Kaç tane olay var burada? Bir tane düğmemiz var. Sensörümüz var. İki tane sensörümüz var.
+
+96
+00:27:01,215 --> 00:27:10,076
+Kapı açık sensör ve kapı kapandı sensörümüz var. O zaman 3 tane de aslında olay geçişimiz olması lazım. Durum geçişi sağlayan.
+
+97
+00:27:11,076 --> 00:27:12,415
+Şimdi böyle bir tablo.
+
+98
+00:27:13,011 --> 00:27:37,711
+Bakalım, mevcut durum önde burada. Hani ben hangi durumdaydım? Hangi input, hangi aksiyon almamı sağladı? Ve bunun sonucunda benim sistemim hangi sonraki duruma geçti? Mesela kapı yarım açık, motor duruyor. Kapı yarım açık, motor duruyor ya iki tane geçiş sağlamışım. Nereden? Birinde motor yukarı çalışıyormuş, birinde motor aşağı çalışıyormuş.
+
+99
+00:27:41,011 --> 00:27:59,211
+Durdurup sonraki duruma geçiyor. Peki kapı yarım açık, motor duruyor durumundayken, şuradayken ve şurada da var. Düğmeye basıldığında motor ya aşağı doğru çalışacak ya yukarı doğru çalışacak. Durumlar, olaylar arttıkça buradaki tablo doğal olarak okunmaz bir hale alır.
+
+100
+00:27:59,567 --> 00:28:05,567
+Bunun yerine, şurada gördüğümüz gibi bir durum geçiş diagramıyla bunu modellemeye çalışırız.
+
+101
+00:28:05,567 --> 00:28:11,567
+Aslında grafik gösterim. Bunlar oval olabilir. Genellikle yuvarlaklarda çizersiniz.
+
+102
+00:28:11,567 --> 00:28:16,567
+Ya dikdörtgen, hani böyle yazılar olduğunda genellikle dikdörtgende kullanabilirsiniz.
+
+103
+00:28:16,567 --> 00:28:25,567
+Bunların bağlantıları da durum geçişleri. Hangi eylemde ne yapılacak şeklinde, hangi olayda hangi eylemle hangi duruma geçilecek.
+
+104
+00:28:25,567 --> 00:28:27,567
+Bunları modelleriz.
+
+105
+00:28:27,567 --> 00:28:40,428
+Nerede durduklarının hiçbir anlamı yok. Yani bunu 90 derece çevirseniz de, 180 derece sola da çevirseniz aynı. Herhangi bir, bu çok önemli, en yukarıda duruyor gibi bir manası doğal olarak bulunmuyor.
+
+106
+00:28:41,779 --> 00:28:58,440
+İşte bunu şey hani herhangi bir anda belli bir durumdayız. Ondan sonra bir olay olduğunda olay olana kadar o durumda kalmaya devam ediyoruz. Olay olduğundaysa belli bir eylemli bir geçiş yapıyoruz gibi düşünerek buradaki geçişleri tasarlayabilirsiniz.
+
+107
+00:29:08,884 --> 00:29:36,804
+Herhangi bir eylem olmadan aslında geçiş yapmak nedir? Ben şurada güvenlik nedeniyle herhangi bir input almasam bile şu durumdayken mutlaka motoru çalıştırıp şuraya doğru geçiyorum. Neden? Güvenlik için. Herhangi bir uyaran olmadan, olay olmadan da epsilon geçiş ile başka bir duruma geçiş sağlıyorum. Bunlar da olabilir. Bunlara epsilon geçiş adını veriyoruz herhangi bir olay harici.
+
+108
+00:29:36,884 --> 00:30:00,000
+Yapılan otomatik durum geçişleri. Başka bir örnek, çok üzerinde durmayacağım ama mesela bir telefon var. Telefon açtım. Telefon hazır. Ondan sonra telefonun ailesini yerine koydum. On hook, off hook durumları. Aldığımda mesela ahize elimdeyken hangi durum var?
+
+109
+00:30:00,000 --> 00:30:05,819
+duruma geçebilir miyeri bırakabilirim ya da işte bir numara çevirebilirim numaraya bastığım
+
+110
+00:30:05,819 --> 00:30:08,044
+sürece Dayanlık tekte kalmaya devam ederim
+
+111
+00:30:08,051 --> 00:30:35,711
+Son numara çevrildiğinde, tabii burada aslında bir kontrol de olması lazım. Mesela çalma durumuna geçiyor. Çalma durumunda iki tane şey geçebilir. Üç pardon. Bir, çalarken ben telefonu kapatabilirim. Direkt lap diye. İki, meşgul tonu alabilirim. Üç, hat açılabilir. Hat açıldıktan sonra da mesela ben kapatabilirim ya da aradığım kişi.
+
+112
+00:30:36,051 --> 00:31:00,251
+Tı kapatarak benim yine böyle şey hale geçmeme sebebiyet verebilir. Kapalı hale geçmeme sebebiyet verebilir. Bu şekilde geçişleri şey yapabilirsiniz, modelleyebilirsiniz. Burada gereksiz etiketler daha iyi modellenebilir. Özellikle de eş zamanlı sistemlere geçtiğimizde bunu daha da basitleştirerek anlatmak daha kolay olacak. Basit bir örnek olsun, hatırlama olsun diye buraya koydum.
+
+113
+00:31:00,980 --> 00:31:16,819
+Şimdi durum geçiş diagramlarında sıkıntı şurada. Çok fazla geçiş görebiliyoruz. Özellikle de n tane durum, m tane olay varsa doğal olarak bunların çarpımı mertebesinde olası geçiş var. Hepsi olmak zorunda değil ama buraya kadar uzay büyüyebiliyor.
+
+114
+00:31:16,819 --> 00:31:28,339
+Ve genellikle çok fazla durumumuz var. Ve olabileceklere göre de uzayımız yine üstel olarak artıyor. Herhangi bir iç içe bulunma ya da işte mesela burada söyledik ya.
+
+115
+00:31:28,980 --> 00:31:36,299
+Kaç numara çevirmem gerekiyor? Kaç kere burada dönmesi gerekiyor? Bununla alakalı herhangi bir kontrolü de gösteremiyoruz.
+
+116
+00:31:37,519 --> 00:31:45,259
+O zaman ne yapacağız? Biz bu problemleri kısmen en azından çözmek için durum diagramlarını kullanacağız. Bunlara state chart adını veriyoruz.
+
+117
+00:31:46,200 --> 00:31:54,960
+Tabii bazen öyle durumlar olacak ki state chartlar bile size yetmeyebilir. Bunların da yeterli gelmeyeceği karmaşıklıkta sistemler olabilir karşınızda.
+
+118
+00:31:57,236 --> 00:32:16,556
+Bunu David Harrell geliştirmiş, state chartları. Aslında sonlu durum makinesi, durum geçiş diagramını biraz iyileştirmiş ve buna durum diagramı adını vermiş. Yaptığı temel şeyler aslında karmaşıklığı yönetmek için çeşitli mekanizmalar tasarlayıp bunları ortaya koymak.
+
+119
+00:32:17,619 --> 00:32:35,159
+Bizim açımızdan da bir mimar tasarım yaparken, özellikle de davranışları modellerken, yani sistemin vereceği tepkileri modellerken de, UML'de bunu kullanabiliyoruz. Çünkü UML'de State Chart mevcut ve işte yine Case araçları bunu destekliyor. Çok basit sembollerimiz var.
+
+120
+00:32:35,827 --> 00:32:58,048
+Genellikle şöyle kenarları yuvarlatılmış dörtgenler kullanıyoruz. Bunlar bizim durumlarımız. Mesela işte burada bir boş ya da bekleme durumu bir de aktif durumumuz varmış. Yani benim sistemi aktif durumdadır. Aktif durumdan da idle duruma şu şeyle olayla şu eylemi yaparak bu duruma geçmesi sağlanabiliyormuş.
+
+121
+00:33:03,827 --> 00:33:17,427
+Bu da final state. Yani olaylar oldu bitti. Sonuçta benim sistemim hangi durumda? Son durumum ne olacak? Bunu da şurada içine bir tane daha çerçeve çekilmiş bir noktayla bunun üzerine ifade ediyoruz.
+
+122
+00:33:19,251 --> 00:33:38,571
+Başka neler var? Durum diagramlarının eklediği yeni özellikler, durum geçişine eklediği özellikler şunlar. Birincisi derinlik, iç içi gruplama. Belli bir durumun aslında kendisi de karmaşık bir durum makinesi olabilir. Yani böyle bir şeyin içine girip de onu zoom yapmak gibi düşünebilirsiniz.
+
+123
+00:33:38,571 --> 00:33:46,832
+En önemli katkılardan bir tanesi eş zamanlı modellenmesi ki bu bizim aslında durum uzayımızı çok fazla azaltıyor.
+
+124
+00:33:47,251 --> 00:34:09,372
+Bu süreçlerde farklı sayılarda durumlar var. Normalde M çarpı N demiştik ya, burada ayrı ayrı olayları ele aldığımız için durumları olan etkilerini bunları M artı N şeklindeki bir karmaşayla gösterebilir hale geliyoruz.
+
+125
+00:34:10,387 --> 00:34:28,207
+Koşullu geçişler yine sağlanmış durumda. Yani ben belli şartlarda ancak durum geçişini sağlamayı gösterebiliyorum. Belli giriş-çıkış eylemlerini ve aktivitelerini ifade edebiliyorum. Olaylara parametre verebiliyorum ki bu önemli bir şey. Olay sayesinde aslında benim veri aktarabilmem ortaya çıkıyor.
+
+126
+00:34:38,387 --> 00:34:43,387
+Nerede kalmıştım, hangi state'inde kalmıştım diye hatırlama davranışı var ya da özelliği var.
+
+127
+00:34:43,387 --> 00:34:50,387
+Ve yine varsayılan durum, ben bir şey söylemediysem de varsayılan olarak şu durumda olması bekleniyor şeklindeki gösterim.
+
+128
+00:34:51,327 --> 00:34:54,347
+Yine burada durum diagramlarında state chart'lar da mevcut.
+
+129
+00:34:55,635 --> 00:35:07,855
+İç içe gruplama dediğim şey, işte burada basit bir örneği var. Birebir eşlenik bu iki tane durum diagramı. Burada A, B ve C durumlarımız var. Tamam mı? Başlangıçında varsayılan durumumuz da A'ymış.
+
+130
+00:35:07,855 --> 00:35:20,936
+Şimdi ben burada bakıyorum. Mesela F, A'da da olsam, C'de de olsam aslında F'ye geçiyorum. Ve burada da işte C'de H'ye geçmişim.
+
+131
+00:35:21,907 --> 00:35:26,747
+Ve E olayıyla da B'den A durumuna geçiyorum.
+
+132
+00:35:27,167 --> 00:35:31,567
+Şimdi burada tabii çok anlamsız gelecek ama hani çok basit bir soyutlama oldu.
+
+133
+00:35:31,567 --> 00:35:40,787
+Ben burada D diye yeni bir durum tanımlasam ve bunu da varsayılanı olarak hani D'ye birisi geldiğinde aslında varsayılan olarak A'ya gelecek diye göstersem.
+
+134
+00:35:41,387 --> 00:35:49,907
+Aslında burada yaptığım tek şey, burada çıkan iki tane ok yerine burada D durumundan hani bu içi grupladığım A, C grubu olan D.
+
+135
+00:35:49,907 --> 00:36:08,907
+Sadece tek bir F çıkartmak. Bu F'de B durumuna geçiyor. B durumundan E ile A'ya geçebiliyorum. H ile de bakın sadece D durumuna geçiyorum. Ama ben burada şunu tanımlamışım. Eğer ben bunun içine geldiysen varsayın olarak, pardon, dışarıdan gelirken...
+
+136
+00:36:10,771 --> 00:36:36,692
+Başlarken A ama ben bu duruma D durumuna girdiysem eğer başka bir durum geçişiyle o zaman C'ye geleceğim şeklinde. Bunun varsın C'dir diye göstermişim. Şuradaki H C'ye gidiyordu ya. Bunu bu şekilde modellemişim. Bunu direkt çizseniz ne olurdu? Çok bir şey olmazdı. Çok çok basit bir örnek çünkü bu. Fakat ben burada toplamdaki giriş çıkış ya da durum geçiş sayısını azaltmayı hedefliyorum.
+
+137
+00:36:37,012 --> 00:37:00,512
+Mesela buraya baktığımızda iç içe gruplama ile alakalı başka bir örnek nedir? Ben burada heating state'in içinde iki tane durumum var. Aslında iki tane durumum vardı. Ben bunları heating diye böyle bir sanal grubun içine aldım. Ne yaptım? Varsayılan activating ama hazır olduğunda da active state'e geçiyor. Şimdi active state'e geçmesi ne demek? Aslında bu şey.
+
+138
+00:37:01,204 --> 00:37:25,204
+Şöyle okuyalım. Hani benim normalde boş durumdayım ya da idle bekleme durumundayım. Eğer shutdown edersem final state'e geçiyorum. Idle state diyeyim. Yani ben varsayın olarak buradayım. Şey oldu, çok sıcak oldu. Tamam mı? Ne yapmam lazım? Cooling state'e geçmem lazım. Tamam mı? Belli bir sıcaklığı bulana kadar. Bakın burada desired temp'i verebiliyorum. Sonra...
+
+139
+00:37:25,907 --> 00:37:53,907
+Diyelim ki Cooling State'deyim. Hani klimayı çalıştırdım, soğuttum, soğuttum odayı, ortamı. Ondan sonra o sıcaklığa geldiysem tekrar Idle State'e geçiyorum. Çok sıcak oldu. Bu State'deyim. Belli eylemler burada tabii ki. Hani davranışlar sergileniyor. Sonuçta tekrar bu State'e geçiyorum. Belli bir durum geçişiyle. Mesela işte o sıcaklığa erişmiş olmamla. Tam tersi mesela Too Cold olduğunda da Heating State'e geçiyorum. Ama Heating State'e geçtiğimde aslında...
+
+140
+00:37:53,907 --> 00:38:11,127
+Activating State'e geçiyorum. Bunun için de Activating'de de olsam, Aktif'te de olsam, diyelim ki çok fazla ısıttım. Çok ısıttığım için işte şey oldu. Çok ısındı, biraz soğutmam lazım diye Aydal'a geçmeden direkt şeye geçebilirim.
+
+141
+00:38:11,923 --> 00:38:39,903
+Etten püşüraya da koymamız iyi olurdu. Belli bir sıcaklıkta eriştirme tekrar idle state'e geçebilirim. Burada ekstradan ne var? Cool iken çok soğuttum. Eyvah çok soğudu ortam deyip hemen ısıtma moduna geçebiliyormuşum. Saçma biliyorum. Hani bu kadar böyle ısıtma ve soğutma arasında direkt geçiş olması biraz garip bir davranış olur ama bu şekilde bunları gruplayarak da şurada her birinden ikişer ok çıkarmak yerine şunu ve şunu.
+
+142
+00:38:39,923 --> 00:38:55,943
+Şunu ve şunu. Ve her birine bir tane ok almak yerine daha az sayıda, en azından bunu sanal olarak gruplayarak daha az ok çıkaracak, daha az durum oluşturacak şekilde modelliyebiliyorum.
+
+143
+00:38:57,331 --> 00:39:11,791
+Burada da başka bir örnek var. Üzerinde durmaya gerek yok. Sadece şurada ekstra olarak şart koşullara bakalım. Mesela Continue doğruysa, Processing'de Continue doğruysa sürekli Select'e geçip Select'ten Proces'e geçiyormuş.
+
+144
+00:39:11,791 --> 00:39:25,331
+Ama Not Continue doğru olursa, yani buradaki mesela bir özellik, nesnenin taşıdığı bir Boolean özelliği kontrol ediyoruz. Not Continue olduğunu ya da False olduğunda da Processing'de...
+
+145
+00:39:25,331 --> 00:39:48,932
+Link'ten Printing State'e geçmemizi sağlıyormuş. İkinci burada dikkat etmemiz gereken farklı olan şey Entry ve Exit ifadeleri. Şimdi bu ne demek? Entry yazdık, Read Card dedik değil mi? Aslında burada yapmaya çalıştığımız şey, ben Active State'e giriyorum ya, yani şuradaki bu kutunun içine girdim ya, mesela Card Inserted ile girdim.
+
+146
+00:39:49,684 --> 00:39:51,483
+Ya da Cancel'la girdim.
+
+147
+00:39:51,903 --> 00:39:53,784
+Şimdi neyle girersem gireyim.
+
+148
+00:39:53,963 --> 00:40:00,000
+Aslında ben burada herhangi bir state mesela Validating'e geçmeden önce mutlaka kartı okuma eylem.
+
+149
+00:40:00,000 --> 00:40:20,920
+Bu durumdan herhangi bir yerden, herhangi bir şekilde nasıl olursa olsun çıkıyorsam eğer, ki burada sadece printingten aydınlaşmış gösterilmiş, her exit'te mutlaka bu state'den çıkarken mutlaka eject kart davranışının da mutlaka çalıştırılması gerektiğini ifade etmişim.
+
+150
+00:40:28,000 --> 00:40:31,099
+Durum geçişleri de buradaki örnekte karşımıza çıktı.
+
+151
+00:40:32,039 --> 00:40:35,619
+En güzel yanlarından biri eş zamanlılık. Şimdi göreceğiz.
+
+152
+00:40:35,619 --> 00:40:45,699
+Basit bir şekilde durumun eş zamanlı çalışan parçaları varsa, aynı anda çalışan parçaları varsa bunları kesikli çizgiyle ayırarak gösterebiliyoruz.
+
+153
+00:40:46,612 --> 00:41:01,531
+Yani her makinede mevcut durumlar olabilir. Eş zamanlı çalışan ve yine durum geçişlerine, aynı olaylara tepki verecek şekilde durum geçişi yaratabilirler. Ve her biri de geçişlerde yine çeşitli aksiyonlar.
+
+154
+00:41:02,547 --> 00:41:17,963
+Bu örneğe bakalım.
+
+155
+00:41:19,092 --> 00:41:39,392
+Bu soyutlamalarını A ve D durumlarına alarak, şurada gördüğümüz eş zamanlı A ve D durumlarını alarak karmaşayı aslında azaltmış oluyoruz. Nedir bu? Bakın burada B ve E var. B ve E'de G olduğunda B ve G'ye geçiliyormuş gibi. Yani hem B hem E eş zamanlı olarak çalışıyor. Eş zamanlı durumlar.
+
+156
+00:41:47,092 --> 00:42:03,112
+Bakın, şuradaki durum bir Y durumudur dedim. Bu Y durumunun eş zamanlı iki parçası vardır. A ve D'dir dedim. A'nın içinde B ve C durumlarım var. D'nin içinde de E, F, G durumlarım var. Bunların arasındaki durum geçişleri de bu şekildedir dedim.
+
+157
+00:42:08,244 --> 00:42:25,244
+En azından şunu da biraz daha rahat okuyabilir hale geliyoruz. Diyelim ki ben Y durumundayım. Tamam mı? Ve E olayı oluştu. Benim eş zamanlı çalışan bir parçam olan A parçası, bir alt sistem gibi düşünün ya da bir modülüm. B durumundan C durumuna...
+
+158
+00:42:26,003 --> 00:42:40,684
+Pardon, C durumuna geçecek. Aynı zamanda, işte bu E durumuyla, mesela eğer ben F durumundaysam burada, o zaman da G durumuna geçeceğim. Ama ben burada mesela E durumundaydım. E oldu. Burada E'de kalmaya devam ediyorum. Tamam.
+
+159
+00:42:41,088 --> 00:43:09,088
+Ya da ben burada başka bir yerdeydim. Aynı zamanda E oldu ve I durumunda olan bir parça var. Bununla birlikte gördüğünüz gibi şuradaki Y ile aynı şeyde. Aslında ben bu I'dayken de E olduğunda direkt olarak buradaki G'ye ve C durumuna geçişi modelleyebiliyorum. En azından karmaşayı daha okunabilir, daha takip edilebilir hali.
+
+160
+00:43:09,088 --> 00:43:12,327
+Yömel'de de bunu bir şekilde gösteriyoruz.
+
+161
+00:43:12,327 --> 00:43:13,768
+Kesikli çizgi.
+
+162
+00:43:18,931 --> 00:43:35,491
+Şablon gösterim ama UML diagramlarındaki tam karşılığı bu şekilde görebilirsiniz. İşte bu bir state, maintenance state. İçinde iki tane eş zamanlı çalışan durum makinesi var. Biri testing state, sub state, biri de commanding sub state.
+
+163
+00:43:46,931 --> 00:44:07,612
+Bu mesela Testing Devices, Self Diagnosis, Finish şeklinde otomatik durum geçişlerini yaparken Commanding'deki sadece bekleyeceğiz. Bir tuşa basıldığında Command State'e geçeceğiz. Sonrasında devam edildiği sürece Waiting State'e devam edeceğiz. Devam etmediği sürece de Commanding State'den çıkacağız.
+
+164
+00:44:08,083 --> 00:44:36,083
+Bu şekilde. Aslında burada Final State'lere geldiğimizde ne yapmış oluyoruz? Burayı bitirdik, burayı bitirdik. Idle State'e geri dönmüş oluyoruz. Diyelim ki burası bitti ama burası Idle State'e henüz gelmedi. O zaman ben hala burada durmuş olsam bile, Final State'de olmuş olsam bile eş zamanlı çalışan bu makinede de beklemeye devam edip ne zamanki Not Continue oldu, ikisi de buraya erişti, o zaman ben buradaki durum geçişiyle...
+
+165
+00:44:36,083 --> 00:44:42,103
+Idle State'e geçebilirim. Yani eş zamanlılık bunu da kontrol edebilmemizi sağlıyor.
+
+166
+00:44:47,155 --> 00:45:05,175
+Her şey bazen bu kadar bağımsız ve kolay olmayabilir eş zamanlı makinelerde. Bunların bir şekilde iş birliği yapmaları, yani bu alt makinelerin birlikte çalışmaları da beklenir. Yoksa ben onları diyagramda niye o kadar eş zamanlı yaptım, bağımsız yapardım. Bağımsız olabilirlerdi.
+
+167
+00:45:05,811 --> 00:45:28,619
+Bir öncekine baktığınızda birbiriyle alakalı hiçbir beklentileri yok. O yüzden bunun bir tane Testing State, bir tane de Commanding State olması, ayrı ayrı olması herhangi bir modellemede değişiklik yaratmayacaktı. Ama bunların bir şekilde birlikte çalışmaları da beklenir. O zaman ben bunları bir şekilde koordine etmeliyim ya da senkronize etmem gerekebilir. Bunları yapmak için de...
+
+168
+00:45:29,012 --> 00:45:56,172
+Bir Broadcast ya da Broadcast Cascade eventlerim var. Bir de koşullu geçişler. Yani veri koşulları, veri durumuna göre koşullandırıp geçiş sağlama olanağım var. Şimdi bakalım. Burada A, D ve H diye üç tane eş zamanlı makinem var. Görüyorsunuz aynı durumun içinde alt makineler şeklinde durum geçiş makineleri şeklinde duruyor. Bunların arasında geçişler var. Ve bazılarında da aksiyonlar var.
+
+169
+00:45:57,012 --> 00:46:22,492
+F, G, M, E, N, F gibi. Şimdi bunlar sanki bir metot çaresi gibi düşünebilirsiniz ama başka bir olayın tetiklenmesi de olabilir. Mesela işte burada ben A makinesinde bakalım. B'den C'ye ters yazmışım şurada. B durumundayım. F geçişi var. F olayıyla C durumuna geçiyorum ya.
+
+170
+00:46:22,931 --> 00:46:30,591
+Bu ne demek? Ben bu F olayı olduğunda aynı zamanda bir G olayının olmasını da yaratıyorum.
+
+171
+00:46:31,251 --> 00:46:32,571
+Tetikliyorum demektir.
+
+172
+00:46:32,571 --> 00:46:39,791
+Ve ne yapmış oluyorum? Aslında eş zamanlı makinemde de eğer ben E durumundaysam G durumuna geçeyim diyorum.
+
+173
+00:46:40,051 --> 00:46:41,511
+Yani bunu tetiklemiş oluyorum.
+
+174
+00:46:41,911 --> 00:46:46,911
+Siz buradaysınız diyelim, burada F'desiniz. O zaman zaten G olduğunda hiçbir şey yapmıyorsunuz diyebilirsiniz.
+
+175
+00:46:47,491 --> 00:46:50,931
+Buradaysa ancak bunu tetiklesin diye G'yi G olayına...
+
+176
+00:46:50,931 --> 00:46:52,651
+Yaratılmasını sağladık.
+
+177
+00:46:53,204 --> 00:47:21,204
+Olayları aslında arka arkaya koymuş olduk. Olaylar her zaman genel görünürdür. Yani bu kutunun içinde genel olarak görünürler. Bu durumda eş zamanlı makinelerin de bu olaylardan haberdar olduğunu biliriz. Mesela şuradayız diyelim. Tamam mı? Şuradayız pardon. H makinesinde. M olayı oldu diyelim. M olayın olması E olayın olmasını yarattı. Eğer ki siz buradaysanız ve buradaysanız o zaman burada da iki ayrı durum geçişinde aynı anda tetiklemişler.
+
+178
+00:47:21,204 --> 00:47:30,404
+Bu şekilde yapıya yayım ya da arda arda olaylar adını veriyoruz. Broadcast Cascade adını veriyoruz.
+
+179
+00:47:38,291 --> 00:47:51,291
+Şimdi koşullu geçişlerimiz ne olabilir? Bunlar aslında gördük. Hani continue, not continue falan gibi köşeli parantezlerle bir verinin aldığı durumlara göre koşul belirteyebilirsiniz. Bunlar genellikle...
+
+180
+00:47:51,923 --> 00:48:14,804
+Boolean'dır. Boolean değerleri olması beklenir ki, true, not true olsun. Bunlar sürekli izlenir aslında ve doğru olduğu anda ilgili geçiş gerçekleştirilir. In ve not in de kullanabilirsiniz. Mesela başka bir eş zamanlı makinede herhangi bir X durumundaysa ancak bu geçişi yaparız diye söyleyebiliriz.
+
+181
+00:48:14,804 --> 00:48:18,884
+Yine bunlar da global olarak eş zamanlı makinelerin hepsine görünür.
+
+182
+00:48:19,923 --> 00:48:36,344
+İşte mesela burada şey var. Saat tam 11.49 olduğunda, when 11.49 self-test diyor. Yani her 11.49'da idle state'de bir self-test çalıştırarak idle state'e tekrar gelmesini söylüyor.
+
+183
+00:48:42,516 --> 00:48:56,315
+Drop Connection yaparak tekrar Idle State'e geçiyoruz. Yani ben sanki böyle bir sayacım var. İki saniye sayıyor. Sadece Active State'de iki saniye kalmama izin veriyor. Ve sonrasında tak diye tekrar Idle State'e gelmemi sağlıyor.
+
+184
+00:48:56,315 --> 00:49:04,396
+Tabii Idle'dan aktif herhangi bir geçiş tanımlanmamış burada. Doğal olarak öyle bir geçişin de olması beklenirdi.
+
+185
+00:49:05,492 --> 00:49:12,412
+Basit olsun diye sadece burada koşullara göre durum geçişi yap ya da işte burada kendine bir geçiş yap.
+
+186
+00:49:12,492 --> 00:49:15,012
+Bu koşul sağlandığında diyebilirsiniz.
+
+187
+00:49:17,112 --> 00:49:21,412
+İşte burada kendine geçiş. Yine iki saniyede bir.
+
+188
+00:49:22,612 --> 00:49:47,712
+C.isAlive yolla diyor. Ne demek? Ben hani yaşıyorum diye 2 saniyede bir heartbeat veriyorum. Ama sürekli idle state'e geçmeye devam ediyorum. Yaşıyorum, yaşıyorum, yaşıyorum, yaşıyorum. Tamam. Bakın burada mesela bir şey oldu. Target at P. Görüyor musunuz? Şuradaki geçişte, idle ile tracking arasındaki geçişte bir eylem var.
+
+189
+00:49:48,115 --> 00:50:00,000
+İstret olduğunda, yani böyle bir değişken, bir tehdit var değişkeni geldiğinde target et P'den, o zaman T'ye...
+
+190
+00:50:00,000 --> 00:50:04,159
+Mesela t metodunda add target'ın çalışmasını sağlıyoruz.
+
+191
+00:50:04,279 --> 00:50:08,519
+Ve buradaki p parametresini buraya p parametresi olarak taşıyabiliyoruz.
+
+192
+00:50:08,939 --> 00:50:15,959
+Ne oldu? Ben bana gelen bilgiyi aslında başka bir yere, başka bir nesneye aktarmış oldum.
+
+193
+00:50:15,959 --> 00:50:20,919
+Durum geçişlerinde bu şekilde parametrelerle bilgi aktarımı da sağlayabilirsiniz.
+
+194
+00:50:21,500 --> 00:50:24,379
+Tracking state'e geçtim. Mesela bir tehlike var dedik.
+
+195
+00:50:24,692 --> 00:50:48,192
+Bakın şey oldu diyelim, bakın idle state'teyken gürültü oldu. Gürültü olduğunda da searching'e geçiyoruz, arıyoruz. Aradıktan sonra engage moduna geçiyoruz. Engage'ten sonra tekrar tracking'e geçiyoruz. Burada da tracking state'teyiz. Bakın burada idle state'e geri dönmüyoruz. Sadece kontakt olduğunda da engage'de geçiyoruz. Engage'de de işimizi yapıp neyse o durumda yapılanlar bitirip son duruma geçiyoruz.
+
+196
+00:50:52,692 --> 00:50:59,751
+Yoksa sürekli olarak yaşıyorum, yaşıyorum ve iki saniyede bir sinyal yollayarak yoluna devam et diyoruz.
+
+197
+00:51:01,108 --> 00:51:20,987
+Geçmiş durumları hatırlamak var demiştik hatırlarsanız. İşte o da history. Şimdi bu ne demektir? Şöyle ben command state ve backup state arasında durum geçişi yapabiliyorum. Tamam. Backup state'in içinde de gördüğünüz gibi collecting, copying, cleaning up gibi başka başka state'ler var. Ama ben belki buradaydım.
+
+198
+00:51:21,460 --> 00:51:49,460
+Belki buradaydım, belki buradaydım. Hani burada tek bir çıkış var ama, pardon burada toplu çıkış da var. Query ile comanda geri çıkmışız. Tamam, bunu demin görmedim. Yani herhangi bir durumdan command state'e tekrar geri dönmüş olabilirim. Ve sonrasında mesela tekrar backup state'e geçiyorum. Buradaki geçişte en son nereden çıktım acaba? Ben onu hatırlamam lazım diyorsak eğer, işte o zaman burada bir history koyarız. Bir şekilde aslında nereden kalmış.
+
+199
+00:51:49,460 --> 00:52:04,719
+Yani Collecting'de mi kalmıştı son çıkarken? Yoksa Copying'de mi kalmıştı? Demki Copying'de kalmıştı, Query ile çıktı. Tekrar Backup'a geri geldiğinde Copying'den başlamasını, bu durumdan başlamasını ifade ediyoruz.
+
+200
+00:52:05,523 --> 00:52:24,184
+Şimdi burada H koyduk ama buraya Yıldız da koyabilirsiniz. O zaman bunun içinde de mesela makine varsa orada da onun içindeki geçmiş durumlara dönmenizi sağlayabilirsiniz. Baya güçlü bir mekanizma ama tabii okunurluğu ve takip etmesi oldukça zorlaşıyor.
+
+201
+00:52:24,184 --> 00:52:33,463
+Çünkü bunun içini de, collecting'in mesela içini de ya da copying'in içini de history şeklinde takip etmeniz gerekecek. O kadar takibi de yapmanız.
+
+202
+00:52:33,523 --> 00:52:35,684
+Doğal olarak oldukça zor olacaktır.
+
+203
+00:52:37,684 --> 00:52:43,244
+UML'de bir durum tanımı yaparken de işte bu state'lere en başına bir tracking yazdık.
+
+204
+00:52:43,344 --> 00:52:46,264
+Nedir? Şuradaki örneklerde olduğu gibi hep bir ismi olur.
+
+205
+00:52:47,543 --> 00:52:49,324
+Entry ve Exit'ten bahsettik.
+
+206
+00:52:49,483 --> 00:52:58,724
+Eğer mutlaka bu duruma girdiğinizde şunlar çalışsın ya da bu durumdan çıkarken mutlaka şunlar çalışsın dedikleriniz varsa bunları Entry ve Exit'te belirlersiniz.
+
+207
+00:52:59,219 --> 00:53:10,639
+Girdi ya da çıktı olmadan kendi üzerine geçiş yapmak istiyorsanız, yani aslında bir otomatik metot çalıştırmak istiyorsanız New Target'ı kullanabilirsiniz.
+
+208
+00:53:12,800 --> 00:53:36,660
+Zaman almayan eylemleriniz varsa, aksiyon gibi, mesela aç, kapa gibi, o zaman do'yu kullanabilirsiniz. Zaman alan eylemleriniz varsa, bunu yap, bitir, bekle gibi. Ya da kuyruğa at, sonra bir ara yaparsın, çalışmasını öteleyebilirsin dediğiniz eylemleriniz de varsa bunları da defer ile verebilirsiniz.
+
+209
+00:53:40,800 --> 00:53:52,700
+Ve üç tane farklı çalıştırma metodu diyebilirsiniz. Bu tekil, zaman almayan bir eylem. Bu zaman alan bir eylem. Bu da çalışmasının ötelenmesini istediğiniz bir eylem şeklinde tanımlanabilir.
+
+210
+00:53:53,240 --> 00:54:00,060
+Genellikle sadece durumun adını yazsanız, belki varsa da entry exitleri yazsanız yeterli olacaktır çoğu modellemeyi yaparken.
+
+211
+00:54:02,180 --> 00:54:06,800
+Tanımını yaparken de yine ben bu geçişe nereden geldim? Kaynak durumum ne?
+
+212
+00:54:07,251 --> 00:54:22,112
+Nereye gideceğim? Hedef durumum ne? Hangi olayla tetikleniyorum? Üzerimde kontrol var mı? İşte mesela Continue, Not Continue gibi. Bunları da aslında OCI kullanarak tanımlamanız gerekiyor. Hatırlarsınız geçen hafta söylemiştim.
+
+213
+00:54:22,804 --> 00:54:44,423
+Mesela geçiş olurken herhangi bir aksiyon eylem yapılacak mı? Bir metot mesela çalışacak mı? Hatta geçişte ayrılmalar ya da birleşmeler olacak mı? Mesela tek bir eylem iki farklı eş zamanlı makinede durumların tetiklenmesine neden olacak mı? gibi ifadeler geçiş tanımında yer alır.
+
+214
+00:54:46,675 --> 00:55:14,675
+Sınıf diagramı ile durum diagramının ilişkisine de şöyle bir hızlıca bakalım. Yani ben bir durum diagramı çiziyorum da benim bu UML standart yapısal modelimle acaba nasıl bir ilişkisi var? Şimdi geçiş diagramları oldukça güçlü ve aslında bütün özellikleri kullanabiliyoruz. Her diagramda bütün özellikler için diagram çizebilirsiniz. Fakat işte bu aslında bir hani state explosion demiştik ya, böyle bir durum uzayı patlaması problemi de yaratabilir.
+
+215
+00:55:14,675 --> 00:55:39,016
+Yani teorik olarak aslında siz her sınıfınıza ayrı bir durum diagramı çizebilirsiniz. Ama genellikle sınıflarınızın çoğu için bu kadar böyle durum geçişi tanımlamanıza gerek kalmaz. Sadece metotlar bu sınıfın tepki vermesi için hani şu olduğunda şu metot çalışsın şeklinde hani işte get bilmem ne, set bilmem ne gibi düşünün. Bunlar yeterli olacaktır. Yani bütün sınıflar için.
+
+216
+00:55:39,507 --> 00:56:05,708
+Hepsini çizmenize gerek yok. Eğer gerçekten belli uyaranlara göre, özellikle dış uyaranlara göre belli metotların çalışması ya da belli bir durumda olmanız, değişken uzayınızın, özelliklerinizin belli değerlerde olmasını göstermek ya da garanti etmek istiyorsanız, karmaşık modellemelerinizde o zaman durum diagramlarını kullanmanız daha doğru olacaktır.
+
+217
+00:56:07,507 --> 00:56:30,867
+Bu bir durum diagramı çizebilirsiniz. Ama pratik olarak bunu yapmanın gereği yoktur. Sadece ihtiyacınız olan yerde yapmanız yeterlidir. Şimdi burada bir örnek var. Bu bir şey. Casio F91W dediğimiz çok klasik bir dijital saat vardır ya. O saatin durum diagramı.
+
+218
+00:56:33,204 --> 00:56:46,824
+Şimdi bu da Herald tarafından modellenmiş. Hani ki durum diagramının gücünü gösteriyor. Hızlıca şöyle bir bakalım. Ya Dead State'deyizdir ya Alive State'deyizdir. Bakın default olarak Dead State'deyiz. Bu nedir? Pili yok.
+
+219
+00:56:47,603 --> 00:57:13,503
+Pil takıldığında Alive State'e geçiyoruz. Bateri in. Herhangi bir Alive State'de bir durumdayken, Battery Remove oldu, bir şey oldu. O zaman Clear ederek Dead State'e geçiyoruz. Ya da bakın Power alt makinesine bakalım. Eş zamanlı makinesine. Normalde okey. Ne zamanki Battery Weak oldu, Weak State'e geçiyoruz. Ne zamanki Die battı batarya, o zaman Dead State'e geçiyoruz.
+
+220
+00:57:14,132 --> 00:57:31,692
+Şeklinde bir geçiş tanımlanmış. Şimdi diyelim ki ben pili taktım, Alive'a geçtim. Aynı anda main state'imde, pardon makinemde, power makinem, light makinem, chime makinem, alarm makinem hepsi bakın 1, 2, 3, 4, 5 tane eş zamanlı makine çalışmaya başlıyor.
+
+221
+00:57:34,291 --> 00:57:52,851
+Girdik. Light'da varsayılan off, Power'da varsayılan ok. Time'da işte disapp neyse şey bir şey göstermemesiydi galiba. Alarm state'de de disabled'la başlıyoruz. Tamam. Main state'de de aslında display'deyiz. Ama bunu burada göstermemişiz.
+
+222
+00:57:52,851 --> 00:57:54,751
+Şimdi.
+
+223
+00:57:55,764 --> 00:58:10,644
+Ya şey olabilir, hani saat başında bip bip ötüyor ya, bip bip moduna geçip tekrar gelebiliriz. Ama normalde display çalışacak. Display de kendi içinde bir durum makinesi. Bakın burada. Varsayılanın zamanı göstermesi.
+
+224
+00:58:11,315 --> 00:58:31,315
+Ben normalde, Alive the Main makinesine baktığımda Display'deyim. Display'de de aslında Time'ı gösteriyorum. Time'dan sonra bu A, B, C, D dediklerimiz saatin üzerindeki 4 tane buton. Mesela D butonuna basarsam tarihi gösteriyormuşum. D butonuna tekrar basarak zamanı göstermesine geri dönüyormuşum.
+
+225
+00:58:31,572 --> 00:58:47,892
+A butonuna basarak alarm saatini göstermesini ve burada da B, C gibi şeylere basarak bunun ayarlanmasını sağlıyorum. A'ya basarak saat başı çalsın mı çalmasın mı? A'ya basarak stopwatch ekranına geçmesi. Bir daha A'ya basarak zamana geçmesi. Nedir bu?
+
+226
+00:58:51,251 --> 00:59:14,512
+Şöyle şuradayız. Tamam mı? Tuşa bastık, Bip Alarm ekranı geldi. Bip bastık, Chime ekranı geldi. Bip bastık, Stop Watch ekranı geldi. Bir daha Bip bastık, Time'a geri döndük. Tık tık tık tık. Bilirseniz kullanırken mod tuşuna dört kere basarak tekrar saate dönersiniz. Ya da başka bir tuşa basarak saati gösterirsiniz. Ya da başka bir tuşa basarak ayar moduna geçebilirsiniz.
+
+227
+00:59:19,251 --> 00:59:35,172
+Sonra dakikayı, bir daha bastık düğmeye, bilmem ne dakikasını, bir daha bastık saati, bir daha bastık tarihi, bir daha bastık günü şeklinde ayarlayıp, bir daha bastık çıktık. Yine zamanı gösteriyoruz gibi bir durum söz konusu, durum geçişi söz konusu düğmelere basarak.
+
+228
+00:59:36,179 --> 00:59:56,099
+Stopwatch'un içine geldiğimde de mesela varsayan olarak sıfırdayım. Sonra yine bir şeye bastım. Hem Display hem de Run State'ler eş zamanlı çalışıyor. Burada da sayaç ya da tur zamanları var. Çok affedersiniz bir saniye bir telefon alacağım.
+
+229
+01:00:05,204 --> 01:00:07,944
+Telefon kaçtı. Evet.
+
+230
+01:00:08,692 --> 01:00:35,211
+Stopwatch'ı bilirsiniz sayar. Mesela bastım ve stopwatch kendi içinde çalışmaya devam ediyor. Ama ben tekrar bastım. Mesela zamanı gösteriyorum. Sonrasında Chime'den yine bastım. Tekrar stopwatch'a geldim ya. Bakın burada history var. Bir de yıldız var. Yani ben nerede kaldıysam o durumdan devam ediyorum.
+
+231
+01:00:36,692 --> 01:00:47,832
+Stopwatch çalışmaya devam ediyor ve mesela 4 dakika 26 saniye 54 salisede kalmıştım. Oradan göstermeye devam ediyor ya da oradan çalışmaya devam ediyor şeklinde bir model söz konusu.
+
+232
+01:00:48,412 --> 01:00:54,292
+Burada basit olsun diye bunlar soyutlanmış. Sonra içi ve içi gösterilmiş durumda. Stopwatch'un da burada içi.
+
+233
+01:00:55,032 --> 01:01:00,012
+Hepsini iç içe koyduğunuzda da aslında şöyle bir yapı söz konusu olarak görebiliyorsunuz.
+
+234
+01:01:04,692 --> 01:01:14,352
+Tane düğmesi olan asker saatinin durumları ve pil ile alakalı ve düğmelere basmayla alakalı durum geçişleri nasıl oluşuyor?
+
+235
+01:01:14,452 --> 01:01:19,612
+Şurada koşulları da mesela bip bip ayarlandıysa şuraya geç, bip bip ayarlanmadıysa şuraya geç gibi.
+
+236
+01:01:19,612 --> 01:01:27,152
+Ya da alarm kuruluysa şuraya geç, alarm kurulu değilse bu tarafa geç gibi durum geçişlerinin nasıl tanımlandığını,
+
+237
+01:01:32,692 --> 01:01:36,172
+Nasıl gerektiğini bu şekilde modelleyebiliyoruz.
+
+238
+01:01:37,892 --> 01:01:48,552
+Evet, saatimiz 11'e geçmiş. O zaman hemen şöyle bir özet yapıp, bir ara verip ondan sonra çok hızlı bir şekilde bir örnek yapacağım.
+
+239
+01:01:48,552 --> 01:01:52,472
+Çok mümkün olunca hızlı bir şekilde üzerinden geçmeye çalışacağım.
+
+240
+01:01:53,300 --> 01:02:10,120
+Reaktif sistem dedik. Uyaranlara tepki veren sistemler. Bunları inşa etmek gerçekten ilk aşamada biraz daha zordur. Bazen karmaşık sistemler kilit durumlara girer. Ne yapacağız şimdi? Hangi şey nasıl çalışacak? Böyle örneklerle karşılaşmış olabilirsiniz.
+
+241
+01:02:10,120 --> 01:02:17,600
+Durum diagramları aslında bu karmaşanın yönetilmesini ve bu durum geçişlerinin düzgün şekilde modellenebilmesini sağlar.
+
+242
+01:02:21,300 --> 01:02:31,680
+Aktivite, Ardışıl, İşbirliği ya da Use Case'leri kullanırdık. Hatta ve hatta Communication, Timing ya da Etkileşim Diagramları zaten diğerlerinden oluşuyor.
+
+243
+01:02:32,460 --> 01:02:43,500
+Kullanabiliyorduk. Peki ben UML'de mesela bir State Chart kullanmazsam hocam ne yapabilirim? Yani ben Reactive bir sistemi ya da olay tabanlı bir sistemi tanımlarken neler kullanabilirim?
+
+244
+01:02:44,059 --> 01:02:49,300
+Temporal Logic kullanabilirsiniz. Process Algebra kullanabilirsiniz. Hani mesela işlevsel bir şey yapıyoruz.
+
+245
+01:02:49,300 --> 01:03:16,559
+Bunları kullanarak da yine benzer modellemeleri yapabilirsiniz. Özellikle bütün sınıfların kendine ait birer durum diagramı olabilir, durum geçişi olabilir, yaratılabilir ama hepsini yapmaya gerek yok. Neredeki karmaşık şeyler var ve kilit durumlar oluşabilir. Tam olarak onları ifade etmeniz ve sisteminizin vereceği tepkileri normal bir şekilde vereceği tepkileri ifade etmeniz gerekir, modellemeniz gerekir. O zaman durum diagramlarını kullanmak zorunda kalırsınız.
+
+246
+01:03:17,460 --> 01:03:25,740
+Peki, şimdi bir ara vereyim. Saat 11.20 geçiyor diyeyim. 15 dakika bir ara verelim. 11.20'de tekrar görüşürüz.
+
+247
+01:21:28,659 --> 01:21:45,180
+Evet arkadaşlar, devam edeyim. Şimdi çok hızlı bir şekilde bitirmeye çalışacağım bu örneği. Çok basit bir örnek. En azından durum geçişleri nasıl tasarlanır, değişkenler nasıl?
+
+248
+01:21:46,707 --> 01:22:14,608
+Aldıkları değerlere göre durumlarda hangi olaylar nasıl yer alır. Çok basit bir örnek olarak bir radyo saatimiz var elimizde. Şurada görmüş olduğunuz belki hatırlarsınız eskiden bunlar vardı. Çok basit olduğu için burada bir sistem örneği olarak karşımızda çıktı. Nedir? Şurada bir dijital saati var. Saati gösteriyor. Şurada analog bir radyosu var. Şurada bir volume knob var. Sesi arttırıp azaltabildiğiniz. Şurada bir seçeneği var. Dört tane şeyi olan.
+
+249
+01:22:14,707 --> 01:22:26,707
+Bu ayarı olan nedir? Kapalı, alarm, radyo ya da uyandırma modu muydu neydi? Şimdi göreceğiz hepsini. Şuradan...
+
+250
+01:22:27,412 --> 01:22:32,811
+Uyanma ve uyuma saatlerinizi ayarlayabildiğiniz dakika ve saat düğmeleri var.
+
+251
+01:22:33,572 --> 01:22:39,092
+Yani belli bir saatte radyonun kapanmasını ve belli bir saatte ya radyonun ya alarmın çalışmasını sağlayabiliyorsunuz.
+
+252
+01:22:39,092 --> 01:22:44,432
+Şuradan da şeyi ayarlıyorsunuz. Şurada bir çark var. Yanda oradan da tuningi yapabiliyorsunuz.
+
+253
+01:22:44,492 --> 01:22:49,012
+Frekans ayarı. Analog olduğu için tek frekans var. Birden fazla frekansımız söz konusu değil.
+
+254
+01:22:49,512 --> 01:22:54,912
+Şurada bir tane hoparlörümüz var. Buradan da ses çıkıyor. Bu şekilde basit bir radyo.
+
+255
+01:22:55,412 --> 01:23:23,172
+Elektrik de çalışıyor. Pili yok. Pille alakalı canlı ya da ölü şeyimiz yok. Pil azaldı, pil arttı gibi bir makineye ihtiyacımız yok. Bir tane ses düğmesi var, bir tane frekans düğmesi var. 12 saatlik bir zaman. İki tane küçük lambası var şurada. Bir tane lamba yanıyorsa AM, PM, diğeri de alarm kuruldu ya da alarm kurulu değil şeklinde iki tane de şeyi var bize gösterdiği.
+
+256
+01:23:23,412 --> 01:23:25,632
+Küçük şurada led lambası var.
+
+257
+01:23:26,771 --> 01:23:42,832
+İki tane şaliteri var. Nedir? Biri AM FM band seçiyormuş. İkincisi de radyo açık, radyo kapalı, radyo ile alarm açık. Yani alarm radyo ile çalsın. Ya da alarm bipleme ile çalsın. Dört tane seçeneği varmış.
+
+258
+01:23:42,832 --> 01:23:54,612
+Bu dört düğme, solda gördüğümüz dört düğme ile de işte dediğim gibi ne zaman uyuyacağız, ne zaman uyanacağız. Onunla alakalı saat ve dakikayı şuradan tık tıklayarak ilerletebiliyoruz.
+
+259
+01:23:54,771 --> 01:23:56,555
+Mesela işte...
+
+260
+01:23:56,659 --> 01:24:17,119
+Şu andaki zaman ne? Saat işte mesela 11.20 diyelim. Yarın 11.35'te uyanmak istiyorsunuz. Baya uyumuşsunuz ne güzel. O zaman uyanma butonuna basılı tutarak, işte şuradaki Wake butonuna basılı tutarak, dakikayı 15 kere bastığınızda işte ne olacak? 11.45'e, 11.35'e neyse saati kuracak.
+
+261
+01:24:17,659 --> 01:24:24,579
+Bir de Snooze butonumuz var. Buna her bastığınızda da alarm 10 dakika erteleniyor. Yani 10 dakika susup 10 dakika sonra tekrar.
+
+262
+01:24:24,659 --> 01:24:41,639
+Başlamaya çalışıyor. Ama her halükarda alarm bir saat boyunca çaldıktan sonra otomatik olarak kapanıyor. Yani bir saatte uyandıramadıysa sizi komşulara da yazık diyerek bir saat sonunda buradaki alarmın tamamen durmasını, susmasını sağlıyor.
+
+263
+01:24:52,659 --> 01:25:05,639
+Uyanma ya da yatma saatini ayarlama, ekranda bir şeyler gösterme, ses ayarıyla alakalı şeyler, radyoyla mı, alarmla mı, biplemeyle mi çalışacağım gibi çeşitli durumlarımızın olması gerek.
+
+264
+01:25:05,639 --> 01:25:13,260
+Bu durumlar arasında da mesela düğmelere basarak falan ya da zaman geldiğinde çeşitli geçişleri sağlamamız gerekecek.
+
+265
+01:25:14,452 --> 01:25:42,452
+Şimdi, tabi önce kullanım senaryolarına bakmamız lazım buradaki durum geçişlerini, yani durum diagramını oluşturmak için. Yüz keselerde işte zamanı ayarlamakla ilgili bir şeyler var. Aynı zamanda alarmı ya da uyuma saati, uyanma saatini ayarlamak için de farklı, uyuma saati pardon, farklı senaryolar var. Frekans değiştirme, sunuz butonuna basma falan ya da radyo dinleme gibi pek çok senaryo burada tanımlanmış durumda olması beklenir.
+
+266
+01:25:42,452 --> 01:25:58,271
+Ve siz de durum diagramında aslında bu senaryolardaki olabilecek durum geçişlerinin hepsini kapsamanız gerekir. Hatta hata durumlarını da ekleyebilirsiniz. Yani mesela beklenmedik bir şey oldu. O zaman radyo ne yapacak? Bunu da şey yapabilirsiniz, ekleyebilirsiniz tabii ki.
+
+267
+01:26:01,612 --> 01:26:02,612
+Ne oldu?
+
+268
+01:26:05,971 --> 01:26:06,652
+Günaydın.
+
+269
+01:26:09,908 --> 01:26:32,488
+Şimdi mi yazdım [öğrenci]? Yoksa ben mi yeni gördüm? Bilemedim. Okey, neyse. Değişik bir şey oldu. Böyle bir zoom ekranı kapandı, açıldı da. Yeni uyarı bana yeni verdi o zaman. Çatteki uyarı bana yeni geldi. Çünkü böyle bir kapandı, açıldı. Bir şeyler oldu.
+
+270
+01:26:33,652 --> 01:27:01,612
+Neyse, durum geçişlerini aslında yine modelleyebilmek için bir yandan perceptlerimizi, yani hatırlarsanız bunları o anda görebildiğimiz özellikler demiştik. Bunları da biliyor olmamız lazım. Niye bilmemiz lazım? Çünkü bunlar kullanıcıların bizim sistemimizde görebildikleri ve etkileşebildikleri noktalar. Mesela radyoda ne var? Bir zaman göstergesi var. Buradan bana bir şeyler gösterecek. İki tane ışık var. Biri işte öğlen ya da öğleden sonrayı gösteriyor. Biri de alarmı kurdum mu, kurmadım mı?
+
+271
+01:27:01,652 --> 01:27:28,492
+Bunu gösteriyor. Aynı zamanda zamanlayıcı düğmeleri var ama bunların belli bir durumu yok. Ama şeyleri var. Düğmeye bastım, düğmeden çektim şeklindeki olayları var. Onları modellememiz gerekecek. Frekans ayar düğmesi ve bununla beraber hareket eden beyaz bir çubuk var. Yani ben aslında ayar düğmesini kaydırdıkça buradaki beyaz çubuğun da kaymasını bekliyorum.
+
+272
+01:27:31,060 --> 01:27:49,760
+Bunun dışında sesi ayarladığım bir düğme var, çevirmeli. AMFM modunu seçtiğim bir şalter, çıt çıt düğme var. Bir de işte mod, dört tane modum var demiştim. Radyo kapalı, radyo açık. Alarm radyo ile alarm bipleme ile şeklinde mod şalterimiz var. Bir tane sunuz butonumuz, bir tane de hoparlörümüz var. Bunlar aslında benim radyo saatimin.
+
+273
+01:27:50,452 --> 01:28:18,211
+görebildiğim, dokunabildiğim, etkileşebildiğim perceptleri. Yani biz de bir sistemi modellerken aslında bu perceptler üzerinden yola çıkmamız gerekir. Şimdi mesela şeyden başlayalım. Display'den başlayalım. Yani benim burada bir zaman ekranım varsa bir şekilde benim burada çeşitli durumlarda olmam beklenir. İki eşe şimdilik boş verin. Tamam mı? Zaman göstergesinde kaç farklı durum olabilir? Şimdi şöyle 12 tane saat var. 60 tane dakika var. 12 çarpı 60.
+
+274
+01:28:18,452 --> 01:28:45,992
+Bu şekilde 720 farklı durumda olabilir. Niye? İşte 11.27, 11.28, 11.29 bunların hepsi aslında ekran açısından farklı farklı birer durum. Tabii 720 tane durumu olan bir Final State Machine yapabilirsiniz. Ya da eş zamanlı iki makineyle yani bir saat bir dakika eş zamanlı makineleriyle 12 artı 60. 72 durumda da aynı şeyi anlatabilirsiniz ki bu bile çok fazla. Ama biz zaten şey saat diye bir şeyimiz var.
+
+275
+01:28:46,452 --> 01:29:00,452
+Ekranımız var. 720 tane durum oluşuyor. Birbirini takip ediyor. Yani her dakika bir sonraki duruma geçiyoruz aslında. Bunu biliyoruz, bunu varsayıyoruz. Bunun dışında özel olarak bir şey göstermemize, bir durum geçişi göstermemize gerek yok. Şimdi burada...
+
+276
+01:29:01,108 --> 01:29:15,247
+Display diye bir tane alt makine yaparım. Bakın burada bir sürü eş zamanlı makine çalışacak. Alarmla alakalı, sesle alakalı, radyoyla alakalı. Ben burada ne görebilirim ekranda? Aslında normalde saati görürüm.
+
+277
+01:29:15,636 --> 01:29:32,816
+Ama aynı zamanda ayar moduna geçtiğimde, demek ki burada başka bir makinedeki olayla burada da bir durum geçişi yaşayacağım. Uyanma butonu basılırken, orada saat ayarlıyorum ya, ayarladığım saat ekranda görüyorum. O zaman işte Wake Time.
+
+278
+01:29:33,235 --> 01:29:40,675
+Ya da Sleep Time, yani Sleep'e basıp da saat ayarlaması düğmesine basarak yaptığımda, burada da Sleep Time ekranda görüyorum.
+
+279
+01:29:41,556 --> 01:29:47,355
+Bunlar gördüğünüz gibi iki yönlü ama normalde aslında burada iki ayrı geçiş var.
+
+280
+01:29:47,496 --> 01:29:53,876
+Yani düğme basıldığında, Sleep düğmesi basıldığında buradayım, Sleep düğmesi kaldırıldığında buradayım.
+
+281
+01:29:53,876 --> 01:29:59,296
+Burada basit olsun diye iki taraflı ok çizdik ama normalde iki ayrı durum geçişi olduğunu unutmayın her bir okta.
+
+282
+01:30:00,595 --> 01:30:13,255
+Sonra şeyim var, bu işte switch, mod switchim var. Onun durumlarına bakalım. Nedir? Kapalı, radyoda, alarmlı radyo ve alarmlı bip bip. Çok affedersiniz, bir saniye hemen gelin.
+
+283
+01:31:44,564 --> 01:31:45,424
+Kusura bakmayın.
+
+284
+01:31:47,604 --> 01:32:07,564
+Evet, şimdi dört tane seçeneğimiz var. Bunu modellerken normalde ne yapmam lazım? Şöyle bir mod diye bir tane aslında eş zamanlı makinem olacak. Ben ya açığımdır, yani radyo modundayımdır. Buradan off'a geçebilirim, off'tan ona geçebilirim. Ya da off'tayken müzeye, şuradaki alarmlı...
+
+285
+01:32:08,340 --> 01:32:29,500
+Ya da müzikli alarma ya da kapalıya geçebilirim. Müzikli alarmdan da yine alarma geçebilirim ya da alarmdan müziğe geçebilirim. Niye böyle davranıyorum? Çünkü şöyle geri gelecek olursam, radyo saatinde bakın burada dörtlü switch yan yana. Yani ben on state'den direkt olarak alarm state'e geçemem. Çünkü çıt çıt çıt diye devam etmem lazım.
+
+286
+01:32:29,500 --> 01:32:36,340
+İşte o yüzden ben burada bunları şuradan şuraya şuradan şuraya geçebilirim. Bundan hem buna hem buna geçebilirim.
+
+287
+01:32:36,340 --> 01:32:49,720
+Sadece yanındakine geçebilecek şekilde ifade etmem lazım. O zaman ben onu hemen şuraya koydum. Bakın mod aynı anda on'da da off'da da müzikte de alarm'da da bir şekilde buradan buraya buradan buraya geçebilir.
+
+288
+01:32:50,260 --> 01:33:10,740
+Bununla beraber hemen band switch'i de koyalım. AM FM. Ya AM deyimdir, AM'den FM'e geçerim. Ya da FM deyimdir, FM'den AM'e geçerim. Neden eş zamanlı bunlar? Çünkü ben herhangi bir anda AM FM'i değiştirebildiğim gibi aynı anda öbür switch'i de değiştirebilirim. İşte bu yüzden biz böyle eş zamanlı alt makineler şeklinde modellemeye çalışıyoruz.
+
+289
+01:33:10,740 --> 01:33:18,260
+Ve ben bu switch'lerle oynarken bir yandan ekranda saati görmeye devam ediyorum. Yani sistemimin bana gösterdiği başka bir davranış da burada çalışmaya devam ediyorum.
+
+290
+01:33:18,260 --> 01:33:37,560
+İstasyon göstergeci var. Burada bir tane çark vardı. Çarkı çevirdikçe aslında yeni beyaz çubuk kayıyor. O yüzden bu şekilde kendi kendine dönen, sonsuz sayıda herhangi bir konumda olabilecek bir yapıyı burada gösterebilirim.
+
+291
+01:33:39,604 --> 01:33:49,844
+Aynı şekilde volüm çarkını çevirerek de aslında yeni bir volüm state de oluyorum. Bunu da kendi kendine dönen bir eş zamanlı makine ile ifade ettim.
+
+292
+01:33:49,844 --> 01:33:51,532
+Bu da...
+
+293
+01:33:51,731 --> 01:34:19,731
+İstasyon. Ben biliyorum ki radyonun da belli bir durumu var. Nedir o durum? FM'de ya da EM'de olmasıyla da fark edecek ama belli bir frekansta olacak değil mi? İşte bilmem kaç MHz ya da bilmem kaç KHz'de bir state'de olacak. Bu nasıl değişecek? Aslında şuradaki değiştikçe buradaki de değişecek. Bakın yine buradaki bir olay, durum geçişi. Burada da bu durumda mesela bir değişkenin değerinin değişmesi bizim işte algıladığımız.
+
+294
+01:34:19,731 --> 01:34:22,912
+frekans değerinin değişmesine sebep verecek.
+
+295
+01:34:25,460 --> 01:34:38,239
+Hoparlörümüz var demiştik. Bakın algıladığımız, yani bizim sistemle tepkileşime geçtiğimiz, etkileşim yaptığımız bütün noktaları aslında birer eş zamanlı durum geçişi alt makinesi şeklinde modellemeye çalışıyorum.
+
+296
+01:34:38,440 --> 01:34:51,239
+Şimdilik sadece şey, tabii elektronik detaylara girerseniz öyle yok dirençli, yok gerilimli pek çok duruma geçebilirsiniz ama yazılımsız açıdan sadece hoparlör açık ve hoparlör kapalı var. Bizim için şu anda bu kadarı yeterli.
+
+297
+01:34:53,460 --> 01:35:21,420
+Şimdiye kadar 7 tane makine yaptık. Diğer makineleri de ekleyeceğiz. Henüz şimdilik durum geçişleri yok. Durum geçişlerine bakan, oluşturan olaylara şimdi bakmamız ve bunları da eklememiz gerekiyor. Nedir buradaki davranışlarımız? Elimizde radyo saat var ya da sistemimiz var. Bu sistem olaylara, harici olaylara nasıl tepki veriyor? Şalteri sola sağa kaydırıyoruz mesela. Burada sola kaydırma, sağa kaydırma iki ayrı olay da yapabilirsiniz ya da.
+
+298
+01:35:21,460 --> 01:35:30,500
+Sola kaydım, sağa kaydım şeklinde bir parametreye sahip olan kaydırma olayı da yapabilirsiniz. Size kalmış. Mesela döndürme.
+
+299
+01:35:31,060 --> 01:35:59,060
+Sadece çevirerek yaptığınız şeylerde bir açı değeri mesela olabilir. Şalterden yine sola kaydır, sağa kaydır olabilir. Sunuz buton sadece pres olabilir. Neden? Çünkü ben sadece oraya basabiliyorum. Başka herhangi bir şey yapamıyorum. Kullanıcı açısından aslında olaya bakıyoruz. Şimdi alarm çalmazken de ben sunuz'a basabilirim. Bu durumda ne yapacağız? Sistemimiz nasıl tepki verecek? Yani reaksiyonu ne olacak? Buna da bizim karar vermemiz ve nasıl davranmasını istiyorsak o şekilde.
+
+300
+01:35:59,060 --> 01:36:15,840
+Bu şekilde davranmasını ifade etmemiz durum diagramı ile söylememiz gerekecek. Mesela şey olabilir. Neden olur bilmiyorum ama diyelim ki ben saati tam 12'ye kurdum. Şu anda saat 11.30 tamam mı? Ve sunuz butona da iki kere bastım.
+
+301
+01:36:16,564 --> 01:36:35,623
+Ve bu sayede 12 yerine 12.20'de çalmasını falan isteyebilirim belki. Bilmiyorum niye isteyeyim ama. Ya da ben alarm çalmaya başlamadan sunuz butona bastığında herhangi bir şey olmamasını isteyebilirim. Tamamen bizim sistemimizin nasıl çalıştığına verdiğimiz kararlarla değişecek davranışlar. Ama bu durum diagramı bunları bize anlatacak.
+
+302
+01:36:36,212 --> 01:36:54,412
+Yine şey var, uyanma düğmesi ve şey, uyuma saatini ayarladığımız, bunları da basıp çekiyoruz. Saat ve dakika düğmeleri var şurada, onlara da basıyoruz. Bu şekilde şeyler yapıyoruz. Olaylar yaratıyoruz. Yani eylemler yapıyoruz, bunlar da bize olay yaratıyor.
+
+303
+01:37:04,212 --> 01:37:15,392
+Aslında bizim olaylarımızı tepki vermemiz gereken oluşumları oluşturuyor. Burada 17 tane çıkmış mesela. Analiz sırasında bunları aslında belirlememiz gerekiyor.
+
+304
+01:37:17,555 --> 01:37:35,036
+En dış durumumuz ne? Kasio saatte görmüştük. Ya pil takılıdır ya pil ölüdür ya da pil yoktur şeklinde bir şeyimiz vardı. Burada da ya fişe takılıyızdır ya da fişte fişi çekilidir diyebiliriz. Hani elektrik yoktur da tabii diyebilirsiniz.
+
+305
+01:37:35,036 --> 01:37:41,963
+Bununla iki olayla durum geçişi yapabiliriz. Eğer fişi takarsam...
+
+306
+01:37:42,131 --> 01:38:05,571
+Şu olayla bu state'e geçerim. Ya da fişi çekersem şuradaki unplugged state'e geçerim. Tamam. Şimdi bu en dış. Her zaman için benim o eş zamanlı makinelerimin hepsinin şunun içinde olduğunu varsayıyorum tabii ki. Bu tamamen dışarıda. Ama bütün eş zamanlı makinelerimin hepsi bunun içinde çalışıyor doğal olarak. Yani burada çizdiklerimin hepsi. Tamam.
+
+307
+01:38:05,967 --> 01:38:25,227
+Şimdi ben bunları normalde yazabilirim üstüne. Öncekilerde yeşil yeşil yazmıştım örneklerde hatırlarsınız ama böyle bir diagramda bazen çok fazla olay da varsa bunlar karışabilir. Biraz önceki gibi bir liste yaparız. Mesela bir ses ayar düğmesinin çevrilmesi. Bir burada.
+
+308
+01:38:25,716 --> 01:38:44,716
+İki, EM bandının seçilmesi. Üç, FM bandının seçilmesi. Dört, istasyon şeyinin çevrilmesi. İşte on iki, mod seçim düğmesinin sağa kaydırılması. Pardon şöyle yapalım. On üç, sola kaydırılması gibi. Bu olayları da numaralandırarak durum makinesine yerleştirebiliriz.
+
+309
+01:38:46,163 --> 01:39:10,963
+Başka tabii olaylarımız da var. O zaman benim başka makinelere de ihtiyacım var demektir. Henüz daha modellemediğim. Sunuz butonla alakalı bir şeyler yapmam lazım. Her bastığımda alarm 10 dakika susuyor. Sonra 10 dakika sonra tekrar çalışıyor. Bu kullanıcıya görünen bir şey değil ama kullanıcıyı etkiliyor. Niye etkiliyor? 10 dakika sonra tekrar alarm çalıyor. O zaman bir tane bir iç sayaca ihtiyacımız var. 10 dakika sayacak. Ondan sonra da tekrar alarmı tetikleyecek.
+
+310
+01:39:12,659 --> 01:39:30,439
+Aynı zamanda uyku ve uyanma saatlerini ayarladığımız düğmelere bastığımızda da yeni bir duruma giriyoruz aslında. Mesela ekran değişiyor. Ekranda o saati görüyoruz. Tekrar bastığımızda da ayar durumunda oluyoruz. Yani şurada bakın setting diye bir şey koyduk. Yeni bir.
+
+311
+01:39:31,028 --> 01:39:48,988
+Alt makine eş zamanlı çalışan. Burada da 8, 9, 10 ve 11 olaylarıyla oluşan durum geçişleri. Mesela setting none olabilir. Aslında clock time'ı gösteriyorum orada. Saati ayarlayabilirim.
+
+312
+01:39:49,876 --> 01:39:59,876
+Uyku saatimi ayarlayabilirim ya da uyanma saatimi ayarlayabilirim. Yani radyonun susacağı saati ya da radyonun çalışacağı saati ayarlayabilirim. Aynı zamanda ekranda gözüken...
+
+313
+01:40:00,000 --> 01:40:16,159
+Saati de ayarlayabilirim. O zaman burada da dört tane durumum ve bunların arasındaki olaylarla durum geçişim var. Clockset ile alakalı herhangi bir şey konuşmadık. Büyük bir ihtimalle saat ve dakikaya direkt bastığınızda saati ayarlamanız için bir geçiş olması gerekiyor.
+
+314
+01:40:16,159 --> 01:40:27,599
+O da işte bakın, evet burada saati ayarlama up ve downları olabiliyordu o saat düğmesinin. Bu da dakika, bu da up ve downları var yine.
+
+315
+01:40:28,000 --> 01:40:33,500
+17-18. olaylarla da buradaki durum geçişlerinin yapılmasını sağlıyorum.
+
+316
+01:40:38,079 --> 01:40:41,479
+Şimdi olaylara tepki vermemiz gerekiyor tabii ki.
+
+317
+01:40:41,479 --> 01:40:42,444
+Mesela...
+
+318
+01:40:42,452 --> 01:41:01,172
+Bütün olayların radyon durumunda ya da bizim sistemimizin burada modellediğimiz sistemin durumunda bir etkisinin olması lazım. Mesela ses düğmesini çevirdik ne olacak? Şurada geri geldiğimizde şunu çevirdik. Hoparlörün bir şekilde sesinin artmasını bekleriz.
+
+319
+01:41:02,292 --> 01:41:27,792
+Mod seçim düğmesini sağa kaydırdık. O zaman bunu işte mesela açıksa kapalıya, kapalıysa müziğe, müzikse alarma geçir ya da tam terslerini yap şeklinde hangi tepkiyi verdiğimizi de bir şekilde söylememiz gerekecek. Ne yapacağız biz burada? O zaman uyarılara karşı tepkilerimizi böyle bir tablo halinde söyleyebiliriz. İşte şu durumdayım, şuraya geç, şuna yap, bunu yap şeklinde. Tamam.
+
+320
+01:41:30,292 --> 01:41:54,732
+Hatırlarsanız belli bir saate geldiğinde ya bipleyeceğiz ya radyo çalacağız. Ya da sunuzu başlatacağız ya da çalmaya başlayacağız. Bunun için de hoparlörü açmamız gerekecek. Demek ki çeşitli iç durumlarımız olması lazım. Özellikle timer'lı şeyler iç durum olarak modellenir. Zamana bağlı olay tetikleyicileri. Mesela uyuklama için sunuz butonuna başla.
+
+321
+01:41:55,104 --> 01:42:18,004
+10'a kadar say. Ya da alarm için ne demiştik? Alarm çalmaya başladığında 60 dakika sonra her ne olursa olsun kapatılacaktı. O zaman başlayıp bir 60 dakikalık sayaca ihtiyaç duyarım. Uyku içinde yine başlarım ve ayarlanan zamana kadar şey yaparım. Maksimum 60 dakika susma için.
+
+322
+01:42:18,399 --> 01:42:38,599
+Ondan sonra saat zamanı da her bir dakika ilerlediğinde benim display'i update etmem lazım. Hani 720 tane durumum var ya, oradaki bir sonraki duruma geçişi sağlamam lazım. Onun için burada da bir timer'a ihtiyacım var. Demek ki benim bir clock timer'ım var. Tikliyor. Her dakikada bir tikledim.
+
+323
+01:42:38,912 --> 01:42:48,232
+Her bir tikleme, ekranda bir durum geçişine, şurada yeni bir durumda olmama, aslında yeni bir saat dakika ikilisi göstermeme sebebiyet veriyor.
+
+324
+01:42:48,232 --> 01:42:49,452
+Alarm timer.
+
+325
+01:42:50,068 --> 01:43:10,288
+Sürekli saymasını, ondan sonra da saymamasını durumlarının geçişini modelliyor. Ne demek? 60 dakika sonunda alarmın susmasını sağlıyor. Snooze Timer 10 dakika sonra alarmın tekrar çalmasını sağlıyor gibi. Bunların hepsi eş zamanlı ve birbirini etkileyecek. Bu, bunu, bu, bunu, bu, bunu etkiliyor doğal olarak.
+
+326
+01:43:11,887 --> 01:43:28,887
+Ben ne yaptım şimdi burada? Eş zamanlı olarak çalışması gereken perceptlerle alakalı, etkileşebildiğim her noktayla alakalı anlatmam gereken durum geçişleri varsa modellemem gereken bunların hepsini bir şekilde eş zamanlı makineler olarak bir durum diagramında gösterdim.
+
+327
+01:43:29,988 --> 01:43:34,927
+Başka neler var? 19-20-21 diye geçen diğer olaylar. Mesela alarmın sayıcı bitti.
+
+328
+01:43:35,636 --> 01:44:03,216
+Eğer hoparlör sessize değilse hoparlörü sessize getir. Alarm saati geldi. Eğer müzik modundaysanız hoparlörü açın. Eğer alarm modundaysanız hoparlörü biplettirin. Aynı şekilde tersi. Uyuklama sayacı bittiğinde. Eğer müzikteyseniz hoparlörü çalıyoruz. Eğer alarmdaysanız hoparlörü bipliyor. State'e geçirmeniz gerekiyor.
+
+329
+01:44:03,859 --> 01:44:29,639
+Burada bir ters yazmışım galiba. Bu ikisi aynı olmuş değil mi? Kopyalı yapıştır. Bunları duruyor. Şeyin ne olması lazım? Şuradaki durum geçişini yanlış yazmışım. Uyuklama sayıcı bittiğinde ne oluyor? Hoparlörü sessiz state'e geçmemiz lazım. Burada da. Onu yanlış yazmışım. Şurayı düzeltirsiniz. Yani en azından düzeltildiğini kayıtta şey yapayım şöyle mouse'lu üzerinden birkaç kere geçerek.
+
+330
+01:44:30,804 --> 01:44:44,663
+Ve uyanma saati artı 1'e geldiğinde de yine hoparlörü sessize alabilirsiniz. Bu şekilde hani şeyler iç olaylarınızı ya da zamanlayıcı olaylarınızı da mutlaka göstermek ya da modellemek zorundayız.
+
+331
+01:44:44,663 --> 01:44:53,583
+Bakın mesela burada bir kontrollü geçiş var. Şurada 20 nedir bu? 20. şey.
+
+332
+01:44:54,228 --> 01:45:19,827
+Şu, zaman alarm saatine geldi olayı oluştuğunda. Eğer müzikte ise işte silent'tan playing'e geç. Ya da neyse playing'ten şeye geç. Hoparlörde playing moda geç demiştik. Bakın burada bir guard var. Eğer müzik state'de isen bu 20. olay sadece buradaysa çalışsın şeklinde. Yoksa buraya da ne yazacağız? In alarm.
+
+333
+01:45:20,724 --> 01:45:32,364
+Şuraya da 20 ve Guard olarak da In Alarm yazmamız gerekiyor. Burada da bunu basit bir OCR tanımıyla da ifade edebilirsiniz.
+
+334
+01:45:34,323 --> 01:45:56,283
+Arda arda olaylarımız var. İşte mesela aktiviteleri koordine etmenin başka bir yolu olduğunu söylemiştik. Cascaded Broadcast, aslında Broadcast Cascade daha doğrusu. Şimdi burada bir iç olay yayınlanıyor ve sonrasında bütün eş zamanlı makineler bütün olayları dinleyebildiği için bunlar bir aralarında kendi aralarında senkronize olabiliyor.
+
+335
+01:46:02,323 --> 01:46:30,323
+Aslında sisteminizin üç tane tepki vermesi gerekiyor. Bir, düğmenizin fiziksel olarak yeni bir pozisyona gelmesi gerekiyor ki o aslında oradaki durum makinesinin içinde oldu. İki, o beyaz çubuğun kayması yani yeni başka bir frekans noktasını göstermesi gerekiyor. Bunu ayrı bir yerde göstermiştik hatırlarsanız. Bunu mutlaka haberdar etmemiz lazım. Ve bir de henüz buradaki durum makinelerinde söylemedik ama bir şekilde benim o alıcıda radyo...
+
+336
+01:46:30,323 --> 01:46:41,723
+Bu kanalında değişmesini sağlamam lazım. Bizim istasyon makinemiz bu olaylara yayarak bunlara tepki vermesi gerekiyor.
+
+337
+01:46:42,228 --> 01:47:06,728
+Ne yapabiliriz? Aslında her bir eş zamanlı makinenin varsayılan durumlarını da mutlaka belirlememiz gerekir. Kontrollü geçişlerimiz varsa, şu moddaysa, şuradaysa, şöyle geç falan gibi bunları mutlaka yerleştirmemiz gerekir. Ve yine durum geçişleri için iç olaylar yaratmamız, mesela sayaç gibi olaylar yaratmamız gerekiyorsa bunları da eklememiz gerekir.
+
+338
+01:47:10,228 --> 01:47:31,927
+Nasıl davranması gerektiğini ya da herhangi bir kaçak olmaması için nasıl bir model kurmamız gerektiğini rahatlıkla ifade edebiliriz. İşte burada biraz önce bahsettiğimiz ve elle çizdiğimiz durum geçiş ya da durum diagramının özür dilerim, durum geçişlerinden oluşan durum diagramının genelini görüyorsunuz.
+
+339
+01:47:31,927 --> 01:47:38,188
+İşte unplugged state var, plug state var. Bakın burada 5 ve 6. Fişi taktım, fişi söktüm ile bunların geçişlerini yaptık.
+
+340
+01:47:38,228 --> 01:48:03,967
+Plug-dine geldiğimde bu state'in içinde her şey burada. Display burada, speaker burada. Bakın beep state'i var, silent state'i var, playing state'i var. Varsayılanı sessiz. Bakın alarm olduğunda bir alarmsa beep'e geçiyor. 20 ile. Ondan sonra şurada bir e olayıyla alarmdaysa beep'e geçiyor. E olayı nereden yaratılıyor?
+
+341
+01:48:04,467 --> 01:48:25,847
+Şuradan bakalım. Şurada yaratılıyor. Bakın, Sunuza bastım. 21 ile. Normalde Sunuza değildim. Bastım, buraya geçtim. 10 dakika boyunca burada saydı. 10 dakika sonunda tekrar normal state'ine geri döndü ve E olayını yarattı. E olayını yaratması da aynı zamanda hoparlörün biplemesine sebep verdi.
+
+342
+01:48:32,467 --> 01:48:46,347
+Mekanizmalarının, durum geçişlerinin neden olması gerektiğinin, varsayılanlarının ne olduğunu da koyduğumuzda biz tam olarak bir modelleme, bir durum modellemesi ya da bir davranış modellemesini ortaya koymuş oluyoruz.
+
+343
+01:48:46,347 --> 01:48:54,347
+Bu sayede biz neyi garantilemiş olduk? Benim bu sistemdeki nesnelerim ya da sınıflarım...
+
+344
+01:48:55,731 --> 01:49:14,391
+Belli bir uyarana karşı, belli bir olaya karşı hangi tepkileri vermek zorunda, neleri dinlemek zorunda ve dinlediklerine göre belki de başka neleri tetiklemek zorunda. Bunları değişmez bir şekilde, kim okursa oksun, aynı şekilde anlayacağı şekilde ifade etmiş olurum.
+
+345
+01:49:15,828 --> 01:49:27,528
+Sonrasında bir de tabii bir validasyon yapmamız beklenir. Tabii bu validasyonu bir ekip yaparsa çok iyi olur. Hatta tasarlayan yerine tasarlayanlardan bağımsız bir ekibin yapması daha doğru olacaktır.
+
+346
+01:49:29,268 --> 01:49:39,087
+Tam olarak beklendiği şekilde çalışıyor mu, durumlara verdiği tepkiler, durum geçişleri doğru mu bunları bir validasyondan geçirmek faydalı olacaktır.
+
+347
+01:49:39,748 --> 01:49:43,807
+Ya da bir model kontrolü yapabilirsiniz. İşte bunu gerçeklerseniz.
+
+348
+01:49:43,828 --> 01:49:59,887
+Üzerinde testleri koşturursunuz. Olabilecek bütün durumları test eden senaryolar koşturabilirsiniz. Ve gerçekten olaylar, geçişler ve eş zamanlı makineler düzgün çalışıyor mu? Bunu test edebilirsiniz. Simülasyon yapabilirsiniz. Bir simülasyon ortamı yaratmak gibi bu baya maliyetli olacak.
+
+349
+01:50:00,000 --> 01:50:19,560
+Ve bu sırada yeni sorular oluşursa, mesela ya ben bunu böyle yaptım ama hani Alarm State'deyken sunuza bastığımızda öbürünün de bilmem nesini çevirdiğinde ne olacak falan gibi böyle henüz daha modelliyemediğiniz karmaşık şeyler de ortaya çıkabilir. Bunları da kullanıcıya dönerek tekrar en azından modelinize dahil edebilirsiniz.
+
+350
+01:50:20,979 --> 01:50:42,119
+Özetle 10 tane adımı var. Ne yapıyoruz? Bir, önce use case'leri mutlaka yapmamız lazım ya da bize gelmesi lazım. Bu use case'lerden perceptleri belirliyoruz. Perceptlerle birlikte durumları modelliyoruz. Harici kontroller ya da uyaranlar varsa, söylemediklerimiz ya da görmediklerimiz ya da olması beklenenler bunları belirliyoruz.
+
+351
+01:50:43,155 --> 01:50:58,476
+İlla ve durumlar, geçişler, mesela sayaç gibi ya da başka olaylar varsa tetiklemesi gereken belli davranışları bunları modelliyoruz. Uyaranlarla tepkilerin ikillerini bir şekilde tablo haline getiriyoruz.
+
+352
+01:50:59,676 --> 01:51:11,016
+Zamanlayıcı gibi gerekli iç durumlar varsa bunları belirliyoruz. Koordine edecek mekanizmaları, sen olduğunda şunu da şu tepkiyi yarat şeklindeki mekanizmaları, eylem ve aktiviteleri yapılması gerekenleri.
+
+353
+01:51:11,155 --> 01:51:24,876
+Sonrasında da bunları bir geçerlemeden, bir validasyondan geçiriyoruz. Adım adım bunları yaparsanız eğer düzgün bir şekilde bir davranış modellemesi gerçekleştirmiş olursunuz.
+
+354
+01:51:24,876 --> 01:51:38,935
+Evet, şimdi bu ders tabi ki bu kadar. Hemen şöyle bir şey yapacağım. Şunu kapatıp, evet bir sonraki.
+
+355
+01:51:39,636 --> 01:51:52,096
+Slide'ı hemen açayım. Bir saniye bunu ayarlayayım hemen şu şekilde. Tamam. Evet.
+
+356
+01:51:57,460 --> 01:52:20,019
+Evet, şimdi buradan yolumuza devam edelim. Şimdi temel olarak yazılım mimarisi deyince ne anlamalıyız? Bundan bahsedeceğim. Temel kavramlardan ve hatta mimari stiller deyince, yani böyle bir yazılım tasarımında nasıl mimariler vardır sorusunun cevabında hangi isimleri göreceğiz?
+
+357
+01:52:20,019 --> 01:52:23,759
+Yani ne gibi yaklaşımlar var, bu çözümler neler ya da prensipler neler?
+
+358
+01:52:24,500 --> 01:52:51,300
+Hızlıca bunlardan bahsedeceğim. Buraya özellikle üç farklı resim koydum. Farkındaysanız burada yapılar var. Şimdi bu yapı ne? Antik bir tapınak. Burada bir gökdelen görüyorsunuz. Empire State'e benziyor. Burada da bir tane şato görüyorsunuz. Şimdi bunların temel amacı ne? Aslında temel amacı bir şekilde mesela akomedation sağlamak ne? Oturum.
+
+359
+01:52:52,083 --> 01:53:00,623
+İkamet sağlamak. Burada tarihin bir zamanında işte Antik Yunan'da mesela M.Ö. bilmem kaç binde yapılmış bir yapı var.
+
+360
+01:53:01,268 --> 01:53:26,148
+Bunun belirli aslında yapılırken göz önüne alınan unsurları var. Örneğin o zamanlarda beton, cimento bilmem ne yok. Taş var, mermer var. Bir şekilde onlar üst üste koyularak, bu sütunlar oyularak yapılıyor. Yani aslında elimizdeki araçlar, gereçler, komponentler, mesela bizim sistemimizi oluşturabilecek bileşenler neyse onları kullanarak yapmışız.
+
+361
+01:53:27,891 --> 01:53:48,692
+Farklı bir istek var aslında. Nedir? Taban alanım çok küçük, arsa çok değerli ve ben buraya mümkün olunca çok kat çıkmalıyım. Ki ben buradaki arsaya verdiğim parayı mesela çıkartabileyim. Şu kadarı arsa payı, şu kadarı inşaat payı, bu kadarı da bizim kar payımız gibi düşünebilirsiniz.
+
+362
+01:53:48,692 --> 01:53:55,891
+Yani burada bir amacımız var ya da işlevsel olmayan bir gereksinimiz var. Şu kadar alanda bu kadar fazla.
+
+363
+01:53:55,891 --> 01:53:56,871
+Bu konuda kişiyi barındırmak.
+
+364
+01:53:57,216 --> 01:54:25,176
+Buradaysa mesela bambaşka bir amaç ya da hedefimiz var ya da gayemiz var. Nedir? Güvenlik. Ben burada içeridekileri korumak istiyorum. Dışarıdan gelen her türlü saldırıya karşı mümkün olduğunca güvenli bir sistem geliştirmeye çalışıyorum. O yüzden böyle duvarlarını kale gibi sağlam yapmışım. Savunma için buralara böyle burçlar koymuşum. Onu yapmışım. Gözetleme kulesi yapmışım falan gibi. Gördüğümüz gibi burada aslında üçü de aynı şeye yarıyor. Üçü de insanların içinde yaşamasını mesajı.
+
+365
+01:54:25,216 --> 01:54:45,576
+Fakat üç farklı, birbirinden çok farklı mimariler görüyorsunuz. Bir tanesi kale, bir tanesi gökdelen, bir tanesi de antik bir tapınakta benzeri yapı. Kimisi zamanına göre ve eldeki malzemelere göre, dediğim gibi kimisi de farklı işlevsel olmayan gereksinimleri karşılamak üzere tasarlanmış. Yani ben bunu buraya getirip koysam ne olur?
+
+366
+01:54:46,036 --> 01:54:53,036
+Böyle bir sistemi, şu istekleri karşılayacak bir yerde modelleyip de oluştursam ne olur? Büyük bir ihtimalle buraya...
+
+367
+01:54:53,684 --> 01:55:21,424
+Çok fazla yüzey alanı olduğu için adamlar silahlarla lapır lapır bu camları kıracaktır ve benim güvenliğimi tehdit edecektir. O zaman bu mimari böyle bir amaç için uygun olmayacaktır. Ama peki ben bu şatoyu getirip buraya koyabilir miyim? Beşinci caddenin köşesine koyamam. Niye? Çünkü orada da işte gökdelen şeklinde minimum taban alanı, maksimum yerleşim planını ya da çözümünü ortaya koymam gerekiyor. Buraya hiç koyamam.
+
+368
+01:55:21,684 --> 01:55:35,244
+Niye? Çünkü zaten o zaman beton yok, çelik yok. Sadece taşlar var. Taşlar ya da tuğlalar yapılmış. Onlarla ancak bina yapabiliyorum. O yüzden belli bir iki katlı falan oluyor. Ama estetik kaygıları var mesela. Bakın bu çok daha bence güzel gözüküyor gözümüze.
+
+369
+01:55:36,180 --> 01:56:04,180
+Özetle, yazılım mimarisi aslında, buradaki fotoğraf bile pek çok şeyi anlatıyor. Yazılım mimarisi aslında temelde bir tasarım probleminin en üst seviyeli, yani soyut seviyedeki ifade tarzıdır. Burada da mesela bir mimari görünüm görüyorsunuz. Aslında bu kadar basit böyle kutular ve oklar. Yani pratikte bu kutuları ve okları kullanarak sistemimizdeki temel birleşenler neler olacak, birbirleriyle nasıl bağlı olacaklar, bunları modellemeye çalışıyoruz.
+
+370
+01:56:04,180 --> 01:56:26,060
+Yani bunları tasvir etmeye çalışırız. Bunlar kontrol ya da veri akışları da olabilir. Bu anlamda mesela bir mimari ifade etmek anlamında uluslararası olarak, evrensel olarak diyelim kabul görmüş anlamsal bir uzlaşı ortada yok. Yani biraz ben yaptım oldu. Ben böyle ifade ediyorum. Bu şekilde tasarımını gösterdim. Mimarimi ifade ettim diyebiliyoruz.
+
+371
+01:56:26,060 --> 01:56:30,560
+Gayri resmi tanıma baktığımızda da, resmi tanıma da bakacağız.
+
+372
+01:56:31,444 --> 01:56:43,123
+Bir sistemin bileşen alt sistemleri ya da modüller halinde organize edilmesi ya da bu şekilde bir bölümlenmenin oluşturulmasına biz mimari tasarım adını veriyoruz.
+
+373
+01:56:43,123 --> 01:56:54,003
+Şimdi genel olarak biz aslında katmanlar halinde yani bir iterasyonlar halinde çoklu katman iyileştirmeleri yaparak bu mimariyi oluşturmaya çalışırız.
+
+374
+01:56:55,091 --> 01:57:12,572
+En soyut haliyle aslında bir sistemi oluşturan bileşenleri, bu bileşenleri oluşturan bileşenleri ve varsa mesela alt sistemleri, hatta bunları böyle atomik olarak yani gerçekleştirilebilecek kadar düşük bir seviyeye kadar bir şekilde ifade etmeye ya da göstermeye çalışırız.
+
+375
+01:57:23,091 --> 01:57:41,572
+Bu konuda sahip olması gerektiğini ifade ettiğimde bir mimari tanımı ortaya koymuş ya da tasarımı göstermiş oluyorum. Genellikle de burada klişe dediğimiz, önceden bilinen ve belli durumlardaki problemleri iyi çözdüğü söylenen mimari stilleri kullanarak bu işleri gerçekleştiririz.
+
+376
+01:57:43,971 --> 01:57:47,971
+Şimdi işin en başında hep analizle yola çıkıyoruz.
+
+377
+01:57:49,811 --> 01:57:59,595
+Analiz aslında bileşenlere tabii ki etki eder. Çünkü ben sistemimi oluşturacak parçaların neler olması gerektiğini bunları...
+
+378
+01:57:59,859 --> 01:58:27,279
+İşleyerek, analizdeki modeli işleyerek ortaya çıkartabiliyorum. Ve müşterilerin de değişimlere adapte olmasını sağlayabiliyorum. Ama ne olursa olsun siz bir analiz modeli yani bir problem modeli ortaya koyduğunuzda tasarımdaki yaklaşımınızı buraya dahil etmemeniz lazım. Ne demektir bu? Analiz ve tasarımı mümkün olduğunca etki altında kalmamaları için birbirinden bağımsız tutun. Yani biri problemi ve domeyini tanımlasın.
+
+379
+01:58:27,859 --> 01:58:43,319
+Bu yüzden sizin teknik tarafta bunu yazılım halinde nasıl çözdüğünüzü göstersin. Bunları mümkün olduğunca bağımsız tutmaya çalışın. Yani bir belirli mimariye göre analiz yapmaya çalışmayın. Siz probleminizi gerçekten modellemeye çalışın.
+
+380
+01:58:44,539 --> 01:58:55,859
+Donanım altyapılarına ya da bir şekilde değişebilecek ortamlara karşı dirençli ya da esnek olun analiz modelinizde. Yani ben mainframe'de çalışacağım gibi bir varsayımla yola çıkıyorum.
+
+381
+01:58:55,859 --> 01:59:21,819
+Buradaki değişimlere ayak uydurabilmeniz gerekiyor. Dağıtık bir sistemde mesela ya da bir serverless architecture'da çalışabilir bir problem modeli ortaya koymanız gerekiyor. Ve sistemin gerektirdiği bütün bileşenlere analizde mutlaka sahip olmanız gerekmiyor. Mesela koleksiyon sınıfları ya da işlem sınıflarını tasarımda ekleyin. Analizde sadece problemle alakalı şeyleri tutmaya gayret edin diyorum.
+
+382
+01:59:22,771 --> 01:59:27,372
+Peki, şimdi burada şeyi görüyoruz. USB'nin.
+
+383
+01:59:28,148 --> 01:59:53,507
+Resmi, mimari tanımını görüyoruz. Şöyle uzun bir şey şuraya kadar geliyor. Bakın, işte the set of significant decisions about the organization of a software system. The selection of structural elements and their interfaces by which the system is composed. Biraz sonra Türkçesine geçeceğim. Burada önemli kelimeleri özellikle koyu yazdım.
+
+384
+02:00:10,720 --> 02:00:16,720
+İlginçlerle anlatacağız.
+
+385
+02:00:10,387 --> 02:00:14,288
+These Elements and Their Interfaces, Collaborations and Their Composition.
+
+386
+02:00:14,528 --> 02:00:18,228
+İşte bu bir yazılım mimarisi tanımı.
+
+387
+02:00:18,228 --> 02:00:28,728
+A Software Architecture is concerned not only with structure and behavior, but with usage, functionality, performance, resilience, reuse, comprehensibility gibi gibi şeyler.
+
+388
+02:00:29,208 --> 02:00:31,148
+Non-functional requirement'lar.
+
+389
+02:00:31,568 --> 02:00:36,228
+Yani illa ben yapısal ve davranışsal şeylerle mimarimi oluşturmam.
+
+390
+02:00:38,387 --> 02:00:54,868
+Şuradaki non-functional'ları da göz önüne almam gerekir. Özetle Türkçesinde mimarinin kararlarla ilgili olduğunu söylüyor. Hangi birleşenler olacak? Bunlar nasıl etkileşecek? Ve bu etkileşirken işlevsel olmayan gereksinimleri nasıl karşılayacak?
+
+391
+02:00:56,307 --> 02:01:12,748
+Ve bileşenler varsa bunlar doğal olarak yapısal elemanlardır. Ama bunların ara yüzleri de vardır. Yani bulundukları dünyaya sundukları ve dünyadan bekledikleri. İşte bu hatırlarsanız böyle fiş gibi, priz gibi böyle klas diagramın yanında şeyler, çıkıntılar yapmıştık. Bunlar aslında.
+
+392
+02:01:13,587 --> 02:01:34,127
+Birleşenlerin birbiriyle etkileşmesi gerekiyor. İş birliği yaparak çözüm, yani bir collaboration yaratarak çözüm üretmeleri gerekiyor. Ve mimari ile de ben bunları gitgide birleştirerek daha büyük alt sistem ya da sistemler oluşturmayı sağlayabiliyorum. Bunu yaparken de önceden bilinen mimari stillerin rehberliğine dayanıyorum.
+
+393
+02:01:41,587 --> 02:01:59,767
+Bir taş binaydı. Demek ki ben deneyim ya da benzer sistemlerin geliştirilmesinde iyi olduğu bilinen çözümleri alıp değiştirerek ya da kullanarak yeni sistemimdeki mimari yapıyı oluşturuyorum. Biz bunlara mimari stiller adını veriyoruz.
+
+394
+02:02:00,756 --> 02:02:24,695
+Ve aynı zamanda yapısal ve davetsel dışında dediğim gibi işlevsel olmayan gereksinimlerde mutlaka karşılanmak zorunda bir mimari ile. Gördük işte birinde mesela minimum alanda maksimum insan bir arındırmaya çalışıyoruz. Öbüründe ise güvenlikli olmasına çalışıyoruz. Diğerinde ise elde ne varsa onunla en etkin çözümü, barınma çözümünü oluşturmaya çalışmıştık. Baştaki ilk üç binada.
+
+395
+02:02:28,756 --> 02:02:44,595
+Rationale diye bir tanım geliyor Perry ile Wolf'tan. Bu da şey, mantıksal temel olması lazım. Yani belirli bir karar ve sebep sonuç zinciri içinde mantıklı kararlarınızı ifade etmeniz lazım diyorlar. IEEE şöyle bir tanım yapıyor.
+
+396
+02:02:45,716 --> 02:02:56,735
+Organization of a system diyor. Embodied in its components diyor. Their relationships diyor. Tabi birbirleriyle ve çevreyle olan relationshipleri. And the principles governing its design and development.
+
+397
+02:02:56,756 --> 02:03:09,275
+Direkt olarak işte burada da yine diğer etkenlerle birlikte sizin bunu nasıl karar verdiğiniz ya da bu kavramları nasıl karar verdiğinizin ortaya koyulması ITP tanımında yer alıyor.
+
+398
+02:03:10,095 --> 02:03:14,235
+Verhoff Change'i öne alıyor. Nedir? Değişmesi.
+
+399
+02:03:14,771 --> 02:03:33,092
+En zor olan şeyleri saklamayın. Yani bunlar şeyde merkezde olsun diyor. Mesela bir sistem düşünün. 5 yıl sonra büyük bir ihtimalle aynı kalmayacaktır. Sürekli değişecektir. Ve bu değişimler oldukça da sisteminiz aslında kırılgan hale geçecektir. Yani beklenmedik bir şekilde davranışlar sergilemesine yol açabilir.
+
+400
+02:03:33,092 --> 02:03:35,092
+Garland & Show'da...
+
+401
+02:03:35,604 --> 02:03:47,204
+En basit haliyle arkadaşlar demiş mimari dediğiniz şey komponentler, konektörler ve bunların konfigürasyonlarının birleşkesidir. Bunların hepsini bir araya getirdiğinizde mimari oluşturmuş olursunuz der.
+
+402
+02:03:47,615 --> 02:03:57,235
+Demek ki ben aslında bir mimari ifade etmek için bir bileşenlere ihtiyacım var. Bu bileşenler aslında işlemsel ya da veri elemanlarım ve bunların arayüzleri.
+
+403
+02:03:59,056 --> 02:04:08,636
+Bileşenleri bir şekilde bir araya bağlamam, birlikte çalışmalarını sağlamam gerekiyor. Yani aslında aralarında bir protokol ile haberleşmelerini, birlikte çalışmalarını sağlayacağım.
+
+404
+02:04:09,096 --> 02:04:14,936
+Bunlar kod da içerebilir. Yani illa ki böyle sadece bilmem ne protokolü değil. Burada kod da yine varınabilir.
+
+405
+02:04:15,615 --> 02:04:22,536
+Ya da düzenleşim. Mimarinin üç tane temel unsuru aslında ifade ederken kullandığımız bunlardır.
+
+406
+02:04:23,275 --> 02:04:38,115
+Bileşenler ve bağlayıcılar yani komponent ve konektörlerin nasıl bir araya geleceğini, örneğin ikili bir konektör kullanıyorsanız hangi bileşenlerin nasıl olacağını ya da topolojinin nasıl olacağını belirlediğimiz düzenede configuration adını veriyoruz.
+
+407
+02:04:39,507 --> 02:04:56,707
+Bileşenleri tekrar üzerinden geçmeye gerek yok. Az çok zaten UML'de bunları gördük. Bileşenleri nasıl seçeceğimiz konusunda da aslında çok kesin bir şey yok ama genel olarak beklenen işlevselliği karşılamaları mutlaka gerekir.
+
+408
+02:04:56,707 --> 02:05:07,507
+Mümkün olduğunca yeniden kullanın. Yani hali hazırda var olanları ya da kütüphaneleri kullanmaya gayret edin. Eğer fiziksel çeşitli gereksinimleriniz varsa, örneğin paralelleştirme...
+
+409
+02:05:07,507 --> 02:05:26,167
+Buna uygun bileşenlerini kullanın. Ve en önemlisi aslında ekibin deneyimidir. Konveyinde kanuna göre bir sistemin son hali onu inşa eden organizasyonun yapısına bağlıdır. Yani ne kadar deneyimliyseniz o kadar iyi olur. Ne kadar deneyimsizseniz o kadar bileşenleri yanlış oluşturur ya da seçersiniz.
+
+410
+02:05:26,676 --> 02:05:37,896
+Sistem bir yönde değişecek. Bu yörüngede önemli. Bileşen seçiminde eğer çok dinamik ve çok değişecek bir yapınız varsa ona uygun olacak şekilde bileşen yapınızı oluşturmak daha faydalı olacaktır.
+
+411
+02:05:38,771 --> 02:05:54,452
+Bu API'ler de bizim aslında bileşen tanımımızın bir kısmını oluşturuyor ve aslında bir kısmını da gerektiriyor. Böyle bir değişik bir arada bir şey gibi tanım yapmış oldum. Bir bileşenin uygulama programlama arayüzüdür.
+
+412
+02:05:57,332 --> 02:06:13,311
+Bir bileşendeki ya da birimdeki elemanları nasıl çağırıp kullanabileceğinizle ilişkili tanımlardır. Genellikle bir programlama diliyle tanımlanır. Buna Language Binding adını veriyoruz. OCL ya da ADL gibi özelleştirilmiş notasyon dilleri, deklaratif diller de kullanabilirsiniz tabii ki.
+
+413
+02:06:14,051 --> 02:06:23,351
+Özetle API sizin bileşeninizin sundukları ve bekledikleri arayüzleri tanımladığınız doküman ya da birim diyebiliriz bunlara da.
+
+414
+02:06:25,332 --> 02:06:39,351
+Duyduğunuz için özellikle burada söylemek istedim. Bir mimariyi ifade ederken bunları API'ler halinde oluşturmak, özellikle komponent yapılarını anlatmak için genellikle kullandığımız çözüm.
+
+415
+02:06:40,404 --> 02:07:08,404
+Konektörler de aslında dediğim gibi bileşenleri birbirine bağlar. Bunlar biraz daha karmaşık. Belirli kararlar almanız gerekiyor ve protokolleri belirlemeniz gerekiyor. Mesela sıra nasıl olacak? İletim yönü nasıl olacak? Ya da sıra gözetilecek mi? Ortaya mı konuşulacak yoksa belli bir hedefe mi konuşulacak? Yanlış bir şeyler olduğunda bu hata nasıl düzeltilecek ya da nasıl geri alınacak? Bunları belirleyeceğiz.
+
+416
+02:07:08,404 --> 02:07:19,384
+En basiti mesela bir prosedür çağırıyorsunuz ve prosedürden bir geri dönüş değeri alıyorsunuz. Burada bir taraf çağıran, bir taraf çağrılan.
+
+417
+02:07:19,828 --> 02:07:46,328
+Bir tarafı metodu çağırıyor, öbürü de geri dönen bir mesajı alıyor. Asimetrik bir ilişki var. Neden? Siz çağrıyı başlatıp bekliyorsunuz, bitmesini bekliyorsunuz ve senkron. Siz o alt programınız ya da prosedürünüz ya da fonksiyonunuz çalışıp da bitene kadar herhangi bir işlem yapmıyorsunuz, durup bekliyorsunuz. Ama bu bir en basit konnektör, bir fonksiyon çağrısı yani. Bunun gibi pek çok konnektör olabilir.
+
+418
+02:07:48,148 --> 02:08:05,348
+Bir de Configuration demiştik. Bunlar da aslında nasıl birleştiklerinin ortaya konulması. Şu anda onlara çok detayına girmeyeceğim. Başka ne var? İşte kavramsal mimari diye bir tanım var. Conceptual Architecture. Bu şey, belirsiz ya da yüksek seviyeli bir mimari demektir.
+
+419
+02:08:06,868 --> 02:08:13,348
+Daha böyle en başında, sürecin en başında, daha gereksinimleri bile tam anlamadan bunu üretebilirsiniz. Yani...
+
+420
+02:08:13,747 --> 02:08:27,528
+Genel olarak şöyle şeyler kullanabilirim, böyle bir komponent yapısı ya da böyle bir konektör yapısı kurgulayabilirim şeklindeki düşüncelerdir. Tamamen kavramsal ama bunlar tabii ki değişebilir. Ama en azından bir kestirme yapmanızı sağlar.
+
+421
+02:08:28,756 --> 02:08:43,775
+Tabii planlanan ve inşa edilen mimari ya da hayaller gerçekler. Her zaman aynı olmaz. Burada mesela bir uygulamayı gerçeklerken başta düşündüğünüz kavramdan tamamen başka bir şey inşa edebilirsiniz.
+
+422
+02:08:44,372 --> 02:08:59,672
+Buna biz genel olarak ya da işte bir şeyleri kullandınız, hazır bileşenleri ama sonrasında planladığınız sonuçtan farklılaştığınızı fark edebilirsiniz. Ne kadar kolay da olsa onları kullanmak aslında yapmanız gereken işi tam olarak yapamamakla sonuçlanabilir.
+
+423
+02:08:59,672 --> 02:09:11,912
+Buna da mimari sapma adını veriyoruz. Architectural Drift. Eğer ben yaparken oluşursa Drift. Ama eğer ben yaptım, sistem kullanılmaya başladı. Yani ben bakım sürecindeyim. Burada oluşursa bu.
+
+424
+02:09:12,372 --> 02:09:16,771
+Yanlış çalışma durumu varsa o da mimari erozyondur.
+
+425
+02:09:17,792 --> 02:09:20,712
+Architectural Erosion. Bu da en kötüsü tabii.
+
+426
+02:09:21,752 --> 02:09:29,231
+Bakım ekibi bir şekilde değişiklikler yapar. Planlı olmayan değişiklikler, hani günü kurtarmak için yapabilir.
+
+427
+02:09:29,412 --> 02:09:32,152
+Örneğin o komponent yerine bambaşka bir komponent kullanabilir.
+
+428
+02:09:33,152 --> 02:09:34,372
+Ve genellikle de bunlar...
+
+429
+02:09:35,091 --> 02:09:43,671
+Dokümente edilmezler. O yüzden de sonraki bir değişimde yıkım çok daha hızlı olacaktır. O yüzden buna sapma değil, erozyon adını veriyoruz.
+
+430
+02:09:48,180 --> 02:10:00,000
+Mimari görünüm dediğimiz, architectural view kavramı aslında benim mimariyi gösterme şeklim, yani diagramlarla ifade etme şeklimdir. Nelerle yapabilirim? Aslında UML'de gördüğümüz...
+
+431
+02:10:00,000 --> 02:10:28,000
+Ve hani mimari ifade etmek için kullanabiliriz dediğimiz bütün şeylerle, diagramlarla bunu yapabiliriz. Şu anda bunun üzerinde çok durmayacağım. Bugün de bu konuyu işlemeyeceğim. Orada bitireceğim. Şimdi ben son olarak bugün mimari stillerden bahsetmek istiyorum. Şimdi hani bu şey dedik ya, klişeler ya da önceden bilinen iyi çözümler. İşte bunlara biz aslında mimari stiller adını veriyoruz. Bunlar tamamen isimlendirilmiş karar koleksiyonu.
+
+432
+02:10:28,000 --> 02:10:44,239
+Yani belirli çözüm yaklaşımları nedir? Bileşenlerinizin neler olması gerektiğini ve etkileşimlerinin bağlantılarının nasıl olması gerektiğini bir şekilde yapın. Şu şekilde bağlayın şeklindeki tavsiyelerden oluşur.
+
+433
+02:10:44,239 --> 02:10:56,000
+Ve önceki deneyimlerden yararlanarak ortaya çıktığı için, belli problemleri iyi çözdüğü, bilindiği için de aslında size belirli bir problem için daha hızlı çözüm üretmenizi ya da uygun bir...
+
+434
+02:10:56,000 --> 02:10:58,000
+Mimaride çözüm üretmenizi sağlar.
+
+435
+02:10:59,179 --> 02:11:02,859
+Şimdi hemen çok basit bir örnek. Hepiniz bunu eminim ki biliyorsunuz.
+
+436
+02:11:03,000 --> 02:11:05,500
+Mesela şöyle bir tanım yapayım size.
+
+437
+02:11:06,179 --> 02:11:13,300
+Servis veren ve servis alan bileşenleriniz fiziksel olarak ayrı makinelerde ve bu sayede iki tarafta bağımsız olarak ölçeklendirilebilir.
+
+438
+02:11:13,519 --> 02:11:15,779
+Yani hem verenler hem alanlar ölçeklendirilebilir.
+
+439
+02:11:16,372 --> 02:11:28,311
+Servis verenler, kimliklerini belirtmediği sürece servis alanlar kim olduklarını bilmez. Bu sayede kim olursa olsun şeffaf olarak değişen istemcilere hizmet verebilir.
+
+440
+02:11:29,108 --> 02:11:51,927
+Servis alanlar da birbirinden izolidir. Bu sayede bağımsız olarak sayıları değişebilir ya da değişim yaşayabilirler. Servis alan sadece ve sadece servis verene bağımlıdır. Yani belli bir servis aldığı yere bağımlıdır. Serviste talep belli bir değerin üzerine çıktığında dinamik olarak yeni servis tarafları ekleyebilirsiniz ve mevcut hizmet verenlerin yükünü azaltabilirsiniz.
+
+441
+02:11:52,467 --> 02:12:08,447
+Bu hangi stili uyar? Şimdi burada birkaç tane seçenek sundum. Blackboard, Client Server, Invocation, Layered, Object Oriented, Pipe and Filter. Bunlar bilindik yazılım mimarileri. Burada aslında bahsettiğimiz şey doğal olarak bir Client Server.
+
+442
+02:12:09,300 --> 02:12:37,300
+Yani biz Client Server, Client Server çok kullanıyoruz. Aslında temel olarak Client Server'ın tanımı budur. Servis veren ve servis alanları fiziksel olarak birbirinden ayırın. Bu ikisi birbirinden bağımsız olarak ölçeklendirebilsin. Siz kime hizmet verdiğinizi bilmek zorunda değilsiniz. Şeffaf olarak her istihdam yapana, tabii kimlik belirtme süreci olabilir. Onun dışında herkese hizmet vereceksiniz. Aynı servisi vereceksiniz. Her iki tarafta...
+
+443
+02:12:37,300 --> 02:12:58,619
+Birbirinden bağımsız olarak değişim yaşayabilir. Ama tek bir değişmez var. Siz servis aldığınız yere bağımlısınız. Hep aynı marketten alışveriş, aynı bakkala gitmek gibi. Başka bakkala gitmeyeceksiniz. Siz sadece onun adresini biliyorsunuz. Oradan hizmet alacaksınız. Ama o bakkal pek çok müşteriye hizmet verebilir.
+
+444
+02:13:00,020 --> 02:13:22,320
+Ondan sonra diyelim bakkal şey olmadı. Taleplere yetişemiyor. Hemen yanına yeni bir bakkal açmak gibi düşünün ya da yeni bir kasa açmak gibi bu karfurlarda oluyor. Yani belli bir kuyruk uzadığında hemen yeni kasa açıyorlar. Onun gibi düşünün. İşte bu aslında mesela tipik bir client server mimari stili.
+
+445
+02:13:28,020 --> 02:13:34,420
+Kullandım dediğimde ona uygun olan bileşenleri ve bağlayıcıları kullanıyorum demiş oluyorum.
+
+446
+02:13:34,899 --> 02:13:55,199
+Peki, stil kullanıca ne oldu? Biz aslında ne fayda sağladık? Deneyimi kodlamış olduk. Daha önceden bildiklerimizi tekrar ya da benzerlerini yapacağımızı belirtmiş olduk. Bu sayede genel geliştirme yükümüzü azaltıp gereksiz ya da alakasız yerlere gitmenin önüne geçtik.
+
+447
+02:14:02,899 --> 02:14:20,219
+Örneğin, Data Driven ise hazır bir bilinen MySQL çözümünü direkt olarak alıp kullanabiliriz. Aynı zamanda sizin nasıl çalışacağınızı gerçekleştirmeyi yaparken nasıl çalışacağınızı da buradaki mimari yaklaşımlar, mimari stiller değiştirebilir.
+
+448
+02:14:21,427 --> 02:14:34,127
+Peki, son olarak stillere bakalım. Uzun bir liste var ama en çok bilinenleri ya da en yaygın kullanılan mimari stiller ya da yazılım mimarisi deyince neler anlıyoruz? Hızlıca onların isimlerini tanıyalım.
+
+449
+02:14:34,847 --> 02:14:36,347
+Abstract Data Type.
+
+450
+02:14:36,819 --> 02:14:56,379
+Bu yine günümüzde artık pek moda değil. Neden? Çünkü bu Object Orient'ın belki ilk atası diyebileceğiniz bir yaklaşım. Temsilin gizlenmesi. Yani ben verilere aslında davranış eklemeye başlayayım ve onlar bir paket halinde hizmet versinler. Hani böyle çok ilkel bir sınıf tanımı gibi düşünebilirsiniz.
+
+451
+02:14:57,011 --> 02:15:14,331
+Batch Sequential. Bu batch işlemler, sıralı ardışlı işlemleri yapmak için önerilmiş bir mimari. Geçerle, düzenle, güncelle şeklinde bir döngü. Yani Validate, Edit and Update döngüsünü sürekli olarak tekrar ediyorsunuz işlemlerde.
+
+452
+02:15:25,011 --> 02:15:41,371
+Tahta var sınıfta. Herkes gidip oraya istediğini ve elde ettiği sonucu yazıyor. Bu sayede ben mesela bir sonuç bekliyorum. Blackboard'a geldiğinde o sonuç işbirliği yapan ajanlarla ve fırsatçı kontrolle diyorum ki ben burada şey.
+
+453
+02:15:42,292 --> 02:16:07,712
+Beklediğim sonucu aldım. Orada alıp işleyip mesela başka bir sonucu ortama tekrar bırakıyorum. Ya da belli bir istek bırakıyorum ortama. Bunu dinliyor ajanlar. Ben bu isteği yapabilirim diyor. Yapıp tekrar sonucunu ortama atıyor. Bu şekilde bir kara tahtaya herkesin eline tebeşir alıp yazdığı, istiyorum ya da sonuç veriyorum şeklinde bir şeyleri koyduğu bir yapı. Demek ki ortak bir veri havuzu kullanılması gerekiyor burada.
+
+454
+02:16:08,595 --> 02:16:30,995
+En sevdiğim Big Ball of Mud, stil değil stil eksikliğinin tanımı. Eğer siz ekip olarak herhangi bir mimari tasarım çalışması yapmazsanız Big Ball of Mud yapmış olursunuz. Büyük camur topu ortaya karman çorman bir şey çıkar. Ortada ne bir mimari vardır ne bir düzgün çözüm vardır. Yalap şalap yapılmış bir uygulama söz konusudur.
+
+455
+02:16:31,235 --> 02:16:36,556
+Client Server biraz önce detaylarına baktık. Özellikle hareket transeksiyonlarda çok kullanılır.
+
+456
+02:16:36,595 --> 02:16:38,935
+Ve çok katmanlı olarak da modellenebilir.
+
+457
+02:16:40,435 --> 02:17:08,056
+Komponent-based, yine reusable komponentler ya da modüler yapıyla bir çözüm oluşturmanızı söyler. Core Routines, simetrik etkileşim. Bu biraz daha detay. Şunun gibi düşünebilirsiniz. Hani PrintF'te bir format tanımlarsınız, bir de veri tanımlarsınız ya. Ama formatı string içinde tanımladıktan sonra outputla birlikte gidip oradaki datayı o formatta arasına basarsınız.
+
+458
+02:17:08,435 --> 02:17:16,556
+Output oluştururken işte aynı o şekilde simetrik olarak etkileşim yapan yapılar varsa ya da çalışması gereken coroutine stilini kullanabilirsiniz.
+
+459
+02:17:17,376 --> 02:17:20,355
+Data centric yine bu da çok outdated oldu günümüzde.
+
+460
+02:17:20,355 --> 02:17:24,855
+Tamamen stored procedure kullanın diyor. Yani veri tabanında işlemleri yapın.
+
+461
+02:17:25,896 --> 02:17:30,595
+Bu sayede veri üzerindeki manipülasyonu en hızlı şekilde gerçekleştirebilirsiniz.
+
+462
+02:17:30,935 --> 02:17:32,335
+Artık bu da çok fazla kullanılmıyor.
+
+463
+02:17:33,043 --> 02:17:55,083
+Domain Driven özellikle belli alanlarda hala kullanılıyor. Belli bir iş modeli için özel çözüm geliştirilecekse, işte bu askeri projelerde falan çok kullanılır. Ya da böyle kesin tanımlı vergi hesabı gibi uygulama programlarında falan da Domain Driven Design kullanılır. Veri akışları iş modelini değiştirebiliyorsa buralarda bu stili kullanabilirsiniz.
+
+464
+02:17:55,891 --> 02:18:19,252
+İmplisit Invocation direkt olarak aslında yine bir pattern haline de geldi. Publisher Subscribe kalıbı desem hemen anlarsınız. Bu şekilde olaylara verilen tepkiler halinde bir sistem modellemesi yaparsanız, mimarisi oluşturursanız buna da aslında İmplisit Invocation adını, örtülü tetikleme adını verebilirsiniz.
+
+465
+02:18:21,236 --> 02:18:41,216
+Soyut makineleri oluşturup her makinenin, her katmanın kısıtlı görünürlükle bir üsttekine hizmet etmesi şeklinde bir kurgudur. Böyle bu entire gibi düşünmeyin. O daha çok client server architecture aslında. Bu daha çok böyle şey gibi hani işletim sistemini düşünün.
+
+466
+02:18:49,236 --> 02:19:13,836
+X11 çalışıyor. Hani grafik arayüzü çalışıyor. Katman katman, her katman üsttekine hizmet ediyor. X11'de mesela size hizmet ediyor. Ekran aracılığıyla, mouse'la bilmem neyle etkileşime geçebilmenizi sağlıyor. Bu şekilde sadece üstteki katmanlara hizmet sunan parça katmanlar, pasta gibi dizildiğinde buna da Layered Architecture adını veriyoruz.
+
+467
+02:19:14,515 --> 02:19:28,415
+Benim bildiğim, yani yaratılan ilk stil, Master Control. Bu çok eski tabii ki. Hierarşik olarak alttaki ileri çağır ve geri dön. Yani böyle mainframe şeylerini düşün. Çalış, çalış, çalış, çalış, dön gibi.
+
+468
+02:19:28,915 --> 02:19:42,475
+MessageBus, asenkron ortak veri yolu kullanımı demektir. Yine özellikle mikroservis mimarisindeki message queue'larda falan buradan yola çıkılarak aslında oluşturulmuş çözümler.
+
+469
+02:19:43,572 --> 02:20:00,000
+Mobile Code var. Bu özellikle mobil cihazlarda istek üzerine kod çalışması, uzaktan bir mobil ajanın merkezdeki ya da uzaktaki bir kodu ya da bir şeyi, prosedürü çalıştırarak tetiklemesi, yani bir agent-based mimari oluşturulması da Mobile Code.
+
+470
+02:20:00,000 --> 02:20:28,000
+Object Oriented bir isim ama bizim böyle direkt Object Oriented Programming'den biraz daha az bir şey, daha farklı. Burada asenkron mesaj iletimleri ve kontrol iş parçacığının bu mesajlardan bağımsız olması var. Yani yine böyle nesneler var ama bunların hepsi bağımsız ve kontrolleri kendi kendilerinde. Böyle bileşenleriniz nesne halinde yani böyle çalışacak ve birbirlerine...
+
+471
+02:20:28,000 --> 02:20:51,860
+Asenkron mesajlar yollayarak haberleşecekler, işbirliği yapacaklar ve bu işbirliğiyle bir problem çözecekler. Tıpkı biz hani kavramları böyle nesneler halinde modelliyoruz, onlar birbirine bir işbirliği diagramı içinde çağrılar atıp da bir sorumluluğu, bir senaryodaki eylemi yerine getiriyor ya, aynı o gibi, onun mantığı düşkü bir düşünebilirsiniz. Bu şekilde çalışan sistemlere Object Oriented Steel adı veriliyor.
+
+472
+02:20:52,468 --> 02:21:11,568
+Peer to Peer, bütün eşler ortak bir servisin sorumluluğunu paylaşıyorlar. Yönetici olmadan herkesin eşit seviyede olduğu bir işlem dağıtımı düşünebilirsiniz. İşte bu e-danki falan bunun tam olarak karşılığı. Emule hala var mı bilmiyorum. Torentler yani.
+
+473
+02:21:12,308 --> 02:21:37,448
+Şimdi plug-in, Eclipse tarzı ortamlardaki mimaridir. Siz third-party add-in'lerle ya da diğer ekstansiyonlarla sistemi eklenti yapa yapa büyütürsünüz. Mesela SAP de bu şekilde modellenmiştir. Modül eklersiniz. Onlar ve birbiriyle başkalarının da yaptığı şeyler eklenti yaparak sistemi büyütebilir. İstediğiniz tarafa doğru.
+
+474
+02:21:40,308 --> 02:21:41,508
+İler de çok kullanılır mesela.
+
+475
+02:21:42,804 --> 02:22:10,783
+Eğer Data Processing falan yapıyorsanız Python'da, aslında yaptığınız şey Pypen Filter'dır. Nedir? Önce veriyi okursunuz. Ondan sonra ön işlemede bir şeyleri temizlersiniz. Ondan sonra onun çıktısını alıp bir ne bileyim boyut dönüşümü PCA gibi bir şeye verirsiniz. Onun çıktısını bir tane sıralama algoritma, sınıflama algoritmasına verirsiniz ya da bir kümeleme algoritmasına. Onun çıktısını bir Evaluator'dan geçirirsiniz.
+
+476
+02:22:10,804 --> 02:22:38,804
+Train Test bilmem ne şeyinden geçirip bir performans alırsınız. Ondan sonra onu çıktılarını alıp bir grafik göstereceği verirsiniz. Size böyle şeyler çizer. Hata eğrileri bilmem neleri çizer. Ne yaptınız? Tek yönlü olarak böyle araya bir filtreler var. O filtrelerin arasında boru var. Veri oradan böyle bir yerden girer. Filtrelerden geçe geçe sona doğru akar. Bu şekildeki tasarımlara da Pipeline Filter adını...
+
+477
+02:22:38,804 --> 02:22:39,203
+veres
+
+478
+02:22:40,084 --> 02:23:07,544
+Proses kontrol, donanımı kontrol eden yazılımlarda genellikle kullanılır. Bir geri besleme döngüsü tanımlar. İşte bu arabalardaki hız sabitleme sistemlerini düşünün. Hani 70'e sabitlediniz, işte 70'e kadar gaza basar, 70 olduğunda gazdan çeker. Sonra tabii hız yine düşmeye çalışır. Sonra o yine gaz vererek 70'de tutmaya çalışır. Böyle böyle böyle böyle. İşte prosesi kontrol eder. Ya da çok arttı diyelim. Hız fren yapar mesela.
+
+479
+02:23:08,084 --> 02:23:08,724
+kendine gibi.
+
+480
+02:23:10,224 --> 02:23:11,344
+Production Systems
+
+481
+02:23:11,344 --> 02:23:13,824
+kural tabanlı ya da koşullu çalışma.
+
+482
+02:23:13,924 --> 02:23:16,084
+Bunu böyle şey yapay zekadan
+
+483
+02:23:16,084 --> 02:23:17,904
+alınmış bir şey. Eğer
+
+484
+02:23:17,904 --> 02:23:20,144
+kontrol akışı hakkında tam bir fikrimiz yoksa
+
+485
+02:23:20,144 --> 02:23:21,944
+kullanabiliriz. Ben pek kullanmadım.
+
+486
+02:23:22,272 --> 02:23:50,272
+REST yine günümüzde çok moda biliyorsunuz. Representational State Transfer'de başka bir mimari aslında. Tam işte mesela HTTP uygulamalarının hepsi aslında REST mimarisinde gerçekleştiriliyor. Nedir? Yine burada bir client-server ilişkisi var ama burada katmanlı ve durumsuz. Yani her isteğin birbirinden yani aynı client'tan gelse bile öncekilerle herhangi bir ilişkisinin olmadan tek tek bağımsız ele alındı.
+
+487
+02:23:50,272 --> 02:23:59,772
+Ve aynı zamanda önbelleklenebilir, yani keşlenebilir, dağıtık hiper ortamlar oluşturabildiğiniz mimariye de rest adını veriyoruz.
+
+488
+02:24:01,587 --> 02:24:29,587
+Servis Oriented Architecture var. Bu da belki ismini duyduğunuz şeylerden biridir. Sistemin bütün hizmetlerini ayrık servisler halinde modelleriz ve sistem aslında bir servis kümesi olarak davranır. Bunlar gevşek ilişkilidir. Yine statelesslardır. Bunlar keşfedilebilir. Tabii bunun için de yine WSDL gibi diller biliyorsunuz tanımlanmış. Kontratlar tanımlı. Yani siz bir servisle nasıl haberleşmeniz gerektiğini bir yerden okuyup anlayabiliyorsunuz ya da bir servise ihtiyacı...
+
+489
+02:24:29,587 --> 02:24:35,707
+Bu servis nerededir, kimdir, nedir, nasıldır diye bunu sorgulayıp bulabiliyorsunuz.
+
+490
+02:24:36,148 --> 02:24:43,688
+Shared Nothing, Sharded diye geçiyor. Bu da düğümler arasında paylaşım yapmadığınız dağıtık bir veri tabanı mimarisi.
+
+491
+02:24:44,755 --> 02:25:00,775
+State Transition'lar direkt şey, Graphical User Interface'ler gibi uygulamalar ya da kullanıcılar olay yarattığında çalışan reaktif asenkron tepki, asenkron olay tepkisi veren sistemlerin mimarisine verilen isim.
+
+492
+02:25:01,395 --> 02:25:08,595
+Durum geçiş sistemi. Aslında bir durum geçiş şeyi yaptık ya biz tanımı tam olarak o. Bunu real-time'de genellikle kullanırız.
+
+493
+02:25:08,943 --> 02:25:28,283
+Shared Memory yine senkronizasyon için bir kilit mekanizması sağlar. Buradaki bütün prosesleriniz, her şeyiniz ortak bir bilgi havuzu kullanır. Güvenlik falan lazımsa tabii bunu kullanmamanız. Çünkü herkes ortak veriye erişiyor. Bütün parçalarınız aynı veri havuzunu kullanıyor. Aynı böyle Blackboard gibi düşünebilirsiniz bunda yakın bir şekilde.
+
+494
+02:25:33,744 --> 02:25:50,204
+İstekleri bir dille kodluyorsunuz. Bir interpreter bunları çalıştırıp ilgili yordamlara yönderiyor. Yani parçalara dağıtan bir interpreter'ınız, bir yorumlayıcınız var. İstek kuyruğunu bir şekilde işleyerek işlerin yapılmasını sağlıyor.
+
+495
+02:25:50,932 --> 02:26:15,752
+Burada verdik. Tabii daha da bulabilirsiniz. Kataloğu bu kadar olmasa gerek. Fakat en çok bilinen ya da tarih içindeki gelişimiyle karşımıza çıkan mimari yaklaşımlar bunlar. Günümüzde de daha tabii ki farklı yazılım mimarilerine doğru geçiş var. Bunların içinde saymadığımız ama fark ettiyseniz pek çok tarafıyla bunların bazılarından bir şeyler miras alan mikroservisler var.
+
+496
+02:26:15,752 --> 02:26:18,932
+Servis oryantıdan sonra karşımıza.
+
+497
+02:26:18,932 --> 02:26:31,891
+Günümüzde özellikle de Cloud tarafının iyice gelişmesiyle serverless architecture'lar ortaya çıktı. Onları da günümüzde şu anda en modern mimari tasarımlar olarak kullanıyoruz.
+
+498
+02:26:33,236 --> 02:26:51,596
+Tabii bunlar, şunu kullandım diye direkt olarak bir şeyi çözemiyorsunuz her zaman. Pek çok sorun her zaman yine kalmaya ve karşımıza çıkmaya devam ediyor. O yüzden biz genellikle birden fazla stili kullanarak problemleri çözeriz. Bunlara da heterojen sistemler adını veriyoruz.
+
+499
+02:27:01,236 --> 02:27:20,516
+Bir askeri uçak düşünün. Genellikle bunlar şey yapar. F-16'yı düşünün. Bomba atanı vardır. Radar taşıyanı vardır. Fotoğraf çekeni vardır. Ya da ne bileyim başka bir şey yarayanı vardır. Ya da belli bir radar sinyali bozanı vardır.
+
+500
+02:27:20,976 --> 02:27:40,976
+Şimdi burada baktığımızda çok çeşitli farklı farklı versiyonlar görüyorsunuz. Eğitim için olanı vardır gibi. Ama aslında uçak aynı uçak. Yani hani uçağın %90'ı değişmiyor, %95'i değişmiyor. Kontrol mekanizması da değişmiyor. İşte bunlar farktan çok benzerlik içeriyor. Çok az farklılıklar içeren çeşitli versiyonlar olan sistemler olabilir.
+
+501
+02:27:48,976 --> 02:28:01,716
+Hepsi burada tanımlanır. Özelleşen kısım varsa bunu artı ekstra bir mimariyle tanımlayabilirsiniz. Tabii mimarda ilerledikçe stillerin tanımlarında daha kesin olmaları da yine gerekiyor.
+
+502
+02:28:02,164 --> 02:28:30,164
+Mimari tanımlamak için bazen notasyonlara ihtiyaç duyarız. Mesela bir dile ihtiyaç duyarız. Buna da ADL adını veririz. Aynı zamanda araç desteği de sağlar bu bize. Örneğin mesela bir diagram çizdiniz. Bu stile uygun mu diye kontrolleri biraz daha otomatik yapabilirsiniz. Simülasyonları belki bu araçlarla gerçekleştirebilirsiniz. Pek çok dil var mimari tanımlamanızı sağlayan. Burada pek çok örneğini görüyorsunuz. Bunların bir tanesi gerekirse ileride zaman.
+
+503
+02:28:30,164 --> 02:28:32,103
+zamanımız kalırsa şöyle bir bakarız.
+
+504
+02:28:32,948 --> 02:29:00,948
+Sonrasında yine ben bir mimari uyguladım ama acaba doğru mimari uyguladım mı diye bir kontrol yapabilirim. Bunun için bir Architectural Review Board kullanılabilir. Biraz daha gay resmi olan üzerinde durmayacağım sadece tanıyın diye söylüyorum. SEM kullanılabilir. Software Architecture Assessment Method. Ya da daha resmi istiyorsanız yine Carnegie Mellon'un ürettiği A-TAM var. Architecture Trade of Analysis Method. Bunları kullanarak da doğru mimari uyguladığınız.
+
+505
+02:29:00,948 --> 02:29:11,488
+Şimdi buna çok fazla devam etmeye gerek yok. Sadece bilin diye söyledim. Hani bir geçerlemeyle doğru stili uyguladık mı diye kontrol etme mekanizmalarımız yine tanımlı.
+
+506
+02:29:12,147 --> 02:29:33,307
+Ne yaptık? İşte bugün en azından son saatte yazılım mimarisine ve mimari stillere bir tanım, bir giriş yapmış olduk. İlerleyen derslerde de daha detaylı bakacağız dedik ama bu detayı artık size bas ediyorum. Ve önümüzdeki haftadan itibaren sizler özellikle mikroservis architecture konusunda sunumlarınızı yapmaya başlayacaksınız.
+
+507
+02:29:40,147 --> 02:29:59,967
+Yüksek kaliteli sistemle üretmek ve mümkün olduğunca da tabii ki maliyetleri azaltmak. Bunun için de problemleri mümkün olduğunca erken belirlemek ve probleme en uygun olacak olan çözümü ortaya koymak. Yani mantıklı çözümü ortaya koymak. Mümkün olduğunca elimizdeki hazır araç ve çözümleri kullanmak ve bir şekilde paydaşlar arasında hızlı etkileşim.
+
+508
+02:30:00,000 --> 02:30:06,099
+ve iletişimi sağlamak. Bunları yapmak için aslında mimarileri kurgulamaya çalışıyoruz.
+
+509
+02:30:06,680 --> 02:30:09,520
+Evet, mimari görünümlere geçmeyeceğim ve burada bırakıyorum.
+
+510
+02:30:10,835 --> 02:30:29,455
+Temel olarak, yazılım mimarisi deyince aslında mimari stilleri tanımlamış durumdayız. Mimari stiller deyince de kabaca hangi isimler var? Bunların detaylarını siz yine daha fazla araştırabilirsiniz tabii ki. Ben bizi de tanıtmaya çalıştım sadece. Bunları gördük. Kataloğu az çok tanıdık yani.
+
+511
+02:30:38,835 --> 02:30:54,415
+Bu haftalık bu kadar. Dediğim gibi aslında benim sözlerim de buraya kadar. Bundan sonra top sizde. Şimdi haftaya [öğrenci] ile başlıyoruz. Değil mi?
+
+512
+02:30:56,556 --> 02:30:57,175
+Tamam, hadi.
+
+513
+02:30:57,175 --> 02:30:59,175
+Evet, sonrasında...
+
+514
+02:30:59,860 --> 02:31:27,700
+Kim geliyordu? Hemen bakıyorum. Section 2, [öğrenci]. [öğrenci] derslere pek katılmıyor ama sunum yapacağı zaman geleceğini söyledi. [kişisel bilgi] Ona da buradan izlediği zaman için not düşmüş olayım. Yani haftaya [öğrenci] ve [öğrenci]'yı dinleyeceğiz. Chapter 1 ve 2'yi öğrenerek yolumuza devam edeceğiz.
+
+515
+02:31:27,860 --> 02:31:48,880
+Peki, o zaman haftaya görüşmek üzere diyelim. Kendinize iyi bakın. İyi haftalar şimdiden. Tabi pazartesi ilk saatleri biz kullanıyoruz. Kapatıyorum. Haftaya [öğrenci] başlayacağız. Evet, görüşürüz. Hoşçakalın.
