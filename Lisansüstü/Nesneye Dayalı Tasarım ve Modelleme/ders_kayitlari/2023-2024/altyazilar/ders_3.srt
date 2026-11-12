@@ -1,0 +1,1767 @@
+1
+00:00:05,011 --> 00:00:07,011
+Teşekkürler.
+
+2
+00:00:30,484 --> 00:00:34,484
+Şuna başlayalım. Sonra yavaş yavaş.
+
+3
+00:00:55,892 --> 00:00:56,332
+Tamam.
+
+4
+00:01:24,084 --> 00:01:28,084
+Bugün de Prototype ile devam edeceğiz.
+
+5
+00:01:34,516 --> 00:01:43,516
+Bir beş dakika daha bekleyelim. Belki de sonuç sayısı daha fazla. Altta. Bu alanı da şöyle yapalım.
+
+6
+00:01:43,516 --> 00:01:58,956
+On üç, on diyelim. Bir beş dakika daha. Bir beş dakika daha bekleyelim. Beş dakika daha başlayacağız.
+
+7
+00:06:51,699 --> 00:06:58,699
+Son içerisinde tam iki kişi daha katılmış oldu. Bakalım başlarız madem öyle artık.
+
+8
+00:07:00,699 --> 00:07:02,699
+Saatine on kişi yaptık. Fekala.
+
+9
+00:07:08,564 --> 00:07:17,144
+Evet, başlayalım arkadaşlar. Ha bir yandan da Eclipse açayım bir de. Sonra arada odamızı bozmasın.
+
+10
+00:07:21,747 --> 00:07:43,807
+Evet, bugün prototype kalıbıyla devam ediyoruz. Sıradaki kalıbımız bu. Bu kalıpta amacımız, oluşturulacak nesnelerin türlerini belirlemek için bir prototip nesne kullanmak ve bütün nesnelerin bu prototipi kopyalanmak suretiyle ilerleyecek. Amacımız bu.
+
+11
+00:07:44,307 --> 00:08:02,927
+Bu amaç şeklinde çalışan başlı başına programlama dilleri de var arkadaşlar. O dillerden bir isimlenme şeklinde söyleyebiliriz bu kalıbı. Yani onun çözmeye çalıştığı problemleri çözen bir kalıb.
+
+12
+00:08:19,315 --> 00:08:30,315
+Dersin başında bir şey yok. Pekala. Şimdi bu bahsettiğimiz şeyi nasıl yapacağız? Nerede kullanacağız?
+
+13
+00:08:30,315 --> 00:08:43,316
+Şimdi burada bir müzik nota deste programı çalışıyor. Bakalım bir... Ha tamam. Fazla pecapla atmışım. Oradan kaçmışım.
+
+14
+00:08:43,316 --> 00:08:47,295
+Çünkü bunu anlatan Yasun da vardı diyordum. Yani işte o da.
+
+15
+00:08:47,296 --> 00:09:01,836
+Burada örneğimiz bir müzik mesle programı yazmak. Bunu da yapmak amacıyla zaten elimizde hazır olan bir grafik uygulaması oluşturma çerçeve programımız var.
+
+16
+00:09:09,268 --> 00:09:16,268
+Bu hobimizi gerçekleştirdik. Bir şey yazabilir miyiz diye düşünüyoruz.
+
+17
+00:09:16,268 --> 00:09:20,268
+Bu grafik çerçeve programımızda soyut bir grafik sınıfımız var.
+
+18
+00:09:20,268 --> 00:09:25,268
+Sonra bakıyoruz acaba başka nelerimiz var ve bu müzik uygulamasına nasıl aktararız bunu.
+
+19
+00:09:25,268 --> 00:09:32,268
+Bir tool sınıfımız var. Burada çeşitli kontrol düğmelerinin yer alabileceği paletler var.
+
+20
+00:09:32,288 --> 00:09:42,728
+Ve ondan da curtain ile üretebileceğiniz retilmiş ve yeni grafik şekillerini sizin alanlarını ekleyebileceğimiz grafik tool sınıfımız var.
+
+21
+00:09:42,728 --> 00:09:48,648
+Biz de bu grafik tool sınıfını kullanabiliriz notalarımızı eklemek için.
+
+22
+00:09:48,648 --> 00:09:59,888
+Nihayetinde 7 tane nota var. Doğr, mi, fa, sol, la, si. Ondan sonra bunların içi dolu, içi boş olanları var.
+
+23
+00:10:00,000 --> 00:10:22,720
+Tekli çiftli olanları var. Böyle birkaç varyasyon var. Bunun nihayetinde bu varyasyonların hepsi belli. Önceden belli. Literatüre yeni bir note şekli kazandırılması söz konusu olmadığına göre bizim örnek uzayımız belli olacak. O zaman biz de bu grafik tool sınıfını kullanabiliriz diye düşünüyoruz.
+
+24
+00:10:23,251 --> 00:10:33,651
+Tabi ki bu resim şerçeği programının bu notalar hakkında önceden bir bilgisi yoktu. Bunu biz yaptıracağız.
+
+25
+00:10:33,651 --> 00:10:43,991
+Bu grafik türü sınıfı daha bilmediği nota sınıflarında sizin nesnelerini acaba nasıl oluşturabilir diye bir düşünelim bakalım.
+
+26
+00:10:50,004 --> 00:11:06,004
+T sınıfımız var. Onun Soyut Manipulate metodu var. Bu kontrol çubuğunda bir şekilde seçtiğimiz zaman onu döndürmek üzere bir tane geleceğimiz var.
+
+27
+00:11:06,899 --> 00:11:27,259
+Örneğimiz bu var mesela. Bir de mesela bir süreçle bırak şeklinde taşıma amaçlı bir grafik toolumuz var. Onun manipulate metodu, somit bir metodu olarak nasıl çalışabiliriz? Şöyle olabilir. Öncelikle bunun bir prototip üyesi var.
+
+28
+00:11:28,336 --> 00:11:45,216
+Ve aslında bu bir bire değil de parça-bütün ilişkisi şeklinde düşünelim. İşin esprisi bir tane prototipin kopyasını oluşturup yani yeni bir elman için prototipin neslinin yeni kopyasını oluşturmak. O yüzden aslında burada bir bire çoklu sahiplik parça-bütün ilişkisi var.
+
+29
+00:11:46,548 --> 00:12:09,207
+Ve bir notanın şekli işte dolu, boş, ters, düz ve bir başkasıyla bileşik formalar yazıyorlarının dışında notanın hangi notu olduğunu belirleyen bu porte deniyor ya, sol anahtarı ve beş tane çizgi miydi neydi? O çizgilerin hangisinin üstünde ya da arasında olmasına göre nota anlam taşıyor.
+
+30
+00:12:14,548 --> 00:12:41,484
+Bu konuda bu tool sınıfından kalıtımla oluşturacağımız graphic tool sınıfında, manipulate metodunda bir prototipi kopyala, ondan sonra sürüklemesini handle it. Ondan sonra ne zaman bıraktıysa da o şekle artık o nota grafiğini bırak şeklinde kodu yazabiliriz.
+
+31
+00:12:42,740 --> 00:13:06,740
+Nelerle ulaşacak? Şöyle bir şey içeceğiz yine. Şu nokta şöyle ikiye ayırdım şimdi. Bu kırmızı çizginin üstü, framework'ün. Elimizdeki hazır framework. Alt kısmı ise bizim Music Best'de uygulamakta.
+
+32
+00:13:10,131 --> 00:13:14,131
+Altta müzik uygulamamızı yapıyoruz.
+
+33
+00:13:15,131 --> 00:13:18,131
+Şimdi, graphic tool'umuz...
+
+34
+00:13:19,091 --> 00:13:34,871
+Grafik nesneleriyle uğraşıyor olacak. Grafik nesnesinin belli bir konuma çizilmesi için soyut metodu tanımlı. Grafik nesnesinin bir kopyasının oluşturulması için, kullanımın oluşturulması için soyut metodum yine tanımlı.
+
+35
+00:13:34,871 --> 00:13:43,951
+Benim temel grafik birleşenlerim, birincisi porte, şu staff dediği porte, son anahtarı ve 4-5 çizgi her neyse onu çarankız.
+
+36
+00:13:47,091 --> 00:13:54,091
+Yarım nota gibi başka versiyonları da var. Ben çok müzikten nasıl var anlamadığım için hepsini söyleyemeyeceğim.
+
+37
+00:13:54,091 --> 00:14:05,091
+Soyut bir nota sınıfında somut alt sınıfların ve her bir nota da kendinin bir kopyasını ayrıca oluşturabilecek.
+
+38
+00:14:05,091 --> 00:14:12,091
+Yani yukarıdaki soyut clone metodu alt sınıflarda somutlaştırılacak.
+
+39
+00:14:15,796 --> 00:14:20,475
+Grafik Tool'umuzdan seçeceğimiz bir nesne de olabilir.
+
+40
+00:14:20,475 --> 00:14:25,115
+Veyahut da elimizdeki somut grafik art sınıflarından birine tıklayarak da
+
+41
+00:14:25,115 --> 00:14:29,915
+hadi 11 kopyalısını da şuraya, yareşire şeklinde de ön yüzümüzü kurabiliriz artık.
+
+42
+00:14:29,915 --> 00:14:32,556
+Nasıl olursa. Sadece birkaç ayrıntı.
+
+43
+00:14:32,556 --> 00:14:38,115
+Şimdi arka plandaki tasarım üstüne konuşalım dersin odarı kapsamında.
+
+44
+00:14:39,556 --> 00:14:41,796
+Çizimleri temizleyelim, devam edelim.
+
+45
+00:14:44,083 --> 00:14:54,703
+Şimdi aslında bu problemi çözmek için başka kalıplar da kullanabiliriz aslında. Mesela abstract faktörü kullanabiliriz.
+
+46
+00:14:54,703 --> 00:14:59,743
+Tabi gerçi burada ürün ve ürün ailesini nasıl söyleyeceğiz?
+
+47
+00:15:10,451 --> 00:15:29,851
+Kraf sağ faktörde ne vardı? Ölün aileleri ve her ailenin bireysel üyesi vardı. Şimdi acaba tam nota, yarım nota şeklinde mi o aileleri kursak yoksa dolar-i-mi-fa şeklinde mi kursak bilemedim doğrusu.
+
+48
+00:15:30,851 --> 00:15:35,052
+Müzik alanında çok şeyim olmadığı için, deneyimim olmadığı için.
+
+49
+00:15:37,683 --> 00:15:57,183
+İlk cümle izleyeniz diyeyim ki, farklı bir metod olabilir. Do, Re, Mi, Fa, Ver, Finan diyebiliriz. Tam nota oluşturma fabrikası, yarın nota oluşturma fabrikası da oluşturulur. Do, Ver dediğimde tam nota fabrikasından istediysem tam nota verir gibi. Öyle olabilir.
+
+50
+00:15:58,292 --> 00:16:20,432
+Öyle olabilir mesela. Ya da bakarız işte buradaki nota türleri ve 7 tane nota hangisinin sayısı daha azsa, yani nota türünün sayısı daha az türün varsa, işte tam nota, yarı nota, ters nota, düz nota şeklinde 4 nota türü sayabildim. Ama 7 tane ayrı nota var. O zaman 4 alinin 7 üyesi demek daha mantıklı.
+
+51
+00:16:21,211 --> 00:16:25,432
+O yüzden baktığımızda abstract faktörü öyle kurabiliriz.
+
+52
+00:16:28,563 --> 00:16:39,183
+Faktör Metron'u da benzer şekilde kurabiliriz. Bunların problemi her nota ya da her nota türü için ayrı fabrika sınıfı gerektirecek.
+
+53
+00:16:39,943 --> 00:16:48,043
+O da 7 nota türü desek, 7 fabrika, 4 nota türü desek, tam yarın filan bahsediyorum, 4 fabrika.
+
+54
+00:16:48,043 --> 00:16:51,504
+Yani bir uygulam için çok farklı fabrika yazmış olacağız.
+
+55
+00:16:54,131 --> 00:17:09,871
+Az kullanışlı olarak geliyor aklıma. Sizin de aklına başka şeyler gelebilir. Ne uygun görürseniz onu söyleyebilirsiniz. Bana bildirebilirsiniz. Sonraki derslerde ayrıca örnekleyebilirsiniz.
+
+56
+00:17:19,412 --> 00:17:40,012
+Topyalım çoğaltırana gelecek bir prototype nesnemiz olacak. Soyut tabiki. Ve yine onun soyut-Chrome metodu olacak. Çünkü sonraki yansıda geleceğim galiba. Chrome'la ama ile ilgili çok fazla ayrıntı da var. Deep copy, shallow copy filan gibi. Artık bunların hangisi bizim işimize gelecekse onu kullanıyor olacağız nihayetinde.
+
+57
+00:17:45,971 --> 00:18:01,971
+Şunun içinden çok ezbere konuşmayayım. Bu prototip kullanacak olan client, onun bu operation ne olacaksa bir operasyon yapmadan önce, öncelikle sahip olduğu prototip nesnesinin kopyasının oluşturacak, sonra o kopya üzerinden işler yapacak.
+
+58
+00:18:01,971 --> 00:18:11,971
+Bizde bu işlerin farklı yapılma türleri olabilecekse birden fazla somut prototip sınıfımız olabilir.
+
+59
+00:18:13,268 --> 00:18:31,468
+Burada tek bir tane kardeş sınıf da olabilir. İlla bizden fazla farklı tür protokolümüzün olması gerekmiyor. Bir tane de olabilir ama ihtiyacımıza göre bu kardeşler birbirinden farklılaşacaksa bazı metotlarla şu an bunda, bu zaman yine kardeşler koyabiliriz.
+
+60
+00:18:33,968 --> 00:18:37,228
+Bakayım söyleme unuttum bir şey var mı? Yok.
+
+61
+00:18:40,468 --> 00:18:52,468
+Bu kalıbı ne zaman kullanabiliriz? Öyle bir an gelebilir ki, bir sistemin kendisinin alet ilimlerini nasıl oluşturduğu, birleştirdiği ve sunulduğundan bağımsız olmasını istersek bunu kullanabiliriz.
+
+62
+00:18:52,672 --> 00:19:20,211
+Ama bir tane koşul daha var ki o koşul bu çözümün faktörü metoddan daha farklı olmasını sağlayacak. Birincisi, oluşturulacak sınıfların neler olacağı çalışma anında belirleyecekse bu önemli bir avantaj. Örneğin abstract faktörü veya faktörü metodla ürünler ve ürün haleleri belli. Ama gerçi prototype, yani prototype için vermiş müzik notisi örneğinde de belli nispeten belli ama.
+
+63
+00:19:20,672 --> 00:19:39,612
+Ve de bunun örneğinde anlatacağımız bölüm sonucu canavarı, tasarımı falan gibi bir konuyla. Orada farklı farklı şeyler devreye girebileceğinden farklı canavar atıyor. Hatta bir oyunun zorluğu, kolaylığı, oyun sırasında da değiştirebileceği gibi durumlar değerli ediyor.
+
+64
+00:19:48,672 --> 00:20:08,711
+Objectory Artificial'daki klas değil de kullanılacak farklı problem alındaki mantıksal bileçen türleri anlamında sınıflar. Yani bölüm sonucan alak sınıfı, standart düşman sınıfı, uçan düşman sınıfı, uzak taraftan düşman sınıfı, büyücü düşman sınıfı. Şurada hangi şeylerden bahsediyorum?
+
+65
+00:20:10,592 --> 00:20:11,892
+Evet, başka ne olabilir?
+
+66
+00:20:13,011 --> 00:20:21,851
+Ünümlerin sınıf hiyerarşisi ile paralel bir faktör hiyerarşisi kurmak gerekecek faktör metot kullanılırsak ki bunu da deneyebiliriz eğer bu hiyerarşi biraz kalmaşıksa.
+
+67
+00:20:21,851 --> 00:20:38,971
+Ve nota örneğinde olduğu gibi ünüm sınıfının örneklerinin durum uzayı sınırlı ise aslında belki faktör metot daha kullanışlı olabilir ama.
+
+68
+00:20:39,443 --> 00:20:41,563
+Biraz düşünmem lazım bakalım.
+
+69
+00:20:44,244 --> 00:20:47,364
+Tüm sınıf örneklerinin durum uzayı sınırını ister.
+
+70
+00:20:49,364 --> 00:20:51,224
+Burada şunu ödemek istiyoruz.
+
+71
+00:20:51,224 --> 00:20:56,043
+Prototiplemede Nesne'in kendisini fobyalıyoruz ya.
+
+72
+00:20:56,423 --> 00:21:02,220
+Eğer çok fazla durum olacaksa, bu çok fazla durumu prototipler üzerinden...
+
+73
+00:21:03,347 --> 00:21:18,347
+Belirtmek etmek daha kullanışsız olabiliyor. Ama durumumuz sınırlı ise oluşturabileceğimiz prototip şekli de nispeten az olacaktır. Daha kolay işimizi göreceğiz.
+
+74
+00:21:19,447 --> 00:21:30,627
+Ayrıca bu üç tane alt medyenin hepsi bizden değil, birisinin söz konusu olması prototip kalıbının tercih edilmesi için yeterli avantajı sunuyor.
+
+75
+00:21:31,347 --> 00:21:46,127
+Bu kalıbın kullanabileceği bir nokta ise sınıfların doğrudan işleyebileceğimiz varlıklar olarak gerçeklenmediği dillerde bu kalıp epey işe yarıyor olabilecektir.
+
+76
+00:21:47,127 --> 00:21:52,188
+Çünkü örnekte göreceğiz şimdi daha çok dil taşınabilir.
+
+77
+00:21:52,912 --> 00:22:09,832
+Birçok dile hitap eden örnekler üzerinde çalışıyor oluyoruz ders kapsamında. Fakat bazen öyle bir durumlar olabiliyor ki, kullandığımız dilin yetenekleri bazı işleri daha kolay veya daha zor yapmamızı sağlayabiliyorlar.
+
+78
+00:22:13,844 --> 00:22:30,903
+Sonradan C++'a daha doğrusu böyle kütüphaneler geldiyse bilmiyorum bana söyleyin. Bildiğim kadarıyla yok. Örneğin Java'da geniş bir refleksyon, yani yansıtma, öz inceleme şeklinde söyleyebiliriz. Yetenekleri var.
+
+79
+00:22:30,903 --> 00:22:41,844
+Java'da herhangi bir klas borsasını alıp bu sınıfın ne gibi üyeleri var, ne gibi metotları var, hangi metot kaç tane parametre araya gereğine döndürüyor.
+
+80
+00:22:41,844 --> 00:23:01,604
+O metoda bir tane method pointer alayım, başka bir yerden koşturayım, çalıştırayım. Hatta ve hatta din kendisinde olmasa bile bazı frameworklerle bir klas borçlu yasının byte kodunu runtime'da çalışma anlamında modifiye edebiliyorsunuz. Bu da size çok enteresan kapılar açıyor.
+
+81
+00:23:09,844 --> 00:23:34,903
+Eğen L ise Engineering Library'den geliyor mesela. Başka gereçler de vardır. Bu epey bir olarak sağlıyor bize Java'da. Yani düşünsenize class kodunu çalışmalarında istemeyecek modifiye ederekten, fototip kalıbına bile gerek kalmadan onunla yapacağınız şeylerin çok daha fazla yapabiliyorsunuz. Ama tabii ki bu size dileği sıkı bir çözüm düşünüyor.
+
+82
+00:23:37,844 --> 00:24:05,443
+Bu ne gibi bir alem Nesneye Önerim'de. Sırf merak için bile bu Smalltalk'un ne gibi yetenekleri varmış, Nesneye Önemi'ne ne farklı şeyler kazanılıyormuş gibi inceleyebilir. Merak eden arkadaşım varsa bakabilir. Smalltalk'da mesela Late Binding var. Belirli bir şeydeki gibi biraz. Ne bileyim, basic de bir variable değişken tanımlar gibi. Ama şimdi burada Nesneye Önerim'den bahsediyorsunuz. Nesne tanımlıyorsunuz.
+
+83
+00:24:05,844 --> 00:24:16,503
+Bunun tümünü daha sonra belirtebiliyorsunuz. En şeyler yapılabiliyor. Beğenirsiniz bu özelliği, beğenmezsiniz. Benzersiz bir katkısıdır mesela Smalltalk'un.
+
+84
+00:24:16,503 --> 00:24:24,283
+O şekilde yerleştirme burada. Piyasada Smalltalk'la yazılmış ve bakılan programda pek yok.
+
+85
+00:24:27,412 --> 00:24:53,852
+İnsanın diye hiçbir bakış açısı kazanıyor. O anlamda şöyle bir incelemekle yalan olabilir. Neyse, odaklanalım, şeyi dağıtmayalım. Kalıpla ilgili söyleyeceklerim bu kadar. Şimdi de örneğine geçelim. Kalıpla örneğine geçelim. Örneğine geçmeden önce. Evet, klonlamada farklı farklı şeyler devreye girebilir. O yüzden onun soyut olarak tanımlanıp, sonutlardan içlerinin ayrıca ayrıntılandırılması yararlı olur diyorduk.
+
+86
+00:24:54,355 --> 00:25:07,855
+Burada ilk başta dikkat etmemiz gereken şey, kullanmaları yaparken derin kopyalamamı yoksa sığır kopyalamamı yapacağız. İngilizce sığır shallow, üzerinde deep tekniklerle geçiyor.
+
+87
+00:25:07,855 --> 00:25:17,855
+Burada olay şu, şimdi sınıf düşünelim ve onun ilişkide olduğu diğer nesnelerden düşünelim.
+
+88
+00:25:22,067 --> 00:25:50,067
+Çalışan ve şirketi ve amiri ve iş telefonu falan. Böyle çalışanın iş sahiplik ilişkisinin olduğu farklı farklı nesneler düşünelim. Bu çalışan nesnesini kopyalayacağınız zaman, onun bütün üye alanlarını da kopyalıyorsanız, o zaman derin kopyalama yapmış oluyorsunuz. Sadece çalışan nesnesini kendini kopyalıyorsanız, sığ kopyalama yaparsınız.
+
+89
+00:25:50,067 --> 00:26:05,067
+Şimdi, ya hocam tabii ki derin kopyalama yapmak daha iyidir diyebilirsiniz ama bir de şöyle düşünün. Şimdi eğer bu bir bütüncül bir iş uygulaması ise ve burada...
+
+90
+00:26:05,844 --> 00:26:17,864
+Sizin çalışanlar için ayrı kayıtlarınız olacak. Amirler için ayrı kayıtlarınız olacak. Mesela çalışan amir o da bir çalışan olacak ve o da çalışan veri tabanında ayrı bir kayıdı olacak.
+
+91
+00:26:21,008 --> 00:26:38,008
+Şimdi hem çalışanı kaydederken, o amirini de kaydederken ama amiri de çalışan olduğu için çalışanlarla o da ayrıca kaydedilecek zaten. O yüzden ben nesneleri boşu boşuna deep copy yapıp daha fazla...
+
+92
+00:26:38,516 --> 00:26:49,956
+İş yaptırmayın programa, daha yavaşlatmayın programı. En iyisin ben bunları shallow kopyalıyım, daha sonra ilişkilerini kırarım diye düşünebilirsiniz. Ve doğru düşünmüş oluyorsunuz.
+
+93
+00:26:54,003 --> 00:27:21,044
+Hangi tür kopyalama mantığı işimize yarayacaksa ona bakın. Derin kopyalama yaparken de çevrimsellikten sonsuz döngülere girmeyin mesela. Çalışan, çalışanın amiri, amirin altındakiler falan gibi bir şey varsa çalışanın amirinden amirin altındakilere geri dönmüş de çalışanın kendisine dönmüş oluyorsunuz. Ondan sonra hadi onu da amirin tekrar kopya derken sonsuz döngüye de girmeyin mesela.
+
+94
+00:27:27,412 --> 00:27:42,412
+Öte yandan, klonlama yaparken mesela bir copy constructor kodlamak işinize yarayabilir. Veyahut da bir nesnenin, site'inin, durum bilgisinin kümünü alıp...
+
+95
+00:27:44,756 --> 00:27:49,756
+O şekilde kopyalamak gibi metotlarımızın olması da yararlı olabilir.
+
+96
+00:27:49,756 --> 00:28:02,756
+Buradan geleceğim nokta. Onların değişecek olan üyelerine çeşitli değerler atanması için Prototype sınıfının soyut üst sınıfına da ek metotlar kodlamamız gerekebilecektir.
+
+97
+00:28:02,756 --> 00:28:08,756
+Nihayetinde bütün bu prototip nesimlerini eş biçimli bir şekilde ele almamız gerekecek.
+
+98
+00:28:08,756 --> 00:28:12,756
+Bu yüzden o eş biçimli ele almanız gerekecek.
+
+99
+00:28:12,756 --> 00:28:27,756
+Bu örneği, bir bilgisayar oyun için Level Editor'ı hazırlamak istiyoruz. Bu örneği Head First Design Patterns kitabından aldım.
+
+100
+00:28:32,864 --> 00:28:50,344
+Sırıklı bırak şeklinde falan kolayca ekleyebilmek istiyoruz. Ama yeni tür canavarları çok kolaylıkla oluşturabilmek istiyoruz. Ama bir canavar oluşturmak pek kolayca bir iş değil. En azından 5 ayrı üye alanı var. Durum bilgisayar oluşan 5 ayrı bilgi var.
+
+101
+00:29:00,864 --> 00:29:20,503
+Saniyede ne kadar çok zar verebileceği gibi şeyler tutuyor bu ayağ. Agility, ne kadar çevik olduğu, vurulması zor olabilir veya hızlı fazlası olabilir. Luck, şans, şanslı canavarlar daha yüksek, üstte hasar, kritik hasar verebilir mesela.
+
+102
+00:29:25,536 --> 00:29:35,316
+Bazı başka oyuncu, canavarlı mesela gücü sizden düşük olan canavarı sizinle savaşmaktansa ekibinize katılmaya ikna edebilirsiniz mesela.
+
+103
+00:29:35,872 --> 00:29:50,872
+En temel 5 parametre daha da fazla da olabilir. Böyle bir dolu değer aralıkları var, değerler var. Bu değerlerin değişik kombinasyonları bize değişik canavar türleri ya da oyuncu karakter türleri getirmektedir.
+
+104
+00:29:50,872 --> 00:29:56,872
+Ve o türlü olduğu da type zenginde tutulmaktadır.
+
+105
+00:30:00,211 --> 00:30:28,152
+Şimdi aklımıza gelen şu, bizim bir canavar türümüz, prototipimiz olsun. Ondan sonra bunu kopyalayıp özelleştirerek de farklı farklı canavarların kolayca oluşturabiliriz. Bu bağlamda prototip kalıbı içimize yarar şeklinde aklımıza geldi ve kullanımızı yapıyoruz. Tasarımımızı yapıyoruz. Üye alanlarından bahsettim. Gelelim metotlarına. Mon metodu olmak zorunda.
+
+106
+00:30:28,211 --> 00:30:40,211
+Tabii ki bunu da soyut olarak yapıyoruz. Neyi kolaylaştıracağını konuşmuştuk. Bu yeni oluşturduğumuz nesnenin türü ne olacak?
+
+107
+00:30:40,211 --> 00:30:54,211
+Kalp için getter metodu olan. Şu an 5 parametresinden gidiyoruz. O 5 parametreyi alan bir constructör da var. Ama dikkat ederseniz, bir constructör protected.
+
+108
+00:30:54,271 --> 00:30:58,271
+Yani ben bir canına oluşturacağım zaman...
+
+109
+00:30:58,804 --> 00:31:11,804
+Bunu Constructor'ını çağırarak yapmıyorum. Çünkü Constructor'ı çağırsam, topyalama yapmadan, arka plandaki dayandığı şeylerden biri de, topya üstünden çalışmaktır.
+
+110
+00:31:11,804 --> 00:31:21,804
+Ama halbuki yepyeni bir nesne oluşturmak istemiyorum, işime gelmiyor. O yüzden Constructor'ı protected olarak tanımladım.
+
+111
+00:31:26,804 --> 00:31:32,204
+Bu konuda işmem gerekebileceğinden, Private Constructor işime gelmiyor ama protected çok işime geliyor.
+
+112
+00:31:32,204 --> 00:31:39,004
+Alt sınıflara Public gibi davranıyor, diğer sınıflara Private gibi davranıyor, alt sınıflara Public gibi davranıyor.
+
+113
+00:31:39,004 --> 00:31:44,004
+Bu yüzden bunu protected yapmak gerçekten işime yarar.
+
+114
+00:31:44,004 --> 00:31:47,804
+Kalıbın kendi tanımında, şimdi geri yukarı çıkıyorum.
+
+115
+00:31:47,804 --> 00:31:53,804
+Dikkat ederseniz bu Constructor ile ilgili herhangi bir şey yazmamış.
+
+116
+00:31:53,971 --> 00:32:08,731
+Ama bunu düşünmek yararlı olur. Klonlayacağınız varlığın sınıfına Public Constructor eklemek, Protected Constructor eklemek yararımızdır.
+
+117
+00:32:09,236 --> 00:32:22,016
+Peki, canavar sınıfından kalıtımla bir genel canavar sınıfı oluşturmuşum. İşte bu da solut prototip sınıfı. Bunun klon metodunu kodlayacağım.
+
+118
+00:32:24,948 --> 00:32:45,768
+Gerçi bakın, bunun konstatını public yapmış ama zaten aslında ben bu clientlarıma polit prototip işaretçisi vereceğim. Onun somut alt sınıfları şeklinde işaretçi vermeyeceğim. Bu kalıbın kendisinde görülecektir. Geri döneyim.
+
+119
+00:32:47,859 --> 00:33:04,579
+Evet, bakın. Client, prototype ile muhatap oluyor. Onu biliyor, onunla çalışıyor. Alttaki somut, konkret prototype'larla bir ilişkisi yok. O yüzden.
+
+120
+00:33:05,107 --> 00:33:11,107
+Ama nihayetinde bu client harcısı paketten master ulaşabiliyorsa aslında genelik master'a da ulaşabilir.
+
+121
+00:33:11,107 --> 00:33:23,107
+O yüzden belki de bunu da Cybert olarak tanımlamakta yarar var. Ben onu not düşeceğim de. Kaynağı da tekrar bakayım. Sonra oraya açıklama yapalım sayesinde.
+
+122
+00:33:23,107 --> 00:33:30,107
+O sohbet şeyisi değil. Şuradan olacak. Şuradan çıkartacağım. Yeni açıklama.
+
+123
+00:33:33,044 --> 00:33:43,044
+Şuraya. Generic, Generic, Master's Reclosu'da.
+
+124
+00:33:46,836 --> 00:33:48,836
+2, 3, 6,
+
+125
+00:33:48,836 --> 00:33:51,836
+olsam ve diye
+
+126
+00:33:51,836 --> 00:33:56,836
+ve sonunda düşünce
+
+127
+00:33:56,836 --> 00:33:58,836
+ve sonunda devam edin
+
+128
+00:34:00,564 --> 00:34:26,564
+Evet, şimdi bu oluşturacağımız farklı türden canavarları da daha sonra kaydedebilmek de istiyoruz. Ve kaydettiğimiz canavarlara da erişebilmek istiyoruz. Bu nedenle bir Master Registry sınıfı oluşturuyorum. Burada işte Master nesneleri çelilecek. Büyük ihtimalle burada bir map yapısı kuralım. Yani anahtar alan verip, anahtar alanında canavarın hürüdür.
+
+129
+00:34:28,563 --> 00:34:36,783
+Bu bilgiyi de sorgama yaparak da istediğim general artörüne erişebilmemi sağlayacak. Find Monster metodum var.
+
+130
+00:34:37,972 --> 00:34:44,972
+O ilgili Maclaps'ına bakıp anahtarın tır bunu alıp bana ilgili canvars nesnesini geri döndürecek.
+
+131
+00:34:44,972 --> 00:34:53,972
+Ve oluşturduğum yeni canvars nesnelerinde, kategorilerinde register etmem gereken metodum da var tabi adette.
+
+132
+00:34:53,972 --> 00:35:01,972
+Böylece gidelim. Mean Up'ım ise benim kalıptaki Client'a bekliyor. İşte oyun editörüm o olmuş oluyor.
+
+133
+00:35:02,972 --> 00:35:03,972
+Bakalım şimdi.
+
+134
+00:35:04,467 --> 00:35:21,467
+Nasıl bir şey yapmışız? Şimdi, Canva sınıfına bakalım. U alanlarım tanımlı. Yani şey, ne? Stat. Nasıl desek Türkçe'de.
+
+135
+00:35:24,340 --> 00:35:35,740
+Özelliklerim mi deneyecek, yeteneklerim mi deneyecek? Neyse, şeyde verdim çıkartmadım şimdi. Statlarım var ve bu canlar için bir tüm sistem var.
+
+136
+00:35:35,740 --> 00:35:44,539
+Clone metodum Soyut. Constructum üye alanları initialize eden basit bir Constructum.
+
+137
+00:35:44,788 --> 00:36:01,628
+Getter metotların var ve Settir metotların var. Settir metotlarını protected yapmak mantıklı. Protected alt sınıflara ve paketteki diğer sınıflara public olarak gözüküyordu hatırlatırım.
+
+138
+00:36:12,788 --> 00:36:34,887
+Bu oluşturmanın tek yolu bir tanesini kullanmamak olacak ve rejestriden bir rejinalar alıp da bunu kategorisinin dışında bir şekilde statlarını değiştirmemi engeller setter metodlarını protected olarak yapmak. Olay bu.
+
+139
+00:36:38,867 --> 00:36:52,367
+Bir tane de Genic Master sınıfımız vardır. Ona bakalım. Genic Master Construct'ın parametreleri alıp, üst sınıfın kudrusunu çağırıp, bunun tüm önünde genel bir yaratık olduğunu beyan ediyor.
+
+140
+00:37:01,295 --> 00:37:08,675
+Aynısına sahip yeni bir generic monster nesnesi oluşturuyor.
+
+141
+00:37:08,675 --> 00:37:21,095
+Şimdi şeye de dikkat edersek, normalde çok tercih ettiğim bir şey değil ama üye alanları protected olarak tanımlamış. Böylece alt sınıflardan da doğrudan erişebiliyoruz.
+
+142
+00:37:21,095 --> 00:37:29,095
+Yani benim normal tercihim bu şekilde yapmamaktır bu işleri. Üst sınıfın üye alanlarını normal...
+
+143
+00:37:29,295 --> 00:37:49,655
+Bu yüzden şöyle bir uygulama, çok da güzel bir uygulama değil bence. Ama kolay kaçırmış ne yapalım. Neyse. Ben bunu bir sonraki şeyde değiştireyim ama.
+
+144
+00:37:53,652 --> 00:37:55,652
+Böyle yapmayalım.
+
+145
+00:37:57,152 --> 00:38:01,652
+Madem, bu işin nasıl yıkılması gerektiği hakkında bahsediyoruz.
+
+146
+00:38:03,152 --> 00:38:09,652
+Sen dediğini yap, yaptığını yapma şeklinde olmasın. Dediğini de yap, yaptığını da yap şeklinde olsun diyelim ki.
+
+147
+00:38:10,652 --> 00:38:11,652
+Yaptır.
+
+148
+00:38:12,652 --> 00:38:14,652
+Daha güvene yapmış.
+
+149
+00:38:14,652 --> 00:38:15,652
+Şimdi.
+
+150
+00:38:15,652 --> 00:38:18,652
+Şuraya.
+
+151
+00:38:20,724 --> 00:38:26,724
+Yeterli olacaktır herhalde. Devam edelim.
+
+152
+00:38:26,724 --> 00:38:43,135
+Master Registry ise, işte Java'da Hatchmap kullanmışım. Generic Hatchmap. Key string, Java'ın tümü, master, value, Java'ın kendisi, masters diye. Construct'a da yer açıyorum.
+
+153
+00:38:43,135 --> 00:39:04,135
+Bir metodu, basitçe, Java'da veri yapılarını bilen arkadaşlarım bilirler. Anahtarı verip Nesne'yi geri döndüren get metodu var. Yeni bir Nesne'yi de o veri yapısına eklemek için de put metodu var. Birinci alan key, birinci alan value key'inde Java'nın türü, türü string olduğunu söylemiş.
+
+154
+00:39:07,699 --> 00:39:16,019
+Diyelim ki, canavarlar nasıl oluşabiliriz? Bir tane register oluşturmamız lazım.
+
+155
+00:39:16,019 --> 00:39:23,619
+Bu register'e bir tane canavar kaydedeceğim. Tüm değerleri o. Genel bir yaratık diyelim ki canavar.
+
+156
+00:39:23,619 --> 00:39:35,380
+Ondan sonra, YNK'nin özel bir canavarını oluşturmak için, öncelikle register'dan bu canavarları alıp, ondan sonra onun clone metodunu kullanıyorum.
+
+157
+00:39:35,423 --> 00:39:51,003
+Bundan sonra bu yeni canavarım canını 100'e yükseltiyorum ve onun adını da bölüm sonunu canavarım diyerekten rejistriye kaydediyorum. Bundan sonra bence bölüm sonunu canavarım verdiğimde onu bana verecek.
+
+158
+00:39:51,003 --> 00:40:03,003
+Burada da ufak tefek tutarsızlıklarım var. Yani ne bileyim, şurada bölümün ısını o demişim ama ı, i dememişim mesela. Ne bileyim, burada hemen şey bir...
+
+159
+00:40:03,731 --> 00:40:24,731
+Yani burada şey yapalım isterseniz, bölümün sonunu can alalım diyelim mesela. Peki şimdi burada ayrıca şeyler düşünelim. Bakın bu main.net üzerinden Genelik Master Construct'ınla doğrudan erişmişim mesela. Bu bana...
+
+160
+00:40:24,851 --> 00:40:41,331
+Bu şekilde bir kolaylık sağlıyor. Fakat ilk başta bir canavar oluşturmak için, ilk başta bir canavar mutlaka oluşturma ihtiyacımız var. Bunu birleştirmeye koyacağız. Bu bağlamda acaba nasıl yapsak?
+
+161
+00:40:46,068 --> 00:40:47,788
+Şöyle bir şimdiler.
+
+162
+00:40:55,539 --> 00:41:03,539
+Üstünün kurucusundan gitmiyorum. O zaten protektif kalsın. Acaba bir şey yapacağım.
+
+163
+00:41:03,539 --> 00:41:15,539
+Bu şey, somut alt prototip sınıfının konstruktörünü harbettiği de private yaparsak.
+
+164
+00:41:15,603 --> 00:41:36,083
+Rejistri de bununla aynı paketli olursa, o bir rejistriye ilk çalıştırdığımızda bir varsayılan canavar türü oluşturarak şu main metodunda yaptığım Genlink Master'ı oluşturmak kısmını bu map yapısını oluşturduktan sonra bir tane default canavar oluşturma ekle şeklinde buraya yazabilirim.
+
+165
+00:41:43,248 --> 00:41:51,248
+Ondan sonra onun bir alanında açılıp, ondan sonra aradistroya geri yazılması şeklinde yürütülebilir.
+
+166
+00:41:51,376 --> 00:42:11,676
+Ama burada şöyle de düşünülebilir. Ya hocam şimdi nasıl olsa istediğimiz şeye, değere sahip yeni canavarlar oluşturabiliyoruz. O zaman neden bu doğadan konstantörda bir canavar oluşturmak şeklinde de yapmayalım diye düşünülebilirsiniz. Haklısınız da.
+
+167
+00:42:18,931 --> 00:42:45,871
+Bu canavar nesnelerine erişimi, sıklamanızın yararlı olduğu türden gereksinimler katars katmak istiyorsanız eğer o zaman bu konstruktörleri public yapmak falan filan ve sadece böyle birkaç üreyi değiştirerek bunu rejistreye yeniden yazabilmek türünden ek önlemleri daha rahat kodlarsınız. Ona yönelik bir altyapı oluşturmuş olursunuz şeklinde yanıt vermek istiyorum.
+
+168
+00:42:46,931 --> 00:42:56,591
+Sizin çözeceğiniz problemin spesifik gereksinimleri neyi gerektiriyorsa oradan o şekilde ilerleyerek devam edebilirsiniz demek istiyorum.
+
+169
+00:42:56,591 --> 00:43:03,611
+Çünkü yine hatırlatıyorum, bir tasarım kanıdını kullanmak onu mota mot kullanmak demek değildir.
+
+170
+00:43:03,991 --> 00:43:11,751
+Gereksinimlerinize göre bunları değiştireceksiniz ve özelleştirerek kuracaksınız kanıdılarınızdan tasarımlarınızı.
+
+171
+00:43:12,271 --> 00:43:13,031
+Bununla ibaret.
+
+172
+00:43:15,251 --> 00:43:25,791
+Peki, şimdi bu kalıbı bitirdik. Sorusu olan, tartışma açmak isteyen, deneyimlerini paylaşmak isteyen arkadaşlarım varsa buyursunlar.
+
+173
+00:43:25,791 --> 00:43:28,211
+Bu sıra sizden.
+
+174
+00:43:35,251 --> 00:43:39,012
+Bu sırada ben yaptığım yolumları üstüne biraz daha düşüneyim.
+
+175
+00:43:48,884 --> 00:43:58,884
+Bu tartışmaya kapalı. Fakat başka yorumlar var.
+
+176
+00:44:14,675 --> 00:44:20,675
+Tamam, peki her şey eklemem lazım. İnşallah bir şey. Şuraya.
+
+177
+00:44:27,411 --> 00:44:47,291
+Hangisini kurucu? Asıl. Geçecek, geçecek. Bunları da geçecek. Bu çocuk bu akşam birazcık içecek.
+
+178
+00:44:49,431 --> 00:44:50,791
+Akşam olabilir.
+
+179
+00:44:55,251 --> 00:44:58,251
+Şimdi, şöyle bakalım.
+
+180
+00:45:01,907 --> 00:45:11,907
+İstediğiniz masasına bakıyorum da... Estağfurullah. Yolun üstüne düştüm tekrar.
+
+181
+00:45:17,907 --> 00:45:43,467
+O, bu
+
+182
+00:45:43,795 --> 00:45:54,016
+Kanala da oluşturulacak şeklinde konuştuğumuz noktayı buraya da yazayım. Size de daha açık açık söylemiş olayım.
+
+183
+00:45:54,016 --> 00:46:01,795
+Bir kare. Soru yok demek ki. Ben de Singleton'a geçeyim. Bunlar da böyle.
+
+184
+00:46:01,795 --> 00:46:08,523
+Şimdi Singleton adı üstünde.
+
+185
+00:46:08,851 --> 00:46:26,711
+Tek bir nesne, yani single anahtar kendisi. Kalıp kullanmaktaki amacımız, eğer çözmek istediğimiz temel problem, bir sınıftun sadece tek bir örneğinin bulunmasını sağlamak ve bu tek örnek olan nesneye ortak bir erişim noktası vermek istiyoruz.
+
+186
+00:46:26,711 --> 00:46:36,711
+Buna tahmin edebileceğinizden daha fazla yerde ihtiyacımız olabilir. Önyeyim, bir bilgisayarda bilgiden fazla yazıcı...
+
+187
+00:46:36,851 --> 00:46:41,791
+Eklensiniz, tanımlarsınız. Fakat yazdımla biriktiricisi prosesi sadece bir tanedir.
+
+188
+00:46:42,260 --> 00:46:57,620
+Bu uygulamalar, bu biriktiriciye yazacak dosyaları role modda, hand modda, kilo olarak göndeririz. Ondan sonra bu yazdırma biriktiricisi hangi yazıcıya gidici gitmişse bu istek, ona onu yönlendiririz.
+
+189
+00:46:57,620 --> 00:47:08,360
+Hani yazıcıların tampon belliği sınırı, tampon belliği, yani ciyi öyle hemen basamıyorlar. Biraz bekletmek zorundalar. İşte spoda bir tampon bellik ayırıyor falan.
+
+190
+00:47:10,260 --> 00:47:28,760
+Bu işlerinden bir dolu işleri var. Bu işi birden fazla kişi yaparsa çeşitli tutarsızlıklar ve çelişkilere yol açar. Ya da benzer şekilde Turner prosesi bir tanedir. Bir işletim sisteminde tek bir tane Turner prosesi olmadır. Birden fazla olursa problem kalm.
+
+191
+00:47:33,396 --> 00:47:45,195
+Ne yapabiliriz? Bir başta daha kalıba gelene kadar sıra aklınıza bu ilgili nesnenin statik olarak tanımlanması yeter diye düşünebilirsiniz.
+
+192
+00:47:46,076 --> 00:47:53,556
+Burada ufak bir soru işareti. Bu nesneyi hangi sınıfa kodlayacağız bu statik üyalan olarak?
+
+193
+00:47:54,228 --> 00:48:20,808
+Bu nesne farklı farklı sınıflar tarafından kullanılacaksa bunlardan hangisine yerleştirelim özellikle. En çok hangisine kullanılacaksa ona koyacağız. Tamam ama diğer farklı türlerden nesneler de buna çok sayıda erişmesi gerekecekse, daha doğrusu buna erişmesi gereken farklı türden çok fazla sayıda nesne varsa bu sefer de bir korkkusu olan Feature NY.
+
+194
+00:48:22,228 --> 00:48:32,588
+Bu konuda çözemiyorsunuz bir türlü. Çünkü birden fazla türden nesnenin bu ortak nesneye ihtiyacı olacak.
+
+195
+00:48:34,835 --> 00:48:44,755
+Aklımıza gelen şey sınıfı olacak. Peki o zaman bu nesne, ortak olarak paylaşması gereken nesne, apayrı bir sınıftan nesne olsun.
+
+196
+00:48:44,755 --> 00:49:02,175
+Ve o nesne, o sınıf kendi kendisinin örneğini paylaşmaktan, oluşturmak ve paylaşmaktan sorumlu olsun diye çözüm aklımıza gelirse, işte o da zaten Singleton Tasarım kalıbının çözümü oluyor arkadaşlar.
+
+197
+00:49:02,835 --> 00:49:10,835
+Bir sınıfa kendisinin tek bir örneğin olmasını sağlamak sorumluluğunu atarız. Böylece Singleton kalıbını oluşturmuş oluruz.
+
+198
+00:49:10,835 --> 00:49:20,835
+Bunu nasıl gerçekleyebiliriz? Sınıfın kendi türünden bir static üyesi olur. Arkadaki kalıpta gördüğünüz üzere bu Unique Instance olarak adlandırılmıştır.
+
+199
+00:49:20,835 --> 00:49:27,500
+Kendi türündendir. Sınıfa Singleton adını koyduğuma göre Singleton adı ve static olacaktır. Bu elbette.
+
+200
+00:49:27,539 --> 00:49:37,980
+Sınıf tınır kurucusunu private tanımlarız. Böylece o nesnden bizden fazla kopya oluşturulması engellenmiş olacaktır. O yüzden Constructive metodumuz private.
+
+201
+00:49:42,996 --> 00:50:02,596
+Unique Instance'ı geri döndürecek bir tane Factor'ı metodu ekleriz. Adının adını da GetInstance vermişiz kalıpta. Single Tattoo'un da nesne döndürecek, Unique Instance'ı döndürecek. Unique Instance statik olduğu için bu metodun da ayrıca statik olarak tanımlanması gerekmektedir.
+
+202
+00:50:04,736 --> 00:50:05,816
+Durum bu.
+
+203
+00:50:06,643 --> 00:50:22,344
+GetInStance metodunda özellikle bu Singleton daha ilklendirilmemişse onun ilklendirilmesini de sağlamak gerekmektedir. Ondan sonra bu nesne geri döndürülmektedir. Onu da yanındaki not bileşerinde açıklamışız.
+
+204
+00:50:23,668 --> 00:50:43,867
+Durum bu. Çok kalıplı değil, o yüzden bunun örneğini kodlamayacağım arkadaşlar. Ama birkaç ayrıntıdan bahsedelim. Mesela ileride strateji ve state kalıplarını göreceğiz. Oradaki komut art sınıflar aynı zamanda birer, birer, singleton adayı oluyor.
+
+205
+00:50:44,371 --> 00:50:56,371
+Ama olması da şart değil. Öyle yapması da şart değil. Ünitekim örnekle öyle yapmayacağız. Ama siz isterseniz bunların singleton olmasını da düşünebilirsiniz eğer işinize öylesi geliyorsa.
+
+206
+00:50:58,643 --> 00:51:13,103
+Ayrıca bu kalıbı kullandığımızda singleton sınıflarının kalıtımla altı sınıflarını oluşturabiliriz. Böylece bu singletonları daha farklı, daha özelleşmiş biçimlerde dağlanmasını da sağlayabiliriz.
+
+207
+00:51:13,103 --> 00:51:24,603
+Yoksa operatı sıcak nesneyiz doğrudan bir statik üyalan olarak ihtiyaç duyulan sınıflardan birine atar var şeklindeki aklımıza gelen ilk çözümde böyle bir esneklik olmuyor.
+
+208
+00:51:25,844 --> 00:51:38,824
+Ama o Singleton nesnesini de kullanacak tek bir nesne olacaksa da, yani tek bir türden nesne olacaksa da, bahsettiğimiz aklımıza gelen ilk çözüm de kullanmakta da elbette sakınca yoktur.
+
+209
+00:51:39,251 --> 00:52:01,791
+O zaman kalıbı ne zaman kullanabiliriz diyoruz. Bir nesnenin kendi türünün, kendi sınıfın tek örneği olmasının gerekli olduğu durumlarda ve bununla birlikte bu nesnenin farklı sınıflardan nesnelerce kullanılması gerektiği anda hiç çekilmeden rahatlıkla bu Singleton kalıbını kullanabiliriz demek istiyorum.
+
+210
+00:52:05,887 --> 00:52:14,168
+Yaratımsal sınıfların, yaratımsal kalıpların son örneğine geldik. Tam de bir saate yakın konuşuyoruz.
+
+211
+00:52:14,168 --> 00:52:31,088
+5 dakika olmuş ama olsun. 5 dakika erken aramızı verebiliriz. Bu da demek oluyor ki, 10 dakika ara 13.55 ile 14.05 arasında 10 dakika.
+
+212
+01:09:12,243 --> 01:09:22,243
+Geciktim ödülüm. Kaçırdım orayı. Başlayalım. Daha fazla geçiklere. Özdürüm ödülüm.
+
+213
+01:09:22,243 --> 01:09:25,243
+Şimdi...
+
+214
+01:09:25,243 --> 01:09:30,219
+Evet, bunlar bitti. Ödülüm.
+
+215
+01:09:34,547 --> 01:09:36,547
+50'ye kadardık.
+
+216
+01:09:39,547 --> 01:09:43,547
+Sonra bitirdik.
+
+217
+01:09:51,060 --> 01:09:53,004
+Teşekkürler.
+
+218
+01:09:56,307 --> 01:09:59,388
+Yapısal Kılıplardan Adaptör'e başlayacağız.
+
+219
+01:10:21,971 --> 01:10:23,152
+Bu günler günler düzeltiyorum.
+
+220
+01:10:26,836 --> 01:10:45,856
+Biz şuradayız. Evet. Yapısal kalıplarda ilk kalıbımız Adapter kalıbı. Amacımız işleri açısından uyumlu olmakla birlikte metot imzaları açısından uyumsuz bir istekçi sınıfıyla bir sunucu sınıfı birbirleriyle konuşturmak.
+
+221
+01:10:52,916 --> 01:10:57,916
+Tam olarak da sözlük anlamlarından biri olarak kullanılmıştır.
+
+222
+01:10:58,916 --> 01:11:06,916
+Önüm mesela aranızda Avrupa'da farklı ülkeye gidenler varsa, bilirler.
+
+223
+01:11:06,916 --> 01:11:11,916
+Ki buna Kıbrıs da dahildir. Kuzey Kıbrıs Türk Cumhuriyeti de dahildir.
+
+224
+01:11:11,916 --> 01:11:17,456
+Bu arada İngiliz türü elektrik prizleri mevcuttur. Üç elektrik priz.
+
+225
+01:11:17,456 --> 01:11:31,056
+Fasmanör türlü deliklerinin üstünde bir tane ek gütübörk gelimsiz bir delik vardır. Bazı ağırlık ülkelerinde riz bacakları aralıkları daha dağıtır. Farklı standartlar mevcuttur.
+
+226
+01:11:33,076 --> 01:11:43,756
+Ve sizin de bilgisayarınızı fişe takacaksınız. Şarj adaptörünüzü fişe takacaksınız. Doğal olarak o fişe, o prizi kullanamayabilirsiniz.
+
+227
+01:11:43,756 --> 01:11:45,756
+Bunun için...
+
+228
+01:11:47,380 --> 01:12:15,380
+Adaptör, uyanlayıcı priz setleri satılmaktadır. Araya koyduğunuz bir parça sizin genel altı standartı, Türk standartı, Türk standartı formundaki fişinizi İngiltere standartındaki prizinize uygun hale getiren bir adaptör. Arapartta takarsınız mesela. Böyle çözüldü.
+
+229
+01:12:15,380 --> 01:12:39,000
+Adapter kalıbı da tamamen aynı şekilde çalışmaktadır. Örneğin, bizim bir sunucu sınıfımız var. Adaptive. Yani uyarlanacak olan sınıf. O bir işi yapmak için Specific Request metoduna sahip.
+
+230
+01:12:39,604 --> 01:12:57,764
+Bizim Client'ımız ise bu işin yapılması için Request diye bir metoda ihtiyaç duymaktadır. Bizim Client'ımız bir tag ile konuşacak ve Request metodunu çağırmaya ihtiyacı var. Kod içerisinde öyle kodlamışız diyelim ki.
+
+231
+01:12:59,764 --> 01:13:07,363
+Bizim elimizdeki sınıfta ise o metod imzası Specific Request şeklinde geçmektedir.
+
+232
+01:13:07,363 --> 01:13:13,764
+Yapılması gereken bir sorun yoktur fakat metodun imzası istediğimiz gibi değildir.
+
+233
+01:13:13,764 --> 01:13:15,764
+O zaman ne yapacağız?
+
+234
+01:13:18,836 --> 01:13:28,876
+İlgili request metodunu içeren target sınıfta, klutumla bir adaptör sınıfı oluşturacağız.
+
+235
+01:13:28,876 --> 01:13:36,716
+Ve ona request metodunu ekleyeceğiz, client'ın istediğini. Ve o request metodunda yapılacak olan tek şey,
+
+236
+01:13:36,800 --> 01:13:50,760
+Uyarlanacak olan esas işi yürütecek nesneye bir sahiplik ilişkisi olacak ve o nesneye spesifik ve kreşif şeklinde o metod çağrısını iletmek olacak sadece. Başka bir şey yok yani.
+
+237
+01:13:51,760 --> 01:14:03,239
+Bu arada bu kalıp çözünün en yalın halidir. İlla target'ın soyut olması gerekmemektedir. İlla bu request metodunun soyut olması da gerekmemektedir mesela.
+
+238
+01:14:05,140 --> 01:14:30,500
+Yolun bu. Gördüğünüz gibi çok karışık bir kalıp değil. O yüzden bunun da örneğini yapmayacağım. Bu tamamen tek bir odağı olan, tek bir amacı olan bir kalıp. O yüzden uygulayabileceğimiz an, elimizdeki bir sınıfın bir istekçi tarafından kullanılabilmesini önleyen tek engelin, o istekçinin yolladığı mesaj ile erdeki sınıfın anladığı mesajın isimlerinin farklı olmasıdır.
+
+239
+01:14:32,051 --> 01:14:42,551
+Parametrelerinin sırası da var olabilir. Beklenen parametre sırasını çevirerek işimize yaptırabiliriz.
+
+240
+01:14:42,551 --> 01:14:50,551
+Örneğimiz varmış. Yapmışım nerede? Anlatalım. Örneğimiz şu.
+
+241
+01:14:50,551 --> 01:14:59,023
+Şimdi biz bir çizim programı oluşturmaya çalışıyoruz. Bu programı da bir kısmını gerçekledik.
+
+242
+01:14:59,024 --> 01:15:11,024
+Buradaki aşağıdaki aşama da sol taraf. İşte şu soru işaretinden çizgiyi çektiğimde, bunun sol tarafı bir kısmı hala da gerçekleştirmiş olan kısım.
+
+243
+01:15:11,024 --> 01:15:21,024
+İşte bir Soit bir Shapesence var. Bununla ilgili location için tabii bir xy koordinatı ne olacak? O koordinatını setter getter metodu.
+
+244
+01:15:22,707 --> 01:15:29,387
+O şerifi çizmek için gerekli display metodu soyut olmak zorunda. Çünkü farklı şekilleri...
+
+245
+01:15:29,779 --> 01:15:39,260
+Nasıl çizileceği çok farklı kodlanacaktır haliyle. Bütün şekillerin içi doldurmak gerekebilir. Şekillerin rengini değiştirmek gerekebilir.
+
+246
+01:15:39,260 --> 01:15:45,659
+Ayrıntılarının farklı kodlanması gerekeceğinden bunlar soyut metodlar.
+
+247
+01:15:45,659 --> 01:15:56,739
+Mesela ekrandan sileceksek bunu veya ne bileyim şey grafik dosyamızdan sileceksek ve undisplay metodu o şekilde bağımlı olarak yapılacak bir iştir.
+
+248
+01:15:57,779 --> 01:16:05,319
+Bu sınıfı olarak yapılacak işler soyut metodu olarak tanınanıp alt sınıflarda gövdeleri gerçeklenecektir.
+
+249
+01:16:05,899 --> 01:16:14,760
+Nokta sınıfını yazmışız. Çizgi sınıfını yazmışız. Kare sınıfını da yazmışız. Sıra daire sınıfını yazmaya geldi.
+
+250
+01:16:21,684 --> 01:16:45,603
+Dari çizmek pek kolay bir şey değil arkadaşlar. Bilgisayar grafik derslerini alanlar bunu bilirler. Elimizde satırlardan ve sütunlardan oluşan bir kareye gridimiz var aslında. Ona dariyi nasıl çizeceğiz? Tam yuvarlak çizemeyiz albette. Ama dariye yaklaşır bir çokken gibi bir şey çizmiş oluyoruz.
+
+251
+01:16:49,684 --> 01:17:13,344
+Müşatma adı verilen anti-aliasing denilen bir teknik var. O kapsamda da bazı karelerin, ara karelerini de daha hafif silik bir, o rengin daha silik bir tonuyla doldurmak şeklinde daha yumuşak ve mükemmele yakın bir dare, mükemmel olmayan ama mükemmele daha yaklaştırdığımız bir dare süzülebiliriz.
+
+252
+01:17:14,043 --> 01:17:15,503
+Dediğim gibi doğru bir iş.
+
+253
+01:17:18,195 --> 01:17:20,195
+Öncelerim.
+
+254
+01:17:20,195 --> 01:17:32,195
+Bunu da kodlamaya geçecekken aklınıza geldi. Ya ben zaten hiç kodlamıştım önceki bir proje ödeminde falan. Şimdi kodumu sıfırdan tekrar yazmayayım.
+
+255
+01:17:33,332 --> 01:17:49,372
+Hatta ve hatta kaynak kodu bile elinde vardır diye gittiniz. Bir şey olmamış, kaynak kodunuzu kaybetmişsiniz. Elinizde sadece binary dosyalarımız var. Örneğin, javar için class dosyalarımız var.
+
+256
+01:17:49,811 --> 01:17:57,532
+Yazmış olduğumuz, en üstte hazır bir eksik circle sınıfımız var. Ama kaynak kodu yok. Sadece klas plazası var.
+
+257
+01:17:57,532 --> 01:18:04,092
+Ne yapacağım şimdi? Bu yeni projem için oturup tekrar yazmak istemiyorum ben bu circle sınıfını.
+
+258
+01:18:04,092 --> 01:18:09,012
+O zaman şöyle yaparım. Derim ki, ben buraya...
+
+259
+01:18:09,012 --> 01:18:13,692
+Söyle şimdi temizleyeyim. Sonraki yan sırada söyleyeceğimiz...
+
+260
+01:18:13,692 --> 01:18:17,012
+Şimdi, benim çözümüm buydu ya.
+
+261
+01:18:17,203 --> 01:18:45,163
+Point Line Scribe'ın elinde var. Zaten yaptım. Yani yeni lojem de yaptım. Circle Sınıf'ın kodlamaya geldiğimde ben bu Circle Sınıf'ın kodunu sıfırdan yazmayayım. Elimde kaynak kodu olmamakla birlikte Hazard X'lik Circle Sınıf'ım var. Ben yeni framework'a bir Circle Sınıf'ı ekleyeyim. İlgili soyut metodlarım da burada tanımlıyım ama yapacağım şey...
+
+262
+01:18:45,971 --> 01:19:01,591
+Şimdi ben bu X-X Circle'ımı direkt monte edemiyorum geniş yüzünden. Çünkü birincisi benim tasarımım her bir şeklimin shape sınıfından kalıtımla türetilmesidir. Ama bunda öyle bir şey yapamam. Çünkü kaynak kodumu modifiye edemiyorum.
+
+263
+01:19:03,828 --> 01:19:19,587
+TEP'ten kalıtımla türetilen bir Circle sınıfını eklerim yeni projeme. Onun içindeki soyut metotları, somut haline getirmek için de bu X-X Circle'a türüdüğünden bir tane üye alan eklerim Circle'a.
+
+264
+01:19:19,587 --> 01:19:28,868
+Bunu da gerçi, şöyle parça bir tünü değil, çünkü burada daha çok verebilir sarkık olacak. Öyleyse daha mantıklı.
+
+265
+01:19:29,939 --> 01:19:43,939
+Burada elmas olduğuna bakmayın lütfen. Aldığım kaynakta o şekilde şamayı hazır almışım. Hep daha sıfırdan çizip de düzeltmeyi düşenmişim. O yüzden bu şekilde yer alıyor şamı.
+
+266
+01:19:44,020 --> 01:19:55,020
+Yani bu Circle Sınıfını yazarken, işte XxCircle Tune'den üye alanım olur. Constructımda bu XxCircle Tune'den yeni nesne oluşturur.
+
+267
+01:19:55,020 --> 01:20:00,000
+Şeyleri de Soyut metotların gövdesini kodlamaya geldiği zaman da...
+
+268
+01:20:00,000 --> 01:20:13,000
+Her bir metodu kodlarken basitçe o mevcut sınıf binary dosyamdan ilgili zaten kodlamış olduğu metodu çağırırım.
+
+269
+01:20:13,000 --> 01:20:21,000
+Böylece display metodunun adının displayit olması herhangi bir problem çıkarmaz.
+
+270
+01:20:21,000 --> 01:20:28,000
+Benim framework'a bunu ekleyebilmem için. O mevcut kodumu yeni framework...
+
+271
+01:20:28,000 --> 01:20:42,699
+Bu örneğe uyduracak, adapte edecek, uyarlayacak Circle Sınıfı'nı kodlamış olurum. İçleri esas Circle Sınıfı'nın içerisinden. İçlik Circle'a iletirebilirim. Teknede bir çözüm arada edebilirim.
+
+272
+01:20:42,699 --> 01:20:43,699
+Olay bu.
+
+273
+01:21:01,716 --> 01:21:08,716
+Yoksa da Bridge kalıbına geçeceğiz. Bakalım yorumun içinden sonra aldım. Önce bir yorumum yok tabaktaki.
+
+274
+01:21:11,716 --> 01:21:26,716
+Peki. Sağdaki kalıbımız Bridge kalıbı. Burada amacımız Nesne'nin arayüzü ile Nesne'nin gerçeklemesini birbirinden ayırmak. Şöyle baktığımızda çok iddialı bir cümle gibi duruyor.
+
+275
+01:21:27,699 --> 01:21:35,699
+Neslinin arayüzüyan sahip olduğu metotlar, işarıya verdiği hizmetler şeklinde bahsediyoruz.
+
+276
+01:21:35,699 --> 01:21:42,699
+Bir de bunların kodlanması, bunları nasıl birbirinden ayırırız ki normalde böyle bir şey olmaz diyebilirsiniz. Haklısınız.
+
+277
+01:21:42,699 --> 01:21:50,699
+Ama bu da tabii ki gerçek bir ayırmaktan değil de, client'ları bunlardan soyutlamak şeklinde demek istiyoruz sabretle.
+
+278
+01:21:50,699 --> 01:21:54,699
+Bu tasarım kalıbının Handle adıyla alternative ismi de var.
+
+279
+01:21:55,028 --> 01:22:11,680
+Bu adıyla bilebilirsiniz bu işi. Windows'un daha eski sırımlarında Windows'a spesifik kod yazarken çeşitli olayları...
+
+280
+01:22:11,680 --> 01:22:31,159
+Handle'a da eklerdik. Tahtar o mantık ile düşünülmüş bir kalıp. Daha doğrusu Windows'un Handle mantığı bu Lich kalıbından ya da bir alternatif adıyla Handle olarak önerilmiş kalıbın bir gerçeklemesidir.
+
+281
+01:22:39,347 --> 01:22:57,827
+Ama bu çerçeve programımızın, mesela gün olmuş, KD'ymiş gibi, farklı masal üniversite ortamlarda çalışabilmesini istiyoruz. Ne yapabiliriz? Pencere soy sınıfından kalıtımla yeni pencere sınıfları türetebiliriz.
+
+282
+01:23:07,347 --> 01:23:26,568
+Bu örneğe görev çubuğunu bir haline getirilmiş. Veyahut da bir köşede minik ikon şeklinde çalışan kısımlar. Bende şurada olduğu gibi ya da şurada olduğu gibi. Ne bileyim işte antilist programıymış. Ondan sonra başka çeşitli uygulamalarınmış gibi.
+
+283
+01:23:29,140 --> 01:23:42,140
+Küçük minik pencere halinde de desteklenmesini istiyoruz. Burada basitçe pencere sınıfından yeni bir icon windows sınıfını kalıcısıyla kullanarak üretmek yetmiyor.
+
+284
+01:23:42,140 --> 01:23:54,140
+Destekleyeceğimiz tüm farklı masajüstü ortamlarında da aynı işi yapmam gerekecek. Problemimiz bu. Bu problemi nasıl hafifletiriz?
+
+285
+01:23:54,899 --> 01:23:58,699
+Şöyle bir şekilde bir şey yaparak da affediriz. Önce sorunu görelim.
+
+286
+01:23:58,783 --> 01:24:08,263
+İşte benim Windows sınıfım olacak. 4T Çetlerimin önünü daha sık olduğu için X-Window ve Presentation Manager, Windows Manager'ların üstünden örnek verilmiş.
+
+287
+01:24:08,903 --> 01:24:18,563
+Tamam, ben şimdi X-Window için ve PM-Window için kendi alt sınıflarına oturtacağım Windows sınıfında ama bir icon window olması istendi.
+
+288
+01:24:18,563 --> 01:24:26,563
+Peki ama bu iconified hale geçme X ve PM'de farklı şekilde kodlanmak zorunda. O yüzden icon window'um...
+
+289
+01:24:26,783 --> 01:24:52,483
+Kalıtımla X icon window, PM icon window şeklinde iki ayrı alt sınıfını yazmak zorundayım. Burada diğer bir tane daha window manager eklesek hatta iki tane daha Gnome ve KDE'yi o zaman sadece iki yeni sınıf eklemekle yetinmeyeceğiz. Şu even iconified olan halinin de simgeremek için iki tane daha.
+
+290
+01:24:53,203 --> 01:25:05,484
+Sınıf kodlarımızı eklememiz gerekecek. Daha sonra bunu iconify diye de ne bileyim, hafas çözülmesi istenebilir. Ne bileyim,
+
+291
+01:25:09,235 --> 01:25:16,956
+Görev çubuğuna eklenmiş hali, başlat menüsüne ya da neyse, odaya eklenmiş halini isteyebilir.
+
+292
+01:25:16,956 --> 01:25:24,036
+Değişik şeyler senaryona iletirebilir. O zaman icon window'un yanına bir tane daha alt window ne olabilir?
+
+293
+01:25:24,216 --> 01:25:27,716
+Mesela işte transparent window diye. Transparent window.
+
+294
+01:25:27,976 --> 01:25:33,235
+Bunun alt sınıfları, X transparent window, PM transparent window vs. vs.
+
+295
+01:25:34,496 --> 01:25:37,235
+Yine bir şey yapmak için birden...
+
+296
+01:25:37,235 --> 01:25:58,556
+Bu problemi nasıl çözeriz? Şöyle çözeriz. Temel ilkemiz neydi? Neyin değiştiğini bul ve onu sarmalım. Şimdi burada değişen şeyler pencerenin uyutlaması ve pencerenin gerçeklemesi.
+
+297
+01:25:58,996 --> 01:26:21,476
+Soiklama derken normal pencere bunun iconified hali gelmesi diyelim ki gerçeklemeleri ise bu kavramsal pencerelerin farklı window managerlara uyarlanmasıdır. O da gerçeklemesidir. Şimdi değişen şeyler bunlar. O zaman bunları ayrı kalıtım hiyerarşilerinde sarmalayalım. Kalıbın öncesi budur.
+
+298
+01:26:23,539 --> 01:26:40,479
+Yapılacak işlemler soyutlamalarımız üzerinden çağırılsın. Bizim clientlerımız soyutlamalara gitsin. Soyutlamalarda spesifik olarak ne için yapılacağına karar vererekten ilgili son gerçeklemeyi çağırsın. İşte bu.
+
+299
+01:26:41,043 --> 01:26:52,064
+Çağırma işine, yani neyin yapılması gerekir, bilgi nesneye bu metot çağısının iletilmesi, işin yaptırılması işine araya bir tepki kurmak şeklinde ifade ediliyor.
+
+300
+01:26:52,224 --> 01:26:56,783
+Ve kalıbında ismi bu noktada ortaya çıkmış oluyor.
+
+301
+01:26:57,623 --> 01:26:58,724
+Önemilen şey şu.
+
+302
+01:27:00,083 --> 01:27:06,163
+Soyut bir pencere sınıfı ve soyut bir pencere gerçekleme sınıfı olacak.
+
+303
+01:27:06,644 --> 01:27:12,003
+Sol taraf soyutlama, sarkıf gerçekleme hiyerarşileri olacak.
+
+304
+01:27:13,583 --> 01:27:19,843
+Örneğin, şurada birebir veya duruma göre bile çok sahiplik bir ilişkisi olacak.
+
+305
+01:27:20,463 --> 01:27:22,483
+Pencere çizmek için ne olacak?
+
+306
+01:27:22,960 --> 01:27:38,559
+Pencerenin kanrasını çizilmesi gerekecek. DrawRectangle. Ne bileyim, bir başlığı olması gerekecek filan. DrawText. Veya Windows'da yapılabilecek başka neler varsa onları yazarız. Örneğin şu DrawRectangle metoduna bakalım.
+
+307
+01:27:50,931 --> 01:28:02,131
+İmplemente İçme Mesela nesi var? İlgili bir device'a yazı yazdıran, ilgili device'a ilgi çekten çeşitli soyut metodları var.
+
+308
+01:28:03,796 --> 01:28:12,296
+Hencere Soyutlama Temsilindeki Roll-Rect metodunda gerçeklemenin metotları üzerinden işimi yaptırıyorum.
+
+309
+01:28:12,296 --> 01:28:15,296
+Dörtgen çizmek için dört tane çizgi çizmek gerekiyor.
+
+310
+01:28:15,296 --> 01:28:21,296
+İşi basit göstermek için koordinatları falan gösterdiği atlamışlar.
+
+311
+01:28:21,296 --> 01:28:26,988
+Yani soyutlama işi gerçekleme üzerinden yaptırıyor.
+
+312
+01:28:27,283 --> 01:28:37,823
+Böylece biz bu iki sınıfın somut alt sınıflarını kodlayarak problemi daha az sınıf ile daha esnek biçimde çözebiliriz.
+
+313
+01:28:39,123 --> 01:28:50,043
+Somut olarak ikon window, transin şeffaf pencere, normal pencere filan gibi metotlarım olacak. Daha bu sözü söyleyeyim, KDS sınıflarım olacak.
+
+314
+01:28:51,667 --> 01:29:04,387
+Önce, bir şey çizeceğiniz zaman, iconified window çizeceğiniz zaman, ilişk döklerinin ve metnin çizilmesi ihtiyacımız olacak.
+
+315
+01:29:04,387 --> 01:29:10,228
+Üst sınıfın aslında metotlarına bu iş iletilmiş oluyor.
+
+316
+01:29:10,228 --> 01:29:15,028
+Veya şeffaf olarak çizeceksek de sadece ne bileyim.
+
+317
+01:29:15,188 --> 01:29:32,188
+Bu konuda çizilecek. O da yukarıki sınıfa iletilecek. Yukarıki sınıf ise bu işi Bridge Üyesi üzerinden ne tür bir pencere sistemi ile ilişkilendirilmişse ona yaptıracak.
+
+318
+01:29:43,188 --> 01:29:58,268
+Üstteki soyut metotların somutlaştırarak podlanması yapılmakta. Örneğin XWindow Implementer sınıfı. DevDrawText metodunda XWindow'un DrawString metodunu kullanarak da bir şey yaptıracak.
+
+319
+01:30:00,000 --> 01:30:21,579
+X-Window'un çizgi çekme mesulunu kullanarak iş yapacak. PM-Window ise benzer şekilde DevDrawLine metodunda aslında PM'nin ilgili DrawLine hizmetlerini çağıracak ve DrawText metodunda PM sisteminin ilgili metin yazma metotlarını çağıracak, çağırıyor olacak.
+
+320
+01:30:28,000 --> 01:30:56,000
+Bu örneğe bakalım.
+
+321
+01:30:56,000 --> 01:30:57,680
+İşler yapmış o.
+
+322
+01:30:58,452 --> 01:31:06,952
+Böyle bir çözüm öneriliyor. Şimdi bunu kalıp şeklinde anlatacağımız zaman ise bizim bir soyutlamamız var.
+
+323
+01:31:06,952 --> 01:31:14,952
+Kendisi de soyut sınıf olarak ele alınıyor ve bunun gerçeklenmesi kısmı yine bir soyut sınıf olarak ele alır.
+
+324
+01:31:14,952 --> 01:31:21,952
+Spesifik gerçekleme yerine yönelik spesifik metotlar ise yine soyut metotlar şeklinde tanımlanıyor.
+
+325
+01:31:26,452 --> 01:31:43,756
+Bu örneğe bakalım.
+
+326
+01:31:43,956 --> 01:31:56,796
+Ekleyerek tam buna ilişkilendirerek de isteğimizin yapılmasını sağlıyoruz. Soytlamada bu işlemler neler olacaksa onların gerçeklemeye yaptırılmasını sağlayacak şekilde metotlarımızı kodluyoruz.
+
+327
+01:32:05,300 --> 01:32:25,340
+Farklı özelleştirmeleri gerçeklemeden bağımsız olaraktan, bağımsız demeyelim ya da soyutlanmış olaraktan ya da gerçeklemeye şeffaf bir biçimde kavramsal özelleştirmelerimizi abstraction sınıfın alt sınıflarıyla hissediğimiz gibi halledebiliyoruz.
+
+328
+01:32:27,220 --> 01:32:27,979
+Olay bu.
+
+329
+01:32:28,564 --> 01:32:36,024
+Eczana bahsettim kalıp bileşenlerini. Ama size de söylemiş oldum zaten. Ekstradan bir şey yok.
+
+330
+01:32:39,699 --> 01:32:54,699
+Bu kalıbı ne zaman kullanabiliriz? Soyutlamayla gerçeklemeler arasındaki bağım kalıcı olmasının istenmediği anlarda ya da başka bir şekilde çalışma arasında değiştirebilmesini istediğimiz zamanlarda bu bilgi kalıbını kullanırız.
+
+331
+01:33:07,699 --> 01:33:13,960
+İstiyac duyuyorsak bu kalıp bizim işimizi çok güzel bir biçimde görecektir.
+
+332
+01:33:13,960 --> 01:33:15,947
+İlk madde...
+
+333
+01:33:16,243 --> 01:33:43,983
+Bahsedilen işi başka kalıplarla da belki yapabiliriz. Ne bileyim mesela strateji gibi belki. Orada önemli olan bu tasarım kalıplarının ayrıntının ve çözüktükleri ve belirli sorunların ne olduğunu bilip elimizdeki kalıplarına daha uygun hangisi olacaksa, hangi kalıp türünden ilerleyeceksek onu seçmek şeklinde ilerleyeceğiz.
+
+334
+01:33:44,243 --> 01:33:57,243
+Ama dediğim gibi bu kalıbın dert olduğu deva şu alttaki ikinci maddedir. Zaten motivasyon da onun üzerinden yapılmıştır.
+
+335
+01:33:57,243 --> 01:34:07,243
+Şimdi, bunu da bir yerden almıştım ama kendi örneğimi değil ama nereden olduğunu unutmuşum. Bir tanesini de yazmamışım.
+
+336
+01:34:10,003 --> 01:34:20,724
+Bir daha şekil ölçüldü belki. Öyle değilmiş peki. Neyse. Notumu düşündü. Bunu nereden aldım diye.
+
+337
+01:34:31,699 --> 01:34:32,619
+Teşekkürler.
+
+338
+01:34:39,444 --> 01:34:55,444
+Şimdi, yine bir çizim programı üzerinde çalışıyoruz. Şu aşamada dikdörtgenler üzerinden çalışıyoruz. Ama farklı dikdörtgen ailelerimiz var. İlk etapta da sayımız 2.
+
+339
+01:34:55,444 --> 01:35:03,444
+2 farklı aileden olan dikdörtgenler, 2 farklı yoldan çiziliyor ve bir dikdörtgen de nasıl çizileceğini biliyor. Örneğin,
+
+340
+01:35:04,307 --> 01:35:31,508
+Bizim elimizde farklı hali olarak da birinci ve ikinci halimiz var. Birinci halimizdeki dikdörtgenler modellemek için kol üst ve sağ alt köşelerin koordinatlarını bilmek yeter. Bu koordinatları bildikten sonra dört tane çizgi çizerek bu dikdörtgeni oluşturabiliriz.
+
+341
+01:35:32,435 --> 01:35:42,435
+Fakat çizgi çekmekte de kullandığımız iki ayrı grafik kütüphanesi ailesi var.
+
+342
+01:35:42,435 --> 01:35:48,435
+DP1 kitaplığımızda Draw and Line adında bir çizgi çizme metodumuz var.
+
+343
+01:35:48,435 --> 01:35:54,435
+Ve aldığım parametrenin sıralaması ise x1, y1, x2, y2 şeklinde.
+
+344
+01:35:56,627 --> 01:36:13,267
+İkinci tür dikdörtgenlerimizle çizeceğimiz çizim kitaplığımız ise dp2. Orada da drawline diye bir metod var. Koordinat noktalarını alma sırası x1, x2, y1, y2 şeklinde.
+
+345
+01:36:15,764 --> 01:36:39,344
+Burada basitçe adaptör kalıbını kullanamayız arkadaşlar. Metod imzalarını birbirine uyumlu hale getirmek için. Çünkü üçgenlerimiz olacak, darelerimiz olacak, farklı farklı şekillerimiz olacak. Ve her biri için ayrı ayrı adaptör kalıblarını kurmak çok da mantıklı olmayacak.
+
+346
+01:36:39,988 --> 01:36:57,828
+Burada aklımıza şu gelebilir. Bizim çeşitli şekil soyutlamalarımız var. Ve bu şekillerin çizimlerin çizilmesinin hayata geçirmesini sağlayacak farklı çizim kaplı ailelerimiz var.
+
+347
+01:37:04,176 --> 01:37:18,796
+Gerçekten çizilmesi farklı farklı özelleşiyor. Zaten cümleyi bu şekilde kurduğumuzda bir iç kalımının sunduğu çözüm ve o kadar aklımıza gelmektedir. O yüzden o şekilde ilerlemeye karar vermiş olacağız.
+
+348
+01:37:22,676 --> 01:37:32,395
+Fakat diyelim ki ilk başta bu kalıbı kullanmak aklımıza gelmedi ve kafamıza göre bir ilk çözüm oluşturuyoruz.
+
+349
+01:37:33,108 --> 01:37:58,968
+Madem iki tip farklı bir dörtgenimiz var ve bunları bir ortak üst sınıftan kalıtımda türetelim. Ve bu ikisinin de çizim metodlarını istediğiniz ihtiyacımız var. İki farklı şekilde gerçekleyelim diyebilirsiniz. O zaman bir tane de soyut rektangrel sınıfı, italik olmasından benziyor. Onun draw metodu olacak ve protected abstract olarak da draw line metodu olacak.
+
+350
+01:38:01,108 --> 01:38:15,108
+V1 Rektangül Sınıfları'nı kodlayacağım. V1 Rektangül Sınıfını kodladığımda, onun somut Draw Line metodunun içerisinde DP1 kitapların Draw a Line metodunu kullanacağım.
+
+351
+01:38:15,108 --> 01:38:23,108
+V2 Rektangül'ün içerisindeki Draw Line metodunda ise DP2 Kütüphanesi'nin Draw Line metodunu kullanıyor olacağım.
+
+352
+01:38:23,108 --> 01:38:27,108
+Şimdi bu aslında problemi çözdü.
+
+353
+01:38:27,108 --> 01:38:27,884
+Tamam.
+
+354
+01:38:27,923 --> 01:38:33,263
+Fakat mesele şu ki, biz sadece dikdörtgenlerle yetinmeyeceğiz.
+
+355
+01:38:34,644 --> 01:38:45,123
+Bu arada neden protected yaptım, growlern metodunu? Art sınıflara da aktarabileyim ve gerekirse default haliyle kullanabilirim.
+
+356
+01:38:45,123 --> 01:38:52,083
+Gerekirse, ama gerçevesiz metodum da soyut ama neyse hazır bir gerçeklemem yok.
+
+357
+01:38:52,083 --> 01:39:00,324
+Ama belki soyut olmak zorunda değil, belki somut olabilir. Ama bu öncelikle çok fark edecek mi o?
+
+358
+01:39:00,787 --> 01:39:02,967
+Neyse, peki abi.
+
+359
+01:39:04,180 --> 01:39:31,680
+DrawLine metodunu doğrudan public yapmadım. Protected yaptım. Çünkü bu metot Nesne'nin iç çalışması ile doğrudan ilgi. Yani dikdörtgen tam olarak çizgi çizme işlerini nasıl yapacak, hangi kitaplığın hangi kodunu çağıracaklar. Bu çok iç yapıya yöneliktir diye düşünülüp protected olarak tanınlanması uygun görülür.
+
+360
+01:39:32,180 --> 01:39:45,240
+Ve kalıtımın, protektif üniversitesi kalıtıması sağladığı ek avantajı da ihtiyacımız olabilir diye düşünülmüş.
+
+361
+01:39:47,380 --> 01:39:55,660
+Ve böyle bir çözümümüzü kod ağır dökmek gerekirse, kavgaşık bir çözüm olmadığı için siz de görebilirsiniz.
+
+362
+01:40:00,000 --> 01:40:08,000
+Siyye bileşenlerinin çağrılması farklı. Ödü kitaplıktaki örneğe.
+
+363
+01:40:12,115 --> 01:40:25,195
+Biz her zaman için mesela x1, y1, x2, y2, x1, y1, ha tamam 4 tane nokta var ya, x1, y1, x2, y1 yani bu sıralarda çizilmesini istiyoruz.
+
+364
+01:40:33,587 --> 01:40:53,487
+Şu Soyuz sınırtaki Drone Line metodu benim Komut V1 gerçeklememe iletmiş olacak aslında. Ki onun içerisinde de X, Y bileşenlerinin aktarım sırasını ilgili çözüm kitaplarının istediği metot ve sırada iletmiş oluyorum.
+
+365
+01:40:58,868 --> 01:41:02,168
+Rektangrel sınıfın kodunu tekrar göstereyim ki daha iyi anlayalım diye.
+
+366
+01:41:02,468 --> 01:41:08,448
+Ve ilk rektangrel sınıfı bu sefer dp2'nin drawline metodunu kullanacak.
+
+367
+01:41:09,028 --> 01:41:13,028
+Onun kendi istediği x-y sarılması şeklinde.
+
+368
+01:41:16,168 --> 01:41:21,048
+Buradaki problem şu. Farklı şekillerde ekleyeceğiz demiştik.
+
+369
+01:41:21,555 --> 01:41:41,315
+Çember ekleyeceğiz diye. Çember ekleyeceğiz diye. Çember ekleyeceğiz diye. Çember ekleyeceğiz diye. Çember ekleyeceğiz diye. Birinci dükdörtgen ailesi ile birinci çember ailesi ortak. İkinci dükdörtgen ailesi ile ikinci çember ailesi ortak. O zaman ne yapmamız gerekecek? Şöyle olabilir belki.
+
+370
+01:41:43,456 --> 01:41:48,735
+Tamam, geriye dönmem gerekmiyor. Zaten ilgili şema gelecek birazdan.
+
+371
+01:41:50,452 --> 01:42:12,532
+Bir önceki çözümün statik olan çizim metotları vardı. Onlar üstünden belki bu işi yapabiliriz. Ama bizim çizim programımız, peki tam olarak ne şekli? Dörtgen bir çember mi? Bunu dert etmesin, bundan bağımsız olsun. Siz deyin de çizsin kendini.
+
+372
+01:42:12,948 --> 01:42:21,268
+Veyahut işte her bir şeklin alıp dosyaya kaydetmek falan gerektiğinde hepsini sırada kendini kaydet diyebilirsin.
+
+373
+01:42:21,268 --> 01:42:34,528
+Ve böyle bir ihtiyacı karşılamak için dikdörtgen ve çember şekillerini ortak bir şekil üst sınıfında birleştirmemiz yararlı olacaktır. O zaman da çözümümüz şöyle bir hale gelmektedir.
+
+374
+01:42:34,847 --> 01:42:41,967
+Bizim shape sınıfımız olacak. Bunun çizim metodu olacak. Yine soyut. Bizim bu klantımız bu şekillerin kendisinin çizmesini isteyecek.
+
+375
+01:42:42,448 --> 01:42:49,108
+Bunlar kalıtımla soyut rektangeli ve soyut circle sınıfları olacak. Bunların draw metodları olacak.
+
+376
+01:42:49,568 --> 01:42:56,007
+Ama ek olarak rektangeli sınıfında draw line metodu olacak. Ve ek olarak circle'da draw circle metodu olacak.
+
+377
+01:42:56,007 --> 01:43:02,007
+Ve rektangeli sınıfından kalıtımla vd rektangeli ve vd rektangeli sınıfı da oluşturulacak.
+
+378
+01:43:02,847 --> 01:43:06,847
+V2 rektangl Dp1 ve V2 rektangl Dp2 kullanacak.
+
+379
+01:43:06,847 --> 01:43:16,847
+Daha L'ler için ise V2 circle sınıflarım olacak. V2 circle dp1 ve V2 circle dp2 kullanacak.
+
+380
+01:43:30,996 --> 01:43:43,996
+Strangle sınıfım gelecek mesela. O da V1-V2 olacak. Bunun için tabi bu soyut, nitalik yazamadım tabi. Şöyle abstract yapalım.
+
+381
+01:43:43,996 --> 01:43:55,916
+A, B, S, abstract anlamında şöyle çizeyim. Strangle sınıfım olacak. Onun da şu üst sınıftaki...
+
+382
+01:43:56,148 --> 01:44:09,148
+Soyut, Draw metodumuz, homot gerçeklenmesi olacak. Nasıl bir metod verenler? Kendisinin içerisindeki soyut olan, şimdi itirik yazamayacağım tabi bir yerine.
+
+383
+01:44:09,148 --> 01:44:12,148
+Draw, çok kötü.
+
+384
+01:44:12,916 --> 01:44:28,115
+Metinde yazamıyorum, fazla büyük olabiliyor. Elinizle yazınca daha mı küçük yazıyorsunuz hocam derseniz haklısınız. Bu kadar izin verengeli metodum olacak. Bu da işte soyut metod olacak haliyle.
+
+385
+01:44:29,779 --> 01:44:42,199
+Şu kader sınıfı eklediğimde bunun da V1, V2, V1 Triangle, V2 Triangle sınıflarım olmuş olacak.
+
+386
+01:44:45,747 --> 01:44:58,067
+Ve şöyle, şöyle, şu şunu kullanacak, şu şunu kullanacak şeklinde sınıflar eklemem gerekecek.
+
+387
+01:44:58,067 --> 01:45:05,787
+Şimdi bakın, bir tane üçgen eklemek amacım, üç tane sınıf ekledim.
+
+388
+01:45:07,167 --> 01:45:11,467
+Gerçi şöyle diyebilirsiniz, bu üçgen iki ayrı halede.
+
+389
+01:45:11,988 --> 01:45:30,988
+O yüzden, aslında eklemeniz gereken sınıf iki taneydi de, bir tane de ortak soycu sınıfı oldu. Buradaki ek yük, iki sınıf yerine üç sınıf eklemek, yüzde elli.
+
+390
+01:45:30,988 --> 01:45:35,916
+Yoksa bir yerine üç ekledik, üç kat değil diyebilirsiniz. Haklısınız.
+
+391
+01:45:36,756 --> 01:45:58,595
+Aslında özlemek daha doğru. Ama yine de işin içerisine bir de şey düşünün. Üçüncü aile olsa ne olacak? V3 Rektangle, V3 Circle, V3 Strangle, DP3 Kitaplı. Olaylar iyice dallanıp budaklanacak. Peki buna nasıl bir çözüm getiririz?
+
+392
+01:46:01,332 --> 01:46:09,872
+Burada belki biraz ayrıntılı düşünürsek, abstract factory kullanmak yararı olabilir.
+
+393
+01:46:10,931 --> 01:46:30,091
+Aileler ve ailelerin üyeleri şeklinde. Bu da ailelerin çizim kitapları, üyelerimiz ise üçgenler, dörtgenler falan daireler. Böyle düşünebilirsiniz. Bu da düşünülebilir.
+
+394
+01:46:32,020 --> 01:46:40,699
+Avantajının nezavantajının ne olacağını iyi analiz etmek gerek. Şu an kısa süre içerisinde onu çıkarttık söyleyemeyeceğim.
+
+395
+01:46:40,699 --> 01:46:49,020
+Ama bir not alırız belki. Neyse, şu şeyleri çizimleyeyim. Çizimleri temizleyeyim. Böyle devam edelim bakalım.
+
+396
+01:46:49,020 --> 01:46:57,484
+Daha belki de soruyu biraz notlara yanıtlamışım da bile. Evet bu hale geldik ilk çizimimiz.
+
+397
+01:46:59,796 --> 01:47:21,376
+Dört belirli şeklimiz var. İki hali, iki şekil. Yani birinci hali, ikinci hali yuvarlak ve dörtgen. Dört oluyor. İki şekilleki dört. Yeni bir çizim metodu eklemek gerekirse altı sınıf olacak. Yeni bir şekil eklemek gerekirse altı sınıf olacak.
+
+398
+01:47:23,199 --> 01:47:33,500
+Bırakın fazladan iş yapmayı, her yeni eklenecek çizim türü veyahut da şekil türü söz konusu olduğunda sınıf sayısı üstel olarak artacak.
+
+399
+01:47:34,612 --> 01:47:48,072
+Acaba daha iyi bir çözümümüz olamaz mı? Problemimizin kaynağı şu, farklı şekil türleriyle farklı çizim yolları çok sıkı birlikte tasarlarmış durumda bu ilk aklımıza gelen çözümle.
+
+400
+01:47:48,072 --> 01:48:02,612
+O yüzden şekil türlerimizin genel sınıfı tutamaları, bunların çizim yollarını, hangi aileden kütüphaneye çağıracak, bunu gerçeklemelerini birbirinden ayırırsak bunu çözeriz. Tam zaten bir iç kadını da anlatacağız.
+
+401
+01:48:02,612 --> 01:48:03,072
+amacı
+
+402
+01:48:03,072 --> 01:48:07,192
+şöyle oluyor
+
+403
+01:48:07,192 --> 01:48:08,712
+yine
+
+404
+01:48:08,712 --> 01:48:11,091
+solid drawing
+
+405
+01:48:11,091 --> 01:48:12,652
+sınıfımız var
+
+406
+01:48:14,963 --> 01:48:36,824
+Burada Soit sınıfımızın somut şekilleri alacak. Rectangle, Circle falan gibi hepsinde Draw metodu olacak. Ve bizim Shape sınıfımızda ihtiyaç duyulan temel çizim metodları, Comut ve Protected olarak kodlanıyor olacak.
+
+407
+01:48:37,300 --> 01:48:44,300
+Bu somut metotların içerisinden yaptığımız çizimler aslında bu Bridge üyesi olacak.
+
+408
+01:49:02,868 --> 01:49:18,347
+İşlerin yürütülmesi sağlanacak. Sağ tarafta da gerçeklemenin üst sınıfı var, çizim sınıfı. Çizgi çizmek, daire çizmek gibi suyut metotları var.
+
+409
+01:49:23,760 --> 01:49:47,079
+Doğruyacağız ve ilgili kitaplıktaki ilgili çizim metotlarını çağırıyor olacaklar aslında. Böyle olunca benim işte V1 Circle, V2 Circle, V1 Rectangle, V2 Rectangle gibi farklı farklısını konlamaları yapmama hiç ihtiyacım kalmıyor.
+
+410
+01:49:47,796 --> 01:50:14,676
+Sadece ve sadece o ilgili şeklin çizilebilmesi için, draw edilebilmesi için gerçekleme olarak hangi çizim metotların hangi sırada çağrılması gerektiğini sadece metot isimleri üzerinden yazacağım buraya. Bunlar hangi aileden, hangi aileden, hangi kitaplığı kullanacakmış ayrıntılarıyla ilgilenmeme hiç mi hiç gerek kalmayacak.
+
+411
+01:50:15,764 --> 01:50:20,764
+Mesele bundan ibaret. Ve çözümümüzü de o şekle getirdiğimizde
+
+412
+01:50:21,171 --> 01:50:28,631
+Soyut Çekil Sınıfımızın Soyut Çizme Metodu ilgili Bridge üyesi.
+
+413
+01:50:28,631 --> 01:50:45,091
+Bak şimdi kırış çekselim belki daha yorulun neyse. Constructum'un mutlaka tekli hangi türden hangi aileden olacaksa onun Bridge gerçeklemesi üyesini atamak üzere Constructum metodu kodlanmış durumda.
+
+414
+01:50:49,171 --> 01:51:11,931
+Gerçeklemenin daire çizimi üzerinden işler yürütülecek. Somut şekillerine baktığında ise, Somut Circle sınıfında, Shape'in alt sınıfı ne var? Ortak orijin noktasının ortasının yükseğe koyunaktı ve yarışa koyunaktı. Constructor bunları alıyor.
+
+415
+01:51:13,652 --> 01:51:22,452
+DP'yi üst sınıfa iletmek durumunda ve dünya alanları basitçe eklendiriyor konstaktın.
+
+416
+01:51:24,384 --> 01:51:31,463
+Gerçeklemenin Draw Circle metodunu çağırıyor. O gerçeklemin hangi aylardan vermişsek o şekilde çalışacak.
+
+417
+01:51:31,463 --> 01:51:39,064
+Veza Rektangulum da benzer şekilde. Onun da iki köşesinin koordinatlarına ihtiyaç var.
+
+418
+01:51:39,064 --> 01:51:47,144
+Üst sınıfın construct dediğini Drawing gerçeklemesi ile çağırdıktan sonra ihtiyaç olan üye alanlar eklendikten sonra
+
+419
+01:51:52,384 --> 01:51:59,083
+Dikkat etkenin şekillendirebilmesi için ilgili kodu görüyorsunuz.
+
+420
+01:52:01,652 --> 01:52:13,472
+Gerçekleme kısmına bakalım. Gerçekleme kısmının üst soyut sınıfında çizgi çekilecek, daire çizilecek metotları soyut olarak imzaları tanımlanmış durumda.
+
+421
+01:52:13,992 --> 01:52:29,652
+Örneğin, birinci adenin çizim gerçeklemesi, daire çizileceği zaman DP1'in daire çizme mesutunu çağırıyor. Çizgi çizileceği zaman DP1'in çizgi çizme.
+
+422
+01:52:29,652 --> 01:52:37,252
+Bu örneğe metodunu çağırıyor. Benzer şekilde V2 çizim sunu var ise
+
+423
+01:52:38,707 --> 01:52:53,108
+Dari çizileceği zaman dp2'nin daire çizme metodunu uygun sırada çağırıyor. Çizgi çizileceği zaman da dp2'nin çizgi çizme metodunu uygun bir şekilde çağırıyor. Böylece problemimizi çözmüş oluyoruz.
+
+424
+01:52:53,108 --> 01:53:06,028
+Bu dp1 ve dp2 sınıflarında ise bu draw, align, draw, circle metotları nasıl varsa ilgili çizimleri yapan kodlar da zaten oralarda yer alıyor. Bunun aynı tırnağımı da girmiyoruz.
+
+425
+01:53:06,707 --> 01:53:19,587
+TP2'de benzer şekilde örneğimizi bitmiyoruz. Şimdi şöyle bir geriye yaslanıp ne gibi bir deneyim geçirdik, ne dersler çıkardık, neyi doğru buladık onu bir değerlendirelim.
+
+426
+01:53:23,123 --> 01:53:45,204
+İlk dersimiz bu neyin değişiklerini bul ve onu sarmala dersler için isimler konuşuruz. Bizim değişik türden şekillerimiz ve değişik türden çizimlerimiz var. O zaman biz bunları hende aralarında soyutlamamız gerekmektedir. Şekil soyutlaması ve çizim soyutlaması şeklinde.
+
+427
+01:53:45,939 --> 01:54:03,939
+İkinci dersimiz ise kalıtım ilişkisi yerine parça bütün ilişkisinin tercih edilmesidir. İlk çözümümüzle kalıtım kullanıyoruz fakat...
+
+428
+01:54:04,212 --> 01:54:19,212
+Kalıtımın yanlış kullanılması büyük bir risk oluşturuyor bizi. Özellikle gereksinlerdeki değişiklikler, eklemelerle ilgili hususlarda. İkinci sözümüzde de kalıtım var ama...
+
+429
+01:54:22,707 --> 01:54:45,687
+Orada parça bütün ilişkisi de var. Parça bütün ilişkisi de bridge üyesi üzerinden bir şekil soyutlamasını, çizim gerçeklemeleriyle sahiplik ya da parça bütün olaraktan ilişkilendirmesi şeklinde durmuş olduk. Öbür türlü ilk çözümüzde şey yoktu yani sahiplik yoktu.
+
+430
+01:54:46,355 --> 01:55:06,615
+Bütün şekil aileleri, bütün alt türüleriyle hep bir alt sınıf üzerine toplanmış oluyordu. Her birbiri kendi alt sınıfıyla modellenmiş oluyordu. Ama şimdi bir iç kalıbını kullandığımızda her şeyi kalıtım ile çözmedik. Parça bütün ya da sahiplik ilişkisini de kullanmış olduk.
+
+431
+01:55:07,091 --> 01:55:22,351
+Kalıtım ilişkisi çalışma zamanında değiştirilemez ama sahiplik ilişkisi çalışma zamanında değiştirebilir. İlişkide olan anlılardan birisinin yerine ötekini koyarsınız, set edersiniz, eklersiniz olur biter.
+
+432
+01:55:22,351 --> 01:55:30,872
+Ama kalıtım ilişkisi bir kere kuruldu mu hep o şekilde devam etmektedir. Değiştirilmenin tek yolu bütün kaynakları yeniden değiştirmektir.
+
+433
+01:55:33,876 --> 01:55:39,036
+Getirdiği yararları da gösteren bir uygulama yapmış.
+
+434
+01:55:40,655 --> 01:55:48,935
+Evet, sorusu olan varsa veya deneyim paylaşmak isteyen arkadaşların varsa lütfen buyursun da.
+
+435
+01:55:58,100 --> 01:56:07,700
+Evet. Buyrun son sorunlardan çekinmeyin. Çünkü bununla birlikte dersimizi tamamlayacağız.
+
+436
+01:56:10,340 --> 01:56:20,100
+Dersimizi tamamlayacağız. 10 ders saatini yapamayacağım. Acil bir iş var. Onu tamamlamak için.
+
+437
+01:56:20,340 --> 01:56:30,840
+Saat dörtte bitmesi gibi kendi güzü varsa o yüzden dersi bırakıp sonuçlarına da kadar onu tamamlamam gerekiyor. Soru varsa buyurun. Yoksa bugünlük bu kadar diyeceğiz.
+
+438
+01:56:30,840 --> 01:56:33,840
+O zaman hemen kaldığım yerine işaret diyeyim.
+
+439
+01:56:38,292 --> 01:56:50,155
+İki marka arasında. Sonra haftayla, P'ye girmeyi ben devam edeceğiz.
+
+440
+01:56:58,323 --> 01:56:59,563
+Evet, yok mu?
+
+441
+01:57:02,503 --> 01:57:04,843
+O zaman bugünlük bu kadar arkadaşlar.
+
+442
+01:57:05,643 --> 01:57:09,063
+Dinlediğiniz için teşekkür ederim. Haftaya görüşmek üzere.
