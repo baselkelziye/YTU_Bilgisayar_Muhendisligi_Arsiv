@@ -1,0 +1,5171 @@
+1
+00:00:10,195 --> 00:00:12,195
+Merhabalar arkadaşlar.
+
+2
+00:00:14,495 --> 00:00:15,995
+Merhabalar hocam.
+
+3
+00:00:17,295 --> 00:00:19,295
+Bu hocam sesim geliyor mu?
+
+4
+00:00:19,596 --> 00:00:22,496
+Geliyor, buluyor. Nasıl duysanız.
+
+5
+00:00:24,096 --> 00:00:27,095
+İyiyiz hocam. Siz nasıl sesim geliyor mu?
+
+6
+00:00:29,795 --> 00:00:32,195
+Teşekkür ederim, ben de iyiyim.
+
+7
+00:00:36,628 --> 00:00:38,487
+[öğrenci] bir titizşan.
+
+8
+00:00:55,124 --> 00:01:04,603
+Evet arkadaşlar, başlayabilirsiniz. Baştan hocam, ben yazdım zaten, kusura bakmayın.
+
+9
+00:01:07,603 --> 00:01:13,323
+[kişisel bilgi]
+
+10
+00:01:13,323 --> 00:01:17,084
+Kusura yazdım hocam şimdi, çete. Sohbet kısmını yazdım.
+
+11
+00:01:24,371 --> 00:01:29,352
+[öğrenci], Göl'den mesajına, bir kez yavaş yavaş geliyor.
+
+12
+00:01:33,912 --> 00:01:39,992
+Bugün üçüncü ödevinizi ve aslında son ödevinizi sunacaksınız.
+
+13
+00:01:43,316 --> 00:01:54,216
+Projenin ne olduğunu hepimiz biliyoruz. O yüzden zamanı iyi kullanmak adına projenin kendisinden çok bahsetmenize gerek yok sunumlarınızda.
+
+14
+00:01:54,216 --> 00:02:08,012
+Sizin temel olarak neler yaptığınızı, yapay zekalı ve yapay zekasız çözümlerinizin arasında nasıl farklar olduğunu...
+
+15
+00:02:08,467 --> 00:02:20,467
+Bizlerle paylaşmanız, orayı uygulamanız ve sonuçları yorumlamanız en önemli kısım olacaktır.
+
+16
+00:02:22,147 --> 00:02:29,187
+Peki, o zaman fazla da vakit kaybetmeden başlayalım. [öğrenci] de seninle başlayalım mı?
+
+17
+00:02:33,044 --> 00:02:36,884
+Olur hocam, ben zaten yazdım şeye. Ben hemen açayım bir saniye.
+
+18
+00:02:40,692 --> 00:02:42,331
+Şimdi hocam geldi mi ekran?
+
+19
+00:02:44,912 --> 00:02:47,451
+Geliyor, geliyor, geldi.
+
+20
+00:02:50,451 --> 00:02:51,611
+Tamamdır hocam.
+
+21
+00:02:53,472 --> 00:02:59,012
+SFT, GPU ve Multi-SFT ile ilgilen modellerin cevap doğduklarının ve farklılıklarının incelenmesi.
+
+22
+00:03:01,204 --> 00:03:24,644
+Önce hocam, bu projede demiş olduğunuz gibi 10 cevap çifti için yaptım. Baştan söyleyeyim hocam, bu projede ben başarısız oldum. SFT ile %10, SFT artıcıya akıyor ile %20'lik bir başarı yükselmesi alamadım. Genel olarak %40'larda kaldı modellerin. Bunun da nedenini sonraki şeylerde birkaç neden olduğunu düşünüyorum, ondan söyleyeceğim.
+
+23
+00:03:25,108 --> 00:03:42,268
+Onu söz ettim. Bir de evet, yapay zeka ayrımı yapamadım. Ama yine de sunmak istedim. Çünkü sunmayınca uygun olmaz diye düşündüm. Bu projede güvenli 3.5-4 milyar modelini kullandım. Base model olarak.
+
+24
+00:03:45,651 --> 00:04:10,623
+Zaten proje dokümanında belirtilen 3.5-4 milyar modelini kullandım. Hagen Facer'de 5 milyar modeli var. BFloat 16 olarak çalıştırdım bunu ve kuantizasyon yapmadım. OpenAI GPT OSS 120 milyar modelini buradaki teacher model olarak kullandım. Siz SFT modelini böyle modellere vererek cevapları alın demiştiniz. Ben de burada işte...
+
+25
+00:04:10,623 --> 00:04:36,923
+Bu tensör sürülerini kullandım. OpenRouter'ları DeepInfo üzerinden cevapları aldım. Bu diversity hesaplamaları için de YTRKOSMOZ.GE'nin 4K5 larcını kullandım. Burada daha iyi modeller kullanabilirdim. Nerede diyeceğimiz sonraki slide'larda daha iyi açıklayacağım. Ve evet, bu dataset olarak YTRKOSMOZ.GE, GSM-SITSKTR'yi kullandım.
+
+26
+00:04:37,427 --> 00:04:57,327
+Setilililir 192 soruluk bir dataset. 1500 soruyu eğitim için kullandım. Ama CYK'lı aşamasında Ansloth kullanmayı unuttuğum için çok uzun sürdü. O nedenle 1000 soruyu downsample etmek zorunda kaldım. 1500 sorudan. Yarı alan 500 soruyu ise Vsat olarak kullandım bu projede.
+
+27
+00:04:58,420 --> 00:05:25,440
+Genel aldığım sonuçlar böyle oldular. Temel model doğruluk oranı %40.16 çıktı. SFT'nin doğruluk oranı %40.36 çıktı. Bunun nedenini daha sonra açıklayacağım. Burada 0.5-0.5 göreceli iyileşme oranları. Buradaki en büyük iyileşme oranı Multi-SFT tarafında oldu. %3 ve %8 bir iyileşme gerçekleşti.
+
+28
+00:05:26,324 --> 00:05:43,264
+SFT artı GAP'yi öyle. Ben bu kısımları zaten vereceğim hocam şimdi. Ben inceleme kısımlarında doğruluk testi için RedX inceleme fonksiyonu kullandım. Ancak RedX başarılı olamadı. En başta çok çok kötü performanslar gösterdi. %7-%10 arasında.
+
+29
+00:05:44,884 --> 00:05:53,124
+Ama bunu daha sonra Chain of Code ve Cevap'ta bulunan son 5 sayıdan algılanmasını etkisi sağlayan kodlar ekledim. Bu konuda.
+
+30
+00:05:54,196 --> 00:06:00,995
+Böyle bir sistem geliştirdim. Bunu kullandığımda yüzde kırklık sonuçlara kadar yükseldi. Bu şu demek oluyor.
+
+31
+00:06:01,795 --> 00:06:10,995
+Modeller aslında çözebiliyorlar ama evaluation fonksiyonu, inceleme fonksiyonu da red kullandığım red X cevapları yanlış algıladığı için
+
+32
+00:06:11,396 --> 00:06:14,115
+cevaplar sürekli şu tarafta kalıyorlar.
+
+33
+00:06:14,876 --> 00:06:20,276
+Ki fark ettiyseniz zaten burada, eskiden şu şimdi gösteremiyorum da şöyle
+
+34
+00:06:20,435 --> 00:06:26,435
+Şu bantta duruyorlardı. Daha sonradan doğruluklarının da anlaşılabileceği ortaya çıktı bu V-Lex sayesinde.
+
+35
+00:06:26,435 --> 00:06:36,435
+Hala çok iyi bir iyileşme yok ama en büyük yaşadığım sorun burada her ne kadar yüksek sıcaklık değerleri diye yazmış olsam da ki bunun da etkisi olduğunu düşünüyorum.
+
+36
+00:06:36,575 --> 00:06:42,775
+Temperatür değişkenini arttırdığım zaman cevaplar değişti ve bu matematikli bir alanlarda sorun çıkartıyor.
+
+37
+00:06:42,995 --> 00:06:47,335
+Ama benim buradaki en büyük sorunum ki burada görülebileceği üzere.
+
+38
+00:06:48,531 --> 00:07:13,531
+Burada G-Transfer bunu Türkçe çözmüş durumda. Türkçe olarak anlaşılabiliyor. Ama modelin vermiş olduğu cevap İngilizce. Ben bu İngilizce, G-Şeyle, İngilizce ne diyeyim, diversity'sini anlamak için Türkçe için fine-tunelanmış bir model kullandım. Yani burada Trump'un da aslında bunu Türkçe olarak cevap verdiğini düşünüp...
+
+39
+00:07:13,779 --> 00:07:23,059
+Birazcık daha burada bu Türkçe cevap verdiği düşündüm ama daha İngilizce odaklı bir Mühendisliği modeli kullansaydım daha başarılı bir sonuç alabilirdim.
+
+40
+00:07:23,059 --> 00:07:33,319
+Böyle bir yanlışlık yaptım ve bu sayede diversity sonuçları çok aşağılarda çıktı ve bu nedenle istediğim iyileşme oranını yakalayamadım.
+
+41
+00:07:37,555 --> 00:07:43,735
+Genel olarak diyeceklerim bu kadar. Burada kullandığım web siteleri ve dataset'ler için bir kaynakçım var.
+
+42
+00:07:45,435 --> 00:07:53,955
+Beni dinlediğiniz için teşekkür ederim. Bu projeyi istediğim gibi olmadı ama diyebileceğim bu kadar.
+
+43
+00:07:53,955 --> 00:07:58,515
+Peki, teşekkür ederim. Estağfurullah, teşekkürler [öğrenci].
+
+44
+00:08:00,375 --> 00:08:01,875
+Bir şey değil hocam. Sağ olun.
+
+45
+00:08:04,723 --> 00:08:06,623
+[öğrenci]'la devam edelim.
+
+46
+00:08:08,103 --> 00:08:10,363
+Merhaba hocam. Sesim geliyor mu acaba?
+
+47
+00:08:11,263 --> 00:08:11,643
+Evet.
+
+48
+00:08:12,483 --> 00:08:15,063
+Tamamdır. Hemen ben de ekranımı paylaşıyorum.
+
+49
+00:08:25,588 --> 00:08:26,588
+Ekranım geldi mi?
+
+50
+00:08:27,567 --> 00:08:27,968
+Geldi.
+
+51
+00:08:28,528 --> 00:08:29,207
+Teşekkürler.
+
+52
+00:08:31,207 --> 00:08:35,067
+Bugün ödev üçün sunumunu elimden geldiğince yapmaya çalışacağım.
+
+53
+00:08:35,788 --> 00:08:40,748
+Burada ben de bu arada hocam önden en azından söylemek gerekirse yapay zeka çözümü oluşturamadım.
+
+54
+00:08:44,052 --> 00:09:01,312
+Daha iyi model elde etme umuduyla çok fazla deneme yaptım. Gün sonunda aslında bu da bana biraz zamandan maliyet olarak yansıdı. Dolayısıyla aslında yapay zeka tarafındaki çözüm elde edemedim. Hepsini elde etme şansım olmadı.
+
+55
+00:09:02,995 --> 00:09:24,415
+Kendi sonuçlarımı en azından bir şekilde ilerletebildim. Akış olarak veri bölme, sonrasında 5 model eğitime, bunların cevaplarını Torç yerine doğrudan daha hızlı olması umuduyla Lama Server kullanarak elde ettim. Ve son aşamada da görsel sonuçlarla ilerledim, analizle ilerledim.
+
+56
+00:09:30,995 --> 00:09:33,635
+Bu bin soruyu aynı zamanda GPT-OSS'de.
+
+57
+00:09:34,067 --> 00:09:58,827
+Bu test verisini cevaplandırdım. SFT eğitimlerinde de bu GPT-OSS data setini kullandım. O dev de belirtildiği gibi. İleride de bahsedeceğim bu 500 soru ve bu ayırma işleminde doğrudan random bir 42 CD ile ayırdım aslında. Ama baktığım zaman bu test verisinin benim için iyi bir veri olduğunu düşündüm.
+
+58
+00:10:01,043 --> 00:10:26,724
+Bu 5 soruluk yapıda base model %40'dan düşük. Yani aslında zor sorulardan oluşuyor %30'u. %20'sine %40 ile %80 ortalama başarıyla cevap veriyor. %50'sine de %80'den yani %50'si de benim için kolay sorulardan oluşuyor diyebilirim.
+
+59
+00:10:26,724 --> 00:10:28,543
+Dolayısıyla bu dağılımı beğendim.
+
+60
+00:10:29,043 --> 00:10:33,804
+Analiz için de daha ekstra bir katman katabilir diye bu şekilde tuttum.
+
+61
+00:10:34,804 --> 00:10:36,764
+Ama aslında bu tutuş benim için çok iyi olmadı.
+
+62
+00:10:36,923 --> 00:10:40,884
+Çünkü genel başarıda biraz daha kötü sonuçlar elde ettim.
+
+63
+00:10:41,504 --> 00:10:47,644
+Metriklerde ortalama doğrultuda aslında RegEx'de Grand Truth Number üzerinden elde etmeye çalıştım.
+
+64
+00:10:47,724 --> 00:10:49,884
+Yani son sayıyı kullanmaya çalıştım.
+
+65
+00:10:50,255 --> 00:11:12,655
+Benzerlikte de Sequence Matcher kullandım. Burada da aslında karakterlerin aynı olup olmadığına bakarak ilerliyor sistem. Yani asıl diyorum cevap 40 ve cevap 40'tır arasında bir benzerlik yakalıyor. Burada elde ettiğim sonucu da farklılığı yakalayabilmek için birden çıkararak sağlamaya çalıştım.
+
+66
+00:11:14,075 --> 00:11:16,155
+Doğrudan sonuçlara gelecek olursak.
+
+67
+00:11:17,172 --> 00:11:34,172
+Ben şunu şöyle biraz daha kaydırayım ve görebilmem için. Test setinde özellikle sağ tarafta çok majör bir artış, beklenen majör bir artışların hiçbirini sağlayamadım. Bu arada benim yani...
+
+68
+00:11:34,548 --> 00:11:49,168
+Denildiklerim arasındaki en iyi modeller üzerinden oldu. Learning rateleri değiştirip, bekleyip, sonuçlandırıp bir daha denedim. Her bir denemede zamana mal olduğu için en sonunda artık eldeki en iyi ile ilerlemeye çalıştım.
+
+69
+00:11:49,168 --> 00:11:56,168
+Ama yakalayabildiğim en iyi yapıda...
+
+70
+00:11:56,628 --> 00:12:02,168
+Yine benim için test tarafında Bazemode hep en iyi model olarak kaldı diyebilirim.
+
+71
+00:12:05,395 --> 00:12:14,735
+Sağ üst bölgeye yakınlık kısmında da, burada aslında bu grafiklerde en çok benim CRPO tarafında farklılık kısmı genelde çok yüksek çıktı.
+
+72
+00:12:14,975 --> 00:12:19,056
+Ve baktığımız zaman aslında sağ üst bölgeye yakınlıkta neredeyse base modelle aynı.
+
+73
+00:12:19,056 --> 00:12:27,995
+Yani ben aslında hem farklı cevaplar oluşturup, oluşturabilip hem de aslında sağ üst bölgeye yakınlığımı koruyabilmişim CRPO'da.
+
+74
+00:12:28,175 --> 00:12:29,615
+Onu fark edebildim.
+
+75
+00:12:30,515 --> 00:12:32,056
+Daha derin...
+
+76
+00:12:32,211 --> 00:12:57,551
+Analize baktığımız zaman aslında zor sorular tarafında tüm modellerde hemen hemen bazılarında ciddi bazılarında ortalama bir başarı elde ettiğimi gördüm. Bu da aslında şunu düşündürdü. Yani benim testim belki hani tamamen zor sorulardan yani base modelin başarısız kaldığı sorulardan olursa belki hani az önce gördüğümüz grafiklerde projede istenen işlerin tamamını belki de gerçekleştirebilecektim.
+
+77
+00:12:59,731 --> 00:13:21,731
+Orta ve kolay sorularda aşağı doğru indikçe iyice başarının düştüğünü görüyorum. Burada da aslında belki kolay soruları zaten iyi yaptığı sorularda eğitim sonrası belki overfitting gibi bir problem vs. ya da halüsinasyon gibi bir problem olabilir gibi düşünüyorum. Tam olarak sebebine...
+
+78
+00:13:22,644 --> 00:13:46,344
+Çözmem, çözemedim diyebilirim. Burada kontrol amaçlı train setine de baktım. Yani dedim hani train seti belki zor sorulardan oluşuyorsa, yani base modelin çözemediği sorulardan oluşuyorsa belki bundan dolayı olmuştur diye ama train setinde de benzer bir dağılım var. Yani yaklaşık %28'i, %25'i zor sorular. İşte %15'i, %20, %16'sı orta sorulardan.
+
+79
+00:13:46,344 --> 00:13:50,344
+Aslında soruların kolaylarının zorluğunu, base modelin...
+
+80
+00:13:50,644 --> 00:13:53,943
+Evet, evet hocam.
+
+81
+00:13:56,203 --> 00:14:01,144
+Peki, şimdi zorlar çözemedikleri, kolaylarda çözdükleri ortalar ne oluyor?
+
+82
+00:14:01,864 --> 00:14:06,124
+Ortalar başarısının %40 ile %79 arasında kaldığı.
+
+83
+00:14:06,124 --> 00:14:10,384
+Ne demek başarısının %40 ile %79 arasında kaldığı demek ne demek?
+
+84
+00:14:11,264 --> 00:14:16,464
+Şimdi biz 10'a 2'lik bir çift oluşturuyoruz hocam aslında.
+
+85
+00:14:17,620 --> 00:14:26,759
+Bu çiftlerden her ikisinin de başarılı olduğu üzerinden ilerleyip oluşturduğum oran aslında.
+
+86
+00:14:28,899 --> 00:14:38,620
+Yani bir sonraki sayfada göstermek istersem, mesela burada bu çiftlerin her biri, buradaki varlıkların her biri aslında iki soruyu...
+
+87
+00:14:39,316 --> 00:14:59,456
+Karşılığına geliyor. Burada da aslında burada belirttiğim de aslında o. Yani aslında her iki sorudan mesela birisi çok pardon. Her iki sorudan birisi burada birisini doğru birisini yanlış yapıyor. Turuncu olanlarda. Kırmızı olanlarda ikisini de yanlış yapıyor. Yeşil olanlarda ikisinin de doğru yapıyor.
+
+88
+00:15:00,216 --> 00:15:03,436
+10 tane cevap alıyorsun bir soru için.
+
+89
+00:15:04,135 --> 00:15:05,035
+10 tane cevap evet.
+
+90
+00:15:07,316 --> 00:15:17,316
+İkili kombinasyonların ortalama başarısı üzerinden bu şeyi yaptın. Zor kolay ayrılmına.
+
+91
+00:15:17,316 --> 00:15:22,456
+Evet. Bu grafik aslında onun grafiği. Tamam. Devam edelim.
+
+92
+00:15:23,764 --> 00:15:36,764
+Devam edecek olursak aslında burada örnek bir zor soru grafiği, yani ödevde de istenen grafik koymak istedim. Burada mesela zor soru olarak az önce bahsettiğim durum gibi model...
+
+93
+00:15:37,812 --> 00:15:53,492
+%10'luk bir ortalama başarında kalırken eğitimlerle beraber en yüksek sonucu, SFT-CRPO da elde edecek şekilde hem farklılığı da yüksek bir şekilde başarılı bir şekilde doğru cevap verebilmiş. Bu da aslında aynı sorunun farklılığı var.
+
+94
+00:15:53,492 --> 00:15:59,672
+Şimdi burada base model, şimdi sarılar, kırmızılar neyi gösteriyor?
+
+95
+00:16:00,792 --> 00:16:05,812
+Hocam, soldaki base model aslında şöyle ilerlersem bu sorunun tüm modeli...
+
+96
+00:16:05,812 --> 00:16:25,812
+Bu, bu benim küven 3.5, 4 ve non-thinking bu arada. Yani thinking mod açmadan hepsini cevaplandırdım. Bu grafik aslında o 10 sorunun, 10 cevabın ikili kombinasyonlarının çıktısı. Yani benim buradaki turuncularım...
+
+97
+00:16:26,964 --> 00:16:41,744
+Bir tane soru, turuncu iki tane cevaba, yani her bir yuvarlak iki tane cevaba karşılık geliyor. Turuncu olanlar birisinin doğru, birisinin yanlış olduğunu gösteriyor. Kırmızılar ikisinin de yanlış olduğunu gösteriyor. Yeşiller de ikisinin de doğru olduğunu gösteriyor.
+
+98
+00:16:42,884 --> 00:16:47,644
+Yani en başta base modelde ikisinin de doğru olduğu bir şey yokken, doğru mu?
+
+99
+00:16:47,644 --> 00:16:48,844
+Aynen, evet.
+
+100
+00:16:48,844 --> 00:16:51,844
+SFT yaptığında yukarıda yeşiller oluşmaya başladı.
+
+101
+00:16:52,192 --> 00:17:15,132
+Aynen, aynen hocam. Benzer şekilde aslında bu örnekte hepsinde sağ yukarıya doğru bir yönelim oldu. Fakat bu tabii ki de o az önceki grafikte, tabloda gösterdiğim bu üst taraftan seçilen bir soru oldu. Yani aslında iyi bir noktayı göstermek açısından koyduğum bir grafik.
+
+102
+00:17:16,132 --> 00:17:19,891
+Bunun yani geri kalan sorularda bu tam tersi oluyor genelde.
+
+103
+00:17:20,192 --> 00:17:37,072
+Evet, kolay tarafta. Sağ yukarıdayken, yani base modelde bu taraftayken bu sefer diğer modellerde tersine döndüğünü gördüm. Burada sadece iyi bir yakaladığım nokta diye iyileştirmenin olduğu şeyi koymak istedim aslında.
+
+104
+00:17:38,675 --> 00:17:54,735
+Bu da farklı soru ama aslında benzer. O yüzden zamanı çok yememek adına bunu da hızlı geçebilirim. Son olarak da aslında tüm test son ekranındaki tüm soruları koymaya çalıştım. Bu biraz böyle bakınca yorumlaması zor olabiliyor.
+
+105
+00:18:06,675 --> 00:18:20,995
+İşte orta tarafta daha az yayılım olduğunu görüyorum. Bunun diğer modellerde biraz daha kaybolduğunu görebiliyorum. En azından SFT'de biraz daha korunmuş ama özellikle SFT, CRPO'da işte.
+
+106
+00:18:21,175 --> 00:18:25,155
+Yani bunu sadece zor sorular için yapsaydın ya.
+
+107
+00:18:26,915 --> 00:18:32,795
+Evet ama işte normalde hani başlarken şey diye düşünmüştüm. Ha bu grafiği mi sadece?
+
+108
+00:18:33,215 --> 00:18:33,495
+Evet.
+
+109
+00:18:34,451 --> 00:18:42,451
+Daha iyi bir şey görebilirdik o zaman. Peki, bunların yönlendirmelerine nasıl bir şey diyeceksin?
+
+110
+00:18:42,451 --> 00:18:51,451
+SFT şu şekilde yönlendiriyor, SFT artı CRP şu şekilde yönlendiriyor gibisinden bir şeyler söyleyebiliyor musun?
+
+111
+00:18:53,460 --> 00:19:00,180
+Yani ne bileyim işte hepsi doğruluğu arttırıyor da, diversity'yi şu arttırıyor, şu azaltıyor falan gibisinden bir şeyler söyleyebiliyor musun?
+
+112
+00:19:00,180 --> 00:19:10,920
+Diversity'de CRPO'da çok yüksek bir artış gördüm. Hem normal CRPO'da asıl artışın hep CRPO'da olduğunu gördüm.
+
+113
+00:19:12,819 --> 00:19:25,439
+Onu takipende yine CRPO varyantlarında yani SFT CRPO ve Multi-SFT CRPO'da daha farklı cevapların oluştuğunu görülen.
+
+114
+00:19:25,439 --> 00:19:26,619
+Bunu neye bakarak görüyorsun?
+
+115
+00:19:28,372 --> 00:19:38,512
+Bunu aslında buradaki grafiğe bakarak söylemek biraz zor da en azından en baştaki şuradaki grafikten biraz daha elde etmiştim.
+
+116
+00:19:38,612 --> 00:19:41,812
+Ama bunu tabii zor sorular üzerinden de oluşturmam gerekirdi doğru.
+
+117
+00:19:42,052 --> 00:19:42,492
+Değil mi?
+
+118
+00:19:42,652 --> 00:19:43,852
+Bir hatam oldu hocam.
+
+119
+00:19:43,872 --> 00:19:44,332
+Değil mi?
+
+120
+00:19:44,812 --> 00:19:48,732
+Şu oluşturduğum detayı diğer tarafta da oluşturursam için güzel olabilir.
+
+121
+00:19:48,732 --> 00:19:49,552
+Aynen öyle.
+
+122
+00:19:49,552 --> 00:19:52,952
+Yani şimdi burada IQ'yorsu üzerinde oluşturmuşsun o tabloyu.
+
+123
+00:19:53,032 --> 00:19:55,552
+Bir de işte bunu diversity üzerinden de oluşturaydın.
+
+124
+00:19:56,232 --> 00:19:56,352
+Evet.
+
+125
+00:19:56,372 --> 00:20:04,152
+Anlatabildim mi? Evet, çok daha şık olurdu. Peki, başka eklemek istediğin işi var mı [öğrenci]?
+
+126
+00:20:04,152 --> 00:20:08,632
+Benim yok hocam. Bayağı geliştiren veda oldu. Çok teşekkürler. Bu kadar.
+
+127
+00:20:09,132 --> 00:20:11,492
+Teşekkür ederim. Sağolasın. Eline sağlık.
+
+128
+00:20:12,072 --> 00:20:12,672
+Sağ olun hocam.
+
+129
+00:20:14,552 --> 00:20:16,072
+Evet, [öğrenci]'la devam edelim.
+
+130
+00:20:19,796 --> 00:20:21,276
+Merhaba hocam.
+
+131
+00:20:21,296 --> 00:20:21,696
+Merhaba.
+
+132
+00:20:21,696 --> 00:20:22,416
+Açıyorum.
+
+133
+00:20:38,836 --> 00:20:44,996
+Online PowerPoint üzerinden göstersem olur mu hocam? Sizi attığımda testi eklememişim. Şimdi onu ekliyordum.
+
+134
+00:20:44,996 --> 00:20:55,496
+Tekniker indirilir. Şimdi bakayım yanlış olanı açmayayım. Burada en son bir test açık değildi.
+
+135
+00:20:59,412 --> 00:21:01,672
+Şöyle de yapsam. Evet, oldu.
+
+136
+00:21:03,667 --> 00:21:31,467
+Bizden 6 modelle 1000 train ve 500 test yapmamızı istemiştiniz. Bunları da 10 soru cevap çifti oluşturmamızı istemiştiniz. Burada bize doğruluk ve çeşitlilikdeki değişimleri sormuştunuz. Ben de önden hani ben kendi sonuçlarımı verdim. Çünkü doğrulukta tamam bir noktayı yakaladım, train de %10'u. Test de ama %20 o artış.
+
+137
+00:21:31,667 --> 00:21:40,367
+Gip olmadı. GRP'de en düşük olan geldi ama o da çeşitliliğini korudu. Onu grafikte göstereceğim.
+
+138
+00:21:41,811 --> 00:21:46,251
+Zaten sizin örnek verdiğiniz model üzerinden ilerledim.
+
+139
+00:21:46,251 --> 00:21:55,451
+Kıvan 3.5 kullandım. Matematik sorularındaki şeylere baktım. Türkçe olduğu için onları biraz ayarlamam gerekti.
+
+140
+00:21:55,711 --> 00:22:00,971
+Ve burada base modellere geçmeden başta bir fark etmeyip eğittim.
+
+141
+00:22:01,351 --> 00:22:04,971
+Yüzde 60 gibi şeyler çıktı ama kayıp sorularım varmış.
+
+142
+00:22:05,531 --> 00:22:09,811
+138 tane eksik sorum vardı. Onları tekrar tekrar...
+
+143
+00:22:09,811 --> 00:22:18,603
+Tekrar train ederek eksik soru kalmayacak şekilde tüm soruları...
+
+144
+00:22:18,708 --> 00:22:26,127
+Algılayacak şekilde tekrar eğittim. Onun hepsini tamamladıktan sonra...
+
+145
+00:22:26,127 --> 00:22:30,028
+Buradaki eksik sorudan kastın, cevabını üretmediği şeylerden bahsediyorsun.
+
+146
+00:22:30,387 --> 00:22:34,528
+Evet, yakalayamadığı. 138 tanesi yakalayamadığı her sefer...
+
+147
+00:22:34,528 --> 00:22:39,528
+Yakalamamaktan kastın ne? Yani doğruluğunu belirleyemediği mi? Ne demek o?
+
+148
+00:22:40,427 --> 00:22:43,228
+Bin tane örnek veriyorsan mesela...
+
+149
+00:22:43,228 --> 00:22:43,468
+Tamam.
+
+150
+00:22:44,276 --> 00:22:50,096
+İşte 800 küsur tane varmış gibi algıladı.
+
+151
+00:22:51,296 --> 00:22:51,916
+Nasıl yani?
+
+152
+00:22:51,916 --> 00:22:55,036
+Okuyamadı sanırım benim yaptığımda.
+
+153
+00:22:56,916 --> 00:22:58,236
+Peki tamam.
+
+154
+00:22:58,536 --> 00:23:03,376
+Onu da algılayamadı dediğiniz gibi hocam. Hani oradan bir üretim çıkartamadı.
+
+155
+00:23:04,576 --> 00:23:09,936
+Zaten o konu test kısmında yüzdesi de değişti tüm soruları yakalayınca.
+
+156
+00:23:11,443 --> 00:23:12,723
+Peki, tamam.
+
+157
+00:23:15,824 --> 00:23:20,183
+Ya şey, soru-cevap şeylerini eşleştiremedikleri onlar.
+
+158
+00:23:21,743 --> 00:23:23,923
+Onlar yanlış sayılmıyorlar mı?
+
+159
+00:23:25,764 --> 00:23:31,824
+Evet, onların hepsinin eşleşmesi gerektiğini düşünüp eşleşene kadar eğittim.
+
+160
+00:23:32,743 --> 00:23:34,743
+Yanlış mı anladım bilmiyorum.
+
+161
+00:23:35,539 --> 00:23:38,039
+Eğitim derken anlayamadım ben şimdi.
+
+162
+00:23:38,160 --> 00:23:42,320
+Eksik soruları bulsun diye bir sürü kez tekrar çalıştırdım.
+
+163
+00:23:42,880 --> 00:23:43,240
+Neyi?
+
+164
+00:23:44,300 --> 00:23:47,700
+Oradaki 138 soruyu tekrar bulsun diye.
+
+165
+00:23:48,259 --> 00:23:49,240
+Neyi çalıştırdın?
+
+166
+00:23:52,980 --> 00:23:54,980
+Neyi çalıştırdığını anlamadım.
+
+167
+00:23:55,980 --> 00:24:04,980
+Soru çiftlerini eşleştirmeyi, kaçını eşleştirdiğini tekrar tekrar çalıştırınca daha iyi sonuç verdi her seferinde.
+
+168
+00:24:07,980 --> 00:24:11,980
+Ben ne demek istediğini anlayamadım ya. Bir kodunu açar mısın?
+
+169
+00:24:11,980 --> 00:24:17,980
+Bir saniye. Bu değil. İki farklı yerde şey yaptım çünkü.
+
+170
+00:24:19,731 --> 00:24:21,731
+Bu en başta sanırım.
+
+171
+00:24:28,500 --> 00:24:36,400
+Burada örnek soruları verdiğimde önce 138 tane soruyu eksik bulmuştu.
+
+172
+00:24:37,240 --> 00:24:37,860
+Ne demek o?
+
+173
+00:24:37,860 --> 00:24:51,940
+Bize kütüphane kullanmayın, öğretmen kullanın demiştiniz ya. Sizin verdiğiniz model yerine ben AWQ vererek eğittim. Onun buldukları bunlar.
+
+174
+00:24:53,395 --> 00:24:58,415
+Yani treninde bin tane soru buldum. Bu kadarını eşleştirdi. Bu kadarı eşleşmedi.
+
+175
+00:24:59,195 --> 00:25:06,155
+Eşleştirmek ne demek? Onu anlayamadım ben. Eşleştirmeden kastın ne? Orasını anlayamadım.
+
+176
+00:25:06,255 --> 00:25:18,735
+Soru ve cevap çiftlerine kastettim aslında hocam. Şurada tekrar aynı şeyi çalıştırdım.
+
+177
+00:25:25,268 --> 00:25:27,768
+Ben mi yanlış anladım acaba hocam?
+
+178
+00:25:28,308 --> 00:25:30,668
+Ben anlamıyorum. Şurada kalan diye bir şey yazıyor ya.
+
+179
+00:25:31,468 --> 00:25:32,868
+O kaç tane...
+
+180
+00:25:32,868 --> 00:25:38,348
+O kalanı nereden hesaplıyorsun? Orasını açar mısın? O kalan ifadesi nereden geliyor?
+
+181
+00:25:39,888 --> 00:25:43,388
+O kalan demek ne demek? Nereden hesaplanıyor o? Orayı açar mısın?
+
+182
+00:25:43,388 --> 00:25:50,388
+Şu öğretmenden hocam şöyle. Bu kod değil de bir önceki koddan açayım. Bu daha uzun.
+
+183
+00:25:51,380 --> 00:25:59,380
+Aynı şeyi vermeyince birden fazla kez denedim. Çok uzun sürdüğü için böyle.
+
+184
+00:26:04,948 --> 00:26:09,388
+Kalan eşittir şöyle bir şey yazıyor ya, onu yazdıran kod nerede? Onu soruyorum.
+
+185
+00:26:11,468 --> 00:26:19,448
+Hocam ben size iki tane dosya atmıştım. Onun ilkinden hesaplayıp aynısını...
+
+186
+00:26:19,448 --> 00:26:24,408
+Bir saniye şuradan size attığım şeyi bulayım.
+
+187
+00:26:26,836 --> 00:26:50,316
+Bakayım, o burada olabilir hocam. İkinci kısmı sadece şey için ayırdım çünkü. Train için kayıp olmasın diye. Buradan bulabilir miyim bilmiyorum. Şurada eksik olan kısımları tekrar sorması için bunu yapmıştım. Onu birbirine karışmasın diye önce train edip sonra ettiğim trainleri.
+
+188
+00:26:51,028 --> 00:26:53,508
+Drive'da ayrı dosyayı alıp onun üzerine...
+
+189
+00:26:53,508 --> 00:27:02,867
+Şimdi bak buradaki Missing Data'dan kasıt ne? Retrive Missing SFT Version 2 diye bir şey yazıyor burada. Ne demek bu? Missing Data ne demek? Onu anlamadım ben.
+
+190
+00:27:03,788 --> 00:27:06,807
+Version 2 başarısız olduğu için farkı...
+
+191
+00:27:06,807 --> 00:27:09,288
+O tamam da Missing Data demek ne demek?
+
+192
+00:27:10,327 --> 00:27:18,307
+O eşleştiremediğim soruları bulmasını istemiştim hocam. Onu da baktığımda Gold Guide diye bir yöntemle bulduğunu söyledi.
+
+193
+00:27:19,155 --> 00:27:27,655
+Ben de onun üzerinden onu yaparken de yok oldum hocam. 138 tane eksik olunca onu nasıl tamamlayabileceğimi bilmiyordum.
+
+194
+00:27:31,380 --> 00:27:33,380
+Peki, hücum devam edelim.
+
+195
+00:27:36,380 --> 00:27:40,380
+Hocam, yanlış olan kısmı söylerseniz ben de aynı hatayı yapmam.
+
+196
+00:27:40,380 --> 00:27:44,380
+Ben ne yaptığını anlamadım ki yanlış olan kısmı söyleyeyim.
+
+197
+00:27:46,380 --> 00:27:48,380
+Ben ne yaptığını anlamadım.
+
+198
+00:27:49,380 --> 00:27:56,108
+Yani SFT yapıyorsun, SFT'de bir soru veriyorsun. O soruya karşı teacher model bir cevap üretiyor.
+
+199
+00:27:56,627 --> 00:28:00,387
+Burada Missing Data nedir? Ben orasını hiç anlayamadım yani.
+
+200
+00:28:01,468 --> 00:28:08,188
+Bin tane soru üretmesi gerekiyordu. Sekiz yüz küsur üretti. Ben öyle anladım bunu yaparken.
+
+201
+00:28:11,859 --> 00:28:13,859
+Soruyu soruyorsun ve cevabı gelmiyor.
+
+202
+00:28:14,999 --> 00:28:35,779
+Evet. Onun içine girip tek tek kontrol etmedim açıkçası olacağım. Zat sadece eşleşmeyi bulamadığı için ona göre nasıl bulduracağımı sordum. O da Gold Guide ve tekrar kodu çalıştırırsan şey olur dedi. Ben de her seferinde daha çok düşecek şekilde aynı kodu çalıştırıp durdum açıkçası.
+
+203
+00:28:36,564 --> 00:28:44,824
+En son tüm soruları, train'de soru, sft'de de soru 1000 çıkana kadar onları çalıştırdım.
+
+204
+00:28:45,824 --> 00:28:49,963
+Peki, devam edelim lütfen. Sunumdan devam edelim.
+
+205
+00:28:54,003 --> 00:28:59,503
+Daha açtığı için şöyle kapatayım hocam.
+
+206
+00:29:06,324 --> 00:29:15,324
+Bunu ne kadar üretim yaptığımı yazmıştım. Normalde...
+
+207
+00:29:15,903 --> 00:29:41,844
+LLM'de bununla ilgili hazır pretrain veriler de varmış. Onu bilmiyordum. Orada T4'de daha kısa sürede çalıştırma yapmışlar. Onları sonra final projesi için inceleyeceğim. LLM bilen bir arkadaşıma sordum. Anslot diye bir siteyi önerdi açıkçası. Benim ne yanlış yaptığımı sonra oradan bakacağım. Benimki kadar uzun sürmemiş. Çünkü ben A100 ile çalıştırdım.
+
+208
+00:29:42,548 --> 00:30:00,000
+Beçi'de 8 aldığım halde trenlerim baya uzun sürdü. Açıkçası. Peki, tamam. Yani normal olan bu mu bilmiyorum. Onu söylediği uzun sürdüydü. O yüzden arada ne fark var ona bakacağım. Altın model için 90 bin tane.
+
+209
+00:30:00,000 --> 00:30:09,000
+405 tane burada cevap üretmiş olduk. 405 tane nokta belirlemiş olduk. O kodlarında da görürsünüz.
+
+210
+00:30:09,000 --> 00:30:19,000
+CPU sürekli benim 40 GB kullanıyorum. Dolduğu için durdurup bir daha çalıştırıp, kayıp olmadan kaydederek ilerlemeye çalıştım.
+
+211
+00:30:23,284 --> 00:30:33,464
+Beysim 67, trendi 67, testte 70 çıkmıştı. Orada hani düzgün gidiyor gibi düşünmüştüm.
+
+212
+00:30:33,464 --> 00:30:45,604
+%10, %20 arttırılabilir bir rakam gibi gelmişti. Hani %80 çıksaydı bunu devam ettirmeyecektim ama böyle olunca en azından %10 artar diye düşündüm.
+
+213
+00:30:45,839 --> 00:31:02,239
+Aslında SFT ve Multi SFT'de de daha iyi sonuçlar verdi burada. 6'ya %10 artış verdi. Ama testi öyle olmadı. Onu da muhtemelen overfitting olduğu için düşündüm.
+
+214
+00:31:02,459 --> 00:31:13,839
+Başka modelleri sonra yapay zeka önerdi diye eğittim. Ondan sonra bahsedeceğim. Onlar daha düşük modellerdi ve çok daha kötü sonuçlar verdikleri için onları sağlayacağım.
+
+215
+00:31:13,839 --> 00:31:37,839
+Sadece değer olarak yazdım. Onların testlerini devam ettirmedim. 2.5 ile 1.5'ti sanırım. Burada bende CRPO baya diğerlerine göre düşük çıktı. Tabloda da onda çeşitlilik daha fazla ama doğruluk daha az gibi çıktı. Orada VLLM.
+
+216
+00:31:38,771 --> 00:32:00,271
+ve eğitmeye başlayacaktım. Benimkinde olmadı. O yüzden Transformer ile eğittim. Ondan mı şey oldu bilmiyorum. Bir de sizin öğretmen birebir verdiğiniz ile benim Colab'da kullandığım uyuşmadı. O yüzden ben AWQ başta söylemiştim. Tekrar onun slide'ını...
+
+217
+00:32:00,271 --> 00:32:05,271
+Şurada mıydı? Şurada mıydı? Şey yapamadım.
+
+218
+00:32:07,028 --> 00:32:19,028
+Bir yere yazmıştım. AWQ ile eğittim. Sonuçlarım iyi çıktı ama belki ondan farklı olmuştur bilemiyorum.
+
+219
+00:32:20,028 --> 00:32:31,028
+Eğittiği modelin de parametresi çok yüksek olduğu için o Lora da R o matriz hesabıyla yaptım.
+
+220
+00:32:31,200 --> 00:32:44,920
+Açıkçası 40 GB'a sığmayacağı için ona en ideali ve dengeli olanı hangisi diye eğitilen parametre 10 milyonsa 16.
+
+221
+00:32:44,920 --> 00:32:50,759
+[öğrenci], şey soracağım. Bu base modelde trende %67 başarı var. Testede %70 başarı var değil mi?
+
+222
+00:32:52,139 --> 00:32:55,639
+Onları nasıl hesapladın? Onun kodunu bir açabilir misin?
+
+223
+00:33:03,796 --> 00:33:09,476
+Şimdi şu ikincisindeki eğitimli olana önce bir bakayım hocam.
+
+224
+00:33:09,476 --> 00:33:21,296
+Burada zaten hesaplamışız. O zaman ilk kısmında az önce açtığımda ben yaptıklarım kaybolur diye iki parça daha yaptım açıkçası hocam.
+
+225
+00:33:21,955 --> 00:33:27,115
+O yüzden size de iki dosya attım. Eğer burada bulamazsam şeyden açacağım.
+
+226
+00:33:28,635 --> 00:33:29,976
+Bu çalışmayanım.
+
+227
+00:33:30,771 --> 00:33:37,432
+bu çalışmadı.
+
+228
+00:33:47,892 --> 00:33:57,892
+Bunu Colab'da yaptığım için burada cevaplarından hangisi çalışıyor görünmüyor. Onu burada yaptım diye düşünüyorum ama incelemem lazım hocam.
+
+229
+00:33:57,892 --> 00:33:59,892
+Şimdi şuna...
+
+230
+00:33:59,892 --> 00:34:12,396
+Bu her seferinde oturum kaybolmasın diye şey yapmıştım bunları Drive'a kaydettiğimde. Evet buradan yaptım hocam.
+
+231
+00:34:14,612 --> 00:34:20,072
+Nasıl hesaplıyor şimdi? Nasıl hesaplıyor? Doğru yada yanlış oldu mu?
+
+232
+00:34:20,092 --> 00:34:30,612
+Örnek istemiştiniz. Ben tokenları 1024 aldığımda bunda sıkıntı olmadı. Daha düşük de denedim ama sonradan 512 ve 300.
+
+233
+00:34:31,072 --> 00:34:35,431
+[öğrenci], %67'i nasıl hesapladığın yeri açmanı istiyorum.
+
+234
+00:34:36,231 --> 00:34:39,311
+Burası tahminim hocam.
+
+235
+00:34:39,764 --> 00:34:46,583
+Çünkü sonrasında tekrar oturum başlatmayı yapmışım. Ondan önce hesaplamıştım her seferinde kaybolmasın diye.
+
+236
+00:34:57,972 --> 00:35:01,532
+Neresi? Anlayamadım ben. Şurası dedin ama ben anlayamadım neresi dedin.
+
+237
+00:35:02,672 --> 00:35:04,132
+Ay şurada...
+
+238
+00:35:09,204 --> 00:35:12,944
+Yukarıda fonksiyonlarını mı göstermemi istersiniz hocam?
+
+239
+00:35:14,384 --> 00:35:17,084
+Evet, yani o %67'i neresi hesaplıyor?
+
+240
+00:35:18,104 --> 00:35:27,684
+Bir versiyondan da emin olayım hocam. Bu versiyon 2 mi, 1 mi? Çünkü ilkinde o dediğim kayıt cevaplardan önce hesaplamıştım.
+
+241
+00:35:28,963 --> 00:35:35,744
+Peki tamam, [öğrenci] epey zaman kaybettik. Sunumuna devam edip sonuçlarını söyleyebilir misin?
+
+242
+00:35:36,916 --> 00:35:37,916
+Evet, tamam.
+
+243
+00:35:47,860 --> 00:35:57,860
+Base kısmını hesaplayarak iki haftayı geçti. Onun diğer slide'da olduğu yeri bulur. Tekrar sizi atarım olmadı hocam. Çünkü ben kendim yaptığım için...
+
+244
+00:36:03,860 --> 00:36:14,800
+Bu az önce bahsettiğim çeşitlilik. CRPO baya düşük çıktı. Kullandığım öğretmenden mi yoksa transformer kullandım.
+
+245
+00:36:14,800 --> 00:36:19,800
+Buradaki CRP'nin noktasının koordinatını nasıl buluyorsun?
+
+246
+00:36:19,800 --> 00:36:37,800
+O hesaplamalarda şu kısmı bulup ona göre yerleştirmiştim hocam. O tren ve testlerin sonuçlarına göre koydum. Ben de sadece doğruluk, farklılığı yerine koymuşum. O ikisi arasındaki farka göre baktım.
+
+247
+00:36:37,800 --> 00:36:39,800
+Farklılığı nasıl ölçtün?
+
+248
+00:36:46,547 --> 00:36:49,967
+Kodda hesaplatmıştım hocam. Doğrulukları zaten...
+
+249
+00:36:49,967 --> 00:36:55,447
+Kodda hesaplatmak demek ne demek bir tür ya? Farklılığı nasıl ölçtün diye soruyorum. Kodda hesaplattım demek ne demek?
+
+250
+00:36:56,187 --> 00:37:02,768
+Siz sorunun doğruluğu arttıkça çeşitliliği azalıyor mu diye bakmamızı istemiştiniz.
+
+251
+00:37:02,947 --> 00:37:04,967
+Evet, çeşitliliklerini nasıl hesapladım?
+
+252
+00:37:07,411 --> 00:37:20,451
+Ben doğruluklarına baktığımda doğruluğu arttıkça sonrasında test vesaire de onlar düştüğü için oradan bakmıştım. Oradaki değerleri aslında yazmıştım.
+
+253
+00:37:24,291 --> 00:37:31,731
+Şuradan hesaplatmıştım aslında. Yaptığım tren ve testlerdeki noktalara göre koymuştum.
+
+254
+00:37:37,684 --> 00:37:47,684
+trenin olduğunu yine koyamamışım. Şuradaydı tren ve testim.
+
+255
+00:37:58,387 --> 00:37:59,427
+İlk devam edelim.
+
+256
+00:38:06,867 --> 00:38:29,708
+Ben de GIPO düşük kaldı. Trende artış verdi ama şey yapmadı. Yapay zekaya da bunu sorduğumda modelin zaten iyi bir model olduğu için o artışı veremeyeceğini daha düşük bir modele geçmemi aslında önerdi. Onları da denediğimde 1.5 çok düşük çıktı.
+
+257
+00:38:31,092 --> 00:38:55,271
+Onun SPT'sini koydum. 2.5 de bu kadar düşük çıkmadı ama o da düşük çıktı. Bizim sonuçlarımızla onu karşılaştırdığımda çok fark olduğu için onları hiç modele koymadım. Denemeye de devam etmedim. Zaten onlar çok hızlı çalıştı. Bunu da sorduğumda eski modellerin öğrenmesi daha zor oluyormuş.
+
+258
+00:38:55,652 --> 00:38:58,452
+[öğrenci], yapay zekaya çok fazla şey soruyorsun.
+
+259
+00:38:59,092 --> 00:39:09,992
+Genel manada onu sana söyleyebilirim. Bu da senin yaptığın hakimiyetini oldukça kısıtlıyor. Haberin olsun, tamam?
+
+260
+00:39:11,992 --> 00:39:14,831
+Peki, başka bir şey var mı söylemek istediğin?
+
+261
+00:39:16,452 --> 00:39:17,871
+Yok hocam.
+
+262
+00:39:19,072 --> 00:39:20,411
+Peki, teşekkürler [öğrenci].
+
+263
+00:39:28,275 --> 00:39:30,315
+[öğrenci]'la devam edelim.
+
+264
+00:39:34,996 --> 00:39:36,756
+Paylaşıyorum ekşana.
+
+265
+00:39:49,427 --> 00:39:52,528
+Direkt performansdan başlayalım.
+
+266
+00:39:56,019 --> 00:40:19,960
+Tamam. Şimdi sonuçlarımda Base model %62 çıktı. Daha sonra SFT uygulayınca da test doğruluğu %73.94'e çıktı. Multi SFT'yi ekleyince de 75'e çıktı.
+
+267
+00:40:21,268 --> 00:40:45,567
+Burada GRPO ile 84'e kadar çıktığını görüyoruz. En iyi sonuçta Multi-SFT artı GRPO'dan geliyor. Ama burada da doğruluk arttıkça farklılık düşüyor. Yani model doğru cevabı öğrendikçe hep aynı doğru yolu kullanmaya başlıyor.
+
+268
+00:40:47,123 --> 00:40:51,123
+Doğruluk karşılaştırmıştır. Geri gelebilir misin?
+
+269
+00:40:51,123 --> 00:40:55,123
+Artış var. Bu Wendy ne?
+
+270
+00:40:55,123 --> 00:41:03,123
+O şey ne kadar farklı olduğunu ölçen şeydi mi?
+
+271
+00:41:03,123 --> 00:41:06,123
+Ne demek o anlamadım.
+
+272
+00:41:09,684 --> 00:41:26,244
+Yani hani mesela işte yüz farklı soru için yüz çıkıyorsa hani çok farklı demek, bir çıkıyorsa hepsi aynı demek gibi bir şey.
+
+273
+00:41:28,364 --> 00:41:32,304
+Ben anlamadım ne demek istediğini. Niye base modelde vende yok?
+
+274
+00:41:35,724 --> 00:41:37,304
+Yani çünkü...
+
+275
+00:41:41,556 --> 00:41:50,855
+O şey, ben değil zaten yapay zeka çözümü şey yapmıştım. Yani ben daha basit bir şey kullanmıştım.
+
+276
+00:41:52,395 --> 00:42:01,775
+Yapay zeka çözümü kullanmadan yaptığın çözümü anlatır mısın? Yapay zekayı kaldır ortadan tamamen. O olmadanki çözümlerini anlat ilk önce bana.
+
+277
+00:42:01,775 --> 00:42:06,155
+Tamam. Orta şöyle yapıyorum.
+
+278
+00:42:07,284 --> 00:42:27,264
+Metni kelimeleri ayırıp küçük harfe çeviriyoruz. Sonra noktalı işaretlerini kaldırıp engram oluşturuyoruz. Daha sonra da tahmin edilen cevapla doğru cevap eşleşiyor mu?
+
+279
+00:42:27,731 --> 00:42:43,131
+Burada şey yakalayamıyor. Mesela integer ise 42.0'ın eşit olduğunu göremiyor bu şey.
+
+280
+00:42:44,351 --> 00:42:49,971
+Jakart dediği de 2 metnin 2 gram kümelerini yakalayamıyor.
+
+281
+00:42:49,971 --> 00:42:52,751
+Yapay zeka çözümü ne? Senin çözümünün tek farkı burası mı?
+
+282
+00:42:54,739 --> 00:42:57,679
+Yani bu, evet, orta görünen şey.
+
+283
+00:42:57,679 --> 00:43:01,980
+E, Wendy diye bir şey vardı, o nereden çıktı? O Wendy'yi yapay zeka diyordu ama.
+
+284
+00:43:01,980 --> 00:43:07,980
+Evet, orta yazıyor. Yaklaşım satırında.
+
+285
+00:43:19,635 --> 00:43:25,715
+Yapay zeka çözümüne ne? Senin çözümüne sadece metin benzerliği tarafında mı var farklılık?
+
+286
+00:43:28,655 --> 00:43:31,916
+Evet, yani bu yaklaşım olan kısımda.
+
+287
+00:43:33,556 --> 00:43:34,436
+Ne olan kısımda?
+
+288
+00:43:35,476 --> 00:43:38,476
+Yaklaşım yazan satır var ya orada.
+
+289
+00:43:41,416 --> 00:43:43,336
+Onun haricindeki kısımlar peki ne?
+
+290
+00:43:44,436 --> 00:43:52,876
+Yani işte SFT yapmaktır, Multi-SFT yapmaktır, CRP vs. vs. oradaki kodların falan üretim noktasında yapay zekadan hiç kullanmadın mı, yararlanmadın mı?
+
+291
+00:43:52,876 --> 00:43:59,676
+Yok, yararlanmadım. Orada direkt ayırmadım. Sadece en başta böyle bir şey yaptım.
+
+292
+00:44:12,275 --> 00:44:13,775
+Peki, devam edelim [öğrenci].
+
+293
+00:44:20,724 --> 00:44:36,724
+Doğruluk karşılaştırmasına baktığımızda da test doğruluğu, train'den çok fazla, yani çok fark olmadığı için o da overfitting olmadığını bize gösterebilir.
+
+294
+00:44:37,724 --> 00:44:45,724
+Daha sonra bu grafiklere baktığımızda da her nokta bir cevap çiftini temsil ediyor.
+
+295
+00:44:45,940 --> 00:45:01,540
+X ekseninde kosinüs farklılıkları, Y ekseninde de çiftlerin doğruluğu. Ortadaki base model zaten ortada yazıyor. Pardon ortadaki değil kırıyorlar.
+
+296
+00:45:01,540 --> 00:45:10,340
+Bu SFT ve multisFT'lerde doğruluk artıyor, farklılık azalıyor.
+
+297
+00:45:13,460 --> 00:45:23,920
+Daha yüksek yine doğruluk ve düşük farklılığa sahip. Yani doğru çözüm buldukça farklılığı azalıyor.
+
+298
+00:45:27,891 --> 00:45:34,072
+Burada da her modeli tek noktayla görüyoruz. Yani tüm o çiftlerin ortalaması.
+
+299
+00:45:35,751 --> 00:45:42,472
+Bu çizgiler de yeşil olan %10 hedefi, kırmızı olan da %20 hedefi.
+
+300
+00:45:43,592 --> 00:45:52,311
+SFT'ler yeşil çizgiyi geçiyor %10 hedefini. CRP'ler de kırmızıyı geçiyor.
+
+301
+00:45:55,315 --> 00:46:02,235
+[öğrenci], kodunu ne kadarını sen yazdın, ne kadarını yapay zekaya yazdırdın genel manada?
+
+302
+00:46:04,795 --> 00:46:05,515
+Ben yazmadım.
+
+303
+00:46:05,515 --> 00:46:09,375
+Sen yazmadın. Yapay zeka prompt verdin yani.
+
+304
+00:46:11,056 --> 00:46:11,475
+Evet.
+
+305
+00:46:13,835 --> 00:46:15,515
+İstediğim bu değildi benim, değil mi?
+
+306
+00:46:16,659 --> 00:46:22,659
+Evet, aslında kendimle uğraşırdığımda...
+
+307
+00:46:22,659 --> 00:46:36,659
+Yok, yani vardı da yine hani kendim yapmadığım halde uzun süren bir ödevde. O yüzden riski yapmak istemedim.
+
+308
+00:46:37,659 --> 00:46:40,659
+Peki [öğrenci], teşekkür ederim sağ olasın.
+
+309
+00:46:40,659 --> 00:46:41,659
+Tamam.
+
+310
+00:46:45,460 --> 00:46:48,420
+Başka söylemek istediğin bir şey varsa?
+
+311
+00:46:49,740 --> 00:46:51,440
+Yok, başka söyleyeceğim bir şey.
+
+312
+00:46:51,800 --> 00:46:52,900
+Tamamdır, sağ olun.
+
+313
+00:46:56,403 --> 00:46:57,903
+[öğrenci].
+
+314
+00:47:06,579 --> 00:47:08,699
+Hemen paylaşıyorum hocam. Tamam.
+
+315
+00:47:32,340 --> 00:47:47,340
+Hocam, ekranını görüyor musunuz? Evet, görüyorum. Tamamdır. Hocam, öncelikle merhabalar. Şöyle başlayayım. Arkadaşım [öğrenci]'in acil bir işi olduğu için gelemedi.
+
+316
+00:47:48,563 --> 00:48:01,124
+Ben başlayayım o zaman. Hocam biz veri setimizi gürültülü filtreleme vesaire uygulayarak işte para birimleri, işte saat kısmındaki şu iki noktalı cevaplar olmasın.
+
+317
+00:48:01,224 --> 00:48:09,483
+İşte bazen incelediğimizde verileri latex formatında bize çıktılar veriyordu. Onlardan arındırılmış bir veri seti oluşturmaya çalıştık.
+
+318
+00:48:09,483 --> 00:48:15,124
+Burada bin tane eğitim, beş tane test verisi kullandık. Özellik çıkartımı için.
+
+319
+00:48:15,827 --> 00:48:43,708
+Bu şekilde regex kullandık. Burada da son kısımdaki cümledeki o son cevabı alıp başka bir sütun olarak şu şekilde yazdık. Ve depoladık bunları. Daha sonra bu işlem birazcık maliyetli olduğu için yani şey sft veri setini oluşturma maliyetli olduğu için biz şey kullandık. Şu sitelerdeki apil aracılığıyla oradaki güçlü jpu'ları kullanmaya çalıştık. Modelimiz şuydu. Bundan sft datası
+
+320
+00:48:43,827 --> 00:49:06,088
+Bu soruyu verdik. Bize model cevap verdi. Biz oradan verdiği cevabı ayıklayarak gerçek sonuçla karşılaştırdık. Bunu yaparken bazen sistem kopuyordu veya biraz zorlandık açıkçası. Sınırlı yani ücretsiz kullanmaya başladık. Daha sonra olmayınca ücretli olarak da kullanmaya başladık diyebilirim.
+
+321
+00:49:06,708 --> 00:49:22,708
+Burada Max 3'ün şeyi bazen kopma olduğu zaman veya yeterli miktarda veri bazen atlayabiliyor bazı soruyu. Orada 3 kere denesin diye böyle bir şey uyguladık. Daha sonra cevabı ayıklayıp birleştirdik ve bu şekilde verilerimizi elde ettik. Burada Multi SFT veri setinde ise...
+
+322
+00:49:23,411 --> 00:49:35,492
+Bir soruyu verdik ve ondan yine aynı şekilde modelimizden şu GPT modelinden bize beş farklı soru üretmesini, cevap üretmesini istedik. Formatlarımızı bu şekilde belirledik.
+
+323
+00:49:35,811 --> 00:49:50,811
+Burada bunu yaparken modelimize verdik sorumuzu ve temperature değerini kullandık. Burada bu şekilde yapınca GPU paralel olarak çalışıp yine bize farklı cevaplar üretebiliyormuş. Bunu bu şekilde kullandık bu parametreyi.
+
+324
+00:49:51,411 --> 00:49:59,911
+Ve kaydettik. Daha sonra model eğitiminde Bayes modelden 10 tane cevap üretmesini istedik. Burada bizim modelimiz Kıvan.
+
+325
+00:50:00,000 --> 00:50:05,880
+2,5-3 milyar parametreli model. Diğer model biraz büyük geldi açıkçası.
+
+326
+00:50:06,139 --> 00:50:12,340
+Şey olarak üretim aşamasına vesaire. Hem de zamansal olarak da bizi birazcık zorladı çalışması.
+
+327
+00:50:12,960 --> 00:50:17,139
+Burada biz maksimum token sayısını 512 olarak belirledik.
+
+328
+00:50:17,259 --> 00:50:20,559
+Modelimizin üreteceği cevabın sınır olarak kullandık.
+
+329
+00:50:21,460 --> 00:50:28,000
+Zamanı tamamen kısmak için aynı zamanda modelin de çok fazla sayılar...
+
+330
+00:50:28,000 --> 00:50:35,199
+Çok fazla yazılarla bu Max token sayısını iler etmesini engellemek için bir de stopping kriteri olarak da biz şöyle bir kriter kullandık.
+
+331
+00:50:35,300 --> 00:50:41,059
+Yani şu etiketle bitirsin. Bu etiketi gördüğü anda model ürettiği cevaplarda üretimi durduruyor.
+
+332
+00:50:41,820 --> 00:50:47,659
+Daha sonra bunu yaparken de yine bu generate fonksiyonun içerisinde temperature değerimizi 0.8 olarak belirledik.
+
+333
+00:50:47,659 --> 00:50:51,579
+Bu değeri çeşitliliği sağlamak için aslında kullandık.
+
+334
+00:50:51,960 --> 00:50:55,659
+Modeli tek tek cevapları verdiğimizde çok fazla zaman oluyordu.
+
+335
+00:50:56,000 --> 00:51:12,360
+Günler Hatta. Dolayısıyla biz GPU'nun paralel olarak işlenmesini sağlamak amacıyla bunu kullandık dediğim gibi. Daha sonra kaydettik verilerimizi. Bu base model. Daha sonra SFT verisiyle modelimizi eğittik. Bundan da cevaplarımızı şu şekilde.
+
+336
+00:51:13,811 --> 00:51:39,052
+Bu bizim SFT edildikten sonraki modelimizin bize verdiği cevap. Bu ise bizim SFT verimizi formatladığımız hal. Biz modelimizi SFT ile eğitirken şu ekranda görülen şeyleri kullandık. Bunları parametrelerine kaç olması gerektiğini ve zamansal olarak kullandığımız için yapay zekadan bu parametreler üzerinden destek aldık.
+
+337
+00:51:41,811 --> 00:51:43,811
+Bu örneğe bakalım.
+
+338
+00:52:08,884 --> 00:52:11,884
+Daha sonra Multi-SFT modelimizi...
+
+339
+00:52:12,436 --> 00:52:21,136
+Bu modelimizi Multi SFT olarak eğittik. Burada da onun parametrelerini görüyoruz. Bu yine bizim Multi SFT veri setimize ait bir formatlı verimiz.
+
+340
+00:52:21,136 --> 00:52:32,136
+Bunu modelimize verdik şu verileri. Şu prompt. Bu veri eğitilmeden önceki verimiz. Daha sonra modelden 10 tane cevap işlerken bu prompt'u kullandık.
+
+341
+00:52:32,136 --> 00:52:38,836
+Bizim test verimizi bu prompt üzerinden verdik ve bize model şu verileri yani şuna benzer çıktılar üretmesini istedik.
+
+342
+00:52:40,436 --> 00:52:49,316
+Tamamen bizim şeyle alakalı süreci GPU üzerinden verimli bir şekilde kullanma çalışmamız için gerekli olan parametre değerleri.
+
+343
+00:52:49,316 --> 00:52:53,316
+Burada model eğitimi sırasında GRP ile...
+
+344
+00:52:53,684 --> 00:53:03,923
+Yaptığımızda burada, num generation burada eklemişim. Normalde 8 vs. denedik ama çok fazla uzun sürüyordu. Bizde 4 varyasyonu indirmeye çalıştık.
+
+345
+00:53:03,923 --> 00:53:11,923
+Kinit Teknik'in buradaki kullandığımız parametreler bizim tabii ki de doğruluk değerlerimizi yani modelimizdeki başarı durumumuzu etkilediğini söyleyebilirim.
+
+346
+00:53:12,443 --> 00:53:21,664
+Kural tabanlı olarak ödül mekanizmalarımızı iki türlü belirledik. Başarım olarak örneğin çıkarılan yani modelin verdiği cevap ile
+
+347
+00:53:21,684 --> 00:53:38,524
+Gerçek cevabın eşleşmesi 1, eşleşmiyorsa 0 versin şeklinde. Formata baktık. Eğer cevap ile bitirsin, şuradaki örnekteki gibi ve mutlaka sonunda çözüm etiketini de eklesin dedik ve buna başarı olarak 0.5 olarak belirledik.
+
+348
+00:53:39,484 --> 00:53:48,284
+Ve bu şekilde de modelimizi optimize etmeye çalıştık. Ve bu da bizim bir örneğimiz CRP'ye dedikten sonraki modelimizin bize verdiği bir çıktı.
+
+349
+00:53:49,396 --> 00:54:09,156
+Daha sonra MultiSft ve Sft modeli uygulandıktan sonra GRP uygulayıp modelimizi eğittik. Burada SFD modelimiz ve MultiSft modelimizi GRP uygulamamızın tüm kodları bu şekilde olarak kullandık. Parametreleri aynı olarak kullandık.
+
+350
+00:54:12,724 --> 00:54:37,324
+6 tane şeyi denedik. Az önce de hatta onun sonucu bitti. Biz bir şeyde SFT artı GRPO'da bir şeylik olduk. [öğrenci] ile tam şey yapamadık. İltibat kuramadık. Modelin şimdi çıktısını alıyordum. Bunu o yüzden 5 tane şekilde değerlendireceğim. Değerlendirmek zorundayım. O yüzden kusura bakmayın. Yani özür dilerim. Burada bu değerlendirmeyi şu modeller üzerinde yapacağım.
+
+351
+00:54:39,827 --> 00:55:07,568
+Burada gördüğümüz kadarıyla biz base modelden multi sft ile eğittiğimizde modelimizin başarısını %51 oranında artış görüyoruz. Bu bizim formatlı modele uygun. Yani modeller genel anlamda bakıldığı zaman formata uyuyor. Burada kaçırması formatı bazen cevap etiketini olmadığı vs. veya cevap oranlarında nal koyabiliyor. Yani orada bizim kurduğumuz regix demek ki o etiketi bulamadı veya son cümlede o sayıyı bulamadı gibi.
+
+352
+00:55:07,827 --> 00:55:13,827
+Bazen çünkü eşittir, eşittir, eşittir veya işte anlamsız kelimeler yazıp da cevap verebiliyor model.
+
+353
+00:55:15,092 --> 00:55:25,731
+Bu tarz tutarsızlıklar da sağladığı verilerimiz oldu. Gelen anlamda bunları söyleyebilirim. Bu tabloya baktığımda. Base modelimiz MultiSFT ve CRPO.
+
+354
+00:55:25,731 --> 00:55:41,731
+SFT ve CRPO'daki başarılarımız maalesef bel modellen düşük ancak CRPO'da %25 elde ediyoruz ama MultiSFT'ye CRPO uyguladığımızda base modeli uyguladığımızdan daha iyi bir başarı elde ettiğimizi söyleyebilirim.
+
+355
+00:55:42,164 --> 00:56:10,164
+Burada şu kısım sadece boş kaldı ama onu hemen şey yapabilirim. Dediğim gibi şu an sıra geldiği için sunmak zorunda kaldım. Burada Bayes modellere baktığımızda biz burada x80'i şu şekilde kurguladık. Benzerlik oranı yani bir eksi benzerlik olarak aslında farklılığı bakmış oluyoruz. Yani şu noktada aslında bizim hem en iyi doğruluk hem de benzerlik. Bizim elimizde 45 tane çift var. Bir soru için şu an ekranda görüyoruz.
+
+356
+00:56:10,164 --> 00:56:16,704
+Gördünüz, biz modellerimizi bu en önce embedinge dönüştürüp daha sonra kosan similitisini alıp benzerliklerine baktık.
+
+357
+00:56:16,923 --> 00:56:22,184
+Yani bir sorumuzda 10 tane cevap vardı. Bu 10 tane cevabı ikillerine aldık. 45 tane noktamız var.
+
+358
+00:56:22,543 --> 00:56:28,923
+Bu noktaların birbiriyle yani aynı cevabı vermeleri, yani çiftlerin aynı cevabı vermeleri 1 olarak kabul ettik.
+
+359
+00:56:28,923 --> 00:56:32,704
+Yani eğer ikisi de aynı cevabı veriyoruz, 2'ye böldüğümüz zaman doğru cevabı 1.
+
+360
+00:56:33,003 --> 00:56:37,344
+Eğer bir tanesi farklı ise 0,5, eğer ikisi de hatalı ise 0 değerini bize üretmesini istedik.
+
+361
+00:56:38,164 --> 00:56:44,564
+Eksenimiz de bizim bu cevapların benzerlikleriyle alakalı bir durum bize gösteriyor.
+
+362
+00:56:44,903 --> 00:56:56,443
+Buraya baktığımızda CRP modülümüzün eksene bir yayılım sergilediğini, yani multi-SFT veya SFT modellerimize göre daha iyi bir yayılım sergilediğini söyleyebiliriz.
+
+363
+00:56:56,443 --> 00:57:01,184
+Ancak tamamen tabii ki de doğru cevapları bulma oranında da çok başarılı değil.
+
+364
+00:57:02,835 --> 00:57:20,695
+Burada Multi SFT başarısız olmuş. Genelde cevaplarını çok benzer üretmiş. Yani farklılık sağlayamamış. Ama doğruluğu da bilebilmiş. Burada genel olarak ezberlemiş. Ama CRPO'da daha böyle sorular arasındaki çeşitliliği sağlayabildiğini gözlemleyebildiğimizi söyleyebilirim.
+
+365
+00:57:20,695 --> 00:57:22,695
+Daha sonra...
+
+366
+00:57:23,539 --> 00:57:37,039
+Burada baktığımızda, buradayız. Tüm verilerimiz üzerinden yani elimizde bir sorudan 45 tane vardı. 500 tane test verimiz için 22.500 çiftin durumunu gözlemliyoruz.
+
+367
+00:57:43,155 --> 00:57:58,976
+Benzerliği sağlayamamış. CRPO modellerimiz yine benzerliği sağlayabilmiş. Yani çeşitliliği sağlayabilmiş. Daha fazla yayılmış. Ancak bu benzerliğin artışı bazen örneğin şurada modelin doğruluk kaybına neden olmuş.
+
+368
+00:57:59,668 --> 00:58:01,588
+olduğunu söyleyebiliriz.
+
+369
+00:58:01,588 --> 00:58:11,788
+Burada şu sol üst grafikteki captionları, çift durum var ya, onun konumu çok kötü ya.
+
+370
+00:58:12,148 --> 00:58:13,007
+Evet, haklısınız.
+
+371
+00:58:13,927 --> 00:58:16,128
+Bez modenin çeşitliliğini göremiyoruz.
+
+372
+00:58:18,128 --> 00:58:18,487
+Evet.
+
+373
+00:58:18,728 --> 00:58:20,027
+Kötü konumlanmış orası.
+
+374
+00:58:20,867 --> 00:58:22,268
+Peki, tamam devam edelim.
+
+375
+00:58:23,284 --> 00:58:51,284
+Burada bir hata olmuş. CRPO'nun genel anlamda bir halüsinasyon durumunu görebiliyoruz. Burada da aslında ben şöyle etiketlemiştik. Eğer aynıysa bir var, bir tanesi farklıysa sıfır var. Peki burada hani birebir aynıysa bir ama atıyorum on ise cevap ama birisi on, birisi beş geldi ama ortalamasını aldığım zaman doğruluk yedi buçuk geldi. Bu grafikte de aslında hani ne tarafa yönelim olabileceğini gözlemleyebilmek amacıyla böyle bir...
+
+376
+00:58:51,284 --> 00:58:53,524
+Şey, kurgulamak istedik.
+
+377
+00:58:54,744 --> 00:58:58,564
+Yani GRP'yi çeşitliliği daha fazla arttırıyor.
+
+378
+00:58:58,884 --> 00:59:00,444
+Onu görmek mümkün.
+
+379
+00:59:00,544 --> 00:59:03,264
+Multi-SFT'de çeşitliliği daraltıyor aslında.
+
+380
+00:59:03,264 --> 00:59:05,284
+Daraltıyor ama ekürüsü yakalayabiliyor.
+
+381
+00:59:07,424 --> 00:59:10,444
+Burada da genel anlamda şeye baktık.
+
+382
+00:59:10,524 --> 00:59:15,164
+Modellerin nasıl düşünebildiğini, yani o bize verdiği cevapların yeşiller.
+
+383
+00:59:16,340 --> 00:59:29,960
+O verinin hem doğru olup hem de uzaydaki konumu olarak. CRP'yi burada yine bir kümeleme gösteriyor. Multi SFT veriyi daha çok dağıtıyor ama doğru oranlarını daha fazla göze çarptırıyor.
+
+384
+00:59:30,220 --> 00:59:31,280
+Bunlar cevaplar mı?
+
+385
+00:59:31,860 --> 00:59:36,260
+Evet, bunlar cevaplı. Modelin verdiği 5000 soru için cevap durumu.
+
+386
+00:59:37,180 --> 00:59:39,160
+Soru artı cevap mı yoksa cevap mı?
+
+387
+00:59:40,660 --> 00:59:42,019
+Sadece cevap.
+
+388
+00:59:43,795 --> 00:59:47,935
+Ama yok, doğruluk kısmı yok. O metin için, o metnin uzaydaki konumu.
+
+389
+00:59:48,135 --> 00:59:55,275
+Anladım da, o metin dediğin şey soru için üretilen cevap mı yoksa soru artı cevap mı?
+
+390
+00:59:55,755 --> 00:59:57,076
+Soru için üretilen cevap.
+
+391
+00:59:57,455 --> 01:00:01,615
+Sadece cevapların şeyleri, o cevabın doğruluğu.
+
+392
+01:00:03,175 --> 01:00:07,275
+Cevap metnin uzaydaki konumunun doğru olup olmaması.
+
+393
+01:00:10,516 --> 01:00:11,636
+diye söyleyebilirim hocam.
+
+394
+01:00:11,656 --> 01:00:15,136
+CRP'yoda daha çok nokta var gibi. Öyle mi?
+
+395
+01:00:15,556 --> 01:00:20,076
+Noktalar daha kümelenmiş gözüktüğü için bana öyle geldi açıkçası.
+
+396
+01:00:20,796 --> 01:00:26,976
+Ya da diğerlerinde daha çok mu kümelenmişler? Yani daha çok üst üsteler mi? O yüzden sayısı az gibi gözüküyor.
+
+397
+01:00:28,436 --> 01:00:38,496
+O da olabilir. Evet, haklısınız. Yani belki de şu uzayda aynı konuma düşmüş ama hem doğru bir cevap hem de başka bir sorunun başka bir cevabı aynı konuma düşmüştür.
+
+398
+01:00:38,496 --> 01:00:46,456
+Orada çok daha fazla soru var gibi, cevap var gibi gözüküyor. Onun için takıldım. Peki, tamam.
+
+399
+01:00:47,315 --> 01:00:53,435
+Bizim değerlendirmeniz bu kadar aslında. Ama az önce modelim bitti. Onu da ekleyebilirim hocam eğer isterseniz.
+
+400
+01:00:53,595 --> 01:00:54,435
+Ama şu an tabii ki çıktık.
+
+401
+01:00:55,215 --> 01:00:56,675
+Ekleyip gönderirsin sonra.
+
+402
+01:00:56,755 --> 01:00:58,275
+Tamam. Çok teşekkür ederim. Kusura bakmayın.
+
+403
+01:00:58,295 --> 01:01:01,475
+Ben teşekkür ederim. Elinize sağlık.
+
+404
+01:01:01,755 --> 01:01:02,255
+Teşekkürler.
+
+405
+01:01:04,095 --> 01:01:05,455
+[öğrenci] ile devam edelim.
+
+406
+01:01:07,155 --> 01:01:08,095
+Merhaba hocam.
+
+407
+01:01:09,675 --> 01:01:10,155
+Merhaba.
+
+408
+01:01:18,739 --> 01:01:20,739
+Hocam ben de...
+
+409
+01:01:22,739 --> 01:01:26,739
+Şimdi hızlı bir şekilde arkadaşlarımın da anlattığı kısmı ara geçiyorum.
+
+410
+01:01:28,739 --> 01:01:33,739
+Ben, burada bahsettiğimiz 3 tane model var.
+
+411
+01:01:34,739 --> 01:01:40,739
+QN3 4B'yi Base olarak aldım. Base'de test durumda %42.1 başarı olanı mellettim.
+
+412
+01:01:42,960 --> 01:01:48,519
+Veri üretimi, cevap üretimi kısmında da GPTOS S120B ve DeepStick 3.2'ye...
+
+413
+01:01:48,519 --> 01:01:59,480
+[öğrenci], full ekrana geçebilir misin? Biraz daha büyüsün yazılar. Biraz daha grafik falan gösterirsin. Heh, daha iyi şimdi. Devam edebiliriz.
+
+414
+01:01:59,480 --> 01:02:06,640
+Burada bunların ikisinin arasında stil olarak çok fark yoktu. O yüzden GPTOS S120B ile devam ettim.
+
+415
+01:02:10,324 --> 01:02:23,043
+Colette'den A100 kullandım. Verisette de az önce bahsettiğim şekilde, CSM8KTR'nin 1000 adet sorsunu 42SF'le TWAIN 500'ünü de test olarak kullandım.
+
+416
+01:02:27,304 --> 01:02:33,304
+Burada yine aynı şekilde arkadaşlarım yaptığı gibi, anlamsal farklılık ve doğru hesaplamaları bu şekilde kullanıldı.
+
+417
+01:02:34,023 --> 01:02:37,223
+Burada önce genel olarak bir...
+
+418
+01:02:37,472 --> 01:02:52,772
+Sonuçları göstermek istedim. Base Model zaten klasik ilk göstermede bahsettiğim gibi. Train setinde %41, test setinde %42 doğruluk. Farklılık oranları da bu şekildeydi.
+
+419
+01:02:54,232 --> 01:02:59,792
+SFT'de hocam ilk başta GPTOS S120'lerin sentetikten gelen cevaplarını kullandım.
+
+420
+01:03:01,372 --> 01:03:03,912
+[öğrenci] bir geri gelebilir misin? Bir şey yok şu anda.
+
+421
+01:03:05,715 --> 01:03:12,855
+Bu tren farklılık, test farklılık. Bir soru için 10 tane cevap üretiyorsun, öyle mi? Evet.
+
+422
+01:03:14,175 --> 01:03:23,895
+Bu doğruluk dediğinde bu 10 tane cevaptan ortalama. Yani ikisi de doğruysa, biri doğrusu da 0.
+
+423
+01:03:31,411 --> 01:03:33,411
+Peki tamam, devam edelim.
+
+424
+01:03:34,411 --> 01:03:42,411
+Öncelikle GPTOS SES'den direkt gelen cevapları kullandığımda, burada latex formatlı geldiği için,
+
+425
+01:03:42,411 --> 01:03:49,411
+SFT sonrası bu öğretmen stiline ezberlemesi kaydı gibi diyebilirim.
+
+426
+01:03:51,411 --> 01:03:56,411
+Burada da %1.7'lik bir artış gördüm.
+
+427
+01:03:56,480 --> 01:04:14,160
+Çok yetersiz geldi. Sonra, Grand Truth, Türkçe çözümleri de kullanmıştım. Direkt veri setindeki cevapları SFT eğitimin olarak verdim. Bunun sonucunda da test seti üzerinde %16'lık bir base üzerine gelişmeyi elde ettim.
+
+428
+01:04:15,079 --> 01:04:18,280
+Bu enteresan olmuş. Güzel, tamam edelim.
+
+429
+01:04:19,000 --> 01:04:23,660
+Kullandığım hiperparametreleri görmektesiniz. Doğru kullandım ve hedef.
+
+430
+01:04:24,083 --> 01:04:28,143
+Katlamları bu şekildeydi. Learning Rate, Dropout ve Best Sense bu şekildeydi.
+
+431
+01:04:29,183 --> 01:04:35,983
+Burada da Learning Rate'te Cosign Scheduler'ı kullandım. Formal 5 ve 5 olarak her yerine.
+
+432
+01:04:37,324 --> 01:04:48,304
+SFT ile Bayes karşılaştırması. Aslında burada benim çalışmamdaki sıkıntılığın ilk gözümüze çarpan noktası.
+
+433
+01:04:48,751 --> 01:05:13,172
+Bende farklılıklar hep sıfıra doğru yaklaşıyor. Doğrulukta bir artış söz konusu fakat gördüğünüz gibi x'in de doğru olduğu line zaten biraz daha kalınlaşmış. Burada yanlış cevapların olduğu line çok uzun, burada biraz daha kısa. Fakat farklılık olarak sıfıra doğru yaklaşıyor. Yani direkt öğretmen modeli.
+
+434
+01:05:15,251 --> 01:05:19,851
+Ben gelen cevaplara yakın suyu aslında. Nedenini çok anlayamadım.
+
+435
+01:05:22,251 --> 01:05:32,051
+MultiSFT'de de hem orijinal çözümleri hem de GPTOS S'ten gelen latex formatlarını benim yapabildiğim kadar...
+
+436
+01:05:32,143 --> 01:05:34,263
+full latex halinde değil de
+
+437
+01:05:34,263 --> 01:05:36,023
+bu latexleri olabildiğince
+
+438
+01:05:36,023 --> 01:05:38,083
+elimine etmeye çalışarak
+
+439
+01:05:38,083 --> 01:05:39,883
+ama olmadı yani
+
+440
+01:05:39,883 --> 01:05:40,823
+tamam geçelim buraya
+
+441
+01:05:40,823 --> 01:05:43,643
+burada base'e göre
+
+442
+01:05:43,643 --> 01:05:45,943
+iyileşme vardı ama sft'nin normaline göre
+
+443
+01:05:45,943 --> 01:05:48,183
+daha düşük bir sonuç elde ettim
+
+444
+01:05:48,183 --> 01:05:50,283
+burada da multi sft ve
+
+445
+01:05:50,283 --> 01:05:51,683
+base karşılaştırılması var yine
+
+446
+01:05:51,683 --> 01:05:54,203
+farklılıkta sıfıra yaklaşması
+
+447
+01:05:54,203 --> 01:05:54,643
+konusu
+
+448
+01:05:54,643 --> 01:05:58,403
+grpo kullandım grpo'da da
+
+449
+01:06:01,268 --> 01:06:15,387
+Yani Reward fonksiyonunu bence daha farklı yapabilirdim. Burada Reward'da, hani Format Fonusu buna göre doğru cevap bu şeklinde cevap verdiğinde bir ödül verdim.
+
+450
+01:06:15,387 --> 01:06:24,027
+Burada belki şey ekleseydim daha iyi olabilirdi fakat bu da doğruluğu düşürebilirdi diye düşünüyorum. O da şu, işte soru...
+
+451
+01:06:24,436 --> 01:06:34,436
+Cevap çiplerinin birbirinden farkını, ne kadar farklıysa ona bir çarpan verip, bu kadar da farklı cevap üretmelerine reward verdirebilirdim.
+
+452
+01:06:34,436 --> 01:06:43,436
+Bunun da doğruluğu düşürebileceğini düşündüm. Aslında deneyebilirim fakat denemedim. Belki de o çözerdi bu sorunu.
+
+453
+01:06:43,436 --> 01:06:51,436
+Burada cevapların hepsi doğru olduğu senaryoda grup ortalaması bir.
+
+454
+01:06:51,891 --> 01:07:15,391
+Her cevap için, zaten herisi 1 olduğu için öğrenme simili sıfır oluyor burada. Yani bu iki senaryoda, 0'a 0'a 8 veya 8'de 8 senaryolarında öğrenme simili sıfır olarak görüyoruz. Burada da test doğruluğunda %45 yani Bayes'e sadece %3 kaptı verdiği GRP eğitimi.
+
+455
+01:07:16,532 --> 01:07:21,532
+Senaryo A ve senaryo B'nin oluşma olasılığına kadar bunları buraya yazmışsın ama...
+
+456
+01:07:23,532 --> 01:07:25,532
+Yani bunları buraya yazma sebebi ne?
+
+457
+01:07:26,532 --> 01:07:33,532
+Hocam, şimdi grup içi ortalamamız var.
+
+458
+01:07:34,532 --> 01:07:35,532
+Evet.
+
+459
+01:07:41,940 --> 01:07:49,719
+Her kişi doğruysa 1, cevap doğruysa 1, yalnızca 0. Format bağlantısıyla birlikte toplam maksimum 1.2 puan alabiliyor.
+
+460
+01:07:52,480 --> 01:07:59,179
+Bu noktada da aslında bunu bilgi olarak ekledim.
+
+461
+01:08:00,779 --> 01:08:08,539
+Hepsinin doğrudur cevap geliyorsa öğrenme sinyali 0'dır diye. Aslında bu yoktu. Ben son anda ekledim şurayı.
+
+462
+01:08:09,268 --> 01:08:32,987
+Niye ekledin, ulanmamadım ben. Yani ben burada bir Advantage parametresi de kullandım. Bu Advantage parametresini niye kullandım? Advantage parametresini kullanmaman diye bir şey söz konusu değil zaten, GAP'yoda. Evet. Yani sen kullanmış olamazsın onu. Harice.
+
+463
+01:08:40,115 --> 01:08:58,695
+Şunu merak ettim sadece. Yani bu senaryo A ve senaryo B'yi buraya yazdıysan, bu senaryo A'nın oluşma olasılığı şu kadar, senaryo B'nin oluşma olasılığı şu kadar, o yüzden buradan doğru düzgün öğrenmesinin yeri gelmiyor gibisinden bir açıklama beklerdim senden. Anlatabildim mi demek istediğimi?
+
+464
+01:08:58,956 --> 01:08:59,456
+Evet hocam.
+
+465
+01:08:59,475 --> 01:09:03,495
+Hepsi doğru veya hepsi yanlışsa herhangi bir şey öğrenmeyeceği yapıyor da doğru.
+
+466
+01:09:03,984 --> 01:09:15,304
+Ama bunun acaba oluşma olasılığı ne kadardı da buna böyle etki etti falan gibisinden bir şeyler beklerdim böyle bir bilgi verdikten sonra. Anlatabildim mi?
+
+467
+01:09:15,644 --> 01:09:22,604
+O bilgiyi vermedikten sonra bunu yazmanın bir manası kalmıyor. Başını verip sonunu vermiyorsun yani onu demek istiyorum.
+
+468
+01:09:22,604 --> 01:09:24,504
+Doğru söylüyorsun. Peki devam edelim.
+
+469
+01:09:24,644 --> 01:09:26,164
+Teklemedikten onu hesaplamalı bir şeyler.
+
+470
+01:09:27,463 --> 01:09:28,344
+Peki devam edelim.
+
+471
+01:09:28,895 --> 01:09:34,895
+Burada da yine Bayez'e göre çok farklı göremedim hem farklı hem doğruluğunda.
+
+472
+01:09:36,895 --> 01:09:45,895
+Ardından SFT Art, SFT üzerine GRPO denemesinde ilk başta bu hiperparometrelerle bir deneme yaptım.
+
+473
+01:09:46,895 --> 01:09:55,895
+Testte %59'luk bir benim testetimdeki bir başarıma ile yaklaştım fakat burada %...
+
+474
+01:09:57,171 --> 01:10:08,531
+İşte Base'e %20 eklem, Base üzerinde %20 bir hedefimiz vardı. Bunu nasıl elde edebilirim diye parametreleri tekrardan değiştirecek biraderinden.
+
+475
+01:10:08,531 --> 01:10:18,531
+Burada hemen SFT ve CRP'onun, SFT artı CRP'on versiyon 1'in dağılım karşılaştırmasına. Direkt versiyon 2'ye geçmek istiyorum.
+
+476
+01:10:18,655 --> 01:10:42,495
+Burada versiyon 2'de geçerken hyperpamatelerde step sayısını arttırdım. Learning Rate'i daha gizli faale getirdim. Burada da beta değerini düşürdüm. Daha gevşek hale getirdim. Bu da SFT'den daha farklı, daha uzak sonuçlar elde etmeye başladım.
+
+477
+01:10:42,543 --> 01:10:54,043
+Bunun sonucunda testte Base'in üzerine %20'yi geçmiş oldum. Yine bu şekildeydi, buranın da dağılım karşılaştırması.
+
+478
+01:10:54,043 --> 01:10:59,043
+Ama yine bahsettiğim gibi bende hep anlamsal farklılık sıfıra yaklaştı.
+
+479
+01:10:59,043 --> 01:11:05,043
+Tek bir formatı, yani öğretmen ve öğretici sitelerine doğru yakınlama şeklinde ilerledi.
+
+480
+01:11:05,043 --> 01:11:08,043
+Belki dediğim gibi GRPO'da Evoort fonksiyonuna...
+
+481
+01:11:08,180 --> 01:11:34,120
+Farklılık ödülü eklemem gerekebilirdi. MultiSFT artı GRP'a da zaten MultiSFT'nin LoRa's'ı da ölç edildi. Hiperparametrelerde de GRP versiyon 1'in default olan haliyle kullandım. Burada da Base'e göre %10'luk bir artısı sağlandı. Ama MultiSFT'ye göre çok bir ek GRP'yi göremedim burada.
+
+482
+01:11:34,804 --> 01:11:56,644
+Yani burada aslında MultiSFT'de benim hem Grand Truth hem de Latex'li format olduğu için hani burada iki farklı stil geliyor MultiSFT'den ve yorum olarak bu çift yani iki farklı stil kimliğini kıramamış model hala GT ve GPTOS S.
+
+483
+01:11:56,644 --> 01:11:59,123
+Bu yorumları sen de yazdın.
+
+484
+01:11:59,644 --> 01:12:00,603
+Evet hocam bunları beğemiyorum.
+
+485
+01:12:01,395 --> 01:12:03,395
+Peki, devam edelim.
+
+486
+01:12:05,395 --> 01:12:13,395
+Yani burada doğruluğu yine biraz arttırmış bulduk ama dediğim gibi sürekli farklılıklar, sıfır yaklaşmamız.
+
+487
+01:12:14,395 --> 01:12:21,395
+Bu da modellerin eğitim yörüngeleri hocam. Ortalama doğruluk ve farklılık skorlarının grafik üzerinde göstermesi.
+
+488
+01:12:22,395 --> 01:12:26,395
+Sol üstte doğru bir yayılım oldu benim çalışmamda.
+
+489
+01:12:29,268 --> 01:12:40,268
+Deri set üzerindeki doğruluk karşılaşması. Base %42 iken, SF-TGHK'da %62. Düz SSD'de de %58'lik bir test doğruluğu söz konusu.
+
+490
+01:12:41,268 --> 01:12:50,268
+Burada da bir korelasyon söz konusu. Korelasyondan bahsedeceğim. Pearson Ağırı skorum. Yani burada istediğimiz şu şekilde bir çizgiyle ve bunun bire yakın olmasıydı.
+
+491
+01:12:50,547 --> 01:13:00,047
+Burada güçlü, negatif bir koronansı var. Yani doğruluk artıyor fakat anlamsal fark hızlı oluyor. İsterdim ki ikisinden artsın ve Pearson R değilim, bir de yakın olsun.
+
+492
+01:13:00,047 --> 01:13:15,048
+Fakat burada 99.4'lük bir R, 3 çok güçlü bir koronansı olduğunu gösteriyor yine de. İşte burada da ideal'e nasıl gidilir?
+
+493
+01:13:15,091 --> 01:13:37,652
+Ulaştığım sonucun yanlışlığı ideal olan bir senaryo. Burada SFT'de öğretmeni taklit etmeye söz konusu olabilir diye düşündüm. GRQ'da da benim verdiğim reward'um eksikliğimden kaynaklı olarak GRQ'da da kıramadı. Bu ideal modele yaklaşım olamak neden olan şey bu olabilir diye düşündüm.
+
+494
+01:13:38,292 --> 01:14:03,672
+Doğal olarak bende Y ve X ters orantılı olarak grafiklerde şekillendi. Bu da modellerin genel olarak train testlerde Y ve X sonuçlarını karşılaştırması. Bu da Bayes'e göre farklılıkları. X ekseninde negatif yönde gidiş söz konusu bahsettiğim gibi.
+
+495
+01:14:04,500 --> 01:14:29,800
+Burada bir de şu çıkarımda bulunabilirim. Train test gap'i her modelde küçük. Yani mesela şöyle söyleyeyim. Test ve train doğruluk oranları birbirinden çok farklı değil. Bu da reward taking veya overfitting olmadığını gösteriyor bana. Bu şekilde de benim sunumumla. Bahsettiğim gibi birkaç hatam var. GPT-OSYES.
+
+496
+01:14:29,920 --> 01:14:38,180
+Belki lateksini düzeltmeyemedim. Beword'u da daha düzgün verebilirdim. Bu şekilde sağ üstte doğru bir yayın söz konusunda. Fakat benim çalışmam bu şekildeyim.
+
+497
+01:14:38,180 --> 01:14:43,640
+Peki, teşekkürler. Yapay zekalı ve yapay zekasız çözümlerin nerede?
+
+498
+01:14:44,979 --> 01:14:48,720
+Hocam, aslında biraz şöyle ilerledim ben.
+
+499
+01:14:51,283 --> 01:15:03,143
+Kendim baktım, mesela parametrelerde şu parametreleri kullanıp çalıştırayım, başarısız oldu, sonra yapay zekayı sordurum bu şekilde oldu diye. O bana beta değerini düşürmeme önerdi.
+
+500
+01:15:03,143 --> 01:15:04,703
+Kodların ne kadarını sen yazdın?
+
+501
+01:15:05,383 --> 01:15:10,103
+Hocam, %35'ini falan ben yazmışımdır.
+
+502
+01:15:10,703 --> 01:15:13,323
+Kendi yazdığın kodları açar mısın? Kendi yazdığın kısımları.
+
+503
+01:15:27,891 --> 01:15:28,452
+Hmm.
+
+504
+01:15:37,876 --> 01:15:48,876
+Hocam burada mesela Base modelinin doğruluk ve farklılık skorları söz konusu karşımızda çıkıyor.
+
+505
+01:15:48,876 --> 01:15:54,876
+Yok kodundan hata anlıyor musun? Senin yazdığın yer neresi yaparsa kendin yazdığın yer neresi onu söyle.
+
+506
+01:15:54,876 --> 01:15:58,876
+Hocam Base hesaplamasını kendim yapmaya çalıştım.
+
+507
+01:15:58,876 --> 01:15:59,876
+Neresini?
+
+508
+01:15:59,876 --> 01:16:01,876
+Yani burada Base'in...
+
+509
+01:16:04,404 --> 01:16:10,804
+Şurada görmüş olduğunuz, işte tren ve test gelen tüm koordinatlar ve hamca atlar şeklinde.
+
+510
+01:16:10,804 --> 01:16:16,944
+Burada bu kısımlarını ben yazdım. Koordinat hesabıları sayıda yaptığım yerleri.
+
+511
+01:16:16,944 --> 01:16:19,764
+Burada embrik modelim yukarıda.
+
+512
+01:16:19,764 --> 01:16:22,203
+Gerçek sayı ne demek orada?
+
+513
+01:16:27,283 --> 01:16:46,963
+Hocam, bu gelen cevap, bu da doğru cevap aslında. Yani cevaptan sayı çıkar, C. Alıyorum cevaplar içerisinden gelen cevabı. Eğer gerçek sayı eşitse, bir değilse sıfır. Şeklinde. Burada da farklılıkta da similarity diyorum. Embedding'lerin İ ve C.
+
+514
+01:16:48,644 --> 01:16:50,224
+Embedding olarak ne kullandın?
+
+515
+01:16:50,724 --> 01:16:54,283
+Embedding olarak hocam, şey kullandım. Cosmos E5.
+
+516
+01:16:54,836 --> 01:16:59,195
+Türkçe E5 Large modelini kullandım. Cümlelerden en birik çıkarmak için.
+
+517
+01:17:01,496 --> 01:17:03,796
+Peki. Teşekkürler.
+
+518
+01:17:13,363 --> 01:17:14,923
+[öğrenci] çime nedan edelim?
+
+519
+01:17:20,020 --> 01:17:21,420
+Pocörünüm.
+
+520
+01:17:25,076 --> 01:17:31,076
+Görüyor musunuz hocam eklenmem? Evet.
+
+521
+01:17:33,076 --> 01:17:42,076
+Öncelikle kullandığım modeller, ben daha küçük bir model kullandım. QWEN 2.5, 1.5 milyar parametreli.
+
+522
+01:17:42,076 --> 01:17:50,028
+Titre olarak da QWEN 3.4 milyar. Instagram adında bir model kullandım.
+
+523
+01:17:51,667 --> 01:18:02,947
+Model performanslarına gelecek olursak, burada train ve test kümelerindeki başarıları gözüküyoruz.
+
+524
+01:18:03,607 --> 01:18:15,267
+Base, train'de %6, testte %3 şeklinde çok düşük sayıla, oranına sahipten SFG.
+
+525
+01:18:17,844 --> 01:18:27,144
+Muhtesefti GRPO. GRPO kısmen biraz daha fazla ortada. Böyle sonuçlar vardı.
+
+526
+01:18:29,543 --> 01:18:38,644
+Sireyinde en yüksek muhtesefti GRPO. HES'te ise en yüksek muhtesefti verdi.
+
+527
+01:18:39,944 --> 01:18:44,444
+Bunun nedeni olarak GRPO'yu aslında
+
+528
+01:18:48,564 --> 01:19:02,444
+Sadece 4 tane soru için, 4 çeşitle eğitim. O yüzden bu biraz düşük olmuş oluyor.
+
+529
+01:19:02,444 --> 01:19:07,884
+RRP'u en gen metriği söylüyorum.
+
+530
+01:19:07,884 --> 01:19:15,324
+Ve EPOC olarak da 1 olduğu için, bilip EPOC eğitimli için biraz RRP'u.
+
+531
+01:19:16,243 --> 01:19:26,583
+İstelerinin altında kalmış olabilir. Burada Eccuris'in Vs Diverse Creme'i test ettik.
+
+532
+01:19:26,583 --> 01:19:28,963
+Multi-SFT veriklimesini nasıl oluşturdu?
+
+533
+01:19:33,843 --> 01:19:39,083
+Bir soru için 3. Teacher 3 tane cevap oluşturdu o şekilde.
+
+534
+01:19:39,083 --> 01:19:41,243
+Nasıl oldu yani? Hangi? Teacher ne?
+
+535
+01:19:41,243 --> 01:19:43,243
+Teacher buradaki...
+
+536
+01:19:43,891 --> 01:19:58,391
+Şu an 3, 4, 4 parametre, Nisan. O şekilde oluştu. Burada Echloris ve Diverse Ortalamalarını görüyorum.
+
+537
+01:19:58,391 --> 01:20:06,391
+Kirlilerin, Kirlilerin, Kirlilerin, Uluslararası için gelilen, oluşturulan SEPTeki kilimlerin hepsinin ortalamasını görüyorum.
+
+538
+01:20:06,391 --> 01:20:08,891
+Burada Diverse ve Echloris.
+
+539
+01:20:08,891 --> 01:20:10,347
+Burada kaç nokta var?
+
+540
+01:20:14,036 --> 01:20:17,036
+Hocam işte, setlikler kadar.
+
+541
+01:20:18,235 --> 01:20:21,036
+Ve tabi bunlar ikili şeklinde.
+
+542
+01:20:24,036 --> 01:20:26,036
+Yani böyle olması gerekli.
+
+543
+01:20:28,036 --> 01:20:30,036
+Setliklerin ikili şeklinde.
+
+544
+01:20:31,036 --> 01:20:34,036
+Tamam, bu grafiği oluşturan kodu açabilir misin?
+
+545
+01:20:54,036 --> 01:21:05,036
+Burası olması gerekiyor. Olması gerekiyor derken? Sen yazmadın mı bunu? Ben kendim yazmadım.
+
+546
+01:21:05,036 --> 01:21:21,036
+Yani bu modelleri falan ben seçtim her şeyi. Ben yönlendirdim. Kodu yazmadın. Kodu yazmadın. Zaten çok çocuğum yok bu hayatımda.
+
+547
+01:21:21,235 --> 01:21:23,235
+Bu kütüphanelerde o yüzden o zaman.
+
+548
+01:21:25,815 --> 01:21:27,235
+Peki, bununla.
+
+549
+01:21:27,476 --> 01:21:29,476
+Evet, tam sunuma dönebiliriz.
+
+550
+01:21:29,476 --> 01:21:39,996
+Bu zaten şey, bunun genel ortamını sonuna vereceğim için genel manzarayı. O yüzden şimdi bunu geçelim.
+
+551
+01:21:40,724 --> 01:21:50,164
+Burada da test setinde modellerin base modele göre nasıl değiştiğini gösteriyor. SFG'yi gösteriyor.
+
+552
+01:21:50,164 --> 01:22:00,964
+Multi-SFG, VRT, SFG artıyor, Multi-SFG artıyor. Mavi olan Ecurus'u gösteriyor. Base modellerin ne kadar daha iyi?
+
+553
+01:22:00,964 --> 01:22:06,964
+SFG mesela performans göstermiş. Mor olan ise çeşitliliğini gösteriyor.
+
+554
+01:22:07,347 --> 01:22:16,347
+Daha az çeşitlilik azalmış efektliydi. Base modeme göre. Accurus tabi çok daha fazla artmış.
+
+555
+01:22:16,347 --> 01:22:24,847
+Mutlu test etkide bunu çok daha fazla veriyoruz. Accurus çok fazla artmış. Ama benzer şekilde, diversity'in de çok azalmış.
+
+556
+01:22:32,564 --> 01:22:41,564
+Mühendisliği düşürdüğüm için, bu da biraz böyle oldu. Diğerleri de bu şekilde.
+
+557
+01:22:41,564 --> 01:22:58,060
+En sonunda ise bu az önce geçtiğimiz, Lighting C aslında. Teklaretle gösterilmiş hali. Şurada grü olan Base modeli gösteriyor.
+
+558
+01:22:58,292 --> 01:23:04,292
+Zaten şu aşağıda şeklinde inade ettiği modelleri anlaşılabiliyor, yenilebiliyor.
+
+559
+01:23:05,292 --> 01:23:11,292
+TrainSept'te Base modelden nasıl değişmiş yeni modeller.
+
+560
+01:23:11,292 --> 01:23:22,292
+Burada Maltsf, HCRP, Yıldız şeklinde, Ecurus'un Base modele göre yükseldiğini ama tabi da Ayurus'un azaldığını görüyor.
+
+561
+01:23:23,380 --> 01:23:27,380
+Bu şekilde. Bu test etkili de burada.
+
+562
+01:23:27,380 --> 01:23:39,380
+GRTO birazcık daha bu kısıtlı elektrikliğe rağmen yine Diversitesi'yi arttırırsa da birazcık Ecurus'yı da arttırırmış.
+
+563
+01:23:39,380 --> 01:23:49,380
+Test etkili de ise, bu test etkili daha fazla Ecurus olarak yutraçlık yönetiyor.
+
+564
+01:23:50,739 --> 01:24:10,603
+Burada mal test etkileye eklendiği zaman negatif bir etki yapmış gibi geliyor. Çünkü dediğim gibi biraz zayıf kalmış olabildi. Bu yüzden negatif etkilemiş görünüyor test etkinler. Bu şekilde benim anasını.
+
+565
+01:24:20,404 --> 01:24:24,004
+Teşekkürler, [öğrenci]. [öğrenci] ile devam edelim.
+
+566
+01:24:27,204 --> 01:24:28,944
+Merhaba hocam, şimdi açıyorum.
+
+567
+01:24:41,395 --> 01:24:43,115
+Ekran paylaşımı geldi mi hocam?
+
+568
+01:24:43,456 --> 01:24:44,036
+Geldi.
+
+569
+01:24:45,036 --> 01:24:49,195
+Tamam, tam ekran yapıp şimdi başlatıyorum.
+
+570
+01:24:53,876 --> 01:25:00,756
+Başlangıçları zaten ortak olduğu için geçiyorum. Her soru için onlara cevap edilmemizi, çiftleri hesaplamamızı istediniz.
+
+571
+01:25:04,916 --> 01:25:15,916
+Veri nasıl üretildi? Veri üretiminde sizin önerdiğiniz GPT modelini kullandım. DigitalOcean'da bir makine üzerine kurup, Agent olarak oradan cevapları aldım.
+
+572
+01:25:15,916 --> 01:25:22,604
+Burada da bir yapay zeka ile daha sonra kötü sonuç aldığımda değişim yaptık.
+
+573
+01:25:22,707 --> 01:25:39,707
+Ondan da bahsedeceğim. Burada her soru için 3 çözüm üretmesini istedim. Üretilen 3 çözümün ben yaptığımda ilk cevaplarını SFT'de, 3 cevabı da Multi-SFT'de kullandım. Daha sonra Yapay Zeka burada...
+
+574
+01:25:40,051 --> 01:25:56,511
+Bir kendi yazdığı metotla daha iyi olduğunu düşündüğü cevapları SFD'ye yansıttı. Çünkü ben yaptığımda SFD sonucu artmamıştı. Multi SFD'de bir artış vardı. O yüzden SFD'ye verilen cevapların öğrenmesi için yetersiz olabileceğini düşündü.
+
+575
+01:25:59,011 --> 01:26:02,411
+Burada da zaten benim yaptığım ve yapay zeka...
+
+576
+01:26:02,411 --> 01:26:04,031
+Peki ne yaptı yapay zeka orada?
+
+577
+01:26:07,091 --> 01:26:32,091
+Hocam şöyle, agent'a verdiğim instruction'u da değiştirdi temel olarak. Sen bir matematik sorusu çözme agent'isin, Türkçe cevap veriyorsun. Kısa adımlarla soruya ulaş ve sonunda final deyip cevabı belirt gibi bir instruction vermiştim. Ona araya birkaç cümle daha ekledi. Ara çözümleri atlama, önemli yerlere atlama gibi birkaç tane ekledi.
+
+578
+01:26:33,811 --> 01:26:46,604
+Agent'ın verdiği cevaplar da değişti aslında. Daha iyi cevaplar verip modelin öğrenmesini etkilediği gibi. Onun dışında şöyle bir şey yaptı. Orada sorunun...
+
+579
+01:26:46,836 --> 01:27:14,836
+sorunun uzunluğuna baktı. Daha iyi çözümü bulma açısından üç cevap arasında kodunda gördüğüm kadarıyla. Sorunun uzunluğuna baktı ve sorunun içerisinde cevap başka yerde geçiyor mu gibi ekstra şeyleri vardı, kontrolleri. Yani mesela işlemler yapıldı, işte cevap 160 dedi ama öncesinde başka işlemlerde o cevabı 160 diye bulup sonrasında cevap 160 diyorsa ona daha iyi bir sonuç gibi davranmış.
+
+580
+01:27:14,836 --> 01:27:23,076
+Bu tarz kontrollerden geçirdi ve SFT için datayı daha güçlendirdi.
+
+581
+01:27:24,115 --> 01:27:49,796
+Bir de SFT eğitiminde trainer'a verilen bir parametre varmış. Ben bunu koymamıştım. Bunu koymama önerdi. Bunu koymayınca SFT'nin veya multi SFT'nin soruyu da öğrenebileceğini, soruyu öğrenmemesi sadece cevabı öğrenmesi için bunun geçişmenin iyi olacağını söyledi. Bunu ekledi ve validation koymamıştım ben. Validation koydu.
+
+582
+01:27:51,347 --> 01:28:07,347
+Benim kullandığım base model QWEN 2.5 3 milyar parametreleri INSTRAC modeli. Türkçe önergeleri takip edebildi. Matematik problemi çözebildiği için ve benim kullanıldığım GPU için uygun olduğu için bunu kullandım.
+
+583
+01:28:10,347 --> 01:28:15,340
+Eğitim hiperparametrelerim bu şekilde. Bunları tek tek.
+
+584
+01:28:15,604 --> 01:28:22,384
+Söylemeye gerek yok sanırım. Genelde 512 tokenla sınırlamaya çalıştım. Süre çok uzamaması için.
+
+585
+01:28:22,644 --> 01:28:23,524
+Revit ne demek?
+
+586
+01:28:25,083 --> 01:28:25,923
+Nerede hocam?
+
+587
+01:28:26,583 --> 01:28:29,284
+Reward'ta. GRP'nun en sonunda.
+
+588
+01:28:32,104 --> 01:28:36,184
+Hocam onları aslında şurada hemen geliyorum.
+
+589
+01:28:37,444 --> 01:28:38,984
+Sen söyle ya bilmiyor musun ne olduğunu?
+
+590
+01:28:41,524 --> 01:28:57,164
+Yani cevap, kelime anlamını tam bilmiyorum. Cevap uzunluğuyla alakalı verdiğim şeyi, keyword, verdiğim ödül ve cezanın keywordu olarak açıkladım. Tam kelime Türkçe çevresini bilmiyorum.
+
+591
+01:28:58,704 --> 01:28:59,624
+Sen yapmadın yani?
+
+592
+01:29:00,684 --> 01:29:02,463
+Yok, aslında ben yaptım hocam da.
+
+593
+01:29:04,584 --> 01:29:05,624
+Nasıl yani?
+
+594
+01:29:07,028 --> 01:29:21,847
+Yani ben yaptım. Sadece şu parametre listesini hazırlatmıştım. Parametre listesinde correctness formatı görünce zaten reward'lerimi biliyorum. Cevap uzunluğuyla alakalı bir terim olduğunu düşündüm. Terimin anlamına bakmadım.
+
+595
+01:29:22,515 --> 01:29:23,956
+Terimi kim koydur ya?
+
+596
+01:29:24,355 --> 01:29:33,036
+Onu parametre listesini yapay zekaya çıkarttırdım. Sadece kodumdan parametre listesini sunuma koymak için. Sunumu onu hazırlatmıyorum.
+
+597
+01:29:33,475 --> 01:29:34,815
+Kodu sen yazdın.
+
+598
+01:29:35,895 --> 01:29:40,095
+Kendi kodumu evet hocam. Zaten çok başarılı olmadı benim kodumu. Göstereceğim birazdan sonuçlarını.
+
+599
+01:29:41,775 --> 01:29:42,376
+Peki ya.
+
+600
+01:29:45,011 --> 01:30:10,112
+Burada CRP'oda da doğru cevaba 2, yanlış cevaba 1. İstediğim sondaki final cevap, sayı cevabı formatı varsa 0-2 yoksa 0-2 veya kelime uzunluğu benim belirlediğim istediğim aralıktaysa 0-1 değilse 0-2 gibi ödül ceza sistemi oluşturdum.
+
+601
+01:30:16,467 --> 01:30:22,727
+Burada, şurada bir format hatası olmuş herhalde. Şeyyi üretememiş.
+
+602
+01:30:23,607 --> 01:30:25,347
+Font hatası.
+
+603
+01:30:27,347 --> 01:30:31,487
+Modeller oluşturduktan sonra cevapları nasıl oluşturdu? Aslında onu göstermek istedim.
+
+604
+01:30:31,487 --> 01:30:33,787
+Buraya geçebiliriz.
+
+605
+01:30:36,275 --> 01:30:53,275
+Sonuçlar, sol taraftakiler ilk benim pipeline'im. Sağdakiler de geliştirilmiş. Burada base tarafında da değişiklik var. Base tarafında değişiklik olmasının nedeni şu, pipeline'i en baştan aslında data oluşturma kısmından değiştirmeye başladığım için...
+
+606
+01:30:54,836 --> 01:31:11,536
+Agent'ın cevap verdiği sorular ve testi kullandığım sorular da değişti. Biraz daha zor sorular denk geldi sanırım buradaki test kısmına. Çünkü Bayes'in performansı %40'a %39 iken burada 38'e 30 gibi bir düşüş yaşandı test dataset'inde.
+
+607
+01:31:22,836 --> 01:31:43,476
+Trenin Dataseti'nin öğrendi model ama testi cevap veremedi. Yapılan iyileştirmelerde yine Trenin Dataseti testi göre yüksek ama burada dediğim gibi hani base'de de bir 38'den 30'a düşüş olduğu için
+
+608
+01:31:44,851 --> 01:31:55,231
+Zor sorular denk gelmiş gibi düşünüyorum ben testa testesine. O yüzden düşüş yaşanmasını normal biliyorum ama bu kadar fazla düşüş yaşanmaması.
+
+609
+01:31:55,372 --> 01:31:57,452
+Burada bir overfit mevzusu var yani.
+
+610
+01:31:57,452 --> 01:32:12,752
+Burada bir early stopping koydu, validation da koydu. Aslında en iyi checkpoint'i alıp o checkpoint üzerinden testleri yaptık. Ama dediğim gibi hani bir zorluk farkı da var ama.
+
+611
+01:32:12,851 --> 01:32:35,172
+Bu kadar da fark olmaması gerektiğini düşünüyorum. Ama CRPO'da açıkçası ne Safari'nin ne de SFT veya Multi SFT'nin üstüne koyduğumda bir artış göremedim. Hatta düşüş bile, tren tarafında düşüş bile yaşandığı oldu. Hatta testede 43'den 42'ye gibi düşüşler yaşandığını gördüm.
+
+612
+01:32:39,956 --> 01:32:45,956
+Doğruluğu çiftlerin ortalaması üzerinden model bazlı göstermek istedim.
+
+613
+01:32:47,956 --> 01:32:50,956
+Burada bu ilk...
+
+614
+01:32:51,956 --> 01:32:55,956
+Bir saniye, arada bir... Başlık yanlış kalmış sanırım. Evet.
+
+615
+01:32:55,956 --> 01:33:00,956
+Bu ilk benim yaptığım pipeline'da şu gri olan Base.
+
+616
+01:33:01,619 --> 01:33:29,619
+Doğruluğu 0.4'e yakın, benzerliği de 0.3'e yakın. Benzerlikte artış gördüm bütün modellerinde. Doğrulukta da train kısmında zaten off-fitten dolayı bir artış vardı. Özellikle multi-sft'de. Test kısmında bir artış yoktu zaten. Az önce tabloda da gösterdim. Benzerlik konusunda model belirli bir formatı öğrendiği için sanırım cevapları birbirine daha benzerli.
+
+617
+01:33:29,619 --> 01:33:49,699
+Benzer çıkmaya başladı. Benzerlik artışı oldu. Bu da ikinci yapay zekanın dokunuşlarından sonra. Bu grafikte hem testte hem trende bir doğruluk kısmında artış görülüyor. Benzerlik kısmında da yine aynı şekilde öğrenen modellerin.
+
+618
+01:33:50,015 --> 01:34:04,595
+verdiği cevapların birbirine daha benzer olduğunu gördüm. Burada benzerlikte ben şey kullandım. İsmini yanlış söylemeyeyim. Jakart olması lazım. Cevaptaki soru işareti noktalama işaretleri.
+
+619
+01:34:06,547 --> 01:34:23,867
+Newline'ları falan kaldırıp kalan kelimeler üzerinden ne kadar benzerlik var. Bunu ölçmeye çalıştım. Anlamsal bir benzerlik değil. Belki farklı bir metrikle bakılırsa daha farklı bir sonuçta çıkılabilir anlamsal olarak. Anlatacaklarım bu kadardı hocam.
+
+620
+01:34:25,087 --> 01:34:26,087
+Teşekkürler [öğrenci].
+
+621
+01:34:27,027 --> 01:34:27,827
+Teşekkür ederim.
+
+622
+01:34:37,076 --> 01:34:38,735
+[öğrenci]'la devam edelim.
+
+623
+01:34:40,255 --> 01:34:41,855
+Tamamdır hocam, paylaşıyorum.
+
+624
+01:34:50,228 --> 01:34:51,228
+Ekran plajı şükür.
+
+625
+01:34:56,884 --> 01:35:22,044
+Gelmiştir sanırım. Evet geldi. Tamamdır. Ben de bu çalışmada şöyle başa geleceğim. Ben sft, multi sft, grpo ve sft artı grpo yapabildim. Multi sft artı grpo yapamadım.
+
+626
+01:35:22,975 --> 01:35:37,975
+Ona vaktimi, kaynağım yetmedi. Direkt sonuçlardan başlayayım aslında. Bir de ne yaptığımı, nasıl verikmesini böldüğümü önce bir ondan bahsedeyim. Multisft için her bir soru başına 5 adet cevap ürettirip...
+
+627
+01:35:38,112 --> 01:35:52,192
+Bunlardan sample alarak ilerledim. Bu SFT için sample'ları şöyle düşündüm. Doğruluk üzerinden gitmeye çalıştım. Yani şöyle aslında bir model, bir cevap üretiyor.
+
+628
+01:35:54,836 --> 01:36:12,836
+Kare kare sonunda da bir cevap ürettirdim. Onu da gerçek database'deki cevapla kıyasladım. Yani OSS'nin ürettiği cevaplar gerçekten doğru mu? Aslında onu anlamaya çalıştım. O doğru olanlar üzerinden sample almaya çalıştım ki birazcık aslında eğitimin bir anlamı olsun, yanlışları almasın diye öyle bir veri küçültmesi yaptım.
+
+629
+01:36:13,636 --> 01:36:20,556
+Yaklaşık 500 satırlık bir veri kümem olmuş oldu Trey'in tarafında her ikisi için de.
+
+630
+01:36:21,203 --> 01:36:26,803
+Grpo'daysa böyle bir ayrım yapmadım. Orada şeyin yani revert fonksiyonu...
+
+631
+01:36:26,803 --> 01:36:28,643
+Eğitim tümende kaç soru vardı?
+
+632
+01:36:29,803 --> 01:36:30,663
+500 hocam.
+
+633
+01:36:31,363 --> 01:36:32,423
+500 soru aldın.
+
+634
+01:36:32,583 --> 01:36:33,763
+1000 yapmadım ben evet.
+
+635
+01:36:34,783 --> 01:36:38,763
+Yok yok soruyorum merak ettim şimdi. 500 tane soru vardı. Yaklaşık 2000 soru içeriye.
+
+636
+01:36:38,763 --> 01:36:40,143
+Sen falan bilenlendi.
+
+637
+01:36:40,843 --> 01:36:41,643
+Yani bir şey demeye çalışıyorum.
+
+638
+01:36:43,380 --> 01:36:49,960
+Anladın mı? Filtreleme öncesi ve sonrası değerler ne oldu? Öncesinde 5 tane aldın, 2500'e çıktı. Doğru mu anlıyorum?
+
+639
+01:36:50,140 --> 01:36:50,940
+Evet.
+
+640
+01:36:51,260 --> 01:36:55,500
+Multi-SFT'de. Sonra oradan yanlışları el edin. Kaça indi?
+
+641
+01:36:57,560 --> 01:37:04,159
+Şurada bir tam sayılarım olması lazım. Şuraya bir yere yazmıştım.
+
+642
+01:37:04,543 --> 01:37:16,444
+1541 örnek varmış. Sft data da. 400 küsür eğitim için almışım. 100 küsür de Evaluation için almışım. Yine multi sft de 7740 tane üretilmiş. Burada da yine.
+
+643
+01:37:16,444 --> 01:37:26,244
+Bir dakika anlamadım. Sft de doğru cevap ön sahip 1544'ten seçilen 400 eğitim ve multi sft de.
+
+644
+01:37:26,707 --> 01:37:30,167
+Daha fazla etmeniz sağ, toprağın doğru çözüm seçen yaklaşık 470.
+
+645
+01:37:30,167 --> 01:37:49,647
+Yani 2000 soru için aslında 5 farklı cevap üretiyorum ya, 10 bin küsur oluyor. Onların da aslında doğrularını elemeye çalıştım. Bu 7740 dediğim şeydi. Aslında bu kaynaktaki doğruyla gerçekten bu OSS'in ürettirdiği son bu karelerin belli bir format belirledim. Oraya da bir sayı yaz dedim.
+
+646
+01:37:49,647 --> 01:37:50,467
+Doğru cevap oraya.
+
+647
+01:37:50,467 --> 01:37:54,687
+Anladın da şeyi anlayamadım. Şimdi SFT data'nın büyüklüğü 400 eğitim.
+
+648
+01:37:54,707 --> 01:37:56,007
+Büyük bir.
+
+649
+01:37:56,167 --> 01:37:57,947
+Multi SFT'nin de büyüklüğü dört seyitim.
+
+650
+01:38:00,227 --> 01:38:13,847
+Evet. Ben yani Multi SFT için de sample seçerek ilerledim aslında. Daha az soru üzerinden gitmiş oldum ama sample sayısı yani şey gibi bir soruya işte üç farklı ya da iki farklı soru gibi gelmiş oldu.
+
+651
+01:38:15,380 --> 01:38:20,340
+Biraz kaynak kısıtım vardı hocam. O yüzden çok doğru bir şey yaptığımı düşünmüyorum ama.
+
+652
+01:38:20,700 --> 01:38:22,340
+Tamam, devam edelim.
+
+653
+01:38:22,340 --> 01:38:26,060
+Çok iyi değil sonuçları. Ama sonuçları göstereyim yine de.
+
+654
+01:38:26,159 --> 01:38:33,880
+Hayır, örnek sayıların çok az. Yani bu kadar az bir eğitimle bir şey yapmak mümkün olmaz pek de onun için sordum.
+
+655
+01:38:34,547 --> 01:38:47,547
+Evet, haklısın. Zaten bir ara collab almak durumunda kaldım falan. Orası birazcık şey oldu. Base modelimin sonuçları %7'lerdeyken, GRP'ye uyguladığımda %13'lere çıktı. Bu birazcık...
+
+656
+01:38:48,372 --> 01:39:09,311
+Sadece SFT yaptığımda %22'lere çıktı. O yüzden buradan bu yöntemden devam edebilirim gibi düşünüyorum. Önce bir SFT uyguladım. %22'ye çıkınca dedim üzerine CRPO'da yaparsam belki iyi bir sonuç verebilir. %20 barajını aşarım gibi geldi. Ama reward fonksiyonumda aslında birazcık tuzağa düşmüş gibi oldu. Şöyle bir reward fonksiyonum var.
+
+657
+01:39:11,132 --> 01:39:12,752
+Bu grafikleri sen mi hazırladın?
+
+658
+01:39:15,296 --> 01:39:21,676
+Bunu ben hazırladım da hocam, şunları bu değişimi göstermek için Cemina'ya sordum. Çok da güzel göstermedi ama.
+
+659
+01:39:24,155 --> 01:39:29,676
+Yani yine nispeten çeşitliliği var ama doğruluk kısmı biraz şeydi.
+
+660
+01:39:32,176 --> 01:39:33,496
+Sıkıntıda.
+
+661
+01:39:35,296 --> 01:39:37,096
+Şu şeyi göstermek istiyordum.
+
+662
+01:39:39,412 --> 01:40:00,851
+Reward fonksiyonunda ne yaptım? Şimdi doğruluk ölçümünde şöyle bir şey. Bu gerçek cevapları bir kaydettiğim için onlar arasında bir, daha doğrusu şöyle diyeyim, bu onlu cevaplarda ikisi arasında doğruluğa bakıyorum. Grand Truth ile kıyaslıyorum zaten oradaki şeyi, modelin çıkardığını.
+
+663
+01:40:02,547 --> 01:40:21,107
+Bu çeşitlilikte ise ruj denilen bir yöntem buldum. Bu da engramlar üzerinden gidiyor. Ama şey yapıyor, en uzun tekrar eden şeyi buluyor, sekansı buluyor metinlerde. Ne kadar benzer oradan bir değer hesaplamaya çalışıyor aslında. Böyle bir yöntem varmış.
+
+664
+01:40:21,227 --> 01:40:22,907
+Bilgisayar Mühendisliği neye benzer olduğunu biliyor bu?
+
+665
+01:40:23,727 --> 01:40:28,407
+Yani bu iki cevap arasındaki benzer sekanslar var mı? En uzun ne kadar var?
+
+666
+01:40:28,851 --> 01:40:36,952
+Onu çıkarmaya çalışıyor. Aslında benzerlikten, embeddinglerden gidebilirdim ama böyle bir yöntem görünce bunu denemek istedim. Tiveristy anlamında.
+
+667
+01:40:37,648 --> 01:40:51,847
+Revert fonksiyonundaysa format kısmını da kullandım. Burada benim modelimin GRPO'nun bence kolaya kaçma sıkıntısı şuydu. Format çoğunlukla yakalanıyorsa bir süre sonra mantığını bırakıp doğruluğu bırakıp formattan puan almaya çalıştı.
+
+668
+01:40:51,847 --> 01:41:05,648
+Ve bu SFD'deki aslında %23'lere çıkmıştı değer ama o %23'leri de biraz ezdi gibi. Yani öyle bir beta değeri belirlemişim ki hani biraz hızlı güncelleme yaptı ve buradaki öğrendiği şeyi kaçırdı gibi hissediyordum.
+
+669
+01:41:05,648 --> 01:41:25,207
+Sonrasında tekrar düzeltip çalıştırma şeyim çok olmadı. %20'yi geçebilirdi aslında buradaki kısım bence ama birazcık uzun çalışan bir ödev olduğu için hocam çok vakit ayıramadım. Bayrama denk geldi. O yüzden sonuçlarım böyle kötü aslında. Çok mutlu değilim bu sonuçlardan.
+
+670
+01:41:26,068 --> 01:41:35,708
+Ama multi SFD'de %9 oranında. Zaten elimdeki veri çok az olduğu için dediğiniz gibi ben zaten çok bir şey beklemiyordum. Bu SFD'nin %22'ye çıkartması bile benim için bir başarıydı yani.
+
+671
+01:41:37,140 --> 01:41:54,360
+Bu ödevde bunları denemiş oldum diyeyim ama çok da iyi bir yere gitti gibi değil. Sadece GRPO eklenince belli örneklerde bu istediğimiz alana çıkmış gibi ama bu da çok bir şey ifade etmiyor. Ortalamada sonuçta aşağılarda kalıyorlar. Bu sağ tarafa çok çıkamadım.
+
+672
+01:41:56,220 --> 01:41:57,280
+Burada kaç nokta var?
+
+673
+01:41:58,515 --> 01:42:13,155
+Burada 20 küsur soruyla test ettiğimde gösterebilmek için bunları bir göstermeye çalışıyorum. Ya 20 nokta olması lazım ya da 10 nokta falan olması lazım bu son testimde. Baya bir şey denedim. Burada 10 olması lazım.
+
+674
+01:42:14,155 --> 01:42:16,055
+Burada 10'dan fazla nokta var.
+
+675
+01:42:17,055 --> 01:42:24,155
+Bu Bayes, SFT ve SFT, GRP olduğu için biraz sanki şey gözüküyor ama 30'u geçmiyordur hocam.
+
+676
+01:42:24,564 --> 01:42:26,923
+Maksimum testlerde gösterebilmek için.
+
+677
+01:42:28,904 --> 01:42:31,624
+Tamam, peki yapay zeka kullanımı hakkında gideceğim.
+
+678
+01:42:32,744 --> 01:42:38,624
+Yapay zeka kullanımı genel olarak şu mesela ruju kodlama kısmında ondan faydalandım.
+
+679
+01:42:40,244 --> 01:42:46,164
+Onun dışında bu GRP'yoyu birazcık işleme kısmında diyeyim.
+
+680
+01:42:46,344 --> 01:42:50,963
+Hani SFD'yi daha önce yapmıştım ama GRP'yoda çok bir deneyimim yoktu.
+
+681
+01:42:51,359 --> 01:43:01,519
+Buradaki reward fonksiyonunda niye böyle olduğunu biraz çözmeye çalıştım ama bu CRP'ye çok kötü çıkınca, SFT'yi kötüleştirince oralarda faydalandım.
+
+682
+01:43:01,919 --> 01:43:10,459
+Dediği şeyler diyor ki, ceza vermeye çalış falan, ödül alıyor kısa yoldan. Bu literatürde de karşılaşılan bir problem.
+
+683
+01:43:11,239 --> 01:43:17,759
+Keşke format koymasaydın falan dedi ama çalıştıracak şeyim kalmadı. Vaktim o yüzden önerilerine de pek uyamadım yani.
+
+684
+01:43:20,884 --> 01:43:21,824
+Peki, [öğrenci].
+
+685
+01:43:22,564 --> 01:43:24,064
+Böyle, çok teşekkür ederim.
+
+686
+01:43:24,503 --> 01:43:25,544
+Git almayayım daha fazla.
+
+687
+01:43:28,544 --> 01:43:29,503
+Dur, dur.
+
+688
+01:43:33,427 --> 01:43:35,467
+[öğrenci]'ye devam edelim.
+
+689
+01:43:42,579 --> 01:43:44,180
+Olur hocam. Sesim geliyor mu?
+
+690
+01:43:45,479 --> 01:43:45,939
+Geliyor.
+
+691
+01:43:46,859 --> 01:43:47,979
+Ekran paylaşımı yapayım.
+
+692
+01:43:57,716 --> 01:43:58,916
+Geldim hocam ekranım.
+
+693
+01:44:01,416 --> 01:44:02,116
+Geldim.
+
+694
+01:44:05,684 --> 01:44:20,563
+Hemen hızlıca başlıyorum hocam. Ödevle alakalı doğruluk, farklılık bakacağız zaten. Bunları biliyoruz. Veri kümemiz 1000'e 500 olarak aldım. Dataset zaten bu. Model bu.
+
+695
+01:44:21,108 --> 01:44:35,712
+Burada hocam şöyle bir şey var. Ben veri üretimi için, multi-SFT için GPT, OSS'i kullandım ama şöyle bir şey vardı genel olarak. Onu da söylemek istiyorum. Birkaç arkadaşımız da kısmen bahsetti ama...
+
+696
+01:44:35,712 --> 01:45:03,692
+Şimdi bizim normal veri kümemizde benim gördüğüm kadarıyla hatalı olan cevaplar vardı. Yani sorun cevabı yanlış. Dolayısıyla burada bir problem çıkıyor. Sonuçlarda bir problem çıkıyordu. Sonuç olarak buradaki cevapları, sondaki verdiği cevabı doğrulukta baz alıyoruz. Yanlış olunca da aslında biz doğru yapsak bile yanlış deme durumu olabiliyor. Ondan dolayı hocam ben burada zaten bunu bu modelle şey üretirken, train'de üretirken.
+
+697
+01:45:03,712 --> 01:45:07,252
+Tekrardan cevap üretirken fark ettim.
+
+698
+01:45:07,731 --> 01:45:33,932
+Hatta GPT-OSS' de farklı yanlış cevaplar bazen üretebiliyordu. Ondan dolayı hocam burada bir temizleme yaptım. Yani yanlışları tespit ettim. Yani mesela bununla şurası uyuşmuyorsa onları bir aldım. Baktım, farklı bir eleleme de sordum. İşte Cloud'a, Gemini'ye vs. Sonuç olaraktan cevapların doğru olacağını garanti etmeye çalıştım. Yani mümkün mertebe. Bu şekilde bir temizlik yaptım, onu söyleyeyim.
+
+699
+01:45:36,051 --> 01:45:56,331
+Cevap üretme promptum da bu şekilde. Genel olarak da modellere bunu verip hepsinde cevap istedim. Yani soru bu. Şöyle bir cevap ver bana dedim. Zaten SFT eğitimlerinde vs. de bu formatı kullandım. Yani soru bu. Cevabı da verdim orada. Eğitim de bu şekilde yaptım. Onu birazdan gelirim zaten.
+
+700
+01:46:04,051 --> 01:46:06,031
+Betray'in de yapmış olduğu doğruluk.
+
+701
+01:46:06,644 --> 01:46:32,224
+Bunlar veri temizlendikten sonraki skorlar bu arada. Yani daha önceden daha kötü çıkmıştı. Ondan sonra üzerinden tekrar denedim. Bu şekilde bir sonuç alalım. Aslında hiç eğitim yapmadan bilene fena bir sonuç vermedi. Farklılık düşük genel olarak. Düşük derken farklılık da bu şekilde. Farklılığı da Cosign similarity'den biri çıkartarak buluyorum. Embedding modellerini de Turkish E5 Large ile çıkartıyorum.
+
+702
+01:46:34,452 --> 01:46:35,892
+Şöyle devam edeyim.
+
+703
+01:46:35,892 --> 01:46:38,212
+Bu 10'da 10 doğrular neydi?
+
+704
+01:46:38,212 --> 01:46:39,652
+Hangisinde hocam?
+
+705
+01:46:39,652 --> 01:46:41,811
+10'da söyleyeyim.
+
+706
+01:46:41,811 --> 01:46:46,292
+10 çiftimiz var ya, bir soru için 10 cevap daha doğrusu.
+
+707
+01:46:46,292 --> 01:46:51,412
+Burada 10'da 10 ise 10'da 10, hiç bilemediyse de bu rakamlar burada hocam.
+
+708
+01:46:51,412 --> 01:46:52,932
+Kaç soru üzerinde o?
+
+709
+01:46:52,932 --> 01:46:57,492
+Her soru için. Her soru için 10 cevap öğretiyoruz ya.
+
+710
+01:46:57,492 --> 01:46:59,492
+Hayır, 180.
+
+711
+01:46:59,667 --> 01:47:14,187
+Onun da doğru olduğu 181 soru var. Doğru mu? Evet. Kaç sorudan 181? Testte hocam 500 sorum vardı. Trende de 1000.
+
+712
+01:47:15,007 --> 01:47:25,187
+İşte bak şimdi öyle yapınca oranlar sanki böyle farklıymış gibi gözüküyor da yani hani onları oransal olarak yazsan daha iyi olmaz mıydı? Anlatabildim mi demek istediğimi?
+
+713
+01:47:26,068 --> 01:47:39,248
+Anladım. Burada sanki çok daha fazlaymış gibi değil mi? Onu demeye çalışıyorum. Aslında benzerler yani. Evet, devam edelim.
+
+714
+01:47:42,579 --> 01:48:04,359
+Görsel de bu şekilde hocam. Testin, train'in görseli. Bu görseli genel olarak bu şekilde kullandım. Sağ tarafta işte bir sıcaklık var şeyim var. Yukarı doğru çıktı. Sarıya doğru gittikçe örnek sayımız arttığını gösteriyor. X ekseni farklılık, Y ekseni doğruluk şeklinde. Genel olarak bu şekilde grafiğimiz. Yani test ve train'in base de bu şekilde.
+
+715
+01:48:06,355 --> 01:48:09,395
+SFT eğitimine gelecek olursak, SFT zaten söyledim az önce.
+
+716
+01:48:10,496 --> 01:48:11,815
+Moraları hızlı geçebiliriz.
+
+717
+01:48:12,136 --> 01:48:18,956
+Her bir soru için bir tane üretiyorum vs. O şekilde eğitim yaptım. Hyper-Honetlerim bunlar. Aldığım sonuçta bu şekilde.
+
+718
+01:48:19,115 --> 01:48:31,376
+SFT'de şöyle bir sonuç aldım. Doğrulukta %6 gibi bir artışım var. Farklılık düştü. Biraz düştü. Bunlar da zaten şu kadar, 181 iken.
+
+719
+01:48:31,891 --> 01:48:48,771
+284 çıktı. Bu da test kümesinde bu arada, testin sonucu. Yani bu şekilde bir artış var. Bunun görseli de burada. Zaten bir de sarılar biraz daha artmış burada. SFT görselimizde test için bu şekilde farklılık biraz daha düştü.
+
+720
+01:48:49,492 --> 01:49:11,572
+Gelelim GRP-O eğitimine. Burada da zaten mantık, ödül ceza yöntemi. Final sorusu, final satırı varsa ödül veriyoruz. Tam doğruysa ödül veriyoruz. Yanlışsa ceza veriyoruz vs. Bunda hyperparametreleri bu şekilde. Aldığım sonuç da bu şekilde. Burada hocam GRP-O eğitiminde benim yapmış olduğum deneylerde ben doğruluğu arttıramadım.
+
+721
+01:49:11,887 --> 01:49:14,427
+Genel olarak farklılık da değişmedi.
+
+722
+01:49:15,628 --> 01:49:17,408
+Çok da bir şey olmadı yani diyorsun.
+
+723
+01:49:17,467 --> 01:49:21,507
+Hiçbir şey hemen hemen olmadı hocam genel olarak. Birazdan yine şeyde eklemeleri de göstereceğim.
+
+724
+01:49:21,967 --> 01:49:29,807
+CRP şeyleri falan değiştirdim, hyperparametreleri. Ödül ceza yönetimini biraz değiştirdim ama gene de CRP o da nedense ben bir farklılık göremedim.
+
+725
+01:49:31,068 --> 01:49:32,068
+Bunu da grafiği...
+
+726
+01:49:32,068 --> 01:49:36,927
+Yani belki o number of generation'ı falan arttırabilirdim belki. 4 yapmışsın.
+
+727
+01:49:37,128 --> 01:49:37,788
+Ha evet.
+
+728
+01:49:38,644 --> 01:49:47,224
+Bu da sistem zaten çok uzun sürdü. Günlerce zaten bilgisayar açık kaldı bu eğitimlerde. Onu arttırmadım yani hiç.
+
+729
+01:49:47,224 --> 01:49:48,003
+Tamam.
+
+730
+01:49:48,003 --> 01:50:00,000
+Bu da bu grafik hocam. GRPO'nun test görseli. Gelelim SFT artı GRPO'ya. Bu da hocam mesela GRPO...
+
+731
+01:50:00,000 --> 01:50:10,619
+O geldikten sonra biraz da SFT'nin kendi doğruluğu bile düştü. Farklılık da değişmedi hemen hemen. Yani GRP'ye biraz etkisiz eleman gibi kaldı diye söyleyebilirim.
+
+732
+01:50:10,707 --> 01:50:30,068
+Tamam. Bu da gene grafiğimiz. Maltsft'e gelecek olursak, burada da ben bir soruya üç cevap ürettim. Bu cevapları da farklı farklı ürettirmesini sağladım. Mümkün verdiği kısa işlemli olsun, ayrıntılı adım, işte alternatif denklem çözümleri vs. diye promptu o şekilde verdim. Öyle üretti. Onların doğrultularını da kontrol ettim. Hepsinin final cevabı aynı olacak vs.
+
+733
+01:50:32,500 --> 01:50:48,460
+Bu doğruluk gördüğünüz gibi SFT'den bir tık düşük alıyor. Arttı biraz Beyize göre ama SFT kadar artmadı. Ama farklılık arttı biraz. Farklılığımız biraz arttı. Doğruluk bu şekilde. Yani ben buradan multi SFT doğruluğu arttırmadı. Onu çıkarttım.
+
+734
+01:50:48,460 --> 01:50:54,380
+Yani SFT'de kaç soruyla eğitim yapıyordun? Kaç örnekte eğitim yapıyordun? Multi SFT'de kaç?
+
+735
+01:50:54,899 --> 01:50:56,779
+Bire birdi SFT'de. Burada bire üç.
+
+736
+01:50:57,939 --> 01:51:01,139
+Yani 3 katı eğitim var aslında onun üstünde. Doğru mu?
+
+737
+01:51:01,239 --> 01:51:08,000
+Evet. Ama hocam, doğruluğa etkisi bunun kadar olmadı. Farklılığı arttırdı, evet.
+
+738
+01:51:08,199 --> 01:51:11,500
+Yok, anladım. Ben sadece anlamak için soruyorum ne olduğunu.
+
+739
+01:51:12,439 --> 01:51:17,159
+Evet, BASE'e göre arttırmış ama düz SFT'ye göre arttırmış. Bu tek farklılığı arttırmış.
+
+740
+01:51:17,699 --> 01:51:19,039
+Peki, tamam.
+
+741
+01:51:19,679 --> 01:51:23,799
+Bunun grafiği de bu şekilde hocam. Farklılık biraz daha arttı. Bu şekilde gösterebilirim.
+
+742
+01:51:24,724 --> 01:51:37,504
+GRP'yi ekleyince de hocam, yine şöyle zaten değişmedi. Gerçekten etkisi eleman gibi. Onun da grafiği bu şekilde. Toplu sonuçlara baktığımız zaman da şöyle bir sonuçlarım var.
+
+743
+01:51:38,003 --> 01:52:05,743
+Farklı vesaire. Toplu olaraktan da grafiklerimiz, görsellerimiz bu şekilde. Maltsift'de biraz daha farklılık artmış vesaire. Bunları görebiliyoruz. Bir örnek vereyim hocam nitel olarak. Hiçbir modelin yapamadığı bir soru bulmak istedim. Acaba niye yapamıyorlar, nerelerde sıkıntı yaşıyorlar diye. Şöyle bir soru var. 42 elma var. Fabrike 12 kasa geldi. 4 elma çürük. Yani burada şöyle bir şey var. Mesela soru bu şekilde hocam.
+
+744
+01:52:06,003 --> 01:52:32,203
+42 elma var. Her kasada 12 kasamız var. Burada çözümü mesela, SFT'nin çözümünü buraya aldım. Şu kasayı S geçmiş. Yani o kasayla elma arasında bağlantı kuramamış. Yani her bir kasada 42 elma olacağını 12 çarpı 42 yapmamış. Direkt 42'den 4'ü çıkartmış. O şekilde sonuca gitmiş. Buradan da şu çıkıyor aslında. Küçük bir model olduğu için bağlamsal olarak, anlamsal olarak şuraları anlayamıyor.
+
+745
+01:52:32,787 --> 01:52:40,387
+Biz ne kadar eğitim yapsak da şu eğitimleri vs. bu tarz böyle anlamsal şeylerde sıkıntı yaşıyor diye düşündüm ben.
+
+746
+01:52:40,387 --> 01:52:50,387
+Sonuçlarım zaten bu şekilde en yüksek. Bir de şöyle bir şey gösterseydin ya hani base çözemiyor ama işte sft çözebildi falan.
+
+747
+01:52:50,387 --> 01:52:53,387
+Öyle bir şey diyor.
+
+748
+01:52:53,587 --> 01:52:57,767
+Uzatmamak istiyorum. Onu sunumu almadım. Bir tane oluşturmuştum.
+
+749
+01:52:58,247 --> 01:53:03,987
+Anladım, anladım da. Şu modelin yapamadığı soru güzel bu. Bence iyi olmuş böyle bir şey koyman da.
+
+750
+01:53:03,987 --> 01:53:15,287
+Bir de işe yarayan bir şey. Yapılan bu eğitim işe yaradı gibi bir şey görebileceğimiz bir örnekle koysaydın.
+
+751
+01:53:15,707 --> 01:53:18,187
+Peki, tamam. Son sözlerini söyle.
+
+752
+01:53:18,996 --> 01:53:43,435
+Ben genel olarak bunları söyledim hocam. Yapay zeka tarafındaki karşılaştırmada da yapay zekayı ben sonradan hiç böyle şey yapmadan, karışmadan da böyle eğitimleri falan yap dedim. Hızlı hızlı böyle prompt vererek. Benim test kümesinde o fark ettiğim şeyleri falan fark edemedi. Dolayısıyla yanlışları da aldı aslında. Yani kontrol mekanizması yanlış olduğu için doğruluklar baya bir düştü.
+
+753
+01:53:43,988 --> 01:54:08,967
+Hyperparametre optimizasyonu da çok fazla yoktu. Ben birkaç denemeler yaptım. Hyperparametreleri bu şekildeydi. GRPO'da mesela maksimum token sayısını 256 olarak bırakmış. Ben bunu 384'e çıkarttım. Çünkü şurada final cevap eksikliği fark etmiştim. Mesela orada 305'miş, benimkinde 118. O da etkilemiş olabilir sonucu. Genel olarak böyle hocam. Teşekkürler.
+
+754
+01:54:09,728 --> 01:54:10,927
+Ben teşekkür ederim.
+
+755
+01:54:14,228 --> 01:54:18,228
+Evet. Şimdi...
+
+756
+01:54:18,228 --> 01:54:19,228
+[öğrenci].
+
+757
+01:54:20,228 --> 01:54:22,228
+Olan bir de [öğrenci].
+
+758
+01:54:23,228 --> 01:54:24,228
+[öğrenci].
+
+759
+01:54:24,228 --> 01:54:26,228
+Yes, hocam. Just one little.
+
+760
+01:54:27,228 --> 01:54:28,228
+Okay.
+
+761
+01:55:02,868 --> 01:55:04,547
+Sorry, my laptop is hanging.
+
+762
+01:55:24,851 --> 01:55:26,851
+Önce, bu konuyu örneklerle anlatacağım.
+
+763
+01:55:26,851 --> 01:55:32,851
+Evet. Sincereli Hoca, bu konuyu bu konuyu çok fazla çalışmalar.
+
+764
+01:55:32,851 --> 01:55:40,851
+Bir problemiyle alakalı bir konuyu alakalı bir model.
+
+765
+01:55:40,851 --> 01:55:44,851
+Ve bu konuyu çok fazla zaman.
+
+766
+01:55:51,604 --> 01:56:09,704
+2.5B. 2.5B. And I just used it to make a small sample of the Bayes model and the, what is it called, trained model with SFT.
+
+767
+01:56:12,704 --> 01:56:13,644
+So.
+
+768
+01:56:16,115 --> 01:56:39,435
+Bu, bu
+
+769
+01:56:39,699 --> 01:56:44,199
+Bu soru var, 69,000.
+
+770
+01:56:44,199 --> 01:56:45,699
+Bu soru var.
+
+771
+01:56:48,199 --> 01:56:51,699
+Bir soru var.
+
+772
+01:56:52,699 --> 01:57:03,699
+Bu soru var.
+
+773
+01:57:04,756 --> 01:57:13,195
+Bu soru için bir soru için bir soru için bir soru için bir soru.
+
+774
+01:57:13,195 --> 01:57:20,296
+Sıfırda, SFT'de çalıştıklarına baktığınızda bir soru var.
+
+775
+01:57:20,296 --> 01:57:24,056
+Ama bu soru için, bu soru için bir soru var.
+
+776
+01:57:24,056 --> 01:57:31,056
+Bu soru var, biraz daha farklı bir soru var.
+
+777
+01:57:31,475 --> 01:57:33,715
+So I generated 5 samples as well.
+
+778
+01:57:35,635 --> 01:57:37,635
+And it's...
+
+779
+01:57:37,635 --> 01:57:40,275
+There were different ways of answering the questions,
+
+780
+01:57:40,555 --> 01:57:43,435
+different methods or different ways of scripting the text,
+
+781
+01:57:43,595 --> 01:57:46,595
+but still the answers were not the same.
+
+782
+01:57:47,155 --> 01:57:50,155
+This one was the closest to the answer, but still not correct.
+
+783
+01:57:52,180 --> 01:57:57,860
+Ve bu soru daha iyi bir soru var.
+
+784
+01:57:57,860 --> 01:58:00,780
+Bir soru var, bir soru var.
+
+785
+01:58:00,780 --> 01:58:02,420
+Bir soru var.
+
+786
+01:58:02,420 --> 01:58:04,619
+Bu soru var.
+
+787
+01:58:04,619 --> 01:58:05,619
+Bir soru var.
+
+788
+01:58:05,619 --> 01:58:14,659
+Bu soru var.
+
+789
+01:58:14,659 --> 01:58:17,484
+Ve bu soru var.
+
+790
+01:58:17,524 --> 01:58:22,524
+Bu sft-trained version, 5-5'de 4'de 4'de 4'de.
+
+791
+01:58:22,524 --> 01:58:27,524
+Bu sft-trained version olarak, bu sft-trained version olarak,
+
+792
+01:58:27,524 --> 01:58:46,064
+bu sft-trained version olarak, bu sft-trained version olarak,
+
+793
+01:58:41,076 --> 01:58:45,076
+Ama bir soru var, bir soru var, bir soru var.
+
+794
+01:58:45,076 --> 01:58:49,076
+Bir soru var, bir soru var.
+
+795
+01:58:49,076 --> 01:58:51,076
+Bir soru var.
+
+796
+01:58:55,252 --> 01:59:16,492
+So, for the SFT overall, in my case, I could not run the entire dataset. So, I used just a sample of 25 because as I was not using the main model, I just wanted to get to an answer to see what it feels like when we train, when we improve with SFT.
+
+797
+01:59:17,619 --> 01:59:24,700
+Ve bu kadar çok minimal birleştirmeyi ve test ve trainlerle anlatacağım.
+
+798
+01:59:37,391 --> 01:59:39,391
+Bu da bu sorunlar var.
+
+799
+01:59:39,391 --> 01:59:49,391
+Bu sorunlar var.
+
+800
+01:59:49,391 --> 01:59:51,391
+Bir sorunlar var.
+
+801
+01:59:51,391 --> 02:00:02,443
+Bu sorunlar var.
+
+802
+02:00:02,676 --> 02:00:09,756
+İlk adı point for us is when the answers are correct and there is also diversity.
+
+803
+02:00:09,756 --> 02:00:22,556
+That's all sincerely. For this project I ran through quite a lot of minutes so I didn't really do much.
+
+804
+02:00:34,899 --> 02:00:36,683
+Okey, böyleyim.
+
+805
+02:01:07,380 --> 02:01:09,380
+Tamam.
+
+806
+02:01:09,380 --> 02:01:12,380
+Buna bir şey yapmak için, ne yapabilirim.
+
+807
+02:01:12,380 --> 02:01:13,380
+Bu, bu.
+
+808
+02:01:13,380 --> 02:01:14,380
+Tamam.
+
+809
+02:01:14,380 --> 02:01:16,380
+Tamam, teşekkür ederim.
+
+810
+02:01:16,380 --> 02:01:19,380
+Teşekkürler.
+
+811
+02:01:26,323 --> 02:01:28,003
+[öğrenci] ile devam edelim.
+
+812
+02:01:30,203 --> 02:01:31,363
+Merhaba hocam.
+
+813
+02:01:31,903 --> 02:01:32,344
+Merhaba.
+
+814
+02:01:33,303 --> 02:01:34,223
+İkranım geldi mi?
+
+815
+02:01:36,363 --> 02:01:37,043
+Geldi.
+
+816
+02:01:39,384 --> 02:01:43,083
+Merhaba hocam. Öncelikle benim ödev kısmında bayağı ekstikler var.
+
+817
+02:01:43,503 --> 02:01:47,503
+Hem hatalı kısımlar var ve sadece yapay zeka ile olan çözüm kısmını yapabildim.
+
+818
+02:01:47,583 --> 02:01:49,003
+Kendime ayrıca bir çözüm uygulayamadım.
+
+819
+02:01:49,443 --> 02:01:51,803
+Ama yaptığım şekilde bir göstermek istedim.
+
+820
+02:01:52,627 --> 02:02:19,127
+İlk olarak bu Q1 3.5 modelini kullanmayı denemiştim ama burada çok fazla hata aldığım için hani 2.5 versiyonuna indirmek zorunda kaldım. Yine aynı şekilde bu verdiğimiz OSS, denediğimiz GPT OSSS modelini kullanmaya çalışırken de hata aldığım için ödev desnelerinin aksine sadece Q1 2.5 modelini kullanarak denemeler yapabildim. Yine aynı şekilde bu özellikle kütüphane uyumlulukları konusunda çok fazla hata aldığım için...
+
+821
+02:02:19,539 --> 02:02:31,140
+Öğretmen olarak neyi kullandın? Aynı modeli hocam. Yine küven. Yani SFT ve...
+
+822
+02:02:31,140 --> 02:02:44,840
+Dur bak. SFT... Yani SFT çözümlerini de, multi SFT çözümlerini de base modelden mi ürettin? Evet hocam. Peki.
+
+823
+02:02:47,155 --> 02:02:53,996
+Hocam, yine bu pipane uyumlulukları konusunda çok fazla hata aldım, çakışma aldım. Normalde T4 ve CP üzerinde de denemiştim.
+
+824
+02:02:54,636 --> 02:03:00,775
+Ama orada çalıştıktan sonra bellek hatası verince, A100'e geçince tekrardan uyumluluklar bulunmuş oldu.
+
+825
+02:03:00,775 --> 02:03:11,036
+O yüzden çok fazla hata aldım o şey konusunda. Zaten şeyde de çok fazla pip komutu var farklı versiyonların indirildiği dosyada da.
+
+826
+02:03:11,412 --> 02:03:15,992
+Yine train ve test boyutlarında da siz normalde 1000 train 500 test istemiştiniz ama 10 katı küçük.
+
+827
+02:03:16,659 --> 02:03:42,259
+İşte 100 train ve 50 test ile çalıştım. O yüzden de zaten sonuçlarda sıkıntılar var. Cevap sayısını da ondan 5'e düşürdüm. Hepsinin genel bir şeyine baktığımızda bu farklılık ve doğruluk grafiğine çok kötü sonuç vereni görüyoruz. Sol köşede kalmış ikisi hepsi de kötü. En iyi sonucu da Bayes modeli veriyor. Beklenen tam yani aksi normalde iyileşmesi gerekirken. Burada bunların detaylı sonuçları var.
+
+828
+02:03:44,659 --> 02:04:07,319
+SFT'ye geldiğimizde bu oran %50 oranında yaklaşık düşüyor. Bir geri gelebilir misin? Bir daha. Ne kadar? Tamam bu kadar. 3000 parametrelerden kastın ne? Kümen 3.5 tıra 3000 olanacağım. Bu 3000 değil, 3 milyar o.
+
+829
+02:04:08,787 --> 02:04:16,467
+Yanlış yapmışım hocam. Evet, 3 milyar. 3 milyar orası.
+
+830
+02:04:16,467 --> 02:04:17,467
+3 milyar.
+
+831
+02:04:17,467 --> 02:04:22,467
+3 bin parametre ile bunları başarabilseler mükemmel olurdu da.
+
+832
+02:04:22,467 --> 02:04:25,267
+Evet evet. Yazarken hocam.
+
+833
+02:04:25,267 --> 02:04:32,067
+Şimdi bunları toplu olarak göstersene hepsini. [öğrenci] gösteriyorsun. Yaptığın bir yer var mı?
+
+834
+02:04:33,043 --> 02:04:45,003
+Burası, evet. Train, Train, Test. 24'ten, 24'ten 10, 10, 10, 12 falan civarında bir şeylere düşmüş. Doğru mu?
+
+835
+02:04:45,003 --> 02:04:50,983
+Evet, evet hocam. Aynen öyle. Şurada hatlar daha iyi gözüküyor. Şu şekilde bakmak isterseniz.
+
+836
+02:04:51,884 --> 02:04:58,363
+Base modeli en iyi teyverirken diğerlerinde yeri. Ondan sonra en iyi veren SFT artıcı yapıyor ama o da yani base'ı kıyasla hala aşırı düşük.
+
+837
+02:04:58,688 --> 02:04:59,967
+Benzin yanında.
+
+838
+02:05:00,487 --> 02:05:06,507
+Burada muhtemelen çok fazla, o yüzde onların da azalttığım için bir unutma süretine falan girmiş olabilir bilmiyorum.
+
+839
+02:05:06,728 --> 02:05:10,127
+Yani şeye de, ya da belki şeye de sıkıntı olabilir.
+
+840
+02:05:11,387 --> 02:05:14,087
+Doğruluğun hesaplanması falan fonksiyonlarında biraz daha var.
+
+841
+02:05:14,087 --> 02:05:17,547
+Şimdi bunları yapay zekaya mı yaptırdın?
+
+842
+02:05:19,127 --> 02:05:20,127
+Evet hocam.
+
+843
+02:05:21,347 --> 02:05:22,127
+Nasıl yaptırdın?
+
+844
+02:05:23,087 --> 02:05:25,047
+Bunu şöyle değiştir, bunu şöyle değiştir diye.
+
+845
+02:05:25,507 --> 02:05:27,947
+Nasıl yaptın? Bir anlatır mısın? Neyi kullandın?
+
+846
+02:05:30,387 --> 02:05:31,627
+Hangi yapay zekâyemi?
+
+847
+02:05:34,247 --> 02:05:35,688
+Kulot kullandım hocam.
+
+848
+02:05:36,407 --> 02:05:39,367
+Tamam, kulağda ne yaptın? Kulağda ödev dosyasını mı verdin?
+
+849
+02:05:40,667 --> 02:05:44,547
+Yok hocam, dedim ki işte böyle böyle bir ödevim var.
+
+850
+02:05:44,547 --> 02:05:47,608
+Burada özellikle işte çözüm...
+
+851
+02:05:47,608 --> 02:05:49,587
+Tamam, ödevi nasıl verdin? Onu soruyorum.
+
+852
+02:05:51,155 --> 02:06:13,416
+Şöyle hocam, ödev konusunda şey dedim. Benim bu altı tane farklı model kullanarak bu şekilde bir ödev yapmam gerekiyor diye yazdım. Ondan sonra dedim ki, hatta elimde de bir tane önceden oluşturduğum aslında denediğim bir şey vardı, kolab dosyası vardı. Onu paylaştım. Dedim ki, bu kolab dosyasının daha gelişmiş bir ortamda çalışan halini oluşturabilir misin?
+
+853
+02:06:16,787 --> 02:06:22,547
+Ondan sonra da hata almaya başladım. Sonra hataları çözünür üzerinden giderek, şurada şu kütüphanlu uyumsuzluğunu alıyorum.
+
+854
+02:06:22,547 --> 02:06:29,507
+Burada şöyle bir hata var diye mesela modelleri kendi kapısına göre değiştirmişti. Onları ben mesela değiştirdim. Burada bunu değil bunu kullanacağız şeklinde.
+
+855
+02:06:29,507 --> 02:06:31,827
+Burada bunu değil bunu yapalım şeklinde.
+
+856
+02:06:31,827 --> 02:06:34,787
+Öyle ilerledi yani.
+
+857
+02:06:34,787 --> 02:06:39,507
+Teşekkürler. Var mı başka söylemek istediğim bir şey?
+
+858
+02:06:40,595 --> 02:07:08,075
+Yok hocam. Son olarak burada şey var işte test noktalarını görselleştirilmiş hali var. Bahsettiğim gibi gerçekten base en iyi sonucu veriyor. Hani sağ ve yani farklılık ve doğruluk olarak en yükseklerde. Diğerleri daha aşağıdayken. Yine ortalamalara baktığımızda da base'den üst köşeye doğru bir artış beklerken daha düştüğü için performans. Sol aşağı doğru kaymış bir şey görüyoruz. Grafik görüyoruz. Bu da zaten aynı grafik. Sadece şeyden bahsettiklerim hocam. Burada sonuç ve bugler kısmında ben...
+
+859
+02:07:08,435 --> 02:07:28,175
+Eyle geçirdiğim için kolaptaki sonuçları buraya yanlış bir şey geçirmişim. 0.999 yazmıştım. 0.099. Sonra böyle şeylere bakarken fark ettim. Yani aslında CRP'nin çeşitli değil bu kadar fazla değil diye. Ama size gönderdiğim halleri olduğu için burada değiştirmedim size bir söylemiş olayım diye. Burası yani şey değil. O şekilde.
+
+860
+02:07:29,495 --> 02:07:30,835
+Peki teşekkürler.
+
+861
+02:07:32,355 --> 02:07:33,615
+Teşekkür ederim hocam.
+
+862
+02:07:33,615 --> 02:07:35,615
+[öğrenci].
+
+863
+02:07:38,963 --> 02:07:48,143
+Hayrola Hocam, iyi günler. Ekranımı paylaşıyorum. Doğrudan kol açıldı herhalde, tamam.
+
+864
+02:07:50,583 --> 02:08:04,963
+Hocam öncelikle ben Base model olarak size sizin istediğinizi kullandım. Bu Base modeli kullanırken 10 tane farklı, tek bir prompta 10 tane farklı sonuç vermesi için şurada Do Temple'ı mutlaka...
+
+865
+02:08:05,684 --> 02:08:14,684
+Buru olması lazım. False'lanınca aynı prompta aynı sonuçlar veriyor. Yani her defasında Next Token en yüksek...
+
+866
+02:08:17,652 --> 02:08:38,692
+Olasılıkta hangisi ise o atanıyormuş. Burada 10 tane olması için şurayı onladım. Temperature'da arttırdıkça cevapların birbirinden farklılıkları artıyormuş. Hani Base Model'dan her bir test örneklemi için 10 tane cevap aldım.
+
+867
+02:08:40,756 --> 02:08:51,756
+Buradaki argümanları ne anlama geldikleri falan aşağılarda var hepsi. Base Model'dan cevapları aldıktan sonra...
+
+868
+02:08:53,395 --> 02:09:17,996
+SFT için Q3.5 bu sefer ben GPT'yi kullandım ama kule çöktü. Çökünce daha küçük modele geçtim. Aralarında çok bir başarım farkı herhalde yok ama buradan aldım. Buradan aldıktan sonra burada Tireyn örneklemler için tek bir tane su. Onu çistledim.
+
+869
+02:09:18,368 --> 02:09:41,516
+Sonraki kodu atlayacağım. Burada aşağılardaydı. Sonuç istedim. Sonuçlar içerisinde bunlar doğru mu, yanlış mı diye hesapladım. Buradaki kodları silmişim. Toplam 686 tane doğru bildiği var. Ben bu 686 taneyle sonraki aşamalara...
+
+870
+02:09:42,068 --> 02:10:07,708
+Geçtim. Yani şu Q3.5 bu arkadaşın yanlış bildiklerini kullanmadım. Sadece doğru bildikleriyle kullandım. Burada her bir test örneklemi için test örneklemin indeksini verip onların 45 tane noktası var. Y koordinatları farklılıktı. Metin bilgilerinden birbirinden farklılığı hesaplamak için.
+
+871
+02:10:08,148 --> 02:10:09,988
+Bir eksik sim yani.
+
+872
+02:10:11,444 --> 02:10:39,083
+O sayını kullandım. Burada vektörel hani metinden doğrudan o sayını hesaplanamaz. Onun için embedding içinde şu al mini kullandım. Önce burada embedding yaptım. Ardından da bir eksi simledim. Burası x koordinatları, y koordinatları içinde aslında şöyle bir şey vardı. İkili çiftlerin önce ortalamasını aldım. Bu ortalamayı.
+
+873
+02:10:39,444 --> 02:10:59,963
+Gerçek sonuçtan farkını istedim ve tabii ki bunu sonucun beşken altı veya dört çıkması fark etmemeli. Onun için bunu hep zürüt içerisine aldım. Sonra da hatayı küçültmek için bölü beş yaptım. Burayı son açıklayayım.
+
+874
+02:11:02,036 --> 02:11:19,235
+Y koordinatında ise 1 bölü hata artı 1. Yani burada örneğin hata 0 ise 1 bölü 1'den 1 gelecek. Eğer hatayı 1 olduğunda 1 bölü 2'den 0.5 var.
+
+875
+02:11:25,439 --> 02:11:31,880
+Burada bölü 5 yaptım, sonra da bunu kök 5 dedim.
+
+876
+02:11:31,880 --> 02:11:39,659
+Ki maksat küçük hatalarda da 0.85'in üzerinde bir başarı vermesi için.
+
+877
+02:11:40,083 --> 02:11:48,323
+Bu fonksiyon da hocam test örneklem indeksleri içerisinde Bayes modelden almış olduğum örneğin 65 olsun.
+
+878
+02:11:48,323 --> 02:12:04,323
+65. örneklem gerçek sonucu buymuş. 10 taneden sadece şu hatalıymış. 10 tane çiftin burası farklılıkları, şurası da...
+
+879
+02:12:05,300 --> 02:12:18,300
+Başarıları hatalı olanlar için 0.5'miş yaklaşık olarak. Farklı bir indeks verdiğimizde de mesela...
+
+880
+02:12:19,155 --> 02:12:37,096
+Burada da özellikle sondaki hatalıymış. Ben böyle bütün örneklemleri tek bir kere de göstermedim. Test örneklerimin hangi indeksini aktarırsak onu gösterdim. Fine Tuning'lere geldiğimizde buradaki Fine Tuning'leri hemen açalım bir tanesini.
+
+881
+02:12:41,716 --> 02:12:55,716
+Bu kodları ben hazırladım da, burayı fine tuningleri doğrudan yapay zekadan aldım. Aslında ödevde yaptığım en büyük hata da oydu. Neden? Çünkü buradaki prontlar...
+
+882
+02:12:56,020 --> 02:13:14,600
+Fine Tuning'e derken yapılan promptlarda herhalde hata var. Şöyle oldu. En son Fine Tuning sonucu elde ettiklerimin içerisinde hep İngilizce var. Bu veriyi bir kere sonucu nereden alacağım? Bir, iki, veri çok kirli.
+
+883
+02:13:15,475 --> 02:13:41,055
+Perform Calculation bunları falan silmem gerektiğiydi. Onun için burada bayağı bir uzun bir fonksiyon hazırladım. Cevap içerisinde aslında buradaki sonuç içerisinde ne istediğim var ama en sonda değil. Hep bir yerlerde. Bunları bulabilmek için şurada işte sonuçları çıkar fonksiyonunu yaptım.
+
+884
+02:13:41,471 --> 02:14:06,911
+Bu şartların herhangi bir tanesindeyse sonucu buluyor. Kirli veriyi de bir nebze de olsa temizliyorum. SF'ti, mult SF'ti için hepsini yaptım. E-kürseleri azaldı. Aslında yaptığım en büyük hata işte doğrudan AI'dan kod aldım. Oradaki front.
+
+885
+02:14:07,636 --> 02:14:34,716
+Kııntılıydı herhalde. Bir de veri çok kirli gelince ekürisiler maalesef azaldı. Sadece şu multi SFDA GRPU ekleyince küçük bir artış oldu. Sonra tekrardan burada her biri için en baştan X ve Y koordinatlarını teker teker hesapladım. Bu fonksiyonu da çizdirdiğimde biraz uzun bir fonksiyon oldu bu.
+
+886
+02:14:36,051 --> 02:14:49,991
+Örneğin şurada Beys modeldeki örnek vardı. Yok bu değildi, şuradaydı. Yedinoğlu'yu almışız. Buraya da aynısını artaralım.
+
+887
+02:14:50,771 --> 02:15:04,952
+Test içerisinde 7 indeksine sahibi için Base Model'dan ziyade şurada SFD'de farklılıklar daha da az.
+
+888
+02:15:05,427 --> 02:15:31,627
+Bana göre bu farkların az olmasındaki sebep o ortak İngilizce kısımlar. Aslında ben bunların belli bir kısmını sildim ama hepsini teker teker bütün örneklemler için gözde kontrol etmem imkansızdı. Ortak kısımlar olduğu için mutlaka bir yerlerde benzerlikleri daha çok oluyor, farklılıkları daha az oluyor. Başarı olarak da artış sağlayamadım.
+
+889
+02:15:32,692 --> 02:15:58,372
+Ya ben daha şey AI'dan doğrudan kod almıyor. Alınca da böyle oldu. Pek tecrübeli olmadığım için bu konuda öyle oldu. Yani başarılı olamadık. Burada tek bir test örneklemi için şurada Base, SFT, Multi, SFT falan hepsine 45 noktayı gösteriyor.
+
+890
+02:15:59,028 --> 02:16:12,188
+Sunumum yok. Ben kod üzerinden anlatmayı daha iyi bulduğum için böyle. Sorunuz varsa her şeyi sorabilirsiniz. Sadece fine tuningler sıkıntılı oldu.
+
+891
+02:16:12,188 --> 02:16:24,507
+Tamam. Hocam bir de ben ödevi atarken şu link verdim. Şu link bağlantısı var. Hani şuradaki her şeye doğrudan gidebiliyor olmanız lazım.
+
+892
+02:16:25,268 --> 02:16:26,128
+Tamam. Tamam.
+
+893
+02:16:26,752 --> 02:16:29,652
+Teşekkürler. Teşekkürler [öğrenci].
+
+894
+02:16:29,851 --> 02:16:30,851
+Ben de teşekkür ederim.
+
+895
+02:16:37,139 --> 02:16:39,159
+[öğrenci], [öğrenci], [öğrenci] ile devam edelim.
+
+896
+02:16:44,564 --> 02:16:46,564
+Aykırın, numar açıyorum hocam.
+
+897
+02:17:11,700 --> 02:17:28,920
+Ödevin kapsamı öncelikle yüksek parametre değerine sahip olan bir modelle fine tuning işlemi gerçekleştirdikten sonra düşük parametreli bir modelin aynı performansla gösterip gösteremeyeceğini test etmek.
+
+898
+02:17:30,200 --> 02:17:36,120
+Yöntemlerde zaten SFT, Multi-SFT, GRP ve Hibrit olarak hepsini değerlendireceğiz.
+
+899
+02:17:38,451 --> 02:17:58,131
+Kullandığım modeller ve veri senetlerini bu şekilde gösterebilirim. İki farklı API kullandım. Lokalde 120 milyar parametreli bir modeli çalıştıramayacağım için API kullandım. İki farklı bir grog API kullandım ve opronotor kullandım.
+
+900
+02:17:59,291 --> 02:18:05,371
+Öncelikle ücretsiz bir şekilde halletmeye çalıştım ama burada limitlerle takıldım.
+
+901
+02:18:06,644 --> 02:18:10,219
+Farklı API keylerle denedim ama yani...
+
+902
+02:18:10,355 --> 02:18:36,256
+Çok fazla veri üretemedim bu tarafta. 120 milyar parametrede GPT'nin modeliyle ve 70 milyar parametrede Lama modeliyle bir üretim gerçekleştirdim SFT tarafında. Veri seti olarak da zaten GSM8000 veri setini kullandım. Buradan 1000 tane veri ürettim bu modellerle.
+
+903
+02:18:36,884 --> 02:19:00,744
+Hibrit bir çalışma oldu açıkçası. İki farklı dil modeliyle üretilmiş oldu. Yüzdelerini şu an hatırlamıyorum ama çoğunu OpenAI modeliyle üretmiş olamam gerekiyor. 800-700 civarı üstteki modelle üretmiştim. Multisafet tarafındaysa farklı domenlerden verisetleri seçtim. Burada OpenRotour'a geçtiğim için...
+
+904
+02:19:01,056 --> 02:19:07,876
+Tek bir model kullandım. Wizard eden kullandım. Orası doğru olmamış ama [öğrenci]'le.
+
+905
+02:19:09,376 --> 02:19:25,396
+Hocam bunu şey düşündüm ben. Multi SFT dediğimiz şeyi sen şeyde yok muydun? Derste anlattığımda. İlk derste bunu anlattığınızda vardım hocam. Ödevde. Ödev anlattığımda. Evet.
+
+906
+02:19:26,100 --> 02:19:39,520
+Tamam, TSFT'ye aynı soru için birden fazla cevap alıyorsun. Böyle farklı farklı sorular falan değil yani. Anlatabildim mi? Anladım hocam, evet. Demin arkadaşları dinlemişimdir.
+
+907
+02:19:41,236 --> 02:19:50,716
+Evet, evet. Evet de hocam artık yani böyle anlayıp yaptığım için yanlış yaptım. Evet ama açıkçası yani çok da kötü bir performans almadım. Multisept tarafından.
+
+908
+02:19:51,076 --> 02:19:57,855
+Yok, tamam canım. Yok, tamam. Sıkıntı değil. Onda da sadece hani ödevde istenin onu değil. Onu demek istedim. Tamam, pek. Devam edelim.
+
+909
+02:19:57,855 --> 02:20:00,000
+Ben de şey gibi düşündüm hocam. Yani hani...
+
+910
+02:20:00,000 --> 02:20:10,860
+Sonuçta farklı domenlerden seçtiğim verisletleriyle bir eğitim gerçekleştirirsem, diversity tarafında daha iyi bir performans alabilirim gibi düşünüp böyle bir şey yapmamı...
+
+911
+02:20:10,860 --> 02:20:19,440
+Olabilir. Şimdi o başka bir şey. O dediğin şey de doğru bir bakış açısı olabilir de ödevde o yoktu. Anlatabildim mi demek istediğimi?
+
+912
+02:20:19,440 --> 02:20:20,420
+Anladım. Evet, okey.
+
+913
+02:20:20,560 --> 02:20:21,860
+Tamam, peki. Devam edelim.
+
+914
+02:20:23,188 --> 02:20:40,028
+Burada da frontlarımı gösteriyorum. Burada tabii muhteşem de farklı domenlere sahip olduğu için birden fazla domen kullandım. Burada da cevabı belirli bir formatta vermesini talep ettim ki extract edeceğim zaman bu formatta kolay bir şekilde extract edebileyim.
+
+915
+02:20:40,028 --> 02:20:51,067
+Tabii çoğu aldığım cevap da bu formatta vermemesini de hesaba kattığım için farklı bir extract yaklaşımı da.
+
+916
+02:20:51,188 --> 02:20:52,308
+uyguladım.
+
+917
+02:20:53,768 --> 02:20:55,567
+SFT'deki promptum bu.
+
+918
+02:20:56,407 --> 02:20:57,368
+CRPO'daki de bu.
+
+919
+02:20:59,427 --> 02:21:06,048
+CRPO'daki ödül fonksiyonu olarak bu arada CRPO'da training için tüm veri setindeki
+
+920
+02:21:06,048 --> 02:21:08,227
+şu
+
+921
+02:21:08,227 --> 02:21:14,308
+GSM8K'deki tüm verileri kullandım.
+
+922
+02:21:14,772 --> 02:21:29,852
+İki tane ödül fonksiyonu tanımladım burada. Birisi format için, birisi de accuracy için. Burada eğer ground truth ile eşleşiyordarsa iki puan veriyorum. İspeklediğim formatta veriyorsa da bir puan veriyorum gibi iki farklı reward fonksiyonu tanımladım.
+
+923
+02:21:30,592 --> 02:21:42,772
+Eğitim parametrelerimde zaten parameter efficient fine tuning kullanmak zorundaydım. Bir de quantization kullandım. VRM'imi daha verimli kullanabilmek için. Learning rate'lerimde.
+
+924
+02:21:42,772 --> 02:21:56,372
+Bu şekilde SFT'de, GRP'o'da. SFT'de bir tık daha büyük bir Learning Rate ile başlayalım. GRP'o'da daha küçük bir Learning Rate ile başladım. Optimizer olarak Adam kullandım. 3 Epoch eğitim gerçekleştirdim.
+
+925
+02:21:57,212 --> 02:22:08,772
+Inference tarafına gelecek olursak da burada 3 tane farklı metrik kullandım. Bu mavi olarak gördüğümüz normal Accuracy, Avage Accuracy. Yani 10 tane üretilen sorudan...
+
+926
+02:22:10,004 --> 02:22:37,684
+Her individual, her bir sorunun doğru olup olmadığını bu şekilde Mavi ile anlayabiliyoruz. Burada Pest'ten dediği 10 sorudan bir tanesi bile doğruysa 10'u doğru olarak değerlendirdiğimdeki bir accuracy değeri. Majority voting de 10 soruda en çok tekrar eden cevabı doğru olup olmadığını kontrol ettiğim bir değerlendirme metriği.
+
+927
+02:22:38,004 --> 02:22:43,204
+Burada train veri setleri için yapılan bir sonuç görüntülüyorum.
+
+928
+02:22:44,244 --> 02:22:49,824
+SFT ve GRP SFT'de çok base'den bile kötü bir performans görüntüledim.
+
+929
+02:22:50,623 --> 02:22:51,484
+Ama multisafety...
+
+930
+02:22:51,484 --> 02:22:53,004
+Majority voting...
+
+931
+02:22:54,444 --> 02:22:57,864
+Hocam bunu AI açıkçası, ben kendim önerdiğim bir şey değil bu.
+
+932
+02:22:58,264 --> 02:23:00,884
+AI böyle bir öneride bulundu bana.
+
+933
+02:23:01,811 --> 02:23:07,772
+Üretilen oyun cevaptan en çok tekrar edinin doğru olup olmadığını konut ediyorum ortada.
+
+934
+02:23:10,711 --> 02:23:14,932
+Yalnız PES bana göre niye düşük kalıyor ki o?
+
+935
+02:23:19,987 --> 02:23:44,687
+Ya bazı, yani cevapları konta ettiğimde çoğunlukla hocam şey oluyordu, modeller böyle bir loop'a düşüyor. Hani cevabı tam üretemiyorlar. Non değeri çok düşüyordu muhtemelen. Hani majority'de non değeri eğer bir soruda çok fazla üretiliyorsa, non'a düşüyordur belki. O yüzden daha kötü bir değer alıyordur.
+
+936
+02:23:45,587 --> 02:23:47,527
+Neyse bir garip yani. Peki devam edelim.
+
+937
+02:23:47,956 --> 02:23:54,615
+Bu da test sonuçlarım. Bu şekilde hocam.
+
+938
+02:23:54,615 --> 02:23:59,615
+Ben görmedim. Bir dakika dur. Test sonuçlarının tık tık gittiği...
+
+939
+02:23:59,615 --> 02:24:03,956
+Tamam şimdi test aç. Şimdi bunlar test.
+
+940
+02:24:03,956 --> 02:24:09,956
+Aynen. Şimdi Bayes'de %1 başarı var. Öyle mi? Evet.
+
+941
+02:24:11,956 --> 02:24:13,956
+Hangi modeldi bu?
+
+942
+02:24:14,708 --> 02:24:29,468
+Sizin dediğiniz ki ben 3.5-4 milyar parametre olan bu da ben. Tamam. Şimdi SFT'yi de eğittiğinde burada başarısına neye bakacağız? Biz de 3'e bakacağız. Evet.
+
+943
+02:24:30,579 --> 02:24:38,979
+Multi SFT'ye geçtiğimizde 56 gibisinden bir şey çıkmış gibi gözüküyor. Bu tabii biraz garip bir sonuç.
+
+944
+02:24:39,639 --> 02:24:43,139
+Evet hocam sonuçlar çok garip. Ben de hiç anlayamadım açıkçası yani.
+
+945
+02:24:43,880 --> 02:24:50,520
+Evet anlayamadıysan sıkıntı bu tabii. Peki tamam şimdi yapay zeka kullanımını bir anlat bakalım.
+
+946
+02:24:51,520 --> 02:24:56,139
+Hocam yapay zekada kodların %90'ını ben yazdım. Yalnız şurada en son...
+
+947
+02:24:56,659 --> 02:24:58,579
+Koptan %90'ı sen yaptın.
+
+948
+02:24:59,340 --> 02:25:05,079
+Evet, yani şeyleri filan bu data distillation tarafını filan AI'ye verdim.
+
+949
+02:25:06,200 --> 02:25:08,079
+Data distillation'dan kastın mı?
+
+950
+02:25:09,659 --> 02:25:16,139
+API'lerden işte API bağlantısını kurup işte soruları üretme tarafına.
+
+951
+02:25:16,639 --> 02:25:20,840
+Mesela işte prepare test dataset, train dataset. Bu taraflar AI.
+
+952
+02:25:22,644 --> 02:25:25,023
+Peki, senin yazdın neresi?
+
+953
+02:25:25,023 --> 02:25:26,523
+Ben mail'e ben yazdım.
+
+954
+02:25:26,523 --> 02:25:27,523
+Neyi?
+
+955
+02:25:27,523 --> 02:25:33,144
+Bu işte, inference testinin gerçekleştirildiği kodu.
+
+956
+02:25:33,144 --> 02:25:38,523
+Açsana, göremiyorum ben. Yani büyük büyük alırsa. Açsana derken büyük.
+
+957
+02:25:38,523 --> 02:25:42,603
+Bu küçültüyor.
+
+958
+02:25:42,603 --> 02:25:45,603
+Heh. Daha iyiyim şu an.
+
+959
+02:25:45,603 --> 02:25:47,404
+Daha da büyük ben.
+
+960
+02:25:52,468 --> 02:25:56,468
+Şimdi görebiliyorum.
+
+961
+02:26:01,075 --> 02:26:03,595
+Biraz anlatsana ne yaptın?
+
+962
+02:26:04,555 --> 02:26:05,775
+Hocam, şöyle.
+
+963
+02:26:07,855 --> 02:26:09,867
+Şimdi burada...
+
+964
+02:26:10,131 --> 02:26:30,332
+Birazcık pipeline kurdum. PFT modelleri yukarıda tanımladım. Burada for loop içerisinde geziyorum. Burada dataset'in zaten kayıtlı olduğu directory'den önce bunları da bir veri olarak kaydettim. Burada tüm verileri çekip JSON'ın formatında olduğu için bunları bir dizi formatına getiriyorum.
+
+965
+02:26:30,332 --> 02:26:34,631
+Buradakiler test dataset'indekilere verdikleri cevaplar mı?
+
+966
+02:26:36,340 --> 02:26:38,340
+Bu Jason'ların üstünde ne var?
+
+967
+02:26:38,340 --> 02:26:40,340
+Hocam bunlar şey...
+
+968
+02:26:41,340 --> 02:26:43,340
+Bakayım neydi onlar...
+
+969
+02:26:49,716 --> 02:26:59,056
+Soruları içeriyor, Ground Truth'u içeriyor hocam bunlar. Bu formata getirmem gerekiyordu şey için. Beç, Beç'i yollamak için.
+
+970
+02:27:01,136 --> 02:27:08,936
+Anladım da niye aynı şeyi aynı yerlere elbinkere yazıyorsun ki anlamadım. Nasıl? Bir açsana deminkini, deminki sayfayı.
+
+971
+02:27:14,100 --> 02:27:17,960
+Bayez'in testi, SFT'nin
+
+972
+02:27:21,459 --> 02:27:45,959
+Bunlar test roller değil mi? Evet. Test roller aynı değil mi bütün herkes için? Ya hocam, değil çünkü train'de ben şöyle yaptım. Train ayrı da test. Testler aynı ama hocam, promptları farklı ya bunların. System promptu olarak ben hepsine farklı promptlar verdim ya.
+
+973
+02:27:46,899 --> 02:28:07,200
+Mesela SFD'de böyle bir prompt verdim. Ama multi SFD'de farklı domeniler kullandığım için her bir soru için farklı prompt var. Matematik problemi ise matematik öğretmenisin gibi bir prompt var. Ama işte ne bileyim, kod tarafında farklı bir prompt var.
+
+974
+02:28:07,200 --> 02:28:13,560
+Göster bakalım, devam etsin. O zaman matematik öğretmenisin diye hepsinde.
+
+975
+02:28:14,515 --> 02:28:34,215
+Çünkü burada testte, testteki soruların hepsi matematik sorusu aldığım için bunun system promptunu, evet hepsi aynı aslında bunlar. Yani bunu ben boşuna ayırmışım test tarafında. Trende ayırmak gerekiyordu da burada farklı olması gerekiyor.
+
+976
+02:28:36,675 --> 02:28:39,395
+Tamam, trende anladın da testte yani hepsi aynı şey.
+
+977
+02:28:39,891 --> 02:28:44,051
+Evet, testini, niye splitlemişim? Hiçbir fikrim yok gerçekten. Boşu boşuna uğraşmışım.
+
+978
+02:28:45,511 --> 02:28:48,131
+Peki sonra ne yaptın? Evet, bunları aldın. Sonra ne yapıyorsun?
+
+979
+02:28:49,711 --> 02:28:52,431
+Zaten burada modelleri ağırlıklarını yüklüyor.
+
+980
+02:28:53,431 --> 02:28:58,771
+Buraya modelin yüklenmiş modeli yolluyorum. İşte test data'ya da yolluyorum.
+
+981
+02:28:58,771 --> 02:29:01,771
+Buraya gelince de...
+
+982
+02:29:01,771 --> 02:29:06,347
+Tokenizer'la...
+
+983
+02:29:07,219 --> 02:29:24,459
+Bu soruyu 10 kere tekrar ettirip, normalde burada bir tane parametre olarak 10 kere tekrar et diyebiliyorduk. Aynı şey aslında bu ama bu şekilde daha hızlı çalışıyor. Daha paralelleştirme gerçekleştirdim bu şekilde.
+
+984
+02:29:28,239 --> 02:29:33,459
+Cevaplar oluşturup output şeklinde getiriyorum. En sonunda...
+
+985
+02:29:34,100 --> 02:29:35,500
+App'ın şeklinde yazıyorum.
+
+986
+02:29:38,300 --> 02:29:40,340
+Extract fonksiyonu da bu şekilde.
+
+987
+02:29:42,700 --> 02:29:43,899
+Doğrudan mı getiriyor?
+
+988
+02:29:44,860 --> 02:29:48,220
+Aynen. Şu formatta mı diye bakıyor önce.
+
+989
+02:29:48,579 --> 02:29:50,760
+Prompt'ta normalde ben bu formatta vermesini istemiştim.
+
+990
+02:29:51,260 --> 02:29:53,880
+Eğer bu formatta değilse gidip şey yapıyor.
+
+991
+02:29:54,159 --> 02:29:55,780
+İçerisindeki tüm sayıları buluyor.
+
+992
+02:29:55,940 --> 02:29:58,540
+Tüm sayılardan en son sayıyı seçiyor.
+
+993
+02:30:00,595 --> 02:30:19,636
+Bu da bazı noktalama işaretlerinde birkaç kontrolümde gördüm. Bazen 13.000'li noktasını silmem gerekiyor. Nokta virgül dönüşümleri yapmam gerekti. Durumlar oldu. Onu da sonra yaklaşımda eklemiştim. Bu şekilde hocam.
+
+994
+02:30:22,136 --> 02:30:27,796
+[öğrenci]. Tamamdır. Teşekkür ederim.
+
+995
+02:30:28,628 --> 02:30:33,128
+[öğrenci], [öğrenci], [öğrenci]'da devam edelim.
+
+996
+02:30:34,788 --> 02:30:35,468
+Merhaba hocam.
+
+997
+02:30:36,328 --> 02:30:36,808
+Merhaba.
+
+998
+02:30:36,808 --> 02:30:38,308
+En sonunda başkası.
+
+999
+02:30:58,932 --> 02:31:21,372
+Eğitim setimi 1100 aldım. Test setimi de 550 aldım hocam. Güven 3.5 milyar parametleri modeli kullanacağım. Tinkli model açık olarak kullandım. SFT çözüm modeli olarak GPT-OSS 120 milyar kullandım.
+
+1000
+02:31:21,747 --> 02:31:27,347
+SFT çöldüm, bir tane persoordan oluşturdum. Multi-SFT'de de beş tane oluşturdum.
+
+1001
+02:31:29,147 --> 02:31:37,627
+Burada da kontrantı görebiliyoruz. Burada matematik öğretmeni olduğumu sıralı bir şekilde çözmesini istedim.
+
+1002
+02:31:37,627 --> 02:31:44,347
+Ben son bu şekilde formatı vermesini istedim. Dört tane aç ve cevabı vermesini istedim.
+
+1003
+02:31:57,876 --> 02:31:59,876
+Devam edebilirsin.
+
+1004
+02:32:01,876 --> 02:32:06,876
+Sonra metinde bu 4H formatını alalım. Buraları geçebiliriz.
+
+1005
+02:32:08,876 --> 02:32:14,876
+Burada parametreler görebiliyoruz. Sft parametreleriyle bu şekilde ki Epoch'u boyunca eğittim.
+
+1006
+02:32:15,876 --> 02:32:16,876
+LoRa kullandım.
+
+1007
+02:32:17,876 --> 02:32:23,876
+ChKeyo'da da bu şekilde BitEpoch eğittim. Her şeyde 4 tane Generation kullandım.
+
+1008
+02:32:24,979 --> 02:32:49,439
+Maksimum vToken'im 1532 tane. Burada da yine böyle olarak ulandım. Ve Repetition Penalty 1.1 verdim. Çünkü thinking modellerde döngüye girebiliyor modeller. O döngüye girmesini engellemek için Repetition Penalty'i 1.1 verdim. Temperature'ı da 0.7 verdim.
+
+1009
+02:32:54,036 --> 02:33:08,436
+Burada yine aynı şekilde. Bu Maximum New Token 1536 verdim çünkü daha fazla olduğunda eğitim sürede çok uzuyordu.
+
+1010
+02:33:12,436 --> 02:33:20,436
+Burada da base modeli görebiliyoruz. Bu base model sonuçlarında sonuç roldu işe düşük çıktı çünkü
+
+1011
+02:33:20,564 --> 02:33:32,564
+Bu model uzun süre çıktı üretiyor ve çok token kullanıyor. Onun için bir sürü cevap token sıraına takıldı.
+
+1012
+02:33:34,564 --> 02:33:38,564
+Buradaki y eksenin değerleri nasıl hesaplanıyor?
+
+1013
+02:33:38,564 --> 02:33:45,564
+y ekseni fhidf ile vektörize ettim hocam. Ondan sonra kofansimler arayı buldum.
+
+1014
+02:33:45,564 --> 02:33:47,564
+y ekseni
+
+1015
+02:33:48,308 --> 02:33:59,388
+Ortalama doğruluk. Her soru için o ikili karşılaştırmaların ikisinin ortalamasını...
+
+1016
+02:33:59,388 --> 02:34:02,827
+E nasıl oluyor? Mesela %75 doğruluk ne demek oluyor?
+
+1017
+02:34:04,228 --> 02:34:13,388
+Mesela bir soru için 10 tane ikili ürettik ya hocam. O 10 tane ikili ortalama doğruluğunu hesapladım.
+
+1018
+02:34:14,420 --> 02:34:16,260
+O zaman bunlar soru ikilileri değil.
+
+1019
+02:34:16,940 --> 02:34:20,819
+Soru ikililerin ortalama doğru. Bunlar her soru için yaptım, ortalama soru.
+
+1020
+02:34:22,579 --> 02:34:24,880
+Buradaki bir tane yuvarlak neyi temsil ediyor?
+
+1021
+02:34:26,040 --> 02:34:27,639
+Soru ikililerin ortalama.
+
+1022
+02:34:28,800 --> 02:34:31,220
+Soru ikilisi değil yani?
+
+1023
+02:34:32,840 --> 02:34:35,940
+Evet, o soru ikililerin bir soru için ortalama.
+
+1024
+02:34:40,628 --> 02:34:42,628
+Peki, tamam.
+
+1025
+02:34:43,628 --> 02:34:55,628
+SFT modele geldiğimizde oldukça büyük bir artış görüyoruz. %70'e kadar çıktı doğruluğumuz. Ortalama farklılığımız da arttı. 0.40'lara geldi.
+
+1026
+02:34:56,628 --> 02:35:00,628
+Ondan sonra multisft ile biraz düşüş görüyoruz.
+
+1027
+02:35:00,819 --> 02:35:08,819
+Bu düşüş biraz old linkten olabildiğim için. En doğruluk, en farklılık düşüş gösterdi.
+
+1028
+02:35:08,819 --> 02:35:17,819
+Ondan sonra, burada da grto edit fonksiyonlarımızı görüyoruz. Burada doğruluğa bazlı bir fonksiyonumuz var.
+
+1029
+02:35:17,819 --> 02:35:25,819
+Doğru ise 2 bezmin, doğru ise da doğru bir seyit vermiyorum. Ve format doğruluğu, 4 tane h buluyorsa 0.5 veriyorum.
+
+1030
+02:35:26,451 --> 02:35:28,451
+Bunlar birbirinden bağımsız mı?
+
+1031
+02:35:28,451 --> 02:35:30,451
+Evet, iki ayrı son film.
+
+1032
+02:35:32,451 --> 02:35:38,451
+Yani cevap doğru değilse, format doğruysa yine formattan 0.5 plan alıyor. Doğru mu anlıyor?
+
+1033
+02:35:38,451 --> 02:35:39,451
+Evet.
+
+1034
+02:35:39,451 --> 02:35:40,451
+Peki.
+
+1035
+02:35:41,451 --> 02:35:44,451
+Onun zamanı GAPO modeli giriyoruz.
+
+1036
+02:35:44,451 --> 02:35:50,451
+GAPO modelde Basic göre biraz artış gösteriyor. 36 civarında 44'e geliyor.
+
+1037
+02:35:50,623 --> 02:35:57,824
+Yine token sıkıntı sınırına takılıyor cevaplar. Onun için düşük bir sonuç alıyoruz.
+
+1038
+02:35:59,123 --> 02:36:07,324
+Ondan sonra SFT ve CRPO modeline geldiğimizde, SFT'ye gelelim.
+
+1039
+02:36:08,123 --> 02:36:16,324
+Yaklaşık 0.7 civarı bir artış gösteriyor. Ortalama farklılık ve çok ufak bir artış gösteriyor.
+
+1040
+02:36:17,332 --> 02:36:34,011
+Ondan sonra Multi-SFT artıcı artıyor. Düz Multi-SFT'ye göre çok farklı bir artışımız var. Daha küçük bir artış. İkisinde de hem ortalama farklılık hem ortalama doğruluk bir artış gösteriyor.
+
+1041
+02:36:38,227 --> 02:37:04,227
+Bütün değerleri görebiliyoruz. Bir de Greedy Deconic ile doğruluğu ölçtüm. Bu Greedy Deconic'de temperature kullanmadım. Temperature sıfır olarak bir sonuç üretmesini istedim. Burada temperature olan sonucun aksine Multi-SFT, SFT'den daha yüksek çıktı. Ama bu sefer de GRP'nin sonuçları...
+
+1042
+02:37:05,203 --> 02:37:15,004
+GAP'yi olmayana göre daha düşük geldi. Orada GAP'yi etkisiz kaldı. Benim sunumum kalabiliyorum.
+
+1043
+02:37:27,188 --> 02:37:36,827
+[öğrenci], yapay zeka kullanımı nasıl? Yapay zeka kullandım hocam ama onun üzerinde çok fazla deney yaptım. Hiçbir şey demedim.
+
+1044
+02:37:39,268 --> 02:37:46,948
+Anlatır mısın şimdi? Nasıl kullandın? Onu söylemişler. İlk başta temeli hazırlamak için Cengi'ne kullandım hocam.
+
+1045
+02:37:47,847 --> 02:37:52,807
+Anlamadın mı? İlk önce kodun temelini hazırlamak için Cengi'ne kullandım.
+
+1046
+02:37:53,523 --> 02:38:05,003
+Onun üzerinden kendim Trump'lar üzerinden ilerledim. Farklı denerler, farklı parametrelerin sonuçlarını gördüm.
+
+1047
+02:38:05,003 --> 02:38:06,503
+Ona göre...
+
+1048
+02:38:06,503 --> 02:38:08,503
+Yani kodu ona yazdırdın.
+
+1049
+02:38:08,503 --> 02:38:11,003
+Evet, çoğunlukla ona yazdırdım.
+
+1050
+02:38:11,003 --> 02:38:12,503
+Sen ne yazdın?
+
+1051
+02:38:12,503 --> 02:38:19,123
+Ben de bazı parametreleri değiştirdim.
+
+1052
+02:38:19,572 --> 02:38:21,211
+Parlamayı teyvizyon, sadeşe.
+
+1053
+02:38:24,131 --> 02:38:24,652
+Piş.
+
+1054
+02:38:28,628 --> 02:38:29,828
+Tamamdır [öğrenci].
+
+1055
+02:38:31,188 --> 02:38:31,708
+Teşekkür ederim.
+
+1056
+02:38:35,156 --> 02:38:37,156
+[öğrenci] [öğrenci] ile devam edelim.
+
+1057
+02:38:39,656 --> 02:38:41,656
+Merhaba hocam, sesim geliyor mu?
+
+1058
+02:38:42,656 --> 02:38:43,656
+Geliyor.
+
+1059
+02:38:44,156 --> 02:38:47,656
+Tamam, ekran paylaşıyorum. [öğrenci]'a [öğrenci] ile biz sunacağız.
+
+1060
+02:38:56,084 --> 02:38:57,084
+Ekran geldi mi?
+
+1061
+02:38:59,084 --> 02:39:00,084
+Geldi.
+
+1062
+02:39:00,084 --> 02:39:01,084
+Tamamdır.
+
+1063
+02:39:02,100 --> 02:39:23,060
+Hocam, öncelikle direkt sorulardan nasıl cevapları öğrettiğimizi açıklayayım. Biz burada DeepSync 4 flash kullandık. Çünkü kendisi fiyat performans aslında. Ve sizin verdiğiniz veriden de 1500 tane çektiğimiz zaman, bir tanesi eğitim, 500 tane test olacak şekilde, toplamlar bize 1 dolar gibi bir maliyeti oldu bu üretimin.
+
+1064
+02:39:30,100 --> 02:39:35,100
+Text Output olacak şekilde ayrı fieldlarda JSON şeklinde döndürmesini istedik yapay zekadan.
+
+1065
+02:39:35,100 --> 02:39:46,100
+Gelen kısımda da aslında JSON field'ını direkt algılayıp, buradan gerekli field'lardan açıklamayı ayrı ayrı matematiksel cevapta,
+
+1066
+02:39:46,100 --> 02:39:53,100
+yani atıyorum 35 ya da 2 falan gibi şeklinde de ayrı şekilde çektik. İki fark üstünde sakladık cevapları bu şekilde.
+
+1067
+02:39:56,788 --> 02:40:09,488
+Burada da QN34B'yi kullandık. Niye 3.5 versiyonunu kullanmadık? Çünkü biz burada A-Slot ve VLM kullandık. Hem model eğitimini hızlandırmak hem de Enfuranızı da hızlandırmak açısından. Yalnız orada bazı...
+
+1068
+02:40:10,484 --> 02:40:25,543
+Bu, bağlantı, dependentsli problemleri falan oldu. Uyumluluk sorunları oldu. İkisini seçemiyorduk. Birini seçmemiz gerekiyordu sadece. O modelde henüz sanırım o kısımlar tam optimiz edilmemiş. Biz de o yüzden de küvenin içine düşürdük modeli.
+
+1069
+02:40:25,543 --> 02:40:37,684
+Ve burada baktığımızda Base modelde %49'a yakın bir accuracy ve benzerlik kısmında da, Consign similarity kısmında %91 civarında bir ortalama değer gördük cevapların birbirine benzerliğinde.
+
+1070
+02:40:38,515 --> 02:40:46,195
+Sonrasında bu eğitimleri yaptığımızda da özellikle multi-sft ile çok yüksek bir artış gördük test veri listesi üzerinde.
+
+1071
+02:40:46,195 --> 02:40:57,195
+Yalnız burada şöyle bir gariplik de var. GRPO genel olarak aslında eğitimleri iyileştirmiş olsa da multi-sft ile kombine ettiğimiz zaman aksine biraz daha skoru düşürdü.
+
+1072
+02:40:57,195 --> 02:41:05,395
+Burada aslında tüm parametre aynı, hiçbir şey değişmedi. O yüzden düşürmesi biraz bize garip geldi açıkçası ama incelediğimizde onun sebebini tam olarak bulamadık.
+
+1073
+02:41:07,347 --> 02:41:32,987
+Benzerlik kısmında da aslında burada SFT ve CRP en farklı, yani çeşitlik sağlayan oldu. Burada malum çeşitlik biraz daha iyi olduğu için birden çıkardığımızda çıkan soru çıkardığı kadar büyükse aslında o kadar iyi diyoruz. Yani aslında ne kadar düşükse o kadar iyidir bizim için. Diğerlerine baktığımızda da aslında çok benzer rakamlar görmekteyiz. Aslında çok da bir farklılık göremiyoruz. Çok minik oyuncular var. Burada direkt [öğrenci]'e baslayacağım.
+
+1074
+02:41:34,739 --> 02:41:48,380
+Merhaba hocam. Burada da eküresi benzerlik dağılımı görüyoruz. Base modeli baktığımız zaman dağılımın sol alt kısmında yer alıyor.
+
+1075
+02:41:51,667 --> 02:42:01,387
+Diğer iyileştirdiğimiz modeller ise dağılımın sağ üst tarafında kaldığı için yani hedeflediğimiz optimum noktada yer alıyorlar.
+
+1076
+02:42:02,768 --> 02:42:05,387
+Bir önceki slide'a gelebilir misin?
+
+1077
+02:42:10,195 --> 02:42:11,396
+Bir önceki.
+
+1078
+02:42:15,092 --> 02:42:23,031
+Şimdi burada Base model 48-49 civarında değil mi? Evet hocam.
+
+1079
+02:42:23,031 --> 02:42:31,471
+Sft 55 civarında, G-RPO da 56 civarında. Şeye geçelim, grafiğe geçelim.
+
+1080
+02:42:33,531 --> 02:42:36,396
+Şimdi Base modeli bakıyorum. Evet.
+
+1081
+02:42:37,299 --> 02:42:44,299
+Base Model 38 civarında. Burada GRPO 50'den düşük gözüküyor.
+
+1082
+02:42:46,299 --> 02:42:52,299
+Hocam siz deyince ben de şimdi fark ettim. Sanırım onu yanlış koymuşuz grafiği çizirken.
+
+1083
+02:42:58,299 --> 02:43:04,139
+56 yani aslında bu şuralarda bir yerde olması lazımdı.
+
+1084
+02:43:04,915 --> 02:43:09,915
+Çeşitlikte 9109'a dengeliyor.
+
+1085
+02:43:09,915 --> 02:43:10,915
+Peki tamam, devam edelim.
+
+1086
+02:43:10,915 --> 02:43:15,915
+Tam şurada olması lazım hocam. Yine çok iyi olmayan bir noktada ama burada olması lazım evet.
+
+1087
+02:43:16,915 --> 02:43:17,915
+Tamam edelim.
+
+1088
+02:43:21,915 --> 02:43:29,915
+Örneğin şu an değinmek istediğim bir kısım var. Biz burada slide'a optimum noktalar multi-sft kombinasyonlarında görülmüştür diye yazdık.
+
+1089
+02:43:30,004 --> 02:43:45,664
+Bunun sebebi ise, diversity score aralığına baktığımız zaman, dar bir aralık olduğu için aslında bu dağılımla aralarında büyük bir fark varmış gibi gözüküyor ama aslında birbirlerine çok yakınlar, hani neredeyse aynılar diyebiliriz.
+
+1090
+02:43:46,324 --> 02:43:49,664
+Birbirlerine attıkları fark, eküresi...
+
+1091
+02:43:50,708 --> 02:44:02,587
+Metriinde ortaya çıkıyor. Yani diğerlerine göre daha yüksek ekürisi sağladığı için Multi-SFD ya da Multi-SFD GRP' o diğer modellere göre daha başarılı olmuştur diyebiliriz.
+
+1092
+02:44:05,907 --> 02:44:18,708
+Model bazında ekürüsü ile benzerlik dağılımlarına baktığımız zaman, sol tarafta Base model için, sağ tarafta da Molite SFT artı GRPO için dağılımları görüyoruz.
+
+1093
+02:44:18,768 --> 02:44:20,268
+Buradaki her bir nokta neyi temsil ediyor?
+
+1094
+02:44:21,747 --> 02:44:22,907
+Her bir nokta...
+
+1095
+02:44:26,227 --> 02:44:52,387
+Soruların, test verilerinin doğruluklarını ve birbirinden farklılıklarını temsil ediyor. Siz ikili kombinasyonlar oluşturun demiştiniz. Bu kombinasyonlarla da, daha doğrusu bu kombinasyonlar yani cevap çiftleri arasındaki birbirinden farklılık oranlarını belirledik.
+
+1096
+02:44:53,907 --> 02:44:56,307
+Yani buradaki bir tane yuvarlak neyi temsil ediyor?
+
+1097
+02:45:00,404 --> 02:45:12,844
+Ben söyleyeyim isterseniz hocam hemen oradan pasta almış olayım. Bu test verisindeki her bir soruya verdiğimiz cevabın hem doğruluk açısından hem de benzerlik açısındaki o sonucu aslında.
+
+1098
+02:45:13,244 --> 02:45:14,944
+Yani 500 tane nokta var toplamda.
+
+1099
+02:45:15,504 --> 02:45:16,244
+Niye böyle yaptınız?
+
+1100
+02:45:17,164 --> 02:45:19,244
+Çünkü hocam istediğiniz aslında oydu.
+
+1101
+02:45:19,684 --> 02:45:25,764
+Hayır, istediğim bu değildi. İstediğim bu değildi. Soru ikililerine bakmanızı istiyorum. Cevap ikililerine.
+
+1102
+02:45:26,420 --> 02:45:31,559
+1.2 cevabı temsil etmeliydi.
+
+1103
+02:45:36,371 --> 02:45:38,531
+Ben yine bir arkadan bir teyitmiş olayım.
+
+1104
+02:45:42,227 --> 02:45:45,807
+Benim söylediğim bana mı teyze ettireceksin? Peki, ettir bakalım.
+
+1105
+02:45:47,087 --> 02:45:48,108
+Devam edelim.
+
+1106
+02:45:51,700 --> 02:45:54,380
+[öğrenci], sen de daha kadar bir koddan teyitmiş olayım da.
+
+1107
+02:45:57,120 --> 02:46:11,739
+Sağ taraftaki grafiğe baktığımız zaman noktaların hem cevapların birbirinden farklılığı açısından hem de doğruluk açısından sağ üst kısma daha çok yaklaştığını görüyoruz.
+
+1108
+02:46:11,739 --> 02:46:17,920
+Bu da aslında Molyte SFT artı CRPO'nun daha başarılı olduğunu gösteriyor bize.
+
+1109
+02:46:20,979 --> 02:46:23,099
+Nereye yaklaştığını görüyoruz anlamadım.
+
+1110
+02:46:24,239 --> 02:46:25,539
+Şimdi şu şekilde hocam.
+
+1111
+02:46:29,268 --> 02:46:39,307
+Base modelde sol tarafa, yani birbirinin ilk sekseninde baktığımız zaman noktaların biraz daha sol tarafa, yani sıfır değerine daha yakın olduğunu görüyorum.
+
+1112
+02:46:39,307 --> 02:46:41,727
+Mouse'u kullanabilir misin?
+
+1113
+02:46:44,127 --> 02:46:47,407
+Hocam ekranı ben paylaşıyorum ama sen anayet yapabilir misin?
+
+1114
+02:46:59,860 --> 02:47:04,840
+[öğrenci] kanka bir şey yazıyorsan gözükmüyor ama şu Zoom'daki kalemi kullanırsan istersen.
+
+1115
+02:47:04,840 --> 02:47:06,000
+Bir saniye bakıyorum.
+
+1116
+02:47:12,399 --> 02:47:16,239
+Zoom'un bu şey var ya paneli. Oradan gözüküyor.
+
+1117
+02:47:16,780 --> 02:47:17,440
+Geldi.
+
+1118
+02:47:34,995 --> 02:47:36,995
+Çizmeyi deneyebilir misin şimdi? Olayım acaba.
+
+1119
+02:47:44,531 --> 02:47:46,531
+Sistem izin istedir de hocam, pardon.
+
+1120
+02:47:48,531 --> 02:47:50,251
+Tamam, tekrar paylaşacağım.
+
+1121
+02:47:54,611 --> 02:47:55,631
+Şimdi deneyebilirsin.
+
+1122
+02:48:03,156 --> 02:48:03,956
+Tamam, izin verdim.
+
+1123
+02:48:08,564 --> 02:48:10,284
+Tabii bu benim ekranım yönetmem oldu.
+
+1124
+02:48:11,064 --> 02:48:11,484
+Bu şekilde.
+
+1125
+02:48:12,924 --> 02:48:14,043
+Şöyle yapalım direkt.
+
+1126
+02:48:14,524 --> 02:48:15,764
+Ben sana benim tool'u açayım.
+
+1127
+02:48:16,004 --> 02:48:16,324
+Bir dakika.
+
+1128
+02:48:17,644 --> 02:48:19,524
+Arkadaşlar, tamam. Vazgeçtim.
+
+1129
+02:48:20,064 --> 02:48:21,384
+Son sözlerini söyleyin.
+
+1130
+02:48:24,024 --> 02:48:25,604
+İsterseniz böyle çizebilir ama...
+
+1131
+02:48:25,811 --> 02:48:29,811
+Yok, tamam. Boşverdim. Son sözünü söyleyeyim.
+
+1132
+02:48:53,811 --> 02:48:57,691
+İçin ortalamasını alıyoruz. Toplamda da 500 nokta oluyor burada.
+
+1133
+02:48:57,691 --> 02:48:59,271
+Tamam.
+
+1134
+02:49:04,468 --> 02:49:16,948
+Kendi bulduğumuz çözümle, yapay zekanın bulduğu çözümü karşılaştırdığımız zaman, biz model eğitimlerini hızlandırmak için unslot, modelin inference hızını arttırmak için de VLLM pitfailerinden yararlandık.
+
+1135
+02:49:17,667 --> 02:49:28,948
+Özellikle GRPO gibi eğitimlerde inference çok uzun sürdüğü için bu projede biraz daha fark edecek kısmın, kodun çalışma süresinin kısaltılması olduğunu düşündük.
+
+1136
+02:49:29,208 --> 02:49:31,128
+Kod olarak nelerdir siz yazdınız?
+
+1137
+02:49:35,123 --> 02:49:41,884
+Hocam, kod 3 aşamadan oluşuyor. Bu veri seti oluşturma kısmı, DeepSick'le o kısmı biz yazdık komple.
+
+1138
+02:49:41,884 --> 02:49:49,244
+OpenRTur'a bağlantılar hepsi vs. Diğer kısımlarda da, SFT'de az çok yapmıştık çalışmaları eskiden.
+
+1139
+02:49:49,244 --> 02:49:53,724
+O yüzden orada, başkaneşli olduğum için biraz yapay zeka destekini daha az kullandık ama,
+
+1140
+02:49:53,724 --> 02:49:58,003
+GRPO'yu daha önce yapmamıştık biz. Bu yüzden GRPO'da yapay zeka kısmını yaptık.
+
+1141
+02:49:58,003 --> 02:50:01,443
+Kodda sizin yazdığınız kısımları açar mısınız?
+
+1142
+02:50:01,652 --> 02:50:04,211
+Buraları biz yazlık diyeceğiniz kısımları açar mısınız?
+
+1143
+02:50:05,072 --> 02:50:06,211
+Tabi hocam, bir saniye.
+
+1144
+02:50:13,396 --> 02:50:19,216
+Şu an gözüküyor sanırım. Evet. Mesela şeyden girmiş olayım, Dataset oluşma kısmına.
+
+1145
+02:50:20,211 --> 02:50:28,272
+Bu kısmı hocam, OpenUtile'ye direkt bağlanıyor. API key'inizi giriyorsunuz buraya. Tamam, burasını geçelim. Ondan sonra eğitim kısımlarından bahsediyorum.
+
+1146
+02:50:28,792 --> 02:50:33,932
+Tamam hocam. Burada Base kısmı var. Bu Base'de tabii eğitim olmadı. Sadece Inference oldu.
+
+1147
+02:50:34,492 --> 02:50:39,852
+Burada Unslot tarafından modeli çekip direkt, hatta şuradan Load kısmı da var.
+
+1148
+02:50:40,852 --> 02:50:48,152
+Buradakilerde utility'lerimiz bizim aslında. Direkt cevaptan JSON'ı belirleyeceğimiz, direkt matematiksel cevap çekeceğimiz gibi.
+
+1149
+02:50:48,211 --> 02:51:12,012
+Bu kısımlar. Bir yandan da inference kısım var. Burada iki aşama var aslında. İkinci aşama her bir soru için ve o yukarı gösterdiğim prompt ile birleştiren ve chat template oluşturan kısım. Diğer kısım ise her bir soru için artık prompt'umuzda elimizde var. Direkt modeli aslında inference'a tabi tutan. Buradan da aslında cevabı çıkartan. Sonra da result'u da şu şekilde kaydeden bir kısımımız var.
+
+1150
+02:51:12,564 --> 02:51:27,564
+Bu kısımda ek olarak da aslında direkt değerlendirme kısımları da var. İşte bahsettiğim mesela şu. Bu 500an nokta vardı ya mesela. Orada işte her bir paylilerimiz belli zaten. Payliler de nasıl oluşturuyor? Şu şekilde. Her cevap ikilileri için aslında.
+
+1151
+02:51:28,031 --> 02:51:33,031
+İki tane for loop değil hatta üç for loop'a falan giriyoruz. Orada bayağı bir kombinasyon çıkıyor.
+
+1152
+02:51:33,031 --> 02:51:42,031
+Sonrasında da burada her bir p'yi tabii ki kuvvetli ait de kurduğumuz için burada beş nokta içerisinde sonuna tabi ediyoruz.
+
+1153
+02:51:42,031 --> 02:51:51,031
+Ve her biri çıkan sonuçlarda aslında cos'ini, accuracy'yi ortalamasına alıp bunu da aslında son olarak kaydediyoruz.
+
+1154
+02:51:51,031 --> 02:51:53,031
+Sonra da bunu aslında grafiğe verip...
+
+1155
+02:51:53,172 --> 02:52:03,172
+Grafik fonksiyonuna verip, burada da çizdiriyoruz. Bu ortak fonksiyonlar tüm kodlarda var. Sadece neresi değişiyor? Training kısmı değişiyor.
+
+1156
+02:52:03,172 --> 02:52:12,172
+Atıyorum mesela Base'de sadece inference vardı. Buraya geldiğimizde ise aslında Transformer Ransoment Learning kütüphanesini kullanıyoruz. Direkt burada aslında LoRa'yı falan tabi tutuyoruz.
+
+1157
+02:52:12,172 --> 02:52:19,172
+FineTuning'i de hızlandırmak için. Malum tüm parametre yerine bir kısmını eğittiğimiz için performans koruyarak.
+
+1158
+02:52:19,603 --> 02:52:31,203
+Burada aslında diğer kısımlar ne değişebiliyor? Mesela SFT'nin kendi yüzyılları değişebiliyor. GRP'yi geçersek eğer GRP'yi de kendi kısımları değişebiliyor. Mesela burada aynı kütüphaneye kullanıyoruz ama klasları değişiyor gibi aslında.
+
+1159
+02:52:32,203 --> 02:52:35,564
+Sizin yazdığınız kısım nerede burada?
+
+1160
+02:52:36,244 --> 02:52:49,244
+Burada hocam, bizim yazdıklarımız zaten bu birinci notebooktu. İkincisi, Base'in Inference kısmıydı. Direkt modelin yüklenmesi, direkt Inference alınması. Burada bildiğimiz şeyler olduğu için aslında bunları biz yazdık daha çok.
+
+1161
+02:52:49,244 --> 02:53:04,244
+Tabii ki optimizasyon için yapay zeki tekrar soruyoruz. Bu iyi mi? falan tarzında. Ona göre düzelmesi varsa yapıyoruz. Ama dediğim gibi CRP'u kısmına pek karışmadık. Sonra da şöyle bir yaklaşımda bulunduk. Baktık, CRP'un da yapısı değişiyor sonuçta.
+
+1162
+02:53:04,244 --> 02:53:20,024
+SFT'de farklı oluyor, Base'i farklı oluyor. Bunların hepsini aynı yapıya çekmek için de genel bir optimizasyon amaçlı yapay zeka kodları düzenlettirdik. Hepsi aynı yapıda olsun ki okunabildik de çok karışmasın diye. Genel olarak bu şekilde diyebilirim.
+
+1163
+02:53:25,012 --> 02:53:28,512
+Yapaylı zekâ düzenle ettirmeden evvel çalıştırdınız mı?
+
+1164
+02:53:29,012 --> 02:53:36,012
+Tabi. Bol bol hatalarla, kudu hatalarıyla, training hatalarıyla. Hocam, baya günlerce zaman biz kaybettik zamanı.
+
+1165
+02:53:36,012 --> 02:53:40,012
+Biz doğru düzgün çalışma başladığımızda üçüncü günde falandık herhalde.
+
+1166
+02:53:40,012 --> 02:53:43,012
+Çünkü özellikle CRPO kısımları baya patlattı bizi.
+
+1167
+02:53:43,012 --> 02:53:49,996
+SFT biraz daha kolay, 1-2 dakika sürüyor zaman training falan direk, örgütü çapları da CRPO'ya baya bir uğraştırdı.
+
+1168
+02:53:50,067 --> 02:54:18,067
+Yapay zeka ile hızlandıktan sonra da aslında biraz daha iyi oldu ama hani şey tarafı biraz sıkıntıydı özellikle ilk günlerde. Hani Anslot'u mesela ben biliyorum ama yapay zeka ilk kısımlara vermiyordu mesela bize. Direkt VLM'nin falan da vermiyordu. Dün kütüphaneyi çağırıp çalışıyordu. Fahit Üniversitesi çok yavaş sürüyordu. Hatta CRP'ye şöyle söyleyeyim size 40-50 sat falan gösteriyordu. Biz sonra da modeli değişirdik. 3'ü aldık o VLM Anslot hatalarından dolayı. Bazı optimizasyonlar...
+
+1169
+02:54:18,067 --> 02:54:26,567
+Sonrasında bu GRP eğitimi yarım saat, bir saat düşürdük. Çok fark etti. A100GP ile yaptık bu arada.
+
+1170
+02:54:26,567 --> 02:54:30,067
+Bu şekilde sanırım bir şey kaçırmadım ama.
+
+1171
+02:54:30,067 --> 02:54:33,067
+Tamamdır, teşekkürler.
+
+1172
+02:54:33,067 --> 02:54:36,067
+[öğrenci] ile devam edelim.
+
+1173
+02:54:36,067 --> 02:54:40,067
+Hocam sesim geliyor mu?
+
+1174
+02:54:40,067 --> 02:54:42,067
+Geliyor.
+
+1175
+02:54:47,123 --> 02:54:49,003
+Ekranımı paylaşacağım.
+
+1176
+02:54:53,940 --> 02:54:56,180
+Kusura bakmayın. Bir sistem isim istedi.
+
+1177
+02:55:03,476 --> 02:55:09,236
+Ben başka bir arkadaş sunabilir mi? Ben Zoom'dan tekrar girip çıkmam gerekiyor hocam.
+
+1178
+02:55:09,236 --> 02:55:11,636
+[öğrenci] ile devam edelim.
+
+1179
+02:55:11,636 --> 02:55:13,076
+Merhaba hocam.
+
+1180
+02:55:14,076 --> 02:55:15,076
+Merhaba.
+
+1181
+02:55:15,076 --> 02:55:16,515
+Paylaşıyorum ekranını.
+
+1182
+02:55:16,515 --> 02:55:17,515
+Tamam.
+
+1183
+02:55:18,876 --> 02:55:20,275
+Şöyle.
+
+1184
+02:55:21,043 --> 02:55:39,424
+İlk sayfaları geçiyorum zaten hepimizde ortak olan şeyler. Burada iki tane doğruluk ölçeyi kullandım ben. Bir binary, doğru bir, yanlış sıfır. Bir de soft ölçek kullandım. Burada orantılı olarak ne kadar yakın olduğunu ölçen bir şey kullandım.
+
+1185
+02:55:40,804 --> 02:55:47,543
+Buradaki belirttiğim şeyler ikinci grafik için birazdan göstereceğim. İlki için farklı yöntem kullandım.
+
+1186
+02:55:48,244 --> 02:56:07,064
+Base model olarak, Kwen 2.5 3 milyar modelini kullandım. Burada 3.5-4 milyar modelini kullandığım zaman, Base'de %75 gibi bir başarı göstermişti. O yüzden, %20 kadar bunu yükseltebileceğimi düşünmediğim için daha düşük bir modere geçiş yaptım.
+
+1187
+02:56:09,139 --> 02:56:17,579
+Soruları da cevapları, sft ve multisft için GPT-OSS 120 milyar ile oluşturdum. Burada
+
+1188
+02:56:17,579 --> 02:56:22,699
+Datasetteki cevapların içerisinde
+
+1189
+02:56:22,699 --> 02:56:29,879
+Grand Truth cevaplar bazılarında sonda bazılarında başta gibi farklı yerlerdeydi. O yüzden
+
+1190
+02:56:29,879 --> 02:56:34,479
+o Grand Truth cevapları çıkarmak için de yine GPT-OSS'yı kullandım.
+
+1191
+02:56:34,559 --> 02:56:44,420
+Bu soruyu verip cevabı verip daha sonra bunun içerisindeki cevap sayısını bana ver diye ondan ayrıyeten istedim.
+
+1192
+02:56:44,420 --> 02:56:46,479
+Veyset'in oluştururken.
+
+1193
+02:56:48,115 --> 02:57:14,036
+Daha sonra GRPO'da ödüllendirme için 3 farklı şey kullandım. Doğruluk, biçim ve uzunluk olarak. Burada uzunluğu en sonunda ekledim. İlk başta doğruluk 0.8, biçimi 0.2 olarak vermiştim. Ancak çok kısa sorular oluşturuyordu ve bazı şeylerde adımları atladığı için yanlış cevaplar veriyordu. O yüzden biraz daha uzattım.
+
+1194
+02:57:14,515 --> 02:57:34,435
+Bir ufak daha iyileştirmiş oldu sonucu. Her soru için 8'er tane cevap oluşturdum. Sonuçlar bu şekilde. %20'lik artışı sağlayamadım. SFT artı CRPO'da %17.5 bir artış sağlayabildim.
+
+1195
+02:57:35,092 --> 02:57:43,132
+SFT'de yine sağlayabildim başarıyı. %15.8 bir artış oldu. Base modelden SFT'ye.
+
+1196
+02:57:44,272 --> 02:57:54,712
+Sonuçlarım bu şekilde. Soft metrikler yine yüksek çıkıyor. Yani yakın sonuçlar veriyor ancak tam istediğimiz sonuçları vermeyebiliyor çoğunlukla.
+
+1197
+02:57:55,924 --> 02:58:05,964
+Burada bunu görebiliyoruz. Buradaki her bir nokta bir sorunun bütün cevap ikillerinin ortalamasını gösteriyor bize.
+
+1198
+02:58:07,224 --> 02:58:13,944
+Bir sonraki grafikte her bir sorunun içinde cevap ikillerinin grafiği var. Burada beş tane soruyu gösterdim.
+
+1199
+02:58:15,004 --> 02:58:22,184
+Bütün soruları gösterince çok fazla üst üste biniyordu. O yüzden çok anlaşılır gelmemişti bana. O yüzden bu şekilde tercih ettim.
+
+1200
+02:58:22,559 --> 02:58:36,639
+Bir de grafiklerde daha çok soft metriyi kullandım. Yine çok üst üste geldiği için çok fazla belli olmadığını düşündüğüm için ama şey de koyacaktım onu unuttum. Binary olan kısmını da.
+
+1201
+02:58:38,680 --> 02:58:44,059
+Sonuçta bu şekilde yorumlarım daha sonraki kısımda yorumlar yapacağım.
+
+1202
+02:58:44,500 --> 02:58:51,420
+SFT'de iyi bir sonuç aldığımızı söylemiştim ancak CRPO bu sonucu çok fazla yükseltmedi.
+
+1203
+02:58:51,659 --> 02:58:59,600
+Burada bizim asıl kaynağımız başarılı olmasını sağlayan şey aslında biraz SFT oldu.
+
+1204
+02:59:00,120 --> 02:59:09,840
+SFT'den en başta Base modelde %15.8 yükseltirken işte CRPO'da %9.3 yükseltti. Çok kötü değil.
+
+1205
+02:59:09,904 --> 02:59:17,584
+Ancak bu da base modelde aslında geliştirilebilecek çok iyi alan olduğu için iyi bir sonuç veriyor.
+
+1206
+02:59:17,584 --> 02:59:24,504
+Sft üzerine GRPO'yu eklediğim zaman sadece %1.7 bir yükseliş elde ettik.
+
+1207
+02:59:24,504 --> 02:59:32,504
+MutiSft artı GRPO'da da yine MutiSft'ye %2'lik bir artış elde etmiş olduk.
+
+1208
+02:59:33,747 --> 02:59:45,587
+Model ne kadar temel ise o kadar iyi CRPO yükseltme yapıyor. Ancak eğitilmiş bir model üzerinde çok fazla geliştirme yapamadı.
+
+1209
+02:59:45,587 --> 02:59:57,308
+MultiSFT'de her şeyde daha iyi sonuç verdi. MultiSFT artı CRPO ile SFD artı CRPO'yu karşılaştırdığımızda da yine biraz daha iyi bir sonuç vermiş oldu.
+
+1210
+02:59:57,308 --> 02:59:59,608
+Diyebilirim.
+
+1211
+03:00:00,051 --> 03:00:16,051
+Burada eğitilmemiş modelde, pardon buraya Base'i koymamışım. GRPO'da train ve test arasındaki fark çok düşük ve hatta test de biraz daha yüksek.
+
+1212
+03:00:16,051 --> 03:00:22,608
+Ancak SFT'ye doğru ilerlediğimiz zaman bu aradaki fark yükseliyor.
+
+1213
+03:00:22,608 --> 03:00:36,688
+Sft, train sorularını görüp buna göre biraz daha iyi sonuç verirken genelleme kısmında biraz daha başarısı düşüyor diyebilirim.
+
+1214
+03:00:37,968 --> 03:00:48,688
+Sft, GRPO eklediğim zaman çok küçük bir overfitting'i çok az yükselterek, bu aradaki farkı çok az yükselterek
+
+1215
+03:00:50,004 --> 03:00:54,603
+Doğruluk üzerinde de aslında %1.5'luk bir fark oluşturuyor.
+
+1216
+03:00:54,863 --> 03:00:56,924
+Yani GRP'yi eklemek
+
+1217
+03:00:58,203 --> 03:01:01,263
+Daha iyi bir testte sonuç almamızı
+
+1218
+03:01:01,783 --> 03:01:05,103
+Sağlıyor ve train'deki şeyi de birazcık azaltıyor.
+
+1219
+03:01:05,884 --> 03:01:10,744
+Çok fazla arttırmadan daha doğrusu overfitting kısmını
+
+1220
+03:01:11,504 --> 03:01:12,283
+Diyebilirim.
+
+1221
+03:01:12,979 --> 03:01:28,779
+Farklılık çok düşük kaldı. Şurada göstermiştim. Farklılıklar çok düşük kaldı. Hatta eğitim yaptıkça da daha düştü. Bunun neden olabileceği ile ilgili bir yorum yapacak olursam.
+
+1222
+03:01:38,479 --> 03:01:56,199
+Aynı promptu vererek 5 kere tekrar tekrar aslında cevap üretmesini istedim. Eğer bunu işte 5 tane birbirinden farklı çözüm oluştur diyerek oluştursaydım ben 5 cevabı belki biraz daha farklı, farklılığı biraz daha yükseltebilirdim.
+
+1223
+03:01:56,915 --> 03:02:17,635
+MutiSFT kısmında özellikle. Bir de GRPO'da farklılığa belki bir ağırlık verseydim, farklılığı da ödüllendiren bir metrik koymuş olsaydım skora daha iyi bir sonuç elde edebilirdim diye düşünüyorum. Bu şekilde benim söyleyeceklerim. Teşekkür ederim.
+
+1224
+03:02:18,131 --> 03:02:20,131
+Yapay zekaya...
+
+1225
+03:02:20,131 --> 03:02:22,131
+Yapay zekaya tarafında onu da bir anlat.
+
+1226
+03:02:22,131 --> 03:02:28,131
+Yapay zekaya direkt bir çözüm yaptıramadım çünkü bunları çalıştırmam çok uzun sürdü.
+
+1227
+03:02:28,131 --> 03:02:35,131
+İşte bu GRPO'da özellikle ilk başta, SFT'den, SFT artı GRPO'da, SFT'den mesela daha düşük sonuçlar elde edildim.
+
+1228
+03:02:35,131 --> 03:02:40,131
+Bunları düzeltmek için farklı farklı şeyler denemem gerekti.
+
+1229
+03:02:40,131 --> 03:02:43,131
+Yapay zekayı şurada kullandım. Özellikle...
+
+1230
+03:02:43,731 --> 03:02:50,731
+API'dan cevap üretirken, kendim ilk başta bir base kodu yazdım.
+
+1231
+03:02:50,731 --> 03:02:53,731
+Daha sonra, hatta şöyle gösterecek olursam.
+
+1232
+03:02:53,731 --> 03:03:05,548
+Bunları asenkron olarak aynı anda 5 tane istek açtık bir şey yaparak.
+
+1233
+03:03:05,940 --> 03:03:13,739
+Biraz daha paralelde çalışması için aslında yapay zekadan destek aldım. Asenkron çalıştırarak.
+
+1234
+03:03:14,640 --> 03:03:20,020
+Base kodu kendim yazdım ama işte prompt olarak şöyle kullandım.
+
+1235
+03:03:20,280 --> 03:03:31,540
+Bunu da tekrar tekrar aslında ilk başta 50-100 tane örnek üretip bakıp ondan sonra değiştirerek biraz üretmiş oldum. İlk başta Latex ve Markdown'ları çok kullanıyordu.
+
+1236
+03:03:31,667 --> 03:03:47,948
+çözümlerde, gpdoss, bunları kaldırması için bunları kullanma gibi şeyler yaparak promptu optimize etmeye çalıştım. Bu da sorunun kendisini ve çözümü verdiğimde cevabı vermesi için kullandığım bir prompt.
+
+1237
+03:03:49,587 --> 03:03:51,427
+Bunları mı yazdın yani?
+
+1238
+03:03:52,568 --> 03:03:58,468
+Yok, burada kullandığımı söyledim. Yapay zekayı kullandığım kısımlardan bahsettim burada.
+
+1239
+03:03:58,912 --> 03:04:01,212
+Yapay zekayı kullanmadın neresi?
+
+1240
+03:04:01,731 --> 03:04:09,912
+Yapay zekayı kullanmadım. Mesela işte skorlamayı yaparken işte burada skorlamayı yaparken Türk C5'lerci kullandım Emlidink'te.
+
+1241
+03:04:10,172 --> 03:04:23,752
+İşte binary, soft ecuris vesaire gibi şeyleri hesaplarken buradaki kısımların %90'ını falan kendim yazdım. Hata aldığım yerlerde yapay zekadan destek aldım.
+
+1242
+03:04:24,512 --> 03:04:26,231
+Soft ecuris'i diye bir şey niye kullandın?
+
+1243
+03:04:27,443 --> 03:04:40,223
+Burada aslında onu da bir şey olarak GRPO'ya kullanabilirim diye düşünmüştüm ilk başta. GRPO'ya ödül olarak. Ancak sonradan onu kullanmamayı tercih ettim.
+
+1244
+03:04:40,223 --> 03:04:40,843
+Niye?
+
+1245
+03:04:42,223 --> 03:04:47,483
+Yani yakım vermesi aslında çok iyi bir şey olmadı.
+
+1246
+03:04:48,788 --> 03:05:14,731
+Denedin mi yani? Evet, evet. Birkaç deneme yaparken soft'u kullandım. Hatta 0.8 binary'e 0.2 soft'a gibi bir ağırlık vererek ilerledim. Ancak bu çok iyi sonuçlar vermedi. GRPO'nun sonuçları daha düşük çıkmıştı. İşte SFT artı GRPO SFT'den daha düşük çıkmıştı. O yüzden...
+
+1247
+03:05:14,868 --> 03:05:29,868
+En son olarak, Şurada da, Trend.grp.o kısmında, Formatı, Correctness ve Lengthine ağırlık vermiş oldum.
+
+1248
+03:05:32,868 --> 03:05:37,868
+Peki, teşekkürler. [öğrenci], sen devam edelim.
+
+1249
+03:05:44,628 --> 03:05:46,507
+Ekranımı görüyorsunuz değil mi hocam?
+
+1250
+03:05:47,408 --> 03:05:47,688
+Evet.
+
+1251
+03:05:52,051 --> 03:05:52,652
+Film nu.
+
+1252
+03:05:56,084 --> 03:06:09,623
+Hocam ben kodu yazmadım. Gerçekten hepsini collab'la yaptım. Yani collab'a yaptırdım daha doğrusu. Sonra parametreleri değiştirdim çıkan sonuçlar üzerine. Yorum yaparak ilerledim. Yetiştiremedim. İlk başta denedim ama olmadı.
+
+1253
+03:06:11,824 --> 03:06:21,623
+Eğitim birisiyeti zaten siz verdiniz. Base modeli de siz verdiniz. SFT çözümlerinin kaynağını siz vermişsiniz. Bunu kullanabilirsiniz diye ama...
+
+1254
+03:06:23,028 --> 03:06:29,427
+Ben onu değiştirdim. Neden değiştirdim? API gerektiriyordu. Çok fazla sorgu dönüyordu.
+
+1255
+03:06:29,427 --> 03:06:37,628
+Ondan dolayı Qn 2.5 14 milyonluk modeli kullandım. Bu modeli de seçerken şey yaptım.
+
+1256
+03:06:37,628 --> 03:06:42,628
+Milyon değil milyar. Milyar pardon. Bu modeli de seçerken hocam...
+
+1257
+03:06:43,347 --> 03:06:51,347
+Türkçe ve matematik sorularına iyi cevap verdiği için, yani Bayz modelden daha iyi başarımı olduğu için bunu seçtim.
+
+1258
+03:06:51,347 --> 03:06:55,347
+Daha sonra da Bayz modelin başarımı yapıyorum.
+
+1259
+03:06:55,347 --> 03:06:57,347
+Yapay zekleyi nasıl kullandın, onan alsana.
+
+1260
+03:06:57,347 --> 03:07:03,347
+Hocam, ilk baş problemi attım. Sizin verdiğiniz...
+
+1261
+03:07:03,347 --> 03:07:07,307
+Wordü gönderdim, sonra.
+
+1262
+03:07:07,476 --> 03:07:23,556
+Sonra dedim ki, bunu yapmam için bana bir yol haritası çıkar. Bana bir yol haritası çıkardı. Şunları, şunları yapalım, bunları yapalım dedi. Bundan öncesinde ben denemiştim bu, işte, base model eğitimini falan. Sonra zamanımın azaldığını görünce bıraktım. Direkt yapay zekaya sorarak ilerledim.
+
+1263
+03:07:23,896 --> 03:07:26,056
+Ne kadar sürdü mesela yapay zekalı yapmam?
+
+1264
+03:07:27,056 --> 03:07:31,816
+Hocam, eğitimler dahil 5 gün falan sürdü. 4 ya da 5 gün.
+
+1265
+03:07:33,216 --> 03:07:33,616
+Şey?
+
+1266
+03:07:34,355 --> 03:07:38,075
+Yani zamanımın az kaldığını görünce dedin ya, onu anlat.
+
+1267
+03:07:38,095 --> 03:07:46,855
+Evet hocam, ödeve ben biraz erken başladım aslında ama araya başka şeyler girdi.
+
+1268
+03:07:48,396 --> 03:07:49,796
+Ama dediğin çok doğru değil.
+
+1269
+03:07:52,376 --> 03:07:58,976
+[kişisel bilgi]
+
+1270
+03:07:59,311 --> 03:08:04,512
+[kişisel bilgi]
+
+1271
+03:08:06,072 --> 03:08:12,951
+[kişisel bilgi]
+
+1272
+03:08:14,271 --> 03:08:19,311
+[kişisel bilgi]
+
+1273
+03:08:19,311 --> 03:08:21,592
+[kişisel bilgi]
+
+1274
+03:08:22,471 --> 03:08:26,512
+[kişisel bilgi]
+
+1275
+03:08:27,956 --> 03:08:38,496
+[kişisel bilgi]
+
+1276
+03:08:38,496 --> 03:08:55,595
+[kişisel bilgi]
+
+1277
+03:08:56,884 --> 03:09:11,924
+[kişisel bilgi]
+
+1278
+03:09:11,924 --> 03:09:16,244
+[kişisel bilgi]
+
+1279
+03:09:17,492 --> 03:09:22,311
+[kişisel bilgi]
+
+1280
+03:09:23,051 --> 03:09:32,832
+[kişisel bilgi]
+
+1281
+03:09:34,452 --> 03:09:36,772
+[kişisel bilgi]
+
+1282
+03:09:41,747 --> 03:10:08,108
+[kişisel bilgi]
+
+1283
+03:10:08,691 --> 03:10:29,771
+[kişisel bilgi]
+
+1284
+03:10:31,860 --> 03:10:55,639
+[kişisel bilgi]
+
+1285
+03:10:56,051 --> 03:11:20,152
+[kişisel bilgi]
+
+1286
+03:11:20,819 --> 03:11:42,119
+[kişisel bilgi]
+
+1287
+03:11:42,119 --> 03:11:42,619
+[kişisel bilgi]
+
+1288
+03:11:43,020 --> 03:11:48,819
+[kişisel bilgi]
+
+1289
+03:11:49,556 --> 03:12:03,775
+[kişisel bilgi]
+
+1290
+03:12:04,675 --> 03:12:11,216
+[kişisel bilgi]
+
+1291
+03:12:11,216 --> 03:12:17,556
+[kişisel bilgi]
+
+1292
+03:12:17,556 --> 03:12:42,876
+[kişisel bilgi]
+
+1293
+03:12:43,956 --> 03:12:48,256
+Tamam hocam. Tamam. Hadi bakalım. Görüşmek üzere. Estağfurullah.
