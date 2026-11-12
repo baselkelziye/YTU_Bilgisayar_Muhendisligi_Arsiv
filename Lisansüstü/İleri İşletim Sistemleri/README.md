@@ -10,6 +10,7 @@
 
 ## 📖 Faydalı Olabilecek Kaynaklar
 
+- 📄 **Ders Kayıtları:** [İleri İşletim Sistemleri Ders Kayıtları](./ders_kayitlari/) ✨
 - 📄 **Makale:** [Önder'in okumaları](./makale%20sunum%20%C3%B6devleri/2023/ondergormez) ✨
 - 📄 **Not:** [Önder'in markdown notları](./slaytlar_notlar/2023/onder_gormez%20markdown) ✨
 - 📄 [Genel Çıkmış Sorular](https://drive.google.com/drive/folders/1imIiwx0xxIPWREGP-YqotnFdUku8Ealf)

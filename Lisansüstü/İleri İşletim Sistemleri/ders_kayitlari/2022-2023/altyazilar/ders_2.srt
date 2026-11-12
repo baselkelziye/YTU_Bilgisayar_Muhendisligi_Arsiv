@@ -1,0 +1,711 @@
+1
+00:00:11,987 --> 00:00:13,427
+Sesim geliyor mu arkadaşlar?
+
+2
+00:00:19,443 --> 00:00:20,283
+Geliyor hocam.
+
+3
+00:00:21,283 --> 00:00:21,683
+Harika.
+
+4
+00:00:31,923 --> 00:00:34,403
+Biraz bekleyelim. Arkadaşlarınız katılıyor.
+
+5
+00:00:35,863 --> 00:00:36,503
+Merhabalar.
+
+6
+00:00:37,164 --> 00:00:38,543
+Merhaba, Sefer.
+
+7
+00:00:40,944 --> 00:00:43,603
+Hocam birkaç kere mail attım. Kusura bakmayın lütfen.
+
+8
+00:00:44,364 --> 00:00:46,064
+Az önce sana cevap verdim.
+
+9
+00:00:46,844 --> 00:00:47,504
+Gördüm hocam.
+
+10
+00:00:47,623 --> 00:00:48,704
+Gördün değil mi? Tamam.
+
+11
+00:00:49,103 --> 00:00:50,444
+Gördüm. Teşekkür ederim hocam.
+
+12
+00:00:50,704 --> 00:00:52,403
+Allah'a ben teşekkür ederim.
+
+13
+00:01:07,572 --> 00:01:17,671
+5 dakika kadar bekleriz. Kimler geldiyse onlarla, yani sizlerle ek olarak kimler geldiyse hep beraber yaparız. Tamam, başlarız dersimize.
+
+14
+00:08:14,644 --> 00:08:38,403
+Zannedersem bu kadar olacağız. Toplam kaç? 10 kişiyiz. Benimle beraber 11. Şimdi arkadaşlar, kim başlamak ister? Bu vermiş olduğum, size göndermiş olduğum paper'ın içeriği nedir? Amacı nedir? Genel olarak hızlıca bir kısa bilgi vermek ister.
+
+15
+00:08:48,340 --> 00:08:53,660
+Hocam ben inceleme fırsatı bulamadım da. Tarihi de 13 olunca.
+
+16
+00:08:54,740 --> 00:09:01,399
+Bir tane paper önder. 3-4 tane olunca ne yapacaksınız? Eyvah eyvah.
+
+17
+00:09:04,179 --> 00:09:07,259
+Evet, diğer arkadaşlar. Ben isimlerinizi biliyorum.
+
+18
+00:09:07,379 --> 00:09:08,859
+İnceledim hocam, ben konuşabilir miyim?
+
+19
+00:09:09,259 --> 00:09:10,919
+Tabii ki [öğrenci], konuşabilirsin.
+
+20
+00:09:11,519 --> 00:09:14,019
+[kişisel bilgi] Bir dahaki haftaya çizgi.
+
+21
+00:09:14,119 --> 00:09:15,119
+Geçmiş olsun.
+
+22
+00:09:15,419 --> 00:09:16,199
+Teşekkür ettim hocam.
+
+23
+00:09:16,419 --> 00:09:17,379
+Acil şifalar.
+
+24
+00:09:17,919 --> 00:09:18,479
+Sağ olun hocam.
+
+25
+00:09:18,959 --> 00:09:24,639
+Paper, bu link meselesini Hardware'de nasıl implant ederiz onu anlatıyor biraz.
+
+26
+00:09:24,859 --> 00:09:25,879
+Başlarken şey diyor işte.
+
+27
+00:09:26,515 --> 00:09:31,355
+Öyle bir sistem yapmaya kalktığınız zaman işte dört tane şey olsun diyor işte.
+
+28
+00:09:32,015 --> 00:09:34,915
+Nasıl bir sistem yapıyor ama? Yani yaptığı sistem ne?
+
+29
+00:09:34,915 --> 00:09:38,555
+Onu da anlatayım hocam. Kriterleri anlattıktan sonra anlatayım mı?
+
+30
+00:09:40,336 --> 00:09:49,115
+Kriterlerimiz dayandığı noktalar Functional Capability, Economy, Simplicity ve Programming Generality diye.
+
+31
+00:09:49,836 --> 00:09:53,555
+Bu dört şeyden yola çıkarak bir sistem kuracağız diyor.
+
+32
+00:09:54,292 --> 00:10:17,331
+Sonra şeyi anlatıyor. İşte Segmented Virtual Memory anlatıyor işte. Memorinin Word of Arrays olduğunu söylüyor. Sonra bu memoriyle Virtual Memory arasındaki bağlantıyı söylüyor. İşte bir soft table'dan bu memori adresi indeksinin tutuldu. Ondan sonra buradan gerçek memoriye gidilebildi.
+
+33
+00:10:17,779 --> 00:10:24,399
+Sonra şey diyor, bu segmentlerle ilgili bir kontrol mekanizmasından bahsediyor. İşte read, write, execute, her segmentin bir izni var.
+
+34
+00:10:24,460 --> 00:10:32,331
+[öğrenci], heyecanla anlatıyorsun. Çok da güzel bir şey. Tam böyle istediğim motivasyon. Ama paperın...
+
+35
+00:10:32,467 --> 00:10:48,627
+Temelinde bir şey var. Yani bunu ne için yapmışlar? Bu paper'ın ana araştırma noktası veya ana motivasyonu ne? Bana önce onu bir söyleyebilir misin? Sonra ayrıntıları anlatabilirsin. Ama paper'ın ana motivasyonu nedir?
+
+36
+00:10:48,627 --> 00:10:59,107
+Ana motivasyon, ben şöyle düşünüyorum hocam. Hardware seviyesinde bu prosedür çağrılarının işte farklı bir memori segmentine geçerken
+
+37
+00:10:59,183 --> 00:11:11,003
+Belli başlı kriterler koymak. İzin olarak. Hani herkes her yere erişemezsin, her proses her yere erişemezsin. Bunu engellemek için belli başlı kriterler koymak. Kısıtlamalar getirmek.
+
+38
+00:11:11,723 --> 00:11:23,223
+Şimdi güzel, evet kısıtlamalar ama bak, hepinize söylüyorum. Yani [öğrenci]'la konuştuğumuz için, cevabı o verdiği için onu adresliyor gibi olabilirim ama hepinize söylüyorum.
+
+39
+00:11:23,223 --> 00:11:25,543
+İntrodakşında çok basit bir şey yazıyor.
+
+40
+00:11:26,067 --> 00:11:49,508
+The topic of this paper is the control of access to stored information in a computer utility. Yani access control. Bu paperın ana motivasyon, ana amacı erişimi nasıl kontrollü hale getirebiliriz? Bunun için çalışmışlar bu adamlar. Bunu nasıl beceririz diye.
+
+41
+00:11:49,971 --> 00:11:53,771
+Ve çalıştıkları zaman hangi tarih arkadaşlar?
+
+42
+00:11:54,531 --> 00:11:55,751
+1970'lerde bir şey.
+
+43
+00:11:56,072 --> 00:11:59,251
+1972. Tamam mı? 1972.
+
+44
+00:11:59,251 --> 00:12:12,432
+Ve bu paperda ortaya konulmuş olan bu Hanivel işlemci var diyorlar ya işte 645 üzerinde de Multics çalışıyor da diyorlar ya.
+
+45
+00:12:13,131 --> 00:12:16,251
+Orada ortaya konulmuş olan yapı.
+
+46
+00:12:16,980 --> 00:12:21,799
+Sizce günümüzde hala daha yaşıyor mu? Var mı? Biliyor musunuz?
+
+47
+00:12:22,819 --> 00:12:24,240
+Cevap verebilir miyim hocam?
+
+48
+00:12:24,779 --> 00:12:25,220
+Efendim?
+
+49
+00:12:25,799 --> 00:12:26,559
+Cevap verebilir miyim?
+
+50
+00:12:26,559 --> 00:12:27,559
+Tabii ki.
+
+51
+00:12:28,319 --> 00:12:39,700
+Bu ring yapısı Linux tarafını biliyorum ben. Linux'te iki ring kullanılıyor. Ring 0 ve Ring 3. Ring 0 kernel kodu. Donanımlı sadece kernel kullanıyor.
+
+52
+00:12:40,128 --> 00:12:59,248
+Evet. İşte siz örneğin bir kod yazdınız. Printf yazdınız. Printf write sistem çağrısını çağırıyor. O da işte software interlap atıyor. Kod kernel'a geçiyor. Link 3'den link 0'ya geçiyorsunuz. Orada tabii device driver da araya giriyor. Ondan sonra kernel çalışıyor link 0'dan.
+
+53
+00:13:00,307 --> 00:13:10,687
+O zaman peki şimdi çok güzel söyledin. Hangi işlemci mimarisini, günümüzdeki hangi bir işlemci mimarisini referans alarak bunu söyledin? Ring 0 ve Ring 3'ü.
+
+54
+00:13:11,668 --> 00:13:13,327
+Intel yapıyordu galiba bunu hocam.
+
+55
+00:13:13,327 --> 00:13:25,292
+Aynen. Oradan da bak şunu söyleyebiliriz. Intel'in oluşturduğu, kullandığı işlemcisinde Intel, hani o...
+
+56
+00:13:25,331 --> 00:13:38,392
+İki yüz seksen altı ile beraber, Protected Mode olarak karşımıza çıkan, işte üç yüz seksen altı, dört yüz, beş yüz, Pentium, neyse şu anki şeyleriyle beraber, İ3, İ5, İ7 ailesiyle beraber.
+
+57
+00:13:39,111 --> 00:13:48,111
+Oradaki Protected Mode'un temelinde aslında 1972 yılında yazılmış olan şu paper var.
+
+58
+00:13:48,111 --> 00:13:52,111
+Intel'deki mühendisler kendi kendilerine yeni bir şey düşünmüyorlar.
+
+59
+00:13:53,587 --> 00:14:06,327
+Hanivel'deki 645, o zaman işte o işlemciler öyle isimlendiriliyor, sistem bunlar. Oda büyüklüğünde neredeyse bu bahsettiğimiz şey. Ve onun üzerindeki Multics.
+
+60
+00:14:06,932 --> 00:14:22,091
+İşletim Sisteminde bu paper kapsamında yapılmış deneyler anlatılanlardan yola çıkarak Intel işlemcisindeki protection mekanizmasını, yani access control mekanizmasını tanımlıyorlar.
+
+61
+00:14:23,011 --> 00:14:31,412
+O yüzden size geçen hafta ilk derste demiştim ya, bazı paperlar okuyacağız ki, yani bu işin başlangıcı temel noktası.
+
+62
+00:14:33,268 --> 00:14:42,968
+İşte 2022'yi devirdik, 2023'ün ortasına geliyoruz neredeyse. 50 senelik bir şey, 50 sene önce ortaya atılmış bir şey hala da devam ediyor.
+
+63
+00:14:47,231 --> 00:14:59,071
+Günümüzde kullanmaya devam ettiğimiz veya bugüne kadar var olup da şu anda kullanımda da tamamen kalkmış veya azalmış olan işlemci mimarilerinde de benzer bir yapıyı görüyoruz.
+
+64
+00:14:59,451 --> 00:15:13,031
+Bu yüzden akses kontrol mekanizmalarının oluşturulması açısından çok temel ve çok çok önemli bir yayın bu.
+
+65
+00:15:13,683 --> 00:15:40,563
+Keyword'lere bakacak olursak Protection diyor. Az önce söyledim ya, Intel'de Protected Mode var. Protection Rings diyor. Protection Hardware diyor. Devamında Access Control ve Hardware Access Control. Bu paper öncesinde, buradaki paper ile yayınlananlar, tabii ki ona bağlı olarak yapılmış olan çalışmalar var. O Honeywell işlemcisi üzerinde.
+
+66
+00:15:41,024 --> 00:15:45,844
+Onun öncesinde access control nasıl sağlanmaya çalışılıyor?
+
+67
+00:15:47,663 --> 00:15:49,624
+Bir şey söyleyebilir miyim hocam?
+
+68
+00:15:50,063 --> 00:15:50,303
+Tabii.
+
+69
+00:15:51,203 --> 00:15:53,344
+Orada şeyden bahsediyor, belki dediğiniz odur.
+
+70
+00:15:54,104 --> 00:15:58,783
+İşte proseslerin bu segmented memori nasıl kullanabileceğinden bahsediyor.
+
+71
+00:15:58,903 --> 00:16:02,063
+İşte diyelim A prosesi, B prosesinin olduğu bir yere erişmek istiyor.
+
+72
+00:16:03,024 --> 00:16:04,563
+Şey yapılabilir diyor işte.
+
+73
+00:16:05,139 --> 00:16:20,420
+Akses kontrol sağlayabilirsiniz A, B'ye. İşte birden fazla user olduğu zaman bir sürü akses kontrol sağlayabilirsiniz. Bunun da birkaç paper'ını gösteriyor ama işte bu çok, bu anlattı 4 Functional Economy Simplicity. Bunlar çok uyumacağı için diyor, biz bu ring seviyesini getirdik diyor.
+
+74
+00:16:20,880 --> 00:16:23,700
+Daha önceden işte neyle yapmaya çalışmışlar?
+
+75
+00:16:23,700 --> 00:16:25,240
+Bu akses kontrollerle işte.
+
+76
+00:16:26,640 --> 00:16:31,759
+Akses kontrol zaten şu anda yapılan şey. Bunun genel adı akses kontrolü.
+
+77
+00:16:31,956 --> 00:16:49,495
+Akses kontrolü daha öncesinde ne ile yapıyorlarmış? Diğer arkadaşlardan hiç katılım yok mu? [öğrenci], [öğrenci], [öğrenci], [öğrenci], [öğrenci], [öğrenci], [öğrenci], görebildiğim isimler, [öğrenci], [öğrenci].
+
+78
+00:16:53,331 --> 00:16:54,852
+Duyuyor musunuz beni arkadaşlar?
+
+79
+00:16:56,292 --> 00:16:58,172
+Evet hocam, ben de duyuyoruz.
+
+80
+00:16:58,812 --> 00:17:03,912
+Tamam, hiç katılımınız yok mu? [öğrenci]'la biz burada ikili şey yapıyoruz.
+
+81
+00:17:04,711 --> 00:17:07,791
+Hocam, okumuşsatım olmadı. Benim hep sistemde teknik...
+
+82
+00:17:07,791 --> 00:17:11,892
+Tamam, sen teknik şeylerden dolayı bu hafta muhafsın zaten.
+
+83
+00:17:12,892 --> 00:17:15,972
+Önümüzdeki hafta inşallah [öğrenci]'ın yerine ben hepsini okumuş olurum.
+
+84
+00:17:16,432 --> 00:17:18,572
+İnşallah, tamam. Evet, diğer arkadaşlar.
+
+85
+00:17:19,859 --> 00:17:23,139
+Hocam ben de çok kısa bir şey söylemek istiyorum.
+
+86
+00:17:23,359 --> 00:17:24,079
+Söyle bakalım.
+
+87
+00:17:24,799 --> 00:17:27,679
+Yani şöyle cehaletimi bağışlayın.
+
+88
+00:17:27,779 --> 00:17:28,119
+Ne demek?
+
+89
+00:17:28,859 --> 00:17:36,299
+Bu sisteme siz koydunuz ya, program yapısında ödev sınava başla diye bir link vardı.
+
+90
+00:17:36,299 --> 00:17:37,000
+Evet.
+
+91
+00:17:37,000 --> 00:17:41,759
+Hocamız dosyayı bir yere gönderdi de sonucumu buraya aktaracağız.
+
+92
+00:17:41,960 --> 00:17:46,359
+Yani o sürezi aslında atmam gereken bir şey diye.
+
+93
+00:17:47,859 --> 00:17:51,059
+Gidince cesaret edemedim. Derste soracaktım. Kusura bakmayın.
+
+94
+00:17:52,379 --> 00:17:55,159
+Sen hiç içeriye bakmadın yani [öğrenci].
+
+95
+00:17:55,179 --> 00:18:01,199
+Hocam ben ona basınca yani o an sisteme bir sınav, çünkü sınav vesaire de diyor hocam.
+
+96
+00:18:01,899 --> 00:18:09,259
+Bir de bitiştahide 15 deyince, acaba sosyal haricen bilin ki geldi de oradan okuyup buradan mı yıkıyacağız?
+
+97
+00:18:10,099 --> 00:18:10,519
+Anladım.
+
+98
+00:18:10,579 --> 00:18:14,079
+O yüzden size bunu soracaktım. Kusura bakmayın hocam.
+
+99
+00:18:14,516 --> 00:18:19,936
+Ama soracağın soruyu cevapladın herhalde kendi kendine. Öyle anlıyorum değil mi?
+
+100
+00:18:20,436 --> 00:18:23,836
+Şöyle oldu hocam. Dersde artık o şeye bastım.
+
+101
+00:18:24,276 --> 00:18:28,276
+Tamam. Cesaret edip bastım gördüm diyorsunuz hocam.
+
+102
+00:18:28,296 --> 00:18:29,536
+Evet hocam bastım.
+
+103
+00:18:29,599 --> 00:18:39,619
+Hatta orada da yükle yazıyordu da geri çıktım dosyayı indirip. Bir hızla işle bak tanışıyorum hocam. Bu dönem sistemini öğreniyoruz.
+
+104
+00:18:39,619 --> 00:18:46,019
+Ama doğrudur ısınma turu diye düşünelim bunu. [öğrenci], sen baktın mı?
+
+105
+00:18:46,804 --> 00:18:50,244
+Hocam, ben de pazartesi görebildim ödevi.
+
+106
+00:18:50,784 --> 00:18:51,024
+Evet.
+
+107
+00:18:51,804 --> 00:18:54,943
+Yalnızca introduction kısmını biraz okuyabildim.
+
+108
+00:18:54,943 --> 00:19:00,084
+Dediğiniz gibi multik sistemler, multik işletim sisteminden biraz bahsediyor.
+
+109
+00:19:00,864 --> 00:19:05,344
+İşte MIT ve Cambridge tarafından geliştirildiğini gördüm.
+
+110
+00:19:05,811 --> 00:19:21,511
+Daha sonrasında segmentasyon kullanan sistemler için kontrolü erişimi kullanan belli erişimi güvenli şekilde yapılmasına odaklanmış bir yıllık. Biraz bu kısımlara bakabildim. Yani önce başlangıçta kalkmış şu anda.
+
+111
+00:19:21,511 --> 00:19:28,291
+Anladım. Peki yine az önceki soruya geri döneyim.
+
+112
+00:19:29,587 --> 00:19:52,627
+Hanivel 645 kullanılarak onun üzerinde MIT ve işte şeyin Cambridge'in bir arada çalışıp da oluşturduğu bu yapı öncesinde akses kontrol için ne var arkadaşlar? Hiç ona ilgi duyup bakanınız veyahut da okurken şöyleymiş diyeniniz çıktı mı? Oraya kadar ilerleyeniniz var mı?
+
+113
+00:19:57,652 --> 00:20:02,791
+Anladığım kadarıyla yok. Ha, el kalktı. Evet, [öğrenci] söyle.
+
+114
+00:20:04,751 --> 00:20:11,092
+Hocam, tam dediğiniz şey mi bilmiyorum ama bu segmentin read-write-execute haklarının olması aslında bir tane...
+
+115
+00:20:11,092 --> 00:20:15,892
+Değil, değil, değil. Bak sen bunu yoğunla... Bunun öncesinde ne var diye soruyorum.
+
+116
+00:20:15,932 --> 00:20:17,012
+Ha, tamam anladım hocam.
+
+117
+00:20:17,072 --> 00:20:20,312
+Bunun öncesinde ne var? Sen buraya yoğunlaşarak cevap veriyorsun.
+
+118
+00:20:20,948 --> 00:20:44,780
+Bunun öncesinde bir şey olması lazım değil mi? Bak yani söyledin ya ekonomik değil var olan yöntemler. Veyahut da yeterince nasıl diyeyim efektif değil. Aynı anda birden fazlasının, birden fazla prosesin çalışmasına uyumlu değil. Virtual Memory yapısını...
+
+119
+00:20:44,852 --> 00:21:10,532
+Tam olarak desteklemiyor falan bir sürü şey var böyle. Daha öncesinde ne var hiç? En başında ne var? Software kontrol var. Software akses kontrol var arkadaşlar. En başında olay öyle başlıyor. Yazılımla bunu çözmek istiyorlar. Olmuyor. Doğal olarak olmuyor. Çalışan bir programın memori de nereye?
+
+120
+00:21:12,276 --> 00:21:29,976
+erişeceğini, donanım kontrolü olmaksızın kısıtlayabilmek, yani nereye erişip erişmeyeceğini kısıtlayabilmek mümkün değil. Daha sonra basit bir donanım mimarisiyle bunu yapmaya çalışıyorlar ama
+
+121
+00:21:30,415 --> 00:21:42,695
+O da az önce [öğrenci] arkadaşımızın en başta söylediği dört tane sebepten ötürü ondan dolayı uygun olmuyor.
+
+122
+00:21:43,415 --> 00:21:53,915
+Evet, şimdi peki introduction'un ötesine geçenler, [öğrenci]'ın biraz okuduğunu biliyoruz. Introduction'un ötesine geçenler kimler?
+
+123
+00:21:57,523 --> 00:21:59,723
+Introduction'ı okuyanlar kimler?
+
+124
+00:22:04,468 --> 00:22:11,648
+Sisteme ödev yüklenenler kimler diye sorayım. Eyvah eyvah arkadaşlar.
+
+125
+00:22:17,172 --> 00:22:44,192
+Şimdi bakın şöyle bir durum var. Ben bu paperların değerlendirmesini çok uzun senelerden beri sizler gibi dersimi alan öğrencilerle yapıyorum. Arkadaşlarla beraber yapıyorum. O yüzden bir noktadan sonra bu paperların içeriği benim için tekrar tekrar okuduğum yazılar gibi. Orasında şu vardı, burasında bu vardı.
+
+126
+00:22:44,703 --> 00:23:09,864
+Biliyorum ama benim bilmem önemli değil. Sizin öğrenmeniz önemli. Sizin bunları fark etmeniz, o ilişkileri kurmanız önemli. Yani bilimsel bir yayını inceleyebilmek, oradan gerekli ana fikri, önemli olan bilgileri ayıklayabilmek, çıkartabilmek. Bunlar çok önemli. Çok değerli şeyler.
+
+127
+00:23:10,804 --> 00:23:36,124
+Siz öğrenin diye bu dersin formatı bu şekilde. Yoksa ben size bunları motomot anlatırım. Ama kendi bilgilerimi tazelemiş olurum. Kendime tekrar hatırlatmış olurum. Ben bunu size verirken heyecanla okursunuz, sağını solunu çizersiniz, not alırsınız. Onları da bir araya getirirsiniz.
+
+128
+00:23:37,167 --> 00:24:04,167
+Ödevin açıklamasında da yazdım, geçen hafta da söyledim. Amacı ne? Kapsamı ne? Yapılan teorik ve pratik çalışmalar ne? Elde edilen sonuçlar ne? İleride incelenmesi gereken kısımlar ne? Gibi temel bilimin ilerlemesine sebep olan soruları sorarsınız ve bunların cevabını basit bir...
+
+129
+00:24:05,044 --> 00:24:28,004
+Özetle sisteme yüklersiniz diye düşünmüştüm. Şimdi bunu çözmemiz lazım. Yani dersimizin formatı bu olacak. Hazırlanmanız gerekiyor. Ben özellikle ilk hafta bir tane paper verdim. Böyle bir şey yaşayabileceğimizi tahmin ediyordum. Daha önceki senelerdeki tecrübelerimden ötürü.
+
+130
+00:24:32,500 --> 00:24:35,000
+Çabuk toparlanmamız lazım, öyle söyleyeyim.
+
+131
+00:24:40,403 --> 00:25:06,403
+Burada baya güzel, eğlenceli şeyler var. Yani en azından şu an desktop'larınızda, server'larınızda, tabletlerinizde kullandığınız bir işlemcinin donanım yapısının ve ona bağlı olarak üzerinde çalışan modern işletim sistemleri, ister Linux olsun, ister Windows olsun, bunların...
+
+132
+00:25:07,092 --> 00:25:34,352
+Anayapısının 70'li yıllarda ortaya atıldığını bilmek, incelendiğini bilmek ve diğer taraftan da bu kadar 50 yıl içerisinde bir şey değişmez mi? Bu kadar mı kompakt ve düzgün olarak yapmışlar sorusu karşısında şaşırmak veyahut da evet hakikaten hayranlık duyulacak bir şey demek bence önemli. Bunun farkına varmanız gerekiyor.
+
+133
+00:25:34,996 --> 00:26:00,996
+Olaya yaklaşımım bu. Buradaki her satırı, her cümleyi bilmek zorunda değilsiniz ama bu gate yapısı nedir? Ring yapısı nedir? Gate yapısına niye ihtiyaç duyuluyor? Daha yüksek seviyeden, daha düşük güvenlik seviyesinden, protection seviyesinden, daha düşük protection seviyesine geçmek ile daha...
+
+134
+00:26:01,044 --> 00:26:20,364
+Düşük protection seviyesinden, daha yüksek protection seviyesine geçmek arasındaki o karşılaştırma, nelerin olması, nelerin olmaması gerektiği, niçinleriyle beraber size bir bakış açısı kazandırmak için aslında sizden beklediğim bir şey.
+
+135
+00:26:22,364 --> 00:26:25,604
+Yani bir call, bir return çok basit görünüyor.
+
+136
+00:26:27,380 --> 00:26:39,720
+Çağırdım, bir adrese gittim, geri döndüm ama gittiğim adres aynı ringteki, aynı segmentte değilse ne oluyor? İşte o araya gate yapısı giriyor falan gibi şeyler.
+
+137
+00:26:54,132 --> 00:27:14,152
+Çıkartılmış olan şeyler. Bir bakın, paper'ın diğer güzel bir tarafı da şu. Generalization, yani bir genelleme ve 50 sene sonra hala bu paper'daki ortaya atılmış olan yapının kullanıldığını görmek.
+
+138
+00:27:19,859 --> 00:27:36,811
+İlk o protected modu implement ederken temel kabul edip kullandıklarını görmek, diğer işlemci mimarilerinde de benzer yapıları görmek aslında şu paperı yazmak için...
+
+139
+00:27:37,044 --> 00:27:50,944
+Çaba sarf etmiş, emek vermiş ve onu zihin gücü, bilgisini kullanmış olan insanların hakikaten generalizasyon konusunda ne kadar başarılı bir iş yaptığını gösteriyor.
+
+140
+00:27:51,024 --> 00:27:55,384
+Ne kadar ileriye dönük bir bakış açılarının olduğunu gösteriyor.
+
+141
+00:27:59,284 --> 00:28:09,644
+Yani o ana kadar olan işte Supervisor User 2 seviyelinin farklı bir şekilde gündeme gelmesi.
+
+142
+00:28:09,644 --> 00:28:18,284
+Shared Virtual Memory ve Segmentation'ı desteklemesi. Ne diyor bakın? Üç tane temel problemi çözer diyor.
+
+143
+00:28:18,864 --> 00:28:26,644
+Users can create arbitrary but protected subsystems for use by others. Başkaları için.
+
+144
+00:28:27,316 --> 00:28:31,875
+Korumalı, başkalarının kullanabileceği yapılar oluşturabiliyorlar.
+
+145
+00:28:33,395 --> 00:28:36,935
+The supervisor can be implemented in layers which are enforced.
+
+146
+00:28:37,275 --> 00:28:47,455
+Supervisor dediğimiz, yani işletim sisteminin kernel'ı daha korumalı bir şekilde, diğerlerinden izole edilmiş bir şekilde oluşturabiliyor.
+
+147
+00:28:47,715 --> 00:28:54,096
+O kadar önemli bir kavram ki, security'deki compartmentalization'ın temeli bu aslında.
+
+148
+00:28:54,740 --> 00:29:06,659
+Parçalara bölme, birbirinden izole etme. Ve üçüncüsü de, the user can protect himself while debugging his own programs.
+
+149
+00:29:09,299 --> 00:29:36,000
+Kullanıcıyı kendisinden koruyor. Bu da çok çok önemli. Isolation'ın temeli aslında baktığımız zaman yine kompütür seküritede isolation'ın dereceleri var. Prosesler arası isolation. System call interposition diyoruz. Ama diğer tarafta aynı prosesin içindeki parçaların birbirinden izolasyonu. Software fault isolation diyoruz ona da.
+
+150
+00:29:36,819 --> 00:29:41,420
+SFI, işte bakın, kullanıcıyı kendinden koruyor.
+
+151
+00:29:41,860 --> 00:29:44,779
+While debugging his own or borrowed programs.
+
+152
+00:29:46,480 --> 00:29:46,860
+Evet.
+
+153
+00:29:49,279 --> 00:29:53,779
+Arkadaşlar, biraz bu gözle bakmanızı umuyorum ve diliyorum.
+
+154
+00:29:56,960 --> 00:29:58,620
+Dersimizin formatı bu.
+
+155
+00:29:59,740 --> 00:30:04,140
+Şu an bu paperla alakalı çok heyecanlı konuşamadık.
+
+156
+00:30:05,044 --> 00:30:23,163
+Takdir edersiniz. Katılım sağlamaya çalışanlara teşekkür ediyorum. Ama belirli sebeplerden, teknik sebeplerden dolayı katılamamış olanlar da bugün muaflar. Ama önümüzdeki haftalar için bunu telafi etmeniz gerekiyor. Anlaştık mı?
+
+157
+00:30:24,824 --> 00:30:26,423
+Evet, tamam hocam. Anlaştık.
+
+158
+00:30:28,243 --> 00:30:29,223
+Teşekkürler.
+
+159
+00:30:30,284 --> 00:30:31,284
+Estağfurullah.
+
+160
+00:30:33,811 --> 00:30:41,611
+Ben bunu şey olarak görüyorum, bu derse önem verdiğiniz için aldığınızı düşünüyorum.
+
+161
+00:30:42,731 --> 00:30:52,631
+O zaman da elimden geldiğince bendeki bilgiyi size, sizde en kalıcı olacak şekilde aktarmayı hedefliyorum amacım bu.
+
+162
+00:30:52,631 --> 00:31:00,131
+Yoksa size ekstra bir zorluk çıkarmak değil. Yaklaşım bu, başka bir şey değil arkadaşlar.
+
+163
+00:31:02,132 --> 00:31:23,832
+O zaman bu hafta yine ödev vereceğim. Ama önümüzdeki hafta buradan başlayacağız. Şurada ben size çok basit böyle pointerlar denir ya, nokta atışı şurası var, burası var falan bir şeyler söylemeye çalıştım. Ama tekrar buradan başlayacağız.
+
+164
+00:31:28,980 --> 00:31:43,140
+Yarına vermiş olurum. İki vereyim şimdilik de. Bir alışın toplam üç tane olsun. Bir tanesi zaten geçen haftadan geliyor. İki tane daha paybacker veriyorum. Tamam mı?
+
+165
+00:31:43,140 --> 00:31:44,080
+Tamam hocam.
+
+166
+00:31:44,720 --> 00:31:45,420
+Tamamdır hocam.
+
+167
+00:31:45,500 --> 00:31:46,860
+Ne çok çocuk oldu.
+
+168
+00:31:48,660 --> 00:31:54,180
+Kimin çocuğu? Onu da dahil edelim, onu da paperin çalışıyorum.
+
+169
+00:31:54,420 --> 00:31:58,440
+Benim hocam, kusura bakmayın. Çok teşekkür ederim.
+
+170
+00:31:59,039 --> 00:32:03,019
+Mikrofonu açtım. Zaten maçom makaleyi kullanamadığım için.
+
+171
+00:32:03,480 --> 00:32:05,099
+O da ekip sordum.
+
+172
+00:32:05,940 --> 00:32:07,180
+Ona ver, o yapsın.
+
+173
+00:32:07,920 --> 00:32:11,059
+Ona ver, o yapsın ya. Bakalım nasıl.
+
+174
+00:32:12,140 --> 00:32:13,640
+Sağısına iki tane zaten.
+
+175
+00:32:16,660 --> 00:32:30,839
+Arada küçük olan benim işlerim, ben kalktım bilgisayarım baştan benim işlerim vardı, hep o geçiyor. [kişisel bilgi] Hafta sonuna da bakamadım. Öyle soraklanacağım bir şey de diyemedim.
+
+176
+00:32:30,839 --> 00:32:39,440
+Evet, telafi edeceğinize inanıyorum ben hepinizin. Hepinize şingilik iyi akşamlar diliyorum. Sağlıcakla kalın arkadaşlar. Haftaya görüşürüz.
+
+177
+00:32:39,960 --> 00:32:43,779
+İyi akşamlar.
+
+178
+00:32:44,660 --> 00:32:46,660
+Teşekkürler.

@@ -1,0 +1,755 @@
+1
+00:00:50,740 --> 00:01:02,600
+Duyabiliyor musun [öğrenci]? Evet hocam, sesiniz geliyor. Tamam, bir iki dakika bekleyelim bakalım kaç kişi gelecek. Tamamdır hocam.
+
+2
+00:07:11,124 --> 00:07:15,184
+Galiba toplam bu kadar olacağız diye düşünüyorum.
+
+3
+00:07:18,184 --> 00:07:19,944
+Duyuyorsunuz değil mi beni arkadaşlar?
+
+4
+00:07:22,184 --> 00:07:23,664
+Evet hocam.
+
+5
+00:07:26,064 --> 00:07:32,283
+Şimdi şu disco paperına kim baktı?
+
+6
+00:07:36,788 --> 00:07:37,807
+Ben biraz inceledim.
+
+7
+00:07:38,487 --> 00:07:41,867
+Maalesef ben bakamadım hocam ya. Bu hafta çok fazla proje teslimi vardı.
+
+8
+00:07:42,828 --> 00:07:43,208
+Anladım.
+
+9
+00:07:45,888 --> 00:07:51,867
+O zaman sadece [öğrenci] diyeyim. [öğrenci] değil de sadece [öğrenci].
+
+10
+00:07:52,608 --> 00:07:56,148
+Bakın, din kadarıyla bir anlatır mısın bakalım bu diskonu ile alakalı?
+
+11
+00:07:57,204 --> 00:08:23,924
+Disko'nun genel olarak şeyle alakalı aslında burada Large Scale Sistem diye adlandırıyor. Large Scale Sistemlerde yani multiprocess, shared memory veya non-unified memory sistemlerinde operating sistemlerin normalde standard commodity kullanılan operating sistemlerin çalışması için çok fazla.
+
+12
+00:08:24,564 --> 00:08:26,564
+Kod değişikliğine ihtiyaç oluyor.
+
+13
+00:08:27,564 --> 00:08:33,564
+Diskoda aslında bir nevi bir 3.5'in monitör gibi bu tarz sistemlerde araya giriyor.
+
+14
+00:08:33,564 --> 00:08:44,564
+Komodity, Operatik sistemleri tamamını destekliyor ve bakıldığında 3.5'in monitöre göre daha küçük bir kod sayısı var.
+
+15
+00:08:44,564 --> 00:08:51,564
+Yani sisteme yükü az ve hepsini desteklediği için de başarılı bir...
+
+16
+00:08:52,788 --> 00:09:02,628
+Virtual Machine monitör gibi bir ara layer oluyor aslında. Paper Game olarak benim anladığım bundan bahsediyor. Bunu da nasıl yaptığını anlatıyor tek tek.
+
+17
+00:09:04,628 --> 00:09:18,628
+Peki, Virtual Machine'lerin çalıştırılması, yönetilmesiyle alakalı bir takım zorluklardan, üstesinden gelinmesi gereken zorluklardan.
+
+18
+00:09:19,860 --> 00:09:23,460
+Bahsediyor. Onlar neler? Onları biliyor muyuz?
+
+19
+00:09:24,059 --> 00:09:37,399
+Yani bir tanesi burada önceki sistemlerde desteklenmiyor. Non-Uniform Memoriler. Burada numaları da destekleyebiliyor bu sistem.
+
+20
+00:09:39,080 --> 00:09:47,059
+Onun haricinde iki yapı daha var. Bir tanesi açıklaması daha kolay benim için.
+
+21
+00:09:48,659 --> 00:09:56,259
+Özellikle bu Virtual Machine'ler haberleşmesi için bir network kuruyor.
+
+22
+00:09:56,259 --> 00:10:02,659
+Bunu sağlıyor ve bu şekilde de Virtual Machine'ler birbiriyle haberleşebiliyor.
+
+23
+00:10:06,100 --> 00:10:11,700
+Başka bir özellik daha vardı.
+
+24
+00:10:11,700 --> 00:10:13,860
+Bir dakika.
+
+25
+00:10:30,163 --> 00:10:45,644
+Burada bir Copy-on-Write Disk var. Copy-on-Write Disk ile de Memori'deki bazı blokları aslında hepsini Virtual Machine'lere Shared olarak veriyor.
+
+26
+00:10:45,644 --> 00:10:53,203
+Yani her seferinde Memori'ye yeni bir blok kopyalamıyor, aynı blok kullanıyor aslında tüm Virtual Machine'ler diyor.
+
+27
+00:10:53,779 --> 00:11:03,079
+Memory kullanımını azaltmış oluyor bu şekilde. Değişiklik olursa da orayı kendisi, Copy or Right flagları var herhalde, onları setleyip güncelliyor.
+
+28
+00:11:03,079 --> 00:11:06,579
+Buraya çok bağladığım bu.
+
+29
+00:11:06,579 --> 00:11:19,879
+Peki ama ben orijinalde sanal makinelerle, virtual machine yapılarıyla alakalı, karşılaşılan, çözülmesi gereken bazı zorluklar var. Onları sordum.
+
+30
+00:11:21,011 --> 00:11:23,631
+Sen Disco tarafındaki şeyleri anlattın.
+
+31
+00:11:23,932 --> 00:11:25,432
+Ben salladığı şeyleri, evet.
+
+32
+00:11:26,291 --> 00:11:32,151
+Evet, sen Disco'nun özelliklerini veya diğer yapılara göre farklılıklarını anlattın.
+
+33
+00:11:32,151 --> 00:11:34,991
+Ama benim orijinal sorum hala daha geçerli.
+
+34
+00:11:35,871 --> 00:11:45,151
+Sanal makine kullanılması, çalıştırılması, bu sanal makine ortamının oluşturulmasıyla alakalı zorluklar.
+
+35
+00:11:46,163 --> 00:11:54,323
+Paper'da yazıyor. Sen de cevap etmek zorunda değilsin. Diğer [öğrenci] bakmadım dedi. [öğrenci] ne durumda bilmiyorum.
+
+36
+00:11:56,763 --> 00:12:06,043
+Paylaşsam aslında daha rahat gideriz de. Birebir direkt aklımda kalmadı hepsi. İşaret dediğim yerler vardı. Dediğiniz kısmı buldum aslında. Challenges, Facebook'a çıkmışız diye.
+
+37
+00:12:07,903 --> 00:12:08,903
+Nelermiş onlar?
+
+38
+00:12:11,988 --> 00:12:14,628
+Hocam, bir dakikanızı alayım.
+
+39
+00:12:21,652 --> 00:12:33,652
+Ben de bir ekran paylaşayım. Masur yoksa eğer. Senin ekran paylaşım hakkın vardır herhalde. Masur yoksa bu. Tabi.
+
+40
+00:12:41,812 --> 00:12:45,612
+Evet, aynen. Buradan bahsediyorum.
+
+41
+00:12:54,580 --> 00:13:14,780
+Burada bir tanesi, Print Instruction'ların güvenli şekilde operating sisteme verilemeyeceğini söylüyor. İlk başta bir monitör tarafından emule edilmesi gerektiğini ve özellikle input alt itibaselerin tamamen ölçülü edilmesini söylüyor. Bu monitör tarafından.
+
+42
+00:13:17,268 --> 00:13:26,367
+Söylediğin cümlede bir yeri tam anlayamadım. Privilege Instruction'ların doğrudan verilemeyeceğinden neyi kastediyorsun?
+
+43
+00:13:33,491 --> 00:13:43,031
+Burada herhalde şey yani, mesela Preology Instruction'a direkt memoriye erişim Instruction'ları mı bunlara cevap? Tam neyi Cardboard kastediyor tam bilmiyorum Preology'tan kastediyor.
+
+44
+00:13:44,131 --> 00:13:53,591
+Preology yetkili Instruction demek. Yetkili Instruction'lar işlemcinin çalışmasını doğrudan etkileyebilecek.
+
+45
+00:13:53,591 --> 00:13:59,851
+Mesela interapp'ların enable edilmesi, disable edilmesi, işlemcinin resetlenmesi.
+
+46
+00:14:00,288 --> 00:14:09,188
+Bir IO portuna erişilmesi, o IO portundan okunması, yazılması gibi instruction var. Öyle düşünmek lazım.
+
+47
+00:14:09,188 --> 00:14:25,188
+Yani IO portlarına erişim instructionlarını doğrudan virtual machinelere açarsan, o virtual machine'de çalışan işletim sistemi de o instruction'u kullanıp,
+
+48
+00:14:25,364 --> 00:14:44,504
+Ioportuna erişirse, o zaman o Ioportun üzerinden erişilen donanımı değiştirebilir değil mi? Onun yapısını, çalışma şeklini. Bu değişiklik diğer bir o donanımı kullanan Virtual Machine'in çalışmasını etkileyebilir.
+
+49
+00:14:45,644 --> 00:14:47,004
+Kontrollü olması lazım.
+
+50
+00:14:52,980 --> 00:15:18,240
+Sanal makinelerin kullanımını açmamak gerekiyor. Emülasyon yöntemiyle açmak gerekiyor. Yani sanal makinedeki işletim sistemi tabii ki o şeyi kullanacak Instruction'a. Başka çaresi yok. Çünkü onun üzerine yazılı bir kod parçası var o Instruction'a ihtiyaç duyan. Ama bu arka tarafta Virtual Machine Monitor tarafından
+
+51
+00:15:19,379 --> 00:15:42,279
+Sanallaştırılarak hedef alınan donanımın paylaşımlı kullanılmasını sağlaması lazım. Değil mi? Buradaki konulardan bir tanesi. O zaman demek ki Privilege Instructionlarla beraber doğal olarak I.O. cihazlarının da sanallaştırılması söz konusu.
+
+52
+00:15:46,419 --> 00:15:51,240
+Bir VM'e assign ettiğin zaman diğer VM'ler ne yapacaklar?
+
+53
+00:15:54,220 --> 00:15:56,299
+Evet, bununla alakalı zaten kısmı var.
+
+54
+00:15:56,599 --> 00:15:58,119
+I-Device seni utilize ediyor.
+
+55
+00:15:58,799 --> 00:16:02,319
+Evet. Başkanızın challenge'lar var.
+
+56
+00:16:03,500 --> 00:16:04,199
+Yazıyor zaten.
+
+57
+00:16:06,339 --> 00:16:07,099
+İşaretlemişiz.
+
+58
+00:16:08,919 --> 00:16:11,359
+Bence işaretlemediğim bir yerde yazıyor.
+
+59
+00:16:15,251 --> 00:16:18,471
+İtalik olarak yazmış o zaman. Resource Management.
+
+60
+00:16:19,631 --> 00:16:22,051
+Başlık var da başka bir şey almamış.
+
+61
+00:16:22,631 --> 00:16:26,611
+Evet, orayı okurken hızlıca üzerinden geçmişsin.
+
+62
+00:16:38,740 --> 00:16:47,300
+Mesela o tam mouse'un üzerinde olduğu hareket ettirdiğin cümle niçin önemli, neyi ifade ediyor?
+
+63
+00:16:51,124 --> 00:16:57,124
+Burada CPU'nun hoştu olduğu anlamayacağını anlayamıyorum.
+
+64
+00:16:57,124 --> 00:17:07,124
+Instruction, execution, stream of operating system, idle, do, for the code, for what, busy waiting, indispensable.
+
+65
+00:17:19,155 --> 00:17:21,155
+Burada zaten şurada belirtmiş aslında.
+
+66
+00:17:21,895 --> 00:17:27,415
+Result is that the monitor may schedule resources for useless computation while useful computation may be waiting.
+
+67
+00:17:27,415 --> 00:17:32,755
+Yani burada aslında idle loopta dönerken gereksizlere bir CPU'yu harcamış olacak.
+
+68
+00:17:34,315 --> 00:17:34,915
+Bir VM'e.
+
+69
+00:17:35,635 --> 00:17:37,355
+Halbuki bu işlem şey tamamen.
+
+70
+00:17:37,675 --> 00:17:38,355
+Boş bir işlem.
+
+71
+00:17:38,976 --> 00:17:41,875
+O sırada başka bir VM'e CPU'yu devredebilirdi.
+
+72
+00:17:43,336 --> 00:17:45,132
+Aynen ama bu...
+
+73
+00:17:45,203 --> 00:17:58,583
+Eşletim Sistemi eğer sanal bir ortamda çalışmasa, gerçek doğrudan donanım üzerinde, bare metal dediğimiz yapıda çalışsa, bu idle loop'a ihtiyacı var.
+
+74
+00:17:58,703 --> 00:18:09,583
+Çünkü o sırada çalıştırabileceği proses yok, thread yok. Ama durması söz konusu olmadığına göre boş zaman geçirecek.
+
+75
+00:18:12,895 --> 00:18:27,315
+Bu boş zamanın farkına varılması ve o zaman dilimi için işlemci verilmektense o işlemcinin bilakis alınması ve başka VM'e tahsis edilmesi en doğrusu.
+
+76
+00:18:27,315 --> 00:18:38,815
+Ya da işte bir lak var bir kaynağa erişmek için o lak serbest kaldı mı, kilit serbest kaldı mı, kalmadı mı kontrol ediliyor busy waitingle.
+
+77
+00:18:39,316 --> 00:19:04,796
+Bu da anlamlı değil. Diğer tarafta bir matriz çarpımı yapıyor mesela. Compute Intensive. O da işlemci kullanıyor ama bu üçü baktığın zaman çok ciddi işlemci kullanıyor. Fakat biri işte matriz çarpımı anlamlı bir şey. Diğeri bir kilidin boşa çıkıp çıkmadığını anlamak için sürekli kontrol. Öbürü ise boşa vakit geçirme.
+
+78
+00:19:07,380 --> 00:19:30,200
+Bunları Virtual Machine Monitor seviyesinde fark edemediğim sürece, ayırt edemeyeceğim için kaynakları yanlış VM'lere yanlış zamanlarda tahsis edebilirsin ve aslında anlamlı iş yapmak için CPU bekleyen VM'lere CPU verememiş olabilirsin.
+
+79
+00:19:33,200 --> 00:19:34,640
+Bunu söylüyorum.
+
+80
+00:19:39,124 --> 00:19:43,124
+Sonrakî başlık Communication and Sharing var.
+
+81
+00:19:46,124 --> 00:19:50,124
+O ne demek? Communication and Sharing.
+
+82
+00:19:52,124 --> 00:19:58,124
+Birden fazla bağımsız operating sistemin,
+
+83
+00:20:05,236 --> 00:20:17,675
+CMS'de mesela diyor Virtual Discontained User Files var. Bu aslında benim bahsettiğim bir önceki bahsettiğim diskonun sağladığı herhalde.
+
+84
+00:20:20,976 --> 00:20:29,675
+Özellik sayesinde bu problemi de açmış oluyor. Yani birten fazla Virtual Machine'in haberleşebilmesini ve dosya paylaşabilmesini.
+
+85
+00:20:31,923 --> 00:20:33,923
+Natıfta bulunuyor.
+
+86
+00:20:33,923 --> 00:20:39,923
+Peki NUMA ne demek, ne anlama geliyor NUMA mimarisi?
+
+87
+00:20:39,923 --> 00:20:48,748
+NUMA'nın açılımı Non-Uniform Memory Access diye geçiyor. Şurada belirtmiş zaten.
+
+88
+00:20:53,299 --> 00:20:57,420
+Ama CC Numa ne demek peki?
+
+89
+00:20:57,880 --> 00:21:01,440
+Onu bilmiyorum hocam. Onu ben de gördüm de. Ama bakma fırsatım olmadı.
+
+90
+00:21:03,480 --> 00:21:09,659
+Closely Coupled. Birbirleriyle doğrudan bağlantılı. Losely Coupled değil, Closely Coupled Numa.
+
+91
+00:21:10,112 --> 00:21:13,612
+Cash Coherent falan değil değil mi? Çok fazla geçiyordu o terim burada.
+
+92
+00:21:13,872 --> 00:21:23,751
+Cash Coherent'da işte Closedly Coupled'ın bir başka şekilde ifade edilmesi. Yani cash'i doğrudan paylaşabiliyorlar. Closedly Coupled'da böyle bir şey yok.
+
+93
+00:21:25,112 --> 00:21:27,112
+Hepsi bağımsız cash'e sahip o şekilde mi?
+
+94
+00:21:28,452 --> 00:21:34,872
+Evet, bağımsız cash'e sahipler. Closedly Coupled'da birinin cash'ine diğeri müdahale edemiyor.
+
+95
+00:21:35,279 --> 00:21:45,219
+Closely Coupled veya Cache Coherent dediğin zaman işlemcilerin Cache'leri arasında donanım seviyesinde bir bütünlük var.
+
+96
+00:21:45,359 --> 00:21:53,359
+Bir donanım bazında haberleşme var. Araya bir network katmanı girmiyor. A katmanı olmadan gerçekleşiyor.
+
+97
+00:21:55,359 --> 00:21:56,980
+Numadalar şu şekilde mi peki?
+
+98
+00:21:56,980 --> 00:21:58,980
+Normalde...
+
+99
+00:21:59,955 --> 00:22:08,275
+Tek memori olur. CQ'ların hepsi eşit uzaklıktadır. O yüzden hepsinin erişim zamanı üniform, yani eşit.
+
+100
+00:22:08,275 --> 00:22:23,275
+Numada ama tam tersi. Birden fazla ve hepsinin uzaklığı farklı CQ'ların farklı memori'lere. O yüzden non-uniform.
+
+101
+00:22:23,275 --> 00:22:24,596
+Aynen.
+
+102
+00:22:28,339 --> 00:22:33,299
+Okey. Böyle sırayla mı gidelim, nasıl gidelim hocam bilmiyorum.
+
+103
+00:22:33,879 --> 00:22:35,819
+Bilmiyorum, başka ne anlatacaksın bana?
+
+104
+00:22:37,379 --> 00:22:42,679
+Yani ben daha çok işaret ederim size. Genel sorulara göre buradan bakıp cevap vermeye çalışıyordum da.
+
+105
+00:22:45,279 --> 00:22:50,199
+Genelde başka bir arkadaş devreye giriyordu. Ben buradan sorunun cevabını denk getirebilirsem.
+
+106
+00:22:50,199 --> 00:22:52,059
+Başka işaretlediğin nereler var?
+
+107
+00:22:53,339 --> 00:22:54,955
+Yani baştan...
+
+108
+00:22:55,028 --> 00:23:00,528
+Aşağı doğru gidiyor aslında. Şuralar Instructionlar vs.
+
+109
+00:23:04,980 --> 00:23:07,900
+Buralar demin gördüğümüz yerler zaten.
+
+110
+00:23:07,900 --> 00:23:10,700
+Evet, oraların üst kısımda. Çeleneceğiz.
+
+111
+00:23:10,700 --> 00:23:20,700
+Buradan sonra artık diskoya geçiyoruz zaten. Bunu da Flash denilen MIPS tabanlı bir S2E1 Cache Kualifik Multiprozesör üzerinden yemişler.
+
+112
+00:23:20,700 --> 00:23:29,980
+Evet. MIPS R10.000 işlemcisi.
+
+113
+00:23:30,291 --> 00:23:38,291
+Böyle notlarda işlemcilerde, Connect to with High Performance Scalive Internet Connect diye bir şey belirmiş.
+
+114
+00:23:40,291 --> 00:23:42,291
+Burada ne belirmiş? Disco Internet.
+
+115
+00:23:42,291 --> 00:23:44,291
+Processors to match.
+
+116
+00:23:44,291 --> 00:23:51,291
+Disco Connect to with High Performance Scalive Internet Connect diye bir şey belirmiş.
+
+117
+00:23:51,291 --> 00:23:53,291
+Ne demek?
+
+118
+00:23:57,460 --> 00:24:07,099
+Yani CPU'daki exception bölgesi değil miydi? Yanlış hatırlar mı? Öyle bir şeydi. Yani bir hata oluştuğunda trap oluşuyor diye hatırlıyorum ama.
+
+119
+00:24:07,640 --> 00:24:10,900
+Software Interrupt. Mesela Division by Zero.
+
+120
+00:24:10,900 --> 00:24:23,940
+Evet, aynen. Bununla da bu tarz şeyler oluştuğunda bazı, bu şekilde bazı komutları emri ediyor herhalde. Yani oraya düştüğü anda kendisi alıp yorumluyor.
+
+121
+00:24:24,531 --> 00:24:25,531
+Mhm.
+
+122
+00:24:45,203 --> 00:24:56,203
+İşte burada bir sürü genel komatopatik sistemlerin, non-uniform memory, flash makinesine ait non-uniform memory, efektif yönetemeyeceğini bahsediyor.
+
+123
+00:24:56,203 --> 00:25:02,203
+Fakat Cisco uses dynamic page migration and replication to export nearly uniform numara.
+
+124
+00:25:02,203 --> 00:25:05,963
+Ne demek bu? Dynamic page migration and replication?
+
+125
+00:25:06,900 --> 00:25:13,280
+Güzel soru. Bunu aşağıda biraz bahsediyor da tabii. Çok detayını anlamadım için düzgün cevap veremeyeceğim.
+
+126
+00:25:14,280 --> 00:25:15,140
+Anladım. Peki.
+
+127
+00:25:18,140 --> 00:25:29,900
+Peki az önce başka bir şey sorayım. O sistem 370 CMS'te virtual diskler paylaşılamıyor. Bir kullanıcı sadece tek bir...
+
+128
+00:25:30,291 --> 00:25:43,371
+VM oluşturabiliyor. Burada ise işaretlemiştim. Virtual disks can be configured to support different sharing and persistency models. Buradan ne anlıyoruz?
+
+129
+00:25:49,652 --> 00:25:58,172
+Yani bu şey, first instance bazı diskleri şey olarak oluşturabiliyor. VM kapandığında diske kaydetmiyor hiçbir şekilde.
+
+130
+00:25:59,552 --> 00:26:00,732
+Veya bazı diskleri de...
+
+131
+00:26:00,732 --> 00:26:04,152
+Biz efemeral diyoruz. Yaşadığı sürece var.
+
+132
+00:26:04,532 --> 00:26:04,951
+Aynen.
+
+133
+00:26:05,472 --> 00:26:07,451
+Kullanılmadığı zaman kayboluyor, evet.
+
+134
+00:26:08,532 --> 00:26:16,492
+Diğeri de bazı diskleri diğer makinelerle paylaşabiliyor. Read Only Mode'da diye belirtiyordu sanki burada.
+
+135
+00:26:17,428 --> 00:26:18,428
+Evet.
+
+136
+00:26:22,195 --> 00:26:25,096
+Burada işte o communication kısmından bahsetmiş.
+
+137
+00:26:28,395 --> 00:26:31,096
+Virtual subnet oluşturuyor kendi içinde.
+
+138
+00:26:32,195 --> 00:26:34,495
+Bu Virtual subnet ne işe yarıyor?
+
+139
+00:26:35,495 --> 00:26:42,495
+Bu şekilde VM'ler birbirleri arasında haberleşebiliyor. Özellikle de şeyi belirtmişti bu aşağıda. Bir yerde var yine.
+
+140
+00:26:42,804 --> 00:26:51,003
+Maksimum Transfer Unit'in bir sınırı olmadı. Normalde işte Ethernet'te aşağı yukarı 1500 byte falan herhalde.
+
+141
+00:26:51,003 --> 00:26:51,804
+Evet.
+
+142
+00:26:51,804 --> 00:26:55,804
+Orada virtual olduğu için herhangi bir size sınırı olmuyor.
+
+143
+00:26:59,571 --> 00:27:12,071
+İşte bu şekilde Special Networks, Kenanlar Large Transfer Size, Without Fragmentation, bu da empty olmadığı için fragmentation, tek seferde gönderiyor herhalde paketleri istediği boyutta.
+
+144
+00:27:17,203 --> 00:27:25,203
+İplementation of Disco. Yani burada özellikle Disco'nun Multi-Thread Shared Memory programı olarak implement edilir belirtmiş.
+
+145
+00:27:29,587 --> 00:27:35,347
+NUMA için özel bir dikkati var ve attention.
+
+146
+00:27:36,708 --> 00:27:41,587
+Cache Average Structures, Intercultural Communication Patterns.
+
+147
+00:27:46,836 --> 00:27:47,836
+Bu arada bak.
+
+148
+00:27:47,836 --> 00:27:52,836
+Şu kısım, daha önce ben de bir ara bakmıştım bu.
+
+149
+00:27:52,836 --> 00:27:56,836
+Waze Pre-Segmentation veya Freelock Data Structural var.
+
+150
+00:27:56,836 --> 00:27:59,836
+Çok eski bir makale bu, temel makale.
+
+151
+00:27:59,836 --> 00:28:06,836
+O benzer bir yapıyı kullanarak aslında kendi numu üzerine herhalde kendi Data Structural'ını oluşturuyor.
+
+152
+00:28:06,836 --> 00:28:09,836
+Klasik Data Structural'ını kullanmıyorum diyor.
+
+153
+00:28:09,836 --> 00:28:11,836
+Bunlar çöküyor.
+
+154
+00:28:12,723 --> 00:28:18,003
+Bu, Cache Behavior diye adlandırılan yani Cache'i düzgün kullanan bir bot olmak oluşturuyor.
+
+155
+00:28:18,723 --> 00:28:19,723
+Evet.
+
+156
+00:28:20,403 --> 00:28:28,723
+Bu arada da dikkat et sanallaştırma için oluşturulan bu yapı 13.000 satır koddan oluşuyor.
+
+157
+00:28:31,003 --> 00:28:34,723
+Congregation kısmında zaten belirttiği şeylerden bir tanesi de bu.
+
+158
+00:28:39,635 --> 00:28:42,536
+Birden fazla politik sistemini destekleyebiliyor diye misafir?
+
+159
+00:28:43,796 --> 00:28:44,175
+Aynen.
+
+160
+00:28:45,936 --> 00:28:47,476
+Bu da önemli bir şey tabii ki.
+
+161
+00:28:48,415 --> 00:28:54,256
+Optimize edilebilmesi veyahut da ayar yapılabilmesi.
+
+162
+00:28:58,740 --> 00:29:02,740
+Tamam.
+
+163
+00:29:02,740 --> 00:29:03,740
+Devam ediyorsun hocam.
+
+164
+00:29:03,740 --> 00:29:04,740
+Tamam.
+
+165
+00:29:04,740 --> 00:29:05,740
+Diyorsun.
+
+166
+00:29:05,740 --> 00:29:08,740
+Benden bu kadar daha aşağısını çok işaretlememişsin.
+
+167
+00:29:08,740 --> 00:29:10,740
+Bayağı bir atlamışsın bakıyoruz.
+
+168
+00:29:10,740 --> 00:29:11,740
+Biraz daha iyi.
+
+169
+00:29:11,740 --> 00:29:12,740
+Özlü oku.
+
+170
+00:29:12,740 --> 00:29:13,740
+Bayağı başlıyor.
+
+171
+00:29:13,740 --> 00:29:15,740
+Sürat felakettir [öğrenci].
+
+172
+00:29:15,740 --> 00:29:16,740
+Evet.
+
+173
+00:29:16,740 --> 00:29:27,791
+Tamam.
+
+174
+00:29:22,740 --> 00:29:40,559
+Arkadaşlar, bu hafta son haftaymış. Haftaya sınavlar başlıymış. Ben daha bir haftamız falan veya belki de iki haftamız var depremden dolayı. Çünkü ayarlarımız kaçtığı için ne zaman tatil oldu, ne zaman ara verildi falan.
+
+175
+00:29:40,559 --> 00:29:46,559
+Evet, şimdi sınava...
+
+176
+00:29:51,316 --> 00:30:06,635
+Girmeden önce iki makale daha yayınlayacağım. Onlardan da sınavda sorumlu olacaksınız. Şu ana kadar gözden geçirdiğimiz bütün makaleleri kapsayacak sınav. Ona göre.
+
+177
+00:30:08,495 --> 00:30:10,215
+Allah geçeriz hocam.
+
+178
+00:30:10,796 --> 00:30:17,096
+İnşallah yani. Umarım geçersiniz. Benim gönlüm bundan yana ama tabii.
+
+179
+00:30:17,619 --> 00:30:19,500
+Sizin performansınıza bağlı.
+
+180
+00:30:21,579 --> 00:30:22,159
+Durum böyle.
+
+181
+00:30:23,220 --> 00:30:25,119
+Evet, teşekkür ediyorum sizlere.
+
+182
+00:30:26,359 --> 00:30:27,039
+Estağfurullah.
+
+183
+00:30:27,259 --> 00:30:28,419
+İyi akşamlar diliyorum.
+
+184
+00:30:28,839 --> 00:30:29,939
+Teşekkürler hocam.
+
+185
+00:30:30,519 --> 00:30:30,899
+İyi akşamlar.
+
+186
+00:30:31,079 --> 00:30:31,519
+Sağ olun.
+
+187
+00:30:31,799 --> 00:30:33,759
+Görüşmek üzere.
+
+188
+00:30:34,000 --> 00:30:34,679
+Sağ olun arkadaşlar.
+
+189
+00:30:34,839 --> 00:30:36,480
+İyi akşamlar.

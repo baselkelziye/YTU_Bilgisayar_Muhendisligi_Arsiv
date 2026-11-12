@@ -1,0 +1,2895 @@
+1
+00:00:24,564 --> 00:00:25,963
+Sesim geliyor mu arkadaşlar?
+
+2
+00:00:27,664 --> 00:00:28,344
+Geliyor hocam.
+
+3
+00:00:29,103 --> 00:00:29,544
+Geliyor.
+
+4
+00:00:30,724 --> 00:00:34,003
+Arkadaşlar katılsın diye diğer arkadaşlar da biraz bekleyelim.
+
+5
+00:04:39,507 --> 00:04:42,647
+Kaç dakika daha bekleyelim arkadaşlar, başkaları da gelir diye.
+
+6
+00:10:32,115 --> 00:10:34,216
+Anlaşılan bu kadar olacağız arkadaşlar.
+
+7
+00:10:39,059 --> 00:10:54,139
+Açayım. İki tane vardı hatırlarsanız. Biri 5 numara, öbürü de 6 numara. Biri demo SMP, demo MP, öbürü de demos'tu.
+
+8
+00:11:10,484 --> 00:11:15,384
+Hocam sesiniz gitti. Şu anda konuşmadım ki.
+
+9
+00:11:16,324 --> 00:11:16,884
+Pardon.
+
+10
+00:11:17,764 --> 00:11:24,884
+Şimdi konuşuyorum. Evet, kim anlatmak istiyor? Önce isterseniz demos ile başlayalım.
+
+11
+00:11:29,076 --> 00:11:30,816
+Has Communication in Demos mu hocam?
+
+12
+00:11:32,156 --> 00:11:34,495
+Evet, evet. Yani altı numarayla başlayalım.
+
+13
+00:11:34,656 --> 00:11:36,156
+Ben anlatabilirim aslında.
+
+14
+00:11:37,355 --> 00:11:37,975
+Anlat şey.
+
+15
+00:11:40,296 --> 00:11:43,056
+Burada bize hocam şey gösterecek bu makale.
+
+16
+00:11:43,536 --> 00:11:46,916
+Bir tane Interprocess Communication, process haberleşme.
+
+17
+00:11:47,735 --> 00:11:52,456
+Bir sistemi gösterecek bize işte. Mesaj pastamaya dayalı. Tabanda o var.
+
+18
+00:11:53,172 --> 00:12:19,372
+İşte introduction'da başlıyor. Biz ilk önce birkaç şey verecek. Tanım falan verecek. Bunlardan bir tanesi task. Task da şey diye tanıtıyor. Prosesin yerine biz task kullandık diyor. Çünkü daha oturuyor. Bana da task biraz daha oturdu. İşte görevleriniz var. Bu görevleri yaparsınız. Yeri gelir, durdurursunuz, rafa kaldırırsınız, raftan indirirsiniz.
+
+19
+00:12:20,019 --> 00:12:46,100
+Bu bağlamda task'ı kullanıyor. Daha sonra task'ın gerçekleştirmesi gerektiği üç tane fonksiyondan bahsediyor. Bir tanesi sistem çağrılarını implement etmemiz lazım diyor task'larla. Burada da şeyi gösteriyor bize. Sistem nedir? Sistem de permanent task'lar diyor. Burada sanırım bu bizim ilk link makalesinde gördüğümüz kernel space ve user space diye ayırmışlar. Linkleri burada kullanmışlar muhtemelen.
+
+20
+00:12:46,611 --> 00:12:47,692
+Evet, doğru.
+
+21
+00:12:48,211 --> 00:13:02,631
+Şeyi ayırıyor işte, taskları ayırıyor. Diyor ki bizim bu tasklarla şey yapabilmemiz lazım. Sistem çalılarını da yapabilmemiz lazım. Bunu da şöyle yapıyorlar. Her task bazı linklerle beraber geliyor. Bir task oluşturduğumuzda.
+
+22
+00:13:02,631 --> 00:13:07,312
+Ama burada özellikle taskların nesiyle ilgileniyorlar?
+
+23
+00:13:08,659 --> 00:13:13,319
+Spesifik olarak tasklara yönelik bir konuyla, özel olarak bir konuyla ilgileniyorlar.
+
+24
+00:13:13,359 --> 00:13:14,539
+Tasklar arası haberleşmeden?
+
+25
+00:13:15,000 --> 00:13:17,599
+Ha, tasklar arası haberleşmeyle ilgileniyorlar.
+
+26
+00:13:17,959 --> 00:13:24,939
+Oraya gelecek aynen linklerle beraber gelecek ama task'ın 3 özelliğini anlattığı için burada onu anlatmak istedim hocam.
+
+27
+00:13:25,759 --> 00:13:27,139
+Task'ın 3 özelliği mi?
+
+28
+00:13:27,439 --> 00:13:30,019
+Şey, task'ın gerçekleştirmesi gereken 3 fonksiyondan.
+
+29
+00:13:30,995 --> 00:13:43,316
+Ama işte bak, [öğrenci] sakin sakin yavaş yavaş söyle, heyecanla söylüyorsun güzel bir şey ama task'ın haberleşme için gerçekleştirmesi gereken üç fonksiyon.
+
+30
+00:13:43,456 --> 00:13:44,175
+Aynen öyle, evet.
+
+31
+00:13:44,196 --> 00:13:55,956
+Çünkü gerçekleştireceğin bir sürü başka fonksiyon olabilir. Ama burada az önce söylediğin sistem çağrısı veya çağrıları task'ın bir başka task'la haberleşmesi için ihtiyaç duyulanlar.
+
+32
+00:13:56,395 --> 00:13:57,296
+Evet, evet doğru hocam.
+
+33
+00:13:57,296 --> 00:13:58,456
+Bu konu bulamamız lazım.
+
+34
+00:13:58,995 --> 00:14:00,415
+Evet, yanlış anlattım orayı.
+
+35
+00:14:01,316 --> 00:14:03,375
+Hızlı anlattın, heyecanlı anlattın.
+
+36
+00:14:04,775 --> 00:14:06,415
+Şimdi devam et lütfen.
+
+37
+00:14:07,355 --> 00:14:13,735
+İlki task'ın bu mesajlaşma yöntemiyle sistem çağırlarını yapabiliyor olması lazım.
+
+38
+00:14:14,056 --> 00:14:14,415
+İlki bu.
+
+39
+00:14:14,415 --> 00:14:20,316
+Buna diyor ki, default oluşturduğunda bazı task'a linkler veriliyor.
+
+40
+00:14:20,556 --> 00:14:21,596
+Linki sonra açıklayacak.
+
+41
+00:14:21,995 --> 00:14:22,755
+Burada kullanmış ama.
+
+42
+00:14:23,283 --> 00:14:47,203
+Bu benim aklıma direkt şeyi getirdi. Bir proses oluşturduğunda örneğin default file descriptorlar veriyor. Standard input, standard output, standard error. Ekrana bir şey yazmak istediğinizde mesela standard output'a yazınca gidiyor. O sanki bir link gibi geldi aklıma. Burada ilk olarak işte başlarken default şeyler verirseniz, sistem çağrılarıyla yapabileceği linkleri verirseniz yapabilir diyor.
+
+43
+00:14:52,916 --> 00:15:03,516
+Her şey diyor. Şimdi biz böyle bir yöntem gerçekleştireceğiz. Linklerle yapacağız. Linkler de mesaj yolları, mesajların kullandığı yollar, gönderdiği yollar.
+
+44
+00:15:04,615 --> 00:15:18,536
+Tek yönlü oluyor. İki tane proses haberleşirse karşılıklı iki tane link kullanması lazım. Burada diyor ki biz bu linkleri kullanacağız. İşte her seferinde yeni link yapacağımıza. Biz bu linkleri bir şekilde paslayabilirsek eğer.
+
+45
+00:15:19,155 --> 00:15:23,755
+Olan linkleri de kullanabiliriz diyor. Bunu da yapabiliyor olması lazım diyor.
+
+46
+00:15:24,415 --> 00:15:31,395
+Yani linkler task'a spesifik olmayacak herhangi bir anda bir task tarafından kullanılır mı olacak? Öyle mi anlıyor?
+
+47
+00:15:32,275 --> 00:15:45,155
+Linki şöyle tanımlıyor. Oluşturan kişi, diyelim ki kernel oluşturdu, link ya da user oluşturdu. Link ona ait oluyor. Onu pastaya biliyorsunuz. Her zaman oluşturanı gösteriyor ama...
+
+48
+00:15:45,908 --> 00:16:09,968
+Gerçi bazı restriksiyonlar da getiriyor. Pastlayabildiğiniz zaman örneğin bir iş için körün bir link oluşturduk. Bunu pastlarsa biri ya da gerçi o şeyde anlatmayayım da şöyle anlatayım. Siz mesaj göndereceksiniz. İşte mesajlar üzerinden de haberleşebilirsiniz. Ama bu mesajın boyutunu artırır. Onun yerine mesajdan linki göndersiniz. Bu linkten benimle konuşursanız.
+
+49
+00:16:11,220 --> 00:16:13,700
+Sanki bu onun için gibi düşündüm.
+
+50
+00:16:15,300 --> 00:16:26,100
+Şimdi bir şeylerin ötesinde epey bir şey kavramışsın bence ama bunu ifade ederken biraz heyecanlı, biraz da bir önü bir arkası böyle atlamalı bir şekilde oluyor.
+
+51
+00:16:26,100 --> 00:16:27,500
+Evet hocam, doğrudur.
+
+52
+00:16:27,820 --> 00:16:33,560
+Biraz nefes al ya, sakin sakin. Arkamızda kovalıya yok. Zaten topu topu 5-6 kişiyiz şurada.
+
+53
+00:16:35,840 --> 00:17:02,519
+Çok çok çok azız, evet. Şimdi bu senin söylediklerine geçmeden önce şu sistem çağrıları üzerinden bir daha gidelim. Bu tasklarla alakalı haberleşmelerine yönelik kullanacakları sistem çağrılarına bu paper kapsamında özel bir isim vermişler. Ne demişler?
+
+54
+00:17:04,884 --> 00:17:06,624
+Cevap verebilecek olan var mı?
+
+55
+00:17:12,307 --> 00:17:13,548
+Mesaj değil mi hocam?
+
+56
+00:17:14,268 --> 00:17:32,548
+Mesaj, aynen doğru. Yani aslında bunlar bildiğimiz standart sistem çağrıları. Yani bir dosya açmak, dosyaya yazmak, ekrana yazmak, ne bileyim bir task'ın işlemciyi bırakması gibi.
+
+57
+00:17:39,892 --> 00:17:53,192
+Tasklar arası haberleşmeye yönelik olduğu için bu sistem çağrılarına topluca ne isim vermişler? Message, messages demişler. Çünkü bunlar haberleşmeyi gerçekleştiriyor.
+
+58
+00:17:53,192 --> 00:18:04,912
+Ve az önce [öğrenci] arkadaşına söyledi, taskların birbirleriyle haberleşebilmesi için bir linke, bir bağlantıya ihtiyaç var.
+
+59
+00:18:05,311 --> 00:18:22,111
+Bunu bir ne olarak görmemiz gerekiyor? Asklar arasında mesajların gidip gelmesini sağlayacak olan bir yol olarak görmemiz gerekiyor.
+
+60
+00:18:23,331 --> 00:18:29,931
+Peki, bu linkler diyelim veyahut da bu yollar diyelim. Nerede başlıyor, nerede bitiyor?
+
+61
+00:18:36,084 --> 00:18:37,844
+Paskı oluşturan da başlıyor hocam.
+
+62
+00:18:38,384 --> 00:18:38,724
+Evet.
+
+63
+00:18:39,604 --> 00:18:40,483
+Gönlürseniz.
+
+64
+00:18:40,483 --> 00:18:41,084
+Nerede bitiyor?
+
+65
+00:18:42,744 --> 00:18:44,203
+Gönderdiğiniz kişide de biter.
+
+66
+00:18:44,983 --> 00:18:47,724
+Tamam ama buradaki örnek üzerinden gidersek.
+
+67
+00:18:53,844 --> 00:18:55,824
+User tarafında başlayıp kernelda bitiyor.
+
+68
+00:18:56,544 --> 00:19:03,523
+Aynen. Değil mi? Genel olarak tipik yapıda user da başlıyor, kernel da bitiyor.
+
+69
+00:19:04,523 --> 00:19:11,244
+Bunun gerekliliğine veyahut da çoğu zaman böyle olduğuna dair bir örnek verebilir misiniz?
+
+70
+00:19:11,244 --> 00:19:16,284
+Mesela niçin böyle diye sorsam bir örnekle bunu açıklayabilir misiniz?
+
+71
+00:19:21,523 --> 00:19:25,463
+Kernel bütün donanımı kontrol ediyor ya. Ya da aynen donanımı.
+
+72
+00:19:25,863 --> 00:19:30,243
+Spesifik bir örnek versek mesela. Sen aslında demin o örneği verir gibi yaptın.
+
+73
+00:19:33,971 --> 00:20:00,672
+Konsola yazma işlemi diyebilir miyiz hocam? Mesela yani? Konsol ortak bir arayüz. Herkes her proses tarafından erişilebilir. Oraya kimin ne zaman veri yazacağını bir şekilde yönetmemiz lazım. Onu yönetirken de UserSpace'de bunu yapamıyoruz. KernelSpace'e inip sistem çağrılarıyla o şeyin konsolun boşta olup olmadığını bize ayrılıp ayrılamayacağını.
+
+74
+00:20:01,076 --> 00:20:19,875
+Yani sonuçta demek ki tipik olarak bir task'tan kernel'a link olması lazım. Ve az önce [öğrenci] söyledi, [öğrenci] söylemeye çalıştı. Başında aslında sen şey dedin ya [öğrenci].
+
+75
+00:20:21,395 --> 00:20:39,855
+Proseslere tipik olarak şey veriliyor dedin, standart input standart, standart error gibi. Ona benzer bir mantıkta. File sisteme erişmeleri için sıradan standart linkler verilebilir diyor hatta.
+
+76
+00:20:40,319 --> 00:20:57,159
+Birincisi bu. İşte önderinde oradan ilerletip de söylediği konsola yazma mesela. Bunlar yani özel olarak task'ın istemesine gerek olmadan task oluştuğunda ona tahsis edilmesi veya sağlanması gereken linkler olarak görülebilir.
+
+77
+00:20:57,159 --> 00:21:07,460
+Peki başka task komünikasyonu ile ilgili sağlanması gereken bir özellik ne olabilir?
+
+78
+00:21:08,051 --> 00:21:09,711
+Ne diye daha doğrusu burada var?
+
+79
+00:21:12,551 --> 00:21:21,391
+Hocam ben şöyle anlamıştım. Link üzerinden aynı zamanda başka linki de paylaşabiliyor olmamız lazım.
+
+80
+00:21:22,632 --> 00:21:31,491
+Tamam ama önce benim sorduğumu bir cevaplamaya çalışsan [öğrenci]. [öğrenci] bu arada. [öğrenci]'dı değil mi komşun?
+
+81
+00:21:31,791 --> 00:21:32,411
+Evet hocam.
+
+82
+00:21:32,768 --> 00:21:45,788
+İki tane ekranda [öğrenci] yan yana duruyor da şu anda o yüzden. Biriniz [öğrenci], öbürünüz soyadın neymişsinin? [öğrenci]. Soyadını göremiyorum. [öğrenci]. Evet.
+
+83
+00:21:48,788 --> 00:21:51,088
+Hocam soruyu kaçırdın da bir daha alabilir miyim?
+
+84
+00:21:55,955 --> 00:22:19,495
+Ne dedik? Bir linkin olması lazım dedik. Bu link büyük bir olasılıkla kernel'a gidecek. Oradaki bir sistem tarafından sağlanan servise gidecek. Mesela File.io. Bu File.io'yu düşündüğümüzde aslında onun içerisinde ekrana yazmak, konsola yazmak da var veyahut da konsoldan okunmak da var. Bu birincisi. Peki ikincisi.
+
+85
+00:22:21,364 --> 00:22:27,543
+Böyle bu task haberleşmesi için ihtiyaç duyulacak ikinci bir fonksiyon ne olsa gerek.
+
+86
+00:22:34,771 --> 00:22:36,491
+Karşılıklı rıza diyebilir miyiz hocam?
+
+87
+00:22:37,632 --> 00:22:38,991
+Ne için karşılıklı rıza?
+
+88
+00:22:39,511 --> 00:22:53,411
+Görevlerin, taskların yani arasında. Paragrafta geçen cümleyi açıkçası direkt söylemek istedim. Şöyle yazıyordu yanlış hatırlamıyorsam. Keyfi ve ilgisiz görevlerin karşılıklı rıza ile iletişim kurmasını sağlamak.
+
+89
+00:22:53,811 --> 00:23:17,675
+İkinci konusunda.
+
+90
+00:23:18,387 --> 00:23:38,268
+Sen ne dedin ona? Rastgele, arbitrary and unrelated. Birbirlerinden başlangıçta haberi olmayan iki taskın ortak anlaşmayla, mutual consentle, ortak rıza veya kabul etmeyle haberleşebilmelerini sağlamak. O zaman aralarında neye ihtiyaç duyuyoruz biz?
+
+91
+00:23:45,011 --> 00:23:49,871
+Böyle iki tane task'ın arasında nasıl bir yapıya ihtiyaç duyuyoruz?
+
+92
+00:23:51,771 --> 00:23:54,251
+Birbirileriyle mesajlaşması gerekiyor onların.
+
+93
+00:23:55,112 --> 00:23:57,251
+Mesaj yoluna ihtiyacımız var. Mesaj, pet.
+
+94
+00:23:58,092 --> 00:24:02,112
+Pet zaten tanımladık. Esas başka bir şeye ihtiyacımız var.
+
+95
+00:24:03,971 --> 00:24:08,052
+Hocam bu switchboard dediği bu ikisinin pet'ini de birbirine yönletecek bir şey.
+
+96
+00:24:08,251 --> 00:24:12,132
+Evet, switchboard. Switchboard nedir Türkçesi biliyor musunuz?
+
+97
+00:24:17,971 --> 00:24:20,231
+Hiç eski tip santralları gördünüz mü?
+
+98
+00:24:21,251 --> 00:24:23,991
+Hocam orada arama geldiğinde birinden takıp diğerine götürüyorlar.
+
+99
+00:24:24,731 --> 00:24:41,491
+Aynen. Orada bir tane operatör var, kadın, erkek. Bir taraf operatörü çaldırıyor. Diyor ki, şu numarayla görüşmek istiyorum. Operatör bir dakika diyor. O numarayı kendisi arıyor. Diyor ki, şu numara sizinle görüşmek istiyor. Kabul ediyor musunuz?
+
+100
+00:24:41,971 --> 00:24:48,411
+Evet derse bu sefer operatör aradan çekiliyor, ikisini bir kablo ile birbirine bağlıyor.
+
+101
+00:24:49,831 --> 00:24:56,811
+Yani bakın ne oldu? Birbirlerinden haberi olmayan ama karşılıklı rıza mekanizması değil mi?
+
+102
+00:24:56,811 --> 00:25:05,251
+Çünkü oradaki operatör diğer tarafa seninle şu numara görüşmek istiyor, kabul ediyor musun diye sordu.
+
+103
+00:25:06,067 --> 00:25:21,228
+Tamamen gerçek hayattaki santral, ilk orijinal santral memurlarının, memurelerinin yaptığı işin burada bilgisayar ortamında tasklar arasındaki haberleşmeye yansıtılmış hali.
+
+104
+00:25:22,087 --> 00:25:27,948
+Birebir aynısı. Ve buna da ne deniyor? Bu işi yapan aradaki özel...
+
+105
+00:25:28,435 --> 00:25:34,415
+Taskada ne deniyor arkadaşlar? Az önce biriniz söyledi. Switchboard Task deniyor değil mi?
+
+106
+00:25:37,635 --> 00:25:38,235
+Evet hocam.
+
+107
+00:25:40,475 --> 00:25:52,355
+Peki bu paperın bu kapsamda bu perspektifle amacı ne? Neyi şey yapıyor? Yani ne ortaya atıyor?
+
+108
+00:25:54,708 --> 00:26:13,208
+Şey söylüyor hocam, finalde şeye çıkacak. İşte distribüt sistemlerde, hatta diğer paperda buna buz dik kapıltıyor. Aynı memori alanını kullanmak yetmediği zaman, şerit memori yetmediğim zaman sizin bu mesaj pastamayla haberleştirmeniz lazım bunları.
+
+109
+00:26:13,468 --> 00:26:20,468
+Tamam. Sanama şu an çok öteye atladım. Dediklerinin hepsi doğru ama benim sorduğum soru kapsamında.
+
+110
+00:26:21,107 --> 00:26:38,748
+Switchboard Task'ı düşünürsek, Task'lar arası haberleşmeyi düşünürsek, bu paper neyin önünü açıyor, nasıl bir imkan sağlıyor, bunu da gerçek hayatta gerçekleştirip karşımıza sunuyor. Onu söyleyebilir miyiz?
+
+111
+00:26:42,644 --> 00:26:45,903
+Inter-process communication'ı sağlayan, onun kastımız o mu?
+
+112
+00:26:46,403 --> 00:26:53,923
+Evet, zaten olayın tamamı inter-process communication, inter-task communication veya inter-communication.
+
+113
+00:26:53,923 --> 00:27:04,619
+Ama nasıl bu? Yani bu komünikasyonu bir kelime var orada. Yani farklı şekilde ifade edebilirsiniz ama bu...
+
+114
+00:27:05,395 --> 00:27:10,175
+Pasklar arasındaki haberleşmenin nasıl olmasını sağlıyor arkadaşlar?
+
+115
+00:27:10,915 --> 00:27:12,935
+User Space'te mi gerçekleşiyor hocam?
+
+116
+00:27:13,976 --> 00:27:17,076
+Yok, hayır. User Space, Curl No Space meselesi değil.
+
+117
+00:27:17,076 --> 00:27:17,895
+Tamam.
+
+118
+00:27:23,571 --> 00:27:41,571
+Esnek olabilmesini sağlıyor arkadaşlar. Flexible. Var olan, önceden oluşturulmuş veya o task'a hani standart bir takım ordinary linkler vereceğiz dedik ya, var olan oluşturulmuş linkler üzerinden task'ların...
+
+119
+00:27:41,632 --> 00:27:56,012
+Bu az önce söylediğimiz arbitrary, unrelated tasklarla konuşmasını sağlayabilecek, o tasklarla aralarında linkler oluşturulmasını sağlayabilecek bir mekanizmayı ortaya atıyor.
+
+120
+00:27:57,852 --> 00:28:03,112
+Değil mi? Yani bu ne açıdan önemli, niçin önemli?
+
+121
+00:28:09,619 --> 00:28:21,619
+Hocam, yine biraz ileri atlayabilirim ama linkten hemen önce şey diyor, bu organizasyon sayesinde diyor, memoria sadece, hardware'i aksesli sadece kernel'a verip mesaj paslaşmayla.
+
+122
+00:28:21,920 --> 00:28:24,420
+Çok çok ileri atladım. Çok çok ileri atladım.
+
+123
+00:28:26,480 --> 00:28:29,539
+Biraz geriye doğru geleceğim. İleridesin.
+
+124
+00:28:30,163 --> 00:28:48,163
+Bakın nasıl file sisteme standart linkler varsa bu az önce bahsettiğimiz switchboard taskına da standart linklerle bağlantıyı sağlıyor bir task oluşturulduğunda. Onun için taskın bir şey yapmasına gerek yok.
+
+125
+00:28:55,443 --> 00:29:15,243
+Hangi task ile konuşmak istediğini öğrenebiliyor? Bunu karşı taraftaki task ile okeyliyor. Nasıl? Zaten karşı taraftaki task'ın da switchboard'a standart olarak oluşturulmuş bir linki var. Onu kullanarak.
+
+126
+00:29:15,567 --> 00:29:36,647
+İsterdeki konuşmak isteyip istemediğini, interkomünikasyona hazır olup olmadığını, istekli olup olmadığını öğreniyor. Eğer bu şartlar geçerliyse, iki taraf içinde varsa o zaman bu istenilen komünikasyon için ek linklerin oluşturulmasını ve birleştirilmesini sağlıyor. Yani bir yol oluşturuyor.
+
+127
+00:29:38,259 --> 00:29:53,700
+Bu sayede standart bu tarz servislere, switchboard servisi gibi servislere olan linkler devam ediyor ama kontrol bilgisi aktarmak için değil mi? Yeni bağlantı kurmak için.
+
+128
+00:29:55,700 --> 00:29:57,079
+Bakın ne demiş?
+
+129
+00:30:00,723 --> 00:30:23,824
+Passing Links Along With Messages Over Existing Links. Var olan linkler üzerinden yeni link bilgisi, hatta bunlar mesaj bile ilk initial başlangıç mesajı bile içerebilir. Bunların paslanabilmesini, aktarılabilmesini sağlıyor. Doğru mudur?
+
+130
+00:30:25,764 --> 00:30:26,764
+Evet hocam.
+
+131
+00:30:30,932 --> 00:30:31,231
+Evet.
+
+132
+00:30:36,019 --> 00:30:41,839
+Peki, ikincisi buydu. Üçüncü bir şey daha var. Üçüncü bir fonksiyon daha var.
+
+133
+00:30:49,236 --> 00:30:56,976
+Hocam çok detay belirtmemiş ama bir işlevin başka bir görevi veya görev grubunu kapsayabileceği şeklinde çevirebiliriz herhalde.
+
+134
+00:30:57,716 --> 00:31:01,116
+Evet, doğru. Peki bu ne imkan sağlayacak bize?
+
+135
+00:31:02,336 --> 00:31:04,836
+Yani hata yıklama, performans izleme.
+
+136
+00:31:05,836 --> 00:31:11,896
+Değil mi? Yani ne fonksiyonu bunlar? Monitoring fonksiyonu. Debugging ve monitoring fonksiyonu.
+
+137
+00:31:16,596 --> 00:31:27,956
+Yani ne deniyor ona? Instrumentation veya Mediation deniyor. O şekilde çalıştırılabiliyor.
+
+138
+00:31:34,708 --> 00:31:35,308
+Evet.
+
+139
+00:31:37,048 --> 00:31:47,788
+Hocam bu tarz bir haberleşmenin debugging ile ilişkisi çok direkt değil de daha çok dolaylı herhalde. Yani onları mesaj atarak izleyebilirim tarzında bir düşüncesi var herhalde.
+
+140
+00:31:49,168 --> 00:32:00,428
+Yok, şöyle düşün. Şimdi iki tane task aralarında haberleşip bir şey yapacaklar, bir amaç için çalışacaklar ama düzgün çalışmıyorlar.
+
+141
+00:32:01,428 --> 00:32:20,567
+Peki ben bunu nasıl debug edebilirim? Araya bir şekilde girip alınan ve verilen mesajları, o mesajlara oluşturulan, yani request olarak görürsen bu mesajları, response olarak oluşturulan mesajların içeriğini inceleyebilmem lazım.
+
+142
+00:32:20,976 --> 00:32:31,976
+O zaman demek ki benim bir taskı, bir başka taskın gözetiminde, onun kontrolünde, kontrollü bir şekilde...
+
+143
+00:32:32,000 --> 00:32:56,660
+Çalıştır durdur, çalıştır durdur mekanizmasına, yaklaşımına uygun bir şekilde adım adım çalıştırabilmem lazım. Ki işte araya girip hatta gönderilen mesajı içeriğini de inceleyebileyim. Orada mı bir hata var? Karşı taraftan gönderilen istekte mi bir hata var? Karşı taraftan gelen cevapta mı bir hata var? Bu da önemli.
+
+144
+00:32:58,067 --> 00:33:07,647
+Yani bir nevi bu networktaki wireshark gibi herhalde geleni gideni görmek babında düşünülen bir fonksiyonelite herhalde.
+
+145
+00:33:07,647 --> 00:33:20,468
+Yani networktaki wireshark bu şekilde bir prosesi veyahut da bir taskı kendi kontrolü altında çalıştırarak yapmıyor. Network katlarının bununla alakalı.
+
+146
+00:33:20,928 --> 00:33:30,348
+Bu işe yönelik özelliklerinden yararlanarak gelen giden paketleri yakalıyor, capture ediyor.
+
+147
+00:33:30,900 --> 00:33:55,360
+En kötü network kartın bunu desteklemiyorsa, gidecek olan paket network kartına yazılmadan önce bir yere paslanabilir. Network kartına gelen pakette ilgili yere aktarılmadan önce yine bir yere paslanabilir. Bu da mümkün ama bu software yazılım gerçekleştirmesi, diğeri daha performanslı donanım gerçekleştirmesi.
+
+148
+00:33:58,932 --> 00:34:01,731
+Evet. Kim devam edecek?
+
+149
+00:34:08,115 --> 00:34:31,956
+Hocam ben devam edebilirim. Siz buyurun, gerçek kim konuştuysanız. Yok estağfurullah. Ben şey, ben devam edemeyebilirim hocam. İkincisini okudum. Sadece ikincisini okudum da. [öğrenci] yine hızını kesmeyelim. Bir dakika, bu zaten ikincisi. Ya şey aslında yani, diğerini okudum ben. Diğerini ya, birik. 5 numaralı okudum ilk de. Anladım, tamam peki.
+
+150
+00:34:34,996 --> 00:34:35,655
+Buyur [öğrenci].
+
+151
+00:34:39,036 --> 00:34:40,936
+Burada dikkatimi çekti hocam.
+
+152
+00:34:40,936 --> 00:34:46,856
+Bir saniye [öğrenci], pardon. Kusura bakma. Aramıza [öğrenci] katılmış. [öğrenci], sen bir şeyler söylemek ister misin?
+
+153
+00:34:47,536 --> 00:34:52,856
+Hocam, ben de diğer makaleyi okudum. Ben de o konuda konuşmak istiyorum. Onun için şimdilik dinliyorum hocam.
+
+154
+00:34:52,956 --> 00:34:53,695
+Tamam, peki.
+
+155
+00:34:54,256 --> 00:34:54,636
+Sağ olun.
+
+156
+00:34:54,836 --> 00:34:55,695
+Var mıydın sen?
+
+157
+00:34:56,115 --> 00:34:59,956
+Hocam, geçen hafta vardım. Bir kısımda vardım. Sonra ses problemi olduğu için...
+
+158
+00:34:59,956 --> 00:35:04,515
+Düştün. Senin iki tane bağlantın vardı. Doğru bir yere bir şeyler var.
+
+159
+00:35:04,515 --> 00:35:06,315
+Evet hocam, öyleydi. Sağ olun hocam.
+
+160
+00:35:06,796 --> 00:35:09,456
+Tamam, peki. Evet [öğrenci], devam edebilirsin.
+
+161
+00:35:11,096 --> 00:35:12,396
+Hocam burada...
+
+162
+00:35:13,043 --> 00:35:36,363
+Şeyden bir sonraki paragraf o last function'dan iki sonraki. Burada şey, Cry 1'in kullandıkları sistemin sadece bir base ve limit register'ı var. İşte bu memori arasındaki o bölgede mi diye bir adrese kontrol etmek için o prosesin başka prosesin memorisine girmesini engellemek için. Böyle diyor ki zayıf, hani sadece bir pair olması zayıf sistemlerde.
+
+163
+00:35:36,884 --> 00:35:56,543
+Tastikler de fiziksel olarak bölünmediği için bunları ayrı ayrı koyup, işte biri başkasının memorisine ulaşamasın, diğeriyle sadece mesajlaşma üzerinden haberleşmesin diye düşünürseniz bu sistem onun için gayet uygun olur diyor. Çünkü başkasının memorisine karışmayacak, zaten memori çok iyi koruyamıyorsunuz. GİBİSİNDEN BİŞEYİ DİYİYİ.
+
+164
+00:35:58,063 --> 00:36:00,703
+Sondaki gibisinden demeseydin iyiydi.
+
+165
+00:36:01,324 --> 00:36:04,268
+Yok onu diyor da daha fazla da şey...
+
+166
+00:36:04,467 --> 00:36:05,347
+Demiş olabilir.
+
+167
+00:36:07,007 --> 00:36:20,967
+Peki bu bahsettiğim Memory Protection mekanizması, Base Register, Limit Register, bu ne işe yarıyor bunlar? Bununla alakalı bir yorum yapacak olan var mı?
+
+168
+00:36:22,847 --> 00:36:24,167
+Söyleyeyim mi hocam? Gerçekten.
+
+169
+00:36:24,167 --> 00:36:24,867
+Ben yapabilirim.
+
+170
+00:36:25,627 --> 00:36:27,728
+Bir dakika, biri ben yapabilirim dedi. Kim o?
+
+171
+00:36:28,148 --> 00:36:29,168
+Ben [öğrenci].
+
+172
+00:36:29,568 --> 00:36:31,908
+[öğrenci], hadi [öğrenci]. Bunu da sen yap bakalım.
+
+173
+00:36:31,908 --> 00:36:37,807
+Base ve Limit Register programın erişebileceği memory space'i belirliyor.
+
+174
+00:36:39,547 --> 00:36:48,288
+Biz programdan bir erişim talebinde bulunduğumuz zaman, memoriye, işlemci kontrol ediyor.
+
+175
+00:36:48,887 --> 00:36:53,827
+Biz hangi memorideyiz? Erişmeye çalıştığımız memorinin offset'i nedir?
+
+176
+00:36:54,208 --> 00:37:06,467
+Bunları toplayıp limit register'ı geçiyorsa, kendi memory space'imizden farklı bir yere erişmeye çalışıyoruz diye bir hata oluşturup bize fırlatıyor ve böylelikle şey oluyor.
+
+177
+00:37:06,887 --> 00:37:09,327
+Nereye fırlatıyor? Öldürdün bizi.
+
+178
+00:37:11,847 --> 00:37:14,007
+Teknik terimlerimize...
+
+179
+00:37:14,007 --> 00:37:17,327
+Atalar alıyoruz mesela yüksek seviye dillerde.
+
+180
+00:37:17,967 --> 00:37:20,327
+Tamam. Şöyle desek...
+
+181
+00:37:20,724 --> 00:37:23,644
+Programdan Task'tan çıkan adres
+
+182
+00:37:24,340 --> 00:37:52,320
+Base artı limit değeriyle, o task için belirlenmiş olan base artı limit değeriyle karşılaştırılıyor. Eğer çıkan adres base artı limitten büyük ise task'ın kendisine izin verilen adres alanı dışında bir yere eriştiğine karar veriyoruz ve bir interrupt oluşuyor. Erişimi donanım olarak, donanım seviyesinde engelleniyor.
+
+183
+00:37:52,340 --> 00:38:14,039
+Peki, bu Cray-1 sisteminde gerçeklenmiş yapı var. Base ve Limit Memory Protection Register'ları var. Peki, bu tarz bir mekanizma neyi sağlıyor?
+
+184
+00:38:20,275 --> 00:38:39,175
+Diğer taskları koruyor hocam. Yani çalışan öbür programın bir kod segmentini siliyor olabiliriz. Yanlışlıkla erişip oraya yazma işlemi yaparsak. Dolayısıyla tek bir tür koruyor. Bütünlüğünü koruyor programların.
+
+185
+00:38:39,175 --> 00:38:43,095
+Güzel. Bütünlük mü yoksa şey mi?
+
+186
+00:38:47,731 --> 00:39:01,231
+Privacy'ni. Privacy'sini de koruyor, bütünlüğünü de koruyor hocam. İkisi birden. Peki bir adım daha genelliklebilir miyiz? Böyle bir yaklaşım beraberinde ne getirecek?
+
+187
+00:39:09,715 --> 00:39:14,735
+Hocam, bunlar illa bir yerde aynı memori oluşmak istediklerinde bir sıkıntı olacak.
+
+188
+00:39:15,815 --> 00:39:27,335
+Yani bu metodu bu şekilde kullanacak olursak, çok katı, strik bir şekilde böyle kullanacak olursak, neyi ortadan kaldırıyoruz?
+
+189
+00:39:27,335 --> 00:39:33,135
+Global memori erişimini ortadan kaldırıyoruz. Çünkü neyi varsayıyoruz?
+
+190
+00:39:33,619 --> 00:39:54,500
+Her task'ın sadece kendine rezerv edilmiş, kendi kullanımına ayrılmış memorisi var. Base artı limit ile bu net bir şekilde belirleniyor. Bunun doğal sonucu olarak da global değişken erişimi söz konusu değil. Değil mi?
+
+191
+00:39:55,300 --> 00:40:00,840
+Evet hocam. Bunu da çözmek için hatta şey diyorlar. Linkler üzerinden datalar da data area.
+
+192
+00:40:01,295 --> 00:40:03,735
+Dediği pointer'larda pastayabilelim mesela diyorlar.
+
+193
+00:40:04,496 --> 00:40:04,735
+Evet.
+
+194
+00:40:05,515 --> 00:40:14,295
+Hatta hocam, buyurun, ilerisinde de şey diyecek bu, parent process, child process'in register'larına falan karışabiliyor.
+
+195
+00:40:14,295 --> 00:40:18,955
+Bu da oluştururken link üzerinden onun data segmentinin adresini geri alıyor.
+
+196
+00:40:19,615 --> 00:40:20,515
+O ara müdahale edebiliyor.
+
+197
+00:40:21,536 --> 00:40:21,775
+Tamam.
+
+198
+00:40:22,375 --> 00:40:27,295
+Yani bu mantık, bu mekanizma normalde global...
+
+199
+00:40:28,467 --> 00:40:47,747
+Shared Variable programlamasına standart olarak izin vermeyen, sadece mesajların alınıp verilmesiyle verilerin, bilgilerin paylaşılmasından yararlanılan ve neyin temelini oluşturan bir yapı?
+
+200
+00:40:48,667 --> 00:40:51,027
+Distributed Processing'in değil mi?
+
+201
+00:40:55,956 --> 00:41:16,596
+Her bilgisayar sistemi tarafından erişilebilen bir ortak veri alanının olduğunu varsayamayız. Çok absürt bir şey olur. Bunlar birbirlerine çok farklı şekillerde, bu linkler farklı şekillerde karşımıza çıkabilir, bağlanmış olabilirler.
+
+202
+00:41:16,596 --> 00:41:22,796
+Bu zaman demek ki distributed processing'in de temelinde olan bir şeydir.
+
+203
+00:41:24,436 --> 00:41:36,516
+Fakat az önce [öğrenci]'ın söylediği gibi, [öğrenci] arkadaşımızın tamamen global değişkenleri elimine edemeyeceğimiz durumlar olabilir.
+
+204
+00:41:37,176 --> 00:41:41,695
+O zaman veri alanlarının paylaşılması gerekiyor.
+
+205
+00:41:41,695 --> 00:41:45,596
+Bu da aslında bize çok uzak olan bir şey değil değil mi?
+
+206
+00:41:46,476 --> 00:41:49,576
+Standart, klasik programlama dillerinde.
+
+207
+00:41:50,036 --> 00:42:02,336
+Bir fonksiyonu çağırırken fonksiyona argümanları değer veya referans yani adres şeklinde aktarabilirim.
+
+208
+00:42:02,336 --> 00:42:10,336
+Ya o şeyin aktaracağım argümanın değerini paslıyorumdur, onu gönderiyorumdur.
+
+209
+00:42:11,215 --> 00:42:30,515
+Üzerinde işlem yapılacak o değeri bulunduran adresi gönderiyorumdur. Ki burada da linkler üzerinden paylaşılabilen veri alanlarının adreslerinin aktarılabilmesine imkan tanıyor. Doğru mu?
+
+210
+00:42:32,115 --> 00:42:32,715
+Evet, hocam.
+
+211
+00:42:36,500 --> 00:42:51,079
+Sadece mesajlaşmanın uygun olmadığı veya yetersiz olduğu, böyle veri paylaşımının, doğrudan veri paylaşımının gerekli olduğu senaryolar için böyle bir şey düşünülmüş.
+
+212
+00:42:55,699 --> 00:43:05,840
+Peki, böyle bir mekanizmayı destekliyorsa işletim sistemi donanım tarafında nasıl bir şeye ihtiyaç var?
+
+213
+00:43:11,891 --> 00:43:16,692
+[öğrenci], derse katılabildiğin güzel kaydın yeni oldu galiba senin. Öyle mi oldu?
+
+214
+00:43:16,692 --> 00:43:22,471
+Evet hocam. Evet, bu hafta eklediler bizi. Benle beraber iki arkadaş daha var normalde ama.
+
+215
+00:43:23,912 --> 00:43:27,311
+Çok uzun şurdu ya, ilginç oldu yani. Gerçekten.
+
+216
+00:43:27,311 --> 00:43:27,831
+Evet hocam.
+
+217
+00:43:30,131 --> 00:43:32,731
+Dersin formatını soruyordun işte bak format bu.
+
+218
+00:43:33,452 --> 00:43:37,952
+Evet hocam, sonra şey, maili attıktan sonra da kayıtları izleme fırsatım oldu.
+
+219
+00:43:38,572 --> 00:43:38,831
+Evet.
+
+220
+00:43:39,923 --> 00:43:41,804
+Oradan yakalayabildim biraz bir şeyler.
+
+221
+00:43:42,684 --> 00:43:52,663
+Güzel. Evet, son sorduğum veya son konuştuğumuz şey, yani linkler üzerinden shared data alanlarını paslayabiliyorsam.
+
+222
+00:43:53,268 --> 00:44:11,288
+Böyle bir birbirleriyle normalde mesaj üzerinden konuşacak o mesajların linkler üzerinden gidip geldiği bir yapıda aynı zamanda da paylaşılan veri alanlarına aktarabiliyorsam nasıl bir şeye ihtiyacım var? Yani ne gibi bir sıkıntım var önümde aşmam gereken?
+
+223
+00:44:16,307 --> 00:44:20,908
+Okuma yazmanın belirli şeylerle gerçekleşmesi lazım hocam.
+
+224
+00:44:22,648 --> 00:44:24,507
+Nelerle? Kontrollerle.
+
+225
+00:44:25,807 --> 00:44:34,688
+Nasıl yani? Sen şu an bunu tahayyül kafanda canlandırarak mı söylüyorsun yoksa paperda okuduğun bir yerden orayı referans göstererek mi söylüyorsun?
+
+226
+00:44:34,688 --> 00:44:42,568
+Aslında paperda böyle bir şey yok ama sonuçta ortak bir alana erişiyorlarsa ikisi de aynı anda yazma yapmamalı.
+
+227
+00:44:43,476 --> 00:44:59,216
+Ya da okurken biri diğerinin yazmasının bitmesini beklemeli gibi şeyler olabilir. Durumlar. Yani aslında senkronizasyon durumları gerekebilir. Critical section'lar.
+
+228
+00:44:59,216 --> 00:45:00,956
+Bak şurada bir şey diyor.
+
+229
+00:45:03,840 --> 00:45:13,100
+The only part of the operating system that needs hardware access to the memory of more than one task at a time is the kernel.
+
+230
+00:45:13,500 --> 00:45:22,160
+That part of the system which is used to move both messages and data from one task to another.
+
+231
+00:45:23,019 --> 00:45:27,720
+The two types of communication are unified in the link concept.
+
+232
+00:45:28,244 --> 00:45:51,244
+Ne demişler? Bu ikisini kombine etmemiz gereken senaryoda...
+
+233
+00:45:53,492 --> 00:46:04,632
+Erişime sahip olması gereken, hem mesajlara hem de şerit alanlara erişime sahip olması gereken yegane yer neresi demişler?
+
+234
+00:46:06,900 --> 00:46:13,240
+Körnel, evet. [öğrenci] demin yorum yapıyordu, değil mi? Yanlış mı gördüm?
+
+235
+00:46:13,780 --> 00:46:14,440
+Evet hocam.
+
+236
+00:46:14,440 --> 00:46:29,960
+Tamam, Körnel, değil mi? Yani diyorlar ki, iddiaları o ki, Körnel eğer erişirse o zaman diğer taraflarda bir şey yapmamıza gerek kalmayacak. Öyle görünüyor.
+
+237
+00:46:31,219 --> 00:46:40,219
+Bununla da alakalı bir takım ilüstrasyonlar, bunun nasıl yapılabildiğine yönelik şeyler sunacaklar paperda.
+
+238
+00:46:47,539 --> 00:46:52,300
+Linklerle alakalı kim konuşmak ister? Linklerin tanımını, özelliklerini?
+
+239
+00:47:04,148 --> 00:47:05,608
+Ben konuşabilirim hocam.
+
+240
+00:47:06,447 --> 00:47:07,128
+Konuş bakalım.
+
+241
+00:47:07,807 --> 00:47:10,907
+Çok sıralı olmayabilir ama aldığım notlardan konuş.
+
+242
+00:47:10,907 --> 00:47:13,447
+Tamam, peki. Aldığım notlardan konuş.
+
+243
+00:47:13,708 --> 00:47:21,788
+Dört tane link tipinden bahsetmiş. Bunlar request, resource, reply ve general link adı altında.
+
+244
+00:47:23,008 --> 00:47:28,468
+Reply linkleri sadece bir kez kullanılabiliyormuş. O detayı yazmışım.
+
+245
+00:47:28,820 --> 00:47:49,260
+Kullanımdan sonra destroy ediliyormuş, yok ediliyormuş. Çünkü bir request'in cevabı olarak oluşan bitmiş. Genel linkler iki proses arasında haberleşme içinde kullanılabiliyormuş. Özel bir kullanım senaryosu vardı ama şu anda hatırlamıyorum. Request'e request'lerin gönderildiği.
+
+246
+00:47:51,347 --> 00:47:54,208
+Mesajlara da söyleyeyim mi?
+
+247
+00:47:54,807 --> 00:48:00,847
+Şimdi bu [öğrenci]'in söyledikleriyle alakalı diğer arkadaşlarımız yorum yapacaklar mı?
+
+248
+00:48:02,728 --> 00:48:07,028
+Ekleme çıkarma, şöyledir, böyledir. Doğru mu söyledi her şeyi?
+
+249
+00:48:09,987 --> 00:48:15,007
+Hocam burada sanki üstüne bunların neden oluştuğuyla ilgili yapılar var.
+
+250
+00:48:15,539 --> 00:48:30,079
+Bir de en önemli noktalardan biri belki bu linklerin one way olduğu, simplex olduğu var. Çift taraflı aynı kanal üstünden alıp veremiyoruz. Eğer iki test birbiriyle haberleşecekse iki kanal, iki link.
+
+251
+00:48:30,547 --> 00:48:36,347
+İki tane link oluştuğu zaman ne oluyor? İki link bir araya geldiğinde biri bir yönde, biri bir yönde.
+
+252
+00:48:36,367 --> 00:48:37,248
+Full duplex oluyor.
+
+253
+00:48:37,567 --> 00:48:38,668
+Half duplex oluyor.
+
+254
+00:48:39,067 --> 00:48:46,507
+Tekki olursa half, ikisi bir araya geldiğinde full duplex oluyor ve aslında ne oluşturmuş oluyoruz? Bir kanal oluşturmuş oluyoruz değil mi?
+
+255
+00:48:47,387 --> 00:48:48,027
+Evet.
+
+256
+00:48:49,387 --> 00:48:49,967
+Güzel.
+
+257
+00:48:49,967 --> 00:48:55,967
+Onun dışında bir de bu tipleri oluştururken, işte reply request ve general...
+
+258
+00:48:56,000 --> 00:49:00,779
+Linkleri oluştururken bunun dışında bir de, yanlış hatırlamıyorsam, resource link de vardı.
+
+259
+00:49:01,679 --> 00:49:07,039
+Tamam, resource link ne için kullanılıyor? Az önce kim? [öğrenci] de söyledi onu sanki.
+
+260
+00:49:07,960 --> 00:49:08,539
+Evet hocam.
+
+261
+00:49:09,239 --> 00:49:10,900
+Tamam, resource link ne için var?
+
+262
+00:49:11,347 --> 00:49:30,067
+Resource Link hocam, mesela aşağıda paper'ın devamında örnek veriyor bir yerde. Bir file system'a önce bir request atıyor. Ben bunu kullanmak istiyorum diye. İşte karşılığında replay alıyor, belli akış ilerliyor. Sonra fail'ı okurken o Resource Link üstünden bu sefer işlemler ilerliyor diye hatırlıyorum.
+
+263
+00:49:31,407 --> 00:49:35,987
+Var mı ekleyecek olan, yorum yapacak olan arkadaşımıza, [öğrenci]'e?
+
+264
+00:49:39,027 --> 00:49:50,467
+Hocam bir de şey var. Link'i oluştururken oluşturan proses şeyi yapıyor. Link'in kontrolünde aslında görevli değil. Onu kernel yönetiyor.
+
+265
+00:49:50,507 --> 00:49:56,127
+Tamam tamam. Hayır. Şu resource linkten bahsediyoruz. Az önce [öğrenci] onunla alakalı bir açıklama yaptı ya.
+
+266
+00:49:56,127 --> 00:50:03,087
+Onun yaptıklarından yola çıkarak bir şey söyleyeceğiz mi? Eklemek istediğiniz var mı?
+
+267
+00:50:07,860 --> 00:50:15,960
+Resource Link ile alakalı bir açıklama yaptı evren. Doğru mu yaptı? Öyle mi yazıyor hakikaten? Kimler okudu bakayım?
+
+268
+00:50:26,516 --> 00:50:34,695
+Bu derin sessizliğin arkasında üküt ikrardan gelir mi yatıyor yoksa? Daha fazlasını okumadık mı diyorsunuz?
+
+269
+00:50:39,923 --> 00:50:43,403
+Ya da benim internet bağlantım koptu. Beni duymuyorsunuz.
+
+270
+00:50:43,943 --> 00:50:45,043
+Yok, duyuyoruz hocam.
+
+271
+00:50:48,364 --> 00:50:49,123
+Evet.
+
+272
+00:50:49,923 --> 00:50:55,103
+Hocam link başlığı altında çok fazla detay vermemiş ama...
+
+273
+00:50:57,056 --> 00:51:07,115
+O zaman şimdi [öğrenci] veya hatta kimsen mi [öğrenci] mı resource linkini nereden uydurmadılar değil mi? Var orada o detaylar. Olması lazım.
+
+274
+00:51:07,115 --> 00:51:08,235
+O zaman?
+
+275
+00:51:09,516 --> 00:51:14,355
+Burada şeyden bahsedilmiş. Duplike edilebilir veya destroy edilebilir.
+
+276
+00:51:15,155 --> 00:51:24,516
+Prosesör tarafından. Başka bir task'a verilebilir. User ID ile.
+
+277
+00:51:25,684 --> 00:51:29,844
+Tabii, creator'ı, prosesörün kendisi olması lazım.
+
+278
+00:51:30,844 --> 00:51:32,624
+Gibi bir detay verilmiş.
+
+279
+00:51:34,404 --> 00:51:35,584
+Resource'da yok kalın.
+
+280
+00:51:36,544 --> 00:51:41,184
+Hocam, resource linkle ilgili o dediğim örneği bir daha açtım da.
+
+281
+00:51:41,664 --> 00:51:42,764
+O da şey yapıyor sanki.
+
+282
+00:51:43,664 --> 00:51:45,684
+Task A, işte...
+
+283
+00:51:46,284 --> 00:51:49,124
+Nerede sen onun yerini söyle bakayım her şeyden önce.
+
+284
+00:51:49,244 --> 00:51:50,964
+Diğer arkadaşlarım da oraya gitsinler.
+
+285
+00:51:50,964 --> 00:51:51,884
+Bakayım hocam.
+
+286
+00:51:52,192 --> 00:52:02,091
+Link Usage'ın altında, aşağıda bir yerde, şey, Link Management'ın iki şey, paragraf üstünde bir yerde örnek veriyor.
+
+287
+00:52:02,431 --> 00:52:07,851
+To Open Defile, Task A Performance A Call Operation falan diye bir paragraf anlatıyor.
+
+288
+00:52:07,871 --> 00:52:14,411
+O soru için ben oraya bakmıyordum hocam da. Onun üstünde messages, channels falan da var. O yüzden bakmamışım ben oraya.
+
+289
+00:52:15,347 --> 00:52:21,347
+Yani farklı bir başlık aslında burası. Burada bir örnek veriliyor. Arkadaşın söylediği gibi.
+
+290
+00:52:22,048 --> 00:52:30,867
+Tamam. Burada hocam sistemde açık olan resursların counter'ını tutmak için her oluştuğunda ya da distro edildiğinde asıl linkin sahibine bir mesaj gider.
+
+291
+00:52:32,608 --> 00:52:33,288
+Okey.
+
+292
+00:52:33,948 --> 00:52:34,668
+Bir ifade var.
+
+293
+00:52:35,860 --> 00:52:45,440
+Şu resource linkine ben takıldım. Onu biraz bana açıklayayım. Diğer ayrıntılar şey. Oraya biraz ben takıldım. Bir açıklayayım bakayım bana.
+
+294
+00:53:01,235 --> 00:53:26,635
+Yani hocam buradan çok emin olmamakla birlikte, şey hocam sanki işte task A file system'a gidiyor, ben bunu kullanmak istiyorum. Kullanabilirsin, kullanamazsın kontrollerini yapmak için birbirlerine birkaç kere daha işte request reply linkleri oluşturuyorlar. En sonunda eğer okeyse her şey, task A'dan file system'a bir resource linki oluşuyor.
+
+295
+00:53:28,244 --> 00:53:34,224
+Oradan da file'lı okumaya başlıyor. Onu işte işleyiciye dataları almaya başlıyor.
+
+296
+00:53:35,064 --> 00:53:35,384
+Tamam.
+
+297
+00:53:36,344 --> 00:53:37,064
+Diye anlıyorum.
+
+298
+00:53:42,099 --> 00:53:45,179
+Şimdi bakın, arada neyin olması gerekiyor arkadaşlar?
+
+299
+00:53:49,012 --> 00:54:16,372
+Kernel'ın olması gerekiyor değil mi? Çünkü her şey Kernel üzerinden yönetiliyor. Az önce bir şey söyledik ya, ortak alana erişim, mesajlaşma, bunları unify edebilmek adına donanımdaki kısıtları da göz önünde bulundurarak her zaman her yere erişimi olabilecek tek yerin Kernel olduğunu da bilerek, varsayarak hareket ettiğimizde.
+
+300
+00:54:16,784 --> 00:54:27,904
+O zaman bu linklerin oluşumunda yok edilmesinde ve kullanılmasında kernel'ın da aktif olması gerekiyor.
+
+301
+00:54:28,444 --> 00:54:34,924
+Şimdi bakın, orada örneği üzerinden adım adım okuyalım isterseniz. Çok net bir şekilde söylüyor.
+
+302
+00:54:36,764 --> 00:54:41,124
+To open the file, task A performs a call operation.
+
+303
+00:54:41,684 --> 00:54:45,524
+İlk olarak, bu sistemle alınçlı bir link ile ilgili bir şekilde alınıyor.
+
+304
+00:54:45,632 --> 00:54:58,951
+Şimdi demiştik ya, bir takım servislere standart linkler oluşturuluyor. En başında bunu kabul ettik. Bunun için task'ın özel bir şey yapmasına gerek yok. Task oluşturulurken bu linkler oluşturuluyor.
+
+305
+00:54:59,311 --> 00:55:10,931
+Sending a message containing the file name and other required parameters. Nedir? File name'in yanı sıra, varsayalım bunu read only mi açacak, read write mi açacak?
+
+306
+00:55:11,668 --> 00:55:25,988
+The kernel creates a reply link. Kernel bakın ne oluşturuyor? Bir reply link. Yani bu request'in cevabının döneceği ayrı bir link oluşturuyor.
+
+307
+00:55:27,208 --> 00:55:38,708
+Specifying the standard reply channel and sends the message and reply link to the file system. Niçin bunu file sisteme gönderiyor arkadaşlar?
+
+308
+00:55:48,724 --> 00:55:50,963
+Evet, niçin file sisteme gönderiyor?
+
+309
+00:55:55,603 --> 00:56:19,467
+Aradan çekilebilmek için mi? File Sistemi'nin link oluşturmasına gerek olmasın diye. File Sistem kodu sadece file'lara erişiyor, okuyor, yazıyor, siliyor, güncelliyor, neyse. Ama aradaki kernel ona...
+
+310
+00:56:19,699 --> 00:56:32,699
+İsteklerin gönderilmesi için link oluşturulmasını sağladığı gibi, o isteklerin geri dönüşünün de ilgili task'a aktarılabilmesi için linkin oluşturulmasından sorumlu.
+
+311
+00:56:33,920 --> 00:56:40,159
+Böylece bakın link yönetimini ne yapmış oluyorsunuz?
+
+312
+00:56:41,000 --> 00:56:42,480
+Kernel'de bırakmış oluyoruz.
+
+313
+00:56:47,440 --> 00:57:12,679
+User Space'lik tasplarda çıkartmış oluyorsunuz. Bunu merkezi olarak yönetmiş oluyorsunuz. O zaman bunu merkezi olarak yönetiyorsanız, az önceki ortak veriye erişimi de diyorlar ya, unified bir mekanizmayla sadece kernel'ın her yere erişim olsa yeter, onun üzerinden yapabiliriz. Bunu sağlamış oluyorsunuz.
+
+314
+00:57:13,108 --> 00:57:39,508
+Şimdi devam edelim. Neydi? Reply link to the file system. When the file system receives the message, it interprets it. Ne olduğunu anlıyor. Opens file X and in turn creates a resource link to itself. Duymak istediğin buydu. Resource link to itself. Bakın, resource linki kendini üretiyor.
+
+315
+00:57:41,331 --> 00:57:42,331
+Oh.
+
+316
+00:57:43,331 --> 00:57:52,331
+The code field of the resource link contains the internal index into the file system open file table entry for file X.
+
+317
+00:57:53,012 --> 00:58:19,931
+FileX açılan file ne ise onun çetelesini tutabilmek, orada file pointer'ın nerede olduğunu bilebilmek, kapatıyor muyum, yazıyor muyum, hata mı oluştu? Bunları şey yapabilmek adına kendisi için bir internal link oluşturuyor. Resource link bu arkadaşlar. Resource ne demek? Kaynak. İşletim sistemi de kaynakları yönetiyor ya.
+
+318
+00:58:20,335 --> 00:58:29,875
+İşte burada mesela File System, orada oluşturulan File'lar, Object diyelim. Bunlar da birer resource ya. Onun için.
+
+319
+00:58:30,875 --> 00:58:38,936
+The code field of the resource link contains the internal index into the File System's open file table entry for file X.
+
+320
+00:58:39,795 --> 00:58:45,275
+The file system then does a reply operation on the reply link sent by task A.
+
+321
+00:58:46,068 --> 00:58:54,088
+Passing the resource link representing file x back along the reply link to task a.
+
+322
+00:58:55,468 --> 00:59:02,848
+Cevap linki üzerinden aynı zamanda neyi de pasladı? Resource linki de pasladı.
+
+323
+00:59:02,848 --> 00:59:13,428
+Böylece kernel bir link üzerinden başka bir linkin bilgisini aktararak file'dan okudukça okuduğunun
+
+324
+00:59:14,324 --> 00:59:20,723
+Task tarafından erişilebilir olmasını, o mesajın task'ı gidebilmesini sağlıyor.
+
+325
+00:59:23,123 --> 00:59:33,864
+The completion message and the link ID for the resource link representing file X are returned to task A, which becomes ready because the implicit receive operation, falan filan.
+
+326
+00:59:34,403 --> 00:59:37,723
+The reply link is destroyed by the kernel after it is used.
+
+327
+00:59:38,239 --> 01:00:00,000
+Task A now has two links to the file system. It's standard requesting and a resource link. Bakın ne oldu? File'ı açtı. File'ın açması için araya girildi. File kernel tarafından açıldı. Açılan file'a task tarafından erişimin sağlanması için reply link üzerinden...
+
+328
+01:00:00,000 --> 01:00:25,239
+Yani kernel tarafından oluşturulmuş reply link üzerinden resource link haslandı. Artık ortada üç tane şey yok. Tekrar iki tane var. Bunlardan bir tanesi request okumasını falan şeyini yapacağı. Diğeri de bu requestlerin yapısına okuma veya yazma olmasına bağlı olarak gerekli veri akışının sağlanacağı resource link.
+
+329
+01:00:29,588 --> 01:00:42,008
+Task A now has two links to the file system, its standard request link and a resource link representing file X. The file system has no links to task A.
+
+330
+01:00:44,820 --> 01:01:04,180
+File sisteme, Task A'in file sistemi var ama file sistemin Task A olmasına gerek kalmadı. Aradan çekildi. Yani gerekli işleri bitirdikten sonra. Anlaştık mı? Resource Link'in ne olduğu ile alakalı.
+
+331
+01:01:06,060 --> 01:01:06,560
+Evet, oldu.
+
+332
+01:01:07,160 --> 01:01:09,480
+Neymiş peki? Şimdi sorayım tekrar.
+
+333
+01:01:10,132 --> 01:01:13,112
+Evet, kim bir cümleyle özetleyecek?
+
+334
+01:01:23,956 --> 01:01:30,576
+Hocam şöyle söyleyebilir miyiz? Task ile kaynak arasındaki bağlantıyı sağlayıp aradan çekiliyor.
+
+335
+01:01:32,576 --> 01:01:50,215
+Resource Link kaynağa ihtiyacı gönderen, isteği gönderen task'ın aradaki yapıya tekrar tekrar gönderip onun üzerinden erişmesine gerek kalmaksızın doğrudan erişmeyi sağlayan link.
+
+336
+01:01:52,019 --> 01:02:04,699
+Resurslara kontrollü bir şekilde merkezi bir noktadan erişilebilmesi için mesela bir faili bir proses bir task açtıysa belki diğerinin açmaması gerekiyor.
+
+337
+01:02:05,108 --> 01:02:21,208
+Mutual Exclusion'dan bahsetti biriniz. [öğrenci] sen miydin, [öğrenci] sen miydin hatırlamıyorum. Bu tarz şeylerin sağlatması gerekiyor. O zaman arada da böyle bir mekanizmaya ihtiyaç var. Ama bir kez o erişim verildikten sonra gereksiz bürokrasiyi ortadan kaldırıyor.
+
+338
+01:02:22,195 --> 01:02:44,596
+File sisteme gönderdi. File sistem file gönderdi. File'den geldi. Yani tabii file gönderdi derken bir device driver üzerinden bir yerden gönderecek. Oradan geldi. File sisteme. File sistem tekrar gereksiz. Arada her seferinde bir mesajlaşma daha var. Ek trafik var. Onu ortadan kaldırıyor. Anlaştık mı?
+
+339
+01:02:48,788 --> 01:02:49,627
+Evet hocam.
+
+340
+01:02:50,567 --> 01:02:51,188
+Hadi bakalım.
+
+341
+01:02:52,447 --> 01:02:54,288
+[öğrenci] sen de okey misin?
+
+342
+01:02:55,967 --> 01:03:02,047
+Ben biraz kaçırdım biraz anladım hocam. Çok hakim değilim işletim sisteminde. Ama tamamdır.
+
+343
+01:03:02,728 --> 01:03:06,307
+Tamamdır diyorsun. Okey. Sen elektronikten geliyordun değil mi?
+
+344
+01:03:06,407 --> 01:03:06,967
+Evet hocam.
+
+345
+01:03:07,327 --> 01:03:09,688
+Tamam. Geçen hafta konuşmuştuk değil mi seninle?
+
+346
+01:03:09,688 --> 01:03:11,288
+Tamam. Güzel.
+
+347
+01:03:12,052 --> 01:03:37,192
+Evet, [öğrenci]ler. Sizler tamam mısınız? Evet hocam. Tamam, süper. [öğrenci] sen ne diyorsun? Hocam, aradan kalkan bir istek daha kaldırıyoruz dedik ya. Bu mesela şöyle mi? Şöyle mi düşünmeliyiz? Bir file açtım. Tekst dosyası, işte yüz satır var.
+
+348
+01:03:37,844 --> 01:03:47,063
+50. satırı okumak için bir istek atıyorum. Sonra 51. satırı okumak için bir istek atıyorum mu? Tek tek yapmamak için mi?
+
+349
+01:03:47,684 --> 01:03:54,923
+Arada file sisteme gerek kalmıyor işte. File sistemin geri dönerleri veyahut da gidecek olanları üzerinden geçirmesine gerek kalmıyor.
+
+350
+01:03:57,503 --> 01:04:00,043
+Tamam, tamam. Şimdi aldım hocam.
+
+351
+01:04:00,844 --> 01:04:02,844
+Yani arada...
+
+352
+01:04:03,411 --> 01:04:19,291
+Santral dedik ya, santral memuru gibi davrandı. Yani şöyle düşünün, eski zaman santralinde arada santral memuru var, kulaktan kulağa oynar gibi şunu mu yapıyoruz? Ben bir şey söylüyorum, bunu karşı tarafa söyle. O söylüyor, bekliyorum.
+
+353
+01:04:19,891 --> 01:04:42,652
+Söyledim mi? Evet, söyledim. Karşı taraf ne söyledi? Şunu söyledi. Hadi bana. Böyle bir şey mi yapıyoruz? Hayır. Oradaki memur memure neyse, beş numarayla yedi numarayı birbirine bağladıktan sonra aradan çekiliyor. Burada onu anlatıyor. Resource Link bunun için var. Evet. Devam.
+
+354
+01:04:45,652 --> 01:04:46,831
+Link Management.
+
+355
+01:04:51,987 --> 01:04:54,208
+Link Management neler yapıyor arkadaşlar?
+
+356
+01:05:12,755 --> 01:05:17,655
+Hocam, hocam. Link... Buyur [öğrenci], söylese.
+
+357
+01:05:17,715 --> 01:05:18,475
+Sen buyur.
+
+358
+01:05:19,315 --> 01:05:24,635
+Hadi yazı tura atalım. Önde hadi. Sen şey yap, sonra [öğrenci] söz vereceğiz.
+
+359
+01:05:25,096 --> 01:05:37,735
+Tamam. Hocam, Link Management'da şu işe yarıyor anladığım kadarıyla. Birden çok linkimiz var elimizde. Bunlardan bir kısmı ölebilir. Point ettiği prosesler ölmüş olabilir.
+
+360
+01:05:38,996 --> 01:05:59,596
+Ya da terminate etmiş olabilir veya successful, başarılı bir şekilde bitmiş olabilir. Bu linklerin bir şekilde yönetilmesi ve sistemde her zaman çalışan linklerin bulunması gibi bir konu var. Yani bu link yönetimi aslında bunu adresleyen bir konu.
+
+361
+01:06:03,699 --> 01:06:09,880
+Destro edilmiş proseslerin gösterilmemesi için standart teknikler var demiş.
+
+362
+01:06:09,880 --> 01:06:20,400
+Burada şey diyor. O şeyin linkin kullanılmamasını sağlamak. Kullanımdan kaldırmayı standart yöntem olarak belirtmiş.
+
+363
+01:06:22,779 --> 01:06:28,659
+Peki. Eklemek isteyen var mı? [öğrenci] sen bir şeyler söyleyecektin.
+
+364
+01:06:29,204 --> 01:06:50,543
+Hocam aşağı yukarı buna yakın şeyler söyleyecektim ama linklerin şeyi vardı. Protection'ı koyabiliyordunuz flaglerle beraber. Duplicate olmasın, şöyle kullanmasın. Eğer bunu isteyen task varsa şeydebilmesi lazım. Bu link işte duplicate oldu mu, biri daha oluşturdu mu, kopyalandı mı bir yere. Bunların da melece edilebilmesi lazım.
+
+365
+01:06:50,543 --> 01:06:56,543
+Anladım. Peki, bir saniye.
+
+366
+01:06:58,483 --> 01:07:02,644
+Bu link management'ta karşılaşılabilir.
+
+367
+01:07:02,664 --> 01:07:06,423
+Bir konu daha var. Evet, şimdi notlarımdan gördüm.
+
+368
+01:07:07,023 --> 01:07:12,324
+Şimdi bizim deadlock oluşma durumlarımız olabiliyormuş.
+
+369
+01:07:12,324 --> 01:07:13,844
+Bu da şöyle.
+
+370
+01:07:15,224 --> 01:07:18,704
+Ölmüş bir task var. Biz ona bir linkle bağlıyız.
+
+371
+01:07:18,903 --> 01:07:20,324
+Oraya gidiyoruz, bir istekte bulunuyoruz.
+
+372
+01:07:21,088 --> 01:07:26,307
+O task bize cevap vermiyor. Vermediği için biz de onu bekliyoruz. Orada circular weight oluyor.
+
+373
+01:07:27,108 --> 01:07:34,387
+Ama burada bir dakika, ben şimdi ölen bir tasktan cevap bekliyorum ama bana cevap vermiyor. Circular weight oldu mu?
+
+374
+01:07:35,168 --> 01:07:44,568
+Yok. Aslında circular weight olmadı bu da. Sonuçta böyle bir beklemede kalıyorum. Starvation oluşuyor aslında. Bu starvation gibi bir şey olur.
+
+375
+01:07:45,204 --> 01:07:49,004
+Ama bu söylediği senaryo Circular Weight'e dönüşebilir mi?
+
+376
+01:07:49,584 --> 01:08:02,464
+Dönüşmez. Dönüşmez bu. Circular Weight'e şöyle dönüşebilir. Başka bir kaynak da o bekleyen kaynağı bekliyorsa bu sefer öyle bir şeyler olabilir.
+
+377
+01:08:02,464 --> 01:08:09,504
+Yani ben bir kaynağı bekliyorum. Beni bir başkası bekliyor. Onu bir başkası bekliyor. O da orijinal kaynağı.
+
+378
+01:08:10,804 --> 01:08:12,104
+O zaman oluşturur.
+
+379
+01:08:13,044 --> 01:08:13,344
+Değil mi?
+
+380
+01:08:13,344 --> 01:08:13,624
+Evet.
+
+381
+01:08:14,844 --> 01:08:22,028
+Yani bu durumları yönetmek için de ilerleyen zamanlarda bir yöntem, deadlock kontrol yöntemi...
+
+382
+01:08:22,036 --> 01:08:41,256
+Bir tane çok basit ama etkili olabilecek yöntem önermişler. Ne önermişler? Time out hocam. Time out. Aynen öyle. Belirli bir sürede olmuyorsa o zaman olmuyordur.
+
+383
+01:08:41,976 --> 01:08:45,896
+Bu time out zaten tam esneden itibaren var değil mi hocam? Ortada görmüştük.
+
+384
+01:08:46,323 --> 01:08:47,963
+Nereden itibaren var [öğrenci]?
+
+385
+01:08:48,384 --> 01:08:50,023
+Mesada da böyle bir durum olacak.
+
+386
+01:08:50,023 --> 01:09:07,963
+Var, var, var tabii. Timeout İsviçre çakısı gibi bir şey. Sonsuza kadar beklememizi şey yapıyor. Yani seni de hayatımızdan düşünelim. Gidip biriyle buluşacaksınız. Gelmiyorsa orada belirli bir süre dikilirsiniz. Gelmiyor diye karar verir, devam edersiniz.
+
+387
+01:09:07,963 --> 01:09:13,103
+Bazen de timeout da işe yaramayabilir. Yani çok kritik bir şeyse.
+
+388
+01:09:13,811 --> 01:09:17,131
+Cevap gelmiyorsa kalır yani.
+
+389
+01:09:17,952 --> 01:09:26,492
+Şimdi Time Out, Deadlock'ın oluşmasını engellemek için böyle bir senaryoda kullanılabilecek bir mekanizma.
+
+390
+01:09:26,492 --> 01:09:31,752
+Ama bu arada işin düzgün yapılıp yapılmadığının garantisini vermez.
+
+391
+01:09:32,112 --> 01:09:36,112
+Evet, hatalı da olabilir. Düzgün de tamamlanmış olabilir.
+
+392
+01:09:36,512 --> 01:09:38,412
+Yani onun garantisi yok, o ayrı bir şey.
+
+393
+01:09:38,868 --> 01:10:00,000
+İşi yapmak değil mesele burada hedef daha doğrusu. Evet, o sonsuz bekleme durumundan çıkabilmek. Bakın bu çok kısa bir paper'dı. Yani referanslarıyla beraber ki 10 sayfa bile bil.
+
+394
+01:10:00,000 --> 01:10:09,039
+Yani 9 sayfa çoğu şey. Bir de önünüzde açık mı bilmiyorum. Bu bypass linklerini sormak istiyorum.
+
+395
+01:10:15,347 --> 01:10:24,108
+İlk defa duymuş gibi yapıyorsun [öğrenci]. Notlarım da yok hocam ya. Eyvah eyvah eyvah eyvah.
+
+396
+01:10:24,108 --> 01:10:31,108
+Hocam bu sanki şeyle ilgiliydi. Buyurun. Şey, biz prosesi taşıdığımızda...
+
+397
+01:10:31,520 --> 01:10:39,820
+Eski adresi bulunan proses. Biz proses aldık, başka bir yere koyduk ama önceden iletişimde olan...
+
+398
+01:10:39,820 --> 01:10:43,000
+Dur burada şey yaptık mı? Migration yaptık mı?
+
+399
+01:10:44,140 --> 01:10:46,540
+Onunla ilgili o sayfada değil miydi hocam onlar?
+
+400
+01:10:47,700 --> 01:10:51,400
+Bilmiyorum. Ben belki de sizi yanıltmak için soru soruyorum [öğrenci].
+
+401
+01:10:52,620 --> 01:10:56,040
+Ne kadar eminsiniz söylediğinizden anlamak için soruyorum belki de.
+
+402
+01:10:58,163 --> 01:11:00,443
+Ben sanki o paper'daydı diye hatırlıyorum hocam.
+
+403
+01:11:01,323 --> 01:11:02,763
+Paper önünde açık değil mi?
+
+404
+01:11:03,423 --> 01:11:03,963
+Bakıyorum.
+
+405
+01:11:06,443 --> 01:11:08,243
+Bypass linkleri nerede var?
+
+406
+01:11:09,683 --> 01:11:13,144
+Konuşurken birimiz soru sordu, onunla alakalı açıklama yaptım hatta.
+
+407
+01:11:15,523 --> 01:11:18,103
+Hocam bu debug meselesinde vardı diye hatırlıyorum da.
+
+408
+01:11:18,564 --> 01:11:20,463
+Debug, monitoring değil mi?
+
+409
+01:11:25,811 --> 01:11:39,252
+Arada mesajı okuyor debugger ama kanala karışmıyordu. Linke karışmıyordu galiba. Mesaj kanalını kopyalıyordu. Linki de bypass olarak veriyordu. Karışmıyordu oraya datapet.
+
+410
+01:11:40,032 --> 01:11:42,592
+Ayrı bir bağlantı oluşturuyor değil mi?
+
+411
+01:11:44,791 --> 01:11:45,551
+Evet hocam, aynen.
+
+412
+01:11:47,532 --> 01:11:51,391
+Neyi bypass geçiyor arkadaşlar? Niçin buna bypass link deniyor?
+
+413
+01:11:57,268 --> 01:12:01,568
+Datanın boyutu artınca galiba handle etmek istemiyorum. O araya girmek istemiyordu.
+
+414
+01:12:02,568 --> 01:12:12,308
+Büyük veri aktaracağı zaman bunu monitoring task üzerinden aktarırsa çok fazla gecikme olacak, çok fazla işlem gücü olacak değil mi?
+
+415
+01:12:14,587 --> 01:12:15,208
+Evet hocam.
+
+416
+01:12:17,347 --> 01:12:22,208
+Orada işi hızlandırmak adına ne yapıyor? Monitörü...
+
+417
+01:12:23,283 --> 01:12:42,843
+Bypass'lıyor. Data kısmını monitör üzerinden şey yapmıyor. Burada Bypass linki deniyor. Evet. Şimdi isterseniz bir 3-5 dakika ara verelim. Diğer paper'a geçelim. Tamam.
+
+418
+01:12:44,843 --> 01:12:50,884
+Kaçmış? 49 işte bir 5-6 dakika sonra şey yaparız öbürüne.
+
+419
+01:12:51,247 --> 01:12:53,247
+Vesleriz.
+
+420
+01:12:55,247 --> 01:12:57,247
+Namun dair.
+
+421
+01:23:06,579 --> 01:23:14,799
+Devam edelim isterseniz. Şimdi Process Migration in Demos MP. Kim anlatmak ister?
+
+422
+01:23:19,828 --> 01:23:23,128
+Ben bir giriş yapmak isterim hocam. Peki [öğrenci]?
+
+423
+01:23:25,388 --> 01:23:33,888
+Makalede hocam, proseslerin göçünden bahsetmiş işlemciler arasında transfer edilmesinden.
+
+424
+01:23:41,779 --> 01:23:47,979
+Proses durduruluyor, yer işlemciye aktarılıyor, daha sonra orada kaldığı yerden devam ediyor.
+
+425
+01:23:47,979 --> 01:23:57,479
+Neden böyle bir işleme ihtiyaç duyulmuş? Bunun birkaç sebebi var. Onlardan bahsetmiş, onlardan bahsedeyim ufak ufak.
+
+426
+01:23:57,479 --> 01:24:07,479
+Bir işlemci yükü yüklerini eşitlemek için sanırım, bir işlemci yükü %90, diğeri %30 gibiyse mesela.
+
+427
+01:24:07,891 --> 01:24:16,572
+Bunları birbirine yakın hale getirmek için işlemci yükü fazla olan işlemcideki prosesi diğer prosesi arttırıyor.
+
+428
+01:24:16,572 --> 01:24:23,891
+Kaynağa erişimi daha kısa olacaksa ve o tarafta bir işlemci varsa oraya geçiyor.
+
+429
+01:24:23,891 --> 01:24:35,083
+Bir işlemci hatası varsa, işlemci hatası tespit edildiğinde ya da öngörüldüğünde, prosesi kaybetmemek için başka bir işlemciye geçiyor.
+
+430
+01:24:35,444 --> 01:24:42,144
+Bunlardan bahsediyor. Bir de genel olarak makalede şeyden bahsediyor.
+
+431
+01:24:42,144 --> 01:24:45,604
+Diğer işletim sistemleri, bu işlem zor bir işlem diyor.
+
+432
+01:24:47,264 --> 01:24:55,824
+Biz bunu uygun bir şekilde yaptık diyor. Ondan sonrası yok. Bu kadar hocam.
+
+433
+01:24:56,564 --> 01:24:57,604
+Ondan sonrası yok.
+
+434
+01:25:02,064 --> 01:25:02,796
+Başka...
+
+435
+01:25:03,123 --> 01:25:09,644
+Ana amacı biz bunu nasıl doğru şekilde yaptık. Filip onu anlatıyor aslında.
+
+436
+01:25:12,103 --> 01:25:14,404
+Başka eklemek isteyen var mı?
+
+437
+01:25:15,503 --> 01:25:20,923
+Hocam amaçların arasında bir de şeyden bahsediyor kısa bir başlık olarak.
+
+438
+01:25:22,043 --> 01:25:26,724
+Aynı zamanda lokal olmayan resurslara erişim.
+
+439
+01:25:27,507 --> 01:25:38,768
+İşin komünikasyon gerekçeyi için, process migration burada yapıldığı zaman, buradaki maliyeti de azaltmış oluyor. Sistemin performansını iyileştiriyor. Bir faydası da bu aslında.
+
+440
+01:25:39,688 --> 01:25:45,667
+[öğrenci]'in dediği bu değil miydi? Kaynağa yakın hale getirmek, erişilen kaynağa yakın hale getirmek prosesi.
+
+441
+01:25:45,667 --> 01:25:51,128
+Evet. Fault tolerans sağlıyoruz. Onlardan bahsetti.
+
+442
+01:25:51,636 --> 01:25:55,976
+Eşit yük doğada bunu sağlayabiliyoruz. Yani üç tane temel amacı var gibi.
+
+443
+01:25:58,476 --> 01:26:03,775
+Tamam, peki. Bir proses migration sırasında neler yapılması gerekiyor?
+
+444
+01:26:08,627 --> 01:26:13,768
+Onları adım adım sekiz adımla tanımlıyor aslında.
+
+445
+01:26:14,907 --> 01:26:16,927
+Nedir onlar? Öğrenebilir miyiz?
+
+446
+01:26:18,467 --> 01:26:26,528
+Yani ben başlıklardan buradan giderek prosesin dediği gibi durduruyor ilk başta.
+
+447
+01:26:27,528 --> 01:26:33,967
+Sonra karşı taraftaki proseslerin kernel'ına bu prosesi taşıyıp taşıyamayacağını soruyor.
+
+448
+01:26:34,547 --> 01:26:50,667
+Karşı taraftaki kernel gelecek proses için bir state tablosu gibi bir yer ayırıyor. Daha sonrasında da proses transfer edilmeye başlıyor aslında.
+
+449
+01:27:00,819 --> 01:27:06,559
+Proses'e gelen, beklemeyi alınan mesajlar aslında. Tekrardan yeni proses'e...
+
+450
+01:27:06,559 --> 01:27:08,440
+Biraz atlamış olabilir misin acaba?
+
+451
+01:27:09,819 --> 01:27:14,020
+Neyi atladım? Düşünüyorum. Program transfer ediliyorduk. State transfer ediliyor.
+
+452
+01:27:15,299 --> 01:27:17,279
+Programdan kastettiğin kod mu?
+
+453
+01:27:17,799 --> 01:27:19,460
+Evet, kod, data, stack.
+
+454
+01:27:19,979 --> 01:27:21,380
+Tamam, tamam.
+
+455
+01:27:22,079 --> 01:27:27,440
+Sonra da bekleyen mesajlar aslında forward ediliyor. O transfer sırasına gelen şeyler.
+
+456
+01:27:28,819 --> 01:27:38,520
+Sonra yine kaynak prosedur'daki kalan proses state'leri temizleniyor ve son adımda da yeni proses yeni yerine başlatılıyor gibi.
+
+457
+01:27:39,559 --> 01:27:42,159
+Tamam. Çok güzel. Herkes hemfikir mi bunda?
+
+458
+01:27:45,000 --> 01:27:45,299
+Evet.
+
+459
+01:27:46,760 --> 01:27:50,899
+Hocam en son clean up proses state'inde bir forwarding adres diye bir şey koyuyor.
+
+460
+01:27:51,639 --> 01:27:54,500
+Hani linkler kalmış olabilir ya aslında taşıdınız.
+
+461
+01:27:55,028 --> 01:28:02,007
+Taşıdığımız şey aslında siteyi ve kodu. Şimdi o linkler kaldı. Linklerden daha sonra mesaj gelebilir.
+
+462
+01:28:03,628 --> 01:28:17,868
+Yani bu prosesle bulunduğu işlemcide link kurup haberleşmekte olan prosesler o sırada belki haberleşmiyorlardı. Bir şeyin olmasını bekliyorlardı.
+
+463
+01:28:17,868 --> 01:28:22,668
+Ama biz o sırada ne yaptık? Bunu başka bir...
+
+464
+01:28:22,804 --> 01:28:47,503
+Sisteme gönderdik. Bu prosesle mesajlaşması olan, linki olan proseslerin bu durumdan haberi yok. Eğer ben o linkleri de forward etmezsem, yeni sisteme yönlendirmezsem bu sefer onların çökmesine sebep olurum. Çalışamamasına. Yani bir nevi nereye girecekler, bir mesaj gönderecekler havada kalacak.
+
+465
+01:28:49,203 --> 01:28:55,623
+Değil mi? Bunu da yapmamız lazım. Bu da önemli bir şey. Çünkü bakın, paper'ın...
+
+466
+01:28:56,564 --> 01:29:10,283
+Kaçıncı sayfası? Bu 113 oluyor. Ortada bir yerde başladığı için bu ACM'in o kitapçığında 110. sayfadan 113'te. Dikkat ediyor musunuz? Switchboard var. Gördünüz mü?
+
+467
+01:29:10,283 --> 01:29:24,283
+Yani aslında bir adım önceki demos'taki yapının üzerine bu process migration kurulduğundan dolayı zaten link yapısını kabul etmemiz lazım. Bu switchboard yapısını...
+
+468
+01:29:24,564 --> 01:29:25,684
+Kabul etmemiz lazım.
+
+469
+01:29:28,344 --> 01:29:34,423
+Ve bakın burada yine şu 2-3'e baktığınızda ne görüyorsunuz?
+
+470
+01:29:39,572 --> 01:29:41,271
+Dikdörtgenler ve daireler.
+
+471
+01:29:41,271 --> 01:29:42,791
+Distributed System görüyorum hocam.
+
+472
+01:29:43,291 --> 01:29:43,891
+Ne görüyorsun?
+
+473
+01:29:44,412 --> 01:29:54,372
+Distributed System. 3-4 tane prosesim var. Network üzerinden birbirleriyle haberleşebiliyorlar. Burada Switchboard var bir tanesinde.
+
+474
+01:29:54,992 --> 01:29:55,771
+Tamam, evet.
+
+475
+01:29:57,412 --> 01:30:04,452
+Bir tanesinde Process Manager var. Sanki bunlar co-prosesör, yani birlikte çalışan prosesörler.
+
+476
+01:30:04,916 --> 01:30:14,496
+O prosesör dersek aynı işlemci, aynı motherboard içinde veya aynı işlemcinin içinde farklı core olarak bir şey yapmamız lazım.
+
+477
+01:30:14,595 --> 01:30:16,056
+O anlamda söylemek istememiz.
+
+478
+01:30:16,056 --> 01:30:20,816
+Bu bakın ne? Yani o anlamda söylemedim de teknik terim olarak doğru söylüyorum.
+
+479
+01:30:22,576 --> 01:30:24,275
+Nasıl söylemek istedin?
+
+480
+01:30:24,996 --> 01:30:29,015
+Yani bu üçü birlikte bir takım işler gerçekleştiriyorlar haberleşerek.
+
+481
+01:30:29,615 --> 01:30:31,216
+Bariz bir şekilde onu görebiliyoruz.
+
+482
+01:30:31,636 --> 01:30:39,136
+Hocam, burada prosesörlerin bir tanesine Memory Scheduler Process Manager vermişken diğerine Switchboard'u vermiş.
+
+483
+01:30:41,176 --> 01:30:41,936
+Yani?
+
+484
+01:30:42,376 --> 01:30:45,896
+Tek bir sistem olarak kullanıyor aslında bunları ama farklı prosesörler de kullanıyor.
+
+485
+01:30:45,956 --> 01:30:49,236
+Bakın en sağdaki sistem neye denk düşüyor?
+
+486
+01:30:52,051 --> 01:30:54,011
+File Sistemi'nin proseslerini içeriyor.
+
+487
+01:30:54,011 --> 01:31:09,731
+File Server'a denk düşüyor değil mi? Orada hep File Sistem'den bahsetmiş. Yani bir tanesi sadece nelerden oluşuyor? File isteklerini açma, kapama, yazma, okuma neyse bunları yapmak için.
+
+488
+01:31:12,020 --> 01:31:38,780
+Yani bir spesifikleşmiş orada bir yapı var. Diğeri ise Process Manager diyor. Memory Skuller diyor. Yani sanki o da Compute İntensif İşleri. Yani biri File IOS'u İntensif İşleri run ederken, öbürü de Compute İntensif İşleri run ediyor gibi. Yani böyle de bir bölümleme veyahut da ayrıştırma yapabiliyoruz.
+
+489
+01:31:39,315 --> 01:31:54,636
+Ama orada şöyle bir şey ne diyor hocam? Mesela bir prosesör direkt yani direkt file sistem soru olarak da bütün ona ait prosesleri çalıştıracağı anlamına da gelmiyor diyor. Yani file sisteme ait prosesler farklı makinelerde de olabilir diyor aslında.
+
+490
+01:32:03,988 --> 01:32:18,668
+En soldaki makinede de bir tane serverda da bir tane process task oluşturuldu. O da file intensif çalışıyor. O zaman onu A'da çalıştırmaya, A prosesörünü de çalıştırmaya devam etmek anlamlı mı?
+
+491
+01:32:19,208 --> 01:32:20,868
+Mantıklı değil hocam. Taşıma mantıklı.
+
+492
+01:32:21,028 --> 01:32:24,188
+Onu nereye taşımamız lazım? C'ye taşımamız lazım.
+
+493
+01:32:24,627 --> 01:32:31,268
+Ama diyelim ki bu Compute Intensive, onu da B'nin işlemcisi daha güçlü varsayalım.
+
+494
+01:32:31,268 --> 01:32:38,087
+Veyahut da onun işlemcisi o anda daha boş, daha az orada şey var. O zaman onu da oraya taşımalım lazım.
+
+495
+01:32:38,827 --> 01:32:43,067
+İhtiyaç duydukları kaynaklara yakın olan prosesöre taşımak gerekiyor.
+
+496
+01:32:43,108 --> 01:32:51,947
+Aynen. Ve şimdi sıkı durun arkadaşlar. Hani sanallaştırma ortamı falan kullanıyoruz ya böyle VMware, Hyper-V.
+
+497
+01:32:52,595 --> 01:33:11,555
+Orada process migration yapıyoruz ya, işte oradaki process migration tamamen burada bu paperda anlatılan mantık üzerine kurulu. Burada anlatıldığı şekilde gerçekleştiriliyor. Bunun tarihi kaç? 78 mi bu? 83 olması lazım.
+
+498
+01:33:11,555 --> 01:33:18,355
+83 mi bu? Referanslarda 77 vardı, evet doğru. 83.
+
+499
+01:33:19,060 --> 01:33:20,660
+Kaç sene sonra?
+
+500
+01:33:22,380 --> 01:33:22,700
+50.
+
+501
+01:33:23,160 --> 01:33:23,900
+Kırık hocam.
+
+502
+01:33:24,140 --> 01:33:24,660
+2023.
+
+503
+01:33:25,560 --> 01:33:38,320
+2023 ama işte VMware bunu 2000'den beri yapıyor. Process Migration'da diyelim ki 2010'dan beri olsa 30 seneliğin arkadaşlar. Yani araştırması yapılmış olan, paper yazılmış olan bir şey.
+
+504
+01:33:38,804 --> 01:34:00,224
+O gün belki sadece akademik olarak görünen bir şey, bilimsel bir çalışma olarak görünen bir şey, seneler sonra bir ticari ürünün göbeğine yerleşip günlük hayatın, bizim açımızdan, bilişim açısından, bilgisayar mühendisliği açısından günlük hayatımızın bir parçası olabiliyor.
+
+505
+01:34:00,224 --> 01:34:01,583
+Evet.
+
+506
+01:34:06,068 --> 01:34:13,768
+Peki, dikkat etmemiz gereken şeylerden bir tanesini söyledik. Message forwarding dedik. Değil mi?
+
+507
+01:34:15,768 --> 01:34:25,648
+Bekleyen mesajların yeni hangi işlemciye taşındıysa oraya aktarılması lazım.
+
+508
+01:34:33,492 --> 01:34:53,592
+Hocam, bunun çözdüğü bir problem de var. Onu da söyleyebiliriz. Şimdi biz bir prosesi bir prosesör üzerinde çalıştırıyoruz. Ama o prosesör üzerinde bir kaynak bozuldu veya işte prosesörün kendisi bozuldu. Bir şekilde bir şey oldu. Ya da elektriği kesildi en basitinden.
+
+509
+01:34:54,000 --> 01:35:06,640
+Bu durumda sistem cevap veremez duruma düşüyor. Bunu şu andaki migration yöntemiyle şu şekilde çözülebilir, high availability bilite oluşturulabilir.
+
+510
+01:35:08,140 --> 01:35:13,520
+Ama orada bir şey söylemem lazım. Elektriği kesilirse migrate edebilir miyim?
+
+511
+01:35:14,355 --> 01:35:19,215
+Şöyle de olabilir. Ortak bir file sisteme yazıyorlarsa bunlar, process state'ini.
+
+512
+01:35:19,215 --> 01:35:37,055
+Yok yok dur dur. Sen paper'ın sınırları dışarısına çıkmayalım. O sonrasında olabilecek şeyler. Şu an bu paper'da tariflenen şeyde elektrik kesintisi olursa elektriği kesilen işlemcideki, sunucudaki bir prosesi mahgret edebilir miyim?
+
+513
+01:35:41,876 --> 01:35:42,896
+Edemem hocam.
+
+514
+01:35:44,516 --> 01:35:45,476
+Efendim?
+
+515
+01:35:46,376 --> 01:35:49,236
+Edemeyiz değil mi?
+
+516
+01:35:49,796 --> 01:35:50,036
+Evet.
+
+517
+01:35:50,816 --> 01:35:52,036
+Var mı başka fikri olan?
+
+518
+01:35:53,036 --> 01:35:55,756
+Aslında paperda şunu söylemişti.
+
+519
+01:35:55,756 --> 01:36:01,396
+Process state'ini kaydederseniz bir file sisteme bozulan bir şeyden,
+
+520
+01:36:02,276 --> 01:36:08,036
+prosesörün çalıştırdığı prosesi başka bir tarafa migrate edebilirsiniz.
+
+521
+01:36:08,467 --> 01:36:17,347
+Kayıt olan state'inden çalışmaya devam edebilir şeklinde söylemiş. Onu söylemek istedim de.
+
+522
+01:36:18,167 --> 01:36:18,827
+Şimdi oldu.
+
+523
+01:36:20,947 --> 01:36:35,087
+Prosesörün üzerinde çalışan halin değil de belleğe son yazılmış olan state'ini biz oradan çekip onu tekrar çalıştırmaya devam edebiliriz. Bu da high availability sağlar.
+
+524
+01:36:35,872 --> 01:36:43,812
+Öbür donanım onarılıncaya kadar başka bir prosesör aynı işe hizmet vermeye devam edebilir.
+
+525
+01:36:43,812 --> 01:36:55,252
+Tamam, çok güzel. O zaman bu da aslında bir prosesin state'inin replikasyonu anlamına geliyor.
+
+526
+01:36:55,832 --> 01:36:56,132
+Evet.
+
+527
+01:36:57,752 --> 01:37:01,432
+Eğer onu yaparsak, bir yere yazarsak doğru.
+
+528
+01:37:01,971 --> 01:37:19,451
+Bu durumda kod zaten değişmiyor. Read Only diye düşünmemiz lazım. Bu var erişilebilir durumda. Bütün bu sistemler tarafından, serverlar tarafından, işlemciler tarafından neyse erişilebilir durumda.
+
+529
+01:37:26,927 --> 01:37:39,827
+Belirli aralıklarla, yani bir checkpointing mantığı ile diğerlerinin gelişebileceği bir yere yazmamız lazım. Bunu yaptığımız zaman senin dediğin şeyi gerçekleştirebiliyoruz.
+
+530
+01:37:40,435 --> 01:37:51,695
+Burada da şey demiş, o zamanlarda, makalenin yazıldığı zamanlarda, prosesin durumu bir sürü tabloda tutulan dağıtık veriler bütününden oluşuyormuş.
+
+531
+01:37:52,916 --> 01:37:59,195
+Bu da taşıma işini zorlaştıran bir faktördür diye makalenin bir yerlerinde söylemiş.
+
+532
+01:37:59,195 --> 01:38:08,435
+Doğru. Yani işte file sistem tablosu ayrı, semafor tablosu ayrı, işte memori alokasyon tablosu ayrı.
+
+533
+01:38:08,435 --> 01:38:13,135
+Ayrı, diğer şeyler ayrı diye düşünebilirsin değil mi?
+
+534
+01:38:13,715 --> 01:38:14,036
+Evet.
+
+535
+01:38:14,916 --> 01:38:20,255
+O zaman bunların her birinden şey yapmak lazım. Ama bakın, çok ilginç bir şey var burada bence.
+
+536
+01:38:20,255 --> 01:38:28,255
+Yani bu benim en sevdiğim paperlardan bir tanesi. Çünkü günlük hayatta doğrudan şeyini görebiliyoruz.
+
+537
+01:38:30,956 --> 01:38:32,255
+Process Migration.
+
+538
+01:38:33,268 --> 01:38:40,268
+Artık task demiyor da process migration diyor. Çünkü process task interchangeably kullanılabiliyor.
+
+539
+01:38:40,268 --> 01:38:48,688
+Has proven to be a reasonable facility to implement in a communication based distributed operating system.
+
+540
+01:38:49,203 --> 01:39:12,423
+Communication Based Distributed Operating System. Yani arada haberleşme varsa ve dağıtık bir yapı varsa o zaman bu anlamlı bir şey. Bu durumda ben proseslerimi şu günkü yapıyı, internet yapısını düşünecek olursam dünyanın öbür ucuna on binlerce kilometre öteye bile gönderebilirim. Değil mi? Çok hızlı bir şekilde.
+
+541
+01:39:13,140 --> 01:39:16,880
+İkinci cümle devam. Cümlesi daha güzel bence.
+
+542
+01:39:17,580 --> 01:39:27,360
+Less than one person month of time was required to implement and test the mechanism in the current version of Demos MP.
+
+543
+01:39:28,140 --> 01:39:31,060
+Bakın, bir ay bile sürmemiş bunu implement etmelere.
+
+544
+01:39:32,340 --> 01:39:36,380
+Bana çok şey geldi ya. Kısa bir süre gibi geldi.
+
+545
+01:39:37,043 --> 01:39:59,623
+Yani yaptığı aslında çok bir şey yok ki. Prosesi askıya alıyor, suspend ediyor. Prosesle alakalı tabloların tamamını karşı tarafa gönderiyor. State'e aktarmış oluyor. İşte o kaç tane, dokuz tane adım mı vardı? Öbür tarafta kodu yüklüyor ve run ediyor.
+
+546
+01:40:00,851 --> 01:40:23,511
+Zaten şöyle düşünün. Bir proses başlatmanın adımları değil mi bu? Yani işletim sistemi yeni bir proses başlatacağı zaman her şeyden önce ne yapmak zorunda? Proses bloğu oluşturmak zorunda değil mi? Proses tablosuna bu prosesi işlemesi lazım. Memori alokiyet etmesi lazım.
+
+547
+01:40:26,591 --> 01:40:35,591
+Gidip diskten run edecek kodu varsa, statik datayı yüklemesi lazım. İlk böyle hani initialization kapsamında.
+
+548
+01:40:36,020 --> 01:40:57,540
+Yani o zaman ben bunları yaptım. Sadece prosesin kodunu diskten yüklemiyorum. Daha doğrusu, yanlış söyledim. Onu diskten yüklüyorum da prosesin statik datasını diskten yüklemiyorum da o statik datayı nereden alıyorum en son haliyle diğer sistemdeki yerinden alıyorum.
+
+549
+01:40:57,540 --> 01:41:03,540
+Çok fazla bir şey değiştirmeme gerek yok ki. Yani yeni bir proses üretmemle bu mantığa göre prosesi...
+
+550
+01:41:04,020 --> 01:41:12,440
+Tegret etmem hemen hemen eşdeğer. Bir tek şu link olayını kıvırmak lazım. Onu düzgün bir şekilde yapabilmek lazım.
+
+551
+01:41:16,404 --> 01:41:18,404
+Değil mi? Var mı yorum yapacak olan?
+
+552
+01:41:18,404 --> 01:41:20,404
+Vay be hocam.
+
+553
+01:41:20,404 --> 01:41:22,404
+Vay be meyin, ne oldu?
+
+554
+01:41:22,404 --> 01:41:32,404
+Hocam ben şeyle alakalı bir şey diyeceğim. Siz Suspend ediliyor dediniz ya, tam olarak aslında tam Suspend edilmiyor herhalde.
+
+555
+01:41:32,404 --> 01:41:38,404
+Sadece Run Queue'sundan çıkardığını söylüyor. Aslında State'de bir değişiklik yapmıyoruz diye belirtmiş.
+
+556
+01:41:38,404 --> 01:41:40,364
+Run Queue'sundan ne?
+
+557
+01:41:40,372 --> 01:41:41,612
+Suspend etmek demek.
+
+558
+01:41:42,252 --> 01:41:52,192
+Evet, o anlama geliyor da, aslında suspend olmasını, çalışmasını veya mesaj beklemesiyle alakalı herhangi bir şeyi değiştirmiyorlar gibi anladım ben.
+
+559
+01:41:52,572 --> 01:41:54,532
+Tehditle bir değişikliğe gitmiyorlar aslında.
+
+560
+01:41:54,712 --> 01:42:00,372
+Böyle yazmış, market in migration. Yani migration durumunda olarak işaretliyor.
+
+561
+01:42:00,372 --> 01:42:05,164
+O şekilde durduruyor. Gelen mesajlar da...
+
+562
+01:42:05,171 --> 01:42:20,811
+Böylelikle şey oluyor, kuyruk da bekliyor, pending state'inde. Prosesi taşıdığı zaman da onu forward ediyor, yönlendiriyor gelen mesajları. Karşı yeni lokasyonuna.
+
+563
+01:42:22,811 --> 01:42:25,811
+O kısım, ya pending veya forward tanesi ya da...
+
+564
+01:42:26,163 --> 01:42:32,644
+Birincisinde zaten anlatıyor. State'i değiştirmiyorum gibi belirtmiş de tabii Suspend anlamına da geliyor bizim aşımızdan.
+
+565
+01:42:32,684 --> 01:42:36,523
+Bunu belirtmesinin sebebi aslında State'in bir durumda kaldığı yerde devam ettim.
+
+566
+01:42:36,523 --> 01:42:46,363
+Suspend demek, prosesin runnable olmaktan çıkartılması demek. Yani bir wait queue'ye alınması demek. Bekleme durumuna alınması demek.
+
+567
+01:42:46,363 --> 01:42:53,423
+Yani bunlar da ne diyorlar? Run queue'dan çıkartılıyor. Run queue'dan çıkartılan bir proses zaten çalışmayacak.
+
+568
+01:42:53,876 --> 01:42:58,056
+File Sistem IOS'u yaparken de RunQ'dan çıkartılacaktı.
+
+569
+01:42:58,484 --> 01:43:18,184
+Bir başka prosesle haberleşmek için mesaj gönderip o mesajın cevabı geldi mi diye bekleyen bir prosesle Rank U'dan çıkartılacaktı. Klasik bir wait senaryosu. O yüzden Rank U'dan çıkarmak demek otomatikman onu suspend etmek demek.
+
+570
+01:43:18,184 --> 01:43:25,304
+O da herhalde kastı şey hocam benim anım. Kaydedilen state'i değiştirmiyoruz diyor. Aslında evet dediğiniz gibi suspend oluyor ama.
+
+571
+01:43:26,068 --> 01:43:33,127
+Sistemdeki state'i aynı yani çalışıyor da olabilir. Öyle gözüküyor olabilir diyor. Benim anladım.
+
+572
+01:43:34,307 --> 01:43:36,728
+Yok o tarafa gittiğinde şeyden davranışsın yani.
+
+573
+01:43:36,728 --> 01:43:49,268
+Bir şey taşıyamazsın. Bir şekilde zaman çizelgesinden çıkartman lazım çünkü veri alanına yazmaya devam ediyor olur eğer bir şeyler değişirse. O yüzden durduruyor.
+
+574
+01:43:49,268 --> 01:43:52,847
+Bakın, prosesin state'i ne zaman değişir arkadaşlar?
+
+575
+01:43:53,876 --> 01:44:10,636
+Proses çalışırken değişir. Bir, proses bir yerlerden bir mesaj bekliyordur, bir event bekliyordur. O zaman değişir. İki, bunun haricinde prosesin state'inin değişebilmesi söz konusu değil.
+
+576
+01:44:10,636 --> 01:44:21,055
+Şimdi ben bunu run queue'dan çıkardığımda prosesin kendisi çalışmayacağı için kendi kendine state'ini değiştirecek bir şey yapamaz. Çünkü instruction işlemeyecek.
+
+577
+01:44:21,652 --> 01:44:39,652
+Instruction işlemediğine göre değişemez ki bir şeyleri. Geriye kalıyor ona gelecek olan mesajlar veya ona gelecek olan eventler. Tetiklediği, başlattığı şeylerin sonuçları. Orayı da zaten kernel üstlenecek. Bunları hani forward edeceğiz dedik ya.
+
+578
+01:44:49,652 --> 01:44:50,652
+Yok, estağfurullah.
+
+579
+01:44:51,311 --> 01:44:58,131
+Ay yok, yani şey anlamda, devamını getirin, tamamlayın anlamında söylüyorum.
+
+580
+01:44:59,871 --> 01:45:08,152
+Yani benim de kastım aslında oydu da burada sadece benim anladığım şey yani, gidip state'ine suspend oldu diye yazmıyor.
+
+581
+01:45:09,971 --> 01:45:16,211
+O Rank U'dan çıkarılması, sonuçta bir state'i var bu prosesin. State'ini bir yerde tutuyor ve oraya gidip bunu yazmadı.
+
+582
+01:45:16,211 --> 01:45:18,192
+Rank U'dan çıkardın, nereye koydun bunu?
+
+583
+01:45:21,992 --> 01:45:31,971
+Rank U'dan çıkarıyor ama gitip state bilgisini değiştirmiyorum diyor proses migration'da. Ben mi yanlış aldım hocam? Bu bir makalede...
+
+584
+01:45:31,971 --> 01:45:34,412
+Hangi cümle antik seviyorsun sen?
+
+585
+01:45:35,220 --> 01:45:43,340
+Bakayım ben. The process is marked as... Sayfa 115. Birinci step.
+
+586
+01:45:45,039 --> 01:45:48,239
+115. Tamam. Birinci step. Sol tarafta aşağıya.
+
+587
+01:45:48,239 --> 01:45:53,019
+Remove the process from... Aynen. The process is marked in migration.
+
+588
+01:45:53,019 --> 01:45:55,724
+Evet. It has...
+
+589
+01:45:55,796 --> 01:46:04,235
+Benim bahsetmeye çalıştığım şey bu idi aslında cümle.
+
+590
+01:46:04,235 --> 01:46:10,496
+Durumunu değiştirmiyor, evet. Ama migration pozisyonunu alıyor.
+
+591
+01:46:11,015 --> 01:46:18,135
+Evet, evet. Direkt hani suspend değil de migration gibi bir ayrı bir kendince state'i var. Benim anladığım.
+
+592
+01:46:19,536 --> 01:46:20,216
+Evet.
+
+593
+01:46:20,819 --> 01:46:33,539
+Hocam, benim buradan anladığım aslında suspend tabii ki ediyor da, suspend ettiğinde karşı tarafta suspendden devam etmiyor da en son neyi kaydettiyse running'dan devam ettiriyor. Onun için recorded state'li değiştirmiyorum diyor. Ama aslında suspend ediyor.
+
+594
+01:46:35,119 --> 01:46:45,759
+Doğru söylüyorsunuz arkadaşlar da. Bir saniye, iki dakika ara verebilir miyiz lütfen? Tartışmayı, el konuşmayı düzgün yapabilmek için bir ara vermem lazım. Hemen geri dönünce.
+
+595
+01:49:23,956 --> 01:49:36,935
+Pardon arkadaşlar, şu YÖK Başkanı'nın açıklamasından sonra derslerin 100% hibrit olmasıyla alakalı bir takım yazışmalar vardı da onlara hızlıca cevap vermem gerekiyordu.
+
+596
+01:49:39,235 --> 01:49:49,876
+Davranması gerekiyor çünkü pazartesinde bir şey kalmadı. Sizinle olan durumu da konuşacağız ama hoş biz bu dersi baştan online diye planladığımız için sorun olmaz ama diğer bir tane ders var.
+
+597
+01:49:50,420 --> 01:49:52,220
+Onu nasıl yapacağımıza bakacağız.
+
+598
+01:49:53,120 --> 01:49:54,420
+Şimdi arkadaşlar...
+
+599
+01:49:55,680 --> 01:49:59,780
+Arkadaşlar kanalında online devam edip aynı zamanda sınıftan mı işlenecek?
+
+600
+01:50:01,332 --> 01:50:16,232
+Şöyle, YÖK Başkanı'nın yaptığı açıklama çok net. Talep eden öğrenci olması durumunda bu öğrenciler gelip sınıfta olacaklar ve o zaman o dersin sınıfta yüz yüze yapılması gerekiyor.
+
+601
+01:50:16,232 --> 01:50:27,972
+Ancak o dersin bütün öğrencileri hepsi birden yüz yüze talep etmediği durumda dersin aynı zamanda da online ortamda eş zamanlı yayınlanması gerekiyor.
+
+602
+01:50:28,404 --> 01:50:47,524
+Bu da pratikte bütün dersler için tüm öğrencileri ben yüz yüze yapacağım diye sınıfa getirme durumunuz olamayacağı için bütün derslerde eş zamanlı hem sınıfta dersin anlatılması hem de online yayın yapılması anlamına gelmekte.
+
+603
+01:50:47,524 --> 01:50:56,404
+Bu da tabii ki her anlamda bir teknik olarak yük. Yani düşünsenize bir anda herhangi bir...
+
+604
+01:50:56,404 --> 01:51:19,543
+Üniversitedeki eş zamanlı yapılan dersler ve bunların aynı anda yayınlandığını düşünün. İnternet altyapısına bayağı ciddi bir yük getirecektir. Artı planlamaya da şey olacaktır. Fakat diğer taraftan sınavlar da şey, ne derler ona, online olarak gerçekleştirilecek öyle bir şey var.
+
+605
+01:51:20,884 --> 01:51:22,304
+Çok karıştı hocam sanki.
+
+606
+01:51:23,023 --> 01:51:24,083
+Evet.
+
+607
+01:51:27,091 --> 01:51:36,351
+Bir şey diyemiyorum arkadaşlar. Karıştıranlar veya karıştırılanlar düşünsün demek istiyor.
+
+608
+01:51:36,351 --> 01:51:38,211
+Ve şiş yansında kebap gibi oluyor.
+
+609
+01:51:38,991 --> 01:51:51,011
+Evet, yani kesinlikle öyle bir şey olmuş. Biz bir karar aldık ama kimseyi de zıplatmak istemiyoruz. Öbür taraftan da birilerini memnun etmek istiyoruz.
+
+610
+01:51:53,300 --> 01:52:01,560
+Yine hiç kimse memnun değil bence. Yani ilginç bir durum. Neyse canım, sorun değil.
+
+611
+01:52:04,140 --> 01:52:09,019
+Hocam online benim için daha uygun oluyor. Sonradan takip edebiliyorum giremediğim dersi.
+
+612
+01:52:10,100 --> 01:52:38,100
+Zaten bu dersimizi etkilemez arkadaşlar. Bu dersi biz en başından planlarken deprem veya diğer kararlardan bağımsız olarak dersin online olacağını söyledik. Ama sınavlarını yüz yüze yaparız demiştik. Burada da onu o şekilde gerçekleştiririz. Yani hiç bu olaylar yoktu. Bölümde bunu planladığımız zaman öyle bir karar almıştık. Onu öyle yaparız. Hoş bu ders kapsamında sizin yüz yüze yapacağınız bir sınav.
+
+613
+01:52:38,100 --> 01:52:46,800
+Çünkü tek omunuz olacak. Yine ev ortamında vermiş olduğum bir ödevi, bir araştırmayı gerçekleştireceksiniz.
+
+614
+01:52:47,160 --> 01:52:49,480
+Final yüz yüze olmayacak mı?
+
+615
+01:52:49,940 --> 01:52:58,720
+Final yüz yüze olacak bir şekilde herhalde. Bilmiyorum. Yani orada da karar üniversitelere bırakılmış deniyor ama ne kadar zamana kadar üniversitelere bırakılır onu da bilmiyorum.
+
+616
+01:52:59,412 --> 01:53:10,112
+Birdenbire biz üniversitelerde bırakıyoruz diye kastederken aslında bırakmıyormuşuz falan gibi bir şey de olabilir. Bilemem artık.
+
+617
+01:53:11,152 --> 01:53:22,231
+Evet, durum böyle. Pazartesi günü ilginç bir kaos. Kaos da bir senaryo, öyle düşün.
+
+618
+01:53:26,355 --> 01:53:30,855
+Evet, şimdi şey olarak [öğrenci] sen söylüyordun değil mi?
+
+619
+01:53:30,855 --> 01:53:31,935
+Evet hocam.
+
+620
+01:53:32,036 --> 01:53:34,855
+Hocam burada hepimiz aynı noktada mutabıkız.
+
+621
+01:53:35,095 --> 01:53:38,036
+Fakat söylediğimiz şeyler biraz farklı gibi geldi bana.
+
+622
+01:53:38,996 --> 01:53:44,855
+Yani sonuçta çalışan bir progresi taşıyamıyoruz.
+
+623
+01:53:45,855 --> 01:53:50,935
+O yüzden onun Ready olarak Ready State'ine geldiği zaman
+
+624
+01:53:51,444 --> 01:53:53,944
+Taşıyoruz gibi yazmış.
+
+625
+01:53:54,024 --> 01:54:15,524
+Ready'ye almamam lazım. Ready'ye aldığım bir proses run'a adaydır. Run edilmeye adaydır. Burada anlatılmak istenen prosesi taşındığını belirtmem gerekiyor ki, scheduler kalkıp bu prosesi bir şekilde run q'suna koymasın. Ondan dolayı burada özel olarak in migration diye bir ifade, bir state oluşturulur.
+
+626
+01:54:15,524 --> 01:54:16,783
+Ayrı bir state, evet.
+
+627
+01:54:16,783 --> 01:54:18,003
+Ayrı bir state.
+
+628
+01:54:19,444 --> 01:54:45,823
+Şimdi Suspend, Running, Ready durumlarının korunması da aslında taşındığı sistemde kaldığı yerden devam edebilmesini sağlamak için. Ona müdahale ettiğim zaman, buradaki teknik kaliti dediğimiz şey, yani ben kalkıp da prosesin sitetine müdahale edip onu Suspend'e aldığımda, halbuki o diyelim ki Suspend'te değildi, o sırada Running'deydi. Ben Running'deyken durdurdum.
+
+629
+01:54:47,444 --> 01:55:11,564
+Suspend'i almak için durdurmadım. Migrate etmek için durdurdum. Ondan ötürü öbür tarafa götürüp onu suspend'te şey yaparsam haksızlık etmiş olurum. Yani birebir durumu korumamış olurum. Bundan dolayı yeni bir state oluşturuyorum. Immigration diye. Böylece normal o five state scheduler vardı ya, beş adımlı. Oradaki state'lerin haricinde özel bir şey oluşturmuş oluyorum.
+
+630
+01:55:12,756 --> 01:55:22,756
+Evet, yeni bir state tanımlıyorum. Ondan sonra onun transferini yapıyorum. O tarafa götürdüğümde ve şeylerini...
+
+631
+01:55:23,188 --> 01:55:46,108
+Bu konuda gerçekleştirdiğimde kodunu yükledim. Diğer statik datası oraya aktarıldı falan. Çalışmaya hazır hale geldiğimde de Immigration'dan çıkartıyorum. Neydi ise o oluyor. En son kaldığı durum nasılsa oluyor. Tabii ki bunun öncesinde de neleri sağlamam lazım? Metajların da oraya forward edilmiş olmasını sağlamam lazım.
+
+632
+01:55:47,060 --> 01:56:07,019
+Oraya geliyor olmasını sağlamam lazım. Yani burada bu kritik bir şey. Çünkü bir lokal sistemde ona gelen mesajlar vardı, linkler vardı. Onların diğer tarafa forward edilebiliyor olması lazım. Bir de bakın burada bununla alakalı kaçıncı sayfada?
+
+633
+01:56:07,923 --> 01:56:33,084
+116. sayfada, yani bunları böyle bir seri topolojide düşünürsek, yani arka arkaya geldiklerini düşünürsek, bir sistemden diğerine ondan öbürüne gidiyor diye düşünürsek, o zaman aradaki prosesörlerin veyahut da aradaki sistemlerin mesajları forward edebiliyor olması lazım.
+
+634
+01:56:33,503 --> 01:56:43,643
+Yani, bakın, ortadaki Processor 2 için, Processor A'nın mesajlarını forward eden orada dummy bir şey varmış gibi düşünün.
+
+635
+01:56:47,475 --> 01:56:48,876
+Durum bu.
+
+636
+01:56:50,275 --> 01:56:51,675
+Şöyle bir şey sorsam hocam.
+
+637
+01:56:52,215 --> 01:56:52,536
+Sor.
+
+638
+01:56:54,315 --> 01:57:07,015
+Bu makalede distribüt sistemler üzerindeki bir proses migration'ı anlatıyor ya, bir önceki sistemde de yani taskla alakalı sizin ilk makalede de yine distribüt sistem yoksa aynı sistem içinde tasklar arasında mıydı?
+
+639
+01:57:07,380 --> 01:57:09,179
+Ben okumadığım için çok şey yapamadım.
+
+640
+01:57:09,179 --> 01:57:17,779
+Şimdi Demos'la Demos'la Demos MP arasındaki fark, o MP bunun multiprocessor olduğunu söylüyor.
+
+641
+01:57:17,779 --> 01:57:19,503
+Demos...
+
+642
+01:57:19,503 --> 01:57:35,264
+Tek bir işlemcide, tek bir kapalı yapıda çalışıyor. Demos MP ise burada gösterildiği üzere birden fazla işlemci ve bunlar arasında loosely coupled bir yapı var. Tightly coupled bir yapı yok.
+
+643
+01:57:35,823 --> 01:57:44,963
+Loosely coupled yapı ne demek? Bunlar doğrudan address bus, data bus yani bir memory veya control bus üzerinden bağlı değiller.
+
+644
+01:57:47,503 --> 01:57:58,644
+Aynı fiziksel bas üzerinde bulunmuyorlar. Arada daha üst seviyeden haberleşme protokolleri var. Bunu ifade ediyor.
+
+645
+01:57:59,724 --> 01:58:07,384
+Ben onu şey gibi düşünmüştüm ama tabii dediğiniz doğru. A anında T anında herhangi biri kopup tekrar bağlanabilir gibi.
+
+646
+01:58:08,148 --> 01:58:10,128
+Duzli kapıldı, ben biraz öyle algılamıştım.
+
+647
+01:58:10,128 --> 01:58:11,288
+Nasıl, anlamadım.
+
+648
+01:58:11,788 --> 01:58:13,807
+Yani, bir network ya aslında.
+
+649
+01:58:14,188 --> 01:58:14,968
+Hayır, type.
+
+650
+01:58:15,368 --> 01:58:16,788
+Ya da yeni bir cihaz eklenebilir.
+
+651
+01:58:18,387 --> 01:58:39,527
+Hayır, hayır değil. Tightly Coupled, doğrudan memoriye erişmek için kullanılan adres basın, data basın, kontrol basın, read, write, wait falan gibi sinyallerin fiziksel olarak bir araya geldiği ve bir donanımla, bir önceliklendirme donanımını, bir paylaşım donanımıyla çözüldüğü bir yapı.
+
+652
+01:58:39,527 --> 01:58:46,387
+Yani bir inter-connection network var orada. Fiziksel elektronik bir inter-connection network.
+
+653
+01:58:46,387 --> 01:59:05,707
+Diğerinde ise mesela TCP IP protokolü var. Onun üzerinden yarayan ediyor şeyler. Bir network var. Ethernet olabilir, eskiden kullanılan token ring olabilir, token bus olabilir, işte FTDI zamanlar kullanılan şeyler olabilir.
+
+654
+01:59:14,387 --> 01:59:27,487
+Ne derler? Daha doğrusu bakır olsun, ister fiber optik olsun, ister wireless olsun. Üst seviye protokol olarak TCPIP'de toplanmış durumda.
+
+655
+01:59:27,631 --> 01:59:50,192
+Yani şu günün bakış açısıyla düşündüğümüzde aradaki network'ı TCP, IP olarak düşündüğümüz. Ama zaman içerisinde digital kalkmış, DEC, NET oluşturmuş, IBM, SNA oluşturmuş, işte diğer taraftan şuyormuş ama Unify ola ola bugüne gelene kadar ne olmuş durumda? TCP, IP olmuş durumda. Öyle düşünebilirsiniz. Luzli kapılıp o.
+
+656
+01:59:50,868 --> 02:00:06,368
+Memorinin fiziksel olarak paylaşılmadığı demek. Yani bir işlemci bir memoriye doğrudan adres bası, data bası ve kontrol bası ile erişemiyorsa loosely coupled. Erişiyorsa tightly coupled.
+
+657
+02:00:15,572 --> 02:00:36,732
+8'i, 16'yı, 32'yi, 64'ü, onu yönetecek ve hepsinin birbirinden etkilenmeden yeterince hızlı bir şekilde gerekli band fitle o memoriye erişip aynı anda işlem yapabilmesini sağlayacak donanım ve arka taraftaki memori mimarisi çok ciddi.
+
+658
+02:00:38,292 --> 02:01:05,632
+Parasal güç demek. Onu gerektiriyor. Yapılamaz mı? Evet. Yapılan sistemler var. Yani 64 işlemcili, 64 fiziksel kora sahip. Trading'den bahsetmiyorum. Yapılar var. 128 fiziksel ama onun da bir bedeli var. Diğer tarafta Luzli kapıta. Bu alıyorsun network üzerinden. Zaten onun getirdiği bir gecikme var. O gecikmeyi en aza indirmek için farklı bağlantı yöntemleri var.
+
+659
+02:01:06,292 --> 02:01:14,292
+Bu da farklı paylaşım yöntemleri var. Bunlar sayesinde uygulamanın ihtiyacına...
+
+660
+02:01:14,800 --> 02:01:26,479
+Denk düşen, onu karşılayan, gecikmeyle bir ortak network üzerinden. Hani bu star topolojisi olabilir, ring topolojisi olabilir, bus topolojisi olabilir. Böyle bir şey gerçekleşiyor.
+
+661
+02:01:26,479 --> 02:01:42,800
+Günümüzde de aslında çoğunlukla fiziksel olarak star topolojisinden yararlanıyoruz ama mantıksal olarak buradaki gibi böyle arka arkaya gelen sequential bir ring mantığı da olabilir. Bir sıra birinin arkasına öbürü bağlı.
+
+662
+02:01:42,800 --> 02:01:56,439
+Yani fiziksel network attachment'ı çoğunlukla star ama diğer türlü nasıl kullanacağım? Mesh de olabiliyor. Yani star yapısı üzerinde her biri her biriyle konuşabiliyor da. Böyle bir şey söz konusu.
+
+663
+02:01:56,439 --> 02:01:58,279
+Evet.
+
+664
+02:02:02,036 --> 02:02:03,356
+Anlaştık mı arkadaşlar?
+
+665
+02:02:05,516 --> 02:02:06,016
+Evet hocam.
+
+666
+02:02:07,516 --> 02:02:12,756
+Güzel. Sorunuz var mı başka? Konuşmak istediğiniz bir şey var mı?
+
+667
+02:02:13,856 --> 02:02:17,615
+Çözmesi gereken birkaç konu varmış hocam. Onlardan bahsedebilirim ben biraz.
+
+668
+02:02:17,856 --> 02:02:20,615
+Tamam. Bahset bakalım. Neyi çözmesi gerekiyormuş?
+
+669
+02:02:20,916 --> 02:02:25,036
+Verimli ve efektif bir taşımaya karar verme mekanizması. Kuralı.
+
+670
+02:02:25,036 --> 02:02:25,956
+Hala.
+
+671
+02:02:27,539 --> 02:02:32,800
+Tartışma konusu, bir araştırma konusuymuş. Bunların makaleyi yazdığı dönemde.
+
+672
+02:02:33,620 --> 02:02:40,280
+Peki, ondan o sorudan yola çıkarak acaba bugün için ne yapılmış diye bir baktın mı?
+
+673
+02:02:41,320 --> 02:02:44,260
+Yok hocam ya. Makaleleri ancak okuyabiliyorum.
+
+674
+02:02:45,684 --> 02:02:57,764
+Aynen. Ona da bir bakmak lazım bence. Bakalım ne yapmış insanlar? Çalışıp, araştırıp neler bulmuşlar, bulabilmişler mi? Öyle mi olmuş, böyle mi olmuş? İlginç olabilir değil mi?
+
+675
+02:02:58,324 --> 02:03:03,724
+Evet. Process Load Balancing algoritmaları ile ilgili çalışmalar da devam ediyormuş hocam.
+
+676
+02:03:04,564 --> 02:03:12,364
+Şu an Process Load Balancing'i o kadar çok yapıyoruz ki. Reverse Proxy'ler, Load Balancer'lar değil mi?
+
+677
+02:03:12,815 --> 02:03:25,655
+Yani bunun alternatifi, process load balancing dediğimizde bak güzel bir yere öndersen söyledin değil mi bunu? Tamam, güzel bir yere parmak bastın. Bunun alternatifi ne aslında arkadaşlar?
+
+678
+02:03:26,795 --> 02:03:27,915
+Static Assignment.
+
+679
+02:03:28,735 --> 02:03:30,915
+Static Assignment ne demek [öğrenci]?
+
+680
+02:03:32,475 --> 02:03:37,675
+Yani dengeli yük dağılım yapmadan bir işi direkt bir işlemciye vermek.
+
+681
+02:03:38,836 --> 02:03:40,636
+Sen de öldürdün bu deyince.
+
+682
+02:03:42,155 --> 02:03:46,756
+Birden çok aynı prosesin replikasını oluşturmak olabilir mi?
+
+683
+02:03:47,136 --> 02:03:56,436
+Hazır olarak bu replikalar var, duruyorlar. Gelen istekleri ne yapıyoruz? Bunlara yönlendiriyoruz. Bu da bir diğer alternatif. Değil mi?
+
+684
+02:03:57,056 --> 02:03:57,355
+Evet.
+
+685
+02:03:58,420 --> 02:03:59,520
+Yani...
+
+686
+02:03:59,520 --> 02:04:01,360
+Mevcut sistemler böyle çalışıyor zaten.
+
+687
+02:04:01,860 --> 02:04:11,420
+Bunu yapması daha kolay. Ama bunu yaparken de yine state bilgisinin paylaşılabilir olması önemli.
+
+688
+02:04:11,960 --> 02:04:15,780
+Hocam orada stateless olması gerekiyor uygulamaların, projeslerin.
+
+689
+02:04:15,780 --> 02:04:17,600
+Bir de stateless olacak.
+
+690
+02:04:17,600 --> 02:04:23,600
+Bir prosese giderken diğeri başka bir prosese. Yani aynı local answer altındaki diğer.
+
+691
+02:04:24,032 --> 02:04:47,252
+Ama ya tamamen stateless olacak ya da state bilgisi ortak bir yerde. Mesela işte in memory cache'te ne bileyim Redis gibi, memcache gibi bir yerde duracak. Hızlı erişilebilsin. Oraya hızlıca aktarılabilsin. Normalde faili aktarıyormuşçasına memoriye aktarıyorsun.
+
+692
+02:04:47,859 --> 02:05:00,639
+Bu durumda da aynı prosesin en tane kopyası var. Birinin başına bir şey geldiğinde, diğeri en son kalan setten devam ediyor. Yani prosesi taşımakla uğraşmıyor.
+
+693
+02:05:01,872 --> 02:05:05,412
+Tehidi de ortak bir yerde oradan eriştirtiyorum.
+
+694
+02:05:06,052 --> 02:05:07,492
+Keşleyip ulaşıyoruz.
+
+695
+02:05:07,612 --> 02:05:08,292
+Efendim?
+
+696
+02:05:08,772 --> 02:05:09,752
+Keşleyip ulaşıyoruz.
+
+697
+02:05:10,192 --> 02:05:23,052
+Evet, aynen. Ama tabii bunun şuradaki yönteme göre şeyi, daha fazla resursu aynı anda ayakta tutmam lazım. Daha çok resurs kullanmam lazım. Onları çalışır durumda tutmam lazım.
+
+698
+02:05:23,699 --> 02:05:43,079
+Burada ise ihtiyaca bağlı olarak ama ikisi de kullanılabilecek yöntemler. Günümüzde ikisini de kullanıyoruz. İkisinin de ihtiyaç duyulduğu yerleri var. Yani biri diğerini yok eden, ortadan kaldıran bir şey değil. Tamamlayan özellikler diye düşünebiliriz.
+
+699
+02:05:43,079 --> 02:05:49,079
+Evet. Bir de hocam deneysel çalışmalarda...
+
+700
+02:05:49,363 --> 02:06:09,884
+Daha doğrusu mantıklı olarak bir işlemciden başka bir işlemciye taşıma bir relocation aslında. Kaynakların yeniden ayrılması olduğu için bir zaman alan bir işlem. Ama genel overall'da baktığımızda sistem performansını arttırmak için güzel bir fırsat ortaya çıkarmış olduğundan bahsetmiş.
+
+701
+02:06:11,923 --> 02:06:19,323
+Bir de işte yükü olabildiğince eşit dağıtmak ve sistemde paralleleştirmeyi sağlamak için kullanılabileceğinden bahsetmiş.
+
+702
+02:06:20,283 --> 02:06:38,503
+Evet. Okey. O zaman hepinize teşekkür ediyorum arkadaşlar. Bugünkü iki tane paper'ımızın üzerinden olabildiğince güzel ve etkileşimli bir şekilde geçtik. Sağ olun. Benim hoşuma gitti. Umarım sizin de.
+
+703
+02:06:38,996 --> 02:07:04,595
+Hoşunuza gitmiştir. Teşekkürler hocam. Teşekkürler hocam. Hafta sonuna girmeden paylaşabilir misiniz acaba? Onu ben bazen öyle yapıyorum, bazen böyle yapıyorum. Bunlar çok kısaydı. Biraz da sizi bir şeyler yapmaya zorlamak istiyorum diye düşünebilirsiniz. Ama bu hafta vereceklerim biraz daha kapsamlı. O yüzden yarın veririm, merak etmeyin.
+
+704
+02:07:05,908 --> 02:07:28,968
+Tamam mı? Ama performansınız için teşekkür ediyorum. [öğrenci] senin hoşuna gitti mi? Evet hocam, evet. Yani dersi seçerken de böyle şeylerle büyük ihtimalle uğraşırız diyordum. Yani evet, güzel oldu. [kişisel bilgi] Evet hocam. Kendini ateşe attı yani.
+
+705
+02:07:30,771 --> 02:07:32,891
+Haydi o zaman. Hepinize iyi akşamlar.
+
+706
+02:07:32,952 --> 02:07:39,731
+Hocam, ben şey isteyebilir miyim? İlk haftaların makalelerini atabilme şansınız var mı?
+
+707
+02:07:40,212 --> 02:07:43,212
+Tamam, bana bir evren...
+
+708
+02:07:43,212 --> 02:07:48,792
+Duvarında var bir tane link, ben paylaşmıştım orada görürsen o linkten erişebilirsin.
+
+709
+02:07:48,912 --> 02:07:49,811
+Bir chatten hemen...
+
+710
+02:07:49,811 --> 02:07:50,931
+Çok iyi.
+
+711
+02:07:51,332 --> 02:07:54,132
+Chatten hemen şey yapsana, evrene göndersene, önder.
+
+712
+02:07:54,672 --> 02:07:55,672
+Göndereyim hocam.
+
+713
+02:07:56,112 --> 02:08:01,332
+Gönder, sen gönder evren kopyalasın, ben de bağlantıyı sonlandırayım.
+
+714
+02:08:02,612 --> 02:08:03,332
+Tamam.
+
+715
+02:08:04,148 --> 02:08:07,868
+Hocam ben makalelerin linklerini şey yapmıştım da.
+
+716
+02:08:08,768 --> 02:08:10,888
+Hesabıma koymuştum. Onu göndereceğim şimdi.
+
+717
+02:08:12,068 --> 02:08:15,668
+Tamam o zaman eyleme de tam bir şekilde gönderebilirsin, şey yapabilirsin.
+
+718
+02:08:16,728 --> 02:08:17,748
+Buldum abi buldum. Süper.
+
+719
+02:08:17,748 --> 02:08:21,008
+Tamam geldi. Aldın mı [öğrenci]?
+
+720
+02:08:21,788 --> 02:08:25,168
+Tamam o zaman hepinize iyi akşamlar arkadaşlar.
+
+721
+02:08:25,228 --> 02:08:26,008
+İyi akşamlar hocam.
+
+722
+02:08:26,128 --> 02:08:26,748
+İyi akşamlar.
+
+723
+02:08:27,068 --> 02:08:27,828
+Hoşçakalın.
+
+724
+02:08:28,908 --> 02:08:29,628
+İyi akşamlar.

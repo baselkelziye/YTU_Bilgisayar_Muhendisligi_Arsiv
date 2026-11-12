@@ -1,0 +1,1627 @@
+1
+00:00:45,491 --> 00:00:46,971
+Sesim geliyor mu arkadaşlar?
+
+2
+00:00:49,211 --> 00:00:50,231
+Geliyor hocam.
+
+3
+00:00:52,152 --> 00:00:56,451
+Tamam, birkaç dakika daha bekleyelim. Belki başka arkadaşlarınız da katılır.
+
+4
+00:06:45,875 --> 00:07:03,875
+Daha ne dersen başka gelecek yok. O zaman bu halde başlayalım. [öğrenci], bende ses olarak bağlanmamış görünüyorsun. Sesimi duyabiliyor musun? Muhtemelen duyamıyorsun.
+
+5
+00:07:28,531 --> 00:07:35,671
+[öğrenci], sen daha önce gelmiş miydin? Benim dikkatimi mi çekmedi, yoksa ilk defa mı katılıyorsun?
+
+6
+00:07:42,163 --> 00:07:42,884
+Duyuyor musunuz?
+
+7
+00:07:48,403 --> 00:07:49,483
+Sesin gelmiyor.
+
+8
+00:07:50,264 --> 00:07:51,324
+Şu an geliyorum hocam.
+
+9
+00:07:51,803 --> 00:07:52,723
+Evet, şu an geliyor.
+
+10
+00:07:53,243 --> 00:07:54,463
+Daha önce katılmıştım hocam, evet.
+
+11
+00:07:55,124 --> 00:07:55,324
+Öyle mi?
+
+12
+00:07:55,324 --> 00:07:56,704
+İlk hafta katılamıyorum ama, evet.
+
+13
+00:07:57,183 --> 00:08:00,403
+Tamam, araya şeye girince anladım ondan dolayı.
+
+14
+00:08:01,423 --> 00:08:01,704
+Okey.
+
+15
+00:08:03,283 --> 00:08:07,063
+Evet, bu haftanın ne vardı?
+
+16
+00:08:09,651 --> 00:08:22,111
+Mac Duality, The Duality of Memory and Communication in the Implementation of a Multiprocessor System. Kim bununla alakalı görüş, bildirmek istiyor, konuşmak istiyor?
+
+17
+00:08:24,111 --> 00:08:26,231
+Ben başlayabilirim hocam isterseniz.
+
+18
+00:08:27,471 --> 00:08:33,751
+Sen hep başlıyorsun, ondan hiçbir şüphem yok. Senin haricinde başlamak isteyen var mı? Ben onu merak ediyorum. Evet.
+
+19
+00:08:34,419 --> 00:08:44,779
+İki tane önderimiz var burada. [öğrenci] ve [öğrenci]. Sizler ne dersiniz? Veya [öğrenci] Sen ya da [öğrenci] ya da [öğrenci].
+
+20
+00:08:46,959 --> 00:08:51,399
+Merhaba hocam. İlk makaleyi ben okuyamadım. İkinciyi okumuştum da.
+
+21
+00:08:52,099 --> 00:08:52,599
+Öyle mi?
+
+22
+00:08:52,620 --> 00:08:53,939
+Yorumum olmayacak.
+
+23
+00:08:54,599 --> 00:08:56,439
+[öğrenci] ne başlasın diyorsun sen?
+
+24
+00:08:57,719 --> 00:09:00,500
+Başka başlamak isteyen arkadaşlarımız varsa.
+
+25
+00:09:01,172 --> 00:09:05,152
+Başlayabilirler. Peki. [öğrenci] o zaman seninle başlıyoruz. Evet.
+
+26
+00:09:06,012 --> 00:09:11,451
+Olur hocam. Bu makalemizde hocam 1987 yanına makalem.
+
+27
+00:09:12,192 --> 00:09:12,451
+Evet.
+
+28
+00:09:12,991 --> 00:09:14,552
+Mak diye okunuyor değil mi hocam? Mak.
+
+29
+00:09:15,372 --> 00:09:16,912
+Mak. Evet. Mak.
+
+30
+00:09:17,751 --> 00:09:20,412
+Mak diye bir işletim sistemi var. Bunlar abstrakta şey diyor.
+
+31
+00:09:21,312 --> 00:09:25,292
+Important component of mak diyor. İşte memory object diyor. Bu tanım üzerinde duruyor aslında.
+
+32
+00:09:25,940 --> 00:09:36,259
+Bu da external bu file sistemle gibi haberleşirken kullandığı bir şey. Bunu anlatacak ama bundan önce anlattığı birkaç şey var. Bence onlardan bakırsak daha iyi olur.
+
+33
+00:09:37,220 --> 00:09:44,100
+Tamam. Duality ne demek? Ben öyle sorayım bence. Duality ne demek?
+
+34
+00:09:44,100 --> 00:09:48,120
+Ben ona baktım hocam. İkillik diyor da burayla tam bağlaştıramadım.
+
+35
+00:09:48,519 --> 00:09:51,620
+Kelime anlamını biliyoruz. Dual, ikili.
+
+36
+00:09:53,139 --> 00:09:57,360
+Ama ne demek yani burada ne anlama geliyor?
+
+37
+00:10:05,139 --> 00:10:06,919
+Var mı bunu açıklayacak olan?
+
+38
+00:10:21,203 --> 00:10:22,083
+Evet arkadaşlar.
+
+39
+00:10:36,244 --> 00:10:37,844
+Hiç merak edip bakan yok mu?
+
+40
+00:10:46,419 --> 00:10:47,639
+Hocam, sesim geliyor mu?
+
+41
+00:10:48,679 --> 00:10:49,119
+Evet.
+
+42
+00:10:50,500 --> 00:11:05,980
+Ya şey gibi ben anlamıştım ama yani iki, bir yerden alıp bir yerden vermek gibi yani mesela memorinizi güçlendirince ne bileyim başka bir şey kaybediyorsunuz.
+
+43
+00:11:05,980 --> 00:11:10,579
+O şekilde bir mantığı var diye düşünmüştüm ben duality'de.
+
+44
+00:11:10,687 --> 00:11:27,427
+Burada da en iyi optimum dizaynı elde ederek çok işlemcili sistemlerde, OS'lerde en iyi dizaynı yapmaya çalışmışlar bu makalede.
+
+45
+00:11:27,427 --> 00:11:32,107
+O şekilde anlamıştım ben, duality'nin anlamını.
+
+46
+00:11:32,707 --> 00:11:34,427
+Şimdi burada çok...
+
+47
+00:11:36,307 --> 00:11:55,307
+Spesifik bir kontekst içerisinde kullanılıyor. Bu özel bir şekilde kullanılıyor. Öncelikle burada nasıl bir işletim sisteminden bahsediyoruz arkadaşlar? Çok işlemcili bir işletim sisteminden bahsediyoruz değil mi?
+
+48
+00:11:56,148 --> 00:12:06,908
+Bu, multi-processor operating system, yani birden fazla işlemcisi olan bir işletim sisteminden bahsediyoruz.
+
+49
+00:12:07,788 --> 00:12:09,528
+Duality kavramı şu anlama geliyor.
+
+50
+00:12:09,528 --> 00:12:19,368
+Bu diyor ki, şimdi sistemleri nasıl sınıflandırabilirim baktığım zaman, shared memory.
+
+51
+00:12:20,467 --> 00:12:30,587
+Sistemler veya Non Shared Memory Sistemler. Shared Memory Sistem adı üzerinde nasıl bir şey?
+
+52
+00:12:32,768 --> 00:12:35,508
+Basslarla bağlı olacak hocam, memoriyle prosesör.
+
+53
+00:12:35,508 --> 00:12:46,807
+Tamam, aynen. Birden fazla işlemci aynı memoriye girişiyor ve bu memori aralarında paylaşıyorlar.
+
+54
+00:12:47,283 --> 00:13:07,223
+Nam Şehird'te ise işlemci kendi memorisine sahip, diğer işlemci kendi memorisine sahip, böyle bunun gibi bir sürü işlemciler var ve bunlar arada bir başka katman üzerinden, bir başka haberleşme yöntemi üzerinden birbirlerine bağlılar.
+
+55
+00:13:14,388 --> 00:13:24,067
+İnternet TCP IP protokolü kullanarak internet üzerinden iki sistemi bir arada kullandığımızda böyle bir yapı oluşturuyoruz.
+
+56
+00:13:36,884 --> 00:13:43,304
+Mutlaka non-shared memoriye sahip bir konfigürasyonda da karşılığı vardır.
+
+57
+00:13:44,344 --> 00:13:46,284
+Duality'nin anlatmak istediği şey bu.
+
+58
+00:13:46,284 --> 00:13:58,484
+Yani problemleri shared memori sistemlerinden, non-shared memori sistemlerine taşıdığımda denk düşen çözüm.
+
+59
+00:13:59,624 --> 00:14:02,504
+Bunu araştırıyorlar, bunun üzerine çalışıyorlar. Çünkü neden?
+
+60
+00:14:02,927 --> 00:14:07,807
+Shared Memory Sistemler belirli bir yere kadar ölçeklenebilir.
+
+61
+00:14:08,176 --> 00:14:20,536
+Ama bir yerden sonra işlemci sayısını arttırdığınızda, işte, memory kapasitesi, memory bandwidth'i, erişim hızı falan bunlarla alakalı sıkıntılar yaşayacaksınız.
+
+62
+00:14:20,536 --> 00:14:26,576
+Diğer taraftan, ki bunlara ne diyoruz aslında? Tightly Coupled, yani sıkı sıkıya birbirine bağlı sistemler.
+
+63
+00:14:27,076 --> 00:14:35,056
+Diğer tarafta ise birbirlerine daha gevşek, loosely coupled bağlı ama çok daha rahat ölçeklenebilir.
+
+64
+00:14:35,827 --> 00:14:57,788
+Yüzler, binler, on binler mertebesinde bile ölçeklenebilir yapılardan bahsediyoruz. İşte bu paper'ın özünde aslında ne diyor? Duality of Memory and Communication. Yani memory, shared memory, non-shared memory ve buna bağlı olarak tabii ki communication.
+
+65
+00:15:02,163 --> 00:15:21,303
+Haberleşme koymamız lazım. In the implementation of a multiprocessor operating system. Bunun etkilerini görmeye çalışıyorlar. Belirli problemler bir tarafta çözüme sahipken diğer tarafta nasıl çözülüyor gibilerinden. Olayın özü bu.
+
+66
+00:15:26,495 --> 00:15:33,036
+Ben seni kesmiştim. Bir şeyleri anlamamız gerekiyor. Önce onları tanımlamamız gerekiyor demiştin. Nedir onlar? Söyler misin bana?
+
+67
+00:15:33,375 --> 00:15:38,655
+Evet hocam tabii ki ondan önce bu son dediğinizi doğru anlamış mıyım diye bir kontrol edebilir miyim? Bir şey soracağım.
+
+68
+00:15:39,296 --> 00:15:39,515
+Tabii.
+
+69
+00:15:40,175 --> 00:15:44,875
+Dediğiniz shared memory ile ilgili şeyi çözüyor ilk önce burada. Biraz sonra doğru gideceğim ama.
+
+70
+00:15:45,495 --> 00:15:50,455
+File sistemi işte user space'da bir task manager ile bir port sayesinde erişiyor.
+
+71
+00:15:51,028 --> 00:16:03,248
+O tarafı user space'e çekiyor. Arka tarafta yine page fault olursa kernel o buffer'ı dolduruyor. Bunun karşılığında da aynı implementasyonu network üzerinden başka bir yerde de yapıyor. Bu dediğiniz şey bu mu?
+
+72
+00:16:03,248 --> 00:16:10,307
+Evet, aynı. Bir tarafta şey, memory, multiprocessor, aynı.
+
+73
+00:16:11,124 --> 00:16:20,563
+Sistem üzerinde, aynı sunucu yapısı üzerinde, diğer tarafta ise network üzerinden farklı sunucular, farklı sistemler üzerinde. Tam da dediğim şey.
+
+74
+00:16:23,024 --> 00:16:24,264
+Anladım hocam.
+
+75
+00:16:26,403 --> 00:16:30,563
+Bakın, girişte, introduction'da...
+
+76
+00:16:30,868 --> 00:16:41,308
+Bir cümle paragrafın sonunda şöyle bir şey vardı. The advantages gained by Mach in treating memory and communication as duels.
+
+77
+00:16:42,259 --> 00:16:49,679
+in this way include increased flexibility in memory management available to user programs,
+
+78
+00:16:50,319 --> 00:16:56,259
+a better match between Mac facilities and both tightly and loosely coupled multiprocessors,
+
+79
+00:16:57,120 --> 00:17:00,740
+az önce söylediğim kavramlar, and improved performance.
+
+80
+00:17:00,740 --> 00:17:04,460
+Şimdi bu cümlenin kritik şeyi,
+
+81
+00:17:06,152 --> 00:17:08,152
+Bu şekilde örneklerle anlatacağız.
+
+82
+00:17:05,299 --> 00:17:28,179
+Yani in treating memory and communication as duels. Treat ne demek? Bir şeye davranmak veya ele almak, değerlendirmek anlamına geliyor treating burada. Memory ve communication as duels. Yani birbirlerinin yerine, biri diğerinin yerine kullanılabilir.
+
+83
+00:17:32,723 --> 00:18:00,483
+Haberleşme ile bir başka yere erişiyorum. Yani memori erişiminin yapısıyla veya semantiği diyelim ile communication, haberleşme üzerinden erişimin semantiğini birbirleriyle eşitlediğinde, dışarıdan görünüşünü benzer bir hale getirdiğinde sonuçta evet, zamansal bir takım farklar mutlaka olacak ama bunun haricinde ha lokaldeki memoriye erişmişim,
+
+84
+00:18:00,723 --> 00:18:18,183
+Burada çok uzaktaki bir sistemin üzerindeki memoriye erişmişim. O zaman bunlar böyle birbirlerinin yerine kullanılabilir. Duels, yani birbirlerini replace edebilir, yerine geçebilir. Eş değerli parçalar olarak düşünülebilir.
+
+85
+00:18:20,824 --> 00:18:25,384
+Daha net kafanızda canlandı mı bilmiyorum [öğrenci] az önce sorduğun sorudan sonra.
+
+86
+00:18:26,516 --> 00:18:36,416
+Evet hocam, benim tam oturduğu zaten o araya koyduğu abstraction var ya, port. Hani kernel'dan direkt istemeyeyim de bir port üzerinden bir şey diyor. Port koyduğunuz zaman istediğiniz yere erişirsiniz zaten.
+
+87
+00:18:36,696 --> 00:18:39,076
+Ben galiba paper'ın özünü söyledim size sanki.
+
+88
+00:18:39,696 --> 00:18:40,896
+Evet hocam, özünü söylediniz.
+
+89
+00:18:41,615 --> 00:18:44,436
+Aynen, evet. Devam.
+
+90
+00:18:45,816 --> 00:18:52,536
+Burada hocam benim, burada şeyden bahsediyor. Diyor ki, day five interrelated abstractions var diyorum işte.
+
+91
+00:18:52,980 --> 00:19:15,220
+Bunları task thread port, message ve memory object diye adlandırıyor. Bu task thread port ve message'ı Xen diye bir tane işletim sisteminden aldığını söylüyor. Burada task'ı gördük zaten. Linkin burada porta dönüştüğünü görüyoruz.
+
+92
+00:19:15,220 --> 00:19:18,000
+Ha linkler porta dönüşüyor değil mi? Aynen.
+
+93
+00:19:18,784 --> 00:19:33,864
+Tred'i bir sonraki makalede göreceğiz zaten. Memori objeyi de birazdan anlatacak. Burada az önce okuduğunuz paragrafta bahsettiği işte Increased Flexibility. Bunun bir üstünde benim anladığım Aksent'ten virtual memory aldık diyorlar.
+
+94
+00:19:34,291 --> 00:19:53,231
+Biraz belki bundan bahsedebilirim. Zaten Page şeyinde de bahsetmiştik. Segmented Memory modelinden bahsetmiştik. Segmented olduğu zaman defragmentation problemi ortaya çıkıyor. Bir de prosesi olduğu gibi koymanız lazım bir bütün olarak. Bu da işte belki büyük prosesler giremeyecek yer bulamayacak kendisine.
+
+95
+00:20:00,000 --> 00:20:06,119
+Evet ama hani MAK bununla alakalı çok güzel bir açıklama yapıyor.
+
+96
+00:20:10,387 --> 00:20:15,547
+Task ve Tred arasında çok net bir fark var.
+
+97
+00:20:26,516 --> 00:20:28,676
+Efendim [öğrenci], bir şey söyleyeceğim galiba ama.
+
+98
+00:20:28,996 --> 00:20:40,236
+Hocam, task birden fazla prosesin aynı zamanda işlenmesini sağlayabiliyor. Threatler de sadece bir task çalışabiliyor.
+
+99
+00:20:41,236 --> 00:20:48,556
+Şu anda kendi bilginden yorum yaparak bunun cevabını veriyorsun. Bense paper üzerinden giderek.
+
+100
+00:20:48,696 --> 00:20:50,156
+Paper'ı okumadığım için hocam.
+
+101
+00:20:50,916 --> 00:20:52,615
+Eyvah eyvah.
+
+102
+00:20:52,615 --> 00:20:53,756
+Evet söylemiştim.
+
+103
+00:20:54,516 --> 00:21:09,016
+Pardon, kusura bakma. Diğer önder düşmüş tekrar bağlanmış galiba. Çünkü sen sağda görünüyordun. Şu anda sol tarafa geçmişsin. Ben seni diğer önder diye düşünüyorum. Evet öyle indekslemiştim. Haklısın.
+
+104
+00:21:09,236 --> 00:21:13,776
+İkinci okumuştur. Var mı peki okumuş olanlar?
+
+105
+00:21:14,976 --> 00:21:16,236
+Hocam, ben cevaplayayım mı?
+
+106
+00:21:17,016 --> 00:21:18,456
+Şimdi mi okudun [öğrenci]?
+
+107
+00:21:18,736 --> 00:21:22,056
+Yok hocam, ben buraya zaten okumuştum da ekstra bir şey var mı diye baktım.
+
+108
+00:21:23,056 --> 00:21:25,496
+Zaten şey farkı var eğer bunu soruyorsanız.
+
+109
+00:21:26,536 --> 00:21:31,916
+Bütün türetler, kendi işte tabi register'lar oluyor, kendi stekleri oluyor.
+
+110
+00:21:32,336 --> 00:21:34,416
+Ama hepsinin adres spayesi, proses de aynı.
+
+111
+00:21:35,796 --> 00:21:36,356
+Yani?
+
+112
+00:21:42,228 --> 00:21:43,208
+Bu kadar hocam buradan.
+
+113
+00:21:44,288 --> 00:21:52,307
+Evet, [öğrenci], [öğrenci], [öğrenci], diğer [öğrenci]. Yok mu yorum sizden?
+
+114
+00:21:52,827 --> 00:21:53,908
+Hocam iyi akşamlar.
+
+115
+00:21:54,468 --> 00:21:55,148
+İyi akşamlar.
+
+116
+00:21:55,628 --> 00:22:01,548
+Ben makaleyi okudum ama üzerinden baya bir zaman geçti. Şu an bilgileri toparlamakta zorlanıyorum açıkçası. Bir yandan da bakıyorum.
+
+117
+00:22:02,508 --> 00:22:03,908
+O yüzden buna bir yorumum yok hocam şu an.
+
+118
+00:22:04,568 --> 00:22:06,807
+Yok, peki tamam. [öğrenci] senin yok mu?
+
+119
+00:22:11,923 --> 00:22:18,103
+Arkadaşlar, bakın. Çok çok güzel bir tarif aslında bu.
+
+120
+00:22:18,804 --> 00:22:26,403
+Husk is the basic unit of resource allocation. Threat is the basic unit of computation.
+
+121
+00:22:27,543 --> 00:22:37,403
+Yani bir programı çalışabilir hale dönüştürmem için işletim sisteminde onunla bir memori ayırmam lazım.
+
+122
+00:22:38,387 --> 00:23:01,307
+Kod space'ini ve data space'ini memoriye getirmem lazım ve kullanımı sırasında muhtemelen file'lara erişecek, muhtemelen network kullanacak, muhtemelen başka sistem kaynaklarından yararlanacak. Sonuçta bunların kaydını tutmam lazım ve bunları o programa çalışması esnasında tahsis etmem lazım.
+
+123
+00:23:06,867 --> 00:23:24,147
+İşletim Sistemi açısından ifade eden veri yapısı diyelim, her türlü şeyle bir task. Buna sonrasında proses diyoruz. Ama o task'ın içerisinde az önce söyledim ya, kod space de gelecek.
+
+124
+00:23:26,288 --> 00:23:30,975
+Yani programa ait instruction'lar da gelecek. Bunları ben...
+
+125
+00:23:30,976 --> 00:23:53,936
+Çalıştırmaya başladığım zaman akmaya başlıyor değil mi? İlerliyor bir şeyler oluyor. İşte thread de onu gösteriyor. Multi-threaded yapı da buradan çıkan bir kavram. Aynı programın, dolayısıyla o programa ait olan askın veya modern işletim sistemlerinde olan proses demeye başladık.
+
+126
+00:23:58,195 --> 00:24:21,175
+Computation, onu da genelleştiriyoruz. Daha böyle jenerik bir isme dönüştürüyoruz. Execution diyoruz. Çünkü her instruction, execution illaki bir şeyin compute edilmesi olmak zorunda değil. Bir branch de olabilir, bir jump de olabilir, exor de olabilir falan. Ama bu bence olayın esas kritik ayrımı.
+
+127
+00:24:24,352 --> 00:24:27,052
+Threat is the basic unit of computation.
+
+128
+00:24:40,403 --> 00:25:06,604
+Task o yapıyı ifade ediyor. Ayrılan memori, onun için ayrılan file'ları, network kartı bağlıysa başka bir şey. Yani ne kadar resource varsa onların takibinin yapılması lazım. Task bunun bir bütün olarak tamamını ifade ediyor. Onun için de çalışan kısmı neyle ifade ediyorsun? Thread'le ifade ediyorsun. Başlangıçta böyle bir ayrım yapmıyorlar. Yani task eşittir thread veya thread eşittir task.
+
+129
+00:25:07,284 --> 00:25:24,664
+Ama işte sonrasında eğer bir program aynı anda farklı parçalarının çalışabileceği şekilde şekillendirilebiliyorsa, böyle bir yapı kurulabiliyorsa o zaman bu iki kavramı birbirinden ayırmak gerekiyor.
+
+130
+00:25:34,384 --> 00:25:40,283
+Kullanılır hale execution, yani instruction execution ile kullanılması kullanılır hale getirilmesi.
+
+131
+00:25:41,583 --> 00:25:49,623
+Hocam bir de şey de sorabilir miyim? İlk yaptıkları zaman bu ayrım yokken dediniz ya, hani siz bir proses başlattınız.
+
+132
+00:25:50,443 --> 00:25:58,483
+Bu memoriye erişiyor. Onu zaten işletim sistemi durduruyor. Memoriye şey yaptı diye CP'yi kullanmasın diye.
+
+133
+00:25:58,932 --> 00:26:07,932
+O ara hiç şey demediler mi acaba? Söylediğin şeyi anlamadım. İşletim sistemi niye durduruyor? Ne zaman? Niçin durduruyor?
+
+134
+00:26:08,311 --> 00:26:13,892
+Ayo olduğu zaman. Tamam ama bak şimdi memori yerleştiğinde durduruyor dedin. Olmadı. Ayo olduğu zaman evet.
+
+135
+00:26:13,892 --> 00:26:24,091
+Yok şey memori derken ben diskten bahsettim. Ayo olduğu zaman durduruyor ya. O ara demediler mi? Program bir kısmı duruyorken diğeri de devam edebilsin.
+
+136
+00:26:25,140 --> 00:26:28,620
+İşte onu zamanla söylüyorlar [öğrenci]. İlk başta söylemiyorlar.
+
+137
+00:26:30,319 --> 00:26:32,980
+Anladım hocam. Söylediklerinde de bu yapı yokta açık herhalde değil mi?
+
+138
+00:26:33,319 --> 00:26:40,200
+Yani evet. Gelişim sonucunda, ilerleme sonucunda biz bunu niye yapmıyoruz diye düşünüyorlar.
+
+139
+00:26:40,200 --> 00:26:43,819
+Yani bu bir yerde yazılı olarak onların önüne çıkmıyor ki.
+
+140
+00:26:44,175 --> 00:27:06,675
+Zaman içerisinde deneyerek, yanılarak, düşünerek, tasarımlarını daha iyi hale getirerek ve bunları da böyle kayıt altına alarak adım adım günümüzdeki noktaya kadar geliyor. Ama işte hani görüyorsunuz kaç? 87. 87 yılında yine hep aynı şeyin üzerine işte kaç sene yapar? 35 sene. Yani çok bir şey değişmiyor.
+
+141
+00:27:07,508 --> 00:27:24,008
+Ama baya bir zamanında, bir 20 sene, 25 sene neyse, 60'lardan başlayıp 90'lara kadar diyelim, 30 sene epey bir kafa patlatmışlar. Baya bir çalışmışlar. Evet, devam.
+
+142
+00:27:25,008 --> 00:27:28,308
+Ben en son segmented memori anlatıyordum hocam, oradan devam edeyim mi?
+
+143
+00:27:29,107 --> 00:27:31,107
+Tamam, devam et bakalım.
+
+144
+00:27:31,107 --> 00:27:35,107
+İşte segmented memory'nin sıkıntılarından bahsettim.
+
+145
+00:27:35,107 --> 00:27:37,107
+View processor belki yer bulamayabilir diye.
+
+146
+00:27:37,107 --> 00:27:41,107
+Paged memory'e geçiyorlar. Bu defragmentasyon engelliyor.
+
+147
+00:27:41,107 --> 00:27:43,107
+İşte boyutları aynı.
+
+148
+00:27:43,107 --> 00:27:45,107
+Page'leri koyup çıkarabiliyorsunuz.
+
+149
+00:27:45,107 --> 00:27:49,107
+Buradan ondan sonra virtual memory kavramına geçiyorlar.
+
+150
+00:27:49,107 --> 00:27:51,107
+Burada abstraction var bir tane.
+
+151
+00:27:53,844 --> 00:28:13,844
+Real bir tane adres üretmiyor. Lojik bir adres üretiyor. Bu şey koyuyor. Programı yazanın artık gerçek adreslerle uğraşmasını engelliyor. Bu şeyi de ortaya çıkıyor aynı zamanda. Sizin sanal belleğiniz, örneğin fiziksel şey üzerinde 64 tane adres basınız var.
+
+152
+00:28:14,271 --> 00:28:35,092
+Ama virtual'da böyle bir sıkıntınız da yok. Prosesse istediği kadar büyük bir alanını kullandırdığını da düşündürebiliyorsunuz. Bir de şeyi çıkarıyor bu. Biz bir kodu alıp işte memoriye koyacağız. Instruction'ları execute edeceğiz. Bunun tamamını koymak zorunda değiliz çıkarıyor virtual memory. Böylelikle parça parça kodlar alınıp execution böyle yapılıyor.
+
+153
+00:28:36,192 --> 00:28:40,731
+Burada şey anlatıyor. Bunları zaten şeyden aldığını söylüyor. Aksentten.
+
+154
+00:28:41,140 --> 00:28:56,720
+Virtual Memory kavramını, Mac'da da var bu. Bir de burada şeyden bahsediyor. Yani bu Mac'ın kendisinin ortaya attığı bir şey değil. Zaten var olan bir şey. Onu hem alıyorlar hem de uyarlıyorlar hem de yeri geldiğinde daha efektif hale getiriyorlar.
+
+155
+00:28:57,400 --> 00:28:58,039
+Aynen, evet.
+
+156
+00:28:58,963 --> 00:29:25,023
+Ben de tam o efektif noktaya gideceğim. Bir de şeyden bahsediyor. Memory Map.io'dan da bahsediyor. Hatta bundan öncesinde örneğin sizin Virtual Memory'nin avantajlarından bir tanesi de shared labiriniz var. Bunu video only şey yaparsınız, memoriye yüklersiniz. Bunu isteyen prosesin adres spaysine map edersiniz. Herkes kullanabilir. Böylelikle büyük boyuttaki objelerin, memori objelerinin paslamasını da kolaylaştırıyorsunuz.
+
+157
+00:29:25,491 --> 00:29:50,211
+Bunlardan bahsettikten sonra bu Accent AQ Memory Map I.O'dan da bahsediyor. Dosyaları işte read şeyle sistem çaresi sürekli okumak yerine bunu alıp memoriye koyup işte proseslerin adres spacerine maplerseniz daha şey yaparsınız. Daha kolay olacak zaten. Çünkü diske ulaşıp gelmek zaten vakit alıyor.
+
+158
+00:29:50,708 --> 00:30:04,228
+Yani böyle olduğunda mesela bu söylediğin şeyde program veya proses aslında diskteki bir yapıya nereye erişiyormuşçasına erişiyor?
+
+159
+00:30:06,127 --> 00:30:09,268
+Konda Network'ten bir farkı kalmıyor bunu soruyorsanız.
+
+160
+00:30:11,067 --> 00:30:12,827
+Yok, şimdi ayrı bir şey soruyorum.
+
+161
+00:30:13,948 --> 00:30:15,387
+Diskteki bir yapıya...
+
+162
+00:30:16,211 --> 00:30:21,172
+Aslında o veri diskin üzerinde ama ona erişirken…
+
+163
+00:30:21,172 --> 00:30:22,831
+Her reme erişiyormuşçasına erişiyor artık.
+
+164
+00:30:22,831 --> 00:30:24,172
+Memoriye erişiyor, aynen.
+
+165
+00:30:25,891 --> 00:30:31,591
+Memorideki bir böyle çok yüksek boyutlu bir diziye erişiyormuşçasına erişiyor.
+
+166
+00:30:31,811 --> 00:30:32,051
+Evet.
+
+167
+00:30:32,371 --> 00:30:40,192
+Arkadaki şeyi görüyor mu, fark ediyor mu? Yani diske okuma yapıldığını, diske yazma yapıldığını bu detaylarla uğraşıyor mu?
+
+168
+00:30:40,851 --> 00:30:41,991
+Ayrı her kesinlikle uğraşmıyor.
+
+169
+00:30:42,400 --> 00:31:01,480
+Hatta burada bir tık daha ileri gidecekler. Bu erişim işinde, gerçi onu zaten az önce söylediniz, şeyin özü diye. Mac'da burada şeyi yapacak. Bir tık daha ileri götürüp, aradaki o kernel'u da kaldıracak. Kaldıracak dedim tabii kaldırmayacak da.
+
+170
+00:31:02,780 --> 00:31:06,300
+Aradaki kernel'u kaldıracak derken, neyi kaldıracak tam olarak?
+
+171
+00:31:07,827 --> 00:31:29,887
+Bir sistem çağrısıyla erişmeyecek de, herkes istediği porto olarak bahsediyor memur ojeden. Siz portoğa istek gönderiyorsunuz. Eğer orada bir page varsa size cevabı gelecek. Page yoksa da işte page mis olacak. Orada kernel arkadan gidip getirecek yine. Sanki elinizde bir buffer var da kernel sürekli dolduruyor. Siz oradan çekiyorsunuz.
+
+172
+00:31:35,167 --> 00:31:45,687
+O portlar üzerinden, değil mi? Portlar bu istekleri bekleyen ve istek geldikçe bunlara cevap veren arayüzler. Peki bunun avantajı ne?
+
+173
+00:31:47,288 --> 00:31:54,067
+Bunun avantajı az önce bahsettik hocam. Porta gönderiyorsanız, network'te başka yerde olmasında bir manası yok. Başka yerde gönderiyorsunuz.
+
+174
+00:31:54,288 --> 00:31:56,967
+Tamam, güzel ama başka bir avantajı daha olamaz mı?
+
+175
+00:31:57,627 --> 00:31:59,467
+Muhtemelen vardır, düşüneyim.
+
+176
+00:32:00,692 --> 00:32:04,852
+İşte kernel, yani sistem çağrılarıyla uğraşmıyorsunuz.
+
+177
+00:32:05,052 --> 00:32:08,672
+Sistem çağrısıyla uğraşmamın sıkıntısı ne?
+
+178
+00:32:09,472 --> 00:32:15,032
+Sıkıntısı, siz kernel'dan bir şey bekleyeceksiniz.
+
+179
+00:32:16,132 --> 00:32:21,451
+Ama burada Task Manager, User Space'de bu şeyi oluşturabiliyor, mesaj objesini oluşturabiliyor.
+
+180
+00:32:22,192 --> 00:32:28,172
+Yani User Space'de oluşturduğunda ne fark ediyor? Çok kritik bir şey var orada.
+
+181
+00:32:32,980 --> 00:32:36,700
+Orayı tam şu an düşünemiyorum hocam. Ne kalite edebilir?
+
+182
+00:32:37,180 --> 00:32:48,180
+Şimdi program normalde UserSpace'te değil mi? Benim yazdığım ve ana aile açıdan UserSpace'te. Ama işletim sistemi KernelSpace'te.
+
+183
+00:32:48,564 --> 00:32:51,183
+Orada internet ile geçmeniz lazım bir kere.
+
+184
+00:32:51,564 --> 00:33:01,564
+Zaman kaybı. Halbuki eğer bu object, bu memory mapped, arka taraftaki fail'ı ifade eden memory mapped object eğer...
+
+185
+00:33:02,132 --> 00:33:13,451
+Benim çalışan programım gibi User Space'de oluşturulursa o zaman ben bu portlar üzerinden erişimi sanki ne yapıyormuşçasına erişiyor olacağım.
+
+186
+00:33:13,971 --> 00:33:16,572
+Biz fonksiyon call yapacağız artık.
+
+187
+00:33:16,751 --> 00:33:27,751
+Fonksiyon çağrısı, aynen. Arada ne interrup var ne başka bir şey var. Ben fonksiyon çağırıyorum. O zaman diğerine göre kat be kat daha hızlı hale geliyor.
+
+188
+00:33:29,011 --> 00:33:39,711
+Değil mi? Evet hocam. Hatta bu objeyi paylaşırsanız, artık kernel'dan o kadar abstraction koydunuz ki, bu objeyi paslayabiliyorsunuz.
+
+189
+00:33:40,251 --> 00:33:42,591
+Ve kimse kernel'e bağlantı olmadan o veriyi okuyabiliyor.
+
+190
+00:33:43,251 --> 00:33:44,651
+Okuyabiliyor. Aynen öyle.
+
+191
+00:33:47,231 --> 00:33:51,771
+Evet. Arkadaşlar, biz [öğrenci]'la böyle ikili muhabbet ediyoruz da.
+
+192
+00:33:55,316 --> 00:33:57,132
+Siz acaba...
+
+193
+00:34:02,355 --> 00:34:04,935
+Devreye girmek istiyor musunuz diye merak ediyorum.
+
+194
+00:34:09,492 --> 00:34:15,311
+Hiç, yani tabii okuma, yani [öğrenci] haricinde okuyanız yok değil mi bu paper'ı?
+
+195
+00:34:18,900 --> 00:34:42,340
+Varsa çete yazabilir mi veya el kaldırabilir mi bir şekilde? Yok anladık kadarıyla. Arkadaşlar, yani böyle olunca bunun keyfi çıkmıyor. Yani bu karşılıklı konuşmayı efektif bir şekilde, eğlenceli, keyifli bir şekilde yürütebilmemiz için sizin de okumanız lazım. Yani ben mesela şu an...
+
+196
+00:34:42,387 --> 00:34:51,747
+Uniform Memory Access diyeceğim, Non-Uniform Memory Access diyeceğim. Bundan konuşmak isteyeceğim. Ama...
+
+197
+00:34:56,019 --> 00:35:00,319
+Veya norma diye bir kavram var. Ne demek diyeceğim?
+
+198
+00:35:10,612 --> 00:35:13,912
+Var mı hiç? Bakmış olanımız var mı buna?
+
+199
+00:35:18,036 --> 00:35:19,076
+Tahminimce yok.
+
+200
+00:35:21,336 --> 00:35:22,176
+Peki.
+
+201
+00:35:24,115 --> 00:35:30,115
+Şimdi sizden istirhamım. Bu paperı lütfen okuyun sonuna kadar.
+
+202
+00:35:31,036 --> 00:35:31,996
+Çok güzel bir paper.
+
+203
+00:35:32,756 --> 00:35:34,815
+Bakın ne kadar harika kavramlar var.
+
+204
+00:35:35,996 --> 00:35:37,315
+Bazı şeyleri...
+
+205
+00:35:38,159 --> 00:35:59,219
+Adres Space'inden çıkartıp doğrudan kernel üzerinden erişilebilir olmaktan çıkartıp user adres Space'ine taşıdığımız zaman erişim formatını da portable bir hale getirdiğimizde işte o portlar üzerinden, bugün kelimede çok denk düşüyor portable.
+
+206
+00:36:01,748 --> 00:36:16,327
+Ha, yerel, lokal sistemimde bir fonksiyon çağrısı yaparcasına erişmişim. Ha, uzaktaki bir sisteme network üzerinden erişmişim. Bir abstraction da sağlamış oluyorum değil mi?
+
+207
+00:36:30,195 --> 00:36:37,195
+Evet. Bir sonraki paperımıza geçelim. Çünkü burada...
+
+208
+00:36:39,796 --> 00:36:43,215
+Hocam, bizim toplam kaç tane paperımız olacak?
+
+209
+00:36:45,155 --> 00:36:54,195
+Arkadaşlar, toplam 40 tane, 39 tane paperımız var. Ama size iki tane bir şey verdiğim zaman maalesef...
+
+210
+00:36:54,195 --> 00:36:55,615
+Evet.
+
+211
+00:36:58,164 --> 00:37:14,764
+Çok şey olmuyor. Yani ondan dolayı yarısına kadar gelebilirsek çok mutlu olacağım. 20 tane falan gözden geçirebilirsek, şimdi bugün itibariyle aslında 9'u elden geçirmiş olacağız.
+
+212
+00:37:14,764 --> 00:37:15,884
+Evet.
+
+213
+00:37:22,260 --> 00:37:43,300
+Geçen hafta benim özel durumumdan dolayı ders yapamadık. Zaten o hafta başka şeyler vardı. Zamanında da ilan edememiştim. Ama ettim. Zamanı da verdim. Yine bir şey değişmedi. Kısa süre veriyorum, kısa oluyor. Uzun süre veriyorum, uzun oluyor. Bir şey yapmanız lazım, okumanız lazım.
+
+214
+00:37:44,120 --> 00:37:44,780
+Evet hocam.
+
+215
+00:37:44,920 --> 00:37:46,039
+Çok eğlenceli yani.
+
+216
+00:37:46,804 --> 00:38:08,403
+Ya şey oluyor, açıkçası paper 20 sayfanın üzerinde olunca biraz göz korkutucu oluyor. Öyle bir etkisi oldu bende, onu söyleyebilirim. Diğerine baktım, diğerine okudum. Okurken de çok vaktim olmadı. Yetiştiremedim yani. Bu uzun makaleyi.
+
+217
+00:38:09,043 --> 00:38:10,683
+Öyle bir etkisi oldu hocam bende.
+
+218
+00:38:11,243 --> 00:38:13,243
+Bu dönem diğer arkadaşlarda da olmuştur.
+
+219
+00:38:13,623 --> 00:38:19,203
+Bir de hocam şey sorabilir miyim? Derse katılmayan arkadaşlardan acaba makale gönderen oluyor mu?
+
+220
+00:38:20,947 --> 00:38:42,847
+Yani gönderilenler var ama sonuçta derse tamam işte yok kurallarına göre şu anda katılım aramayın, şey yapmayın falan işte siz kaydınızı alın, asenkonda izlenebilir, dinlenebilir ama yani bu dersin özünde şu katılımı sağlamak ve karşılıklı interaktif bir şeyler yapabilmek var.
+
+221
+00:38:42,847 --> 00:38:47,648
+Evet, yani katılım sayısı çok az olunca şey olmuyor açıkçası.
+
+222
+00:38:48,755 --> 00:39:03,955
+Daha fazla katılımla daha çok interaktif olur hocam. Ben mesela bir tanesini okuyamadım. Okumuş olduğu zaman daha şey olur, etkileşim olur gibi.
+
+223
+00:39:03,955 --> 00:39:08,955
+Aynen ama işte sorun şu ki bu dersin kayıt döneminde...
+
+224
+00:39:09,396 --> 00:39:36,235
+Bana yazılmayan mail kalmadı, gelmeyen telefon kalmadı fen bilimleri üzerinden. Hocam şu arkadaş kaydolamamış, kontenjant olmuş. Hepsine evet dedim. Hiç kimseye hayır demedim. En son kaç, kırka yakın bir şey oldu ama siz görüyorsunuz. Gayet fleksik bir şekilde yapıyoruz. Saatleri uyduruyoruz, odur budur.
+
+225
+00:39:37,427 --> 00:40:02,768
+Az verin dediniz, az okuma veriyorum. Ama işte kaç kişiyiz? İki, dört, altı. Ben bir seferde on kişiyi geçtiğimizi görmedim. Bu da üzücü bir şey. O arkadaşlar bunu isterken heyecanla istediler. Eminim adından etkilendiler ama sonuçta bir şey var. Her olayda olduğu gibi hayatta bir sorumluluk var bununla alakalı.
+
+226
+00:40:03,476 --> 00:40:14,396
+Yere getirmek gerekiyor. Dediğine de ben ne kadar hak veriyorum, ne kadar çok arkadaş olursa o kadar etkileşimli, o kadar güzel bir şekilde geçer bu.
+
+227
+00:40:17,296 --> 00:40:29,456
+Hocam bu arada arkadaşlar, biliyorum bilmiyorum da ben lisansa da yıldızdaydım da siz oradan da biliyorum. Normalde zaten çok yoğun birisiniz. Bu derste bu kadar sizinle konuşmak.
+
+228
+00:40:29,760 --> 00:40:31,119
+Bence çok büyük ihtansız yani.
+
+229
+00:40:32,083 --> 00:40:34,603
+Sağol, teşekkür ederim. Ne güzel söylüyorsun.
+
+230
+00:40:35,844 --> 00:40:37,523
+Benim sesim geliyor mu hocam?
+
+231
+00:40:38,043 --> 00:40:39,143
+Geliyor, geliyor [öğrenci].
+
+232
+00:40:40,203 --> 00:40:44,543
+Ya ben de hocam, açıkçası dersi öğrenirim diye aldım ben de.
+
+233
+00:40:44,863 --> 00:40:48,603
+Diğer arkadaşlarla dinleyip siz böyle bir formatı olduğunu bilmiyordum.
+
+234
+00:40:48,703 --> 00:40:51,963
+Ben haberleşmediğim o yüzden beni zorluyor makaleler açıkçası.
+
+235
+00:40:52,523 --> 00:41:00,083
+Ama ben tabii network ve sistem alımında çalıştığım için sistemi öğrenmek amacıyla aldım da tabii background'ım ya zayıf oldum.
+
+236
+00:41:00,083 --> 00:41:02,103
+olunca zorlanıyorum
+
+237
+00:41:02,103 --> 00:41:03,344
+direkt okuyunca ama
+
+238
+00:41:03,344 --> 00:41:05,763
+böyle dinleyerek derslere
+
+239
+00:41:05,763 --> 00:41:08,003
+katılarak öğrenmeye çalışıyorum yani ben de.
+
+240
+00:41:08,263 --> 00:41:09,783
+Tamam yani o güzel bir şey.
+
+241
+00:41:11,344 --> 00:41:11,923
+Ama
+
+242
+00:41:11,923 --> 00:41:13,543
+tabii bunu yaparken de biraz
+
+243
+00:41:13,543 --> 00:41:14,703
+tabii tabii.
+
+244
+00:41:16,563 --> 00:41:41,223
+Şu anda bakın burada yanlış söylemek diye bir şey yok. Yani eyvah ben yanlış söyledim, puan kaybettim, diğer arkadaşlar bana laf edecekler. Yok öyle bir şey. Lisansüstü seviyesindeyiz burada. Doğrusunu da öğreneceğiz. Başka türlü olmayacak. Her söylediğiniz zaten yüzde bir milyon doğru olsa buraya ne ihtiyacınız var? Hepsini biliyorsunuz demektir. Ondan ötürü.
+
+245
+00:41:42,579 --> 00:41:46,960
+Biraz böyle riske atıp, şey alıp, ne derler ona?
+
+246
+00:41:47,891 --> 00:42:15,771
+İnisiyatif alıp ele yapmak lazım. Yani bakın burada, yani bu paperın özünde az önce söyledim kaç sayfa, deminki baktığımız, Mac Duality, Çin'de bazı sistem çağrılarının olduğu tablolar var, şeyler var. Onlara bakmak şöyle, aa bak bu varmış veya bugün kullandığım ta o zaman şöyle ortaya atılmış demek açısından veya ne olduğunu anlamak açısından. Yoksa oradaki her sistem çağrısını bilmenin anlamı yok.
+
+247
+00:42:15,891 --> 00:42:32,391
+Tamam, bu birden başlıyormuş. Arada örnek kodları, şunları, bunları açıklamalarıyla 20'ye kadar gidiyor. Ama inanın, bakın bu 20 sayfalık şeyin özetini ben size az önce 2-3 cümle öyle söyledim. Değil mi? Yani aradaki o abstraction'ı koymak.
+
+248
+00:42:32,735 --> 00:42:56,895
+Shared Memoride çözülebilecek herhangi bir problemin aslında bir karşılığının, bir ikizinin diyelim, duality'yi öyle kullanalım, non-shared memoride olduğunu ortaya koymak, ortaya atmak. Ama bunun kendi kendine olmayacağını söylemek, bunun olabilmesi için bir takım sistemsel, tasarımsal değişiklikler, kavramsal farklılaşmalar gerektiğini ortaya koymak.
+
+249
+00:43:00,735 --> 00:43:26,416
+Avantaj sağlayacağı, böyle bir şey yaptığımızda, adres map mantığıyla, memory mapped olarak objeye dönüştürdüğümüzde, bakın object oryantatı çok konuşuyoruz programlama dilleri şeyler açısından ama işletim sisteminde böyle bir şeyini görebilmek önemli. Lokaldeki bir erişimi, bir fonksiyon çağrısını, network üzerinden bir fonksiyon çağrısı veyahut da erişime dönüştürmeyi.
+
+250
+00:43:26,751 --> 00:43:40,612
+Az önce UMA, Uniform Memory Access. Lokalde ben memoriye erişiyorsam, herhangi iki prosesimin memoriye erişim hızları aynıdır. Çok değişmez.
+
+251
+00:43:41,572 --> 00:43:47,412
+Memori shared memori ise eğer gerçek anlamda shared memori ise, özel bir yapısı yoksa.
+
+252
+00:43:47,412 --> 00:43:51,731
+Ama ben bunu kalkıp da non-shared memoriye taşıdığım zaman,
+
+253
+00:43:52,436 --> 00:44:14,775
+Non-Uniform Memory Access olacak. NUMA olacak. Çünkü niye? Bazı prosesler kendi lokalindeki memoriye erişirken bazı prosesler lokalinde olmayana uzaktakine erişecek. Biri nanosaniyeler mertebesinde, öbürü mikrosaniye yeri geldiğinde minisaniye mertebesinde. O zaman bunun etkisi var.
+
+254
+00:44:15,284 --> 00:44:33,984
+Bir de işte az önce söylediğim isim gibi kulağa geliyor Norma. Kadın ismi değil mi İngilizce'de? Ama Norma'da hani remote erişimin hiç olmadığı, tamamen hep lokalle kısıtlanmış yapıları ifade etmek için.
+
+255
+00:44:33,984 --> 00:44:38,924
+Yani bu kavramları öğrendiğiniz zaman 20 sayfadan çıkacak şey bu aslında.
+
+256
+00:44:40,307 --> 00:45:04,367
+Ki buradaki kavramlar da şu anda Microsoft'un Windows işletim sisteminde de kullanılıyor. Linux'da da kullanılıyor. Unix ve derivatiflerinde de kullanılıyor. Hala daha günümüzde sirkülasyonda olan. Buradan elde edeceğiniz şey bu.
+
+257
+00:45:05,844 --> 00:45:07,704
+Şimdi diğerine geçelim.
+
+258
+00:45:08,204 --> 00:45:13,704
+Konuyla çok bir alakası yok ama ben meraklamak istiyorum.
+
+259
+00:45:15,204 --> 00:45:21,123
+Bu makaleler genelde okuduğumuz 1980'lerde, 70'lerde yazılmış.
+
+260
+00:45:21,623 --> 00:45:27,184
+O zamanlarda internet belki yoktu, belki yaygındı, çok bilmiyorum o tarihleri de.
+
+261
+00:45:27,572 --> 00:45:47,811
+Yani insanlar arası etkileşim ve bu bilgilerin yayılma hızı herhalde çok yavaşmıştır görece olarak şu ana göre. Dergilerde yerlen makalelerle vesaire yayılıyormuştur. O zamanlar Türkiye'de durum nasıldı hocam?
+
+262
+00:45:49,940 --> 00:45:55,440
+Siz takip edebiliyor muydunuz literatürü, erişiminiz nasıldı?
+
+263
+00:45:55,440 --> 00:46:15,440
+Yani sana şöyle söyleyeyim. İnternet dünyada 1983 yılında başladı. İlk şeyi 1983. Ben üniversiteye 86 yılında başladım. O zaman internet olarak...
+
+264
+00:46:16,148 --> 00:46:43,288
+Bütün dünyada henüz yaygınlaşmamıştı. Daha çok Amerika'da doğal olarak orada oluşturulduğu, orada kökleri olduğu, başlangıcı orada olduğu için. O dönemde bizim ona denk düşen, Türkiye olarak demiyorum Avrupa'yı da kapsayan European Academic Research Network'ümüz vardı, EARN diye. Şu an kinden çok daha farklı böyle...
+
+265
+00:46:43,603 --> 00:47:07,603
+İnteraktif değildi. Daha çok sadece mesajlaşma üzerine veyahut da offline, interaktif olmayan file transferi üzerine şey vardı. Şu anki gibi böyle online kaynaklara erişim, bir web sayfasına gideyim falan gibi bir şeyler yok. Zaman içerisinde onlar. Yani 90...
+
+266
+00:47:08,628 --> 00:47:31,728
+Bunlara doğru, tabii ben lisans üstü yaparken bunlar oldu ki, şu anki web öncesinde, önce FTP, File Transfer Protokolli'yle FTP siteleri başladı. Arkasından GoFer diye bir protokol vardı. FTP'nin üzerine bir elbise giydirilmiş gibi düşünün. Line-based. Sonra daha bir şey. Sonrasında bu çıktı.
+
+267
+00:47:36,628 --> 00:47:43,628
+Yani kütüphanede vardı. Ben Yıldız'da okudum. Bizim kütüphanemizde çok fazla bu şekilde kaynak...
+
+268
+00:47:43,903 --> 00:48:05,344
+Bu konuda özellikle bilgisayarla alakalı veyahut da mühendislikle alakalı bir kaynağa erişileceği zaman Boğaziçi'ne giderdik. Orada sıra beklerdik. Öğrenci olduğumuz için baya bir azar işitirdik.
+
+269
+00:48:05,344 --> 00:48:11,264
+Niye geldiniz, niye gittiniz, onları alamazsınız, fotokopisini çekemezsiniz, öyle yapamazsınız falan.
+
+270
+00:48:11,903 --> 00:48:36,224
+Şu anki gibi değildi. Şu an browser'ın başına oturuyorsun, yazıyorsun, sana her şey geliyor. Çok farklıydı yani. Ama sadece bize Türkiye'ye mi ait zannetmiyorum. Dünyanın farklı, daha avantajlı, daha şey olan yerleri olabilir ama genelde böyleydi. Sonra işte o 90'larla beraber internet ki yani internete bizim girişimiz oldukça.
+
+271
+00:48:36,672 --> 00:49:03,132
+Eskidir şey olarak. Çok geç bu işe başlamadık. Öncesinde de Örn vardı. Örn'den internete geçiş yaptık. Ben şanslıydım. O çalışmaların içinde yer aldım. Türkiye'nin internete geçmesinde çalışan ekibin içerisindeyim. Örn Network'ünü yöneten ekibin içerisindeyim. Akademik camiada olduğum için işte Ottu, Ege, Boğaziçi, İTÜ, oradaki arkadaşlarla beraber bir avuç insandık. Biz öyle yapıyorduk.
+
+272
+00:49:03,956 --> 00:49:28,236
+Ama şu an artık şey, ucu bucağı yok. Çok çok rahat. Yani karşılaştırdığım zaman inanılır gibi değil. Çöp de daha fazla. O zaman bulduğun her türlü şey zaten disk alanı değerli, işlemci değerli, memori değerli. Ortalıkta bu kadar çöp tutabilecek şeyin yok. Şu an her şey var, ayıklaman gerekiyor.
+
+273
+00:49:28,639 --> 00:49:36,539
+Kafayı çalıştırman gerekiyor falan. Öyle şeyler var. Bilmiyorum cevap oldu mu ama durum böyle benim gözümden bakıldığında.
+
+274
+00:49:36,659 --> 00:49:37,599
+Teşekkürler hocam.
+
+275
+00:49:38,299 --> 00:49:51,079
+Ben teşekkür ederim. Evet, şimdi arkadaşlar, diğer paper. Bu first class user level thread nedir? Bakın az önce thread'i konuştuk değil mi?
+
+276
+00:49:52,500 --> 00:50:18,420
+Computation ile ilgili olduğunu, computation ifade ettiğini, execution ifade ettiğini. Yani buradaki first class'ı ben söyleyeyim size şey olarak. Nasıl hani birinci sınıf uçak bileti vardır, birinci sınıf işte oturma yeri falan vardır. Oradaki gibi yani günlük hayatta kullandığımız şekilde first class, user level threat ne demek? Var mı bunu açıklayacak olan?
+
+277
+00:50:39,411 --> 00:50:45,031
+Hocam, ben gerçi diğer makalede oraya çok odaklandığım için buna çok bakamadım.
+
+278
+00:50:45,632 --> 00:50:45,891
+Tamam.
+
+279
+00:50:47,451 --> 00:50:54,091
+Ama bu ilk şeye bakmamız lazım bence. First Class anlamak için thread implementasyon nasıl yapılmış daha önce?
+
+280
+00:50:54,811 --> 00:50:56,132
+Tamam, hadi bakalım, güzel.
+
+281
+00:50:56,891 --> 00:51:01,531
+Şeye bağlıyorlar ilk, kernel tarafındaki proseslere bağdaştıralım diyorlar.
+
+282
+00:51:02,491 --> 00:51:04,511
+Burada sizin bir sistem çağrısı yapmanız gerekir.
+
+283
+00:51:05,204 --> 00:51:09,204
+Bu da sizin threadleriniz ayağa kalkarken yavaşlamasına sebep olabilir.
+
+284
+00:51:09,503 --> 00:51:11,104
+Yani o aradaki bağlantıyı kurmak için.
+
+285
+00:51:12,724 --> 00:51:16,903
+İşte bu second, yani birinci sınıf muamelesi, ikinci sınıf muamelesi diyoruz ya.
+
+286
+00:51:18,184 --> 00:51:22,804
+Orada bu dediği eski sistemlerde böyle bir sıkıntı var.
+
+287
+00:51:24,744 --> 00:51:26,943
+Biraz daha spesifik anlatabilecek misin?
+
+288
+00:51:26,943 --> 00:51:30,423
+Daha spesifik çok iyi anlamadım hocam.
+
+289
+00:51:30,931 --> 00:51:31,771
+Böyle anladım.
+
+290
+00:51:32,371 --> 00:51:39,011
+Yani söylediklerinde var bir şeyler ama biraz böyle etrafında dolaşıyorsun.
+
+291
+00:51:40,031 --> 00:51:43,611
+O yüzden bir tık daha ayrı.
+
+292
+00:51:43,611 --> 00:51:44,931
+Ben bir yapmaya çalışayım.
+
+293
+00:51:46,251 --> 00:51:48,171
+Kavramla biraz karışıyor bende de.
+
+294
+00:51:48,496 --> 00:51:55,696
+Şimdi task genel itibariyle altında proseslerin olduğu şeyler olarak anlıyorum.
+
+295
+00:51:55,756 --> 00:52:06,636
+Hayır, hayır, hayır. Altında proseslerin olduğu değil. Task eşittir. Günümüz açısından bakıldığında proses. Task'ın modernize edilmiş olan adı proses.
+
+296
+00:52:07,135 --> 00:52:20,235
+Eskiden bu programın küçüklüğüne, büyüklüğüne bağlı olarak, memuride katladığı yere bağlı olarak taht ismi de verilmiş ama artık modern işletim sistemleri terminolojisinde biz ona prosesliyoruz.
+
+297
+00:52:20,555 --> 00:52:24,935
+O zaman şöyle diyebilir miyiz? Programlar birden çok proseslerden oluşur.
+
+298
+00:52:25,675 --> 00:52:28,995
+Hayır. Bir program bir prosesten oluşur.
+
+299
+00:52:30,771 --> 00:52:33,771
+Child Processleri de olabilir diyebiliriz o zaman.
+
+300
+00:52:33,771 --> 00:52:55,952
+Ama o Child Process'tir. Her Child Process bir programla ilişkilendirilir. Birden fazla proses aynı programla ilişkilendirilmiş olabilir ama her biri farklı bir kopyadır. Ancak bir proses sadece bir programla ilişkilendirilebilir.
+
+301
+00:52:57,619 --> 00:53:22,820
+Yani burada anladığım kadarıyla anlatayım ama çok doğru da anlamamış olabilirim. Bir program yazdığımızı düşünelim. Bu program birden çok işlemci üzerinde koşacak, işe görecek, haberleşebilecek ve daha verimli olarak kaynaklara erişecek.
+
+302
+00:53:23,199 --> 00:53:32,940
+Bunu sağlamak için programı içerisinde proseslere bölüp anladığım şey.
+
+303
+00:53:33,000 --> 00:53:42,980
+Hayır, hayır. Proseslere bölmüyoruz. Hayır. Orada senin kavramsal olarak bir sıkıntın var bence. Başka denemek isteyen var mı şansını?
+
+304
+00:53:43,259 --> 00:53:48,639
+Şimdi şey yapacağım, onunla alakalı yorumu yapacağım [öğrenci] ama önce başka arkadaş var mı diye merak ediyorum.
+
+305
+00:53:59,092 --> 00:54:02,992
+Şimdi bakın, program için az önce ne dedik?
+
+306
+00:54:04,052 --> 00:54:27,632
+Unit of Resource Allocation dedik değil mi? Yani process, tak. Bir programı çalışır hale getirebilmem için bunu benim memoriye bir şekilde almam lazım. Ya tamamını alacağım ya bir parçasını alacağım. Tabii ki bir parçasını alıp bunu yapabiliyorsam memoriden daha iyi yaparım. Ama aynı zamanda bu program çalışırken yani bu proses ilerlerken paylara erişebilir.
+
+307
+00:54:28,244 --> 00:54:45,204
+Başka proseslere erişebilir, network'e erişebilir falan filan. O zaman bununla alakalı bunların çete resminin tutulması ve aynı zamanda da bunların bir şekilde ifade edilmesi lazım. Çünkü her biri bir kaynak işletim sistemi tarafından yönetilen.
+
+308
+00:54:56,820 --> 00:55:10,019
+Böyle bir isim vermek istesem, bunları bir bütün olarak, bunlara bir referans vermek istesem, o zaman buna task diyorum veya günümüz için modern işletim sistemleri açısından konuştuğumda ne diyorum arkadaşlar?
+
+309
+00:55:11,599 --> 00:55:12,619
+Proses.
+
+310
+00:55:13,340 --> 00:55:22,923
+Aynen. Ancak bir program kendi içerisinde birbiriyle ilintili ama...
+
+311
+00:55:22,996 --> 00:55:27,316
+eş zamanlı, bağımsız çalışabilen parçalardan da oluşabilir.
+
+312
+00:55:27,760 --> 00:55:49,079
+Birbiriyle ilintili olmak zorunda. Çünkü neden? Bir programın parçası. Yani iki farklı amaca yönelik şeyi aynı programın altına koymak çok mantıksız olur. Ama bir word processor düşünün. Siz tuşlara basıp kelimeleri yazarken spell check yapıp yazdığınız kelimelerdeki hatayı otomatikman düzeltmesi.
+
+313
+00:55:55,760 --> 00:56:15,599
+Sağ tuşa basarım, correct derim, correct eder. Ama bu sequential bir akıştır. Yani benim tetiklediğim bir şeydir. Halbuki diğerinde ben tuşlara basıp kelimeyi yazarken arka tarafta programın içerisinde bir parça daha çalışıyor ve bu parçada o düzeltmeyi yapıyor.
+
+314
+00:56:16,079 --> 00:56:33,079
+Günümüzde şu an alışık olduğunuz cep telefonunda da aynı şey var. Diğer tarafta da. O zaman hani mesajlaşma şeyinde de bu WhatsApp'ta da var. SMS gönderirken de var. Demek ki orada siz onu yazarken arka planda bir de ne çalışıyor arkadaşlar? Böyle bir otokorrekt mekanizması.
+
+315
+00:56:33,079 --> 00:56:37,860
+Veya işte sağını solunu metnin ayarlaması.
+
+316
+00:56:38,324 --> 00:57:05,644
+Değil mi? Girintili çıkıntılıdan şey hale getirmesi. O zaman bir programın içerisinde farklı parçalar aktif olabilir. O zaman ben bu farklı aktif olan parçaları da ifade etmek zorundayım. Bir şekilde onların da takibini yapmak zorundayım. Bunları da neyle takip ediyorum? Tread mantığıyla takip ediyorum. Bu bir veri yapısı. TASK da bir veri yapısı. Tread de bir veri yapısı.
+
+317
+00:57:06,068 --> 00:57:20,168
+O zaman demek ki bir programın içerisinde birbiriyle ilintili ama aynı programın parçası olan threadler olabilir ve bunlar eş zamanlı çalışabilir.
+
+318
+00:57:20,168 --> 00:57:29,367
+Şimdi peki işlemciyi kullanma ve kullandırma yetkisi hangi programda?
+
+319
+00:57:30,668 --> 00:57:31,548
+Operating System.
+
+320
+00:57:31,952 --> 00:57:39,592
+Evet, işletim sisteminde. İşletim sisteminin haberi olmadan işlemci hiçbir program akışı için kullanılamaz.
+
+321
+00:57:40,592 --> 00:57:52,452
+Peki şöyle düşünün, işletim sistemi sadece proseslerden haberdar. O zaman işlemciyi bir tek neye tahsis edebilir? Proses'e.
+
+322
+00:57:52,820 --> 00:58:03,880
+Ama prosesin içinde de alt parçalar aktif olacak. Yani prosesin kendisi bir bütün olarak aktif olmayacak ki belki o anda eş zamanlı olarak çalışması gereken üç tane alt parça var.
+
+323
+00:58:04,119 --> 00:58:13,340
+Şimdi o zaman bunların aktif olabilmesi için hangi seviyede bu parçaların tanınması lazım?
+
+324
+00:58:14,675 --> 00:58:15,756
+Kernel seviyesinde.
+
+325
+00:58:15,756 --> 00:58:25,996
+Kernel seviyesinde. Güzel. Standart thread tasarımı bunun üzerine yapılıyor. Yani task veyahut da process.
+
+326
+00:58:26,452 --> 00:58:40,032
+O resource allocation'ın tutulduğu yapı diyelim, büyük yapı diyelim, onun ifade edildiği ama bunun içerisindeki aktif olarak çalışabilen parçalar da threadler.
+
+327
+00:58:40,032 --> 00:58:53,232
+Ve işletim sistemi evet programı çalışır hale getirebilmek için prosesi tanımak zorunda. Ancak onun içindeki alt parçaların da eş zamanlı çalışabilmesi için neleri de tanıması lazım? Threadleri de.
+
+328
+00:58:53,715 --> 00:59:01,615
+Şimdi işletim sistemine girmek, işletim sisteminin dikkatini çekmek neyle gerçekleşiyor?
+
+329
+00:59:02,115 --> 00:59:03,035
+Sistem çağırları.
+
+330
+00:59:03,035 --> 00:59:05,235
+Yani interab ile gerçekleşiyor.
+
+331
+00:59:06,515 --> 00:59:11,635
+Her interab bir kesinti, bir duraksama, bir yavaşlama.
+
+332
+00:59:12,235 --> 00:59:15,947
+Aynı programın içerisinde birbiriyle...
+
+333
+00:59:16,403 --> 00:59:42,324
+Ortak bir amaç için çalışan iki tane farklı eş zamanlı parçayı aktif olarak çalıştırabilmek için her seferinde ne söz konusu? Kernel'a, işletim sistemine girilip çıkılması söz konusu. O zaman bu bir zaman kaybı. Ama standart ilk düşünülen çözüm de bu. İşte Kernel Level Threatler.
+
+334
+00:59:43,155 --> 00:59:54,735
+Peki ne diyorlar? Diyorlar ki biz bu threadleri, az önce konuştuk ya bazı şeyleri MAC işletim sisteminde userspace'e taşımışlardı.
+
+335
+00:59:54,735 --> 01:00:07,016
+Biz bu threadleri userspace'e taşısak olmaz mı? Veya nasıl taşıyabiliriz? Userspace'e taşıdığımızda çıkacak olan sorun ne?
+
+336
+01:00:08,275 --> 01:00:19,051
+İşletim Sistemi Tred'i tanımayacak ki. İşletim Sistemi sadece prosesi tanıyacak. Proses'e zaman verecek. Ama proses'e verilen zamanın, prosesin...
+
+337
+01:00:19,092 --> 01:00:37,391
+Aslında içindeki 3 tane, 4 tane, 2 tane neyse thread arasında paylaştırılması lazım. Ama işlemcinin kontrolünü yapan yer neresi? İşletim sisteminin kendisi. İşletim sisteminin haberi olmadan işlemciyi bir thread'ten diğerine nasıl alıp vereceksiniz?
+
+338
+01:00:39,967 --> 01:00:58,088
+Bu da bir problem. Bunun çözülmesi lazım. Bunun çözümü var mı? Tabii ki var. Öbürü gibi değil. Farklı bir şekilde. O zaman da ne kavramı ortaya çıkıyor arkadaşlar? User level threatler ortaya çıkıyor. Bakın, abstractın ikinci paragrafında.
+
+339
+01:00:58,088 --> 01:01:03,588
+We describe a set of kernel mechanisms.
+
+340
+01:01:04,244 --> 01:01:14,324
+Yani bir takım mekanizmalar ve bir takım kavramlar designed to accord first class status.
+
+341
+01:01:14,784 --> 01:01:20,644
+Accord ne? Hani ona o şeyi vermek, o şeyi hani sen artık böyle oldun diyebilmek.
+
+342
+01:01:20,644 --> 01:01:26,443
+First class status to user level threats. User level'daki threatlere.
+
+343
+01:01:27,027 --> 01:01:31,227
+First Class statusu verecekler. Yani ne demek First Class status burada?
+
+344
+01:01:42,927 --> 01:01:49,747
+Yani sanki bu kerneldayken nasıl gerçekleşiyorsa bunu benzer bir şekilde
+
+345
+01:01:51,987 --> 01:02:15,427
+Performans anlamından daha yüksek performanslı ama fleksibilite olarak, kullanılabilirlik olarak veyahut da hani reasonable way dediği kullanıcıya böyle kulağını tersten göstermeyecek şekilde, sıradan alışık olduğu şekilde kullanmasını sağlayacak şekilde o gerekli mekanizmaları ve konventionları ortaya atmak, bunları oluşturmak ve bunların bir proof of concept implementasyonunu yaptık.
+
+346
+01:02:19,072 --> 01:02:29,672
+Threatler artık sanki kernel seviyesindeki her türlü imtiyaza sahip, kernel'ın tanıdığı threadlerin özelliğine sahip olmuş oluyor.
+
+347
+01:02:29,792 --> 01:02:43,372
+Ve ben de o zaman diyorum ki kernel level thread kullanacağımı daha yüksek performans, daha düşük gecikme, daha az ekstra resource kullanımı o zaman user level threadler kullanırım.
+
+348
+01:02:43,372 --> 01:02:46,072
+İşte bakın first class user level thread bu.
+
+349
+01:02:46,771 --> 01:03:00,031
+User Level Threat'lerin standart bir takım problemleri var. Bunların kernel Level Threat'lerle karşılaştırıldığında, az önce saydığım şeylerden, bunların önüne geçilmesi lazım. Bunların bir şekilde çözülmesi lazım.
+
+350
+01:03:01,751 --> 01:03:10,491
+Bunun gerçekleşebilmesi için de burada bu paperda neler yapıldığı anlatılıyor arkadaşlar. Bu paperın özü bu.
+
+351
+01:03:14,068 --> 01:03:15,008
+Anlaştık mı?
+
+352
+01:03:16,708 --> 01:03:17,307
+Evet hocam.
+
+353
+01:03:18,628 --> 01:03:19,528
+Bakın.
+
+354
+01:03:24,596 --> 01:03:40,356
+Mesela figür 1'e bakıyorsunuz. Shared Kernel ve Shared Data Structures in Psyche. Bunların implementasyon yapıldığı şeyden bahsediyor. Bir tarafta Kernel Data var, öbür tarafta User Data var.
+
+355
+01:03:43,251 --> 01:03:57,931
+Sudo Register. Esas hani Register'lara denk düşen ama onların bilgisinin bir aynalanmış halini tutan. Bakın altında Virtual Processor şey var, Physical Processor var, Address Space var. Yani...
+
+356
+01:04:02,356 --> 01:04:16,175
+Olayı Kernel seviyesindeki fiziksel eş değerlerinden, çünkü Kernel doğrudan işlemciyle muhatap oluyor. İşlemci de donanımın göbeğindeki parça.
+
+357
+01:04:17,012 --> 01:04:40,472
+İşlemci üzerinden ona mesela interuptlar geliyor. İşte diske yapılan I.O. tamamlandı. Network'e yapılan I.O. tamamlandı. Printer'a yapılan I.O. tamamlandı. Veya işte hata oldu, timeout oluştu. External bir interupt oluştu falan filan. Bunları bakın nereye taşıyorlar, nereye aktarıyorlar?
+
+358
+01:04:43,648 --> 01:04:57,428
+Processor mantığıyla yukarıya taşıyorlar. Yani user space'de bir sanal işlemci oluşturuyorlar. Ama bu belki de para virtualization'ın başlangıcı temeli diye düşünebilirsiniz.
+
+359
+01:04:57,428 --> 01:05:10,408
+Yani kalkıp da her instruction bazında onun yaptığını ben şeyde yapayım user'da değil. Alt taraftaki fiziksel işlemcide gerçekleşen şeylerin üst tarafa yansıtılması.
+
+360
+01:05:11,860 --> 01:05:18,039
+Prosesin içerisindeki parçalarda bunu muhatap alıyorlar kendilerine, bunu görüyorlar.
+
+361
+01:05:18,039 --> 01:05:28,039
+Bakın neler mesela? Altta hardware olarak gerçekleşen bir takım...
+
+362
+01:05:28,115 --> 01:05:56,115
+Bu durumlar, bir takım olaylar, event ve dolayısıyla interruptlar üst tarafta software interruptlara dönüştürülüyor. Ne diyor? The following is a partial list of software interrupts in psyche. Neymiş? Virtual processor initialization. Virtual processor'ın initialize olması. Normalde physical processor da initialize oluyor. Ne oluyor? Reset sinyali uyguluyorsun. İşlemci resetleniyor. Gidiyor belirli bir...
+
+363
+01:05:56,115 --> 01:06:08,115
+Adresten ilk gördüğü instruction çalıştırıyor. E şimdi o zaman demek ki Virtual Processor'ın da böyle bir reset initialization sekansı olması lazım. O da gidip bir yerden bir şey başlatmalı.
+
+364
+01:06:08,115 --> 01:06:19,115
+Bak, thread blocked in the kernel. Kernel'da bir thread bloke oluyorsa o zaman bunun yukarıya software interruptla
+
+365
+01:06:19,744 --> 01:06:25,403
+Trap diyoruz biz buna. Aktarılması lazım ama normal bir physical interruption.
+
+366
+01:06:26,931 --> 01:06:54,071
+Yavaşlığıyla veyahut da gecikmesiyle değil. Ya da thread unblocked in kernel. Kernel'da thread unblocked ise yukarıda da devam edebilmesi lazım. Signal from another virtual processor. Çünkü niye? Virtual processor bir thread'in çalışmasını sağlıyor. O zaman bir thread başka bir thread ile bir şeyi konuşacaksa az önceki şeyi düşünün. Yani ben klavyede yazıyorum. Space'e bastım. Bu ne anlama gelir? Space'e bastıysam bir kelime oluştu.
+
+367
+01:06:54,931 --> 01:06:59,171
+O zaman öbür tarafın bunu düzeltmesi, otokorekt yapması lazım.
+
+368
+01:06:59,711 --> 01:07:04,211
+Timer expiry. Bir zaman vardır, bir şey vardır.
+
+369
+01:07:04,471 --> 01:07:11,731
+Hani ben ya yazmışımdır, yazar yazmaz olur ya da belirli bir süre, belirli aralıklarla araya girmemesi, şey yapmaması için olur.
+
+370
+01:07:11,731 --> 01:07:18,351
+Ama bir zamanın geçtiğinden veyahut da belirli bir sürenin ilerlediğinden emin olabilmek için.
+
+371
+01:07:19,111 --> 01:07:22,931
+Imminent preemption. Hemen anında onu boşaltmak.
+
+372
+01:07:22,931 --> 01:07:41,931
+Yani işlemciyi o thread'ten çekmem ve başkasına aloketmem gerekebilir. Çünkü neden? Daha yüksek öncelikli bir şey gelmiştir veya çok özel bir durum oluşmuştur. Program fault, siz kontrol ettiniz ama...
+
+373
+01:07:42,643 --> 01:07:52,907
+İmputtan dolayı, kullanış yerinden dolayı bir şeyi sıfıra bölmeye kalktınız. Böremezsiniz değil mi? Division by zero. İşte bu bir fault veya...
+
+374
+01:07:53,108 --> 01:08:21,108
+Erişmemeniz gereken bir memoriye erişiyorsunuz. Normalde donanımda işlemci bunu yapsaydı bir hardware intihar hat olacaktı. Ortalık karışacaktı, kan görüne dönecekti. Yukarıda bunu bu kadar ayrıntılı yapmaya gerek yok. O şeyi yansıtıp da zaten yukarıdasın, software seviyesindesin, user level'dasın, software olarak bunu yapıyorsun. Sadece o fault'un oluştuğunu, fault'un tipini verdiğiniz anda devam ediyorsun.
+
+375
+01:08:21,108 --> 01:08:47,788
+Yani buradaki mantık, bu paperın özündeki şey, yatan şey, fiziksel işlemcinin doğrudan muhatap alınarak onun etrafında oluşturulmuş olan kernel level treplerin sahip olduğu özellikleri bir şekilde
+
+376
+01:08:48,627 --> 01:09:12,228
+Yukarıda, User Space'de implement edilen User Level Threat'lere taşıyabilmek ve User Level Threat'lerin de sanki Kernel Level Threat'miş gibi benzer kıvraklıkta, benzer yetenekte ve benzer kullanım kolaylığında, yani kullanıcı hiç etkilenmemeli bundan.
+
+377
+01:09:12,576 --> 01:09:37,435
+Dur bir saniye, bu acaba User Level Threat miydi? Şunu mu çağıracaktım yoksa bunu mu yapacaktım? Hayır, bu Kernel Level Threat o zaman hiçbir şeye dikkat etmeme gerek yok gibi böyle garip bir şeye girmeden Kernel Level Threat'i nasıl kullanıyorsa, onun programlanması için nasıl bir yapı öngörüyorsa, aynı şeyi de değişiklik olmaksızın User Level Threat'lere de aktarabilmesinin sağlanması.
+
+378
+01:09:37,435 --> 01:09:40,536
+İşte First Class'dan anlaşılan şey.
+
+379
+01:09:40,576 --> 01:09:55,435
+Bu paper da bunun üzerine kurulu bir paper ve bu konunun etrafına bakıyor, neler var, neleri incelemem hem de yeri geldikçe bunların ayrıntılarına giriyor.
+
+380
+01:09:56,655 --> 01:10:05,115
+Çok kısa bir paper aslında. Çok böyle aşırı bir şey değil. Diğerine göre bence çok daha şey.
+
+381
+01:10:07,115 --> 01:10:07,755
+Evet.
+
+382
+01:10:10,707 --> 01:10:26,188
+Şimdi acaba diyorum, bu mantıkla ben size iki tane daha ek okuma vereceğim ama şu mantıkla bu paperlara bir kez daha baksanız da,
+
+383
+01:10:27,547 --> 01:10:33,367
+biraz daha detaylı bir şekilde benim anlattığımın bir tık ötesine geçecek tarzda baksanız da,
+
+384
+01:10:34,996 --> 01:10:54,476
+Bir sonraki dersimizde ben size bundan böyle bu paperla alakalı birkaç tane can alıcı nokta diye düşündüğüm noktada bir şeyler sorsam siz de böyle beni mutlu edecek, sevinilecek tarzda nokta atışı hocam şöyle hocam böyle diye cevap verseniz nasıl olur?
+
+385
+01:10:55,796 --> 01:11:13,096
+Hocam, ekstra bir tane verseniz, biz de eksiklerimizi tamamlamış olsak, mesela [öğrenci] arkadaşımız bu paper okuyamamış, ben diğerini okuyamadım. Şimdi iki tane verirseniz biz onlara çalışmaktan yine bunlara bakamayacağız.
+
+386
+01:11:13,096 --> 01:11:20,156
+Seni kırmayayım, önden bir tane verelim, olur hiç sorun değil. Bir tane verelim. Hiç sorun değil.
+
+387
+01:11:20,376 --> 01:11:23,016
+Biz de tamamlamaya çalışalım, eksik kaldığımızı.
+
+388
+01:11:23,859 --> 01:11:42,679
+Tamam, peki. Anlaştık mı arkadaşlar? Yani burada samimiyetimi ve aslında sizin bu konudaki bilginizin artmasının beni ne kadar mutlu edeceğini anlamışsınızdır diye, bunu hissetmişsinizdir diye düşünüyorum.
+
+389
+01:11:42,679 --> 01:11:49,579
+Onun için uğraşıyorum. Yoksa hakikaten 3'er 4'er tane vermek sorun değil.
+
+390
+01:11:50,036 --> 01:12:10,556
+Ama sonrasında istediğimiz hedefe ulaşamayacağız. Tamam, hızımızı düşürelim. Ama sizde ne olur? Ben paper verme hızını veyahut da onun volümünü azaltayım ama siz çalışma hızınızı ve buradan bilgi edinme volümünüzü arttırın. Anlaştık mı?
+
+391
+01:12:12,532 --> 01:12:14,772
+Anlaştık hocam. Ben bir şey söyleyebilir miyim?
+
+392
+01:12:15,112 --> 01:12:15,332
+Tabii.
+
+393
+01:12:15,752 --> 01:12:39,372
+Hocam, dediniz ya şimdi haftaya hani bu iki paper'ı da okuyun, gelin hem onun üzerinde konuşalım diye. Şimdi şöyle bir durum oldu yani bunu olumlu olarak ifade etmek istiyorum. Ben bu paper'ları okumuştum. Çok derinle inemedim hani kavramsız olarak ama mesela siz böyle bir giriş yaptınız. Kafada birçok şey daha iyi oturdu. Sonrasında belki tekrar elden geçirmek daha böyle iyi olabilir yani dediğiniz şeyi desteklemek için söylüyorum. Çok daha güzel oldu. Daha iyi anladım yani konuyu.
+
+394
+01:12:39,796 --> 01:12:41,036
+Tamam, sevindim o zaman.
+
+395
+01:12:41,036 --> 01:12:42,496
+İkinci paperda özellikle.
+
+396
+01:12:43,275 --> 01:12:45,796
+Tamam, sevindim o zaman [öğrenci]. Harika.
+
+397
+01:12:47,796 --> 01:12:50,716
+Bu durumda hepinize iyi akşamlar diliyorum.
+
+398
+01:12:50,716 --> 01:12:52,056
+Bir şey daha sorabilir miyim?
+
+399
+01:12:52,775 --> 01:12:58,095
+Ben bir tanesini okuyamadığım için yüklememiştim. Haftaya yüklesem olur mu?
+
+400
+01:12:58,235 --> 01:12:59,816
+Yükleyebilirsin, sorun değil. Yükle.
+
+401
+01:13:00,115 --> 01:13:06,235
+Yani önemli olan yüklemen anladıysan, şu anda konuşmamızdan şey yapabilecek duruma geldiysen yükle.
+
+402
+01:13:06,868 --> 01:13:10,648
+Bir okuyup yükleyeceğim. Yani özetini çıkarmaya çalışacağım hocam.
+
+403
+01:13:10,888 --> 01:13:12,167
+Tamam, anlaştık o zaman.
+
+404
+01:13:12,208 --> 01:13:13,247
+Teşekkürler hocam.
+
+405
+01:13:13,288 --> 01:13:16,528
+Ben teşekkür ederim. Haydi bakalım. İyi akşamlar.
+
+406
+01:13:16,528 --> 01:13:16,988
+İyi akşamlar.
+
+407
+01:13:18,427 --> 01:13:20,048
+Görüşürüz. Sağ olun arkadaşlar.
