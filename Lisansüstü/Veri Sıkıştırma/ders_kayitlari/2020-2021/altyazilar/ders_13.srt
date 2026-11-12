@@ -1,0 +1,2115 @@
+1
+00:03:47,156 --> 00:03:49,456
+Günaydın hocam. İyi, teşekkür ederim.
+
+2
+00:03:49,456 --> 00:03:50,736
+Günaydın hocam.
+
+3
+00:03:52,736 --> 00:03:56,676
+Dönemin sonuna geldik. Artık bitiyor.
+
+4
+00:03:58,156 --> 00:04:04,216
+Sevinsem mi, üzüsem mi bilemiyorum. Ama galiba seviniyorum bitiyor diye.
+
+5
+00:04:05,496 --> 00:04:12,996
+Şimdi gençler, Excel'ime bir dönüyorum bakayım. Bugün 6 kişiyiz.
+
+6
+00:04:13,972 --> 00:04:25,391
+Henüz üç tanenizden rapor geldi. Diğer üç tanesi de sunum yapacak herhalde. Burada olanlar evet diye cevap verirse sevinirim.
+
+7
+00:04:26,352 --> 00:04:28,052
+[kişisel bilgi]
+
+8
+00:04:30,992 --> 00:04:32,711
+[kişisel bilgi]
+
+9
+00:04:32,711 --> 00:04:35,112
+[kişisel bilgi]
+
+10
+00:04:35,812 --> 00:04:36,151
+[kişisel bilgi]
+
+11
+00:04:36,771 --> 00:04:38,951
+[kişisel bilgi]
+
+12
+00:04:40,819 --> 00:04:41,639
+[kişisel bilgi]
+
+13
+00:04:41,899 --> 00:04:45,379
+[kişisel bilgi]
+
+14
+00:04:45,939 --> 00:04:46,980
+[kişisel bilgi]
+
+15
+00:04:47,639 --> 00:04:48,500
+[kişisel bilgi]
+
+16
+00:04:50,039 --> 00:04:58,959
+[kişisel bilgi]
+
+17
+00:04:59,500 --> 00:05:00,379
+[kişisel bilgi]
+
+18
+00:05:00,899 --> 00:05:06,240
+[kişisel bilgi]
+
+19
+00:05:09,300 --> 00:05:19,280
+[kişisel bilgi]
+
+20
+00:05:22,867 --> 00:05:35,367
+[kişisel bilgi]
+
+21
+00:05:39,603 --> 00:06:02,863
+[kişisel bilgi]
+
+22
+00:06:04,435 --> 00:06:15,596
+[kişisel bilgi]
+
+23
+00:06:23,732 --> 00:06:43,951
+[kişisel bilgi]
+
+24
+00:06:43,951 --> 00:06:50,912
+[kişisel bilgi]
+
+25
+00:06:51,764 --> 00:07:02,403
+[kişisel bilgi]
+
+26
+00:07:03,163 --> 00:07:12,704
+[kişisel bilgi]
+
+27
+00:07:13,444 --> 00:07:18,244
+The presentation about comparison through language modeling.
+
+28
+00:07:49,363 --> 00:07:56,943
+And now I will talking about the general information about data compression.
+
+29
+00:07:57,384 --> 00:08:02,443
+The principle of data compression is to store data using a few bits as possible.
+
+30
+00:08:03,043 --> 00:08:06,423
+Often this just involves eliminating redundancy.
+
+31
+00:08:06,423 --> 00:08:17,343
+For example, instead of storing the large of sample A, when we thought of lossless data compression would store it.
+
+32
+00:08:46,580 --> 00:08:50,580
+Şimdi de Lossling and Lossy Comparison.
+
+33
+00:08:50,580 --> 00:08:52,580
+Comparison data,
+
+34
+00:08:52,580 --> 00:08:55,580
+Comparison original data.
+
+35
+00:08:55,956 --> 00:09:00,716
+Decompersed data mean decompress, decompress data.
+
+36
+00:09:00,716 --> 00:09:06,396
+When original data equals decompress data, the conversion is lossless.
+
+37
+00:09:06,396 --> 00:09:11,796
+When original data not equal decompress data, the conversion is lossless.
+
+38
+00:09:11,796 --> 00:09:19,596
+For example, of lossless compression, such as TEX5L is zero.
+
+39
+00:09:23,956 --> 00:09:34,956
+İlk olarak, tx-comberbergen. İlk tx-comberbergen, lossless-comberbergen, is essential.
+
+40
+00:09:34,956 --> 00:09:42,956
+Properl tx-comberbergen, kubbersars, such as Zeb and Kumbers, are based on the Hulman Coding Method.
+
+41
+00:09:42,956 --> 00:09:50,956
+This method symbol and embryos hashing for storing the code table, and we will explain in the next slides.
+
+42
+00:09:53,107 --> 00:09:59,107
+And now, I talking about language model based text comparison.
+
+43
+00:09:59,107 --> 00:10:00,000
+What is...
+
+44
+00:10:00,000 --> 00:10:13,000
+Language Modeling. Language Modeling is the use of various statical and probabilistic techniques to determine the probability of give sequence of word occurring in a sentence.
+
+45
+00:10:13,000 --> 00:10:24,000
+So, Language Models analyze body of text data to provide basis for this word prediction. They are used in natural language processing applications.
+
+46
+00:10:26,419 --> 00:10:34,579
+ve şimdi, how language modeling works. Language modeling works by the steps.
+
+47
+00:10:35,731 --> 00:10:42,771
+İlk yöre, language model determines word probability by analyzing text data.
+
+48
+00:10:42,771 --> 00:10:51,971
+So interpret this data by feeding it through an algorithm that establishes a role for context in natural language.
+
+49
+00:10:51,971 --> 00:11:00,451
+So the model applies the roles in language text to accurately predict or produce a new sentence.
+
+50
+00:11:00,451 --> 00:11:03,731
+And the model essentially learns the features and characters.
+
+51
+00:11:11,796 --> 00:11:17,115
+Şimdi, bu konuyu örneğe bakalım.
+
+52
+00:11:17,115 --> 00:11:24,076
+Bu konuyu örneğe, modern, natural language processing application.
+
+53
+00:11:24,076 --> 00:11:28,355
+Bu konuyu örneğe, machines dek bilgisayar alakalı bir şekilde,
+
+54
+00:11:28,355 --> 00:11:31,876
+bir şekilde, bir şekilde, bir şekilde, bir şekilde,
+
+55
+00:11:31,876 --> 00:11:36,355
+bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde,
+
+56
+00:12:06,323 --> 00:12:15,023
+And now, what's the document? Corpus and Tribank. Document, a newspaper article, novel, patent,
+
+57
+00:12:15,023 --> 00:12:24,263
+scientific paper, and blog post, comment stated update, and Twitter. And Corpus is a collection
+
+58
+00:12:24,263 --> 00:12:31,383
+of documents, or online collection of text and speech. And Tribank is annotated corpus,
+
+59
+00:12:31,383 --> 00:12:34,263
+words are annotated with part of speech and sentence.
+
+60
+00:12:53,908 --> 00:13:03,448
+Şimdi, basic probability. Probability theory is predicting how likely it is that something will happen.
+
+61
+00:13:03,448 --> 00:13:12,248
+And the probability is number between 0 and 1. Probability friction, P probability for A,
+
+62
+00:13:12,248 --> 00:13:18,608
+mean that how likely the event happens and is number between 0 and 1.
+
+63
+00:13:21,908 --> 00:13:43,084
+ve ve
+
+64
+00:13:44,083 --> 00:13:58,943
+BA, the probability of the event A, does not depend on the other event. And this means for BA by B, this reads as the probability of given that we noun B.
+
+65
+00:14:00,916 --> 00:14:05,896
+Şimdi enneğe. Enneğe. Enneğe, a
+
+66
+00:14:05,896 --> 00:14:11,816
+language model that assigns probabilities to sentences and sequences of words. Enneğe, a
+
+67
+00:14:11,816 --> 00:14:19,016
+sequence of n, a classifed to unigram, bigram, trigram. Unigram is a single word sequence
+
+68
+00:14:19,016 --> 00:14:22,016
+of words, like a please or term.
+
+69
+00:14:22,672 --> 00:14:31,672
+Bgram is a two-word sequence of words like, please turn, turn your or your homework.
+
+70
+00:14:32,340 --> 00:14:40,440
+Enneagram 3-word sequence of words, like a police ternure or ternure hemwork.
+
+71
+00:14:40,440 --> 00:14:46,440
+We can use enneagram models to estimate the probability of the last word on enneagram,
+
+72
+00:14:46,440 --> 00:14:51,940
+given the previous word and also to assign probabilities to entire word sequence.
+
+73
+00:14:53,524 --> 00:15:19,659
+Bu, bu
+
+74
+00:15:38,131 --> 00:15:44,531
+Öğrençler, Hoveman Coding.
+
+75
+00:15:44,531 --> 00:15:49,651
+Öğrençler, Dr. David A. Hoveman, 1952.
+
+76
+00:15:49,651 --> 00:16:03,091
+Öğrençler, M.K.
+
+77
+00:16:06,131 --> 00:16:17,644
+ve daha çok daha çok daha çok daha çok daha çok daha çok daha çok daha çok daha çok daha çok daha çok daha çok daha çok daha çok daha çok daha çok daha çok daha çok daha çok daha çok daha çok daha çok daha çok daha çok daha çok daha çok daha çok daha çok daha çok daha çok daha çok daha çok daha çok daha çok daha çok daha çok daha çok daha çok daha çok daha çok daha çok daha çok daha çok daha çok daha çok daha çok daha çok daha çok daha çok daha çok daha çok daha çok daha çok daha çok daha çok daha çok daha çok daha çok daha çok daha çok daha çok daha çok daha çok daha çok daha çok daha çok daha çok daha çok daha çok daha çok daha çok daha çok daha çok daha çok daha çok daha çok daha çok daha çok daha çok daha çok daha çok daha çok daha çok daha çok daha çok daha çok daha çok daha çok daha çok daha çok daha çok daha çok daha çok daha çok daha çok daha çok daha çok daha çok daha çok daha çok daha çok daha çok daha çok daha çok daha çok daha çok daha çok daha çok daha çok daha çok daha çok
+
+78
+00:16:17,652 --> 00:16:24,372
+Bir step, gathers count all symbol x, x, x, x.
+
+79
+00:16:25,052 --> 00:16:28,892
+Then find the two symbols x1 and x2 with a fuse count.
+
+80
+00:16:29,512 --> 00:16:34,052
+Then merge these two symbols into a new composite symbol x,
+
+81
+00:16:34,372 --> 00:16:38,012
+link to x1 with a1 and to x2 with a2.
+
+82
+00:16:38,012 --> 00:16:43,632
+If more than one symbol remains, records the second.
+
+83
+00:16:44,292 --> 00:16:45,652
+Otherwise, we have...
+
+84
+00:16:45,652 --> 00:16:51,211
+Huffman Code'i var, hsymbol x encoded by the sequence of it, the link that lead down
+
+85
+00:16:51,211 --> 00:16:54,812
+a composite symbol to that.
+
+86
+00:17:03,668 --> 00:17:22,268
+And now on the slide, the equation gave the entropy, this equation gave the entropy and this equation gave the perplexity.
+
+87
+00:17:22,268 --> 00:17:23,068
+Sorry.
+
+88
+00:17:24,915 --> 00:17:42,455
+And here I gave example about Huffman tree. I built Huffman tree from this probability and then extract the coding for A and B, C, D and E.
+
+89
+00:17:42,455 --> 00:17:50,516
+And then computed the average bit length from the question and the entropy from the question, as you see.
+
+90
+00:17:54,420 --> 00:17:58,420
+Şimdi, my algoritma.
+
+91
+00:17:58,420 --> 00:18:03,420
+My algoritma çalışıyor.
+
+92
+00:18:03,859 --> 00:18:09,719
+1. Tren, a language model for a unigram, a bigram, and a tigram.
+
+93
+00:18:10,219 --> 00:18:16,059
+For each bigram find the probability of the third word being any absurd word or a noun word.
+
+94
+00:18:16,059 --> 00:18:21,419
+For each bigram build a Hoffman tree based on the distribution of the third word.
+
+95
+00:18:22,079 --> 00:18:29,379
+Build a unigram Hoffman tree for the word based on their probabilities.
+
+96
+00:18:29,940 --> 00:18:56,812
+ve bu adı veren bir adı veren bir adı veren bir adı veren bir adı veren bir adı veren bir adı veren bir adı veren bir adı veren bir adı veren bir adı veren bir adı veren bir adı veren bir adı veren bir adı veren bir adı veren bir adı veren bir adı veren bir adı veren bir adı veren bir adı veren bir adı veren bir adı veren bir adı veren bir adı veren bir adı veren bir adı veren bir adı veren bir adı veren bir adı veren bir adı veren bir adı veren bir adı veren bir adı veren bir adı veren bir adı veren bir adı veren bir adı veren bir adı veren bir adı veren bir adı veren bir adı veren bir adı veren bir adı veren bir ad
+
+97
+00:18:57,491 --> 00:18:58,931
+Faya anlayışlayın.
+
+98
+00:19:02,387 --> 00:19:27,563
+Bu, her programda, her programda, her programda, her programda, her programda, her programda, her programda, her programda, her programda, her programda, her programda, her programda, her programda, her programda, her programda, her programda, her programda, her programda, her programda, her programda, her programda, her programda, her programda, her programda, her programda, her programda, her programda, her programda, her programda, her programda, her programda, her programda, her programda, her programda, her programda, her programda, her programda, her programda, her programda, her programda, her programda, her programda, her programda, her programda, her programda, her programda, her programda, her programda, her programda, her programda, her programda, her programda, her programda, her programda, her programda, her
+
+99
+00:19:29,748 --> 00:19:36,748
+ve
+
+100
+00:20:09,364 --> 00:20:23,364
+In the slide, I gave information about extension specific context and sliding context window that used in our algorithm. The extension,
+
+101
+00:20:26,364 --> 00:20:27,364
+the sun,
+
+102
+00:20:28,819 --> 00:20:56,819
+Bu bölümde dekleri
+
+103
+00:21:24,948 --> 00:21:31,948
+ve bu programı test edilmiştir. Bu programı test edilmiştir.
+
+104
+00:21:31,948 --> 00:21:33,948
+Bu programı test edilmiştir.
+
+105
+00:21:33,948 --> 00:21:42,948
+3BK send text, test text, 3BK send validation text, Bulb send text, Bulb send validation text.
+
+106
+00:21:45,395 --> 00:21:51,836
+Bu, GZEB'in
+
+107
+00:21:51,836 --> 00:21:53,935
+ve bu
+
+108
+00:21:53,935 --> 00:22:03,147
+bu
+
+109
+00:22:05,940 --> 00:22:21,440
+Konklusion, using training a language model to estimate the probability of words appearing after a certain program and then building a half-minute tree of that and implementing a character-based comparison for a noun word.
+
+110
+00:22:22,260 --> 00:22:28,600
+So, obtaining a very high accuracy when categorizing the words using a very simple technique.
+
+111
+00:22:29,680 --> 00:22:33,720
+And introducing a sliding window which in addition...
+
+112
+00:22:34,387 --> 00:22:45,387
+bu
+
+113
+00:22:59,763 --> 00:23:03,763
+Ve seni çok teşekkür ederim.
+
+114
+00:23:24,468 --> 00:23:37,147
+Evet, arkadaşınıza sorusu olan var mı? Benim yok. Evet, her zamanki gibi yine kimsenin sorusu yok. Teşekkür ediyorum sana.
+
+115
+00:23:37,728 --> 00:23:39,248
+Ben teşekkür ederim hocam.
+
+116
+00:23:39,248 --> 00:23:42,488
+Evet, şerri stop edersen.
+
+117
+00:23:42,688 --> 00:23:43,048
+Tamam.
+
+118
+00:23:43,048 --> 00:23:50,028
+Arkadaşımız sabah. Sabah alalım.
+
+119
+00:23:50,488 --> 00:23:50,988
+Evet hocam.
+
+120
+00:23:52,051 --> 00:23:52,931
+Günaydın Hücağım.
+
+121
+00:23:53,031 --> 00:23:57,971
+Günaydın. Bu arada [öğrenci] geldi mi? Hayır, [öğrenci] meydanda yok.
+
+122
+00:23:59,391 --> 00:23:59,711
+Okey.
+
+123
+00:24:03,539 --> 00:24:10,539
+Tamam, başlayabilirsin. Bir de orayı İstanbul yazmış ya. Hayret. Tamamdır.
+
+124
+00:24:11,480 --> 00:24:21,580
+Tamam. My seminar address, DZ lossless compressions using recurrent networks.
+
+125
+00:24:24,100 --> 00:24:30,500
+In this slide, there is a brief summary of why to do this work.
+
+126
+00:24:31,092 --> 00:24:49,852
+İntrodyan, there has been a tremendous surge in the amount of data generated, new types of data formats such as 3D VR data, point cloud data for autonomous driving mapping.
+
+127
+00:24:53,875 --> 00:24:55,875
+...
+
+128
+00:25:16,468 --> 00:25:32,307
+Jay Raissman proposed arythmatic coding, which is an efficient procedure for achieving the entropy bound for noun distribution.
+
+129
+00:25:35,307 --> 00:25:37,196
+Problem Statement
+
+130
+00:25:38,291 --> 00:25:48,652
+Fırsız, with unknown distribution, adaptive variants of arithmetic encoding, have also been designed,
+
+131
+00:25:48,652 --> 00:25:57,652
+which is tried to compress by learning the conditional k-gram model distribution.
+
+132
+00:25:58,867 --> 00:26:05,528
+Bu çöpüle yüksek ölçüde k
+
+133
+00:26:26,708 --> 00:26:43,488
+Now, arm of the work. LSTM-GRU-based models are good at capturing long-term dependencies, predict the next character work very well, and improve lossless compression.
+
+134
+00:26:45,628 --> 00:26:46,688
+Now.
+
+135
+00:26:47,155 --> 00:27:06,495
+What does the DeepZeb mean? The DeepZeb performs lossless compression and consists of two major DeepZeb blocks, RNN-based probability estimator and arithmetic coder.
+
+136
+00:27:07,028 --> 00:27:19,028
+İrnir, a neural network-based block actor acts as a conditional probability estimator for the next sample given the past.
+
+137
+00:27:20,028 --> 00:27:29,028
+N-arithmetic code uses this conditional probability for optimal compression decompression.
+
+138
+00:27:29,779 --> 00:27:54,980
+You must know the compression size LAE, average number of the bits used in bare samples, is very close to the normalized cross entropy loss of the RNN-based estimator and can give us from this option.
+
+139
+00:27:59,988 --> 00:28:01,988
+Models Framework.
+
+140
+00:28:01,988 --> 00:28:10,988
+The model framework is as follows. Distribution as output, Arithmetic Coder, State.
+
+141
+00:28:10,988 --> 00:28:11,988
+Sorry.
+
+142
+00:28:17,268 --> 00:28:19,268
+Ne oldu?
+
+143
+00:28:19,268 --> 00:28:21,268
+Sorry Hoca.
+
+144
+00:28:21,268 --> 00:28:29,268
+Model Framework, the model framework follows distribution as output.
+
+145
+00:28:29,268 --> 00:28:37,268
+The RNA-based model outputs distribution over the alphabet set,
+
+146
+00:28:37,268 --> 00:28:41,268
+which is the input to the arithmetic encoder.
+
+147
+00:28:41,971 --> 00:29:00,011
+Arithmetic encoder state, arithmetic encoder can be imagined as a face FSM, which keeps the range state, which is based on us in the RNN.
+
+148
+00:29:00,372 --> 00:29:08,332
+The value in this figure are divided between 0 to 1.
+
+149
+00:29:09,491 --> 00:29:17,932
+ve bu bölümde bölümde bölümde bulunduğumuz var.
+
+150
+00:29:37,428 --> 00:29:53,848
+Causality of input. The RNN estimator needs to be causal and can have input features based only on the previously encoding samples.
+
+151
+00:29:53,848 --> 00:29:59,988
+Widz update. The width update if performance should be perfect.
+
+152
+00:30:07,000 --> 00:30:13,000
+Şimdi, ekodik ve ekodik operasyon.
+
+153
+00:30:13,000 --> 00:30:19,000
+Eksik ve ekodik operasyonu örnekleri.
+
+154
+00:30:22,836 --> 00:30:28,836
+İlk başlayalım, a defailti probability distribution estimator.
+
+155
+00:30:28,836 --> 00:30:33,836
+İlk başlayalım, S0.
+
+156
+00:30:33,836 --> 00:30:42,836
+Bu, decoder can decode the first sample.
+
+157
+00:30:43,796 --> 00:30:52,715
+Bu aritmelerin ve RNN-Etsimator'ı bilgisayar verilmiştir.
+
+158
+00:30:52,715 --> 00:31:02,875
+İtlerinde, bu aritmelerin aritmelerin aritmelerin verilmiştir.
+
+159
+00:31:05,844 --> 00:31:16,844
+We see the MY input S0, S1, S2. All these inputs in the first stage they enter to R and N.
+
+160
+00:31:17,844 --> 00:31:27,844
+And arithmetic operation EQ for it with other probability until the data comes out compression data.
+
+161
+00:31:28,844 --> 00:31:31,844
+In this figure, decoder framework.
+
+162
+00:32:01,236 --> 00:32:05,236
+Experiments with a Synthetik Dataset.
+
+163
+00:32:05,236 --> 00:32:09,236
+Experiment with a Synthetik Dataset.
+
+164
+00:32:09,236 --> 00:32:19,236
+With non-entropy. Entropy acts as a lower bound on the compressions ratio.
+
+165
+00:32:19,236 --> 00:32:28,236
+This is the gauge the performance of different models against this ideal bound.
+
+166
+00:32:29,652 --> 00:32:38,112
+Synthetik Dataset. We experiment with the following Synthetik Dataset.
+
+167
+00:32:38,112 --> 00:32:41,951
+Number one, IID Sources.
+
+168
+00:32:42,367 --> 00:32:57,367
+İd-İ-İD Sources with a variety of distributions. Markov-K Sources. Markov-K Sources are zero-entropy sources with Markov-K of K.
+
+169
+00:32:57,367 --> 00:33:07,367
+They are governed by this and experiments the models which we
+
+170
+00:33:07,488 --> 00:33:19,688
+Explore our eyes follows. Number one, give them CHRN, give them CHGRU, give them FET.
+
+171
+00:33:21,048 --> 00:33:22,908
+[öğrenci] bir şey sorabilir miyim?
+
+172
+00:33:24,948 --> 00:33:25,627
+Evet hocam.
+
+173
+00:33:25,627 --> 00:33:33,988
+X-Slight'larında 3D Virtual Reality datasında çalışılacak diye bir şey vardı.
+
+174
+00:33:34,516 --> 00:33:55,536
+Yanılıyor muyum? Pardon heyecanım. İlk slide'ını açar mısın birincisini? Excel. Birinci slide'ını açar mısın? Birinci slide. Tamam hocam. Sayfa page 1. Page 1. Evet hocam.
+
+175
+00:34:00,276 --> 00:34:01,235
+Page 1.
+
+176
+00:34:02,935 --> 00:34:03,895
+Nasıl hocam?
+
+177
+00:34:03,895 --> 00:34:12,556
+Evet. Şimdi bak ilk paragrafta diyor ki, şurada 3D VR Data var ya.
+
+178
+00:34:13,735 --> 00:34:15,975
+Evet hocam, 3D VR Data.
+
+179
+00:34:15,975 --> 00:34:23,796
+Evet, bunun üzerinde çalışılan bir makale mi bu? Üç boyutlu Virtual Reality Datası'nda mı çalışıyor?
+
+180
+00:34:26,356 --> 00:34:29,936
+Pardon hocam, I can't understand you. What do you mean?
+
+181
+00:34:29,936 --> 00:34:36,316
+Şuradaki makalede kullanılan data, görüntü datası mı, text mi?
+
+182
+00:34:37,996 --> 00:34:39,996
+Evet hocam, bu makala.
+
+183
+00:34:41,676 --> 00:34:43,636
+Görüntü datasında mı çalışıyor?
+
+184
+00:34:45,756 --> 00:34:49,756
+Tamam, sen devam et. Ben anlayacağım ileride. Tamam, devam et sen.
+
+185
+00:34:50,756 --> 00:34:51,856
+Pardon, text.
+
+186
+00:34:51,856 --> 00:34:52,456
+Text.
+
+187
+00:34:54,068 --> 00:34:59,068
+Tekst. Tamam. Tamam. Tamam. Tamam.
+
+188
+00:34:59,068 --> 00:35:01,068
+Cipher 6.
+
+189
+00:35:27,668 --> 00:35:38,988
+Consider Vanilla RNN-Paste 128-cell-deb-z CH-RNN model on Markov-K sources.
+
+190
+00:35:39,507 --> 00:35:59,028
+İmplementation is as follows. Only random seed is stored. State preservation weights straining is replaced. Single pass. This is another one, types of RNN used in this maqala.
+
+191
+00:36:00,707 --> 00:36:06,547
+Vanilla RNN-based model. In this figure, pre-
+
+192
+00:36:06,900 --> 00:36:13,900
+...de bu
+
+193
+00:36:13,900 --> 00:36:27,344
+...
+
+194
+00:36:27,344 --> 00:36:45,564
+Surprised. However, the model is not able to learn at all dependencies more than 30 times steps away. And this performance, no compression for Markov 35.
+
+195
+00:36:49,684 --> 00:36:54,684
+LSTN-GRU-Based Character Level Models.
+
+196
+00:36:54,684 --> 00:37:02,684
+This graph shows the performance of the DeepZip-CHGRU.
+
+197
+00:37:02,684 --> 00:37:10,684
+DeepZip-CHGRU is able to compress Marko 15 Cerses.
+
+198
+00:37:14,467 --> 00:37:18,467
+...
+
+199
+00:37:11,411 --> 00:37:18,411
+Bu, daha iyi bir performansı
+
+200
+00:37:18,411 --> 00:37:22,411
+ve çizgi bir şekilde
+
+201
+00:37:22,411 --> 00:37:24,411
+50.
+
+202
+00:37:24,411 --> 00:37:26,411
+Bu,
+
+203
+00:37:30,771 --> 00:37:47,532
+Compression of DeepZep performance GZIP. In this table, compression of DeepZep performance with other compress is able to compress Markov-18 sources sum-extended.
+
+204
+00:37:48,532 --> 00:37:57,951
+Consider the DeepZep-Fit model, which has as input passed 15 samples instead of any one.
+
+205
+00:37:58,900 --> 00:38:23,100
+At 5-4 gram context count, the DeepZip model for difficult sources like Markov 140, then DeepZip models outperform GZIB, an adaptive arithmetic encoder, models for Markov case sources.
+
+206
+00:38:31,603 --> 00:38:46,804
+Experiments on practical dataset. In this table, we see compression of GZ-Performance, PRNG, and real dataset.
+
+207
+00:38:51,923 --> 00:39:11,324
+Praktikals Dataset, PSRM, MN, HOTR Prize Dataset, KNWik9, HGP, and experiment this in the table.
+
+208
+00:39:12,179 --> 00:39:20,379
+All this data is not able to format better, perform better on the text dataset.
+
+209
+00:39:20,379 --> 00:39:26,439
+Possibly because text data does not have very long dependence.
+
+210
+00:39:27,079 --> 00:39:36,960
+Really has dependence beyond between 100 characters to sentence.
+
+211
+00:39:43,539 --> 00:40:02,439
+Konklusion, the experiments that performed manually using two different models, a character-level GRU model and a future-based GRU model. Both of the models performed a same.
+
+212
+00:40:03,155 --> 00:40:23,628
+...signif...
+
+213
+00:40:25,235 --> 00:40:36,876
+Bu sorunlarla, bu sorunlarla daha iyi bir şekilde çalışmaların.
+
+214
+00:40:41,427 --> 00:40:56,527
+Teşekkür ederiz. Ben başlangıçta yanlış anlamışım. Sadece üç boyutlu görüntülerde çalışılan bir çalışma diye anlamışım.
+
+215
+00:40:56,527 --> 00:41:06,647
+Halbuki ortaya attıkları yöntem çok farklı veri setlerinde denemişler. Tekste de, kromozom bioinformatik datasında da.
+
+216
+00:41:07,956 --> 00:41:25,356
+Wikipedia datalarında denenmiş bir çalışma başarıları da gayet iyiymiş. Evet, arkadaşınıza sorusu olan var mı? Her zamanki gibi. Okey, seni de uğurlayalım. Sıradaki arkadaşımızı alalım.
+
+217
+00:41:25,356 --> 00:41:26,576
+Evet hocam.
+
+218
+00:41:27,016 --> 00:41:27,296
+Evet.
+
+219
+00:41:27,716 --> 00:41:28,516
+Günaydın hocam.
+
+220
+00:41:28,896 --> 00:41:29,635
+Günaydın.
+
+221
+00:41:49,235 --> 00:41:53,275
+Merhaba Hujam, Merhaba Arkadaşlar. Ben [öğrenci].
+
+222
+00:41:53,275 --> 00:42:02,036
+Bugün I introduce my seminar about multi-layered image presentation application to image compression.
+
+223
+00:42:02,036 --> 00:42:14,835
+This multi-layered presentation technique for an image is first into a support position of current layer, smooth region layer and texture layer.
+
+224
+00:42:15,059 --> 00:42:23,259
+Bu
+
+225
+00:42:30,516 --> 00:42:44,336
+Each layer encoded dependently with a different transform or basis at a different bitrate and the combination of the compressed layer can always be reconstructed in a meaningful way.
+
+226
+00:42:45,268 --> 00:42:51,708
+Bu birçok birçok kullanımda, birçok kullanımda ve video.
+
+227
+00:42:51,708 --> 00:43:00,027
+Bu birçok kullanımda, birçok kullanımda, birçok kullanımda.
+
+228
+00:43:01,952 --> 00:43:08,252
+An image can be decomposed as the sum of two layers, cartoon image and texture map.
+
+229
+00:43:08,252 --> 00:43:23,852
+Cartoon image provides a description of the silent part or ace inside the image and the texture map permits to fall in the texture in the regions enclosed by edge.
+
+230
+00:43:24,083 --> 00:43:36,583
+Anadvantage can be obtained by using local cosine rules over woovlet to encoded image containing a predict structure.
+
+231
+00:43:36,583 --> 00:43:44,083
+The concept of multilayer representation has been successfully used to remove noise from image.
+
+232
+00:43:44,083 --> 00:43:52,083
+The image is first coded with woovlet and then the residual is then encoded in a useless manner with woovlet.
+
+233
+00:43:52,083 --> 00:43:59,083
+Bu slide, I show the general view of this technique.
+
+234
+00:44:00,695 --> 00:44:07,695
+...signif...
+
+235
+00:43:59,668 --> 00:44:03,708
+Bu koncept olarak, bu koncept olarak,
+
+236
+00:44:03,708 --> 00:44:04,708
+bu koncept olarak,
+
+237
+00:44:04,708 --> 00:44:07,548
+birçok birçok birçok birçok birçok.
+
+238
+00:44:07,548 --> 00:44:11,228
+Bu birçok birçok birçok,
+
+239
+00:44:11,228 --> 00:44:14,668
+birçok birçok,
+
+240
+00:44:14,668 --> 00:44:27,668
+birçok,
+
+241
+00:44:27,668 --> 00:44:34,668
+ve bu şekilde
+
+242
+00:44:34,668 --> 00:44:51,500
+bir şekilde
+
+243
+00:44:53,460 --> 00:45:00,539
+İlk olarak, bu
+
+244
+00:45:21,460 --> 00:45:49,460
+Bu, R1'in de bu
+
+245
+00:45:49,460 --> 00:45:56,460
+Bu, bu, R1'in
+
+246
+00:46:01,492 --> 00:46:17,492
+And the second step is the main loop of the algorithm. We have carried the approximation of i up to step n-1 and rn be the residual of the approximation at step n-1.
+
+247
+00:46:17,492 --> 00:46:28,492
+And the best basis that provides the optimal approximation of residual n with p and bit is constructed from the library alone.
+
+248
+00:46:30,547 --> 00:46:38,747
+N is the set of indices of the basis function that constitute the best basis.
+
+249
+00:46:38,747 --> 00:46:52,047
+Finally, we reconstruct an approximation of i using the n-1 compressed residual in the image, residual 0, residual 1, residual 2 summation.
+
+250
+00:46:52,047 --> 00:46:57,547
+And this figure shows the main loop of the algorithm.
+
+251
+00:47:50,483 --> 00:47:57,483
+Bu tarzı
+
+252
+00:48:10,643 --> 00:48:37,835
+Bir de bu bölümde bu bölümde bir bölümde bir bölümde bir bölümde bir bölümde bir bölümde bir bölümde bir bölümde bir bölümde bir bölümde bir bölümde bir bölümde bir bölümde bir bölümde bir bölümde bir bölümde bir bölümde bir bölümde bir bölümde bir bölümde bir bölümde bir bölümde bir bölümde bir bölümde bir bölümde bir bölümde bir bölümde bir bölümde bir bölümde bir bölümde bir bölümde bir bölümde bir bölümde bir bölümde bir bölümde bir bölümde bir bölümde bir bölümde bir bölümde bir bölümde bir bölümde bir bölümde bir bölümde bir bölümde bir bölümde bir bölümde bir bölümde bir bölümde bir bölümde bir bölümde bir bölümde bir bölümde bir bölümde bir bölümde bir
+
+253
+00:48:37,907 --> 00:48:44,907
+İlna image is a Wublet. İlna image can be easily coded in Wublet transform.
+
+254
+00:48:46,907 --> 00:49:01,907
+This slide shows that when I implemented local cosine and Wublet with two different images, Roof image and Lina image.
+
+255
+00:49:02,496 --> 00:49:31,496
+O
+
+256
+00:49:32,083 --> 00:49:43,724
+Bu, ilk attıration, the pace-wise smooth operations of the intensity, very few of lead coefficients residual R0.
+
+257
+00:49:43,724 --> 00:49:54,523
+The second attıration compresses residual R1, I minus R residual, local cosine basis texture layer compression,
+
+258
+00:50:00,000 --> 00:50:03,960
+ve R1-R1'e
+
+259
+00:50:03,960 --> 00:50:29,519
+ve R1'e
+
+260
+00:50:22,003 --> 00:50:29,943
+Ancak bu
+
+261
+00:50:43,380 --> 00:51:10,880
+Bu şekilde kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullan
+
+262
+00:51:10,880 --> 00:51:20,880
+A cost function implies the actual scalar quantization and entropy coding and it's much faster to compute.
+
+263
+00:51:20,880 --> 00:51:35,880
+It is composed of two terms, the cost of coding, the sign and the magnitude of the non-zero output level of the scalar quantizer and the cost of coding, the location of the non-zero output levels.
+
+264
+00:51:37,588 --> 00:51:42,588
+Bu konatizasyon, Laplacian-based scalar konatizasyon ve
+
+265
+00:51:42,588 --> 00:51:47,588
+ordurlustra ve coöveçte ve entropi konatizasyon.
+
+266
+00:51:47,588 --> 00:51:53,420
+Bu konatizasyonl
+
+267
+00:51:54,291 --> 00:52:17,612
+Bu, bu
+
+268
+00:52:19,284 --> 00:52:26,284
+ve kodlar ve kodlar implementan ve kodlar ve kodlar
+
+269
+00:52:26,284 --> 00:52:29,284
+ve kodlar için bir kodlar için bir kodlar.
+
+270
+00:52:42,992 --> 00:52:51,152
+Öncelikli bir
+
+271
+00:52:56,532 --> 00:53:01,851
+İlk örnek olarak, bu örnek olarak, bu örnek olarak, bu örnek olarak,
+
+272
+00:53:01,851 --> 00:53:04,731
+bu örnek olarak, bu örnek olarak, bu örnek olarak,
+
+273
+00:53:04,731 --> 00:53:08,292
+bu örnek olarak, bu örnek olarak,
+
+274
+00:53:08,292 --> 00:53:19,652
+bu örnek olarak, 0.125 bit per px multilayar ve PSNR olarak 25.23 dB,
+
+275
+00:53:24,532 --> 00:53:31,532
+Bu image, bu image, birçok ve bu şekilde, birçok ve bu şekilde, birçok ve bu şekilde, birçok ve bu şekilde,
+
+276
+00:53:31,532 --> 00:53:35,532
+bu image, birçok ve bu şekilde, birçok ve bu şekilde, birçok ve bu şekilde,
+
+277
+00:53:35,532 --> 00:53:42,532
+birçok ve bu şekilde, birçok ve bu şekilde, birçok ve bu şekilde,
+
+278
+00:53:47,007 --> 00:53:55,087
+İlk özel bir seçim var, bu da
+
+279
+00:53:55,087 --> 00:53:57,927
+bu da
+
+280
+00:53:57,927 --> 00:53:59,927
+ve bu da
+
+281
+00:54:07,728 --> 00:54:34,728
+İntinsizde
+
+282
+00:54:33,684 --> 00:54:40,284
+Texture on the tablecloth is also well-lander.
+
+283
+00:54:40,284 --> 00:54:52,084
+When I compare between figure 6 and 7, unfortunately, some krisikos patterns appear on the face of the birbara in this figure.
+
+284
+00:54:52,084 --> 00:54:59,443
+These patterns come from blocks that are at the boundary of the face and the scar.
+
+285
+00:55:01,347 --> 00:55:02,347
+İntinsizde
+
+286
+00:54:59,476 --> 00:55:23,372
+Bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu
+
+287
+00:55:24,467 --> 00:55:44,235
+Bu, bu
+
+288
+00:55:46,324 --> 00:56:14,324
+The third example is a clown image. This image contains a mixture of piece with smooth region, as well as the predict structure. This image is friendly to Weblet packets. Weblet packets provide optimal library for encoding the second layer. This figure shows the decoded clown using SPI-HT and the multi-layer algorithm.
+
+289
+00:56:14,324 --> 00:56:20,124
+Bu sbihd image daha fazla ileride bir ileride bir ileride bir ileride.
+
+290
+00:56:20,124 --> 00:56:26,244
+Özellikle, o klası ile deklar ve klası ile deklar.
+
+291
+00:56:26,244 --> 00:56:32,003
+Bu klası ile deklar ve klası ile deklar.
+
+292
+00:56:32,052 --> 00:56:42,612
+SPIHT was also unable to preserve the texture of the wallpaper or the texture of the clown's shirt.
+
+293
+00:56:42,612 --> 00:56:54,292
+Other where the multi-layer engorthing reconstructs an image that is better in terms of visual quality than the image reconstructed by the WevNet coder.
+
+294
+00:56:54,643 --> 00:57:22,643
+Bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda
+
+295
+00:57:22,643 --> 00:57:23,583
+A kodartıys.
+
+296
+00:57:24,211 --> 00:57:28,251
+Bu yeni bir paradağın, bu paradağın,
+
+297
+00:57:28,251 --> 00:57:31,211
+bu paradağın, bu paradağın,
+
+298
+00:57:31,211 --> 00:57:34,652
+bir paradağın,
+
+299
+00:57:34,652 --> 00:57:36,251
+ve paradağın,
+
+300
+00:57:36,251 --> 00:57:37,851
+bir paradağın.
+
+301
+00:57:37,851 --> 00:57:40,172
+Bu paradağın,
+
+302
+00:57:40,172 --> 00:57:45,291
+bu paradağın,
+
+303
+00:57:45,291 --> 00:57:48,092
+bir paradağın,
+
+304
+00:57:52,211 --> 00:58:18,507
+Bu örneğe bakalım.
+
+305
+00:58:18,739 --> 00:58:29,299
+Görüntü işlemi üzerine o speed algoritmasıyla ilgili bir makaleymiş. Sen sınava mı girecektin yoksa proje mi yapacaktın?
+
+306
+00:58:30,379 --> 00:58:32,519
+[kişisel bilgi]
+
+307
+00:58:32,519 --> 00:58:33,639
+[kişisel bilgi]
+
+308
+00:58:34,079 --> 00:58:34,819
+[kişisel bilgi]
+
+309
+00:58:34,819 --> 00:58:40,359
+[kişisel bilgi]
+
+310
+00:58:43,987 --> 00:59:01,127
+[kişisel bilgi]
+
+311
+00:59:01,127 --> 00:59:04,127
+[kişisel bilgi]
+
+312
+00:59:04,980 --> 00:59:11,360
+[kişisel bilgi]
+
+313
+00:59:11,360 --> 00:59:16,180
+[kişisel bilgi]
+
+314
+00:59:16,940 --> 00:59:17,880
+[kişisel bilgi]
+
+315
+00:59:18,619 --> 00:59:25,039
+[kişisel bilgi]
+
+316
+00:59:25,539 --> 00:59:26,760
+[kişisel bilgi]
+
+317
+00:59:26,760 --> 00:59:28,460
+[kişisel bilgi]
+
+318
+00:59:29,260 --> 00:59:29,900
+[kişisel bilgi]
+
+319
+00:59:31,099 --> 00:59:31,720
+Hadi bakalım.
+
+320
+00:59:32,244 --> 00:59:40,404
+Seninki de Text Compression, Mobile Phone Using, Browsealer, Move to Front. Genel bir şey veriyorsun bize. Tamam.
+
+321
+00:59:40,404 --> 00:59:41,684
+Tamam hocam.
+
+322
+00:59:43,884 --> 00:59:45,464
+Bir dakika lütfen.
+
+323
+00:59:48,104 --> 00:59:59,724
+Üstünmeyi doğru yazalım lütfen. Bu E değil, Sıkıştırma değil, Sıkıştırma. Şimdi ben özellikle Türkçe konuşuyorum.
+
+324
+01:00:00,000 --> 01:00:12,639
+Eğer bir Türk üniversitesinde okuyorsanız, öyle ya da böyle online eğitim bitip Türkiye'ye geldiğinizde az çok Türkçe iletişim de kurmanız lazım.
+
+325
+01:00:13,172 --> 01:00:27,112
+Bu önemli bir şey. Ne kadar panik olduğumuzun farkındayım. Gerçi ben de başka bir ülkeye gidip o ülkenin gülüyle ilgili bir şeyler yapsam aynı şeyleri ben de hissederdim.
+
+326
+01:00:27,112 --> 01:00:40,052
+Ama özellikle Türkçe konuşuyorum ki böyle anlamaya çalışıp biraz da geliştirin diye. Yoksa hiç siz de girmezseniz Türkçe şeylere geliştirme şeyiniz hiç kalmaz.
+
+327
+01:00:41,172 --> 01:00:51,012
+Belki daha basit kelimeler kullanmam gerekiyor ama onu da seçmek çok zor akış içerisinde. Peki, seni dinliyoruz. Hadi.
+
+328
+01:00:51,512 --> 01:01:01,532
+[kişisel bilgi]
+
+329
+01:01:16,724 --> 01:01:31,764
+Compression is a process of transforming data to code sets functioned to reduce the usage of memory, whether or not by reducing data quality and accelerating data transmission time.
+
+330
+01:01:32,443 --> 01:01:42,563
+The data can be text, picture, audio and video. Many algorithms can be used to compress data. It can be classified into two classes.
+
+331
+01:01:43,315 --> 01:01:46,315
+LoseLess ve LoseLess.
+
+332
+01:01:46,315 --> 01:01:57,227
+Textfiles are still dominant to be used in many storage devices, including mobile storage device,
+
+333
+01:01:57,652 --> 01:02:25,516
+Bu, bu
+
+334
+01:02:25,780 --> 01:02:31,820
+Tradition. The writer's application will be the case study of the research paper.
+
+335
+01:02:33,140 --> 01:02:42,780
+Mythology. There are four scheme combination of three algorithms that will be conducted in this research paper.
+
+336
+01:02:43,572 --> 01:03:07,212
+Örneğe, Scheme 1 will only adapt arythmatic coding. Scheme 2 will function move to front code and arithmetic coding. Scheme 3 will employ Burroughs-Willer transform and arithmetic coding without move to front. Scheme 4 will use the Burroughs-Willer transform, move to front code and arithmetic coding.
+
+337
+01:03:08,332 --> 01:03:10,212
+Arithmetic coding
+
+338
+01:03:11,347 --> 01:03:24,147
+Bypasses the idea of replacing an input symbol with specific code. It replaces the sequences of symbols in the input file with single arithmetic number.
+
+339
+01:03:24,147 --> 01:03:30,347
+More longer input messages, more bits are needed in the arithmetic number.
+
+340
+01:03:32,307 --> 01:03:40,368
+An arithmetik coding process is a single number less than 1 and greater than or equal to 0.
+
+341
+01:03:41,619 --> 01:03:50,259
+Arithmetic Coding, its single number can be uniquely decoded to create the exact stream of symbols.
+
+342
+01:03:50,259 --> 01:03:56,900
+To construct the output number, the symbols are assigned to set of probabilities.
+
+343
+01:03:57,559 --> 01:04:07,339
+Each character is assigned the portion of the 0 to 1 range that corresponds to its probability of appearance.
+
+344
+01:04:08,244 --> 01:04:18,744
+Move to Front Code. Move to Front Code is the transformed algorithm that does not compress data but can help to reduce redundancy.
+
+345
+01:04:18,744 --> 01:04:29,744
+The main idea is that each symbol in the data is replaced by its index in the stack of recently used symbols.
+
+346
+01:04:30,867 --> 01:04:45,667
+Long sequences of identical symbols will be replaced by zeros, whereas symbol that don't appear in a long time will be replaced by large number.
+
+347
+01:04:45,667 --> 01:04:47,067
+Thus,
+
+348
+01:04:47,443 --> 01:05:02,403
+At the end of the data is transformed into a sequence of integers. If the data exhibits a lot of local correlation, then these integers tend to be small.
+
+349
+01:05:03,411 --> 01:05:25,371
+Burroughs-Wheeler Transform. The Burroughs and Wheeler Transform BWT is a block sorting loseless transform. BWT was invented in 1983 and published as Teknikal Report in 1994 by Michael Burroughs and David Wheeler.
+
+350
+01:05:26,036 --> 01:05:33,436
+BWT can permute a text into a new sequence which is usually more compressible.
+
+351
+01:05:33,436 --> 01:05:45,436
+The remarkable thing about BWT is not only that it generates more easily compressible output, but also that is reversible.
+
+352
+01:06:10,420 --> 01:06:36,600
+Now let's see how BWT does work. The following sample performs the work of BWT. The original string is FATHIMAHAS. This will take three steps. Step one, shift rotate to the left one by one character, then the result can be seen in the next rows.
+
+353
+01:06:36,831 --> 01:07:03,679
+Bu, bu
+
+354
+01:07:03,679 --> 01:07:17,000
+Minus 1 times for each input string. Put in our mind that n equal number of characters in the first string.
+
+355
+01:07:20,755 --> 01:07:35,075
+Step 2, now we will sort all the rows of the previous matrix in ascending order with rightmost element of each row being in the last significant position.
+
+356
+01:07:36,355 --> 01:07:42,395
+So, we will sort upon the last character of all these rows.
+
+357
+01:08:07,860 --> 01:08:11,860
+Konsequently, we obtain the transform matrix.
+
+358
+01:08:13,160 --> 01:08:25,360
+So, we take the output from step one and reordering it.
+
+359
+01:08:26,659 --> 01:08:32,760
+So now we have the letter A in here and here and here.
+
+360
+01:08:35,636 --> 01:08:49,736
+After the letter A, it comes the letter F, after H, but we see here that there are two strings, ends with H, here and here.
+
+361
+01:08:49,736 --> 01:09:02,775
+That means we must see the next character of them, A and T. So the A will be the first, then the H.
+
+362
+01:09:03,667 --> 01:09:15,667
+İ, İ, M, S, T ve Yüküden.
+
+363
+01:09:15,667 --> 01:09:24,667
+So, from the output from step 1, we construct output from step 2.
+
+364
+01:09:24,667 --> 01:09:28,319
+Step 3
+
+365
+01:09:28,319 --> 01:09:34,819
+Burroughs-Wilard Transform is the last column of the sorted list in step 2.
+
+366
+01:09:34,819 --> 01:09:48,319
+So we take the last letter of every string and put it as a new column. It will be the output of this method.
+
+367
+01:09:51,828 --> 01:09:57,508
+Bu bir adı A-A-A-F-H-H-I-M-S-T.
+
+368
+01:09:58,068 --> 01:10:00,748
+Bu nedenle bu adı bu adı?
+
+369
+01:10:19,796 --> 01:10:44,012
+Bu bir soru ile bu soru ile bu soru ile bu soru ile bu soru ile bu soru ile bu soru ile bu soru ile bu soru ile bu soru ile bu soru ile bu soru ile bu soru ile bu soru ile bu soru ile bu soru ile bu soru ile bu soru ile bu soru ile bu soru ile bu soru ile bu soru ile bu soru ile bu soru ile bu soru ile bu soru ile bu soru ile bu soru ile bu soru ile bu soru ile bu soru ile bu soru ile bu soru ile bu soru ile bu soru ile bu soru ile bu soru ile bu soru ile bu soru ile bu soru ile bu soru ile bu soru ile bu soru ile bu soru ile bu soru ile bu soru ile bu soru ile bu soru ile bu soru ile bu soru ile bu soru ile bu soru ile bu soru ile bu soru ile bu soru ile bu sor
+
+370
+01:10:44,724 --> 01:11:11,051
+A'ın a
+
+371
+01:11:11,828 --> 01:11:14,328
+3, 4, 5.
+
+372
+01:11:14,328 --> 01:11:19,427
+We put the number 5 and put it in the front.
+
+373
+01:11:19,427 --> 01:11:24,128
+After that, the letter H is come.
+
+374
+01:11:24,128 --> 01:11:29,028
+We put its number 7 and put it in the front.
+
+375
+01:11:29,028 --> 01:11:36,927
+When it comes second time, it has the number 0 and it's already in the front.
+
+376
+01:11:38,036 --> 01:12:03,180
+Sonra da, i'ye alfabeti ile alfabeti ile alfabeti ile alfabeti ile alfabeti ile alfabeti ile alfabeti ile alfabeti ile alfabeti ile alfabeti ile alfabeti ile alfabeti ile alfabeti ile alfabeti ile alfabeti ile alfabeti ile alfabeti ile alfabeti ile alfabeti ile alfabeti ile alfabeti ile alfabeti ile alfabeti ile alfabeti ile alfabeti ile alfabeti ile alfabeti ile alfabeti ile alfabeti ile alfabeti ile alfabeti ile alfabeti ile alfabeti ile alfabeti ile alfabeti ile alfabeti ile alfabeti ile alfabeti ile alfabeti ile alfabeti ile alfabeti ile alfabeti ile alfabeti ile alf
+
+377
+01:12:05,043 --> 01:12:24,884
+Compression ratio will be calculated with this equation. Compression ratio equals size of a compressed file over size of original file multiplying by 100%.
+
+378
+01:12:25,395 --> 01:12:33,216
+Here in this research, the best compression algorithm has the smallest compression ratio.
+
+379
+01:12:34,003 --> 01:12:49,684
+Results, experimental data used in this research is the text file .txt of Hadith Sunan ibn Maja Bahasa translation, which has 32 kitab per chapter.
+
+380
+01:12:49,684 --> 01:13:01,264
+Those kitab have been selected to show the file size variation. Table 1 shows the text file to be used in this experiment.
+
+381
+01:13:03,859 --> 01:13:14,020
+İzlediğiniz için, aritmatiç coding. Bu, tabl 2, Result Compression Scheme 1, only adapts the aritmatiç coding.
+
+382
+01:13:14,579 --> 01:13:28,979
+In this case, when we use aritmatiç coding alone to replace the sequences of symbols in the input file with single float number, give compression ratio
+
+383
+01:13:29,619 --> 01:13:48,579
+58.9% is the first, it's the best results. In table three, it's the result of compression scheme to move to front code and arithmetic coding.
+
+384
+01:14:11,731 --> 01:14:16,711
+Ama yürüz, cümle
+
+385
+01:14:16,711 --> 01:14:18,672
+54.12%.
+
+386
+01:14:18,672 --> 01:14:22,111
+Tablet 4,
+
+387
+01:14:22,111 --> 01:14:25,731
+yürüz
+
+388
+01:14:24,692 --> 01:14:30,492
+Bu, Boro's wheeler ve Arithmetic Coding'in
+
+389
+01:14:32,291 --> 01:14:41,692
+Bersi compression ratio here is 59.1%.
+
+390
+01:14:41,692 --> 01:14:49,291
+Bersi compression ratio is 76.37%.
+
+391
+01:14:51,380 --> 01:14:55,220
+Bu, Boros-Willer transfer,
+
+392
+01:14:55,220 --> 01:14:58,039
+bu, front code ve aritmetik coding
+
+393
+01:14:58,039 --> 01:15:01,880
+ve bu sonunlar iyi bir sonuçlar.
+
+394
+01:15:01,971 --> 01:15:24,072
+Bu, boros-willer-transform, to re-arrange input text, become string of sorted character before move to front code, and arithmetic coding, improve compression ratio to the best result, 32.62%.
+
+395
+01:15:25,395 --> 01:15:53,395
+Ve bu bölümde bölüm
+
+396
+01:15:53,395 --> 01:15:57,915
+İnteger code by move to front code.
+
+397
+01:15:58,376 --> 01:16:00,296
+Bu birçok kompression result
+
+398
+01:16:00,296 --> 01:16:02,215
+Borough-Wheeler transform,
+
+399
+01:16:02,635 --> 01:16:03,855
+move to front code
+
+400
+01:16:03,855 --> 01:16:05,175
+and arithmetik coding
+
+401
+01:16:05,175 --> 01:16:09,235
+has been used for mobile phone application.
+
+402
+01:16:09,895 --> 01:16:11,355
+This is the conclusion
+
+403
+01:16:11,355 --> 01:16:14,536
+of the research.
+
+404
+01:16:14,996 --> 01:16:26,076
+After reading this paper deeply and clearly for several times, there are some notes that must be discussed as paper review.
+
+405
+01:16:27,380 --> 01:16:54,923
+İlk olarak, bu paper ve tüm
+
+406
+01:17:17,844 --> 01:17:27,844
+We can see here that the name of table 10 and page 5 in the paper should be table 9 because there is no table 9 in the paper.
+
+407
+01:17:27,844 --> 01:17:41,844
+There are empty cells in table 10 and the writers didn't explain the reason for the emptiness of these cells, especially the results of these cells would be important.
+
+408
+01:17:43,123 --> 01:17:45,644
+Thank you very much for listening to me.
+
+409
+01:17:47,644 --> 01:17:52,764
+Biz teşekkür ederiz. Arkadaşınıza soru söz olan var mı?
+
+410
+01:17:57,716 --> 01:18:04,036
+Peki, benim de yoktur sorum. Son arkadaşımızı alıyoruz.
+
+411
+01:18:07,036 --> 01:18:09,616
+[kişisel bilgi]
+
+412
+01:18:11,096 --> 01:18:12,636
+[kişisel bilgi]
+
+413
+01:18:12,656 --> 01:18:13,836
+[kişisel bilgi]
+
+414
+01:18:14,116 --> 01:18:15,436
+[kişisel bilgi]
+
+415
+01:18:15,936 --> 01:18:16,176
+[kişisel bilgi]
+
+416
+01:18:16,736 --> 01:18:17,556
+[kişisel bilgi]
+
+417
+01:18:34,036 --> 01:18:36,036
+[kişisel bilgi]
+
+418
+01:18:38,835 --> 01:18:45,036
+[kişisel bilgi]
+
+419
+01:18:45,036 --> 01:18:57,036
+[kişisel bilgi]
+
+420
+01:18:58,036 --> 01:18:59,036
+Introduction.
+
+421
+01:18:59,220 --> 01:19:06,600
+Compression algorithms reduce redundant data in order to decrease the amount of storage needed for that data.
+
+422
+01:19:06,912 --> 01:19:14,572
+Data compression is an appealing method for lowering communication costs by properly utilizing existing bandwidth.
+
+423
+01:19:14,572 --> 01:19:31,112
+The amount of digital data communicated via the internet has increased at an parallel rate over the previous decade, presenting text, photos, video, sound, computer programs, and other types of data.
+
+424
+01:19:31,112 --> 01:19:32,908
+With this trend...
+
+425
+01:19:33,011 --> 01:19:46,151
+Predicted to continue, it makes sense to focus research efforts on inventing algorithms that can make the most available network by compressing data to its smallest possible size.
+
+426
+01:19:46,631 --> 01:19:52,171
+The goal of this research study is to solve the problem of loosest text compression.
+
+427
+01:19:52,471 --> 01:19:59,931
+The researchers developed an intelligent reversible transformations that can be applied to a source text.
+
+428
+01:20:26,323 --> 01:20:43,443
+A strategy called Intelligent Dictionary Based Encoding, IDBE, is discussed to achieve this. It has been observed that a preprocessing of the text prior to conventional compression will improve the compression efficiency much better.
+
+429
+01:20:44,884 --> 01:20:51,884
+Teknik Üniversitesi Bilgisayar Mühendisliği,
+
+430
+01:20:51,884 --> 01:20:56,884
+ve
+
+431
+01:20:59,155 --> 01:21:16,256
+The other class called Dictionary Method. It represents several symbols as one codeword. Compression performance based on length of codeword. Replace codewords and other fragments of tek with an index to an entry in a dictionary.
+
+432
+01:21:17,619 --> 01:21:36,020
+Related work. Through the usage of internet, digital libraries, and information retrieval system, there has been an extraordinary development of textual information in the last decade. Text data contributes nearly 45% of all internet traffic.
+
+433
+01:21:36,467 --> 01:21:46,887
+For Nuzlik's text compression, a number of complex algorithms has been developed, including the Hoffman, Arithmetic, LZ families, and Unix compress.
+
+434
+01:21:47,699 --> 01:22:14,680
+Burroughs-Wheeler Transform, BWT, is an algorithm that takes a block of data and rearranges it using a sorting algorithm. The resulting output block contains exactly the same data elements that it started with, differing only in their ordering. The transformation is reversible, meaning the original ordering of data elements can be restored with no loss of fidelity.
+
+435
+01:22:15,699 --> 01:22:36,220
+BWT is perform on an entire block of data at once. The output of the BWT transform is usually piped through a move to front stage, then a run encoder stage, a run length encoder stage, and finally an entropy encoder, normally arithmetic or half-one coding.
+
+436
+01:22:39,123 --> 01:23:04,587
+Bu faktörde, bu faktörde, bu faktörde, bu faktörde, bu faktörde, bu faktörde, bu faktörde, bu faktörde, bu faktörde, bu faktörde, bu faktörde, bu faktörde, bu faktörde, bu faktörde, bu faktörde, bu faktörde, bu faktörde, bu faktörde, bu faktörde, bu faktörde, bu faktörde, bu faktörde, bu faktörde, bu faktörde, bu faktörde, bu faktörde, bu faktörde, bu faktörde, bu faktörde, bu faktörde, bu faktörde, bu faktörde, bu faktörde, bu faktörde, bu faktörde, bu faktörde, bu faktörde, bu faktörde, bu faktörde, bu faktörde, bu faktörde, bu faktörde, bu faktörde, bu faktörde, bu faktör
+
+437
+01:23:06,068 --> 01:23:16,408
+Arithmetic Encoding, RLE Encoding, MTF, which means move to front, and last BWT. We will get the output fired.
+
+438
+01:23:17,108 --> 01:23:22,087
+An alternatif yapıcı bu, bu, bir süreçte
+
+439
+01:23:22,087 --> 01:23:23,608
+ve Sörcetik'in
+
+440
+01:23:40,372 --> 01:23:48,172
+Star encoding works by creating large dictionary of commonly used words expected in the input files.
+
+441
+01:23:48,812 --> 01:23:54,392
+The dictionary must be prepared in advance and must be known to the compressor and decompressor.
+
+442
+01:23:54,392 --> 01:24:03,712
+Each word in the dictionary has a star encoded equivalent in which the star character replaces as many letters as possible.
+
+443
+01:24:04,272 --> 01:24:08,292
+Ideally, the most common words will have the highest percentage.
+
+444
+01:24:30,195 --> 01:24:40,795
+As an example, a section of text from Project Göttingberg version of Romeo on Juliet look like this in an original text.
+
+445
+01:24:41,536 --> 01:24:46,435
+Running this text through the star encoder yields the following text.
+
+446
+01:24:49,619 --> 01:24:58,720
+We can clearly see that the encoded data has exactly the same number of characters, but is dominated by stars.
+
+447
+01:24:58,720 --> 01:25:10,720
+A later modification for star encoding called LIPT, Length Index Preserving Transform, whose genesis can be traced to several other similar transforms.
+
+448
+01:25:15,188 --> 01:25:16,748
+Problem Statement
+
+449
+01:25:16,748 --> 01:25:30,048
+In this article, researchers recommend a better encoding approach that will result in a higher compression ratio. The goal of this work is to create a better transformation that will result in more compression.
+
+450
+01:25:30,048 --> 01:25:30,828
+The
+
+451
+01:25:50,963 --> 01:26:17,063
+Methodology. The authors have explained the basic approach of their compression methods in the previous sentence, but they transformed the same sentence as an example to explain the point further. The objective of this paper is to develop a better transformation, yielding grating compression. The basic philosophy of compression is to transform text into some intermediate form.
+
+452
+01:26:17,492 --> 01:26:39,551
+Most people will have no problem to read it. This is because our visual perception system recognizes each word with approximate signature pattern for the word opposite to an actual and exact sequence of letters. And we have dictionary in our brain, which associates each misspelled word with corresponding correct word.
+
+453
+01:26:39,988 --> 01:26:47,588
+The signature for the word for computing machinery could be arbitrary as long as they are unique.
+
+454
+01:26:47,588 --> 01:27:01,728
+The algorithm that was developed is a two-step process consisting of step one, make an intelligent dictionary. Step two, encode the input text data.
+
+455
+01:27:03,088 --> 01:27:04,788
+The encoding algorithm.
+
+456
+01:27:40,083 --> 01:27:43,023
+Fizil de kod olarak,
+
+457
+01:27:43,023 --> 01:28:04,652
+kod olarak,
+
+458
+01:28:04,659 --> 01:28:23,260
+Ascii 252, representing a code of length 2, and so on. Write the actual code into the output file. Read the next character and neglect it if it is a space. If it is any other character, make it the first character of the next token and go back to step B.
+
+459
+01:28:23,260 --> 01:28:31,800
+After inserting a marker character, Ascii 255 to indicate the absence of a space.
+
+460
+01:28:32,532 --> 01:28:52,292
+Else, for this f, write the one character talking. If the character is one of the ASCII characters, 251, 202, 255, write the character once more to show that it is a part of the text and not a marker.
+
+461
+01:28:54,572 --> 01:28:57,332
+Dictionary making algorithm. Start.
+
+462
+01:28:59,215 --> 01:29:01,215
+kod olarak,
+
+463
+01:28:57,743 --> 01:29:01,943
+Procedure, make dictionary with multiple source files as input.
+
+464
+01:29:02,503 --> 01:29:05,884
+First, extract all words from input files.
+
+465
+01:29:06,443 --> 01:29:11,123
+If a word already in the table, increment the number of occurrence by one.
+
+466
+01:29:11,503 --> 01:29:15,203
+Else, add it to the table and set the number of occurrence to one.
+
+467
+01:29:15,636 --> 01:29:20,056
+Sördü tablo by frequency of occurrences in descending order.
+
+468
+01:29:20,056 --> 01:29:23,256
+Start giving codes using the following method.
+
+469
+01:29:23,256 --> 01:29:32,356
+First, give the first 218 words the ASCII character 33 to 250 as the code.
+
+470
+01:29:32,724 --> 01:29:59,983
+Now, give the remaining word, each one, permutation of two of the ASCII characters in the range 33 to 250. Taken in order. If there are any remaining words, give them each one, permutation of three of the ASCII characters. And finally, if required, permutation of four characters. Create a new table having only word and their codes. Store this.
+
+471
+01:30:29,716 --> 01:30:41,236
+It is clear from the above sample data that the encoded text provide a better compressive format for a conventional BWT-based transformation model.
+
+472
+01:30:45,203 --> 01:30:55,363
+The performance issues such as bits per character and conversion time are compared for three cases.
+
+473
+01:30:55,363 --> 01:31:07,043
+First, simple BWT, BWT with the star encoding, and BWT with the proposed intelligent dictionary base encoding.
+
+474
+01:31:07,475 --> 01:31:14,475
+Bu, BWT'nin İDBE'yi görüntü ve diğer teknikleri ve
+
+475
+01:31:33,300 --> 01:31:49,300
+Bu bölümde BWT'e alın,
+
+476
+01:31:49,300 --> 01:31:52,300
+ve sınır.
+
+477
+01:31:52,300 --> 01:31:54,300
+Tablet2
+
+478
+01:32:00,020 --> 01:32:04,268
+Kanterbury'e korpsa, farklı birçok
+
+479
+01:32:07,764 --> 01:32:26,923
+Bu, bu
+
+480
+01:32:26,931 --> 01:32:34,231
+İndial channel, the reduction of transmission time is directly proportional to the amount of compression.
+
+481
+01:32:34,231 --> 01:32:44,091
+But in a typical internet scenario with fluctuating bandwidth, congestion, and protocols of packet switching, this does not hold true.
+
+482
+01:32:44,692 --> 01:32:54,152
+The results have shown excellent improvement in text data compression and added levels of security over the existing methods.
+
+483
+01:32:54,931 --> 01:32:59,931
+Bu önerilerin daha fazla projesi var.
+
+484
+01:33:00,931 --> 01:33:02,931
+[kişisel bilgi]
+
+485
+01:33:03,931 --> 01:33:05,931
+[kişisel bilgi]
+
+486
+01:33:08,931 --> 01:33:12,931
+[kişisel bilgi]
+
+487
+01:33:12,931 --> 01:33:14,931
+[kişisel bilgi]
+
+488
+01:33:14,931 --> 01:33:16,931
+[kişisel bilgi]
+
+489
+01:33:16,931 --> 01:33:17,931
+[kişisel bilgi]
+
+490
+01:33:18,292 --> 01:33:23,232
+[kişisel bilgi]
+
+491
+01:33:24,132 --> 01:33:31,412
+[kişisel bilgi]
+
+492
+01:33:33,352 --> 01:33:38,992
+[kişisel bilgi]
+
+493
+01:33:39,812 --> 01:33:44,732
+[kişisel bilgi]
+
+494
+01:33:47,188 --> 01:33:50,068
+Yoksa hepinize teşekkür ediyorum.
+
+495
+01:33:51,228 --> 01:33:52,988
+Thank you, thank you professor.
+
+496
+01:33:53,087 --> 01:33:54,827
+Final tarihimiz belli oldu.
+
+497
+01:33:57,488 --> 01:33:59,347
+Gelecek hafta zaten hocam.
+
+498
+01:33:59,967 --> 01:34:00,427
+Efendim?
+
+499
+01:34:01,047 --> 01:34:02,408
+Gelecek hafta sınav olacak.
+
+500
+01:34:02,408 --> 01:34:11,408
+Evet, pazartesi günü. Şimdi yeniden söylüyorum arkadaşlar. Yazılı sınava girecek olanlar...
+
+501
+01:34:11,764 --> 01:34:30,104
+Yazılı sınava girecek, klasik sınav gibi. Proje gösterecek olanlar, proje raporunu sınav evrakı olarak yükleyecekler. Onlara ayrı bir link açacağım. Oradan da bağlanıp bana projelerini gösterecekler. Tamam mı?
+
+502
+01:34:32,104 --> 01:34:32,743
+Anlaşıldı.
+
+503
+01:34:33,235 --> 01:34:39,395
+Tamam. Tamam. Tamam. Tamam. Hepinize iyi. Haftalar dileyim. Daha hafızlıyız.
+
+504
+01:34:39,395 --> 01:34:54,275
+Hocam, a question please. Evet. In English, if it is okay with you. We have another exam in the same day. There will be no problem for that. I mean, for the timing.
+
+505
+01:34:55,764 --> 01:35:01,264
+Aynı gün aynı saat yani sınav saatinde olacak projenin gösterimi de.
+
+506
+01:35:01,703 --> 01:35:02,743
+Aha tamam hocam.
+
+507
+01:35:03,023 --> 01:35:06,863
+Başka gün yok çünkü çapışabilir başka derslerinizle.
+
+508
+01:35:07,243 --> 01:35:08,123
+Aynı anda.
+
+509
+01:35:08,604 --> 01:35:09,443
+Thank you professor.
+
+510
+01:35:09,644 --> 01:35:10,604
+Tamam peki.
+
+511
+01:35:12,923 --> 01:35:17,304
+Tamam mıyız? [öğrenci]? Evet yok. Kendi bilir artık.
+
+512
+01:35:19,104 --> 01:35:20,703
+Peki şimdilik hoşçakalın o zaman.
+
+513
+01:35:20,703 --> 01:35:21,703
+Evet.
+
+514
+01:35:22,676 --> 01:35:28,456
+Final sınav kaç soru olacaktır? 4 mi? Daha fazla.
+
+515
+01:35:29,395 --> 01:35:31,296
+Ne demek istedin?
+
+516
+01:35:31,796 --> 01:35:33,115
+Yani kaç soru olacaktır?
+
+517
+01:35:33,256 --> 01:35:42,216
+Kaç soru olacak? Daha sonları hazırlamadım ama soruma göre zaman veririm. Üç de olabilir, dört de olabilir.
+
+518
+01:35:42,636 --> 01:35:45,556
+Aynen öyle. Çünkü iki saat sadece var.
+
+519
+01:35:46,036 --> 01:35:51,216
+Biliyorum, biliyorum. Merak etmeyin. Onları ayarlıyorum. Fazlasını da koyuyorum aslında.
+
+520
+01:35:51,756 --> 01:35:52,676
+Teşekkür ederiz hocam.
+
+521
+01:35:52,676 --> 01:35:54,695
+Tamam. Başka soru?
+
+522
+01:35:56,115 --> 01:36:09,775
+Hocam, projeyi kod üzerinde çalıştırıp göstereceksiniz. Slijde gerek yok.
+
+523
+01:36:10,136 --> 01:36:11,676
+Tamam, tamam. Teşekkürler hocam.
+
+524
+01:36:11,676 --> 01:36:22,655
+Tamam mı? Ama projede ne yaptığını, aldığın sonuçları rapor gibi yazacaksın, bir iki sayfalık. Onu sınav evrakı olarak yükleyeceksin.
+
+525
+01:36:23,380 --> 01:36:47,320
+Tamam. Tamam. Teşekkürler. Tamamdır. Ben yine size bir mail yazarım. Başka soru var mı? Var hocam. Evet. Hocam, yani projek rapor hakkında. İngilizce mi, Türkçe mi? Hiç fark etmez. Tamam. Tamam. Teşekkürler hocam. Başka? Kim bilir daha neler soracaksınız? Dur bakalım.
+
+526
+01:36:47,859 --> 01:36:55,779
+Hafta içinde anlarız. Ben yine genel bir özet olarak size mail atacağım. Tamam mı?
+
+527
+01:36:56,439 --> 01:36:57,719
+Tamam hocam.
+
+528
+01:36:58,179 --> 01:36:59,359
+Teşekkür ediyorum hocam.
+
+529
+01:36:59,399 --> 01:37:00,539
+Thanks a lot profesör.

@@ -1,0 +1,2263 @@
+1
+00:01:51,028 --> 00:01:54,668
+Arkadaşlar, günaydın hocam.
+
+2
+00:01:54,668 --> 00:01:57,308
+Bugün, kusura bakmayın.
+
+3
+00:01:59,808 --> 00:02:12,448
+Şimdi sizler bağlarına dururken, öncelikle şunu sormak istiyorum size. Bana projeyle ilgili bir sorunuz var mı?
+
+4
+00:02:14,484 --> 00:02:32,903
+Aralarda bana mailler atıyorsunuz. Yeniden üzerinden geçeyim. Ben artık Drive'da işaretlemiş olduğunuz o dosyaya bakacağım. Kimlerin sınava gireceğine, kimlerin de proje teslim edeceğine oradan takip edeceğim.
+
+5
+00:02:34,584 --> 00:02:41,024
+Sınava girecek olanlar baya hazırlansınlar.
+
+6
+00:02:41,460 --> 00:03:04,100
+Bazı biraz düşünmelerini gerektiren sorularda olabilir ama hepsi öyle olmayacak soruları. Projeye gösterecek olanlar ise ne yapacak? Bir kod yazacaklar yani algoritmayı yazacaklar. Mevcut bir şeyi bir yerden de alıp üzerinde modifikasyon da yapabilirler.
+
+7
+00:03:04,756 --> 00:03:26,175
+Bana, işte hocam input dosyam bu. Şöyle şöyle bir algoritma yöntem kullandım. Verdim inputu. İşte sıkıştırılmış hali bu. Sonra dekompresini, ters işlemini yapacağız. Bu da açtım. Orijinal hali de budur diye göstermesi gerekiyor.
+
+8
+00:03:26,707 --> 00:03:37,987
+Ve bu yaptığını da bir ya da iki sayfalık bir rapor haline getirip final sınav evrakı olarak sisteme yükleyecek.
+
+9
+00:03:41,108 --> 00:04:01,788
+Projelerini gösterirken onlara ayrı bir sesyon açacağım. Yani bu dersin bir sınavı gibi olacak. Klasik sınava girenler sınav evrakını indirecek, soruları çözecek, yükleyecek. Proje gösterecek olanlar ise sadece proje raporlarını yükleyecekler.
+
+10
+00:04:09,108 --> 00:04:35,927
+[kişisel bilgi]
+
+11
+00:04:36,372 --> 00:05:00,112
+Onu haftaya alacağım eğer yetişirse her şey. Bugün [öğrenci] var. Yine [öğrenci] ya da [öğrenci] var. [öğrenci] var. Allah'ım hep [öğrenci] bugün. [öğrenci] [öğrenci]. Bu da mı? Bunun M'si de mi [öğrenci]?
+
+12
+00:05:02,771 --> 00:05:21,331
+Evet, evet. O da mı? Evet hocam. Tamam. Evet, evet. Sen daha göndermedin raporunu. [öğrenci], sen de göndermedin. [öğrenci] da aramızda, onu gördüm açılırken. [öğrenci], sen de göndermedin.
+
+13
+00:05:21,851 --> 00:05:26,951
+Hocam, ben az önce gönderdim. Yeni. Öyle mi? Tamam. Raporunu göndermedim.
+
+14
+00:05:28,660 --> 00:05:29,700
+Şimdi gönderacağım.
+
+15
+00:05:30,080 --> 00:05:37,379
+Tamam, tamam. Yani bugün içinde, ders saati içinde gönderin. Sonumuzu yaptıktan sonra da gönderebilirsin.
+
+16
+00:05:38,440 --> 00:05:41,160
+Şimdi ben sözü ilk sırada [öğrenci]'e veriyorum.
+
+17
+00:05:43,860 --> 00:05:44,660
+[öğrenci]?
+
+18
+00:05:46,780 --> 00:05:47,580
+Nerede?
+
+19
+00:05:49,000 --> 00:05:51,920
+Valla sadece ilk isimler gözüktüğü için bilmiyorum.
+
+20
+00:05:52,720 --> 00:05:53,700
+[öğrenci] burada mısın?
+
+21
+00:05:55,187 --> 00:05:56,408
+[öğrenci]
+
+22
+00:06:00,435 --> 00:06:04,836
+Tanıyan arkadaşlar var mı? Ha [öğrenci] aşağıdasın, sesin kapalı.
+
+23
+00:06:08,627 --> 00:06:10,807
+Pardon hocam, internetten kısıldı.
+
+24
+00:06:11,627 --> 00:06:16,008
+Ha, tamam peki. O zaman seni hızlı bir şekilde alalım.
+
+25
+00:06:17,247 --> 00:06:19,327
+Tamam hocam, ekranım paylaşacak.
+
+26
+00:06:19,327 --> 00:06:25,747
+Paylaş, okey. Sözü sana bırakıyorum. Kaderin konusu neydi? Ona bir bakalım.
+
+27
+00:06:27,028 --> 00:06:34,028
+Full Resolution Image Compression with RNN. RNN'lerle Image Compression yapacak.
+
+28
+00:06:34,447 --> 00:06:35,187
+Ekranım geliyor mu?
+
+29
+00:06:36,084 --> 00:06:49,724
+Bir saniye ben Excel'i geliyor. Tamam hocam. Şu yan tarafı kapatıp fullscreen yaparsan ben de daha rahatlıkla. Okey, oldu. Söz senindir.
+
+30
+00:06:49,724 --> 00:06:51,384
+Tamam hocam.
+
+31
+00:06:52,180 --> 00:07:00,180
+[kişisel bilgi]
+
+32
+00:07:00,180 --> 00:07:13,180
+My presentation today about X-Plane paper for resolution image compression with recurrent neural network.
+
+33
+00:07:15,252 --> 00:07:36,252
+İmage comparison has traditionally been one of the tasks which neural network was suspect to be good at. But there was little evidence that it will be possible to train a single neural network that will be
+
+34
+00:08:00,211 --> 00:08:22,572
+Bu çalışma, bu çalışma, bu çalışma, bu çalışma, bu çalışma, bu çalışma, bu çalışma, bu çalışma, bu çalışma, bu çalışma, bu çalışma, bu çalışma, bu çalışma, bu çalışma, bu çalışma, bu çalışma, bu çalışma, bu çalışma, bu çalışma, bu çalışma, bu çalışma, bu çalışma, bu çalışma, bu çalışma, bu çalışma, bu çalışma, bu çalışma, bu çalışma, bu çalışma, bu çalışma, bu çalışma, bu çalışma, bu çalışma, bu çalışma, bu çalışma, bu çalışma, bu çalışma, bu çalışma, bu çalışma, bu çalışma, bu çalışma, bu çalışma, bu çalışma, bu çalışma, bu çalışma, bu çalışma, bu çalışma, bu çalışma, bu çalışma, bu çalışma, bu çalışma, bu çalışma, bu çalışma, bu çalışma, bu çalışma, bu çalışma
+
+35
+00:08:22,644 --> 00:08:27,144
+ve ekstrakt compact visual representation,
+
+36
+00:08:27,144 --> 00:08:30,144
+that can be used in other applications.
+
+37
+00:08:30,144 --> 00:08:31,944
+More recently,
+
+38
+00:08:32,115 --> 00:08:39,115
+Auto-Encode'nin bu problemiyle ilgili birleştir.
+
+39
+00:08:39,115 --> 00:08:46,115
+Bu birleştir on image size 64 x 64 px.
+
+40
+00:08:46,115 --> 00:08:49,115
+While non-variation recurrent neural network
+
+41
+00:08:49,115 --> 00:08:52,115
+were used to implement variable rate coding,
+
+42
+00:08:52,115 --> 00:08:54,115
+must image compression neural network
+
+43
+00:08:54,115 --> 00:08:58,115
+use a fixed compression rate based on the size
+
+44
+00:08:58,163 --> 00:09:15,052
+Bu çalışma yapıcı bir çalışma yapıcı.
+
+45
+00:09:30,816 --> 00:09:44,844
+Bu sorunlar, bu sorunlar, bu sorunlar, bu sorunlar, bu sorunlar, bu sorunlar, bu sorunlar, bu sorunlar, bu sorunlar, bu sorunlar, bu sorunlar, bu sorunlar, bu sorunlar, bu sorunlar, bu sorunlar, bu sorunlar, bu sorunlar, bu sorunlar, bu sorunlar, bu sorunlar, bu sorunlar, bu sorunlar, bu sorunlar, bu sorunlar, bu sorunlar, bu sorunlar, bu sorunlar, bu sorunlar, bu sorunlar, bu sorunlar, bu sorunlar, bu sorunlar, bu sorunlar, bu sorunlar, bu sorunlar, bu sorunlar, bu sorunlar, bu sorunlar, bu sorunlar, bu sorunlar, bu sorunlar, bu sorunlar, bu sorunlar, bu sorunlar, bu sorun
+
+46
+00:09:46,772 --> 00:10:01,932
+The background analysis, the figure shown here is the common image compression model consists of two significant parts, encoder and decoder.
+
+47
+00:10:02,707 --> 00:10:17,707
+Enkoder works to produce a compressed image from the input image F of X, Y after being transmitted through a channels. This compressed image entered to a decoder system shown in the figure.
+
+48
+00:10:19,707 --> 00:10:27,707
+This system compressed image will be reconstructed to produce an output image of F of X, Y.
+
+49
+00:10:28,032 --> 00:10:38,192
+Mapper work, transfer the input image into a specified format to remove interpixel redundancy.
+
+50
+00:10:38,192 --> 00:10:55,632
+This operation is reversible, meaning that information in the reconstructed image is the same as the original quantizer work to reduce psycho-visual data redundancy.
+
+51
+00:10:57,587 --> 00:11:22,408
+Now, the RNN, recurrent neural network. What is the RNN? RNN is a deep neural network architecture that has a deep structure in the temporal dimension. It has been widely used in time series modeling. It has three types of layers. The input X, the hidden layer S,
+
+52
+00:11:22,768 --> 00:11:28,988
+ve bu
+
+53
+00:11:28,988 --> 00:11:30,368
+bu
+
+54
+00:11:30,368 --> 00:11:32,408
+Rn-Skı
+
+55
+00:11:32,408 --> 00:11:34,808
+bu
+
+56
+00:11:34,808 --> 00:11:39,968
+aynı
+
+57
+00:11:52,884 --> 00:12:11,203
+RNNs keep two kinds of input, such as the present one and the past recent produce of the output new data RNNs also face the problem of vanishing gradient problem.
+
+58
+00:12:13,723 --> 00:12:18,443
+The LSTM long short term memory.
+
+59
+00:12:18,899 --> 00:12:34,480
+Long-short-term memory network represent advanced advancement with respect to the simple RNNs presented in the previous section.
+
+60
+00:12:35,480 --> 00:12:37,740
+LTSM address problem.
+
+61
+00:12:38,676 --> 00:12:47,316
+A problem of formation, drawback the RNN by adding additional interaction.
+
+62
+00:12:50,316 --> 00:12:51,356
+Capable.
+
+63
+00:14:55,539 --> 00:15:02,539
+İngilizce
+
+64
+00:15:17,364 --> 00:15:20,364
+İngilizce altyazıcı olarak,
+
+65
+00:15:20,364 --> 00:15:22,283
+ve dekoder network
+
+66
+00:15:22,283 --> 00:15:24,364
+birleştirme
+
+67
+00:15:24,364 --> 00:15:46,463
+ve dekoderin
+
+68
+00:15:40,371 --> 00:15:43,932
+Bu da tekoder görüntü de
+
+69
+00:15:43,932 --> 00:15:45,351
+tekörü de
+
+70
+00:15:45,351 --> 00:15:47,371
+single
+
+71
+00:15:47,371 --> 00:15:48,371
+iteration
+
+72
+00:15:48,371 --> 00:15:49,491
+of the middle.
+
+73
+00:15:49,491 --> 00:15:50,192
+This is a single
+
+74
+00:15:50,192 --> 00:15:51,271
+iteration of the middle.
+
+75
+00:15:51,271 --> 00:15:53,271
+Overview.
+
+76
+00:15:53,271 --> 00:15:56,271
+While the network
+
+77
+00:15:56,271 --> 00:15:58,192
+weights are
+
+78
+00:15:58,192 --> 00:15:59,192
+shared between
+
+79
+00:15:59,192 --> 00:15:59,871
+iteration,
+
+80
+00:15:59,871 --> 00:16:01,172
+the state
+
+81
+00:16:23,519 --> 00:16:31,919
+We can compactly represent a single iteration of our network as follows.
+
+82
+00:16:31,919 --> 00:16:36,519
+This is the equation of the support approach,
+
+83
+00:16:36,519 --> 00:16:42,120
+where DT and ET represent the decoder and encoder
+
+84
+00:16:42,120 --> 00:16:50,519
+with their state at iteration T, respectively BT.
+
+85
+00:16:51,443 --> 00:17:08,235
+Xt'in aileşir, y'eş
+
+86
+00:17:59,827 --> 00:18:27,536
+Bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir
+
+87
+00:18:49,907 --> 00:19:12,395
+Y'e 0'ı y
+
+88
+00:19:12,435 --> 00:19:19,435
+In additional reconstruction, which is more widely used in traditional image coding,
+
+89
+00:19:19,435 --> 00:19:28,435
+each iteration only tries to reconstruct the residual from the previous iteration.
+
+90
+00:19:28,980 --> 00:19:58,480
+Yükü 1.
+
+91
+00:19:56,980 --> 00:20:00,860
+Efficiency across a wide range of value.
+
+92
+00:20:02,599 --> 00:20:12,799
+The entropy coding, the entropy of the code generated during interface are not maximal
+
+93
+00:20:12,799 --> 00:20:18,980
+because the network is not explicitly designed to maximum entropy in this code.
+
+94
+00:20:50,963 --> 00:21:07,788
+ve h ve
+
+95
+00:21:09,428 --> 00:21:12,428
+The experiment result, the dataset.
+
+96
+00:21:12,428 --> 00:21:15,428
+In order to evaluate the recurrent model
+
+97
+00:21:15,428 --> 00:21:19,428
+of describe two sets of training data are used,
+
+98
+00:21:19,428 --> 00:21:24,428
+the first dataset is 32 by 32 dataset.
+
+99
+00:22:02,548 --> 00:22:07,548
+HVS'in
+
+100
+00:22:07,548 --> 00:22:13,548
+Arteçekte
+
+101
+00:22:13,548 --> 00:22:17,548
+Grün
+
+102
+00:22:17,548 --> 00:22:21,548
+LSTM
+
+103
+00:22:21,548 --> 00:22:22,548
+One shoot
+
+104
+00:22:22,548 --> 00:22:23,548
+Reconstruction
+
+105
+00:22:23,548 --> 00:22:24,548
+Additive
+
+106
+00:22:24,548 --> 00:22:26,548
+Reconstruction
+
+107
+00:22:26,548 --> 00:22:27,548
+Additive
+
+108
+00:22:27,548 --> 00:22:28,548
+Rescaled
+
+109
+00:22:28,548 --> 00:22:29,548
+Residual
+
+110
+00:22:30,336 --> 00:22:37,336
+ve bu son olarak,
+
+111
+00:22:42,324 --> 00:22:43,144
+Ön...
+
+112
+00:22:43,700 --> 00:22:45,700
+Bu tabla, bu tabla,
+
+113
+00:22:45,700 --> 00:22:47,700
+bu tabla,
+
+114
+00:22:47,700 --> 00:22:49,700
+hizmetiyle
+
+115
+00:22:49,700 --> 00:22:51,700
+bu tabla
+
+116
+00:22:51,700 --> 00:22:53,700
+bir tabla.
+
+117
+00:22:53,700 --> 00:22:55,700
+Bu tabla,
+
+118
+00:22:55,700 --> 00:22:59,700
+bu tabla,
+
+119
+00:22:59,700 --> 00:23:01,700
+32x32
+
+120
+00:23:01,700 --> 00:23:03,700
+tabla.
+
+121
+00:23:03,700 --> 00:23:05,700
+Bu tabla,
+
+122
+00:23:05,700 --> 00:23:09,700
+bu tabla,
+
+123
+00:23:31,251 --> 00:23:53,491
+The LSTM model with the residual scaling had the second highest MS-SSIM, while the residual GRU had the second highest PSNR HVS.
+
+124
+00:23:53,491 --> 00:23:57,491
+Multi-scaling structure similarity MS.
+
+125
+00:23:57,872 --> 00:24:22,451
+SSIM, as well established a metric for comparing lose image compression algorithm and the more recent peak signal to noise ratio. Human visual system PSNR and HVS, we apply MS, SSIM to each of the RGB channels.
+
+126
+00:24:22,816 --> 00:24:25,736
+İndependent, and average result.
+
+127
+00:24:25,736 --> 00:24:40,816
+İndir to rank models, use the aggregate measure computed as the area under the rate distortion curve AUC.
+
+128
+00:24:46,516 --> 00:24:52,316
+Bu da kodak'ın adıcısını, bu kodak'ın adıcısını,
+
+129
+00:24:52,316 --> 00:24:56,155
+bu adıcısını, bu kodak'ın adıcısını,
+
+130
+00:24:56,155 --> 00:24:58,716
+kodak'ın adıcısını,
+
+131
+00:24:58,716 --> 00:25:00,716
+bu kodak'ın adıcısını,
+
+132
+00:25:00,716 --> 00:25:05,276
+ve bu kodak'ın adıcısını,
+
+133
+00:25:05,276 --> 00:25:09,436
+bu kodak'ın adıcısını,
+
+134
+00:25:30,259 --> 00:25:34,259
+Yeni GPEG 420.
+
+135
+00:25:34,259 --> 00:25:40,259
+And the right column is our residual GRA one-shoot method.
+
+136
+00:25:40,531 --> 00:25:46,251
+Bir bitrate for our method are before entropy coding.
+
+137
+00:25:46,251 --> 00:25:52,411
+In first row, 0.25 bit per pixel.
+
+138
+00:25:52,411 --> 00:25:56,251
+Our results are more able to capture color,
+
+139
+00:25:56,251 --> 00:26:00,731
+not color blocking on JPEG.
+
+140
+00:26:00,731 --> 00:26:02,451
+In the second row,
+
+141
+00:26:02,900 --> 00:26:28,332
+Bir bitpere bir
+
+142
+00:26:29,779 --> 00:26:33,279
+Here is the comparison between the four images.
+
+143
+00:26:33,279 --> 00:26:35,779
+Here the resolution is solo.
+
+144
+00:26:35,779 --> 00:26:40,779
+Comparsion of the Kodak 5 image,
+
+145
+00:26:40,779 --> 00:26:48,279
+the top row is target 0.25 bit per pixel,
+
+146
+00:26:48,279 --> 00:26:51,779
+and the bottom row 3 and 4.
+
+147
+00:26:52,564 --> 00:27:10,188
+Birxel bir
+
+148
+00:27:10,259 --> 00:27:18,259
+İki videoda görüşmek üzere.
+
+149
+00:27:18,259 --> 00:27:21,259
+0.25 bit per pixel.
+
+150
+00:27:21,259 --> 00:27:24,259
+Our results are more able to capture.
+
+151
+00:27:46,963 --> 00:28:13,327
+Bu da bu
+
+152
+00:28:13,327 --> 00:28:21,347
+Bu, örneğe bir
+
+153
+00:28:21,347 --> 00:28:25,347
+yöntemler, bir yöntemler.
+
+154
+00:28:25,347 --> 00:28:35,147
+Bu, örneğe bir yöntemler.
+
+155
+00:28:35,539 --> 00:28:58,420
+Conclusion. A general architecture for compressing with RNN is presented a content-based residual scaling and a new variation of the GRL, which provide the highest PSNR HVS out of models trained on the high entropy database. Because our class of networks produce image…
+
+156
+00:29:11,887 --> 00:29:37,259
+Bu, bu
+
+157
+00:29:41,748 --> 00:29:43,068
+Teşekkür ediyorum.
+
+158
+00:29:43,888 --> 00:29:44,468
+Sağ olun.
+
+159
+00:29:45,288 --> 00:29:49,588
+Şey, [öğrenci] mi? Bir dakika, adına bir bakayım.
+
+160
+00:29:50,308 --> 00:29:52,168
+Yalnız söylüyorum. [öğrenci], [öğrenci] diyorum.
+
+161
+00:29:52,568 --> 00:29:53,108
+[öğrenci].
+
+162
+00:29:53,108 --> 00:29:56,488
+[öğrenci], sen daha önce derin öğrenmeyle çalıştın mı?
+
+163
+00:29:58,308 --> 00:29:59,408
+Pardon hocam?
+
+164
+00:29:59,908 --> 00:30:03,448
+Daha önce derin öğrenmeyle çalıştın mı hiç?
+
+165
+00:30:15,155 --> 00:30:21,035
+Derin öğrenmeyle çalıştın mı daha önce? İnterneti gitti.
+
+166
+00:30:25,587 --> 00:30:35,067
+Pardon hocam, ses... İnternetin senin gidiyor, bir şey oluyor. Daha önce derin öğrenmeyle çalıştın mı?
+
+167
+00:30:37,228 --> 00:30:38,067
+Deep Learning.
+
+168
+00:30:38,548 --> 00:30:40,067
+Derin...
+
+169
+00:30:40,067 --> 00:30:43,008
+Ha, Deep Learning ile ilgili çalıştın mı?
+
+170
+00:30:43,008 --> 00:30:49,327
+Evet, evet hocam. Ben okurdu çalışıyordum.
+
+171
+00:30:49,748 --> 00:30:52,988
+Şimdi tablolarda One Shot diye bir şey yazıyor.
+
+172
+00:30:53,683 --> 00:30:55,683
+Bir saniye.
+
+173
+00:30:55,683 --> 00:30:56,683
+Evet.
+
+174
+00:30:56,683 --> 00:30:58,683
+Ne diyebilirsiniz?
+
+175
+00:31:18,612 --> 00:31:27,932
+Bu gru aritmetik algoritma kullanıyor.
+
+176
+00:31:43,667 --> 00:31:46,607
+O yok. [öğrenci].
+
+177
+00:31:48,607 --> 00:31:50,548
+Evet hocam, [öğrenci], [öğrenci]. Buradayım.
+
+178
+00:31:50,967 --> 00:31:56,947
+İyi, [öğrenci], [öğrenci]. Tamam. Ne bileyim ya. Aileniz hangi isminle çağırıyor sizi?
+
+179
+00:31:57,887 --> 00:32:01,307
+[öğrenci], hocam. [öğrenci].
+
+180
+00:32:01,807 --> 00:32:04,147
+Aa, o soyad değil mi?
+
+181
+00:32:05,887 --> 00:32:06,767
+Efendim hocam.
+
+182
+00:32:07,907 --> 00:32:08,867
+Ay neyse ya, çok...
+
+183
+00:32:08,867 --> 00:32:11,107
+Yani, murekab, murekab isim hocam.
+
+184
+00:32:12,307 --> 00:32:16,468
+Tamam, peki. Evet, sözü sana veriyorum.
+
+185
+00:32:17,187 --> 00:32:18,327
+Tamam hocam.
+
+186
+00:32:19,028 --> 00:32:20,468
+Bir dakika, yeni ekranımı kaybettim.
+
+187
+00:32:20,468 --> 00:32:21,327
+İkranı çıkaracağım.
+
+188
+00:32:27,155 --> 00:32:28,155
+Evet, Hocam.
+
+189
+00:32:28,155 --> 00:32:32,915
+Oh, unsupervised sentence compression.
+
+190
+00:32:32,915 --> 00:32:35,915
+[kişisel bilgi]
+
+191
+00:32:35,915 --> 00:32:39,915
+[kişisel bilgi]
+
+192
+00:32:39,915 --> 00:32:45,915
+[kişisel bilgi]
+
+193
+00:32:45,915 --> 00:32:54,155
+Today, we'll talk about unsupervised sentences compression using denizing autoencoders.
+
+194
+00:33:20,403 --> 00:33:26,844
+Bu konuda bir şeyin daha fazla bir şeyin daha fazla bir şeyin daha fazla bir şeyin daha fazla.
+
+195
+00:33:26,844 --> 00:33:32,844
+Bu konuda bir şeyin daha fazla bir şeyin daha fazla bir şeyin daha fazla.
+
+196
+00:33:36,915 --> 00:33:51,076
+A more recent work using deep learning involves models trained without strong linguistic pairs, instead requiring larger corporeal connessting of pairs of longer and shorter sentences.
+
+197
+00:33:52,516 --> 00:33:58,596
+Sentences compression can also be seen as a scaled down version of text summarization problem.
+
+198
+00:33:59,496 --> 00:34:03,476
+Within text summarization, two broad approaches exist.
+
+199
+00:34:03,923 --> 00:34:21,423
+Extractive approaches extract explicit tokens or phrases from the reference text, whereas abstractive approaches involve a compressed paraphrasing of the reference text similar to the approach human might take.
+
+200
+00:34:22,036 --> 00:34:38,416
+Recent promising work on unsupervised neural machine translation has shown that with the right training regime, it is possible to train models for machine translation between two languages given only two unpaired monolegal corpora.
+
+201
+00:35:10,931 --> 00:35:30,192
+Model Overview. The model apply neural text summarization techniques using denoising autoencoders to the task of sentences compression, focusing on extractive summarization. The model take a fully unsupervised training approach beyond not using parallel corpora.
+
+202
+00:35:30,835 --> 00:35:33,755
+Bu model is trained using a single corpora.
+
+203
+00:35:33,755 --> 00:35:38,755
+In contrast to the unsupervised neural machine translation,
+
+204
+00:35:38,755 --> 00:35:40,956
+which still uses two corpora,
+
+205
+00:35:40,956 --> 00:35:47,875
+the words do not have a separate corpora of a longer and shorter sentences.
+
+206
+00:35:47,875 --> 00:35:51,275
+The simple denoising autoencoders model,
+
+207
+00:35:51,275 --> 00:35:55,755
+trained on removing and recovering words from a noise...
+
+208
+00:35:55,840 --> 00:35:57,840
+İntro
+
+209
+00:36:32,788 --> 00:36:37,547
+Additive Noising, Additive Sampling, and Shuffling.
+
+210
+00:36:37,547 --> 00:36:48,828
+For the training regime and model modification to apply the denoising autoencoder, autoencoding paradigm to sentences compression.
+
+211
+00:36:48,828 --> 00:36:54,028
+Additive Noising simulates a supervised training regime.
+
+212
+00:36:54,128 --> 00:37:18,251
+Bu, adeniyatı, adeniyatı, adeniyatı, adeniyatı, adeniyatı, adeniyatı, adeniyatı, adeniyatı, adeniyatı, adeniyatı, adeniyatı, adeniyatı, adeniyatı, adeniyatı, adeniyatı, adeniyatı, adeniyatı, adeniyatı, adeniyatı, adeniyatı, adeniyatı, adeniyatı, adeniyatı, adeniyatı, adeniyatı, adeniyatı, adeniyatı, adeniyatı, adeniyatı, adeniyatı, adeniyatı, adeniyatı, adeniyatı, adeniyatı, adeniyatı, adeniyatı, adeniyatı
+
+213
+00:37:18,420 --> 00:37:32,588
+Şükürler, birçok birçok birçok.
+
+214
+00:38:07,956 --> 00:38:09,956
+Length Countdown.
+
+215
+00:38:09,956 --> 00:38:22,764
+To induce the model to output sequences of a desired length, the RNN decoder will be augmented in the model to take an additional length countdown input.
+
+216
+00:38:44,275 --> 00:39:00,456
+The model experimented with adding a link, apparently, to the objective function to amplify the loose from predicting the end of sequences to kin and at the desired time step.
+
+217
+00:39:01,115 --> 00:39:07,996
+The model didn't require this etc. loose term to generate sequences of the desired link.
+
+218
+00:39:08,596 --> 00:39:10,596
+İntro
+
+219
+00:39:53,684 --> 00:40:20,144
+The InferSend Model is trained on end tasks where given a longer premise task text and shorter hypothesis text. The model is required to determine if the premise entails the contradictor as a neutral to the hypothesis. The InferSend Sentences embeddings are an intermediate output of the model.
+
+220
+00:40:48,083 --> 00:40:50,083
+Öğrençlerine altyazıları,
+
+221
+00:40:50,083 --> 00:40:54,903
+bu
+
+222
+00:40:54,903 --> 00:40:55,083
+ve
+
+223
+00:40:55,083 --> 00:41:13,483
+bu
+
+224
+00:41:14,452 --> 00:41:39,652
+At the same time also applying the same numbering system to the target. So the same word in the input and at the output will always be assigned the same numbered OOV token and hence the same embeddings. At inference, replace any output numbered OOV token with their respective words.
+
+225
+00:41:40,087 --> 00:41:43,087
+bu
+
+226
+00:41:39,987 --> 00:42:04,875
+Bu, bu
+
+227
+00:42:43,380 --> 00:42:45,680
+Hensi, no noising is applied.
+
+228
+00:42:45,680 --> 00:42:54,280
+Using the link countdown to target output of half the length of the references sentences.
+
+229
+00:42:54,280 --> 00:42:58,380
+The model is implemented using PyTorch.
+
+230
+00:42:58,380 --> 00:43:04,680
+It consists of various methods for deep layering on a graph and other irregular structure.
+
+231
+00:43:07,680 --> 00:43:09,980
+Uh, ROG evaluation.
+
+232
+00:43:11,603 --> 00:43:24,603
+Ön, in this table, we show the performance, we show the performance of the baseline unsupervised, unsupervised models.
+
+233
+00:43:26,603 --> 00:43:34,603
+The unsupervised model ball in compression to the supervised model and perform in line...
+
+234
+00:44:00,532 --> 00:44:03,292
+ARAJ ablation study.
+
+235
+00:44:03,292 --> 00:44:16,092
+Here in this table, we observe that all three components, very namely the use of attention, biogram shuffling and incorporation.
+
+236
+00:44:16,436 --> 00:44:37,516
+İnteklerle anlatacağım.
+
+237
+00:44:43,059 --> 00:44:45,059
+Human Evaluation.
+
+238
+00:44:45,059 --> 00:44:51,059
+From the table we report that average evaluation given by six evaluator,
+
+239
+00:44:51,059 --> 00:45:03,059
+the meaning scores for the ground truth is somewhat low, 3087.
+
+240
+00:45:29,396 --> 00:45:34,396
+ve insanların evliliyorsan
+
+241
+00:45:34,396 --> 00:45:36,396
+ve daha iyi bir
+
+242
+00:45:36,396 --> 00:45:38,396
+başkalarını
+
+243
+00:45:46,356 --> 00:46:08,140
+Bu, bu
+
+244
+00:46:09,172 --> 00:46:15,652
+İ is refer to the input, G is refer to the true summaries.
+
+245
+00:46:15,652 --> 00:46:26,052
+Example 1 and example 2 show the models summarizing threatened information from the input.
+
+246
+00:46:54,612 --> 00:47:07,931
+Conclusion, we present a fully unsupervised approach to task of sentences compression in the form of denoising to encoders with adaptive noising and word shuffling.
+
+247
+00:47:08,391 --> 00:47:19,831
+Output analysis indicates that the model doesn't capture the particular style of the semiries in the gigaword dataset.
+
+248
+00:47:20,632 --> 00:47:21,791
+But nevertheless,
+
+249
+00:47:58,271 --> 00:47:59,791
+Summarization Work.
+
+250
+00:48:01,052 --> 00:48:02,552
+Thank you for listening.
+
+251
+00:48:04,311 --> 00:48:05,991
+Biz teşekkür ederiz.
+
+252
+00:48:06,572 --> 00:48:10,692
+Peki sen daha önceden derin öğrenmeyle ilgili hiç çalışma yaptın mı?
+
+253
+00:48:16,692 --> 00:48:20,672
+Daha önce derin öğrenme hakkında bilgin var mıydı?
+
+254
+00:48:20,672 --> 00:48:23,231
+Deep learning hakkında bilgin var mıydı?
+
+255
+00:48:24,596 --> 00:48:26,596
+Evet, evet hocam.
+
+256
+00:48:26,596 --> 00:48:30,596
+Peki sen sınavı mı gireceksin, proje mi yapacaksın?
+
+257
+00:48:30,596 --> 00:48:38,596
+Hocam ben bir birçok teknik yapacağım.
+
+258
+00:48:38,596 --> 00:48:45,596
+Senin e-mail için tepki veririm.
+
+259
+00:48:47,596 --> 00:48:51,596
+Bir saniye bekle. Bir dakika.
+
+260
+00:48:52,340 --> 00:49:02,700
+Onlar da burada değil. Okey. O kadar çok şey açık ki arkada göremiyorum ne olduğunu. Arkadaşınıza soru soran var mı?
+
+261
+00:49:06,483 --> 00:49:15,703
+10 ya da 9. slide'ı açar mısın?
+
+262
+00:49:15,703 --> 00:49:17,243
+11'miş.
+
+263
+00:49:17,243 --> 00:49:19,403
+11'i açar mısın?
+
+264
+00:49:23,443 --> 00:49:30,443
+Şu şey neydi? F bu amperesan herhalde W. Neyin açılımıydı?
+
+265
+00:49:31,443 --> 00:49:39,443
+Hucam, we find using attention, shelf finding biogram and incorporating sentences in bedings.
+
+266
+00:49:41,443 --> 00:49:48,443
+All improved here Hucam, ROG scores, all linked countdown.
+
+267
+00:50:00,628 --> 00:50:03,208
+Tamam, teşekkür ederim sana da.
+
+268
+00:50:04,048 --> 00:50:05,828
+Ben teşekkür ederim hocam.
+
+269
+00:50:09,488 --> 00:50:11,068
+[öğrenci].
+
+270
+00:50:14,168 --> 00:50:14,968
+[öğrenci]?
+
+271
+00:50:15,988 --> 00:50:16,868
+Evet hocam.
+
+272
+00:50:17,588 --> 00:50:22,048
+Yok, sen bitti. [öğrenci]. Sen bittin, seni gönderiyorum.
+
+273
+00:50:22,268 --> 00:50:23,588
+Tamam hocam, teşekkür ederim.
+
+274
+00:50:23,708 --> 00:50:25,788
+Bugün herkes aynı isimli.
+
+275
+00:50:26,387 --> 00:50:41,587
+[öğrenci] sen yaşıyor musun? Evet hocam. Ya yaşıyorsun yani. Neden öyle dediniz? Ne bileyim sesini, soluğunu pek duymuyorum da senin. Artık göremiyoruz da yüzünüzü.
+
+276
+00:50:43,127 --> 00:50:50,807
+Derslere katılıyordum hocam. Onu biliyorum canım. Gerçi hep isimler arkada açık. Kim katılıyor, kim katılmıyor onu bilmiyorum ama.
+
+277
+00:50:51,603 --> 00:51:13,023
+Peki, sen XML Compression aldın. Tamamdır. Ekran geldi herhalde. Bir dakika ben Excel'e bakıyordum şu an. Bir saniye. O teki tarafa geçeyim. Allah'ım o kadar şey var ki açık. Bazen kaybediyorum, bulamıyorum. Geldi, ekran geldi. Evet.
+
+278
+00:51:14,452 --> 00:51:40,271
+Benim makalemin konusu XML sıkıştırma teknikleri üzerine bir inceleme ve karşılaştırma yapılmış. İlk önce bir XML'den bahsedecek olursak, XML bir işaretleme dilidir. Sistemler arasında veri iletimi, depolanması gibi birçok platformda kullanılmaktadır ve platform bağımsızdır.
+
+279
+00:51:40,884 --> 00:52:06,923
+Kendi kendini tanımlar. Bu XML'e çok büyük bir esneklik sağlamıştır. Yani bir dışarıdan kullanıcı baktığında o datanın ne anlama geldiğini anlayabilir. Bir XML'in doğru bir şekilde oluşturması için iki tane önemli konu vardır. Well-formed. Yani sintaksının doğru olarak yazılmış mı?
+
+280
+00:52:07,764 --> 00:52:23,764
+Ya da valid, Document Type Definition'da tanımlanan şemaya doğru olarak uyulmuş mu? Bu önemlidir XML için. Ve XML parserler vardır. Saks ve DOM olarak iki türü mevcuttur.
+
+281
+00:52:23,764 --> 00:52:29,764
+Sağda XML'nin genel yapısı göstermiştir. Element, Attribute ve Data Value'lardan oluşmaktadır.
+
+282
+00:52:34,996 --> 00:52:55,496
+Xml içinde ayrıntılar çok mevcuttur ve bir Xml'in tag, data ve tag'in kapatılması şeklinde içeren metinler bulunmaktadır. Bunlar sürekli tekrarlanmaktadır aynı obje içindeki verilere göre.
+
+283
+00:53:00,596 --> 00:53:15,236
+Olarak seçilmektedir. Ve bu orijinal dokümandan çok kat daha boyutunun büyümesine neden olmaktır. Bu yüzden XML'e, XML'in sıkıştırılması ihtiyacı doğmuştur.
+
+284
+00:53:17,115 --> 00:53:27,236
+XML sıkıştırma sınıflandırılmıştır kendi içinde. İki temel özelliğe göre sınıflandırılmış. Birincisi belgenin yapısını...
+
+285
+00:53:27,487 --> 00:53:41,007
+Bilimliliğine göre, yani egzemeli sıkıştırdığımızda bu şemayı biliyor muyuz, bilmiyor muyuz gibi. Burada ikiye ayrılmaktadır. İlk olarak genel metin sıkıştırıcıları olarak ayrılmış.
+
+286
+00:53:42,675 --> 00:54:00,955
+İlk, normal metinde kullandığımız sıkıştırıcı olarak işleniyor. Yani normal metin olarak görüyor, bir ilgisayar olarak değil de. İkincisi bilinçli olarak ilgisayar sıkıştırma. Burada da kendi içinde şemaya bağımlı veya bağımsız olarak sıkıştırma olarak ayrılmıştır.
+
+287
+00:54:01,295 --> 00:54:21,495
+İkinci olarak da yeteneğine göre sınıflandırılmış. Burada da sorgulanabilir, eksamen sıkıştırılmış, eksamen üzerinden sorgulanma yapılabilir mi, yapılamaz mı? Sorgulanabilirse bu kendi içinde de homomorfik veya homomorfik olmayan tipte sıkıştırma olarak alt grubu ayrılmıştır.
+
+288
+00:54:22,068 --> 00:54:31,688
+Ne demekmiş bu homomorfik? İleride bahsedeceğim. Sıkıştırılmış verinin igzemel yapısını koruyup korumaması.
+
+289
+00:54:31,688 --> 00:54:39,887
+Aslında basit olarak. Bilimliliğine göre sınıflandırma ŞEM olarak böyle gösterilmektedir.
+
+290
+00:54:39,887 --> 00:54:48,108
+Geçiyorum. Yeteneğine göre olarak sınıflandırma örneği ŞEM olarak.
+
+291
+00:54:49,108 --> 00:55:11,947
+Genel metin sıkıştırmaları, XML verileri normal text olarak mantıksal bir yaklaşımla sıkıştırılıyor. Normal metin sıkıştırma yöntemleri kullanılır. Burada XML hakkında bir bilgi olmadığı için bunlara XML Blind olarak adlandırılır sistem literatürde.
+
+292
+00:55:12,947 --> 00:55:28,987
+XML bilinçli kompresörleri geldiğimizde burada XML'in kendi içindeki farklılıklarından yaralanarak tasarlanmış. Yani XML'lerin farklılıklarından yola çıkılmış.
+
+293
+00:55:28,987 --> 00:55:35,987
+Burada da şemaya bağımsız sıkıştırma olarak alt gruba ayrılıyor.
+
+294
+00:55:37,876 --> 00:55:50,376
+Tekrar yeteneğine göre sıkıştırmaya geldiğimizde, yani sorgulanabilir bir igzemelde. Igzemeller bilinçli sıkıştırıcılardır burada.
+
+295
+00:55:50,867 --> 00:56:16,847
+Belgelerin yapısal ve veri bölümleri kodlama yöntemlerine göre iki ayrıldı. Demin bahsetmiştim. Homomorphik, belgelerin orijinal yapısı korunuyor. Sıkıştırılmış veriye orijinal data ile aynı şekilde eriliştiriliyor. Homomorphik olmayan da yapısal ve parçalar halinde kaydediliyor sıkıştırılmış veri. Diğer olarak sorgulanmayan izleme sıkıştırmaydı.
+
+296
+00:56:17,619 --> 00:56:26,539
+Şimdi içeriğine girdiğimizde genel tek sıkıştırıcılarında XMAL Önce Ağaç Verisi Yapısı olarak temsil ediliyor.
+
+297
+00:56:26,539 --> 00:56:38,539
+Ve bu temsili ağaç bildiğimiz gelenexel metin sıkıştırma yöntemleri kullanılarak sıkıştırılıyor. Burada üç örneği var. Gezip bu...
+
+298
+00:56:39,092 --> 00:56:50,092
+Bu metotta LZ77 algoritması ve Huhman algoritması birlikte kullanılarak kayıpsız veri sıkıştırması yapılmaktadır.
+
+299
+00:56:50,092 --> 00:57:05,092
+BZIP2'de bir öncekine benzer sadece burada metinleri sıkıştırmadan önce Barrows-Weller diye bir dönüşüm var.
+
+300
+00:57:06,579 --> 00:57:14,280
+Dönüşümü uygulanınca metine bir sıralama, metin üzerinden bir sıralanmış bir metin elde ediliyor.
+
+301
+00:57:15,440 --> 00:57:19,740
+Bu uyguları nerede karşımıza çıkmıştı? Hatırlayan var mı içinizde?
+
+302
+00:57:23,764 --> 00:57:37,723
+Yok değil mi? Bu seminer konusu anlatılmadı mı? Anlatıldı. Evet, koca sınıf. Devam et bakalım [öğrenci] Bey.
+
+303
+00:57:37,723 --> 00:57:46,963
+Bu dönüşümden sonra veriler, verilerin aslında sıkıştırılma performansını çok güzel bir şekilde artırıyor. O yüzden kullanılıyor.
+
+304
+00:57:47,487 --> 00:58:02,487
+Daha sonra Hoofman kodlamayla sıkıştırılıyor. Gzip'e göre daha iyi fakat yapılan işlemlerden dolayı performansı biraz daha yavaştır. Bir diğer örnek de PPM'dir. Bunu zaten daha önce görmüştük.
+
+305
+00:58:04,487 --> 00:58:14,347
+Şema bağımsız sıkıştırma, bilinçli sıkıştırma yöntemidir. Şema bağımsız sıkıştırma,
+
+306
+00:58:15,347 --> 00:58:23,347
+Dediğimiz üzere XML üzerindeki farklılardan yararlanmak üzerine tasarlanmıştı bilinçli sıkıştırma yöntemleri.
+
+307
+00:58:23,347 --> 00:58:33,347
+Burada örnekleri var. XMIL, WRT, XCOMP, XML PPM, SCM PPM ve EXALT XML olarak.
+
+308
+00:58:33,347 --> 00:58:40,347
+Ben birkaç tanesine giriş yapacağım. Burada dokümanda hepsini anlatmıştı böyle parça parça.
+
+309
+00:58:42,195 --> 00:58:47,195
+Zaten zamanımız yok. Gerek yok zaten o kadar detayı, aklımızda da kalmaz.
+
+310
+00:58:47,195 --> 00:58:59,195
+XMIL yapıyı verilerden ayırmak ve veri değerlerini ağaçtaki görecelik yollarına ve türlerine göre homojen birleşenler haline gruplandırıyor ilk olarak.
+
+311
+00:58:59,195 --> 00:59:09,195
+XMIL belgesi hem yapısal hem veri değerleri bölümlerine ayrılıp sıkıştırılıp sonra da birleştiriliyor. Yani en son datayı atarken.
+
+312
+00:59:09,811 --> 00:59:18,811
+Yapı bölümünde XML etiketleri, nitelikleri ve önceden sözlüğe dayalı bir şekilde kodlanıyor.
+
+313
+00:59:18,811 --> 00:59:28,811
+XML yapısal kodlamasında nitelik ve element adları için bir tam sayı kodu atılıyor. T1, T2 gibi.
+
+314
+00:59:28,811 --> 00:59:33,811
+Bu bir sonraki slide'da göstereceğim ağaç üzerinde.
+
+315
+00:59:34,708 --> 00:59:46,708
+Daha sonra datalarda ilişkili olarak, yani aynı data türü aynı grupta olacak şekilde homojen olarak gruplandırılıyor ilk olarak.
+
+316
+00:59:48,708 --> 01:00:01,708
+Örnek bir şema üzerinden bakacak olursak, tagler etrip neyimleri T1, T2 olarak sözlük bazlı bir atama yapılıyor.
+
+317
+01:00:02,068 --> 01:00:29,128
+Sağdaki gördüğümüz XML ağacında etriptler ve notlar t1, t2, eğer not varsa aynı tag ile etiketlenmiş bir şekilde tasarlanıyor. Daha sonra bitiş tag'inin tamamen kaldırılıyor. Diğer şuradaki tag sadece slash olarak replace ediliyor.
+
+318
+01:00:29,876 --> 01:00:50,136
+Data Valu'lar yapraklar da container anlamına gelen c1, c2, c3 gibi etiketlerle temsil ediliyor. Burada şemanın XML'in yapısı çıkarılarak şöyle prefiksten geçerek veri oluşturuyor.
+
+319
+01:00:58,068 --> 01:01:14,068
+T4 ve C5 olarak bir XMN'in şemasının yapısı çıkarılıyor. Genel bir yüzüne baktığımızda yapılan işlemde önce XMN Sax Parser'dan geçiriliyor.
+
+320
+01:01:17,652 --> 01:01:40,652
+İşlenecek bir prosesöre giriyor ve petler ayrılıyor. Burada structure'ı demin çıkarmıştık, o structure çıkarılıyor. Data'nın içindeki konteynerler, bir sürü konteyner var burada yan yana. Onlar çıkarılıyor ilişkili olarak. Daha sonra bu her ayrı konteyner gezip,
+
+321
+01:01:41,876 --> 01:01:48,416
+metodundan geçirilerek binary koda dönüştürüp ve saklanıyor, birleştirilerek saklanıyor. Aşağıda bir örnek var.
+
+322
+01:01:53,276 --> 01:02:08,856
+Orjinal bir metinden bir normal GZP'e göre bir sıkıştırma, yani text olarak bir sıkıştırma yapıldığında 1.75 MB'lik bir dosya boyutu varken
+
+323
+01:02:10,291 --> 01:02:36,611
+X-Meal kullanılarak yapıldığında 1.33 MB'a düşmüştür. Burada performansını görmüş olduk. Diğerlerine bahsedecek olursak XWRT'de X-Meal'e benzer bir yapı var. Sadece Word Replacing Transform adlı sözlülüğe dayalı bir sıkıştırma yöntemi kullanılıyor. Burada da GZIP, LZMA ve PPM algoritmaları kullanılabilir.
+
+324
+01:02:38,132 --> 01:02:46,132
+XCOMP'ta XML belgesi önce ayrıştırılır, daha sonra birleşenler üzerinden düzenlenerek sıkıştırma motoruna iletilmektedir.
+
+325
+01:02:46,572 --> 01:03:00,811
+XML PPM'de de Multiply Hierarchical PPM model kullanılmaktadır. SCM PPM'de de PPM modellerinin daha büyük bir verisi kullanılarak yapılmıştır.
+
+326
+01:03:02,643 --> 01:03:18,423
+Exalt XML'de söz dilimsel bir yaklaşım var. Dinamik olarak bir dil bilgisi oluşturmak için bağlamdan bağımsız bir dil bilgisi kullanılıyor burada. Gramer tabanlı bir tekniği. Daha sonra da aritmetik kodlama ile kodlanıyor.
+
+327
+01:03:19,603 --> 01:03:37,603
+AXEC-COP denen bir metot var. Bu da gremel tabanlı bir yaklaşım. XMR belgesi yapısal ve veri bölümlerini ayrılıyor ilk olarak. Belgenin orijinal yapısını koruyan bir byte belirtme şeması kullanılıyor ekstradan.
+
+328
+01:03:42,159 --> 01:03:56,159
+NPM, Multi-Level Pattern Matching algoritması üzerinden geçiliyor ve daha sonra da sıkıştırılıyor bu. Burada da yine Baros V'ler dönüşümü kullanılmıştır.
+
+329
+01:03:56,159 --> 01:04:07,159
+Bunun da örneğine geçecek olursak, XML önce Conte bileşenlerine ayrılmış, Structure String'i çıkarılmış.
+
+330
+01:04:07,795 --> 01:04:23,795
+Ve bunlara özel byte'lar atanmış karşılığına gelen. Stratejisine baktığımızda sıkıştırma stratejisini ilk önce dediğimiz gibi Saks'tan geçirilerek bileşenlerine ayrılıyor. Daha sonra MP...
+
+331
+01:04:25,043 --> 01:04:44,043
+MpM algoritması üzerinden geçirerek gramerleri oluşturuyor. Altta da original structure stringten gramer oluşturulmuş. Ve gramer oluşturulduktan sonra Barrow-Swiller shorting algoritmasından geçip daha sonra sıkıştırarak alt-ot olarak çıkıyor.
+
+332
+01:04:45,043 --> 01:04:46,043
+Burada.
+
+333
+01:04:47,764 --> 01:05:06,104
+Çözme stratejisinde tam tersi olarak gerçekleştiriliyor. MPM algoritmasıdan geriye dönülüyor. Sonra bir önceki BVT-WT algoritmasından geçiliyor. Daha sonra da datanın kendisi elde ediliyor.
+
+334
+01:05:15,059 --> 01:05:33,599
+DT de PPM, BRN gezim. Bunlar genelde pek kullanılmıyor. Kullanılmamasının sebebi şemaya bağımlı olduğu için normalde hem sıkıştırırken hem de çözerken şemaya ihtiyaç bulunuyor.
+
+335
+01:05:41,139 --> 01:05:49,500
+Şey değil, uygun değil sıkıştırma yöntemi olarak. Çünkü bilmemesi hem alıcının hem de göndericinin XMR şemasını bilmesi gerekmektedir.
+
+336
+01:05:51,360 --> 01:05:55,500
+Sorgulanabilir XMR sıkıştırıcılarından...
+
+337
+01:05:56,244 --> 01:06:16,583
+X-Grind var homomorphik olarak, Xpress, QXT var. Non-homomorphik olanlar ise Xsec, Xcq, Tricop, Xzips, Xbzip, ISX, Xcaps ve Xquick olarak örnek verebiliriz.
+
+338
+01:06:20,527 --> 01:06:43,007
+Açabilirsek, burada şimdi sorgulanabilir bir XML sıkıştırıcısı olduğu için burada sorgulama yaptığımızda XML'i tamamen açmadan sıkıştırılmış veri üzerinden sorgulama yapılabilir. Böyle bir özelliği var bu sorgulanabilir XML sıkıştırıcılarında.
+
+339
+01:06:47,648 --> 01:07:09,427
+Sıkıştırılmış veri üzerinden sorgulama yapılabilir. Tam veya kısmı eşleştirme bulunabilir açmadan. Veya rençler arasında kısmı renç veya tam renç üzerinde sorgulama yapılabilir. Veya tamamen veriyi açmadan update edilebilir. Ve test validation yapılabilmektedir.
+
+340
+01:07:11,155 --> 01:07:19,036
+Bahsetmiştik. Burada context free sıkıştırma kullanılması gerekmektedir bu işlemi yapmak için.
+
+341
+01:07:19,036 --> 01:07:27,175
+Üç tipi var. Tagler xmill'deki gibi etiketleniyor. Sonra değerler atanıyor.
+
+342
+01:07:36,576 --> 01:07:54,735
+Sıkıştırılacak binary kodları dönüştürülüyor. Burada örneğine gelecek olursak, burada xmil'den farkı, attributelere de farklı bir tek atanmış. Normalde t olarak atıyorduk biz. Burası aynı.
+
+343
+01:07:56,019 --> 01:08:12,419
+Kapama olarak, slash'ı çevriliyor, replace ediliyor. Buradan tekrar prefix olarak okuduğumuzda, her yaprak sadece Hoofman kompresörden geçiriliyor ve sıkıştırılıyor burada.
+
+344
+01:08:12,419 --> 01:08:19,219
+Sorgu motoru X-Grind'de sıkıştırılmış veri üzerinden çalışıyor.
+
+345
+01:08:19,444 --> 01:08:41,664
+Bir sözlük ve ayrıştırıcı içeriyor bu sorgu motoru. Sorgu önce sıkıştırılıyor ne sorulacaksa, sonra sıkıştırılmış veri üzerinden geçerli yolu eşleyip eşleştirilmediği veya yüklemi karşılaştırılmadığı kontrol edilerek sorgular çıkarılıyor.
+
+346
+01:08:42,676 --> 01:08:56,676
+Triko örneği. Bu da XPad üzerinden kullanılıyor. XPad, mesela Students'un XPad'i çıkarıldığında Class Students olarak çıkarılmıştır.
+
+347
+01:08:56,676 --> 01:09:03,676
+Orijinal belge yapısı sıkıştırma boyunca korunduğundan açma işlemine gerek kalmadan sorgulama yapılabiliyor burada da.
+
+348
+01:09:03,676 --> 01:09:08,204
+Belgelerin bir ağ üzerinden iletildiği gizemel mesajlaşma senaryolarına...
+
+349
+01:09:08,692 --> 01:09:17,192
+Yönelik bir sıkıştırma yöntemi. Kodlama ve sorgulama stratejileri Xpred standardını temel alıyor.
+
+350
+01:09:18,192 --> 01:09:35,648
+Strateji de ilk önce XML Sucks Parsing'den geçiyor. Sonra veri ağaçta gösteriliyor ve her bir yaprak olmayan her bir veri bir binary kodla
+
+351
+01:09:35,648 --> 01:09:45,728
+Temsil ediliyor. Temsil edilen notlar daha sonra sıkıştırılarak gönderiliyor.
+
+352
+01:09:45,728 --> 01:10:02,468
+3 önemli özelliği var bu sıkıştırma metodunun. Her kalıtıldığı nottan prefix olarak kodu öyle başlıyor, üretiliyor.
+
+353
+01:10:03,988 --> 01:10:23,988
+Bir sonraki slide de göstereceğim. Onu orada gösteririm. Aynı Word ile yani byte ile temsil edilen notlar aynı özelliğe sahiptir. Bu onu söylüyor.
+
+354
+01:10:26,804 --> 01:10:31,923
+Sıkıştırma boyunca orijinal metnin XML yapısı korunmaktadır.
+
+355
+01:10:33,011 --> 01:10:35,011
+Bu üç özellik bulunmaktadır.
+
+356
+01:10:35,011 --> 01:10:38,011
+[öğrenci] araya girebilir miyim?
+
+357
+01:10:38,011 --> 01:10:48,011
+Senin bu aldığın şey survey olduğu için çok fazla eczemelle ilgili adamların ortaya...
+
+358
+01:10:48,011 --> 01:10:56,011
+İçerik var. Ben de aslında bu farklı yerlerden bulduğum özellik nasıl çalıştığını göstermek için böyle görsel olarak da...
+
+359
+01:10:56,979 --> 01:11:05,379
+Bulmaya çalıştım ama çok sözel olduğu için. Hayır, onu demek istemiyorum. Bu söyleyin içerisinde çok fazla yöntem vardır.
+
+360
+01:11:05,379 --> 01:11:13,059
+Evet, hepsini anlatamam. Zaten ben 3-4 tane seçtim oradan. Neyler daha güzel olabilir. Çünkü hepsi çok anlatıyor.
+
+361
+01:11:13,059 --> 01:11:17,079
+Yani başarısı yüksek olanları seçseydin.
+
+362
+01:11:17,555 --> 01:11:36,555
+Ben daha böyle görsel olarak anlaşılabilecek olayı, onları seçebildim. Çünkü diğerleri biraz daha soyut kalıyordu. Burada demin bahsettiğim gibi notlara binary kodlar atanıyor. Mesela class'tan türeyen 3 tane...
+
+363
+01:11:37,939 --> 01:11:47,939
+Etiket, tag, note, name, instrag, students. Bunların başındaki şey, class'tan...
+
+364
+01:11:48,372 --> 01:11:56,851
+Kalıtıldığı için 0-0 ile başlaması gerekmektedir. Deminki özellik buydu. Bir alttakileri de böyle bir şekilde iletiliyor.
+
+365
+01:11:56,851 --> 01:12:06,612
+Mesela şurada stüdyonun altında iki tane not var. Birebir aynı olması aynı notu olduğunu göstermektedir. Sorgulamada kullanılması için aslında bu.
+
+366
+01:12:08,404 --> 01:12:31,524
+X-Pad üzerinden sorgulama yapılıyor tekrar. Sağda da örnek var. Demin bahsetmiştik burada. Pad'ini çıkardıktan sonra adım adım o Pad'in üretildiği binary kod bulunuyor önce. Sonra binary kodun altındaki yapraklardaki bütün datalar sorgulanıyor, çekiliyor yani.
+
+367
+01:12:33,427 --> 01:12:42,367
+Burada genel karakteristikleri gösterilmektedir XML'in. Demin bahsettiğimiz XML'lerin özellikleri geçiyorum.
+
+368
+01:12:42,367 --> 01:12:53,367
+Şimdi bu surveyde kullanılan XML dokümanları internetten erişilmiş. Burada onların ayrıntıları gösterilmektedir.
+
+369
+01:13:01,395 --> 01:13:23,895
+Oranı ne kadar? Çünkü şema çok büyük olabilir, içindeki veri az olabilir. Bu özellikler var. Wikipedia'dan veri kullanılmış veya exiledikleri böyle yapay olarak internete koyulmuş xml'ler var. Bunlar kullanılmış. Burada 27 tane xml dosyası var, veri seti var. Çalışmada...
+
+370
+01:13:24,724 --> 01:13:40,804
+Şemaların önemini ortaya çıkarmak için şöyle bir yapay yapısal egzemeleler oluşturulmuş. 27 tane dökümandan 30 tane yapısal döküman elde edilmiş. Bunlar için bir tool kendileri yazmışlar.
+
+371
+01:13:52,724 --> 01:14:08,564
+Oluşturulmuş farklı boyutlarda. Bunları da kullanmışlar. Deney sonuçlarına geçtiğimizde, demin bahsetmiştim, yapısal doküman ve orijinal doküman üzerinde ayrı ayrı bunları işlemişler ve farklılıklarını karşılaştırmışlar.
+
+372
+01:14:08,564 --> 01:14:18,884
+Yani mesela burada yapısal dokümanda bakıldığında sıkıştırma oranı en yüksek yeşil ile gözüken PPM olarak gözüküyor.
+
+373
+01:14:20,180 --> 01:14:45,680
+Ama burada mesela sağ tarafa orijinal metine baktığımızda en iyi performansı, görünüyor mu bilmiyorum ama yeşil bir renkte, yeşil yani X-MIL GZ kullanılarak elde edilmiş. Böyle karşılaştırmalar yapılmış. Yani veri sıkıştırma oranını da etkilemektedir ve kullanılan yönteme göre değiştirebiliyor sistemi.
+
+374
+01:14:46,644 --> 01:15:12,964
+Başka bir deney sonucu. Burada da deneylerin ortalama sıkıştırma oranları elde edilmiş. Orijinal data ve yapısal oluşturulan dokümanlar üzerinde. Demin bahsettiğim için mesela GZIP ile SCM, PPM'e baktığımız zaman normalde orijinal data da en iyi performansı GZIP elde etmiş.
+
+375
+01:15:13,587 --> 01:15:33,187
+Fakat ikisine baktığımızda tekrar burada SCM, PPM normal yapısal veri, içeriği veri olmayan datada daha iyi performans göstermiş ikisini karşılaştırdığımızda. Böyle sonuçlar elde edilmiş baktığımızda.
+
+376
+01:15:35,028 --> 01:15:58,008
+Burada da şey göstermektedir. Tekrar sol taraftaki yapısal doküman yazmayı unutmuşum. Sağdaki de orijinal data. Sıkıştırma süreleri. Burada da bundan bahsetmektedir. Çok da karmaşık görebiliriz burada. Bir sonraki slide'da daha ayrıntılı var aslında. Ona bakarsak daha iyi.
+
+377
+01:16:00,532 --> 01:16:22,315
+Burada sıkıştırma oranları, sıkıştırma süreleri ve çözme süreleri gösterilmektedir. Sıkıştırma sürelerine baktığımızda, mesela MOR için baktığımızda SCM PPM'de sıkıştırılması gene makul bir değerdi ama...
+
+378
+01:16:22,547 --> 01:16:40,307
+Açması bayağı bir süre almaktadır. Aynı keza Xml PPM'de de öyle. Genelde sıkıştırma oranları da M performanslı olarak SCM PPM olarak gözükmektedir.
+
+379
+01:16:40,807 --> 01:16:47,768
+Yani buradan çıkaracağımız şeyler bunlar. Zaten bir inceleme makalesi olduğu için.
+
+380
+01:16:48,372 --> 01:16:58,591
+İleriye yönelik çalışma yapacakları yol gösterme amaçlıdır. Benim anlatıcılarım bu kadardı. Sorunuz varsa cevaplayabilirim.
+
+381
+01:16:59,060 --> 01:17:27,040
+Yok, kimsenin sorusu yoktur. Teşekkür ederim. Aslında doktora yapan bütün arkadaşlara önerim şu olsun benim. Çalışma konularını eğer önceden belirlerlerse, yani en azından ne bileyim tez önerisine girdiklerinde girmeden önce veya birinci izlemede mutlaka aynen burada olduğu gibi bir sörvey yapsınlar.
+
+382
+01:17:27,060 --> 01:17:34,060
+Yani 2021 yılından başlayıp geriye doğru bu alanda kimler neler yapmış?
+
+383
+01:17:34,644 --> 01:17:50,443
+Eğer çok detaylı bir çalışma yapar, bunları farklı gruplar halinde sunabilirlerse ve son 3-4 yıl içerisinde böyle bir sörvey çalışması da yoksa mutlaka bunu yayın olarak göndersinler.
+
+384
+01:17:50,443 --> 01:17:55,184
+Çünkü çok fazla atıf alırlar. Sörveylerin amacı şudur.
+
+385
+01:17:58,387 --> 01:18:03,068
+Bu egzemellerle ilgili bir çalışma yapacaksın, makale okuyorsun.
+
+386
+01:18:03,923 --> 01:18:22,643
+Onlarca makale okuyacağına senin yerine birisi okumuş bu makaleleri ve bir özetini çıkarmış. Senin de zaten okuduğun makalelerden çıkarılacak özetler o da odur. Kim ne yapmış, hangi veri setini, hangi yöntemleri kullanmış, nasıl bir sonuç almış.
+
+387
+01:18:31,923 --> 01:18:59,923
+Bunun yerine onu özetlemiş, sen de o özeti okuyorsun. Bunu aklınızın bir kenarında bulundurun. Ama son 2-3 yılda yapılmamış olması lazım ki sen de içine yenilikler katabil. Yeni yayınları da ekleyebil. Yoksa 2021'in başında bir survey var, sen de 2021'in sonunda bir survey hazırlıyorsun aynı konuda. Birebir aynı olur. Hiç de kabul alamazsın.
+
+388
+01:18:59,923 --> 01:19:09,423
+O yüzden bu tarihleri ve böyle bir çalışmanın olup olmadığını mutlaka kontrol edin. Sizin için çok faydalı ve yararlı olur.
+
+389
+01:19:10,739 --> 01:19:35,739
+Şimdi arkadaşlar, bugünkü sunumlar çok mu uzadı? Bir kişinin anlattığı sunumlar bilmiyorum. Bir 10 saatim de yok. Bir 10.22, 10.30'a kadar bir ara verebilir miyiz? Benim de bölümü aramam gerekiyor. Tamam mı? 10.30'da yine bir araya gelelim ve sunum yapacak olan arkadaşımızdan...
+
+390
+01:19:36,467 --> 01:19:39,387
+Allah, [öğrenci], [öğrenci].
+
+391
+01:19:40,167 --> 01:19:41,107
+Evet hocam.
+
+392
+01:19:41,167 --> 01:19:49,687
+Olacak. Ondan sonra ve [öğrenci]. Bu arada [öğrenci] senin seminer raporun gelecek mi?
+
+393
+01:19:50,067 --> 01:19:51,227
+Şimdi gönderdim hocam.
+
+394
+01:19:51,287 --> 01:20:00,087
+Okey, tamam. 10.30'da görüşmek üzere diyelim o zaman. Ben de bir bölümü arayayım çünkü mail atmışlar, bir bilgi istiyorlar. Hadi hoşçakalın şimdilik.
+
+395
+01:20:00,547 --> 01:20:01,727
+Tamamdır hocam, görüşmek üzere.
+
+396
+01:29:21,268 --> 01:29:22,667
+Evet, başlayalım mı?
+
+397
+01:29:29,140 --> 01:29:30,920
+Alo. Evet hocam. Tamam.
+
+398
+01:29:54,707 --> 01:30:01,927
+Hocam, do you see my screen? Do you see my screen? Pardon? Evet, görüyorum. Tamam, tamam.
+
+399
+01:30:06,003 --> 01:30:13,604
+[kişisel bilgi]
+
+400
+01:30:13,604 --> 01:30:31,804
+Today we will take a presentation about an introduction to fractal image conversion as one of Luzi, one of Luzi methods that may be implemented on image in order to get higher performance in conversion implementation.
+
+401
+01:30:31,952 --> 01:30:36,952
+Öncelikle örneğe bir bakışı var.
+
+402
+01:30:36,952 --> 01:30:41,952
+Bu bakışı var.
+
+403
+01:30:43,028 --> 01:30:45,948
+Açık bir şey var.
+
+404
+01:30:45,948 --> 01:31:05,948
+Bir şey var.
+
+405
+01:31:05,948 --> 01:31:07,948
+Ve bu şey var.
+
+406
+01:31:07,948 --> 01:31:11,028
+Bir şey var.
+
+407
+01:31:11,028 --> 01:31:18,948
+Bu da
+
+408
+01:31:18,948 --> 01:31:21,948
+bu da
+
+409
+01:31:21,948 --> 01:31:35,748
+bu
+
+410
+01:31:34,420 --> 01:32:12,863
+Bu, bu
+
+411
+01:32:12,863 --> 01:32:18,983
+Bu faktal image ile ilgili birçok birçok birçok birçok birçok birçok.
+
+412
+01:32:18,983 --> 01:32:22,583
+Bu birçok birçok birçok.
+
+413
+01:32:22,583 --> 01:32:35,543
+Bu birçok birçok, buçok birçok, birçok.
+
+414
+01:32:56,992 --> 01:33:20,300
+Bu bir bu
+
+415
+01:33:22,323 --> 01:33:30,323
+Şimdi ilk başta, bu birçok
+
+416
+01:33:30,323 --> 01:33:34,323
+ve bu birçok
+
+417
+01:33:34,323 --> 01:33:49,323
+birçok
+
+418
+01:34:17,363 --> 01:34:23,963
+So, the different affine transform generates different blocks of data.
+
+419
+01:34:25,563 --> 01:34:31,823
+So, we can take advantage of insensitivity of human eyes
+
+420
+01:34:31,823 --> 01:34:38,803
+that make the human not so much sensitive to the small change in the image.
+
+421
+01:34:39,483 --> 01:34:42,963
+From this concept, we will understand that the...
+
+422
+01:34:43,956 --> 01:34:57,195
+Fractal image encoding is a Luzi method because many of the stages of it make it lose some of data.
+
+423
+01:34:58,452 --> 01:35:19,452
+İlk başta, ilk başta, 128x128 ve 164x128 ve 164x128.
+
+424
+01:35:20,819 --> 01:35:22,819
+İmplementation
+
+425
+01:35:22,819 --> 01:35:24,819
+is by taking each
+
+426
+01:35:24,819 --> 01:35:28,819
+block in the range image
+
+427
+01:35:28,819 --> 01:35:30,819
+and make it
+
+428
+01:35:30,819 --> 01:35:32,819
+implement on it some of
+
+429
+01:35:32,819 --> 01:35:34,819
+transforms in order
+
+430
+01:35:34,819 --> 01:35:36,819
+to get similar block in the
+
+431
+01:35:36,819 --> 01:35:38,819
+domain image which I get
+
+432
+01:35:38,819 --> 01:35:40,819
+from the previous stage.
+
+433
+01:35:40,819 --> 01:35:42,819
+So this is the second
+
+434
+01:35:42,819 --> 01:35:44,819
+reason will make the
+
+435
+01:35:44,819 --> 01:35:46,819
+fractal image
+
+436
+01:35:46,819 --> 01:35:47,979
+elusi.
+
+437
+01:35:48,180 --> 01:35:50,180
+alusi bir şey.
+
+438
+01:35:50,180 --> 01:35:53,579
+Çünkü ben de identiklerinde bulundur.
+
+439
+01:35:53,579 --> 01:35:56,579
+Ben de similar, de similar.
+
+440
+01:35:56,579 --> 01:35:59,579
+Ve de similar, de identical.
+
+441
+01:35:59,579 --> 01:36:00,579
+Bu.
+
+442
+01:37:08,020 --> 01:37:37,039
+Bölüm
+
+443
+01:37:33,268 --> 01:37:40,268
+Bu bir diğer birçok
+
+444
+01:37:40,268 --> 01:37:59,807
+birçok
+
+445
+01:37:56,884 --> 01:38:17,068
+Bu, bu
+
+446
+01:38:18,547 --> 01:38:25,547
+Bu, biraz biraz hızlıcağın ve
+
+447
+01:38:25,547 --> 01:38:30,547
+çünkü farklı implementasyonu'a bir transforma
+
+448
+01:38:30,547 --> 01:38:33,195
+yöntemde farklı comparasyonu'a bir değişiklik.
+
+449
+01:38:34,452 --> 01:38:47,452
+Now, in the last of the encoding image, I will save just the blocks and the affine transforms that will I use to in order to get the original image.
+
+450
+01:38:47,452 --> 01:38:54,452
+That means I will implement the affine transforms or the stored blocks in order to be different.
+
+451
+01:38:54,452 --> 01:39:02,452
+Maybe one block generate more than one block, two or three or four, but I implement different iteration of the image.
+
+452
+01:39:30,003 --> 01:39:32,003
+Te...
+
+453
+01:39:32,500 --> 01:39:59,979
+Now, the implementation of the decoding equation consists of two parts. The first part represents the low filtering and the down sampling that implemented on original image, but in inverse form, and the iterations that must be implemented on
+
+454
+01:40:14,452 --> 01:40:35,500
+Bu, bu
+
+455
+01:40:43,507 --> 01:40:53,748
+As a result of the proposed method on this paper, the researchers implemented two
+
+456
+01:40:54,707 --> 01:41:00,307
+implementation of fractal image compression. The first implementation by implementing two by two
+
+457
+01:41:00,868 --> 01:41:07,427
+block size, the second four by four, and they see that where they really
+
+458
+01:41:08,435 --> 01:41:12,435
+Bölüm yapmak için daha fazla bir şekilde
+
+459
+01:41:12,435 --> 01:41:15,435
+ve bu
+
+460
+01:41:15,435 --> 01:41:18,435
+ve
+
+461
+01:41:18,435 --> 01:41:23,435
+bir şekilde
+
+462
+01:41:23,435 --> 01:41:25,435
+4x4
+
+463
+01:41:25,435 --> 01:41:28,435
+ve
+
+464
+01:41:28,435 --> 01:41:30,435
+SNR
+
+465
+01:41:32,020 --> 01:41:35,020
+4x4 bölümde.
+
+466
+01:41:35,020 --> 01:41:37,020
+Bu birçok
+
+467
+01:41:37,020 --> 01:41:39,020
+ve birçok
+
+468
+01:41:39,020 --> 01:41:47,020
+birçok
+
+469
+01:41:47,020 --> 01:41:48,020
+4x4
+
+470
+01:41:48,020 --> 01:41:51,020
+Bu birçok
+
+471
+01:41:51,020 --> 01:41:59,852
+2x2
+
+472
+01:42:28,148 --> 01:42:55,692
+Bir sorun hazır.
+
+473
+01:42:55,891 --> 01:43:10,291
+[kişisel bilgi]
+
+474
+01:43:10,351 --> 01:43:12,431
+[kişisel bilgi]
+
+475
+01:43:13,051 --> 01:43:21,051
+[kişisel bilgi]
+
+476
+01:43:22,251 --> 01:43:23,231
+[kişisel bilgi]
+
+477
+01:43:23,636 --> 01:43:30,116
+[kişisel bilgi]
+
+478
+01:43:30,936 --> 01:43:32,176
+[kişisel bilgi]
+
+479
+01:43:32,756 --> 01:43:32,956
+[kişisel bilgi]
+
+480
+01:43:33,676 --> 01:43:35,256
+[kişisel bilgi]
+
+481
+01:43:35,276 --> 01:43:36,716
+[kişisel bilgi]
+
+482
+01:43:38,616 --> 01:43:43,176
+[kişisel bilgi]
+
+483
+01:43:45,536 --> 01:43:46,376
+[kişisel bilgi]
+
+484
+01:43:46,976 --> 01:43:48,276
+[kişisel bilgi]
+
+485
+01:43:48,703 --> 01:43:56,303
+[kişisel bilgi]
+
+486
+01:43:56,303 --> 01:43:59,603
+[kişisel bilgi]
+
+487
+01:44:03,475 --> 01:44:28,695
+[kişisel bilgi]
+
+488
+01:44:31,636 --> 01:44:32,876
+[kişisel bilgi]
+
+489
+01:44:33,776 --> 01:44:34,756
+[kişisel bilgi]
+
+490
+01:44:35,816 --> 01:44:36,656
+[kişisel bilgi]
+
+491
+01:44:36,776 --> 01:44:38,436
+[kişisel bilgi]
+
+492
+01:44:41,236 --> 01:44:42,876
+[kişisel bilgi]
+
+493
+01:44:43,476 --> 01:44:44,876
+[kişisel bilgi]
+
+494
+01:44:45,436 --> 01:44:45,836
+[kişisel bilgi]
+
+495
+01:44:47,836 --> 01:44:50,696
+[kişisel bilgi]
+
+496
+01:44:51,456 --> 01:44:53,936
+[kişisel bilgi]
+
+497
+01:44:53,936 --> 01:44:54,576
+[kişisel bilgi]
+
+498
+01:44:55,796 --> 01:45:18,756
+[kişisel bilgi]
+
+499
+01:45:18,756 --> 01:45:20,756
+[kişisel bilgi]
+
+500
+01:45:21,684 --> 01:45:22,864
+[kişisel bilgi]
+
+501
+01:45:22,963 --> 01:45:24,144
+[kişisel bilgi]
+
+502
+01:45:24,184 --> 01:45:25,484
+[kişisel bilgi]
+
+503
+01:45:25,984 --> 01:45:27,784
+[kişisel bilgi]
+
+504
+01:45:27,844 --> 01:45:29,864
+[kişisel bilgi]
+
+505
+01:45:31,003 --> 01:45:36,543
+[kişisel bilgi]
+
+506
+01:45:36,564 --> 01:45:37,003
+[kişisel bilgi]
+
+507
+01:45:37,324 --> 01:45:38,384
+[kişisel bilgi]
+
+508
+01:45:38,884 --> 01:45:39,264
+[kişisel bilgi]
+
+509
+01:45:39,264 --> 01:45:46,344
+[kişisel bilgi]
+
+510
+01:45:46,800 --> 01:45:49,680
+Yazmışız. Bakalım sen ne anlatacaksın bize?
+
+511
+01:45:49,920 --> 01:45:51,079
+Merhaba arkadaşlar.
+
+512
+01:45:51,260 --> 01:45:53,740
+Sen de bunu gönderdin mi [öğrenci]? Gönderdi.
+
+513
+01:45:53,840 --> 01:45:55,000
+Gersin başında göndermiştim.
+
+514
+01:45:55,000 --> 01:45:58,960
+Evet evet doğru. Ben [öğrenci] yazmıştım. Sonra [öğrenci] yaptım onu. Okey.
+
+515
+01:46:00,020 --> 01:46:05,240
+Aslında [öğrenci]'in anlattığı güzel oldu benden önce. Biraz daha XML'le ilgili size bilgi vermiş oldu.
+
+516
+01:46:05,539 --> 01:46:14,760
+Benim anlatacaklarımın tek farkı bu Jason ve XML'lerin apilerde kullanılmasından dolayı.
+
+517
+01:46:14,800 --> 01:46:34,199
+Küçük boyutlarda olması. Yani küçük boyutlu XML'lerin sıkıştırılmasından bahsedeceğim. Giriş kısmında işte XML ve JSON'a ilgili genel bilgiler. Daha sonra mevcut çalışmalar var iki tane. Onların nasıl çalıştığını anlatacağım. Bu bizim projenin önerdiği yöntemi ve sonuçlarını göstereceğim.
+
+518
+01:46:35,188 --> 01:46:59,908
+Bildiğiniz üzere günümüzde internette gerçekleştirilen projelerin büyük çoğunluğu web servislerini kullanıyor. JSON ve XML de bu servislerin ortak bir dil kullanarak iletişim kurmasını sağlıyor. Bu belgelerden özellikle XML çok fazla veri karışıklığı içeriyor. Çünkü aktarmak istediği her bir özellik için hem açma tagi ardından veri daha sonra kapama tagi göndermesi gerekiyor. JSON'da bu şeyler bir tane.
+
+519
+01:47:00,979 --> 01:47:26,159
+Burada solda bir JSON örneği var. Sağda da XML örneği var. JSON'da şu kısımlara biz K diyoruz. O özellikleri tanımlayan etiketlere. XML'de de attribute veya element deniyor. Şurası element, şurada attribute diye geçiyor. Bunların kullanılmasında bir fark yok açıkçası. Şu city'yi ayrı bir element olarak da aşağıya ekleyebilirdi.
+
+520
+01:47:27,347 --> 01:47:43,488
+Bu açıklama etiketleri servise yapılan her istekte ve cevapta birkaç kez tekrarlanmış oluyor. Bu tekrarlar belgeleri kendi kendine tanımlayıcı yani sert deskriptif hale getirirken aynı zamanda bu belgelerin gereksiz verilerle dolmasını ve karmaşıklaşmasını sağlıyor.
+
+521
+01:47:53,775 --> 01:48:00,855
+22.30'da 7. kapıdan kalktığının ve şehrin Edmonton olduğunun bilgisinden gelen bir API cevabı var.
+
+522
+01:48:01,363 --> 01:48:26,683
+Bu cevap XMR olarak sağda, JSON olarak solda gösterilmiştir. Normalde biz bu veriyi direkt sıralı bir şekilde göndermiş olsaydık 55 byte'lık yer kaplayacaktı. Fakat kendi kendine tanımlayıcı olmayacaktı. Anlamlamamdırması zor olacaktı. Bunu JSON haline getirdiğimiz zaman 154 byte, XMR haline getirdiğimiz zaman 169 byte. Neredeyse 3 katına çıkıyor veri boyutu.
+
+523
+01:48:27,828 --> 01:48:41,047
+Genel olarak JSON belgeleri kapama tagleri içermediğinden boyutları biraz daha küçüktür. Ve şimdi benim anlatacağım şey, konu başlığında aslında JSON ve XML olarak geçmesine rağmen genel olarak XML üzerinden anlatacağım.
+
+524
+01:48:41,728 --> 01:48:52,648
+Ben bu arada bir şey söyleyebilir miyim? Sorabilir miyim? Mesela JSON ve XML'e baktığımızda ikisi de aynı bilgiyi taşıyor ama XML'de çok fazla beden dünsi var.
+
+525
+01:48:53,039 --> 01:49:06,960
+Yani çok gereksiz. Şimdi ben Jason'a bakıyorum. Jason çok duru bir şekilde ara duruyor. Bu Jason'ı bir daha nasıl kompres ediyorlar? Yani neyini kompres ediyorlar? Senin çalışmanda bu var mı?
+
+526
+01:49:07,539 --> 01:49:16,800
+Hocam, aynı yöntem Jason'a da uygulanabiliyor. Aslında keyleri kontrol ediyorlar. Yani keylerden bir dikşineri oluşturup oradan keyleri kısaltmış oluyor.
+
+527
+01:49:16,800 --> 01:49:19,640
+Tamam. Verilerde çok bir şey yapılmıyor.
+
+528
+01:49:19,760 --> 01:49:19,980
+Tamam.
+
+529
+01:49:20,916 --> 01:49:44,556
+Daha sonra problemleri anlamamız ve bir araştırma sorusu önerebilmemiz için daha önce yapılmış iki tane önemli çalışma var. Bunların özelliklerini ve problemlerini anlamamız gerekiyor. XMIL ve SMCA. Burada SMCA zaten XMIL'den türetilmiş bir algoritma. Biraz daha gelişmiş hal diyebiliriz. O yüzden özelliklerini ortak olarak ele almış.
+
+530
+01:49:45,555 --> 01:50:02,456
+Her iki teknikte XML'in veri ve yapı bölümlerini birbirinden bağımsız şekilde ele alıyor. Yani teyleri ve göndermek istediğimiz veriyi ayrı ayrı işliyor. Her iki teknikte XML'in yapı bölümlerine belgedeki konularına bağlı olarak sayılar atar ve bir etiket sözü oluşturur. Burada ne demek istiyor?
+
+531
+01:50:03,060 --> 01:50:18,800
+Burada göreceğiniz üzere xml'imiz var. Burada da etiket tablosu var. Yukarıdan başlayarak her etikete bir numara veriyor açıkçası. Havaalanı bir numara. Daha sonra şehir geliyor iki numara. Varış zamanı, kalkış zamanı, tarih ve kapı olarak sıralanıyor.
+
+532
+01:50:20,916 --> 01:50:33,735
+Her iki teknikte her bir veriye bir yol çıkartıyor. Bu da benzer şekilde yukarıdan aşağı doğru her bir veri noktasına giden yol en tepeden söz konusu veri öğesinin üst etiketine kadar etiket adları dizisidir diyor.
+
+533
+01:50:34,956 --> 01:50:41,055
+Yani burada elimizde mesela 16.02.30 için çıkartılan pet havaalanı ve barış zamanı oluyor.
+
+534
+01:50:41,587 --> 01:50:59,287
+Veya kapı için çıkartılan pet, havaalanı ve kapı oluyor. 6 için daha doğrusu. Burada petleri etiket değil, veriler için çıkartıyoruz. Her yeni yol için yeni bir kapsayıcı konteyner oluşturulur ve ortak bir yolu paylaşan tüm veriler ortak bir konteynera eklenir.
+
+535
+01:50:59,448 --> 01:51:08,648
+Aslında burada tekrar edilen verilerin kolay sıkıştırılması mantığından yola çıkarak ortak petleri bir grupta toplamaya çalışıyor bir pakette.
+
+536
+01:51:09,171 --> 01:51:17,011
+İkisinde temel dayanığı tekrar eden verileri BZ gibi bir sıkıştırıcıyla bir kapsayıcıda sıkıştırmanın iyi bir sıkıştırma sağlamasıdır demiş.
+
+537
+01:51:17,851 --> 01:51:24,291
+Bazı XML belge türleri her biri az sayıda veri öğesi içeren çok sayıda kabın oluşturulmasıyla sonuçlanır.
+
+538
+01:51:25,391 --> 01:51:33,031
+Bu zaten bizim senaryomuzda olan şey bu. Çünkü genelde API'lerden dönen cevaplar ve istekler.
+
+539
+01:51:33,408 --> 01:51:40,007
+Kısa olma eğiliminde tekrar eden veri çok fazla olmuyor. Bu da sıkıştırma oranını olumsuz etkiliyor.
+
+540
+01:51:41,788 --> 01:51:50,868
+Diğer bir sorun da XML taglerini sırasıyla sayılar atamak, sık olmayan yapısal öğelere daha küçük sayılar, daha sık öğelere daha büyük sayılar atanmasına neden olur.
+
+541
+01:51:51,387 --> 01:51:57,427
+Bunu önlemek için de sıklıklara göre en sık öğeye daha küçük sayı atamak şeklinde bir çözüm öneriyor.
+
+542
+01:52:00,180 --> 01:52:18,920
+İkisi de sıkıştırılmış biçimde XML yapısını korumaz. Bu nedenle sıkıştırılmış belge sorgulanamaz. Bunu [öğrenci] de bahsetmişti. Belgede bir arama yapacağımız zaman illaki onu dekomple sezip ondan sonra arama yapmamız gerekiyor. Ama önerilen yöntemde de bu şekilde. Bu yüzden bunu dezavantaj olarak görmeyebiliriz.
+
+543
+01:52:20,404 --> 01:52:34,923
+Şimdi önerilen yöntem iki aşamadan oluşuyor aslında. Birinci aşama konfigürasyon aşaması, ikinci aşama sıkıştırma aşaması. Bu aşağıda gözükülen şey üç aşamalı sıkıştırma aşaması. Bundan önce de bir konfigürasyon aşaması oluyor.
+
+544
+01:52:37,364 --> 01:52:43,644
+Konfigürasyon aşaması sıkıştırma işlemi için kullanılacak olan sembol tablosu ve etiket tablosu olmak üzere iki tane sözlük oluşturuyor.
+
+545
+01:52:44,595 --> 01:53:04,456
+Burada az öncekinin aksine etiketlerin sıklığına göre bir sayı ataması yapılıyor. Yani ilk örnekte yukarıdan aşağı doğruydu. Burada en çok tekrar eden etiket kapı olduğu için kapıya bir numara demiş. Daha sonra tekrar yukarıdan aşağı doğru her bir etikete bir sayı atanıyor.
+
+546
+01:53:06,163 --> 01:53:27,064
+Daha sonra XML belgelerinin ana dili olarak İngilizceyi kabul etmiş. Bunun sebebi zaten internetteki kontentin %90'ı İngilizce. Daha sonra küçük bir oranına yani %5 gibi bir oranına Rusça geliyor. Benim okuduğum makaleye göre de 3. sırada Türkçe varmış. Ama İspanyolca diyen yerler de var. Araştırdım onu yeni şeylerde.
+
+547
+01:53:27,539 --> 01:53:54,600
+Bu karakterleri ASCII tablosuna göre 32 ile 127 sayıları arasında. İngilizce karakter 32'den başlıyor, 127'ye kadar gidiyor. Biz sadece bu karakterleri kodlayabilirsek bizim için yeterli demiş makale. Her karakter ASCII değeri eksi 31 olarak hesaplanan iki basamaklı bir sayıyla eşleştirilir diyor. Burada yani her bir İngilizce karakter birden başlayıp sanırım 96'ya kadar bir sayı almış oluyor.
+
+548
+01:53:55,891 --> 01:54:21,411
+Sıkıştırma işlemine geçiyor daha sonra. Bu tablolar oluşturduktan sonra. Sıkıştırma işleminin ilk adımı karakterlerin çevrilmesi. Her biri 4 bitle temsil edilebilen 13 karakterden oluşan bir form olan XMLN'e dönüştürüyor belgeyi. Burada örneği var. Burada 13'ün nereden geldiğinden bahsedeyim. 13 şey, 1'den 9'a kadar olan sayılar.
+
+549
+01:54:21,775 --> 01:54:43,335
+Daha sonra T, A ve 0 şeyleri geliyor. Burada T etiket anlamına geliyor. Şimdi örnek olarak bakalım. T2 demiş. Burada bir tane etiketimiz var. Etiket tablosundan gideceğiz. 2 neymiş diye bakacağız. Burada bakarsak havaalanı. Havaalanı tagimiz var demek ilk başta.
+
+550
+01:54:43,796 --> 01:54:53,696
+Daha sonra onun bir niteliği var. Ondan sonra o da dört numara. Yine tek tablosuna gidiyor. Şehir demek işte. Şehir diye bir niteliği var. Daha sonra bu şehrin verisi bu.
+
+551
+01:54:54,195 --> 01:55:19,735
+Daha sonra öz nitelik olduğu için kapama tagine gerek yok. Yani sıfır koymamış bu yüzden. Daha sonra başka bir etiket var. Yine verisi var. Bu sefer alttaki etiket olduğu için bunu kapaması gerekiyor ki onun child'ı olmasın yeni yazacağı etiket. İşte kapatıp yeni bir etiket, yeni bir veri onu kapatmış, yeni bir etiket onu kapatmış. Daha sonra en son hepsini kapatıyor.
+
+552
+01:55:20,756 --> 01:55:31,095
+Daha sonra paketleme aşamasına geçiyor. Burada 4 bit ile kodladığımız karakterleri iki sembolü birleştirerek 8 bit, yani bir byte ile kopluyor.
+
+553
+01:55:32,876 --> 01:55:38,115
+Bunu yaptıktan sonra xml's adı verilen sıkıştırılmış bir binary dosya oluşmuş oluyor.
+
+554
+01:55:39,555 --> 01:55:44,036
+Daha sonra bu xml's de çeşitli arka plan sıkıştırıcılarıyla sıkıştırılıyor.
+
+555
+01:55:44,836 --> 01:55:48,315
+Arka plan sıkıştırıcısı dediğim aslında düz metin kodlayıcıları sanırım.
+
+556
+01:55:48,724 --> 01:56:08,523
+[öğrenci] bahsetmişti. Bu çalışmada PPM kullanılmış. Sonuçlara bakarsak, elimizde küçük bir veri seti varsa önerilen yöntem XMIL ve SMCA'den daha iyi bir sonuç veriyor. Veri seti büyüdükçe bizim algoritmamızın avantajı yok oluyor.
+
+557
+01:56:09,555 --> 01:56:31,815
+Yine burada göreceğiniz üzere zaten API çağrıları genelde 500 kb oluyor. Yani şu aralıkta oluyor maksimum diyeyim. Ondan sonra 1 megabayta kadar da aslında algoritma üstünlüğünü sürdürüyor. Daha sonra dezavantajlı değil de hemen hemen aynı performansı vermeye başlıyor SMCA ile.
+
+558
+01:56:33,555 --> 01:56:58,455
+Burada dezavantajlarından bahsediyor. XML'deki karakter sayısı arttıkça sembol tablolarında kullanılan rakamlar artar. Bu sefer her bir karakter iki basamaklı bir sayı olacaktı. Bu sefer üç basamaklı bir sayı olması gerekir. Veri kısmında konulanacak karakterlerin. Mesela sadece İngilizce değil de başka bir dil desteklenmek isterse.
+
+559
+01:56:58,815 --> 01:57:21,835
+Bu karakter sayısı artacağı için compression ratio düşecek. Bu nedenle çok sayıda karakterin gerekli olduğu durumlarda önerilen yöntemin etkinliği biraz şüphelidir. Eğer binary veri saklarsak XML'in içerisinde, burada da XMLS oluştuğunda, yani binary veri oluştuğu zaman, burada da şey, bir bitle kodlayabileceğimiz binary veriyi mesela, 4 bitle kodlayacağız.
+
+560
+01:57:26,815 --> 01:57:40,295
+Ama burada daha sonra o metin sıkıştırıcısıyla tekrar binary dosyayı sıkıştırdığımızda bu 1.33 kat hemen hemen sıfırlanıyor denebilir. Yani dosya başladığı yere geliyor. Bir avantajı kalmıyor.
+
+561
+01:57:42,295 --> 01:57:54,035
+Küçük XML belgelerinde önerilen yöntemi sıkıştırma oranı SMCA'dan daha iyidir. Fakat büyük belgeler olursa, özellikle 2 MB'den büyük olursa, önerilen yöntemi sıkıştırma oranı çoğunlukla SMCA'ya eşittir.
+
+562
+01:57:54,739 --> 01:57:59,480
+Benim anlatacaklarım bu kadar. Sorularınızı alabilirim. Dinlediğiniz için teşekkür ederim.
+
+563
+01:58:00,980 --> 01:58:19,760
+Biz teşekkür ederiz. Hızlı ve akıcı olarak anlattın. Benim sorum yok. Sorusu olan arkadaş var mı? Yok tabii ki. Teşekkür ediyorum. Önümüzdeki hafta, son haftamız artık.
+
+564
+01:58:21,140 --> 01:58:29,900
+Arkadaşlarımız da inşallah hazır olurlar. Bana soracak bir şeyiniz varsa alayım sorunuzu. Var mı?
+
+565
+01:58:34,515 --> 01:58:45,216
+Peki. Olursa zaten yazıyorsunuz. Haftaya görüşmek üzere diyelim. Size iyi haftalar diliyorum. Hadi hoşçakalın.
+
+566
+01:58:45,956 --> 01:58:51,775
+İyi günler hocam.
