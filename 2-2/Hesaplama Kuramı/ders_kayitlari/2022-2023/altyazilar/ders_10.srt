@@ -1,0 +1,3699 @@
+1
+00:04:51,636 --> 00:04:53,216
+Arkadaşlar, sesim geliyor mu?
+
+2
+00:04:55,936 --> 00:04:57,196
+Geliyor hocam.
+
+3
+00:04:57,556 --> 00:04:58,936
+Peki, teşekkürler.
+
+4
+00:05:06,932 --> 00:05:21,252
+Geçmiş bayramınız kutlu olsun diyeyim. Bayram değildi gerçedim yani, 1 Mayıs. Daha geride kaldı. Vizeleriniz umarım iyi geçmiştir.
+
+5
+00:05:25,620 --> 00:05:31,420
+Vize notunu açıkladım. Bilmeyen var mı bunu? Herhalde herkes biliyor.
+
+6
+00:05:38,387 --> 00:05:44,447
+Sizinle sunumları paylaştığım dizimde, bize bir son notlar isimli.
+
+7
+00:05:48,084 --> 00:05:49,163
+Dosyada var.
+
+8
+00:05:51,303 --> 00:05:58,024
+Nasıl hesapladığımı da Excel dokümanında görebiliyorsunuz diye düşünüyorum.
+
+9
+00:06:04,596 --> 00:06:12,675
+Süreyi normalize edilmiş puanımızdan çıkarttım.
+
+10
+00:06:14,375 --> 00:06:19,495
+Sürenin maksimum %20'ye denk gelmesini sağladım.
+
+11
+00:06:20,816 --> 00:06:28,016
+Sağlamaya çalıştım yani. Birazcık daha fazla %22'ye falan gelmiş olabilir en son normalizasyonla.
+
+12
+00:06:32,980 --> 00:06:54,520
+%20 civarı, %20-25 arası bir etkisi oldu maksimum sürenin. Çoğu insanın daha az etkisi oldu. En geç bitiren kişiye %20 ile 25 arası bir negatif etkisi oldu sürenin.
+
+13
+00:06:57,300 --> 00:07:04,540
+O konuda kafanızda bir soru kaldı mı? Excel dokümanını paylaştığın için herhalde görmüşsünüz. Nasıl hesapladığınızı?
+
+14
+00:07:04,579 --> 00:07:06,779
+Hocam ben bir şey söyleyebilir miyim çok kısa?
+
+15
+00:07:07,240 --> 00:07:07,819
+Tabii buyurun.
+
+16
+00:07:08,259 --> 00:07:16,980
+Ben size bununla ilgili bir mail atmıştım ama müsait olduğunuzda bir bakabilir misiniz? Ben erken bitirmeme rağmen 70 dakikada bitirmişim gibi gözüküyor da.
+
+17
+00:07:19,660 --> 00:07:20,399
+Tamam bakalım.
+
+18
+00:07:21,759 --> 00:07:23,279
+Tamam da hocam teşekkürler.
+
+19
+00:07:25,043 --> 00:07:28,283
+Buyrun.
+
+20
+00:07:29,603 --> 00:07:37,283
+Benim de aynı şekilde bir sıkıntı var. Daha erken bitirmeme rağmen sürem fazla görünüyor. Ben de size mail atmıştım bununla ilgili.
+
+21
+00:07:37,283 --> 00:07:50,223
+Tamam. Yani maillerime bakamadım son üç gündür. Şehir dışındaydım. Üç dört gündür maillerime bakamadım. Bugün bakarım.
+
+22
+00:07:53,235 --> 00:08:03,956
+Evet, durum böyle. Uygulama nasıl, sizce mantıklı mı? Yani kopya çekme miktarını azaltmış olabilir mi acaba?
+
+23
+00:08:11,028 --> 00:08:35,988
+Geçen yıllarda öyle bir şey yapmıştık. Ona dikkat, o dikkatimi çekmişti. Geçen yıllarda başka bir derste. Yine bu ders galiba. Online pandemi döneminde öğrenciler bekliyor, bekliyor, bekliyor. Son 10 dakika tak tak tak tak hepsi birlikte cevaplayıveriyorlardı.
+
+24
+00:08:36,947 --> 00:08:41,747
+O zaman sorulara tekrar geri dönme izni de veriyorduk.
+
+25
+00:08:43,508 --> 00:08:55,227
+Yani baştan sona soruları önce bir ne var mı yok bakıp aralarında tartışıp bir anda hepsi birden son 10 dakikada işaret yapıyorlardı.
+
+26
+00:08:57,508 --> 00:08:59,647
+Ben de bu yıl onu engellemeye çalıştım.
+
+27
+00:09:01,268 --> 00:09:13,208
+Bu nedenle soruya geri dönmeye izin vermiyorum. Sorular rastgele geliyor ve erken bitireme, yani geç bitirme bir ceza olarak yansıyor.
+
+28
+00:09:17,460 --> 00:09:25,240
+Tabii online sınavlar, sınavların sağlıklı olmasını sağlamak oldukça zor, gerçekten zor.
+
+29
+00:09:26,700 --> 00:09:31,640
+Günümüzde herkesin başına bir insan koymazsanız.
+
+30
+00:09:35,251 --> 00:09:55,731
+Bakacağız, yani final yüz yüze olacak gibi gözüküyor. Not ağırlığını finale daha çok kaydırmaya çalışacağım. Çünkü online sınavlar çok çok zor. Güvenli bir değer almak, ölçüm yapmak gerçekten zor.
+
+31
+00:09:56,932 --> 00:10:01,471
+Bunu da veya başka bir konuda diyeceğiniz yoksa biraz derse giriş yapalım.
+
+32
+00:10:03,796 --> 00:10:05,196
+Hocam bir şey sorabilir miyim?
+
+33
+00:10:05,556 --> 00:10:06,196
+Tabii buyurun.
+
+34
+00:10:07,036 --> 00:10:09,316
+İkinci sınav da aynı şekilde mi olacak acaba?
+
+35
+00:10:10,696 --> 00:10:16,276
+Eğer sanırım finali %60 falan yapabiliyoruz.
+
+36
+00:10:17,436 --> 00:10:20,196
+Dolayısıyla ikinci sınav yapmamayı düşünüyorum.
+
+37
+00:10:21,656 --> 00:10:23,276
+Bu birinci sınav.
+
+38
+00:10:24,576 --> 00:10:27,036
+Vize için dönem için notumuz olacak.
+
+39
+00:10:28,244 --> 00:10:47,104
+Geri kalan ikinci vizeyi iptal edip finale çeviriyor. Normalde tabii iki vize bir final olarak konuşmuştuk ama tabii o zaman yüz yüzeydi her şey falan bu şekilde anormal durumlar kafamızda yoktu.
+
+40
+00:10:48,943 --> 00:10:51,984
+Yani şu anki planım ikinci vizeyi iptal etmek.
+
+41
+00:10:53,144 --> 00:10:53,923
+Teşekkürler.
+
+42
+00:10:54,284 --> 00:10:54,884
+Rica ederim.
+
+43
+00:10:59,988 --> 00:11:13,668
+Evet, geçen daha doğrusu iki hafta öncesinin bir tekrarını yapalım yine. Türkçe bir tekrardan sonra normal İngilizce dersi devam edeceğim.
+
+44
+00:11:28,436 --> 00:11:52,096
+pushdown automata ya da yığın otomatı, otomatları gibi düşünebiliriz. Yığın stack yani üst üste konulan şeyler. Üste koyup üstten alıyorsunuz. Bunları görmüştük. Ondan önce de bağlamdan bağımsız diller, context-free dilleri görmüştük.
+
+45
+00:11:55,604 --> 00:11:59,744
+İki hafta önce bunların birbirine çevrilebileceğini gördük.
+
+46
+00:12:02,744 --> 00:12:20,824
+Yani bağlamdan bağımsız dillerin kümesi, yığıt otomatı dillerinin kümesine eşit. İkisi aynı dilleri kabul ediyor.
+
+47
+00:12:22,004 --> 00:12:35,004
+diye bir teoremle başladık. Bu teoremin kümelerin eşitliğini ispat etmek istediğinizde ikiye ayırıyorsunuz.
+
+48
+00:12:35,683 --> 00:12:44,223
+İkiye ayırıyorsunuz. Diyorsunuz ki birinci küme ikincisinin alt kümesidir. Önce onu ispat etmeniz lazım.
+
+49
+00:12:48,851 --> 00:12:57,551
+Üst kümesidir. Onu ispat etmeniz lazım. Bu ikisini ispat ettiğimizde kümelerin eşitliğini ifade etmiş oluyorsunuz.
+
+50
+00:12:59,471 --> 00:13:10,371
+Öncelikle bağlamdan bağımsız dillerin, dramerlerin yığıt otomatına çevrilmesini görmüştük.
+
+51
+00:13:16,179 --> 00:13:20,479
+Aslında çok basit bu.
+
+52
+00:13:35,220 --> 00:14:02,180
+Çok basit. Sadece üç durumlu bir otomat yazıyorsunuz. Birinci durum, birinci state, başlangıç, bağlamdan bağımsız dilin başlangıç değişkenini ne yapıyor? Yığına ekliyor.
+
+53
+00:14:05,172 --> 00:14:18,211
+İlk durumdan, ikinci duruma geçerken oluyor bu. Ve direkt gördüğünüz gibi bir şeyi okumadan, yanından veya inputtan bu gerçekleşecek.
+
+54
+00:14:19,892 --> 00:14:29,132
+Son duruma da, son duruma da şöyle geçiyorsunuz. Yığında doları görmeniz lazım.
+
+55
+00:14:30,868 --> 00:14:33,428
+Input'ta hiçbir şey okumuyorsunuz.
+
+56
+00:14:35,288 --> 00:14:54,208
+Input'tan hiçbir şey okumadan, yani input'u bitirdiniz, yığında da sadece dolar, yani özel bir sembol, yığının sonuna eriştiğinizi gösteren sembol varsa ne yapıyorsunuz? Son duruma geçiyorsunuz.
+
+57
+00:14:57,172 --> 00:15:11,172
+Asıl olay gerisi şu ortadaki durumda oluyor. Bu bir döngü gördüğünüz gibi. Döngü geçişine sahip. Burada birçok geçiş yazıyorsunuz.
+
+58
+00:15:14,172 --> 00:15:24,172
+Bağlamdan bağımsız dildeki her bir şöyle bir kural için. Yani A değişkeni.
+
+59
+00:15:24,340 --> 00:15:47,840
+W ile yer değişebilir gibi bir kural varsa, onun için şöyle bir geçiş ekliyorsunuz, yan otomatına. Ne yapıyorsunuz? Hiçbir şey okumuyor. O değişkeni inputtan alıyor gibi bir durum var.
+
+60
+00:15:48,947 --> 00:16:01,967
+parlamam, yığında görme durumu var. Yığında. Yığında o değişkeni gördüğü zaman onu kop edecek, alacak, yığından yerine W'yu ekleyecek.
+
+61
+00:16:04,187 --> 00:16:16,548
+Bir de yine o gramerdeki her bir terminal sembol için, yani değişken değil de son sembol için,
+
+62
+00:16:19,572 --> 00:16:24,072
+Ne yapıyorsunuz? Şöyle bir geçiş ekliyorsunuz.
+
+63
+00:16:26,652 --> 00:16:37,072
+Inputta, girişte o sembolü görürseniz, yığında da o sembolü varsa, o sembolü yığından çıkarıyorsunuz.
+
+64
+00:16:37,812 --> 00:16:42,352
+Yerine de bir şey eklemiyorsunuz. Dolayısıyla yığından çıkarıyorsunuz.
+
+65
+00:16:43,792 --> 00:16:45,292
+Bu iki geçişi,
+
+66
+00:16:46,035 --> 00:17:11,815
+Ne yapıyoruz? Yığına ekliyoruz. Son derece basit bir işlem aslında. Örnek, mesela böyle bir örnek var. İşte gramerimiz burada. Şu ikisi standart zaten şuradaki ilk durumdan orta duruma geçiş veya orta durumdan son duruma geçiş standart.
+
+67
+00:17:13,044 --> 00:17:31,364
+Gramerdeki her bir kural için ne yapmışız? Yeni bir geçişi, köbür durumunun döngü geçişine eklemişiz. Bu şekilde PDA'yı elde etmiş oluyoruz.
+
+68
+00:17:38,836 --> 00:17:40,655
+üretimleri simüle ediyor.
+
+69
+00:17:43,235 --> 00:17:46,836
+Bu ayrıntılarla çok şu anda uğraşmayacağım.
+
+70
+00:17:48,336 --> 00:17:49,115
+Bakabilirsiniz.
+
+71
+00:17:52,852 --> 00:18:16,072
+Bir örnek üzerinde göstermiş. Mesela ABAP girişi, ABAB girişi. Bunu PDA nasıl kabul eder? Bağlamdan bağımsız gramer nasıl üretir? Bakalım.
+
+72
+00:18:18,003 --> 00:18:25,523
+En başta zaten bağlamdan bağımsız dilde bir S var. Yani giriş sembolü, giriş değişkeni, pardon.
+
+73
+00:18:27,864 --> 00:18:35,663
+İlk değişken. Biz de zaten direkt ne yapıyoruz? Bir şey okumadan, Q1 durumuna geçiyoruz.
+
+74
+00:18:37,203 --> 00:18:41,003
+Staka da giriş değişkenini ekliyoruz.
+
+75
+00:18:42,603 --> 00:18:42,983
+Sonra
+
+76
+00:18:44,627 --> 00:18:57,648
+Bağlamdan bağımsız dil açısından ne yapılabilir? Ya bu, ya bu. Çünkü S ya A, S, T, B'ye dönüşüyor ya da B'ye dönüşüyor.
+
+77
+00:18:59,367 --> 00:19:09,748
+Burada inputun sonunda A, pardon başında A, sonunda B olduğu için şunun kullanılacağı açık değil mi?
+
+78
+00:19:10,579 --> 00:19:12,179
+Gramerde bunu kullanacağız.
+
+79
+00:19:16,000 --> 00:19:22,639
+Yığın otomatında ise aslında şu oluyor.
+
+80
+00:19:23,359 --> 00:19:25,579
+Yığın otomatı non-deterministik.
+
+81
+00:19:26,460 --> 00:19:28,759
+Yani paralel çalışabiliyor.
+
+82
+00:19:29,940 --> 00:19:32,579
+Dolayısıyla hem bu kural...
+
+83
+00:19:34,291 --> 00:19:44,871
+S'in A, S, T, B'ye dönüşmesi hem de S'in B'ye dönüşmesi yığın otomatında gerçekleşiyor. Paralel iki yığın otomatı aynı anda çalışıyor.
+
+84
+00:19:46,451 --> 00:19:52,132
+Ama bu slidelerde bu şekilde göstermemiş.
+
+85
+00:19:54,132 --> 00:19:57,672
+B bir süre sonra ölüyor.
+
+86
+00:19:59,152 --> 00:20:00,000
+S'nin B'ye...
+
+87
+00:20:00,000 --> 00:20:23,139
+B'yi kesmesi bir süre sonra ölüyor. Dolayısıyla B'yi hiç göstermiyor. Direkt kabul eden yolu, ağaçtaki kabul eden yolu tarif ediyor. Ama ben şeyi faydalı buluyorum. Yani yığın otomatı ikiye bölünüyor. Her bir otomat kendi yığınına sahip.
+
+88
+00:20:23,551 --> 00:20:25,491
+input'u okumaya devam ediyor.
+
+89
+00:20:26,112 --> 00:20:29,811
+input'u okuyamazsa, bir geçiş yoksa uygun, ölüyor.
+
+90
+00:20:30,811 --> 00:20:34,451
+Uygun geçişler varsa, o çalışmaya devam ediyor.
+
+91
+00:20:36,771 --> 00:20:42,971
+Şimdi burada da, bu iki geçişten,
+
+92
+00:20:45,971 --> 00:20:47,711
+şu iki geçişten,
+
+93
+00:20:48,915 --> 00:20:51,215
+Üstteki kabul edilecek.
+
+94
+00:20:55,955 --> 00:21:11,215
+O çalışmış olacak. Bir sonraki adımda ne olacak? S ve T var. Leftmost derivation olduğu için en soldaki yine S'ye bakacağız. Henüz T'ye bakmayacağız.
+
+95
+00:21:12,076 --> 00:21:23,215
+S'nin yine iki geçişi var. Ama burada bu sefer işimize yarayan şu olacak. Çünkü A'dan sonra bir B istiyoruz inputta.
+
+96
+00:21:25,203 --> 00:21:32,864
+Dolayısıyla S'nin B'ye, yani şu,
+
+97
+00:21:41,491 --> 00:21:48,612
+Yığına bakmamız lazım ondan önce. Bir adım atladık. Şimdi yığında en tepede A var, değil mi?
+
+98
+00:21:50,911 --> 00:22:08,411
+Inputta da A var. Dolayısıyla henüz daha S'ye gelmedik. Şu çalışacak, değil mi? Yığın otomatı çalışacak. Ne yaptı? A'yı okudu.
+
+99
+00:22:09,011 --> 00:22:26,491
+input'tan, yanından da A'yı kaldırdı. Şimdi yanının en tepesinde S var. Bu sefer bunu kullanacak değil mi? Onu kullandı. S, B olmuş oldu.
+
+100
+00:22:36,884 --> 00:22:57,943
+En tepede B var. Okunacak sembol de B. Dolayısıyla bu geçiş. Bu çalıştı, B okundu, B kaldırıldı. Yığında en tepede T var. Bu sefer T'lere geliyoruz.
+
+101
+00:23:00,115 --> 00:23:20,836
+T'lerin de yine iki T var. Bizim için uygun olan burada bir A'ya ihtiyacımız var. Dolayısıyla şu A'yı elde etmek için şunu kullanmamız gerekiyor değil mi? T, A'yı kullanmamız gerekiyor.
+
+102
+00:23:21,836 --> 00:23:23,976
+Dolayısıyla ne yapacağız?
+
+103
+00:23:25,107 --> 00:23:30,507
+Bu geçişi çalıştıracağız. T'yi kaldırıp TA ekleyeceğiz.
+
+104
+00:23:37,107 --> 00:23:43,288
+Grammer tarafında ise AB, TA, B olacak elimizde.
+
+105
+00:23:44,707 --> 00:23:48,867
+Şimdi en tepede yine T var, stackta.
+
+106
+00:23:49,844 --> 00:24:02,924
+Bu noktada şunu çalıştırmamız lazım ki, çünkü AB, AB elde etmek istiyoruz. Bu T'den kurtulmamız lazım. Bunu yapıyoruz.
+
+107
+00:24:16,564 --> 00:24:38,084
+Yığın tarafında henüz iş tam olarak bitmedi. Ne var? A ve B terminalleri var yığında. Ve yine okumamız gereken A ve B sembolleri var. Bu sembolleri okumak için bu iki kuralı çalıştıracağız.
+
+108
+00:24:42,996 --> 00:25:00,816
+Tüm giriş okundu. Stakta da bir şey kalmadı. Stahan dibine ulaştık. Dolayısıyla bu geçiş çalışıyor ve küvekiye ulaşıyoruz.
+
+109
+00:25:09,364 --> 00:25:12,824
+Yığın otomatı tarafından kabul edildiğini görüyoruz.
+
+110
+00:25:13,784 --> 00:25:19,163
+Ve yine, gramer tarafından da üretilebildiğini görüyoruz.
+
+111
+00:25:23,347 --> 00:25:35,188
+Burada adımları yazmış, yığın otomatının anlık durumlarını falan listelemiş. Bunu zaten biz kendimiz baktık, o yüzden geçelim.
+
+112
+00:25:37,168 --> 00:25:48,307
+Dolayısıyla şunu gördük, bir gramer, bağlamdan bağımsız gramer, bir yığın otomatına dönüştürülebiliyor.
+
+113
+00:25:50,804 --> 00:25:57,844
+Yığın otomatlarının, yığın otomatı tarafından üretilen dinlerin kümesi,
+
+114
+00:26:04,531 --> 00:26:07,172
+Karıştırdım, üretmeyi falan baştan söyleyeceğim.
+
+115
+00:26:08,692 --> 00:26:21,111
+Bağlamdan bağımsız gramerler tarafından üretilen dillerin kümesi, yığın otomatları tarafından kabul edilen dillerin kümesinin bir alt kümesi.
+
+116
+00:26:21,531 --> 00:26:26,892
+Çünkü her grameri bir otomata çevirebiliyoruz.
+
+117
+00:26:27,672 --> 00:26:31,851
+Demek ki gramer dilleri otomat dillerinin alt kümesi.
+
+118
+00:26:33,107 --> 00:26:58,127
+Dolayısıyla o proof'un, ispatın birinci bölümünü yapmış olduk. Buradaki ispat proof by construction oluyor. Yani adım adım nasıl olup da yapacağını gösteriyoruz. Demek ki yapılabiliyor.
+
+119
+00:27:02,867 --> 00:27:04,748
+Solu var mı bu tarafta?
+
+120
+00:27:15,220 --> 00:27:19,720
+Yine bunun tam tersinin de nasıl çalıştığını görmüştük.
+
+121
+00:27:23,731 --> 00:27:31,911
+Yığın otomatiklarının bağlamdan bağımsız dillere döndürülebildiğini görmüştük.
+
+122
+00:27:45,907 --> 00:27:50,067
+Burada bu biraz daha baya baya karmaşık bir süreç.
+
+123
+00:27:51,147 --> 00:27:56,787
+Yani elde ettiğimiz yığın otomatı baya karmaşık oluyor.
+
+124
+00:27:58,447 --> 00:28:04,207
+4-5 tane adım düşünülüyor. Her adımda yeni bir yığın otomatı elde ediliyor.
+
+125
+00:28:04,507 --> 00:28:06,907
+Başlangıç, basit bir yığın otomatı ile başlıyorsunuz.
+
+126
+00:28:08,607 --> 00:28:13,087
+Yeni eklemelerle daha karmaşık bir yığın otomatı elde ediyorsunuz.
+
+127
+00:28:13,491 --> 00:28:36,611
+Ama sistematik bir yöntem. Sistematik yöntem kullandığı için çok karmaşık oluyor ama bazen şöyle bir baktığınızda, gramerin ne iş yaptığını görürseniz, yığın otomatını kendiniz çizebiliyorsunuz. Daha basit oluyor çizdiğiniz yığın otomatı.
+
+128
+00:28:37,395 --> 00:28:45,415
+Ama burada sistematik bir yöntem anlatıyor. Dolayısıyla oldukça kompleks, karmaşık şeyler elde edecek.
+
+129
+00:28:54,612 --> 00:28:57,972
+Herhangi bir yığın otomatına M diyelim.
+
+130
+00:29:06,804 --> 00:29:10,663
+Şimdi M, Y, N otomatını gramele çevireceğiz.
+
+131
+00:29:12,044 --> 00:29:29,943
+Dolayısıyla öncelikle birinci adımda birden fazla kabul eden durum varsa bunların hepsi için bunları kabul durumundan normal red durumuna çeviriyor.
+
+132
+00:29:32,339 --> 00:29:36,779
+Direkt bir geçiş yapıyor. Tek bir kabul durumu elde ediyor.
+
+133
+00:29:40,059 --> 00:29:47,259
+İkinci aşamada yeni stak sembolleri ekliyor.
+
+134
+00:29:48,379 --> 00:29:55,920
+Diyelim ki orijinal yağının özel sembolü Z olsun.
+
+135
+00:30:00,000 --> 00:30:18,379
+Bu bir şark olacak örneğin şekilde. Başlangıç geçişleri ekliyor. Bu geçişler, bu özel sembollerin yığında olmasını sağlıyor. Buna M2 diyelim.
+
+136
+00:30:21,875 --> 00:30:44,235
+Ve kabul durumunda da stackta sadece sharp olmasını sağlamak istiyor. Bunun için de bu iki yeni durumu ekliyor. Var olan kabul durumunu red durumuna çeviriyor.
+
+137
+00:30:44,884 --> 00:31:11,923
+Bir tane orta durum, bir tane de yeni kabul durumu ekliyor. Bu orta duruma direkt geçiyorsunuz. Burada da döngü içerisinde yığında ne varsa kaldırıyorsunuz. Aslında şuradaki X, A olabilir, B olabilir, C olabilir. Yani yığında ne varsa tak tak tak tak tak her şeyi kaldırıyorsunuz. Ne haricinde?
+
+138
+00:31:13,172 --> 00:31:22,192
+Et ve şarp haricinde. Sonra eti de kaldırıyor. Dolayısıyla sadece şarp kalmış oluyor.
+
+139
+00:31:25,907 --> 00:31:34,028
+Sonra, şimdi buraya kadar şeye hiç bakmadık, gramere hiç bakmadık farkındaysanız.
+
+140
+00:31:34,807 --> 00:31:40,607
+Şimdi gramere bakmaya başlıyor. Gramerden bilgileri alıp yığın otomatına ekleyecek.
+
+141
+00:31:41,948 --> 00:31:47,887
+Öncelikle şunu yapmak istiyor. Pardon, hala daha gramere bakmıyor.
+
+142
+00:31:54,867 --> 00:32:19,667
+Ya yığından bir değer kaldırma ya da yığına bir değer ekleme olacak. Bunu sağlıyor. Örneğin, yığından hem bir şey kaldırılıp hem bir şey ekleniyorsa onu ikiye bölüyor. İlk adımda yığından bir şey kaldırılıyor, sonra da yığına bir şey ekleniyor şekilde ikiye bölüyor.
+
+143
+00:32:21,940 --> 00:32:39,040
+Böyle direk geçişler varsa, yığına dokunmayan geçişler varsa, rastgele bir sembolü yığına ekliyor, sonra da o sembolü yığından kaldırıyor.
+
+144
+00:32:39,900 --> 00:32:49,260
+Yani illaki tüm durumlar bu şekilde oluyor. Tüm geçişler, yığına bir şey ekleme, yığından bir şey kaldırma.
+
+145
+00:32:52,147 --> 00:33:18,847
+Şimdi bakalım, evet bu M4 bu hal en son yaptığımızda yığını toparlamış oluyoruz. Daha gramere bakmadık. Örneğin burada şöyle son derece basit bir yığın otomatı var. Yığın otomatı bütün bu işlemlerden geçince bu hale dönüşüyor.
+
+146
+00:33:25,395 --> 00:33:28,275
+Şimdi grameri eklemeye başlayacağız.
+
+147
+00:33:30,155 --> 00:33:31,355
+Gramerde
+
+148
+00:33:35,827 --> 00:34:01,027
+Gramere çevirmeye başlayacağız, pardon. Gramere çevirmeye başlayacağız, otomata bakarak. Elimizde şöyle değişkenler olacak. Bir kere, gramerdeki değişkenler A, QI, QJ şeklinde. Bu da QI ve QJ, otomatın durumları. Değişkenlerimiz bu tarzda olacak.
+
+149
+00:34:02,548 --> 00:34:22,547
+Öncelikle her bir otomat durumu için, Q durumu için AQQ değişkeni Null üretecek şeklinde bir kural ekliyoruz.
+
+150
+00:34:29,076 --> 00:34:37,076
+PQ, R gibi her üç durum için bu geçişi ekliyoruz, bu kuralı ekliyoruz.
+
+151
+00:34:39,076 --> 00:34:55,456
+Yani A, PQ. PQ durumu, PQ değişkeni nasıl, neyle değiştirilebilir? P'den R'ye geçiş.
+
+152
+00:34:56,467 --> 00:35:08,047
+R'den Q'ye geçiş gibi ya da APR, ARQ gibi iki değişkene çevrilebiliyor.
+
+153
+00:35:10,787 --> 00:35:20,907
+Üçüncü durumda da şu şekilde geçişler varsa alttaki grameri ekliyoruz.
+
+154
+00:35:21,427 --> 00:35:39,564
+Buradaki geçişleri inceleyelim.
+
+155
+00:35:43,144 --> 00:35:51,584
+Otomatda P durumundan R'ye geçiş var, S durumundan da Q'ya geçiş var.
+
+156
+00:35:54,584 --> 00:36:02,104
+Ve birincisinde bu T sembolü otomata, yığına eklenirken
+
+157
+00:36:03,347 --> 00:36:08,327
+Burada T sembolü otomattan kaldırılıyor.
+
+158
+00:36:08,447 --> 00:36:15,028
+Yani aslında burada bağlayan, bunları birbirine bağlayan bu T sembolü.
+
+159
+00:36:17,608 --> 00:36:25,288
+T sembolü burada yığına eklenirken burada ne yapılıyor? Yığından kaldırılıyor.
+
+160
+00:36:29,204 --> 00:36:30,444
+O zaman ne yapıyoruz?
+
+161
+00:36:33,244 --> 00:36:44,524
+P, R'ye, yani birincisinin ilk durumu P, ikincisinin son durumu Q.
+
+162
+00:36:45,604 --> 00:36:52,884
+Dolayısıyla A, P, Q değişkeni neyi oluşturacak peki?
+
+163
+00:36:54,164 --> 00:36:56,423
+Birincisinin sonlu R.
+
+164
+00:36:58,516 --> 00:37:03,655
+İkincisinin ilk durumu S. A, R, S değişkenini oluşturacak.
+
+165
+00:37:06,155 --> 00:37:18,496
+Değişkenin öncesinde burada inputta okuduğumuz A ve burada inputta okuduğumuz değişkenin sonrasında da B olacak.
+
+166
+00:37:21,716 --> 00:37:25,483
+Evet, aslında basit şeyler ama...
+
+167
+00:37:26,612 --> 00:37:28,032
+Ayrıntısı var biraz.
+
+168
+00:37:30,971 --> 00:37:36,431
+Ek olarak bir başlangıç değişkeni eklememiz lazım.
+
+169
+00:37:37,332 --> 00:37:37,592
+Değil mi?
+
+170
+00:37:38,872 --> 00:37:42,452
+AQ0QF değişkenini eklememiz lazım.
+
+171
+00:37:44,112 --> 00:37:46,532
+Bunu nasıl belirliyoruz?
+
+172
+00:37:48,652 --> 00:37:50,452
+Initial yani.
+
+173
+00:37:50,996 --> 00:38:02,195
+Başlangıç değişkenimiz Q0, dolayısıyla AQ0 son değişken, otomattaki kabul değişkeni QF.
+
+174
+00:38:03,855 --> 00:38:10,716
+Dolayısıyla bu ikisini subscript olarak içeren bir değişken oluşturuluyor.
+
+175
+00:38:11,655 --> 00:38:14,315
+Şimdiye kadar zaten oluşturulmuş olması lazım.
+
+176
+00:38:16,775 --> 00:38:18,516
+Bunu ne yapacağız ama?
+
+177
+00:38:18,943 --> 00:38:24,304
+Başlangıç değişkeni yapacağız. Yani en tepeye, en sola, en tepeye koyacağız.
+
+178
+00:38:27,923 --> 00:38:40,884
+Buradaki örneği yapmış. İşte öncelikle her bir durum için AQQ, AQ1Q1 gibi şunları eklemiş.
+
+179
+00:38:42,463 --> 00:38:52,344
+Bu tabii mekanik bir şey olduğu için çok fazla sayıda değişken oluşuyor.
+
+180
+00:38:53,248 --> 00:39:18,188
+Bir kağıt üzerinde elle yapmak bunu zor. Ama bir makinenin için çok kolay bir yöntem. Makine yapabilir rahatlıkla. Sonra bu üçlüler, üçlülerden elde edilen ikinci tip kuralları ekliyor.
+
+181
+00:39:20,884 --> 00:39:42,384
+Sonra, geçişler yardımıyla, yani şuradaki gibi. Mesela, burada A ne yapılmış? Staktan alınmış, burada A staka eklenmiş. Bunlar bu tarz geçişlerden yararlanılan kuralları ekliyor.
+
+182
+00:39:48,436 --> 00:39:53,756
+Bütün bunları eklediği zaman şey elde edilmiş oluyor, gramer.
+
+183
+00:39:53,756 --> 00:39:57,579
+Bu gramerin...
+
+184
+00:40:03,987 --> 00:40:06,627
+Gramerin elde sizinle ilgili sorunuz var mı?
+
+185
+00:40:16,340 --> 00:40:17,260
+Bu gramerin
+
+186
+00:40:27,891 --> 00:40:36,131
+Şey olduğuna dair, PDA'ya eşdeğer olduğuna dair ya da nasıl çalıştığına dair bir slide var.
+
+187
+00:40:37,952 --> 00:40:54,791
+Ona ama geçiyorum. Biraz karmaşık bir slide. Ekstra yazdım. 128 ekstra. Merak ederseniz PDA ve CFG'nin oluşturulan o context-free grammar'in nasıl çalıştığını buradan görebilirsiniz.
+
+188
+00:40:57,780 --> 00:41:14,079
+Bugün, bugün context-free grammarlarda kullanabileceğimiz bir pumping lemma var. Yeni bir pumping lemma. Bu pumping lemmayı öğreneceğiz. Bunun öncesinde ama bir ara verelim.
+
+189
+00:41:18,600 --> 00:41:20,520
+Soracağınız bir şey var mı arkadaşlar?
+
+190
+00:41:23,520 --> 00:41:24,200
+Yok.
+
+191
+00:41:24,659 --> 00:41:34,219
+O zaman 43 geçiyor, 45 geçiyor diyelim. Saat 10'da başlarız. Saat 10'a kadar ara verelim arkadaşlar.
+
+192
+00:58:45,588 --> 00:58:48,088
+Arkadaşlar, tekrar merhabalar. Sesim geliyor mu?
+
+193
+00:58:55,443 --> 00:58:56,284
+İyi diyor hocam.
+
+194
+00:58:57,804 --> 00:58:58,903
+Peki, teşekkürler.
+
+195
+00:59:39,987 --> 00:59:40,347
+Okay.
+
+196
+00:59:48,755 --> 00:59:53,956
+We will see pumping lemma for context-free languages.
+
+197
+00:59:58,068 --> 01:00:03,888
+Consider an infinite context-free language, infinite.
+
+198
+01:00:06,268 --> 01:00:20,048
+What that means is from this context-free language, we can generate an infinite number of different strings, infinite, very long strings, for example.
+
+199
+01:00:21,668 --> 01:00:23,748
+We have an example here.
+
+200
+01:00:31,443 --> 01:00:35,604
+From an A, you can generate AA.
+
+201
+01:00:37,684 --> 01:00:42,403
+And then at some point, you can terminate variable with A.
+
+202
+01:00:42,403 --> 01:00:58,204
+But just this part, for example, this enables this language to generate very, very, very long strings, right?
+
+203
+01:00:58,867 --> 01:01:01,687
+infinitely long strings.
+
+204
+01:01:02,567 --> 01:01:04,587
+So this language is infinite.
+
+205
+01:01:07,227 --> 01:01:11,447
+There are some other ways that this can be invented too.
+
+206
+01:01:16,563 --> 01:01:20,824
+For example, consider this D, this E.
+
+207
+01:01:23,224 --> 01:01:27,824
+These are easy, these make this language easy to infinite.
+
+208
+01:01:27,824 --> 01:01:32,043
+Anyways, this language is infinite.
+
+209
+01:01:33,503 --> 01:01:41,103
+Now, consider derivation of a long enough string.
+
+210
+01:01:43,219 --> 01:01:45,980
+For example, consider derivation of this one.
+
+211
+01:01:47,079 --> 01:01:50,420
+A, A, B, B, C, C, D, D, E, E.
+
+212
+01:01:51,000 --> 01:01:51,359
+Right?
+
+213
+01:01:53,679 --> 01:01:57,279
+This is somewhat long.
+
+214
+01:01:59,420 --> 01:02:06,559
+Notice that we obtain B twice.
+
+215
+01:02:06,559 --> 01:02:07,879
+For example,
+
+216
+01:02:09,300 --> 01:02:19,200
+We use this rule. S produces ABE. This rule.
+
+217
+01:02:28,371 --> 01:02:29,811
+It generates a B.
+
+218
+01:02:31,591 --> 01:02:39,791
+Now here, S again generates a B.
+
+219
+01:02:45,427 --> 01:02:50,527
+So, this B, variable B, repeats.
+
+220
+01:02:56,500 --> 01:03:05,880
+If you think about the derivation tree, let's look at the picture of how this works.
+
+221
+01:03:07,539 --> 01:03:10,559
+We start with S, right?
+
+222
+01:03:13,719 --> 01:03:23,320
+Then we change S with A, B, E, right, in the second step.
+
+223
+01:03:25,780 --> 01:03:29,019
+And we can continue in the third step.
+
+224
+01:03:29,440 --> 01:03:31,220
+A becomes AA.
+
+225
+01:03:32,420 --> 01:03:35,940
+E becomes BSD.
+
+226
+01:03:36,940 --> 01:03:39,940
+E becomes EE.
+
+227
+01:03:42,340 --> 01:03:47,320
+And in the fourth step, now, this A becomes A.
+
+228
+01:03:47,440 --> 01:03:49,220
+So we have AA here.
+
+229
+01:03:52,628 --> 01:03:54,067
+We have AA here.
+
+230
+01:04:01,492 --> 01:04:04,732
+And this E becomes E.
+
+231
+01:04:04,952 --> 01:04:08,292
+So at the end we have EE.
+
+232
+01:04:13,907 --> 01:04:16,907
+This D becomes D.
+
+233
+01:04:18,107 --> 01:04:23,627
+Now, we can use, and this B becomes B.
+
+234
+01:04:24,467 --> 01:04:35,367
+Now, we use another S rule, and we obtain B, B, D.
+
+235
+01:04:42,291 --> 01:04:46,892
+And this B, we see that we obtain B twice.
+
+236
+01:04:48,032 --> 01:04:51,731
+Finally, this B can be changed into C-SIM.
+
+237
+01:04:51,872 --> 01:04:54,472
+So we have A, A, B, B, C, C, B.
+
+238
+01:05:10,996 --> 01:05:16,496
+Partition of this tree.
+
+239
+01:05:19,896 --> 01:05:21,876
+Especially consider this part.
+
+240
+01:05:31,092 --> 01:05:37,911
+We start with a B and we end up with another B, right?
+
+241
+01:05:39,592 --> 01:05:40,932
+That part.
+
+242
+01:05:52,211 --> 01:06:09,592
+From this part, we see that we can start with a B and we end up with BB, variable B, then DD.
+
+243
+01:06:11,731 --> 01:06:19,632
+On this part of the tree, we start with a B.
+
+244
+01:06:20,371 --> 01:06:28,711
+We end up with these two B's, variable E again, and these two D's.
+
+245
+01:06:36,788 --> 01:06:42,268
+So, let us look at another part of the tree, this part.
+
+246
+01:06:47,668 --> 01:06:53,708
+We are kind of dividing three into special regions.
+
+247
+01:06:55,648 --> 01:07:10,928
+And in this region, we start with S, with S, and we end up with AA, then the variable B and EE.
+
+248
+01:07:15,923 --> 01:07:29,708
+Ve bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu böl
+
+249
+01:07:35,315 --> 01:07:46,436
+So, in a way, we kind of can divide this part, this tree, into these three rules.
+
+250
+01:07:47,436 --> 01:07:53,476
+So, S gives us A, A, B, A, E, E.
+
+251
+01:07:54,996 --> 01:07:59,056
+B gives us BB, BDD.
+
+252
+01:08:00,052 --> 01:08:02,972
+ve B'ye cc.
+
+253
+01:08:02,972 --> 01:08:14,112
+En a way, we can think of these three rules, three very important rules in this production.
+
+254
+01:08:18,003 --> 01:08:18,564
+No.
+
+255
+01:08:24,307 --> 01:08:31,487
+Notice that this part
+
+256
+01:08:39,891 --> 01:08:42,592
+B, this part.
+
+257
+01:08:44,492 --> 01:08:46,351
+We can remove this.
+
+258
+01:08:47,072 --> 01:09:01,112
+So when we use from start, when we start from S and obtain A, B, E, E, E, instead of using this part, we can just use this one.
+
+259
+01:09:01,652 --> 01:09:04,391
+We can directly change B into CC.
+
+260
+01:09:05,779 --> 01:09:08,979
+We can write CC here, right?
+
+261
+01:09:09,939 --> 01:09:18,139
+And that's like, in a way, we are removing that middle part.
+
+262
+01:09:18,559 --> 01:09:24,059
+We are kind of getting rid of this region, right?
+
+263
+01:09:25,379 --> 01:09:28,459
+And what happens when we remove this region?
+
+264
+01:09:31,019 --> 01:09:31,719
+I'm sorry.
+
+265
+01:09:33,235 --> 01:09:39,716
+In a way, we are removing this BD and this DD, right?
+
+266
+01:09:41,976 --> 01:09:47,355
+In a way, we are making the power zero.
+
+267
+01:09:56,884 --> 01:10:20,484
+And notice that when we remove this DB and DD, these two parts, remaining string is still in the language of the grammar, right?
+
+268
+01:10:26,515 --> 01:10:33,595
+We can do inverse of this. We can, instead of removing this middle region,
+
+269
+01:10:37,395 --> 01:10:38,895
+We can repeat it.
+
+270
+01:10:40,475 --> 01:10:43,435
+We will use this rule twice.
+
+271
+01:10:45,255 --> 01:10:46,216
+Right?
+
+272
+01:10:47,216 --> 01:10:51,475
+And if you notice, you could write this.
+
+273
+01:10:53,716 --> 01:10:58,255
+Because we are using this rule twice,
+
+274
+01:10:59,935 --> 01:11:01,315
+this BB,
+
+275
+01:11:04,307 --> 01:11:08,407
+is produced twice, so its power becomes twice.
+
+276
+01:11:09,507 --> 01:11:11,788
+Similarly, that DD.
+
+277
+01:11:12,427 --> 01:11:14,148
+So this DD
+
+278
+01:11:14,148 --> 01:11:18,788
+comes twice.
+
+279
+01:11:23,731 --> 01:11:25,731
+B, B.
+
+280
+01:11:42,003 --> 01:11:55,724
+So, and the language, the string that we obtained is still in the language of the grammar, right?
+
+281
+01:11:55,724 --> 01:12:03,683
+In fact, we can repeat this middle part three times, right?
+
+282
+01:12:03,683 --> 01:12:09,363
+And we have a pattern here.
+
+283
+01:12:11,283 --> 01:12:24,724
+The number of times we put this middle part, middle region, is the same number of the power of EB and DD, right?
+
+284
+01:12:25,203 --> 01:12:29,583
+So if we repeat three times, we have three here.
+
+285
+01:12:31,884 --> 01:12:35,523
+And again, this is in the language, right?
+
+286
+01:12:39,315 --> 01:12:54,775
+The rule, the pattern we see here is we can repeat this middle part i times, right?
+
+287
+01:12:54,775 --> 01:13:05,615
+And the string we will obtain.
+
+288
+01:13:06,260 --> 01:13:14,300
+We'll have BB, I times, and DD, I times.
+
+289
+01:13:31,155 --> 01:13:32,716
+So, we have a rule here.
+
+290
+01:13:36,115 --> 01:13:54,416
+The AAPBICCDDIEE is in the language of the grammar for any i larger than or equal to zero.
+
+291
+01:14:19,828 --> 01:14:30,948
+So, what did we do? We were given a grammar, and we were also given a string.
+
+292
+01:14:33,188 --> 01:14:41,828
+We noticed that this string is a part of a family.
+
+293
+01:14:45,939 --> 01:14:56,519
+And in this family, BB and DD can be omitted or repeated as many as we want.
+
+294
+01:14:57,579 --> 01:15:01,619
+And all of them will be in the language, right?
+
+295
+01:15:03,979 --> 01:15:11,420
+So this rule can be applied to any infinite grammar.
+
+296
+01:15:12,916 --> 01:15:14,916
+Enivalid, infinite gramer.
+
+297
+01:15:31,220 --> 01:15:39,479
+For example, consider L, which is an infinite context-free language.
+
+298
+01:15:39,479 --> 01:15:39,739
+Yeah.
+
+299
+01:15:41,300 --> 01:15:41,680
+Sorry.
+
+300
+01:15:43,360 --> 01:15:47,420
+And let GED grammar of this language.
+
+301
+01:15:49,579 --> 01:15:51,440
+Accept null string.
+
+302
+01:15:51,440 --> 01:15:51,979
+So.
+
+303
+01:15:58,036 --> 01:16:04,695
+We can convert G. We can remove unit productions and null productions.
+
+304
+01:16:04,695 --> 01:16:14,496
+So a version of the grammar that doesn't have unit productions or null productions.
+
+305
+01:16:16,376 --> 01:16:24,456
+Now, let R be the number of variables.
+
+306
+01:16:26,100 --> 01:16:33,900
+And let T be the maximum right-hand size of any production.
+
+307
+01:16:34,900 --> 01:16:43,739
+For example, in this example, how many variables do we have?
+
+308
+01:16:44,040 --> 01:16:50,060
+One, two, three, four, five.
+
+309
+01:16:50,980 --> 01:16:51,280
+Right?
+
+310
+01:16:51,659 --> 01:16:53,140
+We have five variables.
+
+311
+01:16:56,659 --> 01:17:04,059
+What is the maximum right-hand? Right-hand size. Here, right-hand size is 1.
+
+312
+01:17:07,828 --> 01:17:10,488
+Here, right-hand size is 2.
+
+313
+01:17:11,808 --> 01:17:14,948
+Here, right-hand size is 3.
+
+314
+01:17:16,768 --> 01:17:18,408
+Again, 3.
+
+315
+01:17:19,168 --> 01:17:21,068
+Again, right-hand size is 3.
+
+316
+01:17:21,068 --> 01:17:27,288
+So, maximum right-hand size of any production is 3.
+
+317
+01:17:29,028 --> 01:17:31,908
+And we have five variables.
+
+318
+01:17:36,467 --> 01:17:37,747
+We have a claim.
+
+319
+01:17:37,927 --> 01:17:38,868
+What does this say?
+
+320
+01:17:40,728 --> 01:17:51,627
+Take stringW in the language with size is larger than T to the R.
+
+321
+01:17:53,528 --> 01:17:55,708
+So what does that make?
+
+322
+01:17:57,047 --> 01:17:58,827
+3 to the 5, right?
+
+323
+01:18:02,707 --> 01:18:28,667
+So, if we have this, if we have a string that has size more than 3 to the 5, then in the derivation tree of W, there is a path from the root to a leaf where
+
+324
+01:18:29,363 --> 01:18:31,443
+A variable of g is repeated.
+
+325
+01:18:33,884 --> 01:18:47,144
+So that means any such string will have at least one variable that is repeated.
+
+326
+01:18:57,747 --> 01:19:02,367
+There is a proof by contradiction for this.
+
+327
+01:19:04,447 --> 01:19:06,227
+And what is this number, by the way?
+
+328
+01:19:08,087 --> 01:19:08,987
+3 to the 5.
+
+329
+01:19:11,327 --> 01:19:12,268
+Bu kaç arkadaşlar?
+
+330
+01:19:14,108 --> 01:19:15,227
+243 hocam.
+
+331
+01:19:16,268 --> 01:19:17,188
+243.
+
+332
+01:19:20,188 --> 01:19:24,627
+Yani 243 is sembolden.
+
+333
+01:19:26,163 --> 01:19:38,083
+Daha uzun bir dize, bir kelime üretmeye çalışırsanız bu kuralda ne olacak?
+
+334
+01:19:41,564 --> 01:19:47,083
+Değişkenlerden bir tanesini, en azından bir tanesini tekrar kullanmak zorunda kalacaksınız.
+
+335
+01:19:49,083 --> 01:19:51,083
+Yani şöyle düşünebiliriz.
+
+336
+01:19:54,707 --> 01:20:22,087
+Daha da küçük olur ama değişkenleri, o kurallar var ya, kuralları sadece bir kere kullanırsanız, maksimum 243 müydü, 42 miydi? O uzunlukta bir ne elde edebiliriz? Dizi elde edebiliriz. Ondan sonra ne yapmamız gerekecek?
+
+337
+01:20:23,412 --> 01:20:33,712
+Kurallardan bir tanesini, değişken içeren kurallardan bir tanesini tekrar kullanmamız gerekecek. Bu da ne olmuş olacak? Değişkeni tekrar etmiş olacağız.
+
+338
+01:20:48,307 --> 01:20:50,307
+Evet, yani,
+
+339
+01:20:50,307 --> 01:20:54,307
+so we start with initial variable
+
+340
+01:20:54,307 --> 01:20:58,307
+and we have a long enough string
+
+341
+01:20:58,307 --> 01:21:00,307
+and
+
+342
+01:21:04,307 --> 01:21:06,307
+some variable
+
+343
+01:21:06,307 --> 01:21:08,307
+on some branch somehow,
+
+344
+01:21:08,307 --> 01:21:10,307
+for example,
+
+345
+01:21:10,307 --> 01:21:12,307
+this may be age.
+
+346
+01:21:12,307 --> 01:21:14,091
+This age
+
+347
+01:21:14,100 --> 01:21:38,764
+...
+
+348
+01:21:39,315 --> 01:21:43,916
+At least R plus 2 levels of nodes.
+
+349
+01:21:46,996 --> 01:21:47,435
+So,
+
+350
+01:21:48,796 --> 01:21:51,275
+number of
+
+351
+01:21:51,275 --> 01:21:54,976
+rules that you use
+
+352
+01:21:54,976 --> 01:21:58,695
+will be R plus 2.
+
+353
+01:21:59,136 --> 01:22:00,476
+And R, what was R?
+
+354
+01:22:01,815 --> 01:22:04,815
+R is number of variables.
+
+355
+01:22:10,771 --> 01:22:12,851
+Aruvaz namurof veriyibus.
+
+356
+01:22:20,435 --> 01:22:23,915
+And so this, first we show this part.
+
+357
+01:22:24,515 --> 01:22:25,956
+So this is a sub-proof.
+
+358
+01:22:26,575 --> 01:22:30,075
+And again, we will go with proof by contradiction.
+
+359
+01:22:30,495 --> 01:22:32,495
+So we suppose the opposite.
+
+360
+01:22:34,075 --> 01:22:42,655
+And we assume that there is, there are at most R plus 1 levels.
+
+361
+01:22:42,655 --> 01:22:43,895
+Okay.
+
+362
+01:22:44,615 --> 01:22:46,575
+In this strings.
+
+363
+01:22:58,739 --> 01:23:02,439
+So, maximum number of nodes per level.
+
+364
+01:23:07,444 --> 01:23:09,884
+That was T, right?
+
+365
+01:23:10,944 --> 01:23:12,364
+That was T.
+
+366
+01:23:14,904 --> 01:23:17,764
+Remember, for this example, it was three.
+
+367
+01:23:18,784 --> 01:23:29,044
+So for each level, you can obtain, in the example, three new nodes, right?
+
+368
+01:23:30,624 --> 01:23:32,864
+And on level zero,
+
+369
+01:23:33,908 --> 01:23:35,608
+We have just one node.
+
+370
+01:23:36,908 --> 01:23:41,347
+And on level one, we have T nodes.
+
+371
+01:23:41,768 --> 01:23:44,268
+We can have maximum T nodes, actually.
+
+372
+01:23:45,728 --> 01:23:47,007
+Maximum T nodes.
+
+373
+01:23:48,468 --> 01:23:49,548
+And...
+
+374
+01:23:53,427 --> 01:24:03,768
+Now, on the second level, on level two, we will have T square nodes, maximum.
+
+375
+01:24:06,347 --> 01:24:12,288
+So, if T is three, three times three, nine.
+
+376
+01:24:12,288 --> 01:24:20,208
+On the second level, in our example, we can have maximum nine nodes.
+
+377
+01:24:24,404 --> 01:24:38,164
+Now, going with this idea on level i, we see that we can have maximum T to the i nodes.
+
+378
+01:24:39,164 --> 01:24:50,164
+Now, if we have at most r plus one levels, we can have the...
+
+379
+01:24:50,207 --> 01:24:57,247
+Last level will be level R, because we start from level 0.
+
+380
+01:24:59,027 --> 01:25:05,067
+So, on the last level, we can have T to the R nodes.
+
+381
+01:25:14,868 --> 01:25:27,048
+So, each node may be a symbol at the last level here.
+
+382
+01:25:28,408 --> 01:25:36,007
+So, then we can have how many?
+
+383
+01:25:37,007 --> 01:25:41,908
+T to the R, a string of T to the R length.
+
+384
+01:25:42,323 --> 01:25:43,323
+size
+
+385
+01:25:43,323 --> 01:25:45,123
+maximum
+
+386
+01:25:45,123 --> 01:25:47,563
+therefore
+
+387
+01:25:47,563 --> 01:25:51,844
+maximum length
+
+388
+01:25:51,844 --> 01:25:53,344
+of string w
+
+389
+01:25:53,344 --> 01:25:56,203
+will be
+
+390
+01:25:56,203 --> 01:25:58,523
+less than or t to the r
+
+391
+01:25:58,523 --> 01:26:01,663
+however
+
+392
+01:26:01,663 --> 01:26:03,423
+we took
+
+393
+01:26:03,423 --> 01:26:06,543
+the size larger than
+
+394
+01:26:06,543 --> 01:26:08,163
+tr so we have a
+
+395
+01:26:08,163 --> 01:26:09,063
+contradiction
+
+396
+01:26:10,612 --> 01:26:23,532
+And by this contradiction, we come to the conclusion that the tree must have at least R plus two levels.
+
+397
+01:26:31,731 --> 01:26:51,332
+So, at the beginning, since we are showing this size is larger than, sorry, we are showing a variable is repeated when size is larger than T to the R.
+
+398
+01:26:52,131 --> 01:26:53,431
+This is a given.
+
+399
+01:26:55,828 --> 01:26:59,488
+The fact that size is larger than T to the R is given.
+
+400
+01:27:01,768 --> 01:27:10,028
+And so here the contradiction is with that given information.
+
+401
+01:27:15,539 --> 01:27:27,300
+Now, so in this language, we are continuing the upper groove.
+
+402
+01:27:28,380 --> 01:27:38,860
+So there is a path from the root to a leaf with at least R plus 1 nodes, right?
+
+403
+01:27:39,720 --> 01:27:41,239
+There is a path.
+
+404
+01:27:42,100 --> 01:27:47,100
+At least R plus 2 nodes.
+
+405
+01:27:47,100 --> 01:27:55,100
+And that means you will start with the initial variable.
+
+406
+01:27:55,100 --> 01:27:58,100
+Let's call it V1.
+
+407
+01:27:58,100 --> 01:28:03,100
+And from V1 you will have some V2.
+
+408
+01:28:03,100 --> 01:28:07,100
+From that you can have some V3.
+
+409
+01:28:13,555 --> 01:28:37,415
+And before giving the symbol, because when you use the rule that gives you a terminal, the production ends, terminates.
+
+410
+01:28:37,415 --> 01:28:40,216
+You cannot continue.
+
+411
+01:28:41,140 --> 01:28:48,600
+Before the terminals, there must be variables, right?
+
+412
+01:28:48,600 --> 01:28:58,360
+So, there are R plus 1 steps that include variables.
+
+413
+01:28:59,940 --> 01:29:04,040
+In the R plus 2, in the step R plus 2,
+
+414
+01:29:05,492 --> 01:29:27,148
+Bir sonraki bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir şekilde, bir
+
+415
+01:29:30,260 --> 01:29:32,479
+We have r variables.
+
+416
+01:29:33,920 --> 01:29:39,180
+But we are talking about r plus one variables.
+
+417
+01:29:40,640 --> 01:29:45,960
+So at least one variable is repeated, right?
+
+418
+01:29:47,680 --> 01:29:51,120
+And this is called pigeonhole principle, by the way.
+
+419
+01:29:52,479 --> 01:29:55,120
+So we have...
+
+420
+01:29:56,467 --> 01:30:10,087
+R plus one steps productions, but we have only R variables in this part.
+
+421
+01:30:11,087 --> 01:30:15,307
+So at least one variable will be used twice.
+
+422
+01:30:21,171 --> 01:30:27,751
+Okay, so we proved that we use at least one variable twice.
+
+423
+01:30:30,931 --> 01:30:36,311
+If the size of the string is larger than T to the R.
+
+424
+01:30:40,500 --> 01:30:41,020
+No.
+
+425
+01:30:47,091 --> 01:30:58,731
+Let's take one of these variables, H. H is repeated, right?
+
+426
+01:30:58,731 --> 01:31:01,672
+Now,
+
+427
+01:31:06,195 --> 01:31:30,155
+Consider the deepest H. So not this one, but this one. Sorry, this one. The deepest. So in that subtree, only H is repeated.
+
+428
+01:31:33,427 --> 01:31:33,927
+So,
+
+429
+01:31:37,876 --> 01:31:41,456
+There might be more than one variable that repeats.
+
+430
+01:31:42,836 --> 01:31:46,156
+You are taking the deepest variable.
+
+431
+01:31:48,355 --> 01:31:51,876
+And in that part, only age is repeated.
+
+432
+01:31:52,876 --> 01:31:57,956
+In this part, only age is repeated.
+
+433
+01:31:58,156 --> 01:32:01,435
+You are trying to find such a subtree.
+
+434
+01:32:06,387 --> 01:32:14,827
+Now, we can divide this string W into five parts.
+
+435
+01:32:15,988 --> 01:32:21,048
+Let us call each part, let us give each part a name.
+
+436
+01:32:21,048 --> 01:32:27,288
+For example, U, V, X, Y, Z.
+
+437
+01:32:27,747 --> 01:32:31,087
+Each of these is a part of the tree.
+
+438
+01:32:32,500 --> 01:32:36,500
+of this W.
+
+439
+01:32:38,500 --> 01:32:43,500
+So, what happens is, we are starting with the initial symbol S.
+
+440
+01:32:45,500 --> 01:32:54,500
+Now, we have some productions and we obtain H first time.
+
+441
+01:32:56,500 --> 01:32:57,500
+Now,
+
+442
+01:32:58,644 --> 01:33:08,524
+The part before H, this part, this part is you.
+
+443
+01:33:14,612 --> 01:33:22,112
+The part after age, the first age.
+
+444
+01:33:22,112 --> 01:33:24,112
+We have...
+
+445
+01:33:27,604 --> 01:33:28,604
+Z
+
+446
+01:33:34,899 --> 01:33:44,260
+Now, we will have some productions, then we will repeat H the first time.
+
+447
+01:33:45,559 --> 01:33:47,859
+We are repeating the H first time.
+
+448
+01:33:50,000 --> 01:34:01,920
+Now, the part before that H and the previous H is called V.
+
+449
+01:34:03,315 --> 01:34:04,956
+This part will be V.
+
+450
+01:34:09,036 --> 01:34:16,275
+And the subtree after H yields Y.
+
+451
+01:34:20,020 --> 01:34:26,880
+Let's also notice, right, that part.
+
+452
+01:34:28,200 --> 01:34:36,540
+Now, the part after age, this part.
+
+453
+01:34:40,756 --> 01:34:44,775
+That part, that sub-tree yields X.
+
+454
+01:34:45,775 --> 01:34:46,576
+This X.
+
+455
+01:34:58,260 --> 01:35:09,420
+So we can map the string parts into these subtrees.
+
+456
+01:35:11,420 --> 01:35:18,300
+In previous example, we had this A, B, B, C, C, D, D, E string.
+
+457
+01:35:20,300 --> 01:35:22,300
+And B
+
+458
+01:35:23,091 --> 01:35:26,011
+was the variable that repeats.
+
+459
+01:35:27,891 --> 01:35:28,412
+And
+
+460
+01:35:33,619 --> 01:35:46,199
+Before the first B, there is A, and from that A, we can obtain AA, and that becomes our U.
+
+461
+01:35:47,899 --> 01:35:58,760
+After that B, we have E, and from that E, we obtain EE, and that becomes our Z.
+
+462
+01:36:02,228 --> 01:36:12,028
+Now, after the last B, we have CC, and that becomes our X.
+
+463
+01:36:15,796 --> 01:36:33,536
+Now, between these two B's, starting from the first B, just before the second B, we have this part, B, B.
+
+464
+01:36:35,156 --> 01:36:38,176
+And we call that V.
+
+465
+01:36:39,476 --> 01:36:43,716
+And again, between these two B's,
+
+466
+01:36:45,076 --> 01:36:53,195
+After the second P, a DD is produced.
+
+467
+01:36:53,195 --> 01:36:57,036
+That is our Y.
+
+468
+01:36:58,716 --> 01:36:59,036
+Right?
+
+469
+01:36:59,976 --> 01:37:00,939
+So...
+
+470
+01:37:05,300 --> 01:37:10,560
+So in a way, we are dividing the string into these five parts.
+
+471
+01:37:12,680 --> 01:37:20,120
+We are dividing into five parts, but somewhat they are related, right?
+
+472
+01:37:20,280 --> 01:37:24,440
+So U and Z is related.
+
+473
+01:37:24,440 --> 01:37:24,880
+How?
+
+474
+01:37:25,880 --> 01:37:31,460
+They are the parts before first P and after first P.
+
+475
+01:37:33,076 --> 01:37:40,636
+Ve ve yi'ye
+
+476
+01:37:40,636 --> 01:38:00,256
+ve yi'ye
+
+477
+01:38:01,587 --> 01:38:04,507
+ve X'i dey, yöntemli.
+
+478
+01:38:11,699 --> 01:38:26,500
+So, notice that a possible way is, a possible derivation for the string is this way.
+
+479
+01:38:26,500 --> 01:38:35,899
+First, you start with S. You obtain the first variable.
+
+480
+01:38:39,315 --> 01:38:45,115
+And while you are obtaining that, you also obtain U and Z.
+
+481
+01:38:47,976 --> 01:38:56,036
+And then you kind of use the second implication.
+
+482
+01:38:57,476 --> 01:39:00,115
+You obtain the second H.
+
+483
+01:39:02,115 --> 01:39:02,835
+Right?
+
+484
+01:39:03,539 --> 01:39:13,559
+And before that, the part before that, terminals before that is V, terminals after that are Y.
+
+485
+01:39:15,000 --> 01:39:23,880
+And you terminate with this final implication, H implies X.
+
+486
+01:39:24,720 --> 01:39:26,079
+That part is X.
+
+487
+01:39:34,452 --> 01:39:53,051
+So, in our example, we have this, for example, we had, we start from initial variable s, and that, from that we produces, we produced AA, P, EE.
+
+488
+01:39:53,051 --> 01:40:00,551
+Now, this AA is u, this EE is z.
+
+489
+01:40:02,292 --> 01:40:12,152
+And then we can kind of think of this production that gives us recursion on B.
+
+490
+01:40:12,832 --> 01:40:14,912
+So B produces B.
+
+491
+01:40:15,971 --> 01:40:20,272
+And the part before that becomes our B.
+
+492
+01:40:22,272 --> 01:40:25,152
+After that, B becomes our Y.
+
+493
+01:40:26,387 --> 01:40:35,327
+And finally, we can use this B produces C, C, and that's over X, C series over X.
+
+494
+01:40:37,188 --> 01:40:44,547
+Now, we can actually remove this middle part.
+
+495
+01:40:44,547 --> 01:40:46,587
+So there was a production here.
+
+496
+01:40:47,148 --> 01:40:51,887
+B produces, again, a B, that part.
+
+497
+01:40:52,467 --> 01:40:55,587
+We can remove that part, right?
+
+498
+01:40:56,448 --> 01:40:59,287
+So, we are talking about this.
+
+499
+01:40:59,627 --> 01:41:01,707
+We can remove this, right?
+
+500
+01:41:02,587 --> 01:41:03,627
+And what will happen?
+
+501
+01:41:04,907 --> 01:41:09,167
+BB and DD will go away.
+
+502
+01:41:10,547 --> 01:41:14,987
+In a way, we are making their power zero.
+
+503
+01:41:15,887 --> 01:41:17,887
+We are getting rid of them.
+
+504
+01:41:20,500 --> 01:41:28,460
+So, and notice that this is still in the language of the grammar.
+
+505
+01:41:30,260 --> 01:41:36,899
+And we can repeat that middle part two times instead of once.
+
+506
+01:41:36,899 --> 01:41:40,819
+So we are using this twice.
+
+507
+01:41:42,039 --> 01:41:45,519
+And since we are using this twice, this V,
+
+508
+01:41:47,507 --> 01:41:53,408
+So, power of V will be two.
+
+509
+01:41:54,927 --> 01:41:57,768
+And power of Y will be two.
+
+510
+01:41:58,967 --> 01:42:00,427
+It will also be two.
+
+511
+01:42:01,528 --> 01:42:06,408
+So, the power of V and Y is same.
+
+512
+01:42:08,028 --> 01:42:14,688
+And we can repeat both the same, both.
+
+513
+01:42:15,167 --> 01:42:17,387
+say in times.
+
+514
+01:42:19,448 --> 01:42:24,707
+And the resulting string will be still in the language.
+
+515
+01:42:31,556 --> 01:42:34,756
+Ve bu üçüncü,
+
+516
+01:42:34,756 --> 01:42:44,756
+üçüncü,
+
+517
+01:42:44,756 --> 01:42:46,756
+bir adı.
+
+518
+01:42:46,756 --> 01:42:48,756
+Bu,
+
+519
+01:42:48,756 --> 01:42:50,756
+bir adı.
+
+520
+01:42:50,756 --> 01:42:52,524
+Bu,
+
+521
+01:42:52,756 --> 01:42:53,756
+bir adı.
+
+522
+01:42:53,844 --> 01:43:18,503
+And each time a y will be added. So power of y will be again i. And what we obtained will be in the language. So as a result, we have this rule.
+
+523
+01:43:19,380 --> 01:43:38,960
+If the length of the string is larger than T to the R, and if we know that we can divide string into these five parts, u, v, x, v, z,
+
+524
+01:43:46,868 --> 01:43:57,128
+Then we also know that V to the I and Y to the I can be repeated.
+
+525
+01:44:00,708 --> 01:44:06,988
+Their power can be any number from zero to infinite.
+
+526
+01:44:08,828 --> 01:44:12,628
+And that these will be in the language.
+
+527
+01:44:14,068 --> 01:44:18,247
+Ease will be in the language.
+
+528
+01:44:23,699 --> 01:44:30,079
+Now, there are some additional observations we can take, we can make.
+
+529
+01:44:32,819 --> 01:44:36,579
+So, right.
+
+530
+01:44:38,579 --> 01:44:41,079
+So, one observation is...
+
+531
+01:44:45,300 --> 01:44:50,739
+The size of we and why together should be larger than one.
+
+532
+01:44:54,739 --> 01:44:59,840
+Because we got rid of unit productions and null productions.
+
+533
+01:45:04,039 --> 01:45:14,440
+So, since we are repeating H, there must be at least one symbol coming from here.
+
+534
+01:45:15,300 --> 01:45:19,520
+And there must be at least one symbol coming from here.
+
+535
+01:45:20,920 --> 01:45:21,680
+Or.
+
+536
+01:45:22,292 --> 01:45:23,732
+Not and, but or.
+
+537
+01:45:25,032 --> 01:45:34,212
+So, together, we and y should be larger than one in size.
+
+538
+01:45:37,392 --> 01:45:40,272
+At least one of them is not now.
+
+539
+01:45:47,123 --> 01:45:59,963
+Now, another observation is, this, the size of the middle part, vxy, this part.
+
+540
+01:46:04,467 --> 01:46:07,728
+B, X, Y.
+
+541
+01:46:09,987 --> 01:46:17,007
+This size is less than T to the R plus one.
+
+542
+01:46:22,644 --> 01:46:31,144
+Because in this subtree, we selected the subtree such that only variable h is repeated.
+
+543
+01:46:32,844 --> 01:46:36,423
+Here, only variable h is repeated.
+
+544
+01:46:38,364 --> 01:46:40,984
+And you can see the reason.
+
+545
+01:46:41,724 --> 01:46:45,224
+In this part, we don't have u and z, right?
+
+546
+01:46:46,744 --> 01:46:47,624
+And
+
+547
+01:46:48,851 --> 01:46:57,051
+U, V, X, Y, Z together is larger than T to the R in size.
+
+548
+01:46:57,992 --> 01:47:04,952
+And if U and Z are non-null, at least one of them, this claim is true.
+
+549
+01:47:05,112 --> 01:47:07,652
+Let's see what the slide says.
+
+550
+01:47:17,011 --> 01:47:20,011
+Let's consider this subtree of H.
+
+551
+01:47:24,083 --> 01:47:27,083
+We have H, right?
+
+552
+01:47:28,463 --> 01:47:37,463
+And somehow we have these subtrees of this subtrees.
+
+553
+01:47:40,283 --> 01:47:49,423
+And we have somehow strings S1, S2, or SK yielded.
+
+554
+01:47:49,423 --> 01:47:51,483
+And they are together.
+
+555
+01:47:52,627 --> 01:47:56,307
+Together, they are, they became Vxy.
+
+556
+01:47:59,387 --> 01:48:11,207
+Now, each of these S's, S1, S2, Sk, are less than T to the R in size.
+
+557
+01:48:14,207 --> 01:48:19,627
+Each of them are T to the R because those are the parts.
+
+558
+01:48:21,011 --> 01:48:24,011
+ve no variable is repeated.
+
+559
+01:48:26,211 --> 01:48:29,011
+Çünkü h is repeated,
+
+560
+01:48:29,011 --> 01:48:32,011
+ve
+
+561
+01:48:32,011 --> 01:48:36,011
+except that no variable is repeated in this part.
+
+562
+01:48:37,011 --> 01:48:40,011
+So each of these
+
+563
+01:48:41,011 --> 01:48:45,011
+are the subtrees with no repetition.
+
+564
+01:48:48,720 --> 01:48:52,300
+Smaller in size than T to the R.
+
+565
+01:48:54,860 --> 01:49:10,540
+And now, Vxy, the size of Vxy, is some of the size of these S's, right?
+
+566
+01:49:11,347 --> 01:49:17,248
+Size of S1, size of S2, size of Sk, right?
+
+567
+01:49:18,507 --> 01:49:24,908
+And how many we have? We have k, let's say, subtrees.
+
+568
+01:49:26,387 --> 01:49:35,007
+And so that sum is less than k to the t to the r.
+
+569
+01:49:36,051 --> 01:49:41,471
+Because each of these can be maximum T to the R, and we have K of them.
+
+570
+01:49:43,151 --> 01:49:51,011
+So that sum can be maximum K times T to the R.
+
+571
+01:49:52,411 --> 01:49:59,831
+And now here, K is smaller than T.
+
+572
+01:50:02,707 --> 01:50:06,807
+So, number of variables.
+
+573
+01:50:14,707 --> 01:50:21,387
+So, number of right-hand side of any production should be larger than K.
+
+574
+01:50:24,507 --> 01:50:25,467
+Why?
+
+575
+01:50:31,988 --> 01:50:36,968
+Bunu görebiliyor musunuz? K neden T'den küçük olacak?
+
+576
+01:50:44,948 --> 01:50:46,508
+Direkt göremedim ben şimdi.
+
+577
+01:50:48,988 --> 01:50:56,548
+Hocam çünkü ben şey sanıyorum, her nodun en fazla T çocuğu olabiliyordu ya.
+
+578
+01:50:59,208 --> 01:51:00,847
+O yüzden olabilir mi?
+
+579
+01:51:02,208 --> 01:51:08,828
+Doğru. Haklısın. Ondan doğru, güzel tespit ettim.
+
+580
+01:51:11,347 --> 01:51:28,328
+Her dudun en fazla T tane çocuğu olabiliyor. Dolayısıyla birinci çocuğu S1 dedik, ikinci çocuğu S2 dedik. Bu çocuklar en fazla zaten T. Teşekkür ediyorum [öğrenci].
+
+581
+01:51:34,707 --> 01:51:41,667
+So, K times T to the R is less than T times T to the R.
+
+582
+01:51:42,268 --> 01:51:47,967
+And then that multiplication gives us T to the R plus one.
+
+583
+01:51:48,908 --> 01:51:50,347
+So what was the claim?
+
+584
+01:51:52,127 --> 01:51:59,667
+Size of VXW is less than or equal to T to the R plus one.
+
+585
+01:52:00,435 --> 01:52:14,731
+Ve bu,
+
+586
+01:52:18,771 --> 01:52:37,412
+The length, if we choose the critical length as T to the R plus one, at least, and we call it P. So critical length is called P.
+
+587
+01:52:40,931 --> 01:52:43,572
+Then we obtain the pumping lemma.
+
+588
+01:52:44,435 --> 01:52:47,555
+P is larger than T to the R.
+
+589
+01:52:49,055 --> 01:52:56,136
+So now I will read pumping lemma now.
+
+590
+01:52:57,355 --> 01:53:04,355
+The pumping lemma just states everything we noticed so far.
+
+591
+01:53:05,136 --> 01:53:10,296
+Everything we obtained, we noticed, it will be in this lemma.
+
+592
+01:53:11,572 --> 01:53:16,572
+ve bu bir break.
+
+593
+01:53:16,572 --> 01:53:21,572
+Bu bir lemma için kullanılıyor.
+
+594
+01:53:21,572 --> 01:53:26,572
+Bu bir language değil.
+
+595
+01:53:26,572 --> 01:53:35,572
+Bu bir example.
+
+596
+01:53:36,275 --> 01:53:39,215
+So, what is the pumping lemma? What does it say?
+
+597
+01:53:40,715 --> 01:53:42,015
+It's kind of big.
+
+598
+01:53:43,715 --> 01:53:46,595
+It's large, but you need to know it.
+
+599
+01:53:47,755 --> 01:53:50,135
+So, what does that say? What does it say?
+
+600
+01:53:50,135 --> 01:54:02,955
+It says that for any infinite context-free language L, there exists a critical length P.
+
+601
+01:54:04,275 --> 01:54:22,475
+There exists an integer P such that for any string W in the language that has size larger or equal to P.
+
+602
+01:54:22,815 --> 01:54:28,055
+So the size of the string is P or large.
+
+603
+01:54:28,055 --> 01:54:29,775
+It's a large string.
+
+604
+01:54:32,243 --> 01:54:39,423
+We can divide that W, that string, into five parts, U, V, X, Y, Z.
+
+605
+01:54:41,823 --> 01:54:55,723
+And we can divide such that the length of the middle part, V, X, Y, will be less than or equal to P.
+
+606
+01:54:59,283 --> 01:55:09,203
+The size of Vy, these two together, should be one or more.
+
+607
+01:55:09,203 --> 01:55:12,804
+So, only one of these can be null.
+
+608
+01:55:13,963 --> 01:55:16,163
+They can't be both null.
+
+609
+01:55:16,443 --> 01:55:18,163
+They cannot be null together.
+
+610
+01:55:20,483 --> 01:55:26,163
+So, we can divide this way with these length constraints.
+
+611
+01:55:28,595 --> 01:55:35,875
+And we can change the power of y as we want.
+
+612
+01:55:37,155 --> 01:55:42,115
+And the strings we obtain will still be in the language.
+
+613
+01:55:43,235 --> 01:55:47,675
+We can comp down, make i zero.
+
+614
+01:55:49,515 --> 01:55:53,715
+So we can kind of remove v and y.
+
+615
+01:55:54,163 --> 01:55:58,284
+We will have U, X, Z. It will be in the language.
+
+616
+01:55:59,444 --> 01:56:05,043
+Or we can make I, 2, 3, 10, whatever.
+
+617
+01:56:06,703 --> 01:56:09,444
+And we will obtain different strings.
+
+618
+01:56:10,043 --> 01:56:12,884
+And those strings will still be in the language.
+
+619
+01:56:14,984 --> 01:56:16,724
+That's the pumping lemma.
+
+620
+01:56:18,324 --> 01:56:18,944
+And
+
+621
+01:56:20,051 --> 01:56:21,891
+How will we use this?
+
+622
+01:56:25,271 --> 01:56:30,532
+We will use this when we want to prove that a language is not context-free.
+
+623
+01:56:31,192 --> 01:56:37,591
+For that, we will assume the language is context-free for contradiction.
+
+624
+01:56:39,231 --> 01:56:44,752
+And then we will search these divisions.
+
+625
+01:56:45,832 --> 01:56:46,752
+We will think, okay,
+
+626
+01:56:47,247 --> 01:57:03,747
+If we divide a long enough string W this way, can we obtain uvxyz with these constraints?
+
+627
+01:57:05,567 --> 01:57:11,267
+We will try to find all possible divisions.
+
+628
+01:57:11,267 --> 01:57:14,087
+We will check all possible divisions.
+
+629
+01:57:15,028 --> 01:57:30,028
+ve
+
+630
+01:57:36,948 --> 01:57:39,688
+Let's give a 10 minutes break.
+
+631
+01:57:39,928 --> 01:57:47,588
+After that, we will do an example and you will see this more easily.
+
+632
+01:57:47,828 --> 01:57:52,887
+Also, we also learned another pumping lemma, right?
+
+633
+01:57:54,168 --> 01:57:56,788
+Pumping lemma for regular languages.
+
+634
+01:57:57,428 --> 01:58:00,108
+We used this the same way.
+
+635
+01:58:00,108 --> 01:58:01,428
+The logic is the same.
+
+636
+01:58:02,163 --> 01:58:10,363
+Only in the regular languages, pumping lemma, we divide W into three parts.
+
+637
+01:58:11,144 --> 01:58:15,103
+Here, we are dividing W into five parts.
+
+638
+01:58:17,844 --> 01:58:23,323
+So, but the usage is almost the same.
+
+639
+01:58:25,403 --> 01:58:29,264
+Any questions before I give a break?
+
+640
+01:58:33,587 --> 01:58:39,667
+Ok, then let's give a 10 minutes break. After that, we will see an example.
+
+641
+02:08:59,444 --> 02:09:01,204
+Arkadaşlar, tekrar merhabalar.
+
+642
+02:09:03,124 --> 02:09:04,064
+Sesim geliyor mu?
+
+643
+02:09:30,644 --> 02:09:31,523
+Sesim geliyor ama.
+
+644
+02:09:35,283 --> 02:09:36,064
+Geliyor hocam.
+
+645
+02:09:36,543 --> 02:09:37,644
+Peki, teşekkürler.
+
+646
+02:09:43,252 --> 02:09:47,072
+So, we were talking about pumping lemma.
+
+647
+02:09:50,899 --> 02:09:57,899
+ve
+
+648
+02:10:06,484 --> 02:10:32,084
+For any infinite language L, there exists an integer P, we will call this P critical length, such that for instance, 3W in the language and size larger than or equal to P, we can write V equals to U VXYZ.
+
+649
+02:10:33,460 --> 02:10:59,879
+If it lengths of BXY smaller than or equal to P and length of VY larger than one, and it must be that U V to the I, X, Y to the I, Z is in the language for all I larger than or equal to zero.
+
+650
+02:11:01,684 --> 02:11:05,464
+So this is the pumping lemma. Let's look at an example.
+
+651
+02:11:09,844 --> 02:11:20,024
+Now, A to the N, B to the N, C to the N, such that N is larger than or equal to zero.
+
+652
+02:11:20,944 --> 02:11:23,944
+This language is not context-free.
+
+653
+02:11:26,524 --> 02:11:27,204
+So,
+
+654
+02:11:28,435 --> 02:11:39,095
+Let's prove this. Let's prove this. And as we discussed, we will use amperegramma for this.
+
+655
+02:11:43,667 --> 02:11:54,528
+So, for contradiction, we will assume that L is context-free.
+
+656
+02:11:54,528 --> 02:12:10,648
+Now, since L is context-free for contradiction, we must be able to apply pumping lemma to it.
+
+657
+02:12:11,188 --> 02:12:11,748
+Right?
+
+658
+02:12:12,748 --> 02:12:15,608
+And L is infinite and context-free.
+
+659
+02:12:16,768 --> 02:12:24,028
+So, now, let P be the critical length of the pumping lemma.
+
+660
+02:12:27,988 --> 02:12:42,488
+So, that means we can pick any string W in the language with length larger than this pumping lemma, larger than or cool too.
+
+661
+02:12:43,707 --> 02:12:45,427
+And we cannot buy pumping lemma.
+
+662
+02:12:46,568 --> 02:12:48,587
+So, what can we do?
+
+663
+02:12:49,844 --> 02:12:57,484
+We can pick A to the P, B to the P, C to the P as a string.
+
+664
+02:13:01,564 --> 02:13:02,284
+Here,
+
+665
+02:13:07,539 --> 02:13:13,979
+P is larger, the length of this string is 3P.
+
+666
+02:13:14,759 --> 02:13:17,339
+So the length is larger than P.
+
+667
+02:13:18,559 --> 02:13:23,359
+And the string is in the language.
+
+668
+02:13:24,960 --> 02:13:28,500
+It conforms to this form.
+
+669
+02:13:29,939 --> 02:13:31,920
+So it's in the language.
+
+670
+02:13:33,043 --> 02:13:36,824
+So, we should be able to apply the pumping lemma into it.
+
+671
+02:13:40,844 --> 02:13:43,384
+So, what does pumping lemma say?
+
+672
+02:13:44,524 --> 02:13:52,503
+We should be able to divide this string into five parts, u, v, x, y, z,
+
+673
+02:13:52,503 --> 02:13:57,043
+such that v, x, y,
+
+674
+02:13:59,412 --> 02:14:07,192
+must be less than P, less than or equal to, and Vy must be less than or equal to one.
+
+675
+02:14:08,632 --> 02:14:11,632
+So greater than or equal to one in size.
+
+676
+02:14:13,351 --> 02:14:19,712
+So these are all kind of constraints.
+
+677
+02:14:20,311 --> 02:14:22,231
+We must have this.
+
+678
+02:14:23,172 --> 02:14:24,472
+And in this case,
+
+679
+02:14:25,332 --> 02:14:27,832
+This should also be in the language.
+
+680
+02:14:29,091 --> 02:14:36,351
+Any i, pump down, pump up, i equals to zero, pump down, i equals to two, three, four, pump up.
+
+681
+02:14:36,912 --> 02:14:39,912
+These all should be in the language.
+
+682
+02:14:41,672 --> 02:14:52,212
+Now for this, we will examine all possible locations of vxy, the middle part.
+
+683
+02:14:53,011 --> 02:14:57,871
+All possible locations.
+
+684
+02:14:58,051 --> 02:15:01,571
+We need to search for all possible locations.
+
+685
+02:15:02,951 --> 02:15:07,271
+And none of those locations should work.
+
+686
+02:15:09,152 --> 02:15:09,751
+Let's see.
+
+687
+02:15:12,331 --> 02:15:18,511
+We will look at this case by case.
+
+688
+02:15:19,923 --> 02:15:41,664
+And let's say Vxy is in this first part here, in the A to the P part. So we have PAs, PBs, and PCs. And let's say Vxy is here in the first part.
+
+689
+02:15:41,664 --> 02:15:42,664
+Okay.
+
+690
+02:15:46,420 --> 02:15:48,000
+This is our first case.
+
+691
+02:15:49,780 --> 02:15:56,420
+Now, we want Vy larger than or equal to 1.
+
+692
+02:15:57,760 --> 02:16:08,420
+So, V must be A to the sum K in this case, since all of them is in Y.
+
+693
+02:16:09,160 --> 02:16:13,260
+Again, Y will be A to the sum K2.
+
+694
+02:16:14,868 --> 02:16:21,648
+Arkadaşlar, ve know that the size is larger than 1 or equal to 1.
+
+695
+02:16:21,988 --> 02:16:28,028
+Arkadaşlar, k1 plus k2 is 1 or more.
+
+696
+02:16:30,148 --> 02:16:37,208
+Arkadaşlar, these are all the things that we know.
+
+697
+02:16:37,208 --> 02:16:39,708
+Arkadaşlar, now...
+
+698
+02:16:39,968 --> 02:16:54,847
+What happens if we pump up? What happens if we make V to do two and Y to do two?
+
+699
+02:16:58,739 --> 02:17:00,919
+What happens?
+
+700
+02:17:02,099 --> 02:17:11,059
+Well, this K1 plus K2, now we will have two times.
+
+701
+02:17:15,316 --> 02:17:17,756
+2V's and 2Y's.
+
+702
+02:17:18,616 --> 02:17:27,536
+And so the size of this part will be P plus one more K1 plus K2.
+
+703
+02:17:29,636 --> 02:17:37,336
+And remember K1 plus K2 is one or more.
+
+704
+02:17:37,336 --> 02:17:42,416
+So we have P plus one or more A's.
+
+705
+02:17:44,275 --> 02:17:46,396
+Pb's, Pc's.
+
+706
+02:17:48,216 --> 02:17:50,475
+And this is not in the language, right?
+
+707
+02:17:51,255 --> 02:17:55,675
+Number of A's is more than number of B's or C's.
+
+708
+02:17:58,955 --> 02:18:07,056
+So, in this case, from pumping lemma, this should be in the language, but it is not.
+
+709
+02:18:07,615 --> 02:18:08,975
+So this is a contradiction.
+
+710
+02:18:09,655 --> 02:18:11,655
+On case one, we have a contradiction.
+
+711
+02:18:13,780 --> 02:18:15,319
+Consider case two.
+
+712
+02:18:17,659 --> 02:18:23,479
+Here we assume Bxy is in B to the P part.
+
+713
+02:18:23,579 --> 02:18:24,900
+So it's in the middle.
+
+714
+02:18:26,440 --> 02:18:29,159
+But this is very similar to case one, right?
+
+715
+02:18:30,180 --> 02:18:40,659
+When we come up, we will have more than As or Cs.
+
+716
+02:18:42,484 --> 02:18:44,644
+And look at case 3.
+
+717
+02:18:45,943 --> 02:18:53,123
+In this case, Vxy is in C to the P, the last part.
+
+718
+02:18:54,824 --> 02:18:57,764
+But again, this is similar to case 1.
+
+719
+02:18:58,443 --> 02:19:03,744
+We will have more Cs than A's or B's.
+
+720
+02:19:05,204 --> 02:19:07,123
+But the language requires...
+
+721
+02:19:08,244 --> 02:19:12,603
+exact same amount of A's, B's, and C's.
+
+722
+02:19:13,184 --> 02:19:14,623
+So it's not in the language.
+
+723
+02:19:16,123 --> 02:19:18,564
+Now, let's consider case four.
+
+724
+02:19:19,783 --> 02:19:20,804
+So in this case,
+
+725
+02:19:22,384 --> 02:19:24,984
+VXY is
+
+726
+02:19:24,984 --> 02:19:28,603
+in the, like, in between
+
+727
+02:19:28,603 --> 02:19:30,623
+A's and B's.
+
+728
+02:19:31,123 --> 02:19:34,164
+So it has some A's and some B's, right?
+
+729
+02:19:35,443 --> 02:19:50,283
+Now, let's look at this, let's examine this in sub-cases.
+
+730
+02:19:51,743 --> 02:19:56,023
+So, we will write a sub-case.
+
+731
+02:19:57,863 --> 02:19:59,883
+In the first sub-case,
+
+732
+02:20:01,363 --> 02:20:08,403
+V contains only A because Vxy is here, right?
+
+733
+02:20:09,524 --> 02:20:27,524
+So we assume that V has only As and Y has only Bs and X have some As and some Bs.
+
+734
+02:20:30,579 --> 02:20:39,079
+So, remember that we have this, the length of VY.
+
+735
+02:20:40,340 --> 02:20:47,000
+Now, it cannot be, so it cannot be, Vs and Vs cannot be null.
+
+736
+02:20:48,619 --> 02:20:50,479
+Their size must be one or more.
+
+737
+02:20:55,000 --> 02:20:55,639
+So,
+
+738
+02:20:57,172 --> 02:21:03,672
+This part can, at least 1A or at least 1B is in Vy.
+
+739
+02:21:10,675 --> 02:21:14,216
+Now, what happens if we pump up once?
+
+740
+02:21:16,955 --> 02:21:19,355
+What happens if we pump up once?
+
+741
+02:21:24,084 --> 02:21:38,103
+Now, we are increasing number of A's or we are increasing number of B's because one of them is at least one of them is non-love.
+
+742
+02:21:39,704 --> 02:21:47,263
+Now, this is not in the language because number of C's will be less than.
+
+743
+02:21:47,615 --> 02:21:50,536
+A's or number of B's, right?
+
+744
+02:21:51,135 --> 02:21:56,475
+One of the A's, A's or B's, will be increased in number.
+
+745
+02:21:57,635 --> 02:22:00,475
+The other two group will be same.
+
+746
+02:22:03,115 --> 02:22:05,835
+So again, here we have a contradiction.
+
+747
+02:22:30,772 --> 02:22:34,872
+We will continue with subcase 2.
+
+748
+02:22:47,316 --> 02:22:48,296
+PowerPoint durdu.
+
+749
+02:23:07,731 --> 02:23:11,391
+So, we will continue with subcase 2.
+
+750
+02:23:13,191 --> 02:23:20,092
+In this case, V contains A and B, and Y contains only B.
+
+751
+02:23:20,391 --> 02:23:23,051
+So, this part, V.
+
+752
+02:23:26,772 --> 02:23:28,372
+A and B.
+
+753
+02:23:30,231 --> 02:23:33,312
+And Y contains only B.
+
+754
+02:23:35,932 --> 02:23:36,432
+Right?
+
+755
+02:23:37,512 --> 02:23:40,532
+What happens if we pump this up?
+
+756
+02:23:43,652 --> 02:23:44,772
+Now,
+
+757
+02:23:46,772 --> 02:23:48,072
+in this case,
+
+758
+02:23:59,219 --> 02:24:06,379
+V is A to the K, B to the K2, Y is B to the K3, let's say.
+
+759
+02:24:07,899 --> 02:24:21,180
+And by assumption, neither K1 nor K2 is larger than 1.
+
+760
+02:24:23,180 --> 02:24:23,939
+Why?
+
+761
+02:24:31,123 --> 02:24:39,783
+Burayı görebildiniz mi? Burayı ilk bakışta göremedim. Neden K-1 birden büyük olmalı?
+
+762
+02:24:44,852 --> 02:24:48,092
+Neden K2 yine birden büyük olmanın?
+
+763
+02:24:49,952 --> 02:24:51,312
+By assumption diyor.
+
+764
+02:24:54,312 --> 02:25:02,731
+Yani buradaki varsayımımız V, A ve B'den oluşuyor dedik. Sanırım bundan dolayı.
+
+765
+02:25:05,132 --> 02:25:11,312
+By assumption, K1 and K2.
+
+766
+02:25:12,819 --> 02:25:14,659
+R, valor muş.
+
+767
+02:25:17,239 --> 02:25:17,860
+Okey.
+
+768
+02:25:21,716 --> 02:25:35,716
+We cannot say anything for K3 because since V is non-null, why can we null?
+
+769
+02:25:37,175 --> 02:25:40,155
+Why may or may not be null?
+
+770
+02:25:40,256 --> 02:25:42,256
+We don't know.
+
+771
+02:25:46,456 --> 02:25:47,376
+Okay.
+
+772
+02:25:48,691 --> 02:25:54,811
+So, what happens when we pump up?
+
+773
+02:25:56,611 --> 02:25:58,771
+We are pumping up.
+
+774
+02:26:00,011 --> 02:26:04,851
+Now, since we are pumping up, we have two V's.
+
+775
+02:26:05,011 --> 02:26:10,591
+So, A, B, some A's and B's, then some A's and B's.
+
+776
+02:26:10,591 --> 02:26:14,011
+So, this part here.
+
+777
+02:26:23,540 --> 02:26:29,880
+This part here, there are more than one problem here.
+
+778
+02:26:31,260 --> 02:26:35,880
+One problem is it doesn't conform to or...
+
+779
+02:26:39,603 --> 02:26:41,783
+or form in more, right?
+
+780
+02:26:42,723 --> 02:26:49,984
+Because A, N, some A's, some B's, then some A's.
+
+781
+02:26:50,883 --> 02:26:55,523
+So A's should be, this part should be homogenous.
+
+782
+02:26:56,403 --> 02:26:59,804
+There cannot be some B's in the middle of A, right?
+
+783
+02:26:59,804 --> 02:27:06,943
+So this doesn't conform to our form.
+
+784
+02:27:07,987 --> 02:27:23,188
+Another problem is number of this length, vxy, it should be less than or equal to p, its length.
+
+785
+02:27:23,188 --> 02:27:31,387
+Now, the length of vxy in this case, what is it?
+
+786
+02:27:36,659 --> 02:27:41,139
+Sorry, there is no problem here. Okay. So the problem is, I think,
+
+787
+02:27:46,708 --> 02:27:49,087
+The form changes, right?
+
+788
+02:27:49,508 --> 02:27:54,008
+It's not A to the N, B to the N, C to the N anymore.
+
+789
+02:27:54,747 --> 02:27:57,328
+Numbers are also different too.
+
+790
+02:27:57,328 --> 02:28:04,228
+So we have this much A.
+
+791
+02:28:05,268 --> 02:28:11,328
+So P plus 2K1 plus K2 A's.
+
+792
+02:28:12,788 --> 02:28:23,648
+But that's different from C, number of C's for sure, because K1 and K2 are non-zero.
+
+793
+02:28:26,188 --> 02:28:29,907
+So, again, we have a contradiction here.
+
+794
+02:28:30,567 --> 02:28:34,828
+This doesn't conform to our language form.
+
+795
+02:28:39,700 --> 02:28:50,700
+Now, subcase 3, this time Y will contain A and B here.
+
+796
+02:28:57,523 --> 02:29:00,843
+ve bu sadece A's.
+
+797
+02:29:02,523 --> 02:29:06,203
+Bu birçok birçok birçok birçok birçok.
+
+798
+02:29:07,363 --> 02:29:10,243
+Bu birçok birçok birçok.
+
+799
+02:29:13,564 --> 02:29:20,843
+Açık 5'e bu, Vxy yılağın B'n C'n B'n C'n B'n.
+
+800
+02:29:24,468 --> 02:29:27,208
+The x, y will be now here.
+
+801
+02:29:28,608 --> 02:29:36,148
+And this is, again, similar to previous cases that we examined subcase by subcase.
+
+802
+02:29:43,924 --> 02:30:01,123
+And another case, can VXY overlaps all three symbols, like can it start from some A and end up with some C?
+
+803
+02:30:03,264 --> 02:30:06,204
+No, this is not possible. Why?
+
+804
+02:30:08,340 --> 02:30:12,340
+Yani, vxy, y'e de bu kadar.
+
+805
+02:30:12,340 --> 02:30:16,340
+Yani, bu kadar.
+
+806
+02:30:16,340 --> 02:30:35,628
+Bu, bu kadar.
+
+807
+02:30:36,275 --> 02:30:40,235
+And in some cases, we examined some sub-cases.
+
+808
+02:30:41,915 --> 02:30:46,716
+And in all these cases, we obtained a contradiction.
+
+809
+02:30:47,655 --> 02:30:53,175
+We couldn't apply the pumping lemma.
+
+810
+02:30:54,675 --> 02:31:02,195
+Therefore, we say that our original assumption
+
+811
+02:31:02,703 --> 02:31:07,703
+Bu bir anlamda, bir anlamda bir anlamda.
+
+812
+02:31:09,703 --> 02:31:14,703
+Bu bir anlamda değil.
+
+813
+02:31:20,724 --> 02:31:24,443
+Any questions about this, about the application of pumping lemma?
+
+814
+02:31:30,611 --> 02:31:31,611
+Evet, evet.
+
+815
+02:31:36,211 --> 02:31:49,991
+Pumping lemma, gördüğümüz gibi, daha önce regular pumping lemma vardı, onu öğrenmiştik. Bir dilin regular olmadığını ispat için kullanıyorduk.
+
+816
+02:31:51,592 --> 02:31:57,671
+Context-free pumping lemmayı da bir dilin context-free olmadığını ispatlamak için kullanıyoruz.
+
+817
+02:31:59,772 --> 02:32:00,831
+Yaklaşım ne?
+
+818
+02:32:02,260 --> 02:32:11,420
+Dilimizi önce context-free, bağlamdan bağımsız bir gramer, bağlamdan bağımsız bir dil varsayıyoruz.
+
+819
+02:32:14,180 --> 02:32:20,060
+Ve onun üzerinde pumping lemma'yı uygulamaya çalışıyoruz.
+
+820
+02:32:26,004 --> 02:32:52,084
+Pumping lemmayı uygularken 5'e bölmemiz gerekiyor String'i. Ortadaki üçlü BX, Y bunları şurada olsa ne olur, burada olsa ne olur, burada olsa ne olur, ortadaki üçlünün farklı yerlere gelmesi halinde ne olabilir? Tüm olasılıkları denememiz gerekiyor.
+
+821
+02:32:52,788 --> 02:33:10,808
+Tüm olasılıklarda ne elde edeceğiz? Bir zıtlık olmayana ereceksek, erersek, bir zıtlığa erişirsek, olmayana erişirsek, ispatımız tamam olmuş oluyor.
+
+822
+02:33:18,260 --> 02:33:21,400
+Bağlamdan bağımsız olmadığını ispat etmiş oluyoruz.
+
+823
+02:33:23,979 --> 02:33:28,840
+Burada öğrencilerimizin yaptığı bir hata var.
+
+824
+02:33:29,900 --> 02:33:31,000
+P'ye geçiyor.
+
+825
+02:33:33,460 --> 02:33:39,220
+P, P'ye öğrencilerimiz sayı olarak almayı deniyor.
+
+826
+02:33:39,220 --> 02:33:44,680
+Yani mesela P'ye hocam beş alsak diyor.
+
+827
+02:33:47,572 --> 02:33:57,731
+Oradan gerisini yapıyor. Pumping lemmanın uygulanmayacağını gösteriyor. Bunu kabul etmiyorum ben.
+
+828
+02:33:58,951 --> 02:34:08,331
+Gördüğünüz gibi P'yi P olarak almanız lazım. P, P olarak kalmalı. Herhangi bir P değeri için.
+
+829
+02:34:11,667 --> 02:34:15,368
+pumping lemmanın uygulanamayacağını göstermiş olacaksınız.
+
+830
+02:34:21,780 --> 02:34:34,200
+Yani yeterince uzun hiçbir P değeri için pumping lemma uygulanamaz diyebilmemiz gerekiyor.
+
+831
+02:34:34,979 --> 02:34:40,760
+Bunun için de P'yi 3 gibi, 5 gibi, 6 gibi bir sayı alamıyoruz arkadaşlar.
+
+832
+02:34:41,659 --> 02:34:48,240
+Buna dikkat edin. Geçmişteki yıllarda arkadaşlarımız bunu yapıyorlardı. Bu bir hata.
+
+833
+02:34:50,868 --> 02:34:53,407
+Evet, birkaç örneğe bakalım.
+
+834
+02:34:57,971 --> 02:34:59,831
+Bir tane daha örneğe bakalım en azından.
+
+835
+02:35:01,492 --> 02:35:05,011
+Slide'lerde, sonraki slide'lerde örnekler olacak.
+
+836
+02:35:13,587 --> 02:35:15,247
+Mesela bir örneğe bakalım.
+
+837
+02:35:50,868 --> 02:35:56,847
+Okay, so let's look at this next example. And after that, we will finish the lecture.
+
+838
+02:36:22,004 --> 02:36:23,924
+I'm going to be here.
+
+839
+02:36:26,484 --> 02:36:28,544
+Let's get a new example.
+
+840
+02:36:31,364 --> 02:36:40,104
+VV, where V is in the A, B, is not in the language.
+
+841
+02:36:41,324 --> 02:36:43,544
+It's not context-free.
+
+842
+02:36:48,180 --> 02:36:54,180
+Yenli, we will use pumping lemma.
+
+843
+02:36:56,180 --> 02:37:01,180
+Yenli, for contradiction, we will assume L is context-free.
+
+844
+02:37:05,180 --> 02:37:12,180
+Yenli, we have a critical length. Here, instead of P, we will use M as critical length.
+
+845
+02:37:14,004 --> 02:37:19,424
+Arkadaşlar, so let's pick any string that is at least M.
+
+846
+02:37:20,024 --> 02:37:26,264
+Arkadaşlar, what can we select? What can we pick? A good pick would be this one, right?
+
+847
+02:37:27,344 --> 02:37:30,324
+A, B, and then another A, B.
+
+848
+02:37:30,644 --> 02:37:34,944
+So, V and then another V, right?
+
+849
+02:37:35,984 --> 02:37:40,344
+And A is M. We have AMs.
+
+850
+02:37:41,492 --> 02:37:49,891
+Sorry, we have M, A's, M, B's, another M, A's, and another M, B's.
+
+851
+02:37:50,572 --> 02:37:52,572
+This is in the language, no problem.
+
+852
+02:37:53,572 --> 02:38:07,152
+Now we should be able to divide this into five with V, X, Y, smaller than M or equal to, and V, Y, one or more.
+
+853
+02:38:09,139 --> 02:38:15,759
+After this division, if we pump up or pump down, language should be in the language.
+
+854
+02:38:17,139 --> 02:38:20,219
+Sorry, the string should be in the language.
+
+855
+02:38:22,319 --> 02:38:30,479
+For that, again, we need to examine all possible locations of VXY.
+
+856
+02:38:31,139 --> 02:38:33,639
+We need to consider all cases.
+
+857
+02:38:37,012 --> 02:38:41,512
+Vxy is within the first A to the end here.
+
+858
+02:38:44,332 --> 02:38:52,112
+And in this case, we need to consider V and Y because we are pumping V and Y up.
+
+859
+02:38:52,832 --> 02:38:58,031
+So V is A to the K1, Y is A to the sum K2s.
+
+860
+02:38:58,252 --> 02:39:01,412
+K1 and K2, we don't know what they are, but
+
+861
+02:39:01,876 --> 02:39:07,216
+Their sum is one or more. That means at least one is non-zero.
+
+862
+02:39:09,536 --> 02:39:13,396
+And if we comp this up, what will happen?
+
+863
+02:39:14,456 --> 02:39:24,363
+Number of these first A's, number of these first A's will be M plus...
+
+864
+02:39:24,564 --> 02:39:27,024
+K1 plus K2.
+
+865
+02:39:27,664 --> 02:39:30,004
+So at least M plus 1.
+
+866
+02:39:30,763 --> 02:39:36,943
+Now M plus 1 at least, then M, B, M, A, M, B.
+
+867
+02:39:37,083 --> 02:39:45,524
+This doesn't conform because this part will be different than this part, right?
+
+868
+02:39:47,144 --> 02:39:49,564
+Or language says that
+
+869
+02:39:52,628 --> 02:39:58,028
+It asks for same part, same string, twice.
+
+870
+02:39:59,688 --> 02:40:03,528
+So, there is a contradiction here.
+
+871
+02:40:03,768 --> 02:40:05,028
+This is not in the language.
+
+872
+02:40:08,948 --> 02:40:19,728
+Now, or case two is maybe Vxy is in the middle of A's and B's.
+
+873
+02:40:20,595 --> 02:40:30,915
+And V is A to the sum K, Y is B to the sum K, and then K1 plus K2 is larger than 1.
+
+874
+02:40:32,115 --> 02:40:43,455
+Now, if you pump this up, either the first A or the first B will be more than M in size.
+
+875
+02:40:44,020 --> 02:40:49,040
+A's or first B's will be more than M in size.
+
+876
+02:40:49,720 --> 02:40:52,639
+So, again, that will be a problem.
+
+877
+02:40:53,560 --> 02:40:56,780
+This will not be in the language.
+
+878
+02:40:59,520 --> 02:41:01,040
+So, case three.
+
+879
+02:41:02,880 --> 02:41:04,299
+That is,
+
+880
+02:41:06,780 --> 02:41:09,180
+why overlaps
+
+881
+02:41:09,180 --> 02:41:10,600
+the first
+
+882
+02:41:11,283 --> 02:41:14,443
+AB. So, Y is here.
+
+883
+02:41:17,363 --> 02:41:21,083
+Sorry, V is here, and Y is B.
+
+884
+02:41:21,623 --> 02:41:23,523
+Y have some Vs.
+
+885
+02:41:25,023 --> 02:41:33,403
+And here, by assumption, K1 and K2 are non-zero, larger than 1.
+
+886
+02:41:34,683 --> 02:41:37,883
+Again, if we pump this up now,
+
+887
+02:41:39,924 --> 02:41:41,924
+This will not be in the language.
+
+888
+02:41:43,804 --> 02:41:46,904
+We will obtain this and this will not be in the language.
+
+889
+02:41:48,984 --> 02:42:00,824
+Now, a case for this time, Y will overlap A and B together.
+
+890
+02:42:00,824 --> 02:42:04,124
+So, Y will have both A's and B's.
+
+891
+02:42:05,012 --> 02:42:09,032
+Again, this is similar to previous case 3.
+
+892
+02:42:10,032 --> 02:42:10,352
+So,
+
+893
+02:42:16,435 --> 02:42:20,975
+So, we say that there, we have contradiction there.
+
+894
+02:42:21,716 --> 02:42:37,615
+And some other cases, for example, when the XY is right in the Bs or second A group or last B group, those are similar to case one contradiction.
+
+895
+02:42:39,716 --> 02:42:42,615
+And when the XY overlaps,
+
+896
+02:42:43,700 --> 02:42:47,300
+B and A or A and B here.
+
+897
+02:42:48,200 --> 02:42:53,880
+Those are similar to when it overlaps between A and B,
+
+898
+02:42:54,079 --> 02:42:55,840
+cases 2, 3, 4.
+
+899
+02:42:57,280 --> 02:42:59,280
+So we have a contradiction.
+
+900
+02:43:00,200 --> 02:43:02,940
+And these are all the cases.
+
+901
+02:43:04,940 --> 02:43:05,240
+So,
+
+902
+02:43:10,004 --> 02:43:17,524
+Also, we may think, what if VXY overlaps like three symbols?
+
+903
+02:43:18,484 --> 02:43:26,724
+Those are not possible, three or more symbols, because VXY is less than M in size.
+
+904
+02:43:29,724 --> 02:43:33,724
+So, again, those...
+
+905
+02:43:34,260 --> 02:43:36,260
+Bu konfliktörü müziği için,
+
+906
+02:43:36,260 --> 02:43:39,260
+bu konfliktörü müziği için,
+
+907
+02:43:39,260 --> 02:43:41,260
+bu konfliktörü müziği için
+
+908
+02:43:41,260 --> 02:43:42,260
+ve bu konfliktörü müziği için
+
+909
+02:43:42,260 --> 02:43:46,260
+ve bu konfliktörü müziği
+
+910
+02:43:46,260 --> 02:43:48,260
+bu konfliktörü müziği
+
+911
+02:43:48,260 --> 02:43:50,260
+müziği müziği müziği
+
+912
+02:43:50,260 --> 02:43:52,260
+müziği müziği müziği müziği
+
+913
+02:43:52,260 --> 02:43:54,260
+müziği müziği müziği müziği müziği
+
+914
+02:43:58,708 --> 02:44:02,887
+We have another example here, but for today, this is enough.
+
+915
+02:44:03,828 --> 02:44:09,048
+We can continue with these examples in the incoming lectures.
+
+916
+02:44:10,268 --> 02:44:18,927
+And since I may ask this in the final exam, since final will be face-to-face.
+
+917
+02:44:19,667 --> 02:44:30,948
+I may ask this. I may ask you to prove, to do a proof that a language is not context-free.
+
+918
+02:44:31,867 --> 02:44:39,288
+So try to exercise this. There are some examples in the book, in some other books in the internet.
+
+919
+02:44:41,459 --> 02:44:50,659
+Try to find a non-context-free language and try to prove that it is not context-free using pumping lemma.
+
+920
+02:44:53,039 --> 02:44:56,819
+Bugünlük bu kadar. Bir sorunuz var mı arkadaşlar?
+
+921
+02:44:58,759 --> 02:45:07,919
+Pumping lemma sınavda sorabilirim. Test değil de bayağı bu şekilde ispatlayın şeklinde sorabilirim.
+
+922
+02:45:08,244 --> 02:45:14,664
+Regular ya da context-free pumping lemmayı. Dolayısıyla bunları bu şekilde çalışın.
+
+923
+02:45:15,744 --> 02:45:31,164
+Context-free olmayan bir dil bulun. Context-free olmadığını pumping lemmay ile ispat edin. Tüm durumları, tüm keynesleri göstermeye çalışın.
+
+924
+02:45:32,544 --> 02:45:34,984
+Bir sorunuz yoksa bu hafta kapatıyorum.
+
+925
+02:45:35,987 --> 02:45:37,987
+İyi haftalar, iyi dersler diliyorum.

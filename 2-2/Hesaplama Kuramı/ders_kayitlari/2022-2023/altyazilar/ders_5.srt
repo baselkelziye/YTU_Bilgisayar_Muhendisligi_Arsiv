@@ -1,0 +1,3567 @@
+1
+00:01:36,756 --> 00:01:38,135
+Arkadaşlar, menevrular.
+
+2
+00:01:41,683 --> 00:01:42,563
+Sesim geliyor.
+
+3
+00:01:48,115 --> 00:01:49,275
+Geliyor hocam, günaydın.
+
+4
+00:01:57,908 --> 00:02:00,188
+Geçen hafta ne yaptık?
+
+5
+00:02:03,128 --> 00:02:06,188
+Regular Properties'e baktık sanırım.
+
+6
+00:02:25,108 --> 00:02:26,108
+Yani
+
+7
+00:02:29,683 --> 00:02:34,383
+Regular dillerin, düzenli dillerin özellikleri.
+
+8
+00:02:39,027 --> 00:02:40,207
+Düzenli diller.
+
+9
+00:02:43,647 --> 00:02:47,147
+Dil dediğimiz şey zaten bir küme.
+
+10
+00:02:47,687 --> 00:02:49,647
+Dolayısıyla düzenli diller.
+
+11
+00:02:52,067 --> 00:02:54,407
+Küme birleşimi.
+
+12
+00:02:56,787 --> 00:02:57,467
+Ekleme.
+
+13
+00:02:58,467 --> 00:02:59,108
+Yıldız.
+
+14
+00:03:00,027 --> 00:03:00,847
+Tersini alma.
+
+15
+00:03:02,927 --> 00:03:04,967
+Tam dayanını alma.
+
+16
+00:03:06,675 --> 00:03:13,995
+ve intersection kesişimini duyma işlemlerinde
+
+17
+00:03:20,051 --> 00:03:46,211
+Yine düzenli bir dil üretiyor. Dolayısıyla şey deniliyor buna, düzenli diller bu işlemler altında kapalıdır. Yani bu işlemlere iki tane düzenli dil verirseniz yine bir düzenli dil elde ediyorsunuz.
+
+18
+00:03:46,675 --> 00:03:48,395
+Kapatı olmadığını bile.
+
+19
+00:03:50,656 --> 00:03:52,156
+Bu sırada tabii
+
+20
+00:03:57,427 --> 00:04:25,087
+Bunu ispat ederken, bu dilleri kabul eden DFA ya da NFA'ylerin, yani otomatomların, makinelerin bir nevi birleşimini, kesişimini, eklemesini vesaire almayı da görmüş olup.
+
+21
+00:04:28,052 --> 00:04:48,672
+Yani makinelerin birleşimi ne oluyor? İşte o makinelerin dillerinin birleşimini kabul eden makine oluyor ve bunlar nasıl elde edilebilir? Bunları da görmüş olduk geçen hafta.
+
+22
+00:04:52,947 --> 00:04:56,548
+Yanlış hatırlamıyorum değil mi? Geçen hafta buna bakmıştık.
+
+23
+00:04:59,427 --> 00:05:06,927
+Bu hafta da düzenli ifadeler, regular expressions'a bakacağız.
+
+24
+00:05:15,668 --> 00:05:18,248
+Paylaşım yapayım. Yeni bir slide açtım.
+
+25
+00:05:42,995 --> 00:06:10,195
+Evet. Bunlar düzenli ifadeler. Yani düzenli sözcüğü çok geçiyor bu ders kapsamında. Düzenli dilde karıştırmayın, düzenli ifadeler. Programcılıkta esasen çok fazla kullanılan, ara ara çok fazla değilse de kullanılan bir şey bu.
+
+26
+00:06:12,276 --> 00:06:13,475
+Öğ...
+
+27
+00:06:26,036 --> 00:06:32,735
+Şu tarz ifadelere düzenli ifade diyoruz.
+
+28
+00:06:32,735 --> 00:06:34,795
+Regular expression.
+
+29
+00:06:38,740 --> 00:07:02,519
+Regular expression, yani düzenli ifadeler, programlamada metin, belirli özelliklere sahip metinleri bulmak için, metinleri eşlemek için, metinlerle eşlemek için veya metinlerin içerisinden belirli kısımları çıkartmak için kullanılıyor.
+
+30
+00:07:03,827 --> 00:07:09,467
+İngilizce anlatacak değil mi bu derste? İngilizce'ye geçelim.
+
+31
+00:07:12,967 --> 00:07:22,427
+So, this lecture we will take a look at regular expressions.
+
+32
+00:07:24,567 --> 00:07:28,067
+And regular expressions take this form.
+
+33
+00:07:32,372 --> 00:07:37,172
+And regular expressions are used in programming languages.
+
+34
+00:07:38,252 --> 00:07:58,672
+When we need to find text that has a special form, that has some form, for example, here in this example, we see that A
+
+35
+00:07:59,764 --> 00:08:02,484
+You can read this plus as or.
+
+36
+00:08:04,364 --> 00:08:05,984
+So A or.
+
+37
+00:08:07,984 --> 00:08:18,824
+B and you can read this dot as concatenation.
+
+38
+00:08:20,044 --> 00:08:21,884
+So A or.
+
+39
+00:08:22,764 --> 00:08:23,944
+B, C.
+
+40
+00:08:24,480 --> 00:08:27,400
+And then inside there is a parentheses.
+
+41
+00:08:28,340 --> 00:08:32,900
+So parentheses group these expressions.
+
+42
+00:08:33,539 --> 00:08:35,379
+And then we have a clean star.
+
+43
+00:08:35,379 --> 00:08:47,379
+And clean star has the same meaning that we have seen so far.
+
+44
+00:08:47,519 --> 00:08:50,379
+So clean star means...
+
+45
+00:08:51,220 --> 00:08:57,960
+No or any number of this expression.
+
+46
+00:09:00,379 --> 00:09:04,059
+And what does this describe?
+
+47
+00:09:07,120 --> 00:09:15,819
+So this describes language epsilon.
+
+48
+00:09:17,268 --> 00:09:22,968
+Null string, because cleanstar also matches null string.
+
+49
+00:09:24,628 --> 00:09:27,748
+And any number of A's.
+
+50
+00:09:28,107 --> 00:09:35,888
+So A's, AA, or you can have three A's, et cetera.
+
+51
+00:09:37,107 --> 00:09:39,368
+And then you have BC.
+
+52
+00:09:41,948 --> 00:09:43,968
+Any number of PCs.
+
+53
+00:09:44,916 --> 00:09:48,336
+You can have BC, BC, BC, et cetera.
+
+54
+00:09:49,336 --> 00:09:50,336
+And then...
+
+55
+00:09:55,668 --> 00:09:56,208
+Hmm.
+
+56
+00:10:03,860 --> 00:10:12,559
+Because of the clean star, you also need to consider concatenations in the language.
+
+57
+00:10:12,559 --> 00:10:24,519
+So you can have ABC or BCA or AA, BC, BC, etc.
+
+58
+00:10:30,259 --> 00:10:35,200
+This regular expression describes this language.
+
+59
+00:10:39,604 --> 00:10:41,292
+ve
+
+60
+00:10:44,659 --> 00:10:48,579
+We can define regular expressions recursively.
+
+61
+00:10:52,820 --> 00:11:19,400
+We will start with primitive regular expressions. Primitive meaning you cannot divide them. And these primitive regular expressions are empty set, null string, and single symbols. Single symbol like A.
+
+62
+00:11:19,727 --> 00:11:34,007
+A, B, or C, just a single letter.
+
+63
+00:11:35,367 --> 00:11:38,727
+Now, these are our primitive regular expressions.
+
+64
+00:11:40,567 --> 00:11:46,887
+And in these expressions, R1 and R2,
+
+65
+00:11:49,620 --> 00:12:00,620
+are one of these, one of these three, empty set, empty string, or a single symbol.
+
+66
+00:12:03,460 --> 00:12:15,819
+Now, the operations we can combine, regular expressions are plus operation,
+
+67
+00:12:19,220 --> 00:12:24,340
+concatenation operation, cleanstar, and grouping.
+
+68
+00:12:25,879 --> 00:12:44,340
+Now, we will start with these primitive regular expressions, and we will see that plus concatenation, cleanstar, and grouping are also regular expressions.
+
+69
+00:12:46,227 --> 00:12:59,427
+So in a way we will see that when you start with these primitive expressions and use these operations, you still get to another regular expression.
+
+70
+00:13:06,932 --> 00:13:12,772
+Let's look at an example. So this is a regular expression.
+
+71
+00:13:15,572 --> 00:13:28,052
+And notice that it conforms to this here.
+
+72
+00:13:35,251 --> 00:13:45,111
+All the parts are either a single symbol, like A, B, or C, or empty set.
+
+73
+00:13:46,552 --> 00:14:00,532
+And the operations are plus, dot, cleanstar, dot, plus, or we have grouping parentheses.
+
+74
+00:14:02,611 --> 00:14:05,812
+But this one is not a regular expression.
+
+75
+00:14:05,971 --> 00:14:06,771
+What's the problem?
+
+76
+00:14:09,331 --> 00:14:16,511
+This plus operation needs two regular expressions.
+
+77
+00:14:17,331 --> 00:14:28,131
+So we have B as one operand, but we are missing the second operand after the plus.
+
+78
+00:14:28,884 --> 00:14:32,183
+Because of that, this is not a regular expression.
+
+79
+00:14:36,596 --> 00:14:42,475
+Now, we can define languages of these regular expressions.
+
+80
+00:14:44,475 --> 00:14:52,475
+And language of a regular expression is just the strings,
+
+81
+00:14:53,576 --> 00:14:58,355
+is just set of all the strings that match that regular expression.
+
+82
+00:15:01,556 --> 00:15:09,036
+For example, for this regular expression, a plus e dot c, and we have a star here.
+
+83
+00:15:11,956 --> 00:15:17,536
+What is the language of this regular expression?
+
+84
+00:15:17,776 --> 00:15:18,796
+It's this set.
+
+85
+00:15:19,756 --> 00:15:25,416
+It's the set of all strings that match this regular expression.
+
+86
+00:15:26,772 --> 00:15:34,752
+For example, AA matches the regular expression because we have A here.
+
+87
+00:15:36,572 --> 00:15:44,752
+And because of the clean star, AA will be matching.
+
+88
+00:15:51,124 --> 00:15:57,584
+Now, let's consider languages.
+
+89
+00:15:58,844 --> 00:16:07,543
+So, the question we will ask will be whether the languages of these regular expressions are regular?
+
+90
+00:16:08,924 --> 00:16:11,264
+Are the languages regular?
+
+91
+00:16:18,004 --> 00:16:42,064
+Let's see. Remember, we are starting with these primitive regular expressions. We have three primitive regular expressions. Empty set, null string, and a single symbol like A or B, whatever.
+
+92
+00:16:45,235 --> 00:16:57,196
+Language of, sorry, language of empty set is empty set itself.
+
+93
+00:16:59,316 --> 00:17:07,115
+Language of null string is a set that only has null string.
+
+94
+00:17:08,316 --> 00:17:11,355
+Language of a single symbol.
+
+95
+00:17:12,051 --> 00:17:17,632
+A, is a set that has A.
+
+96
+00:17:19,051 --> 00:17:19,592
+Okay.
+
+97
+00:17:23,220 --> 00:17:25,440
+So, we will start with this.
+
+98
+00:17:27,500 --> 00:17:27,799
+Now,
+
+99
+00:17:29,199 --> 00:17:30,759
+Hocam, bir şey yapabilir miyim?
+
+100
+00:17:31,539 --> 00:17:32,259
+Tabi, buyurun.
+
+101
+00:17:32,259 --> 00:17:36,199
+Hocam, A'da neden enough drink yok en sondaki örnekte?
+
+102
+00:17:40,372 --> 00:17:52,032
+Sesinizi tam alamadım bir dakika. Sesini tam açmadım mı acaba bilgisayarım? Açmışım. Biraz daha yüksek sesle sorabilir misiniz? Tam duyamadım.
+
+103
+00:17:52,892 --> 00:17:57,992
+Hocam, son örnekte A'da neden? Null String yok, AdPilon yok. Onu soracaktım.
+
+104
+00:18:07,796 --> 00:18:19,576
+A'da neden Null String yok? Çünkü Clean Star yok. Daha önceki örneklerimizde, bunu tekrar açayım.
+
+105
+00:18:24,531 --> 00:18:25,991
+Sunumu görüyorsunuz değil mi?
+
+106
+00:18:33,107 --> 00:18:37,587
+Burada Epsilon'u getiren aslında şu Clean Star.
+
+107
+00:18:40,447 --> 00:18:43,167
+Bakalım daha önceki örneklere bakalım.
+
+108
+00:18:45,627 --> 00:18:49,927
+Yine Epsilon Clean Star olduğu zamanlarda var bakın.
+
+109
+00:18:54,228 --> 00:19:15,867
+Cleanstar, nullstring'i de match ediyor. Yani hiçbir şey olmazsa da match ediyor. Öyle bir özelliği var. O oradan geldi. Normalde eğer Cleanstar yoksa sadece kendisine match ediyor. Bir sembol. Anlaşıldı değil mi? Cevap oldu herhalde.
+
+110
+00:19:30,644 --> 00:19:31,563
+Rica ederim.
+
+111
+00:19:34,124 --> 00:19:34,963
+So,
+
+112
+00:19:39,059 --> 00:20:05,059
+So we are starting with these primitive regular expressions and their languages. Language of empty set, which is just an empty set. Language of null string or epsilon. Sset with null string. Language of a single symbol is a set that contains that string.
+
+113
+00:20:07,604 --> 00:20:28,344
+Now, if we have two regular language, R1 and R2, language of R1 plus R2 is language of R1.
+
+114
+00:20:32,084 --> 00:20:36,704
+Join, language of R2.
+
+115
+00:20:42,132 --> 00:20:45,211
+We are merging their languages.
+
+116
+00:20:47,672 --> 00:21:06,211
+And language of R1, R2, R1 dot R2, is language of R1 concatenation, language of R2, we are concatenating.
+
+117
+00:21:07,923 --> 00:21:10,144
+Their languages, their sets.
+
+118
+00:21:11,884 --> 00:21:25,324
+And we just learned, we learned these set operations, how we can concatenate sets or how we can, we already know how we can merge or join sets.
+
+119
+00:21:27,844 --> 00:21:31,584
+We already know that, knew that.
+
+120
+00:21:32,683 --> 00:21:34,023
+And clean star.
+
+121
+00:21:35,923 --> 00:21:42,364
+On a regular expression R1 is, what is the language?
+
+122
+00:21:42,563 --> 00:21:53,983
+If you consider what's the language of green star of R1, you get green star of language of R1.
+
+123
+00:21:55,864 --> 00:22:01,223
+And again, we learned what this is previously, previous weeks.
+
+124
+00:22:03,251 --> 00:22:05,251
+And finally, grouping.
+
+125
+00:22:08,991 --> 00:22:15,731
+Language of grouping of R1 is just language of R1.
+
+126
+00:22:17,091 --> 00:22:20,771
+So grouping does not give you a new language.
+
+127
+00:22:20,932 --> 00:22:22,172
+It's the same language.
+
+128
+00:22:27,892 --> 00:22:34,112
+As an example, consider this regular expression.
+
+129
+00:22:35,292 --> 00:22:51,112
+Now, when we think of what is the language of this regular expressions, we can use these rules, these four rules.
+
+130
+00:22:53,428 --> 00:23:00,307
+Because every regular expression can only have these four operations.
+
+131
+00:23:07,155 --> 00:23:17,655
+We can kind of divide starting from original.
+
+132
+00:23:17,655 --> 00:23:24,655
+For example, we can start dividing from this concatenation or dot operation.
+
+133
+00:23:24,655 --> 00:23:34,155
+So language of a plus b dot a star is language of a plus b.
+
+134
+00:23:35,284 --> 00:23:36,384
+We have a group.
+
+135
+00:23:37,544 --> 00:23:42,204
+Then set concatenation, language of A star.
+
+136
+00:23:44,364 --> 00:23:55,684
+Now, since grouping is just the same thing, we can say language of grouping A plus one is language of A plus one.
+
+137
+00:24:00,372 --> 00:24:08,872
+And then now A plus, plus is just join, or.
+
+138
+00:24:09,471 --> 00:24:17,011
+So we have language of A, or language of B.
+
+139
+00:24:21,619 --> 00:24:37,139
+And we still have this, ah, language of A's cleanstar is language of A, cleanstar.
+
+140
+00:24:40,139 --> 00:24:45,399
+And now language of A is just the set A itself.
+
+141
+00:24:47,220 --> 00:24:51,059
+Language of B is just set B itself.
+
+142
+00:24:52,439 --> 00:24:53,639
+Set B.
+
+143
+00:24:54,939 --> 00:24:57,019
+The set that has B.
+
+144
+00:24:57,279 --> 00:25:00,399
+The set that has only B.
+
+145
+00:25:02,319 --> 00:25:14,139
+And language of A, cleanstar is the set that has A, grouping and cleanstar.
+
+146
+00:25:16,980 --> 00:25:25,200
+And set of A join set of B is AB.
+
+147
+00:25:27,839 --> 00:25:29,920
+The set has A and B.
+
+148
+00:25:32,259 --> 00:25:41,379
+And A's green star is now string A, A, A, A, A, A, etc.
+
+149
+00:25:41,700 --> 00:25:42,960
+It goes to infinity.
+
+150
+00:25:43,635 --> 00:26:09,336
+Now, if you take the concatenation of these final two sets, we get to this one, the final resulting set, final resulting language, A, A, A's, and then you can have B's, then B, A, A's, et cetera.
+
+151
+00:26:11,284 --> 00:26:18,404
+So, this is a set that starts with either A or B, just one.
+
+152
+00:26:19,664 --> 00:26:22,984
+Just one A or just one B.
+
+153
+00:26:24,084 --> 00:26:28,184
+And then any number of A's, right?
+
+154
+00:26:28,184 --> 00:26:37,184
+If you think of this, so the regular languages, kind of, they give us what the final...
+
+155
+00:26:38,036 --> 00:26:49,895
+set members look like, pictorially, it kind of depicts what they will look like.
+
+156
+00:26:50,296 --> 00:26:56,895
+So we can have a single A or a single B, right?
+
+157
+00:26:57,516 --> 00:27:03,576
+And then any number of A's in this example.
+
+158
+00:27:05,875 --> 00:27:08,635
+Here we have another example.
+
+159
+00:27:10,036 --> 00:27:15,635
+Let's try to understand what kind of language this will have.
+
+160
+00:27:19,036 --> 00:27:22,635
+So we have a clean star here in this first part.
+
+161
+00:27:24,336 --> 00:27:28,776
+So A and B inside the parentheses.
+
+162
+00:27:28,776 --> 00:27:30,296
+So I'm grouping.
+
+163
+00:27:33,140 --> 00:27:46,080
+We have any kind of A and B, including null set, so we can have A's, A B's, B A's, it doesn't matter.
+
+164
+00:27:48,220 --> 00:27:52,900
+But this final part, what does this say?
+
+165
+00:27:54,740 --> 00:27:58,480
+All the strings must end.
+
+166
+00:27:59,316 --> 00:28:04,895
+Either with an A or with a BB.
+
+167
+00:28:05,555 --> 00:28:06,995
+So we can have anything.
+
+168
+00:28:08,035 --> 00:28:10,295
+This first part, it doesn't really matter.
+
+169
+00:28:11,055 --> 00:28:13,415
+We can have anything in this first part.
+
+170
+00:28:14,076 --> 00:28:22,795
+But in the second part, we must have a single A or a single BB.
+
+171
+00:28:23,700 --> 00:28:37,960
+And we see that we have a BB here, we have a BB here, we have an A here, we have an A here, we have an A here, we have a BB here.
+
+172
+00:28:37,960 --> 00:28:46,260
+So this regular expression kind of matches.
+
+173
+00:28:47,059 --> 00:28:52,220
+Regular expression matches the strings that end with A or B.
+
+174
+00:28:57,556 --> 00:28:59,076
+Let's look at this one.
+
+175
+00:29:00,175 --> 00:29:03,096
+Again, what does this say?
+
+176
+00:29:04,395 --> 00:29:06,415
+This is quite easy.
+
+177
+00:29:07,836 --> 00:29:10,395
+We can have any number of AAs.
+
+178
+00:29:12,836 --> 00:29:20,336
+We can have any number of BBs, but AAs must come before BBs.
+
+179
+00:29:21,836 --> 00:29:22,556
+And the final...
+
+180
+00:29:24,435 --> 00:29:27,796
+Final symbol must be a B.
+
+181
+00:29:29,415 --> 00:29:45,716
+So, and the language that this regular expression has, or matches, if you will, can also be described using this notation.
+
+182
+00:29:45,716 --> 00:29:49,516
+So, ace.
+
+183
+00:29:50,804 --> 00:29:52,923
+2N, what does this say?
+
+184
+00:29:55,264 --> 00:29:59,403
+We have 2AAs, right?
+
+185
+00:30:03,028 --> 00:30:05,688
+And B to M.
+
+186
+00:30:06,068 --> 00:30:13,708
+Again, so the A's and B's are number of A's and number of B's are even, right?
+
+187
+00:30:13,988 --> 00:30:16,748
+We cannot have just an A at the beginning.
+
+188
+00:30:18,708 --> 00:30:20,488
+Even number of A's.
+
+189
+00:30:20,648 --> 00:30:22,788
+A, A, A, A, A, yeah.
+
+190
+00:30:22,988 --> 00:30:25,468
+Two A's, four A's, six A's, et cetera.
+
+191
+00:30:26,128 --> 00:30:29,168
+And finally, we have a B, right?
+
+192
+00:30:30,259 --> 00:30:37,920
+such that N and M are larger than or equal to zero.
+
+193
+00:30:39,360 --> 00:30:41,059
+They are the same thing.
+
+194
+00:30:42,420 --> 00:30:46,079
+The language of R can be written this way too.
+
+195
+00:30:49,019 --> 00:30:52,880
+Bir önceki örneği de bu tarihte yazabilir miyiz?
+
+196
+00:30:54,880 --> 00:30:56,180
+Anlaşılması için.
+
+197
+00:30:56,660 --> 00:30:58,059
+Tekrar söyleyebilir misin?
+
+198
+00:30:59,000 --> 00:31:03,960
+Bir önceki örnekteki durumu bu tarzda yazabilir miyiz?
+
+199
+00:31:05,359 --> 00:31:05,900
+Yazılıyor.
+
+200
+00:31:08,220 --> 00:31:14,480
+Hani şu şekil mi oluyor doğru anladıysam? A üzeri N artı B üzeri M.
+
+201
+00:31:16,160 --> 00:31:21,639
+Bunu mu yazmaya çalışıyorsun? Her şey bu şekilde yazılmaz bence.
+
+202
+00:31:22,867 --> 00:31:41,327
+Yani her şey illa şu şekilde güzel bir şekilde yazılabilir diye düşünmüyorum. Şu kısmı kolay. Şöyle bir şey yazmaya çalışalım bakalım çıkarabilir miyiz? Siz de yardımcı olun beraber.
+
+203
+00:31:53,587 --> 00:31:54,587
+Eşitler.
+
+204
+00:31:57,048 --> 00:32:04,827
+Şimdi, A ve B'nin belirli bir sırası yok bu ilk kısımda.
+
+205
+00:32:04,968 --> 00:32:10,948
+Çünkü Clean Star Concatenation yapıyor, Set Concatenation'ı.
+
+206
+00:32:11,428 --> 00:32:14,647
+Dolayısıyla ister A olabilir, ister B olabilir.
+
+207
+00:32:16,107 --> 00:32:19,948
+O biraz bu şekilde yazmayı zorlaştırıyor.
+
+208
+00:32:21,460 --> 00:32:23,579
+Tamam hocam ben ondan da takılmıştım.
+
+209
+00:32:24,339 --> 00:32:28,740
+Evet, yani şimdi orayı nasıl ifade edeceğiz? Üstsel ile.
+
+210
+00:32:30,000 --> 00:32:40,680
+Yani AB, şöyle belki yapabiliriz. AB'nin clean starı desek bu da olmayacak.
+
+211
+00:32:41,819 --> 00:32:44,860
+Çünkü bu ne demek? AB, AB, AB demek.
+
+212
+00:32:46,516 --> 00:32:52,736
+İstediğiniz kadar A, istediğiniz kadar B fark etmiyor şeklinde.
+
+213
+00:32:56,816 --> 00:33:11,736
+Şöyle bir şey yapsak olur mu acaba? A'nın bir tane A üzeri M koysak, B üzeri M koysak, tekrar bir A üzeri NMK diyelim, koysak.
+
+214
+00:33:13,140 --> 00:33:18,700
+Sonra tekrar B üzeri mesela K, P diyelim.
+
+215
+00:33:21,579 --> 00:33:29,799
+Bu şuna acaba bunu ifade ediyor mu? Şurada da bir A koyacağız.
+
+216
+00:33:33,460 --> 00:33:38,140
+Veya diyeceğiz. İlk kısmı tekrar tekrar edip.
+
+217
+00:33:39,316 --> 00:33:41,715
+Herhalde o şekilde yapabiliriz.
+
+218
+00:33:42,715 --> 00:33:47,135
+Yani tekrar yazıp buraya bir de BV koyacağız şu BV'yi de.
+
+219
+00:33:48,076 --> 00:33:53,076
+Şurası acaba şunu ifade edebildi mi? Emin değilim.
+
+220
+00:33:56,655 --> 00:34:01,076
+İstediğiniz kadar A, istediğiniz kadar B, istediğiniz ama mesela
+
+221
+00:34:04,692 --> 00:34:15,751
+Tam ifade etmiyor. Mesela B bir kısım B'lerle başlayıp, bir kısım A'lar alıp, bir kısım B'ler sonra tekrar bir kısım A'ları ifade etmiyor mesela.
+
+222
+00:34:17,332 --> 00:34:27,132
+Yani burası, şurası Clean Star, istediğiniz gibi A ve B'leri birleştirmenizi sağlıyor, istediğiniz sayıda.
+
+223
+00:34:27,771 --> 00:34:32,152
+Onu da böyle bir sayısal, üstsel ifadeyle ifade etmek çok zor.
+
+224
+00:34:33,844 --> 00:34:35,083
+Ben bulamadım yani.
+
+225
+00:34:40,628 --> 00:34:42,788
+Otomat'ın irregular olmuyor mu hocam?
+
+226
+00:34:43,588 --> 00:34:44,168
+Yok oluyor.
+
+227
+00:34:44,168 --> 00:34:46,508
+İrregular oluyor.
+
+228
+00:34:47,868 --> 00:34:50,088
+Bunlara birazdan geleceğiz.
+
+229
+00:34:50,288 --> 00:34:53,588
+Regular expression'lar regular diller.
+
+230
+00:34:53,927 --> 00:34:55,068
+Dillere match ediyor.
+
+231
+00:34:56,908 --> 00:35:01,948
+Regular dilleri ifade edebileceğimiz üçüncü şey oldu.
+
+232
+00:35:02,579 --> 00:35:22,399
+DFA'larla ifade edebiliyoruz. Yani bir DFA kabul ediyorsa bir dilin stringlerini, regulardır o dil. Bir NFA'yi kabul ediyorsa yine regulardır. Şimdi de ne öğreniyoruz? Bir düzenli ifade eşleniyorsa, match ediyorsa yine regulardır.
+
+233
+00:35:26,867 --> 00:35:35,387
+Yani ben şey yapamadım, çıkartamadım. Belki çok uğraşılırsa böyle bir şey bulunabilir ama çok da yok gördüğüm kadarıyla.
+
+234
+00:35:39,380 --> 00:35:40,380
+Devam edelim.
+
+235
+00:35:42,380 --> 00:35:47,680
+Let's look at another example.
+
+236
+00:35:49,380 --> 00:35:51,300
+What does this say?
+
+237
+00:35:54,931 --> 00:36:00,871
+All strings containing substring 0, 0.
+
+238
+00:36:00,871 --> 00:36:11,351
+So because of the clean star, we can have any kind of 0, 1 concatenations here.
+
+239
+00:36:14,091 --> 00:36:18,551
+Similarly, we can have any kind of 0 and 1.
+
+240
+00:36:20,916 --> 00:36:22,516
+Concatenations here.
+
+241
+00:36:23,636 --> 00:36:31,036
+But notice that this 0, 0 does not have anything, no clean star, no numbers.
+
+242
+00:36:31,036 --> 00:36:37,816
+So somewhere in this string, there must be a 0, 0, right?
+
+243
+00:36:39,056 --> 00:36:42,596
+There must be the substring 0, 0.
+
+244
+00:36:48,403 --> 00:36:50,903
+This one is kind of complicated.
+
+245
+00:36:51,903 --> 00:36:56,163
+All strings without substring 00.
+
+246
+00:36:56,163 --> 00:37:01,024
+So we don't want 00 in the string.
+
+247
+00:37:02,903 --> 00:37:04,864
+This is not obvious.
+
+248
+00:37:06,443 --> 00:37:13,703
+We have to work on it and see how it prevents 00 in a way.
+
+249
+00:37:15,539 --> 00:37:22,699
+So, we can have some 1's or some 0 1's.
+
+250
+00:37:24,380 --> 00:37:37,940
+So, from this part, we will have things like 1, 0, 1.
+
+251
+00:37:37,940 --> 00:37:43,059
+Or things like 0, 1, 0, 1.
+
+252
+00:37:44,052 --> 00:37:47,431
+Some ones, some zero ones.
+
+253
+00:37:47,632 --> 00:37:53,072
+So from this part, zero will be only always single.
+
+254
+00:37:53,332 --> 00:37:56,672
+There will be no other zero next to it.
+
+255
+00:37:58,372 --> 00:38:03,052
+And then after the zero, we always have a one.
+
+256
+00:38:05,052 --> 00:38:05,351
+Right?
+
+257
+00:38:07,452 --> 00:38:11,252
+Finally, there can be another zero.
+
+258
+00:38:13,204 --> 00:38:14,944
+OrdinallString
+
+259
+00:38:22,867 --> 00:38:26,507
+So, two zeros will not be next to each other.
+
+260
+00:38:28,847 --> 00:38:34,068
+One thing I'm kind of, I wonder is,
+
+261
+00:38:36,028 --> 00:38:40,668
+why is that null string necessary?
+
+262
+00:38:43,307 --> 00:38:44,688
+Why is this here?
+
+263
+00:38:45,448 --> 00:38:47,288
+This null string, why is this here?
+
+264
+00:38:47,987 --> 00:38:56,747
+Üç tane bir hocam, dört tane bir filan olduğunda mesela, onunla kabul ediyor değil. Ama sıfır almaması lazım. Nal-Sitnik ile birleştirecek.
+
+265
+00:38:58,607 --> 00:39:02,067
+Yani zaten hiçbir şey koymazsan o bitiyor.
+
+266
+00:39:04,147 --> 00:39:11,607
+Yok hocam, sadece sıfır kalırsan, Nal-Sitnik olmazsa, mesela bir bir bir bir biri kabul etmeyecek. Bir bir bir bir sıfır.
+
+267
+00:39:12,847 --> 00:39:13,407
+Doğru.
+
+268
+00:39:15,572 --> 00:39:21,032
+1 ile bitebilmesini sağlıyor null string. Değil mi? Evet.
+
+269
+00:39:21,032 --> 00:39:36,972
+Bu da şu halde hep sıfırla bitmek zorunda olacaktı değil mi? Şurası sayesinde hep sıfırla bitmek zorunda olacaktı ama bu null string sayesinde şu ifadeden sonra bitirebiliyoruz.
+
+270
+00:39:37,052 --> 00:39:41,872
+Dolayısıyla 1 ile biten şeylere de match etmesini sağlıyor.
+
+271
+00:39:42,643 --> 00:39:47,183
+Regular expression, düzenli ifade. Peki, teşekkür ediyorum.
+
+272
+00:39:48,503 --> 00:39:49,223
+Rica ederim hocam.
+
+273
+00:39:54,356 --> 00:40:14,196
+Şimdi bir ara verelim. Saat 9.55 gibi, 10.55 gibi, 9.55 gibi. Yani bir 10 dakika falan ara verelim. 10'u 5 geçe gibi buluşuruz arkadaşlar. Yine buradan.
+
+274
+00:52:38,195 --> 00:52:40,056
+Arkadaşlar, tekrar merhabalar.
+
+275
+00:52:46,228 --> 00:52:48,068
+Sesim geliyordur, umarım.
+
+276
+00:52:50,828 --> 00:52:54,887
+[öğrenci]'nin bir sorusu olmuş ama gözümüzden kaçmış.
+
+277
+00:52:54,887 --> 00:52:58,028
+Is A.B. possible der diye.
+
+278
+00:53:00,507 --> 00:53:08,688
+Ama nerede sordu, hangisi için sordu, şuralarda falan belki sormuştur.
+
+279
+00:53:10,667 --> 00:53:12,887
+Cevap aldınız mı [öğrenci] veyahut?
+
+280
+00:53:14,931 --> 00:53:16,291
+Tekrar sorabilirsiniz.
+
+281
+00:53:22,739 --> 00:53:23,420
+Tamam.
+
+282
+00:53:28,755 --> 00:53:30,295
+So, let's continue.
+
+283
+00:53:35,956 --> 00:53:39,076
+Equivalent regular expressions.
+
+284
+00:53:39,076 --> 00:53:54,816
+So, we say that regular expressions R1 and R2 are equivalent if their languages are equivalent.
+
+285
+00:53:57,116 --> 00:54:01,856
+So, if two regular expressions have the same language, they are equivalent.
+
+286
+00:54:03,284 --> 00:54:07,624
+Let's look at some, one example.
+
+287
+00:54:09,244 --> 00:54:15,204
+For example, all strings without substring 0, 0.
+
+288
+00:54:15,204 --> 00:54:18,104
+We just learned an example of this.
+
+289
+00:54:19,943 --> 00:54:22,584
+We saw, I think we saw this one, right?
+
+290
+00:54:23,164 --> 00:54:25,423
+We saw this regular expression.
+
+291
+00:54:26,964 --> 00:54:27,304
+Now,
+
+292
+00:54:28,244 --> 00:54:55,284
+R1, R2 is equivalent because let's look at that. Let's look at R2. You can have any number of ones, then a zero one, then any number of ones after that. And then there's a clean star of those.
+
+293
+00:54:56,307 --> 00:55:06,768
+So you can have any number of ones, zero ones and ones, and then a zero or null.
+
+294
+00:55:08,967 --> 00:55:20,567
+So, or you can have this, which is any number of ones, then a zero or any number of ones.
+
+295
+00:55:21,492 --> 00:55:42,771
+So if you think about it, R2 describes, R2 matches the same strings as R1. R1 is better, more compact in a way, but at the end, R2 is same. It matches the same strings.
+
+296
+00:55:49,588 --> 00:55:58,648
+Language of R1 and language of R2 are equivalent to the same L, same language.
+
+297
+00:55:59,168 --> 00:56:02,768
+So R1 and R2 are equivalent in this case.
+
+298
+00:56:04,828 --> 00:56:10,588
+Now, we just learned regular expressions.
+
+299
+00:56:11,603 --> 00:56:21,603
+ve
+
+300
+00:56:40,019 --> 00:56:42,480
+generated by regular expressions.
+
+301
+00:56:42,639 --> 00:56:50,819
+We are talking about all languages that can be generated with a regular expression.
+
+302
+00:56:50,819 --> 00:57:04,655
+All languages of all regular expressions is equivalent to set of...
+
+303
+00:57:04,655 --> 00:57:26,976
+regular languages. So that's set of all regular languages. And this is a theorem, so we need a proof. And when we need the proof of an equivalency, set equivalency, sorry, set equivalency, we divide the proof into two.
+
+304
+00:57:28,735 --> 00:57:32,036
+We need to prove in the first step.
+
+305
+00:57:32,563 --> 00:57:36,884
+That first one is a subset of second one.
+
+306
+00:57:37,543 --> 00:57:44,483
+Then in the second step, we need to prove that first one is a superset of second one.
+
+307
+00:57:46,244 --> 00:57:49,664
+And in this case, we need to do that.
+
+308
+00:57:49,664 --> 00:57:59,664
+So in the first step, we will need to prove that languages generated by...
+
+309
+00:57:59,860 --> 00:58:06,639
+regular set of, sorry, I sometimes forget this here.
+
+310
+00:58:06,980 --> 00:58:16,380
+So set of languages generated by regular expressions is a subset of set of regular languages.
+
+311
+00:58:17,759 --> 00:58:26,259
+So what does that mean with English, in English, in prose, what does that mean?
+
+312
+00:58:27,092 --> 00:58:39,092
+It means that if you have a regular expression, its language is regular.
+
+313
+00:58:40,092 --> 00:58:41,891
+It means that, right?
+
+314
+00:58:43,951 --> 00:58:53,231
+This is the set of all regular expressions to be a subset of set of regular languages.
+
+315
+00:58:54,931 --> 00:59:02,071
+So, this is a set of, this is a set of languages of regular expressions.
+
+316
+00:59:04,651 --> 00:59:11,331
+So, we need to prove that for any regular expression, its language is regular.
+
+317
+00:59:12,891 --> 00:59:16,631
+And we will use proof by induction here.
+
+318
+00:59:18,511 --> 00:59:22,071
+And the induction will be on the size of...
+
+319
+00:59:22,527 --> 00:59:24,167
+The regular expression.
+
+320
+00:59:26,507 --> 00:59:38,227
+In the induction basis, in the induction basis, let's consider primitive regular expression.
+
+321
+00:59:38,427 --> 00:59:42,387
+Remember, we have three primitive regular expression type.
+
+322
+00:59:43,807 --> 00:59:47,347
+First is the empty set.
+
+323
+00:59:48,827 --> 00:59:50,387
+The other is...
+
+324
+00:59:50,643 --> 00:59:52,903
+Null string or empty string.
+
+325
+00:59:53,663 --> 00:59:59,503
+And finally, single symbols like A, B, C.
+
+326
+01:00:01,063 --> 01:00:07,384
+Now, for each of these, we can write an NFA very easily.
+
+327
+01:00:08,163 --> 01:00:14,384
+Since we can write an NFA for them, we say that...
+
+328
+01:00:15,764 --> 01:00:22,403
+The languages generated by these primitive regular expressions are regular.
+
+329
+01:00:23,683 --> 01:00:29,764
+And these, for example, this one does not accept anything.
+
+330
+01:00:32,324 --> 01:00:34,723
+So basically,
+
+331
+01:00:40,371 --> 01:00:50,451
+The language of this machine one, let's say this is machine one, is null set, empty set.
+
+332
+01:00:53,411 --> 01:00:58,631
+And remember that language of empty set is empty set.
+
+333
+01:01:00,151 --> 01:01:06,731
+So language of empty set is language of this NFA.
+
+334
+01:01:08,692 --> 01:01:10,612
+So, empty set is regular.
+
+335
+01:01:13,612 --> 01:01:28,112
+And this one, the second NFA, let's call it M2, machine tool, only accepts null string.
+
+336
+01:01:30,852 --> 01:01:34,112
+So, language of...
+
+337
+01:01:35,603 --> 01:01:43,883
+NullString was a set that only has NullString. Remember, we just learned this, learned this.
+
+338
+01:01:45,503 --> 01:01:54,983
+And that's the language of machine tool. So we say that language of NullString is regular tool.
+
+339
+01:01:54,983 --> 01:02:01,363
+And finally, for any single symbol like A, B, C, etc.
+
+340
+01:02:02,356 --> 01:02:04,556
+We can write this machine tree.
+
+341
+01:02:04,556 --> 01:02:06,876
+We can draw this machine tree.
+
+342
+01:02:08,056 --> 01:02:17,196
+And notice that this NFA only accepts that single symbol, right?
+
+343
+01:02:19,896 --> 01:02:23,176
+For example, for A, it only accepts A.
+
+344
+01:02:25,016 --> 01:02:28,556
+And then language of just...
+
+345
+01:02:29,039 --> 01:02:56,748
+Açık bir symbol, bir şeyle bir şeyle bir şeyle bir şeyle bir şeyle bir şeyle bir şeyle bir şeyle bir şeyle bir şeyle bir şeyle bir şeyle bir şeyle bir şeyle bir şeyle bir şeyle bir şeyle bir şeyle bir şeyle bir şeyle bir şeyle bir şeyle bir şeyle bir şeyle bir şeyle bir şeyle bir şeyle bir şeyle bir şeyle bir şeyle bir şeyle bir şeyle bir şeyle bir şeyle bir şeyle bir şeyle bir şeyle bir şeyle bir şeyle bir şeyle bir şeyle bir şeyle bir şeyle bir şeyle bir şeyle bir şeyle bir şeyle bir şeyle bir şeyle bir şeyle bir şeyle bir şeyle bir şeyle bir şeyle bir şeyle bir şeyle bir şeyle bir şeyle bir şeyle bir şeyle bir şeyle bir şeyle bir şeyle bir şeyle bir şeyle bir şeyle bir şeyle bir şeyle bir şeyle bir şeyle bir şeyle bir şeyle bir
+
+346
+01:02:57,940 --> 01:03:07,840
+So, the primitive ones, these primitives, their languages are regular.
+
+347
+01:03:07,840 --> 01:03:19,039
+Now, the other regular expressions can be obtained by combining these primitives.
+
+348
+01:03:19,039 --> 01:03:23,980
+And we will see that their combinations are regular too.
+
+349
+01:03:24,367 --> 01:03:32,148
+At the end, we will, with that logic, at the end, we will see that all regular expressions are regular.
+
+350
+01:03:33,728 --> 01:03:35,108
+Let's continue.
+
+351
+01:03:36,148 --> 01:03:42,688
+We will do this again using proof by induction.
+
+352
+01:03:43,007 --> 01:03:46,668
+So this slide, we set induction basis.
+
+353
+01:03:48,692 --> 01:04:06,012
+Now, inductive hypothesis is, we suppose that for regular languages R1 and R2, language of R1 and language of R2 are regular languages.
+
+354
+01:04:07,851 --> 01:04:10,391
+We don't need to prove it.
+
+355
+01:04:10,911 --> 01:04:14,152
+We don't need to prove this.
+
+356
+01:04:14,963 --> 01:04:37,124
+We are supposing this. This is our inductive hypothesis. Now in the inductive step, we will prove that all possible combinations are regular languages. And how can we combine regular expressions?
+
+357
+01:04:38,420 --> 01:04:52,140
+We can have the plus operation, the dot operation, cleanstar operation, and we can have grouping operation, or parentheses operation if you want.
+
+358
+01:04:54,640 --> 01:05:05,940
+Now, remember that we defined regular expression plus operation as
+
+359
+01:05:07,795 --> 01:05:24,935
+The join or union, the union of these, so language of a plus is union of languages of these regular expressions.
+
+360
+01:05:24,935 --> 01:05:31,295
+We defined them this way in a couple of, in the previous lecture.
+
+361
+01:05:32,235 --> 01:05:35,155
+And language of dot,
+
+362
+01:05:36,244 --> 01:05:39,304
+is concatenation of languages.
+
+363
+01:05:43,380 --> 01:05:54,260
+And language of clean star of a regular expression is the clean star of the language.
+
+364
+01:05:56,740 --> 01:06:04,320
+And language of a grouping of parentheses is just language of that regular expression itself.
+
+365
+01:06:06,660 --> 01:06:09,099
+And remember that...
+
+366
+01:06:09,235 --> 01:06:21,195
+Last week, last week, we learned that regular languages are closed under union, concatenation, and cleanstar.
+
+367
+01:06:22,315 --> 01:06:22,635
+Right?
+
+368
+01:06:22,635 --> 01:06:25,635
+So, if languages...
+
+369
+01:06:25,635 --> 01:06:34,635
+So, that means if language of R1 is regular...
+
+370
+01:06:35,795 --> 01:06:37,835
+And language of R2 is regular.
+
+371
+01:06:38,415 --> 01:06:43,855
+Their union will be a regular language.
+
+372
+01:06:44,555 --> 01:06:47,595
+Their concatenation is a regular language.
+
+373
+01:06:47,975 --> 01:06:50,635
+Their clean star is a regular language.
+
+374
+01:06:50,775 --> 01:06:53,215
+We learned this last week.
+
+375
+01:06:55,975 --> 01:06:56,855
+Now,
+
+376
+01:06:57,972 --> 01:07:08,452
+In our inductive hypothesis, we suppose that we assume that language of R1 and R2 are regular languages.
+
+377
+01:07:09,652 --> 01:07:19,452
+So since union concatenation and star are closed under regular languages, closed under...
+
+378
+01:07:23,891 --> 01:07:25,731
+Karıştı bu cümle.
+
+379
+01:07:27,371 --> 01:07:33,811
+Since regular languages are closed under union, concatenation and star,
+
+380
+01:07:35,491 --> 01:07:46,811
+now we can say that language of class is a regular language.
+
+381
+01:07:48,532 --> 01:07:54,652
+Language we obtained by dot of regular expressions.
+
+382
+01:07:56,932 --> 01:08:01,412
+Is the equivalent of concatenation of languages.
+
+383
+01:08:01,771 --> 01:08:03,592
+And again, that's regular.
+
+384
+01:08:05,592 --> 01:08:08,952
+Clean star, regular.
+
+385
+01:08:10,291 --> 01:08:14,492
+And finally, this is trivially regular.
+
+386
+01:08:16,275 --> 01:08:26,995
+If language of R1 is regular, its grouping is its language, again, it's a regular language.
+
+387
+01:08:26,995 --> 01:08:29,975
+So this is trivially a regular language.
+
+388
+01:08:31,915 --> 01:08:35,175
+We assumed this in the induction hypothesis.
+
+389
+01:08:36,716 --> 01:08:38,695
+So this was the proof.
+
+390
+01:08:39,195 --> 01:08:41,055
+End of proof, part one.
+
+391
+01:08:44,787 --> 01:08:52,547
+Let's look at the whole proof again from the start.
+
+392
+01:08:57,300 --> 01:09:06,540
+On the induction basis, we see that language of these primitives are regular.
+
+393
+01:09:08,540 --> 01:09:20,540
+On the inductive hypothesis, we assume that if regular expressions R1 and R2 are...
+
+394
+01:09:26,068 --> 01:09:30,387
+If R1 and R2 are regular expressions, their languages are regular.
+
+395
+01:09:32,507 --> 01:09:41,648
+And in the inductive step, now we need to prove that the languages we obtain by these operations are regular.
+
+396
+01:09:42,708 --> 01:09:46,288
+And how did we do that proof?
+
+397
+01:09:47,068 --> 01:09:49,468
+How did we prove inductive step?
+
+398
+01:09:51,368 --> 01:09:52,868
+We saw that
+
+399
+01:09:53,332 --> 01:10:19,252
+By definition, this is true. By definition, plus is a union, and union is closed. So regular languages are closed under union. Therefore, the plus, which gives us union of languages,
+
+400
+01:10:20,148 --> 01:10:24,667
+has regular language.
+
+401
+01:10:28,979 --> 01:10:30,859
+Okay, so...
+
+402
+01:10:34,068 --> 01:10:41,247
+We can easily construct, combine NFAs for this.
+
+403
+01:10:42,408 --> 01:10:50,747
+And we will not do this today because last week we did it.
+
+404
+01:10:50,747 --> 01:10:58,007
+For example, plus is equivalent to union.
+
+405
+01:10:59,667 --> 01:11:15,887
+And now we learned how we can create an NFA that accepts the union of two languages. Last week we saw this, right?
+
+406
+01:11:21,327 --> 01:11:24,268
+So starting from these primitives,
+
+407
+01:11:25,619 --> 01:11:31,420
+We can build these regular languages for these regular expressions.
+
+408
+01:11:32,559 --> 01:11:35,699
+So regular expressions have regular languages.
+
+409
+01:11:37,379 --> 01:11:45,019
+So this was, remember, first part of the proof, the large proof we are trying to do now.
+
+410
+01:11:47,519 --> 01:11:51,519
+This is, now we just did this first part.
+
+411
+01:11:53,235 --> 01:11:56,255
+Actually, we are trying to prove this equivalency.
+
+412
+01:11:57,735 --> 01:11:59,815
+We did this first part.
+
+413
+01:12:00,655 --> 01:12:06,115
+Now, we need to do second part, which means that
+
+414
+01:12:06,115 --> 01:12:16,615
+regular languages, set of regular languages is a subset of
+
+415
+01:12:17,779 --> 01:12:21,180
+set of languages generated by regular expression.
+
+416
+01:12:21,379 --> 01:12:30,039
+So that means for any regular language, you can write a regular expression.
+
+417
+01:12:31,539 --> 01:12:34,699
+Let's see how that can be done.
+
+418
+01:12:39,572 --> 01:12:56,092
+Again, for any regular language L, there's a regular expression R, with language of that R is equivalent to L.
+
+419
+01:12:58,092 --> 01:13:06,311
+To do that, we will convert an NFA.
+
+420
+01:13:07,796 --> 01:13:11,775
+That accepts L into a regular expression.
+
+421
+01:13:11,976 --> 01:13:22,456
+So remember that regular languages, all regular languages are accepted by an NFA.
+
+422
+01:13:23,775 --> 01:13:26,516
+That's how we define regular languages.
+
+423
+01:13:27,596 --> 01:13:32,896
+So if we can define an NFA into a regular expression,
+
+424
+01:13:34,515 --> 01:13:49,536
+If we can convert an NFA into a regular expression, that means for any regular language, there is a corresponding regular expression.
+
+425
+01:13:50,595 --> 01:13:56,255
+So we will see how we can convert an NFA into a regular expression.
+
+426
+01:13:56,255 --> 01:13:58,515
+So let's see.
+
+427
+01:14:00,756 --> 01:14:09,036
+Since L is regular, there is an NFA M that accepts it.
+
+428
+01:14:13,236 --> 01:14:20,515
+Let's assume, let's start with a single accept state.
+
+429
+01:14:22,292 --> 01:14:39,372
+So, we will assume that this NFA has a single accept state. If it has more accept states, we can construct an equivalent machine with a single accept state. It's not hard. We saw how to do that last week.
+
+430
+01:14:41,372 --> 01:14:42,052
+Now,
+
+431
+01:14:43,764 --> 01:14:53,623
+From these machines, we will construct an equivalent generalized transition graph.
+
+432
+01:14:55,724 --> 01:15:03,703
+And this transition graph has these transition labels that are regular expressions.
+
+433
+01:15:05,923 --> 01:15:10,724
+As a simple example, look at this machine here.
+
+434
+01:15:11,475 --> 01:15:16,935
+We have a transition A or B.
+
+435
+01:15:18,175 --> 01:15:26,555
+So when you are on this state, if you get an A, you transition to this state.
+
+436
+01:15:27,615 --> 01:15:32,715
+Or again, if you get a B, you transition to this state.
+
+437
+01:15:33,655 --> 01:15:36,615
+And we also have these loop transitions.
+
+438
+01:15:38,547 --> 01:15:44,827
+On the initial state, if you get an A, you look back to initial state.
+
+439
+01:15:45,747 --> 01:15:51,067
+On the final accept state, if you get a C, you look back to C.
+
+440
+01:15:52,448 --> 01:16:05,247
+Now, the generalized transition graph, the corresponding generalized transition graph, is this one.
+
+441
+01:16:05,747 --> 01:16:12,387
+And single transitions like A and C doesn't change.
+
+442
+01:16:12,627 --> 01:16:28,108
+But if we have something like this here, this comma, A or B, then we correspond, sorry, we convert that into a plus.
+
+443
+01:16:29,207 --> 01:16:32,807
+So now here we have a regular expression, right?
+
+444
+01:16:33,235 --> 01:16:36,456
+A plus B is a regular expression.
+
+445
+01:16:39,275 --> 01:16:43,155
+So, another example.
+
+446
+01:16:45,636 --> 01:16:55,376
+Again, we leave single transitions untouched, these guys.
+
+447
+01:16:55,376 --> 01:16:59,015
+But again, we have this.
+
+448
+01:16:59,796 --> 01:17:06,056
+A or B, we convert that A or B into A plus B.
+
+449
+01:17:08,656 --> 01:17:14,576
+Now, also in a generalized, what was this called?
+
+450
+01:17:14,676 --> 01:17:15,516
+What was this called?
+
+451
+01:17:15,876 --> 01:17:25,355
+Generalized transition graph, we must have a single initial, we must only have two states.
+
+452
+01:17:26,547 --> 01:17:34,307
+Just an initial state, just one initial state and one final state.
+
+453
+01:17:35,247 --> 01:17:38,467
+So here now we have three states.
+
+454
+01:17:39,268 --> 01:17:41,387
+One, two, three.
+
+455
+01:17:41,608 --> 01:17:45,268
+So we need to get rid of this Q1, right?
+
+456
+01:17:45,887 --> 01:17:50,427
+In the next step, we need to get rid of Q1.
+
+457
+01:17:51,947 --> 01:17:53,387
+And for...
+
+458
+01:17:53,492 --> 01:18:11,292
+To do that, we need to consider all paths that goes through Q1 and then add those.
+
+459
+01:18:11,292 --> 01:18:18,492
+For example, here, from Q0,
+
+460
+01:18:20,692 --> 01:18:30,811
+If you read a B and then if you read an A, you have a loop, you go back to Q0.
+
+461
+01:18:30,811 --> 01:18:37,492
+So when we get rid of Q1, we must add that.
+
+462
+01:18:38,292 --> 01:18:39,811
+So we must say that...
+
+463
+01:18:44,148 --> 01:18:50,768
+Q0, on the Q0, we have A, B.
+
+464
+01:18:51,467 --> 01:18:56,568
+And since this is a loop, you can have any number of A, B's.
+
+465
+01:18:56,568 --> 01:18:59,568
+We will need to write...
+
+466
+01:19:10,771 --> 01:19:15,952
+We will need to write a regular expression here.
+
+467
+01:19:27,347 --> 01:19:35,507
+Sorry, BA. This is not. First we need to have a B, then we have an A, right? Sorry. So this should be a BA.
+
+468
+01:19:36,587 --> 01:19:41,728
+Right? BA. And I will put a clean star here.
+
+469
+01:19:44,028 --> 01:19:47,768
+Because you can have a loop here, right?
+
+470
+01:19:49,907 --> 01:19:52,768
+Hocam, bence B...
+
+471
+01:19:53,555 --> 01:20:03,295
+Sonra, AB'nin Star hocam. Çünkü en azı bir tane B girmek zorundasınız. Daha sonra isinilen miktarda AB.
+
+472
+01:20:07,699 --> 01:20:12,000
+Evet, yani şuradaki loop'u da esasen göz önünde bulundurmak lazım.
+
+473
+01:20:13,000 --> 01:20:16,099
+Yani bir tane B ile Q1'e geliyorsunuz.
+
+474
+01:20:16,099 --> 01:20:16,379
+B.
+
+475
+01:20:18,739 --> 01:20:24,819
+Sonra burada istediğiniz kadar B'ler var. Hala Q1'de kalıyorsunuz değil mi?
+
+476
+01:20:26,159 --> 01:20:26,539
+Şöyle.
+
+477
+01:20:34,131 --> 01:20:39,131
+Sonra bir tane daha A ile tekrar Q0'ya dönüyorsunuz.
+
+478
+01:20:40,391 --> 01:20:44,831
+Yani B, sonra B yıldı, sonra A.
+
+479
+01:20:45,511 --> 01:20:48,311
+Q0 üzerinde bu olacak.
+
+480
+01:20:50,351 --> 01:20:52,211
+Q1'i kaldırdığımızda.
+
+481
+01:20:55,291 --> 01:20:59,572
+A'dan sonra bir tane daha B alacağım, sonra bir daha star, A, B parantezi içerisinde.
+
+482
+01:20:59,984 --> 01:21:02,204
+Çünkü tekrar Q1'e AB'yle sürekli dönüyoruz ya.
+
+483
+01:21:02,904 --> 01:21:10,944
+Daha bitirmedim. Q0'dayız daha. Yani dediğiniz gibi daha devam etmeniz gerekiyor.
+
+484
+01:21:10,944 --> 01:21:24,864
+Şimdi burada O'luk var. Yani Q1 üzerinden nereye gidiliyor? Hepsini, tüm yolları düşünmemiz lazım.
+
+485
+01:21:25,492 --> 01:21:51,172
+Q0'dan başladığınız, Q1 üzerinden tekrar Q0'a geliyorsunuz. Bunu yazdık. Şimdi Q0'dan başladığınız, Q1 üzerinden bir de Q2'ye geçiyoruz. Bunu da yazmamız lazım. Bunu nasıl yapıyoruz? Önce bir B lazım. Değil mi? Bir tane B lazım. Sonra istediğiniz kadar B.
+
+486
+01:21:52,948 --> 01:21:56,048
+Yine o loop'tan dolayı.
+
+487
+01:21:56,948 --> 01:21:57,148
+Değil mi?
+
+488
+01:21:59,028 --> 01:22:04,068
+Sonra bir AB ile şimdi Q2'ye geçiyorsunuz.
+
+489
+01:22:06,068 --> 01:22:08,948
+Onu da böyle yanına yazalım.
+
+490
+01:22:09,948 --> 01:22:12,068
+A artı B.
+
+491
+01:22:16,020 --> 01:22:26,180
+Şimdi dolayısıyla onu kaldırdığımızda, şu Q1'i kaldırdığımızda iki yeni şey eklemiş olduk.
+
+492
+01:22:29,120 --> 01:22:36,640
+İki yeni ne diyelim, regular expression üretmiş olduk.
+
+493
+01:22:40,180 --> 01:23:00,899
+Şimdi bu generalized transition graphları en son tek regular expression'a döndürmek çok kolay. Neden?
+
+494
+01:23:07,091 --> 01:23:14,992
+Burada ne var? Şu var değil mi? Bir döngü içerisinde. Dolayısıyla B.
+
+495
+01:23:17,992 --> 01:23:20,371
+Let's talk in English.
+
+496
+01:23:21,511 --> 01:23:30,791
+So, writing a regular expression for the final generalized transition graph is easy.
+
+497
+01:23:36,659 --> 01:23:42,420
+You can write, you can group them and then take the clean star.
+
+498
+01:23:43,600 --> 01:23:55,239
+Then we have this transition, B, B star, and A plus B.
+
+499
+01:24:00,756 --> 01:24:05,855
+And then on the Q2, we have this B loop.
+
+500
+01:24:06,396 --> 01:24:12,355
+So again, we have a, we will write a, we will put a clean star on it.
+
+501
+01:24:14,536 --> 01:24:21,695
+So the final, the final regular expression will be this one.
+
+502
+01:24:27,188 --> 01:24:28,188
+Okay.
+
+503
+01:24:29,948 --> 01:24:36,188
+So, we started with a regular language.
+
+504
+01:24:42,100 --> 01:24:43,800
+We start with this.
+
+505
+01:24:46,140 --> 01:24:53,079
+And we end up, we ended up with this.
+
+506
+01:24:54,960 --> 01:25:01,079
+So we can convert an NFA into a regular expression.
+
+507
+01:25:02,771 --> 01:25:11,492
+So, what we do, what did we do? Let's look at this, try to create a general conversion procedure.
+
+508
+01:25:12,811 --> 01:25:27,172
+So, in general, the hardest part is removing a state because we want to have only two states, an initial and a final state.
+
+509
+01:25:29,332 --> 01:25:47,252
+In general, what we do is we consider all possible routes that goes through this state and we write regular expressions for them.
+
+510
+01:25:48,052 --> 01:25:53,172
+So from QI, if we have something like this,
+
+511
+01:25:53,684 --> 01:26:13,104
+With an A, we come to Q. With a D, we come back to QI. So we have this loop there. On the Q, we have E. So we have to write this E star there.
+
+512
+01:26:14,444 --> 01:26:19,344
+There's a similar situation with QJ. You can start with C.
+
+513
+01:26:19,859 --> 01:26:24,340
+You can have some E's and come back to QJ by B.
+
+514
+01:26:24,920 --> 01:26:26,239
+Again, we write that.
+
+515
+01:26:27,500 --> 01:26:29,020
+These are loops.
+
+516
+01:26:30,159 --> 01:26:40,879
+And then the transitions that change the state, that are not loops but change the state.
+
+517
+01:26:41,180 --> 01:26:44,879
+For those, again, we need to write...
+
+518
+01:26:49,939 --> 01:27:16,399
+D's, right? For example, from Qj, right? With C, we come to Q, we can have some E's. Then with D, we go to Qi. So we have to write that root without Q. Similarly, from Qi to Qj.
+
+519
+01:27:17,043 --> 01:27:20,984
+We can go using this regular expression.
+
+520
+01:27:21,123 --> 01:27:22,083
+We have to write them.
+
+521
+01:27:22,804 --> 01:27:27,283
+One by one, we get rid of each state.
+
+522
+01:27:27,903 --> 01:27:31,663
+We merge roots.
+
+523
+01:27:32,343 --> 01:27:33,343
+For example, here.
+
+524
+01:27:36,963 --> 01:27:38,463
+How can we do that?
+
+525
+01:27:38,543 --> 01:27:39,663
+What do we have here?
+
+526
+01:27:40,183 --> 01:27:41,363
+This is a loop, right?
+
+527
+01:27:44,051 --> 01:27:45,271
+We have a loop here.
+
+528
+01:27:59,060 --> 01:28:09,200
+So, how will we write this final, as a regular expression, this final thing?
+
+529
+01:28:11,200 --> 01:28:14,700
+How will we merge these?
+
+530
+01:28:16,480 --> 01:28:19,960
+So, QI is the initial state, right?
+
+531
+01:28:20,480 --> 01:28:24,460
+So, you can have any number of this.
+
+532
+01:28:25,811 --> 01:28:32,172
+So we have A, E star, D.
+
+533
+01:28:33,332 --> 01:28:36,332
+And we need a green star there.
+
+534
+01:28:40,659 --> 01:28:43,399
+Because we have a group here, right?
+
+535
+01:28:45,420 --> 01:28:58,000
+And now we can come here with A, E star B, and then we can come back.
+
+536
+01:28:58,000 --> 01:29:03,079
+So we have to add this, add this tool.
+
+537
+01:29:05,139 --> 01:29:07,359
+So A,
+
+538
+01:29:08,979 --> 01:29:11,779
+E star B.
+
+539
+01:29:12,299 --> 01:29:15,639
+And while we're on QJ, we can have this loop.
+
+540
+01:29:17,099 --> 01:29:22,979
+So C E star B.
+
+541
+01:29:23,619 --> 01:29:26,499
+Let's group them and put a star.
+
+542
+01:29:28,439 --> 01:29:31,239
+And after that, we have C E B.
+
+543
+01:29:33,908 --> 01:29:45,708
+C, C, this should be C, C, E star, D. And since this is a loop now,
+
+544
+01:29:49,939 --> 01:29:51,479
+We have this, I think.
+
+545
+01:29:58,068 --> 01:29:59,827
+So, we have a star here.
+
+546
+01:30:03,315 --> 01:30:08,895
+When we come to QI, again, we can have any number of these.
+
+547
+01:30:11,695 --> 01:30:14,076
+So I can write them here.
+
+548
+01:30:15,975 --> 01:30:19,755
+A, E star, D.
+
+549
+01:30:21,455 --> 01:30:26,355
+The better thing to do is, I think, put another grouping here.
+
+550
+01:30:27,935 --> 01:30:28,635
+Sorry.
+
+551
+01:30:29,395 --> 01:30:30,855
+And write a star here.
+
+552
+01:30:33,140 --> 01:30:37,220
+And finally, we can come here with A star B.
+
+553
+01:30:37,380 --> 01:30:45,680
+So it becomes really a big, big, big, big, big regular expression.
+
+554
+01:30:45,680 --> 01:30:51,319
+And I think it may be, maybe we can write it.
+
+555
+01:30:56,020 --> 01:30:59,520
+İndir, birçok birçok.
+
+556
+01:31:00,360 --> 01:31:01,320
+But we'll see.
+
+557
+01:31:02,320 --> 01:31:04,380
+Do we have some examples for this?
+
+558
+01:31:08,532 --> 01:31:22,412
+There isn't much examples here. You can look at the book for some examples or search the internet for examples for this and exercise yourself.
+
+559
+01:31:26,052 --> 01:31:34,092
+So for the case when we have two neighbors, so Q has two neighbors here.
+
+560
+01:31:35,060 --> 01:31:59,380
+We will remove Q and it has two neighbors. We convert to this one. Now, if Q has three neighbors, like QI, QK, and QJ, now again, we need to consider all paths that goes through Q.
+
+561
+01:32:00,435 --> 01:32:05,815
+Ve bu kürlerimizin nefesine gerek yok.
+
+562
+01:32:07,935 --> 01:32:10,595
+Bu bir kürlerimizin nefesine gerek yok.
+
+563
+01:32:10,595 --> 01:32:12,815
+Ama aynı şekilde yapmak istiyor.
+
+564
+01:32:12,815 --> 01:32:14,655
+Bu aynı şekilde yapmak istiyor.
+
+565
+01:32:16,935 --> 01:32:21,875
+Bu 4 kürlerimizin nefesine gerek yok.
+
+566
+01:32:21,875 --> 01:32:25,775
+Ama aslında, bu aynı şekilde yapmak istiyor.
+
+567
+01:32:27,988 --> 01:32:51,724
+So, by repeating this process until two final states are left, so you start with this initial graph, you eliminate all of these states, middle states, until you have a...
+
+568
+01:32:52,275 --> 01:32:57,016
+A single initial state, a single final state.
+
+569
+01:32:58,355 --> 01:33:07,615
+And the general state situation is on the initial state, you have the regular expression R1.
+
+570
+01:33:08,976 --> 01:33:12,416
+With R2, you can go to final state.
+
+571
+01:33:13,043 --> 01:33:20,623
+With R3, you can come back to initial state, and R4 is a loop on the final state.
+
+572
+01:33:21,103 --> 01:33:23,963
+So final situation will be this.
+
+573
+01:33:24,923 --> 01:33:32,264
+And now you can convert this into, you can write this as this regular expression.
+
+574
+01:33:36,264 --> 01:33:38,103
+So we can write this.
+
+575
+01:33:38,771 --> 01:33:41,471
+We can do this conversion.
+
+576
+01:33:42,511 --> 01:33:45,891
+So this becomes a proof by construction.
+
+577
+01:33:48,131 --> 01:33:59,211
+We proved that NFAs can be converted into regular expressions.
+
+578
+01:33:59,211 --> 01:34:05,211
+So regular languages have corresponding...
+
+579
+01:34:09,043 --> 01:34:11,524
+regular expression languages.
+
+580
+01:34:12,243 --> 01:34:15,484
+We just proved this by construction.
+
+581
+01:34:16,863 --> 01:34:22,304
+Let me check this resulting regular expression a little carefully.
+
+582
+01:34:23,684 --> 01:34:32,043
+How did we, how does this to, because this was kind of complicated when we just did a little earlier.
+
+583
+01:34:36,692 --> 01:34:43,632
+So we have a R1 star because of this loop.
+
+584
+01:34:45,632 --> 01:34:48,112
+And we go to R2.
+
+585
+01:34:49,072 --> 01:34:51,632
+We go to QF with R2.
+
+586
+01:34:52,252 --> 01:34:53,772
+So R2 is here.
+
+587
+01:34:56,052 --> 01:35:03,512
+So we first write this initial loop and then this.
+
+588
+01:35:04,020 --> 01:35:06,280
+Transition to final state.
+
+589
+01:35:06,940 --> 01:35:14,940
+And then when you get to final state, you have to consider the loops on the final state.
+
+590
+01:35:15,940 --> 01:35:26,240
+Probably you can write this in different ways, but this is how the slides recommend.
+
+591
+01:35:26,944 --> 01:35:36,264
+I recommend this way too, because it becomes very complicated if you don't have this procedure in your head.
+
+592
+01:35:37,484 --> 01:35:54,404
+So while we are on the final state, with R4, R4 is a loop, so you will be still on final state, so accept state.
+
+593
+01:35:55,252 --> 01:36:08,271
+Now, with this R2, R3, sorry, you go back to initial state, and you can have any number of R1s there.
+
+594
+01:36:09,652 --> 01:36:10,452
+Right?
+
+595
+01:36:11,072 --> 01:36:18,652
+After that, with an R2, you again connect to your final state.
+
+596
+01:36:19,792 --> 01:36:20,271
+And now,
+
+597
+01:36:20,851 --> 01:36:26,011
+We have a final star for these.
+
+598
+01:36:26,011 --> 01:36:37,771
+So you can have some direct loops on QF and then some loops by going to Q0 and coming back.
+
+599
+01:36:38,351 --> 01:36:43,231
+And you can interleave these as much as you want.
+
+600
+01:36:46,484 --> 01:36:51,864
+R4'te de Star'a gerek yok mu demiş arkadaşımız. Gerek olmuyor. Neden?
+
+601
+01:36:56,948 --> 01:37:09,448
+Görebiliyor musunuz? Şunun yüzünden. En dıştaki star yüzünden. Şu zaten R4'ü istediğiniz kadar koymanızı sağlıyor.
+
+602
+01:37:15,539 --> 01:37:41,300
+Evet. Yani bu tabii bunu ezberleyin. Ezberlemeyin de mantığını anlayın en azından. Çünkü ben az önce yapmaya çalıştım. Fark ettiğiniz bayağı zor dağıldım biraz. Ya da elde ettiğiniz şey bayağı böyle gereğinden daha kompleks bir şey olur. Böyle kompakt, en basit tarzı sanırım bu. Ne yapıyorsunuz?
+
+603
+01:37:44,787 --> 01:37:45,887
+Tekrar edelim.
+
+604
+01:37:48,047 --> 01:37:50,587
+Zaman bitmek üzere bu ders.
+
+605
+01:37:52,107 --> 01:37:53,867
+Ne yapıyorsunuz?
+
+606
+01:37:53,867 --> 01:37:59,867
+Önce başlangıç state'indeki R1 loopunu düşünüyorsunuz.
+
+607
+01:38:01,167 --> 01:38:03,727
+Oradan final state'e geçiş.
+
+608
+01:38:04,687 --> 01:38:05,527
+Bu ikisi.
+
+609
+01:38:07,407 --> 01:38:10,967
+Sonra final state üzerindeki döngüler.
+
+610
+01:38:12,916 --> 01:38:37,315
+Bir direk R4 kendisi var, kendi döngüsü var. Bir de Q0 üzerinden olan döngüsü var, o da bu. Bu ikisini birleştirip Union'unu alıp, Artısını alıp, üzerine bir de Clean Star koyuyorsunuz. Yani operasyonumuz, en son operasyonumuz bu olmuş oluyor.
+
+611
+01:38:39,220 --> 01:39:02,360
+Bu şekilde herhangi bir NFA'yi bir düzenli dille çevirebiliyoruz. Ne demek? Bütün düzenli diller bir NFA'ye sahip. Bir NFA'ye kabul ediyor onları. Her NFA'yi de düzenli ifadeye çevirebiliyorsak, ne demek bu?
+
+612
+01:39:07,380 --> 01:39:15,380
+Onu jenerate eden, üreten bir düzenli ifade bulabiliriz demek.
+
+613
+01:39:17,380 --> 01:39:20,819
+Bu neyi prove ediyor?
+
+614
+01:39:24,340 --> 01:39:26,380
+Düzenli dillerin...
+
+615
+01:39:28,243 --> 01:39:45,003
+Düzenli ifadelerin dillerinin alt kümesi olduğunu ispatlıyor. Burada düzenli çok geçtiği için artık söylemek bir şey oluyor. Cümle kurmak biraz zorlaşıyor. Dikkatli kurmam gerekiyor.
+
+616
+01:39:49,003 --> 01:39:53,723
+Yani burası şuranın sapseti.
+
+617
+01:39:54,612 --> 01:40:20,352
+Alt kümesi. Onu ispat ettik. Bir önceki adımda da bunun alt kümesi olduğunu ispat etmiştik. Dolayısıyla iki küme birbirinin hem alt kümesi hem de süper kümesi ise bu iki küme nedir? Denktir. Kümelerin denkliğini böyle ispat ediyoruz. Her ikisini de ispat etmemiz gerekiyor.
+
+618
+01:40:23,060 --> 01:40:27,140
+Before finishing this part, we have only two slides.
+
+619
+01:40:29,780 --> 01:40:42,500
+Let's notice, let's note that we represented so far regular languages by three things.
+
+620
+01:40:44,500 --> 01:40:48,740
+We can represent regular languages by DFAs.
+
+621
+01:40:49,716 --> 01:40:57,156
+NFA's, and now today we just learned we can represent them by regular expressions.
+
+622
+01:40:59,956 --> 01:41:14,116
+So, when we say we are given a regular language L, we mean that language L is in a standard representation.
+
+623
+01:41:15,444 --> 01:41:22,284
+It is represented as a DFA or NFA or regular expression.
+
+624
+01:41:24,184 --> 01:41:29,104
+Let's finish this lecture. Let's give a break.
+
+625
+01:41:33,084 --> 01:41:38,604
+It's 5 to 11.
+
+626
+01:41:41,716 --> 01:41:58,435
+Let's give a break till 5 past 11. 11'i 5 geçe ileye kadar. Bitirmeden önce sorayım. Sorununuz var mı arkadaşlar? 10 dakika ara verelim. Sonra devam edeceğiz.
+
+627
+01:55:04,115 --> 01:55:05,775
+Tekrar merhabalar arkadaşlar.
+
+628
+01:55:08,695 --> 01:55:13,475
+Şimdi, pumping lemma ile geçeceğiz.
+
+629
+01:55:17,076 --> 01:55:18,636
+Yeni bir bölüme geçiyoruz.
+
+630
+01:55:27,572 --> 01:55:33,192
+Şimdiye kadar şeyi gördük. Türkçe bir giriş yapayım. Sesim geliyor değil mi arkadaşlar?
+
+631
+01:55:39,380 --> 01:55:40,099
+[öğrenci] Hocam.
+
+632
+01:55:40,579 --> 01:55:40,819
+Evet.
+
+633
+01:55:43,219 --> 01:55:47,000
+Bir dilin ekran paylaşımını yaptım sanırım.
+
+634
+01:55:47,899 --> 01:55:49,139
+Görüyorsunuz slide'ı.
+
+635
+01:55:51,139 --> 01:55:54,347
+Bir dilin regular olduğunu...
+
+636
+01:55:57,363 --> 01:55:59,523
+Kolaylıkla gösterebiliyoruz.
+
+637
+01:56:00,923 --> 01:56:02,983
+Pumping lemma yazıyor mu ekranda?
+
+638
+01:56:07,796 --> 01:56:13,536
+Slide, aynı doğru slide'ı görüyor musunuz? Tekrar bir kapatıp açayım şu şeyleri.
+
+639
+01:56:14,636 --> 01:56:15,296
+Umarım olamadım.
+
+640
+01:56:20,979 --> 01:56:24,539
+Şu an doğru hocam.
+
+641
+01:57:24,467 --> 01:57:45,467
+Şimdiye kadar bir dilin regular olduğunu ispat etmeyi öğrendik. Yani bir dil varsa regular olduğunu nasıl ispat edebiliriz? O dil için bir NFA'yı çizeriz ya da bir DFA ya da bir regular expression yazarız.
+
+642
+01:57:52,307 --> 01:58:10,008
+Peki bir dilin regular olmadığını nasıl ispat edebiliriz? Regular olmadığını ispat edebiliyoruz. Regular olmadığını nasıl ispat edebiliriz? Bunun için bir şey öğrenmedik.
+
+643
+01:58:20,627 --> 01:58:36,947
+Düşünün, bir NFA yazacağız, bak bu uymuyor. Bir NFA daha yazacağız, bak bu uymuyor. Yani sonsuz sayıda NFA'yı, tüm NFA'yı yazıp hiçbirinin bu dili kabul etmediğini göstermemiz lazım. Öyle yapmaya çalışırsak.
+
+644
+01:58:40,727 --> 01:58:47,747
+Burada işte pumping lemma bize yardımcı olacak. Şimdi Türkçe giriş yaptım, İngilizce devam edeyim.
+
+645
+01:58:49,747 --> 01:58:59,387
+So far in this class, we learned how to prove that a language is regular.
+
+646
+01:59:00,647 --> 01:59:03,667
+And how can we prove a language is regular?
+
+647
+01:59:04,887 --> 01:59:11,467
+We draw an NFA or a DFA that accepts that language.
+
+648
+01:59:12,148 --> 01:59:16,928
+Or we write a regular expression that generates that language.
+
+649
+01:59:16,928 --> 01:59:24,028
+If we can do that, that means we proved that language is regular.
+
+650
+01:59:24,548 --> 01:59:30,268
+Now the question is, how can we prove that a language is not regular?
+
+651
+01:59:32,688 --> 01:59:35,928
+And for that, we will use...
+
+652
+01:59:36,787 --> 01:59:40,907
+PAMPING LEMMA, a lemma we will learn now.
+
+653
+01:59:45,707 --> 01:59:47,068
+PAMPING LEMMA.
+
+654
+01:59:49,707 --> 01:59:53,487
+So, let's continue with the slides.
+
+655
+01:59:53,807 --> 01:59:59,787
+So, we have regular languages, but we have some languages that are not.
+
+656
+02:00:00,212 --> 02:00:25,332
+regular. For example, this language, A to the N, B to the N, N is larger than or equal to zero. So, some As, and after that, some Bs, but the number of As and Bs must be same, AB.
+
+657
+02:00:25,939 --> 02:00:33,179
+AABB, AABBB, AABBB, these kinds of patterns.
+
+658
+02:00:34,779 --> 02:00:37,339
+This is non-regular.
+
+659
+02:00:37,559 --> 02:00:40,799
+You cannot write a DFA or NFA for this.
+
+660
+02:00:42,779 --> 02:00:52,759
+Similarly, a language that has strings like this first part,
+
+661
+02:00:53,684 --> 02:00:57,124
+And then the second part will be the reverse.
+
+662
+02:00:58,004 --> 02:01:00,364
+So like ABBA.
+
+663
+02:01:01,924 --> 02:01:03,984
+AAB, BAA.
+
+664
+02:01:05,404 --> 02:01:09,984
+So the reverse of the string will be after original.
+
+665
+02:01:11,124 --> 02:01:12,524
+Again, this is non-regular.
+
+666
+02:01:12,744 --> 02:01:14,964
+You cannot write an NFA for this.
+
+667
+02:01:18,292 --> 02:01:23,232
+Now, how can we prove that a language L is not regular?
+
+668
+02:01:24,792 --> 02:01:43,172
+And if you try to do that, proving that there is no DFA or NFA or regular expression that accepts L, this is not easy to prove because there is an infinite number of DFAs.
+
+669
+02:01:45,555 --> 02:01:48,296
+There is an infinite number of NFAs.
+
+670
+02:01:49,095 --> 02:01:51,216
+So this is not possible.
+
+671
+02:01:51,355 --> 02:01:53,176
+You cannot do that.
+
+672
+02:01:54,055 --> 02:01:58,996
+But luckily, we can use the pumping lemma.
+
+673
+02:01:59,395 --> 02:02:04,655
+Now the pumping lemma depends on this very easy principle.
+
+674
+02:02:06,515 --> 02:02:09,536
+It's called the pigeonhole principle.
+
+675
+02:02:10,899 --> 02:02:13,379
+And this is a pigeon, by the way.
+
+676
+02:02:15,339 --> 02:02:20,219
+And a pigeonhole is a güvercin yuvası.
+
+677
+02:02:21,699 --> 02:02:24,699
+Pigeonhole, kuş yuvası gibi ama güvercinler için.
+
+678
+02:02:25,519 --> 02:02:30,179
+So pigeon, güvercin in Turkish and pigeonhole, güvercin yuvası.
+
+679
+02:02:31,979 --> 02:02:34,059
+And it's a very simple principle.
+
+680
+02:02:37,587 --> 02:02:39,908
+These four pigeons, for example.
+
+681
+02:02:41,667 --> 02:02:45,948
+Now, but you have only three pigeonholes.
+
+682
+02:02:46,728 --> 02:02:46,908
+Okay.
+
+683
+02:02:48,807 --> 02:02:55,948
+And let's say you want to put, you want to distribute these pigeons into these pigeonholes.
+
+684
+02:02:57,688 --> 02:03:01,268
+And the pigeonhole principle says that
+
+685
+02:03:04,948 --> 02:03:13,128
+At least one pigeonhole must contain at least two pigeons, two pigeons, right?
+
+686
+02:03:14,028 --> 02:03:24,508
+So single pigeon, single pigeon, but at least one of the pigeonholes will have more than one pigeon.
+
+687
+02:03:24,508 --> 02:03:26,328
+Very simple principle.
+
+688
+02:03:27,308 --> 02:03:31,008
+Number of pigeons is more than number of pigeonholes.
+
+689
+02:03:32,564 --> 02:03:47,948
+Bu, bu
+
+690
+02:03:52,243 --> 02:03:55,564
+Evet, çok çok simple principle.
+
+691
+02:03:56,564 --> 02:03:59,863
+Şimdi, bu nasıl bir şey verilir?
+
+692
+02:03:59,863 --> 02:04:01,003
+Let's look at that.
+
+693
+02:04:02,003 --> 02:04:08,863
+Let's consider DFA, Deterinistic Finite Automaton.
+
+694
+02:04:09,524 --> 02:04:17,783
+Ve 4 states, Q1, Q2, Q3, ve Q4.
+
+695
+02:04:19,444 --> 02:04:26,644
+And let's consider a string, A, A, A, A, B.
+
+696
+02:04:26,644 --> 02:04:39,204
+So, we will call this a long string, meaning its length is more than four.
+
+697
+02:04:39,904 --> 02:04:41,544
+Remember, we have four states.
+
+698
+02:04:42,204 --> 02:04:44,164
+So, consider any string.
+
+699
+02:04:45,876 --> 02:04:52,756
+That has letters more than, that has symbols more than, that has more than four symbols.
+
+700
+02:04:55,635 --> 02:05:00,256
+As an example, AAAB has five symbols.
+
+701
+02:05:02,655 --> 02:05:12,635
+Now, AAAB is accepted by this DFA, but notice that
+
+702
+02:05:13,555 --> 02:05:35,715
+On the walk of this string, when we say walk, what happens when the states, what happens when the symbol is red? What transitions happens? Notice that Q2 is repeated.
+
+703
+02:05:40,948 --> 02:06:00,948
+So with an A, we go to Q2. That's our first visit to Q2. With the other A, we go to Q3. With the third A, we come back to Q2. That's our second visit to Q2. With the fourth A, we...
+
+704
+02:06:01,076 --> 02:06:09,796
+Q3, Q3 is repeated too, but let's consider, let's just focus on Q2.
+
+705
+02:06:10,796 --> 02:06:16,055
+And then the final B, we get to Q4 and that's an accept state.
+
+706
+02:06:16,855 --> 02:06:19,935
+Now, Q2 is repeated.
+
+707
+02:06:22,435 --> 02:06:23,435
+And...
+
+708
+02:06:25,235 --> 02:06:50,235
+This corresponds with the pigeon principle, right? Because you can consider pigeonholes as these cetates, nests or pigeonholes as these cetates. And each symbol, each symbol needs a transition. So...
+
+709
+02:06:50,963 --> 02:06:59,163
+First transition, second transition, third transition, fourth transition, fifth transition.
+
+710
+02:06:59,163 --> 02:07:05,923
+So we have five symbols, five transitions, but we have only four states.
+
+711
+02:07:06,823 --> 02:07:17,243
+So that means one of these states, at least one of these states, is visited more than once.
+
+712
+02:07:18,068 --> 02:07:20,507
+Right? It's visited more than once.
+
+713
+02:07:24,507 --> 02:07:35,188
+And we assume these transitions are pigeons, or symbols are pigeons, and states are pigeonholes.
+
+714
+02:07:38,707 --> 02:07:45,467
+So, or in this case, pigeonholes, pigeonholes are the states.
+
+715
+02:07:46,228 --> 02:07:49,608
+Pigeons are symbols, A, B, C.
+
+716
+02:07:54,612 --> 02:08:01,332
+So since we have more symbols than the states, at least one state is repeated.
+
+717
+02:08:05,572 --> 02:08:09,891
+Again, this is another example.
+
+718
+02:08:10,471 --> 02:08:12,792
+I think it's the same graph, right?
+
+719
+02:08:13,891 --> 02:08:15,391
+Same graph, same graph.
+
+720
+02:08:16,511 --> 02:08:22,152
+Again, we have a string with four symbols now.
+
+721
+02:08:23,636 --> 02:08:38,236
+Now, we have a principle here. We have a repeat here too. And the reason is, did I say pigeonhole states? Yes.
+
+722
+02:08:44,916 --> 02:08:56,756
+Actually, I should have pigeonholes is not the states, but unique transitions. Let's correct this slide a bit.
+
+723
+02:08:58,756 --> 02:09:01,595
+Slide biraz düzeltmeye çalışalım.
+
+724
+02:09:07,636 --> 02:09:22,235
+State'lere güvercin yuvası dedik ama esasen şey olması lazım. Şuna da nest demeyelim. Hep pigeonhole diyoruz. Burada nest demiş.
+
+725
+02:09:30,931 --> 02:09:54,792
+Kostas, Bush'un slide'ları bunlar dediğim gibi. Şöyle biraz yapalım. Automaton states değil Pitching Halls. Unique geçişler, yani tek geçişler. Yani dört tane state varsa aralarında kaç geçiş vardır? Üç geçiş vardır. Değil mi?
+
+726
+02:09:59,475 --> 02:10:19,575
+Her bir sembol de bir geçiş istiyor. O zaman dört sembolümüz varsa, dört tane de state'imiz varsa, üç tane geçiş var. Dolayısıyla bir geçişi bir kere daha kullanmamız lazım.
+
+727
+02:10:27,636 --> 02:10:40,155
+Tabi burada loopları saymıyoruz bu üç geçiş arasında. Çünkü loop olduğunda zaten o state'i tekrar kullanmış oluyoruz.
+
+728
+02:10:42,036 --> 02:10:46,476
+Dolayısıyla burada ne diyeceğim ben buraya? Ne diyeyim?
+
+729
+02:10:50,068 --> 02:10:51,608
+Biraz şey olacak ama.
+
+730
+02:10:53,427 --> 02:10:54,467
+Bundan durup.
+
+731
+02:10:57,971 --> 02:10:58,752
+Unique
+
+732
+02:11:05,171 --> 02:11:06,591
+Transition's team.
+
+733
+02:11:08,991 --> 02:11:10,551
+Tabi yer yok.
+
+734
+02:11:14,836 --> 02:11:15,916
+Nasıl bir şey yapalım?
+
+735
+02:11:17,355 --> 02:11:18,855
+Şunu bari şuraya getireyim.
+
+736
+02:11:30,228 --> 02:11:32,168
+Yani idare eder.
+
+737
+02:11:37,939 --> 02:11:39,939
+...
+
+738
+02:12:12,467 --> 02:12:15,467
+In this example, we have...
+
+739
+02:12:20,307 --> 02:12:26,028
+A string of four, length four, and the same graph.
+
+740
+02:12:26,368 --> 02:12:29,268
+Now, we have four symbols.
+
+741
+02:12:29,268 --> 02:12:39,427
+So, first symbol, second symbol, third symbol, three unique transitions.
+
+742
+02:12:40,047 --> 02:12:47,427
+Now, the fourth symbol will need another transition.
+
+743
+02:12:48,083 --> 02:12:57,023
+And how do we do that? We do that with a loop. And in this case, Q4 is repeated.
+
+744
+02:12:58,203 --> 02:13:13,343
+This one. So if we have a string with the same length of the number of states, or if the string is larger,
+
+745
+02:13:14,612 --> 02:13:17,452
+We have at least one state repeated.
+
+746
+02:13:23,956 --> 02:13:24,395
+Okay.
+
+747
+02:13:27,395 --> 02:13:31,195
+So in general, let's try to read this.
+
+748
+02:13:32,456 --> 02:13:47,015
+If length of W is larger or equal to number of states of deterministic finite automaton,
+
+749
+02:13:51,188 --> 02:14:00,887
+By the Pizzen Hall principle, a state is repeated in the walk W, in the walk W.
+
+750
+02:14:02,547 --> 02:14:10,547
+So we can represent walk of W when we consider the symbols in it.
+
+751
+02:14:10,547 --> 02:14:17,068
+So let's say W has symbols sigma 1, sigma 2, up to sigma k.
+
+752
+02:14:19,060 --> 02:14:23,820
+And we can write each symbol on a transition.
+
+753
+02:14:26,619 --> 02:14:42,600
+And if this is an accept, if the DFA accepts this string, sumQi is repeated.
+
+754
+02:14:44,115 --> 02:14:52,216
+And how this happens? So generally, you have this initial set of symbols.
+
+755
+02:14:53,416 --> 02:15:02,496
+And then somehow when you come to QI, there might be or they may not be, may or may not.
+
+756
+02:15:02,496 --> 02:15:11,716
+You can go through some other states or not, but at the end, you have a loop or QI.
+
+757
+02:15:12,112 --> 02:15:19,851
+And then you can continue and finish at an accept state.
+
+758
+02:15:23,851 --> 02:15:30,771
+So let's give some symbols to these numbers.
+
+759
+02:15:32,771 --> 02:15:37,771
+So if the length of W...
+
+760
+02:15:39,220 --> 02:15:43,539
+is larger than or equal to P.
+
+761
+02:15:44,539 --> 02:15:45,460
+Sorry.
+
+762
+02:15:47,300 --> 02:15:50,019
+Larger than or equal to P.
+
+763
+02:15:50,739 --> 02:15:55,039
+Where P is number of states of DFA.
+
+764
+02:15:57,779 --> 02:15:59,099
+And
+
+765
+02:16:01,171 --> 02:16:09,112
+If the number of states, then, sorry, then, number of states involved is at least P plus one.
+
+766
+02:16:12,692 --> 02:16:19,471
+And in that case, a state is repeated.
+
+767
+02:16:22,631 --> 02:16:24,612
+A state is repeated.
+
+768
+02:16:26,752 --> 02:16:27,631
+Now,
+
+769
+02:16:28,064 --> 02:16:29,264
+Pumping Lemma,
+
+770
+02:16:30,404 --> 02:16:31,524
+uh,
+
+771
+02:16:32,304 --> 02:16:33,603
+says that,
+
+772
+02:16:34,184 --> 02:16:37,443
+take an infinite regular language L,
+
+773
+02:16:37,623 --> 02:16:39,363
+so the language is infinite.
+
+774
+02:16:39,963 --> 02:16:41,324
+What does that mean?
+
+775
+02:16:45,236 --> 02:17:12,836
+Number of elements is infinite. What does that mean? It has very long strings, right? It has strings of infinite length, right? So it contains an infinite number of strings and most of these strings are very, very long.
+
+776
+02:17:14,708 --> 02:17:35,888
+And let's say that there is a DFA that accepts this language. Let's say this is the DFA. And let's say this DFA has P states. One, two, three, P. It has P states.
+
+777
+02:17:39,059 --> 02:17:42,259
+Take a string W in the language.
+
+778
+02:17:43,340 --> 02:17:46,419
+So this DFA accepts this language.
+
+779
+02:17:47,939 --> 02:17:56,399
+And W's length is larger than or equal to P, number of states in DFA.
+
+780
+02:17:57,479 --> 02:18:03,399
+Then at least one state is repeated in the bulk of W.
+
+781
+02:18:03,399 --> 02:18:05,399
+So,
+
+782
+02:18:07,092 --> 02:18:13,092
+If you consider all the state transitions, we call that a walk.
+
+783
+02:18:14,332 --> 02:18:18,412
+In that walk, at least one state like this Q is repeated.
+
+784
+02:18:20,452 --> 02:18:24,492
+There may be more than one state repeated.
+
+785
+02:18:26,452 --> 02:18:28,731
+There could be many states repeated.
+
+786
+02:18:29,731 --> 02:18:33,672
+Let's say Q is the first state that is repeated.
+
+787
+02:18:36,147 --> 02:18:56,007
+So, when you consider the initial state and how the states change by these symbols of W, you get the Q and Q is the first state repeated.
+
+788
+02:18:56,007 --> 02:19:01,007
+Now, you continue and you come back to Q.
+
+789
+02:19:04,659 --> 02:19:27,340
+Up to this point, the states are unique. The states doesn't repeat because Q is the first repeat, right? Before reaching to Q a second time, we visited these states only once.
+
+790
+02:19:29,427 --> 02:19:32,347
+And then we visit second occurrence.
+
+791
+02:19:34,468 --> 02:19:42,028
+So, in a way, we can write this W in three parts.
+
+792
+02:19:43,288 --> 02:19:48,347
+Let's call these three parts as X, Y, and Z.
+
+793
+02:19:51,028 --> 02:19:53,347
+And X...
+
+794
+02:19:54,036 --> 02:20:02,795
+X will be this first part up to the first occurrence of Q, right?
+
+795
+02:20:03,956 --> 02:20:17,435
+These symbols, sigma 1, sigma 2, up to sigma i, those will be part of X.
+
+796
+02:20:19,188 --> 02:20:22,907
+And those will bring the state to Q.
+
+797
+02:20:24,628 --> 02:20:39,648
+And then we continue reading W and let's call the symbols we read Y.
+
+798
+02:20:42,868 --> 02:20:48,608
+And these, let's say, bring to the second occurrence of Q.
+
+799
+02:20:49,608 --> 02:20:49,747
+Okay.
+
+800
+02:20:50,508 --> 02:20:54,747
+That part, let us call as Y.
+
+801
+02:20:57,188 --> 02:21:09,747
+So those will be symbol sigma i plus one, sigma i plus two, up to...
+
+802
+02:21:10,324 --> 02:21:11,524
+Sigma J.
+
+803
+02:21:14,504 --> 02:21:24,424
+And from then on, you can continue reading whatever symbols left in the W.
+
+804
+02:21:25,904 --> 02:21:31,164
+And finally, when you read the final symbol, Sigma K,
+
+805
+02:21:38,451 --> 02:21:38,891
+Sorry.
+
+806
+02:21:39,791 --> 02:21:53,651
+When you read the final sigma k, you reach to this accepting state, and let's call that part z, x, y, z.
+
+807
+02:21:54,572 --> 02:21:57,211
+We divide w into 3.
+
+808
+02:22:02,227 --> 02:22:07,467
+Let's now consider this part, this loop part.
+
+809
+02:22:11,507 --> 02:22:18,667
+Y is the substring between first and second occurrence of Q.
+
+810
+02:22:19,628 --> 02:22:22,608
+You can repeat Y, right?
+
+811
+02:22:23,027 --> 02:22:28,768
+Because if you repeat Y, you come back to Q again.
+
+812
+02:22:29,768 --> 02:22:35,268
+And after reading Z, you can reach accept state, right?
+
+813
+02:22:39,572 --> 02:22:47,092
+So, let's make some observations.
+
+814
+02:22:51,531 --> 02:23:03,531
+First of all, the length of x, y together is less than or equal to p.
+
+815
+02:23:03,531 --> 02:23:05,211
+So,
+
+816
+02:23:06,291 --> 02:23:12,491
+This can be like you, this is the, let's say this is an accepting state.
+
+817
+02:23:14,031 --> 02:23:18,051
+And with X, you reached to Q.
+
+818
+02:23:19,031 --> 02:23:23,592
+And with Y, you do a repeat and come back to Q.
+
+819
+02:23:25,271 --> 02:23:31,931
+And since Q is accept, it reads, the, the,
+
+820
+02:23:32,724 --> 02:23:34,844
+This string is accepted.
+
+821
+02:23:36,984 --> 02:23:43,044
+The length but is less than or equal to P.
+
+822
+02:23:43,584 --> 02:23:49,544
+The symbols you used will be P or less.
+
+823
+02:23:53,684 --> 02:23:55,724
+This is one observation.
+
+824
+02:23:57,724 --> 02:24:00,024
+Another observation is
+
+825
+02:24:01,012 --> 02:24:08,371
+This loop, the length of the loop, is more than one, one or more.
+
+826
+02:24:09,932 --> 02:24:24,832
+So since for the loop, you need at least one direct loop, or if you have a loop through other states, the length of y will be more than one.
+
+827
+02:24:25,332 --> 02:24:32,551
+But at least in the case of a single direct loop, the length of y is 1.
+
+828
+02:24:38,644 --> 02:24:52,484
+Z, after we do this loop, the Z is not really important.
+
+829
+02:24:54,864 --> 02:25:01,164
+Maybe we can return back to X, maybe we can repeat Y or some...
+
+830
+02:25:01,492 --> 02:25:03,531
+Y, more than once again.
+
+831
+02:25:04,112 --> 02:25:08,211
+Maybe we can have other loops up here after Y.
+
+832
+02:25:08,531 --> 02:25:10,132
+We don't really care.
+
+833
+02:25:17,492 --> 02:25:32,231
+Now, consider what happens when we try a string that does not have this y part, so only x and z.
+
+834
+02:25:33,811 --> 02:25:43,031
+We kind of extracted y, we only chose, we have only chosen x and z.
+
+835
+02:25:45,332 --> 02:25:47,731
+We didn't follow this loop.
+
+836
+02:25:52,948 --> 02:25:55,188
+Is that string accepted?
+
+837
+02:25:56,648 --> 02:25:59,508
+Is XZ accepted?
+
+838
+02:26:00,288 --> 02:26:02,348
+It is accepted, right?
+
+839
+02:26:03,247 --> 02:26:12,208
+Because by X, we come to Q, and with the remaining Z, we can reach to accept state.
+
+840
+02:26:15,888 --> 02:26:19,988
+Let's look what happens if we use Y twice.
+
+841
+02:26:21,620 --> 02:26:24,540
+Not only once, but twice.
+
+842
+02:26:26,700 --> 02:26:29,260
+With X, we get to Q.
+
+843
+02:26:30,860 --> 02:26:36,260
+With Y, we come back to Q.
+
+844
+02:26:36,780 --> 02:26:42,240
+Now with an additional Y, we come back to Q again.
+
+845
+02:26:43,300 --> 02:26:45,840
+And with the third Y,
+
+846
+02:26:46,324 --> 02:26:49,324
+Again, we will be on the queue.
+
+847
+02:26:50,344 --> 02:27:13,463
+In fact, any number of i, any number of i, a y, so two y's, three y's, one y's, in fact, even zero y, no y's, ten y's, all of them
+
+848
+02:27:15,412 --> 02:27:17,371
+will end up on Q.
+
+849
+02:27:19,112 --> 02:27:25,252
+And after that, with the Z, with the Z part, you can reach to accepting state again.
+
+850
+02:27:25,252 --> 02:27:37,152
+So, all strings that has this form, X, Y to the I, Z, are accepted, all of them.
+
+851
+02:27:43,572 --> 02:27:56,412
+So, x, y to the i, z, where i is zero to infinity, are in the language.
+
+852
+02:27:56,412 --> 02:28:08,572
+They are in the language of the, of the, um, they are in the language of the NFA or DFA.
+
+853
+02:28:11,028 --> 02:28:13,468
+We are talking about DFA here.
+
+854
+02:28:13,468 --> 02:28:16,427
+So they are in the language of the DFA.
+
+855
+02:28:18,268 --> 02:28:27,188
+This was language, this was pumping lemma, or the logic of pumping lemma.
+
+856
+02:28:28,148 --> 02:28:31,188
+What pumping lemma says is this actually.
+
+857
+02:28:32,500 --> 02:28:39,559
+This is the pumping lemma, this slide. You have to memorize this. You have to know this.
+
+858
+02:28:40,279 --> 02:28:56,239
+So pumping lemma is, given an infinite regular language L, there exists an integer P, let's call that critical length.
+
+859
+02:29:00,500 --> 02:29:28,040
+In the language, with length, with length, larger than or equal to P, we can divide W into X, Y, and Z with X, Y's length together is less than or equal to P.
+
+860
+02:29:28,432 --> 02:29:31,592
+and y's length is one or more.
+
+861
+02:29:34,772 --> 02:29:54,012
+We can write, we can divide w into x, y, z such that x, y to the i, z, where i is from zero to infinity is in the language.
+
+862
+02:29:55,924 --> 02:30:02,443
+We don't have a lot of time, so I will move very quickly here.
+
+863
+02:30:03,783 --> 02:30:09,084
+Because if we cut here, it will be a very bad point. I don't want to cut now.
+
+864
+02:30:09,084 --> 02:30:19,884
+I will move on and do an example. Next week, we will start from this slide and do more examples.
+
+865
+02:30:20,595 --> 02:30:27,935
+Now, why did we learn this pumping lemma? How do we use them? How do we use it?
+
+866
+02:30:32,355 --> 02:30:42,935
+So, first of all, every language of finite size, meaning not infinite, is regular.
+
+867
+02:30:43,572 --> 02:30:49,772
+We can easily construct a DFA or NFA that accepts that language.
+
+868
+02:30:50,051 --> 02:30:52,672
+So let's not consider finite languages.
+
+869
+02:30:55,932 --> 02:31:01,512
+That means if a language is non-regular, it is infinite.
+
+870
+02:31:04,512 --> 02:31:08,812
+So let's say you have an infinite language, L.
+
+871
+02:31:09,236 --> 02:31:11,956
+And you want to prove that L is not regular.
+
+872
+02:31:13,736 --> 02:31:20,976
+What we will do is, we will do a proof by contradiction.
+
+873
+02:31:22,176 --> 02:31:26,656
+So first, we will assume that L is regular.
+
+874
+02:31:27,716 --> 02:31:31,116
+Remember, we want to prove that L is not regular.
+
+875
+02:31:32,659 --> 02:31:37,779
+So, we will assume the opposite. We will assume L is regular.
+
+876
+02:31:38,860 --> 02:31:45,319
+And we will check whether pumping lemma holds for that language.
+
+877
+02:31:47,739 --> 02:31:55,059
+And using pumping lemma, we will try to obtain a contradiction.
+
+878
+02:31:56,308 --> 02:31:58,828
+This is proved by contradiction.
+
+879
+02:31:59,468 --> 02:32:04,728
+And pumping lemma will help us finding a contradiction.
+
+880
+02:32:05,728 --> 02:32:13,028
+And we will say that after finding the contradiction, we will say that, okay, there is a contradiction.
+
+881
+02:32:13,828 --> 02:32:16,248
+Therefore, L is not regular.
+
+882
+02:32:17,028 --> 02:32:17,228
+Right?
+
+883
+02:32:18,451 --> 02:32:24,412
+At the beginning, we assumed L is regular, but there is a contradiction, so L is not regular.
+
+884
+02:32:25,131 --> 02:32:28,252
+That will be our general logic.
+
+885
+02:32:30,151 --> 02:32:35,072
+Now, how will we do this? How will we get this contradiction?
+
+886
+02:32:43,796 --> 02:32:52,076
+Let's not move on because it explains in detail.
+
+887
+02:32:54,716 --> 02:33:03,015
+Let's learn how we will do this part next week.
+
+888
+02:33:04,636 --> 02:33:07,995
+Evet, pumping lemma önemli bir konu.
+
+889
+02:33:09,268 --> 02:33:27,247
+Olmayana ergi yöntemiyle bir dilin irregular olduğunu ispat etmemizi sağlıyor. Genel yaklaşımımız şu olacak, olmayana ergi. Önce dilin düzenli olduğunu varsayacağız.
+
+890
+02:33:33,680 --> 02:33:51,580
+Bir contradiction bulacağız. Bir olmayana ereceğiz. Bir contradiction'a ulaşacağız ve diyeceğiz ki, eli düzenli kabul ettik, olmayana erdik. Demek ki el düzensiz. Bunu yapacağız.
+
+891
+02:33:53,556 --> 02:34:05,515
+Pumping lemma ile bu nasıl yapılır? Bunu da haftaya göreceğiz arkadaşlar. Bir sorunuz var mı? Yoksa bugünkü dersimizi bitiriyor mu?
+
+892
+02:34:09,716 --> 02:34:15,616
+Peki, haftaya devam ederiz. İyi haftalar diliyorum size.
