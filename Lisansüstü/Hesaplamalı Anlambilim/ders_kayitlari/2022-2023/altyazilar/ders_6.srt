@@ -1,0 +1,4135 @@
+1
+00:00:20,468 --> 00:00:21,428
+Günaydın arkadaşlar.
+
+2
+00:00:25,588 --> 00:00:26,476
+Müzik
+
+3
+00:00:52,148 --> 00:00:54,308
+Bir saniye şu şeyi açalım.
+
+4
+00:01:24,659 --> 00:01:40,959
+Bugün 3 Nisan. Geçen hafta şu kısma başlamıştık diye hatırlıyorum. Aktif öğrenme, yara eğitici öğrenme bunları konuşmuştuk.
+
+5
+00:01:41,652 --> 00:01:48,371
+Bugün bir miktar daha devam edebiliriz buraya. Daha sonra zaten sizin ödeye bir sunumlarınız yer alacak.
+
+6
+00:01:49,611 --> 00:01:54,371
+Yine şey yaparız. İlk önce ben anlatırım. Ondan sonra geri kalan kısmını size anlatırsınız.
+
+7
+00:01:54,512 --> 00:02:01,352
+Ama tabii ilk önce bir kaç kişi olduğunu da şey yapmamız lazım. Sunum yapacak.
+
+8
+00:02:03,171 --> 00:02:05,852
+Şimdi burada bir saniye bir şey yapacağım.
+
+9
+00:02:10,548 --> 00:02:13,247
+Herkes tek bir çalışacak tadımda zaten.
+
+10
+00:02:15,908 --> 00:02:19,367
+Şimdi derste şu anda onaytık şey gözüküyor.
+
+11
+00:02:20,548 --> 00:02:28,188
+Bir chatte kabaca bir fikir vermesi açısından ödevi sunacak olanlar bir artı bir yazabilirler mi?
+
+12
+00:02:28,188 --> 00:02:28,948
+Çete.
+
+13
+00:02:51,412 --> 00:02:53,099
+Şimdi biraz da.
+
+14
+00:02:57,364 --> 00:03:19,403
+İçeride on beş var. Peki, tamam on iki diye düşünemeliyiz. Tamam, yani o zaman ben, o da bir ders falan eder aşağı yukarı. O zaman, ben bahsettiğim gibi ilk önce ben bir ders boyunca ilerleriz. Bu mevcut makina öğrenmesi versiyon ikide.
+
+15
+00:03:27,252 --> 00:03:29,232
+Ondan sonra sizin sunumlara geçeriz.
+
+16
+00:03:30,872 --> 00:03:40,152
+[öğrenci] şey yazmıştı, kimler ödev sunacak diye sormuştum. Onlar artı bir yazsınlar demiştim [öğrenci].
+
+17
+00:03:40,152 --> 00:03:44,152
+Tamam.
+
+18
+00:03:45,632 --> 00:03:50,212
+Peki, o zaman başlayalım.
+
+19
+00:04:11,731 --> 00:04:38,151
+Online bağlanmıyor musunuz? Neyse, tamam. Dediğim gibi, ödevlerinizi ben anlattıktan sonra sizler sunacaksınız. Tamam mı? Peki. Şimdi sırayı da ben ayarlarım. Vakti gelince.
+
+20
+00:04:38,548 --> 00:04:44,427
+Peki, o zaman şimdi burayı durdurabiliriz ve benim anlatacağım kısma geçebiliriz.
+
+21
+00:04:49,684 --> 00:04:51,684
+Evet, bu da.
+
+22
+00:04:56,500 --> 00:04:59,459
+Önç, bölüm dört, çizik her da.
+
+23
+00:05:09,108 --> 00:05:32,788
+Bu arada en son bu site'leri güncelledim. Birkaç tane ekleme falan yaptım işlerini geçen hafta. Dolayısıyla son halini yine site yükledim dersin sitesine. Oradan erişebilirsiniz. Çok çok büyük değişiklikler yok da. Birkaç tane güncellemeler.
+
+24
+00:05:34,163 --> 00:05:44,163
+Şimdi peki, şimdi gelelim bu dersin içeriği neydi aslında? Bu dersin içeriği makine öğrenmesi versiyon 2 ya da işlemek öğrenmesi yeni yaklaşımlar falan gibisinden.
+
+25
+00:05:45,084 --> 00:05:54,463
+Şimdi genellikle son dönemde ortaya çıkan problem ve uygulama türlerinden aslında burada bahsetmeye çalışıyorum.
+
+26
+00:05:55,264 --> 00:06:00,223
+Biraz daha böyle up to date kısım diyebiliriz belki.
+
+27
+00:06:01,108 --> 00:06:16,827
+Son dönemlerde ortaya çıkan yaklaşımlar genelde sizin tezleriniz vs. içinde oldukça önemli olabiliyor.
+
+28
+00:06:18,028 --> 00:06:20,588
+Hesaplamalı anlam, bilim...
+
+29
+00:06:20,755 --> 00:06:41,835
+İçinde de olabilir, dışında da olabilir. Yani tezinizin illa doğal değişimle vesaire alakalı olmasına gerek yok. Burada anlattıklarımın çok büyük bir kısmı sadece NLP için geçerli değil zaten. Her türlü datayla, her türlü uygulamada olabilecek, uygulanabilecek yaklaşımlar. Tamam mı?
+
+30
+00:06:42,740 --> 00:06:56,140
+Dolayısıyla hani tezlerinizi, araştırmalarınıza belki belli boyutlar katmak için buradaki konuların faydalı olabileceğini düşünüyorum.
+
+31
+00:06:56,140 --> 00:07:03,300
+O yüzden de dediğim gibi dersin içerisinde hesaplama anlam biliminin özelinde bir şey değil bu dediğim gibi.
+
+32
+00:07:03,900 --> 00:07:06,140
+Ama genel olarak...
+
+33
+00:07:07,860 --> 00:07:11,020
+Faydalı olabileceğini düşündüğüm bir içerik sizler açısından.
+
+34
+00:07:11,020 --> 00:07:16,720
+Şimdi, ilk konumuz aktif öğrenmeydi.
+
+35
+00:07:21,331 --> 00:07:33,931
+Daha sonra yarı eğitimcileri öğrenmeden bahsettik. Aktif öğrenmede eğitim örneklerinin etiketlerinin başta belli olmadığı algoritmanın etiketini istediği örnekleri seçmesi işlemi olarak tam olarak.
+
+36
+00:07:33,931 --> 00:07:47,831
+Yani elimizde örnekler var fakat bazı örnekler, etiketler var. Çok büyük bir kısmın etiketleri yok elimizde. Ve bu etiketi olmayanlardan hangilerinin etiketlerini isteyelim? Bu etiketlerin maliyetini düşürmek.
+
+37
+00:07:48,372 --> 00:07:52,232
+İçin yapılan bir işlem.
+
+38
+00:07:55,891 --> 00:08:15,351
+Bunun bir farklı yaklaşımı yarı eğiticili öğrenme. Yarı eğiticili öğrenme derimiz etiketli veriler var, etiketsiz veriler var. Etiketsiz verilerin etiketini öğrenmek için yeterli bir bütçemiz yok. Etiketsiz verilerin kendilerinden faydalanabilir miyiz? Buradaki sorumuz da bu aslında.
+
+39
+00:08:16,276 --> 00:08:29,136
+Etiketsiz verileri de kullansak, bundan nasıl fayda sağlayabiliriz?
+
+40
+00:08:29,136 --> 00:08:37,176
+Bunun üzerine burada da işte posel olayı bulu ya da tahmini etiket diye ifade ettiğimiz bir kavram karşımıza çıkıyor.
+
+41
+00:08:38,096 --> 00:08:42,135
+Yani elimizdeki etiketli veriler...
+
+42
+00:08:42,484 --> 00:09:02,348
+Bir kısmından ya da bir kısmından bir model oluşturuyoruz. Bu modele göre elimizdeki etiketsiz verilerin etiketini tahmin ediyoruz. Öyle etiketleri varmış gibi. İşte Poseidon Able dediğimiz hikaye o tahmini etiketler üretiyoruz ve bu tahmini etiketlerle...
+
+43
+00:09:02,451 --> 00:09:14,731
+Ve gerçek etiketli verileri birleştirerek yeni bir model daha ediyoruz. Bu modelle tekrardan tahminler de ilerleyebiliyor. İterletik bir şekilde ilerleyebiliyor. İterletik yaklaşımları falan da olduğundan bahsetmiştik.
+
+44
+00:09:15,551 --> 00:09:17,511
+Tabii bütün... Efendim?
+
+45
+00:09:18,152 --> 00:09:20,451
+Özür dilerim. Bize ekran görünüyor.
+
+46
+00:09:21,572 --> 00:09:22,912
+Ha, çok değil.
+
+47
+00:09:28,628 --> 00:09:35,008
+Ne kadar güzel. Neyse, dediklerimi duydunuz ama değil mi? Seste bir sıkıntı yok yani.
+
+48
+00:09:35,008 --> 00:09:35,748
+Evet hocam.
+
+49
+00:09:35,927 --> 00:09:42,148
+Tamam, neyse zaten çok da bir şey söyleyemiştim. İyi ki uyardınız. Şu anda geldi ama herhalde.
+
+50
+00:09:44,008 --> 00:09:44,367
+Evet.
+
+51
+00:09:45,028 --> 00:09:55,008
+Tamam, süper. Eğitimci öğrenmede de dediğim gibi etiketsiz verilerden maksimum nasıl fayda sağlarız etiketlilerin yanında?
+
+52
+00:09:55,988 --> 00:10:09,068
+Bununla alakalı kodlar vs. bunların hepsinden bahsetmiştim. Şimdi burası aslında bugün kaldığımız yer buradan başlayarak ilerleyeceğiz.
+
+53
+00:10:10,948 --> 00:10:18,708
+Peki, şimdi ilk kolumuz öğrenmenin transferi. Yani bir şey öğrendik bunu.
+
+54
+00:10:19,860 --> 00:10:37,379
+Bu şekilde transfer edebilir miyiz başka bir yere, başka bir probleme? Bir problemi çözdükten sonra benzeri başka bir problemi sıfırdan çözmek yerine önceki verileri, modelleri, parametreleri, gerekirse dönüşleri kullanmak.
+
+55
+00:10:38,460 --> 00:10:43,480
+Dolayısıyla buradaki amaçla yeni bir problemi sıfırdan çözüme göre daha az malet ya da daha iyi bir çözüm bulmak.
+
+56
+00:10:52,436 --> 00:11:02,436
+Genel olarak şöyle bir yapı vardı. Elinizde bir veri kümesi var. Bu veri kümesini öğreniyorsunuz.
+
+57
+00:11:05,136 --> 00:11:17,436
+Öğreniyorsunuz derken elinizdeki modelin parametrelerini o veri kümesine uyumlu hale getiriyorsunuz. Öğrenme süreci bu şekilde tanımlıydı.
+
+58
+00:11:18,611 --> 00:11:28,471
+Şimdi bu öğrenmenin transferinde çok genel manada en gergin olarak kullanan yapı şu.
+
+59
+00:11:29,691 --> 00:11:37,271
+Elimizde kocaman bir veri kümesi olsun. Bu veri kümesiyle biz bir şekilde bir model eğitmiş olalım.
+
+60
+00:11:37,271 --> 00:11:45,271
+Ve bu bir yerde dursun. Araştırmacıların erişimine açık bir yerde dursun bu. Siz istediğiniz zaman ona erişebilin.
+
+61
+00:11:46,580 --> 00:12:07,540
+Bir de sizin elinizde yeni bir problem geldi. İşte bu yeni problemi çözerken o rafta bulunan, hazır eğitilmiş, pre-trend deniyor bunlara, önceden eğitilmiş. Bu pre-trend yapıları alıp kendi modernimiz için direkt birebir kullanmak.
+
+62
+00:12:08,692 --> 00:12:22,211
+Olabilir züro şart şeklinde, onu da daha ileride konuşacağız. Ama genelde yapılan bir miktar fine tune, yani ince ayar yapmak. Bizim elimizdeki veri kümesine uyumlu hale getirmek.
+
+63
+00:12:23,124 --> 00:12:42,683
+Buna da böyle tam bir training demiyorlar, ince ayar diyorlar. Aslında o da bir eğitim. Herhangi bir eğitimden farklılığı yok çok temelde. Ama şundan dolayı ince ayar deniyor. O asıl ana bir model var da, pre-training model var. Pre-training model eğitilmesi diyelim ki…
+
+64
+00:12:45,716 --> 00:13:11,176
+Bir milyon tane veriyle on gün sürmüş. Sizin fine-tune'unuz ise ne bileyim belki beş yüz tane veriyle on dakika sürüyor. Dolayısıyla hani otekine train dersek buna train demek ayıp olur falan gibi. O yüzden fine-tune diyor. Yoksa o da bir train. Tabii o train'in şöyle bir farkı var.
+
+65
+00:13:11,635 --> 00:13:24,836
+İlk trend yani modelin kendisinde genelde, çok çok genelde model sıfırdan eğitilir. Yani bir belli başlangıç noktasından başlayarak eğitilmez.
+
+66
+00:13:25,587 --> 00:13:33,967
+Rastgele bir başlangıçta daha doğrusu öyle söyleyeyim. Fine-tune işleminde ise model zaten o pretrain modeli kullanmak demek o demek.
+
+67
+00:13:34,067 --> 00:13:44,288
+Pretrain modeli kullanmanın anlamı o büyük modelinizi elinize iyi küçük veriyle fine-tune ederken rastgele bir ilk değerlemeyle başlamıyorsunuz da
+
+68
+00:13:44,288 --> 00:13:51,288
+işte o kocaman veriyle eğitilmiş olan modelin ilk değerlerinden başlayarak bu işi yapıyorsunuz.
+
+69
+00:13:51,288 --> 00:13:53,447
+Tamam mı? Pretrain dediğim şey zaten.
+
+70
+00:13:53,587 --> 00:14:07,148
+Train dediğimiz şey, parametre optimizasyonu. Dolayısıyla o büyük bir hükmesinde optimize edilmiş parametrelerle fine tune'a başlıyorsunuz. Tamam mı? Şey bu, hikaye bu.
+
+71
+00:14:08,788 --> 00:14:24,788
+Neler transfer edebiliyor? Verileri bir şekilde transfer etmek mümkün olabiliyor. Tüm modeli transfer etmekten kalsın. Demin ki anlattığım yapı genelde en çok kullanan şey bu. Metinlercük kelime vektörlerini işte…
+
+72
+00:14:25,620 --> 00:14:51,179
+Sabit ya da adaptif bir şekilde bunları transfer etmek mümkün olabiliriz. Resimler için CNN filterları da yine modeli eğitmeye çok benzer bir şey. Burası yani ne alakalı? Belli çıkartılmış, büyük bir hükümelerinden çıkartılmış belli feature var. Alt seviye, biraz daha üst seviye, en üst seviye vesaire gibisinden bir şeyler var. Bunları siz alıp genelde en alt seviyedekiler öğretelim. Alt seviyedekiler genelde ne olarak ifade ediliyorlar?
+
+73
+00:14:53,203 --> 00:15:16,503
+Konsept free mi diyeyim? Yani böyle çok temel şeyler, böyle veri kümesinden veri kümesine çok fazla değişen şeyler değiller. Yani şöyle söyleyeyim, elimizde iki tane veri kümesi olsun, bu iki veri kümesi üzerinde işte CNN gibisinden bir yapıyı çalıştırın, ayrı ayrı sıfırdan çalışırsın diye.
+
+74
+00:15:17,076 --> 00:15:26,255
+İkisinin de ilk kısımlarında öğrenilen feature'lar daha benzerdir sonraki layırlarında öğrenilenlere göre.
+
+75
+00:15:26,707 --> 00:15:42,967
+Sonraki layer'lar genelde veri kümesine has şeyler olurken, sınıf bilgisi falan gibisinden, ilk kısımdakiler, ilk layer'lardakiler genelde yön bilgisi, gradiyan bilgisi gibisinden buradaki gördüğünüz gibi yapılardan oluşuyor.
+
+76
+00:15:43,107 --> 00:15:54,508
+Giderek bunlar daha sınıfa has hale geliyorlar. Dolayısıyla başlardaki şeyler çok basitçe transfer edilebilir yapılar. Belki son layer'lar biraz daha.
+
+77
+00:15:54,707 --> 00:15:58,067
+Zor transferdir ama zaten o son neyirler içinde ne yapıyorsunuz?
+
+78
+00:15:58,148 --> 00:16:00,788
+Bir fine tune işlemi gerçekleştiriyorsunuz.
+
+79
+00:16:03,607 --> 00:16:07,107
+Ne zaman işler? Evinizdeki yeni problem için yeterli veri yoksa?
+
+80
+00:16:07,107 --> 00:16:10,367
+Yani bu genelde dediğim gibi.
+
+81
+00:16:12,692 --> 00:16:38,572
+Çok büyük miktarla eğitilmiş bir tane pre-train model var. Sizin elinizde de az bir data var. Bu az data ile sıfırdan eğitmeye kalksanız modelleriniz o kadar da başarılı olamayacaksınız ama o büyük data ile eğitilmiş modeli alıp fine-tune ettiğinizde daha başarılı olabiliyor. Eski yeni problem ilgili ise zaten bu olabilecek bir şey. Yani iki tane problem türü birbirinden tamamen bağımsız ise.
+
+82
+00:16:40,052 --> 00:16:52,152
+Yani ne diyeyim, resimler için elde ettiğiniz feature'ları alıp metinlerde falan kullanmak gibisinden bir şey çok direkt doğru olabilecek bir şey olmaz.
+
+83
+00:16:52,652 --> 00:17:03,331
+Belli dönüşümlerle yapılabilir olsa da çok yine uygun olmaz. Çünkü yapısı farklı öyle söyleyeyim. Resim dediğimiz şey başka bir şey. Metin dediğimiz şey başka bir şey.
+
+84
+00:17:03,827 --> 00:17:17,607
+İkisi de birlikte, ikisinin de kullanarak eğitilen modellerden bahsetmiyorum. Yani bir tanesini aldığınız bir şey, öteki tarafa FUNCHİR etmekten bahsediyorum, aktarmaktan bahsediyorum. O yüzden ilgili olmasa temelde gerekli bir problem doğal olarak.
+
+85
+00:17:21,947 --> 00:17:29,708
+Şimdi başka bir şeye geçelim. Öğrenmenin transferi zaten hepinizin malum olduğu bir şey.
+
+86
+00:17:31,028 --> 00:17:53,588
+Bu türleri de. Çok görevli eğitim, multitask. Şimdi bu, aynı anda birden fazla şey öğrenmek. Yani elinizde bir tane veri kümesi var ve o veri kümesine göre bir tane loss fonksiyonunu tanımlayıp sadece onu öğrenmek değil de, mesela çok sayıda veri kümesini aynı yapı içerisinde modellemek olabiliyor.
+
+87
+00:17:53,588 --> 00:17:58,528
+Hem satranç hem dama oynayabilen tek bir sistem. Altları bir şekilde bundan tabii farklı olacak.
+
+88
+00:17:58,996 --> 00:18:18,416
+Yani Sourcedan Target'a bir şey değil, mesela Transfer Learning'de kastımız bu değil. Yani Source bir task var. Sourcedask şey gibi, Pretree modelin eğitildiği task gibi. Target task ise sizin elinizdeki mevcut problemle alakalı. Bu Multi-Task Learning'de ise elimizde bir tane task, bir sürü task var.
+
+89
+00:18:19,443 --> 00:18:46,163
+Bunların hepsini birden aynı anda eş anlı ya da asenkron bir şekilde öyle söyleyelim, öğrenebilir miyiz? Bunun üzerine buzdan bir çalışmalar var. Mesela örnek vermek gerekirse, burada bir resim verilmiş böyle bir sokak görüntüsü mesela. Bu sokak görüntüsü bir enkoder'dan geçirdikten sonra işte beli feature'lar bu temelde. Ondan sonra mesela segmentasyon.
+
+90
+00:18:46,548 --> 00:19:09,087
+Mesela burada segmentasyon yapılmış. Burada obje detection yapılmış. Burada depth prediction yapılmış. Yani burada bir segmentasyon taskı var. Burada bir obje detection taskı var. Burada ise bir depth prediction taskı var. Üç tane task ayrı ayrı varlar.
+
+91
+00:19:11,028 --> 00:19:19,927
+Üçü içinde hesaplanan bir şeyler birleştirdik. Bir multitask loss oluşturup tekrar onların üçüne birden geri bildirimli oluşturup.
+
+92
+00:19:20,087 --> 00:19:30,048
+Şimdi normalde aslında bunu siz bu input'a karşı böyle bir output gelsin diye birinci taskınız bu olabilir. İkinci taskınız bu olabilir. Üçüncü taskınız bu olabilir.
+
+93
+00:19:30,367 --> 00:19:38,768
+Üçünü de ayrı ayrı eğitmek de mümkün mü? Evet mümkün. Zaten standart yaklaşım o. Yani böyle bir input geldiğinde ben böyle bir output alayım.
+
+94
+00:19:39,028 --> 00:19:44,427
+diye elinizde pair'lar vardır. Bu pair'lardan eğitim gerçekleştirebilirsiniz.
+
+95
+00:19:45,627 --> 00:19:52,508
+Buradaysa multi task de öyle değil. Böyle bir input'a karşı birden fazla, elinizde bir sürü task var, bir sürü output var.
+
+96
+00:19:53,688 --> 00:19:56,988
+Bunların hepsini birden aynı anda eğitebilir miyiz?
+
+97
+00:20:01,183 --> 00:20:19,443
+Burada öğrendiğimiz bir şey mesela, üst tarafta öğrendiğimiz bir şey, alt taraftaki bir şeylere de yardımcı olabilecektir şeklinde. Yani burada birbirinden bağımsız yürüyen yapılar var ama birbirine ortak olan mesela enkoder kısmı var. Mesela bu enkoder kısmı, üçünde de ortak ya şurada gördüğünüz gibi.
+
+98
+00:20:28,692 --> 00:20:43,211
+Objeleri belirlerken öğrendiğimiz bir şeyler depti bulmakta işimize yararlı. Ya da depti öğrenmekte kullandığımız bir şeyler objeleri tanımada işimize yararlı. Gibi gibi yaklaşımlar kullanılabiliyor.
+
+99
+00:20:43,211 --> 00:20:54,231
+Yani bir tarafta aldığınız bir taskı çözerken öğrendiğiniz bir şeyi başka bir taskı çözerken tabii onunla alakalı bir taskı çözerken de faydalı olur mu?
+
+100
+00:20:54,531 --> 00:20:55,911
+Filmimiz bu. Hikaye bu.
+
+101
+00:21:00,084 --> 00:21:09,564
+Bunun görüntü işlemedeki yapısı buydu bu Multitask Learning'in.
+
+102
+00:21:09,564 --> 00:21:25,163
+Burada ise NLP Decathlon diye bir şey vardı, ver hükümesi vardı. Bu aslında Multitask'a benziyor. Şöyle bir şey var.
+
+103
+00:21:25,519 --> 00:21:33,720
+Resimler için mesela bu resimlerde input belli bir resim, yani görüntü için adım.
+
+104
+00:21:33,720 --> 00:21:37,519
+Input belli bir resim, output da belli bir resim mesela. Şurayı görüyor musunuz?
+
+105
+00:21:37,519 --> 00:21:40,519
+Yani input ve output'un tipleri birbirleriyle aynı.
+
+106
+00:21:40,519 --> 00:21:44,519
+Ya da buradaki output'ların hepsinin tipleri birbirleriyle aynı.
+
+107
+00:21:47,519 --> 00:21:49,519
+Şekilsel olarak, tamam.
+
+108
+00:21:50,516 --> 00:21:58,955
+Yani şekilse olarak derken, hepsinde bir resim elde ediyorum ben. Aynı tipten bir şey elde ediyorum, bir resim elde ediyorum.
+
+109
+00:22:01,855 --> 00:22:15,155
+Yani bu tasklar, birbirlerine fayda sağlayan tasklarda output'un bir şeyliği var, ortaklığı var, öyle söyleyeyim.
+
+110
+00:22:16,084 --> 00:22:29,223
+Şimdi bu görüntü işleme için yapılan, bu yapılabilen bu ortaklığı, ortak input ve output yapısını NLP için kurma çalışması.
+
+111
+00:22:29,223 --> 00:22:43,403
+Aslında buradaki NLP dekatlon diye ifade eden kısım. Burada NLP alanında birçok task var. İşte ne diyeyim, machine translation var.
+
+112
+00:22:43,955 --> 00:23:02,295
+Bir dilden başka bir dile çevir var. Sentiment Anlisi var, Question Answering var, Multiple Choice Question Answering var, Entainment problemleri var gibi bir sürü farklı türde problem var.
+
+113
+00:23:02,708 --> 00:23:18,708
+NAPD katlon da aslında yapılmaya çalışılan şey. Bu birbirinden farklı farklı input ve output'a sahip gibi görünen yapıları ve veri hükümelerini öyle söyleyelim tek bir veri hükümesi haline getirebilir miyiz?
+
+114
+00:23:20,019 --> 00:23:30,699
+Tek bir veri kümesi haline getirmekten kasıt ne? Yani ben bu elimde 10 tane task var ve bunların hepsinin input ve output formatları ününden farklılar.
+
+115
+00:23:30,699 --> 00:23:41,939
+Yani mesela Machine Translation'da bir şey var, bir input cümlesi var ve de bir output cümlesi var mesela.
+
+116
+00:23:43,923 --> 00:24:01,024
+Question and Sönig'de mesela bir paragraf var, bir soru var, bir de bunun cevabı var. Mesela burada üçlü bir yapı olduğunu düşünemiz. Sentiment analizde inputunuz bir şey, ne der ben, bir metin, outputunuzda bir sınıf bilgisi gibi.
+
+117
+00:24:01,024 --> 00:24:10,024
+Şimdi bu ikili, üçlü vesaire gibisinin olan yapılarının hepsini tek bir formata dönüştürme çalışması. Şimdi buraya bakarsanız,
+
+118
+00:24:11,796 --> 00:24:37,355
+Belli işte fact-based question'lar yapmışlar. Soru-cevaplama hepsi. Mesela bütün veri kümeleri ortak bir formata kavuşturulmuş. Ne o format? Question, context, answer. Üçlük bir yapı. Örneğin işte bir context'e bir paragraf var. Bu paragrafa dair question burada yazıyor, answer da burada yazıyor. Bu bir soru-cevaplama işte. Ne diyelim?
+
+119
+00:24:39,059 --> 00:25:05,179
+Var ya bir sürü soru cevaplama verir ki onların hepsi bu formda düşünülebilirler. Ya da mesela ne demiş? İngilizce'nin Almanca'ya çevirisi nedir? Soru bu. Mesela kontekste şeyi vermiş, İngilizcesini vermiş, Almancasını cevap olarak istiyor. Mesela question like what is a summary demiş, kontekste bir metin vermiş, en sırrı da o metnin özetini vermiş.
+
+120
+00:25:06,451 --> 00:25:18,731
+Dolayısıyla mesela işte hipotez ve problemistisi vermiş question ve context'e. Answer'da bunlar birbirleriyle bunun ikisinin arasındaki ilişki nedir? Enteniment mıdır? Contradiction mıdır? Falan gibisinden bir şeyleri tahmin edecek.
+
+121
+00:25:18,731 --> 00:25:28,051
+Burada mesela bu cümle pozitif mi negatif mi diye sormuş. Question'da metniyi vermiş. Burada da answer olarak da pozitif vermiş.
+
+122
+00:25:28,660 --> 00:25:44,420
+Fikri anladınız, birbirinden farklı yapılarda gözüken, olan, öyle diyorum gözüken değil mi, olan datasetleri, görevleri tek bir unique hale getirmek. Aslında şey bu.
+
+123
+00:25:45,236 --> 00:26:02,456
+Yapı bu. Bu daha sonra günümüzde biraz daha gördüğünüz gibi prompt-based sistemlere bir geçiş olarak da bunu değerlendirebilirsiniz. Her şey tek bir unique formata dönüşsün gibi.
+
+124
+00:26:02,456 --> 00:26:12,456
+Bu niye böyle bir şey yapılıyor? Yani niye böyle bir dert var? Dert demeyelim yani bunun faydasını. Burada nasıl bir taskı öğrenirken...
+
+125
+00:26:13,715 --> 00:26:27,795
+Bir taskı öğrenmek için öğrendiğimiz kabiliyetleri başka bir taraf, başka tasklarda da kullanabilir, oraya da faydası olabilir demiştik ya.
+
+126
+00:26:28,915 --> 00:26:39,615
+İşte Enkodr'ı. Burada da aynı şekilde. Yani işte Summaryization yaparken öğrendiğiniz bir şey sizin Entainment taskınızda da.
+
+127
+00:26:40,243 --> 00:27:04,983
+İşe yapabilir, işe yarayabilir. Dolayısıyla şey bu, fikir bu, çok görevli eğitimden. Şimdi bu çok görevli eğitimden birazcık farklı bir şey yapacağız. Yani şöyle, buradaki çok görevli eğitim, burada da evet çok görevli eğitim var ama burada şöyle bir şey değil. Bunlar mesela hepsi enerjiz veri içmeleri. Ya da buradaki enerjizik görüntü işleme veri içmeleri.
+
+128
+00:27:06,324 --> 00:27:12,624
+Birbirinden çok alakasız ver hükümelerini birlikte eğitmek mümkün olur mu?
+
+129
+00:27:14,364 --> 00:27:20,483
+Yani, burada mesela onun bir denemesi var.
+
+130
+00:27:20,483 --> 00:27:21,683
+Koza bakabilirsiniz.
+
+131
+00:27:23,584 --> 00:27:26,304
+İki boyutlu, iki sınıflı beş tane ver hükümesi.
+
+132
+00:27:26,384 --> 00:27:29,203
+Bu beş tane ver hükümesinin birbiriyle hiçbir alakaları yok.
+
+133
+00:27:29,403 --> 00:27:31,423
+Yani, her biri iki boyutlu.
+
+134
+00:27:32,211 --> 00:27:59,211
+Her biri iki sınıflı. Tamam mı? Ama bu boyutları birbirlerine alakalı yok. Yani hani beş tane farklı veri kümesi var burada. Beş tane. Bunların içindeki, her birinin içinde iki tane özellik var. İki tane sınıflı var. Ama bunların ne boyutları birbirleriyle alakalı, ne sınıfları birbirleriyle alakalı. Anlatabildim mi? Yani birbirinden tamamen bağımsız bunlar. Şimdi burada böyle beş tane veri kümesi biz acaba...
+
+135
+00:27:59,380 --> 00:28:20,480
+Şey yapabilir miyiz? Aynı anda eğitebilir miyiz? Aynı anda derken bu beş tane veri kümesinden tek bir veri kümesi oluşturabilir miyiz? Şeyimiz bu. Yapı bu. On tane hidden ear kullanımcısı yapar sınav olarak. Şimdi burada single ve multi diye iki tane kısım var görüyorsunuz. Şimdi single dediğimiz şey.
+
+136
+00:28:21,299 --> 00:28:40,599
+Burada beş tane verikümesi var ya bakın şu beş tane verikümesi. Üç tane deneme de şu denemelerin her biri ayrı ayrı. Yani bunların her birine tekil olarak bakabiliriz. Beş tane verikümesi. Beş tane verikümesinde Single Training Accuracy, Single Browser Test Accuracy. Her biri tekil yaptığınız zaman, tekil çalıştırdığınız zaman yani on tane hidden layer kullanarak.
+
+137
+00:28:41,140 --> 00:29:00,180
+10 tane hidden nöronlu bir layer, tek bir layer kullanarak bunları yaptığınızda bu 5 bölü hükümesi için, işte birincisinde eğitimde %100 testte %90, %50, %50, %50, %84, %69 gibisinden sonuçlar elde ediyorsunuz. Görüyor musunuz?
+
+138
+00:29:00,564 --> 00:29:09,443
+Bunlar single. Multi olan kısmı ise, multi olan kısmı ise, bunun beş tane veri kümesinden tek bir tane veri kümesi ediyorsunuz.
+
+139
+00:29:10,003 --> 00:29:12,743
+Tamam mı? Tek bir tane. Orada eğitim yapıyorsunuz.
+
+140
+00:29:13,236 --> 00:29:38,916
+Şimdi buraya baktığımızda, hani işler daha kötüye gidiyor mu? Burada bir tip daha kötüye gitmiş. Görebiliyorsun değil mi? Mesela birinci ver hükümesinde şey daha kötü, eğitim kümlesindeki başarı %4 falan düşmüş. Buraya bakarsak burada da işler biraz bir miktar kötüye gitmiş. %4 falan gibi. Ama mesela bu ver hükümesinde işler o kadar da kötüye gitmemiş. Bu ver hükümesinde de o kadar kötü değil. Bu ver hükümesinde de o kadar kötü değil.
+
+141
+00:29:39,827 --> 00:29:59,587
+Diğer denemelere bakalım. Birinci ver hükümetinde kötüydü. Hakikaten hala kötü. İkincisinde evet hala kötü. Üçüncüsünde belli bir iyiydi. Hakikaten hala iyi. Yani fena değil. Öyleyse çok bir şey yok, değişiklik yok. Yani kötüye gitmemiş en azından. Burada 75-70, burada da fena.
+
+142
+00:30:00,000 --> 00:30:02,199
+Değil yani. Çok da kötü bir durum yok.
+
+143
+00:30:02,639 --> 00:30:08,859
+Her şeye baktığımızda bazı veriklilerinde, burada bir miktar daha iyi gitmiş gibi olmuş şurada.
+
+144
+00:30:09,519 --> 00:30:11,619
+Burada da yine bir miktar daha iyi gitmiş gibi.
+
+145
+00:30:11,899 --> 00:30:14,199
+Yani böyle korkunç kötü falan bir şey olmamış. Onları istiyorum.
+
+146
+00:30:15,679 --> 00:30:17,459
+İyileşmenin olduğu, olabildiği yerler var.
+
+147
+00:30:17,899 --> 00:30:20,939
+Tabii burada şöyle bir şey olması gerekiyor.
+
+148
+00:30:24,147 --> 00:30:42,847
+Şimdi iki boyut dediğimizde, iki tane inputu var her bir veri kümesinin ama bunların hepsini birden eğitmeye kalktığınızda hangi veri kümesinden geldiğini örneğin şey söylemeniz lazım.
+
+149
+00:30:43,347 --> 00:31:11,107
+Modelı söylemeniz lazım. Bunu söylemeden bunu gerçekleştirmeniz zaten mümkün olmaz. Çünkü yani hani iki boyut var, bir tane bir üçüncü boyut gibisinden bir şeyin olması gerekiyor. Bu üçüncü boyutta aslında ne olacak? Ne diyelim? Veri kümesi ID gibi bir şey olması gerekiyor. Koddan incelersiniz nasıl bir şey yapıldığını. Yani bu şu no'lu veri kümesinin bir örneğidir.
+
+150
+00:31:11,347 --> 00:31:13,567
+Output'unu ona göre üret.
+
+151
+00:31:14,427 --> 00:31:16,467
+Set'e dair bir şeyinizin olması lazım.
+
+152
+00:31:17,187 --> 00:31:18,528
+Yapınızın olması lazım.
+
+153
+00:31:18,727 --> 00:31:20,587
+O olmadan zaten şey yapamazsınız.
+
+154
+00:31:21,867 --> 00:31:22,947
+Kodlayamazsınız veriyi.
+
+155
+00:31:23,627 --> 00:31:24,647
+Anlamlı bir biçimde.
+
+156
+00:31:25,268 --> 00:31:27,488
+Çünkü dediğim gibi bunların hepsi birbirinden bağımsızlar ya.
+
+157
+00:31:27,807 --> 00:31:28,488
+Her şeyleriyle.
+
+158
+00:31:29,427 --> 00:31:32,627
+Ama dediğim gibi birlikte eğitim yapılabiliyor mu?
+
+159
+00:31:32,807 --> 00:31:34,827
+Evet. Birbirinden tamamen bağımsız olsa bile.
+
+160
+00:31:34,827 --> 00:31:35,367
+Evet.
+
+161
+00:31:35,727 --> 00:31:36,587
+Bu da tabii sorular.
+
+162
+00:31:37,364 --> 00:31:38,264
+Var.
+
+163
+00:31:38,264 --> 00:31:39,784
+Bir saniye.
+
+164
+00:32:00,339 --> 00:32:26,740
+Evet. Bir akash problemi kapsayabilirim. Mesela bir tane veri kümesini bir modele verip eğitebiliyoruz. Evet. Ama sanki burada şey gibi de gözüküyor. Yani aynı veri kümesinde, pardon aynı model, hani A, birden fazla veri kümesini tutabiliyor gibi gözüküyor. Anlatabildim mi? Şimdi enteresan kısmı orası bence. Ve birinden tamamen bağımsız zaten.
+
+165
+00:32:28,180 --> 00:32:52,440
+Şimdi daha da enteresan kısmı orası bence. Bence burada hani related tasklar var bir şekilde. Burada tamamen unrelated. Bunların birbirler alakalı. Bir tanesi atıyorum sentiment vergimesi. Bir tanesi ne bileyim ben bir oyunu kim kazanır? Şeyler var. Taş pozisyonları falan var mesela. Sat tanışta falan kim kazanır gibisinden şeyler var. Evet. Soru var galiba.
+
+166
+00:33:00,660 --> 00:33:02,660
+Sesim geliyor mu hocam? Geliyor.
+
+167
+00:33:02,920 --> 00:33:17,340
+Tamam, boşver. Şimdi burada multitask learning ile bir de son zamanlarda yine çok popüler olan multimodal modeller var. Bunlar benzer şeyler yoksa birbirinden farklılaşıyor mu?
+
+168
+00:33:28,403 --> 00:33:30,403
+Hem elinizde...
+
+169
+00:33:31,763 --> 00:33:49,543
+Görüntünün olduğu hem de sesin olduğu bir şey olabilir. Anlatabildim mi? Ya da hem de metin de olabilir işin içerisinde. Ya da videosu da olabilir bir şey. Yani inputun farklı formatlarda, farklı yapılarda olması kastediyor multimodal anlamında.
+
+170
+00:33:49,543 --> 00:33:59,743
+Yani eğitim sürecinin içerisinde hem genelde related tasklar, bilimden bağımsız tasklar değil.
+
+171
+00:33:59,763 --> 00:34:12,403
+Ama hani hem işin içinde görüntüsü olsun, hem resmi olsun, hem videosu olsun, hem sesi olsun gibi böyle farklı model. Yani oradaki modeldan kasıt şey değil.
+
+172
+00:34:13,423 --> 00:34:18,123
+Mutitask anlamında değil, farklı formatlardaki veri.
+
+173
+00:34:20,203 --> 00:34:25,423
+Farklı formatlar burada inputun içerisinde farklı feature olarak geliyor aslında.
+
+174
+00:34:26,024 --> 00:34:28,663
+Ses bir feature olarak geliyor, video bir feature olarak geliyor.
+
+175
+00:34:28,663 --> 00:34:33,443
+Gibi gibi, aynen öyle. Onları birleştirmenin farklı farklı yapıları da olabiliyor.
+
+176
+00:34:35,603 --> 00:34:44,523
+Onları konkatenet edip falan bir şeyler yapmak zorunda da değilse. Başka başka mimarları bir şekilde eğitip onların sonuçları falan da birleştirmek mümkün olabiliyor.
+
+177
+00:34:44,523 --> 00:34:49,523
+Ama hani key pointi oradaki multimodal yapı aslında...
+
+178
+00:34:49,972 --> 00:35:07,891
+İmput ve output yapısının içerisinde birbirinden farklı şeylerin olması, yani inputun içerisinde birden farklı modda, mod ya da kip, böyle ifade ediyor bu. Hem görüntüsü, hem sesi, hem yazılısı falan gibisinden şeylerin olması.
+
+179
+00:35:14,708 --> 00:35:34,927
+Peki, devam edelim. İşte burada değişik sorular var. Bir ağ kaç problemi kapsayabilir? Acaba biz burada beş tane içine gömebildik, öyle söyleyelim hani veri kümesi. Bunlar acaba çok daha fazla arttırmak mümkün olur mu? Ağın karmaşıklığı arttırarak ne kadar daha şey yapabiliriz falan gibisinden böyle enteresan sorular burada cevap bekliyor.
+
+180
+00:35:40,436 --> 00:36:05,176
+Devam edelim. Şimdi, büyük veri kümelerini büyük modeller kullanarak, yani büyük modellerden kalsın çok fazla sayıda parametresi olan demekten de istiyorum. Büyük veri kümeleri büyük modellerle eğitiyoruz.
+
+181
+00:36:06,547 --> 00:36:25,387
+Ters oldu. Büyük modelleri büyük bir hükmelerle eğitiyoruz. Ve bu doğal olarak uzun sürüyor. Ve bu eğitimi yaparken algoritmaların kendilerinin belirleyemediği bazı parametreler var. Ki onları biz hiperparametre diyoruz.
+
+182
+00:36:30,420 --> 00:36:50,199
+Elimizdeki göreve göre belirlenir. Kimin tarafından? Model tarafından. Model kendisi onları ayarlar parametreleri. Ama hiperparametre dediğimiz şeyler, modelin kendisinin veriye bakarak öğrenemediği, mutlaka mutlaka bizden beklediği parametreler.
+
+183
+00:36:55,476 --> 00:36:59,476
+Bunların neler olabileceğini hepiniz biliyorsunuzdur.
+
+184
+00:37:00,356 --> 00:37:10,956
+Değil mi? Öyle bir varsayımla hareket etti mi ama mesela hiperparametreden kastımızın ne olduğunu ben biliyorum diyenler bir artı bir yazabilir mi?
+
+185
+00:37:13,456 --> 00:37:14,096
+Çete.
+
+186
+00:37:16,155 --> 00:37:18,176
+Bir kişiyi mi? Yok canım.
+
+187
+00:37:18,676 --> 00:37:21,876
+2, 3, 4, 5, 6, 7.
+
+188
+00:37:22,804 --> 00:37:41,684
+Evet, tamam. Varsayım onu doğruymuş. Güzel. Dolayısıyla bu hiperparametrelerin seçimi kullanıcıya bırakıldığı için kullanıcı da her zaman neyi bilemiyor?
+
+189
+00:37:50,739 --> 00:38:10,759
+Bu deneme yanılma sürecine giriliyor. Bu deneme yanılma süreci de işte hiperparametre optimizasyonu. Tamam, deneme yanılma kötü bir yaklaşımı değil. Eğer ki denemelerinizin süresi çok çok uzun değilse.
+
+190
+00:38:11,956 --> 00:38:26,756
+Yani bir denemeniz bir günü alıyorsa 10 tane hiperparametre konfigürasyonu denemeniz 10 gün sürer. Bu da çok uzun sürer. 10 taneleri sınırlı olmayabilir hiperparametre otorizasyonu saymanız.
+
+191
+00:38:36,692 --> 00:38:56,372
+Çok fazla sayıda hiperparametre bulunuyor. Özellikle derin öğrenme mimarlarında. Ve onların %90'ı defoltunda kullanıyorsunuz. Geri kalan belki %10'un kısmı üzerinde şey yapıyorsunuz. Optimizasyon yapıyorsunuz. Belki de %5'i üzerinde falandır.
+
+192
+00:38:56,884 --> 00:39:09,884
+Yani 100 tane şey varsa, hiperparametre varsa sonucu etkileyebilecek. Sizin seçmeniz gereken. Onların 95 tanesini daha önceki araştırmacıların deneyip...
+
+193
+00:39:11,603 --> 00:39:27,063
+Eh fena değil diye ifade ettikleri parametreleri kullanıp, belki kendi probleminize özgü de işte beş tanesini falan anlatabilir. Yani %95'ten kastım böyle bir şey. Onları optimize edebilirsiniz belki. Ediyorsunuzdur ya da.
+
+194
+00:39:29,523 --> 00:39:35,803
+Niye böyle yapıyoruz? Çünkü bu iş uzun sürüyor. Yani hiper parametre optimizasyonuna kadar dertli bir iş.
+
+195
+00:39:38,324 --> 00:39:42,923
+Elimizdeki optimizasyon problemini çözmek için aslında başka bir optimizasyon problemi çözüyoruz.
+
+196
+00:39:43,364 --> 00:39:47,804
+Öyle söylüyorum. Hiperparametre optimizasyonu. Kendisi de bir optimizasyon problemi.
+
+197
+00:39:52,664 --> 00:39:59,144
+Yani çok kabaca düşünürsek, bir tane bir hiperparametremiz olsun. Tek bir şey için düşünelim.
+
+198
+00:40:00,000 --> 00:40:23,740
+BİPER parametre uzayının nasıl bir şey olduğunu tahmin etmeye çalışıyoruz belki mesela burada. Yani elimizde belli noktalar olacak. O noktalardan geçen yapı nasıl bir şey acaba diye anlamaya çalışıyoruz. Dolayısıyla bir optimizasyon problemini çözmek için başka bir yan bir optimizasyon problemini çözmemiz gerekiyor. Neyse.
+
+199
+00:40:24,148 --> 00:40:35,168
+Şimdi burada yapılan birkaç tane yaklaşım var. Ki en standart olanlar ızgara yaklaşımı ve rastgele arama yaklaşımı. İkisi de birbirlerine aşağı yukarı şeyler, benzerler.
+
+200
+00:40:39,380 --> 00:41:02,519
+Biraz daha farklı bir yapı. Şöyle bir şey. Evdeki deneme sonuçlarına göre en fazla iyileşme sağlanacak değeri tahmin etmeye çalışıyorum. Ne demek istiyorum şimdi? Mesela ızgara aramada şöyle bir yapı var. Izgara aramada tek bir değişken için düşünene bunu hepsi için düşünü, şey yapabilirsiniz, kurgulayabilirsiniz. Tek bir tane hiperparametrimiz olduğunu varsayalım.
+
+201
+00:41:04,596 --> 00:41:31,895
+Mesela ızgara aramada, diyelim ki sizin 10 denemelik bir şeyiniz var, budgetiniz var, bütçeniz var. Bir tane de optimize edeceğiniz hiperparametreniz var. Belli bir aralığın içerisinde bunun gezindiğini varsayıp, o aralığı 10 tane eşit parçaya bölüp belki.
+
+202
+00:41:32,532 --> 00:41:48,052
+Bu 10 tane seçtiğiniz değerle ne yapabilirsiniz? Tarama yapabilirsiniz. Yani atıyorum şöyle bir şey yapabilirsiniz. Sıfırdan başta nokta biran nokta biran bire kadar it mesela. Tamam mı?
+
+203
+00:41:49,139 --> 00:42:13,999
+Bu tek boyutta bir ızgara arama olur. Bunun iki boyut sınıfında şey yapabilirsiniz, derler düşünebilirsiniz. Rastgele arama 10 tane denemeyi yani tamamen rantla yap. Yani sıfırla bir arasında 10 tane rastgele değer seç ve onlarla arama yap. Rastgele aramadan kastımız da o. Bu en azından Optimization ise birazcık daha böyle farklı, aslında biraz böyle ikisini de biraz birleştiriyor gibi.
+
+204
+00:42:14,643 --> 00:42:30,023
+Şimdi ilk önce onluk bir bajetim varsa elinde belli denemeler yaptım. Mesela rastgele. Mesela diyelim ki burada üç tane şu denemeleri yaptım. Yani rastgele üç tane değer seçtim ben. Tamam mı? Bir tanesi şurasıydı.
+
+205
+00:42:30,023 --> 00:42:42,483
+Bir saniye, şu an tekrar işaretleyebilirsem daha iyi olur. Mesela ben rastgele salladım ilk önce. Mesela burayı salladım. Tamam, sonra burayı salladım.
+
+206
+00:42:43,539 --> 00:42:54,619
+Sonra buraya salladım. Üç tane rastgele değer seçtim. Bu üç tane rastgele değerli şey yaptım, eğitimi yaptım. Ve modelin başarılarını bunların karşılığında işte şu değerler buldum. Karşılıkları da şuralarda görüyorsunuz.
+
+207
+00:42:54,619 --> 00:43:01,619
+Böyle bir şeyler var. Şimdi burada bu üç tane değer ve başarıya bakarak...
+
+208
+00:43:01,791 --> 00:43:18,291
+Ben yeni bir deneme yapacağım. Yeni bir budget'ım var, tamam mı? Bir tane daha deneme yapacağım. Bu bir tane daha denemeyi nereden yapmak bu mantıklı olur? Soru bu, tamam mı? Burada Bayezin Optimizasyon'a göre en makul hareket şu ikisinin arasında bir yerden yapmaktır.
+
+209
+00:43:28,467 --> 00:43:49,507
+Şu çizgiden kastım. Bir saniye. Bakın şuraya bir tane çizgi çizilmiş ya. Bu çizginin neyi bilmiyoruz. Böyle bir şeyin varlık olmadığından bilmiyoruz. Böyle bir şey olabilir, olmayabilir yani. Dolayısıyla bizim elimizde sadece şu siyah şeyler var.
+
+210
+00:43:52,275 --> 00:44:06,476
+Çemberler var elimizde, onlar var. Oraları biliyoruz. Şimdi benim merak ettiğim şey, bir sonraki hiperparametreyi ben buradan mı arayayım? Burada bir yerlerde mi arayayım? Yoksa buralarda mı arayayım? Yoksa buralarda mı arayayım? Soru bu. Anlatabildim mi?
+
+211
+00:44:07,375 --> 00:44:19,615
+Bayezin optimizasyonuna göre mantıklı olan şu aralıkta aramaktır diyor. Çünkü niye? Bunun arasında işte yani buradan sonra bir düşme olmuş değil mi? Bakın buradan sonra böyle bir düşme olmuş.
+
+212
+00:44:20,115 --> 00:44:44,376
+Şöyle çizersem. Burada böyle bir çıkma var ilk önce. Sonra burada böyle bir düşme var değil mi? Böyle bir düşme var. Bu acaba biraz daha yükselip ondan sonra mı düşüyor? Böyle bir şey olabilir. Yani basit bir yapıyı kurmaya çalışıyoruz. Ama mesela burada arada böyle bir yükselip sonradan düşmüş olma ihtimali daha düşük bir şeydir diyor. Bunların arası daha az ya.
+
+213
+00:44:45,268 --> 00:45:02,387
+Burası daha geniş bir alan var. Ve buradaki böyle bir şeyin olup olmadığını tahmin ediyorsun. Mesela diyor ki ben buradan deneyeyim diyor. Tamam mı? Deniyor. Denediğinde sonuç burası çıkabilir. Tamam mı? Burası çıkabilir sonuç.
+
+214
+00:45:03,539 --> 00:45:27,559
+Mesela burası çıkabilirdi, burası çıkabilirdi, burası çıkabilirdi. Şimdi bu yeni duruma göre tekrardan yeni bir işte başlıkta mesela ben burada o zaman diyor işte şöyle bir sonuç buldum. O zaman ben diyor ki işte şu arada bir deneme yapayım. Tamam. Yani eldeki denemelere bakarak, eldeki denemenin sonuçlarına bakarak bir sonraki denemeyi nereden yapacağını belirlemeye çalışıyor. Tamam.
+
+215
+00:45:29,684 --> 00:45:54,684
+Izgara ve rastgele eden temel fark bu. Eldeki deneme sonuçlarına bakarak bir sonraki denemeyi nereden yapmasının daha mantıklı olduğunu kestirmeye çalışıyor. Tamam mı? Şey bu, fikir bu. Ve oldukça sık da kullanılan bir yaklaşım. Hani ne sağlıyor bunlara göre? Daha az sayıda...
+
+216
+00:45:56,083 --> 00:46:06,483
+Deneme ile iyi sonuçları elde edebilmeyi sağlayıp kimi zaman. Bu kesin bir şey değil. Optimal bir proses değil.
+
+217
+00:46:16,628 --> 00:46:17,288
+Tamam, hadi.
+
+218
+00:46:21,876 --> 00:46:48,316
+Aktif örnek değil mi? Aktif sampling. Aktif learning iyi bakın bu. Aktif sampling. Aktif sampling de basal optimizasyonlar esinleniyor aslında. Şöyle bir şey. Elimizde bir veri kümesi var. Veri kümesinin tahmin edebileceğiniz gibi uzayın belli bölgelerinden elinizde veri vardır. Belli bölgelerinden veri yoktur.
+
+219
+00:46:48,851 --> 00:47:14,112
+Ya da belli özelliklere sahip verileriniz vardır elinize ama belli özelliklere sahip verileriniz elinize yok yani eğitim kimesinin içerisinde. Burada aslında şöyle bir şey yapılıyor. Aktif öğrenmeden de, semispervise öğrenmeden de daha üst seviyeden bir talep.
+
+220
+00:47:18,036 --> 00:47:37,516
+Bana diyor, şu bölgeden yeni örnek üret diyor. Üret derken oluştur diyor. Mesela işte bir deney yapacaksın. Şu bölgeden yani inputu şu olan bir, input şöyle bir şey olsun bana bunun output'unu söyle.
+
+221
+00:47:38,068 --> 00:48:03,668
+İmput şu bölgeden olsun bana. Yani hem input'u hem output'u istiyor. İkisini birden istiyor. Tamam mı? Şimdi aktif öğrenmede etiketsiz verilerin hangilerinin çıkışlarını kullanacağını isteyeceğimi. Burada örneklerin kendilerini yani input'u ve output'u ikisini birden istiyor aslında. Tamam mı? Öyle bir fark var. Yani aktif sampling uzayın hangi bölgesinde
+
+222
+00:48:05,780 --> 00:48:28,880
+Yeni örneklerin, yeni eğitim kümesine katılacak örneklerin belirlenmesi sürece. Mesela hani sentimentların gibisinden bir yapıda düşünürsek bunu, neye karşılık gelir bu yani yeni bir bölge falan. Ne bileyim, içinde şu kelime olan tweetleri ya da işte yorumları bana getir mesela.
+
+223
+00:48:30,579 --> 00:48:42,679
+Ne demek istiyorum? Elinizde bir ver hükümesi var modelin elinde. Bu ver hükümesinde belli bir kelime var mesela. O kelimeye geçtiği yorumların bazıları pozitif, bazıları negatif.
+
+224
+00:48:45,588 --> 00:48:59,948
+Burada o kelimenin nasıl bir şey olduğunun tam olarak anlaşılabilmesi için o kelimeyi içeren yeni örneklere de ihtiyaç var. Mesela elinize 10 tane vardı. Bunların işte yarısı böyle, yarısı böyle. Denk gelmişler eğitim kümesinde.
+
+225
+00:49:10,420 --> 00:49:30,420
+Şu kelime ve şu kelime birlikte geçenleri bana getir. Getir derken öyle örnekler bul. İlk önce ondan sonra onları etiketle, ondan sonra bana bunu ver. Anlatabildim mi? Yani kullanıcıdan çok daha fazla talebi olan bir şey. Mesela aktif learning de sadece...
+
+226
+00:49:31,155 --> 00:49:54,536
+Şu örneğin etiketini ver diyor. Örnekler de belliydi. Şu örneğin etiketini ver bana diyordu, seçiyordu. Yarı öğeticiliğinde sadece yarı şeyler var. Etiketini bilmediğimiz örnekler var. Onları koyduk. Aktif learning'teyse bakın hem input'u hem output'u ikisini birden talep eden bir şeyden bahsediyoruz. O yüzden daha talep gel kullanıcıdan.
+
+227
+00:49:55,092 --> 00:50:11,232
+Daha fazla şey bekleyen, deney sürecine diyelim, eğitim kümesinin oluşturulması sürecine direkt müdahale eden bir yaklaşım. Öyle daha iyi ifade ettim, edebilirim belki. Bakın tekrar söylüyorum.
+
+228
+00:50:11,232 --> 00:50:21,228
+Eğitim kümesinin oluşturulması, yani modelin eğitileceği eğitim kümesinin oluşturulmasına müdahale eden bir yaklaşım. Burada model...
+
+229
+00:50:21,300 --> 00:50:44,900
+Kendi eğitim kümesinin oluşturulmasında söz sahibi. Anlatabildim mi? Bu günümüzdeki birçok problem için oldukça şey, önemli bir şey, konu rahatlıkla söyleyebilirim.
+
+230
+00:50:47,476 --> 00:51:14,536
+Burada mesela bir örnek verelim. Input uzayında nereden yeni örnek alayım? Mesela böyle veriler varmış elinde. O burada şeyi fark ediyor. Burada bir boşluk var diyor. O boşluğu da outputtaki varyansına bağlı olarak takvim ediyor. Yani hangi bölgede benim outputlarımın varyansı çok yüksek diyor.
+
+231
+00:51:15,219 --> 00:51:28,499
+Model varyansının yüksek olduğu yer tahminlerde en az güvenilir olabilecekler. Modelin bu noktada bir varyans. Buralardan yeni örnekler. Bana şu bölgeden yeni örnek verdin. O bölgede benim çok örneğim yok diyor. Mesela.
+
+232
+00:51:30,119 --> 00:51:38,499
+Orada örneğim çok yoksa ne yapıyorum? Orada çok iyi tahminlerde bulunamıyorum. Oradaki...
+
+233
+00:51:39,476 --> 00:51:43,615
+Tahminler hep şey, ne derler ona? Varyans yüksek tahminler.
+
+234
+00:51:52,052 --> 00:52:05,192
+Şimdi insan makine iş birliğine burada bırakalım. Bundan sonrasında önümüzdeki hafta tamamlarız.
+
+235
+00:52:05,192 --> 00:52:13,192
+Tamam. Şimdi şöyle yapalım arkadaşlar. Burada ben konu anlatmayı bırakayım.
+
+236
+00:52:17,652 --> 00:52:22,612
+Bir ara verelim. Ondan sonra sizin sunumlarınıza geçelim.
+
+237
+00:52:24,711 --> 00:52:29,932
+Şimdi saatimiz 54 geçiyor. Onu 5 geçe diyelim.
+
+238
+00:52:29,932 --> 00:52:30,572
+Tamam.
+
+239
+00:52:35,532 --> 00:52:37,052
+Ara diyelim.
+
+240
+00:52:37,492 --> 00:52:40,452
+Yani 9 dakikalık bir aramız olsun.
+
+241
+00:52:41,204 --> 00:52:54,864
+Ondan sonra benim söyleyeceğim sırada sunumlarınızı gerçekleştirirsiniz. Ona göre hazırlıklarınızı yapmış olun. Yani sunumunuzdan hazırlamış olun. Tamam. Az sonra görüşmek üzere arkadaşlar.
+
+242
+01:03:14,195 --> 01:03:30,935
+Evet, tekrar merhaba arkadaşlar. Saat 15 geçiyor. Şeye başlayabiliriz. Sizlerden ricam ödev yaparken kameranızı mutlaka açın. Sesinizi açıp olacak. Sesleri görelim. Daha iyi olacaktır. Öyle.
+
+243
+01:03:32,675 --> 01:03:39,155
+Şimdi sıralamayı dedim gibi ben şey yapmaya çalışacağım, beledemeye çalışacağım.
+
+244
+01:03:39,987 --> 01:03:41,407
+Şeyle başlayalım.
+
+245
+01:03:45,507 --> 01:03:48,427
+[öğrenci] [öğrenci]'la başlayalım.
+
+246
+01:03:54,068 --> 01:03:57,347
+Merhaba hocam. Merhaba. Tamam geldi.
+
+247
+01:03:58,208 --> 01:03:59,847
+Tabii hocam. Hemen ekranımı paylaşıyorum.
+
+248
+01:04:00,388 --> 01:04:01,048
+Tamamdır.
+
+249
+01:04:03,603 --> 01:04:22,463
+Süre olarak da şöyle bir şey diyeyim. Yani herhalde beş dakika falan geçmemesi gerekecek diye tahmin ediyorum. Ben gerekirse hızlandırabilirim biraz. Zaten belli bir birkaç sunum sorununa başlarda söylenecek şeyler azalacaktır.
+
+250
+01:04:24,596 --> 01:04:46,155
+Ortak kısımları bir daha bir daha tekrar etmenize gerek olmayacaktır. Asıl kritik olan sonuçlarınızı ve onlara dair yorumlarınız benim için önemli olacak. En baştaki introduction kısımlarına atlayarak hareket edebilirsiniz. Yani o manada onu demeye çalışıyorum. Peki, başlıyor. Nesi [öğrenci] [öğrenci].
+
+251
+01:04:46,155 --> 01:04:48,496
+Hocam, ekran gözüküyor değil mi öncelikle?
+
+252
+01:04:48,596 --> 01:04:49,195
+Evet, geliyor.
+
+253
+01:04:53,619 --> 01:05:01,419
+Şimdi dondun ama. Ne oldu? Ben mi dondum?
+
+254
+01:05:01,419 --> 01:05:04,419
+Evet, kullandım veri kömeler ve son...
+
+255
+01:05:06,899 --> 01:05:08,699
+İnternet problemi olabilir.
+
+256
+01:05:09,639 --> 01:05:12,239
+Bende bir şey var mı? Bende bir sıkıntı var mı?
+
+257
+01:05:12,916 --> 01:05:22,916
+Bir de şey görüntü açıkken, kendi görüntüsünü de verince daha da zorlanıyor olabilir.
+
+258
+01:05:24,536 --> 01:05:28,115
+Olabilir de ama bu kadar da olmaz. Ben de kendi görüntüm veriyorum.
+
+259
+01:05:32,996 --> 01:05:36,695
+[öğrenci] [öğrenci]'ı o zaman durduralım diyeceğim.
+
+260
+01:05:37,876 --> 01:06:00,656
+[öğrenci] [öğrenci] düştü hatta galiba. Neyse. Peki, o bağımcı tekrardan şey yaparız. Şimdi devam edelim o zaman. [öğrenci]. [öğrenci] diye okuyorum ama [öğrenci]. Evet hocam. Evet.
+
+261
+01:06:12,532 --> 01:06:13,692
+Görüntü geldi.
+
+262
+01:06:32,244 --> 01:06:37,543
+Ekran da geldi. Tamam.
+
+263
+01:06:48,596 --> 01:06:57,456
+Hocam kusura bakmayın, okul interneti gitti bir anda. Şu an yeniden bağlandım ama tam da ders boyunca gitmedi hocam. Tam sunuma başladım.
+
+264
+01:07:00,155 --> 01:07:07,715
+[öğrenci], [öğrenci]'yı aldım. O sunsun. Ondan sonra sana tekrarlendirelim. Teşekkür ederim hocam.
+
+265
+01:07:09,556 --> 01:07:11,556
+Evet, send inners.
+
+266
+01:07:11,556 --> 01:07:19,556
+My name is [öğrenci]. My presentation is about comparing semantic space method for text classification.
+
+267
+01:07:19,556 --> 01:07:23,556
+First, I will talk about the purpose of the presentation.
+
+268
+01:07:23,556 --> 01:07:26,556
+What is the semantic space method?
+
+269
+01:07:26,556 --> 01:07:34,508
+List of the semantic space method, advantage and disadvantage, data set, experiment methodology, and conclusion for future.
+
+270
+01:07:47,583 --> 01:07:52,183
+Önceyeyim, ilk başta, bu semantik method.
+
+271
+01:07:52,183 --> 01:07:58,983
+Semantik method is a computational approach using a natural language process
+
+272
+01:07:58,983 --> 01:08:04,983
+that represent the meaning of word or phrase as a vector in a high-dimensional space.
+
+273
+01:08:04,983 --> 01:08:11,183
+These vectors are derived from an analysis pattern of full occurrence with other...
+
+274
+01:08:11,315 --> 01:08:39,315
+Bu bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin
+
+275
+01:08:50,868 --> 01:09:10,428
+Bu da bu sallallı bir liste de semantik ve spay
+
+276
+01:09:13,011 --> 01:09:41,011
+Klasik TF and IDF. Klasik TF and IDF are classic test representation method used in NLP that measure word frequency and importance in document while 2-6 character gram refers to in n-gram model to representing word as a sequence of 2-6 character. Distribution semantics is a computational attribute.
+
+277
+01:09:41,011 --> 01:09:44,011
+Bu birçok model olarak, bu birçok model olarak,
+
+278
+01:09:44,011 --> 01:10:08,268
+birçok model olarak,
+
+279
+01:10:08,724 --> 01:10:35,164
+Bu slide is about the advantage and disadvantage about the classic distributory semantics and natural language model. [öğrenci], can you still hear me? Yes. You can skip this slide, I think. You can jump to your experimental results. Okay. This slide, can I explain? Yeah.
+
+280
+01:10:35,731 --> 01:10:42,492
+Bu çalışma, bu çalışma, 3 data seti.
+
+281
+01:10:42,492 --> 01:10:47,731
+Bir de 20 News Group, bir de Amazon ve IMDB.
+
+282
+01:10:49,171 --> 01:11:15,652
+Anlambil experiment methodology involves comparing the performance of the four different semantics based methods, Plastic, TFI, and SEMANTIC, and Natural Language model on two different text datasets, 20-news group, Amazon review, and IMDB reviews, using both topic classification and non-topic classification tasks.
+
+283
+01:11:15,984 --> 01:11:33,684
+Comparation is done by evaluation of the accuracy of each method on each dataset using the machine learning model. The experiment is repeated five times for each method on each dataset and the average and standard vision of the accuracy score are calculated.
+
+284
+01:11:40,372 --> 01:11:46,372
+Bu slide is about the results and comparing.
+
+285
+01:11:46,372 --> 01:11:58,372
+When comparing multi-method and model, calculating the mean and the standard division of their performance can provide useful summary of the result.
+
+286
+01:11:58,372 --> 01:12:08,372
+The mean is the average performance of the trail or dataset, while the standard division measures the variability.
+
+287
+01:12:34,003 --> 01:12:40,384
+Bir tablisinin sonu
+
+288
+01:12:40,384 --> 01:12:42,903
+TFI-DF
+
+289
+01:12:42,903 --> 01:12:46,844
+ve 3data set
+
+290
+01:12:46,844 --> 01:12:48,443
+ve bir ELMO
+
+291
+01:12:48,443 --> 01:12:51,184
+ve
+
+292
+01:12:51,184 --> 01:12:52,184
+FAST-TESK
+
+293
+01:12:54,228 --> 01:12:56,228
+Bir sonraki bir tabla var.
+
+294
+01:12:56,228 --> 01:12:58,228
+Bu bir tabla var.
+
+295
+01:12:58,228 --> 01:13:19,948
+Bir tabla var.
+
+296
+01:13:20,404 --> 01:13:46,796
+Bir de bu tarifte bir tarifte bir tarifte bir tarifte bir tarifte bir tarifte bir tarifte bir tarifte bir tarifte bir tarifte bir tarifte bir tarifte bir tarifte bir tarifte bir tarifte bir tarifte bir tarifte bir tarifte bir tarifte bir tarifte bir tarifte bir tarifte bir tarifte bir tarifte bir tarifte bir tarifte bir tarifte bir tarifte bir tarifte bir tarifte bir tarifte bir tarifte bir tarifte bir tarifte bir tarifte bir tarifte bir tarifte bir tarifte bir tarifte bir tarifte bir tarifte bir tarifte bir tarifte bir tarifte bir tarifte bir tarifte bir tarifte bir tarifte bir tarifte bir tarifte bir tarifte bir tarifte bir tarifte bir tarifte bir tarifte bir
+
+297
+01:13:49,268 --> 01:14:09,387
+Tf-IDF'in birçok
+
+298
+01:14:09,619 --> 01:14:17,619
+Bir sonraki bir fotoğraf, bu tarifin var ve bu tarifin var ve bu tarifin var.
+
+299
+01:14:17,619 --> 01:14:33,619
+Bu tarifin var, tarifin var ve bu tarifin var.
+
+300
+01:14:33,619 --> 01:14:37,195
+Bir sonraki tarifin var.
+
+301
+01:14:38,420 --> 01:15:02,020
+Nodal accuracy training at first photo show and I tried five times for one of them and one of them is dataset Amazon. Another one is IMDB and another one is 20 news group.
+
+302
+01:15:46,912 --> 01:15:53,912
+Klasik metodaki, daha fazla
+
+303
+01:15:53,912 --> 01:16:13,912
+ve klasik metodaki
+
+304
+01:16:12,884 --> 01:16:40,884
+Bu, bu
+
+305
+01:17:08,180 --> 01:17:23,360
+Peki, teşekkürler [öğrenci]. Şimdi [öğrenci]. Doğru mu okuyorum? Çok emin değilim ama.
+
+306
+01:17:25,700 --> 01:17:27,180
+Merhaba, evet hocam.
+
+307
+01:17:27,960 --> 01:17:32,980
+Tamam, evet. İsmin [öğrenci] diye mi okunuyor, nasıl okunuyor?
+
+308
+01:17:32,980 --> 01:17:33,899
+[öğrenci].
+
+309
+01:17:34,676 --> 01:17:41,636
+[öğrenci], tamam. Belki. Tamam. Çok kötü şey yapın. Geldi, her şey geldi. Tamam.
+
+310
+01:18:38,963 --> 01:18:46,028
+Bu Google'a
+
+311
+01:18:46,260 --> 01:19:03,260
+Word Vectors for vocabulary of 3 million words. Word2Vec is one of the most popular technique for word embedding using neural network and contains two methods. It's a skip gram and a common back of words.
+
+312
+01:19:03,260 --> 01:19:14,260
+And for example, and one of the interesting thing about Word2Vec is that this technique can find similar words, for example, to a family, relatives, family and familiars.
+
+313
+01:19:14,260 --> 01:19:26,260
+So here's defining a function which takes text input and returns one vector for each sentence and then converts it to numeric data.
+
+314
+01:19:26,260 --> 01:19:35,260
+Here I use all the text data to work to vectors and I added the target variables here.
+
+315
+01:19:35,796 --> 01:19:40,796
+Also, I separate the target variables and the predicted variables.
+
+316
+01:19:40,796 --> 01:19:48,796
+For example, input array will have 0 in all elements except for the target word.
+
+317
+01:19:48,796 --> 01:19:53,796
+And here I use min-max scaling for a normalization, which is 0 to 1,
+
+318
+01:19:53,796 --> 01:19:59,796
+and storing the fit object for later reference and generating the standardize.
+
+319
+01:20:00,000 --> 01:20:28,000
+Bu da
+
+320
+01:20:28,000 --> 01:20:30,000
+Averişe kurası still lower.
+
+321
+01:20:33,000 --> 01:20:37,000
+And I used logistic regression as a classification algorithm.
+
+322
+01:20:37,000 --> 01:20:43,000
+Here we can see that it's the same as Naive Bias, very low, 36%,
+
+323
+01:20:43,000 --> 01:20:50,000
+but after the 5-fold cross-validation, we can see this average accuracy is 65%.
+
+324
+01:20:51,859 --> 01:21:06,859
+Here I used another TF-IDF vectorizer from scikit-learn library. This will get text data into phonumeric form. But here's the output. It's simple. We can see that...
+
+325
+01:21:07,764 --> 01:21:24,344
+A number of columns have exploded to Naryan dosent and 100. It was only two column. And to solve this problem, we're using PCA. It's a common used method. And we can see that the...
+
+326
+01:21:25,076 --> 01:21:40,076
+Tf-idf, Statistikal Measure, that evaluates how relevant a word is to a document in a collection of documents. And two metrics, how many times word appears in a document, and the inverse document frequency of the word across a set of documents.
+
+327
+01:21:40,076 --> 01:21:53,076
+Here I use this PCA, use it MinMax Scaling, but here I use it to give test 20%. I also use Naive Bias, and here we can see that Naive Bias increases...
+
+328
+01:21:53,076 --> 01:21:55,076
+45%
+
+329
+01:21:55,076 --> 01:22:00,076
+ve
+
+330
+01:22:00,076 --> 01:22:02,076
+73%
+
+331
+01:22:02,076 --> 01:22:05,076
+2.
+
+332
+01:22:05,076 --> 01:22:07,076
+Spam
+
+333
+01:22:07,076 --> 01:22:22,076
+or not
+
+334
+01:22:22,963 --> 01:22:45,963
+GenSim, a free open source Python library for representing documents as semantic vectors. GenSim is designed to process raw unstructured digital text. I replaced it Hamas 1 and Spamas 0 using Map and Train Test 2. Here I used Word2Vec.
+
+335
+01:22:47,536 --> 01:22:48,536
+or not
+
+336
+01:22:46,771 --> 01:23:10,155
+İki videoda da bir şey var.
+
+337
+01:23:10,515 --> 01:23:29,835
+Bu da bu
+
+338
+01:23:30,452 --> 01:23:42,452
+The third dataset I used the news from the BBC dataset. It contains two columns. Category represents the type of news. Here are five types of news. And the context represents the news.
+
+339
+01:23:44,452 --> 01:23:57,452
+Here is the tokenization. Divide sentences into words, then removing numbers, punctuation, stop words, and special characters. Here I used word to wake vectorizer too.
+
+340
+01:24:18,387 --> 01:24:29,488
+Tf-IDF Vectorizer perform better than the warp-toguer vectorizer, which means that mostly we can use Tf-IDF Vectorizer more.
+
+341
+01:24:34,739 --> 01:24:54,199
+Peki, teşekkürler [öğrenci]. Burada TF-IDF vardı, karşılaştırmalarda Word2Vec vardı. Bu ikisini gördük, değil mi? Karşılaştırmasını gördük. Üç tane veriklmesi üzerinde. Tamamdır, çok teşekkürler.
+
+342
+01:24:56,539 --> 01:24:58,340
+Hocam ben sunabilir miyim hocam?
+
+343
+01:24:59,439 --> 01:25:01,699
+Evet, alalım seni [öğrenci]. Tamam, alalım.
+
+344
+01:25:10,579 --> 01:25:17,159
+Başlıyorum hocam. Merhaba arkadaşlar. Sonu dediğim gibi 3, pardon görüntüme açmamışım.
+
+345
+01:25:20,564 --> 01:25:37,564
+Üç şekilden oluşmaktadır. Özet, veri hükmeleri ve sonuçlar hakkında. Özet olarak bu ödevden bir tane konu sınıflandırma ve iki tane konu sınıflandırma olmayan üç veri seti üzerinde bir sınıflandırma çalışması yapılmıştır.
+
+346
+01:25:37,564 --> 01:25:42,983
+Bu çalışmada dört anlamsal uzan yöntemi, bunların iki tanesi sinirsel dil modulacak şekilde.
+
+347
+01:25:43,636 --> 01:26:11,636
+Kullanılmış ve karşılaştırılmıştır. Karşılaştırılmaya TF-IDF değerleri de eklenmiştir. Son olarak seçilen 3 yöntemler birleştirilerek karşılaştırmaya dair edilmiş ve toplam 9 karşılaştırma sonuçları kullanılmıştır. 3 adet veri kümesi kullanıldı. Aslında burada belirttim 2 tane IMD video ama aslında ikisi birbirinden farklı data sektörü hocam. Bir tanesinde filmlerin özeti bulunup bu özetlerden hangi tür...
+
+348
+01:26:11,636 --> 01:26:37,196
+Hangi tür filme ait olduğunu buluyoruz? 26 farklı konu şeyi var bu datasette. 26 farklı sınıf filme ait olabilirdi. Diğer IMDB dataseti de bu yorumlardan, o filme ait yorumların olumlu olumsuz olduğuna dair bir veri seti. Diğeri de YERP dataseti de bu günlük konuşmaların olduğu bir veri seti. Bu da aynı şekilde konuşmaların olumlu ve olumsuz olduğuna dair bir veri seti.
+
+349
+01:26:39,279 --> 01:26:59,699
+İlk bu olumlu olumsuz datasetleri olan IMDB ve YAP datasetlerini karşılaştırdım ve burada gördüğümüz 9 yöntem içerisinde. Hani ben başlamadan önce de beklediğim şöyle bir sonuçtum. Sinirsel dil modellerin diğerlerine göre daha başarılı bir sonuç bekliyordum öncelikle başarı oranında. Keza o şekilde de oldu.
+
+350
+01:27:00,372 --> 01:27:28,072
+Burada sinistel dil modelleri olarak hocam, BERT ve FASTEX'in olmayan LSI ve LDA yöntemlerini kullandım. Burada en başarılı şu iki dataset ile de ortak olarak FASTEX daha başarılı geldi bende. 84 ve 86. Daha sonra BERT modeli geldi. Burada LDA, LSI'ye göre her iki dataset ile de daha başarılı bir sonuç verdi. Ben burada birleştirme olarak da şunu hedefledim aslında.
+
+351
+01:27:28,372 --> 01:27:38,791
+Acaba sinirsel dil modeli olmayan yöntemleri birleştirerek, burada gördüğünüz gibi hocam, acaba sinirsel dil modellerin başarısını yakalayabilir miyim gibi bir şey denedim.
+
+352
+01:27:38,791 --> 01:27:51,751
+Açıkçası her ikisini birleştirdim de birbirlerinin orta değerlerine gelen değerler çıktı burada. Her ikide de sette de, IMDB ve YAPT'te de. Çok sinirsel dil modellerin sonuçlarına yaklaşamadı.
+
+353
+01:27:52,595 --> 01:28:16,475
+Bu olumlu ve olumsuz tahmin etmedi. Şeyde de soracağım, bu karşılaştırmada 26 farklı sınıf var burada. Biraz daha büyük bir dataset değerlerine göre. Hani burada başarım biraz düşük geldi açıkçası diğerlerine göre. Hani veri setin büyüklüğünden veya çok fazla sınıf olduğundan kaynaklanabilir diye düşünüyorum sadece bu kadar düşük gelmesinin sebepleri.
+
+354
+01:28:19,731 --> 01:28:46,452
+Pestex daha başarılı bir sonuç verdi bana diğer yöntemlere göre. Diğer şeylerde de önün elde biraz daha konu modelleme olduğu için diğer sinirsadil modeller olmayanlara göre daha başarılı bir sonuç bekliyordum ben. Onda da keza aynı şekilde geldi. Yine birleştirmede de sinirsadil modeller yakın bir sonuç gelebilir mi diye baktığımda sadece şu iki birleştirmede biraz en azından Berth'e biraz daha yakın bir sonuç geldi.
+
+355
+01:28:47,731 --> 01:28:56,391
+Sonuçlar bu şekilde hocam. Yorumum ve sadece bekledim. Başlamadan önce de Sinisadil modelin daha yüksek bir sonuç bekliyordum.
+
+356
+01:28:56,391 --> 01:29:01,612
+Diğer olmayanlara göre. Konu modelleme de açıkçası elde edin.
+
+357
+01:29:02,292 --> 01:29:13,312
+Mantık konu modellimi olduğu için belki şeyleri geçer diye bekledim. Sinsel dil modellerin başarısını geçebilir diye bekledim ama o geçemedi. Bu şekilde hocam yorum kısmında.
+
+358
+01:29:13,792 --> 01:29:19,112
+Peki bu birleştirme kısmında concatenate mi ettin? Şeyleri birleştirmeyi nasıl yaptın?
+
+359
+01:29:19,112 --> 01:29:22,112
+Evet hocam. Bunların her birinin vektör...
+
+360
+01:29:22,319 --> 01:29:26,579
+Her dönemati vektörleri alıp o vektörleri yan yana koyarak.
+
+361
+01:29:26,579 --> 01:29:27,119
+Evet.
+
+362
+01:29:28,259 --> 01:29:30,679
+Sınıflandırma yaparken nasıl bir şey yapıyorsun daha sonra?
+
+363
+01:29:33,239 --> 01:29:34,999
+Nasıl yani hocam? Nasıl yapıyorsunuz derken?
+
+364
+01:29:35,179 --> 01:29:39,739
+Yok yok şunu demek istiyorum. Vektörer ettikten sonra sınıflandırıcı için ne kullanıyorsun?
+
+365
+01:29:40,916 --> 01:29:51,436
+Aslında onları da ardı ardına birleştirmiştim. Diğerini arka arkaya birleştirmiştim. Concernate ederken, vektörle biri bitti, diğer bir şey. Label kısmını da aynı şekilde yaptım.
+
+366
+01:29:52,716 --> 01:30:07,836
+Şunu demek istiyorum. Mesela BERT temsilini elde ettin ya. Şimdi Concernate'i ben başladım. BERT temsilini elde ettikten sonra, o BERT temsilinin sınıfını bulurken nasıl bir işlem gerçekleştiriyorsun? Yani bir model ne var orada?
+
+367
+01:30:08,340 --> 01:30:10,000
+Bir yapay sinra mu?
+
+368
+01:30:11,799 --> 01:30:14,840
+Bert'i fine tune mü ediyorsun yoksa şey mi?
+
+369
+01:30:16,779 --> 01:30:19,739
+Harici bir sınıflandırıcı emriyorsun.
+
+370
+01:30:20,948 --> 01:30:31,308
+Yani Berk Temsil konularını göreceğim. Bir fine tune aslında. Yani bir Berk Temsil'i elde ettikten sonra bunları bir yapay sinira modeline verip sınıflandırılıp o şekilde.
+
+371
+01:30:31,668 --> 01:30:32,948
+Evet, evet, evet.
+
+372
+01:30:32,948 --> 01:30:36,488
+Evet, evet. Evet, evet. Pardon yanlış anladın. Özür dilerim. Aynen.
+
+373
+01:30:37,128 --> 01:30:42,228
+Ondan bahsetmeliyim ama Fast Text'e falan da yine. Yani öyle bir tane yapay sinira veriyorsun daha sonra.
+
+374
+01:30:42,408 --> 01:30:44,328
+Evet, evet. Evet hocam. Evet, hocam. Evet, doğru.
+
+375
+01:30:44,851 --> 01:30:47,471
+Teşekkürler [öğrenci].
+
+376
+01:30:47,471 --> 01:30:48,771
+Teşekkür ederim hocam. Sağ olun.
+
+377
+01:30:51,471 --> 01:30:54,231
+Tamam. Devam edebiliriz.
+
+378
+01:30:54,331 --> 01:30:57,371
+Kimle devam ediyoruz? [öğrenci].
+
+379
+01:31:02,836 --> 01:31:07,796
+Merhabalar. Merhaba. Geliyor, ses, görüntü, her şey tamam.
+
+380
+01:31:13,619 --> 01:31:15,299
+Ekranım da geliyor değil mi?
+
+381
+01:31:18,339 --> 01:31:21,479
+Ben de hocam, hızlıca girişimi yapayım.
+
+382
+01:31:22,979 --> 01:31:33,359
+Şöyle yine üç farklı metin veri seti kullandım. Bunlardan birincisi, çok pardon şeyden dolayı biraz kayıyor şu anda.
+
+383
+01:31:40,948 --> 01:32:05,968
+İlk veri setim Egenius. Burada 4 farklı kategoriden haber başlıkları var. Buna göre bir sınıflandırma yapmamız gerekiyor. Veri seti 3'ü içinde çok büyüktü. Ben hepsini şey yaptım. Her sınıftan biner örnek olacak şekilde küçülttüm rastgele olacak şekilde. Bir diğeri IMDB veri seti. Burada da bir sentiment analiz yapılıyor.
+
+384
+01:32:06,484 --> 01:32:21,024
+Yine işte biner örnek aldım. İki sınıflı bir veri seti. Yelp'te de restoran yorumları kısmından yine biner, her sınıftan biner örnek olacak şekilde böyle küçük üç tane veri seti hazırlamış oldum.
+
+385
+01:32:21,584 --> 01:32:31,664
+Özlü tel çıkarma yöntemlerinde de klasik TF'i kullandım. TFI DF'i kullandım. Sizin söylediğiniz gibi 2 ile 6 karakter aralığındaki.
+
+386
+01:32:32,372 --> 01:32:49,891
+İşte dizilerin frekanslarını hesapladım. Onun dışında da dört tane sinirsel dil modeli kullandım. Bert'i kullandım. GPT-2'yi, Roberta'yı ve Albert'i kullandım. Bu dört modelde 768 uzunluğunda vektör çıktıları veriyordu.
+
+387
+01:32:53,747 --> 01:33:09,108
+Bunların yanında şöyle üç tane birleştirme yöntemi kullandım. Duo yönteminde şöyle Bert ve Roberto'yı ikisinin vektörlerini yan yana koydum, direkt birleştirdim. Böyle işte 1536 uzunluğunda bir vektör elde etmiş oldum.
+
+388
+01:33:09,108 --> 01:33:18,047
+Bu two split yönteminde Bert ve Roberto'yı ikisini de yarıya böldüm. Bert'in ilk yarısını Roberto'nun da ikinci yarısını alıp.
+
+389
+01:33:18,355 --> 01:33:22,355
+Yine 768 uzunlukta bir vektör oluşturdum.
+
+390
+01:33:22,355 --> 01:33:34,355
+ForSplit'te de 4 tane sinirsel dil modelini, hepsinin dörtte birini, bir çeyreklik kısmını alıp yine yan yana koyarak 768 uzunluğunda bir vektör oluşturdum.
+
+391
+01:33:34,355 --> 01:33:38,355
+Ve bunlarda testimi gerçekleştirdim.
+
+392
+01:33:38,355 --> 01:33:43,083
+Sınıflandırma performansının ölçümü için de Random Forest sınıflandırıcısı kullandım.
+
+393
+01:33:43,091 --> 01:33:53,971
+Biraz da sonuçları farklılaştırabileyim diye tüm eğitimleri, herhangi bir eğitimde rastgele 20 ile 30 arasında derinlikte olacak şekilde konfigür ettim.
+
+394
+01:33:54,691 --> 01:34:01,491
+Her dönemimi 5'er kez çalıştırdım. Burada da ortalamalarını ve standart satmalarını görüyoruz.
+
+395
+01:34:02,631 --> 01:34:06,271
+Yorumlarım şurada. Ben tablo üstünden yorumlarımı yapayım.
+
+396
+01:34:06,739 --> 01:34:28,379
+Şimdi şey zaten çok bariz belli oluyor. Sinirsel dil modelleri TF ve TF-IDF'e göre çok bariz bir fark oluşturuyorlar genelde. Bunu da aslında bekliyoruz zaten. Çünkü birisi sadece frekansa göre bir çıkarım yapıyor. Sinirsel dil modelleri ise bağlamı da öğrendiklerini düşünüyoruz.
+
+397
+01:34:29,140 --> 01:34:44,380
+Fakat ben şey bekliyordum aslında, TF-IDF'in TF'den daha iyi çıkmasını bekliyordum. Bu olmadı. Yani hepsinde bir genelleyemeyiz bunu. Sinirsel dil modeller için de şöyle, IMDB ile Yelp Veri Setleri bu ikisi iki sınıflı.
+
+398
+01:34:44,780 --> 01:34:53,300
+AG News dört sınıflı. İki sınıflılarda benzer bir şey görüyoruz aslında, örüntü görüyoruz. En iyi Roberto'da sonuç alınmış.
+
+399
+01:34:53,876 --> 01:35:20,780
+Ve işte bu birleştirdiğimiz, kombine edilmiş yöntemlerde hiçbiri Robert A'yı geçememiş aslında. Fakat EG'nin üstü farklı görüyor. Farklı bir sonuç görüyoruz. En iyi sonuç Bertha alınmış. Ve şöyle hani sonuçta şu üç yöntem, şu dördünden kombine edilmiş, çıkarılmış yöntemler. Fakat burada hani ondan çıkmasına rağmen...
+
+400
+01:35:21,108 --> 01:35:28,468
+Bu yöntemleri geçtiğini görebiliyoruz burası için. Böyle sunumu. Teşekkür ederim.
+
+401
+01:35:30,468 --> 01:35:39,308
+Çok teşekkürler [öğrenci]. Orada o geçen dediğin Roberta ile Bert'in birleştirilmesi değil mi?
+
+402
+01:35:39,468 --> 01:35:41,648
+Duo diye ifade ettiğin. Evet hocam.
+
+403
+01:35:41,668 --> 01:35:44,748
+Konkatenet ettiğin o daha iyi çıkmış o dört sınıfı da. Evet.
+
+404
+01:35:45,168 --> 01:35:46,588
+Enteresan olmuş bu iki.
+
+405
+01:35:47,988 --> 01:35:53,868
+Teşekkürler. Tekrardan devam edelim.
+
+406
+01:35:56,388 --> 01:35:58,428
+[öğrenci], [öğrenci].
+
+407
+01:36:03,988 --> 01:36:09,868
+Hocam, ben kodu paylaştım da sunumu paylaşamadım. Tanımlayamamıştım.
+
+408
+01:36:11,408 --> 01:36:12,387
+Anlayamadım.
+
+409
+01:36:13,108 --> 01:36:20,387
+Ben kodu paylaştım da sunumu paylaşamadım. Sunumu tamamlayamamıştım. O yüzden sunamayacağım.
+
+410
+01:36:21,488 --> 01:36:22,627
+Hayır, raporun yok mu yani?
+
+411
+01:36:23,368 --> 01:36:26,688
+Raporun, yani paylaş, şey koymadım.
+
+412
+01:36:28,068 --> 01:36:29,448
+Tamam, şimdi göster.
+
+413
+01:36:31,380 --> 01:36:35,039
+Tamam, yani şimdi gösterebilirim. İsterseniz.
+
+414
+01:36:37,220 --> 01:36:41,539
+Hani yoksa tamam, ona bir şey demem de, hani oraya koymadım da anlayamadım.
+
+415
+01:36:41,539 --> 01:36:51,120
+Yok, sadece biraz eksik oldu gibi geldiğinden dolayı paylaşmadım. O yüzden ama şimdi göstereyim.
+
+416
+01:36:51,859 --> 01:37:01,859
+Çünkü yapamadım ben. Bu üç tane verinin konkat etme gibi bir şeyle yapamamıştım. O yüzden...
+
+417
+01:37:01,859 --> 01:37:02,859
+Yapabildiğini göster.
+
+418
+01:37:02,859 --> 01:37:04,859
+Tamam mı?
+
+419
+01:37:04,859 --> 01:37:05,323
+Tamam.
+
+420
+01:37:21,811 --> 01:37:22,652
+Evet, dinliyoruz.
+
+421
+01:37:23,471 --> 01:37:25,211
+Şu an ekranı paylaşıyor mu?
+
+422
+01:37:25,671 --> 01:37:26,032
+Evet.
+
+423
+01:37:30,072 --> 01:37:38,291
+Ben ödevümde genel olarak bu şeyleri paylaşmıştım. Burada farklı bir şey.
+
+424
+01:37:38,291 --> 01:37:44,992
+Metamery hükümeleri olarak üç tane şey seçtim. Bir fake unreal news dataset olarak seçtim.
+
+425
+01:37:45,395 --> 01:37:56,635
+İlkinde aslında birden 10.000'den fazla şey vardı ama oranda dağıtmak için, 5000'e 5000'i dağıtmak için öyle bir şey düşündüm.
+
+426
+01:37:56,635 --> 01:38:05,355
+Etiketlerin bir etiket olanlar gerçek olanlar, sıfır olanlar sahte olanlar diye.
+
+427
+01:38:05,355 --> 01:38:08,355
+BBC News Dataset'in...
+
+428
+01:38:08,623 --> 01:38:36,043
+Bir dataset'ini kullandım. Burada konu sınıflandırması olarak bunu kullandım. Beş tane konuda oluşuyor. Tek business, sport entertainment politics diye. Bir de son olarak human stress prediction dataset diye bir şey kullandım. Bu da subredditlerden insanların yorumlarına göre 10 şekilde stres şeylerini değerlendirmişler, etiketlemişler.
+
+429
+01:38:36,916 --> 01:38:49,716
+Benim kullandığım algoritmalar BERT, Word2Web, Latent Semantic Analysis, Latent Directly Allocation, TF ve TF-IDF kullandım ben.
+
+430
+01:38:52,115 --> 01:39:00,336
+Yani bulduğum sonuçlar bu değerlerde. Bulduğum sonuçlarda BERT değeri hepsine göre daha iyi.
+
+431
+01:39:02,323 --> 01:39:15,983
+Bu özellikle BBC ve Fake Reel'de çok daha iyi çıkıyor. Ama bunun stresi de neresi diğer tüm algoritmalar hep aynı şekilde daha düşük değerlerde çıkıyor.
+
+432
+01:39:17,619 --> 01:39:36,319
+Bunlar da benim yaptıklarımda bir preprocess uygulamadım. Dillerde bir limitation veya stabilization gibi bir şey yapmadan yaptım ama Bert'in kendi ne özel tokenizer'ları olduğundan dolayı büyük ihtimalle diğerlerinden daha yüksek çıkmasının nedeni o oldu.
+
+433
+01:39:42,260 --> 01:39:58,260
+LDA değeri daha yüksek çıkmış gerekirken bence LDA değeri daha yüksek çıkmış. Çünkü yanlış bilmiyorsam LDA aynı zamanda TF-IDF tokenizer'ı kullanıyor diyebilirim.
+
+434
+01:39:58,260 --> 01:40:08,260
+Ve mesela aynı şeyde BBC'de 0.79 iken LDA 0.548 olarak çıkmış.
+
+435
+01:40:09,427 --> 01:40:30,867
+Onun dışında TF ile IDF değerlerinin de çok, 3 tane veri kümesine bakınca hepsinin de aynı oranda değişmediğini görüyoruz. BBC'de TF daha düşük çıkmasına rağmen Fake Real'de daha yüksek bir puana sahip olmuş.
+
+436
+01:40:32,979 --> 01:40:44,219
+Benim, ben bu konferiteyi yapmayı başarlamadığımdan dolayı ekleyemedim. Benim yaptığım çalışmanın sonucu bu olmuştu.
+
+437
+01:40:44,939 --> 01:40:47,439
+Tamamdır. Teşekkür ederim, [öğrenci]. Sağol.
+
+438
+01:40:47,439 --> 01:40:48,719
+Ben teşekkür ederim.
+
+439
+01:40:52,399 --> 01:40:54,699
+Evet, bakalım.
+
+440
+01:40:55,839 --> 01:40:58,199
+[öğrenci]. [öğrenci].
+
+441
+01:41:01,492 --> 01:41:02,692
+Evet hocam.
+
+442
+01:41:03,412 --> 01:41:05,072
+Evet, dinliyoruz.
+
+443
+01:41:06,192 --> 01:41:08,952
+Tabii ki hemen çok kısa bekleteceğim.
+
+444
+01:41:34,420 --> 01:41:37,639
+Şimdi açabildim slide'ımı. Hemen paylaşıyorum ekranını.
+
+445
+01:41:43,315 --> 01:41:45,076
+Evet, görürüz.
+
+446
+01:41:49,747 --> 01:41:51,987
+Böyle. Hala görünüyor değil mi?
+
+447
+01:41:53,207 --> 01:41:54,387
+Süper, tamamdır.
+
+448
+01:41:56,127 --> 01:42:01,887
+Şimdi, üç farklı metin veri seti üzerinde çalıştım.
+
+449
+01:42:02,187 --> 01:42:05,967
+Reuters, News Group ve IMDb Film yorumları bunlar.
+
+450
+01:42:07,707 --> 01:42:11,167
+TF, TF, IDF. İki, altı karakter engramlı.
+
+451
+01:42:11,604 --> 01:42:32,323
+LDA, GLO, BERT ve GPT kullandım. 5-volt cross-validation kullanarak değerlendirdim. Ve bunların kombinasyonlarını kullandım. Veri şu şekilde. Şimdi Reuters 90 tane konuya ayrılmış. 20 bin küsur Reuters haber makarlesinden oluşuyor.
+
+452
+01:42:33,604 --> 01:42:38,623
+News Group 20 farklı haber kanalından 20 bin metin verisi içeriyor.
+
+453
+01:42:39,283 --> 01:42:55,024
+IMDB yorumları da 25.000 olumsuz toplam 50.000 film yorumundan oluşuyor. Veri hazırlama aşaması vardı tabii. Bu da üçe ayrılıyor. Tokenization, Stop Word Removal ve Lamentization şeklinde.
+
+454
+01:43:06,003 --> 01:43:23,343
+Metne bir anlam katmayan sözcükler çıkartılıyor. Lematizasında da kelimeler temel ve sözcük biçimlerine dönüştürülüyor. Yani diksineriye çevriliyor aslında.
+
+455
+01:43:24,564 --> 01:43:41,284
+Şöyle Python'daki kütüphaneleri kullandım. NLTK diye bir kütüphane var. Örnek kodu da bu şekilde. Stop Word Removable'da da aynı şekilde NLTK kullanıldı. Onun da bu şekilde örnek bir kullanımı var.
+
+456
+01:43:43,524 --> 01:43:51,944
+Lematizyation'da da aynı şekilde NLTK içerisindeki WordNet Lematizer kullanıldı. O da bu şekilde bir örnek kullanımı var.
+
+457
+01:43:52,819 --> 01:44:11,819
+Şimdi özellik çıkarımı için dediğim gibi bu 6 tane modeli kullandım. TF, TF-IDF, LDA, GLOVE, BERT ve GPT bunların açıklamaları var. Zaten arkadaşlar da aşağı yukarı açıkladılar. Ben tek üzerinden geçmeyeyim.
+
+458
+01:44:15,859 --> 01:44:36,439
+Bu çok basit bir teknik. Belgede bir kelimenin kaç kere geçtiğini söylüyor aslında. Şu şekilde de örnekli kullanım var. Python'da bayağı kullanımlar kolay. TFI, DF'de de aynı şekilde frekansı değil de aynı zamanda tüm korpustaki frekansı da hesaba katılıyor.
+
+459
+01:44:43,539 --> 01:44:55,819
+Bu istatistiksel bir model. Her belgenin konunun bir karışımı olduğu ve her konunun da kelimelerin aslında bir karışımı olduğunu kabul ederek oluşturulmuş bir yöntem.
+
+460
+01:44:57,159 --> 01:44:59,119
+Örnek kullanımı da yine bu şekilde.
+
+461
+01:45:01,876 --> 01:45:19,515
+Global Vectors yöntemi oluyor aslında. Kelimelerin vektör temsillerini çıkartıyor. Unsupervised bir yöntem. Ve bu vektör temsilleri de kelimeler arasındaki ilişkileri gösteriyor.
+
+462
+01:45:20,564 --> 01:45:22,604
+Yine böyle örnek bir kullanımı var.
+
+463
+01:45:22,944 --> 01:45:31,064
+[öğrenci], şeyi soracağım. Bu Batche, VT vesaire oralarda da bu tokenizer, dematizer falan gibisinden işlemler yaptın mı?
+
+464
+01:45:33,484 --> 01:45:37,204
+Tabii hocam. Yani şeyde tokenize, tokenize...
+
+465
+01:45:37,204 --> 01:45:39,344
+Stop or Demo falan gibisinden şeyler.
+
+466
+01:45:39,984 --> 01:45:42,923
+Tokenization işlemini en başta...
+
+467
+01:45:42,931 --> 01:45:51,711
+Onun kendi tokuna hazırlıkları falan var ya, onun için diyorum, Stock World Elimination falan gibisinden şeyler yaptın da burada da ilk önce.
+
+468
+01:45:51,711 --> 01:45:53,871
+Tabii, sinirsellerde kullanmadın.
+
+469
+01:45:53,991 --> 01:45:54,711
+Tabii diğerlerinde.
+
+470
+01:45:54,911 --> 01:45:56,191
+Diğerlerinde kullanım, tamam.
+
+471
+01:45:56,311 --> 01:45:57,091
+Anladım, tamam.
+
+472
+01:45:57,091 --> 01:45:57,931
+Tamam, peki.
+
+473
+01:46:01,076 --> 01:46:18,936
+BERT yönteminde hem önceki hem sonraki sözcüklere bakarak metin bağlamını anlamaya çalışan bir yöntem. Arasındaki ilişkileri, kelimeler deyemler arasındaki ilişkileri söylemeye çalışıyor. GFT de zaten son dönemde meşhur olan yöntem.
+
+474
+01:46:19,328 --> 01:46:33,008
+Bir cümledeki en olası sonraki kelimeyi tahmin ederek insan benzeri metinler üretmeye çalışıyor. Chatbotlarda, çevirilerde, içerik oluşturmalarda gibi yerlerde kullanılıyor.
+
+475
+01:46:36,008 --> 01:46:39,820
+Model eğitim ve değerlendirme aşamasında da...
+
+476
+01:46:39,956 --> 01:46:58,216
+Bu yöntemler ve bu şekilde kombinasyonları kullanıldı. Bulgular şöyle. Tek model kullanarak en başarılı sonuç BERT modeliyle Reuters haber makalelerini sınıflandırmada elde edildi aslında.
+
+477
+01:46:58,931 --> 01:47:19,391
+Ve hani sonuçlar başarılı. BERT modeli gayet başarılı sonuçlar elde ediyor. Sinirsel olduklarından dolayı. Ama TF, TF, IDF, LDA ve GLOV'da kötü sonuçlar elde etmiyor. Hani genelde %80, %90 civarında bir ekürüzisi var. Standart derivasyonları da yeterince düşük.
+
+478
+01:47:19,923 --> 01:47:37,923
+Kombine modellerde de en başarılı sonuç BERT ve GPT beraber kullanılarak yine Realtors haberlerinde %97 doğrulukla elde edildi. Bu da %96.9, %97 doğrulukla genelde BERT bir başarım.
+
+479
+01:47:39,060 --> 01:47:57,020
+Bu BERT'ın başarısı diye ben düşünüyorum. Bu BERT modeli Reuters haber makaleleriyle çok güzel eşleşti gibi düşünüyorum. GPT'de küçücük bir optimizasyon sağlamış olabilir gibi bir yorumum var.
+
+480
+01:47:57,716 --> 01:48:21,376
+Özet olarak dediğim gibi, BERT ve GPT bütün veri setlerinde en iyi performansı gösterdi. Kombine olarak da bu ikisi beraber en iyi performansı gösterdi. Sonuç olarak da, şimdi özetlemek gerekirse, 3 farklı metin veri seti üzerinde 9 farklı dil modeli kullanıldı. Birkaç işleme tabi tutuldu data.
+
+481
+01:48:22,547 --> 01:48:39,507
+Modellerin performansının veri setine göre farklılık gösterdiğini gözlemledim. Ayrıca özellikleri birleştirmenin de model performansını iyileştirebileceği sonucuna vardım. Benim slide'ım bu şekilde.
+
+482
+01:48:43,988 --> 01:48:52,707
+Teşekkürler [öğrenci]. Evet, devam ediyoruz. [öğrenci], hadi.
+
+483
+01:48:55,667 --> 01:49:01,028
+Merhabalar. Bir saniye. Kameramın ve ekranımı açıyorum.
+
+484
+01:49:08,692 --> 01:49:12,072
+Sen geldin.
+
+485
+01:49:22,579 --> 01:49:29,320
+Hocam, ekran ilk defa paylaştığım için bu bilgisayardan bir zoom'dan girip çıkmam gerekiyor. Bir sonraki sunumu yapayım istiyorsanız.
+
+486
+01:49:29,940 --> 01:49:33,440
+Olur, tamam. Bekleyelim. Sonraki arkadaşa geçelim.
+
+487
+01:49:34,760 --> 01:49:36,020
+[öğrenci].
+
+488
+01:49:37,920 --> 01:49:38,960
+Buradayım hocam.
+
+489
+01:49:39,380 --> 01:49:41,260
+Evet, seni dinliyoruz [öğrenci].
+
+490
+01:49:57,332 --> 01:50:04,332
+Merhabalar herkese, ben [öğrenci]. Şimdi bu ödev kapsamında yaptıklarımı ve sonuçlarımı paylaşacağım sizlerle. Öncelikle...
+
+491
+01:50:04,688 --> 01:50:32,688
+İlk olarak haber kategorileri veri seti kullandım. Burada yaklaşık 50 bin verim vardı ve toplamda 10 sınıfım vardı. Bir diğer veri setim yorum duygularıydı. Burada da YouTube'daki yorumları almıştı ve negatif, nötr ya da pozitif olmak üzere 3 sınıfa ayrılmıştı. Son olarak da sahte haberler veri setim vardı. Burada da bir haberin içeriği vardı ve de sahte ya da gerçek olduğuna dair.
+
+492
+01:50:32,688 --> 01:50:47,427
+Bir label'ı vardı. Genel olarak izlediğim akı şu şekilde. Ön işleme yaptım her üç veri setimede. Ardından anımsal uzayları oluşturdum ve naive Bayes Classifier ile 5'li cross-validation ile yuvalıp ortalamalarını aldım sonuçların.
+
+493
+01:50:48,548 --> 01:50:57,427
+Ön işleme aşamasını biraz hızlı geçebilirim. Daha önce arkadaşlarım bahsetti. Tokenize ettim. Sonra kelimeleri aldım. Stop Word'leri eledim ve kelimeleri köklerine ayırdım.
+
+494
+01:50:58,547 --> 01:51:07,728
+Kullandığım anlamsal uzaylar, ilk ikisi zaten hocanın ödete istedikleri karakter olarak 2'ye 6, TF-IDF ve TF'di.
+
+495
+01:51:08,268 --> 01:51:16,828
+Ardından üçüncü olarak TF-IDF kelimeyi tercih ettim. Burada da engramımı birebir verdim. Yani birer kelime Windows Size olarak verdim.
+
+496
+01:51:17,648 --> 01:51:23,507
+Dördüncü olarak TF üzerine LDA uyguladım. Burada da TF'in birebir kelimelerdi.
+
+497
+01:51:24,207 --> 01:51:34,207
+Sinirsel dilim modellerinde de Öncelikle Word2Vac uyguladım. Burada Windows Size'ımı 2 verdim. Word2Vac de kelimeleri olarak vektörize ediyordu.
+
+498
+01:51:34,207 --> 01:51:45,207
+Son olarak da Doc2Vac kullandım. Doc2Vac de Word2Vac'e çok benziyor aslında model olarak. Ama farklı olarak bütün cümleyi, bütün içeriği bir şey label'lıyor.
+
+499
+01:51:45,207 --> 01:51:47,115
+Kelimelerin özünden.
+
+500
+01:51:48,275 --> 01:51:53,275
+Şimdi sonuçlarımı geçecek olursam haber kategorileri veri setimde...
+
+501
+01:51:54,195 --> 01:52:18,216
+En iyi sonucum aslında TFI DF'den çıktı. Sonuçlar genel olarak açıkçası kötü çıktı. Bunun sebebini çok fazla sınıf olmasına rağmen tekst kısmında short description diye geçiyordu. Yani bütün haberin kendisi onu değil de daha çok kısa bir özeti varmış gibi olduğu için herhalde yetmedi sınıflandırmaya diye düşündüm.
+
+502
+01:52:18,836 --> 01:52:27,236
+O yüzden en iyi sonucu TFDF'de kelimeyle aldım. Ama dediğim gibi çok farklı, diğer yöntemlerle çok büyük bir fark çıkmadı.
+
+503
+01:52:28,696 --> 01:52:34,496
+Yorum duyguları verisletimde biraz daha iyi sonuçlar çıktı ama bu da aynı şekilde çok iyi sonuçlar alamadım.
+
+504
+01:52:34,896 --> 01:52:42,136
+Burada da açıkçası YouTube yorumlarının diğer iki verisletime göre biraz daha gündelik konuşmalar olduğunu düşündüm.
+
+505
+01:52:42,716 --> 01:52:46,256
+Ama en iyi sonucumu Dr.Vec ile aldım %60'la.
+
+506
+01:52:47,796 --> 01:53:05,256
+Son olarak da sahte haberler verisletimde artık daha iyi sonuçlar alabildim. Burada yine çok benzer sonuçlar çıktı. En iyi sonucumu Word2Vac ile aldım ama yani genelde sonuçlar birbirine benzerdi. Sadece TF karakter olanın %50 ile diğerlerine göre daha düşük olduğunu fark ettim.
+
+507
+01:53:15,796 --> 01:53:23,436
+Ama orada karakter değil, kelime için kullanmıştım. O yüzden karakter olarak tek kullanmanın onutsuz etkileyebileceğini düşündüm.
+
+508
+01:53:24,756 --> 01:53:39,435
+Sonra, anlamsal uzayların ikili birleştirmesi kısmında ben de konkreten aid ettim uçuca. Yani iki tane anlamsal uzayımdan 50.000'e mesela 400 bir matrisim varsa sonucunda 50.000'e 800 bir matrisim oluştu.
+
+509
+01:53:39,836 --> 01:53:49,596
+Bunda da tek bir veri seti için üç farklı yöntemi denedim. Yani farklı şeyleri birleştirdim. En iyi sonuçları aldığım sahte haberlerle denedim bunu.
+
+510
+01:53:50,868 --> 01:53:56,948
+Burada birleştirdiğimde en iyi sonucum World2Vac ve TF-IDF'in birleştirilmiş halinde çıktı.
+
+511
+01:53:58,068 --> 01:54:21,568
+Hatta tekli en iyi olan Word2Wack'i de geçti. O yüzden teklileri daha iyi sonuç aldım aslında birleştirdiğimde. Genel olarak aslında sonuçların sinirsel dil modellerinin diğerlerine göre çok farklı bir daha iyiliğini görmedim ben beklediğim aksine çalıştığım veri setlerinde. Ayrıca uçucu eklemenin de olumsuz etkileyeceğini düşünüyordum ama sonuçlarım...
+
+512
+01:54:21,908 --> 01:54:24,228
+O kadar da olumsuz etkilemediğini gösterdi ona.
+
+513
+01:54:24,688 --> 01:54:35,888
+[öğrenci] şeyi soracağım. Mesela bu word to wake temsilini elde ederken kelimelerin koordinatları. Oradan metin temsilini elde ediyorsun.
+
+514
+01:54:36,468 --> 01:54:40,808
+Metin temsil. 300 boyutlu falan mı oluyor mesela? Öyle mi senin kullandığın? Nasıldı?
+
+515
+01:54:40,808 --> 01:54:45,108
+Ben hatta boyutumu kendim verdim. 50.000'e 500 yaptım mesela.
+
+516
+01:54:45,948 --> 01:54:47,568
+Nasıl yani? 50.000'e 500 yaptım.
+
+517
+01:54:48,307 --> 01:54:52,148
+Maximum Feature sayısı verdim. Çünkü çok büyük oluyordu diğer türlü.
+
+518
+01:54:56,020 --> 01:54:59,800
+Maksimum Feature sayısı ben yani, VertiVek'i eğittin mi sen kendin?
+
+519
+01:54:59,900 --> 01:55:00,860
+Evet, evet, evet.
+
+520
+01:55:01,640 --> 01:55:05,180
+VertiVek sıfırdan eğittin, yani hazır bir şey kullanarak hareket etmedin.
+
+521
+01:55:05,360 --> 01:55:06,039
+Evet, evet.
+
+522
+01:55:06,520 --> 01:55:09,579
+Anladım. Orada 500'lük bir şey mi aldın?
+
+523
+01:55:10,020 --> 01:55:10,539
+Evet.
+
+524
+01:55:10,539 --> 01:55:16,200
+Anladım. Yani elindeki metin 500 boyutlu bir vektöre dönüştürüyor.
+
+525
+01:55:16,400 --> 01:55:16,600
+Evet.
+
+526
+01:55:17,020 --> 01:55:22,200
+Peki ondan sonra ne kullanıyorsun? O 500'lük vektöre dönüştürdükten sonra ne yaptın?
+
+527
+01:55:22,623 --> 01:55:24,503
+Sınıflandırma için ne yapıyorsun orada?
+
+528
+01:55:24,503 --> 01:55:26,563
+Ne?
+
+529
+01:55:26,563 --> 01:55:27,563
+Hayır, Bias.
+
+530
+01:55:28,180 --> 01:55:35,739
+Naive Bayes'e verdin. O Naive Bayes'i hiç değiştirmeyi denedin mi? Naive Bayes'in yerine farklı algoritmalar kullanmayı falan?
+
+531
+01:55:36,039 --> 01:55:50,520
+Evet, aslında A&M'de denedim ama çok büyük bir fark görmediğim için şöyle oldu aslında. En başta denediğimde çok büyüktü vektörlerim. Naive Bayes'in en iyi çalışabildi, yani sonuç verebildi. Diğerleri bize öyle sonuç vermedi. O yüzden Naive Bayes'i tercih ettim.
+
+532
+01:55:51,252 --> 01:55:59,952
+Ama denediğim sonrasında küçülttüğümde yine dediğim gibi feature sayısını azalttığımda yani çok büyük bir fark yoktu bir AYN'e göre. O yüzden Nail Bias'te kaldım ama.
+
+533
+01:56:00,172 --> 01:56:04,992
+Anladım, anladım. Peki, peki. Teşekkürler [öğrenci]. Sağol.
+
+534
+01:56:04,992 --> 01:56:05,352
+Teşekkür ederim.
+
+535
+01:56:08,512 --> 01:56:10,212
+[öğrenci], abi sana geçelim mi?
+
+536
+01:56:10,712 --> 01:56:12,152
+Deneyim ben hocam tekrar hemen.
+
+537
+01:56:13,972 --> 01:56:15,172
+Paylaşabiliyorum sanırım şu an.
+
+538
+01:56:17,427 --> 01:56:18,648
+Evet, evet.
+
+539
+01:56:19,067 --> 01:56:20,768
+Görüntümle birlikte tamam mı?
+
+540
+01:56:23,047 --> 01:56:26,627
+Evet, şu an geldi galiba. Başlıyorum ben de o zaman.
+
+541
+01:56:28,268 --> 01:56:34,587
+Çalışmanın amacını zaten arkadaşlarım da anlattı. Ben farklı olarak Random Forest kullandım.
+
+542
+01:56:34,827 --> 01:56:41,987
+Şey olarak, en son klasifikasyon yapmak için. Cümlelerin temsillerini bulmak için de kelime temsillerinin ortalamasını aldım.
+
+543
+01:56:41,987 --> 01:56:44,027
+Seçtiğim modellerin temsillerine bakarak.
+
+544
+01:56:44,756 --> 01:56:51,256
+Ve 5-Fault, işte Cross-Validation'la da sonuçlarımın ortalamasını ve standart satmasını bulup raporladım.
+
+545
+01:56:53,516 --> 01:56:55,796
+Hemen bir sonrakine geçeyim.
+
+546
+01:56:56,936 --> 01:57:01,116
+Kullandığım anlamsal uzay yöntemleri de BERT ve GPT-Key'i kullandım.
+
+547
+01:57:02,136 --> 01:57:06,656
+Ardından Word2VKey'i kullandım. Pre-trained bir şekilde kullandım bu arada. Kendime eğitmedim bunu.
+
+548
+01:57:07,576 --> 01:57:10,216
+Eğitildiği dataset de Google News dataset'iydi.
+
+549
+01:57:11,028 --> 01:57:38,068
+Co-Kunus Matrix ile beraber sonrasında uygulanan Singular Value Decomposition olan bir metodu kullandım. Dördüncü metot olarak. Sonrasında zaten herkesin kullandığı TF ve TF-IDF'i kullandım. Birleştirme olarak da BERT ile WERT2VEC'in vektörlerini konkatenet ettim. Yine GPT2 ve WERT2VEC'i birleştirdim. Sonrasında ise BERT ve GPT2'i konkatenet ettim. Bunları da karşılaştırma tabloma ekledim.
+
+550
+01:57:40,180 --> 01:57:45,980
+Kullandığım veri setlerini tanıtacak olursam, E-mail Spam Detection Dataseti var bir tane.
+
+551
+01:57:45,980 --> 01:57:53,980
+5500 tane örneği var, 2 klası var ve unbalanced bir dataset. Spam olarak %13 spam sadece.
+
+552
+01:57:53,980 --> 01:57:58,980
+İkinci dataset kullandığım Newst Classification Dataset. Bunda da 7 klas var.
+
+553
+01:57:58,980 --> 01:58:06,779
+8900 tane örnek var ve dengeli bir dataset. Buraya grafiğini koymadım ama genel olarak dengeli bir dataset.
+
+554
+01:58:07,956 --> 01:58:19,275
+Üçüncü üssü ise finansal bir duygu tespiti dataset'i. Öyle söyleyeyim. Pozitif yorumlar, negatif yorumlar ve pozitif veya negatif olmayan yorumlar var.
+
+555
+01:58:19,935 --> 01:58:27,015
+Buna da dengesiz denebilir. Yani nötral yorumlar %54'lük bir kısım kapsıyor. Ve 5800 tane örnek var.
+
+556
+01:58:27,815 --> 01:58:31,536
+Kulandığım dataset'ler de bu şekildeydi. Şimdi sonuçlarıma geçecek olursak.
+
+557
+01:58:35,391 --> 01:58:55,631
+Bu şekilde GPT-2 diğer modellerin ve birleştirmelerin üzerine çıktı. Burada Word2Bec yine BERT ve GPT'ye yakın sonuçlar alıyor. Burada diğer geleneksel yöntemlere de baktığımızda işte mesela TF ve IDF'de ben 2-6 arası karakter engramları kullandım. Bu da şu şekilde oluyor.
+
+558
+01:59:00,180 --> 01:59:04,600
+2 ve 6 arasındaki bütün sayılardaki engramları alıyor.
+
+559
+01:59:04,840 --> 01:59:07,800
+Yani burada aslında engram sayısı çok yüksek çıkıyor.
+
+560
+01:59:07,899 --> 01:59:13,539
+O yüzden her klastan 100'er tane örnek alarak denedim ben burada kaynaklarım kısıtlı olduğu için.
+
+561
+01:59:14,199 --> 01:59:16,520
+Toplamda 200 sample oldu yani 2 klas olduğu için.
+
+562
+01:59:16,520 --> 01:59:25,359
+Burada karşılaştırmayı aslında sinirsel dil modelleriyle, sinirsel dil modellerini kendi arasında, bunları kendi arasında karşılaştırmak istiyorum.
+
+563
+01:59:25,844 --> 01:59:36,663
+Burada yapacağım karşılaştırmada vektör birleştirmelerine bakacak olursak, başarılar düşmemiş. Aksine mesela burada Bert'in başarısı yükselmiş.
+
+564
+01:59:36,804 --> 01:59:45,384
+Word2Vac ile birleştirdiğimizde veya yine aynı şekilde Bert'i GPT2 ile birleştirdiğimizde kendi bireysel başarısına göre yükselmiş.
+
+565
+01:59:45,792 --> 01:59:53,752
+TF ve TF-IDF'e bakacak olursak da burada döküman bilgisinin eklenmesi, TF algoritmasına %1'lik bir artış sağlamış.
+
+566
+01:59:54,431 --> 02:00:06,872
+Bu dataset hakkında şey söyleyebilirim, dengesiz bir dataset olduğu için çoğu model muhtemelen spam olmayan mail yönünde temsiller yapacak.
+
+567
+02:00:11,391 --> 02:00:27,492
+Prediction almaya çalıştığımda da çoğu denememe spam olmayan mail diyordu. O yüzden buradaki sayıların hepsi yüksek bantta yığılma gerçekleştirdiği için çok karşılaştırmanın da güvenilir olmadığını düşünüyorum bu veri setinde.
+
+568
+02:00:28,712 --> 02:00:34,971
+Burada söylemeyi unuttuğum bir şey var mı diye bakayım. En iyi temsil CPT2 ile elde ediliyor. Bunu söylemiştim.
+
+569
+02:00:35,380 --> 02:00:48,800
+TFI-DF ile ilgili söylemem gerekeni söyledim. Geleneksel yöntemler de dediğim gibi derin öğrenme yöntemlerine, temsillerine yaklaştı. Burada da işte aşırı öğrenme görüldüğü için diye yorumladım ben. Random Forest kısmında.
+
+570
+02:00:50,539 --> 02:00:53,360
+Bir diğer datasetim Nives Classification dataset'ti.
+
+571
+02:00:53,908 --> 02:01:20,228
+Burada Word2Vec bireysel olarak baktığımda BERT ve GPT2'yi geçmiş görünüyor. Bunun sebebi de az önce başında söylemiştim sunumun. Word2Vec Google News dataset ile eğitilmiş demiştim. Burada da kullandığım şey bir haber dataset'i olduğu için diğerlerinden daha iyi temsil ettiğini düşünüyorum. BERT ve GPT'den daha iyi temsil ettiğini düşünüyorum cümlelerimi ve haberlerimi. O yüzden zaten başarı olarak da diğerlerinin üstüne çıkmış durumda.
+
+572
+02:01:20,916 --> 02:01:29,695
+Yine birleştirmelere bakacak olursak da, Word2Vac'in yer aldığı birleştirmeler diğerlerinden daha yüksek diyemiyorum sanırım.
+
+573
+02:01:30,235 --> 02:01:39,275
+Word ve Word2Vac altında kalmış bunun. Ama GPT-2 ile Word2Vac'in birleştirilmesi GPT-2'nin üzerine çıkmış.
+
+574
+02:01:39,735 --> 02:01:45,876
+En başarılı burada Word2Vac, bunun sebebi de muhtemelen free trained olduğu dataset'in ve bağlamın haber olması.
+
+575
+02:01:46,547 --> 02:02:12,387
+Burada yine dediğim gibi 1400 sample için Co-Opionos kullandım ve işte TF-IDF ile yine her sınıftan 100'er tane, 7 sınıf vardı. 700 sample ile denedim. Karşılaştığım sorun yine sistem kaynaklarıydı. Burada 2 ve 6 arasındaki bütün karakter engramlarını alınca çok fazla engram çıkıyor. Burada tek sayı mesela sadece 3'lü engramları da alabilirdim. Ben böyle bir şey denemek istedim. Sample sayısını azalttım.
+
+576
+02:02:13,011 --> 02:02:19,731
+Burada yine yapacağım yorum olarak, doküman bilgisi eklendiğinde, TF'den IDF'e geçildiğinde %10'luk bir başarı artışı var.
+
+577
+02:02:20,291 --> 02:02:22,531
+Yorum olarak bunları söyleyebilirim.
+
+578
+02:02:24,331 --> 02:02:27,211
+Burada unuttuğum bir yorum var mı diye bakayım hemen.
+
+579
+02:02:29,951 --> 02:02:32,891
+Sanırım hepsinden bahsettim. Bir sonraki dataset'e geçeyim.
+
+580
+02:02:33,811 --> 02:02:36,991
+Burada da Financial Sentiment Analiz dataset'inin sonuçlarını görüyoruz.
+
+581
+02:02:37,747 --> 02:02:56,507
+Word2Wake, GPT-2 ve Bert'i geçmiş durumda ama başarıları yakın bu sefer. GPT-2 yine Bert'i aşmış. Diğer iki dataset'te de bu arada dikkatimi çeken şey, GPT-2 Bert'in başarısını aşmıştı genel olarak. Yine az sample ile, 1500er sample ile denediğim, aldığım sonuçlar var burada da.
+
+582
+02:03:03,764 --> 02:03:25,024
+Bu Co-Currence Matrix'in şey, random forest'a verdiğim future sayısı çok fazla oluyordu. Çünkü window size'm 2 idi burada benim. Ondan dolayı Matrix çok büyük çıkıyordu ve muhtemelen de sparse bir Matrix çıkıyordu. O yüzden çok iyi temsil edemedim. Ben burada içine girip şey de bakamadım. Ayrıntılı da inceleyemedim.
+
+583
+02:03:25,524 --> 02:03:32,243
+Ama galiba temsillerim şey olduğu için, yetersiz olduğu için ve spars olduğu için burada başarılar genel olarak düşük çıktı.
+
+584
+02:03:32,703 --> 02:03:35,163
+3 dataset'te de, Co-Occionist Matrix'te.
+
+585
+02:03:35,572 --> 02:03:53,311
+TFI-DF'te de yine doküman bilgisi eklendiğinde %2'lik bir artışı burada görebiliyoruz. Burada genel tabloya baktığımızda da en yüksek sonuç GPT-2 ile Word2Vec'in birleştirilmesiyle elde ediliyor. Bireysel başarılar da zaten söylemiştim. En yüksek başarı Word2Vec tarafından elde edilmiş.
+
+586
+02:03:55,551 --> 02:03:58,891
+Burada da yine söylemeyi unuttuğum bir şey var mı diye bir kontrol edeyim.
+
+587
+02:04:01,427 --> 02:04:12,427
+Sonuç olarak da, doküman bilgisinin eklenmesi, TF yöntemini geliştiriyor. TF-IDF'den daha iyi oluyor.
+
+588
+02:04:12,427 --> 02:04:18,427
+Word2Wack, yine ATLD bağlama yakın olan veri setlerinde daha başarılı oluyor. Haberdata setleri gibi.
+
+589
+02:04:18,427 --> 02:04:26,427
+GPT2'de kullanım 3 veri setinde de BERT modelini geçmiş. Yani BERT modelinin temsillerinden daha iyi temsiller üretmiş.
+
+590
+02:04:27,444 --> 02:04:38,304
+Sistem kaynakları sebebiyle bunu da belirtmiştim. TF-IDF yöntemlerini kullanırken sample sayısını azaltma yoluna gittim. 2 ve 6 arasındaki bütün engramları kullandığım için.
+
+591
+02:04:38,804 --> 02:04:48,924
+Genel bir yorum yapacak olursam da sınıfların dengeli olduğu ve başarıların yüksek sınırlarda yığılmadığı deneyler temsiller arasındaki farkları daha anlaşılır biçimde ortaya koymuş.
+
+592
+02:04:49,044 --> 02:04:54,764
+Yani hepsi %98-96 civarı olduğunda başarıların aradaki fark çok anlaşılır olmuyor.
+
+593
+02:04:55,167 --> 02:04:59,027
+Ama ikinci veri setinde göstermiştim. Oradaki farklar daha anlaşılırdı.
+
+594
+02:05:01,107 --> 02:05:02,567
+Benim sunum bu kadardı.
+
+595
+02:05:04,487 --> 02:05:06,867
+Yorumunuz varsa veya sorunuz varsa alabilirim.
+
+596
+02:05:07,827 --> 02:05:15,667
+Teşekkürler [öğrenci]. Burada bu şeylerde başarı değerlerini kullanırken Ecuris'i mi kullanıyor yoksa F1 Score mu kullandın?
+
+597
+02:05:16,340 --> 02:05:19,320
+Ekörist'i kullandım ama F1 daha doğru oldu.
+
+598
+02:05:19,320 --> 02:05:28,740
+F1 kullansam belki bu demem bahsettiğimden dengesiz veri kümeleri için daha dengeli sonuçlar bulabilirdim belki.
+
+599
+02:05:28,820 --> 02:05:29,440
+Evet, evet.
+
+600
+02:05:29,440 --> 02:05:34,520
+Öncelikle söyleyeyim. O hakkında olursa iyi olur. Peki teşekkürler [öğrenci].
+
+601
+02:05:34,920 --> 02:05:38,340
+Ben de teşekkür ederim. Hemen kapatmaya çalışıyorum bir saniye.
+
+602
+02:05:38,340 --> 02:05:40,340
+Tamam. [öğrenci]'in...
+
+603
+02:05:44,115 --> 02:05:46,756
+Merhaba.
+
+604
+02:05:57,747 --> 02:06:18,967
+Şu an geldi mekancama. Evet, geldi. Tamamdır. Ben bu çalışma için üç ayrı veri seti kullandım. Bunlardan bir tanesi Rotten Tomatoes diye bir veri seti. Burada olumlu ve olumluslu umuduklarıyla ilgili bir değerlendirme yapılıyor kullanıcılar tarafından. Böyle bir veri.
+
+605
+02:06:19,956 --> 02:06:42,655
+İkinci verimde de finansal haberlerin sınıflandırması üzerine. Hani buradaki haberlerin durumuyla ilgili bir sınıflandırma var. Son olarak da duygusal bir sınıflandırmanın yapıldığı, yani aynı şekilde Twitter'dan almış bir veri olması lazım bununla. Bu şekilde veri hükümelerini kullandım.
+
+606
+02:06:43,220 --> 02:06:55,260
+Çalışmada kullandığım modeller ise Distil GPT-2 ve Distil Ber. Bunları bu şekilde kullandım çünkü eğitmek çok fazla sürecek için biraz daha hafif versiyonuna ihtiyacım vardı.
+
+607
+02:06:56,599 --> 02:07:00,880
+Adımdan da Glover World2Wake kullandım. Tf ve Tf-idf olarak.
+
+608
+02:07:01,979 --> 02:07:03,019
+Eğitmek derken?
+
+609
+02:07:04,699 --> 02:07:06,923
+Retrain alıp...
+
+610
+02:07:06,931 --> 02:07:15,791
+Funtune mu ettin üzerinde? Anladım. Vektörleri alıp RGB sınıflandırıcıya vermedin. Direkt üstlerine Funtune ederek hareket ettin.
+
+611
+02:07:15,791 --> 02:07:23,971
+Evet, bununla özellikle Red Train'in Elbicim modeli alıp, eğitip sonuçları aldım. Aşağıdakiler farklı olarak böyle yaptım.
+
+612
+02:07:23,971 --> 02:07:25,192
+Tamam, peki.
+
+613
+02:07:25,427 --> 02:07:37,828
+Yaptığım çalışmada da, daha önce arkadaşlarım söylediği gibi de, benim de tahmin ettiğim gibi de yapay sinir ağ modelleri daha iyi bir sonuç verdi hepsi için.
+
+614
+02:07:37,828 --> 02:07:46,328
+Yalnız benim GPT-2'den daha büyük bir beklentim vardı galiba. Ben ibadetten daha yüksek olacağını düşünüyordum en azından biraz belki.
+
+615
+02:07:46,328 --> 02:07:52,927
+Benim eğitme parametrelerimle alaka olabilir. Çok fazla da eğitmedim açıkçası bu GPT-2'li yapı artı.
+
+616
+02:07:53,203 --> 02:08:12,684
+Onun dışında Tf ve Tf-IDF'in de açıkçası daha başarısız olacağını düşünüyordum. En azından GPT-2'ye göre bakınca. Bunların da hani eğitim süresinin ya da hazırlanma süresinin çok kısa olmasına karakter olarak kötü sonuçlar verdiğini düşünmüyorum açıkçası.
+
+617
+02:08:14,868 --> 02:08:24,868
+Bunun dışında beklemediğim kısımlardan biri de aslında şunlardı. Yani TF ve TF-IDF'in yüksek olması ve World2Wake ve Glove'in...
+
+618
+02:08:25,203 --> 02:08:48,703
+Onlara yakın olması açıkçası beklemediğim sonuçlardı. Ama bunlar da biraz da şunundan kaynaklı olduğunu düşünüyorum. Yukarıda veride, bilmiyorum gördünüz mü bilmiyorum ama tweet kaynaklı veriler olduğu için biraz daha tekster, karakterler farklı, farklı kullanılan sözcükler. Yani çok böyle formlu bir şey. O yüzden olduğunu düşünüyorum. O tweetlerin içeriğini çok fazla yakalayamadığını düşünüyorum bu.
+
+619
+02:08:54,484 --> 02:09:08,423
+Bir de birleştirme olarak şöyle bir şey yaptım. Glove ve World2Vac'i 100 dimension olarak alıp, bu arada Glove hazırdı, World2Vac'i ben 100 dimension olarak ayarladım.
+
+620
+02:09:10,804 --> 02:09:19,764
+Bunları ilk olarak 200 dimension haline getirdim. Sonra bunları toplayıp 100 dimension yaptım. Bir de ortalamalarını alıp sonuçlarına bakmak istedim.
+
+621
+02:09:20,819 --> 02:09:26,319
+Bundan daha güzel karşılaştırılmak için önceki sonuçlar olarak buraya yana koydum. Bu aslında yeni bir şey değil.
+
+622
+02:09:27,859 --> 02:09:45,260
+Ben Konkat'ın çok iyi sonuç vereceğini beklemiyordum. Çünkü hem boyut artmasından kaynaklı hem de anlamları bozabilme ihtimalini düşündüğüm için açıkçası biraz daha düşük bir sonuç bekliyordum.
+
+623
+02:09:45,260 --> 02:09:46,859
+Ama beni şaşırtlar açıkçası.
+
+624
+02:09:48,500 --> 02:10:08,019
+Ama en stabil sonucu veren, yani Birdweck ve Glove'un aralığında olan ortalamaların alınmasıydı. Ben daha sonra bu tarz bir çalışma yapacak olursam, birden fazla anlamsal uzayı bu şekilde ortalamasına alarak kullanırım diye düşünüyorum.
+
+625
+02:10:08,479 --> 02:10:09,840
+Anladım, anladım.
+
+626
+02:10:10,340 --> 02:10:11,559
+Hem sunum da bu kadar.
+
+627
+02:10:12,260 --> 02:10:14,559
+Teşekkürler [öğrenci]'in. Sağ ol.
+
+628
+02:10:17,171 --> 02:10:19,971
+Evet, [öğrenci].
+
+629
+02:10:23,859 --> 02:10:34,539
+Merhaba hocam. Merhaba. Şöyle ekten paylaşayım hemen. Şimdi süre var. Bir 45 dakika kadar bir süremiz var.
+
+630
+02:10:35,060 --> 02:10:51,960
+Önümüzde de baya bir arkadaş var hala. Dolayısıyla birazcık hızlı hızlı ilerlemenizi istiyorum. Şöyle 2-3 dakikalık, 2-3 dakikalık asıl kritik noktaları söyleyip ilerlersek çok da iyi olur. Tamam mı?
+
+631
+02:10:51,960 --> 02:10:52,560
+Tamam.
+
+632
+02:10:53,216 --> 02:11:05,336
+Burada ben 3 farklı veri seti kullandım. Bir tanesi 5 farklı haber sitesinden kendi crawl ettiğim bir veri setiydi bu. Diğeri duygu analizi.
+
+633
+02:11:07,572 --> 02:11:20,932
+Tweetler alınmış, beş farklı duyguya bölünmüş. Diğeri de ben yine sınıflandırma tabanlı olacağı için farklılık olsun diye token type classification yapacak bir varlık ismi tanıma taskı tercih ettim.
+
+634
+02:11:22,387 --> 02:11:39,247
+Bu ilk kullandığım veri seti. Bu düzgün bir veri set aslında. Ben kendim toplamıştım bunu. 58 bin datadan oluşuyor. Benim Kaggle sayfamda var. Eğer ihtiyacı olan varsa da ben sunuma yine koydum ama [öğrenci] diye Kaggle'dan girip indirebilir eğer çalışan arkadaş varsa bu konuda.
+
+635
+02:11:40,247 --> 02:11:44,228
+Onun dışında hocam dağılımları şu şekilde.
+
+636
+02:11:45,908 --> 02:12:01,548
+O veri setinin düzgün bir dağılımı var. Diğer veri seti bu 4000 datadan oluşuyor. Daha küçük. Ben 100 tanesini test içine ayırdım. Bu da 5 farklı sınıfla etiketlenmiş. Duygu tespiti yapmaya çalışıyor. Bu da Kaggle'da var.
+
+637
+02:12:03,208 --> 02:12:09,728
+Kullandığım kelime vektörizasyonu metotları TF-IDF'i denedim ben. Funnet Representation denedim.
+
+638
+02:12:11,347 --> 02:12:20,947
+Word to Index metodunu denedim. Bir de sinirsel dil modellerinde Contextual Word Embedding yapan Bert ve Roberta'yı kullandım.
+
+639
+02:12:23,923 --> 02:12:45,503
+Şimdi burada ilk olarak ilk veri setinde TF-IDF ile yaptığım vektörizasyonu yaptıktan sonra verdiğim model mimarisi şu şekilde. Böyle bir fully connected layer network'e veriyorum. Basit bir şey, basit bir yapısı var zaten. Burada 92'ye yakın accuracy aldım.
+
+640
+02:12:46,323 --> 02:13:03,703
+Aynı şekilde daha aynı veri setini, yani bu 58 binlik datayı, 1-Etrep presentation'dan geçirip, o şekilde vektörize edip bir CNN yapısına verdim. Model mimarisi sol tarafta, accuracy 89. Sonuçları hızlı hızlı geçeyim hocam. En son yorumlayacağım.
+
+641
+02:13:04,163 --> 02:13:12,943
+İkinci veri seti, duygu sınıflandırmayı ilk mimarda TF-ID ve Fully Connected Layer'dan geçirdikten sonra 65 aldım.
+
+642
+02:13:13,492 --> 02:13:33,592
+CNN'de, OneEd ve CNN'i ikinci veri setine uyguladığımda da %86'ya yakın bir ekürisi geldi. Burada ikisinin farklı olması aslında yakın sonuçlar verecek. Biraz veri setlerinin boyutlarından dolayı küçük olması, ikinci veri setinin küçük olması sonuçları düşürdü.
+
+643
+02:13:39,091 --> 02:14:04,572
+İmputta kelimeyle karşılaşma frekansına göre işlem yaparken, diğeri de karşılaşıp karşılaşmamaya göre yapıyor OneEd. Dolayısıyla aslında ben şeyi de denedim, yani TFI, DF'i kullanıp onu CNN'e vereyim şeklinde ama onlarda sonuç elde edemedim. Yani genelde kaç klas varsa onun yüze bölümü kadarlık bir ekürisi oluyor. Yani tren çıkmıyor maalesef.
+
+644
+02:14:05,492 --> 02:14:18,711
+Yorumlarım burada bu şekilde. Daha sonra aslında daha çok burada ben deneme yaptım. Sinirsel dil modellerinde. Burada da her üç farklı veri setini toplamda dört farklı mimarda denedim.
+
+645
+02:14:19,087 --> 02:14:43,667
+Yani Bert'i bunları Base modeli kullanıyorum. İki layer'lık bir Fully Connected Classifier koyuyorum. Bir de bunun yanında farklı bir deneme olarak çift yönlü LSTM bağlıyorum. Bunu aslında üçüncü veri setin daha çok sonuçlarını görmek için yaptım ama haber sınıflandırma ve duygu durumu sınıflandırmaya da bunu ekledim. Bir de diğer üçüncü ve dördüncü denemede de Layer Freezing yapıyorum. Yani Base tarafı train etmiyorum.
+
+646
+02:14:44,115 --> 02:15:10,255
+Farklı bir deneme olması için yaptım bunu. Onu olduğu gibi kullanıyorum. Train süresini kısaltıyor baya. Aynı şekilde iki farklı mimari. Şu şekilde burada şeyi var, hızlıca yapılabiliyor zaten. Hepsi için ayrı ayrı kod yazmaya gerek kalmıyor. Roberta ile Bert'in farkı da. Ben ilk defa kullandım. Token Type ID diye bir parametre almıyor. Bert bunu alıyor. Dolayısıyla aynı kodu, iki farklı modeli de.
+
+647
+02:15:12,020 --> 02:15:23,380
+Fintune etmek için kullanabiliyoruz. Basitçe. Aldığım Eccuris'ler Berthe çift yönle LSTM bağlayınca 96.21 şu şekilde tablodan görülebiliyor.
+
+648
+02:15:24,660 --> 02:15:33,060
+Frizz versiyonlarda bir Eccuris'i düşüşü var ve sonda sadece fully connected bağlamak bize sonuç getirmiyor.
+
+649
+02:15:34,060 --> 02:15:35,020
+Dolayısıyla...
+
+650
+02:15:35,283 --> 02:15:59,443
+Buradaki diğer ikinci veri setinde de aslında aynı şey var. Yani burada hatta 77'ye düşüyor. Burada 99'dan 77'ye düşme sebebi veri sayısının çok az sayıda olması. Bir de 99 yani daha kapsamlı veri setinde 96 gelip 4000 datalık veri setinde 99 gelmesinin sebebi de aslında biraz burası domainle alakalı.
+
+651
+02:16:03,283 --> 02:16:16,183
+Daha başarılı. Ama alttaki çok ufak olduğu için zaten 100 tane test satası var. Bunlar validation eküristleri. Yani %10 ayrılıyor. Yaklaşık 390-380 datayla test edilmiş.
+
+652
+02:16:16,783 --> 02:16:24,263
+Ama halbuki dışarıdan bir şeyle denesek, dışarıdan ayrı bir verisiyetini alıp getirsek muhtemelen 99 vermez diye düşünüyorum burası.
+
+653
+02:16:25,460 --> 02:16:46,819
+Üçüncüde varlık ismi tanımada da yine ben aynı mimarileri denedim. Burada LSTM eklemenin Free Connected Classifier'dan fark oluşturduğunu görüyoruz. Bu zaten beklenen bir şey çünkü token type classification'da bu token token işlememizi sağladığı için LSTM ve çift yönlü olarak çalıştığı için sonuçları bariz iyileştiriyor.
+
+654
+02:16:47,347 --> 02:17:04,688
+Freezedilmiş versiyonu da aslında daha iyi. Şu LSM kalmış ama bu Fully Connected olacak. Yanlış olmuş orası. 89'dan burada da 90.3'e çıkarmış. Bir de burada farklı bir yapı olması açısından bu bana biraz aslında çalışmaz gibi geliyordu ama.
+
+655
+02:17:05,103 --> 02:17:12,304
+Normal şunların haricinde bir de word index metodunu kullanıp, yani kelimelerden bir sözlük oluşturuyor.
+
+656
+02:17:12,304 --> 02:17:18,304
+Her kelimeye, bizim input'umuzdaki kelimelere bir numara atıyor ve vektörizasyonu o şekilde yapıyor.
+
+657
+02:17:18,304 --> 02:17:22,703
+Ve üzerinde by LSTM ve CRF layer'ı koydum burada.
+
+658
+02:17:22,703 --> 02:17:25,304
+Çünkü baktığım yerde bu şekilde şey yapıyordu.
+
+659
+02:17:25,304 --> 02:17:29,903
+CRF'in zaten LSTM'in üzerinde sonuçları iyileştirdiğini okumuştum daha önce.
+
+660
+02:17:30,128 --> 02:17:34,988
+Bunu denediğimde de ben çok daha düşük gelir derken aslında 94 geldi ekürisi.
+
+661
+02:17:35,448 --> 02:17:38,328
+Tuhaf bir şekilde. O biraz şaşırttı beni aslında.
+
+662
+02:17:40,468 --> 02:17:43,868
+Devam edeyim hocam. Zaten yorum kısmına geldim.
+
+663
+02:17:46,932 --> 02:18:02,912
+Roberta ve Bert tarafında burada zaten az önce söylediğim bu iki farklı Platinum modeli kullandım. Bu arada Roberta'nın sonuçlarını yazmadım ama çok yakın Bert'ten 0-5 puan gibi ortalamada daha az ekürüsü veriyor.
+
+664
+02:18:03,379 --> 02:18:16,779
+Robert aslında daha büyük bir model, daha fazla parametre içeriyor ama bu İngilizce versiyonları için geçerli. Bizim kullandığımız versiyon Türkçe olduğu için, benim kullandığım orada biraz daha pre-trainingin nasıl yapıldığı sonuçları değiştirmiş olabilir.
+
+665
+02:18:17,620 --> 02:18:32,700
+Berth'in daha başarılı gelme sebebi muhtemelen Türk İş Berth'in daha başarılı olması. Bir de bu model Uncase. Yani büyük küçük harf duyarlılığı yok bunda. Berth'tekinde var ve veri setlerim hep büyük küçük harfler içerdiği için o da etkili olmuş olabilir.
+
+666
+02:18:34,355 --> 02:18:58,815
+Geleneksel yöntemlerle karşılaştırdığımda, tabii ki sinirsel modellerin contextual embedding yaptığı için, bir tarafta sadece kelimeyle karşılaşıp karşılaşmamasına veya kaç kere karşılaştığına bakarken buna göre veklo özer son yaparken, diğerleri kelimenin anlamına göre her verdiğim şeyde aynı kelimeyi versem bile farklı vektörler çıkartabiliyor bağlamsal bir embedding yaptığı için.
+
+667
+02:19:01,811 --> 02:19:16,932
+Roberta daha fazla parametre içeriyor demiştim. Her ikisi de 768'lik çıkarıyor kelime vektörlerini. Ben bu sebeple sinirsel modellerin kullanılmasının daha başarılı sonuçlar elde edeceğini düşünüyorum. Bir de son olarak da Layer Freeze'in analizini koydum buraya.
+
+668
+02:19:17,427 --> 02:19:33,227
+Train'i çok hızlandırıyor. Çünkü işte backpropagasyonunda base modeli update etmiyoruz. Bu hızlıca denemeler için yapmak, yapmak için şey olabilir, mantıklı bir yöntem olabilir. Hani hangi mimari bizim için daha mantıklı hemen freeze edip bir hızlıca deneyelim gibisinden.
+
+669
+02:19:45,427 --> 02:19:51,468
+Her seferinde o layer'lardan geçirmek yerine bir LSTM'den 8 MB'lik bir şeyden, modellen geçirebiliyoruz.
+
+670
+02:19:52,528 --> 02:19:57,468
+Dezavantajı da şeyin şey olması, accuracy'nin tabii daha düşük değerler alması.
+
+671
+02:19:57,547 --> 02:20:01,847
+Orada bir trade-off var. Artık taskımıza göre burada doğru kararı verebiliriz.
+
+672
+02:20:02,407 --> 02:20:03,827
+Bu şekilde hocam bütün yorumları.
+
+673
+02:20:07,427 --> 02:20:08,927
+Mikrofonumuz kapalı galiba.
+
+674
+02:20:11,028 --> 02:20:14,247
+Sağ ol. Evet, teşekkürler [öğrenci]. Sağ ol.
+
+675
+02:20:17,387 --> 02:20:22,028
+Devam ediyoruz. [öğrenci].
+
+676
+02:20:24,268 --> 02:20:26,688
+Bir dakika, o yok herhalde. Değil mi?
+
+677
+02:20:27,907 --> 02:20:29,847
+Sesimi konuşamadım ben. Tamam, pardon.
+
+678
+02:20:31,968 --> 02:20:34,567
+[öğrenci].
+
+679
+02:20:37,043 --> 02:20:43,004
+Ya da [öğrenci] [öğrenci]. Tamam, şey yapamadım. Burada mı?
+
+680
+02:20:49,075 --> 02:20:57,235
+Sıkıntılara bakıyorum. Burada gözüküyor ama. [öğrenci], [öğrenci], [öğrenci], sesim geliyor mu sana?
+
+681
+02:21:01,907 --> 02:21:07,907
+[öğrenci] diyorum ama, [öğrenci] [öğrenci]. Ulan.
+
+682
+02:21:12,180 --> 02:21:33,299
+Bizi duymuyorsun herhalde. Neyse. Duyarsan yazarsın. Peki, [öğrenci]. Evet hocam. Sendeyiz [öğrenci].
+
+683
+02:21:47,476 --> 02:21:48,576
+Ekranımı görüyor musunuz?
+
+684
+02:21:48,976 --> 02:21:49,456
+Görüyorum.
+
+685
+02:21:53,896 --> 02:21:57,736
+Öncelikle kullandığım algoritmalar, ilk olarak Festex'i kullandım.
+
+686
+02:21:59,156 --> 02:22:07,416
+Burada önceden eğitilmiş bir veri setin üzerine tüyün ederek bir sonuç elde etmeyi hedefledim.
+
+687
+02:22:07,416 --> 02:22:10,096
+Daha sonrasında BERT algoritmasını kullandım.
+
+688
+02:22:11,379 --> 02:22:14,500
+Burayı hızlı geçebiliriz istersen.
+
+689
+02:22:15,139 --> 02:22:17,539
+LSA, LSA, TF IDF.
+
+690
+02:22:18,579 --> 02:22:25,680
+Kullandığım versetleri ise ilk olarak spam SMS'leri test eden bir binary classification versetim vardı.
+
+691
+02:22:26,739 --> 02:22:45,419
+E-ticaret'teki ürün açıklamalarına bakarak ürünün kitap mı yoksa bir ev araç gelişleri olduğunu klasifiye eden bir verseti. Bir de IMDB film açıklamalarından filmin türünü belirleyen bir versetiydi.
+
+692
+02:22:46,040 --> 02:22:54,520
+Spam SMS'lere baktığımız zaman burada en iyi sonucu Fastex'te aldık. Bununla ilgili yorumları en sonunda zaten belirteceğim.
+
+693
+02:22:54,739 --> 02:23:03,659
+Ama hızlıca söyleyecek olursak, burada Fastex'e almamızın sebebi en iyi sonucu almışsak da önceden eğitilmiş bir model olmasıydı.
+
+694
+02:23:04,219 --> 02:23:10,659
+Diğerlerinde bu kadar kötü olmasının sebebi ise bu spam SMS verisletinin çok kısıtlı ve yeterince düzgün...
+
+695
+02:23:13,012 --> 02:23:41,012
+Dağılımlı bir veri sete olmamasından kaynaklı olduğunu düşünüyorum. Bunu tabii pre-processing aşamasına. Bu verilerin bütün verilerde öncelikli olarak verileri bir takım işlemlerden geçirdim. Neydi bunlar? Bütün kelimeleri küçük harfa çevirdim. Numerik karakterleri çıkarttım. İmla karakterlerini çıkarttım. Ve aynı zamanda stop word denilen bazı bizim için çok anlamlı.
+
+696
+02:23:41,012 --> 02:23:44,072
+İfade etmeyen kelimeleri çıkarttım.
+
+697
+02:23:44,932 --> 02:23:47,072
+Yine işte...
+
+698
+02:23:47,072 --> 02:23:49,752
+Peki, Berth'e verirken de bu işleri yaptın mı?
+
+699
+02:23:50,152 --> 02:23:52,231
+Evet, hepsinde standart olarak bunu yaptım.
+
+700
+02:23:52,231 --> 02:23:53,652
+Oraya Berth'e boğulmuşsun o zaman.
+
+701
+02:23:55,332 --> 02:23:56,311
+Olabilir, evet.
+
+702
+02:23:56,832 --> 02:23:58,691
+Evet, zaten belli oluyor burada.
+
+703
+02:23:59,219 --> 02:24:16,000
+Aynen. Ama diğerlerinde de yaptım bunu. Ama gerçi diğerlerinde de yine... Yok, Bert'in kendi tokenizer'ı var ya, o tarz bir şey yapmaman gerekiyor. Yok, diğer verif etlerinde de yaptım. Hepsinde standart olarak düşük mü çıktı bilmiyorum tabii de. Peki tamam, devam edelim.
+
+704
+02:24:16,000 --> 02:24:20,680
+Anladı biraz daha iyi, evet. Devam edelim. Evet, tamam, devam edelim.
+
+705
+02:24:21,332 --> 02:24:41,272
+Burada yine Festex daha iyi ama burada Berth'le de yine %95'leri gördüğümüz sonuçlar oldu. Diğer algoritmaya baktığımızda ise, liseslik algoritmalarda yine sonuçlarımız biraz daha düşük. Bununla ilgili de yorumu en sonunda belirteceğim.
+
+706
+02:24:42,000 --> 02:25:08,200
+IMDB'ye baktığımızda burada yine FastEx'imiz iyi. BERT ve diğerleri aşağı yukarı yakın. Burada dediğiniz gibi o veri setinin içerisindeki numerik rakamların çıkartılması veya bazı o stop word'lerin çıkartılması BERT bir direkçional olduğu için hem önündeki hem arkasındaki kelimelere baktığı için orada biraz anlamsal bozulmalar.
+
+707
+02:25:09,363 --> 02:25:24,484
+Olmuş olma ihtimali var. Sonuç olarak FESTE algörması bütün veri setlerinde diğer tüm algoritmalara göre daha iyi sonuç verdi. Bunun sebebi önceden eğitilmiş olduğu için hem hızlı sonuç verdi hem de yüksek doğrulukta sonuçlar verdi.
+
+708
+02:25:25,172 --> 02:25:38,852
+Spam SMS veri setinde diğer veri setlerine göre çok daha düşük sonuçlar almamızın sebebi daha küçük bir veri seti olması ve verinin düzgün dağılıma sahip olmaması olarak yorumladım.
+
+709
+02:25:38,852 --> 02:25:47,211
+İsa ise algoritmalara baktığımızda ise doğruluk oranının yüksek olması için veri setinin yeterince büyük olması gerekiyor. Çok fazla.
+
+710
+02:25:49,139 --> 02:26:03,139
+Veri verdiğimiz zaman, burada kendim denerken veri setlerini küçültüp büyütmeyi de denedim kendim. Deneysel olarak. Bu küçültüp büyüttüğümüz zaman istersel veri setlerinin başarı oranı biraz daha...
+
+711
+02:26:03,636 --> 02:26:26,855
+Artabiliyor, arttırdığımız zaman artabiliyor. Çünkü elde edilen veri, çıkartılan istatistel veriler arttığı için daha yüksek doğruluklara sahip olabiliyoruz. Buradaki istatistel verilerin hepsinde, sonuçlarda görmüşüzdür, her turda aynı sonuçları veya çok yeni sonuçları elde ettik. Bunun bize sağlamış olduğu avantaj ne? Stabilite.
+
+712
+02:26:31,636 --> 02:26:56,396
+10 kez ettiğimizde aynı sonucu alacağımız değil mi? Bu arada SSB resetlerinde lojistik revyasyon kullandım. Belki ondan da biraz düşük olmuş olabilir. Multi-class olan IMDB idi. IMDB için multinominal lojistik revyasyon kullandım. Diğerleri için normal standart lojistik revyasyon kullandım.
+
+713
+02:26:57,040 --> 02:27:16,240
+Burada istatistel olanlar istatistel oldukları için belli bir başlangıç değerleri veya hata oranları olmadığı için bir kere eğitildiğinde veya on kere eğitildiğinde sonuç değişmiyor.
+
+714
+02:27:16,240 --> 02:27:18,659
+Ancak bu da bize stabilite sağlıyor.
+
+715
+02:27:19,316 --> 02:27:37,316
+Ancak sinisal algoritmalar belli bir başlangıç değeriyle başlıyor ve daha sonrasında bir işte gradiyent temelli bir eğilim sağlıyorlar ve bunların belli bir hata vuranları var. Bunlardan kaynaklı olarak çalıştırılan ortama, çalışma zamanına, kaç kere çalıştığına göre...
+
+716
+02:27:38,175 --> 02:27:40,675
+Elde edilen sonuç değişebiliyor. Doğruluk oranı değişebiliyor.
+
+717
+02:27:41,275 --> 02:27:42,056
+Ancak burada...
+
+718
+02:27:42,056 --> 02:27:47,175
+Şey soracağım sana. Bu modelle birleştirmekle alakalı bir şey yaptın mı?
+
+719
+02:27:47,716 --> 02:27:51,896
+Evet, ona da hemen geleyim. Orada da ama sinirselle birleştirmedim hiç.
+
+720
+02:27:52,556 --> 02:28:02,595
+Hem istatisteler arasında birleştirdim. TF-IDF ile TF-IDF'i birleştirdim. Bir de TF-IDF artı bir de L'dayı ekledim sonuna.
+
+721
+02:28:02,595 --> 02:28:06,175
+Ne oldu? Şey yaptın. Yani onları birleştirme çok...
+
+722
+02:28:06,175 --> 02:28:11,175
+Hiçbir şey yok aslında. Biraz böyle birbirini tamamlayıcı bir şeyleri birleştirmek gerekmez mi?
+
+723
+02:28:11,175 --> 02:28:14,175
+Yani doğru, evet.
+
+724
+02:28:14,175 --> 02:28:21,175
+F-86'ın başarısını ne kadar arttırabilirim diye burada bakın. Mesela F-86'a Berth'i birleştirmek falan mantıklı bir hareket olurdu herhalde.
+
+725
+02:28:21,175 --> 02:28:23,175
+Olabilir, evet.
+
+726
+02:28:23,175 --> 02:28:28,939
+Değil mi? Bu çok şey olmamış sanki. İyi bir tercih olmamış, şöyle söyleyeyim.
+
+727
+02:28:29,268 --> 02:28:35,868
+Evet, doğru. Peki. Teşekkürler. [öğrenci], başka söyleyeceğim bir şey var mı?
+
+728
+02:28:36,868 --> 02:28:42,067
+Yok. Son sinirsel algoritmalarda veri setinin küçük olması veya büyük olması.
+
+729
+02:28:42,167 --> 02:28:48,047
+Küçük veri seti eğer gerçeğe yakın örneklenmiş ise yüksek sonuçlar elde edebiliyoruz.
+
+730
+02:28:48,148 --> 02:28:52,747
+Eserselin aksine. Böyle o kadar. Peki. Teşekkürler [öğrenci].
+
+731
+02:28:57,075 --> 02:28:59,275
+[öğrenci].
+
+732
+02:29:02,415 --> 02:29:08,115
+Hocam, [kişisel bilgi]. Size sonra yazar diye düşünüyorum.
+
+733
+02:29:08,515 --> 02:29:22,235
+Tamam, geçmiş olsun. Bu arada [öğrenci], ses sorunum var hocam demişsin ama ses sorununa kasıt ne olan ne odun?
+
+734
+02:29:24,948 --> 02:29:34,308
+Yani sunum yapmanız gerekiyor sonuçta. Teknik bir sorun mu var? Nasıl bir şey? Yoksa senin mi sesin kısık?
+
+735
+02:29:48,691 --> 02:29:59,551
+Neyse, sonuçlu sunum yapmadığınız zaman tam puan alamıyorsunuz. O yüzden soruyorum. Başka bir şeyim yok. [öğrenci] burada mı?
+
+736
+02:30:02,131 --> 02:30:02,711
+Benim hocam.
+
+737
+02:30:03,031 --> 02:30:04,391
+Evet, dinliyoruz izleseni.
+
+738
+02:30:08,171 --> 02:30:09,411
+Tekrini paylaşayım.
+
+739
+02:30:22,963 --> 02:30:24,083
+Evet, başlayabilirsin.
+
+740
+02:30:25,004 --> 02:30:25,984
+Ben geldim hocam.
+
+741
+02:30:26,263 --> 02:30:26,763
+Geldim.
+
+742
+02:30:31,083 --> 02:30:37,603
+Ben model olarak, dil modeli olarak sizin istediğiniz gibi TF ve TF-IDF ekledim.
+
+743
+02:30:37,603 --> 02:30:45,603
+Word de Vek var, Glove var, Fastex var, Bert var ama boyutu düşük olsun diye Distil Bert'i kullandım.
+
+744
+02:30:46,063 --> 02:30:49,243
+Birleştirme olarak da Glove ve Distil Bert'i birleştirdim.
+
+745
+02:30:50,100 --> 02:30:59,540
+Sınıflandırma algoritmam Random Forest. Üç tane veri seti kullandım. Veri setlerin isimleri burada detaylarına geçeceğim. Linklerini de kaynakçada paylaştım.
+
+746
+02:31:05,268 --> 02:31:09,488
+Buraları hızlı geçebiliriz.
+
+747
+02:31:11,547 --> 02:31:18,628
+Yani veri setlerinde bazılarında dağılım eşittensin diye veri setinin kendisiyle oynadım.
+
+748
+02:31:19,028 --> 02:31:21,688
+Anladım. Sonuçta hepsine eşit hale mi getirdin veri setlerin?
+
+749
+02:31:23,028 --> 02:31:26,847
+Aşağı yıkarın. Şurada mesela politik çok fazlaydı. Biraz azalttım sayısını.
+
+750
+02:31:26,968 --> 02:31:28,247
+Anladım. Tamam. Peki.
+
+751
+02:31:28,247 --> 02:31:33,247
+Bir ön işleme taviyi tuttum. Bütün embeddingler için ön işleme taviyi tuttum.
+
+752
+02:31:33,268 --> 02:31:58,347
+Tf-idf'in bağlantıları.
+
+753
+02:31:58,739 --> 02:32:07,939
+Kodumu görebiliyor musunuz? Hayır, kodunu görmüyoruz. Sadece slide'ın geçti. Yok, söyle. Söyle, sadece söylesen de yeterli olur.
+
+754
+02:32:08,779 --> 02:32:18,459
+Tam staff'ları temizledim. Kullanıcı adı gibi username veya bir mail, HTTPS tarz link falan varsa onları sildim. Fazla boşlukları sildim.
+
+755
+02:32:19,399 --> 02:32:24,380
+Alfanümerik bütün karakterleri sildim. Alfanümerik olmayan bütün karakterleri sildim.
+
+756
+02:32:24,736 --> 02:32:27,636
+Bu tarz ön işlemeler yaptım.
+
+757
+02:32:27,636 --> 02:32:34,556
+Peki bu işlemleri yaptıktan sonra Bert'e ondan sonra mı verdin?
+
+758
+02:32:34,855 --> 02:32:36,036
+Evet, ondan sonra verdim.
+
+759
+02:32:36,056 --> 02:32:37,675
+Senin de hata orası olmuş.
+
+760
+02:32:39,335 --> 02:32:48,136
+Bert'in kendisi zaten kendi tokenizerleri var. Dolayısıyla bu tarz işlemleri yapmamanız gerekiyor ona verirken.
+
+761
+02:32:48,564 --> 02:32:53,963
+Diğerlerinde işe yarayabilirler ama onlar da iş bozuyorlar. Öyle söyleyeyim.
+
+762
+02:32:54,584 --> 02:32:56,144
+Onu da görmüş oldun en azından.
+
+763
+02:32:56,623 --> 02:32:57,963
+Evet, görmüş oldum hocam.
+
+764
+02:32:57,984 --> 02:32:59,564
+Peki tamam, devam edelim sonuçlarla.
+
+765
+02:33:00,123 --> 02:33:03,103
+En son temizleme aşamasına bir de Lammothize yaptım.
+
+766
+02:33:04,144 --> 02:33:08,904
+Ben dediğim gibi sinirsel veri modellerinin daha başarılı olmasını bekliyordum açıkçası.
+
+767
+02:33:10,364 --> 02:33:15,123
+Ama pek öyle olmadı. En başarılı TF ve TF-IDF geldi benim.
+
+768
+02:33:15,631 --> 02:33:17,131
+Yaptığım deney sonucunda.
+
+769
+02:33:19,211 --> 02:33:22,932
+Bert, açıkçası çok daha yüksek bekliyordum.
+
+770
+02:33:23,111 --> 02:33:29,051
+Diğer arkadaşlarınızın oranları gibi oranlar bekliyordum ama büyük ihtimalle dediğiniz gibi.
+
+771
+02:33:29,711 --> 02:33:31,291
+Sen bozmuşsun, onun bir suçu yok.
+
+772
+02:33:32,471 --> 02:33:33,471
+Devam edelim.
+
+773
+02:33:34,031 --> 02:33:35,932
+Devam edelim diğer bir kümelerine.
+
+774
+02:33:37,252 --> 02:33:39,711
+Bert'in de tokenizerını kullanmıştım.
+
+775
+02:33:40,131 --> 02:33:41,511
+Hem onu hem onu yapmıştım ama.
+
+776
+02:33:41,572 --> 02:33:42,451
+İşte orası yanlış.
+
+777
+02:33:43,219 --> 02:34:07,119
+Sarcasm Detection'da Bert yüksek çıktı. Glove Bert, onun başarısını düşürüdü. Glove Bert dediğim, benim Glove'la Bert'i birleştirdiğim şey, embedding temsili. Glove Bert'in başarısını aşağıya çekmiş gibi hissettim ben burada. Pek bir şey katamadım yani. Ama en başarılısı burada Bert oldu. Yanlış tokenize rağmen.
+
+778
+02:34:08,180 --> 02:34:30,639
+Bu da Sentiment Analiz. Sentiment Analiz'de de gördüğünüz gibi yine TF-IDF en yüksek başarıyı sağladı. Bunların sebebi neden olabilir? Şundan olabilir. Ben virüs etinin tamamını kullanmadım. Belki bağlamı tam oturtamamış olabilir sinirsel modeller. Ama bunlar pre-trained modeller olduğu için bir beklentim vardı açıkçası.
+
+779
+02:34:32,084 --> 02:34:34,624
+Kaynaklar da bunlar hocam.
+
+780
+02:34:35,124 --> 02:34:37,924
+Peki, teşekkürler [öğrenci]. Sağ ol.
+
+781
+02:34:40,924 --> 02:34:42,444
+Devam ediyoruz. [öğrenci]?
+
+782
+02:34:44,244 --> 02:34:46,284
+Buradayım hocam, paylaşıyorum ekranını.
+
+783
+02:34:59,731 --> 02:35:00,952
+Evet, geldi ekran.
+
+784
+02:35:07,667 --> 02:35:09,907
+Sesim gelmiyor mu şu anda [öğrenci]?
+
+785
+02:35:14,579 --> 02:35:16,120
+Şu an geliyor mu hocam?
+
+786
+02:35:16,140 --> 02:35:16,739
+Şu an geliyor.
+
+787
+02:35:18,360 --> 02:35:41,739
+Şu an çalışmamda uygun olan anlamsal uzaylarda LSA, LDA, World to Back, Fast Test, Classic TF, TF-IDF kullandım. Birleştirmelerde de ilk önce LSA ile TF, TF-IDF'i birleştirdim. Daha sonra TF'i birleştirdim. Sinirsel olarak da World to Back ile TF-IDF'i birleştirip farklı bir sonuç...
+
+788
+02:35:42,484 --> 02:35:45,904
+Alabilirim belki daha iyileştirebilirim diye sonuçlarımı düşündüm.
+
+789
+02:35:48,283 --> 02:36:01,703
+Oluşturduğum kelime vektörlerini Random Forest Classifier'e verdim. Sadece FastTex hariç. Hani düzgün bir karşılaştırma yapabilmek içindi. Bu hepsini aynı sınıflandırma yöntemine vererek daha doğru bir karşılaştırma yapabilmek içindi.
+
+790
+02:36:01,703 --> 02:36:02,703
+FastTex'te ne yaptın?
+
+791
+02:36:04,144 --> 02:36:07,463
+FastTex'i kendi oluşturduğu modelle ittim hocam.
+
+792
+02:36:08,979 --> 02:36:10,100
+Peki, tamam.
+
+793
+02:36:11,760 --> 02:36:20,760
+Üç tane veri seti kullandım. Veri setinde sahte haber tespitiydi bir tanesi. İki sınıftan oluşuyordu. True ve False.
+
+794
+02:36:23,500 --> 02:36:30,739
+Haber sınıflandırmada dört tane sınıfım vardı. Her birinden otuz bir bin dokuz yüz adet vardı bu arada her bir sınıftan da.
+
+795
+02:36:31,763 --> 02:36:56,323
+Veri Setti 3'te de duygu tespiti yapmıştım. Bunda da 3 tane sınıf vardı. Negatif, nötr ve pozitif olarak. Burada da Sahte Haber tespitinde elde ettiğim sonuçlar var. Sahte Haber tespitinde en iyi sonucu Fast Text ile aldım. LSA ve LDA birbirine çok yakın sonuçlar vardı. Zaten böyle sonuçlar vermesini bekliyordum.
+
+796
+02:36:56,915 --> 02:37:19,995
+Birbirine yakın genelde çalışma mekanizmaları birbirine benziyor. Sadece LDA biraz daha döküman, kelimeleri konulara göre bir sınıflandı. Konulara göre de kullanıldı. İşte kelime, topik döküman olarak gidiyordu. Bu şekilde bir işleyişi vardı. Zaten NSA'ya göre de sahte haber tesliminde bir tık daha iyi bir sonuç verdi.
+
+797
+02:37:24,915 --> 02:37:39,216
+Standart sapması sıfır çıktı. Genelde aynı sonuçları verdi. Belki ilk, yani şeyden sonra ilk iki rakamını aldığım için de belki sıfır çıkmıştır standart sapması bilmiyorum. Hani sonuçlarda ekürütler değil, ilk iki rakamını almıştım.
+
+798
+02:37:40,691 --> 02:37:56,331
+TF ile TF-IDF de birbiriyle aynı sonuçları verdiler. Fast Text ve Word2Vac de çalışma mekanizmlerinde birbirlerine benziyorlardı. Fast Text kelime köklerine de iniyordu. Yakın sonuçlar verdiler.
+
+799
+02:37:59,219 --> 02:38:26,519
+Daha sonra birleştirmelerimde de yine iyi sonuç aldım düşünüyorum. Tabi yani şeye göre, TF ve TF-IDF'e göre birleştirmede daha iyi sonuçlar aldım. Word2Vek ile TF-IDF'den biraz daha mümkün değilim. Belki farklı bir şey çıkabilir diye. Çünkü sinirsel ve sinirsel olmayan iki kelime vektörünü birleştirmek daha iyi bir şey çıkar diye düşünmüştüm. Ama yine de FastText ve Word2Vek'i geçemedi. Yani LSA ve YDA'yı da geçmedi.
+
+800
+02:38:28,468 --> 02:38:28,968
+Tamam.
+
+801
+02:38:29,548 --> 02:38:42,108
+Haber sınıflandırmada da yine aynı şekilde sahte haber tespitinde olduğu gibi LSA, LDA yine birbirlerine yakın sonuçlar verdi. Bu sefer LDA biraz daha düşük bir performans gösterdi.
+
+802
+02:38:42,968 --> 02:38:51,648
+TF ve TFA-IDF'te de yine aynı şekilde burada doğruluklarım aynı çıktı. [öğrenci] defa çalıştırmama rağmen yine standart sapmaları da sıfır çıktı.
+
+803
+02:38:53,492 --> 02:38:58,492
+Fast Text'te yine bu şekilde Word2Web ile Fast Text'te yine en iyi sonucu verdiler.
+
+804
+02:39:00,020 --> 02:39:28,020
+World2Vac ile TF-IDF'in birleştirmemde de değeri çok düşük oldu. 0.44 çıktı. Bunda da diyorum acaba World2Vac biraz daha kelimelerin anlamsal yakınlıklarına bakıyordu. Yanındaki kelimelere bakıyordu. Belki orada temizleme işlemini düzgün yapamadıysam belki performansta birleştirme de düşmüştür. Gerçi tek uyguladığımda yüksek çıktı ama birleştirdiğimde düşük çıktı.
+
+805
+02:39:28,020 --> 02:39:35,640
+O biraz soru işareti. Evet, tam olarak bir zorlayamadım hocam. Neden bu kadar düşük çıktığını?
+
+806
+02:39:38,739 --> 02:39:50,979
+Duygu analizinde de hocam zaten burada bu veri setinde ön işlemler yaptım, temizleme işlemleri yaptım ama duygu analizinde tweetler üzerinden bir duygu analizi yapıyordu veri setinde.
+
+807
+02:39:50,979 --> 02:39:59,979
+Yani tweet olduğu için bazı anlamsız kelimeler vardı. Ne kadar da bir temizleme işlemi yapsam da daha önceden, hani bu işte numaraları, nümerik...
+
+808
+02:40:00,000 --> 02:40:10,059
+Değerleri sildim. Bazı anlamsız şeyleri silmeye çalıştım ama yine de ben daha sonra veri setini incelediğimde yine anlamsız kelimeler vardı.
+
+809
+02:40:10,739 --> 02:40:14,139
+Bunda da Fast Text en iyi sonucu yine Fast Text verdi.
+
+810
+02:40:14,920 --> 02:40:19,079
+Word2Bak Fast Text'e göre baya düşük bir değer elde etti.
+
+811
+02:40:21,843 --> 02:40:49,163
+Word2Week'in kelimelerin yanındakilerle geçme değerlerine baktığı için temizleme işleminden sonra Word2Week düşük değer verdiğimde bir veri setini tekrar inceledim. Acaba neden bu kadar düşük veriyor diye. Bazı tweetler tek bir kelime kalmış. Ben nadir geçen kelimeleri de silmiştim. Onları sildiğimde bazı tweetler tek bir kelime kalmış.
+
+812
+02:40:49,843 --> 02:40:57,223
+Bir Sözcükten oluşuyordu. Büyük ihtimalle World2Vac bu yüzden düşük çıktı. Yine burada birleştirmelerim.
+
+813
+02:40:57,883 --> 02:41:00,703
+LSA, TF, Aydek. LSA, TF, World2Vac, TF, Aydek.
+
+814
+02:41:00,703 --> 02:41:03,163
+Bir saniye [öğrenci], bir saniye.
+
+815
+02:41:48,788 --> 02:41:50,788
+Tamam, geldim şimdi [öğrenci]. Evet, devam edebiliriz.
+
+816
+02:41:51,667 --> 02:42:02,127
+Yani birleştirme işleminde de yine aynı şekilde Fast Text en iyi performansı göstermişti. Fast Text'e yaklaşamadım. Yine aynı şekilde geçen haberse...
+
+817
+02:42:02,127 --> 02:42:08,747
+Burada ama şey var sanki [öğrenci], bir sıkıntı olabilecek. Şimdi Fast Text'in kendi algoritmasını kullanıyorsun, tamam mı?
+
+818
+02:42:09,147 --> 02:42:09,287
+Evet.
+
+819
+02:42:09,287 --> 02:42:10,927
+Ama diğerlerinin hepsinde başka bir şey kullanıyorsun.
+
+820
+02:42:11,447 --> 02:42:11,807
+Evet.
+
+821
+02:42:11,987 --> 02:42:17,127
+Tamam mı? Hani o aslında burada bir karşılaştırma sıkıntı oluşturabiliyor, anlatabildim mi?
+
+822
+02:42:19,667 --> 02:42:23,367
+Ondan sonra onu da hani Random Forest mi kullanmıştım?
+
+823
+02:42:23,763 --> 02:42:34,963
+Evet, cool. Random Forest'a versem mesela o zaman daha karşılaştırabilir sonuçları. O FastSax'in devamında şimdi bir tane yapay sinrar muhtemelen kullanıyor. Tamam mı?
+
+824
+02:42:34,984 --> 02:42:35,603
+Evet, evet hocam.
+
+825
+02:42:35,744 --> 02:42:45,923
+Arkasında. O yüzden direkt vektörleri çekip onların üzerine hareket etsen de iyi olabilirdi. Daha karşılaştırabilir olabilirdi. Çünkü burada bariz bir fark var ya arada hep sürekli.
+
+826
+02:42:45,923 --> 02:42:46,763
+Evet, evet hocam.
+
+827
+02:42:46,763 --> 02:42:51,763
+O yüzden tam şey diyemiyorsun. Bunlar daha iyi, daha kötü falan. Temsil manasında bir şey diyemiyorsun.
+
+828
+02:42:53,907 --> 02:42:57,307
+Onu söylemek istedim. Tamam, peki. Başka neyimiz var?
+
+829
+02:42:57,307 --> 02:43:19,007
+Aslında o şeyden başlayıp, hepsini aynı işte Random Forest Classifier'a verip, doğru bir karşılaştırma elde etmek istemiştim. Ama FastText'de de direkt kendisinin bir modeli olup, direkt bir ekürüsü elde edince, oradan kelime ve ötlüğünü çekip kullanmadım. O noktada haklısınız. Ne kadar yorum yapsam da, çok doğru bir yorum olmayacak.
+
+830
+02:43:19,007 --> 02:43:21,807
+Yani diğerlerini birbiriyle karşılaştırabilirsin ama.
+
+831
+02:43:21,907 --> 02:43:26,688
+Festex'i hariç tutarak karşılaştırabilirsin. O manada demek istiyorum sadece.
+
+832
+02:43:27,768 --> 02:43:29,807
+Anladım hocam, teşekkür ederim.
+
+833
+02:43:30,208 --> 02:43:33,567
+Rica ederim. Başka var mı [öğrenci]'e söylemek istediğin?
+
+834
+02:43:34,268 --> 02:43:38,407
+Hocam, şu an yok. Genel var. Bu sonuç kısmında da yorum yaparken anlattım zaten.
+
+835
+02:43:38,407 --> 02:43:41,087
+Tamam, eline sağlık. Teşekkürler.
+
+836
+02:43:43,468 --> 02:43:44,587
+Evet, [öğrenci].
+
+837
+02:43:46,587 --> 02:43:47,647
+Evet hocam.
+
+838
+02:43:48,884 --> 02:43:51,103
+Evet, dinliyoruz seni [öğrenci].
+
+839
+02:43:51,904 --> 02:43:52,224
+Hemen.
+
+840
+02:44:03,572 --> 02:44:13,131
+Bu çalışmada konu sınıflandırma harici sınıflandırma görüvi için, işte Kola SSD 2 ve konu sınıflandırma görüvi için de AG News veri setlerini kullandım.
+
+841
+02:44:13,731 --> 02:44:25,672
+GPT-2-Bert, Quant Vectorizer, Hishing Vectorizer, TF ve TF-IDF yöntemleriyle de elde edilen özellikleri Fully Connected katmanına vererek sınıflandırma görünü gerçekleştirmiş oldum.
+
+842
+02:44:26,692 --> 02:44:28,412
+Veri setlerini Aging Face'ten aldım.
+
+843
+02:44:29,683 --> 02:44:33,763
+Her veriseti için 5-fold cross-foldation yöntemini kullandım.
+
+844
+02:44:36,323 --> 02:44:41,923
+Tamam, burada bir şeyler. Hocam hızlıca buraları atlıyorum. Direkt sonuçlarıma geldim.
+
+845
+02:44:44,423 --> 02:44:47,683
+Tüm yöntemler bu kola verisetiyle...
+
+846
+02:44:48,020 --> 02:45:11,760
+Yöntemlerin karşılaştırılması tablosu burada. Tüm yöntemler %70'in üzerine bir performans gösterdi. En yüksek başarıyı BERT %74 olarak elde etti. Ancak %70'in yeterince iyi bir başarı olduğunu söyleyemiyorum. Dolayısıyla bunun da veri setinden kaynaklandığını düşünüyorum. Çünkü Kola veri seti dengesiz bir veri setti ve küçük bir veri setti.
+
+847
+02:45:14,227 --> 02:45:15,287
+Buradaki yorumun bu.
+
+848
+02:45:15,727 --> 02:45:16,047
+Peki.
+
+849
+02:45:16,867 --> 02:45:23,227
+SSD 2 versettiği için ise GPT-2'nun %60 olarak başarısı elde edilmiş.
+
+850
+02:45:23,427 --> 02:45:25,347
+Bertin ise %80 olarak elde edildi.
+
+851
+02:45:26,227 --> 02:45:32,107
+Bunun sebebinin de GPT-2'nun sınıflandırma görevi için eğitilmiş olmadığından kaynaklandığını düşünüyorum.
+
+852
+02:45:32,627 --> 02:45:38,267
+Transfer örnek yaparken çünkü amacımız şey ya, benzer görevlerde daha yüksek sonuçlar elde ediyoruz.
+
+853
+02:45:38,267 --> 02:45:40,587
+O yüzden böyle düşündüm.
+
+854
+02:45:41,492 --> 02:45:47,171
+Berth'te bunun aksine sınıflandırma görevi içine itildiği için bu kadar yüksek bir başarı gösterdiğini düşünüyoruz.
+
+855
+02:45:47,631 --> 02:45:56,811
+Bir de şeyi sorayım sana. [öğrenci], bu birleştirme ile Tf'le Hashing Vectorizer, Tf'le Count Vectorizer'ı falan birleştirdiğini yazmışsın.
+
+856
+02:45:57,031 --> 02:45:57,311
+Evet.
+
+857
+02:45:58,371 --> 02:46:01,311
+Niye orada şeylerle iş birleştirme yapmadın Berth'le vesaire?
+
+858
+02:46:03,731 --> 02:46:04,971
+Böyle yaptım hocam ya.
+
+859
+02:46:06,311 --> 02:46:18,391
+Anladım da, şey için demek istiyorum. Başarılı bir şeyle, tamamlayıcı falan bir şey daha yukarısına çekebilmek için bir şey olabilir mi diye baktım da. Peki tamam, devam edelim.
+
+860
+02:46:18,711 --> 02:46:25,372
+Hazır konusu geçmişken hocam ben arkadaşlardan farklı olarak birleştirmeyi matriz toplama ile yaptım yani.
+
+861
+02:46:26,164 --> 02:46:51,504
+Yan yana şey olarak değil de element olarak toplamayla yaptım. Anladım. Tamam. Bir algoritm daha denilmiş. Diğer veri seti de AGE News veri seti. Burada da en yüksek başarı değerini BERT ile elde ettik. %93 olarak. AGE News de SSD gibi dengeli bir veri seti aslında. Bu sebeple BERT çok yüksek bir performans göstermiş olabilir.
+
+862
+02:46:52,308 --> 02:47:12,208
+Buradaki farklılığın Ageni İpset 4 sınıfın olmasından kaynaklandığını zannediyorum. SST'de 2 sınıf vardı. Verisletinden kaynaklanan bir farklılık var aşikar. Ben herhalde sınıf sayısının fazla olmasından dolayı gerçekleştiğini zannediyorum.
+
+863
+02:47:13,427 --> 02:47:13,908
+Peki.
+
+864
+02:47:14,667 --> 02:47:16,028
+Anlatacaklığım bu kadar.
+
+865
+02:47:16,507 --> 02:47:18,468
+Peki. Teşekkürler [öğrenci].
+
+866
+02:47:20,371 --> 02:47:26,271
+[öğrenci]. Evet hocam, merhaba.
+
+867
+02:47:29,131 --> 02:47:31,191
+Ekip bunu paylaşıyorum.
+
+868
+02:47:53,332 --> 02:47:54,971
+Pardonacağım. Bir saniye.
+
+869
+02:48:00,852 --> 02:48:02,912
+Şu anda görebiliyor musunuz hocam?
+
+870
+02:48:03,272 --> 02:48:03,932
+Evet, geldi.
+
+871
+02:48:10,291 --> 02:48:15,291
+Şöyle direkt kullandığım öncelikle anlamsız uzaylardan bahsedeyim.
+
+872
+02:48:16,291 --> 02:48:19,151
+Bahsetme, devam edelim.
+
+873
+02:48:19,151 --> 02:48:20,931
+İsmileri söyleyeceğim sadece hocam.
+
+874
+02:48:21,571 --> 02:48:25,651
+BERT GPT LSI Word2Vec kullandım.
+
+875
+02:48:26,291 --> 02:48:28,431
+Klasik yöntemler aynı şekilde.
+
+876
+02:48:28,631 --> 02:48:35,091
+Veri kümeleri de router news, spam e-posta veri seti ve Twitter duygu analizi.
+
+877
+02:48:36,491 --> 02:48:38,291
+Direkt sonuçlarıma bakacak olmalı.
+
+878
+02:48:38,291 --> 02:48:41,731
+Olursak da şöyle aslında.
+
+879
+02:48:43,219 --> 02:49:05,219
+En yüksek sonuçları Berk'le aldık. Ve onun haricinde de TF ve TF-ID genel olarak en yüksek sonuçları verdi. Burada sadece Twitter Duygu Anelisi Veri Seti'nde 1 milyonun üzerinde veri vardı. Burada bir veri azaltma yaptım. Sanırım orada veri azaltma yaparken ya yanlışlık yaptım ya da...
+
+880
+02:49:06,688 --> 02:49:11,688
+Orada bir bayağı mariz düşüklükler gözüküyor. Onun dışında da...
+
+881
+02:49:14,675 --> 02:49:28,716
+Hangisindeydi? Word2Wack. Evet, Word2Wack'te BrutalSneel için daha fazla bir doğruluk bekliyordum. O çok fazla düşük çıktı ama sebebini tam olarak çözünleyemedim.
+
+882
+02:49:28,716 --> 02:49:40,435
+Ve Word2Wack'te de belki parametrelerle daha fazla oynayabilirdim. Onun dışında da söyleyeceğim başka bir şey yok hocam.
+
+883
+02:49:41,716 --> 02:49:43,796
+En başarılı yöntem ne çıktı diyorsun?
+
+884
+02:49:45,015 --> 02:49:58,456
+Tf ve Tf-IDF en yüksek. Yani genel olarak çıktı. Onun dışında da sinirsel dil modellerinde de BIRT en yüksek çıktı hocam.
+
+885
+02:50:00,000 --> 02:50:02,420
+Orada GPT'yi zaten çalıştıramamışsın bence.
+
+886
+02:50:02,719 --> 02:50:09,219
+Galiba evet, o GPT'deki sorunu da tam olarak anlayalım. Aslında hani kodum normal ve düzgün bir kodu ama.
+
+887
+02:50:09,620 --> 02:50:10,940
+Bir sıkıntı var orada yani.
+
+888
+02:50:10,940 --> 02:50:14,360
+Yani parametrelerle biraz da oynamam lazım hocam.
+
+889
+02:50:16,440 --> 02:50:17,120
+Tamam.
+
+890
+02:50:18,879 --> 02:50:21,139
+Peki, teşekkürler.
+
+891
+02:50:22,120 --> 02:50:23,020
+Teşekkür ederim.
+
+892
+02:50:27,156 --> 02:50:29,396
+[öğrenci], men.
+
+893
+02:50:30,476 --> 02:50:32,276
+Evet. Giyosun değil mi?
+
+894
+02:50:34,716 --> 02:50:35,596
+Geliyor.
+
+895
+02:50:36,116 --> 02:50:37,716
+Tamamdır. İklamda paylaşacağım.
+
+896
+02:50:39,516 --> 02:50:41,876
+Senden de hızlı bir sunum bekliyoruz [öğrenci].
+
+897
+02:50:42,276 --> 02:50:45,616
+Tamamdır. Geldi değil mi sunum?
+
+898
+02:50:45,896 --> 02:50:46,476
+Geldi.
+
+899
+02:50:46,476 --> 02:50:47,396
+Tamamdır.
+
+900
+02:50:47,791 --> 02:51:06,471
+Aslında gerçekten de biraz hızlı bir şekilde geçeceğim ben de. Normalde üç veri setim vardı ama üçüncü veri seti üzerinde çok böyle oradaki çalışmalarını çok şey yapamadım. Emin olamadım. O yüzden onu paylaşmadım. Ama hızlıca veri setleri ve üzerindeki üzerinde yaptığım çalışmalara geleyim.
+
+901
+02:51:15,791 --> 02:51:27,171
+Sınıflandırma şeyinden ziyade veri kümesine karşılaştığımızda daha çok ekonomi içerisindeki alt sektör grupları ile ilgili haberler var.
+
+902
+02:51:27,171 --> 02:51:35,711
+Dolayısıyla buradaki veri kümesi üzerine çalışmak biraz daha şey olduğum için güzel bir şey oldu, deneyim oldu. Yaklaşık 37 bin tane metin vardı.
+
+903
+02:51:37,051 --> 02:51:41,951
+Burada ben iki şeyi yapmadım diğer çalışmalara karşılayınca.
+
+904
+02:51:43,791 --> 02:51:47,891
+Bir de fazla kez deneyleri tekrarlama ve ikincisi buradaki modelleri birleştirme.
+
+905
+02:51:47,991 --> 02:51:51,791
+Ama bunlar benim to-do listinde var. Farklı şeyleri görmek anlamında.
+
+906
+02:51:52,751 --> 02:51:57,131
+Burada ben TF-ID, Fast-Tex, Glove ve BERT modelleri üzerine çalıştım.
+
+907
+02:51:57,451 --> 02:52:01,931
+BERT tarafında biraz böyle fine tune etmeye çalıştım kategorileri.
+
+908
+02:52:01,931 --> 02:52:11,791
+Ama buradaki en büyük dezavantajım belli alt sektörlerde gerçekten daha şey...
+
+909
+02:52:11,791 --> 02:52:19,331
+Yayılım daha fazla ama diğerlerinde çok az metin geldiği için biraz onlarda başarımı düşüyordu.
+
+910
+02:52:19,331 --> 02:52:27,691
+Ama buralarda alt kategorilerden veri geldikçe en müthelen buradaki başarımlar da yükselecektir diye düşünüyorum.
+
+911
+02:52:28,091 --> 02:52:34,111
+BERT modelleri bana gerçekten diğerlerine oranla oldukça fazla yüksek başarımı getirdi.
+
+912
+02:52:34,231 --> 02:52:35,891
+Etolojisi anlamında karşılaştırdığımda.
+
+913
+02:52:37,940 --> 02:53:01,220
+Diğer bir veri kümesi de Türkis tweet var. Bu da biraz şey, direkt kendi çektiğim tweet haberleri üzerinde çalışma yapmak istedim ama biraz etiketli veri üzerinde çalışmak istedim. Etiketli bir veri olarak da böyle veri setiyle karşılaştım. En azından sonuçları ekorüsüleri hesaplamak anlamında. 4000 tane tweetten oluşan bir veri kümesi bu.
+
+914
+02:53:03,219 --> 02:53:17,679
+Yine burada da benim yüksek başarımı aldığım algoritma BERT algoritmaları oldu. Yine burada Türkçe tweetler üzerinde daha önce bir train edilmiş çalışmalardan faydalanmış.
+
+915
+02:53:17,679 --> 02:53:28,319
+Türkçe çalışmalardan gerçekten güzel sonuçlar verdi. Ben yine ön işleme adımlarını BERT tarafında gerçekleşmedi.
+
+916
+02:53:31,219 --> 02:53:41,219
+İlk bunlar çalışırken gerçekleşeceğini gerçekten düşüyordu bende de. Ama önceki diğer seçim modellerde o ön işleme adımları...
+
+917
+02:53:42,227 --> 02:53:47,067
+Biraz da orası için güzel şeyler verdi, açıkçılar verdi.
+
+918
+02:53:47,948 --> 02:53:59,627
+Genel olarak toparlayacak olursam, özellikle sinisel dil modelleri, gerçi aradaki bağlamları yakalaması anlamında çok güzel açıkçılar varıyor, çok güzel sonuçlar varıyor.
+
+919
+02:54:00,907 --> 02:54:09,247
+Sıfırdan veya pre-trained modeli fine tune etmek olsun, biraz farklı verikimler üzerinde, farklı keyifler üzerinde.
+
+920
+02:54:10,227 --> 02:54:21,528
+Bu modelleri eğitmek, daha uzun süreler boyunca daha büyük ölçekli çalışmalarda eğitmek. Bence buna değer diye düşünüyorum. Gelecek çalışmalar açısından.
+
+921
+02:54:21,528 --> 02:54:23,927
+Peki, teşekkürler.
+
+922
+02:54:27,188 --> 02:54:28,927
+[öğrenci].
+
+923
+02:54:32,979 --> 02:54:33,819
+Yaitu var.
+
+924
+02:54:41,172 --> 02:54:45,772
+Evet, bu da.
+
+925
+02:54:52,595 --> 02:54:56,595
+Önce, açığında dediğiniz...
+
+926
+02:55:04,084 --> 02:55:06,084
+Şimdi...
+
+927
+02:55:11,219 --> 02:55:14,719
+[öğrenci], burdan sınır. Merhabalar hocam.
+
+928
+02:55:14,859 --> 02:55:20,359
+Tamam. [öğrenci] bile [öğrenci]. Onun haricinde başka var mı sunum yapmamış olan?
+
+929
+02:55:25,012 --> 02:55:27,012
+Gönderdiği halde sunum yapmamış olan.
+
+930
+02:55:32,468 --> 02:55:35,588
+Herkes yaptı, süper. Tamam. O zaman [öğrenci] dinleyelim.
+
+931
+02:55:36,428 --> 02:55:38,368
+Tamam hocam, ekran paylaşıyorum hemen.
+
+932
+02:55:38,608 --> 02:55:38,908
+Tamam.
+
+933
+02:55:39,648 --> 02:55:40,348
+Geldi mi ekran?
+
+934
+02:55:41,808 --> 02:55:42,568
+Geldim.
+
+935
+02:55:45,556 --> 02:55:47,736
+Şimdi ben İngilizce liraya anlatacağım.
+
+936
+02:55:48,816 --> 02:55:56,136
+I use these models for this project. LSA, LDA, TFI, DF, DF, Def, Charactergrams, Fast Text, and BERT.
+
+937
+02:55:56,476 --> 02:56:00,956
+And I use three methods while combining the embeddings of Fast Text and BERT.
+
+938
+02:56:01,456 --> 02:56:07,056
+And I use three datasets. The first one is topic modeling on BBC News.
+
+939
+02:56:07,356 --> 02:56:11,876
+The second one is movie reviews, analyzes. And the third one is Twitter sentiment analyzes.
+
+940
+02:56:11,876 --> 02:56:13,556
+I will go through this very quickly.
+
+941
+02:56:13,556 --> 02:56:21,596
+İlk modelde, ikisi de
+
+942
+02:56:21,596 --> 02:56:23,435
+bir klasifieri var.
+
+943
+02:56:23,435 --> 02:56:25,596
+Bu modelde,
+
+944
+02:56:25,596 --> 02:56:27,115
+İl-D-A'ya da
+
+945
+02:56:27,115 --> 02:56:30,796
+bir klasifieri var.
+
+946
+02:56:30,796 --> 02:56:32,556
+İl-D-A'ya da
+
+947
+02:56:32,556 --> 02:56:34,876
+bir klasifieri var.
+
+948
+02:56:34,876 --> 02:56:37,015
+İl-D-A'ya da
+
+949
+02:56:37,015 --> 02:56:39,015
+bir klasifieri var.
+
+950
+02:56:39,015 --> 02:56:41,015
+Bir klasifieri var.
+
+951
+02:56:41,556 --> 02:56:43,556
+aynı klasifier.
+
+952
+02:56:43,556 --> 02:56:45,556
+Bu
+
+953
+02:56:45,556 --> 02:56:46,556
+bir
+
+954
+02:56:46,556 --> 02:56:47,556
+imbeding,
+
+955
+02:56:47,556 --> 02:56:48,556
+üç
+
+956
+02:56:48,556 --> 02:56:49,556
+metodas.
+
+957
+02:56:49,556 --> 02:56:50,556
+Örneğin
+
+958
+02:56:50,556 --> 02:56:51,556
+İbeding
+
+959
+02:56:51,556 --> 02:56:52,556
+Berth
+
+960
+02:56:52,556 --> 02:56:53,556
+ve
+
+961
+02:56:53,556 --> 02:56:54,556
+FasTech
+
+962
+02:56:54,556 --> 02:56:55,556
+separeli.
+
+963
+02:56:55,556 --> 02:56:56,556
+Örneğin
+
+964
+02:56:56,556 --> 02:57:11,056
+İbeding
+
+965
+02:57:37,556 --> 02:57:44,556
+Ve bu
+
+966
+02:57:44,556 --> 02:57:47,556
+ve bu
+
+967
+02:58:05,556 --> 02:58:19,356
+Topic Modeling. I noticed that the BERT performed the best among all the other experiments. LSA and LDA performed very closely because they perform almost the same way on Topic Modeling.
+
+968
+02:58:19,356 --> 02:58:26,856
+The interesting part was in fact for TF-IDF charactergrams which outperformed Fast Text.
+
+969
+02:58:26,856 --> 02:58:33,556
+And I think this was because Fast Text was pre-trained on a very large corpus but TF-IDF is trained on
+
+970
+02:58:33,556 --> 02:58:40,316
+Bu koncatenin için, bu koncatenin için, bu koncatenin için,
+
+971
+02:58:40,316 --> 02:58:42,876
+bu koncatenin için, bu koncatenin için, bu koncatenin için,
+
+972
+02:58:42,876 --> 02:58:44,796
+bu koncatenin için çok iyi.
+
+973
+02:58:44,796 --> 02:58:48,236
+Bu koncatenin birçok arkayı ile ilgili birçok arkayı ile ilgili.
+
+974
+02:58:48,236 --> 02:58:52,316
+Bu koncatenin için, bu koncatenin için, bu koncatenin için,
+
+975
+02:58:52,316 --> 02:58:54,556
+bu koncatenin için, F1'e görebilecek.
+
+976
+02:58:58,036 --> 02:59:00,316
+Bu koncatenin için,
+
+977
+02:59:00,628 --> 02:59:03,308
+Burada bir şeyin LSA ve LDA'ya görüyoruz.
+
+978
+02:59:03,308 --> 02:59:08,408
+LDA'ya görüyoruz, bu konuda değil, bu konuda bir konuda,
+
+979
+02:59:08,408 --> 02:59:10,408
+bu konuda bir konuda bir konuda,
+
+980
+02:59:10,408 --> 02:59:12,828
+konuda konuda daha iyi konuda,
+
+981
+02:59:12,828 --> 02:59:15,148
+konuda konuda konuda, konuda konuda konuda,
+
+982
+02:59:15,148 --> 02:59:19,308
+LSA'ya görüyoruz,
+
+983
+02:59:19,308 --> 02:59:20,948
+bu konuda çok iyi konuda,
+
+984
+02:59:20,948 --> 02:59:27,948
+konuda konuda konuda,
+
+985
+02:59:41,108 --> 02:59:43,788
+pre-processing for Fast, Text, and BERT.
+
+986
+02:59:44,048 --> 02:59:49,768
+But for the other methods, I removed the stop words and did some pre-processing.
+
+987
+02:59:50,288 --> 02:59:55,228
+In the combination, again, here we can see that for this case,
+
+988
+02:59:56,268 --> 03:00:00,167
+there is a big difference between the concatenation method
+
+989
+03:00:00,167 --> 03:00:04,067
+and the summing method between the three concatenation methods.
+
+990
+03:00:05,811 --> 03:00:33,811
+Bu son
+
+991
+03:00:33,811 --> 03:00:40,811
+Bu da bu da bir çoğunluğun bir çoğunluğunu var.
+
+992
+03:00:40,811 --> 03:00:44,811
+Bu çoğunluğun bir çoğunluğunu var.
+
+993
+03:00:44,811 --> 03:00:53,811
+Bu çoğunluğunu var.
+
+994
+03:00:53,971 --> 03:00:57,291
+Çünkü bu konuyu örneğe normalizasyon.
+
+995
+03:00:57,291 --> 03:00:59,291
+Onlar da fast text vektörs.
+
+996
+03:00:59,291 --> 03:01:03,772
+Maybe I should have normalize the vektörs before summing them.
+
+997
+03:01:03,772 --> 03:01:08,412
+As a conclusion, BERT model perform the best because it has transformers architecture.
+
+998
+03:01:08,412 --> 03:01:12,612
+It applies self-attention which enables to capture the contextual meanings.
+
+999
+03:01:12,612 --> 03:01:20,971
+The topic modeling using LDA works very well, but when we use it for other tasks like sentiment analyze, it does not perform as LSA does.
+
+1000
+03:01:20,971 --> 03:01:21,971
+TF-IDF
+
+1001
+03:01:21,971 --> 03:01:48,971
+Tf-IDF outperforms Fast Text on all tasks. And this is maybe Fast Text, as I said, like was trained on a very large corpus of data, but Tf-IDF is trained on like more specific data for each task. Combining the embeddings from BERT and Fast Text did not perform well. And this could be because there are incompatible embeddings of the two models. And also maybe they were not comparable or combinable. That's all from my...
+
+1002
+03:01:49,551 --> 03:01:53,391
+Çok teşekkürler.
+
+1003
+03:01:53,391 --> 03:01:55,711
+Enine sağlık.
+
+1004
+03:01:56,752 --> 03:01:58,932
+Evet [öğrenci], seni dinleyelim şimdi.
+
+1005
+03:02:11,219 --> 03:02:12,719
+Sesin geliyor mu hocam?
+
+1006
+03:02:12,719 --> 03:02:13,919
+Geliyor şimdi.
+
+1007
+03:02:13,919 --> 03:02:15,919
+Tamam süper olsun.
+
+1008
+03:02:17,971 --> 03:02:32,412
+Hocam ben de bu kısımlara hızlı geçeyim. Veriklendisi olarak EG News, App Reviews Regression olarak kullandım. Rotten Tomatoes'da burada film hakkında yorumlar var. Sadece şunu ifade edeyim çünkü daha sonra sonuçlarla ilgili yorum da önemli olacak.
+
+1009
+03:02:45,971 --> 03:02:50,971
+Geçiyorsa belli bir şeyimiz, engramımız. Onu şey yapmadım.
+
+1010
+03:02:52,244 --> 03:03:14,764
+Özellikleri eklemedim. Ayrıca özellik sayısını 5000 ile sınırladım. O da frekansa göre sıraladıktan sonra yapıldı. Word2Vec, TF-IDF'e ek olarak Word2Vec ve Glove'u kullandım. Berth'i kullandım. Burada Berth'in CLS token'ını kullandım. Onun için özellikle eğitilen Contrastive Learning'de 1 milyardan fazla cümle iklisi üzerinde eğitilen bir model kullandım.
+
+1011
+03:03:20,244 --> 03:03:22,244
+son gizli katmanın
+
+1012
+03:03:22,984 --> 03:03:25,904
+embeddingler için ortalamasını aldım.
+
+1013
+03:03:26,004 --> 03:03:26,984
+Temsil açısından.
+
+1014
+03:03:28,184 --> 03:03:30,623
+Şimdi burada model olarak bir katmanlı bir şey.
+
+1015
+03:03:30,924 --> 03:03:32,244
+Bir katmanlı bir...
+
+1016
+03:03:32,819 --> 03:03:57,819
+Yapay sinirler kullanıyorum. Yani az önce arkadaşların yaptıkları gibi logistik regresyon ama çok sınıflılar için farklı. Adam Optimizer'la bir e-4 eğitim kat sayısıyla 10 epok boyunca eğitittim. Regresyon modelleri için bu şekilde MSC MinSq.Ederer kullandım. Binary Classification için, SIGMOD sonrasında çok sınıflılar için de Softmax kullandım.
+
+1017
+03:04:00,819 --> 03:04:11,399
+Burada tüm veri hükümelerinde beş tane denemenin ortalamasını ve standart satmasını görüyorsunuz. Burada temsiller değişmiyor. Çünkü herhangi bir fight-turning işlemi yapmadım.
+
+1018
+03:04:28,819 --> 03:04:47,419
+Katineş'i kullandım. Yanına onu ifade etmeyi unuttum. Mesela Bert ile Glove'u birleştirdiğimizde Glove'un kendi başına veya Bert'in kendi başına elde ettiği skordan daha olarak beklediğimiz gibi daha yüksek bir skor elde ettiğimizi görüyoruz. Ancak TF-IDF'in özellikle E-Ginus konusunda daha yüksek bir skor vermesini bekliyordum.
+
+1019
+03:04:47,419 --> 03:04:56,139
+Tabi buradaki skor kötü değil. Zero-Rul'un hiçbir sınıflandırma yapmasaydık, hiçbir eğitim yapmasaydık %25 olacaktı ama TF'dan daha kötü.
+
+1020
+03:04:56,819 --> 03:05:21,199
+Bu sebebi büyük ihtimalle başta yaptığını söylediğim işlemden dolayı. Çünkü TF-IDF'de aslında birçok dokümanda geçen terimlerin önemi azaltılmaya çalışılıyor. Burada Bert'in aslında Trotin Tomatoes'daki skoru beni şırşırttı. Daha yüksek bir skor vermesini bekliyorum. Burada 54. Yani normalde zaten rastgele sağlasak %50 civarında bir.
+
+1021
+03:05:22,804 --> 03:05:50,543
+Skor elde etmemiz gerekiyor. Enteresan bir sonuç sebebini anlayamadım. Onun dışında söylediğim gibi birleştirmek genel olarak daha iyi. Burada ön işleme olarak sadece BERT ve GPT haricindeki modeller için ön işleme yaptığım metinler üzerinde burada da Win ve Loss'ları görüyoruz. Zaten bunları geçeyim ben. Orada belli oluyor aslında BERT artı GPT tüm ve yükümelerinde estetiksel anlamlı olacak şekilde denemelerde daha başarılı sonuçlar verdi bize.
+
+1022
+03:05:50,804 --> 03:05:52,804
+Yorum olarak da aslında...
+
+1023
+03:05:53,363 --> 03:06:10,763
+Yüksek başarıya sahip olmasa bile şurada mesela gördüğümüz gibi BERT-Globe veya BERT-RTTF-IDF tek başlarına burada BERT %54, Glove %67 verirken birleştirdiğimizde 70.41'e kadar çıkarabiliyoruz.
+
+1024
+03:06:11,283 --> 03:06:21,363
+Tek başlarına kötü sonuçlar varseler bile uzayları birleştirmek daha iyi sonuca sebep veriyor. En iyi sonucu da BERT ve GPT temsilleriyle elde etmektedir.
+
+1025
+03:06:21,363 --> 03:06:27,303
+Sorunuz veya yorumunuz varsa lütfen dediğimle paylaşır mısınız?
+
+1026
+03:06:28,923 --> 03:06:35,103
+Ellerine saat beşi çalışmamış ama Bert'in performansı şaşırtıcı olmuş hakikaten.
+
+1027
+03:06:37,843 --> 03:06:40,243
+Sadece Rotten Tomatoes aslında. Diğerlerinde yine.
+
+1028
+03:06:43,156 --> 03:06:49,756
+Anladım. Peki. Tamamdır. Şimdi arkadaşlar sunum yapmamış olan kimse kaldı mı?
+
+1029
+03:07:01,523 --> 03:07:22,743
+Peki. [öğrenci], bir dahaki haftaya mı ses sorunu çözüp sunumunu yapman gerekiyor. Sunumunu ses sorunumlar yapmamazlık olmaz. Peki. Haftaya konuşuruz onu. Yine senin özelinde konuşuruz.
+
+1030
+03:07:23,603 --> 03:07:38,463
+Peki. Hepinize çok teşekkür arkadaşlar katılmanız için, emekleriniz için hepiniz uğraşmışsınız, emek vermişsiniz. Çok teşekkür ediyorum. Önümüzdeki gün aynı gün aynı saatte. Kısmetse görüşmek üzere. Hoşçakalın.
+
+1031
+03:07:39,644 --> 03:07:41,023
+Teşekkür ederim hocam.
+
+1032
+03:07:41,043 --> 03:07:41,503
+İyi günler.
+
+1033
+03:07:41,744 --> 03:07:42,644
+Tekrar ediyoruz hocam.
+
+1034
+03:07:42,943 --> 03:07:43,943
+İyi günler. Görüşmek üzere.
