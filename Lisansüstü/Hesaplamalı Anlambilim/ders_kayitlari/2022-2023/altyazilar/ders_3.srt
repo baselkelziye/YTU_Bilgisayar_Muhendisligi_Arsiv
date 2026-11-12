@@ -1,0 +1,1923 @@
+1
+00:01:31,091 --> 00:01:33,091
+Günaydın arkadaşlar.
+
+2
+00:01:35,091 --> 00:01:37,091
+Günaydın hocam.
+
+3
+00:01:40,091 --> 00:01:45,091
+Beş dakika daha bekleyelim sonra başlayalım dersi. Beş dakika sonra başlayacağız.
+
+4
+00:01:45,091 --> 00:01:46,828
+Çeteliye zihin.
+
+5
+00:06:55,764 --> 00:06:58,764
+Evet arkadaşlar, tekrar günaydın herkese.
+
+6
+00:07:06,324 --> 00:07:07,364
+Sesim geliyor mu?
+
+7
+00:07:08,684 --> 00:07:09,444
+Günaydın hocam.
+
+8
+00:07:09,543 --> 00:07:10,824
+Evet hocam, geliyoruz. Günaydın.
+
+9
+00:07:11,824 --> 00:07:12,843
+Günaydın hocam.
+
+10
+00:07:15,684 --> 00:07:21,204
+On altı kişiyle konuşacağız. Peki, başlayabiliriz. İlk önce şu haftalık plana göre açayım.
+
+11
+00:07:22,824 --> 00:07:26,444
+Şimdi haftalık planı da bugün on üç Mart.
+
+12
+00:07:28,531 --> 00:07:49,891
+Hayat belgesi veritabanlarını bitirmek varmış hedefimizde. Belki bugün şu anlamsadik uzaylarına da geçebiliriz. Belki şu ödevi bir de şuradan alıp şuraya koyabiliriz diye tahmin ediyorum. Bugün çünkü şey yaparsam biraz, anlamsadik uzaylarına ilerlersem önümüzdeki hafta ödevi verebilirim belki.
+
+13
+00:07:52,500 --> 00:08:00,500
+Teslim tarihini değiştirmeniz zaten o aynen kadar. İki haftanız olur en azından ödevi yapmak için sizin için daha iyi olur diye düşünüyorum.
+
+14
+00:08:00,500 --> 00:08:03,500
+Şimdi...
+
+15
+00:08:05,500 --> 00:08:10,500
+O zaman tamam. Burası, burası işimiz yok şimdilik.
+
+16
+00:08:13,971 --> 00:08:29,431
+Dediğim gibi ödevler bu online yazı tere üzerinde olacaklar. Her şeyi onun üzerinden alıp vereceğiz. O aklınızda olsun. Peki, o zaman başlayalım.
+
+17
+00:08:32,851 --> 00:08:51,631
+Geçen hafta Hayat Bilgisayar Mühendisliği tabanlarından bahsetmiştik size. Bu tarz Hayat Bilgisayar Mühendisliği tabanlarına ihtiyaç var. En azından formatında olanların, şununla şununla arasında şu türden bir ilişki vardır. Formatında olanları.
+
+18
+00:08:51,988 --> 00:09:06,528
+Toplamak için mesele. Çeşitli yaklaşımlar olduğundan bahsetmiştik. Oyunlaştırma gibi süreçler de vardı. Çünkü bunları kabaca gönüllülerden alabiliriz fikri üzerinedi buradaki olay.
+
+19
+00:09:18,131 --> 00:09:23,451
+Şu kavramla şu kavramasında şu ilişki vardır girebiliyorlardı. Yeni kavramlar girebiliyorlardı.
+
+20
+00:09:23,451 --> 00:09:32,451
+Bir de orada kritik şey vardı, şu tahminlerin oyunu vardı hatırlarsanız. Monotonik rizimlik ve non-monotonik rizimlik ne demek?
+
+21
+00:09:32,451 --> 00:09:42,811
+Monotonik rizimlik yapmanın çok da fazla bir anlamı olmadığı, daha doğrusu yani ritabanını eklemek için yani monotonik rizimlik yapmanın ritabanını ekleme yapmak için çok fazla anlamı olmadı.
+
+22
+00:09:43,124 --> 00:10:08,224
+Kontrol için falan olabilir. Orası ayrı bir hikaye. Ama zaten Monotonik Rizzling'de elde ettiğimiz şeyler zaten doğru olacağı için eğer ki öncüleri doğruysa oradan çok da fazla ifade sağlayamadık. Asıl ki tahmine dayanılan Monotonik Rizzling'de tahminler üretip, olası ilişkiler üretip bunların doğru olup olmadığını kullanıcılara sormaktan bahsediyoruz.
+
+23
+00:10:09,556 --> 00:10:11,532
+Şimdi...
+
+24
+00:10:15,091 --> 00:10:36,048
+Bunlardan bahsetmiştik. En sonunda, hayat bilgisayarın kalitesi nasıl ölçülü onlardan biraz bahsetmiştik. Şuraya kadar gelmiştik herhalde. Evet. Şimdi bilgi çıkarımından bahsedeceğim. Yani hayat bilgisayarın...
+
+25
+00:10:36,048 --> 00:10:55,228
+Tabanlarını oluşturmak için de kullanılabilecek bir yaklaşım. Başka türlü amaçlar için de kullanılabilecek bir yaklaşım. Çok temelde belki bunu şu şekilde tariflemek mümkün. Yapısal olmayan bir kaynağı yapısal hale çevirmeye çalışmak. Ne demek istiyorum?
+
+26
+00:10:56,083 --> 00:11:07,863
+Buradaki yapısal olmayandan kastım düz metinler. Yapısal olandan kastım tablo şeklinde olan yapılar. Mesela bir eskali tabanları da tarım.
+
+27
+00:11:08,128 --> 00:11:32,908
+Bezikin Tevbu düşünün. Orada her bir hücrenin ne olduğu belli. Yani hani ve yanındaki aynı satırda bulunan diğer hücrelerinle nasıl bir ilişkiye sahip olduğunu temelde biliyoruz. Biz tanımlıyoruz. Ve programlarımızda ona göre yazıp ona uygun bir şekilde tutarlı bir şekilde doldurulmasını sağlıyoruz. Üstlerine incelemek istiyoruz vs. vs.
+
+28
+00:11:33,587 --> 00:11:59,587
+Bu dediğim gibi yapısal bilgiler ya da bir Excel tablosu. Bunlar dediğim gibi tablo yapısı, normal şeyler yapısal. Yapısal olmayandaysa bu elimizdeki kaynağın içindeki bilgilerin birbirleriyle nasıl ilişkiye sahip olduğunu bilmediğimiz durumlar. Yani mesela bir metin var. Mesela buradaki örnek metimiz işte 21 yaşındaki inşaat işçisi vs. vs. Şimdi burada...
+
+29
+00:12:00,340 --> 00:12:16,100
+Bizim elimizde buradaki bilgilerin birbirleriyle nasıl bir ilişki içerisinde oldukları temelde verilmiş değil. Biz bunu çıkartmaya çalışıyoruz. Mesela şöyle bir şeyden bahsediyoruz. Yukarıdaki paragraftan aşağıdaki tabloyu oluşturmaktan bahsediyorum.
+
+30
+00:12:17,200 --> 00:12:26,360
+İşte katil kim, kurban kim, sebep kim, yok sebep ne, suç aletini ne gibisinden bir şey de çıkartmaya çalışıyoruz.
+
+31
+00:12:26,868 --> 00:12:38,428
+Şimdi bu tarz bir şeyi yapmanın, yapabiliyor olmanın, böyle söyleyelim, sebebi ne olabilir? Ne işe yaramak böyle bir şey yapabiliyor olsan?
+
+32
+00:12:44,596 --> 00:12:45,355
+Ne dersiniz?
+
+33
+00:12:47,915 --> 00:12:50,875
+Hocam, üzerlerinde çok daha kolay veri işlemi yapabiliriz.
+
+34
+00:12:52,115 --> 00:12:56,036
+Değil mi? Çok daha işlenebilir bir hale gelir. Evet. Başka?
+
+35
+00:12:57,456 --> 00:13:01,836
+Bir veri tabanı oluşturabiliriz. Örneğin suç aletlerinin olduğu bir veri tabanı mesela.
+
+36
+00:13:02,415 --> 00:13:04,696
+Ya da katillerin olduğu bir veri tabanı.
+
+37
+00:13:05,155 --> 00:13:08,776
+İstatistiki bilgi falan çıkartmak çok daha kolay olur herhalde. Değil mi?
+
+38
+00:13:09,216 --> 00:13:30,615
+Metinleri okumadan çok hızlı bir şekilde, aslında bir şekilde özetini aslında çıkartıyorsunuz. Sizin şeyiniz neyse, bu veriden çıkartılmasını istediğiniz şeyler neyse onları bir şekilde tarifleyip onları alabilirseniz bunun içerisinden doğru bir şekilde. Ya da yeterince doğru bir şekilde.
+
+39
+00:13:31,860 --> 00:13:51,860
+O durumda epey bir statistiktir, veri işlemedir, veriyi anlamaktır vs. vs. Gülsünler şeyler çok hızlı bir şekilde yapma imkanınız var. Yani burada mesela bir tane paragraf değil de bir milyon tane paragraf olduğunu düşünün. Bir milyon tane paragrafın içerisinden bu tarz bir şey çıkarttığın zaman epey sağlam bir...
+
+40
+00:13:55,316 --> 00:14:00,316
+İstatistik Bilgisi elde edebilirsiniz hızlı bir şekilde.
+
+41
+00:14:00,316 --> 00:14:09,316
+Şimdi bu tarz bilgileri çıkartmak için kullanılan bir sürü yöntem var.
+
+42
+00:14:09,316 --> 00:14:15,316
+Bunlardan birazcık bahsedeceğim. Bazı bilgilerin zaten oldukça benziyorlar. Bakalım neler varmış.
+
+43
+00:14:15,316 --> 00:14:21,316
+Birincisi çok kabaca hepinizin bir regexler var. Güzel, ne ifade? Regular expressions dediğimiz.
+
+44
+00:14:21,460 --> 00:14:41,120
+Yani verinin içerisindeki düzenliliği ve bu düzenliliğin de varyasyonlarını kesin olarak biliyorsanız, mesela bir telefon numarası, bir telefon numarasının formatını ifade edebiliyorsanız ki regexler bunu sağlıyorlar ve bunları kullanarak erişmek mümkün.
+
+45
+00:14:41,120 --> 00:14:47,560
+Mesela şimdi şey, telefon numarasının regexini yazmak, evet şey kolay.
+
+46
+00:14:49,231 --> 00:15:12,231
+Mesela bir posta kodununki de fena değil. E-mail adresi falan. Onlar daha kolaylar. Ama mesela bir adres, bildiğiniz hani direkt standart bir adresi. Sizin regex'i, yani bir tane regex de öyle söyleyeyim ya da, bütün böyle adresleri falan kapsamak çok çok kolay bir şey değil. Çünkü adresler böyle biraz...
+
+47
+00:15:12,596 --> 00:15:24,235
+Varyasyonu daha yüksek olan şeyler. Öyle söyleyebiliriz belki. Dolayısıyla varyasyonların bildiğiniz, erişebildiğiniz, varyasyonların yeterince kapsayıcı olduğu…
+
+48
+00:15:24,820 --> 00:15:47,720
+Bu durumlarda bu tarz şablonları kullanmak, regisleri kullanmak oldukça mantıklı. İçerisinde şu kadar tane sayı varsa, bu sayılar şundan büyük değilse, üç tane karakter varsa ondan sonra, sonra nokta geliyorsa gibi gibi bu tarz ifadeleri yazmak oldukça kolay. Kolay demeyelim, mümkün. Bunlar kullanılabilecek şeyler. Yani yöntemlerden bir tanesi.
+
+49
+00:15:49,203 --> 00:16:06,091
+Bir diğer şablon türü yazım dilindeki şablonlar. Sayıya, rakama falan ya da büyük harfe, küçük harfe falan takılarak değil de biraz daha dildeki kelimeler üzerinden şablonlar oluşturmak mümkün olabilir. Mesela buradaki basit örneğimiz de...
+
+50
+00:16:06,995 --> 00:16:32,355
+Bir şablondan bahsediyoruz. Şimdi buradaki şablonumuz ve diğer şablonu. Şimdi ve diğer diye ifade ettiğimiz şablon bize neyi söylüyor onu bir düşünelim. İlk önce bunu tabii nasıl kullanıyoruz o da ayrı bir konu ama şeyleri gözüküyordur zaten. Sağ taraftaki yaptığımız işlem. İşte araba motona gidip ve diğeri yazıyorsunuz. Karşında bir sayfa çıkıyor.
+
+51
+00:16:32,851 --> 00:16:56,491
+İçinde ve diğer geçen web sayfası başlıkları ya da içerikleri vs. vs. Şimdi bunun sol ve sağ tarafındakiler, yani bu ve diğer şablonun solundaki ve sağındaki ifadelere baktığınızda bunların birbirleriyle her zaman değil tabii ki ama genelde bir İZE ilişkisi içerisinde İZE dediğimiz şey, bu şu tür bir şeydir.
+
+52
+00:16:57,172 --> 00:17:19,951
+Mesela buraya bakarsak, gıda bir tür mühendisliktir. Ses kayıtları bir tür multimedya ürünüdür. Spor bir tür aktivitedir. Dergiler bir tür periyodiktir. Güzel sanatlar bir tür konudur. Bu çok anlamlı değil. Ama sözleşmeler bir tür hukuki belgedir.
+
+53
+00:17:20,596 --> 00:17:33,436
+Gibi gibi ilişkileri ne yapabiliyorsunuz? Bu kadar basit bir şablonu kullanarak bulmanız mümkün. Bu şablonumuz her zaman doğru sonuç mu? Hayır.
+
+54
+00:17:34,556 --> 00:17:48,115
+Bazı yani ürettiklerinin, öyle söyleyelim, yani bu şablonla elde ettiğiniz ikililerin, ikiliden kastım şu, ve diğerin sondaki ve sandaki arasında işte İZE ilişkisi vardır. Bu bir tür şudur, ilişkisi vardır.
+
+55
+00:17:48,788 --> 00:18:13,648
+Bu bilgilerin ne bileyim belki %80'i de olur. Olabilir mi? Olabilir. Bir kısmı da yanlış olacaklar dolayı. Dolayısıyla bu yazım dinledik şablonlar ilişki türüne göre, yazdığınız şablonun kalitesine göre size farklı kalitede içerikler, farklı kapsayıcılıkta içerikler sunabilirler.
+
+56
+00:18:14,387 --> 00:18:16,447
+Bunlarla alakalı biraz konuşacağız.
+
+57
+00:18:19,635 --> 00:18:42,936
+Başka ne var? Öğleni ayrılmış metinleri kullanmak mesela. Burada tabii direkt onun birebir şeyi yok ama şöyle bir şey düşünebilirsiniz. Yerken kelimesinden önceki kelimeler ya da mesela şunu düşünelim. İlk önce öğlene ayrılmayı söyleyeyim. Cümleleri diyelim ki öğlene ayırabildiniz. Tamam mı? En az öyle bir tool var.
+
+58
+00:18:43,359 --> 00:18:51,039
+Öğleni ayırmaktan kastım işte öznesiz şudur, nesnesiz şudur, yüklemi şudur vesaire vesaire gibisinden düşünün.
+
+59
+00:18:51,619 --> 00:18:55,659
+Bunu yapabilen bir aracınız olduğunu düşünün. O durumda mesela şunu diyebilirsiniz.
+
+60
+00:18:57,799 --> 00:19:05,659
+Yüklemi yemek olan yani bir şey yiyor olan cümlelerin...
+
+61
+00:19:06,064 --> 00:19:19,464
+İçindeki belirtili nesneler, yani neyi yiyor? Belirtili nesneler yiyecektir. Durma, yeriz. Bu bir şey…
+
+62
+00:19:19,700 --> 00:19:42,340
+Kabaca fikir. Bunu daha basit bir formda ifade ederseniz şöyle bir şey diyebilirsiniz. Yerken kelimesinden önceki kelimeler, yani ben bir şey, internette bir arama motorunda bu işi yapabilirsiniz ya da bir derlem üzerine yapabilirsiniz. Yerkenden önceki kelimeler bizim şeydir. Ona yiyecektir.
+
+63
+00:19:42,900 --> 00:20:06,559
+Şimdi bunu dediğinizde bakalım neler oluyor? Bir şeyler çıkıyor. Mesela döner yerken, döner yenebilecek bir şey mi? Evet. Mesela yerken family demiş. Onun altında surname yani. Sörneğim yenilecek bir şey mi? Yok. Orada beklişimize yaramadı. Bir alta bakalım. Kraker yerken çıkmış. Evet kraker bir yiyecek. Zeytin yerken çıkmış, mantar yerken çıkmış.
+
+64
+00:20:07,059 --> 00:20:29,220
+Fena değil gibi gözüküyor. Yani hani bu tarz şeyler kullansanız belli yerlere tabii ki hata yapacaksınız ama fena bir şey üretmiyor gibi gözüküyor. Ama tabii bu yolda ne kadar çok şey elde edebilirsiniz? Orası düşünme, araştırmalı kısmı. Mesela işte yerken ya da içerken falan diye aratsanız karşınıza ne çıkıyor?
+
+65
+00:20:34,355 --> 00:20:55,415
+Orası birazcık karışık olmamış. Çay içerken, evet sigara içerken pek olmamış belki. Kahve içerken çıkmış. Dolayısıyla burada şey kısmında dediğim gibi belli fiillerin öncesindeki kelimeler belli türden yapılara sahiptir diyebilirsiniz.
+
+66
+00:20:55,968 --> 00:21:15,588
+Bu kullanılabilecek tarzlardan bir tanesi. Şimdi burada karşımıza aslında şablonlar çıkıyor. Yani regex içinde olsun, cümleyi ölerine ayırmak içinde olsun. Burada karşımıza şablonlar çıkıyor. Şablonların iki tane özelliği var. Birincisi üretkenliği.
+
+67
+00:21:15,955 --> 00:21:34,655
+Yani ben bu şablonu kullanarak kaç tane bilgi elde ettim, kaç tane bilgiye eriştim, bu bir şey. Yani bir şablonun üretkenliğinin yüksek olmasının anlamı onu kullanarak o kadar fazla, işte ikili, üçlü, artık ne türden bir bilgi çıkartıyorsanız onlardır.
+
+68
+00:21:35,076 --> 00:21:42,435
+Güvenilikle peki, ürettiği bilgiye doğruluk yani. Bir tarafta miktar var, bir tarafta doğruluk var. Tahmin edebileceğiniz gibi bu ikisi birbiriyle çelişiyorlar.
+
+69
+00:21:43,251 --> 00:21:50,251
+Yani, basayım burada onu örneği var mı?
+
+70
+00:22:01,140 --> 00:22:22,260
+Burada örnek mesela. X'in yeri Y'dir için şablonlarımızın olduğunu düşünelim. Mesela X'in yeri Y'dir için bunlar. Mesela şu şablonlara bakalım. Şu iki şablonu karşılaştıralım birbiriyle. X, Y'nin sınırları içerisindedir. Yani X'in Y'de olduğunu söylüyor. Bir de X slash Y.
+
+71
+00:22:26,163 --> 00:22:33,723
+Şimdi bu ikisini düşündüğümüzde hangisi daha fazla bilgi bize dönecektir? Üstteki mi, alttaki mi?
+
+72
+00:22:34,723 --> 00:22:35,344
+Üstteki mi?
+
+73
+00:22:37,123 --> 00:22:40,123
+Daha fazla bilgi dönecektir. Üstteki mi, alttaki mi?
+
+74
+00:22:41,083 --> 00:22:42,123
+Üstteki değil mi?
+
+75
+00:22:42,844 --> 00:22:44,183
+Üstteki midir acaba?
+
+76
+00:22:48,915 --> 00:23:10,996
+Bakın şimdi şunu yapmanız gerekiyor. Yani X-Y şablonunu aratmanın anlamı şu. Bir tane çizgi çekeceksiniz, slash koyacaksınız. Slash işaretini sandaki ve soldakileri alacaksınız. Ötekisinde ise nin sınırları içerisindedir diye aratacaksınız. Onun önündeki işte iki tane kelimeyi alacaksınız. Hangisi daha çok bilgi üretir?
+
+77
+00:23:12,435 --> 00:23:13,556
+Aşağıdaki hocam.
+
+78
+00:23:13,844 --> 00:23:38,364
+Aşağıdaki çok daha fazla bilgi üreti, çok daha fazla sonuç gelir bize. Yani aslında slash işareti nerede varsa onların hepsindeki sağındaki ve solundaki kelimeleri döndürecek değil mi bize? Alttaki şablonu düşünürsek. Üsttekini düşünürsek, nin sınırları içerisindekinin ifadesinin kaç kez geçtiğiyle alakalı bir şey. Aşağıdaki şablon unutma. Slash'ın kaç kez geçtiğiyle alakalı bir şey.
+
+79
+00:23:38,867 --> 00:23:50,927
+Dolayısıyla aşağıdaki çok daha fazla şey üretecektir. Yani üretkenlik açısından alttaki kesinlikle daha fazla olacak. Peki, doğruluk açısından ne dersiniz?
+
+80
+00:23:55,347 --> 00:23:57,927
+Doğruluk açısından üstteki gibi sanki daha...
+
+81
+00:23:57,927 --> 00:24:01,708
+Üstteki kesinlikle daha iyi olacak. Üstteki daha az şey üretecektir.
+
+82
+00:24:01,708 --> 00:24:09,107
+Değil mi? Aynen öyle. Üstteki daha az şey üretecektir ama ürettiği şeylerin doğru olma ihtimali çok daha yüksek olacaktır.
+
+83
+00:24:09,188 --> 00:24:14,188
+Slaş'ın kullanıldığı bin tane farklı farklı durum var ama işte mini sınırları içerisindedir.
+
+84
+00:24:14,708 --> 00:24:42,687
+Yani o kadar kapsayıcı bir şeyler bize dönmeyecek ama döndüğü şeyler doğru olacaklar. Tamam mı? Dolayısıyla bu ikisinin bir de çatışması mevzusu bu. Neredeydi o? Burası. Üretkenlik ve güvenlik dediğimiz kavramlar birbirlerine çelişiyorlar. Bu ikisini birden optimize etmek, ikisini de iyi olan şablonlar bulmak çok çok kolay bir şey değil. Ama tabii orada bir sürü teknikler kullanılabilir yine. Hani gelenleri bir şekilde valide etmek falan.
+
+85
+00:24:42,708 --> 00:24:45,888
+gibi farklı farklı yollarla kullanılabilir.
+
+86
+00:24:47,768 --> 00:24:48,988
+Burayı geçelim.
+
+87
+00:24:49,408 --> 00:24:50,388
+Web sayfalarından.
+
+88
+00:24:50,807 --> 00:24:52,067
+Bu aslında biraz şey.
+
+89
+00:24:56,188 --> 00:24:59,468
+Mesela ürün karşılaştırma motorları vardır bilirsiniz.
+
+90
+00:25:00,248 --> 00:25:04,408
+İşte şu sitede şu kadara, şu sitede şu kadara, şu sitede şu kadara falan gibisinden şeyler çıkartıyorlar.
+
+91
+00:25:04,852 --> 00:25:28,572
+Şimdi bunları çıkartabilmek için şöyle bir şey yapıyor aslında. Siz bir şey soruyorsunuz diyelim ki sizin o sorduğunuz şeyi arka tarafta 10 tane yere soruyorlar. Sordukları yerlerden giren sayfalardan da o sizin sorduğunuz bilgiye dair olan şeyleri o sayfanın, web sayfasının eşkener konumun içerisinden ayıklamayı çıkartmaya çalışıyorlar.
+
+92
+00:25:29,140 --> 00:25:32,220
+Bunu tabii keşfi yapabilirler, keşsiz yapabilirler vs.
+
+93
+00:25:33,680 --> 00:26:00,860
+Daha önce yaptıysa bu işi bir daha yapmaz. Son bir saatesin içinde yaptıysa bir daha yapmaz. Fener bir sürü şeyler var. Ama temel özünde böyle bir şey yapılıyor. Yani bir HTML sayfasının içerisinden bilgi çıkarımı yapması lazım. Şimdi bilgi çıkarımı dediğimiz şey ne? Mesela buradaki bakarsak sayfaya. Bu HTML sayfası, işte Amazon'un bir zamanlarki kodunun, HTML kodunun şey şablonu böyleymiş. Şimdi herhalde baya bir farklılır.
+
+94
+00:26:01,680 --> 00:26:06,540
+Buradan elde etmeye çalıştığımız şey neler? Mesela bu sağ tarafta gözüküyor. İşte kitabın şeyi ne?
+
+95
+00:26:07,412 --> 00:26:24,412
+Ne derler ona başlığı, ne yazarı, ne fiyatı, ne kadar liste fiyatı, ne kadar gibi bu tarz bilgiler. Şimdi bu tarz bilgilere, sağ taraftaki bilgilere erişmek için bu sol tarafın içerisindeki HTML kodlarının ne yapacak? Şablonlar oluşturacak bunları.
+
+96
+00:26:32,660 --> 00:26:47,100
+Diyecek mesela. Bu kitabın başlığıdır. İşte ne bileyim ondan sonra şöyle şöyle, şurası. Books, Field, Author, Tire ile başlayan kısımdan itibaren.
+
+97
+00:26:47,584 --> 00:27:08,284
+Şurası muhtemelen değişken bir şey. Şuraya kadar ki ilk a'yı gördüğün yerde kadar kısım yazardır. Aşağıda işte Spun Class List Price'den başlayıp yine ondan sonraki Spun'a kadar biten kısım List Price gibi gibi bunları ne yapabilirler? Çıkartabilirler. Dolayısıyla denemik bu web sayfaların içerisinden bunu çıkartmak mümkün mü? Mümkün.
+
+98
+00:27:08,660 --> 00:27:25,120
+Yani aslında başka birisinin yapısal olarak tuttuğu ama ekrana onu yapısal olarak vermediği durumda onu bir şekilde ne yapmaya çalışıyorsunuz? Tekrardan kendi yapısal halinize getirmeye çalışıyorsunuz.
+
+99
+00:27:25,715 --> 00:27:41,775
+Bu da dediğim gibi mümkün mü? Evet. Sıkıntı var mı derken bu birçok ticari manada bir yarış aslında. Yani bir taraftan firmalar, içerik üreten firmalar.
+
+100
+00:27:46,163 --> 00:28:13,244
+Kendi veritabanlarının başkaları tarafından kullanılmasını, sorgulanmasını bir açıdan çok fazla istemezler. Ama bir açıdan da iyi trafik getiriyorsa isterler. İyi trafik getirdiğini gördükleri andan itibaren belki API'ler üzerinden falan erişimler, aşılıklı açı taraflı olarak anlaşmalar. Ya da bazen hiç açılmaz, istemiyorsa yine de. Gibi gibi burada bir sürü şeyler var. Ama bu da bir bilgi çıkarım yöntemi olarak düşünülebilir mi? Düşününebilir.
+
+101
+00:28:16,468 --> 00:28:33,048
+Alaşım ve iş robotları temelde bu işleri yapıyorlar. Haber toplamaya da işte bunların hepsi temelde. Aslında yapılan şey ne? Her bir web sayfasının kendi yapısına özel bir mekanizma, bilgi çıkarım mekanizması kurmanız gerekiyor.
+
+102
+00:28:44,468 --> 00:29:06,307
+Sorgulardan kurtulmak için. O yüzden ne yapılıyor? Ne bileyim, belli rastgeleliklerle falan, değişimler falan yapılıyor. Yani kodu, şu bilgi çıkarım mekanizmalarının kodunun sürekli güncellenmesini gerektirecek yapılar kurulmaya çalışılıyor.
+
+103
+00:29:07,251 --> 00:29:28,751
+Karşı tarafta da bunun tersi genel şeyler yazılmaya çalışılıyor. Neyse sonuç olarak hani mekanizma böyle bir şey, böyle bir gerçeklik de var mı hayatımız ama tabii bunu benim web sayfasımdaki içeriği kullanarak kendi faydanı kullanıyorsun.
+
+104
+00:29:38,548 --> 00:30:00,000
+İfadesi, nasıl söyleyeyim, günümüzdeki ya da önümüzdeki birkaç zamanki sağlam kolay...
+
+105
+00:30:00,000 --> 00:30:09,079
+Oradan bir tanesi olabilecek gibi geliyor. Şu manada, ticaret manasında değil ama buradaki şey, yani ticaret kısmı da var, ürün satma kısmı da var, orası ayrı bir hikayede.
+
+106
+00:30:09,879 --> 00:30:24,779
+Şeyden bahsediyorum, generatif modellerden bahsediyorum. Generatif modeller ister metin olsun, ister görsel bir şeyler olsun, internette halka açık olan şeyleri toplayıp onlardan yeni bir şeyler üretiyorlar.
+
+107
+00:30:31,124 --> 00:30:56,124
+Bir açıdan baktığınızda halka açık zaten bunlar. Yani insanlar erişsin diye bunlar konuyorlar. Ama işte bunların hepsi bu tarz teknolojiler olmadan önceydi belki. Yani insanlar ön o göre yazmışlardı öyle bir yerleri bir şeyleri. Şimdi bunları bu üretici makineler toplayıp…
+
+108
+00:30:57,940 --> 00:31:18,940
+Bu konuda erişilebilir kıldığında sıkıntı oluşuyor mu, oluşacak mı? Evet, oluşacak. Şimdi buradaki mevzunun aslında çok benzer bir şey oluyor. Yani sizin sayfanızda bir şey var. O sizin sayfanızdaki bilgiyi...
+
+109
+00:31:19,188 --> 00:31:44,328
+Size hiçbir şekilde referans vermeden alıp ya da tabii şey de olur yani satış için size yönlendiriyorsa orası da ayrı bir mevzu olur. İyi bir açıdan düşünürseniz. İyi trafik getiriyorsa win-win şeklinde bir yapı varsa tamam. Ama sizin web sayfanızdaki bilgiyi size hiçbir şekilde referans vermeden alıp kullanıp birilerinin ihtiyacını karşılıyorsa
+
+110
+00:31:45,460 --> 00:32:06,740
+Burada ciddi bir sıkıntı olacak gibi düşünüyorum ben. Bilmiyorum sizden ne dersiniz bu konuda. Yani mesela örnek vermekte, mesela forum sitelerini düşünelim. Şimdi bugüne kadar forum sitelerini insanlar yazdı, çizdiler vs. İşte birisinin sorunu oldu, orada yazdı, çözdü falan. Öyle öyle ilerledi forum sitesi.
+
+111
+00:32:13,203 --> 00:32:26,843
+Bilinir olmak için, birilerine yardım etmek için vs. vs. Ama sorunun cevabını birisi verdiğinde o soruya kimin cevap verdiği vs. onların hepsi gözüküyorlar. Hoştan baktığınızda.
+
+112
+00:32:28,843 --> 00:32:29,843
+Şimdi...
+
+113
+00:32:30,996 --> 00:32:57,476
+Hocam, orada sizin de dediğiniz gibi aslında şey, veri public yani halka açık olarak dağıtılıyor. Önemli olan kısım orası, eğer mesela diyelim ki web sitesinde fiyatları toplayacaksınız veya ürün bilgilerini toplayacaksınız. Zaten oraya halka açık olarak konulmuş. Baktığımızda ben bunu teknolojiyle yapmasam bile, elime kağıt kalem alıp da yapsam gene aynı kapıya çıkacak. Ben orada bilgiyi toplamış olacağım. Çünkü halka açık olarak paylaşılıyor.
+
+114
+00:33:26,996 --> 00:33:35,316
+Gazeteler yavaş yavaş bunu yapmaya başladılar. Ama günün sonunda oradaki şey küçük bir metin de olsa, public bir veri.
+
+115
+00:33:35,416 --> 00:33:42,136
+Ne kadar şey de olsa. Tabi orası biraz daha bilişim hukukunun alanına geliyor ama biz baktığımızda şey de oluyor.
+
+116
+00:33:42,136 --> 00:33:51,036
+Şöyle söyleyeyim. Şunu demeye çalışıyorum. Halka açık veri olduğu için bunu koruman falan gibisinden bir şey söz konusu değil.
+
+117
+00:33:51,296 --> 00:33:54,836
+Bu konuda hemfikirim zaten. Ben başka bir şeyden bahsediyorum.
+
+118
+00:33:54,996 --> 00:34:08,815
+Şundan bahsediyorum. Haber siteleri falan sonuçta bu işten para kazanıyorlar mı? Kazanıyorlar. Yani haberlerin bir kısmını yarısını yayınlayarak şunu yaparak bunu yaparak falan ben de bir şeyler yapabilirler mi? Evet yapabilirler. Herhangi bir sıkıntı yok.
+
+119
+00:34:13,108 --> 00:34:27,268
+Ya da işte e-ticaret sitelerini düşünürsek bundan para kazanıyorlar vs. Ama şundan bahsediyorum ben. Mesela işte bir sorunun bir çözümünü sen işte uğraşıyorsun, ediyorsun vs. vs. buluyorsun ve bir yerlere yazıyorsun.
+
+120
+00:34:27,956 --> 00:34:34,756
+İşte forum siteleri var, şu da var. Ya da kendi web sitelerine koyuyorsun diyorsun. Şu iş şöyle yapılır falan diye anlatıyorsun.
+
+121
+00:34:35,136 --> 00:34:40,496
+Kendi web sayfanda. Vardı ya öyle bir sürü şey. Amatör ruh. Öyle diyeyim. Anlatabildim mi?
+
+122
+00:34:40,976 --> 00:34:47,436
+Yani direkt birebir para kazanma amacı olmadan. Ya da işte video çekiyorsun. Şu iş şöyle yapılır falan. Var ya bir sürü.
+
+123
+00:34:47,436 --> 00:34:52,436
+Şimdi bu tarz bilgilerin hepsinin...
+
+124
+00:34:52,851 --> 00:35:05,112
+Toplanıp insanlara tek bir aray üzerinden verildiği ve bunu üretenlere hiçbir referans verilmediği durumda acaba bu gönüllüler hala bu işi yapmaya devam ederler mi? Sorun bu. Anlatabildim mi?
+
+125
+00:35:06,112 --> 00:35:08,491
+Tabii referans orada önemli. Mesela...
+
+126
+00:35:08,491 --> 00:35:14,031
+Yoksa, şimdi referans yoksa insanlar bunu yapmaya devam ederler mi? Sorun bu. Ne dersiniz?
+
+127
+00:35:14,931 --> 00:35:19,891
+Herkes söyleyebilir. Yani insanlar devam etmezler, ederler. Niye ederler, niye etmezler?
+
+128
+00:35:21,556 --> 00:35:23,556
+Meraj ediyorum fikirlerinizi.
+
+129
+00:35:28,755 --> 00:35:29,935
+Sorum anlaşıldı mı?
+
+130
+00:35:33,115 --> 00:35:35,076
+Bir kere de söyler misin hocam?
+
+131
+00:35:36,496 --> 00:35:40,755
+Bir kez daha söyleyelim soruyu. Tamam. Şimdi şunu diyorum. İnsanlar...
+
+132
+00:35:41,780 --> 00:35:57,720
+Kendi ürettikleri içeriği, ben ticari firmalardan bahsetmiyorum. İnsanlardan bak. Mesela Wikipedia'ya yazıyorsunuz bir şeyler. Ya da kendi web sayfanıza yazıyorsunuz bir şeyler. Forumlara cevaplar veriyorsunuz. Forumları okuyorsunuz. Stepoverflow'u düşünün mesela. Örnek vermek gerekliyorum. Yazılımı geliştirirken.
+
+133
+00:35:59,860 --> 00:36:02,412
+Şimdi Stepoverflow'un...
+
+134
+00:36:02,771 --> 00:36:22,412
+Sadece onun üzerinden gidelim belki. Sego workflow'un bütün içeriğini özümseyip, siz herhangi bir soru sorduğunuzda onun cevabını size oradan bulup getiren ve siteye hiçbir şekilde referans verilmeyen bir yapı olduğunu düşünün. Anlatabildim mi? Kim yapmış, kim etmiş, şu durumdu. Anlatabildim mi demek istediğimi?
+
+135
+00:36:23,923 --> 00:36:43,083
+Bu durumda insanlar hala o siteye girip forumları cevaplamaya çalışırlar mı? Zaten soru sormayacaklar kesinlikle. Soru sorulması korkunç derece düşecektir böyle bir durumda değil mi? Niye soru sorasın ki? Cevabını zaten direkt sorup alabiliyorsun.
+
+136
+00:36:44,148 --> 00:36:55,788
+Hayır, hayır. Bir daha bir daha soru sormak manası yok. O sayfaya, yani siz tek o rufla üzerinden soru sormazsınız. Onu demek istiyorum. Peki, cevaplar? İnsanlar bunlara cevap vermeye devam ederler mi?
+
+137
+00:36:57,684 --> 00:37:10,824
+Aslında hocam şu an chat'ci, Beat'in yaptığı şey bu diyebilir miyiz? İnternette birçok veri tabanından, birçok forum sitesinden veya bilgi alabileceği her yerden alıp kendini eğitip birçok soruya cevap ver.
+
+138
+00:37:10,824 --> 00:37:12,884
+Tamam, ben isim vermedim zaten.
+
+139
+00:37:13,331 --> 00:37:17,152
+Ama evet yani ona geliyor. Onu merak ediyormuşlar.
+
+140
+00:37:17,171 --> 00:37:24,612
+Bence bir süre sonra bu tarz forum sitelerinin veya public bilginin yayınması zamanla azalabilir.
+
+141
+00:37:24,731 --> 00:37:37,411
+Çünkü insanlar oraya bilgi paylaşımı yaparken kendi kimliklerinin de gelişmesini, kariyer anlamında gelişmesini hedeflerken veya işte ticari bir kaygıyla yapıyor olabilmeler veya sorumluluk seçim.
+
+142
+00:37:37,411 --> 00:37:40,091
+Bu zamanla azalacaktır diye düşünüyorum.
+
+143
+00:37:41,076 --> 00:38:00,215
+Yani GitHub'a mesela yazıyorsunuz, kodlarınızı koyuyorsunuz değil mi? Mesela. Bir tane sistem var. GitHub'taki bütün kodları inceleyip oradan kullanıcıların sorularına fazla kodları üretiyor diyelim ki. O dakikadan sonra kim GitHub'a kodunu koyar ki? Mesela. Anlatabildim mi demek istediğim?
+
+144
+00:38:01,172 --> 00:38:01,572
+Evet.
+
+145
+00:38:01,832 --> 00:38:06,552
+Azalır mı yani? Bence azalır gibi geliyor da sizin fikriniz nedir bu konuda? Onu merak ediyorum.
+
+146
+00:38:06,552 --> 00:38:06,891
+Ben de özel hocam.
+
+147
+00:38:06,912 --> 00:38:18,891
+Hepiniz yani piyasada bir şekilde çalışıyorsunuz vesaire vesaire. Benden daha hakimsiniz bu tür mevzulara. O konuda fikrinizi almaya uğraşıyorum. Yani şu doğrudur şu yanlışı bana öyle geliyor. Anlatabildim mi demek istediğimi?
+
+148
+00:38:19,603 --> 00:38:37,844
+Hocam, bence de azalır diye düşünüyorum. Çünkü bir içerik üretmek zaten zor. Kendin özgün bir içerik üretiyorsun. Daha sonra senin ürettiğin içerikten herhangi bir cevaplar alınıyor, kullanılıyor. Ama sen bir referans olarak gösterilmiyorsun. Ben de azalacağını düşünüyorum.
+
+149
+00:38:38,420 --> 00:38:40,000
+Yani neyse. Evet.
+
+150
+00:38:40,600 --> 00:38:56,140
+Ama ben değişeceğini düşünmüyorum açıkçası. Bu GitHub case'inde en azından. Çünkü GitHub Copilot var. O sizin söylediğiniz şeydi aslında. GitHub Copilot. Bütün GitHub'a bakıyor. Bir şeyle beraber, bir sistemle beraber.
+
+151
+00:38:56,199 --> 00:39:04,000
+Copilot sana yardımcı olan bir şey. Ben ondan bahsediyorum. Ben şunu demek istiyorum. Bana şunu yapan kodu ver diyorsun ve verdiğinden bahsediyorum.
+
+152
+00:39:04,884 --> 00:39:21,564
+Kopilot'ta hani sen bir şey geliştirirken sana yardımcı oluyor. Ondan bahsetmiyorum. Ben şeyden bahsediyorum. Yani sen normal Türkçe söyleyeceksin derdini, istediğin şeyi, o da sana direkt cevabı hap şeklinde verecek. Ondan bahsediyorum.
+
+153
+00:39:22,547 --> 00:39:32,607
+Tamam, şey yapıyor, chat GPT yapıyor şu anda bunu. Hani ben söylediğiniz case'i tamamen kullandım, söyledim, verdi ve kodu yine GitHub'a koydum aslında.
+
+154
+00:39:33,887 --> 00:39:35,587
+Niye GitHub'a koydun ki o kodu?
+
+155
+00:39:36,567 --> 00:39:42,847
+Çünkü hani direkt her şeyi vermedi bana. Hani söylediğim parçayı verdi. Ben kendi bölümde...
+
+156
+00:39:42,847 --> 00:39:44,287
+Tamam, her şeyi verdiğinden bahsedin.
+
+157
+00:39:44,827 --> 00:39:46,587
+Her şeyi verdiğinden bir durumdan bahsedin.
+
+158
+00:39:48,436 --> 00:39:58,736
+Yani şöyle olabilir, store etmek için belki kitaba koyabilirim yine ama bu bilgiyi public olarak dağıtmak için kitaba koymam çünkü bilgi benim bilgim değil aslında.
+
+159
+00:40:00,956 --> 00:40:07,195
+Ama sen sormuşsun, cevabını almışsın, onu oraya koymam diyorsun zaten. Ya koysan da zaten bir anlamı da yok, koymanın ne anlamı var ki zaten?
+
+160
+00:40:07,568 --> 00:40:11,288
+Tabii tabii. Hani store etmek için, cloud'la depolamak için sadece koyuyor.
+
+161
+00:40:11,288 --> 00:40:19,248
+Yani hani kitaba koymanın manasını ben bir şekilde hani open source, open size destek anlamında söylüyorum.
+
+162
+00:40:19,368 --> 00:40:24,788
+Yoksa kitabı store anlamında şeyden bahsetmiyorum. Anlatabildim mi?
+
+163
+00:40:24,788 --> 00:40:34,788
+Hani bilgi birikimine katkı sağlamak anlamında diyorum. Yani bütün bilgi oradaysa, yani hani şu ana kadarki erişilen bilgi oradaysa, çünkü insanlar bugüne kadar hep oraya...
+
+164
+00:40:35,476 --> 00:40:47,275
+Hiç böyle bir şey olmayacağını bir şekilde haberdar olarak koymadılar. Öyle söyleyeyim doğal olarak. Ama şimdi böyle bir durum var. Başka fikirler?
+
+165
+00:40:47,635 --> 00:40:59,635
+Hocam, bir de şöyle düşünebiliriz. Şimdi chat GPT gibi ya da vesaire diğer uygulamalardan bu şekilde public erişim kesildiği durumları düşünürsek.
+
+166
+00:40:59,967 --> 00:41:17,507
+Örneğin ücretlendirme olsun vs. Şimdi bu ücretlendirmenin boyutuna göre de değişebilir ama öğrenci mantığıyla birazcık bakarsak yine public ve erişim isteyecek kullanıcılar. O yüzden de hani alternatif olarak da düşünülebilir.
+
+167
+00:41:27,967 --> 00:41:37,188
+Public olmasını sonsuzlaştırmış gibi oluyorum. ChatGPT özel bir firma neticede. Yarın bir gün nasıl bir kıstas koyacak onu bilemeyiz gibi.
+
+168
+00:41:39,747 --> 00:41:49,487
+Doğru ama ben şöyle, ChatGPT tek bir tane firma değil mi? Muhtemelen önümüzdeki zamanlarda ona benzeyen başka şeyler de ortaya çıkacak mıdır?
+
+169
+00:41:49,983 --> 00:42:04,744
+Evet, yani hepimiz şu an onu bilmemiz lazım. Muhtemelen çıkacaktır. Şimdi hani mesela web sayfalarını düşünelim. Web sayfaları Google tarafından indekslenmek istiyorlar mı?
+
+170
+00:42:07,604 --> 00:42:10,704
+Evet. İstiyorlar. Çok fazla istiyorlar değil mi? Niye?
+
+171
+00:42:12,019 --> 00:42:27,780
+Arama bulanında gelmek için. Bulunabilmek için insanlar erişebilsinler diye istiyorlar. Ama bunun bir karşılığını da alıyorlar. Ne manada alıyorlar? Onların sayfalarına gidiyor süreç. Doğru mu? Evet. Şimdi burada bu süreç böyle değil.
+
+172
+00:42:28,820 --> 00:42:47,360
+Anlatabildim mi? Yani hani böyle sıkıntılı olabilecek kısım birazcık orası. Dediğim gibi hani paralı olur şu olur bu arayüzlerin ben direkt birebir arayüzlerin çok paralı yani hani enteresan varyasyonlarının versiyonlarının falan paralı olacağını tahmin edebiliyorum ama Google'ın arama sayfası paralı mı?
+
+173
+00:42:48,340 --> 00:43:08,340
+Değil. Değil. Yani hani onların çok paralı bir hale getirileceğini zannetmiyorum. Yani onlar giderek daha çok uygulamanın içerisinde gömülecekler gibi geliyor bana. Son kullanıcıya. Hani şu olabilir yani hani aylık şu kadar para verirseniz çok daha hızlısını size sunarız, çok daha şöylesini sunarız, bunu sunarız falan olur ama hani genel manadaki kısımda ben çok fazla...
+
+174
+00:43:08,884 --> 00:43:36,143
+O noktada bir kısıta gideceklerini zannetmiyorum. Ki kısıta gitmeye kalkarlarsa başka birileri bunu bedava yapacağından dolayı. Hani onu demeye çalışıyorum. O noktada çok kısıt olmaz gibi geliyor bana ama eğer ki dediğim gibi olursa doğru. Yani hani bir kısmı öyle bir kısmı öyle falan olursa orada insanlar hala şeyden şu anda alıştığımız standart araştırma yöntemini araştırmaya devam edebilirler onları kullanmak yerine ama.
+
+175
+00:43:36,692 --> 00:43:51,692
+Bana pek şey gibi gelmiyor. Bu arada [öğrenci] ya da [öğrenci], bilmiyorum kimin mikrofonu açık. Sürekli bir ses geliyor ama çok emin olamadım kimin olduğundan.
+
+176
+00:43:51,692 --> 00:43:55,692
+Evet, benden oradan hocam. Kusura bakmayın.
+
+177
+00:43:55,692 --> 00:44:01,164
+Peki.
+
+178
+00:44:01,172 --> 00:44:04,172
+Başka cevap vermek isteyen var mı bu soruya?
+
+179
+00:44:04,172 --> 00:44:15,172
+Yani, hocam sonuçta diyelim ki ben bir iş yaptım. Buna t zaman harcattım. Harcadığım zaman benim için bir maliyet.
+
+180
+00:44:15,172 --> 00:44:24,172
+Bu maliyeti ben ödememe rağmen benden başka bir işler. Mesela chat gibi de olur, başka modeller olur, başka ürünler olur.
+
+181
+00:44:24,172 --> 00:44:28,172
+Bunlar doğrudan değil dolaylı da olsa benim üzerimden API ile...
+
+182
+00:44:28,496 --> 00:44:41,215
+Kör sağlıyorsa veya bu API'ları kullanıp başka firmalar, başka kişiler, ticari bir kâr sağlıyorsa ve ben buna zaman harcıyorsam, ben niye buna zaman harcıyım? Dönüyor.
+
+183
+00:44:41,215 --> 00:44:43,375
+Dönüyor, diyorsun.
+
+184
+00:44:43,375 --> 00:44:50,056
+Sonuçta ben Stack Overflow'da cevap yazıyorsam, Reputation'ın artmış ne olur, ben CV'ime koyarım.
+
+185
+00:44:50,056 --> 00:44:56,496
+Veya Stack Overflow'dan iş takibi yaparım veya GitHub'da koyuyorsam tekrar CV'ime koyarım.
+
+186
+00:44:56,496 --> 00:45:01,096
+Open Source şeyler bile aslında ticariye döndüğünde para karşılığı oluyor.
+
+187
+00:45:01,096 --> 00:45:05,815
+Kodumu görebilirsin ama ben senden eğer kazanç sağlıyorsan para istiyorum ödüyorum.
+
+188
+00:45:05,815 --> 00:45:06,935
+Ben neden?
+
+189
+00:45:06,935 --> 00:45:12,215
+Hani maliyetini benim çektiğim bir üründen kar sağlamayayım ki.
+
+190
+00:45:12,215 --> 00:45:14,855
+O yüzden koymazdım herhalde şahsen.
+
+191
+00:45:14,855 --> 00:45:17,255
+Anladım. Peki teşekkürler.
+
+192
+00:45:19,375 --> 00:45:21,935
+Peki başka var mı arkadaşlar?
+
+193
+00:45:22,804 --> 00:45:28,764
+Bir alışveriş haber toplama robotundan nereye gittik ama baya uygun bir skola herhalde değil mi?
+
+194
+00:45:29,664 --> 00:45:35,084
+Hocam, forum cevap konusunda yorumlatmak istiyorum.
+
+195
+00:45:35,084 --> 00:45:41,824
+Stack Overflow'dan örnek verdiniz de. O noktada Stack Overflow biraz da özel bir site.
+
+196
+00:45:41,964 --> 00:45:48,084
+Herkesin genelde kendi ismini kullandığı bir site ama aslında programlama konusunda mesela...
+
+197
+00:45:48,211 --> 00:46:09,251
+Soru sorabileceğimiz ya da popüler olan tekste de değil. Ve insanların anonim olarak cevap verdiği de çok fazla site var. O yüzden ben o konuyu çok etkileyeceğini düşünmüyorum mesela. Reddit'te, benzer forumlarda, benzer subredditlerde insanların herhangi bir bunu CV'me koyayım kaygısı olmadan çok yardım ettiği oluyor.
+
+198
+00:46:10,371 --> 00:46:12,951
+Anonim olarak yazan insanlar var diyorsun mesela.
+
+199
+00:46:13,472 --> 00:46:16,012
+Evet, çok fazla var ve bunu etkilemez diye düşünüyorum ben.
+
+200
+00:46:16,211 --> 00:46:22,431
+Anladım, anladım. İnsanlar yüce gönüllü olmaya devam ederler diyorsun yani. Peki, sağ ol.
+
+201
+00:46:25,556 --> 00:46:36,196
+Belki şöyle bir şey olabilir. Cevap dönerken bu tarz araçlar şey yapabilir. Belki birkaç tane referans da benzer.
+
+202
+00:46:36,196 --> 00:46:52,576
+Ah işte onu yapabiliyor olsan yapacaklar zaten. Zaten oradaki sıkıntı orası. Hani şimdi bu bizim dersin direkt kapsamı içerisinde değil de bu Explanable AI diye bir mevzu var ya, bu işte burada çok aşırı derecede kritik bir alana da giriyor.
+
+203
+00:46:53,556 --> 00:47:09,736
+Sen bu cevabı nasıl ürettin? Hangi kaynağı kullanarak ürettin? Değil mi? Şimdi oradaki cevap aslında bir tane kaynağı kullanarak değil, bir tür kaynağı kullanarak yapıyor onu. Ve o kaynakların hangisinin ne olduğunu dair ondan bir şey almaktır. Çok çok kolay bir iş değil.
+
+204
+00:47:10,228 --> 00:47:26,407
+Öğrenme sürecinin mekanizması dolayısıyla o bilgiyi o nasıl erişti de sana getirdi de hangi kaynakları kullandığı, web sayfalarındaki hangi kaynakları kullandığı listelemeye kalksa anlatabildim mi?
+
+205
+00:47:27,027 --> 00:47:27,627
+Çok fazla.
+
+206
+00:47:28,147 --> 00:47:33,387
+Yani nasıl listeleyebilir ondan bile çok çok emin değilim. Anlatabildim mi?
+
+207
+00:47:33,387 --> 00:47:39,307
+Benzerliğe bakabilirim. Metindeki benzerliğe, verdiği cevaptaki benzerliğe. Hangileri daha fazla benzer?
+
+208
+00:47:39,891 --> 00:47:51,071
+Ya olabilir. Ben şey demiyorum ama orada da yani şöyle mesela girdiğinde o sayfada senin orada gördüğü şey aynı olmayacak. Onu demek istiyorum. Sonuçta birebir aynısını alıp vermiyor sana.
+
+209
+00:47:51,251 --> 00:47:52,931
+Evet, değiştiriyor. O şey yapıyor.
+
+210
+00:47:52,971 --> 00:48:01,011
+Değiştiriyor yani çünkü mesela Google'da sen bir şey arattın. Sayfaya girdiğinde oradakinin aynısı orada olmadığını görürsen ne düşünürsün?
+
+211
+00:48:01,684 --> 00:48:26,064
+Anlatabildim mi? Bilmiyorum yani hani dediğim gibi şeyler yapılabilir mi? Kesinlikle çalışıyorlar. Çünkü dediğim şey sıkıntılı bir şey bana sorarsanız her türlü referansın olmayışı. O bilgiye erişirkenki referansların gözükmüyor olması. Ama işte o referansların gözükmüyor olması kullanıcıya yarıyor bir açıdan düşünürseniz. Yani saf cevabı alıyorsunuz.
+
+212
+00:48:26,452 --> 00:48:47,652
+O refansı Google mesela size niye gösteriyor kabaca düşünürse? Oraya sayfaya git diye gösteriyor değil mi? Oraya git diye. Burada senin o sayfaya git diye bir şey zaten yok. Anlatabildim mi? Sizlerin amacı o değil. Sizlerin amacı sen bir yere gitme. Cevabın burada. Anlatabildim mi?
+
+213
+00:48:48,436 --> 00:49:08,876
+Şey farklı, yani mekanizma farklı. Google şudur budur falan yapabilirse onlar da yapacaklar. Şu anda uğraşıyorlar. Çok çok büyük ihtimalle bu tarz sistemler için. Bilmiyorum yani orada birazcık böyle şey var. Aynı şey, şeyler için de geçer. Sanat ürünleridir, şudur budur falan bilmem ne şey için. Her şey için de geçerli olan hepsi.
+
+214
+00:49:10,068 --> 00:49:20,308
+Bu hafta mesela GPT-4 çıkacak, Multi-Model mesela. Biraz şeye doğru gidecek gibi. İşte o mid-joenliği falan belki yaşayacak gibi böyle.
+
+215
+00:49:20,868 --> 00:49:30,008
+Evet, bakalım. Bakalım, göreceğiz. Peki arkadaşlar, şimdi bir ara verelim isterseniz. Ondan sonra kaldığımız yerden devam ederiz.
+
+216
+00:49:31,388 --> 00:49:35,948
+49 geçiyor, 10'da başlayalım. 11 dakika yeterli olur herhalde.
+
+217
+00:49:50,804 --> 00:49:52,204
+Az sonra görüşmek üzere arkadaşlar.
+
+218
+01:00:15,380 --> 01:00:24,160
+Evet, merhaba tekrardan arkadaşlar. Sesim geliyor değil mi? Evet hocam geliyor.
+
+219
+01:00:29,556 --> 01:00:30,795
+Bunu konuşmuştuk.
+
+220
+01:00:34,708 --> 01:00:45,248
+Vakti zamanında yaptığımız bir çalışmadan bahsediyorum aslında. Buradaki olay temelde şey, şablonları kullanarak belli yapılar elde ediyoruz.
+
+221
+01:00:45,248 --> 01:01:02,248
+Belli sonuç elde ediyoruz. Bunları eğer ki insan eliyle etiketlersek, yani bu ikili bizim istediğimize uygundur ya da değildir diye bunları etiketlersek, etiketledikten sonra bir...
+
+222
+01:01:03,827 --> 01:01:21,487
+Eğitim kümesi oluşturup bununla acaba biz işte hangi durumda bu şabın ürettiği şey bizim için doğrudur, değildir? Bunu bulabilir miyiz? Çok temelde yapılan işlem bu. Mesela işte tüm X'ler Y'dir bulmaya çalışıyor.
+
+223
+01:01:29,492 --> 01:01:43,012
+X ve Y'ler elinizde bir miktar var. 15-20 tane diyelim ki.
+
+224
+01:01:43,360 --> 01:02:09,200
+Bu 15-20 tane yaratıyorsunuz. 15-20 tane yaratıktan sonra bunların ikisinin arasındaki bu iki tane kavram arasındaki ifadeler sizin şablonlarınız ve frekansların yani ifadeler şablonlarınız oluyor. Onlar kaç kez geçiyorsa da onlar frekanslar oluyor. En yüksek frekanslı olan şablonlar bu üç bütünün şablonları olabilirler. Burada işte birkaç tane örneği var. Mesela tüm X'ler Y'dir için bulunan şablonları. Yani şablonları kendimiz el ile yazmayalım da onları da biz otomatik olarak bulalım fikri var burada.
+
+225
+01:02:11,360 --> 01:02:22,155
+V diğer, der ve diğer, ve benzeri veya diğer türü olan falan bunlar var. Mesela X'in yeri Y'dir için bulunan yine şablonlar var. Demin bunları görmüştük. Burada şablonların üretkenlik ve...
+
+226
+01:02:22,387 --> 01:02:39,048
+Doğrulukların birbirleriyle ters orantılı olabileceğinden bahsetmiştik. Daha sonra Google'da bulunan şablonlar aratıyor. Şablonlar buldunuz mesela. Bunları aratıyorsunuz. Bunların sağ ve sonundaki kelimeleri de ne derler onu istediğiniz şey. Mesela burada şablonlar uyan bazı kelimeler var.
+
+227
+01:02:39,476 --> 01:02:53,656
+Bunlar İZE türünden. Bütün kontrolörler personelmiş, bütün teşhisat malzemeymiş, bütün kemerler teşhisatmış, bütün proteinler gıdaymış. Azerbaycan'da bölgemiş, Ceyda bir yardımcımış, Komünizm Bidolojiymiş, Delta bir Gedizmiş. Burada ters olmuştu.
+
+228
+01:02:54,291 --> 01:03:18,612
+Kocaeli Spor kurmuş, burada biraz ters olmuş, fotoğrafçı Robertmiş gibi bunları ne yapabiliyorsunuz? Bulabiliyorsunuz. Otomatik olarak bulabiliyorsunuz bunları ama bunların bazıları doğru bazıları yanlışlar. Acaba işte bu doğrular ve yanlışları biz bir şekilde makine öğrenmesiyle yapabilir miyiz? İlk önce bir elde sınıflandırma yani human in the loop aslında. Bulunan ikillere bakacak insanlar diyecekler ki şunlar uygun, şunlar değiller.
+
+229
+01:03:19,635 --> 01:03:38,036
+Onun arkasından da bunları bir eklenek yok. Morafolojik yapısını şey yapalım. Ne derler? Onu oluşturalım demişiz daha doğrusu. Vakti zamanında ek türleri, şablon türleri falan filan. Burada işte yüzde de özellikli bir ver hükümesi oluşturulmuşsuz. Kapaca düşünürsek.
+
+230
+01:03:39,027 --> 01:03:56,027
+Onun arkasından da standart bildiğimiz makine öğrenmesi teknikleriyle bu işi gerçekleştirmişiz. Burada hata oranları var. İşte yüzde kart fena çıkmamış. Bu da yüzde 15 fena civarında hatasını 85 başarı falan diye düşünebilirsiniz.
+
+231
+01:03:56,403 --> 01:04:13,864
+Dolayısıyla bu tarz yöntemler kullanılabilir mi? Evet, şablonlardan gelen sonuçların doğru ya da yanlış olduğunu bulmak için belli bir mekanizma elde edebilir. Daha sonra onun üstünden de filtreler yapılabilir.
+
+232
+01:04:15,092 --> 01:04:29,132
+Dolayısıyla şey, fena bir fikir değil. Burada şey, Alexandra var yine bu Hayat Bilgisi ve Lir'in üretmesi 2018 yılında. Ama günümüze birazcık daha günümüze gelirsek.
+
+233
+01:04:29,619 --> 01:04:37,719
+Bu large language model dediğimiz şeyler, bu common sense yani hayat bilgisini içeriyorlar mı?
+
+234
+01:04:37,719 --> 01:04:43,659
+İçlerinde bu şey var mı yok mu? Buna dair bir sürü yine araştırmalar, çalışmalar sürüyor.
+
+235
+01:04:44,239 --> 01:04:48,960
+Yoksa da onu veritabanını nasıl içine atarız falan gibisinden bir sürü yaklaşım var.
+
+236
+01:04:49,579 --> 01:04:56,559
+Şurada aslında bu konuda görece yeni, öyle söyleyeyim, şeyler var, yaklaşımlar var.
+
+237
+01:04:57,876 --> 01:05:08,295
+Bunlar kullanılarak çeşitli veri kümelerinde belli başarılar elde edinmişler. Burada reasoning falan gibisinden mekanizmalarda var hatta.
+
+238
+01:05:09,996 --> 01:05:21,856
+Şimdi aslında burayı tamamladık. Şimdi dediğim gibi, ilk ders dediğim gibi, anlamsal uzaylara giriş yapabiliriz. Onu bir durduralım.
+
+239
+01:05:26,516 --> 01:05:27,416
+Şimdi geçelim.
+
+240
+01:05:36,467 --> 01:05:51,628
+Şimdi, anlamsal uzaylar, slaytımızın içine bir sürü konular var da, hani ilk konuşacağımız şey belki bugün konuşacağımız kısım burası olur. İstatistiksel dil modelleri bundan bahsedelim.
+
+241
+01:05:51,628 --> 01:06:00,427
+Burada sinirsel dil modellerinden bahsetmiyorum. İstatistiksel dil modellerinden bahsediyorum. Görece daha eski olan yaklaşımlar.
+
+242
+01:06:02,931 --> 01:06:10,971
+Temelleri neye dayanıyor, nasıl çalışıyorlar bunları ve bunlar neler yapabiliyorlar, neler yapamıyorlar biraz onlardan bahsedeceğiz.
+
+243
+01:06:13,251 --> 01:06:22,751
+Şimdi istatistiksel dil modellerinin temel yapabildiği şeylerden bir tanesi bir cümlenin olasılığını bulmak.
+
+244
+01:06:23,411 --> 01:06:49,032
+Yani şundan bahsediyorum. Bu İstisadil modellerinin temelde ihtiyaç duydukları şey bir derlem. Büyükçe bir derlem lazım size. Bu derlem elinizde varsa daha sonra size verilmiş olan, yani modele verilmiş olan bir cümlenin olasılığını, yani öyle bir cümlenin var olma olasılığını, böyle ifade edeyim, var olma olasılığını bulabiliyorsunuz.
+
+245
+01:06:49,523 --> 01:07:03,884
+Peki bir cümlenin var olma olasılığını bulduğunuzda bu sizin ne işinize yarıyor? Kullanım alanları aşağıda görüyorsunuz. Makine çevirisi, yazılım düzeltme, konuşmadan metne çevirin, yani sesten metne çevirin. Ne demek istiyorum?
+
+246
+01:07:04,500 --> 01:07:30,840
+Mesela makine çevirisinde elinizde bir İngilizce, X dilinde bir metin var. Bunu siz Türkçe'ye çeviriyorsunuz. Türkçe'ye çevirirken de olası durumlar var. Yani bir kelimenin birden fazla karşılığı var vs. vs. Farklı farklı cümleler aynı cümleden üretilebiliyor. Peki bunların hangisi doğrular o dilde? İşte hangisinin doğrusunun anlamı aslında burada doğruluğu?
+
+247
+01:07:31,443 --> 01:07:33,443
+Olasılıkla
+
+248
+01:07:34,900 --> 01:08:01,980
+Temsil ediyor, öyle ifade edeyim. Yani bir şeyin olasılığı daha yüksekse onun doğru olma ihtimali daha yüksektir. Bu varsayımın üzerinden ilerliyor. Yani bir kişinin işte yeni balık aldım demiş olma ihtimaline göre taze balık aldım demiş olma ihtimali daha yüksektir deyip bu iki olası çeviriden olasılığı yüksek olanı sizin karşınıza getiriyor.
+
+249
+01:08:02,900 --> 01:08:20,680
+Burada Ali Soğan 7 diye bir cümle var. Bu cümlenin düzeltilmiş hali, atıyorum işte Ali Soğan 7 de olabilir, Ali Soğan 7 de olabilir. Yani işte Elite Distance'da falan, bir Levinç'ten Distance'da falan şu Soğan kelimesine yakın kelimeler buldunuz diyelim ki.
+
+250
+01:08:20,680 --> 01:08:22,180
+İşte Soğan'da.
+
+251
+01:08:22,931 --> 01:08:45,992
+Türkçe bir kelime normal, soğan da Türkçe bir kelime normal. Peki hangisi? Hangisi olduğu işte burada gördüğünüz gibi Ali Sokan 7 diye bir cümlenin olma olasılığı mı daha yüksektir? Ali Sokan 7'nin olma olasılığı mı daha yüksektir? Soğan 7 daha yüksektir olduğunu bulup bu modellerle onu kullanıcıya döndürebiliyorsunuz. Ya da konuşmadan metne çeviriyorsunuz.
+
+252
+01:08:46,707 --> 01:09:11,127
+Yani ses sinyalini metne çevireceksiniz. Ses sinyalini metne çevirirken bir ses sinyalinin benzer olduğu birden fazla dönüşüm olabilir. Mesela soğanla solan birbirlerine yakınlar. Sessel olarak demek istiyorum. Ama bunları birbirinden ayırt edebilmek için bir sesler dil modeli kullanırsanız solan yedim diye bir cümlenin kurulma olasılığına daha düşük olacaksınızdır soğan yedime göre.
+
+253
+01:09:13,043 --> 01:09:37,664
+Dolayısıyla bu istatistikler dil modelleri bir cümlenin olasını buluyorlar. Bir cümlenin olasını bulduğunuz zaman da burada gördüğünüz gibi farklı farklı şeylere gidebiliyorsunuz. Burada mesela şurada şeyi görüyorsunuz. Soğanın altı kırmızı, değil mi? Görüyorsunuz değil mi? Bu şeyin yaptığı bir şey. Ne der bana? Power.
+
+254
+01:09:38,131 --> 01:09:48,011
+Point'in yaptığı bir şey. Niye? Öyle bir şey yok diyor. Şimdi buna böyle tıkladığımızda bakalım. Şimdi mesela neler çıkartmış burada? Bakın. Sona demiş. Görüyorsunuz değil mi önerilerini?
+
+255
+01:09:49,771 --> 01:09:50,051
+Evet.
+
+256
+01:09:53,011 --> 01:09:58,811
+Sona demiş, soban demiş, sodan demiş, sofan demiş, sokan demiş. Mesela soğan dememiş hiç. Neyse.
+
+257
+01:10:00,000 --> 01:10:04,659
+Sonuçta bunun yanı bunların birisi gelebilir. Bunların hangisi gelecek?
+
+258
+01:10:04,979 --> 01:10:07,619
+İşte bu dediğim gibi, demin bahsettiğim cümle olasılıkları.
+
+259
+01:10:07,619 --> 01:10:13,659
+Yani siz, bu da, yani şunun önerdiği şeylerin her biri de Türkçe için normal şeyler.
+
+260
+01:10:13,800 --> 01:10:18,380
+Burada, size sokan zaten buraya yazdınız. Soğan da mesela burada yazmıyor ama o da olası bir şey.
+
+261
+01:10:19,479 --> 01:10:27,780
+Dolayısıyla bunları ne yapıyor? Bizim karşınıza getirebiliyor ama hangisinin daha yüksek olasılıklı olduğuna göre bir öneri.
+
+262
+01:10:28,000 --> 01:10:45,460
+Yapmamış, yapamamış. Niye yapamamış? Bir dil modelinin burada olmadığını görüyoruz. Ne demek istiyorum? Bir tane daha örnek verelim. Mesela burada bir dil modeli yok. Kelime-tazlı bir model var.
+
+263
+01:10:50,131 --> 01:10:50,751
+Amen.
+
+264
+01:10:54,355 --> 01:10:55,415
+Böyle bir şey oldu bir dakika.
+
+265
+01:11:00,435 --> 01:11:09,036
+Maliye de mi yoktu? Niye öyle bir şey yazdın ki? Türkçeden mi kaldı? Merak ettim.
+
+266
+01:11:13,971 --> 01:11:15,971
+Aa, ayaklı bir şeyle kalmış.
+
+267
+01:11:18,971 --> 01:11:25,971
+Gözlem geçir, dil, yazıncılığına ayrılan İngilizce'ye kalmış, o yüzden olmuş.
+
+268
+01:11:25,971 --> 01:11:30,971
+Şu Türkçe'ye bir çekelim. Orada da ben istediğimi biraz daha net anlatabilirim herhalde.
+
+269
+01:11:39,667 --> 01:11:41,667
+Nie, Bokar.
+
+270
+01:11:46,996 --> 01:11:48,376
+Allah'ın a'rabi.
+
+271
+01:11:57,587 --> 01:11:58,708
+Bir saniye arkadaşlar.
+
+272
+01:12:04,115 --> 01:12:07,036
+Ben yanlış bir şey mi seçiyorum bir defa?
+
+273
+01:12:07,036 --> 01:12:12,515
+Şimdi seçtiğimde dil seçenekleri değil.
+
+274
+01:12:12,515 --> 01:12:14,835
+Şu yazın dil seçeneği işte.
+
+275
+01:12:14,835 --> 01:12:17,075
+Niye burada bir daha şey değil mi?
+
+276
+01:12:26,420 --> 01:12:27,220
+Teşekkürler.
+
+277
+01:12:37,779 --> 01:12:38,359
+Allah'ım.
+
+278
+01:12:39,699 --> 01:12:43,379
+Hocam, sol altta çıkıyor İngilizce diye. Onu değiştirmeyi de deneyebilirsiniz.
+
+279
+01:12:44,579 --> 01:12:45,199
+Nerede çıkıyor?
+
+280
+01:12:48,627 --> 01:12:53,047
+Nerede? Slide 4, Taksim 76'ın yanında çıkıyor da şu an yok orada.
+
+281
+01:12:58,707 --> 01:13:10,247
+Oradan da değişiyor diyorsun da istediğim... Hayır, yeni bir şey yazıyor. Niye direkt tekrardan şeylendiriyor? Ona çıkamadım. Yazdım bunu, tamam. Şu anda hala İngilizce gözüküyor.
+
+282
+01:13:11,108 --> 01:13:15,327
+Varsayılan ne İngilizce ya? Muhtemelen yeni cümleye geçince mi oraya geçiyor anladım ben de.
+
+283
+01:13:15,747 --> 01:13:26,247
+Allah Allah. Neyse. Önemli değil. Şu anda burası Türkçe diyeceğim diyemiyorum. Ha, şurası Türkçe hala. Mı? Burası Türkçe. Yani neyse, tamam. Vazgeçtim.
+
+284
+01:13:27,347 --> 01:13:40,048
+Vazgeçtim. Neyse, demek istediğim şu. Burada kelimelerin doğruluğuna bakarak bir hareket yapıyor.
+
+285
+01:13:41,140 --> 01:14:08,579
+O kelimenin metin içinde yazılışına bağlı olarak bir doğruluk kontrolü yapmıyor. Bu çünkü bir dil modeli gerektiriyor. Yani siz bir şeyi, bir kelimeyi, mesela demin şunu yazmaya çalışıyordum. Maliye bakanı doğru bir ifade. Mesela Maliye akanı doğru bir ifade değil. Maliye akanı. Ama akanı ifadesi Türkçe'de doğru bir ifade mi? Evet, böyle bir şey olabilir mi? Olabilir. O akanın altında herhangi bir şekilde çizilmiyor. Yani akanı ifadesi başka bir yerde doğru olabilir.
+
+286
+01:14:09,140 --> 01:14:34,540
+Yani kelime bazında düşündüğünüzde ama cümle bazında, o cümledeki kullanım açısından düşündüğünüzde yanlış bir şey yazıyor. Onu karşınıza çıkartabilmesi için arka tarafta bir dil modeline ihtiyacınız var. PowerPoint'in en azından bendeki sürümünde böyle bir dil modeli arka tarafta yok. Niye yok? Birazdan bahsedeceğim. Yani onları koymak çok kolay bir şey değil. Oldukça iri şeyler çünkü.
+
+287
+01:14:38,260 --> 01:14:40,720
+Demek istediğimi anlatabildim diye ümit ediyorum.
+
+288
+01:14:42,420 --> 01:14:47,260
+Yani kelimenin tek başına doğru olması ile bir cümlenin içinde doğru olması ile birbirinden farklı şeyler.
+
+289
+01:14:49,260 --> 01:14:49,800
+Tamam.
+
+290
+01:14:53,779 --> 01:15:16,100
+Peki. Şimdi, istatistik modellerinde iki tane amaç var. Bir tanesi demin bahsettik bir cümlenin olasılığını bulmak. Yani işte tokenlar var diyelim ki elimizde. Şu W dediğimiz şey cümlenin kendisi olsun. Şu W1, W2, W1 ne kadar gelen kısımlardan onun tokenları olsun sıralı bir şekilde. Böyle bir cümlenin olasılığını bulmaktan bahsediyoruz.
+
+291
+01:15:19,667 --> 01:15:42,967
+Bulmak için kullanılabilirler. Başka bir ifade. Bir kelime sekansından sonra gelecek kelimenin olasılığını bulabilirler. Yani ne demek istiyorum? W1, W2, W3, W4'ten sonra W5'in gelme olasılığı şu. Bunu bu şekilde yazıyoruz. Şurası ilk kısım. Yani ilk dört kelime. Onun arkasından gelen de beşinci kelime.
+
+292
+01:15:43,699 --> 01:16:03,159
+Bu kelimelerden sonra bu kelimenin gelme olasılığı nasıl bulunur? Bu zaten klasik Bayez kuralı aslında. Şunu yazmaya kalkarsanız bu şöyledir, bu da şöyledir. Bunu biraz daha şu formda yazarsanız o da karşınıza şu şekilde çıkacaktır.
+
+293
+01:16:06,003 --> 01:16:20,523
+A, B, J, D cümlesinin olasılığı işte P, A çarpı A'dan sonra B'nin gelmesi, çarpı AB'den sonra C'nin gelmesi, ABC'den sonra D'nin gelmesi. Bunların hepsi birden çarpımı aslında ABCD'nin olasılığını verecek. Şunun olasılığını nasıl buluyoruz onu konuşacağız şimdi.
+
+294
+01:16:21,108 --> 01:16:35,988
+Bu jenerik hali zincir kuralının, mesela diyelim ki Ali okuldan buraya geldi cümlesinin olasılığını bulmak için, Ali'nin olasılığı, Ali'den sonra okuldanın olasılığı, Ali okuldan sonra buraya'nın olasılığı, Ali okuldan buraya'dan sonra geldi'nin olasılığı.
+
+295
+01:16:35,988 --> 01:16:43,128
+Peki bu Ali okuldan buraya'ndan sonra geldi'nin olasılığını nasıl bulacağız? Şunu düşünürsek.
+
+296
+01:16:45,087 --> 01:16:47,068
+Çünkü hani bunların her biri şu formda var.
+
+297
+01:16:47,988 --> 01:16:54,208
+Şunun olasılığını nasıl bulacağız? Ya da mesela sadece P Ali'yi nasıl bulacağız? İşte ondan bahsedelim.
+
+298
+01:16:54,208 --> 01:17:06,308
+Şimdi burada bir olasılık şu, kullanabileceğimiz. Ali okuldan buraya, dan sonra geldiğinin gelme olasılığı, geldi kelimesinin gelme olasılığı.
+
+299
+01:17:07,268 --> 01:17:11,968
+Ali okuldan buraya geldi diye geçen kaç tane cümleniz var?
+
+300
+01:17:12,819 --> 01:17:34,920
+Değerlemenizin içerisinde bu ifade Ali Okul'dan buraya geldi ifadesi kaç kez geçmiş frekansı. Bölüm Ali Okul'dan buraya ifadesi kaç kez geçmiş bunun frekansı. Şimdi bu yukarısını aşağıya böldüğümüzde bu bir sayı, bu bir tam sayı, aşağıdakiler bir tam sayı. Bu değer ne olur arkadaşlar?
+
+301
+01:17:39,539 --> 01:17:46,860
+Nasıl bir şey olur yani? 3-5 gibi bir şey olabilir mi? Eksi bir şey olamaz.
+
+302
+01:17:48,600 --> 01:17:51,159
+Yani sıfırla bir arasında olması gerekmektedir hocam.
+
+303
+01:17:51,319 --> 01:17:54,260
+Değil mi? Sıfırla bir arasında bir şey olacaktır. Yani sıfır olması durumu ne?
+
+304
+01:17:54,279 --> 01:17:59,960
+Ara okuldan buraya geldi de hiçbir şey yoksa, kabacak dersek, o zaman orası sıfır olacak.
+
+305
+01:18:00,079 --> 01:18:04,739
+Aşağısı ne olursa olsun, sıfır olarak kabul ediliriz onu. Ama maksimum da zaten bir olabilir mi?
+
+306
+01:18:06,355 --> 01:18:08,275
+Bir olması için ne olması gerekir?
+
+307
+01:18:11,296 --> 01:18:14,195
+Yani iki şeyin de sayısının aynı olması lazım.
+
+308
+01:18:14,195 --> 01:18:23,275
+Yani bunun anlamı ne? Ali okuldan buraya kelimesinden sonraki bütün gelen kelimelerin hepsinin ne olması lazım?
+
+309
+01:18:25,971 --> 01:18:27,771
+Yani geldiğiyle bitmesi lazım.
+
+310
+01:18:28,111 --> 01:18:39,572
+Geldiğiyle bitmesi. Aynen öyle. Yani oradan sonra kesinlikle geldi geliyorsa, o zaman burasının olası da bir olacaktır. Peki, bu an sıfırla bir arasında bir şey olacak. Daha büyük bir şey olamaz.
+
+311
+01:18:53,108 --> 01:18:55,788
+Olasılıklarını topladığınız zaman bir edecek.
+
+312
+01:18:56,340 --> 01:19:24,260
+Ve olasılığı en yüksek olan demek ne demek olacak? Ali Okul'dan buraya'dan sonra mesela bir tane kelime var, o şu kadar kez geldi. Başka bir kelime var, o bu kadar kez geldi. Hepsi farklı farklı sayılarda geliyorlar. Bunların hepsinin toplamına falan böldüğünüzde toplamları bir olan bir olasılık elde edeceksiniz. Yani bir dağılım elde edeceksiniz aslında. Ali Okul'dan buraya ifadesinden sonra aslında burası bize ondan sonra gelecek olan kısmın, ondan sonra gelecek olan kelimeleri.
+
+313
+01:19:24,340 --> 01:19:30,880
+Bir temsilini aslında hesaplamamızı gerektiriyor.
+
+314
+01:19:33,076 --> 01:20:00,000
+Yöntem, yapabileceğiniz bir şey. Ama burada bir sıkıntı var. Ne o? Şu. Güvenilir değerler elde etmek için yeterli büyükte bir değerlemimiz elimize pek olmaz. Yeterli büyükte bir değerlemden kastım şu. Yani hani şimdi mesela burada Ali okuldan buraya geldi diye bir cümlenin sizin değerleminizde geçmesinin durumundan bahsediyor. Bu geçer mi, geçmez mi? Geçebilir, olabilir. Yani bu geçebilir belki. Ama mesela işte 15 yıl.
+
+315
+01:20:00,000 --> 01:20:20,840
+Şimdi bir kelimelik bir şey düşünün. Yani bunun birebir aynı haliyle, öyle söyleyeyim. Birebir aynı haliyle burada geçme olasılığı epey bir düşük olacaktır. Tamam mı? Çoğu frekans çünkü ne olacak? Sıfır olacaklar ve dolayısıyla siz bu olasılıkları ne yapamayacaksınız? Çok çok iyi hesaplayamayacaksınız. Yani bu dil modelindeki şunu, şu ifade ettiğimiz şeyi.
+
+316
+01:20:21,332 --> 01:20:38,692
+Şu kelimelerden sonra, şu kelimenin gelme olasını çok net bir şekilde ortaya koyamayacaksınız. Çünkü sıfırlar bir sürü karşınıza çıkacaklar. Çünkü dil diskret uzayda çok seyrek bir şey. Yani her şeyden sonra her şey falan gelmiyor düşündüğünüz zaman. Peki ne yapalım?
+
+317
+01:20:42,100 --> 01:21:01,239
+Burada karşımıza aslında Markov imdadımıza yetişiyor. Markov bir insan tabii. Markov'un bir varsayımı var. Markov'un varsayımı şu. Her bir olasılık kendinden önceki K tane bileşene bağlıdır diyor Markov.
+
+318
+01:21:03,252 --> 01:21:09,832
+Standart yapıda bir tanesine bağlı da ama k olarak biz bunu parametrik hale getirebiliriz. Ne demek istiyor?
+
+319
+01:21:10,652 --> 01:21:16,152
+Şimdi k eşittir sıfır demek şu demek. Her olasılık bağımsızlık demek. Yani şundan bahsediyorum.
+
+320
+01:21:16,672 --> 01:21:28,532
+Mesela şurada w1, w2, w3, w4 sırasıyla oluşan cümlenin olasılığı diyor. Eğer k'yı sıfır kabul ederseniz, sıfır kabul ederseniz şudur diyor.
+
+321
+01:21:29,716 --> 01:21:33,015
+Her birinin kendi bağımsız çarpımlarıdır.
+
+322
+01:21:34,579 --> 01:21:44,279
+Ya da mesela şunu bulmaya kalkarsanız, W1'den sonra, yani W1, W2, W3, W3'ten sonra, W4'ün gelme olasılığı direkt W4'ün gelme olasılığıdır.
+
+323
+01:21:44,539 --> 01:21:50,719
+Ya da örnek vermek için, Ali Okul'dan buraya geldiğinin olasılığı direkt geldiğinin olasılığıdır diyor.
+
+324
+01:21:51,100 --> 01:21:52,760
+Bu karşıtı sıfır için söylüyor.
+
+325
+01:21:53,019 --> 01:21:56,319
+Kardeşleri 1 için yaptığımızda her olasılığı sadece bir öncesine bağlı.
+
+326
+01:21:56,319 --> 01:21:58,879
+Yani mesela şunun olasılığı, şu görünüşü yeni olasılığı şuna bağlı.
+
+327
+01:21:58,939 --> 01:22:02,379
+V1'den sonra V2, V2'den sonra V3, V3'den sonra V4'ün gelme olasılığı.
+
+328
+01:22:02,579 --> 01:22:16,779
+Tamam mı? Şimdi yani K'yı arttırdığınızda, mesela K'yı 2 yaptık diyelim ki, mesela şurada bu olasılık, V1-V2'den sonra V3'ün gelmesi, V2-V3'den sonra V4'ün gelmesine bağlı.
+
+329
+01:22:16,779 --> 01:22:23,680
+Ya da mesela şu olasılık, şu gördüğünüz olasılık, V2-V3'den sonra V4'ün gelme olasılığı. K'yı istediğimiz kadar arttırabiliriz.
+
+330
+01:22:24,639 --> 01:22:29,219
+Şimdi Markov ne sağlıyor bize? Bir düşünelim.
+
+331
+01:22:30,100 --> 01:22:56,840
+Yaptığı şey aslında şu, bizim normalde standart yapıda, yani zincir kuralında düşünürseniz, şu olasılığımız şuna eşitti. Bu da aslında şuna eşit. Bu zaten bunun farklı bir şekilde yazılmış hali herhangi bir şey yok. Varsayım varken, yani varsayım yokken böyleydi. Varsayım varken K varsayımımız var. Şu gördüğümüz şey, yani şunlardan sonra şunun gelme olasılığı, şuna eşit oluyor.
+
+332
+01:22:57,460 --> 01:23:04,340
+Ve şuradaki şu kırmızıları, yani K öncesinden öncesini, öyle söyleyelim, K öncesinden öncesini hiçbir şekilde kale almıyor.
+
+333
+01:23:05,011 --> 01:23:30,451
+Ve sadece şu kısmı alıyor. Yani son k tane değeri işin içine katıyor. Yani viden önceki v-1, v-2, mesela en son da v-k'yı alıyor. Ondan daha öncekileri, yani bire kadarki olan kısımları, ne kadar uzunlukta ise o artırıyor. Oralara hiç takılmıyor. Dolayısıyla şu gördüğümüz kısım şuna varsıyor. Yani elimize şu varken, hepsini çarpımarken, şuna, hepsini çarpımarken dedim, yanlış söyledim.
+
+334
+01:23:30,671 --> 01:23:52,491
+Şu gördüğümüz şeyi hesaplarken, bütün olasılıkların hepsini kullanmak yerine sadece i'den k öncesine kadarki kısma oluyor. Yani i-1, i-2 şu aradaki bir yere kadar geliyor. K'dan önceki kısmı hiçbir şekilde dikkate almadı. Şimdi k'dan önceki kısmı dikkate almadığında iyi bir şey oluyor bir yandan, bir yandan kötü bir şey oluyor. İyi olan şey ne olabilir? İyi olan şey aslında şu hikaye.
+
+335
+01:23:54,868 --> 01:24:02,228
+Çok uzun sekanslar kullanmayacağınız için o sekansların derleminizde bulunma ihtimali ne olacak arkadaşlar?
+
+336
+01:24:04,927 --> 01:24:06,108
+Yüksek olacak.
+
+337
+01:24:06,368 --> 01:24:12,847
+Yüksek olacak. Sıfırlardan ne yapacaksınız? Büyük ölçüde kurtulacaksınız. Bu güzel bir şey.
+
+338
+01:24:14,108 --> 01:24:18,927
+Çok uzun uzun cümlelerin mesela şeyi olmayacak. Peki kötü tarafı ne?
+
+339
+01:24:24,916 --> 01:24:28,136
+Bir şey kazandık, bir şey kaybederiz muhtemelen. Genelde öyle oluyor.
+
+340
+01:24:32,532 --> 01:24:38,631
+O cümlenin o dilin içinde geçmesi, bizim uzay kümleti içinde geçmesinin olasılığı düşük oluyor.
+
+341
+01:24:41,512 --> 01:24:45,971
+Düşük oluyor derken yok, öyle değil aslında. O direkt düşük mü oluyor?
+
+342
+01:24:45,971 --> 01:24:56,432
+Tek bir cümleye bağlı kalmamız. Onun tek bir kütle olarak varsayıp uzayın içine geçmesi daha düşük bir olasılığı olacak.
+
+343
+01:24:57,011 --> 01:25:10,311
+Şöyle bir şey, biraz daha şöyle. Parça parça alıyoruz. Evet, evet çok güzel. Parça parça alıyoruz. Yani mesela burada şunu demiş. Mesela geldiğinde ne olur? Mesela şu cümleyi düşünelim. Ali Okulu'dan buraya geldi.
+
+344
+01:25:14,311 --> 01:25:15,391
+Ya da onu şöyle yazın.
+
+345
+01:25:54,931 --> 01:26:07,532
+Şimdi, cümleyi görüyorsunuz. İçinde geçirdiğim süre içinde çok denedim ama bir türlü nokta nokta noktayı öğrenemedim. Tamam mı?
+
+346
+01:26:07,532 --> 01:26:12,931
+Şimdi bu nokta nokta nokta ifadesini düşünelim. Ne olabilir bu?
+
+347
+01:26:16,787 --> 01:26:17,627
+Çinci olabilir.
+
+348
+01:26:18,167 --> 01:26:18,567
+Ne olabilir?
+
+349
+01:26:19,268 --> 01:26:19,727
+Çince.
+
+350
+01:26:20,147 --> 01:26:20,807
+Çince olabilir.
+
+351
+01:26:27,796 --> 01:26:30,416
+Başka ne olabilir?
+
+352
+01:26:31,516 --> 01:26:33,336
+Fushi yapmayı öğrenemedim olabilir.
+
+353
+01:26:33,596 --> 01:26:33,856
+Neyi?
+
+354
+01:26:34,636 --> 01:26:36,296
+Fushi yapmayı öğrenemedim.
+
+355
+01:26:37,816 --> 01:26:41,976
+Fushi.
+
+356
+01:26:42,476 --> 01:26:43,036
+Yapmayı.
+
+357
+01:26:43,356 --> 01:26:43,836
+Evet peki.
+
+358
+01:26:44,275 --> 01:26:45,036
+Yapmayı.
+
+359
+01:26:45,416 --> 01:26:45,636
+Evet.
+
+360
+01:26:46,136 --> 01:26:47,115
+Böyle bir şey de olabilir değil mi?
+
+361
+01:26:48,256 --> 01:26:50,695
+Peki şimdi bu, bunlar.
+
+362
+01:26:52,836 --> 01:26:55,096
+Mesela biz K'yı.
+
+363
+01:26:55,891 --> 01:27:13,731
+İki alsak. Ya da işte üç alalım, dört alalım. Ya da işte beş alalım. Yani kendinden önceki beş alalım. Bir, iki, üç, dört, beş, altı alalım mesela. Şurayı görmeseniz. Bunlar ne olur?
+
+364
+01:27:17,811 --> 01:27:43,231
+Sonsuz olur. Bunları ne yapamazsınız? Sonsuz olmaz ya. Sonsuz küçük olurlar herhalde değil mi? Bilmiyorum tabii. Elinizdeki derlenme bağlı da. Aslında ne oldu burada? Yani şuradaki kelime, aslında şuradaki ifademiz bizim. Şuraya biz şey diyelim işte, FFF diyelim mesela bu ifade. Şurada geçirdiğim, yani şuradaki XX'e aşırı derecede bağlı. Eğer ki mesela XXX eşittir.
+
+365
+01:27:43,988 --> 01:27:49,488
+Çin'de olursa mesela, tamam mı? Bu durumda...
+
+366
+01:27:55,347 --> 01:28:17,108
+Sizin o şurada yazdığımız FFF'ler böyle bir şeyler olurlar. Ama mesela ben XXX eşittir Fransa'da olsun mesela, bu durumda FFF'leriniz başka başka bir şeyler olacaktır değil mi? Anlatabildim mi?
+
+367
+01:28:21,043 --> 01:28:29,707
+Evet hocam. Yani Çince falan olmayacaktır burada şu anda. Ha Fuşi falan olmayacak. Başka bir şeyler olacak yani. Ne olur? Orası kısmı. Ama...
+
+368
+01:28:29,844 --> 01:28:57,444
+C'miz ne? Buradaki olay ne? Şuradaki bu FF kelimesinin ne olacağı, kendisinden epey bir, ki burada yani 5-6'lık falan bir şeyden bahsediyoruz. Ama mesela şey de olabilir. Şurada arada bir sürü mesela bir roman, bir hikaye falan olduğunu düşünün. Adam başlayan başta Çin'de olduğunu falan anlatıyor. Ondan sonra bir sürü olaylar anlatıyor falan. Ondan sonra buraya geliyor. Yani bir tane kelime aslında dilde öyle söyledim. Dilde çok çok uzaktaki bir şeye ne olabilir? Bağlı olabilir.
+
+369
+01:28:57,844 --> 01:29:18,823
+Uzak bağımlılıklar, long dependency diye ifade ediliyor. Markov varsayımını kullandığınızda birçok hesaplamayı çok kolay bir şekilde yapmaya başlıyorsunuz. Hızlanıyorsunuz. Kullanmanız gereken RAM miktarı vs. bunların hepsi bayağı bir azalıyorlar. Hem zamandan hem memoriden bayağı bir tasarruf ediyorsunuz.
+
+370
+01:29:19,572 --> 01:29:33,011
+Ama long dependency diye ifade ettiğim şey, uzak bağımlılıkları ne yapamıyorsunuz bu sefer? Yakalayamamaya başlıyorsunuz. Anlatabildim mi? Böyle bir şeyi var. Ne der bana? Dezavantajı var.
+
+371
+01:29:33,931 --> 01:29:35,152
+Hocam bir şey sorabilir miyim?
+
+372
+01:29:35,152 --> 01:29:35,591
+Tamam.
+
+373
+01:29:36,275 --> 01:29:47,916
+Mesela burada Çin'den bahsederken, aynı cümle içinde geçerken bunu kolayca zahmetle yapabiliyoruz Markovla. Ama dediğiniz gibi daha başka bir cümle.
+
+374
+01:29:47,916 --> 01:29:49,556
+Markovla yapabiliyoruz demedi.
+
+375
+01:29:50,496 --> 01:29:52,395
+Yok, daha kolay oluyor dedim.
+
+376
+01:29:52,735 --> 01:29:54,176
+Daha kolay oluyor da demedi.
+
+377
+01:29:54,275 --> 01:29:55,056
+Pardon o zaman.
+
+378
+01:29:55,115 --> 01:29:58,336
+Şunu demek istedim. K değerine bağlı bu olay dedik.
+
+379
+01:29:59,056 --> 01:29:59,836
+Hı, anladım.
+
+380
+01:30:03,252 --> 01:30:07,732
+O kadar uzak bağımlılıkları modelin içine katsıyoruz anlamına geliyor.
+
+381
+01:30:08,180 --> 01:30:34,680
+Tamam mı? Başka bir cümle de bunun için geçerli mi? Tabii ki. Yani şimdi sizin aldığınız şeye bağlı. Ne derler ona? Yani burada metin olarak aldığınız şey illa ki buradaki gibi bir tane cümle olmak zorunda değil. Buraya siz hani iyice ablına çok kabaca düşünürsek bir paragrafı da alabilirsiniz. Anlatabildim mi? Bir hikayenin ilk başını alıp sonrasını tahmin ettirmek için de kullanabilirsiniz. Yani illa cümle içinde kalacağız diye de bir şey yok.
+
+382
+01:30:35,060 --> 01:31:01,140
+Tamam mı? Olay ne? Bir kelimenin olasılığı kendinden önceki kaç tane kelimeye bağlı, kaç tane token'a bağlı. Tamam mı? Şimdi normalde bunu standart dil modeli, istatistikler dil modeli bunu sonsuz kabul ediyor. En baştaki kelimeye bile bağlıdır. Buna göre iş yapmalısın diyor. Anlatabildim mi? Yani standart istatistikler dil modelinde K değeri sonsuz.
+
+383
+01:31:02,804 --> 01:31:20,823
+Metnin büyüklüğü neyse o. Ama bir kelimenin bağlı olduğu kendinden önce kelime sayısını çok yüksek yaptığınızda hesaplama maliyetiniz korkunç artıyor. Artı ona uygun data bulma ihtimaliniz de çok çok azalıyor.
+
+384
+01:31:22,283 --> 01:31:25,064
+Tamam mı? Anlatabildim mi olayı?
+
+385
+01:31:26,384 --> 01:31:27,644
+Evet hocam, teşekkür ederim.
+
+386
+01:31:27,923 --> 01:31:28,484
+Rica ederim.
+
+387
+01:31:34,131 --> 01:31:47,351
+Yani Margot'un bize güzel şeyleri var. Kötü kısımları da var. İşte burada yaptığımız örnekleri. Bunu göstermeye çalışıyordum. K seçimi bir ikilem. Daha az işlem, daha az seyreklerler vesaire vesaire.
+
+388
+01:31:47,671 --> 01:31:59,131
+Şimdi burada bir tane örnekte kod var. Onları dersin sayfasından da görebilirsiniz. Bin tane ekonomi haberiyle bir derlem oluşturduğumuzda beşten az geçen kelimeleri silersek eğer,
+
+389
+01:31:59,859 --> 01:32:11,719
+Burada sekiz binlik, sekiz kadenin, şey sekiz bin, sekiz binlik bir matriz elde ediyoruz. Pardon, bir sözlük elde ediyoruz. Tamam, sekiz bin.
+
+390
+01:32:12,879 --> 01:32:22,619
+Şimdi, seyrekten kastım ne? Şu kelimeden sonra şu kelimenin gelmesi. Yani şu kelimeden sonra şu kelime gelmiş mi gelmemiş mi?
+
+391
+01:32:27,412 --> 01:32:44,092
+Bir matriz oluşur. 8000'e 8000'lik bir matriz. Bu matrizin her bir hücresinin anlamı şu. Satırımdaki indisli kelimeden sonra sütunumdaki indisli kelime birden fazla mı? Yani bir ve birden fazla kez gelmiş mi? Anlatabildim mi?
+
+392
+01:32:44,564 --> 01:33:02,783
+Şimdi burada frekansa göre kelimeler sıralandığı için buralar birazcık daha yoğun gibi gözüküyor olabilir ama şöyle birazcık şu kırmızının içini, kırmızı kalenin içini büyüttüğümüzde bunun şöyle bir şey olduğunu görüyoruz. Yani burada şu matresin içerisinde aslında 64 milyon tane eleman var. Değil mi?
+
+393
+01:33:03,199 --> 01:33:24,500
+8.000'e 8.000'den bahsediyoruz bakın. 64 milyon tane eleman var bu maddesin içerisinde. Ve bu maddesin içerisindeki bu 64 milyonun içerisinde sadece 140.000 tanesi sıfır değil. Diğerlerinin her biri sıfır. Bu neyi gösteriyor?
+
+394
+01:33:25,140 --> 01:33:47,140
+Her bir kelimeden sonra her bir kelimenin geçme olasılıkları bayağı bir az olduğunu gösteriyor. Yani hani şey, dil dediğimiz şey her kelimeden sonra her kelime gelmez. Belli olasılıklar var ve bu dağılım bayağı da bir seyrek aslında. Onu gösteriyor. Çok seyrek bir şey. Dolayısıyla siz işte bu şu andaki bu çok seyrek hali…
+
+395
+01:33:47,891 --> 01:34:02,492
+Şu kelimeden sonra şu kelimenin geçme olasılığı için bulduğunuz şeyi. Şu iki kelimeden sonra şu kelimenin geçmesi için ne çevirsek ne olur? Bir düşünelim mi? O zaman bir matris elimizde olmayacak. Ne olacak elimizde?
+
+396
+01:34:08,083 --> 01:34:10,283
+Ağaç yapısı gibi bir şey olabilir artık.
+
+397
+01:34:10,823 --> 01:34:11,283
+Yok.
+
+398
+01:34:12,583 --> 01:34:17,243
+Yani çok kabaca, çok düz ve liderli düşünürsek bir küp olur değil mi elimizde?
+
+399
+01:34:19,983 --> 01:34:29,923
+Her bir ekseni bir tane şeyi gösteren, kelimeyi gösteren, kelimeyi, yani birinci kelimeleri gösteren bir eksen, ikinci kelimeleri gösteren bir eksen, üçüncü kelimeleri gösteren bir eksen olacak.
+
+400
+01:34:29,923 --> 01:34:34,043
+Şu iki kelimeden sonra şu kelimenin gelme olasılığı o matrisin içerisinde bir tane göz olacak.
+
+401
+01:34:36,148 --> 01:34:56,028
+64 milyon çarpı 8 bin, nedir o? 512 milyar tane hücreye sahip olacak. Ve onların içerisinde de artık ne kalırının şey olacağını düşünün. Yani sıfırdan farklı olacağını düşünün. Çok çok azı olacak.
+
+402
+01:34:56,384 --> 01:35:11,423
+Dolayısıyla çok aşırı derecede seyrekleşiyor. Yani hani K değerini arttırdığınızda aşırı derecede seyrekleşiyor süreç. Şimdi bu niye bu matristen bahsettiğim, küpten bahsettiğim? Şimdi bir şeyin olasılığını hesaplarken hani şunu verdik ya.
+
+403
+01:35:17,011 --> 01:35:24,011
+Mesela bakın, K-2'ye de bakmayalım. Standart dil modelinde düşünürsek...
+
+404
+01:35:25,091 --> 01:35:26,211
+Neredeydi o en başta?
+
+405
+01:35:29,391 --> 01:35:35,631
+Şimdi mesela bakın, standart dil modelinde ya da K'nın sonsuz olduğu Markov modelinde ikisi aynı şey demek.
+
+406
+01:35:36,491 --> 01:35:39,572
+Şimdi şurada mesela bakın, V1'den sonra V2'nin gelme olasılığı var değil mi?
+
+407
+01:35:39,572 --> 01:35:43,451
+V1'den sonra V2'nin gelme olasılığı. V1'den sonra V2'nin gelme olasılığını nasıl bulacaksınız?
+
+408
+01:35:44,692 --> 01:36:07,272
+Yani değerlenmenizde V1'den sonra V1 kaç kez geçmiş onu bulmanız lazım. V1'den sonra V2 kaç kez geçmiş onu bulmanız lazım. Bunu bulacaksınız. Yani bunu bir matrisle elde edebilirsiniz. Demin bahsettiğim matris. Ne o matris? Şu kelimeden sonra şu kelime. Çünkü şunu demeye çalışıyorum. Herhangi bir cümlenin olasılığını bulmak için her seferinde.
+
+409
+01:36:08,404 --> 01:36:34,984
+Bu derlemin içerisinde W1 neyse artık onu aratıp, ondan sonra W1, W2'yi aratıp sonuç elde etmek çok makul bir hareket olmaz. Genelde ne yapılıyor bu yüzden? Önceden bu derlemin üzerindeki bütün kelimelerin bütün kelimelerle ne yapılıyor? Olasılıkları çıkartılıyor. Bir matrise, bir yapıya, çok daha o kadar seyrek bir yapıyı matrise tutmak çok makul bir hareket değil. İşte bir A işte bir hash.
+
+410
+01:36:35,408 --> 01:36:43,627
+Onların içerisinde tutabilirsiniz. Ama en nihayetinde bu tarz yapıların içerisinde tutuyorsunuz bunları. Öyle söyleyelim.
+
+411
+01:36:44,051 --> 01:37:06,311
+Ki, şey zamanında yani sistemi kullanmaya çalışırken şey olmasın, ne derler ama hızlı bu işi yapalım. Bütün derleminiz atıyorum, bir gigabyte derleminiz varsa her bir adımda bir daha bir daha o derlemin içerisinde sorgulanmanın bir manası yok. Mesela bunun için dediğim gibi öyle bir şu kelimeden sonra, yani şu kelime, bir kelimeden sonra gelen kelimelerin yapısını bulmanız lazım.
+
+412
+01:37:07,507 --> 01:37:28,407
+Dolayısıyla şurada gördüğünüz mesela şu maddesi düşünürsek, bu maddesin bir satırının anlamı şu demek. O satırda diyelim ki Ali kelimesi var. Ali kelimesinden sonra diğer 8 bin tane kelime, 7 bin 999 tane kelimenin her birinin Ali kelimesinden sonra kaç herkes geçtiğini gösteriyor. Anlatabildim mi? Her bir satır bunu gösteriyor.
+
+413
+01:37:28,916 --> 01:37:55,735
+Bunları olasılıklara bölersiniz, hepsinin toplumuna bölersiniz falan. O satırın toplamı bir halde. Yani Ali'den sonra işte şu kelimenin gelme olasılığı %0.02, şu kelimenin gelme olasılığı %0.004 gibi bir şeyler elde edeceksiniz. Şurada gördüğümüz işi yapmak için, şu maddesi şart, şunları elde etmek için, şunları elde etmek için böyle yapılara ihtiyacınız var. Bunu elde etmek için mesela Ali okuldan buraya elde etmek için bu zaman üçlü bir yapıya ihtiyacınız var.
+
+414
+01:37:56,148 --> 01:38:10,228
+Daha da uzadıkça daha da geniş yapılara ihtiyacı oluyor. Daha da uzun yapılara ihtiyacı oluyor. Daha büyük yapılara ihtiyacı oluyor. Daha büyük yapılara ihtiyacınız olduğu zaman o yapıların içerisinde sıfır olmayan bir şeyler bulma ihtimaliz giderek ne yapıyor? Düşüyor, düşüyor, düşüyor. Tamam mı?
+
+415
+01:38:11,768 --> 01:38:22,387
+Dolayısıyla Markov varsayımı, önemli bir varsayım, işi yapılabilir halde tutuyor öyle söyleyeyim. Yani pratik olarak gerçekleştirebilir halde tutuyor.
+
+416
+01:38:22,963 --> 01:38:50,104
+Yani ben Eren K'ya bir varsayımda bulunmayacağım dediğinizde gerçekçi bir derlemde sizin bir olasılık hesaplaması pek mümkün değil. Doğru bir olasılık hesaplaması pek mümkün değil. Dolayısıyla illaki K'yı bir yerden atmanız gerekiyor, kesmeniz gerekiyor. İşte o K'yı kesme mevzusunun sıkıntısı da ne oluyor? Çok uzak.
+
+417
+01:38:50,511 --> 01:39:01,532
+Dependence'leri, bağımlılıkları yakalayamıyorsunuz. Bunun çözümü ne? Bunun çözümü de işte daha sonra göreceğimiz sinirsel dil model.
+
+418
+01:39:02,036 --> 01:39:26,395
+Sinnesel Dil Modern'in ilk yapısında şeyleri göreceğiz. Arenenler bu yapıyı bir state'in içerisinde o ana kadar gelen kelimelerin hepsinden bir şeyler tutup sonsuz uzunlukta, öyle söyleyeyim teoride, sonsuz uzunlukta şeyleri, olasılıkları tutabilme, temsil edebilme kabiliyetlerine sahipler.
+
+419
+01:39:26,944 --> 01:39:41,984
+Tamam. Onları ama daha sonra göreceğiz. Ama dediğim gibi, yani buradaki mevzumuz K'nın bir kaybı sınır koymaması şart, istatistik serdiğim modellerinde. Bunu ne kadar büyük koyarsak o kadar gerçekçi bir şeyler olmaya çalışıyor bir yanda.
+
+420
+01:39:42,515 --> 01:39:47,095
+Bir yandan da ama maliyeti o kadar artıyor. Tutmanız gereken bunların ihtimali.
+
+421
+01:39:47,095 --> 01:40:07,296
+Şimdi mesela burada örnek vermek gerekirse ekonomi kelimesinden sonra en fazla geçen beş kelime. Bizim elimizdeki o demin bahsettiğim bin tane ekonomi konusundaki haber metniyle elde ettiğimiz şeyde işte bakanlığı veya ligi, bakanlığı, bankası bunlar çıkmış.
+
+422
+01:40:08,595 --> 01:40:22,075
+Paradan sonra gelecek olan en yüksek olasılık kelimeler, politikası, cezası. Çoktan sonra işte önemli, büyük, çok önemli, çok daha, çok büyük, çok sayıda, çok iyi. Bunlar çıkmışlar. Ekonomide bunlar karşımıza çıkmış.
+
+423
+01:40:34,036 --> 01:40:59,416
+Şimdi bir cümlenin bir gram modeli dediğimiz şey K'nın bir olduğu durum. Yani bir öncesine sadece bağlı olduğu durum. Bu durumda bir cümlenin olasılığına bakalım. Bakın şimdi fuar otomatik sektörüne önemli bir hareket getirdi. Böyle bir cümlenin olasılığını bulacağız şimdi. Tamam mı? Demin anlattığımız için pratik hali aslında. Şimdi bu gördüğümüz cümlenin olasılığı, şurada gördüğümüz olasılıkların çarpımına eşit.
+
+424
+01:41:00,851 --> 01:41:20,851
+K eşittir bir Markov varsayımıyla. Yani fuardan sonra otomotiv gelecek, otomotivden sonra sektörüne gelecek, sektöründen sonra önemli gelecek, önemlinden sonra bir gelecek, birden sonra hareket gelecek, hareketten sonra getirir gelecek. Bunların olasılıklarını bulacağız. Şimdi bu olasılığı nasıl buluyoruz? Frekanslı iş. Bu ikisinin birlikte arka arkaya geçme olasılığı ve ilkini tek başına...
+
+425
+01:41:21,747 --> 01:41:37,747
+Şimdi buna baktığımızda, mesela fuardan sonra otomotiv gelme olasını, fuar otomotiv ifadesi kaç kez geçmiş, bizim derlemimizde fuar kaç kez geçmiş. Bunu gerçekten hesapladığınızda, şuraya baktığımızda, bakayım, mesela fuar burada...
+
+426
+01:41:43,252 --> 01:41:58,332
+Bir öncesine bakarsak, fuar 18 kez geçmiş tek başına, otomotiv 78 kez geçmiş tek başına, sektörün 35, önemli 560, bir 3940, hareket 42 kez geçmiş. Bizim o elimizdeki değerlendir.
+
+427
+01:41:58,707 --> 01:42:23,507
+Şuradaki birin anlamı şu. Fuardan sonra otomotiv kaç kez geçmiş? Bunun dördün anlamı otomotivden sonra sektörüne kaç kez geçmiş? Yani otomotiv sektörüne ifadesi kaç kez geçmiş? Sektörüne önemli ifadesi kaç kez geçmiş? Önemli bir ifadesi kaç kez geçmiş? Gibi gibi bunları gösteriyorlar. Bunlar da işte olasılıklı bulunan bölümleriyle. Dolayısıyla şunların çarpımlarından bahsediyoruz. Şu olasılıkların çarpımı olacak. Şurada hesapladığımız çarpımların çarpımı yaptığınızda.
+
+428
+01:42:23,904 --> 01:42:42,404
+Şöyle çok korkunç küçük bir sayı çıkacağını görebiliyorsunuz. O çok çok korkunç küçük bir sayı loglu halde ifade edersek çok daha mantıklı bir şey olacaktır. Eksi 21. Yani e üzeri eksi 21 civarında oldukça küçük bir rakam. Çünkü her biri çok küçük gördüğünüz gibi. Böyle bir şeyler çıkacak.
+
+429
+01:42:42,404 --> 01:42:49,164
+Şimdi ben bunu bir versiyonunu oluşturacağım.
+
+430
+01:42:49,555 --> 01:43:07,555
+Şimdi, niye öyle bir versiyon oluşturacağım? Onunla bahsedeyim. Şimdi şunu yaptığımızda, şurada önemli bir hareket var ya, önemli bir hareket. Ben şu cümlenin, bakın, fuar otomotiv sektörüne önemli bir hareket getirdi. Bunu ben hesabını şurada...
+
+431
+01:43:08,275 --> 01:43:15,395
+Çarpımların logaritmasını almak yerine logaritmaların toplamını almak da mümkün matematiksel olarak.
+
+432
+01:43:15,395 --> 01:43:24,836
+Yani burada olasılıklar var. Olasılıkların çarpımların logaritmasını almak yerine her birinin, her bir olasılığın logaritmasını onları toplamak mümkün.
+
+433
+01:43:24,956 --> 01:43:27,676
+Yani şu şekilde de bunu yazarsınız. Herhangi bir şey yok.
+
+434
+01:43:29,956 --> 01:43:36,015
+Peki, şimdi ben burada şu ifadedeki bir kelimesini iki ile değiştiriyorum.
+
+435
+01:43:36,064 --> 01:43:48,583
+Önemli iki hareket getirdi. Önemli iki hareket getirdi dediğim anda bana bunun sonucu olarak eksi sonsuz gelirdi. Eksi sonsuz gelmesinin sebebi ne olabilir?
+
+436
+01:43:59,988 --> 01:44:02,668
+Metinde hiç geçmiyor hocam. Bölü sıfır mı oluyor?
+
+437
+01:44:03,208 --> 01:44:05,348
+Aynen öyle. Yani ne geçmiyor metinde?
+
+438
+01:44:06,488 --> 01:44:07,208
+Önemli iki.
+
+439
+01:44:07,608 --> 01:44:12,828
+Önemli iki diye bir şey geçmiyorsun elinizdeki metinde. Ya da iki hareket geçmiyor. O da olabilir.
+
+440
+01:44:14,804 --> 01:44:37,904
+Dolayısıyla bu, bakın sadece ikilik şeylerde bile böyle bir şeyler çıktı o karşımıza. Ki şeyleri düşünürseniz, üçlü, dörtlü falan bir şeyleri düşünürseniz, yani orada K'yı bir aldık karşımıza, sonsuz çıktı. Üçlü, dörtlü falan, beşli falan bir şeyleri aldığınızda bu durumda sıfır ne yapacak karşınıza çok fazla çıkacak. Ve dolayısıyla bu durum aslında pek de iyi bir şey değil.
+
+441
+01:44:38,452 --> 01:45:00,572
+Ne yapıyoruz biz? Yani yukarıdakinin olasını hesaplayamadık bile. Burada çok basit bir işlem yapılabilir. Sıfır gördüğünüz yeri, yani şöyle şu olasılıkta sıfır gördüğünüz yere bir eklersiniz. Frekans kısmına da sözlüğün boyutunu eklersiniz ki çok acayip bir fark oluşmasın diye. Yani gerçekçi bir yumuşatma işlemi.
+
+442
+01:45:06,163 --> 01:45:26,804
+Dediğim gibi yukarıdakine bir ekliyorsunuz. Bütün hepsinde ama. Şu olasılığı biz normalde sadece şuraları kullanarak hesaplıyorduk ya. Yani şu artı bir ve artı ve kullanmadan hesaplı. Onun yerine yukarıya dedim ki artı bir ekleyip aşağıya artı bir ve eklerseniz bu durumda hiçbir zaman ne görmeyeceksiniz? Sıfır elde etmeyeceksiniz. Sıfır olsa bile bir bölü.
+
+443
+01:45:28,564 --> 01:45:52,824
+Sözlük boyutunuz neyse, 8 bin falan. Çok küçük bir şey olsa orasını ne yapacağız? Göreceğiz biz. Tamam mı? Hikayemiz o. Peki, bunu yaptığımızda eğer ki bu işi böyle yaparsak, yukarıdaki, yani fuar otomotik sektörüne önemli bir hareket getirdiğinin olası da eksi 44 olarak bulunuyor. Önemli iki hareket getirdiğinin olası da eksi 49 olarak bulunuyor.
+
+444
+01:45:55,699 --> 01:46:03,640
+Yani olmasa da elimizde o, hala biz daha gerçekçi bir şey elde edebiliyoruz.
+
+445
+01:46:04,239 --> 01:46:12,860
+Şimdi, eksi 44 ile eksi 49 arasında 5 fark varmış gibi gözüküyor ama aslında bu iki olasılığın arasında ne kadar fark var sizce?
+
+446
+01:46:19,028 --> 01:46:30,248
+Yani oradaki 5 fark büyük bir fark mı, küçük bir fark mı? 10 üzeri 5 kadar bir fark var. Logaritma üzerinden düşünürsek mi? E üzerinden düşünürsek mi? E üzerinden düşünürsek mi? E üzerinden düşünürsek mi? E üzerinden düşünürsek.
+
+447
+01:46:30,248 --> 01:46:45,207
+Dolayısıyla 2.7 düşünürsek, 3 düşünürsek, 3 üzeri 5 fark var. Yani? 81, 3 ile 270 kez mi? 270 kat mı?
+
+448
+01:46:45,716 --> 01:46:59,115
+Evet, yani ikisinden bir tanesi diğerinden 270-300 daha büyük. Anlatabildim mi? Bir tanesi olsa %1, bir tanesi olsa %300 falan diye düşünebilirsiniz. Tabii hani burada %300 olmaz da.
+
+449
+01:46:59,572 --> 01:47:19,911
+Yani buradaki küçücük bir farkın bile, yani burada beş mesela çok büyük bir fark değilmiş gibi gözüküyor da, gerçekte büyük bir fark. Bunları niye kullanıyoruz? Yani bu loglu halde niye kullanıyoruz? Bunların gerçek hallerini yazmaya kalkarsanız böyle korkunç sıfırlı bir hale geliyor işler. Değil mi? Tahmin edebiliyorsunuz. Ve onları alıp yorumlamak falan, yanlış yazmamak falan mümkün değil.
+
+450
+01:47:20,884 --> 01:47:37,724
+Dolayısıyla bu Edvan Estimation'i bizim sıfırlarla baş etmek için en azından kullanabileceğimiz bir şey. Mesela buraya baktığımızda mesela şu üç tane kelimemiz olsun. Önemli, hareket ve bir. Bu üç tane kelimenin farklı sıralanışlarının olasılıklarını burada görüyorsunuz. Bakın.
+
+451
+01:47:38,131 --> 01:47:53,531
+Önemli bir hareketin ki eksi on birmiş. Önemli hareket birinki eksi on sekiz. Bir önemli hareket. Burada ne kadar yüksek olursa o kadar iyi anlamında düşünebilirsiniz. Sıfıra bir o kadar yakın bir şey oluyorlar. Hareket önemli bir, hareket bir önemli.
+
+452
+01:47:54,207 --> 01:48:21,688
+Eğer smoothing kullanmasaydık muhtemelen şunu görecektik ama bunların hiçbirinin sırası hakkında, birbirlerine göre olasılıkları hakkında hiçbir şey elde edemecektik. Çünkü çok çok büyük ihtimalle bunların birçoğu ne olacaktı? Eksi sonsuz çıkacaktı. Eksi sonsuz çıktığında da bu bir sıkıntı oluşturacaktı. Yani birbirlerine göre iyiliklerini falan şey yapamayacaktık. Bu çıkacaktı belki ama diğerleri çıkmayacaktı. O zaman bu mu iyi, bu mu iyi vesaire vesaire. Çok şey değil.
+
+453
+01:48:22,207 --> 01:48:23,768
+Bilmiyor olacaktık.
+
+454
+01:48:25,527 --> 01:48:39,787
+Şimdi, burada duracağız bugün. Ama size bir şey vereyim, iş vereyim. İşlerken benjimnasi yapın.
+
+455
+01:48:39,787 --> 01:48:48,327
+Mesela size dense ki, şu 20 tane kelimeyi kullanan bir cümle kurun dense. Tamam mı?
+
+456
+01:48:49,268 --> 01:49:12,868
+20 tane kelime veriliyor size. Bu kelimeleri kullanarak bir cümle kurun dense, bunu nasıl gerçekleştirirsiniz? İstasyilsel dil modellerinden bahsediyorum. Elinize isilsel dil modelleriniz var. Kanun farklı farklı istediğiniz türündekine erişebildiğinizi varsayalım.
+
+457
+01:49:16,404 --> 01:49:31,904
+Kelime torbası var elinizde. İçinde işte dediğim gibi 20 tane kelime var. Bunları nasıl sıraya dizersiniz? Anlaşıldı mı soralım? Önümüzdeki hafta bu soruya vereceğiniz cevapları tartışarak başlayacağız derslere.
+
+458
+01:49:32,424 --> 01:49:34,344
+Hocam bütün kelimeleri kullanmak zorunda mıyız?
+
+459
+01:49:34,344 --> 01:49:43,484
+Evet. Aynen öyle. Yani bunu şöyle düşünün. Mesela 20 kelimeli bir tane cümle var elinde. Onu karıştırıp sana vermişler. Sen düzelteceksin onu.
+
+460
+01:49:45,140 --> 01:49:45,940
+Anlatabildim mi?
+
+461
+01:49:46,280 --> 01:49:47,700
+Anlamlı bir cümle kuracağız.
+
+462
+01:49:48,420 --> 01:49:50,340
+Evet, tabii tabii anlamlı bir cümleyiz.
+
+463
+01:49:51,480 --> 01:49:52,800
+Karıştırmışlar, anladım.
+
+464
+01:49:53,000 --> 01:49:57,200
+Bunu normalde insan olarak biz kendimiz yapıyoruz ama bunu makineye yaptıracağız.
+
+465
+01:49:58,480 --> 01:49:59,420
+Evet, aynen.
+
+466
+01:50:00,000 --> 01:50:02,000
+Tabii tabii, makine nasıl yaptırırsınız?
+
+467
+01:50:02,000 --> 01:50:04,000
+Aynen, tamamdır.
+
+468
+01:50:04,000 --> 01:50:08,000
+K ile ilgili bir kılava yok, o da zaten sorun bir fark.
+
+469
+01:50:08,000 --> 01:50:15,000
+Yok, size kalır. İstediğiniz K'ya sahip bir istatistiksel dil modelinin elinizde olduğunu düşünün, tamam mı?
+
+470
+01:50:15,000 --> 01:50:21,000
+Ama bunu yaptırmaya kalktığınızda neler başınıza gelir, ne olur ne biter bir düşünün bakın, tamam mı?
+
+471
+01:50:21,000 --> 01:50:23,916
+20 tane kelime var, tamam mı?
+
+472
+01:50:25,171 --> 01:50:28,711
+Peki arkadaşlar, var mı sorunuz bugünkü dersimizle alakalı?
+
+473
+01:50:31,311 --> 01:50:33,711
+Yok hocam, teşekkür ederiz.
+
+474
+01:50:34,051 --> 01:50:35,192
+Teşekkürler hocam.
+
+475
+01:50:35,251 --> 01:50:36,231
+Ben teşekkür ederim.
+
+476
+01:50:36,231 --> 01:50:36,851
+Teşekkürler hocam.
+
+477
+01:50:37,351 --> 01:50:39,811
+Görüşmek üzere o zaman diyorum arkadaşlarım haftaya.
+
+478
+01:50:39,811 --> 01:50:40,251
+Teşekkürler hocam.
+
+479
+01:50:40,331 --> 01:50:41,371
+Görüşmek üzere kismetse.
+
+480
+01:50:41,971 --> 01:50:43,051
+Görüşmek üzere arkadaşlar.
+
+481
+01:50:43,371 --> 01:50:44,331
+Teşekkürler hocam.
