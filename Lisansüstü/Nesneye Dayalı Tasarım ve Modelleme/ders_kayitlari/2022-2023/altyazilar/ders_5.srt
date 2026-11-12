@@ -1,0 +1,2271 @@
+1
+00:00:41,875 --> 00:00:43,875
+O diye alışkanlık olmuş.
+
+2
+00:12:51,091 --> 00:13:08,072
+Evet arkadaşlar, bu süre içerisinde 11 kişiye çıktık. Benim inşaatımız 10 kişiye katıldı. Daha fazla beklemeyelim. Çünkü bugün 3 saat şeklinde yapamayacağız. Biraz daha erken bitireceğiz. Bakalım artık 2 saat veya 2 saatten biraz daha fazla yapabiliriz bugünkü dersi.
+
+3
+00:13:12,563 --> 00:13:16,983
+Şimdi şeyden emin olayım. Kayıttan emin olayım. Tamam, kayıt ediliyor.
+
+4
+00:13:18,043 --> 00:13:21,203
+Ondan paylaşımına dönelim.
+
+5
+00:13:22,884 --> 00:13:30,203
+Evet, adaptör kalıbından itibaren devam edeceğiz. Adaptör çok kalmış bir kalıp olmamakla birlikte.
+
+6
+00:13:30,203 --> 00:13:35,663
+Yine de geçen hafta o kadar gidebilmişiz. Adaptöre bulaşmamışız.
+
+7
+00:13:38,868 --> 00:13:51,008
+Bu arada ders notlarını nihayet sayfaya koyabildim. Ayrıca OBS'den de sizlere bilgilendirmede bulundum. Artık bundan sonra ABC sayfamdan ders notlarını indirebilirsiniz.
+
+8
+00:13:53,508 --> 00:13:55,368
+0254
+
+9
+00:14:11,923 --> 00:14:13,923
+Yanlış yaptım. Bir dakika.
+
+10
+00:14:17,264 --> 00:14:18,264
+54.
+
+11
+00:14:19,063 --> 00:14:20,563
+012 54.
+
+12
+00:14:22,783 --> 00:14:23,783
+Bakıyorum şimdi şu şey.
+
+13
+00:14:24,244 --> 00:14:31,624
+Evet, 0-12-54-Fasat. Şeyi hatırlıyorum ama şu header, footer falan şeyi yanlış yazmışım.
+
+14
+00:14:31,624 --> 00:14:40,923
+Yani fasat yazmışım. Adaptel konusunu hatırlıyorum. Sayfa numaramı doğru da şunu da yaptığımı hatırlıyorum.
+
+15
+00:14:41,163 --> 00:14:47,964
+Geçen hafta header, footer olayları şeyinlikle ilgiledik. Burada kaldık fasat. Tamam peki. Şunu düzelteyim yalnız.
+
+16
+00:14:49,844 --> 00:14:55,324
+Çok da nereden kaldığımız farkları yaptıktan sonra bu da çok önemli değil ama.
+
+17
+00:15:02,740 --> 00:15:20,759
+Şimdi şu fasad, öyle okumuyormuş. Bana öyle söylemişti. Bazen, Türkçe'de bir deyim vardı ya, faça diye. Yüz dış görünüş falan faça. O da galiba İtalyancadan gelme bir kelime olduğunu zannediyorum.
+
+18
+00:15:21,364 --> 00:15:47,084
+Neyse, üstünde durdun biraz. Çünkü gerçekten de kalıbın anlamı bu. Bir arayüz vermek, bir erişim noktası sağlamak. Şey gibi de düşünebilirsiniz. Bir aralar çok modaydı, artık o kadar moda değil ama böyle binaların, evlerin dış cephelerini Amerikan kaplama, Amerikan siding falan diyorlardı. Bir aralar onlardan çok yapıyorlardı evlerin dış kaplamasını.
+
+19
+00:15:49,364 --> 00:16:06,484
+Fasad şeklinde söylüyorlar. Fasad of the house tipisinden kullanıyorlar. Bu tasarım kalıbı olarak düşündüğümüzde amacımız çeşitli art sistemlerde bulunan farklı arayüzleri ve kalma şıklılığı nedenle tek ve daha üst düzey bir arayüzde toplamak. Ne kazanıyoruz böylece?
+
+20
+00:16:17,364 --> 00:16:35,364
+Üzerinde erişirler. Anlatmak istediği şu dörtlü çetenin. Şimdi, Subsystem Classes dediği sistemin o kısmında bir dolu sınıf var. Tamam mı? Bir dolu pakette bir dolu sınıf var. Ve son kullanıcının...
+
+21
+00:16:35,956 --> 00:16:53,716
+Yapabileceği işlere yönelik sorumluluklar birçok farklı sınıfın birçok farklı metoduna dağıtılmış durumda. Şuradaki örnekte, örneğin 7 sınıflık bir yapıda 3-4 tane sınıfın bazı metotları kullanılacak.
+
+22
+00:17:03,956 --> 00:17:05,516
+Şunun bazı metodlarına.
+
+23
+00:17:06,067 --> 00:17:12,307
+Şunun bazı metotlarına ulaşmak zorunda gibi bir dolu farklı sınıfın bir dolu farklı metoduna erişmek.
+
+24
+00:17:12,407 --> 00:17:16,647
+Değişik sıralarda, değişik zamanlarda değişiklerini yapmak zorunda kalacaklar.
+
+25
+00:17:16,647 --> 00:17:21,728
+İşte bu şekilde one to many, buraya gitmiyor, şuraya gitmiyor mesela.
+
+26
+00:17:22,228 --> 00:17:33,927
+Bu şekilde many to many, many to many ilişkilerde, satıştığım kısmındaki many class ve client tarafındaki many class, many to many kalmaşık bir.
+
+27
+00:17:34,067 --> 00:18:01,427
+İlişki A çıkıyor. Bunun yerine, şu biraz sade ilişkilerim diyorlar. Bu farklı çağrınması gereken metotlar hangi sınıflardaysa o sınıfların o metotlarını kendi yazacağımız bir fasad sınıfı çağrımsın. Client'lar da fasad sınıfı üzerinden ilişsinler şeklinde bir yapı var. Bu tabii ki iç karmaşıklığı düzeltmiyor arkadaşlar.
+
+28
+00:18:02,067 --> 00:18:20,167
+Sadece dış karmaşıklığı, yani daha doğrusu karmaşıklığın dışa yansımasını azaltıyor. Bu nedenle öyle çok da aman aman bir kalıplı değil. Fakat hani belki quicken dirt fix hiç olmazsa en azından şöyle bir işe de yarayabilir.
+
+29
+00:18:25,907 --> 00:18:53,887
+Refactoring eylemleri yapacağız ya. Refactoring'in de tamamen tanımı dışarıya verilen hizmetleri bozmadan iç yapıyı düzeltmek olacak ya. Bu refactoring eylemlerini görürken biz bütüncül sistem üstünde refactoring yaparken öyle bir noktaya geleceğiz ki yapacağımız tasarım değişikliği bizi çok daha iyi bir noktaya getirecek. Fakat test gezilerimiz bozulacak. Yani dışarıya verilen hizmetlerin imzasında farklılık yaratacak şekilde olacak. Burada bir ikilemde kalacak.
+
+30
+00:18:53,907 --> 00:19:01,487
+Yapalım mı, yapmayalım mı? Geriye doğumlu, sağlık uzmamak önemliyse yapmayalım. Aksi taktirde yapalım diyeceğiz.
+
+31
+00:19:13,715 --> 00:19:41,715
+Şimdiden araya bu fasad sınıfı koyarak ondan oluşturacak bir nesne üzerinden sisteme erişirsin. Böylece benim iç yapıda yapacağım herhangi bir refactoring eylemi sadece fasad sınıfını belki etkileyecek. Ama fasad sınıfının client'lara açık public metotlarının imzalarını etkilemeyecek şekilde olduğu takdirde client class'lar hiçbir şekilde etkilenmeden ben subsistemin içerisinde istediğim...
+
+32
+00:19:41,715 --> 00:19:49,115
+Refactoring eylemlerini yapabilirim diyebilirim. Bu kadar arkadaşlar. Ne zaman kullanabiliriz bu kalıbı?
+
+33
+00:19:49,115 --> 00:19:57,615
+İşte karmaşık bir art sisteme basit bir alabüs almak istersek kullanabiliriz. Art sistemleri çeşitli katmanlara ayırmak istediğimizde kullanabiliriz.
+
+34
+00:19:58,035 --> 00:20:00,000
+Bazı istekçilerin sistemin belli...
+
+35
+00:20:00,000 --> 00:20:27,759
+Bir kısmıyla bağlaşımını azaltmak istediğimiz zaman kullanabiliriz. Çünkü nihayetinde mesela bir önceki şekle bakarsak, yani her client her ilgili sınıfla ilişkide olsa eğer, yani bak şurada bir, iki, üç, dört tane sınıf var, burada üç tane client var. Üç görevlet on iki, fully connected MN ilişki. Ama bunun yerine şimdi on iki ilişki yerine üç client bir fasadla ilişkide, bir fasadla dört sınıfla ilişkide.
+
+36
+00:20:28,000 --> 00:20:45,180
+7'ye düştü bağlaşım gibi bir şey söyleyebiliriz. Bu basit bir kalıp olduğu için buna özel bir kod yazmayacağım. Zaten yön başlaması ne olacağını açıkça anlatıyorum. Biz esas gelelim Flyweight kalıbımıza.
+
+37
+00:20:51,476 --> 00:21:13,836
+Flyweight demek tül sklet, hafif sklet ya da sinek sklet diye geçen boks gibi yarışmalarda, yarışmacılar ağırlıklarına göre ya da belki de başka şey cüsselerine göre kategorilerde hafif sklet, orta sklet ve ağır sklet olmak üzere en azından üç kategoriye bölünürler. En düşük kategoriye flyweight diyorlar.
+
+38
+00:21:15,092 --> 00:21:37,732
+Bu kalıpta da çeşitli flyweightlerle uğraşacağız ve bu bize yarar sağlayacak. Kalıptaki amacımız şu. Paylaşım yolu ile çok sayıda basit nesnenin kullanılmanın desteklenmesi ve bu işin verimli bir biçimde yapılması, sistem kaynaklarını verimli kullanılacak bir şekilde yapılmasını sağlayan bir kalıp bu flyweight.
+
+39
+00:21:37,732 --> 00:21:42,272
+Örneğimiz şu. Bir metin düzenleme programını yazıyoruz.
+
+40
+00:21:43,092 --> 00:21:43,972
+Mesela, hadi dedik ki.
+
+41
+00:21:47,292 --> 00:21:54,572
+Burada, bu programda biz olası en mükemmel çıktığı anmak istiyoruz.
+
+42
+00:21:55,872 --> 00:22:06,072
+Harflerin, siyah harflerin beyaz arka plana olan keskinliği çok güzel olsun, net gözüksün ve bulanık bulanık harfler karakterler çıkmasın.
+
+43
+00:22:06,415 --> 00:22:33,935
+İstiyoruz. Hani biliyorsunuz, hele ki düşük çözünürlük bir resmi eğer biraz büyütmeye kalktığınızda kutu kutu kutu kutu sorunlar görürsünüz o resim içerisinde. Nihayetinde bizim harflerimiz de birer resim aslında. Vektör grafiği değil harfler. Bitmap grafik aslında. Vektör olanları da var ama yani kelime işlem programları o şekilde vektörlerle hiç çalışmıyor. Stringman Pileşim işlemleri bu nedenle.
+
+44
+00:22:34,415 --> 00:22:52,255
+Bu nedenle bizim programda amacımız her bir harfi bir grafik nesnesi olarak göstermek istiyoruz. Böylece en güzel çıktığı en güzel görünme elde etmek istiyoruz.
+
+45
+00:22:52,915 --> 00:23:20,576
+Şimdi isterseniz basit örnek olması için bunu sabit genişlikli bir font ya da daktüro yazısı olarak düşünün. Sabit genişlikli bir font da örneğin A harfi ile Ü harfinin genişliği aynıdır. Şu anki gördüğünüz font sabit genişlikli değil. Tabii ki A daha kalın, daha geniş bir harf, Ü daha ince bir harf. Ama daktüro metinleri ya da işte kod yazarken kullandığımız metinler, fontları da genelde sabit genişlikli oluyorlar.
+
+46
+00:23:20,915 --> 00:23:36,215
+Biraz geleneksel, biraz alışkanlık şey de var herhalde nihayetinde. Öyle bir durum derseniz eğer, nihayetinde bir A4 sayfaya en fazla belirli bir sayıda satır ve belirli bir sayıda sütun yerleştirmeyebilecektir.
+
+47
+00:23:36,215 --> 00:23:39,596
+Ve herhangi bir satır sütunda bir harf yer alacaktır.
+
+48
+00:23:40,980 --> 00:23:55,819
+Bu şekilde düşünmüyorsanız, değişken gençlikli olarak düşünüyorsanız bile bizim metnimizde N sayıda satır ve M sayıda sütun olacaktır illaki. Tamam bazı harfler daha gençtir, bazı harfler daha kalın.
+
+49
+00:24:08,980 --> 00:24:14,740
+Üstünde L harfi var. Birinci satır için üstünde Y harfi var gibi. İkinci satırda hiçbir harf yok.
+
+50
+00:24:15,155 --> 00:24:43,056
+Ama ikinci harf satığınız var. Üçüncü satığın birinci karakteri yuvarlak. Şimdi mesela şununla şu belki eşleştirebilir, şu hizaya şu hizaya eşleştirebilir. Hani buraya geldik ama bir noktadan sonra harf genişliğiyle şey uymamakta. Yani bir satın harf genişliğiyle öbür harf genişliği uymamakta mesela. Şöyle oldu ama şu da biraz şuraya denk geldi, şu da A'ya denk geldi gibi. Bu nedenle siz bunu biraz sonraki yazıda göstereceğim üzere.
+
+51
+00:24:43,155 --> 00:24:59,496
+Bunlar satırlar olsun ama herhangi bir satırda yani üniform bir karametris şeklinde değil de bu şekilde değişik satırların değişik sütunlarındaki elemanla bu şekilde de mesela gösterebilir.
+
+52
+00:24:59,496 --> 00:25:03,175
+Eğer değişken genişlikli font kullanıyorsanız.
+
+53
+00:25:04,956 --> 00:25:10,275
+Veyahut da birazdan bir sonraki yansıda gösterdiği gibi şu şekilde.
+
+54
+00:25:11,155 --> 00:25:38,996
+Sütunun satırı şeklinde de gidilirsiniz. Belirli bir satırında, mesela bu satırında kaç tane harf var diyelim ki ne yazmış? Apparent diye yazı devam ediyor. Bu satırında appare bilablarla harfleri yer alıyor. Ne kadar harf varsa şeklinde bir bellek gösterimi yani ya biri ya biri saklanacak.
+
+55
+00:25:39,155 --> 00:25:49,695
+Burada mesele şu şimdi. Eğer her bir harfi ayrı bir nesne olarak ele alırsak o zaman küçük bir belgede bile binlerce nesne olacak arkadaşlar.
+
+56
+00:25:52,195 --> 00:25:56,695
+Bu da bu belgenin hem bellekte hem de...
+
+57
+00:25:57,332 --> 00:26:15,892
+DİSK'te saklanacağı, saklamak için kullanacağı belleğin çok fazla aşırı artmasına sebep olacak. 3 sayfalık bir şeyde bile, metinde bile ki bu derste ilk FMD'nin enstitüsüne bağladığım zaman 3 sayfalık bir form varmış işte ders önerisi.
+
+58
+00:26:15,892 --> 00:26:24,892
+Onu da saymışım gördüm kelime özelliğiyle, sayma özelliğiyle. Boşlukla birlikte 5000 harf bulunmaktaymış. Şimdi her bir harfin eğer...
+
+59
+00:26:25,332 --> 00:26:47,952
+Bitmap'ini bir megabayt çok mu olur? Bir kilobayt diyelim ki. Bir kilobayt olsa, beş bin çarpı bin, beş megabayt edecek. Tek bir dosya. Sırf metin, başka hiçbir şey yok. Biraz büyük bir.
+
+60
+00:26:49,779 --> 00:26:56,259
+Bu nedenle acaba benlik kullanımını optimize edebilir miyiz diye bir düşünelim.
+
+61
+00:26:58,259 --> 00:27:05,519
+Bu bölüm şu olacak. Mini kod alfabesindeki her bir harfi bir harf nesnesi olarak ele alalım.
+
+62
+00:27:06,220 --> 00:27:12,820
+Fakat ayrıca case sensitivity düşünürsek büyük harfleri ayrı, küçük harfleri ayrı ele alalım.
+
+63
+00:27:14,099 --> 00:27:30,779
+Şuradaki apparent yazısı içerisinde, kelimesi içerisinde A harfinden iki tane var, P harfinden iki tane var, V harfinden bir tane var, E'den bir, N'den bir, T'den bir. Daha gittikçe bu harflerden kaçar tane olduğu sayısı da artacak.
+
+64
+00:27:38,132 --> 00:27:58,211
+Şöyle yapalım sadece. Her sütun ve satırda yeni bir harf nesnesi oluşturmak yerine bu noktaya o harfin, bütün harflerin bir havuzda yer alsın. Bellek de sabit bir noktada ya da bilinen bir tabloda yer alsın. Biz her bir konumdan o tabloya işaretçi verelim.
+
+65
+00:28:04,819 --> 00:28:21,819
+Unicode hafifasında kaç haf var? Az ki olsa 256, Unicode olsa 1000 diyelim ya da 2000 diyelim. Unuttum şimdi. Bakın neyse kaç haf varsa. Ama nihayetinde o iki üzeri...
+
+66
+00:28:22,644 --> 00:28:43,483
+4 ya da 8 diyeyim ki, en kabasından, en büyüğünden en fazla bir harfin 8 bit ile, 4 x 8, 32. Her bir harfin 32 bit'lik bir kodu olacak.
+
+67
+00:28:50,644 --> 00:29:01,943
+Baitlık işaretçisi. Bunu her bir harf için tekrarladığınızda epey bir bellek tasarrufu yapmış oluyorsunuz arkadaşlar. Bütün esprisi bu işin.
+
+68
+00:29:04,960 --> 00:29:20,260
+Harf nesnelerinin ortak bir havuzdan paylaşımını sağlamış oluyoruz. İşte bu paylaştığımız nesneler flyweight diyoruz. Metin içerisindeki her bir konu bir flyweight'te bir işaretçi işliyor olacak. Böylece önemli bir tasarruf edeceğiz.
+
+69
+00:29:20,640 --> 00:29:30,000
+Tasarımımızı şu şekilde yapıyoruz. Şimdi nihayetinde bir metin satırlar ve sütunların bir koleksiyonu gibi düşünebilirsiniz.
+
+70
+00:29:33,332 --> 00:29:58,152
+Bu da bize aslında bir nevi kompozit kalıbını hatırlatıyor. Tabii bu kompozit kalıbından farklı bir kalıp. Fakat nihayetinde bütün bu hem satırları, hem sütunları, hem karakterleri ortak olarak modelleyebilecek bir glif sınıfı öneriyoruz. Aynı kompozitteki komponent sınıfı olduğu gibi.
+
+71
+00:30:00,000 --> 00:30:26,440
+Satımla roll, satır, kolon, sütun ve karakter sınıfları bundan kalıtımla türetiyoruz. Bir sütunun kendi içerisinde satır veya karakterler içerebileceği ya da isterseniz ters kodlamayı da düşünebilirsiniz. Bir sütunun kendi içerisinde karakter veya sütun içerebileceği şekilde bir ilişkiyi bu şekilde modelleyebiliyoruz arkadaşlar.
+
+72
+00:30:28,000 --> 00:30:45,779
+Mesela satır çivileceği zaman o satır gidecek, kendi içerisindeki her bir grif için çizim yaptıracak. Her bir grif ise, örneğin bunlarda harf ise kendisini belirli bir satır sütun noktasına çizecek.
+
+73
+00:30:45,779 --> 00:30:55,100
+Ve her karakterde, her karakter nesnesi de hangi spesifik harfi içerdiğini sapmayan bir üye anlamda elbette olacak.
+
+74
+00:30:56,180 --> 00:31:05,680
+Tasarım bu şekilde arkadaşlar. Kalıp şeklinde gösterirsek eğer biraz daha sade yapabiliyoruz kalıp gösterimizi.
+
+75
+00:31:08,680 --> 00:31:12,180
+Fakat bu noktada şu havuzu hatırlayın.
+
+76
+00:31:13,236 --> 00:31:39,756
+Paylaşılan flyweight nesnelerin havuzu olacak. Peki bu havuzda belirli bir flyweight nesnesine erişebilmemiz için bir anahtara ihtiyacımız olacak. Bu anahtarı verip bize ilgili harf nesnesini geri döndürecek. Yani havuza erişimi sağlayacak bir factory sınıfımız olur. Flyweight factory demişiz. Bunun bir getirme tutu var. Hangi harfi almak istiyorsak onu anahtar olarak veriyoruz. O da bize ilgili.
+
+77
+00:31:40,948 --> 00:32:05,847
+Arif nesnesini, ya da işte flyweight nesnesini geri döndürecek. Flyweight nesnesi aslında mutlaka ya bir somut ya da paylaşılmamış bir flyweight olabilir. Şimdi anlamlarına gireceğim. Ama herhalde flyweight sınıfımız soyut olacak. Bundan somut olarak iki ya da daha fazla alt sınıf üretebiliriz.
+
+78
+00:32:08,948 --> 00:32:17,288
+Ne gibi operasyonlar yapılacaksa, o operasyonlar soyut üst sınıfın metotları içerisine yine soyut metot olaraktan yazılır.
+
+79
+00:32:18,028 --> 00:32:23,668
+Tabii ki bir default behavior verebileceksek alt sınıflara, ekleyebileceğimiz somut metotlar da olabilir.
+
+80
+00:32:23,668 --> 00:32:31,988
+Ama esprisi genelde bunlar çok farklı olacağından metotları soyut olarak bırakmak, metotları da soyut olarak bırakmak.
+
+81
+00:32:35,539 --> 00:33:01,400
+FlyWat'ler genelde paylaşılır. Metnin içerisinde kaç tane A geçiyorsa bütün A harfleri, hepsi küçük A olması kaydıyla aynı küçük A nesnesine işaret edecek. Genelde bu FlyWat kalıbını paylaşılan somut FlyWat'ler oluşturmak ve kullanmak için tasarlanırız. Ama bazı FlyWat'lerin paylaşılması istenmeye bilinir.
+
+82
+00:33:02,612 --> 00:33:13,952
+Eğer böyle bir dönüş söz konusuysa, istersek flyweight'ten yine kalıtımına, concrete flyweight ile kardeş olarak bir unshared concrete flyweight sınıfı da oluşturabiliriz.
+
+83
+00:33:14,952 --> 00:33:21,292
+Onun dışında şimdi, bir dakika, onu herhalde biraz daha söyleyeceğim. Söylemek zorundayım.
+
+84
+00:33:24,703 --> 00:33:39,003
+Concrete Flyway'de intrinsic state, unshave'te ise all state diye iki ayrı üye alan var. Bunların anlamları üstüne bir hafta konuşacağız. Kaldı ki bir Flyway'de bir yanlış işlem yapılabilecekken,
+
+85
+00:33:40,980 --> 00:33:53,120
+Bu Flavvet nesnesinin ihtiyaç duyduğu durum bilgisinin bir kısmını kendisine dışarıdan veririz. Bir kısmı da kendi içerisinde kalacaktır.
+
+86
+00:33:53,120 --> 00:34:08,279
+Metin örneğine gelirsek, bir harfi çizeceğiz. Ama bu harfi kaçıncı satır ve sütuna çizeceğiz? Bu bilgi harf olan Flavvet nesnesinde yok.
+
+87
+00:34:09,364 --> 00:34:21,783
+Harf olan flyweight nesnesinde ne var? Kendisinin bitmek resmi var. O yüzden o flyweight'i bir kere faktörden aldıktan sonra diyeceğiz ki sen kendini şu koordinatlara çiz diyeceğiz.
+
+88
+00:34:22,420 --> 00:34:45,579
+İşte herhangi bir operasyonu, buradaki çizme operasyonu ve buradaki ekstremistik seçisi hangi satır ve stutum koordinatına çizileceği bilgisidir. Çizme işlemi, bu bilgiyi paramet olarak alıp ek olarak kendi içsel durum bilgisini de kullanıp yani işte harf örneğinde harfin resmi, ilgili noktaya ilgili resmi çizer. Bu şekilde bir kullanım söz konusudur.
+
+89
+00:34:46,260 --> 00:34:55,260
+Biz bu kalıbı paylaşacak nesne üretmek üzere bir fabrika nesnesi oluşturulabilir ve hatta oluşturulmalıdır diyor. Kalıp bunu özellikle öneriyor.
+
+90
+00:34:55,260 --> 00:35:06,940
+Tabii bu fabrikanın oluşturmanın önemli bir nedeni de şu, biz bu flaviyat kalıbının ruhuna ters bir eylemde bulunabiliriz eğer flaviyatları şer etmezsek.
+
+91
+00:35:07,476 --> 00:35:17,176
+O zaman bellek tasarrufu azalmış olur. Bu nedenle şeye dikkat edersek geri dönüp bakarsak, bu Flavius faktörüsünün get tırrında,
+
+92
+00:35:17,176 --> 00:35:24,376
+işte eğer ilgili nesne varsa geri döndürür. Aksi taktirde mesela işte A harfinden nasıl resim çizeceğini...
+
+93
+00:35:24,916 --> 00:35:41,396
+Biliyorsa ya da bilmiyorsa neyse dışarıdan da verebilir. Burada önemli olan bu get metodunda hep ilgili anahtara sahip aynı flyweight nesnesinin geri döndürmektir. Bu işi o sağlar, bu faktörü sunukları sağlar.
+
+94
+00:35:52,916 --> 00:36:01,376
+Bunları alıyoruz. O yüzden Singleton kalıbını ayrıca tek daha kurmaya gerek yok. Bu Flyweight Factory üzerinden bu işi halledebiliriz.
+
+95
+00:36:05,780 --> 00:36:22,500
+Evet, tamam bunu söyledik. Hatta istersek bu private nesneye erişimi daha da kısıtlayabiliriz. İlgili operasyon metotlarını ara yüzde tanımlarız ve private sınıfını da fabrikanın private iç sınıfı olarak kodlarız.
+
+96
+00:36:22,847 --> 00:36:33,987
+Böyle bir yolu Memento kalıbında da uygulayabileceğiz aslında arkadaşlar. Ama tabii ki illaki böyle yapmanız şart değil.
+
+97
+00:36:37,012 --> 00:36:53,392
+Yani fabrikten aldığınız Nesne'yi her zaman için klonlayabilirsiniz belki. Ama siz de klonlamayın. Çok çok da bir sorun yoksa o zaman bu en son bahsettiğim erişim kısıtlama işlemini yapmayabilirsiniz.
+
+98
+00:36:59,092 --> 00:37:02,472
+Böyle yatacağız demişiz. Bakın gerçekten mutfak edinmişiz.
+
+99
+00:37:03,315 --> 00:37:24,435
+Evet, şimdi Intrinsic State ve Extrinsic State. Bundan bahsettik. Biraz daha ayrıntılı girelim. Burada kalıbın bize maksimum tasarrufu sağlaması, ortak olarak kullanılabilecek Intrinsic bilginin mümkün olduğu kadar geniş kapsamlı olması.
+
+100
+00:37:24,435 --> 00:37:30,375
+Yani başka bir değişle, her bir nesnenin durum bilgisi iki art parçaya ayrılabilmeli.
+
+101
+00:37:31,315 --> 00:37:36,975
+Bunun bilgisinin nesneye özgü olan kısmına intrinsic state.
+
+102
+00:37:36,975 --> 00:37:42,815
+Buna dışarıdan verilmesi söz konusu olan kısmına ise extrinsic state diyoruz.
+
+103
+00:37:42,875 --> 00:37:48,315
+Yani herhangi bir harf nesnesinin resmi intrinsic state, hangi satışta yer aldığı extrinsic state.
+
+104
+00:37:49,415 --> 00:37:56,895
+Bu oranlamada intrinsic state'in extrinsic state'e oranı ne kadar fazla ise
+
+105
+00:37:57,588 --> 00:38:12,468
+O kadar fazla tasarruf etmiş oluyoruz. O yüzden bir tartmamız lazım. Bir, durum bilgisini iki parçaya ayırabiliyor muyuz? İki, ayırdığımız parçanın mümkün olduğu kadar büyük kısmını ortak kullanım üzere içsel durum bilgisi şeklinde ayırabiliyor muyuz?
+
+106
+00:38:12,719 --> 00:38:28,639
+Bu iki soruyu da bizden evet diyorsak ancak o zaman bu kalıbı kullanmalıyız. Alternatif bir terminoloji olarak intrinsic yerine immutable, extrinsic yerine mutable ile deniliyor. İçsel yani içeride ve değişiklikler ödemez.
+
+107
+00:38:29,012 --> 00:38:45,872
+Dışsal, kişiden gelen etkilerle değiştirilebiliriz. Şeklinde akılada kalabiliriz. Ve yine biraz daha tedbir olaraktan, intrinsic, immutable, içsel kısımdaki üyeleri final olarak tanımlayabiliriz pekala değişmeyecekler için.
+
+108
+00:38:47,231 --> 00:38:52,952
+Değişmeyen söz konusu olacaksa o zaman başka tabii ki final olarak tanımlamayız.
+
+109
+00:38:57,619 --> 00:39:05,559
+Paylaşılması gerekmeyen flyweight nesneler için ise Unshared Flyweight alt sınıfını oluşturup kullanabiliriz.
+
+110
+00:39:09,331 --> 00:39:23,331
+Nesne davranışına baktığımızda ise bir client bir flywet ile çalışacağı zaman aslında önce bunu flywet faktörden isteyecek veya belki bir başkası istip bunu client'a vermiştir.
+
+111
+00:39:23,331 --> 00:39:34,471
+Clientler hep somut flywet nesneleri üzerinden çalışacak. Onlara extrinsic state'lerini verecek. Intrinsic state'leri üstünden de kullanım olacak.
+
+112
+00:39:37,012 --> 00:39:50,412
+Evet, bu flyweight nesnelerin olan referansları da aynı zamanda client idare eder. Yani metin örneğinde satırları saklayacak olan faktörü falan değildir. Metin editörüdür. Ondaki client nesnesi.
+
+113
+00:39:55,635 --> 00:39:59,456
+Evet, toparlarsak bu kalıbı ne zamanlarda kullanabiliriz?
+
+114
+00:40:00,000 --> 00:40:17,360
+Kuşların hepsinin doğru olmasını bekleriz. Biri bile doğru değilse ya kalıbın kullanılması mümkün değildir ya da getireceği kazanım yeterlince fazla değildir. Bir kere bir uygulamanın çok fazla sayıda nesne kullanması gerekmektedir ki o zaman bu nesneler biraz flyweight adı olabilir.
+
+115
+00:40:24,079 --> 00:40:31,739
+Durum bilgilerinin çok hacimli olması, sahne nedeniyle saklama masraflarının yüksek olmasıdır.
+
+116
+00:40:31,739 --> 00:40:44,519
+Ama tabii bunu daha çok az sayıda ağır nesneden ziyade orta sayıda orta ağır nesne veyahut da çok sayıda az ağır nesne de belki değerlendirebilir.
+
+117
+00:40:44,639 --> 00:40:49,759
+Ama yani çok az sayıda ama hacimli nesneyi flyweight'e ayırmak çok daha mantıklı olmayacaktır.
+
+118
+00:40:50,319 --> 00:40:52,000
+Onun günün sonunda orana bakacağız.
+
+119
+00:40:52,079 --> 00:40:59,880
+Bu nesnenin durum bilgisinin çoğunu dışsallaştırabiliyorsak o zaman bu kalıbı kullanırız.
+
+120
+00:41:01,659 --> 00:41:10,259
+Ve bu arada bu kalıbın şöyle bir dezavantajı var. Flyweight kalıbı Object Identity korumuyor arkadaşlar. Nesne kimliğini korumuyor.
+
+121
+00:41:10,259 --> 00:41:15,000
+Bazı problemler nesne kimliğine çok bağımlıdır. Örnek vermek istiyorum.
+
+122
+00:41:18,260 --> 00:41:31,640
+Diyelim ki bir hala yolu diyor ki, bir ay içerisinde bir milyon yolcu taşıdık. Abarttım mı? Yüz bin diyelim. Bir hala yolu bir ay içerisinde yüz bin yolcu taşıdım desin.
+
+123
+00:41:32,380 --> 00:41:45,200
+Şimdi bazen şunu soruyorlar, bu yüz bin yolcu her biri farklı birer kişi mi? Yoksa aynı kişiyi birkaç kere taşıdın mı? Bu önemli bir istatistik olabilir.
+
+124
+00:41:45,972 --> 00:42:05,612
+Veyahut da reklam gösterimi platformu buluştuk. Müşterilerinizin verdiği reklamları mümkün olduğu kadar çok kullanıcıya iletmek istiyorsanız. Şimdi bir reklamı bir kişiye elli kere göstermenin etkisi başka, bir reklamı elli kişiye bir kere göstermenin etkisi başka.
+
+125
+00:42:06,291 --> 00:42:19,831
+Bu nedenle burada reklam gösterilen kişilerin kimliği önemlidir. Bunların aynı kişi olup olmaması önemlidir. Kişileri nesne olarak düşünürseniz TC Kelimik numaraları bunların tekir tanımlayıcılarıdır mesela.
+
+126
+00:42:20,307 --> 00:42:38,467
+Fakat Flaviate kalıbında bu tanımlayıcılık kaybolmakta. Bir metin içerisinde bin tane A nesnesi, A harfi geçiyorsa, her bir noktadaki A nesnesi bellekteki aynı noktadaki aynı A Flaviate nesnesini işaret ediyor olacak.
+
+127
+00:42:40,628 --> 00:42:51,148
+Böyle bir durum var. Bu sizin için problem değilse, yani Object Identity sizin için problem değilse bu kalıbı kullanabilirsiniz. Ama aks taktirde bu kalıbı kullanmamalısınız arkadaşlar.
+
+128
+00:42:53,967 --> 00:42:58,728
+Evet. Soru soru olmazsa diyorsun yoksa örneğe geçeceğim.
+
+129
+00:43:05,139 --> 00:43:22,440
+Örneğimizde bir kimya fabrikası için üretim bilgi sistemi hazırlamak istiyoruz. Bu fabrikada birçok kimyasal madde üretilmekte ve bu kimyasal maddelerin birleşiminden oluşan çok sayıda karışımda hazırlanmakta.
+
+130
+00:43:22,440 --> 00:43:28,000
+Ve doğal olarak aynı maddeyi birden fazla karışımda kullanabilmekteyiz.
+
+131
+00:43:33,523 --> 00:43:50,063
+Belki bunun kompozit kalıbını kullanabiliriz diyebilirdik. Fakat burada aynı madde birden fazla karışımda hatta çok fazla sayıda karışımda kullanılabiliyor. O yüzden bu probleme kompozit duymaz.
+
+132
+00:43:51,743 --> 00:43:55,943
+Farklı maddeler ekliyoruz. Dekorator da pek olmaz.
+
+133
+00:43:58,387 --> 00:44:08,387
+Biraz daha ayrıntıya girdiğimizde daha iyi oturabilirim. Ben bu örneği Design Pattern'ın Java Workbook kitabından almışım.
+
+134
+00:44:08,387 --> 00:44:18,387
+Şimdi burada birkaç çözüm yapacağız. İlk aklımıza gelen çözümle bizim kimyasal maddelerimiz olacak.
+
+135
+00:44:19,007 --> 00:44:33,247
+Gram bilgisi. Çünkü herhangi bir karışımda şu maddeler şu kadar gram şeklinde tarif yer almaktadır. Maddenin ismi örneğin karbon. Maddenin simgesi örneğin C.
+
+136
+00:44:34,291 --> 00:44:58,172
+Ondan sonra çöpüyorum. Ve Modell'in atom ağırlığı. Bu da double ondaklı sayı. Biz gerçi bu örnek karışımlarını oluştururken şu kadar atom ağırlığını da diye ölçmeyeceğiz ama nihayetinde bu kimya bilgi sistemi, başka ek kimyasal ilçeliklerinde saklanması gerekebilecektir diye düşünerekten atom ağırlığı kısmına eklenmiş. Örnekte herhalde ben de silmedim. Kaldı öyle.
+
+137
+00:45:02,835 --> 00:45:09,295
+Kimyasal nesnesi oluşturulacağı zaman bütün bu dört üyesi de...
+
+138
+00:45:10,356 --> 00:45:25,816
+Gram hariç. Çünkü farklı bileçenlerde, farklı gramlarda gram açıda yer alacak bir kimyasal madde. Ama diğer üç bilgi değişmeyecek bilgiler. Bu nedenle o üç parametreyi alan Construct'ım var.
+
+139
+00:45:27,096 --> 00:45:37,196
+Değişik bileçenlerde, karışımlarda kullanabilmek için şu kadar gram kullanılacak gibi olacak olan gram bilgisi için ise Setter Getter metotlarımız var.
+
+140
+00:45:38,356 --> 00:45:57,436
+İçinde getter metotlarımız var. Bir de getmol diye bir fonksiyonumuz var. Kimyacılar seviyor bu mol kavramı. O da belirli bir gram maddenin atom ağırlığına bölünmesi ile bulunuyor mol dilimi.
+
+141
+00:45:59,027 --> 00:46:08,107
+Lise kimyasının üstünde çok zamanlar geçti. O yüzden çok fazla şey anlatamayacağım bu mod kısmında. Ama zaten çok da dert değil.
+
+142
+00:46:10,567 --> 00:46:16,787
+Bu örnek için önemli olan farklı kimyasal mandalinin farklı gramajlarda geçtiği karışımlar olması olacak.
+
+143
+00:46:17,427 --> 00:46:30,347
+Karışım sınıfında ise karışımın bir ismi olacak ve bu karışımda çeşitli maddeler yer alacağından, diğer karışımda çok farklı sayılarda madde yer alacağından dizilerle hiç uğraşmıyorum zaten. Onların verimsizliklerinden kurtulmak üzere.
+
+144
+00:46:30,347 --> 00:46:39,587
+Kimyasal madde nesneleri sattıracak linket list koleksiyonu tanımlıyorum. Adını maddeler koymuşum. Bu karışımın içerisinde.
+
+145
+00:46:39,987 --> 00:46:56,067
+İstim için geri tırsettim metodu. Karışıma herhangi bir kimyasal madde eklemek için madde ekle metodu. Tarif et metodu ise bu karışımda şu kadar bir gram, şu kadar şu maddeden var, bu kadar gram, bu maddeden var şeklinde bir string geri döndürecek böyle bir metodun var.
+
+146
+00:46:56,287 --> 00:47:07,827
+Madde ekle metodu işte aynı maddeden tekrar varsa, false grönden, aksi taktirde, true dönden varsa tekrar eklemek isimler şeyler kodlayabilirsiniz. Ama çok da dağır değil.
+
+147
+00:47:07,987 --> 00:47:10,827
+Bu yüzden burada bir Google Demirator olabilir ama göstermemişim.
+
+148
+00:47:14,579 --> 00:47:24,300
+Bu yapımın kaynak kodları çok karmaşık değil. Yansıda göstermeyeceğim ama paylaştığım kaynak kodlar da var. Birazdan ekibisi açıp üstün önüne geçeriz isterseniz.
+
+149
+00:47:24,300 --> 00:47:35,460
+Bir karışım örneği verin. Deniyor ki 100 gram barutta, 75 gram potasyum nitrat, 15 gram karbo, 10 gram da kükürt bulunuyormuş.
+
+150
+00:47:36,260 --> 00:47:37,300
+Peki, şimdi...
+
+151
+00:47:37,876 --> 00:48:03,956
+Böyle bir gereksinimi bu tasarımı yapabiliriz. Hiç problem değil. Fakat bir şey daha diyelim işte bize. Bir madde birden fazla karışımda yer alabilmektedir. Örneğin, baruttaki karbon maddesi başka bir karışımda başka bir gramajla yer alacaktır. Daha da başka bir karışımda daha da başka bir gramajla yer alacaktır. O zaman.
+
+152
+00:48:04,563 --> 00:48:16,923
+Ben bu bilgiyi karbonun her farklı gramajda yer aldığı karışım için karbon nesnesinin farklı kopyalarını oluşturacağım.
+
+153
+00:48:18,708 --> 00:48:32,248
+Oluşturmak zorunda olmamalıyım. Çünkü çok sayıda farklı karışımlar oluşturabileceğim. Bu nedenle aynı kimyasal madde her bir karışımda tekrarlanacak. Bütün durum bilgisi ile.
+
+154
+00:48:33,492 --> 00:48:53,272
+Halbuki bu maddenin değişmeyen durum bilgisi var. İsmisi, simgesi, atom ağrı. Bunlar hiç değişmeyecek. Fakat bu karbon nesnesi en ağır karışımda yer aldığı için bütün o kısmın kaç baytlıksa en kadar o kadar bayt boş yere harcanmış olacak.
+
+155
+00:49:01,204 --> 00:49:23,523
+İsimsimge atom ağrını statik yapsak derdimiz çözülür mü? Yani belirli bir bellek tasavvufu sağlarız ama yine de aynı nesnenin farklı örnekleri sadece gram bilgisayar içerikten çok farklı farklı yerlerde yazılacaktır.
+
+156
+00:49:24,052 --> 00:49:49,812
+Bu nedenle bunlara statikleyip geçmek istemiyoruz. Biraz daha akıllıca bir çözüm yapabilir miyiz acaba diye düşünelim. Ve temel ülkelerimizden biri de neyin değiştiğini bul ve onu sarmala dedi. E şimdi gram bilgisi değişecek. O zaman bu gram bilgisini kimyasal madde sınıfından ayırsak, ayrı bir sınıfa alsak daha iyi olur.
+
+157
+00:49:50,420 --> 00:49:57,800
+Örneğin karışımın bileşenleri ve her bileşende bir madde olacak şeklinde bir tasarım yapabiliriz.
+
+158
+00:49:58,000 --> 00:49:59,920
+Ki yanımda olsan öyle olacak.
+
+159
+00:50:02,920 --> 00:50:10,660
+Yeni tasarımımızda artık bileşen diye bir sınıf oluşturduk ve artık karışımda bileşenler yer alacak.
+
+160
+00:50:11,119 --> 00:50:13,480
+O yüzden link at listimiz bileşen nesneleri geçecek.
+
+161
+00:50:15,188 --> 00:50:40,028
+Bileşen ekleme metodunu da burada biraz farklı açtırmış. Kimyasal maddeler şu kadar gram eklediği ama eski halileri kalabilir nihayetinde. Çünkü ne kadar eklenecek gram ilgisi zaten aslında bileşen'de yer aldığı için bileşeni ilgili gramajla oluşturup karışıma verirsek daha mantıklı bir iş yapmış olabiliriz.
+
+162
+00:50:43,411 --> 00:50:44,411
+Böylece
+
+163
+00:50:46,867 --> 00:51:02,747
+Çünkü şey şu var yani, bir önceki tasarıma geri dönersem, örneğin bir karbon, bir önceki tasarıma geri dönersem, diyelim ki aynı karbon nesnesinin her farklı karışımda farklı kopyaları yer alacak.
+
+164
+00:51:02,747 --> 00:51:14,827
+Halbuki karbon aynı karbon yani farklı değil ki. Bu nedenle bu şekilde bir tasarımında her bir bileşende bir kimyasal maddeyle birebir ilişki içerisinde.
+
+165
+00:51:14,867 --> 00:51:29,147
+Benim aynı kimyasal maddem, örneğin karbon nesne, hangi karışımlarda yer alıyorsa hepsinde aynı karbon nesnesi olarak aynı nesne kimliğiyle yer almaya devam edecektir bu tasarımla.
+
+166
+00:51:30,132 --> 00:51:57,472
+Sadece gram bilgisi farklı olacaktır. Ama karbon bilgisi farklı olmayacaktır. Bütün karışımlarda aynı nesne olacaktır. Sonra ben diyelim ki bu karbon nesnesinin simgesini yanlış yazmışım. C yerine K yazmışım. K'da neydi? Potasyum muydu? Galiba. Neyse. Yanlış yazmışım. Düzelteceğim. Ne yapacağım?
+
+167
+00:51:57,856 --> 00:52:12,596
+Bir önceki tasarımda bütün karbon nesnesi içeren maddelere gidip oradaki karbon bileçeninin, daha doğrusu maddesinin simgesini değiştireceğim.
+
+168
+00:52:12,596 --> 00:52:18,596
+Halbuki bu tasarımda sadece bir tek karbon nesnesinin simgesini düzelttiğimde,
+
+169
+00:52:19,476 --> 00:52:29,056
+Bütün diğer içinde bulunduğu karışımlarda bütün bu bilgiler doğru olarak tarif edilmeye devam edecektir. Böyle bir avantajımız var.
+
+170
+00:52:29,715 --> 00:52:57,695
+Bu tasarım fena değil, tamam. Fakat işte burada artık şu gran bilgisi bir dışsal bilgi olarak dikkatimizi çekmekte. Ve daha sonra proje ilerledikçe bu gran bilgisi gibi daha başka bilgiler de çıkabileceğini düşünüyoruz. Bütün bu bilgilerin de acaba oradan bellek tasarrufu yapmak istiyorsak, çünkü sayıları çok fazla olacağını öngörebiliyoruz, ne yapabiliriz? Bu noktada.
+
+171
+00:52:57,715 --> 00:53:06,415
+Aklımıza hemen Flyweight kalıbı gelecektir. O zaman şöyle yapalım. Flyweight kalıbına koyalım.
+
+172
+00:53:06,995 --> 00:53:20,355
+Flyweight kalıbı bana ek olarak bir madde fabrikası sınıfı getirtecek. Benim sistemimde kayıtlı olacak bütün maddeler bu madde fabrikasındaki bir hatchmap içerisinde yer alacak.
+
+173
+00:53:23,423 --> 00:53:28,483
+Simge'ye göre ilgili kimyasal maddesini geri döndürecek.
+
+174
+00:53:29,108 --> 00:53:54,608
+İşi kolay tutmak için madde fabrikasının bu maddeler ve ilgili madde bulmasını sağlayan madde bul metodunu statik olarak tanımladım. Kolaylık olması için. Yoksa statik yapmazsınız. Birden fazla farklı fabrikalar söz konusu olabilir. Yani sizin kimya fabrikanızın ayrı ayrı illerde ayrı ayrı fabrikaları varsa her biri için ayrı bir madde fabrikasının nesnesi de oluşturabilirsiniz mesela.
+
+175
+00:53:59,860 --> 00:54:21,860
+Peki, başka ne geliyor? Artık karışımın bileşen ekle metodu bileşen nesnesi almıyor arkadaşlar. Sadece bileşenin simgesini alıyor ki karışım madde fabrikasından ilgili simgenin gösterdiği kimyasal madde nesnesini alabilsin.
+
+176
+00:54:24,244 --> 00:54:31,063
+Madde bulmak zorunda çağırıyor. Bu şekilde kimyasal madde bilgisi karışıma aktarılıyor.
+
+177
+00:54:31,063 --> 00:54:44,824
+Şimdi aslında bu işamayı biraz daha tam bütüncü olarak çizmem gerekirse, iste istemez şu karışım sınıfı bir kimyasal madde ile uğraşıyor olacak.
+
+178
+00:54:49,844 --> 00:55:11,704
+Kesiklikle çizgi ile bir bağımlılıkla kursak yeridir diyeceğim. Ama Valit'e bu gibi mesela şöyle bir noktadan çizgi çek yapamıyoruz pek. Şöyle yapabilirdim gerçi. Şu kısmı da slip mesela. Şu kısmı slip gibi. Böyle de olabilirdi belki.
+
+179
+00:55:14,996 --> 00:55:28,675
+Ama onda da şimdi yine bağlantı portu olarak farklı bir nokta tanımlayamam. Bu çizgi böyle böyle uzayacak ama ondan sonra düz çizgi şeklinde gelecek. O da olmuyor. Ne yapabilirim? O zaman belki şey olabilir. Hepsini temizleyeyim.
+
+180
+00:55:32,275 --> 00:55:52,115
+Şuraya gelecek. O da çok da güzel gözükmeyecek ama böyle gözükebiliriz. Zaten aslında bir dolaylı ilişki var. Karışım bileşenle ilişki, bileşenle kimyasal maddeyle ilişki. O zaman karışım da kimyasal maddeyle zaten dolaylı olarak ilişkileriz. Arada dolaylı bağlaşım vardır diyebiliriz.
+
+181
+00:55:57,235 --> 00:56:07,536
+Onun dışında tasarımımızda farklılaşan bir şey yok. Breşeneklerin müzası değişti. Madde fabrikası eklenmiş oldu.
+
+182
+00:56:16,755 --> 00:56:33,356
+Yani sadece önemli oranda kimyasal madde bilgisi, isim-singi atom ağrı bilgisi ortak olarak kullanım nedeniyle tasarruf edilmiş oldu. Sadece değişik gram bilgileri olacaktır her bir bileşen için.
+
+183
+00:56:36,947 --> 00:56:40,947
+Şimdi kaynak kodlara bakalım.
+
+184
+00:56:44,947 --> 00:56:48,947
+Lütme de bakalım. Açmalarını gördük. Burada hepsine bakacağız.
+
+185
+00:56:55,923 --> 00:57:13,403
+Ayrıca bu üç filmlerin kodlarını hem genel bakışla karşılaştırırız hem de ortak kısımları birbiriyle karşılaştırarak daha ayrıntılı karşılaştırmanla yaparız. Pardon, ekipsi çekmek istememiştim. Şu zoom kontrolünü çekmek istemiştim.
+
+186
+00:57:15,403 --> 00:57:20,684
+Nesneye dayalı, yok pardon, Nesneye dayalı tasarım modelleme.
+
+187
+00:57:24,467 --> 00:57:25,467
+KDMH.
+
+188
+00:57:26,587 --> 00:57:27,567
+Ha şaşırdı.
+
+189
+00:57:28,827 --> 00:57:30,467
+Karpıları da artık
+
+190
+00:57:30,467 --> 00:57:32,967
+yüzük olayım.
+
+191
+00:57:33,327 --> 00:57:33,507
+Peki.
+
+192
+00:57:35,127 --> 00:57:37,288
+Petals. Ondan sonra flyweight.
+
+193
+00:57:40,083 --> 00:57:57,543
+Bu arada bir main app'ımız da olacak. Main app'ımız bir tane bileşen oluşturmak için. Üç tane kimyasal madde oluşturacak. Bunları bileşen ekleyecek. Ondan sonra bileşenin kendisine tarif etmesini sağlayacak şekilde basit bir kod yazdık.
+
+194
+00:57:59,731 --> 00:58:15,411
+Örneğin, karabalutlarının verdiği bir karışım nesnesi tanımıyorum. İsimini karabalut şeklinde yazıyorum. Buna üç tane madde ekliyorum. Birinci eklediğim madde sodyum nitrat, ikinci eklediğim madde karbon, üçüncü EMA eklediğim madde kükürt.
+
+195
+00:58:15,411 --> 00:58:27,111
+Ve bunların bir karabalut içerisinde olması gereken gramajları da burada yazıyor. Küsüratlı vereyim de gerçek gözüksün.
+
+196
+00:58:27,731 --> 00:58:41,791
+Bu kadar gramajlarda maddelerin eklenmesi gerekiyoruz diyelim.
+
+197
+00:58:46,003 --> 00:58:47,704
+Kırışım.
+
+198
+00:58:49,443 --> 00:58:51,583
+Basit aslında, kalmış bir kod değil.
+
+199
+00:58:51,983 --> 00:59:18,923
+Link at liste içeriyor kimyasal madde şeklinde. İsim için yeterli sattır metodlar. Madde eklenen metodu parametre olarak gelen kimyasal maddeyi basitçe maddeler listesini ekliyor. Ondan sonra tarif edileceği zaman da oluşturacağım stringte her bir içindeki kimyasal maddenin gramını ve adını ekliyor stringe. Böyle bir şey var, yapısı var.
+
+200
+00:59:20,724 --> 00:59:36,724
+Kimyasal maddede gayet basit. Dört tane üye alan, üçü Constructor'a alınıyor. Constructor'a alınmayanın getirisi, diğer geri kanların hepsinin getirisi ve getMold metodu şeklinde içerik var. Ve main yapıda çalıştığımız zaman...
+
+201
+00:59:40,596 --> 00:59:51,356
+İşte ne oldu? Karışık sıfır gram suyu süresi. Yanlışlık var. Neymişiz? Şöyle bakalım. Şimdi kimyasal maddeye bakalım.
+
+202
+01:00:00,000 --> 01:00:10,699
+Tarif açıda isim. Tamam, peki. Evet, karabalık demişiz. Ondan sonra içindeki her bir madde için get gram, gram artı isim.
+
+203
+01:00:10,699 --> 01:00:23,860
+Peki, ondan sonra acaba şey mi? Constructor'da mı bir acaba yanlışlık var? Kimyasal madde. İsim, simge, atom ağırlığı.
+
+204
+01:00:24,371 --> 01:00:35,031
+Haa, evet. Gramajlarını vermemişim. Bunlar atom ağırlığıymış. Gramlarını vermemişim. Anlıkla acayip bir şey. Diğerlerini de vermişimdir inşallah. Şimdi hangisinde kaç gram? Bir bakalım.
+
+205
+01:00:39,059 --> 01:01:05,059
+Evet, vermişim. 75-15-10. Tamam, peki. Kopya yapıştır, kod yazmada şu çözümde atlamışız. Peki, o zaman şimdi bunlara... Peki, ama buradaki kimyasal madde konstraktöründe gram için... Tamam, bu şekilde gitmiyor. Peki, bu da nasıl başarmışım? Ondan sonra...
+
+206
+01:01:07,059 --> 01:01:14,059
+Madde verip, şuradaki bileşen ekledi. Karışımdaki bileşen ekle.
+
+207
+01:01:14,059 --> 01:01:20,059
+Evet şu kadar gram. Hayret bir şey. Tamam bunu da eklemek lazım.
+
+208
+01:01:20,059 --> 01:01:25,059
+Tas, şeyleri nasıl zıtıyor, yansıtı nasıl zıtıyor? İlk çözümde.
+
+209
+01:01:28,371 --> 01:01:49,771
+Evet, tamam. Şimdi burada madde ekleye gram vermiyorum kesinlikle. Çünkü ilk aklıma gelen çözümde gram bilgisini kimyasal maddele saklıyorum. Çok da güzel bir çözüm değildi. O yüzden tartışmıştık. O yüzden bunu şöyle düzeltmek lazım. Tüh, noktaları da yüklemiştim ama arkadaşlar. Neyse. Bunu belki düzelttüğüde tekrar yükleyelim.
+
+210
+01:01:50,164 --> 01:02:15,144
+Bakalım. Arada belki yapalım. O zaman şu main up'ın içerisinde bileşen diyeyim. Kimyasal madde bileşen eşittir. Kimyasal madde şu bilmem ne falan filan kes bunu.
+
+211
+01:02:18,739 --> 01:02:43,639
+Birleşen nokta set gram 75. Ondan sonra madde ekle birleşen. Evet, böyle olacak. Peki, şöyle yapalım. Aynı satırda yalasıl bunlar. Ondan sonra birleşen eşitir.
+
+212
+01:02:47,795 --> 01:03:12,495
+Ondan sonra şu, ondan sonucuma şuraya birleşen nokta, redgram bir şey, ondan sonra karabalotun maddeyekle bu. Gramacım şuradan, ötkısından bakayım.
+
+213
+01:03:15,123 --> 01:03:29,123
+15. Tamam, bir 75, bir 15. 15. Ondan sonra acaba...
+
+214
+01:03:40,851 --> 01:03:52,851
+Bileşen.setgram. Oldu.
+
+215
+01:03:52,851 --> 01:03:57,851
+Ondan sonra karbonatma ekleyebilirsin.
+
+216
+01:04:12,724 --> 01:04:18,284
+Evet, şimdi karabolotur tarifini düzgün olarak ele alabildik.
+
+217
+01:04:18,744 --> 01:04:21,024
+Pardon, şuradaki meynat.
+
+218
+01:04:21,224 --> 01:04:22,544
+Yani şu bir deki.
+
+219
+01:04:22,724 --> 01:04:24,384
+Onun çalıştığında daha emin olayım.
+
+220
+01:04:28,764 --> 01:04:31,024
+Evet, bakıyorum meynat.
+
+221
+01:04:32,244 --> 01:04:35,004
+Şey adını şöyle uzun uzun yazıyor mu burada?
+
+222
+01:04:35,204 --> 01:04:36,624
+Yok, yazmıyor. Sadece şey.
+
+223
+01:04:36,960 --> 01:04:49,900
+Yani paket adı nokta yazsaydı bir öncekinde acaba doğru mu yanlış mı diye daha rahat elin olabilirim ama şimdi o yüzden tekrar çalıştırıp bu soluşun 1'deki meyeni çalıştırdığından emin olmak istedim.
+
+224
+01:04:51,740 --> 01:04:54,220
+Ya peki hocam şimdi diyebilirsiniz ki.
+
+225
+01:04:54,771 --> 01:05:05,831
+Yani şu tasarımda, niye parametre şuraya vermiyorsunuz? İş biraz daha kolay olurdu. Ya tamam, varsın, olsun. O zaman şöyle yapacağım.
+
+226
+01:05:05,831 --> 01:05:16,151
+Şöyle bir B olsun burada. Şunları kapatalım.
+
+227
+01:05:20,052 --> 01:05:37,992
+Şöyle olsun. Karışma, madde ekle metoduna bir de double gram diyelim. Ondan sonra cuma. Şöyle de olabilirdi belki.
+
+228
+01:05:43,251 --> 01:06:00,072
+Madde.setgram, gram. Ondan sonra maddeleri ekle bunu şeklinde düzeltebilirim. Tabii böyle bir durumda main app'ın içerisinde altı biraz daha farklı olacak. Şu şekilde olacak bir büyütenim.
+
+229
+01:06:12,052 --> 01:06:24,692
+İlicez gibi. Bu arada gram, yani yarım gram çalışıyor, çalışmıyor. Ama şey, diğerlerinde int mi? Yani üçlik gramı. Ona göre aynı türlü kullanalım.
+
+230
+01:06:27,492 --> 01:06:31,092
+Ha, double gram. Tamam, double kullanmaya devam.
+
+231
+01:06:31,092 --> 01:06:38,872
+O zaman, tamam yani bu şekilde yürüyecek.
+
+232
+01:06:43,027 --> 01:07:01,047
+Bileşen şu. Ha tabii şimdi artık aslında bu bileşen şeyine öyle çok ihtiyacım yok. Önceki halinde olduğu gibi şu şekilde bunları kullanabilmeliyim.
+
+233
+01:07:06,612 --> 01:07:27,632
+Yansızal madde bileçen ve 75. Peki tamam. Her şeyi seyretmediğimden belki de öyle oldu. Şunu kes. Şuraya koy. Şunu da şöyle bir sil bakalım. Tamam şimdi şeyler düzardı. Benzer şekilde.
+
+234
+01:07:31,251 --> 01:07:42,371
+Önceki çözüme göre yine kopyalı yapmaktan çekindim. O da bir başka hata yapmayayım diye. Belki biraz daha yavaş oluyor ama daha doğru oluyor diye bilirim.
+
+235
+01:07:43,592 --> 01:07:51,751
+Bu 15'i vermiş miydim? Vermişim. Şimdi gelelim şeye. O da 10 gram.
+
+236
+01:08:00,692 --> 01:08:13,532
+Evet, şimdi bir öncekine benzedi diyelim. Çalıştırılsın. Şu seçili kaldığı için gözümün olaya gidiyor.
+
+237
+01:08:15,371 --> 01:08:23,612
+Neyin ha, buraya gel. Evet, bu da düzgün bir biçimde çıkışını verebildi.
+
+238
+01:08:30,163 --> 01:08:45,743
+İster bir olsun, ister bir olsun. Her iki çözümde de bu gram bilgisi maddeye dışarıdan veriliyor.
+
+239
+01:08:57,492 --> 01:09:09,652
+Gram bilgisi verilmeden oluşturuyor ama gram bilgisi yine buna veriliyor. Oluşturulan kimyasal maddeye veriliyor. O konuya dikkatinizi çekerim. Bu nedenle ilk çözümümüzü çok beğenmedik.
+
+240
+01:09:11,923 --> 01:09:35,244
+Karışım, pardon, gram bilgisi kimyasal maddede. Karışım maddeyi eklerken maddenin gramını set ederekten ekliyor. Bu bilgiye, yani şu ikinci parametreyi buradaki sınıf şanasında açıkça verseydim, bu ayrıntı belki kaybolabilirdi.
+
+241
+01:09:35,244 --> 01:09:38,043
+Niye kaybolsun ki? Neyse.
+
+242
+01:09:38,416 --> 01:09:40,115
+Öyle de böyle. Çok fark etmez.
+
+243
+01:09:47,935 --> 01:09:54,095
+1A, 1B şeklinde ilk çözümümüzü inceledi. İkinci çözümümüze bakalım. İkinci çözümümüzde ne yapıyorduk?
+
+244
+01:09:54,095 --> 01:10:00,000
+Bizim karışımımız artık...
+
+245
+01:10:00,000 --> 01:10:08,680
+Şöyle gidelim, artık karşılaştırarak gidelim. Birinci soruşundaki karışım ne? İkinci soruşundaki karışıma bakalım.
+
+246
+01:10:11,180 --> 01:10:12,940
+Kontra aldık, iyi çağır da edelim.
+
+247
+01:10:16,692 --> 01:10:18,692
+Önceki çözümde...
+
+248
+01:10:20,340 --> 01:10:38,659
+Bileşen yoktu. Bu çözümümüzde bileşen var. Madde ekle metodu biraz değişti. Daha evvel tek parametre için tarif et metodu hemen hemen aynı. Sadece sınıf adı değişiyor aslında. Yoksa birbirine çok benziyor.
+
+249
+01:10:38,659 --> 01:10:48,159
+Kaldı ki bir beynin karışımı ile ikinin karışımını karşılaştırdığımızda biraz daha az farklılık olmuş.
+
+250
+01:10:48,340 --> 01:10:48,680
+Jacques?
+
+251
+01:10:52,500 --> 01:11:07,800
+Metodunda parametre sayısı azalmış oldu. Parametre sayısı değişmemiş oldu. Ama geri kalanlarda tabii ki yine benzer farklılıklar var.
+
+252
+01:11:10,547 --> 01:11:33,407
+Yani her şey an önce birinci çözüm. Bir gram bilgisinin bir madde farklı karışımlarda yer alıyorsa, en son hangi karışıma eklenmişse o karışımdaki bilgisi o malzeminde, o maddede kalıyor olacak. Daha evvelki bilgiler kaybolacak.
+
+253
+01:11:38,547 --> 01:11:47,567
+Karan makinesi acaba yeni bir madde eklendiği zaman inşallah gerçekten yeni bir nesne oluşturuyordur belki arka planda.
+
+254
+01:11:50,087 --> 01:11:52,067
+Şimdi onu merak ettim bak.
+
+255
+01:11:52,724 --> 01:12:00,024
+Bu örnekleri özellikle biraz sade tutmak için tek bir tane madde örneği vermiştim.
+
+256
+01:12:00,024 --> 01:12:12,184
+Main upta. Fakat bunun bir tane daha karışım yapalım. Bir de temiz barut ya da beyaz barut adı verilen bir bileşen daha var. Bunu da değinmek istiyorum aslında.
+
+257
+01:12:18,068 --> 01:12:30,247
+Potasyum nitrat yerine sodyum nitrat. O daha farklı bir şey olacak. Temiz balutu. Tamam peki. Temiz balutu da yapalım şimdi.
+
+258
+01:12:32,388 --> 01:12:39,847
+Tamam peki. Sadece NaNo3 yerine KNO3 olacak. Bir de öyle yapalım.
+
+259
+01:12:43,572 --> 01:13:01,951
+Bir soruşun bir veya soruşun bir fark etmez. Şimdi şöyle yapalım. Şunu yapıştıralım. Şimdi karabarut bu temiz barut olacak.
+
+260
+01:13:09,300 --> 01:13:22,100
+Bundan sonra temiz baratı ekleyeceğiz. Temiz baratı tarif edeceğiz. Geçen zaten tanımlandı. Artık bu potasyum itiraf olacak.
+
+261
+01:13:22,100 --> 01:13:34,120
+Değil mi? KNO3. Evet. Bir dakika. Evet. KNO3 peki. Bu da potasyum.
+
+262
+01:13:38,515 --> 01:14:01,716
+Peki, bunu tarif edeceğiz. Gerçi hepsinde gramacı şeyde aynı. Karbonun hepsinde bileşeni aynı. Bunu bir de farklılaştıralım bakalım. Mesela 15 gram değil de 14 gram yapalım mesela.
+
+263
+01:14:07,796 --> 01:14:16,516
+Tamam. Ve şeye baktığımda, iki örnekte, hem şunun sonrasına hem şunun sonrasına.
+
+264
+01:14:16,516 --> 01:14:30,476
+Out. C nokta gram eşittir. Ama şimdi o kimyasal maddeyi tabi ki new ekledik.
+
+265
+01:14:32,724 --> 01:14:40,264
+Tamam, yani aynı esnen birden fazla olmuş oldu. Tamam, zaten öyle demiştik aslında. Tamam, haklısınız.
+
+266
+01:14:46,963 --> 01:15:04,423
+Şimdi buradaki örnekte şuradaki dokuzuncu satırdaki karbon nesnesi kimyasal madde ile şu yirminci satırdaki nesne belki de farklı farklı nesne olacak. Çünkü farklı tekrar new construct ile ekleniyor bunlar buna.
+
+267
+01:15:13,395 --> 01:15:26,435
+Biyansal madde C diyorum. Karbonun C'si. Bunu bir Z şeklinde yapsam daha önemli değil mi? Artı alternatifleri göstermek açısından.
+
+268
+01:15:26,435 --> 01:15:31,556
+Şunu sürüyorum. Bu şekilde kalsın.
+
+269
+01:15:33,556 --> 01:15:36,435
+Şunu kopyalara yapıştırız.
+
+270
+01:15:38,963 --> 01:15:56,963
+Bir C olsun dedi ki. Tamam peki şimdi. Kimyasal madde G eşittir. Şu.
+
+271
+01:16:00,963 --> 01:16:04,344
+Şu. Ondan son açıma.
+
+272
+01:16:06,836 --> 01:16:25,036
+Şimdi, 5'enin set gram demeyeceğim de, C'nin set gram 15 ve karbon adı madde ekle bu karbon nesnesini. Ondan sonra şurada ise, tekrar ayrı bir karbon nesnesi oluşturmayın.
+
+273
+01:16:30,452 --> 01:16:36,268
+C ve aynı nesneyi kullandığım için şurada...
+
+274
+01:16:39,731 --> 01:16:55,252
+C nokta gram eşittirdim. Altı C nokta yet gram. Aynı şeyi şuraya da yapalım.
+
+275
+01:16:58,163 --> 01:17:13,463
+Kontrol ve şimdi çalıştıralım. Bunu da sonuçta 1'de yapmış oldum. Aslında bunu C yapmaya yazılırydım ama ben eğer yapıştırma yaptığımda yapıştırılan yere geçiyormuş gibi düşünüyorum ama geçmiyor. Neyse fark etmez.
+
+276
+01:17:16,948 --> 01:17:34,948
+İlkinde niye... Ha bakın. İsim vermemişiz. Temiz barutta da sanki. Evet temiz barut ama temiz barutunu seçtik.
+
+277
+01:17:43,988 --> 01:18:10,347
+Sakıncılara. Evet. Karabalut işte şu 15 gram karbon var. Temiz botisi 14 gram karbon var. Ve bakın yani karbon ağrı 14'e düştü. Halbuki aynı karbon nesnesinin farklı maddelerde, farklı bileşenlerde, farklı gramajlarla yer aldığı bilgisinin sadece en son içinde bulunduğu karışımdaki saklanıyor kalıyor.
+
+278
+01:18:12,404 --> 01:18:19,204
+C'den bu bilgiye erişmek biraz ayrıca sıkıntı da oluşturuyor. Onu da ek bilgi olarak söylemek, göstermek istedim.
+
+279
+01:18:20,984 --> 01:18:21,864
+Peki.
+
+280
+01:18:25,235 --> 01:18:34,435
+Şimdi gelelim diğer soluşun 2 ile soluşun 3'ü karşılaştırmaya. 1'i 2'yi yeterince didikledik diyelim.
+
+281
+01:18:35,255 --> 01:18:46,576
+Soluşun 3 ile soluşun 2'yi karşılaştırdığımızda bir kere şu bileşenleri karşılaştırdığımızda arada bir fark yok.
+
+282
+01:18:47,395 --> 01:18:49,555
+Tamamen yani bileşenimiz değişmiyor.
+
+283
+01:18:50,131 --> 01:19:07,131
+Karışımlarda biraz farklılıklar olacak. Belki Maynab'da farklılıklar olacak. Halbuki kimyasal maddelerde de zaten fark yok.
+
+284
+01:19:16,500 --> 01:19:18,500
+Karışımları karşılaştırdığınızda...
+
+285
+01:19:25,492 --> 01:19:42,492
+Bu arada sadece bileşen eklemi kısmında artık bileşenlere faktör üstünden eleşeceğimiz için önceki halinde maddenin kendisi verebiliyor ki yeni halinde maddenin anahtarı yani simgesi yer almakta.
+
+286
+01:19:43,692 --> 01:19:52,152
+Ve madde artık doğrudan eklenmiyor da işte fabrikadan alınan madde eklenmiş oluyor.
+
+287
+01:19:56,724 --> 01:19:59,724
+Ve bu çözümde hem...
+
+288
+01:20:00,000 --> 01:20:26,139
+Hem ikinci çözümde hem üçüncü çözümde bu karışımdaki belirli bir maddenin gramajını aldığımızda farklı karışımlardaki farklı gramaj olarak kendisini gösterecektir. Çünkü artık benim kimyasal maddemin içerisinde gram bilgisi yok. Bu gram bilgisi bileşen içerisinde artık tutulması gerekiyor. Onası gereken yer de bu zaten.
+
+289
+01:20:28,000 --> 01:20:33,960
+Hangi sınıfta olması gerektiği aslında temel bir nesneye yönelim kavramıdır.
+
+290
+01:20:34,484 --> 01:20:57,364
+Bir veri neyle en yakından ilişkiliyse o sınıfta, yani o varlığın, o nesnenin sınıfında saklanmalıdır. Gran bilgisi içinde doğru yer budur. Gran bilgisi madde içerisinde tutulduğunda, o madde farklı farklı bileşenlerde, farklı farklı gramajlarda yer aldığında burada bir belirsizlik söz konusu olmaktadır.
+
+291
+01:21:02,484 --> 01:21:12,704
+diye biraz üç farklı çözüm üstüne de dizikleme yaptık. Yenide belki açık kalmayan noktalar olmuş olabilir. Vazsa lütfen buyurun, konuşalım.
+
+292
+01:21:22,163 --> 01:21:25,804
+Ben şu isimlendirmeleri istediğim sırada yapayım.
+
+293
+01:21:27,323 --> 01:21:29,163
+Şimdi bu bir C'yi bir A diyeyim.
+
+294
+01:21:31,543 --> 01:21:32,183
+Refactor.
+
+295
+01:21:34,583 --> 01:21:35,804
+A olsun.
+
+296
+01:21:38,123 --> 01:21:39,583
+Şu da C olsun.
+
+297
+01:21:42,243 --> 01:21:42,884
+Refactor.
+
+298
+01:21:53,395 --> 01:22:04,815
+C'deki kimyasal maddede, pardon karışımda, ekle içerisinde.
+
+299
+01:22:31,764 --> 01:22:51,104
+Neyse, tamam. Numaralandırmayı düzelteceğim. Dediğimizde bir fark yok. Şimdi arkadaşlar, 15 dakika ara vermek istiyorum. Biraz blog gibi oldu. 15 dakika ara. 14.20. 14.35'e kadar ara.
+
+300
+01:40:44,051 --> 01:40:50,051
+Evet arkadaşlar, vaktimizi iki dakikada geçirmiş oldum. Özür dilerim.
+
+301
+01:40:50,051 --> 01:41:02,051
+Teklas, tam ekran yayılma şeklinde devam edeyim. Bu arada paket numaranmasını yaptım. Sonraki dönem noktaları için. Bu arada biraz da onu araçtım.
+
+302
+01:41:04,051 --> 01:41:05,051
+Evet.
+
+303
+01:41:06,676 --> 01:41:16,435
+Eğer arada kafanıza takılan soru var, sınıflar ve çiftinden konuşalım. Yoksa devam edelim. Artık bir ya da iki kalıp ne kadar ilerleyebilirsek. Bu ikinci ve son dersimizde.
+
+304
+01:41:28,435 --> 01:41:43,015
+Peki, noxik kalıbı. Toksiden sonra başka bir yapısal kalıp yoktur galiba. Evet, peki güzel. O zaman bugün yapısal kalıpları tamamlamış olacağız.
+
+305
+01:41:46,355 --> 01:42:06,095
+Proxy vekil demek biliyorsunuz. Bu katıda amacımız şu. Bir nesne erişimi denetlemek için bu nesnenin yerine geçecek bir başka nesniyi araya koymak. Bir tür vekil koymak. Neden böyle bir şeyler yapmak isteyebiliriz? Aslında bizden fazla farklı nedenler olabilir.
+
+306
+01:42:06,515 --> 01:42:30,435
+Dörtlü çetenin verdiği örnekte. Ekrana bir ücretim çizmek nihayetinde zaman alıcı bir işlem olacak, oluyor. Her iki kadar biraz kalmaçıksa veyahut da hacimliyse. Bu nedenle kelime işlem programları belgeli dedikli resimleri ancak ilgili sayfa ekranında göstereceği zaman yüklüyor ve çiziyor. Daha önceden yüklemiyor.
+
+307
+01:42:33,939 --> 01:43:01,939
+Bundan 20 sene önce diyelim ki kullandığımız bilgisayarlarda, hatta belki 20 sene de biraz farklı olabilir. Önceki sene de kullandığımız bilgisayarlarda mesela bir Word dosyası açtığımızda, eğer bu dosyada grafik sayısı çoksa ve yüklüyse, o zaman hızlı bir şekilde tüm dokümanın etrafa içinde dolaştığınızla...
+
+308
+01:43:01,939 --> 01:43:21,119
+Bazen o resimlerin çizilmediği ama resim yerine o resmin eni ve boyu kadar bir dikdörtgen, soyuz köşesinde de beyaz bir sayfa gibi bir küçük resim çık içerisinde kırmızı x çarpı işareti gördüğünüzü görüyorduk.
+
+309
+01:43:22,119 --> 01:43:27,719
+Belki aranızda o gündem hatırlamayanlar olabilir çünkü en az ciddi süreden şey.
+
+310
+01:43:28,884 --> 01:43:56,844
+O yüzden genç arkadaşlar şey etmeyebilirler, bilmeyebilirler ama böyle bir durum vardı. Ya da genç band internet bu kadar yaygın değilken hatırlarsanız bir web sarfası yükleneceğinde web sarfasındaki grafikler genişse, çok genişse o zaman web sarfasında önce metin kısımları yükleniyordu. Resim kısımlarında boşluk oluyordu. Öyle bir kırmızı çarpı işlerle dikdörtgen.
+
+311
+01:43:56,884 --> 01:44:24,724
+Ondan sonra eğer şanslıysak sayfa yüklenmesi tamamlandığında resimlerde gözüküyordu. Aksi taktirde onlar çarp şeklinde kalıyordu. Biz resim üstünde sağ tıklayıp yükle veya f5, refresh yapacaktık ki diğer kısımlar köşten gelsin yüklenmeyen resimlerde inşallah yakın zamanda yüklensin şeklinde durumlarımız oluyordu. O zaman proxy'nin kullanımını birebir gözümüzle yan etkilerine şahit oluyorduk.
+
+312
+01:44:24,884 --> 01:44:29,884
+Şimdi pek artık öyle olmuyor genelde ama yine de bildirmek istedim.
+
+313
+01:44:29,884 --> 01:44:31,884
+Nihayetinde...
+
+314
+01:44:32,752 --> 01:44:54,912
+Bu tip programlar, response time'in yani yanıt verme zamanının düşük yani hızlı olmasını isterler. Bu nedenle bir resim işeleyen bir metin dosyasını açtığınızda tüm resimlerin hemen ekrana yüklenmesinden ziyade ilk başta açtığınız sayfanın ekrana resimleri birlikte yüklenmesi,
+
+315
+01:45:00,752 --> 01:45:09,532
+Tuçlarıyla navigasyona geçeceğiniz zaman içerisinde arka planda diğer sayfalardaki diğer resimleri yükleyebilirler.
+
+316
+01:45:11,347 --> 01:45:38,387
+Belki en azından birkaç sayfa öncesi ve birkaç sayfa sonrasına kadar geçen bir pencere içerisindeki resim dosyalarını yüklerler. Çok daha sonra ihtiyacınız olan, dökümün en sonundaki orta aranlar açmışsınızdır. En sonundaki bir resmi tuttuğu önceden yüklemez. Bu şekilde optimizasyonlarla response time'ı düşünmeye, böylelikle size daha hızlı yöntemelen, tepki veren bir program orta aranlar koymaya çalışır.
+
+317
+01:45:39,347 --> 01:45:46,108
+Şey bu, durum bu. Böyle bir olayı modellemek için de proxy kalıbı kullanılmaktadır arkadaşlar.
+
+318
+01:45:48,340 --> 01:45:59,500
+Bu örnek çözümümüz, şimdi bizim bir, tabii bu gerçek resim ile vekil resimin eş biçimde kullanılabilmesi gerekmektedir.
+
+319
+01:45:59,500 --> 01:46:15,760
+İşte beraber satırsız sütuna çizilmesi, bilgiler olarak da bu resmin genişliği ve yüksekliği gibi bilgiler söz konusudur. Bu nedenle ortak bilgileri içerecek tamamen soyut bir grafik sınavı.
+
+320
+01:46:16,243 --> 01:46:27,663
+Tüm metotları da soyut. Bu durumda bir interfez olabilir aslında. Bunun somut iki tane atılıyor. Birincisi, gerçekten ilgilendiğimiz resim.
+
+321
+01:46:28,564 --> 01:46:43,204
+İkincisi, resme vekalet edecek bir proksi sınıfı. Image Proxy gibi bir isim vermek. Image sınıfına vekillik edeceği için adını Image Proxy gibi koymak mantıklı bir seçim olmuş oluyor.
+
+322
+01:46:46,068 --> 01:47:12,888
+Grafiğe kendini çiz diyor veya kaydet veya diskten yükle falan diyor. İnterferis üzerinden konuşuyor. Aslında dükman tereddütörü ilk aşamada proxy eşleştirilmiş oluyor. Proxy'nin yaptığı şey de örneğin çizme metodunda eğer ilişkili image yüklenmemişse, eşleşik sıfır yani mal diye düşünün, eğer resim yüklenmemişse o zaman işte resmi git dosyadan yükle.
+
+323
+01:47:13,311 --> 01:47:30,091
+Ama yok yüklenmişse çiz zaten. Yüklemeden çiz. Yüklenmemişse öncelikle sonra da çiz şeklinde ifade var. Ya da resmin en boy gençliğinin yüksekliğini alma diyelim ki. Eğer nal ise resim, o zaman şey.
+
+324
+01:47:31,444 --> 01:47:53,864
+Direkt kendi Excel bilgisini gönder veyahut da sıfır döndür de olabilir artık. Yazmak istediğiniz uygulamalar mantığına bakar. Aksi takdirde resim yüklenmişse o resmin esas eli boyu neymişse onu döndür gibisinden kod yazılmaktadır. Yani proxy aslında yapılması gereken işi tabii ki vekalet ettiği varlığa yaptırmaktadır.
+
+325
+01:47:59,444 --> 01:48:00,268
+Öğneğe.
+
+326
+01:48:01,395 --> 01:48:18,235
+Gerekirse, biraz sonra ek kullanım örneklerinden bahsedeceğim. Bir nevi sanki dekoratör gibi çalışıp o vekalet ettiği varlıktan önce ya da sonra bazı işlerin yapılmasını sağlayabilir.
+
+327
+01:48:18,235 --> 01:48:28,796
+Ama burada bir dikkat ederseniz bir zincir ilişkisi yoktu, bir parça bir tür ilişkisi yok. Halbuki dekoratörde bir zincirleme ilişkisi vardı. Burada böyle bir ilişki yok.
+
+328
+01:48:29,136 --> 01:48:36,936
+İlgili client, doğrudan ilgili varlıkla konuşmaktansa vekil üzerinden konuşuyor sadece. Buradaki senaryo budur.
+
+329
+01:48:39,923 --> 01:49:07,384
+Kalıp olarak düşündüğümüzde bir client çeşitli subjectlerle görüşecekse ve bunlara bir request yaptırmak istiyorsa bu real subject ve request metodu olacak elbette. Fakat bu real subject'in ve subject sınıfının bir art sınıfı olacak ve bir de kardeş sınıfı olarak proxy sınıfımız olacak. Bir proxy ile bir gerçek nesne ile bir gerçek varlıkla bile bir sahiplik içerisinde olacak.
+
+330
+01:49:07,923 --> 01:49:23,583
+Proxy kendine gelen her isteği esas aslında real subject'e gerçek varlığa yaptıracak. Fakat önünde ve sonunda ek bazı işlemler de yapabilir. Zaten buna göre bu kadının farklı kullanım senaryo örneklerini veriyor olacağız.
+
+331
+01:49:23,583 --> 01:49:35,923
+Bir client doğrudan real subject'le konuşmamakta, bir proxy nesnesiyle konuşmakta. Aslında o proxy gerçek varlık ile konuşmakta. Nesne işlem olarak da atlayacağız.
+
+332
+01:49:35,923 --> 01:49:37,563
+Bu şemayı gösterebilir.
+
+333
+01:49:45,563 --> 01:49:50,003
+Hangi sınıfın ne iş yaptığını konuştuk. Ne zaman uygulayabiliriz bu kalıbı?
+
+334
+01:49:50,583 --> 01:49:57,423
+Herhangi bir nesneye basit bir işaret için daha fazlasını gerektiren her türlü senaryoda bu kalıbı kullanabiliriz.
+
+335
+01:49:57,423 --> 01:49:59,423
+İşte bu ek gerekli.
+
+336
+01:50:00,000 --> 01:50:24,399
+Ek yetenekler proxy sınıfına kullanmaktadır. Ki bu arada şu olasılığı da aklınızdan çıkarmayın. İşaret edilen yani vekalet edilen nesne ile vekil nesne tamamen farklı bir adres uzayında da bulunabilir, yer alabilir. Örneğin vekil client ile aynı bilgisayarda ama vekalet ettiği nesne farklı bir bilgisayarda.
+
+337
+01:50:25,811 --> 01:50:53,211
+Örneğin, dağıtılmış sistemlerde, dağıtılmış işlem yapan sistemlerde bu gibi mantık bu kalıp çok kullanılmaktadır arkadaşlar. Bir hesaplama yapılacak diyelim ki. Fakat hesaplama ağır, yani computational olarak hesaplama olarak ağır bir hesaplama. Bu nedenle hesaplamanın farklı alt hesaplamaları farklı farklı bilgisayarlarda yapılmakta. Bu bilgisayarlarda bir ağır üzerinden iletişim içerisinde olmakta.
+
+338
+01:50:53,811 --> 01:50:56,931
+Bir istekçi sadece bu aradaki bir bilgisayar isteği göndermekte.
+
+339
+01:50:57,251 --> 01:51:02,491
+Ama o bilgisaya diğer ilişkide olduğu bilgisayarlara da problemin alt parçalarını göndermekte.
+
+340
+01:51:02,811 --> 01:51:09,631
+Çözülen alt problemleri kendisinde birleştirip nihayet sonucu toparlayıp istekçiye göndermekte gibi.
+
+341
+01:51:10,831 --> 01:51:17,971
+Özellikle bilimsel hesaplamalarda bu gibi işler yoğun olarak yapılmaktadır arkadaşlar.
+
+342
+01:51:18,971 --> 01:51:21,692
+Bu yani farklı adres uzayları derken bunu.
+
+343
+01:51:21,811 --> 01:51:22,491
+Demek istot.
+
+344
+01:51:25,844 --> 01:51:36,384
+Evet, şimdi örneğimiz şöyle bir şey. Bunu da ben bir yerden almıştım ama albüm kayna not etmemişim şuna. Özür dilerim.
+
+345
+01:51:40,051 --> 01:51:56,111
+Bir pay per view, yani izlediğin kadar öde sonucumuz var. Artık bu pandemi de ve sonrasında onlar da moda oldu ya, ülkemize kadar bile geldiler. Çok şükür, hele şükür geldiler diyelim.
+
+346
+01:51:58,131 --> 01:52:11,491
+Bu gibi platformlardan abonelik sahibi olmayan herhangi birisi, herhangi bir kişi istediği herhangi bir videoyu böyle en ikonunu sallaya sallaya indirememelidir aslında.
+
+347
+01:52:12,307 --> 01:52:31,867
+Ya da bundan önce bazı büyük otellerde, değişik kanallarda filmler, çizik filmler, şunlar bunlar izlemek istiyorsanız bu işlemler ek olarak otel faturunuza yansıtılır durumları olabiliyordu.
+
+348
+01:52:31,867 --> 01:52:40,307
+Hani minibardan ücretli içecek, aldımak gibi özel film kanallarından da film filan sevdiğiniz eğlence olarak.
+
+349
+01:52:40,307 --> 01:53:04,307
+Bu video sonucumuz yalnız basit bir video sonucu. Sadece ve sadece git belirli bir adrese belirli bir görüntüyü stream et şeklinde çalışıyor. Burada herhangi bir abonelik, ondan sonra ne bileyim...
+
+350
+01:53:06,131 --> 01:53:13,331
+Başka aklınıza gelebilecek herhangi bir ilişim kontrolü, mesela diyelim ki 7 yaş, 13 yaş, 18 yaş gibi kategoriler var.
+
+351
+01:53:15,220 --> 01:53:41,600
+Yedi yaş, altı bir şey değil ama yedi yaş ve üstü herhangi bir kategoride ise o zaman pin girilmelidir mesela belki gibi ek senaryolar var. Bugün hiçbir senaryoyu desteklemiyor şu an elimizdeki çözümümüz. Ama yepyeni bir çözüm satın almaktansa acaba bizim çözümümüzü bu şekilde işlevleri de destekleyecek şekilde geliştirebilir miyiz diye örneğimizde düşünce yapımız bu olacak.
+
+352
+01:53:43,220 --> 01:53:58,980
+Aksi gibi biz o sunucu yazılımın kaynak koduna da erişemiyoruz hatta bir de işleri daha da dileştirmek için. Bu nedenle ne yapabiliriz? O zaman aklımıza bir araya bir vekil koymak geliyor. Bu da bizim ihtiyaçlarımızı çözecektir.
+
+353
+01:53:58,980 --> 01:54:08,000
+Bu tip vekili Protection Proxy deniliyor. Yani ilgili client'ın ilgili subjekte erişim hakkı var mı yok mu?
+
+354
+01:54:08,435 --> 01:54:31,395
+Varsa gönder, yoksa göndermeye şeklinde. Buna Protection Proxy deniliyor. Farklı proksiler de var. HB'ye çalıştığınız nesne başka bir bilgisayarda yer alıyorsam mesela diyelim ki, ona da Stub deniliyor. Neyse, değişik isimler olabilir.
+
+355
+01:54:34,771 --> 01:54:51,771
+Şimdi nasıl olacak? Bizim stream server'ımız elimizdeki yazılım o. Bu stream server'ın tek yapabildiği şey, belirli bir id'li programı, belirli bir destination'a göndermek.
+
+356
+01:55:00,212 --> 01:55:07,812
+Bir stream server, bir destination aşağı akıyı gönderecek. Fakat bu kadarı yetmiyor bize. Şuradan fazla yetmek lazım.
+
+357
+01:55:09,812 --> 01:55:16,612
+Abonelik yapılmış mı, yapılmamış mı, ödemesi yapılmış mı, yapılmamış mı? Onu kontrol edilmesi gerekiyor.
+
+358
+01:55:16,612 --> 01:55:24,612
+O zaman, bir kere zaten bizim bu stream server'ımız stream source arayüzünde zaten gerçekliyordur diye düşünüyorum.
+
+359
+01:55:24,884 --> 01:55:39,943
+Eğer gerçeklemiyorsa ve kaynak kodu erişim söz konusu değilse zaten olmaz bu. O zaman şey olur yani. Proxy değil de adapter yapılır. Bakın evet aradaki bir fark. Proxy ve adapter biraz birbirine benziyor.
+
+360
+01:55:41,939 --> 01:55:48,000
+Nihayetinde bir istek başka bir tarafa iletiliyor ama aradaki amaçlar farklı.
+
+361
+01:55:49,179 --> 01:56:03,979
+Yani burada olay ayrıntıda gizli. Proxy işin içerisine şey koyuyor, yani vekalet gibi bazı ek kontroller falan koyuyor.
+
+362
+01:56:03,979 --> 01:56:09,920
+Adapterda böyle bir şey yok arkadaşlar. Sadece bir uyumsuz iki metot imzasının birbirine uyuşturulması.
+
+363
+01:56:09,939 --> 01:56:20,639
+Sırı söz konusu başka ekstra hiçbir şey yok adapter kalıbında. Ama proxy kalıbında arada ek ihtiyaçlarımız da oluyor. Bu iki kalıbın farkı olarak bunu unutmayın lütfen.
+
+364
+01:56:23,920 --> 01:56:25,380
+Tamam, pekala.
+
+365
+01:56:27,091 --> 01:56:53,372
+Bu arayüzü gerçekliyordur büyük ihtimalle. Gerçeklemiyorsa bu arayüzü proxy kalıbı için bizim eklememiz gerekiyor. Tabii kaynak kodu erişemiyorsak o zaman bu arayüzü eklememiz mümkün olmayabilir. Ama kaynak kodu erişebiliyorsak ekleriz. Ya da zaten bunu karmaşık bir yazılım olaraktan, bu ücretli karmaşık yazılım illaki bize bu şekilde bir API noktaları şeklinde interfezler sunuyordu diye düşünüyorum.
+
+366
+01:56:54,003 --> 01:57:10,184
+Biz de bu interfazden, interfazı gerçekleyen kendi stream proxy sınıfımızı hazırlıyoruz. Bir stream proxy tabii ki bir orijinal stream source ilişkili olacak. Bakın şurada birebir ilişkiyi burada görüyorsunuz.
+
+367
+01:57:10,184 --> 01:57:17,283
+Burada şey diyeyim, turuncurayım. Turuncu çok güzel gözüküyor değil mi? Şurada görüyorsunuz şu birebir ilişkiyi.
+
+368
+01:57:19,188 --> 01:57:27,847
+Aynı şey kalıp şamasında gösteriyor muyduk? Unuttum şimdi şu çizimleri temizlediğim ve dört şeklinde kalıp şeyine geri dönelim.
+
+369
+01:57:31,444 --> 01:57:43,864
+Evet, tabii var. Ama şey olarak gerçekleşiyor. Proxy direkt imaja, yani vekalet ettiği varlığa şeklinde koymuş Safi Okun'u.
+
+370
+01:57:43,864 --> 01:57:59,444
+Biz buradaki örnek çözüm şemamızda Steam Proxy'yi bir Steam Server ile değil de ortak arayüzü üstünden ilişkilendirmişiz. İkisi de olabilir yani. Çok bir şey fark etmiyor.
+
+371
+01:57:59,444 --> 01:58:18,824
+Hele ki hatta aslında böyle bir tasarım biraz daha eski olabilir. Bizim farklı tür serverlarımız da olabilir. O zaman benim proxim o farklı tür stream serverlara da vekalet edebilecek hale gelmektedir. Durum bu.
+
+372
+01:58:26,703 --> 01:58:42,383
+Adaptör kalıbından daha da uzaklaşmış oluyor. Şu birebir sahiplik şeklinde ilişki bulurken. Örtüsü gösterdiğinde bir adım daha yakınlık var adaptör ama bir yerinde işte dediğim gibi bunlar farklı farklı kalıplar, farklı farklı işler yapıyorlar.
+
+373
+01:58:45,011 --> 01:58:56,691
+Evet, şimdi bu. Destination'un ise otel odası numarası. Video akış platformlarından birine üyesizsek, bizim üye adımız, üye hesabımız.
+
+374
+01:58:56,691 --> 01:59:12,931
+Yani ona erişmekte kullanıldığımız bilgisayarımız veya set kutumuz falan. Bunların her bir adresi var. IP adresi gibi düşünün. Sonra da belirli bir yayını belirli Destination'a aktaracak.
+
+375
+01:59:13,011 --> 01:59:29,651
+Ama bu işte clientlarımız doğrudan stream source'larla konuşmuyor olacak da stream source arayüzü üzerinden proxy ile konuşuyor olacak aslında. Ve sonra bütün bunları deneyecek bir main up diye bir sınıfımız da olacak diyelim.
+
+376
+01:59:34,068 --> 01:59:39,228
+Karakotluk icrası en çok da karışıklık olmayacak arkadaşlar.
+
+377
+01:59:39,228 --> 01:59:46,688
+Herhalde burada özel bir notum yoktur.
+
+378
+01:59:55,444 --> 01:59:56,284
+Proxy.
+
+379
+01:59:57,604 --> 01:59:58,543
+Bu arada şey
+
+380
+01:59:58,543 --> 02:00:03,024
+Mementor gelince şey aklıma geldi. Neyse, ona bakarız.
+
+381
+02:00:03,844 --> 02:00:05,423
+Şurada açıp bunu da
+
+382
+02:00:05,423 --> 02:00:07,384
+ona bakalım.
+
+383
+02:00:08,384 --> 02:00:09,604
+Nedir Proxy.
+
+384
+02:00:11,444 --> 02:00:11,904
+Şurada.
+
+385
+02:00:13,423 --> 02:00:13,664
+Evet.
+
+386
+02:00:15,184 --> 02:00:15,724
+Bizim
+
+387
+02:00:15,724 --> 02:00:17,583
+system server'ımız
+
+388
+02:00:19,231 --> 02:00:25,132
+Tabii ben esas olarak bu işleri nasıl yapılacağını bilmediğim için her zaman orada bir iskelet kodu yazmak durumundayım.
+
+389
+02:00:25,132 --> 02:00:37,632
+Steam sorularım basitçe belli bir hedefe gönderiyor. Başka biletim yok ama bunu erişimi kontrol edecek Steam Proxy sınıfım olacak.
+
+390
+02:00:38,163 --> 02:00:57,844
+O da Stream Destination'un arayüzünü gerçekliyor olacak. İlişkili olduğu bir orijinal akış sunucusu olacak. Construct'la da set edilecek. Bir stream isteği geldiği zaman kendisi önce payment, ödeme yapılmış mı yapılmamış mı kendi üzerinden kontrol edecek.
+
+391
+02:00:57,844 --> 02:01:00,264
+Tabii onu nasıl yapılacağını da korktum.
+
+392
+02:01:03,572 --> 02:01:22,952
+Tool'a da Force döndürecek duruma göre. Ondan sonra eğer check-beam etmeniz metodundan geçerse ancak o zaman orijinal stream server üzerinde ilgili programı ilgileri göndersin diyecek. Aksi taktirde bir şey göndermeyip Force geri döndürecek. O kadar. Böylece bir Protection Proxy gerçeklemiş olduk.
+
+393
+02:01:24,500 --> 02:01:35,500
+Stream destination'da ise bir şey yok. İşte basitçe server adres. Ondan sonra acaba constatılığı da set ediliyor. Make payment gerçekten ödeme yapmak için işe bir şeyler yapılacaksa onların da geçeceği bir metot olacak.
+
+394
+02:01:35,500 --> 02:01:52,500
+Ondan sonra açma. Belli bir program, haber bir aydın programın erişim isteği ise ilişkiyle server'a yönlendirilecek. Aslında tabii işte doğrudan server'a yönlendirilmiş olacak. Stream proxy'ye yönlenmiş olacak aslında. O ödemeyi...
+
+395
+02:01:52,500 --> 02:02:01,500
+Ona geri döndürecek şu bizim Stream Desk Nation'ın bu isteğini karşılayacak yoksa karşılayacak.
+
+396
+02:02:01,500 --> 02:02:03,500
+Şekil de bir çalışma açımdan.
+
+397
+02:02:05,011 --> 02:02:21,931
+Yani main haftada çok bir şey yazamadım yani haliyle. Otur video oynatacak durumum olmadığı için ne bileyim bir real server, bir prox server, bir client ilklendirmişim. Ondan sonra client ile proxiyi ilişkilendirmişim. Bu kadar yani. Ondan sonra client belli idli programları ister eder filan filan.
+
+398
+02:02:21,931 --> 02:02:30,891
+Steam server'da, daha doğrusu proxiyi de stream server kullanarak ilgilişinin iletimini sağlar. O bitti. Yani bu kadar şey.
+
+399
+02:02:33,043 --> 02:02:33,483
+Peki.
+
+400
+02:02:34,684 --> 02:02:36,024
+Sonuçlar akılashenler.
+
+401
+02:02:45,555 --> 02:03:04,415
+Yoksa yeni kalıba girebilir miyiz? Bir bakalım. Ek bir şey yok. Kodları da burada dolaştık. Ek bir söylemem gereken bir şey göremedim. Tamam peki. O zaman 0.13.
+
+402
+02:03:11,155 --> 02:03:26,855
+Bunu da epey bir tartışı yazdı. Yani bu yarım saat açar diye düşünüyorum. Yapabilir miyiz? Yaparız aslında. Yaparız diye düşünüyorum.
+
+403
+02:03:36,212 --> 02:03:51,512
+Geç, geç. Tamam peki. Sizin hep sorumuz olmadı. Şunu da görürüz. Davranışsal kalıplara başlayabiliriz arkadaşlar bugün. Ve bugün göreceğimiz ilk kalıbımız Davranışsal kalıplar içerisinden. Chain of Responsibility. Sorumluluk zinciri.
+
+404
+02:03:52,340 --> 02:04:03,840
+Amacımız şu arkadaşlar, birbirleriyle ilişkili bir nesneler zinciri veya nesneler hiyerarşisinin zaten mevcut olduğu durumlarda geçerli olur bu kalıp.
+
+405
+02:04:03,840 --> 02:04:19,840
+Eğer bu zincirin veya hiyerarşinin aldığı bir mesajı veya kendisine gelen bir isteği karşılayamayacağı durumlarda veya o isteği daha iyi karşılayabilecek birisinin bulunması durumunda bu mesajın ilgili...
+
+406
+02:04:20,340 --> 02:04:25,340
+noktaya iletilmesini sağlamak. Örnek işte diyelim ki...
+
+407
+02:04:26,739 --> 02:04:35,899
+Bir ürün iade edeceksiniz bir mağazaya. Herhangi bir çalışanın bu konuda yetkisi yoktur da mağaza müdürünü çağırın mesela.
+
+408
+02:04:37,299 --> 02:04:43,579
+Her iki iade ile ilgili daha çetrafili bir şeyler söz konusuysa belki mağaza müdürünün de bu konuda yetkisi yoktur.
+
+409
+02:04:43,919 --> 02:04:50,619
+Bölge müdürünü telefonla arar mesela belki de gibi bir durum söz konusu var.
+
+410
+02:04:54,739 --> 02:05:10,159
+Bir nesne zincir ya da hiyerarşisi var ve bu zincirin herhangi bir halkasına bir istek geldiğinde bu isteği daha iyi karşılayabilecek biri var mı? Varsa bu isteğin ona iletilmesin şeklinde bir kalıptır bu.
+
+411
+02:05:10,804 --> 02:05:34,844
+Mesajın ilk alıcısının bu mesajı yanıtlayamamasının sebebi de ilgili metoda sahip olmaması anlamına gelmemektedir. O nesnenin o metodu vardır illaki. Fakat sadece o isteği yürütecek yetkiye belki sahip diyordur. Veya en son bilgiye sahip diyordur bu konularda. O yüzden yürütememektedir.
+
+412
+02:05:38,804 --> 02:05:40,463
+Durum söz konusu değil arkadaşlar.
+
+413
+02:05:42,184 --> 02:05:50,983
+Bana çok güzel bir örnek. Artık o şekilde kodlanmıyorlar ama eskiden bir ara böyle kodlanıyorlardı.
+
+414
+02:05:51,823 --> 02:05:59,344
+Bir programdaki bir diyalog kutusundaki birleşenlerden birinin işlevi hakkında yardıma ihtiyacımız var diyelim ki.
+
+415
+02:05:59,344 --> 02:06:02,184
+Orada şöyle bir durumlar oluyordu.
+
+416
+02:06:03,060 --> 02:06:26,840
+Diyelim ki yazı tipi kısmındayım. Burada bir dolu bir bilgi var.
+
+417
+02:06:27,188 --> 02:06:35,188
+Ben tam olarak neyin ne olduğunu çıkartamadım diyelim ki. O zaman şuradaki yardım işaretine tıkladığımda...
+
+418
+02:06:35,231 --> 02:06:43,791
+Şu an bana yardım sayfası geliyor aslında ama ofisin daha eski versiyonlarında böyle bir şey gelmiyordu da,
+
+419
+02:06:44,251 --> 02:06:51,991
+Masum, Fahri İmlecim, Fahri İmlecim'in altında ya sol altında ya sağ altında bir soru işareti içeren hale geliyordu.
+
+420
+02:06:51,991 --> 02:06:59,531
+O haldeyken herhangi bir yere tıkladığımda bana tıkladığım alanla ilgili odaklanmış yardımı gösteriyordu.
+
+421
+02:07:01,439 --> 02:07:28,139
+O haldeyken mesela şu sekmenin başına tıklasam bana bütün bu sekme hakkında ayrıntılı yardım bilgisi içeren içerik getiriyordu. Fakat yardımına tıklayıp daha sonra örneğin şu efektler kısmına tıkladığımda sadece efektler kısmındaki içerikle ilgili yardım getiriyordu bana ofis uygulamaları. Eskiden. Yani bu şekilde yardım kodlaması yaygındı. Bundan belirlediyseniz önceye kadar.
+
+422
+02:07:29,439 --> 02:07:30,979
+Bu hale geldiler.
+
+423
+02:07:34,099 --> 02:07:36,419
+Yani bence odaklanmış yardım daha iyidir.
+
+424
+02:07:37,419 --> 02:07:40,799
+Daha genel yardıma ihtiyacım varsa o zaman bu kadar da bir yere tıkladım.
+
+425
+02:07:41,799 --> 02:07:42,879
+O düzgarla kutusunun.
+
+426
+02:07:43,219 --> 02:07:44,599
+O da biter diye düşünüyordum.
+
+427
+02:07:46,879 --> 02:07:47,219
+Neyse.
+
+428
+02:07:48,139 --> 02:07:48,359
+Peki.
+
+429
+02:07:48,359 --> 02:07:53,119
+Ama bu kalıpla arkadaşlar, tabi şey kalıbıyla değil.
+
+430
+02:07:53,699 --> 02:07:54,939
+Prokses kalıbıyla değil.
+
+431
+02:07:56,948 --> 02:08:11,228
+Chain of Responsibility kalıbıyla yapmaya çalıştığımız örnek bu arkadaşlar. Dört çiftliğim kitabın içerisinde veren örnek o. Şimdi tabii ki her art bir işinin yardım bilgisi kodlanmamış olabilir.
+
+432
+02:08:11,923 --> 02:08:31,923
+Eğer kodlanmışsa göster. Kodlanmamışsa bir üst bileşen olarak onun yardım sahafasını göster. Hiç yardım gösterememekten size. Onun da mı yok? Bir üstünü göster. Yani yine ben şu şeye tıkladığımda, font şeyine bak tıkladığımda, kısmına tıkladığımda.
+
+433
+02:08:37,395 --> 02:08:57,775
+O zaman yazı tipin ana yardımdan yönlendirsin gibisinden bir çözümden bahsediyoruz. Bu üst bileçini iletme ne zamana kadar ilerleyecek? En iyi yardım verebilecek yer bulana kadar veyahut da zincirin sonuna gelinceye kadar.
+
+434
+02:08:58,355 --> 02:09:14,536
+Bu iletim sürecek. Tabii bunun yapılabilmesi için hangi bir birleşenin, hangi üst birleşen içinde yer aldığını bilmesi gerekmektedir. Zaten böyle bir ilişki içerisinde olan varlıklar arasında bu Chain of Responsibility kalıbı kurulur.
+
+435
+02:09:18,195 --> 02:09:28,595
+Böyle bir doğal ilişki yoksa bu kalıbı kodlayabilmek için ya bu kalıbı seçmeyiz veyahut da ilgili ilişkiler zincirini kendimiz oluşturmamız gerekecektir.
+
+436
+02:09:32,115 --> 02:09:58,836
+Evet, örneğin işte OK ve Print Lumen'in bir Print Dialog içerisinde bulunuyorsa, Print butonunda bir Yardım Handler'ı metodu var. Pardon, özür dilerim. Kendi içinde ait olduğu, neyin içerisinde bulunduğunu gösteren bir sahibim My Component, My Handler isimleri tercih etmişti o ticeti. Bu ikisi bir Print Dialog içerisinde. Başka bir dolu diğer kutuları da var.
+
+437
+02:10:00,000 --> 02:10:26,800
+Print Diğerli'nin içerisindeki Print Buton'la ilgileniyoruz. Bir de uygulamanın kendisi var. Ben Print Buton'un da Help'e bastığımda eğer Print Buton'un kendi içerisinde Help gösterebiliyorsa gösterir. Ama gösteremiyorsa o bilgi yolunda değilse o zaman Handler'ın yani ilişkili olduğu nesnenin yardım metodunun çağırılmasını sağlar. İlişkili olduğu nesne bakar kendisinde bu metodunda.
+
+438
+02:10:28,000 --> 02:10:43,940
+Yardımın içeriği verebilecek bir şey var mı? Varsı da verir. Yoksa o da uygulamanın yardım dosyasına kendisini iletir. Yine benim sahibim şu hander, onun üstünden ona ileteyim ben bu isteği şeklinde bir çalışma biçimi söz konusudur.
+
+439
+02:10:43,940 --> 02:10:54,699
+Ağacın bu ilişki ilerisinin artları daha belirli, daha ayrıntılı, üst kısımları daha genel, daha az ayrıntılı olur. Genelde.
+
+440
+02:10:58,739 --> 02:11:17,519
+Evet. Ve tabii ki işte o ortak üst sınıf, üst soyut sınıf ya da interfej lazım. Ve o interfej içerisinde mesajın bir üst bileşene ya da işte bir amir bileşene ya da her neyse ona iletilmesi için de ekstradan bir metot tanımlı olmalı.
+
+441
+02:11:17,872 --> 02:11:37,912
+Aksi takdirde benim üst bileşen türüm neymiş? Ona göre onun şu metodunu çağır gibi bir kodu yazmak için switch case veya if else, if else zinciri kurmamız gerekebilir. Bunun da güzel bir korunma biçimi olmadığını konuşmuştuk önceki haftalarda.
+
+442
+02:11:41,427 --> 02:11:56,887
+Print butonun yardım düğmesine basıldığında, Handle Up metodu geldiğinde, eğer yardım edemiyorsa kendisi o zaman ilişkili olduğu Print Diğer'a iletecek. O yardım edemiyorsa Not Can Help o zaman Application'a iletecek.
+
+443
+02:11:56,887 --> 02:12:00,908
+Şeklinde Sequence Diğer Örneği de göstermiş.
+
+444
+02:12:04,372 --> 02:12:30,252
+Bunun yapılabilmesi için bir Help Handler arayüzüne özledim. Soy sınıfına ihtiyacım var. Çünkü ilişkiyi bu en üst sınıf düzeyinde tutmak daha mantıklı. Bu ne kadar üstte ise tercihan hiyerarşinin kökünde. O zaman bütün hiyerarşi birleşenleri birbirleriyle zincirlenebilecek hale gelmiş olur.
+
+445
+02:12:30,771 --> 02:12:57,192
+Düğmenin Handle Art metodu eğer kendine yeterli bilgi kodlanmışsa gösterecek. Aksi takdirde ait olduğu varlık neyse onun yardım metodunu çağıracak şeklinde kod söz konusu.
+
+446
+02:13:01,011 --> 02:13:27,271
+Kalıp yapısı olarak baktığımızda, clientımız bir request istekte bulunacağı zaman, bunu kim karşılayabilecekse bir soyut sınıf üstünden bir ilişki içerisindedir. Ona hangi konkret hansı verilmişse mesela, ona yönetecek bu isteği. O yapabiliyorsa, ne ala yapamıyorsa, hız sınıftan kalıtımla gelen ve tanınanmış olan,
+
+447
+02:13:29,011 --> 02:13:37,671
+Üstüm, amirim ya da ilişkili olduğum nesne üzerinden esas yaradığım işlemini ona iletecektir.
+
+448
+02:13:37,671 --> 02:13:38,331
+Belki de.
+
+449
+02:13:38,511 --> 02:13:39,372
+Şey bu, zorun bu.
+
+450
+02:13:39,831 --> 02:13:41,912
+Client, yanıtlanacak mesajın kaynağıdır.
+
+451
+02:13:42,372 --> 02:13:44,431
+Handler, yanıtlanacak mesajı tanımlardır.
+
+452
+02:13:44,532 --> 02:13:49,032
+Ara yüzde bu şey, işte benim success durumum şudur.
+
+453
+02:13:49,211 --> 02:13:53,271
+İşte bunu set et, get et gibisinden metodları isterseniz handler'a koyabilirsiniz.
+
+454
+02:13:53,692 --> 02:13:55,791
+İsterseniz altı somut somut olarak koyabilirsiniz.
+
+455
+02:13:57,011 --> 02:14:05,711
+Bu iş eş biçimliyse alt sınıflar arasında o zaman üst sınıfta, soyut sınıfta tanımlamakta yarar verer bitti.
+
+456
+02:14:07,072 --> 02:14:21,811
+Veya bunlar alt sınıflarda bazı kısımları ortak, bazı kısımların farklı gibi bir davranış söz konusuysa o zaman önümüzdeki haftalarda göreceğimiz template metot kalıbı da işin bu kısmını çözmekte yardımcı olabilir.
+
+457
+02:14:23,220 --> 02:14:25,220
+O zamanı, bakalım.
+
+458
+02:14:29,555 --> 02:14:52,395
+Bu kalıbı ne zamanlarda kullanabiliriz? Bir metot çağrısını yaptırabilecek birden fazla nesne varsa ve en iyi yanıtı verecek nesnenin ya da herhangi bir nesnenin yanıtı verecek bir tane nesne varsa o da olabilir. Yanıt verecek nesnenin önceden bilenilemeyeceği anlarda bu kalıbı kurarız.
+
+459
+02:14:52,819 --> 02:14:57,319
+Ya da bir başka bir ebu kalıbın bize getirdiği güzellik.
+
+460
+02:14:59,507 --> 02:15:09,488
+İlişkili nesneler zincirinin hiyerarşisini çalışma anında da oluşturabilir, kurabiliriz ve değiştirebiliriz haliyle.
+
+461
+02:15:09,488 --> 02:15:22,728
+İşte bu bileçeni üstünü, şu bileçeni altına al ya da şu bileçeni üstüne al gibisinden ek metotlarla bu zinciri çalışma anında rahat rahat istediğimiz gibi de kurup değiştirebiliriz.
+
+462
+02:15:27,507 --> 02:15:36,587
+İlişki zincirdeki o yanıta en uygun nesne bulunup çalıştırılabiliriz bu şekilde.
+
+463
+02:15:37,568 --> 02:15:45,948
+Bu konunun en dikkat edilmesi gereken zayıf noktası şu, bu ilişki zincirini doğru yapılandırmak gerekmekte.
+
+464
+02:15:45,948 --> 02:15:53,668
+Aksi takdirde o metot çağrısının gerçekten yanıtlanıp yanıtlanmayacağının hiçbir garantisi kalmaz.
+
+465
+02:15:54,515 --> 02:16:22,515
+Büyük bir şey gibi işte ne bileyim bazı devlet davetlerinde veya bir şey bürokrasisi aşırı yoğun özel kurumlarda bir iş için bir departmana gidiyorsun. Önce şu oraya git deniyor. Oraya gidiyorsun. Yok önce şuraya git deniyor. O gittiğin yerde değil. En başında gittiğin yere git diyor. Ya ben zarfımda oradan geliyorum falan falan. Durumları söz konusu olabilir. Bu chain of responsibility kalıbında da. Buna çok dikkat edin.
+
+466
+02:16:22,515 --> 02:16:26,955
+Bu da dikkat edildiği takdirde yararlı bir kalıptır.
+
+467
+02:16:26,955 --> 02:16:29,955
+Östekli bir kalıptır. Chain of Dispensibility kalıbı.
+
+468
+02:16:29,955 --> 02:16:38,556
+Ve dediğim gibi bu birbiri ilişkili nesneler zincirinin zaten kurulu olması gerekmektedir.
+
+469
+02:16:39,775 --> 02:16:43,235
+Kurulması ile ilgili bir kod yoksa onu da biz ekrometre orada kalacağız.
+
+470
+02:16:46,804 --> 02:17:06,963
+Ya da bu arada şey bu şunları göstereyim. Konkret handlerlar arasında da ek kalıtımla daha özelleşmiş handlerlar da oluşturulabiliriz. Kalıp bunu engellemiyor arkadaşlar. Kalıp bunu izin veriyor. Eğer gerekiyorsa.
+
+471
+02:17:10,227 --> 02:17:22,647
+Örnek olarak, vericiğim örneği ise ben oluşturdum. Bir reklam yönetim yazılımı hazırlamak istiyoruz. Bu yazılımımız da bizim bir şey.
+
+472
+02:17:23,636 --> 02:17:50,256
+Yelpazemizde, portföyümüzde farklı web siteleri var. Bu web sitelerinin her biri farklı farklı konularda web siteleri. Biz bu arada reklamlar göstermek istiyoruz. Ve fakat göstereceğimiz reklamın maksimum etkiye ulaşması için o reklamın hedef kitlesinin uğrayacağı türden sitelere o reklamı vermek istiyoruz.
+
+473
+02:17:50,899 --> 02:18:17,739
+Bu nedenle çeşitli kampanyalar tanımlayabilmek istiyoruz. Mesela birinci kampanyamız, portföyümüzdeki spor sitesinin 18-39 yaş arası erkek ziyaretçilerine tıraş bir şahılıklımı göster. 18-39 yaş arası kadın ziyaretçilerine fitnes salınır bir şahılıklımı göster. Bu kategorilerin dışında kalan ziyaretçilere ise spor mağazamızdaki indirim ekranını göster. Şeklinde bir kampanya.
+
+474
+02:18:18,191 --> 02:18:39,491
+İkinci bir kampanyada tanımlamak istiyoruz. Portföyümüzdeki haber sitesinin 18-29 yaş arası A Gelir Grubu erkek ziyaretçilerine otomobil dergisi reklamı göster. Aksi taktirde bir önceki kampanyayı aynen uygula. Bakın şimdi işin içerisine böyle bir durum geldi. Ek bir bilgi geldi.
+
+475
+02:18:39,987 --> 02:18:51,788
+Üçüncü olarak, Ziyar İçin'in coğrafi bölgesi ve geri düzeni göre portföydeki lokanta reklamlarından birini gösterdiği için. Farklı farklı çeşitli kampanyalar.
+
+476
+02:18:51,788 --> 02:19:00,288
+Şimdi, burada da özellikle kampanya 1 ve 2 arasındaki ilişkiye baktığımızda.
+
+477
+02:19:00,608 --> 02:19:16,367
+Kampanya 2'nin kampanya 1'e ek olarak bir ön adım var. Geri kalan her şeyi aynı. Şimdi böyle baktığımızda aslında bu tip problemi bu dekorator kalıbıyla da çözebileceğiz gibi gözüküyor.
+
+478
+02:19:26,451 --> 02:19:36,131
+Tek bir varlık birden fazla yeteneğe sahip oluyor ve bir iş yapıldığı zaman bütün o yetenekler birden devreye giriliyor ve yürütülüyor.
+
+479
+02:19:36,131 --> 02:19:46,371
+Halbuki bu kampanyalarımızda birbiriyle ilişkili bazı yetenekler var ama bu yeteneklerin hepsi bizden kullanılmıyor arkadaşlar.
+
+480
+02:19:47,711 --> 02:19:53,891
+Sadece bir zincir içerisinde en uygunu bulunup o iş yürütülüyor.
+
+481
+02:19:54,451 --> 02:20:10,831
+O yüzden bu kampanya 1 ve kampanya 2 arasındaki birbirine refere etme durumuna kanıp da bunu decorator olarak düşünmeyin lütfen. Burada yeni yeni yetnekler kazandırılmıyor bir varlığa.
+
+482
+02:20:11,152 --> 02:20:21,012
+Olası seçenekler içerisinden en uygununun bulunması isteniyor ki bu seçenekler de birbiriyle lineer bir biçimde ilişkili.
+
+483
+02:20:21,012 --> 02:20:32,932
+Bu da problem tanımında gördüğünüz üzere. O zaman bu problemi Chain of Responsibility ile çözebileceğimizi akıl ediyoruz.
+
+484
+02:20:33,452 --> 02:20:35,711
+Böylece nasıl bir tasarımda buluyoruz?
+
+485
+02:20:35,984 --> 02:20:49,763
+Mainat bizim ekran verme platformumuz diyelim. Burada kayıtları çeşitli kullanıcılarımız var. Yıldızı, işolun cinsiyet, gelir düzeyi ve yaş bilgisi gerekiyordu. Kampanya tanımlarında bu gibi bilgiler gerekiyordu.
+
+486
+02:20:50,844 --> 02:20:57,844
+Kullanıcı sınıfından devam edersek, Constructor bütün bilgileri alıyor. Getter bilgileri var. ToString metodu var.
+
+487
+02:20:59,987 --> 02:21:27,448
+Kullanıcı hakkında tanıtıcı bir bilgi gelip ördüler. Bir de işte hani belirli bir yaş aradığı gibi sorgulamalar da yapmak gerekiyordu ya, e tabii bunların da yapılacağı en ulduğu yer yoruz arası sınıfından kodlanması. O yüzden yaş dahil mi diye bir metodum var. Bir alt sınır ve üst sınır denilmiş. Kullanımın yaşı bu aralık içerisinde ise true dönülecek. Aksi taktirde false dönülecek. Ondan sonra acıma gelir düzeyi ABC.
+
+488
+02:21:27,987 --> 02:21:43,268
+Hani D yok. Bunlar tamamen literatürde diyelim ki. Cinsiyette kadın erkek, başka hiçbir biyolojik cinsiyetimiz yok. Bu nedenle bunların dışında bu gruplar bunların dışında değerler alamayacağından en umut olarak tanımlamayı tarih etmişiz.
+
+489
+02:21:43,860 --> 02:22:09,400
+Gelin sağ taraftaki reklam kısmına. Esas zincir burada kurulacak. Bu zincirin bir ucundan gelen kullanıcı o zincirin en uygun neresine layık? Orası bulunup o bileşen zincirin o halkası kullanıcıya reklamı gösterecek. Sadece ve sadece o gösterecek. Başkaları gösterecek.
+
+490
+02:22:10,963 --> 02:22:19,224
+Evet, bu nedenle bütün farklı reklam kampanyanın oluşturan farklı tür reklamların ortak soyun üst sınıfını tanımlıyor.
+
+491
+02:22:19,224 --> 02:22:28,644
+Reklam, ben onu gösterecek bitmek resmi. Tabii ki resim çizmeyeceğim ama şey göstereceğim. Şeyde olduğu gibi.
+
+492
+02:22:29,203 --> 02:22:40,644
+Chain of Responsibility'de olduğu gibi hangi reklam gösterilmişse o reklam sınıfının adını getclass, getname ile ekrana yazdıracağım. Yani ben o çizmeyeceğim tabii ki.
+
+493
+02:22:44,051 --> 02:22:55,092
+Benar'ın da Show metodu olacak ama işte dediğim gibi sadece sınıf adımları gösterecek ve bu zincirin kurulması ve yönetilmesi için de reklam sınıfından ilişkin var.
+
+494
+02:23:02,963 --> 02:23:17,543
+Sonraki üyesi reklam türünde herhangi bir reklamın ilişkili olduğu diyen reklam. Yani zincirin kurulması, zinciri saklayacak üye burada reklam üyesi. Ayrıca şurada göstermemişim ama hani.
+
+495
+02:23:17,951 --> 02:23:40,871
+Konstruktor'da olduğu için gözükmüyor. Çok da gözükmüyor. Yıkın gözü var ama ona ayrıca takmak pek uygun olmuyor bu ders sırasında. Evet, yani Konstruktor üzerinden sonraki reklamı veriliyor. Yani bu reklam soyu sınıfı somuk metotlar da bu şekilde içeriyor ve çeyne, zinciri yönetecek, oluşturacak metotlar da içeriyor.
+
+496
+02:23:47,603 --> 02:23:57,103
+Ve somut reklamlarına bakarsak, GX'inlerde bahsettiğim her tür reklamı kendi sınıfıyla modelledim.
+
+497
+02:23:58,484 --> 02:24:04,263
+Şimdi burada yalnız üst sınıfa geri dönelim. Konstruktor'dan bahsettik. Bakın iki tane soyut metodu var.
+
+498
+02:24:04,804 --> 02:24:09,103
+Birinci soyut metodu, reklam göster metodu. Belki kullanıcıya bir reklam gösterme metodu.
+
+499
+02:24:10,675 --> 02:24:38,216
+Çünkü reklamı göstermesi farklı farklı yapılabilir farklı reklamlarda diye. Bir de reklam uygunluğunu metodur soyut. Tabii ki. Buna reklam sınıfında bir şey söyleyemem. Çünkü çok değişik gereksinimler verdiği şey. Şu yaş alanındaki, şu gelir katı kurasındaki, şu cinsiyetten kullanılacak gibi farklı farklı şeyler tanımlanacağından. Bir reklamın, somut bir reklamın hangi tip kullanıcıya uygun olduğunu nasıl kodlayacağım?
+
+500
+02:24:38,675 --> 02:24:47,015
+Bu alt sınıflarda göre çok çok farklı değişeceğinden bir soyut metot olarak bu metot tanımlanmıştır.
+
+501
+02:24:47,015 --> 02:24:59,376
+Somut metodu ne yapacak? Reklam kotağı metodu. Reklam kotağı metodu basitçe eğer uygun bulunmuşsa bu reklam bu kullanıcıya o zaman banner'ın show metodunu çalıştıracak.
+
+502
+02:25:00,355 --> 02:25:06,115
+Aslında öyle bir şeyler yapacaktı yanlış hatırlamıyorsam. Şimdi kaynak kodu da daha iyi inceleriz.
+
+503
+02:25:06,579 --> 02:25:26,119
+Diğer sınıfları ise bütün işte bahsettiğim üst sınıftaki soyut metotları somut olarak tanımlayan sınıflar. Başka başka kampanyalarda tanımlanacaksa onların gerektirdiği reklamlarda kardeş sınıflar olarak reklamın alt sınıf olarak tanımlanacaktır.
+
+504
+02:25:28,691 --> 02:25:38,691
+Gelelim koddan inceleyelim artık isterseniz. Asla da çok söyleyeceğim bir şey yok.
+
+505
+02:25:38,691 --> 02:25:45,691
+Evet, şuna değinirim sonra.
+
+506
+02:25:45,691 --> 02:25:52,691
+Tamam, şurada şama kalsın. Biz ekristen bakalım.
+
+507
+02:25:56,564 --> 02:25:57,704
+Çeynok üstünde.
+
+508
+02:26:01,876 --> 02:26:17,756
+Evet, şimadan da bakaraktan ilerleyelim. Uses basit. Yani Uses sınıfı cinsiyet geri düzenliğe basit. Onları dizkleyin bize gerek yok. Reklama bakalım ve diğer somut reklam sınıflarına bakalım. Alt sınıflara bakalım.
+
+509
+02:26:20,724 --> 02:26:48,203
+Reklam sınıfları gördüğünüz gibi soyut sınıf. Sonrak reklama. İkisi de set ediliyor. Reklam uygunluğu ve reklam göster metodları soyut. Az önce tartıştığım nedenlerle. Reklam kotar metodu ise reklamı gösterecek ama tabii göstermeden önce, gösteri çağırmadan önce uygun olup olmadığında çağırması gerekmektedir. Önce, reklamı kotar bir kullanıcı geldi bu reklama. Ne yapmalı bu reklam?
+
+510
+02:26:48,435 --> 02:27:02,435
+Önce bakmalı, bu ekran bu kullanıcıya uygun mu? Yani disk olan bu ekran uygun mu? Parametrola gelen bu kullanıcıya uygunsa, ekrana bir kendi adını...
+
+511
+02:27:03,763 --> 02:27:19,083
+Ekran kendi adını yazdı ve kullanıcıyı yazdı. Oksiyon kullanıcıya yazdı. Demek oluyor ki bu reklamı bu kullanıcıya gösterdim anlamına geliyor. Ondan sonra esas işler ekranı göstermesi için ne gerekiyorsa onu yapacak diyelim ki.
+
+512
+02:27:21,268 --> 02:27:43,948
+Bu da reklam konusunun yaptığı sırf ekran önemli bir şey. Reklamın uygun olup olmadığının denetlenmesini sağlamak uygunsa da gösterecek. Şuraya ben akışın doğru yürüdüğünü, nasıl yürüdüğünü, hangi reklamın hangi kullanıcıya göstermiş olduğunu sizlere anlatabilmek için bu şekilde sınıf adını ve kullanıcı bilgisini ekran yazmıyorum.
+
+513
+02:27:49,268 --> 02:27:59,887
+Bir kontrol edelim bakalım. Sonraki reklamımız var mı? Eğer sonraki reklamımız varsa, nar değilse o zaman şimdi ben bu reklamım.
+
+514
+02:28:00,308 --> 02:28:23,028
+Ama kullanıcıya ben kendimi göstermedim. Bu kullanıcıyı şu sonraki reklama yönlendirdim şeklinde bir notasyonla kendi sınıf adını ve sonraki reklamı sınıf adını yazıyor. Ondan sonra da işte sonraki metod reklamın ilişkili olduğu metodun, ilişkili olduğu reklamın reklam kota metodunu çağırıyor.
+
+515
+02:28:28,308 --> 02:28:51,108
+Şimdi burada eğer zinciri doğru yapılandıramadıysak hiçbir şekilde bu zincir içerisindeki hiçbir reklam buradaki reklam uygunluk turunun içine girmezse en sonunda bu sonrakinin nal olduğu yere kadar gelecek ve kullanıcıya reklam gösterilememiş olacak.
+
+516
+02:28:52,340 --> 02:29:16,819
+Zincirin bir bileşeni, sonraki bileşenin bu kullanıcıya uygun olup olmadığını sorgulaması gibi bir senaryo burada kodlamadı. Bu nedenle zinciri doğru yapılandırmak lazım. Zincirin sonunda her türlü kullanıcıya hizmet verebilecek türden bir reklam olması lazım.
+
+517
+02:29:17,459 --> 02:29:31,439
+Zincir kurulumuna dikkat etmeyeceksiniz. O zaman yapmanız gereken şey daha kolay açıklaşacak. Reklamın sonrakini iletmeden önce acaba o yanıt verebilecek mi diye bakmak lazım.
+
+518
+02:29:31,439 --> 02:29:45,439
+Ama belki o yanıt vermeyecek ama onun da ilişkili olduğu diğeri yanıt verebilecek. Böylece zincirin herhangi noktasındaki bir düğümün bütün zincirle sorguyu iletip ondan sonra oradan...
+
+519
+02:29:45,459 --> 02:29:52,520
+Geriye rekürsif olarak, ha tamam buna birisi ele almış ya da alacak problem yok.
+
+520
+02:29:52,520 --> 02:29:58,719
+Veya ha alacak kimse kalmamış. Bari hazır bana gelmişken ben buna bu reklamı vereyim gibisinden de kod yazılabilir.
+
+521
+02:29:58,840 --> 02:30:02,379
+Ama o işi epey karmaşıklaştıracaktır arkadaşlar.
+
+522
+02:30:03,059 --> 02:30:07,639
+Bunun yerine zincirin doğru kurulduğundan emin olmak çok daha kolaydır.
+
+523
+02:30:10,227 --> 02:30:35,948
+Ve somut reklam örneklerimiz. Örneğin, ne demiştik? Kampanyadan gidelim. Kampanya tanımından gidelim. Nedir? Daha geniş olan ikinci kampanyaydı. Haber sitesinin 18-29 yaş arası AGE'nin bulduğunu günü ziyaretçinin otomobil dergisi reklamını göster. O zaman otoderge reklamına gelelim. Bakın, otoderge reklamı reklamlar kalınlığına türetilmiştir.
+
+524
+02:30:36,468 --> 02:30:57,408
+Ben'e ve sonraki reklam bilgileri üst sınıfın kurucusuna iletilmektedir. Reklam göster boş arkadaşlar. Benim gösterecek şeyim yok. Ama reklam uygun mu? Metodunu kontrol ediyorum. Bakıyorum şimdi. Kullanıcımın cinsiyet erkek ise ve gelir düzeyli A düzeyli ise.
+
+525
+02:30:58,868 --> 02:31:21,968
+İçine giriyor veya ve ileride bağlayabilirdim. Ve bu kullanıcımın içi 18-29 yaş aralarında ise o zaman true döndürecek ve nihayetinde reklam kotar bunun ekranını gösterecek ekrana. Yok uygun değilse de zaten bir sonrakine iletilmesini sağlayacak üst sınıf üzerinden olan kok. Başka da bir şey yok.
+
+526
+02:31:22,932 --> 02:31:36,192
+Sonra o neyle ilişkiliydi? Spor sitesiyle ilgiliydi. Onun reklamı. Pardon, yani saç bıçağı reklamı ile ilgiliydi. Onun reklamı uygun mu? Metoduna bakıyorum.
+
+527
+02:31:36,572 --> 02:31:42,972
+Cinsiyet erkekse ve yaş 18 ile 39 sırasında ise o zaman ben bu kullanıcıya uygunum şeklinde.
+
+528
+02:31:42,972 --> 02:31:48,092
+Bu şekilde döndürecek. Aksakçı da false döndürecek şeklinde metodların var.
+
+529
+02:31:49,940 --> 02:32:16,240
+Main Application'ın içindeyse farklı kampanyanın farklı metotlar içerisinde tanımlılmamız. Tek bir tane metot içerisinde bir şey göstermedim. Bu arada bu uygulamada 3 farklı türden kullanıcı tanımladım. Farklı kullanıcıların farklı reklamlar gösterecek ya acaba bakalım doğru tip kullanıcıya doğru tip reklamla gösterecekleri deneyebilmek için farklı özelliklerde 3 kullanıcı tanımladım.
+
+530
+02:32:18,227 --> 02:32:27,887
+Birinci kampanya, kampanyadaki reklamla, şimdi dikkat ederseniz ya da şeyde hatırlarsanız, her türlü kullanıcıya uygun olan reklam,
+
+531
+02:32:28,308 --> 02:32:48,308
+Sponlarlısı'nın indirim reklamıydı. Bu nedenle zincir kurarken bunu link disk şeklinde yapmaktansa daha basit kodları diye dizi şeklinde yaptım. Zincirin başlangıcı sıfırıncı indisi de diyorum. Zincirin sonu ise dizinin en sonundaki reklam olacak. O yüzden dizinin en sonuna...
+
+532
+02:32:49,716 --> 02:32:57,476
+Bütün kullanıcılar için uygun olabilecek olan bu reklamı koydum. Bunda sonraki reklamı yok.
+
+533
+02:32:57,476 --> 02:33:05,476
+Yani şuradaki kampanya birinin...
+
+534
+02:33:06,036 --> 02:33:11,636
+adlandırmasına göre burada ilk başta şu trafişan sonra fitnesi sonra rastform ağırlığını koyduk.
+
+535
+02:33:11,636 --> 02:33:18,036
+Burada da öyle sırası farklı ama 012 yerine 2010 şeklinde göstermeyi tercih etmişim.
+
+536
+02:33:18,036 --> 02:33:22,036
+Herhalde bu sonu vurgulamak için.
+
+537
+02:33:22,036 --> 02:33:28,435
+Ve bu kampanyayı üç ayrı kullanıcımıza da gösteriyoruz.
+
+538
+02:33:28,435 --> 02:33:33,435
+Bakalım hangisi hangisinin reklamına tabi tutunacak.
+
+539
+02:33:34,868 --> 02:33:52,768
+Kampanya 2 için ise, gerçi burada elle her şeyi tekrar kodlamışım ama aslında kampanya 1'in reklam dizisinin sonuna bir tane daha ekle gibi bir şeyler olabilir. Ama bu kampanya kendi içerisinde bağımsız tutmayı tercih ettim.
+
+540
+02:34:02,868 --> 02:34:20,388
+Öbür kampanyadaki şeyine ulaşması gerekecek. Bu da çok doğru olmayacak. Burada hani kampanya ki eşitir, şu otodergi artı olmazsa kampanya bir gibi bir şey yapmak biraz daha da fazla kod gerektirecektir.
+
+541
+02:34:20,388 --> 02:34:28,567
+O nedenle burada şunun arasında biraz duplikasyon var ama nihayetinde müşteri gereksinimleri uyumsuz da değil bu.
+
+542
+02:34:29,299 --> 02:34:48,919
+Ve şeyin içerisinde işte kampanya 1'i yürüt, ondan sonra olmadı. Kampanya 2'ye yürüt falan gibi denemelerim olacak. Çalıştıralım bakalım şimdi. Duruma göre demişti ki bana müşterim, işte şimdi orayı açayım.
+
+543
+02:34:56,691 --> 02:35:09,551
+Kampanya birim bu. Böyle yaptım ama tabii çok şey okunmuyor. Şöyle de eklisti açayım bakayım. Şöyle koyayım ona. Şu tarafa. Şimdi.
+
+544
+02:35:10,708 --> 02:35:28,768
+Şu erkek 23 yaş C gelir düzeyi, şuna baktığımda, spor sitesinin 18-32 yaş arası erkek sıra aşağı saç bıçağı reklamı göster olarak da ilk kullanıcımın benim saç bıçağı reklamı görmesini bekliyorum.
+
+545
+02:35:28,768 --> 02:35:38,708
+İkinci kullanıcımın yaş nedeniyle, cinsiyet nedeniyle, fiyatı da değil ama spor marasındaki indirim reklamı.
+
+546
+02:35:38,708 --> 02:35:55,188
+Reklamının göstermesini bekliyorum. Kadın kullanıcıya da yaş aralığına girdiği için ona fitness salonu reklamı göstermesini bekliyorum. Yani bıçak indirim fitness şeklinde çıktı. Bekliyorum. Bıçak indirim fitness çalıştığım.
+
+547
+02:36:01,396 --> 02:36:15,236
+Bakın. Bıçak, indirim ve fitness. Nereden anlıyorsunuz hocam derseniz şöyle. Bakın. Bir reklam kendisini kullanıcıya gösterdiği zaman.
+
+548
+02:36:16,020 --> 02:36:39,260
+Adını yazıp kullanıcı bilgisini yazıyordu. Ama gösterememişse o zaman ben bu tıraş bıçağı reklamıyım ama ben kullanıcıya bunu göstermedim. Kullanıcıyı şu reklama yönlendirdim şeklinde ok veriyordu. Ben de baktığım şey okun sağ tarafında erkek veya kadın diyorsa yani kullanıcıyı anlatıyorsa o zaman hemen sağa bakıp bu kullanıcıya bu reklamın gösterildiğini anlayabiliyorum.
+
+549
+02:36:39,600 --> 02:36:59,020
+Bu nedenle az önce sözde söylediğimiz sıralamada reklamlar gösterildiği için genç erkeğe traç bıçağı, yaşlı erkeğe diğer kategorilerle uymadığı için indirim spor mağazası, yaş aralarına uyan kadın kullanıcıya da fitness salonu reklamının göstermesini bu şekilde yapabildim.
+
+550
+02:37:00,360 --> 02:37:06,720
+Kaza kampanyayı denesem yine aynı şekilde benzer sonuçta çıkacak.
+
+551
+02:37:07,476 --> 02:37:22,476
+İsterseniz bakarız ona da. Ağız 8.9'un Ağır gibi giriyoruz. Yaş yarken giriyoruz. Ama yaş kıta gözlerinde girmediği için ona da zaten ağır reklamı gösterebilecek.
+
+552
+02:37:22,476 --> 02:37:25,476
+Kulabdan olmaz ama isterseniz çalıştığınızda.
+
+553
+02:37:32,788 --> 02:37:51,048
+Evet, bakıyorum şimdi. Evet, 23 yaşındaki erkeğin etrarç bıçağı geliyor. Yani bakın, işte kampanyanın başına, kampanya 2'de en başta Otodergi Möbel Dergisi'ni koydum ama Otodergi reklamı hiçbir kullanıcıya kendisini göstermemiş. Çünkü o gruba giren kullanıcım yok.
+
+554
+02:37:51,456 --> 02:38:03,756
+Gösterseydi yanlış kurmuş olabilirim zinciri veya gereksinleri yanlış olarak anlamış olabilirim. Göstermemesi doğru bir şey bu kullanıcı star arabasına göre.
+
+555
+02:38:06,495 --> 02:38:17,355
+Olaylar bunlar arkadaşlar. Sorusu olan merak ettiniz ya da hocam şunu da şöyle yapabilir miydik? Şunu nasıl yapardık dediğimiz yerler varsa konuşalım.
+
+556
+02:38:24,435 --> 02:38:27,076
+Yoksa daha fazla ilerleyeceğiz tabii ki.
+
+557
+02:38:30,076 --> 02:38:32,076
+Şimdi şunu not edelim.
+
+558
+02:38:32,076 --> 02:38:34,475
+Proxy yakadas.
+
+559
+02:38:44,948 --> 02:38:46,948
+Bu ne?
+
+560
+02:38:57,587 --> 02:38:59,587
+Evet, yine devam.
+
+561
+02:38:59,587 --> 02:39:03,587
+2013
+
+562
+02:39:03,587 --> 02:39:05,587
+P1
+
+563
+02:39:21,108 --> 02:39:22,988
+Evet, 16'ya kadar eklemişiz.
+
+564
+02:39:29,523 --> 02:39:36,503
+Bundan sonra haftaya P17'sinden başlayacağız.
+
+565
+02:39:37,123 --> 02:39:39,843
+Batkalar ne verdikse ilerleyeceğiz.
+
+566
+02:39:39,843 --> 02:39:42,843
+Peki.
+
+567
+02:39:43,540 --> 02:40:00,000
+Söylemeyi unutmak istemediğim son bir şey var. Aslında henüz görmedik ama daha ileride template metot kalıbını göreceğiz. Şu aslında reklam sınıfı ile, yani soyut sınıfı ile somut alt sınıflar arasında bir template metot kalıbı kullanıyor.
+
+568
+02:40:00,000 --> 02:40:24,119
+Bu konuda henüz görmedik olduk. Ben daha evvelki amaç sıralamasına göre yaptığımda bunu söylemiş oluyordum ama kitabın aynı anlatım sırasına geçince, bu sırada anlatınca henüz o kalıbı görmemiş oluyoruz ama daha sonra geri dönüp bakarsanız bunu fark edebilirsiniz. Ayrıca kadarki template metotikinde başlık bütün kendi örneğini de yapacağız.
