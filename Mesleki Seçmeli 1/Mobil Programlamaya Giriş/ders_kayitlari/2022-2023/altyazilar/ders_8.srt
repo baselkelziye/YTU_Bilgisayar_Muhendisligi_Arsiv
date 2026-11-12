@@ -1,0 +1,2803 @@
+1
+00:11:52,115 --> 00:12:11,436
+Hoş geldiniz arkadaşlar. Birkaç dakikaya daha ekstradan bekledim. 25 kişi civarındayız şu anda. Öncelikle yeni hibrit sistem hepinize inşallah faydalı olur diyelim. Birazcık o konuyla ilgili sizin de fikirlerinizi almak istiyorum.
+
+2
+00:12:11,903 --> 00:12:26,903
+Bu hafta ilk hafta olduğu için gördüğüm kadarıyla çok fazla gelen öğrencimiz yok. Bu ders kapsamında hiç kimse gelmemişti dersin sınıfına. Zaten online'da da canlı olarak izleyenlerin sayısı oldukça düşük.
+
+3
+00:12:28,244 --> 00:12:35,644
+Önümüzdeki haftalardan itibaren sınıfta olmayı düşünen arkadaşlarımız var mı diye sorayım. Varsa el kaldırsın.
+
+4
+00:12:40,884 --> 00:12:52,844
+Peki, anladığım kadarıyla gelmeyi düşünen yok. Dersle ilgili, gidişatla ilgili görüşünü belirtmek isteyen, yorum yapmak isteyen var mı?
+
+5
+00:13:00,115 --> 00:13:05,196
+O konuyla da ilgili bir görüş yok. Oldukça sessiz ve sakin bir ders olarak ilerliyoruz.
+
+6
+00:13:08,056 --> 00:13:19,936
+Şimdi bazı şeylerin geri dönüşü olmadığı için anlatılanların ya da anlatılış şeklinin işe yarayıp yaramadığı konusunda da bir geri dönüşü alamadığımdan maalesef bir güncelleme de yapamıyorum.
+
+7
+00:13:19,936 --> 00:13:26,216
+Eğer bu sessizliğiniz, memnuniyetinizle ifade ediyorsa ne mutlu bana.
+
+8
+00:13:26,639 --> 00:13:32,179
+Değilse, burada paylaşmak istemeyenler, mail olarak görüşlerini aktarabilirler.
+
+9
+00:13:32,879 --> 00:13:39,620
+Ben geçtiğimiz hafta sizlerle paylaşmış olduğum Zoom üzerinden 3 Java kodu vardı.
+
+10
+00:13:39,720 --> 00:13:41,679
+Onu ders duvarına ekledim.
+
+11
+00:13:42,240 --> 00:13:49,879
+Ayrıca geçtiğimiz hafta tamamladığımız 2. hatta 3. sunum dosyası oluyor.
+
+12
+00:13:50,559 --> 00:13:53,939
+O sunum dosyasını yine ders duvarından paylaştım.
+
+13
+00:13:55,572 --> 00:13:58,572
+Bunun dışında...
+
+14
+00:14:00,659 --> 00:14:15,299
+Bugün dönem projenizi açıklayacağım. Dersin ilerleyen dakikalarında, dokümanını da gün içerisinde ya da yarın paylaşmış olacağım. Ödevinizle ilgili birkaç açıklama yapacağım. Bir ödev ve bir dönem projesi üzerine konuşmuştuk.
+
+15
+00:14:23,923 --> 00:14:38,084
+Verileri kalıcı olarak nasıl saklayabiliyoruz, seçeneklerimiz neler onlardan bahsediyor olacağım. Bunların içerisinde işte Database, File Storage, Internal, External Storage gibi kısımlar var.
+
+16
+00:14:42,484 --> 00:14:46,163
+Ek olarak belki önümüz iki hafta Firebase'den biraz bahsedebiliriz.
+
+17
+00:14:46,724 --> 00:14:51,844
+Dönem projenizin içerisinde tabii görmediğiniz konular olacak. Bunu daha önce söylemiştim.
+
+18
+00:14:52,744 --> 00:14:58,524
+Yaklaşık olarak bugünden itibaren 29 Mayıs'a kadar teslim için süreniz olacak. Uzun bir süre.
+
+19
+00:14:59,304 --> 00:15:04,064
+Uzun yıllardır öğrencilerin isteğiydi. Hani önceden verseniz, biz önceden yapsak diye.
+
+20
+00:15:04,744 --> 00:15:07,923
+Umarım bu sene böyle bir imkan oluştu. Sizin için de faydalı olur.
+
+21
+00:15:08,851 --> 00:15:25,391
+Soru vizelerle alakalı bir bilgi var mı? Var. Yok açıklama yaptı zaten. Online olacak vize sınavı. Tüm sınavlar uzaktan olacak. Başka ne tür bir bilgiye ihtiyaç varsa sorabilirsiniz. Eğer öğrenmek istediğiniz bir şey varsa.
+
+22
+00:15:25,991 --> 00:15:36,391
+Dönem başında işte ilerleyen sürece şu an önümüzü göremediğimiz için vize hakkında çok bir şey söyleyemeyeceğim demiştiniz. Vize içeriği hakkında...
+
+23
+00:15:36,884 --> 00:15:38,663
+Dayız anlımcı o aynı zamanda.
+
+24
+00:15:40,724 --> 00:16:01,864
+Vize içeriği dersin ilk haftasından bugüne kadar geldiğimiz konuları içerecek şekilde programlama ağırlıklı değil, programlamayı verimli kılabilecek ya da bu alandaki terminolojiyi bilip bilmediğinizi ölçebilecek soruları içeren test, boşluk doldurma, küçük.
+
+25
+00:16:02,388 --> 00:16:12,087
+Belki kod parçası yazma gibi sorular olabilir ama böyle bir uygulamanın sıfırdan yazılması gibi bir vize sınavı olmayacaktır.
+
+26
+00:16:13,827 --> 00:16:21,848
+Bu şekilde planlıyorum ama hani bir değişiklik olur mu herhalde olmaz diye tahmin ediyorum bu saatten sonra.
+
+27
+00:16:21,947 --> 00:16:29,048
+Çünkü uzaktan yapılacağı kesinleşti. Genel format bu şekilde olacaktır. Yani Android programlamayla ilgili.
+
+28
+00:16:29,556 --> 00:16:41,556
+Genel olarak mobil programlamaya yönelik mobil işletim sistemleri, mobil uygulamalar, bahsettiğimiz terminolojiye uygun sorular gelecektir. Böyle söyleyebilirim.
+
+29
+00:16:44,196 --> 00:16:47,696
+Rica ederim. Başka soru sormak isteyen var mı?
+
+30
+00:16:53,395 --> 00:17:00,975
+Peki, o zaman ben sunumu açayım, sizlerle paylaşmaya başlayayım.
+
+31
+00:17:15,796 --> 00:17:18,375
+Evet, sanırım görebiliyorsunuzdur diye tahmin ediyorum.
+
+32
+00:17:20,936 --> 00:17:31,855
+Bu hafta veri saklama ile ilgili Android işletim sistemi bize neler sunuyor, nelere dikkat etmemiz gerekiyor?
+
+33
+00:17:32,476 --> 00:17:33,596
+Onlardan bahsedeceğiz.
+
+34
+00:17:34,875 --> 00:17:35,796
+Bu derse kadar...
+
+35
+00:17:36,463 --> 00:17:42,583
+Genellikle daha basit yapıları, temel yapıları biraz konuştuk.
+
+36
+00:17:42,783 --> 00:17:58,303
+İşte aktiviteyi, aktivitenin layout site'ını, bir aktiviteden diğer aktiviteye nasıl geçebileceğimizi, veriyi nasıl taşıyabileceğimizi, bundle objesinde hangi şartlarda sakladığımız veriye tekrar ulaşabileceğimizi konuşmuştuk.
+
+37
+00:18:00,756 --> 00:18:13,096
+Uygulamadan çıktığınızda ya da telefonu kapattığınızda saklamak istediğiniz verinin kalıcı bir şekilde depolanabilmesi için bugün konuşacaklarımız aslında oldukça önemli.
+
+38
+00:18:13,936 --> 00:18:23,376
+Bu nedenle bu konu çok da geniş. Bu haftayı tam anlamıyla kapsayacaktır. Bütün detayları veremesek de.
+
+39
+00:18:27,508 --> 00:18:35,367
+Ek bir bilgi düşünebilirim ama tabii söylediğimiz konulara da uymak için ne kadar vakit yaratabileceğiz buna bir bakacağız.
+
+40
+00:18:36,228 --> 00:18:42,347
+Burada temel olarak bu slide'da da gördüğünüz aslında konseptler şunlar.
+
+41
+00:18:43,347 --> 00:19:01,132
+App Specific Storage dediğimiz uygulamaya, has ve uygulamaya özel bilgilerin saklanmasına yönelik özellikle internal storage'ın kullanılması bazen de external storage'ın...
+
+42
+00:19:01,332 --> 00:19:12,592
+Internal Storage'da konumlandığı, yani aslında fiziksel olarak ayrı bir SD kartta değil, telefonun üzerinde ayrı bir partition olarak konumlandığı yapılarla çalışıyor telefon.
+
+43
+00:19:13,119 --> 00:19:19,199
+Genel olarak Android bu iki fiziksel yapıyı kullanıyor.
+
+44
+00:19:19,199 --> 00:19:26,019
+Ama ağırlıklı olarak internal storage üzerinde genelde uygulamalara özel bilgileri saklıyoruz.
+
+45
+00:19:26,719 --> 00:19:35,159
+Ve bu nedenle de çok daha güvenlik seviyesi yüksek internal storage'ta veri saklamanın.
+
+46
+00:19:35,719 --> 00:19:38,199
+External storage özellikle herhalde fiziksel olarak...
+
+47
+00:19:38,352 --> 00:19:45,592
+Bir SD katsa ve çıkartılabilirse bunun üzerinde uygulamaya özel bilgileri tutmak aslında istediğimiz bir durum değil.
+
+48
+00:19:46,332 --> 00:20:00,792
+Fakat yer kısıtı, işte uygulamanın boyutunun büyük olması gibi ya da uygulamanın genel olarak herkesin erişebildiği video, fotoğraf, PDF.
+
+49
+00:20:01,428 --> 00:20:10,548
+gibi dosyalara ihtiyaç duyması durumunda bazı şartlarda eksternör storici konumlanması da mümkün olabiliyor.
+
+50
+00:20:11,316 --> 00:20:31,336
+Biz bu noktada internal storage ağırlık olarak kullanacağımızı söyledikten sonra aslında herkesin erişebildiği dosya tiplerinin shared storage kavramı kullanılarak saklandığını vurgulamakta herhangi bir sakınca yok. Bunların içerisinde medya dosyaları, dokümanlar.
+
+51
+00:20:31,743 --> 00:20:46,343
+Ve diğer dosyalar genelde bulunuyor ve örneğin işte birçok galeri uygulaması var. Sizin telefonunuzdaki fotoğraflara erişim izini veriyorsunuz ve herkes o ortak noktada bulunan fotoğraflara erişebiliyor.
+
+52
+00:20:46,563 --> 00:20:53,183
+Keza şarkılar için geçerli, aynı şey videolar için geçerli ya da indirdiğiniz, download ettiğiniz dosyalar için geçerli.
+
+53
+00:20:53,864 --> 00:20:59,483
+Bu noktalar genellikle uygulamaya özel alanlar olmuyor ve bunun için ayrı API'ler var.
+
+54
+00:20:59,743 --> 00:21:16,703
+Bugün bunu göreceğiz. Daha primitive data type'lar için key value şeklinde saklayacağımız daha böyle user preferences ve böyle basit bilgiler için preferences, shared preferences yapısı ve preferences API'ni kullanıyoruz.
+
+55
+00:21:16,703 --> 00:21:25,463
+Structured bir yapıdan bahsediyorsak da o zaman ilişkisel bir veri tabanı kavramıyla karşı karşıya kalıyoruz.
+
+56
+00:21:27,440 --> 00:21:42,519
+Persistence kütüphanesi üzerinden SQLite kullanılarak bir veri tabanı oluşturulup veriler konumlandırılabiliyor. Bunlar telefon üzerinde saklayabildiğiniz ve kullanabildiğiniz yapılar.
+
+57
+00:21:44,500 --> 00:22:00,179
+Network tarafında gerek Google'un sunduğu Firebase yapısı, gerekse sizin kendi backend tarafında konumlandırdığınız bir Cloud mimarisi ya da bir database'e de bu bilgilerin aktarılması söz konusu.
+
+58
+00:22:10,355 --> 00:22:13,576
+değerlendirmek gerekiyor uygulama yazdığınız zaman.
+
+59
+00:22:17,587 --> 00:22:24,807
+Gelelim bazı sorulara. Bu soruların neticesinde biz verdiğimiz cevaba göre hangi yöntemleri tercih ediyor olacağız?
+
+60
+00:22:25,447 --> 00:22:28,347
+İnternal storage'ın bir limiti olduğunu söylemiştik.
+
+61
+00:22:28,688 --> 00:22:51,228
+Bu noktada sizin uygulamanızın ne kadarlık bir alan ihtiyacı olduğu sorusuna bağlı olarak büyük boyutta bir alandan bahsediyorsak o zaman external storage'ı yönlendirmek ya da ortak dosya kullanımı çokça gerçekleşiyorsa o zaman yine external storage'ı yönlendirmek ya da uygulamaya özel.
+
+62
+00:22:51,892 --> 00:23:05,892
+Kısımları internal storage'a, geri kalanları daha sonra göreceğiniz media, API ya da storage access framework üzerinden yerleştirebiliyorsunuz.
+
+63
+00:23:10,291 --> 00:23:22,291
+Özel bilgi yani uygulamanızın sakladığı çok önemli. Bu da güvenlik seviyesine bağlı olarak eğer kritik bilgiler saklanıyorsa o zaman bunu...
+
+64
+00:23:22,708 --> 00:23:30,768
+Tartışmasız mutlaka internisturucu ya da internisturucu'daki dosya ya da veritabanı alanına yazmanız sizden bekleniyor.
+
+65
+00:23:31,688 --> 00:23:38,628
+Bu noktada tabii aşağıda should the data be private to your app?
+
+66
+00:23:39,124 --> 00:23:50,463
+Sorusuna da baktığınız zaman, Sensitive Data'nın saklanması için ya Internal Storage, ya Preferences ya da Database yapılarını tercih ediyoruz.
+
+67
+00:23:51,144 --> 00:24:02,604
+Burada Primitive Data Types için Preferences, Structured Yapı için Database, Dosya kullanacaksak da Internal Storage üzerinde bunları konumlandırıyoruz.
+
+68
+00:24:05,587 --> 00:24:17,288
+Shared Preferences yapısında yer alan bilgiler Semistracture'da olarak da adlandırılıyor ve bir XML dosyası içerisinde KeyValuePayer'lar şeklinde saklanıyor.
+
+69
+00:24:17,927 --> 00:24:24,307
+Bugün onun da nasıl olduğunu görüp bir küçük uygulaması üzerinde çalışıyor olacağız.
+
+70
+00:24:26,827 --> 00:24:31,327
+Gelelim burada karşılaştırmalı aslında neler?
+
+71
+00:24:31,796 --> 00:24:38,135
+Hangi tür bilgilerle siz uğraşacaksınız onları bir görmeye.
+
+72
+00:24:38,135 --> 00:24:53,876
+Bu noktada app-specifik dosyalardan bahsettiğimizde internal storage'da getFilesdir metodu, getCache'dir metodu, external storage'da getExternalFilesdir ve getExternalCache'dir metotlarıyla directory.
+
+73
+00:24:54,367 --> 00:25:08,788
+Ulaşımını sağlayabiliyorsunuz. Burada uygulamaya özgü sadece dosyalar konumlandırılıyor. Başka uygulamalar tarafından burada yarattığınız dosya ve direktörlere erişim söz konusu olmuyor.
+
+74
+00:25:08,788 --> 00:25:22,288
+Ve uygulamayı uninstall edildiğinde buradaki tüm bilgileri de aslında telefondan silmiş oluyorsunuz. Bunu garanti ediyor Android size. Bu nedenle ekstra uygulama silinmesi sırasında başka bir şey yapmanıza gerek kalmıyor.
+
+75
+00:25:22,367 --> 00:25:44,347
+Öte yandan paylaşılabilir medya dosyaları için, işte fotoğraf, video gibi dosyalar için ya da ses dosyaları için MediaStore API'ni kullanıyorsunuz. Burada da çeşitli izinlerin alınması sizden bekleniyor. Özellikle yeni versiyonlarda, Android 10 ve 11 üzeri versiyonlarda.
+
+76
+00:25:47,796 --> 00:26:02,076
+Read External Storage ve Write External Storage izinlerini almanız ama yeni 11 ile birlikte gelen Manage External Storage özelliği de var.
+
+77
+00:26:08,819 --> 00:26:28,819
+Genellikle oluşturulmasını sağlayabiliyorsunuz. Burada manage external storage yani tüm external alanda iş yapabilmeniz için gerekli izni daha çok gerçekten o alandaki dosyalarla ilgisi olan backup uygulamaları gibi, sıkıştırma uygulamaları gibi daha file management'a...
+
+78
+00:26:29,683 --> 00:26:33,364
+Yatkın uygulamaların bu izinleri alması bekleniyor.
+
+79
+00:26:33,923 --> 00:26:41,384
+Bunun dışındaki uygulamalar kullanıcıya bu izni talep ettiklerinde genelde kullanıcılar pek bu izni vermek istemiyorlar.
+
+80
+00:26:41,983 --> 00:26:44,604
+O yüzden Android de bunu tavsiye etmiyor.
+
+81
+00:26:45,140 --> 00:26:53,500
+Özellikle Uninstall yapıldığında uygulamanız buradaki herhangi bir dosyada silinmiyor zaten bu noktada paylaşılan alandaki.
+
+82
+00:26:54,220 --> 00:26:59,100
+Buna dikkat etmek gerekiyor. Burada medya anlamında paylaşılan dosyalar var.
+
+83
+00:26:59,880 --> 00:27:02,092
+Aşağıdaki bir alt satırda ise...
+
+84
+00:27:02,099 --> 00:27:18,099
+Daha çok medya dışında indirdiğiniz diğer PDF ve benzeri dosyaların paylaşımı için Storage Access Framework üzerinden gerekli metotları kullanıyorsunuz.
+
+85
+00:27:19,199 --> 00:27:22,319
+Bu noktada yine uygulamayı kaldırdığınızda dosyalar silinmiyor.
+
+86
+00:27:27,903 --> 00:27:33,623
+Sizin uygulamanızın yarattığı dosyalara erişim hakkına sahipler.
+
+87
+00:27:35,223 --> 00:27:40,284
+Ama özel bir izne tabi değil burada ürettiğiniz dosyalar.
+
+88
+00:27:42,355 --> 00:28:03,416
+KeyValue Payer'larından bahsetmiştik, Primitive Data Typerlerden. Burada iki yapı var. Bir tanesi Shared Preferences yapısıtı, diğeri de yeni Android'in sunduğu Jetpack Preferences Library'si. İkisi de bu bahsettiğimiz KeyValue tiplerini saklayabilme yeteneklerine sahipler.
+
+89
+00:28:09,023 --> 00:28:20,203
+Library üzerinden, veri tabanı üzerinde gerekli modelleri kurgulayarak verinin saklanmasını sağlayabiliyorsunuz.
+
+90
+00:28:32,211 --> 00:28:41,632
+Şimdi özür diliyorum beklettiğim için. Bir kapı çaldı. Şimdi kaldığımız yerden devam edelim. Bir sonraki slide'a geçelim.
+
+91
+00:28:41,632 --> 00:28:51,632
+Burada önemli noktalardan bir tanesi Device File Explorer. Bugün yine...
+
+92
+00:28:51,743 --> 00:29:09,743
+uygulamada da göreceğiz. Sizin genellikle telefonunuz üzerindeki file sistem üzerinden yaratılan ya da bulunan, orada bulunan dosyalara erişiminizi sağlayan aslında tool. Bu tool sayesinde Android Studio'da bulunan.
+
+93
+00:29:10,096 --> 00:29:19,576
+Tüm dosyaların izin özelliklerini, ne zaman yaratıldıklarını, dosyaların boyutlarını, isimlerini görebiliyorsunuz.
+
+94
+00:29:29,364 --> 00:29:44,104
+klasörünün altında, data klasörünün altında uygulamanızın ismine spesifik bir klasör yaratılıyor ve sizin bu uygulamanızı özel dosyaların hepsi internal storage'da konumlandırılıyor.
+
+95
+00:29:44,692 --> 00:29:55,692
+Eğer External Storage'ta bir bilgiye erişmek isterseniz o zaman SD kartın altına yaratacağınız dosyalarla erişebiliyorsunuz.
+
+96
+00:29:56,612 --> 00:29:59,692
+Bu External Storage fiziksel olarak bir SD kartın altına yaratacağınız dosyalarla erişebiliyorsunuz.
+
+97
+00:30:00,000 --> 00:30:07,940
+SD kart gerçekten olabilir ya da internal storage'ın içerisinde bir sanal bir alan olarak da karşınıza çıkabilir.
+
+98
+00:30:07,940 --> 00:30:20,220
+Ama bir veriyi aradığınız zaman internal storage'ta ise ilk bakacağınız yer data klasörünün altındaki, data klasörünün altındaki uygulamanızın ismine denk gelen klasör olacak.
+
+99
+00:30:22,120 --> 00:30:24,940
+Bunun net ayına ilerleyen...
+
+100
+00:30:25,715 --> 00:30:34,275
+Dakikalarda zaten konuşuyor. Olacağımız Device File Explorer Android Studio'da View başlığı altında, Tool Windows'un altında yer alıyor.
+
+101
+00:30:37,795 --> 00:30:49,555
+Bir uygulamanın diğer uygulamalara veri paylaşımı yaptığı senaryoda genellikle Content Provider üzerinden bu verinin.
+
+102
+00:30:50,132 --> 00:30:56,132
+Paylaşılması ve ulaşılması mümkün kılınıyor. Daha önce söylemiştik örneğin telefon...
+
+103
+00:30:57,556 --> 00:31:09,296
+Kişilerin bilgilerine erişmek istediğinizde Content Provider'ı kullanıyorsunuz ve telefon listenizde yer alan kişilerin bilgilerine bu şekilde erişebiliyorsunuz demiştik.
+
+104
+00:31:09,915 --> 00:31:14,836
+Burada kendi uygulamanızın diğerlerine sunduğu, paylaştığı bazı bilgiler olabilir.
+
+105
+00:31:15,476 --> 00:31:22,456
+Yine Content Provider üzerinden sizin uygulamanız ilgili tanımlamalar yapılmak kaydıyla veri paylaşabilir.
+
+106
+00:31:22,456 --> 00:31:25,456
+Aynı şekilde başka bir uygulamanın paylaştığı veriye de yine...
+
+107
+00:31:25,556 --> 00:31:34,236
+Content Provider üzerinden erişebiliyorsunuz. Bunları da çeşitli örnekler içerisinde görüyor olacağız.
+
+108
+00:31:35,596 --> 00:31:51,196
+Varsayılan ayarlar, herhangi bir değişiklik yapmadıysanız, indirdiğiniz uygulamanın, internal storage'a tüm kurulumunun gerçekleşmesi ve dosyalarının yüklenmesi ve diğer uygulamalar da onlara erişemeyecek.
+
+109
+00:31:51,615 --> 00:32:12,336
+Özellikle konumlandırılmış oluyor. Ve uygulamayı kaldırdığınızda da bütün her şey siliniyor. Varsayılan ayarlar bunlar. İsterseniz alıcı saklayacağınız bilgilerin cache file'larda konumlandırılmasını sağlayabiliyorsunuz. Bu şu demek.
+
+110
+00:32:12,915 --> 00:32:38,515
+Normal cache file kullanmadan, dizin kullanmadan yarattığınız dosyalar uygulamanız silinene kadar kalıyor. Ama cache directory yaratıp oraya veri saklarsanız o zaman Android uygun görmesi durumunda, yer kalmaması durumunda cache'i belli periyotlarla temizleme hakkına sahip.
+
+111
+00:32:40,180 --> 00:32:58,480
+Gerçekten geçici olarak indirip saklamanın sürekli olarak anlamlı olmadığı dosyalarınız varsa o zaman onları bir cache directory açıp oraya konumlandırmak daha akıllıca Android'in de belli aralıklarla bunu temizlemesine imkan vermiş oluyorsunuz.
+
+112
+00:33:00,180 --> 00:33:05,300
+External storage her zaman için bir risk barındırıyor.
+
+113
+00:33:07,731 --> 00:33:16,731
+10-11 versiyonlarıyla önlemler alınmış olsa da, çeşitli ayarlar getirilmiş olsa da, sonuçta fiziksel olarak çıkartılabilir bir...
+
+114
+00:33:17,203 --> 00:33:42,903
+Özellikle yapıdan da bahsediyorsak o zaman buradaki bilgiler hiçbir zaman tam anlamıyla güvenlikli olarak adlandırılamıyor. Bu nedenle de buna dikkat etmek gerekiyor. Çok kritik olmayan kişisel verilerinizin bulunmadığı uygulamaları gönül rahatlığıyla buraya koyabilirsiniz. Hiçbir sorun yok. Ama işte bankacılık uygulaması gibi vesaire uygulamaları buraya kurulmasını talep etmek.
+
+115
+00:33:43,412 --> 00:33:57,872
+Yazdığınız uygulamanın bu yönde bir isteği bulunması, kullanıcıyı buna zorluyor olmak ki biraz sonra ayarı göreceksiniz. Çok kullanıcıyı bunu indirmekten vazgeçirme noktasına kadar götürebilir. Bunu da unutmamak gerekiyor.
+
+116
+00:34:01,907 --> 00:34:24,967
+Şimdi bazı dosyalarla çalışırken dikkat edilmesi gereken kısımlar var. Bir kere dosyaların sürekli açılıp kapanmaması tavsiye ediliyor. Mümkünse açıp, işi yapıp, kapatıp bir daha tekrar aç-kapa yapmamak kaynaklar açısından oldukça önemli.
+
+117
+00:34:27,380 --> 00:34:42,819
+İlgili dosyaların başka uygulamalarla paylaşılması için temelde iki yaklaşım var. Biri File Provider, diğeri de Content Provider. Bu iki temel yapı üzerinden dosyaların paylaşımını sağlıyorsunuz.
+
+118
+00:34:42,819 --> 00:34:48,779
+Üç, gerek sanal cihazınız olsun, gerek fiziksel cihazınız olsun.
+
+119
+00:34:49,235 --> 00:34:57,555
+Üzerinde yarattığınız ya da üzerinde bulunan dosyalara erişimi Device File Explorer üzerinden gerçekleştiriyorsunuz. Özellikle bir tavsiye var.
+
+120
+00:34:59,119 --> 00:35:05,880
+Burada yarattığınız dosyaların, petlerinin hardcoded olmaması öneriliyor.
+
+121
+00:35:05,880 --> 00:35:23,139
+Çünkü her farklı üretici firma burada device'a bağlı olarak farklı bir yapıya sahipse, işte external storage, internal kısımdaysa, SD kartı vardır, yoktur vs.
+
+122
+00:35:23,920 --> 00:35:27,099
+Bu noktada hardcoded bir file pet.
+
+123
+00:35:27,119 --> 00:35:45,119
+vermeden ilerlemek gerekiyor. Doğrudan uygulamanızın SD karta yani external install uygulaması istiyorsanız, install location özelliğini prefer external olarak belirliyorsunuz ve bu sayede uygulamanızı
+
+124
+00:35:46,164 --> 00:35:56,064
+Extent, Storici kurulmasını istediğinizi beyan etmiş olursunuz. Kullanıcı bunu kabul ederse uygulamanız oraya kuruluyor. Kurulum aşamasında kullanıcıya bu soruluyor.
+
+125
+00:35:59,224 --> 00:36:12,204
+Burada üst tarafta özellikle Android 10 ve üzerindeki versiyonlarda artık Intent, Storici'daki bilgilerin sadece diğer uygulamalar tarafından
+
+126
+00:36:12,947 --> 00:36:21,087
+Erişilememesine ek olarak bir de burada yer alan dosyaların şifrelendiği bilgisi veriliyor.
+
+127
+00:36:21,087 --> 00:36:29,488
+Yani Android ve Android 10 ve üzeri versiyonlarda artık güvenlik bir kademe daha arttırılmış durumda.
+
+128
+00:36:30,407 --> 00:36:38,488
+Bu anlamda aslına bakarsanız Android tarafı Apple tarafıyla, iOS tarafıyla da
+
+129
+00:36:39,603 --> 00:36:42,384
+Gelişen güvenlik seviyesine ayak uydurmaya çalışıyor.
+
+130
+00:36:44,804 --> 00:36:56,443
+Bu tabii özellikle external storage tarafında kalıcı ve paylaşılabilir dosyaların konumlandırılacağından bahsetmiştik.
+
+131
+00:36:56,980 --> 00:37:09,739
+Bu noktada özellikle ortak kullanım söz konusuysa external storage'ı tercih etmeniz bir kez daha size önerildiğini vurgulamakta fayda var.
+
+132
+00:37:11,380 --> 00:37:15,020
+Gelelim küçük küçük kod parçalarını konuşmaya.
+
+133
+00:37:15,507 --> 00:37:29,507
+Kendi uygulamanız içerisinde bir dosya yaratmak istiyorsunuz. App-specific bir dosya yaratmak istiyorsunuz. Bunun için bir File Descriptor üzerinden, objesi üzerinden ilgili kontekst...
+
+134
+00:37:29,907 --> 00:37:47,568
+Bulunduğunuz uygulamanın konteksti olacak. Bu konteks.getfilesdir dediğiniz zaman yaratmak istediğiniz dosyanın ismini vererek de dosyanın kendi uygulamanızın data data klasörlerinin altında bu dosyanızın yaratılmasını mümkün kılıyorsunuz.
+
+135
+00:37:48,127 --> 00:37:55,807
+Bunun için bir file name belirlemeniz gerekiyor. İçine yazacağınız content bir string de olabilir.
+
+136
+00:37:56,500 --> 00:38:04,320
+Byte ve bilgi de olabilir, objede yazabilirsiniz. Bunun için çeşitli Java'nın sunduğu stream,
+
+137
+00:38:06,099 --> 00:38:26,619
+API'ler var. Burada FileOutputStream ile açmış olduğunuz dosyaya OpenFileOutput metodunu kullanarak yazmak istediğiniz bilgiyi, byte dönüşümü gerçekleştirdikten sonra string hello world ifadesini yazmasını bu kod ile sağlayabiliyorsunuz.
+
+138
+00:38:34,099 --> 00:38:38,939
+Modifikasyonlarla Android tarafına uyarlanmış versiyonunu görüyorsunuz orada.
+
+139
+00:38:42,279 --> 00:38:49,340
+İkinci bizim için önemli olan noktalardan bir tanesi Shared Preferences API'den faydalanmak.
+
+140
+00:38:50,359 --> 00:38:55,539
+Burada internal storage'a biraz önce bilgiyi yazmayla ilgili konuşmuştuk.
+
+141
+00:39:02,132 --> 00:39:12,291
+XML dosyası içerisinde key value bilgilerinin yazılması var. Primitive data type'lara ek olarak bir tek string'ler normalde obje olarak geçiriliyorsunuz Java'da.
+
+142
+00:39:12,811 --> 00:39:20,132
+Buraya eklenmiş durumda bu bilgileri ikililer şeklinde saklayabiliyorsunuz ve...
+
+143
+00:39:20,436 --> 00:39:40,436
+Bu dosyadaki erişim sürenize göre çok daha hızlı bir şekilde buradaki bilgilere erişebiliyorsunuz. O yüzden uygulamanızın çok basit uygulamaya spesifik bilgilerini bu yapıda tutmanız genellikle öneriliyor ve aktivite bazında burada...
+
+144
+00:39:41,715 --> 00:39:46,956
+O aktiviteye ait bilgileri saklayabileceğiniz Share Preferences dosyaları da yaratabiliyorsunuz.
+
+145
+00:39:46,996 --> 00:39:53,715
+Yani uygulamaya genel bir dosya yaratmak yerine aktivite bazında da bunları yaratma şansınız var.
+
+146
+00:39:55,715 --> 00:39:59,715
+Database tarafına baktığımız zaman SQLite Database'de...
+
+147
+00:40:00,000 --> 00:40:21,359
+destek veriyor Android ve bu noktada uzun yıllardır Room Persistence kütüphanesi üzerinden SQLite API'nin karmaşıklığını biraz daha basitleştirerek verilerinizin structure bir şekilde depolanmasını mümkün hale getiriyor.
+
+148
+00:40:21,359 --> 00:40:23,760
+Burada bir Object Mapping Abstraction.
+
+149
+00:40:24,192 --> 00:40:31,231
+Layer yapısıyla Room Kütüphanesi buradaki işinizi oldukça kolaylaştırıyor.
+
+150
+00:40:37,076 --> 00:40:43,576
+Gelelim internal storage ile external storage arasındaki farkları biraz önce konuştuk ama listelersek.
+
+151
+00:40:44,256 --> 00:40:59,416
+Internal storage her zaman erişilebilir. External storage bir şekilde özellikle fiziksel bir yapıda tutuluyorsa SD kart gibi erişileme potansiyeli her zaman var.
+
+152
+00:41:01,556 --> 00:41:15,935
+Internal Storage'da sadece uygulamanız erişebiliyor ilgili dosyalara. External Storage'taki bilgilerin çoğunluğu herkes tarafından erişilebilir olarak kabul ediliyor.
+
+153
+00:41:15,935 --> 00:41:26,876
+Bir tarafta uygulamayı kaldırdığınızda tüm dosyalar siliniyor. Diğer tarafta ise sadece get external filesdir ile.
+
+154
+00:41:27,347 --> 00:41:39,028
+Yaratmış olduğunuz Director'daki dosyalar uygulamayı kaldırdığınızda siliniyor. Diğerleri herhangi bir şekilde silinmiyor.
+
+155
+00:41:39,028 --> 00:41:50,028
+O yüzden ExtronumStorage tarafında da aslında GetExtronumFilesDir metoduyla yarattığınız dosyalar üzerinden belirli bir güvenlik seviyelendirmesi.
+
+156
+00:41:51,119 --> 00:41:57,119
+Yapmış oluyorsunuz. En azından kademeli olsa da bu yapıyı kullanmış oluyorsunuz.
+
+157
+00:41:58,599 --> 00:42:05,099
+İşte Install Location'ı burada tekrar hatırlatıyor. Manifestin içerisinde tanımlayarak nereye yükleme yapacağınız size söyleniyor.
+
+158
+00:42:05,639 --> 00:42:12,960
+APK size'ının büyüklüğüne bağlı olarak da Internal Storage yerine External Storage'ı kullanabileceğinizden bahsediyoruz.
+
+159
+00:42:14,960 --> 00:42:15,519
+Şimdi
+
+160
+00:42:17,012 --> 00:42:22,992
+Bu noktada read-write operationleri ile ilgili küçük küçük kod parçaları var önümüzde.
+
+161
+00:42:22,992 --> 00:42:36,432
+Bu biraz önce görmüş olduğunuz kod parçasının bir tık daha birleştirilmiş hali bilginin nasıl dosyaya yazıldığını gösteriyor.
+
+162
+00:42:42,324 --> 00:42:57,884
+Durumla karşılaşıyorsunuz. Bir tanesi biraz önce görmüş olduğunuz dosyaya yazma işlemi. Diğeri ise FileInputStream yani dosyadan okuma işlemi. Üst taraftakiler sırasıyla dosyayı açma komutu, daha sonra dosyaya yazma komutu.
+
+163
+00:42:58,204 --> 00:43:10,104
+Üçüncü pencerede yer alan kod parçaları ise yine dediğim gibi Java'dan aşina olduğunuz input streamler üzerinden belirtmiş olduğunuz ismini, dosya ismini belirtmiş olduğunuz dosyayı.
+
+164
+00:43:10,324 --> 00:43:21,163
+Ulaşıp, açıp, içerisindeki bilgileri Buffered Reader üzerinden line line okuma yapabileceğiniz bir yapı.
+
+165
+00:43:21,963 --> 00:43:29,364
+Bu noktada zaten alıştığınız bir okuma yazma yapısı Android'de de karşınıza geliyor.
+
+166
+00:43:31,503 --> 00:43:33,324
+Burada tabii...
+
+167
+00:43:33,780 --> 00:43:57,640
+Başka operasyonlar da yapabiliyorsunuz. İşte temporary file nasıl yaratırsınız? Cache file nasıl üretirsiniz? Burada çeşitli yaklaşımları görüyorsunuz. Farklı metodolojiler var. Recycler ve write temp file de kullanabilirsiniz. File descriptörü üzerinden ya da bir tane cache file yaratıp.
+
+168
+00:43:57,903 --> 00:44:08,943
+File Descriptor üzerinden ilgili dosyanın, cache dosyasının ismini verip, getCacheTir parametresi üzerinden dosyanın yaratılmasını sağlayabilirsiniz.
+
+169
+00:44:09,684 --> 00:44:17,684
+CacheFile.Delayed ile dosyayı silebiliyorsunuz ya da contextDelayedFile deyip parametre olarak cacheFileName'i gönderebiliyorsunuz.
+
+170
+00:44:17,743 --> 00:44:23,663
+Bunlar temel cache dosyaları üzerinde operasyonları yürütmenizi sağlıyor.
+
+171
+00:44:24,115 --> 00:44:29,496
+Dosya bulunduğunuz Director'daki dosyanın listesini alabiliyorsunuz.
+
+172
+00:44:29,536 --> 00:44:31,376
+Context.file list üzerinden.
+
+173
+00:44:32,056 --> 00:44:34,996
+Yine bunlar sıklıkla yaptığınız işlemler.
+
+174
+00:44:36,820 --> 00:44:50,200
+Burada directory, operationları görüyorsunuz. GetFiles'tir ve GetCache'tir gördüğünüz biraz önce konuştuğumuz genellikle dosyaların boyutları ile ilgili de bilgi veriyor.
+
+175
+00:44:50,200 --> 00:45:01,200
+Örneğin burada genelde 1 megabyte civarında bir dosya boyutundan bahsediyoruz GetCache'tir ile çalıştığımızda.
+
+176
+00:45:04,052 --> 00:45:16,851
+Yine get, dir üzerinden directory yaratma şansına sahipsiniz. Bu da diğer gerçekleştirebileceğiniz bir başka metot.
+
+177
+00:45:19,092 --> 00:45:25,971
+Burada External Storage volümların birden fazla olabileceği yine vurgu yapan bir kod parçası var.
+
+178
+00:45:27,152 --> 00:45:36,612
+Internal Storage'tan sonra Internal kısımda yer alan bir External Storage ve ekstra bir fiziksel SD kartınız olabilir.
+
+179
+00:45:45,248 --> 00:46:04,507
+Volümü temsil eden External Storage Volumes 0 indisi üzerinden çalışmanız öneriliyor. Bu bölgenin en azından telefonun içerisindeki bir konumda yer alma olasılığı yüksek olduğu için buraya konumlandırmanız öneriliyor.
+
+180
+00:46:12,179 --> 00:46:20,299
+İçeride telefon üzerinde fiziksel olarak sökülemeyecek bir parça üzerinde konumlanması çok daha sizin açınızdan avantajlı olabilir.
+
+181
+00:46:20,299 --> 00:46:30,000
+Yine external alanda cache file'i yaratabiliyorsunuz. Sadece internal alanda değil, external alanda da bunu yaratma şansınız var.
+
+182
+00:46:39,344 --> 00:47:04,003
+Bu noktada bir kod parçası var.
+
+183
+00:47:04,532 --> 00:47:14,572
+Aşağıda yer alan o kod parçasının ne yaptığı konusunda bir yorum yapmak isteyen olur mu bir kontrol ederseniz gözünüzde.
+
+184
+00:47:44,467 --> 00:47:51,527
+Bir yorum yapmak isteyen olur mu? Kot parçasının ne yaptığı konusunda. Aslında ipuçları var kod üzerinde.
+
+185
+00:47:52,248 --> 00:47:55,208
+Boş hafızaya bakıyor. Gerekli hafızaya bulanmazsa başka bir yere mi yönlendiriyor?
+
+186
+00:47:55,860 --> 00:48:11,099
+Evet, burada 10 MB'lık bir alan olup olmadığını kontrol ediyor ve ona istinaden eğer böyle bir alan yok ise bununla ilgili yapılması gereken işlemlerin alanını açıyor.
+
+187
+00:48:11,099 --> 00:48:18,920
+Bu kontrolü yapmanız şu yüzden önemli. Bazı durumlarda indirdiğiniz dosyanızın boyutu büyük olabilir.
+
+188
+00:48:19,423 --> 00:48:37,084
+İndirmek istediğiniz dosyanın boyutu ya da üzerinde çalışacağınız dosyanın boyutu. Storage Manager üzerinden sizin internal storage'taki alanınızın belki indirilen son uygulama olarak çok az bir alan kalmıştır. Bunun kontrol edilmesi gerekiyor.
+
+189
+00:48:37,084 --> 00:48:44,084
+Bu nedenle sadece dosya açmak, silmek önemli değil. Aynı zamanda mevcut durumu da...
+
+190
+00:48:46,003 --> 00:48:50,423
+Eğer bir hata oluşmasını istemiyorsanız kontrol etmeniz sizden bekleniyor.
+
+191
+00:48:50,923 --> 00:49:02,304
+Bu kod parçalarını da kendi yapacağınız işlerden bağımsız olarak mutlaka daha önce nasıl bir uygulama arıyoruz, bir iş yaptırmak istiyoruz, o var mı diye bakıyorduk.
+
+192
+00:49:02,304 --> 00:49:09,824
+Bunun içine ekstra kod koyuyorduk. Burada da bununla ilgili bir benlek kontrolü yapılması tavsiye ediliyor.
+
+193
+00:49:14,068 --> 00:49:24,308
+Evet, şimdi buraya geçeceğiz ama saat 14.44 oldu. Bir ara verelim 14.55'e kadar. 14.55'de kaldığımız yerden devam edelim.
+
+194
+01:01:59,860 --> 01:02:01,400
+Evet arkadaşlar, yeniden merhaba.
+
+195
+01:02:03,579 --> 01:02:05,960
+Bir iki dakika gecikmeyene geldim, kusura bakmayın lütfen.
+
+196
+01:02:06,980 --> 01:02:09,019
+Şimdi kaldığımız yerden devam edelim.
+
+197
+01:02:12,788 --> 01:02:19,508
+Öncelikle, Intent, Nusturge ile ilgili çokça aslında kod parçasını konuştuk.
+
+198
+01:02:19,568 --> 01:02:22,976
+Extent, Nusturge'a yazmak istediğiniz zaman...
+
+199
+01:02:22,976 --> 01:02:46,856
+Özellikle ilgili izinleri almanız gerektiğini daha önce de hatırlatmıştık. Bu noktada okuma ve yazma yönündeki izinlerin genellikle ikisinin de alınması tavsiye ediliyor ama her zaman External Storage'a yazma söz konusu olmayabiliyor. Oradaki ortak dosyalara erişim söz konusu olabiliyor. O zaman Read External Storage iznini talep etmek yeterli olabiliyor.
+
+200
+01:02:47,507 --> 01:03:00,407
+Çünkü okunma yönünde sadece izin talep etmekle yazma yönünde de izin talep etmek aslında biraz daha karşı tarafı rahatsız edici, şüphelendirici bir durumda oluşturabilir.
+
+201
+01:03:00,943 --> 01:03:19,643
+Mümkün olduğunca ihtiyaç duyduğunuz izinlerin ötesinde bir izin. Nasıl olsa hani ihtiyaç olur diye izin istemek değil, gerçekten kullanılacaksa ya da manifeste yazmak yerine runtime sırasında o iznin talep edilmesi çok daha mantıklı olabilir ihtiyaç olması durumunda.
+
+202
+01:03:27,092 --> 01:03:34,032
+Şimdi tabii external storage'ın var olup olmadığının kontrolü de yapılması gerekiyor.
+
+203
+01:03:34,612 --> 01:03:42,028
+Buradaki kod parçasına baktığınızda environment'dan get external storage state'den bilgiyi alıyorsunuz ve işte...
+
+204
+01:03:42,612 --> 01:03:48,972
+Gerçekten bir external storage olup olmadığını kontrol edip bu bilgiyi geri döndürüyorsunuz.
+
+205
+01:03:49,112 --> 01:03:56,892
+Ekstra olarak read modunda olup olmadığını, write modunda olup olmadığını da kontrol etmeniz sizden bekleniyor.
+
+206
+01:03:57,552 --> 01:03:59,892
+Bugün örnek kodlarda da göreceksiniz.
+
+207
+01:03:59,892 --> 01:04:09,771
+İşte environment üzerinden get external storage public directory'e ulaşıp burada işlemlerinizi özellikle işte albüm...
+
+208
+01:04:09,811 --> 01:04:16,811
+Galeri işlemlerinizi buradaki ortak alan üzerinden yürütebiliyorsunuz.
+
+209
+01:04:17,411 --> 01:04:27,311
+Get External Files'dir ile de aslında application'ın private picture'larını saklamasını sağlayabiliyorsunuz.
+
+210
+01:04:27,311 --> 01:04:33,971
+Sol ve sağ taraftaki kodların aslında temel farkı bu. Birinde ortak bir alana erişimden bahsediyoruz.
+
+211
+01:04:34,431 --> 01:04:46,371
+Diğer tarafta ise uygulamaya özel bir alana erişimden bahsediyoruz. Birinde Get External Storage Public Directory, diğerinde Get External Filesdir komutu var.
+
+212
+01:04:46,835 --> 01:05:02,255
+Ve external storage içinde bu iki ayrımı dikkat ederek aslında app spesifik bir alan yaratmak ya da ortak bir alanı kullanmak gibi ihtiyaçlarınıza bağlı olarak tercih edebiliyorsunuz.
+
+213
+01:05:07,219 --> 01:05:33,139
+Burada hatırlatılması gereken şeylerden biri GetFreeSpace ve GetTotalSpace metotlarını kullanarak bilgi alabileceğiniz, onun dışında ExternalStorage'a GetEksternalFilesdir ile yaratmış olduğunuz dosyalarınızın uygulama kaldırıldığında mutlaka silinecek olması.
+
+214
+01:05:33,139 --> 01:05:34,819
+Bunu da tekrar hatırlatmış olalım.
+
+215
+01:06:01,300 --> 01:06:09,164
+Özellikle videoya erişmek, fotoğraflara erişmek ya da...
+
+216
+01:06:18,864 --> 01:06:29,864
+MediaStore API'ye bakabilirsiniz. Yine keza PDF ve benzeri dosyalar için de kullanabileceğiniz yapılar Storage Access Framework üzerinden size sunuluyor.
+
+217
+01:06:29,864 --> 01:06:37,184
+Bir de datasetler var. Blob Store Manager üzerinden artık özellikle makine öğrenmesi noktasında.
+
+218
+01:06:37,204 --> 01:06:54,324
+Bu da Android gelişmelere ayak uydurarak 11'den itibaren size uygulamanızın ya da başka uygulamaların kullanabileceği veri setlerini Blobstore Manager üzerinden kullanıma açıyor.
+
+219
+01:06:54,944 --> 01:06:56,184
+Bu da değerli bir bilgi.
+
+220
+01:06:56,184 --> 01:06:58,184
+Çünkü biliyorsunuz...
+
+221
+01:06:58,815 --> 01:07:09,436
+Artık telefonlarda özellikle Federated Learning dediğimiz kavram geldikten sonra bazı öğrenme yetenekleri ortaya koyabiliyorlar.
+
+222
+01:07:09,824 --> 01:07:19,543
+Dağıtık yapıda ya da kendi üzerinde çok büyük veriler kullanmadan bu veri setlerinin telefon üzerine konumlandırabiliyorsunuz.
+
+223
+01:07:19,923 --> 01:07:30,563
+Bu da bir başka API'nin kullanımını gündeme getiriyor ve bu da Store Manager hayatımızın içerisinde yer almaya başlıyor Android 11 ile birlikte.
+
+224
+01:07:33,023 --> 01:07:33,784
+Gelelim.
+
+225
+01:07:34,356 --> 01:07:46,416
+SharePreferences API'ya burada iki tane metot var. Birden fazla SharePreferences dosyası yaratmak istiyorsanız o zaman GetSharePreferences metodunu kullanıyorsunuz.
+
+226
+01:07:46,804 --> 01:07:56,324
+Ya da tek bir preferences dosyası, aktivitenize özel tek bir tane yaratacaksanız o zaman get preferences kullanıyorsunuz.
+
+227
+01:07:56,824 --> 01:08:10,824
+Get shared preferences ise tabii bir tane daha fazla parametre göndermeniz gerekiyor ki hangi dosyayı yarattınız, hangi shared preferences dosyasını yarattınız bu bilgiyi paylaşmanız sizden bekleniyor.
+
+228
+01:08:14,771 --> 01:08:32,572
+Hatırlarsanız, State, Instance, State vardı. Ondan farkı şey, Preferences'ın session açık olduğu sürece, user session'ın açık olduğu sürece, bundle objesi size verileri saklamayı taahhüt ediyordu.
+
+229
+01:08:36,275 --> 01:08:49,975
+Burada uygulamanızın kill edilmesi, restart etmesi, device'in reboot olması durumunda bilgilerinizin kaldığı yerden devam edebilmesi için shared preferences yapısı kullanmanız öneriliyor ve bekleniyor.
+
+230
+01:08:49,975 --> 01:09:03,915
+Saved Instance State burada bilgileri kaybediyor. O nedenle özellikle gerçekten kalıcı olmasını düşündüğünüz bilgileriniz varsa, session'a bağlı değilseniz shared preferences biçilmiş kaftan bunun için.
+
+231
+01:09:04,275 --> 01:09:05,835
+Bu bilgileri saklamak için.
+
+232
+01:09:06,835 --> 01:09:12,275
+Daha çok oyun, kullanıcı bazında...
+
+233
+01:09:14,131 --> 01:09:24,492
+Kullanıcı tercihleri, kullanıcı bilgileri, oyun statüsü gibi bilgilerin saklandığı örnekler Shared Preferences tarafında sıkça var.
+
+234
+01:09:25,131 --> 01:09:34,131
+Öte yandan State Instance tarafına baktığınız zaman ağırlıklı olarak o andaki aktivitenin current state bilgisini tutmaya yönelik bir...
+
+235
+01:09:36,148 --> 01:09:59,288
+Yapı oluşturulduğunu görüyorsunuz. Bu doğrultuda Shared Preferences'ı aslında Saved Instance State'den ayıran en önemli fark. Kalıcı basit bilgileri saklamak için size sunulmuş bir XML dosya formatı ve KeyValue Mantı da çok basit olduğu için çok hızlı bir erişim.
+
+236
+01:10:00,000 --> 01:10:01,720
+Mümkün oluyor bilgilere.
+
+237
+01:10:02,239 --> 01:10:07,319
+Dosyaya erişmek istediğiniz zaman işte koyduğunuz object file'ına erişmesi biraz daha zaman alıyor.
+
+238
+01:10:08,700 --> 01:10:15,079
+Dosyanın okunması, açılması, oradaki input reader'lar, stream yapıları vs.
+
+239
+01:10:15,640 --> 01:10:19,819
+Bu işin biraz daha uzun sürede verinin getirilmesini sağ oluyor.
+
+240
+01:10:19,899 --> 01:10:28,000
+Çok güçlü cihazlarda belki bunu fark etmiyorsunuz ama temel olarak aslında en büyük farklılıklar bu noktada performans olarak karşınıza çıkıyor.
+
+241
+01:10:28,000 --> 01:10:30,239
+Özellikle eski tip device'lerde.
+
+242
+01:10:31,979 --> 01:10:36,960
+Okuma ve yazma için Shared Preferences'da nasıl bir yapıdan bahsediyoruz?
+
+243
+01:10:37,039 --> 01:10:38,819
+Bir kere konteks bilgisini alıyorsunuz.
+
+244
+01:10:39,180 --> 01:10:42,079
+Bir Shared Preferences tipinde bir obje tanımlıyorsunuz.
+
+245
+01:10:42,079 --> 01:10:51,079
+Sonra, yaratmak istediğiniz Shared Preferences dosyasının ilk parametresinde...
+
+246
+01:10:52,372 --> 01:10:59,992
+Hangi dosya ismi kullanmak istediğinizi gönderiyorsunuz. Burada string.examl'den alınan bir dosya ismi var. Bunu kullanıcıdan da alabilirsiniz.
+
+247
+01:11:00,872 --> 01:11:03,452
+Ve bunu private modunda açıyorsunuz.
+
+248
+01:11:04,012 --> 01:11:15,932
+Alttaki koda baktığınızda ise temel farkı yukarıda iki parametre gönderdiğiniz dosya isminde gönderdiğiniz yapıda getPreferences'ta tek bir dosya açıldığı için bir dosya ismi göndermenize gerek kalmıyor.
+
+249
+01:11:16,435 --> 01:11:25,476
+Shared Preferences aktivitesini, daha doğrusu objesini yarattıktan sonra bir editör yaratıyorsunuz o objeye bağlı.
+
+250
+01:11:25,476 --> 01:11:44,435
+Shared Preferences.editor deyip edit metoduyla ve bir editör yarattıktan sonra o editör vasıtasıyla aslında siz artık bilgilerinizi yazabileceğiniz bir yapı oluşturmuş oluyorsunuz ama bu yazdığınız bilgiler...
+
+251
+01:11:44,435 --> 01:11:55,996
+Bellek alanında konumlanıyor. Bu bilgilerin secondary storage'a yazılması için commit ya da apply metodunu çağırmanız gerekiyor.
+
+252
+01:11:57,515 --> 01:12:05,355
+İkinci adımdaki putint ile ilerleyelim. Shared Preferences Edit'i metodunu çağırdınız. Sonra editöre...
+
+253
+01:12:05,427 --> 01:12:09,427
+Hangi bilgileri yüklemek istediğinizi belirtiyorsunuz.
+
+254
+01:12:09,608 --> 01:12:13,307
+İşte key value mantığıyla key'i ve values'unu yüklüyorsunuz.
+
+255
+01:12:13,907 --> 01:12:24,467
+Buraya editöre birden fazla editor put int, editor put string, editor put boolean ya da aynı tipten veri yükleyebilirsiniz.
+
+256
+01:12:25,247 --> 01:12:29,868
+Sonra böyle 5-6 tane diyelim ki key value pair'ını editöre yazdınız.
+
+257
+01:12:32,435 --> 01:12:43,855
+Veya editöre apply diyebilirsiniz demiştim. Aradaki fark nedir? Size sorsam bir tahminde bulursanız. Apply demekle commit demek arasında ne tür bir fark olabilir?
+
+258
+01:12:55,060 --> 01:12:57,319
+Bir tahmin rüca etsem.
+
+259
+01:13:05,971 --> 01:13:28,971
+Evet [öğrenci] teşekkür ederim. Aynen senin söylediğin gibi biri senkron, diğeri asenkron yazma yapıyor. Bu ne demek? Siz apply dediğiniz zaman asenkron bir yazmadan bahsediyoruz ve bu şu demek. Siz editöre yani berlek alanında bu bilgiyi yazıyorsunuz ama file'a bunun ne zaman yazılacağı bilgisi yani...
+
+260
+01:13:29,231 --> 01:13:34,752
+30 milisaniye sonra mı, 1 saniye sonra mı? Bu belirsiz. O anda sistemin uygunluğuna bağlı.
+
+261
+01:13:35,391 --> 01:13:44,231
+Tabii ki çok geç bir süreden bahsetmiyoruz ama burada fazlaca bir bilginin yazılmasından bahsediyorsak o anda...
+
+262
+01:13:44,627 --> 01:13:53,788
+Bu kullanıcının UI ile olan ilişkisini de aslında bölmemek adına bu işi asenkron yaptırmak genellikle daha akıllıca olduğu söyleniyor.
+
+263
+01:13:54,247 --> 01:14:00,847
+Ve siz sisteme diyorsunuz ki sen bunları belleğe yaz, uygun bir zamanda da secondary storage'a yazarsın diyorsunuz.
+
+264
+01:14:00,907 --> 01:14:03,907
+Apply'ı kullandığınızda. Commit'te ise senkron bir yazma söz konusu.
+
+265
+01:14:03,907 --> 01:14:12,108
+Bir atomik yapıdan bahsediyoruz. İşte belleğe yazıldıktan hemen sonra arkasından bir şeye yazılması gerekiyor.
+
+266
+01:14:14,163 --> 01:14:20,103
+Secondary Storage'a yazılması gerekiyor. Burada kesintisiz bir yazmadan bahsediyoruz. İkisinin arasındaki temel farklılık bu.
+
+267
+01:14:20,623 --> 01:14:28,304
+Aşağıdaki kod parçasına geçtiğiniz zaman ise orada bir shared preferences'tan değer okuma kodu görüyorsunuz.
+
+268
+01:14:28,683 --> 01:14:34,163
+Yine bir shared preferences objesi yaratılıyor. Obje yaratıldıktan sonra bu sefer editor yaratmıyorsunuz.
+
+269
+01:14:42,163 --> 01:15:01,163
+İşte bilginin hangi key aracılığıyla alınacağını söylüyorsunuz. Default value kısmında. Daha doğrusu özür diliyorum bunu yanlış söyledim size. Default value kısmında bir değer okuyamazsanız hangi...
+
+270
+01:15:02,032 --> 01:15:18,792
+Değerin kullanılacağını, yani null gelmesi durumunda default value'ya integer bilgisi, yani XML üzerinden bilgiyi çekerek diyorsunuz ki mesela burası eğer share preferences'tan null geldi, o zaman default value olarak sıfırı kullanıyorsunuz.
+
+271
+01:15:18,792 --> 01:15:29,792
+Eğer işte high score bilgisi o anda oyuncunun aktivite sonlandığında skoru 80 ise geri döndüğünde yine 80 üzerinden devam edebilmesi için get...
+
+272
+01:15:30,032 --> 01:15:49,492
+ActInt ile KeyValue ile oradan çekiyorsunuz. 80'den devam ediyor oyuncu. Oyuncu ilk defa oyuna girdiyse o zaman SharedBrefg's'ın stand bir değer gelmeyeceği için otomatik olarak DefaultValue kullanılıyor ki DefaultValue'ya siz ne atadıysanız o değeri oyuncunun hanesinde görüyorsunuz.
+
+273
+01:15:49,492 --> 01:15:51,971
+Burada şunu unutmamak gerekiyor.
+
+274
+01:15:54,100 --> 01:16:02,659
+Bir Shared Preferences'a koyduğunuz veriler var ve bunu aktiviteniz çalıştığında her seferinde Shared Preferences'tan okumanız gerekiyor.
+
+275
+01:16:03,180 --> 01:16:06,899
+Tabii Shared Preferences'ta o sırada ilk defa açıldığı için bir veri olmayabilir.
+
+276
+01:16:07,780 --> 01:16:12,300
+Bu verinin olmama durumunda kullanılacak default değerleri de sizin belirlemeniz gerekiyor.
+
+277
+01:16:12,380 --> 01:16:13,440
+Buradaki kritik nokta bu.
+
+278
+01:16:14,380 --> 01:16:20,600
+Buna dikkat ederseniz o zaman herhangi bir hatayla karşılaşmazsınız.
+
+279
+01:16:22,292 --> 01:16:35,492
+Şimdi Shared Preferences okuma yazma aslında kolay. Şurada bir slide'ın yerini değiştireyim. Bu kısmı daha önce konuşalım. Burayı tamamlayalım. Diğer slide'a geçelim. Kaymış diğer slide çünkü.
+
+280
+01:16:36,212 --> 01:16:42,632
+Burada Shared Preferences'de kullanılabilecek metotları görüyorsunuz. İşte getint gibi get float, getlong.
+
+281
+01:16:43,024 --> 01:16:46,184
+GetString metotları var.
+
+282
+01:16:46,504 --> 01:16:51,184
+Onun dışında bütün değerlerin çekildiği GetAll gibi metotlar var.
+
+283
+01:16:51,324 --> 01:16:55,324
+Edit var. PutInt, PutString, PutLong bunlar da var.
+
+284
+01:16:55,744 --> 01:17:00,384
+Bunlar temel kullanılan SharedPreferences metotları.
+
+285
+01:17:00,884 --> 01:17:02,944
+Preferences Library biraz daha farklı.
+
+286
+01:17:03,664 --> 01:17:09,944
+Preferences Library'e de bakarsanız yeni Android'in sunduğu bir yapı Jetpack ile birlikte.
+
+287
+01:17:11,024 --> 01:17:15,984
+Birebir şey, preferences'ın aynısını aslında size hizmet olarak sunuyor.
+
+288
+01:17:16,104 --> 01:17:24,204
+Sadece daha önce bahsetmiştim, onActivityResult'da Android zaman içerisinde yeni yapılar sunuyor.
+
+289
+01:17:24,804 --> 01:17:27,864
+Bu yapılar eski yapıların yerini alıyor yavaş yavaş.
+
+290
+01:17:28,304 --> 01:17:49,344
+Bazı API'lerin deprecated olduğunu görürsünüz ve size artık bunu kullandırtır ama belli bir versiyondan sonra ona izin vermez. Bu noktada da önümüzdeki yıllarda muhtemelen Preferences API daha sık kullanılıyor, olacak gibi gözüküyor. Buna da bir bakmanızda fayda var.
+
+291
+01:17:52,744 --> 01:17:55,523
+Preferences'dan başka bir yapıya geçeceğiz sorusu olan var mı?
+
+292
+01:18:00,148 --> 01:18:10,148
+Peki, şimdi biz daha önce aslında bunu konuştuk fakat veri paylaşımıyla ilgili olduğu için buraya da koyma gereği hissettim.
+
+293
+01:18:10,887 --> 01:18:17,247
+Şimdi biz veriyi kalıcı olarak saklıyoruz ama veri paylaşımını önemsiyoruz.
+
+294
+01:18:17,907 --> 01:18:24,148
+Veri paylaşımı ne demek? Bir veriye ihtiyaç duyduğumuzda o verinin networkten...
+
+295
+01:18:24,819 --> 01:18:37,099
+Bir JSON objesiyle olabilir. Bir dosyadan, bir shared preferences dosyasından, bir database'den bu bilgilerin alınabilmesi ya da oraya saklanabilmesi gerekiyor.
+
+296
+01:18:37,099 --> 01:18:43,439
+Tabii bir de uygulamalar arası veri akışını sağlamak gerekiyor.
+
+297
+01:18:52,916 --> 01:18:58,476
+Diğer tarafa, yani nedir? Diğer aktiviteyi göndermekten bahsetmiştik.
+
+298
+01:18:58,796 --> 01:19:04,775
+İşte burada bir Text Content bilgisinin saklanmasına yönelik iki tane örnek görüyorsunuz.
+
+299
+01:19:04,775 --> 01:19:19,275
+Aynı zamanda sadece Text Bilgisi değil, Binary Content'i de ilgili koyacağınız, işte burada URI2Image isimli resim dosyasıyla da bunu yapabiliyorsunuz.
+
+300
+01:19:20,916 --> 01:19:30,916
+Activity'ye gönderilirken, ikinci ve üçüncü seçeneklerde CreateChooser'la kullanıcıya, daha doğrusu işletim sistemine şu söyleniyor.
+
+301
+01:19:31,695 --> 01:19:44,496
+Bak ben bu bilgiyi gönderdim, bunu açmak istiyorum. Bana bununla ilgili bunu açabileceğim bir ya da bunu gönderebilecek bir, bu formatı gönderilebilecek bir uygulama var mı?
+
+302
+01:19:44,836 --> 01:19:48,216
+Bunun seçeneklerini getir diyoruz CreateChooser'ı kullanarak.
+
+303
+01:19:51,475 --> 01:20:03,755
+Keza burada birden fazla kontenti paylaşmak istediğinizde bunu bir array liste, URI formatındaki ekleyip bunu karşı tarafa gönderebiliyorsunuz.
+
+304
+01:20:03,815 --> 01:20:11,415
+Peki, birden fazla veri paylaşılacaksa bunlar aynı tipte de olabilir, farklı tiplerde de olabilir.
+
+305
+01:20:15,283 --> 01:20:21,363
+Mümkün hale getiren, kolaylaştıran yapılar nelerdir Android işletim sisteminde?
+
+306
+01:20:22,583 --> 01:20:34,923
+Birden fazla tipteki verileri birlikte saklayarak karşı tarafa verimli bir şekilde karşı uygulamaya ya da karşı aktiviteye göndermenin yolu nedir?
+
+307
+01:20:38,996 --> 01:20:42,435
+Burada da onunla ilgili aslında küçük bir ipucu var.
+
+308
+01:20:54,163 --> 01:20:56,763
+Aslında bildiğiniz bir tanesi, bildiğiniz bir yapı.
+
+309
+01:20:58,243 --> 01:21:01,724
+Serializable interfaysi. Bir diğeri de parser label.
+
+310
+01:21:02,579 --> 01:21:18,159
+Serializable aslında Hicaban'ın sunduğu bir interface ve verilerin bir obje formatında, obje mantığında saklanmasını mümkün hale ve birlikte hareket etmesini mümkün hale getiren bir yapı.
+
+311
+01:21:25,043 --> 01:21:43,503
+Çeşitli koşullarda çalışan Serializable'a göre biraz daha kompleks bir yapı ama size performans artışı sağladığı için çoğunlukla verilerin bir bütün halinde taşınması için bu yapılar kullanılarak taşınması öneriliyor işletim sistemi tarafından.
+
+312
+01:21:48,627 --> 01:22:01,547
+Bu noktada son olarak uygulamaların ilgili verileri gönderirken biraz önce işte bu texter ile...
+
+313
+01:22:01,844 --> 01:22:05,304
+Verileri, Intent'e yüklenmesi gerektiğinden bahsetmiştik.
+
+314
+01:22:05,884 --> 01:22:11,764
+Diğer uygulamalardan veri alırken de, yine geçtiğimiz haftalarda gördüğümüz ya da aktivitelerden,
+
+315
+01:22:11,764 --> 01:22:17,884
+GetIntent ile ilgili action'ın ne olduğu, ilgili tipin ne olduğu bilgisini alıp,
+
+316
+01:22:17,984 --> 01:22:28,184
+onunla ilgili yapılabilecek olan işlemlerin tipine göre ayrıştırılması,
+
+317
+01:22:29,652 --> 01:22:37,771
+İşinin tamamlanması bekleniyor. Bunu bu konsept altında aslında daha önce gördüğümüz için çok detayına girmeye gerek yok.
+
+318
+01:22:38,672 --> 01:22:44,192
+Gelelim Serializable ve Parcelable'a. Serializable, Java Interface'inin bir standardı dedik.
+
+319
+01:22:44,952 --> 01:22:48,471
+Daha yavaş çalışan ve daha fazla garbage üreten bir.
+
+320
+01:22:48,847 --> 01:23:10,507
+Yapı ama aynı zamanda basit bir yapı. Parcelable ise Android SDK'nın bir parçası. Android işletim sistemi tarafından sunuluyor. Daha kompleks bir yapı. Daha az garbaç üretiyor. Daha hızlı çalışıyor genel olarak ve custom bir koda ihtiyaç duyuyor. Daha önce Parcelable kullanan var mı?
+
+321
+01:23:18,899 --> 01:23:19,260
+Peki.
+
+322
+01:23:21,299 --> 01:23:23,180
+O zaman devam edelim.
+
+323
+01:23:24,559 --> 01:23:38,539
+Burada bir parse label yapı oluşturabilmeniz için bir sınıf oluşturulmuş details isimli, name, age ve form bilgilerinin, constructorlarını ve getter ve setterlarını oluşturuyorsunuz.
+
+324
+01:23:41,739 --> 01:23:42,579
+Arkasından
+
+325
+01:23:43,155 --> 01:23:49,115
+Diyorsunuz ki bu details nıfım parse label'ı interfersine implement etsin.
+
+326
+01:23:49,844 --> 01:24:01,583
+Bunun için öncelikle Constructor'ları yazıyorsunuz. Constructor yazdıktan sonra her bir parsel bilgisini alan bir Constructor yazıyorsunuz.
+
+327
+01:24:01,583 --> 01:24:11,144
+Bir tane Creator'a ihtiyacınız var. Bu Creator'ınız aslında her bir parsel için bir bilgi üretmenizi sağlıyor.
+
+328
+01:24:11,764 --> 01:24:17,844
+Aslında geçtiğimiz hafta RecyclerView'da itemların yaratılması gibi view holder'lardan bahsediyoruz.
+
+329
+01:24:17,844 --> 01:24:32,844
+İnflate etme işleminden bahsediyoruz. Bu noktada Details sınıfına ait olarak bir array yapısı, new array isimli metot ile oluşturuluyor ve burada...
+
+330
+01:24:33,716 --> 01:25:01,716
+Parsellerin sayısının alınması sağlanıyor. Ek olarak WriteToParsel metodu içerisine de herhangi bir parsel içerisinde yer alan buradaki Details'deki tüm attributların yazılma işlemini sağlayan kod parçası yazılarak aslında ParsNable yapısı interfejsi implement ediliyor ve siz artık Details sınıfından ürettiğiniz...
+
+331
+01:25:01,716 --> 01:25:14,716
+Bu ücretleri parseller halinde yazabiliyorsunuz. Bunun avantajı nedir? En tane bilgiyi karşı tarafa aktaracaksanız ki bu en sayısı binler mertebesinin geçtiği andan itibaren...
+
+332
+01:25:15,444 --> 01:25:27,904
+Performance Serializable'a göre artıyor çok ciddi oranda. Daha düşük boyuttaki veriler için yapılan araştırmalar çok büyük farklılıklar olmadığını söylüyor.
+
+333
+01:25:28,744 --> 01:25:39,764
+Tabii ki bu noktada cihazların hızlanmış olmasının çok önemli bir farkı var. Düşük konfigürasyon cihazda çalışıyorsanız parse label'lar daha avantajlı.
+
+334
+01:25:39,764 --> 01:25:43,424
+Ama yüksek konfigürasyonlu cihazlar da daha büyük boyutta.
+
+335
+01:25:43,444 --> 01:25:53,004
+İstediğindeki verilerin toplu halde yazılması ya da okunması durumunda ya da transfer edilmesi durumunda bu farkı daha iyi görebiliyorsunuz.
+
+336
+01:25:53,123 --> 01:25:57,152
+İşte burada Parsley'mın aktarılmasına yönelik bir...
+
+337
+01:25:57,152 --> 01:26:07,652
+Bu parçası var. Biraz önce Parcelable'ı implement ettik bu interfaysi. Şimdi burada da bu bilgileri aldınız ve karşı tarafa aktarmak istiyorsunuz.
+
+338
+01:26:07,652 --> 01:26:18,752
+Aktarırken, Intent'inizin içerisine Put Extra kısmında, burada New Details ile yaratmış olduğunuz parsellerinizi yükleyip,
+
+339
+01:26:18,960 --> 01:26:24,960
+Karşı tarafa bu parsellerin aktarılmasını sağlayabiliyorsunuz.
+
+340
+01:26:25,440 --> 01:26:29,060
+Aslında çok da zor olmayan bir yapı.
+
+341
+01:26:29,399 --> 01:26:34,200
+Sadece görece sayı lazımına göre biraz daha kompleks bir yapı.
+
+342
+01:26:34,804 --> 01:26:54,404
+Burada tabii bir de karşı tarafa aktardığınız karşı tarafta bu parsellerin alınma durumu var. Bunu da biraz önceki kop parçasında 2-3 saat önce görmüştünüz. GetParsePableExtra ile Student'e ait olan bilgileri aslında intent üzerinden almış oluyorsunuz.
+
+343
+01:27:03,028 --> 01:27:13,427
+Değişkenlere atayarak başka bir aktiviteden gelen, parselle gelen bilgiyi bu aktivitedeki ilgili konumlara yerleştirmiş oluyorsunuz.
+
+344
+01:27:14,228 --> 01:27:20,028
+Serializable'a baktığınız zaman burada yine bir kişiye ait...
+
+345
+01:27:20,659 --> 01:27:30,579
+Bir sınıf var. Java, iOS'u üzerinden import edilmiş. Interface olarak Serializable implement edilmiş. Yine Getter ve Setter'lar var.
+
+346
+01:27:32,819 --> 01:27:37,059
+Başka özel bir yapı tanımlamadık. Creator vesaire gibi.
+
+347
+01:27:38,059 --> 01:27:38,659
+Burada...
+
+348
+01:27:41,011 --> 01:27:45,411
+İlgili kişiyi önce yaratıyoruz NewPerson'la.
+
+349
+01:27:46,031 --> 01:27:48,751
+İşte name'ini, adresini, number'ını verdik diyelim.
+
+350
+01:27:49,311 --> 01:27:52,871
+Bunu hard kod olarak vermiş burada ama kullanıcıdan form olarak aldık diyelim.
+
+351
+01:27:52,871 --> 01:28:03,152
+Sonra işte burada objenin yaratılması ve object input stream kullanılarak yazılması.
+
+352
+01:28:08,368 --> 01:28:12,048
+Yani karşılıklı okunması ve yazılması işlerini gerçekleştiriyorsunuz.
+
+353
+01:28:12,608 --> 01:28:17,488
+Burada yapı çok daha basit diğer mekanizmaya baktığınızda.
+
+354
+01:28:17,587 --> 01:28:23,347
+Çünkü ekstra bir seri, seri veriz bu interfezinde ekstra bir şeyimplement etmenize gerek kalmıyor.
+
+355
+01:28:23,347 --> 01:28:32,408
+Herkesi de Android tarafında uygulamalar arasında intentler aracılığıyla veri aktarımında ve dosyaya yazım için kullanılabiliyor.
+
+356
+01:28:33,128 --> 01:28:36,368
+Bunlar da yine veri saklama noktasında karşımıza çıkan.
+
+357
+01:28:36,368 --> 01:28:38,108
+seçenekler.
+
+358
+01:28:39,268 --> 01:28:40,688
+Buraya kadar sorusu olan var mı?
+
+359
+01:28:52,500 --> 01:29:13,559
+Peki, o zaman isterseniz sunumumuzu burada noktalayalım. Android Studio'yu açalım. Android Studio tarafında öncelikle bir, şurada ufak bir ayarlama yapayım.
+
+360
+01:29:28,756 --> 01:29:31,756
+İlk dönemler için.
+
+361
+01:29:33,556 --> 01:29:35,056
+Çözdürüm.
+
+362
+01:29:46,452 --> 01:29:47,912
+Tekrarı derleyelim.
+
+363
+01:29:50,051 --> 01:29:54,152
+Kodunu paylaşacağım, aksiyonun ne olduğunu görmenizi istediğim için.
+
+364
+01:29:55,952 --> 01:29:58,112
+Ekran paylaşımımı yapıyorum.
+
+365
+01:30:03,539 --> 01:30:06,260
+Her zamanki uygulamamızdan giriş yapıyoruz.
+
+366
+01:30:14,899 --> 01:30:32,539
+Şimdi burada kamera butonuna tıkladığımda şu an bir neyi çağırmış oldum? Kamera uygulamasının aktivitesini çağırmış oldum. Bir fotoğraf çektim.
+
+367
+01:30:34,379 --> 01:30:40,899
+OK'ye bastıktan sonra bu fotoğrafı ImageView üzerinde gösterdim.
+
+368
+01:30:41,460 --> 01:30:43,620
+Bu kadar basit bir aktiviteden bahsediyorum.
+
+369
+01:30:43,700 --> 01:30:51,460
+Ben hatırlarsanız, geçen hafta size demiştim ki, siz bir uygulama...
+
+370
+01:30:51,796 --> 01:31:09,355
+Yazıyorsunuz şu anda mezun app dediğimiz. Bu uygulamada bir registration formu var. Burada da kullanıcının kendisiyle ilgili bir resim koyması isteniyor. Bu resmi önce çekmesi ve işte bu çekebilmesi için de bir fotoğraf uygulamasına bağlanması gerekiyor.
+
+371
+01:31:09,355 --> 01:31:19,796
+Bu şu anda kodunu göstereceğim yapı bu işi yapıyor. Kamera uygulamasına gidiyor. Butona bastığınızda fotoğraf çekmenizi o uygulama aktivite vasıtasıyla sağlıyor.
+
+372
+01:31:19,796 --> 01:31:29,576
+Sonra çektiğiniz fotoğrafı bu aktiviteye geri döndürüyor ve bu aktivitedeki ImageView'a konumlandırıyor. Yaptığı iş bu kadar basit.
+
+373
+01:31:30,095 --> 01:31:39,655
+İki kod parçası var şu an sizinle paylaşacağım. Bir tanesi sadece aktivitenin buradaki UI komponentine bu çektiğimiz fotoğrafı yerleştirdi.
+
+374
+01:31:40,115 --> 01:31:49,456
+Bir sonraki başka bir örnekte göstereceğim. Hem buraya yerleştirecek hem de dosya kısmına save ediyor olacak.
+
+375
+01:31:50,315 --> 01:31:52,636
+Şimdi bunu kapatıyorum. Kot parçasını açacağım.
+
+376
+01:31:55,376 --> 01:31:56,095
+Share edelim.
+
+377
+01:32:03,475 --> 01:32:05,576
+Görebiliyorsunuz sanırım diye tahmin ediyorum.
+
+378
+01:32:07,515 --> 01:32:08,576
+Şunu şöyle kapatalım.
+
+379
+01:32:12,051 --> 01:32:19,811
+Burada bir kamera isimli bir tane aktivite Java dosyası tanımladım.
+
+380
+01:32:20,931 --> 01:32:24,131
+Benim odaklanmam gereken yerler şu anda.
+
+381
+01:32:24,851 --> 01:32:26,811
+OnCreate metodu bu aktivitenin.
+
+382
+01:32:28,152 --> 01:32:31,411
+Bunun bir setContentView var, Activity.camera isimli.
+
+383
+01:32:33,091 --> 01:32:35,731
+Examinerimiz var, onu şöyle açalım.
+
+384
+01:32:36,351 --> 01:32:37,871
+Burada bir tane textView var.
+
+385
+01:32:38,292 --> 01:32:45,192
+Bir tane ImageView var, bir tane de buton var. Biraz önce gördüğünüz ekrandaki UI komponentler.
+
+386
+01:32:46,452 --> 01:33:00,811
+Tekrar Source Code'a dönüyorum. Önce bu layoutumu ilişkilendirdim. Sonra bu layouttaki ilgili UI komponentleri bu Source Code içerisindeki değişkenlerle ilişkilendirdim.
+
+387
+01:33:00,811 --> 01:33:03,932
+Artık Selected Image ve Kamera butonu üzerinden ilerleyeceğim.
+
+388
+01:33:04,287 --> 01:33:31,127
+Size bahsetmiştim hatırlarsanız, Activity Result beklentiniz varsa, işte onActivityResult metodunu implement ediyorsunuz, işte StartActivityForResult'ı çağırıyorsunuz demiştim. Bu eski versiyon demiştim. Yeni versiyonda ActivityResultLauncher var demiştim. Bugün de bununla ilgili bir örnek sizinle paylaşmış oluyorum. Bir tane ActivityResultLauncher tanımlıyorsunuz.
+
+389
+01:33:32,115 --> 01:33:42,935
+Hatta, neredeydi? Şurada. Bunu değişken olarak da tanımlıyorsunuz. İsmini farklı verebilirsiniz ama tipi Activity Result Launcher.
+
+390
+01:33:43,855 --> 01:33:51,316
+Register for Activity Result diyorsunuz. Bir tane Activity Result kontrakt üzerinden Start Activity for Result metodunu çağırıyorsunuz.
+
+391
+01:33:51,316 --> 01:33:57,636
+Bir de Activity Result Callback isimli bir tane callback parametresi gönderiyorsunuz.
+
+392
+01:34:00,756 --> 01:34:19,756
+Yarattığınız sınıfının bir onActivityResult metodu oluyor. Bu anonymous bir class. Şurada görmüş olduğunuz activity result koldaki. Bu anonymous class'ında bir onActivityResult metodu var. Burada siz artık daha önceki örnekte...
+
+393
+01:34:20,724 --> 01:34:36,884
+Hatırlarsanız, Result'ı alıyordunuz, onu kontrol ediyordunuz, gelen aktiviteden. Burada doğrudan Result.GetResultCode diyorsunuz ve Result.GetData diyorsunuz. Bunlara bakıyorsunuz, ne alıp olmadığına ve okey alıp olmadığına.
+
+394
+01:34:43,923 --> 01:34:56,804
+İlgili Bundle objenize karşı taraftan döndürülen resim ya da burada resimde olduğu için resim, ilgili o gittiğiniz aktivitenin bize döndürdüğü bilgiyi alıyorsunuz.
+
+395
+01:34:57,603 --> 01:35:03,923
+Bundle objesi içerisinden de datayı alıp Bitmap formatına dönüştürüp,
+
+396
+01:35:05,587 --> 01:35:32,788
+Ekranda gördüğünüz o alana basılmasını sağlıyorsunuz. Yani diyorsunuz ki ben bir Activity Result yapısı registre ettim. Bana dönen değer içerisinde bir resim olacağını biliyorum. Bu resmi alıp Bitmap formatında ImageView'uma, şurada görmüş olduğumuz ImageView'uma konumlandırıyorum. SelectedImage, SetImageMap diyerek. Yapılan işlem bu.
+
+397
+01:35:34,292 --> 01:35:42,812
+Şimdi gelelim StartActivityForResult'tan farklı olarak geçtiğimiz haftaki örnekten farklı olarak ne yaptık?
+
+398
+01:35:42,812 --> 01:35:49,892
+Butona tıklandığında SetOnClickListener çağrılacak. OnClickView metoduna gidecek.
+
+399
+01:35:50,612 --> 01:36:09,471
+OnClickView'da Ask Camera Permissions var. Ask Camera Permissions'da ilgili manifest üzerinden kontroller ve eğer bu kontrollerde onay verilmediyse dinamik kontroller yani runtime kontrolleri yapılacak.
+
+400
+01:36:18,036 --> 01:36:28,435
+Buradan ilgili cevap OnRequestPermission results'dan alınacak ve onun cevabına bağlı olarak eğer sorunsuz bir şekilde AskPermission'dan yolumuza devam ettiysek,
+
+401
+01:36:30,315 --> 01:36:41,755
+ilgili intent önce oluşturulacak, karşı tarafa göndermek için ilgili aktivite var mı diye ResolveActivity üzerinden GetPackageManager'dan bilgi alınacak.
+
+402
+01:36:43,155 --> 01:36:58,296
+Arkasından da StartActivityForResult yerine ActivityResultLauncher.launch metoduyla bir nevi StartActivityForResult metodunun yaptığının aynısını yapmak üzere görevlendirilecek.
+
+403
+01:36:58,956 --> 01:37:05,296
+StartActivityForResult'a intenti gönderiyorduk. Burada ise launch metoduna intenti pas ediyoruz.
+
+404
+01:37:10,707 --> 01:37:26,847
+Buradaki intenti alması, bu intentin içerisindeki işi yapabilecek olan ilgili aktiviteye gitmesi, ne istediğimizi söylüyoruz.
+
+405
+01:37:27,527 --> 01:37:32,307
+Eğer buna uygun bir aktivite bulunamadıysa, bu işi yapabilecek.
+
+406
+01:37:32,720 --> 01:37:37,340
+Şuradaki kontrolden sonra, Else koluna gider ve Else kolunda ne der ki?
+
+407
+01:37:37,340 --> 01:37:40,100
+There is no app that supports this action.
+
+408
+01:37:43,279 --> 01:37:51,020
+Buradan yola çıkarak da eğer bu launch edilme işleminden sonra, fotoğrafı çektikten sonra, Activity Result Launcher,
+
+409
+01:37:51,920 --> 01:37:56,220
+karşı taraftan Activity Result Callback takip ettiğini söylüyoruz.
+
+410
+01:37:57,171 --> 01:38:00,911
+Geri dönüş yaptığında onActivityResult metodu çalışıyor.
+
+411
+01:38:02,191 --> 01:38:03,251
+Gelen koda bakılıyor.
+
+412
+01:38:03,911 --> 01:38:05,571
+İçinde bir data olup olmadığına bakılıyor.
+
+413
+01:38:05,571 --> 01:38:19,311
+O datanın içinden de ilgili bilgi alınıp, işte buradaki resim alanına, ImageView alanına ilgili Bitmap'in bilgisinin yazılması sağlanmış oluyor.
+
+414
+01:38:21,291 --> 01:38:24,671
+Bu kod parçası ile ilgili soru sormak isteyen var mı?
+
+415
+01:38:34,579 --> 01:38:35,739
+Hocam sesim geliyor mu?
+
+416
+01:38:36,300 --> 01:38:37,500
+Evet, [öğrenci] Hanım duyuyorum.
+
+417
+01:38:38,399 --> 01:38:46,180
+Bir kere daha böyle hızlıca üzerinden geçebilir miyiz? Biraz ben kafam karıştı. Nereden nereye gidiyor? Koptum bir yerden de.
+
+418
+01:38:47,539 --> 01:38:57,039
+Tabii yapabiliriz. 15.34 oldu saat. İsterseniz 15.45'e kadar bir ara verelim. Ben bu sırada ekranı açık bırakacağım.
+
+419
+01:38:57,652 --> 01:39:03,012
+Siz de bu sırada bakarsınız. Geri döndüğümüz zaman tekrar üzerinden ilerleyelim. Olur mu?
+
+420
+01:39:03,672 --> 01:39:04,372
+Tamamdır hocam.
+
+421
+01:39:05,252 --> 01:39:09,412
+Teşekkürler arkadaşlar. 15.45'te görüşmek üzere.
+
+422
+01:50:12,275 --> 01:50:38,715
+Evet arkadaşlar, yeniden merhaba. En son bazı arkadaşlarınızın sorusu vardı. Şimdi tekrar üzerinden geçelim dedik ama önce nereleri anlamadığınızı bir söylerseniz daha iyi olur. Çünkü dersin %90'ı zaten monolog şeklinde ilerlediği için bu noktalarda anlamadığınız noktaları sizin söylüyor olmanız önemli. Şimdi söz sizin.
+
+423
+01:50:50,996 --> 01:50:53,536
+Soru soran arkadaşlarımız vardı. Orada var mı?
+
+424
+01:50:58,260 --> 01:50:59,740
+Şimdi geldim hocam da.
+
+425
+01:51:04,740 --> 01:51:22,420
+Yani sormuş olduğum soru şuydu hocam. Genel olarak kodun üzerinden bir kere geçtiniz ama mesela bir intente oluştu. Yani kaçıncı satırlar diyeyim. 67, 68, 69'daki satırlarda intente aldı. Bir daha tekrar niye launch etti vesaire. Buralarda biraz kafam karıştı zaten sonlardaydı.
+
+426
+01:51:23,620 --> 01:51:25,120
+Ne yapıyoruz biz burada?
+
+427
+01:51:26,420 --> 01:51:33,100
+Fotoğrafı çekip görüntüyü alıp ekrana yansıtmaya çalışıyoruz.
+
+428
+01:51:33,899 --> 01:51:39,460
+Demek ki bir aktivitede, bir butonumuzun olduğu bir aktiviteden gidiyoruz başka bir aktiviteye.
+
+429
+01:51:40,000 --> 01:51:43,539
+O aktiviteden ilgili işi yaptırıp içeriği alıp geri dönüyoruz değil mi?
+
+430
+01:51:44,439 --> 01:51:44,739
+Evet.
+
+431
+01:51:45,300 --> 01:51:49,420
+Bunu daha önce StartActivityForResult'da yapıyorduk.
+
+432
+01:51:50,420 --> 01:51:51,100
+Evet.
+
+433
+01:51:51,979 --> 01:51:53,039
+Şimdi burada neyle yapıyoruz?
+
+434
+01:51:56,724 --> 01:51:58,584
+Activity result, launcher.
+
+435
+01:51:59,104 --> 01:52:05,164
+Çok güzel. Demek ki Start for Activity result yerine burada launcher'ı kullanıyoruz ve launch metodunu kullanıyoruz.
+
+436
+01:52:05,904 --> 01:52:09,184
+Orada da bir intent gönderiyorduk, burada da bir intent gönderiyoruz.
+
+437
+01:52:09,364 --> 01:52:10,844
+Bu intentimiz nedir?
+
+438
+01:52:11,404 --> 01:52:15,384
+Diyoruz ki biz bir image capture etmek istiyoruz.
+
+439
+01:52:16,644 --> 01:52:17,784
+Intentimizi oluşturduk.
+
+440
+01:52:17,784 --> 01:52:19,784
+Karşı tarafa gönderirken...
+
+441
+01:52:20,948 --> 01:52:29,788
+Sadece bu intente karşılık gelecek bir aktivite, bu işi yapabilecek bir aktivite olan bir uygulama var mı diye soruyoruz.
+
+442
+01:52:30,268 --> 01:52:32,588
+Null döndürmek ise launch ediyoruz.
+
+443
+01:52:34,688 --> 01:52:36,288
+Bu kısım aslında bu kadar.
+
+444
+01:52:39,108 --> 01:52:45,688
+Eğer else kısmı da diyelim ki hiç aktivite yok, o zaman diyoruz ki bunu yapabilecek bir aktivite yok diyoruz.
+
+445
+01:52:47,123 --> 01:52:55,783
+Şimdi bu birinci kısım. Nereye bağlı? Butona bağlı. Set onClickli sınırı altında bu hikaye gerçekleşiyor. OnClickView'un içerisinde.
+
+446
+01:52:57,543 --> 01:53:08,603
+Yani bu butona tıklandığında önce Ask Camera Permission çalışıyor. Orada aşağıdaki izinler, kontroller yapılıyor.
+
+447
+01:53:11,155 --> 01:53:18,695
+Bu izin kontrollerden herhangi bir sıkıntı dönmezse zaten bir sonraki adımdan devam ediyoruz.
+
+448
+01:53:20,296 --> 01:53:20,655
+Anladım.
+
+449
+01:53:21,056 --> 01:53:25,576
+Burası bitti. Şimdi bizim için ikinci kısım var. O da nedir?
+
+450
+01:53:25,576 --> 01:53:33,576
+Bu bahsettiğimiz karşı taraftan bu işi yapan...
+
+451
+01:53:34,112 --> 01:53:40,332
+Image, yani fotoğrafı alan, uygulama fotoğrafı aldığı zaman bize bunu geri ilettiğinde biz ne yapacağız bununla?
+
+452
+01:53:40,891 --> 01:53:52,092
+Bunun için bir launcher tanımladık. Şurada hatırlarsanız. Şurada. Sonra bu ismi böyle olmak zorunda değil, dediğim gibi başka bir şey olabilir. Bunu register ediyoruz.
+
+453
+01:53:53,779 --> 01:54:00,760
+Contract üzerinden Start for Activity Result metodunu parametre olarak Anonymous Class olarak başlatıyoruz.
+
+454
+01:54:01,300 --> 01:54:12,900
+Buradaki Activity Result Callback sınıfı Anonymous Class'ının sahip olduğu on Activity Result metodunu içine yazmamız lazım.
+
+455
+01:54:12,900 --> 01:54:17,860
+Yani şu kısım default, zaten oluşan kısım.
+
+456
+01:54:20,372 --> 01:54:23,052
+İçini doldurmamız gerekiyor.
+
+457
+01:54:23,311 --> 01:54:30,052
+Doldururken bu sefer result code, daha önce startActivityForResult'da result code kullanıyoruz.
+
+458
+01:54:30,152 --> 01:54:33,432
+Burada result.getResultCode metodunu çağırıyoruz.
+
+459
+01:54:33,692 --> 01:54:35,632
+Result code dönüyor, okeyse bakıyoruz.
+
+460
+01:54:36,452 --> 01:54:40,952
+GetData null'dan farklıysa, yani bir şey döndüyse, karşı taraftan image'i alabildiysek,
+
+461
+01:54:40,952 --> 01:54:45,771
+çünkü biliyorsunuz bazen hata oluşur ve image gelmeyebilir.
+
+462
+01:54:47,731 --> 01:54:52,731
+Eğer bir bilgi döndüyse ekstrasının içinden işte bundle objesini çekiyoruz.
+
+463
+01:54:52,832 --> 01:54:54,712
+Bundle objesinin içerisinden de datayı alıyoruz.
+
+464
+01:54:56,192 --> 01:55:02,731
+Aldığımız datayı bitmap formatında da setImageBitmap ile ilgili imageView'a konumlandırıyoruz.
+
+465
+01:55:03,592 --> 01:55:04,271
+Yaptığımız şey bu.
+
+466
+01:55:06,952 --> 01:55:08,811
+Anladım. Şimdi anladım hocam, oturdu.
+
+467
+01:55:09,452 --> 01:55:14,192
+Tamam. Diğer bir arkadaş daha sormuştu. O anladı mı?
+
+468
+01:55:19,028 --> 01:55:21,247
+Peki, herhalde anlamıştır.
+
+469
+01:55:23,207 --> 01:55:26,087
+O zaman şimdi bir sonraki adıma geçelim.
+
+470
+01:55:26,747 --> 01:55:28,408
+Yani biz burada ne dedik?
+
+471
+01:55:29,127 --> 01:55:31,847
+İşte bunu sadece ekranda gösteriyoruz dedik.
+
+472
+01:55:31,908 --> 01:55:32,507
+Bunu kapatalım.
+
+473
+01:55:37,524 --> 01:55:39,583
+Şuraya kamera save.
+
+474
+01:55:41,344 --> 01:55:43,463
+Kırasını çağıracak şekilde yazalım.
+
+475
+01:55:44,503 --> 01:55:46,224
+Ben tekrar stop share diyeyim.
+
+476
+01:55:46,224 --> 01:55:50,823
+Buna bir zürü açayım.
+
+477
+01:55:53,443 --> 01:55:54,703
+Şöyle yapalım.
+
+478
+01:55:56,903 --> 01:55:57,823
+Share screen.
+
+479
+01:56:00,484 --> 01:56:01,283
+Paylaştım.
+
+480
+01:56:02,884 --> 01:56:03,463
+Tekrar.
+
+481
+01:56:06,355 --> 01:56:11,155
+Android Studio tarafında ekran çeliştirim.
+
+482
+01:56:16,180 --> 01:56:17,859
+Admin, Admin diyelim.
+
+483
+01:56:20,039 --> 01:56:22,020
+Şimdi bir fotoğraf çekeceğim.
+
+484
+01:56:26,068 --> 01:56:28,508
+Aynı ekran geldi. Çok büyük bir farklılık yok.
+
+485
+01:56:29,568 --> 01:56:35,228
+Bu sefer fotoğraf çekerken, şöyle yapalım, nasıl yapalım? Kamera diyelim.
+
+486
+01:56:35,688 --> 01:56:38,348
+Kameraya gidelim. Şu gördüğünüz kabloları çekelim.
+
+487
+01:56:39,568 --> 01:56:41,268
+Bunu çektik. Okey dedik.
+
+488
+01:56:42,148 --> 01:56:44,988
+Şimdi teknik olarak aynı işi yapmış gözüküyor.
+
+489
+01:56:44,988 --> 01:56:46,548
+Ama farkı şu olacak.
+
+490
+01:56:47,748 --> 01:56:53,548
+Yani sadece aktiviteye getirmedi bu, bu resmi aynı zamanda klasöre de save etti.
+
+491
+01:56:54,036 --> 01:56:56,196
+Bu şu andaki çalıştırdığımız Activity.
+
+492
+01:56:57,036 --> 01:56:59,756
+Bunun için Stop Share diyorum.
+
+493
+01:57:00,396 --> 01:57:03,376
+Tekrar Android Studio'yu paylaşacağım.
+
+494
+01:57:05,236 --> 01:57:07,316
+Android Studio'yu paylaştım.
+
+495
+01:57:09,316 --> 01:57:13,996
+Şimdi UZ üzerinden Device Manager'a geldim.
+
+496
+01:57:15,556 --> 01:57:16,256
+File'ı açtım.
+
+497
+01:57:17,876 --> 01:57:21,056
+File'ın altında SD Card.
+
+498
+01:57:22,323 --> 01:57:37,623
+SD kartının altında Pictures'ın altında kaydettiğim resimler var. En son 15.52'de kaydetmişim. Bu resmi açıp bakalım. Kabloları görüyorsunuz.
+
+499
+01:57:38,343 --> 01:57:45,803
+Yani SD kartının altında, Pictures'ın altına aynı zamanda bu çektiğimiz resmi de kaydetmişiz.
+
+500
+01:57:45,803 --> 01:57:47,703
+Şimdi.
+
+501
+01:57:48,724 --> 01:57:58,203
+Söylediğim gibi buradan ilgili device'ınızı seçerek o device'ın altındaki klasörlere erişip device altındaki dosyalarınızı görebiliyorsunuz.
+
+502
+01:57:59,344 --> 01:58:01,403
+Şunu ortadan kaldıralım.
+
+503
+01:58:02,024 --> 01:58:07,224
+JPEG'i kapatalım ve Camera Save isimli kodumuzu açalım.
+
+504
+01:58:09,884 --> 01:58:11,243
+Şuradan da büyütelim bunu.
+
+505
+01:58:11,243 --> 01:58:12,463
+Evet.
+
+506
+01:58:14,484 --> 01:58:17,844
+Burada nasıl bir aksiyon ile karşı karşıyız?
+
+507
+01:58:17,844 --> 01:58:27,344
+Yine bunlar standart. Anlatmaya gerek yok. Bu kısımları aslında biraz önce konuştuk.
+
+508
+01:58:27,504 --> 01:58:32,304
+Set onClickListener, onClickView, Verify Permissions.
+
+509
+01:58:33,164 --> 01:58:36,084
+Verify Permissions bu sefer çağrılıyor.
+
+510
+01:58:36,844 --> 01:58:39,844
+Buradaki ilgili permission'ların alınıp alınmadığı...
+
+511
+01:58:42,131 --> 01:58:43,771
+Bu noktada kontrol ediliyor.
+
+512
+01:58:45,371 --> 01:58:54,611
+Ve herhangi bir sorun yoksa, bunun koluna girdiysek, Dispatch, TakePictureIntent metodu çağırılıyor.
+
+513
+01:58:56,051 --> 01:58:58,251
+Gidelim bakalım ne oluyor orada.
+
+514
+01:59:00,391 --> 01:59:01,451
+Bu metodu çağırdık.
+
+515
+01:59:01,451 --> 01:59:06,631
+Bu metodu çağırdığımız zaman, burada bir intent yarattık.
+
+516
+01:59:07,188 --> 01:59:14,828
+Ve dedik ki biz yine aynı biraz önce olduğu gibi bir resim çekmek ve almak istiyoruz, capture etmek istiyoruz.
+
+517
+01:59:15,328 --> 01:59:16,387
+Intent'te bunu yükledik.
+
+518
+01:59:17,148 --> 01:59:21,028
+Sonra burada Resolve Activity'yi yine çağırdık.
+
+519
+01:59:23,788 --> 01:59:25,868
+Nala eşit olup olmadığına baktık.
+
+520
+01:59:26,828 --> 01:59:29,887
+Yani bunu yapabilecek bir aktivite var mı diye kontrol ettik.
+
+521
+01:59:30,568 --> 01:59:32,448
+Sonra bir tane File Descriptor'ı.
+
+522
+01:59:33,760 --> 01:59:35,640
+Photo File'ı yarattık.
+
+523
+01:59:36,720 --> 01:59:39,880
+Create Image File metodunu çağırdık.
+
+524
+01:59:41,060 --> 01:59:44,140
+Şimdi Create Image File'a gidiyorum. O da burada.
+
+525
+01:59:46,159 --> 01:59:48,960
+İşte oluşamaması durumunda bir IO Exception Troll ediyor.
+
+526
+01:59:49,840 --> 01:59:53,619
+Burada biraz önce de ismi görmüşsünüzdüm çok uzundu.
+
+527
+01:59:53,619 --> 02:00:00,000
+O ismin oluşturulması için Simple Date Format'tan o andaki yıl, ay, gün bilgisine...
+
+528
+02:00:00,000 --> 02:00:06,720
+Sonra timestamp bilgisini buraya ekliyoruz.
+
+529
+02:00:07,260 --> 02:00:11,659
+Ekledikten sonra sonuna jpeg bilgisini ekliyoruz.
+
+530
+02:00:13,100 --> 02:00:24,619
+Ve bizim aslında oluşturmak istediğimiz dosyanın ismini imageFileName'de stringinde yaratmış oluyoruz.
+
+531
+02:00:24,948 --> 02:00:31,507
+Ve unique bir name'i yaratabilmek için de tarih bilgisinden ve saat bilgisinden faydalanıyoruz.
+
+532
+02:00:32,068 --> 02:00:38,448
+Sonra diyoruz ki, Storage dir, hatırlarsanız bugün örnek kodlarda vardı.
+
+533
+02:00:38,587 --> 02:00:42,507
+Get External Storage Public Directory, Directory Pictures.
+
+534
+02:00:43,568 --> 02:00:44,728
+Yani aslında nerede?
+
+535
+02:00:45,747 --> 02:00:52,247
+Bunun konumlanması gerektiğini bu metodu çağırarak ve parametreyi aktararak söylemiş oluyoruz.
+
+536
+02:00:52,547 --> 02:01:01,347
+Sonra, Image isimli dosyamızın, objemizin oluşturulması için CreateTempFile diyoruz.
+
+537
+02:01:01,908 --> 02:01:10,668
+Bu hatırlarsanız bizim geçici bir dosya üretmek için kullandığımız bir metottu, file sınıfına ait olan.
+
+538
+02:01:11,308 --> 02:01:20,008
+Bu metoda dosya ismini, dosya türünü ve direktörsünü şuradan elde ettiğimiz bilgiyi paslıyoruz.
+
+539
+02:01:22,804 --> 02:01:39,644
+Bunu pastadıktan sonra da bu noktada artık image.getAbsolutePet dediğimiz zaman aslında o ilgili aksiyonun nerede gerçekleşeceği bilgisini current photo pattern değişkenine almış oluyoruz.
+
+540
+02:01:39,644 --> 02:01:48,564
+Ve buradan da return image diyoruz. Buradan return image dediğimizde buradaki foto fila bu geri dönüşü.
+
+541
+02:01:49,140 --> 02:02:06,800
+ilgili bilginin dönmesini sağlıyoruz. Yaratıldıysa file, burada o bilgi yazıyor, null değilse, yolumuza devam ediyoruz. FileProvider üzerinden getUriForFile ile
+
+542
+02:02:06,800 --> 02:02:16,279
+fotofile isimli dosyanızın URI formatında bilgisinin foto URI üzerinde saklanmasını sağlıyoruz.
+
+543
+02:02:17,076 --> 02:02:30,555
+Ve TakePictureIntent.putExtra'ya yani aslında göndermek istediğimiz intentin ekstra kısmına neyi eklemiş oluyoruz?
+
+544
+02:02:30,935 --> 02:02:34,215
+PhotoURL ile ilgili bilgiyi eklemiş oluyoruz.
+
+545
+02:02:34,215 --> 02:02:36,215
+Burada...
+
+546
+02:02:36,960 --> 02:02:43,299
+Şu anda üzüli çizili olarak eski usül, biraz önce hep bahsettiğimiz StartActivityForResult var.
+
+547
+02:02:43,399 --> 02:02:47,659
+Bu deprecated bir metot ama hala kullanılabiliyor.
+
+548
+02:02:48,439 --> 02:02:51,219
+Yani uyarma amaçlı üzerini çizmiş durumda.
+
+549
+02:02:52,039 --> 02:02:58,219
+Buradan artık dosyayı yarattık ve TakePictureIntent'i karşı tarafa gönderdik.
+
+550
+02:02:59,920 --> 02:03:03,039
+TakePictureIntent karşı tarafa gidiyor.
+
+551
+02:03:03,923 --> 02:03:11,743
+Dönüşünde, şurada görmüş olduğunuz onActivityResult isimli kod çalışacak.
+
+552
+02:03:13,083 --> 02:03:16,344
+Çünkü StartActivityForResult ile gönderdik.
+
+553
+02:03:16,884 --> 02:03:20,563
+Karşıya dedik ki biz image fotoğraf çekmek istiyoruz.
+
+554
+02:03:21,203 --> 02:03:23,143
+Bize fotoğrafı çeken bir uygulama göster.
+
+555
+02:03:23,863 --> 02:03:28,804
+O uygulama fotoğrafı çek ve çektiğin fotoğrafı bize gönder ve bu dosyaya aktarmıyoruz.
+
+556
+02:03:30,676 --> 02:03:41,456
+Eskisi gibi request kodu kontrol ediyoruz. Yukarıda tanımladığımızda eşit mi diye. Daha önce hatırlarsanız, biraz önce request kodu metotla çağırıyorduk. Result kodu kontrol ediyoruz.
+
+557
+02:03:41,456 --> 02:03:56,016
+Ve diyoruz ki, bize bu current photopat'in bulunduğu absolute pet olarak çektiğimiz noktaya bir faili oluştur. File descriptor olarak.
+
+558
+02:03:56,500 --> 02:04:12,079
+Buraya ilgili bilgiyi al ve aynı zamanda SetImageUri metoduyla ImageView'a buradan gelen resim bilgisini ekrana bastırıyoruz.
+
+559
+02:04:12,079 --> 02:04:23,019
+Ve buraya da işte log mekanizmasına da burada oluşan file ile ilgili bilginin logcat de şurada.
+
+560
+02:04:24,340 --> 02:04:25,260
+Gösterelim.
+
+561
+02:04:27,119 --> 02:04:27,859
+Neredeydi?
+
+562
+02:04:40,659 --> 02:04:45,059
+Bunlarda Locket'i düşmüş olması lazım. Niye göremiyorum?
+
+563
+02:04:50,515 --> 02:04:51,815
+Bir daha deneyelim.
+
+564
+02:04:54,895 --> 02:04:57,435
+Şuradan bir fotoğraf daha çekelim.
+
+565
+02:05:15,347 --> 02:05:33,408
+Burada az önce üretmiş olduğumuz dosyayla ilgili bilgiyi de vloggede yazmış olduğumuz ifadelerle ilgili dosyanın nereye konumlandırıldığı bilgisini uri.fromfile bilgisiyle alarak ekrana yazdırmış oluyoruz.
+
+566
+02:05:33,807 --> 02:05:37,807
+Biraz öncekinden farkı StartActivityForResult'ı kullandık bu sefer.
+
+567
+02:05:38,484 --> 02:05:57,224
+Ama az öncekinde datayı saklamıyorduk. Burada datayı saklayabilir konuma gelmiş olduk. Gönderilen resmi SD kartın altında, Pictures'ın altındaki bölgeye Date ve Saat bilgisini kullanarak Save etmiş bulunuyoruz.
+
+568
+02:05:58,923 --> 02:06:00,304
+Buraya kadar sorusu olan var mı?
+
+569
+02:06:02,292 --> 02:06:18,352
+Hocam, bu yaptığımızda save edilen resmi mobillikten görüyoruz değil mi? Yani bir öncesinde save etmeden direkt çektiğimiz fotoğraf ekrana yansıyordu. Bunu da çekiyoruz. Önce save işlemi gerçekleştiriliyor, ondan sonra ekrana yansıyor.
+
+570
+02:06:23,828 --> 02:06:41,488
+Evet, aynen öyle. Yani şey, daha doğrusu öncekinde de jpeg'ti ama bitmap formatını da göstermek için bir düzenleme yapmıştık. Burada doğrudan file'dan açıp, file'dan aldığımız bilgiyi kullanarak setImageUri
+
+571
+02:06:41,920 --> 02:06:55,880
+Metoduyla ekrana bastırdık. Biraz önce doğrudan aldığımız veriyi intentin içerisinden alıp yaptık. Burada dosyayı aldık, dosyayı açtık ve onun içindeki veriyi ekrana bastık.
+
+572
+02:06:56,840 --> 02:06:57,520
+Anladım, tamam.
+
+573
+02:06:57,600 --> 02:07:04,400
+Aslında güzel bir aradaki farkı söylemiş oldun, iyi oldu bunu hani belirttiğin senin fark etmiş olman.
+
+574
+02:07:06,040 --> 02:07:07,200
+Hemel farklılık bu noktada.
+
+575
+02:07:09,908 --> 02:07:26,908
+Veriyi istedik, diğer aktiviteden bize veri geldi. Bitmap üzerinden ImageView'a bastırdık. Herhangi bir kayıt yoktu, saklamadık. Burada gittik, istedik, dosyayı kaydettik, dosyayı açtık.
+
+576
+02:07:36,336 --> 02:07:38,796
+ImageView'a bastırdık.
+
+577
+02:07:44,532 --> 02:07:56,612
+Evet peki, başka sorusu olan yoksa o zaman yavaş yavaş dönem projenize geçelim. Arkasından da yapacağınız uygulamayı konuşmaya başlayalım. Bugünün özelinde.
+
+578
+02:08:15,923 --> 02:08:19,184
+Evet, şimdi ekran paylaşımı yapalım.
+
+579
+02:08:26,452 --> 02:08:34,551
+Bir ev arkadaşı bulma, eşleştirme uygulaması dönem projenizle yapmanızı bekliyoruz.
+
+580
+02:08:35,551 --> 02:08:43,131
+Hemen hemen bu ders kapsamında göreceğiniz bütün alt konuların içinde olduğu bir proje olacak.
+
+581
+02:08:44,131 --> 02:08:48,211
+Teknik olarak bir kayıt sistemi bulunacak.
+
+582
+02:08:49,652 --> 02:09:04,832
+Bahsettiğimiz uygulamaya login olunması gerekecek, register olunması gerekecek, bir profil oluşturacaksınız. Bu uygulamanın amacı ev arayan ya da ev arkadaşı arayan kişileri bir araya getirmek.
+
+583
+02:09:05,427 --> 02:09:19,087
+Burada ilgili bilgileri alırken ev arayan kişinin ya da ev arkadaşı arayan kişinin konumu, yaptığı arama için ilgilendiği lokasyon bilgisi önemli.
+
+584
+02:09:30,292 --> 02:09:40,511
+Eve çıkmak isteyen bir ev arkadaşı arayan bir kişi için çıkabileceği evin hangi konumda olduğu, hangi alanda arama yapacağı bilgisini belirlemesi kritik.
+
+585
+02:09:40,511 --> 02:09:46,172
+Yani birçok yerden ilan gelebilir İstanbul özellikle düşündüğümüzde.
+
+586
+02:09:51,923 --> 02:09:57,823
+İşte ne diyelim duyuruları takip edebiliyor olmanız, onları filtreleyebiliyor olmanız önemli.
+
+587
+02:09:58,763 --> 02:10:06,844
+Burada harita üzerinde yapılacak işlemler de var. Location Manager ile sizin konumunuzun paylaşılması durumu da var.
+
+588
+02:10:07,903 --> 02:10:17,923
+Bir eşleşme sağlandığı zaman karşılıklı olarak memnuniyette bulunduğunda, teklif yapıldığında, o teklif kabul edildiğinde artık o ilanın...
+
+589
+02:10:18,804 --> 02:10:21,283
+İlan listesinden kaldırılması kısmı var.
+
+590
+02:10:22,443 --> 02:10:26,304
+Talep edildiğinde bir talebi onaylama reddetme gibi seçenekler var.
+
+591
+02:10:27,003 --> 02:10:34,804
+Gerektiğinde WhatsApp'la ya da e-mail üzerinden ilgili kişilerin haberleşebilmesi için öğrencilerin işte…
+
+592
+02:10:35,667 --> 02:10:50,927
+Bu ayarlar kısmında telefonumu paylaş, e-mail adresini paylaş, sadece telefonumu paylaş, sadece e-mail adresini paylaş gibi seçenekler sunması ve bu seçenekler üzerinden iletişime geçirmek istendiğinde ilgili uygulamanın açılması.
+
+593
+02:10:51,475 --> 02:11:10,335
+Mümkün olabilmeli. Bir istek geldiğinde bildirimle kullanıcıya bu bilginin aktarılabilmesi önemli. Yapılan işlemlerle ilgili mesajların da toast mesajıyla, pop-up mesajıyla ekranda görüntülenebiliyor olması.
+
+594
+02:11:11,060 --> 02:11:33,380
+Önemli olacak bu uygulama içerisinde. Ödeviniz bugün itibariyle verilmiş oldu. 5 Nisan ödev tesliminiz 29 Mayıs'a kadar süreniz olacak. 29 Mayıs, Pazartesi akşamına kadar bir video teslim edeceksiniz. GitHub kodlarınızı teslim edeceksiniz.
+
+595
+02:11:34,131 --> 02:11:43,091
+Videoda kendinizi tanıtacaksınız, uygulamanızı anlatacaksınız, yapabildiğiniz kısımları, yapamadığınız kısımları ağırlıklı olarak anlatacaksınız.
+
+596
+02:11:43,192 --> 02:12:01,631
+Değerlendirme ağırlıklı olarak fonksiyonelite üzerinden 100 puanın 60'ı fonksiyonelite üzerinden 20'si arayüz üzerinden 20'si de uygulamanızı tanıtmanız, anlatmanız, senaryolara göre uygulamanızı prezente etmenizle ilgili ve dokumentasyonunuzla ilgili olacak.
+
+597
+02:12:02,131 --> 02:12:16,251
+Genel konsepti söylüyorum. Yaklaşık olarak herhalde 8 haftanız, 9 haftanız olacak. Oldukça uygun bir süre gibi gözüküyor. Ödevle ilgili sorusu olan varsa hemen alayım.
+
+598
+02:12:26,547 --> 02:12:27,947
+Peki, ödevle ilgili sorun.
+
+599
+02:12:27,947 --> 02:12:29,127
+Ben bir şey sorabilirim.
+
+600
+02:12:30,087 --> 02:12:31,507
+Merhaba hocam bu arada.
+
+601
+02:12:32,228 --> 02:12:32,567
+Merhaba.
+
+602
+02:12:33,327 --> 02:12:38,987
+Hocam, eğer Android bir telefonumuz yoksa kamerayla fotoğraf yükleme kısmını geçebiliyor muyuz?
+
+603
+02:12:40,047 --> 02:12:43,987
+Kamerayla fotoğraf yükleme kısmını geçemiyorsunuz.
+
+604
+02:12:43,987 --> 02:12:46,960
+Hem ödevinizde hem de...
+
+605
+02:12:46,960 --> 02:13:00,019
+Dönem projenizde arkadaşınızdan ya da işte bir aile yakınından bir telefon tedarik edip videonuzu çekerken uygulamanızın o telefon üzerinde çalışmasını sağlayabilirsiniz.
+
+606
+02:13:01,039 --> 02:13:02,299
+Anladım hocam, teşekkürler.
+
+607
+02:13:02,699 --> 02:13:03,139
+Rica ederim.
+
+608
+02:13:07,347 --> 02:13:19,847
+Birinci ödeviniz ve son ödeviniz, yani aslında tek bir ödev diye konuşmuştuk. O da mezun uygulaması ile ilgili, derste geliştirdiğimiz mezun uygulaması ile ilgili olacak. Muhtemelen önümüzdeki haftada...
+
+609
+02:13:20,372 --> 02:13:40,268
+O ödevinizi vereceğim ve onun da Mayıs başında bir teslim süresi olacak. O yüzden şu ana kadar size derste anlattığımız, işte şununla ilgili ekranları tasarlayın dediğimiz konuları zamanında yaparsanız çok rahat edebilirsiniz sonrasında. Ama sonra birikirse birazcık zaman kaybı...
+
+610
+02:13:40,275 --> 02:13:53,496
+Ya da işte zamanın yönetimiyle ilgili sorun yaşanma durumu sizin adınızda olabilir. O yüzden hani hep bahsediyorum duyuruların listelendiği bir ekranın yapılması, işte ilgili kullanıcının register.
+
+611
+02:13:54,000 --> 02:14:12,439
+Olduğu ekranın yapılması, ondan sonra galeriden resmin alınması ve mevzun uygulaması aracında paylaşılması gibi ekranlardan bahsetmiştim. Bunları toparlayacağız, bir ödev haline getireceğiz ve ödeviniz de bununla ilgili olacak.
+
+612
+02:14:13,859 --> 02:14:18,519
+Yani önümüzdeki iki hafta içerisinde de bu ödevi sizinle paylaşmış olacağım.
+
+613
+02:14:19,800 --> 02:14:21,099
+Sorusu olan var mı?
+
+614
+02:14:25,492 --> 02:14:29,631
+Peki, o zaman isterseniz şöyle yapalım.
+
+615
+02:14:30,372 --> 02:14:43,231
+Şimdi ben sizinle biraz önce konuştuğum aslında şunu da yapalım vakit varken o da iyi olur.
+
+616
+02:14:43,231 --> 02:14:50,511
+Hemen örnekte kolay olduğu için sizinle paylaşmam da bir sakınca yok.
+
+617
+02:14:53,587 --> 02:14:55,747
+Çünkü bugünün konusuyla alakalı olduğu için.
+
+618
+02:14:57,568 --> 02:15:00,148
+Önce yine uygulama üzerinden size göstereyim.
+
+619
+02:15:01,627 --> 02:15:05,568
+Ama bir düzenleme yapmam gerekecek.
+
+620
+02:15:07,387 --> 02:15:09,787
+Diğer aktiviteyi çağıralım.
+
+621
+02:15:09,787 --> 02:15:14,587
+Bu da ismi neydi? ShareDraftActivity.
+
+622
+02:15:19,028 --> 02:15:21,128
+Şimdi uygulamayı tekrar başlatalım.
+
+623
+02:15:23,468 --> 02:15:24,748
+Share Screen diyelim.
+
+624
+02:15:28,500 --> 02:15:30,759
+Share ettim, admin diyelim.
+
+625
+02:15:34,323 --> 02:15:48,703
+Şimdi, gördüğünüz gibi, ben daha önce bu aktiviteye girdiğim bilgiler ekranda görüyorsunuz. Amaç V35 girmiştim. Şimdi bunları siliyorum.
+
+626
+02:15:51,203 --> 02:16:01,503
+İşte, buraya diyelim ki, ne olsun? Ahmet olsun, 32 olsun. Bilgilerini girelim. Buradan çıktınız.
+
+627
+02:16:02,899 --> 02:16:05,719
+Activity'niz Destroy oldu.
+
+628
+02:16:07,119 --> 02:16:09,500
+Şimdi tekrar girmek istiyorsunuz.
+
+629
+02:16:10,379 --> 02:16:11,899
+Bu arada burada mıydı?
+
+630
+02:16:12,379 --> 02:16:14,179
+Evet, şimdi tekrar giriş yapacaksınız.
+
+631
+02:16:14,839 --> 02:16:17,939
+Sizin orada User Preferences bilgileriniz var diyelim.
+
+632
+02:16:21,076 --> 02:16:43,835
+Gördüğünüz gibi Shared Preferences tarafından en son girdiğimiz bilgiler geri geldi. Burada hem buradan girdiğimiz bilgileri kaydedebiliyorsunuz hem de daha önce girdikleriniz bu ekranlara geri geliyor. Bunu illa böyle tasarlamak zorunda değilsiniz ama bir uygulama, örnek bir uygulama olması açısından böyle bir şey paylaştım. Şimdi kodları göstermek istiyorum.
+
+633
+02:16:46,835 --> 02:17:01,355
+Basit bir kod parçası var. Şuradan yapalım. Shared Preferences. Android Studio. Hemen Shared Preferences'ı açalım.
+
+634
+02:17:04,055 --> 02:17:13,935
+Burada bir kere bir tasarım vardı. Bu tasarım onCreate'de ilgili iki tane Edit Box ile ilişkilendirildi. Edit Text ile.
+
+635
+02:17:15,028 --> 02:17:19,388
+Shared Preferences'ın XML'i de burada.
+
+636
+02:17:20,268 --> 02:17:23,628
+Bir TextView var, bir EditText var, bir tane daha EditText var.
+
+637
+02:17:24,668 --> 02:17:26,028
+Aslında bu kadar.
+
+638
+02:17:26,575 --> 02:17:47,135
+Bir XML dosyasından bahsediyoruz. Oradaki iki tane edit tekst de burada değerleriyle ilişkilendirdik. Şimdi shared preferences kodu onRecyum'da çalışıyor. Yani her halükarda bu onRecyum'dan geçeceğiniz için onCreate'e konmamış. Bu örnek bir kod parçası. Genellikle onCreate'e koyuyorlardı. Bu farklı olduğu için bunu tercih ettim.
+
+639
+02:17:54,575 --> 02:18:18,695
+İngilizemeli aslında teknik olarak oluşturuyoruz ve diyoruz ki işte name'e espri al, a'ya da get inti al. Bunlar eğer herhangi bir şekilde girilmediyse default değerleri ilk açıldığında yaş sıfır olsun isimden herhangi bir şey olmasın boş gelsin.
+
+640
+02:18:21,012 --> 02:18:28,832
+Name, Set, Text, S1, Age, Set, Text, String, Value of A diyerek ilgili alanların doldurulmasını sağlıyoruz.
+
+641
+02:18:31,472 --> 02:18:39,672
+Gelelim Shared Preferences'a bilgilerin yazılmasına. Biraz önceki kod Shared Preferences'dan bilgilerin çekilmesiyle ilgiliydi.
+
+642
+02:18:39,672 --> 02:18:47,772
+Get Shared Preferences ile MySharedPref ile ilgili Shared Preferences dosyasına eriştik.
+
+643
+02:18:48,500 --> 02:19:12,360
+Daha doğrusu objesini yarattık. Editör vasıtasıyla bilgi yazacağımız için editörü oluşturduk. Edit metodunu çağırarak. Sonra orada gördüğümüz yazılan bilgiyi o anda değiştirilmek istendiyse aldık. PutString ile name'e koyduk. PutInt ile h'e koyduk. Sonra da apply dedik. Apply dediğimizde asenkron bir bilgi aktarımı vardı.
+
+644
+02:19:12,884 --> 02:19:15,083
+Ve gitti, shared preferences de yazdı.
+
+645
+02:19:15,083 --> 02:19:18,263
+Şimdi sizden istediğim bir işte şu bugün.
+
+646
+02:19:19,103 --> 02:19:37,083
+Birincisi, hakikaten kullanıcının register sırasındaki resimini almak için ya galeriden ya da kullanıcının kendi fotoğrafını çekerek o bilgiyi almanız ve...
+
+647
+02:19:37,587 --> 02:19:47,427
+Register olduğu noktada, Sign-up olduğu noktadaki bilgileri dosyaya yazmanız. Daha sonra Firebase'e yazacaksınız.
+
+648
+02:19:49,648 --> 02:19:57,167
+İkincisi de kullanıcının belli başlı bilgileri shared preferencesinde tutmanızı istiyorum.
+
+649
+02:19:57,167 --> 02:20:04,587
+Mesela bunlar belli aralıklarla değişebilen bilgiler olacak. Kullanıcı da buradan güncelliği olacak. Nedir?
+
+650
+02:20:05,172 --> 02:20:29,092
+İşte burs vermek istiyor mu, istemiyor mu mezunumuz? Ülkesi neresi, şehri neresi? Onun dışında çalıştığı şirket ismi, e-mail adresi ve telefon numarası. Bunlar share preferences tarafında duracak.
+
+651
+02:20:29,683 --> 02:20:42,163
+Kullanıcı buradan güncelliyor olacak. İstendiği zaman da kullanıcı bu bilgiyi belirli bir formatta karşı tarafa paylaşıyor, pas ediyor olacak.
+
+652
+02:20:42,163 --> 02:20:55,163
+Sizden istediğim bu. Şimdi sorularınız varsa alacağım ama bu bugün paylaştığım, bugün üzerinde çalıştığım, size göstermiş olduğum kodları...
+
+653
+02:20:56,275 --> 02:21:08,835
+Biraz sonra chat üzerinden gönderiyor olacağım. Buradaki ilgili kısımları kullanarak kendi tarafınızdaki işleri organize etmenizi istiyor olacağım. Sorusu olan var mı?
+
+654
+02:21:20,468 --> 02:21:26,208
+Peki, haydi hayırlısı diyelim. Bu sene böyle sessiz sessiz devam ediyoruz.
+
+655
+02:21:30,355 --> 02:21:34,595
+Ben size buradan hemen şimdi bir ayarlama yapayım.
+
+656
+02:21:36,115 --> 02:21:37,475
+Kot parçalarını paylaşayım.
+
+657
+02:22:42,932 --> 02:22:48,272
+Evet, buradan size kodları gönderdim chat ortamından.
+
+658
+02:22:48,632 --> 02:22:53,371
+Tabii bu kodlar üzerine ben değişiklikler yapıyorum, comment outlar yapıyorum.
+
+659
+02:22:53,972 --> 02:22:59,112
+Bu kodlar kullanırken kendi tarafınıza uyarlamanız gerekiyor.
+
+660
+02:22:59,112 --> 02:23:03,112
+Bu arada kimseden bir...
+
+661
+02:23:03,891 --> 02:23:13,231
+Sanırım bir arkadaşımızdan gelmiş o da bugün geldi herhalde. Bugüne kadar yaptığımız konularla ilgili herhangi bir uygulama paylaşımı görmedim.
+
+662
+02:23:14,811 --> 02:23:28,531
+Sonradan sizin aleyhinize bir durum olmaması için, daha uzun bir süre ödev için talep etmek durumunda kalmamanız için bahsettiğim mezun uygulamasıyla ilgili aktiviteleri ki sadece benim söylediklerimi değil,
+
+663
+02:23:32,275 --> 02:23:41,115
+Hani bilgiler de olacaktır. Sizden ricam şimdiden yapmaya başlamanız, sonra ben herhangi bir sıkıntı olmamasa da.
+
+664
+02:23:43,296 --> 02:23:45,916
+Ben tekrar geri döneyim.
+
+665
+02:23:47,475 --> 02:23:48,956
+Ekran paylaşımına.
+
+666
+02:23:58,644 --> 02:24:15,384
+Soruları olan varsa, bugünkü şey, preferences ile ilgili de olabilir. Bunlar dediğim gibi çok aslında basit. Bazılarınızda bunu yaparak verileri saklamaya başlamışsınız.
+
+667
+02:24:16,504 --> 02:24:23,943
+Kodlara biraz sonra baktığınızda eğer sormak istediğiniz bir kısım olursa bana iletebilirsiniz.
+
+668
+02:24:24,564 --> 02:24:42,623
+Tekrar hatırlatıyorum. Share preferences tarafında kullanıcı ile ilgili ülke, şehir, iş, nerede çalışıyor, buz vermek istiyor, istemiyor. Son durum güncellemelerini share preferences tarafında kullanıcıya ait e-mail.
+
+669
+02:24:43,092 --> 02:25:04,352
+Telefon numarası bilgilerini orada tutmanızı istiyorum. Onun dışında sign up sırasında mezunumuza ait bazı bilgileri alacağımızı söylemiştik. Resim de bunlara dair. O bilgiyi alıp bir dosyaya yazmanızı ve kendisiyle ilgili bilgileri uygulamaya girdiğinde tekrar görmek ve edit etmek istediğinde başka bir aktiviteyle
+
+670
+02:25:04,819 --> 02:25:10,739
+Görüntülenmesini istediğimi hatırlatmayı yapmak istiyorum tekrar.
+
+671
+02:31:22,804 --> 02:31:38,063
+Ben, Asus'da bu kodları paylaştığımı düşünmüştüm ama orada ekranda kalmış gittiğini zannettim. O yüzden bir sanırım geçikme oldu kusura bakma lütfen. Uyardığın için teşekkür ederim.
+
+672
+02:35:26,932 --> 02:35:29,672
+Evet arkadaşlar, sorusu olan var mıdır?
+
+673
+02:35:36,468 --> 02:35:39,268
+Ünki konularla ilgili, üzerine çalıştığımız kodlarla ilgili.
+
+674
+02:35:43,796 --> 02:35:45,456
+O zaman hepinize teşekkür ediyorum.
+
+675
+02:35:47,576 --> 02:35:58,815
+Hocam, ben şu ana kadar, şimdi benim başka, yani bu derste çok şey yapamıyorum mesela kodlamasıydı ama bir yere kadar gelmiştim.
+
+676
+02:35:58,876 --> 02:36:00,796
+Onu gösterebilir miyim ekran paylaşarak?
+
+677
+02:36:01,436 --> 02:36:02,296
+Ne zaman, şimdi mi?
+
+678
+02:36:02,655 --> 02:36:02,995
+Evet.
+
+679
+02:36:04,115 --> 02:36:07,256
+Sanırım şimdi çok uygun olmayacaktır. Önce benim kodu görmem lazım.
+
+680
+02:36:07,680 --> 02:36:16,619
+Bunun sebebi de hangi kısmın ne kadarını ortak olarak paylaşalım ve konuşalım noktasında bir değerlendirme yapmam lazım.
+
+681
+02:36:17,280 --> 02:36:25,639
+Eğer bana kodunu gönderirsen önümüzdeki hafta vaktimiz kaldığında üzerinden birlikte, hep birlikte yani sınıfın diğer arkadaşlarla sorularınla birlikte geçebiliriz.
+
+682
+02:36:26,195 --> 02:36:43,495
+Ben aslında baya ilk, sanırım bir üçüncü hafta falan da sanırım ben göndermiştim size ama sanırım dosyayı mı yanlış gönderdim bilmiyorum. Herhangi bir geri dönüş olmadı sizden ya da yanlış e-mail'e de göndermiş olabilirim bilmiyorum ama.
+
+683
+02:36:44,275 --> 02:36:49,095
+Bana bir öğrencim göndermişti, sadece login ekranı vardı. Sen misin bilmiyorum.
+
+684
+02:36:49,683 --> 02:36:53,903
+O yüzden [öğrenci] bir kontrol edelim bir saniye.
+
+685
+02:36:54,224 --> 02:36:55,043
+Müsaade edersen.
+
+686
+02:36:55,543 --> 02:36:57,984
+Ben de bir kontrol edeyim aynı anda.
+
+687
+02:36:59,083 --> 02:37:02,363
+Yani benim gözümden kaçtıysa düzeltiriz.
+
+688
+02:37:04,463 --> 02:37:06,324
+Login ekran denemesi diye göndermişsin.
+
+689
+02:37:07,092 --> 02:37:08,871
+Evet, o olması lazım.
+
+690
+02:37:09,391 --> 02:37:14,292
+Tamam, orada daha giriş, butonun ekran geçişi, uygulamadan çıkma, geri durma, finish özellikleri var.
+
+691
+02:37:14,371 --> 02:37:20,492
+Yani çok bir şey yoktu orada. Henüz daha diğer özellikler ortaya çıkmamıştı. O yüzden zaten yorum da yapmıştım.
+
+692
+02:37:22,191 --> 02:37:26,511
+Onu bir de şu an bir ekran daha ekledim, bir Activity daha. O da kayıt ekranı.
+
+693
+02:37:28,724 --> 02:37:37,904
+Login ekranı gibi, işte kayıt ola bastığınız zaman tekrar giriş ekranına dönüyor falan filan. Daha devam edeceğim sadece yorum olarak istedim.
+
+694
+02:37:37,904 --> 02:37:54,263
+Orada çok temel bir ekran olduğu için hani ve konuştuğumuz için o ekranı da benim istediğim sizin kendi tarafınızda benim burada anlattıklarımı uygulamaya uyarlayarak oluşturduğunuz daha detaylı kodlarınızın olduğu ekranı yorumlamak.
+
+695
+02:37:54,559 --> 02:38:13,659
+O yüzden zaten senin gönderdiğinde herhangi bir özel bir problem yoktu. Arkadaşlara gösterdiğimizde de çok özel bir şey katmayacağını düşündüğüm için, çok yeni bir uygulama olduğu için hiç açmadım onu, paylaşmadım. Ama bu son konuştuklarımızı ekleyip gönderirsem memnuniyetle paylaşacağım. Hatta mutlu olurum yani.
+
+696
+02:38:14,420 --> 02:38:16,220
+Tamam, tamam hocam.
+
+697
+02:38:16,319 --> 02:38:24,540
+Çünkü burada benim yaptıklarımdan farklı bir kod olmalı ki arkadaşlar da bu böyle yapılıyormuş, şöyleymiş diyebilmeli.
+
+698
+02:38:29,108 --> 02:38:47,727
+Peki arkadaşlar, o zaman göndermek isteyenler olursa memnuniyet duyarım. Ben size RecyclerView ile, CardView ile ilgili geçen hafta istediğim duyurulardan bahsetmiştim. Resim koymanızdan, tarih koymanızdan vs. bahsetmiştim. Keza SignUp tarafında resim.
+
+699
+02:38:48,079 --> 02:39:10,040
+eklemenizden bahsettim. Bugün shared preferences kısmını konuştuk. Artık biraz daha sofistike hale uygulama gelmeye başlayacaktır yakında. Özellikle Firebase'le verinin kaydedilmesi ya da dosyaya kaydedilmesi noktası da önemli. Bunları önümüzdeki haftaya kadar bir noktaya getirenler olursa, paylaşırsa ben de burada yorumlamaktan mutluluk duyarım.
+
+700
+02:39:11,891 --> 02:39:20,331
+Sonradan izleyenlere de sevgilerimi iletiyorum. Umarım onlara da faydalı oluyordur. Hepinize güzel bir hafta diliyorum. Görüşmek dileğiyle, hoşçakalın.
+
+701
+02:39:22,631 --> 02:39:23,891
+İyi akşamlar hocam, iyi günler.
