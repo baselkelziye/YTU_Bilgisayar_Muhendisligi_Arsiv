@@ -1,0 +1,2835 @@
+1
+00:03:07,283 --> 00:03:16,883
+Arkadaşlar, merhabalar, günaydın. Bu haftada kaldığımız yerden devam edeceğiz. Şimdi ders planına göre neredeyiz kabaca şöyle bir bakalım.
+
+2
+00:03:19,603 --> 00:03:33,063
+Şimdi ders planımıza göre merkezi işlem birim tasarımını geçen hafta görmüş olduk. Bu kapsam içerisinde daha önceki haftalarla da birleştirerek
+
+3
+00:03:34,003 --> 00:03:48,923
+Register file'dan başlamıştık. Register file ile ilgili olarak içerideki saklı herhangi bir yazmacın farklı iki kanala çıkabilmesini sağlayacak şekilde bir baslı MOOCs yapısı vardı.
+
+4
+00:03:50,223 --> 00:04:01,003
+Yine herhangi bir fonksiyon unit biriminden veya dış hafıza biriminden, veri hafızasından gelecek veriyle herhangi bir yazmaca saklayacak şekilde veri aktarım.
+
+5
+00:04:01,395 --> 00:04:04,795
+kontrolü vardı yine register file'da hatırlayacak olursanız.
+
+6
+00:04:05,835 --> 00:04:09,395
+Sonrasında, yine şuradan görerek belki hatırlayabiliriz.
+
+7
+00:04:11,015 --> 00:04:15,555
+Daha sonrasında function unit dediğimiz fonksiyon birimi içerisinde.
+
+8
+00:04:16,180 --> 00:04:38,860
+Yer alan aritmetik lojik birimle shifter birimlerini incelemiştik. Aritmetik lojik birimi ikiye ayırıp aritmetik birim ve lojik birim olarak ayrı ayrı tasarlamıştık. Shifter biriminde daha önceden getirmiş olduğumuz bilgi çerçevesinde MUX'larla birlikte ilgili bağlantıları sağlayarak oluşturmuştuk. Bu bizim temel yapımızdı.
+
+9
+00:04:44,115 --> 00:04:52,956
+Elemanlara daha ihtiyacımız vardı. Bunlardan bir tanesi veri hafızasıydı. Veri hafızasını daha sonra sisteme nasıl entegre ettiğimizi görmüştük.
+
+10
+00:04:54,740 --> 00:05:08,379
+Veri hafızasını nasıl manipüle edebileceğimizi görmüştük. Burayı kullanabilmek için bir adres ve veri uç tanımlarına ihtiyacımız vardı. Bunu da register file'ın A ve B kanallarını kullanarak üretebildiğimizi söylemiştik.
+
+11
+00:05:09,319 --> 00:05:15,480
+Data memory'yi eklediğimiz zaman bir ek kontrol bir ucumuz daha ortaya çıkmıştı. Memory write kontrol ucu.
+
+12
+00:05:15,923 --> 00:05:29,743
+Bazı durumlarda register'dan memoriye veri aktarımı yapmak isterken bazı durumlarda da memoriye bir değeri okuyup register'a aktarmak isteyebiliriz. Bunu sağlamak adına da bir de data in yolu üzerinden aktarım söz konusu olduğunu söylemiştik.
+
+13
+00:05:42,355 --> 00:05:58,875
+Kontrol uçları tanımlamış olmuştuk. Şurada, control word şeklinde tanımladığımız bir kelime yapısı oluşturmuştuk. Bunlar temelde DA dediğimiz register file'da veri nereye kaydedilecek? A kanalına veri register file'dan nereden çıkacak? B kanalına register file'dan veri nereden çıkacak?
+
+14
+00:05:59,795 --> 00:06:13,036
+MOOCs B yolunda sabit değer mi yoksa register file'dan değer mi çekeceğim? Function select birimleri değerleri ALU'da ve Shifter'da hangi işlem yapılacak, hangisi seçilecek onları belirliyordu.
+
+15
+00:06:13,555 --> 00:06:39,835
+MD, MUXD dediğimiz değer, veri hafızadan mı gelecek yoksa function unitten mi gelecek onu belirliyordu. Read, write işlem sonucu register file'da saklanacak mı? Memory, write işlem sonucu memory'e yazılacak mı? Sonrasında da koşulu koşulsuz dallanma kontrolücülerimiz vardı. Bunlardan birincisi bir dallanma olup olmadığını veyahut da program counter'ın farklı bir değerle load elip edilmeyeceğini belirleyen bir kontrolücümüz.
+
+16
+00:06:40,255 --> 00:06:50,075
+Standart bir yapıda hatırlayacak olursanız, eğer akış olarak devam eden bir kodumuz varsa, herhangi bir koşulu koşulusuz dallanması yoksa, bu durumda...
+
+17
+00:06:50,836 --> 00:07:07,076
+Program hafızasında bir sonraki instruction'ı gösterecek şekilde program counter'ın uygun adımlarla arttırılması söz konusuydu. Burada uygun adım olarak tanımladığımız şeye bakacak olursak aslında bir instruction memory'de kaç byte yer kaplıyor. Buna göre uygun adım sayısı belirlenebilir.
+
+18
+00:07:11,764 --> 00:07:17,744
+2 byte'den oluşan bir yapı düşüncek olursak program counter'ın her instrakşından sonra 2-2 artması gerekiyordu.
+
+19
+00:07:18,324 --> 00:07:24,884
+Eğer böyle ardışıl bir şekilde gidecek program akışımız yoksa ve bir yerde kırılıp bir dallanma söz konusuysa,
+
+20
+00:07:24,884 --> 00:07:33,843
+burada yapacağımız işlemin bir jump işlemi yani koşulsuz dallanma mı yoksa bir koşullu dallanma mı olup olmadığını anlamak üzere iki kontrolümüz daha vardı.
+
+21
+00:07:34,424 --> 00:07:39,764
+İşlem bir koşulsuz dallanma ise bu durumda program counter'a doğrudan bir yazma çizmesine...
+
+22
+00:07:39,764 --> 00:07:57,144
+Eğer işlem sonucu bir koşullu dallanmaya karşılık geliyorsa bu durumda o anki program counter değerine bir offset değeri eklenmesi gerekiyordu. Bu offset değeri de bir yazmak içerisinde veya bir değer olarak instruction içerisinde saklanmış oluyordu.
+
+23
+00:07:57,144 --> 00:08:06,723
+Bu koşullu dallanma durumunda vereceğimiz offset değeri to complement aritmetik mantığında eksi veya pozitif sayılar olması mümkündü.
+
+24
+00:08:07,764 --> 00:08:35,764
+Bu şekilde çıkarak instructionlardan da bahsetmiştik. Instructionlarla control world arasındaki temel fark arkadaşlar. Control world biraz daha spars bir gösterim, daha seyrek bir gösterim. Bununla birlikte instruction bu control world'un sıkıştırılmış bir hali. Aynı zamanda şunu da düşünebiliriz. Yani bir bakış açısı itibariyle farkları böyle ortaya koymak mümkün. Ama bir başka bakış açısıyla da şöyle değerlendirmek mümkün. Örneklerimizi de yapmıştık. Örneğin bizim...
+
+25
+00:08:35,764 --> 00:08:50,524
+Control Word mantığı içerisinde veyahut da Function Unit içerisinde herhangi bir yazımıcı sıfırlayan bir function'ımız yok. Neler vardı hatırlayacak olursanız. Şöyle tavloyu yukarıda alalım. Bunlar instruction'larımızdı.
+
+26
+00:08:52,052 --> 00:09:01,251
+Fonksiyonlarımıza baktığımız zaman, function unit içerisindeki fonksiyonlarına baktığımız zaman bir yazmacı sıfırlayan bir komutumuz, fonksiyonumuz yoktu.
+
+27
+00:09:01,251 --> 00:09:15,052
+Ama şunu görmüştük, bir yazmacı sıfırlayacak bir instruction'ımız olabilir. Bu instruction aslında arka planda A, XOR, A'yı çalıştıran bir komut olabilir. Dolayısıyla instruction'lar...
+
+28
+00:09:15,251 --> 00:09:24,451
+Control World'u daha üst seviyede kapsayan bir yapı ve Control World'u sıkıştırılmış kompakt bir hali olarak düşünmemiz mümkün.
+
+29
+00:09:24,892 --> 00:09:33,731
+Dolayısıyla Instruction'dan Control World'a dönüştürmek için bir çözümleyiciye, dekodere ihtiyacımız vardı. Onu da söylemiştik geçen haftaki tasarımımız itibariyle.
+
+30
+00:09:33,731 --> 00:09:41,491
+Dolayısıyla Single Cycle Computer mimarisi için bütün bileşenleri bu şekilde ifade etmemiz mümkündü. Görmüştük bunu.
+
+31
+00:09:41,919 --> 00:10:04,159
+Burada bir program kağunter instruction memory'de sıradaki hangi instruction'ın seçileceğini belirliyordu. Bir adres seçici olarak çalışıyordu program kağunter burada. Dolayısıyla instruction memory'deki bir göz program kağunter vasıtasıyla seçildikten sonra bu instruction, instruction decoder'e girip ilgili kontrol word'u üretiyordu. Bu kontrol word'a göre.
+
+32
+00:10:04,692 --> 00:10:28,392
+Bir cycle'da yürütmek istediğimiz instruction gerçekleştiriliyordu. Eğer yürüteceğimiz instruction içerisinde bir takım immediate değerler varsa bunlar uygun şekilde MUX B'nin bir kanalı itibariyle ve B yolu üzerinden function unit'e aktarılıp fonksiyonlara sabit değerler olarak aktarmak mümkün oluyordu.
+
+33
+00:10:30,899 --> 00:10:45,519
+Eğer koşullu dallanmalarla ilgileniyorsak, koşullu dallanmalarla ilgili yine offset miktarı, instruction içerisinde gömülü geliyordu. 6 bitlik bir değer olarak gömülü geliyordu. Bu değeri uygun şekilde extend edip, sign extend edip program counter'ı eklemek mümkündü.
+
+34
+00:10:52,211 --> 00:11:03,551
+Nereden takip ediyoruz onu? Şuradan takip edebileceğimiz yol itibariyle mesela A kanalından gelen bir değer doğrudan program counter'a yüklenip koşulsuz dallanma gerçekleştirmek mümkün oluyordu.
+
+35
+00:11:03,551 --> 00:11:17,372
+Program counter'ın değer eklememi, değer yüklememi yoksa bir sonraki instrakşına geçecek şekilde bir arttırma, inkrement şeklindeki işlemlerinin gerçekleşip gerçekleşmeyeceği buradaki branch control birimi sayesinde gerçekleştiriliyordu.
+
+36
+00:11:17,759 --> 00:11:40,580
+Branch kontrolün girdilerine bakacak olursak da koşullu koşulsuz dallanma ve program counter load kontrollerini girdi olarak alıyor. Bir de function unit'in çıktılarını yani yapılan işlem sonucunda elde edilen bayrak değerlerini dikkate alarak bu koşullu koşulsuz dallanma durumlarını ve bir sonraki instrakşına geçme durumlarını kontrol eden bir yapı burada söz konusu olmuş oluyordu.
+
+37
+00:11:40,580 --> 00:11:44,580
+Bu yapı dediğimiz gibi single cycle kompütör mimarisini oluşturuyordu.
+
+38
+00:11:45,076 --> 00:11:51,076
+Arkadaşlar, bu hafta katılım inanılmaz düşük olmuş. Haftaya kısa sınavımız var biliyorsunuz.
+
+39
+00:11:54,936 --> 00:12:00,375
+Yani biraz dikkat etmek gerekiyor devam konusunda.
+
+40
+00:12:01,216 --> 00:12:05,776
+Bilmiyorum dersin ilerleyen saatlerinde nasıl olacak ama bu dikkatimi çekti yani şu noktada.
+
+41
+00:12:07,235 --> 00:12:08,495
+Devam edecek olursak.
+
+42
+00:12:11,124 --> 00:12:15,723
+Single cycle computer mimarisinde görmüş olduğunuz mavi ile işaretli bloklar arkadaşlar.
+
+43
+00:12:16,244 --> 00:12:21,363
+Bunlar senkron devreler, ardışıl devre mantıkları, registerlar içeriyor.
+
+44
+00:12:21,624 --> 00:12:25,963
+Ve bunlar clock işaretinin yükselen kenarı ile birlikte çalışan yapılar.
+
+45
+00:12:31,283 --> 00:12:34,043
+Şimdi haftaya da bizim sınavımız olacak. Ne olacak bakalım.
+
+46
+00:12:36,884 --> 00:12:43,764
+Single cycle computer mimarisinde mavi ile işaretlenmiş olan alanlar senkron devreleri belirliyor arkadaşlar.
+
+47
+00:12:43,764 --> 00:12:51,544
+Senkron devreler ortak bir saat darbesiyle saat darbesinin örneğin yükselen kenarında durum değiştiren lojik blokları tanımlıyor.
+
+48
+00:12:51,644 --> 00:12:56,464
+Bunun haricinde gri ile işaretlenmiş olan alanlar ise kombinasyonel devreleri belirliyor.
+
+49
+00:12:56,624 --> 00:13:04,764
+Dolayısıyla burada aslında biz bir instruction'ı oluşturduğumuz zaman, instruction'ı dekoderden geçirdikten sonra kontrol uçları vasıtası...
+
+50
+00:13:04,884 --> 00:13:32,884
+Dolayısıyla burada değerler hazırlanmış oluyor. Yani mesela function unit de biraz hani detayına bakacak olursak function unit bir değer çıkmış oluyor. Shifter bir değer çıkmış oluyor. Fakat bunlardan hangisinin seçileceği yine control world vasıtasıyla belirlenmiş durumda. Yani ta register file'ın data girişine kadar değerler hazır. Ama bunların doğru olup olmadığı şu anda meçhul. Büyük ihtimalle de doğru değiller. Çünkü daha A ve B kaynakları, hatları.
+
+51
+00:13:32,884 --> 00:13:52,724
+Dolayısıyla clock işaretinin yükselen kenarı, A ve B hatları da kanaldan çıktılar ve D ucuna kadar geldiler ve clock işaretinin yükselen kenarı ile birlikte register file içerisine doğru değer aktarılacak mesela. Dolayısıyla burada kombinasyonel devre bloklarında değerler üretiliyor.
+
+52
+00:13:54,707 --> 00:14:05,167
+Sequential devre bloklarında değerler çıktılarda mevcut. Değerler üretilip Sequential devre bloklarının girişlerine kadar aktarılıyor ama burada bekliyoruz.
+
+53
+00:14:05,504 --> 00:14:33,444
+Çünkü bize gerekli olan bir klok işareti, senkron bir klok işareti. Ondan sonra içeride mavi bloklarda durum değişimi oluyor. Bunu kabaca bu şekilde düşünmemiz lazım. Şimdi geçen hafta bu noktaya kadar getirilmiştik. Özellikle arkadaşlar bu ALU tasarımı kısmına dikkat edin. ALU tasarımı ile ilgili örnekler de çözdük. Hem ileri yönlü hem geri yönlü örnekler çözdük hatırlayacak olursanız. Yani bir fonksiyon tablosu verip tasarımı gerçekledik. Daha sonra yapılmış bir tasarımı ele alıp
+
+54
+00:14:33,504 --> 00:14:49,504
+Bu tasarımın hangi fonksiyonlara karşılık geldiğini de bulmuştuk. Dolayısıyla bunlara dikkat edin. En genel anlamda bir aritmetik birim tasarımını dersimiz kapsamında bir tam toplayıcı kullanarak gerçekleyeceğiz. Dolayısıyla tam toplayıcı...
+
+55
+00:14:49,711 --> 00:15:08,572
+İçin X, Y girişleri ve kereğin girişi vardı. Hatırlatma babından söylüyorum. Dolayısıyla bizim aslında verilen tabloya göre, verilen bir fonksiyon tablosuna göre aritmetik bilim tasarımında X kanalına bağlı olan değerleri, X kanalına gelecek olan değeri bir fonksiyon olarak elde etmemiz.
+
+56
+00:15:08,572 --> 00:15:16,732
+Y kanalına aktarılacak değeri bir fonksiyon olarak elde etmemiz ve kere yine bağlanacak fonksiyonu elde etmemiz gerekiyor en genel anlamda.
+
+57
+00:15:17,711 --> 00:15:19,731
+durumlarda şöyle kısıtlamalar yapabiliyoruz.
+
+58
+00:15:19,731 --> 00:15:21,371
+İşte Function Unit'in
+
+59
+00:15:21,371 --> 00:15:23,532
+kontrol işlerinden bir tanesi doğrudan kereğine
+
+60
+00:15:23,532 --> 00:15:25,631
+bağlı olacak diye bir kısıtlama koyduğumuzda
+
+61
+00:15:25,631 --> 00:15:27,831
+ona göre tasarımı yapmamak
+
+62
+00:15:27,831 --> 00:15:29,532
+uygun şekilde yapmak gerekiyor
+
+63
+00:15:29,532 --> 00:15:31,532
+olacak. Dolayısıyla
+
+64
+00:15:31,532 --> 00:15:33,391
+geçen hafta bu noktaya kadar gelmiştik.
+
+65
+00:15:34,111 --> 00:15:36,091
+Bir de burada şeyden bahsetmiştik.
+
+66
+00:15:36,432 --> 00:15:37,731
+Kritik yol kavramından
+
+67
+00:15:37,731 --> 00:15:39,831
+bahsetmiştik. Kritik yol da
+
+68
+00:15:41,844 --> 00:16:01,584
+Kullanacağımız, kullanabileceğimiz tüm instrakşınlar açısından değerlendirdiğimizde bu single cycle computer içerisinde en fazla, en uzun yolu kat etmesi gereken komut bloğunu düşündüğümüzde örneğin hem register file'ı çalıştıran hem MUXB'yi çalıştıran hem Function Unit'i çalıştıran hem MUXD'yi çalıştıran bir komut örneğinden bahsedebiliriz.
+
+69
+00:16:01,584 --> 00:16:09,184
+Olası tüm komutlar arasında en fazla süreye sahip olan komut bizim için önemli. Çünkü bu bizim için bir kritik yol oluşturuyor.
+
+70
+00:16:09,844 --> 00:16:37,224
+Yolda aslında senkron blok elemanları için bizim belirleyeceğimiz saat frekansına doğrudan alakalı bir şey. Bizim mesela belirlemiş olduğumuz kritik yol açısından yani en uzun süre alan komut açısından elde ettiğimiz belirli bir T süresi varsa bizim ulaşabileceğimiz maksimum frekans bir bölü T değeri olarak belirlenmiş olacak clock işareti açısından. Dolayısıyla bu sayede single cycle computer mimari mantığını tamamlamış oluyoruz.
+
+71
+00:16:37,844 --> 00:16:45,864
+Buradan sonraki slide'lar Multicycle Computer mimarisine ait. Buraya genel olarak değinmeyeceğiz ama tek bir konuya değinmek istiyorum bununla ilgili olarak.
+
+72
+00:16:46,564 --> 00:16:57,524
+Bir pipeline mantığından bahsedeceğiz arkadaşlar. Bu pipeline mantığı temel olarak az önce görmüş olduğunuz mimari için, şuradaki mimarimize tekrar geri dönelim.
+
+73
+00:16:58,932 --> 00:17:10,172
+Burada görmüş olduğunuz mimar için bir clock cycle'a gerçekleştirilen instruction'ı alt adımlara bölerek daha efektif bir değer elde etmeyi amaçlıyor.
+
+74
+00:17:10,812 --> 00:17:25,052
+Buradan kasıt şu, örneğin biz bir verinin bir komut yürüteceksek, bu komut yürüteceğimiz komutun aslında temel olarak belirli bloklar çerçevesinde işlenmesini tanımlıyoruz.
+
+75
+00:17:25,052 --> 00:17:26,892
+Bunların anlamı şu, örneğin.
+
+76
+00:17:26,932 --> 00:17:30,452
+Bir instruction memoryden değer çıktığı zaman bu instruction decoderden geçiyor.
+
+77
+00:17:31,284 --> 00:17:59,284
+Dolayısıyla öncelikli işimiz instruction'ın fetch edilmesi gerekiyor. Bir memory var, instruction memory. O instruction memory'nin alınıp getirilmesi gerekiyor. Memory'deki bu instruction'ın CPU'ya getirilmesi lazım. CPU'ya getirildikten sonra bunun çözülmesi lazım. Çözüldükten sonra operantların çekilmesi lazım. Register'dan olabilir veya data memory'den olabilir. Bunların getirilmesi lazım. Yine operantların CPU'ya getirilmesi lazım. Operantlar CPU'ya getirildikten sonra bu işlemin yürütülmesi lazım.
+
+78
+00:17:59,284 --> 00:18:18,804
+Yürütülmesi gerekiyor. Instruction neyse, ona karşılık gelen işler neyse bunun yürütülmesi gerekiyor. Yürütüldükten sonra da geri yazılması gerekiyor. Yazmacıya yazılabilir, register file'a veya memory'e yazılabilir. Dolayısıyla baktığımız zaman kabaca 5 adım çerçevesinde, belki bazı mikro işlemcilerde 4 adımda, bazılarında 6 adımda tanımlanabiliyor.
+
+79
+00:18:19,231 --> 00:18:33,971
+Dolayısıyla böyle alt adımlara bölerek instruction yürütmeyi ayrık bloklar halinde tanımlamak mümkün. Bizim şu anda dersimizde görmüş olduğumuz Mimari Single Cycle Computer Mimari'si olduğu için bu beş adımı aynı anda gerçekleştirmeye çalışıyor.
+
+80
+00:18:33,971 --> 00:18:46,771
+Dolayısıyla bir instruction için, bir instruction'ın bitebilmesi için, yürütülebilmesi için, tamamlanabilmesi için bütün bu adımlardan tek tek geçmesi lazım. Bu adımlar neler? İşte instruction'ın fetch edilmesi.
+
+81
+00:18:47,443 --> 00:19:01,443
+Ondan sonra bu instruction'ın çözülmesi, operantların fetch edilmesi, fonksiyonun yürütülmesi ve geri yazdırma. Bakın burada da bunlara karşı gelen bir akış var. Dolayısıyla bizim bir instruction'ımız bu tekil...
+
+82
+00:19:02,175 --> 00:19:23,596
+Bir seferde aktif olan tekil blok üzerinden gerçekleşiyor. Pipeline mantığı nerede ortaya çıkıyor? Pipeline mantığı multi-cycle computer mimarisine, yani bir instrakşını yürütmek için alt-clock sinyallerine böldüğümüz bir duruma karşılık geliyor. Yani bir instrakşın 4-5 veya alt-clock işaretinin sonucunda gerçekleşmiş oluyor.
+
+83
+00:19:24,295 --> 00:19:30,175
+Aslında yapmak istediğimiz iş multi-cycle computer mimarisine gerçekleşiyor.
+
+84
+00:19:30,175 --> 00:19:55,536
+gerçekleştirilebilecek bir şey. Yani bir instruction'ı alt adımlara bölmek multicycle computer mimarisinde olabilecek bir şey. Single cycle computer mimarisinde olamıyor bu. Dolayısıyla multicycle computer tarafında sadece buna değinmiş olacağız. Yapacağımız işlem aslında instruction'ı yürütme adımlarını alt bloklara ayırıyoruz. Bu alt bloklardan kastımız birincisi şu olabilir mesela instruction fetch.
+
+85
+00:19:58,175 --> 00:20:14,375
+Yani komutun getirilmesi. Program hafızasından sıradaki komutun mikro işlemciye getirilmesi. Daha sonraki adım instruction decode işlemi. Instruction decode işlemi de aslında instruction'dan control word'e çözümlemeyi sağlamak.
+
+86
+00:20:14,900 --> 00:20:36,380
+Bir ikinci adımımız. Üçüncü adımımız artık işlem belli. Hangi operantlar üzerinden bunları yürüteceği belli. Dolayısıyla üçüncü adımımız bu instrakşına ilişkin operantları gidip almak. Bunlar yazmaçlardaki değerler olabilir veya memordaki değerler olabilir. Yani memordan bir değeri belki içeri yazmacı aktarmamız gerekecek veya doğrudan yazmaçtaki değerleri kullanacağız.
+
+87
+00:20:37,140 --> 00:20:53,019
+Dördüncü bir adımımız artık operantlar hazır, instruction belli, komut belli. Dolayısıyla bu komutu yürütmek, execution adımı var. Daha sonrasında da yürütmüş olduğumuz bu komutu tekrar değer olarak nereye aktarmamız gerekiyorsa aktaracağız. Bu da writeback işlemi.
+
+88
+00:20:53,200 --> 00:21:05,019
+Writeback işleminde de işlem sonucu yazmaçta saklanır veya memoriye saklanacaksa memoriye aktarılır. Dolayısıyla biz bir instruction'ın yürütülmesini alt beş adıma bölmüş olduk bu sayede. Bu adımlar arasında...
+
+89
+00:21:05,140 --> 00:21:13,440
+Verinin kaybolmaması için bahsetmiş olduğumuz her bir adımdan sonra bir tane yazmaç eklenerek aslında bu pipeline yapısı gerçeklenebilir.
+
+90
+00:21:14,259 --> 00:21:20,519
+Yani ne olacak? Birinci clock cycle'da program counter ilgili instruction'ı fetch edecek.
+
+91
+00:21:20,880 --> 00:21:23,160
+Fetch edilen instruction bir yazmaçta saklanabilir.
+
+92
+00:21:23,604 --> 00:21:40,703
+Tam bu sırada instruction decode bloğu daha önceden çekilmiş olan bir instruction'ı çözmekle meşgul ediyor ve çözmüş olduğu değeri control word değerini, yani bir önceki adımda çözmüş olduğu bir önceki adıma ilişkin instruction'a ait çözmüş olduğu control word değerini bir yazmacında saklar.
+
+93
+00:21:40,703 --> 00:21:51,604
+Bu yazmacına göre de bir sonraki adım yürütülebilir. Bununla birlikte üçüncü bloğumuzda operant fetch bloğunda iki adım önceki instruction'a ilişkin operantların...
+
+94
+00:21:51,604 --> 00:21:59,604
+çekilmesiyle ilgili işlem yürütülüyordur. Ve çekilen instrakşınlar ilgili yaz maçlarında saklanabilir. İşte program...
+
+95
+00:22:00,531 --> 00:22:10,051
+Mesela 4 adım önce gelen bir instrakşına ilişkin olarak da o instrakşına ait yürütme işlemi gerçekleştirilip işlem sonucu bir yazmaçta saklanabilir.
+
+96
+00:22:10,731 --> 00:22:17,471
+Ve aslında writeback tarafına baktığımızda da 5 adım önceki bir instrakşının sonucu elde edilmiş, bir yerde saklanmış.
+
+97
+00:22:17,571 --> 00:22:23,611
+O sonuç alınıp memurdaya aktarılacak, register file aktarılacak. Bu aktarma işlemi gerçekleştiriliyor olabilir.
+
+98
+00:22:23,611 --> 00:22:28,371
+Dolayısıyla 5 clock cycle'da yine bir komut yürütülecek.
+
+99
+00:22:28,531 --> 00:22:44,311
+Fakat blokların hepsi bu alt cycle'larda aktif olduğu için throughput'u arttırmış olacağız. Yani saniyede birim zamanda işlenen komut miktarını arttırmış olacağız bu sayede. Hatta şöyle bir avantajımız da olacak.
+
+100
+00:22:56,531 --> 00:23:13,231
+Burada süre alan birimler var ve bu birimlerin total süreyi uzatması söz konusu. Dolayısıyla ben burada bir instruction yürütürken mesela function unitte işlem sonucu hesaplamaya çalışırken instruction memoriyle ilgili durum veya blok boşta bekliyor. Dekot işlemi boşta bekliyor.
+
+101
+00:23:13,652 --> 00:23:40,792
+Boşta bekleme var bu durumda. Seri olarak komut yürütme kontrolünü incelediğimiz zaman. Pipeline'a geldiğimiz zaman ne var? Pipeline'a geldiğimiz zaman bütün alt bloklar aynı anda aktif. Ama birincisi, 5 adım önceki Instruction'ın son bloğunu karşılık işlem yürütürken, Instruction Fetch bloğu mevcut. Şu anki komuta ilişkin olarak Instruction Fetch işlemini gerçekleştirmeye çalışıyor.
+
+102
+00:23:41,652 --> 00:23:53,632
+Burada ne tür bir avantajımız var? Bu alt bloklardan en fazla süreyi hangisi kapsıyorsa bütün bu alt cycle'ları buna göre senkronize edip en uzun süreye göre
+
+103
+00:23:54,228 --> 00:24:17,448
+Bir senkron klok işareti belirlememiz mümkün. Fakat avantajımız nerede? Avantajımız boşta bekleyen bir blok olmasına gerek yok. Ne ile ilgili bu? Bütün bloklar farklı instrakşınların, farklı alt bloklarını yerine getiriyor olacaklar o aynı anda. Dolayısıyla throughput'umuzu arttırmaya çalışacağız. Bununla ilgili olarak şöyle bir örnek üzerinde gösterebiliriz.
+
+104
+00:24:17,759 --> 00:24:33,240
+Bu örnekte az önce bahsetmiş olduğumuz yapı haricinde bir instruction yürütülmesi 4 alt bloğa ayrılmış. Bunlar instruction fetch, operant fetch, execution ve writeback şeklinde tanımlanmış.
+
+105
+00:24:33,240 --> 00:24:39,819
+Yani az önce bahsettiğimiz bloklardan bir tanesi instruction decode ve operant fetch.
+
+106
+00:24:40,692 --> 00:24:55,352
+Dikkat arasında olan instruction decode işlemi belki instruction fetch bloğu içerisinde yedirilmiş olabilir. Dolayısıyla bir instruction yürütülmesi 4 alt blok çerçevesinde tanımlanmış. Buradaki avantaj şu. Bu şekil üzerinde bunu net bir şekilde görebiliyoruz.
+
+107
+00:25:10,036 --> 00:25:12,036
+Bunları nasıl tanımlayabiliriz?
+
+108
+00:25:14,336 --> 00:25:19,136
+T0 anında sadece T0 anımız nereye karşılık gelecek?
+
+109
+00:25:19,336 --> 00:25:22,796
+T0 anımız aslında şuna karşılık gelsin.
+
+110
+00:25:23,036 --> 00:25:24,716
+Çünkü instruction fetch de var.
+
+111
+00:25:27,196 --> 00:25:30,436
+Bunu tam olarak böyle verdiğimiz zaman tabii anlamlı olmadı.
+
+112
+00:25:31,028 --> 00:25:39,748
+Şöyle, tersten düşünürsek daha anlamlı olacak. İşte belirli bir takım instrakşınlar alınmış, yürütülmüş ve o sırada yeni bir komut alıyoruz.
+
+113
+00:25:40,468 --> 00:26:03,848
+Yeni bir komutumuz geldi. Bu komuta ilişkin olarak yürütmemekte olduğumuz işlem birinci komutun instruction fetch işlemi. Yani t eşittir sıfır anında birinci komuta ilişkin olarak instruction fetch işlemini yürütüyorum. Bu sırada operant fetch, execution ve write back blokları boşta. Onların bir fonksiyonu yok. Çünkü onlara ilişkin daha bir girdi sağlanmamış durumda.
+
+114
+00:26:08,468 --> 00:26:10,808
+Instruction Fetch Bloğu sonuç üretmişti.
+
+115
+00:26:11,167 --> 00:26:29,027
+T2 anına geçtiğimiz zaman birinci instrakşına ilişkin olarak operant fetch bloğu birinci instrakşının operant fetch işlemini gerçekleştiriyor olacak. Bununla birlikte ikinci bir instrakşınımızı da parça parça yürütmeye başlayabiliriz. Çünkü ikinci bir instrakşın sırada geldi ve bunun instrakşın fetch edilmesi lazım.
+
+116
+00:26:39,167 --> 00:26:58,207
+IF bloğu meşgul olabilir. T eşittir 3 anına geldiğimizde artık birinci instrakşının operantları da çekilmiş. Bu birinci instrakşının yürütme bloğuna geçirilip bu birinci instrakşının yürütülmesi sağlanırken ikinci instrakşının operantları OF bloğu tarafından çekilebilir. Çünkü OF bloğu boşta.
+
+117
+00:26:58,576 --> 00:27:22,216
+Bu sefer IF bloğu da ikinci instrakşının çekilip çözülmesinden sonra IF bloğu da boşa düştü. Dolayısıyla üçüncü bir instrakşın için IF bloğu aktif olabilir. Üçüncü bir instrakşını çözmeye başlayabilir. Dolayısıyla bu şekilde birer adım kaydıra kaydıra her bir blokta öyle bir ana denk geliriz ki ve bu komutların mesela dört instrakşında bittiğini varsaymayalım.
+
+118
+00:27:22,216 --> 00:27:26,536
+20 instrakşın boyunca devam edeceğini varsayalım. Dolayısıyla artık öyle bir ana geliyoruz.
+
+119
+00:27:26,576 --> 00:27:48,936
+Gördüğünüz gibi herhangi bir T anında artık blokların hepsinin aktif olduğu, her birisi farklı bir instruction'ın farklı bir alt blokunu yürüttüğü durumlara karşı karşıya geleceğiz. Dolayısıyla alt blokların hepsi aktif bir şekilde çalışır durumda. Burada ne vardı? Burada mesela function unit aktif olurken instruction fetch kısmı boşta bekleyecekti gibi.
+
+120
+00:27:49,395 --> 00:27:58,915
+Fakat burada artık belirli bir instruction yoğunluğuna ulaştıktan sonra tüm blokların farklı birer instruction'ın alt adımını yürüttüğü durumlarla karşılaşıyor olacağız.
+
+121
+00:27:58,915 --> 00:28:11,035
+Şimdi burada örnek soruya bakacak olursak 20 instruction'lık bir setimiz var, komutumuz var. Bunlar herhangi bir koşulu koşulsuz dallanma içermiyor olsun.
+
+122
+00:28:11,571 --> 00:28:36,631
+Bu durumda her bir cycle'ımızda yani IF, OF, execution ve writeback bloklarına baktık. Bunlardan en fazla süre tutanı 5 nanosaniyeymiş. Dolayısıyla biz de kendimiz açısından alt cycle'lar için 5 nanosaniyelik bir senkron clock belirledik. Dolayısıyla her bir alt cycle 5 nanosaniye süre alacak. Bu durumda 20 tane instruction'ı yürütmek ne kadar süre alır? Bunu belirlememiz gerekiyor.
+
+123
+00:28:40,435 --> 00:28:46,615
+Aynı işlemi seri bir komut yürütme mantığıyla incelediğimizde ne kadar süre olur ona da bakacağız.
+
+124
+00:28:47,235 --> 00:28:49,435
+Tabi burada her bir alt adım...
+
+125
+00:28:49,907 --> 00:29:06,087
+5 nanosaniyede yürütülmüş ama bu aslında şu demek. Bunlardan bir tanesi 5 nanosaniye sürmüş ama diğerleri 5'ten az olabilir. Ama en fazla olan hangisi ise alt bloklar açısından, senkronizasyon sağlamak açısından 5 nanosaniyelik bir ortak blok belirlemişim.
+
+126
+00:29:17,907 --> 00:29:35,008
+Instruction, fetch, 4 nanosaniyede writeback sürüyor. Yani toplamda bu blokları seri olarak yürütmeye çalışsak 17 nanosaniye olacaktı. Fakat en fazla süre alan 5 nanosaniye olduğu için biz burada her birini alt adıma böldüğümüzde 5 nanosaniye bir alt adım frekansı belirlemiş olalım.
+
+127
+00:29:35,859 --> 00:29:57,439
+Şimdi bu durumda 20 tane instruction yürütmek ne kadar sürer? Klasik durumda ne kadar sürer? Her bir instruction'ın IF bloğundan, OF bloğundan, X bloğundan, VB bloğundan geçip bu giren IF'den giren VB'den çıktıktan sonra bir sonraki instruction'ı alabildiğimiz duruma karşılık gelecek senaryo için her bir instruction 17 nanosaniye sürer.
+
+128
+00:29:57,439 --> 00:30:00,000
+20 tane instruction yürüteceksen 20 çarpı...
+
+129
+00:30:00,000 --> 00:30:27,879
+Toplamda 340 nanosaniye 20 tane komutu yürütmek için klasik durumda yani seri durumda yani şuradaki durumda elde edeceğim süre oluyor. Peki 20 tane instrakşını ben bu şekilde pipeline mantığında yürütecek olursam ne olur? Bu durumda yerleşimi bir kontrol edelim arkadaşlar. Birinci instrakşın yerleşti. İkinci instrakşın T2'de yerleşiyor. Üçüncü instrakşın T3'de yerleşiyor. Böyle böyle. T eşittir 20'ye kadar ve hatta T eşittir 20'de.
+
+130
+00:30:28,000 --> 00:30:47,980
+20. instruction IF'ye yerleşti. 20. instruction'ın IF'ye yerleşmesi 20 birim zaman aldı. 20. instruction'ın bitmesi için de 3 tane bloğu daha ihtiyacımız var. Dolayısıyla artı 3 tane daha zamana ihtiyacımız var. Dolayısıyla şu ortaya çıkıyor. 1. instruction IF'ye girmesinden.
+
+131
+00:30:48,627 --> 00:31:09,567
+20. instruction'ın IF'ye girmesine kadar 20 birim zaman geçerken 20. instruction'ın bitirilmesi için de ek olarak 3 tane 3 zaman birimine daha ihtiyacım var. Dolayısıyla pipeline mantığına baktığımızda toplamda 20 tane komutun yürütülebilmesi için 23 tane birim zamana ihtiyacımız var.
+
+132
+00:31:10,304 --> 00:31:27,163
+cycle zamanına ihtiyacımız var. Eğer ki biz burada instructionlarımızı alt adımlar olarak mesela 8 adıma bölmüş olsaydık o durumda 20 tane instruction'ı yürütmek için gerekli olan cycle süresi ne olacaktı? Benzer bir mantık yürütelim.
+
+133
+00:31:27,163 --> 00:31:37,683
+T eşittir 1'de birinci komut IF'ye girdi. T eşittir 2'de ikinci komut IF'ye girdi. Nokta nokta nokta. T eşittir 20'de 20. komut IF'ye girdi.
+
+134
+00:31:38,304 --> 00:32:05,844
+20. komutun tamamlanması için 7 tane daha adım var. Toplamda 8 alt adıma bölmüştük ya. Dolayısıyla 27 cycle'da 20 tane instruction'ı ve bu vermiş olduğumuz 8 alt adımlı pipeline çözebiliyor olacaktır. Dolayısıyla buradaki 23'ün çıkması 3 dediğimiz alt adım sayısı eksi 1. 20 dediğimiz kaç tane instruction varsa. Dolayısıyla buradaki toplam gerekli cycle sayısını bu mantık çerçevesinde hesaplayabiliriz. Toplamda 23 cycle gerekiyor.
+
+135
+00:32:06,175 --> 00:32:16,395
+Bununla birlikte her bir cycle, her bir alt cycle'ımız 5 nanosaniye sürdüğü için burada toplam 115 nanosaniyelik bir süreye ihtiyacımız olduğunu görmüş oluyoruz.
+
+136
+00:32:16,695 --> 00:32:20,555
+Dolayısıyla pipeline mantığının faydasını bu şekilde tanımlamış oluyoruz.
+
+137
+00:32:20,555 --> 00:32:25,275
+Şimdi bu noktada bir kısıtımız vardı, bir koşulumuz vardı, onu baştan söylemiştim.
+
+138
+00:32:25,335 --> 00:32:31,555
+Bu 20 tane instruction için herhangi bir koşullu ve koşulsuz dallanma durumu olmadığını sırasıyla...
+
+139
+00:32:31,796 --> 00:32:53,536
+Bir akış çerçevesinde fonksiyon olarak bu instrakşınları yürütebileceğimiz bir senaryo olduğunu söylemiştik. Bu aklımızdayken pipeline'e bu şekilde instrakşınları çekemeyeceğimiz durumlar neler olabilir sizce? Bunları söyleyebilir misiniz? Birkaç örnek üzerinden. Bir örnek üzerinden de olabilir. Herhangi bir örnek üzerinden diyeyim.
+
+140
+00:32:54,932 --> 00:33:02,511
+Yani ne demek? Birinci instruction'ı alıp pipeline'a soktum. İkinci instruction'ı pipeline'a sokamamam için bir sebep ne olabilir?
+
+141
+00:33:03,511 --> 00:33:10,811
+Önceki instruction eğer bir sonraki instruction işleyeceği bir veri üzerinde değişiklik yapıyorsa bunu işleyemeyiz herhalde.
+
+142
+00:33:10,932 --> 00:33:11,531
+Yani işleyemeyiz.
+
+143
+00:33:11,531 --> 00:33:20,031
+Evet, kesinlikle. Aradığımız cevap buydu. Örneğin birinci instruction R1 ile R2 toplayıp sonucu R3'e atayacak.
+
+144
+00:33:20,435 --> 00:33:46,375
+İkinci instruction'da R3 ile bir şeyi işleme sokacak. Yani R3'ü bir operant olarak kullanıyor. Bu durumda ikinci instruction'a ilişkin IF bloğunun ne zaman aktif olması lazım? Right-back işleminin bittikten sonra aktif olması lazım. Yani burada IF'nin T eşittir 5'e kadar ötelenmesi lazım. Bu tür durumlar dediğimiz gibi akışı bozan durumlara bir örnek. Bir başka örnek ne olabilir?
+
+145
+00:33:50,259 --> 00:33:53,480
+Pipeline'e şimdi bunları hangi sırada alıyoruz bir de öyle düşünelim.
+
+146
+00:33:54,320 --> 00:33:57,120
+Şimdi daha komut yürütülmeden sıradaki komutu alacağız.
+
+147
+00:34:16,019 --> 00:34:19,559
+Yine doğrudan alakalı olmamakla birlikte şunu da söyleyebiliriz.
+
+148
+00:34:21,079 --> 00:34:30,939
+Şimdi günümüz bilgisayarlarında bu instrakşınlar her seferinde tek tek instrakşın memori'den çekilmek yerine toplu olarak çekilerek CPU içerisine getiriliyor.
+
+149
+00:34:30,939 --> 00:34:37,859
+Bir prefetch queue içerisinde tutuluyor. Daha sonra sırası geldiğinde ilgili pipeline ile yapıyorsak pipeline ile bu sayede giriyor.
+
+150
+00:34:38,260 --> 00:35:03,740
+Dolayısıyla böyle bir prefetch queue mantığı da varsa, bu şartı da ortaya koyarak tanımlayalım. Eğer programımıza bir takım koşullu koşulsuz dallanmalar varsa, biz şimdi sıradaki bütün instrakşınları mesela sıradaki 10 tane instrakşını aldık çektik ama 5. sıradaki instrakşın if A büyük 5, jump işte 100 gibi bir komut var. Dolayısıyla 100 çok ötede, 100'deki instrakşınları almamışız daha.
+
+151
+00:35:04,211 --> 00:35:12,931
+Dolayısıyla bizim çektiğimiz, prefetch, Q'ye çektiğimiz komutlar içerisinde 100. offset'e dallandığımız bir senaryo yok. Dolayısıyla bu koşul doğru ise...
+
+152
+00:35:13,215 --> 00:35:33,355
+Böyle bir koşul doğru ise biz dallanmanın uygun kolunu daha çekmemiş oluyor. Dolayısıyla o ana kadar çektiğimiz prefetch güya çektiğimiz bütün değerler çöp oluyor. Dolayısıyla dallandıktan sonraki kısma ait block instruction bloğunu tekrar çekmemiz gerekiyor. Bu da dolaylı olarak pipeline'i etkileyen bir senaryo olarak ortaya çıkmış oluyor.
+
+153
+00:35:33,844 --> 00:35:47,884
+Dolayısıyla arkadaşlar bu pipeline mantığını bu şekilde ifade etmiş olalım. Temel kullanım mantığını ve nasıl ele alınması gerektiğini tanımlamış olduk. Bu noktadan itibaren şeye geçeceğiz. Onu bir bulayım bakayım.
+
+154
+00:36:05,427 --> 00:36:31,007
+Böylelikle arkadaşlar, genel single cycle computer mimari tasarımını ve pipeline kavramını tamamlamış olduk. Baktığımız zaman ders planımıza göre şu kısım tamamlanmış oldu. Sırada giriş çıkış birimleri ve haberleşme var ve hemen yine bu haftanın konusu olan ön bellek konusu var. Dolayısıyla birazcık giriş çıkış birimiyle ilgili birazcık hızlı ilerleyeceğiz. Sonrasında ön bellek kısmına bu hafta içerisinde geçmeye çalışacağız.
+
+155
+00:36:31,795 --> 00:36:33,495
+Bunu kapatabiliriz.
+
+156
+00:36:34,895 --> 00:36:42,475
+Şimdi giriş çıkış birimleri CPU'lar için veya mikro işlemciler için önemli konulardan bir tanesi.
+
+157
+00:36:43,415 --> 00:36:48,335
+Temel olarak baktığımızda bir mikro işlemcinin fonksiyon gösterebilmesi için.
+
+158
+00:36:48,335 --> 00:36:51,175
+Mikro işlemci dediğimiz zaman aslında neyi kastediyoruz?
+
+159
+00:36:51,295 --> 00:36:56,536
+Şu anda dersimiz kapsamında gördüğümüz blok için şöyle ifade edebiliriz.
+
+160
+00:36:56,835 --> 00:36:57,915
+Hala şukarı çıkalım.
+
+161
+00:36:59,507 --> 00:37:27,387
+Mikro işlemci dediğim zaman aslında şuradaki datapath yapısına karşılık gelen durumu ele alalım. Tamam mı? Datapath yapısına karşılık gelen durum. Belki instruction decoder'i dahil eden durumlar da vardır. Ama kabaca şu datapath tarafını dikkate alalım. Bir CPU karşılığı bu. Dolayısıyla bir CPU'nun tek başına fonksiyon gösterebilmesi mümkün değil. Bunun fonksiyon gösterebilmesi için çeşitli çevre birimlerine ihtiyaç var. Yani daha ileriki derslerimizde.
+
+162
+00:37:27,507 --> 00:37:37,827
+Örneğin bir sonraki mikro işlemciler dersi için bu yardımcı çevre birimlerini ve yardımcı birimleri daha net bir şekilde tanımlıyor olacağız.
+
+163
+00:37:37,827 --> 00:37:49,827
+Ama şimdiden bahsetmek gerekirse bir CPU'nun fonksiyon gösterebilmesi için uygun buffer ve...
+
+164
+00:37:50,036 --> 00:38:15,416
+Tekrarlayıcı entegrelere ihtiyaç var. Bununla birlikte saat darbesi üreten bir yardımcı devreye ihtiyaç var. Bununla birlikte bir hafıza birimi bloklarına ihtiyacımız var. Bununla birlikte giriş çıkış birimlerine ihtiyacımız var. Bunlar hepsi bir arada varken mikro işlemci fonksiyon gösterebilir bir hale geliyor. Bununla birlikte bir de mikro denetleyici diye bir kavram var hatırlayacak olursanız.
+
+165
+00:38:15,860 --> 00:38:32,480
+Mikrodenetleyici kavramı ise içerisinde hem mikro işlemcisini, hem çevre birimlerini, giriş çıkış birimlerini, hem hafıza birimlerini, hem de çeşitli bu saat darbesi üreteci gibi çeşitli birimleri barındıran, program hafızası gibi birimleri içerisinde entegre olarak barındıran bir yapı.
+
+166
+00:38:33,199 --> 00:38:42,960
+Dolayısıyla mikrodenetleyici dediğimiz şey, bütün yardımcı birimleri kendi içerisinde hazır olduğu için buna enerji verdiğimiz zaman fonksiyon gösterebilir durumda oluyor genel olarak.
+
+167
+00:38:43,603 --> 00:38:56,103
+Mikro işlemci ise bahsetmiş olduğumuz yardımcı birimlere, hafıza birimlerine ve çevre birimlerine ihtiyaç duyduğu için doğrudan CPU'ya bir enerji verdiğiniz zaman fonksiyon gösterebilir durumda değil.
+
+168
+00:38:56,823 --> 00:39:11,143
+Dolayısıyla burada input output veya giriş çıkış birimleri dolaylı olarak, dolayısıyla bir mikro işlemcinin veya bir CPU'nun çalışabilmesi, fonksiyon gösterebilmesi için önemli adımlardan, önemli basamaklardan bir tanesini oluşturmuş oluyor.
+
+169
+00:39:11,668 --> 00:39:29,888
+Temel olarak bizim kullandığımız giriş çıkış birimleri klavye, ekran, hard disk, monitör gibi yapılar ve standart giriş çıkış birimleri olarak tanımlayabileceğimiz yapılar. Bunların kabaca olarak özelliklerinden bahsetmek gerekirse.
+
+170
+00:39:37,364 --> 00:39:52,943
+Matris formatında tanımlanmış bir yapı. Burada şöyle bir işlem söz konusu. Satır ve sütunları uygun şekilde taramamız gerekiyor. Bu tarama işlemine göre de bizim hangi tuşa basıldığını anlamamız söz konusu olacak.
+
+171
+00:40:04,083 --> 00:40:16,103
+Sırasıyla hangi satırın seçileceğini belirleyen bir kontrol. Dolayısıyla mikro denetleyici, klavye dediğimiz yapıda bir mikro denetleyici, yani kendi başına fonksiyon gösterebilir bir yapıdan bahsediyoruz.
+
+172
+00:40:16,103 --> 00:40:19,103
+Bir dekoder vasıtasıyla satırlara sırasıyla...
+
+173
+00:40:19,840 --> 00:40:47,840
+satırları sırasıyla aktif ediyor. Dolayısıyla burada mikro denetleyici sırasıyla dekoderin giriş uçlarına 0. satırdan 7. satıra kadar belirli bir frekansta tarama yapabilmesi için seçim değerleri gönderiyor. Yani periyodik olarak 0, 1, 2, 3, 4, 5, 6, 7 tekrar 0, 1, 2, 3, 4, 5, 6, 7 diye tek tek satırları aktif ediyor. Bu sırada biz herhangi bir tuşa basmış isek basmış olduğumuz tuşun denk geldiği satırla sütunu kısa devreye aktif ediyoruz.
+
+174
+00:40:47,840 --> 00:41:00,220
+Bunu yaptığımız durumda ise ilgili bir MUX girişi aktif olmuş oluyor. Bakın burada pek çok sütun var. Bu sütunlardan bir tanesinin aktif olduğunu düşünelim.
+
+175
+00:41:10,516 --> 00:41:18,655
+MUX'un seçim uçlarını kullanarak sırasıyla bütün sütunları aktif edip bütün sütun girişlerini tekrar mikrodenetleyiciye aktarabiliyoruz.
+
+176
+00:41:18,655 --> 00:41:29,776
+Yine burada da bir periyodik durum söz konusu. Ne demek bu? Sıfırıncı sütunu kontrol et, birinci sütunu kontrol et, ikinci sütunu kontrol et. Kontrol etten kasıt da birinci girişi çıkışa aktar.
+
+177
+00:41:30,143 --> 00:41:39,083
+İkinci sütunu girişe aktar. Eninci sütunu girişe aktar. Mikrodenetleyici de bu uçta sıfırdan farklı bir durum var mı yok mu diye kontrol edecek.
+
+178
+00:41:39,376 --> 00:41:58,536
+Şimdi biz şöyle bir senaryoyu düşünelim. Bu uçta sıfırdan farklı bir değer gördüm. Bunun anlamı ne? Bir tuşa basılmış. Bir tuşa basılmış ve ben bu uçta sıfırdan farklı bir değer görüyorum. Sıfırdan farklı bir değer gördüğüm anda benim dekodere vermiş olduğum satır aktivasyon değeri belli. Hangi satır aktif ettiğim belli.
+
+179
+00:41:58,996 --> 00:42:15,876
+Hangi sütunu okuduğum da belli. Şuradan MUX'un seçim uçlarıyla bunu sağlamışım. Dolayısıyla benim vermiş olduğum dekoder satırı ve MUX sütununda bir tuşa basılmış. Ben bunu bir look up table olarak tutup hangi satır, hangi sütundaki tuş, hangi ASCII karaktere karşı geliyor bunu tutabilirim.
+
+180
+00:42:24,403 --> 00:42:48,224
+Satır ve sütun tarama mantığında klavye tarama mantığı arkadaşlar. Klavye tarama mantığı bu çerçevede çalışıyor. Yani satırları aktif ediyoruz. Yani satırları sürüyoruz. Sürmek demek aktif etmek demek. Dolayısıyla sırasıyla satırlardan sadece bir tanesinde lojik bir oluyor. Diğerleri sıfır. Bir sonraki satıra geçtiğimde bu satır bir diğerleri sıfır. Bu şekilde değer üretiyorum. Değer üretmek sürmek demek.
+
+181
+00:42:48,820 --> 00:43:14,039
+Drive ediyoruz. Satırları sürmüş oluyoruz. Orada değer oluşturuyoruz. MUX tarafı da pasif bir şekilde çalışıyor. Değer okuyor. Değer okumaktan kasıtta MUX'un seçim uçları vasıtasıyla sütundaki değeri MUX'un çıkışına aktarıyoruz ve mikrodenetleyici tarafında buradaki değer 0 mı 1 mi diye kontrol ediyoruz. Dolayısıyla burada okuma söz konusu. Sütunları okuyoruz. Satırları sürüp sütunları okuyoruz sırasıyla tek tek.
+
+182
+00:43:14,612 --> 00:43:29,271
+Ve bu işlem o kadar yüksek bir frekansta gerçekleşiyor ki benim bastığım tuş ne kadar hızlı basıp çeksem dahi elimi kesinlikle bu tarama frekansında bulunuyor ve basılı olarak algılanabiliyor.
+
+183
+00:43:30,099 --> 00:43:58,099
+Dediğim gibi mikrodenetleyici içerisindeki lookup table'dan da bakıp hangi satır, hangi sütun aktif olduğu durumda, hangi ASCII karaktere karşılık gelen bir tuş var. Bunu da belirlemiş oluyoruz. Dolayısıyla klavye mantığı bu şekilde. Şurada görmüş olduğunuz yapının kendisi giriş çıkış birimi olarak isimlendiriliyor. Giriş çıkış biriminin kendisi bu. Ama giriş çıkış birimi tek başına yeterli değil. Giriş çıkış biriminin aktif olabilmesi için veya bir anlamı olabilmesi için.
+
+184
+00:43:58,099 --> 00:44:08,940
+MIPS için mikro işlemcinin veya CPU'nun veri adres ve kontrol yollarına bir arayüz vasıtasıyla bağlantı sağlaması lazım.
+
+185
+00:44:09,231 --> 00:44:36,092
+Biraz sonra bunu da detaylı bir şekilde göreceğiz. Burada özellikle söylemek istediğim giriş çıkış birimiyle arayüz cihazlarının farklı şeyler olduğu, giriş çıkış birimi safi bir şekilde bu giriş çıkış işlemini yerine getiren birim, interface arayüz dediğimiz birimde giriş çıkış birimiyle mikro işlemcinin veri, adres ve kontrol yolları arasındaki iletişimi sağlayan adı da üzerinde arayüz olmasıyla tanımlanmış oluyor.
+
+186
+00:44:36,463 --> 00:44:53,384
+Dolayısıyla klavye mantığını bu şekilde tanımlayabiliriz. Yine mikro işlemciler dersinde tuş tarama ile ilgili deneylerimiz olacak. Onunla ilişkili olarak tuş tarama deneyleri yapacağız. Ondan bahsetmiş olayım ileriki derslerde.
+
+187
+00:45:03,347 --> 00:45:22,648
+Her bir disk içerisinde halkalar şeklinde veri blokları var. Bu veri bloklarının her birisi sektör olarak adlandırılıyor. Verilerin başladığı, veri bloklarının başladığı alanlar trackler olarak isimlendiriliyor. Yani veri bloklarının başladığı belirli noktalar, alanlar var.
+
+188
+00:45:28,596 --> 00:45:46,276
+sektörünü belirlediği için bir manyetik iğne bu sektörler arasında hareket ederek dışarı doğru veya içeriye doğru farklı bir sektördeki farklı bir veri bloğunu okuyabiliyor. Bu manyetik bir hard disk'in çalışma mantığının kabaca bu şekilde bahsetmiş olalım. Biraz hızlanmak adına hızlı geçiyorum.
+
+189
+00:45:49,652 --> 00:46:17,372
+CRT monitörler vardı. Görmüşsünüzdür, hatırlarsınız. CRT monitörlerde bir elektron tabancası şeklinde bir tüp yapısı var. Bu tüp yapısının içerisinde yatayda ve dikeyde elektrona yön veren yatay elektromanyetik dalgalar ve dikey elektromanyetik dalgalar üretilerek elektronun tabancasından gönderilmiş olan elektronun yönlendirilmesi ve işte belirli bir sıra mantığında da buradaki ekranı taraması.
+
+190
+00:46:17,652 --> 00:46:32,112
+Dağlanabiliyordu. Gönderilen elektronların ekranda çarpmış olduğu birim görsel hücresi aslında 3 tane pikselden oluşuyor. Red, green ve blue şeklinde. Bunların uygun şekilde aktive olmasıyla.
+
+191
+00:46:32,527 --> 00:46:41,767
+Sadece red aktif olmuşsa orada kırmızı bir piksel, sadece yeşil aktif olmuşsa sadece orada yeşil bir piksel, mavi aktif olmuşsa mavi bir piksel görüyoruz.
+
+192
+00:46:42,227 --> 00:46:49,347
+Veya bununla bunların belirli bir linear birleşimini de elde etmek mümkün. Yani bunların karmasından bütün renkleri elde etmek mümkün.
+
+193
+00:46:49,447 --> 00:46:53,987
+Dolayısıyla bir pikselde istediğimiz bir rengi bu birleşim çerçevesinde üretebiliyoruz.
+
+194
+00:46:53,987 --> 00:47:00,527
+Piksel bazında bu şekilde. Birden fazla pikseli veya piksel bloklarını uygun şekilde sürdüğümüzde de...
+
+195
+00:47:00,527 --> 00:47:16,027
+Burada anlamlı görsel bir takım temsiller elde etmemiz mümkün. Dolayısıyla yapı bu şekilde. Bunun haricinde LCD ekranlarda ise bir arka plan aydınlatması var. Bu arka plan aydınlatmasıyla birlikte.
+
+196
+00:47:16,980 --> 00:47:33,120
+İçeride bu LCD ekran içerisindeki likit kristal bloklarının uygun şekilde dizilmesiyle veyahut da polarizasyon sağlamasıyla ilgili piksel bazında bir renk algılaması oluşturuluyor.
+
+197
+00:47:33,120 --> 00:47:44,980
+Bunu yaparken de hem kırmızı, yeşil ve mavi için ayrı bloklarla bu sağlanıyor. Dolayısıyla farklı polarizasyonlarla da her bir LCD...
+
+198
+00:47:44,980 --> 00:48:04,660
+pikselinde görüntü elde etmiş oluyoruz. Birazcık hızlıca geçiyorum buraları. Asıl bahsetmek istediğim konu burada. Bir CPU'dan bahsettiğimiz zaman CPU'nun aslında bir veri yolu, adres yolu ve kontrol yolunun olduğundan bahsedebiliriz. Bunun buradaki karşılığı bakın adres, kontrol yolu.
+
+199
+00:48:05,007 --> 00:48:13,707
+Adres yolu ve veri yolu burada var. Kontrol yolu da işte şurada görmüş olduğunuz değerler. Mesela MV dediğimiz bir kontrol değeri.
+
+200
+00:48:15,539 --> 00:48:27,940
+Hafıza üzerinde bu şekilde olmakla birlikte daha fazla sayıda giriş çıkış birimi ve daha fazla sayıda hafıza bloğu, RAM, ROM gibi çeşitli şekilde kullanacak olursam buradaki kontrol bilimlerinin sayısı artacak.
+
+201
+00:48:27,940 --> 00:48:36,480
+Örneğin burada sadece giriş çıkış birimlerini göstermiş olmakla birlikte yine CPU'nun fonksiyon gösterilebilmesi için RAM, ROM gibi.
+
+202
+00:48:36,880 --> 00:48:48,980
+İşte veri hafızası, program hafızası gibi bir takım birimler de olması lazım. Dolayısıyla bu tür hafıza ve giriş çıkış birimleri varsa bunlara okuma yazma kontrolüçleri de birer kontrolücü olarak ortaya çıkmış oluyor.
+
+203
+00:48:48,980 --> 00:49:01,059
+En genel anlamda konuşacak olursak bir giriş biriminden bahsediyorsak giriş birimi giriş birimiyle ilgili olarak konuşacak olursak
+
+204
+00:49:03,092 --> 00:49:12,172
+Burada input birimi şu ok işareti yanlış koymuşum herhalde. Yönü keyboarddan CPI'ye doğru olması lazımdı. Şuradaki ok işareti fazla olmuş.
+
+205
+00:49:13,072 --> 00:49:27,052
+Keyboard az önce bahsetmiş olduğumuz tuş tarama mantığında satır sürerek, sütun okuyarak bir tuşa basıldığı anda tuşa basıldığının bilgisini ve tuş değerini kendi içerisinde saklayıp bunu interfeise bildiriyor.
+
+206
+00:49:28,916 --> 00:49:38,236
+Artık bu değeri kendi içerisinde saklayıp, keyboarddan almış olduğu değeri içerisinde saklayıp, CPU müsait olduğunda bu değeri CPU'ya göndermek.
+
+207
+00:49:38,675 --> 00:49:53,756
+CPU müsaitliğini nasıl belirleyecek? O sırada başka bir takım işlemler yürütüyor olabilir. Bir algoritma yürütüyor olabilir CPU o sırada ve bir yandan da bir tuşa basılıp basılmadığınız zaman çoğullamalı bir şekilde kontrol ediyor olabilir veya zaman paylaşımlı bir şekilde kontrol ediyor olabilir.
+
+208
+00:49:54,195 --> 00:50:00,000
+Bu durumda gidip ilgili interfajleri okuyup bunda veri hazır yok mu diye bakabiliriz.
+
+209
+00:50:00,371 --> 00:50:25,391
+Bu yapı aslında poling mantığında tek tek bunları kontrol etmek. Hazır mı veri? Değil. Veri hazır mı? Değil. Veri hazır mı? Değil. Veri hazır mı? Değil. Tek tek bunları poling mantığında kontrol edip veri hazırsa okumaz söz konusu olabilir. Ama bu CPU tarafında aktif bir beklemeye sebebiyet verebiliyor. Bu durumda bir başka veri aktarım mantığı kesme tabanlı bir veri aktarım mantığı olabilir. Keyboardda bir tuşa basıldığında bu interfeyse bildirilir.
+
+210
+00:50:28,371 --> 00:50:39,351
+Bu kesme ucu üzerinden CPU tetikleyebilir. CPU o sırada tam bir instrakşının ortasındaysa bu instrakşını bitirdikten sonra gelen kesme isteğinin anlam sırasına bakar.
+
+211
+00:50:39,699 --> 00:50:59,899
+Ve bu anlam sırası uygunsa ilgili interfeisten okumayı gerçekleştirir. Bakın burada tetikleme interfeis tarafından kesme tabanlı olarak gerçeklendi. CPU sürekli olarak interfeislerin adreslerine gidip sende veri var mı diye kontrol etmek zorunda değil. Hazır olduğu zaman ilgili aktarım doğrudan interfeisin tetiklemesiyle başlamış oluyor.
+
+212
+00:51:00,340 --> 00:51:23,980
+Keyboard dediğimiz zaman, keyboard bir input cihazı. Input cihazı olduğu için buradan interfeise doğru veri aktarımı var. Interfeis bu veriyi tuşa basıldığı bilgisi ve tuş değerini kendi içerisinde tutuyor. Ya polling mantığında CPU tek tek kontrol ediyorsa sırası geldiğinde aktarıyor veyahut da kesme tabanlı bir iletişim varsa kesme tabanlı olarak verisini CPU'ya aktarmaya çalışıyor.
+
+213
+00:51:28,340 --> 00:51:48,519
+Bu PS2 veya USB üzerinden bağlandıktan sonra artık karşılığındaki anakart üzerindeki kontrol entegresi neyse, interfaz ona karşılık geliyor. İşte monitör için işte VGA çıkışı üzerinden VGA çıkışını süren entegre neyse ona karşılık geliyor CRT monitörü için, CRT monitörü için.
+
+214
+00:51:48,916 --> 00:52:06,436
+CPU, video hafızasından güncelleme yapıp video hafızasından sırasıyla ilgili VGA portu üzerinden CRT display'e veri gönderiyor. Bu veri gönderilmiş de tek yönlü olarak dışarı doğru.
+
+215
+00:52:07,115 --> 00:52:15,496
+Bir printer'dan bahsedecek olursak, printer'ın aslında giriş çıkış yönlü olarak bir doğrulaması da söz konusu olduğu için burada çift yönlü olarak belirtilmiş.
+
+216
+00:52:15,903 --> 00:52:29,244
+CPU bir yazdırma yapmak isterse bunu interfej üzerine öncelikli olarak veri aktörü, interfej printerla bu aradaki haberleşmeyi sağlayarak bir sonraki karakterin basılmasını sağlıyor.
+
+217
+00:52:29,504 --> 00:52:35,244
+Bunu yaparken de şuna dikkat ediyor. Printer boş mu? Interfejle printer arasındaki iletişimden bahsediyorum.
+
+218
+00:52:35,784 --> 00:52:42,284
+Printer müsait mi? Müsait. Yani printer'da bir cevap döndü interfejse. Dolayısıyla bir sonraki karakteri gönderiyor.
+
+219
+00:52:42,719 --> 00:53:01,419
+Yazdım diyor, printer müsait mi? Müsait. Bir sonraki karakteri gönderdim şeklinde bir kontrollü akış var. Burada handshaking mantığında bir akış var. Biraz sonra detayına bakacağız. Yine manyetik bir disk içinde giriş çıkış yönlü olarak bir interfej üzerinden CPI veri aktarımı söz konusu olabiliyor.
+
+220
+00:53:03,699 --> 00:53:27,619
+Şimdi interfeyslere baktığımız zaman arkadaşlar, interfeys aslında buradan sonraki şurada da görmüş olduğumuz yapılar birer interfeyslere denk geliyor. Interfeysler farklı şekilde fonksiyon gösterebilir. Bunlardan bir tanesi paralel veri aktarımı için kullanabileceğimiz paralel giriş çıkış durumlarını kontrol eden bir interfeys yapısı olabilir. Bu interfeys yapısı nerede anlamlı? Bakın mesela hemen inceleyelim.
+
+221
+00:53:28,000 --> 00:53:48,940
+Bir klavyeyi düşündüğümüz zaman klavyede mesela 7 tane kontrol değeri var. Tam giriş çıkış örneği için bunu vermekten ziyade. Tabi interfeys, burada interfeysi mikrodenetleyici gibi de düşünebiliriz. Yani iç içe geçmiş de olabilirler. Burada bir kontrol değerimiz var. 7 bitlik bir kontrol değerimiz var.
+
+222
+00:53:49,360 --> 00:54:12,599
+Öyle düşünelim şimdilik. Dolayısıyla bu 7 kontrol değerine aynı anda çıkmam gerekiyor. Bu aynı anda çıkma işlemi aslında birbiriyle paralel aynı fonksiyonu gösteren, birlikte kontrol edilebilen uçlarda tanımlı, uçlar ile tanımlı. Bu uçlar port olarak isimlendiriliyor. Portlar arkadaşlar temel olarak dış dünyaya doğrudan bağlantı sağlayan fiziki uçlar olarak bunları düşünebilirsiniz.
+
+223
+00:54:13,139 --> 00:54:41,119
+Dolayısıyla paralel veri alışverişini sağlayan paralel interfeysler için, paralel arayüzler için genel olarak yapıyı şu şekilde ifade edebiliriz. Uçlarını falan tanımlama noktasında. Bu görmüş olduğunuz yapı, interfeysin iç yapısı. Interfeysin CPU tarafına bağlı olan uçlarına bakacak olursak, bakın şurada bütün interfeysler adres yoluna, veri yoluna ve kontrol yoluna birer.
+
+224
+00:54:41,139 --> 00:55:04,880
+bağlantı sağlar durumda. Dolayısıyla CPU tarafına bir veri hattı üzerinden veri yoluna bağlantı sağlıyor. Bu veri yolu ne görev gösterecek? CPU'dan interfeise veri aktarılırken veya buradaki portlardan CPU tarafına veri aktarılırken kullanılacak olan çift yönlü veri yolunu ifade eden uçlar bunlar.
+
+225
+00:55:05,427 --> 00:55:19,367
+Şimdi yine buradaki yapıyı inceleyelim. Buradaki yapıyı incelediğimizde bir CPU var. Birden çok interfeys var giriş çıkış birimleri için. Bir de bunların yanında memoriler olduğunu düşünelim. Ve buna rağmen tek bir veri yolu var.
+
+226
+00:55:20,148 --> 00:55:48,148
+CPI açısından tek bir veri yolu var. Bunun anlamı ne? Veri yoluna eğer ki mesela keyboard değer çıkarsa ve bununla birlikte manyetik listte aynı anda veri çıkarsa bir çakışma olacak. Bunu önlemek adına burada yardımcı bir adres çözümleme devresinden bahsedebiliriz. Bu adres çözümleme devresi benim yürütmüş olduğum komut hangi adrese dairse ona ilişkin bir çözümleme yapacak. Ve ben daha önceden biliyorum ve bir tablo olarak yerleştirdim.
+
+227
+00:55:48,148 --> 00:56:15,508
+Ben de bir şey bitirmiş durumdayım ki keyboard dediğim giriş çıkış birimini kontrol eden interfej, IO uzayında mesela 10H adresinde olacak. Yani benim keyboardum 10H adresinde. Veyahut da CRT monitörüm işte 20H adresinde. Her birinin kendine adanmış birer adresi var. Dolayısıyla benim yürütmüş olduğum komut 10 adresiyle ilgili ise adres çözümleme devresi, bütün adres uçlarından gelen değerleri kontrol edip değer 10.
+
+228
+00:56:16,148 --> 00:56:25,208
+CPU adres değeri olarak 10 çıkmış. 10 adresi kimindi? Burada input device olarak keyboard'un. Dolayısıyla sadece keyboard interfaceni aktif ediyor.
+
+229
+00:56:25,807 --> 00:56:35,288
+Diğerlerini disable ediyor. Disable etmek demek de chip select uçlarına 0 değeri göndermek demek. Bunun chip select ucuna 1 gönderiyor. Diğerlerini chip select ucuna 0 gönderiyor.
+
+230
+00:56:39,572 --> 00:56:47,072
+Chip select ucuna sıfır göndermek demek bu cihazın veri uçlarında yüksek empedans göstermesine sebep oluyor.
+
+231
+00:56:47,152 --> 00:56:49,052
+Yüksek empedans göstermesine sebep oluyor.
+
+232
+00:56:49,172 --> 00:56:50,052
+Empedans neydi?
+
+233
+00:56:50,711 --> 00:56:56,072
+Empedans AC işaretler için akıma karşı gösterilmiş olan direncin bir ifadesi.
+
+234
+00:56:56,951 --> 00:57:01,711
+Dolayısıyla bir direnç karşılığı, yüksek empedans, en yüksek direnç nedir?
+
+235
+00:57:02,751 --> 00:57:05,052
+En yüksek direnç, sonsuz direnç ne zaman oluşur?
+
+236
+00:57:06,931 --> 00:57:13,291
+Var mı fikri olan? Sonsuz direnç ne zaman tanımlayabiliriz? En yüksek direnci fiziki olarak nasıl oluştururuz?
+
+237
+00:57:13,940 --> 00:57:15,300
+Açık devre oluyken mı?
+
+238
+00:57:15,300 --> 00:57:34,259
+Evet, açık devreyken olur. Yani buradaki kontrollü bir şekilde yapılan durum, yani chip selek tuşuna sıfır verdiğimizde elektronik olarak karşılaştığımız durum, uçlarda yüksek enfedans gösterilmesinin fiziki bir karşılığı, sanki bu hatlar devreden kopartılmış gibi etki gösteriyor.
+
+239
+00:57:34,259 --> 00:57:41,940
+O zaman bakın senaryomuzu hatırlayalım. 10H adresiyle ilgili bir komut yürütmüştük. Adres çözümleme devremi sadece keyboard interface.
+
+240
+00:57:41,940 --> 00:58:08,860
+Interface'inin chip select'ine bir gönderdi. Diğerlerin interface'inin chip select'lerine sıfır gönderdi. Dolayısıyla bu interface'lerin disk, printer ve monitörün data yoluna bağlantıları sanki koparılmış gibi bir etki gösterecek. O zaman geriye ne kalıyor? CPU ve keyboard interface. Bu ikisi kaldı hatlara. Bunlar hükmediyor. Sadece bu ikisi arasında konuşmuş oluyor. Dolayısıyla genel mimarimiz, mantığımız bu şekilde olacak. Tek bir bas varsa.
+
+241
+00:58:09,396 --> 00:58:27,496
+Bir seferinde CPU tek bir cihazla konuşabilir. Bunu sağlamak anında bir adres çözümleme kontrol devresi. Yürütülen komut hangi adresle ilgiliyse daha öncesinden de her bir interfaysin adresini tanımladım ve bunları bir tabloda tuttuğumu varsayalım. İlgili interfays aktif ediyor. Bir lojik devre bu.
+
+242
+00:58:27,856 --> 00:58:37,936
+Ve diğerlerini disable ediyor. Cipseleklerine sıfır veriyor ve o anda veri yolunda CPU ve karşı tarafta tek bir interfej olacak şekilde konuşmuş oluyorlar.
+
+243
+00:58:38,296 --> 00:58:42,576
+Bunu sadece giriş çıkış birimleri için düşünmeyelim. Hafıza birimleri için de düşünebilir.
+
+244
+00:58:42,695 --> 00:58:53,115
+Yani veri yoluna bağlı olan bütün giriş çıkış birimleri ve bütün hafıza birimleri için o anda sadece CPU ile bir tanesi aktif olan bir tanesi haberleşebilir durumda oluyor.
+
+245
+00:58:53,115 --> 00:58:55,776
+Bu yüksek empedansın anlamını böyle düşünelim.
+
+246
+00:58:55,856 --> 00:59:13,195
+Bununla birlikte bu interfaysimizin paralel veri aktarımı için kullanılan paralel arayüzümüzün bir port A'sı bir port B'si var. Port A ve port B arasında seçim yapabilmek için burada register select uçlarımız var. Yani bunun adres uçları.
+
+247
+00:59:13,715 --> 00:59:22,356
+Bakın çok önemli bir özellik. Bir keyboard interface birimi bu. Ve bunun sadece iki tane adres ucu var.
+
+248
+00:59:22,356 --> 00:59:23,936
+İki tane adres ucu var.
+
+249
+00:59:24,224 --> 00:59:41,003
+Bunun alternatif olarak karşılığı neydi? Düşünelim hafıza birimleri. Hafıza birimlerine baktığımız zaman işte 1K'lık, 2K'lık birimler toplamda 10-12 tane adres ucu var. O zaman giriş çıkış birimleriyle memori birimlerini karşılaştırdığımız zaman şunu söyleyebiliriz.
+
+250
+00:59:41,003 --> 00:59:52,224
+Giriş çıkış birimleri CPU'nun adres uzayında, hafıza uzayında giriş çıkış birimleri küçük alanlar kaplıyor. 1-2 byte'lık alanlar kaplıyor. 1-2-3-4 cim.
+
+251
+00:59:52,224 --> 01:00:04,804
+civarında alanlar kaplıyor. Ama hafıza birimlerine baktığımız zaman hafıza birimleri bu CPU'ların adres uzaylarında 1K, 2K gibi büyük alanlar kaplıyor. Adres uçların sayısı fazla memori birimlerinde.
+
+252
+01:00:05,463 --> 01:00:11,224
+IEO birimlerinde ise adres uç sayıları az. Bizim burada herhangi bir...
+
+253
+01:00:11,347 --> 01:00:32,108
+Şimdi port A veya port B'den birini seçiyor olmamızın anlamı şu. Biz daha öncesinde cihazı kullanmaya başlamadan önce kontrol yazmacı üzerinden port A ve port B'nin yönünü belirleyebiliyoruz. Giriş veya çıkış portu olmaları için bir komut gönderebiliyoruz. Bu komutu hangi adrese gönderirsek yapabilirmişiz.
+
+254
+01:00:39,347 --> 01:00:43,728
+Bu yüzden sonra benim CPU'dan veri yolu üzerinden göndermiş olduğum değer,
+
+255
+01:00:44,143 --> 01:00:57,223
+İnterface'in veri uçlarından alınıp kontrol yazmacına aktarılıyor. Bu içerideki kontrol yol kontrolücüsü tarafından sağlanıyor. Dolayısıyla benim veri yolundan göndermiş olduğum değer kontrol yazmacına aktarıldı.
+
+256
+01:00:57,223 --> 01:01:12,143
+Her bir interface'in kendi data sheet'i var. Bunu mikro işlemciler dersinde çok detaylı bir şekilde göreceğiz. Bu data sheet'e göre kontrol register'ının her bir bitinin bir görevi var. Örneğin şu olabilir. Mesela kontrol yazmacının sıfırıncı...
+
+257
+01:01:12,143 --> 01:01:35,843
+Biti A yazmacının yönünü belirliyor olsun. A portunun. Dolayısıyla sıfır yazdığım zaman giriş, bir yazdığım zaman çıkış oluyor olsun. Kontrol yazmacının bir numaralı biti B portunun yönünü belirliyor olsun. Bu bir numaralı bite bir yazdığımızda giriş, sıfır yazdığımızda çıkış olsun yine. Dolayısıyla A ve B portlarının çıkış yönünü olarak ayarlamak ve kullanmak istiyorsan öncesinde
+
+258
+01:01:36,596 --> 01:02:02,416
+Kontrol yazmacının 0 ve 1 numaralı bitlerine bir çıkış yönlü mü demiştik. 0, 0 değerlerini aktarmamız gerekecek öncelikli olarak. Çıkış yönlü olarak ayarladık. Bu uçlara da LED'ler bağlı olduğunu düşünün. İlk yapacağımız iş, interfejsi programladık. Daha sonra, yani portların yönlerini ayarladık ve bu interfejse bir tane I.O. cihazı bağladık. Kullanacağımız I.O. cihazı bir LED bloğu olsun. Yani 16 tane LED olsun.
+
+259
+01:02:04,512 --> 01:02:23,032
+Ben bu interfeysin port A'sını seçip, yani adres uçlarına 0,0 vererek CPU'dan veri uçlarından bir değer gönderdiğimde bu değer port A'nın uçlarında çıkacak. Dolayısıyla ben port A'nın uçlarına bağlı LED'lerin birini yanık birini sönük yapmak istersen
+
+260
+01:02:23,380 --> 01:02:36,460
+Bu durumda port A'ya 55H, port B'ye de 55H değerlerini göndermem yeter. Çünkü 55H'lar 0, 1, 0, 1, 0, 1 diye geliyor. Biri yanık, biri sönük, biri yanık, biri sönük şeklinde bir paten oluşturmam mümkün.
+
+261
+01:02:46,708 --> 01:02:53,347
+Örneğin keyboard durumunu düşünelim. Keyboard durumunda, keyboardda bir tuşa basıldığı durum ve basılan tuş değeri saklanabiliyordu.
+
+262
+01:02:53,907 --> 01:02:59,507
+Tuşa basılı olma durumu bir kontrol ucu üzerinden statüs yazmacına aktarılabilir.
+
+263
+01:02:59,507 --> 01:03:05,887
+İşte söylemiştim ya, poling mantığında her bir interfaysi CPU kontrol edebilir. CPU nereye bakacak o zaman?
+
+264
+01:03:06,567 --> 01:03:11,788
+Gelecek ilgili interfaysin, bu interfaysin iç yapısı, şurada tekil olarak gösterelim.
+
+265
+01:03:14,708 --> 01:03:35,188
+İnterfaysin bağlı olduğu adrese ilişkin bir input output komutu yürütecek. Bu input output komutu aslında adres uçlarında bir bir değerini üretecek ki statüs yazmacındaki değer veri yoluna çıksın. Dolayısıyla mikro işlemci aslında bu interfaysin bir bir adresinden bir yazmaç okumuş olacak.
+
+266
+01:03:42,708 --> 01:04:01,728
+Eğer bu bit 0 ise veri hazır değil, 1 ise veri hazır anlamına gelmiş olsun şimdilik senaryomuzda. Dolayısıyla CPU gidip bunun 1.1 adresindeki değeri okudu. Keyboardda bir tuşa bastığım zaman doğrudan bir bağlantı sayesinde statüs uçlarının 0 numaralı biti keyboard'un veri hazır bitine bağlı.
+
+267
+01:04:02,427 --> 01:04:08,407
+Tuşa bastığım anda ilgili statüs yazmacının 0 numaralı biti 1 olacak. Otomatik olarak bunu ayarlamış durumdayım.
+
+268
+01:04:09,012 --> 01:04:22,152
+Dolayısıyla CPU gelecek, interfaysi okuyacak, bir bir numaralı yazmacını okuyacak ki o yazmaç statüs yazmacıydı. Alacak, bu okuduğu değerin sıfır numaralı bitine bakacak. Sıfır mı? Sıfırsa daha veri hazır değil.
+
+269
+01:04:22,643 --> 01:04:45,643
+Tekrar okuyacak, tekrar okuyacak. Ta ki ne zamana kadar? Okuduğu statüs yazmacının sıfır numaralı biti bir olana kadar. Bir olduktan sonra ne olacak? Bir olduktan sonra da bu sefer gidecek. Mesela hangi portta veri bağlıysa, ilgili porttan değer okuyup, klavye örneği için bahsediyorum bunu, ilgili port okuyup basılan tuş değerini almış olacak. Bununla birlikte...
+
+270
+01:04:46,416 --> 01:04:56,416
+Bu interfeysi düşündüğümüz zaman, bu interfeys yine genel programlanabilir bir interfeys. Giriş birimleri içinde kullanılabilir, çıkış birimleri içinde kullanılabilir. Dolayısıyla...
+
+271
+01:04:57,588 --> 01:05:22,148
+Benim bu arayüze, bu interfeyse CPU tarafından veri yazma ihtiyacım olabilir. Kontrol yazmacı için yazma yaptık mesela. Veyahut bu interfeysten veri okuma ihtiyacım olabilir. Statüs yazmacını okuyup polink ile kontrol yapacağım ve daha sonrasında da ilgili port yazmacını okuyup değeri okuyacağım. Dolayısıyla okuma ihtiyacım da olabilir. Okuma ve yazmaya ilişkin iki tane daha kontrol ucum olması gerekiyor.
+
+272
+01:05:22,643 --> 01:05:30,483
+Burada bazı interfazlerde okuma yazma uçları read write olarak birleştirilmiş durumda olabilir. Yani şöyle bir gösterim oluyor.
+
+273
+01:05:32,179 --> 01:05:52,139
+R, slash, W şeklinde. W üzerinde de bir bar var. Bunun anlamı şu. Bu uç hem okuma hem de yazma kontrolü için kullanılıyor. Bu uçta bir değeri varsa bu oku komutu anlamına geliyor. Sıfır değeri varsa yaz komutu anlamına gelmiş olacak şekilde birleştirilmiş.
+
+274
+01:05:52,596 --> 01:06:05,375
+Bir duruma karşılık geliyor arkadaşlar. Dolayısıyla burada paralel bir takım giriş çıkış birimleri için kullanabileceğimiz programlanabilir bir interfeysi en genel özellikleriyle tanımlamış olduk.
+
+275
+01:06:08,935 --> 01:06:19,375
+Tabi şimdi burada bir adres devresinden, adres çözümleme devresinden bahsetmiştik. Bir de bunun adres tuşlarından bahsetmiştik. Şöyle bir durum önemli bizim için. Bu cihazın
+
+276
+01:06:20,788 --> 01:06:23,507
+Veya şurada göstereyim. Şuradaki cihazın
+
+277
+01:06:23,827 --> 01:06:42,008
+Bu CPU'nun adres uzayındaki adres değeri 2 bit ile ifade edilebilir durumda değil. Cihaz 2 bitlik ya, ondan dolayı kafa karışmaması açısından söylüyorum. Bu cihazın CPU'nun adres yolundaki yerleşimi, adres yolunun genişliği neyse o mertebede bir adres değeri.
+
+278
+01:06:42,008 --> 01:06:51,327
+Yani mesela 16 bitlik bir adres yoluna sahipse bu cihazın, bu interfeysin adresi 16 bit ile ifade edilmek durumunda. Bunun ama iki tane adres ucu var.
+
+279
+01:06:51,827 --> 01:07:16,668
+Nasıl yapacağız bunu? Bu durumda şöyle çalışacak arkadaşlar. Adres değerinin yani CPU'dan çıkan adres değerinin düşük anlamlı 2 biti bu cihazın hangi yazmacını okumak istediğimi belirten adres uçları olacak. Geri kalan 14 tane yüksek anlamlı bitler doğrudan adres çözümleme devresine girecek. Adres çözümleme devresinde şu mantık çalışacak. Yani bu interfaisi seçmek açısından aktif edip etmeme noktasında.
+
+280
+01:07:17,088 --> 01:07:36,588
+Şöyle çalışacak. Bu cihazın CPU uzayındaki 16 bitlik adres değerinin en yüksek anlamlı 14 biti benim belirlediğim değerse bu cihaz aktif olabilir. Bu cihazın aktif olması için son 2 bitin herhangi bir değer alması yeterli. Zaten bu son 2 bit içerideki yazmaçları belirleyecek. Demem o ki.
+
+281
+01:07:37,139 --> 01:08:03,519
+CPU'nun adres yolu genişliği neyse bu interfayslerin CPU adres uzayındaki adres değerleri de o genişlikte olacak. 16 bitlikse 16 bitlik adresleri olacak. Fakat baktığımız zaman bu cihazların fiziki adres ucu sayısı 1-2 ile sınırlı. Geri kalan bütün yüksek anlamlı adres değerleri adres çözümleme devresine gidecek. Bu cihazın unik adresiyle ilgili bir işlem yaptığım zaman bu cihazı aktif etmek için kullanılacak.
+
+282
+01:08:05,012 --> 01:08:06,331
+Bunu ifade etmiş olayım.
+
+283
+01:08:07,992 --> 01:08:18,811
+Şimdi bu cihazlar arasındaki veri iletişimini sağlamak açısından kullanılabilecek haberleşme mantıkları var.
+
+284
+01:08:18,912 --> 01:08:20,551
+Burada da seri şey yazmışım.
+
+285
+01:08:21,551 --> 01:08:25,832
+Bu paralel veri aktarımı ile ilgili farklı durumlar söz konusu arkadaşlar.
+
+286
+01:08:26,131 --> 01:08:27,271
+Onları bir inceleyelim.
+
+287
+01:08:32,851 --> 01:08:56,551
+Başlatan ve veri iletişimini sağlayan durum, bloklar hangisi olduğuna göre değişiklik gösteren bir yapı. Yani şunu söylemek istiyorum. Veri burada üretiliyor, veri buraya aktarılacak ve veri iletişimi verinin nihai olarak aktarılacak taraf tarafından başlatılacak ise.
+
+288
+01:08:56,551 --> 01:08:58,631
+Yani ne gibi düşünebiliriz?
+
+289
+01:09:02,292 --> 01:09:07,672
+Bir klavye düşünebilir miyiz burada? Klavye bastığım zaman gelir. Klavye gibi değil de.
+
+290
+01:09:11,412 --> 01:09:23,172
+Tam örnek olarak şimdi onu biraz sonra aklımıza gelirse tekrar tanımlarız. Özellik olarak tanımlayalım. Giriş çıkış birimi açısından veri burada üretiliyor. Buraya aktarılacak.
+
+291
+01:09:28,404 --> 01:09:38,744
+Sürekli olarak source unit'i kontrol ediyor. Yani bu iletişimi başlatıyor. Veri aktarımı için iletişimi başlatıyor. Bu başlattığı işarete strobe işareti deniyor arkadaşlar.
+
+292
+01:09:38,744 --> 01:09:51,684
+Strobe işareti doğrudan source biriminin verisini veri hattına çıkmasını sağlar. Bu iki birim arasında bir kontrol işareti, strobe dediğimiz kontrol işareti, bir de veri yolu bağlantısı var. Tek yönlü bir veri bağlantısı.
+
+293
+01:09:52,115 --> 01:10:15,216
+Destination unit veri aktarımı için içeride veri oluşup oluşmadığını kontrol etmiyor yalnız dikkat edin. İçeride daha önceden kalan, source birimde daha önceden kalmış olan eski bir veri olsa dahi destination birimi, strop işareti gönderdiği zaman bu eski veri dahi olsa bunun veri hattına çıkıp hedef birimi aktarmış oluyor. Burada karşılıklı bir kontrol yok.
+
+294
+01:10:15,568 --> 01:10:38,688
+Hedef birimi iletişim başlatıyor. Otomatik olarak strob işareti gelir gelmez. Yani yükselen kenarını alır almaz bu source unitimiz veri yoluna çıkıyor. Kendi içerisindeki veri yoluna çıkıyor. Destination birimi bu. Veriyi kaldırdıktan sonra da veri hattından source birimi veriyi kaldırıyor. Aradaki sinyalleşme bu. Buradaki sıkıntı dediğim gibi şu.
+
+295
+01:10:39,667 --> 01:11:05,427
+Destination birimi strobüşerite gönderdi. Yani bana verini gönder dedi. Fakat Source birimi içeride veriyi daha hazırlamamış olabilir. Daha önceden kalan bir verisi kalmış olabilir. Daha önceki adımdan kalan verisi kalmış olabilir veya rastgele bir değer olabilir. Bunu kontrol etmeden değeri direkt okuyor. Destination birimi bu değeri dolayısıyla okumak zorunda kalıyor. Çünkü Source birimi bu benim verim hazırdır.
+
+296
+01:11:06,068 --> 01:11:17,068
+Ben verimi gönderebilirim demeden önce bu veriyi aktarmış oluyor. Dolayısıyla bu yapıdaki sıkıntı source birimde veri daha hazır mı değil mi bunu bilemiyoruz.
+
+297
+01:11:17,688 --> 01:11:23,427
+İkinci bir örneğimize bakalım. Yine veri source tarafında üretiliyor ve destination tarafına aktarılmak isteniyor.
+
+298
+01:11:23,568 --> 01:11:32,048
+Fakat burada veri iletişimini kaynak tarafı başlatıyor. Kaynak tarafı kendi içerisinde mesela klavye ile ilgili durumu düşünelim.
+
+299
+01:11:33,760 --> 01:11:39,140
+Bu basılan tuş değerini, tuşa basılma hareketini ve basılan tuş değerini aldı.
+
+300
+01:11:39,840 --> 01:11:42,619
+Tuşa basılma hareketi burada strob olarak karşımıza çıkıyor.
+
+301
+01:11:43,039 --> 01:11:46,659
+Tuş değeri ise databastaki koyduğumuz değer olarak ortaya çıkıyor.
+
+302
+01:11:47,340 --> 01:11:55,740
+Source birimi veya kaynak birimi bu veri transferini başlattığı için ben tuşa bastığım anda hedef birime bir strob işareti gönderiyor.
+
+303
+01:11:55,740 --> 01:12:00,340
+Ve aynı zamanda üretmiş olduğu veriyi de databasa koymuş oluyor.
+
+304
+01:12:00,979 --> 01:12:13,759
+Bu veriyi karşı tarafın aldığını varsayıyor artık. Çünkü destination unit o anda başka bir şeyle meşgul olabilir. Yani başka bir veriyi okumakla veya CPU ile haberleşme noktasında meşgul olabilir. Veriyi alıp almadığı garanti değil.
+
+305
+01:12:14,676 --> 01:12:34,056
+Eğer müsaitse yani o sırada bu da destination birimde veri bekliyorsa stop işaretinin yükselen kenarı geldiğinde zaten veri hazır olduğu için bu veriyi örnekleyip yani şu yükselen kenarı takiben belirli bir süre sonra data hatlarını örnekleyip veri uçlarındaki değeri içeriye kopyalayabiliyor ve daha sonrasında da bunu CPU'ya aktarabilir.
+
+306
+01:12:34,579 --> 01:13:00,180
+Gördüğünüz gibi dikkat edecek olursanız, strop işaretini göndermeden önce veri uçlarında veriyi hazırlamış, daha sonrasında strop işaretini göndermiş, tamamlamış ve veriyi hattan kaldırmış. Bu şekilde haberleşmenin sıkıntısı da dediğim gibi veriyi gönderiyor, strop işaretiyle haberleşmeyi başlatıyor, veriyi de gönderiyor ama karşı tarafın alıp almadığı garanti değil. Bunu kontrol etmiyor.
+
+307
+01:13:00,659 --> 01:13:15,579
+Bunlar tek kontrollü, tek kontrol uçlu haberleşme mantıkları. Bununla birlikte bir de hand shaking mantığında veri iletişimleri olabilir. Burada az önce bahsettiğimiz durumlara çözümler söz konusu.
+
+308
+01:13:16,243 --> 01:13:30,383
+Yine veri source tarafında üretiliyor ve destination birimine aktarılacak. Bununla ilgili olarak bu sefer hem destination biriminin hem de source biriminin birer tane kontrol ucu mevcut. Bunlar request ve reply uçları olarak tanımlanmış durumda.
+
+309
+01:13:31,243 --> 01:13:37,963
+Şimdi burada hedef birimimizin başlattığı bir veri transferinden bahsedelim.
+
+310
+01:13:38,484 --> 01:13:45,624
+Hedef birim diyor ki, verin hazırsa bana gönder, verin hazırsa bana gönder diye bir request gönderiyor.
+
+311
+01:13:45,624 --> 01:13:52,624
+Request'i alır almaz, eğer source birimi müsaitse,
+
+312
+01:13:52,688 --> 01:14:16,048
+Öncelikli olarak veri uçlarına veri değerine çıkıyor. Daha sonrasında da ben veri uçlarına uygun değeri çıktım. Bunu artık alabilirsin diye bir cevap gönderiyor. Reply gönderiyor. Şurada reply ucunun bire çıkması, source biriminin veri yollarına çıktığını ve aynı zamanda da buna ilişkin kontrol işaretini gönderdiği anlamına geliyor.
+
+313
+01:14:16,435 --> 01:14:28,915
+Destination birim, reply'ı aldıktan sonra, belirli bir süre sonra request'i kesiyor. Request'i kestikten sonra, karşı tarafta reply işaretini sonlandırıyor.
+
+314
+01:14:31,988 --> 01:14:49,608
+Request işaretinin sonlanmasıyla birlikte de Source birimi veri yolundan veriyi kaldırıyor. Belirli bir zaman alıyor bu tabii. Kaldırması belirli bir zaman alıyor ama kaldırıyor. Peki bu cihaz ne zaman okumayı gerçekleştiriyor? Destination birim bir haberleşme başlattı. Veriyi ne zaman okuyor?
+
+315
+01:14:52,243 --> 01:15:05,703
+Reply geldikten sonra belirli bir aralıkta data uçlarını örnekleyerek verinin okunmasını sağlıyor. Yani şu aralıkta verinin okunması gerçekleşmek durumunda.
+
+316
+01:15:05,703 --> 01:15:13,263
+Bu yapı Destination tarafından başlatılan bir haberleşme mantığı. Karşı tarafı kontrol ediyor.
+
+317
+01:15:14,131 --> 01:15:38,531
+Karşı taraf verisi hazır mı diye bunu soruyor. Karşı taraf verim hazır diyor. Veri de hatta çıkıyor ve bu sayede hedef birimine veriyi aktarmaya sağlanmış oluyor. Son örneğimiz de benzer şekilde arkadaşlar. Yine kaynağımız veri üreten taraf yani giriş çıkış birimindeki veri üreten taraf destination interface gibi düşünebilirsiniz.
+
+318
+01:15:39,252 --> 01:15:59,311
+Burada yine klavye örneğini düşünen bir tuşa bastık. Tuşa bastığımızın durumu veri hazıra ilişkin bir işaret. Bir de basılan tuşun değeri var. Bu durumda kaynak birimi bir request gönderiyor. Request gönderdikten sonra destination birim
+
+319
+01:15:59,796 --> 01:16:02,836
+Ben müsaitim anlamında bir reply gönderiyor.
+
+320
+01:16:03,396 --> 01:16:15,456
+Reply'i gönderdikten sonra belirli bir süre içerisinde destination biriminin veri hakkını örneklediğini varsayarak source unit request'i kaldırıyor.
+
+321
+01:16:15,536 --> 01:16:19,436
+Request'i kaldırdıktan sonra destination unit de belirli bir süre sonra reply'i kaldırıyor.
+
+322
+01:16:19,436 --> 01:16:22,396
+Tekrar bunların tekrar edebilmesi için.
+
+323
+01:16:22,476 --> 01:16:26,876
+Bu sırada destination biriminden reply geldikten sonra
+
+324
+01:16:27,252 --> 01:16:43,312
+Bu sırada hemen reply gelir gelmez bir yandan da veri yolunu örnekliyor. Yani şu civarda veri hattını örnekleyerek destination birimi source kaynağından gelen veriyi kendi içerisinde kopyalamış oluyor.
+
+325
+01:16:46,847 --> 01:17:05,447
+Tek bir kontrol ucu üzerinden veya handshaking mantığında iki tane kontrol ucu üzerinden veri haberleşmesi örnekleriydi. Örneklerde hedef ve kaynak birimlerinin veri haberleşmesini başlattığı durumlara ilişkin örneklerimizi de bu şekilde tanımlamış olduk.
+
+326
+01:17:05,447 --> 01:17:14,287
+Bunları biraz da şöyle düşünebilirsiniz. Klavye ve monitör örnekleri açısından düşünün. Hangisi klavye için bir örnektir, hangisi monitör için bir örnektir?
+
+327
+01:17:14,847 --> 01:17:19,027
+Kabaca bunları canlandırarak örnekleri genişletmemiz mümkün.
+
+328
+01:17:19,859 --> 01:17:21,079
+Hocam bir şey sorabilir miyim?
+
+329
+01:17:21,359 --> 01:17:21,679
+Buyurun.
+
+330
+01:17:21,999 --> 01:17:28,159
+Bu klavye örneğinde verdiğiniz strop gönderildiği zaman mesela tuşun basıldığını anlıyoruz ya.
+
+331
+01:17:28,159 --> 01:17:31,319
+Diyelim ki ben tuşu basılı tuttum.
+
+332
+01:17:31,539 --> 01:17:33,399
+Ha, key up veriliyor değil mi?
+
+333
+01:17:33,519 --> 01:17:35,959
+Hani bastı sonra kaldırdı.
+
+334
+01:17:36,059 --> 01:17:41,839
+Çünkü hani mesela basılı tuttuğumuz zaman tekrar tekrar yazılıyor klavyedeki veri.
+
+335
+01:17:41,979 --> 01:17:44,179
+Mesela K'ya bastığımız zaman, L'ye bastığımız zaman.
+
+336
+01:17:44,679 --> 01:17:47,799
+Yani şu süreç olursak bak strop işareti geldi.
+
+337
+01:17:47,859 --> 01:18:01,979
+Ve veri aktarılıktan sonra sonlandı. Tekrar basılıysa, tuş hala basılıysa, bir sonraki, yani onu kaldırıp tekrar, bunun için çok uygun değil. Çünkü burada yükselen kenar tetiklemeli bir durum var.
+
+338
+01:18:04,119 --> 01:18:09,739
+Yani şey kaldırdı, parmağını kaldırdı şeklinde bir başka bir strop gönderilmiş olabilir mi?
+
+339
+01:18:10,260 --> 01:18:26,520
+Yok, orada şöyle, şimdi burada tetikleme kenarla bizim anlattığımız örnekte yükselen kenarla yapılmış durumda ya, tuşa ilişkin okumaları üç şekilde yapabilirsin. Yükselen kenarda yapabilirsin. Yani tuşa bastığın anda tuşa basıldığını anlayabilirsin.
+
+340
+01:18:26,880 --> 01:18:42,020
+Veya düşen kenarda bunu anlayabilirsin. Düşen kenarda anlamak şu değil mi? Bastım, bastığım anda bir fonksiyon yok. Basılı tutuyorum, hala bir fonksiyon yok. Tuştan parmağımı çektiğimde düşen kenarı yakalayarak bunu yapabilirim. Bunlar anlık, tekil.
+
+341
+01:18:43,188 --> 01:18:47,948
+Tuşa uzun bir süre bassan bile tekil bir basmayı bulan durumlar.
+
+342
+01:18:48,568 --> 01:18:54,128
+Daha kötü bir senaryo ise tuşun seviyesini kontrol ederek bunu yapabiliriz.
+
+343
+01:18:54,188 --> 01:18:57,748
+Tuşun seviyesini kontrol ettiğimizde ise bir program akışını düşün.
+
+344
+01:18:58,868 --> 01:19:02,288
+İlgili bir kontrolücüm var. Bu bir mi diye kontrol ediyorum.
+
+345
+01:19:02,899 --> 01:19:26,039
+Program akışı döndü, bir while döngüsü. Bittikten sonra tekrar başa döndüm. Tuş bir mi diye tekrar baktığımda tuş evet yine bir. Dolayısıyla ikinci basış kontrol frekansıma göre belirlenmiş oluyor. Benim buradaki ilgili kontrol ucunu, kontrol frekansım ne kadar yüksekse o kadar sayıda çok tuşa basmışım gibi algılanır. Ben oradaki şeyi yavaşlatırsam.
+
+346
+01:19:26,368 --> 01:19:49,828
+kontrol frekansımı yavaşlatırsan iki tane karakter basma süresi arasında geçen süre artar. Dolayısıyla bir güvenlik iki pedini düşünün. Orada bir tuşa uzun basmanız gerekiyor mesela. O uzun basma seviye kontrolünü belirli bir aralıkla kontrol ettiğim durumda, özel olarak uzun bir aralıkla kontrol ettiğim durumda sağlanabilir.
+
+347
+01:19:53,395 --> 01:20:06,456
+Çok güzel yapmamışsam, siz bir tuşa basıyorsunuz veya bastığınızı zannediyorsunuz ama sizin tuşa bastığınız o kısa süre çerçevesinde kontrol algoritması o ucu 3-4 kere kontrol etti ve basılı anladı.
+
+348
+01:20:07,096 --> 01:20:11,596
+Ve 3 kere aynı karakterden görürsünüz. Bu kullanım açısından çok ergonomik olmayan bir durum.
+
+349
+01:20:12,055 --> 01:20:16,855
+Ve tamamen tuşun aktif olma durumunu nasıl kontrol ettiğimizle alakalı.
+
+350
+01:20:18,096 --> 01:20:20,735
+Dolayısıyla nükle denetleyici tarafında çözülen bir şey.
+
+351
+01:20:21,555 --> 01:20:22,495
+Anladım hocam.
+
+352
+01:20:25,975 --> 01:20:28,155
+Dolayısıyla şunu da söyleyebiliriz.
+
+353
+01:20:29,652 --> 01:20:40,851
+Şimdi tuşa bastığımız durumda basılı olduğu anda mı, basılı olduğu süre boyunca mı, bıraktığım anda mı, bunu anlayan veya bunu çözen, kaç kere basıldığını tutan mikrodenetleyici.
+
+354
+01:20:41,231 --> 01:20:47,652
+Ama mikrodenetleyicinin interfejle başka bir arayüzü var. O arayüz içerisinde strob işaretini üretiyor.
+
+355
+01:20:47,652 --> 01:20:55,771
+Yani doğrudan burada bastığım zaman o strob işaretine aktarılmıyor. Bir dönüşümden geçtikten sonra strob işareti olarak interfejse gönderiliyor.
+
+356
+01:20:57,652 --> 01:21:01,372
+Bu konuda ekleyerek tamamlamayı uygun olur herhalde soruyu.
+
+357
+01:21:03,731 --> 01:21:16,931
+Şimdi paralel interfazlerden bahsettik. Paralel interfazler dış dünyaya bir anda 8 tane uçtan veri çıkan veya bir seferde 8 tane uçtan veri okuyan arayüzlerdi.
+
+358
+01:21:17,551 --> 01:21:20,292
+Bunun haricinde bir de seri haberleşme arayüzleri var.
+
+359
+01:21:25,619 --> 01:21:39,459
+Seri haberleşme mantığını görelim arkadaşlar. Asenkron haberleşme mantığı. Temel olarak iki tane birimimiz var. Bunlar iki tane giriş çıkış birimi olsun. Bir tanesi mikro işlemci 1'e, bir tanesi mikro işlemci 2'ye bağlı.
+
+360
+01:21:39,459 --> 01:21:51,639
+Ve bu iki seri haberleşme modülü birbiriyle bağlantılı. Veri uçları üzerinden birbiriyle bağlantılı. Yani bunlar da receive ve transmit uçları olarak iki tane ucumuz var. Bunlar birbiriyle bağlantılı olsun.
+
+361
+01:21:52,015 --> 01:22:09,715
+Bu durumda bir birimden bir başka birime uzak bir birime seri olarak veri aktarmak istediğimiz zaman asenkron haberleşme mantığı kullanılabilir. Asenkron haberleşme mantığında iki tane terminal arasındaki bağlantı veri gönderme ve veri alma uçları arasından sağlanıyor.
+
+362
+01:22:10,676 --> 01:22:23,396
+İkisi arasında bir grant bağlantısı var. Bu doğal olarak şehir şebeke gerilim üzerinden sağlanan bir durum aslında. Ama teorik olarak baktığımızda üçüncü bir bağlantıda ortak grant veya ortak referans ucu olmuş oluyor.
+
+363
+01:22:26,260 --> 01:22:41,039
+Her iki tarafta haberleşme açısından ne kadar bit frekansında haberleşecekler, kaç tane veri biti kullanacaklar, başlama ve bitiş bitlerinin tipleri ve değerleri adetleri noktasında baştan anlaşmış durumdalar.
+
+364
+01:22:41,039 --> 01:22:53,020
+Yani her iki tarafta biliyor ki benim seri haberleşmem 112.500 hızında 8 data biti kullanarak 2 stop bitiyle gerçeklenecek durumda. Her iki tarafta baştan buna anlaşmış durumda.
+
+365
+01:22:54,260 --> 01:23:02,720
+Bir terminal diğer terminale veri göndermek istediği zaman izlenecek yolu burada görüyoruz veya hatta çıkması gereken veri değerlerini görüyoruz.
+
+366
+01:23:03,024 --> 01:23:27,164
+Normalde hat boştayken hat lojik birde oluyor. Ben veri göndermeye başlayacağım zaman hattı öncelikli olarak sıfıra çekiyorum. Hattı belirli bir süre boyunca sıfıra çekiyorum. Bu bir bitin hatta kalma süresi periyoduna eşdeğer olmak durumunda. Yani bir veri gönderme miktarı kadar o değerin ucun sıfırda kalması gerekiyor. Bu bizde.
+
+367
+01:23:27,764 --> 01:23:55,764
+Start biti, seri haberleşmenin Start biti olarak karşılık buluyor. Daha sonrasında verimi göndermeye başlıyorum. Verimi ama nasıl göndereceğim? Seri olarak göndereceğim ya, buradan karşı tarafa, diğer terminale bir tane veri gönderme hattı bağlı, teli bağlı. Karşı taraftan da bana bir tane veri aktarma ucu bağlı, tel olarak. İki tane tel var. Birisi benim karşıya veri gönderdiğim, diğer tel de karşıdan bana gelen veriyi almak için kullandığım tel. Dolayısıyla ben karşı tarafa bir tel ürün.
+
+368
+01:23:55,764 --> 01:24:23,764
+Üzerinden bunları göndereceğim. Dolayısıyla aynı anda 8 tane bitlik veriyi çıkamam. Tek tek bitleri çıkmam lazım. Karşı tarafa tek tek aktarmam lazım. Ben birinci terminal olarak CPU tarafında veriyi paralel olarak işledim. Yani 8 bitlik, 16 bitlik olarak işledim. Bir yazmaçta tutuyorum. Daha sonra bunları bit bit karşı tarafa aktaracağım. Bunu yapabilmek için dolayısıyla elimde paralel olarak tutulan veriyi serileştiren bir mantık olması lazım. Basit olarak bunu...
+
+369
+01:24:23,764 --> 01:24:27,724
+Bir shifter olarak düşünebilirsiniz. Her seferinde bir bit shift ediyor sağa doğru.
+
+370
+01:24:28,112 --> 01:24:34,292
+Bu yüzden sağ öteleme ucundan çıkan değeri de hat üzerinden karşı tarafa aktarıyoruz. Böyle düşünebilirsiniz.
+
+371
+01:24:34,912 --> 01:24:43,172
+Dolayısıyla gönderirken, veriyi gönderirken önemli bir nokta. Veriyi gönderirken D0, 0 numara en düşük anlamlı bitten itibaren gönderiyorum.
+
+372
+01:24:43,311 --> 01:24:49,731
+Sağ öteleme mantığını düşünün. Start bitinden sonra göndereceğim ilk değer göndereceğim verinin en düşük anlamlı verisi.
+
+373
+01:24:49,731 --> 01:24:52,231
+Bu karşı tarafa alındı. Karşı taraf bunu alırken.
+
+374
+01:24:53,363 --> 01:25:21,363
+Sola ötelemeli bir yazmaç vasıtasıyla alıyor. Yani aldığı ilk veriyi en yüksek anlamlı bite yazdı şimdilik. Ama ikinci veri geldiği zaman şu ana kadar elde ettikleri veriyi bir kaydıracak, sağa kaydıracak, yeni gelen veriyi en anlamlı yere koyacak. Bunu 8 tane databit için tekrarladığında ise bu sola ötelemeli, karşı terminalin sola ötelemeli yazmacında benim bit bit, en düşük anlamlı bitten itibaren göndermiş olduğum 8 bitlik veri elde edilmiş olacak.
+
+375
+01:25:21,363 --> 01:25:43,723
+Dolayısıyla burada en düşük anlamlı bitten itibaren değerleri gönderiyorum. En son bir değerini de gönderdikten sonra iki tane stop biti göndermem lazım. Mesela iki tane stop bitinde anlaşmışsam stop bitleri de hattın boşta kaldığı seviye neyse yani lojik bir seviyesinde iki birim zaman boyunca beklemem gerekiyor. Bu veri haberleşmesinin bittiği anlamına gelen durum.
+
+376
+01:25:44,148 --> 01:25:52,488
+Burada arkadaşlar niçin asenkron haberleşme deniyor buna? Çünkü iki terminal kendisi arasında bir ortak saat değerine sahip değiller.
+
+377
+01:25:54,108 --> 01:26:01,828
+Ve her iki tarafta farklı kristaller kullanıp farklı clock frekanslarına sahip olabilir.
+
+378
+01:26:02,828 --> 01:26:08,408
+Yakın olabilir yani yakın olabilir ama ufak bir fark olsa dahi şöyle bir sıkıntıyla karşılaşabiliriz.
+
+379
+01:26:12,079 --> 01:26:30,680
+Ve bu iki terminal arasında bir frekans farkı olmuş olsaydı, saatlerinde küçücük de olsa bir frekans farkı olmuş olsaydı, örneğin 700. bitten itibaren artık örnekleme durumumuz sıradaki bite değil, bir sonraki bite kayabilirdi. Yani bir kayma söz konusu olabilirdi frekanslarda farklılık olsaydı.
+
+380
+01:26:30,680 --> 01:26:40,079
+Çünkü birinci terminal, yani ben kendi belirlediğim frekans çerçevesinde hatta veriler ne kadar kalması gerekiyorsa o kadar süre bir oyun.
+
+381
+01:26:40,079 --> 01:27:07,400
+Önce veriyi hatta bırakıyorum. Karşı tarafta aynı frekansta alıyordur diye düşünüyorum. Ama karşı tarafın frekansı biraz kayıksa örnekleyeceği değer, örnekleyeceği zaman benim veriyi gönderdiğim zamandan bir miktar kaymış olabilir ve yanlışlıkla bir sonraki biti örneklemiş olabilir. Bu durumda veri çöp oluyor zaten. Dolayısıyla asenkron haberleşme dediğimiz yapı küçük veri blokları çerçevesinde. Yani 8'er bit, 5, 6, 7, 8 bit çerçevesinde oluyor.
+
+382
+01:27:08,372 --> 01:27:33,692
+Çerçeve dediğimiz şey ne? Veri ne ile çerçeveliyoruz? Bir start biti, işte bir veya iki tane stop biti bu çerçevelerle gönderiyoruz. Küçük küçük paketler halinde. Buna karşılık bir de senkron haberleşme var. Senkron haberleşmede iki tane seri haberleşme termini arasındaki bağlantılar neler? Ortak ground, veri alma, veri gönderme uçları ve bir de ortak saat darbe, ortak saat ucu.
+
+383
+01:27:34,323 --> 01:27:46,423
+Bu durumda her iki taraf da ortak bir saat kullandığı için burada veri paketleri daha yüksek. Ama paketlerin çerçeveleri biraz daha kalabalık. Örneğin bir bit dizisi şeklinde.
+
+384
+01:27:46,832 --> 01:27:57,432
+Biliyorsunuz gönderilecek yüksek veri bloğunun başlangıç parantezi konulup bitiş içinde örneğin 2 veya 3 tane senkronizasyon byte'ı göndermek mümkün olabilir.
+
+385
+01:27:57,572 --> 01:28:02,172
+Tabii gönderilen verinin arada aktarılırken bozulup bozulmadığını anlamak adına da...
+
+386
+01:28:02,448 --> 01:28:18,768
+Bir kontrol bit dizisi de eklenebilir buna. Bunun anlamı da şu, ben seri olarak veriyi gönderiyorum, uzaktaki bir terminale gönderiyorum. Bu aşamada bir girişim sonucu benim logic 1 olarak gönderdiğim değer elektriksel olarak bozulup,
+
+387
+01:28:19,091 --> 01:28:44,931
+Lojik sıfır olarak anlaşılacak bir seviye geçebilir. Karşı taraf hatalı veri aldığını anlayabilmek adına örneğin CRC kontrolüyle hata var mı? Varsa da hangi bit civarında bunu tespit etmesi mümkün olabilir. Dolayısıyla bu senkron haberleşmede CRC check bitları da konulduktan sonra işte parantezde yine başka bir bit dizisi sayesinde büyük paketler halinde karşı tarafa aktarmak mümkün.
+
+388
+01:28:47,091 --> 01:28:54,131
+Bu şekilde kabaca özetlemiş olalım. Daha çok asenkron haberleşme tarafını net bir şekilde bilseniz daha yeterli olur.
+
+389
+01:28:55,251 --> 01:28:58,692
+Yine burada bu ne örneğiydi? Onu hatırlamaya çalışıyorum.
+
+390
+01:29:02,676 --> 01:29:28,876
+Burada bir mikro denetleyici. Burası bir interfej, bu bir keyboardumuz. Keyboardla interfej arasındaki haberleşme bakın, senkron bir seri haberleşme vasıtasıyla gerçekleşiyor. Burada gördüğünüz gibi ortak bir clock darbesi var. Dolayısıyla keyboard tarafında yani giriş çıkış birimindeki veri hazır olduğunda bunun mikro işlemciye aktarılması, interfej mikro işlemcisine aktarılması senkron seri haberleşme vasıtasıyla gerçekleşmiş oluyor.
+
+391
+01:29:29,460 --> 01:29:31,159
+Onu söyleyelim.
+
+392
+01:29:35,220 --> 01:30:00,000
+Artık günümüzde çokça kullanılan bir başka giriş çıkış birimi USB birimleri. USB birimleri de çeşitli hub'lar üzerinden örneğin bir kontrolcü 128 tane cihaza kadar kontrol edebiliyordu. Genişletilerek hub'lar vasıtasıyla ilgili enumeration yapılarak. Dolayısıyla bu şekilde bir ağaç yapısında USB hub'lar üzerinden...
+
+393
+01:30:00,000 --> 01:30:12,980
+üzerinden veri aktarımı sağlanabilir. Onu belirtmiş olalım. Bir de yine seri veri aktarımında az önce anlattığımız yapı, yani şurada gördüğümüz yapı.
+
+394
+01:30:13,395 --> 01:30:29,135
+Seviyeler olarak verinin aktarılması. Yani ben bir bitini göndermek istiyorsam lojik bir seviyesini sağlıyorum. Ama bu her zaman için anlamlı olmayabilir. Yani uzak mesafelerde özellikle girişim noktasında sıkıntı yaşayabiliriz. Bundan dolayı veri aktarımı için.
+
+395
+01:30:30,131 --> 01:30:52,271
+seviye geçişleri kullanılabiliyor. Yani sıfır için sıfırdan bire geçiş gibi veya durum değişimi gibi bir takım tanımlamalar oluyor. Bu Manchester Coding olarak isimlendiriliyor. Bitler seviye olarak değil de geçişler olarak yani sıfırdan bire geçiş, birden sıfıra geçiş şeklinde veya seviye koruma şeklinde tanımlanmış oluyor.
+
+396
+01:30:58,579 --> 01:31:01,619
+Senkron haberleşme ile ilgili çok üzerinde durmuyorum.
+
+397
+01:31:04,359 --> 01:31:07,019
+Buradaki durumumuz ne ile alakalı?
+
+398
+01:31:08,339 --> 01:31:11,239
+Polink mantığıyla veri aktarımı üzerinden bir durum.
+
+399
+01:31:11,939 --> 01:31:14,559
+Şimdi polink ile ilgili olarak bahsetmiştik.
+
+400
+01:31:14,639 --> 01:31:20,599
+Bir giriş çıkış biriminden veri okumak istediğimiz zaman kullanabileceğimiz yapılardan birisi polink mantığı.
+
+401
+01:31:20,599 --> 01:31:24,239
+İmplementasyon kolay ama CPU'yu yorması söz konusu.
+
+402
+01:31:24,692 --> 01:31:44,652
+Burada I.O. cihazıyla interfaz arasında veri iletişimi çift yönlü handshaking olarak sağlanmış durumda. Dolayısıyla I.O. cihazında bir veri üretildiği zaman bu otomatik olarak ilgili data register'ına aktarılır. Data register'ına aktarıldığında da ilgili statüs yazmacının file'i set edilmiş olur.
+
+403
+01:31:50,095 --> 01:32:07,855
+İnterfayz ile CPU arasındaki iletişimden farklı bir şey. Bu ikisi birbiriyle dedike bir şekilde çalışırken CPU'nun pek çok sayıda interfayz ile muhatap olması söz konusu. Dolayısıyla interfayz ile CPU arasındaki iletişimin doğrudan bu şekilde çift yönlü handshaking mantığında olması pek mümkün değil.
+
+404
+01:32:08,340 --> 01:32:16,939
+Ama IO cihazıyla, interfaz arasında böyle dedike bir şekilde iki yönlü handshaking mantığında haberleşme söz konusu olmalı.
+
+405
+01:32:17,039 --> 01:32:26,840
+Dediğim gibi, IO cihazında veri hazır olduğunda, ilgili two-way handshaking mantığında veri aktarılıyor ve ilgili statüs yazmacı set ediliyor.
+
+406
+01:32:27,319 --> 01:32:33,319
+Peki, CPU, polling mantığında bu interfazden IO cihazının üretmiş olduğu veriyi nasıl okuyacak?
+
+407
+01:32:35,572 --> 01:33:00,972
+CPU, interfacing, status yazmacını okuyacak. Status yazmacı okuyabilir. Tek bir bit okuyamaz. Yazmaç okuyabilir. Çünkü veri yolumuz 8 bitlik veya 16 bitlik bir değer. Tek bir bit okumak mümkün değil. Status yazmacını okuyacak. İçeride okuduğu değeri maskeleyecek. Sadece bir bite bakacak. O bitin 1 veya 0 olmadığını kontrol edecek.
+
+408
+01:33:01,363 --> 01:33:15,103
+Eğer ki ilgili fileyimiz sıfırsa gidecek tekrar okuyacak. Aynı statüs yazmacının ve ilgili bayrağa bakacak. Bu döngü ne zamana kadar devam edecek? Baktığımız, ilgilendiğimiz statüs bayrağı bir olana kadar. Statüs bayrağı ne zaman bir olur?
+
+409
+01:33:15,643 --> 01:33:24,683
+I.O. cihazında veri üretilmiş ve bu üretilen verinin interfeise aktarımı tamamlanmış ise ilgili bayrak bir olur. Bayrak bir olduktan sonra yapılacak işlem.
+
+410
+01:33:25,007 --> 01:33:38,667
+Veri gidilecek. Bu sefer data yazmacından okulacak. CPU bu sefer veri hazır olduğu için, flag yazmacında bir olduğu için veri yazmacından değeri okuyup, I.O. cihazının üretmiş olduğu değeri veriyi kendisine aktaracak.
+
+411
+01:33:39,039 --> 01:33:59,600
+Daha sonrasında işlem tek bir byte ile tamamlanıyor mu veya tamamlanmıyor mu? Buna göre bir akışımız var. Eğer tek bir bit ile tamamlanmıyorsa tekrar ikinci byte, üçüncü byte için tekrar başa dönülecek. Ama işlem veri aktarımı genişliği tamamlanmış da program sonlandırılacak. Bu yapı arkadaşlar polling mantığında veri aktarımına karşılık geliyor.
+
+412
+01:34:02,836 --> 01:34:19,576
+Daha efektif olan bir veri aktarım mantığı kesme tabanlı veri aktarımı. Örneğin bir IEO cihazımız var, bir klavye olsun. Bu klavyeden ben bir takım tuşlara basıyorum, bir yazı yazıyorum örneğin. Bu yazının kelime işlemcide tutulması lazım, oraya aktarılması lazım.
+
+413
+01:34:19,967 --> 01:34:47,108
+Bunun için poling mantığı kullanılabilir ama ben sadece klavye ile ilgili değilim. Yapacağım pek çok işlem var. Ekranı sürmem lazım, kelime işlemciyi çalıştırmam lazım, klavyeyi kontrol etmem lazım, mouse kontrol etmem lazım. Dolayısıyla burada poling mantığı dedike bir durum yoksa çok anlamlı değil ve CPU yoran bir durum. Bu gibi durumlarda kesme temelli veri aktarımı söz konusu oluyor.
+
+414
+01:34:47,967 --> 01:34:53,467
+Veri aktarımında arkadaşlar. Daha önce de görmüştük sanırım. Şurada olacak.
+
+415
+01:34:59,988 --> 01:35:05,427
+Yok, onu da değilmiş. Onu bir açmıştım ama nerede şimdi bakayım hemen şuradan kontrol ediyorum.
+
+416
+01:35:08,979 --> 01:35:10,979
+Bunun sonundaydı zannedersem.
+
+417
+01:35:12,119 --> 01:35:12,319
+Evet.
+
+418
+01:35:13,659 --> 01:35:17,059
+Kesme tabanlı veri aktarım için şundan bahsetmiştik hatırlayacak olursanız.
+
+419
+01:35:17,179 --> 01:35:19,879
+Şurası bizim CPU muza karşılık gelen taraf.
+
+420
+01:35:20,019 --> 01:35:26,199
+CPU içerisinde bir kesme istek ucu, bir de kesme ekne oluş ucu vardı.
+
+421
+01:35:26,199 --> 01:35:33,019
+Bu uçları kullanarak dış çevre birimlerinden gelen kesme istekleri yine two-way handshaking mantığında.
+
+422
+01:35:33,139 --> 01:35:35,779
+Burası CPU açısından giriş, burası çıkış.
+
+423
+01:35:36,127 --> 01:35:58,087
+Dış çevre birim kesme isteği gönderiyor. CPU o sırada tam ortasında olduğu instrakşin varsa onu tamamladıktan sonra ekne oluş gönderiyor karşı tarafa. Ekne oluş gönderdikten sonra bu çevre birim hangi numaralı kesme yürütülecekse bu program kantra yüklenmesi için bir vektör numarası, bir adres değeri gönderiyor. Bu akışı hatırlatmış olalım.
+
+424
+01:35:59,091 --> 01:36:15,431
+Peki bizim birden fazla cihazımız varsa bunlar üzerindeki bu kesme tabanlı veri aktarımını nasıl gerçekleyeceğiz? Bunun için arkadaşlar Daisy Chain mantığında bu kesme kaynaklarını birbirine bağlayabiliriz. Bunun anlamı şu.
+
+425
+01:36:16,627 --> 01:36:34,828
+Birden fazla cihazımız var. Bu cihazlar kesme tabanlı olarak veri aktarımı için programlanmış durumda. CPU'muzun bir kesme istek ucu, bir de kesme interapt-acknowledge ucu var. CPU'muzun veri ucu bütün bu kesme üretebilecek cihazlara bağlı.
+
+426
+01:36:35,047 --> 01:36:43,408
+Cihazların kesme istekleri şurada görmüş olduğunuz interapt-request uçları üzerinden birleştirilip bir OR kanalı ile CPU'nun kesme istek ucuna bağlı.
+
+427
+01:36:43,743 --> 01:36:55,923
+Bu durumda örneğin bir numaralı cihaz bir kesme isteği üretmişse, OR kapısından geçtikten sonra CPU bir kesme isteğini algıladı.
+
+428
+01:36:56,243 --> 01:36:59,203
+Fakat bunun hangi cihazdan geldiğini bilmiyor şu aşamada.
+
+429
+01:36:59,984 --> 01:37:09,264
+Dolayısıyla kendi ortasında olduğu instrakşını bitirdikten sonra bir kesme doğrulamasına ilişkin interaptive knowledge işaretini gönderdi.
+
+430
+01:37:09,716 --> 01:37:29,935
+Bu cihazlar birbirine bu şekilde bağlı olduğu için birincinin kesme istek ucuna iletildi. Eğer birinci cihaz kesme isteği üretmemişse, PI ucuna gelmiş olan, bunlar priority input olarak isimlendirebileceğimiz ve priority output olarak isimlendirebileceğimiz uçlar.
+
+431
+01:37:37,203 --> 01:37:42,804
+Kesme isteği üretmemişse, bunu gelen isteği PO ucundan tekrarlıyor.
+
+432
+01:37:43,283 --> 01:37:53,263
+Bu sefer ikinci sırada device 1'e geldik bir numaralı cihaza. Bir numaralı cihazın istek ucuna, ekne oluş ucuna bir değeri geldi.
+
+433
+01:37:53,983 --> 01:38:04,383
+Ve kesme isteğini üreten cihaz da bu olduğu için artık hangi kesmenin yürütüleceğine dair adres değerini hatta bu cihaz vektör adresi olarak çıkıyor.
+
+434
+01:38:04,383 --> 01:38:11,003
+Ve CPU'ya bu ulaşıyor. Dolayısıyla CPU bu cihaza ilişkin olarak kesme alt fonksiyonunu yürütecek şekilde.
+
+435
+01:38:11,283 --> 01:38:29,223
+Program akışında bir dallanma gerçekleştirmiş oldu. Dolayısıyla burada bir öncelikle tanımlamış oluyoruz. Bu bağlamış olduğumuz sırada mesela şöyle düşünelim. Aynı anda sıfır numaralı cihaz ve bir numaralı cihazdan bir kesme isteğe geldi. CPU bunu aldı, acknowledge etti.
+
+436
+01:38:29,811 --> 01:38:50,431
+Fakat önce sıfır numaralı cihaza baktığı için öncelikli olarak sıfırın kesme isteği gerçekleştirilmiş oluyor. Çünkü Ecnology önce buna geliyor. Bu Ecnology'a karşılık okey dedikten sonra kesme isteği burada değerlendirilmiş oluyor. Dolayısıyla bir öncelik var. Bu bağlantı Daisy Chain mantığında bağlantı sırasına göre bir öncelikle tanımlamış oluyor cihazlar arasında.
+
+437
+01:38:51,923 --> 01:39:10,524
+Bu içerideki yapının nasıl olduğunun detayı. Bir başka yaklaşım ise arkadaşlar, priority encoder kullanarak bunu gerçekleştirmek. Priority encoder kullanarak da birden fazla cihaza ilişkin olarak kesme isteklerini anlamlandırabiliriz.
+
+438
+01:39:10,524 --> 01:39:17,524
+Burada en yüksek kesme isteğine sahip olan cihazı priority encoder'ın en yüksek anlamlı giriş ucuna bağlarız.
+
+439
+01:39:17,971 --> 01:39:19,971
+Buna göre zaten...
+
+440
+01:39:20,212 --> 01:39:30,072
+İlk defa biri en yüksek anlam sırasından itibaren girişlerde ilk defa nerede görüyorsak ona karşılık bir binary çıktığı dışarısında üretiyordu Priority Enkoder.
+
+441
+01:39:30,472 --> 01:39:39,452
+Dolayısıyla bunu da bir vektör adresi üretecek şekilde tamamlarsak, sıfırlarla tamamlarsak bunu bir vektör adresi olarak kullanmamız mümkün.
+
+442
+01:39:39,452 --> 01:39:48,212
+Dolayısıyla Priority Enkoder, öncelik enkoderi kullanarak giriş sırası anlam sırasında farklı kaynaklardan gelen kesme istedikleri.
+
+443
+01:39:48,212 --> 01:39:58,212
+İsteklerine cevap vermemiz ve anlamlandırmamız mümkün. Yine burada bazı kesmeleri açık, bazı kesmeleri kapamak istersek bunun içinde bir maskeleme yazmacı kullanabiliriz.
+
+444
+01:39:59,632 --> 01:40:08,092
+Gelen kesme isteklerinin ilgili kesme kaynağının maske kontrol bitiyle 1 veya 0 olarak sürdüğümüz zaman ne oluyor bakalım.
+
+445
+01:40:08,092 --> 01:40:12,092
+Burada bir kesme isteği olsa bile ben bunu maskeleyerek 0 ile maskelersem.
+
+446
+01:40:12,787 --> 01:40:29,727
+Asla bu kesme isteği enkodera aktarılmayacak. Dolayısıyla bu şekilde maskeleme imkanımız da var. Bu yapıda öncelik enkodera kullanarak farklı kaynaklardan gelen kesme isteklerinin CPU'ya aktarılmasına ilişkin ikinci bir örneği oluşturmuş oluyor.
+
+447
+01:40:39,347 --> 01:40:55,607
+Üçüncü bir şekli var. Bu yapı ise Direct Memory Access. Dolayısıyla üç farklı şekilde veri aktarımı olabilir. Yani cihazlar arası, giriş çıkış birimleriyle hafıza arasında üç farklı şekilde veri aktarımı olabilir. Bunlardan birincisi polling. Aktif bir şekilde CPU yoran bir durum.
+
+448
+01:40:56,083 --> 01:41:22,463
+CPU her seferinde gidiyor interfejden, flag okuyor, statüs yazmacı okuyor, flag'i mask geliyor, ilgili değere ulaşmış mı diye bakıyor. Eğer ulaşmamışsa tekrar yazmacı okuyor, flag mask geliyor, ilgili değerde mi diye bakıp bir döngü içerisinde bu kontrol yapıyor. Flag istediğimiz değerde ise gidip bu sefer veriyi okuyor ve bir sonraki byte için tekrar beklemeye başlıyor. Aynı süreci tekrar yürütüyor.
+
+449
+01:41:24,083 --> 01:41:36,083
+Kesme tabanlı veri aktarım yöntemiydi. Bunda veri aktarımı CPU tarafından initialize edilmiyordu. Eğer bir çevre birimi...
+
+450
+01:41:36,319 --> 01:41:52,000
+Veri aktarımı için hazırsa CPU'ya kesme isteği gönderiyordu. Kesme isteğine karşılık CPU ekne oluş gönderdikten sonra bir vektör adresi göndererek, vektör adresi dediğimiz şey de bu kesmeye ilişkin olarak yürütülecek olan alt fonksiyonun adresi gibi düşünebilirsiniz.
+
+451
+01:41:52,519 --> 01:41:57,519
+O alt adresi gönderiyor CPU'ya, CPU da o adrese gidip.
+
+452
+01:41:57,600 --> 01:42:04,200
+Zaten o adrese daha öncesinden o cihaza ilişkin kesme alt programı yerleştirilmiş durumda. O kesme alt programını yürütüyor.
+
+453
+01:42:04,595 --> 01:42:31,975
+Üçüncü yapı ise Direct Memory Access yapısı, veri aktarım için. Direct Memory Access yapısında ise arkadaşlar, daha önceki örnekleri düşünün. Daha önceki örneklerde mesela ben klavyeden bastığım tuşların memorinin belirli bir noktasına aktarılmasını istiyorsam dahi cihazı okuyacağım. Polink'de de bu şekilde, kesme mantığında da bu şekilde. Veriyi okuyacağım. Veri CPU'ya aktarılacak. CPU'ya da aktarıldıktan sonra memoriye tekrar ikinci bir defa aktarmam lazım.
+
+454
+01:42:32,595 --> 01:42:47,635
+Hem poling de bu şekilde hem de kesme tabanlı kontrol de bu şekilde. Fakat Direct Memory Access yapısında bir DMA kontrolcüsü kullanılıyor. CPU üzerinden bu DMA kontrolcüsü programlanıyor. Programlanmaktan kasıt şu.
+
+455
+01:42:48,115 --> 01:43:12,275
+Hangi I.O. cihazının adresinden itibaren, veri okuyacağım, I.O. cihazının adresi nedir? Veri aktaracağım, memori adresi nedir? Başlangıç adreslerini veriyorum. Kaç tane byte okuyup aktarmam gerekiyor, onu da programlıyorum. Daha sonrasında bunları yazdıktan sonra CPU kendisini bekleme konumuna alıp DMA kontrolcüsünü aktif yapıyor. Bu durumda doğrudan artık
+
+456
+01:43:12,627 --> 01:43:25,728
+DMA kontrolcüsü veri ve adres yollarını kontrol ederek I.O. cihazını aktif edip onun hatta verisinin hatta çıkmasını sağlayıp yine memori birimini yazma yönünde aktif edip
+
+457
+01:43:26,100 --> 01:43:47,739
+Bunu ama hep DMA kontrolcü yapıyor. Verinin memoriye yazılmasını sağlıyor. Birinci veri için bu şekilde. Daha sonra kaç veri için bunu yapmak istemiştik? İşte N veri için. N-1 adım daha bunu tekrarlıyor. Dolayısıyla DMA veri aktarımında veri CPU'ya uğramadan giriş çıkış birimiyle memori arasında aktarılabiliyor veya ters yönde de aktarmak mümkün oluyor.
+
+458
+01:43:52,083 --> 01:44:09,944
+DMA kontrolcüsünü, veri ve adres yolunu kontrol ediyor ya, bir de kontrol bası kontrol edecek. Adres, veri ve kontrol uçlarına ilişkin kendi çıkışları var. Bununla birlikte CPU'nun bunu programlayabilmesi için bir takım uçları var. Yine database üzerinden bu sağlanacak.
+
+459
+01:44:17,876 --> 01:44:28,015
+Bir onay alıp bunu EcnoLouch'la göndermesi, geri göndermesi lazım. Şu şekilde gerçekleşiyor. CPU bir bus request gönderiyor.
+
+460
+01:44:32,819 --> 01:44:34,899
+Bir saniye, yanlış anlattım.
+
+461
+01:44:37,519 --> 01:44:39,559
+Bu CPU tarafı olarak gösterilmiş.
+
+462
+01:44:40,279 --> 01:44:42,779
+Tamam, şey o bir sonraki slide'taymış, pardon.
+
+463
+01:44:43,380 --> 01:45:02,920
+CPU tarafı açısından düşündüğümüz zaman CPU'nun zaten adres, veri ve kontrol uçları mevcut. Bununla birlikte DMA kontrolcüsüne bas kontrolünü verebileceği ve bas kontrol isteğini alabileceği iki tane ucu var. Burası CPU tarafının DMA ile ilgili iki tane kontrol ucu.
+
+464
+01:45:10,560 --> 01:45:28,140
+kendi hatlarını yüksek empedansa çekip kontrolü DNA kontrolcüsüne bırakıyor. Bunun bağlantısı iç yapısını burada görüyoruz. Kabaca bir paralel veri aktarım mantığına benzeyen bir yapı. Özel bir durumu yok. Genel bağlantı yapısına geçecek olursak.
+
+465
+01:45:28,564 --> 01:45:50,564
+CPU'muz var, DMA kontrolcümüz var, adres çözümleyicimiz var, memory'miz var, IEO cihazımız var. Amacımız örneğin, buradaki amacımız, IEO cihazından gelen, mesela klavyeden bastığımız tuşların kelime işlemcisinin anlamlandırılabilmesi için, ekrana yazdırılabilmesi için belirli bir memory bölgesinde saklanması lazım, peş peşe saklanması lazım. Bunun için şöyle bir süreç var.
+
+466
+01:45:51,636 --> 01:46:08,155
+DMA kontrolcüsünü, read write uçları, adres ucu ve data ucu üzerinden programlıyoruz. Ne yapıyoruz? İşte bunun adresi belli. Dolayısıyla şu IO cihazı 100 adresinde olsun. Memorinin de 200 adresinden itibaren yazacak olalım. Başlangıç IO adresi 100.
+
+467
+01:46:08,724 --> 01:46:20,224
+Başlangıç memori adresi 200, toplam veri değeri 20 byte olacak şekilde CPU sanki bir çevre biriminde iletişiyormuş gibi DMA kontrolcüyü programlıyor.
+
+468
+01:46:20,304 --> 01:46:27,484
+Bunu programladıktan sonra, programlama işi bittikten sonra DMA kontrolcüsü bus request sinyali gönderiyor.
+
+469
+01:46:28,423 --> 01:46:30,064
+Artık bu kontrolü ele alacak ya.
+
+470
+01:46:33,747 --> 01:46:58,207
+O anda yarıda bir instrakçını varsa bunu tamamladıktan sonra, bus granted sinyali üzerinden bütün kontrolücü DMA kontrolücüsünü aktarıyor. Bu noktada CPU'nun adres, veri ve kontrolüçleri yüksek empedans gösteriyor. Hattan çıkarılmış gibi bir etki gösteriyor. Artık kontrol DMA kontrolücüsünde. DMA kontrolücüsü adres uçlarına, adres basına değer çıkıyor.
+
+471
+01:46:59,188 --> 01:47:19,347
+Benzer şekilde veri basına değer çıkıyor ve bu iki cihazı aktif ediyor. Bu sırada veri kaynağı olan IO cihazına da two-way handshaking mantığında verisinin hazır olup olmadığını kontrol ederek aktarım sağlayabiliyor.
+
+472
+01:47:20,967 --> 01:47:24,568
+Örneğin 20 byte'lık bir veri aktarımı programlamıştık.
+
+473
+01:47:25,619 --> 01:47:37,839
+Bu 20 byte'lık veri aktarımı bittikten sonra, IEO cihazıyla memori cihazı arasında, DME kontrolcüsü şu anda CPU hold konumunda girdi ve uyanması için bir kesme gerekiyor.
+
+474
+01:47:38,459 --> 01:47:49,539
+20 tane veri aktarımı bittikten sonra bir kesme isteğiyle CPU'yu uyandırıp CPU'yu veri aktarımı bittikten sonraki süreç için tekrar devreye almış oluyor.
+
+475
+01:47:53,619 --> 01:48:16,399
+I.O. cihazı ile memori arasında gerçekleştirildi. Dolayısıyla burada CPU üzerinden geçen bir durum yok ve CPU bu süre içerisinde beklemedeydi. Adres ve veri uçlarındaki değeri DMA kontrolcüsü üretmişti. Dolayısıyla bu da DMA tabanlı, Direct Memory Access tabanlı veri aktarım örneğini oluşturmuş oluyor.
+
+476
+01:48:18,671 --> 01:48:21,771
+Biraz uzadığı için bu iki slide'da geçeceğim.
+
+477
+01:48:24,111 --> 01:48:29,351
+Bu sayede arkadaşlar, giriş çıkış birimleriyle ilgili konuyu tamamlamış oluyoruz.
+
+478
+01:48:29,351 --> 01:48:31,211
+Bu noktada bir ara vereceğim.
+
+479
+01:48:32,131 --> 01:48:34,131
+Bir 15 dakikalık ara verelim.
+
+480
+01:48:34,251 --> 01:48:42,351
+Sonrasında kaldığımız bir sonraki konumuz olan cache belleklerle ilgili ön bellek yapısına...
+
+481
+01:48:43,028 --> 01:48:49,007
+Geçeceğiz. Cache yapısına geçeceğiz. Buraya kadar olan konuyla ilgili sormak istediğiniz bir şey var mı arkadaşlar?
+
+482
+01:49:07,731 --> 01:49:17,391
+Soracağınız bir şey yoksa 11.10'da devam edecek şekilde bir ara verelim. Dediğim gibi aradan sonra cache yapısına geçiyor olacağız.
+
+483
+02:07:23,315 --> 02:07:31,775
+Arkadaşlar, tekrar merhaba. Geçen dersin sonunda söylediğim gibi, cache memory ile ilgili olarak konumuza devam edeceğiz.
+
+484
+02:07:39,220 --> 02:08:06,680
+Evet, cache memory ile ilgili olarak öncelikli olarak cache nedir? Memory hiyerarşisi, hafıza hiyerarşisi içerisinde nerede yer alıyor? Cache neden önemli? Hangi noktalarda işlem performansımızı arttırıyor? Yazdığımız programlarda cache'i dikkate almamız bize ne gibi faydalar sağlıyor? Bu gibi konulardan bahsedeceğiz ve cache mimarisi ile ilgili olarak farklı cache tiplerini tanımlayıp bunlar üzerinde
+
+485
+02:08:07,220 --> 02:08:24,840
+Bir örnekler yapmaya çalışacağız. Vaktimiz ne kadar yetiyorsa. Tabii önümüzdeki haftada yine benzer şekilde aynı konunun devamı var. Onu kapatmışım herhalde. Neyse. Önümüzdeki haftada bu konu devam edecek. Şu anda olabildiğince ilerlemeye çalışacağız. Süremiz elverdiği miktarda.
+
+486
+02:08:28,467 --> 02:08:50,327
+Öncelikli olarak şu kavramdan bahsedelim. Yerellik kavramından bahsedelim. Yerellik kavramı aslında yazmış olduğumuz programlarda, oluşturduğumuz programlarda aynı değişkenin veya bir değişkenin civarındaki diğer değerlerin sıklıkla kullanılmasına dayanan bir yapı.
+
+487
+02:08:50,703 --> 02:09:11,003
+Bundan faydalanarak işlem performansımızı arttırmamız mümkün olabilir. Burada iki tane yapı var doğal olarak. Örneğin diziler üzerinde işlem yapıyorsak, biz dizinin sıfır numaralı indisine erişmişsek, bir zaman sonraki döngüde bir numaralı elemana erişmemiz mümkün.
+
+488
+02:09:11,003 --> 02:09:16,983
+Ve işte döngüler devam ettikçe bu civardaki verilere bir sonraki aşamada erişmem.
+
+489
+02:09:17,427 --> 02:09:33,527
+Yüksek olasılıkla değil mi? Dolayısıyla dizi işlemlerinde, benzer işlemlerde, matriz işlemlerinde bir veriye erişiyorsan veya bir indisi erişiyorsan bir sonraki döngülerde bu erişmiş olduğum verinin civarındaki verilere erişme ihtimalim çok yüksek.
+
+490
+02:09:33,527 --> 02:09:39,228
+Bu yapı işte arkadaşlar temel olarak spatial locality olarak isimlendiriliyor.
+
+491
+02:09:42,355 --> 02:09:55,076
+Spatial lokaliteden kasıt tekrar etmek gerekirse, yazmış olduğunuz programlarda, döngülerde bir veriye erişiyorsam T anında, T artı bir anında hemen bunun yakınındaki komşu bir veriye erişme ihtimalim yüksek.
+
+492
+02:09:55,635 --> 02:10:00,000
+Buradaki temel yaklaşımda örneğin bir döngüde dizinin tek tek...
+
+493
+02:10:00,000 --> 02:10:03,519
+Zamanlarını kontrol ediyorsam direkt buradan karşımıza çıkan bir sonuç.
+
+494
+02:10:03,979 --> 02:10:05,719
+Veya şöyle bir senaryo olabilir.
+
+495
+02:10:06,460 --> 02:10:13,099
+Örneğin recursive bir fonksiyon çalıştırdık veyahut da bir değişkene sürekli güncelleme yaparak bir döngü yapıyoruz.
+
+496
+02:10:14,159 --> 02:10:17,039
+Adım adım oradaki değeri güncelleştiriyoruz.
+
+497
+02:10:17,199 --> 02:10:18,479
+Veyahut da şöyle düşünebiliriz.
+
+498
+02:10:18,539 --> 02:10:19,759
+Nümerik bir işlem yapıyorum.
+
+499
+02:10:20,127 --> 02:10:43,667
+İşte basamak sayısını gittikçe hassaslaştırmaya çalışıyorum veya o sayıdan elde ettiğim değeri örneğin P'nin değerini hesaplamaya çalışıyorum. Her döngüde bu değeri güncelliğe güncelliğe devam ediyorum. Bu da şu anlama geliyor. Eğer ben bir veriye erişmişsem, bir hafıza bölgesine erişmişsem bir sonraki döngüde aynı hafıza bölgesini tekrar kullanma ihtimalim yüksek bir zaman sonra.
+
+500
+02:10:44,404 --> 02:10:54,543
+Bunun anlamı da temporal lokalite, yani bir zaman sonra aynı veriyi tekrar kullanacağım. Aynı konum tekrar adreslenebilir bir sonraki döngüde.
+
+501
+02:10:55,484 --> 02:11:03,123
+Spatial lokalite de neydi? Benim adreslemiş olduğum verinin civarındaki veriler bir sonraki aşamada adreslenebilir.
+
+502
+02:11:03,123 --> 02:11:11,644
+İşte bu özellik lokalite olarak, yerellik olarak isimlendiriliyor. Bu ikisini birbirinden tanım olarak ayırabiliyor olalım. Bu önemli.
+
+503
+02:11:12,404 --> 02:11:22,224
+Bu noktada, locality kavramını kullanarak performansımızı arttırmaya yönelik. Dolayısıyla, cache yapısının ortaya çıkmasının altında yatan sebep olarak bunu ortaya koyabiliriz.
+
+504
+02:11:23,224 --> 02:11:30,604
+Bunu da aslında şöyle ilişkilendirmemiz lazım. Bu kavramlar aklımızda yer etsin, kalsın. Biraz sonra tekrar gündeme gelecek.
+
+505
+02:11:31,828 --> 02:11:54,828
+Bir memory hiyerarşisinden bahsedebiliriz. Bu memory hiyerarşisi temel olarak bizim ana işlemlerimizi yürüttüğümüz yer memory. Birinci hafıza memory'miz. Ana hafıza burası. Bizim programlarımız burada çalışıyor, burada var oluyorlar. Ama bizim çalıştıracağımız programların hepsi...
+
+506
+02:11:55,380 --> 02:12:11,619
+Hafızaya sığacak büyüklükte olmayabilir veyahut da birden fazla programı aynı anda çalıştırıyoruz. Hepsinin birden memoriye sığması mümkün değil. Bu gibi durumlardan dolayı ikinci bir hafıza birimi olan disk yapısı ortaya çıkıyor. Disk memori ortaya çıkıyor.
+
+507
+02:12:12,380 --> 02:12:16,500
+Dolayısıyla memori burada küçük bir blok. Neye göre? Diske göre.
+
+508
+02:12:17,108 --> 02:12:28,048
+İkinci saklama birimi olan diskten belirli bloklar halinde memoriye yüklemeler yapılıyor ve biz aslında programımızı memoriden çalıştırıyoruz. Temel olarak memoriden çalıştırmış oluyoruz.
+
+509
+02:12:28,595 --> 02:12:49,315
+Burada özellikle şunu söylemiş olduk. Diskte saklı olan büyük program bloklarını parça parça küçük bloklar halinde, görece küçük bloklar halinde memoriye taşınması işlemi ve diskteki bir blokun memoride hangi bloka karşılık geleceğinin tespit edilmesi virtual memory konusu olarak geçiyor.
+
+510
+02:12:49,315 --> 02:12:56,335
+Bu virtual memory konusunu son haftaki dersimizde işleyeceğiz. Yani son hafta göreceğimiz ders ikinci hafıza birimlerinden.
+
+511
+02:12:56,595 --> 02:13:09,535
+disklerden ana hafıza birimi olan memoriye veri bloklarının nasıl alaklarılacağı ve nereye aktarılacağı problemine dair çözüm içeren konu olarak düşünebilirsiniz bunu.
+
+512
+02:13:10,155 --> 02:13:16,555
+Diğer taraftan ana hafızamız olan memori için sadece CPU ve memori arasındaki iletişimi düşünelim şimdilik.
+
+513
+02:13:17,747 --> 02:13:33,867
+Bir dizide döngüsel olarak sıradaki gelen gözler içinde veya aynı göz içerisinde tekrarlı olarak işlem yapacağım durumlarda aslında bu arada görmüş olduğumuz hafıza blokları olmamış olsaydı her seferinde CPU,
+
+514
+02:13:34,507 --> 02:13:43,447
+memoriye gidip buradan ilgili değeri okuyup tekrar CPU'ya çekip operant fetch mantığında işlemi yapıp daha sonra tekrar geri yazmak durumunda kalacaktı.
+
+515
+02:13:45,747 --> 02:14:06,807
+Baktığımız zaman boyut olarak görece diskten küçük ama diğer bütün hafıza bloklarından daha yüksek bir kapasiteye sahip. Bununla birlikte hız olarak baktığımızda CPU'nun içerisinde yer alan yazmaçlardan veya cache olarak isimlendirdiğimiz ön belleklerden daha düşük bir hıza sahip.
+
+516
+02:14:08,148 --> 02:14:34,627
+Cache'lere baktığımızda, cache ve ön bellek yapılarına baktığımızda ise bunların boyutları görece küçük. Register'lardan tabii büyük ama görece küçük. Hız olarak yüksek. Cache'lere baktığımızda farklı seviyelerde cache'ler var. Hemen CPU'nun önünde, CPU'nun içerisinde ve hatta L3 cache'ler de var günümüzde. Siz de takip ediyorsunuzdur. Farklı seviyelerde cache'ler var. Cache'in amacı şu. Temel olarak şu.
+
+517
+02:14:35,380 --> 02:14:56,079
+Ben bir operantla ilgili işlem yapacaksam, memori bölgesiyle ilgili işlem yapacaksam gidip bu veriyi memoriden almak yerine, şimdi ilk başta erişmek istedim. Doğrudan gidip memoriden almak yerine bu ara cache blokları seviyelerinden ben bunu alsam daha iyi bir performans sağlayabilir miyim noktasından çıkan bir durum.
+
+518
+02:14:56,416 --> 02:15:14,655
+Zaten mesela ZAZCPU içerisinde yer alan cache'ler hız olarak daha yüksek. Garanti bir şekilde daha iyi performans alabilirim. Ama sıkıntı şu, performansı yüksek olmakla birlikte kapasiteleri düşük. Aradığım her veriyi burada bulamayacağım. Aradığım verinin burada olması nasıl sağlanıyor?
+
+519
+02:15:15,123 --> 02:15:34,784
+Örneğin bir veriye bakacağım ve bir memori adresine bakacağım. Bu cache'te var mı? Yok. İkinci seviye cache'te var mı? Yok. O zaman veriye gidip memori'den okuyacağım. Memori'den cache'e aktaracağım ikinci seviye. Buradaki küçük bir bloğu da içerideki L1 cache seviyesine aktaracağım. Artık bir sonraki aşamada...
+
+520
+02:15:35,060 --> 02:16:00,500
+Spatial locality veya temporal locality, madem bu kadar aktif bir şekilde kullanılacağını öngördüm. Aradığım bir sonraki verinin L1 seviye cache'te olma ihtimali çok yüksek. Dolayısıyla ben veriyi memoriden L2 cache'e, L1 cache'e aktararak, seviye seviye aktararak veriyi direkt memoriye gidip bu aramadan direkt CPI içerisinde, cache yapısı içerisinde bulma ihtimalim yükseldi artık. Dolayısıyla erişimim de yüksek.
+
+521
+02:16:01,460 --> 02:16:25,920
+Dolayısıyla daha hızlı bir şekilde bu veriyi register'a veya operant olarak CPU içerisinde almış oluyorum. Birinci seviye cache'te aradığım veri yok. O zaman ikinci seviye cache'e bakıyorum. Veri burada varsa, buradaki ilgilendiğim veri ve çevresindeki veri bloğunu alıp L1 cache seviyesine aktarıyorum. Yine temporal ve spatial lokalisinden faydalanarak bunu L1 cache'te bulma ihtimalim yüksek.
+
+522
+02:16:28,595 --> 02:16:42,315
+Aradığımız veriyi CPU'ya yakın, daha yüksek hızlı ama görece daha düşük kapasiteli hafıza elemanları sayesinde ara tamponlamalar yaparak CPU'ya aktarmaya çalışıyoruz.
+
+523
+02:16:42,815 --> 02:16:49,135
+Bu arada cache'in temel kullanım amacı bu olmakla birlikte bütün bir hafıza hiyerarşisine bakacak olursak.
+
+524
+02:16:49,587 --> 02:17:11,587
+En yüksek kapasite disk de ikinci hafıza birimleri olan disklerde. Ana hafıza olan memorinin kapasitesi biraz daha düşük. Yani saydığım seviyede yani CPU'ya yaklaştıkça kapasiteler azalıyor. Bununla birlikte hız olarak baktığımızda ise CPU'ya ne kadar yakınsa bu hızın erişim hızının o kadar yüksek olduğunu söyleyebiliriz.
+
+525
+02:17:15,376 --> 02:17:27,315
+En hızlı seviyede olan hafıza birimleridir. Daha sonra L1, L2, L3, cache'ler, sonra ana hafıza, sonra ikinci hafıza birimleri veya kapasite birimleri olarak tanımlamamız mümkün.
+
+526
+02:17:27,315 --> 02:17:36,268
+Yine üretim teknolojisi açısından diskten yazmaçlara doğru geldikçe...
+
+527
+02:17:36,500 --> 02:17:59,340
+Üretim maliyetinin arttığını görüyoruz. Dolayısıyla burada cache'lerin tamamen her şeyin cache tarafından tutulamamasının sebebi maliyet ve işte buradaki mühendislik ve işte performans durumları, optimum bir performans ve maliyet sağlayabilmek açısından bu birimlerin birlikte kullanılımı şeklinde bir sonuç elde etmiş oluyoruz.
+
+528
+02:17:59,796 --> 02:18:14,855
+Dolayısıyla burada bir trade-off var. Trade-off da temel olarak CPU'ya yaklaştıkça kapasite azalıyor, maliyetler artıyor ama hız da artıyor bir yandan. Dolayısıyla hız mı, kapasite mi noktasında bir trade-off'un söz konusu olduğunu söylememiz mümkün.
+
+529
+02:18:15,507 --> 02:18:38,507
+Dediğim gibi, diskten ikinci bilimlerden, ana hafızaya, bu bloklar nasıl aktarılıyor, virtual memory'nin konusu. Bu hafta ve önümüzdeki hafta göreceğimiz konularda da, memory'den veri bloklarının CPU aktarılmasında, arada tamponlama olarak farklı seviyelerde cache'ler kullanımı da bu hafta ve önümüzdeki hafta göreceğimiz konuları oluşturmuş olacak.
+
+530
+02:18:39,540 --> 02:18:50,240
+Dolayısıyla önümüzdeki haftanın konusuna cache dahil. Şöyle, önümüzdeki hafta kısa sınavımız var. Hatırlayacak olursanız, kısa sınava cache konusu dahil.
+
+531
+02:18:56,500 --> 02:19:06,479
+Şimdi bir noktada da baktığımız zaman mur kanunu denk gelmişsinizdir bir şekilde. Temel olarak burada söylenen durum.
+
+532
+02:19:07,219 --> 02:19:14,979
+Zamanla teknoloji geliştikçe CPU'ların işlem güçleri katlı olarak artarken
+
+533
+02:19:15,343 --> 02:19:37,743
+Hafıza kapasiteleri aynı yüksek kat değerinde kapasite genişlemesi sağlayamıyor. Dolayısıyla burada zamanla hafıza ve işlemci arasında bir açılma görülmeye başlanıyor. Bunun sonucunda da optimum bir şekilde performansı artırmaya yönelik iyileştirmelerin ihtiyacı ortaya çıkıyor.
+
+534
+02:19:42,804 --> 02:19:45,664
+Buradan tanımlanabilir.
+
+535
+02:19:48,423 --> 02:19:58,763
+Az önce bahsetmiş olduğumuz hiyerarşiyi biraz daha görsel bir şekilde, grafik bir şekilde tanımlamak gerekirse, en uçta işlemcimiz var.
+
+536
+02:20:00,824 --> 02:20:04,644
+En sonda ise DISC veya ikinci, üçüncü hafıza birimleri söz konusu.
+
+537
+02:20:06,023 --> 02:20:06,664
+Burada...
+
+538
+02:20:09,459 --> 02:20:27,239
+İşlemciden uzaklaştıkça birim hafıza genişliğindeki maliyetimiz düşüyor. Yani ne kadar işlemciden uzaklaşmış saklama birimlerimiz, hafıza birimlerimiz varsa uzaklaştıkça buradaki maliyetin düştüğünü söyleyebiliriz.
+
+539
+02:20:28,719 --> 02:20:32,459
+Özellikle bunu vurgulamış olduk. Sonrasında...
+
+540
+02:20:36,111 --> 02:20:56,831
+Şimdi asıl konumuz bir de hani cache'in neden kullanılacağını tanımlamış olduk. Doğrudan her seferinde gidip hafızadan okumaya çalışsam oldukça büyük bir zaman harcıyorum. Bunun yerine ara tamponlama hafıza elemanlarını ben bu veri bloklarını aktarıp ilk önce onlara bakıp erişim hızları daha yüksek. Eğer orada varsa oradan kullanmayı tercih ediyorum.
+
+541
+02:20:57,459 --> 02:21:18,379
+Dolayısıyla bu noktada cache'leri oluştururken ben aradığım veriyi cache'te var mı yok mu diye nasıl bulabilirim? Bu arama işlemini nasıl tanımlayabilirim? Bir de bunlara erişimim ne kadar hızlı olacak? Bunların erişim hızıyla ilgili yine neler yapabilirim? Bunlar ortaya çıkan konular.
+
+542
+02:21:19,311 --> 02:21:42,311
+Hafızadaki bir adres bloğunun, bir bloğun, cache'in neresine konulması gerektiği bu da üçüncü bir soru. Yani sorularımız şunlar. Ben aradığım veriyi cache'te bulamadım. O zaman gidiyorum memoriye. Memoride buldum bu veriyi var. Memoride de olmayabilir. Çünkü daha diskten memoriye yüklenmemiş olabilir. Bu son haftanın konusu demiştik. Memoride buldum. Memoride bulduktan sonra geliyorum.
+
+543
+02:21:44,404 --> 02:22:03,884
+İlgilendiğim hafıza adresi ve civarındaki veriyi cache'e koydum. Veriyi de oradan aldım. Bir sonraki adımda aradığım veri cache'te mi değil mi? Cache'te aradığım veriyi nasıl bulurum? Ne kadar hızlı buna erişirim? Ortalama bir süre olarak bir veriyi arama ve bulma süresi ne kadar bir zaman alıyor?
+
+544
+02:22:04,319 --> 02:22:12,079
+Bunlar cache optimizasyonu veya cache'in tasarımıyla ilgili olarak ortaya çıkan durumlar netice itibariyle bunlar olmuş oluyor.
+
+545
+02:22:13,420 --> 02:22:17,739
+Cache yapılarını incelediğimizde arkadaşlar bir temelde 3 farklı cache yapısı göreceğiz.
+
+546
+02:22:17,739 --> 02:22:27,595
+Bu cache yapıları mapping olarak isimlendirilen haliyle hafızadaki, ana hafızadaki bir bloğun cache'e nasıl aktarılacağını...
+
+547
+02:22:27,603 --> 02:22:39,563
+Belirleyen durumlar ve aynı zamanda cache içerisinde hangi verinin kaldırılıp da yeni verinin konulacağını belirleyen durumları oluşturmuş oluyor.
+
+548
+02:22:40,183 --> 02:22:50,843
+Örneğin, hafıza bloğundaki her bir adres bloğu teke, birebir ve örten şekilde cache'teki bir dar bir alanda hangi bölgeye denk geliyor?
+
+549
+02:22:50,843 --> 02:22:52,984
+Bu baştan belliyse ve tanımlıysa.
+
+550
+02:22:53,263 --> 02:23:09,644
+Yani ben X adresini seçmişsem bu cache'in 5 numaralı gözüne denk gelecek diye bu önceden tanımlanmışsa bu doğrudan birbiriyle direct map cache mantığı olarak isimlendiriliyor. Doğrudan ikisi birbiriyle ilişkilendirilmiş durumda.
+
+551
+02:23:10,067 --> 02:23:21,907
+Ben bir hafıza bölgesini seçtiğim zaman bunun karşılığı neresi belli, cache'te hangi bölge kalkacak, yeni veri nereye yerleşecek bu belli, baştan belli, tanımlı.
+
+552
+02:23:22,907 --> 02:23:33,887
+Set associative dediğimiz yapıda ise doğrudan bir adres tanımı yok, böyle düşünebilirsiniz. Benzer şey full associative yapı içinde geçerli.
+
+553
+02:23:34,355 --> 02:23:52,475
+Full Asserti yapıdan bahsedecek olursak, Full Asserti yapıda aradığım veriyi baktım, cache de bulamıyorum. Bu durumda gittim, memoryden baktım, memoryde veriyi buldum, aldım. Memoryden almış olduğum veriyi nereye koyacağım?
+
+554
+02:23:55,731 --> 02:24:09,371
+Doğrudan bir adresleme yok. Neye bakacağım? Elimdeki cache içerisindeki veri bloklarında en uzak zamanda kullandığım, yani en geçmişte kullandığım veri hangisi? Bunu tutabilirim.
+
+555
+02:24:10,592 --> 02:24:20,371
+Cache koyduğum ilk veri hangisi ise onu kaldırabilirim. Yani mevcut veriler içerisinde ilk koyduğum veri hangisi ise onu kaldırabilirim. En son kullandığım veri...
+
+556
+02:24:20,691 --> 02:24:35,271
+En uzak zamanda kullandığım veri hangisiyse onu kaldırabilirim. Farklı bir takım kurallarla bunu tanımlayabiliriz. Ama kalkabilme ihtimali hepsi için eşit. Doğrudan bir eşleştirme de yok. Bu durumda full associative cache olarak isimlendiriyor.
+
+557
+02:24:36,931 --> 02:24:44,271
+Associative özelliği hatırlayacak olursanız, mesela toplama işlemi için değişim özelliği olarak tanımlanıyordu. Dolayısıyla burada...
+
+558
+02:24:44,852 --> 02:24:58,192
+Herhangi bir cache bloğunun diğerine göre bir önceliği avantajı yok. Herhangi birisi verilmiş kural çerçevesinde kaldırılabilir. Bu yüzden dolayı Full Associate Cache yapısı olarak isimlendiriliyor.
+
+559
+02:24:58,543 --> 02:25:18,644
+Yeni gelen veri ya ilk koydum yani en eski olarak cache koyduğum verinin yerine gelebilir veyahut da bir takım verileri sırayla koymuşumdur ama bir tanesiyle hiç uzun zamandır hiç ilgilenmemişim. En son koymuş olmama rağmen uzun zamandır ilgilenmediğim olan least recently used.
+
+560
+02:25:19,347 --> 02:25:42,448
+olan bloğu kaldırıp yeni veriyi koyabilirim. Fully Associative cache yapısında ama temel olarak bu bloklar, cache içerisindeki blokların birbirlerine göre bir değişim anlam farkı yok. Değişim için bir anlam farkı veya bir öncelik farkı yok. Set Associative yapısı ise Direct Map ile Fully Associative arasında bir cache mapping yapısı.
+
+561
+02:25:42,963 --> 02:26:07,064
+Burada ise temel olarak bir hafıza bloğunun, memori'den seçmiş olduğum bir hafıza bloğunun hangi cache bölgesine geleceği kabaca belli. Ama bu cache bölgesi birbiriyle değişim özelliğine sahip alt gözlerden oluşuyor. Dolayısıyla hangi satıra geleceği belli, bu satır içerisinde birden fazla bloğun hangisini kaldırıcı,
+
+562
+02:26:07,520 --> 02:26:26,840
+Full Associative'de bahsettiğimiz gibi list recently used, first in, first out gibi mantıklar çerçevesinde belirleyeceğimiz bir yapı. Direct Map'de memory adresi belli olduktan sonra Direct Map'de cache'in hangi bölgesine, hangi satırına gideceği de oradan belli. Full Associative'de çektim memory'den.
+
+563
+02:26:27,167 --> 02:26:48,347
+Hangisine gideceği o anki kural durumlarına göre bağlı, kuralın uygulanmasına göre bağlı ve birbirlerine göre bir öncelikleri yok. CETR, CESC eğitimde bunların ikisinin ortasında bir değer. Çektiğim, memuriden yeni çektiğim verinin, cache'in hangi satırına gideceği belli ama satır içerisinde birbiriyle değişim özelliğine sahip birden fazla blok var.
+
+564
+02:26:49,203 --> 02:27:04,743
+O satırdaki hangi bloğun kalkacağı ise vermiş olduğumuz veya tanımlamış olduğumuz kurallar çerçevesinde belirlenmiş olacak. Dolayısıyla cache mapping özelliklerini bu şekilde tanımlamış olduk kabaca. Bunların şimdi detaylarına bakacağız.
+
+565
+02:27:05,743 --> 02:27:08,463
+Şimdi öncelikli olarak direct map cache'den başlayalım.
+
+566
+02:27:10,644 --> 02:27:34,644
+Bu durumda arkadaşlar, her bir hafıza adresine karşılık tek bir cache bloğu tanımlı. Dolayısıyla birebir ve örten bir fonksiyon şeklinde aslında burada bir durum söz konusu. Adres belli ise, bu adresin cache'te karşılık geleceği satırı doğrudan belli. Satırda tek bir blok var. Memoriden çektiğim blok direkt oraya yerleşecek.
+
+567
+02:27:35,796 --> 02:27:55,296
+Eğer cache boşsa sıkıntı yok. Önceki veriyi kaldırmadan oraya yerleşiyor. Ama cache doluysa kaldıracağı veri de doğrudan belli. Memori adresi belli olduğu için doğrudan belli. O zaman şunu yapıyoruz. Ben cache'te veriyi ararken şöyle arayacağım. Bir memori adresine göre arıyorum ya.
+
+568
+02:27:56,180 --> 02:28:12,720
+Memory'den cache'e dönüşümü sağlayan fonksiyon neyse aynı fonksiyondan geçirdikten sonra adresi direkt hangi satıra bakmam gerektiğini biliyorum. Gidiyorum o satıra bakıyorum. Benim ilgilendiğim veri orada mı diye bakacağım yer belli.
+
+569
+02:28:13,683 --> 02:28:38,923
+Şu var, niçin benim ilgilendiğim veri orada mı diye bakmam gerekiyor. Çünkü hafıza büyük bir alan. Hafızanın her bir bloğu cache'te belirli bir noktaya denk geliyor. Dolayısıyla cache'in bir bölgesine karşılık gelen memory'de birden fazla alan var. Dolayısıyla ben bir önceki adımda memory'nin düşük, çok uzak adresleriyle ilgili bir işlem yapmışsam o taraflardaki adres bloğunun cache'te olma ihtimali var.
+
+570
+02:28:41,683 --> 02:28:49,523
+İlgili işlem yaptığımda. Fakat cache'in aynı satırına eşleştirilmiş olan blokla ilgili bir arama yaptığımda aradığım veriyi bulamayabilirim.
+
+571
+02:28:49,623 --> 02:28:58,083
+Dolayısıyla şu kesin. DirectMapCache'te verilmiş olan bir memori adresine karşılık hangi cache satırına bakacağım belli.
+
+572
+02:28:59,043 --> 02:29:07,343
+Ama o cache satırına bakmam lazım. Çünkü aradığım veri yerine aynı bloğa denk gelen başka bir memori adresinin içeriği orada olmuş olabilir.
+
+573
+02:29:08,340 --> 02:29:26,220
+Dolayısıyla veri için nereye bakmam gerektiği belli. Bu noktada Full Associative için bahsedelim. Full Associative'de birbirlerine göre bir öncelikleri yoktu. Dolayısıyla verinin nereden kalkıp nereye yerleşeceğinin bir anlam sırası önceden tanımlı değil.
+
+574
+02:29:34,004 --> 02:29:55,664
+Fully Associated Cache'in bütün bloklarına tek tek bakmam gerekiyor. Benim aradığım veri burada var mı diye. Dolayısıyla veriyi nerede arayacağım da belli değil. Hepsine tek tek bakmam gerektiği için. Bulduğumda, ilgili yeri bulduğumda zaten verinin orada olup olmadığını da anlamış oluyorum. Herhangi bir anlam sırası olmadığı için.
+
+575
+02:30:00,000 --> 02:30:09,500
+Bunlar çalıştırdığımızı düşünelim. Cache boş olarak başladık. Bir hafıza adresine erişmek istedik. Memory'den gittik. Bunu cache'e taşıdık. Bir başka adres cache'e taşımalar oldu.
+
+576
+02:30:09,500 --> 02:30:19,340
+Ve cache artık dolu. Artık cache doluyken yeni bir erişim istedim. Bunun için aradığım veri cache'te var mı diye bakmak istiyorum. Aradığım verinin...
+
+577
+02:30:19,379 --> 02:30:33,579
+Doğrudan bir satıra karşılık gelme durumu var. Gidiyorum hangi satıra bakacaksam o satır belli artık. Fakat bu satır içerisinde birbirinden bağımsız bloklar var. Associative olarak yerleştirilmiş birbirine göre değişim özelliği olan bloklar var.
+
+578
+02:30:33,579 --> 02:30:47,020
+Şimdi sadece bu satır içerisinde aradığım veri var mı diye kontrol ediyorum. Full Associative de nasıldı? Bütün satırlar kendi içerisinde değişim özelliğine sahipti. Bütün satırları dahi kontrol etmem gerekiyordu temel olarak.
+
+579
+02:30:47,443 --> 02:30:58,804
+Stasorciative'de ise hangi satıra bakmam gerektiği belli ama satır içerisindeki bloklar birbiriyle değişim özelliğinin sahip. Hepsine tek tek sadece satır bazında kontrol edip bakmam gerekiyor.
+
+580
+02:31:02,260 --> 02:31:25,639
+DirectMapCache'te memory adresinden cache block adresine dönüşüm, birebir ve örten bir fonksiyon, birebir ve örten şeklinde tanımlayamayalım onu. Bir deterministik bir fonksiyon olarak belli diyelim şimdilik. Çünkü aynı blok, farklı bloklar aynı cache bloğuna karşılık gelebilir. Dolayısıyla birebir ve örten değil, onu düzeltmiş olalım.
+
+581
+02:31:31,796 --> 02:31:42,896
+Memoriden çektiğimiz bir blok doğrudan cache'in ilgili satırına yerleşmiş olacak. Dolayısıyla bir cache satır genişliği kadar veriyi ben memoriden çekip koyabiliyor olacağım.
+
+582
+02:31:44,416 --> 02:31:47,896
+Cache'e baktığımız zaman cache'in toplam kapasitesi...
+
+583
+02:31:48,079 --> 02:32:12,100
+Şöyle tanımlanacak. Satırlardan oluşuyor temel olarak. Her bir satırında bir blok genişliği var. Dolayısıyla ben bir seferinde memoriden ne kadar veriyi cache'e aktarabilirim. Bir memori adresi ve civarı doğrudan bir direct map cache satırına denk geleceği için o satır genişliği kadar veriyi memoriden çekip cache'e koyabiliyorum. Genişlik olarak da bundan bahsedebiliriz.
+
+584
+02:32:14,388 --> 02:32:32,388
+Şimdi burada basitleştirilmiş bir memory yapısı, 16 tane adresten olan bir memory yapısı ve 4 satırdan oluşan bir cache yapısından bahsediyor olalım. 4 byte'lık bir cache'imiz var, 16 byte'lık da bir memory'imiz olsun. Bu aradaki ilişkiyi görmeye çalışalım.
+
+585
+02:32:32,755 --> 02:32:54,415
+Direct Map Cache'teki her bir satırımızın genişliği de 1 byte olsun şimdilik. Ama bunun satır genişliğini daha yüksek kullanmamız mümkün. Şimdilik sadece 1 byte olarak tanımlayalım. Bu durumda 0 adresi 0 numaralı cache gözüne karşılık gelsin. 1 numaralı adres 1'e, 2 numaralı adres 2'ye, 3 numaralı adres 3'e karşılık gelsin.
+
+586
+02:32:54,868 --> 02:33:18,587
+4 numaralı adres tekrar 0 numaralı cache adresine. Böyle kontinüüs bir şekilde bunun devam ettiğini varsayalım. Yani 4'er blok, 4'er blok her birisi cache'e doğrudan adreslenmiş olsun. Dolayısıyla 0, 4, 8 ve 12 numaralı adresler 0 numaralı cache adresine, cache satırına adreslenmiş.
+
+587
+02:33:18,927 --> 02:33:26,727
+1, 5, 9 ve 13 numaralı hafıza adresleri 1 numaralı cache bloğuna adreslenmiş olacak.
+
+588
+02:33:27,487 --> 02:33:34,487
+Benzer şekilde 2, 6, 10 ve 15 2 numaralı adrese cache adresine satırına.
+
+589
+02:33:35,227 --> 02:33:44,427
+Son olarak da 3, 7, 11 ve 15 numaralı hafıza adresleri de 3 numaralı cache adresine doğrudan.
+
+590
+02:33:44,788 --> 02:34:03,448
+Bazı bağlı olsun veya tanımlanmış olsun. Böyle bir yapıyı oluşturabilmek için sizce hafıza adresi veya memori adresiyle cache'in satır veya indeks dediğimiz değeri arasındaki ilişki ne olur, ne olmalı? Bu şekilde bir doğrudan adresleme kullanıyorsak.
+
+591
+02:34:03,448 --> 02:34:07,868
+Ki bundan sonraki tanımlamalarımızda benzer bir mantığı kullanacağız.
+
+592
+02:34:08,628 --> 02:34:27,788
+Hafıza adreslerimiz bu şekilde hex olarak verilmiş. Bunların binary karşılıklarını düşünün. Bir de cache'in satır adresleri veya indeks olarak isimlendiriliyor bunlar. İndeks değerlerinin adreslerini düşünün. Hafıza adresiyle indeks adresleri arasında, cache'in indeks adresleri arasındaki ilişki nasıldır?
+
+593
+02:34:29,203 --> 02:34:32,903
+En az anlamda 2 bit'e bakarak yeterli olur herhalde.
+
+594
+02:34:33,184 --> 02:34:37,384
+Evet, doğrudan adresin düşük anlamda 2 bit'i indeks değerini verecek.
+
+595
+02:34:37,884 --> 02:34:42,123
+Peki bizim ilgilendiğimiz adres değerine baktığımızda bunlar 4 bit ile ifade ediliyor.
+
+596
+02:34:43,164 --> 02:34:44,903
+4 bit ile ifade ediliyor ya.
+
+597
+02:34:47,184 --> 02:34:48,583
+Şuraya yazmaya çalışalım.
+
+598
+02:34:51,103 --> 02:34:52,344
+Memory 4 bit.
+
+599
+02:34:53,963 --> 02:34:54,684
+Adres.
+
+600
+02:34:56,275 --> 02:35:23,435
+Cache'lerin indeksleri 2 bit. Bu durumda Cache'te ne saklamalıyız sizce? Cache'in mesela sıfırıncı satırında neler saklamalıyız? Hangi bilgileri saklamalıyız? Aradığımız veri orada mı diye de bulmamız gerekiyor. Neler saklamalıyız sizce? Bir kere veri olması lazım değil mi? Örneğin burada X kırmızı olduğu için görünmüyor. Mesela burada X verisi olsun.
+
+601
+02:35:24,020 --> 02:35:43,360
+Ben sıfır numaralı adresle ilgili bir komut yürüttüğüm zaman bunu önce cache'te baktım bulamadım. Bu veriyi sıfır numaralı adresindeki veriyi aldım. Önce cache'e taşıdım. Cache'ten kullanacağım. Dolayısıyla sıfır adresini cache'e getirmem lazım. Sıfır adresinin içeriğini cache'e getirmem lazım. Bir kere içerik kesinlikle olması lazım. Sorumuz şuydu.
+
+602
+02:35:51,507 --> 02:35:56,507
+CESC'te neler saklanmalı? Bu soruyu niçin soruyorum? Aradığım adresi...
+
+603
+02:36:01,492 --> 02:36:05,252
+Aradığım adres cache'te var mı yok mu direkt söyleyebilmek için.
+
+604
+02:36:06,868 --> 02:36:21,028
+Yüksek anlamlı bitlere herhalde saklamamız gerekiyor. Çünkü ben düşük bite göre buluyorum, alacağım, çekeceğim veriyi. Ama hangi adres olduğunu bulmak için de o saklamadığım bitlere bir şekilde bakmam gerekiyor diye düşünüyorum.
+
+605
+02:36:21,448 --> 02:36:34,448
+Kesinlikle bunu yapmamız gerekiyor. Şöyle düşünelim. Mesela 4 adresiyle ilgili işlem yaptım. Hani 1, 0, 0, 0 adresiyle. Hangi satıra bakmam gerektiği şuradan belli zaten. Cache'in 0 numaralık gözüne bakacağım.
+
+606
+02:36:34,868 --> 02:36:45,648
+Cache'in sıfır numaralı gözüne baktım. Orada bir takım değerler var ama bu memory'nin dört numaralı adresindeki değer mi diye anlayabilmek için gidip tekrar memory'den değeri okuyup buradaki değerle mi karşılaştıracağım?
+
+607
+02:36:45,648 --> 02:37:01,488
+Bu zaten overkill bir şey oldu. Ne yapacağız o zaman? Benim adres alanı için, memory adres alanı için kullanmadığım iki tane bitlik değeri cache için bir yer ayırıp, cache'te bir yer ayırıp ki buna da tag alanı diyeceğiz.
+
+608
+02:37:01,855 --> 02:37:27,396
+tag alanına yazıyoruz. Yani şu anda 0, 0 adresine ilişkin x içeriği burada varsa, burada da 0 adresinin yüksek anlamlı kısmı olan 0, 0 değeri var. Dolayısıyla biz boş bir cache ile başladıktan sonra, boş bir cache ile başladıktan sonra, 0 adresini referans ettiğimiz vakit cache'e yazılacak olan değer, 0 adresindeki
+
+609
+02:37:28,371 --> 02:37:46,851
+Verinin içeriği, bir de bir tag alanı yazmamız lazım. Bu da erişmek istediğimiz adresin yüksek anlamlı 2 biti. Niçin 2 bit dedik? Çünkü 4 satırımız olduğu için, indeks için 2 bite ihtiyacımız var. İndeks için 4 satır cache olduğu için 4 satır cache olduğu için.
+
+610
+02:37:47,860 --> 02:38:01,500
+İndeks tarafında 2 bite ihtiyacımız var. Toplamda memori 4 bit olduğu için 4-2 de 2 tag alanın genişliği oldu. Bu da ilgilendiğimiz adresin yüksek anlamlı 2 biti.
+
+611
+02:38:01,500 --> 02:38:10,500
+Daha sonrasında ben bu önce sıfırı referans ettim. Sıfır adresini referans ettim komutumda. Daha sonra...
+
+612
+02:38:10,868 --> 02:38:32,968
+Bir adresini referans edeyim. Bir adresin içeride Y olsun. Bu durumda cache boş. Sıfır adresini yerleştirdik. Bir adresini yazıyorum binary olarak. 0, 0, 0, 1. Hangi şeye gideceğim belli. Satıra gideceğim belli. Satıra gittim. Burada don't care değerler var. Don't care değerler var. Peki.
+
+613
+02:38:33,456 --> 02:38:45,496
+Bu don't herhangi bir arbitreri değerler var. Bunun valid olup olmadığını anlayabilir miyim? Aradığım veri burada yok veya aradığım veri burada var diyebilir miyim artık taga bakarak şu aşamada?
+
+614
+02:38:48,796 --> 02:38:49,316
+Anlaşılabilir.
+
+615
+02:38:50,076 --> 02:38:51,876
+Ne yapmış olabilir duyamadım.
+
+616
+02:38:54,036 --> 02:38:54,996
+Anlaşılmamak.
+
+617
+02:39:06,451 --> 02:39:20,291
+ABT değerden anlaşılamamış olabilir. Anlaşılamayabilir değil mi? Şöyle, burada bir Z değeri olsun. Rastgele bir değer var ve şansımıza burada 00 değerleri yazılı olsun.
+
+618
+02:39:20,291 --> 02:39:28,012
+Şimdi, biz adres olarak 00 01'i referans ettik. Birinci satıra gideceğim belli, gittim.
+
+619
+02:39:28,319 --> 02:39:50,260
+Tag alanı da tutuyor ama veri hatalı olabilir. Rastgele değerler vardı ya. O zaman cache'te tutmam gereken bir üçüncü alan daha ortaya çıktı. Bu da arkadaşlar valid biti. Burası veri kısmı, tag alanı, bir de valid bitimiz var. Valid biti initialize ettiğimiz zaman hepsi sıfır değerine sahip.
+
+620
+02:39:51,412 --> 02:40:04,612
+initialize ettiğimizde sıfır değerine sahipti. Ben bir numaralı adresi referans ettiğim zaman veriyi aradım, cache de yok. Valid biti çünkü sıfırdı. Gittim memoriadan aldım verisini, tag alanında yazdım. Bunun valid bitini bire çektim.
+
+621
+02:40:05,012 --> 02:40:29,772
+Şimdi gidiyorum, ikinci sırada bir numaralı adresi referans ettim. Satır bir numaralı satır. Tag alanı da uyuyor ama valid biti sıfır olduğu için aradığım veri burada yok diyeceğim. Dolayısıyla gidip memoriden bir numaralı adres içeriğini çekip buraya yazacağım. Şunu bozdum, buraya Y yazdım. Tag alanına ilgilendiğim, referans verdiğim değerim sıfır sıfırdı. Onları yazdım. Valid bitini de bir yaptım.
+
+622
+02:40:30,868 --> 02:40:56,768
+Dolayısıyla cache'te bir ikinci günü. Üçüncü olarak refere ettiğim değer ise 9 adresi olsun. 9 adresinin binary karşılığını yazalım. Bu. Hangi satıra bakacağım belli. İlgili satıra baktım. Bir numaralı satıra denk geldi şans eseri. Valid bitine baktım. Değer valid. Aradığım değer var. Tag alanlarını karşılaştırıyorum. Tag alanları tutmadı.
+
+623
+02:40:57,136 --> 02:41:08,976
+Demek ki benim 9 adresine ilişkin içeriğim 1 numaralı satırda yok. O zaman 9 numaralı içeriğimiz, bu da ne olsun, T diye bir V değer olsun.
+
+624
+02:41:09,296 --> 02:41:17,376
+Gidiyorum, daha önceden 1, 2 numaralı şu referans için, memory referans için cache'e yazdığım değeri tekrar bozuyorum.
+
+625
+02:41:19,796 --> 02:41:39,275
+Veri de alanına yazıyorum. Tag alanını güncelliyorum. 1-0 yapıyorum. Valid bitim yine 1 olarak kalıyor. Bu şekilde direct map cache mantığını kullanarak referans ettiğim, yani referans etmek demek de şurada tek tek erişmek istediğim, okuma yapmak istediğim, referans etmekten kasıt şu, okuma.
+
+626
+02:41:39,956 --> 02:41:45,876
+Yapmak istediğim adres gözlerine ilişkin olarak bu şekilde güncelleme yapıp devam ediyorum.
+
+627
+02:41:46,316 --> 02:41:51,355
+Dolayısıyla bana bir hafıza adresi geldiği zaman cache'in hangi satırına bakacağım belli.
+
+628
+02:41:52,115 --> 02:42:09,695
+Valid biti ihtiyacım ortaya çıktı. Onu tanımladık. Niçin kullanmam gerektiği ortaya çıktı. Sadece veri veya satıra bakmam yeterli değil. İlgili adresin satır haricindeki tanımlamasını oluşturan yüksek anlamlı bitlerini bir tag alanında tutmam gerektiği ortaya çıktı.
+
+629
+02:42:10,227 --> 02:42:22,028
+Ben aradığım veriyi, referans ettiğim hafıza adresini cache'te bakarken öncelikli olarak kaç tane satırım varsa o kadar satırı ifade etmek için kaç bite ihtiyacım var bunu buluyorum.
+
+630
+02:42:22,847 --> 02:42:31,327
+4 tane satırım olduğuna göre cache'te log2, 4, 2, 2 tane düşük anlamlı bit benim satır veya indeks adresime karşılık gelecek.
+
+631
+02:42:33,427 --> 02:42:42,208
+Memory adresinden düşük anlamlı 2 biti satır değeri olarak kullanıp ilgili satıra gidiyorum. Satırın valid bitine bakıyorum. Aradığım değer cache'te var mı yok mu diye.
+
+632
+02:42:42,948 --> 02:42:53,208
+Valid bitine bakıyorum. Valid ise değer. Bu sefer benim referans ettiğim adres değerinin tag değeriyle cache'te yazan tag değerini karşılaştırıyorum.
+
+633
+02:42:53,827 --> 02:42:58,087
+Bunlar uyumluysa aradığım veri cache'te var demekti. Direkt gidip cache'ten okuyorum.
+
+634
+02:42:58,448 --> 02:43:15,927
+Cache'ten erişim daha hızlı. Dolayısıyla veri operant fach için yüksek bir hız kazandım. Ama aradığım veri cache'te yoksa, az önceki örneği düşünün. Daha önce hafızanın bir değeri bir satırında yazılıydı cache'in. Daha sonra 9'u adreslediğimde gittim.
+
+635
+02:43:16,371 --> 02:43:42,272
+Satır olarak birinci satıra denk geldi. Değer validdi. Tag alanları uymuyordu. Dolayısıyla aradığım veri cache'te yoktu. Bu durumda gittim memoriye. Memoriden 9 numaralı adres içeriğini aldım. Cache'in içerisine yazdım. Valid ve tag alanlarını güncelleyerek cache'ten değeri tekrar kullanarak devam ettim. Dolayısıyla direct map cache mantığının kullanımı temel olarak bu şekilde. Neler farklılaşabilir?
+
+636
+02:43:42,772 --> 02:43:55,412
+Şunlar farklılaşabilir arkadaşlar. Cache'in bir satırında saklayacağım veri miktarı veya word genişliğim tek bir byte olmak zorunda değil. Birden fazla byte de olabilir. Şimdi onları görmeye çalışalım.
+
+637
+02:44:04,147 --> 02:44:20,467
+Birden fazla byte de olabilir. Yani block size'ımız, block size'ımız dediğimiz bir satır. Bir satırımızın cache'te bir satırımızın kaplayabileceği, tutabileceği veri genişliği bir byte'dan fazla olabilir. O durumda ne yapacağız? O durumda şunu yapacağız arkadaşlar.
+
+638
+02:44:20,467 --> 02:44:26,567
+Burada bir, şurada olması lazım.
+
+639
+02:44:31,891 --> 02:44:34,852
+görsel olarak göstermek açısından.
+
+640
+02:44:41,716 --> 02:44:42,676
+Österemiyorum.
+
+641
+02:44:47,700 --> 02:45:03,020
+Şöyle bir karşılık bulacak. Eğer cache'imiz bizim 2 byte genişliğinde ise her bir satırımız, her bir satırımız 2 byte genişliğinde ise 0 ve 1 adresleri birinci satıra denk gelecek.
+
+642
+02:45:03,920 --> 02:45:06,580
+2 ve 3 adresleri ikinci satıra denk gelecek.
+
+643
+02:45:07,219 --> 02:45:22,579
+4 ve 5 adresleri ikinci satıra denk gelecek. 6 ve 7 adresleri üçüncü satıra denk gelecek. Bunu nasıl adresleyeceğimizi söyleyebilir miyiz? Yani şöyle bir senaryo söz konusu. Kalemle yazayım şuraya.
+
+644
+02:45:33,620 --> 02:45:34,940
+Senaryomuz şu şekilde.
+
+645
+02:45:39,636 --> 02:45:59,496
+Toplam kapasitesi 8 byte olan, blok genişliği 2 byte olan, direct mapped cache yapısı için,
+
+646
+02:46:03,987 --> 02:46:05,807
+16 byte'lık
+
+647
+02:46:10,835 --> 02:46:12,556
+Hafıza kullanılıyor.
+
+648
+02:46:15,675 --> 02:46:16,275
+Buna göre,
+
+649
+02:46:18,796 --> 02:46:19,335
+Cache'in
+
+650
+02:46:19,335 --> 02:46:22,456
+Tag alan genişliği nedir?
+
+651
+02:46:28,020 --> 02:46:45,920
+Sorumuz bu. Hafıza yine aynı hafıza. 16 byte'lık bir hafızamız var. Yani 16 tane gözümüz var. Fakat bizim cache'imiz 2 tane byte'dan oluşuyor. Cache'imiz 2 tane byte'dan oluşuyor. Buna göre bu direct map cache'in tag alan genişliği nedir?
+
+652
+02:46:50,708 --> 02:47:07,847
+Nasıl ilerliyorduk? Az önceki yaptığımız örnekte. Bizim için kritik olan neydi direct map cache için? Direct map cache için önemli olan neydi? Kritik olan neydi? Satır sayı. Efendim? Duyamadım ama.
+
+653
+02:47:11,283 --> 02:47:12,343
+Yanlışlıklaştık.
+
+654
+02:47:13,343 --> 02:47:26,583
+Bizim için önemli olan satır sayısıydı. O zaman bu özelliklere göre, yani toplam kapasitesi 8 byte olan, block genişliği 2 byte olan, direct map cache kaç satırdan oluşur? Bunu bulmamız lazım. Kaç satırdan oluşur?
+
+655
+02:47:28,423 --> 02:47:36,163
+Toplam kapasitesi 8 bytes ise, her bir block genişliğimizde 2 bytes ise, yani her bir satırında 2 byte veri saklanabiliyorsa, kaç satırdır?
+
+656
+02:47:37,663 --> 02:47:38,463
+4.
+
+657
+02:47:39,028 --> 02:47:59,708
+4 satırda değil mi? Toplamda demek ki bizim cache'imiz 4 satır. 4 satır olduğuna göre, indeks için yine bizim kaç bite ihtiyacımız var? Log 2 tabanında 4, 2 bite ihtiyacımız var. 2 bite ihtiyaç var değil mi?
+
+658
+02:48:00,724 --> 02:48:21,724
+İndeks alanı için yine 2 bit'e ihtiyaç var. Yani burayı bozmadık. Ama şu söz konusu, benim erişmiş olduğum bir adres için, yani şöyle düşünelim, bizim adresimiz 4 bit'ten oluşuyor ya, bu 4 bit'te ben bir veri çektiğim zaman, bir veriyle ilgilendiğim zaman, mesela hangi veri olsun o? 0.0.0.1 verisiyle ilgileneyim.
+
+659
+02:48:27,283 --> 02:48:44,083
+Şu ortaya çıkıyor. Benim blok genişliğim 2 byte ya. Ben burada artık tek tek byte'ları almak durumunda değilim. Yani memoriden cache'e veri aktarırken 2'şer byte'lık bloklar halinde aktaracağım. Ve bu 2'şer byte'lık bloklar nerede belirleniyor?
+
+660
+02:48:46,223 --> 02:48:48,043
+Üçüncü şey de bitti.
+
+661
+02:48:48,755 --> 02:49:02,575
+En son, en son, en düşük anlamlı bitte belirleniyor. Tamam mı? Bu hangi sütün olacağı, cache'teki hangi sütün olacağı en düşük anlamlı bitte belirleniyor. Bir bit ne için yeterli? Bir bit yeterli olduğunu nasıl anlıyoruz?
+
+662
+02:49:03,315 --> 02:49:08,835
+Hocam sanki en düşük bitte değil, ondan bir sonraki bit sanki bilmiyorum.
+
+663
+02:49:09,355 --> 02:49:13,115
+Yok, şöyle yapacağız şimdi. Bizim blok genişliğimiz 2 byte ya.
+
+664
+02:49:13,556 --> 02:49:23,816
+Bizim erişmiş olduğumuz veya cache'e yazmış olduğumuz veride düşük anlamlı byte burada olacak. Yüksek anlamlı byte burada olacak. Ama bunlar byte. Dikkat edin.
+
+665
+02:49:26,296 --> 02:49:34,556
+Byte değerlerimiz. Dolayısıyla hangi byte ile ilgili işlem yaptığımız adresin en düşük anlamlı bitinde saklı. Eğer bu sıfırsa...
+
+666
+02:49:35,412 --> 02:49:59,952
+İlgili, çift, ikişerli, ikişerli almış olduğumuz adres bloklarının düşük anlamlı byte'ına karşılık geliyor. Bir ise yüksek anlamlı byte'ına karşılık geliyor. Dolayısıyla bloklarımız iki byte'dan oluştuğundan dolayı, bloklarımız iki byte'dan oluştuğundan dolayı, log 2, 2 dediğimiz zaman bir sonucunu elde ediyoruz. Bir tane biti byte offset.
+
+667
+02:50:00,000 --> 02:50:09,239
+ByteOffset'i için kullanacağız. Demek ki bu işlem ByteOffset'i için kullanılacak. Satırlar için iki tane değere ihtiyacımız vardı. İki tane değeri burada kullandık.
+
+668
+02:50:09,556 --> 02:50:36,216
+Sonraki gelen iki değer. En yüksek anlamlı kalan da adresin bu adres olduğunu belirten alan yani tag alanına olmuş oluyor. Dolayısıyla böyle bir senaryoda tag alanı için bir bit bizim için yeterli olmuş olacak. Dolayısıyla iki tane byte'dan oluşan bu cache yapısı için tag alanını çizdiğimizde bunun genişliği bir bit, bir bit de valid biti için yer ayıracağız. Bu da valid biti.
+
+669
+02:50:36,592 --> 02:50:42,032
+Bu şekilde bir ayarlama yapmamız gerekiyor.
+
+670
+02:50:42,632 --> 02:50:48,352
+Burada bunu bir adım daha genişlettiğimiz zaman şöyle bir senaryoyla karşılaşabiliriz.
+
+671
+02:50:49,132 --> 02:50:56,952
+Mikro işlemcileri düşünelim. Mikro işlemcilerin veri genişlikleri, veri yolu genişlikleri 1 byte, 2 byte diye tanımlanmıyor.
+
+672
+02:50:57,427 --> 02:51:13,188
+Word mertebesinde tanımlanıyor. Dolayısıyla mesela 8086 için bir Word 16 bitten veya 2 byte'dan oluşuyor. Dolayısıyla buradaki blokları tanımlarken, satır genişliğini tanımlarken kaç Word'den oluştuğunu da söylüyor olacağız bir sonraki aşamada.
+
+673
+02:51:13,188 --> 02:51:22,688
+O zaman şununla karşılaşacağız. Elimize gelen adres değerini, hafıza adres değerini byte offset, word offset.
+
+674
+02:51:24,020 --> 02:51:40,320
+Sonuç şu olacak. Bir satıra birden fazla word koyabiliyor olacağız. Öyle bir genişliğe sahip olursak eğer. Byte offset, word offset, index ve son olarak da tag alanı olarak bunları ayırıyor olacağız arkadaşlar. Tamam mı? Bu örneğimizi daha da genişleteceğiz.
+
+675
+02:51:42,960 --> 02:51:51,180
+Dolayısıyla blog genişliğimiz bir byte'den büyük olduğu zaman sonuç bir de byte offset bloğunu adreste oluşturmak şeklinde bir sonuç olmuş oluyor.
+
+676
+02:51:53,363 --> 02:52:19,643
+Şimdi bu noktada dersi bitirmiş olalım. Haftaya kaldığımız yerden devam edeceğiz. Direct map cache'i bitirip daha sonra writeback ve writethrough'a geçmeden önce yani veri yazmayla ilgili cache kullanımına geçmeden önce diğer cache tiplerini de okuma yönünde inceleyeceğiz. Sonra direct map cache'te veri yazmanın kullanımına bakıyor olacağız. Tamam mı? Şimdilik ama.
+
+677
+02:52:20,115 --> 02:52:21,435
+Burada bitirmiş olalım.
+
+678
+02:52:22,335 --> 02:52:25,235
+Buraya kadar olanlarla ilgili bir sorunuz var mı arkadaşlar?
+
+679
+02:52:28,180 --> 02:52:37,739
+Hocam, az önce gösterdiğiniz yapıyla ilgili bir şey sorabilir miyim? Aynen bu taraf üzerinden. Mesela ben diyelim ki İlkeş üzerinde şöyle bir şey yapmak istiyorum.
+
+680
+02:52:37,739 --> 02:52:51,100
+Mesela program sürekli sıfırıncı adrese ve sekizinci adrese erişiyor. Bunları daha büyük olduğunu düşünürsek farklı farklı alanlar var. Ve sürekli hem burada değişiklik yapıyor hem orada değişiklik yapıyor.
+
+681
+02:52:56,180 --> 02:53:04,760
+boş ama sürekli memorydan çekiyor. Bunun için herhangi bir işlem yapılıyor mu yoksa bu şekilde devam ediyor mu?
+
+682
+02:53:05,120 --> 02:53:11,760
+Eğer ki cache mapping mimarimiz, direct map cache yapısında tanımlanmışsa tam olarak bunun problemi bu.
+
+683
+02:53:12,360 --> 02:53:22,239
+Birebir eşleştirmeler söz konusu olduğu için sen birinci döngüde 0 adresiyle, ikinci döngüde 8 adresiyle, sonra tekrar dönüp 0, 08, 08 diye işlem yaptığın zaman
+
+684
+02:53:22,708 --> 02:53:50,608
+Sürekli olarak memory'den alıp sıfırıncı satırı sürekli bozuyor. Sürekli bozuyor. Dolayısıyla direct map cache'in bu problemine giderebilmek adına fully associative ve set associative cache mantıkları öne sürülmüş durumda. Oralarda birebir doğrudan adresleme ya yok veyahut da kısmen gevşetilmiş durumda. Dolayısıyla orada aynı satıra denk gelme ihtimalleri düşürülmüş olacak.
+
+685
+02:53:50,708 --> 02:54:03,208
+Yani diğer mapping yöntemlerinde. Ama dediğin gibi burada 08-0808 diye işlem yaptığımız zaman cache'in diğer kalan 3 tane satırını hiç kullanmamış oluyoruz.
+
+686
+02:54:03,608 --> 02:54:10,567
+Ve her seferinde cache'ten aradığımız veriye erişememiş oluyoruz. Cache'i sürekli bozmak zorunda kalıyoruz. Kesinlikle böyle bir durum söz konusu.
+
+687
+02:54:11,092 --> 02:54:27,291
+Anladım hocam. Bir soru daha sorabilir miyim? Bu cache'teki verileri güncellediğimiz zaman memoriye hemen güncelleme mi yapıyoruz? Yoksa diyelim ki cache'te tutuluyor. Tekrar tekrar güncelleme yapılıp hani buradaki yapıyı bozacağım zaman mı güncelleme yapıyorum ben memorideki değer?
+
+688
+02:54:27,291 --> 02:54:39,092
+Buna ilişkin iki farklı yapı var. Birincisi writeback, birinci diğeri ise write-true mantıkları. Dediğim gibi hani o önümüzdeki hafta önce flu associative ve set associative mantıklarını...
+
+689
+02:54:39,092 --> 02:54:45,152
+Daha sonra bunların hepsi, oraya kadar olan gördüğümüz konuların hepsi memoriden okumayla ilgili konular.
+
+690
+02:54:45,252 --> 02:54:54,152
+Memoriye yazma konusunda ise, şimdi cache güncellersen, memori geride kalıyor. Hem memoriye hem cache güncellersen, performansım düşüyor.
+
+691
+02:54:54,551 --> 02:55:01,612
+Bunlar arasında bir trade-off olacak şekilde yöntemler tanımlı. Onları ama önümüzdeki hafta son kısımda göreceğiz.
+
+692
+02:55:02,492 --> 02:55:03,692
+Tamamdır hocam, çok sağ olun.
+
+693
+02:55:05,012 --> 02:55:10,851
+Bunun haricinde bir şey yoksa arkadaşlar, dersimizi tamamlayabiliriz. Varsa sorunuzu alabilirim.
+
+694
+02:55:13,371 --> 02:55:14,211
+Yok hocam.
+
+695
+02:55:15,851 --> 02:55:18,012
+Öyleyse arkadaşlar, teşekkür ederiz. Haftaya dediğimiz...
+
+696
+02:55:18,012 --> 02:55:25,752
+Hocam, bir şey sorabilir miyim? Haftaya olacak kısa sınav, ilk sınavla aynı formattan olacak? İlk kısa sınavla.
+
+697
+02:55:26,012 --> 02:55:28,531
+Hangi noktadan mesela, formattan karşı?
+
+698
+02:55:28,551 --> 02:55:30,432
+Mesela Logisim plan kullanmıştık.
+
+699
+02:55:32,147 --> 02:55:47,827
+Şimdi burada hani cache'ler falan var. Biraz hani lojisim kullanımı zor olabilir. Onu ama sınav öncesinde duyururuz. Arada bazı tasarım kısımları da işledik. İhtiyaç olup olmadığını öncesinde duyurmaya çalışırım. Tamam mı?
+
+700
+02:55:48,467 --> 02:55:49,667
+Tamamdır. Teşekkürler.
+
+701
+02:55:50,307 --> 02:55:56,547
+Ama genel olarak biraz daha teorik bir sınav olma ihtimali yüksek. Yani kağıt üzerinde çözülebilecek bir sınav olma ihtimali yüksek.
+
+702
+02:55:59,507 --> 02:56:02,548
+Başka bir şeyimiz varsa alayım arkadaşlar. Sorununuz varsa.
+
+703
+02:56:07,763 --> 02:56:09,343
+Buyurun.
+
+704
+02:56:09,783 --> 02:56:12,883
+Ders notlarını Google Classroom'da paylaşacak mısınız?
+
+705
+02:56:13,223 --> 02:56:15,503
+Şimdi paylaşacağım. Dersten hemen sonra paylaşacağım.
+
+706
+02:56:15,763 --> 02:56:16,343
+Tamam hocam.
+
+707
+02:56:16,343 --> 02:56:17,263
+Tamam.
+
+708
+02:56:21,363 --> 02:56:27,083
+Başka bir sorumuz yoksa arkadaşlar, teşekkür ediyorum. Haftaya görüşmek üzere. İyi günler.
+
+709
+02:56:27,683 --> 02:56:28,324
+İyi günler hocam.

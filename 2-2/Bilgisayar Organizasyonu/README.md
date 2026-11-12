@@ -33,6 +33,7 @@
 ## 📖 Faydalı Olabilecek Kaynaklar
 
 - 📄 **Çıkmış:** [Çıkmış sorular linki](https://drive.google.com/drive/folders/1bafJ2kAlW-yJAKjph-jU5jJPP-dj5HKJ?usp=drive_link) ✨
+- 📄 **Ders Kayıtları:** [Bilgisayar Organizasyonu Ders Kayıtları](./ders_kayitlari/) ✨
 - 📄 **Güncellenmiş Ders:** Dersin adı eskiden *Bilgisayar Donanımı*ydı. Bundan dolayı [kaynakların bir kısmı burada.](./Bilgisayar%20Donan%C4%B1m%C4%B1) ✨
 - 📄 **Not:** [Üstüne not alınmış slaytlar](./Bilgisayar%20Donan%C4%B1m%C4%B1/slaytlar_notlar/2022/kayra.pdf) ✨
 - 📄 [Genel Çıkmış Sorular](https://drive.google.com/drive/folders/1imIiwx0xxIPWREGP-YqotnFdUku8Ealf)

@@ -1,0 +1,3383 @@
+1
+00:04:23,987 --> 00:04:32,908
+Arkadaşlar, günaydın. Bilgisayar donanımı dersinin bu grubunu birlikte yürüteceğiz. İsmim Erkan Uslu.
+
+2
+00:04:52,403 --> 00:05:05,403
+Hangi birimlerden oluşur? Bu birimlerin tasarımı arka planda nasıl gerçekleşir? Bu modüller birbiriyle nasıl bağlantılıdır? Bunları incelediğimiz bir ders olacak.
+
+3
+00:05:06,923 --> 00:05:14,483
+Dersle ilgili olarak bir tanıtım formumuz var. Onun üzerinden ilerleyelim.
+
+4
+00:05:21,459 --> 00:05:45,120
+Evet, dersi iki grup olarak veriyoruz. Diğer grubu Songül Hocamız veriyor. Bizlere ulaşmak isterseniz mail adreslerimiz üzerinden ulaşabilirsiniz. Benim mail adresim [e-posta] adresi. Buradan maille bana ulaşabilirsiniz. Maillerinizde küçük bir ricam var.
+
+5
+00:05:45,524 --> 00:05:53,644
+Konu alanına şöyle bir açıklama yazarsanız, kategorize etmek açısından benim için de kolaylık olur.
+
+6
+00:05:55,124 --> 00:06:12,803
+Dersin kodu 2020-2021 eğitim öğretim yılının bahar dönemi olduğu için 2022 adını soyadını ve öğrenci numaranızı vererek mail atarsanız takip etmek açısından kolaylık olur.
+
+7
+00:06:13,716 --> 00:06:33,016
+Şimdi dersimizle ilgili olarak haftalık plana bakacak olursak arkadaşlar, tabii şimdi burada temel amaç bir işlemcinin iç yapısını tasarlamak ve bunun çalışır bir örneğinin analiz etmek olduğu için temel lojik tasarımları burada bilgi olarak getirmemiz gerekiyor.
+
+8
+00:06:39,411 --> 00:07:05,751
+Tek bir değişken üzerinden tanımladınız. Fakat burada yani bir modern bir bilgisayarı da düşündüğümüz zaman veri yollarından, adres yollarından bahsediyoruz. Yani yollardan bahsedebiliriz. Yani en bitlik versiyonlarını tanımlıyor olacağız. Aslında Lojik Devreler dersinde görmüş olduğunuz kombinasyonel ve ardışıl devrelere ilişkin bunların en bitlik versiyonlarını inceliyor olacağız.
+
+9
+00:07:06,291 --> 00:07:20,951
+Dolayısıyla konu akışımız şu şekilde olacak. Ön yayıklı olarak genel bir giriş tanımlamalar. Daha sonrasında kombinasyonel ve ardışıl devrelere ilişkin olarak tasarım ve analiz örnekleri.
+
+10
+00:07:20,951 --> 00:07:26,991
+Tabii bunlar dediğim gibi bir bitlik olarak başlayacağız dersimiz için. Daha sonrasında bunu en bitlik versiyonlara genişleteceğiz.
+
+11
+00:07:27,540 --> 00:07:35,519
+Daha sonrasında saklayıcı ve sayıcı mantığı ile birlikte yavaş yavaş bir CPU içerisindeki yapıları tek tek inşa etmeye başlayacağız.
+
+12
+00:07:37,139 --> 00:07:49,519
+Saklayıcı dediğimiz yapı aslında register'lara karşılık gelecek ve bu şekilde yavaş yavaş register'larla birlikte daha sonrasında da ilerleyen aşamalarda ALU ve veri aktarımı daha sonra da...
+
+13
+00:07:49,776 --> 00:08:01,836
+instruction decode işlemleriyle birlikte memory, ROM, RAM gibi birimleri de vererek bir tasarım, CPU tasarım gerçekliyor olacağız aslında. İç yapıyı görüyor olacağız.
+
+14
+00:08:02,755 --> 00:08:10,776
+Yine ders konumuza baktığımız zaman programlanabilir yapılara değineceğiz. Programlanabilir yapılar aslında...
+
+15
+00:08:12,596 --> 00:08:24,016
+Optimize edilmiş entegreler gibi düşünebiliriz. Pek çok fonksiyonu bu yapılarla sağlayabiliriz. Bunların iç yapılarını inceleyeceğiz. Bunlarla tasarım nasıl olur onlara bakacağız.
+
+16
+00:08:24,855 --> 00:08:34,635
+Yine bu dördüncü hafta bir tane kısa sınav planlıyoruz arkadaşlar. Kısa sınavımız şu şekilde olacak. Örneğin o hafta 3 saatlik dersimizin 2 saatlik dersini yapacağız.
+
+17
+00:08:35,220 --> 00:08:52,139
+Üçüncü saatinde ise bir kısa sınav. Üçüncü saatinde veya son yarım saatinde soru ve sınavın kapsamına göre ayarlarız onu. Bu süre içerisinde bir kısa sınavımız olacak. Daha sonrasında hafıza birimleri, bellek birimleriyle ilgili olarak devam edeceğiz.
+
+18
+00:08:53,107 --> 00:09:11,407
+Sonrasında saklayıcılar üzerinden veri transferi, ortak yol ve komut yapısını inceliyor olacağız. Adresleme yöntemlerine bakıyor olacağız. Yani yavaş yavaş artık bir CPU tasarımına ilişkin olarak gereklilikleri inceliyor olacağız. Burada temel olarak şunu görüyor olacağız aslında.
+
+19
+00:09:16,052 --> 00:09:38,872
+Donanım tarafının yakından ilişkili olduğunu, desteklenmek için istenen bir takım eğer instruction'lar varsa bunların donanım tarafında karşılıkları olması gerektiğini görüyor olacağız aslında. Dolayısıyla bir yandan da assembly veyahut da instruction set architecture ile bunun donanım karşılığını birbirine bağlamış olacağız.
+
+20
+00:09:40,884 --> 00:10:02,524
+Dersimiz aslında iki haftası tatile gidiyor. Bir tanesi 23 Nisan'a, bir tanesi de 14 Mayıs'taki haftaya denk geliyor. Bu iki hafta dersimiz olmayacak. Dolayısıyla altı hafta ders işledikten sonra sekizinci haftada akademik takvime göre ilan edilmiş haliyle bir vizemiz var. Yıl içi sınavımız.
+
+21
+00:10:03,475 --> 00:10:21,675
+Hemen bunun peşinde merkezi işlem birim tasarımına ve pipeline mantığına bakıyor olacağız. Burada tabii merkezi işlem birimi dediğimiz vakit aritmetik lojik birimi öncelikli olarak göreceğiz. Tabii bunun temelinde de toplayıcı çıkarıcı devreyle başlıyor olacağız.
+
+22
+00:10:22,096 --> 00:10:32,256
+Daha sonrasında herhangi bir lojik fonksiyonu, aritmetik fonksiyonu tanımlayabildiğimiz ALU tasarımı ve aritmetik birim tasarımı ve lojik birim tasarımı olacak.
+
+23
+00:10:32,836 --> 00:10:40,615
+Yine bunun yanında SHIFTER modülünü de tasarlıyor ve sistemimize entegre ediyor olacağız.
+
+24
+00:10:41,756 --> 00:10:47,096
+Yine mikro işlemci sistemlerinin çalışabilmesi için temel yan ek...
+
+25
+00:10:47,283 --> 00:11:13,563
+Birleşenlerden birisi de giriş çıkış birimleri. Bir haftamızı giriş çıkış birimleri ve haberleşme modülleri üzerine ayırıyor olacağız. Daha sonrasında ise cache bellek ve cache bellekle ilgili mapping tekniklerini inceliyor olacağız. Bunlara ilişkin örnekler çözüyor olacağız. Son haftada virtual memory ve page tabloları üzerine konumuzu tamamlıyor olacağız.
+
+26
+00:11:14,035 --> 00:11:23,076
+Dolayısıyla akışımız temel olarak bu şekilde olacak. Dersle ilgili olarak arkadaşlar, teorik dersimiz %70 devam zorunluluğu arayacağız.
+
+27
+00:11:24,555 --> 00:11:34,655
+Bunu yani mesela %68 oldu, %65 oldu çok önemli değil ama %50 devam varsa bunu devamsız olarak değerlendireceğim.
+
+28
+00:11:34,655 --> 00:11:41,475
+Bunun için derse devam etmenizi bekliyorum. Online olarak derse katılmanızı bekliyorum.
+
+29
+00:11:41,971 --> 00:11:53,132
+Katılım olarak, sistem otomatik olarak bunu alıyor. Gün içerisinde herhangi bir anda derste mevcutsanız bunu devamlı olarak sayıyor olacağım.
+
+30
+00:11:55,211 --> 00:12:02,051
+Ders kitabımız, referans kitabımız arkadaşlar. Maurice Manon'un Logic and Computer Design Fundamentals kitabı.
+
+31
+00:12:02,791 --> 00:12:09,412
+Buradaki akışı takip ediyor olacağız ve buradaki örnekler aslında bizim için temel örnekler oluşturuyor olacak.
+
+32
+00:12:10,004 --> 00:12:34,864
+Dolayısıyla referans kitabımızı da tanımlamış olduk. Değerlendirme yönteminden bahsetmek gerekirse, az önce söylediğim gibi bir tane yıl içi sınavımız var, %30 katkısı olacak. İki tane kısa sınavımız var, bunların her birisi %15 katkı yapacak. Yıl içi katkımız %60, final sınavı katkımız da %40 olarak ekleniyor olacak ve bu şekilde yıl sonu notumuzu belirlemiş olacağız.
+
+33
+00:12:35,347 --> 00:12:48,347
+Dersin işlenişiyle ilgili olarak haftalık plan ve değerlendirme yöntemleriyle ilgili bir sorunuz varsa onu şu anda alabilirim. İsterseniz chat ekrandan veya sözlü olarak sorabilirsiniz.
+
+34
+00:12:53,748 --> 00:13:04,928
+Hocam, merhaba, günaydın. Ne kadar assembly ve kod yazımı ve işte algoritma implementleme tarzı şeyler yapacağız? Yani bu programdan pek oturup kod yazmayacağız gibi geliyor.
+
+35
+00:13:06,148 --> 00:13:12,028
+Evet, yani ders kapsamında kod yazma gibi bir kapsamımız yok.
+
+36
+00:13:12,368 --> 00:13:19,248
+Ama ben mümkün olursa Verilog ile bu yapmış olduğumuz tasarım örneklerini vermeye çalışacağım.
+
+37
+00:13:19,368 --> 00:13:25,868
+Yani bir laboratuvar saatimizde olmadığı için sizden doğrudan bunu istemek de çok mümkün olmuyor.
+
+38
+00:13:25,868 --> 00:13:31,268
+Ama ders içerisinde mümkün olduğunca Verilog tarafında bunları örneklemeye çalışacağız.
+
+39
+00:13:32,028 --> 00:13:36,528
+Tabii Verilog ile ilgili olarak konu kapsamını da bir vermek gerekiyor ama.
+
+40
+00:13:36,864 --> 00:13:44,324
+Bunu parça parça yapmaya çalışacağız. Dediğim gibi sizden bir kod yazmanızı bekleyemeyeceğiz. Lapsatimiz yok çünkü.
+
+41
+00:13:44,904 --> 00:13:45,724
+Tamam hocam, sağ olun.
+
+42
+00:13:50,932 --> 00:13:52,591
+Başka bir sorumuz yoksa arkadaşlar.
+
+43
+00:13:58,259 --> 00:14:20,060
+Belki şunu yapabiliriz. Online Yıldızı Hedü TR'den daha önceki dönemlerde de ders duyuru ve sunumlarını paylaşmıştım ama orada çok takip etmek ve sürdürülebilir bir şekilde bunları listelemek veyahut da topluca indirmek, görüntülemek biraz sıkıntılı oluyor gibi.
+
+44
+00:14:20,495 --> 00:14:43,436
+Düşünüyorum. Dolayısıyla dersin bir tane Google Classroom hesabını açıp oluşturup size yine bunu USİS üzerinden duyuracağım. Siz de oraya üye olursanız ders sunumlarını ve benzer duyuruları oradan yapıyor oluruz. Şu aşamada daha oluşturmadım ama onu oluşturup USİS üzerinden size duyururum. Bana daha pratik geliyor bu şekli.
+
+45
+00:14:55,635 --> 00:15:20,355
+Şimdi temel olarak lojik devreler ve işte devre teorisi, elektronik devreler gibi konulardan bu derste getirmemiz gereken bilgiyi içerecek şekilde bir kısa review yapıyor olacağız. Bir tekrar yapıyor olacağız. Bununla ilgili olarak şimdi paylaşımı açayım.
+
+46
+00:15:29,011 --> 00:15:31,151
+Net bir şekilde görüyorsunuzdur herhalde.
+
+47
+00:15:32,711 --> 00:15:43,711
+Şimdi temel olarak arkadaşlar sizin de derste, lojik devreler derslerinde bildiğiniz gibi temelde bizim çeşitli lojik kapılarımız var.
+
+48
+00:15:43,932 --> 00:15:48,031
+Bu lojik kapıları incelediğimiz vakit, bunların tanımlarına baktığımız vakit.
+
+49
+00:15:48,467 --> 00:15:57,647
+AND kapısı, OR kapısı, NAT kapısı gibi kapılar, temel kapıları oluşturuyordu. Bir de bunların türevleri olan NAND, NOR, XOR gibi kapılar vardı.
+
+50
+00:15:59,447 --> 00:16:10,307
+Tabii şimdi dijital tasarım teknolojisinin geldiği nokta itibariyle artık NAND veya NOR temelli tasarımlar ön plana çıkmış durumda.
+
+51
+00:16:11,120 --> 00:16:26,060
+Temel kapılar olan AND, OR ve NOT kapılarını NAND kapılarıyla tek bir çeşit kapıyla gerçeklememiz mümkün oluyor. Dolayısıyla üreticiler de burada tek bir lojik tasarım üzerinden hareket etmeyi tercih ediyorlar.
+
+52
+00:16:26,964 --> 00:16:34,864
+Dolayısıyla NAND tabanlı tasarımlar, NOR tabanlı tasarımlar günümüzde daha yaygın olarak kullanılan yapılar.
+
+53
+00:16:34,864 --> 00:16:43,783
+Tabi bunun ön plana çıkmasında komplementeri MOS teknolojisinde gelişmiş olmasında önemli bir katkısı var.
+
+54
+00:16:44,903 --> 00:16:50,964
+Belki lojik devreler dersinden hatırlarsınız, çeşitli transistör üretim teknolojileri vardı.
+
+55
+00:16:53,460 --> 00:17:15,279
+Direnç, Transistor Loji vardı. Transistor, Transistor Loji vardı. RTL, TTL gibi teknolojiler vardı. Daha sonrasında işte MOS teknolojisinin geliştiğini bu akış içerisinde gördük. Daha sonrasında da CMOS teknolojisi, komplementary MOS teknolojisinin geliştiğini gördük.
+
+56
+00:17:15,279 --> 00:17:20,460
+Burada komplementary MOS mantığının gelişmesinin en büyük katkısı şu olmuştu.
+
+57
+00:17:20,816 --> 00:17:47,816
+Burada sadece durum değişimlerinde, durum değişim anında bir enerji harcaması var. Bunun haricinde ise bir enerji harcamadan durumunu tutabilen bir yapı söz konusu. Tabii küçük kaçak akımları ihmal ettiğimiz durum için bahsediyorum. Dolayısıyla enerji efisent bir tasarım gerçeklemeyi, daha düşük enerjilerle çalışan sistemlerin oluşmasını bu CMOS teknolojisi sağlamış oluyordu.
+
+58
+00:17:48,852 --> 00:17:54,392
+Tabii bu temel kapıları şimdi hatırlayacak olursak yavaş yavaş bunlarla başlayıp ilerleyeceğiz.
+
+59
+00:17:54,992 --> 00:18:01,112
+End kapısı temel olarak iki girişli veya en girişli olarak tanımlanabilir.
+
+60
+00:18:02,052 --> 00:18:08,172
+Tek bir bitle tanımlanabileceği gibi iki adet bas şeklinde de girişlerimizi tanımlayabiliriz.
+
+61
+00:18:08,172 --> 00:18:13,211
+Ama şimdilik tek bir bitlik iki adet girişe sahip bir yapı üzerinden konuşacak olursak.
+
+62
+00:18:13,488 --> 00:18:19,347
+Herhangi bir girişi sıfır olduğunda çıktısı sıfır olan kapı, lojik kapı olarak bunu tanımlayabiliriz.
+
+63
+00:18:20,087 --> 00:18:24,488
+Tabi bunun arkasında transistörlere dayalı bir dijital tasarım söz konusu.
+
+64
+00:18:25,708 --> 00:18:31,228
+OR kapısı da girişlerinden herhangi birisi bir olduğunda çıktı olarak bir üreten bir lojik kapı olarak bunu tanımlayabiliriz.
+
+65
+00:18:31,327 --> 00:18:38,648
+NAT kapısı girdisinin lojik olarak değilini çıktı olarak üreten kapı olarak bunu da düşünebiliriz.
+
+66
+00:18:38,648 --> 00:18:41,087
+XOR fonksiyonu.
+
+67
+00:18:41,332 --> 00:18:50,392
+girişleri aynı olduğunda sıfır, girişleri farklı olduğunda bir çıktısı üreten bir lojik kapı olarak ele alacağımız yapı olarak hatırlayabiliriz.
+
+68
+00:18:51,572 --> 00:18:54,392
+Şimdi lojik kapıları biz temel olarak...
+
+69
+00:18:55,892 --> 00:19:13,512
+Doğruluk tablolarıyla aslında tanımlıyoruz. Doğruluk tablosunun bir adım ilerisi bunların lojik fonksiyonlar olarak verilmesi de söz konusu olabilir. Örneğin, burada lojik devreler dersinden özellikle getirmemiz gereken bilgi, bu lojik kapılara ilişkin şematik gösterimler.
+
+70
+00:19:15,796 --> 00:19:24,736
+Mesela 3. sınıf dersi olan mikro işlemciler dersinde dahi bazen bu lojik kapıların çizimiyle ilgili sıkıntılar oluyor.
+
+71
+00:19:25,135 --> 00:19:38,615
+Yani eğer sizin de böyle bir takım tam çizemediğim gibi bir endişeniz olursa sizden ricam bu lojik kapının içerisine hangi fonksiyonu gerçekleştirmesi gerektiğini planlıyorsanız onu yazmanızı rica ediyorum.
+
+72
+00:19:43,188 --> 00:19:49,887
+Eğer ayırt edemezsem, mesela mikro işlemciler dersindeki tasarımlarda bunlar sıkıntılı durumlar oluyordu.
+
+73
+00:19:50,448 --> 00:19:57,048
+Eğer çok güzel çizemiyorum diyorsanız sizden ricam mutlaka bu logic kapının içerisine fonksiyonu yazmanızı rica edeceğim.
+
+74
+00:19:57,807 --> 00:20:03,588
+Şimdi burada da şematikleri mutlaka hatırlıyorsunuzdur ama genel olarak tekrar bir üzerinden geçelim.
+
+75
+00:20:04,307 --> 00:20:06,928
+End kapısı, iki giriş bir çıkış.
+
+76
+00:20:07,347 --> 00:20:12,668
+Girişlerinden herhangi birisi sıfırsa sıfır çıktısı üretiyor. Diğer durumda bir üreten bir lojik kapı.
+
+77
+00:20:12,668 --> 00:20:16,668
+Or kapısı girişlerinden herhangi birisi...
+
+78
+00:20:27,988 --> 00:20:34,428
+Girişlerinden herhangi birisi birken bir çıkartan diğer durumda sıfır üreten bir lojik kapı.
+
+79
+00:20:35,188 --> 00:20:40,988
+NAT kapısı lojik olarak girdiğinin tam olarak tersine çıktı olarak üreten bir kapı.
+
+80
+00:20:42,048 --> 00:20:49,688
+Burada aslında bunu hatırlayacak olursanız belki sadece üçgen mantığı bir buffer'a karşılık geliyor.
+
+81
+00:20:50,648 --> 00:20:53,428
+Yuvarlak ise D ile karşılık geliyordu.
+
+82
+00:20:53,907 --> 00:21:05,207
+Bunların birleşimi şeklinde NAT kapısını düşünebiliriz. Dolayısıyla benzer bir mantık burada NAND'de de var. NAND kapısında aslında bir NAND kapısı ve bir NAT kapısı şeklinde düşünebiliriz.
+
+83
+00:21:06,288 --> 00:21:16,887
+NAND kapısını aslında formüle ederek şu şekilde gelecek olursak, NAND kapısının gösterimini formal bir şekilde yazmak gerekirse.
+
+84
+00:21:17,652 --> 00:21:24,172
+gösterim olarak A çarpı B şeklinde ifade ediyoruz. Noktayla bu end kapısını gösteriyorduk.
+
+85
+00:21:25,552 --> 00:21:35,372
+OR kapısı için ise bunu artı ile gösteriyorduk. Logical OR işlemi için.
+
+86
+00:21:35,572 --> 00:21:44,372
+NOT işlemini ifade ederken arkadaşlar hatırlayacak olursanız A üstü veyahut da bir başka gösterim olarak da
+
+87
+00:21:44,976 --> 00:22:00,856
+A üzerinde bir bar şeklinde bunu ifade ediyorduk. Dolayısıyla buradaki 3 işlem, AND işlemi, OR işlemi ve de NOT işlemi bunlar arkadaşlar temel 3 lojik fonksiyonumuzdu. Diğer bütün lojik fonksiyonlar bunlar üzerinden tanımlanabiliyor.
+
+88
+00:22:10,771 --> 00:22:33,651
+D olarak tanımlayabileceğimiz bir yapı. End'in tam tersi. Girişlerin her ikisi de birken sıfır çıkartıyor. Diğer durumlarda bir çıkartan bir lojik kapı. Şimdi bunu nasıl düşünebiliriz? Bakın arkadaşlar, ikisi de bir iken ikisi de aktif bir çıktı da.
+
+89
+00:22:34,048 --> 00:22:47,247
+İken, aktif sıfır tetikleme yapıyor. Aslında bunu böyle de düşünebiliriz. Yani ikisi de bir olduğunda aktif sıfır, SHIP SELECT'e sahip bir entegreyi aktif etmek için kullanılabilecek bir yapı gibi bunu düşünebiliriz.
+
+90
+00:22:47,796 --> 00:23:10,355
+Benzer şekilde OR kapısına bakalım. OR kapısı ne zaman sıfır oluyor? Bakın tekil bir örnek. Yani diğerlerinde olmuyor. Sadece bir satırda bu oluyor. Girişlerimiz aktif sıfırken aktif sıfır bir çıktı üretebiliyor. Özel bir durum. Yani bu ne demek? İki değerimde sıfırken aktif sıfırda çalışan bir entegreyi buradan çipselek yapabilirim. Bunu anlıyoruz.
+
+91
+00:23:10,355 --> 00:23:15,415
+NOR için bakacak olursak yine burada tekil bir satırdaki durumu ele alalım.
+
+92
+00:23:15,827 --> 00:23:24,148
+Aktif sıfır girişler için aktif bir, çıktısı bir, aktif bir olan bir entegreyi seçebiliyoruz buradan yine.
+
+93
+00:23:26,468 --> 00:23:29,807
+Bir de formülasyon olarak yazacak olursak yine.
+
+94
+00:23:30,804 --> 00:23:44,024
+A or B'nin D'li şeklinde ifade edebileceğimiz bir yapı. Ve son olarak XOR kapısı var. XOR kapısı da değişkenlerimiz aynı değere sahipken lojik olarak sıfır çıktısı üretiyor. Farklıken bir çıktısı üretiyor.
+
+95
+00:23:44,024 --> 00:23:54,844
+XOR kapısının gösterimini hatırlayacak olursanız şu şekilde yapıyorduk. Dolayısıyla A XOR B'nin F eşittir.
+
+96
+00:23:56,019 --> 00:24:10,380
+Temel lojik fonksiyonlar cinsinden yazılması gerekirse A çarpı B üstü artı A üstü çarpı B şeklinde tanımlayabileceğimiz bir fonksiyonu olduğunu da hatırlayabiliriz.
+
+97
+00:24:10,779 --> 00:24:17,480
+Şimdi bunları nereden getireceğiz? Aslında bunları mintern, maxtern gibi kavramlar vardı hatırlayacak olursanız.
+
+98
+00:24:17,620 --> 00:24:20,579
+Onlardan getireceğiz. Şimdi yavaş yavaş onlara da değiniyor olacağız.
+
+99
+00:24:26,099 --> 00:24:42,459
+Şimdi bir complete set kavramından bahsedebiliriz. Complete set kavramı arkadaşlar, her türlü lojik fonksiyonu gerçekleyebileceğimiz minimum lojik kapı setini temsil ediyor veya ifade ediyor.
+
+100
+00:24:43,239 --> 00:24:50,699
+Mesela hatırlayacak olursanız, az önce de söyledi, herhangi bir lojik fonksiyonu gerçekleştirebilmek için temelde bizim.
+
+101
+00:24:51,251 --> 00:24:54,311
+Şuradan tekrar annotation alalım.
+
+102
+00:24:58,516 --> 00:25:02,956
+Bizim temelde AND, OR ve NOT işlemlerini kullanmamız gerekiyor.
+
+103
+00:25:03,915 --> 00:25:11,836
+Ama burada AND, OR, NOT'tan oluşan bu kapı setinin bir minimal tam set olmadığını söyleyebiliriz.
+
+104
+00:25:11,915 --> 00:25:22,016
+Bunun anlamı ne? Ben bu kapılardan bir tanesini kullanmasam dahi geri kalan iki tane kapıdan o çıkarttığım kapının fonksiyonunu elde edebilirim.
+
+105
+00:25:22,420 --> 00:25:27,140
+Bu durumda bu komplet olmayan bir set olarak tanınlayabileceğimiz bir yapı.
+
+106
+00:25:27,640 --> 00:25:37,400
+Yani ne demek? Eğer ki ben bu setten herhangi bir kapıyı çıkarttığımda artık bazı fonksiyonları gerçekleyemez oluyorsam bu bir minimal komplet set oluyor.
+
+107
+00:25:38,559 --> 00:25:47,240
+Şimdi bu durumda AND ve NOT'tan oluşan bir set, komplet set. Bunu nasıl görebiliriz? Ne yapmamız lazım? Burada şunu yapmamız lazım.
+
+108
+00:25:48,756 --> 00:26:10,056
+OR, AND ve NOT işlemlerini bu set ile sağlayabilmemiz lazım. AND ve NOT zaten var. Böyle yaparsam karışır. AND ve NOT zaten var. OR işlemini bu kapılarla gerçeklemeye çalışalım şimdi. Elimizde AND ve NOT işlemi var. Biz OR işlemini gerçeklemeye çalışalım. Yani şöyle düşünelim.
+
+109
+00:26:11,859 --> 00:26:20,499
+A artı B işlemini elde etmeye çalışacağız. Bunun için sadece AND ve NOT işlemlerini kullanabiliriz. Bunu nasıl yapabiliriz arkadaşlar? Var mı fikri olan?
+
+110
+00:26:30,259 --> 00:26:32,000
+[öğrenci] el kaldırdı.
+
+111
+00:26:32,139 --> 00:26:33,899
+A çarpı B'nin değeri şeklinde bu.
+
+112
+00:26:34,459 --> 00:26:35,639
+Demorgan yaparız.
+
+113
+00:26:37,519 --> 00:26:39,779
+Ne yapalım? Bir daha sonra duyamadım.
+
+114
+00:26:39,779 --> 00:26:44,459
+Demorgan kuralından yararlanacak.
+
+115
+00:26:44,899 --> 00:26:46,059
+Yararlanacak.
+
+116
+00:26:46,859 --> 00:26:53,579
+Bunu A, not, B, not.
+
+117
+00:26:54,451 --> 00:27:00,612
+Tamam, bu şekilde ifade edebiliriz değil mi?
+
+118
+00:27:01,292 --> 00:27:10,471
+Kullandığımız lojik kapılar AND ve NOT ve dolayısıyla bu işlemin değilini, demorgan kuralını kullanarak bunu elde edebiliriz.
+
+119
+00:27:10,471 --> 00:27:21,471
+Şimdi bunun açılmış halini elde etmeye çalışalım. Demorgan kuralı diyor ki, parantez dışındaki NOT içerileri hem işlemleri hem değişkenlerin değil olacak şekilde içeri dağıtılır.
+
+120
+00:27:21,791 --> 00:27:45,271
+Dolayısıyla A artı B şeklinde bunu dağıtabiliriz. A'nın D ile end'in ikiz işlemi or B'nin D ile onu da B şeklinde yazdığımız zaman bu işlemi elde edebildik. Dolayısıyla bu kapıları kullanarak bu seti tam işlem setini oluşturabiliyoruz.
+
+121
+00:27:45,748 --> 00:28:05,867
+Aynı şey OR, NAT grubu için de geçerli. OR, NAT grubu için de zaten OR ve NAT elimizde var. Şu AND işlemini yapmaya çalışmamız gerekiyor. A çarpı B işlemini yerine getirebilmek için yine benzer şekilde bir mantık işleyebiliriz.
+
+122
+00:28:13,460 --> 00:28:26,659
+Kullandığımız işlemler NAT, OR, NAT, NAT şeklinde. Dolayısıyla yine Demorgan kuralından hareketle A çarpı B işlemini sadece bu OR ve NAT kapısı kullanarak elde etmemiz mümkün oluyor.
+
+123
+00:28:26,819 --> 00:28:31,619
+Şimdi bir başka senaryomuz bunun sadece NAND kapısıyla gerçeklenmesi.
+
+124
+00:28:34,139 --> 00:28:37,379
+NAND kapısıyla neleri gerçeklemeye çalışacağız?
+
+125
+00:28:39,316 --> 00:28:42,476
+AND ve NOT işlemlerini gerçeklemeye çalışacağız.
+
+126
+00:28:43,195 --> 00:28:49,855
+Burada temel olarak öncelikli olarak NOT kapısından başlamak daha pratik olur bunu yapabilmek için.
+
+127
+00:28:50,655 --> 00:28:52,855
+Örneğin elimizde iki girişli.
+
+128
+00:28:58,612 --> 00:29:00,852
+İki girişli bir NAND kapısı var.
+
+129
+00:29:03,432 --> 00:29:10,711
+Bu taraflarda bir yerde bir X girdimiz varken bu taraflarda bir X üstü çıktısı oluşturmamız mümkün olur mu?
+
+130
+00:29:11,451 --> 00:29:12,451
+Nasıl yapabiliriz bunu?
+
+131
+00:29:14,752 --> 00:29:16,312
+NAND'in şeyini de yazalım buraya.
+
+132
+00:29:16,732 --> 00:29:20,352
+AB varken NAND işlemi.
+
+133
+00:29:25,203 --> 00:29:31,323
+Endin değli şeklinde işlem alacak. 1, 1, 1, 0 şeklinde işlem oluyor. Evet.
+
+134
+00:29:32,183 --> 00:29:33,323
+Girişleri birleştirir.
+
+135
+00:29:34,163 --> 00:29:40,163
+Girişleri birleştirmek çözümlerden, evet bu çözümümüz. Buraya ilk şeklinde verdiğimiz vakit.
+
+136
+00:29:40,743 --> 00:29:45,644
+Bakın ne oldu? Şu doğruluk tablosunda iki girişinde aynı olduğu satırlara karşılık geliyor.
+
+137
+00:29:45,644 --> 00:29:51,343
+Yani işaretleyecek olursak bu satır ve bu satıra karşılık geliyor.
+
+138
+00:29:51,923 --> 00:30:02,023
+Girişimiz ne ise çıkış bunun tersi oluyor. Dolayısıyla bu şekilde bir birleştirme aradığımız sonuçlardan bir tanesi. Peki başka bir çözüm daha var mı?
+
+139
+00:30:12,435 --> 00:30:14,035
+Başka bir çözüm daha var mı?
+
+140
+00:30:27,316 --> 00:30:30,056
+Hocam, X ve 1 girişini verirsek?
+
+141
+00:30:30,676 --> 00:30:38,976
+Evet, bu da bir başka çözümümüz. Hatta bu simetrik, yani NAND kapısına baktığımız zaman A ve B'nin yerleri değişebilir olduğunu da görüyoruz.
+
+142
+00:30:39,056 --> 00:30:46,696
+Ama şimdilik sadece mesela uçlarımızı da tanımlarken şu A ucumuz olsun, bu B ucumuz olsun, tersinin de geçerli olduğunu biraz sonra göstereceğiz.
+
+143
+00:30:47,476 --> 00:30:49,196
+B'nin 1 olduğu satırları alıyorum.
+
+144
+00:30:51,276 --> 00:30:53,156
+B'nin 1 olduğu satırlar.
+
+145
+00:30:53,844 --> 00:31:05,903
+A'ya ne girdiysem F'de çıktı olarak tersi var. A'ya ne girdiysem çıktı olarak tersi var. Dolayısıyla ben buraya X'e 1 verirsem çıktı olarak yine X üstünü elde ediyorum.
+
+146
+00:31:06,744 --> 00:31:17,484
+Peki bunu asimetrik bir şekilde tanımladık. Şimdi simetrik olup olmadığını kontrol edelim. Yani A ve B şeklinde kapı girişlerini tanımlamama gerek var mı? Bu sefer A'nın 1 olduğu satırlara bakalım.
+
+147
+00:31:18,228 --> 00:31:32,008
+A'nın 1 olduğu satırlarda B'ye ne girersem çıktı olarak tersi çıkıyor. Dolayısıyla bu simetrik bir yapıymış. Bunu gördüm. Dolayısıyla X'e 1 verdiğim vakit yine X üstünü elde edeceğim bir durumu oluşturuyorum.
+
+148
+00:31:33,028 --> 00:31:44,008
+Pratik olan tabii ilk senaryomuz. Dolayısıyla NAND'den NAT yaparken ilk senaryoyu kullanıyor olacağız. Dolayısıyla X girdim.
+
+149
+00:31:45,460 --> 00:31:55,060
+X üstünü elde ettim. Dolayısıyla NAND'de NAT işlemini gerçekleştirdim. AND işlemini gerçekleştirmen mümkün mü bu durumda?
+
+150
+00:32:05,748 --> 00:32:06,827
+Evet, [öğrenci] buyur.
+
+151
+00:32:07,327 --> 00:32:09,448
+Ocak sonunda bir NAT ekleriz.
+
+152
+00:32:10,028 --> 00:32:16,908
+Evet, kesinlikle. Zaten NAT'ı elde ettik. Elimizde bir de NAT kapısı var. Bunun değilini almak istediğimiz durumu oluşturur.
+
+153
+00:32:17,628 --> 00:32:22,067
+Dolayısıyla X ve Y'ye girdileri olan bir NAT kapımız var.
+
+154
+00:32:23,428 --> 00:32:26,748
+Bunun çıktısını yine bir NAT katına vererek...
+
+155
+00:32:28,147 --> 00:32:47,347
+Değerimizi elde ediyoruz. Şimdi şu girişteki bizim değerimiz aslında X çarpı Y'nin D'liydi. Bu katımız ise yine bunun D'li alıyor. Dolayısıyla bu katta elde edeceğim şey X çarpı Y'nin D'li olacak.
+
+156
+00:32:48,531 --> 00:32:56,931
+X çarpı Y yani end işlemine karşılık gelmiş olacak. Bunu da yaptık. Şimdi or işlemi için ne dersiniz? Or işlemi biraz daha karışıktı.
+
+157
+00:33:13,523 --> 00:33:40,803
+Evet, or işlemiyle ilgili elimizde ne var? X çarpı Y'nin değilini ürettiğimiz bir kapımız var. Öyleyse yine bunu de Morgan kuralından ilerletecek olursak, X üstü çarpı artı Y üstü gibi bir yapı var. Demek ki ilk girenin değilini ve ikinci girenin değilini topluyor. Güzel toplama var ama değilleri gelmiş. O zaman ben şunları şu hale getirsem, şunu geri alıyorum.
+
+158
+00:33:43,796 --> 00:34:06,336
+Amacımız ne? X artı Y, X or işlemini sadece nantlerle yapabilmek. Bunu o zaman şu şekilde ifade edebilirmişiz. X üstü çarpı Y üstünün D'li şeklinde ifade edebiliriz. Yani aslında baktığımız zaman bir A çarpı B'nin D'liğini zaten oluşturabiliyoruz. A çarpı B'nin D'liği nant.
+
+159
+00:34:06,771 --> 00:34:19,771
+Peki, yapmamız gereken ne var? İlk girişe X üstünü vermek, ikinci girişe Y üstünü vermek. Not yapmayı da öğrenmiştik zaten, biliyoruz. Dolayısıyla burada kullanmamız gereken yapı şu oluyor. Birazcık geri geliyorum.
+
+160
+00:34:22,072 --> 00:34:30,492
+X girişimiz var. X'in üstünü üreteceğim. NAND kapısıyla bunu yapma şeklimiz buydu. Yine Y girişimiz var.
+
+161
+00:34:31,380 --> 00:34:40,880
+Buna ilişkin olarak da NAT kapısını ürettim. Artık X üstü ve Y üstü değerlerim var. Bunları alıp bir NAND'e sokarsam çıktığımız ne oluyor bakalım.
+
+162
+00:34:41,740 --> 00:34:51,500
+Burada X üstü var, burada Y üstü var. İşlem sonucu X üstü ilk girdi. Çarpı ikinci girdi. Bunların değili yani.
+
+163
+00:34:52,019 --> 00:35:10,159
+X or Y şeklinde işlem sonucumuzu yine elde etmiş oluyoruz. Aynı işlemler nor, sadece nor kapısı kullanarak da mümkün. Bunu da size zorunlu olmayan bir evedevi olarak vermiş olayım. Siz de benzer bir denemeyi sadece nor kapıları kullanarak gerçeklemeye çalışın.
+
+164
+00:35:16,307 --> 00:35:26,728
+Set içerisinde herhangi bir kapıyı çıkarttığımda bütün lojik fonksiyonları artık gerçekleyemez hale geldiğim durumu ifade eden bir set.
+
+165
+00:35:27,707 --> 00:35:35,347
+Burada AND, NOT, OR, NOT sadece NAND sadece NOR setleri komple minimal setler olarak tanımlanabilir.
+
+166
+00:35:36,127 --> 00:35:39,807
+Temel lojik fonksiyonlardan oluşan AND, OR, NOT seti ise
+
+167
+00:35:40,211 --> 00:35:47,311
+Herhangi bir kapıyı çıkartarak daha küçük bir set elde edebileceğimden dolayı tam komplet bir set olmadığını söyleyebiliriz.
+
+168
+00:35:56,532 --> 00:36:01,032
+Az önce bahsetmiş olduğumuz durumlar burada gerçeklenmiş durumda.
+
+169
+00:36:02,492 --> 00:36:11,512
+Şimdi lojik fonksiyonları gerçekleme ile ilgili olarak aslında farklı gösterimler mevcut. Bunlardan bir tanesi.
+
+170
+00:36:12,371 --> 00:36:22,192
+Gerçeklemek istediğimiz lojik fonksiyonu sözler olarak tanımladıktan sonra bunu bir doğruluk tablosuna dökmek şeklinde ifade edilebilir. Birinci yapı bu.
+
+171
+00:36:22,192 --> 00:36:32,192
+Doğruluk tablosunun varlığı aslında farklı bir tasarım kalıbı açısından önemli. Örneğin look-up table'lar üzerinden tasarım yapabiliyoruz bilgisayar donanım veya Verilog tarafında.
+
+172
+00:36:32,931 --> 00:36:38,351
+Dolayısıyla bu tür look-up table'lar doğrudan doğruluk tablosuna bağlı şekilde oluşturabileceği için
+
+173
+00:36:38,655 --> 00:36:47,916
+Doğruluk tablosunu oluşturmak aslında bir tasarım örneği veya tasarım durumu veya fonksiyon gerçeklemi olarak düşünülebilir temel olarak.
+
+174
+00:36:49,635 --> 00:36:58,215
+Dediğim gibi bu da lookup table'a dayanıyor. Lookup table dediğimiz şey aslında bir hafıza birimi, ROM birimi gibi düşünebilirsiniz. Buna karşılık geliyor.
+
+175
+00:37:00,175 --> 00:37:05,735
+ROM bloğunun işte en adet girişi olsa, işte M adet çıkışı olsa aslında bu şu anlama gelir.
+
+176
+00:37:06,708 --> 00:37:14,307
+En girişli, en çıkışlı bir lojik fonksiyon grubunu doğruluk tablosu olarak ROM üzerinde tanınamış oluruz.
+
+177
+00:37:15,408 --> 00:37:19,648
+ROM'un adresleri aslında doğruluk tablosunun satırlarına karşılık gelir.
+
+178
+00:37:19,948 --> 00:37:24,108
+Çıktılar da zaten ROM'un çıktıkları olarak elde edilmiş olur.
+
+179
+00:37:25,188 --> 00:37:31,528
+Yine bir başka tasarım veyahut da ifade şekli, lojik fonksiyonlar şeklinde bunların ifade edilmesi.
+
+180
+00:37:32,148 --> 00:37:51,248
+Lojik fonksiyonlar olarak ifade edilmesi aslında temel olarak indirgenmiş veyahut da daha önceden de sizin hatırlayacağınız üzere çarpımlar toplamı, toplamlar çarpımı şeklinde ifade etmiş olduğumuz doğrudan lojik tablodan bir adım ileri giderek fonksiyonları elde ettiğimiz durum.
+
+181
+00:37:52,047 --> 00:37:56,288
+İndirgeme ise karnomep üzerinde hatırlayacak olursanız birbirine koymuş şu hücreler arasında.
+
+182
+00:37:56,820 --> 00:38:09,840
+Ortak paranteze alınabilecek değişkenlerin hesaba katılarak daha basit, daha az komplike ifadelerle bunun gerçeklenmesi.
+
+183
+00:38:09,840 --> 00:38:21,840
+Tıpkı az önceki Complete Set'te olduğu gibi, eğer yazmış olduğumuz bir lojik fonksiyonda herhangi bir değişkeni, herhangi bir operasyonu kaldırdığımızda,
+
+184
+00:38:21,936 --> 00:38:26,756
+Elde ettiğimiz sonuç değişmiyorsa bu fonksiyon daha indirgelenebilir anlamına geliyor.
+
+185
+00:38:29,216 --> 00:38:31,316
+İndirgelenebilirliği de bu şekilde tanımlayabiliriz.
+
+186
+00:38:31,916 --> 00:38:43,796
+Dolayısıyla bu şekilde bir sözel olarak tanımlamış olduğumuz bir lojik fonksiyona ilişkin olarak bunun lojik fonksiyon halini elde etmişsek bunu da yine donanımsal tasarım olarak ilerletmemiz mümkün.
+
+187
+00:38:44,476 --> 00:38:47,936
+Örneğin Verilog dilinde buna ilişkin olarak bir takım.
+
+188
+00:38:49,811 --> 00:38:54,351
+Doğrudan lojik fonksiyonları yazarak çıktı elde etmemiz mümkün oluyor.
+
+189
+00:38:56,112 --> 00:39:06,311
+Yine bazı FPGA tasarımlarında doğrudan grafik tasarım üzerinde bunun FPGA üzerinde koda dönüştürülme imkanı da mevcut.
+
+190
+00:39:07,771 --> 00:39:14,311
+Ve son olarak tabii doğal olarak donanım tanımlama dilleriyle Verilog ve VHDL gibi dillerle.
+
+191
+00:39:14,708 --> 00:39:29,007
+Bunların yazılması da mümkün oluyor. Kodlanması mümkün oluyor. Yani bunlar sözel bir ifadeden donanımsal gerçeklemeye doğru geçişi sağladığımız dört farklı yol olarak ortaya çıkmış oluyor.
+
+192
+00:39:30,327 --> 00:39:37,408
+Lojik fonksiyonların ifadesiyle ilgili olarak aslında bir örneğimiz de var. Bu da Majority Function olarak sırası gelmişken verelim.
+
+193
+00:39:37,940 --> 00:39:43,000
+Üç girişli bir tanımlamamız şu şekilde olsun. Şuradan yine annotation'ı alayım.
+
+194
+00:39:49,108 --> 00:39:59,568
+Şöyle bir fonksiyon tanımlamaya çalışıyoruz. M diye bir fonksiyon olsun. Bu şekilde tanımlıyoruz ve nasıl çalışıyor?
+
+195
+00:40:20,115 --> 00:40:31,456
+ABC adet 3 tane girişimiz var. 3 tane girişten çoğunluğu 1 ise çıktığımız 1 olacak. Diğer durumlarda ise çıktığımız 0 olacak. Böyle bir lojik fonksiyonu tanımlamış olalım.
+
+196
+00:40:33,036 --> 00:40:40,935
+Şimdi burada bahsedilen durumları gerçekleyebilmek adına şimdi bunları bir adım adım yürütmeye çalışalım.
+
+197
+00:40:40,935 --> 00:40:45,936
+Şimdi burada şeyi nasıl yapıyorduk? Stop share deyip.
+
+198
+00:40:47,219 --> 00:40:50,639
+Whiteboard açarsam belki olacak bakalım.
+
+199
+00:40:52,000 --> 00:41:01,759
+Şimdi ne demiştik? Bir tane M fonksiyonumuz var. Bu M fonksiyonu 3 tane girdiğe sahip.
+
+200
+00:41:02,759 --> 00:41:04,203
+Tanımlarken de...
+
+201
+00:41:19,539 --> 00:41:46,559
+Bu şekilde tanımladık. İlk gösterim şeklimiz doğruluk tablosu olarak ifade edeceğimiz yapıydı. Dolayısıyla doğruluk tablosunu oluşturuyorum. Şimdi doğruluk tablosunu oluştururken 3 adet lojik girdiğimiz varsa bu doğruluk tablosunda her bir değişkenin 2 farklı değer alabilmesi söz konusu. Dolayısıyla 2 farklı değer A'dan, 2 farklı değer B'den, 2 farklı değer C'den toplamda 8 satırlı bir tablo olur. Şimdi bunu bir kenara bırakacak olursak 3 değişkenli kaç farklı fonksiyon yazabiliriz? Bunu söyleyebilir misiniz?
+
+202
+00:41:58,324 --> 00:42:02,043
+Üzeri üç tane satırı olur doğruluk tablolarına.
+
+203
+00:42:09,811 --> 00:42:11,131
+Cevap 2 üzeri 3 değil.
+
+204
+00:42:12,291 --> 00:42:14,331
+2 üzeri 8 mi?
+
+205
+00:42:15,071 --> 00:42:17,551
+Evet. 2 üzeri 2 üzeri 3.
+
+206
+00:42:19,071 --> 00:42:21,511
+Şimdi şu şekilde doğruluk tablosu yapacağız diyelim.
+
+207
+00:42:21,591 --> 00:42:23,911
+Doğruluk tablosu işte A, B, C değişkenlerimiz var.
+
+208
+00:42:23,911 --> 00:42:26,672
+Burada toplam 8 tane satır var.
+
+209
+00:42:27,211 --> 00:42:29,631
+Her bir satır 0 veya 1 değerini alabilir.
+
+210
+00:42:29,751 --> 00:42:30,672
+Dolayısıyla...
+
+211
+00:42:30,672 --> 00:42:56,491
+2 farklı durum 1. satır için, 2 farklı durum 2. satır için, 2 farklı durum 8. satır için var. Toplam her satır için 2 farklı durum var. Dolayısıyla 2 üzeri 2 üzeri 3. Yani 2 üzeri 8 farklı fonksiyon yapabiliriz. Bu fonksiyonlardan bir tanesi ABC şeklinde yazacağımız fonksiyonlardan bir tanesi. Hep 0 çıktısı üretebilir. Yani bütün satırları, bütün çıktıları 0 olabilir. Başka bir fonksiyon.
+
+212
+00:42:57,076 --> 00:43:24,116
+F, A, B, C işte bir olabilir. Atıyorum başka bir fonksiyon sadece A, B, C'ye göre yazmış olmama zağmen C'den bağımsız olarak A çarpı B şeklinde bir çıktı üretebilir. Ama toplamda 2 üzeri 8 farklı fonksiyon yazabiliriz. Yani lojik fonksiyonların baştan yani kaç bitlik olursa olsun hangi fonksiyonlar oldu aslında baştan hesaplanıp tanımlanması mümkün. Bu şekilde düşünebiliriz.
+
+213
+00:43:24,724 --> 00:43:27,184
+Tamam, şimdi bunu söyledik. Geri gelelim.
+
+214
+00:43:29,624 --> 00:43:31,744
+Majority Function'a tekrar geri dönüyoruz.
+
+215
+00:43:32,284 --> 00:43:34,324
+Şimdi doğruluk tablosu olarak bunu ifade edeceğiz.
+
+216
+00:43:35,024 --> 00:43:39,304
+A, B, C şeklinde değişkenlerimiz var. M çıktığımız.
+
+217
+00:43:55,251 --> 00:44:12,211
+Sözel olarak ifade ettiğimiz durum neydi? ABC değişkenlerinden 2 veya daha fazla çoğunluğu, öncelikli olarak çoğunluğu dedi. Çoğunluğu 1 ise M çıktısı 1 olacaktı. Çoğunluğun ifadesi karşılığı nedir 3 geride olduğuna göre? 2 tanesi veya 3 tanesi 1 ise çıktığımız 1 olacak.
+
+218
+00:44:13,172 --> 00:44:20,432
+ABC'den 2 veya 3 tanesi 1 mi? Değil. Dolayısıyla 0, 0, 0, 1. 2 tanesi 1 olduğu için çoğunluğu 1.
+
+219
+00:44:20,980 --> 00:44:30,980
+0, 1, 1 ve 1 şeklinde ifade edilebileceğimiz bir doğruluk tablosunu elde etmiş oluyoruz. Şimdi bu doğruluk tablosundan bir adım daha ileri gittiğimiz zaman...
+
+220
+00:44:38,675 --> 00:44:43,435
+Doluk tablosunu elde ettik. Şimdi bunu bir lojik fonksiyon olarak yazmaya çalışalım.
+
+221
+00:44:45,115 --> 00:44:55,516
+Bu lojik bir fonksiyon olarak bunu yazmaya çalışırken aslında arkadaşlar, çarpımlar toplamı veya toplamlar çarpımı şeklinde bunu ifade edebiliriz.
+
+222
+00:44:56,855 --> 00:45:02,076
+Çarpımlar toplamı şeklinde yazdığımız zaman aslında çarpımlar toplamı neye karşılık gelecekti?
+
+223
+00:45:02,076 --> 00:45:05,476
+Bir M fonksiyonu biz yazmak istediğimiz vakit.
+
+224
+00:45:05,652 --> 00:45:22,231
+Neleri toplayacaktık? MI'leri toplayacaktık. MI dediğimiz küçük M harfi neye karşılık geliyor? Min termlere karşılık geliyor. Min termün sıfır veya bir olması söz konusu. Yani şuradaki satır sıfırsa min termümüz sıfırmış. Sıfırınca min term sıfır.
+
+225
+00:45:26,164 --> 00:45:40,304
+Buradaki yazacağımız min termler sıfır olanları dahil etmeyecektik. Sadece bir olanları dahil edecektik. Hatırlayacak olursanız. Dolayısıyla burada da yazacağımız şey doğru min termlerin toplamı şeklinde yazacağımız bir durum.
+
+226
+00:45:40,304 --> 00:45:52,304
+Veyahut da lojik fonksiyonu daha genel bir şekilde yazacak olursak bu doğru min termlerin toplamını aynı zamanda nasıl ifade edebiliriz? Toplam min termler çarpı.
+
+227
+00:45:52,724 --> 00:46:03,744
+MI şeklinde ifade edebiliriz. Yani, İ dediğimiz şey satıra karşılık geliyor. Sıfırıncı satırdaki fonksiyonun çıktısı çarpı ilgili satırdaki min term. Min termleri nasıl yazıyoruz?
+
+228
+00:46:03,744 --> 00:46:09,524
+Min term, mesela İ'ninci min term, sıfırıncı doğruluk tablosunun sıfırıncı satırına karşılık gelen.
+
+229
+00:46:09,920 --> 00:46:16,580
+A, B ve C'de bu değerleri elde verdiğimizde bir çıktısı üreten bir fonksiyon.
+
+230
+00:46:17,019 --> 00:46:20,960
+A sıfır, B sıfır, C sıfır iken bir çıktısı üreten bir fonksiyon arıyoruz.
+
+231
+00:46:21,500 --> 00:46:25,940
+Bu fonksiyon da ne olur arkadaşlar? A üstü, B üstü, C üstü olur.
+
+232
+00:46:25,940 --> 00:46:31,360
+Dolayısıyla sıfırıncı min törmümüz bu. Birinci min törmümüz ne?
+
+233
+00:46:31,860 --> 00:46:41,900
+Birinci min törümüz, birinci satıra geldik. Birinci satırdaki değerlerle A, B, C'ye verdiğim zaman bir üretebilmesini sağlayabilmek adına hangi fonksiyonu tanılamam gerekir?
+
+234
+00:46:41,900 --> 00:46:50,980
+İşte A üstü, B üstü, C şeklinde tanınırız. Nokta nokta nokta. Yedinci min törmümüz, hepsi bir. Bakın, hepsi bir.
+
+235
+00:46:51,795 --> 00:47:19,175
+A'ya, B'ye, C'ye 1 geldiğinde bir çıktısı üreten bir lojik fonksiyonu arıyorum. O da A çarpı, B çarpı, C fonksiyonudur. Dolayısıyla buradaki min term'lerin karşılıklarını çarpı sıfırıncı satırda sıfır var. Birinci satırda 1 var. Yedinci satırda, pardon şu sıfırda. Yedinci satırda 1 var. Dolayısıyla yanlış çıktı üreten min term satırları zaten gidiyor sıfırla çarptığımız için çarpım işleminde.
+
+236
+00:47:19,603 --> 00:47:46,483
+Gidecek. Dolayısıyla sadece şarpan olarak bir olan satırlar anlam kazanıyor. Satırın bir olması da zaten bu min term'in doğru olduğu olarak, doğru min term olarak tanımladığımız duruma karşılık geliyor. Dolayısıyla çarpmada da bir etkisiz eleman bunları da uçurabiliriz. Dolayısıyla sadece doğru min term'lerin toplamı aslında bu lojik fonksiyonu çarpımlar toplamı şeklinde yazmamızı mümkün kılıyor.
+
+237
+00:47:46,943 --> 00:47:51,483
+Bu durumda bu doğru min term öncelikli olarak şuraya ilişkin yazalım isterseniz.
+
+238
+00:47:53,103 --> 00:48:06,943
+M fonksiyonu aslında A üstü B üstü C üstü çarpı 0 artı A üstü B üstü C çarpı 0 artı A üstü B C üstü çarpı 0 artı
+
+239
+00:48:06,943 --> 00:48:12,683
+Tek tek satırlara karşılık min term yazıyorum ve yanındaki fonksiyon çıktısını da veriyorum.
+
+240
+00:48:13,204 --> 00:48:23,924
+Şimdi dördüncü satıra gelelim. A üstü B, C şeklinde bir fonksiyon. Çıktısı 1 artı, 4 tanesini yazmıştım, 4 tane daha var.
+
+241
+00:48:34,356 --> 00:48:42,255
+ABC üstü çarpı 1 artı son olarak A çarpı B çarpı C çarpı 1 şeklinde tanımlayacağımız bir fonksiyon.
+
+242
+00:48:43,655 --> 00:48:47,536
+Sıfırla çarptık, sıfırla çarptık, sıfırla çarptık, sıfırla çarptık.
+
+243
+00:48:47,795 --> 00:48:49,556
+Bir etkisiz eleman çarpmada.
+
+244
+00:48:49,695 --> 00:48:53,516
+Dolayısıyla doğru min törnler cinsinden yazmanın pratiği de ne?
+
+245
+00:48:54,275 --> 00:49:00,896
+Lojik fonksiyon doğruluk tablosunda bir satırına sahipse çıktı olarak sadece bu satırlara karşılık min törnlerin toplamını yazıyorum.
+
+246
+00:49:02,099 --> 00:49:25,219
+Doğru minitörm şu 0, 1, 2, 3. minitörm yani A üstü BC, A üstü BC artı doğru minitörm nerede var? Şu bir doğru minitörm AB üstü C, AB üstü C artı 6.sı doğru minitörm A çarpı B çarpı C üstü artı son olarak da
+
+247
+00:49:25,715 --> 00:49:33,135
+7. min term'ümüz A çarpı B çarpı C şeklinde bir lojik fonksiyonu elde etmemiz mümkün oluyor.
+
+248
+00:49:33,915 --> 00:49:39,535
+Yine bunu toplamlar çarpımı şeklinde de ifade edebiliriz. Bu fonksiyonu indirgeyebiliriz.
+
+249
+00:49:39,615 --> 00:49:45,635
+Bu fonksiyonun arkasında yatan lojikten hareket ederek farklı bir tanımlamada yapabiliriz.
+
+250
+00:49:46,099 --> 00:49:52,519
+Şimdi saat 9.51 oldu. Bir 10 dakika kadar bir ara verelim arkadaşlar. Daha sonra kaldığımız yerden yine.
+
+251
+00:49:52,840 --> 00:49:55,139
+Hocam, araya geçmeden önce bir şey sorabilir miyim hemen?
+
+252
+00:49:55,239 --> 00:49:55,759
+Tabii, buyur.
+
+253
+00:49:56,480 --> 00:50:03,360
+Şimdi bu min termleri yaparken tüm değerlerin bir olmasını mı istiyoruz yoksa bir değeri vermesini mi istiyoruz?
+
+254
+00:50:04,219 --> 00:50:07,840
+İlgili satırdaki mesela sıfırıncı min termü incelediğimiz zaman.
+
+255
+00:50:08,436 --> 00:50:14,356
+A'ya 0, B'ye 0, C'ye 0 verdiğimizde bir çıkartacak bir fonksiyon arıyoruz.
+
+256
+00:50:16,296 --> 00:50:16,836
+Anladım.
+
+257
+00:50:17,456 --> 00:50:22,296
+Bu da tekil olarak yazıyor. Tek bir fonksiyon yazılabilir bunun için. Çarpımlar şeklinde. O da bu.
+
+258
+00:50:23,516 --> 00:50:33,896
+Ama bu fonksiyon için yani Mostof'u bir olmasını istiyor ya. Yani herhangi bir sıfır olsa yine bir değerini vermeyecek mi bizim için?
+
+259
+00:50:34,675 --> 00:50:38,815
+3 değilden biri yine normal olsa yine aynı değeri verecek.
+
+260
+00:50:39,675 --> 00:50:46,635
+Şimdi senin dediğin taraf şu sütunu ilgilendiriyor. Fonksiyonun çıktısının 0 veya 1 olmasını ilgilendiriyor.
+
+261
+00:50:46,895 --> 00:50:53,735
+Ama min term yazabilmek burayla alakalı. Herhangi bir 3 değişkenli lojik fonksiyon için min termler bu şekilde yazılıyor.
+
+262
+00:50:54,295 --> 00:51:00,355
+Fonksiyona göre bu min termün fonksiyonda 0 veya 1 değeri almasına göre 0 veya 1 ile çarpılıyor.
+
+263
+00:51:01,427 --> 00:51:03,787
+Anladım şu an. Şu an anladım. Tamam. Teşekkür ederim.
+
+264
+00:51:04,167 --> 00:51:07,787
+Tamamdır. Peki. Başka bir sorumuz var mı arkadaşlar?
+
+265
+00:51:11,380 --> 00:51:16,360
+Başka bir sorumuz yoksa bir 10 dakika kadar ara verelim. 10'u 5 geçe devam ederiz. Tamam mı?
+
+266
+01:05:25,684 --> 01:05:27,984
+Evet arkadaşlar, kaldığımız yerden devam edelim.
+
+267
+01:05:31,987 --> 01:05:39,028
+Az önceki ders itibariyle majority voting fonksiyonu, yani 3 girdili bir lojik fonksiyonu bu.
+
+268
+01:05:39,708 --> 01:05:46,927
+Girdilerin çoğunluğu birisi lojik bir çıkartan bir fonksiyondu. Bunu çarpımlar toplamı şeklinde nasıl yazarız?
+
+269
+01:05:46,927 --> 01:05:56,628
+En genel formunu verdik. En genel formunda min termler cinsinden nasıl yazıldığını görmüştük.
+
+270
+01:05:56,880 --> 01:06:04,220
+Bunun bir pratik ileri adımı da aslında bu çarpımlar toplamının doğru minternler toplamı olduğunu söylemiştik.
+
+271
+01:06:05,340 --> 01:06:07,820
+Dolayısıyla farklı yazımları görmüştük.
+
+272
+01:06:09,039 --> 01:06:14,480
+Şimdi aynı işlemi.
+
+273
+01:06:15,699 --> 01:06:17,280
+Şöyle yapabiliyor muyuz bakayım?
+
+274
+01:06:21,748 --> 01:06:31,828
+Aynı işlemi toplamlar çarpımı şeklinde de yapabiliriz. Bunun için ise Max Termleri kullanmamız gerekecek. Yine aynı şekilde hareket edelim.
+
+275
+01:06:31,828 --> 01:06:38,308
+Doğruluk tablomuzu belirtelim.
+
+276
+01:06:52,371 --> 01:07:06,311
+0, 0, 0, 1, 0, 1, 1, 1 şeklinde. Yanlış mı yaptım? Bakayım. 0, 0, 0, 1, burada 1, burada 1, burada 1. Tamam. Şimdi.
+
+277
+01:07:09,251 --> 01:07:19,691
+Bir chatten sonra var. Tamam. Okey. Şimdi az önce min termler cinsinden yazdığımız gibi en genel anlamda M fonksiyonunu şu şekilde de yazabiliriz.
+
+278
+01:07:20,307 --> 01:07:39,847
+Majority olduğu için MAJ diye yazayım bu fonksiyonun çıktısını. Çünkü MaxTerm ile karışacak. Bu sefer çarpım terimi şeklinde yazıp MaxTerm i çarpı Majority Function artık bu fonksiyonumuz neyse bunun i'nin ince çıktısıyla çarparak bunu sağlayabiliriz.
+
+279
+01:07:40,947 --> 01:07:53,788
+Bakın, az önceki örnekte neydi? Minterm'leri yazarken ilgili minterm satırında değerleri verdiğimizde bir çıkışı üreten bir lojik fonksiyonu arıyorduk.
+
+280
+01:07:53,788 --> 01:08:04,748
+Şimdi ise ilgili satırda bu sefer toplamlar şeklinde verdiğimiz değeri, ilgili değeri verdiğimizde sıfır çıktısı üreten bir değer arıyoruz.
+
+281
+01:08:05,652 --> 01:08:12,052
+M sıfır dediğimiz, yani sıfırıncı satıra karşılık max term nedir diyecek olursak arkadaşlar, bu şu oluyor.
+
+282
+01:08:12,892 --> 01:08:19,551
+A'ya sıfır, B'ye sıfır, C'ye sıfır verdiğimizde sıfır çıktısı üreten bir toplamlar şeklinde bir fonksiyon arıyorum şu aşamada.
+
+283
+01:08:20,311 --> 01:08:21,051
+Ne olabilir bu?
+
+284
+01:08:22,432 --> 01:08:26,412
+A'ya sıfır, B'ye sıfır, C'ye sıfır verdiğimizde sıfır üreten fonksiyon.
+
+285
+01:08:26,492 --> 01:08:27,912
+Dolayısıyla bu şekilde yazabiliriz.
+
+286
+01:08:27,912 --> 01:08:29,051
+Yani sıfırıncı max term.
+
+287
+01:08:29,811 --> 01:08:40,771
+Bu şekilde yazılıyor. Pratik karşılığını eğer ilgili değer 0 ise olduğu gibi değişkeni yaz. Eğer ilgili değerde 1 varsa bunun değilini yazacağız. Örneğin M1'e bakalım, birinci maksörme bakalım.
+
+288
+01:08:41,791 --> 01:08:56,112
+A'ya 0, B'ye 0, C'ye 1 verdiğimizde 0 üreten bir fonksiyon arıyor. A zaten, B zaten 0 olduğu için bunlar toplama 0 olarak katkı yapacak ama C 1 olduğu için C'nin değilini toplama katmalıyım. Bu da birinci maksör.
+
+289
+01:08:56,532 --> 01:09:17,952
+Ne yaptık? Bir olan satırı, bir olan değişkeni üstü olarak kullandık. Bu şekilde yazıyoruz. Dolayısıyla aslında en genel formülde bu majority function'ımızı biz A artı B artı C daha sonra artı pardon şunu yanlış yapmışım şu artı olacak.
+
+290
+01:09:21,235 --> 01:09:45,956
+Artı sıfır. Majority Function'ın sıfırıncı değeri. Çarpı. Birinci max term. A artı B artı C üstü artı fonksiyon çıktısı sıfır. Çarpı. İkinci max term'ümüz. A artı B üstü artı C artı sıfır. Çarpı. Dördüncü max term'ümüz.
+
+291
+01:09:46,676 --> 01:10:08,015
+A artı, B üstü artı, C üstü artı, 1. Şimdi böyle gidiyoruz. Yedinciyi yazalım. A üstü artı, B üstü artı, C üstü artı, yine 1. Şimdi bu sefer toplam 1 olarak gelen satırlara baktığımızda toplamda 1 olarak geldiği için bu terim 1'e karşılık gelir.
+
+292
+01:10:08,015 --> 01:10:13,256
+Bu terim 1'e karşılık gelir. Şunu bir de şunu yazalım. O arada kaçmasın.
+
+293
+01:10:13,908 --> 01:10:18,228
+Yani 0, 1, 2, 3, 4. max term'i de yazıyorum.
+
+294
+01:10:19,007 --> 01:10:24,568
+A üstü artı B artı C artı 0 şeklinde bir max term'i daha var.
+
+295
+01:10:25,268 --> 01:10:26,268
+Diğerleri de bu şekilde gidiyor.
+
+296
+01:10:26,408 --> 01:10:28,247
+Son 3 tanesi 1 olduğu için.
+
+297
+01:10:28,388 --> 01:10:32,528
+Şimdi 1 olan herhangi bir tanesini incelediğimizde diğerlerini zaten görmüş olacağız.
+
+298
+01:10:33,347 --> 01:10:37,048
+Artı 1 olarak geldiği vakit bu max term'i fonksiyon çıktısı.
+
+299
+01:10:37,844 --> 01:11:00,684
+Bu terim 1 olur. Çarpmada 1 etkisiz olduğu için bunu uçurabiliriz, bunları uçurabiliriz. Dolayısıyla bakın toplamda toplam terimleri olarak yani Max Turner'in yanında toplam terim olarak sıfırlar kalan durumlar olmuş oldu. Sıfır toplamda etkisiz eleman olduğu için bu artı sıfırları da uçurabiliriz. Yani özet olarak geriye ne kaldı? Bakın arkadaşlar.
+
+300
+01:11:01,363 --> 01:11:11,163
+Fonksiyon tablosunda, doğruluk tablosunda çıktısı sıfır olan satırlara karşılık max termlerin çarpımı şeklinde aslında ben bu fonksiyonu yine ifade edebilirmişim.
+
+301
+01:11:11,243 --> 01:11:19,583
+O zaman bunun özet hali, majority function'ı biz çarpım terimi MI diye yazacağız.
+
+302
+01:11:20,283 --> 01:11:25,403
+Buradaki MI dediklerimiz yanlış max termler.
+
+303
+01:11:28,627 --> 01:11:38,688
+Yanlıştan kasıt sıfır çıktısı olan satırlara karşılık gelen maksörmler. Sadece bu dört tane maksörmü yazmamız yeter. Dolayısıyla bu fonksiyon neye eşitmiş?
+
+304
+01:11:38,688 --> 01:11:49,528
+A artı B artı C çarpı, çünkü sıfırıncı maksörm yanlış bir maksörm. A artı B artı C üstü çarpı.
+
+305
+01:11:52,564 --> 01:12:08,644
+A artı B üstü artı C çarpı son olarak da A üstü artı B artı C fonksiyonu şeklinde yazabileceğimiz bir fonksiyon olduğunu bunu da görmüş olduk.
+
+306
+01:12:08,644 --> 01:12:15,944
+Az önceki yapmış olduğumuz örnek yanlış min termlerin toplamı şeklinde ifade etmiştik fonksiyonumuzu.
+
+307
+01:12:18,655 --> 01:12:29,755
+Az öncekinde doğru min termlerin toplamı şeklinde ifade etmiştik. Burada ise yanlış max termlerin çarpımı şeklinde yine fonksiyonumuzu ifade etmiş oluyoruz.
+
+308
+01:12:30,755 --> 01:12:36,835
+Bir de lojik çıkarımla aynı fonksiyonu gerçekleme ihtimalimiz var. O da şu. Şimdi düşünelim.
+
+309
+01:12:37,835 --> 01:12:43,835
+Çoğunluğun bir olması. Bu ne demek? A, B veya C'den.
+
+310
+01:12:45,524 --> 01:12:47,123
+En az iki tanesi.
+
+311
+01:12:48,504 --> 01:12:50,504
+Bir olmalı. Bunu çıkarttık.
+
+312
+01:12:50,584 --> 01:12:54,324
+Bu durumda ben A, B ikilisini kontrol etsem.
+
+313
+01:12:56,084 --> 01:12:57,384
+Şöyle çizeyim.
+
+314
+01:12:58,123 --> 01:12:59,804
+A, B ikilisini kontrol etsem.
+
+315
+01:13:01,123 --> 01:13:02,504
+B, C ikilisini.
+
+316
+01:13:03,404 --> 01:13:05,584
+B ve C ikilisini kontrol etsem.
+
+317
+01:13:06,344 --> 01:13:09,724
+Ve son olarak da A ve C ikilisini kontrol etsem.
+
+318
+01:13:10,463 --> 01:13:12,384
+Bunlardan herhangi bir çift.
+
+319
+01:13:12,384 --> 01:13:13,024
+Bir ise.
+
+320
+01:13:13,908 --> 01:13:16,948
+Zaten majority function'un 1 çıkması gerektiğini söyleyebilirim.
+
+321
+01:13:17,828 --> 01:13:22,448
+A ve B ikilisinin ikisinin de 1 olup olmadığını nasıl anlayabilirim?
+
+322
+01:13:23,608 --> 01:13:27,347
+A çarpı B sonucu 1 ise A ve B 1'dir.
+
+323
+01:13:28,288 --> 01:13:34,128
+B, C ikilisinin ikisinin birden 1 olduğunu anlayabilmek için B çarpı C'nin 1 olmasını ararım.
+
+324
+01:13:37,427 --> 01:13:53,228
+1 olduğunu nasıl anlarım? A çarpı C eşittir 1 ise bunu anlarım. Dolayısıyla AB 1 ise veya BC ikilisi 1 ise veya AC ikilisi 1 ise Majority Function'ın 1 çıkması lazım.
+
+325
+01:14:03,060 --> 01:14:06,140
+Majority Function'ımızı yine ifade edebiliriz.
+
+326
+01:14:06,860 --> 01:14:20,260
+Şimdi bu çarpımlar toplamı, toplamlar çarpımı veya indirgenmiş hal, lojik, çıkarımla elde etmiş olduğumuz lojik fonksiyondan bir sonraki adım olacak şekilde biz fonksiyonumuzu grafiksel olarak da gösterebiliriz.
+
+327
+01:14:20,260 --> 01:14:27,380
+Elimizde A, B, C şeklinde 3 tane değişkenimiz var. Bunlar için bir rail oluşturalım.
+
+328
+01:14:29,043 --> 01:14:30,923
+AB çarpım terimimiz var.
+
+329
+01:14:32,523 --> 01:14:35,564
+AB çarpım terimini oluşturdum.
+
+330
+01:14:39,923 --> 01:14:53,923
+BC çarpım terimimiz var ve de AC çarpım terimimiz var. Çarpım terimlerini oluşturduk. Daha sonra bunları 3 girişli bir or kapısında birleştirerek...
+
+331
+01:14:57,908 --> 01:15:09,048
+Buradan da Majority Function değerimizi grafiksel olarak da yine üretmemiz mümkün. Dolayısıyla burada adım adım durumları takip ederek fonksiyonumuzu üretmiş oluyoruz.
+
+332
+01:15:10,148 --> 01:15:24,408
+Eğer Majority Function'ımız 4 girişli olmuş olsaydı ne olacaktı? Bu durumda en az 3'ünün 1 olması gerekiyor. Dolayısıyla ABC üçlüsünün 1 olduğuna bakacağım. BCD üçlüsünün 1 olduğuna bakacağım. ACD'ye bakacağım.
+
+333
+01:15:24,787 --> 01:15:40,268
+Bir de ne kaldı geriye? B, C, D'ye bakmam gerekiyor olacak. Yani 4'ün 3'ü 4 tane çarpım teriminin 1 olup olmadığını kontrol etmem gerekiyor olacaktı. Dolayısıyla bu şekilde bu Majority Function'da böyle tanımlamış olduk.
+
+334
+01:15:40,268 --> 01:15:51,467
+Silelim. Tekrar sunumumuza geri dönelim. Neredeydi sunumumuz? Şunu mu bulalım.
+
+335
+01:15:54,228 --> 01:15:58,087
+Nereye gitti o?
+
+336
+01:15:59,667 --> 01:16:00,108
+Bakın şu.
+
+337
+01:16:04,692 --> 01:16:09,212
+Dolayısıyla bu fonksiyonu bu şekilde ifade etmiş olduk. Grafiksel olarak göstereyim de bu şekilde.
+
+338
+01:16:09,872 --> 01:16:16,692
+Şimdi BULCEBRI ile ilgili olarak bir takım tanımlamalar vardı, eşitlikler vardı. Bunları hatırlayalım.
+
+339
+01:16:18,352 --> 01:16:23,792
+Birincisi çarpma işlemine göre veya END işlemine göre diyelim etkisiz eleman bir değeri.
+
+340
+01:16:23,792 --> 01:16:30,752
+Yani herhangi bir lojik değişkeni bir ile çarparsak işlem sonucu yine lojik değişkenin kendisi oluyor.
+
+341
+01:16:31,252 --> 01:16:37,152
+OR işleminde etkisi eleman sıfır. Bir şeyi sıfırla toplarsak yine kendisini veriyor.
+
+342
+01:16:40,652 --> 01:16:47,492
+Değil kavramı veyahut da ters kavramını düşünecek olursak bir değişkenin değerini nasıl tanımlarız?
+
+343
+01:16:48,292 --> 01:16:54,712
+Değişkenin kendisiyle değişkenin değerini çarptığımız vakit veya end işlemine soktuğumuzda
+
+344
+01:16:57,043 --> 01:17:22,664
+Yutan elemanı oluşturması lazım. İlgili işlem için yutan elemanı oluşturması lazım. Yani bunu C1'den veya matematikteki işlem konusundan hatırlayabilirsiniz. X'in değerini ilgili işleme göre birlikte işleme soktuğumuzda yutan elemanı üretmesiyle tanımlıyorduk. Burada onun tanımını görüyoruz. Tersten düşünecek olursak.
+
+345
+01:17:22,975 --> 01:17:35,835
+X'i değeriyle end işlemine sokarsak sıfır çıktısı üretiliyor. Dolayısıyla sıfır end işlem için yutan elemandır. X'i kendi değeriyle or işlemine sokarsak bir değerini elde ederiz. Bir değeri or işlem için yutan elemandır.
+
+346
+01:17:36,659 --> 01:17:46,000
+AND ve OR işlemleri değişim özelliğine sahiptir. X AND Y ile Y AND X işlemleri aynı sonucu üretir simetrik bir şekilde.
+
+347
+01:17:46,559 --> 01:17:50,860
+Benzer şekilde X OR Y ile Y OR X işlemleri de aynı sonucu üretir.
+
+348
+01:17:51,699 --> 01:17:59,180
+Dağılma özelliği vardır. Dağılma özelliği standart C1'den bildiğimizin haricinde veya alışık olduğumuzun haricinde hatırlayacak olursanız.
+
+349
+01:17:59,731 --> 01:18:20,431
+AND'in OR üzerine dağılma özelliği olduğu gibi OR'un AND üzerine de dağılma özelliği mevcut. Dolayısıyla X AND Y artı Z parantez içerisinde vermiş olduğumuz işlem, AND işlemini dağıttığımızda X AND Y OR X AND Z şeklinde yazılabilir.
+
+350
+01:18:26,131 --> 01:18:40,391
+XOR, Y, N, Z işlemi, burada görmüş olduğunuz işlemde, OR işlemini dağıttığımızda XOR, Y ile XOR, Z işleminin N'de sokulmuş hali aslında elde ettiğimiz sonuç olmuş oluyor.
+
+351
+01:18:41,939 --> 01:19:00,059
+X'i X ile end'e sokarsak sonuç yine X, X'i X ile ora sokarsak işlem X yutan elemanı da az önce söylemiştik. X'i 0 ile end işlemine sokarsak sonuç 0, X'i 1 ile or işlemine sokarsak işlem sonucu 1 olarak elde edilmiş oluyor.
+
+352
+01:19:03,764 --> 01:19:15,724
+Dolayısıyla bunları da tanımlamış olduk. Bu arada 0 ve 1'i sabitler. X'i ise değişken olarak tanımlamış olduk burada. Yani birazcık geri dönüp bu tanımlamayı yapalım. 0 ve 1 değerlerini nasıl oluşturuyoruz?
+
+353
+01:19:26,127 --> 01:19:48,647
+Elektriksel olarak 0 volt, lojik olarak 0 değerine karşılık geldi. Elektriksel olarak 5 volt, lojik olarak lojik bir değerimize karşılık geliyor. X ise 0 veya 1'den herhangi bir değeri alabilir ve fix bir değere sahip değil, değişken bir değere sahip. Dolayısıyla lojik veya boolean variable olarak isimlendirdiğimiz bir yapı.
+
+354
+01:19:53,152 --> 01:20:00,811
+Tanımlanabilir sadece NOT işlemiyle tanımlı olduğu için. Değilin değili yine değişkenin kendisine eşit.
+
+355
+01:20:02,252 --> 01:20:15,311
+Yine doğruluk tablosu ile tanımlayabileceğimiz üzere XORENT XORY işlemi X'e eşit. Bunu doğruluk tablosu ile ve formal olarak ispatlayabiliriz.
+
+356
+01:20:18,804 --> 01:20:26,064
+X and Y ile o işlemine soktuğumuzda da doğruk tablosundan kontrol edebilirsiniz. X'in değerleriyle aynı sonucu üretiyor.
+
+357
+01:20:32,692 --> 01:20:47,252
+Değişim özelliğiyle ilgili olarak hangi öncelikli olarak işlemlere aldığımızı değişkenlerin bir sıra önemi yok. Hem AND hem OR için kendi içlerinde tabii bu şekilde bunu tanımlayabiliriz.
+
+358
+01:20:47,252 --> 01:20:59,692
+Bir de demorgan kuralımız var. Demorgan kuralı da aslında NAT işleminin değişkenlere ve operasyonlara, AND OR operasyonlarına dağılımını gösteriyor.
+
+359
+01:21:00,340 --> 01:21:18,360
+X, Y'nin değili yani bir NAND işlemi aslında X üstü OR Y üstüne karşılık geldiği gibi X OR Y'nin değili de X üstü AND Y üstüne karşılık gelmiş oluyor. Bunları zaten hatırlıyorsunuz. Az önceki örneklerde de kullandık. Dolayısıyla tanımlayarak geçmiş olalım.
+
+360
+01:21:21,268 --> 01:21:37,128
+Bir başka örnek ve yapı ise, hani az önce birinci dersin başında da söylemiştik, üretim teknolojisi olarak sadece NAND kapıları ve sadece NOR kapıları kullanarak lojik fonksiyonların gerçeklenmesi, işte daha karmışık sistemlerin oluşturulması mümkün oluyordu.
+
+361
+01:21:37,128 --> 01:21:44,128
+Dolayısıyla aslında az önce oluşturmuş olduğumuz Majority Function'ın da hatırlayacak olursanız AND ve...
+
+362
+01:21:44,479 --> 01:21:48,979
+İki girişli AND kapıları ve üç girişli OR kapısıyla gerçeklediğimiz bir örneği vardı.
+
+363
+01:21:50,439 --> 01:22:06,199
+Buradan hareketle sadece NAND kapıları kullanarak, iki girişli ve üç girişli NAND kapıları kullanarak bu işlemi gerçeklememiz mümkün mü diye de bakabiliriz.
+
+364
+01:22:06,199 --> 01:22:11,840
+Şimdi fonksiyonumuzu hatırlıyorsunuz. Ben tekrar yazacağım. Bir whiteboard açarak ilerleyelim.
+
+365
+01:22:12,404 --> 01:22:22,904
+Fonksiyonu hatırlıyorsunuz. Majority function'ı ne olarak yazmıştık? A çarpı B artı A çarpı C artı B çarpı C şeklinde tanımlamıştık.
+
+366
+01:22:23,564 --> 01:22:34,784
+Fonksiyonu önce grafik olarak ele alacağız. A, B, C için ray'ler oluşturmuştuk bu şekilde. 3 kat end kapımız vardı.
+
+367
+01:22:44,275 --> 01:22:50,376
+Daha sonra da bunları bir or kapısında birleştirmiştik.
+
+368
+01:22:51,636 --> 01:22:57,576
+Şimdi, D'nin kendisine eşit olduğunu hatırlıyoruz zaten değil mi? Bir eşitliğimiz vardı.
+
+369
+01:22:58,476 --> 01:23:01,935
+X üstsünün üstsü kendisine eşitti.
+
+370
+01:23:02,655 --> 01:23:04,615
+Bunu grafik olarak şöyle yapabiliriz.
+
+371
+01:23:04,695 --> 01:23:07,835
+Nat kapısının gösteriminde yuvarlak olduğunu hatırlıyorsunuz.
+
+372
+01:23:07,835 --> 01:23:10,775
+Ben burada iki tane nat kapısı koysam.
+
+373
+01:23:11,188 --> 01:23:22,188
+ve bu NAT kapılarını sıradaki lojik kapılara doğru kaydırsam, değerinin değil olduğu için bir şey değişmeyecektir.
+
+374
+01:23:22,327 --> 01:23:29,667
+Dolayısıyla bunu buraya yapıştırdım. Bunu da buraya yapıştırdım. Aynı şeyi diğer yollar içinde yaptım.
+
+375
+01:23:30,968 --> 01:23:38,628
+Dolayısıyla şimdi şuraya odaklandığımız zaman bu zaten NAND kapısına dönüştü. Bunlar da NAND kapısına dönüştü.
+
+376
+01:23:39,572 --> 01:23:44,211
+Bu da NAND kapısına dönüştü. Bir tek şunu bilmiyoruz. Şimdi şunu zoomlayıp bir bakalım ne var içerisinde.
+
+377
+01:23:50,068 --> 01:23:52,328
+Önce çizip yaparsam daha iyi olacakmış.
+
+378
+01:24:00,692 --> 01:24:09,452
+Böyle bir şey var. Bunlara da XYZ diyelim. Ben bu çıktığı arıyorum. Bu kapının ne olduğunu anlamaya çalışıyorum. Bu kapı ne?
+
+379
+01:24:10,172 --> 01:24:18,532
+X girişinin değilini alıp, Y girişinin değilini alıp, Z girişinin değilini alıp, şunlara da XYZ dedim. Bunun büyütülmüş halini buraya çizdim.
+
+380
+01:24:19,672 --> 01:24:28,072
+Bu çıktı ne oluyor? Ona bakacağım şimdi. Bu kapı ne yapıyormuş? X üstünü, Y üstünü ve Z üstünü toplayan bir kapıymış.
+
+381
+01:24:28,916 --> 01:24:30,515
+Yine burada arkadaşlar,
+
+382
+01:24:33,435 --> 01:24:37,816
+D'in D'ini alarak bir şey değiştirmeyeceğimi biliyoruz.
+
+383
+01:24:38,115 --> 01:24:41,615
+Dolayısıyla almış olduğum ilk D'i de içeri dağıtırsam,
+
+384
+01:24:43,435 --> 01:24:49,216
+X çarpı Y çarpı Z bir de dıştaki nat kapım kaldı.
+
+385
+01:24:49,216 --> 01:24:50,496
+Demek ki bu neye denkmiş?
+
+386
+01:24:51,456 --> 01:24:52,216
+Aslında bu,
+
+387
+01:24:56,595 --> 01:25:01,955
+X, Y, Z olmak üzere 3 girişli bir NAND kapısına karşılık geliyormuş.
+
+388
+01:25:06,836 --> 01:25:31,496
+Dolayısıyla ben bu tasarımı şöyle gösterebiliyorum. Şuraya özet olarak çizmiş olalım. Bir NAND, bir başka NAND, bir başka NAND ve bunların üçünü birleştiren büyük bir NAND kapısı daha. Bu A, B, B, C, A ve C girişleri şeklinde tanımladığımız vakit yine Majority Function'ı veriyor.
+
+389
+01:25:34,836 --> 01:25:48,095
+Bunu benzer şekilde formal bir yapıda da elde edebiliriz. Fonksiyonumuz AB artı BC artı AC fonksiyonuydu. Yapacağımız işlem yine değilin değilini almak.
+
+390
+01:25:49,435 --> 01:26:01,003
+Değilin değilini alalım. Burada ilk değili içeri dağıttığımızda A çarpı B'nin değili çarpı B'nin değili çarpı B'nin değili çarpı B'nin değili çarpı
+
+391
+01:26:01,203 --> 01:26:09,763
+AC'nin D'li ve bunların D'li şeklinde tanınlayacağımız bir yapı oldu. Bakın, iki değişken ve şöyle gösterelim.
+
+392
+01:26:11,363 --> 01:26:24,623
+İki değişkenin çarpımının D'li. Bu bir NAND kapısı. İki tane değişkenin D'li. Bu da bir NAND kapısı. Çarpımların D'li. Yine bu da bir.
+
+393
+01:26:25,108 --> 01:26:50,368
+NAND kapısı oluşturmuş oldu. Baktığımız zaman şu birinci terim X olsun, ikinci terim Y, üçüncü terim Z olsun bunların değili. Bu da çarpımların değili. Dolayısıyla bu da komple bir NAND kapısına karşılık geliyor. Dolayısıyla formal olarak ve grafik olarak sadece NAND kapıları kullanarak devre tasarımını grafik olarak elde etmeye ilişkin olarak sonucu da bu şekilde görmüş oluyoruz.
+
+394
+01:26:56,979 --> 01:26:57,899
+Tekrar dönelim.
+
+395
+01:26:59,239 --> 01:27:06,779
+Dolayısıyla az önce kullanmış olduğum Majority Function'ı sadece NAND kapıları kullanarak da elde etmemiz mümkün.
+
+396
+01:27:12,404 --> 01:27:19,204
+Bir de karnomep mantığını hatırlayabiliriz. Karnomepte indirgenmiş fonksiyonları yazabildiğimiz bir yapıydı.
+
+397
+01:27:22,804 --> 01:27:37,104
+Karnomepte ortak parantezde almak demek aslında iki komşu hücreyi bir arada karnomepe aldığımız vakit bir tane değişken her iki terimde de aynı şekilde geçiyor.
+
+398
+01:27:39,408 --> 01:27:58,347
+Almaya karşılık geliyordu. Örneğin, burada 3 değişkenli bir fonksiyon için yapıverilmiş toplam 8 satırlı bir doğruluk tablosu. Doğruluk tablosundan karnomep diagramına geçerken hatırlayacak olursanız, şunu tekrar antiyyajını alayım.
+
+399
+01:28:04,051 --> 01:28:11,891
+Burada doğruluk tablosundan Karno MEP'e geçerken arkadaşlar özellikle dikkat etmemiz gereken şu iki satırdı.
+
+400
+01:28:12,771 --> 01:28:18,992
+Burada bakın her seferinde sadece bir tane bit değişiyor. Bunun anlamı sadece bir tane değişken değişiyor.
+
+401
+01:28:18,992 --> 01:28:30,832
+Sütunlar arası geçişte bir değişken değişiyor. Burada mesela X2 değişkeninin sıfır olduğu durumlardan X2 değişkeninin bir olduğu durumlara bir geçiş var.
+
+402
+01:28:31,220 --> 01:28:57,260
+Buradan buraya geçişte sadece X1 değişkeni durum değiştiriyor. Buradan buraya geçişte de tekrar X2 değişiyor. Satırlara baktığımızda tek değişken var. X3 yine sadece bir değişken durum değiştirmiş oluyor. Bunun dörtlü olan versiyonu olmuş olsaydı da karnomapimizde 0, 0, 0, 1, 1, 1, 1, 0. Satırlarda da 0, 0, 0, 1, 1, 1, 1, 0 şeklinde.
+
+403
+01:28:57,876 --> 01:29:01,935
+doğruluk tablosunun satırlarına karşılık gelen durumları oluşturmuş olacaktık.
+
+404
+01:29:02,015 --> 01:29:18,716
+Mesela burası X1, X2, X3, X4'e karşılık gelmiş olsaydı bizim şuradaki satırımız aslında X1'in 1, X2'nin 0, X3'ün 1, X4'ün 0 olduğu yani
+
+405
+01:29:19,220 --> 01:29:32,100
+10 numaralı satıra karşılık gelmiş olacaktı. Binary olarak yazan 1010 yani 10. doğruluk tablosu satırına karşılık gelmiş olan durum olacaktı.
+
+406
+01:29:32,100 --> 01:29:39,659
+Şimdi karnomep ile ilgili olarak rastgele bir fonksiyon tanımlayıp onun üzerinden bunu görmeye çalışalım.
+
+407
+01:30:05,268 --> 01:30:10,648
+Evet. Örneğimiz biz kendimiz tanımayalım.
+
+408
+01:30:18,003 --> 01:30:20,144
+Whiteboard açarak tanımlayalım.
+
+409
+01:30:24,724 --> 01:30:40,724
+Şimdi şöyle bir fonksiyonumuz olsun. Dört girişli bir fonksiyon tanımlayalım. F, A1, A0, B1, B0 şeklinde bir fonksiyon tanımlayalım. Bunun çıktısı...
+
+410
+01:30:44,692 --> 01:31:12,012
+Bunun çıktısı 1 ne zaman oluyor? B1, B0 sayısı büyüktür. A1, A0 sayısından ise bunlar iki tabanında yazılmış. Diğer durumlarda da 0 değerini alıyor. Yani eşitken ve küçükken. B sayısı eşitken A sayısına ve B sayısı A sayısından küçükken bu durumda da 0 değerini alan bir fonksiyon tanımlayalım ve bunu indirgemeye çalışalım.
+
+411
+01:31:12,948 --> 01:31:27,028
+Şimdi öncelikli olarak bu fonksiyonu doğruluk tablosu şeklinde yazalım. A1, A0, B1, B0 şeklinde yazalım. Toplamda 16 satırımız olacak.
+
+412
+01:32:09,652 --> 01:32:18,612
+Fonksiyon anlaşıldı değil mi? Bu da fonksiyon. Aslında 4 girdi var ama bu girdileri değerlendirirken 2 tane girdiğimizde 2 basamaklı bir binary sayı oluşturduk.
+
+413
+01:32:18,652 --> 01:32:28,792
+B sayısı, büyük B harfiyle gösterelim ve büyük A harfiyle gösterelim. Şunlar büyük B sayısını oluşturuyor. Binary 2 bitlik. Bu da büyük A sayısını oluşturuyor.
+
+414
+01:32:29,172 --> 01:32:33,612
+Yaptığımız işlem A ile B'yi karşılaştıran bir lojik aslında. Bu anlaşıldı değil mi? Bunda sıkıntı yok.
+
+415
+01:32:46,292 --> 01:32:48,132
+Herhangi bir tepki alamıyorum ama.
+
+416
+01:32:49,092 --> 01:32:49,892
+Anlaşıldı hocam.
+
+417
+01:32:50,292 --> 01:32:50,592
+Tamam.
+
+418
+01:32:54,612 --> 01:32:57,212
+Şimdi fonksiyonu doğru tablomuzu oluşturmaya devam edelim.
+
+419
+01:33:03,188 --> 01:33:19,988
+Fonksiyonumuzu yazdık. Daha sonrasında burada verilen kural çerçevesinde B sayısı A'dan büyük ise bir üreteceğiz. Dolayısıyla burada elde ettiğimiz sonuç 0, 1, 1, 1, 0. Eşit olduğunda 0'dı.
+
+420
+01:33:32,884 --> 01:33:40,384
+Bunlar da sıfır değerlerini alıyor. Şimdi nasıl yaptık? Tekrar buradan da görelim mesela. Örneğin şu satır için karşılaştırmaya bakalım.
+
+421
+01:33:42,144 --> 01:33:53,484
+B sayımızın binary karşılığı 1, 1. Yani desimal olarak 3. A sayımızın karşılığı 0. Dolayısıyla 3 sıfırdan büyük olduğu için 1 değerini yazdım.
+
+422
+01:34:01,811 --> 01:34:24,592
+A sayımız ise binary 1, 1. Yani decimal olarak da 3. B sayısı daha küçük olduğu için 0. Eşittiklerde de 0 yazdık. Dolayısıyla elde ettiğimiz 6. sıfır. 1, 2, 3, 4, 5, 6. Bakalım. Burada 6. satır şu herhalde. B sayımız binary olarak 1, 0.
+
+423
+01:34:25,332 --> 01:34:36,832
+Ama desimal olarak bu ikiye karşılık geliyor. A sayımız da bir. Dolayısıyla bunun B sayısı büyük olduğu için bir olması gerekiyor. Değil mi [öğrenci]? Bu satırdan bahsediyorsun.
+
+424
+01:34:39,891 --> 01:34:52,971
+Tamam. Bir olacak değil mi? Tamam. Şimdi doğruluk tablomuzu yaptık bu F fonksiyonuna ilişkin olarak. Şimdi burada indirgeme yapabilmek adına bunu karnımöpe geçirmemiz lazım. Biz F fonksiyonunu
+
+425
+01:34:53,363 --> 01:35:03,803
+A1, A0 ikilisine karşılık B1, B0 ikilisini Karnomap'te çözümlemeye çalışacağız.
+
+426
+01:35:08,020 --> 01:35:13,520
+Karnımı geçirken dediğim gibi sadece birer bitin değiştiği ikilleri yazalım.
+
+427
+01:35:48,500 --> 01:35:50,500
+Şimdi şeye geçirirken ne yapacağız?
+
+428
+01:35:52,800 --> 01:36:02,280
+A1, A0'ın 0 olduğu 4 satır var. Yani şu satır boyunca ilerleyeceğiz. Bakın buradaki 4 satır, buradaki şu yataydaki 4 satıra denk geliyor.
+
+429
+01:36:02,280 --> 01:36:09,480
+Ama bir tek şeye dikkat edeceğim. Birinci satır, ikinci satır, üçüncü satır, dördüncü satır olacak. Bu sıraya dikkat edeceğim.
+
+430
+01:36:10,119 --> 01:36:11,700
+Dolayısıyla buradaki değerleri yazıyorum.
+
+431
+01:36:14,579 --> 01:36:27,779
+0, 1, 1, 1 şeklinde doldurduğumuz. Daha sonraki 4 satır arkadaşlar, A1, A0'ın 0, 1 olduğu duruma karşılık geliyor. Burada da yine benzer mantığı ilerleteceğim.
+
+432
+01:36:28,559 --> 01:36:39,460
+0, 0, 1, 1 şeklinde bir sonuç elde ediyoruz. Daha sonra A1, A0'ın 1, 0 olduğu satır yani en alttaki satıra karşılık geliyor.
+
+433
+01:36:42,484 --> 01:36:52,184
+0, 1 şeklinde bir sonuç elde ediyoruz. Son satırlarımızda 0, 0, 0, 0 şeklinde yazabileceğimiz bir durumu oluşturmuş oluyor.
+
+434
+01:36:53,524 --> 01:37:01,984
+Şimdi KarnoMap'te biz bunları birleştirirken arkadaşlar, birlikte paranteze alacağımız değerler 2'nin katı olmak durumunda.
+
+435
+01:37:04,020 --> 01:37:27,180
+Komşuyu, ya 4 adet komşuyu ya da 8 adet komşuyu ya da 16 adet komşuyu. Tabi değişken sayımız arttıkça 2'nin tam katı şeklinde bunları parantezlere almamız gerekiyor. Parantezi alırken bir satır dörtlü olarak alınabilir. Şu şekilde kare dörtlü olarak alınabilir. Bir sekizli sütun, hepsi bir olmuş olsaydı sekizli sütunu alabilirdik.
+
+436
+01:37:28,051 --> 01:37:30,811
+Tamamını alabiliriz.
+
+437
+01:37:31,251 --> 01:37:33,471
+Eğer hepsi aynı değere sahip olmuş olsaydı.
+
+438
+01:37:33,971 --> 01:37:38,951
+Tabii şu anda biz bunu karnomep indirgemesini minterm cinsinden yapacağız.
+
+439
+01:37:39,071 --> 01:37:40,851
+Dolayısıyla şu anda birlerle ilgileniyoruz.
+
+440
+01:37:40,971 --> 01:37:42,491
+Ama bunun tersini de yapabilirdik.
+
+441
+01:37:42,491 --> 01:37:47,131
+Max termler cinsinden yazıp sıfırları da paranteze alarak aynı işlemi yapabilirdik.
+
+442
+01:37:48,331 --> 01:37:51,051
+İkisi de mümkün. Şu anda mintermler cinsinden yapacağız bunu.
+
+443
+01:37:51,636 --> 01:38:07,256
+Ve paranteze alma işlemimiz olabildiğince büyük karelerde, büyük parantezlerde bütün birileri kapsayıp dışarıda hiçbir bir kalmasını sağlamaya çalışacağız.
+
+444
+01:38:07,876 --> 01:38:18,515
+Eğer boşta kalan bir bir varsa tek başına değil de bunu daha önceden alınmış olsa dahi paranteze başka bir min term ile birleştirilerek paranteze alınmasını sağlamalıyız.
+
+445
+01:38:18,963 --> 01:38:26,463
+Bu durumda arkadaşlar, şimdi şeye bakacak olursak, KarnoMap'te indirgeme olarak alabileceğimiz değerleri.
+
+446
+01:38:27,304 --> 01:38:29,064
+Mesela şu dörtlüyü.
+
+447
+01:38:30,260 --> 01:38:48,020
+Karnamep'te bir terim olarak ele alabiliriz. Şimdi bunu yaptığımızda 4 terim birden bitti. Geriye 2 tane terim kaldı. Bu 2 terimi nasıl bulacağız? Mesela şu terimi tek başına bırakmayacağız. Bunun ikili bir komşuluğu var. Dolayısıyla bunu Karnamep'e alırken şu ikili üzerinden Karnamep'e alacağız.
+
+448
+01:38:55,507 --> 01:39:11,387
+Bunu aslında nasıl düşüneceğiz? Üstten alttan birbirine komşu, sağdan soldan birbirine komşu bir küre gibi düşünün. Şöyle ele alabiliriz. Buradan buraya geçişte de bakın sadece bir terim değişiyor. Dolayısıyla buradan yukarıda bir komşuluk var.
+
+449
+01:39:17,876 --> 01:39:31,676
+Tamamlayarak yine bir komşuluk olduğunu düşünmemiz mümkün. Bu durumda buraya alacağımız Carnomep komşuluğu da arkadaşlar bu terim ve yukarıdan gelerek bu terimle birleştirilmiş hali olacak.
+
+450
+01:39:32,336 --> 01:39:44,876
+Eşitlik durumunu katmış olsaydık ne oluyordu bir bakalım. Eşitlik durumunu katmış olsaydık daha güzel bir sonuç çıkıyor muydu? Şuralarda bir olacaktı. Evet daha güzel bir sonuç çıkıyormuş ama şimdilik bunun üzerinden.
+
+451
+01:39:45,587 --> 01:39:53,828
+İlerleyelim. Turuncu ile yazmış olduğumuz terime karşılık olarak ne yazmalıyız? Bakalım turuncu olarak paranteze aldığımız değerler için.
+
+452
+01:39:54,608 --> 01:40:08,427
+A1'in her iki terimde de 0 değerini aldığını görüyoruz. A0 ise bir terimde 0, bir terimde 1 olarak değer almış. Yani bu bir yerde şu anlama geliyor.
+
+453
+01:40:09,140 --> 01:40:30,099
+Baktığımız zaman terimlerde şunlar varmış. A1'in değili çarpı A0 artı A1'in değili çarpı A0 üstü gibi bir terim varmış. Bunu A1'in değili parantezine aldığımızda A0 artı A0'ın değili oluyor. Bu da 1'e karşılık geldi. Çarpma da etkisi eleman.
+
+454
+01:40:35,984 --> 01:40:55,184
+Uçuyor. Bunu görmüş olduk. O zaman dört değişkenli bir lojik fonksiyon olduğu için burada eğer ki biz bunu dörtlü bir karno map'e almışsak satırdan yani iki tane terim uçacak. Dolayısıyla iki tane terimin çarpımı şeklinde min term şeklinde bir çarpım terimi şeklinde bir terim elde edeceğiz.
+
+455
+01:41:03,699 --> 01:41:06,159
+Turuncu parantezden konuşuyor isek.
+
+456
+01:41:07,180 --> 01:41:08,440
+B1 her ikisinde de bir.
+
+457
+01:41:08,980 --> 01:41:10,300
+B0, 1 ve 0 olmuş.
+
+458
+01:41:10,400 --> 01:41:11,520
+Dolayısıyla B0 da uçacak.
+
+459
+01:41:11,659 --> 01:41:15,000
+O zaman turuncu olarak karnamöpe aldığımız terimden
+
+460
+01:41:15,000 --> 01:41:20,880
+A1'in değili çarpı B1 şeklinde bir terim gelecek.
+
+461
+01:41:22,100 --> 01:41:22,900
+Artı
+
+462
+01:41:24,083 --> 01:41:28,703
+Şimdi yeşil ile işaretlemiş olduğumuz şu terimler için bakalım.
+
+463
+01:41:29,264 --> 01:41:31,583
+Burada tek başına bunu alsaydık ne olacaktı?
+
+464
+01:41:31,644 --> 01:41:37,644
+Tek başına bunu almış olsaydık 4 tane terimin çarpımından oluşan bir toplam ifadesi gelecekti.
+
+465
+01:41:37,644 --> 01:41:42,783
+Ama bunu yan komşusuyla birlikte aldığımız vakit bir tane terim uçacak.
+
+466
+01:41:43,003 --> 01:41:46,003
+3 tane terimin çarpımı şeklinde bir örnek elde etmiş olacağız.
+
+467
+01:41:46,399 --> 01:42:05,680
+Burada A1 ve A0 fix. Dolayısıyla A1'in değili çarpı A0'ın değili. Bakın bu şekilde paranteze aldığımızda B1 uçuyor. B0 olduğu gibi kalıyor. Artı son terimimiz de şuradan yukarı doğru tamamladığımız bir parantez.
+
+468
+01:42:06,036 --> 01:42:28,435
+Burada B1 ve B0 ikisi de 1 olacak. Fakat A1 terimi 0 ve 1 değerlerini aldığı için uçacak. O zaman burada yazacağımız terim de A0'ın üstü çarpı B1 çarpı B0 şeklinde bir terim olmuş olacak. Dolayısıyla karnum hep üzerinde bunu indirgemeyi bu şekilde ifade etmiş oluyoruz.
+
+469
+01:42:28,435 --> 01:42:32,435
+Peki biz fonksiyonumuzda şöyle bir değişiklik yapmış olsaydık.
+
+470
+01:42:33,363 --> 01:42:41,283
+Bunu eşit olarak almış olsaydık neler değişirdi bakalım. Eşitliklerde şu değişecek.
+
+471
+01:42:45,652 --> 01:42:46,731
+Bu değişecek.
+
+472
+01:42:49,251 --> 01:42:52,112
+İki satırı var. Bir de üç satırı var.
+
+473
+01:42:52,872 --> 01:42:56,032
+Sadece bu satırlar değişecek. Bu satırlara değer verelim şimdi.
+
+474
+01:43:02,515 --> 01:43:07,175
+Karnomep'te de nelere karşılık gelecek hemen onu da çizelim.
+
+475
+01:43:13,332 --> 01:43:15,072
+Şu dört terime karşılık gelecek.
+
+476
+01:43:21,971 --> 01:43:26,692
+Yine buradaki az önce oluşturduğumuz şeyi kaldıralım.
+
+477
+01:43:29,811 --> 01:43:37,671
+Yeni doğruluk tablomuz bu haldeyken arkadaşlar, oluşturacağımız karnomepler neler olur? Şimdi onlara bir bakalım.
+
+478
+01:43:41,203 --> 01:43:44,443
+Mesela şurada dörtlü bir terim var.
+
+479
+01:43:49,363 --> 01:43:52,644
+Yine burada dörtlü bir terim var.
+
+480
+01:43:55,564 --> 01:44:03,444
+Yine arkadaşlar, şu terimi ele almak adına, şimdi rengimizi değiştirelim, karışmaya başlayacak.
+
+481
+01:44:04,043 --> 01:44:11,623
+Bu terimi dahil etmek adına, nasıl yapabiliriz onu? Şuradan ben bir karnım hep gördüm.
+
+482
+01:44:13,203 --> 01:44:15,944
+Bunu ele alabiliriz. Bu terimi dahil etmek adına,
+
+483
+01:44:17,395 --> 01:44:19,415
+Şöyle bir karnomap alabiliriz.
+
+484
+01:44:20,655 --> 01:44:24,795
+Son olarak şu terimi dahil etmek adına da, bunu da farklı bir renkle yapalım.
+
+485
+01:44:31,123 --> 01:44:40,804
+Bu şekilde bir karnomep alabiliriz değil mi? Bu eksik veya fazla aldıysam lütfen söyleyin. Dolayısıyla bu şekilde karnomepleri oluşturmamız da mümkün.
+
+486
+01:44:41,404 --> 01:44:51,923
+Karşılaştırma devresinin eşitlik durumunda dahil ettiğimiz durumunda oluşturulacak karnomepler de kabaca bu şekilde ifade edebileceğimiz yapıda olmuş oluyor arkadaşlar.
+
+487
+01:44:52,764 --> 01:44:56,764
+Dolayısıyla indirgeme ve karnomep kavramını da bu şekilde tekrar hatırlamış olduk.
+
+488
+01:44:57,076 --> 01:45:01,895
+Burayla ilgili soracağınız bir şey yoksa devam edebiliriz. Soracağınız bir şey var mı?
+
+489
+01:45:02,615 --> 01:45:08,735
+Hocam, karnomeple indirgemekle mintermler şeklinde yazmak aynı şey mi?
+
+490
+01:45:09,956 --> 01:45:14,916
+Yok, aynı şey değil. Mintermle yazmak aslında şuna karşılık geliyor.
+
+491
+01:45:15,036 --> 01:45:22,836
+Buradaki her bir satır, her bir bir değerini tek tek hiçbir karnomepi almadan yazdığımız durum
+
+492
+01:45:23,188 --> 01:45:39,087
+Minterm'lerle yazmaya denk geliyor. Mesela bunu yazdıktan sonra, formal olarak yazdıktan sonra parantez işlemleri yapmış olsaydık da o fonksiyonda aslında KarnoMap'te bir arada almış olduğumuz gruplara karşılık gelen durumlar oluşturmuş olacaktık.
+
+493
+01:45:39,087 --> 01:45:43,087
+Minterm'le yazmak her bir değerini tek tek...
+
+494
+01:45:43,731 --> 01:45:52,551
+fonksiyona dahil etmek demek. Karnomöp ile indirgemek ise olası parantezleri görerek indirgenmiş halini yazmak demek.
+
+495
+01:45:52,551 --> 01:46:01,452
+Max termlerle yazıyor olsaydık bu sefer herhangi sıfır gördüğümüz satırı tek tek bir max term cinsinden yazmış olacaktık.
+
+496
+01:46:01,779 --> 01:46:17,399
+Parantezi alırken veya karnomepleri oluştururken de bu sefer sıfırları ikinin tam katı şeklinde gruplara ayırmış olacaktık. Aralarındaki fark bu şekilde anlatabildim umarım. Anladım hocam, teşekkür ederim. Başka bir sorumuz var mı arkadaşlar?
+
+497
+01:46:25,747 --> 01:46:28,847
+Başka bir sorumuz yoksa bir sonraki şeyle devam edelim.
+
+498
+01:46:32,916 --> 01:46:55,315
+Dolayısıyla KarnoWeb meselesini de bu şekilde hatırlamış olduk. Şimdi tabii bir de bizim için önem arz eden konulardan birisi de sayı gösterimleri. Neticede biz dijital bir bilgisayarda çalışıyoruz. Dolayısıyla bunun dijital olmasından kasıtta tutacağımız değerler ayrıklaştırılmış durumda ve bunlar binary olarak ifade ediliyor.
+
+499
+01:46:56,212 --> 01:47:06,172
+Bir binary lojik kullanıyoruz yani. Fakat dünyadaki tek dijital bilgisayar yapısı binary bilgisayar yapısı değil. Üçlü değere sahip olan.
+
+500
+01:47:06,479 --> 01:47:34,159
+Veyahut da dörtlü değere sahip olan lojik ve bunlara ilişkin buğulun cebirleri de, onun adı tam buğulun cebri olmayabilir de, ilgili cebirler de tanımlanmış durumda. Hatta Sovyet Rusya zamanında üçlü trineri, her bir veri birimi, üç farklı değerden birini tutabilecek bir bilgisayar fiziki olarak da gerçekleştirilmiş. Dolayısıyla bu tek bir yöntem değil, yöntemlerden bir tanesi olarak düşünebiliriz.
+
+501
+01:47:34,479 --> 01:47:45,659
+Her bir veri biriminin 3 farklı bitten birini ifade ettiği durumu düşünecek olursak 8 adet veri biriminde binary yazışta 2 üzeri 8 farklı
+
+502
+01:47:47,155 --> 01:48:02,775
+Ayrık değer elde edilebilirken, yani 0 ile 255 değer arasında değer elde edilebilirken, her bir veri birimi 3 farklı değerden birini tutabildiği durum için 3 üzeri 8 şeklinde 3 üzeri 8 kadar farklı değeri ifade etmemiz mümkün oluyor.
+
+503
+01:48:02,775 --> 01:48:11,235
+Bu da 8 adet veri gözüyle. Dolayısıyla kapasite olarak çok büyük bir artışı sağladığında görebilmiş oluyoruz.
+
+504
+01:48:11,576 --> 01:48:13,496
+Şimdi sayı sistemlerine dönecek olursak.
+
+505
+01:48:14,547 --> 01:48:31,028
+Sayı sistemleri bizim için önemli çünkü tasarım aşamasında, CPU tasarımı aşamasında biz işaretli ve işaretsiz sayılarla ilgili aritmetik işlemleri yapmaya çalışıyor olacağız. Dolayısıyla bu aritmetik değerlerin gösterimlerini bilmemiz gerekiyor.
+
+506
+01:48:34,003 --> 01:48:56,104
+Sayıların gösterimi binary olacak. Çünkü her bir veri bit mertebesinde tutuluyor. En düşük veri kapasitemiz bit. Bitlerde 0 veya 1 değerini alabiliyor. Dolayısıyla buna ilişkin olarak gösterimlere bakacak olursak, decimal karşılıklara göre binary karşılıkların nasıl elde edileceğini hatırlarsınız herhalde.
+
+507
+01:48:56,644 --> 01:49:02,003
+İlgili sayı alıp sürekli olarak ikiye bölerek ilerliyoruz. Her bir bölümden kalan değeri en düşük.
+
+508
+01:49:02,003 --> 01:49:19,003
+Bu şık anlamlı bitten itibaren yerleştirerek sayının ikili gösterimdeki karşılığını elde edebiliyoruz. Burada bizim için 8'li ve 16'lı gösterimler anlam ifade ediyor. Çünkü kodlama aşamasında veyahut da Instruction Set Architecture tarafında sayıları...
+
+509
+01:49:19,667 --> 01:49:24,967
+Binary olarak ifade edebildiğimiz gibi octal veya hexadecimal olarak da ifade etmemiz mümkün olabiliyor.
+
+510
+01:49:25,547 --> 01:49:34,547
+Dolayısıyla binary'den octala geçerken her bir 3 tane binary basamak 1 tane octal basamağa denk gelecek şekilde karşılıklarını hesaplıyoruz.
+
+511
+01:49:34,547 --> 01:49:42,328
+3 adet binary basamağı ele aldığımız zaman bu 3 adet binary basamağın alabileceği değerler 0, 0, 0'dan 1, 1, 1'e kadar.
+
+512
+01:49:42,488 --> 01:49:44,167
+Yani 0 ile 7 arasında değerler.
+
+513
+01:49:44,688 --> 01:49:47,547
+Dolayısıyla zaten octal basamaklara baktığımızda da herhangi bir...
+
+514
+01:49:47,667 --> 01:49:56,347
+Bir sekizli basamak sıfır ile yedi arasında değer alabilirdi. Dolayısıyla üç tane binary bit, bir tane oktal basamağı gelecek şekilde bir düzenleme yapabiliriz.
+
+515
+01:49:56,347 --> 01:50:12,387
+Örneğin, mesela şuradaki decimal 12 değerine karşılık olarak binary yazılış şekli buyken, bunun oktala çevrilebilmesi için,
+
+516
+01:50:13,492 --> 01:50:35,652
+Sağdan itibaren üçlü basamakları ayırıyoruz. 0, 0, 1 değeri desimal olarak 4'e karşılık geliyor. 4 değerini yazdım. 1, 0 değeri de 1'e karşılık geliyor. Demek ki bu binary gösterimin yani 12 desimal değerinin oktal gösterim karşılığı 14. Tabi bu da 8 tabanında. Bu şekilde ele alınabilir. Aynı şey hexadesimal gösterim için de geçerli.
+
+517
+01:50:36,064 --> 01:50:41,943
+Hexadesimal gösterimde 4 tane binary basamak, 1 tane hexadesimal basamağa karşılık geliyor.
+
+518
+01:50:42,684 --> 01:50:52,984
+4 tane binary basamağı düşündüğümüz zaman 0, 0, 0, 0'dan 1, 1, 1, 1'e kadar yani 0 ile 15 arasında yani 0 ile F arasındaki hexadesimal basamaklara karşılık gelir.
+
+519
+01:50:52,984 --> 01:51:02,984
+Buna göre örneğin decimal 14 değerini ele alacak olursak, şu 18'i ele alacak olursak, 4 tane basamak sağdan itibaren ayırdık.
+
+520
+01:51:06,228 --> 01:51:09,268
+Ve geri kalan basamakları da dörtlü olarak ayırdık.
+
+521
+01:51:09,368 --> 01:51:16,608
+0010, karşılığı, desimal karşılığı 2, 1 değerim var, desimal karşılığı 1.
+
+522
+01:51:17,188 --> 01:51:21,908
+Dolayısıyla 18'in hexadesimal karşılığı 12 olarak elde edilmiş oluyor.
+
+523
+01:51:24,868 --> 01:51:26,108
+Saat kaç olmuş?
+
+524
+01:51:26,668 --> 01:51:28,028
+Tabii ara verebiliriz.
+
+525
+01:51:30,131 --> 01:51:41,971
+Şu şeyi anlatayım ondan sonra ara verelim. Gösterimler bu şekilde. Binder olarak gösterim mevcut. Peki işaretli ve işaretsiz sayı gösterimleri nasıl oluyor? Onlara bakalım.
+
+526
+01:51:42,991 --> 01:51:52,731
+İşaretsiz sayılar arkadaşlar temel olarak gösterim itibariyle sayının kullanılan tüm basamakları bir genlik değeri hesaplayacak şekilde kullanılıyor.
+
+527
+01:51:52,731 --> 01:51:56,891
+Örneğin 4 bitlik aritmetik için şuraya işaretsiz sayı diyelim.
+
+528
+01:51:58,707 --> 01:51:59,847
+İşaretçi sayılar.
+
+529
+01:52:00,927 --> 01:52:04,648
+Bu gösterimde tüm bitler genliği oluşturacak.
+
+530
+01:52:04,787 --> 01:52:13,148
+Bu 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10.
+
+531
+01:52:16,851 --> 01:52:28,791
+15 şeklinde işaretsiz sayı karşılıklarını üretmemiz mümkün. Herhangi bir bu 4 bitlik binary gösterimine karşılık her birine karşılık decimal işaretsiz karşılığımız mevcut. Nasıl yapıyoruz?
+
+532
+01:52:29,391 --> 01:52:36,612
+Tüm basamaklar binary'den decimal'a dönüştürülecek şekilde kullanılarak genlik şeklinde kullanılarak bunu elde edebiliyoruz.
+
+533
+01:52:36,612 --> 01:52:41,551
+Peki işaretli sayılar nasıl gösterilebilir? İşaretli sayılarının gösterimi için 3 farklı yöntem var.
+
+534
+01:52:45,492 --> 01:52:48,532
+Tasarım açısından biz TUS komplementi kullanıyor olacağız.
+
+535
+01:52:49,831 --> 01:52:51,231
+TUS komplement kullanılacak.
+
+536
+01:52:51,231 --> 01:52:58,072
+Çünkü burada ifade edilen diğer iki yöntemin tekrarlı gösterimleri mevcut.
+
+537
+01:52:58,152 --> 01:52:59,311
+Şimdi onlardan bahsedelim.
+
+538
+01:53:00,851 --> 01:53:06,791
+Sign magnitude dediğimiz yapıda arkadaşlar sayımızı mesela 4 bitlik bir sayıyla ilgileniyorsak,
+
+539
+01:53:06,952 --> 01:53:10,851
+A, B, C, D şeklinde bir binary sayıdan bahsediyor isek.
+
+540
+01:53:11,220 --> 01:53:28,199
+Bu sayının en yüksek anlamlı biti işaret biti. Bu ne demek? Eğer bu bit 0 ise pozitif, 1 ise sayımız negatif anlamına geliyor. Geri kalan 3 biti ise biz genlik için kullanıyoruz. Bunun anlamı ne? Örneğin şu değere bakacak olursak.
+
+541
+01:53:29,011 --> 01:53:39,991
+En yüksek anlamlı bitimiz 1. Demek ki sayı negatif. Kalan 3 bite bakıyorum. 0, 0, 1. Desimal karşılığı 1. Dolayısıyla bu sayı eksi 1 olarak sine magnitude mantığında ifade edilebilir.
+
+542
+01:53:40,351 --> 01:53:55,691
+Yine şu değere bakalım. Burada 0, 1, 1, 0. Sayının en yüksek anlamlı biti 0 olduğundan dolayı sayı pozitif. Geri kalan şu 3 bitin genliğine baktığımızda desimal karşılığı 6. Demek ki sayı artı 6'ya karşılık geliyor.
+
+543
+01:53:56,307 --> 01:54:01,307
+Peki, sign magnitude bu şekilde çalışırken, bunun...
+
+544
+01:54:07,507 --> 01:54:14,728
+Kötü gösterim veyahut da tekrarlı gösterim nerede diye bakacak olursak arkadaşlar, bu tekrarlı gösterim şu iki değer de ortaya çıkıyor.
+
+545
+01:54:15,608 --> 01:54:22,427
+Bakın en yüksek anlamlı bit bize işareti veriyordu ama genliğin sıfır olduğu durumda işaretin bir anlamı kalmıyor.
+
+546
+01:54:22,528 --> 01:54:28,667
+Yani burada sıfırı, sine magnitude mantığında sıfırı iki farklı gösterimle de göstermemiz mümkün oluyor.
+
+547
+01:54:28,667 --> 01:54:31,563
+Dolayısıyla bir tane gösterimi toplamda...
+
+548
+01:54:31,828 --> 01:54:43,568
+2 üzeri 4, 16 gösterimin vardı. Bu gösterimlerden bir tanesi boşa gitmiş oluyor. Eksi sıfır artı sıfır bir anlamı yok çünkü. Dolayısıyla sine magnitude işaretli sayılarda böyle bir kayıp söz konusu.
+
+549
+01:54:44,488 --> 01:54:52,167
+Once Komplement'e baktığımızda, Once Komplement ise şu şekilde çalışıyor. Yine şu Razer'dan şurayı bir uçuralım.
+
+550
+01:54:56,467 --> 01:55:14,488
+Örneğin 4 bitlik aritmetikte çalışıyor olalım. A, B, C, D şeklinde sayılarımız var. Yine burada arkadaşlar en yüksek anlamlı bitimiz bizim işaret bitimiz. Eğer bu değer 0 ise sayı pozitif. Eğer bu değer 1 ise sayı negatif olduğu anlamına geliyor.
+
+551
+01:55:21,844 --> 01:55:35,844
+Veya sayının kendisini sayı negatifse sayını bire göre tümleyen alıp yani A üstü, B üstü, C üstü, D üstü hesabı yapıp elde ettiğimiz sonucun genliğini hesaplıyoruz.
+
+552
+01:55:35,944 --> 01:55:42,064
+Bu da negatif sayının değerini belirlemiş oluyor. Örnek vermek gerekirse örneğin şuradan hareketle bunu yapalım.
+
+553
+01:55:45,043 --> 01:55:57,743
+Sayımızın en yüksek anlamlı biti 0. Dolayısıyla sayı pozitif. Dolayısıyla genliği olduğu gibi kullanıyorum. 0, 1, 0, 1, 5'e karşılık geliyor. Dolayısıyla artı 5. Bunda bir sıkıntı yok. Şimdi eksi örneğe bakalım.
+
+554
+01:56:00,756 --> 01:56:12,376
+Sayımız 1, 0, 1, 0. En yüksek anlamlı biti 1 olduğu için sayı negatif. Bu negatif sayının genlik hesabını yapabilmek için sayının bire göre tümleyenini alacağım. Bire göre tümleyen almak ne demek?
+
+555
+01:56:13,036 --> 01:56:22,655
+1 gördüğüm yeri 0, 0 gördüğüm yeri 1 yapmak. Dolayısıyla 1, 0, 1, 0'ın bire göre tümleyenini aldığımız zaman 0, 1, 0, 1 değerini elde ederim.
+
+556
+01:56:23,252 --> 01:56:42,052
+Binary olarak. Bu da 5'e eşit. Ama sayının ben negatif olduğunu biliyorum. Dolayısıyla eksi 5'e eşit olmuş oluyor. Peki burada da yine bir gösterim kaybettiğimizden bahsediyorduk. Bire göre tümleyen aritmetikte negatif sayıları ifade ettiğimde nerede kayıp ortaya çıkıyor? Kayıp şurada ortaya çıkıyor arkadaşlar.
+
+557
+01:56:42,052 --> 01:56:49,432
+7'nin, pardon 7'de değil, yine 0'ın temsilinde iki farklı gösterimimiz var.
+
+558
+01:56:51,923 --> 01:56:57,384
+Örneğin buraya baktığımızda sayı pozitif, genlik sıfır. Dolayısıyla bu artı sıfır diye çözümlendi.
+
+559
+01:56:58,063 --> 01:57:06,763
+1, 1, 1, 1'e baktığımızda sayı negatif. Dolayısıyla bütün bitlerin bire göre tümleyenini al. 0, 0, 0, 0. Genlik sıfır. Dolayısıyla bu da sıfıra eşit.
+
+560
+01:57:07,583 --> 01:57:11,563
+Sıfırı iki farklı gösterimde göstermiş oluyoruz. Yine bir kaybımız mevcut olmuş oluyor.
+
+561
+01:57:12,983 --> 01:57:14,563
+Şimdi gelelim tuz komplemente.
+
+562
+01:57:16,051 --> 01:57:38,211
+TUS komplementli yine ABCD isimli bitlerimiz mevcut. En yüksek anlamlı bit işareti belirtiyor. Eğer en yüksek anlamlı bit sıfırsa sayı pozitif olduğu gibi genliği hesaplıyorum. En yüksek anlamlı bit birisi sayı negatif ama bu sefer sayının ABCD 2 bitlik binary sayısının 4 bit binary sayının 2'ye göre tümleyenini hesaplıyorum.
+
+563
+01:57:38,211 --> 01:57:40,591
+2'ye tümleyen nasıl hesaplanıyor?
+
+564
+01:57:42,676 --> 01:57:54,895
+İkiye tümleyen için öncelikle olarak bire göre komplement alıyorum. Ondan sonra sayıya bir ekliyorum.
+
+565
+01:57:56,655 --> 01:58:01,775
+Veyahut da en sağdan itibaren ilk bir de dahil olmak üzere
+
+566
+01:58:02,804 --> 01:58:28,484
+Olduğu gibi bırakıyorum ilk bir de dahil olarak. Daha sonraki bütün bitlerin değilini alıyorum. Bu da pratikte uygulayacağımız yöntem. Tuz komplement bu şekilde çalışıyor. Örnek üzerinden ilerleyelim. Şuradaki 0, 1, 0, 0 değerine bakalım. En yüksek anlamı bitimiz 0 olduğu için sayı pozitif. Genlik hesabını yaptım. 0, 1, 0, 0 binary sayısının decimal karşılığı 4. O işte bu sayı.
+
+567
+01:58:29,171 --> 01:58:31,091
+Artı 4'e karşılık gelmiş oluyor.
+
+568
+01:58:34,731 --> 01:58:36,112
+Şu değere bakalım.
+
+569
+01:58:37,108 --> 01:59:04,068
+Bu değere baktığımızda 1100 en yüksek anlamlı bir 1 olduğu için sayı negatif. Dolayısıyla ben bu sayının tuz komplementini alacağım. Şimdi tuz komplementi almak için 1100'ın tuz komplementini almak için önce bire göre cümleyen alıyorum. Ne oldu? 0011 oldu. Sonra sayıya da 1 ekliyorum. Sonuç 0100. Demek ki genliğimiz 4'müş. Sayı negatifti. Dolayısıyla eksi 4 olarak bunu elde ettik.
+
+570
+01:59:05,108 --> 01:59:14,748
+İlk bahsetmiş olduğum pratik yöntemle bunun tuz komplementini nasıl alırız? Sağdan itibaren ilk bir de dahil olmak üzere olduğu gibi bırakıyorum. İlk biri görene kadar.
+
+571
+01:59:15,167 --> 01:59:40,267
+Birinci basamağım sıfır olduğu gibi bıraktım. İkinci basamak sıfır olduğu gibi bıraktım. Üçüncü basamak bir. İlk defa biri gördüm. Yine olduğu gibi bıraktım. Bundan sonra gelecek bütün basamakların değilini alıyorum. Birin değilini aldım sıfır ve sayı bitti. Dolayısıyla genliğim dört. Bu şekilde de tuz komplementi hesaplamamız mümkün olmuş oluyor. Bunu bu şekilde anlattıktan sonra arkadaşlar saatte kontrol edelim. On bir olmuş.
+
+572
+01:59:40,787 --> 01:59:48,947
+Bu noktada bir ara verebiliriz. Buraya kadar olanlarla ilgili sormak istediğiniz bir şey var mı?
+
+573
+02:00:01,171 --> 02:00:04,331
+Buraya kadar olanlarla ilgili sormak istediğimiz bir şey var mı arkadaşlar?
+
+574
+02:00:12,819 --> 02:00:20,479
+Tamam. Öyleyse yine 10 dakikalık ara verelim. 11-10 geçe devam ederiz arkadaşlar.
+
+575
+02:09:46,707 --> 02:09:58,707
+Evet arkadaşlar, yine kaldığımız yerden devam edelim. Şimdi karnım ipi anlatırken atladığımız iki konu olmuş. Onlara değinerek devam edelim. Bunlardan birincisi.
+
+576
+02:10:01,235 --> 02:10:15,876
+Sözde olarak fonksiyon tanımında veyahut da elde etmiş olduğumuz doğruluk tablosu itibariyle bazı satırların hangi değer alacağı bizim için önemli değilse bunları don't care durumlar olarak ele alabiliyoruz.
+
+577
+02:10:17,135 --> 02:10:20,615
+Bu durumda hatırlayacak olursanız X olarak işaretliyorduk.
+
+578
+02:10:27,188 --> 02:10:33,847
+Daha büyük bir karno map almamıza imkan sağlayacaksa o x'i 1 olarak kabul edebiliyorduk.
+
+579
+02:10:34,828 --> 02:10:41,188
+Dolayısıyla bu don't care durumlarının kullanımını bu şekilde ele almamız mümkün oluyordu hatırlayacak olursanız.
+
+580
+02:10:42,108 --> 02:10:47,847
+Şimdi buna ilişkin olarak bir örnek hemen bir bakıp söyleyeceğim şimdi.
+
+581
+02:10:59,315 --> 02:11:02,975
+Mesela şöyle bir ekran göntüsü alarak yapayım bunu.
+
+582
+02:11:12,115 --> 02:11:15,435
+Kuşturak birbir mişi, şükür, whiteboard'ın başlam.
+
+583
+02:11:27,315 --> 02:11:28,076
+Evet.
+
+584
+02:11:55,091 --> 02:12:05,672
+Örneğimiz şöyle olsun. Problem verirken bu şekilde de tanımlanıyor. İşaretli yer için bakalım. Hatta şöyle yapabiliyorsak daha güzel olacak.
+
+585
+02:12:16,756 --> 02:12:35,756
+Lojik fonksiyonumuzun sözel ifadesi veyahut da ifadesi şu şekilde. Dört değişkenli bir fonksiyon. Bu fonksiyonu biz ele alırken doğruluk tablosunu oluşturduğumuzda doğru min termleri birinci, üçüncü, yedinci, on birinci ve on beşinci min termlerin doğru değerler olduğunu vermiş bize.
+
+586
+02:12:40,015 --> 02:12:42,555
+min-törmler olduğunu söylemiş.
+
+587
+02:12:42,895 --> 02:12:48,115
+Tamam mı? Yani şu yapıyı ifade ediyor. Bunu kopyalabiliyor muyum?
+
+588
+02:12:48,115 --> 02:12:48,435
+Bakayım.
+
+589
+02:12:49,135 --> 02:12:50,695
+Bir şey olarak alamadık.
+
+590
+02:12:56,979 --> 02:12:58,979
+Tekrar şeye aktaralım.
+
+591
+02:12:58,979 --> 02:13:00,491
+Lightboard'a
+
+592
+02:13:08,372 --> 02:13:10,032
+Sorumuz bu şekilde bir yapı.
+
+593
+02:13:11,372 --> 02:13:20,152
+Fonksiyonumuzu ele aldığımızda, fonksiyon için doğruluk tablosunu yapmışız ve doğru minitörler 1, 3, 7, 11 ve 15 çıkmış.
+
+594
+02:13:20,392 --> 02:13:23,732
+Don't care durumlar 0, 2 ve 5 durumları olarak ortaya çıkmış.
+
+595
+02:13:23,832 --> 02:13:26,692
+4 değişkenli bir fonksiyon için bunu vermiş bize.
+
+596
+02:13:26,692 --> 02:13:31,492
+Şimdi biz burada yine şöyle yapalım.
+
+597
+02:13:33,972 --> 02:13:34,852
+AB.
+
+598
+02:13:35,764 --> 02:13:54,344
+ve CD için bir karnımap oluşturalım. 00, 01, 11, 10, 00, 01, 11, 10 olacak şekilde de yine değerlerimizi yazalım.
+
+599
+02:13:59,155 --> 02:14:05,175
+Hatırlayacak olursanız, bu minitörünlerin karşılıklarını karnımlılıkta şu şekilde de yazabiliyorduk.
+
+600
+02:14:05,775 --> 02:14:11,595
+Burası 0, 1, 2, 3. minitörüne karşılık geliyor.
+
+601
+02:14:12,735 --> 02:14:17,376
+4, 5, 6, 7. minitörüne karşılık geliyor.
+
+602
+02:14:18,655 --> 02:14:23,975
+8, 9, 10 ve 11 numaralı minitörüne karşılık geliyor.
+
+603
+02:14:24,595 --> 02:14:34,595
+12, 13, 14 ve 15 numaralı mintermlere de bu tablonun satırları, karnamek tablosunun satırlarının karşılık geldiğini hatırlıyoruz.
+
+604
+02:14:35,115 --> 02:14:48,175
+Burada verildiği üzere 1 numaralı minterm, 3 numaralı minterm, 7 numaralı minterm, 11 numara ve 15 numaralı mintermler doğru mintermler olarak bize verilmiş.
+
+605
+02:14:51,796 --> 02:15:04,836
+2 ve 5 olarak verilmiş. Bizim amacımız burada daha büyük karnomepler almamıza imkan sağlayacaksa don't care olan durumları bir olarak fixlemek olacak.
+
+606
+02:15:05,576 --> 02:15:17,215
+Şimdi doğruluk tablosuna baktığımızda örneğin sıfır önce min term don't care olmakla birlikte burada gördüğünüz üzere arkadaşlar mesela herhangi bir don't care hiç hesaba katmayacak olsak bile şunu
+
+607
+02:15:18,068 --> 02:15:34,368
+Bir kere bir karnomep olarak alırız. İkinci karnomep olarak bu kaldı. İkili alma imkanımız var ama şu don't care'i de hesaba katarak dörtlü bir karnomep alma imkanımız var. Dolayısıyla bunu doğal olarak şu şekilde almayı tercih ediyoruz.
+
+608
+02:15:35,988 --> 02:15:43,088
+Karnomep'i bu şekilde almanın karşılığı ne? Artık ben 5 numaralı min term'i doğru min term olarak kabul ettim.
+
+609
+02:15:45,939 --> 02:15:54,619
+Diğerlerine dokunmadığım için bunlar yine yanlış minitermler olarak yani tabloda, doğruluk tablosunda sıfır çıktısı üretiyor. Minitermler olarak.
+
+610
+02:15:56,851 --> 02:16:05,931
+Hatta yanlış da değil, hala don't care olarak kalabilir. Ama almadığım için, karnım hep almadığım için yanlış min term olarak bunları da fixlemiş oluyorum.
+
+611
+02:16:05,931 --> 02:16:13,951
+Tamam mı? Dolayısıyla bu şekilde aldığımız vakit, bakın normalde sadece şunu alma imkanım vardı. 3 terimli bir çarpımdı.
+
+612
+02:16:14,411 --> 02:16:19,692
+Ama bu şekilde karnım hep alarak 2 terimli bir çarpım haline bunu indirgemiş.
+
+613
+02:16:20,275 --> 02:16:38,135
+Oluyoruz. Bu birinci söyleyeceğim konu bu. Don't care durumlarını bu şekilde kullanıyoruz. Eğer karnomepi almışsak bunları bir olarak fixlemiş oluyoruz. Almamışsak sıfır olarak fixlemiş oluyoruz bu don't care'ları. Bu bu şekilde belirleniyor. İkinci bir durumda arkadaşlar karnomeplerdeki XOR durumları.
+
+614
+02:16:42,135 --> 02:16:42,667
+Karnomep'te...
+
+615
+02:16:42,995 --> 02:16:48,895
+Tek terimler üzerinden hareket ettiğimiz durumda bunları XOR olarak ele almamız mümkün.
+
+616
+02:16:49,075 --> 02:16:59,095
+Yani şöyle düşünelim. İki değişkenli bir fonksiyonumuz var. A ve B için. Bunlar için bir karnomep yaptık diyelim.
+
+617
+02:17:01,139 --> 02:17:18,419
+Neydi XOR için tanım? Değerler aynıysa 0 alıyor, farklıysa 1 değerini alıyor. Gördüğünüz gibi çaprazlarda yerleştiği için biz bunu doğrudan karnomifi alamamakla birlikte bunu biz A XOR B şeklinde tanımlayabiliriz.
+
+618
+02:17:18,419 --> 02:17:25,859
+Aynı şeyi 3 terimli için de yapabiliriz. 0 0 0 1 1 1 1 0.
+
+619
+02:17:33,747 --> 02:17:35,608
+Nasıl olacak? Yine benzer şekilde
+
+620
+02:17:39,636 --> 02:17:45,175
+Bu şekilde ilerliyorsa bunu da A-xor, B-xor, C şeklinde ele alıyoruz.
+
+621
+02:17:45,256 --> 02:17:51,636
+Aynı şey dört terimli için de geçerli. Karnövüplerde söylemediğimiz durumlar bunlara karşılık gelmiş oluyor.
+
+622
+02:17:52,515 --> 02:17:53,896
+Bunu tamamlamış olduk böyle.
+
+623
+02:17:56,056 --> 02:17:58,396
+Şimdi kaldığımız yerden devam edelim.
+
+624
+02:18:03,731 --> 02:18:04,691
+Bu bir de gitmiş.
+
+625
+02:18:17,459 --> 02:18:31,479
+Şimdi bu haliyle arkadaşlar temel kavramları bitirmiş oluyoruz. Biraz kombinasyonel, lojik, temel bloklarından bahsedeceğiz. Zamanımız yettiği mertebede.
+
+626
+02:18:31,479 --> 02:18:39,700
+Bir de bunların lojik derslerinde tek bitlik versiyonlarını görmüştük. Bunların en bitlik versiyonları nasıl tanımlanabilir onlara bakıyor olacağız.
+
+627
+02:18:44,180 --> 02:19:04,020
+Devresini hatırlayalım veya entegresini hatırlayalım. Lojik bloğunu diyebiliriz. Bunu hatırlayalım. Bu devre aslında arkadaşlar tanım itibariyle birden fazla kaynak içerisinde, birden fazla girdi içerisinden hangisinin seçilip çıktığa iletileceğini belirleyen bir yapı.
+
+628
+02:19:12,147 --> 02:19:35,288
+En adet girdisi varsa log2 en adet seçim ucu var. Log2 en seçim ucuyla toplamda en farklı değer oluşturulabilir. Bunlar da şu anlama geliyor. Seçim uçlarına yazmış olduğum binary değer neyse bunun karşılığı olan decimal numaralı giriş çıkışa aktarılıyor. Çalışma mantığı bu. En adet girişi var.
+
+629
+02:19:35,680 --> 02:19:44,360
+Logik'i en adet seçim ucu var veya tersten düşünecek olursak en adet seçim ucu var, iki üzeri en adet giriş ucu var, bir tane çıkış ucu var.
+
+630
+02:19:44,860 --> 02:19:52,299
+Yapmış olduğu işlem ne? Bu iki üzeri en adet girişten hangisinin çıkışa verileceğini seçim uçlarından belirlemek.
+
+631
+02:19:53,580 --> 02:19:59,380
+İsimlendirilirken buradaki seçim uçları ve girişler ve çıkış her birisi birer bitlik değer.
+
+632
+02:20:00,000 --> 02:20:13,659
+Dolayısıyla n'e birlik veya iki üzere n'e birlik bir MUX olarak bu isimlendirilmiş oluyor. Örneğin dörde birlik MUX, ikiye birlik MUX, sekize birlik MUX şeklinde bir isimlendirme söz konusu.
+
+633
+02:20:17,399 --> 02:20:22,719
+Bunun bir fonksiyon tablosunu verelim. Öncelikli olarak iki bitlik versiyon için.
+
+634
+02:20:23,891 --> 02:20:41,891
+Şekilde göreceğiniz üzere 2 bitlik yani 2'ye 1 MUX için 2 tane girişim var. Log 2, 2, 1 yapar. Bir tane seçim ucuna ihtiyacım var. Seçim ucuna 0 değerini verirsem W0'ı çıkışa aktaracak. Seçim ucuna 1 verirsem W1'i F'e aktaracak.
+
+635
+02:20:46,899 --> 02:20:56,420
+Bizim seçim girişimiz, F çıkışımız, S değeri olarak 0 varsa F'de W, 0, 1 varsa W, 1 değerleri oluşturulmuş oluyor.
+
+636
+02:20:56,920 --> 02:21:08,759
+Şimdi bu doğruluk tablosundan hareketle bu ikiye bir MUX'un, iki girişe bir çıkış olduğu için ikiye bir MUX'un iç yapısını tasarlamaya çalışalım veya bunun ne olacağını bulmaya çalışalım.
+
+637
+02:21:10,099 --> 02:21:11,779
+Bunu nasıl yapabiliriz?
+
+638
+02:21:12,755 --> 02:21:21,995
+S değerimiz 0 ise W'nun karşı tarafa çıkması lazım. S değerimiz 1 ise W'nin karşı tarafa çıkması lazım.
+
+639
+02:21:22,716 --> 02:21:27,536
+Dolayısıyla bunu şurada görmüş olduğunuz doğruluk tablosunu, anotasyon açalım.
+
+640
+02:21:31,252 --> 02:21:47,731
+Bu doğruluk tablosunu kullanarak arkadaşlar, şurada görmüş olduğunuz doğruluk tablosunu kullanarak ve doğruluk tablosundan, min termler cinsinden en genel anlamda fonksiyonu yazdığımız haliyle bunu bir formal hale dönüştürelim.
+
+641
+02:21:47,731 --> 02:21:51,032
+En genel halde bunu nasıl yazıyorduk? F fonksiyonu nasıl oluyordu?
+
+642
+02:21:57,652 --> 02:22:02,092
+Fonksiyonun İ numaralı çıkışıydı. En genel anlamda bu şekilde yazıyordu.
+
+643
+02:22:02,832 --> 02:22:05,391
+Dolayısıyla, şimdi bunu genişletelim.
+
+644
+02:22:05,691 --> 02:22:10,112
+Şimdi sıfırıncı min törmümüz ne? Tek değişken olduğu için S üstü.
+
+645
+02:22:11,231 --> 02:22:14,632
+Çıktığımız ne? Fonksiyonun sıfıra karşılık çıktısına W sıfır.
+
+646
+02:22:15,072 --> 02:22:23,332
+Artı birinci min törmümüz ne? S çarpı birinci min törmündeki karşılık çıktığımız W bir.
+
+647
+02:22:24,115 --> 02:22:33,236
+İşte arkadaşlar, bu genel formülü kullanarak 2'ye 1 MUX'un iç yapısını bu şekilde hızlı bir şekilde tasarlamış olduk.
+
+648
+02:22:33,296 --> 02:22:42,935
+Bakın neymiş? S üstü çarpı W, şurası S üstü çarpı W sıfır. Bu uç ise S çarpı W bir.
+
+649
+02:22:44,315 --> 02:22:49,195
+End kapılarıyla bunları oluşturduk ve bunları toplayacağız. Onu da OR kapısıyla gerçeklemiş oluyoruz.
+
+650
+02:22:50,515 --> 02:23:01,716
+İkiye bir MUX'un iç yapısında bu mantık çerçevesinde oluşturmamız mümkün oluyor. Bu tamam değil mi? Yani bu daha önce gördüğümüz bir şeydi. Bununla ilgili problem yoktur diye tahmin ediyorum.
+
+651
+02:23:20,180 --> 02:23:35,340
+Benzer bir yapıyı arkadaşlar 4'e 1 MUX içinde tanımlayabiliriz. 4'e 1 MUX dediğimizde 4 tane giriş var, 1 tane çıkış var. 4 tane girişten hangisini seçeceğimi belirleyebilmek için 2 tane seçim ucuna ihtiyacım var. Log 2, 4 dolayısıyla.
+
+652
+02:23:42,739 --> 02:24:03,079
+Burada girişlerimi de numaralandırıyorum. 0, 1, 2 ve 3 numaralı girişler olarak anlam sırasına göre numaralandırıyorum. Dolayısıyla S1 ve S0'a 0, 0 geldiği zaman bunun binary karşılığı 0, 0, decimal karşılığı 1, 0. 0 decimal sırasındaki girişi çıkışa verecek. Yani W0'ı çıkışa verecek.
+
+653
+02:24:03,507 --> 02:24:23,027
+01 binary karşılığımız 01'e karşı decimal 1, bir numaralı girişi çıkışa verecek gibi gidiyor. Az önce yaptığımız işlemin aynısını burada da yapıp iç tasarımı doğruluk tablosundan elde etmemiz mümkün. Nasıl yapacağız? Yine aynı mantık.
+
+654
+02:24:28,595 --> 02:24:36,275
+Fonksiyonun İ numaralı çıkışını çarpıp bütün bunları terimler üzerinden toplayarak F fonksiyonu tanımlayabiliriz.
+
+655
+02:24:36,335 --> 02:24:40,216
+O zaman bizim sıfır numaralı min törmümüz ne?
+
+656
+02:24:41,115 --> 02:24:49,435
+S1 üstü çarpı S0 üstü çarpı sıfırıncı min törmümüzün çıktısı W0 artı.
+
+657
+02:24:50,291 --> 02:25:09,491
+Birinci min termümüz ne? S1 üssü çarpı S0 çarpı W1 artı S1 çarpı S0 üssü çarpı W2 artı S1 çarpı S0 çarpı W3 şeklinde iç yapı tasarımımızı gerçekleyebiliriz.
+
+658
+02:25:09,551 --> 02:25:14,331
+Buna karşılık olarak grafik gösterimi de şematik gösterimi de burada verilmiş.
+
+659
+02:25:15,316 --> 02:25:35,335
+S0 üssü, S1 üssü, W0 çarptık. Yani bu birinci terim, bu ikinci terim, bu üçüncü terim, bu da dördüncü terim. Bunların her birisini toplayarak dört girişli bir or kapısından geçirip fonksiyonumuzu elde etmiş oluyoruz.
+
+660
+02:25:35,956 --> 02:25:45,076
+Dolayısıyla bu görmüş olduğumuz genel gösterim fonksiyonları tanımlama açısından oldukça bir pratiklik sağlamış oluyor gördüğünüz gibi.
+
+661
+02:25:50,484 --> 02:26:07,244
+Şimdi, madem biz burada inşa bloklarından bahsediyoruz, öyleyse 2x1 MUX'ları kullanarak 4x1 MUX elde etmemiz mümkün. Onu inceleyebiliriz burada.
+
+662
+02:26:08,704 --> 02:26:11,244
+Tabi bu aynı zamanda bizi şuna götürecek.
+
+663
+02:26:12,084 --> 02:26:20,344
+Görmüş olduğumuz tasarım boyunca, CPU tasarımına giden yol boyunca aslında biz çeşitli seviyelerde soyutlaştırmalar kullanacağız.
+
+664
+02:26:20,344 --> 02:26:21,644
+Örneğin.
+
+665
+02:26:22,611 --> 02:26:50,391
+Bir blok yapısı kullanacağız. Karakut olarak fonksiyonu bu diyeceğiz ve o noktadan itibaren ilerleyeceğiz. Ama biz biliyoruz ki lojik dersi bilgisiyle veyahut da şu ilk 2-3 haftadaki ön bilgiler çerçevesinde biz bu blokların hepsinin içini tasarlamış olacağız ve o tasarımı sıfırdan yapmayacağız. Bu tasarımı zaten yaptık. Tasarım olarak mümkün biliyoruz. Bu noktadan itibaren ilerleyerek devam ediyoruz diyeceğiz.
+
+666
+02:26:50,611 --> 02:27:14,291
+Bu da belirli seviyelerde bize soyutlama sağlamış olacak. Örneğin, biz biliyoruz ki 2x1 MUX'u tasarlamak mümkün. 2x1 MUX'lar kullanarak 4x1 MUX veya 16x1 MUX kullanmak, tasarlamak mümkün. Bunlardan pek çoğunu bir araya getirerek en bitlik bir 16x1 MUX gerçeklemek mümkün.
+
+667
+02:27:14,291 --> 02:27:18,291
+Daha sonrasında biz bunu böyle karmaşık, en bitlik bir tasarım olarak...
+
+668
+02:27:18,611 --> 02:27:30,851
+kullanmayacağız. Diyeceğiz ki, bir kara kutu var. Bunun her birisi Mbit'lik olmak üzere 16 tane girişi var. Bir tane 16 bit'lik çıkışı var. Mbit'lik çıkışı var.
+
+669
+02:27:31,572 --> 02:27:56,292
+Ve toplamda 4 tane seçim ucu var ve bu şekilde tanımlamış olduğumuz fonksiyon tablosu çerçevesinde görev yerine getiren bir blok diagram olarak kullanacağımız yapı diyeceğiz. Bu bize üst seviyede bir soyutlama sağlamış olacak ama biliyoruz ki bunu alt parçalara böldüğümüzde öncelikli olarak mbitlik MUX'un birer bitlik MUX'lardan tasarlanabileceğini
+
+670
+02:27:56,691 --> 02:28:20,851
+Mesela 16'ye birlik MUX'un 2'ye birlik MUX'lardan tasarlanabileceğini, 2'ye birlik MUX'un aslında AND ve OR ve NAT kapılarından gerçeklenebileceğini, AND OR NAT kapılarının da transistör seviyesinde tasarlanabileceğini, transistör seviyesindeki tasarımın ise elektromanyetik bir takım hesaplamalar çerçevesinde tasarlanabileceğini biliyor olacağız.
+
+671
+02:28:24,691 --> 02:28:29,791
+Aralarda soyutlamalar yaparak, abstraction'lar yaparak tasarımlarımızı ilerletiyor olacağız.
+
+672
+02:28:31,871 --> 02:28:35,531
+Şimdi bu noktada, sağa bir kontrol edeyim tamam.
+
+673
+02:28:36,431 --> 02:28:43,111
+Bu noktada ikiye birlik MUX'lar kullanarak dörde bir MUX nasıl yaparız onu inceleyelim.
+
+674
+02:28:44,592 --> 02:28:48,191
+Şöyle geçiyorum tekrar whiteboard'a.
+
+675
+02:28:50,995 --> 02:28:57,420
+Öncelikli olarak 4'e 1 MUX'un yapısını çizelim arkadaşlar. 4'e 1 MUX'da...
+
+676
+02:29:12,020 --> 02:29:37,340
+4EBURMUX için arkadaşlar 4 tane girişimiz var. Bunlara I0, I1, I2 ve I3 diyebiliriz. Bir tane çıkışımız var. F çıkışımız olsun. İki tane de seçim uçlarımız var. Bu seçim uçlarında yine anlam sırasını S1 ve S0 olarak vermiş olalım. S1 yüksek anlamlı seçim ucumuz.
+
+677
+02:29:37,843 --> 02:29:54,144
+Bunun fonksiyon gösterimi ne şekildeydi? S1 ve S0'a 0, 0 geldiği vakit F çıkışında I0'ı göreceğiz. 0, 1 geldiğinde I1'i, 1, 0 geldiğinde I2'yi, 1, 1 geldiğinde de I3'ü çıkışta görmek istiyoruz.
+
+678
+02:29:55,144 --> 02:30:02,443
+Bu tasarımı gerçekleyebilmek için biz bunu nelerle gerçekleyeceğiz? Bu 4 çarpı 1 MUX.
+
+679
+02:30:07,827 --> 02:30:10,688
+2x1 MUX'lar kullanarak gerçekleyelim.
+
+680
+02:30:20,564 --> 02:30:38,123
+Şimdi bu noktada ikiye bir MUPS'ların iki tane girişi var. Dolayısıyla dört tane giriş oluşturabilmek için bir kere giriş katında iki tane MUPS kullanmamız gerektiğini ortaya çıkartıyoruz.
+
+681
+02:30:45,747 --> 02:30:50,547
+İkinci MUX'un I0 ve I1 girişleri olarak tanımlayacağımız uçlar.
+
+682
+02:30:51,067 --> 02:30:54,747
+Bu arada arkadaşlar, eğer ki biz entegrenin içerisine...
+
+683
+02:30:54,804 --> 02:31:13,603
+Bir tanımlama yapıyorsak bu entegrenin kendi uçlarıyla, fonksiyonuyla ilgili tanımlamalardır. Bu uca bağlı bir değer oluşturuyorsak, X, Y gibi değer oluşturuyorsak bu da dış dünyadan entegrenin ilgili ucuna bağlanan değeri gösterecek şekilde bir tanımlamadır. Bunu da bu şekilde kabul edelim.
+
+684
+02:31:14,543 --> 02:31:19,903
+MUX'larımızın arkadaşlar kaç tane seçim ucu var? İkiye bir MUX olduğu için bunların birer tane seçim uçları var.
+
+685
+02:31:21,940 --> 02:31:40,900
+Birer tane seçim uçları var. Bu seçim uçlarını nasıl kullanabiliriz? Bakacağız. Şimdi bir de bunların iki tane çıkışı var. Bu iki tane çıkış arasında da bir seçim yapmak gerekebilir. Yani üst veya alt MUX'u seçebilmek adına. Dolayısıyla bunları da ikinci bir katmandaki MUX'da yine birleştirmemiz gerekecek.
+
+686
+02:31:42,860 --> 02:31:48,100
+Yine bunun da I0 ve I1 girişleri var. Bir de S seçim ucumuz var.
+
+687
+02:31:49,012 --> 02:32:06,752
+Bu durumda arkadaşlar, bu S seçim ucu, yukarki MUX mu, aşağıki MUX mu bunu seçiyor. Yani baktığımız zaman giriş ucunu iki birim ötelettiriyor. Dolayısıyla bu aslında bizim büyük tasarımımızdaki S1'e karşılık gelen bir durum.
+
+688
+02:32:12,051 --> 02:32:38,691
+Bakın, herhangi bir MUX seçildikten sonra, S1 ile MUX seçildikten sonra, yukarı veya aşağı MUX seçildikten sonra, bunun içerisinde I0 mı I1 mi? Yani bir adım oynatıyor. Yani sanki birler basamağıymış gibi. Halbuki S1 dediğimiz uç, şuradaki seçim ucu, I0, üstteki MUX'un I0 veya alttaki MUX'un I0. Yani iki basamak birden oynatıyor. Sanki ikiler basamağıymış gibi. Dolayısıyla bu da...
+
+689
+02:32:39,028 --> 02:33:02,368
+S0 olarak ele alacağımız durum olmuş oluyor. Dolayısıyla bu mantık çerçevesinde hareket noktamız ne oldu? 2x1 MUX'larda 2 tane giriş var. 4x1 MUX için 4 girişe ihtiyacım var. O zaman giriş katında 2 tane 2-1 MUX kullanacağım. Bunların çıkışlarını seçebilmek için 1 tane daha 2-1 MUX'a ihtiyacım var şeklinde bu tasarımımızı gerçeklememiz mümkün oluyor.
+
+690
+02:33:15,412 --> 02:33:19,691
+Aynı şekilde bu tasarımı arkadaşlar genişletmemiz de mümkün.
+
+691
+02:33:22,072 --> 02:33:29,511
+Şimdi 4x1 MUX yaptık. Yine bu abstraction'a ilişkin olarak bir durum. 4x1 MUX yaptık. Şuradaki örnek.
+
+692
+02:33:30,252 --> 02:33:36,471
+4x1 MUX yaptık. Bu 4x1 MUX'lardan 4 tane kullanarak 16'ya birlikte MUX da yapabiliriz. Nasıl yapacağız?
+
+693
+02:33:37,811 --> 02:33:52,111
+16'ya birlik MUPS yapabilmek için giriş katında 16 tane girişe ihtiyacım var. 4x1 MUPS'larla bunu gerçeklemek istiyorsam 4 giriş olduğuna göre her birinde toplamda 4 tane 4x1 MUPS'u giriş katında kullanmam lazım ki 16 giriş oluşturayım.
+
+694
+02:33:52,971 --> 02:34:01,023
+Bu MUPS'ların, giriş katındaki MUPS'ların 2 tane seçim ucu var. Bu seçim uçlarını ortaklayarak kullandığım vakit...
+
+695
+02:34:01,023 --> 02:34:11,144
+Herhangi bir MUPS seçildiğinde bu MUPS içerisindeki bizim adımlarımızı belirleyecektir bunlar. Dolayısıyla bunlar düşük anlamlı seçim uçlarımız olmuş olacak.
+
+696
+02:34:12,004 --> 02:34:20,423
+Dört tane MUPS olduğu için giriş katında bunlar arasında seçim de yapmamız gerekiyor. Bu seçimi yapmak adına çıkış katı içinde dörde bir MUPS kullanıyoruz.
+
+697
+02:34:22,772 --> 02:34:37,672
+MUPS'lar arası seçim yaptığı için yüksek anlamlı seçim uçları olarak ortaya çıkıyor. Dolayısıyla aslında 16'ya birlik bir MUPS'a baktığımızda şeklini şöyle çizebiliriz.
+
+698
+02:34:51,188 --> 02:35:13,768
+Buradaki girişlerimiz var. I0, I1, I2, nokta, nokta, nokta, I15'e kadar bir tane çıkışım var. Girişlere baktığımızda da, seçim uçlarına baktığımızda da dört tane seçim ucu var. Bunların isimlerini yazacak olursak işte I0, I1, I2, nokta, nokta, I15.
+
+699
+02:35:14,355 --> 02:35:21,036
+En yüksek anlamlısı S3, S2, S1 ve S0 olmak üzere. Bir de F çıkışımız olmak üzere.
+
+700
+02:35:22,155 --> 02:35:31,536
+16 çarpı 1 MUX'u bu şekilde ifade edebiliriz. Burada W0, I0'a karşılık geliyor. W15, I15'e karşılık geliyor.
+
+701
+02:35:32,376 --> 02:35:38,036
+En yüksek anlamlı S3 seçim ucu buradaki çıkış katındaki MUX'un yüksek anlamlı seçim ucu.
+
+702
+02:35:40,211 --> 02:35:46,091
+Giriş katındaki MUPS'ların ortak düşük anlamlı seçim ucuna karşılık gelmiş oluyor arkadaşlar.
+
+703
+02:35:47,011 --> 02:35:54,871
+Şimdi bu noktada geriye yönelik olarak bir hatırlama yaparak MUPS'lar kullanarak, MUPS kullanarak devre tasarımına bakabiliriz.
+
+704
+02:35:54,951 --> 02:35:58,671
+Lojik devre tasarımına bakabiliriz. Bir sonraki konumuz zaten dekodarlermiş.
+
+705
+02:35:59,591 --> 02:36:02,291
+Aynı işlemi dekoderle de yapacağız ama bu örneği yapalım.
+
+706
+02:36:04,819 --> 02:36:07,939
+Şöyle tekrar geri alıyorum. Bir örnek yapacağız.
+
+707
+02:36:09,639 --> 02:36:11,599
+Örneğimiz yine şu olsun.
+
+708
+02:36:12,779 --> 02:36:17,799
+İki bitlik karşılaştırma devresi. Sözel olarak ifadesi şuydu.
+
+709
+02:36:19,520 --> 02:36:24,700
+F, A0, A1. Şunu yanlış yaptı. Şöyle yapalım.
+
+710
+02:36:25,619 --> 02:36:29,799
+A1, A0, B1 ve B0 şeklinde yazmış olalım.
+
+711
+02:36:30,260 --> 02:36:33,700
+Şu B1, B0 sırasında B sayısını oluştursun.
+
+712
+02:36:34,940 --> 02:36:38,819
+Şu da A1, A0 sırasında A sayısını oluştursun.
+
+713
+02:36:38,900 --> 02:36:42,200
+Bu fonksiyonun çıktısı ne zaman 1 oluyor?
+
+714
+02:36:43,040 --> 02:36:45,960
+B1, B0 binary sayısı büyüktür.
+
+715
+02:36:46,920 --> 02:36:52,180
+A1, A0 binary sayısındanken diğer durumlarda da 0 değerini veriyor.
+
+716
+02:37:02,131 --> 02:37:04,932
+fonksiyonu gerekli büyüklükte diyelim.
+
+717
+02:37:11,412 --> 02:37:14,072
+Gerektiğini de MUX ile gerçekleyelim.
+
+718
+02:37:22,100 --> 02:37:27,139
+Tamam, şimdi buna ilişkin tabloyu hemen hızlıca tekrar yazacağım.
+
+719
+02:38:29,299 --> 02:38:30,827
+Bunu da şöyle yapalım.
+
+720
+02:38:42,932 --> 02:38:48,352
+Eksik mi yaptım? 0, 1, 2, 3, 4, 5, 6, 7, 8.
+
+721
+02:38:53,396 --> 02:38:56,896
+9, 10, 11, 12, 13, 14, 15. Tamam.
+
+722
+02:38:58,736 --> 02:39:02,495
+Bu işte değerlerimizi yazdık. Şimdi bunlara karşılık olan fonksiyon çıkışlarına bakalım.
+
+723
+02:39:09,587 --> 02:39:16,207
+Şimdi eşit olduğunda sıfır, büyük olduğunda bir oluyordu, büyük olduğunda bir oluyor, büyük olduğunda bir oluyor.
+
+724
+02:39:17,268 --> 02:39:26,367
+Sıfır sıfır bir bir, sıfır sıfır sıfır bir, sıfır sıfır sıfır sıfır sıfır.
+
+725
+02:39:27,308 --> 02:39:29,507
+Fonksiyon çıktığımızda bu şekilde elde ediyorduk.
+
+726
+02:39:29,507 --> 02:39:36,608
+Şimdi bunu MOOCs ile gerçeklemek istersek, arkadaşlar soru, kullanacağımız MOOCs'un büyüklüğü ne olabilir?
+
+727
+02:39:39,092 --> 02:39:42,512
+Mesela 16'ya birlikte MUPS'la bunu yapabilir miyiz?
+
+728
+02:39:51,123 --> 02:39:53,724
+veyahut da 16.1'e MUX ile nasıl yapılır?
+
+729
+02:40:05,683 --> 02:40:16,683
+4 switch koyarız. 16 tane değer. Artık switchlerimize karşılık gen değerleri alırız.
+
+730
+02:40:18,923 --> 02:40:27,683
+Tamam. [öğrenci] bir yerde bir yanlış yazmışım diye ifade etmiş. Ona bakalım. 0, 1, 1, 0. Bu satırda.
+
+731
+02:40:29,683 --> 02:40:35,203
+gene 6. satı 1 olacak. Bu Binary olarak 2. Şurası 2, burası 1. Dolayısıyla 1 olacak.
+
+732
+02:40:43,956 --> 02:40:53,076
+Doğru sanki tablomuz. Üç tane, iki tane, bir tane olacak. Tamam. Şimdi tekrar alalım cevabı. 16'ya 1'e MUPS'la bunu yapabilir miyiz?
+
+733
+02:40:54,995 --> 02:40:57,355
+Ve şöyle çizeceğim. Söyleyeyim, buyur.
+
+734
+02:40:57,776 --> 02:41:04,076
+Yani yaparız hocam. İşte A1, A0, B1, B0 değerlerini switch olarak kullansak.
+
+735
+02:41:05,355 --> 02:41:06,355
+Seçim ucu olarak mı?
+
+736
+02:41:06,355 --> 02:41:06,796
+Evet.
+
+737
+02:41:07,576 --> 02:41:07,876
+Tamam.
+
+738
+02:41:08,976 --> 02:41:10,736
+16 tane de girişle.
+
+739
+02:41:11,316 --> 02:41:18,036
+A1, A0, B1, B0 değerlerimiz neyse artık ona karşılık gelen değeri seçebiliriz.
+
+740
+02:41:18,036 --> 02:41:23,796
+Tamam. Şimdi bir tane örnekle ilerleyelim. Şöyle seçim uçlarımızda.
+
+741
+02:41:28,915 --> 02:41:34,135
+İçeriden tanımladığımız haliyle S3, S2, S1 ve S0 olsun.
+
+742
+02:41:34,855 --> 02:41:43,615
+Burada da I0, I1, I2, nokta nokta nokta nokta, I15'e kadar geliyor.
+
+743
+02:41:43,815 --> 02:41:45,255
+Çıktığımızda F değerimiz.
+
+744
+02:41:45,355 --> 02:41:48,695
+Şimdi 16'ya birlik MUX ile bunu yapmaya çalışıyoruz.
+
+745
+02:41:50,455 --> 02:41:52,475
+Burada seçim uçlarına ne bağlayalım?
+
+746
+02:41:52,575 --> 02:41:54,615
+En yüksek anlamlı seçim ucuna ne bağlayalım?
+
+747
+02:41:56,435 --> 02:42:02,135
+Tabloyu birebir geçirebilmek için, yani pratik olsun bir de. En yüksek anlamlı seçim ucuna ne bağlayalım?
+
+748
+02:42:02,155 --> 02:42:03,355
+A1 bağlarız hocam.
+
+749
+02:42:03,415 --> 02:42:10,876
+A1. Tablo da nasılsa anlam sırası aynı şekilde bağlarız değil mi? Yoksa eğer B0'dan bağlamış olsaydık bu sefer tabloyu takip etmek zor olacaktı.
+
+750
+02:42:11,635 --> 02:42:16,815
+B1, B0 şeklinde bağladık. Bu sefer giriş uçlarını hangi değerlere bağlamalıyız?
+
+751
+02:42:17,495 --> 02:42:20,415
+Mesela sıfırıncı satır geldiği vakit.
+
+752
+02:42:21,396 --> 02:42:29,136
+Sıfırıncı satırı seçtiğimizde sıfır, sıfır, sıfır, sıfır olduğunda I0'ı F'e verecek. Dolayısıyla F'de olması gereken değer için I0'a ne bağlamalıyız?
+
+753
+02:42:31,995 --> 02:42:40,136
+Doğal olarak tablodaki değerleri bağlayacağız. Dolayısıyla sıfır, bir, bir. Buradaki tablodaki değerler neyse birebir bunları bağlıyoruz.
+
+754
+02:42:41,096 --> 02:42:45,556
+Bu 16'ya birlik MUX ile bu fonksiyonu gerçeklediğimiz duruma karşılık gelmiş oluyor.
+
+755
+02:42:48,084 --> 02:42:55,564
+8x1 MUX ile yapabilir miyiz diye tekrar soracağım. Bunun için tekrar 8'e 1'lik bir MUX çiziyorum buraya.
+
+756
+02:43:03,412 --> 02:43:26,671
+Vatandaşın bu sefer 3 tane seçim ucu olacak doğal olarak. Bunlar S2, S1 ve S0 anlam sırasında. Girişlerimizde I0, I1, I2, nokta nokta nokta, I bu sefer 7'ye kadar gidecek. F fonksiyonumuz da burada. Bu sefer seçim uçlarına ve giriş uçlarına ne bağlamalıyız?
+
+757
+02:43:30,131 --> 02:43:37,631
+Hocam, A1, A0, B1 bağlayabiliriz. B0'ı da giriş uçlarına bağlayabiliriz. Seçim uçlarına değil, giriş uçlarına.
+
+758
+02:43:38,272 --> 02:43:45,432
+Seçim ucuna, giriş ucuna tamam. Bu şekilde bir bağlantı yaptım. A1, A0 ve B1'in 0 olduğu durumlara bakıyorum.
+
+759
+02:43:45,551 --> 02:43:51,272
+Şimdi artık bu bir tek satıra karşılık gelmiyor. İki tane satırdan oluşan bir gruba karşılık geliyor.
+
+760
+02:43:51,811 --> 02:43:57,291
+Şimdi dolayı işte ben I0'a B0'ın bir fonksiyonunu bağlamalıyım artık değil mi?
+
+761
+02:43:57,876 --> 02:44:05,376
+Şimdi burada küçük bir virgül ayırıp şunu soruyorum. Tek değişkenlik kaç farklı lojik fonksiyon yazabilirim? Yani şunu soruyorum.
+
+762
+02:44:06,636 --> 02:44:08,436
+Şöyle biraz kaydıralım.
+
+763
+02:44:10,236 --> 02:44:18,355
+fx şeklinde bir fonksiyon x bir bool değer. fx kaç farklı değer alabilir? Kaç farklı şekilde yazılabilir?
+
+764
+02:44:22,772 --> 02:44:24,432
+4 farklı şekilde mi hocam?
+
+765
+02:44:24,692 --> 02:44:28,652
+4'ü ben yazmışım zaten. Neler bunlar? Onu söyleyelim o zaman.
+
+766
+02:44:30,352 --> 02:44:30,891
+Not.
+
+767
+02:44:32,252 --> 02:44:36,092
+X olabilir. X üstü olabilir. Başka bir şey olabilir mi?
+
+768
+02:44:37,752 --> 02:44:40,992
+Evet, cevap gelmiş. 0 ve 1 olarak da bunlar olabilir.
+
+769
+02:44:41,092 --> 02:44:49,572
+Dolayısıyla bizim burada 8'e 1 MUX'a bağlayacağımız değerler ya B0 olacak, ya B0'ın değil olacak, ya 0 olacak, ya 1 olacak.
+
+770
+02:44:50,164 --> 02:44:53,784
+Tek değişkenli fonksiyonlar bunlar. B0'a bağlı olduğu için de bunlar olabilir.
+
+771
+02:44:54,264 --> 02:45:00,904
+Şimdi I0'a bağlayacağımız şey A1, A0, A1'in 0 olduğu satırlar. F ile B arasındaki ilişki nedir?
+
+772
+02:45:03,004 --> 02:45:04,524
+F B0'a eşit.
+
+773
+02:45:06,164 --> 02:45:11,824
+İkinci satırlarımıza bakalım. F B0'dan bağımsız olarak bir değerini alıyor.
+
+774
+02:45:13,044 --> 02:45:14,304
+Sonraki iki satıra bakalım.
+
+775
+02:45:15,156 --> 02:45:37,175
+F değerimiz B0'dan bağımsız olarak 0 değerini alıyor. Nokta nokta nokta nokta. Şey olduğu yer var mı ona bakalım. Değil olduğu bir yer. Değil olduğu yer yokmuş. Bağlayacağımız değerler B0, 1, 0, 1, 0, B0, 0 ve 0 şeklinde değer alıyormuş. Buna da 0 bağlamamız gerekiyormuş.
+
+776
+02:45:37,567 --> 02:45:45,667
+Dolayısıyla bunu bir adım daha ilerlettiğimizde, 4'e 1 MUX ile bunu yapmaya çalıştığımızda iki tane seçim ucu olacak. A1 ve A0'ı bağlayacağız.
+
+777
+02:45:46,048 --> 02:46:05,988
+I ile bağlanacak fonksiyon FB1 ve B0 cinsinden olacak. Bu şekilde de yazmamız mümkün olacak. Dolayısıyla MUX kullanarak lojik devre tasarımını bu çerçevede gerçekleştirmemiz mümkün oluyor. Bunu da lojik devreler dersinde görmüşsünüzdür zaten. Hatırlatma olması açısından tekrar etmiş olduk.
+
+778
+02:46:08,228 --> 02:46:12,948
+Bir de dekoderimiz var. Dekoder ile ilgili kapsama bir bakayım hemen.
+
+779
+02:46:13,971 --> 02:46:15,952
+Hızlıca verebiliriz bunu da.
+
+780
+02:46:16,971 --> 02:46:23,572
+Dekoderler ise arkadaşlar, en adet giriş, 2 üzeri en adet çıkışı olan devrelerdir.
+
+781
+02:46:23,572 --> 02:46:31,391
+Bir de bunun enable ucu var. Enable ucu çıkışın aktif değer üretip üretmemesini kontrol ediyor.
+
+782
+02:46:31,924 --> 02:46:49,963
+Devre mantığı temel olarak nasıl çalışıyor? Devre mantığı girişler sanki bir adres değeriymiş gibi çalışıyor. Girişlere vermiş olduğumuz binary değerin karşılığı ne ise, girişlere uyguladığımız binary değere karşılık gelen decimal değer ne ise o numaralı çıkış aktif oluyor.
+
+783
+02:46:50,515 --> 02:47:09,216
+Dekoderler için aktif sıfır ve aktif bir çıkışlı dekoderler var. Dolayısıyla aktif olmayı aktif bir dekoderde o ilgili çıkış bir oluyor, diğer bütün çıkışlar sıfır oluyor. Aktif sıfır dekoderde ise seçilen çıkış sıfır oluyor, diğer bütün çıkışlar bir oluyor. Bu şekilde tanımlayabiliriz.
+
+784
+02:47:09,216 --> 02:47:15,695
+Enable ucu nasıl çalışıyor? Enable ucu da çıkışların hiçbirinin aktif olmamasını sağlıyor.
+
+785
+02:47:17,108 --> 02:47:18,828
+Hiçbirinin aktif olmamasını sağlıyor.
+
+786
+02:47:19,547 --> 02:47:25,108
+Dolayısıyla bunu bir fonksiyon tablosu olarak vermek gerekirse...
+
+787
+02:47:29,075 --> 02:47:31,775
+Şimdi öncelikli olarak bunun şekil şemalini bir çizelim.
+
+788
+02:47:36,755 --> 02:48:03,075
+Genel olarak dekoderlerde arkadaşlar giriş uçları harf sırasıyla veriliyor. En düşük anlamlı olan alfabenin en düşük A'dan itibaren başlayacak şekilde ilerliyor. En anlamlı seçim ucu veya giriş ucu alfabetik olarak en yüksek sıradaki oluyor. Bunlara karşılık çıkışlarımız iki farklı şekilde tanımlanabilir demiştim. Ya bunlar aktif sıfır olabilir.
+
+789
+02:48:09,363 --> 02:48:12,523
+Veyahut da aktif 1 olarak tanımlanabilir. Onu da şuraya çizeyim.
+
+790
+02:48:17,556 --> 02:48:23,876
+Bunların bir de enable ucu var. Enable ucu aktif 0 veya aktif 1 olabilir. Şu anda aktif 0 olarak çizmiş olayım bunları.
+
+791
+02:48:30,100 --> 02:48:54,380
+Buradaki devre arkadaşlar 3 tane girişim var 8 tane çıkışım olduğu için 3x8 dekoder. Fakat bu aktif 0 dekoder. Çıkışlarımız aktif 0 olduğu için aktif 0 dekoder. Bu tarafa baktığımızda ise yine bu 3x8 bir dekoder. Aktif bir dekoder.
+
+792
+02:48:55,763 --> 02:49:09,063
+Bu durumda eğer ki soldaki şekil için Enable ucuna 1 verirsek, bu çıkışlarımızı da Y ile işaret edelim. Y0'dan Y7'ye kadar.
+
+793
+02:49:12,948 --> 02:49:25,927
+Eğer ki enable ucuna 1 verdiysek, bakın aktif 0 bir seçim ucu olduğu için buna 1 vermek demek, bunu aktif etmemek demek. Bu durumda Y0'dan nokta nokta Y7'ye kadar olan uçların hepsi 1 değerini alıyor.
+
+794
+02:49:25,927 --> 02:49:39,648
+Eğer ki enable ucu 0 ise bu durumda Y'nin CBA numaralı çıkışı 0 oluyor, diğerleri 1 oluyor.
+
+795
+02:49:40,340 --> 02:49:52,040
+Tamam mı? Buraya geldiğimizde ise, eğer enable ucu 1 ise, Y0.y7'ye kadar olan uçların hepsi 0 değerini alıyor.
+
+796
+02:49:52,860 --> 02:50:05,240
+Eğer ki enable ucumuz 0 ise, yani aktif 0 olduğu için bu entegre seçilmişse, Y'nin CBA anlam sırasındaki ucu 1 oluyor, diğerleri 0 oluyor.
+
+797
+02:50:05,683 --> 02:50:08,324
+Tanımını da bu şekilde verebiliriz.
+
+798
+02:50:09,343 --> 02:50:15,563
+Dediğim gibi bunun seçim uçları veya giriş uçları aslında adres gibi düşünebileceğimiz bir yapı.
+
+799
+02:50:17,587 --> 02:50:35,108
+Aktif sıfır çıkışlar ne zaman anlamlı? Aktif sıfır enable uçlarına sahip devrelerle, entegrelerle birlikte kullandığımızda anlamlı. Nerede kullanılıyor? Adres dediğimize göre bu. Mikro işlemci derslerinde de çok sıklıkla göreceğiz. Bu yapı adres çözümleme devrelerinde kullanılıyor çoğunlukla.
+
+800
+02:50:38,772 --> 02:50:43,812
+tasarımlarda da veya lojik fonksiyonların gerçeklenmesinde de kullanılan bir yapı.
+
+801
+02:50:43,812 --> 02:50:54,112
+Dediğim gibi n adet giriş 2 üzeri n adet çıkışı olduğu için temel olarak n çarpı 2 üzeri n'lik dekoder olarak isimlendiriliyor olacak bu yapılar.
+
+802
+02:50:54,675 --> 02:51:07,295
+Fiziki uygulamalarda lojik devreler dersinden hatırlarsınız. Bu enable uçları sadece bir tane olmak durumunda değil. Birden fazla enable ucu da olabiliyor. Fonksiyona göre kullanabiliriz ama biz dersimizde temel olarak bu yapıyı kullanıyor olacağız.
+
+803
+02:51:22,324 --> 02:51:29,943
+Şimdi gördüğünüz gibi aslında bu yine bir doğruluk tablosu olarak az önce vermiş olduğumuz yapıyı doğruluk tablosuna dökebiliriz.
+
+804
+02:51:30,024 --> 02:51:38,184
+Doğruluk tablosuna döktükten sonra ise bu aslında dört tane lojik fonksiyonu eş anlı olarak gerçeklediğimiz bir yapıya dönüşmüş oluyor.
+
+805
+02:51:38,184 --> 02:51:41,804
+Dört tane lojik fonksiyon eş anlı olarak gerçekleşmesi gerekiyor.
+
+806
+02:51:43,504 --> 02:51:49,184
+Burada Y3 çıkışını enable'ı hariç tutacak olursak, enable'ın nasıl çalıştığını...
+
+807
+02:51:50,195 --> 02:51:59,155
+Biliyoruz. Enable sadece 1 olduğu zaman sistem çalışacak. Bu yapıda bakın aktif 1 olarak bunu koymuş. Bizim az önce çizdiğimizden farklı olarak.
+
+808
+02:51:59,896 --> 02:52:12,855
+Biz burada fonksiyonları Y3, Y2, Y1 ve Y0 fonksiyonlarını yazabiliriz. Nasıl yazacağız? Daha önce gördüğümüz gibi bunun bir tane doğru min term'i var arkadaşlar. Bakın.
+
+809
+02:52:13,556 --> 02:52:26,936
+O da şu satır. Şimdilik enable'ı hariç bırakıyorum. Girişler cinsinden sadece şurada doğru min törmü var. O zaman Y3 neye eşitmiş? W1 çarpı W0. Min törmü, doğru min törmü yazdım.
+
+810
+02:52:27,636 --> 02:52:36,236
+Y2 neye eşit? Y2 iki numaralı min törmü eşit. O zaman o da W1 çarpı W0'ın değil olacak. Y1 neye eşit?
+
+811
+02:52:36,559 --> 02:52:57,059
+Y1 sütununa baktığım zaman sadece bir tane doğru minitör var. O da bir numaralı minitör. Yani W1'in değil'i çarpı W0. Y0 neye eşit? Bunun sütununa baktığımda sadece bir tane doğru minitör var. O da 0 numaralı minitör. Onu da yazacak olursak W1 değil çarpı W0 değil olarak yazabiliyoruz.
+
+812
+02:53:05,203 --> 02:53:10,824
+Çarpı E, çarpı E, çarpı E diye bunları yazmamız mümkün.
+
+813
+02:53:11,443 --> 02:53:14,344
+Şimdi E'li kısmı göz ardı edelim tekrardan.
+
+814
+02:53:15,664 --> 02:53:17,783
+Bir şey dikkatimizi çekiyor mu arkadaşlar burada?
+
+815
+02:53:17,943 --> 02:53:25,623
+Y0, Y1, Y2, Y3 cinsinden çıkışlarımız W1 ve W0 cinsinden güzel bir şekilde yazılabildi.
+
+816
+02:53:25,683 --> 02:53:27,144
+Burada bir şey dikkatimizi çekti mi?
+
+817
+02:53:30,644 --> 02:53:32,904
+Hatırlıyor muyuz? Lojikten de hatırlıyor olabiliriz.
+
+818
+02:53:41,075 --> 02:53:43,255
+Bakın ne yaptık? O hatırlamak adına.
+
+819
+02:53:44,655 --> 02:53:49,115
+4 farklı çıkış olduğu için 4 farklı lojik fonksiyonu aynı anda gerçeklemeye çalışıyoruz.
+
+820
+02:53:49,295 --> 02:53:51,056
+Y3, Y2, Y1 ve Y0.
+
+821
+02:53:51,775 --> 02:53:57,075
+Önce Y3'e odaklandık. Y3'ün doğruluk tablosuna baktık. Şu kısımla ilgileniyoruz sadece.
+
+822
+02:53:58,275 --> 02:54:03,235
+Bu doğruluk tablosunda W1 ve W0 cinsinden bir doğruluk tablosu var şurada.
+
+823
+02:54:03,235 --> 02:54:07,995
+Bu doğruluk tablosunun sadece bir tane doğru minitör mü var. O da 3 numaralı.
+
+824
+02:54:08,628 --> 02:54:23,188
+Min-Törn. Y2'ye bakıyorum. Bir tane doğru Min-Törn var. O da iki numaralı Min-Törn. Y1'e bakıyorum. Bir tane doğru Min-Törn var. O da bir numaralı Min-Törn. Y0'a bakıyorum. Bir tane doğru Min-Törn var. Sıfır numaralı Min-Törn. Sonuç itibariyle ne gördük?
+
+825
+02:54:28,180 --> 02:54:31,540
+Söyleyemiyor muyuz bunu? Çok umutluydum halbuki ben.
+
+826
+02:54:32,299 --> 02:54:33,819
+Min term'lerin toplamını yap.
+
+827
+02:54:34,720 --> 02:54:45,680
+Min term'lerin daha toplamını yapmadık aslında ama bariz bir şekilde belli ki dekoderin çıktıları girişlere karşılık gelen ilgili numaradaki min term'ler.
+
+828
+02:54:45,780 --> 02:54:52,000
+Yani ben W1 ve W0'a ilişkin min term'leri dekoder çıktısında elde edebiliyorum. Bu benim için neden önemli?
+
+829
+02:54:52,531 --> 02:55:07,371
+Ben dekoder kullanarak bir lojik fonksiyon gerçeklemek istediğim zaman bu min termlerden doğru olanları hangisiyse onları or kapısıyla birleştirip devre tasarımımı gerçekleştirebilirim. Yani dekoder kullanarak devre tasarımı yapabiliriz.
+
+830
+02:55:07,371 --> 02:55:12,652
+Burada bu yapmış olduğumuz min termlere enable'ları da ekleyerek.
+
+831
+02:55:14,420 --> 02:55:26,119
+çarpı enable. Devrenin tasarımını gerçekleştirmiş olduk. Şuradaki lojik tasarımı gerçekleştirmiş olduk. Bununla ilişkili olarak bir sonraki aşamada ne var?
+
+832
+02:55:27,252 --> 02:55:50,292
+Bir sonraki aşamada daha küçük bloklar kullanarak büyük blokları gerçekleme var. Bu konu kalsın. Bir de dekoderle birlikte lojik devre tasarım konusu kalsın. Onları önümüzdeki hafta ilk başta yapıp daha sonra diğer devre elemanlarında geçmeye çalışırız. Bu noktada dersi sonlandıracağım arkadaşlar. Buraya kadar olanlarla ilgili olarak sormak istedikleriniz var mı?
+
+833
+02:56:00,180 --> 02:56:02,979
+Buraya kadar olanlarla ilgili sormak istediğiniz var mı arkadaşlar?
+
+834
+02:56:07,891 --> 02:56:26,632
+Zaten konular lojikten getirdiğimiz konular. Temel olarak hatırlamanızı da bekliyorum. Tabii farklı olarak biraz daha bu lojik fonksiyonların nasıl gerçeklendiğine bakmış olduk. Eğer bir sorumuz yoksa arkadaşlar bu haftalık tamam diyelim.
+
+835
+02:56:26,959 --> 02:56:28,779
+Hocam bir şey sorabilir miyim?
+
+836
+02:56:28,919 --> 02:56:29,500
+Tabii buyur.
+
+837
+02:56:29,500 --> 02:56:48,500
+Biraz geride kaldık ona ama karnı haritaların karnı haritasında bakarken bize verilmediği zaman fonksiyona bakarak sadece nelerin don't care olduğunu nasıl anlayabiliriz?
+
+838
+02:56:49,280 --> 02:57:05,040
+Eğer bize verilmemişse veyahut da sözel olarak bu tanımlanmamışsa bunu bilemeyiz. Yani illaki ya bu sözel olarak tanımlıdır, verilmiştir ya verilmiştir veyahut da sözel tanımdan dolayı biz bunu anlayabiliriz. Yani örneğin şöyle düşünelim.
+
+839
+02:57:05,407 --> 02:57:25,347
+Bir sayıcı tasarımı yapmak istiyoruz. Sayıcımız 0, 1, 2, 3, 4, 5, 0 dönerek tekrar bunu saymak istiyor. Biz bunu tasarlarken 3 bitle ihtiyacımız olduğuna karar verdik. Ama sayıcıya baktığın zaman 6, 7 ve 8 numaralı durumlar kullanılmıyor. O zaman bunlar don't care. Bu tasarımdan dolayı biz bunu çıkarttık.
+
+840
+02:57:25,347 --> 02:57:27,167
+Yani ihtiyacımıza göre.
+
+841
+02:57:27,948 --> 02:57:30,268
+Efendim, ihtiyacımıza göre biz kendimizi belirledik.
+
+842
+02:57:30,432 --> 02:57:32,312
+Anladım hocam. Teşekkür ederim.
+
+843
+02:57:32,652 --> 02:57:43,592
+Rica ederim. Bu şekilde. Ama dersi yaptığımız örnekte hangi durumların don't care olduğu, sözel tasarımdan doğruluk tablosuna geçerken bu yapılmış, bize özet bilgi olarak bu verilmiş aslında.
+
+844
+02:57:44,312 --> 02:57:45,412
+Anladım hocam.
+
+845
+02:57:46,612 --> 02:57:53,731
+Öyleyse arkadaşlar, başka sorumuz yoksa bu haftalık dersimizi bitirelim. Haftaya tekrar görüşmek üzere. Herkese iyi günler diliyorum.
+
+846
+02:57:58,548 --> 02:57:59,328
+Günler hocam, sağ olun.
