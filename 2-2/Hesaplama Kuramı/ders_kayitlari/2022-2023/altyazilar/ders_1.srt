@@ -1,0 +1,1039 @@
+1
+00:08:30,067 --> 00:08:32,408
+Arkadaşlar, merhabalar. Sesim geliyor mu?
+
+2
+00:08:40,659 --> 00:08:41,819
+Evet, geliyor yazdımız.
+
+3
+00:08:47,668 --> 00:08:49,227
+Öncelikle merhabalar.
+
+4
+00:08:51,908 --> 00:08:58,327
+Bu dönemin ilk dersi. Dolayısıyla yeni dönemimiz hepimize hayırlı olsun diyorum.
+
+5
+00:09:02,947 --> 00:09:12,768
+Geçirmiş olduğumuz ve geçirmekte olduğumuz zor günlerde depremlerden etkilenen varsa aranızda onlara da
+
+6
+00:09:13,268 --> 00:09:28,408
+Geçmiş olsun diliyorum. Kayıtlarınız varsa Allah rahmet eylesin diliyorum. Umarım. Bugünleri de atlatırız. Tekrar toparlanırız.
+
+7
+00:09:40,436 --> 00:09:45,436
+yaşanılan olaylardan çok fazla etkilendiklerini söylemişlerdi.
+
+8
+00:09:48,896 --> 00:09:51,596
+Master ve doktor öğrencilerim.
+
+9
+00:09:53,796 --> 00:09:57,296
+Ama bu da çok normal bir şey.
+
+10
+00:09:58,355 --> 00:10:04,556
+Ama büyük ihtimal sizler de etkilenmişsinizdir.
+
+11
+00:10:06,868 --> 00:10:27,888
+Ben biraz şeyi tavsiye ediyorum, biraz daha yapabildiğimiz her türlü yardımı yapalım. Ama diğer taraftan da derslerimize, işimize biraz odaklanmaya çalışalım. Çünkü bunlar da bu ülkenin ayağa kalkabilmesi için gerekli şeyler.
+
+12
+00:10:33,812 --> 00:10:51,312
+Bu ders matematik ama sayılardan daha çok semboller, ispatlar bu tarz bir ders.
+
+13
+00:10:53,451 --> 00:10:55,572
+Ders online olacak.
+
+14
+00:10:56,159 --> 00:11:15,539
+Burada ders videoları zaten sistem tarafından kaydediliyor. Onları sonradan izleyebilirsiniz. Ben de yoklama almayacağım. Yani yoklamaya bakmayacağım. Yaşadığımız durumlardan ötürü.
+
+15
+00:11:24,115 --> 00:11:43,576
+Buna bence yeltenme, yani bunu tercih etmeyin, yeltenme değil de. Çünkü geçen yıllardan hatırladığım kadarıyla hani sonradan seyredelim diyen öğrenciler sonradan seyretmiyor.
+
+16
+00:11:45,275 --> 00:11:51,336
+Sonradan online olmayınca bir derece nasılsa bir derece daha zor oluyor takip etmek.
+
+17
+00:11:51,860 --> 00:12:09,460
+O yüzden imkanınız varsa, mümkün oluyorsa dersleri zamanında takip edin. Sonradan seyretmekten çok daha kolay olur. Soru sorabilirsiniz, cevap alabilirsiniz. İnteraktif olması sizi daha uyanık tutar.
+
+18
+00:12:17,076 --> 00:12:29,635
+Tabii yüz yüze değiliz ama yani senkron almaya çalışın. Ama senkron alamazsanız bir şekilde asenkron da videoları seyredebilirsiniz.
+
+19
+00:12:33,635 --> 00:12:40,655
+Ders slide'larını ben şimdi size atayım.
+
+20
+00:12:43,635 --> 00:12:47,515
+Şurada bir paylaşım oluşturacağım.
+
+21
+00:12:52,532 --> 00:12:56,532
+Theory of Computation.
+
+22
+00:12:59,172 --> 00:13:01,532
+Şehir, diyeyim ismine.
+
+23
+00:13:06,163 --> 00:13:17,483
+Neyse, sonra paylaşırım. Şu anda bir hemen izin vermedi. Yani dersler slide'lar üzerinden işlenecek ve bu slide'ları sizinle paylaşacağız arkadaşlar.
+
+24
+00:13:19,483 --> 00:13:27,803
+İki vize, bir final olacak. Vizeler 30 puan, final 40 puan.
+
+25
+00:13:32,820 --> 00:13:43,740
+Ders İngilizce olacak. Şöyle bir Türkçe giriş yaptım. Slide'larla beraber İngilizce'ye geçeceğim. Şu anda sormak istediğiniz bir şey var mı Türkçe olarak?
+
+26
+00:13:50,355 --> 00:14:14,535
+Dersi Türkçe anlatamam, anlatmam. Yani ders İngilizce. Dolayısıyla sınavlar online, %90 online olacak. Yani dersi yüz yüze anlattığımız nedenlerin hemen 8 hafta içinde kaybolmasını ben beklemiyorum.
+
+27
+00:14:15,412 --> 00:14:34,092
+Yok olmasını, düzelmesini keşke olsa. Dolayısıyla sınavlar da online olur diye düşünüyorum. %90 kesin resmi bir açıklama vesaire gelmedi ama ben öyle bekliyorum yani. Yüz yüze olmaz online olur.
+
+28
+00:14:42,323 --> 00:14:42,863
+Evet.
+
+29
+00:14:47,988 --> 00:14:48,988
+Tamam.
+
+30
+00:14:48,988 --> 00:14:52,988
+So, let's start.
+
+31
+00:14:52,988 --> 00:14:55,988
+Let me first share the slide.
+
+32
+00:14:55,988 --> 00:15:02,988
+Share the screen.
+
+33
+00:15:14,772 --> 00:15:15,172
+Ok.
+
+34
+00:15:21,299 --> 00:15:23,619
+Can you see the screen?
+
+35
+00:15:25,179 --> 00:15:25,779
+The slides.
+
+36
+00:15:33,139 --> 00:15:35,059
+Yes. Okay. Thank you.
+
+37
+00:15:40,851 --> 00:15:43,932
+So, my name is Oğuz Altun.
+
+38
+00:15:45,631 --> 00:15:53,131
+My email is oaltun at yildiz.edu.tr.
+
+39
+00:15:59,131 --> 00:16:01,331
+This is my office.
+
+40
+00:16:04,692 --> 00:16:07,851
+Office hours normally...
+
+41
+00:16:07,871 --> 00:16:21,387
+Bu, bu
+
+42
+00:16:25,331 --> 00:16:27,331
+Since we are doing...
+
+43
+00:16:30,707 --> 00:16:32,707
+Online Courses.
+
+44
+00:16:35,707 --> 00:16:39,707
+Office Hours can be right after the class.
+
+45
+00:16:51,443 --> 00:16:53,363
+So you can ask anything to me.
+
+46
+00:16:54,203 --> 00:17:09,063
+And if you need any extra need, extra questions, if you have any extra questions, you can send me an email and I will try to help through email.
+
+47
+00:17:10,344 --> 00:17:17,083
+Or if you need further help, we can arrange a meeting.
+
+48
+00:17:24,915 --> 00:17:29,355
+So, this course has three ECTS credits.
+
+49
+00:17:30,875 --> 00:17:40,955
+The book we will use is Introduction to the Theory of Computation, third edition.
+
+50
+00:17:58,023 --> 00:18:04,683
+there are video lectures by the author of this book.
+
+51
+00:18:05,263 --> 00:18:09,403
+I am not sure if this link is still alive.
+
+52
+00:18:10,763 --> 00:18:12,923
+It may be that, but
+
+53
+00:18:13,652 --> 00:18:19,332
+There were video lectures in this link.
+
+54
+00:18:19,332 --> 00:18:29,572
+Check this out and I recommend watching these video lectures if you have time.
+
+55
+00:18:33,395 --> 00:18:37,695
+So, how can you study for this course?
+
+56
+00:18:38,695 --> 00:18:46,276
+First, watch and attend the classes that I do.
+
+57
+00:18:47,155 --> 00:18:50,135
+And then read the book.
+
+58
+00:18:50,556 --> 00:18:55,695
+So, Michael Sipser's book is a very nice book.
+
+59
+00:18:55,695 --> 00:18:59,695
+It explains everything nicely.
+
+60
+00:19:01,076 --> 00:19:07,695
+Just read the book and try to solve the exercises at the end of the book.
+
+61
+00:19:08,695 --> 00:19:16,855
+And also you can check out these videos by the book author himself.
+
+62
+00:19:20,948 --> 00:19:25,148
+We will check out course goals later.
+
+63
+00:19:27,488 --> 00:19:39,827
+Grading, as I said, 30 points midterm 1, midterm 2 again 30 points, and final will be 40 points.
+
+64
+00:19:45,268 --> 00:19:52,468
+So, this was the administrative slide.
+
+65
+00:19:53,768 --> 00:19:56,128
+Let me start the course.
+
+66
+00:19:57,188 --> 00:20:06,567
+I will not go into too much detail today since this is the first lecture.
+
+67
+00:20:07,168 --> 00:20:08,907
+But I will do a start.
+
+68
+00:20:10,407 --> 00:20:12,208
+Let me share this.
+
+69
+00:20:14,996 --> 00:20:18,596
+Okay, share screen.
+
+70
+00:20:22,771 --> 00:20:36,820
+Ok.
+
+71
+00:20:46,324 --> 00:20:50,503
+So, you may be wondering what is this course about?
+
+72
+00:20:52,724 --> 00:20:57,804
+This is a course that we will answer some questions.
+
+73
+00:20:59,324 --> 00:21:07,384
+These questions, for example, what are the mathematical properties of computer hardware and software?
+
+74
+00:21:11,384 --> 00:21:13,304
+What is computation?
+
+75
+00:21:14,291 --> 00:21:16,231
+What is an algorithm?
+
+76
+00:21:18,011 --> 00:21:26,172
+You may already come across to different algorithms in other courses, in other lectures,
+
+77
+00:21:26,791 --> 00:21:35,031
+but probably that they gave you some informal definitions of algorithms.
+
+78
+00:21:35,031 --> 00:21:39,031
+In this course, we will define...
+
+79
+00:21:39,347 --> 00:21:42,467
+Algorithm, formally, mathematically.
+
+80
+00:21:44,667 --> 00:21:50,887
+And also we will be interested in the limitations of computers.
+
+81
+00:21:52,067 --> 00:21:57,047
+Can computers compute everything or not?
+
+82
+00:21:57,827 --> 00:22:02,087
+And surprisingly, maybe the answer is no.
+
+83
+00:22:02,612 --> 00:22:07,932
+Computers cannot compute every problem out there.
+
+84
+00:22:08,512 --> 00:22:10,472
+And this is a theoretical result.
+
+85
+00:22:12,812 --> 00:22:26,771
+So basically, we will be interested in developing formal mathematical models of computation.
+
+86
+00:22:27,412 --> 00:22:39,472
+A part of the course is about complexity theory.
+
+87
+00:22:41,211 --> 00:22:52,172
+And here the question is, what makes some problems computationally hard and some others easy?
+
+88
+00:22:52,819 --> 00:23:00,920
+And again, we will define easy and hard mathematically.
+
+89
+00:23:02,539 --> 00:23:08,360
+And as you maybe already know, some of the problems are easy.
+
+90
+00:23:08,360 --> 00:23:13,220
+And easy problems can be efficiently solved.
+
+91
+00:23:13,779 --> 00:23:16,400
+We can solve them fast.
+
+92
+00:23:17,460 --> 00:23:33,779
+When the number of input is high, even if the number of the inputs are high, we can still solve these questions in reasonable time, very quickly.
+
+93
+00:23:35,220 --> 00:23:42,420
+And these are, for example, sorting some numbers. This is an easy.
+
+94
+00:23:44,084 --> 00:23:45,684
+Question or problem.
+
+95
+00:23:46,804 --> 00:23:50,224
+Searching for a name in a list.
+
+96
+00:23:51,983 --> 00:24:02,384
+Or computing the fastest drive from, for example, Esenler to Beşiktaş in İstanbul.
+
+97
+00:24:02,384 --> 00:24:06,184
+So these are actually easy problems.
+
+98
+00:24:07,955 --> 00:24:23,555
+When you have 1 million numbers, it's solvable. If you have 1 billion numbers, it's still solvable in a fast way, in a reasonable time.
+
+99
+00:24:25,475 --> 00:24:34,555
+On the other hand, some of the problems are called hard. And these hard problems...
+
+100
+00:24:35,028 --> 00:24:43,148
+When the input is large, we cannot solve them in reasonable time.
+
+101
+00:24:44,288 --> 00:24:50,188
+So, for example, finding the timetable for all courses.
+
+102
+00:24:51,188 --> 00:25:00,748
+For a single university, number of courses would be thousand or something, and today's computers are very fast.
+
+103
+00:25:01,523 --> 00:25:06,543
+So, in a reasonable time, this can be solved.
+
+104
+00:25:06,663 --> 00:25:18,103
+But let's say instead of thousand, let's say consider scheduling all the courses in the world, let's say.
+
+105
+00:25:18,864 --> 00:25:20,983
+There should be millions of courses.
+
+106
+00:25:20,983 --> 00:25:25,563
+And when the input increases like that,
+
+107
+00:25:25,903 --> 00:25:34,124
+These hard questions become very, they take very long to solve.
+
+108
+00:25:34,423 --> 00:25:36,864
+They cannot be solved in reasonable time.
+
+109
+00:25:39,684 --> 00:25:51,423
+Another example for such questions for problems, for such problems is factoring a 300 integer into its prime factors.
+
+110
+00:25:52,019 --> 00:25:55,940
+Or computing the layout for chips in VLSI.
+
+111
+00:25:57,719 --> 00:26:12,119
+So, in this part of the course, in the complexity theory, the question is, which problems are difficult or hard?
+
+112
+00:26:13,579 --> 00:26:19,420
+And some problems are hard, some problems are really hard.
+
+113
+00:26:20,819 --> 00:26:24,839
+So, how can we define those?
+
+114
+00:26:25,519 --> 00:26:39,019
+And that's important because if you know that a problem is hard, very hard to solve, theoretically, you can prepare for that.
+
+115
+00:26:39,119 --> 00:26:46,259
+You will know that if the input is large, it will take a lot of time to solve.
+
+116
+00:26:47,028 --> 00:26:58,347
+This thing, so maybe you go another way, maybe put the problem in another way, solve in another way.
+
+117
+00:26:59,288 --> 00:27:03,568
+So understanding the problems is very important.
+
+118
+00:27:08,660 --> 00:27:14,980
+Another part of the course is about compatibility theory.
+
+119
+00:27:15,860 --> 00:27:34,019
+So, in this part, we will learn formal definitions of what is a computer, what is an algorithm,
+
+120
+00:27:34,804 --> 00:27:36,204
+What is a computation?
+
+121
+00:27:41,644 --> 00:27:47,084
+And also, some problems are unsolvable.
+
+122
+00:27:49,304 --> 00:27:56,124
+So, we said that some problems are very hard.
+
+123
+00:27:58,224 --> 00:28:01,584
+They are very hard, but they can somehow be
+
+124
+00:28:02,195 --> 00:28:09,755
+Solt, but some problems will be unsolvable. Theoretically, we cannot solve them.
+
+125
+00:28:11,015 --> 00:28:20,815
+And so, again, understanding whether a problem is solvable or not is very important.
+
+126
+00:28:20,815 --> 00:28:26,975
+If the problem is not solvable with computers,
+
+127
+00:28:29,971 --> 00:28:49,071
+Obviously, you will not try to write a program about it. You will not try to solve it, right? You will not spend time for it. Or you will try to approach the actual problem you have in a different way.
+
+128
+00:28:56,016 --> 00:28:59,955
+Another part of the course is about automata theory.
+
+129
+00:28:59,955 --> 00:29:07,455
+And actually, this will be in the beginning parts of the course.
+
+130
+00:29:07,455 --> 00:29:21,155
+And this will give us about, we will talk about different computation models here.
+
+131
+00:29:24,564 --> 00:29:30,284
+And these computation models will be very simple at first.
+
+132
+00:29:31,244 --> 00:29:35,724
+Their capabilities will be low.
+
+133
+00:29:36,684 --> 00:29:45,424
+Later, for example, first finite automata, these, their capabilities are low.
+
+134
+00:29:45,424 --> 00:29:48,604
+Then we will learn context-free grammars.
+
+135
+00:29:49,324 --> 00:29:51,324
+They will be a little more capable.
+
+136
+00:29:52,500 --> 00:29:55,819
+And then we will see Turing machines.
+
+137
+00:29:56,419 --> 00:30:03,980
+And Turing machines are theoretical models of real computers.
+
+138
+00:30:03,980 --> 00:30:08,720
+So a Turing machine can do anything a real computer can do.
+
+139
+00:30:10,639 --> 00:30:19,079
+So we will learn these computation models.
+
+140
+00:30:20,788 --> 00:30:30,128
+And how can, so when you have a problem, which of these models can solve it?
+
+141
+00:30:32,368 --> 00:30:35,807
+That's an important distinction, classification.
+
+142
+00:30:37,108 --> 00:30:45,348
+And if you have a problem that can be solved by a finite automata, let's say you are building a machine.
+
+143
+00:30:46,867 --> 00:30:55,188
+Let's say you are building a fridge or washing machine and you have a problem.
+
+144
+00:30:55,807 --> 00:31:08,728
+And if you have a problem that can be solved by a finite automata, you can put a much cheaper intelligence in that machine.
+
+145
+00:31:09,523 --> 00:31:14,803
+Because the requirement can be sold by a finite automata.
+
+146
+00:31:15,603 --> 00:31:24,443
+But if your requirement is high, if your problem can be only sold by a Turing machine,
+
+147
+00:31:24,923 --> 00:31:35,443
+that means you actually need something like a real computer, like a cell phone or like a...
+
+148
+00:31:36,019 --> 00:31:41,980
+You need to put in a real chip or something.
+
+149
+00:31:42,139 --> 00:32:03,240
+So if you understand the class of your problem, whether it can be solved by a finite automata or whether you can solve by a context-free grammar or by a Turing machine, you can use that information to create
+
+150
+00:32:03,700 --> 00:32:05,280
+Cheap machines.
+
+151
+00:32:08,915 --> 00:32:10,875
+among other users, obviously.
+
+152
+00:32:12,956 --> 00:32:23,216
+So, that's the general introduction to the course.
+
+153
+00:32:25,196 --> 00:32:28,276
+Do we have any questions up to this point?
+
+154
+00:32:28,456 --> 00:32:32,756
+This was a general overview of what we will learn.
+
+155
+00:32:36,788 --> 00:32:44,347
+You can ask your questions in Turkish if you need. You don't have to ask in English.
+
+156
+00:32:47,327 --> 00:32:56,347
+So then let's start and we have about 20 minutes. Let's do...
+
+157
+00:32:56,799 --> 00:33:06,420
+Let's start the course a little bit and then today I will just do this 50 minutes or something and then stop.
+
+158
+00:33:06,420 --> 00:33:24,420
+Next week we will do a full lecture because since this is the first week a lot of people will join after ad drops so I don't want them to lose a lot of...
+
+159
+00:33:24,751 --> 00:33:26,291
+critical information.
+
+160
+00:33:29,971 --> 00:33:42,011
+Mathematics is based on set theory, at least some of them, and this course is based on set theory too. Set theory is very important.
+
+161
+00:33:46,011 --> 00:33:50,432
+Probably you know these things, but I will review them anyway.
+
+162
+00:33:52,596 --> 00:33:56,375
+A set is a collection of well-defined objects.
+
+163
+00:33:57,635 --> 00:34:01,976
+And some examples of sets are natural numbers.
+
+164
+00:34:03,276 --> 00:34:06,336
+We show natural numbers with n.
+
+165
+00:34:07,135 --> 00:34:11,296
+They start with 1 and go to infinity.
+
+166
+00:34:12,628 --> 00:34:25,748
+In some books, or in some writers, mathematics writers, mathematicians, start natural numbers from zero.
+
+167
+00:34:27,028 --> 00:34:32,948
+But in this course, zero will not be a natural number.
+
+168
+00:34:33,948 --> 00:34:35,948
+Zero is not...
+
+169
+00:34:36,532 --> 00:34:42,832
+It will be an unnatural number. Natural numbers will start from one in this course.
+
+170
+00:34:44,092 --> 00:34:56,252
+And then another well-known set is integers. We will show that with Z, capital Z.
+
+171
+00:34:56,932 --> 00:35:03,332
+And it starts from minus infinity and goes to...
+
+172
+00:35:04,563 --> 00:35:06,143
+Positive infinity.
+
+173
+00:35:08,443 --> 00:35:15,443
+Another set that is well known is set of rational numbers.
+
+174
+00:35:16,443 --> 00:35:20,983
+We will show rational numbers with capital Q.
+
+175
+00:35:21,983 --> 00:35:30,403
+Capital numbers are such numbers that we can represent it.
+
+176
+00:35:31,315 --> 00:35:35,416
+as division of two integers.
+
+177
+00:35:37,015 --> 00:35:45,996
+So, this set notation, you know this, but I will review it.
+
+178
+00:35:45,996 --> 00:35:47,916
+How do we read this?
+
+179
+00:35:48,795 --> 00:35:57,275
+Q is a set such that, so these two, this colon can be read as such that.
+
+180
+00:35:58,483 --> 00:36:04,203
+Its representation is M divided by N.
+
+181
+00:36:05,983 --> 00:36:10,863
+And M is in the set of integers.
+
+182
+00:36:11,863 --> 00:36:17,243
+And so this comma can be read as N.
+
+183
+00:36:18,163 --> 00:36:21,363
+So M is in the set of integers.
+
+184
+00:36:21,363 --> 00:36:22,163
+And.
+
+185
+00:36:22,804 --> 00:36:26,204
+N is in the set of integers.
+
+186
+00:36:27,903 --> 00:36:32,463
+And N is not equal to zero.
+
+187
+00:36:33,463 --> 00:36:42,123
+So if we can represent any number this way, we call it a rational number.
+
+188
+00:36:43,635 --> 00:36:53,296
+So, for example, 3 is a rational number because 3 can be represented as 3 over 1, right?
+
+189
+00:36:54,376 --> 00:37:01,036
+So, something like 2 over 3 is again a rational number.
+
+190
+00:37:03,315 --> 00:37:05,935
+What are irrational?
+
+191
+00:37:06,435 --> 00:37:09,175
+So, irrational numbers.
+
+192
+00:37:10,516 --> 00:37:21,916
+The simplest way to define these is the set of numbers that are not rational, right?
+
+193
+00:37:21,916 --> 00:37:26,376
+We can define them as not rational numbers.
+
+194
+00:37:27,235 --> 00:37:29,996
+So pi, for example,
+
+195
+00:37:32,467 --> 00:37:54,207
+The pi that we, or P, sorry, it's not pi, right? P. Somehow, from Python or something, P. So P is, P is an irrational number because we cannot represent P as division of two integers.
+
+196
+00:37:58,387 --> 00:38:01,007
+Those are irrational numbers.
+
+197
+00:38:03,447 --> 00:38:10,807
+Another well-known set is set of real numbers.
+
+198
+00:38:12,667 --> 00:38:17,307
+There is a, it pronounced as pi.
+
+199
+00:38:17,307 --> 00:38:19,307
+So pi was right.
+
+200
+00:38:23,155 --> 00:38:24,395
+Yeah, okay.
+
+201
+00:38:25,175 --> 00:38:27,315
+So, pi.
+
+202
+00:38:27,596 --> 00:38:29,715
+So, let's continue to say pi.
+
+203
+00:38:29,876 --> 00:38:32,255
+Thank you, [öğrenci], [öğrenci], [öğrenci].
+
+204
+00:38:34,515 --> 00:38:45,435
+So, real numbers, the set of real numbers is denoted by R.
+
+205
+00:38:45,435 --> 00:38:49,996
+And the definition of this,
+
+206
+00:38:50,867 --> 00:38:57,967
+I don't remember whether we will give the definition of real numbers later in this course.
+
+207
+00:39:00,207 --> 00:39:01,287
+Uncountable.
+
+208
+00:39:02,107 --> 00:39:04,627
+This is an uncountable set.
+
+209
+00:39:05,987 --> 00:39:11,887
+And it includes rational and irrational numbers.
+
+210
+00:39:17,876 --> 00:39:25,476
+Something like pi. For example, pi, it should be a real number.
+
+211
+00:39:32,307 --> 00:39:44,788
+Now, when we are talking about sets, we can talk about subsets of sets.
+
+212
+00:39:47,528 --> 00:39:59,788
+For example, here, natural numbers n is a subset of integers because every element of...
+
+213
+00:40:00,019 --> 00:40:04,739
+N is also an element of integers.
+
+214
+00:40:06,739 --> 00:40:20,039
+And we say that natural numbers is a subset of integers, and we show it with this symbol, subset symbol.
+
+215
+00:40:22,779 --> 00:40:23,739
+Sorry.
+
+216
+00:40:25,204 --> 00:40:40,484
+And power set of B, any set B, is defined as the subsets of, as defined as all subsets of B.
+
+217
+00:40:40,484 --> 00:40:51,604
+So, and notice that the set itself is a subset, also,
+
+218
+00:40:52,436 --> 00:40:57,976
+Null set or empty set is also a subset of any set.
+
+219
+00:41:04,628 --> 00:41:09,648
+So, we have 10 minutes. Let's continue 10 more minutes.
+
+220
+00:41:14,324 --> 00:41:23,604
+If you have two sets, A and B, again, you know these things, but I will review just to give you the notation.
+
+221
+00:41:25,443 --> 00:41:41,163
+A union B is set of X such that X is both in A, so let's say X is in A or X is in B.
+
+222
+00:41:42,483 --> 00:42:03,264
+A intersection B is element such that they are in A and in B. A difference B is element such that they are in A but not in B.
+
+223
+00:42:05,876 --> 00:42:16,596
+And the Cartesian product of A and B is defined as pairs.
+
+224
+00:42:18,036 --> 00:42:21,836
+So we have a pair here, X and Y pair.
+
+225
+00:42:22,896 --> 00:42:28,596
+We say pair because there are two things there, right, in that tuple.
+
+226
+00:42:29,039 --> 00:42:53,920
+X first, Y two. There are two things, so we say a pair. So a Cartesian product is a set of pairs. And these pairs, the first element, X, comes from A. The second element, Y, comes from B.
+
+227
+00:42:54,931 --> 00:42:58,631
+Cartesian product is important in this course.
+
+228
+00:43:00,751 --> 00:43:10,451
+You will, when you read Sipser's book or this lecture's book, you will come across this notation a lot.
+
+229
+00:43:11,931 --> 00:43:20,192
+So let me show you a simple example here.
+
+230
+00:43:21,844 --> 00:43:24,844
+So let's say A is...
+
+231
+00:43:30,612 --> 00:43:37,931
+1, 2, and B is
+
+232
+00:43:42,324 --> 00:43:44,923
+3, 4.
+
+233
+00:43:46,844 --> 00:43:52,764
+Now, what is the Cartesian product of A and B?
+
+234
+00:43:54,064 --> 00:43:57,764
+And order is important from this notation.
+
+235
+00:43:59,284 --> 00:44:04,523
+So, the first element will come from A.
+
+236
+00:44:05,423 --> 00:44:08,503
+So, it is a set of pairs, right?
+
+237
+00:44:09,172 --> 00:44:18,971
+So, the first element will come from A. So, let's write 1 and 3. So, this is the first pair.
+
+238
+00:44:20,192 --> 00:44:25,811
+And another element will be 1 and 4.
+
+239
+00:44:28,532 --> 00:44:34,532
+Another element will be now 2. Let's write 2.
+
+240
+00:44:35,380 --> 00:44:36,920
+2 and 3.
+
+241
+00:44:38,720 --> 00:44:42,420
+Another element will be 2 and 4.
+
+242
+00:44:45,560 --> 00:44:47,000
+This should be 2.
+
+243
+00:44:51,219 --> 00:44:55,000
+2, and 4.
+
+244
+00:44:58,159 --> 00:45:02,599
+So this will be the Cartesian product of A and B.
+
+245
+00:45:03,219 --> 00:45:07,479
+And let's continue.
+
+246
+00:45:10,479 --> 00:45:19,147
+And again, the complement of A, it's shown like this with a...
+
+247
+00:45:19,284 --> 00:45:22,324
+Horizontal bar on the set's name.
+
+248
+00:45:23,463 --> 00:45:26,564
+It is a set of X such that,
+
+249
+00:45:27,284 --> 00:45:31,264
+such that X is not,
+
+250
+00:45:31,264 --> 00:45:33,564
+is not in A.
+
+251
+00:45:34,664 --> 00:45:34,983
+Right?
+
+252
+00:45:35,543 --> 00:45:36,764
+Not in A.
+
+253
+00:45:38,043 --> 00:45:38,704
+So,
+
+254
+00:45:39,704 --> 00:45:42,543
+these are some
+
+255
+00:45:43,699 --> 00:45:46,819
+Introduction to sets.
+
+256
+00:45:47,899 --> 00:45:58,379
+Now, we will see relations and functions, et cetera, but let's stop here today.
+
+257
+00:45:59,659 --> 00:46:07,159
+Next week, we will start from here and we will do a full three hours course.
+
+258
+00:46:11,315 --> 00:46:17,335
+Any questions? Do you have any questions, extra questions that I didn't explain yet?
+
+259
+00:46:23,795 --> 00:46:42,615
+Okey then. See you next week. Haftaya görüşürüz arkadaşlar. Bir ara haftaya ya da bugün fırsatını bulduğumda bu slide'ları da paylaşacağım dediğim gibi.
+
+260
+00:46:44,211 --> 00:47:02,992
+Bugün ilk ders olduğu için kısa yaptık. Dersin ana konularına girmek istemedim. Haftaya yeni gelenler olabilir. Gelecek haftaya devam ederiz. Sağlıcakla kalın. Geçmiş olsun diyorum hepimize tekrar.

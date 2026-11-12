@@ -1,0 +1,3459 @@
+1
+00:08:40,532 --> 00:08:42,732
+Arkadaşlar, merhabalar. Sesim geliyor mu?
+
+2
+00:08:44,312 --> 00:08:45,331
+Geliyor hocam.
+
+3
+00:08:46,211 --> 00:08:46,912
+Peki, sağ olun.
+
+4
+00:08:50,419 --> 00:08:55,539
+Geçen hafta pumping lemma hakkında konuşmuştuk.
+
+5
+00:08:57,459 --> 00:09:05,599
+Pumping lemmanın nereden geldiği, neden olduğuna dair baya ayrıntılı bir slide görmüştük.
+
+6
+00:09:07,419 --> 00:09:17,039
+Onu tekrar etmeyeceğim. Onun yerine pumping lemmanın örneklerine bakmıştık. Bir örneğini tekrar edeceğim bu hafta.
+
+7
+00:09:28,724 --> 00:09:30,204
+Slide'ı görüyorsunuz sanırım.
+
+8
+00:09:41,683 --> 00:09:45,124
+Öncelikle pumping lemma, bir tekrar edelim.
+
+9
+00:09:45,683 --> 00:09:49,803
+Context-free diller için, bağlamdan bağımsız diller için pumping lemma.
+
+10
+00:09:52,363 --> 00:09:53,884
+Şöyle başlıyor.
+
+11
+00:09:54,803 --> 00:10:01,423
+Bir kere sonsuz bir context-free, bağlamdan bağımsız bir dilimiz var.
+
+12
+00:10:02,803 --> 00:10:04,043
+Sonsuz yani.
+
+13
+00:10:05,940 --> 00:10:11,480
+içinde sonsuz sayıda dizi, dize barındırıyor.
+
+14
+00:10:15,508 --> 00:10:20,807
+Bu tarz diller için bir M,
+
+15
+00:10:24,916 --> 00:10:49,556
+Buna P demiştik geçen hafta. Critical length, yani kritik uzunluk, kritik boyut. Bir M değeri olsun. Öyle bir M değeri vardır ki, bu M değerinden daha büyük boyuta sahip olan bütün W dizeleri için,
+
+16
+00:10:51,923 --> 00:11:17,563
+Bir kere bu tizeyi 5'e ayırabiliriz. Şu şekilde. U ve X, Y, Z şeklinde 5 parçaya bölebiliriz. Bu 5 parçanın özelliği şu olmalı. Bir kere ortadaki kısım ve X, Y'nin boyutu M'ye eşit veya daha küçük ve
+
+17
+00:11:19,827 --> 00:11:26,048
+V ve Y'nin beraberce boyutları da bir veya daha büyük.
+
+18
+00:11:28,748 --> 00:11:44,567
+V ve Y'yi istediğimiz kadar sayılarını artırabiliriz veya sayılarını sıfır yapabiliriz, kaldırabiliriz.
+
+19
+00:11:46,772 --> 00:12:07,652
+Bunu yaptığımızda elde edeceğiniz yeni dize hala dilin içinde olur. O dilde geçerli bir dize olur. Bağlamdan bağımsız diller için pumping lemma bu. Bunu nasıl kullanıyoruz?
+
+20
+00:12:10,515 --> 00:12:15,255
+Bir dilin bağlamdan bağımsız olmadığını ispat için kullanıyoruz.
+
+21
+00:12:18,755 --> 00:12:36,515
+Mesela, şu bağlamdan bağımsız değil. Yani A, B, C, 3'ü de tam aynı sayıda sırayla gelecek. Bu bağlamdan bağımsız değil.
+
+22
+00:12:37,812 --> 00:13:02,011
+VV yani, öyle dizeler ki, ikiye bölebiliyorsunuz, tekrar ediyor ikinci yarısı, ilk yarısını. Bu da yine bağlamdan bağımsız bir dil değil. Bunların bağlamdan bağımsız olmadığını pumping lemma ile ispat edebiliriz.
+
+23
+00:13:04,820 --> 00:13:07,860
+Geçen hafta bu örneğe bakmıştık.
+
+24
+00:13:09,440 --> 00:13:19,279
+VV, yani kendisini tekrar eden bir, ne diyelim, alt dizenin iki kere tekrar edildiği bir dizetti.
+
+25
+00:13:21,360 --> 00:13:27,640
+Pumping lemma ile context-free olmadığını, bağlamdan bağımsız olmadığını ispat edelim.
+
+26
+00:13:31,731 --> 00:13:37,591
+Olmayana ergi amacıyla bağlamdan bağımsız kabul edeceğiz.
+
+27
+00:13:41,031 --> 00:13:42,932
+Baştaki varsayımımız bu.
+
+28
+00:13:44,432 --> 00:13:51,912
+Sonra bir olmayana ereceğiz, bir zıplığa ulaşacağız ve diyeceğiz ki, ha baştaki varsayımımız yanlışmış.
+
+29
+00:13:54,652 --> 00:13:57,912
+Şimdi, varsayımımızı yaptık.
+
+30
+00:13:58,676 --> 00:14:03,336
+Dolayısıyla artık bundan sonra o varsayımı doğru kabul edebiliriz.
+
+31
+00:14:04,536 --> 00:14:05,436
+Varsayımımız ne?
+
+32
+00:14:06,736 --> 00:14:08,355
+L bağlamdan bağımsız.
+
+33
+00:14:08,615 --> 00:14:11,036
+Kabili ise pumping lemmaya uyar.
+
+34
+00:14:13,036 --> 00:14:13,836
+Tamam.
+
+35
+00:14:15,115 --> 00:14:16,656
+L sonsuz bir dil.
+
+36
+00:14:18,355 --> 00:14:24,036
+Sonsuz olduğu için, bağlamdan da bağımsız olduğu için pumping lemmayı uygulayabiliriz.
+
+37
+00:14:26,292 --> 00:14:52,572
+Pumping lemma da bir sihirli sayı demiş burada. Kritik bir uzunluk deniliyor bazen. Bizim kitapta sanırım P olarak geçiyor. Bu slide'ların ilk bölümlerinde de P olarak geçiyordu. Burada M olarak, bazen de M olarak geçiyor. M demiş. Çok fark etmez. M, P neyse ona kritik uzunluk diyeceğiz.
+
+38
+00:14:53,524 --> 00:15:17,403
+Kritik uzunluğumuz M olsun. Şimdi M'den daha uzun ve bu dilin içinde olan ve tam edilemediğini, yani V ve Y'nin sayısının değiştirilemediğini, değiştirilemediğini her zaman.
+
+39
+00:15:17,855 --> 00:15:33,936
+ispat edebileceğimiz, işimize yarayacak bir dize uydurmamız lazım. Burada mesela şunu seçmiş. Yani A üzeri M, B üzeri M, A üzeri M, B üzeri M seçmiş.
+
+40
+00:15:36,196 --> 00:15:44,696
+Bunu seçmesi faydalı. Yani şunu da seçebilir miydi? Mesela bu da bu dizinin içinde olurdu.
+
+41
+00:15:46,580 --> 00:15:47,279
+Um,
+
+42
+00:15:51,956 --> 00:15:57,816
+A üzeri M.
+
+43
+00:16:00,875 --> 00:16:03,336
+Yani iki tane A üzeri M.
+
+44
+00:16:11,059 --> 00:16:33,000
+A üzerime, A üzerime. Şimdi bu da bu dilin içinde. Bu da M'den daha uzun. Ama bunu seçmemiz neden uygun değil? Bu çünkü bunun pump edilemeyeceğini ispat edemeyiz. Yani bu birçok durumda pump edilebilir bu.
+
+45
+00:16:37,076 --> 00:16:48,736
+Tüm dizeler için kamp edilebileceğini söylüyor. Dolayısıyla işimize gelen bir pattern seçmemiz lazım.
+
+46
+00:16:49,536 --> 00:16:57,436
+Kamp edilemeyeceğini gösterebileceğimiz, görebileceğimiz bir dize seçmemiz lazım.
+
+47
+00:17:07,284 --> 00:17:13,324
+Hanpekliliğinde sorun oluştuğunu görebileceğimiz bir dize.
+
+48
+00:17:19,059 --> 00:17:45,240
+Bir ekran koruyucum var da geçilemiyor. 30 saniye onu bekleyeceğiz. Bana ayağa kalkmayı birazcık gezmeyi hatırlatıyor. Normalde ayarları var. Atla tuşu var. Eğer atla tuşunu koyarsam düşünmeden artık alışıyorum atla tuşuna basmayı. Hiç ayar kalkmıyorum.
+
+49
+00:17:47,251 --> 00:17:52,251
+O yüzden o da açık kalmış.
+
+50
+00:17:53,652 --> 00:17:56,412
+Şimdi bunu kapatayım.
+
+51
+00:17:57,192 --> 00:17:57,912
+Kapandı.
+
+52
+00:18:06,451 --> 00:18:32,971
+Kapatırsam da yeniden uyanabiliyor. Çünkü bir arada habire kapatıyordum bunu. O yüzden başka bir program var. Üç saatte bir falan bunu tekrar açıyor. Dolayısıyla yeniden karşımıza da çıkabilir. Zombi gibi bir şey. İnatçı bir ekran koruyucu gibi bir şey. Neyse açıldı.
+
+53
+00:18:34,355 --> 00:18:38,775
+Ekranı görüyorsunuz sanırım.
+
+54
+00:18:43,155 --> 00:19:01,115
+Evet, ne dedik? Pumping lemmanın uygulanamayacağını bize gösterebilen bir uygun bir paten seçmemiz lazım. Burada A üzeri hem B üzeri hem A üzeri hem B üzeri hem böyle bir paten.
+
+55
+00:19:02,795 --> 00:19:06,255
+M'den boyutu büyük, 4M boyutunda.
+
+56
+00:19:10,708 --> 00:19:14,768
+Dilinde, içinde. Dolayısıyla bunu seçiyoruz.
+
+57
+00:19:16,887 --> 00:19:22,307
+Şimdi pumping lemma ne diyor? Bunu beş parçaya verebiliriz.
+
+58
+00:19:23,228 --> 00:19:29,028
+Ortadaki parçanın boyutu M veya daha küçük, V, Y'nin boyutu bir veya daha büyük.
+
+59
+00:19:30,927 --> 00:19:36,228
+V ve Y'yi pump up ya da pump down yapabiliriz. Dinin içinde kalır.
+
+60
+00:19:38,132 --> 00:19:50,672
+Bu iddianın olmadığını görmek için ortadaki bu Vx'ye'nin nerelerde olabileceğini düşünüyoruz.
+
+61
+00:19:51,912 --> 00:19:59,052
+Ve her durumda Vx'ye'yi şuraya koyduk olmadı, buraya koyduk olmadı şeklinde ilerliyoruz.
+
+62
+00:19:59,912 --> 00:20:05,592
+Örneğin, durum 1, Vx'ye ilk bu ağların içinde olsun.
+
+63
+00:20:07,604 --> 00:20:31,064
+Şöyle, burada ne diyor? Vx'i A üzeri M'nin içinde. Dolayısıyla V bir kısım A'lardan, yani K bir tane A'dan, Y de K iki tane A'dan oluşuyor.
+
+64
+00:20:34,740 --> 00:20:55,240
+Fakat şunu biliyoruz, yani beraber bu ikisinin uzunluğu birden bir veya daha fazla. Dolayısıyla K1 ve K2'nin toplamının bir veya daha fazla olduğunu biliyoruz. Yani K1 sıfır olabilir, K2 de sıfır olabilir ama ikisi birden sıfır olamaz.
+
+65
+00:21:00,403 --> 00:21:18,584
+Şimdi bu durumda pump-up yaptığımızı düşünelim mesela. Pump-up yapınca bir V ve bir Y daha, pardon, K bir tane A, evet bir V daha geliyor. Dolayısıyla K bir tane daha A geliyor.
+
+66
+00:21:19,316 --> 00:21:42,355
+Bir diye daha geliyor. K2 tane daha A geliyor. Yani K1 artı K2 tane daha A gelmiş oluyor. Bu ilk değil, ilk A'lara. Şimdi K1 artı K2 de sıfırdan büyük. Dolayısıyla patern bozulmuş oluyor. Yani şu kısım.
+
+67
+00:21:44,019 --> 00:21:57,000
+Şu kısma göre daha fazla A içeriyor. Dolayısıyla şu paten bozulmuş oluyor ve dilin içinde değil. Burada ilk olmayana erdik.
+
+68
+00:22:04,000 --> 00:22:09,940
+Şimdi Vx'yi direkt B'lerin içinde sayarsak.
+
+69
+00:22:10,483 --> 00:22:22,563
+Veya bu ikinci A'ların içinde sayarsak veya direkt bu ikinci B'lerin içinde sayarsak bu durumlar az önceki birinci duruma birebir benziyor.
+
+70
+00:22:23,983 --> 00:22:26,983
+Dolayısıyla onları o şekilde geçe gidiyoruz.
+
+71
+00:22:29,483 --> 00:22:34,043
+Peki V ikisiye arada olursa nasıl?
+
+72
+00:22:35,723 --> 00:22:36,043
+Yani
+
+73
+00:22:38,259 --> 00:22:51,960
+A ile B'nin şu arada olduğunu varsayalım. Ama nasıl mesela V A ile B'nin arasında kalan X'i de B'lerde. Bir başka durum böyle olabilir.
+
+74
+00:22:54,180 --> 00:23:03,519
+Bu durumda neyi biliyoruz? Ve bir kısım A'lardan ve B'lerden oluşuyor. Bu bizim varsayımımız.
+
+75
+00:23:05,395 --> 00:23:21,375
+Dolayısıyla K1 ve K2 her biri sıfır değil. K1 de sıfır değil, K2 de sıfır değil. Çünkü varsayımda diyoruz ki V, A ve B'den oluşacak. Dolayısıyla her ikisinde sıfır değil.
+
+76
+00:23:23,875 --> 00:23:28,476
+Y, B'lerin içinde ama sıfır olabilir.
+
+77
+00:23:29,460 --> 00:23:46,980
+Çünkü V ve Y'nin beraberce boyutunun birden büyük olması lazım. V'nin boyutu birden büyük, bir veya daha büyük pardon. Yok, birden büyük. Dolayısıyla Y sıfır olabilir.
+
+78
+00:23:55,380 --> 00:24:00,300
+A ve B'yi iki kere koyduğumuz için patenline bozulacak.
+
+79
+00:24:01,740 --> 00:24:06,200
+B'yi pump ettik. Elde ettiğimiz paten şu olacak.
+
+80
+00:24:09,240 --> 00:24:19,079
+Bu paten de şuna uymuyor. Yani tekrar eden iki alt dizi, dize yok.
+
+81
+00:24:22,132 --> 00:24:26,652
+Dolayısıyla bu keyisi de iptal ediyoruz.
+
+82
+00:24:28,291 --> 00:24:35,692
+Şimdi bir başka keyis... Geriye mi bastım? Pardon, geriye basmışım.
+
+83
+00:24:40,211 --> 00:24:53,612
+Şimdi, bütün keseleri, geri kalan keseleri, bu iki ana, dikkatle incelediğimiz duruma benzetebiliriz. Yani benziyor.
+
+84
+00:24:53,612 --> 00:25:02,612
+İşte Y bu sefer A'ların ve B'lerin arasında olabilir. Buna benziyor. Veyahut...
+
+85
+00:25:04,980 --> 00:25:20,240
+Veyahut diyelim ki aralarda olma durumu şu arada olabilir veyahut bu arada olabilir. Bütün bunlar bu incelediğimiz bu arada olma durumuna benziyor.
+
+86
+00:25:21,980 --> 00:25:30,619
+Son bir durum da VX'i 3 tane harfi birden içerebilir mi?
+
+87
+00:25:31,604 --> 00:25:33,604
+Bu durum zaten olamıyor çünkü...
+
+88
+00:25:38,740 --> 00:25:40,179
+Sıplar bir çalışma yapıyorlar.
+
+89
+00:25:42,340 --> 00:25:47,099
+Ve isteyenin boyutu M ya da daha küçük olmak zorunda.
+
+90
+00:25:48,659 --> 00:25:50,679
+Dolayısıyla burası 3M.
+
+91
+00:25:54,579 --> 00:26:20,235
+VXY 3M boyutunda bir alanı kaplayamaz, pumping lemmaya göre. Dolayısıyla bunları da ne yapıyoruz? Bunu, bunu veyahut VXY'nin burası olmasına hep bu kurala uymadığı için olmaz diyoruz. Bunlar da olmayan aile. Dolayısıyla diyoruz ki hep...
+
+92
+00:26:20,692 --> 00:26:35,451
+Bir olmayana eriyoruz. Bütün olası durumlar için. Dolayısıyla bu dil neymiş? Bağlamdan bağımsız değilmiş.
+
+93
+00:26:38,072 --> 00:26:47,211
+Şimdi burada bir örnek daha var. Bu slide'a bu örneği atlıyorum ben. Siz evde bakın. Siz kendiniz bakın.
+
+94
+00:26:49,364 --> 00:26:50,663
+Onu size bırakıyorum.
+
+95
+00:27:01,332 --> 00:27:12,912
+Devam edelim. Bağlamdan bağımsız dinlerin özellikleri var. Yeni bir slide, 137. Onu açıyorum. Oradan devam edeceğim yeni dersimize.
+
+96
+00:27:17,460 --> 00:27:18,460
+İngilizce adetudor.
+
+97
+00:27:20,460 --> 00:27:27,779
+Okay, so today we will learn properties of context-free languages.
+
+98
+00:27:33,011 --> 00:27:33,511
+Ok.
+
+99
+00:27:39,059 --> 00:27:44,139
+So, context-free languages are closed under union.
+
+100
+00:27:45,519 --> 00:27:48,019
+Under union, they are closed.
+
+101
+00:27:48,159 --> 00:27:49,779
+What does closed mean?
+
+102
+00:27:50,779 --> 00:28:05,000
+It means that the language you obtain after unioning to context-free languages is also context-free.
+
+103
+00:28:08,915 --> 00:28:12,596
+As an example, consider this language 1.
+
+104
+00:28:13,795 --> 00:28:15,475
+This is context-free.
+
+105
+00:28:16,535 --> 00:28:20,555
+And this language 2, again, a context-free language.
+
+106
+00:28:21,515 --> 00:28:29,795
+Now, context-free language 1, A to the N, B to the N, can be generated by this grammar, S1.
+
+107
+00:28:32,115 --> 00:28:32,755
+Right?
+
+108
+00:28:33,556 --> 00:28:38,215
+And the second language can be generated by this second grammar.
+
+109
+00:28:40,235 --> 00:28:42,816
+The initial variable is S2.
+
+110
+00:28:43,816 --> 00:28:55,276
+Now, we can represent the union of these two context-free languages in the set form like this.
+
+111
+00:28:58,932 --> 00:29:06,172
+A grammar that generates this language can be obtained by this.
+
+112
+00:29:06,172 --> 00:29:19,991
+You write a new initial variable and then that initial variable produces S1 or S2.
+
+113
+00:29:20,132 --> 00:29:23,751
+So you put an or between these two, right?
+
+114
+00:29:24,211 --> 00:29:28,011
+This is similar to union being an or.
+
+115
+00:29:31,827 --> 00:29:33,428
+This is one property.
+
+116
+00:29:33,548 --> 00:29:52,268
+So in general, if you have context-free languages, L1 and L2, L2, and if they have context-free grammars, G1 and G2, and S1 and S2 are their initial variables or start variables,
+
+117
+00:29:54,268 --> 00:29:58,428
+you can obtain a grammar for the union.
+
+118
+00:29:58,996 --> 00:30:15,176
+With this, you introduce a new start variable, and that start variable produces S1 and S2.
+
+119
+00:30:16,915 --> 00:30:20,415
+And between two, you put this bar, right?
+
+120
+00:30:26,900 --> 00:30:30,779
+Context-free languages are also closed under concatenation.
+
+121
+00:30:36,559 --> 00:30:38,160
+What does that mean?
+
+122
+00:30:39,460 --> 00:30:48,000
+So let's say again, you have context-free language L1 and L2, and their concatenation is this.
+
+123
+00:30:51,251 --> 00:30:58,251
+We learned how to concatenate languages in our previous slides. You can check that out.
+
+124
+00:30:59,692 --> 00:31:09,951
+Now, we can obtain a new grammar, again with introducing a new start variable s.
+
+125
+00:31:10,951 --> 00:31:16,251
+And that start variable, we will add this production rule that...
+
+126
+00:31:16,596 --> 00:31:22,816
+S-variable produces S1 concatenated with S2.
+
+127
+00:31:22,816 --> 00:31:29,175
+So the difference between union is in the union we have
+
+128
+00:31:33,203 --> 00:31:36,203
+bu
+
+129
+00:31:36,203 --> 00:31:37,203
+or
+
+130
+00:31:37,203 --> 00:31:40,203
+but in concatenation
+
+131
+00:31:40,203 --> 00:31:42,203
+we write them
+
+132
+00:31:42,203 --> 00:31:46,203
+next to each other directly
+
+133
+00:31:46,203 --> 00:31:48,203
+so in general
+
+134
+00:31:48,203 --> 00:31:50,203
+we do that
+
+135
+00:31:50,203 --> 00:31:54,203
+so i'm just skipping this part
+
+136
+00:31:54,203 --> 00:31:59,084
+context free languages are also closed under start operation
+
+137
+00:31:59,988 --> 00:32:01,227
+StarOperation.
+
+138
+00:32:02,567 --> 00:32:03,207
+And
+
+139
+00:32:03,207 --> 00:32:07,647
+If you have a language like this,
+
+140
+00:32:09,907 --> 00:32:13,627
+StarOperation gives this language.
+
+141
+00:32:15,268 --> 00:32:15,887
+And
+
+142
+00:32:15,887 --> 00:32:18,748
+If the original grammar is this,
+
+143
+00:32:18,748 --> 00:32:19,687
+So S
+
+144
+00:32:19,687 --> 00:32:23,028
+Produces
+
+145
+00:32:26,259 --> 00:32:31,019
+You have some rules here, whatever.
+
+146
+00:32:33,720 --> 00:32:39,019
+Now, in the start operation, again, you introduce a new variable.
+
+147
+00:32:46,163 --> 00:32:48,423
+You put a concatenation.
+
+148
+00:32:52,596 --> 00:32:55,976
+with the original variable and new variable.
+
+149
+00:32:58,056 --> 00:33:02,596
+And to terminate, you add null.
+
+150
+00:33:03,796 --> 00:33:10,496
+So you can imagine that this will give us as much as we want, right?
+
+151
+00:33:10,496 --> 00:33:15,056
+We can write S, S, S.
+
+152
+00:33:15,539 --> 00:33:23,240
+As much S's as we want, then an S1.
+
+153
+00:33:25,460 --> 00:33:30,279
+Finally, using this terminal, we can get rid of the S1.
+
+154
+00:33:30,839 --> 00:33:36,339
+So we can concatenate as much S's as we want.
+
+155
+00:33:37,299 --> 00:33:43,079
+And then using the remaining grammar, we can obtain rest.
+
+156
+00:33:49,971 --> 00:33:56,251
+This slide just reiterates the same idea.
+
+157
+00:33:57,251 --> 00:33:58,271
+So let's skip it.
+
+158
+00:33:59,951 --> 00:34:02,271
+Now, negative properties is...
+
+159
+00:34:06,259 --> 00:34:09,420
+What is not closed?
+
+160
+00:34:10,340 --> 00:34:20,939
+So, intersection, you might assume that intersection is closed, but it is not closed under context-free languages.
+
+161
+00:34:21,939 --> 00:34:26,380
+So, context-free languages are not closed under intersection.
+
+162
+00:34:27,380 --> 00:34:29,019
+What does that mean?
+
+163
+00:34:31,059 --> 00:34:34,539
+So, let's say L1 and L2 are context-free.
+
+164
+00:34:36,260 --> 00:34:43,399
+L1, intersection L2 may or may not be context-free.
+
+165
+00:34:43,559 --> 00:34:44,359
+We don't know.
+
+166
+00:34:45,579 --> 00:34:52,460
+When we say it's not closed under, it doesn't mean that they are definitely not context-free.
+
+167
+00:34:53,204 --> 00:34:56,904
+It doesn't mean that intersection is definitely not context-free.
+
+168
+00:34:57,324 --> 00:35:05,864
+Intersection may be context-free, but it may also not be context-free.
+
+169
+00:35:06,404 --> 00:35:08,944
+So it is not necessarily context-free.
+
+170
+00:35:09,764 --> 00:35:13,084
+We don't know whether it is context-free or not.
+
+171
+00:35:15,304 --> 00:35:17,084
+So we say that...
+
+172
+00:35:18,387 --> 00:35:25,327
+Context-free languages are not closed under intersection.
+
+173
+00:35:28,207 --> 00:35:31,087
+There's an example for that.
+
+174
+00:35:31,167 --> 00:35:41,768
+For example, this L1, the same number of A's and B's, number of C's can be different.
+
+175
+00:35:44,403 --> 00:35:49,163
+B's and C's, number of A's are different.
+
+176
+00:35:49,923 --> 00:35:52,503
+So these are both context-free.
+
+177
+00:35:54,503 --> 00:35:56,543
+And they have these grammars.
+
+178
+00:36:01,043 --> 00:36:08,783
+Their intersection is, all three has the same number.
+
+179
+00:36:08,943 --> 00:36:13,123
+So, number of A's, B's, and C's are same.
+
+180
+00:36:14,243 --> 00:36:17,203
+This is not context-free.
+
+181
+00:36:17,384 --> 00:36:21,903
+So, this intersection is not context-free, as an example.
+
+182
+00:36:24,903 --> 00:36:25,903
+Another...
+
+183
+00:36:27,731 --> 00:36:37,131
+Another operation that the context-free languages are not closed is complement.
+
+184
+00:36:38,711 --> 00:36:44,072
+So complement is taking the not, right?
+
+185
+00:36:44,831 --> 00:36:47,471
+The elements not in the language.
+
+186
+00:36:48,851 --> 00:36:54,091
+So taking the complement, again, is not necessarily context-free.
+
+187
+00:37:01,108 --> 00:37:05,448
+It may be context-free, but we don't know. It may not be true.
+
+188
+00:37:06,208 --> 00:37:12,347
+Again, the same examples, the same languages, their complement.
+
+189
+00:37:16,347 --> 00:37:17,507
+Now,
+
+190
+00:37:22,228 --> 00:37:23,188
+What is this?
+
+191
+00:37:28,563 --> 00:37:33,899
+Bu, bu
+
+192
+00:37:37,108 --> 00:37:41,048
+ve Turing'i ünion ve Turing'i komplement tekrar.
+
+193
+00:38:08,563 --> 00:38:11,304
+Yani L1 context-free
+
+194
+00:38:17,844 --> 00:38:44,003
+Şimdi sanırım olmayana ergi yöntemiyle gidiyor burada. L1 context-free ise komplementinin de context-free olması lazım. Yani varsayımız komplementin context-free olduğu olmayana ergi amacıyla. L2 context-free ise komplementi de o zaman context-free olmalı.
+
+195
+00:38:46,164 --> 00:38:54,184
+Union zaten closed. Dolayısıyla D1 komplement, Union D2 komplement, context-free olmalı.
+
+196
+00:38:56,624 --> 00:39:04,564
+Şimdi bir komplement daha alıyor, Union'un komplementi. Onun da hala context-free olması lazım.
+
+197
+00:39:06,564 --> 00:39:10,564
+Eğer komplement, context-free...
+
+198
+00:39:11,507 --> 00:39:27,487
+Eğer bağlamdan bağımsız diller komplement altında, closed, kapalı ise, tamam buraya kadar okey. Yani bunun context-free olması lazım.
+
+199
+00:39:35,155 --> 00:39:40,155
+Bu niye bunu yaptı, niye bu işlemleri yaptı? Çünkü bu işlemler bize...
+
+200
+00:39:45,331 --> 00:39:47,311
+Demorgan kuralları mıydı bunlar?
+
+201
+00:39:52,500 --> 00:39:54,519
+Evet hocam, birleşimli ilik esişim falan.
+
+202
+00:39:54,519 --> 00:39:58,260
+Evet, demorgan kurallarına göre esişimi veriyor.
+
+203
+00:40:02,559 --> 00:40:08,680
+Kesişimin de context-free olmadığını az önce bir örnek ile ispatlamıştı zaten.
+
+204
+00:40:10,460 --> 00:40:13,960
+Dolayısıyla olmayana erdik.
+
+205
+00:40:14,500 --> 00:40:16,519
+Dolayısıyla bu diller...
+
+206
+00:40:17,364 --> 00:40:24,604
+Dolayısıyla, pardon, komplement, burada şunun context-free olduğunu biliyoruz.
+
+207
+00:40:26,043 --> 00:40:26,604
+Birleşimin.
+
+208
+00:40:27,604 --> 00:40:30,523
+Tek operasyon komplement alma burada.
+
+209
+00:40:30,844 --> 00:40:35,903
+Demek ki komplement, context-free değil.
+
+210
+00:40:37,824 --> 00:40:40,684
+Olmayanı ererek ispatlamış oldu.
+
+211
+00:40:44,500 --> 00:40:59,880
+So, to reiterate in English, basically here, I think the slide is using proof by contradiction.
+
+212
+00:41:02,019 --> 00:41:05,720
+L1 is context-free, L2 is context-free.
+
+213
+00:41:06,579 --> 00:41:12,019
+Now, we are assuming that complement is context-free.
+
+214
+00:41:12,851 --> 00:41:16,371
+This L1's complement should be context-free.
+
+215
+00:41:16,871 --> 00:41:19,511
+Again, L2's complement should be context-free.
+
+216
+00:41:20,311 --> 00:41:24,371
+We know that union is context-free, so this union is context-free.
+
+217
+00:41:25,131 --> 00:41:29,692
+Now, the final complement, again, should be context-free.
+
+218
+00:41:31,011 --> 00:41:40,152
+But these operations give us the intersection of these languages, and we just learned that.
+
+219
+00:41:40,576 --> 00:41:43,255
+İntarçiyonu, is not context free.
+
+220
+00:41:43,255 --> 00:41:46,576
+So we have a contradiction here.
+
+221
+00:41:46,576 --> 00:41:52,815
+So original assumption that complement is context free was wrong.
+
+222
+00:41:52,815 --> 00:41:55,536
+So complement is not context free.
+
+223
+00:42:01,336 --> 00:42:03,336
+So up to this point...
+
+224
+00:42:04,788 --> 00:42:12,408
+Do you remember what was closed for regular languages? I want to review that.
+
+225
+00:42:14,047 --> 00:42:21,347
+So let me share the whole screen.
+
+226
+00:42:28,340 --> 00:42:31,720
+What were the regular properties here?
+
+227
+00:42:32,980 --> 00:42:33,960
+Regular properties.
+
+228
+00:42:40,307 --> 00:42:46,208
+I think regular languages were closed under complement and intersection, right?
+
+229
+00:42:48,427 --> 00:42:56,208
+So there is a difference between context-free languages and regular languages in that regard.
+
+230
+00:43:05,972 --> 00:43:16,572
+So, regular languages are close under union, concatenation, star.
+
+231
+00:43:18,572 --> 00:43:20,492
+So, up to this point, same.
+
+232
+00:43:26,516 --> 00:43:54,059
+Bu da aynı şekilde.
+
+233
+00:43:55,092 --> 00:43:56,412
+Closed under reversal.
+
+234
+00:44:03,635 --> 00:44:04,795
+Can you make a guess?
+
+235
+00:44:07,895 --> 00:44:10,496
+Hocam, olmaması için bir sebep yokmuş gibi geliyor ama.
+
+236
+00:44:11,195 --> 00:44:13,655
+Bana da öyle geliyor. Sanki olur gibi geliyor.
+
+237
+00:44:15,935 --> 00:44:18,975
+Ama biraz uğraşıp görmek lazım belki de.
+
+238
+00:44:20,855 --> 00:44:22,895
+Büyük ihtimal şu dördü aynı.
+
+239
+00:44:24,456 --> 00:44:28,275
+Şundan emin değilim ama ilk üçü az önce slide'da geçiyordu.
+
+240
+00:44:29,172 --> 00:44:31,391
+Context-free dinlerde de kapalı.
+
+241
+00:44:32,831 --> 00:44:40,992
+Ama bu ikisi, yani intersection ve complement, regular dinlerde kapalı, bağlamdan bağımsız dinlerde kapalı değil.
+
+242
+00:44:45,588 --> 00:44:48,128
+Now, let's continue with this slide.
+
+243
+00:44:51,795 --> 00:44:59,135
+Let's stop this share and open directly the slide.
+
+244
+00:45:12,148 --> 00:45:18,228
+Now, we can also think about, so this was the last slide we saw.
+
+245
+00:45:21,108 --> 00:45:24,788
+Context-free languages are not closed under complement.
+
+246
+00:45:26,307 --> 00:45:35,288
+Now, we can, there are some properties related to context-free languages and regular languages together.
+
+247
+00:45:36,548 --> 00:45:38,908
+One of them is intersection.
+
+248
+00:45:41,460 --> 00:45:49,260
+Now, the intersection of a context-free language and a regular language is a context-free language.
+
+249
+00:45:49,260 --> 00:45:51,380
+So,
+
+250
+00:45:58,963 --> 00:45:59,643
+Dersi.
+
+251
+00:46:04,083 --> 00:46:06,027
+Bu
+
+252
+00:46:11,219 --> 00:46:23,219
+To prove this, the slide constructs and NPDA, non-deterministic pushdown automata.
+
+253
+00:46:23,219 --> 00:46:28,819
+We learn pushdown automata, right?
+
+254
+00:46:32,371 --> 00:46:40,371
+We didn't talk about N PDAs, because N PDAs is just PDAs.
+
+255
+00:46:41,371 --> 00:46:42,371
+Same thing.
+
+256
+00:46:44,371 --> 00:46:47,371
+Then why do we have N here?
+
+257
+00:46:47,371 --> 00:46:53,371
+Because there is also a deterministic pushdown automata version.
+
+258
+00:46:55,371 --> 00:46:59,371
+We didn't discuss those yet.
+
+259
+00:47:00,947 --> 00:47:05,208
+original, in the original
+
+260
+00:47:05,208 --> 00:47:08,567
+order of
+
+261
+00:47:08,567 --> 00:47:10,228
+these slides, because
+
+262
+00:47:10,228 --> 00:47:13,147
+I rearranged somewhat
+
+263
+00:47:13,147 --> 00:47:15,827
+and I skipped some.
+
+264
+00:47:17,027 --> 00:47:18,987
+So, in the original order
+
+265
+00:47:18,987 --> 00:47:23,208
+there is a deterministic pushdown automata
+
+266
+00:47:23,208 --> 00:47:24,587
+slide,
+
+267
+00:47:25,188 --> 00:47:26,268
+D, PDA.
+
+268
+00:47:27,268 --> 00:47:27,507
+Okay.
+
+269
+00:47:31,155 --> 00:47:34,375
+D, deterministic PDA.
+
+270
+00:47:40,179 --> 00:47:49,559
+And so I think he's making a difference between those two now.
+
+271
+00:47:51,659 --> 00:47:58,559
+Pushdown automata, normally they are non-deterministic, the way we learned.
+
+272
+00:47:58,559 --> 00:48:01,399
+So they are NPDAs.
+
+273
+00:48:02,079 --> 00:48:07,839
+The pushdown automata we learned are NPDAs.
+
+274
+00:48:09,427 --> 00:48:12,547
+So you can just read this as PDA.
+
+275
+00:48:16,007 --> 00:48:24,167
+Now, what was the thing we were discussing?
+
+276
+00:48:28,340 --> 00:48:32,539
+We have context-free language, L1.
+
+277
+00:48:37,268 --> 00:48:42,348
+Context-free, that means there is a machine M1.
+
+278
+00:48:43,348 --> 00:48:50,408
+There is a pushdown automata that accepts this language.
+
+279
+00:48:51,348 --> 00:48:59,988
+And there is a language L2, and that is regular, which means there is a machine M2.
+
+280
+00:49:01,811 --> 00:49:27,115
+bu
+
+281
+00:49:28,755 --> 00:49:36,436
+And we will see that M simulates these M1 and M2 in parallel.
+
+282
+00:49:37,556 --> 00:49:38,115
+In parallel.
+
+283
+00:49:40,755 --> 00:49:54,675
+In a way, by constructing this pushdown automata, we will prove that this intersection is context-free.
+
+284
+00:49:55,219 --> 00:49:58,619
+We will do a proof by construction.
+
+285
+00:50:00,479 --> 00:50:15,119
+Because context-free languages have pushdown automata that accepts them or context-free grammars that generate them.
+
+286
+00:50:16,340 --> 00:50:22,820
+And in this case, instead of grammars, we will use pushdown automata.
+
+287
+00:50:23,460 --> 00:50:26,260
+Obviously, probably it's much simpler.
+
+288
+00:50:27,400 --> 00:50:36,519
+So we will construct this pushdown automata that will simulate these two.
+
+289
+00:50:36,519 --> 00:50:38,519
+And...
+
+290
+00:50:46,931 --> 00:51:00,471
+Pushdown automata, if we have in the original Pushdown automata, we have transitions like this.
+
+291
+00:51:00,931 --> 00:51:06,231
+So from Q1 to Q2, we transition.
+
+292
+00:51:07,051 --> 00:51:14,471
+If we read an A, symbol A from the input, and if...
+
+293
+00:51:14,867 --> 00:51:16,947
+The top of the stack is B.
+
+294
+00:51:18,047 --> 00:51:21,407
+We pop that and we push C.
+
+295
+00:51:22,507 --> 00:51:22,667
+Right?
+
+296
+00:51:24,727 --> 00:51:26,407
+And in the DFA,
+
+297
+00:51:30,407 --> 00:51:36,727
+we move from P1 to P2 if we read A.
+
+298
+00:51:37,427 --> 00:51:37,667
+Right?
+
+299
+00:51:38,547 --> 00:51:38,947
+So,
+
+300
+00:51:40,724 --> 00:51:57,384
+These transitions are merged into this transition where now we will have a pushdown automata state that represents Q1 and P1 together.
+
+301
+00:51:58,384 --> 00:52:04,124
+From that, we will transition to Q2, P2.
+
+302
+00:52:05,588 --> 00:52:19,276
+ve bu süreçte bu süreçte bu süreçte bu süreçte bu süreçte bu süreçte bu süreçte bu süreçte bu süreçte bu süreçte bu süreçte bu süreçte bu süreçte bu süreçte bu süreçte bu süreçte bu süreçte bu süreçte bu süreçte bu süreçte bu süreçte bu süreçte bu süreçte bu süreçte bu süreçte bu süreçte bu süreçte bu süreçte bu süreçte bu süreçte bu süreçte bu süreçte bu süreçte bu süreçte bu süreçte bu süreçte bu süreçte bu süreçte bu süreçte bu süreçte bu süreçte bu süreçte bu süreçte bu süreçte bu sü
+
+303
+00:52:22,483 --> 00:52:30,264
+Now, also, in addition, we need to do this.
+
+304
+00:52:31,443 --> 00:52:38,384
+If there is a non-deterministic transition like this without reading anything,
+
+305
+00:52:40,523 --> 00:52:46,003
+in pushdown automata, we transition from Q1 to Q2.
+
+306
+00:52:47,539 --> 00:52:50,920
+By copying B and pushing C.
+
+307
+00:52:53,139 --> 00:53:02,679
+And in DFA's, for each P1, I think, this is something new also for me.
+
+308
+00:53:02,859 --> 00:53:08,759
+I am just learning with you in a way.
+
+309
+00:53:12,059 --> 00:53:14,599
+So what happens?
+
+310
+00:53:16,019 --> 00:53:19,239
+We are adding this new transition again.
+
+311
+00:53:20,799 --> 00:53:25,859
+From Q1, Q1 to Q2, P2.
+
+312
+00:53:28,279 --> 00:53:35,779
+And again, transition rule comes directly from the pushdown automata.
+
+313
+00:53:39,476 --> 00:53:54,296
+And the initial states, now we are merging these initial states into a new initial state called Q0, P0.
+
+314
+00:54:04,692 --> 00:54:14,072
+Non-deterministic pushdown automata, we have a final state Q1, let's say.
+
+315
+00:54:15,652 --> 00:54:26,371
+And for each of the final states of DFA, we are adding new final states, Q1, P1, Q2, P2.
+
+316
+00:54:33,235 --> 00:54:33,596
+Okay.
+
+317
+00:54:35,475 --> 00:54:38,295
+And that's it, obviously.
+
+318
+00:54:38,535 --> 00:54:41,315
+So, seems like this is it.
+
+319
+00:54:41,875 --> 00:54:43,335
+An example is coming.
+
+320
+00:54:44,556 --> 00:54:46,355
+Let's look at that example.
+
+321
+00:54:48,915 --> 00:54:52,755
+So, what are our examples?
+
+322
+00:54:56,695 --> 00:54:58,235
+Example L1.
+
+323
+00:55:00,659 --> 00:55:10,820
+is W and W2, so concatenation of these sub-strings.
+
+324
+00:55:10,820 --> 00:55:22,500
+And the requirement is number of elements in sub-string1 is same with sub-string2.
+
+325
+00:55:27,539 --> 00:55:33,399
+AB star, W2 comes CD star.
+
+326
+00:55:35,879 --> 00:55:38,279
+So this is context-free, it says.
+
+327
+00:55:38,539 --> 00:55:46,500
+Since it's a context-free, there must be a pushdown automata that accepts this language.
+
+328
+00:55:47,439 --> 00:55:54,079
+And they directly give the language, give the pushdown automata.
+
+329
+00:55:54,771 --> 00:56:02,771
+So, we all, we have a lot of null transitions here, right?
+
+330
+00:56:03,471 --> 00:56:11,851
+From Q0, which is except, we have a null transition, another null transition, another null transition.
+
+331
+00:56:21,876 --> 00:56:27,796
+As we read A's or B's, we are pushing 1's to the stack.
+
+332
+00:56:29,176 --> 00:56:38,176
+And in Q2, as we read C's and D's from the input, we pop those 1's.
+
+333
+00:56:39,656 --> 00:56:49,772
+And if the number of A's and B's is equal to number of C's and D's, we would be...
+
+334
+00:56:50,324 --> 00:57:00,483
+Hopping all the ones we pushed, at the end, if the numbers are same, there will be nothing on the stack, right?
+
+335
+00:57:01,224 --> 00:57:12,864
+So, this transition will happen and we will reach to Q3.
+
+336
+00:57:13,556 --> 00:57:15,255
+Hocam, bir soru sorabilir miyim?
+
+337
+00:57:15,576 --> 00:57:16,315
+Evet, buyuruyorum.
+
+338
+00:57:17,455 --> 00:57:26,635
+Q2'den Q3'e geçince orada push edilen değerin dolar bulması gerekiyor ama konuna ulaştığımızı görmemiz için.
+
+339
+00:57:30,324 --> 00:57:34,324
+Evet, yani bu NPD'yi...
+
+340
+00:57:40,980 --> 00:57:46,519
+Evet, şimdi ben şüpheye düştüm. Acaba NPD, PDA'den farklı bir şey mi?
+
+341
+00:57:52,532 --> 00:58:12,532
+Bir ara verelim. Bu arada ben bir kitaba falan bakayım, farklı bir şeyine. Sonra devam edelim buna. Bir on beş dakika ara verelim. Saat kaç? On, on geçiye kadar falan bir ara verelim. Şey de olabiliyor, yani...
+
+342
+00:58:13,043 --> 00:58:38,603
+Doları ihmal etmiş de olabilir. Yani yazmamış falan olabilir ama haklısın normalde bir dolar olması gerekiyordu. Hatta ufak bir şeyle deneyebiliriz de. Bir A ve C ile deneyebiliriz. Çalışıyorum diye. Ona bir bakalım. Şimdi bir ara verelim arkadaşlar.
+
+343
+01:16:46,963 --> 01:16:49,003
+Arkadaşlar, nerefalar sizin geliyor mu?
+
+344
+01:16:59,188 --> 01:17:00,208
+Geliyor hocam sesiniz.
+
+345
+01:17:00,908 --> 01:17:01,648
+Tamam, sağ olun.
+
+346
+01:17:06,355 --> 01:17:32,775
+Şimdi arada ben kitaba baktım hatta. İki kitaba baktım. NPD diye bir şey geçmiyor her iki kitapta da. DPD diye bir şey var. Ditoralistik kuştağın automata diye ayrı bir alt kümesi var kuştağın automataların. Dersimizi onları henüz görmedik.
+
+347
+01:17:34,003 --> 01:17:57,324
+Normalde de göstermiyorduk yani bu ders kapsamında. İnternete de hızlı bir arama motorlarında da arama yaptım. N, P, D, A geçtiği yerlerde D, P, D, A da geçiyor. Ayrım için kullanmışlar. Yani N, P, D, A bildiğimiz, bizim bildiğimiz P, D, A.
+
+348
+01:17:58,996 --> 01:18:01,695
+D, PDA da işte farklı bir çeşidi.
+
+349
+01:18:03,675 --> 01:18:10,296
+Hocam, şey amacında mı yani? Hani PDA'lar zaten non-deterministik, bir de deterministik göreceğiz, o ikisini ayıralım gibi bir şey.
+
+350
+01:18:10,296 --> 01:18:22,235
+Evet, evet, öyle. Yani deterministik'i biz görmedik ama bu slide'larda var. Sizinle paylaştığım, yani slide'ların hepsini yapmıyorum, bazılarını atlıyorum.
+
+351
+01:18:25,524 --> 01:18:42,264
+Şurada mesela 139 diye geçiyor, D, P, D, A. Ondan farkını göstermek için esasen N, P, D, A. Diye düşünüyorum.
+
+352
+01:18:43,644 --> 01:18:47,324
+En son arkadaşımızın sorduğu soruya da katılıyorum.
+
+353
+01:18:52,020 --> 01:19:16,020
+Yine şunlar gibiydi. Fakat böyle olursa yanlış çalışıyor. Mesela ben bunu denedim. Sadece A gönderdim bir tane inputtan. Q3'e ulaşıyor. Dolayısıyla sadece A'yı kabul ediyor. Halbuki bu dil ne diyor?
+
+354
+01:19:17,587 --> 01:19:35,807
+AB'lerin toplamıyla CD'lerin toplamı eşit olmalı diyor. Dolayısıyla burada hakikaten bir yanlışlık vardır sanırım. Orayı düzelteceğiz şimdi. Düzeltelim. Bir denklem ekleyelim.
+
+355
+01:19:46,644 --> 01:19:49,444
+Nasıl olacak? Lambda olacak.
+
+356
+01:19:51,524 --> 01:19:52,004
+Dolar.
+
+357
+01:19:57,235 --> 01:19:59,195
+Böyle değil miydi tu işareti?
+
+358
+01:19:59,636 --> 01:20:00,195
+Bu otomu.
+
+359
+01:20:02,335 --> 01:20:04,076
+Mesela normal bir şey yapayım.
+
+360
+01:20:07,475 --> 01:20:09,395
+Dulaş.
+
+361
+01:20:17,363 --> 01:20:20,683
+Evet. Yani bu şekilde olduğu zaman çalışıyor.
+
+362
+01:20:26,100 --> 01:20:35,120
+Evet, ne diyor? Bunu diyor farklı formatta kaydet diyor. Peki. File save us.
+
+363
+01:20:44,083 --> 01:20:46,083
+HPTX istiyor.
+
+364
+01:20:48,703 --> 01:20:49,244
+Bu da
+
+365
+01:20:49,244 --> 01:20:51,023
+SV
+
+366
+01:21:07,028 --> 01:21:11,528
+Burada da şimdi şu PPT'yi de yok edelim ki kafamız karışmasın.
+
+367
+01:21:19,923 --> 01:21:26,123
+Tabii, slide'ın geri kalanlarını da toparlamak gerekiyor. Hem bakalım, hem toparlayalım.
+
+368
+01:21:27,283 --> 01:21:37,623
+So, I think there is a mistake here. So, this last transition should be like this, which I've seen.
+
+369
+01:21:38,843 --> 01:21:44,363
+The stuck special symbol to the transition.
+
+370
+01:21:45,555 --> 01:21:51,435
+So, this is NPDA, or we can just say PDA in this case.
+
+371
+01:21:56,467 --> 01:21:57,087
+No.
+
+372
+01:22:00,756 --> 01:22:04,576
+L2, remember what was our original discussion?
+
+373
+01:22:06,296 --> 01:22:09,355
+We are talking about this.
+
+374
+01:22:11,036 --> 01:22:19,435
+So if L1 is a context-free language and L2 is a regular language, their intersection is context-free.
+
+375
+01:22:20,016 --> 01:22:22,036
+That's what we are discussing now.
+
+376
+01:22:23,256 --> 01:22:26,656
+And we learned how to create L.
+
+377
+01:22:27,155 --> 01:22:33,935
+pushdown automata, an under term is pushdown automata, let me simulate both.
+
+378
+01:22:35,395 --> 01:22:40,595
+And as an example, sorry, let me add this N here.
+
+379
+01:22:41,695 --> 01:22:52,115
+So as an example, we have this L1 language and there is a pushdown automata for it like this.
+
+380
+01:22:55,956 --> 01:23:02,036
+This is a regular language. It just says some number of A's and C's, right?
+
+381
+01:23:03,675 --> 01:23:12,956
+Very simple. It's a regular language. So we have a DFA for it. This is the graph of the DFA.
+
+382
+01:23:14,956 --> 01:23:18,636
+Now, intersection.
+
+383
+01:23:20,636 --> 01:23:21,155
+Intersection.
+
+384
+01:23:22,036 --> 01:23:24,155
+What's the intersection for these two?
+
+385
+01:23:29,155 --> 01:23:30,115
+Let's see.
+
+386
+01:23:39,699 --> 01:23:49,219
+This says number of A's and C's should be, so intersection means it should be in both sets, right?
+
+387
+01:23:49,340 --> 01:23:57,479
+So intersection, the elements of the intersection should conform both patterns.
+
+388
+01:23:58,760 --> 01:24:03,000
+So does this conform? Yes. Why?
+
+389
+01:24:07,923 --> 01:24:08,923
+Sorry.
+
+390
+01:24:08,923 --> 01:24:20,923
+This comes forms to the L2 because it just says any string from anything that has A and C.
+
+391
+01:24:20,923 --> 01:24:29,923
+And context-free language says number of A's and B's should be a number of C's and D's.
+
+392
+01:24:34,355 --> 01:24:43,036
+In the regular language, we don't see, we cannot have B's and D's.
+
+393
+01:24:44,355 --> 01:24:49,675
+So in a way, we get rid of B's and D's when we have the intersection.
+
+394
+01:24:51,015 --> 01:24:58,695
+And since number of A's and B's must be same with number of C's and B's,
+
+395
+01:24:59,956 --> 01:25:03,355
+We get to number of A's equal to number of C's.
+
+396
+01:25:04,355 --> 01:25:07,836
+After getting B's and B's, getting rid of B's and B's.
+
+397
+01:25:08,595 --> 01:25:13,476
+So this language, and we know that this is context-free.
+
+398
+01:25:13,476 --> 01:25:15,476
+This was more examples.
+
+399
+01:25:16,855 --> 01:25:23,636
+But let's see how we constructed this.
+
+400
+01:25:26,292 --> 01:25:30,692
+Remember, we only had P0 in regular language.
+
+401
+01:25:32,311 --> 01:25:37,172
+So, it added P0 everywhere.
+
+402
+01:25:39,972 --> 01:25:45,992
+And again, this should be, let's see, I think this way.
+
+403
+01:26:07,283 --> 01:26:07,703
+Okay.
+
+404
+01:26:10,023 --> 01:26:21,043
+So this is easier if you have a paper and if you see both L1 and L2's graphs together, it's easier to draw.
+
+405
+01:26:21,163 --> 01:26:29,263
+But at the end, we see that we saw an example that this intersection is context-free.
+
+406
+01:26:51,060 --> 01:27:04,479
+Okay, let's continue. So in general, we can create a new pushdown automata that simulates both M1 and M2.
+
+407
+01:27:05,860 --> 01:27:15,120
+And it accepts a string if and only if M1 accepts a string and M2 accepts the string.
+
+408
+01:27:18,868 --> 01:27:25,568
+Since we can create such an M, that means this intersection is context-free.
+
+409
+01:27:27,087 --> 01:27:35,807
+Now, why is this? Why did we learn this? This is called regular closure of context-free languages, I think.
+
+410
+01:27:37,288 --> 01:27:39,688
+Let's look at an example.
+
+411
+01:27:41,779 --> 01:28:03,307
+Bu, bu
+
+412
+01:28:03,891 --> 01:28:09,631
+We can use this to prove some languages are context-free.
+
+413
+01:28:12,771 --> 01:28:19,072
+For example, it says that prove that L is context-free.
+
+414
+01:28:19,271 --> 01:28:19,931
+What is L?
+
+415
+01:28:21,091 --> 01:28:26,031
+A and B has same number of elements or symbols.
+
+416
+01:28:26,031 --> 01:28:28,371
+Number of A is number of B same.
+
+417
+01:28:30,880 --> 01:28:38,700
+is not equal to 100, and n is larger than or equal to 0.
+
+418
+01:28:39,780 --> 01:28:45,840
+So this is a subset of this,
+
+419
+01:28:46,720 --> 01:28:55,539
+subset of this context-free language when we don't have a condition on n.
+
+420
+01:28:56,435 --> 01:28:59,435
+A condition like this.
+
+421
+01:29:04,435 --> 01:29:09,435
+So we know that if you don't have that condition
+
+422
+01:29:09,435 --> 01:29:14,435
+that n cannot be 100, then that's context-free.
+
+423
+01:29:15,435 --> 01:29:22,731
+Now, the only missing part there is
+
+424
+01:29:23,832 --> 01:29:26,531
+So,
+
+425
+01:29:23,347 --> 01:29:25,708
+A to the 100 and B to the 100.
+
+426
+01:29:27,228 --> 01:29:30,608
+And A to the 100, B to the 100 is regular.
+
+427
+01:29:33,307 --> 01:29:39,528
+Now, its complement, what is its complement?
+
+428
+01:29:39,528 --> 01:29:46,028
+And all streams that has A and B.
+
+429
+01:29:48,372 --> 01:29:54,032
+Minus, so except this A to the 100, P to the 100.
+
+430
+01:29:54,971 --> 01:30:00,112
+Now, regular languages are closed under complement.
+
+431
+01:30:01,252 --> 01:30:04,311
+So, this is regular.
+
+432
+01:30:06,512 --> 01:30:10,432
+Now, we have this context-free language.
+
+433
+01:30:11,012 --> 01:30:12,971
+We have this regular language.
+
+434
+01:30:14,195 --> 01:30:38,988
+ve bu şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde
+
+435
+01:30:40,243 --> 01:31:06,443
+or original language is context-free. Nice. So this can be used for proving that things are context-free. Now, another application, and we prove that number of A's, number of B's, number of C's, all three,
+
+436
+01:31:07,155 --> 01:31:11,175
+must be equals in a string.
+
+437
+01:31:11,315 --> 01:31:15,315
+This is not context-free, it says, and we will need to prove that.
+
+438
+01:31:16,456 --> 01:31:21,296
+So let's see how we can use regular closure there.
+
+439
+01:31:24,175 --> 01:31:26,335
+So let's see.
+
+440
+01:31:29,095 --> 01:31:30,296
+So...
+
+441
+01:31:30,804 --> 01:31:50,364
+We start with if this is context-free. So we will use proof by contradiction. Right? So we will assume L is context-free. Now since L is context-free, by assumption,
+
+442
+01:31:54,771 --> 01:32:00,291
+We are taking the intersection of it with this regular language.
+
+443
+01:32:01,271 --> 01:32:06,971
+The regular language is A star, B star, C star.
+
+444
+01:32:07,091 --> 01:32:13,412
+So this has any number of A's, any number of B's, and any number of C's, right?
+
+445
+01:32:13,471 --> 01:32:14,311
+And this is regular.
+
+446
+01:32:16,451 --> 01:32:17,091
+Now,
+
+447
+01:32:20,948 --> 01:32:26,608
+Then this intersection should give us a context-free language, right?
+
+448
+01:32:27,728 --> 01:32:33,448
+But this intersection, this is A to the N, B to the N, C to the N, is not context-free.
+
+449
+01:32:35,847 --> 01:32:40,528
+So, we reached to a contradiction.
+
+450
+01:32:44,051 --> 01:32:50,711
+ve say that, so that our original assumption that ALICE'i kontext-free was wrong.
+
+451
+01:32:56,979 --> 01:33:13,819
+So in a way you can use this idea for proving a context-free language is context-free or a language is not context-free. You can use it for both purposes.
+
+452
+01:33:19,347 --> 01:33:33,128
+Okay, so how are we going? Where are we? So context-free properties, we just learned that.
+
+453
+01:33:35,268 --> 01:33:42,268
+Then we have regular grammars and DPDAs and then Turing.
+
+454
+01:33:44,979 --> 01:33:47,479
+So let's look at regular grammars.
+
+455
+01:33:57,684 --> 01:34:01,863
+Okay, so linear grammars.
+
+456
+01:34:03,923 --> 01:34:06,783
+Do you have any questions up to this point?
+
+457
+01:34:12,307 --> 01:34:30,988
+Okay, before this, I will take a break. In the previous break, I didn't take a break. So, I need some now. Let's take a 10-minute break. That will be 10.40. Okay, at 10.40, we will continue.
+
+458
+01:46:13,747 --> 01:46:16,227
+Arkadaşlar, merhabalar. Sesim geliyor mu?
+
+459
+01:46:22,323 --> 01:46:23,063
+Geliyor hocam.
+
+460
+01:46:23,783 --> 01:46:24,483
+Peki sağ olun.
+
+461
+01:46:36,564 --> 01:46:46,824
+Evet, regular. So, we will start to regular grammars. Not context-free, but regular.
+
+462
+01:46:49,623 --> 01:46:54,264
+For that, we will start with linear grammars.
+
+463
+01:46:58,387 --> 01:46:59,467
+What are those?
+
+464
+01:47:01,907 --> 01:47:08,768
+Lideler grammars are grammars with at most one variable at the right side of a production.
+
+465
+01:47:09,368 --> 01:47:13,327
+So how many variables here?
+
+466
+01:47:14,108 --> 01:47:14,627
+One.
+
+467
+01:47:16,207 --> 01:47:23,868
+So on the right hand side, there can be maximum one.
+
+468
+01:47:25,587 --> 01:47:52,399
+Biri
+
+469
+01:47:52,399 --> 01:47:56,960
+So here, this is nonlinear, right? We have two variables, right?
+
+470
+01:48:02,292 --> 01:48:12,592
+And this, what is this? This gives language that number of A's and number of B's in that language is same.
+
+471
+01:48:16,932 --> 01:48:23,592
+And is this linear? Yes, because you only have...
+
+472
+01:48:26,963 --> 01:48:32,163
+We have maximum one variables here, maximum one variables here.
+
+473
+01:48:33,884 --> 01:48:38,904
+There's just one, just one. Zero variables here, one variable here.
+
+474
+01:48:40,603 --> 01:48:47,823
+So, this is grammar for this language, i to the end, p to the end.
+
+475
+01:48:49,023 --> 01:48:50,724
+And again, it is linear.
+
+476
+01:48:55,188 --> 01:49:01,387
+Now, linear grammars can be divided into right or left linear grammars.
+
+477
+01:49:02,467 --> 01:49:15,407
+And in a right linear grammar, that variable is on the right side of the right.
+
+478
+01:49:15,407 --> 01:49:18,768
+So it's the right of the right.
+
+479
+01:49:19,728 --> 01:49:19,948
+So.
+
+480
+01:49:20,787 --> 01:49:23,167
+Or, there will be no variables.
+
+481
+01:49:24,167 --> 01:49:33,387
+For example, here, this is right linear because we only have one variable, so it's linear.
+
+482
+01:49:33,387 --> 01:49:42,387
+It's a right linear because it's on the right side of this rule.
+
+483
+01:49:46,484 --> 01:49:56,764
+Again, those are linear grammars, but variable, all the variables are on the left of the production.
+
+484
+01:49:58,944 --> 01:50:07,604
+So here, an example, A is on the left, A is on the left.
+
+485
+01:50:08,804 --> 01:50:12,764
+B, we can assume, we can say this is...
+
+486
+01:50:13,011 --> 01:50:18,231
+On the left of null, and this is terminal.
+
+487
+01:50:18,371 --> 01:50:20,731
+So this is a left linear grammar.
+
+488
+01:50:22,912 --> 01:50:28,711
+Now, we just learned linear grammars.
+
+489
+01:50:29,072 --> 01:50:32,131
+Now, what are regular grammars?
+
+490
+01:50:34,431 --> 01:50:37,804
+A regular grammar is any...
+
+491
+01:50:38,003 --> 01:50:41,783
+right-lineers or left-lineers, granks.
+
+492
+01:50:48,851 --> 01:51:02,851
+Some examples are, here we have a right linear grammar, here we have a left linear grammar, so these are regular grammars.
+
+493
+01:51:05,351 --> 01:51:11,931
+Now, regular grammars generate regular languages.
+
+494
+01:51:14,323 --> 01:51:17,243
+Examples, for example, here.
+
+495
+01:51:18,384 --> 01:51:18,703
+Sorry.
+
+496
+01:51:20,443 --> 01:51:24,563
+So this grammar, this is a right linear grammar.
+
+497
+01:51:25,663 --> 01:51:32,563
+And this production rule, you can apply it as much as you want.
+
+498
+01:51:33,283 --> 01:51:37,523
+And you will get this A, B, star part, right?
+
+499
+01:51:38,292 --> 01:51:44,231
+At the end, you can get rid of last S with this A.
+
+500
+01:51:44,932 --> 01:51:47,772
+So you will have another A here, right?
+
+501
+01:51:49,872 --> 01:51:55,992
+And here, again, this is a left linear grammar.
+
+502
+01:51:57,052 --> 01:52:04,231
+And using this part, yeah, this part,
+
+503
+01:52:04,703 --> 01:52:11,683
+You can generate as much A beams as you want.
+
+504
+01:52:12,983 --> 01:52:16,403
+Then you can create a beam.
+
+505
+01:52:20,003 --> 01:52:21,163
+Right?
+
+506
+01:52:22,643 --> 01:52:27,563
+And then you can turn it a beam than A.
+
+507
+01:52:32,595 --> 01:52:33,876
+So, this is an example.
+
+508
+01:52:38,615 --> 01:52:42,675
+So, regular grammars generate regular languages.
+
+509
+01:52:42,675 --> 01:52:45,115
+So, this is important.
+
+510
+01:52:46,876 --> 01:52:49,675
+And the book has...
+
+511
+01:52:49,675 --> 01:52:59,876
+So, the book proves this theorem.
+
+512
+01:53:00,724 --> 01:53:02,984
+Bye.
+
+513
+01:53:06,804 --> 01:53:19,584
+We first, any regular grammar generates a regular language, and then any regular language is generated by a regular grammar.
+
+514
+01:53:20,584 --> 01:53:26,344
+But when we prove equivalence of sets, we have to do that.
+
+515
+01:53:28,264 --> 01:53:30,904
+So let's look at the first part.
+
+516
+01:53:35,380 --> 01:53:45,219
+So, languages generated by regular languages, regular grammars, the subset of set of regular languages.
+
+517
+01:53:49,140 --> 01:53:52,159
+We will take the case of right linear grammar.
+
+518
+01:53:53,640 --> 01:53:56,940
+So let's say G is a right linear grammar.
+
+519
+01:53:58,280 --> 01:54:02,640
+We need to prove that language of G is regular.
+
+520
+01:54:03,819 --> 01:54:05,979
+And how will we do that?
+
+521
+01:54:07,039 --> 01:54:10,360
+We will construct an NFA, M.
+
+522
+01:54:14,163 --> 01:54:14,804
+Ah,
+
+523
+01:54:19,380 --> 01:54:26,000
+such that the language of the NFA will be equal to the language of grammar.
+
+524
+01:54:29,039 --> 01:54:32,799
+And NFAs accept regular languages.
+
+525
+01:54:33,799 --> 01:54:41,680
+So that means, that will mean that the language of right linear grammar is regular.
+
+526
+01:54:47,315 --> 01:54:50,456
+So, let's start with this example.
+
+527
+01:54:56,307 --> 01:55:01,247
+Here we have this right linear grammar.
+
+528
+01:55:03,548 --> 01:55:10,347
+Variables are on the right, and there are only one variable on each production.
+
+529
+01:55:11,347 --> 01:55:13,688
+So it's right linear.
+
+530
+01:55:14,688 --> 01:55:20,288
+Now, we will construct NNNFAY, M.
+
+531
+01:55:21,587 --> 01:55:29,188
+So for each grammar variable, we write a state.
+
+532
+01:55:29,188 --> 01:55:33,087
+Remember, we have variables S.
+
+533
+01:55:34,087 --> 01:55:37,367
+So we have an S state.
+
+534
+01:55:37,987 --> 01:55:40,527
+We have variable A.
+
+535
+01:55:41,367 --> 01:55:44,827
+And for B, we have a B.
+
+536
+01:55:44,827 --> 01:55:46,367
+And additionally,
+
+537
+01:55:47,060 --> 01:55:53,940
+We add a special finance state, so an additional state.
+
+538
+01:56:01,971 --> 01:56:08,771
+Now, for each production rule, we add an edge to the graph.
+
+539
+01:56:09,811 --> 01:56:15,211
+So, S produces AA, right?
+
+540
+01:56:15,371 --> 01:56:19,011
+So, this, you can even read this, right?
+
+541
+01:56:19,411 --> 01:56:22,731
+S produces AA, right?
+
+542
+01:56:23,612 --> 01:56:26,091
+And you add an edge for that.
+
+543
+01:56:27,764 --> 01:56:30,683
+And S produces B.
+
+544
+01:56:32,203 --> 01:56:36,163
+Here, there is nothing in front of B.
+
+545
+01:56:37,123 --> 01:56:41,023
+So, we are adding a null transition.
+
+546
+01:56:43,363 --> 01:56:48,363
+And A produces AAB.
+
+547
+01:56:50,163 --> 01:56:55,103
+Now, for that, we are adding this.
+
+548
+01:56:55,743 --> 01:57:22,411
+bu
+
+549
+01:57:23,123 --> 01:57:29,784
+B, B terminates with A.
+
+550
+01:57:30,423 --> 01:57:35,684
+So, the terminal goes to final state.
+
+551
+01:57:36,564 --> 01:57:36,784
+Right?
+
+552
+01:57:37,703 --> 01:57:38,524
+That's the idea.
+
+553
+01:57:47,891 --> 01:57:53,371
+There's an example of producing three A's, B and A.
+
+554
+01:57:53,371 --> 01:58:14,491
+So you can kind of first use AA, then replace that A with AAB, and then replace that B with BB, and then replace that B with A.
+
+555
+01:58:15,475 --> 01:58:21,015
+Right? And we can kind of see how this works here.
+
+556
+01:58:24,315 --> 01:58:33,695
+So, the NFA, when it reads the first A, what will happen?
+
+557
+01:58:33,695 --> 01:58:39,255
+We have first S as a state.
+
+558
+01:58:40,243 --> 01:58:46,363
+And because of this null transition, B is also active.
+
+559
+01:58:47,884 --> 01:58:50,003
+And we are reading A.
+
+560
+01:58:54,484 --> 01:58:59,804
+Now, S can read A and it will give an A.
+
+561
+01:59:04,979 --> 01:59:07,420
+B, can read B and A?
+
+562
+01:59:07,720 --> 01:59:08,079
+Yes.
+
+563
+01:59:08,899 --> 01:59:14,140
+B will give the final state.
+
+564
+01:59:14,579 --> 01:59:16,420
+I will just write F there.
+
+565
+01:59:19,239 --> 01:59:22,680
+And this is accepting state, right?
+
+566
+01:59:24,680 --> 01:59:31,420
+So just an A is, just a single A should be okay.
+
+567
+01:59:32,564 --> 01:59:39,844
+Now, these are both active. When reading the next A, what will happen?
+
+568
+01:59:44,948 --> 01:59:52,948
+This A can read, and let's call this new, let's call this Q.
+
+569
+01:59:53,828 --> 02:00:10,627
+So when reading this A, A will transition to Q, and this final state cannot accept A, so it dies here.
+
+570
+02:00:12,659 --> 02:00:18,159
+So after the second A, we only have this Q active.
+
+571
+02:00:19,779 --> 02:00:22,520
+When we read next A,
+
+572
+02:00:27,188 --> 02:00:29,427
+Cumulü transition to B.
+
+573
+02:00:37,011 --> 02:00:45,351
+And now when we read next B, B can read B and returns another B.
+
+574
+02:00:45,351 --> 02:00:47,711
+So we will have B.
+
+575
+02:00:53,876 --> 02:01:00,815
+And when we read A, B transitions to F, or final state.
+
+576
+02:01:01,596 --> 02:01:05,376
+And that's an accepting state, so we'll accept.
+
+577
+02:01:07,195 --> 02:01:15,636
+So this is how the NFA will work when it reads AAABA.
+
+578
+02:01:22,260 --> 02:01:29,300
+Okay, so what does this language, what is the language these two give?
+
+579
+02:01:33,300 --> 02:01:36,739
+The language is given as a regular expression.
+
+580
+02:01:38,019 --> 02:01:47,720
+So either we have three A's, any number of B's, and a final A, or
+
+581
+02:01:48,692 --> 02:01:54,492
+We will have any number of B's and a final A. So that's the language.
+
+582
+02:01:58,752 --> 02:02:13,492
+So in general, if we have a right linear grammar G, and if this grammar has variables V0, V2, VI, etc., V1, V2, etc.,
+
+583
+02:02:16,467 --> 02:02:43,708
+And if we have productions like vi produces some terminals, some symbols, then some variable vj, or vi produces only terminals, what we do is for each variable vj,
+
+584
+02:02:44,243 --> 02:02:47,663
+We create a state.
+
+585
+02:02:48,943 --> 02:02:53,003
+And finally, we add a final accepting state.
+
+586
+02:02:54,823 --> 02:03:03,323
+And for each production, like VI produces some terminals than variable VJ,
+
+587
+02:03:04,443 --> 02:03:10,943
+we add these transitions and necessary intermediate nodes, like VI,
+
+588
+02:03:12,020 --> 02:03:20,940
+And symbol one, then symbol two, up to the last symbol.
+
+589
+02:03:22,720 --> 02:03:32,539
+We have these necessary states too, so that we kind of connect these, VI and VJ.
+
+590
+02:03:35,980 --> 02:03:37,539
+And if you have...
+
+591
+02:03:38,579 --> 02:03:49,219
+No variables on the terminals, that means the end must be acceptance state.
+
+592
+02:03:51,500 --> 02:03:55,939
+And the resulting NFA looks something like that.
+
+593
+02:03:57,939 --> 02:04:06,139
+And so with this procedure, we are able to create an NFA.
+
+594
+02:04:06,644 --> 02:04:09,923
+That accepts this language.
+
+595
+02:04:12,184 --> 02:04:13,783
+That means
+
+596
+02:04:13,783 --> 02:04:18,243
+These languages are regular.
+
+597
+02:04:21,064 --> 02:04:22,104
+Now,
+
+598
+02:04:23,104 --> 02:04:26,064
+The case of left linear grammars.
+
+599
+02:04:27,283 --> 02:04:27,684
+Now,
+
+600
+02:04:29,300 --> 02:04:42,539
+The idea here is, we already learned that right linear grammars, right linear grammars, give us regular languages.
+
+601
+02:04:43,840 --> 02:04:54,539
+So we want, we can kind of start from zero and do the same with left linear grammar or here the idea is,
+
+602
+02:04:57,043 --> 02:05:09,243
+For a given left linear grammar G, we can construct an equivalent right linear grammar G prime.
+
+603
+02:05:10,243 --> 02:05:19,404
+So we can convert any left linear grammar, any left linear grammar, to an equivalent right linear grammar.
+
+604
+02:05:24,564 --> 02:05:31,564
+ve bu
+
+605
+02:05:31,564 --> 02:05:34,564
+şimdi
+
+606
+02:05:34,564 --> 02:05:47,851
+birer
+
+607
+02:05:48,115 --> 02:05:57,895
+We have productions where there are no variables. Everything is like this. All productions are either of these.
+
+608
+02:05:59,335 --> 02:06:14,395
+Now, consider this G prime. Now, we are kind of inversing, reversing the order in this rule.
+
+609
+02:06:15,188 --> 02:06:23,528
+So, if A produces B, A1, A2, AK, now we are reversing that.
+
+610
+02:06:26,128 --> 02:06:26,708
+Right?
+
+611
+02:06:28,068 --> 02:06:30,968
+A1, A2, SLA, AK.
+
+612
+02:06:33,448 --> 02:06:39,807
+And again, in a way, we are reversing the string.
+
+613
+02:06:41,672 --> 02:06:45,672
+birer
+
+614
+02:06:41,460 --> 02:06:44,119
+this string and giving to be
+
+615
+02:06:51,636 --> 02:06:56,016
+And if we don't have any variables, again, we are doing the same.
+
+616
+02:06:57,436 --> 02:07:06,256
+We are adding a new rule in the reverse order.
+
+617
+02:07:06,576 --> 02:07:08,436
+Symbols are ordered.
+
+618
+02:07:12,936 --> 02:07:16,556
+So the thing is with this,
+
+619
+02:07:22,131 --> 02:07:31,831
+Language of this grammar, left, left grammar, what is called? Left linear grammar.
+
+620
+02:07:33,051 --> 02:07:40,351
+We can easily obtain a new grammar from it. It will be right linear.
+
+621
+02:07:41,431 --> 02:07:49,011
+And the new, the language of this new grammar will be reverse of the original language.
+
+622
+02:07:49,747 --> 02:07:56,947
+And remember, the reverse of a regular language was regular.
+
+623
+02:07:57,827 --> 02:08:02,307
+We just learned that in the first lecture.
+
+624
+02:08:03,547 --> 02:08:07,188
+The reverse of a regular, how do we say that?
+
+625
+02:08:07,707 --> 02:08:12,447
+Regular languages are closed under reverse operation.
+
+626
+02:08:18,907 --> 02:08:19,907
+birer
+
+627
+02:08:18,323 --> 02:08:21,243
+Bu yeni bir language is regular,
+
+628
+02:08:45,460 --> 02:08:53,000
+With this procedure, we learned, we kind of obtained NFA.
+
+629
+02:08:54,320 --> 02:09:04,400
+We saw that we can obtain NFA's for these linear, left linear or right linear languages.
+
+630
+02:09:10,131 --> 02:09:15,811
+Now, we need to continue and do the second part of the proof.
+
+631
+02:09:16,951 --> 02:09:27,171
+And that means a set of languages generated by regular grammars is a superset of regular languages.
+
+632
+02:09:28,171 --> 02:09:32,652
+So what that means is if you have a regular language L,
+
+633
+02:09:33,492 --> 02:09:41,212
+We should be able to create a left linear or right linear grammar from it.
+
+634
+02:09:47,188 --> 02:10:01,347
+So, to prove that, we will go from NFA, we will start with an NFAM, and from that, we will construct a grammar.
+
+635
+02:10:06,228 --> 02:10:07,228
+So,
+
+636
+02:10:13,460 --> 02:10:22,780
+Since L is regular, we want to see that any regular language have a left or right linear grammar.
+
+637
+02:10:24,980 --> 02:10:26,840
+So L is regular.
+
+638
+02:10:28,080 --> 02:10:31,200
+So L has an NFA M.
+
+639
+02:10:32,920 --> 02:10:39,060
+As an example, we have this M here.
+
+640
+02:10:42,100 --> 02:10:44,480
+And this is for this language.
+
+641
+02:10:45,080 --> 02:10:47,120
+So, N, A.
+
+642
+02:10:49,040 --> 02:10:51,460
+Then, any number of B's.
+
+643
+02:10:55,188 --> 02:10:59,948
+Then NNA and B, so A, B.
+
+644
+02:11:01,828 --> 02:11:09,967
+And then because of this loop here, we have this part.
+
+645
+02:11:10,967 --> 02:11:20,448
+So you can transition to Q1 and you can have any number of Bs, A, B.
+
+646
+02:11:20,927 --> 02:11:26,188
+ve bu
+
+647
+02:11:31,123 --> 02:11:35,563
+So, how can we convert this into a linear grammar?
+
+648
+02:11:37,363 --> 02:11:40,743
+We will convert this into a right linear grammar.
+
+649
+02:11:41,563 --> 02:11:54,903
+This will be, you can guess, we can guess that, this will be the inverse of what we did when we convert right linear grammars to NFA's, right?
+
+650
+02:11:55,563 --> 02:11:58,403
+Now we will do the inverse of what we did there.
+
+651
+02:11:58,836 --> 02:12:10,076
+So, for example, each of these states will be variable names, right?
+
+652
+02:12:10,776 --> 02:12:13,516
+Except this guy, right?
+
+653
+02:12:14,156 --> 02:12:16,736
+Except the final guy.
+
+654
+02:12:16,736 --> 02:12:23,236
+So, all variables will be Q0, Q1, and Q2.
+
+655
+02:12:24,083 --> 02:12:30,743
+Now, from Q0 to Q1, you can go this way, right?
+
+656
+02:12:32,264 --> 02:12:36,203
+So, read an input A and go to Q1.
+
+657
+02:12:36,663 --> 02:12:37,243
+Very simple.
+
+658
+02:12:38,184 --> 02:12:42,523
+Now, for each of these transitions, we add them.
+
+659
+02:12:43,823 --> 02:12:51,344
+For example, from Q1, you go to Q1 with a B, so the loop here, right?
+
+660
+02:12:53,140 --> 02:13:00,980
+And from Q1, you go to Q2 with A, this guy here, right?
+
+661
+02:13:04,260 --> 02:13:08,800
+And Q0, Q1, what is new here?
+
+662
+02:13:09,539 --> 02:13:10,500
+This Q2.
+
+663
+02:13:11,400 --> 02:13:14,960
+Q2, you go to Q3.
+
+664
+02:13:17,539 --> 02:13:19,960
+So they added Q3 too.
+
+665
+02:13:21,363 --> 02:13:26,583
+Ok, I am learning this tool with you.
+
+666
+02:13:28,203 --> 02:13:30,524
+This is kind of new for me.
+
+667
+02:13:31,323 --> 02:13:33,463
+And what are the new ones?
+
+668
+02:13:33,623 --> 02:13:34,184
+Let's see.
+
+669
+02:13:35,184 --> 02:13:36,884
+These two are new, right?
+
+670
+02:13:41,460 --> 02:13:50,800
+So, Q3, from Q3, you go to Q1 with null, so there is nothing in front, right?
+
+671
+02:13:50,800 --> 02:13:55,220
+And, hmm.
+
+672
+02:13:59,220 --> 02:14:00,019
+This one.
+
+673
+02:14:02,840 --> 02:14:03,579
+Q3
+
+674
+02:14:03,579 --> 02:14:08,079
+produces a null.
+
+675
+02:14:10,079 --> 02:14:10,679
+So
+
+676
+02:14:15,220 --> 02:14:54,028
+Evet.
+
+677
+02:14:51,828 --> 02:14:56,788
+What happens if we try to do a null removal?
+
+678
+02:14:58,568 --> 02:15:01,428
+On this null removal.
+
+679
+02:15:05,460 --> 02:15:07,360
+We want to remove this.
+
+680
+02:15:09,700 --> 02:15:15,920
+So we will find places where this Q3 has.
+
+681
+02:15:17,180 --> 02:15:22,780
+And we will put nulls there, right?
+
+682
+02:15:29,108 --> 02:15:34,907
+But the problem is here, from Q3 you can go to Q1.
+
+683
+02:15:38,579 --> 02:15:40,299
+But this is a unit production.
+
+684
+02:15:41,199 --> 02:15:44,199
+So we can get rid of unit productions too.
+
+685
+02:15:45,519 --> 02:15:45,839
+Right?
+
+686
+02:15:48,239 --> 02:15:56,179
+So let's try to get rid of this unit production first.
+
+687
+02:15:59,139 --> 02:16:02,659
+Q3 gives us Q1.
+
+688
+02:16:03,583 --> 02:16:07,743
+This doesn't change, doesn't change, doesn't change here.
+
+689
+02:16:10,043 --> 02:16:21,264
+Instead of Q, in addition to Q3, this should produce BQ1.
+
+690
+02:16:23,344 --> 02:16:24,264
+Right?
+
+691
+02:16:24,923 --> 02:16:28,983
+And now I can get rid of this unit production.
+
+692
+02:16:30,036 --> 02:16:49,835
+Doğru yapıyor muyum? Hani grameri NFA'ya çevirirken şu Q3 yoktu ya gramerde. Burada Q3'ü ekledi oraya. Ona biraz taktım. Şimdi onu yok etmeye çalışıyorum.
+
+693
+02:16:51,835 --> 02:16:55,835
+Hocam bu şekilde Q2'ni...
+
+694
+02:16:56,755 --> 02:17:00,935
+Q2'ye bir de B transition'u da eklemeni olabilirsin.
+
+695
+02:17:01,995 --> 02:17:03,855
+Şimdi daha oraya geleceğiz, evet.
+
+696
+02:17:04,315 --> 02:17:07,155
+Şimdi sadece şu unit production'ı kaldırdım.
+
+697
+02:17:09,675 --> 02:17:13,855
+Q3'ün Q1 ürettiği bilgisini siliyorum artık.
+
+698
+02:17:14,075 --> 02:17:18,095
+Çünkü Q3'lü sadece bura var, onu da buraya yazdım.
+
+699
+02:17:18,675 --> 02:17:18,895
+Değil mi?
+
+700
+02:17:19,572 --> 02:17:26,592
+Şimdi sizin dediğiniz gibi Q3'ün nal üretme bilgisini de yok etmek istiyorum.
+
+701
+02:17:27,492 --> 02:17:34,211
+Bunun için de şu Q3 yerine ne yazacağım? Bir B yazacağım değil mi?
+
+702
+02:17:35,211 --> 02:17:40,011
+Yani nal yazacağım. B nal, B eder. Bunu da sileceğim.
+
+703
+02:17:41,391 --> 02:17:44,932
+Artık sol tarafta hiç Q3 olmadığı için bunu da sileceğim.
+
+704
+02:17:47,412 --> 02:18:00,172
+Yani en sonda elde ettiğimiz grameri biraz daha basitleştirip tekrar bu Q3'ü de yok edebiliyoruz gibi görünüyor.
+
+705
+02:18:05,523 --> 02:18:21,123
+Mesela mantıklı mı bu? Q2'den 1B ile Q1'e gidebilirsin diyor. Q2, B ile Q2'e gidiyoruz ama null transition sayesinde Q1'e geliyoruz. Doğru.
+
+706
+02:18:24,243 --> 02:18:29,563
+Q2'den B ile terminal var. O da doğru. Yani
+
+707
+02:18:32,435 --> 02:18:42,135
+Şurayı iki adım daha fazla ekledi ama oluşan gramer birazcık daha büyük ama onu basitleştirebiliyoruz.
+
+708
+02:18:42,135 --> 02:18:43,975
+So in general.
+
+709
+02:18:48,915 --> 02:18:55,955
+For any transition like this, we add a production like this, right?
+
+710
+02:18:55,955 --> 02:19:00,775
+So the state becomes variable.
+
+711
+02:19:03,275 --> 02:19:08,115
+And what we read from the input will be a terminal.
+
+712
+02:19:10,260 --> 02:19:17,600
+And for each final state, for any final state, we add this null production.
+
+713
+02:19:20,159 --> 02:19:21,560
+And that's it.
+
+714
+02:19:23,159 --> 02:19:29,940
+So since G is a right linear grammar, G is also a regular grammar.
+
+715
+02:19:29,940 --> 02:19:37,520
+Okay, so notice that we are creating a right linear grammar, right?
+
+716
+02:19:39,156 --> 02:19:45,536
+Variables are on the right side, and there are at most one variable.
+
+717
+02:19:45,756 --> 02:19:47,816
+So this is a right linear grammar.
+
+718
+02:19:49,916 --> 02:19:56,716
+So this is regular.
+
+719
+02:19:56,716 --> 02:20:04,716
+So this way, by construction again, we proved that any...
+
+720
+02:20:06,227 --> 02:20:11,967
+Right linear grammar or left linear grammar is also a regular grammar.
+
+721
+02:20:11,967 --> 02:20:21,807
+So a set of right linear grammars is a subset of set of regular languages.
+
+722
+02:20:26,355 --> 02:20:28,515
+Any questions from this part?
+
+723
+02:20:33,523 --> 02:20:33,884
+Okay.
+
+724
+02:20:38,884 --> 02:20:43,423
+Let's look at the PDAs.
+
+725
+02:21:02,227 --> 02:21:05,387
+Let's give a 10-minutes break.
+
+726
+02:21:06,607 --> 02:21:09,347
+We will continue at 11.30.
+
+727
+02:21:18,036 --> 02:21:24,056
+10 dakika ara verelim. 11.30'da devam edeceğiz arkadaşlar.
+
+728
+02:35:16,979 --> 02:35:18,840
+Arkadaşlar, tekrar merhabalar.
+
+729
+02:35:27,379 --> 02:35:28,619
+Sesin geliyor herhalde.
+
+730
+02:35:30,059 --> 02:35:30,719
+Geliyor hocam.
+
+731
+02:35:39,476 --> 02:35:47,835
+So you will see a special case of pushdown automata.
+
+732
+02:35:47,835 --> 02:35:55,435
+It's called deterministic pushdown automata or DPDAs.
+
+733
+02:36:06,260 --> 02:36:14,260
+Transitions that include null, et cetera, are allowed.
+
+734
+02:36:14,799 --> 02:36:21,680
+But some transitions that are allowed in non-deterministic PDEs are not.
+
+735
+02:36:22,560 --> 02:36:25,479
+So let's see which are allowed, which are not allowed.
+
+736
+02:36:25,720 --> 02:36:27,680
+So which transitions are allowed?
+
+737
+02:36:27,680 --> 02:36:28,279
+Let's see.
+
+738
+02:36:30,959 --> 02:36:33,260
+This transition is allowed.
+
+739
+02:36:33,260 --> 02:36:33,680
+Why?
+
+740
+02:36:35,028 --> 02:36:45,288
+Çünkü, we have deterministik choices in, we have, the transitions are,
+
+741
+02:36:50,388 --> 02:36:52,968
+The transitions are different somewhat.
+
+742
+02:36:54,348 --> 02:37:04,427
+We have an alt transition, but in this case, we need to read something wrong.
+
+743
+02:37:05,427 --> 02:37:07,688
+So those are different.
+
+744
+02:37:12,688 --> 02:37:13,688
+So...
+
+745
+02:37:16,340 --> 02:37:25,020
+These two is assumed different generalizations because of this difference.
+
+746
+02:37:27,299 --> 02:37:28,399
+So this is a load.
+
+747
+02:37:32,299 --> 02:37:38,100
+Also, again, this is a load.
+
+748
+02:37:40,100 --> 02:37:41,020
+Why?
+
+749
+02:37:42,995 --> 02:37:47,855
+Çünkü bu P ve C burada.
+
+750
+02:37:51,476 --> 02:38:18,476
+bu
+
+751
+02:38:17,556 --> 02:38:40,636
+And these nulls, you can have null transitions. Remember that when you separate NFAs and DFAs, DFAs cannot have null transitions. But when you separate NPDAs and DPDAs,
+
+752
+02:38:41,587 --> 02:38:45,307
+DPDs can have now transitions.
+
+753
+02:38:47,427 --> 02:38:50,347
+So that's kind of different.
+
+754
+02:38:51,128 --> 02:38:55,247
+Now what is not allowed is these.
+
+755
+02:38:56,407 --> 02:38:57,727
+Allowed are these.
+
+756
+02:38:58,387 --> 02:39:05,507
+So here you need to read an A, copy B.
+
+757
+02:39:06,260 --> 02:39:09,700
+And again, you need to read an A proper B.
+
+758
+02:39:09,940 --> 02:39:17,360
+Now, in this situation, you cannot do two different things.
+
+759
+02:39:17,360 --> 02:39:18,060
+Okay.
+
+760
+02:39:20,619 --> 02:39:28,479
+Here we are pushing something else, moving to somewhere else, pushing something else, moving to somewhere else.
+
+761
+02:39:33,652 --> 02:39:45,252
+Now here, we are popping a bee, right, in both cases.
+
+762
+02:39:46,612 --> 02:39:55,412
+Here, we read nothing from input, but we can also read something from input.
+
+763
+02:39:56,612 --> 02:40:00,000
+And we are transitioning, we are doing two different transitions.
+
+764
+02:40:14,484 --> 02:40:18,103
+Bu az önceki, ben nasıl farklı?
+
+765
+02:40:23,636 --> 02:40:24,276
+Şurası
+
+766
+02:40:29,139 --> 02:40:31,659
+Stakta farklı bir şey görüyoruz burada değil mi?
+
+767
+02:40:33,819 --> 02:40:34,860
+Stak farklı.
+
+768
+02:40:37,020 --> 02:40:39,500
+Burada da stak farklı değil mi?
+
+769
+02:40:41,180 --> 02:40:43,799
+İzin verilen transitions'larda stak farklı.
+
+770
+02:40:45,799 --> 02:40:55,020
+İzin verilmeyen transitions'larda stakta ne gördüğümüz aynı.
+
+771
+02:40:57,332 --> 02:40:58,292
+İmput.
+
+772
+02:41:02,391 --> 02:41:07,531
+Sembol okursak da transition yapıyoruz, okumazsak da transition yapıyoruz.
+
+773
+02:41:08,432 --> 02:41:13,492
+Peki, mesela CB olsaydı ona izin verecek miydi?
+
+774
+02:41:14,371 --> 02:41:14,912
+Bakalım.
+
+775
+02:41:24,915 --> 02:41:27,375
+Bu ama en son dediğimin tam tersi değil mi?
+
+776
+02:41:30,835 --> 02:41:34,236
+Bu da kuş etki şeyle aynı.
+
+777
+02:41:44,308 --> 02:42:10,427
+İmput farklı. İmputtan null okuyabiliyorum. Aynı input fakat farklı stack okey. İmput okumuyor ama farklı stack okey. Birebir input ve stack aynı ise okey değil. Stack aynı, inputtan hiçbir şey okumamak ve okumak.
+
+778
+02:42:11,059 --> 02:42:13,079
+Bunlar izin vermiyor.
+
+779
+02:42:16,200 --> 02:42:17,559
+Diyor bu slide.
+
+780
+02:42:20,920 --> 02:42:22,819
+Let's look at some
+
+781
+02:42:22,819 --> 02:42:25,559
+examples.
+
+782
+02:42:28,920 --> 02:42:30,700
+DPDA example.
+
+783
+02:42:32,840 --> 02:42:35,360
+So the language is
+
+784
+02:42:35,360 --> 02:42:37,799
+this.
+
+785
+02:42:40,147 --> 02:42:41,827
+Determin stick.
+
+786
+02:42:42,268 --> 02:42:44,227
+So we have, let's see.
+
+787
+02:42:47,027 --> 02:42:47,987
+Here.
+
+788
+02:42:50,547 --> 02:42:52,707
+No, this is not important.
+
+789
+02:42:59,731 --> 02:43:06,152
+I don't see anything that will be a problem here.
+
+790
+02:43:08,391 --> 02:43:12,452
+So this is an example for deterministic pushdown automata.
+
+791
+02:43:14,132 --> 02:43:21,912
+So a language L is deterministic, context-free.
+
+792
+02:43:22,675 --> 02:43:27,615
+If there exists some deterministic pushdown automata, that accepts it.
+
+793
+02:43:28,796 --> 02:43:32,896
+So this language is deterministic context-free.
+
+794
+02:43:35,416 --> 02:43:41,655
+And here we have a pushdown automata that is not deterministic.
+
+795
+02:43:42,775 --> 02:43:45,435
+Why? Let's try to see that.
+
+796
+02:43:51,092 --> 02:43:51,452
+Ok.
+
+797
+02:44:06,036 --> 02:44:12,155
+What we read from stack is same, even though we are reading null.
+
+798
+02:44:14,436 --> 02:44:20,716
+And only it differs by input and one of the input is null.
+
+799
+02:44:21,495 --> 02:44:23,076
+So this is not allowed.
+
+800
+02:44:23,816 --> 02:44:27,495
+So this becomes a non-deterministic kustama automata.
+
+801
+02:44:31,860 --> 02:44:37,520
+And pushdown automatas have more power than deterministic pushdown automatas.
+
+802
+02:44:37,680 --> 02:44:38,600
+What does that mean?
+
+803
+02:44:39,139 --> 02:44:49,860
+It means that set of deterministic context-free languages is a subset of set of context-free languages.
+
+804
+02:44:51,760 --> 02:44:58,600
+And this is very easy to see because every deterministic pushdown automata is...
+
+805
+02:45:00,115 --> 02:45:02,716
+pushdown automata.
+
+806
+02:45:05,335 --> 02:45:06,295
+Now,
+
+807
+02:45:06,295 --> 02:45:13,295
+what we will show is
+
+808
+02:45:13,295 --> 02:45:17,495
+not a subset or a cube,
+
+809
+02:45:17,896 --> 02:45:18,896
+but, sorry,
+
+810
+02:45:19,955 --> 02:45:20,896
+more power.
+
+811
+02:45:21,095 --> 02:45:23,896
+So that means we need to show that
+
+812
+02:45:23,896 --> 02:45:26,155
+it is a subset.
+
+813
+02:45:32,211 --> 02:45:33,412
+It cannot be equal.
+
+814
+02:45:39,932 --> 02:45:50,471
+To show that, we need to show that there exists a context-free language, which is not accepted by any pushdown automata.
+
+815
+02:45:56,020 --> 02:45:58,079
+The language is this one.
+
+816
+02:45:59,739 --> 02:46:03,459
+So this is like proof by example.
+
+817
+02:46:04,900 --> 02:46:09,280
+We are giving contradictory proof examples.
+
+818
+02:46:12,639 --> 02:46:17,340
+So language is A to the N, B to the N.
+
+819
+02:46:17,400 --> 02:46:19,459
+Number of A's and B's are same.
+
+820
+02:46:20,600 --> 02:46:21,040
+Union.
+
+821
+02:46:21,620 --> 02:46:23,780
+A to the n, B to the n.
+
+822
+02:46:24,380 --> 02:46:27,100
+So, number of b's are twice.
+
+823
+02:46:28,660 --> 02:46:30,360
+And larger than zero.
+
+824
+02:46:31,620 --> 02:46:40,240
+So, we will show that L is context-free and L is not deterministic context-free.
+
+825
+02:46:44,520 --> 02:46:48,620
+I think let's finish here because we are...
+
+826
+02:46:49,203 --> 02:46:49,863
+Kaynak.
+
+827
+02:47:00,051 --> 02:47:02,371
+Evet, bu bir süreç bir süreç.
+
+828
+02:47:07,283 --> 02:47:10,203
+We can continue to this next week.
+
+829
+02:47:12,083 --> 02:47:18,923
+Before leaving, I want to correct myself.
+
+830
+02:47:19,824 --> 02:47:23,923
+Last week, I said that there will be no second midterm.
+
+831
+02:47:25,543 --> 02:47:27,923
+And the final will be...
+
+832
+02:47:27,923 --> 02:47:31,923
+The final grade...
+
+833
+02:47:31,923 --> 02:47:33,923
+The final will be...
+
+834
+02:47:36,147 --> 02:47:45,087
+Large invade, but I'm correcting that.
+
+835
+02:47:46,087 --> 02:47:48,387
+There will be a second midterm.
+
+836
+02:47:49,967 --> 02:47:56,487
+And it will be the week just before the last week.
+
+837
+02:47:57,987 --> 02:48:01,147
+So it will be on...
+
+838
+02:48:03,507 --> 02:48:07,167
+23. of this month.
+
+839
+02:48:09,288 --> 02:48:11,167
+Türkçe'de söyleyeyim.
+
+840
+02:48:11,647 --> 02:48:14,827
+Geçen hafta ikinci vizenin olmayacağını söylemiştim.
+
+841
+02:48:14,987 --> 02:48:15,948
+Bunu düzeltiyorum.
+
+842
+02:48:17,007 --> 02:48:18,108
+İkinci vize olacak.
+
+843
+02:48:19,448 --> 02:48:20,167
+Yine online.
+
+844
+02:48:22,547 --> 02:48:26,927
+Ve 23 Mayıs saat 9'da olacak.
+
+845
+02:48:29,843 --> 02:48:43,383
+Baştan itibaren işlediğimiz tüm konular dahil olacak vizeye. Bunu e-mail yoluyla da ilan ederim bugün. Ama size de söylemiş olayım.
+
+846
+02:48:45,063 --> 02:48:48,804
+İlk sınavda kullandığınız şey kullanacak mısınız hocam, erken bitirmemiz?
+
+847
+02:48:48,804 --> 02:48:50,563
+Evet, kullanmayı düşünüyorum.
+
+848
+02:48:54,420 --> 02:48:58,579
+Yorumunuz var mı? İyi oldu, kötü oldu, kullanın kullanmayın gibi.
+
+849
+02:49:08,340 --> 02:49:14,580
+Hocam garip bir yöntem yani. Çok şey diyemiyorum. Hiç rastladığımız bir yöntem değil. Değişik.
+
+850
+02:49:16,700 --> 02:49:20,139
+Garip durumlar, insanları garip şeyler yapmaya yetiyor.
+
+851
+02:49:28,564 --> 02:49:31,324
+Benim açımdan şey önemli, işe yaradı mı acaba?
+
+852
+02:49:36,103 --> 02:49:51,544
+En azından şunu gördüm, daha evvelki yıllarda bunu gözlemlemiştik. Öğrenciler bekleyip bekleyip son 10 dakikada hepsi birden işaretlememişler. 8 dakikadan 70 dakikaya kadar farklı zamanlar var.
+
+853
+02:49:53,075 --> 02:49:59,475
+20'den 100'e kadar da değişik notlar var. Bana işe yaramış gibi geldi.
+
+854
+02:50:04,724 --> 02:50:06,583
+Hocam, sınav tarihinde demiştiniz.
+
+855
+02:50:07,123 --> 02:50:27,783
+23 Mayıs. Yani bu haftadan sonra bir hafta daha ders yapacağız. Sonra vize. Sonra bir hafta daha ders yapacağız. Finaller başlayacak ondan sonra. Yani bu hafta haricinde iki hafta daha ders yapmış olacağız.
+
+856
+02:50:29,224 --> 02:50:32,504
+Hocam, peki ağırlık yine 30-30-40 mı? Öyle mi kaldı?
+
+857
+02:50:32,595 --> 02:50:33,036
+Evet.
+
+858
+02:50:33,036 --> 02:50:33,435
+Son olarak.
+
+859
+02:50:33,995 --> 02:50:34,236
+Evet.
+
+860
+02:50:37,155 --> 02:50:58,796
+Yani yönetmelik gereği final maksimum 40 olabiliyormuş. Öyle olunca ben de tekrar buna döndüm. Mesal sen gönlüm bu online vizelerin ağırlığını minimize etmekte ama her şey gönlümüze göre olmuyor.
+
+861
+02:51:02,579 --> 02:51:21,559
+Evet, bu slide'a tekrar haftadan, gelecek hafta tekrar bakarız. Yarın kaldı ama vakit de bitiyor şimdi. Uzatmayalım dersi zamanla bitirelim. Haftaya devam ederiz. Bir sorunuz vesaire varsa şimdi sorabilirsiniz yine.
+
+862
+02:51:22,559 --> 02:51:28,799
+Dediğimizi gibi haftaya tekrar bakacağız. Slide'a baştan bakarız. Görüşmek üzere arkadaşlar.
+
+863
+02:51:31,379 --> 02:51:32,579
+İgnor.
+
+864
+02:51:33,099 --> 02:51:33,899
+İgnoruz ya.
+
+865
+02:51:34,319 --> 02:51:34,859
+İgnoruz.
